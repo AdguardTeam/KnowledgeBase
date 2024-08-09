@@ -89,17 +89,25 @@ AdGuard 可以通过代理服务器路由设备流量。 要访问代理设置�
 
 ### 如何同时使用 AdGuard 和 NordVPN
 
-1. 打开 AdGuard 并转到「**设置**」→「**过滤**」→「**网络**」→「**代理**」→「**代理服务器**」。
+1. Log in to your NordVPN account.
 
-1. 点击**「添加代理」**按钮并输入以下的数据：
+1. Go to **Services** → **NordVPN** → **Manual setup** and set up your service credentials manually.
 
-    | 字符串  | 数值                                                                                                               |
-    | ---- | ---------------------------------------------------------------------------------------------------------------- |
-    | 代理分类 | *SOCKS5*                                                                                                         |
-    | 代理主机 | *[此列表](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent)中的任何服务器* |
-    | 代理端口 | *1080*                                                                                                           |
+1. You will receive a verification code on the email address you use for NordVPN. Use it on your NordVPN account as requested, then tap *Apply* and *OK* to save the changes.
 
-1. 在「**用户名**」和「**密码**」输入您的 NordVPN 的用户名和密码。
+![Manual setup](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/outbound-proxy/nordvpn-manual-setup.png)
+
+1. Open the AdGuard app, go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server** → **Add proxy server**.
+
+1. Enter the following data:
+
+    | 字符串  | 数值                                                                                                                            |
+    | ---- | ----------------------------------------------------------------------------------------------------------------------------- |
+    | 代理分类 | *SOCKS5*                                                                                                                      |
+    | 代理主机 | Any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent) |
+    | 代理端口 | *1080*                                                                                                                        |
+
+1. Enter your NordVPN credentials in the **Username** and **Password** fields.
 
 1. 点击「**选择并保存**」。
 

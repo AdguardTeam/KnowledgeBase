@@ -32,4 +32,4 @@ A situação é diferente no projeto *AdGuard Websites*. Os idiomas podem ser ad
 
 A adição de novas linhas de tradução, bem como a atualização daquelas já existentes nesses arquivos, requer atenção especial dos tradutores e revisores do projeto.
 
-In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/en#/emails) in the AdGuard Websites project. As linhas de tradução recém-adicionadas neste arquivo também têm uma alta prioridade de tradução.
+Além dos sites, há um arquivo para traduzir [emails transacionais](https://crowdin.com/project/adguard-websites/en#/emails) no projeto AdGuard Websites. As linhas de tradução recém-adicionadas neste arquivo também têm uma alta prioridade de tradução.

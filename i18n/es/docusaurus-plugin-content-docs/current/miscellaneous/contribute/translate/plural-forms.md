@@ -14,7 +14,7 @@ Los sustantivos en diferentes idiomas pueden tener varias formas de palabras en 
 
 Por ejemplo, las palabras en inglés tienen dos formas de palabras cuando se habla de algo en singular, como *"one star"*, y en plural: *"two stars"*. No importa si dices cinco, veintiséis o incluso quinientas treinta y dos estrellas, la terminación ''s'' seguirá siendo la misma. Pero algunos idiomas pueden contener solo una o varias formas plurales.
 
-A diferencia del inglés, el idioma polaco tiene tres formas plurales de sustantivos. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2–4, excluding 12–14, and the third form — for words with other numbers in front of them.
+A diferencia del inglés, el idioma polaco tiene tres formas plurales de sustantivos. Uno de ellos se usa cuando se habla de algo en singular, otra forma se usa en plural pero con números que terminan en 2–4, excluyendo 12–14, y la tercera forma, para palabras con otros números delante de ellos.
 
 Echemos un vistazo a esta imagen. Aquí puedes ver los grupos de números que determinan la forma de una palabra cuando se encuentran frente a ella.
 
@@ -38,7 +38,7 @@ Cuando se enfrenta a una traducción que requiere el uso de plurales, es posible
 
 Aquí hay algunas fuentes de información que puedes utilizar.
 
-[La Guía de localización](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contiene una amplia lista de idiomas. The number of plural forms for different languages is shown this way: `nplurals=2`, `nplurals=4` and so on. The numeral after the Equals sign `=` means the number of plural forms of the respective language.
+[La Guía de localización](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contiene una amplia lista de idiomas. El número de formas plurales para diferentes idiomas se muestra de esta manera: `nplurales=2`, `nplurales=4` y así sucesivamente. El número después del signo igual `=` significa el número de formas plurales del idioma respectivo.
 
 Además, puedes obtener información sobre formas plurales en el [Repositorio de datos de configuración regional común](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR) de Unicode. Las reglas CLDR Plural indican una forma de palabra adicional para los números decimales (1,5; 2,3; 100,1…), pero no las usamos en las traducciones de AdGuard.
 

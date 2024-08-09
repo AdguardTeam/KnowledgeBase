@@ -1,16 +1,16 @@
 ---
-title: Home screen
+title: Écran d'accueil
 sidebar_position: 1
 ---
 
 :::info
 
-Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard for Windows is an easy-to-use tool that blocks annoying banners, popups, video ads, and trackers. But that's not all: it helps you save traffic, load web pages faster, and protect your computer from undesirable and potentially malicious websites. AdGuard also protects you from phishing websites and keeps your kids away from inappropriate content.
+AdGuard pour Windows est un outil facile à utiliser qui bloque les bannières, les pop-ups, les publicités vidéo et les traqueurs agaçants. Mais ce n'est pas tout : il vous aide à réduire le trafic, à charger les pages web plus rapidement et à protéger votre ordinateur contre les sites web indésirables et potentiellement malveillants. AdGuard vous protège également des sites web hameçonneurs et tient vos enfants à l'écart des contenus inappropriés.
 
-![Main screen \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/home-screen.png)
+! [Écran principal \*mobile_border] (https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/home-screen.png)
 
-Once you start AdGuard for Windows, you will see the main screen of the app. Its most noticeable detail is the _enable/disable protection_ button. Also, on this screen you can monitor blocked ads, trackers and threats statistics, find out the current version of the app or update it. Furthermore, there are four tabs in the upper right corner: _Settings_, _Support_, _License_, and _About_. Each of these is worth talking about separately.
+Une fois que vous avez démarré AdGuard pour Windows, vous verrez l'écran principal de l'application. Son détail le plus remarquable est le bouton _activer/désactiver la protection_. Cet écran vous permet également de surveiller les publicités bloquées, les traqueurs et les statistiques sur les menaces, de connaître la version actuelle de l'application ou de la mettre à jour. En outre, quatre autres onglets se trouvent dans le coin supérieur droit : _Paramètres_, _Assistance_, _Licence_ et _À propos_. Chacun de ces points mérite d'être abordé séparément.

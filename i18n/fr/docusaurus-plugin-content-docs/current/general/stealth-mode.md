@@ -31,7 +31,7 @@ Si vous activez cette option, AdGuard supprimera les paramètres de suivi tels q
 
 ### Méthodes de suivi {#tracking-methods}
 
-### Autodétruire les cookies tiers {#3p-cookie}
+### Autodéstruction des cookies tiers {#3p-cookie}
 
 Les sites web utilisent des cookies pour stocker vos informations et vos préférences, telles que la langue que vous avez sélectionnée, votre localisation ou la liste des articles de votre panier d'achat. Lorsque vous revenez sur un site web, votre navigateur renvoie les cookies appartenant à ce site, ce qui lui permet de "mémoriser" vos données.
 
@@ -55,68 +55,68 @@ Nous vous déconseillons d'activer cette option car elle pourrait gravement inte
 
 :::
 
-### Désactivez le cache pour les requêtes des tiers {#3p-cache}
+### Désactivation du cache pour les requêtes des tiers {#3p-cache}
 
 Lorsqu'un navigateur accède à une page, le serveur lui attribue un ETag. Cet ETag est utilisé par le navigateur pour mettre en cache le contenu de la page. Lors de requêtes ultérieures, le navigateur envoie l'ETag au serveur correspondant, permettant ainsi au serveur de connaître l'identité du visiteur. Tant que les fichiers du site sont mis en cache, l'ETag est envoyé à chaque fois que votre navigateur accède à ce site. Si le site intègre du contenu provenant d'un autre serveur (comme une image ou une iframe), ce serveur peut suivre vos activités à votre insu.
 
-### Block third-party Authorization header {#3p-auth}
+### Blocage de l'en-tête Autorisation tiers {#3p-auth}
 
-"Authorization" header value is cached by the browser, and then is sent alongside every request to that domain. It means that it can be used for tracking purposes just like cookies.
+La valeur de l'en-tête "Autorisation" est mise en cache par le navigateur et est ensuite envoyée avec chaque requête vers ce domaine. Cela signifie qu'il peut être utilisé à des fins de suivi, tout comme les cookies.
 
-## Browser API {#browser-api}
+## API du navigateur {#browser-api}
 
-### Block WebRTC {#webrtc}
+### Bloquer WebRTC {#webrtc}
 
-WebRTC (Web Real-Time Communication) is a technology that allows direct streaming of data between browsers and apps. It can let others know your true IP address, even if you use a proxy or VPN. Enabling this option can disrupt the work of certain browser applications, such as messengers, chats, cinemas, or games.
+WebRTC (Web Real-Time Communication) est une technologie qui permet le streaming direct de données entre les navigateurs et les applications. Élément permettant aux autres utilisateurs de connaître votre adresse IP actuelle, même si vous utilisez un proxy ou un VPN. L'activation de cette option peut perturber le fonctionnement de certaines applications du navigateur, telles que les messageries, les chats, les cinémas ou les jeux.
 
-### Block Push API {#push}
+### Bloquer l'API Push {#push}
 
-The Push API enables servers to send messages to web applications regardless of the activity status of your browser. Thus, you may see notifications from various websites even if your browser is hidden in the tray or not launched. Enable this option to block the browser's Push API completely.
+L'API Push permet aux serveurs d'envoyer des messages aux applications web indépendamment de l'état d'activité de votre navigateur. Ainsi, vous pouvez voir des notifications de différents sites web même si votre navigateur est caché dans la barre d'état système ou n'est pas lancé. Activez cette option pour bloquer complètement l'API Push du navigateur.
 
-### Block Location API {#location}
+### Bloquer l'API de position {#location}
 
-Enabling this option will prevent the browser from sending GPS data that could be used to determine your location, modify your search results, or otherwise influence your web experience.
+L'activation de cette option empêchera le navigateur d'envoyer des données GPS qui pourraient être utilisées pour déterminer votre emplacement, modifier vos résultats de recherche ou influencer d'une autre manière votre expérience sur le web.
 
-### Block Flash {#flash}
+### Bloquer Flash {#flash}
 
-The Flash Player plugin has become increasingly vulnerable to such online threats as viruses and hackers; it may also significantly affect website loading time. Turning this setting on makes AdGuard block browsers' ability to detect components (such as plugins and ActiveXObject objects) that allow Flash to display content. This effectively means that browsers are unable to support Flash.
+Le plugin Flash Player est devenu de plus en plus vulnérable aux menaces en ligne telles que les virus et les pirates informatiques ; il peut également affecter de manière significative le temps de chargement des sites web. L'activation de ce paramètre permet à AdGuard de bloquer la capacité des navigateurs à détecter les composants (tels que les plugins et les objets ActiveXObject) qui permettent à Flash d'afficher du contenu. Cela signifie que les navigateurs ne peuvent pas prendre en charge Flash.
 
-### Block Java {#java}
+### Bloquer Java {#java}
 
-Some websites and web services still use the old technology to support Java plugins. The Java plugin API, which is the basis of Java plugins, has serious security flaws. For security purposes, you can disable such plugins. Nevertheless, even if you decide to use the "Block Java" option, JavaScript will still be enabled.
+Certains sites web et services web utilisent encore l'ancienne technologie pour prendre en charge les plugins Java. L'API du plugin Java, qui constitue la base des plugins Java, présente de sérieuses failles de sécurité. Pour des raisons de sécurité, vous pouvez désactiver ces plugins. Néanmoins, même si vous décidez d'utiliser l'option "Bloquer Java", JavaScript sera toujours activé.
 
 ## Divers {#miscellaneous}
 
-### Hide Referer from third parties {#referer}
+### Masquer le référent auprès des tiers {#referer}
 
-Referer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referer saves the URL of the initial page. The server that hosts the destination web page often has software that parses Referer and extracts various pieces of information from it. Enabling the *Hide Referer from third-parties* option hides the current website from third-party sites by altering the HTTP header.
+Le référent est un en-tête HTTP utilisé dans les requêtes provenant du navigateur au serveur. Il contient l'URL de la source de la requête. Lorsque vous naviguez d’une page à l’autre, le référent enregistre l’URL de la page initiale. Le serveur qui héberge la page web de destination dispose souvent d’un logiciel qui analyse le référent et en extrait diverses informations. L'activation de l'option *Masquer le référent auprès des tiers* cache le site web actuel aux sites tiers en modifiant l'en-tête HTTP.
 
-You can also set an arbitrary value for Referer by entering it into the *Custom Referer* field. To use default Referer, leave the field blank.
+Vous pouvez également définir une valeur arbitraire pour le référent en la saisissant dans le champ *Référent personnalisé* . Pour utiliser le référent par défaut, laissez le champ vide.
 
-Note that to be able to filter traffic, AdGuard applications 'intercept' browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely. Same goes for the *Hide Referer from third parties* option: AdGuard intercepts HTTP(S) requests, in particular to remove or change the Referer header if this option is enabled. However, it happens only after these requests “leave” the browser. This means that if you monitor Referer inside the browser (for example, with the help of Chrome's Developer Tools), you will see the original Referer because the request hasn't reached AdGuard yet. You can use software like [Fiddler](https://www.telerik.com/fiddler) to make sure that Referer gets altered correctly.
+Notez que pour pouvoir filtrer le trafic, les applications AdGuard "interceptent" les requêtes navigateur-serveur. Les requêtes adressées aux serveurs de publicité, de suivi et d'hameçonnage peuvent être modifiées avant d'être envoyées au serveur ou bloquées complètement. Idem pour l'option *Masquer le référent aux tiers* : AdGuard intercepte les requêtes HTTP(S), notamment pour supprimer ou modifier l'en-tête référent si cette option est activée. Toutefois, cela ne se produit qu'une fois que ces requêtes "quittent" le navigateur. Cela signifie que si vous surveillez le référent dans le navigateur (par exemple, avec l'aide des outils de développement de Chrome), vous verrez le référent d'origine car la requête n'a pas encore atteint AdGuard. Vous pouvez utiliser des logiciels tels que [Fiddler](https://www.telerik.com/fiddler) pour vous assurer que le référent est modifié correctement.
 
-On the opposite, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. It will alter the Referer right then and there, so Developer Tools will show the desired Referer for your requests.
+En revanche, comme toutes les extensions de navigateur, l'Extension AdGuard fonctionne "à l'intérieur" du navigateur. Elle modifiera le référent à ce moment précis, de sorte que les outils de développeur afficheront le référent souhaité pour vos demandes.
 
-### Hide your User-Agent {#useragent}
+### Masquer votre agent utilisateur {#useragent}
 
-When you visit a website, your browser sends its information to the server. It looks like a text line that is part of an HTTP request that begins with "User-Agent:". It usually includes the name and version of the browser, the operating system, and language settings. We cut User-Agent from identifying information so that advertisers cannot obtain it.
+Lorsque vous visitez un site web, votre navigateur envoie ses informations au serveur. Il s’agit d’une ligne de texte qui fait partie d’une requête HTTP commençant par "User-Agent :". Il s’agit généralement du nom et de la version du navigateur, du système d’exploitation et des paramètres de langue. Nous empêchons l'agent-utilisateur d'identifier les informations pour que les annonceurs ne puissent pas les obtenir.
 
-You can also set an arbitrary value for User-Agent by entering it into the Custom User-Agent field. To use default User-Agent, leave the field blank.
+Vous pouvez également définir une valeur arbitraire pour l'agent-utilisateur en la saisissant dans le champ Agent-utilisateur personnalisé . Pour utiliser l'agent-utilisateur par défaut, laissez le champ vide.
 
-### Hide your IP address {#ip}
+### Masquer votre adresse IP {#ip}
 
-Stealth Mode cannot hide your IP address. However, we can conceal it so that websites you visit will think you are a proxy. Sometimes this helps, and websites ignore your true IP address.
+Le mode furtif ne peut pas masquer votre adresse IP. Cependant, nous pouvons le dissimuler pour faire de sorte que les sites web que vous visitez pensent que vous êtes un proxy. Parfois, cette méthode aide et les sites web ignorent votre véritable adresse IP.
 
-You can set an arbitrary IP address, which you would like others to perceive as yours, by simply entering it into the corresponding field. To use the default IP address, leave the field blank.
+Vous pouvez définir une adresse IP arbitraire, que vous souhaiteriez que les autres perçoivent comme la vôtre, en la saisissant simplement dans le champ correspondant. Pour utiliser l'adresse IP par défaut, laissez le champ vide.
 
-### Remove X-Client-Data header from HTTP requests {#xclientdata}
+### Retirer l'en-tête X-Client-Data des requêtes HTTP {#xclientdata}
 
-It forbids Google Chrome from sending its version and modification information with requests to Google domains (including Double Click and Google Analytics).
+Il interdit à Google Chrome d'envoyer ses informations de version et de modification avec les demandes adressées aux domaines de Google (y compris Double Click et Google Analytics).
 
-### Protect from DPI {#dpi}
+### Protection anti-IPP {#dpi}
 
-The Deep Packet Inspection is a system of deep analysis and filtering of traffic by packet content, as well as the accumulation of statistical data. Using this technology, ISPs have the ability to control the passing traffic and limit access to content for their clients.
+L’inspection approfondie des paquets ou IPP est un système d’analyse et de filtrage approfondis du trafic par contenu des paquets, ainsi que l’accumulation de données statistiques. Grâce à cette technologie, les FAI ont la possibilité de contrôler le trafic passant et de limiter l'accès au contenu pour leurs clients.
 
-AdGuard can modify outgoing packet data so that the client does not fall under the DPI blocking criteria. This means that by enabling this option, users can get access to the content they want. Not all DPI systems can be bypassed at this time, but we are constantly working to improve this.
+AdGuard peut modifier les données des paquets sortants afin que le client ne relève pas des critères de blocage IPP. Cela signifie qu'en activant cette option, les utilisateurs peuvent accéder au contenu qu'ils souhaitent. Tous les systèmes IPP ne peuvent pas être contournés pour le moment, mais nous travaillons constamment à les améliorer.
 
-The "Protect from DPI" feature is already implemented in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android.
+La fonction "Protection anti IPP" est déjà implémentée dans AdGuard pour Windows, AdGuard pour Mac et AdGuard pour Android.

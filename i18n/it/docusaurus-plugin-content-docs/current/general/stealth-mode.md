@@ -3,120 +3,120 @@ title: Modalità Invisibilità
 sidebar_position: 4
 ---
 
-Many websites gather information about their visitors, such as their IP address, installed browser and operating system, screen resolution, and even the page from which a visitor was redirected. Some web pages use cookies to mark your browser and save your personal settings and preferences, or to "recognize" you upon your next visit. Stealth Mode safeguards your personal information from such data- and statistics-gathering systems.
+Molti siti web raccolgono informazioni sui propri visitatori, quali il loro indirizzo IP, browser e sistema operativo installati, risoluzione dello schermo e persino la pagina da cui un visitatore è stato reindirizzato. Alcune pagine web utilizzano i cookie per contrassegnare il tuo browser e salvare le tue impostazioni personali e preferenze o per "riconoscerti" alla tua visita successiva. La Modalità Invisibilità salvaguarda le tue informazioni personali da tali sistemi di raccolta di dati e statistiche.
 
-You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website from receiving the search request you used to find it on the Internet, automatically delete both third-party and the website's own cookies, turn off browser geolocation sharing that can be used to track your whereabouts, and hide your true IP address or even replace it with an arbitrary one.
+Puoi regolare in modo flessibile il funzionamento della Modalità Invisibilità: ad esempio, puoi impedire al sito web di ricevere la richiesta di ricerca che hai utilizzato per trovarlo su Internet, eliminare automaticamente i cookie di terze parti, disattivare la condivisione della posizione del browser, utilizzabile per tracciare la tua posizione e nascondere il tuo vero indirizzo IP o persino sostituirlo con uno arbitrario.
 
-Below we will list and describe the main features and options that you can control in the **Stealth Mode** settings. They are split into four groups: **General**, **Tracking methods**, **Browser API**, and **Miscellaneous**.
+Di seguito, elencheremo e descriveremo le funzionalità e opzioni principali che puoi controllare nelle impostazioni della **Modalità Invisibilità**. Sono divise in quattro gruppi: **Generali**, **Metodi di tracciamento**, **API del Browser** e **Varie**.
 
 :::note
 
-Some options may not be available depending on the particular product due to OS or other limitations.
+Alcune opzioni potrebbero non essere disponibili a seconda del prodotto specifico, a causa di limitazioni del sistema operativo o altre.
 
 :::
 
 ## Generali {#general}
 
-### Hide your search queries {#searchqueries}
+### Nascondi le tue richieste di ricerca {#searchqueries}
 
-When you get directed to a website from Google, Yahoo, or any other search engine, this option hides the search query that you used to find that website.
+Quando vieni diretto a un sito web da Google, Yahoo o qualsiasi altro motore di ricerca, quest'opzione nasconde la richiesta di ricerca che hai utilizzato per trovare quel sito web.
 
-### Ask websites not to track you {#donottrack}
+### Chiedi ai siti web di non tracciarti {#donottrack}
 
-Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit.
+Invia i segnali di [Controllo Globale della Privacy](https://globalprivacycontrol.org/#gpc-spec) e [Non Tracciare](https://en.wikipedia.org/wiki/Do_Not_Track) ai siti web che visiti.
 
-### Strip tracking parameters from URLs
+### Elimina i parametri di tracciamento dagli URL
 
-If you enable this option, AdGuard will strip tracking parameters like `utm_*` and `fb_ref` from pages’ URLs.
+Se abiliti quest'opzione, AdGuard eliminerà i parametri di tracciamento come `utm_*` e `fb_ref` dagli URL delle pagine.
 
-### Tracking methods {#tracking-methods}
+### Metodi di tracciamento {#tracking-methods}
 
-### Self-destruction of third-party cookies {#3p-cookie}
+### Autodistruzione dei cookie di terze parti {#3p-cookie}
 
-Websites use cookies to store your information and preferences, such as the language you selected, your location, or the list of items in your shopping cart. When you return to a website, your browser sends back the cookies belonging to that website, which allows it to "remember" your data.
+I siti web utilizzano i cookie per memorizzare le tue informazioni e preferenze, quali la lingua selezionata, la tua posizione o l'elenco di articoli nel tuo carrello. Quando torni su un sito web, il tuo browser reinvia i cookie a esso appartenenti, che gli consentono di "ricordare" i tuoi dati.
 
-Third-party cookies are those implemented by a website that is different from the one you are currently browsing. For example, cnn.com may have a Facebook "Like" widget on its homepage. This widget will implement a cookie that may be read later by Facebook. Some advertisers use such cookies to track what other sites you visit where their ads are placed.
+I cookie di terze parti sono quelli implementati da un sito web differente da quello su cui stai correntemente navigando. Ad esempio, cnn.com potrebbe contenere un widget "Mi Piace" di Facebook sulla sua pagina home. Questo, implementerà un cookie che potrebbe essere letto in seguito da Facebook. Alcuni inserzionisti utilizzano tali cookie per tracciare quali altri siti visiti, in cui sono inseriti i loro annunci.
 
-Set a time period (in minutes) at the end of which all third-party cookies will be destroyed. Set the timer to 0 to block them completely.
-
-:::caution
-
-This setting deletes all third-party cookies, including the information of your logins through social networks or other third-party services. You may have to periodically re-log in to some websites and face other cookie-related issues. To block only tracking cookies, use [*AdGuard Tracking Protection filter*](/general/ad-filtering/filter-policy/#tracking-protection-filter).
-
-:::
-
-### Self-destruction of first-party cookies {#1p-cookie}
-
-Set a time period (in minutes) at the end of which all cookies will be destroyed. Set the timer to 0 to block them completely.
+Imposta un periodo di tempo (in minuti), al termine di cui saranno distrutti tutti i cookie di terze parti. Imposta il timer a 0 per bloccarli completamente.
 
 :::caution
 
-We do not recommend enabling this option as it may severely interfere with the work of certain websites.
+Quest'impostazione elimina tutti i cookie di terze parti, incluse le informazioni dei tuoi accessi tramite social o altri servizi di terze parti. Potresti dover ripetere periodicamente l'accesso ad alcuni siti web, e riscontrare altre problematiche correlate ai cookie. Per bloccare soltanto i cookie di tracciamento, utilizza il [*filtro di Protezione dal Tracciamento di AdGuard*](/general/ad-filtering/filter-policy/#tracking-protection-filter).
 
 :::
 
-### Disable cache for third-party requests {#3p-cache}
+### Autodistruzione dei cookie proprietari {#1p-cookie}
 
-When a browser addresses a page, the server assigns an ETag to that page. This ETag is used by the browser to cache the page's contents. Upon subsequent requests, the browser sends the ETag to the corresponding server, thus letting the server learn the visitor’s identity. As long as the site's files are cached, the ETag is sent every time your browser addresses this site. If the site has embedded content from another server (such as an image or iframe), that server can track your activities without your knowledge.
+Imposta un periodo di tempo (in minuti), al termine di cui saranno distrutti tutti i cookie. Imposta il timer a 0 per bloccarli completamente.
 
-### Block third-party Authorization header {#3p-auth}
+:::caution
 
-"Authorization" header value is cached by the browser, and then is sent alongside every request to that domain. It means that it can be used for tracking purposes just like cookies.
+Sconsigliamo di abilitae quest'opzione, poiché potrebbe interferire gravemente con il funzionamento di certi siti web.
 
-## Browser API {#browser-api}
+:::
 
-### Block WebRTC {#webrtc}
+### Disabilita la cache per le richieste di terze parti {#3p-cache}
 
-WebRTC (Web Real-Time Communication) is a technology that allows direct streaming of data between browsers and apps. It can let others know your true IP address, even if you use a proxy or VPN. Enabling this option can disrupt the work of certain browser applications, such as messengers, chats, cinemas, or games.
+Quando un browser indirizza una pagina, il server gli assegna un ETag. Questo, è utilizzato dal browser per salvare i contenuti della pagina nella cache. Alle successive richieste, il browser invia l'ETag al server corrispondente, dunque, consentendogli di imparare l'identità del visitatore. Finché i file dei siti sono nella cache, l'ETag è inviato ogni volta che il tuo browser accede a questo sito. Se il sito ha dei contenuti incorporati da un altro server (come un'immagine o un iframe), quel server può tracciare le tue attività a tua insaputa.
 
-### Block Push API {#push}
+### Blocca l'Intestazione di Autorizzazione da terze parti {#3p-auth}
 
-The Push API enables servers to send messages to web applications regardless of the activity status of your browser. Thus, you may see notifications from various websites even if your browser is hidden in the tray or not launched. Enable this option to block the browser's Push API completely.
+Il valore dell'intestazione "Autorizzazione" è salvato nella cache dal browser e, quindi, è inviato insieme a ogni richiesta a quel dominio. Ciò significa che è utilizzabile per scopi di tracciamento, proprio come i cookie.
 
-### Block Location API {#location}
+## API del Browser {#browser-api}
 
-Enabling this option will prevent the browser from sending GPS data that could be used to determine your location, modify your search results, or otherwise influence your web experience.
+### Blocca WebRTC {#webrtc}
 
-### Block Flash {#flash}
+WebRTC (Comunicazione Web In Tempo Reale) è una tecnologia che consente la trasmissione diretta dei dati tra browser e app. Può consentire ad altri di conoscere il tuo indirizzo IP reale, anche se utilizzi un proxy o una VPN. Abilitare quest'opzione può interrompere il funzionamento di certe applicazioni del browser, come app di messaggistica, chat, cinema o giochi.
 
-The Flash Player plugin has become increasingly vulnerable to such online threats as viruses and hackers; it may also significantly affect website loading time. Turning this setting on makes AdGuard block browsers' ability to detect components (such as plugins and ActiveXObject objects) that allow Flash to display content. This effectively means that browsers are unable to support Flash.
+### Blocca l'API Push {#push}
 
-### Block Java {#java}
+L'API Push consente ai server di inviare messaggi alle applicazioni web, indipendentemente dallo stato di attività del tuo browser. Dunque, potresti ricevere notifiche da vari siti web, anche se il tuo browser è minimizzato o non avviato. Abilita quest'opzione per bloccare completamente l'API Push del browser.
 
-Some websites and web services still use the old technology to support Java plugins. The Java plugin API, which is the basis of Java plugins, has serious security flaws. For security purposes, you can disable such plugins. Nevertheless, even if you decide to use the "Block Java" option, JavaScript will still be enabled.
+### Blocca l'API di Posizione {#location}
+
+Abilitare quest'opzione impedirà al browser di inviare dati GPS utilizzabili per determinare la tua posizione, modificare i risultati della tua ricerca o influenzare altrimenti la tua esperienza sul web.
+
+### Blocca Flash {#flash}
+
+Il plugin Flash Player è diventato sempre più vulnerabile alle minacce online, quali virus e hacker; potrebbe inoltre influenzare significativamente i tempi di caricamento dei siti web. Attivando quest'impostazione, AdGuard bloccherà l'abilità dei browser di rilevare componenti (quali plugin e oggetti ActiveXObject), che consentano a Flash di mostrare contenuti. Ciò significa effettivamente che i browser non saranno in grado di supportare Flash.
+
+### Blocca Java {#java}
+
+Alcuni siti e servizi web, utilizzano ancora la vecchia tecnologia per supportare i plugin Java. L'API dei plugin in Java, alla base dei plugin in Java, presenta gravi falle di sicurezza. Per scopi di sicurezza, puoi disabilitare tali plugin. Tuttavia, anche se decidi di utilizzare l'opzione "Blocca Java", JavaScript sarà comunque abilitato.
 
 ## Varie {#miscellaneous}
 
-### Hide Referer from third parties {#referer}
+### Nascondi Referente dalle terze parti {#referer}
 
-Referer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referer saves the URL of the initial page. The server that hosts the destination web page often has software that parses Referer and extracts various pieces of information from it. Enabling the *Hide Referer from third-parties* option hides the current website from third-party sites by altering the HTTP header.
+Il referente è un'intestazione HTTP utilizzata nelle richieste dal browser al server. Contiene l'URL dell'origine della richiesta. Quando navighi da una pagina all'altra, il Referente salva l'URL della pagina iniziale. Il server che ospita la pagina web di destinazione, spesso, dispone di software che analizzano il Referente, estraendo da esso varie informazioni. Abilitare l'opzione *Nascondi Referente dalle terze parti*, nasconde il sito web corrente dai siti di terze parti, alterando l'intestazione HTTP.
 
-You can also set an arbitrary value for Referer by entering it into the *Custom Referer* field. To use default Referer, leave the field blank.
+Inoltre, puoi impostare un valore arbitrario per il Referente, inserendolo nel campo *Referente Personalizzato*. Per utilizzare il Referente predefinito, lascia vuoto il campo.
 
-Note that to be able to filter traffic, AdGuard applications 'intercept' browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely. Same goes for the *Hide Referer from third parties* option: AdGuard intercepts HTTP(S) requests, in particular to remove or change the Referer header if this option is enabled. However, it happens only after these requests “leave” the browser. This means that if you monitor Referer inside the browser (for example, with the help of Chrome's Developer Tools), you will see the original Referer because the request hasn't reached AdGuard yet. You can use software like [Fiddler](https://www.telerik.com/fiddler) to make sure that Referer gets altered correctly.
+Tieni presente che per poter filtrare il traffico, le applicazioni AdGuard "intercettano" le richieste dal browser al server. Le richieste effettuate agli server di annunci, tracciamento e di phishing possono essere modificate prima dell'invio al server o bloccate completamente. Lo stesso valore per l'opzione *Nascondi Referente dalle terze parti*: AdGuard intercetta le richieste HTTP(S), in particolare per rimuovere o modificare l'intestazione del Referente, se quest'opzione è abilitata. Tuttavia, ciò accade solo dopo che queste richieste "lasciano" il browser. Ciò significa che se monitori il Referente nel browser (ad esempio, con l'aiuto degli Strumenti per Sviluppatori di Chrome), vedrai il Referente originale, poiché la richiesta non ha ancora raggiunto AdGuard. Puoi utilizzare software come [Fiddler](https://www.telerik.com/fiddler) per assicurarti che il Referente sia alterato correttamente.
 
-On the opposite, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. It will alter the Referer right then and there, so Developer Tools will show the desired Referer for your requests.
+Al contrario, a causa della natura stessa di tutte le estensioni del browser, l'Estensione di browser AdGuard funziona "all'interno" del browser. Altererà il Referente in quel momento, quindi, gli Strumenti per Sviluppatori mostreranno il Referente desiderato per le tue richieste.
 
-### Hide your User-Agent {#useragent}
+### Nascondi il tuo User-Agent {#useragent}
 
-When you visit a website, your browser sends its information to the server. It looks like a text line that is part of an HTTP request that begins with "User-Agent:". It usually includes the name and version of the browser, the operating system, and language settings. We cut User-Agent from identifying information so that advertisers cannot obtain it.
+Quando visiti un sito web, il tuo browser invia le sue informazioni al server. Somiglia a una riga di testo, parte di una richiesta HTTP, che inizia per "User-Agent:". Solitamente, include il nome e la versione del browser, il sistema operativo e le impostazioni della lingua. Escludiamo l'User-Agent dalle informazioni identificative, così che gli inserzionisti non le possano ottenere.
 
-You can also set an arbitrary value for User-Agent by entering it into the Custom User-Agent field. To use default User-Agent, leave the field blank.
+Inoltre, puoi impostare un valore arbitrario per l'User-Agent, inserendolo nel campo User-Agent Personalizzato. Per utilizzare l'User-Agent predefinito, lascia vuoto il campo.
 
-### Hide your IP address {#ip}
+### Nascondi il tuo indirizzo IP {#ip}
 
-Stealth Mode cannot hide your IP address. However, we can conceal it so that websites you visit will think you are a proxy. Sometimes this helps, and websites ignore your true IP address.
+La Modalità Invisibilità non può nascondere il tuo indirizzo IP. Tuttavia, possiamo nasconderlo così che i siti web che visiti penseranno che tu sia un proxy. Ciò, talvolta, aiuta e i siti web ignorano il tuo indirizzo IP reale.
 
-You can set an arbitrary IP address, which you would like others to perceive as yours, by simply entering it into the corresponding field. To use the default IP address, leave the field blank.
+Puoi impostare un indirizzo IP arbitrario, che vorresti fosse percepito dagli altri come tuo, semplicemente inserendolo nel campo corrispondente. Per utilizzare l'indirizzo IP predefinito, lascia vuoto il campo.
 
-### Remove X-Client-Data header from HTTP requests {#xclientdata}
+### Rimuovi l'intestazione X-Client-Data dalle richieste HTTP {#xclientdata}
 
-It forbids Google Chrome from sending its version and modification information with requests to Google domains (including Double Click and Google Analytics).
+Proibisce a Google Chrome di inviare le proprie informazioni sulla versione e sulle modifiche, con richieste ai domini di Google (inclusi Double Click e Google Analytics).
 
-### Protect from DPI {#dpi}
+### Protezione da IPP {#dpi}
 
-The Deep Packet Inspection is a system of deep analysis and filtering of traffic by packet content, as well as the accumulation of statistical data. Using this technology, ISPs have the ability to control the passing traffic and limit access to content for their clients.
+L'Ispezione Approfondita del Pacchetto è un sistema di analisi profonda e filtraggio del traffico per contenuto del pacchetto, nonché l'accumulo di dati statistici. Utilizzando questa tecnologia, gli ISP possono controllare il traffico in transito e limitare i contenuti per i loro clienti.
 
-AdGuard can modify outgoing packet data so that the client does not fall under the DPI blocking criteria. This means that by enabling this option, users can get access to the content they want. Not all DPI systems can be bypassed at this time, but we are constantly working to improve this.
+AdGuard può modificare i dati del pacchetto in uscita, così che il client non rientri nei criteri di blocco IPP. Ciò significa che, abilitando quest'opzione, gli utenti possono accedere ai contenuti che desiderano. Non tutti i sistemi IPP sono aggirabili al momento, ma lavoriamo costantemente per migliorare questo aspetto.
 
-The "Protect from DPI" feature is already implemented in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android.
+La funzionalità "Protezione da IPP" è già implementata su AdGuard per Windows, AdGuard per Mac e AdGuard per Android.

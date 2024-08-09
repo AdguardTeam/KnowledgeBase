@@ -1,44 +1,44 @@
 ---
-title: How to create a dump file
+title: Cómo crear un archivo dump
 sidebar_position: 8
 ---
 
 :::info
 
-Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-Data and/or files provided in dump files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Los datos y/o archivos proporcionados en archivos dump se procesan de acuerdo con la [Política de privacidad de AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-To diagnose the reasons for potential problems that users might encounter while using AdGuard, the support team might need the process dump file. The dump file helps developers to see the processes that were executed in the application over a given period of time. Below you can check on the instructions of how to collect the dump file on your PC.
+Para diagnosticar los motivos de los posibles problemas que los usuarios pueden encontrar al utilizar AdGuard, es posible que el equipo de soporte necesite el archivo dump del proceso. El archivo dump ayuda a los desarrolladores a ver los procesos que se ejecutaron en la aplicación durante un período de tiempo determinado. A continuación, puedes consultar las instrucciones de cómo recopilar el archivo dump en tu PC.
 
-1. Press **Ctrl + Shift + Esc** and click **Task Manager**
+1. Presiona **Ctrl + Shift + Esc** y haz clic en **Administrador de tareas**
 
-1. In the upper menu bar select **Details**
+1. En la barra de menú superior, selecciona **Detalles**
 
-    ![Task Manager details](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/details_en.png)
+    ![Detalles del Administrador de tareas](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/details_en.png)
 
-1. Right-click the process that you want to create the dump file for (for example, the support team may ask you to create a dump for `Adguard.exe`)
+1. Haz clic derecho en el proceso para el que deseas crear el archivo de volcado (por ejemplo, el equipo de soporte puede pedirte que crees un dump para `Adguard.exe`)
 
-1. In the drop-down menu click **Create dump file**
+1. En el menú desplegable, haz clic en **Crear archivo dump**
 
-1. The file was created successfully!
+1. ¡El archivo fue creado exitosamente!
 
-    ![Create dump file](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/create_dump_file_en.png)
+    ![Crear archivo dump](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/create_dump_file_en.png)
 
-After you’ve created the dump file, please navigate to the file location. You should be prompted to open the folder containing the dump file right after its creation. Otherwise, you will be able to find it inside the **%tmp%** folder. The created dump file (`.DMP`) has the same name as the name of the process you chose in the previous steps. The file is quite large, so please compress it into an archive before sending to support.
+Una vez que hayas creado el archivo de volcado, navega hasta la ubicación del archivo. Se te pedirá que abras la carpeta que contiene el archivo dump inmediatamente después de su creación. De lo contrario, podrás encontrarlo dentro de la carpeta **%tmp%**. El archivo dump creado (`.DMP`) tiene el mismo nombre que el nombre del proceso que elegiste en los pasos anteriores. El archivo es bastante grande, así que comprímelo en un archivo antes de enviarlo al soporte.
 
 :::note
 
-AdGuard for Windows has two running processes (`Adguard.exe` and `AdguardSvc.exe`). So you need to create the dump file separately for each process.
+AdGuard para Windows tiene dos procesos en ejecución (`Adguard.exe` y `AdguardSvc.exe`). Por lo tanto, debes crear el archivo dump por separado para cada proceso.
 
 :::
 
-![AdGuard processes](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
+![Procesos de AdGuard](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
 
-When you send the dump files to the support team, please also attach the AdGuard application logs so we have a better chance at solving the problem. [Here](../adguard-logs) you can check the instructions on how to collect the log file.
+Cuando envíes los archivos dump al equipo de soporte, adjunte también los registros de la aplicación AdGuard para que tengamos más posibilidades de resolver el problema. [Aquí](../adguard-logs) puedes consultar las instrucciones sobre cómo recopilar el archivo de registro.

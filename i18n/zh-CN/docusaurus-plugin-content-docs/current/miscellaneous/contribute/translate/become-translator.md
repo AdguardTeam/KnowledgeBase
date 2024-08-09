@@ -35,7 +35,7 @@ sidebar_position: 2
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-您可以[在本文中找到一些关于 AdGuard 翻译](../guidelines)的有用提示。 Please take a look at it.
+您可以[在本文中找到一些关于 AdGuard 翻译](../guidelines)的有用提示。 请看一下。
 
 ### 如何成为审核员 {#proofreaders}
 
@@ -51,4 +51,4 @@ TA 们负责什么？
 
 - 参加注释中的讨论。
 
-Every year, the best proofreaders receive gifts from AdGuard. 积极的翻译者也不会没有回报。 阅读更多关于我们的[奖励机制](../rewards)。
+每年最优秀的审核员都收到 AdGuard 的礼物。 积极的翻译者也不会没有回报。 阅读更多关于我们的[奖励机制](../rewards)。

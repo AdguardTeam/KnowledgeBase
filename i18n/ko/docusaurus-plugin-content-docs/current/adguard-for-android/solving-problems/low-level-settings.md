@@ -223,7 +223,7 @@ If this setting is enabled, AdGuard will exclude LAN connections from filtering 
 
 Here you can enter the IP address that will be used to create a TUN interface. By default, it is `2001:db8:ad:0:ff::`.
 
-### Miscellaneous
+### 기타
 
 #### Detect Samsung Pay
 

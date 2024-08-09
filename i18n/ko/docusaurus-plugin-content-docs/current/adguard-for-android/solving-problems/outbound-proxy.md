@@ -89,17 +89,25 @@ In this article we give examples of how to set up some of the most popular proxi
 
 ### NordVPN과 함께 AdGuard를 사용하는 방법
 
-1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
+1. Log in to your NordVPN account.
 
-1. **프록시 서버 추가** 버튼을 누르고 다음 데이터를 입력합니다.
+1. Go to **Services** → **NordVPN** → **Manual setup** and set up your service credentials manually.
 
-    | 필드      | 값                                                                                                                               |
-    | ------- | ------------------------------------------------------------------------------------------------------------------------------- |
-    | 프록시 유형  | *SOCKS5*                                                                                                                        |
-    | 프록시 호스트 | *any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent)* |
-    | 프록시 포트  | *1080*                                                                                                                          |
+1. You will receive a verification code on the email address you use for NordVPN. Use it on your NordVPN account as requested, then tap *Apply* and *OK* to save the changes.
 
-1. For **Username** and **Password** fields, enter your NordVPN Username and Password.
+![Manual setup](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/outbound-proxy/nordvpn-manual-setup.png)
+
+1. Open the AdGuard app, go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server** → **Add proxy server**.
+
+1. Enter the following data:
+
+    | 필드      | 값                                                                                                                             |
+    | ------- | ----------------------------------------------------------------------------------------------------------------------------- |
+    | 프록시 유형  | *SOCKS5*                                                                                                                      |
+    | 프록시 호스트 | Any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent) |
+    | 프록시 포트  | *1080*                                                                                                                        |
+
+1. Enter your NordVPN credentials in the **Username** and **Password** fields.
 
 1. Tap **Save and select**.
 

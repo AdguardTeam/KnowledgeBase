@@ -63,7 +63,7 @@ Aqui você pode especificar o tempo em milissegundos que o AdGuard aguardará pe
 
 #### Resposta TTL bloqueada
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+Aqui você pode especificar o valor TTL (time to live) que será retornado em resposta a uma solicitação bloqueada.
 
 #### DNS cache size
 
@@ -113,7 +113,7 @@ Use it only for debugging purposes!
 
 #### Encrypted Client Hello
 
-Cada conexão de Internet criptografada tem uma parte não criptografada. Estamos falando do primeiro pacote, que contém o nome do servidor ao qual você está se conectando. A tecnologia Encrypted ClientHello deve resolver esse problema e criptografar esta última parte de informação não criptografada. To benefit from it, enable the *Encrypted Client Hello* option. It uses a local DNS proxy to look for the ECH configuration for the domain. Se encontrado, o pacote ClientHello será criptografado.
+Cada conexão de Internet criptografada tem uma parte não criptografada. Estamos falando do primeiro pacote, que contém o nome do servidor ao qual você está se conectando. A tecnologia Encrypted ClientHello deve resolver esse problema e criptografar esta última parte de informação não criptografada. To benefit from it, enable the *Encrypted Client Hello* option. Ela utiliza um proxy DNS local para procurar a configuração ECH para o domínio. Se encontrado, o pacote ClientHello será criptografado.
 
 #### OCSP checking
 
@@ -127,7 +127,7 @@ If the verification takes too long, AdGuard will allow the connection while cont
 
 If this setting is enabled, AdGuard will redirect DNS-over-HTTPS requests to the local DNS proxy in addition to plain DNS requests. We recommend disabling fallback upstreams and using only encrypted DNS servers to maintain privacy.
 
-#### Filter HTTP/3
+#### Filtrar HTTP/3
 
 If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 

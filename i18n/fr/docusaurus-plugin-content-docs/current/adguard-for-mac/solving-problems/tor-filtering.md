@@ -5,15 +5,15 @@ sidebar_position: 10
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour Mac, un bloqueur d'annonces multifonctionnel qui protège votre appareil au niveau du système. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
 By default, Tor Browser is added to AdGuard’s list of filtered applications. However, to filter it, AdGuard needs to change Tor's security settings. This will make Tor trust AdGuard's CA certificate.
 
-If you decide to filter Tor and check it in *Preferences* → *Network* → *Applications*, AdGuard will show you this dialog box:
+Si vous décidez de filtrer Tor et ensuite vous le cochez dans *Préférences* → *Réseau* → *Applications*, AdGuard vous affichera cette boîte de dialogue :
 
-![AdGuard dialog box](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tor-setup.png)
+![Boîte de dialogue AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tor-setup.png)
 
 By updating Tor settings, AdGuard will set the following:
 

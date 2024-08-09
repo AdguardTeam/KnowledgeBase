@@ -5,23 +5,23 @@ sidebar_position: 7
 
 :::info
 
-Questo articolo riguarda AdGuard per Windows, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Windows, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 Previously known as low-level settings, Advanced Settings mostly contain options that go beyond the average user competence and aren't applied in everyday use. AdGuard for Windows is designed to work without ever having to change any of them, but they will provide additional features in some corner cases or when solving an uncommon problem.
 
-:::caution
+:::attenzione
 
 Mindlessly changing *Advanced Settings* can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only make changes to these settings if you are sure of what you are doing or if our support team has asked you to do so.
 
 :::
 
-## How to reach Advanced Settings
+## Come raggiungere le Impostazioni Avanzate
 
 To go to *Advanced settings*, in the main windows click *Settings → General Settings* and scroll down to *Advanced Settings*. Alternatively, select *Advanced → Advanced settings...* in the tray menu.
 
-## Advanced Settings
+## Impostazioni Avanzate
 
 Once you open Advanced Settings, you will be presented with the following options:
 
@@ -35,7 +35,7 @@ Every encrypted Internet connection has an unencrypted part. This is the very fi
 
 ### Check websites' certificate transparency
 
-Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy. If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. Chrome, in turn, will block it.
+Verifica l'autenticità di tutti i certificati per il dominio in base alla Politica di trasparenza dei certificati Chrome. If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. Chrome, in turn, will block it.
 
 ### Enable SSL/TLS certificate revocation checks
 
@@ -117,13 +117,13 @@ Specifies the size of the TCP packet fragmentation, avoiding deep packet inspect
 
 If this option is enabled, AdGuard splits the initial TLS packet (the ClientHello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Valid values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Valori validi: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Plain HTTP request fragment size
 
-Adjusts the size of the HTTP request fragmentation. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
+Regola la dimensione della frammentazione della richiesta HTTP. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-Valid values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Valori validi: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Show QUIC
 
@@ -135,7 +135,7 @@ Periodically sends TCP packets over idle connection to ensure it is alive and to
 
 ### TCP keepalive interval
 
-Here you can specify an idle time period, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used.
+Here you can specify an idle time period, in seconds, before sending a keepalive probe. Se viene specificato 0, verrà utilizzato il valore selezionato dal sistema.
 
 :::note
 
@@ -145,7 +145,7 @@ This setting only works when the *Enable TCP keepalive* option is enabled.
 
 ### TCP keepalive timeout
 
-Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. Se viene specificato 0, verrà utilizzato il valore selezionato dal sistema.
 
 :::note
 
@@ -153,7 +153,7 @@ This setting only works when the *Enable TCP keepalive* option is enabled.
 
 :::
 
-### Block Java
+### Blocca Java
 
 Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
 

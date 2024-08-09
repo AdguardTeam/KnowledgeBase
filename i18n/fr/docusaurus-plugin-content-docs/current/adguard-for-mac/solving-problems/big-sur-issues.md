@@ -5,13 +5,13 @@ sidebar_position: 4
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour Mac, un bloqueur d'annonces multifonctionnel qui protège votre appareil au niveau du système. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Currently existing problems
 
-Every year Apple releases a new version of macOS, introducing innovative solutions and adding new useful features. But some of them, such as Network Extensions API (Big Sur) or iCloud Private Relay (Monterey), cause some problems to many applications, AdGuard not being an exception. In this article we go over the known issues specific to each macOS version and possible ways to solve them.
+Every year Apple releases a new version of macOS, introducing innovative solutions and adding new useful features. But some of them, such as Network Extensions API (Big Sur) or iCloud Private Relay (Monterey), cause some problems to many applications, AdGuard not being an exception. Dans cet article, nous passons en revue les problèmes connus spécifiques à chaque version de macOS et les moyens possibles de les résoudre.
 
 ### Monterey 12: currently existing problems
 
@@ -19,9 +19,9 @@ These problems aren't fixed by Apple yet, or fixed only partially.
 
 #### Compatibility with iCloud Private Relay
 
-Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuard has no ability to block ads because iCloud Private Relay encrypts traffic before AdGuard can filter network connections. When iCloud Private Relay is active, any filtering (including local filtering) becomes impossible. Thus, AdGuard can't filter traffic or perform DNS filtering in Safari. That's why by default, AdGuard uses the "default route" which disables iCloud Private Relay.
+Actuellement, AdGuard et le Relais privé iCloud ne peuvent pas fonctionner en même temps. AdGuard has no ability to block ads because iCloud Private Relay encrypts traffic before AdGuard can filter network connections. Lorsque le Relais privé iCloud est actif, tout filtrage (y compris le filtrage local) devient impossible. AdGuard ne peut donc pas filtrer le trafic ou effectuer un filtrage DNS dans Safari. That's why by default, AdGuard uses the "default route" which disables iCloud Private Relay.
 
-For a deeper understanding of this problem, read [this article](../icloud-private-relay).
+Pour une compréhension plus approfondie de ce problème, lisez [cet article](../icloud-private-relay).
 
 **Recommended solution**
 
@@ -37,7 +37,7 @@ You can prevent AdGuard from using the "default route" by disabling it. It can b
 
 Apple's Mail app now uses a proxy to hide a user's IP address when downloading images from emails. However, it won't work if there's an active VPN connection. As it treats AdGuard as a VPN, it won't preload images automatically.
 
-For a deeper understanding of this problem, read [this article](../protect-mail-activity).
+Pour une compréhension plus approfondie de ce problème, lisez [cet article](../protect-mail-activity).
 
 **Recommended solution**
 
@@ -150,39 +150,39 @@ Now go to *Preferences → Network → Outbound proxy* and fill in the fields. F
 
 It's impossible to foresee each and every possible problem that can pop up in Big Sur or Monterey, there are countless various hardware/software and settings configurations. If you face any compatibility issues, please contact our support team, but feel free to try one of these workarounds first.
 
-### Using "Automatic proxy" filtering mode {#automatic-proxy}
+### Utilisation du mode de filtrage "Proxy automatique" {#automatic-proxy}
 
-If you face problems in Big Sur or Monterey which can't be resolved by any of the methods above, you can try switching AdGuard to *Automatic proxy* mode.
+Si vous rencontrez des problèmes avec Big Sur ou Monterey qui ne peuvent être résolus par aucune des méthodes ci-dessus, vous pouvez essayer de passer AdGuard en mode *Proxy automatique* .
 
-1. Open AdGuard's menu.
-1. Select *Preferences...*.
-1. Switch to the *Network* tab.
-1. Click the *Select Mode...* button.
-1. Select *Automatic Proxy*.
+1. Ouvrez le menu AdGuard.
+1. Sélectionnez *Préférences...*.
+1. Passez à l’onglet *Réseau* .
+1. Cliquez sur le bouton *Sélectionner le mode...* .
+1. Sélectionnez *Proxy automatique*.
 
-![Switch AdGuard to Automatic proxy mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/automatic-proxy_en.jpg)
+![Basculez AdGuard en mode proxy automatique](https://cdn.adtidy.org/content/kb/ad_blocker/mac/automatic-proxy_en.jpg)
 
-Now AdGuard has automatically added a **.pac** file to your Mac's network settings, so that the system will consider AdGuard a proxy and try to send all traffic through AdGuard.
+AdGuard a automatiquement ajouté un fichier **.pac** aux paramètres réseau de votre Mac, pour que le système considère AdGuard comme un proxy et essaie d'envoyer tout le trafic via AdGuard.
 
 :::note
 
-Some apps may ignore this system setting and their traffic will not be filtered.
+Certaines applications peuvent ignorer ce paramètre système et leur trafic ne sera pas filtré.
 
 :::
 
-### Enabling Kernel Extension in Big Sur and Monterey {#kernel-extension}
+### Activation de l'extension du noyau à Big Sur et Monterey {#kernel-extension}
 
-By default AdGuard uses Network Extension framework in Big Sur and Monterey as the old Kernel Extension framework is disabled there. This can cause some compatibility problems, but to enable Kernel Extension back, you need to disable System Integrity Protection (SIP) first. To disable SIP, follow this instruction:
+Par défaut, AdGuard utilise le framework d'extension réseau dans Big Sur et Monterey, car l'ancien framework d'extension de noyau y est désactivé. Cela peut entraîner des problèmes de compatibilité, mais pour réactiver l'extension du noyau, vous devez d'abord désactiver la protection de l'intégrité du système (SIP). Pour désactiver SIP, suivez ces instructions :
 
-1. Click the *Apple symbol* in the Menu bar.
-1. Click *Restart…*
+1. Cliquez sur le *symbole Apple* dans la barre de menu.
+1. Cliquez sur *Redémarrer…*
 1. Hold down *Command-R* to reboot into Recovery Mode.
 1. Click *Utilities*.
 1. Select *Terminal*.
 1. Type `csrutil disable`.
 1. Press *Return* or *Enter* on your keyboard.
-1. Click the *Apple symbol* in the Menu bar.
-1. Click *Restart…*
+1. Cliquez sur le *symbole Apple* dans la barre de menu.
+1. Cliquez sur *Redémarrer…*
 
 Now that SIP is disabled, this is how you enable Kernel Extension:
 
@@ -191,7 +191,7 @@ Now that SIP is disabled, this is how you enable Kernel Extension:
 1. Open AdGuard's menu.
 1. Select *Preferences...*.
 1. Switch to the *Network* tab.
-1. Click the *Select Mode...* button.
+1. Cliquez sur le bouton *Sélectionner le mode...* .
 1. Select *Kernel Extension*.
 1. Confirm that you want to switch to Kernel Extension.
 
