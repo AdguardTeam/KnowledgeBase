@@ -5,13 +5,13 @@ sidebar_position: 6
 
 :::info
 
-Questo articolo riguarda AdGuard per Android, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Android, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## How to reach Low-level settings
 
-:::caution
+:::attenzione
 
 Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. Questa sezione dovrebbe essere aperta soltanto se sai cosa stai facendo, o se ti è stato richiesto di farlo dal nostro team di supporto.
 
@@ -63,7 +63,7 @@ Here you can specify the time in milliseconds that AdGuard will wait for the res
 
 #### Risposta TTL bloccata
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+Qui puoi specificare il valore TTL (tempo d'attività) che sarà restituito in risposta a una richiesta bloccata.
 
 #### DNS cache size
 

@@ -3,120 +3,120 @@ title: 스텔스 모드
 sidebar_position: 4
 ---
 
-Many websites gather information about their visitors, such as their IP address, installed browser and operating system, screen resolution, and even the page from which a visitor was redirected. Some web pages use cookies to mark your browser and save your personal settings and preferences, or to "recognize" you upon your next visit. Stealth Mode safeguards your personal information from such data- and statistics-gathering systems.
+많은 웹사이트는 방문자의 IP 주소, 설치된 브라우저 및 운영 체제, 화면 해상도, 심지어 방문자가 리디렉션된 페이지 등 방문자에 대한 정보를 수집합니다. 일부 웹 페이지에서는 쿠키를 사용하여 브라우저를 표시하고 개인 설정 및 환경설정을 저장하거나 다음 방문 시 사용자를 '인식'합니다. 스텔스 모드는 이러한 데이터 및 통계 수집 시스템으로부터 개인 정보를 보호합니다.
 
-You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website from receiving the search request you used to find it on the Internet, automatically delete both third-party and the website's own cookies, turn off browser geolocation sharing that can be used to track your whereabouts, and hide your true IP address or even replace it with an arbitrary one.
+스텔스 모드의 작업을 유연하게 조정할 수 있습니다. 예를 들어 인터넷에서 웹사이트를 찾는 데 사용한 검색 요청을 웹사이트가 수신하지 못하도록 하고, 타사 쿠키와 웹사이트 자체 쿠키를 모두 자동으로 삭제하고, 내 위치를 추적하는 데 사용할 수 있는 브라우저 지리적 위치 공유를 끄고, 실제 IP 주소를 숨기거나 임의의 주소로 대체할 수도 있습니다.
 
-Below we will list and describe the main features and options that you can control in the **Stealth Mode** settings. They are split into four groups: **General**, **Tracking methods**, **Browser API**, and **Miscellaneous**.
+아래에서는 **스텔스 모드** 설정에서 제어할 수 있는 주요 기능과 옵션을 나열하고 설명합니다. **일반**, **추적 방법**, **브라우저 API**, **기타**의 네 가지 그룹으로 나뉩니다.
 
 :::note
 
-Some options may not be available depending on the particular product due to OS or other limitations.
+특정 제품에 따라 OS 또는 기타 제한 사항으로 인해 일부 옵션을 사용하지 못할 수 있습니다.
 
 :::
 
-## 보통 {#general}
+## 일반 {#general}
 
-### Hide your search queries {#searchqueries}
+### 검색어 숨기기 {#searchqueries}
 
-When you get directed to a website from Google, Yahoo, or any other search engine, this option hides the search query that you used to find that website.
+Google, Yahoo 또는 기타 검색 엔진에서 웹사이트로 이동하는 경우 이 옵션은 해당 웹사이트를 찾는 데 사용한 검색어를 숨깁니다.
 
-### Ask websites not to track you {#donottrack}
+### 웹사이트에 추적하지 않도록 요청하기 {#donottrack}
 
-Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit.
+방문하는 웹사이트에 [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) 및 [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) 요청을 보냅니다.
 
-### Strip tracking parameters from URLs
+### URL에서 추적 매개변수 제거
 
-If you enable this option, AdGuard will strip tracking parameters like `utm_*` and `fb_ref` from pages’ URLs.
+이 옵션을 활성화하면 AdGuard는 페이지의 URL에서 `utm_*` 및 `fb_ref와` 같은 추적 매개변수를 제거합니다.
 
-### Tracking methods {#tracking-methods}
+### 추적 방법 {#tracking-methods}
 
-### Self-destruction of third-party cookies {#3p-cookie}
+### 타사 쿠키의 자체 파기 {#3p-cookie}
 
-Websites use cookies to store your information and preferences, such as the language you selected, your location, or the list of items in your shopping cart. When you return to a website, your browser sends back the cookies belonging to that website, which allows it to "remember" your data.
+웹사이트는 쿠키를 사용하여 사용자가 선택한 언어, 위치, 장바구니의 품목 목록 등 사용자의 정보와 기본 설정을 저장합니다. 웹사이트에 다시 방문하면 브라우저는 해당 웹사이트에 속한 쿠키를 다시 전송하여 사용자의 데이터를 기억할 수 있습니다.
 
-Third-party cookies are those implemented by a website that is different from the one you are currently browsing. For example, cnn.com may have a Facebook "Like" widget on its homepage. This widget will implement a cookie that may be read later by Facebook. Some advertisers use such cookies to track what other sites you visit where their ads are placed.
+타사 쿠키는 현재 탐색 중인 웹사이트와 다른 웹사이트에 의해 구현된 쿠키입니다. 예를 들어 cnn.com은 홈페이지에 Facebook '좋아요' 위젯이 있을 수 있습니다. 이 위젯은 나중에 Facebook에서 읽을 수 있는 쿠키를 구현합니다. 일부 광고주는 이러한 쿠키를 사용하여 사용자가 광고가 게재된 다른 사이트를 추적합니다.
 
-Set a time period (in minutes) at the end of which all third-party cookies will be destroyed. Set the timer to 0 to block them completely.
+모든 타사 쿠키가 삭제되는 기간(분 단위)을 설정합니다. 완전히 차단하려면 타이머를 0으로 설정합니다.
 
 :::caution
 
-This setting deletes all third-party cookies, including the information of your logins through social networks or other third-party services. You may have to periodically re-log in to some websites and face other cookie-related issues. To block only tracking cookies, use [*AdGuard Tracking Protection filter*](/general/ad-filtering/filter-policy/#tracking-protection-filter).
+이 설정은 소셜 네트워크 또는 기타 타사 서비스를 통한 로그인 정보를 포함하여 모든 타사 쿠키를 삭제합니다. 일부 웹사이트에 주기적으로 재로그인해야 하거나 기타 쿠키 관련 문제가 발생할 수 있습니다. 추적 쿠키만 차단하려면 [*AdGuard 추적 보호 필터*](/general/ad-filtering/filter-policy/#tracking-protection-filter)를 사용하세요.
 
 :::
 
-### Self-destruction of first-party cookies {#1p-cookie}
+### 자사 쿠키의 자체 파괴 {#1p-cookie}
 
-Set a time period (in minutes) at the end of which all cookies will be destroyed. Set the timer to 0 to block them completely.
+모든 쿠키가 삭제되는 기간(분 단위)을 설정합니다. 완전히 차단하려면 타이머를 0으로 설정합니다.
 
 :::caution
 
-We do not recommend enabling this option as it may severely interfere with the work of certain websites.
+이 옵션은 특정 웹사이트의 작업을 심각하게 방해할 수 있으므로 활성화하지 않는 것이 좋습니다.
 
 :::
 
-### Disable cache for third-party requests {#3p-cache}
+### 타사 요청에 대한 캐시 비활성화 {#3p-cache}
 
-When a browser addresses a page, the server assigns an ETag to that page. This ETag is used by the browser to cache the page's contents. Upon subsequent requests, the browser sends the ETag to the corresponding server, thus letting the server learn the visitor’s identity. As long as the site's files are cached, the ETag is sent every time your browser addresses this site. If the site has embedded content from another server (such as an image or iframe), that server can track your activities without your knowledge.
+브라우저가 페이지 주소를 지정하면 서버는 해당 페이지에 ETag를 할당합니다. 이 ETag는 브라우저에서 페이지의 콘텐츠를 캐시하는 데 사용됩니다. 후속 요청 시 브라우저는 해당 서버로 ETag를 전송하여 서버가 방문자의 신원을 파악할 수 있도록 합니다. 사이트의 파일이 캐시되어 있는 한, 브라우저에서 이 사이트를 주소 지정할 때마다 ETag가 전송됩니다. 사이트에 다른 서버의 콘텐츠(예: 이미지 또는 iframe)가 포함된 경우 해당 서버는 사용자 모르게 사용자의 활동을 추적할 수 있습니다.
 
-### Block third-party Authorization header {#3p-auth}
+### 타사 인증 헤더 차단 {#3p-auth}
 
-"Authorization" header value is cached by the browser, and then is sent alongside every request to that domain. It means that it can be used for tracking purposes just like cookies.
+'Authorization' 헤더 값은 브라우저에 의해 캐시된 다음 해당 도메인에 대한 모든 요청과 함께 전송됩니다. 쿠키와 마찬가지로 추적 목적으로 사용할 수 있음을 의미합니다.
 
-## Browser API {#browser-api}
+## 브라우저 API {#browser-api}
 
-### Block WebRTC {#webrtc}
+### WebRTC 차단 {#webrtc}
 
-WebRTC (Web Real-Time Communication) is a technology that allows direct streaming of data between browsers and apps. It can let others know your true IP address, even if you use a proxy or VPN. Enabling this option can disrupt the work of certain browser applications, such as messengers, chats, cinemas, or games.
+WebRTC(웹 실시간 통신)는 브라우저와 앱 간에 데이터를 직접 스트리밍할 수 있는 기술입니다. 프록시 또는 VPN을 사용하더라도 실제 IP 주소가 노출될 수 있습니다. 이 옵션을 활성화하면 메신저, 채팅, 영화관 또는 게임과 같은 특정 브라우저 애플리케이션의 작동이 중단될 수 있습니다.
 
-### Block Push API {#push}
+### 푸쉬 API 차단 {#push}
 
-The Push API enables servers to send messages to web applications regardless of the activity status of your browser. Thus, you may see notifications from various websites even if your browser is hidden in the tray or not launched. Enable this option to block the browser's Push API completely.
+푸시 API를 사용하면 브라우저의 활동 상태와 관계없이 서버가 웹 애플리케이션에 메시지를 보낼 수 있습니다. 따라서 브라우저가 트레이에 숨겨져 있거나 실행되지 않은 경우에도 다양한 웹사이트의 알림이 표시될 수 있습니다. 브라우저의 푸시 API를 완전히 차단하려면 이 옵션을 사용 설정합니다.
 
-### Block Location API {#location}
+### 위치 API 차단 {#location}
 
-Enabling this option will prevent the browser from sending GPS data that could be used to determine your location, modify your search results, or otherwise influence your web experience.
+이 옵션을 활성화하면 브라우저가 사용자의 위치를 파악하거나 검색 결과를 수정하거나 웹 환경에 영향을 줄 수 있는 GPS 데이터를 전송하지 못하도록 차단할 수 있습니다.
 
-### Block Flash {#flash}
+### Flash 차단 {#flash}
 
-The Flash Player plugin has become increasingly vulnerable to such online threats as viruses and hackers; it may also significantly affect website loading time. Turning this setting on makes AdGuard block browsers' ability to detect components (such as plugins and ActiveXObject objects) that allow Flash to display content. This effectively means that browsers are unable to support Flash.
+Flash Player 플러그인은 바이러스 및 해커와 같은 온라인 위협에 점점 더 취약해지고 있습니다. 또한 웹사이트 로딩 시간에 큰 영향을 미칠 수도 있습니다. 이 설정을 켜면 AdGuard가 브라우저에서 Flash의 콘텐츠 표시를 허용하는 구성 요소(예: 플러그인 및 ActiveXObject 개체)를 감지하는 기능을 차단합니다. 이는 사실상 브라우저가 Flash를 지원할 수 없음을 의미합니다.
 
-### Block Java {#java}
+### Java 차단 {#java}
 
-Some websites and web services still use the old technology to support Java plugins. The Java plugin API, which is the basis of Java plugins, has serious security flaws. For security purposes, you can disable such plugins. Nevertheless, even if you decide to use the "Block Java" option, JavaScript will still be enabled.
+일부 웹사이트와 웹 서비스는 여전히 이전 기술을 사용하여 Java 플러그인을 지원합니다. Java 플러그인의 기반이 되는 Java 플러그인 API에는 심각한 보안 결함이 있습니다. 보안을 위해 이러한 플러그인을 비활성화할 수 있습니다. 그러나 Java 차단 옵션을 사용하기로 결정하더라도 자바스크립트는 계속 활성화됩니다.
 
-## Miscellaneous {#miscellaneous}
+## 기타 {#miscellaneous}
 
-### Hide Referer from third parties {#referer}
+### 제3자로부터 리퍼러 숨기기 {#referer}
 
-Referer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referer saves the URL of the initial page. The server that hosts the destination web page often has software that parses Referer and extracts various pieces of information from it. Enabling the *Hide Referer from third-parties* option hides the current website from third-party sites by altering the HTTP header.
+리퍼러는 브라우저와 서버 간 요청에 사용되는 HTTP 헤더입니다. 요청 소스의 URL이 포함되어 있습니다. 한 페이지에서 다른 페이지로 이동할 때 리퍼러는 초기 페이지의 URL을 저장합니다. 대상 웹 페이지를 호스팅하는 서버에는 리퍼러를 파싱하고 다양한 정보를 추출하는 소프트웨어가 있는 경우가 많습니다. *타사에서 리퍼러 숨기기* 옵션을 활성화하면 HTTP 헤더를 변경하여 현재 웹사이트를 타사 사이트에서 숨깁니다.
 
-You can also set an arbitrary value for Referer by entering it into the *Custom Referer* field. To use default Referer, leave the field blank.
+*사용자* 지정 참조자 필드에 임의의 값을 입력하여 참조자에 대한 임의의 값을 설정할 수도 있습니다. 기본 리퍼러를 사용하려면 이 필드를 비워둡니다.
 
-Note that to be able to filter traffic, AdGuard applications 'intercept' browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely. Same goes for the *Hide Referer from third parties* option: AdGuard intercepts HTTP(S) requests, in particular to remove or change the Referer header if this option is enabled. However, it happens only after these requests “leave” the browser. This means that if you monitor Referer inside the browser (for example, with the help of Chrome's Developer Tools), you will see the original Referer because the request hasn't reached AdGuard yet. You can use software like [Fiddler](https://www.telerik.com/fiddler) to make sure that Referer gets altered correctly.
+트래픽을 필터링하기 위해 AdGuard 애플리케이션은 브라우저-서버 간 요청을 '가로채기'합니다. 광고, 추적 및 피싱 서버에 대한 요청은 서버로 전송되기 전에 변경되거나 완전히 차단될 수 있습니다. *타사 리퍼러 숨기기* 옵션도 마찬가지입니다: 이 옵션이 활성화된 경우 AdGuard는 HTTP(S) 요청, 특히 리퍼러 헤더를 제거하거나 변경하기 위해 요청을 가로챕니다. 그러나 이러한 요청은 브라우저에서 '종료'된 후에만 발생합니다. 즉, 브라우저 내부에서 리퍼러를 모니터링하는 경우(예: Chrome의 개발자 도구 사용) 요청이 아직 AdGuard에 도달하지 않았기 때문에 원래 리퍼러가 표시됩니다. [Fiddler](https://www.telerik.com/fiddler)와 같은 소프트웨어를 사용하여 Referer가 올바르게 변경되었는지 확인할 수 있습니다.
 
-On the opposite, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. It will alter the Referer right then and there, so Developer Tools will show the desired Referer for your requests.
+반대로, 모든 브라우저 확장 프로그램의 특성상 AdGuard 브라우저 확장 프로그램은 브라우저 '내부'에서 작동합니다. 그러면 바로 그 자리에서 Referer가 변경되므로 개발자 도구는 귀하의 요청에 대해 원하는 Referer를 표시합니다.
 
-### Hide your User-Agent {#useragent}
+### User Agent 숨기기 {#useragent}
 
-When you visit a website, your browser sends its information to the server. It looks like a text line that is part of an HTTP request that begins with "User-Agent:". It usually includes the name and version of the browser, the operating system, and language settings. We cut User-Agent from identifying information so that advertisers cannot obtain it.
+웹사이트를 방문하면 브라우저가 해당 정보를 서버로 전송합니다. 'User-Agent:'로 시작하는 HTTP 요청의 일부인 텍스트 줄처럼 보입니다. 일반적으로 브라우저의 이름과 버전, 운영 체제 및 언어 설정이 포함됩니다. 우리는 광고주가 정보를 얻을 수 없도록 User Agent를 식별 정보에서 제외했습니다.
 
-You can also set an arbitrary value for User-Agent by entering it into the Custom User-Agent field. To use default User-Agent, leave the field blank.
+Custom User Agent 필드에 User Agent 값을 입력하여 임의의 값을 설정할 수도 있습니다. 기본 User Agent를 사용하려면 필드를 비워 두세요.
 
-### Hide your IP address {#ip}
+### IP 주소 숨기기 {#ip}
 
-Stealth Mode cannot hide your IP address. However, we can conceal it so that websites you visit will think you are a proxy. Sometimes this helps, and websites ignore your true IP address.
+스텔스 모드에서는 IP 주소를 숨길 수 없습니다. 그러나 방문하는 웹사이트가 귀하를 프록시로 인식하도록 숨길 수 있습니다. 이 방법이 도움이 될 때도 있지만 웹사이트는 실제 IP 주소를 무시합니다.
 
-You can set an arbitrary IP address, which you would like others to perceive as yours, by simply entering it into the corresponding field. To use the default IP address, leave the field blank.
+다른 사람이 내 IP 주소로 인식하도록 하려면 해당 필드에 입력하기만 하면 임의의 IP 주소를 설정할 수 있습니다. 기본 IP 주소를 사용하려면 이 필드를 비워둡니다.
 
-### Remove X-Client-Data header from HTTP requests {#xclientdata}
+### HTTP 요청으로 부터 X-Client-Data 헤더를 제거 {#xclientdata}
 
-It forbids Google Chrome from sending its version and modification information with requests to Google domains (including Double Click and Google Analytics).
+이는 Google Chrome이 Google 도메인(Double Click 및 Google Analytics 포함)에 대한 요청과 함께 버전 및 수정 정보를 보내는 것을 금지합니다.
 
-### Protect from DPI {#dpi}
+### DPI로부터 보호 {#dpi}
 
-The Deep Packet Inspection is a system of deep analysis and filtering of traffic by packet content, as well as the accumulation of statistical data. Using this technology, ISPs have the ability to control the passing traffic and limit access to content for their clients.
+심층 패킷 검사는 패킷 내용별로 트래픽을 심층 분석 및 필터링하고 통계 데이터를 축적하는 시스템입니다. ISP는 이 기술을 사용하여 통과하는 트래픽을 제어하고 클라이언트의 콘텐츠 액세스를 제한할 수 있습니다.
 
-AdGuard can modify outgoing packet data so that the client does not fall under the DPI blocking criteria. This means that by enabling this option, users can get access to the content they want. Not all DPI systems can be bypassed at this time, but we are constantly working to improve this.
+AdGuard는 클라이언트가 DPI 차단 기준에 해당하지 않도록 발신 패킷 데이터를 수정할 수 있습니다. 즉, 이 옵션을 활성화하면 사용자가 원하는 콘텐츠에 액세스할 수 있습니다. 현재 모든 DPI 시스템을 우회할 수 있는 것은 아니지만 이를 개선하기 위해 지속적으로 노력하고 있습니다.
 
-The "Protect from DPI" feature is already implemented in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android.
+'DPI로부터 보호' 기능은 Windows용 AdGuard, Mac용 AdGuard 및 Android용 AdGuard에 이미 구현되어 있습니다.

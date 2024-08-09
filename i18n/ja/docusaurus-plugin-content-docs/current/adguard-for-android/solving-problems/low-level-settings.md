@@ -63,7 +63,7 @@ Here you can specify the time in milliseconds that AdGuard will wait for the res
 
 #### Blocked response TTL
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+ここでは、ブロックされたリクエストに応答して返される TTL (time to live) 値を指定できます。
 
 #### DNS cache size
 

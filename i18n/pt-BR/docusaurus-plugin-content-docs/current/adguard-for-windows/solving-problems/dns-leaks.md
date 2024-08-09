@@ -1,5 +1,5 @@
 ---
-title: Possible DNS leaks
+title: Possíveis vazamentos de DNS
 sidebar_position: 9
 ---
 
@@ -9,40 +9,40 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 :::
 
-AdGuard for Windows allows users to specify a DNS server address to resolve queries instead of system DNS server, which is provided by your ISP if not overridden in the system settings. Using a non-default DNS server can safeguard your DNS traffic from the ISP’s interception. Moreover, by choosing an encrypted and/or filtering DNS server, you get another layer of protection against bad actors and annoying ads.
+O AdGuard para Windows permite que os usuários especifiquem um endereço de servidor DNS para resolver consultas em vez do servidor DNS do sistema, que é fornecido pelo seu ISP se não for substituído nas configurações do sistema. Usar um servidor DNS não padrão pode proteger seu tráfego DNS contra interceptação do ISP. Além disso, ao escolher um servidor DNS criptografado e/ou filtrante, você obtém outra camada de proteção contra ameaças e anúncios irritantes.
 
-Many AdGuard for Windows users appreciate the DNS protection feature. But some of them encounter the following issue: a check on a website like https://ipleak.net/ shows that requests are handled by default DNS server instead of the selected one. In this article we will tell you why this happens and how to avoid it.
+Muitos usuários do AdGuard para Windows gostam do recurso de proteção DNS. Mas alguns deles encontram o seguinte problema: uma verificação em um site como https://ipleak.net/ mostra que as solicitações são tratadas pelo servidor DNS padrão em vez do servidor selecionado. Neste artigo, explicaremos por que isso acontece e como evitá-lo.
 
-## Bootstrap DNS address
+## Endereço DNS de bootstrap
 
-The DNS server addresses could be written as IPs or as domain names. In the case of IP addresses there are no difficulties: AdGuard forwards the DNS request directly to the server specified in the DNS protection module. However, encrypted DNS server addresses, like DoT or DoH, are most often written as domain names. In this case, to first resolve the encrypted DNS server address, AdGuard sends a DNS query to the bootstrap address, which is by default a system DNS server. This connection is what check services perceive as a leak.
+Os endereços dos servidores DNS podem ser escritos como IPs ou nomes de domínio. No caso dos endereços IP não há dificuldades: o AdGuard encaminha a solicitação DNS diretamente para o servidor especificado no módulo de proteção DNS. No entanto, endereços de servidores DNS criptografados, como DoT ou DoH, são geralmente escritos como nomes de domínio. Neste caso, para primeiro resolver o endereço do servidor DNS criptografado, o AdGuard envia uma consulta DNS para o endereço de inicialização, que é por padrão um servidor DNS do sistema. Essa conexão é o que os serviços de verificação consideram um vazamento.
 
-**To eliminate this leak:**
+**Para eliminar esse vazamento:**
 
-- go to the *Advanced settings*
-- scroll down to the *List of custom bootstrap addresses* section
-- enter the custom bootstrap address in IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
-- click *Save*
+- vá para *Configurações avançadas*
+- role para baixo até a seção *Lista de endereços de bootstrap personalizados*
+- insira o endereço de inicialização personalizado no formato de endereço IP (você pode usar [a lista de provedores de DNS conhecidos](https://adguard-dns.io/kb/general/dns-providers/))
+- clique em *Salvar*
 
-## Fallback DNS server
+## Servidor DNS fallback
 
-It could happen that AdGuard cannot reach the specified server because of a weak internet connection, an expiration of timeout set by default or some server related issues. In this case, it will connect to the fallback server, which is by default a system DNS server. This connection will also be considered by the check service as a leak.
+Pode ser que o AdGuard não consiga acessar o servidor especificado devido a uma conexão de Internet fraca, à expiração do tempo limite definido por padrão ou a alguns problemas relacionados ao servidor. Neste caso, ele se conectará ao servidor substituto, que por padrão é um servidor DNS do sistema. Esta conexão também será considerada pelo serviço de verificação como vazamento.
 
-**To eliminate this leak:**
+**Para eliminar esse vazamento:**
 
-- go to the *Advanced settings*
-- scroll down to the *Fallback servers* section
-- check the *Use custom servers* option
-- then find the *List of custom fallback servers* section and enter custom fallback servers one per line
+- vá para *Configurações avançadas*
+- role para baixo até a seção *Servidores de fallback*
+- marque a opção *Usar servidores personalizados*
+- em seguida, encontre a seção *Lista de servidores fallback personalizados* e insira servidores fallback personalizados, um por linha
 
-or
+ou
 
-- go to the *Advanced settings*
-- scroll down to the *Fallback servers* section
-- check the *Don’t use fallback servers* option
+- vá para *Configurações avançadas*
+- role para baixo até a seção *Servidores de fallback*
+- marque a opção *Não usar servidores substitutos*
 
-or
+ou
 
-- go to the *Advanced settings*
-- scroll down to the *DNS server timeout period* section
-- enter an arbitrary large number
+- vá para *Configurações avançadas*
+- role para baixo até a seção *Período de tempo limite do servidor DNS*
+- insira um número grande arbitrário

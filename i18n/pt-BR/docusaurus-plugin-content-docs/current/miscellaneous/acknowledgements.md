@@ -11,38 +11,38 @@ Esta é a lista de bibliotecas e outros recursos que realmente nos ajudaram no p
 
 ## AdGuard para Windows {#win}
 
-- SQLLite database engine: [sqlite.org](https://sqlite.org)
-- ADO.NET provider for SQLite: [system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
-- Json.NET — high-performance JSON framework for .NET: [www.newtonsoft.com/json](https://www.newtonsoft.com/json)
-- AvalonEdit — WPF-based text editor component: [avalonedit.net](https://avalonedit.net)
+- Mecanismo de banco de dados SQLLite: [sqlite.org](https://sqlite.org)
+- Provedor ADO.NET para SQLite: [system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
+- Json.NET — estrutura JSON de alto desempenho para .NET: [www.newtonsoft.com/json](https://www.newtonsoft.com/json)
+- AvalonEdit, componente do editor de texto baseado em WPF: [avalonedit.net](https://avalonedit.net)
 
 ## AdGuard para Mac {#mac}
 
 - Red Sweater Software, LLC para o componente RSVerticallyCenteredTextFieldCell: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
-- Ilija Tovilo for ITProgressIndicator component: [github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
+- Ilija Tovilo para o componente ITProgressIndicator: [github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
 - Projeto Sparkle para o componente Sparkle.framework: [http://sparkle-project.org](http://sparkle-project.org)
-- Robbie Hanson for GCDAsyncSocket component: [github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
-- Tony Million for Reachability component: [github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
-- August «Gus» Mueller for Fmdb component: [github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
-- Stephen F. Booth for SFBCrashReporter project: [github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)
-- Bartosz Janda for Acextract component: [github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
+- Robbie Hanson para o componente GCDAsyncSocket: [github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
+- Tony Million para o componente Reachability: [github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
+- August «Gus» Mueller para o componente Fmdb: [github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
+- Stephen F. Booth para o projeto SFBCrashReporter: [github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)
+- Bartosz Janda para o componente Acextract: [github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
 - FLOPageViewController: [github.com/floschliep/FLOPageViewController](https://github.com/floschliep/FLOPageViewController)
 
 ## AdGuard para Android {#android}
 
-- Logback-android by Tony19: [tony19.github.io/logback-android](https://tony19.github.io/logback-android)
+- Logback-android por Tony19: [tony19.github.io/logback-android](https://tony19.github.io/logback-android)
 - Otto por Square: [http://square.github.io/otto](http://square.github.io/otto)
-- RootTools Library by Stericson: [github.com/Stericson/RootTools](https://github.com/Stericson/RootTools)
-- MaterialDateRangePicker by Supratim Chakraborty: [github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
-- HelloCharts by Leszek Wach: [github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)
+- Biblioteca RootTools por Stericson: [github.com/Stericson/RootTools](https://github.com/Stericson/RootTools)
+- MaterialDateRangePicker por Supratim Chakraborty: [github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
+- HelloCharts por Leszek Wach: [github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)
 
 ## AdGuard para iOS {#ios}
 
-- Reachability component by Tony Million: [github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
-- Fmdb component by August «Gus» Mueller: [github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
-- NSStringPunycodeAdditions component by Nate Weaver: [github.com/Wevah/Punycode-Cocoa](https://github.com/Wevah/Punycode-Cocoa)
-- Minizip-ng library by Nathan Moinvaziri: [github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
-- Lottie for iOS library by Brandon Withrow: [github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
+- Reachability para componente por Tony Million: [github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
+- Fmdb componente por August «Gus» Mueller: [github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
+- NSStringPunycodeAdditions componente por Nate Weaver: [github.com/Wevah/Punycode-Cocoa](https://github.com/Wevah/Punycode-Cocoa)
+- Biblioteca Minizip-ng por Nathan Moinvaziri: [github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
+- Lottie para biblioteca iOS por Brandon Withrow: [github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
 
 ## Extensão do AdGuard para navegador {#extension}
 
@@ -136,42 +136,42 @@ Também um enorme agradecimento e gratidão a todos os testadores beta e outros 
 - Andy Kleinert (AndyKl) — tradutor e revisor para alemão no Crowdin
 - BigDargon — contribuiu com o projeto hostsVN como fonte para a lista de DNS do AdGuard
 - Blaz — começou como colaborador de filtros e agora trabalha no AdGuard
-- Boo Berry — Telegram group moderator
-- buuuuuuu190 — beta tester
-- clarke — beta tester
-- [dartrax](https://github.com/dartrax) — beta tester
-- dja2k — beta tester
+- Boo Berry — Moderador do grupo do Telegram
+- buuuuuuu190 — testador beta
+- clarke — testador beta
+- [dartrax](https://github.com/dartrax) — testador beta
+- dja2k — testador beta
 - Eduardo Addad de Oliveira (eduardoaddad) — tradutor e revisor de português e português brasileiro no Crowdin
-- fabjazz — beta tester
+- fabjazz — testador beta
 - Görkem Emrah Güler (gork7777) — tradutor e revisor para turco no Crowdin
-- hanschke — beta tester
+- hanschke — testador beta
 - iDjay — excelente testador beta do AdGuard para iOS
 - Imre Kristoffer Eilertsen (DandelionSprout) — mantenedor dos "Dandelion Sprout’s Nordic Filters" incluídos em todas as ferramentas do AdGuard
 - IONIL — tradutor e revisor para hebraico no Crowdin
-- itabmedia — beta tester
-- kirasam — beta tester
+- itabmedia — testador beta
+- kirasam — testador beta
 - krystian3w — colaborador de filtro muito ativo
 - lancelot.moon — tradutor e revisor para o chinês tradicional no Crowdin, testador beta
-- Lord Ami — beta tester
+- Lord Ami — testador beta
 - Lukas Novotny (novas78) — tradutor e revisor para tcheco no Crowdin
-- malware1 — beta tester
-- milder — beta tester
-- Nicos18 — beta tester
+- malware1 — testador beta
+- milder — testador beta
+- Nicos18 — testador beta
 - Oizaro — tradutor e revisor de italiano no Crowdin
 - Oleg Chashko — testador beta muito ativo do AdGuard para Safari
 - Oskari Lavinto (olavinto) — tradutor e revisor para finlandês no Crowdin
-- ouzbed — beta tester
+- ouzbed — testador beta
 - PentagramTr — colaborador de filtros, trouxe muitas novidades para o filtro do idioma turco
 - Peter Hubinsky (hubak) — tradutor e revisor para eslovaco no Crowdin
 - PiQuark6046 — colaborador de filtros
-- rickyoh — beta tester
-- Ronin427 — beta tester
-- Sanjay Nand — beta tester
-- saturnotaku — beta tester
-- steve1209 — beta tester
-- streetwolf — beta tester
+- rickyoh — testador beta
+- Ronin427 — testador beta
+- Sanjay Nand — testador beta
+- saturnotaku — testador beta
+- steve1209 — testador beta
+- streetwolf — testador beta
 - superlex — nos ajuda com scriptlets, filtros e AdGuard para Safari
-- TayTayTheKiller — beta tester
+- TayTayTheKiller — testador beta
 - [TPS](https://github.com/TPS) — localizador de bugs, colaborador de filtros
 - Yuki2718 — contribui ativamente para filtros AdGuard
 - zznosar — testador beta ativo focado no AdGuard para iOS
@@ -181,4 +181,4 @@ Também um enorme agradecimento e gratidão a todos os testadores beta e outros 
 
 Também queremos agradecer aos usuários [xda-developers](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/). Obrigado pelo feedback de vocês!
 
-Sempre apreciamos os comentários de nossos usuários, especialmente os construtivos. Você sempre pode entrar em contato conosco para compartilhar suas ideias sobre o AdGuard, solicitar novos recursos e enviar bugs. Join the [AdGuard Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).
+Sempre apreciamos os comentários de nossos usuários, especialmente os construtivos. Você sempre pode entrar em contato conosco para compartilhar suas ideias sobre o AdGuard, solicitar novos recursos e enviar bugs. Junte-se ao [Subreddit do AdGuard](https://reddit.com/r/adguard), [Fórum Xda-developers](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) ou visite a nossa página no [GitHub](https://github.com/AdguardTeam).

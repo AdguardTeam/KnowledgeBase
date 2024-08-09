@@ -1,20 +1,20 @@
 ---
-title: WFP driver
+title: Driver WFP
 sidebar_position: 1
 ---
 
 :::info
 
-Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-To filter network traffic, AdGuard uses a network driver. There are two options: TDI driver and WFP driver. While WFP driver is generally preferrable and is enabled by default for all newer Windows OS versions (Windows 8 and newer), it can potentially cause compatibility problems, especially with some antiviruses. These problems and subsequent errors can be very different in each case.
+Para filtrar el tráfico de red, AdGuard utiliza un controlador de red. Hay dos opciones: controlador TDI y controlador WFP. Aunque el controlador PMA es generalmente preferible y está activado por defecto para todas las versiones más recientes del sistema operativo Windows (Windows 8 y posteriores), puede causar problemas de compatibilidad, especialmente con algunos antivirus. Estos problemas y errores posteriores pueden ser muy diferentes en cada caso.
 
-If you encounter a problem that you suspect might be caused by this, you can always switch to the older but more stable TDI network driver. To do so:
+Si encuentras un problema que sospecha que puede deberse a esto, siempre puedes cambiar al controlador de red TDI más antiguo pero más estable. Para hacerlo:
 
-1. Go to *Settings → Network*.
+1. Ve a *Ajustes → Red*.
 
-2. Disable WFP driver as it’s done in this picture:
+2. Desactiva el driver WFP como se hace en esta imagen:
 
-![WFP driver *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)
+![Driver WFP *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)

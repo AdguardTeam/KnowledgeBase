@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::note
 
-HAR files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Soubory HAR jsou zpracovávány v souladu se [Zásadami ochrany osobních údajů AdGuardu](https://adguard.com/en/privacy.html).
 
 :::
 

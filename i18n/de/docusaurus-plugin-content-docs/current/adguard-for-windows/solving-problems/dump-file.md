@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 :::note
 
-Data and/or files provided in dump files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Daten und/oder Dateien, die in Speicherabbilddateien zur Verfügung gestellt werden, werden gemäß der [Datenschutzerklärung von AdGuard](https://adguard.com/de/privacy.html) verarbeitet.
 
 :::
 

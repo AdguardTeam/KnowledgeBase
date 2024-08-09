@@ -1,30 +1,30 @@
 ---
-title: Setting up filtering in Tor Browser
+title: Impostazione del filtraggio nel Tor Browser
 sidebar_position: 10
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Mac, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-By default, Tor Browser is added to AdGuard’s list of filtered applications. However, to filter it, AdGuard needs to change Tor's security settings. This will make Tor trust AdGuard's CA certificate.
+Per impostazione predefinita, Tor Browser viene aggiunto all'elenco delle applicazioni filtrate di AdGuard. Tuttavia, per filtrarlo, AdGuard deve modificare le impostazioni di sicurezza di Tor. Questo farà sì che Tor si fidi del certificato CA di AdGuard.
 
-If you decide to filter Tor and check it in *Preferences* → *Network* → *Applications*, AdGuard will show you this dialog box:
+Se decidi di filtrare Tor e lo selezioni in *Preferenze* → *Rete* → *Applicazioni*, AdGuard ti mostrerà questa finestra di dialogo:
 
-![AdGuard dialog box](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tor-setup.png)
+![Finestra di dialogo AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tor-setup.png)
 
-By updating Tor settings, AdGuard will set the following:
+Aggiornando le impostazioni di Tor, AdGuard imposterà quanto segue:
 
 `security.enterprise_roots.enabled`: true
 
-This setting will cause Tor to trust root certificates. [Learn more](https://support.mozilla.org/en-US/kb/setting-certificate-authorities-firefox)
+Questa impostazione farà sì che Tor consideri attendibili i certificati root. [Per saperne di più](https://support.mozilla.org/en-US/kb/setting-certificate-authorities-firefox)
 
 `security.cert_pinning.enforcement_level`: 1
 
-Public Key Pinning is a security measure that allows websites to ensure that the connection between a website and a user is authentic. This involves the website publishing a list of public keys, or pins, that it trusts. With the enforcement level set to 1, pinning is not enforced for custom CAs. [Learn more](https://wiki.mozilla.org/SecurityEngineering/Public_Key_Pinning)
+Il Public Key Pinning è una misura di sicurezza che consente ai siti web di garantire che la connessione tra un sito web e l'utente sia autentica. Ciò comporta che il sito web pubblichi un elenco di chiavi pubbliche, o pin, di cui si fida. Con il livello di esecuzione impostato su 1, il blocco non viene applicato per le CA personalizzate. [Per saperne di più](https://wiki.mozilla.org/SecurityEngineering/Public_Key_Pinning)
 
-To apply the changes, you’ll need to restart Tor Browser.
+Per applicare le modifiche, dovrai riavviare il Tor Browser.
 
-If you manually change these settings, Tor filtering will be stopped.
+Se modifichi manualmente queste impostazioni, il filtro Tor verrà interrotto.

@@ -89,17 +89,25 @@ AdGuard позволяет направлять трафик устройств�
 
 ### Как использовать AdGuard с NordVPN
 
-1. Откройте AdGuard и перейдите в раздел **Настройки** → **Фильтрация** → **Сеть** → **Прокси** → **Прокси-сервер**.
+1. Log in to your NordVPN account.
 
-1. Нажмите **Добавить прокси** и введите следующие данные:
+1. Go to **Services** → **NordVPN** → **Manual setup** and set up your service credentials manually.
 
-    | Поле        | Значение                                                                                                                        |
-    | ----------- | ------------------------------------------------------------------------------------------------------------------------------- |
-    | Тип прокси  | *SOCKS5*                                                                                                                        |
-    | Прокси-хост | *any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent)* |
-    | Порт прокси | *1080*                                                                                                                          |
+1. You will receive a verification code on the email address you use for NordVPN. Use it on your NordVPN account as requested, then tap *Apply* and *OK* to save the changes.
 
-1. В полях **Имя Пользователя** и **Пароль** введите имя пользователя и пароль от NordVPN.
+![Manual setup](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/outbound-proxy/nordvpn-manual-setup.png)
+
+1. Open the AdGuard app, go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server** → **Add proxy server**.
+
+1. Enter the following data:
+
+    | Поле        | Значение                                                                                                                      |
+    | ----------- | ----------------------------------------------------------------------------------------------------------------------------- |
+    | Тип прокси  | *SOCKS5*                                                                                                                      |
+    | Прокси-хост | Any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent) |
+    | Порт прокси | *1080*                                                                                                                        |
+
+1. Enter your NordVPN credentials in the **Username** and **Password** fields.
 
 1. Нажмите **Сохранить и выбрать**.
 

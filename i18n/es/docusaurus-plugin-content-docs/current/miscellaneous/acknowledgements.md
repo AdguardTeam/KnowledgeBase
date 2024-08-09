@@ -13,8 +13,8 @@ Esta es la lista de bibliotecas y otros recursos que realmente nos ayudaron con 
 
 - SQLLite database engine: [sqlite.org](https://sqlite.org)
 - ADO.NET provider for SQLite: [system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
-- Json.NET — high-performance JSON framework for .NET: [www.newtonsoft.com/json](https://www.newtonsoft.com/json)
-- AvalonEdit — WPF-based text editor component: [avalonedit.net](https://avalonedit.net)
+- Json.NET — Marco JSON de alto rendimiento para .NET: [www.newtonsoft.com/json](https://www.newtonsoft.com/json)
+- AvalonEdit: componente de editor de texto basado en WPF: [avalonedit.net](https://avalonedit.net)
 
 ## AdGuard para Mac {#mac}
 
@@ -23,7 +23,7 @@ Esta es la lista de bibliotecas y otros recursos que realmente nos ayudaron con 
 - Proyecto Sparkle para el componente Sparkle.framework: [http://sparkle-project.org](http://sparkle-project.org)
 - Robbie Hanson for GCDAsyncSocket component: [github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
 - Tony Million for Reachability component: [github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
-- August «Gus» Mueller for Fmdb component: [github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
+- August «Gus» Mueller para el componente Fmdb: [github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
 - Stephen F. Booth for SFBCrashReporter project: [github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)
 - Bartosz Janda for Acextract component: [github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
 - FLOPageViewController: [github.com/floschliep/FLOPageViewController](https://github.com/floschliep/FLOPageViewController)
@@ -67,11 +67,11 @@ Esta es la lista de bibliotecas y otros recursos que realmente nos ayudaron con 
 - adm-zip: [github.com/cthackers/adm-zip](https://github.com/cthackers/adm-zip)
 - config: [github.com/lorenwest/node-config](https://github.com/lorenwest/node-config)
 - electron-debug: [github.com/sindresorhus/electron-debug](https://github.com/sindresorhus/electron-debug)
-- electron-log: [github.com/megahertz/electron-log](https://github.com/megahertz/electron-log)
+- electron-debug: [github.com/megahertz/electron-log](https://github.com/megahertz/electron-log)
 - electron-remote: [github.com/electron-userland/electron-remote](https://github.com/electron-userland/electron-remote)
 - electron-simple-updater: [github.com/megahertz/electron-simple-updater](https://github.com/megahertz/electron-simple-updater)
-- electron-store: [github.com/sindresorhus/electron-store](https://github.com/sindresorhus/electron-store)
-- electron-updater: [github.com/electron-userland/electron-builder](https://github.com/electron-userland/electron-builder)
+- electron-remote: [github.com/sindresorhus/electron-store](https://github.com/sindresorhus/electron-store)
+- electron-remote: [github.com/electron-userland/electron-builder](https://github.com/electron-userland/electron-builder)
 - i18n: [github.com/mashpie/i18n-node](https://github.com/mashpie/i18n-node)
 - request-promise: [github.com/request/request-promise](https://github.com/request/request-promise)
 - xmlhttprequest: [github.com/driverdan/node-XMLHttpRequest](https://github.com/driverdan/node-XMLHttpRequest)
@@ -97,7 +97,7 @@ Esta es la lista de bibliotecas y otros recursos que realmente nos ayudaron con 
 - nanoid: [github.com/ai/nanoid](https://github.com/ai/nanoid)
 - react-modal: [github.com/reactjs/react-modal](https://github.com/reactjs/react-modal)
 - classnames: [github.com/JedWatson/classnames](https://github.com/JedWatson/classnames)
-- babel: [github.com/babel/babel](https://github.com/babel/babel)
+- classnames: [github.com/JedWatson/classnames](https://github.com/JedWatson/classnames)
 - axios: [github.com/axios/axios](https://github.com/axios/axios)
 - crx: [github.com/oncletom/crx](https://github.com/oncletom/crx)
 - eslint: [github.com/eslint/eslint](https://github.com/eslint/eslint)
@@ -136,42 +136,42 @@ También un enorme agradecimiento y gratitud a todos los beta testers y otros us
 - Andy Kleinert (AndyKl) — traductor y revisor al alemán en Crowdin
 - BigDargon: contribuyó con el proyecto hostsVN como fuente a la lista de AdGuard DNS
 - Blaz — empezó como colaborador de filtros y ahora trabaja en AdGuard
-- Boo Berry — Telegram group moderator
-- buuuuuuu190 — beta tester
-- clarke — beta tester
-- [dartrax](https://github.com/dartrax) — beta tester
-- dja2k — beta tester
+- Boo Berry — Moderador del grupo de Telegram
+- buuuuuuu190 — probador beta
+- clarke — probador beta
+- [dartrax](https://github.com/dartrax) — probador beta
+- dja2k — probador beta
 - Eduardo Addad de Oliveira (eduardoaddad) — traductor y revisor al portugués y portugués brasileño en Crowdin
-- fabjazz — beta tester
+- fabjazz — probador beta
 - Görkem Emrah Güler (gork7777) — traductor y corrector al turco en Crowdin
-- hanschke — beta tester
+- hanschke — probador beta
 - iDjay: destacado probador beta de AdGuard para iOS
 - Imre Kristoffer Eilertsen (DandelionSprout): mantenedor de los "Dandelion Sprout’s Nordic Filters" que se incluyen en todas las herramientas de AdGuard
 - IONIL — traductor y revisor al hebreo en Crowdin
-- itabmedia — beta tester
-- kirasam — beta tester
+- itabmedia — probador beta
+- kirasam - probador beta
 - krystian3w — colaborador de filtro muy activo
 - lancelot.moon — traductor y revisor al chino tradicional en Crowdin, beta tester
-- Lord Ami — beta tester
+- Lord Ami — probador beta
 - Lukas Novotny (novas78) — traductor y revisor al checo en Crowdin
-- malware1 — beta tester
-- milder — beta tester
-- Nicos18 — beta tester
+- malware1 - probador beta
+- milder - probador beta
+- Nicos18 - probador beta
 - Oizaro — traductor y revisor al italiano en Crowdin
 - Oleg Chashko — probador beta muy activo de AdGuard para Safari
 - Oskari Lavinto (olavinto) — traductor y revisor al finés en Crowdin
-- ouzbed — beta tester
+- ouzbed - probador beta
 - PentagramTr - colaborador del filtro, a saber, ha aportado muchas cosas nuevas al filtro turco
 - Peter Hubinsky (hubak) — traductor y revisor al eslovaco en Crowdin
 - PiQuark6046 — colaborador de filtro
-- rickyoh — beta tester
-- Ronin427 — beta tester
-- Sanjay Nand — beta tester
-- saturnotaku — beta tester
-- steve1209 — beta tester
-- streetwolf — beta tester
+- rickyoh - probador beta
+- Ronin427 — probador beta
+- Sanjay Nand — probador beta
+- saturnotaku — probador beta
+- steve1209 — probador beta
+- streetwolf — probador beta
 - superlex: nos ayuda con scriptlets, filtros y AdGuard para Safari
-- TayTayTheKiller — beta tester
+- TayTayTheKiller — probador beta
 - [TPS](https://github.com/TPS) — buscador de errores, colaborador de filtros
 - Yuki2718 - contribuye activamente a los filtros de AdGuard
 - zznosar — probador beta activo centrado en AdGuard para iOS
@@ -181,4 +181,4 @@ También un enorme agradecimiento y gratitud a todos los beta testers y otros us
 
 También queremos agradecer a los [usuarios de xda-developers](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/). ¡Gracias por tus comentarios!
 
-Siempre apreciamos los comentarios de nuestros usuarios, especialmente los constructivos. Siempre puedes comunicarte con nosotros para compartir tus opiniones sobre AdGuard, solicitar nuevas funciones y enviar errores. Join the [AdGuard Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).
+Siempre apreciamos los comentarios de nuestros usuarios, especialmente los constructivos. Siempre puedes comunicarte con nosotros para compartir tus opiniones sobre AdGuard, solicitar nuevas funciones y enviar errores. Únete al [Subreddit de AdGuard](https://reddit.com/r/adguard), [Foro de Xda-developers](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) o visita nuestra página en [GitHub](https://github.com/AdguardTeam).

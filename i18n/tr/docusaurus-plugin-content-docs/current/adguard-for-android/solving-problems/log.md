@@ -11,7 +11,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::not
 
-Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Günlüklerde sağlanan veriler ve/veya dosyalar [AdGuard Gizlilik Politikasına](https://adguard.com/en/privacy.html) uygun olarak işlenir.
 
 :::
 

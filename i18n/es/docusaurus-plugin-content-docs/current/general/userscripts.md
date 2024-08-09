@@ -64,13 +64,13 @@ Como los scripts de usuario son creados principalmente por entusiastas, debes te
 
 Aquí describiremos algunos de los catálogos de scripts de usuario más populares.
 
-### Stylish (userstyles.org)
+### Userscript.Zone
 
-[Userstyles.org](https://userstyles.org/) es un catálogo de estilos de usuario, pero te permite cargarlos como scripts de usuario. Por lo tanto, se puede instalar cualquier estilo de usuario a través de AdGuard. Ten cuidado si decides instalar un script impopular: existe el riesgo de que sea dañino.
+[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high credibility, since only scripts from moderated pages are displayed.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) es un catálogo de scripts de usuario de los creadores de Stylish. A diferencia de userstyles.org mencionado anteriormente, los scripts de este catálogo se someten a moderación, por lo que su credibilidad es mucho mayor.
+[Greasy Fork](https://greasyfork.org/) es un catálogo de scripts de usuario de los creadores de Stylish. The scripts in this catalog undergo moderation, so their credibility is much higher.
 
 ### OpenUserJS.org
 
