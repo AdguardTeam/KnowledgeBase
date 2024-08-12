@@ -177,7 +177,7 @@ Adds extra space between the HTTP method and the URL and removes space after the
 
 Here you can specify the delay, in milliseconds, after sending the first fragment, if fragmentation is performed.
 
-### Subscription link intercetion settings (userscripts and filters)
+### Subscription link interception settings (userscripts and filters)
 
 #### `subscription.link.interception.userscript`
 
