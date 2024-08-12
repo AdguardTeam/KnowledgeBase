@@ -1,9 +1,11 @@
 ---
-title: How to debug rules in the MV3 extension
+title: How to debug rules in AdGuard for Chrome MV3
 sidebar_position: 2
 ---
 
-In most cases, using *User rules* in the extension should be sufficient. However, in some problematic cases, you may want to modify the rules bundled with the extension statically.
+In [AdGuard Browser Extension for Chrome MV3](/general/adguard-browser-extension/mv3-version) there is no UI that shows which declarative rules were applied. For now, the only option is to open the Filtering log where we show approximately what rules were applied based on our TSurlFilter engine. We are working on adding information about declarative rules to the Filtering log. For exact information you’ll have to install the “unpacked” form of the extension in your browser yourself.
+
+These instructions are also meant for problematic cases where you want to modify the rules that are bundled with the extension statically. In most cases, using *User rules* in the extension should be sufficient.
 
 ## Prerequisites
 

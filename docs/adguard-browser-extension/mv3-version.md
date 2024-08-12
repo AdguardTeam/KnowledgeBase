@@ -1,5 +1,5 @@
 ---
-title: Manifest V3 version
+title: AdGuard Browser Extension for Chrome MV3
 sidebar_position: 5
 ---
 
