@@ -3,7 +3,7 @@ title: How to debug rules in AdGuard for Chrome MV3
 sidebar_position: 2
 ---
 
-In [AdGuard Browser Extension for Chrome MV3](/general/adguard-browser-extension/mv3-version) there is no UI that shows which declarative rules were applied. For now, the only option is to open the Filtering log where we show approximately what rules were applied based on our TSurlFilter engine. We are working on adding information about declarative rules to the Filtering log. For exact information you’ll have to install the “unpacked” form of the extension in your browser yourself.
+In [AdGuard for Chrome MV3](/general/adguard-browser-extension/mv3-version), the Filtering log only shows the approximate rules that were applied, which we call “assumed rules”. This is because the browser doesn’t provide details about which specific declarative rules were used unless the extension is in an “unpacked” format. To get precise information, you’ll need to install the unpacked version of the extension in your browser yourself.
 
 These instructions are also meant for problematic cases where you want to modify the rules that are bundled with the extension statically. In most cases, using *User rules* in the extension should be sufficient.
 

@@ -274,11 +274,11 @@ Basically, they just limit the scope of rule application.
 | [$app](#app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$domain](#domain-modifier) | ✅ | ✅ | ✅* | ✅ | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) | ✅ |
-| [$header](#header-modifier) | ✅ | ✅*| ❌ | ⏳ | ❌ | ❌ | ❌ |
+| [$header](#header-modifier) | ✅ | 🧩 [**](#header-modifier-limitations)| ❌ | 🧩 [**](#header-modifier-limitations) | ❌ | ❌ | ❌ |
 | [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$method](#method-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$popup](#popup-modifier) | ✅* | ✅ | ✅*| ✅ | ✅* | ✅* | ❌ |
+| [$popup](#popup-modifier) | ✅ [***](#popup-modifier-limitations) | ✅ | ✅*| ✅ | ✅* | ✅ [***](#popup-modifier-limitations) | ✅ [***](#popup-modifier-limitations) |
 | [$third-party](#third-party-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$to](#to-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
@@ -286,7 +286,7 @@ Basically, they just limit the scope of rule application.
 
 - ✅ — fully supported
 - ✅* — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-<!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
+- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
 - ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
 - ❌ — not supported
 
@@ -316,7 +316,7 @@ If you want the rule not to be applied to certain apps, start the app name with 
 
 Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`.
 Rules with such modifier are considered invalid.
-In AdGuard Browser Extension for Chrome MV3, `regexp` and `any_tld domains` are not supported.
+In [AdGuard for Chrome MV3][ext-mv3] `regexp` and `any_tld domains` are not supported.
 
 :::
 
@@ -395,7 +395,7 @@ Rules with `$domain` modifier as `regular_domain` or `any_tld_domain` are suppor
 
 :::caution Restrictions
 
-In AdGuard Browser Extension for Chrome MV3, `regexp` and `any_tld domains` are not supported.
+In [AdGuard for Chrome MV3][ext-mv3] `regexp` and `any_tld domains` are not supported.
 
 :::
 
@@ -581,7 +581,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
   Otherwise, page should be loaded.
   It can be combined with other request type modifiers, such as `$third-party` and `$important`.
 - Rules with `$popup` modifier are not supported by AdGuard Content Blocker.
-- In AdGuard Browser Extension for Chrome MV3, rules with the [`$popup`](https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#popup) modifier would not work, so we disable converting them to declarative rules. We will try to use them only in our TSurlFilter engine and close new tabs programmatically.
+- In [AdGuard for Chrome MV3][ext-mv3] rules with the [`$popup`](https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#popup) modifier would not work, so we disable converting them to declarative rules. We will try to use them only in our TSurlFilter engine and close new tabs programmatically.
 
 #### **`$third-party`** {#third-party-modifier}
 
@@ -943,7 +943,7 @@ Forbids adding of javascript code to the page. You can read about scriptlets and
 
 :::info Compatibility
 
-in [AdGuard Browser Extension for Chrome MV3](/general/adguard-browser-extension/mv3-version), rules with the [`$jsinject`](https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#exception_rules_modifiers__$jsinject) modifier cannot be converted to DNR. We only use them in the TSurlFilter engine to disable some cosmetic rules.
+in [AdGuard for Chrome MV3][ext-mv3] rules with the [`$jsinject`](https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#exception_rules_modifiers__$jsinject) modifier cannot be converted to DNR. We only use them in the TSurlFilter engine to disable some cosmetic rules.
 
 :::
 
@@ -999,7 +999,7 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 
 :::info Compatibility
 
-- Stealth Mode (Tracking protection) is available in AdGuard for Windows, Mac, and Android, and AdGuard Browser Extension. All other products will ignore the rules with `$stealth` modifier.
+- Tracking protection (formerly Stealth Mode) is available in AdGuard for Windows, Mac, and Android, and AdGuard Browser Extension. All other products will ignore the rules with `$stealth` modifier.
 - Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.10 or later.
 
 :::
@@ -1189,7 +1189,7 @@ In that case, the `$badfilter` rule will disable the corresponding rule for doma
 :::info Compatibility
 
 - Rules with `$badfilter` modifier are not supported by AdGuard Content Blocker.
-- In [AdGuard Browser Extension for Chrome MV3](/general/adguard-browser-extension/mv3-version), a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. We cannot calculate it if it is only partially canceled. [Examples](https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#badfilter)
+- In [AdGuard for Chrome MV3][ext-mv3] a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. We cannot calculate it if it is only partially canceled. [Examples](https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#badfilter)
 
 :::
 
@@ -1253,7 +1253,7 @@ Here's how it works:
 
 Rules with `$cookie` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS, and AdGuard for Safari.
 
-In [AdGuard Browser Extension for Chrome MV3](/general/adguard-browser-extension/mv3-version) we delete cookies in 2 ways: from `content-script` side (to which we have access) and from `onBeforeSendHeaders` listener. Since `onBeforeSendHeaders` and other listeners are no longer blocking, we are not able to delete them in all cases. You can check if a rule works with [this test](https://testcases.agrd.dev/Filters/cookie-rules/test-cookie-rules).
+In [AdGuard for Chrome MV3][ext-mv3] we delete cookies in 2 ways: from `content-script` side (to which we have access) and from `onBeforeSendHeaders` listener. Since `onBeforeSendHeaders` and other listeners are no longer blocking, we are not able to delete them in all cases. You can check if a rule works with [this test](https://testcases.agrd.dev/Filters/cookie-rules/test-cookie-rules).
 
 :::
 
@@ -2050,9 +2050,9 @@ Go to [rules priorities](#rule-priorities) for more details.
 
 :::info Compatibility
 
-- Rules with `$redirect` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and AdGuard for Safari.
+- Rules with `$redirect` modifier are not supported by [AdGuard Content Blocker][and-cb], [AdGuard for iOS][ios-app], and [AdGuard for Safari][ext-saf] .
 - `$redirect` in uBlock Origin supports specifying priority, e.g. `$redirect=noopjs:42`. AdGuard does not support it and instead just discards the priority postfix.
-- In [AdGuard Browser Extension for Chrome MV3](/general/adguard-browser-extension/mv3-version), allowlist rules with `$redirect` are not supported.
+- In [AdGuard for Chrome MV3][ext-mv3] allowlist rules with `$redirect` are not supported.
 
 :::
 
@@ -2075,7 +2075,7 @@ In this case, only requests to `example.org/script.js` will be "redirected" to `
 
 :::info Compatibility
 
-Rules with `$redirect-rule` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS, AdGuard for Safari, and AdGuard Browser Extension for Chrome MV3. [The discussion about adding support for `$redirect-rule` rules in Chrome MV3 extensions](https://github.com/w3c/webextensions/issues/493) is currently open.
+Rules with `$redirect-rule` modifier are not supported by [AdGuard Content Blocker][and-cb], [AdGuard for iOS][ios-app], [AdGuard for Safari][ext-saf], and [AdGuard for Chrome MV3][ext-mv3]. [The discussion about adding support for `$redirect-rule` rules in Chrome MV3 extensions](https://github.com/w3c/webextensions/issues/493) is currently open.
 
 :::
 
@@ -2236,69 +2236,69 @@ Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac and
 
 :::caution Restrictions
 
-[AdGuard Browser Extension for Chrome MV3](/general/adguard-browser-extension/mv3-version) has some limitations:
+[AdGuard for Chrome MV3][ext-mv3] has some limitations:
 
 - Regular expressions, negation and allowlist rules are not supported.
 - Group of similar `$removeparam` rules will be combined into one. Example:
 
-```bash
-||testcases.adguard.com$xmlhttprequest,removeparam=p1case1
-||testcases.adguard.com$xmlhttprequest,removeparam=p2case1
-||testcases.adguard.com$xmlhttprequest,removeparam=P3Case1
-$xmlhttprequest,removeparam=p1case2
-```
+    ```bash
+    ||testcases.adguard.com$xmlhttprequest,removeparam=p1case1
+    ||testcases.adguard.com$xmlhttprequest,removeparam=p2case1
+    ||testcases.adguard.com$xmlhttprequest,removeparam=P3Case1
+    $xmlhttprequest,removeparam=p1case2
+    ```
 
-is converted to
+    is converted to
 
-```bash
-[
- {
-  "id": 1,
-  "action": {
-   "type": "redirect",
-   "redirect": {
-    "transform": {
-     "queryTransform": {
-      "removeParams": [
-       "p1case1",
-       "p2case1",
-       "P3Case1"
-      ]
-     }
+    ```bash
+    [
+    {
+      "id": 1,
+      "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+        "queryTransform": {
+          "removeParams": [
+          "p1case1",
+          "p2case1",
+          "P3Case1"
+          ]
+        }
+        }
+      }
+      },
+      "condition": {
+      "urlFilter": "||testcases.adguard.com",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "isUrlFilterCaseSensitive": false
+      }
+    },
+    {
+      "id": 4,
+      "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+        "queryTransform": {
+          "removeParams": [
+          "p1case2"
+          ]
+        }
+        }
+      }
+      },
+      "condition": {
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "isUrlFilterCaseSensitive": false
+      }
     }
-   }
-  },
-  "condition": {
-   "urlFilter": "||testcases.adguard.com",
-   "resourceTypes": [
-    "xmlhttprequest"
-   ],
-   "isUrlFilterCaseSensitive": false
-  }
- },
- {
-  "id": 4,
-  "action": {
-   "type": "redirect",
-   "redirect": {
-    "transform": {
-     "queryTransform": {
-      "removeParams": [
-       "p1case2"
-      ]
-     }
-    }
-   }
-  },
-  "condition": {
-   "resourceTypes": [
-    "xmlhttprequest"
-   ],
-   "isUrlFilterCaseSensitive": false
-  }
- }
-]
-```
+    ]
+    ```
 
 :::
 
@@ -4637,13 +4637,13 @@ The following scriptlets also may be used for debug purposes:
 
 ### Product shortcuts {#what-product}
 
-1. `CoreLibs apps` — AdGuard for Windows, AdGuard for Mac, and AdGuard for Android
-1. `AdGuard for Chromium` — AdGuard Browser Extension for Chrome and other Chromium-based browsers such as Microsoft Edge, Opera
-1. `AdGuard for Chrome MV3` — AdGuard Browser Extension for Chrome MV3
-1. `AdGuard for Firefox` — AdGuard Browser Extension for Firefox
-1. `AdGuard for iOS` — AdGuard for iOS and AdGuard Pro for iOS (for mobile Safari browser)
-1. `AdGuard for Safari` — AdGuard for desktop Safari browser
-`AdGuard Content Blocker` — Content Blocker for Android mobile browsers: Samsung Internet and Yandex Browser
+1. `CoreLibs apps` — [AdGuard for Windows](/adguard-for-windows/features/home-screen), [AdGuard for Mac](/adguard-for-mac/features/main), and [AdGuard for Android](/adguard-for-android/features/protection/ad-blocking)
+1. `AdGuard for Chromium` — [AdGuard Browser Extension](/adguard-browser-extension/availability) for Chrome and other Chromium-based browsers such as Microsoft Edge, Opera
+1. `AdGuard for Chrome MV3` — [AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version)
+1. `AdGuard for Firefox` — [AdGuard Browser Extension](/adguard-browser-extension/availability) for Firefox
+1. `AdGuard for iOS` — [AdGuard for iOS](/adguard-for-ios/features/safari-protection) and AdGuard Pro for iOS (for mobile Safari browser)
+1. `AdGuard for Safari` — [AdGuard for desktop Safari browser](/adguard-for-safari/features/general)
+`AdGuard Content Blocker` — [Content Blocker](/adguard-content-blocker/overview) for Android mobile browsers: Samsung Internet and Yandex Browser
 
 ### Compatibility shortcuts {#what-compatibility}
 
