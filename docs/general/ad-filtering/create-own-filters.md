@@ -696,7 +696,7 @@ the type will be determined using the `Content-Type` header at the beginning of 
 | [$script](#script-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$stylesheet](#stylesheet-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$subdocument](#subdocument-modifier) | ✅ [*[2]](#subdocument-modifier-limitations) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$websocket](#websocket-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ [*[3]](websocket-modifier-limitations) | ✅ [*[3]](websocket-modifier-limitations) | ❌ |
+| [$websocket](#websocket-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ [*[3]](#websocket-modifier-limitations) | ✅ [*[3]](#websocket-modifier-limitations) | ❌ |
 | [$xmlhttprequest](#xmlhttprequest-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$webrtc 🚫](#webrtc-modifier "removed") | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$object-subrequest 🚫](#object-subrequest-modifier "removed") | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
