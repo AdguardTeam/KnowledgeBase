@@ -315,7 +315,6 @@ If you want the rule not to be applied to certain apps, start the app name with 
 
 Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`.
 Rules with such modifier are considered invalid.
-In [AdGuard for Chrome MV3][ext-mv3] `regexp` and `any_tld domains` are not supported.
 
 :::
 
@@ -389,13 +388,7 @@ entry_i = ( regular_domain / any_tld_domain / regexp )
 
 :::info
 
-Rules with `$domain` modifier as `regular_domain` or `any_tld_domain` are supported by all AdGuard products.
-
-:::
-
-:::caution Restrictions
-
-In [AdGuard for Chrome MV3][ext-mv3] `regexp` and `any_tld domains` are not supported.
+Rules with `$domain` modifier as `regular_domain` are supported by all AdGuard products.
 
 :::
 
@@ -455,6 +448,12 @@ despite the pattern `||*page` may match specific domains.
 - `page$domain=targetdomain.com|~example.org` will not be matched because the referrer domain is explicitly excluded.
 
 ##### `$domain` modifier limitations {#domain-modifier-limitations}
+
+:::caution Limitations
+
+In [AdGuard for Chrome MV3][ext-mv3] `regexp` and `any_tld domains` are not supported.
+
+:::
 
 :::caution Restrictions
 
@@ -4234,7 +4233,7 @@ The modifier's behavior and syntax perfectly match the corresponding [basic rule
 
 :::info Compatibility
 
-Such rules with `$app` modifier are supported by AdGuard for Windows, Mac, and Android.
+Such rules with `$app` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for and Android.
 
 :::
 
@@ -4257,18 +4256,20 @@ There are 2 ways to specify domain restrictions for non-basic rules:
 But rules with mixed style domains restriction are considered invalid. So, for example, the rule
 `[$domain=example.org]example.com##.textad` will be ignored.
 
-### non-basic `$domain` modifier limitations {#non-basic-domain-modifier-limitations}
+### Non-basic `$domain` modifier limitations {#non-basic-domain-modifier-limitations}
 
 :::caution Limitations
 
-<!-- FIXME: describe $domain modifier limitations in mv3 -->
+Since the non-basic `$domain` works the same as the basic one,
+it has the same [limitations](#domain-modifier-limitations).
 
 :::
 
 :::info Compatibility
 
 Such rules with `$domain` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android,
-and AdGuard Browser Extension for Chrome, Firefox, Edge.
+AdGuard Browser Extension for Chrome, Firefox, Edge,
+and AdGuard Chrome for MV3.
 
 :::
 
