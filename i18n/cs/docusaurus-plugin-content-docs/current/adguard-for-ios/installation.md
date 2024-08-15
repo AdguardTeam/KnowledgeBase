@@ -13,15 +13,15 @@ Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který
 
 ### iPhone
 
-iOS 11.2 nebo novější.
+Requires iOS 13 or later.
 
 ### iPad
 
-iPadOS 11.2 nebo novější.
+Requires iPadOS 13 or later.
 
 ### iPod touch
 
-iOS 11.2 nebo novější.
+Requires iOS 13 or later.
 
 ## Instalace AdGuardu pro iOS
 

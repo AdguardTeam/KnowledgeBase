@@ -11,7 +11,7 @@ Para habilitar el filtrado HTTPS en un dispositivo que utiliza Google Family Lin
     - En el dispositivo del niño, ve a Configuración → Cuentas → Google
     - Toca la cuenta de tu hijo y verifica si tienes la opción de eliminarla. Si no tienes esa opción, continúa con el siguiente paso
     - Toca los tres puntos en la esquina superior derecha de la pantalla y verifica si tienes la opción de eliminar la cuenta
-    - Follow the instructions removing the child’s account from the device
+    - Sigue las instrucciones para eliminar la cuenta del niño del dispositivo
 
 1. Inicia AdGuard e instala el archivo CA
 1. Restaura la cuenta del niño en el dispositivo:

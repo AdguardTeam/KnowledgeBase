@@ -1,112 +1,112 @@
 ---
-title: Compatibility issues with different macOS versions
+title: Problèmes de compatibilité avec différentes versions de macOS
 sidebar_position: 4
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour Mac, un bloqueur d'annonces multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment cela fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Currently existing problems
+## Problèmes existants actuellement
 
-Every year Apple releases a new version of macOS, introducing innovative solutions and adding new useful features. But some of them, such as Network Extensions API (Big Sur) or iCloud Private Relay (Monterey), cause some problems to many applications, AdGuard not being an exception. In this article we go over the known issues specific to each macOS version and possible ways to solve them.
+Chaque année, Apple publie une nouvelle version de macOS, introduisant des solutions innovantes et ajoutant de nouvelles fonctionnalités utiles. Mais certains d'entre eux, comme l'API d'Extensions système (Big Sur) ou le Relais privé iCloud (Monterey), posent des problèmes à de nombreuses applications, AdGuard ne faisant pas exception. Dans cet article, nous passons en revue les problèmes connus spécifiques à chaque version de macOS et les moyens possibles de les résoudre.
 
-### Monterey 12: currently existing problems
+### Monterey 12 : problèmes actuels
 
-These problems aren't fixed by Apple yet, or fixed only partially.
+Ces problèmes ne sont pas encore résolus par Apple, ou seulement partiellement.
 
-#### Compatibility with iCloud Private Relay
+#### Compatibilité avec le Relais privé iCloud
 
-Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuard has no ability to block ads because iCloud Private Relay encrypts traffic before AdGuard can filter network connections. When iCloud Private Relay is active, any filtering (including local filtering) becomes impossible. Thus, AdGuard can't filter traffic or perform DNS filtering in Safari. That's why by default, AdGuard uses the "default route" which disables iCloud Private Relay.
+Actuellement, AdGuard et le Relais privé iCloud ne peuvent pas fonctionner en même temps. AdGuard n'est pas en mesure de bloquer les publicités car le Relais privé iCloud crypte le trafic avant qu'AdGuard puisse filtrer les connexions réseau. Lorsque le Relais privé iCloud est actif, tout filtrage (y compris le filtrage local) devient impossible. AdGuard ne peut donc pas filtrer le trafic ou effectuer un filtrage DNS dans Safari. C'est pourquoi, par défaut, AdGuard utilise la "route par défaut" qui désactive le Relais Privé iCloud.
 
-For a deeper understanding of this problem, read [this article](../icloud-private-relay).
+Pour une compréhension plus approfondie de ce problème, lisez [cet article](../icloud-private-relay).
 
-**Recommended solution**
+**Solution recommandée**
 
-We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/).
+Nous vous recommandons d'utiliser AdGuard avec un service VPN plus traditionnel tel que [AdGuard VPN](https://adguard-vpn.com/).
 
-**Alternative solution**
+**Solution alternative**
 
-You can prevent AdGuard from using the "default route" by disabling it. It can be done via Advanced Settings → `network.extension.monterey.force.split.tunnel`. Note that enabling this setting will cause the problems described above.
+Vous pouvez empêcher AdGuard d'utiliser la "route par défaut" en la désactivant. Cela peut être fait via Paramètres avancés → `network.extension.monterey.force.split.tunnel`. Notez que l'activation de ce paramètre entraînera les problèmes décrits ci-dessus.
 
-![Advanced Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
+![Paramètres avancés *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
 
-#### Compatibility with Protect Mail Activity
+#### Compatibilité avec l'activité Protect Mail
 
-Apple's Mail app now uses a proxy to hide a user's IP address when downloading images from emails. However, it won't work if there's an active VPN connection. As it treats AdGuard as a VPN, it won't preload images automatically.
+L'application Mail d'Apple utilise désormais un proxy pour masquer l'adresse IP de l'utilisateur lors du téléchargement d'images à partir d'e-mails. Pourtant, cela ne fonctionnera pas s'il y a une connexion VPN active. AdGuard étant considéré comme un VPN, les images ne seront pas préchargées automatiquement.
 
-For a deeper understanding of this problem, read [this article](../protect-mail-activity).
+Pour une compréhension plus approfondie de ce problème, lisez [cet article](../protect-mail-activity).
 
-**Recommended solution**
+**Solution recommandée**
 
-At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the newer Apple privacy features.
+À ce stade, nous vous recommandons d'utiliser un service VPN plus traditionnel, tel que [AdGuard VPN](https://adguard-vpn.com/), au lieu des nouvelles fonctionnalités de confidentialité d'Apple.
 
-### Monterey 12, Big Sur 11.6 and later: currently existing problems
+### Monterey 12, Big Sur 11.6 et versions ultérieures : problèmes existants actuellement
 
-These problems aren't fixed by Apple yet, or fixed only partially.
+Ces problèmes ne sont pas encore résolus par Apple, ou seulement partiellement.
 
-#### Compatibility with Cisco AnyConnect
+#### Compatibilité avec Cisco AnyConnect
 
-AdGuard will not work together with Cisco AnyConnect while in the *Network Extension* mode. You have to switch AdGuard to *Automatic Proxy* mode. To do so, follow [this instruction](#automatic-proxy).
+AdGuard ne fonctionnera pas avec Cisco AnyConnect en mode *Extension réseau* . Vous devez mettre AdGuard en mode *Proxy automatique.*. Pour faire cela, suivez [cette instruction](#automatic-proxy).
 
-#### Compatibility with Flutter
+#### Compatibilité avec Flutter
 
-This problem is solved in Flutter 2.2, released in June 2021. But to fix it for applications developed in Flutter, you need to wait for updates.
+Ce problème est résolu dans Flutter 2.2, sorti en juin 2021. Mais pour résoudre ce problème pour les applications développées dans Flutter, vous devez attendre les mises à jour.
 
-If you use Flutter alongside AdGuard in "Network Extension" mode (or any other "Transparent Proxy"-type app) in Monterey or Big Sur, you will run into problems: projects won't open and Flutter will be effectively broken. We have already reported this bug to Apple. Meanwhile, you can use these temporary solutions:
+Si vous utilisez Flutter avec AdGuard en mode "Extension réseau" (ou toute autre application de type "Proxy transparent") à Monterey ou Big Sur, vous rencontrerez des problèmes : les projets ne s'ouvriront pas et Flutter sera effectivement interrompu. Nous avons déjà signalé ce bug à Apple. En attendant, vous pouvez utiliser ces solutions temporaires :
 
-1. Use AdGuard in [Automatic Proxy](#automatic-proxy) mode.
+1. Utilisez AdGuard en mode [Proxy automatique](#automatic-proxy) .
 
-1. Disable SIP and switch AdGuard to Kernel Extension mode as explained [here](#kernel-extension).
+1. Désactivez SIP et basculez AdGuard en mode Extension de noyau comme expliqué [ici](#kernel-extension).
 
-#### VPN apps with legacy API
+#### Applications VPN avec API existante
 
-Despite AdGuard is displayed as a VPN in system settings, it shouldn't cause any conflicts when working alongside other VPN-based apps. However, if you're using a VPN-based app that was downloaded from outside App Store, there's a chance it uses the old VPN API and you have to exclude it from filtering:
+Bien qu'AdGuard soit affiché comme VPN dans les paramètres système, il ne devrait provoquer aucun conflit lorsque vous travaillez avec d'autres applications basées sur VPN. Cependant, si vous utilisez une application basée sur VPN téléchargée en dehors de l'App Store, il est possible qu'elle utilise l'ancienne API VPN et vous devez l'exclure du filtrage :
 
-1. Open AdGuard's menu.
-1. Select *Preferences...*.
-1. Switch to the *Network* tab.
-1. Click the *Applications...* button.
-1. Find the app you want to exclude and uncheck the checkbox next to it.
+1. Ouvrez le menu AdGuard.
+1. Sélectionnez *Préférences...*.
+1. Passez à l’onglet *Réseau* .
+1. Cliquez sur le bouton *Applications...* .
+1. Recherchez l’application que vous souhaitez exclure et décochez la case à côté.
 
-![Filtered applications](https://cdn.adtidy.org/content/kb/ad_blocker/mac/legacy.jpg)
+![Applications filtrées](https://cdn.adtidy.org/content/kb/ad_blocker/mac/legacy.jpg)
 
-## Already fixed problems
+## Problèmes déjà résolus
 
-These problems have been fixed by Apple by now but can be encountered in the older versions of macOS Big Sur.
+Ces problèmes ont été résolus par Apple mais peuvent être rencontrés dans les anciennes versions de macOS Big Sur.
 
-### Compatibility with Little Snitch 5
+### Compatibilité avec Little Snitch 5
 
-At this moment, Network Extension mode in AdGuard isn't compatible with [Little Snitch 5](https://obdev.at/products/littlesnitch/index.html). When both are running, there's a chance to encounter issues with various apps' behavior, even if they aren't filtered by AdGuard. This problem is directly caused by a bug in Big Sur, and we've already informed Apple about it. This leaves us to believe that this issue will get resolved in one of the next updates.
+Pour le moment, le mode Extension réseau dans AdGuard n'est pas compatible avec [Little Snitch 5](https://obdev.at/products/littlesnitch/index.html). Lorsque les deux sont en cours d'exécution, il existe un risque de rencontrer des problèmes avec le comportement d'autres applications, même si elles ne sont pas filtrées par AdGuard. Ce problème est directement causé par un bug de Big Sur, et nous en avons déjà informé Apple. Cela nous fait penser que ce problème sera résolu dans l'une des prochaines mises à jour.
 
-It needs to be said that this problem can't be solved by disabling connections monitoring in Little Snitch, because this action doesn't unload Little Snitch's extension from the system. We recommend to switch to [**Automatic Proxy**](#automatic-proxy) filtering mode when running AdGuard alongside with Little Snitch on Big Sur, at least until Apple fixes the bug.
+Il faut dire que ce problème ne peut pas être résolu en désactivant la surveillance des connexions dans Little Snitch, car cette action ne décharge pas l'extension de Little Snitch du système. Nous vous recommandons de passer au mode de filtrage Proxy automatique [****](#automatic-proxy) lors de l'exécution d'AdGuard avec Little Snitch sur Big Sur, au moins jusqu'à ce qu'Apple corrige le bogue.
 
-### Compatibility with local proxies
+### Compatibilité avec les proxys locaux
 
 :::note
 
-Now AdGuard can filter local proxies (mostly) without any problems. If you encounter any issues in OS versions 11.1+, or if you're using Big Sur 11.0, remove the local proxy from System settings and configure an upstream proxy in AdGuard by following the instruction below.
+AdGuard peut désormais filtrer les proxys locaux (la plupart du temps) sans aucun problème. Si vous rencontrez des problèmes dans les versions 11.1+ du système d'exploitation, ou si vous utilisez Big Sur 11.0, supprimez le proxy local des paramètres système et configurez un proxy en amont dans AdGuard en suivant les instructions ci-dessous.
 
 :::
 
-To configure an upstream proxy in AdGuard for Mac in Big Sur:
+Pour configurer un proxy en amont dans AdGuard pour Mac dans Big Sur :
 
-1. Open AdGuard's settings *Preferences → Network → Outbound proxy*.
-2. Choose HTTP, HTTPS, SOCKS4 or SOCKS5, depending on your proxy type.
-3. Fill in the fields:
-    - `host` is the IP address of your proxy server,
-    - `port` is the desired port number to be used by the proxy server,
-    - `user` and `password` are corresponding username and password of your proxy (if needed). Ignore either or both when not applicable.
+1. Ouvrez les paramètres d'AdGuard *Préférences → Réseau → Proxy sortant*.
+2. Choisissez HTTP, HTTPS, SOCKS4 ou SOCKS5, selon votre type de proxy.
+3. Remplissez les champs :
+    - `hôte` est l'adresse IP de votre serveur proxy,
+    - `port` est le numéro de port souhaité à utiliser par le serveur proxy,
+    - `utilisateur` et `mot de passe` sont le nom d'utilisateur et le mot de passe correspondants de votre proxy (si nécessaire). Ignorez l'un ou les deux lorsque cela n'est pas applicable.
 
-If you run into any problems, please contact our tech support at support@adguard.com.
+Si vous rencontrez des problèmes, veuillez contacter notre service d'assistance technique à l'adresse support@adguard.com.
 
-#### Example 1: Configuring an upstream Shadowsocks proxy
+#### Exemple 1 : Configuration d'un proxy Shadowsocks en amont
 
-Here's an example of how to configure an upstream proxy for [Shadowsocks](https://shadowsocks.org).
+Voici un exemple de configuration d'un proxy en amont pour [Shadowsocks](https://shadowsocks.org).
 
-First of all, you need a working server side for your proxy. Most likely, to set it up, you would use a JSON file like this (`server` and `password` values were chosen randomly here):
+Tout d’abord, vous avez besoin d’un serveur fonctionnel pour votre proxy. Très probablement, pour le configurer, vous utiliseriez un fichier JSON comme celui-ci (les valeurs`server` et `password` ont été choisies au hasard ici) :
 
 ```json
 {
@@ -121,82 +121,82 @@ First of all, you need a working server side for your proxy. Most likely, to set
 
 :::tip
 
-You can find more information about how to get started on [Shadowsocks website](https://shadowsocks.org/guide/what-is-shadowsocks.html).
+Vous trouverez plus d'informations sur la façon de commencer sur le [site web de Shadowsocks](https://shadowsocks.org/guide/what-is-shadowsocks.html).
 
 :::
 
-Then you'd have to install Shadowsocks client on your Mac. Make sure that you select 'Manual Mode' or 'Auto Mode' in its settings! The configuration won't work if you select 'Global Mode' (or 'Auto Mode' in Big Sur versions prior to 11.1).
+Vous devrez ensuite installer le client Shadowsocks sur votre Mac. Veillez à sélectionner "Mode manuel" ou "Mode auto" dans les réglages ! La configuration ne fonctionnera pas si vous sélectionnez "Mode Global" (ou "Mode Automatique" dans les versions de Big Sur antérieures à 11.1).
 
-![Select Manual Mode or Auto Mode in settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/shadowsocks.jpg)
+![Sélectionnez le mode manuel ou le mode automatique dans les paramètres *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/shadowsocks.jpg)
 
-Now go to *AdGuard menu → Advanced → Advanced Settings...* and set the *Value* area of the `upstream.proxy` setting to `socks5://localhost:1080`. Notice that you need to use "local_port" value from the JSON file here.
+Allez maintenant dans le menu *AdGuard → Avancé → Paramètres avancés...* et définissez la zone *Valeur* du paramètre `upstream.proxy` sur `socks5://localhost:1080`. Notez que vous devez utiliser ici la valeur "local_port" du fichier JSON.
 
-Because Shadowsocks uses SOCKS5, you also need to set the value of the `upstream.proxy.socks5udp` setting in AdGuard Advanced Settings to `true` to make AdGuard route UDP traffic to the proxy server.
+Puisque Shadowsocks utilise SOCKS5, vous devez également définir la valeur du paramètre `upstream.proxy.socks5udp` dans les paramètres avancés d'AdGuard sur `true` pour qu'AdGuard achemine le trafic UDP vers le serveur proxy.
 
-#### Example 2: Configuring an upstream Surge proxy
+#### Exemple 2 : Configuration d'un proxy Surge en amont
 
-In Big Sur v11.1+, there are no known conflicts between AdGuard and Surge proxy. If you are using an older version of Big Sur (prior to 11.1), check that **System Proxy** in the bottom right corner is disabled. Otherwise, Surge won't work with AdGuard. On the other hand, **Enhanced Mode** can be enabled without causing a conflict in any Big Sur version.
+Dans Big Sur v11.1+, il n'y a aucun conflit connu entre AdGuard et le proxy Surge. Si vous utilisez une version plus ancienne de Big Sur (antérieure à la version 11.1), vérifiez que le **proxy système** dans le coin inférieur droit est désactivé. Sinon, Surge ne fonctionnera pas avec AdGuard. D'autre part, **Le mode avancé** peut être activé sans provoquer de conflit dans n'importe quelle version de Big Sur.
 
-![Configuring an upstream Surge proxy *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/outbound-proxy.png)
+![Configuration d'un proxy Surge en amont *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/outbound-proxy.png)
 
-Now go to *Preferences → Network → Outbound proxy* and fill in the fields. For SOCKS5 proxy type:
+Allez maintenant dans *Préférences → Réseau → Proxy sortant* et remplissez les champs. Pour le type de proxy SOCKS5 :
 
-- `host`: localhost
+- `hôte`: localhost
 - `port` : 6153 Pour le type de proxy HTTP :
 - `hôte`: localhost
 - `port`: 6152
 
-## Alternatives to using a Network Extension
+## Les alternatives à l’utilisation d’une extension réseau
 
-It's impossible to foresee each and every possible problem that can pop up in Big Sur or Monterey, there are countless various hardware/software and settings configurations. If you face any compatibility issues, please contact our support team, but feel free to try one of these workarounds first.
+C'est impossible de prévoir tous les problèmes possibles qui peuvent survenir dans Big Sur ou Monterey, il existe d'innombrables configurations matérielles/logicielles et de paramètres différents. Si vous rencontrez des problèmes de compatibilité, veuillez contacter notre équipe d'assistance, mais n'hésitez pas à essayer d'abord l'une de ces solutions de contournement.
 
-### Using "Automatic proxy" filtering mode {#automatic-proxy}
+### Utilisation du mode de filtrage "Proxy automatique" {#automatic-proxy}
 
-If you face problems in Big Sur or Monterey which can't be resolved by any of the methods above, you can try switching AdGuard to *Automatic proxy* mode.
+Si vous rencontrez des problèmes avec Big Sur ou Monterey qui ne peuvent être résolus par aucune des méthodes ci-dessus, vous pouvez essayer de passer AdGuard en mode *Proxy automatique* .
 
-1. Open AdGuard's menu.
-1. Select *Preferences...*.
-1. Switch to the *Network* tab.
-1. Click the *Select Mode...* button.
-1. Select *Automatic Proxy*.
+1. Ouvrez le menu AdGuard.
+1. Sélectionnez *Préférences...*.
+1. Passez à l’onglet *Réseau* .
+1. Cliquez sur le bouton *Sélectionner le mode...* .
+1. Sélectionnez *Proxy automatique*.
 
-![Switch AdGuard to Automatic proxy mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/automatic-proxy_en.jpg)
+![Basculez AdGuard en mode proxy automatique](https://cdn.adtidy.org/content/kb/ad_blocker/mac/automatic-proxy_en.jpg)
 
-Now AdGuard has automatically added a **.pac** file to your Mac's network settings, so that the system will consider AdGuard a proxy and try to send all traffic through AdGuard.
+AdGuard a automatiquement ajouté un fichier **.pac** aux paramètres réseau de votre Mac, pour que le système considère AdGuard comme un proxy et essaie d'envoyer tout le trafic via AdGuard.
 
 :::note
 
-Some apps may ignore this system setting and their traffic will not be filtered.
+Certaines applications peuvent ignorer ce paramètre système et leur trafic ne sera pas filtré.
 
 :::
 
-### Enabling Kernel Extension in Big Sur and Monterey {#kernel-extension}
+### Activation de l'extension du noyau à Big Sur et Monterey {#kernel-extension}
 
-By default AdGuard uses Network Extension framework in Big Sur and Monterey as the old Kernel Extension framework is disabled there. This can cause some compatibility problems, but to enable Kernel Extension back, you need to disable System Integrity Protection (SIP) first. To disable SIP, follow this instruction:
+Par défaut, AdGuard utilise le framework d'extension réseau dans Big Sur et Monterey, car l'ancien framework d'extension de noyau y est désactivé. Cela peut entraîner des problèmes de compatibilité, mais pour réactiver l'extension du noyau, vous devez d'abord désactiver la protection de l'intégrité du système (SIP). Pour désactiver SIP, suivez ces instructions :
 
-1. Click the *Apple symbol* in the Menu bar.
-1. Click *Restart…*
-1. Hold down *Command-R* to reboot into Recovery Mode.
-1. Click *Utilities*.
-1. Select *Terminal*.
-1. Type `csrutil disable`.
-1. Press *Return* or *Enter* on your keyboard.
-1. Click the *Apple symbol* in the Menu bar.
-1. Click *Restart…*
+1. Cliquez sur le *symbole Apple* dans la barre de menu.
+1. Cliquez sur *Redémarrer…*
+1. Maintenez la touche *Commande-R* enfoncée pour redémarrer en mode de récupération.
+1. Cliquez sur *Utilitaires*.
+1. Sélectionnez *Terminal*.
+1. Tapez `csrutil disable`.
+1. Appuyez sur la touche *Retour* ou *Entrée* de votre clavier.
+1. Cliquez sur le *symbole Apple* dans la barre de menu.
+1. Cliquez sur *Redémarrer…*
 
-Now that SIP is disabled, this is how you enable Kernel Extension:
+Maintenant que SIP est désactivé, voici comment activer l'extension du noyau :
 
-![Enable Kernel Extension](https://cdn.adtidy.org/content/kb/ad_blocker/mac/kernel_en.jpg)
+![Activation de l'extension du noyau](https://cdn.adtidy.org/content/kb/ad_blocker/mac/kernel_en.jpg)
 
-1. Open AdGuard's menu.
-1. Select *Preferences...*.
-1. Switch to the *Network* tab.
-1. Click the *Select Mode...* button.
-1. Select *Kernel Extension*.
-1. Confirm that you want to switch to Kernel Extension.
+1. Ouvrez le menu AdGuard.
+1. Sélectionnez *Préférences...*.
+1. Passez à l’onglet *Réseau* .
+1. Cliquez sur le bouton *Sélectionner le mode...* .
+1. Sélectionnez *Extension du noyau*.
+1. Confirmez que vous souhaitez passer à l'extension du noyau.
 
 :::caution
 
-However, we only recommend using this method if everything else fails, as this may lead to unexpected issues.
+Cependant, nous recommandons d'utiliser cette méthode uniquement si tout le reste échoue, car cela pourrait entraîner des problèmes inattendus.
 
 :::

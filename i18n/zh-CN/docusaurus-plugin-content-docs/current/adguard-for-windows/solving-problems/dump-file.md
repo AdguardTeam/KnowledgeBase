@@ -11,7 +11,7 @@ sidebar_position: 8
 
 :::note
 
-Data and/or files provided in dump files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+转储文件中提供的数据和/或文件将根据 [AdGuard 隐私政策](https://adguard.com/en/privacy.html) 处理。
 
 :::
 

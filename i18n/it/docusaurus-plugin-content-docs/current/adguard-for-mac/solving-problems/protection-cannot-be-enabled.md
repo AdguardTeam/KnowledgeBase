@@ -1,22 +1,22 @@
 ---
-title: Protection cannot be enabled
+title: Impossibile abilitare la protezione
 sidebar_position: 2
 ---
 
 :::info
 
-Questo articolo riguarda AdGuard per Mac, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Mac, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-If AdGuard Protection cannot be enabled for some reason, perform the following steps:
+Se non è possibile abilitare la Protezione di AdGuard per qualche motivo, esegui i seguenti passaggi:
 
-1. Click the AdGuard icon at the menu bar and go to *Advanced* → *Reset settings...* → *Quit AdGuard...*
+1. Clicca sull'icona di AdGuard sulla barra dei menu e vai ad *Avanzate* → *Ripristino impostazioni...* → *Esci da AdGuard...*
 
-2. In the Spotlight Search, type Terminal, enter `sudo rm -R /Library/Application\ Support/com.adguard.adguard` and execute.
+2. Nella ricerca di Spotlight, digita Terminale, inserisci `sudo rm -R /Library/Application\ Support/com.adguard.adguard` ed esegui.
 
-3. Restart your computer.
+3. Riavvia il tuo computer.
 
-4. Open the Terminal again, type `ls -al /Library/StagedExtensions/Library/Application\ Support/com.adguard.adguard/` and execute. You should receive the following: `No such file or directory`.
+4. Apri nuovamente il Terminale, digita `ls -al /Library/StagedExtensions/Library/Application\ Support/com.adguard.adguard/` ed esegui. Dovresti ricevere il seguente messaggio: `Nessun file o cartella di questo tipo`.
 
-5. Start AdGuard and enter your login information when prompted.
+5. Avvia AdGuard e inserisci le tue informazioni d'accesso quando richieste.

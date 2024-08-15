@@ -35,7 +35,7 @@ Every encrypted Internet connection has an unencrypted part. This is the very fi
 
 ### Check websites' certificate transparency
 
-Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy. If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. Chrome, in turn, will block it.
+Chrome Certificate Transparency Policy（証明書透過性ポリシー）に基づき、ドメインのすべての証明書の信頼性を検証します。 If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. Chrome, in turn, will block it.
 
 ### Enable SSL/TLS certificate revocation checks
 
@@ -121,7 +121,7 @@ Valid values: 1–1500. If invalid size is specified, the value selected by the 
 
 ### Plain HTTP request fragment size
 
-Adjusts the size of the HTTP request fragmentation. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
+HTTPリクエストフラグメンテーションのサイズを調整します。 This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
 Valid values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
@@ -135,7 +135,7 @@ Periodically sends TCP packets over idle connection to ensure it is alive and to
 
 ### TCP keepalive interval
 
-Here you can specify an idle time period, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used.
+Here you can specify an idle time period, in seconds, before sending a keepalive probe. 「0」を指定すると、システムによって選択された値が使用されます。
 
 :::note
 
@@ -145,7 +145,7 @@ This setting only works when the *Enable TCP keepalive* option is enabled.
 
 ### TCP keepalive timeout
 
-Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. 「0」を指定すると、システムによって選択された値が使用されます。
 
 :::note
 

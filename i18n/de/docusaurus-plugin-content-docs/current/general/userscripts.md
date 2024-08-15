@@ -64,13 +64,13 @@ As userscripts are mainly created by enthusiasts, you should be cautious when in
 
 Im Folgenden werden einige der beliebtesten Benutzerskript-Kataloge beschrieben.
 
-### Stylish (userstyles.org)
+### Userscript.Zone
 
-[Userstyles.org](https://userstyles.org/) ist ein Katalog von Benutzerstilen, der es Ihnen jedoch ermöglicht, diese als Benutzerskripte zu laden. So kann jeder Benutzerstil über AdGuard installiert werden. Seien Sie vorsichtig, wenn Sie sich entscheiden, ein unbekanntes Skript zu installieren — es könnte schädlich sein.
+[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high credibility, since only scripts from moderated pages are displayed.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) ist ein Benutzerskript-Katalog der Entwickler von Stylish. Im Gegensatz zu userstyles.org sind die Skripte in diesem Katalog moderiert, was ihre Glaubwürdigkeit erhöht.
+[Greasy Fork](https://greasyfork.org/) ist ein Benutzerskript-Katalog der Entwickler von Stylish. The scripts in this catalog undergo moderation, so their credibility is much higher.
 
 ### OpenUserJS.org
 
