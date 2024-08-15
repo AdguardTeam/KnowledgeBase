@@ -9,6 +9,12 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 :::
 
+:::note
+
+Data and/or files provided in dump files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 Zur Diagnose von Problemen, die bei der Verwendung von AdGuard auftreten können, benötigt das Support-Team möglicherweise die Prozessabbilddatei (Dump-Datei). Die Dump-Datei hilft Entwickler:innen, die Prozesse zu sehen, die in der App über einen bestimmten Zeitraum ausgeführt wurden. Nachfolgend finden Sie eine Anleitung zur Erstellung der Dump-Datei auf Ihrem PC.
 
 1. Drücken Sie **Strg + Umschalt + Esc**, um den **Task Manager** zu öffnen

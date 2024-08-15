@@ -9,9 +9,19 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
+:::not
+
+Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 Bu makalede, potansiyel olarak ortaya çıkabilecek karmaşık sorunları çözmek için önemli bir sorun giderme adımı olan hata ayıklama günlüklerini toplama sürecinde size rehberlik edeceğiz. Hata ayıklama günlükleri, Android için AdGuard'ın iç işleyişine ilişkin ayrıntılı bilgiler sağlar. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
 
-> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+:::not
+
+AdGuard gizliliğinizi korumaya kararlıdır. [Gizlilik Politikamıza](https://adguard.com/privacy/android.html) kesinlikle uyuyoruz ve kullanıcılar hakkında herhangi bir özel bilgi toplamıyoruz. Günlüklerinizi destek ekibine göndermeden önce, paylaşmak istemediğiniz ek bilgiler içerebileceğinden lütfen dosyayı inceleyin. Bu tür kişisel bilgiler içeriyorsa öncelikle onu silmenizi öneririz.
+
+:::
 
 ### Hata ayıklama günlüğü toplama
 

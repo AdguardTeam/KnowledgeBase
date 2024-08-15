@@ -1,54 +1,54 @@
 ---
-title: Other features
+title: Outros recursos
 sidebar_position: 4
 ---
 
 :::info
 
-Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-There are other useful AdGuard options that shouldn't go unnoticed in this article, since they add much to user experience.
+Existem outras opções úteis do AdGuard que não devem passar despercebidas neste artigo, pois agregam muito à experiência do usuário.
 
 ### Suporte
 
-![Support \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
+![Suporte \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
 
-By clicking the Support tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
+Ao clicar na guia Suporte você abrirá uma caixa de diálogo através da qual poderá relatar um bug, enviar uma solicitação de recurso ou simplesmente compartilhar sua opinião sobre o produto.
 
 ### Licença
 
-![License \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![Licença \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
-This tab contains information about your license. Here you can:
+Esta guia contém informações sobre sua licença. Aqui você pode:
 
-- find out the license type (nightly build, beta or release), the number of devices available for simultaneous connection to AdGuard, the license expiration date;
-- click the button to go to the license purchase page, and activate, reset or recover a license.
+- descobrir o tipo de licença (nightly, beta ou release), a quantidade de dispositivos disponíveis para conexão simultânea do AdGuard, a data de validade da licença;
+- clicar no botão para ir para a página de compra de licença e ativar, redefinir ou recuperar uma licença.
 
 ### Sobre
 
-![About \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![Sobre \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 
-In addition to information about the current version of the program, this tab provides some useful links to Licese agreement, Privacy policy, Acknowledgements, Discussions, and Version history pages.
+Além de informações sobre a versão atual do programa, esta guia fornece alguns links úteis para as páginas Contrato de licença, Política de privacidade, Agradecimentos, Discussões e Histórico de versões.
 
-### Check for updates
+### Verificar atualizações
 
-![Check for updates \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![Verifique se há atualizações \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
 
-To check for filters and userscripts updates, click the rotating arrows icon in the upper right corner of the app's main screen.
+Para verificar atualizações de filtros e scripts de usuário, clique no ícone de setas giratórias no canto superior direito da tela principal do aplicativo.
 
-### Tray menu
+### Menu da bandeja
 
-To save you time navigating around AdGuard menus, many of the frequently used options and settings are available from the tray menu. To call the menu, right-click the AdGuard icon in the tray. It will offer you the following options:
+Para economizar tempo navegando pelos menus do AdGuard, muitas das opções e configurações usadas com frequência estão disponíveis no menu da bandeja. Para acessar o menu, clique com o botão direito no ícone do AdGuard na bandeja. Ele oferecerá as seguintes opções:
 
-- enable protection
-- disable protection: completely or for 30 seconds
-- go to _Settings_
-- open the _Tools_ and _Advanced_ menus
-- check for filter updates
-- check for app updates
-- to recall the last pop-up message
-- reach the _Support_ and _About_ sections
-- close AdGuard, but continue filtering
-- exit AdGuard
+- ativar proteção
+- desativar proteção: completamente ou por 30 segundos
+- ir para _Configurações_
+- abrir os menus _Ferramentas_ e _Avançado_
+- verificar atualizações de filtros
+- verificar se há atualizações para o aplicativo
+- recuperar a última mensagem popup
+- acesse as seções _Suporte_ e _Sobre_
+- fechar AdGuard, mas continuar filtrando
+- sair do AdGuard

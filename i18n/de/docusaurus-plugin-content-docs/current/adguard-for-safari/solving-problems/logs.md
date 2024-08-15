@@ -19,8 +19,12 @@ Zur Analyse und Diagnose verschiedener Probleme, die mit AdGuard für Safari auf
 
 Jetzt können Sie diese Datei an support@adguard.com senden oder sie an Ihren Fehlerbericht auf GitHub anhängen.
 
-> AdGuard ist dem Schutz Ihrer Privatsphäre verpflichtet. Wir halten uns strikt an unsere [Datenschutzerklärung](https://adguard.com/privacy/safari.html) und sammeln keine privaten Informationen über Nutzer:innen. Bevor Sie Ihre Protokolle an das Support-Team senden, überprüfen Sie bitte die Datei, da sie zusätzliche Informationen enthalten kann, die Sie vielleicht nicht freigeben möchten. Wenn sie solche persönlichen Informationen enthält, empfehlen wir Ihnen, sie zuerst zu löschen.
+:::note
 
-1. Öffnen Sie das [AdGuard für Safari GitHub Repo](https://github.com/AdguardTeam/AdGuardForSafari/issues) und klicken Sie auf _New issue_.
-2. Senden Sie die Protokolldatei an devteam@adguard.com. Geben Sie die Uhrzeit des Fehlers an und fügen Sie einen Link zu Ihrem Problem oder dessen Nummer hinzu (sie wird neben dem Titel als #Nummer angezeigt).
-   Alternativ können Sie die Protokolldatei auch auf Google Drive hochladen und an devteam@adguard.com senden. Fügen Sie den Dateilink zu Ihrem GitHub-Problem hinzu.
+AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/safari.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+
+:::
+
+1. Open the [AdGuard for Safari GitHub repo](https://github.com/AdguardTeam/AdGuardForSafari/issues) and click _New issue_.
+2. Send the log file to devteam@adguard.com. Geben Sie die Uhrzeit des Fehlers an und fügen Sie einen Link zu Ihrem Problem oder dessen Nummer hinzu (sie wird neben dem Titel als #Nummer angezeigt).
+   Alternativ können Sie die Protokolldatei auch auf Google Drive hochladen und an devteam@adguard.com senden. Add the file link to your GitHub issue.

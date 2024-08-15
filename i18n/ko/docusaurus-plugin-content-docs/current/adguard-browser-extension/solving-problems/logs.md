@@ -51,9 +51,13 @@ sidebar_position: 1
 
 ## 로그 전송하기
 
-> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/browser-extension.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+:::note
 
-로그를 저장했다면, 다음 단계에 따라 개발팀에 제출해 주세요.
+AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/browser-extension.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
 
-1. [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose)에 버그를 제보하세요.
-2. 로그와 재생 시간이 포함된 ZIP 파일을 `devteam@adguard.com`로 보내고 GitHub 이슈에 링크를 추가합니다. 파일을 첨부하는 대신 Google 드라이브에 ZIP 파일을 업로드하고 링크를 추가할 수도 있습니다.
+:::
+
+Now that you have collected the logs, please follow these steps to submit them to our development team:
+
+1. Report the bug on [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
+2. Send your archive with logs and playback time to `devteam@adguard.com` and add a link to your GitHub issue. You can also upload the archive to Google Drive and add the link to it instead of attaching the file.

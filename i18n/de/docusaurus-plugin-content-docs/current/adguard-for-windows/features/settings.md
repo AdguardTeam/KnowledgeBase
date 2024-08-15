@@ -25,12 +25,13 @@ At the very bottom of the screen you will find _Advanced Settings_. Wenn Sie ein
 
 Dies ist das Hauptmodul von AdGuard für Windows, das Werbung von den von Ihnen besuchten Websites und von den auf Ihrem Gerät installierten Apps entfernt. To filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers AdGuard uses different filters: groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). To understand what filters are and how they work read [this article](/general/ad-filtering/how-ad-blocking-works).
 
-![Ad Blocker \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/ad-blocker.png)
+![Ad Blocker \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
 Im Werbeblocker-Modul können Sie:
 
 - die automatische Aktivierung von sprachspezifischen Filtern ermöglichen,
 - disable [search ads and self-promotion](/general/ad-filtering/search-ads) blocking,
+- disable ads in the Start menu on Windows 11,
 - activate pre-installed filters such as _AdGuard Base filter_,
 - install filters from the list or add a custom filter by clicking the _Add a filter_ button,
 - make changes to existing rule groups using the _Filter editor_ button,

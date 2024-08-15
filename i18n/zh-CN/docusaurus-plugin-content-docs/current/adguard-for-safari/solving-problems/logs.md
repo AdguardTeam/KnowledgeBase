@@ -19,8 +19,12 @@ sidebar_position: 4
 
 现在您可以将此文件发送至 support@adguard.com，或将其附加到您在 GitHub 上的错误报告中。
 
-> AdGuard 致力于保护用户的个人隐私。 我们严格遵守[隐私政策](https://adguard.com/privacy/safari.html)，不收集用户的私人信息。 请注意：在将您的日志记录发送给客户支持团队之前，请检查文件，因为它会包含您不想分享的附加信息。 如果其中包含此类个人信息，我们建议您先将其删除。
+:::note
 
-1. 打开[适用于 Safari 的 AdGuard GitHub 存储库](https://github.com/AdguardTeam/AdGuardForSafari/issues)，然后点击「_New issue_」。
-2. 将日志记录文件发送至 devteam@adguard.com。 包括错误发生的时间并附加指向您的问题或其编号的链接（它在标题旁边显示为 #number）。
-   或者，用户可将日志文件上传到 Google Drive 并将其发送至 devteam@adguard.com。 将文件链接添加到您的 GitHub 问题.
+AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/safari.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+
+:::
+
+1. Open the [AdGuard for Safari GitHub repo](https://github.com/AdguardTeam/AdGuardForSafari/issues) and click _New issue_.
+2. Send the log file to devteam@adguard.com. 包括错误发生的时间并附加指向您的问题或其编号的链接（它在标题旁边显示为 #number）。
+   或者，您可以将日志文件上传到 Google Drive 并将其发送至 devteam@adguard.com。 Add the file link to your GitHub issue.

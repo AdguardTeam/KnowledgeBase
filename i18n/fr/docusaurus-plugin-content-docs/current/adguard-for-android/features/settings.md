@@ -67,7 +67,7 @@ Userscripts are mini-programs written in JavaScript that extend the functionalit
 
 AdGuard Extra is a custom userscript that blocks complex ads and mechanisms that reinject ads to websites.
 
-#### Disable AMP
+#### Désactiver AMP
 
 Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) on the Google search results page.
 

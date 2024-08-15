@@ -9,6 +9,12 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
+:::not
+
+Data and/or files provided in system logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 AdGuard kurulumu sırasında herhangi bir sorun oluşursa, destek ekibi sizden AdGuard kurulum günlüklerini toplamanızı ve göndermenizi isteyebilir. In this case you need to:
 
 1. Select *Run* command in Start menu or press *Win + R* on the keyboard.

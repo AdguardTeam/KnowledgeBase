@@ -3,61 +3,61 @@ title: Mode furtif
 sidebar_position: 4
 ---
 
-Many websites gather information about their visitors, such as their IP address, installed browser and operating system, screen resolution, and even the page from which a visitor was redirected. Some web pages use cookies to mark your browser and save your personal settings and preferences, or to "recognize" you upon your next visit. Stealth Mode safeguards your personal information from such data- and statistics-gathering systems.
+De nombreux sites web recueillent des informations sur leurs visiteurs, telles que leur adresse IP, le navigateur et le système d'exploitation installés, la résolution de l'écran et même la page à partir de laquelle le visiteur a été redirigé. Certaines pages web utilisent des cookies pour marquer votre navigateur et enregistrer vos paramètres personnels et vos préférences, ou pour vous "reconnaître" lors de votre prochaine visite. Le mode furtif protège vos informations personnelles de ces systèmes de collecte de données et de statistiques.
 
-You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website from receiving the search request you used to find it on the Internet, automatically delete both third-party and the website's own cookies, turn off browser geolocation sharing that can be used to track your whereabouts, and hide your true IP address or even replace it with an arbitrary one.
+Vous pouvez adapter le fonctionnement du mode furtif de manière flexible : par exemple, vous pouvez interdire au site web de recevoir la requête de recherche que vous avez utilisée pour le trouver sur Internet, supprimer automatiquement les cookies de tiers et ceux du site web, désactiver le partage de la géolocalisation du navigateur qui peut être utilisé pour suivre vos déplacements, et masquer votre véritable adresse IP ou même la remplacer par une adresse arbitraire.
 
-Below we will list and describe the main features and options that you can control in the **Stealth Mode** settings. They are split into four groups: **General**, **Tracking methods**, **Browser API**, and **Miscellaneous**.
+Nous allons énumérer et décrire ci-dessous les principales caractéristiques et options que vous pouvez contrôler dans les paramètres du **mode furtif**. Elles sont réparties en quatre groupes : **Général**, **Méthodes de suivi**, **API du navigateur** et **Divers**.
 
 :::note
 
-Some options may not be available depending on the particular product due to OS or other limitations.
+Certaines options peuvent ne pas être disponibles en fonction du produit particulier en raison du système d'exploitation ou d'autres limitations.
 
 :::
 
 ## Général {#general}
 
-### Hide your search queries {#searchqueries}
+### Masquez vos requêtes de recherche {#searchqueries}
 
-When you get directed to a website from Google, Yahoo, or any other search engine, this option hides the search query that you used to find that website.
+Lorsque vous êtes redirigé vers un site web par Google, Yahoo ou tout autre moteur de recherche, cette option masque la requête de recherche que vous avez utilisée pour trouver ce site web.
 
-### Ask websites not to track you {#donottrack}
+### Demandez aux sites web de ne pas vous suivre {#donottrack}
 
-Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit.
+Envoie les signaux [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) et [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) aux sites web que vous visitez.
 
-### Strip tracking parameters from URLs
+### Retirez les paramètres de suivi des URL
 
-If you enable this option, AdGuard will strip tracking parameters like `utm_*` and `fb_ref` from pages’ URLs.
+Si vous activez cette option, AdGuard supprimera les paramètres de suivi tels que `utm_*` et `fb_ref` des URL des pages.
 
-### Tracking methods {#tracking-methods}
+### Méthodes de suivi {#tracking-methods}
 
-### Self-destruction of third-party cookies {#3p-cookie}
+### Autodétruire les cookies tiers {#3p-cookie}
 
-Websites use cookies to store your information and preferences, such as the language you selected, your location, or the list of items in your shopping cart. When you return to a website, your browser sends back the cookies belonging to that website, which allows it to "remember" your data.
+Les sites web utilisent des cookies pour stocker vos informations et vos préférences, telles que la langue que vous avez sélectionnée, votre localisation ou la liste des articles de votre panier d'achat. Lorsque vous revenez sur un site web, votre navigateur renvoie les cookies appartenant à ce site, ce qui lui permet de "mémoriser" vos données.
 
-Third-party cookies are those implemented by a website that is different from the one you are currently browsing. For example, cnn.com may have a Facebook "Like" widget on its homepage. This widget will implement a cookie that may be read later by Facebook. Some advertisers use such cookies to track what other sites you visit where their ads are placed.
+Les cookies tiers sont ceux mis en œuvre par un site Internet différent de celui sur lequel vous naviguez actuellement. Par exemple, cnn.com peut avoir un widget Facebook "J'aime" sur sa page d'accueil. Ce widget implémentera un cookie qui pourra être lu ultérieurement par Facebook. Certains annonceurs utilisent de tels cookies pour suivre les autres sites que vous visitez et sur lesquels leurs annonces sont placées.
 
-Set a time period (in minutes) at the end of which all third-party cookies will be destroyed. Set the timer to 0 to block them completely.
+Définissez une période de temps (en minutes) au terme de laquelle tous les cookies tiers seront détruits. Réglez la minuterie sur 0 pour les bloquer complètement.
 
-:::caution
+:::attention
 
-This setting deletes all third-party cookies, including the information of your logins through social networks or other third-party services. You may have to periodically re-log in to some websites and face other cookie-related issues. To block only tracking cookies, use [*AdGuard Tracking Protection filter*](/general/ad-filtering/filter-policy/#tracking-protection-filter).
-
-:::
-
-### Self-destruction of first-party cookies {#1p-cookie}
-
-Set a time period (in minutes) at the end of which all cookies will be destroyed. Set the timer to 0 to block them completely.
-
-:::caution
-
-We do not recommend enabling this option as it may severely interfere with the work of certain websites.
+Ce paramètre supprime tous les cookies de tiers, y compris les informations relatives à vos connexions via les réseaux sociaux ou d'autres services de tiers. Il se peut que vous deviez périodiquement vous reconnecter à certains sites web et que vous deviez faire face à d'autres problèmes liés aux cookies. Pour bloquer uniquement les cookies de suivi, utilisez [*Filtre de protection contre le suivi AdGuard*](/general/ad-filtering/filter-policy/#tracking-protection-filter).
 
 :::
 
-### Disable cache for third-party requests {#3p-cache}
+### Autodestruction des cookies propriétaires {#1p-cookie}
 
-When a browser addresses a page, the server assigns an ETag to that page. This ETag is used by the browser to cache the page's contents. Upon subsequent requests, the browser sends the ETag to the corresponding server, thus letting the server learn the visitor’s identity. As long as the site's files are cached, the ETag is sent every time your browser addresses this site. If the site has embedded content from another server (such as an image or iframe), that server can track your activities without your knowledge.
+Définissez une période de temps (en minutes) au terme de laquelle tous les cookies seront détruits. Réglez la minuterie sur 0 pour les bloquer complètement.
+
+:::attention
+
+Nous vous déconseillons d'activer cette option car elle pourrait gravement interférer avec le fonctionnement de certains sites web.
+
+:::
+
+### Désactivez le cache pour les requêtes des tiers {#3p-cache}
+
+Lorsqu'un navigateur accède à une page, le serveur lui attribue un ETag. Cet ETag est utilisé par le navigateur pour mettre en cache le contenu de la page. Lors de requêtes ultérieures, le navigateur envoie l'ETag au serveur correspondant, permettant ainsi au serveur de connaître l'identité du visiteur. Tant que les fichiers du site sont mis en cache, l'ETag est envoyé à chaque fois que votre navigateur accède à ce site. Si le site intègre du contenu provenant d'un autre serveur (comme une image ou une iframe), ce serveur peut suivre vos activités à votre insu.
 
 ### Block third-party Authorization header {#3p-auth}
 
