@@ -7,16 +7,6 @@ As MV2 extensions are being phased out in the Chrome Web Store, Chrome users may
 
 Our MV3 extension effectively blocks ads and trackers while seamlessly managing social widgets, banners, and video ads. Most users will not notice any operational differences, but there are some limitations and changes to be aware of.
 
-[Where to find our extensions](#where-to-find-our-extensions)
-
-[Main changes in features and settings](#main-changes-in-features-and-settings)
-
-[Limitations](#limitations)
-
-[Maximum number of rules and filters](#maximum-number-of-rules-and-filters)
-
-[Network rules](#network-rules)
-
 ## Where to find our extensions
 
 The **MV3 version** has replaced our old extension in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
@@ -107,7 +97,7 @@ The maximum number of simultaneously enabled filters is **50**.
 
 Network rules have limitations: some types of rules cannot be implemented in MV3, or can only be implemented with restrictions.
 
-Below is a list of modifiers that are supported, partially supported, or not supported at all. More details about the limitations can be found on [GitHub](https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#readme). For further information on modifiers, please refer to our [Knowledge base](/general/ad-filtering/create-own-filters/#basic-rules-basic-modifiers).
+Below is a list of modifiers that are supported, partially supported, or not supported at all. More details about the limitations can be found on [GitHub](https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter). For further information on modifiers, please refer to our [Knowledge base](/general/ad-filtering/create-own-filters/#basic-rules-basic-modifiers).
 
   | Basic modifiers | Supported | Not supported | Partially supported |
   | [**`$denyallow`**](https://github.com/AdguardTeam/tsurlfilter/tree/release/v2.3-for-5.0/packages/tsurlfilter/src/rules/declarative-converter#basic_modifiers__$denyallow) | ✅ |   |   |
@@ -136,16 +126,12 @@ Below is a list of modifiers that are supported, partially supported, or not sup
   | [**`$ping`**](https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#content_type_modifiers__$ping)| ✅ |   |   |
   | [**`$xmlhttprequest`**](https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#content_type_modifiers__$xmlhttprequest)| ✅ |   |   |
   | [**`$websocket`**](https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#content_type_modifiers__$websocket)| ✅ |   |   |
-  | **`$webrtc`** (deprecated)|  | ✅ |   |
-  | **`$object-subrequest`** (deprecated)|  | ✅ |   |
 
   | Advanced modifiers | Supported | Not supported | Partially supported |
   | [**`$csp`**](https://github.com/AdguardTeam/tsurlfilter/tree/release/v2.3-for-5.0/packages/tsurlfilter/src/rules/declarative-converter#csp)| ✅ |   |   |
   | [**`$permissions`**](https://github.com/AdguardTeam/tsurlfilter/tree/release/v2.3-for-5.0/packages/tsurlfilter/src/rules/declarative-converter#permissions)| ✅ |   |   |
   | [**`$removeheader`**](https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#removeheader)| ✅ |   |   |
   | [**`$noop`**](https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#advanced_capabilities__noop)| ✅ |   |   |
-  | [**`$empty`**](https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#advanced_capabilities__$empty) (deprecated)|  | ✅ |   |
-  | [**`$mp4`**](https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#advanced_capabilities__$mp4) (deprecated)|  | ✅ |   |
   | [**`$redirect-rule`**](https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#advanced_capabilities__$redirect-rule)|  | ✅ |   |
   | [**`$replace`**](https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#advanced_capabilities__$replace)|  | ✅ |   |
   | **`$hls`**, **`$jsonprune`**, **`$network`** |  | ✅ |   |
