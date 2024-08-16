@@ -142,8 +142,8 @@ In Big Sur v11.1+, there are no known conflicts between AdGuard and Surge proxy.
 Now go to *Preferences → Network → Outbound proxy* and fill in the fields. For SOCKS5 proxy type:
 
 - `host`: localhost
-- `port`: 6153 For HTTP proxy type:
-- `host`: localhost
+- `port` : 6153 Pour le type de proxy HTTP :
+- `hôte`: localhost
 - `port`: 6152
 
 ## Alternatives to using a Network Extension

@@ -25,12 +25,13 @@ Zde můžete nastavit jazyk a motiv (tmavý nebo světlý), povolit spouštění
 
 Jedná se o hlavní modul AdGuardu pro Windows, který odstraňuje reklamy z navštívených webových stránek a aplikací nainstalovaných v zařízení. K filtrování reklam a obsahu ohrožujícího soukromí, jako jsou bannery, vyskakovací okna nebo slídiče, používá AdGuard různé filtry: skupiny pravidel s podobným účelem zapsané pomocí [speciální syntaxe](/general/ad-filtering/create-own-filters). Chcete-li pochopit, co jsou to filtry a jak fungují, přečtěte si [tento článek](/general/ad-filtering/how-ad-blocking-works).
 
-![Ad Blocker \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/ad-blocker.png)
+![Ad Blocker \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
 V modulu Blokátor reklam můžete:
 
 - povolit automatickou aktivaci jazykově specifických filtrů,
 - deaktivovat blokování [reklam ve vyhledávání a vlastní propagaci](/general/ad-filtering/search-ads),
+- disable ads in the Start menu on Windows 11,
 - aktivovat předinstalované filtry, jako je _AdGuard Base filtr_,
 - instalovat filtry ze seznamu nebo přidat vlastní filtr kliknutím na tlačítko _Přidat filtr_,
 - provádět změny ve stávajících skupinách pravidel pomocí tlačítka _Editor filtrů_,

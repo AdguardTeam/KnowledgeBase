@@ -9,6 +9,12 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 :::
 
+:::note
+
+Data and/or files provided in system logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 Pokud se během instalace AdGuardu vyskytnou nějaké problémy, tým podpory vás může požádat o shromáždění a zaslání záznamů o instalaci AdGuardu. V tomto případě je třeba:
 
 1. V nabídce Start vyberte příkaz *Spustit* nebo na klávesnici stiskněte kombinaci kláves *Win + R*.

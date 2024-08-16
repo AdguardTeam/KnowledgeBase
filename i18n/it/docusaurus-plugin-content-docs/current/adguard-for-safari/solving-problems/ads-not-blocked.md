@@ -16,7 +16,7 @@ In alcuni casi, il filtro potrebbe non funzionare e gli annunci potrebbero comun
 1. Apri Safari.
 2. Fai clic su _Safari_ nel menu nell'angolo in alto a sinistra.
 3. Fai clic su _Impostazioni…_ → _Estensioni_.
-4. Clear the checkboxes for AdGuard’s extensions: _Custom_, _General_, _Other_, _Privacy_, _Security_, _Social_, _AdGuard for Safari_, and _AdGuard Assistant_.
+4. Deseleziona le caselle di controllo per le estensioni di AdGuard: _Personalizzato_, _Generale_, _Altro_, _Privacy_, _Sicurezza_, _Social_, _AdGuard per Safari_ e _AdGuard Assistant_.
    ![Blocchi dei contenuti deselezionati](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
 5. Riavvia Safari.
 6. Torna a _Impostazioni..._ → _Estensioni_ e riattiva le estensioni di blocco dei contenuti.

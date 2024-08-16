@@ -1,5 +1,5 @@
 ---
-title: Compatibility with the standalone app
+title: Kompatibilität mit der eigenständigen App
 sidebar_position: 4
 ---
 
@@ -9,9 +9,9 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
 :::
 
-While AdGuard Browser Extension can block ads in browsers, [AdGuard standalone programs](/adguard-browser-extension/comparison-standalone) filter all the traffic on your device, including from browsers and apps.
+Während die AdGuard Browser-Erweiterung Werbung in Browsern sperren kann, filtern das [eigenständige AdGuard-Programm](/adguard-browser-extension/comparison-standalone) den gesamten Datenverkehr auf Ihrem Gerät, einschließlich von Browsern und Apps.
 
-If you decide to install both the extension and the standalone program on your PC, you may encounter some compatibility issues. The problem is that in some cases the application and the extension may interfere with each other. Some websites will no longer be protected by the desktop program and will only be protected by the extension, which has fewer options. Also, filtering may work incorrectly for some websites. Therefore, we don't recommend using the extension together with the application.
+Wenn Sie sich entscheiden, sowohl die Erweiterung als auch das eigenständige Programm auf Ihrem PC zu installieren, kann es zu Kompatibilitätsproblemen kommen. Das Problem besteht darin, dass sich in manchen Situationen die Anwendung und die Erweiterung gegenseitig behindern können. Einige Websites werden nicht mehr durch das Desktop-Programm geschützt, sondern nur noch durch die Erweiterung, die weniger Optionen bietet. Also, filtering may work incorrectly for some websites. Therefore, we don't recommend using the extension together with the application.
 
 If you have the desktop version of AdGuard installed on your PC, it is better to use AdGuard Browser Assistant instead of the extension.
 

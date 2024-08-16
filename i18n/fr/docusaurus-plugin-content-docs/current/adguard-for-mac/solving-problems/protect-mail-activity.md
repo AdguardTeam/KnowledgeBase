@@ -19,7 +19,7 @@ However, it won't work if there's an active VPN connection. As it treats AdGuard
 
 Apple explains this issue [here](https://support.apple.com/HT212797).
 
-## In detail
+## Plus de détails
 
 AdGuard for Mac now uses macOS built-in socket filtering based on the network extensions API. This new and rather buggy mechanism replaced good old Kernel extensions. Over the last 1.5 years, we've reported more than 20(!) bugs to Apple regarding their new filtering method.
 

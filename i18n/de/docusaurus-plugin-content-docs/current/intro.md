@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Übersicht
 sidebar_position: 1
 slug: /
 ---

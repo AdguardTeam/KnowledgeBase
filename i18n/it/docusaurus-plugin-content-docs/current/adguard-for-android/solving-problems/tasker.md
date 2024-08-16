@@ -144,6 +144,6 @@ Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiv
 
 To perform a task without showing a toast, add an additional EXTRA `quiet: true`
 
-### Example
+### Esempio
 
 ![Automation *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)
