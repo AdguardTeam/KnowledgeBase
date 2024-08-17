@@ -5,61 +5,61 @@ sidebar_position: 3
 
 :::info
 
-Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. Para ver cómo funciona, [descarga la app de AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard can significantly broaden website functionality working as a [user script manager](/general/userscripts). AdGuard Users can add their own scripts, as well as manage existing ones.
+AdGuard puede ampliar significativamente la funcionalidad del sitio web trabajando como [gestor de scripts de usuario](/general/userscripts). Los usuarios de AdGuard pueden añadir sus propios scripts, así como gestionar los existentes.
 
-![Extensions \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![Extensiones \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
-**Automatically detect userscripts**
+**Detectar automáticamente userscripts**
 
-With this option enabled, AdGuard will automatically define browser queries to userscripts and suggest their installation. Otherwise, extensions can be downloaded and installed manually.
+Con esta opción activada, AdGuard definirá automáticamente las consultas del navegador a los userscripts y sugerirá su instalación. De lo contrario, las extensiones se pueden descargar e instalar manualmente.
 
-The following extensions are installed with AdGuard:
+Las siguientes extensiones se instalan con AdGuard:
 
-![Preinstalled userscripts \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![Scripts de usuario preinstalados \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
-**AdGuard Assistant**
+**Asistente de AdGuard**
 
-AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](/adguard-for-windows/browser-assistant.md) is not available for your browser. The name of this extension is quite deliberate: it actually assists the user in changing basic AdGuard settings right in the browser, without the need to open the app itself. AdGuard Assistant works with all Microsoft Windows compatible browsers. In addition, the AdGuard Assistant icon will not be displayed on websites listed as exceptions by the user and on certain web pages where there is a risk of incorrect content display.
+El Asistente de AdGuard es un asistente antiguo que puede utilizar si el [nuevo Asistente](/adguard-for-windows/browser-assistant.md) no está disponible para tu navegador. El nombre de esta extensión es bastante deliberado: en realidad ayuda al usuario a cambiar la configuración básica de AdGuard directamente en el navegador, sin la necesidad de abrir la aplicación. AdGuard Assistant funciona con todos los navegadores compatibles con Microsoft Windows. Además, el icono del Asistente de AdGuard no se mostrará en los sitios web enumerados como excepciones por el usuario y en determinadas páginas web donde existe el riesgo de que se muestre contenido incorrecto.
 
 **AdGuard Extra**
 
-This is a custom extension designed to fight the technique of re-inserting blocked ads — the so-called ad blocker circumvention/ad reinjection. Both are advanced anti-ad blocker methods that continue to rise in popularity among advertisers.
+Esta es una extensión personalizada diseñada para combatir la técnica de reinsertar anuncios bloqueados: la llamada elusión de bloqueadores de anuncios. Ambos son métodos avanzados de bloqueo de publicidad que siguen ganando popularidad entre los anunciantes.
 
-AdGuard Extra is essentially a mini-program that changes the way pages work in such a way that it becomes much more difficult for sites to use the above-mentioned methods to bypass blockers.
+AdGuard Extra es esencialmente un miniprograma que cambia la forma en que funcionan las páginas de tal manera que a los sitios les resulta mucho más difícil utilizar los métodos mencionados anteriormente para evitar los bloqueadores.
 
 **AdGuard Popup Blocker**
 
-This extension prevents popup windows from opening when you view web pages. Some pop-ups are considered useful — they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge base.
+Esta extensión evita que se abran ventanas emergentes cuando visualizas páginas web. Algunas ventanas emergentes se consideran útiles: pueden contener configuraciones para la administración del sitio o información de referencia adicional que se muestra al hacer clic en un enlace. Es por eso que puedes desactivar el bloqueador si es necesario. Esta extensión tampoco funciona en sitios web agregados a la lista de excepciones de AdGuard. Está desactivado de forma predeterminada, pero puedes activarlo en la configuración de la aplicación. Encontrarás información más detallada sobre esta extensión en nuestra base de conocimiento.
 
 **Web of Trust**
 
-Web of Trust lets you see the reputation of each website based on its users’ opinions. The site is rated by a number of specific criteria: trust, security, etc. This extension is turned off by default, but you can turn it on in the application settings. Please, note that AdGuard is not the developer of this extension.
+Web of Trust te permite ver la reputación de cada sitio web en función de las opiniones de sus usuarios. El sitio se clasifica según una serie de criterios específicos: confianza, seguridad, etc. Esta extensión está desactivada de forma predeterminada, pero puedes activarla en la configuración de la aplicación. Ten en cuenta que AdGuard no es el desarrollador de esta extensión.
 
-### Network
+### Red
 
-The penultimate module is dedicated to network filtering, and here you will find additional network-related options. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS protocol_. These are important extra precautions to better filter your web space. Most websites are now using HTTPS, and the same applies to advertising. From many sites, like youtube.com, facebook.com and twitter.com, it is impossible to remove ads without HTTPS filtering. So keep the _Filter HTTPS protocol_ feature enabled unless you have a strong reason not to.
+El penúltimo módulo está dedicado al filtrado de redes y aquí encontrarás opciones adicionales relacionadas con la red. Dos de ellos están habilitados de forma predeterminada: _Habilitar filtrado de tráfico_ y _Filtrar protocolo HTTPS_. Estas son precauciones adicionales importantes para filtrar mejor tu espacio web. La mayoría de los sitios web utilizan ahora HTTPS y lo mismo se aplica a la publicidad. En muchos sitios, como youtube.com, facebook.com y twitter.com, es imposible eliminar anuncios sin el filtrado HTTPS. Así que mantén habilitada la función _Filtrar protocolo HTTPS_ a menos que tengas una buena razón para no hacerlo.
 
-![Network Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
+![Configuración de red \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 
-In this module you can check the checkbox "Use AdGuard as an HTTP proxy" to use AdGuard as a regular HTTP proxy which will filter all traffic passing through it. You can also enable the _Filter websites with EV certificates_ feature. Extended Validation (EV) SSL Certificates offer a stronger safety guarantee; owners of such websites have to pass a thorough and globally standardized identity verification process defined by EV guidelines. Which is the reason why some users trust websites with such certificates and prefer not to filter them.
+En este módulo, puedes marcar la casilla "Usar AdGuard como proxy HTTP" para usar AdGuard como un proxy HTTP normal que filtrará todo el tráfico que pasa a través de él. También puedes habilitar la función _Filtrar sitios web con certificados EV_. Los certificados SSL de validación extendida (EV) ofrecen una garantía de seguridad más sólida; Los propietarios de dichos sitios web deben pasar un proceso de verificación de identidad exhaustivo y estandarizado a nivel mundial definido por las directrices EV. Esta es la razón por la que algunos usuarios confían en sitios web con dichos certificados y prefieren no filtrarlos.
 
-At last, there is a section with proxy settings. There you can specify which proxy server AdGuard should use to update filters, get new versions and so on.
+Por fin, hay una sección con configuración de proxy. Allí puedes especificar qué servidor proxy debe utilizar AdGuard para actualizar los filtros, obtener nuevas versiones, etc.
 
 ### AdGuard VPN
 
-The last section is dedicated to AdGuard VPN — an ideal tool that provides security and anonymity each time you browse the Internet. You can download it by clicking the _Download_ button or go to the AdGuard VPN website by clicking the _Homepage_ button.
+La última sección está dedicada a AdGuard VPN, una herramienta ideal que brinda seguridad y anonimato cada vez que navegas por Internet. Puedes descargarlo haciendo clic en el botón _Descargar_ o ir al sitio web de AdGuard VPN haciendo clic en el botón _Página de inicio_.
 
-How does AdGuard VPN work? Without going into technical details, we can say that VPN creates a secure encrypted tunnel between the user's computer or mobile device and a remote VPN server. In this way, data confidentiality is preserved, as well as the anonymity of the user, because a third-party observer sees the IP address of the VPN server and not the actual user's IP.
+¿Cómo funciona AdGuard VPN? Sin entrar en detalles técnicos, podemos decir que la VPN crea un túnel cifrado seguro entre la computadora o dispositivo móvil del usuario y un servidor VPN remoto. De esta manera, se preserva la confidencialidad de los datos, así como el anonimato del usuario, porque un observador de un tercer partido ve la dirección IP del servidor VPN y no la dirrecion IP verdadero del usuario.
 
-**What AdGuard VPN does:**
+**Qué hace AdGuard VPN:**
 
-- hides your real whereabouts and helps you stay anonymous
-- changes your IP address to protect your data from tracking
-- encrypts your traffic to make it unreadable to third parties
-- lets you configure where to use VPN and where not to (exclusions feature)
+- oculta tu paradero real y te ayuda a permanecer en el anonimato
+- cambia tu dirección IP para proteger tus datos del seguimiento
+- cifra tu tráfico para hacerlo ilegible para terceros
+- te permite configurar dónde usar la VPN y dónde no usarla (función de exclusiones)
 
-To get more information about AdGuard VPN dive into the [AdGuard VPN Knowledge Base](https://adguard-vpn.com/kb/).
+Para obtener más información sobre AdGuard VPN, consulta la [Base de conocimientos de AdGuard VPN] (https://adguard-vpn.com/kb/).

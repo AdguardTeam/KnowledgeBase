@@ -1,91 +1,91 @@
 ---
-title: Settings
+title: 設定
 sidebar_position: 2
 ---
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
-_Settings_ is the section that requires the most attention. This is where you can configure the app so that it fully meets your requirements: blocks only what bothers you, uses the DNS server of the trusted provider, removes third-party cookies, and so on.
+「設定」は最も注意する価値のあるセクションです。 ここでは、アプリをご自身のニーズに合わせて設定することができます。気になるものだけをブロックし、信頼できるプロバイダのDNSサーバーを使用し、サードパーティCookieの削除を有効にすることなどができます。
 
-![Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings.png)
+![設定 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings.png)
 
-### General settings
+### 一般設定
 
-Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect _Debug logs_](/adguard-for-windows/solving-problems/adguard-logs.md).
+ここでは、言語とカラーテーマ（ダーク・ライト）の設定、システム起動時のAdGuardの起動と自動アップデートの有効化、アップデートチャネルの選択、フィルタ更新チェック間隔の指定などを行うことができます。 また、AdGuard for Windows が正常に動作せず、サポートチームから[「デバッグログ」を収集する](/adguard-for-windows/solving-problems/adguard-logs.md)ように依頼された場合も、「設定」が役に立ちます。
 
-![Advanced Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
+![高度な設定 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
 
-At the very bottom of the screen you will find _Advanced Settings_. Changing some of them mindlessly may potentially cause problems with AdGuard's performance, break the Internet connection or compromise your security and privacy. That's why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in _Advanced Setting_ read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
+画面の一番下に「高度な設定」があります。 高度な設定を適用に変更することはAdGuardのパフォーマンスの悪化やインターネット接続の切断、もしくはあなたのセキュリティやプライバシーを侵害してしまう可能性があります。 そのため、このセクションを開くのは、あなたが何をしているのか確信がある場合、またはサポートチームから依頼された場合のみとすることをお勧めします。 高度な設定で設定できる内容について詳しく知りたい場合は、[こちらの専用記事](/adguard-for-windows/solving-problems/low-level-settings.md)をお読みください。
 
-### Ad Blocker
+### 広告ブロッカー
 
-This is the main module of AdGuard for Windows that removes ads from the websites you visit and from the apps installed on your device. To filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers AdGuard uses different filters: groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). To understand what filters are and how they work read [this article](/general/ad-filtering/how-ad-blocking-works).
+これは AdGuard for Windows のメインモジュールで、アクセスしたウェブサイトやデバイスにインストールされたアプリから広告を削除します。 AdGuard は、バナー、ポップアップ、トラッカーなどのような、広告やプライバシーを脅かすコンテンツをフィルタリングするために、さまざまなフィルタ（[特別な構文](/general/ad-filtering/create-own-filters)で記述され、同様の目的を持つルールグループ）を使用します。 フィルタとは何か、どのように機能するのかについては、[こちらの記事](/general/ad-filtering/how-ad-blocking-works)をお読みください。
 
-![Ad Blocker \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
+![広告ブロッカー \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
-In the Ad Blocker module you can:
+広告ブロッカーモジュールでは以下のことができます:
 
-- enable automatic activation of language-specific filters,
-- disable [search ads and self-promotion](/general/ad-filtering/search-ads) blocking,
-- disable ads in the Start menu on Windows 11,
-- activate pre-installed filters such as _AdGuard Base filter_,
-- install filters from the list or add a custom filter by clicking the _Add a filter_ button,
-- make changes to existing rule groups using the _Filter editor_ button,
-- see all the requests sent by browsers and apps installed on your computer by clicking the _Filtering log_ button. From there you can also block or unblock any request by creating a custom rule,
-- compose a filter from your own rules written manually, imported or created with the AdGuard Assistant extension.
+- 言語特化フィルタの自動有効化をオンにする
+- [検索広告と自己宣伝](/general/ad-filtering/search-ads)のブロックをオフにする
+- Windows 11のスタートメニュー広告を無効にする
+- 「AdGuard ベースフィルター」などのプリインストールされたフィルタを有効にする
+- リストからフィルタをインストールするか、「フィルタを追加する」ボタンをクリックしてカスタムフィルタを追加する
+- 「フィルタエディタ」ボタンを使用して既存のルールグループに変更を加える
+- 「フィルタリングログ」ボタンをクリックすると、コンピューターにインストールされているブラウザやアプリから送信されたすべてのリクエストが表示されます。 そこからカスタムルールを作成することで、あらゆるリクエストをブロックしたり、ブロック解除したりすることもできます。
+- 手動で作成したルール、インポートしたルール、または「AdGuard アシスタント」拡張機能で作成したルールからフィルタを構成する
 
-Before you start manually writing your own rules read our detailed [syntax guide](/general/ad-filtering/create-own-filters).
+※手動で独自のルールを書き始める場合、[こちらの詳細な構文ガイド](/general/ad-filtering/create-own-filters)をお読みください。
 
-### ステルスモード
+### トラッキング防止
 
-Many websites gather information about their visitors, such as their IP addresses, information about the browser and operating system installed, screen resolution, and even what page the user came or was redirected from. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or "recognize" you upon your next visit. Stealth Mode safeguards your personal information from such data and statistics gathering systems.
+「トラッキング防止」（旧名：「ステルスモード」）機能は、ウェブサイトがあなたに関する情報（IPアドレス、ブラウザやオペレーティングシステムに関する情報、画面の解像度、ユーザーが訪問した、またはリダイレクトされたページなど）を収集することを防ぎます。 また、Cookie（クッキー）を使って、ウェブサイトはあなたのブラウザをマークしたり、個人設定やユーザー設定を保存したり、次回訪問時にあなたを識別したりします。 トラッキング防止は、そのようなデータや統計収集システムからお客様の個人情報を保護します。
 
-![Stealth Mode \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/stealth-mode.png)
+![トラッキング防止 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/stealth-mode.png)
 
-You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and disable location sharing in your browser that can be used to track your whereabouts.
+トラッキング防止の機能を柔軟に微調整することができます。例えば、インターネット上でウェブサイトを見つけるために使用した検索要求の受信を禁止したり、サードパーティとウェブサイト独自のCookieの両方を自動的に削除したり、居場所を追跡するために使用できるブラウザの位置情報共有を無効にしたりすることができます。
 
-To learn everything about Stealth Mode and its many options, [read this article](/general/stealth-mode).
+トラッキング防止とその多くのオプションについて知るには、[こちらの記事](/general/stealth-mode)をお読みください。
 
 ### ブラウジング・セキュリティ
 
-Browsing security gives strong protection against malicious and phishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it's already started, nor delete the already existing ones. But it will warn you if you're about to proceed to a website whose domain has been added to our "untrusted sites" database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
+ブラウジング・セキュリティは、悪意のあるウェブサイトやフィッシングサイトからしっかり保護してくれます。 （※AdGuard for Windows はアンチウイルスソフトではありません。 すでに始まっているウイルスのダウンロードを止めることや、すでに存在するウイルスを削除することはできません。） しかし、ドメインが「信頼できないサイト」データベースに追加されたウェブサイトにアクセスしようとしたり、そのようなウェブサイトからファイルをダウンロードしようとしたりすると、警告が表示されます。 このモジュールがどのように機能するかについての詳細は、[こちらの専用記事](/general/browsing-security)をご覧ください。
 
-In this module you can
+このモジュールでできること:
 
-- enable notifications to block requests to malicious and phishing sites,
-- activate sound notifications,
-- agree to submit anonymous security-related info to the AdGuard server to help us keep the malicious and phishing websites database up to date.
+- 悪質なウェブサイトやフィッシング詐欺サイトへのリクエストがブロックされた際の通知の受け取りを有効にする
+- サウンド通知を有効にする
+- AdGuard が悪質サイトやフィッシングサイトのデータベースを最新の状態に保つために、匿名のセキュリティ関連情報のAdGuardサーバーへの送信を有効にすることで協力する
 
-![Browsing security \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
+![ブラウジング・セキュリティ \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
 
-In case you want to learn more about Browsing security, read [this article](/general/browsing-security).
+ブラウジング・セキュリティについてもっと知りたい場合は、[こちらの記事](/general/browsing-security)をお読みください。
 
-### DNS Protection
+### DNS通信を保護
 
-There are three significant reasons why you might want to explore the DNS protection settings. First, to avoid being tracked by your ISP. Every time you open a website, for example `google.com`, your browser sends a request to a DNS server to get the IP address of the website in return. Usually, the DNS server belongs to your ISP, which allows them to track your online activity. Second, to encrypt you DNS traffic. And the third one is to [block content on DNS level](https://adguard-dns.io/kb/general/dns-filtering/).
+「DNS通信を保護」の設定は、3つの重要な理由で役に立つことがあります。 まず、ISP（インターネットプロバイダ）に追跡されないようにするためです。 例えば、`google.com`のようなウェブサイトを開くたびに、ブラウザはDNSサーバーにリクエストを送り、ウェブサイトのIPアドレスを取得します。 通常、DNSサーバーはISPに属しており、ISPはあなたのオンライン活動を追跡することができます。 2つ目の理由は、DNSトラフィックを暗号化するためです。 そして3つ目は、[DNSレベルでコンテンツをブロックする](https://adguard-dns.io/kb/general/dns-filtering/)ことです。
 
-![DNS Protection \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
+![DNS通信を保護 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
 
-In the DNS protection module of AdGuard for Windows you can select the DNS servers from known DNS providers, including [AdGuard DNS](https://adguard-dns.io/kb/) that blocks ads and trackers, AdGuard DNS Family Protection that in addition blocks adult content, or AdGuard DNS Non-filtering that provides a secure and reliable connection, but doesn't filter anything. You can even add custom DNS servers. Also there is an option to add custom rules using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). And if necessary, you can add [DNS filters of your choice](https://filterlists.com).
+AdGuard for Windows の「DNS通信を保護」モジュールでは、広告とトラッカーをブロックする「[AdGuard DNS](https://adguard-dns.io/kb/)」、アダルトコンテンツをブロックする「AdGuard DNS ファミリー保護」、または安全で信頼性の高い接続を提供するが何もフィルタリングしない「AdGuard DNS フィルタリングなし」など、既知のDNSプロバイダからDNSサーバを選択できます。 カスタムDNSサーバーを追加することもできます。 また、[DNSルール構文](https://adguard-dns.io/kb/general/dns-filtering-syntax/)を使ってカスタムルールを追加するオプションもあります。 また、必要に応じて[お好みのDNSフィルタ](https://filterlists.com)を追加することもできます。
 
-### Parental Control
+### ペアレンタルコントロール
 
-There are several websites to which access should be restricted from a PC used by children. This task is accomplished by Parental Control.
+子供が使用するパソコンで、アクセスを制限する必要があるウェブサイトがいくつかあります。 ペアレンタルコントロールがこの機能を果たします。
 
-![Parental Control \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
+![ペアレンタルコントロール \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
-The module checks the contents of web pages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental Control settings are password-protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results.
+このモジュールは、ブラウザで開かれたウェブページの内容をチェックし、子供にとって好ましくない内容（大人向けの画像やテキスト、下品な言葉、暴力、薬物の宣伝など）のものをフィルタリングします。 ペアレンタルコントロールの設定はパスワードで保護されているため、子供が自分で制限をオフにすることはできません。 このモジュールは、好ましくないサイトへの誘導をブロックするだけでなく、検索結果から子供に不適切なリンクを削除することもできます。
 
-In the Parental Control module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. You can also check the _Block executable files download_ box to prevent your child from downloading and installing software on the computer. There are two more options in the _Parental Control_ module: you can select a specific Windows user to be protected by _Parental Control_ and set a password to protect AdGuard settings from change.
+ペアレンタルコントロールモジュールでは、「_セーフサーチ_」を有効にし、「_ブラックリスト_」と「_ホワイトリスト_」を管理して、この機能の動作をカスタマイズすることができます。 「実行形式ファイルのダウンロードをブロック」を有効にしますと、お子様のコンピュータへのソフトウェアのダウンロードとインストールを防ぎます。 _ペアレンタルコントロール_モジュールにはさらに 2 つのオプションがあります。_ペアレンタルコントロール_で保護対象の特定の Windows ユーザーを指定するオプションと、AdGuard 設定が変更されないようにパスワードを設定するオプションです。
 
-![Parental Control \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
+![ペアレンタルコントロール \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
-### Browser Assistant
+### ブラウザアシスタント
 
-![Browser Assistant \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![ブラウザアシスタント \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
-From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](/adguard-for-windows/browser-assistant.md).
+このタブから、AdGuard ブラウザアシスタントのインストールに簡単に進むことができます。AdGuard ブラウザアシスタントは、ブラウザから直接フィルタリングを管理することを主な機能としています。 [別の記事](/adguard-for-windows/browser-assistant.md)で、その使い方や、ブラウザにブラウザアシスタントがない場合の対処方法について詳しく説明しました。

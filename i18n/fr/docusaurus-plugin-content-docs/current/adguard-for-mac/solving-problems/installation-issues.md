@@ -1,28 +1,28 @@
 ---
-title: Installation problems solving
+title: Résolution des problèmes d'installation
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour Mac, un bloqueur d'annonces multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment cela fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## "Installation failed" error in macOS Catalina
+## Erreur "Échec d'installation" dans macOS Catalina
 
-During the installation you can face an error like this:
+Lors de l'installation, vous pouvez rencontrer une erreur comme celle-ci :
 
-![Installation error screen](https://cdn.adtidy.org/content/kb/ad_blocker/mac/macerrorscreenEN.jpg)
+![Écran d'erreur d'installation](https://cdn.adtidy.org/content/kb/ad_blocker/mac/macerrorscreenEN.jpg)
 
-Follow this instruction to solve the problem:
+Suivez ces instructions pour résoudre le problème :
 
-1. Restart your Mac
-2. As your Mac restarts, press and hold down the *Command(⌘) + R* keys immediately upon hearing the startup chime. Hold the keys until the Apple logo appears to get the computer into Recovery mode.
-3. From the top bar select *Utilities* → *Terminal*, and execute this command: `csrutil disable`
-4. Restart the Mac and log into Administrator's profile
-5. Open the Finder window and select from the top bar *Go* → *Go to Folder* and type `~/private/`
-6. Create a folder named *tmp* and type in your password
-7. Launch AdGuard installation
+1. Redémarrez votre Mac
+2. Lorsque votre Mac redémarre, appuyez et maintenez enfoncées les touches *Commande(⌘) + R* immédiatement après avoir entendu le carillon de démarrage. Maintenez les touches enfoncées jusqu'à ce que le logo Apple apparaisse pour mettre l'ordinateur en mode de récupération.
+3. Dans la barre supérieure, sélectionnez *Utilitaires* → *Terminal*et exécutez cette commande : `csrutil disable`
+4. Redémarrez le Mac et connectez-vous au profil administrateur
+5. Ouvrez la fenêtre du Finder et sélectionnez dans la barre supérieure *Allez à* → *Allez dans le dossier* et tapez `~/private/`
+6. Créez un dossier nommé *tmp* et saisissez votre mot de passe
+7. Lancez l'installation d'AdGuard
 
-As the installation is completed, restart your Mac in Recovery mode using the instruction above and execute `csrutil enable` command in Terminal to enable system protection.
+Une fois l’installation terminée, redémarrez votre Mac en mode de récupération en suivant les instructions ci-dessus et exécutez `csrutil enable` dans le Terminal pour activer la protection du système.

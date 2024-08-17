@@ -5,23 +5,23 @@ sidebar_position: 7
 
 :::info
 
-Questo articolo riguarda AdGuard per Windows, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Windows, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 Previously known as low-level settings, Advanced Settings mostly contain options that go beyond the average user competence and aren't applied in everyday use. AdGuard for Windows is designed to work without ever having to change any of them, but they will provide additional features in some corner cases or when solving an uncommon problem.
 
-:::caution
+:::attenzione
 
 Mindlessly changing *Advanced Settings* can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only make changes to these settings if you are sure of what you are doing or if our support team has asked you to do so.
 
 :::
 
-## How to reach Advanced Settings
+## Come raggiungere le Impostazioni Avanzate
 
 To go to *Advanced settings*, in the main windows click *Settings → General Settings* and scroll down to *Advanced Settings*. Alternatively, select *Advanced → Advanced settings...* in the tray menu.
 
-## Advanced Settings
+## Impostazioni Avanzate
 
 Once you open Advanced Settings, you will be presented with the following options:
 
@@ -31,11 +31,11 @@ If enabled, AdGuard will block TCP Fast Open in the Edge browser. To apply setti
 
 ### Use Encrypted ClientHello
 
-Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Use Encrypted ClientHello* option. It uses a local DNS proxy to look for the ECH configuration for the domain. If it is found, ClientHello packet will be encrypted.
+Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Use Encrypted ClientHello* option. Utilizza un proxy DNS locale per cercare la configurazione ECH per il dominio. Se trovato, il pacchetto ClientHello sarà crittografato.
 
 ### Check websites' certificate transparency
 
-Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy. If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. Chrome, in turn, will block it.
+Verifica l'autenticità di tutti i certificati per il dominio in base alla Politica di trasparenza dei certificati Chrome. If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. Chrome, in turn, will block it.
 
 ### Enable SSL/TLS certificate revocation checks
 
@@ -43,9 +43,9 @@ Once enabled, this option runs asynchronous OCSP checks to check whether the web
 
 If the OCSP check completes within the minimum timeout, AdGuard will immediately apply the result: block the connection if the certificate is revoked or establish a connection if the certificate is valid.
 
-If the verification takes too long, AdGuard will establish a connection and continue checking in the background. If the certificate is revoked, current and future connections to the domain will be blocked.
+If the verification takes too long, AdGuard will establish a connection and continue checking in the background. Se il certificato viene revocato, le connessioni attuali e future al dominio verranno bloccate.
 
-### Show AdGuard VPN in Settings
+### Mostra AdGuard VPN nelle Impostazioni
 
 Enabling this option allows you to display the AdGuard VPN tab in Settings for easy opening of the app and the product's website.
 
@@ -61,7 +61,7 @@ Enable this feature to see AdGuard pop-up notifications. They do not appear too 
 
 Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
 
-### Filter HTTP/3
+### Filtra HTTP/3
 
 If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
@@ -73,7 +73,7 @@ Otherwise, AdGuard will filter all the traffic on the fly, without redirection. 
 
 ### Open main window at system start-up
 
-Enable this option to make the main AdGuard window open after the system is loaded. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*
+Abilita quest'opzione per far aprire la finestra principale di AdGuard all'avvio del sistema. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*
 
 ### Enable filtering at system start-up
 
@@ -81,30 +81,30 @@ Starting from v7.12, by default, AdGuard's service does not filter traffic after
 
 :::note
 
-Before v7.12, the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.
+Before v7.12, the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). Se eri soddisfatto del vecchio comportamento, abilita questa opzione.
 
 :::
 
-### Filter localhost
+### Filtra host locale
 
-If you want AdGuard to filter loopback connections, check the box. This option will always be on if you have AdGuard VPN installed, because otherwise it won't be able to work.
+Se desideri che AdGuard filtri le connessioni di loopback, spunta la casella. Quest'opzione sarà sempre attiva se hai installato AdGuard VPN, poiché altrimenti non potrà funzionare.
 
-### Exclude specified IP ranges from filtering
+### Escludi gli intervalli IP specificati dal filtraggio
 
-If you don't want AdGuard to filter particular subnets, enable this feature and specify the IP ranges in the CIDR notation (e.g. 98.51.100.14/24) in the **IP ranges excluded from filtering** section below.
+Se non desideri che AdGuard filtri determinate sottoreti, abilita questa funzione e specifica gli intervalli IP nella notazione CIDR (ad es. 98.51.100.14/24) nella sezione **intervalli IP esclusi dal filtraggio** di seguito.
 
-### Enable HAR writing
+### Abilita scrittura HAR
 
 This option should be enabled **only for debugging purposes**. If you tick the checkmark, AdGuard will create a file that contains information about all filtered HTTP requests in HAR 1.2 format. This file can be analyzed with the Fiddler app. Note that it may slow down your web browsing significantly.
 
 ### Add an extra space to the plain HTTP request
 
-Adds extra space between the HTTP method and the URL and removes space after the "Host:" field to avoid deep packet inspection. For instance, the request
+Aggiunge ulteriore spazio tra il metodo HTTP e l'URL e rimuove lo spazio dopo il campo "Host:" per evitare l'ispezione approfondita dei pacchetti. Ad esempio, la richiesta
 
 `GET /foo/bar/ HTTP/1.1
 Host: example.org`
 
-will be converted to
+sarà convertito in
 
 `GET /foo/bar/ HTTP/1.1
 Host: example.org`
@@ -117,15 +117,15 @@ Specifies the size of the TCP packet fragmentation, avoiding deep packet inspect
 
 If this option is enabled, AdGuard splits the initial TLS packet (the ClientHello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Valid values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Valori validi: 1–1500. Se viene specificata una dimensione non valida, verrà utilizzato il valore selezionato dal sistema. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Plain HTTP request fragment size
 
-Adjusts the size of the HTTP request fragmentation. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
+Regola la dimensione della frammentazione della richiesta HTTP. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-Valid values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Valori validi: 1–1500. Se viene specificata una dimensione non valida, verrà utilizzato il valore selezionato dal sistema. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
-### Show QUIC
+### Mostra QUIC
 
 Allows displaying the QUIC protocol records in the filtering log. For blocked requests only.
 
@@ -135,7 +135,7 @@ Periodically sends TCP packets over idle connection to ensure it is alive and to
 
 ### TCP keepalive interval
 
-Here you can specify an idle time period, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used.
+Here you can specify an idle time period, in seconds, before sending a keepalive probe. Se viene specificato 0, verrà utilizzato il valore selezionato dal sistema.
 
 :::note
 
@@ -145,7 +145,7 @@ This setting only works when the *Enable TCP keepalive* option is enabled.
 
 ### TCP keepalive timeout
 
-Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. Se viene specificato 0, verrà utilizzato il valore selezionato dal sistema.
 
 :::note
 
@@ -153,7 +153,7 @@ This setting only works when the *Enable TCP keepalive* option is enabled.
 
 :::
 
-### Block Java
+### Blocca Java
 
 Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
 
@@ -209,21 +209,21 @@ If Custom IP address is selected in Blocking mode for hosts rules or Blocking mo
 
 Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
 
-- Don’t use fallback servers;
-- Use system default servers;
-- Use custom servers.
+- Non utilizzare i server di fallback;
+- Utilizza i server predefiniti di sistema;
+- Utilizza server personalizzati.
 
-### Block ECH
+### Blocca ECH
 
-If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
+Se abilitata, Adguard elimina i parametri Encrypted ClientHello dalle risposte.
 
-### List of custom fallback servers
+### Elenco di server di fallback personalizzati
 
-If you want AdGuard to use custom fallback servers, list them in this section, one per line.
+Se desideri che AdGuard utilizzi dei server di fallback personalizzati, elencali in questa sezione, uno per riga.
 
-### List of custom bootstrap addresses
+### Elenco di indirizzi di boostrap personalizzati
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
+Un bootstrap è un server DNS intermedio utilizzato per ottenere l'indirizzo IP del server DNS sicuro scelto in precedenza in *Protezione DNS*. Una simile "via di mezzo" è necessaria utilizzando i protocolli che denotano l'indirizzo del server con delle lettere (come ad esempio DNS su TLS). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
 By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
 

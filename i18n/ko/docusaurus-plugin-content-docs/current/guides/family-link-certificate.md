@@ -11,7 +11,7 @@ Google Family Link를 사용하는 기기에서 HTTPS 필터링을 활성화하�
     - 자녀의 기기에서 설정 → 계정 → Google로 이동합니다.
     - 자녀의 계정을 탭하고 삭제할 수 있는 옵션이 있는지 확인합니다. 해당 옵션이 없다면 다음 단계로 진행하세요.
     - 화면 오른쪽 상단의 점 3개를 탭하고 계정을 삭제할 수 있는 옵션이 있는지 확인합니다.
-    - Follow the instructions removing the child’s account from the device
+    - 지침에 따라 기기에서 자녀의 계정을 삭제합니다.
 
 1. AdGuard를 실행하고 CA 파일을 설치합니다.
 1. 기기에서 자녀의 계정을 복원합니다.

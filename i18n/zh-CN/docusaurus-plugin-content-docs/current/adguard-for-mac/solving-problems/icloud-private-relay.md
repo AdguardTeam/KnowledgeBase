@@ -1,31 +1,31 @@
 ---
-title: iCloud Private Relay and AdGuard
+title: iCloud 专用代理和 AdGuard
 sidebar_position: 7
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文介绍 Mac 版 AdGuard。这是一款多功能广告拦截程序，可在系统级别保护设备。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-## Problem description in a nutshell
+## 问题描述
 
-By default, AdGuard uses the "default route" which disables iCloud Private Relay.
+AdGuard 默认使用「默认路由」功能，禁用 iCloud 专用代理的原因。
 
-Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuard cannot block ads because iCloud Private Relay encrypts traffic before AdGuard can filter network connections. When iCloud Private Relay is active, any filtering (including local filtering) becomes impossible. Thus, AdGuard can't filter traffic or perform DNS filtering in Safari. Yet, AdGuard still filters traffic in other browsers. To keep using iCloud Private Relay, consider installing [AdGuard for Safari](https://adguard.com/adguard-safari/overview.html).
+目前，AdGuard 和 iCloud 专用代理不能同时工作。 AdGuard 无法阻止广告，因为 iCloud 专用代理会在 AdGuard 过滤网络连接之前对流量进行加密。 当 iCloud 专用代理处于活动状态时，应用就无法进行过滤（包括本地过滤）。 因此，AdGuard 无法在 Safari 中过滤流量或执行 DNS 过滤。 但是，AdGuard 仍然会过滤其他浏览器的流量。 要继续使用 iCloud 专用代理，请考虑安装 [AdGuard Safari 版](https://adguard.com/adguard-safari/overview.html)。
 
-The same applies to using any VPN apps on Mac: you have to choose between using iCloud Private Relay or a VPN service.
+在 Mac 上使用任何 VPN 应用程序也是如此：用户必须在使用 iCloud 专用代理或 VPN 服务之间进行选择。
 
-## In detail
+## 更详细的说明
 
-AdGuard for Mac now uses macOS built-in socket filtering based on the network extensions API. This new and rather buggy mechanism replaced good old Kernel extensions. Over the last 1.5 years, we've reported more than 20(!) bugs to Apple regarding their new filtering method.
+现在 Mac 版 AdGuard 使用基于网络扩展 API 的 macOS 内置的 Socket 过滤。 这种新的漏洞百出的机制取代了老式的内核扩展。 在过去的一年半内，我们向 Apple 报告了超过 20 个（！）关于其新过滤方式的错误。
 
-The network extensions API has a VPN-like configuration with a list of route-like entries. On Big Sur, AdGuard developed "split-tunnel" rules to avoid creating the "default route" rule because it causes problems on early Big Sur releases.
+网络扩展 API 有一个类似 VPN 的配置，其中包含一个类似路由的条目列表。 在 Big Sur 上，AdGuard 开发了「分离隧道」规则，以避免创建「默认路由」规则，因为它会给 Big Sur 早期版本带来问题。
 
-On Monterey, iCloud Private Relay got introduced. Privacy features of the Mail app also use Private Relay servers.
+在 Monterey 上，推出了 iCloud 专用代理。 邮件应用程序的隐私功能也使用专用代理服务器。
 
-As a consequence, AdGuard can't work together with iCloud Private Relay and the Mail app privacy features:
+因此，AdGuard 无法与 iCloud 专用代理和邮件应用程序的隐私功能一起使用：
 
 1. iCloud Private Relay is applied to connections at the library level — before they reach the socket level, where AdGuard operates.
 2. iCloud Private Relay uses QUIC, which AdGuard can't filter in filtered apps because HTTP/3 filtering is not yet available.

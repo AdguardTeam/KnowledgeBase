@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::note
 
-HAR files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+HAR-Dateien werden in Übereinstimmung mit der [Datenschutzrichtlinie von AdGuard](https://adguard.com/de/privacy.html) verarbeitet.
 
 :::
 

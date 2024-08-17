@@ -1,5 +1,5 @@
 ---
-title: How to collect AdGuard installation logs
+title: Como coletar logs de instalação do AdGuard
 sidebar_position: 4
 ---
 
@@ -11,20 +11,20 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 :::note
 
-Data and/or files provided in system logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Os dados e/ou arquivos fornecidos nos registros do sistema são processados de acordo com [a Política de Privacidade do AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-If any problems occur during the installation of AdGuard, the support team might ask you to collect and send them AdGuard installation logs. In this case you need to:
+Caso ocorra algum problema durante a instalação do AdGuard, a equipe de suporte poderá solicitar que você colete e envie os logs de instalação do AdGuard. Neste caso você precisa:
 
-1. Select *Run* command in Start menu or press *Win + R* on the keyboard.
+1. Selecione o comando *Executar* no menu Iniciar ou pressione *Win + R* no teclado.
 
-1. Type in *%tmp%* and click *OK*.
+1. Digite *%tmp%* e clique em *OK*.
 
-    ![Open temp folder *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
+    ![Abra a pasta temporária *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
 
-1. In the opened folder select all files starting with `Adguard` and add them to archive (using WinRAR or any other archiving software).
+1. Na pasta aberta, selecione todos os arquivos que começam com `Adguard` e adicione-os ao arquivo (usando WinRAR ou qualquer outro software de arquivamento).
 
-    ![AdGuard installation log files *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
+    ![Arquivos de log de instalação do AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
 
-1. Send this archive to AdGuard tech support at **support@adguard.com**.
+1. Envie este arquivo para o suporte técnico do AdGuard em **support@adguard.com**.
