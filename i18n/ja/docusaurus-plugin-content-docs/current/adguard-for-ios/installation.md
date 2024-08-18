@@ -13,15 +13,15 @@ sidebar_position: 2
 
 ### iPhone
 
-iOS 11.2以上
+Requires iOS 13 or later.
 
 ### iPad
 
-iPadOS 11.2以上
+Requires iPadOS 13 or later.
 
 ### iPod touch
 
-iOS 11.2以上
+Requires iOS 13 or later.
 
 ## AdGuard for iOS インストール方法
 

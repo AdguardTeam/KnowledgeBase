@@ -1,5 +1,5 @@
 ---
-title: Compatibility with the standalone app
+title: Kompatibilita se samostatnou aplikací
 sidebar_position: 4
 ---
 
@@ -15,7 +15,7 @@ If you decide to install both the extension and the standalone program on your P
 
 If you have the desktop version of AdGuard installed on your PC, it is better to use AdGuard Browser Assistant instead of the extension.
 
-## AdGuard Browser Assistant
+## AdGuard Asistent prohlížeče
 
 ![AdGuard Browser Assistant \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 

@@ -1,5 +1,5 @@
 ---
-title: How to collect Windows system logs
+title: Como coletar logs do sistema Windows
 sidebar_position: 5
 ---
 
@@ -11,40 +11,40 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 :::note
 
-Data and/or files provided in system logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Os dados e/ou arquivos fornecidos nos registros do sistema são processados de acordo com [a Política de Privacidade do AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need Windows system log files. Windows event logs contain records about all errors that occurr with the installed software, including AdGuard. Below is the brief instruction describing the way to get the log files and to send them to our support service if necessary.
+Para analisar e diagnosticar diferentes problemas que possam surgir, o serviço de suporte AdGuard pode precisar de arquivos de log do sistema Windows. Os logs de eventos do Windows contêm registros sobre todos os erros que ocorrem com o software instalado, incluindo o AdGuard. Há uma breve instrução abaixo que descreve a forma de obter os arquivos de log e enviá-los ao nosso serviço de suporte, se necessário.
 
-1. Press *Win + R*
+1. Pressiona *Win + R*
 
-1. In the window that appears type in `eventvwr` and click *OK*:
+1. Na janela que aparece, digite `eventvwr` e clique em *OK*:
 
-    ![Run window *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
+    ![Janela de execução *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
 
-1. Event Viewer window appears as shown in the picture.
+1. A janela do Event Viewer é exibida conforme mostrado na figura.
 
-    ![Event viewer *border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
+    ![Visualizador de eventos *border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
 
-    To save files that we need, do the following:
+    Para salvar os arquivos que precisamos, faça o seguinte:
 
-    - Open *Application*: *Event Viewer (Local)* → *Windows Logs* → *Application*.
+    - Abra *o aplicativo*: *Event Viewer (local)* → *Registros do Windows* → *Aplicativo*.
 
-    - Right-click *Application* and in the drop-down menu select *Save All Events As...*
+    - Clique com o botão direito do mouse em *Aplicativo* e no menu suspenso selecione *Salvar todos os eventos como...*
 
-    - Select a name and where to save, click *Save*. Select *Display information for the following languages*. You need to check the checkbox next to *English*. Click *OK*.
+    - Selecione um nome e onde salvar, clique em *Salvar*. Selecione *Exibir informações para os seguintes idiomas*. Você precisa marcar a caixa de seleção ao lado de *Inglês*. Clique em *OK*.
 
-    - Open *System*: *Event Viewer (Local)* → *Windows Logs* → *System*.
+    - Abra *Sistema*: *Visualizador de Eventos (Local)* → *Logs do Windows* → *Sistema*.
 
-    - Right-click *System* and in the drop-down menu select *Save All Events As...*
+    - Clique com o botão direito em *Sistema* e no menu suspenso selecione *Salvar todos os eventos como...*
 
-    - Choose a destination folder, enter the name, click *Save*. Select *Display information for the following languages*. You need to tick the box next to *English*. Click *OK*.
+    - Escolha uma pasta de destino, digite o nome, clique em *Salvar*. Selecione *Exibir informações para os seguintes idiomas*. Você precisa marcar a caixa ao lado de *Inglês*. Clique em *OK*.
 
-Please send the two files that you've recently saved to **support@adguard.com**.
+Por favor, envie os dois arquivos que você salvou recentemente para **support@adguard.com**.
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+O AdGuard tem o compromisso de proteger sua privacidade. Seguimos rigorosamente nossa [Política de Privacidade](https://adguard.com/privacy/windows.html) e não coletamos nenhuma informação privada sobre os usuários. Antes de enviar seus registros para a equipe de suporte, revise o arquivo, pois ele pode conter informações adicionais que você não deseja compartilhar. Se contiver tais informações pessoais, recomendamos que você as exclua primeiro.
 
 :::

@@ -5,27 +5,27 @@ sidebar_position: 8
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文介绍 Mac 版 AdGuard。这是一款多功能广告拦截程序，可在系统级别保护设备。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
 ## In a nutshell
 
-Apple's Mail app now uses a proxy to hide a user's IP address when downloading images from emails.
+Apple 邮件应用现于下载邮件图像时使用代理以隐藏用户的 IP 地址。
 
 ![Mail privacy protection](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_protectMailActivity.jpg)
 
-However, it won't work if there's an active VPN connection. As it treats AdGuard as a VPN, it won't preload images automatically.
+However, it won't work if there's an active VPN connection. 因其视 AdGuard 为 VPN，所以它不会自动预载图像。
 
 Apple explains this issue [here](https://support.apple.com/HT212797).
 
-## In detail
+## 更详细的说明
 
-AdGuard for Mac now uses macOS built-in socket filtering based on the network extensions API. This new and rather buggy mechanism replaced good old Kernel extensions. Over the last 1.5 years, we've reported more than 20(!) bugs to Apple regarding their new filtering method.
+现在 Mac 版 AdGuard 使用基于网络扩展 API 的 macOS 内置的 Socket 过滤。 这种新的漏洞百出的机制取代了老式的内核扩展。 在过去的一年半内，我们向 Apple 报告了超过 20 个（！）关于其新过滤方式的错误。
 
-The network extensions API has a VPN-like configuration with a list of route-like entries. On Big Sur, AdGuard used "split-tunnel" rules to avoid creating the "default route" rule because it causes problems on early Big Sur releases. These problems were solved in Monterey so nothing prevents us from using the "default route" rule.
+网络扩展 API 有一个类似 VPN 的配置，其中包含一个类似路由的条目列表。 On Big Sur, AdGuard used "split-tunnel" rules to avoid creating the "default route" rule because it causes problems on early Big Sur releases. These problems were solved in Monterey so nothing prevents us from using the "default route" rule.
 
-On Monterey, iCloud Private Relay got introduced. Privacy features of Mail.app also use Private Relay servers.
+在 Monterey 上，推出了 iCloud 专用代理。 Privacy features of Mail.app also use Private Relay servers.
 
 As a consequence, AdGuard can't work together with iCloud Private Relay and Mail app privacy features:
 

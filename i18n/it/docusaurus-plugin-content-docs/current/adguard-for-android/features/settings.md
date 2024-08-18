@@ -1,5 +1,5 @@
 ---
-title: Settings
+title: Impostazioni
 sidebar_position: 4
 ---
 

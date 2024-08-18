@@ -13,15 +13,15 @@ This article covers AdGuard for iOS, a multifunctional ad blocker that protects 
 
 ### iPhone
 
-Requires iOS 11.2 or later.
+Requires iOS 13 or later.
 
 ### iPad
 
-Requires iPadOS 11.2 or later.
+Requires iPadOS 13 or later.
 
 ### iPod touch
 
-Requires iOS 11.2 or later.
+Requires iOS 13 or later.
 
 ## AdGuard for iOS installation
 

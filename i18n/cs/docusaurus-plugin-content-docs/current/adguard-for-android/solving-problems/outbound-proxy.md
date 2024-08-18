@@ -89,17 +89,25 @@ V tomto článku uvádíme příklady nastavení některých nejoblíbenějšíc
 
 ### Jak používat AdGuard s NordVPN
 
-1. Otevřete AdGuard a jděte do **Nastavení** → **Filtrování** → **Síť** → **Proxy** → **Proxy server**.
+1. Přihlaste se ke svému účtu NordVPN.
 
-1. Klepněte na tlačítko **Přidat proxy** a zadejte následující údaje:
+1. Přejděte na **Služby** → **NordVPN** → **Ruční nastavení** a nastavte přihlašovací údaje ručně.
 
-    | Pole           | Hodnota                                                                                                                                |
-    | -------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-    | Typ proxy      | *SOCKS5*                                                                                                                               |
-    | Hostitel proxy | *jakýkoli server z [tohoto seznamu](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent)* |
-    | Port proxy     | *1080*                                                                                                                                 |
+1. Na e-mailovou adresu, kterou používáte pro NordVPN, obdržíte ověřovací kód. Použijte ho ve svém účtu NordVPN podle požadavků a poté klepněte na *Použít* a *OK* pro uložení změn.
 
-1. Do polí **Uživatelské jméno** a **Heslo** zadejte své uživatelské jméno a heslo NordVPN.
+![Ruční nastavení](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/outbound-proxy/nordvpn-manual-setup.png)
+
+1. Otevřete aplikaci AdGuard a přejděte do **Nastavení** → **Filtrování** → **Síť** → **Proxy** → **Proxy server** → **Přidat proxy server**.
+
+1. Zadejte následující údaje:
+
+    | Pole           | Hodnota                                                                                                                              |
+    | -------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+    | Typ proxy      | *SOCKS5*                                                                                                                             |
+    | Hostitel proxy | Jakýkoli server z [tohoto seznamu](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent) |
+    | Port proxy     | *1080*                                                                                                                               |
+
+1. Do polí **Uživatelské jméno** a **Heslo** zadejte své přihlašovací údaje pro NordVPN.
 
 1. Klepněte na **Uložit a vybrat**.
 

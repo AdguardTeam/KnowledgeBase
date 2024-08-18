@@ -1,5 +1,5 @@
 ---
-title: How to report websites and apps
+title: Как пожаловаться на сайты и приложения
 sidebar_position: 3
 ---
 

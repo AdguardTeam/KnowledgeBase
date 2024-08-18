@@ -21,93 +21,97 @@ sidebar_position: 9
 
 ## Расширенные настройки
 
-`network.extension.exclude.domains`
+### Network settings
+
+#### `network.extension.exclude.domains`
 
 Перечисленные домены будут исключены из фильтрации в режиме *Сетевого расширения*. Разделяйте значения запятыми или переносом строки.
 
-`network.extension.exclude.ports`
+#### `network.extension.exclude.ports`
 
 Перечисленные порты будут исключены из фильтрации в режиме *Сетевого расширения*. Разделяйте значения запятыми или переносом строки.
 
-`network.extension.route.exclude`
+#### `network.extension.route.exclude`
 
 Перечисленные маршруты будут исключены из фильтрации в режиме *Сетевого расширения*. Используйте IP-адрес или значение CIDR, чтобы задать маршрут. Разделяйте значения запятыми или переносом строки.
 
-`network.extension.http.downgrade.bundleids`
+#### `network.extension.http.downgrade.bundleids`
 
 Здесь можно задать список приложений, для которых протокол HTTP/2 будет понижен до HTTP/1.1 в режиме фильтрации *Сетевое расширение*. Идентификаторы приложений (bundle ID) разделяются запятой или переносом строки.
 
-`network.extension.monterey.force.split.tunnel`
+#### `network.extension.monterey.force.split.tunnel`
 
 Здесь можно запретить AdGuard использовать маршрут по умолчанию, который включён в режиме *Сетевого расширения* на macOS Monterey. AdGuard использует маршрут по умолчанию, чтобы отключить Частный узел iCloud и Защиту конфиденциальности в Почте, так как не может работать с ними одновременно.
 
 Более подробную информацию о проблеме вы найдёте [в этой статье](../icloud-private-relay).
 
-`network.extension.dns.redirect.exclude.bundleids`
+#### `network.extension.dns.redirect.exclude.bundleids`
 
 Здесь можно указать список приложений, осуществляющих DNS-запросы напрямую, а не через DNS-резолвер (например, некоторые VPN-клиенты или приложения с DNS-фильтрацией). Для них *в режиме Сетевого расширения* DNS-фильтрация будет отключена. Идентификаторы приложений (bundle ID) следует разделять запятой или переносом строки.
 
-`network.dns.filter.secure.request`
+#### `network.dns.filter.secure.request`
 
 Перенаправляет безопасные DNS-запросы на локальный DNS-прокси, если он доступен.
 
-`network.https.ocsp.check`
+#### `network.https.ocsp.check`
 
 Установив значение `true`, вы включите проверку отзыва HTTPS-сертификатов.
 
-`network.tcp.keepalive.enabled`
+#### `network.tcp.keepalive.enabled`
 
 Периодически отправляет TCP-пакеты по неактивному соединению, чтобы убедиться в его работоспособности и продлить время ожидания NAT.
 
-`network.tcp.keepalive.interval.seconds`
+#### `network.tcp.keepalive.interval.seconds`
 
 Время простоя в секундах перед отправкой проверки активности. Если указано 0, система будет использовать значение по умолчанию.
 
-`network.tcp.keepalive.timeout.seconds`
+#### `network.tcp.keepalive.timeout.seconds`
 
 Время в секундах, прежде чем отправить ещё одну проверку активности не отвечающему узлу. Если указано 0, будет использоваться значение, установленное системой.
 
-`network.https.ech.enabled`
+#### `network.https.ech.enabled`
 
 Использует локальный DNS-прокси для поиска конфигураций в списках конфигураций ECH. Если такие найдены, шифрует ClientHellos.
 
-`network.https.enforce.certificate.transparency`
+#### `network.https.enforce.certificate.transparency`
 
 Проверяет подлинность всех сертификатов для домена на основе политики прозрачности сертификатов Chrome.
 
-`network.https.filter.http3.enabled`
+#### `network.https.filter.http3.enabled`
 
 Установив значение `true`, вы разрешаете AdGuard фильтровать трафик, передаваемый по протоколу HTTP/3 — последней версии протокола HTTP на базе QUIC.
 
-`network.filtering.localnetwork`
+#### `network.filtering.localnetwork`
 
 Установив значение `true`, вы включите фильтрацию локальной сети.
 
-`network.filtering.localhost`
+#### `network.filtering.localhost`
 
 Установив значение `true`, вы включите фильтрацию loopback-соединений.
 
-`dns.proxy.bootstrap.ips`
+### DNS settings
+
+#### `dns.proxy.bootstrap.ips`
 
 Сюда можно внести IP-адреса DNS-серверов, которые будут использоваться для определения адреса зашифрованного DNS-сервера.
 
-`dns.proxy.fallback.ips`
+#### `dns.proxy.fallback.ips`
 
 Здесь можно указать список IP-адресов DNS-серверов, которые будут использоваться в качестве резервных в случае, есть зашифрованный DNS-сервер не будет отвечать.
 
-`dns.proxy.fallback.on.upstreams.failure.enabled`
+#### `dns.proxy.fallback.on.upstreams.failure.enabled`
 
 Если все обычные upstream-серверы не работают, запросы будут перенаправляться на резервный upstream-сервер.
 
-`dns.proxy.detect.search.domains`
+#### `dns.proxy.detect.search.domains`
 
 Эта опция включает автоопределение домена локальной сети, который будет автоматически перенаправляться на резервный DNS-сервер вместо основного.
 
-`dns.proxy.fallback.domains`
+#### `dns.proxy.fallback.domains`
 
 Здесь можно перечислить домены, для которых будет использоваться резервный DNS-сервер вместо основного.
 
-`dns.proxy.adblockrules.blocking.mode`
+#### `dns.proxy.adblockrules.blocking.mode`
 
 Здесь вы можете указать тип ответа DNS-сервера на заблокированные запросы, соответствующие правилам в стиле блокировщика рекламы.
 
@@ -115,7 +119,7 @@ sidebar_position: 9
 - 1 — отвечать NXDOMAIN
 - 2 — отвечать 0.0.0.0 или адресами, указанными в `dns.proxy.blocking.response.IPv4.address` и/или `dns.proxy.blocking.response.IPv6.address`
 
-`dns.proxy.hostrules.blocking.mode`
+#### `dns.proxy.hostrules.blocking.mode`
 
 Здесь вы можете указать тип ответа DNS-сервера на заблокированные запросы, соответствующие правилам hosts:
 
@@ -123,58 +127,62 @@ sidebar_position: 9
 - 1 — отвечать NXDOMAIN
 - 2 — отвечать 0.0.0.0 или адресами, указанными в `dns.proxy.blocking.response.IPv4.address` и/или `dns.proxy.blocking.response.IPv6.address`
 
-`dns.proxy.blocking.response.IPv4.address`
+#### `dns.proxy.blocking.response.IPv4.address`
 
 Здесь вы можете указать IPv4-адрес, который будет возвращаться в ответ на заблокированные "A" запросы, когда в `dns.proxy.adblockrules.blocking.mode` или в `dns.proxy.hostrules.blocking.mode` выбран тип ответа "ADDRESS".
 
-`dns.proxy.blocking.response.IPv6.address`
+#### `dns.proxy.blocking.response.IPv6.address`
 
 Здесь вы можете указать IPv6-адрес, который будет возвращаться в ответ на заблокированные "AAAA" запросы, когда в `dns.proxy.adblockrules.blocking.mode` или в `dns.proxy.hostrules.blocking.mode` выбран тип ответа "ADDRESS".
 
-`dns.proxy.block.AAAA.requests`
+#### `dns.proxy.block.AAAA.requests`
 
 Здесь вы можете активировать блокировку DNS-запросов IPv6.
 
-`dns.proxy.blocked.response.TTL.in.seconds`
+#### `dns.proxy.blocked.response.TTL.in.seconds`
 
 Здесь вы можете указать значение TTL (время жизни пакета данных в протоколе IP), которое будет возвращено в ответ на заблокированный запрос.
 
-`dns.proxy.parallel.upstream.queries.enabled`
+#### `dns.proxy.parallel.upstream.queries.enabled`
 
 Все upstream-серверы запрашиваются одновременно. Возвращается первый ответ.
 
-`dns.proxy.servfail.on.upstreams.failure.enabled`
+#### `dns.proxy.servfail.on.upstreams.failure.enabled`
 
 Реагирует на сбой пакетом SERVFAIL.
 
-`dns.proxy.http3.enabled`
+#### `dns.proxy.http3.enabled`
 
 Включает HTTP/3 для upstream-серверов DNS-over-HTTPS для ускорения соединения.
 
-`dns.proxy.block.encrypted.client.hello.response`
+#### `dns.proxy.block.encrypted.client.hello.response`
 
 Удаляет параметры Encrypted Client Hello из ответов.
 
-`stealth.antidpi.http.split.fragment.size`
+### Stealth Mode settings
+
+#### `stealth.antidpi.http.split.fragment.size`
 
 Настраивает размер фрагментации HTTP-запроса. Допустимые значения: 1–1500. Если указан недопустимый размер, система будет использовать значение по умолчанию.
 
-`stealth.antidpi.clienthello.split.fragment.size`
+#### `stealth.antidpi.clienthello.split.fragment.size`
 
 Этот параметр определяет размер фрагментации пакетов TCP, что помогает избежать глубокой проверки пакетов (Deep Packet Inspection). Допустимые значения: 1–1500. Если указан недопустимый размер, система будет использовать значение по умолчанию.
 
-`stealth.antidpi.http.space.juggling`
+#### `stealth.antidpi.http.space.juggling`
 
 Добавляет дополнительный пробел между методом HTTP и URL и удаляет пробел после поля “Host:”.
 
-`stealth.antidpi.split.delay.millisecond`
+#### `stealth.antidpi.split.delay.millisecond`
 
 Здесь можно указать задержку (в миллисекундах) после отправки первого фрагмента, если выполняется фрагментация.
 
-`subscription.link.interception.userscript`
+### Subscription link interception settings (userscripts and filters)
+
+#### `subscription.link.interception.userscript`
 
 Активируйте эту функцию, если хотите, чтобы AdGuard автоматически перехватывал URL-адреса пользовательских скриптов и открывал диалоговое окно установки.
 
-`subscription.link.interception.filter`
+#### `subscription.link.interception.filter`
 
 Активируйте эту функцию, если хотите, чтобы AdGuard автоматически перехватывал URL-адреса подписки (например, abp:subscribe) и открывал диалоговое окно установки пользовательского фильтра.

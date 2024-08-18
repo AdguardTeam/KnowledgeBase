@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for Mac」についてです。 実際にどのように動作するか確認するには、[AdGuard アプリをダウンロードしてください](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -29,12 +29,12 @@ Sierra、Mojave、Catalinaのオペレーティングシステムで AdGuard for
 
 1. 「**ターミナル**」を開き、`ls -@lOae /private/var/db/KernelExtensionManagement`というコマンドを入力する
 1. （以下のスクリーンショットのように）`restricted` フラグがなし（-）になっていることを確認してください。 ![コマンドの例 *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/restricted-flag.jpg)
-1. Reboot your Mac in recovery mode.
-1. Open **Utilities** → **Terminal**.
-1. Enter `csrutil disable`.
-1. Enter administrator password.
-1. Reboot your Mac.
-1. Open **Terminal** and enter the following command: `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
-1. Reboot your Mac in recovery mode.
-1. Open **Utilities** → **Terminal** → Enter `csrutil enable` → Enter administrator password → Reboot your Mac.
-1. Enable AdGuard protection.
+1. Macをリカバリーモードで再起動する
+1. **ユーティリティ** → **ターミナル** を開く
+1. `csrutil disable` と入力する
+1. 管理者パスワードを入力する
+1. Macを再起動する
+1. 「**ターミナル**」を開き、 `sudo chflags restricted /private/var/db/KernelExtensionManagement` というコマンドを入力する
+1. Macをリカバリーモードで再起動する
+1. 「**ユーティリティ**」→「**ターミナル**」→ `csrutil enable` と入力する → 管理者パスワードを入力する → Macを再起動する
+1. AdGuard 保護をオンにする
