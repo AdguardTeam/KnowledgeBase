@@ -3972,11 +3972,12 @@ AdGuard supports a lot of different scriptlets. In order to achieve cross-blocke
 **Syntax**
 
 ```text
-rule = [domains] "#%#//scriptlet(" scriptletName arguments ")"
+[domains]#%#//scriptlet(name[, arguments])
 ```
 
-- **`scriptletName`** — required, a name of the scriptlet from AdGuard's Scriptlets library
-- **`arguments`** — optional, a list of `string` arguments (no other types of arguments are supported)
+- `domains` — optional, a list of domains where the rule should be applied;
+- `name` — required, a name of the scriptlet from AdGuard Scriptlets library;
+- `arguments` — optional, a list of `string` arguments (no other types of arguments are supported).
 
 **Examples**
 
@@ -3986,6 +3987,45 @@ example.org#%#//scriptlet("abort-on-property-read", "alert")
 
 This rule will be applied to `example.org` and subdomains pages and will execute the `abort-on-property-read` scriptlet with the `alert` parameter.
 
+**Exceptions**
+
+Exception rules can disable some scriptlets on particular domains. The syntax for exception scriptlet rules is similar to normal scriptlet rules but uses `#@%#` instead of `#%#`:
+
+```text
+[domains]#@%#//scriptlet([name[, arguments]])
+```
+
+- `domains` — optional, a list of domains where the rule should be applied;
+- `name` — optional, a name of the scriptlet to except from the applying;
+  if not set, all scriptlets will not be applied;
+- `arguments` — optional, a list of `string` arguments to match the same blocking rule and disable it.
+
+For example, if you want to disable the rule
+
+```adblock
+example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
+```
+
+for the `example.com` domain, the following exception rules could be used:
+
+- to disable a particular scriptlet only:
+
+```adblock
+example.com#@%#//scriptlet("abort-on-property-read", "alert")
+```
+
+- to disable all `abort-on-property-read` scriptlets for `example.com`:
+
+```adblock
+example.com#@%#//scriptlet("abort-on-property-read")
+```
+
+- to disable all scriptlets for `example.com`:
+
+```adblock
+example.com#@%#//scriptlet()
+```
+
 Learn more about [how to debug scriptlets](#debug-scriptlets).
 
 More information about scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
@@ -3993,6 +4033,8 @@ More information about scriptlets can be found [on GitHub](https://github.com/Ad
 :::info Compatibility
 
 Scriptlet rules are not supported by AdGuard Content Blocker.
+
+The full syntax of scriptlet exception rules is supported by AdGuard for Windows, Mac and Android with [CoreLibs] v1.16 or later and AdGuard Browser Extension for Chrome, Firefox and Edge with [TSUrlFilter] v3.0 or later. Previous versions only support scriptlet exception rules that disable specific scriptlets.
 
 :::
 
