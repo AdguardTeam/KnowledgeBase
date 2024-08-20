@@ -9,6 +9,12 @@ sidebar_position: 4
 
 :::
 
+:::note
+
+系统日志记录中提供的数据和/或文件将根据 [AdGuard 隐私政策](https://adguard.com/en/privacy.html)处理。
+
+:::
+
 如您在安装 AdGuard 期间发生问题，可以发送技术请求给我们的支持团队，但他们会要求您收集并发送 AdGuard 安装日志。 在这种情况下，您需要执行以下操作：
 
 1. 从开始菜单选择「*运行*」命令或按按键组合「*Win + R*」。

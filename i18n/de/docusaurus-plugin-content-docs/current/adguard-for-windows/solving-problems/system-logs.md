@@ -9,6 +9,12 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 :::
 
+:::note
+
+Daten und/oder Dateien, die in Systemprotokollen enthalten sind, werden gemäß der [Datenschutzerklärung von AdGuard](https://adguard.com/de/privacy.html) verarbeitet.
+
+:::
+
 To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need Windows system log files. Windows event logs contain records about all errors that occurr with the installed software, including AdGuard. Nachfolgend finden Sie eine kurze Anleitung, wie Sie die Protokolldateien abrufen und bei Bedarf an unseren Kundenservice senden können.
 
 1. Press *Win + R*
@@ -36,3 +42,9 @@ To analyze and diagnose different problems that may potentially arise, the AdGua
     - Choose a destination folder, enter the name, click *Save*. Select *Display information for the following languages*. You need to tick the box next to *English*. Klicken Sie auf *OK*.
 
 Bitte senden Sie die beiden Dateien, die Sie soeben gespeichert haben, an **support@adguard.com**.
+
+:::note
+
+AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+
+:::

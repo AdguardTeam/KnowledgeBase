@@ -1,11 +1,11 @@
 ---
-title: Advanced Settings guide
+title: Guía de configuración avanzada
 sidebar_position: 9
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Mac, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,168 +13,176 @@ This article is about AdGuard for Mac, a multifunctional ad blocker that protect
 
 :::caution
 
-Changing *Advanced Settings* may cause problems with AdGuard's performance, break the Internet connection, or compromise your security and privacy. Make changes to this section only if you are sure of what you are doing or our support team has asked you to do it.
+Cambiar la *Configuración avanzada* puede causar problemas con el rendimiento de AdGuard, interrumpir la conexión a Internet o comprometer tu seguridad y privacidad. Realiza cambios en esta sección solo si estás seguro de lo que estás haciendo o si nuestro equipo de soporte te lo ha pedido.
 
 :::
 
-To find *Advanced Settings*, open AdGuard, click the gear icon, select *Advanced*, then select *Advanced Settings*.
+Para encontrar *Configuración avanzada*, abre AdGuard, haz clic en el ícono de ajustes, selecciona *Avanzada*, luego selecciona *Configuración avanzada*.
 
 ## Configuración avanzada
 
-`network.extension.exclude.domains`
+### Network settings
 
-The listed domains will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
+#### `network.extension.exclude.domains`
 
-`network.extension.exclude.ports`
+Los dominios enumerados se excluirán del filtrado en el modo *Extensión de red*. Utiliza una coma o un salto de línea para separar valores.
 
-The listed ports will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
+#### `network.extension.exclude.ports`
 
-`network.extension.route.exclude`
+Los puertos listados se excluirán del filtrado en el modo *Extensión de red*. Utiliza una coma o un salto de línea para separar valores.
 
-The listed routes will be excluded from filtering in the *Network Extension* mode. Set routes using an IP address or destination CIDR. Separate values with commas or line breaks.
+#### `network.extension.route.exclude`
 
-`network.extension.http.downgrade.bundleids`
+Las rutas enumeradas se excluirán del filtrado en el modo *Extensión de red*. Establece rutas utilizando una dirección IP o CIDR de destino. Separa los valores con comas o saltos de línea.
 
-Here you can specify a list of applications for which the HTTP/2 protocol will be downgraded to HTTP/1.1 in the *Network Extension* filtering mode. The bundle ID should be separated by a comma or a line break.
+#### `extensión.de.red.http.downgrade.bundleids`
 
-`network.extension.monterey.force.split.tunnel`
+Aquí puedes especificar una lista de aplicaciones para las cuales el protocolo HTTP/2 se degradará a HTTP/1.1 en el modo de filtrado *Extensión de red*. El ID del paquete debe estar separado por una coma o un salto de línea.
 
-Here you can prohibit AdGuard from using the "default route" which is enabled by default in the *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, as it cannot operate in unison with them.
+#### `network.extension.monterey.force.split.tunnel`
 
-You will find more information about the problem [in this article](../icloud-private-relay).
+Aquí puedes prohibir que AdGuard utilice la "ruta predeterminada" que está habilitada en el modo *Extensión de red* en macOS Monterey. AdGuard utiliza la "ruta predeterminada" para desactivar iCloud Private Relay y Protect Mail Activity, ya que no puede funcionar al unísono con ellos.
 
-`network.extension.dns.redirect.exclude.bundleids`
+Encontrarás más información sobre el problema [en este artículo](../icloud-private-relay).
 
-Here you can specify a list of applications that make DNS queries directly not via system DNS resolver (for example, some VPN clients or DNS filtering applications). DNS filtering will be disabled for them in the *Network Extension mode*. The bundle IDs should be separated by a comma or line break.
+#### `network.extension.dns.redirect.exclude.bundleids`
 
-`network.dns.filter.secure.request`
+Aquí puedes especificar una lista de aplicaciones que realizan consultas de DNS directamente, no a través del sistema de resolución de DNS (por ejemplo, algunos clientes VPN o aplicaciones de filtrado de DNS). El filtrado DNS se desactivará para ellos en el *Modo Extensión de red*. Los IDs de paquete deben estar separados por una coma o un salto de línea.
 
-Redirects secure DNS requests to a local DNS proxy, if there is one available.
+#### `network.dns.filter.secure.request`
 
-`network.https.ocsp.check`
+Redirige las solicitudes de DNS seguras a un proxy DNS local, si hay uno disponible.
 
-By setting `true`, you enable HTTPS certificate revocation checking.
+#### `network.https.ocsp.check`
 
-`network.tcp.keepalive.enabled`
+Al configurar `true`, habilita la verificación de revocación de certificados HTTPS.
 
-Periodically sends TCP packets over an idle connection to ensure that it remains active and to renew NAT timeouts.
+#### `network.tcp.keepalive.enabled`
 
-`network.tcp.keepalive.interval.seconds`
+Envía periódicamente paquetes TCP a través de una conexión inactiva para asegurar que permanezca activa y renovar los tiempos de espera de NAT.
 
-Idle time, in seconds, before sending a keepalive probe. If 0 is specified, the system will use the default value.
+#### `network.tcp.keepalive.interval.seconds`
 
-`network.tcp.keepalive.timeout.seconds`
+Tiempo de inactividad, en segundos, antes de enviar una sonda de mantenimiento de actividad. Si se especifica 0, el sistema utilizará el valor predeterminado.
 
-Time, in seconds, before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
+#### `network.tcp.keepalive.timeout.seconds`
 
-`network.https.ech.enabled`
+Tiempo, en segundos, antes de enviar otra sonda de mantenimiento de actividad a un par que no responde. Si se especifica 0, se utilizará el valor seleccionado por el sistema.
 
-Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, encrypts ClientHellos.
+#### `network.https.ech.enabled`
 
-`network.https.enforce.certificate.transparency`
+Utiliza un proxy DNS local para buscar configuraciones en las listas de configuración de ECH. Si se encuentra, encripta ClientHellos.
 
-Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy.
+#### `network.https.enforce.certificate.transparency`
 
-`network.https.filter.http3.enabled`
+Verifica la autenticidad de todos los certificados para el dominio según la política de transparencia de certificados de Chrome.
 
-By setting `true`, you allow AdGuard to filter traffic sent over HTTP/3, the latest version of the HTTP protocol based on QUIC.
+#### `network.https.filter.http3.enabled`
 
-`network.filtering.localnetwork`
+Al configurar `true`, permites que AdGuard filtre el tráfico enviado a través de HTTP/3, la última versión del protocolo HTTP basado en QUIC.
 
-By setting `true`, you enable local network filtering.
+#### `network.filtering.localnetwork`
 
-`network.filtering.localhost`
+Al configurar `true`, habilita el filtrado de red local.
 
-By setting `true`, you enable LoopBack filtering.
+#### `network.filtering.localhost`
 
-`dns.proxy.bootstrap.ips`
+Al configurar `true`, habilita el filtrado LoopBack.
 
-Here you can enter the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server.
+### DNS settings
 
-`dns.proxy.fallback.ips`
+#### `dns.proxy.bootstrap.ips`
 
-Here you can specify a list of IP addresses of DNS servers that will be used as backups in case the encrypted DNS server fails to respond.
+Aquí, puedes ingresar las direcciones IP de los servidores DNS que se utilizarán para determinar la dirección del servidor DNS cifrado.
 
-`dns.proxy.fallback.on.upstreams.failure.enabled`
+#### `dns.proxy.fallback.ips`
 
-Normal queries will be redirected to a fallback upstream if all normal upstreams fail.
+Aquí, puedes especificar una lista de direcciones IP de servidores DNS que se utilizarán como copias de seguridad en caso de que el servidor DNS cifrado no responda.
 
-`dns.proxy.detect.search.domains`
+#### `dns.proxy.fallback.on.upstreams.failure.enabled`
 
-This option enables automatic detection of the local network domain, which will be automatically redirected to the fallback DNS server instead of the main DNS server.
+Las consultas normales se redirigirán a un upstream de fallback si fallan todos los upstreams normales.
 
-`dns.proxy.fallback.domains`
+#### `dns.proxy.detect.search.domains`
 
-Here you can list domains for which the fallback DNS server will be used instead of the main DNS server.
+Esta opción permite la detección automática del dominio de la red local, que será redirigido automáticamente al servidor DNS alternativo en lugar del servidor DNS principal.
 
-`dns.proxy.adblockrules.blocking.mode`
+#### `dns.proxy.fallback.domains`
 
-Here you can specify the type of DNS server response to blocked requests, corresponding to ad-blocker-style rules.
+Aquí, puedes enumerar los dominios para los que se utilizará el servidor DNS alternativo en lugar del servidor DNS principal.
 
-- 0 — respond with REFUSED
-- 1 — respond with NXDOMAIN
-- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+#### `dns.proxy.adblockrules.blocking.mode`
 
-`dns.proxy.hostrules.blocking.mode`
+Aquí, puedes especificar el tipo de respuesta del servidor DNS a las solicitudes bloqueadas, correspondientes a reglas de estilo bloqueador de anuncios.
 
-Here you can specify the type of DNS server response to blocked requests, corresponding to hosts rules:
+- 0 - responder con RECHAZADO
+- 1 - responder con NXDOMAIN
+- 2 - responder con 0.0.0.0 o las direcciones especificadas en `dns.proxy.blocking` `.response.IPv4.address` y/o `dns.proxy.blocking.response.IPv6.address`
 
-- 0 — respond with REFUSED
-- 1 — respond with NXDOMAIN
-- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+#### `dns.proxy.hostrules.blocking.mode`
 
-`dns.proxy.blocking.response.IPv4.address`
+Aquí, puedes especificar el tipo de respuesta del servidor DNS a las solicitudes bloqueadas, correspondiente a las reglas del host:
 
-Here you can specify the IPv4 address that will be returned in response to blocked "A" requests when `dns.proxy.adblockrules.blocking.mode` or `dns.proxy.hostrules.blocking.mode` is set to the response type "ADDRESS".
+- 0 - responder con RECHAZADO
+- 1 - responder con NXDOMAIN
+- 2 - responder con 0.0.0.0 o las direcciones especificadas en `dns.proxy.blocking` `.response.IPv4.address` y/o `dns.proxy.blocking.response.IPv6.address`
 
-`dns.proxy.blocking.response.IPv6.address`
+#### `dns.proxy.blocking.response.IPv4.address`
 
-Here you can specify the IPv6 address that will be returned in response to blocked "AAAA" requests when `dns.proxy.adblockrules.blocking.mode` or `dns.proxy.hostrules.blocking.mode` is set to the response type "ADDRESS".
+Aquí puedes especificar la dirección IPv4 que se devolverá en respuesta a las solicitudes "A" bloqueadas cuando `dns.proxy.adblockrules.blocking.mode` o `dns.proxy.hostrules.blocking.mode` está configurado en el tipo de respuesta "ADDRESS".
 
-`dns.proxy.block.AAAA.requests`
+#### `dns.proxy.blocking.response.IPv6.address`
 
-Here you can enable IPv6 DNS query blocking.
+Aquí puedes especificar la dirección IPv6 que se devolverá en respuesta a las solicitudes "AAAA" bloqueadas cuando `dns.proxy.adblockrules.blocking.mode` o `dns.proxy.hostrules.blocking.mode` está configurado en el tipo de respuesta "ADDRESS".
 
-`dns.proxy.blocked.response.TTL.in.seconds`
+#### `dns.proxy.block.AAAA.requests`
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+Aquí puedes habilitar el bloqueo de consultas DNS IPv6.
 
-`dns.proxy.parallel.upstream.queries.enabled`
+#### `dns.proxy.blocked.response.TTL.in.seconds`
 
-All upstreams are queried simultaneously. The first response is returned.
+Aquí puedes especificar el valor TTL (tiempo de vida) que se devolverá en respuesta a una solicitud bloqueada.
 
-`dns.proxy.servfail.on.upstreams.failure.enabled`
+#### `dns.proxy.parallel.upstream.queries.enabled`
 
-Responds to upstream failure with a SERVFAIL packet.
+Todos los upstreams se consultan simultáneamente. Se devuelve la primera respuesta.
 
-`dns.proxy.http3.enabled`
+#### `dns.proxy.servfail.on.upstreams.failure.enabled`
 
-Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection.
+Responde a una falla de upstream con un paquete SERVFAIL.
 
-`dns.proxy.block.encrypted.client.hello.response`
+#### `dns.proxy.http3.enabled`
 
-Removes the Encrypted Client Hello parameters from responses.
+Habilita HTTP/3 para servidores DNS de subida con DNS mediante HTTPS para acelerar la conexión.
 
-`stealth.antidpi.http.split.fragment.size`
+#### `dns.proxy.block.encrypted.client.hello.response`
 
-Adjusts the size of the HTTP request fragmentation. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
+Elimina los parámetros Encrypted Client Hello de las respuestas.
 
-`stealth.antidpi.clienthello.split.fragment.size`
+### Stealth Mode settings
 
-This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
+#### `stealth.antidpi.http.split.fragment.size`
 
-`stealth.antidpi.http.space.juggling`
+Ajusta el tamaño de la fragmentación de la solicitud HTTP. Valores válidos: 1–1500. Si se especifica un tamaño no válido, el sistema utilizará el valor predeterminado.
 
-Adds extra space between the HTTP method and the URL and removes space after the "Host:" field.
+#### `stealth.antidpi.clienthello.split.fragment.size`
 
-`stealth.antidpi.split.delay.millisecond`
+Esta opción especifica el tamaño de la fragmentación de paquetes TCP, lo que ayuda a evitar una inspección profunda de paquetes. Valores válidos: 1–1500. Si se especifica un tamaño no válido, el sistema utilizará el valor predeterminado.
 
-Here you can specify the delay, in milliseconds, after sending the first fragment, if fragmentation is performed.
+#### `stealth.antidpi.http.space.juggling`
 
-`subscription.link.interception.userscript`
+Agrega espacio adicional entre el método HTTP y la URL y elimina espacio después del campo "Host:".
 
-Activate this feature if you want AdGuard to automatically intercept the URLs of userscripts and open the installation window.
+#### `stealth.antidpi.split.delay.millisecond`
 
-`subscription.link.interception.filter`
+Aquí puedes especificar el retraso, en milisegundos, después de enviar el primer fragmento, si se realiza la fragmentación.
 
-Activate this feature if you want AdGuard to automatically intercept subscription URLs (for example, abp:subscribe, etc.) and open the custom filter setup window.
+### Subscription link interception settings (userscripts and filters)
+
+#### `subscription.link.interception.userscript`
+
+Activa esta función si deseas que AdGuard intercepte automáticamente las URL de los scripts de usuario y abre la ventana de instalación.
+
+#### `subscription.link.interception.filter`
+
+Activa esta función si deseas que AdGuard intercepte automáticamente las URL de suscripción (por ejemplo, abp:subscribe, etc.) y abre la ventana de configuración del filtro personalizado.

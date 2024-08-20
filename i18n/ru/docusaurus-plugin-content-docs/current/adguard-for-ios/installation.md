@@ -13,15 +13,15 @@ sidebar_position: 2
 
 ### iPhone
 
-iOS 11.2 и выше.
+Requires iOS 13 or later.
 
 ### iPad
 
-iPadOS 11.2 и выше.
+Requires iPadOS 13 or later.
 
 ### iPod touch
 
-iOS 11.2 и выше.
+Requires iOS 13 or later.
 
 ## Установка AdGuard для iOS
 

@@ -1,52 +1,52 @@
 ---
-title: How to block push notifications
+title: Como bloquear notificações push
 sidebar_position: 9
 ---
 
-If you're seeing annoying ads and popups in the bottom right corner of your screen, they're probably push notifications from your browser. While ad blockers can't stop them, you can easily disable them through your browser settings. Check out the step-by-step guide below to turn off these push notifications.
+Se você estiver vendo anúncios e pop-ups irritantes no canto inferior direito da tela, elas provavelmente são notificações push do seu navegador. Embora os bloqueadores de anúncios não possam impedi-las, você pode desativá-las facilmente nas configurações do navegador. Confira o guia passo a passo abaixo para desativar essas notificações push.
 
-## In Google Chrome
+## No Google Chrome
 
-1. Click the three vertical dots in the top right corner of the browser and select _Settings_.
-2. Go to _Privacy and security_ → _Site settings_ → _Notifications_.
-3. In _Default behaviour_, select _Don't allow sites to send notifications_. Alternatively, you can manage site-specific settings in _Customised behaviours_.
+1. Clique nos três pontos verticais no canto superior direito do navegador e selecione _Configurações_.
+2. Vá para _Privacidade e segurança_ → _Configurações do site_ → _Notificações_.
+3. Em _Comportamento padrão_, selecione _Não permitir que sites enviem notificações_. Como alternativa, você pode gerenciar configurações específicas do site em _Comportamentos personalizados_.
 
-## In Firefox
+## No Firefox
 
-1. Click the three horizontal lines in the top right corner of the navigation bar, then select _Settings_.
-2. Select _Privacy & Security_ from the menu on the left.
-3. Scroll down to the section _Permissions_, then click the button _Settings_ next to _Notifications_.
-4. To stop notifications on all previously approved websites, click _Remove All Websites_. Alternatively, you can manage notifications for each website individually.
-5. You can also select _Block new requests asking to allow notifications_ to stop all push notifications requests at once.
-6. Click _Save Changes_.
+1. Clique nas três linhas horizontais no canto superior direito da barra de navegação e selecione _Configurações_.
+2. Selecione _Privacidade e Segurança_ no menu à esquerda.
+3. Role para baixo até a seção _Permissões_ e clique no botão _Configurações_, ao lado de _Notificações_.
+4. Para interromper as notificações em todos os sites aprovados anteriormente, clique em _Remover todos os sites_. Como alternativa, você pode gerenciar notificações para cada site individualmente.
+5. Você também pode selecionar _Bloquear novas solicitações que pedem permissão para notificações_ para interromper todas as solicitações de notificações push de uma só vez.
+6. Clique em _Salvar alterações_.
 
 ## No Safari
 
-1. Click _Safari_ in the menu bar → _System Settings_.
-2. Go to the _Websites_ tab.
-3. Select _Notifications_ from the left sidebar.
-4. To block all requests, uncheck _Allow websites to ask for permission to send notifications_. Alternatively, select _Deny_ for each site you want to block individually.
+1. Clique em _Safari_ na barra de menu → _Configurações do sistema_.
+2. Vá para a aba _Sites_.
+3. Selecione _Notificações_ na barra lateral esquerda.
+4. Para bloquear todas as solicitações, desmarque _Permitir que sites solicitem permissão para enviar notificações_. Como alternativa, selecione _Negar_ para cada site que você deseja bloquear individualmente.
 
-## In Microsoft Edge
+## No Microsoft Edge
 
-1. Click the three dots menu in the upper-right corner and select _Settings_.
-2. In the left sidebar, click _Cookies and site permissions_.
-3. Scroll down and click _Notifications_ under _Site permissions_.
-4. Toggle off _Ask before sending_ to block all browser notifications within Microsoft Edge.
-5. Alternatively, add domains to the _Block_ section for each site you want to block.
+1. Clique no menu de três pontos no canto superior direito e selecione _Configurações_.
+2. Na barra lateral esquerda, clique em _Cookies e permissões do site_.
+3. Role para baixo e clique em _Notificações_, na seção _Permissões do site_.
+4. Desative _Perguntar antes de enviar_ para bloquear todas as notificações do navegador no Microsoft Edge.
+5. Como alternativa, adicione domínios à seção _Bloquear_ para cada site que você deseja bloquear.
 
-## Blocking push notifications with AdGuard
+## Bloqueando notificações push com AdGuard
 
-To avoid similar ads in the future, you can also block push notifications directly from the AdGuard apps.
+Para evitar anúncios semelhantes no futuro, você também pode bloquear notificações push diretamente dos aplicativos AdGuard.
 
-### On Windows
+### No Windows
 
-1. Open AdGuard. Go to _Settings_ → _Stealth Mode_.
-2. Scroll down to the _Browser API_ section.
-3. Enable _Block Push API_.
+1. Abra o AdGuard. Vá para _Configurações_ → _Modo Invisível_.
+2. Role para baixo até a seção _API do navegador_.
+3. Ative _Bloquear a API Push_.
 
-### On Mac
+### No Mac
 
-1. Open AdGuard. Go to _Preferences_.
-2. In the _Stealth Mode_ tab, go to _Browser API_.
-3. Enable _Block Push API_.
+1. Abra o AdGuard. Vá para _Preferências_.
+2. Na aba _Modo Invisível_, vá para _API do navegador_.
+3. Ative _Bloquear a API Push_.

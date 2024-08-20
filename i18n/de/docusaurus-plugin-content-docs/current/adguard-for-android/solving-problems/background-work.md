@@ -27,7 +27,27 @@ Anstatt **Automatischer Start von Apps** komplett zu deaktivieren, können Sie a
 
 Xiaomi-Geräte (und insbesondere MIUI-Geräte) gehören zu den problematischsten Geräten, wenn es um Hintergrundaufgaben geht. Sie sind dafür bekannt, dass sie Hintergrundprozesse einschränken und nicht standardmäßige Berechtigungen haben, und obendrein fehlt eine angemessene Dokumentation. Manchmal funktionieren Apps auf Xiaomi-Telefonen einfach nicht richtig und es gibt wenig, was man dagegen tun kann. Im Folgenden finden Sie einige Maßnahmen, die Sie durchführen können, wenn Sie Probleme mit den Hintergrundfunktionen von AdGuard auf verschiedenen Xiaomi-Geräten haben.
 
-### MIUI 12.0.8+
+### MIUI 13+ and HyperOS
+
+Depending on the MIUI and HyperOS versions, there are two ways to change the battery optimization settings on your phone and block ads more efficiently.
+
+Option 1
+
+1. Go to **Settings** → **Apps** → **Permissions** → **Background autostart** and allow AdGuard to run in the background
+
+1. Return to **Settings** → **Apps** → **Manage apps** → **AdGuard** and uncheck **Pause app activity if unused**
+
+1. Go to **Battery saver** and tap **No restrictions**
+
+Option 2
+
+1. Go to **Settings** → **Apps** → **Manage apps** → **AdGuard** and enable **Autostart**
+
+1. Go to **Battery saver** and tap **No restrictions**
+
+Fertig! You have successfully set up AdGuard to work in the background.
+
+### MIUI 12.0.8
 
 Damit Ihre AdGuard-App erfolgreich im Hintergrund läuft, gehen Sie wie folgt vor:
 

@@ -15,6 +15,6 @@ sidebar_position: 10
 
 Windows 版 AdGuard 有两个特定设置：「*使用重定向驱动模式*」和「*过滤 localhost 连接*」。 默认情况下，第一个处于禁用状态，第二个处于启用状态。 如果在设备上同时启用 AdGuard 广告拦截程序和 AdGuard VPN，则更改任何这些设置都将不可避免地破坏 AdGuard 的过滤功能。
 
-Changing these settings is only necessary to resolve issues related to the simultaneous operation of AdGuard Ad Blocker and network-level apps such as antiviruses, VPNs, and network filters. 如果有用户需要更改上述设置的默认状态，但仍希望 AdGuard 广告拦截程序和 AdGuard VPN 同时正确工作，请[在 GitHub 上创建一个问题](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose)，以便我们为您提供帮助。
+只有在解决与 AdGuard 广告拦截程序和网络级应用程序（如防病毒软件、VPN 和网络过滤器）同时运行有关的问题时，才有必要更改这些设置。 如果有用户需要更改上述设置的默认状态，但仍希望 AdGuard 广告拦截程序和 AdGuard VPN 同时正确工作，请[在 GitHub 上创建一个问题](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose)，以便我们为您提供帮助。
 
 我们目前正在努力克服上述应用程序同时工作的限制。

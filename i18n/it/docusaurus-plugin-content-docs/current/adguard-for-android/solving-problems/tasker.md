@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -144,6 +144,6 @@ Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiv
 
 To perform a task without showing a toast, add an additional EXTRA `quiet: true`
 
-### Example
+### Esempio
 
 ![Automation *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)

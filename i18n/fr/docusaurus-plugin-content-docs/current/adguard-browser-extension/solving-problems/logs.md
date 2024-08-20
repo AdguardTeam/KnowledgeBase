@@ -51,9 +51,13 @@ sidebar_position: 1
 
 ## Envoi des journaux
 
-> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/browser-extension.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+:::note
 
-Maintenant que vous avez collecté les journaux, veuillez suivre ces étapes pour les soumettre à notre équipe de développement :
+AdGuard s'engage à protéger votre vie privée. We strictly follow our [Privacy Policy](https://adguard.com/privacy/browser-extension.html) and do not collect any private information about users. Avant d'envoyer vos journaux à l'équipe d'assistance, veuillez consulter le fichier car il peut contenir des informations supplémentaires que vous ne souhaitez pas partager. S'il contient de telles informations personnelles, nous vous recommandons de les supprimer au préalable.
 
-1. Signalez le bug sur [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
-2. Envoyez votre archive avec les journaux et la durée de lecture à `devteam@adguard.com` et ajoutez un lien vers votre problème GitHub. Vous pouvez également télécharger l'archive sur Google Drive et y ajouter le lien au lieu de joindre le fichier.
+:::
+
+Now that you have collected the logs, please follow these steps to submit them to our development team:
+
+1. Report the bug on [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
+2. Send your archive with logs and playback time to `devteam@adguard.com` and add a link to your GitHub issue. You can also upload the archive to Google Drive and add the link to it instead of attaching the file.

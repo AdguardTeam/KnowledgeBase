@@ -25,12 +25,13 @@ sidebar_position: 2
 
 此为 Windows 版 AdGuard 的主模块，可从用户访问的网站上和设备上安装的应用内移除广告。 要过来广告和威胁隐私的内容，如横幅，弹窗或跟踪器，AdGuard 使用不同的过滤器：用[特定语法](/general/ad-filtering/create-own-filters)编写的有类似用途的规则组。 要了解什么是过滤器及其工作原理，请阅读[本文](/general/ad-filtering/how-ad-blocking-works)。
 
-![广告拦截器 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/ad-blocker.png)
+![Ad Blocker \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
 在广告拦截器模块中，可以进行以下设置：
 
 - 开启自动激活特定语言的过滤器
 - 禁用[搜索广告和自我推销](/general/ad-filtering/search-ads)拦截
+- disable ads in the Start menu on Windows 11,
 - 激活预安装的过滤器，如「AdGuard 基础过滤器」
 - 点击「添加过滤器」按钮从列表上安装过滤器或添加自定义过滤器
 - 使用「过滤器编辑器」按钮更改现有规则组

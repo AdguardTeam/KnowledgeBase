@@ -1,11 +1,11 @@
 ---
-title: Settings
+title: Paramètres
 sidebar_position: 4
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -67,11 +67,11 @@ Userscripts are mini-programs written in JavaScript that extend the functionalit
 
 AdGuard Extra is a custom userscript that blocks complex ads and mechanisms that reinject ads to websites.
 
-#### Disable AMP
+#### Désactiver AMP
 
 Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) on the Google search results page.
 
-### Network
+### Réseau
 
 #### Filtrage HTTPS
 

@@ -17,7 +17,7 @@ Filter lists are sets of rules written using a [special syntax](/general/ad-filt
 
 We recommend enabling the following filters:
 
-- AdGuard Base filter
+- AdGuard Alap szűrő
 - AdGuard Tracking Protection filter and AdGuard URL Tracking filter
 - AdGuard Annoyances filter
 - Filters for your language

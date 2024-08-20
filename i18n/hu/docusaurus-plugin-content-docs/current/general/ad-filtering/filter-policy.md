@@ -3,291 +3,291 @@ title: AdGuard filter policy
 sidebar_position: 6
 ---
 
-At AdGuard, we’ve long followed certain principles in making our filters, which, along with filter descriptions, are outlined below as part of our filtering policy.
+Az AdGuard-nál már régóta követünk bizonyos elveket a szűrők készítése során, amelyeket a szűrők leírásával együtt az alábbiakban ismertetünk szűrési irányelvünk részeként.
 
-## Common criteria
+## Közös kritériumok
 
-These criteria are equally applied to the rules of all filters.
+Ezek a kritériumok minden szűrő szabályaira egyformán vonatkoznak.
 
-- Rules for a specific site will only be added if there is sufficient traffic. Traffic is determined by public statistics (if available) or indirect indicators, such as the number of subscribers on social networks. A site’s traffic is considered sufficient if it reaches 100,000 visits per month. We will consider adding a rule for a site that is not as popular, but the final decision rests with filter developers. Sites with low traffic should still be checked for third-party analytics and advertising networks
-- The decision about content farms (websites that produce large amounts of content primarily aimed at achieving high visibility in search results and generating advertising revenue) is made by filter developers depending on the quality of the content
+- Egy adott webhelyre vonatkozó szabályok csak megfelelő forgalom esetén lesznek hozzáadva. A forgalmat nyilvános statisztikák (ha rendelkezésre állnak) vagy közvetett mutatók, például a közösségi hálózatokon feliratkozók száma alapján határozzák meg. Egy webhely forgalma akkor tekinthető elegendőnek, ha eléri a havi 100 000 látogatást. Megfontoljuk egy szabály hozzáadását egy kevésbé népszerű webhelyhez, de a végső döntést a szűrők fejlesztői hozzák meg. Az alacsony látogatottságú oldalakat még mindig ellenőrizni kell a harmadik féltől származó elemző és reklámhálózatok tekintetében
+- A tartalomfarmokról (olyan webhelyek, amelyek nagy mennyiségű tartalmat állítanak elő, elsősorban a keresési eredményekben való jó láthatóság elérése és a hirdetési bevételek elérése érdekében) a szűrőfejlesztők döntenek a tartalom minőségétől függően
 
-Quality requirements for filtering rules:
+A szűrési szabályokra vonatkozó minőségi követelmények:
 
-- Rules should not negatively impact the websites in terms of performance
-- Unblocking rules must be as specific as possible to avoid unblocking anything unnecessary
-- JavaScript rules should be used as sparingly as possible and only if blocking ads is impossible without them
+- A szabályok nem befolyásolhatják negatívan a weboldalak teljesítményét
+- A feloldási szabályoknak a lehető legpontosabbaknak kell lenniük, hogy elkerüljék a szükségtelen dolgok feloldását
+- A JavaScript-szabályokat a lehető legtakarékosabban kell használni, és csak akkor, ha a hirdetések blokkolása lehetetlen nélkülük
 
-## Ad blocking filters
+## Tartalomblokkoló szűrők
 
-### Terminology
+### Terminológia
 
-**Ad blocker** is a software or hardware tool designed to filter, hide, or block advertisements and other elements on web pages. Ad blockers are created to improve user experience, reduce page load times, decrease internet traffic consumption, block ads, enhance privacy while browsing websites and using applications, and block annoying elements.
+Az **Ad blocker** egy szoftver- vagy hardvereszköz, amelyet a weboldalakon megjelenő hirdetések és egyéb elemek szűrésére, elrejtésére vagy blokkolására terveztek. A hirdetésblokkolók célja a felhasználói élmény javítása, az oldalak betöltési idejének csökkentése, az internetes forgalom csökkentése, a hirdetések blokkolása, a személyes adatok védelme a webhelyek böngészése és az alkalmazások használata közben, valamint a bosszantó elemek blokkolása.
 
-A **filter** (or a **filter list**) is a set of filtering rules designed to filter content and block various types of advertisements and other types of content using ad blockers. These filters usually operate at the level of the web browser, programs, or DNS server.
+A **szűrő** (vagy egy **szűrőlista**) olyan szűrési szabályok halmaza, amelyek célja a tartalom szűrése, valamint a különféle típusú hirdetések és más típusú tartalmak blokkolása. hirdetésblokkolók. Ezek a szűrők általában a webböngésző, a programok vagy a DNS-kiszolgáló szintjén működnek.
 
-**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so called “adblock walls”). Anti-adblocks may be of different types:
+A **A hirdetésblokkolás elleni** egy olyan technológia, amelyet webhelyek vagy alkalmazások használnak, hogy észleljék a hirdetésblokkolást, és különböző módon reagáljanak rá: nyomon követve, újra beszúrva a hirdetéseket, ösztönözve a hirdetésblokkolók (úgynevezett „hirdetésblokkoló falak”) letiltására. ”). A blokkolásgátlók különböző típusúak lehetnek:
 
-- Anti-adblock that blocks website content without offering an alternative: to continue using the site, the user must disable the ad blocker on the site
-- “Anti-adblock wall” with alternative options offered, such as purchasing a subscription to continue using the ad blocker
-- Informational messages that do not obligate action: users are asked to disable the ad blocker, but these messages can be closed, allowing users to continue using the site without restrictions
-- Implementing alternative advertising in response to ad blocker usage: sites introduce alternative advertising when ad blockers are detected
-- Paywall: a method of content monetization where content is partially or fully hidden from users, with a message prompting them to purchase a subscription for access
+- Anti-hirdetésszűrő, ami blokkolja a weboldal tartalmát anélkül, hogy alternatívát kínálna: ahhoz, hogy továbbra is használja az oldalt, a felhasználónak ki kell kapcsolnia a hirdetésszűrőt az oldalon
+- „Reklámblokkoló fal” alternatív lehetőségekkel, például előfizetés vásárlásával a hirdetésblokkoló használatának folytatásához
+- Tájékoztató üzenetek, amelyek nem köteleznek cselekvésre: a felhasználókat arra kérik, hogy kapcsolják ki a hirdetésblokkolót, de ezek az üzenetek bezárhatók, így a felhasználók korlátozás nélkül használhatják az oldalt
+- Alternatív hirdetések megvalósítása a hirdetésblokkolók használatára válaszul: a webhelyek alternatív hirdetést vezetnek be, amikor hirdetésblokkolókat észlelnek
+- Paywall: a tartalom monetizálásának olyan módszere, ahol a tartalom részben vagy teljesen el van rejtve a felhasználók elől, és egy üzenet arra kéri őket, hogy a hozzáférésért előfizetést vásároljanak
 
-### Filters
+### Szűrők
 
-AdGuard ad-blocking filters include:
+Az AdGuard hirdetésblokkoló szűrői a következők:
 
-- AdGuard Base filter
-- AdGuard Mobile Ads filter
-- Regional filters divided by language principle — Chinese, Dutch, French, German, Japanese, Russian, Spanish/Portuguese, Turkish, and Ukrainian
+- AdGuard Alap szűrő
+- AdGuard Mobile App Banners szűrő
+- Regionális szűrők nyelvi elvek szerint - kínai, holland, francia, német, japán, orosz, spanyol/portugál, török, német, ukrán és orosz
 
-### The purpose of these filters
+### Ezeknek a szűrőknek a célja
 
-- **Base filter** is designed to block ads on English-language websites and those for which there is no separate filter. It also contains general filtering rules that apply to all sites regardless of language
-- **Mobile Ads filter** blocks advertisements on mobile versions of websites and within mobile apps. There is no segmentation based on language
-- **Regional filters** follow the same policy as the **Base filter**, but limited to websites in certain languages
+- A **Az** alapszűrő célja, hogy blokkolja a hirdetéseket az angol nyelvű webhelyeken és azokon, amelyekhez nincs külön szűrő. Általános szűrési szabályokat is tartalmaz, amelyek nyelvtől függetlenül minden webhelyre vonatkoznak
+- A **mobilhirdetések szűrője** blokkolja a hirdetéseket a weboldalak mobilverzióiban és a mobilalkalmazásokban. Nincs nyelvi szegmentálás
+- **A** regionális szűrők ugyanazt az irányelvet követik, mint a **Alapszűrő**, de bizonyos nyelvű webhelyekre korlátozva
 
-The goal of ad-blocking filters is to block all types of advertising on websites, applications, and certain devices that can load ads from the Internet:
+A hirdetésblokkoló szűrők célja, hogy blokkoljanak mindenféle hirdetést olyan webhelyeken, alkalmazásokban és bizonyos eszközökön, amelyek hirdetéseket tölthetnek be az internetről:
 
-- Banners — advertisements displayed as images in various parts of web pages
-- Teasers — text or graphical ads, often animated, designed to intrigue visitors (sensational headlines, attention-grabbing images) and prompt them to click on the banner (clickbait)
-- Text ads — advertising in the form of text, including links
-- Modal adverts — advertising that suddenly appears over the current content in the form of modal windows
-- Popunders — advertising that opens in a separate window under the current one, when clicked anywhere on the page
-- Redirect advertising — mechanisms which automatically redirect users to another site after clicking
-- Ads disguised as site content, which open pages with promoted products or unrelated content upon clicking
-- Video ads — advertisement videos embedded within video content or in separate ad elements on websites and applications
-- Interactive ads — ads with which users can interact (e.g., games and surveys, upon completion of which the advertised item opens)
-- Interstitial ads — full-screen ads on mobile devices that cover the interface of the app or web browser
-- Ads leftovers that occupy large spaces or stand out against the background and attract visitors' attention (except barely discernible or unnoticeable ones)
-- Anti-adblock advertising — alternative advertising displayed on the site when the main one is blocked
-- Bait elements that are used by multiple known adblock detection scripts to detect an ad blocker presence for different goals including changing the way ads are shown, fingerprinting, etc.
-- Site’s own advertising, if it has been blocked by general filtering rules (see *Limitations and exceptions*)
-- Anti-adblock scripts that prevent site usage (see *Limitations and exceptions*)
-- Advertising injected by malware, if detailed information about its loading method or steps for reproduction is provided
-- Unwanted mining — scripts that mine cryptocurrency without user consent
+- Bannerek - a weboldalak különböző részein képként megjelenő hirdetések
+- Teaserek - szöveges vagy grafikus, gyakran animált hirdetések, amelyek célja, hogy a látogatókat felkeltsék az érdeklődést (szenzációs címek, figyelemfelkeltő képek) és a bannerre való kattintásra késztessék őket (clickbait)
+- Szöveges hirdetések - szöveges hirdetések, beleértve a linkeket is
+- Modális hirdetések - az aktuális tartalom felett hirtelen megjelenő reklámok modális ablakok formájában
+- Popunders - reklámok, amelyek egy külön ablakban nyílnak meg az aktuális ablak alatt, ha az oldalon bárhol rákattintanak
+- Kattintás alapú hirdetés – olyan mechanizmusok, amelyek kattintás után automatikusan átirányítják a felhasználókat egy másik webhelyre
+- A webhely tartalmának álcázott hirdetések, amelyekre kattintva reklámozott termékeket vagy nem kapcsolódó tartalmakat tartalmazó oldalak nyílnak meg
+- Videóhirdetések - videótartalomba vagy különálló hirdetési elemekbe ágyazott hirdetési videók a weboldalakon és alkalmazásokban
+- Interaktív hirdetések – olyan hirdetések, amelyekkel a felhasználók interakcióba léphetnek (pl. játékok és felmérések, amelyek befejezése után a hirdetett elem megnyílik)
+- Közbeiktatott hirdetések – teljes képernyős hirdetések mobileszközökön, amelyek lefedik az alkalmazás vagy a webböngésző felületét
+- Nagy tereket elfoglaló vagy a háttérből kiemelkedő, a látogatók figyelmét felkeltő hirdetésmaradványok (kivéve az alig észrevehető vagy észrevehetetlen hirdetéseket)
+- Anti-adblock reklám - alternatív reklámok megjelenítése az oldalon, ha a fő reklám blokkolva van
+- Csali elemek, amelyeket több ismert hirdetésblokkoló szkript használ a hirdetésblokkoló jelenlétének észlelésére különböző célok érdekében, beleértve a hirdetések megjelenítési módjának megváltoztatását, az ujjlenyomat-vételt stb.
+- A webhely saját hirdetése, ha azt az általános szűrési szabályok letiltották (lásd *Korlátozások és kivételek*)
+- Hirdetésblokkoló szkriptek, amelyek megakadályozzák a webhely használatát (lásd: *Korlátozások és kivételek*)
+- Rosszindulatú program által beoltott reklám, ha részletes információ áll rendelkezésre a betöltési módról vagy a reprodukálás lépéseiről
+- Nem kívánt bányászat - a felhasználó beleegyezése nélkül kriptovalutát bányászó szkriptek
 
-### Limitations and exceptions
+### Korlátozások és kivételek
 
-- The site’s own advertising should not be deliberately blocked. However, it should not be unblocked if the blocking is caused by general filtering rules
-- Content access measures like paywalls are not blocked
-- Anti-adblock walls will be blocked in the following cases:
-    - They aggressively insist on disabling or removing the ad blocker or effectively prevent using the website
-    - They feature incorrect and misleading descriptions of possible consequences of ad blockers’ use
-    - They put visitors at risk of malvertising — when unblocked advertisements come from dubious sources
-- We do not block ad blocker detection messages that satisfy at least one of the following criteria:
-    - They allow the usage of the website and do not overlay the significant amount of content
-    - They provide an alternative to disabling an ad blocker given that this alternative does not put the users’ privacy or security at risk
-    - They allow the user to proceed to the website’s content or offer a feasible value exchange that does not put the user’s privacy or security at risk
-    - Some legacy rules may continue to block messages that satisfy one or more of these criteria. If identified, such rules will be handled according to this policy
-- Mining pools are not blocked if they are public and not used solely for malicious purposes
+- Az oldal saját hirdetéseit nem szabad szándékosan blokkolni. Nem szabad azonban feloldani a blokkolást, ha a blokkolást általános szűrési szabályok okozzák
+- A tartalomhoz való hozzáférést biztosító intézkedések, mint például a fizetős falak, nem blokkolhatók
+- A blokkolásgátló falak a következő esetekben blokkolva lesznek:
+    - Agresszívan ragaszkodnak a reklámblokkoló letiltásához vagy eltávolításához, vagy ténylegesen megakadályozzák a weboldal használatát
+    - Hibás és félrevezető leírásokat tartalmaznak a reklámblokkolók használatának lehetséges következményeiről
+    - A látogatókat malvertising veszélyének teszik ki - amikor a blokkolatlan hirdetések kétes forrásból származnak
+- Nem blokkoljuk azokat a hirdetésblokkoló-észlelő üzeneteket, amelyek megfelelnek a következő feltételek legalább egyikének:
+    - Lehetővé teszik a webhely használatát, és nem takarják el a jelentős mennyiségű tartalommal
+    - Alternatív megoldást kínálnak a hirdetésblokkoló letiltására, mivel ez az alternatíva nem veszélyezteti a felhasználók magánéletét vagy biztonságát
+    - Lehetővé teszik a felhasználó számára, hogy továbblépjen a weboldal tartalmához, vagy olyan megvalósítható értékcserét kínálnak, amely nem veszélyezteti a felhasználó magánéletét vagy biztonságát
+    - Előfordulhat, hogy egyes örökölt szabályok továbbra is blokkolják azokat az üzeneteket, amelyek megfelelnek egy vagy több kritériumnak. Ha azonosítják, az ilyen szabályokat a jelen szabályzat szerint kezeljük
+- A bányászati poolok nem kerülnek blokkolásra, ha nyilvánosak és nem kizárólag rosszindulatú célokra használják őket
 
-## Tracking protection filters
+## Nyomkövetés elleni szűrők
 
-### Terminology
+### Terminológia
 
-**Tracking** — the process of monitoring and collecting data about users and their interactions with websites and applications for marketing purposes, as well as to obtain telemetry about the functioning of websites or applications for the purpose of analyzing their operation. This process includes tracking visited pages, time spent, interaction with website elements (e.g., clicks, form submissions), and other metrics. It allows website and application owners to better understand user behavior, optimize functionality, and adapt marketing strategies. Tracking is also used to monitor performance, usage patterns, and identify issues, providing developers with the necessary data to improve the stability and quality of the website or application. Even if the data obtained cannot reveal a person’s identity, such actions are still considered tracking.
+**Nyomon követés** - a felhasználókra és a weboldalakkal és alkalmazásokkal való interakcióikra vonatkozó adatok nyomon követése és gyűjtése marketingcélokból, valamint a weboldalak vagy alkalmazások működésére vonatkozó telemetria megszerzése a működésük elemzése céljából. Ez a folyamat magában foglalja a meglátogatott oldalak, az eltöltött idő, a weboldal elemeivel való interakció (pl. kattintások, űrlapok kitöltése) és egyéb mérőszámok nyomon követését. Lehetővé teszi a webhely- és alkalmazástulajdonosok számára, hogy jobban megértsék a felhasználói viselkedést, optimalizálják a funkcionalitást és adaptálják marketingstratégiáikat. A nyomon követést a teljesítmény és a használati minták nyomon követésére, valamint a problémák azonosítására is használják, így a fejlesztők rendelkezésére állnak a weboldal vagy alkalmazás stabilitásának és minőségének javításához szükséges adatok. Még ha a megszerzett adatok nem is fedik fel egy személy személyazonosságát, az ilyen tevékenységek akkor is nyomon követésnek minősülnek.
 
-**Tracker** — software used on a website or in an application and designed to collect information about their operation and visitors’ actions. It tracks user interaction with the website or application, recording data about page views, time spent, clicks, form submissions, and other events. Its purpose is to provide website and application owners with a tool for analyzing user behavior, improving the user experience, and optimizing content and advertising.
+**Tracker** - egy weboldalon vagy alkalmazásban használt szoftver, amelynek célja, hogy információkat gyűjtsön a működésükről és a látogatók tevékenységeiről. Nyomon követi a felhasználó és a weboldal vagy alkalmazás közötti interakciókat, rögzíti az oldalmegtekintések, az eltöltött idő, a kattintások, az űrlapok beküldése és egyéb események adatait. Célja, hogy a webhelyek és alkalmazások tulajdonosai számára eszközt biztosítson a felhasználói viselkedés elemzéséhez, a felhasználói élmény javításához, valamint a tartalom és a hirdetések optimalizálásához.
 
-**URL tracking parameter** — a part of the address that is added to links by analytics systems or present in some links on web pages. When a request is made, this URL tracking parameter can be processed by the backend of an analytics system or website, which will extract information from it. For example, URL tracking parameters can transmit information about clicks or advertising campaigns. URL tracking parameters can also be used by fraud protection or bot detection systems.
+**URL-követési paraméter** - a cím egy része, amelyet az elemzőrendszerek a linkekhez adnak hozzá, vagy amely a weboldalak egyes linkjeiben van jelen. Kérelem esetén ezt az URL-követési paramétert feldolgozhatja egy elemzőrendszer vagy webhely háttérrendszere, amely információkat nyer ki belőle. Például az URL-követési paraméterek információkat továbbíthatnak a kattintásokról vagy a hirdetési kampányokról. Az URL nyomkövetési paramétereket csalásvédelmi vagy botészlelő rendszerek is használhatják.
 
-**Cookies** — files that websites send to and store on devices. These files contain various information — both necessary for the functioning of the site on the device and used for analytics purposes — unique identifiers used to track visitor activity on the website, advertising parameters, and more.
+**Sütik** - fájlok, amelyeket a webhelyek küldenek az eszközökre és tárolnak azokon. Ezek a fájlok különféle információkat tartalmaznak – mind az oldal működéséhez az eszközön, mind pedig elemzési célokra használhatók – egyedi azonosítókat, amelyek a látogatói tevékenység nyomon követésére szolgálnak a webhelyen, hirdetési paraméterek stb.
 
-### Filters
+### Szűrők
 
-AdGuard tracking protection filters include:
+AdGuard Követés Elleni szűrő:
 
-- AdGuard Tracking Protection filter
-- AdGuard URL Tracking filter
+- AdGuard Követés Elleni szűrő
+- AdGuard URL Követés szűrő
 
-### The purpose of these filters
+### E szűrők célja
 
-**Tracking Protection filter** is designed to block trackers that collect users’ personal data and to improve users’ privacy.
+A **Követés elleni szűrő** célja, hogy blokkolja a felhasználók személyes adatait gyűjtő nyomkövetőket, és javítsa a felhasználók magánéletét.
 
-What it blocks:
+Amit blokkol:
 
-- Analytics systems’ scripts
-- Websites’ and applications’ own tracking scripts
-- Masked CNAME trackers
-- Tracking cookies
-- Tracking pixels
-- Tracking APIs of browsers
-- Detection of the ad blocker for tracking purposes
-- Privacy Sandbox functionality in Google Chrome and its forks used for tracking (Google Topics API, the Protected Audience API)
+- Az analitikai rendszerek szkriptjei
+- Weboldalak és alkalmazások saját nyomkövető szkriptjei
+- Álcázott CNAME-követők
+- Nyomkövető sütik
+- Nyomkövető pixelek
+- A böngészők nyomkövető API-jai
+- A hirdetésblokkoló észlelése nyomon követési célból
+- Privacy Sandbox funkció a Google Chrome-ban és a nyomkövetéshez használt villáiban (Google Topics API, Protected Audience API)
 
-The **URL Tracking filter** is designed to remove tracking parameters from web addresses
+A **URL-követő szűrő** célja a nyomkövetési paraméterek eltávolítása a webcímekről
 
-### Limitations and exceptions
+### Korlátozások és kivételek
 
-Tracking protection filters should not block a tracker if blocking would disrupt the correct functioning of the website:
+A nyomkövető védelmi szűrők nem blokkolhatják a nyomkövetőt, ha a blokkolás megzavarná a webhely megfelelő működését:
 
-- Anti-bots and fraud protection if it interferes with using the site. For example, with PerimeterX or hCaptcha blocking causes problems when the site attempts to verify its visitor with a captcha
-- Error tracking systems like Sentry or Bugsnag are not blocked
+- Botok és csalás elleni védelem, ha ez zavarja az oldal használatát. Például PerimeterX vagy hCaptcha esetén a blokkolás problémákat okoz, amikor a webhely captcha segítségével próbálja meg igazolni látogatóját
+- A hibakövető rendszerek, például a Sentry vagy a Bugsnag nincsenek blokkolva
 
-## Annoyance filters
+## Kellemetlenség szűrő
 
-Annoyance filters are designed to improve the usability of websites by blocking elements on pages that are not advertisements but distract from and interfere with site interaction or content consumption — such as various modal windows and interactive forms, cookie consent notifications and requests, mobile app banners, and various widgets.
+A bosszantó szűrőket úgy tervezték, hogy javítsák a webhelyek használhatóságát azáltal, hogy blokkolják az olyan oldalakon lévő elemeket, amelyek nem reklámok, de elvonják a figyelmet és zavarják a webhely interakcióját vagy tartalomfogyasztását – ilyenek például a különféle modális ablakok és interaktív űrlapok, cookie-k engedélyezésére vonatkozó értesítések és kérések, mobilalkalmazások szalaghirdetései, és különféle widgetek.
 
-### Terminology
+### Terminológia
 
-**Cookie notice** — a form that describes the types and use of cookies on a website. A cookie notice appears when a user visits the website, informing the user that the website uses cookies or other tracking technologies to collect and use personal information, and explaining why and with whom the information collected is shared.
+**Cookie-figyelmeztetés** — egy űrlap, amely leírja a cookie-k típusait és használatát a webhelyen. A cookie-értesítés akkor jelenik meg, amikor a felhasználó felkeresi a webhelyet, amely tájékoztatja a felhasználót arról, hogy a webhely cookie-kat vagy más nyomkövetési technológiákat használ személyes adatok gyűjtésére és felhasználására, és elmagyarázza, hogy az összegyűjtött információkat miért és kivel osztják meg.
 
-**CMP (Consent Management Platform)** — software that helps websites comply with cookie usage rules. CMPs limit cookies usage until user consent is obtained, providing users with the option to accept certain cookies and manage privacy settings.
+**CMP (Consent Management Platform)** – szoftver, amely segít a webhelyeknek megfelelni a cookie-használati szabályoknak. A CMP-k a felhasználói hozzájárulás megszerzéséig korlátozzák a cookie-k használatát, lehetővé téve a felhasználóknak bizonyos cookie-k elfogadását és az adatvédelmi beállítások kezelését.
 
-**Widget** — a user interface element that extends the functionality of a website. Web widgets are integrated into web pages and can include interactive elements such as buttons, forms, or banners. They can provide users with access to specific services or content without requiring navigation to other pages.
+**Widget** — egy felhasználói felület elem, amely kiterjeszti a webhely funkcionalitását. A webes widgetek a weboldalakba integrálódnak, és tartalmazhatnak interaktív elemeket, például gombokat, űrlapokat vagy bannereket. Hozzáférést biztosíthatnak a felhasználóknak bizonyos szolgáltatásokhoz vagy tartalmakhoz anélkül, hogy más oldalakra kellene navigálniuk.
 
-**Popup** — a window that appears above the current web page. It is intended to display additional information, advertisements, notifications, or data entry forms. Popups usually block the view of the main content of the page and require user action to close, which can be irritating.
+**Popup** - az aktuális weboldal felett megjelenő ablak. További információk, hirdetések, értesítések vagy adatbeviteli űrlapok megjelenítésére szolgál. Az előugró ablakok általában blokkolják az oldal fő tartalmának megtekintését, és felhasználói beavatkozást igényelnek a bezáráshoz, ami bosszantó lehet.
 
-### Filters
+### Szűrők
 
-For better customization, annoyance filters are divided by their purpose:
+A jobb testreszabás érdekében a bosszúságszűrőket céljuk szerint osztják fel:
 
-- AdGuard Cookie Notices filter
-- AdGuard Popups filter
-- AdGuard Mobile App Banners filter
-- AdGuard Widgets filter
-- AdGuard Other Annoyances filter
-- AdGuard Annoyances filter — a combined filter that includes all 5 specialized annoyance filters
+- AdGuard Cookie értesítések szűrő
+- AdGuard Popups szűrő
+- AdGuard Mobile App Banners szűrő
+- AdGuard Widgets szűrő
+- AdGuard Egyéb Kellemetlenségek elleni szűrő
+- AdGuard Annoyances szűrő – egy kombinált szűrő, amely mind az 5 speciális bosszúságszűrőt tartalmazza
 
-### The purpose of these filters
+### Ezeknek a szűrőknek a célja
 
-#### AdGuard Cookie Notices filter
+#### AdGuard Cookie értesítések szűrő
 
-This filter is designed to block both cookie notices and requests from cookie management platforms (CMPs). Various methods may be applied to cookie notices and CMPs. In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when the site’s functionality and display of third-party content require cookie consent, the following methods are applied:
+Ezt a szűrőt úgy tervezték, hogy blokkolja a cookie-kra vonatkozó értesítéseket és a cookie-kezelési platformokról (CMP-k) érkező kéréseket. Különféle módszerek alkalmazhatók a cookie-kra vonatkozó értesítésekre és a CMP-kre. A legtöbb esetben elegendő a megfelelő szkriptek egyszerű elrejtése vagy blokkolása. Ha azonban a webhely funkciói és a harmadik féltől származó tartalmak megjelenítése cookie-khoz való hozzájárulást igényel, a következő módszereket alkalmazzuk:
 
-- Scriptlets are used to bypass the consent request (practically not applicable on sites with restrictions on loading third-party content until a decision is made)
-- Setting a cookie or key in the site’s local storage in such a way that the script considers the user to have made a choice
-- Simulating user action using a rule that clicks a specified button and interrupts its execution 10 seconds after loading. Two options are possible:
-    - Reject (except for functional cookies — depending on the CMP system) — the preferred option, as there is less risk of loading additional analytics tools
-    - Accept — this option is used as the last resort if other methods fail. In this case, the site is additionally checked for the use of analytics tools, which are then blocked by the **AdGuard Tracking Protection filter**
+- A szkriptleteket a hozzájárulási kérés megkerülésére használják (gyakorlatilag nem alkalmazható olyan webhelyeken, ahol a döntés meghozataláig korlátozzák a harmadik féltől származó tartalom betöltését)
+- Cookie vagy kulcs beállítása a webhely helyi tárolójában oly módon, hogy a szkript úgy tekintse, hogy a felhasználó választott
+- A felhasználói művelet szimulálása egy olyan szabály segítségével, amely egy megadott gombra kattint, és a betöltés után 10 másodperccel megszakítja a végrehajtást. Két lehetőség lehetséges:
+    - Elutasítás (a funkcionális cookie-k kivételével – a CMP-rendszertől függően) – a preferált opció, mivel kisebb a kockázata a további elemzőeszközök betöltésének
+    - Elfogadás – ez a lehetőség utolsó lehetőségként használatos, ha más módszerek sikertelenek. Ebben az esetben a webhelyen további elemzőeszközök használatának ellenőrzése is megtörténik, amelyeket azután az **AdGuard Tracking Protection szűrő**blokkol
 
-**Limitations and exceptions**
+**Korlátozások és kivételek**
 
-In some cases, the decision to add rules is made independently by filter developers; mostly, when the choice made when simulating actions would affect the site’s functionality (for example, history may not work, or user settings may not be saved on such a site).
+Egyes esetekben a szabályok hozzáadására vonatkozó döntést a szűrőfejlesztők önállóan hozzák meg; többnyire akkor, amikor a műveletek szimulációja során meghozott választás hatással lenne a webhely működésére (például előfordulhat, hogy az előzmények nem működnek, vagy a felhasználói beállítások nem menthetők egy ilyen webhelyen).
 
-#### AdGuard Popups filter
+#### AdGuard Popups szűrő
 
-This is a filter that blocks various popups on web pages that are not necessary for normal site usage, including but not limited to:
+Ez egy szűrő, amely blokkolja a weboldalak különféle előugró ablakait, amelyek nem szükségesek a webhely normál használatához, beleértve, de nem kizárólagosan:
 
-- Requests for permission to receive push notifications
-- Popups and forms for subscribing to news, promotions, and various events, including third-party channels for receiving them (such as Google News, Telegram)
-- Popups that encourage users to disable ad blocker and violate user’s privacy (at the discretion of the filter developers)
-- Other types of popups that may annoy users (at the discretion of filter developers)
+- Push-értesítések fogadására vonatkozó engedélykérések
+- Popupok és űrlapok hírekre, promóciókra és különböző eseményekre való feliratkozáshoz, beleértve a harmadik féltől származó csatornákat is (pl. Google News, Telegram)
+- Popupok, amelyek a felhasználókat a hirdetésblokkoló kikapcsolására ösztönzik, és sértik a felhasználó magánéletét (a szűrő fejlesztőinek belátása szerint)
+- Más típusú felugró ablakok, amelyek bosszanthatják a felhasználókat (a szűrő fejlesztőinek belátása szerint)
 
-**Limitations and exceptions**
+**Korlátozások és kivételek**
 
-- Push notifications are only blocked on sites where they are not used for practical purposes. For example, in email web clients or tools used for work purposes, such notifications will not be blocked
-- Some popups that do not fall into the categories described above but still interfere with the user’s experience may be also blocked. For example, registration prompts on a site or popups that introduce the site’s features. The decision is made by filter developers
-- Content access measures that ask the user to pay to access the content must not be circumvented
+- A push-értesítések csak azokon az oldalakon vannak letiltva, ahol nem használják őket gyakorlati célokra. Például az e-mail webes kliensekben vagy a munkához használt eszközökben az ilyen értesítések nem lesznek blokkolva
+- Néhány felugró ablak, amely nem tartozik a fent leírt kategóriákba, de mégis zavarja a felhasználó felhasználói élményét, szintén blokkolható. Például regisztrációs kérések egy webhelyen vagy felugró ablakok, amelyek bemutatják a webhely funkcióit. A döntést a szűrő fejlesztői hozzák meg
+- Nem lehet megkerülni azokat a tartalomhozzáférési intézkedéseket, amelyek a tartalomhoz való hozzáférésért a felhasználótól fizetést kérnek
 
-#### AdGuard Mobile App Banners filter
+#### AdGuard Mobile App Banners szűrő
 
-This is a filter that blocks banners and popups that encourage visitors to install mobile apps.
+Ez egy szűrő, amely blokkolja azokat a szalaghirdetéseket és előugró ablakokat, amelyek mobilalkalmazások telepítésére ösztönzik a látogatókat.
 
-**Limitations and exceptions**
+**Korlátozások és kivételek**
 
-Banners located in the headers or in the menus of websites are not blocked if they are not animated and do not occupy a significant portion of usable space. If a banner is located in the footer, the decision is made by filter developers case-by-case. Usually, banners in the footer do not stand out against other elements and are not distracting.
+A weboldalak fejlécében vagy menüjében elhelyezett bannerek nem blokkolhatók, ha nem animáltak, és nem foglalják el a felhasználható terület jelentős részét. Ha egy banner a láblécben található, a döntést a szűrőfejlesztők esetről esetre hozzák meg. A láblécben elhelyezett bannerek általában nem tűnnek ki más elemek közül, és nem zavaróak.
 
-#### AdGuard Widgets filter
+#### AdGuard Widgets szűrő
 
-This is a filter that blocks various widgets that are not essential for the functioning of websites or for interaction with them:
+Ez egy szűrő, amely blokkolja a különféle widgeteket, amelyek nem elengedhetetlenek a webhelyek működéséhez vagy a velük való interakcióhoz:
 
-- Widgets for content recommendations — related articles, similar websites, various personalized recommendations
-- Chat widgets that are not integrated with the content and are not the main content of the page
-- Marketing widgets:
-    - Chats for communication with assistants or bots
-    - Widgets with product recommendations that are shown to the user
-    - Call-back forms
-- Other widgets that do not have a separate category but may visually clutter the page. For example, weather widgets, currency exchange rates, job listings, and donations
+- Widgetek tartalmi ajánlásokhoz - kapcsolódó cikkek, hasonló weboldalak, különböző személyre szabott ajánlások
+- Olyan csevegőmodulok, amelyek nincsenek integrálva a tartalommal, és nem képezik az oldal fő tartalmát
+- Marketing widgetek:
+    - Csevegés az asszisztensekkel vagy robotokkal való kommunikációhoz
+    - Widgetek termékajánlatokkal, amelyek megjelennek a felhasználó számára
+    - Visszahívási űrlapok
+- Egyéb widgetek, amelyeknek nincs külön kategóriájuk, de vizuálisan zavarhatják az oldalt. Például időjárási widgetek, valutaárfolyamok, álláshirdetések és adományok
 
-**Limitations and exceptions**
+**Korlátozások és kivételek**
 
-This filter doesn’t block:
+Ez a szűrő nem blokkolja:
 
-- Widgets closely related to the content of the page, such as comments sections, live chat streams, with an exception of unmoderated chats on sites with unofficial streams, which are often filled with spam and similar content
-- Widgets for self-promotion and site-specific promotional activities
-- Donation widgets, except the cases where they occupy a significant portion of the page and stand out prominently against the content. The decision to block is made by filter developers
+- Az oldal tartalmához szorosan kapcsolódó widgetek, mint például a kommentszekciók, élő chat streamek, kivéve a nem hivatalos streamekkel rendelkező oldalakon a moderálatlan chateket, amelyek gyakran tele vannak spamekkel és hasonló tartalmakkal
+- Widgetek önreklámozáshoz és helyspecifikus promóciós tevékenységekhez
+- Adományozási widgetek, kivéve azokat az eseteket, amikor az oldal jelentős részét foglalják el, és feltűnően kiemelkednek a tartalomból. A blokkolásról a szűrő fejlesztői döntenek
 
-#### AdGuard Other Annoyances filter
+#### AdGuard Kellemetlenségek elleni szűrő
 
-This filter is designed to block annoying elements that are not included in other filters, as well as to apply various tweaks. It’s purpose is to:
+Ezt a szűrőt úgy tervezték, hogy blokkolja a zavaró elemeket, amelyek más szűrőkben nem szerepelnek, valamint különböző finomításokat alkalmazzon. Célja:
 
-- Block self-promotion of websites (any type of advertising promoting goods or services owned by the site owner, without receiving commercial compensation from a third party), if it is considered an annoying element
-- Block annoying elements that are not included in other categories
-- Unblock actions on the page, such as opening the context menu, selecting and copying text, if they are blocked
-- Speed up countdown timers when loading files from websites, if the check is not controlled by the server or is not hindered
-- Apply various rules that may be useful for filter developers. For example, blocking web debugger detection
+- Blokkolja a weboldalak önreklámozását (bármilyen típusú reklám, amely a weboldal tulajdonosának tulajdonában lévő árukat vagy szolgáltatásokat népszerűsíti anélkül, hogy harmadik féltől kereskedelmi ellentételezést kapna), ha azt zavaró elemnek tekintik
+- Blokkolja a bosszantó elemeket, amelyek nem szerepelnek más kategóriákban
+- Az oldalon végrehajtott műveletek blokkolásának feloldása, például a helyi menü megnyitása, szöveg kijelölése és másolása, ha blokkolva vannak
+- Gyorsítsa fel a visszaszámláló időzítőket, amikor fájlokat tölt be weboldalakról, ha az ellenőrzést nem a kiszolgáló vezérli, vagy nem akadályozza
+- Különböző szabályok alkalmazása, amelyek hasznosak lehetnek a szűrőfejlesztők számára. Például a webes hibakereső észlelésének blokkolása
 
-**Limitations and exceptions**
+**Korlátozások és kivételek**
 
-This filter may contain rules that are not suitable for all users. Sometimes it is recommended to disable this filter. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
+Ez a szűrő tartalmazhat olyan szabályokat, amelyek nem minden felhasználó számára megfelelőek. Néha ajánlott ezt a szűrőt kikapcsolni. A szűrőhöz való szabály hozzáadásáról a szűrő fejlesztői döntenek szabályonként.
 
-## Social media filters
+## Közössségi média szűrő
 
-### Filters
+### Szűrők
 
-AdGuard Social Media filters include:
+Közösségi média szűrés:
 
-- AdGuard Social Media filter
+- Közösségi média szűrés
 
-### The purpose of these filters
+### Ezeknek a szűrőknek a célja
 
-This filter will block social media widgets on third-party websites, such as “Like” and “Share” buttons, group widgets, recommendations, and similar widgets.
+Ez a szűrő blokkolja a harmadik fél webhelyein található közösségi média widgeteket, például a "Tetszik" és "Megosztás" gombokat, csoport widgeteket, ajánlásokat és hasonló widgeteket.
 
-### Limitations and exceptions
+### Korlátozások és kivételek
 
-Widgets that are part of the website’s functionality or content, such as comments, embedded posts, polls, as well as social media login widgets, are not blocked. Links to the website’s social media pages are also not blocked.
+A webhely funkcióinak vagy tartalmának részét képező widgetek, például a megjegyzések, beágyazott bejegyzések, szavazások, valamint a közösségi média bejelentkezési widgetek nincsenek letiltva. A weboldal közösségi médiaoldalaira mutató linkek szintén nem blokkolhatók.
 
-## Other filters
+## Egyéb szűrők
 
-This group contains filters that are not essential for blocking advertisements.
+Ez a csoport olyan szűrőket tartalmaz, amelyek nem elengedhetetlenek a hirdetések blokkolásához.
 
-### Terminology
+### Terminológia
 
-**Contextual advertising** is a type of internet advertising where the advertisement is displayed based on the content, selected audience, location, time, or other context of internet pages.
+**Kontextuális reklám Az** az internetes reklámozás egy olyan fajtája, ahol a hirdetés az internetes oldalak tartalma, kiválasztott közönsége, helye, ideje vagy egyéb kontextusa alapján jelenik meg.
 
-**Search advertising** is a subclass of contextual advertising where ads are displayed based on the visitor's search query.
+A **keresőhirdetés** a kontextuális hirdetések egyik alosztálya, ahol a hirdetések a látogató keresési lekérdezése alapján jelennek meg.
 
-**Self-promotion of websites** refers to the banners of a website promoting goods and services owned by the site owner, for which they do not receive compensation from third parties.
+**A weboldalak önreklámozása** egy weboldal bannereit jelenti, amelyek a weboldal tulajdonosának tulajdonában lévő árukat és szolgáltatásokat népszerűsítik, és amelyekért nem kapnak ellentételezést harmadik felektől.
 
-For more details on these types of advertising, refer to the [article on search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
+Az ilyen típusú hirdetésekkel kapcsolatos további részletekért olvassa el a [keresőhirdetésekről szóló cikket](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
-### Filters
+### Szűrők
 
-- Filter unblocking search ads and self-promotion
-- AdGuard DNS filter
-- AdGuard Experimental filter
+- Feloldó szűrő a keresési hirdetésekhez és az önpromóciókhoz
+- AdGuard DNS-szűrő
+- AdGuard Kísérleti szűrő
 
-### The purpose of these filters
+### Ezeknek a szűrőknek a célja
 
-#### Filter unblocking search ads and self-promotion
+#### Feloldó szűrő a keresési hirdetésekhez és az önpromóciókhoz
 
-This filter unblocks:
+Ez a szűrő feloldja a blokkolást:
 
-- Contextual advertising in search results when using search engines (such as Google, Bing, Yandex, DuckDuckGo)
-- Self-promotion of websites
+- Kontextus szerinti hirdetés a keresési eredmények között keresőmotorok (például Google, Bing, Yandex, DuckDuckGo) használatakor
+- Weboldalak önreklámozása
 
-**Limitations and exceptions**
+**Korlátozások és kivételek**
 
-- Search advertising is unblocked only if it corresponds to the user’s search query, as it is contextual. Otherwise, the advertising remains blocked
-- Self-promotion is unblocked only if it complies with the filter policy. A request for unblocking may be rejected by filter developers
-- Any other advertising will not be unblocked
+- A keresőreklámok blokkolása csak akkor oldódik fel, ha megfelelnek a felhasználó keresési lekérdezésének, mivel kontextusfüggőek. Ellenkező esetben a hirdetés blokkolva marad
+- Az önreklámozás csak akkor oldható fel, ha megfelel a szűrési szabályzatnak. Az unblocking kérése elutasítható lehet a szűrőfejlesztők által
+- Más hirdetések blokkolását nem oldjuk fel
 
-#### AdGuard DNS filter
+#### AdGuard DNS-szűrő
 
-This filter is used in AdGuard DNS. It is not a replacement for ad-blocking filters.
+Ezt a szűrőt az AdGuard DNS használja. Nem helyettesíti a reklámblokkoló szűrőket.
 
-**Limitations and exceptions**
+**Korlátozások és kivételek**
 
-Same as for ad-blocking filters.
+Ugyanaz, mint a hirdetésblokkoló szűrők esetében.
 
-#### AdGuard Experimental filter
+#### AdGuard Kísérleti szűrő
 
-This filter is intended for testing and debugging rules that potentially may break websites’ functionality. Rules are added by filter developers when there’s a need to test a particular solution. As the filter is designed for debugging purposes, its limitations are minimal.
+Ez a szűrő olyan szabályok tesztelésére és hibakeresésére szolgál, amelyek potenciálisan megzavarhatják a webhelyek működését. A szabályokat a szűrőfejlesztők adják hozzá, amikor egy adott megoldás tesztelésére van szükség. Mivel a szűrőt hibakeresési célokra tervezték, korlátozásai minimálisak.
 
-**Limitations and exceptions**
+**Korlátozások és kivételek**
 
-- Rules should not intentionally break websites’ functionality
-- Rules should not unblock advertisements or otherwise violate the Policy
+- A szabályok nem sérthetik meg szándékosan a weboldalak funkcionalitását
+- A szabályok nem oldhatják fel a reklámok blokkolását, és nem sérthetik meg más módon a Szabályzatot

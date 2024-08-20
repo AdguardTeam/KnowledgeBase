@@ -9,6 +9,12 @@ sidebar_position: 5
 
 :::
 
+:::note
+
+Data and/or files provided in system logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 Для анализа и диагностики сложных проблем, связанных с работой AdGuard, службе поддержки могут понадобиться файлы журнала Windows. Журналы Windows содержат записи о системных событиях и ошибках за последнее время. Ниже представлена инструкция для получения и отправки этих файлов.
 
 1. Нажмите *Win + R*
@@ -36,3 +42,9 @@ sidebar_position: 5
     - Выберите папку назначения, введите имя и нажмите *Сохранить*. Выберите *Отображать сведения для следующих языков*. Поставьте галочку напротив пункта *Английский язык*. Нажмите *OK*.
 
 Полученные два файла отправьте в службу поддержки AdGuard: **support@adguard.com**.
+
+:::note
+
+AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+
+:::

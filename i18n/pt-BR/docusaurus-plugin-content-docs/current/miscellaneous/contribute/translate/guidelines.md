@@ -45,7 +45,7 @@ Você também pode alterar o idioma da interface do Crowdin clicando no ícone *
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/context-note.png)
 
-1. Note that source strings may also have screenshots in the Context section. Eles ajudam a entender o contexto e transmitem o significado exato.
+1. Observe que as strings de origem também podem ter capturas de tela na seção Contexto. Eles ajudam a entender o contexto e transmitem o significado exato.
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
 
@@ -58,7 +58,7 @@ Você também pode alterar o idioma da interface do Crowdin clicando no ícone *
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
 
-1. Além de sugerir novas traduções, você também pode deixar comentários nas linhas de tradução. Use comments to let us know about mistakes in the source text or existing translations, make notes, or ask questions. Se você vir um comentário deixado em sua tradução, tente respondê-lo.
+1. Além de sugerir novas traduções, você também pode deixar comentários nas linhas de tradução. Use comentários para nos informar sobre erros no texto de origem ou em traduções existentes, fazer anotações ou fazer perguntas. Se você vir um comentário deixado em sua tradução, tente respondê-lo.
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/comments.png)
 

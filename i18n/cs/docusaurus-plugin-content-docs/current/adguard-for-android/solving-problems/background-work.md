@@ -27,7 +27,27 @@ Případně můžete místo úplného zrušení zaškrtnutí pole **Automaticky 
 
 Xiaomi (a zejména MIUI) patří mezi nejproblematičtější, pokud jde o práci na pozadí. Je známo, že omezují procesy na pozadí, mají nestandardní oprávnění a chybí k nim řádná dokumentace. Někdy aplikace na telefonech Xiaomi prostě nefungují správně a nedá se s tím nic moc dělat. Níže jsou uvedeny některé akce, které se můžete pokusit provést, pokud narazíte na potíže týkající se práce AdGuardu na pozadí v různých zařízeních Xiaomi.
 
-### MIUI 12.0.8+
+### MIUI 13+ a HyperOS
+
+Depending on the MIUI and HyperOS versions, there are two ways to change the battery optimization settings on your phone and block ads more efficiently.
+
+Option 1
+
+1. Go to **Settings** → **Apps** → **Permissions** → **Background autostart** and allow AdGuard to run in the background
+
+1. Return to **Settings** → **Apps** → **Manage apps** → **AdGuard** and uncheck **Pause app activity if unused**
+
+1. Go to **Battery saver** and tap **No restrictions**
+
+Option 2
+
+1. Go to **Settings** → **Apps** → **Manage apps** → **AdGuard** and enable **Autostart**
+
+1. Go to **Battery saver** and tap **No restrictions**
+
+Hotovo! You have successfully set up AdGuard to work in the background.
+
+### MIUI 12.0.8
 
 Chcete-li aplikaci AdGuard úspěšně spustit na pozadí, proveďte následující kroky:
 
@@ -365,7 +385,7 @@ Zařízení Nokia se systémem Android 9+ mají **vypnutý spořič energie Even
 
 1. Povolte [Možnosti pro vývojáře](https://developer.android.com/studio/debug/dev-options.html);
 
-1. Povoltee **USB ladění** v možnostech pro vývojáře v telefonu;
+1. Povolte **USB ladění** v možnostech pro vývojáře v telefonu;
 
 1. Odinstalujte balíček **com.evenwell.emm** pomocí následujících příkazů ADB:
 
@@ -421,7 +441,7 @@ Alternativní, trvalejší řešení pro technicky zdatnější uživatele:
 
 1. Povolte [Možnosti pro vývojáře](https://developer.android.com/studio/debug/dev-options.html);
 
-1. Povolte **USB ladění** v možnostech pro vývojáře v telefonu;
+1. Povoltee **USB ladění** v možnostech pro vývojáře v telefonu;
 
 1. Odinstalujte balíček **com.evenwell.powersaving.g3** pomocí následujících příkazů ADB:
 

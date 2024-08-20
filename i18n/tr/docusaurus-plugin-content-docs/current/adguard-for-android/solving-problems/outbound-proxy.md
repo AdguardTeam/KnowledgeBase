@@ -89,17 +89,25 @@ Bu makalede, AdGuard ile çalışmak için en popüler proxy'lerden bazıların�
 
 ### NordVPN ile AdGuard nasıl kullanılır
 
-1. AdGuard'ı açın ve **Ayarlar** → **Filtreleme** → **Ağ** → **Proxy** → **Proxy sunucusu** öğesine gidin.
+1. NordVPN hesabınıza giriş yapın.
 
-1. **Proxy sunucusu ekle** düğmesine dokunun ve aşağıdaki verileri girin:
+1. Go to **Services** → **NordVPN** → **Manual setup** and set up your service credentials manually.
 
-    | Alan                   | Değer                                                                                                                           |
-    | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-    | Proxy türü             | *SOCKS5*                                                                                                                        |
-    | Proxy ana makine       | *any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent)* |
-    | Proxy bağlantı noktası | *1080*                                                                                                                          |
+1. You will receive a verification code on the email address you use for NordVPN. Use it on your NordVPN account as requested, then tap *Apply* and *OK* to save the changes.
 
-1. For **Username** and **Password** fields, enter your NordVPN Username and Password.
+![Elle kurulum](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/outbound-proxy/nordvpn-manual-setup.png)
+
+1. Open the AdGuard app, go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server** → **Add proxy server**.
+
+1. Aşağıdaki verileri girin:
+
+    | Alan                   | Değer                                                                                                                         |
+    | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+    | Proxy türü             | *SOCKS5*                                                                                                                      |
+    | Proxy ana makine       | Any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent) |
+    | Proxy bağlantı noktası | *1080*                                                                                                                        |
+
+1. **Kullanıcı Adı** ve **Şifre** alanlarına NordVPN kimlik bilgilerinizi girin.
 
 1. **Kaydet ve seç** öğesine dokunun.
 

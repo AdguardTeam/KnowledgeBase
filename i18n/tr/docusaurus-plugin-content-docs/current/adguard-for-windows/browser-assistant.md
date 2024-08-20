@@ -15,7 +15,7 @@ AdGuard Tarayıcı Asistanı bir tarayıcı uzantısıdır, bir tarayıcıya yü
 
 ### Ana uygulama ile uyumluluk
 
-Önceki AdGuard Reklam Engelleyici uzantımız [Entegre modunda](/adguard-browser-extension/integration-mode) kullanma alışkanlığı edindiyseniz, yeni Tarayıcı Asistanı için geliştirdiğimiz çözümü beğenebilirsiniz.
+Önceki [AdGuard Reklam Engelleyici uzantımızı](/adguard-browser-extension/compatibility) kullanmayı alışkanlık hâline getirdiyseniz, yeni Tarayıcı Asistanı için geliştirdiğimiz çözümü beğenebilirsiniz.
 
 Arka plan bilgisi:
 

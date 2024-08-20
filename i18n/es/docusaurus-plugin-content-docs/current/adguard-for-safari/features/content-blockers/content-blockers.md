@@ -1,17 +1,17 @@
 ---
-title: What is a content blocker?
+title: ¿Qué es un bloqueador de contenido?
 sidebar_position: 1
 ---
 
-![Content blockers tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
+![Pestaña Bloqueadores de contenido](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in- Depth_review/Contentblockers.png)
 
-Un bloqueador de contenido es un grupo temático de filtros. Privacy-related filters are included in the content blocker with the corresponding name — _AdGuard Privacy_.
+Un bloqueador de contenido es un grupo temático de filtros. Los filtros relacionados con la privacidad se incluyen en el bloqueador de contenido con el nombre correspondiente: _AdGuard - Privacidad_.
 
 Los bloqueadores de contenido se crearon por dos razones: estructurar filtros y cumplir con las restricciones de Apple.
 
-[In 2019](https://adguard.com/en/blog/adguard-safari-1-5.html), Apple put limitations on ad blockers for Safari, allowing them to use only 50,000 filtering rules simultaneously. Como este número no era suficiente para que un bloqueador de anuncios proporcionara una buena calidad de filtrado (el filtro base de AdGuard tiene 30.000 reglas de filtrado), dividimos AdGuard para Safari en seis bloqueadores de contenido, cada uno con hasta 50.000 reglas.
+[En 2019](https://adguard.com/en/blog/adguard-safari-1-5.html), Apple impuso limitaciones a los bloqueadores de anuncios para Safari, permitiéndoles usar solo 50.000 reglas de filtrado simultáneamente. Como este número no era suficiente para que un bloqueador de anuncios proporcionara una buena calidad de filtrado (el filtro base de AdGuard tiene 30.000 reglas de filtrado), dividimos AdGuard para Safari en seis bloqueadores de contenido, cada uno con hasta 50.000 reglas.
 
-[In 2022](https://adguard.com/en/blog/adguard-for-safari-1-11.html), Apple increased the filtering rule limit for each content blocker to 150,000 rules applied simultaneously. En cuanto a AdGuard para Safari, se pueden habilitar hasta 900.000 reglas para los seis bloqueadores de contenido.
+[En 2022](https://adguard.com/en/blog/adguard-for-safari-1-11.html), Apple aumentó el límite de reglas de filtrado para cada bloqueador de contenido a 150.000 reglas aplicadas simultáneamente. En cuanto a AdGuard para Safari, se pueden habilitar hasta 900.000 reglas para los seis bloqueadores de contenido.
 
 Aunque se ha aumentado el límite, la estructura de los bloqueadores de contenidos sigue siendo la misma.
 

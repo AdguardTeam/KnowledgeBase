@@ -5,32 +5,32 @@ sidebar_position: 5
 
 La captura de pantalla es una captura de la pantalla de su ordenador o dispositivo móvil, que puede obtenerse utilizando herramientas habituales o un programa/aplicación especial.
 
-Sometimes screenshots are requested by the support team for a better understanding. Aquí encontrarás todas las teclas de acceso rápido que debes conocer para realizar capturas de pantalla en tu ordenador o dispositivo móvil.
+A veces, el equipo de soporte solicita capturas de pantalla para una mejor comprensión. Aquí encontrarás todas las teclas de acceso rápido que debes conocer para realizar capturas de pantalla en tu ordenador o dispositivo móvil.
 
 ### Android {#android}
 
-Taking a screenshot on an Android device can be done in various ways, depending on the device model and its manufacturer.
+Para realizar una captura de pantalla en un dispositivo Android se puede hacer de varias maneras, dependiendo del modelo de dispositivo y su fabricante.
 
 En general, la siguiente combinación de botones se utiliza en Android:
 
-- **Press the *Volume Down* and the *Power* buttons at the same time**
+- **Presiona los botones *Bajar volumen* y *Encendido* al mismo tiempo**
 
 Tu dispositivo Android capturará toda la pantalla y la guardará como una foto. Por lo tanto, puedes encontrar la captura de pantalla en una carpeta *Capturas de pantalla* en tu Galería.
 
-For older devices, you may use following combinations:
+Para dispositivos más antiguos, puedes utilizar las siguientes combinaciones:
 
-- **Press *Home* and *Power* at the same time**
-- **Press *Back* and *Home* at the same time**
+- **Presiona *Inicio* y *Encendido* al mismo tiempo**
+- **Presiona *Atrás* y *Inicio* al mismo tiempo**
 
-On Android 8 and later you can also take a screenshot with other manipulations, for example, with swiping your hand over the screen at a 90-degree angle to trigger a screenshot (Samsung devices), or with swiping down three fingers (OnePlus devices), etc.
+En Android 8 y versiones posteriores también puedes tomar una captura de pantalla con otras manipulaciones, por ejemplo, deslizando la mano sobre la pantalla en un ángulo de 90 grados para activar una captura de pantalla (dispositivos Samsung), o deslizando tres dedos hacia abajo (dispositivos OnePlus), etc.
 
-The options for taking a screenshot vary by brand and model. Check your device’s settings to find the method that works best for you.
+Las opciones para tomar una captura de pantalla varían según la marca y el modelo. Verifica la configuración de tu dispositivo para encontrar el método que funcione mejor para ti.
 
-Besides, you can always use any special apps for taking screenshots on your devices, for example — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap*, etc.
+Además, siempre puedes utilizar alguna aplicación especial para realizar capturas de pantalla en tus dispositivos, por ejemplo - *Captura de pantalla Fácil*, *Captura de pantalla Ultimate*, *Instantánea de captura de pantalla*, etc.
 
 ### iOS {#ios}
 
-Any iOS device (except very old ones) lets you take a screenshot using standard tools.
+Cualquier dispositivo iOS (excepto los muy antiguos) permite realizar una captura de pantalla utilizando herramientas estándar.
 
 Para hacer una captura de pantalla en un dispositivo iOS, utiliza la siguiente combinación:
 
@@ -44,25 +44,25 @@ Tu dispositivo iOS capturará toda la pantalla y la guardará como una foto. Pue
 
 ### Windows {#windows}
 
-- **To take a screenshot on Windows, press the *PrtScn* key**
+- **Para hacer una captura de pantalla en Windows, pulsa la tecla *PrtScn***
 
 En algunos portátiles, tienes que mantener pulsada la tecla *Fn* y luego pulsar *PrtScn* en su lugar.
 
-*Please note: The PrtScn (Print Screen) key may be abbreviated differently on different keyboards — PrntScrn, PrtScn, PrtScr, or PrtSc.*
+*Ten en cuenta: la tecla PrtScn (Imprimir pantalla) puede abreviarse de forma diferente en distintos teclados: PrntScrn, PrtScn, PrtScr o PrtSc.*
 
-Windows captures the entire screen and copies it to the clipboard.
+Windows captura toda la pantalla y la copia en el portapapeles.
 
-To take a screenshot of an active window, use the following shortcut:
+Para tomar una captura de pantalla de una ventana activa, utiliza el siguiente acceso directo:
 
 - **Manten presionado *Alt* y pulsa *PrtScn* (o *Fn + Alt + PrtScn* en algunos portátiles)**
 
-To take a screenshot of a specific area, use the following shortcut:
+Para tomar una captura de pantalla de un área específica, utiliza el siguiente acceso directo:
 
-- ***Press ***Win + Shift + S******
+- ***Presiona ***Win + Shift + S******
 
-Después de tomar una captura de pantalla, se guardará en el portapapeles. In most cases, you will be able to paste it into a document that you are currently editing by using the *Ctrl + V* shortcut. Alternativamente, si necesitas guardar la captura de pantalla en un archivo, debes abrir el programa estándar **Paint** (o cualquier otra aplicación que pueda trabajar con imágenes). Paste your screenshot there using the same shortcut or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
+Después de tomar una captura de pantalla, se guardará en el portapapeles. En la mayoría de los casos, podrás pegarlo en un documento que estés editando actualmente usando el atajo *Ctrl + V*. Alternativamente, si necesitas guardar la captura de pantalla en un archivo, debes abrir el programa estándar **Paint** (o cualquier otra aplicación que pueda trabajar con imágenes). Pega allí tu captura de pantalla utilizando el mismo atajo de teclado o haciendo clic en el botón Pegar (normalmente en la esquina superior izquierda de la pantalla) y luego guárdala.
 
-Windows 8 and 10 let you take a screenshot very quickly with the *Win + PrtScn* shortcut. As soon as you press these keys, the screenshot will be automatically saved as a file to your *Pictures* → *Screenshots Folder*.
+Windows 8 y 10 te permiten tomar una captura de pantalla muy rápidamente con el atajo *Win + PrtScn*. Tan pronto como presiones estas teclas, la captura de pantalla se guardará automáticamente como un archivo en tu carpeta de *Imágenes* → *Capturas de pantalla*.
 
 También hay un programa dedicado a tomar capturas de pantalla llamado *Snipping Tool*, que se puede encontrar a través del menú de Inicio entre los programas estándar de tu ordenador. La Snipping Tool te permite capturar cualquier área de tu escritorio o toda la pantalla. Después de tomar una captura de pantalla con este programa, puedes editar la imagen y guardarla en cualquier carpeta de tu ordenador.
 
@@ -70,26 +70,26 @@ Además, también puedes probar a utilizar diferentes aplicaciones para hacer ca
 
 ### macOS {#mac}
 
-To take a screenshot on Mac, use the following shortcut:
+Para tomar una captura de pantalla en Mac, usa el siguiente atajo:
 
-- ***Press and hold ***⌘ Cmd + Shift + 3******
+- ***Mantén pulsado ***⌘ Cmd + Shift + 3******
 
 Tu Mac capturará toda la pantalla y la guardará como un archivo en el escritorio.
 
-To take a screenshot of an active window, use the following shortcut:
+Para tomar una captura de pantalla de una ventana activa, utiliza el siguiente acceso directo:
 
-- **Press and hold *⌘ Cmd + Shift + 4 + Space bar*. El puntero cambiará a un icono de cámara. Haz clic en la ventana para capturarla. Press Esc to cancel taking a screenshot**
+- **Manten presionadas las teclas *⌘ Cmd + Shift + 4 + Barra espaciadora*. El puntero cambiará a un icono de cámara. Haz clic en la ventana para capturarla. Pulsa Esc para cancelar la captura de pantalla**
 
-To take a screenshot of a specific area, use the following shortcut:
+Para tomar una captura de pantalla de un área específica, utiliza el siguiente acceso directo:
 
-- ***Press ***⌘ Cmd + Shift + 5******. Desliza para seleccionar el área necesaria. Release your mouse or trackpad to take a screenshot, press Esc to cancel it.
+- ***Pulsa ***⌘ Cmd + Shift + 5******. Desliza para seleccionar el área necesaria. Suelta el ratón o el trackpad para hacer una captura de pantalla, pulsa Esc para cancelarla.
 
-To take a screenshot of the *Touch Bar* (MacBook Pro), use the following shortcut:
+Para tomar una captura de pantalla de la *Barra táctil* (MacBook Pro), utiliza el siguiente atajo:
 
-- ***Press ***⌘ Cmd + Shift + 6******
+- ***Presiona ***⌘ Cmd + Shift + 6******
 
 El Mac captura toda la *Touch Bar* y la guarda como un archivo en el escritorio.
 
-To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the shortcuts above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* shortcut.
+Para copiar una captura de pantalla al portapapeles en lugar de guardarla, mantén presionada la tecla *Ctrl* junto con cualquiera de los atajos anteriores. Luego puedes pegar la captura de pantalla (desde el portapapeles) en un documento o una imagen que estés editando actualmente usando el atajo *Cmd + V*.
 
 También puedes hacer capturas de pantalla utilizando la **Vista Previa** y eligiendo **Tomar captura de pantalla** (del área seleccionada, de la ventana o de toda la pantalla). Con la **Vista Previa** puedes guardar tus capturas de pantalla en JPG, TIFF, PDF y otros formatos de archivo.

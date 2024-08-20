@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard for Safari, which safeguards only your Safari browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Safari, which safeguards only your Safari browser. A teljes eszköz védelme érdekében [töltse le az AdGuard alkalmazást](https://agrd.io/download-kb-adblock)
 
 :::
 

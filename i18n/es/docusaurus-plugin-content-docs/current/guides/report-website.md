@@ -1,5 +1,5 @@
 ---
-title: How to report websites and apps
+title: Cómo denunciar sitios web y aplicaciones
 sidebar_position: 3
 ---
 
@@ -12,7 +12,7 @@ Al usar bloqueadores de anuncios, es posible que se enfrente a un trabajo incorr
 - Los autores de uno de los filtros cometieron un error al crear la regla;
 - Reinserción publicitaria. Descubre más sobre este método en nuestro [blog](https://adguard.com/en/blog/ad-reinsertion.html).
 
-You can help us by filling in a form with examples of ads you have encountered. Para hacerlo, por favor, utiliza las instrucciones para tu sistema operativo.
+Puedes ayudarnos rellenando un formulario con ejemplos de anuncios que hayas visto. Para hacerlo, por favor, utiliza las instrucciones para tu sistema operativo.
 
 ## Reportar un sitio web {#report}
 
@@ -53,7 +53,7 @@ Para informar sobre la reinserción de un anuncio o la visualización incorrecta
 
 ### Mac {#mac}
 
-- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
+- Abre el [Asistente de navegador AdGuard](/adguard-for-mac/features/browser-assistant) y presiona **Informar un problema**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 
@@ -146,4 +146,4 @@ Por ejemplo, se enfrentas a una situación en la que tu sitio web favorito no se
 
 ### **Bloqueadores de terceros**
 
-Algunos navegadores y programas antivirus (como Yandex Browser, Kaspersky, etc.) tienen bloqueadores de anuncios incorporados. Ellos pueden afectar y causar problemas en el funcionamiento de los sitios. If you are using such programs, first make sure that the problem is caused by **AdGuard**: disable **AdGuard** filtering and try to reproduce the problem. Si permanece, significa que el problema es causado por otra aplicación o navegador. Si el problema es causado por **AdGuard**, sigue los pasos descritos en los párrafos anteriores.
+Algunos navegadores y programas antivirus (como Yandex Browser, Kaspersky, etc.) tienen bloqueadores de anuncios incorporados. Ellos pueden afectar y causar problemas en el funcionamiento de los sitios. Si estás utilizando dichos programas, primero asegúrate de que el problema sea causado por **AdGuard**: deshabilita el filtrado **AdGuard** e intenta reproducir el problema. Si permanece, significa que el problema es causado por otra aplicación o navegador. Si el problema es causado por **AdGuard**, sigue los pasos descritos en los párrafos anteriores.

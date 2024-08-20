@@ -19,7 +19,7 @@ sidebar_position: 3
 
 :::note
 
-You can also change the Crowdin interface language by clicking the *Settings* icon in the top right corner of the page. 在打开的窗口中向下滚动到「*UI language*」标签。 打开它，选择一种语言，然后点击「**Change**」。
+您也可通过点击页面右上角的「*设置*」图标以更改 Crowdin 的界面语言。 在打开的窗口中向下滚动到「*UI language*」标签。 打开它，选择一种语言，然后点击「**Change**」。
 
 :::
 
@@ -27,61 +27,61 @@ You can also change the Crowdin interface language by clicking the *Settings* ic
 
 **以下指南将帮助您多了解翻译的过程。**
 
-1. You can filter translations by clicking this button and selecting any offered option.
+1. 您可点击此按钮并按需选择提供的选项以过滤翻译。
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
-1. Easily move between the files of the project.
+1. 轻松切换工程文件。
 
     ![crowdin *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_files.png)
 
-1. Pay attention to the glossary terms highlighted with a dotted line in a source phrase. Usually, they are special words (like brand names) that should not be translated.
+1. 请注意源短语内用虚线突出显示的术语。 通常它们是特殊的词，是不应翻译的（如商标名称）。
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/terms.png)
 
-    You can suggest your translation for translatable terms in the [AdGuard Glossary](https://crowdin.com/project/adguard-glossary) project.
+    您可在 [ AdGuard 术语](https://crowdin.com/project/adguard-glossary)工程内为可翻译的术语建议翻译。
 
-1. In Crowdin, strings can have notes that make it easier to understand and translate phrases. Look for them in the "Context" field of the source string.
+1. 在 Crowdin 中，字符串可带有注释，以便更容易理解和翻译短语。 在源字符串的「Context」字段内搜寻它们。
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/context-note.png)
 
-1. Note that source strings may also have screenshots in the Context section. They help to understand the context and convey the exact meaning.
+1. 请注意，源字符串的「Context」部分也可能有截图。 它们有助于理解上下文并传达准确的含义。
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
 
     :::tip
 
-    You can request context by clicking the "REQUEST" button.
+    可以单击「REQUEST」按钮以请求上下文。
 
 
 :::
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
 
-1. In addition to suggesting new translations, you can also leave comments on strings. Use comments to let us know about mistakes in the source text or existing translations, make notes, or ask questions. If you see a comment left on your translation — try to respond to it.
+1. 除建议新翻译外，还可以对字符串发表评论。 使用评论让我们了解源文本或现有译文中的错误、做注释或提出问题。 如您看到翻译留下评论，请回应它。
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/comments.png)
 
-    There's also a **Discussions** tab on the main project page that conveniently allows you to see all the comments for the specific language in this project.
+    主工程页面上也有「**Discussions**」标签以允许您查看此工程特定语言的所有注释。
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/discussions.png)
 
-1. Crowdin provides a very useful and convenient tool called *Translation Memory*. With its help, you can find the previously made translations of the same words and phrases and reuse them in your translations.
+1. Crowdin 提供一个非常有用且便利的工程，其名为「*Translation Memory*」。 在它的帮助下，可以找到先前对相同单词和短语的翻译并在翻译中重复使用。
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tm.png)
 
-1. Once you join a project by clicking the "Join" button, you will see the **Tasks** tab on the project page, where the tasks for specific project files get created. *Please pay attention to them: they usually have a higher priority.*
+1. 用户点击「Join」按钮加入工程后，便会看到工程页面上的「**Tasks**」标签，其是专门为特定工程文件创建的。 *请注意：它们通常具有较高的优先级。*
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tasks.png)
 
-1. Sometimes you can find phrases with plural forms. Please be especially attentive when translating such phrases. You can read how to translate plural forms [here](../plural-forms).
+1. 有时您可找到复数形式的短语。 翻译此类短语时请特别注意。 您可[在此](../plural-forms)阅读如何翻译复数形式。
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/plurals.png)
 
-    Using proper plural forms is extremely important:  please ask us in the comments if anything is unclear.
+    使用适当的复数形式非常重要：如有任何不清楚的地方，请在评论中询问我们。
 
-1. **Please do not write directly to the project managers and proofreaders listed in the Project info.**
+1. **请不要直接写信给那些列于工程信息内的工程管理人员和校对人员。**
 
-    If you have questions about translations, you can always ask our proofreaders or admins through comments.
+    如您有任何关于翻译的问题，请通过注释询问审核人员或管理人员。
 
-    Also, you can send an email to [translate@adguard.com](mailto:translate@adguard.com) or ask a question in the [Telegram chat](https://t.me/joinchat/UVYTLcHbr8JmOGIy). The Admins will answer you as soon as possible.
+    您还可以向我们发邮件 [translate@adguard.com](mailto:translate@adguard.com) 或在 [Telegram 群](https://t.me/joinchat/UVYTLcHbr8JmOGIy) 询问问题。 管理员会尽快回复您。

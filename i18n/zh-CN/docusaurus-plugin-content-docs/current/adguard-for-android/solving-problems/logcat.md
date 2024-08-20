@@ -9,7 +9,19 @@ sidebar_position: 4
 
 :::
 
+:::note
+
+Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 有时候常规日志可能无法识别问题的根源。 在这种情况下，就需要系统日志。 以下是收集日志的说明：通过开发人员选项和 Logcat。
+
+:::note
+
+AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+
+:::
 
 ## 从设备捕获错误报告
 
