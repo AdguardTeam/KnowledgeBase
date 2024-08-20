@@ -4010,8 +4010,7 @@ These functions can be used in a declarative manner in AdGuard filtering rules.
 
 :::note
 
-AdGuard supports a lot of different scriptlets.
-In order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
+AdGuard supports a lot of different scriptlets. In order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
 
 :::
 
