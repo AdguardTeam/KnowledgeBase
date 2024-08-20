@@ -41,7 +41,7 @@ sidebar_position: 4
 
 **Рекомендуемое решение**
 
-At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the newer Apple privacy features.
+Мы рекомендуем использовать более традиционный VPN-сервис, такой как [AdGuard VPN](https://adguard-vpn.com/), вместо более новых функций конфиденциальности Apple.
 
 ### Monterey 12, Big Sur 11.6 и более поздние версии: существующие проблемы
 

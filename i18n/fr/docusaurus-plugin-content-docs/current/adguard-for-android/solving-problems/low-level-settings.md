@@ -63,7 +63,7 @@ Here you can specify the time in milliseconds that AdGuard will wait for the res
 
 #### Réponse TTL bloquée
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+Vous pouvez spécifier ici la valeur TTL (time to live) qui sera renvoyée en réponse à une requête bloquée.
 
 #### DNS cache size
 

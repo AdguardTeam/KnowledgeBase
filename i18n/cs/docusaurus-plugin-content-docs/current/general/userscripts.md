@@ -64,13 +64,13 @@ As userscripts are mainly created by enthusiasts, you should be cautious when in
 
 Zde popíšeme některé z nejoblíbenějších katalogů uživatelských skriptů.
 
-### Stylish (userstyles.org)
+### Userscript.Zone
 
-[Userstyles.org](https://userstyles.org/) je katalog uživatelských stylů, ale umožňuje je načíst jako uživatelské skripty. Prostřednictvím AdGuardu lze tedy nainstalovat jakýkoli uživatelský styl. Pokud se rozhodnete nainstalovat neoblíbený skript, buďte opatrní — existuje riziko, že může být škodlivý.
+[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high credibility, since only scripts from moderated pages are displayed.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) je katalog uživatelských skriptů od tvůrců Stylish. Na rozdíl od výše zmíněného userstyles.org jsou skripty v tomto katalogu moderovány, takže jejich důvěryhodnost je mnohem vyšší.
+[Greasy Fork](https://greasyfork.org/) je katalog uživatelských skriptů od tvůrců Stylish. The scripts in this catalog undergo moderation, so their credibility is much higher.
 
 ### OpenUserJS.org
 

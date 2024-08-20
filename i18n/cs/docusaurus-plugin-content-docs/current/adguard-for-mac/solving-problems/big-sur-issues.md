@@ -93,7 +93,7 @@ AdGuard nyní dokáže (většinou) bez problémů filtrovat místní proxy. Pok
 
 Konfigurace odchozího proxy v AdGuardu pro macOS v Big Sur:
 
-1. Open AdGuard's settings *Preferences → Network → Outbound proxy*.
+1. Otevřete nastavení AdGuardu *Předvolby → Síť → Odchozí proxy server*.
 2. Podle typu proxy vyberte HTTP, HTTPS, SOCKS4 nebo SOCKS5.
 3. Vyplňte pole:
     - `hosts` je IP adresa vašeho proxy,

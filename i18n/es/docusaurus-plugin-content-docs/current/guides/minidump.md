@@ -18,13 +18,13 @@ La opción de crear el archivo minidump está desactivada de forma predeterminad
 
 ## Configurando Windows para crear el archivo Minidump
 
-Even if you don’t experience any BSoD crash errors, you can still set this option — this is a general recommendation, not necessarily related to AdGuard products. Sigue las instrucciones continuación para crear automáticamente el archivo minidump.
+Incluso si no experimentas ningún error de bloqueo BSoD, aún puedes configurar esta opción; esta es una recomendación general, no necesariamente relacionada con los productos AdGuard. Sigue las instrucciones continuación para crear automáticamente el archivo minidump.
 
  1. Escribe *sysdm.cpl* en la barra de búsqueda de Windows y haz clic en **Abrir**. Aparecerá en pantalla la ventana **Menú del Panel de Control de Propiedades del Sistema**.
 
     :::tip
 
-    Alternatively, click **Settings** → **System** → **About** → **Advanced system settings**.
+    Alternativamente, haz clic en **Configuración** → **Sistema** → **Acerca de** → **Configuración avanzada del sistema**.
 
 
 :::

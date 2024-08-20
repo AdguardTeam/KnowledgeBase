@@ -1,16 +1,16 @@
 ---
-title: Home screen
+title: Pantalla de inicio
 sidebar_position: 1
 ---
 
 :::info
 
-Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. Para ver cómo funciona, [descarga la app de AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard for Windows is an easy-to-use tool that blocks annoying banners, popups, video ads, and trackers. But that's not all: it helps you save traffic, load web pages faster, and protect your computer from undesirable and potentially malicious websites. AdGuard also protects you from phishing websites and keeps your kids away from inappropriate content.
+AdGuard para Windows es una herramienta fácil de usar que bloquea molestos banners, ventanas emergentes, anuncios de vídeo y rastreadores. Pero eso no es todo: te ayuda a ahorrar tráfico, cargar páginas web más rápido y proteger tu ordenador de sitios web indeseables y potencialmente maliciosos. AdGuard también te protege de los sitios web de phishing y mantiene a tus hijos alejados de contenidos inapropiados.
 
-![Main screen \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/home-screen.png)
+![Pantalla principal \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/home-screen.png)
 
-Once you start AdGuard for Windows, you will see the main screen of the app. Its most noticeable detail is the _enable/disable protection_ button. Also, on this screen you can monitor blocked ads, trackers and threats statistics, find out the current version of the app or update it. Furthermore, there are four tabs in the upper right corner: _Settings_, _Support_, _License_, and _About_. Each of these is worth talking about separately.
+Una vez que inicies AdGuard para Windows, verás la pantalla principal de la aplicación. Su detalle más llamativo es el botón _activar/desactivar protección_. Además, en esta pantalla puedes monitorear anuncios bloqueados, rastreadores y estadísticas de amenazas, conocer la versión actual de la aplicación o actualizarla. Además, hay cuatro pestañas en la esquina superior derecha: _Configuración_, _Soporte_, _Licencia_ y _Acerca de_. Merece la pena hablar de cada uno de ellos por separado.

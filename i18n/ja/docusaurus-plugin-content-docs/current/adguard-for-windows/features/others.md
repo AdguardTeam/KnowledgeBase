@@ -1,54 +1,54 @@
 ---
-title: Other features
+title: その他の機能
 sidebar_position: 4
 ---
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
-There are other useful AdGuard options that shouldn't go unnoticed in this article, since they add much to user experience.
+AdGuard のその他の便利なオプションを紹介いたします。
 
 ### サポート
 
-![Support \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
+![サポート \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
 
-By clicking the Support tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
+「サポート」タブをクリックすると、ダイアログボックスが表示され、バグを報告したり、新機能を提案したり、製品に関するご意見を共有したりすることができます。
 
 ### ライセンス
 
-![License \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![ライセンス \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
-This tab contains information about your license. Here you can:
+このタブには、ライセンスに関する情報が表示されています。 ここでできること:
 
-- find out the license type (nightly build, beta or release), the number of devices available for simultaneous connection to AdGuard, the license expiration date;
-- click the button to go to the license purchase page, and activate, reset or recover a license.
+- ライセンスの種類（Nightly版、ベータ版、リリース版）、AdGuard に同時接続可能なデバイスの数、ライセンスの有効期限を確認できる
+- ボタンをクリックすると、ライセンス購入ページに移動し、ライセンスのアクティベーション、リセット、復元などができる
 
 ### AdGuardについて
 
-![About \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![AdGuardについて \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 
-In addition to information about the current version of the program, this tab provides some useful links to Licese agreement, Privacy policy, Acknowledgements, Discussions, and Version history pages.
+このタブには、プログラムの現在のバージョンに関する情報に加え、ライセンス契約、プライバシーポリシー、謝辞、ディスカッション、バージョン履歴ページへの便利なリンクが用載っています。
 
-### Check for updates
+### フィルタ更新を確認する
 
-![Check for updates \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![フィルタ更新を確認する \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
 
-To check for filters and userscripts updates, click the rotating arrows icon in the upper right corner of the app's main screen.
+フィルタやユーザースクリプトの更新があるかどうかを確認するには、アプリのメイン画面の右上にある回転する🔄のアイコンをクリックします。
 
-### Tray menu
+### トレイメニュー
 
-To save you time navigating around AdGuard menus, many of the frequently used options and settings are available from the tray menu. To call the menu, right-click the AdGuard icon in the tray. It will offer you the following options:
+AdGuard メニューを操作する時間を節約するため、頻繁に使用するオプションや設定の多くはトレイメニューから利用できて便利です。 メニューを呼び出すには、トレイの AdGuard アイコンを右クリックします。 以下のようなオプションが表示されます:
 
-- enable protection
-- disable protection: completely or for 30 seconds
-- go to _Settings_
-- open the _Tools_ and _Advanced_ menus
-- check for filter updates
-- check for app updates
-- to recall the last pop-up message
-- reach the _Support_ and _About_ sections
-- close AdGuard, but continue filtering
-- exit AdGuard
+- 保護機能を有効にする
+- 30秒間保護を無効にする・保護機能を完全にオフにする
+- 設定へ移動する
+- 「_ツール_」と「_高度な設定_」メニューを開く
+- フィルタの更新を確認する
+- アプリのアップデートを確認する
+- 最後のポップアップメッセージを呼び出す
+- 「サポート」と「AdGuard について」セクションにアクセスする
+- AdGuardを閉じる (フィルタリング継続)
+- AdGuard を終了する

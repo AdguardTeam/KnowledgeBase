@@ -1,16 +1,16 @@
 ---
-title: Home screen
+title: Tela inicial
 sidebar_position: 1
 ---
 
 :::info
 
-Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard for Windows is an easy-to-use tool that blocks annoying banners, popups, video ads, and trackers. But that's not all: it helps you save traffic, load web pages faster, and protect your computer from undesirable and potentially malicious websites. AdGuard also protects you from phishing websites and keeps your kids away from inappropriate content.
+AdGuard para Windows é uma ferramenta fácil de usar que bloqueia banners, pop-ups, anúncios em vídeo e rastreadores irritantes. Mas isso não é tudo: ajuda a economizar tráfego, carregar páginas da web com mais rapidez e proteger seu computador contra sites indesejáveis e potencialmente maliciosos. O AdGuard também protege você contra sites de phishing e mantém seus filhos longe de conteúdo impróprio.
 
-![Main screen \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/home-screen.png)
+![Tela principal \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/home-screen.png)
 
-Once you start AdGuard for Windows, you will see the main screen of the app. Its most noticeable detail is the _enable/disable protection_ button. Also, on this screen you can monitor blocked ads, trackers and threats statistics, find out the current version of the app or update it. Furthermore, there are four tabs in the upper right corner: _Settings_, _Support_, _License_, and _About_. Each of these is worth talking about separately.
+Depois de iniciar o AdGuard para Windows, você verá a tela principal do aplicativo. Seu detalhe mais notável é o botão _ativar/desativar proteção_. Além disso, nesta tela você pode monitorar anúncios bloqueados, rastreadores e estatísticas de ameaças, descobrir a versão atual do aplicativo ou atualizá-lo. Além disso, existem quatro guias no canto superior direito: _Configurações_, _Suporte_, _Licença_ e _Sobre_. Vale a pena falar sobre cada um deles separadamente.

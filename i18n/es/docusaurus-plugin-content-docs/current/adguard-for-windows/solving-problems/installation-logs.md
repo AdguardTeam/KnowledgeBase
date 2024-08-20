@@ -1,24 +1,30 @@
 ---
-title: How to collect AdGuard installation logs
+title: Cómo recopilar registros de instalación de AdGuard
 sidebar_position: 4
 ---
 
 :::info
 
-Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-If any problems occur during the installation of AdGuard, the support team might ask you to collect and send them AdGuard installation logs. In this case you need to:
+:::note
 
-1. Select *Run* command in Start menu or press *Win + R* on the keyboard.
+Los datos y/o archivos proporcionados en los registros del sistema se procesan de acuerdo con la [la Política de privacidad de AdGuard](https://adguard.com/en/privacy.html).
 
-1. Type in *%tmp%* and click *OK*.
+:::
 
-    ![Open temp folder *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
+Si ocurre algún problema durante la instalación de AdGuard, el equipo de soporte puede pedirte que recopiles y envíes registros de instalación de AdGuard. En este caso, es necesario:
 
-1. In the opened folder select all files starting with `Adguard` and add them to archive (using WinRAR or any other archiving software).
+1. Selecciona el comando *Ejecutar* en el menú Inicio o presiona *Win + R* en el teclado.
 
-    ![AdGuard installation log files *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
+1. Escribe *%tmp%* y haz clic en *OK*.
 
-1. Send this archive to AdGuard tech support at **support@adguard.com**.
+    ![Abrir carpeta temporal *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
+
+1. En la carpeta abierta, selecciona todos los archivos que comiencen con `Adguard` y agrégalos al archivo (usando WinRAR o cualquier otro software de archivo).
+
+    ![Archivos de registro de instalación de AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
+
+1. Envía este archivo al soporte técnico de AdGuard a **support@adguard.com**.

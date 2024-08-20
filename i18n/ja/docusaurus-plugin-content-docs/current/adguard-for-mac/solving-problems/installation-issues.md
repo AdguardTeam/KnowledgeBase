@@ -1,28 +1,28 @@
 ---
-title: Installation problems solving
+title: インストールの問題
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for Mac」についてです。 実際にどのように動作するか確認するには、[AdGuard アプリをダウンロードしてください](https://agrd.io/download-kb-adblock)。
 
 :::
 
-## "Installation failed" error in macOS Catalina
+## macOS Catalina で「インストールに失敗しました」というエラーが発生する
 
-During the installation you can face an error like this:
+インストール中に以下のようなエラーが発生する場合があります:
 
-![Installation error screen](https://cdn.adtidy.org/content/kb/ad_blocker/mac/macerrorscreenEN.jpg)
+![インストールエラー画面](https://cdn.adtidy.org/content/kb/ad_blocker/mac/macerrorscreenEN.jpg)
 
-Follow this instruction to solve the problem:
+問題を解決するには、以下の手順を使ってください:
 
-1. Restart your Mac
-2. As your Mac restarts, press and hold down the *Command(⌘) + R* keys immediately upon hearing the startup chime. Hold the keys until the Apple logo appears to get the computer into Recovery mode.
-3. From the top bar select *Utilities* → *Terminal*, and execute this command: `csrutil disable`
-4. Restart the Mac and log into Administrator's profile
-5. Open the Finder window and select from the top bar *Go* → *Go to Folder* and type `~/private/`
-6. Create a folder named *tmp* and type in your password
-7. Launch AdGuard installation
+1. Macを再起動します。
+2. Mac が再起動したら、起動音が聞こえたらすぐに *Command(⌘) + R* キーを長押しします。 Apple ロゴが表示されるまでキーを押し続け、コンピュータをリカバリモードにします。
+3. 上部のバーから *ユーティリティ* → *ターミナル* を選択し、次のコマンドを入力して実行します: `csrutil enable`
+4. Macを再起動し、管理者のプロファイルにログインします。
+5. Finderウィンドウを開き、上部のバーから選択します *移動* → *フォルダに移動* を選び、 `~/private/` と入力します。
+6. *tmp* という名前のフォルダを作成し、パスワードを入力します。
+7. AdGuardのインストールを開始します。
 
-As the installation is completed, restart your Mac in Recovery mode using the instruction above and execute `csrutil enable` command in Terminal to enable system protection.
+インストールが完了したら、上記の手順でMacをリカバリーモードで再起動し、ターミナルで `csrutil enable` コマンドを実行してシステム保護を有効にします。

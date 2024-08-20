@@ -50,7 +50,7 @@ AdGuard ad-blocking filters include:
 
 The goal of ad-blocking filters is to block all types of advertising on websites, applications, and certain devices that can load ads from the Internet:
 
-- Banners — advertisements displayed as images in various parts of web pages
+- Afişler — web sayfalarının çeşitli bölümlerinde resim olarak görüntülenen reklamlar
 - Teasers — text or graphical ads, often animated, designed to intrigue visitors (sensational headlines, attention-grabbing images) and prompt them to click on the banner (clickbait)
 - Text ads — advertising in the form of text, including links
 - Modal adverts — advertising that suddenly appears over the current content in the form of modal windows

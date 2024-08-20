@@ -3,4 +3,4 @@ title: AdGuard セキュリティ
 sidebar_position: 5
 ---
 
-このコンテンツブロッカーは、いくつかのセキュリティ関連フィルタを統合しています。 _Malware Domains Blocklist_ blocks domains that are notorious for spreading malware and spyware. _Spam404_ protects you from Internet fraudsters. _NoCoin Filter List_ disrupts browser-based cryptominers, such as Coinhive.
+このコンテンツブロッカーは、いくつかのセキュリティ関連フィルタを統合しています。 _Malware Domains Blocklist_ は、マルウェアやスパイウェアの拡散で悪名高いドメインをブロックします。 _Spam404_ は、インターネット詐欺師からあなたを守ります。 _NoCoin Filter List_ は、Coinhiveのようなブラウザベースのクリプトマイナー（仮想通貨をマイニングするマルウェア）の動作を防止します。

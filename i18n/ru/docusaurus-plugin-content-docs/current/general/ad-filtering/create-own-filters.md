@@ -265,25 +265,24 @@ Wildcard-символы поддерживаются для TLD-доменов �
 
 <!-- Please keep them sorted -->
 
-| Модификатор \ Продукты               | [Приложения CoreLibs][cl-apps] | [AdGuard для Chromium][ext-chr] | [AdGuard для Firefox][ext-ff] |     [AdGuard для iOS][ios-app]      |    [AdGuard для Safari][ext-saf]    | [AdGuard Content Blocker][and-cb] |
-| ------------------------------------- |:------------------------------:|:-------------------------------:|:-----------------------------:|:-----------------------------------:|:-----------------------------------:|:---------------------------------:|
-| [$app](#app-modifier)                 |               ✅                |                ❌                |               ❌               |                  ❌                  |                  ❌                  |                 ❌                 |
-| [$denyallow](#denyallow-modifier)     |               ✅                |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ❌                 |
-| [$domain](#domain-modifier)           |               ✅                |                ✅                |               ✅               | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) |                 ✅                 |
-| [$header](#header-modifier)           |               ✅                |                ⏳                |               ⏳               |                  ❌                  |                  ❌                  |                 ❌                 |
-| [$important](#important-modifier)     |               ✅                |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ❌                 |
-| [$match-case](#match-case-modifier)   |               ✅                |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ✅                 |
-| [$method](#method-modifier)           |               ✅                |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                 |
-| [$popup](#popup-modifier)             |              ✅ *               |                ✅                |               ✅               |                 ✅ *                 |                 ✅ *                 |                 ❌                 |
-| [$third-party](#third-party-modifier) |               ✅                |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ✅                 |
-| [$to](#to-modifier)                   |               ✅                |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                 |
+| Модификатор \ Продукты               |    [Приложения CoreLibs][cl-apps]    |   [AdGuard для Chromium][ext-chr]    |    [AdGuard для Firefox][ext-ff]     |      [AdGuard для iOS][ios-app]      |    [AdGuard для Safari][ext-saf]     | [AdGuard Content Blocker][and-cb] |
+| ------------------------------------- |:------------------------------------:|:------------------------------------:|:------------------------------------:|:------------------------------------:|:------------------------------------:|:---------------------------------:|
+| [$app](#app-modifier)                 |                  ✅                   |                  ❌                   |                  ❌                   |                  ❌                   |                  ❌                   |                 ❌                 |
+| [$denyallow](#denyallow-modifier)     |                  ✅                   |                  ✅                   |                  ✅                   |                  ✅                   |                  ✅                   |                 ❌                 |
+| [$domain](#domain-modifier)           |                  ✅                   |                  ✅                   |                  ✅                   | ✅ [*](#domain-modifier-limitations)  | ✅ [*](#domain-modifier-limitations)  |                 ✅                 |
+| [$header](#header-modifier)           |                  ✅                   | 🧩 [**](#header-modifier-limitations) | 🧩 [**](#header-modifier-limitations) |                  ❌                   |                  ❌                   |                 ❌                 |
+| [$important](#important-modifier)     |                  ✅                   |                  ✅                   |                  ✅                   |                  ✅                   |                  ✅                   |                 ❌                 |
+| [$match-case](#match-case-modifier)   |                  ✅                   |                  ✅                   |                  ✅                   |                  ✅                   |                  ✅                   |                 ✅                 |
+| [$method](#method-modifier)           |                  ✅                   |                  ✅                   |                  ✅                   |                  ❌                   |                  ❌                   |                 ❌                 |
+| [$popup](#popup-modifier)             | ✅ [***](#popup-modifier-limitations) |                  ✅                   |                  ✅                   | ✅ [***](#popup-modifier-limitations) | ✅ [***](#popup-modifier-limitations) |                 ❌                 |
+| [$third-party](#third-party-modifier) |                  ✅                   |                  ✅                   |                  ✅                   |                  ✅                   |                  ✅                   |                 ✅                 |
+| [$to](#to-modifier)                   |                  ✅                   |                  ✅                   |                  ✅                   |                  ❌                   |                  ❌                   |                 ❌                 |
 
 :::note
 
 - ✅ — полностью поддерживается
 - ✅ * — поддерживается, но надёжность может быть разной или могут возникнуть ограничения; ознакомьтесь с описанием модификатора для получения подробной информации
-<!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
-- ⏳ — функция, которая реализована или планируется к реализации, но пока недоступна ни в одном продукте
+- 🧩 — может быть уже реализован в nightly или бета-версиях, но пока не поддерживается в релизных версиях
 - ❌ — не поддерживается
 
 :::
@@ -352,7 +351,8 @@ Wildcard-символы поддерживаются для TLD-доменов �
 :::caution Ограничения
 
 - Паттерн правила не может указывать на конкретные домены, например, не может начинаться с `||`.
-- Домены в значении модификатора не могут иметь отрицание (например, `$denyallow=~x.com`) или wildcard домена верхнего уровня `$denyallow=x.*`.
+- Domains in the modifier value cannot be negated, e.g. `$denyallow=~x.com`, or have a wildcard TLD, e.g. `$denyallow=x.*`, or be a regular expression, e.g. `$denyallow=/\.(com\|org)/`.
+- `$denyallow` cannot be used together with [`$to`](#to-modifier). It can be expressed with inverted `$to`: `$denyallow=a.com|b.com` is equivalent to `$to=~a.com|~b.com`.
 
 Правила, нарушающие эти ограничения, считаются недействительными.
 
@@ -450,7 +450,7 @@ Safari не поддерживает одновременно разрешённ
 
 :::info Совместимость
 
-Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later.
+Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
 
 In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.12 or later the `$domain` modifier can be alternatively spelled as `$from`.
 
@@ -469,7 +469,7 @@ h_value = string / regexp
 
 где:
 
-- **`h_name`** (обязательно) — имя HTTP-заголовка. Сопоставляется без учёта регистра символов.
+- **`h_name`** (обязательно) — имя HTTP-заголовка. It is matched case-insensitively.
 - **`h_value`** (опционально) — выражение для сопоставления значения HTTP-заголовка, может быть одним из:
     - **`string`** — последовательность символов. Лексикографически сопоставляется со значением заголовка;
     - **`regexp`** — регулярное выражение, начинается и заканчивается символом `/`. Паттерн работает так же, как и в основных URL-правилах, но символы `/`, `$` и `,` должны быть экранированы с помощью `\`.
@@ -483,9 +483,18 @@ The modifier part, `":" h_value`, may be omitted. В этом случае мо�
 - `@@||example.com^$header=set-cookie:/foo\, bar\$/` разблокирует запросы, ответы которых содержат заголовок `Set-Cookie` со значением `foo, bar$`.
 - `@@||example.com^$header=set-cookie` разблокирует запрос, ответ которого содержит заголовок `Set-Cookie` с любым значением.
 
+##### `$header` modifier limitations {#header-modifier-limitations}
+
+:::caution Ограничения
+
+1. The `$header` modifier can be matched only when headers are received. So if the request is blocked or redirected at an earlier stage, the modifier cannot be applied.
+1. In Adguard Browser Extension, the `$header` modifier is only compatible with [`$csp`](#csp-modifier), [`$removeheader`](#removeheader-modifier), [`$important`](#important-modifier), and [`$badfilter`](#badfilter-modifier).
+
+:::
+
 :::info Совместимость
 
-Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later.
+Rules with the `$header` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
 
 :::
 
@@ -556,12 +565,19 @@ AdGuard будет пытаться закрыть браузерную вкла
 
 - `||domain.com^$popup` — при попытке перехода на сайт `http://domain.com` с любой страницы в браузере, новая вкладка, в которой должен открыться указанный сайт, будет закрыта.
 
+##### `$popup` modifier limitations {#popup-modifier-limitations}
+
+:::caution Limitations
+
+1. The `$popup` modifier works best in AdGuard Browser Extension.
+1. In AdGuard for iOS and AdGuard for Safari, `$popup` rules simply block the page right away.
+1. In AdGuard for Windows, AdGuard for Mac, and AdGuard for Android, the `$popup` modifier may not detect a popup in some cases and it will not be blocked. The `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page. Блокирующая страница сама может провести некоторые проверки и закрыть окно, если это действительно всплывающее окно. В противном случае страница должна быть загружена. Его можно комбинировать с другими модификаторами типа request, такими как `$third-party` и `$important`.
+
+:::
+
 :::info Совместимость
 
-- Модификатор `$popup` лучше всего работает в браузерном расширении AdGuard.
-- В AdGuard для Safari и iOS `$popup`-правила просто заблокируют страницу.
-- В AdGuard для Windows, Mac и Android модификатор `$popup` в некоторых случаях может не обнаружить всплывающее окно, и оно не будет заблокировано. Модификатор `$popup` применяет тип контента `document` со специальным флагом, который передаётся блокирующей странице. Блокирующая страница сама может провести некоторые проверки и закрыть окно, если это действительно всплывающее окно. В противном случае страница должна быть загружена. Его можно комбинировать с другими модификаторами типа request, такими как `$third-party` и `$important`.
-- Правила с модификатором `$popup` не поддерживаются в AdGuard Content Blocker.
+Rules with the `$popup` modifier are not supported by AdGuard Content Blocker.
 
 :::
 
@@ -608,7 +624,7 @@ AdGuard будет пытаться закрыть браузерную вкла
 
 :::caution Ограничения
 
-[`$denyallow`](#denyallow-modifier) нельзя использовать вместе с `$to`. Его можно выразить инвертированным `$to`: `$denyallow=a.com|b.com` эквивалентно `$to=~a.com|~b.com`.
+[`$denyallow`](#denyallow-modifier) cannot be used together with `$to`. It can be expressed with inverted `$to`: `$denyallow=a.com|b.com` is equivalent to `$to=~a.com|~b.com`.
 
 :::
 
@@ -924,7 +940,7 @@ $extension="userscript name\, with \"quote\""
 $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 ```
 
-Здесь `opt(i)` обозначают опции «Антитрекинг»‎, отключаемые правилами. The modifier can contain any number of options (see below) or none. В последнем случае модификатор отключает модуль «Антитрекинг»‎ полностью.
+Здесь `opt(i)` обозначают опции «Антитрекинг»‎, отключаемые правилами. The modifier can contain any number of specific options (see below) or none. В последнем случае модификатор отключает модуль «Антитрекинг»‎ полностью.
 
 Список доступных опций модификатора:
 
@@ -961,13 +977,14 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 
 - Modifier options must be lowercase, i.e. `$stealth=DPI` will be rejected.
 - Параметры модификатора не могут отрицаться, т.е. `$stealth=~3p-cookie` будет отклонён.
+- AdGuard Browser Extension supports only `searchqueries`, `donottrack`, `referrer`, `xclientdata`, `1p-cookie` and `3p-cookie` options.
 
 :::
 
 :::info Совместимость
 
-- Антитрекинг доступен в AdGuard для Windows, Mac и Android и в Браузерном расширении AdGuard. Все остальные продукты будут игнорировать правила с модификатором `$stealth`.
-- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.10 or later.
+- Stealth Mode is available in AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension. Все остальные продукты будут игнорировать правила с модификатором `$stealth`.
+- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
 
 :::
 
@@ -1072,36 +1089,36 @@ domain.com###banner
 
 <!-- Please keep them sorted -->
 
-| Модификатор \ Продукты                     | [Приложения CoreLibs][cl-apps] | [AdGuard для Chromium][ext-chr] | [AdGuard для Firefox][ext-ff] | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
-| ------------------------------------------- |:------------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
-| [$all](#all-modifier)                       |               ✅                |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [$badfilter](#badfilter-modifier)           |               ✅                |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [$cookie](#cookie-modifier)                 |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$csp](#csp-modifier)                       |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$hls](#hls-modifier)                       |               ✅                |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
-| [$inline-font](#inline-font-modifier)       |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$inline-script](#inline-script-modifier)   |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$jsonprune](#jsonprune-modifier)           |               ✅                |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
-| [$xmlprune](#xmlprune-modifier)             |               ✅                |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
-| [$network](#network-modifier)               |               ✅                |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
-| [$permissions](#permissions-modifier)       |               ✅                |                ⏳                |               ⏳               |             ❌              |               ❌               |                 ❌                 |
-| [$redirect](#redirect-modifier)             |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$redirect-rule](#redirect-rule-modifier)   |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$referrerpolicy](#referrerpolicy-modifier) |               ✅                |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
-| [$removeheader](#removeheader-modifier)     |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$removeparam](#removeparam-modifier)       |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$replace](#replace-modifier)               |               ✅                |                ❌                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$urltransform](#urltransform-modifier)     |               ✅                |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
-| [noop](#noop-modifier)                      |               ✅                |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [$empty 👎](#empty-modifier "устарел")       |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$mp4 👎](#mp4-modifier "устарел")           |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| Модификатор \ Продукты                     |      [Приложения CoreLibs][cl-apps]      | [AdGuard для Chromium][ext-chr] |      [AdGuard для Firefox][ext-ff]       | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
+| ------------------------------------------- |:----------------------------------------:|:-------------------------------:|:----------------------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
+| [$all](#all-modifier)                       |                    ✅                     |                ✅                |                    ✅                     |             ✅              |               ✅               |                 ❌                 |
+| [$badfilter](#badfilter-modifier)           |                    ✅                     |                ✅                |                    ✅                     |             ✅              |               ✅               |                 ❌                 |
+| [$cookie](#cookie-modifier)                 |                    ✅                     |                ✅                |                    ✅                     |             ❌              |               ❌               |                 ❌                 |
+| [$csp](#csp-modifier)                       |                    ✅                     |                ✅                |                    ✅                     |             ❌              |               ❌               |                 ❌                 |
+| [$hls](#hls-modifier)                       |                    ✅                     |                ❌                |                    ❌                     |             ❌              |               ❌               |                 ❌                 |
+| [$inline-font](#inline-font-modifier)       |                    ✅                     |                ✅                |                    ✅                     |             ❌              |               ❌               |                 ❌                 |
+| [$inline-script](#inline-script-modifier)   |                    ✅                     |                ✅                |                    ✅                     |             ❌              |               ❌               |                 ❌                 |
+| [$jsonprune](#jsonprune-modifier)           |                    ✅                     |                ❌                |                    ❌                     |             ❌              |               ❌               |                 ❌                 |
+| [$xmlprune](#xmlprune-modifier)             |                    ✅                     |                ❌                |                    ❌                     |             ❌              |               ❌               |                 ❌                 |
+| [$network](#network-modifier)               |                    ✅                     |                ❌                |                    ❌                     |             ❌              |               ❌               |                 ❌                 |
+| [$permissions](#permissions-modifier)       | ✅ [*](#permissions-modifier-limitations) |                🧩                | 🧩 [*](#permissions-modifier-limitations) |             ❌              |               ❌               |                 ❌                 |
+| [$redirect](#redirect-modifier)             |                    ✅                     |                ✅                |                    ✅                     |             ❌              |               ❌               |                 ❌                 |
+| [$redirect-rule](#redirect-rule-modifier)   |                    ✅                     |                ✅                |                    ✅                     |             ❌              |               ❌               |                 ❌                 |
+| [$referrerpolicy](#referrerpolicy-modifier) |                    ✅                     |                ❌                |                    ❌                     |             ❌              |               ❌               |                 ❌                 |
+| [$removeheader](#removeheader-modifier)     |                    ✅                     |                ✅                |                    ✅                     |             ❌              |               ❌               |                 ❌                 |
+| [$removeparam](#removeparam-modifier)       |                    ✅                     |                ✅                |                    ✅                     |             ❌              |               ❌               |                 ❌                 |
+| [$replace](#replace-modifier)               |                    ✅                     |                ❌                |                    ✅                     |             ❌              |               ❌               |                 ❌                 |
+| [$urltransform](#urltransform-modifier)     |                    ✅                     |                ❌                |                    ❌                     |             ❌              |               ❌               |                 ❌                 |
+| [noop](#noop-modifier)                      |                    ✅                     |                ✅                |                    ✅                     |             ✅              |               ✅               |                 ❌                 |
+| [$empty 👎](#empty-modifier "устарел")       |                    ✅                     |                ✅                |                    ✅                     |             ❌              |               ❌               |                 ❌                 |
+| [$mp4 👎](#mp4-modifier "устарел")           |                    ✅                     |                ✅                |                    ✅                     |             ❌              |               ❌               |                 ❌                 |
 
 :::note
 
 - ✅ — полностью поддерживается
 - ✅ * — поддерживается, но надёжность может быть разной или могут возникнуть ограничения; ознакомьтесь с описанием модификатора для получения подробной информации
-<!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
-- ⏳ — функция, которая реализована или планируется к реализации, но пока недоступна ни в одном продукте
+- 🧩 — может быть уже реализован в nightly или бета-версиях, но пока не поддерживается в релизных версиях
+<!-- - ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product -->
 - ❌ — не поддерживается
 - 👎 — deprecated; still supported but will be removed in the future
 
@@ -1922,7 +1939,12 @@ For the requests matching a `$permissions` rule, AdGuard strengthens response's 
 
 **Syntax**
 
-`$permissions` value syntax is similar to the `Permissions-Policy` header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) with one exception: comma that separates several features **MUST** be escaped — see examples below. The list of the available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
+`$permissions` value syntax is identical to that of the `Permissions-Policy` header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) with the following exceptions:
+
+1. A comma that separates multiple features **MUST** be escaped — see examples below.
+2. A pipe character (`|`) can be used to separate features instead of a comma.
+
+The list of available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
 
 `$permissions` value can be empty in the case of exception rules — see examples below.
 
@@ -1932,7 +1954,7 @@ For the requests matching a `$permissions` rule, AdGuard strengthens response's 
 - `@@||example.org/page/*$permissions=autoplay=()` отключает все правила с модификатором `$permissions`, в точности соответствующим `autoplay=()` на всех страницах, подходящих под паттерн правила. Например, правило выше. It is important to note that the exception rule only takes effect in the case of an **exact value match**. For example, if you want to disable the rule  `$permissions=a=()\,b=()`, you need exception rule `@@$permissions=a=()\,b=()`, and **not** `@@$permissions=b=()\,a=()`, **nor** `@@$permissions=b=()` because `b=()\,a=()` or `b=()` does not match with `a=()\,b=()`.
 - `@@||example.org/page/*$permissions` отключает все `$permissions`-правила на всех страницах, подходящих под паттерн правила.
 - `$domain=example.org|example.com,permissions=storage-access=()\, camera=()` запрещает использование Storage Access API для запроса доступа к неразмеченным куки, а также использование устройств видеоввода на сайтах `example.org` и `example.com`.
-- For better compatibility, we also support pipe-separated values for `$permissions` modifier: `$permissions=storage-access=()|camera=()`.
+- `$domain=example.org|example.com,permissions=storage-access=()|camera=()` does the same — a `|` can be used to separate the features instead of an escaped comma.
 - `@@||example.org^$document` или `@@||example.org^$urlblock` отключает все `$permission`-правила на всех страницах, подходящих под паттерн правила.
 
 :::note
@@ -1947,6 +1969,8 @@ If there are multiple `$permissions` rules that match the same request, multiple
 
 :::
 
+##### `$permissions` modifier limitations {#permissions-modifier-limitations}
+
 :::caution Limitations
 
 Firefox ignores the `Permissions-Policy` header. For more information, see [this issue](https://bugzilla.mozilla.org/show_bug.cgi?id=1694922).
@@ -1955,14 +1979,16 @@ Firefox ignores the `Permissions-Policy` header. For more information, see [this
 
 :::caution Ограничения
 
-1. В модификаторе `$permissions` запрещён символ `$`
-1. `$permissions` is compatible with three types of modifiers: `$domain`, `$important`, and `$subdocument`
+1. Characters forbidden in the `$permissions` value: `$`.
+2. `$permissions` is compatible with a limited set of modifiers: `$domain`, `$important`, `$subdocument`, and [content-type modifiers](#content-type-modifiers).
+3. `$permissions` rules that do not have any [content-type modifiers](#content-type-modifiers) will match only requests where content type is `document`.
 
 :::
 
 :::info Совместимость
 
-Rules with the `$permissions` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later.
+- Rules with the `$permissions` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+- Pipe separator `|` instead of escaped comma is supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.14 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
 
 :::
 
@@ -3899,17 +3925,17 @@ For example, `[$domain=example.com,app=test_app]##selector`.
 
 In the modifiers values, the following characters must be escaped: `[`, `]`, `,`, and `\` (unless it is used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like this: `\]`.
 
-| Модификатор \ Продукты               | [Приложения CoreLibs][cl-apps] | [AdGuard для Chromium][ext-chr] | [AdGuard для Firefox][ext-ff] | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
-| ------------------------------------- |:------------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
-| [$app](#non-basic-app-modifier)       |               ✅                |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
-| [$domain](#non-basic-domain-modifier) |               ✅                |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [$path](#non-basic-path-modifier)     |               ✅                |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [$url](#non-basic-url-modifier)       |               ✅                |                ⏳                |               ⏳               |             ❌              |               ❌               |                 ❌                 |
+| Модификатор \ Продукты               | [Приложения CoreLibs][cl-apps] |      [AdGuard для Chromium][ext-chr]       |       [AdGuard для Firefox][ext-ff]        | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
+| ------------------------------------- |:------------------------------:|:------------------------------------------:|:------------------------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
+| [$app](#non-basic-app-modifier)       |               ✅                |                     ❌                      |                     ❌                      |             ❌              |               ❌               |                 ❌                 |
+| [$domain](#non-basic-domain-modifier) |               ✅                |                     ✅                      |                     ✅                      |             ✅              |               ✅               |                 ❌                 |
+| [$path](#non-basic-path-modifier)     |               ✅                |                     ✅                      |                     ✅                      |             ✅              |               ✅               |                 ❌                 |
+| [$url](#non-basic-url-modifier)       |               ✅                | 🧩 [*](#non-basic-url-modifier-limitations) | 🧩 [*](#non-basic-url-modifier-limitations) |             ❌              |               ❌               |                 ❌                 |
 
 :::note
 
 - ✅ — полностью поддерживается
-- ⏳ — реализован или планируется к реализации, но пока недоступен ни в одном продукте
+- 🧩 — может быть уже реализован в nightly или бета-версиях, но пока не поддерживается в релизных версиях
 - ❌ — не поддерживается
 
 :::
@@ -4007,9 +4033,17 @@ where `pattern` is pretty much the same as [`pattern` of the basic rules](#basic
 - `[$url=||example.org^]###adblock` скрывает элемент с атрибутом `id` равным `adblock` в запросах к `example.org` и всем его поддоменам.
 - `[$url=/\[a-z\]+\\.example\\.com^/]##.textad` скрывает `div` с классом `textad` в запросах ко всем доменам, соответствующим регулярному выражению `[a-z]+\.example\.com^`.
 
+#### `$url` modifier limitations {#non-basic-url-modifier-limitations}
+
+:::caution Ограничения
+
+In AdGuard Browser Extension, non-basic `$url` modifier is not compatible with domain-specific rules and other non-basic modifiers — [`$domain`](#non-basic-domain-modifier) and [`$path`](#non-basic-path-modifier). For example, the rule `[$url=/category/*]example.com###textad` will not be applied.
+
+:::
+
 :::info Совместимость
 
-Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later.
+Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
 
 :::
 
@@ -4449,7 +4483,7 @@ The following scriptlets also may be used for debug purposes:
 - ✅ — полностью поддерживается
 - ✅ * — поддерживается, но надёжность может быть разной или могут возникнуть ограничения; ознакомьтесь с описанием модификатора для получения подробной информации
 - 🧩 — может быть уже реализован в nightly или бета-версиях, но пока не поддерживается в релизных версиях
-- ⏳ — реализован или планируется к реализации, но пока недоступен ни в одном продукте
+- ⏳ — функция, которая реализована или планируется к реализации, но пока недоступна ни в одном продукте
 - ❌ — не поддерживается
 - 👎 — deprecated; still supported but will be removed in the future
 - 🚫 — удалён и больше не поддерживается
