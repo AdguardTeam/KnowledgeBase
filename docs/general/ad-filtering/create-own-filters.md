@@ -279,8 +279,8 @@ Basically, they just limit the scope of rule application.
 | [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$method](#method-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$popup](#popup-modifier) | ✅ [***](#popup-modifier-limitations) | ✅ | ✅ | ✅ [***](#popup-modifier-limitations) | ✅ [***](#popup-modifier-limitations) | ❌ |
-| [$strict-first-party](#strict-first-party-modifier) | 🧩 | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$strict-third-party](#strict-third-party-modifier) | 🧩 | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$strict-first-party](#strict-first-party-modifier) | ⏳ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$strict-third-party](#strict-third-party-modifier) | ⏳ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$third-party](#third-party-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$to](#to-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
@@ -289,6 +289,7 @@ Basically, they just limit the scope of rule application.
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
+- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
 - ❌ — not supported
 
 :::
