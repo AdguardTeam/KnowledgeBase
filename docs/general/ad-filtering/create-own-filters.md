@@ -4041,6 +4041,43 @@ In order to achieve cross-blocker compatibility, we also support syntax of uBO a
     example.org#%#//scriptlet('remove-class', 'branding', 'div[class^="inner"]')
     ```
 
+**Exception rules syntax**
+
+Exception rules can disable some scriptlets on particular domains. The syntax for exception scriptlet rules is similar to normal scriptlet rules but uses `#@%#` instead of `#%#`:
+
+```text
+[domains]#@%#//scriptlet([name[, arguments]])
+```
+
+- `domains` — optional, a list of domains where the rule should be applied;
+- `name` — optional, a name of the scriptlet to except from the applying;
+  if not set, all scriptlets will not be applied;
+- `arguments` — optional, a list of `string` arguments to match the same blocking rule and disable it.
+
+**Examples**
+
+1. Disable specific scriptlet rule so only `abort-on-property-read` will be applied
+   only on `example.org` and its subdomains:
+
+    ```adblock
+    example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
+    example.com#@%#//scriptlet("abort-on-property-read", "alert")
+    ```
+
+1. Disable all `abort-on-property-read` scriptlets for `example.com` and its subdomains:
+
+    ```adblock
+    example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
+    example.com#@%#//scriptlet("abort-on-property-read")
+    ```
+
+1. Disable all scriptlets for `example.com` and its subdomains:
+
+    ```adblock
+    example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
+    example.com#@%#//scriptlet()
+    ```
+
 1. Apply `set-constant` and `set-cookie` on any webpage,
    but because of specific scriptlet exception rule
    only `set-constant` scriptlet will be applied on `example.org` and its subdomains:
@@ -4060,45 +4097,7 @@ In order to achieve cross-blocker compatibility, we also support syntax of uBO a
     #%#//scriptlet('adjust-setInterval', 'count', '*', '0.001')
     example.com#%#//scriptlet('set-local-storage-item', 'ALLOW_COOKIES', 'false')
     example.com#@%#//scriptlet()
-
-**Exception rules syntax**
-
-Exception rules can disable some scriptlets on particular domains. The syntax for exception scriptlet rules is similar to normal scriptlet rules but uses `#@%#` instead of `#%#`:
-
-```text
-[domains]#@%#//scriptlet([name[, arguments]])
-```
-
-- `domains` — optional, a list of domains where the rule should be applied;
-- `name` — optional, a name of the scriptlet to except from the applying;
-  if not set, all scriptlets will not be applied;
-- `arguments` — optional, a list of `string` arguments to match the same blocking rule and disable it.
-
-For example, if you want to disable the rule
-
-```adblock
-example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
-```
-
-for the `example.com` domain, the following exception rules could be used:
-
-- to disable a particular scriptlet only:
-
-```adblock
-example.com#@%#//scriptlet("abort-on-property-read", "alert")
-```
-
-- to disable all `abort-on-property-read` scriptlets for `example.com`:
-
-```adblock
-example.com#@%#//scriptlet("abort-on-property-read")
-```
-
-- to disable all scriptlets for `example.com`:
-
-```adblock
-example.com#@%#//scriptlet()
-```
+    ```
 
 Learn more about [how to debug scriptlets](#debug-scriptlets).
 
