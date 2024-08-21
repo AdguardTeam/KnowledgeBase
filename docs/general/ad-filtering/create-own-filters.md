@@ -4089,7 +4089,7 @@ Exception rules can disable some scriptlets on particular domains. The syntax fo
 
 1. Apply `adjust-setInterval` on any webpage,
    and `set-local-storage-item` on `example.com` and its subdomains,
-   but there is also multiple scriptlet exception rule,
+   but there are also multiple scriptlet exception rules,
    so no scriptlet rules will be applied on `example.com` and its subdomains:
 
     ```adblock
