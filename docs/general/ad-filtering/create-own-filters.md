@@ -274,7 +274,7 @@ Basically, they just limit the scope of rule application.
 | [$app](#app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$domain](#domain-modifier) | ✅ | ✅ | ✅ | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) | ✅ |
-| [$header](#header-modifier) | ✅ | 🧩 [**](#header-modifier-limitations) | 🧩 [**](#header-modifier-limitations) | ❌ | ❌ | ❌ |
+| [$header](#header-modifier) | ✅ | ✅ [**](#header-modifier-limitations) | ✅ [**](#header-modifier-limitations) | ❌ | ❌ | ❌ |
 | [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$method](#method-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
@@ -288,7 +288,6 @@ Basically, they just limit the scope of rule application.
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
 - ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
 - ❌ — not supported
 
@@ -1172,7 +1171,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$jsonprune](#jsonprune-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$xmlprune](#xmlprune-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$network](#network-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$permissions](#permissions-modifier) | ✅ [*](#permissions-modifier-limitations) | 🧩 | 🧩 [*](#permissions-modifier-limitations) | ❌ | ❌ | ❌ |
+| [$permissions](#permissions-modifier) | ✅ [*](#permissions-modifier-limitations) | ✅ | ✅ [*](#permissions-modifier-limitations) | ❌ | ❌ | ❌ |
 | [$redirect](#redirect-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$redirect-rule](#redirect-rule-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$referrerpolicy](#referrerpolicy-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
@@ -1188,8 +1187,6 @@ These modifiers are able to completely change the behavior of basic rules.
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
-<!-- - ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product -->
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 
@@ -4161,12 +4158,12 @@ this: `\]`.
 | [$app](#non-basic-app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$domain](#non-basic-domain-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$path](#non-basic-path-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$url](#non-basic-url-modifier) | ✅ | 🧩 [*](#non-basic-url-modifier-limitations) | 🧩 [*](#non-basic-url-modifier-limitations) | ❌ | ❌ | ❌ |
+| [$url](#non-basic-url-modifier) | ✅ | ✅ [*](#non-basic-url-modifier-limitations) | ✅ [*](#non-basic-url-modifier-limitations) | ❌ | ❌ | ❌ |
 
 :::note
 
 - ✅ — fully supported
-- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
+- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 - ❌ — not supported
 
 :::
@@ -4270,7 +4267,7 @@ The [special characters](#basic-rules-special-characters) and [regular expressio
 
 #### `$url` modifier limitations {#non-basic-url-modifier-limitations}
 
-:::caution Restrictions
+:::caution Limitations
 
 In AdGuard Browser Extension, non-basic `$url` modifier is not compatible with domain-specific rules
 and other non-basic modifiers — [`$domain`](#non-basic-domain-modifier) and [`$path`](#non-basic-path-modifier).
