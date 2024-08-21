@@ -35,35 +35,35 @@ We don’t support userstyles that contain `@var` and `@advanced` in the metadat
 
 :::
 
- 1. Open AdGuard settings → *Extensions*
+1. Open AdGuard settings → *Extensions*
 
- 1. Press the [+] button and choose the *Create userstyle* option. A new window will appear on your screen
+1. Press the [+] button and choose the *Create userstyle* option. A new window will appear on your screen
 
- 1. To create a userstyle, first write the title with metadata, for example
+1. To create a userstyle, first write the title with metadata, for example
 
- ```CSS
- /* ==UserStyle==
- @name New userstyle
- @version 1.0
- ==/UserStyle== */
- ```
+    ```CSS
+    /* ==UserStyle==
+    @name New userstyle
+    @version 1.0
+    ==/UserStyle== */
+    ```
 
- 1. Write the CSS part after the meta data. AdGuard supports website domain names matching (`@-moz-document domain(…), …`)
+1. Write the CSS part after the meta data. AdGuard supports website domain names matching (`@-moz-document domain(…), …`)
 
- ```CSS
- body {
-   background: gray;
-   }
- ```
+    ```CSS
+    body {
+      background: gray;
+      }
+    ```
 
- Or
+    Or
 
- ```CSS
- @-moz-document domain('example.org'),
- domain('example.net'),
- domain('example.com') body {
-   background: gray;
-   }
- ```
+    ```CSS
+    @-moz-document domain('example.org'),
+    domain('example.net'),
+    domain('example.com') body {
+      background: gray;
+      }
+    ```
 
- 1. Press *Save and Close*
+1. Press *Save and Close*
