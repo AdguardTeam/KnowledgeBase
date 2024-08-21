@@ -4077,7 +4077,7 @@ Exception rules can disable some scriptlets on particular domains. The syntax fo
     example.com#@%#//scriptlet()
     ```
 
-1. Apply `set-constant` and `set-cookie` on any webpage,
+1. Apply `set-constant` and `set-cookie` to any web page,
    but due to special scriptlet exception rule
    only the `set-constant` scriptlet will be applied on `example.org` and its subdomains:
 
