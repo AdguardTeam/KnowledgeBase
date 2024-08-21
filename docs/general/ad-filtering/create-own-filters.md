@@ -4078,7 +4078,7 @@ Exception rules can disable some scriptlets on particular domains. The syntax fo
     ```
 
 1. Apply `set-constant` and `set-cookie` on any webpage,
-   but because of specific scriptlet exception rule
+   but due to special scriptlet exception rule
    only `set-constant` scriptlet will be applied on `example.org` and its subdomains:
 
     ```adblock
