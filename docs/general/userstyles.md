@@ -69,4 +69,4 @@ We don’t support userstyles that include `@var` and `@advanced` in the metadat
 
  `}`
 
- 5. Press *Save and Close*
+ 1. Press *Save and Close*
