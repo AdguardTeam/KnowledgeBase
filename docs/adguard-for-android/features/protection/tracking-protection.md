@@ -77,4 +77,4 @@ Here are the active features of the pre-configured levels:
 
     k. *Remove X-Client-Data header*. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
 
-You can tweak individual settings in *Tracking protection* and come up with a custom configuration. Every setting has a description that will help you understand its role. [Learn more about what various *Tracking protection* settings do](/general/stealth-mode) and approach them with caution, as some may interfere with the functionality of websites and browser extensions.
+You can tweak individual settings in *Tracking protection* and come up with a custom configuration. Every setting has a description that will help you understand its role. [Read more about what the various *Tracking protection* settings do](/general/stealth-mode) and utilize them cautiously, as some may interfere with the functionality of websites and browser extensions.

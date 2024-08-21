@@ -5,7 +5,7 @@ sidebar_position: 3
 
 Falling prey to phishing and malware remains a common issue. To enhance digital security, we’ve incorporated special filters in AdGuard products to shield you from malicious and phishing websites. To date, we’ve categorized over 15 million sites and built a database of 1.5 million websites known for phishing and malware. Using this database, AdGuard checks the websites you visit to protect you from online threats.
 
-::: note
+:::note
 
 We strictly do not collect or use any information about the websites you visit.
 
