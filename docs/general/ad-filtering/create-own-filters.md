@@ -4055,7 +4055,7 @@ Exception rules can disable some scriptlets on particular domains. The syntax fo
 
 **Examples**
 
-1. Disable specific scriptlet rule so only `abort-on-property-read` will be applied
+1. Disable specific scriptlet rule so that only `abort-on-property-read` is applied
    only on `example.org` and its subdomains:
 
     ```adblock
@@ -4077,7 +4077,7 @@ Exception rules can disable some scriptlets on particular domains. The syntax fo
     example.com#@%#//scriptlet()
     ```
 
-1. Apply `set-constant` and `set-cookie` on any webpage,
+1. Apply `set-constant` and `set-cookie` to any web page,
    but due to special scriptlet exception rule
    only the `set-constant` scriptlet will be applied on `example.org` and its subdomains:
 
