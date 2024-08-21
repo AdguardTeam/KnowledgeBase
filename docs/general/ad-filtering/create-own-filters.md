@@ -4087,7 +4087,7 @@ Exception rules can disable some scriptlets on particular domains. The syntax fo
     example.org#@%#//scriptlet('set-cookie')
     ```
 
-1. Apply `adjust-setInterval` on any webpage,
+1. Apply `adjust-setInterval` to any web page
    and `set-local-storage-item` on `example.com` and its subdomains,
    but there are also multiple scriptlet exception rules,
    so no scriptlet rules will be applied on `example.com` and its subdomains:
