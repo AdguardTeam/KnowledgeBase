@@ -4027,7 +4027,7 @@ AdGuard supports a lot of different scriptlets. In order to achieve cross-blocke
 **Examples**
 
 1. Apply the `abort-on-property-read` scriptlet on all pages of `example.org` and its subdomains,
-   and passes one argument to it (`alert`):
+   and pass it an `alert` argument:
 
     ```adblock
     example.org#%#//scriptlet('abort-on-property-read', 'alert')
