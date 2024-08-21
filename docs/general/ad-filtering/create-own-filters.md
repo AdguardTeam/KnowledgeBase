@@ -4014,7 +4014,7 @@ AdGuard supports a lot of different scriptlets. In order to achieve cross-blocke
 
 :::
 
-**Syntax**
+**Blocking rules syntax**
 
 ```text
 [domains]#%#//scriptlet(name[, arguments])
@@ -4026,13 +4026,21 @@ AdGuard supports a lot of different scriptlets. In order to achieve cross-blocke
 
 **Examples**
 
-```adblock
-example.org#%#//scriptlet("abort-on-property-read", "alert")
-```
+1. Apply the `abort-on-property-read` scriptlet on all pages of `example.org` and its subdomains,
+   and pass it an `alert` argument:
 
-This rule will be applied to `example.org` and subdomains pages and will execute the `abort-on-property-read` scriptlet with the `alert` parameter.
+    ```adblock
+    example.org#%#//scriptlet('abort-on-property-read', 'alert')
+    ```
 
-**Exceptions**
+1. Remove the `branding` class from all `div[class^="inner"]` elements
+   on all pages of `example.org` and its subdomains:
+
+    ```adblock
+    example.org#%#//scriptlet('remove-class', 'branding', 'div[class^="inner"]')
+    ```
+
+**Exception rules syntax**
 
 Exception rules can disable some scriptlets on particular domains. The syntax for exception scriptlet rules is similar to normal scriptlet rules but uses `#@%#` instead of `#%#`:
 
@@ -4045,31 +4053,50 @@ Exception rules can disable some scriptlets on particular domains. The syntax fo
   if not set, all scriptlets will not be applied;
 - `arguments` — optional, a list of `string` arguments to match the same blocking rule and disable it.
 
-For example, if you want to disable the rule
+**Examples**
 
-```adblock
-example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
-```
+1. Disable specific scriptlet rule so that only `abort-on-property-read` is applied
+   only on `example.org` and its subdomains:
 
-for the `example.com` domain, the following exception rules could be used:
+    ```adblock
+    example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
+    example.com#@%#//scriptlet("abort-on-property-read", "alert")
+    ```
 
-- to disable a particular scriptlet only:
+1. Disable all `abort-on-property-read` scriptlets for `example.com` and its subdomains:
 
-```adblock
-example.com#@%#//scriptlet("abort-on-property-read", "alert")
-```
+    ```adblock
+    example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
+    example.com#@%#//scriptlet("abort-on-property-read")
+    ```
 
-- to disable all `abort-on-property-read` scriptlets for `example.com`:
+1. Disable all scriptlets for `example.com` and its subdomains:
 
-```adblock
-example.com#@%#//scriptlet("abort-on-property-read")
-```
+    ```adblock
+    example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
+    example.com#@%#//scriptlet()
+    ```
 
-- to disable all scriptlets for `example.com`:
+1. Apply `set-constant` and `set-cookie` to any web page,
+   but due to special scriptlet exception rule
+   only the `set-constant` scriptlet will be applied on `example.org` and its subdomains:
 
-```adblock
-example.com#@%#//scriptlet()
-```
+    ```adblock
+    #%#//scriptlet('set-constant', 'adList', 'emptyArr')
+    #%#//scriptlet('set-cookie', 'accepted', 'true')
+    example.org#@%#//scriptlet('set-cookie')
+    ```
+
+1. Apply `adjust-setInterval` to any web page
+   and `set-local-storage-item` on `example.com` and its subdomains,
+   but there are also multiple scriptlet exception rules,
+   so no scriptlet rules will be applied on `example.com` and its subdomains:
+
+    ```adblock
+    #%#//scriptlet('adjust-setInterval', 'count', '*', '0.001')
+    example.com#%#//scriptlet('set-local-storage-item', 'ALLOW_COOKIES', 'false')
+    example.com#@%#//scriptlet()
+    ```
 
 Learn more about [how to debug scriptlets](#debug-scriptlets).
 
@@ -4079,7 +4106,7 @@ More information about scriptlets can be found [on GitHub](https://github.com/Ad
 
 Scriptlet rules are not supported by AdGuard Content Blocker.
 
-The full syntax of scriptlet exception rules is supported by AdGuard for Windows, Mac and Android with [CoreLibs] v1.16 or later and AdGuard Browser Extension for Chrome, Firefox and Edge with [TSUrlFilter] v3.0 or later. Previous versions only support scriptlet exception rules that disable specific scriptlets.
+The full syntax of scriptlet exception rules is supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.16 or later, and AdGuard Browser Extension for Chrome, Firefox, and Edge with [TSUrlFilter] v3.0 or later. Previous versions only support exception rules that disable specific scriptlets.
 
 :::
 
