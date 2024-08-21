@@ -19,13 +19,13 @@ This is an experimental feature, so if you encounter any problems while adding o
 
 You can download userstyles from different websites. One of the most popular userstyles websites is [https://userstyles.world/](https://userstyles.world/explore), which we will take as an example for the following instruction on how to set up the userstyle in AdGuard.
 
- 1. Press the link and choose the userstyle you like
+1. Press the link and choose the userstyle you like
 
- 1. Right-click the *Install* button and choose *Copy Link Address*
+1. Right-click the *Install* button and choose *Copy Link Address*
 
- 1. Open AdGuard settings → *Extensions*
+1. Open AdGuard settings → *Extensions*
 
- 1. Press the [+] button and paste the userstyle link
+1. Press the [+] button and paste the userstyle link
 
 If you’re familiar with CSS rules, you can also create the userstyles yourself.
 
@@ -41,32 +41,28 @@ We don’t support userstyles that include `@var` and `@advanced` in the metadat
 
  1. To create a userstyle, first write the title with metadata, for example
 
- `/* ==UserStyle==`
-
- `@name New userstyle`
-
- `@version 1.0`
-
- `==/UserStyle== */`
+ ```
+ /* ==UserStyle==
+ @name New userstyle
+ @version 1.0
+ ==/UserStyle== */
+ ```
 
  1. After the metadata, write the CSS part. AdGuard supports website domain names matching (`@-moz-document domain(…), …`)
 
- `body {`
-
- `   background: gray;`
-
- `}`
+ ```
+ body {
+   background: gray;
+   }
+ ```
 
  Or
 
- `@-moz-document domain('example.org'),`
-
- `domain('example.net'),`
-
- `domain('example.com') body {`
-
- `   background: gray;`
-
- `}`
-
+ ```
+ @-moz-document domain('example.org'),
+ domain('example.net'),
+ domain('example.com') body {
+   background: gray;
+   }
+ ```
  1. Press *Save and Close*
