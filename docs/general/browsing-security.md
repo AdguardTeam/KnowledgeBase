@@ -11,7 +11,7 @@ We strictly do not collect or use any information about the websites you visit.
 
 :::
 
-## How does AdGuard check websites?​
+## How does AdGuard check websites?
 
 Each time you visit a website, your local client exchanges information with our backend server in the form of hashes and hash prefixes. Based on this exchange, the local client determines whether or not the website is listed in the potentially dangerous websites database. There is a difference in the scope of this check for apps and extensions.
 
@@ -61,11 +61,11 @@ AdGuard maintains an extensive database of phishing and malware websites, and it
 
 We automatically analyze complaints about suspicious sites and spend a great deal of time keeping the database up-to-date, cleaning up false positives, and implementing mechanisms to prevent them in the future.
 
-### Want to help?​
+### Want to help?
 
 Any help is welcome! If you encounter a phishing or malware website, please report it to <support@adguard.com>.
 
-### False-positive responses​
+### False-positive responses
 
 Occasionally, some non-malicious websites are added to AdGuard’s filters. We do our best to reduce the percentage of false positives, but they still occur. If you encounter this behavior from AdGuard, please report the false positive to our technical support at <support@adguard.com>.
 
