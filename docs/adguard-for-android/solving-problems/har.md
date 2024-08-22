@@ -17,7 +17,7 @@ HAR files are processed in accordance with [the AdGuard Privacy Policy](https://
 
 ## What are HAR files?
 
-The HAR (HTTP ARchive) format is a JSON-formatted archive file for logging of a web browser's interaction with a site. The specifications of HAR format defines an archival data for HTTP transactions that used by a browser to export detailed information about web pages it loads. More detailed description of HAR file format and its specification you can find at [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/) website.
+The HAR (HTTP ARchive) format is a JSON-formatted archive file for logging of a web browser's interaction with a site. The specifications of HAR format define archival data for HTTP transactions that a browser uses to export detailed information about the web pages it loads. More detailed description of HAR file format and its specification you can find at [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/) website.
 
 ## How to get HAR files
 
@@ -31,7 +31,7 @@ Sometimes we need to analyze it to block specific ads that are difficult to repr
 6. Go back to **Advanced**.
 7. Tap **Export logs and system info** → **Allow** (if necessary) → **Save**.
 
-**Please send the file with logs (that you've got as a result) to the AdGuard support service.**
+**Send the generated file with the logs to the AdGuard support service.**
 
 :::note
 
