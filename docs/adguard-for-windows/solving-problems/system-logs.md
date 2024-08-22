@@ -1,5 +1,5 @@
 ---
-title: How to collect Windows system logs
+title: How to record Windows system logs
 sidebar_position: 5
 ---
 

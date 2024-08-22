@@ -1,5 +1,5 @@
 ---
-title: How to collect debug logs
+title: How to record debug logs
 sidebar_position: 2
 ---
 

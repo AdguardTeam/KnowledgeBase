@@ -6,7 +6,7 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 ## How to contribute
 
-You can help by contributing to the Knowledge Base, all details are described [in this article](https://adguard.com/kb/miscellaneous/contribute/updating-knowledge-base/).
+You can help by contributing to the Knowledge base, all details are described [in this article](https://adguard.com/kb/miscellaneous/contribute/updating-knowledge-base/).
 
 ## How to develop
 
