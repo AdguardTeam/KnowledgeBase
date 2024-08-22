@@ -33,7 +33,7 @@ AdGuard Extra is essentially a mini-program that changes the way pages work in s
 
 **AdGuard Popup Blocker**
 
-This extension prevents popup windows from opening when you view web pages. Some pop-ups are considered useful — they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge base.
+This extension prevents popup windows from opening when you view web pages. Some pop-ups are considered useful — they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge Base.
 
 **Web of Trust**
 
@@ -62,4 +62,4 @@ How does AdGuard VPN work? Without going into technical details, we can say that
 - encrypts your traffic to make it unreadable to third parties
 - lets you configure where to use VPN and where not to (exclusions feature)
 
-To get more information about AdGuard VPN dive into the [AdGuard VPN Knowledge base](https://adguard-vpn.com/kb/).
+To get more information about AdGuard VPN dive into the [AdGuard VPN Knowledge Base](https://adguard-vpn.com/kb/).
