@@ -4508,6 +4508,13 @@ example.com#%#//scriptlet('set-constant', 'test123', '123')
 !#safari_cb_affinity
 ```
 
+:::info Compatibility
+
+<!-- FIXME: specify the app version -->
+The `advanced` value for the `!#safari_cb_affinity` directive is supported by AdGuard for iOS v4.x.x or later.
+
+:::
+
 ### Hints
 
 "Hint" is a special comment, instruction to the filters compiler used on the server side (see [FiltersRegistry]).
