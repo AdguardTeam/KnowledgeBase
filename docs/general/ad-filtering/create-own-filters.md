@@ -4627,7 +4627,7 @@ Open the browser console while on a web page to see the timing statistics for se
 
 **Always printed:**
 
-- `selectorParsed` — text of eventually parsed selector
+- `selectorParsed` — text of the parsed selector, i.e. may differ from the given one
 - `timings` — list of DOM nodes matched by the selector
     - `appliesCount` — total number of times that the selector has been applied on the page
     - `appliesTimings` — time that it took to apply the selector on the page, for each of the instances that it has been applied (in milliseconds)
