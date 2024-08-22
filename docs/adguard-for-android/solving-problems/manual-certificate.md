@@ -13,14 +13,14 @@ To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filt
 
 ![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
 
-Follow these steps to install AdGuard certificate:
+Follow these steps to install the AdGuard certificate:
 
 1. When you see the *HTTPS filtering is off* notification, tap *Enable*.
 
 1. Then you'll be presented with three screens that explain:
     - Why filter HTTPS traffic
     - The safety of this filtering process
-    - The necessity of AdGuard certificate
+    - The necessity of the AdGuard certificate
 
     Consecutively tap *Next* → *Next* → *Save certificate*.
 

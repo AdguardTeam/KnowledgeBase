@@ -561,7 +561,7 @@ This modifier limits the rule scope to requests that use the specified set of HT
 :::caution Restrictions
 
 Rules with mixed negated and not negated values are considered invalid.
-So, for example, the rule `||evil.com^$method=get|~head` will be rejected.
+So, for example, the rule `||evil.com^$method=get|~head` will be ignored.
 
 :::
 
@@ -976,9 +976,9 @@ $extension="userscript name\, with \"quote\""
 
 - `@@||example.com^$extension="AdGuard Assistant"` disables the `AdGuard Assistant` userscript on `example.com` website.
 - `@@||example.com^$extension=MyUserscript` disables the `MyUserscript` userscript on `example.com` website.
-- `@@||example.com^$extension='AdGuard Assistant'|'Popup Blocker'` disables both `AdGuard Assistant` and `Popup Blocker` userscripts on `example.com` website.
+- `@@||example.com^$extension='AdGuard Assistant'|'AdGuard Popup Blocker'` disables both `AdGuard Assistant` and `AdGuard Popup Blocker` userscripts on `example.com` website.
 - `@@||example.com^$extension=~"AdGuard Assistant"` disables all user scripts on `example.com` website, except `AdGuard Assistant`.
-- `@@||example.com^$extension=~"AdGuard Assistant"|~"Popup Blocker"` disables all user scripts on `example.com` website, except `AdGuard Assistant` and `Popup Blocker`.
+- `@@||example.com^$extension=~"AdGuard Assistant"|~"AdGuard Popup Blocker"` disables all user scripts on `example.com` website, except `AdGuard Assistant` and `AdGuard Popup Blocker`.
 - `@@||example.com^$extension` no userscript will work on webpages on `example.com`.
 - `@@||example.com^$extension="AdGuard \"Assistant\""` disables the `AdGuard "Assistant"` userscript on `example.com` website.
 
@@ -991,7 +991,7 @@ $extension="userscript name\, with \"quote\""
 
 #### **`$jsinject`** {#jsinject-modifier}
 
-Forbids adding of javascript code to the page. You can read about scriptlets and javascript rules further.
+Forbids adding of JavaScript code to the page. You can read about scriptlets and javascript rules further.
 
 **Examples**
 
@@ -1259,7 +1259,7 @@ where:
 
 - **`name`** — optional, string or regular expression to match cookie name.
 - **`seconds`** — number of seconds for current time to offset the expiration date of cookie.
-- **`strategy`** — string for [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) strategy to make cookie use.
+- **`strategy`** — string for [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) strategy to be applied to the cookie.
 
 For example,
 
@@ -1274,7 +1274,7 @@ every time AdGuard encounters a cookie called `NAME` in a request to `example.or
 
 **Escaping special characters**
 
-If regular expression `name` is used for matching, two characters must be escaped: comma `,` and dollar sign `$`. Use backslash `\` escape each of them. For example, escaped comma looks like this: `\,`.
+If regular expression `name` is used for matching, two characters must be escaped: comma `,` and dollar sign `$`. Use backslash `\` to escape each of them. For example, escaped comma looks like this: `\,`.
 
 **Examples**
 
@@ -1336,7 +1336,7 @@ In case if multiple `$csp` rules match a single request, we will apply each of t
 :::caution Restrictions
 
 - There are a few characters forbidden in the `$csp` value: `,`, `$`.
-- `$csp` rules support limited list of modifiers: `$domain`, `$important`, `$subdocument`.
+- `$csp` rules support three types of modifiers: `$domain`, `$important`, `$subdocument`.
 - Rules with `report-*` directives are considered invalid.
 
 :::
@@ -1405,7 +1405,7 @@ Some points specific to the operation of `$hls` rules:
 1. When a segment is removed, all of the tags that apply only to that segment are also removed
 1. When there is a tag that applies to multiple segments, and all of those segments are removed, the tag is also removed
 1. Since there is no way to recognize different kinds of tags by syntax, we recognize all of the tags specified by the RFC, plus some non-standard tags that we have seen in the field. Any lines starting with `#` and not recognized as a tag are passed through without modification, and are not matched against the rules
-1. Tags will not be matched if they apply to the entire playlist, and `$hls` rrules cannot be used to remove them, as these rule types are intended for segment removals. If you know what you are doing, you can use `$replace` rules to remove or rewrite just a single tag from the playlist
+1. Tags will not be matched if they apply to the entire playlist, and `$hls` rules cannot be used to remove them, as these rule types are intended for segment removals. If you know what you are doing, you can use `$replace` rules to remove or rewrite just a single tag from the playlist
 
 **An example of a transformation done by the rules:**
 
@@ -2017,7 +2017,7 @@ For the requests matching a `$permissions` rule, AdGuard strengthens response's 
 `$permissions` value syntax is identical to that of the `Permissions-Policy` header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) with the following exceptions:
 
 1. A comma that separates multiple features **MUST** be escaped — see examples below.
-2. A pipe character (`|`) can be used to separate features instead of a comma.
+2. A pipe character (`|`) can be used instead of a comma to separate features.
 
 The list of available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
 
@@ -2401,7 +2401,7 @@ You will need some knowledge of regular expressions to use `$replace` modifier.
 
 - `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc.).
 - `$replace` rules do not apply if the size of the original response is more than 10 MB.
-- `$replace` rules have a higher priority than other basic rules (**including** exception rules). So if a request corresponds to two different rules one of which has the `$replace` modifier, this rule will be applied.
+- `$replace` rules have a higher priority than other basic rules (**including** exception rules). So if a request natches two different rules, one of which has the `$replace` modifier, this rule will be applied.
 - Document-level exception rules with `$content` or `$document` modifiers do disable `$replace` rules for requests matching them.
 - Other document-level exception rules (`$generichide`, `$elemhide` or `$jsinject` modifiers) are applied alongside `$replace` rules. It means that you can modify the page content with a `$replace` rule and disable cosmetic rules there at the same time.
 
@@ -2572,7 +2572,7 @@ Rules with the `$urltransform` modifier are supported by AdGuard for Windows, Ad
 
 #### **`noop`** {#noop-modifier}
 
-`noop` modifier does nothing and can be used solely to increase rules' readability. It consists of a sequence of underscore characters (`_`) of any length and can appear in a rule as many times as needed.
+`noop` modifier does nothing and can be used solely to increase rules' readability. It consists of a sequence of underscore characters (`_`) of arbitrary length and can appear in a rule as often as needed.
 
 **Examples**
 
@@ -2637,14 +2637,13 @@ Each rule has its own priority, which is necessary when several rules match the 
 
 :::note Collisions
 
-When two rules with the same priority match the same request, it depends on the
-filtering engine implementation which one will be selected.
+When two rules with the same priority match the same request, the filter engine implementation determines which one is chosen.
 
 :::
 
 :::info
 
-The concept of rule priorities becomes increasingly important in light of Manifest V3 as the existing rules need to be converted to declarativeNetRequest rules.
+The concept of rule priorities becomes increasingly important in light of Manifest V3, as the existing rules need to be converted to declarativeNetRequest rules.
 
 :::
 
@@ -2742,7 +2741,7 @@ Similarly, specific exceptions add `$document,subdocument`.
 If there is a `$method` modifier in the rule with allowed methods it adds `(50 + 50 / N)`, where `N` is the number of methods allowed, for example:
 `||example.com^$method=GET|POST|PUT` will add `50 + 50 / 3 = 50 + 16.6 = 67` to the total weight of the rule.
 
-If there is a `$header` modifier in the rule it adds `50`.
+If there is a `$header` modifier in the rule, it adds `50`.
 
 #### `$domain` or `$app` with allowed domains or applications {#priority-category-3}
 
@@ -3265,7 +3264,7 @@ The `:matches-css()` pseudo-class allows to match the element by its current sty
 - `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
 - `pseudo-element` — optional, valid standard pseudo-element, e.g. `before`, `after`, `first-line`, etc.
 - `property` — required, a name of CSS property to check the element for
-- `pattern` — required, a value pattern that is using the same simple wildcard matching as in the basic url filtering rules OR a regular expression. For this type of matching, AdGuard always does matching in a case-insensitive manner. In the case of a regular expression, the pattern looks like `/regexp/`.
+- `pattern` — required, a value pattern that is using the same simple wildcard matching as in the basic URL filtering rules or a regular expression. For this type of matching, AdGuard always does matching in a case-insensitive manner. In the case of a regular expression, the pattern looks like `/regexp/`.
 
 **Special characters escaping and unescaping**
 
@@ -3436,7 +3435,7 @@ div:matches-property(memoizedProps.key="null")
 div:matches-property(memoizedProps._owner.src=/ad/)
 ```
 
-:::tip For filters maintainers
+:::tip For filter maintainers
 
 To check properties of a specific element, do the following:
 
@@ -3945,7 +3944,7 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 ## JavaScript rules {#javascript-rules}
 
-AdGuard supports a special type of rules that allows you to inject any javascript code to websites pages.
+AdGuard supports a special type of rules that allows you to inject any JavaScript code to websites pages.
 
 We **strongly recommend** using [scriptlets](#scriptlets) instead of JavaScript rules whenever possible. JS rules are supposed to help with debugging, but as a long-time solution a scriptlet rule should be used.
 
@@ -3956,7 +3955,7 @@ rule = [domains] "#%#" script
 ```
 
 - **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#cosmetic-elemhide-rules).
-- **`script`** — arbitrary javascript code **in one string**.
+- **`script`** — arbitrary JavaScript code **in one string**.
 
 **Examples**
 
@@ -4282,13 +4281,13 @@ and AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later.
 
 :::
 
-## Information for filters maintainers
+## Information for filter maintainers
 
 If you maintain a third-party filter that is known to AdGuard, you might be interested in the information presented in this section. Please note that hints will be applied to registered filters only. The filter is considered to be registered and known by AdGuard, if it is present in the [known filters index](https://filters.adtidy.org/extension/chromium/filters.json). If you want your filter to be registered, please file an issue to [AdguardFilters repo](https://github.com/AdguardTeam/AdguardFilters).
 
 ### Preprocessor directives
 
-We provide preprocessor directives that can be used by filters maintainers to improve compatibility with different ad blockers and provide:
+We provide preprocessor directives that can be used by filter maintainers to improve compatibility with different ad blockers and provide:
 
 - [including a file](#include-directive)
 - [applying rules conditionally by ad blocker type](#conditions-directive)
@@ -4304,7 +4303,7 @@ Preprocessor directives can be used in the user rules or in the custom filters.
 
 #### Including a file {#include-directive}
 
-The `!#include` directive allows to include contents of a specified file into the filter. It supports only files from the same origin to make sure that the filter maintainer is in control of the specified file. The included file can also contain pre- directives (even other `!#include` directives). Ad blockers should consider the case of recursive `!#include` and implement a protection mechanism.
+The `!#include` directive allows to include contents of a specified file into the filter. It supports only files from the same origin to make sure that the filter maintainer is in control of the specified file. The included file can also contain pre-directives (even other `!#include` directives). Ad blockers should consider the case of recursive `!#include` and implement a protection mechanism.
 
 **Syntax**
 
@@ -4314,7 +4313,7 @@ The `!#include` directive allows to include contents of a specified file into th
 
 where `file_path` is a same origin absolute or relative file path to be included.
 
-The files must originate from the same domain but may be located in a different folder.
+The files must originate from the same domain, but may be located in a different folder.
 
 If included file is not found or unavailable, the whole filter update should fail.
 
@@ -4338,7 +4337,7 @@ Filter URL: `https://example.org/path/filter.txt`
 
 #### Conditions {#conditions-directive}
 
-Filters maintainers can use conditions to supply different rules depending on the ad blocker type.
+Filter maintainers can use conditions to supply different rules depending on the ad blocker type.
 A conditional directive beginning with an `!#if` directive must explicitly be terminated with an `!#endif` directive.
 Conditions support all basic logical operators.
 

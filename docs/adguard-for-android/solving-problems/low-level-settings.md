@@ -148,7 +148,7 @@ Here you can specify port ranges that should be filtered.
 
 If this setting is enabled, AdGuard will record blocked HTML elements in *Recent activity*.
 
-#### Scriplet debugging
+#### Scriptlet debugging
 
 If this setting is enabled, debugging in scriptlets will be activated, and the browser log will record when scriptlet rules are applied.
 
