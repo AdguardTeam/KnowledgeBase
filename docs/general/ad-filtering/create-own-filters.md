@@ -4480,6 +4480,7 @@ where:
     - `other` — AdGuard Other content blocker
     - `custom` — AdGuard Custom content blocker
     - `all` — special keyword that means that the rules must be included into **all** content blockers
+    - `advanced` — special keyword to apply rules by the [Advanced protection](/adguard-for-ios/features/advanced-protection) module
 - `rules_list` — list of rules
 - `!#safari_cb_affinity` — end of the block
 
@@ -4496,6 +4497,14 @@ example.org#@#.adBanner
 ! to allowlist basic rule from AdGuard Tracking Protection filter:
 !#safari_cb_affinity(privacy)
 @@||example.org^
+!#safari_cb_affinity
+```
+
+```adblock
+! to apply both basic and advanced rules by the Advanced protection module:
+!#safari_cb_affinity(advanced)
+||ads.com/loader.min.js$domain=example.com
+example.com#%#//scriptlet('set-constant', 'test123', '123')
 !#safari_cb_affinity
 ```
 
