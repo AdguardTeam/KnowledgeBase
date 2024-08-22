@@ -124,6 +124,6 @@ The "Protect from DPI" feature is already implemented in AdGuard for Windows, Ad
 
 :::caution
 
-If this feature is enabled in AdGuard for Windows, it may interfere with ESET antivirus: Anti-DPI will prevent ESET from filtering traffic, leaving blacklisted and malicious sites unblocked.
+If this feature is enabled in AdGuard for Windows, it may interfere with ESET antivirus. Anti-DPI will prevent ESET from filtering traffic, leaving blacklisted and malicious sites unblocked.
 
 :::
