@@ -15,7 +15,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 ### General settings
 
-Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect *Debug logs*](/adguard-for-windows/solving-problems/adguard-logs.md).
+Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [record *Debug logs*](/adguard-for-windows/solving-problems/adguard-logs.md).
 
 ![Advanced Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
 
@@ -80,7 +80,7 @@ There are several websites to which access should be restricted from a PC used b
 
 The module checks the contents of web pages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental Control settings are password-protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results.
 
-In the Parental Control module you can enable the *Safe search* and manage the *blocklist* and the *allowlist* to customize how this option works. You can also check the *Block executable files download* box to prevent your child from downloading and installing software on the computer. There are two more options in the *Parental Control* module: you can select a specific Windows user to be protected by *Parental Control* and set a password to protect AdGuard settings from change.
+In the *Parental Control* module you can enable the *Safe search* and manage the *blocklist* and the *allowlist* to customize how this option works. You can also check the *Block executable files download* box to prevent your child from downloading and installing software on the computer. There are two more options in the *Parental Control* module: you can select a specific Windows user to be protected by *Parental Control* and set a password to protect AdGuard settings from change.
 
 ![Parental Control *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 

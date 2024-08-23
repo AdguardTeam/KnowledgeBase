@@ -1,5 +1,5 @@
 ---
-title: How to collect AdGuard logs
+title: How to record AdGuard logs
 sidebar_position: 3
 ---
 

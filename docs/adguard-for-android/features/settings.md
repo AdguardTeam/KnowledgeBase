@@ -27,7 +27,7 @@ Under *App and filter updates*, you can configure automatic filter updates and s
 
 *Watchdog* helps protect AdGuard from being disabled by the system ([read more about Android's battery save mode](/adguard-for-android/solving-problems/background-work/)). The value you enter will be the interval in seconds between watchdog checks.
 
-*Logging level* defines what data about the app's operation should be logged. By default, the app collects the data about its events. The *Debug* level logs more events — enable it if asked by the AdGuard team to help them get a better understanding of the problem. [Read more about collecting and sending logs](/adguard-for-android/solving-problems/log/)
+*Logging level* defines what data about the app's operation should be logged. By default, the app collects the data about its events. The *Debug* level logs more events — enable it if asked by the AdGuard team to help them get a better understanding of the problem. [Read more about recording and sending logs](/adguard-for-android/solving-problems/log/)
 
 ![Advanced *mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
@@ -59,7 +59,7 @@ If you activate too many filters, some websites may work incorrectly.
 
 ### Userscripts
 
-Userscripts are mini-programs written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
+Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
 
 ![Userscripts *mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 

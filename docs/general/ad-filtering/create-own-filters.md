@@ -2549,7 +2549,7 @@ However, `$urltransform` rules will **not be re-applied** in this case to avoid 
 ||example.com/secondpath^$urltransform=/secondpath/firstpath/
 ```
 
-the request to `https://example.com/fisrtpath` will be transformed to `https://example.com/secondpath` and the second rule will not be applied.
+the request to `https://example.com/firstpath` will be transformed to `https://example.com/secondpath` and the second rule will not be applied.
 
 **Disabling `$urltransform` rules**
 
@@ -2687,7 +2687,7 @@ When dealing with a negated domain, app, method, or content-type, we add **1 poi
 
 #### Defined content-type modifiers, defined methods, defined headers, $all, $popup, specific exceptions {#priority-category-2}
 
-All allowed content types:
+All valid content types:
 
 <!-- Please keep them sorted -->
 
@@ -2930,7 +2930,7 @@ Element hiding rules are not dependent on each other. If there is a rule `exampl
 
 **Limitations**
 
-Safari does not support both permitted and restricted domains. So the rules like `example.org,~foo.example.org##.textad` are invalid in AdGuard for Safari.
+Safari does not support both allowed and disallowed domains. So the rules like `example.org,~foo.example.org##.textad` are invalid in AdGuard for Safari.
 
 **Exceptions**
 
@@ -3074,7 +3074,7 @@ Learn more about [how to debug extended selectors](#selectors-debugging-mode).
 
 :::note
 
-Some pseudo-classes do not require selector before it. Still adding the [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` makes an extended selector easier to read, even though it has no effect on the matching behavior. So selector `#block :has(> .inner)` works exactly like `#block *:has(> .inner)` but second one is more obvious.
+Some pseudo-classes do not require selector before it. Still adding the [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` makes an extended selector easier to read, even though it has no effect on the matching behavior. So selector `#block :has(> .inner)` works exactly like `#block *:has(> .inner)`, but the second one is more obvious.
 
 Pseudo-class names are case-insensitive, e.g. `:HAS()` works as `:has()`. Still the lower-case names are used commonly.
 
@@ -3232,10 +3232,10 @@ the element `div#match` can be selected by any of these extended selectors:
 div:contains(banner)
 
 ! regular expression
-div:contains(/as .* banner/)
+div:contains(/as .*banner/)
 
 ! regular expression with flags
-div:contains(/it .* banner/gi)
+div:contains(/it .*banner/gi)
 ```
 
 :::note
@@ -4627,7 +4627,7 @@ Open the browser console while on a web page to see the timing statistics for se
 
 **Always printed:**
 
-- `selectorParsed` — text of eventually parsed selector
+- `selectorParsed` — text of the parsed selector, may differ from the input one
 - `timings` — list of DOM nodes matched by the selector
     - `appliesCount` — total number of times that the selector has been applied on the page
     - `appliesTimings` — time that it took to apply the selector on the page, for each of the instances that it has been applied (in milliseconds)

@@ -14,7 +14,7 @@ const typesenseApiKey = process.env.SEARCH_API_KEY || 'test';
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'AdGuard Knowledge Base',
-  tagline: 'Knowledge base for AdGuard products',
+  tagline: 'Knowledge Base for AdGuard products',
   url: url,
   baseUrl: baseUrl,
   onBrokenLinks: 'throw',
