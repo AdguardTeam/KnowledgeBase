@@ -17,8 +17,8 @@ jobs:
         with:
           node-version: 18.x
 
-      - name: pnmp install
-        run: pnmp install
+      - name: pnpm install
+        run: pnpm install
 
-      - name: pnmp lint:md
-        run: pnmp lint:md
+      - name: pnpm lint:md
+        run: pnpm lint:md

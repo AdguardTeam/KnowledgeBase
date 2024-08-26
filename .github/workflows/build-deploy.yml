@@ -20,11 +20,11 @@ jobs:
         with:
           node-version: 16.x
 
-      - name: pnmp install
-        run: pnmp install
+      - name: pnpm install
+        run: pnpm install
 
-      - name: pnmp build
-        run: pnmp build
+      - name: pnpm build
+        run: pnpm build
 
       - name: deploy
         if: github.ref == 'refs/heads/master'
