@@ -17,7 +17,10 @@ jobs:
         with:
           node-version: 18.x
 
-      - name: pnpm install
+      - name: install pnpm
+        run: npm install -g pnpm
+
+      - name: install dependencies using pnpm
         run: pnpm install
 
       - name: pnpm lint:md

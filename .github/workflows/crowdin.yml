@@ -19,7 +19,10 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
-      - name: pnpm install
+      - name: install pnpm
+        run: npm install -g pnpm
+
+      - name: install dependencies using pnpm
         run: pnpm install
 
       - name: sync translations

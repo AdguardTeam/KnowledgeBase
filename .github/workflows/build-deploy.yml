@@ -20,10 +20,13 @@ jobs:
         with:
           node-version: 16.x
 
-      - name: pnpm install
+      - name: install pnpm
+        run: npm install -g pnpm
+
+      - name: install dependencies using pnpm
         run: pnpm install
 
-      - name: pnpm build
+      - name: run build
         run: pnpm build
 
       - name: deploy
