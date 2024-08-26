@@ -19,13 +19,13 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
-      - name: yarn install
-        run: yarn install
+      - name: pnmp install
+        run: pnmp install
 
       - name: sync translations
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
-        run: yarn run crowdin:sync
+        run: pnmp run crowdin:sync
 
       - name: create pull request
         uses: peter-evans/create-pull-request@v6

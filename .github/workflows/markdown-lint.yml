@@ -17,8 +17,8 @@ jobs:
         with:
           node-version: 18.x
 
-      - name: yarn install
-        run: yarn install
+      - name: pnmp install
+        run: pnmp install
 
-      - name: yarn lint:md
-        run: yarn lint:md
+      - name: pnmp lint:md
+        run: pnmp lint:md
