@@ -609,6 +609,8 @@ Rules with the `$popup` modifier are not supported by AdGuard Content Blocker.
 
 :::
 
+[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#popup
+
 #### **`$strict-first-party`** {#strict-first-party-modifier}
 
 Works the same as the [`$~third-party`](#third-party-modifier) modifier, but only treats the request as first-party if the referrer and origin have exactly the same hostname.
