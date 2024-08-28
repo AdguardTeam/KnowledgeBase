@@ -9,11 +9,11 @@ Our MV3 extension effectively blocks ads and trackers while seamlessly managing 
 
 ## Where to find our extensions
 
-The **MV3 version** has replaced our old extension in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
+The **MV3 version** will soon replace our old extension in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
 
-The **beta version of MV3** is still available in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
+The **beta version of MV3** will still be available in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
 
-The old beta extension has been renamed to [**AdGuard Ad Blocker MV2**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) and will be supported until Google phases it out.
+The old beta extension will be renamed to [**AdGuard Ad Blocker MV2**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) and will be supported until Google phases it out.
 
 ## Main changes in features and settings
 
