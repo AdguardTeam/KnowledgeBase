@@ -26,9 +26,9 @@ Try to provide as many details as possible — that'll make it easier for us to 
 - Whether it recurred and with what frequency
 - Whether you have a VPN or an antivirus software
 
-### How to record logs
+### How to collect logs
 
-Read about recording logs in dedicated articles for each platform.
+Read about collecting logs in dedicated articles for each platform.
 
 ## How to vote for bug reports or feature requests
 
