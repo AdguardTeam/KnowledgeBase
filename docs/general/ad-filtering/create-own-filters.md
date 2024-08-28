@@ -269,20 +269,20 @@ Basically, they just limit the scope of rule application.
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| [$app](#app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$domain](#domain-modifier) | ✅ | ✅ | ✅ | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) | ✅ |
-| [$header](#header-modifier) | ✅ | ✅ [**](#header-modifier-limitations) | ✅ [**](#header-modifier-limitations) | ❌ | ❌ | ❌ |
-| [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$method](#method-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$popup](#popup-modifier) | ✅ [***](#popup-modifier-limitations) | ✅ | ✅ | ✅ [***](#popup-modifier-limitations) | ✅ [***](#popup-modifier-limitations) | ❌ |
-| [$strict-first-party](#strict-first-party-modifier) | ⏳ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$strict-third-party](#strict-third-party-modifier) | ⏳ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$third-party](#third-party-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$to](#to-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Chrome MV3][ext-mv3] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [$app](#app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$domain](#domain-modifier) | ✅ | ✅ | ✅ [*[1]](#domain-modifier-limitations) | ✅ | ✅ [*[1]](#domain-modifier-limitations) | ✅ [*[1]](#domain-modifier-limitations) | ✅ |
+| [$header](#header-modifier) | ✅ | ✅ [*[2]](#header-modifier-limitations)| ❌ | ✅ [*[2]](#header-modifier-limitations) | ❌ | ❌ | ❌ |
+| [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [$method](#method-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$popup](#popup-modifier) | ✅ [*[3]](#popup-modifier-limitations) | ✅ | ✅ [*[3]](#popup-modifier-limitations) | ✅ | ✅ [*[3]](#popup-modifier-limitations) | ✅ [*[3]](#popup-modifier-limitations) | ❌ |
+| [$strict-first-party](#strict-first-party-modifier) | ⏳ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$strict-third-party](#strict-third-party-modifier) | ⏳ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$third-party](#third-party-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [$to](#to-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
 :::note
 
@@ -1226,29 +1226,29 @@ These modifiers are able to completely change the behavior of basic rules.
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| [$all](#all-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$badfilter](#badfilter-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$cookie](#cookie-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$csp](#csp-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$hls](#hls-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$inline-font](#inline-font-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$inline-script](#inline-script-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$jsonprune](#jsonprune-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$xmlprune](#xmlprune-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$network](#network-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$permissions](#permissions-modifier) | ✅ [*](#permissions-modifier-limitations) | ✅ | ✅ [*](#permissions-modifier-limitations) | ❌ | ❌ | ❌ |
-| [$redirect](#redirect-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$redirect-rule](#redirect-rule-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$referrerpolicy](#referrerpolicy-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$removeheader](#removeheader-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$removeparam](#removeparam-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$replace](#replace-modifier) | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
-| [$urltransform](#urltransform-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [noop](#noop-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$empty 👎](#empty-modifier "deprecated") | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$mp4 👎](#mp4-modifier "deprecated") | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Chrome MV3][ext-mv3] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [$all](#all-modifier) | ✅ | ✅ | ✅ [*[1]](#all-modifier-limitations) | ✅ | ✅ | ✅ | ❌ |
+| [$badfilter](#badfilter-modifier) | ✅ | ✅ | ✅ [*[2]](#badfilter-modifier-limitations)| ✅ | ✅ | ✅ | ❌ |
+| [$cookie](#cookie-modifier) | ✅ | ✅ | ✅ [*[3]](#cookie-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
+| [$csp](#csp-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$hls](#hls-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$inline-font](#inline-font-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$inline-script](#inline-script-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$jsonprune](#jsonprune-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$xmlprune](#xmlprune-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$network](#network-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$permissions](#permissions-modifier) | ✅ [*[4]](#permissions-modifier-limitations) | ✅ | ✅ | ✅ [*[4]](#permissions-modifier-limitations) | ❌ | ❌ | ❌ |
+| [$redirect](#redirect-modifier) | ✅ | ✅ | ✅ [*[5]](#redirect-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
+| [$redirect-rule](#redirect-rule-modifier) | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| [$referrerpolicy](#referrerpolicy-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$removeheader](#removeheader-modifier) | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| [$removeparam](#removeparam-modifier) | ✅ | ✅ | ✅ [*[6]](#removeparam-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
+| [$replace](#replace-modifier) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| [$urltransform](#urltransform-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [noop](#noop-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$empty 👎](#empty-modifier "deprecated") | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$mp4 👎](#mp4-modifier "deprecated") | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
 :::note
 
@@ -4326,12 +4326,12 @@ In the modifiers values, the following characters must be escaped: `[`, `]`, `,`
 it is used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like
 this: `\]`.
 
-| Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| [$app](#non-basic-app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$domain](#non-basic-domain-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$path](#non-basic-path-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$url](#non-basic-url-modifier) | ✅ | ✅ [*](#non-basic-url-modifier-limitations) | ✅ [*](#non-basic-url-modifier-limitations) | ❌ | ❌ | ❌ |
+| Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Chrome MV3][ext-mv3] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [$app](#non-basic-app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$domain](#non-basic-domain-modifier) | ✅ | ✅ | ✅ [*[1]](#non-basic-domain-modifier-limitations) | ✅ | ✅ | ✅ | ❌ |
+| [$path](#non-basic-path-modifier) | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ |
+| [$url](#non-basic-url-modifier) | ✅ | ✅ [*[2]](#non-basic-url-modifier-limitations) | ✅ [*[2]](#non-basic-url-modifier-limitations) | ✅ [*[2]](#non-basic-url-modifier-limitations) | ❌ | ❌ | ❌ |
 
 :::note
 
