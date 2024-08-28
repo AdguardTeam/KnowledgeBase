@@ -15,7 +15,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 ### General settings
 
-Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [record *Debug logs*](/adguard-for-windows/solving-problems/adguard-logs.md).
+Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect *Debug logs*](/adguard-for-windows/solving-problems/adguard-logs.md).
 
 ![Advanced Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
 

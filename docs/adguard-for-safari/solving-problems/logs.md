@@ -1,5 +1,5 @@
 ---
-title: How to record logs in AdGuard for Safari
+title: How to collect logs in AdGuard for Safari
 sidebar_position: 4
 ---
 
@@ -9,9 +9,9 @@ This article is about AdGuard for Safari, which safeguards only your Safari brow
 
 :::
 
-To analyze and diagnose various problems that may occur with AdGuard for Safari, the AdGuard support service may need its log files. These files contain records of errors and other software events. Below are brief instructions on how to record logs and send them to support if necessary.
+To analyze and diagnose various problems that may occur with AdGuard for Safari, the AdGuard support service may need its log files. These files contain records of errors and other software events. Below are brief instructions on how to collect logs and send them to support if necessary.
 
-### How to record logs
+### How to collect logs
 
  1. Open AdGuard for Safari app.
  2. Scroll down and click *Export logs*.
