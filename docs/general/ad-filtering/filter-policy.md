@@ -79,7 +79,7 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 - We do not block ad blocker detection messages that satisfy at least one of the following criteria:
     - They allow the usage of the website and do not overlay the significant amount of content
     - They provide an alternative to disabling an ad blocker given that this alternative does not put the users’ privacy or security at risk
-    - They allow the user to proceed to the website’s content or offer a feasible value exchange that does not put the user’s privacy or security at risk
+    - They allow the user to proceed to the website’s content
     - Some legacy rules may continue to block messages that satisfy one or more of these criteria. If identified, such rules will be handled according to this policy
 - Mining pools are not blocked if they are public and not used solely for malicious purposes
 
