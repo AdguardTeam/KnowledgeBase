@@ -573,7 +573,7 @@ So, for example, the rule `||evil.com^$method=get|~head` will be ignored.
 
 :::info Compatibility
 
-Rules with `$method` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.12 or later and AdGuard Browser Extension for Chrome, Firefox, and Edge with [TSUrlFilter] v2.1.1 or later.
+Rules with `$method` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.12 or later, and AdGuard Browser Extension for Chrome, Firefox, and Edge with [TSUrlFilter] v2.1.1 or later.
 
 :::
 
@@ -627,7 +627,7 @@ You can use a shorter name (alias) instead of using the full modifier name: `$st
 
 :::info Compatibility
 
-Rules with the `$strict-first-party` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.16 or later.
+Rules with the `$strict-first-party` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.16 or later.
 
 :::
 
@@ -647,7 +647,7 @@ You can use a shorter name (alias) instead of using the full modifier name: `$st
 
 :::info Compatibility
 
-Rules with the `$strict-third-party` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.16 or later.
+Rules with the `$strict-third-party` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.16 or later.
 
 :::
 
@@ -700,7 +700,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 
 :::info Compatibility
 
-Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.12 or later and AdGuard Browser Extension with [TSUrlFilter] v2.1.3 or later.
+Rules with the `$to` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.12 or later, and AdGuard Browser Extension with [TSUrlFilter] v2.1.3 or later.
 
 :::
 
@@ -1018,7 +1018,7 @@ $extension="userscript name\, with \"quote\""
 :::info Compatibility
 
 - Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$extension` modifier.
-- Rules with `$extension` modifier with specific userscript name are supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.13 or later.
+- Rules with `$extension` modifier with specific userscript name are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.13 or later.
 
 :::
 
@@ -1576,7 +1576,7 @@ preroll.ts
 
 :::info Compatibility
 
-Rules with the `$hls` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.10 or later.
+Rules with the `$hls` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.10 or later.
 
 :::
 
@@ -1824,7 +1824,7 @@ In AdGuard for Windows, Mac and Android with [CoreLibs] v1.11 or later, JSONPath
 
 :::info Compatibility
 
-Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.10 or later.
+Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.10 or later.
 
 :::
 
@@ -2064,7 +2064,7 @@ When multiple `$xmlprune` rules match the same request, they are applied in lexi
 
 :::info Compatibility
 
-Rules with the `$xmlprune` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.15 or later.
+Rules with the `$xmlprune` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.15 or later.
 
 :::
 
@@ -2162,8 +2162,8 @@ Firefox ignores the `Permissions-Policy` header. For more information, see [this
 
 :::info Compatibility
 
-- Rules with the `$permissions` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later.
-- Pipe separator `|` instead of escaped comma is supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.14 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later.
+- Rules with the `$permissions` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later.
+- Pipe separator `|` instead of escaped comma is supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.14 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later.
 
 :::
 
@@ -2259,7 +2259,7 @@ If a request matches multiple `$referrerpolicy` rules not disabled by exceptions
 
 :::info Compatibility
 
-Rules with the `$referrerpolicy` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.12 or later.
+Rules with the `$referrerpolicy` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.12 or later.
 
 :::
 
@@ -2367,7 +2367,7 @@ This type of rules can be used [**only in trusted filters**](#trusted-filters).
 
 :::info Compatibility
 
-Rules with `$removeheader` modifier are supported by AdGuard for Windows, Mac, and Android, and AdGuard Browser Extension for Chrome, Firefox, and Edge.
+Rules with `$removeheader` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Chrome, Firefox, and Edge.
 
 :::
 
@@ -2557,9 +2557,9 @@ Rules with any other modifiers are considered invalid and will be discarded.
 
 :::info Compatibility
 
-- Rules with `$removeparam` modifier are supported by AdGuard for Windows, AdGuard for Mac and, AdGuard for Android
+- Rules with `$removeparam` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android
   with [CoreLibs] v1.7 or later, and AdGuard Browser Extension v3.6 or later.
-- `$removeparam` syntax for regular expressions is supported AdGuard for Windows, AdGuard for Mac and,
+- `$removeparam` syntax for regular expressions is supported AdGuard for Windows, AdGuard for Mac, and
   AdGuard for Android with [CoreLibs] v1.8 or later, and AdGuard Browser Extension v4.0 or later.
 - `POST` request types are supported only by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.10 or later, and AdGuard Browser Extension with [TSWebExtension] v0.4.6 or later.
 
@@ -2636,7 +2636,7 @@ Rules with `$replace` modifier can be used [**only in trusted filters**](#truste
 
 :::info Compatibility
 
-Rules with `$replace` modifier are supported by AdGuard for Windows, Mac, and Android and AdGuard Browser Extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on the network level.
+Rules with `$replace` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on the network level.
 
 :::
 
@@ -3903,7 +3903,7 @@ In most cases, the basis and cosmetic rules are enough to filter ads. But someti
 
 :::info Compatibility
 
-HTML filtering rules are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser Extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on network level.
+HTML filtering rules are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on network level.
 
 :::
 
@@ -4355,7 +4355,7 @@ The modifier's behavior and syntax perfectly match the corresponding [basic rule
 
 :::info Compatibility
 
-Such rules with `$app` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for and Android.
+Such rules with `$app` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android.
 
 :::
 
@@ -4390,8 +4390,7 @@ it has the same [limitations](#domain-modifier-limitations).
 :::info Compatibility
 
 Such rules with `$domain` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android,
-AdGuard Browser Extension for Chrome, Firefox, Edge,
-and AdGuard Chrome for MV3.
+AdGuard Browser Extension for Chrome, for Chrome MV3, Firefox, and Edge.
 
 :::
 
@@ -4461,7 +4460,7 @@ For example, the rule `[$url=/category/*]example.com###textad` will not be appli
 
 :::info Compatibility
 
-Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.11 or later,
+Rules with the `$url` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.11 or later,
 and AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later.
 
 :::
