@@ -800,7 +800,7 @@ The rule applies to requests for which the type has not been determined or does 
 
 The rule corresponds to requests caused by either `navigator.sendBeacon()` or the `ping` attribute on links.
 
-#### `$ping` modifier limitations {#ping-modifier-limitations}
+##### `$ping` modifier limitations {#ping-modifier-limitations}
 
 :::caution Limitations
 
@@ -865,7 +865,7 @@ Rules with `$subdocument` modifier are not supported by AdGuard Content Blocker.
 
 The rule applies only to WebSocket connections.
 
-#### `$websocket` modifier limitations {#websocket-modifier-limitations}
+##### `$websocket` modifier limitations {#websocket-modifier-limitations}
 
 :::caution Limitations
 
@@ -936,10 +936,10 @@ We recommend to get acquainted with [the Adblock Plus filter cheatsheet](https:/
 | [$content](#content-modifier) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
 | [$elemhide](#elemhide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$extension](#extension-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$jsinject](#jsinject-modifier) | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ |
+| [$jsinject](#jsinject-modifier) | ✅ | ✅ | ✅ [*[1]](#jsinject-modifier-limitations) | ✅ | ✅ | ✅ | ❌ |
 | [$stealth](#stealth-modifier) | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
-| [$urlblock](#urlblock-modifier) | ✅ | ✅ | ❌ | ✅ | ✅ [*[1]](#urlblock-modifier-limitations) | ✅ [*[1]](#urlblock-modifier-limitations) | ❌ |
-| [$genericblock](#genericblock-modifier) | ✅ | ✅ | ❌ | ✅ | ✅ [*[2]](#genericblock-modifier-limitations) | ✅ [*[2]](#genericblock-modifier-limitations) | ❌ |
+| [$urlblock](#urlblock-modifier) | ✅ | ✅ | ❌ | ✅ | ✅ [*[2]](#urlblock-modifier-limitations) | ✅ [*[2]](#urlblock-modifier-limitations) | ❌ |
+| [$genericblock](#genericblock-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ [*[3]](#genericblock-modifier-limitations) | ✅ [*[3]](#genericblock-modifier-limitations) | ❌ |
 | [$generichide](#generichide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$specifichide](#specifichide-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
@@ -1030,12 +1030,11 @@ Forbids adding of JavaScript code to the page. You can read about scriptlets and
 
 - `@@||example.com^$jsinject` disables javascript on pages at `example.com` and all subdomains.
 
-<!-- TODO: uncomment when implemented in AdGuard for Chrome MV3 -->
-<!-- ##### `$jsinject` modifier limitations {#jsinject-modifier-limitations}
+##### `$jsinject` modifier limitations {#jsinject-modifier-limitations}
 :::info Limitations
 Rules with the [`$jsinject`][jsinject-in-mv3] modifier cannot be converted to DNR in [AdGuard for Chrome MV3][ext-mv3].
 We only use them in the [TSUrlFilter] engine to disable some cosmetic rules.
-::: -->
+:::
 
 :::info Compatibility
 
@@ -1116,7 +1115,7 @@ Disables blocking of all requests sent from the pages matching the rule and disa
 
 - `@@||example.com^$urlblock` — any requests sent from the pages at `example.com` and all subdomains are not going to be blocked.
 
-#### `$urlblock` modifier limitations {#urlblock-modifier-limitations}
+##### `$urlblock` modifier limitations {#urlblock-modifier-limitations}
 
 :::caution Limitations
 
@@ -1164,7 +1163,7 @@ Disables generic basic rules on pages that correspond to exception rule.
 
 - `@@||example.com^$genericblock` disables generic basic rules on any pages at `example.com` and all subdomains.
 
-#### `$genericblock` modifier limitations {#genericblock-modifier-limitations}
+##### `$genericblock` modifier limitations {#genericblock-modifier-limitations}
 
 :::caution Limitations
 
@@ -1241,7 +1240,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$permissions](#permissions-modifier) | ✅ [*[4]](#permissions-modifier-limitations) | ✅ | ✅ | ✅ [*[4]](#permissions-modifier-limitations) | ❌ | ❌ | ❌ |
 | [$redirect](#redirect-modifier) | ✅ | ✅ | ✅ [*[5]](#redirect-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
 | [$redirect-rule](#redirect-rule-modifier) | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
-| [$referrerpolicy](#referrerpolicy-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$referrerpolicy](#referrerpolicy-modifier) | ✅ | ❌ | ⏳ | ❌ | ❌ | ❌ | ❌ |
 | [$removeheader](#removeheader-modifier) | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
 | [$removeparam](#removeparam-modifier) | ✅ | ✅ | ✅ [*[6]](#removeparam-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
 | [$replace](#replace-modifier) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
@@ -1254,6 +1253,7 @@ These modifiers are able to completely change the behavior of basic rules.
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
+- ⏳ — feature that is planned to be implemented
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 
@@ -1380,7 +1380,7 @@ Here's how it works:
 - `@@||example.org^$cookie=concept` unblocks a single cookie named `concept`
 - `@@||example.org^$cookie=/^_ga_/` unblocks every cookie that matches the regular expression
 
-#### `$cookie` modifier limitations {#cookie-modifier-limitations}
+##### `$cookie` modifier limitations {#cookie-modifier-limitations}
 
 :::caution Limitations
 
@@ -2202,7 +2202,7 @@ the latter is overridden unless it's also marked as `$important`.
 
 Go to [rules priorities](#rule-priorities) for more details.
 
-#### `$redirect` modifier limitations {#redirect-modifier-limitations}
+##### `$redirect` modifier limitations {#redirect-modifier-limitations}
 
 :::caution Limitations
 
