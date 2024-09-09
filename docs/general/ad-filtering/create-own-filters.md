@@ -1033,8 +1033,10 @@ Forbids adding of JavaScript code to the page. You can read about scriptlets and
 ##### `$jsinject` modifier limitations {#jsinject-modifier-limitations}
 
 :::info Limitations
+
 Rules with the [`$jsinject`][jsinject-in-mv3] modifier cannot be converted to DNR in [AdGuard for Chrome MV3][ext-mv3].
 We only use them in the [TSUrlFilter] engine to disable some cosmetic rules.
+
 :::
 
 :::info Compatibility
