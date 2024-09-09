@@ -1256,7 +1256,7 @@ These modifiers are able to completely change the behavior of basic rules.
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- ⏳ — feature that is planned to be implemented
+- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 
