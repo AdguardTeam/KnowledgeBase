@@ -9,7 +9,7 @@ This article is about AdGuard for iOS, a multifunctional ad blocker that protect
 
 :::
 
-In addition to the excellent ad-blocking capabilities in Safari that regular AdGuard users are already familiar with, the paid version of AdGuard for iOS and AdGuard Pro go even further by offering custom DNS settings. With them, you can block ads not only in Safari but in any app, protect your kids from adult content online, and keep your personal information safe from theft. Let’s explore each of these features in more detail.
+AdGuard Pro and the paid version of AdGuard for iOS include custom DNS settings. With these settings, you can block ads not only in Safari but in any app, protect your kids from adult content online, and keep your personal information safe from theft. Let’s explore each of these features in more detail.
 
 :::note
 
