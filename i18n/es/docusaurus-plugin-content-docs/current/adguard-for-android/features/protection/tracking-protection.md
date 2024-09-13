@@ -77,4 +77,4 @@ Estas son las características activas de los niveles preconfigurados:
 
    k. _Eliminar encabezado X-Client-Data_. Esta función evita que Google Chrome envíe información sobre su versión y modificaciones a los dominios de Google (incluidos DoubleClick y Google Analytics)
 
-Puedes modificar configuraciones individuales en _Protección de seguimiento_ y crear una configuración personalizada. Cada configuración tiene una descripción que te ayudará a comprender su función. [Obtén más información sobre lo que hacen las distintas configuraciones de _Protección de seguimiento_](/general/stealth-mode) y utilízalas con precaución, ya que algunas pueden interferir con la funcionalidad de los sitios web y las extensiones del navegador.
+Puedes modificar configuraciones individuales en _Protección de seguimiento_ y crear una configuración personalizada. Cada configuración tiene una descripción que te ayudará a comprender su función. [Read more about what the various _Tracking protection_ settings do](/general/stealth-mode) and utilize them cautiously, as some may interfere with the functionality of websites and browser extensions.

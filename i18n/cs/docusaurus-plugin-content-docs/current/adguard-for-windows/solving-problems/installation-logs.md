@@ -1,5 +1,5 @@
 ---
-title: Jak shromažďovat záznamy o instalaci AdGuardu
+title: How to collect AdGuard installation logs
 sidebar_position: 4
 ---
 
@@ -17,7 +17,7 @@ Data and/or files provided in system logs are processed in accordance with [the 
 
 Pokud se během instalace AdGuardu vyskytnou nějaké problémy, tým podpory vás může požádat o shromáždění a zaslání záznamů o instalaci AdGuardu. V tomto případě je třeba:
 
-1. V nabídce Start vyberte příkaz *Spustit* nebo na klávesnici stiskněte kombinaci kláves *Win + R*.
+1. Select the *Run* command in Start menu or press *Win + R* on the keyboard.
 
 1. Napište *%tmp%* a klepněte na *OK*.
 

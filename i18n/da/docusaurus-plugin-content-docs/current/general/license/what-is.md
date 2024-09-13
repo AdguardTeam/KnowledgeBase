@@ -1,5 +1,5 @@
 ---
-title: What is AdGuard license?
+title: What is an AdGuard license?
 sidebar_position: 1
 ---
 
@@ -12,7 +12,7 @@ On the [purchase page](https://adguard.com/license.html), you can see the follow
 - **1-year subscriptions** — these licenses are renewed automatically every year or can be extended manually
     - Personal — up to 3 devices
     - Family — up to 9 devices
-- **Lifetime** — these licenses are not time-limited
+- **Lifetime** — these licenses are perpetual
     - Personal — up to 3 devices
     - Family — up to 9 devices
 

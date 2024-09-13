@@ -1,5 +1,5 @@
 ---
-title: Как получить файлы журнала Windows
+title: How to collect Windows system logs
 sidebar_position: 5
 ---
 
@@ -15,7 +15,7 @@ Data and/or files provided in system logs are processed in accordance with [the 
 
 :::
 
-Для анализа и диагностики сложных проблем, связанных с работой AdGuard, службе поддержки могут понадобиться файлы журнала Windows. Журналы Windows содержат записи о системных событиях и ошибках за последнее время. Ниже представлена инструкция для получения и отправки этих файлов.
+Для анализа и диагностики сложных проблем, связанных с работой AdGuard, службе поддержки могут понадобиться файлы журнала Windows. Windows event logs contain records about all errors that occur with the installed software, including AdGuard. Ниже представлена инструкция для получения и отправки этих файлов.
 
 1. Нажмите *Win + R*
 

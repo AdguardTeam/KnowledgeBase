@@ -9,6 +9,6 @@ sidebar_position: 5
 
 :::note 알림
 
-Safari용 AdGuard는 [App Store에서](https://apps.apple.com/app/adguard-for-safari/id1440147259) 무료로 다운로드할 수 있습니다. 자세한 설정 방법은 [지식 창고](/adguard-for-safari/installation/)에서 확인할 수 있습니다.
+Safari용 AdGuard는 [App Store에서](https://apps.apple.com/app/adguard-for-safari/id1440147259) 무료로 다운로드할 수 있습니다. A detailed setup instruction is available in the [Knowledge Base](/adguard-for-safari/installation/).
 
 :::

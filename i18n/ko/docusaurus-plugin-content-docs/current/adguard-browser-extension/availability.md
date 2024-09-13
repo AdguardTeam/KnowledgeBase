@@ -9,18 +9,18 @@ sidebar_position: 2
 
 :::
 
-[AdGuard Browser Extension](https://adguard.com/adguard-browser-extension/overview.html) is a free extension that works in five popular browsers: Chrome, Firefox, Edge, Opera, and Yandex Browser. 브라우저의 부가 기능 스토어나 공식 웹사이트에서 쉽게 찾을 수 있습니다.
+[AdGuard 확장 프로그램](https://adguard.com/adguard-browser-extension/overview.html)은 5개의 인기 브라우저(Chrome, Firefox, Edge, Opera, Yandex 브라우저)에서 작동하는 무료 확장 프로그램입니다. 브라우저의 부가 기능 스토어나 공식 웹사이트에서 쉽게 찾을 수 있습니다.
 
-![AdGuard Browser Extension for Chrome \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
+![Chrome용 AdGuard 확장 프로그램 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
-Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
+브라우저 확장 프로그램에는 기본 광고 차단 기능이 포함되어 있지만 [Windows용 AdGuard](/adguard-for-windows/features/home-screen) 및 [Mac용 AdGuard](/adguard-for-mac/features/main)와 같은 전체 기능을 갖춘 데스크톱 프로그램만큼 강력하지는 않습니다.
 
-![Available for most popular browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
+![대부분의 인기 브라우저에서 사용 가능 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
 :::note
 
-Safari용 독립 실행형 확장 프로그램이 있습니다. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. We had to develop a [separate extension for Safari](/adguard-for-safari/features/general) that has some differences in comparison with the extension described in this article.
+Safari용 독립 실행형 확장 프로그램이 있습니다. [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html)이 출시된 이후 대부분의 광고 차단 확장 프로그램에서 큰 문제가 발생하여 많은 확장 프로그램이 작동을 멈췄습니다. 이 문서에서 설명하는 확장 프로그램과는 다른 별도의 [Safari용 확장 프로그램](/adguard-for-safari/features/general)을 개발해야 했습니다.
 
 :::
 
-**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** So if you want to get full-fledged protection, consider installing a standalone program for your computer. There's [a reason why](adguard-browser-extension/comparison-standalone).
+**각 확장 프로그램의 기능은 브라우저에 의해 엄격하게 제한된다는 것을 잊지 마세요**. 따라서 본격적인 보호를 받으려면 컴퓨터용 독립 실행형 프로그램을 설치하는 것이 좋습니다. [여기](adguard-browser-extension/comparison-standalone)에서 독립 실행형 프로그램을 설치해야 하는 이유를 확인할 수 있습니다.

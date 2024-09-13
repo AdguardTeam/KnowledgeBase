@@ -27,7 +27,7 @@ _Automatización_ te permite administrar AdGuard a través de aplicaciones de ta
 
 _Watchdog_ ayuda a proteger AdGuard para que no sea desactivado por el sistema ([leer más sobre el modo de ahorro de batería de Android](/adguard-for-android/solving-problems/background-work/)). El valor que ingreses será el intervalo en segundos entre verificaciones del watchdog.
 
-_Nivel de registro_ define qué datos sobre el funcionamiento de la aplicación deben registrarse. De forma predeterminada, la aplicación recopila datos sobre sus eventos. El nivel _Debug_ registra más eventos; habilítalo si el equipo de AdGuard lo solicita para ayudarlos a comprender mejor el problema. [Más información sobre la recopilación y el envío de registros](/adguard-for-android/solving-problems/log/)
+_Nivel de registro_ define qué datos sobre el funcionamiento de la aplicación deben registrarse. De forma predeterminada, la aplicación recopila datos sobre sus eventos. El nivel _Debug_ registra más eventos; habilítalo si el equipo de AdGuard lo solicita para ayudarlos a comprender mejor el problema. [Read more about collecting and sending logs](/adguard-for-android/solving-problems/log/)
 
 ![Avanzado \*mobile\_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
@@ -59,7 +59,7 @@ Si activas demasiados filtros, es posible que algunos sitios web funcionen incor
 
 ### Userscripts
 
-Los scripts de usuario son miniprogramas escritos en JavaScript que amplían la funcionalidad de uno o más sitios web. Para instalar scripts de usuario, necesitas un administrador de userscripts especial. AdGuard tiene una funcionalidad de este tipo y te permite añadir usercripts por URL o desde un archivo.
+Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. Para instalar scripts de usuario, necesitas un administrador de userscripts especial. AdGuard tiene una funcionalidad de este tipo y te permite añadir usercripts por URL o desde un archivo.
 
 ![Userscripts \*mobile\_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
@@ -133,7 +133,7 @@ En esta sección podrás encontrar información sobre tu licencia y gestionarla:
 - Compra una licencia de AdGuard para activar [las funciones de la versión completa](/adguard-for-android/features/free-vs-full)
 - Inicia sesión en tu cuenta AdGuard o ingresa la clave de licencia para activar tu licencia
 - Regístrate para activar tu período de prueba de 7 días si aún no lo has usado
-- Actualiza el estado de la licencia desde el menú de tres puntos
+- Refresh the license status from the three-dots menu (⋮)
 - Abre la cuenta AdGuard para administrar tu licencia allí
 - Restablece tu licencia. Por ejemplo, si has alcanzado el límite de dispositivos para esta licencia y deseas aplicar otra
 

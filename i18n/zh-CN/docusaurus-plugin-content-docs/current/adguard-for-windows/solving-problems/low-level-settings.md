@@ -29,9 +29,9 @@ sidebar_position: 7
 
 如果启用，AdGuard 将阻止 Edge 浏览器中的 TCP 快速打开。 要应用设置，请重新启动浏览器。
 
-### 使用 Encrypted ClientHello
+### Use Encrypted Client Hello
 
-每一个加密的互联网连接都有一个未加密的部分， 就是发送的第一个数据包，包含用户要连接的服务器名称。 Encrypted ClientHello（ECH）的技术能够解决该问题，成功加密最后一位未加密的信息。 要使用该功能，请启用「*使用 Encrypted ClientHello*」选项。 本功能使用本地 DNS 代理查找域名的 ECH 配置。 如果找到，将对 ClientHello 数据包进行加密。
+每一个加密的互联网连接都有一个未加密的部分， 就是发送的第一个数据包，包含用户要连接的服务器名称。 Encrypted ClientHello（ECH）的技术能够解决该问题，成功加密最后一位未加密的信息。 To benefit from it, enable the *Use Encrypted Client Hello* option. 本功能使用本地 DNS 代理查找域名的 ECH 配置。 If it is found, Client Hello packet will be encrypted.
 
 ### 检查网站的证书透明度
 
@@ -73,7 +73,7 @@ sidebar_position: 7
 
 ### 随系统启动时显示主窗口
 
-启用此选项可在加载系统后打开 AdGuard 主窗口。 请注意，本功能不影响实际过滤服务是否启动，此设置位于*「设置」→「常规设置」*中。
+启用此选项可在加载系统后打开 AdGuard 主窗口。 Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*.
 
 ### 在系统启动时启用过滤
 
@@ -95,7 +95,7 @@ sidebar_position: 7
 
 ### 启用 HAR 写入
 
-此选项**仅用于调试目的**。 如果勾选复选标记，AdGuard 将创建一个文件，其中包含 HAR 1.2 格式的所有已过滤 HTTP 请求的信息。 这个文件可以用 Fiddler 应用程序分析。 注意，这可能会显著降低网页加载速度。
+此选项**仅用于调试目的**。 Ticking the checkbox will make AdGuard create a file in the HAR 1.2 format containing information about all filtered HTTP requests. 这个文件可以用 Fiddler 应用程序分析。 注意，这可能会显著降低网页加载速度。
 
 ### 在普通的 HTTP 请求中添加额外的空间
 
@@ -115,7 +115,7 @@ Host: example.org`
 
 指定 TCP 数据包碎片的大小，避免深度包检测。 此选项仅影响安全（HTTPS）流量。
 
-如果开启该选项，AdGuard 将初始 TLS 数据包（ClientHello 数据包）分成两部分：第一部分包含指定的长度，第二部分包含剩余的长度，直到整个初始 TLS 数据包的长度。
+If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
 有效值：1–1500。 如果指定无效大小，将使用系统选择的数值。 此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
 

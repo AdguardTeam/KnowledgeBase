@@ -5,22 +5,22 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
-The _App management_ module can be accessed by tapping the _App management_ tab (third icon from the left at the bottom of the screen). В этом разделе вы можете управлять разрешениями и настройками фильтрации для всех приложений, установленных на вашем устройстве.
+Модуль _Управление приложениями_ можно открыть, нажав на вкладку _Управление приложениями_ (третий значок слева в нижней части экрана). В этом разделе вы можете управлять разрешениями и настройками фильтрации для всех приложений, установленных на вашем устройстве.
 
-![App management \*mobile\_border](https://cdn.adtidy.org/blog/new/9sakapp_management.png)
+![Управление приложениями \*mobile\_border](https://cdn.adtidy.org/blog/new/9sakapp_management.png)
 
-By tapping an app, you can manage its settings:
+Нажав на приложение, вы можете управлять его настройками:
 
 - Направлять трафик через AdGuard
-- Block ads and trackers in this app (_Filter app content_)
-- Filter its HTTPS traffic (for non-browser apps, it requires [installing AdGuard's CA certificate into the system store](/adguard-for-android/solving-problems/https-certificate-for-rooted/), available on rooted devices)
+- Блокировать рекламу и трекеры в этом приложении (_Фильтровать трафик_)
+- Фильтрация HTTPS-трафика (для приложений, не являющихся браузерами, требуется [установка сертификата CA AdGuard в системное хранилище](/adguard-for-android/solving-problems/https-certificate-for-rooted/), доступного на устройствах с root-доступом)
 - Направлять его трафик через указанный прокси-сервер или AdGuard VPN в Режиме интеграции
 
-![App management in Chrome \*mobile\_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![Управление приложениями в Chrome \*mobile\_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
 Из контекстного меню вы также можете попасть в статистику приложения.
 
@@ -28,10 +28,10 @@ By tapping an app, you can manage its settings:
 
 ### “Problem-free” and “problematic” apps
 
-Most apps work properly when filtering is enabled. For such apps, their traffic is routed through AdGuard and filtered by default.
+Most apps work correctly when filtered. Трафик таких приложений по умолчанию направляется через AdGuard и фильтруется.
 
-Some apps, such as Download Manager, radio, system apps with UID 1000 and 1001 (for example, Google Play services), are “problematic” and may work incorrectly when routed through AdGuard. Поэтому вы можете увидеть следующее предупреждение при попытке перенаправить или отфильтровать все приложения:
+Некоторые приложения, такие как менеджер загрузок, радио, системные приложения с UID 1000 и 1001 (например, сервисы Google Play), являются «проблемными» и могут работать некорректно при маршрутизации через AdGuard. Поэтому вы можете увидеть следующее предупреждение при попытке перенаправить или отфильтровать все приложения:
 
-![Route all apps dialog \*mobile\_border](https://cdn.adtidy.org/blog/new/6du8jiroute_all.png)
+![Диалоговое окно фильтрации всех приложений \*mobile\_border](https://cdn.adtidy.org/blog/new/6du8jiroute_all.png)
 
-Чтобы все приложения работали правильно, настоятельно рекомендуем направлять через AdGuard только непроблемные. You can see the full list of apps not recommended for filtering in _Settings_ → _General_ → _Advanced_ → _Low-level settings_ → _Protection_ → _Excluded apps_.
+Чтобы все приложения работали правильно, настоятельно рекомендуем направлять через AdGuard только непроблемные. Полный список приложений, которые не рекомендуется фильтровать, можно посмотреть в разделе _Настройки_ → _Основные_ → _Расширенные_ → _Низкоуровневые настройки_ → _Защита_ → _Исключённые приложения_.

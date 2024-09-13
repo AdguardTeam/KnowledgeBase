@@ -126,7 +126,7 @@ Or you can configure remove parameters manually:
 
 :::
 
-**Don't forget to include the password as an extra and mention package name and class. You need to do so for every intent.**
+**Don't forget to include the password, package name, and class. You need to do so for every intent.**
 
 Extra: `password:*******`
 
@@ -136,7 +136,7 @@ Class: `com.adguard.android.receiver.AutomationReceiver`
 
 :::note
 
-Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. If you used this feature, please pay attention and use the new name.
+Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. If this function is used, remember to update to the new name.
 
 :::
 

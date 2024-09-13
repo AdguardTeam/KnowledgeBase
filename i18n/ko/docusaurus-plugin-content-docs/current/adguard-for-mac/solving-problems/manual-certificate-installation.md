@@ -1,28 +1,28 @@
 ---
-title: Manual certificate installation
+title: 수동 인증서 설치
 sidebar_position: 1
 ---
 
 :::정보
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+이 글은 시스템 수준에서 기기를 보호하는 광고 차단기인 Mac용 AdGuard에 관한 내용입니다. 이용하고자 한다면 [AdGuard 앱을 다운로드](https://agrd.io/download-kb-adblock)해 보세요.
 
 :::
 
-AdGuard for Mac needs to install the root certificate into certificate storage to be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering). This action is performed automatically in most cases as you run the app for the first time, but users of Gecko-based browsers (Firefox, Waterfox etc.) who have a master password set up for their browser may be required to take additional steps (because these browsers use their own certificate storage instead of the system one). They need to either enter the master password when prompted (to grant AdGuard access to the certificate storage) or manually install the certificate.
+Mac용 AdGuard는 루트 인증서를 인증서 저장소에 설치해야 [HTTPS 트래픽을 필터링](/general/https-filtering/what-is-https-filtering)할 수 있습니다. 대부분의 경우 이 작업은 애플리케이션을 처음 시작할 때 자동으로 수행되지만 브라우저에 마스터 비밀번호를 설치한 Gecko 기반 브라우저(Firefox, Waterfox 등) 사용자는 이러한 브라우저가 시스템 인증서 대신 자체 인증서 저장소를 사용하므로 추가 단계를 수행해야 할 수 있습니다. 메시지가 표시되면 마스터 비밀번호를 입력하거나(인증서 저장소에 대한 AdGuard 액세스 권한을 부여하기 위해) 인증서를 수동으로 설치해야 합니다.
 
-To manually install the certificate into Firefox-like browser:
+Firefox와 같은 브라우저에 인증서를 수동으로 설치하려면 다음 단계를 따르세요.
 
-  1. Open *Preferences*
+  1. *설정*을 엽니다.
 
-  2. Go to *Privacy & Security* → *Certificates*
+  2. *개인정보 보호와 보안* → *인증서*로 이동합니다.
 
-  3. Click *View Certificates*
+  3. *인증서 보기*를 클릭합니다.
 
-  4. Navigate to the *Authorities* tab and click the *Import...* button
+  4. *인증* 탭으로 이동하여 *가져오기...* 버튼을 클릭합니다.
 
-  5. Select file `/Library/Application Support/AdGuard Software/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` or just download it from http://local.adguard.org/cert using a Chromium-based browser (e.g Google Chrome or new Edge) and with a HTTPS-filtering running in AdGuard
+  5. `Library/Application Support/AdGuard Software/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` 파일을 선택하거나 http://local.adguard.org/cert 에서 Chromium 기반 브라우저(예: Google Chrome 또는 새로운 Edge)를 사용하여 AdGard에서 HTTPS 필터링이 실행되는 상태에서 다운로드합니다.
 
-Exact actions required for different Gecko-based browsers may vary, but the general sequence and the path to `AdGuard Personal CA.cer` file will be the same.
+Gecko 기반 브라우저마다 필요한 정확한 작업은 다를 수 있지만 일반적인 순서와 `AdGuard Personal CA.cer` 파일의 경로는 동일합니다.
 
-P.S.: For [Setapp application version](https://setapp.com/apps/adguard) the file path is the following: `/Library/Application Support/com.adguard.mac.adguard-setapp/AdguardCore/Adguard Personal CA.cer`
+참고: [Setapp 애플리케이션 버전의](https://setapp.com/apps/adguard) 경우 파일 경로는 다음과 같습니다: `/Library/Application Support/com.adguard.mac.adguard-setapp/AdguardCore/Adguard Personal CA.cer`.

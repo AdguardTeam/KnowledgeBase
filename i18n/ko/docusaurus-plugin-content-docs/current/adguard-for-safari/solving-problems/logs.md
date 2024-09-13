@@ -1,5 +1,5 @@
 ---
-title: Safari용 AdGuard에서 로그를 수집하는 방법
+title: How to collect logs in AdGuard for Safari
 sidebar_position: 4
 ---
 
@@ -9,9 +9,9 @@ Safari 브라우저만 보호하는 Safari용 AdGuard에 관한 문서입니다.
 
 :::
 
-Safari용 AdGuard에서 발생할 수 있는 문제를 분석하고 진단하기 위해 AdGuard 고객지원 서비스에서 로그 파일이 필요할 수 있습니다. 이러한 파일에는 오류 및 기타 소프트웨어 이벤트에 대한 기록이 포함되어 있습니다. 다음은 로그를 수집하여 지원팀에 보내는 방법에 대한 간단한 지침입니다.
+Safari용 AdGuard에서 발생할 수 있는 문제를 분석하고 진단하기 위해 AdGuard 고객지원 서비스에서 로그 파일이 필요할 수 있습니다. 이러한 파일에는 오류 및 기타 소프트웨어 이벤트에 대한 기록이 포함되어 있습니다. Below are brief instructions on how to collect logs and send them to support if necessary.
 
-### 로그 수집 방법
+### How to collect logs
 
 1. Safari용 AdGuard 앱을 엽니다.
 2. 아래로 스크롤하여 **로그 내보내기**를 클릭합니다.

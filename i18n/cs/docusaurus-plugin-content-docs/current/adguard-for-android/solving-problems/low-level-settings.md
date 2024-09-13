@@ -113,7 +113,7 @@ Používejte to pouze pro účely ladění!
 
 #### Encrypted Client Hello
 
-Každé šifrované internetové připojení má i nešifrovanou část. Jedná se o první paket, který obsahuje název serveru, ke kterému se připojujete. Technologie Encrypted Client Hello má tento problém vyřešit a zašifrovat poslední kousek nešifrovaných informací. Chcete-li to využít, povolte možnost *Encrypted ClientHello*. K vyhledání konfigurace ECH pro danou doménu používá místní proxy server DNS. Pokud je nalezen, paket ClientHello bude zašifrován.
+Každé šifrované internetové připojení má i nešifrovanou část. Jedná se o první paket, který obsahuje název serveru, ke kterému se připojujete. Technologie Encrypted Client Hello má tento problém vyřešit a zašifrovat poslední kousek nešifrovaných informací. Chcete-li to využít, povolte možnost *Encrypted ClientHello*. K vyhledání konfigurace ECH pro danou doménu používá místní proxy server DNS. If it is found, Client Hello packet will be encrypted.
 
 #### Kontrola OCSP
 
@@ -147,7 +147,7 @@ Zde můžete zadat rozsahy portů, které mají být filtrovány.
 
 Pokud je toto nastavení povoleno, AdGuard zaznamená blokované prvky HTML v sekci *Nedávná aktivita*.
 
-#### Ladění skripletů
+#### Scriptlet debugging
 
 Pokud je toto nastavení povoleno, bude aktivováno ladění skriptletů a protokol prohlížeče bude zaznamenávat použití pravidel skriptletů.
 

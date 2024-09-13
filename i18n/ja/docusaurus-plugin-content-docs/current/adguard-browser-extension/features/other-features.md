@@ -13,13 +13,13 @@ AdGuard ブラウザ拡張機能の主要なモジュールのほかに、拡張
 
 ## 一般 {#general}
 
-「一般」タブでは、検索連動型広告とウェブサイトの自己宣伝広告の許可、言語特化フィルタの自動有効化の設定、フィルタの更新間隔の指定、などができます。
+In the _General_ tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters' update interval, etc.
 
 ![General \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
 また、「[フィッシング詐欺とマルウェアからの保護](/general/browsing-security)」を有効にすることもできます。
 
-「設定をエクスポート」ボタンをクリックすることで、設定内容を保存することができます。 設定内容は .json ファイルとして保存されます。 保存した設定内容をブラウザ拡張機能にアップロードするには、「設定をインポート」機能を使用してください。 この機能を使用して、簡単に異なる設定プロファイルに切り替えたり、設定内容を異なるブラウザ間で転送したりできます。
+「設定をエクスポート」ボタンをクリックすることで、設定内容を保存することができます。 設定内容は .json ファイルとして保存されます。 To import the previously saved settings configuration, use the _Import settings_ function. この機能を使用して、簡単に異なる設定プロファイルに切り替えたり、設定内容を異なるブラウザ間で転送したりできます。
 
 ## 追加設定 {#misc}
 
@@ -33,6 +33,6 @@ AdGuard ブラウザ拡張機能の主要なモジュールのほかに、拡張
 
 ## AdGuard について {#about}
 
-「AdGuardについて」セクションには現在のバージョンに関する情報と、利用許諾契約(EULA)、プライバシーポリシー、Githubリポジトリへのリンクがあります。
+In the _About_ section, you can find info about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
 
 ![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)

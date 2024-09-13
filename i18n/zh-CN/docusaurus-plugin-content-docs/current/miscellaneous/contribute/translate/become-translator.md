@@ -3,7 +3,7 @@ title: 如何成为翻译员/审核员
 sidebar_position: 2
 ---
 
-如您想要加入 AdGuard 翻译员家族，首先，请前往 [Crowdin](https://crowdin.com/) 并注册/登录。
+If you want to help translate AdGuard products, websites, and Knowledge Bases, go to [Crowdin](https://crowdin.com/) and sign up/log in there.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/main-screen.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Manual certificate installation
+title: 手动安装证书
 sidebar_position: 1
 ---
 
@@ -9,20 +9,20 @@ sidebar_position: 1
 
 :::
 
-AdGuard for Mac needs to install the root certificate into certificate storage to be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering). This action is performed automatically in most cases as you run the app for the first time, but users of Gecko-based browsers (Firefox, Waterfox etc.) who have a master password set up for their browser may be required to take additional steps (because these browsers use their own certificate storage instead of the system one). They need to either enter the master password when prompted (to grant AdGuard access to the certificate storage) or manually install the certificate.
+Mac 版 AdGuard 需要将 Root 证书安装到证书存储区，才能进行 [HTTPS 流量过滤](/general/https-filtering/what-is-https-filtering)。 在大多数情况下，首次运行应用程序时会自动执行安装，但使用基于 Gecko 的浏览器（如 Firefox、Waterfox）的用户，如果在浏览器中设置了主密码，则可能需要采取额外步骤（这些浏览器使用自己的证书存储空间，而不是系统的证书存储空间）。 出现提示时（允许 AdGuard 访问证书存储），必须输入主密码或手动安装证书。
 
-To manually install the certificate into Firefox-like browser:
+如何在基于 Firefox 的浏览器中手动安装证书：
 
-  1. Open *Preferences*
+  1. 打开「*首选项*」。
 
-  2. Go to *Privacy & Security* → *Certificates*
+  2. 转至「*隐私和安全*」→「*证书*」。
 
-  3. Click *View Certificates*
+  3. 点击「*查看证书*」。
 
-  4. Navigate to the *Authorities* tab and click the *Import...* button
+  4. 转到「*授权*」选项卡并单击「*导入..*」按钮。
 
-  5. Select file `/Library/Application Support/AdGuard Software/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` or just download it from http://local.adguard.org/cert using a Chromium-based browser (e.g Google Chrome or new Edge) and with a HTTPS-filtering running in AdGuard
+  5. 选择 `/Library/Application Support/AdGuard Software/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` 文件，或使用基于 Chromium 的浏览器（如 Google Chrome 或新 Edge）并在 AdGuard 中运行 HTTPS 过滤，从 http://local.adguard.org/cert 下载该文件。
 
-Exact actions required for different Gecko-based browsers may vary, but the general sequence and the path to `AdGuard Personal CA.cer` file will be the same.
+不同的基于 Gecko 的浏览器可能需要不同的操作，但 `AdGuard Personal CA.cer ` 文件的基本流程和路径是相同的。
 
-P.S.: For [Setapp application version](https://setapp.com/apps/adguard) the file path is the following: `/Library/Application Support/com.adguard.mac.adguard-setapp/AdguardCore/Adguard Personal CA.cer`
+附注：[Setapp 应用程序版本](https://setapp.com/apps/adguard)的文件路径如下：`/Library/Application Support/com.adguard.mac.adguard-setapp/AdguardCore/Adguard Personal CA.cer`

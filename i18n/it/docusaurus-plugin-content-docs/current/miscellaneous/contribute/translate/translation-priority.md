@@ -3,13 +3,13 @@ title: Come dare priorità alle traduzioni dei file di Crowdin
 sidebar_position: 5
 ---
 
-Esistono cinque progetti principali di AdGuard su Crowdin — [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base) e [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
+There are five major AdGuard projects on Crowdin — [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge Base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), and [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
 
 Non abbiamo delle linee guida chiare su con quali file o prodotti del progetto *AdGuard Applications* iniziare. Basta scegliere qualsiasi prodotto tu preferisca.
 
 Ci sono soltanto un paio di cose che vogliamo menzionare:
 
-- Puoi visualizzare l'app soltanto nelle lingue per cui tutte le traduzioni sono state completate su Crowdin;
+- The app is only available to users in those languages for which all translations have been completed on Crowdin;
 - Consigliamo di tradurre le descrizioni per i negozi di app in un secondo momento, poiché, senza la traduzione dei prodotti stessi, le descrizioni non saranno necessarie.
 
 La situazione è differente nel progetto *AdGuard Websites*. Le lingue possono essere aggiunte al sito anche se non è disponibile una serie completa di traduzioni. Tuttavia, ciò dipende da quali file sono già stati tradotti. Ecco perché ti consigliamo di iniziare con i file più importanti, elencati di seguito:

@@ -13,13 +13,13 @@ sidebar_position: 3
 
 ## Основные {#general}
 
-Во вкладке _Основные_ можно разрешить поисковую рекламу их [саморекламу сайтов](/general/ad-filtering/search-ads), включить автоматическую активацию языковых фильтров, указать интервал обновления фильтров и т. д.
+In the _General_ tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters' update interval, etc.
 
 ![Основные \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
 Кроме того, здесь вы можете включить [_Защиту от фишинга и вредоносных программ_](/general/browsing-security).
 
-Вы можете сохранить конфигурацию настроек, нажав кнопку _Экспорт настроек_. Настройки будут сохранены в виде файла .json. Чтобы загрузить ранее сохранённую конфигурацию настроек, воспользуйтесь функцией _Импорт настроек_. Вы можете использовать эту функцию, чтобы быстро переключаться между различными профилями настроек или перенести конфигурацию настроек в другой браузер.
+Вы можете сохранить конфигурацию настроек, нажав кнопку _Экспорт настроек_. Настройки будут сохранены в виде файла .json. To import the previously saved settings configuration, use the _Import settings_ function. Вы можете использовать эту функцию, чтобы быстро переключаться между различными профилями настроек или перенести конфигурацию настроек в другой браузер.
 
 ## Дополнительные настройки {#misc}
 
@@ -33,6 +33,6 @@ sidebar_position: 3
 
 ## О программе {#about}
 
-В разделе _О программе_ можно найти информацию о текущей версии, ссылки на Лицензионное соглашение и Политику конфиденциальности, а также на репозиторий браузерного расширения на GitHub.
+In the _About_ section, you can find info about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
 
 ![О программе \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)

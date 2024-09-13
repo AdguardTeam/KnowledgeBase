@@ -79,7 +79,7 @@ Povolením této možnosti zabráníte prohlížeči odesílat data GPS, která 
 
 ### Blokovat Flash {#flash}
 
-Zásuvný modul Flash Player je stále zranitelnější vůči online hrozbám, jako jsou viry a hackeři a může také výrazně ovlivnit dobu načítání webových stránek. Zapnutím tohoto nastavení zablokuje AdGuard schopnost prohlížečů detekovat komponenty (například zásuvné moduly a objekty ActiveXObject), které umožňují zobrazování obsahu ve formátu Flash. To ve skutečnosti znamená, že prohlížeče nejsou schopny podporovat Flash.
+The Flash Player plugin has become increasingly vulnerable to such online threats as viruses and hackers; it may also significantly increase website load times. Zapnutím tohoto nastavení zablokuje AdGuard schopnost prohlížečů detekovat komponenty (například zásuvné moduly a objekty ActiveXObject), které umožňují zobrazování obsahu ve formátu Flash. To ve skutečnosti znamená, že prohlížeče nejsou schopny podporovat Flash.
 
 ### Blokovat Java {#java}
 
@@ -95,7 +95,7 @@ Můžete také nastavit libovolnou hodnotu pro referenční ID zadáním do pole
 
 Všimněte si, že aby bylo možné filtrovat provoz, aplikace AdGuard "zachycují" požadavky prohlížeče na server. Požadavky na reklamní, sledovací a phishingové servery mohou být před odesláním na server změněny nebo zcela zablokovány. Totéž platí pro možnost *Skrýt třetím stranám referenční ID*: AdGuard zachycuje požadavky HTTP(S) zejména za účelem odstranění nebo změny hlavičky referenčního ID, pokud je tato možnost povolena. K tomu však dochází až poté, co tyto požadavky "opustí" prohlížeč. To znamená, že pokud sledujete referenční ID v prohlížeči (například pomocí vývojářských nástrojů Chrome), uvidíte původní referenční ID, protože požadavek ještě nedorazil do AdGuardu. Můžete použít software jako [Fiddler](https://www.telerik.com/fiddler), abyste se ujistili, že referenční ID bude změněno správně.
 
-Naopak, vzhledem k povaze všech rozšíření prohlížeče funguje Rozšíření prohlížeče AdGuard "uvnitř" prohlížeče. Hned na místě změní referenční ID, takže nástroje pro vývojáře budou zobrazovat požadované referenční ID pro vaše požadavky.
+On the other hand, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. Hned na místě změní referenční ID, takže nástroje pro vývojáře budou zobrazovat požadované referenční ID pro vaše požadavky.
 
 ### Skrýt User-Agent {#useragent}
 
@@ -120,3 +120,9 @@ Deep Packet Inspection je systém hloubkové analýzy a filtrování provozu pod
 AdGuard může upravit odchozí data paketů tak, aby klient nespadal pod kritéria blokování DPI. To znamená, že zapnutím této možnosti mohou uživatelé získat přístup k požadovanému obsahu. V současné době nelze obejít všechny systémy DPI, ale neustále pracujeme na jejich vylepšení.
 
 Funkce "Ochrana před DPI" je již implementována v aplikacích AdGuard pro Windows, AdGuard pro Mac a AdGuard pro Android.
+
+:::caution
+
+If this feature is enabled in AdGuard for Windows, it may interfere with ESET antivirus. Anti-DPI will prevent ESET from filtering traffic, leaving blacklisted and malicious websites unblocked.
+
+:::

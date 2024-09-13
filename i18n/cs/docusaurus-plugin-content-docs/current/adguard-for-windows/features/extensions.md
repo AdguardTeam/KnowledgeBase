@@ -29,11 +29,11 @@ AdGuard Assistant je starší asistent, kterého můžete použít, pokud pro v�
 
 Jedná se o vlastní rozšíření určené k boji proti technice opětovného vkládání blokovaných reklam — tzv. obcházení blokátorů reklam/opětovnému vkládání reklam. V obou případech se jedná o pokročilé metody proti blokování reklam, jejichž obliba mezi inzerenty stále roste.
 
-AdGuard Extra je v podstatě miniprogram, který změní fungování stránek tak, aby bylo pro weby mnohem obtížnější používat výše uvedené metody k obcházení blokátorů.
+AdGuard Extra is essentially a miniprogram that changes the way pages work in such a way that it becomes much more difficult for sites to use the above-mentioned methods to bypass blockers.
 
 **AdGuard blokátor vyskakovacích oken**
 
-Toto rozšíření zabraňuje otevírání vyskakovacích oken při prohlížení webových stránek. Některá vyskakovací okna jsou považována za užitečná — mohou obsahovat nastavení pro správu webu nebo další referenční informace zobrazené po kliknutí na odkaz. Proto můžete blokátor v případě potřeby vypnout. Toto rozšíření nefunguje ani na webových stránkách přidaných do seznamu výjimek AdGuardu. Ve výchozím nastavení je vypnuto, ale můžete jej zapnout v nastavení aplikace. Podrobnější informace o tomto rozšíření najdete v naší databázi znalostí.
+Toto rozšíření zabraňuje otevírání vyskakovacích oken při prohlížení webových stránek. Některá vyskakovací okna jsou považována za užitečná — mohou obsahovat nastavení pro správu webu nebo další referenční informace zobrazené po kliknutí na odkaz. Proto můžete blokátor v případě potřeby vypnout. Toto rozšíření nefunguje ani na webových stránkách přidaných do seznamu výjimek AdGuardu. Ve výchozím nastavení je vypnuto, ale můžete jej zapnout v nastavení aplikace. You will find more detailed information about this extension in our Knowledge Base.
 
 **Web of Trust**
 
@@ -41,7 +41,7 @@ Web of Trust vám umožňuje zjistit pověst každého webu na základě názor�
 
 ### Síť
 
-Předposlední modul je věnován filtrování sítě a najdete v něm další možnosti související se sítí. Dvě z nich jsou standardně povoleny: _Povolit filtrování provozu_ a _Filtrovat HTTPS protokol_. Jedná se o důležitá dodatečná opatření pro lepší filtrování webového prostoru. Většina webů nyní používá protokol HTTPS a totéž platí i pro reklamu. Z mnoha webů, jako je youtube.com, facebook.com a twitter.com, není možné odstranit reklamy bez HTTPS filtrování. Pokud tedy nemáte pádný důvod, ponechte funkci _Filtrovat HTTPS protokol_ povolenou.
+Předposlední modul je věnován filtrování sítě a najdete v něm další možnosti související se sítí. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS_. Jedná se o důležitá dodatečná opatření pro lepší filtrování webového prostoru. Většina webů nyní používá protokol HTTPS a totéž platí i pro reklamu. From many sites, like youtube.com, facebook.com and x.com, it is impossible to remove ads without HTTPS filtering. So keep the _Filter HTTPS_ feature enabled unless you have a strong reason not to.
 
 ![Network Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 

@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -43,9 +43,9 @@ AdGuard для Android не представлен на Google Play: Google за
 
     ![Установка приложений из неизвестных источников *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
-    You will then be asked to read AdGuard's *License agreement* and *Privacy policy*. Вы также можете помочь в разработке продукта. Для этого отметьте галочкой *Отправлять автоматические отчёты об ошибках* и *Отправлять технические данные и информацию о взаимодействиях*. Затем нажмите *Продолжить*.
+    Затем вам будет предложено ознакомиться с *Лицензионным соглашением AdGuard* и *Политикой конфиденциальности*. Вы также можете помочь в разработке продукта. Для этого отметьте галочкой *Отправлять автоматические отчёты об ошибках* и *Отправлять технические данные и информацию о взаимодействиях*. Затем нажмите *Продолжить*.
 
-    ![Privacy policy *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
+    ![Политика конфиденциальности *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
 
 1. **Создайте локальный VPN**. Чтобы фильтровать весь трафик непосредственно на вашем устройстве, а не направлять его через удалённый сервер, AdGuard необходимо установить VPN-соединение.
 

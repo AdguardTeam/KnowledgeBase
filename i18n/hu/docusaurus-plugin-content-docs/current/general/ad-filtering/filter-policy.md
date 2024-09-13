@@ -41,12 +41,14 @@ Az AdGuard hirdetésblokkoló szűrői a következők:
 - AdGuard Alap szűrő
 - AdGuard Mobile App Banners szűrő
 - Regionális szűrők nyelvi elvek szerint - kínai, holland, francia, német, japán, orosz, spanyol/portugál, török, német, ukrán és orosz
+- AdGuard Quick Fixes filter
 
 ### Ezeknek a szűrőknek a célja
 
 - A **Az** alapszűrő célja, hogy blokkolja a hirdetéseket az angol nyelvű webhelyeken és azokon, amelyekhez nincs külön szűrő. Általános szűrési szabályokat is tartalmaz, amelyek nyelvtől függetlenül minden webhelyre vonatkoznak
 - A **mobilhirdetések szűrője** blokkolja a hirdetéseket a weboldalak mobilverzióiban és a mobilalkalmazásokban. Nincs nyelvi szegmentálás
 - **A** regionális szűrők ugyanazt az irányelvet követik, mint a **Alapszűrő**, de bizonyos nyelvű webhelyekre korlátozva
+- **Quick Fixes filter** used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension.
 
 A hirdetésblokkoló szűrők célja, hogy blokkoljanak mindenféle hirdetést olyan webhelyeken, alkalmazásokban és bizonyos eszközökön, amelyek hirdetéseket tölthetnek be az internetről:
 

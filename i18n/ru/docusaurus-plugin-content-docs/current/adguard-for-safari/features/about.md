@@ -9,6 +9,6 @@ sidebar_position: 5
 
 :::note Напоминание
 
-AdGuard для Safari можно бесплатно загрузить [из App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). Подробная инструкция по установке — в нашей [Базе знаний](/adguard-for-safari/installation/).
+AdGuard для Safari можно бесплатно загрузить [из App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). A detailed setup instruction is available in the [Knowledge Base](/adguard-for-safari/installation/).
 
 :::

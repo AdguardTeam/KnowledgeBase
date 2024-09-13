@@ -21,7 +21,7 @@ Hintergrundinformationen:
 
 In früheren Versionen der AdGuard-Browsererweiterung (vor v3.5) hat die Erweiterung, wenn sie zusammen mit AdGuard für Windows installiert wurde, die Funktionen des Assistenten übernommen, das Filtern selbst eingestellt und sich auf die App verlassen, die dies übernimmt.
 
-Die Erweiterung und die App funktionierten zusammen, aber manchmal schlug die Integration fehl. Some websites would stop being protected by the desktop program and be backed up only by the less powerful extension.
+Die Erweiterung und die App funktionierten zusammen, aber manchmal schlug die Integration fehl. The protection normally provided by the desktop program would stop on certain sites, where only the less powerful extension would then provide protection.
 
 Bei der Verwendung des Browser-Assistenten spielen all diese Probleme keine Rolle, da es im Grunde genommen keine Konflikte geben kann. Die Rolle des Browser-Assistenten ist klar definiert, und er kann die Funktion der App nicht beeinträchtigen, so dass es keinen Grund zur Sorge gibt.
 
@@ -42,4 +42,4 @@ Legacy-Assistent ist die ältere Version des Assistenten, die nur ein Benutzersk
 
 Wenn Sie den Browser-Assistenten für Ihren Standardbrowser installieren möchten, können Sie dies direkt in den Einstellungen der App tun. Sie haben auch die Möglichkeit, ihn für andere Browser zu installieren.
 
-Der AdGuard Browser-Assistent ist für alle gängigen Browser verfügbar: Chrome, Firefox, Edge, Opera und Yandex. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and tap the *Install* button. Das war's!
+Der AdGuard Browser-Assistent ist für alle gängigen Browser verfügbar: Chrome, Firefox, Edge, Opera und Yandex. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and then the *Install* button. Das war's!

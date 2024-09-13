@@ -35,4 +35,4 @@ sidebar_position: 2
 
 ## 联系支持
 
-支持标签包含有帮助用户解决问题，查找 AdGuard 产品相关问题答案的有用链接。 它们分为六个部分：常见问题解答，发送错误报告/功能请求，报告拦截错误，联系支持，知识库和讨论。
+支持标签包含有帮助用户解决问题，查找 AdGuard 产品相关问题答案的有用链接。 They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge Base, and Discuss.
