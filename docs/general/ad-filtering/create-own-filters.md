@@ -288,7 +288,7 @@ Basically, they just limit the scope of rule application.
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
+- ⏳ — feature that is planned to be implemented but is not yet available in any product
 - ❌ — not supported
 
 :::
@@ -1256,7 +1256,7 @@ These modifiers are able to completely change the behavior of basic rules.
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
+- ⏳ — feature that is planned to be implemented but is not yet available in any product
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 
@@ -4915,7 +4915,7 @@ The following scriptlets also may be used for debug purposes:
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
-- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
+- ⏳ — feature that is planned to be implemented but is not yet available in any product
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 - 🚫 — removed and no longer supported
