@@ -220,7 +220,7 @@ as well as any value of the `@preprocessor` metadata tag except `default`.
 The metadata block is written using CSS-style comments, starting with `===UserStyle===` and ending with `===/UserStyle===`.
 All metadata tags that are supported for userscripts are also supported for userstyles, although some of them have no meaning and are ignored.
 `@var` and `@advanced` tags are not supported.
-The only value of the `@preprocessor` tag that is supported is `default`.
+The only supported value of the `@preprocessor` tag is `default`.
 
 ### Content
 
