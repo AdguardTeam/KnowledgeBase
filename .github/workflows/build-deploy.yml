@@ -67,8 +67,8 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            github.issues.createComment({
-              issue_number: ${{ github.event.number }},
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: `Preview was deployed to: https://${{ env.BRANCH_NAME }}.${{ env.BASE_DOMAIN }}${{ env.BASE_PATH }}`
