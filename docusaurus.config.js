@@ -4,8 +4,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const ADGUARD_WEBSITE_URL = 'https://adguard.com';
 
 // Allow to parameterise the website URL and the base path during the build.
-const url = process.env.URL || 'https://adguardteam.github.io';
-const baseUrl = process.env.BASE_URL || '/KnowledgeBase/';
+// By default, the website is published to Cloudflare Pages.
+const url = process.env.URL || 'https://kb-adg.pages.dev';
+const baseUrl = process.env.BASE_URL || '/';
 
 const typesenseCollectionName = process.env.SEARCH_COLLECTION || 'docusaurus-2';
 const typesenseHost = process.env.SEARCH_HOST || 'xxx-1.a1.typesense.net';
