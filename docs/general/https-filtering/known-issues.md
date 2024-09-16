@@ -57,7 +57,7 @@ On AdGuard for Windows:
 
 On AdGuard for Mac:
 
-1. Click the gear icon. On the dropdown menu, go to *Advanced* → *Filtering log...*.
+1. Click the gear icon. In the drop-down menu, go to *Advanced* → *Filtering log...*.
 2. Click the request whose certificate you want to inspect to open the request details.
 3. Click *View certificate*.
 
