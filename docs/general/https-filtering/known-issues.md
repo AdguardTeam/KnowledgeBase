@@ -51,7 +51,7 @@ On AdGuard for Windows:
 
 1. Go to *Settings* → *Ad Blocker* → *Filtering log*.
 2. Click the request whose certificate you want to inspect to open the request details.
-3. Under the section *TLS*, click *View website certificate*.
+3. Under the *TLS* section, click *View website certificate*.
 
 ![Filtering log AdGuard for Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-win.png)
 
