@@ -5,13 +5,13 @@ sidebar_position: 2
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
-_Settings_ is the section that requires the most attention. Burası, uygulamayı gereksinimlerinizi tam olarak karşılayacak şekilde yapılandırabileceğiniz yerdir: yalnızca sizi rahatsız edenleri engeller, güvenilir sağlayıcının DNS sunucusunu kullanır, üçüncü taraf tanımlama bilgilerini kaldırır, vb.
+_Ayarlar_ en fazla dikkat gerektiren bölümdür. Burası, uygulamayı gereksinimlerinizi tam olarak karşılayacak şekilde yapılandırabileceğiniz yerdir: yalnızca sizi rahatsız edenleri engeller, güvenilir sağlayıcının DNS sunucusunu kullanır, üçüncü taraf tanımlama bilgilerini kaldırır, vb.
 
-![Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings.png)
+![Ayarlar \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings.png)
 
 ### Genel ayarlar
 
@@ -19,18 +19,19 @@ Burada dili ve temayı (Koyu veya Açık) ayarlayabilir, AdGuard'ın sistem baş
 
 ![Advanced Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
 
-At the very bottom of the screen you will find _Advanced Settings_. Changing some of them mindlessly may potentially cause problems with AdGuard's performance, break the Internet connection or compromise your security and privacy. Bu nedenle, bu bölümü yalnızca ne yaptığınızdan eminseniz veya destek ekibimiz size sormuşsa açmanızı tavsiye ederiz. If you want to know what can be set up in _Advanced Setting_ read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
+Ekranın en altında _Gelişmiş Ayarlar_ öğesini bulacaksınız. Changing some of them mindlessly may potentially cause problems with AdGuard's performance, break the Internet connection or compromise your security and privacy. Bu nedenle, bu bölümü yalnızca ne yaptığınızdan eminseniz veya destek ekibimiz size sormuşsa açmanızı tavsiye ederiz. _Gelişmiş Ayarlar_ öğesinde nelerin ayarlanabileceğini öğrenmek istiyorsanız [özel makaleyi](/adguard-for-windows/solving-problems/low-level-settings.md) okuyun.
 
 ### Reklam Engelleyici
 
 Bu, ziyaret ettiğiniz sitelerden ve cihazınızda yüklü uygulamalardan reklamları kaldıran Windows için AdGuard'ın ana modülüdür. To filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers AdGuard uses different filters: groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). To understand what filters are and how they work read [this article](/general/ad-filtering/how-ad-blocking-works).
 
-![Ad Blocker \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/ad-blocker.png)
+![Reklam engelleyici \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
 Reklam Engelleyici modülünde şunları yapabilirsiniz:
 
 - enable automatic activation of language-specific filters,
 - disable [search ads and self-promotion](/general/ad-filtering/search-ads) blocking,
+- disable ads in the Start menu on Windows 11,
 - activate pre-installed filters such as _AdGuard Base filter_,
 - install filters from the list or add a custom filter by clicking the _Add a filter_ button,
 - make changes to existing rule groups using the _Filter editor_ button,
@@ -39,7 +40,7 @@ Reklam Engelleyici modülünde şunları yapabilirsiniz:
 
 Before you start manually writing your own rules read our detailed [syntax guide](/general/ad-filtering/create-own-filters).
 
-### Stealth Mode
+### Gizlilik Modu
 
 Many websites gather information about their visitors, such as their IP addresses, information about the browser and operating system installed, screen resolution, and even what page the user came or was redirected from. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or "recognize" you upon your next visit. Gizlilik Modu, kişisel bilgilerinizi bu tür veri ve istatistik toplama sistemlerinden korur.
 
@@ -67,24 +68,24 @@ Gezinti koruması hakkında daha fazla bilgi edinmek isterseniz [bu makaleyi](/g
 
 DNS koruma ayarlarını keşfetmek istemenizin üç önemli nedeni vardır. İlk olarak, İSS'niz tarafından izlenmekten kaçınmak için. Every time you open a website, for example `google.com`, your browser sends a request to a DNS server to get the IP address of the website in return. Genellikle, DNS sunucusu İSS'nize aittir ve bu da çevrimiçi etkinliğinizi izlemelerine olanak tanır. İkincisi, DNS trafiğinizi şifrelemek için. And the third one is to [block content on DNS level](https://adguard-dns.io/kb/general/dns-filtering/).
 
-![DNS Protection \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
+![DNS Koruması \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
 
-In the DNS protection module of AdGuard for Windows you can select the DNS servers from known DNS providers, including [AdGuard DNS](https://adguard-dns.io/kb/) that blocks ads and trackers, AdGuard DNS Family Protection that in addition blocks adult content, or AdGuard DNS Non-filtering that provides a secure and reliable connection, but doesn't filter anything. Özel DNS sunucuları bile ekleyebilirsiniz. Also there is an option to add custom rules using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). And if necessary, you can add [DNS filters of your choice](https://filterlists.com).
+In the DNS protection module of AdGuard for Windows you can select the DNS servers from known DNS providers, including [AdGuard DNS](https://adguard-dns.io/kb/) that blocks ads and trackers, AdGuard DNS Family Protection that in addition blocks adult content, or AdGuard DNS Non-filtering that provides a secure and reliable connection, but doesn't filter anything. Özel DNS sunucuları bile ekleyebilirsiniz. Ayrıca [DNS kural söz dizimi](https://adguard-dns.io/kb/general/dns-filtering-syntax/) kullanarak özel kurallar ekleme seçeneği de vardır. Gerekirse [seçtiğiniz DNS filtrelerini](https://filterlists.com) ekleyebilirsiniz.
 
 ### Ebeveyn Denetimi
 
 Çocuklar tarafından kullanılan bir bilgisayardan erişimin kısıtlanması gereken birkaç site vardır. Bu görev Ebeveyn Denetimi tarafından gerçekleştirilir.
 
-![Parental Control \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
+![Ebeveyn Denetimi \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
 Modül, tarayıcıda açılan web sayfalarının içeriğini kontrol eder ve çocuklar için istenmeyen içeriğe sahip olanları filtreler: yetişkinler için resimler ve metinler, kaba dil, şiddet, uyuşturucu kullanımı, vb. Ebeveyn Denetimi ayarları parola korumalıdır, böylece çocuk kısıtlamaların ötesine geçemez. Bu modül sadece istenmeyen sitelere yönlendirmeleri engellemekle kalmaz, aynı zamanda çocuklar için uygun olmayan bağlantıları da arama sonuçlarından silebilir.
 
-In the Parental Control module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. You can also check the _Block executable files download_ box to prevent your child from downloading and installing software on the computer. There are two more options in the _Parental Control_ module: you can select a specific Windows user to be protected by _Parental Control_ and set a password to protect AdGuard settings from change.
+In the Parental Control module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. Çocuğunuzun bilgisayara yazılım indirip yüklemesini engellemek için _Yürütülebilen dosyaların indirilmesini engelle_ kutusunu da işaretleyebilirsiniz. There are two more options in the _Parental Control_ module: you can select a specific Windows user to be protected by _Parental Control_ and set a password to protect AdGuard settings from change.
 
-![Parental Control \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
+![Ebeveyn Denetimi \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
 ### Tarayıcı Asistanı
 
-![Browser Assistant \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Tarayıcı Asistanı \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
 Bu sekmeden, birincil işlevi filtrelemeyi doğrudan tarayıcıdan yönetmek olan Tarayıcı Asistanı yüklemeye kolayca devam edebilirsiniz. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](/adguard-for-windows/browser-assistant.md).

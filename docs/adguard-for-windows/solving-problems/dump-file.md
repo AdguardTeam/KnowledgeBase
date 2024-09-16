@@ -9,6 +9,12 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 :::
 
+:::note
+
+Data and/or files provided in dump files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 To diagnose the reasons for potential problems that users might encounter while using AdGuard, the support team might need the process dump file. The dump file helps developers to see the processes that were executed in the application over a given period of time. Below you can check on the instructions of how to collect the dump file on your PC.
 
 1. Press **Ctrl + Shift + Esc** and click **Task Manager**
@@ -29,10 +35,10 @@ After you’ve created the dump file, please navigate to the file location. You 
 
 :::note
 
-AdGuard for Windows has two running processes (`Adguard.exe` and `AdguardSvc.exe`). So you need to create the dump file separately for each process.
+AdGuard for Windows has two running processes, `Adguard.exe` and `AdguardSvc.exe`. Therefore, it's necessary to create a separate dump file for each process.
 
 :::
 
 ![AdGuard processes](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
 
-When you send the dump files to the support team, please also attach the AdGuard application logs so we have a better chance at solving the problem. [Here](../adguard-logs) you can check the instructions on how to collect the log file.
+When you send the dump files to the support team, please also attach the AdGuard application logs so we have a better chance at solving the problem. [Here](../adguard-logs) you can check the instructions on how to get the log file.

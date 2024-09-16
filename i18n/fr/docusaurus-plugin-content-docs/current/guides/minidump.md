@@ -24,7 +24,7 @@ Même si vous ne rencontrez aucune erreur de crash BSoD, vous pouvez toujours d�
 
     :::tip
 
-    Vous pouvez également cliquer sur **Paramètres** →  **Système** →  **À propos** →  **Paramètres système avancés**.
+    Vous pouvez également cliquer sur **Paramètres** → **Système** → **À propos** → **Paramètres système avancés**.
 
 
 :::

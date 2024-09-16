@@ -9,11 +9,11 @@ sidebar_position: 6
 
 Изначально для активации продуктов AdGuard были доступны лицензии следующих типов:
 
-**Standard** was for desktop applications, AdGuard for Windows and AdGuard for Mac
+**Стандартная** — для десктопных приложений AdGuard для Windows и AdGuard для Mac
 
-**Mobile** was for mobile apps, AdGuard for Android and AdGuard for iOS
+**Мобильная** — для мобильных приложений AdGuard для Android и AdGuard для iOS
 
-**Premium** was a license that combined desktop and mobile applications
+**Премиум** — лицензия для десктопных и мобильных приложений
 
 Стандартную и Мобильную лицензии можно было приобрести для использования на 1–9 устройствах.
 
@@ -27,7 +27,7 @@ sidebar_position: 6
 
 С октября 2019 года AdGuard перешёл на новую систему тарифов: теперь лицензии также можно купить на 1 год или навечно, но они стали **Персональными** (на 3 устройства) или **Семейными** (на 9 устройств).
 
-Ещё одно изменение: **ключи нового типа можно использовать на любых устройствах, в любых комбинациях. For example, a Personal license can be used on Android, Mac and iOS, just like on two Windows computers and an Apple tablet.**
+Ещё одно изменение: **ключи нового типа можно использовать на любых устройствах, в любых комбинациях. Например, Персональную лицензию можно использовать на Android, Мас и iOS, точно так же, как и, например, на двух компьютерах Windows и планшете Apple.**
 
 ## Что стало с устаревшими лицензиями
 

@@ -6,7 +6,7 @@ slug: /
 
 ## 什么是 AdGuard 广告拦截程序?
 
-AdGuard 是广告拦截软件市场的引领者之一，拥有 10 多年的经验，拥有近十多种适用于各种平台的产品，以及超过 3000 万的用户安装量。 与其他大多数基于浏览器的广告拦截解决方案不同，我们为所有主要平台（包括桌面和移动平台）提供独立应用程序。 AdGuard 应用程序比浏览器扩展更强大，可以拦截更多广告并更有效率：
+AdGuard is one of the leaders on the market of ad-blocking software with 15+ years of experience, almost a dozen products for various platforms, and over 375 million user installs. 与其他大多数基于浏览器的广告拦截解决方案不同，我们为所有主要平台（包括桌面和移动平台）提供独立应用程序。 AdGuard 应用程序比浏览器扩展更强大，可以拦截更多广告并更有效率：
 
 - [AdGuard Windows版](/adguard-for-windows/features/home-screen)
 - [AdGuard Mac版](/adguard-for-mac/features/main)

@@ -3,19 +3,19 @@ title: Как установить прокси-сертификат
 sidebar_position: 2
 ---
 
-Our desktop apps, AdGuard for Windows and AdGuard for Mac, can be used as a proxy for other devices. This means that you can route other devices’ traffic through AdGuard (all traffic or traffic of specific apps and browsers).
+Наши десктопные приложения AdGuard для Windows и AdGuard для Mac можно использовать в качестве прокси для других устройств. Это означает, что вы можете направлять трафик других устройств через AdGuard (весь трафик или трафик определённых приложений и браузеров).
 
 :::note
 
-These devices must be in the same network as the PC or Mac with AdGuard.
+Эти устройства должны находиться в одной сети с ПК или Mac, на котором установлен AdGuard.
 
 :::
 
-HTTP traffic will be filtered in any case, but for AdGuard to be able to filter HTTPS traffic you need to manually install the AdGuard certificate on the connected device.
+HTTP-трафик будет фильтроваться в любом случае, но чтобы AdGuard мог фильтровать HTTPS-трафик, необходимо вручную установить сертификат AdGuard на подключённое устройство.
 
 ## Как загрузить и установить сертификат
 
-Depending on the operating system of the device whose traffic you want to filter, follow one of these instructions:
+В зависимости от операционной системы устройства, трафик которого вы хотите фильтровать, следуйте одной из инструкций:
 
 ### Windows {#windows}
 

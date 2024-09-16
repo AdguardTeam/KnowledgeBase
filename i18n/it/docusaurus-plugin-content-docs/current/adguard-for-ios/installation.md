@@ -13,15 +13,15 @@ Questo articolo tratta AdGuard per iOS, un blocco annunci multifunzionale che pr
 
 ### iPhone
 
-Richiede iOS 11.2 o successive.
+Requires iOS 13 or later.
 
 ### iPad
 
-Richiede iPadOS 11.2 o successive.
+Requires iPadOS 13 or later.
 
 ### iPod touch
 
-Richiede iOS 11.2 o successive.
+Requires iOS 13 or later.
 
 ## Installazione di AdGuard per iOS
 

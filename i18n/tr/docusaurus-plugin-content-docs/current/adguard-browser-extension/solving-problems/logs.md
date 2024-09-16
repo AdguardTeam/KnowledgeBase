@@ -51,6 +51,12 @@ sidebar_position: 1
 
 ## Günlükleri gönderme
 
+:::note
+
+AdGuard gizliliğinizi korumaya kararlıdır. [Gizlilik Politikamıza](https://adguard.com/privacy/browser-extension.html) kesinlikle uyuyoruz ve kullanıcılar hakkında herhangi bir özel bilgi toplamıyoruz. Günlüklerinizi destek ekibine göndermeden önce, paylaşmak istemediğiniz ek bilgiler içerebileceğinden lütfen dosyayı inceleyin. Bu tür kişisel bilgiler içeriyorsa öncelikle onu silmenizi öneririz.
+
+:::
+
 Artık günlükleri topladığınıza göre, bunları geliştirme ekibimize göndermek için lütfen aşağıdaki adımları izleyin:
 
 1. Hatayı [GitHub'dan](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose) bildirin.

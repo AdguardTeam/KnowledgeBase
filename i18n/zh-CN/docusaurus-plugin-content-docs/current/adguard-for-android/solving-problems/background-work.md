@@ -27,7 +27,27 @@ Asus 设备后台工作的潜在问题主要来自「Power Master」这一优化
 
 小米（特别是 MIUI 系统）是在后台运行方面限制最多的系统之一。 众所周知，小米的系统会限制后台进程，具有非标准权限，还缺乏适当的文档。 有时应用程序就是无法在小米手机上正常运行，而且我们对此还无能为力。 如果您在各种小米设备上遇到有关 AdGuard 后台工作的问题，您可以尝试执行以下操作。
 
-### MIUI 12.0.8+
+### MIUI 13+ and HyperOS
+
+Depending on the MIUI and HyperOS versions, there are two ways to change the battery optimization settings on your phone and block ads more efficiently.
+
+Option 1
+
+1. Go to **Settings** → **Apps** → **Permissions** → **Background autostart** and allow AdGuard to run in the background
+
+1. Return to **Settings** → **Apps** → **Manage apps** → **AdGuard** and uncheck **Pause app activity if unused**
+
+1. Go to **Battery saver** and tap **No restrictions**
+
+Option 2
+
+1. Go to **Settings** → **Apps** → **Manage apps** → **AdGuard** and enable **Autostart**
+
+1. Go to **Battery saver** and tap **No restrictions**
+
+Done! You have successfully set up AdGuard to work in the background.
+
+### MIUI 12.0.8
 
 要让 AdGuard 应用程序成功在后台运行，请执行以下操作：
 

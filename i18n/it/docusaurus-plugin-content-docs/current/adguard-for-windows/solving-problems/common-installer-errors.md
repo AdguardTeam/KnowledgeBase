@@ -1,35 +1,35 @@
 ---
-title: Common installer errors
+title: Errore d'installazione comuni
 sidebar_position: 6
 ---
 
 :::info
 
-Questo articolo riguarda AdGuard per Windows, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Windows, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-This article contains some of the most common errors that you can encounter during the AdGuard for Windows installation, and possible ways to solve them.
+Questo articolo contiene alcuni degli errori più comuni che puoi riscontrare durante l'installazione di AdGuard per Windows e i possibili modi per risolverli.
 
-### Error 5: Access Denied {#error-5}
+### Errore 5: Accesso Negato {#error-5}
 
-This error occurs when there's something wrong with permissions. There may be several different reasons why AdGuard installer doesn't have the permissions it requires to properly finish the installation process. You can try the following steps:
+Questo errore si verifica se c'è qualcosa che non va con le autorizzazioni. Potrebbero esistere diversi motivi per cui il programma d'installazione di AdGuard non ha le autorizzazioni richieste per terminare correttamente il processo d'installazione. Puoi provare i seguenti passaggi:
 
-- Temporarily disable your antiviruses. Some of them may interfere with the installation, depending on the severity of their settings.
+- Disabilita temporaneamente i tuoi antivirus. Alcuni di essi potrebbero interferire con l'installazione, a seconda della gravità delle loro impostazioni.
 
-- Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
+- Scegli una cartella d'installazione differente. È possibile che la cartella d'installazione corrente preveda delle limitazioni d'accesso. Assicurati, inoltre, di non selezionare un'unità esterna, un'unità virtuale, etc.
 
-- Reboot your computer. Sometimes the permission issues are temporary and can be solved by restarting the PC.
+- Riavvia il tuo computer. Talvolta i problemi di autorizzazione sono temporanei e risolvibili riavviando il PC.
 
-### Error 112: Disk is full, Error 1632: Temporary folder full or inaccessible {#error-112}
+### Errore 112: Il disco è pieno, Errore 1632: Cartella temporanea piena o inaccessibile {#error-112}
 
-These are two different errors with very similar solutions. As their names suggest, AdGuard installer didn't find enough disk space to complete the installation. There are several things you can attempt to fix the problem:
+Esistono due errori differenti con soluzioni molto simili. Come suggerito dai loro nomi, il programma d'installazione di AdGuard non ha trovato abbastanza spazio per completare l'installazione. Esistono diverse cose che puoi tentare per risolvere questo problema:
 
-- Uninstall some programs or delete unnecessary files from the drive you were trying to install AdGuard to.
+- Disinstalla alcuni programmi o elimina i file non necessari, dall'unità in cui stavi tentando d'installare AdGuard.
 
-- Download, install, and run [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), a free piece of software by Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstall programs and such. It will help clean up some disk space.
+- Scarica, installa ed esegui [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), un software gratuito di Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstall programs and such. It will help clean up some disk space.
 
-- Reboot your computer. Sometimes temporary files can take up a considerable amount of disk space, and restarting your PC is the most reliable way to get rid of them.
+- Riavvia il tuo computer. Sometimes temporary files can take up a considerable amount of disk space, and restarting your PC is the most reliable way to get rid of them.
 
 ### Error 1601: Windows Installer is not accessible {#error-1601}
 
@@ -57,7 +57,7 @@ The error sounds scarier than it actually is. In reality, this is a rather gener
 
 - Press the *Win* key, search for *Command Prompt* and run it. There, type in `sfc /scannow` and press *Enter*.
 
-- Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
+- Scegli una cartella d'installazione differente. È possibile che la cartella d'installazione corrente preveda delle limitazioni d'accesso. Assicurati, inoltre, di non selezionare un'unità esterna, un'unità virtuale, etc.
 
 - Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
 

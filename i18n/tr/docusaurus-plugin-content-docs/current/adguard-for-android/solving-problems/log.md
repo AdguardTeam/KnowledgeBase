@@ -9,7 +9,19 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
+:::not
+
+Günlüklerde sağlanan veriler ve/veya dosyalar [AdGuard Gizlilik Politikasına](https://adguard.com/en/privacy.html) uygun olarak işlenir.
+
+:::
+
 Bu makalede, potansiyel olarak ortaya çıkabilecek karmaşık sorunları çözmek için önemli bir sorun giderme adımı olan hata ayıklama günlüklerini toplama sürecinde size rehberlik edeceğiz. Hata ayıklama günlükleri, Android için AdGuard'ın iç işleyişine ilişkin ayrıntılı bilgiler sağlar. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
+
+:::not
+
+AdGuard gizliliğinizi korumaya kararlıdır. [Gizlilik Politikamıza](https://adguard.com/privacy/android.html) kesinlikle uyuyoruz ve kullanıcılar hakkında herhangi bir özel bilgi toplamıyoruz. Günlüklerinizi destek ekibine göndermeden önce, paylaşmak istemediğiniz ek bilgiler içerebileceğinden lütfen dosyayı inceleyin. Bu tür kişisel bilgiler içeriyorsa öncelikle onu silmenizi öneririz.
+
+:::
 
 ### Hata ayıklama günlüğü toplama
 

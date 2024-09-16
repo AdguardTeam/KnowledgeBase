@@ -3,10 +3,10 @@ title: AdGuard Other (Sonstiges)
 sidebar_position: 6
 ---
 
-_AdGuard Other_ contains filters with various functions. So gibt es zum Beispiel einen Filter, der Suchanzeigen und Eigenwerbung freischaltet. In manchen Fällen hilft es, genau das zu finden, wonach man sucht, denn diese Art von Werbung ist relevanter und weniger aufdringlich als andere.
+_AdGuard Sonstiges_ enthält Filter mit verschiedenen Funktionen. So gibt es zum Beispiel einen Filter, der Suchanzeigen und Eigenwerbung freischaltet. In manchen Fällen hilft es, genau das zu finden, wonach man sucht, denn diese Art von Werbung ist relevanter und weniger aufdringlich als andere.
 
-:::note Disclaimer
+:::note Haftungsausschluss
 
-We don’t have any ‘acceptable ads’ paid by advertisers. Instead, we provide users with an option to see [search ads and websites' self-promotion](/general/ad-filtering/search-ads).
+Bei uns gibt es keine „akzeptablen Werbung“, die von Werbetreibenden bezahlt wird. Stattdessen bieten wir den Nutzer:innen die Möglichkeit, [Werbung in Suchvorgängen und Eigenwerbung der Websites](/general/ad-filtering/search-ads) anzuzeigen.
 
 :::

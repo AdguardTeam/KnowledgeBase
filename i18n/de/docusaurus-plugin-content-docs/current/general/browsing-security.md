@@ -1,64 +1,76 @@
 ---
-title: Internetsicherheit
+title: Schutz vor Phishing und Malware
 sidebar_position: 3
 ---
 
-Jeden Tag werden Zehntausende von Menschen Opfer von Virenangriffen oder Betrug im Internet. Wir haben der AdGuard-App spezielle Filter hinzugefügt, um Sie vor bösartigen und Phishing-Websites zu schützen.
+Falling prey to phishing and malware remains a common issue. To enhance digital security, we’ve incorporated special filters in AdGuard products to shield you from malicious and phishing websites. To date, we’ve categorized over 15 million sites and built a database of 1.5 million websites known for phishing and malware. Using this database, AdGuard checks the websites you visit to protect you from online threats.
 
-Bislang wurden mehr als 15 Millionen Websites kategorisiert, und unsere Filter enthalten etwa 1,5 Millionen Phishing- und Malware-Websites. Denken Sie einfach mal darüber nach: 10 % aller bekannten Websites können für Sie gefährlich sein! Unerfahrene Nutzer:innen können leicht Opfer von Betrügern oder Hackern werden. Wir hoffen, dass der Schutz vor bösartigen Websites Ihnen helfen wird, alle Gefahren zu vermeiden, denen Sie begegnen könnten.
+::: note
 
-## Wie funktioniert eine Überprüfung?
+We strictly do not collect or use any information about the websites you visit.
 
-Je nach verwendetem Produkt sind der Umfang und die Methoden der Überprüfungen unterschiedlich. In unseren Browsererweiterungen untersucht AdGuard nur die Seiten, die Sie besuchen. AdGuard für Windows, Mac oder Android bietet Ihnen den bestmöglichen Schutz, indem sowohl die Seiten als auch alle darauf geladenen Objekte überprüft werden.
+:::
 
-### AdGuard für Windows, Mac und Android
+## How does AdGuard check websites?​
 
-Wir verwenden das Protokoll [Safe Browsing API Version 2.2](https://code.google.com/p/google-safe-browsing/wiki/Protocolv2Spec) für unsere Arbeit mit Filtern. Dieses Protokoll ermöglicht es uns, Ihre persönlichen Daten absolut sicher zu halten. Unser Server weiß nichts über die Websites, die Sie besuchen. Für die Überprüfung verwenden wir Hash-Präfixe, nicht die geöffneten URLs.
+Each time you visit a website, your local client exchanges information with our backend server in the form of hashes and hash prefixes. Based on this exchange, the local client determines whether or not the website is listed in the potentially dangerous websites database. There is a difference in the scope of this check for apps and extensions.
 
-The figure below provides a general understanding of how the Browsing security module works, using AdGuard for Windows as an example.
+### In apps
 
-![Functioning algorithm of Browsing security module](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
+AdGuard provides the best possible protection by inspecting both the pages and all objects loaded on them. AdGuard checks URLs and domain names using hash prefixes, not the full URLs, so our servers retain no information about the websites you visit and your personal information is completely safe. Our servers respond to the app’s query with a list of all possible addresses that match the hash prefix. When a potential threat is detected based on hash matches, access to that website is immediately blocked.
 
-### AdGuard Browsererweiterung
+![DNS warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_diana.png)
 
-Browsererweiterungen arbeiten anders und verwenden die sogenannte [*Lookup API*](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668), um die von Ihnen besuchten Seiten zu überprüfen. Jedes Mal, wenn Sie eine Website besuchen, tauscht Ihr lokaler Client Informationen mit unserem Backend-Server in Form von Hashes und Hash-Präfixen aus. Based on this exchange, the local client determines whether or not the site is listed in the potentially dangerous sites database. Für diejenigen, die sich für den Prozess auf einer tieferen Ebene interessieren, ist der obige Link hilfreich.
+### In browser extensions
 
-Wir weisen Sie darauf hin, dass wir in keinem Fall Informationen erhalten, die es uns ermöglichen würden, festzustellen, welche Websites Sie besuchen, und diese Informationen in irgendeiner Weise zu verwenden.
+Our browser extensions can only check domain names, not full URLs. They are also unable to check subqueries. This means that if there are potentially malicious elements on the page, they will be loaded even if the page itself is from a safe domain. The extension won’t be able to protect against them. It's also important to note that the check performed is asynchronous, i.e. it happens at the same time as the page is loaded, so it’s possible that malware could be loaded as well.
 
-An approximate algorithm of the functioning of the Browsing security module is shown in the picture below.
+## Setting up phishing and malware protection in AdGuard products
 
-![Functioning algorithm of Browsing security module in AdGuard browser extensions.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
+- **For Windows**: Activate the *Browsing Security* module in the *Settings* menu
 
-## AdGuard-Filter
+![Browsing Security in Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
 
-Wir pflegen derzeit zwei AdGuard-Filter. Eine schützt vor Phishing und betrügerischen Websites. Die andere schützt vor bösartigen Websites, deren Besuch zu einer Virusinfektion führen kann.
+- **For Mac**: Enable the *Security* module in *Preferences*
 
-### Filter für Phishing-Websites
+![Security in Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
 
-*Phishing* ist eine Art Online-Betrug, der darauf abzielt, Zugang zu vertraulichen Daten — Benutzernamen und Passwörtern — zu erhalten. Wenn Sie sich für dieses Thema interessieren, empfehlen wir Ihnen, [diesen Artikel bei Wikipedia](https://de.wikipedia.org/wiki/Phishing) zu lesen.
+- **For Android**: Turn on *Browsing Security* in the *Protection* tab
 
-Neben Phishing-Websites deckt dieser Filter auch verschiedene betrügerische Websites ab, darunter alle Arten von Betrug, den Verkauf von nicht existierenden Inhalten usw.
+![Browsing security in Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
 
-### Filter für bösartige Websites
+- **For iOS**: Although there’s no separate module, you can go to *Safari protection* → *Filters* → *Security* and enable the available filters. Additionally, enable *DNS protection* and select one of the AdGuard DNS servers
 
-This filter contains links to pages that could execute malicious code, leading to potential leaks, data loss, or damage to a user’s device. Code execution can be authorized (for example, when downloading and running the executable file) or unauthorized (for example, when being attacked with spyware).
+![Security in iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
 
-## How do we add new addresses to our filters?
+- **For Browser extensions**: Enable *Phishing and malware protection* in the *Settings* tab. For enhanced protection, go to *Filters* → *Security* and activate available filters
 
-Most of the work is automated, so you can be sure that new malware and phishing addresses are added to our database as quickly as possible.
+![Schutz vor Phishing und Malware](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
 
-### AdGuard Browsing security Community
+- **For Private AdGuard DNS:** Enable malware protection in *Server settings* under *Security*
 
-An important tool for maintaining the highest level of filtering is the *AdGuard Browsing security Community*. Alle Nutzer:innen unserer Produkte können sich der Community anschließen und uns bei der Weiterentwicklung der AdGuard-Filter helfen.
+![Security in DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
 
-In the image below, you can see an algorithm of how Browsing security Community works:
+## What we block
 
-![The way AdGuard Browsing security Community works](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
+We maintain two primary filters: one that protects against phishing and fraudulent websites that attempt to steal user credentials, and another that blocks access to websites known to distribute malware, which could lead to data loss, information leaks, or damage to your device. These filters also protect you from websites with various scams and fraudulent schemes. For more detailed information, refer to this [Wikipedia article](https://en.wikipedia.org/wiki/Phishing).
 
-### Möchten Sie mithelfen?
+## Maintaining our filters
 
-Wir nehmen jede Hilfe gerne an! Wenn Sie uns eine Meldung über eine Phishing- oder Malware-Website schicken möchten, können Sie dies über den technischen Support unter **support@adguard.com** tun.
+AdGuard maintains an extensive database of phishing and malware websites, and it’s updated regularly and automatically as new threats are discovered. We collect information from a variety of reliable, high-quality sources, both public and from other companies, and aggregate it into a common database of dangerous sites.
 
-### Falsch-positive Antworten
+We automatically analyze complaints about suspicious sites and spend a great deal of time keeping the database up-to-date, cleaning up false positives, and implementing mechanisms to prevent them in the future.
 
-Gelegentlich werden einige nicht bösartige Websites zu den AdGuard-Filtern hinzugefügt. Wir tun unser Bestes, um den Prozentsatz der Falschmeldungen zu verringern, aber sie kommen trotzdem vor. Wenn Sie dieses Verhalten von AdGuard feststellen, senden Sie uns bitte eine Beschwerde über den falsch-positiven Alarm. Sie können solche Meldungen über unseren technischen Support unter **support@adguard.com** einreichen.
+### Want to help?​
+
+Any help is welcome! If you encounter a phishing or malware website, please report it to <support@adguard.com>.
+
+### False-positive responses​
+
+Occasionally, some non-malicious websites are added to AdGuard’s filters. Wir tun unser Bestes, um den Prozentsatz der Falschmeldungen zu verringern, aber sie kommen trotzdem vor. If you encounter this behavior from AdGuard, please report the false positive to our technical support at <support@adguard.com>.
+
+## If you are suspicious about a website
+
+If you suspect that a certain website might be dangerous, check it first by using our [security check tool](https://reports.adguard.com/welcome.html).
+
+![Security check](https://cdn.adtidy.org/content/kb/ad_blocker/general/site_warning.png)

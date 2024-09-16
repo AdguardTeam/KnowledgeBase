@@ -39,7 +39,7 @@ Here are the active features of the pre-configured levels:
 
    e. _Self-destruction of third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes
 
-   :::caution
+   :::figyelem
 
    This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. To block only tracking cookies, use the _Standard_ protection level.
 
@@ -59,7 +59,7 @@ Here are the active features of the pre-configured levels:
 
    e. _Self-destruction of third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes
 
-   :::caution
+   :::figyelem
 
    This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. To block only tracking cookies, use the _Standard_ protection level.
 

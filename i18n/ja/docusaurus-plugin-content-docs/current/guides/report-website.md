@@ -1,5 +1,5 @@
 ---
-title: How to report websites and apps
+title: ウェブサイトやアプリでの問題を報告する方法
 sidebar_position: 3
 ---
 
@@ -53,7 +53,7 @@ sidebar_position: 3
 
 ### AdGuard for Mac の場合 {#mac}
 
-- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
+- [AdGuardブラウザアシスタント](/adguard-for-mac/features/browser-assistant)を開き、 「**問題・不具合を報告する**」を押します。
 
 ![mac *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/report-website-ja-2.png)
 

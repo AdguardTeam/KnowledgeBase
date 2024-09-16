@@ -1,5 +1,5 @@
 ---
-title: How to report websites and apps
+title: 如何报告网站和应用程序错误
 sidebar_position: 3
 ---
 
@@ -12,11 +12,11 @@ sidebar_position: 3
 - 创建规则时，其中一个过滤器的作者犯了一个错误；
 - 重新插入广告。 在[我们的博客](https://adguard.com/en/blog/ad-reinsertion.html)中找到有关此方法的更多信息。
 
-You can help us by filling in a form with examples of ads you have encountered. 为此，请按照您的操作系统使用说明。
+用户可以填写表格，描述遇到的广告，以帮助我们解决问题。 为此，请按照您的操作系统使用说明。
 
 ## 报告网站 {#report}
 
-:::注意
+:::note
 
 在您通过本应用或 AdGuard 浏览器助手发送投诉时，所有信息是自动预先填写的。 除了屏幕截图，您还必须自己制作并附加它们。 如果您使用的是[此链接](https://reports.adguard.com/new_issue.html)，则需要手动输入数据。
 
@@ -26,10 +26,10 @@ You can help us by filling in a form with examples of ads you have encountered. 
 
 ### 浏览器扩展 {#extension}
 
-- Open the browser extension settings by clicking the corresponding icon;
-- Click **Report an issue**:
+- 点击相应图标打开浏览器扩展设置；
+- 点击「**报告问题**」：
 
-![extension_issue *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
+![扩展问题 *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
 
 - 填写举报表格后，将自动在 [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) 上创建一个问题。 也将有一个链接让用户监视解决问题的进度。
 
@@ -42,7 +42,7 @@ You can help us by filling in a form with examples of ads you have encountered. 
 - 填写举报表格；
 - 完成后，将自动在 [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) 上创建一个问题。 也将有一个链接让用户监视解决问题的进度。
 
-### 安卓系统 {#android}
+### Android 系统 {#android}
 
 - 打开 AdGuard 设置；
 - 选择**支持**，然后点击**报告错误拦截**：
@@ -53,7 +53,7 @@ You can help us by filling in a form with examples of ads you have encountered. 
 
 ### Mac 系统 {#mac}
 
-- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
+- 打开 [AdGuard 浏览器助手](/adguard-for-mac/features/browser-assistant)并点击「**报告问题**」：
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 
@@ -72,7 +72,7 @@ You can help us by filling in a form with examples of ads you have encountered. 
 
 ## 填写表格 {#form}
 
-:::注意
+:::note
 
 在用户通过本应用或 AdGuard 助手发送投诉时，所有信息都是自动预填写的。 除了屏幕截图，您还必须自己制作并附加它们。 如果您使用的是[此链接](https://reports.adguard.com/new_issue.html)，则需要手动输入数据。
 
@@ -135,7 +135,7 @@ You can help us by filling in a form with examples of ads you have encountered. 
 
 1. 禁用**隐身模式**；
 2. 如果问题解决，请打开此模块并逐个关闭**隐身模式**内的各选项。 这样做是为了检测出“破坏”页面的过滤器；
-3. If you have managed to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). 在此种情况下，最好返回到初始设置；
+3. 如果您设法找出“破坏”页面的过滤器，请在填写表单时通知开发人员（请参见上文）。 在此种情况下，最好返回到初始设置；
 4. 如果失败（问题未解决），请参阅**扩展**部分。
 
 ### **浏览器扩展**
@@ -146,4 +146,4 @@ You can help us by filling in a form with examples of ads you have encountered. 
 
 ### **第三方拦截器**
 
-某些浏览器和防病毒程序（例如 Yandex 浏览器，卡巴斯基等）具有内置的广告拦截器。 它们可能会影响并引起网站运行发生问题。 If you are using such programs, first make sure that the problem is caused by **AdGuard**: disable **AdGuard** filtering and try to reproduce the problem. 如果问题仍存在，则表示问题是由其他应用程序或浏览器引起的。 如问题是由 **AdGuard** 引起的，则请按照前面段落中描述的步骤进行操作。
+某些浏览器和防病毒程序（例如 Yandex 浏览器，卡巴斯基等）具有内置的广告拦截器。 它们可能会影响并引起网站运行发生问题。 如果用户在使用此类程序，请首先确定问题是由**AdGuard** 引起的：禁用 **AdGuard** 过滤并尝试重现问题。 如果问题仍存在，则表示问题是由其他应用程序或浏览器引起的。 如问题是由 **AdGuard** 引起的，则请按照前面段落中描述的步骤进行操作。

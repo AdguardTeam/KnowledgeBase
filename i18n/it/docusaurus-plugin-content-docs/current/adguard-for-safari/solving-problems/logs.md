@@ -17,7 +17,13 @@ Per analizzare e diagnosticare vari problemi che potrebbero verificarsi con AdGu
 2. Scorri verso il basso e fai clic su _Esporta registri_.
 3. Scegli una posizione in cui salvare il file .zip e fai clic su _Salva_.
 
-Ora puoi inviare questo file a support@adguard.com o allegarlo alla segnalazione di bug su GitHub:
+Ora puoi inviare questo file a support@adguard.com o allegarlo alla segnalazione di bug su GitHub.
+
+:::note
+
+AdGuard si impegna a proteggere la tua privacy. Seguiamo rigorosamente la nostra [Informativa sulla privacy](https://adguard.com/privacy/safari.html) e non raccogliamo alcuna informazione privata sugli utenti. Prima di inviare i registri al team di supporto, esamina il file poiché potrebbe contenere informazioni aggiuntive che non desideri condividere. Se contiene tali informazioni personali, ti consigliamo di eliminarle prima.
+
+:::
 
 1. Apri il [repo GitHub di AdGuard per Safari](https://github.com/AdguardTeam/AdGuardForSafari/issues) e fai clic su _Nuovo problema_.
 2. Invia i registri a devteam@adguard.com. Includi l'ora del bug e allega un link al tuo problema o il suo numero (appare come #numero accanto al titolo).

@@ -24,7 +24,7 @@ Anche se non riscontri alcun errore d'arresto anomalo del BSoD, puoi comunque im
 
     :::tip
 
-    Altrimenti, clicca su **Impostazioni** → **Sistema** → **Informazioni** → **Impostazioni Avanzate di Sistema**.
+    In alternativa, fare clic su **Impostazioni** → **Sistema** → **Informazioni** → **Impostazioni di sistema avanzate**.
 
 
 :::

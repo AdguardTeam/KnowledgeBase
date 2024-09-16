@@ -14,7 +14,7 @@ AdGuard může výrazně rozšířit funkčnost webových stránek tím, že fun
 
 ## Doporučené skripty AdGuardu
 
-Tyto uživatelské skripty pocházejí přímo od vývojářů AdGuardu a můžeme zaručit, že jsou účinné a bezpečné. Nezapomeňte, že kdykoli stahujete uživatelský skript z neznámého zdroje, vystavujete se riziku, protože některé skripty mohou být pro váš počítač škodlivé. Nové skripty získávejte pouze ze zdrojů, kterým stoprocentně důvěřujete. Dále zde uvádíme [příklady](#more-userscripts) oblíbených webů se skripty.
+Tyto uživatelské skripty pocházejí přímo od vývojářů AdGuardu a můžeme zaručit, že jsou účinné a bezpečné. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you expose yourself to a certain risk, as some scripts may be harmful to your computer.
 
 ### AdGuard Extra
 
@@ -44,23 +44,33 @@ Skript, který je předinstalován pouze v aplikaci AdGuard pro Android. Zakáž
 
 ![Zakázat AMP](https://cdn.adtidy.org/content/kb/ad_blocker/general/disable-amp-installation.png)
 
+## Top picks outside AdGuard{#top-picks}
+
+These userscripts are not developed by AdGuard and therefore we can't give a 100% guarantee that they are safe and/or work at all times. However, in our experience they deserve a recommendation as they've all earned their good reputation.
+
+### Don't track me Google
+
+This script removes Google's tracking feature from the links in Google search results. It speeds up the loading of search results and allows you to right-click or tap to copy the link URL.
+
+Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me-google). This userscript can be downloaded from [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) and installed in any AdGuard CoreLibs-based app.
+
 ### microShield
 
 Uživatelský skript pro lidi, kteří navštěvují korejské a některé mezinárodní webové stránky. Uživatelský skript microShield blokuje Ad-Shield a anti-adblock. Jeho původní zdrojový kód je k dispozici na [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) a [AdShield Defuser](https://github.com/seia-soto/adshield-defuser). Tento uživatelský skript lze nainstalovat v AdGuard CoreLibs, Violentmonkey, Tampermonkey a [quoid/userscripts](https://github.com/quoid/userscripts). Více informací o tomto uživatelském skriptu a jeho instalaci najdete na [GitHubu](https://github.com/List-KR/microShield).
 
 ## Kde můžete získat další uživatelské skripty?{#more-userscripts}
 
-Protože uživatelské skripty vytvářejí především nadšenci, měli byste být při jejich instalaci opatrní. Přesto existuje velké množství zajímavých skriptů, které mohou používání některých webových stránek opravdu zpříjemnit.
+As userscripts are mainly created by enthusiasts, you should be cautious when installing them. Any script from an unknown source carries a potential risk. Yet, there is a great variety of interesting scripts that, if installed carefully and responsibly, can really make using some websites more convenient.
 
 Zde popíšeme některé z nejoblíbenějších katalogů uživatelských skriptů.
 
-### Stylish (userstyles.org)
+### Userscript.Zone
 
-[Userstyles.org](https://userstyles.org/) je katalog uživatelských stylů, ale umožňuje je načíst jako uživatelské skripty. Prostřednictvím AdGuardu lze tedy nainstalovat jakýkoli uživatelský styl. Pokud se rozhodnete nainstalovat neoblíbený skript, buďte opatrní — existuje riziko, že může být škodlivý.
+[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high credibility, since only scripts from moderated pages are displayed.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) je katalog uživatelských skriptů od tvůrců Stylish. Na rozdíl od výše zmíněného userstyles.org jsou skripty v tomto katalogu moderovány, takže jejich důvěryhodnost je mnohem vyšší.
+[Greasy Fork](https://greasyfork.org/) je katalog uživatelských skriptů od tvůrců Stylish. The scripts in this catalog undergo moderation, so their credibility is much higher.
 
 ### OpenUserJS.org
 

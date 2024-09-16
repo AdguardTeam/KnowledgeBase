@@ -3,4 +3,4 @@ title: AdGuard Soziales
 sidebar_position: 4
 ---
 
-_AdGuard Social_ contains filters against social media buttons, widgets, scripts, and icons. In diesem Abschnitt finden Sie auch andere Belästigungsfilter: Filter gegen Pop-ups, Banner für mobile Apps, Cookie-Hinweise und mehr. To enable them, find _Social Widgets_ in the Filters tab.
+_AdGuard Soziales_ enthält Filter gegen Social-Media-Schaltflächen, -Widgets, -Skripte und -Symbole. In diesem Abschnitt finden Sie auch andere Belästigungsfilter: Filter gegen Pop-ups, Banner für mobile Apps, Cookie-Hinweise und mehr. Um sie zu aktivieren, suchen Sie _Soziale Widgets_ im Tab „Filter“.

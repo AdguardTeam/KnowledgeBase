@@ -51,6 +51,12 @@ sidebar_position: 1
 
 ## Odesílání záznamů
 
+:::note
+
+AdGuard se zavazuje chránit vaše soukromí. Přísně dodržujeme naše [Zásady ochrany osobních údajů](https://adguard.com/privacy/browser-extension.html) a neshromažďujeme žádné soukromé informace o uživatelích. Před odesláním protokolů týmu podpory si soubor prohlédněte, protože může obsahovat další informace, které nechcete sdílet. Pokud takové osobní údaje obsahuje, doporučujeme je nejprve smazat.
+
+:::
+
 Po shromáždění záznamů postupujte podle následujících kroků a odešlete je našemu vývojovému týmu:
 
 1. Nahlaste chybu na [GitHub] (https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).

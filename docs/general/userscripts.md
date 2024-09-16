@@ -4,7 +4,7 @@ sidebar_position: 5
 toc_max_heading_level: 4
 ---
 
-Userscripts (we also call them "extensions") are, de-facto, mini-programs written in JavaScript. They modify or extend the functionality of one or more websites. Many AdGuard users may be already familiar with such userscripts as AdGuard Assistant, Popup Blocker, and AdGuard Extra.
+Userscripts (we also call them "extensions") are, de facto, miniprograms written in JavaScript. They modify or extend the functionality of one or more websites. Many AdGuard users may be already familiar with such userscripts as AdGuard Assistant, Popup Blocker, and AdGuard Extra.
 
 :::note Supported apps
 
@@ -64,13 +64,13 @@ As userscripts are mainly created by enthusiasts, you should be cautious when in
 
 Here we will describe some of the most popular userscript catalogs.
 
-### Stylish (userstyles.org)
+### Userscript.Zone
 
-[Userstyles.org](https://userstyles.org/) is a catalog of user styles, but it allows you to load them as userscripts. Thus, any user style can be installed via AdGuard. Be careful if you decide to install an unpopular script — there's a risk it might be harmful.
+[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high credibility, since only scripts from moderated pages are displayed.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) is a userscript catalog by Stylish creators. Unlike the above-mentioned userstyles.org, the scripts in this catalog undergo moderation, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/) is a userscript catalog by Stylish creators. The scripts in this catalog undergo moderation, so their credibility is much higher.
 
 ### OpenUserJS.org
 
@@ -134,7 +134,7 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 
 ##### Unsupported properties
 
-These properties will be simply ignored by Adguard.
+These properties will be simply ignored by AdGuard.
 
 ```text
 @unwrap
@@ -208,4 +208,43 @@ GM_log
 !function(){(
     console.log("I am loaded!");
 )}();
+```
+
+## Userstyles
+
+AdGuard products provide limited support for userstyles. `@var` and `@advanced` metadata tags are not supported,
+as well as any value of the `@preprocessor` metadata tag except `default`.
+
+### Metadata
+
+The metadata block is written using CSS-style comments, starting with `===UserStyle===` and ending with `===/UserStyle===`.
+All metadata tags that are supported for userscripts are also supported for userstyles, although some of them have no meaning and are ignored.
+`@var` and `@advanced` tags are not supported.
+The only supported value of the `@preprocessor` tag is `default`.
+
+### Content
+
+The content of a userstyle is plain CSS with support for the [`@-moz-document` at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@document).
+The `media-document()` function is not supported.
+The userstyle will only be applied to pages that match one or more of the `@-moz-document` rules.
+If the userstyle does not contain any `@-moz-document` rules, it will not be applied.
+
+### Example
+
+```css
+/* ==UserStyle==
+@name         Example userstyle
+@namespace    https://example.org/userstyle
+@homepageURL  https://example.org/userstyle
+@version      1.0.0
+@license      Other
+@description  This is an example
+@author       example
+@preprocessor default
+==/UserStyle== */
+@-moz-document regexp("https?\:\/\/(www\.)?example\.(org|com).*") {
+    body {
+        background-color: #000000 !important;
+    }
+}
 ```

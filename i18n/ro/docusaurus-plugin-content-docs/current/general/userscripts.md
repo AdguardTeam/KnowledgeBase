@@ -14,7 +14,7 @@ AdGuard can significantly broaden website functionality by acting as a userscrip
 
 ## Recommended AdGuard scripts
 
-These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. Remember: whenever you download a userscript from an unknown source, you expose yourself to risk, as some scripts may be harmful to your computer. Get new scripts only from the sources you trust 100%. Furthermore, here are [some examples](#more-userscripts) of popular sites with scripts.
+These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you expose yourself to a certain risk, as some scripts may be harmful to your computer.
 
 ### AdGuard Extra
 
@@ -44,23 +44,33 @@ A script that is only pre-installed in AdGuard for Android. It disables AMP (Acc
 
 ![Disable AMP](https://cdn.adtidy.org/content/kb/ad_blocker/general/disable-amp-installation.png)
 
+## Top picks outside AdGuard{#top-picks}
+
+These userscripts are not developed by AdGuard and therefore we can't give a 100% guarantee that they are safe and/or work at all times. However, in our experience they deserve a recommendation as they've all earned their good reputation.
+
+### Don't track me Google
+
+This script removes Google's tracking feature from the links in Google search results. It speeds up the loading of search results and allows you to right-click or tap to copy the link URL.
+
+Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me-google). This userscript can be downloaded from [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) and installed in any AdGuard CoreLibs-based app.
+
 ### microShield
 
 A userscript for people who visit Korean websites and some international websites. The microShield userscript blocks Ad-Shield advertisement and anti-adblock. Its original source code is available at [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) and [AdShield Defuser](https://github.com/seia-soto/adshield-defuser). This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about microShield and how to install it on [GitHub](https://github.com/List-KR/microShield).
 
 ## Where can you get more userscripts?{#more-userscripts}
 
-As userscripts are created mainly by enthusiasts, you should be cautious when installing them. Yet, there is a great variety of interesting scripts that can really make using some websites more convenient.
+As userscripts are mainly created by enthusiasts, you should be cautious when installing them. Any script from an unknown source carries a potential risk. Yet, there is a great variety of interesting scripts that, if installed carefully and responsibly, can really make using some websites more convenient.
 
 Here we will describe some of the most popular userscript catalogs.
 
-### Stylish (userstyles.org)
+### Userscript.Zone
 
-[Userstyles.org](https://userstyles.org/) is a catalog of user styles, but it allows you to load them as userscripts. Thus, any user style can be installed via AdGuard. Be careful if you decide to install an unpopular script — there's a risk it might be harmful.
+[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high credibility, since only scripts from moderated pages are displayed.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) is a userscript catalog by Stylish creators. Unlike the above-mentioned userstyles.org, the scripts in this catalog undergo moderation, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/) is a userscript catalog by Stylish creators. The scripts in this catalog undergo moderation, so their credibility is much higher.
 
 ### OpenUserJS.org
 

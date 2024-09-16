@@ -24,7 +24,7 @@ Incluso si no experimentas ningún error de bloqueo BSoD, aún puedes configurar
 
     :::tip
 
-    También puedes hacer clic en **Configuración** →  **Sistema** →  **Acerca de** →  **Configuración avanzada del sistema**.
+    Alternativamente, haz clic en **Configuración** → **Sistema** → **Acerca de** → **Configuración avanzada del sistema**.
 
 
 :::

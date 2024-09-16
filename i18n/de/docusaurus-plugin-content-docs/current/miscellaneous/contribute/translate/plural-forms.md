@@ -14,7 +14,7 @@ Substantive in verschiedenen Sprachen können mehrere Wortformen im Plural haben
 
 Zum Beispiel haben englische Wörter zwei Wortformen, wenn man über etwas im Singular spricht, wie *„one star“*, und im Plural — *„two stars“*. Es spielt keine Rolle, ob Sie fünf, sechsundzwanzig oder sogar fünfhundertzweiunddreißig Sterne sagen — die Endung „s“ bleibt dieselbe. Einige Sprachen können jedoch nur eine oder mehrere Pluralformen enthalten.
 
-Im Gegensatz zum Englischen gibt es in der polnischen Sprache drei Substantivformen im Plural. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2–4, excluding 12–14, and the third form — for words with other numbers in front of them.
+Im Gegensatz zum Englischen gibt es in der polnischen Sprache drei Substantivformen im Plural. Eine davon wird verwendet, wenn man über etwas in der Einzahl spricht, eine andere Form wird im Plural verwendet, aber mit Zahlen, die auf 2-4 enden, außer 12-14, und die dritte Form - für Wörter mit anderen Zahlen vor ihnen.
 
 Schauen wir uns dieses Bild an. Hier sieht man die Zahlengruppen, die eine Wortform bestimmen, wenn sie davor stehen.
 
@@ -38,7 +38,7 @@ Wenn Sie eine Phrase mit Pluralformen übersetzen, können Sie möglicherweise n
 
 Hier sind einige Informationsquellen, die Sie verwenden können.
 
-[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) enthält eine umfangreiche Liste von Sprachen. Die Anzahl der Pluralformen für verschiedene Sprachen wird folgendermaßen angezeigt: 'nplurals=2', 'nplurals=4' und so weiter. Die Zahl nach dem Gleichheitszeichen '=' gibt die Anzahl der Pluralformen der jeweiligen Sprache an.
+[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) enthält eine umfangreiche Liste von Sprachen. Die Anzahl der Pluralformen für die verschiedenen Sprachen wird auf diese Weise dargestellt: `nplurals=2`, `nplurals=4` und so weiter. Die Zahl nach dem Gleichheitszeichen `=` gibt die Anzahl der Pluralformen der jeweiligen Sprache an.
 
 Informationen zu Pluralformen finden Sie auch im [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Die CLDR-Pluralregeln geben eine zusätzliche Wortform für Dezimalzahlen an (1,5; 2,3; 100,1…), aber wir verwenden sie nicht in AdGuard-Übersetzungen.
 

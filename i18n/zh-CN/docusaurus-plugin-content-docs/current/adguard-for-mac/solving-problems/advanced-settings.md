@@ -1,11 +1,11 @@
 ---
-title: Advanced Settings guide
+title: 高级设置指南
 sidebar_position: 9
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文介绍 Mac 版 AdGuard。这是一款多功能广告拦截程序，可在系统级别保护设备。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -13,168 +13,176 @@ This article is about AdGuard for Mac, a multifunctional ad blocker that protect
 
 :::caution
 
-Changing *Advanced Settings* may cause problems with AdGuard's performance, break the Internet connection, or compromise your security and privacy. Make changes to this section only if you are sure of what you are doing or our support team has asked you to do it.
+更改「*高级设置*」会引起 AdGuard 出现性能问题，中断因特网连接或危及用户的安全和隐私等问题。 这就是我们建议用户仅在自己知道在做什么或我们的支持团队要求的情况下才打开此设置的原因。
 
 :::
 
-To find *Advanced Settings*, open AdGuard, click the gear icon, select *Advanced*, then select *Advanced Settings*.
+要转到「*高级设置*」，请打开 AdGuard，单击齿轮图标，选择 「*高级*」，然后选择「*高级设置*」。
 
 ## 高级设置
 
-`network.extension.exclude.domains`
+### Network settings
 
-The listed domains will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
+#### `network.extension.exclude.domains`
 
-`network.extension.exclude.ports`
+在「*网络扩展*」模式下，列出的域名将被排除在过滤之外。 使用逗号或换行符分隔数值。
 
-The listed ports will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
+#### `network.extension.exclude.ports`
 
-`network.extension.route.exclude`
+在「*网络扩展*」模式下，列出的端口将被排除在过滤之外。 使用逗号或换行符分隔数值。
 
-The listed routes will be excluded from filtering in the *Network Extension* mode. Set routes using an IP address or destination CIDR. Separate values with commas or line breaks.
+#### `network.extension.route.exclude`
 
-`network.extension.http.downgrade.bundleids`
+在「*网络扩展*」模式下，列出的路由将被排除在过滤之外。 使用 IP 地址或目标 CIDR 设置路由。 用逗号或换行符分隔数值。
 
-Here you can specify a list of applications for which the HTTP/2 protocol will be downgraded to HTTP/1.1 in the *Network Extension* filtering mode. The bundle ID should be separated by a comma or a line break.
+#### `network.extension.http.downgrade.bundleids`
 
-`network.extension.monterey.force.split.tunnel`
+用户可以指定在「*网络扩展*」过滤模式下 HTTP/2 协议将降级为 HTTP/1.1 的应用程序列表。 捆绑包 ID 应该用逗号或换行符分隔。
 
-Here you can prohibit AdGuard from using the "default route" which is enabled by default in the *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, as it cannot operate in unison with them.
+#### `network.extension.monterey.force.split.tunnel`
 
-You will find more information about the problem [in this article](../icloud-private-relay).
+用户可以禁止 AdGuard 使用「默认路由」，该路由在 macOS Monterey 的「*网络扩展*」模式中默认已启用。 AdGuard 使用「默认路由」禁用 iCloud 私人中继服务和保护邮件活动，因为软件无法与服务协同运行。
 
-`network.extension.dns.redirect.exclude.bundleids`
+用户可以[在本文中](../icloud-private-relay)找到有关该问题的更多信息。
 
-Here you can specify a list of applications that make DNS queries directly not via system DNS resolver (for example, some VPN clients or DNS filtering applications). DNS filtering will be disabled for them in the *Network Extension mode*. The bundle IDs should be separated by a comma or line break.
+#### `network.extension.dns.redirect.exclude.bundleids`
 
-`network.dns.filter.secure.request`
+用户可以在此指定不通过系统 DNS 解析器进行 DNS 查询的应用程序列表（例如，VPN 客户端或 DNS 过滤应用程序）。 在「*网络扩展*」模式下，应用程序的 DNS 过滤将被禁用。 捆绑包 ID 应该用逗号或换行符分隔。
 
-Redirects secure DNS requests to a local DNS proxy, if there is one available.
+#### `network.dns.filter.secure.request`
 
-`network.https.ocsp.check`
+将安全 DNS 请求重定向到本地 DNS 代理（如果有的话）。
 
-By setting `true`, you enable HTTPS certificate revocation checking.
+#### `network.https.ocsp.check`
 
-`network.tcp.keepalive.enabled`
+设置为 `true`，将启用 HTTPS 证书吊销检查。
 
-Periodically sends TCP packets over an idle connection to ensure that it remains active and to renew NAT timeouts.
+#### `network.tcp.keepalive.enabled`
 
-`network.tcp.keepalive.interval.seconds`
+定期在空闲连接上发送 TCP 数据包，以确保连接保持活动状态，并更新 NAT 超时。
 
-Idle time, in seconds, before sending a keepalive probe. If 0 is specified, the system will use the default value.
+#### `network.tcp.keepalive.interval.seconds`
 
-`network.tcp.keepalive.timeout.seconds`
+发送存活探测前的空闲时间（秒）。 如果指定为 0，系统将使用默认值。
 
-Time, in seconds, before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
+#### `network.tcp.keepalive.timeout.seconds`
 
-`network.https.ech.enabled`
+向无响应的对等设备发送另一个存活探测之前的时间（秒）。 如果指定 0，使用系统选择的数值。
 
-Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, encrypts ClientHellos.
+#### `network.https.ech.enabled`
 
-`network.https.enforce.certificate.transparency`
+使用本地 DNS 代理在 ECH 配置列表中查找配置。 如果找到，加密 ClientHellos。
 
-Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy.
+#### `network.https.enforce.certificate.transparency`
 
-`network.https.filter.http3.enabled`
+基于 Chrome 证书透明度（英文：Chrome Certificate Transparency，简称：Chrome CT）政策验证域名内所有证书的真实性。
 
-By setting `true`, you allow AdGuard to filter traffic sent over HTTP/3, the latest version of the HTTP protocol based on QUIC.
+#### `network.https.filter.http3.enabled`
 
-`network.filtering.localnetwork`
+如果设置为 `true`，允许 AdGuard 过滤通过 HTTP/3 发送的流量，HTTP/3 是基于 QUIC 的 HTTP 协议的最新版本。
 
-By setting `true`, you enable local network filtering.
+#### `network.filtering.localnetwork`
 
-`network.filtering.localhost`
+设置为 `true` 即可启用本地网络过滤。
 
-By setting `true`, you enable LoopBack filtering.
+#### `network.filtering.localhost`
 
-`dns.proxy.bootstrap.ips`
+设置为 `true` 即可启用 LoopBack 过滤功能。
 
-Here you can enter the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server.
+### DNS settings
 
-`dns.proxy.fallback.ips`
+#### `dns.proxy.bootstrap.ips`
 
-Here you can specify a list of IP addresses of DNS servers that will be used as backups in case the encrypted DNS server fails to respond.
+用户可以在此输入 DNS 服务器的 IP 地址，这些地址将用于确定加密 DNS 服务器的地址。
 
-`dns.proxy.fallback.on.upstreams.failure.enabled`
+#### `dns.proxy.fallback.ips`
 
-Normal queries will be redirected to a fallback upstream if all normal upstreams fail.
+用户可以指定 DNS 服务器的 IP 地址列表，这些地址将在加密 DNS 服务器无法响应时用作备份。
 
-`dns.proxy.detect.search.domains`
+#### `dns.proxy.fallback.on.upstreams.failure.enabled`
 
-This option enables automatic detection of the local network domain, which will be automatically redirected to the fallback DNS server instead of the main DNS server.
+如果所有正常的上游都失败，正常的查询将被重定向到一个备用上游。
 
-`dns.proxy.fallback.domains`
+#### `dns.proxy.detect.search.domains`
 
-Here you can list domains for which the fallback DNS server will be used instead of the main DNS server.
+该设置可以自动检测本地网络域名，并自动将其重定向到后备 DNS 服务器，而不是主 DNS 服务器。
 
-`dns.proxy.adblockrules.blocking.mode`
+#### `dns.proxy.fallback.domains`
 
-Here you can specify the type of DNS server response to blocked requests, corresponding to ad-blocker-style rules.
+用户可以列出将使用后备 DNS 服务器而不是主 DNS 服务器的域名。
 
-- 0 — respond with REFUSED
-- 1 — respond with NXDOMAIN
-- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+#### `dns.proxy.adblockrules.blocking.mode`
 
-`dns.proxy.hostrules.blocking.mode`
+用户可以指定 DNS 服务器响应被阻止请求的类型，与广告拦截器类型规则相对应。
 
-Here you can specify the type of DNS server response to blocked requests, corresponding to hosts rules:
+- 0 —— 用 REFUSED 响应
+- 1 —— 用 NXDOMAIN 响应
+- 2 —— 用 0.0.0.0 或 `dns.proxy.blocking.response.IPv4.address` 和/或 `dns.proxy.blocking.response.IPv6.address` 中指定的地址进行响应
 
-- 0 — respond with REFUSED
-- 1 — respond with NXDOMAIN
-- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+#### `dns.proxy.hostrules.blocking.mode`
 
-`dns.proxy.blocking.response.IPv4.address`
+用户可以根据主机规则指定 DNS 服务器响应被阻止请求的类型：
 
-Here you can specify the IPv4 address that will be returned in response to blocked "A" requests when `dns.proxy.adblockrules.blocking.mode` or `dns.proxy.hostrules.blocking.mode` is set to the response type "ADDRESS".
+- 0 —— 用 REFUSED 响应
+- 1 —— 用 NXDOMAIN 响应
+- 2 —— 用 0.0.0.0 或 `dns.proxy.blocking.response.IPv4.address` 和/或 `dns.proxy.blocking.response.IPv6.address` 中指定的地址进行响应
 
-`dns.proxy.blocking.response.IPv6.address`
+#### `dns.proxy.blocking.response.IPv4.address`
 
-Here you can specify the IPv6 address that will be returned in response to blocked "AAAA" requests when `dns.proxy.adblockrules.blocking.mode` or `dns.proxy.hostrules.blocking.mode` is set to the response type "ADDRESS".
+用户可以指定当 `dns.proxy.adblockrules.blocking.mode` 或 `dns.proxy.hostrules.blocking.mode` 设置为响应类型「ADDRESS」时，响应被阻止的「A」请求时将返回的 IPv4 地址。
 
-`dns.proxy.block.AAAA.requests`
+#### `dns.proxy.blocking.response.IPv6.address`
 
-Here you can enable IPv6 DNS query blocking.
+用户可以指定当 `dns.proxy.adblockrules.blocking.mode` 或 `dns.proxy.hostrules.blocking.mode` 设置为响应类型「ADDRESS」时，响应被阻止的「AAAA」请求时将返回的 IPv6 地址。
 
-`dns.proxy.blocked.response.TTL.in.seconds`
+#### `dns.proxy.block.AAAA.requests`
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+在此可以启用 IPv6 DNS 查询阻止。
 
-`dns.proxy.parallel.upstream.queries.enabled`
+#### `dns.proxy.blocked.response.TTL.in.seconds`
 
-All upstreams are queried simultaneously. The first response is returned.
+用户可以指定请求响应阻塞时返回的 TTL 值（生存时间）。
 
-`dns.proxy.servfail.on.upstreams.failure.enabled`
+#### `dns.proxy.parallel.upstream.queries.enabled`
 
-Responds to upstream failure with a SERVFAIL packet.
+同时查询所有上游。 The first response is returned.
 
-`dns.proxy.http3.enabled`
+#### `dns.proxy.servfail.on.upstreams.failure.enabled`
 
-Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection.
+用 SERVFAIL 数据包响应上游故障.
 
-`dns.proxy.block.encrypted.client.hello.response`
+#### `dns.proxy.http3.enabled`
 
-Removes the Encrypted Client Hello parameters from responses.
+为 DNS-over-HTTPS 上游启用 HTTP/3 以加速连接。
 
-`stealth.antidpi.http.split.fragment.size`
+#### `dns.proxy.block.encrypted.client.hello.response`
 
-Adjusts the size of the HTTP request fragmentation. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
+删除响应中的 Encrypted Client Hello 参数。
 
-`stealth.antidpi.clienthello.split.fragment.size`
+### Stealth Mode settings
 
-This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
+#### `stealth.antidpi.http.split.fragment.size`
 
-`stealth.antidpi.http.space.juggling`
+调整 HTTP 请求片段大小。 有效值：1–1500。 如果指定的大小无效，系统将使用默认值。
 
-Adds extra space between the HTTP method and the URL and removes space after the "Host:" field.
+#### `stealth.antidpi.clienthello.split.fragment.size`
 
-`stealth.antidpi.split.delay.millisecond`
+该设置指定 TCP 数据包碎片的大小，有助于避免深度包检测。 有效值：1–1500。 如果指定的大小无效，系统将使用默认值。
 
-Here you can specify the delay, in milliseconds, after sending the first fragment, if fragmentation is performed.
+#### `stealth.antidpi.http.space.juggling`
 
-`subscription.link.interception.userscript`
+在 HTTP 方法和 URL 之间添加额外的空格，并删除「Host:」字段后的空格。
 
-Activate this feature if you want AdGuard to automatically intercept the URLs of userscripts and open the installation window.
+#### `stealth.antidpi.split.delay.millisecond`
 
-`subscription.link.interception.filter`
+如果执行了分片，用户可以在此处指定发送第一个分片后的延迟（以毫秒为单位）。
 
-Activate this feature if you want AdGuard to automatically intercept subscription URLs (for example, abp:subscribe, etc.) and open the custom filter setup window.
+### Subscription link interception settings (userscripts and filters)
+
+#### `subscription.link.interception.userscript`
+
+激活此功能后可以让 AdGuard 自动拦截用户脚本的 URL 并打开安装窗口。
+
+#### `subscription.link.interception.filter`
+
+要 AdGuard 自动拦截订阅 URL（例如，abp:subscribe 等）并打开自定义过滤器设置窗口，请启动此功能。

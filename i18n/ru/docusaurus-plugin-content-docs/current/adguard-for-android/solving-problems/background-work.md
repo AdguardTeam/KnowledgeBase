@@ -27,7 +27,27 @@ sidebar_position: 9
 
 Устройства Xiaomi (и особенно MIUI) — одни из самых проблемных, когда речь идёт о фоновой работе. Известно, что они ограничивают фоновые процессы и имеют нестандартные разрешения с отсутствием надлежащей документации. Иногда приложения просто не работают на телефонах Xiaomi, и с этим мало что можно сделать. Ниже приведены некоторые действия, которые вы можете выполнить, если столкнётесь с проблемами, связанными с фоновой работой AdGuard на различных устройствах Xiaomi.
 
-### MIUI 12.0.8+
+### MIUI 13+ and HyperOS
+
+Depending on the MIUI and HyperOS versions, there are two ways to change the battery optimization settings on your phone and block ads more efficiently.
+
+Option 1
+
+1. Go to **Settings** → **Apps** → **Permissions** → **Background autostart** and allow AdGuard to run in the background
+
+1. Return to **Settings** → **Apps** → **Manage apps** → **AdGuard** and uncheck **Pause app activity if unused**
+
+1. Go to **Battery saver** and tap **No restrictions**
+
+Option 2
+
+1. Go to **Settings** → **Apps** → **Manage apps** → **AdGuard** and enable **Autostart**
+
+1. Go to **Battery saver** and tap **No restrictions**
+
+Готово! You have successfully set up AdGuard to work in the background.
+
+### MIUI 12.0.8
 
 Чтобы приложение AdGuard успешно работало в фоновом режиме, сделайте следующее:
 

@@ -6,18 +6,18 @@ slug: /
 
 ## AdGuard 広告ブロッカーとは何ですか？
 
-AdGuard is one of the leaders on the market of ad-blocking software with 10+ years of experience, almost a dozen products for various platforms, and over 30 million user installs. Unlike other ad-blocking solutions, most of which are browser-based, we offer standalone apps for all major platforms, both desktop and mobile. AdGuard apps are more powerful than browser extensions, can block more and do it more efficiently:
+AdGuard は、15 年以上の経験、さまざまなプラットフォーム向けの10種類近くの製品、累計ダウンロード数3億7,500万の突破を誇る、広告ブロックソフトウェア業界のリーダー企業です。 他社の広告ブロックソリューションの多くはブラウザベースであるのに対し、私たちは主要なプラットフォーム（iOS/Android/Windows/Mac）に対応した、デスクトップ版とモバイル版の両方のスタンドアロンアプリを提供しています。 AdGuard のアプリは、ブラウザの拡張機能よりも強力で、より多くのものをより効率的にブロックすることができます:
 
 - [AdGuard for Windows](/adguard-for-windows/features/home-screen)
 - [AdGuard for Mac](/adguard-for-mac/features/main)
 - [AdGuard for Android](/adguard-for-android/features/protection/ad-blocking)
 - [AdGuard for iOS](/adguard-for-ios/features/safari-protection)
 
-But we also develop and maintain free browser extensions for all popular browsers:
+また、一般的なブラウザ向けの無料ブラウザ拡張機能の開発とメンテナンスも行っております:
 
 - [AdGuard ブラウザ拡張機能](/adguard-browser-extension/features/filters)
 - [AdGuard for Safari](/adguard-for-safari/features/general)
 
-## Not just ad blocking
+## 広告ブロック以外の機能もたくさんあります
 
-AdGuard Ad Blocker does more than just block ads. It will protect you from online tracking and enhance your privacy in many ways. Depending on the specific product, AdGuard can also offer such perks as DNS filtering for more rounded-up protection, Parental Control to shield your kids from inappropriate content, Filtering log to have better control over your internet traffic, and more. This Knowledge base contains detailed information about any and all of them — feel free to jump to any article that interests you.
+AdGuard 広告ブロッカーは、広告をブロックするだけではありません。 トラッキングから守り、さまざまな方法であなたのオンラインプライバシーを強化してくれます。 各製品によって、保護層を増やしてくれる*DNSフィルタリング*、不適切なコンテンツから子供を守る*ペアレンタルコントロール*、インターネットトラフィックを制御するための*フィルタリングログ*などという機能も提供しています。 本ナレッジベースには、各製品の機能に関する詳細な情報が含まれています。左側の目次（スマホの場合は左上の「≡」アイコン）から、興味のある記事にジャンプしてお読みください。

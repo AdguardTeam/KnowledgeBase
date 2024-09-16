@@ -15,13 +15,13 @@ AdGuard Browser Assistant is a browser extension, it is installed in a browser, 
 
 ### Compatibility with the main app
 
-If you got into the habit of using our previous AdGuard Ad Blocker extension [in Integration mode](/adguard-browser-extension/integration-mode), you may like the solution that we have developed for the new Browser Assistant.
+If you got into the habit of using our previous [AdGuard Ad Blocker extension](/adguard-browser-extension/compatibility), you might like the solution that we have developed for the new Browser Assistant.
 
 Background information:
 
 In previous versions of the AdGuard Browser Extension (before v3.5), if you had it installed along with the AdGuard for Windows app, the extension took over the functions of Assistant, stopped filtering itself and relied on the app to do this.
 
-The extension and the app worked in conjunction but sometimes the integration would fail. Some websites would stop being protected by the desktop program and be backed up only by the less powerful extension.
+The extension and the app worked in conjunction but sometimes the integration would fail. The protection normally provided by the desktop program would stop on certain sites, where only the less powerful extension would then provide protection.
 
 When using the Browser Assistant, all these problems don’t matter as there can be no conflicts in essence. The role of the Browser Assistant is well-defined and it can’t hinder the functioning of the main app, so there is no need to worry.
 
@@ -43,4 +43,4 @@ Basically, there are two cases when you might want to pick it instead of the new
 
 If you want to install the Browser Assistant for your default browser, you can do it directly from the app settings, but you also have an opportunity to install it for other browsers.
 
-AdGuard Browser Assistant is available for all popular browsers: Chrome, Firefox, Edge, Opera, and Yandex. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and tap the *Install* button. That’s it!
+AdGuard Browser Assistant is available for all popular browsers: Chrome, Firefox, Edge, Opera, and Yandex. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and then the *Install* button. That’s it!

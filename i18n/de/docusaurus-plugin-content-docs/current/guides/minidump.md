@@ -24,7 +24,7 @@ Auch wenn Sie keine BSoD-Absturzfehler feststellen, können Sie diese Option akt
 
     :::tip
 
-    Oder klicken Sie auf **Einstellungen** → **System** → **Info** → **Erweiterte Systemeinstellungen**.
+    Alternativ klicken Sie auf **Einstellungen** → **System** → **Info** → **Erweiterte Systemeinstellungen**.
 
 
 :::

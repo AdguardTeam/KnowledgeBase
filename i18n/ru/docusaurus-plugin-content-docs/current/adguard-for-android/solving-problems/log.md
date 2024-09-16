@@ -9,7 +9,19 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
+:::note
+
+Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 В этой статье мы расскажем вам о том, как собирать отладочные логи — важном этапе поиска неисправностей для решения сложных проблем, которые могут потенциально возникнуть. Отладочные логи позволяют получить подробное представление о внутреннем устройстве AdGuard для Android. Если команда поддержки AdGuard попросит вас предоставить отладочные логи, просто следуйте этим инструкциям.
+
+:::note
+
+AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+
+:::
 
 ### Сбор отладочных логов
 

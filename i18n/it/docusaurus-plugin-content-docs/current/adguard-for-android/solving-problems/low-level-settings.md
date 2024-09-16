@@ -5,13 +5,13 @@ sidebar_position: 6
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Android, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## How to reach Low-level settings
 
-:::caution
+:::attenzione
 
 Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. Questa sezione dovrebbe essere aperta soltanto se sai cosa stai facendo, o se ti è stato richiesto di farlo dal nostro team di supporto.
 
@@ -63,7 +63,7 @@ Here you can specify the time in milliseconds that AdGuard will wait for the res
 
 #### Risposta TTL bloccata
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+Qui puoi specificare il valore TTL (tempo d'attività) che sarà restituito in risposta a una richiesta bloccata.
 
 #### DNS cache size
 
@@ -113,7 +113,7 @@ Use it only for debugging purposes!
 
 #### Encrypted Client Hello
 
-Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Encrypted Client Hello* option. It uses a local DNS proxy to look for the ECH configuration for the domain. If it is found, ClientHello packet will be encrypted.
+Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Encrypted Client Hello* option. Utilizza un proxy DNS locale per cercare la configurazione ECH per il dominio. Se trovato, il pacchetto ClientHello sarà crittografato.
 
 #### OCSP checking
 
@@ -121,13 +121,13 @@ If this setting is enabled, AdGuard will perform asynchronous OCSP checks to get
 
 If an OCSP check is completed within the required timeout, AdGuard will immediately block the connection if the certificate is revoked or establish the connection if the certificate is valid.
 
-If the verification takes too long, AdGuard will allow the connection while continuing to check the certificate status in the background. If the certificate is revoked, current and future connections to the domain will be blocked.
+If the verification takes too long, AdGuard will allow the connection while continuing to check the certificate status in the background. Se il certificato viene revocato, le connessioni attuali e future al dominio verranno bloccate.
 
 #### Redirect DNS-over-HTTPS requests
 
 If this setting is enabled, AdGuard will redirect DNS-over-HTTPS requests to the local DNS proxy in addition to plain DNS requests. We recommend disabling fallback upstreams and using only encrypted DNS servers to maintain privacy.
 
-#### Filter HTTP/3
+#### Filtra HTTP/3
 
 If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 

@@ -1,40 +1,40 @@
 ---
-title: Launch issues on macOS
+title: Problemi di avvio su macOS
 sidebar_position: 6
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Mac, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Occasionally macOS may cause the corruption of AdGuard's Network Extension module, making it unable to use the app. In this case you should follow one of these instructions, based on your OS version.
+Occasionalmente, macOS potrebbe causare la corruzione del modulo Estensione di Rete di AdGuard, impedendogli di utilizzare l'app. In tal caso, dovresti seguire una di queste istruzioni, a seconda della tua versione dell'OS.
 
-## Launch issues on macOS 11 and higher
+## Problemi di avvio su macOS 11 e superiori
 
-If you have problems launching AdGuard for Mac on Big Sur and Monterey operating systems, please use this instruction:
+Se riscontri problemi nell'avviare AdGuard per Mac sui sistemi operativi Big Sur e Monterey, sei pregato di utilizzare queste istruzioni:
 
-1. Reboot Mac and enter [recovery mode](https://support.apple.com/en-us/HT201255).
-1. Disable SIP (Launch **Terminal** from the **Utilities** menu and type `csrutil disable`).
-1. Reboot Mac.
-1. Close the AdGuard app, open **Terminal** and type `systemextensionsctl reset`.
-1. Reboot Mac and enter recovery mode.
-1. Enable SIP (Launch **Terminal** from the **Utilities** menu and type `csrutil enable`).
-1. Launch the AdGuard app and enable protection.
+1. Riavvia Mac e accedi alla [modalità di ripristino](https://support.apple.com/en-us/HT201255).
+1. Disabilita SIP (Avvia il **Terminale** dal menu delle **Utility** e digita `csrutil disable`).
+1. Riavvia Mac.
+1. Chiudi l'app di AdGuard, apri il **Terminale** e digita `systemextensionsctl reset`.
+1. Riavvia il Mac e accedi alla modalità di ripristino.
+1. Abilita SIP (Avvia il **Terminale** dal menu delle **Utility** e digita `csrutil enable`).
+1. Avvia l'app di AdGuard e abilita la protezione.
 
-## Launch issues on macOS 10
+## Problemi di avvio su macOS 10
 
-If you have problems launching AdGuard for Mac on Sierra, Mojave and Catalina operating systems, please use this instruction:
+Se riscontri problemi nell'avvio di AdGuard per Mac sui sistemi operativi Sierra, Mojave e Catalina, sei pregato di utilizzare queste istruzioni:
 
-1. Open **Terminal** and enter command `ls -@lOae /private/var/db/KernelExtensionManagement`.
-1. Check that the `restricted` flag is not present (like on the screenshot). ![Command example *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/restricted-flag.jpg)
-1. Reboot your Mac in recovery mode.
-1. Open **Utilities** → **Terminal**.
-1. Enter `csrutil disable`.
-1. Enter administrator password.
-1. Reboot your Mac.
-1. Open **Terminal** and enter the following command: `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
-1. Reboot your Mac in recovery mode.
-1. Open **Utilities** → **Terminal** → Enter `csrutil enable` → Enter administrator password → Reboot your Mac.
-1. Enable AdGuard protection.
+1. Apri il **Terminale** e inserisci il comando `ls -@lOae /private/var/db/KernelExtensionManagement`.
+1. Verifica che il flag `restricted` non sia presente (come sullo screenshot). ![Esempio di comando *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/restricted-flag.jpg)
+1. Riavvia il tuo Mac in modalità di ripristino.
+1. Apri **Utilità** → **Terminale**.
+1. Digita `csrutil disable`.
+1. Inserisci la password da amministratore.
+1. Riavvia il tuo Mac.
+1. Apri il **Terminale** e inserisci il seguente comando: `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
+1. Riavvia il tuo Mac in modalità di ripristino.
+1. Apri **Utilità** → **Terminale** → Digita `csrutil enable` → Inserisci la password da amministratore → Riavvia il tuo Mac.
+1. Abilita la protezione di AdGuard.

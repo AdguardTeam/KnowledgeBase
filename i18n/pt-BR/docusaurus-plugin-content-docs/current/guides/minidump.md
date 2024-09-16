@@ -24,7 +24,7 @@ Mesmo que você não encontre nenhum erro de travamento BSoD, você ainda pode c
 
     :::dica
 
-    Alternativamente, clique em **Configurações** →  **Sistema** →  **Sobre** →  **Configurações avançadas do sistema**.
+    Como alternativa, clique em **Configurações** → **Sistema** → **Sobre** → **Configurações avançadas do sistema**.
 
 
 :::

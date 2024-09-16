@@ -1,5 +1,5 @@
 ---
-title: How to create a dump file
+title: Como criar um arquivo dump
 sidebar_position: 8
 ---
 
@@ -9,30 +9,36 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 :::
 
-To diagnose the reasons for potential problems that users might encounter while using AdGuard, the support team might need the process dump file. The dump file helps developers to see the processes that were executed in the application over a given period of time. Below you can check on the instructions of how to collect the dump file on your PC.
-
-1. Press **Ctrl + Shift + Esc** and click **Task Manager**
-
-1. In the upper menu bar select **Details**
-
-    ![Task Manager details](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/details_en.png)
-
-1. Right-click the process that you want to create the dump file for (for example, the support team may ask you to create a dump for `Adguard.exe`)
-
-1. In the drop-down menu click **Create dump file**
-
-1. The file was created successfully!
-
-    ![Create dump file](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/create_dump_file_en.png)
-
-After you’ve created the dump file, please navigate to the file location. You should be prompted to open the folder containing the dump file right after its creation. Otherwise, you will be able to find it inside the **%tmp%** folder. The created dump file (`.DMP`) has the same name as the name of the process you chose in the previous steps. The file is quite large, so please compress it into an archive before sending to support.
-
 :::note
 
-AdGuard for Windows has two running processes (`Adguard.exe` and `AdguardSvc.exe`). So you need to create the dump file separately for each process.
+Os dados e/ou arquivos fornecidos nos arquivos dump são processados de acordo com [a Política de Privacidade do AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-![AdGuard processes](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
+Para diagnosticar os motivos de possíveis problemas que os usuários podem encontrar ao usar o AdGuard, a equipe de suporte pode precisar do arquivo dump do processo. O arquivo dump ajuda os desenvolvedores a ver os processos que foram executados no aplicativo durante um determinado período de tempo. Abaixo, você pode conferir as instruções de como coletar o arquivo dump em seu PC.
 
-When you send the dump files to the support team, please also attach the AdGuard application logs so we have a better chance at solving the problem. [Here](../adguard-logs) you can check the instructions on how to collect the log file.
+1. Pressione **Ctrl + Shift + Esc** e clique em **Gerenciador de Tarefas**
+
+1. Na barra de menu superior, selecione **Detalhes**
+
+    ![Detalhes do Gerenciador de Tarefas](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/details_en.png)
+
+1. Clique com o botão direito no processo para o qual deseja criar o arquivo dump (por exemplo, a equipe de suporte pode solicitar que você crie um dump para `Adguard.exe`)
+
+1. No menu suspenso, clique em **Criar arquivo dump**
+
+1. O arquivo foi criado com sucesso!
+
+    ![Criar arquivo dump](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/create_dump_file_en.png)
+
+Depois de criar o arquivo dump, navegue até o local do arquivo. Será pedido que você abra a pasta que contém o arquivo dump logo após sua criação. Caso contrário, você poderá encontrá-lo dentro da pasta **%tmp%**. O arquivo dump criado (`.DMP`) tem o mesmo nome do processo que você escolheu nas etapas anteriores. O arquivo é muito grande, portanto, compacte-o antes de enviá-lo ao suporte.
+
+:::note
+
+O AdGuard para Windows tem dois processos em execução (`Adguard.exe` e `AdguardSvc.exe`). Portanto, você precisa criar o arquivo dump separadamente para cada processo.
+
+:::
+
+![Processos do AdGuard](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
+
+Ao enviar os arquivos dump para a equipe de suporte, anexe também os logs do aplicativo AdGuard para que tenhamos mais chances de resolver o problema. [Aqui](../adguard-logs) você pode verificar as instruções sobre como coletar o arquivo de log.

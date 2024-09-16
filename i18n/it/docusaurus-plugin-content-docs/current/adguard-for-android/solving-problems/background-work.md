@@ -5,7 +5,7 @@ sidebar_position: 9
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -27,7 +27,27 @@ Alternatively, instead of unchecking **Auto-deny apps from auto starting** entir
 
 Xiaomi (and especially MIUI) devices are among the most troublesome ones when it comes to background work. They are known to limit background processes and have non-standard permissions with a lack of proper documentation to top it off. Sometimes apps just don't work right on Xiaomi phones and there's little that can be done about that. Below are some actions you might attempt to perform if you run into any trouble regarding AdGuard's background work on various Xiaomi devices.
 
-### MIUI 12.0.8+
+### MIUI 13+ and HyperOS
+
+Depending on the MIUI and HyperOS versions, there are two ways to change the battery optimization settings on your phone and block ads more efficiently.
+
+Option 1
+
+1. Go to **Settings** → **Apps** → **Permissions** → **Background autostart** and allow AdGuard to run in the background
+
+1. Return to **Settings** → **Apps** → **Manage apps** → **AdGuard** and uncheck **Pause app activity if unused**
+
+1. Go to **Battery saver** and tap **No restrictions**
+
+Option 2
+
+1. Go to **Settings** → **Apps** → **Manage apps** → **AdGuard** and enable **Autostart**
+
+1. Go to **Battery saver** and tap **No restrictions**
+
+Fatto! You have successfully set up AdGuard to work in the background.
+
+### MIUI 12.0.8
 
 To let your AdGuard app run successfully in the background, do the following:
 
@@ -463,7 +483,7 @@ Devices with OxygenOS on board are the most problematic, with its OS-specific ca
 
     ![Oneplusdots *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
 
-:::caution
+:::attenzione
 
 On some OnePlus phones there is also a thing called App Auto-Launch and Deep Optimization which essentially prevents apps from working in the background. Please disable it for AdGuard.
 

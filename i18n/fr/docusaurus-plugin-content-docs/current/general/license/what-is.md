@@ -1,5 +1,5 @@
 ---
-title: What is AdGuard license?
+title: Qu'est-ce qu'une licence AdGuard ?
 sidebar_position: 1
 ---
 

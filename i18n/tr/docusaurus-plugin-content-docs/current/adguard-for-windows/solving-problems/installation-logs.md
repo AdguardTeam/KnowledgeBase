@@ -1,5 +1,5 @@
 ---
-title: How to collect AdGuard installation logs
+title: AdGuard kurulum günlükleri nasıl toplanır
 sidebar_position: 4
 ---
 
@@ -9,7 +9,13 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-If any problems occur during the installation of AdGuard, the support team might ask you to collect and send them AdGuard installation logs. In this case you need to:
+:::not
+
+Sistem günlüklerinde sağlanan veriler ve/veya dosyalar [AdGuard Gizlilik Politikasına](https://adguard.com/en/privacy.html) uygun olarak işlenir.
+
+:::
+
+AdGuard kurulumu sırasında herhangi bir sorun oluşursa, destek ekibi sizden AdGuard kurulum günlüklerini toplamanızı ve göndermenizi isteyebilir. In this case you need to:
 
 1. Select *Run* command in Start menu or press *Win + R* on the keyboard.
 

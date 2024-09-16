@@ -1,48 +1,48 @@
 ---
-title: Possible DNS leaks
+title: Posibles fugas de DNS
 sidebar_position: 9
 ---
 
 :::info
 
-Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard for Windows allows users to specify a DNS server address to resolve queries instead of system DNS server, which is provided by your ISP if not overridden in the system settings. Using a non-default DNS server can safeguard your DNS traffic from the ISP’s interception. Moreover, by choosing an encrypted and/or filtering DNS server, you get another layer of protection against bad actors and annoying ads.
+AdGuard para Windows permite a los usuarios especificar una dirección de servidor DNS para resolver consultas en lugar del servidor DNS del sistema, que proporciona tu ISP si no se anula en la configuración del sistema. El uso de un servidor DNS no predeterminado puede proteger tu tráfico DNS de la interceptación del ISP. Además, al elegir un servidor DNS cifrado y/o filtrado, obtienes otra capa de protección contra malos actores y anuncios molestos.
 
-Many AdGuard for Windows users appreciate the DNS protection feature. But some of them encounter the following issue: a check on a website like https://ipleak.net/ shows that requests are handled by default DNS server instead of the selected one. In this article we will tell you why this happens and how to avoid it.
+Muchos usuarios de AdGuard para Windows aprecian la función de protección DNS. Pero algunos de ellos se encuentran con el siguiente problema: una comprobación en un sitio web como https://ipleak.net/ muestra que las solicitudes son gestionadas por el servidor DNS predeterminado en lugar del seleccionado. En este artículo, te contamos por qué ocurre esto y cómo evitarlo.
 
-## Bootstrap DNS address
+## Dirección DNS Bootstrap
 
-The DNS server addresses could be written as IPs or as domain names. In the case of IP addresses there are no difficulties: AdGuard forwards the DNS request directly to the server specified in the DNS protection module. However, encrypted DNS server addresses, like DoT or DoH, are most often written as domain names. In this case, to first resolve the encrypted DNS server address, AdGuard sends a DNS query to the bootstrap address, which is by default a system DNS server. This connection is what check services perceive as a leak.
+Las direcciones del servidor DNS pueden escribirse como IP o como nombres de dominio. En el caso de las direcciones IP no hay dificultades: AdGuard reenvía la solicitud DNS directamente al servidor especificado en el módulo de protección DNS. Sin embargo, las direcciones de servidor DNS cifradas, como DoT o DoH, suelen escribirse como nombres de dominio. En este caso, para resolver primero la dirección del servidor DNS cifrado, AdGuard envía una consulta DNS a la dirección de arranque, que es de forma predeterminada un servidor DNS del sistema. Esta conexión es lo que los servicios de control perciben como una fuga.
 
-**To eliminate this leak:**
+**Para eliminar esta fuga:**
 
-- go to the *Advanced settings*
-- scroll down to the *List of custom bootstrap addresses* section
-- enter the custom bootstrap address in IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
-- click *Save*
+- ve a *Configuración avanzada*
+- desplázate hacia abajo hasta la sección *Lista de direcciones de arranque personalizadas*
+- ingresa la dirección de arranque personalizada en formato de dirección IP (puedes usar [la lista de proveedores de DNS conocidos](https://adguard-dns.io/kb/general/dns-providers/))
+- haz clic en *Guardar*
 
-## Fallback DNS server
+## Servidor DNS fallback
 
-It could happen that AdGuard cannot reach the specified server because of a weak internet connection, an expiration of timeout set by default or some server related issues. In this case, it will connect to the fallback server, which is by default a system DNS server. This connection will also be considered by the check service as a leak.
+Puede ocurrir que AdGuard no pueda llegar al servidor especificado debido a una conexión a Internet débil, a que haya expirado el tiempo de espera establecido por defecto o a algún problema relacionado con el servidor. En este caso, se conectará al servidor fallback, que de forma predeterminada es un servidor DNS del sistema. Esta conexión también será considerada por el servicio de control como una fuga.
 
-**To eliminate this leak:**
+**Para eliminar esta fuga:**
 
-- go to the *Advanced settings*
-- scroll down to the *Fallback servers* section
-- check the *Use custom servers* option
-- then find the *List of custom fallback servers* section and enter custom fallback servers one per line
+- ve a *Configuración avanzada*
+- desplázate hacia abajo hasta la sección *Servidores fallback*
+- marca la opción *Usar servidores personalizados*
+- luego busca la sección *Lista de servidores fallback personalizados* e ingresa los servidores fallback personalizados, uno por línea
 
-or
+o
 
-- go to the *Advanced settings*
-- scroll down to the *Fallback servers* section
-- check the *Don’t use fallback servers* option
+- ve a *Configuración avanzada*
+- desplázate hacia abajo hasta la sección *Servidores fallback*
+- marca la opción *No usar servidores alternativos*
 
-or
+o
 
-- go to the *Advanced settings*
-- scroll down to the *DNS server timeout period* section
-- enter an arbitrary large number
+- ve a *Configuración avanzada*
+- desplázate hacia abajo hasta la sección *Período de tiempo de espera del servidor DNS*
+- introduce un número grande arbitrario

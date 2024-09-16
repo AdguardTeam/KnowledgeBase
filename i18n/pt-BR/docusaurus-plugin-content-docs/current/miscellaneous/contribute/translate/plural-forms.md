@@ -14,7 +14,7 @@ Substantivos em diferentes idiomas podem ter várias formas plurais. Seu uso dep
 
 Por exemplo, as palavras em inglês têm duas formas quando se fala de algo no singular, como *"one star"* e, no plural, *"two stars"*. Não importa se você disser cinco, vinte e seis ou mesmo quinhentas e trinta e duas estrelas, o final "s" permanecerá o mesmo. Mas algumas línguas podem conter apenas uma ou várias formas plurais.
 
-Em contraste com o inglês, a língua polonesa tem três formas plurais de substantivos. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2–4, excluding 12–14, and the third form — for words with other numbers in front of them.
+Em contraste com o inglês, a língua polonesa tem três formas plurais de substantivos. Uma delas é usada para falar sobre algo no singular, outra forma é usada no plural, mas com números terminando em 2–4, excluindo 12–14, e a terceira forma para palavras com outros números na frente delas.
 
 Vamos dar uma olhada nesta imagem. Aqui pode ver os grupos de numerais que determinam a forma de uma palavra quando está em frente a ela.
 
@@ -38,7 +38,7 @@ Quando você se depara com uma tradução que exige o uso de plurais, talvez nã
 
 Aqui estão algumas fontes de informação que você pode usar.
 
-[O Guia de Localização](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contém uma ampla lista de idiomas. O número de formas plurais para diferentes idiomas é mostrado desta forma: 'nplurals=2', 'nplurals=4' e assim por diante. O numeral após o sinal de igual '=' significa o número de formas plurais do respectivo idioma.
+[O Guia de Localização](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contém uma ampla lista de idiomas. O número de formas plurais para diferentes idiomas é mostrado desta forma: `nplurals=2`, `nplurals=4` e assim por diante. O numeral após o sinal de igual `=` significa o número de formas plurais do respectivo idioma.
 
 Além disso, você pode obter informações sobre formas plurais no [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). As regras do plural CLDR indicam uma forma de palavra adicional para números decimais (1,5; 2,3; 100,1…), mas não as usamos nas traduções do AdGuard.
 

@@ -25,12 +25,13 @@ At the very bottom of the screen you will find *Advanced Settings*. Changing som
 
 This is the main module of AdGuard for Windows that removes ads from the websites you visit and from the apps installed on your device. To filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers AdGuard uses different filters: groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). To understand what filters are and how they work read [this article](/general/ad-filtering/how-ad-blocking-works).
 
-![Ad Blocker *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/ad-blocker.png)
+![Ad Blocker *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
 In the Ad Blocker module you can:
 
 - enable automatic activation of language-specific filters,
 - disable [search ads and self-promotion](/general/ad-filtering/search-ads) blocking,
+- disable ads in the Start menu on Windows 11,
 - activate pre-installed filters such as *AdGuard Base filter*,
 - install filters from the list or add a custom filter by clicking the *Add a filter* button,
 - make changes to existing rule groups using the *Filter editor* button,
@@ -79,7 +80,7 @@ There are several websites to which access should be restricted from a PC used b
 
 The module checks the contents of web pages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental Control settings are password-protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results.
 
-In the Parental Control module you can enable the *Safe search* and manage the *blocklist* and the *allowlist* to customize how this option works. You can also check the *Block executable files download* box to prevent your child from downloading and installing software on the computer. There are two more options in the *Parental Control* module: you can select a specific Windows user to be protected by *Parental Control* and set a password to protect AdGuard settings from change.
+In the *Parental Control* module you can enable the *Safe search* and manage the *blocklist* and the *allowlist* to customize how this option works. You can also check the *Block executable files download* box to prevent your child from downloading and installing software on the computer. There are two more options in the *Parental Control* module: you can select a specific Windows user to be protected by *Parental Control* and set a password to protect AdGuard settings from change.
 
 ![Parental Control *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 

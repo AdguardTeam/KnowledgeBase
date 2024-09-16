@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -31,11 +31,11 @@ Si está habilitada, AdGuard bloqueará TCP Fast Open en el navegador Edge. Para
 
 ### Usar Encrypted ClientHello
 
-Toda conexión a Internet cifrada tiene una parte no cifrada. Este es el primer paquete que contiene el nombre del servidor al que te estás conectando. La tecnología Encrypted Client Hello resuelve este problema y cifra la última parte de la información no cifrada. Para aprovecharla, activa la opción *Usar Encrypted ClientHello*. It uses a local DNS proxy to look for the ECH configuration for the domain. Si se encuentra, el paquete ClientHello se cifrará.
+Toda conexión a Internet cifrada tiene una parte no cifrada. Este es el primer paquete que contiene el nombre del servidor al que te estás conectando. La tecnología Encrypted Client Hello resuelve este problema y cifra la última parte de la información no cifrada. Para aprovecharla, activa la opción *Usar Encrypted ClientHello*. Utiliza un proxy DNS local para buscar la configuración de ECH para el dominio. Si se encuentra, el paquete ClientHello se cifrará.
 
 ### Verificar la transparencia de los certificados de los sitios web
 
-Verifica la autenticidad de todos los certificados para el dominio según la política de transparencia de certificados de Chrome. If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. Chrome, a su vez, lo bloqueará.
+Verifica la autenticidad de todos los certificados para el dominio según la política de transparencia de certificados de Chrome. Si el certificado no cumple con la Política de transparencia de certificados de Chrome, AdGuard no filtrará el sitio web. Chrome, a su vez, lo bloqueará.
 
 ### Habilitar verificación de revocación de certificados SSL/TLS
 
@@ -61,9 +61,9 @@ Habilita esta función para ver las notificaciones en ventanas emergentes de AdG
 
 Habilita esta función si deseas que AdGuard intercepte automáticamente las URL de suscripción de filtro (es decir, `abp:subscribe` y similares) y abra un cuadro de diálogo de instalación de filtro personalizado.
 
-### Filter HTTP/3
+### Filtrar HTTP/3
 
-If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+Si esta opción está habilitada, AdGuard filtrará las solicitudes enviadas a través de HTTP/3 además de otros tipos de solicitudes.
 
 ### Usar modo de redireccionamiento del driver
 
@@ -81,7 +81,7 @@ A partir de la versión 7.12, de forma predeterminada, el servicio de AdGuard no
 
 :::note
 
-Before v7.12, the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.
+Antes de la versión 7.12, el servicio AdGuard se iniciaba en modo de filtrado de forma predeterminada (incluso si la opción *Iniciar AdGuard al arrancar el sistema* estaba desactivada). Si estabas satisfecho con el recurso anterior, habilita esta opción.
 
 :::
 
@@ -106,24 +106,24 @@ Host: ejemplo.org`
 
 se convertirá en
 
-`GET  /foo/bar/ HTTP/1.1
-Host: example.org`
+`GET /foo/bar/ HTTP/1.1
+Host: ejemplo.org`
 
 Esta opción solo se aplica cuando la opción *Proteger de DPI* en Modo Stealh está habilitada.
 
 ### Ajustar el tamaño de la fragmentación del paquete TLS inicial
 
-Especifica el tamaño de la fragmentación del paquete TCP, evitando la inspección profunda de paquetes. This option only affects secured (HTTPS) traffic.
+Especifica el tamaño de la fragmentación del paquete TCP, evitando la inspección profunda de paquetes. Esta opción solo afecta el tráfico seguro (HTTPS).
 
 Si esta opción está habilitada, AdGuard divide el paquete TLS inicial (el paquete ClientHello) en dos partes: la primera tiene la longitud especificada y la segunda tiene el resto, hasta la longitud de todo el paquete TLS inicial.
 
-Valid values: 1–1500. Si se especifica un tamaño no válido, se utilizará el valor seleccionado por el sistema. Esta opción solo se aplica cuando la opción *Proteger de DPI* en Modo Stealh está habilitada.
+Valores válidos: 1–1500. Si se especifica un tamaño no válido, se utilizará el valor seleccionado por el sistema. Esta opción solo se aplica cuando la opción *Proteger de DPI* en Modo Stealh está habilitada.
 
 ### Tamaño de fragmento de la petición HTTP simple
 
 Ajusta el tamaño de la fragmentación de la solicitud HTTP. Esta opción solo afecta al tráfico HTTP simple. Si esta opción está habilitada, AdGuard divide el paquete inicial en dos partes: la primera tiene la longitud especificada y la segunda tiene el resto, hasta la longitud de todo el paquete original.
 
-Valid values: 1–1500. Si se especifica un tamaño no válido, se utilizará el valor seleccionado por el sistema. Esta opción solo se aplica cuando la opción *Proteger de DPI* en Modo Stealh está habilitada.
+Valores válidos: 1–1500. Si se especifica un tamaño no válido, se utilizará el valor seleccionado por el sistema. Esta opción solo se aplica cuando la opción *Proteger de DPI* en Modo Stealh está habilitada.
 
 ### Mostrar QUIC
 
@@ -135,21 +135,21 @@ Envía periódicamente paquetes TCP a través de una conexión inactiva para ase
 
 ### Intervalo de TCP keepalive
 
-Aquí puedes especificar un período de tiempo de inactividad, en segundos, antes de enviar una prueba de keepalive. If 0 is specified, the value selected by the system will be used.
+Aquí puedes especificar un período de tiempo de inactividad, en segundos, antes de enviar una prueba de keepalive. Si se especifica 0, se utilizará el valor seleccionado por el sistema.
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+Esta configuración solo funciona cuando la opción *Activar TCP keepalive* está habilitada.
 
 :::
 
 ### Tiempo de espera de TCP keepalive
 
-Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. Si se especifica 0, se utilizará el valor seleccionado por el sistema.
+Aquí puedes especificar el tiempo en segundos antes de enviar otra prueba de keepalive a un par que no responde. Si se especifica 0, se utilizará el valor seleccionado por el sistema.
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+Esta configuración solo funciona cuando la opción *Activar TCP keepalive* está habilitada.
 
 :::
 
@@ -167,11 +167,11 @@ Habilita HTTP/3 para upstreams de DNS-over-HTTPS para acelerar la conexión si e
 
 ### Usar upstreams de DNS alternativos
 
-Normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
+Las consultas normales se redirigirán al upstream alternativo si fallan todas las solicitudes de DNS a los upstream seleccionados.
 
 ### Consultar servidores DNS de upstream en paralelo
 
-All upstreams will be queried in parallel and the first response is returned. Dado que las consultas de DNS se realizan en paralelo, habilitar esta función aumenta la velocidad de Internet.
+Todos los canales ascendentes se consultarán en paralelo y se devolverá la primera respuesta. Dado que las consultas de DNS se realizan en paralelo, habilitar esta función aumenta la velocidad de Internet.
 
 ### Siempre responder a las consultas DNS fallidas
 
@@ -179,7 +179,7 @@ Si la resolución de direcciones falla en cada uno de los upstreams reenviados, 
 
 ### Habilitar el filtrado de solicitudes de DNS seguras
 
-AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
+AdGuard redirigirá las solicitudes de DNS seguras al proxy DNS local, además de las solicitudes de DNS simples.
 
 ### Modo de bloqueo para reglas de hosts
 
@@ -233,4 +233,4 @@ Todas las solicitudes de DNS a los dominios enumerados aquí se redirigirán al 
 
 ### Excluir los nombres de redes Wi-Fi (SSID) especificados del filtrado de DNS
 
-DNS protection will not include Wi-Fi networks listed in this section. Especifique los nombres de las redes Wi-Fi (SSID), uno por línea. Esto puede ser útil si una red Wi-Fi en particular ya está protegida por AdGuard Home u otro sistema de protección de DNS. En este caso, es superfluo volver a filtrar las solicitudes de DNS.
+La protección DNS no incluirá las redes Wi-Fi enumeradas en esta sección. Especifique los nombres de las redes Wi-Fi (SSID), uno por línea. Esto puede ser útil si una red Wi-Fi en particular ya está protegida por AdGuard Home u otro sistema de protección de DNS. En este caso, es superfluo volver a filtrar las solicitudes de DNS.

@@ -5,11 +5,23 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+
+:::
+
+:::note
+
+Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
 
 :::
 
 In questo articolo, ti guideremo attraverso il processo di raccolta dei registri di debug, un passaggio essenziale per la risoluzione dei problemi complessi che potrebbero potenzialmente sorgere. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
+
+:::note
+
+AdGuard si impegna a proteggere la tua privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Prima di inviare i registri al team di supporto, esamina il file poiché potrebbe contenere informazioni aggiuntive che non desideri condividere. Se contiene tali informazioni personali, ti consigliamo di eliminarle prima.
+
+:::
 
 ### Collecting debug log
 

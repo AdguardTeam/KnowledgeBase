@@ -5,11 +5,25 @@ sidebar_position: 3
 
 :::info
 
-Questo articolo riguarda AdGuard per Windows, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Windows, un ad blocker multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+
+:::
+
+:::note
+
+I dati e/o i file forniti negli registri sono trattati in conformità con [l'Informativa sulla privacy di AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
 To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need AdGuard log files. These files contain records about errors and other events that occurr with the software. Below is the brief instruction describing the way to get the log files and send them to the support service if necessary.
+
+:::note
+
+AdGuard si impegna a proteggere la tua privacy. Rispettiamo rigorosamente la nostra [Informativa sulla privacy](https://adguard.com/privacy/windows.html) e non raccogliamo alcuna informazione privata sugli utenti. Prima di inviare i registri al team di supporto, esamina il file poiché potrebbe contenere informazioni aggiuntive che non desideri condividere. Se contiene tali informazioni personali, ti consigliamo di eliminarle prima.
+
+:::
+
+### Registri di debug {#debug-logs}
 
 1. Open the AdGuard settings. Go to the *General Settings* section, scroll down to the end of the screen and switch the *Logging Level* to *Debug*.
 
@@ -53,6 +67,6 @@ If you have an older version of AdGuard for Windows, run the application with th
 
 1. Export the recorded logs using the *Export Logs* button.
 
-    ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+    ![Esporta i registri *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
     Don't worry if the log file is large. We need to know as much detail as possible to fix your problem.

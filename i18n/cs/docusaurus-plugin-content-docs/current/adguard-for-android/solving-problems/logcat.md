@@ -9,7 +9,19 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
+:::note
+
+Údaje a/nebo soubory poskytnuté v protokolech jsou zpracovávány v souladu se [Zásadami ochrany osobních údajů AdGuardu](https://adguard.com/en/privacy.html).
+
+:::
+
 Někdy nemusí běžný záznam stačit k identifikaci původu problému. V takových případech je nutný systémový záznam. Níže jsou uvedeny pokyny, jak je shromáždit a získat: prostřednictvím možností pro vývojáře a Logcat.
+
+:::note
+
+AdGuard se zavazuje chránit vaše soukromí. Přísně dodržujeme naše [Zásady ochrany osobních údajů](https://adguard.com/privacy/android.html) a neshromažďujeme žádné soukromé informace o uživatelích. Před odesláním protokolů týmu podpory si soubor prohlédněte, protože může obsahovat další informace, které nechcete sdílet. Pokud takové osobní údaje obsahuje, doporučujeme je nejprve smazat.
+
+:::
 
 ## Zachycení hlášení o chybě ze zařízení
 

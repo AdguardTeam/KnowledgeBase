@@ -9,19 +9,19 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-## System requirements
+## Sistem gereksinimleri
 
 ### iPhone
 
-Requires iOS 11.2 or later.
+Requires iOS 13 or later.
 
 ### iPad
 
-Requires iPadOS 11.2 or later.
+Requires iPadOS 13 or later.
 
 ### iPod touch
 
-Requires iOS 11.2 or later.
+Requires iOS 13 or later.
 
 ## iOS için AdGuard yüklemesi
 

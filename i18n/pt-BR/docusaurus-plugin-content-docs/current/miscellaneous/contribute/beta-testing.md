@@ -7,17 +7,17 @@ Existe um aplicativo AdGuard para praticamente todas as principais plataformas d
 
 ## Como se tornar um testador beta {#intro}
 
-Nossos requisitos são fáceis: use o AdGuard, atualize para a versão beta quando ela estiver disponível e relate quaisquer bugs que encontrar. However, you will need a [GitHub](https://github.com/) account to become our beta tester, so you may want to get that out of the way first.
+Nossos requisitos são fáceis: use o AdGuard, atualize para a versão beta quando ela estiver disponível e relate quaisquer bugs que encontrar. No entanto, você precisará de uma conta no [GitHub](https://github.com/) para se tornar nosso testador beta, então talvez seja melhor resolver isso primeiro.
 
-In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/beta.html).
+De qualquer forma, tudo o que você precisa saber está reunido em uma página [especial](https://adguard.com/beta.html).
 
 Se quiser pular a parte da descrição e ir direto para a ação, você pode se inscrever [aqui](https://surveys.adguard.com/beta_testing_program/form.html). Sua inscrição será analisada dentro de 1 a 3 dias úteis e você receberá uma resposta por e-mail.
 
 ## Como relatar um problema {#report-a-bug}
 
-If you spotted a bug or just want to share your suggestion, let us know: go to [GitHub](https://github.com/AdguardTeam/), find a suitable repository, create a new issue there, and describe the bug/feature request in detail.
+Se você detectou um bug ou apenas quer compartilhar sua sugestão, avise-nos: vá para [GitHub](https://github.com/AdguardTeam/), encontre um repositório adequado, crie um novo problema lá e descreva o bug/solicitação de recurso em detalhes.
 
-The above method is the most preferred, but you can use others if necessary:
+O método acima é o mais preferido, mas você pode usar outros, se necessário:
 
 - Encontre-nos em várias plataformas de mídia social, como [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. No entanto, esta não é a maneira mais conveniente de discutir questões técnicas.
 
@@ -29,6 +29,6 @@ Se você já recebeu uma chave beta e ela está listada em sua conta `adguard.co
 
 ### O que mais?
 
-Não há muito mais a acrescentar. Você não precisa se esforçar para encontrar bugs. Você pode continuar usando o AdGuard normalmente. No entanto, se você encontrar um bug, por favor, nos informe. Of course, we appreciate any additional effort.
+Não há muito mais a acrescentar. Você não precisa se esforçar para encontrar bugs. Você pode continuar usando o AdGuard normalmente. No entanto, se você encontrar um bug, por favor, nos informe. É claro que apreciamos qualquer esforço adicional.
 
 Ocasionalmente, você receberá nossos boletins, mantendo-o informado sobre as últimas mudanças no beta (caso você tenha perdido) e outras notícias importantes. Você pode cancelar a assinatura a qualquer momento.

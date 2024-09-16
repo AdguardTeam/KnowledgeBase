@@ -1,64 +1,76 @@
 ---
-title: 브라우징 보안
+title: 피싱 및 멀웨어 보호
 sidebar_position: 3
 ---
 
-Every day, tens of thousands of people fall prey to virus attacks or fraud on the Internet. We have added special filters to the AdGuard app to protect you from malicious and phishing websites.
+피싱과 멀웨어는 여전히 흔한 문제입니다. 디지털 보안을 강화하기 위해 AdGuard 제품에 특수 필터를 통합하여 악성 및 피싱 웹사이트로부터 사용자를 보호합니다. 현재까지 1,500만 개 이상의 사이트를 분류하고 피싱 및 멀웨어로 알려진 150만 개 웹사이트의 데이터베이스를 구축했습니다. AdGuard는 이 데이터베이스를 사용하여 사용자가 방문하는 웹사이트를 확인하여 온라인 위협으로부터 사용자를 보호합니다.
 
-So far, we have categorized more than 15 million sites, and our filters contain about 1.5 million phishing and malware sites. Just think about it: 10% of all known sites can be dangerous for you! Inexperienced users can easily become victims of fraudsters or hackers. We hope that using protection against malicious websites will help you avoid all hazards that you may encounter.
+::: note
 
-## How does a check work?
+당사는 사용자가 방문하는 웹사이트에 대한 정보를 엄격하게 수집하거나 사용하지 않습니다.
 
-The scope and methods of checks depend on the product you use. In our browser extensions, AdGuard inspects only the pages you visit. In AdGuard for Windows, Mac, or Android, we offer you the best possible protection by checking both the pages and all objects loaded on them.
+:::
 
-### AdGuard for Windows, Mac, and Android
+## AdGuard는 웹사이트를 어떻게 검사하나요?
 
-We use the protocol [Safe Browsing API version 2.2](https://code.google.com/p/google-safe-browsing/wiki/Protocolv2Spec) for our work with filters. This protocol allows us to keep your personal data absolutely safe. Our server knows nothing about the websites that you visit. We use hash prefixes for checks, not the opened URLs.
+사용자가 웹사이트를 방문할 때마다 로컬 클라이언트는 해시 및 해시 접두사 형태로 AdGuard 백엔드 서버와 정보를 교환합니다. 이 교환을 기반으로 로컬 클라이언트는 잠재적으로 위험한 웹사이트 데이터베이스에 해당 웹사이트가 등재되어 있는지 여부를 결정합니다. 하지만 앱과 확장 프로그램은 조금 다르게 검사됩니다.
 
-The figure below provides a general understanding of how the Browsing security module works, using AdGuard for Windows as an example.
+### 앱
 
-![Functioning algorithm of Browsing security module](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
+AdGuard는 페이지와 페이지에 로드된 모든 개체를 검사하여 최상의 보호 기능을 제공합니다. AdGuard는 전체 URL이 아닌 해시 접두사를 사용하여 URL과 도메인 이름을 확인하므로, 당사 서버는 사용자가 방문한 웹사이트에 대한 정보를 보유하지 않으며 사용자의 개인 정보는 완전히 안전합니다. AdGuard 서버는 해시 접두사와 일치하는 모든 가능한 주소 목록으로 앱의 쿼리에 응답합니다. 해시 일치를 기반으로 잠재적 위협이 감지되면 해당 웹사이트에 대한 액세스가 즉시 차단됩니다.
 
-### AdGuard 확장 프로그램
+![DNS 경고](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_diana.png)
 
-Browser extensions work differently, using the so-called [*Lookup API*](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668) to check the pages you visit. Every time you visit any website, your local client exchanges information with our backend server in the form of hashes and hash prefixes. Based on this exchange, the local client determines whether or not the site is listed in the potentially dangerous sites database. For those interested in the process at a deeper level, the link above will be helpful.
+### 확장 프로그램
 
-We bring to your attention that we never get any information that could allow us to determine which websites you visit and use that data in any way.
+브라우저 확장 프로그램은 전체 URL이 아닌 도메인 이름만 확인할 수 있습니다. 또한 하위 쿼리를 확인할 수 없습니다. 즉, 페이지에 잠재적으로 악성일 수 있는 요소가 있는 경우 페이지 자체가 안전한 도메인의 것이라도 해당 요소가 로드됩니다. 확장 프로그램으로는 보호할 수 없습니다. 또한 수행되는 검사는 비동기식으로, 즉 페이지가 로드되는 동시에 수행되므로 멀웨어도 로드될 수 있다는 점에 유의해야 합니다.
 
-An approximate algorithm of the functioning of the Browsing security module is shown in the picture below.
+## AdGuard 제품에서 피싱 및 멀웨어 보호 설정하기
 
-![Functioning algorithm of Browsing security module in AdGuard browser extensions.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
+- **Windows의 경우**: *설정* 메뉴에서 *브라우징 보안* 모듈을 활성화합니다.
 
-## AdGuard filters
+![Windows에서 브라우징 보안](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
 
-We currently maintain two AdGuard filters. One protects against phishing and fraudulent websites. The other protects against malicious websites, visiting which may lead to a virus infection.
+- **Mac의 경우**: *설정에서* *보안* 모듈을 활성화합니다.
 
-### Phishing sites filter
+![Mac의 보안](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
 
-*Phishing* is a type of online fraud aimed at gaining access to confidential data of users — username and password. If you are interested in this topic, we suggest that you read [this article at Wikipedia](http://en.wikipedia.org/wiki/Phishing).
+- **Android의 경우**: *보호* 탭에서 *브라우징 보안을* 켭니다.
 
-Apart from phishing sites, this filter also covers different fraudulent sites, including all kinds of scams, sales of nonexistent content, and such.
+![Android의 브라우징 보안 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
 
-### Malicious sites filter
+- **iOS의 경우**: 별도의 모듈은 없지만 *Safari 보호* → *필터* → *안전* 을 클릭하고 사용 가능한 필터를 활성화합니다. 또한 *DNS 보호*를 활성화하고 AdGuard DNS 서버 중 하나를 선택합니다.
 
-This filter contains links to pages that could execute malicious code, leading to potential leaks, data loss, or damage to a user’s device. Code execution can be authorized (for example, when downloading and running the executable file) or unauthorized (for example, when being attacked with spyware).
+![iOS의 보안 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
 
-## How do we add new addresses to our filters?
+- **브라우저 확장 프로그램의 경우**: *설정* 탭에서 *피싱 및 멀웨어 보호를* 사용 설정합니다. 보호 기능을 강화하려면 *필터* → *보안*으로 이동하여 사용 가능한 필터를 활성화하세요.
 
-Most of the work is automated, so you can be sure that new malware and phishing addresses are added to our database as quickly as possible.
+![피싱 및 멀웨어 보호](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
 
-### AdGuard Browsing security Community
+- **비공개 AdGuard DNS의 경우:** *보안* 아래의 *서버 설정*에서 멀웨어 보호를 사용 설정합니다.
 
-An important tool for maintaining the highest level of filtering is the *AdGuard Browsing security Community*. Any user of our products — be it AdGuard for Windows or our browser extension — can become a member of the community and help us in the making of AdGuard filters.
+![DNS의 보안](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
 
-In the image below, you can see an algorithm of how Browsing security Community works:
+## 차단 대상
 
-![The way AdGuard Browsing security Community works](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
+사용자 인증 정보를 도용하려는 피싱 및 사기성 웹사이트로부터 보호하는 필터와 데이터 손실, 정보 유출 또는 기기 손상으로 이어질 수 있는 멀웨어를 배포하는 것으로 알려진 웹사이트에 대한 액세스를 차단하는 두 가지 기본 필터를 유지 관리합니다. 이 필터는 다양한 사기 및 사기 수법이 포함된 웹사이트로부터 사용자를 보호합니다. 자세한 내용은 이 [위키백과 문서](https://en.wikipedia.org/wiki/Phishing)를 참조하세요.
 
-### Want to help?
+## 필터 유지 관리
 
-We will gladly accept any help! If you want to send us a complaint about a phishing or malware site, you can do it via technical support at **support@adguard.com**.
+AdGuard는 피싱 및 멀웨어 웹사이트에 대한 광범위한 데이터베이스를 유지 관리하며 새로운 위협이 발견되면 정기적으로 자동으로 업데이트됩니다. AdGuard는 신뢰할 수 있는 고품질의 다양한 출처(공개 및 타사)로부터 정보를 수집하여 위험 사이트에 대한 공통 데이터베이스로 통합합니다.
 
-### False-positive responses
+의심스러운 사이트에 대한 불만을 자동으로 분석하고 데이터베이스를 최신 상태로 유지하며 오탐을 정리하고 향후 이를 방지하기 위한 메커니즘을 구현하는 데 많은 시간을 할애합니다.
 
-Occasionally, some non-malicious websites get added to AdGuard's filters. We do our best to reduce the percentage of false positives, but they still occur. If you come across this behavior from AdGuard, please send us a complaint about the false-positive alarm. You can submit such complaints via our technical support at **support@adguard.com**.
+### 돕고 싶으신가요?
+
+피싱 또는 멀웨어 웹사이트를 발견하면 <support@adguard.com>으로 신고해 주세요.
+
+### 오탐 응답
+
+때때로 일부 비악성 웹사이트가 AdGuard의 필터에 추가되는 경우가 있습니다. 오탐 비율을 줄이기 위해 최선을 다하고 있지만 여전히 오탐이 발생하고 있습니다. AdGuard에서 이러한 동작이 발생하면 지원팀( <support@adguard.com>)으로 오탐을 신고해 주세요.
+
+## 웹사이트가 의심스러운 경우
+
+특정 웹사이트가 위험하다고 생각되면 먼저 [보안 확인 도구](https://reports.adguard.com/welcome.html)를 사용해 보세요.
+
+![보안 확인](https://cdn.adtidy.org/content/kb/ad_blocker/general/site_warning.png)

@@ -9,6 +9,12 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
+:::not
+
+HAR dosyaları [AdGuard Gizlilik Politikasına](https://adguard.com/en/privacy.html) uygun olarak işlenir.
+
+:::
+
 ## HAR dosyaları nedir?
 
 The HAR (HTTP ARchive) format is a JSON-formatted archive file for logging of a web browser's interaction with a site. The specifications of HAR format defines an archival data for HTTP transactions that used by a browser to export detailed information about web pages it loads. More detailed description of HAR file format and its specification you can find at [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/) website.

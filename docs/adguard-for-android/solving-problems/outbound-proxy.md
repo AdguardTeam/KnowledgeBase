@@ -9,7 +9,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-Below you can find a list of the most famous applications that you can configure to work as proxies in AdGuard.
+Below is a list of the most well-known applications that can be configured to work as proxies in AdGuard.
 
 :::note
 
@@ -41,11 +41,11 @@ In this article we give examples of how to set up some of the most popular proxi
     Proxy host | *127.0.0.1*
     Proxy port | *9050*
 
-    Or you can tap **Proxy server** → **Add proxy server**, enter these values manually, and set Orbot as a default proxy.
+    Or you can tap **Proxy server** → **Add proxy server**, enter these values manually, and set Orbot as the default proxy.
 
 1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
 
-    Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable outbound proxy settings in AdGuard.
+    Now AdGuard will route all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable the outbound proxy settings in AdGuard.
 
 ### How to use AdGuard with PIA (Private Internet Access)
 
@@ -89,17 +89,25 @@ In this article we give examples of how to set up some of the most popular proxi
 
 ### How to use AdGuard with NordVPN
 
-1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
+1. Log in to your NordVPN account.
 
-1. Tap the **Add proxy server** button and enter the following data:
+1. Go to **Services** → **NordVPN** → **Manual setup** and set up your service credentials manually.
+
+1. You will receive a verification code on the email address you use for NordVPN. Use it on your NordVPN account as requested, then tap *Apply* and *OK* to save the changes.
+
+![Manual setup](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/outbound-proxy/nordvpn-manual-setup.png)
+
+1. Open the AdGuard app, go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server** → **Add proxy server**.
+
+1. Enter the following data:
 
     Field      |  Value
     -------    | ---------
     Proxy type | *SOCKS5*
-    Proxy host | *any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent)*
+    Proxy host | Any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent)
     Proxy port | *1080*
 
-1. For **Username** and **Password** fields, enter your NordVPN Username and Password.
+1. Enter your NordVPN credentials in the **Username** and **Password** fields.
 
 1. Tap **Save and select**.
 
@@ -149,4 +157,4 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 ## Limitations
 
-There is a factor that can prevent certain traffic from being routed through the outgoing proxy even after you configure AdGuard proxy settings. It can happen if you don't set up the app itself to send the traffic through AdGuard. To do it, you need to proceed to **App management**, choose the app, and turn on **Route traffic through AdGuard**.
+However, at least one factor may prevent certain traffic from being routed through the outbound proxy, even after configuring the AdGuard proxy settings. That would be if the app itself isn't configured to send its traffic through AdGuard. To do it, you need to proceed to **App management**, choose the app, and turn on **Route traffic through AdGuard**.

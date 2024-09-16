@@ -17,8 +17,14 @@ AdGuard for Safari で発生した問題を分析および診断するために�
 2. 下にスクロールし、「_ログをエクスポートする_」をクリックします。
 3. .zipファイルを保存する場所を指定し、「_保存_」をクリックします。
 
-これで、このログファイルをAdGuardサポート（support@adguard.com）に送信するか、GitHub のバグレポートに添付できます。GitHubの場合の添付方法はこちら:
+これで、このログファイルをAdGuardサポート（support@adguard.com）に送信するか、GitHub のバグレポートに添付できます。GitHubの場合の添付方法は以下の通りです:
 
-1. [AdGuard for Safari の GitHub リポジトリ](https://github.com/AdguardTeam/AdGuardForSafari/issues)を開き、_New issue_ をクリックします。
-2. ログファイルを devteam@adguard.com に送信してください。 メールにバグの発生時刻とissueへのリンクまたはissue番号（番号はissueタイトルの横に#○○として表示されます）を記載してください。
-   もう一つの方法として、ログファイルをGoogle Driveにアップロードして、devteam@adguard.comにリンクを送りください。 GitHub のissueにもファイルへのリンクを追加してください。
+:::note
+
+AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/safari.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+
+:::
+
+1. Open the [AdGuard for Safari GitHub repo](https://github.com/AdguardTeam/AdGuardForSafari/issues) and click _New issue_.
+2. Send the log file to devteam@adguard.com. Include the time of the bug and attach a link to your issue or its number (it appears as #number next to the title).
+   Alternatively, you can upload the log file to Google Drive and send it to devteam@adguard.com. Add the file link to your GitHub issue.
