@@ -38,7 +38,7 @@ This problem can be solved in 2 ways:
 
 - By visiting the *Recent activity* section in AdGuard for Android or the *Filtering log* section in AdGuard for Windows and AdGuard for Mac. While in the Browser Assistant you can only see the certificate of the website, in Recent activity you can inspect the certificate of any server used in a subrequest or browser, with or without the Browser Assistant. To view the certificate using this method, follow the instructions below.
 
-On AdGuard for Android:
+In AdGuard for Android:
 
 1. Click the Statistics icon on the navigation bar.
 2. Go to *Recent activity*.
@@ -47,7 +47,7 @@ On AdGuard for Android:
 
 ![Recent activity AdGuard for Android](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-android.png)
 
-On AdGuard for Windows:
+In AdGuard for Windows:
 
 1. Go to *Settings* → *Ad Blocker* → *Filtering log*.
 2. Click the request whose certificate you want to inspect to open the request details.
@@ -55,7 +55,7 @@ On AdGuard for Windows:
 
 ![Filtering log AdGuard for Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-win.png)
 
-On AdGuard for Mac:
+In AdGuard for Mac:
 
 1. Click the gear icon. In the drop-down menu, go to *Advanced* → *Filtering log...*.
 2. Click the request whose certificate you want to inspect to open the request details.
