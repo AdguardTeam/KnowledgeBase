@@ -4,8 +4,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const ADGUARD_WEBSITE_URL = 'https://adguard.com';
 
 // Allow to parameterise the website URL and the base path during the build.
-const url = process.env.URL || 'https://adguardteam.github.io';
-const baseUrl = process.env.BASE_URL || '/KnowledgeBase/';
+// By default, the website is published to Cloudflare Pages.
+const url = process.env.URL || 'https://kb-adg.pages.dev';
+const baseUrl = process.env.BASE_URL || '/';
 
 const typesenseCollectionName = process.env.SEARCH_COLLECTION || 'docusaurus-2';
 const typesenseHost = process.env.SEARCH_HOST || 'xxx-1.a1.typesense.net';
@@ -14,7 +15,7 @@ const typesenseApiKey = process.env.SEARCH_API_KEY || 'test';
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'AdGuard Knowledge Base',
-  tagline: 'Knowledge base for AdGuard products',
+  tagline: 'Knowledge Base for AdGuard products',
   url: url,
   baseUrl: baseUrl,
   onBrokenLinks: 'throw',
@@ -226,13 +227,21 @@ module.exports = {
       },
     ],
   ],
-  plugins: [
-    '@docusaurus/plugin-ideal-image',
-    [
-      require.resolve('docusaurus-lunr-search'),
-      {
-        languages: ['en'],
-      }
-    ],
-  ],
+  webpack: {
+    jsLoader: (isServer) => ({
+      loader: require.resolve('swc-loader'),
+      options: {
+        jsc: {
+          parser: {
+            syntax: 'typescript',
+            tsx: true,
+          },
+          target: 'es2017',
+        },
+        module: {
+          type: isServer ? 'commonjs' : 'es6',
+        },
+      },
+    }),
+  },
 };
