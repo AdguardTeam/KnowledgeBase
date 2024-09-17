@@ -1,6 +1,6 @@
 ---
 title: Userstyles (Experimental)
-sidebar_position: 9
+sidebar_position: 6
 ---
 
 Userstyles allow users to customize their online experience. Whether you’re looking to change the appearance of a website or automate repetitive tasks, styles offer a world of possibilities.
