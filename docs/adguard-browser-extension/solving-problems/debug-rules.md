@@ -3,7 +3,7 @@ title: How to debug rules in AdGuard for Chrome MV3
 sidebar_position: 2
 ---
 
-In [AdGuard for Chrome MV3](/adguard-browser-extension/mv3-version), the Filtering log only shows the approximate rules that were applied, which we call “assumed rules”. This is because the browser doesn’t provide details about which specific declarative rules were used unless the extension is in an “unpacked” format. To get precise information, you’ll need to install the unpacked version of the extension in your browser yourself.
+In [AdGuard for Chrome MV3](/adguard-browser-extension/mv3-version), the Filtering log only shows the approximate rules that were applied, which we call "assumed rules". This is because the browser doesn't provide details about which specific declarative rules were used unless the extension is in an "unpacked" format. To get precise information, you'll need to install the unpacked version of the extension in your browser yourself.
 
 These instructions are also meant for problematic cases where you want to modify the rules that are bundled with the extension statically. In most cases, using *User rules* in the extension should be sufficient.
 
@@ -75,7 +75,7 @@ These instructions are also meant for problematic cases where you want to modify
 
     ![Select](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
 
-That’s it!
+That's it!
 
 ## How to debug rules
 
