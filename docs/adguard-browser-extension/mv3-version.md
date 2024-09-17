@@ -3,7 +3,7 @@ title: AdGuard Browser Extension for Chrome MV3
 sidebar_position: 5
 ---
 
-As MV2 extensions are being phased out in the Chrome Web Store, Chrome users may need to switch to MV3 extensions that are compatible with Chrome's new API Manifest V3. Our thoughts on this topic are extensively discussed on [our blog](https://adguard.com/en/blog/tag/manifest-v3.html).
+As MV2 extensions are being phased out in the Chrome Web Store, Chrome users may need to switch to MV3 extensions that are compatible with Chrome’s new API Manifest V3. Our thoughts on this topic are extensively discussed on [our blog](https://adguard.com/en/blog/tag/manifest-v3.html).
 
 Our MV3 extension effectively blocks ads and trackers while seamlessly managing social widgets, banners, and video ads. Most users will not notice any operational differences, but there are some limitations and changes to be aware of.
 
@@ -17,13 +17,13 @@ The old beta extension will be renamed to [**AdGuard Ad Blocker MV2**](https://c
 
 ## Main changes in features and settings
 
-- **No auto and manual filter updates.** The options *Auto-update filters* and *Check filters update* are no longer available in the *Filters* tab. Since some of the rules are now applied in DNR form, we can't update filters on request, only through the full process of updating the extension along with the review in the stores.
+- **No auto and manual filter updates.** The options *Auto-update filters* and *Check filters update* are no longer available in the *Filters* tab. Since some of the rules are now applied in DNR form, we can’t update filters on request, only through the full process of updating the extension along with the review in the stores.
 
 - **Filtering log**
 
     ![Filtering log *border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-    Due to DNR restrictions, we can't show exactly which rule worked, but we will provide an "assumed rule that was triggered" based on our engine. For precise information, you'll need to install the "unpacked" form of the extension in your browser yourself. You'll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules).
+    Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an "assumed rule that was triggered" based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules).
 
 - *Tracking protection* (formerly known as *Stealth mode*)
 
