@@ -23,7 +23,7 @@ The old beta extension will be renamed to [**AdGuard Ad Blocker MV2**](https://c
 
     ![Filtering log *border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-    Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an "assumed rule that was triggered" based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules).
+    Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules).
 
 - *Tracking protection* (formerly known as *Stealth mode*)
 
