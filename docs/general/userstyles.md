@@ -33,7 +33,7 @@ If you’re familiar with CSS rules, you can also create the userstyles yourself
 
 :::note
 
-We don’t support userstyles that contain `@var` and `@advanced` in the metadata. AdGuard also doesn’t support `@preprocessor` without the `default` value.
+We don’t support userstyles that contain `@var` or `@advanced` in the metadata. AdGuard also doesn’t support `@preprocessor` without the `default` value.
 
 :::
 
