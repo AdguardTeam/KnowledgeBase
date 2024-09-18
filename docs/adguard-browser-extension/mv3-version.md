@@ -21,19 +21,19 @@ The old beta extension will be renamed to [**AdGuard Ad Blocker MV2**](https://c
 
 - **Filtering log**
 
-  ![Filtering log *border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+    ![Filtering log *border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “approximate rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules).
+    Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules).
 
 - *Tracking protection* (formerly known as *Stealth mode*)
 
-  ![Tracking protection *border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+    ![Tracking protection *border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
 
-  There are no *Cookies* section, along with *Self-destruction of first-party cookies* and *Self-destruction of third-party cookies* since we cannot set the TTL of cookies using declarative rules.
+    There are no *Cookies* section, along with *Self-destruction of first-party cookies* and *Self-destruction of third-party cookies* since we cannot set the TTL of cookies using declarative rules.
 
-- *Phishing & malware protection* is no longer available in the general settings. To protect yourself from malicious websites and scams, enable the appropriate filters in the *Security* tab.
+- *Phishing & malware protection* is no longer available in the general settings. To protect yourself from malicious websites and scams, enable the appropriate *Security* filters in the *Filters* tab.
 
-  ![Security](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+    ![Security](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## Limitations
 
@@ -55,46 +55,55 @@ The maximum number of simultaneously enabled filters is **50**.
 
 **Dynamic rules:** a strict cap of **5,000** rules is imposed, which includes a maximum of 1,000 regex rules.
 
-  If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first allowlist, then user rules, and finally — custom filters.
+If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first allowlist, then user rules, and finally — custom filters.
 
-> **Converted rules** are rules that have been transformed to [DNR](https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest#build-rules) format using the [declarative converter](https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter). During this conversion process, some rules may overwrite others (`badfilter`), some may be combined (`removeparame`), resulting in a list of rules with a slightly different order.
+> **Converted rules** are rules that have been transformed
+> to [DNR format] using the [declarative converter][github-declarative-converter].
+> During this conversion process, some rules may overwrite others (`$badfilter`), some may be combined (`$removeparam`),
+> resulting in a list of rules with a slightly different order.
 >
 > From this list of converted rules, we will only use 5,000 rules. The rest of them will be displayed in the editor, but not applied.
 
- Here's how a rule with a basic modifier is converted to a declarative rule:
+Here's how a rule with a basic modifier is converted to a declarative rule:
 
-  ```bash
-  ||example.org^$script,third-party,domain=example.com
-  ```
+    ```bash
+    ||example.org^$script,third-party,domain=example.com
+    ```
 
-  is converted to
+is converted to
 
-  ```bash
-  [
-  {
-    "id": 1,
-    "action": {
-    "type": "block"
-    },
-    "condition": {
-    "urlFilter": "||example.org^",
-    "domainType": "thirdParty",
-    "initiatorDomains": [
-      "example.com"
-    ],
-    "resourceTypes": [
-      "script"
+    ```bash
+    [
+        {
+            "id": 1,
+            "action": {
+                "type": "block"
+            },
+            "condition": {
+                "urlFilter": "||example.org^",
+                "domainType": "thirdParty",
+                "initiatorDomains": [
+                    "example.com"
+                ],
+                "resourceTypes": [
+                    "script"
+                ]
+            },
+            "priority": 302
+        }
     ]
-    },
-    "priority": 302
-  }
-  ]
-  ```
+    ```
 
-  More examples can be found on [GitHub](https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#basic-examples).
+More examples can be found on [GitHub][github-declarative-converter-examples].
 
-### Network rules
+### Network rule modifiers
 
-Network rules have limitations: some types of rules cannot be implemented in MV3, or can only be implemented with restrictions.
+Network rule modifiers have limitations: some of them cannot be implemented in MV3, or can only be implemented with restrictions.
 
-Below is a list of modifiers that are supported, partially supported, or not supported at all. More details about the limitations can be found on [GitHub](https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter). For further information on modifiers, please refer to our [Knowledge base](/general/ad-filtering/create-own-filters/#basic-rules-basic-modifiers).
+More details about the limitations can be found on [GitHub][github-declarative-converter].
+For further information on modifiers, please refer to our [Knowledge base](/general/ad-filtering/create-own-filters).
+
+[DNR format]: https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest#build-rules
+<!-- TODO: update the following urls after the release/v3.1 branch is merged -->
+[github-declarative-converter]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter
+[github-declarative-converter-examples]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#basic-examples
