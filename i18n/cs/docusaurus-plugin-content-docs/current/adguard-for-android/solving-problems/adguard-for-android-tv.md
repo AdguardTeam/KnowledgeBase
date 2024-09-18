@@ -9,7 +9,7 @@ Tento článek popisuje AdGuard pro Android TV, blokátor reklam, který chrán�
 
 :::
 
-Ve většině případů nelze do TV nainstalovat soubor ze standardních prohlížečů, ale můžete si stáhnout prohlížeč z obchodu Google Play, který tuto funkci má. V našem průvodci se budeme zabývat příkladem instalace pomocí prohlížeče TV Bro, ale existují i jiné možnosti a vy si můžete vybrat tu, která lépe vyhovuje vašim potřebám. Případně můžete použít aplikaci [Downloader](https://play.google.com/store/apps/details?id=com.esaba.downloader).
+Ve většině případů nelze do TV nainstalovat soubor ze standardních prohlížečů, ale můžete si stáhnout prohlížeč z obchodu Google Play, který tuto funkci má. In our guide, we will go through an example of installation using the TV Bro browser, but there are other options and you can choose the one that better suits your needs. Případně můžete použít aplikaci [Downloader](https://play.google.com/store/apps/details?id=com.esaba.downloader).
 
 ## Instalace aplikace AdGuard pro Android TV z prohlížeče v TV
 

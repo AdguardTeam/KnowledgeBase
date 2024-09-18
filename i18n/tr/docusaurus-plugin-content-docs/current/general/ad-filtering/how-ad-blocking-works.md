@@ -3,7 +3,7 @@ title: Reklam engelleme nasıl çalışır
 sidebar_position: 1
 ---
 
-AdGuard has many ad-blocking products for various platforms, and each product has its own unique features. But what unites them all is that they block ads and trackers. This article describes how ad blocking works from the inside.
+AdGuard has many ad-blocking products for different platforms, each with its own unique features. But what unites them all is that they block ads and trackers. This article describes how ad blocking works from the inside.
 
 :::not
 

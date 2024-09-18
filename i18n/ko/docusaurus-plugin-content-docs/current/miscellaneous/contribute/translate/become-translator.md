@@ -35,7 +35,7 @@ Crowdin에 가입·로그인한 후, [AdGuard 페이지](https://crowdin.com/pro
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-[이 글에서 AdGuard 번역에 대한 몇 가지 유용한 팁](../guidelines)을 확인할 수 있습니다. Please take a look at it.
+[이 글에서 AdGuard 번역에 대한 몇 가지 유용한 팁](../guidelines)을 확인할 수 있습니다. 한번 살펴보시기 바랍니다.
 
 ### 교정자가 되는 방법 {#proofreaders}
 
@@ -51,4 +51,4 @@ AdGuard에는 각 언어별로 프루프리더(이전에는 모더레이터라�
 
 - 해당 언어로 번역과 관련된 댓글에 응답합니다.
 
-Every year, the best proofreaders receive gifts from AdGuard. 물론, 활동적인 번역가들에게도 보상이 제공됩니다. AdGuard의 [보상 시스템](../rewards)에 대해 자세히 알아보세요.
+AdGuard는 매년 최고의 교정자에게 선물을 증정합니다. 물론, 활동적인 번역가들에게도 보상이 제공됩니다. AdGuard의 [보상 시스템](../rewards)에 대해 자세히 알아보세요.

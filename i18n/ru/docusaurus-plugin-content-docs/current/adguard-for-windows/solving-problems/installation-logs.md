@@ -1,5 +1,5 @@
 ---
-title: Как собирать логи установки AdGuard
+title: How to collect AdGuard installation logs
 sidebar_position: 4
 ---
 
@@ -17,7 +17,7 @@ Data and/or files provided in system logs are processed in accordance with [the 
 
 Если во время установки AdGuard возникнут какие-либо проблемы, служба поддержки может попросить вас собрать и отправить им журналы установки AdGuard. В этом случае вам необходимо:
 
-1. Выберите команду *Выполнить* в меню «Пуск» или нажмите *Win + R* на клавиатуре.
+1. Select the *Run* command in Start menu or press *Win + R* on the keyboard.
 
 1. Введите *%tmp%* и нажмите *OK*.
 

@@ -9,6 +9,6 @@ Na kartě O produktu se zobrazují informace o aktuální verzi produktu a odkaz
 
 :::note Připomínka
 
-AdGuard pro Safari si můžete stáhnout zdarma [z App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). Podrobný návod k nastavení je k dispozici v [databázi znalostí](/adguard-for-safari/installation/).
+AdGuard pro Safari si můžete stáhnout zdarma [z App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). A detailed setup instruction is available in the [Knowledge Base](/adguard-for-safari/installation/).
 
 :::

@@ -15,7 +15,7 @@ sidebar_position: 2
 
 ### 常规设置
 
-用户可以在此处设置语言和主题（暗色或亮色），开启 AdGuard 随系统启动运行，静寂自动更新，选择更新通道和过滤器更新检查时间间隔。 如果 Windows 版 AdGuard 无法正常工作，而支持团队要求用户[收集「调试日志」](/adguard-for-windows/solving-problems/adguard-logs.md)，那么「设置」也是要查看的地方。
+用户可以在此处设置语言和主题（暗色或亮色），开启 AdGuard 随系统启动运行，静寂自动更新，选择更新通道和过滤器更新检查时间间隔。 Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect _Debug logs_](/adguard-for-windows/solving-problems/adguard-logs.md).
 
 ![高级设置 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
 
@@ -80,7 +80,7 @@ sidebar_position: 2
 
 此模块检查浏览器打开的网页内容，过滤儿童不宜的内容：成人图像和文字、粗俗语言、暴力、毒品宣传等。 家长控制设置受密码保护，孩子无法绕过限制。 此模块不仅拦截对不良网站的指向，也可从搜索结果中移除儿童不宜的链接。
 
-在家长控制模块，用户可以开启「安全搜索」，管理「黑名单」和「白名单」以自定义此选项的工作方式。 用户也可以选中「阻止下载可执行文件」以防止儿童在计算机上下载和安装软件。 「家长控制」模块有多个选项：用户可以选择「家长控制」保护特定的 Windows 用户，设置密码保护 AdGuard 设置以防更改。
+In the _Parental Control_ module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. 用户也可以选中「阻止下载可执行文件」以防止儿童在计算机上下载和安装软件。 「家长控制」模块有多个选项：用户可以选择「家长控制」保护特定的 Windows 用户，设置密码保护 AdGuard 设置以防更改。
 
 ![家长控制 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 

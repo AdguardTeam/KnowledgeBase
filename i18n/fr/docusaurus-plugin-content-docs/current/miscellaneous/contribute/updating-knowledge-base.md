@@ -1,28 +1,28 @@
 ---
-title: Mise à jour de la Base de connaissances
+title: Updating the Knowledge Base
 sidebar_position: 2
 ---
 
-L'objectif de la Base de connaissances du Bloqueur des annonces AdGuard est de fournir à chacun les informations les plus récentes sur toutes sortes de sujets liés à AdGuard. Mais les choses évoluent constamment et il arrive qu'un article ne reflète plus l'état actuel des choses.
+The goal of AdGuard Ad Blocker Knowledge Base is to provide everyone with the most up-to-date information on all kinds of AdGuard-related topics. Mais les choses évoluent constamment et il arrive qu'un article ne reflète plus l'état actuel des choses.
 
 C'est pourquoi nous avons placé l'ensemble du contenu de notre base de données sur [GitHub](https://github.com/AdguardTeam/KnowledgeBase). Désormais, tout le monde peut y contribuer en suggérant des modifications et des traductions pour les articles existants, ainsi que de nouveaux articles.
 
 ## Comment suggérer un changement ou écrire un nouvel article {#suggest-change}
 
-Vous pouvez suggérer des modifications aux articles actuels et en ajouter de nouveaux à la Base de connaissances en utilisant la fonctionnalité de GitHub mentionné ci-dessus. Si vous n'êtes pas familier avec les principes de travail avec la plate-forme, commencez par lire la [documentation GitHub](https://docs.github.com/en).
+You can suggest changes to current articles and add new ones to our Knowledge Base using the functionality of GitHub mentioned above. Si vous n'êtes pas familier avec les principes de travail avec la plate-forme, commencez par lire la [documentation GitHub](https://docs.github.com/en).
 
-Une fois que vous êtes prêt à commencer, procédez dans [le référentiel KnowledgeBase](https://github.com/AdguardTeam/KnowledgeBase). Tous les textes de notre Base de connaissances sont rédigés en langage de balisage `Markdown`. Gardez cela à l'esprit lorsque vous modifiez ou rédigez des articles. Suivez [ce lien](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) pour apprendre plus sur la syntaxe Markdown.
+Une fois que vous êtes prêt à commencer, procédez dans [le référentiel KnowledgeBase](https://github.com/AdguardTeam/KnowledgeBase). All texts in our Knowledge Base are written in `Markdown` markup language. Gardez cela à l'esprit lorsque vous modifiez ou rédigez des articles. Suivez [ce lien](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) pour apprendre plus sur la syntaxe Markdown.
 
-Le site web de la Base de connaissances est construit à l'aide de Docusaurus 2 - un générateur moderne de sites web statiques. Lorsque vous suggérez des modifications ou des ajouts d'infos, tenez compte du fait que tous les documents doivent respecter les principes de la plateforme. Vous pouvez en prendre connaissance dans les [Guides sur Docusaurus](https://docusaurus.io/docs/category/guides).
+The Knowledge Base website is built using Docusaurus 2 — a modern static website generator. Lorsque vous suggérez des modifications ou des ajouts d'infos, tenez compte du fait que tous les documents doivent respecter les principes de la plateforme. Vous pouvez en prendre connaissance dans les [Guides sur Docusaurus](https://docusaurus.io/docs/category/guides).
 
-Vous pouvez déployer cette Base de connaissances localement sur votre ordinateur pour prévisualiser les modifications que vous suggérez. Vous trouverez des instructions détaillées sur la façon de procéder à l'adresse [dans le fichier README.md](https://github.com/AdguardTeam/KnowledgeBase#readme) sur la page GitHub de cette Base de connaissances.
+You can deploy this Knowledge Base locally on your computer to preview the changes you suggest. Detailed instructions on how to do this can be found [in the README file](https://github.com/AdguardTeam/KnowledgeBase#readme) on this Knowledge Base's GitHub page.
 
 ## La traduction des articles {#translate-adguard}
 
-La traduction des articles existants de la Base de connaissances est réalisée sur [la plateforme Crowdin](https://crowdin.com/profile/adguard). Tous les détails sur les traductions et le travail avec Crowdin peuvent être trouvés [dans l'article dédié](../translate/guidelines) de la Base de connaissances du Bloqueur AdGuard.
+Translation of the existing articles of the Knowledge Base is carried out on [the Crowdin platform](https://crowdin.com/profile/adguard). All the details about translations and working with Crowdin can be found [in the dedicated article](../translate/guidelines) of the AdGuard Ad Blocker Knowledge Base.
 
-Lorsque vous travaillez sur des articles de la Base de connaissances de AdGuard, vous pouvez rencontrer des chaînes contenant des formes plurielles que vous devrez traduire avec une attention particulière. [Dans un article séparé](../translate/plural-forms), nous avons décrit en détail les difficultés qui peuvent survenir lors de la traduction de chaînes avec des formes plurielles, et avons donné des instructions détaillées sur la façon de les utiliser sur la plate-forme Crowdin.
+When working on AdGuard Knowledge Base articles, you may meet strings containing plural forms that you should translate with extra attention. [Dans un article séparé](../translate/plural-forms), nous avons décrit en détail les difficultés qui peuvent survenir lors de la traduction de chaînes avec des formes plurielles, et avons donné des instructions détaillées sur la façon de les utiliser sur la plate-forme Crowdin.
 
 ## Le travail sur les questions ouvertes
 
-Parfois, il y aura des [tâches ouvertes](https://github.com/AdguardTeam/KnowledgeBase/issues) liées à la mise à jour de la Base de connaissances. Vous pouvez nous aider à accélérer leur réalisation [de la même manière](#suggest-change) que vous suggéreriez toute autre modification à cette Base de connaissances. Choisissez un sujet qui vous intéresse et commencez à travailler dessus. Si vous avez des questions, vous pouvez les poser directement dans les commentaires de cette tâche.
+Sometimes there exist [open tasks](https://github.com/AdguardTeam/KnowledgeBase/issues) related to updating the Knowledge Base. You can help us speed up their completion [the same way](#suggest-change) you would suggest any other changes to the Knowledge Base. Choisissez un sujet qui vous intéresse et commencez à travailler dessus. Si vous avez des questions, vous pouvez les poser directement dans les commentaires de cette tâche.

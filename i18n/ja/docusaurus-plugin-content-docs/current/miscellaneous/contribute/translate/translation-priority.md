@@ -3,13 +3,13 @@ title: Crowdinファイルの翻訳の優先順位
 sidebar_position: 5
 ---
 
-Crowdinには、[AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases) という5つの主要なAdGuardプロジェクトがあります。
+There are five major AdGuard projects on Crowdin — [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge Base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), and [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
 
 *AdGuard Applications*プロジェクトのどのファイルや製品から始めるべきか、明確なガイドラインはありません。 お好きな製品をお選びください。
 
 ただ、いくつか触れておきたいことがあります:
 
-- Crowdinで翻訳が完了した言語のみが、AdGuardアプリのUIで表示されます。
+- The app is only available to users in those languages for which all translations have been completed on Crowdin;
 - 製品自体の翻訳がなければ説明文等は不要になるので、アプリストアの説明文などの翻訳は後回しにしたほうがお勧めです。
 
 ただし、*AdGuard Websites*プロジェクトの場合は異なります。 翻訳が100％完了していなくても、言語をサイトに追加することは可能です。 これはどのファイルがすでに翻訳されているかによります。 そのため、最も重要なファイルから順に翻訳されることをお勧めします（以下に記載）:

@@ -12,7 +12,7 @@ On the [purchase page](https://adguard.com/license.html), you can see the follow
 - **1-year subscriptions** — these licenses are renewed automatically every year or can be extended manually
     - Personal — up to 3 devices
     - Family — up to 9 devices
-- **Lifetime** — these licenses are not time-limited
+- **Ömür boyu** — bu lisanslar kalıcıdır
     - Personal — up to 3 devices
     - Family — up to 9 devices
 

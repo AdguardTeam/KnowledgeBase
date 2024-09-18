@@ -1,5 +1,5 @@
 ---
-title: 什么是 AdGuard 许可证密钥?
+title: What is an AdGuard license?
 sidebar_position: 1
 ---
 
@@ -12,7 +12,7 @@ sidebar_position: 1
 - **一年订阅**：许可证每年自动更新，也可手动续订。
     - 个人（最多支持 3 台设备）
     - 家庭（最多支持 9 台设备）
-- **终身**：许可证没有时间限制。
+- **Lifetime** — these licenses are perpetual
     - 个人（最多支持 3 台设备）
     - 家庭（最多支持 9 台设备）
 

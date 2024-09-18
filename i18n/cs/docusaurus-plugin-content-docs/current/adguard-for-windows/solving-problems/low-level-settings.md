@@ -29,9 +29,9 @@ Jakmile otevřete Pokročilá nastavení, zobrazí se vám následující možno
 
 Pokud je tato funkce povolena, zablokuje AdGuard v prohlížeči Edge funkci TCP Fast Open. Chcete-li použít nastavení, budete muset restartovat prohlížeč.
 
-### Použít Encrypted ClientHello
+### Use Encrypted Client Hello
 
-Každé šifrované internetové připojení má i nešifrovanou část. Jedná se o první paket, který obsahuje název serveru, ke kterému se připojujete. Technologie Encrypted Client Hello má tento problém vyřešit a zašifrovat poslední kousek nešifrovaných informací. Chcete-li to využít, povolte možnost *Použít Encrypted ClientHello*. K vyhledání konfigurace ECH pro danou doménu používá místní proxy server DNS. Pokud je nalezen, paket ClientHello bude zašifrován.
+Každé šifrované internetové připojení má i nešifrovanou část. Jedná se o první paket, který obsahuje název serveru, ke kterému se připojujete. Technologie Encrypted Client Hello má tento problém vyřešit a zašifrovat poslední kousek nešifrovaných informací. To benefit from it, enable the *Use Encrypted Client Hello* option. K vyhledání konfigurace ECH pro danou doménu používá místní proxy server DNS. If it is found, Client Hello packet will be encrypted.
 
 ### Zkontrolovat transparentnost certifikátů webových stránek
 
@@ -73,7 +73,7 @@ V opačném případě bude AdGuard filtrovat veškerý provoz za běhu bez pře
 
 ### Otevřít hlavní okno při startu systému
 
-Tuto možnost povolte, aby se po načtení systému otevřelo hlavní okno AdGuardu. Všimněte si, že toto nastavení nemá vliv na to, zda je skutečná služba filtrování spuštěna, nebo ne, toto nastavení se nachází v *Nastavení → Obecná nastavení*
+Tuto možnost povolte, aby se po načtení systému otevřelo hlavní okno AdGuardu. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*.
 
 ### Zapnout filtrování při spuštění systému
 
@@ -95,7 +95,7 @@ Pokud nechcete, aby AdGuard filtroval určité podsítě, povolte tuto funkci a 
 
 ### Povolit zápis HAR
 
-Tato možnost by měla být zapnuta **pouze pro účely ladění**. Pokud zaškrtnete toto políčko, AdGuard vytvoří soubor obsahující informace o všech filtrovaných požadavcích HTTP ve formátu HAR 1.2. Tento soubor lze analyzovat pomocí aplikace Fiddler. Upozorňujeme, že to může výrazně zpomalit prohlížení webu.
+Tato možnost by měla být zapnuta **pouze pro účely ladění**. Ticking the checkbox will make AdGuard create a file in the HAR 1.2 format containing information about all filtered HTTP requests. Tento soubor lze analyzovat pomocí aplikace Fiddler. Upozorňujeme, že to může výrazně zpomalit prohlížení webu.
 
 ### Přidat do běžného požadavku HTTP dodatečnou mezeru
 
@@ -115,7 +115,7 @@ Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana 
 
 Určuje velikost fragmentace paketů TCP, čímž se zabrání hloubkové kontrole paketů. Tato možnost má vliv pouze na zabezpečený (HTTPS) provoz.
 
-Pokud je tato možnost povolena, AdGuard rozdělí počáteční paket TLS (paket ClientHello) na dvě části: první má zadanou délku a druhá obsahuje zbytek až do délky celého počátečního paketu TLS.
+If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
 Platné hodnoty: 1–1500. Pokud je zadána neplatná velikost, použije se hodnota vybraná systémem. Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana před DPI* v Režimu utajení.
 

@@ -20,4 +20,4 @@ Vyvíjíme a spravujeme také bezplatná rozšíření prohlížeče pro všechn
 
 ## Nejen blokování reklam
 
-Blokátor reklam AdGuard umí víc než jen blokovat reklamy. Ochrání vás před sledováním online a v mnoha ohledech posílí vaše soukromí. V závislosti na konkrétním produktu může AdGuard nabízet také takové výhody, jako je DNS filtrování pro lepší ochranu, rodičovská ochrana, která chrání vaše děti před nevhodným obsahem, záznam filtrování pro lepší kontrolu internetového provozu a další. Tato databáze znalostí obsahuje podrobné informace o všech z nich — neváhejte přejít na článek, který vás zajímá.
+Blokátor reklam AdGuard umí víc než jen blokovat reklamy. Ochrání vás před sledováním online a v mnoha ohledech posílí vaše soukromí. V závislosti na konkrétním produktu může AdGuard nabízet také takové výhody, jako je DNS filtrování pro lepší ochranu, rodičovská ochrana, která chrání vaše děti před nevhodným obsahem, záznam filtrování pro lepší kontrolu internetového provozu a další. This Knowledge Base contains detailed information about any and all of them — feel free to jump to any article that interests you.

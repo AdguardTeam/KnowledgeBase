@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,7 +13,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::caution
 
-Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
+Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. Открывайте этот раздел, только если вы знаете, что делаете, или если вас попросила об этом наша команда поддержки.
 
 :::
 
@@ -39,7 +39,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 #### Bootstrap DNS-серверы
 
-Загрузочный DNS для серверов DoH, DoT и DoQ. The *Automatic DNS* — the system DNS or AdGuard DNS — is used by default. Выбирая *Пользовательский DNS*, вы можете использовать IPv4- и IPv6-адреса в качестве upstream-серверов.
+Загрузочный DNS для серверов DoH, DoT и DoQ. По умолчанию используется *Автоматический DNS* — системный DNS-сервер или AdGuard DNS. Выбирая *Пользовательский DNS*, вы можете использовать IPv4- и IPv6-адреса в качестве upstream-серверов.
 
 #### Режим блокировки для правил adblock
 
@@ -93,19 +93,19 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 Если этот параметр включён, AdGuard будет проверять upstrem-серверы DNS перед добавлением или обновлением пользовательских DNS-серверов.
 
-#### Filter secure DNS
+#### Фильтровать зашифрованные DNS-запросы
 
-If this setting is on, AdGuard will apply all enabled DNS filters and DNS user rules to encrypted DNS-over-HTTPS (DoH) traffic and not only to plain DNS. DoH traffic mostly comes from Chrome and other browsers that have a *Secure DNS* (or similar) setting. You can use *Filter secure DNS* in two different modes:
+Если эта настройка включена, AdGuard применит все включённые фильтры DNS и пользовательские правила DNS к зашифрованному трафику DNS-over-HTTPS (DoH), а не только к обычному DNS. Трафик DoH в основном поступает из Chrome и других браузеров, у которых есть настройка *Secure DNS* (или аналогичная). Вы можете использовать настройку *Фильтровать безопасный DNS* в двух разных режимах:
 
-- **Filter on the fly**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic but doesn’t redirect it to the local DNS proxy. If a DNS server is specified in the browser’s settings, this server will handle the DoH traffic for this browser
+- **Фильтровать на лету**. В этом режиме AdGuard применяет все включённые DNS-фильтры и пользовательские правила DNS к трафику DoH, но не перенаправляет его на локальный DNS-прокси. Если в настройках браузера указан DNS-сервер, он будет обрабатывать трафик DoH для этого браузера
 
-- **Redirect to DNS proxy**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic by redirecting it to the local DNS proxy. The DNS server specified in the AdGuard’s DNS settings will handle all DoH traffic
+- **Перенаправлять на DNS-прокси**. В этом режиме AdGuard применяет все включённые DNS-фильтры и пользовательские правила DNS к трафику DoH, перенаправляя его на локальный DNS-прокси. DNS-сервер, указанный в настройках AdGuard DNS, будет обрабатывать весь трафик DoH
 
 ### Фильтрация
 
 #### Записывать HAR
 
-Если эта настройка включена, AdGuard будет перехватывать HAR-файлы. It will create a directory named “har” inside the app cache directory and add there information about all filtered HTTP requests in HAR 1.2 format that can be analyzed with the Fiddler program.
+Если эта настройка включена, AdGuard будет перехватывать HAR-файлы. Он создаст директорию «har» в кеш-директории программы. Она будет содержать все отфильтрованные запросы в формате HAR 1.2, который может быть проанализирован программой Fiddler.
 
 Используйте его только для целей отладки!
 
@@ -113,7 +113,7 @@ If this setting is on, AdGuard will apply all enabled DNS filters and DNS user r
 
 #### Encrypted Client Hello
 
-У каждого зашифрованного интернет-соединения есть незашифрованная часть. Это самый первый пакет, который содержит имя сервера, к которому вы подключаетесь. Технология Encrypted Client Hello должна решить эту проблему и зашифровать последний бит незашифрованной информации. Чтобы воспользоваться ей, включите опцию *Использовать Encrypted Client Hello*. Она использует локальный DNS-прокси для поиска ECH-конфигурации для домена. Если она найдена, пакет ClientHello будет зашифрован.
+У каждого зашифрованного интернет-соединения есть незашифрованная часть. Это самый первый пакет, который содержит имя сервера, к которому вы подключаетесь. Технология Encrypted Client Hello должна решить эту проблему и зашифровать последний бит незашифрованной информации. Чтобы воспользоваться ей, включите опцию *Использовать Encrypted Client Hello*. Она использует локальный DNS-прокси для поиска ECH-конфигурации для домена. If it is found, Client Hello packet will be encrypted.
 
 #### Проверка OCSP
 
@@ -205,7 +205,7 @@ If this setting is on, AdGuard will apply all enabled DNS filters and DNS user r
 
 #### Включить шлюз Wi-Fi в маршруты VPN
 
-If this setting is enabled, the gateway IP addresses will be added to VPN routes when on Wi-Fi.
+Если этот параметр включён, IP-адреса шлюзов будут добавляться в VPN-маршруты при работе с Wi-Fi.
 
 #### IPv4-адрес
 

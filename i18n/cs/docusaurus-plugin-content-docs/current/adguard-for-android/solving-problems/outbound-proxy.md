@@ -9,7 +9,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-Níže naleznete seznam nejznámějších aplikací, které můžete nakonfigurovat tak, aby v AdGuardu fungovaly jako proxy servery.
+Below is a list of the most well-known applications that can be configured to work as proxies in AdGuard.
 
 :::note
 
@@ -41,11 +41,11 @@ V tomto článku uvádíme příklady nastavení některých nejoblíbenějšíc
     | Hostitel proxy | *127.0.0.1*            |
     | Port proxy     | *9050*                 |
 
-    Nebo můžete klepnout na **Proxy server** → **Přidat proxy server**, zadat tyto hodnoty ručně a nastavit Orbot jako výchozí proxy.
+    Or you can tap **Proxy server** → **Add proxy server**, enter these values manually, and set Orbot as the default proxy.
 
 1. Zapněte hlavní přepínač Proxy a AdGuard ochranu, aby byl provoz zařízení směrován přes proxy server.
 
-    Nyní bude AdGuard přeposílat veškerý provoz přes Orbot. Pokud zakážete Orbot, připojení k Internetu bude nedostupné, dokud nezakážete nastavení odchozího proxy v AdGuardu.
+    Now AdGuard will route all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable the outbound proxy settings in AdGuard.
 
 ### Jak používat AdGuard s PIA (Private Internet Access)
 
@@ -157,4 +157,4 @@ Před nastavením procesu byste měli odstranit aplikaci Shadowsocks z filtrová
 
 ## Omezení
 
-Existuje faktor, který může zabránit přesměrování určitého provozu přes odchozí proxy server i po konfiguraci nastavení proxy serveru AdGuard. To se může stát, pokud aplikaci nenastavíte tak, aby odesílala provoz skrze AdGuard. Chcete-li to provést, musíte přejít na **Správa aplikací**, vybrat aplikaci a zapnout **Směrovat provoz skrze AdGuard**.
+However, at least one factor may prevent certain traffic from being routed through the outbound proxy, even after configuring the AdGuard proxy settings. That would be if the app itself isn't configured to send its traffic through AdGuard. Chcete-li to provést, musíte přejít na **Správa aplikací**, vybrat aplikaci a zapnout **Směrovat provoz skrze AdGuard**.

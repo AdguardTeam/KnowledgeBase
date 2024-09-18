@@ -9,12 +9,12 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 :::
 
-To filter network traffic, AdGuard uses a network driver. Existují dvě možnosti: ovladač TDI a ovladač WFP. Ačkoli je ovladač WFP obecně vhodnější a je ve výchozím nastavení povolen pro všechny novější verze operačního systému Windows (Windows 8 a novější), může potenciálně způsobovat problémy s kompatibilitou, zejména s některými antiviry. Tyto problémy a následné chyby mohou být v každém případě velmi odlišné.
+To filter network traffic, AdGuard uses a network driver. Existují dvě možnosti: ovladač TDI a ovladač WFP. While a WFP driver is generally preferrable and is enabled by default for all newer Windows OS versions (Windows 8 and newer), it can potentially cause compatibility problems, especially with some antiviruses. Tyto problémy a následné chyby mohou být v každém případě velmi odlišné.
 
 Pokud narazíte na problém, u kterého máte podezření, že by mohl být způsoben tímto problémem, můžete vždy přejít na starší, ale stabilnější síťový ovladač TDI. K tomu je třeba:
 
 1. Přejděte do *Nastavení → Síť*.
 
-2. Deaktivujte ovladač WFP, jak je to zobrazeno na tomto obrázku:
+2. Disable the WFP driver as it’s done in this picture:
 
 ![WFP driver *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)

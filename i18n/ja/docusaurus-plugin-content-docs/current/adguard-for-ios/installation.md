@@ -29,7 +29,7 @@ Requires iOS 13 or later.
 
 ![App Storeのメイン画面で、「検索」をタップします *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/1.png)
 
-Type *adguard* in the search bar and tap the string *adGuard* which will be among search results.
+Type *adguard* in the search bar and tap the string *AdGuard* which will be among search results.
 
 ![検索バーに"AdGuard"と入力します。 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
@@ -43,11 +43,11 @@ Type *adguard* in the search bar and tap the string *adGuard* which will be amon
 
 ![App Storeのメイン画面で、「検索」をタップします *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/1.png)
 
-Type *adguard* in the search form, and then tap the string *adGuard pro - adblock* which will be shown among search results.
+Type *adguard* in the search form, and then tap the string *AdGuard Pro — adblock* which will be shown among search results.
 
 ![検索バーに"AdGuard"と入力します。 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
-On the opened page of the App Store tap the button with the cost of the license under the string *AdGuard Pro - adblock*, and then tap *BUY*. 必要に応じてApple IDのパスワードを入力してください。 インストールが完了するのを待ちます。
+On the opened page of the App Store tap the button with the cost of the license under the string *AdGuard Pro — adblock*, and then tap *BUY*. 必要に応じてApple IDのパスワードを入力してください。 インストールが完了するのを待ちます。
 
 ![AdGuardアプリの下の「入手する」をタップします。 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/3.png)
 

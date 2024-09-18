@@ -29,11 +29,11 @@ AdGuard 어시스턴트는 브라우저에서 [새 어시스턴트](/adguard-for
 
 이 확장 프로그램은 차단된 광고를 다시 삽입하는 기술(소위 광고 차단기 우회/광고 재삽입)에 대응하기 위해 설계된 맞춤형 확장 프로그램입니다. 이 두 가지 방법 모두 광고주들 사이에서 지속적으로 인기를 얻고 있는 고급 광고 차단 방어 방법입니다.
 
-AdGuard Extra는 기본적으로 사이트가 위에서 언급한 방법을 사용하여 차단기를 우회하는 것을 훨씬 더 어렵게 만드는 방식으로 페이지 작동 방식을 변경하는 미니 프로그램입니다.
+AdGuard Extra is essentially a miniprogram that changes the way pages work in such a way that it becomes much more difficult for sites to use the above-mentioned methods to bypass blockers.
 
 **AdGuard 팝업 차단기**
 
-이 확장 프로그램은 웹페이지를 볼 때 팝업 창이 열리지 않도록 합니다. 일부 팝업에는 사이트 관리를 위한 설정이나 링크 클릭 시 표시되는 추가 참조 정보가 포함될 수 있으므로 유용한 것으로 간주됩니다. 그렇기 때문에 필요한 경우 차단기를 끌 수 있습니다. 이 확장 프로그램은 AdGuard 예외 목록에 추가된 웹사이트에서도 작동하지 않습니다. 기본적으로 꺼져 있지만 애플리케이션 설정에서 켤 수 있습니다. 이 확장 프로그램에 대한 자세한 내용은 지식 창고에서 확인할 수 있습니다.
+이 확장 프로그램은 웹페이지를 볼 때 팝업 창이 열리지 않도록 합니다. 일부 팝업에는 사이트 관리를 위한 설정이나 링크 클릭 시 표시되는 추가 참조 정보가 포함될 수 있으므로 유용한 것으로 간주됩니다. 그렇기 때문에 필요한 경우 차단기를 끌 수 있습니다. 이 확장 프로그램은 AdGuard 예외 목록에 추가된 웹사이트에서도 작동하지 않습니다. 기본적으로 꺼져 있지만 애플리케이션 설정에서 켤 수 있습니다. You will find more detailed information about this extension in our Knowledge Base.
 
 **Web of Trust**
 
@@ -41,7 +41,7 @@ Web of Trust를 사용하면 사용자 의견을 기반으로 각 웹사이트�
 
 ### 네트워크
 
-이 모듈은 네트워크 필터링 전용 모듈입니다. 여기에서 네트워크 관련 추가 옵션을 찾을 수 있습니다. 이 중 두 가지(**트래픽 필터링 활성화** 및 **HTTPS 프로토콜 필터링**)는 기본적으로 활성화되어 있습니다. 이는 웹 공간을 더 잘 필터링하기 위한 중요한 추가 예방 조치입니다. 대부분의 웹 사이트와 광고 네트워크는 현재 HTTPS를 사용하고 있습니다. youtube.com, facebook.com, twitter.com과 같은 많은 사이트에서 HTTPS 필터링 없이는 광고를 제거하는 것이 불가능합니다. 따라서 **HTTPS 프로토콜 필터링** 기능을 사용하도록 설정하는 것이 좋습니다.
+이 모듈은 네트워크 필터링 전용 모듈입니다. 여기에서 네트워크 관련 추가 옵션을 찾을 수 있습니다. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS_. 이는 웹 공간을 더 잘 필터링하기 위한 중요한 추가 예방 조치입니다. 대부분의 웹 사이트와 광고 네트워크는 현재 HTTPS를 사용하고 있습니다. From many sites, like youtube.com, facebook.com and x.com, it is impossible to remove ads without HTTPS filtering. So keep the _Filter HTTPS_ feature enabled unless you have a strong reason not to.
 
 ![네트워크 설정 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 

@@ -4,7 +4,7 @@ sidebar_position: 5
 toc_max_heading_level: 4
 ---
 
-用户脚本（我们也称之为“扩展”）实质上是用 JavaScript 编写的小程序。 用户脚本修改或扩展一个或多个网站的功能。 许多 AdGuard 用户已经熟悉 AdGuard 助手、弹窗拦截器和 AdGuard Extra 等用户脚本。
+Userscripts (we also call them "extensions") are, de facto, miniprograms written in JavaScript. 用户脚本修改或扩展一个或多个网站的功能。 许多 AdGuard 用户已经熟悉 AdGuard 助手、弹窗拦截器和 AdGuard Extra 等用户脚本。
 
 :::note 支持的应用程序
 
@@ -134,7 +134,7 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 
 ##### Unsupported properties
 
-These properties will be simply ignored by Adguard.
+These properties will be simply ignored by AdGuard.
 
 ```text
 @unwrap

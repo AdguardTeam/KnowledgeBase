@@ -4,7 +4,7 @@ sidebar_position: 5
 toc_max_heading_level: 4
 ---
 
-유저스크립트('확장 프로그램'이라고도 함)는 사실상 자바스크립트로 작성된 미니 프로그램입니다. 하나 이상의 웹사이트의 기능을 수정하거나 확장합니다. 많은 AdGuard 사용자는 이미 AdGuard 어시스턴트, 팝업 차단기 및 AdGuard Extra와 같은 유저스크립트에 익숙할 것입니다.
+Userscripts (we also call them "extensions") are, de facto, miniprograms written in JavaScript. 하나 이상의 웹사이트의 기능을 수정하거나 확장합니다. 많은 AdGuard 사용자는 이미 AdGuard 어시스턴트, 팝업 차단기 및 AdGuard Extra와 같은 유저스크립트에 익숙할 것입니다.
 
 :::note 지원되는 앱
 
@@ -134,7 +134,7 @@ Android용 AdGuard에만 사전 설치된 스크립트입니다. Google 검색 �
 
 ##### 지원되지 않는 속성
 
-이러한 속성은 Adguard에서 무시됩니다.
+These properties will be simply ignored by AdGuard.
 
 ```text
 @unwrap

@@ -77,4 +77,4 @@ Aqui estão os recursos ativos dos níveis pré-configurados:
 
    k. _Remover cabeçalho X-Client-Data_. Este recurso impede que o Google Chrome envie informações sobre sua versão e modificações para domínios do Google (incluindo DoubleClick e Google Analytics)
 
-Você pode ajustar configurações individuais em _Proteção contra rastreamento_ e criar uma configuração personalizada. Cada configuração possui uma descrição que o ajudará a entender sua função. [Saiba mais sobre o que várias configurações de _Proteção contra rastreamento_ fazem](/general/stealth-mode) e aborde-as com cautela, pois algumas podem interferir na funcionalidade de sites e extensões de navegador.
+Você pode ajustar configurações individuais em _Proteção contra rastreamento_ e criar uma configuração personalizada. Cada configuração possui uma descrição que o ajudará a entender sua função. [Read more about what the various _Tracking protection_ settings do](/general/stealth-mode) and utilize them cautiously, as some may interfere with the functionality of websites and browser extensions.

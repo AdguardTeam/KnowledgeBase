@@ -1,5 +1,5 @@
 ---
-title: AdGuard for Safari のログを収集する方法
+title: How to collect logs in AdGuard for Safari
 sidebar_position: 4
 ---
 
@@ -9,9 +9,9 @@ sidebar_position: 4
 
 :::
 
-AdGuard for Safari で発生した問題を分析および診断するために、AdGuardのお客様サポートサービスはログファイルを必要とする場合があります。 このようなログファイルには、エラーやその他のソフトウェア・イベントの記録が含まれます。 以下は、ログを収集し、必要に応じてAdGuardサポートに送信する方法についての簡単な説明です。
+AdGuard for Safari で発生した問題を分析および診断するために、AdGuardのお客様サポートサービスはログファイルを必要とする場合があります。 このようなログファイルには、エラーやその他のソフトウェア・イベントの記録が含まれます。 Below are brief instructions on how to collect logs and send them to support if necessary.
 
-### ログを収集する方法
+### How to collect logs
 
 1. AdGuard for Safari アプリを開きます。
 2. 下にスクロールし、「_ログをエクスポートする_」をクリックします。

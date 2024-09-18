@@ -80,7 +80,7 @@ sidebar_position: 2
     - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (файл)
     - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (файл)
 
-    To do so, open the Terminal app, then enter and execute the following commands:
+    Для этого введите и выполните следующие команды через Терминал:
 
     ```bash
     sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
@@ -99,7 +99,7 @@ sidebar_position: 2
 
     ![Запустите приложение «Мониторинг системы»](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. Остановите процесс, запущенный от имени пользователя. Для этого нажмите на него, а после нажмите на X в левом верхнем углу. Confirm the action in the dialogue window.
+1. Остановите процесс, запущенный от имени пользователя. Для этого нажмите на него, а после нажмите на X в левом верхнем углу. Подтвердите действие в диалоговом окне.
 
     ![Подтвердите](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 

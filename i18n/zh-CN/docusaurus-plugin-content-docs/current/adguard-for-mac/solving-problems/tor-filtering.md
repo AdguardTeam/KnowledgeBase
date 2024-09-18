@@ -27,4 +27,4 @@ Public Key Pinning（公钥固定）是一种安全措施，允许网站确保�
 
 为了应用更改，请重新开启 Tor 浏览器。
 
-If you manually change these settings, Tor filtering will be stopped.
+如果您手动改变设置，Tor 浏览器过滤将被停止。

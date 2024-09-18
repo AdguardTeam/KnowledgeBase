@@ -9,12 +9,12 @@ sidebar_position: 1
 
 :::
 
-要过滤网络流量，AdGuard 会使用网络驱动程序。 有两个设置选项：TDI 驱动程序和 WFP 驱动程序。 WFP 驱动程序通常是首选且默认情况下，所有较新的 Windows 操作系统版本（Windows 8 及更新版本）都是开启的，但它可能会导致兼容性问题，尤其是与某些防病毒软件。 这些问题和随后的错误在每种情况下可能会有很大不同。
+要过滤网络流量，AdGuard 会使用网络驱动程序。 有两个设置选项：TDI 驱动程序和 WFP 驱动程序。 While a WFP driver is generally preferrable and is enabled by default for all newer Windows OS versions (Windows 8 and newer), it can potentially cause compatibility problems, especially with some antiviruses. 这些问题和随后的错误在每种情况下可能会有很大不同。
 
 如果您遇到怀疑可能由此引起的问题，可以随时切换到较旧但更稳定的 TDI 网络驱动程序。 具体操作：
 
 1. 转到*「设置」→「网络」*。
 
-2. 按照下图所示禁用 WFP 驱动程序：
+2. Disable the WFP driver as it’s done in this picture:
 
 ![WFP 驱动程序 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)

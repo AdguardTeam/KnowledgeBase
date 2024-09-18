@@ -38,7 +38,7 @@ sidebar_position: 4
 
 以下是您可以使用的一些信息来源。
 
-[本地化指南](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) 包含广泛的语言列表。 不同语言复数形式的数量以这种方式显示：`nplurals=2`、`nplurals=4`，依此类推。 `=` 等号后的数字表示相应语言的形式数量。
+[本地化指南](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) 包含广泛的语言列表。 不同语言复数形式的数量以这种方式显示：`nplurals=2`、`nplurals=4`，依此类推。 The numeral after the Equals sign `=` indicates the number of plural forms of the respective language.
 
 此外，您还可以在 [Unicode 通用语言环境数据存储库](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules)（CLDR）中获取有关复数形式的相关信息。 CLDR 复数规则，即指十进制数字（1.5; 2.3; 100.1…）的其他词形式。但在 AdGuard 翻译中我们不使用它们。
 

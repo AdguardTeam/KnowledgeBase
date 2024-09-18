@@ -1,28 +1,28 @@
 ---
-title: Reward system
+title: 보상 시스템
 sidebar_position: 6
 ---
 
-As any honest and well-performed effort should be rewarded, active translators on Crowdin can request a free AdGuard license key and a VPN subscription.
+정직하고 성실한 노력에는 보상이 주어져야 하므로, Crowdin에서 활동 중인 번역가는 무료 AdGuard 라이선스 키와 VPN 구독을 요청할 수 있습니다.
 
-To request a **one-year AdGuard license key** or a **one-year AdGuard VPN subscription**, you must translate at least **500** and **2,500** words respectively.
+**1년 AdGuard 라이선스 키** 또는 **1년 AdGuard VPN 구독**을 요청하려면 각각 최소 **500단어**와 **2,500단어**를 번역해야 합니다.
 
-To check your translation progress, open a project you have worked on, click the *Reports* tab and select *My Contribution*. You can sum up the number of words translated in different projects to get a license.
+번역 진행 상황을 확인하려면 작업한 프로젝트를 열고 *Reports* 탭을 클릭한 다음 *My Contribution*를 선택하세요. 여러 프로젝트에서 번역한 단어 수를 합산하여 라이선스를 받을 수 있습니다.
 
-## Here’s how our reward system works
+## 보상 시스템의 작동 방식은 다음과 같습니다.
 
 ```text
-For the first one-year AdGuard license, you need to translate 500 words.
-For the second license, you need 1,000 words, i.e. 1,500 words altogether.
-All subsequent licenses require an additional 1,500 words per license.
+첫 1년 AdGuard 라이선스의 경우 500단어를 번역해야 합니다.
+두 번째 라이선스의 경우 1,000단어, 즉 총 1,500단어가 필요합니다.
+이후 모든 라이선스에는 라이선스당 1,500단어를 추가로 입력해야 합니다.
 
-For the first one-year AdGuard VPN subscription, you need to translate 2,500 words.
-All subsequent subscriptions or renewals require an additional 2,500 words per subscription.
+AdGuard VPN을 처음 1년 구독하는 경우, 2,500개의 단어를 번역해야 합니다.
+이후 모든 구독 또는 갱신에는 구독당 2,500단어가 추가로 필요합니다.
 
 ```
 
-Just send us a request to [translate@adguard.com](mailto:translate@adguard.com) and you’ll get the license as a token of our gratitude.
+[translate@adguard.com](mailto:translate@adguard.com)으로 요청을 보내주시면 감사의 표시로 라이선스를 보내드립니다.
 
-Besides, the most active translators may receive proofreader status in the future, should they express such an intention, and that promises even more good stuff.
+또한 가장 활발하게 활동하는 번역가에게 향후 교정자 자격을 부여할 수 있으며, 그러한 의사를 표명하면 더 많은 좋은 콘텐츠를 제공할 수 있습니다.
 
-Every year we present gifts with the AdGuard logo to our active proofreaders. If you want to become one of them, please write to [translate@adguard.com](mailto:translate@adguard.com).
+매년 AdGuard는 현역 교정자에게 AdGuard 로고가 새겨진 선물을 증정합니다. 교정자가 되고 싶다면 [translate@adguard.com](mailto:translate@adguard.com)으로 이메일을 보내주세요.

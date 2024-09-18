@@ -15,7 +15,7 @@ iOSでのシステムワイドブロックとは、Safariブラウザ以外、�
 
 On iOS, the only way to block ads and trackers system-wide is to use [DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/).
 
-First, you have to enable DNS protection. To do so:
+First, you have to enable DNS protection. その方法は以下の通りです:
 
 1. Open *AdGuard for iOS*.
 2. Tap *Protection* icon (the second icon in the bottom menu bar).

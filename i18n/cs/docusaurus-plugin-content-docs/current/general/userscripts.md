@@ -4,7 +4,7 @@ sidebar_position: 5
 toc_max_heading_level: 4
 ---
 
-Uživatelské skripty (říkáme jim také "rozšíření") jsou de facto miniprogramy napsané v jazyce JavaScript. Upravují nebo rozšiřují funkce jedné nebo více webových stránek. Mnoho uživatelů AdGuardu již možná zná uživatelské skripty jako AdGuard asistent, Blokátor vyskakovacích oken a AdGuard Extra.
+Userscripts (we also call them "extensions") are, de facto, miniprograms written in JavaScript. Upravují nebo rozšiřují funkce jedné nebo více webových stránek. Mnoho uživatelů AdGuardu již možná zná uživatelské skripty jako AdGuard asistent, Blokátor vyskakovacích oken a AdGuard Extra.
 
 :::notePodporované aplikace
 
@@ -134,7 +134,7 @@ Zde je [odkaz](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%
 
 ##### Nepodporované vlastnosti
 
-Tyto vlastnosti bude Adguard jednoduše ignorovat.
+These properties will be simply ignored by AdGuard.
 
 ```text
 @unwrap

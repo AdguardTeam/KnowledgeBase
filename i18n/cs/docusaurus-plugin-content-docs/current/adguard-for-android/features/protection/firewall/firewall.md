@@ -45,7 +45,7 @@ Chcete-li odstranit pravidlo nebo aplikaci v části _Vlastní pravidla_, přeje
 
 ### Upozornění
 
-Pokud je tato funkce povolena, upozorní vás, když se aplikace pokusí porušit některé z pravidel brány firewall nastavených pro danou aplikaci (například získat přístup k mobilním datům, i když by neměla). Upozornění můžete zapnout a vypnout pro všechny aplikace nebo pro každou aplikaci zvlášť.
+If enabled, this feature notifies you when an app is attempting to violate an applicable firewall rule, e.g. attempts to access mobile data from which it is blocked. Upozornění můžete zapnout a vypnout pro všechny aplikace nebo pro každou aplikaci zvlášť.
 
 Klepnutím na upozornění získáte přístup k nastavení brány firewall aplikace nebo můžete dočasně zakázat všechna pravidla brány firewall pro danou aplikaci klepnutím na příslušné tlačítko v upozornění. Můžete také ztlumit všechna upozornění brány firewall pro aplikaci klepnutím na tlačítko _Ztlumit_ v upozornění pro danou aplikaci.
 

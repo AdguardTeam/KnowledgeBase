@@ -13,9 +13,9 @@ Bu makale, Windows için AdGuard kurulumu sırasında karşılaşabileceğiniz e
 
 ### Hata 5: Erişim Reddedildi {#error-5}
 
-Bu hata, izinlerle ilgili bir sorun olduğunda ortaya çıkar. AdGuard kurulum programının, kurma işlemini düzgün bir şekilde tamamlamak için ihtiyaç duyduğu izinlere sahip olmamasının birkaç farklı nedeni olabilir. Aşağıdaki adımları deneyebilirsiniz:
+This error message appears when required permissions haven't been granted. AdGuard kurulum programının, kurma işlemini düzgün bir şekilde tamamlamak için ihtiyaç duyduğu izinlere sahip olmamasının birkaç farklı nedeni olabilir. Aşağıdaki adımları deneyebilirsiniz:
 
-- Antivirüslerinizi geçici olarak devre dışı bırakın. Bazıları, ayarlarının ciddiyetine bağlı olarak kuruluma müdahale edebilir.
+- Temporarily disable your antivirus. Bazıları, ayarlarının ciddiyetine bağlı olarak kuruluma müdahale edebilir.
 
 - Farklı bir kurulum klasörü seçin. Mevcut kurulum klasörünün bazı erişim kısıtlamaları olabilir. Ayrıca harici sürücü, sanal sürücü, vb. seçmediğinizden emin olun.
 
@@ -23,17 +23,17 @@ Bu hata, izinlerle ilgili bir sorun olduğunda ortaya çıkar. AdGuard kurulum p
 
 ### Hata 112: Disk dolu, Hata 1632: Geçici klasör dolu veya erişilemiyor {#error-112}
 
-Bunlar çok benzer çözümlere sahip iki farklı hatadır. Adlarından da anlaşılacağı gibi, AdGuard kurulum programı, kurulumu tamamlamak için yeterli disk alanı bulamadı. Sorunu çözmek için deneyebileceğiniz birkaç şey var:
+Bunlar çok benzer çözümlere sahip iki farklı hatadır. As their titles suggest, AdGuard installer didn't find enough disk space to complete the installation. Sorunu çözmek için deneyebileceğiniz birkaç şey var:
 
 - AdGuard'ı kurmaya çalıştığınız sürücüden bazı programları kaldırın veya gereksiz dosyaları silin.
 
-- Malwarebytes'in ücretsiz bir yazılımı olan [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/) yazılımını indirin, kurun ve çalıştırın. Diğer şeylerin yanı sıra, sisteminizi yanlış bir şekilde kaldırılan programlar ve benzerlerinden sonra kalan her türlü fazladan "artık" dosyalardan temizler. Biraz disk alanı temizlemeye yardımcı olur.
+- Malwarebytes'in ücretsiz bir yazılımı olan [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/) yazılımını indirin, kurun ve çalıştırın. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstalled programs and such. Biraz disk alanı temizlemeye yardımcı olur.
 
 - Bilgisayarınızı yeniden başlatın. Bazen geçici dosyalar önemli miktarda disk alanı kaplayabilir ve PC'nizi yeniden başlatmak bunlardan kurtulmanın en güvenilir yoludur.
 
 ### Hata 1601: Windows Installer Hizmetine Erişilemiyor {#error-1601}
 
-Bunun, Hata 1603'ün belirli bir alt türü olduğunu söyleyebilirsiniz. Olası çözümler benzerdir:
+You could say this is a particular subcategory of Error 1603. Olası çözümler benzerdir:
 
 - Microsoft Installer hizmetini başlatın ve yeniden kaydettirin. Bu biraz uğraş gerektirir.
 
@@ -75,7 +75,7 @@ Bu hata, aynı anda başlatılan birkaç AdGuard kurulum programı olduğunda or
 
 - PC'yi yeniden başlatın ve kurulum programını tekrar başlatın. Bilgisayarı yeniden başlattığınızda, kurulum programının tüm kopyaları dahil devam eden tüm işlemler durur.
 
-- Hemen başlamasa bile kurulum programına birden çok tıklama yapmayın. Bazen kurulum programı kullanıcı arayüzünün görüntülenmesi birkaç saniye sürebilir.
+- Don't make multiple clicks on the installer even if it doesn't start right away. Bazen kurulum programı kullanıcı arayüzünün görüntülenmesi birkaç saniye sürebilir.
 
 ### Error 1638: Bu ürünün başka bir sürümü zaten kurulu {#error-1638}
 
@@ -83,14 +83,14 @@ Daha önce AdGuard kurmuş olmanız çok olasıdır.
 
 - AdGuard'ın bilgisayarınızda kurulu olup olmadığını kontrol edin. Bunu *Win* tuşuna basarak ve ***AdGuard*** yazarak yapabilirsiniz.
 
-- Belki önceki bir AdGuard kurulumundan kalan bazı dosyalar vardır. Özel [kaldırma aracımızı](../../installation#advanced) kullanarak AdGuard'ı kaldırın ve ardından kurulumu tekrarlayın.
+- Maybe there're some leftover files from a previous AdGuard installation. Özel [kaldırma aracımızı](../../installation#advanced) kullanarak AdGuard'ı kaldırın ve ardından kurulumu tekrarlayın.
 
 ### Diğer hatalar {#other}
 
 Yukarıda listelenmeyen bir hatayla karşılaştıysanız, bunu kendimiz çözmemiz mümkündür. Ancak bunu yapabilmek için sizden günlük dosyalarına ihtiyacımız var. Lütfen aşağıdaki adımları uygulayın:
 
-- Find and archive **AdGuard installation logs** as it is described in [this article](../installation-logs).
+- Find and archive the **AdGuard installation logs** as it is described in [this article](../installation-logs).
 
-- **Olay Görüntüleyicisi** günlüklerini bulun ve diske kaydedin. [Bu makale](../system-logs) bunun nasıl yapılacağını açıklar.
+- Find and save to disk the **Event Viewer** logs. [Bu makale](../system-logs) bunun nasıl yapılacağını açıklar.
 
 - Please email all these files from two previous steps to the support team at **support@adguard.com** and describe the problem in the message body. Teknik destek temsilcilerimiz size mümkün olan en kısa sürede cevap verir.

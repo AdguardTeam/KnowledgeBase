@@ -27,22 +27,22 @@ AdGuard 默认使用「默认路由」功能，禁用 iCloud 专用代理的原�
 
 因此，AdGuard 无法与 iCloud 专用代理和邮件应用程序的隐私功能一起使用：
 
-1. iCloud Private Relay is applied to connections at the library level — before they reach the socket level, where AdGuard operates.
-2. iCloud Private Relay uses QUIC, which AdGuard can't filter in filtered apps because HTTP/3 filtering is not yet available.
-3. Consequently, AdGuard blocks QUIC, including iCloud Private Relay traffic — otherwise, ad blocking is impossible.
-4. When you use iCloud Private Relay and switch AdGuard into the "split-tunnel" mode, you can't open websites in Safari.
-5. To work around this issue for Monterey, we apply the "default route" rule. When Private Relay sees that rule, it disables itself automatically. So, AdGuard works seamlessly on Monterey, but iCloud Private Relay gets disabled.
+1. iCloud 专用代理应用于库级别的连接，在连接到达 AdGuard 运行的套接字级别之前。
+2. iCloud 专用代理使用 QUIC，AdGuard 无法在已过滤的应用程序中过滤 QUIC，因为 HTTP/3 过滤尚未可用。
+3. 因此，AdGuard 会阻止 QUIC，包括 iCloud 专用代理的流量，否则就无法拦截广告。
+4. 当用户使用 iCloud 专用代理，将 AdGuard 切换到「分离隧道」模式时，就无法在 Safari 中打开网站。
+5. 要在 Monterey 上解决这个问题，我们应用「默认路由」规则。 专用代理检测到该规则时，功能将自动禁用。 因此，AdGuard 可以在 Monterey 上无缝运行，但 iCloud 专用代理会被禁用。
 
-`network.extension.monterey.force.split.tunnel` restores the "Big Sur" behavior, but this option may break access to websites due to (3) and (4). We keep searching for a solution to this issue. One of the options is implementing HTTP/3 filtering.
+`network.extension.monterey.force.split.tunnel` 恢复了 Big Sur 行为，但由于（3）和（4）的原因，该选项会中断网站访问权限。 我们努力寻找能够解决这个问题的办法。 一种可能的解决方案是实施 HTTP/3 过滤。
 
-## Recommended solution
+## 建议的解决方案
 
-We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/).
+我们建议将 AdGuard 与更传统的 VPN 服务（如 [AdGuard VPN](https://adguard-vpn.com/)）一起使用。
 
-## Alternative solution
+## 替代解决方案
 
-You can prevent AdGuard from using the "default route" by disabling the "default route". It can be done via Advanced Settings → `network.extension.monterey.force.split.tunnel`.
+用户可以禁用「默认路由」，防止 AdGuard 使用「默认路由」。 前往「高级设置」→ `network.extension.monterey.force.split.tunnel` 进行设置。
 
-![Disable default route in advanced settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
+![在高级设置中禁用默认路由 *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
 
-Bear in mind that, in this case, you'll face the issues described above.
+请注意，在这种情况下，用户将面临上述问题。

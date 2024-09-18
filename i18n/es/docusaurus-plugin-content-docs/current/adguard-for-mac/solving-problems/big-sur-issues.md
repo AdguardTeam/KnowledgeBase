@@ -63,7 +63,7 @@ Si usas Flutter junto con AdGuard en el modo "Extensión de red" (o cualquier ot
 
 #### Aplicaciones VPN con API antigua
 
-A pesar de que AdGuard se muestra como una VPN en la configuración del sistema, no debería causar ningún conflicto al trabajar junto con otras aplicaciones basadas en VPN. Sin embargo, si estás utilizando una aplicación basada en VPN que se descargó desde fuera de la App Store, existe la posibilidad de que utilice la antigua API de VPN y debas excluirla del filtrado:
+A pesar de que AdGuard se muestra como una VPN en la configuración del sistema, no debería causar ningún conflicto al trabajar junto con otras aplicaciones basadas en VPN. However, if a VPN-based app downloaded outside the App Store is used, there is a risk that it uses the old VPN API and needs to be excluded from filtering:
 
 1. Abre el menú de AdGuard.
 1. Selecciona *Preferencias...*.
@@ -79,9 +79,9 @@ Apple ya ha solucionado estos problemas, pero se pueden encontrar en las version
 
 ### Compatibilidad con Little Snitch 5
 
-En este momento, el modo de extensión de red en AdGuard no es compatible con [Little Snitch 5](https://obdev.at/products/littlesnitch/index.html). Cuando ambos se están ejecutando, existe la posibilidad de encontrar problemas con el comportamiento de varias aplicaciones, incluso si AdGuard no las filtra. Este problema está causado directamente por un error en Big Sur y ya le hemos informado a Apple al respecto. Esto nos hace creer que este problema se resolverá en una de las próximas actualizaciones.
+En este momento, el modo de extensión de red en AdGuard no es compatible con [Little Snitch 5](https://obdev.at/products/littlesnitch/index.html). When both are running, there's a risk to encounter issues with various apps' behavior, even if they aren't filtered by AdGuard. Este problema está causado directamente por un error en Big Sur y ya le hemos informado a Apple al respecto. Esto nos hace creer que este problema se resolverá en una de las próximas actualizaciones.
 
-Hay que decir que este problema no se puede solucionar deshabilitando el monitoreo de conexiones en Little Snitch, porque esta acción no descarga la extensión de Little Snitch del sistema. Recomendamos cambiar al modo de filtrado [**Proxy automático**](#automatic-proxy) cuando se ejecuta AdGuard junto con Little Snitch en Big Sur, al menos hasta que Apple solucione el error.
+However, disabling connection monitoring in Little Snitch doesn't solve the issue, as this doesn't unload the Little Snitch extension from the system memory. Recomendamos cambiar al modo de filtrado [**Proxy automático**](#automatic-proxy) cuando se ejecuta AdGuard junto con Little Snitch en Big Sur, al menos hasta que Apple solucione el error.
 
 ### Compatibilidad con proxies locales
 
@@ -121,7 +121,7 @@ En primer lugar, necesitas un servidor que funcione para tu proxy. Lo más proba
 
 :::tip
 
-Puedes encontrar más información sobre cómo comenzar en el [Sitio web de Shadowsocks](https://shadowsocks.org/guide/what-is-shadowsocks.html).
+More information on how to get started can be found on the [Shadowsocks website](https://shadowsocks.org/guide/what-is-shadowsocks.html).
 
 :::
 

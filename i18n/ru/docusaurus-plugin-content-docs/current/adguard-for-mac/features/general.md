@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
@@ -25,15 +25,15 @@ This feature prevents AdGuard from blocking [search ads and self-promotions on w
 
 ### Activate language-specific filters automatically
 
-This feature detects the language of the website you’re visiting and automatically activates appropriate filters for more accurate ad blocking. This is especially helpful if you change languages frequently.
+Эта функция определяет язык посещаемого вами сайта и автоматически активирует соответствующие фильтры для более точной блокировки рекламы. This is especially helpful if you change languages frequently.
 
 ### Launch AdGuard at login
 
 This feature automatically launches AdGuard automatically after you restart your computer. This helps keep AdGuard protection active without having to manually open the app.
 
-### Hide menu bar icon
+### Скрыть иконку меню
 
-This feature hides AdGuard’s icon from the menu bar but keeps AdGuard running in the background. If you want to disable AdGuard completely, click _Quit AdGuard_ in the main window menu.
+This feature hides AdGuard’s icon from the menu bar but keeps AdGuard running in the background. Если вы хотите полностью отключить AdGuard, нажмите _Выйти из AdGuard_ в меню главного окна.
 
 ### Белый список
 

@@ -29,11 +29,11 @@ AdGuard アシスタントは、[新しいアシスタント](/adguard-for-windo
 
 これは、ブロックされた広告を再度挿入する手法（いわゆる広告ブロッカー回避や広告再投入という技術）への対処法として設計されたカスタム拡張機能です。 どちらも、広告主の間で人気が高まり続けている高度な広告ブロッカー対策手法です。
 
-AdGuard Extra は、基本的にミニプログラムで、サイトがブロッカーを回避するために上記の方法を使用することがより困難になるように、ページの動作方法を変更します。
+AdGuard Extra is essentially a miniprogram that changes the way pages work in such a way that it becomes much more difficult for sites to use the above-mentioned methods to bypass blockers.
 
 **AdGuard ポップアップブロッカー**
 
-この拡張機能は、ウェブページ閲覧時にポップアップウィンドウが開かないようにしてくれます。 ポップアップの中には、サイト管理のための設定や、リンクをクリックしたときに表示される追加参考情報が含まれているような、役に立つとされるポップアップもたまにあります。 そのため、必要に応じてAdGuard ポップアップブロッカーをオフにすることができます。 また、この拡張機能は、AdGuard の除外リストに追加されたウェブサイトでも機能しません。 デフォルトではオフになっていますが、アプリの設定でオンにすることができます。 この拡張機能についての詳細情報はKnowledge Baseをご確認ください。
+この拡張機能は、ウェブページ閲覧時にポップアップウィンドウが開かないようにしてくれます。 ポップアップの中には、サイト管理のための設定や、リンクをクリックしたときに表示される追加参考情報が含まれているような、役に立つとされるポップアップもたまにあります。 そのため、必要に応じてAdGuard ポップアップブロッカーをオフにすることができます。 また、この拡張機能は、AdGuard の除外リストに追加されたウェブサイトでも機能しません。 デフォルトではオフになっていますが、アプリの設定でオンにすることができます。 You will find more detailed information about this extension in our Knowledge Base.
 
 **Web of Trust**
 
@@ -41,7 +41,7 @@ Web of Trustを使って、各ウェブサイトの、ユーザーの意見に�
 
 ### ネットワーク
 
-このモジュールはネットワークフィルタリング専用のもので、ネットワーク関連の追加オプションがあります。 このうち、「トラフィックフィルタリングを有効にする」と「HTTPS をフィルタリングする」は、デフォルトで有効になっています。 これらは、あなたのウェブスペースをより良くフィルタリングするための重要な追加予防措置です。 現在、ほとんどのウェブサイトがHTTPSを使用しており、広告も同様です。 youtube.com、facebook.com、twitter.comなど多くのサイトでは、HTTPSフィルタリングなしでは広告を削除することができません。 そのため、特別な理由がない限り、「HTTPSをフィルタリングする」機能は有効にしておいてください。
+このモジュールはネットワークフィルタリング専用のもので、ネットワーク関連の追加オプションがあります。 Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS_. これらは、あなたのウェブスペースをより良くフィルタリングするための重要な追加予防措置です。 現在、ほとんどのウェブサイトがHTTPSを使用しており、広告も同様です。 From many sites, like youtube.com, facebook.com and x.com, it is impossible to remove ads without HTTPS filtering. So keep the _Filter HTTPS_ feature enabled unless you have a strong reason not to.
 
 ![ネットワーク設定 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 

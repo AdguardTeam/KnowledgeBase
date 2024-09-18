@@ -35,4 +35,4 @@ Im Abschnitt Kaufhistorie werden alle Lizenzen angezeigt, die Sie jemals über d
 
 ## Support kontaktieren
 
-Der Tab „Support” enthält nützliche Links, die Ihnen helfen, Probleme zu lösen oder Antworten auf Ihre Fragen zu AdGuard-Produkten zu finden. Sie sind in sechs Abschnitte unterteilt: FAQ, Senden Sie einen Fehlerbericht oder Anfrage zu einer gewünschten Funktion, Fehlerhaftes Sperren melden, Support kontaktieren, Wissensdatenbank und Diskutieren.
+Der Tab „Support” enthält nützliche Links, die Ihnen helfen, Probleme zu lösen oder Antworten auf Ihre Fragen zu AdGuard-Produkten zu finden. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge Base, and Discuss.
