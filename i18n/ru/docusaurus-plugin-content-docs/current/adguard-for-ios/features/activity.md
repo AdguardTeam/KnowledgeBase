@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-В этой статье рассказывается об AdGuard для iOS — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
+This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,7 +15,7 @@ _Activity_ screen is the 'information hub' of AdGuard's DNS protection suite. Yo
 
 Здесь AdGuard отображает статистику DNS-запросов вашего устройства, такую как их общее количество, количество зашифрованных запросов и среднее время обработки. AdGuard может отображать статистику за день, неделю, месяц или за всё время.
 
-Ниже есть лента _Недавняя активность_. AdGuard хранит последние 1500 DNS-запросов с вашего устройства и показывает информацию о них: например, тип протокола и домен.
+Below is the _Recent activity_ feed. AdGuard хранит последние 1500 DNS-запросов с вашего устройства и показывает информацию о них: например, тип протокола и домен.
 
 :::note
 
@@ -25,10 +25,10 @@ AdGuard никуда не отправляет эту информацию. Он
 
 Нажмите на любой запрос, чтобы просмотреть подробную информацию о нём. Внизу также будут кнопки, предлагающие добавить запрос в Белый/Чёрный список.
 
-![Детали запроса \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
+![Request details \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
 
-Над лентой активности расположены _Наиболее активные_ и _Наиболее блокируемые_ компании. Нажмите на каждый, чтобы увидеть данные по последним 1500 запросам.
+Above the activity feed, there are _Most active_ and _Most blocked_ companies. Нажмите на каждый, чтобы увидеть данные по последним 1500 запросам.
 
-### Статистика {#statistics}
+### Statistics {#statistics}
 
-Помимо экрана _Активность_, глобальную статистику можно найти на главном экране и в виджетах.
+Aside from the _Activity_ screen, you can find global statistics on the home screen and in widgets.

@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Mac, einem multifunktionalen Werbeblocker,
 
 Wenn der AdGuard-Schutz aus irgendeinem Grund nicht aktiviert werden kann, führen Sie die folgenden Schritte aus:
 
-1. Klicken Sie auf das AdGuard-Symbol in der Menüleiste und öffnen Sie *Erweitert* → *Einstellungen zurücksetzen...* → *AdGuard beenden...*
+1. Click the AdGuard icon at the menu bar and go to *Advanced* → *Reset settings...* → *Quit AdGuard...*
 
 2. Geben Sie in der Spotlight-Suche Terminal ein, geben Sie `sudo rm -R /Library/Application\ Support/com.adguard.adguard` ein und führen Sie es aus.
 
@@ -19,4 +19,4 @@ Wenn der AdGuard-Schutz aus irgendeinem Grund nicht aktiviert werden kann, führ
 
 4. Öffnen Sie das Terminal erneut, geben Sie `ls -al /Library/StagedExtensions/Library/Application\ Support/com.adguard.adguard/` ein und führen Sie es aus. Sie sollten Folgendes erhalten: `No such file or directory`.
 
-5. Starten Sie AdGuard und geben Sie Ihre Anmeldedaten ein, wenn Sie dazu aufgefordert werden.
+5. Start AdGuard and enter your login information when prompted.

@@ -31,7 +31,7 @@ Apple 公司尚未解决这些问题，或者只解决了部分问题。
 
 用户可以禁用 AdGuard，防止它使用「默认路由」功能。 前往「高级设置」→「`network.extension.monterey.force.split.tunnel`」进行设置。 请注意，启用此设置会导致上述问题。
 
-![高级设置指南 *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
+![Advanced Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
 
 #### 与保护邮件活动（Protect Mail Activity）的兼容性
 
@@ -63,7 +63,7 @@ Apple 公司尚未解决这些问题，或者只解决了部分问题。
 
 #### 使用旧版 API 的 VPN 应用程序
 
-尽管 AdGuard 在系统设置中显示为 VPN，但与其他基于 VPN 的应用程序一起使用时应该不会引起任何冲突。 但是，如果使用的是在 App Store 以外下载的基于 VPN 的应用程序，有可能是具有旧 VPN API 的应用，因此需要将其排除在过滤范围之外：
+尽管 AdGuard 在系统设置中显示为 VPN，但与其他基于 VPN 的应用程序一起使用时应该不会引起任何冲突。 不过，如果用户使用的是从 App Store 以外下载的基于 VPN 的应用程序，它有可能使用旧的 VPN API，用户必须将其排除在过滤之外：
 
 1. 开启 AdGuard 菜单。
 1. 选择「*首选项...*」。
@@ -71,7 +71,7 @@ Apple 公司尚未解决这些问题，或者只解决了部分问题。
 1. 单击「*应用程序*」按钮。
 1. 找到要排除的应用程序，取消选中旁边的复选框。
 
-![过滤应用程序](https://cdn.adtidy.org/content/kb/ad_blocker/mac/legacy.jpg)
+![Filtered applications](https://cdn.adtidy.org/content/kb/ad_blocker/mac/legacy.jpg)
 
 ## 已修复的问题
 
@@ -81,7 +81,7 @@ Apple 公司现已修复了以下问题，但在旧版本的 macOS Big Sur 中�
 
 目前，AdGuard 的「网络扩展」模式无法与 [Little Snitch 5](https://obdev.at/products/littlesnitch/index.html) 兼容。 当这两个程序都在运行时，有可能会遇到各种应用程序的行为问题，即使它们没有被 AdGuard 过滤。 这个问题是由 Big Sur 中的一个错误造成的，我们已经向 Apple 公司通报这一情况。 这让我们相信，这个问题会在下一次更新中得到解决。
 
-但是，禁用 Little Snitch 中的连接监控无法解决问题，因为该行为无法从系统内存中卸载 Little Snitch 扩展。 我们建议，至少在 Apple 修复该错误之前，切换到「[**自动代理**](#automatic-proxy)」过滤模式。
+请注意，这个问题无法通过禁用「Little Snitch」的连接监控来解决，因为这一操作并不能从系统中卸载「Little Snitch」的扩展。 我们建议，至少在 Apple 修复该错误之前，切换到「[**自动代理**](#automatic-proxy)」过滤模式。
 
 ### 与本地代理的兼容性
 
@@ -121,82 +121,82 @@ Apple 公司现已修复了以下问题，但在旧版本的 macOS Big Sur 中�
 
 :::tip
 
-请参阅 [Shadowsocks 网站](https://shadowsocks.org/guide/what-is-shadowsocks.html) 了解更多信息。
+您可以在 [Shadowsocks 网站](https://shadowsocks.org/guide/what-is-shadowsocks.html)上找到有关如何开始设置的更多信息。
 
 :::
 
 然后，用户要在 Mac 上安装 Shadowsocks 客户端。 请确保在设置中选择「手动模式」或「自动模式」！ 如果您选择「全局模式」（或 11.1 之前 Big Sur 版本中的「自动模式」），配置将不起作用。
 
-![在设置中选择手动模式或自动模式 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/shadowsocks.jpg)
+![Select Manual Mode or Auto Mode in settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/shadowsocks.jpg)
 
-现在进入*AdGuard 菜单 →「高级」→「高级设置」*，并将 `upstream.proxy` 设置的*数值*设置为 `socks5://localhost:1080`。 请注意，需要使用 JSON 文件中的 “local_port” 值。
+Now go to *AdGuard menu → Advanced → Advanced Settings...* and set the *Value* area of the `upstream.proxy` setting to `socks5://localhost:1080`. Notice that you need to use "local_port" value from the JSON file here.
 
-由于 Shadowsocks 使用 SOCKS5，因此还需要将 AdGuard 高级设置中的 `upstream.proxy.socks5udp` 值设置为 `true`，以便 AdGuard 将 UDP 流量路由到代理服务器。
+Because Shadowsocks uses SOCKS5, you also need to set the value of the `upstream.proxy.socks5udp` setting in AdGuard Advanced Settings to `true` to make AdGuard route UDP traffic to the proxy server.
 
-#### 示例 2：配置上游 Surge 代理
+#### Example 2: Configuring an upstream Surge proxy
 
-在 Big Sur v11.1+ 中，AdGuard 和 Surge 代理之间没有已知的冲突。 如果用户使用的是旧版本的 Big Sur（11.1 之前的版本），请检查右下角的「**系统代理**」是否已禁用。 否则，Surge 无法与 AdGuard 一起使用。 另一方面，「**增强模式**」可以在任何 Big Sur 版本中启用而不会引起冲突。
+In Big Sur v11.1+, there are no known conflicts between AdGuard and Surge proxy. If you are using an older version of Big Sur (prior to 11.1), check that **System Proxy** in the bottom right corner is disabled. Otherwise, Surge won't work with AdGuard. On the other hand, **Enhanced Mode** can be enabled without causing a conflict in any Big Sur version.
 
-![配置上游 Surge 代理 *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/outbound-proxy.png)
+![Configuring an upstream Surge proxy *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/outbound-proxy.png)
 
-请转到*「首选项」→「网络」→「出站代理」*并填写字段。 SOCKS5 代理类型：
+Now go to *Preferences → Network → Outbound proxy* and fill in the fields. For SOCKS5 proxy type:
 
-- `host`：localhost
-- `port`：6153 HTTP 代理类型：
-- `host`：localhost
-- `port`：6152
+- `host`: localhost
+- `port`: 6153 For HTTP proxy type:
+- `host`: localhost
+- `port`: 6152
 
-## 使用网络扩展的替代方案
+## Alternatives to using a Network Extension
 
-我们无法预见到 Big Sur 或 Monterey 可能出现的所有问题，因为有无数不同的硬件/软件和设置配置。 如果您遇到任何兼容性问题，联系我们的支持团队前，请尝试使用以下解决方案。
+It's impossible to foresee each and every possible problem that can pop up in Big Sur or Monterey, there are countless various hardware/software and settings configurations. If you face any compatibility issues, please contact our support team, but feel free to try one of these workarounds first.
 
-### 使用「自动代理」过滤模式 {#automatic-proxy}
+### Using "Automatic proxy" filtering mode {#automatic-proxy}
 
-如果用户在 Big Sur 或 Monterey 上遇到的问题无法通过上述任何方法解决，您可以尝试将 AdGuard 切换到「*自动代理*」模式。
+If you face problems in Big Sur or Monterey which can't be resolved by any of the methods above, you can try switching AdGuard to *Automatic proxy* mode.
 
 1. 开启 AdGuard 菜单。
 1. 选择「*首选项...*」。
 1. 切换到「*网络*」选项卡。
-1. 单击「*选择模式...*」按钮。
-1. 选择「*自动代理*」。
+1. Click the *Select Mode...* button.
+1. Select *Automatic Proxy*.
 
-![将 AdGuard 切换到自动代理模式](https://cdn.adtidy.org/content/kb/ad_blocker/mac/automatic-proxy_en.jpg)
+![Switch AdGuard to Automatic proxy mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/automatic-proxy_en.jpg)
 
-现在，AdGuard 自动在 Mac 的网络设置中添加一个 **.pac** 文件。这样系统就会将 AdGuard 视为代理，并尝试通过 AdGuard 发送所有流量。
+Now AdGuard has automatically added a **.pac** file to your Mac's network settings, so that the system will consider AdGuard a proxy and try to send all traffic through AdGuard.
 
 :::note
 
-有些应用程序可能会忽略这一系统设置，其流量将不会被过滤。
+Some apps may ignore this system setting and their traffic will not be filtered.
 
 :::
 
-### 在 Big Sur 和 Monterey 中启用内核扩展 {#kernel-extension}
+### Enabling Kernel Extension in Big Sur and Monterey {#kernel-extension}
 
-默认情况下，Big Sur 和 Monterey 禁用了旧内核扩展框架，因此 AdGuard 使用网络扩展框架。 这可能会导致兼容性问题，但要重新启用内核扩展，必须首先禁用系统完整性保护（英语：System Integrity Protection，英语缩写：SIP）。 要禁用 SIP，请按此说明操作：
+By default AdGuard uses Network Extension framework in Big Sur and Monterey as the old Kernel Extension framework is disabled there. This can cause some compatibility problems, but to enable Kernel Extension back, you need to disable System Integrity Protection (SIP) first. To disable SIP, follow this instruction:
 
 1. Click the *Apple symbol* in the Menu bar.
-1. 点击「*重启…*」。
-1. 按住 *Command-R* 重启进入恢复模式。
-1. 单击「*实用程序*」。
-1. 选择「*终端*」。
-1. 输入 `csrutil disable`。
-1. 按键盘上的 *Return* 或 *Enter* 键。
-1. 单击菜单栏中的 * Apple 符号*。
-1. 点击「*重启…*」。
+1. Click *Restart…*
+1. Hold down *Command-R* to reboot into Recovery Mode.
+1. Click *Utilities*.
+1. Select *Terminal*.
+1. Type `csrutil disable`.
+1. Press *Return* or *Enter* on your keyboard.
+1. Click the *Apple symbol* in the Menu bar.
+1. Click *Restart…*
 
-禁用 SIP 后，就可以启用内核扩展：
+Now that SIP is disabled, this is how you enable Kernel Extension:
 
-![启用内核扩展](https://cdn.adtidy.org/content/kb/ad_blocker/mac/kernel_en.jpg)
+![Enable Kernel Extension](https://cdn.adtidy.org/content/kb/ad_blocker/mac/kernel_en.jpg)
 
 1. 开启 AdGuard 菜单。
 1. 选择「*首选项...*」。
 1. 切换到「*网络*」选项卡。
-1. 单击「*选择模式...*」按钮。
-1. 选择「*内核扩展*」。
-1. 确认要切换到内核扩展。
+1. Click the *Select Mode...* button.
+1. Select *Kernel Extension*.
+1. Confirm that you want to switch to Kernel Extension.
 
 :::caution
 
-不过，我们只建议在其他方法都失败的情况下使用上述方法，因为这可能会导致一些问题。
+However, we only recommend using this method if everything else fails, as this may lead to unexpected issues.
 
 :::

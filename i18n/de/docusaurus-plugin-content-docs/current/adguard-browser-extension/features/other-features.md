@@ -13,13 +13,13 @@ Abgesehen von den großen Hauptmodulen der AdGuard Browsererweiterung gibt es ei
 
 ## Allgemein {#general}
 
-Im Tab _Allgemein_ können Sie Werbung in Suchmaschinen und die [Eigenwerbung von Websites](/general/ad-filtering/search-ads) zulassen, die automatische Aktivierung von sprachspezifischen Filtern aktivieren, das Aktualisierungsintervall der Filter angeben, usw.
+Im Tab _Allgemein_ können Sie Suchanzeigen und die [Eigenwerbung von Websites](/general/ad-filtering/search-ads) zulassen, die automatische Aktivierung sprachspezifischer Filter aktivieren, das Aktualisierungsintervall der Filter angeben usw.
 
 ![Allgemein \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
 Außerdem können Sie hier [_Schutz vor Phishing und Malware_](/general/browsing-security) aktivieren.
 
-Wenn Sie Ihre Einstellungen speichern möchten, klicken Sie auf die Schaltfläche _Einstellungen exportieren_. Die Einstellungen werden als .json-Datei gespeichert. Um die zuvor gespeicherten Einstellungen zu importieren, verwenden Sie die Funktion _Einstellungen importieren_. Sie können damit sogar schnell zwischen verschiedenen Einstellungsprofilen wechseln oder sogar Einstellungskonfigurationen zwischen verschiedenen Browsern übertragen.
+Wenn Sie Ihre Einstellungen speichern möchten, klicken Sie auf die Schaltfläche _Einstellungen exportieren_. Die Einstellungen werden als .json-Datei gespeichert. Um die zuvor gespeicherte Konfiguration zu importieren, verwenden Sie die Funktion _Einstellungen importieren_. Sie können damit sogar schnell zwischen verschiedenen Einstellungsprofilen wechseln oder sogar Einstellungskonfigurationen zwischen verschiedenen Browsern übertragen.
 
 ## Zusätzliche Einstellungen {#misc}
 

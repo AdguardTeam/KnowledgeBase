@@ -38,11 +38,10 @@ sidebar_position: 2
 - **实验性过滤器**，此过滤器设计用于在将某些有风险的过滤规则添加到基本过滤器之前对其进行测试。 如果这些规则执行没有任何问题，它们会被添加到主过滤器中。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_5_Experimental/filter.txt)
 - **移动广告过滤器**拦截移动设备上的广告。 包含所有已知的移动广告网络。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt)
 - **DNS 过滤器** — 此过滤器由其他几个过滤器 (AdGuard 基础过滤器、社交媒体过滤器、防跟踪保护过滤器、移动广告过滤器、EasyList 和 EasyPrivacy) 组成，并经过简化，以便更好地与 DNS 级别的广告拦截兼容。 [AdGuard DNS](https://adguard-dns.io/kb) 服务器使用此过滤器来拦截广告和跟踪器。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt)
-- **Quick Fixes filter** — used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension. [View rules](https://filters.adtidy.org/extension/chromium-mv3/filters/24.txt)
 
 ## AdGuard 过滤器政策
 
-Our filter policy defines what AdGuard filters should and shouldn't block, as well as the rules for adding and removing rules from filters. 阅读全文 [AdGuard 过滤政策](../filter-policy)了解详细信息。
+我们的过滤器政策定义在过滤器中添加和删除的规则，以及 AdGuard 过滤器应该拦截和不应该拦截的内容的规则。 阅读全文 [AdGuard 过滤政策](../filter-policy)了解详细信息。
 
 ## 为 AdGuard 过滤器做贡献
 

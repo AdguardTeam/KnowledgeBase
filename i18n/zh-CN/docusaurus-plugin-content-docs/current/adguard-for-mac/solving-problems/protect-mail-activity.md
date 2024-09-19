@@ -1,5 +1,5 @@
 ---
-title: 保护邮件活动和 AdGuard
+title: Protect Mail Activity and AdGuard
 sidebar_position: 8
 ---
 
@@ -9,34 +9,34 @@ sidebar_position: 8
 
 :::
 
-## 简述
+## In a nutshell
 
 Apple 邮件应用现于下载邮件图像时使用代理以隐藏用户的 IP 地址。
 
-![邮件隐私保护](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_protectMailActivity.jpg)
+![Mail privacy protection](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_protectMailActivity.jpg)
 
-但如有启动的 VPN 连接，保护邮件活动功能将无法工作。 因其视 AdGuard 为 VPN，所以它不会自动预载图像。
+However, it won't work if there's an active VPN connection. 因其视 AdGuard 为 VPN，所以它不会自动预载图像。
 
-Apple [在此](https://support.apple.com/HT212797)解释此问题。
+Apple explains this issue [here](https://support.apple.com/HT212797).
 
-## 详述
+## 更详细的说明
 
-现在，Mac 版 AdGuard 使用基于网络扩展 API 的 macOS 内置的 Socket 过滤。 这种新的漏洞百出的机制取代了老式的内核扩展。 在过去的一年半内，我们向 Apple 报告了超过 20 个（！）关于其新过滤方式的错误。
+现在 Mac 版 AdGuard 使用基于网络扩展 API 的 macOS 内置的 Socket 过滤。 这种新的漏洞百出的机制取代了老式的内核扩展。 在过去的一年半内，我们向 Apple 报告了超过 20 个（！）关于其新过滤方式的错误。
 
-网络扩展 API 有一个类似 VPN 的配置，其中包含一个类似路由的条目列表。 在 Big Sur 上，AdGuard 使用了「分离隧道」规则，以避免创建「默认路由」规则，因为它会给 Big Sur 早期版本带来问题。 这些问题已在 Monterey 中得到解决，因此没有什么能阻止「默认路由」规则。
+网络扩展 API 有一个类似 VPN 的配置，其中包含一个类似路由的条目列表。 On Big Sur, AdGuard used "split-tunnel" rules to avoid creating the "default route" rule because it causes problems on early Big Sur releases. These problems were solved in Monterey so nothing prevents us from using the "default route" rule.
 
-在 Monterey 上，推出了 iCloud 专用代理。 邮件应用程序的隐私功能也使用专用代理服务器。
+在 Monterey 上，推出了 iCloud 专用代理。 Privacy features of Mail.app also use Private Relay servers.
 
-因此，AdGuard 无法与 iCloud 专用代理和邮件应用程序的隐私功能一起使用：
+As a consequence, AdGuard can't work together with iCloud Private Relay and Mail app privacy features:
 
-1. iCloud 专用代理应用于库级别的连接，在连接到达 AdGuard 运行的套接字级别之前。
-2. iCloud 专用代理使用 QUIC，AdGuard 无法对其进行过滤，因为 HTTP/3 过滤功能尚不可用。
-3. 因此，AdGuard 会阻止 QUIC，包括 iCloud 专用代理的流量，否则就无法拦截广告。
-4. 当用户使用 iCloud 专用代理，将 AdGuard 切换到「分离隧道」模式时，就无法在 Safari 中打开网站。
-5. 要在 Monterey 上解决这个问题，我们应用「默认路由」规则。 专用代理检测到该规则时，功能将自动禁用。 因此，AdGuard 可以在 Monterey 上无缝运行，但 iCloud 专用代理会被禁用。
+1. iCloud Private Relay is applied to connections at the library level — before they reach the socket level, where AdGuard operates.
+2. iCloud Private Relay uses QUIC, which AdGuard can't filter because HTTP/3 filtering is not yet available.
+3. Consequently, AdGuard blocks QUIC, including iCloud Private Relay traffic – otherwise, ad blocking is impossible.
+4. When you use iCloud Private Relay and switch AdGuard into the "split-tunnel" mode, you can't open websites in Safari.
+5. To work around this issue for Monterey, we apply the "default route" rule. When Private Relay sees that rule, it disables itself automatically. So, AdGuard works seamlessly on Monterey, but iCloud Private Relay gets disabled.
 
-`network.extension.monterey.force.split.tunnel` 恢复了 Big Sur 行为，但由于（3）和（4）的原因，该选项会中断网站访问权限。 我们努力寻找能够解决这个问题的办法。 一种可能的解决方案是实施 HTTP/3 过滤。
+`network.extension.monterey.force.split.tunnel` restores the "Big Sur" behavior, but this option may break access to websites due to (3) and (4). We keep searching for a solution to this issue. One of the options is implementing HTTP/3 filtering.
 
-## 建议的解决方案
+## Recommended solution
 
-此时，我们建议使用更传统的 VPN 服务，如 [AdGuard VPN](https://adguard-vpn.com/)，而不是较新的 Apple 隐私功能。
+At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the newer Apple privacy features.

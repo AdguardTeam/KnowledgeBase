@@ -17,7 +17,7 @@ Verifica se il bug è già stato segnalato. Consigliamo di fare attenzione sia a
 
 ### Come descrivere un problema
 
-Prova a fornire quanti più dettagli possibile: ci faciliteranno nel riprodurre il bug e scoprire come risolverlo. Here’s what we expect a bug report to include:
+Prova a fornire quanti più dettagli possibile: ci faciliteranno nel riprodurre il bug e scoprire come risolverlo. Ecco cosa vorremmo vedere in una segnalazione di bug:
 
 - La versione della tua app
 - La versione del tuo OS
@@ -28,7 +28,7 @@ Prova a fornire quanti più dettagli possibile: ci faciliteranno nel riprodurre 
 
 ### Come raccogliere i registri
 
-Read about collecting logs in dedicated articles for each platform.
+Leggi sulla raccolta dei registri negli articoli dedicati per ogni piattaforma.
 
 ## Come votare le segnalazioni di bug o le richieste di funzionalità
 
