@@ -15,17 +15,17 @@ Data and/or files provided in logs are processed in accordance with [the AdGuard
 
 :::
 
-In this article, we'll guide you through the process of collecting debug logs, an essential troubleshooting step for solving complex issues that may potentially arise. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
+En este artículo, te guiaremos a través del proceso de recopilación de registros de depuración, un paso de solución de problemas esencial para resolver problemas complejos que puedan surgir. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
 
 :::note
 
-AdGuard se compromete a proteger tu privacidad. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Antes de enviar tus registros al equipo de soporte, revisa el archivo, ya que puede contener información adicional que no deseas compartir. Si contiene información personal, te recomendamos que la elimines primero.
+AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
 
 :::
 
-### Recording debug log
+### Collecting debug log
 
-To collect **debug** log and send it to us, you need to perform following steps:
+To collect **debug** log and send it to us you need to perform following steps:
 
 1. Go to *Settings* → *General* → *Advanced*.
 1. Tap *Logging level* and set it to *Debug*.

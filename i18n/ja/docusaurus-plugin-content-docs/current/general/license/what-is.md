@@ -1,5 +1,5 @@
 ---
-title: What is an AdGuard license?
+title: AdGuard ライセンスとは?
 sidebar_position: 1
 ---
 
@@ -12,7 +12,7 @@ sidebar_position: 1
 - **1年サブスクリプション** - これらのライセンスは毎年自動的に更新されますが、手動で延長することもできます。
     - パーソナル（デバイス3台用）
     - ファミリー（デバイス9台用）
-- **Lifetime** — these licenses are perpetual
+- **永久** - これらのライセンスには有効期限はなく、ずっとご利用いただけます。
     - パーソナル（デバイス3台用）
     - ファミリー（デバイス9台用）
 

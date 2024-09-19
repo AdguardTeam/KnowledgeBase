@@ -29,7 +29,7 @@ Requires iOS 13 or later.
 
 ![На главном экране App Store нажмите «Поиск» *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/1.png)
 
-Type *adguard* in the search bar and tap the string *AdGuard* which will be among search results.
+Введите *adguard* в строке поиска и нажмите на строку *adGuard*, которая будет среди результатов поиска.
 
 ![Введите "AdGuard" в строке поиска *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
@@ -43,11 +43,11 @@ Type *adguard* in the search bar and tap the string *AdGuard* which will be amon
 
 ![На главном экране App Store нажмите «Поиск» *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/1.png)
 
-Type *adguard* in the search form, and then tap the string *AdGuard Pro — adblock* which will be shown among search results.
+Введите *adguard* в строке поиска и нажмите на строку *adGuard pro - блокировщик рекламы*, которая будет среди результатов поиска.
 
 ![Введите "AdGuard" в строке поиска *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
-On the opened page of the App Store tap the button with the cost of the license under the string *AdGuard Pro — adblock*, and then tap *BUY*. Вам может потребоваться ввести логин и пароль Apple ID. Введите его и дождитесь завершения установки.
+На открывшейся странице App Store нажмите на кнопку со стоимостью лицензии под строкой *AdGuard Pro - блокировщик рекламы*, а затем нажмите *КУПИТЬ*. Вам может потребоваться ввести логин и пароль Apple ID. Введите его и дождитесь завершения установки.
 
 ![Нажмите СКАЧАТЬ под приложением AdGuard *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/3.png)
 

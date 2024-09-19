@@ -29,7 +29,7 @@ Android 版 AdGuard 可以[过滤加密的 HTTPS 流量](/general/https-filterin
 
 1. 安装[最新版本的 **adguardcert** Magisk 模块](https://github.com/AdguardTeam/adguardcert/releases/latest/)。
 
-1. 打开*「Magisk」→「模块」→「从存储安装」*并选择下载的 **adguardcert** 文件。 AdGuard Personal CA 证书将被复制到系统存储。
+1. 打开*「Magisk」→「模块」→「从存储安装」*并选择下载的 **adguardcert** 文件。 这样 AdGuard Personal CA 就从用户存储移到了系统存储。
 
     ![打开 Magisk 模块 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
 

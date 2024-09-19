@@ -41,13 +41,13 @@ sidebar_position: 3
 
 `enable:true` 或 `enable:false` 相应地启用或禁用 DNS 过滤。
 
-`fake_dns` 允许在指定的代理服务器上解析 DNS 请求。 这个设置需要额外的标志：
+`fake_dns` allows resolving DNS requests on the specified proxy server. This requires an extra flag:
 
-`enable:true` 或 `enable:false` 可以分别启用或禁用「*使用 FakeDNS*」设置。
+`enable:true` or `enable:false` enables or disables the *Use FakeDNS* setting, respectively.
 
 :::note
 
-启用「*使用 FakeDNS*」设置时，「*DNS 保护*」将自动禁用。 DNS 请求不会在本地被过滤。
+When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automatically disabled. DNS requests won't be filtered locally.
 
 :::
 
@@ -65,7 +65,7 @@ sidebar_position: 3
 
  `server:custom` 切换到之前添加的名为 `custom` 的服务器；
 
- `server:tls://dns.adguard.com` 如果之前添加的服务器和提供商不包含具有相同地址的服务器，则创建一个新服务器并切换到该服务器。 否则，它会切换到相应的服务器。 用户可以将服务器地址添加为 IP（普通 DNS）、`sdns://…`（DNSCrypt 或 DNS-over-HTTPS）、`https://…`（DNS-over-HTTPS）或 `tls:`//...(DNS-over-TLS）；
+ `server:tls://dns.adguard.com` 如果之前添加的服务器和提供商不包含具有相同地址的服务器，则创建一个新服务器并切换到该服务器。 否则，它会切换到相应的服务器。 You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or `tls://...` (DNS-over-TLS);
 
  `server:1.1.1.1, tls://1.1.1.1` 创建一个用逗号分隔地址的服务器并切换到它。 通过`server:1.1.1.1, tls://1`.1.1 添加服务器时，先前添加的服务器将被移除。
 
@@ -126,7 +126,7 @@ sidebar_position: 3
 
 :::
 
-**请别忘记包含密码、包名称和类别。 您需要为每个 intent 消息都这样做。**
+**别忘记把密码作为附加项，并提及软件包名称和类别。 您需要为每个 intent 消息都这样做。**
 
 Extra: `password:*******`
 
@@ -136,7 +136,7 @@ Class: `com.adguard.android.receiver.AutomationReceiver`
 
 :::note
 
-在 v4.0 之前，该类被称为 `com.adguard.android.receivers.AutomationReceiver` 但是后来我们将其名称更改为 `com.adguard.android.receiver.AutomationReceiver`。 如果用户使用该功能，请记得更新名称。
+在 v4.0 之前，该类被称为 `com.adguard.android.receivers.AutomationReceiver` 但是后来我们将其名称更改为 `com.adguard.android.receiver.AutomationReceiver`。 如果用户使用过该功能，请留意并使用新的名称。
 
 :::
 

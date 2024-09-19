@@ -41,14 +41,12 @@ Les filtres de blocage publicitaire d'AdGuard sont les suivants :
 - Filtre de base AdGuard
 - Filtre de publicités mobiles AdGuard
 - Filtres régionaux divisés par principe linguistique : chinois, néerlandais, français, allemand, japonais, russe, espagnol/portugais, turc et ukrainien
-- AdGuard Quick Fixes filter
 
 ### L'objectif de ces filtres
 
 - **Le filtre de base** est conçu pour bloquer les publicités sur les sites web en anglais et ceux pour lesquels il n'existe pas de filtre séparé. Il contient également des règles générales de filtrage qui s'appliquent à tous les sites web quelle que soit la langue
 - Le **Filtre de publicités mobiles** bloque les publicités sur les versions mobiles des sites web et dans les applications mobiles. Il n'y a pas de segmentation basée sur la langue
 - Les **Filtres régionaux** suivent la même politique que le **Filtre de base**, mais sont limités aux sites web dans certaines langues
-- **Quick Fixes filter** used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension.
 
 L'objectif des filtres de blocage des publicités est de bloquer tous les types de publicité sur les sites web, les applications et certains appareils qui peuvent charger des publicités depuis Internet :
 

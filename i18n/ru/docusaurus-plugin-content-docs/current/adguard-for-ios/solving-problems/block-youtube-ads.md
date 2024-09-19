@@ -17,7 +17,7 @@ sidebar_position: 4
 1. Выберите видеоролик и нажмите *Поделиться*.
 1. Нажмите *Подробнее*, затем выберите *Блокировать рекламу на YouTube (с помощью AdGuard)*.
 
-The video now opens in AdGuard's ad-free player.
+AdGuard откроет свой видеоплеер без рекламы.
 
 ## Как заблокировать рекламу на YouTube в Safari
 
@@ -31,4 +31,4 @@ The video now opens in AdGuard's ad-free player.
 1. Выберите видеоролик и нажмите *Поделиться*.
 1. Нажмите *Блокировать рекламу на YouTube (от AdGuard)*.
 
-The video now opens in AdGuard's ad-free player.
+AdGuard откроет свой видеоплеер без рекламы.

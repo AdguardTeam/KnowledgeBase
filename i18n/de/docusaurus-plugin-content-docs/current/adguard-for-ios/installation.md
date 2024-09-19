@@ -13,15 +13,15 @@ Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker,
 
 ### iPhone
 
-Erfordert iOS 13 oder höher.
+Requires iOS 13 or later.
 
 ### iPad
 
-Erfordert iPadOS 13 oder höher.
+Requires iPadOS 13 or later.
 
 ### iPod touch
 
-Erfordert iOS 13 oder höher.
+Requires iOS 13 or later.
 
 ## Installation von AdGuard für iOS
 
@@ -29,7 +29,7 @@ AdGuard für iOS ist im App Store erhältlich. Um sie auf Ihrem Gerät zu instal
 
 ![Tippen Sie auf dem Hauptbildschirm des App Store auf Suchen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/1.png)
 
-Geben Sie *adguard* in die Suchleiste ein und tippen Sie auf die Zeichenfolge *AdGuard*, die sich unter den Suchergebnissen befinden wird.
+Geben Sie *adguard* in die Suchleiste ein und tippen Sie auf die Zeichenfolge *adguard*, die sich unter den Suchergebnissen befinden wird.
 
 ![Geben Sie "AdGuard" in die Suchleiste ein *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
@@ -47,7 +47,7 @@ Geben Sie *adguard* in das Suchformular ein, und tippen Sie dann auf die Zeichen
 
 ![Geben Sie "AdGuard" in die Suchleiste ein *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
-Tippen Sie auf der geöffneten Seite des App Stores auf die Schaltfläche mit den Kosten für die Lizenz unter der Zeichenfolge *AdGuard Pro — adblock*, und tippen Sie dann auf *KAUFEN*. Möglicherweise werden Sie aufgefordert, Ihre Apple-ID-Anmeldenamen und Passwort einzugeben. Geben Sie sie ein und warten Sie, bis die Installation abgeschlossen ist.
+Tippen Sie auf der geöffneten Seite des App Stores auf die Schaltfläche mit den Lizenzkosten unter der Zeichenfolge *AdGuard Pro — adblock* und tippen Sie dann auf *Kaufen*. Möglicherweise werden Sie aufgefordert, Ihre Apple-ID-Anmeldenamen und Passwort einzugeben. Geben Sie sie ein und warten Sie, bis die Installation abgeschlossen ist.
 
 ![Tippen Sie auf GET unterhalb der AdGuard-App *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/3.png)
 

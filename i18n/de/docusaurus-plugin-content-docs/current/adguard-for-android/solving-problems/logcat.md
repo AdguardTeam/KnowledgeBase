@@ -15,11 +15,11 @@ Die in den Protokollen enthaltenen Daten und/oder Dateien werden in Übereinstim
 
 :::
 
-Manchmal reicht ein einfaches Protokoll nicht aus, um die Ursache des Problems zu ermitteln. In solchen Fällen ist ein Systemprotokoll erforderlich. Below are instructions on how to collect and get it: via Developer options and Logcat.
+Manchmal reicht ein einfaches Protokoll nicht aus, um die Ursache des Problems zu ermitteln. In solchen Fällen ist ein Systemprotokoll erforderlich. Nachfolgend finden Sie eine Anleitung zum Zusammenstellen und Abrufen der Daten: über die Entwickleroptionen und Logcat.
 
 :::note
 
-AdGuard ist dem Schutz Ihrer Privatsphäre verpflichtet. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Bevor Sie Ihre Protokolle an das Support-Team senden, überprüfen Sie bitte die Datei, da sie zusätzliche Informationen enthalten kann, die Sie vielleicht nicht freigeben möchten. Wenn sie solche persönlichen Informationen enthält, empfehlen wir Ihnen, sie zuerst zu löschen.
+AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
 
 :::
 
