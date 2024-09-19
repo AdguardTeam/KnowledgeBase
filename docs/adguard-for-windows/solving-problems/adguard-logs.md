@@ -33,7 +33,7 @@ AdGuard is committed to protecting your privacy. We strictly follow our [Privacy
 
     We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
 
-1. Export the recorded logs using the *Export Logs* button.
+1. Export the collected logs using the *Export Logs* button.
 
     ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
@@ -65,7 +65,7 @@ If you have an older version of AdGuard for Windows, run the application with th
 
     We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
 
-1. Export the recorded logs using the *Export Logs* button.
+1. Export the collected logs using the *Export Logs* button.
 
     ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 

@@ -59,7 +59,7 @@ If you activate too many filters, some websites may work incorrectly.
 
 ### Userscripts
 
-Userscripts are mini-programs written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
+Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
 
 ![Userscripts *mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
