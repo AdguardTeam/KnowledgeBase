@@ -1,8 +1,5 @@
 name: Sync with Crowdin
 
-env:
-  NODE_VERSION: 20
-
 on:
   push:
     branches:
@@ -12,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: node:20
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node.js
