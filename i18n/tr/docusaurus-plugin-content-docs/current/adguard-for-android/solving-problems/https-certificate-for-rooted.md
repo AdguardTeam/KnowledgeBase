@@ -29,7 +29,7 @@ Here's how to do that.
 
 1. [**adguardcert** Magisk modülünün son sürümünü](https://github.com/AdguardTeam/adguardcert/releases/latest/) yükleyin.
 
-1. *Magisk → Modüller → Depolamadan yükle* öğesini açın ve indirilen **adguardcert** dosyasını seçin. AdGuard Kişisel CA sertifikası sistem depolamasına kopyalanacaktır.
+1. *Magisk → Modüller → Depolamadan yükle* öğesini açın ve indirilen **adguardcert** dosyasını seçin. Bu, AdGuard Personal CA'yı kullanıcı depolamasından sistem depolamasına taşır.
 
     ![Open Magisk modules *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
 

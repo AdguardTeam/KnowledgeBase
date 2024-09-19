@@ -1,5 +1,5 @@
 ---
-title: 'Installazione/Disinstallazione'
+title: 'Install/Uninstall'
 sidebar_position: 2
 ---
 
@@ -72,15 +72,15 @@ Go to the Applications section. Find AdGuard there, right-click it and choose **
 **Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Also, do all the steps from the "regular uninstall" first.**
 
 1. After that, delete following AdGuard files:
-    - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (cartella)
+    - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
     - ~/Library/Preferences/com.adguard.mac.adguard.plist (file)
-    - ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (cartella)
+    - ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (folder)
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (file)
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (file)
     - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (file)
     - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (file)
 
-    Per farlo, apri l'app del Terminale, quindi, inserisci ed esegui i seguenti comandi:
+    To do so, open the Terminal app, then enter and execute the following commands:
 
     ```bash
     sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
@@ -94,13 +94,13 @@ Go to the Applications section. Find AdGuard there, right-click it and choose **
     sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log
     ```
 
-1. Avvia l'app **Monitoraggio Attività**.
-1. Utilizzando lo strumento di ricerca, trova il processo **cfprefsd**.
+1. Run the **Activity Monitor** app.
+1. Using search tool, find the process **cfprefsd**.
 
-    ![Esegui Monitoraggio Attività](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
+    ![Run Activity Monitor](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. Arresta il processo in esecuzione sotto l'utente (non quello eseguito sotto root). Per farlo, clicca sul processo, quindi clicca sulla X in alto a sinistra. Conferma l'azione nella finestra.
+1. Stop the process which is being run under the user (not the one run under root). To do so, click the process and then click X on the upper left. Confirm the action in the dialogue window.
 
-    ![Conferma](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
+    ![Confirm](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 
-AdGuard è ora rimosso dal tuo computer.
+AdGuard is removed from your computer now.

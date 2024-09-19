@@ -21,7 +21,7 @@ sidebar_position: 9
 
 ## 高级设置
 
-### 网络设置
+### Network settings
 
 #### `network.extension.exclude.domains`
 
@@ -71,7 +71,7 @@ sidebar_position: 9
 
 #### `network.https.ech.enabled`
 
-使用本地 DNS 代理在 ECH 配置列表中查找配置。 如果找到，加密 Client Hellos。
+使用本地 DNS 代理在 ECH 配置列表中查找配置。 如果找到，加密 ClientHellos。
 
 #### `network.https.enforce.certificate.transparency`
 
@@ -89,7 +89,7 @@ sidebar_position: 9
 
 设置为 `true` 即可启用 LoopBack 过滤功能。
 
-### DNS 设置
+### DNS settings
 
 #### `dns.proxy.bootstrap.ips`
 
@@ -145,7 +145,7 @@ sidebar_position: 9
 
 #### `dns.proxy.parallel.upstream.queries.enabled`
 
-同时查询所有上游。 返回第一个响应。
+同时查询所有上游。 The first response is returned.
 
 #### `dns.proxy.servfail.on.upstreams.failure.enabled`
 
@@ -159,7 +159,7 @@ sidebar_position: 9
 
 删除响应中的 Encrypted Client Hello 参数。
 
-### 隐身模式设置
+### Stealth Mode settings
 
 #### `stealth.antidpi.http.split.fragment.size`
 
@@ -177,7 +177,7 @@ sidebar_position: 9
 
 如果执行了分片，用户可以在此处指定发送第一个分片后的延迟（以毫秒为单位）。
 
-### 订阅链接拦截设置（用户脚本和过滤器）
+### Subscription link interception settings (userscripts and filters)
 
 #### `subscription.link.interception.userscript`
 

@@ -13,27 +13,27 @@ In diesem Artikel finden Sie einige der häufigsten Fehler, die bei der Installa
 
 ### Fehler 5: Zugriff verweigert {#error-5}
 
-This error message appears when required permissions haven't been granted. Es kann verschiedene Gründe geben, warum das AdGuard-Installationsprogramm nicht über die erforderlichen Berechtigungen verfügt, um den Installationsvorgang ordnungsgemäß abzuschließen. Sie können die folgenden Schritte versuchen:
+This error occurs when there's something wrong with permissions. Es kann verschiedene Gründe geben, warum das AdGuard-Installationsprogramm nicht über die erforderlichen Berechtigungen verfügt, um den Installationsvorgang ordnungsgemäß abzuschließen. Sie können die folgenden Schritte versuchen:
 
-- Temporarily disable your antivirus. Einige von ihnen können die Installation beeinträchtigen, je nachdem, wie stark sie eingestellt sind.
+- Deaktivieren Sie vorübergehend Ihre Antivirenprogramme. Einige von ihnen können die Installation beeinträchtigen, je nachdem, wie stark sie eingestellt sind.
 
 - Wählen Sie einen anderen Installationsordner. Es ist möglich, dass der aktuelle Installationsordner Zugriffsbeschränkungen hat. Stellen Sie außerdem sicher, dass Sie kein externes oder virtuelles Laufwerk usw. auswählen.
 
 - Starten Sie Ihren Computer neu. Manchmal sind die Berechtigungsprobleme vorübergehend und können durch einen Neustart des PCs behoben werden.
 
-### Fehler 112: Datenträger verfügt nicht mehr über genügend Speicherplatz, Fehler 1632: Temporärer Ordner voll oder unzugänglich {#error-112}
+### Fehler 112: Datenträger ist voll, Fehler 1632: Temporärer Ordner voll oder unzugänglich {#error-112}
 
-Es handelt sich um zwei verschiedene Fehler mit sehr ähnlichen Lösungen. As their titles suggest, AdGuard installer didn't find enough disk space to complete the installation. Es gibt mehrere Möglichkeiten, das Problem zu beheben:
+Es handelt sich um zwei verschiedene Fehler mit sehr ähnlichen Lösungen. As their names suggest, AdGuard installer didn't find enough disk space to complete the installation. Es gibt mehrere Möglichkeiten, das Problem zu beheben:
 
 - Deinstallieren Sie einige Programme oder löschen Sie unnötige Dateien von dem Laufwerk, auf dem Sie AdGuard installieren möchten.
 
-- Laden Sie [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), eine kostenlose Software von Malwarebytes, herunter, installieren Sie sie und führen Sie sie aus. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstalled programs and such. Das wird helfen, etwas Speicherplatz freizugeben.
+- Laden Sie [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), eine kostenlose Software von Malwarebytes, herunter, installieren Sie sie und führen Sie sie aus. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstall programs and such. Das wird helfen, etwas Speicherplatz freizugeben.
 
 - Starten Sie Ihren Computer neu. Manchmal können temporäre Dateien eine beträchtliche Menge an Speicherplatz beanspruchen, und ein Neustart Ihres PCs ist die zuverlässigste Methode, sie loszuwerden.
 
 ### Fehler 1601: Auf Windows Installer kann nicht zugegriffen werden {#error-1601}
 
-You could say this is a particular subcategory of Error 1603. Die möglichen Lösungen sind ähnlich:
+You could say this is a particular sub-case of Error 1603. Die möglichen Lösungen sind ähnlich:
 
 - Starten und registrieren Sie den Microsoft Installer-Dienst erneut. Das erfordert etwas Arbeit.
 
@@ -75,7 +75,7 @@ Dieser Fehler tritt auf, wenn mehrere Instanzen des AdGuard-Installationsprogram
 
 - Starten Sie Ihren PC neu und starten Sie das Installationsprogramm erneut. Wenn Sie den Computer neu starten, werden alle laufenden Prozesse angehalten, einschließlich aller Kopien des Installationsprogramms.
 
-- Don't make multiple clicks on the installer even if it doesn't start right away. Manchmal kann es ein paar Sekunden dauern, bis die Benutzeroberfläche des Installationsprogramms angezeigt wird.
+- Don't make multiple clicks on the installer even if doesn't start right away. Manchmal kann es ein paar Sekunden dauern, bis die Benutzeroberfläche des Installationsprogramms angezeigt wird.
 
 ### Error 1638: Another version of this product is already installed {#error-1638}
 
@@ -83,14 +83,14 @@ It's very likely that you've already installed AdGuard before.
 
 - Check if AdGuard is already installed on your computer. You can do it by pressing the *Win* key and typing in ***AdGuard***.
 
-- Maybe there're some leftover files from a previous AdGuard installation. Deinstallieren Sie AdGuard mit unserem speziellen [Deinstallationstool](../../installation#advanced) und wiederholen Sie dann die Installation.
+- Maybe there's some leftover files from a previous AdGuard installation. Deinstallieren Sie AdGuard mit unserem speziellen [Deinstallationstool](../../installation#advanced) und wiederholen Sie dann die Installation.
 
 ### Andere Fehler {#other}
 
-If you've encountered an error that's not listed above, it is possible that we can solve it by ourselves. But in order to do that, we need log files from you. Bitte führen Sie dazu die folgenden Schritte aus:
+If you've encountered an error that's not listed above, it is possible that we can solve it by ourselves. But in order to do that, we need log files from you. Please perform the following steps:
 
-- Find and archive the **AdGuard installation logs** as it is described in [this article](../installation-logs).
+- Find and archive **AdGuard installation logs** as it is described in [this article](../installation-logs).
 
-- Find and save to disk the **Event Viewer** logs. [This article](../system-logs) explains how to do that.
+- Find and save to disk **Event Viewer** logs. [This article](../system-logs) explains how to do that.
 
 - Please email all these files from two previous steps to the support team at **support@adguard.com** and describe the problem in the message body. Our tech support agents will reply to you as soon as possible.

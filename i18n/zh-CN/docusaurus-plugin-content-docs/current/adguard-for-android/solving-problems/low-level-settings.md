@@ -93,13 +93,13 @@ DoH、DoT 和 DoQ 服务器的 Bootstrap DNS。 默认使用的是「*自动 DNS
 
 如果启用此设置，AdGuard 将在添加或更新自定义 DNS 服务器之前测试 DNS 上游。
 
-#### 过滤安全 DNS
+#### Filter secure DNS
 
-开启后，AdGuard 将所有启用的 DNS 过滤器和 DNS 用户规则应用于加密的 DNS-over-HTTPS (DoH) 流量，而不仅仅是普通 DNS。 DoH 流量主要来自 Chrome 和其他具有*安全 DNS* （或类似）设置的浏览器。 用户可以在两种不同模式下使用「*过滤安全 DNS*」功能：
+If this setting is on, AdGuard will apply all enabled DNS filters and DNS user rules to encrypted DNS-over-HTTPS (DoH) traffic and not only to plain DNS. DoH traffic mostly comes from Chrome and other browsers that have a *Secure DNS* (or similar) setting. You can use *Filter secure DNS* in two different modes:
 
-- **即时过滤**模式。 AdGuard 对 DoH 流量应用所有已启用的 DNS 过滤器和 DNS 用户规则，但不会将其重定向到本地 DNS 代理。 如果在浏览器设置中指定 DNS 服务器，该服务器将处理该浏览器的 DoH 流量。
+- **Filter on the fly**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic but doesn’t redirect it to the local DNS proxy. If a DNS server is specified in the browser’s settings, this server will handle the DoH traffic for this browser
 
-- **重定向到 DNS 代理**模式。 AdGuard 通过将流量重定向到本地 DNS 代理，将所有已启用的 DNS 过滤器和 DNS 用户规则应用于 DoH 流量。 AdGuard DNS 设置中指定的 DNS 服务器将处理所有 DoH 流量。
+- **Redirect to DNS proxy**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic by redirecting it to the local DNS proxy. The DNS server specified in the AdGuard’s DNS settings will handle all DoH traffic
 
 ### 过滤
 
@@ -113,7 +113,7 @@ DoH、DoT 和 DoQ 服务器的 Bootstrap DNS。 默认使用的是「*自动 DNS
 
 #### Encrypted Client Hello
 
-每一个加密的互联网连接都有一个未加密的部分， 就是发送的第一个数据包，包含用户要连接的服务器名称。 Encrypted ClientHello（ECH）的技术能够解决该问题，成功加密最后一位未加密的信息。 要使用该功能，请启用「*Encrypted ClientHello*」选项。 本功能使用本地 DNS 代理查找域名的 ECH 配置。 如果找到，将对 Client Hello 数据包进行加密。
+每一个加密的互联网连接都有一个未加密的部分， 就是发送的第一个数据包，包含用户要连接的服务器名称。 Encrypted ClientHello（ECH）的技术能够解决该问题，成功加密最后一位未加密的信息。 要使用该功能，请启用「*Encrypted ClientHello*」选项。 本功能使用本地 DNS 代理查找域名的 ECH 配置。 如果找到，将对 ClientHello 数据包进行加密。
 
 #### OCSP 检查
 
@@ -147,7 +147,7 @@ DoH、DoT 和 DoQ 服务器的 Bootstrap DNS。 默认使用的是「*自动 DNS
 
 如果启用此设置，AdGuard 将在「*最近活动*」中记录被阻止的 HTML 元素。
 
-#### 小脚本调试
+#### Scriplet 调试
 
 如果启用此设置，Scriptlets 中的调试将被激活，浏览器日志将记录 Scriptlets 规则的应用情况。
 

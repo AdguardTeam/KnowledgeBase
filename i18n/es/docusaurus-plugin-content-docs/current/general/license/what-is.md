@@ -1,5 +1,5 @@
 ---
-title: What is an AdGuard license?
+title: What is AdGuard license?
 sidebar_position: 1
 ---
 
@@ -12,7 +12,7 @@ En la [ página de compra](https://adguard.com/license.html), puede ver los sigu
 - **Suscripciones de 1 año**: estas licencias se renuevan automáticamente cada año o se pueden extender manualmente
     - Personal: hasta 3 dispositivos
     - Familiar: hasta 9 dispositivos
-- **Lifetime** — these licenses are perpetual
+- **Vitalicia**: estas licencias no tienen límite de tiempo
     - Personal: hasta 3 dispositivos
     - Familiar: hasta 9 dispositivos
 

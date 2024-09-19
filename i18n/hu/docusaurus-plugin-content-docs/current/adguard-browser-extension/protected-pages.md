@@ -1,6 +1,6 @@
 ---
 title: Browser-protected pages
-sidebar_position: 6
+sidebar_position: 5
 ---
 
 :::info

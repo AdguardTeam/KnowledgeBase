@@ -25,9 +25,9 @@ Para ir a la *Configuración de bajo nivel*, toca el icono del engranaje en la p
 
 Hay dos modos principales de túnel: *Dividido* y *Completo*. El *modo de túnel dividido* proporciona compatibilidad de AdGuard y las aplicaciones llamadas "VPN personal". En *Túnel completo*, ninguna otra VPN puede funcionar simultáneamente con AdGuard.
 
-Hay una característica específica del modo *Split-Tunnel*: en caso de un rendimiento deficiente del proxy DNS, por ejemplo, si la respuesta del servidor DNS de AdGuard no se devuelve a tiempo, iOS redirigirá el tráfico a través del servidor DNS especificado en la configuración de iOS. Por el momento, no se bloquea ningún anuncio y el tráfico DNS no está cifrado.
+Hay una característica específica del modo *Túnel dividido*: si el proxy DNS no funciona bien, por ejemplo, si la respuesta del servidor de AdGuard DNS no se devolvió a tiempo, iOS la "comercializará" y redirigirá el tráfico a través del servidor DNS especificado en la configuración de iOS. Por el momento, no se bloquea ningún anuncio y el tráfico DNS no está cifrado.
 
-En *Túnel completo*, solo se utiliza el servidor DNS especificado en la configuración de AdGuard. Si no responde, el Internet simplemente no funcionará. El modo *Full-Tunnel* activado puede afectar negativamente al rendimiento de algunos programas (por ejemplo, FaceTime) y causar problemas de actualización de aplicaciones.
+En *Túnel completo*, solo se utiliza el servidor DNS especificado en la configuración de AdGuard. Si no responde, el Internet simplemente no funcionará. Activar el modo *Túnel completo* puede causar un funcionamiento incorrecto de algunos programas (por ejemplo, Facetime) y provocar problemas con las actualizaciones de las aplicaciones.
 
 De forma predeterminada, AdGuard utiliza *Túnel dividido* como la opción más estable.
 

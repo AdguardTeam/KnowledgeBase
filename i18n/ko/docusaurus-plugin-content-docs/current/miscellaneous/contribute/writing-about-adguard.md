@@ -1,10 +1,10 @@
 ---
-title: AdGuard에 대한 글쓰기
+title: Writing about AdGuard
 sidebar_position: 3
 ---
 
-AdGuard가 마음에 들고 소셜 미디어나 개인 블로그, 웹사이트에서 관련된 생각을 널리 알리고 공유하고 싶다면 이 문서에 흥미가 있을지도 모릅니다.
+If you like AdGuard and want to spread the word and share your thoughts about it on social media or on a personal blog or website, this article may interest you.
 
-당신의 경험을 공유한 후, [pr@adguard.com](mailto:pr@adguard.com)으로 게시물 주소를 포함한 이메일을 보내주세요. 가장 잘 작성된 리뷰의 작성자들은 무료 AdGuard 라이선스 키를 받게 됩니다. 웹사이트의 방문자 수가 적든 많든 상관 없이, 우리는 모든 노력을 소중히 여깁니다. 리뷰는 300자에서 500자 내외로 작성해야 한다는 것을 기억해 주세요.
+After sharing your experience, email [pr@adguard.com](mailto:pr@adguard.com) and include a link to your post. The authors of the most well-written reviews will receive a free AdGuard license key. It doesn't matter if your website's audience is small or large; we value every effort. Please note that your review should be around 300 to 500 words.
 
-AdGuard에 대한 동영상을 제작하거나, 다른 색다른 무언가를 계획하고 있다면 오해의 소지가 없도록 우리에게 미리 알려주시기 바랍니다. AdGuard 로고, 배너 및 기타 시각적 요소를 사용할 계획일 경우에도 마찬가지입니다. 연락할 수 있는 이메일 주소는 동일합니다: [pr@adguard.com](mailto:pr@adguard.com).
+If you are planning to make a video about AdGuard or do anything else offbeat, please let us know in advance to avoid any possible misunderstandings. The same applies if your plan includes the use of the AdGuard logo, banners, or other visual elements. The contact email address remains the same: [pr@adguard.com](mailto:pr@adguard.com).

@@ -53,11 +53,11 @@ sidebar_position: 1
 
 :::note
 
-AdGuard si impegna a proteggere la tua privacy. Seguiamo rigorosamente la nostra [Informativa sulla privacy](https://adguard.com/privacy/browser-extension.html) e non raccogliamo alcuna informazione privata sugli utenti. Prima di inviare i registri al team di supporto, esamina il file poiché potrebbe contenere informazioni aggiuntive che non desideri condividere. Se contiene tali informazioni personali, ti consigliamo di eliminarle prima.
+AdGuard si impegna a proteggere la tua privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/browser-extension.html) and do not collect any private information about users. Prima di inviare i registri al team di supporto, esamina il file poiché potrebbe contenere informazioni aggiuntive che non desideri condividere. Se contiene tali informazioni personali, ti consigliamo di eliminarle prima.
 
 :::
 
-Ora che hai raccolto i registri, ti preghiamo di seguire questi passaggi per inviarli al nostro team di sviluppo:
+Now that you have collected the logs, please follow these steps to submit them to our development team:
 
-1. Segnala il bug su [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
-2. Invia il tuo archivio con i registri e l'orario di riproduzione a 'devteam@adguard.com' e aggiungi un collegamento al tuo ticket di GitHub. Puoi anche caricare l'archivio su Google Drive e aggiungere il collegamento a esso, invece di allegare il file.
+1. Report the bug on [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
+2. Send your archive with logs and playback time to `devteam@adguard.com` and add a link to your GitHub issue. You can also upload the archive to Google Drive and add the link to it instead of attaching the file.
