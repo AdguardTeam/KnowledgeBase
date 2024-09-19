@@ -17,7 +17,7 @@ Cet article parle de AdGuard pour iOS, un bloqueur de contenus multifonctionnel 
 1. Choisissez une vidéo et appuyez sur *Partager*.
 1. Appuyez sur *Plus*, puis sélectionnez *Bloquer les publicités YouTube (par AdGuard)*.
 
-La vidéo s'ouvre désormais dans le lecteur sans publicité d'AdGuard.
+AdGuard ouvrira son lecteur vidéo sans publicité.
 
 ## Comment bloquer la pub sur YouTube dans Safari
 
@@ -31,4 +31,4 @@ Assurez-vous d'avoir donné à AdGuard l'accès à tous les sites web. Vous pouv
 1. Choisissez une vidéo et appuyez sur *Partager*.
 1. Appuyez sur *Bloquer les publicités YouTube (par AdGuard)*.
 
-La vidéo s'ouvre désormais dans le lecteur sans publicité d'AdGuard.
+AdGuard ouvrira son lecteur vidéo sans publicité.

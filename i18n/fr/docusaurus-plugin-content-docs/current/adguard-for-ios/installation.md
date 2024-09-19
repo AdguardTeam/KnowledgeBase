@@ -13,15 +13,15 @@ Cet article parle de AdGuard pour iOS, un bloqueur de contenus multifonctionnel 
 
 ### iPhone
 
-Nécessite iOS 13 ou version ultérieure.
+Requires iOS 13 or later.
 
 ### iPad
 
-Nécessite iPadOS 13 ou version ultérieure.
+Requires iPadOS 13 or later.
 
 ### iPod touch
 
-Nécessite iOS 13 ou version ultérieure.
+Requires iOS 13 or later.
 
 ## Installation de AdGuard pour iOS
 
@@ -43,11 +43,11 @@ AdGuard Pro est une version payante d'AdGuard pour iOS, offrant un ensemble éla
 
 ![Sur l'écran principal de l'App Store, appuyez sur Rechercher *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/1.png)
 
-Tapez *adguard* dans la barre de recherche, puis appuyez sur la chaîne *AdGuard Pro — adblock* qui s'affichera parmi les résultats de la recherche.
+Tapez *adguard* dans la barre de recherche, puis appuyez sur la chaîne *adGuard pro - adblock* qui s'affichera parmi les résultats de la recherche.
 
 ![Tapez "AdGuard" dans la barre de recherche *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
-Sur la page ouverte de l'App Store, appuyez sur le bouton avec le coût de la licence sous la chaîne *AdGuard Pro — adblock*, puis appuyez sur *ACHETER*. Vous pouvez être invité à saisir votre identifiant Apple et votre mot de passe. Saisissez-le et attendez que l'installation soit terminée.
+Sur la page ouverte de l'App Store, appuyez sur le bouton avec le coût de la licence sous la chaîne *AdGuard Pro - adblock*, puis appuyez sur *ACHETER*. Vous pouvez être invité à saisir votre identifiant Apple et votre mot de passe. Saisissez-le et attendez que l'installation soit terminée.
 
 ![Appuyez sur OBTENIR sous l'application AdGuard *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/3.png)
 

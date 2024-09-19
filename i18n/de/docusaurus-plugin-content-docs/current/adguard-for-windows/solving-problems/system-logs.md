@@ -1,5 +1,5 @@
 ---
-title: How to collect Windows system logs
+title: So erfassen Sie Windows-Systemprotokolle
 sidebar_position: 5
 ---
 
@@ -15,13 +15,13 @@ Daten und/oder Dateien, die in Systemprotokollen enthalten sind, werden gemäß 
 
 :::
 
-To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need Windows system log files. Windows event logs contain records about all errors that occur with the installed software, including AdGuard. Nachfolgend finden Sie eine kurze Anleitung, wie Sie die Protokolldateien abrufen und bei Bedarf an unseren Kundenservice senden können.
+To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need Windows system log files. Windows event logs contain records about all errors that occurr with the installed software, including AdGuard. Nachfolgend finden Sie eine kurze Anleitung, wie Sie die Protokolldateien abrufen und bei Bedarf an unseren Kundenservice senden können.
 
 1. Press *Win + R*
 
 1. Geben Sie in dem sich öffnenden Fenster `eventvwr` ein und klicken Sie auf *OK*:
 
-    ![Ausführen-Fenster *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
+    ![Run window *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
 
 1. Das Fenster der Ereignisanzeige erscheint wie in der Abbildung gezeigt.
 
@@ -45,6 +45,6 @@ Bitte senden Sie die beiden Dateien, die Sie soeben gespeichert haben, an **supp
 
 :::note
 
-AdGuard ist dem Schutz Ihrer Privatsphäre verpflichtet. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Bevor Sie Ihre Protokolle an das Support-Team senden, überprüfen Sie bitte die Datei, da sie zusätzliche Informationen enthalten kann, die Sie vielleicht nicht freigeben möchten. Wenn sie solche persönlichen Informationen enthält, empfehlen wir Ihnen, sie zuerst zu löschen.
+AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
 
 :::

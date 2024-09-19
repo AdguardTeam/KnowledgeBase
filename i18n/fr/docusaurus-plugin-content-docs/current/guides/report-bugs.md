@@ -17,7 +17,7 @@ Vérifier si le bogue n'a pas déjà été signalé. Nous vous conseillons de pr
 
 ### Comment décrire un problème
 
-Essayez de fournir autant de détails que possible – cela nous permettra de reproduire plus facilement le bug et de trouver comment le corriger. Here’s what we expect a bug report to include:
+Essayez de fournir autant de détails que possible – cela nous permettra de reproduire plus facilement le bug et de trouver comment le corriger. Voici ce que nous nous attendons à voir dans un rapport de bug :
 
 - La version de votre application
 - La version de votre système d’exploitation
@@ -28,7 +28,7 @@ Essayez de fournir autant de détails que possible – cela nous permettra de re
 
 ### Comment collecter les journaux
 
-Read about collecting logs in dedicated articles for each platform.
+Découvrez comment collecter des journaux dans des articles dédiés à chaque plateforme.
 
 ## Comment voter pour les rapports de bogues ou les demandes de fonctionnalités
 

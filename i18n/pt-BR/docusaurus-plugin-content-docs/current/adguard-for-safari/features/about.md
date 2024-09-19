@@ -9,6 +9,6 @@ Na aba Sobre, é possível ver informações sobre a versão atual do seu produt
 
 :::note Lembrete
 
-O AdGuard para Safari pode ser baixado gratuitamente [na App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). Uma instrução de configuração detalhada está disponível na [Base de conhecimento](/adguard-for-safari/installation/).
+O AdGuard para Safari pode ser baixado gratuitamente [na App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). Uma instrução de configuração detalhada está disponível na [base de conhecimento](/adguard-for-safari/installation/).
 
 :::

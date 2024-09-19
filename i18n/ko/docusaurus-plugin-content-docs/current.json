@@ -28,7 +28,7 @@
     "description": "The label for category AdGuard for Windows in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Mac": {
-    "message": "Mac용 AdGuard",
+    "message": "AdGuard for Mac",
     "description": "The label for category AdGuard for Mac in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Solving problems": {

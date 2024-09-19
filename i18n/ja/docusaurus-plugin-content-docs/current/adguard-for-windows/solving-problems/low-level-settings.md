@@ -1,236 +1,236 @@
 ---
-title: 詳細設定（旧「ローレベル設定」）ガイド
+title: Advanced (low-level) Settings guide
 sidebar_position: 7
 ---
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際にどのように動作するかを確認するには、[AdGuard アプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
-（以前は旧名「ローレベル設定」として知られていた）詳細設定には、ほとんどの場合、一般ユーザーの知識を超え、日常的な使用では必要ないオプションが含まれています。 AdGuard for Windows は、これらの機能を変更することなく動作するように設計されていますが、一部のコーナーケースや一般的でない問題を解決する際に役立つ追加機能が詳細設定にあります。
+Previously known as low-level settings, Advanced Settings mostly contain options that go beyond the average user competence and aren't applied in everyday use. AdGuard for Windows is designed to work without ever having to change any of them, but they will provide additional features in some corner cases or when solving an uncommon problem.
 
 :::caution
 
-*詳細設定*を考えずに変更することは AdGuard のパフォーマンスの悪化やインターネット接続の切断、もしくはあなたのセキュリティやプライバシーを侵害してしまう可能性があります。 このセクションで何かを変更するのは、あなたが何をしているのか自信がある場合、またはサポートチームから依頼された場合のみとすることをお勧めします。
+Mindlessly changing *Advanced Settings* can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only make changes to these settings if you are sure of what you are doing or if our support team has asked you to do so.
 
 :::
 
-## 詳細設定にアクセスする方法
+## How to reach Advanced Settings
 
-*詳細設定*に移動するには、メインウィンドウで⚙️*「設定」→「一般設定」を*クリックし、「*詳細設定*」までスクロールダウンします。 または、トレイメニューで*「詳細設定」→「詳細設定...」* を選択します。
+To go to *Advanced settings*, in the main windows click *Settings → General Settings* and scroll down to *Advanced Settings*. Alternatively, select *Advanced → Advanced settings...* in the tray menu.
 
-## 詳細設定
+## Advanced Settings
 
-詳細設定を開くと、以下のオプションが表示されます:
+Once you open Advanced Settings, you will be presented with the following options:
 
-### TCP Fast Openをブロックする
+### Block TCP Fast Open
 
-有効にすると、AdGuardはEdgeブラウザのTCP Fast Openをブロックします。 この設定の変更を適用するには、ブラウザを再起動する必要があります。
+If enabled, AdGuard will block TCP Fast Open in the Edge browser. To apply settings, you need to restart the browser.
 
-### Encrypted Client Hello を使用する
+### Use Encrypted ClientHello
 
-暗号化されたインターネット接続には、暗号化されていない部分があります。 その部分とは、接続先のサーバー名を含む最初の通信パケットです。 Encrypted Client Hello 技術は、この問題を解決し、この暗号化されていない部分を暗号化してくれます。 この機能を利用するには、「*Encrypted Client Hello を使用する*」オプションを有効にします。 このオプションは、ローカル DNS プロキシを使用して、ドメインの ECH 構成を検索します。 見つかった場合、ClientHello パケットは暗号化されます。
+Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Use Encrypted ClientHello* option. It uses a local DNS proxy to look for the ECH configuration for the domain. If it is found, ClientHello packet will be encrypted.
 
-### Webサイトの証明書の透明性を確認する
+### Check websites' certificate transparency
 
-Chrome Certificate Transparency Policy（証明書透過性ポリシー）に基づき、ドメインのすべての証明書の信頼性を検証します。 証明書が Chrome Certificate Transparency Policy（Chrome 証明書の透明性に関するポリシー）に準拠していない場合、AdGuard は Web サイトをフィルタリングしません。 そして Chrome はそれをブロックします。
+Chrome Certificate Transparency Policy（証明書透過性ポリシー）に基づき、ドメインのすべての証明書の信頼性を検証します。 If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. Chrome, in turn, will block it.
 
-### SSL/TLS証明書の失効チェックを有効にする
+### Enable SSL/TLS certificate revocation checks
 
-このオプションを有効にすると、非同期OCSPチェックが実行され、ウェブサイトのSSL/TLS証明書が失効しているかどうかがチェックされます。
+Once enabled, this option runs asynchronous OCSP checks to check whether the website’s SSL/TLS certificate is revoked.
 
-OCSP チェックが最小タイムアウト内に完了すると、AdGuard は結果を直ちに適用します（証明書が取り消されている場合は接続をブロックし、証明書が有効な場合は接続を確立します）。
+If the OCSP check completes within the minimum timeout, AdGuard will immediately apply the result: block the connection if the certificate is revoked or establish a connection if the certificate is valid.
 
-検証に時間がかかりすぎる場合、AdGuardは接続を確立し、バックグラウンドでチェックを続けます。 証明書が失効している場合は、そのドメインへの現在の接続および今後の接続はブロックされるようになります。
+If the verification takes too long, AdGuard will establish a connection and continue checking in the background. If the certificate is revoked, current and future connections to the domain will be blocked.
 
-### 設定で「AdGuard VPN」項目を表示する
+### Show AdGuard VPN in Settings
 
-このオプションを有効にすると、[設定] に [AdGuard VPN] タブが表示され、そのアプリやホームページを簡単に開くことができます。
+Enabling this option allows you to display the AdGuard VPN tab in Settings for easy opening of the app and the product's website.
 
-### フルパスを入力してアプリをフィルタリングから除外する
+### Exclude app from filtering by entering the full path
 
-AdGuardが特定のアプリをフィルタリングしないようにしたい場合は、そのアプリへのフルパスを指定すると、そのアプリはフィルタリングから除外されます。 異なるパスはセミコロンで区切ります。
+If you want AdGuard not to filter any specific application, specify the full path to them and the apps will be excluded from filtering. Separate different paths by semicolons.
 
-### AdGuardのポップアップ通知を有効にする
+### Enable AdGuard pop-up notifications
 
-この機能を有効にすると、AdGuardのポップアップ通知が表示されるようになります。 あまり頻繁には表示されず、重要な情報のみが含まれます。 トレイ メニューを使用して、最後のポップアップ通知を呼び出すこともできます。
+Enable this feature to see AdGuard pop-up notifications. They do not appear too often and contain only important information. You can also use the tray menu to recall the last pop-up notification.
 
-### フィルタ・サブスクリプションURLを自動的に傍受する
+### Automatically intercept filter subscription URLs
 
-AdGuard に購読 URL (例: `abp:subscribe` など) を自動的に傍受させ、カスタムフィルタインストールウィンドウを開くようにさせたい場合は、この機能を有効にします。
+Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
 
-### HTTP/3 をフィルタリングする
+### Filter HTTP/3
 
-このオプションを有効にすると、AdGuard は、他のリクエストタイプに加えて、HTTP/3 で送信されたリクエストもフィルタリングします。
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
-### リダイレクト・ドライバ・モードを使用する
+### Use redirect driver mode
 
-このオプションを有効にすると、AdGuard はすべてのトラフィックを傍受し、さらにフィルタリングするためにローカルプロキシサーバーにリダイレクトします。
+If this option is enabled, AdGuard intercepts all the traffic and redirects it to the local proxy server for further filtering.
 
-それ以外の場合、AdGuard はリダイレクトせずにすべてのトラフィックを即座にフィルタリングします。 この場合、システムは AdGuard をインターネットに接続する唯一のアプリと見なします (他のアプリケーションは AdGuard を経由してルーティングされます)。 欠点として、システムのファイアウォールの効果が低下することがあります。 利点は、このアプローチの方が少し速く動作することです。
+Otherwise, AdGuard will filter all the traffic on the fly, without redirection. In this case, the system will consider AdGuard to be the sole application that connects to the Internet (other applications are routed through it). The downside is that it will make the system Firewall less effective. The upside is that this approach works a little bit faster.
 
-### システム起動時にメインウィンドウを開く
+### Open main window at system start-up
 
-このオプションを有効にすると、システムの起動後に AdGuard のメインウィンドウが開きます。 実際のフィルタリングサービスが起動するかどうかには影響しないことにご注意ください。その設定は*「設定」→「一般設定*」にあります。
+Enable this option to make the main AdGuard window open after the system is loaded. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*
 
-### システム起動時にフィルタリングを有効にする
+### Enable filtering at system start-up
 
-v7.12以降、デフォルトでは、[システム起動時にAdGuardを起動]オプションが無効になっている場合、AdGuardのサービスはOS起動後にトラフィックをフィルタリングしません。 つまり、AdGuard のサービスは「アイドル」モードで開始されます。 このオプションを有効にすると、アプリが起動されていない場合でも AdGuard がトラフィックをフィルタリングします。
+Starting from v7.12, by default, AdGuard's service does not filter traffic after OS startup if the option Launch AdGuard at system start-up is disabled. In other words, the AdGuard's service is started in “idle” mode. Enable this option to make AdGuard filter traffic even if the app is not launched.
 
 :::note
 
-v7.12 以前では、AdGuard サービスはデフォルトでフィルタリングモードで開始されていました ( *システム起動時に AdGuard を起動* が無効になっている場合でも)。 以前の動作に満足していた場合は、このオプションを有効にしてください。
+Before v7.12, the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.
 
 :::
 
-### localhostをフィルタリングする
+### Filter localhost
 
-AdGuard がループバック接続をフィルタリングするようにしたい場合は、チェックボックスをオンにします。 AdGuard VPN がインストールされている場合はこのオプションが常にオンになります。インストールされいない場合は機能しないからです。
+If you want AdGuard to filter loopback connections, check the box. This option will always be on if you have AdGuard VPN installed, because otherwise it won't be able to work.
 
-### 指定のIP範囲をフィルタリングから除外する
+### Exclude specified IP ranges from filtering
 
-AdGuardに特定のサブネットをフィルタリングさせたくない場合は、この機能を有効にし、下の「**フィルタリングから除外するIP範囲**」セクションで、CIDR表記（例：98.51.100.14/24）でIP範囲を指定します。
+If you don't want AdGuard to filter particular subnets, enable this feature and specify the IP ranges in the CIDR notation (e.g. 98.51.100.14/24) in the **IP ranges excluded from filtering** section below.
 
-### HAR writing を有効にする
+### Enable HAR writing
 
-このオプションは、**デバッグ目的でのみ**有効にしてください。 チェックボックスをオンにすると、AdGuard は、フィルタされたすべての HTTP リクエストに関する情報を含む HAR 1.2 形式のファイルを作成します。 このファイルは Fiddler アプリで分析できます。 ※このオプションがオンの時は、ウェブブラウジングの速度が著しく低下する可能性がありますのでご注意ください。
+This option should be enabled **only for debugging purposes**. If you tick the checkmark, AdGuard will create a file that contains information about all filtered HTTP requests in HAR 1.2 format. This file can be analyzed with the Fiddler app. Note that it may slow down your web browsing significantly.
 
-### プレーンHTTPリクエストに余分なスペースを追加する
+### Add an extra space to the plain HTTP request
 
-HTTPメソッドとURLの間に余分なスペースを追加し、「Host: 」欄の後のスペースを削除します。そうすることでdeep packet inspection（DPI）を回避します。 例えば、以下のリクエスト
-
-`GET /foo/bar/ HTTP/1.1
-Host: example.org`
-
-は、以下に変換されます:
+Adds extra space between the HTTP method and the URL and removes space after the "Host:" field to avoid deep packet inspection. For instance, the request
 
 `GET /foo/bar/ HTTP/1.1
 Host: example.org`
 
-このオプションは、「*DPIから保護する*」というステルスモード機能が有効になっている場合にのみ適用されます。
+will be converted to
 
-### 最初のTLSパケットのフラグメントサイズを調整する
+`GET /foo/bar/ HTTP/1.1
+Host: example.org`
 
-このオプションは、TCPパケットの断片化のサイズを指定し、ディープ・パケット・インスペクション（DPI）を回避するのに役立ちます。 このオプションは、保護された（HTTPS）トラフィックにのみ影響します。
+This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
-このオプションを有効にすると、AdGuardは最初のTLSパケット(ClientHelloパケット)を2つの部分に分割います。最初の部分は指定された長さで、2番目の部分は最初のTLSパケット全体の長さまでの残りの内容です。
+### Adjust size of fragmentation of initial TLS packet
 
-有効な値は 1～1500 です。 無効なサイズを指定すると、システムによって選択された値が使用されます。 このオプションは、「*DPIから保護する*」というステルスモード機能が有効になっている場合にのみ適用されます。
+Specifies the size of the TCP packet fragmentation, avoiding deep packet inspection. This option only affects secured (HTTPS) traffic.
 
-### Plain HTTP request fragment size（プレーンHTTPリクエストフラグメントサイズ）
+If this option is enabled, AdGuard splits the initial TLS packet (the ClientHello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-HTTPリクエストフラグメンテーションのサイズを調整します。 このオプションは、プレーンHTTPトラフィックにのみ影響します。 このオプションを有効にすると、AdGuardは最初のパケットを2つの部分に分割します。最初の部分は指定された長さで、2番目の部分は最初のパケット全体の長さまでの残りの内容です。
+Valid values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
-有効な値は 1～1500 です。 無効なサイズを指定すると、システムによって選択された値が使用されます。 このオプションは、「*DPIから保護する*」というステルスモード機能が有効になっている場合にのみ適用されます。
+### Plain HTTP request fragment size
 
-### QUICを表示する
+HTTPリクエストフラグメンテーションのサイズを調整します。 This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-フィルタリングログにQUICプロトコルレコードの表示を許可します。 ブロックされたリクエストのみ対象。
+Valid values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
-### TCP keepalive を有効にする
+### Show QUIC
 
-コネクションがアクティブであることを確認するためとNATタイムアウトを更新するために、アイドル状態のコネクションに定期的にTCPパケットを送信します。 このオプションは、一部のISPが使用する厳格なネットワークアドレス変換（NAT）設定をバイパスするのに便利です。
+Allows displaying the QUIC protocol records in the filtering log. For blocked requests only.
+
+### Enable TCP keepalive
+
+Periodically sends TCP packets over idle connection to ensure it is alive and to renew NAT timeouts. This option can be useful to bypass the strict network address translation (NAT) settings that some ISPs use.
 
 ### TCP keepalive interval
 
-ここで、キープアライブ（keepalive）プローブを送信する前のアイドル時間を秒単位で指定できます。 「0」を指定すると、システムによって選択された値が使用されます。
+Here you can specify an idle time period, in seconds, before sending a keepalive probe. 「0」を指定すると、システムによって選択された値が使用されます。
 
 :::note
 
-※この設定は、「*TCP keepalive を有効にする*」オプションが有効になっている場合にのみ機能すします。
+This setting only works when the *Enable TCP keepalive* option is enabled.
 
 :::
 
 ### TCP keepalive timeout
 
-応答がないpeerに再度keepaliveプローブを送信するまでの時間 (秒単位)を指定できます。 「0」を指定すると、システムによって選択された値が使用されます。
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. 「0」を指定すると、システムによって選択された値が使用されます。
 
 :::note
 
-※この設定は、「*TCP keepalive を有効にする*」オプションが有効になっている場合にのみ機能すします。
+This setting only works when the *Enable TCP keepalive* option is enabled.
 
 :::
 
-### Javaをブロックする
+### Block Java
 
-一部のウェブサイトやウェブサービスは、現在もJavaプラグインをサポートしています。 Javaプラグインの基礎となるAPIには、深刻なセキュリティ上の脆弱性があります。 セキュリティのため、このようなプラグインを無効にすることができます。 ※「*Javaをブロックする*」オプションを使っても、JavaScriptは有効のままです。
+Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
 
-### DNSサーバーのタイムアウト期間
+### DNS server timeout period
 
-ここで、AdGuardがフォールバックに頼る前に、選択したDNSサーバーからの応答を待つ時間をミリ秒単位で指定できます。 このフィールドに何も入力しないか、無効な値を入力すると、5000という値が使用されます。
+Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
 
-### DNS-over-HTTPS に HTTP/3 を使用する
+### Use HTTP/3 for DNS-over-HTTPS
 
-選択したアップストリームがこのプロトコルをサポートしている場合、接続を高速化するためにDNS-over-HTTPSアップストリームでHTTP/3を有効にします。 つまり、このオプションを有効にしても、すべてのDNSリクエストがHTTP/3経由で送信されることが保証されるわけではありません。
+Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection if the selected upstream supports this protocol. This means that enabling this option does not guarantee that all DNS requests will be sent via HTTP/3.
 
-### フォールバックDNSアップストリームを使用する
+### Use fallback DNS upstreams
 
-指定のアップストリームへのDNSリクエストがすべて失敗した場合、通常のクエリはフォールバックアップストリームにリダイレクトされます。
+Normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
 
-### DNSアップストリームを並列に問い合わせる
+### Query DNS upstreams in parallel
 
-すべてのアップストリームに並行して問い合わせが行われます。最初の応答が返されます。 DNSクエリは並行して行われるため、この機能を有効にするとインターネット速度が向上します。
+All upstreams will be queried in parallel and the first response is returned. Since DNS queries are made in parallel, enabling this feature increases the Internet speed.
 
-### 失敗したDNSクエリにいつも応答する
+### Always respond to failed DNS queries
 
-転送(forward)された各アップストリームおよびフォールバックドメインで アドレス解決が失敗した場合、DNSリクエストに対する応答は`SERVFAIL`となります。
+If address resolving failed on each of the forwarded upstreams, as well as on the fallback domains, then the response to the DNS request will be `SERVFAIL`.
 
-### セキュアなDNSリクエストのフィルタリングを有効にする
+### Enable filtering of secure DNS requests
 
-AdGuardは、プレーンDNSリクエストに加え、セキュアDNSリクエストもローカルDNSプロキシにリダイレクトします。
+AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
 
-### hostsルール用ブロックモード
+### Blocking mode for hosts rules
 
-ここでは、[hosts ルールの構文に基づいて](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax)、AdGuard が DNS ルールでブロックされたドメインに応答する方法を選択できます。
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
-- 「拒否されました」（Refused）エラーで返答する
-- 「NxDomain」エラーで返答する
-- カスタムIPアドレスで返答する
+- Reply with “Refused” error
+- Reply with “NxDomain” error
+- Reply with a custom IP address
 
-### adblock-styleルール用ブロックモード
+### Blocking mode for adblock-style rules
 
-ここでは、[adblock-styleの構文に基づいて](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax)、AdGuard が DNS ルールでブロックされたドメインに応答する方法を選択できます。
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [adblock-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
-- 「拒否されました」（Refused）エラーで返答する
-- 「NxDomain」エラーで返答する
-- カスタムIPアドレスで返答する
+- Reply with “Refused” error
+- Reply with “NxDomain” error
+- Reply with a custom IP address
 
-### カスタムIPv4アドレス
+### Custom IPv4 address
 
-「adblock-styleルール用ブロックモード」や「hostsルール用ブロックモード」で「カスタムIPアドレス」オプションが選択されている場合、ブロックされた「A」リクエストに対して以下のIPアドレスが返されます。 何も指定しない場合、AdGuardはデフォルトのRefusedエラーで返信します。
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked A requests. If none are specified, AdGuard will reply with the default Refused error.
 
-### カスタムIPv6アドレス
+### Custom IPv6 address
 
-「adblock-styleルール用ブロックモード」や「hostsルール用ブロックモード」で「カスタムIPアドレス」オプションが選択されている場合、ブロックされた「AAAA」リクエストに対して以下のIPアドレスが返されます。 何も指定しない場合、AdGuardはデフォルトの「Refused」エラーで返信します。
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
-### フォールバックサーバー
+### Fallback servers
 
-ここでは、メインサーバーが次のセクションで指定されたタイムアウト期間内に応答しなかった場合に、DNSリクエストを再ルーティングする代替DNSサーバーを指定することができます。 選択できるオプションは 3 つあります:
+Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
 
-- フォールバックサーバーを使用しない
-- システムデフォルトサーバーを使用する
-- カスタムサーバーを使用する
+- Don’t use fallback servers;
+- Use system default servers;
+- Use custom servers.
 
-### ECHをブロックする
+### Block ECH
 
-この設定を有効にすると、AdGuardは応答からECH（Encrypted Client Hello）パラメータを削除します。
+If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
 
-### カスタムフォールバックサーバーのリスト
+### List of custom fallback servers
 
-AdGuardにカスタムフォールバックサーバーを使用させたい場合は、このセクションに1行に1つずつサーバーを列挙してください。
+If you want AdGuard to use custom fallback servers, list them in this section, one per line.
 
-### カスタムbootstrapアドレスのリスト
+### List of custom bootstrap addresses
 
-bootstrap（ブートストラップ）とは、「*DNS通信を保護*」で選択しているセキュアDNSサーバーのIPアドレスを取得するために使用される中間DNSサーバーのことです。 このような「中間点」は、サーバー アドレスを文字で示すプロトコル (DNS-over-TLS など) を使用する場合に必要です。 この場合、ブートストラップは翻訳機として機能し、文字をシステムが理解できる数字に変換してくれます。
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
-デフォルトでは、システムDNSリゾルバが使用され、最初のブートストラップ要求はポート53を通して行われます。 これ以外が必要な場合、ここで、暗号化されたDNSサーバーのアドレスを決定するために使用されるDNSサーバーのIPアドレスを（上から下に）入力することができます。 指定されたIPアドレスは、リストされた順番で適用されます。 無効なアドレスを指定した場合、またはアドレスをまったく指定しなかった場合は、システムIPが使用されます。
+By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
 
-### DNS除外リスト
+### DNS exclusions
 
-ここリストされているドメインへのすべてのDNSリクエストは、アプリの設定で指定されたDNSサーバーではなく、システムデフォルトDNSサーバーにリダイレクトされます。 また、このようなリクエストにDNSブロックルールは適用されません。
+All DNS requests to domains listed here will be redirected to the system default DNS server instead of the DNS server specified in the app’s settings. Also, DNS blocking rules will not be applied to such requests.
 
-### 指定したWi-Fiネットワーク名（SSID）をDNSフィルタリングの対象から外す
+### Exclude specified Wi-Fi networks names (SSIDs) from the DNS filtering
 
-ここで入力されたWi-Fiネットワークに対し「DNS通信を保護」はオフになります。 Wi-Fiネットワーク名（SSID）を1行に1つずつ指定します。 これは、特定のWi-Fiネットワークがすでに AdGuard Home または他のDNS保護システムによって保護されている場合に便利です。 このような場合に、DNSリクエストの重複フィルタリングを避けることができます。
+DNS protection will not include Wi-Fi networks listed in this section. Specify Wi-Fi networks names (SSIDs) one per line. This can be useful if a particular Wi-Fi network is already protected by AdGuard Home or another DNS protection system. In this case, it is superfluous to filter DNS requests again.

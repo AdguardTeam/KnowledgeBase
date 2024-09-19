@@ -11,7 +11,7 @@ sidebar_position: 2
 
 ## 系统要求
 
-**操作系统版本**： macOS 10.15（64 位）或更高版本
+**Operating system version:** macOS 10.15 (64 bit) or higher
 
 **RAM**： 至少 2 GB
 
@@ -21,11 +21,11 @@ sidebar_position: 2
 
 ## 安装过程
 
-要将 AdGuard Mac 版安装到电脑上，请打开浏览器，在地址栏键入 *adguard.com* 后，在[打开的网页](https://adguard.com/download.html?auto=1)上点击「**下载**」按钮。
+To install AdGuard for Mac on your computer, launch your browser, type *adguard.com* in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
 
 ![下载应用 *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
-请等待 *AdguardInstaller.dmg* 下载完成后，在 Dock 栏上已安装的文件列表里双击它的图标。
+Wait for *AdguardInstaller.dmg* to download and double-click its icon in the list of downloaded files on the Dock panel.
 
 ![双击打开文件](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
@@ -45,7 +45,7 @@ AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序�
 
 ![等到下载必要的文件](https://cdn.adtidy.org/content/kb/ad_blocker/mac/6.jpg)
 
-以使用应用程序，需要输入 macOS 账号的用户名和密码。 在弹出的对话框上输入用户名和密码后，点击**好**。
+以使用应用程序，需要输入 macOS 账号的用户名和密码。 Enter the password when prompted in the dialogue box and press **OK**.
 
 ![输入密码](https://cdn.adtidy.org/content/kb/ad_blocker/mac/7.jpg)
 
@@ -80,7 +80,7 @@ AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序�
     - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard-pac.daemon.log（文件）。
     - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log（文件）
 
-    为了执行上述步骤，请您打开 Terminal 终端，然后输入并执行以下的指令：
+    To do so, open the Terminal app, then enter and execute the following commands:
 
     ```bash
     sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
@@ -99,7 +99,7 @@ AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序�
 
     ![开启活动监视器](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. 退出在用户态下运行的进程（不是在 root 权限运行的）。 为了退出，请点击进程，然后在左上角点击 X。 在对话窗确认要退出。
+1. 退出在用户态下运行的进程（不是在 root 权限运行的）。 为了退出，请点击进程，然后在左上角点击 X。 Confirm the action in the dialogue window.
 
     ![确认](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 

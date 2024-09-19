@@ -13,15 +13,15 @@ Questo articolo tratta AdGuard per iOS, un blocco annunci multifunzionale che pr
 
 ### iPhone
 
-Richiede iOS 13 o successive.
+Requires iOS 13 or later.
 
 ### iPad
 
-Richiede iPadOS 13 o successive.
+Requires iPadOS 13 or later.
 
 ### iPod touch
 
-Richiede iOS 13 o successive.
+Requires iOS 13 or later.
 
 ## Installazione di AdGuard per iOS
 
@@ -29,7 +29,7 @@ AdGuard per iOS è un'app presente sull'App Store. Per installarla sul tuo dispo
 
 ![Sulla schermata principale dell'App Store, tocca Cerca *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/1.png)
 
-Digita *adguard* nella barra di ricerca e tocca sulla stringa *AdGuard* che apparirà tra i risultati di ricerca.
+Digita *adguard* nella barra di ricerca e tocca sulla stringa *adguard* che apparirà tra i risultati di ricerca.
 
 ![Digita "AdGuard" nella barra di ricerca *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
@@ -43,11 +43,11 @@ AdGuard Pro è una versione a pagamento di AdGuard per iOS, che offre una serie 
 
 ![Sulla schermata principale dell'App Store, tocca Cerca *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/1.png)
 
-Digita *adguard* nella barra di ricerca e tocca sulla stringa *AdGuard pro — adblock* che apparirà tra i risultati di ricerca.
+Digita *adguard* nella barra di ricerca e tocca sulla stringa *adguard pro - adblock* che apparirà tra i risultati di ricerca.
 
 ![Digita "AdGuard" nella barra di ricerca *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
-Sulla pagina aperta dell'App Store tocca il pulsante con il costo della licenza, sotto la stringa *AdGuard Pro — adblock*, quindi su *ACQUISTA*. Ti potrebbe essere richiesto di inserire accesso e password del tuo Apple ID. Digitali e attendi il completamento dell'installazione.
+Sulla pagina aperta dell'App Store tocca il pulsante con il costo della licenza, sotto la stringa *AdGuard Pro - blocco annunci*, quindi su *ACQUISTA*. Ti potrebbe essere richiesto di inserire accesso e password del tuo Apple ID. Digitali e attendi il completamento dell'installazione.
 
 ![Tocca OTTIENI sotto all'app di AdGuard *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/3.png)
 
