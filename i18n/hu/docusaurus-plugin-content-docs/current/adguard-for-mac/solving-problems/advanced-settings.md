@@ -71,7 +71,7 @@ Az az idő másodpercben, amíg újabb keepalive próbát küld egy nem reagál�
 
 #### `network.https.ech.enabled`
 
-Helyi DNS-proxyt használ a konfigurációk keresésére az ECH konfigurációs listákban. Ha megtalálja, titkosítja a ClientHellost.
+Helyi DNS-proxyt használ a konfigurációk keresésére az ECH konfigurációs listákban. If found, encrypts Client Hellos.
 
 #### `network.https.enforce.certificate.transparency`
 

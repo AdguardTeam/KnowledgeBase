@@ -28,7 +28,7 @@ From the context menu, you can also access the app's stats.
 
 ### “Problem-free” and “problematic” apps
 
-Most apps work properly when filtering is enabled. For such apps, their traffic is routed through AdGuard and filtered by default.
+Most apps work correctly when filtered. For such apps, their traffic is routed through AdGuard and filtered by default.
 
 Some apps, such as Download Manager, radio, system apps with UID 1000 and 1001 (for example, Google Play services), are “problematic” and may work incorrectly when routed through AdGuard. That's why you may see the following warning when trying to route or filter all apps:
 

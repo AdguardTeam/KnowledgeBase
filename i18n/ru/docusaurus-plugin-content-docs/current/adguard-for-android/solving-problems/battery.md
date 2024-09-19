@@ -5,11 +5,11 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-На устройствах Android с ОС 6 и более ранних встроенная статистика часто связывала высокое использование трафика и/или батареи с AdGuard. Это происходило потому, что AdGuard учитывал весь отфильтрованный трафик из разных приложений. В результате доля AdGuard в общем объёме данных и расходе батареи была завышена, а доля других приложений — занижена.
+Due to built-in statistics processes, high data and/or battery consumption was often attributed to AdGuard by Android 6 and earlier. Это происходило потому, что AdGuard учитывал весь отфильтрованный трафик из разных приложений. В результате доля AdGuard в общем объёме данных и расходе батареи была завышена, а доля других приложений — занижена.
 
 Однако в Android 7 это было исправлено. Теперь информация во встроенной статистике использования данных Android очень близка к реальности, хотя в данных об использовании батареи есть небольшие расхождения.
 
@@ -37,13 +37,13 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
     *radio.active=* 100–300мА дополнительное потребление в мАч, вызванное передачей данных по мобильной сети.
 
-    *cpu.active=* 100-200mA additional consumption in mAh caused by CPU load.
+    *cpu.active=* 100–200мА дополнительное потребление в мАч, вызванное н-загрузкой процессора.
 
-1. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating power consumption let's get rid of 'Mobile/Wi-Fi packets' and stick to 'CPU'.
+1. AdGuard самостоятельно почти не потребляет трафика, так что для оценки энергопотребления отбросим значения Mobile/Wi-Fi packets и остановимся на подсчёте CPU.
 
     Формула для вычисления потребления:
 
-    > “CPU TIME (ms)” X “cpu.active” / (60 *60* 1000) = “POWER USE mAh”
+    > “CPU TIME (мс)" x "cpu.active" / (60 *60* 1000) = "POWER USE мАч”
 
     Подставим в эту формулу реальные значения.
 

@@ -1,5 +1,5 @@
 ---
-title: Cómo recopilar registros de instalación de AdGuard
+title: How to collect AdGuard installation logs
 sidebar_position: 4
 ---
 
@@ -17,7 +17,7 @@ Los datos y/o archivos proporcionados en los registros del sistema se procesan d
 
 Si ocurre algún problema durante la instalación de AdGuard, el equipo de soporte puede pedirte que recopiles y envíes registros de instalación de AdGuard. En este caso, es necesario:
 
-1. Selecciona el comando *Ejecutar* en el menú Inicio o presiona *Win + R* en el teclado.
+1. Select the *Run* command in Start menu or press *Win + R* on the keyboard.
 
 1. Escribe *%tmp%* y haz clic en *OK*.
 

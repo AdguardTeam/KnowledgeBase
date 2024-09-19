@@ -14,7 +14,7 @@ sidebar_position: 4
 
 Например, у английских слов две словоформы: в единственном числе — *one star*, «одна звезда», во множественном — *two stars*, «две звезды». Неважно, скажете ли вы пять, двадцать шесть или даже пятьсот тридцать две звезды — окончание «s» останется прежним. Но некоторые языки могут содержать только одну плюральную форму или наоборот — больше, чем две.
 
-В отличие от английского, в польском языке есть три формы множественного числа существительных. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2–4, excluding 12–14, and the third form — for words with other numbers in front of them.
+В отличие от английского, в польском языке есть три формы множественного числа существительных. Одна из них используется, когда говорят о чём-либо в единственном числе, другая — во множественном числе, но с числами, оканчивающимися на 2–4, не включая 12–14, а третья форма — для слов, перед которыми стоят все остальные числа.
 
 Ниже показано разделение на плюральные формы в зависимости от числительных в польском языке. Группы числительных определяют форму слова, которое к ним относится.
 
@@ -24,13 +24,13 @@ sidebar_position: 4
 
       Английская версия:                                                 Польские эквиваленты:
     
-      1. form — It takes one hour.                                     1. form — Zajmuje to godzinę.
-      2. form — It takes two hours.                                    2. form — Zajmuje to dwie godziny.
-      3. form — It takes five hours.                                   3. form — Zajmuje to pięć godzin.
+      1. форма — It takes one hour.                                     1. форма — Zajmuje to godzinę.
+      2. форма — It takes two hours.                                    2. форма — Zajmuje to dwie godziny.
+      3. форма — It takes five hours.                                   3. форма — Zajmuje to pięć godzin.
 
 Польское *'godzinę'* (час) имеет три разные формы, английское слово с теми же числительными склоняется только по двум формам.
 
-Кроме польского, есть много других языков, которые имеют три и более форм множественного числа: например, русский, сербский, словацкий, чешский и т. д. Но не все они подчиняются одному и тому же правилу. That's why it's so important to know how many plurals your language has, and how to use them correctly.
+Кроме польского, есть много других языков, которые имеют три и более форм множественного числа: например, русский, сербский, словацкий, чешский и т. д. Но не все они подчиняются одному и тому же правилу. Поэтому важно знать, сколько плюральных форм содержится в вашем языке и как их правильно применять.
 
 ## Где можно узнать о количестве форм множественного числа? {#where-to-learn}
 
@@ -38,7 +38,7 @@ sidebar_position: 4
 
 Вот некоторые источники информации, которые можно использовать.
 
-На сайте [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) есть информация о большом количестве языков. The number of plural forms for different languages is shown this way: `nplurals=2`, `nplurals=4` and so on. The numeral after the Equals sign `=` means the number of plural forms of the respective language.
+На сайте [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) есть информация о большом количестве языков. Количество форм множественного числа для разных языков показано так: `nplurals=2`, `nplurals=4` и так далее. Цифра после знака равенства `=` означает количество форм множественного числа соответствующего языка.
 
 Информацию о плюральных формах можно также найти на сайте [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). В правилах плюральных форм CLDR указана дополнительная форма слова для десятичных чисел (1,5; 2,3; 100,1…), но мы не используем их в переводах AdGuard.
 
@@ -92,7 +92,7 @@ sidebar_position: 4
 
 ### 4. Строки, разделённые вертикальной чертой {#4type}
 
-This is the most complicated type of AdGuard strings which is mostly used in the `AdGuard Websites` project.
+Это самый сложный тип строк AdGuard, который в основном используется в проекте `AdGuard Websites`.
 
 Обратите внимание на знак вертикальной черты между предложениями и плейсхолдер **%count%** в оригинальных фразах — это поможет вам определить фразы, в которых перевод требует использования форм множественного числа.
 

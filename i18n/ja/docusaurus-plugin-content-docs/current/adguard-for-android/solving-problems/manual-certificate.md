@@ -9,18 +9,18 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-[HTTPSトラフィック（通信）をフィルタリング](/general/https-filtering/what-is-https-filtering.md)できるようになるには、AdGuardはデバイスのユーザーストレージに証明書をインストールする必要があります。（※ほとんどの広告がHTTPSを使用しているため、HTTPSフィルタリングは広告ブロック性能にとって非常に重要です。） On older versions of the Android OS this was done automatically, but on Android 11 and later users have to install it manually.
+To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install its certificate into your device's user storage. On older versions of the Android OS this was done automatically, but on Android 11 and later users have to install it manually.
 
 ![証明書 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
 
-AdGuard証明書をインストールする方法は以下の通りです:
+Follow these steps to install the AdGuard certificate:
 
 1. 「*HTTPS フィルタリングがオフになっています*」という通知が表示されたら、「*有効にする*」をタップします。
 
 1. すると、3つの説明画面が順番に表示されます:
     - HTTPSトラフィックをフィルタリングする理由
     - AdGuardによるHTTPSフィルタリングが安全である理由
-    - AdGuard証明書の必要性
+    - The necessity of the AdGuard certificate
 
     Consecutively tap *Next* → *Next* → *Save certificate*.
 

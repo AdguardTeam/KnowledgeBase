@@ -41,7 +41,7 @@ If this setting is enabled, AdGuard will detect search domains and automatically
 
 Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* — the system DNS or AdGuard DNS — is used by default. By selecting *Custom DNS*, you can list IPv4 and IPv6 server addresses to use as bootstrap upstreams.
 
-#### Blocking mode for adblock-style rules
+#### adblock-styleルール用ブロックモード
 
 Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for instance, `||example.org^`).
 
@@ -49,7 +49,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 - Respond with NXDOMAIN
 - Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
 
-#### Blocking mode for hosts rules
+#### hostsルール用ブロックモード
 
 Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax (for instance, `<ip> <domain> 0.0.0.0 example.com`).
 
@@ -59,7 +59,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 
 #### DNS request timeout
 
-Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
+ここで、AdGuardがフォールバックに頼る前に、選択したDNSサーバーからの応答を待つ時間をミリ秒単位で指定できます。 このフィールドに何も入力しないか、無効な値を入力すると、5000という値が使用されます。
 
 #### Blocked response TTL
 
@@ -113,7 +113,7 @@ Use it only for debugging purposes!
 
 #### Encrypted Client Hello
 
-Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Encrypted Client Hello* option. It uses a local DNS proxy to look for the ECH configuration for the domain. If it is found, ClientHello packet will be encrypted.
+暗号化されたインターネット接続には、暗号化されていない部分があります。 その部分とは、接続先のサーバー名を含む最初の通信パケットです。 Encrypted Client Hello 技術は、この問題を解決し、この暗号化されていない部分を暗号化してくれます。 To benefit from it, enable the *Encrypted Client Hello* option. このオプションは、ローカル DNS プロキシを使用して、ドメインの ECH 構成を検索します。 見つかった場合、ClientHello パケットは暗号化されます。
 
 #### OCSP checking
 
@@ -121,13 +121,13 @@ If this setting is enabled, AdGuard will perform asynchronous OCSP checks to get
 
 If an OCSP check is completed within the required timeout, AdGuard will immediately block the connection if the certificate is revoked or establish the connection if the certificate is valid.
 
-If the verification takes too long, AdGuard will allow the connection while continuing to check the certificate status in the background. If the certificate is revoked, current and future connections to the domain will be blocked.
+If the verification takes too long, AdGuard will allow the connection while continuing to check the certificate status in the background. 証明書が失効している場合は、そのドメインへの現在の接続および今後の接続はブロックされるようになります。
 
 #### Redirect DNS-over-HTTPS requests
 
 If this setting is enabled, AdGuard will redirect DNS-over-HTTPS requests to the local DNS proxy in addition to plain DNS requests. We recommend disabling fallback upstreams and using only encrypted DNS servers to maintain privacy.
 
-#### Filter HTTP/3
+#### HTTP/3 をフィルタリングする
 
 If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
@@ -147,7 +147,7 @@ Here you can specify port ranges that should be filtered.
 
 If this setting is enabled, AdGuard will record blocked HTML elements in *Recent activity*.
 
-#### Scriplet debugging
+#### Scriptlet debugging
 
 If this setting is enabled, debugging in scriptlets will be activated, and the browser log will record when scriptlet rules are applied.
 

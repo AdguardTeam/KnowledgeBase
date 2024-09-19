@@ -11,7 +11,7 @@ sidebar_position: 9
 
 Windows 版 AdGuard 让用户指定 DNS 服务器地址来解决查询，而不使用 ISP 提供的系统 DNS 服务器（如果未在系统中更改设置）。 使用非默认 DNS 服务器可以保护 DNS 流量不被互联网服务提供商拦截。 此外，选择一个进行加密和/或过滤的 DNS 服务器后，用户还可以获得另一层保护，防止恶意行为和恼人的广告。
 
-许多 Windows 版 AdGuard 的用户都赞赏 DNS 保护功能。 但有些用户遇到以下问题：https://ipleak.net/ 等网站的检查结果显示，有默认 DNS 服务器而不是所选的服务器处理请求。 在本文中，我们将解释为什么会发生这种情况以及如何避免它。
+许多 Windows 版 AdGuard 的用户都赞赏 DNS 保护功能。 But some of them encounter the following issue: a check on a website like https://ipleak.net/ shows that requests are handled by the default DNS server instead of the selected one. 在本文中，我们将解释为什么会发生这种情况以及如何避免它。
 
 ## Bootstrap DNS 地址
 
@@ -21,7 +21,7 @@ DNS 服务器地址可以写为 IP 或域名。 在 IP 地址的情况下没有�
 
 - 转到「*高级设置*」
 - 向下滚动到「*自定义 Bootstrap 地址的列表*」部分
-- 以 IP 地址格式输入自定义引导地址（可以使用「[已知 DNS 提供商列表](https://adguard-dns.io/kb/general/dns-providers/)」）
+- enter the custom bootstrap address in the IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
 - 单击「*保存*」
 
 ## 后备 DNS 服务器
@@ -33,7 +33,7 @@ DNS 服务器地址可以写为 IP 或域名。 在 IP 地址的情况下没有�
 - 转到「*高级设置*」
 - 向下滚动到「*后备服务器*」部分
 - 勾选「*使用自定义服务器*」
-- 然后找到「*自定义后备服务器的列表*」部分，每行输入一个自定义后备服务器
+- then find the *List of custom fallback servers* section and enter the custom fallback servers one per line
 
 或者
 

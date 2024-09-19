@@ -7,7 +7,7 @@ sidebar_position: 1
 
 HTTPS(HyperText Transfer Protocol Secure)는 보안을 강화하기 위해 암호화를 지원하는 HTTP 프로토콜의 확장입니다. 이 프로토콜은 개인 데이터, 신용 카드 정보 등과 같은 중요한 지정보를 안전하게 전송하는 데 사용됩니다.
 
-암호화된 트래픽이 제3자에 의해 ‘엿들어지지 않도록’ 보호되므로 HTTPS를 사용하는 것이 좋습니다. 최근 HTTPS는 [Google 권장을 받고](https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html) 있다는 점과 무료 인증 센터 [Let ’s Encrypt](https://en.wikipedia.org/wiki/Let's_Encrypt)의 등장으로 인해 확산되고 있습니다.
+암호화된 트래픽이 제3자에 의해 ‘엿들어지지 않도록’ 보호되므로 HTTPS를 사용하는 것이 좋습니다. HTTPS acceptance has been growing in recent years, mainly because it is [encouraged by Google](https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html) and also due to the emergence of the free certificate authority [Let’s Encrypt](https://en.wikipedia.org/wiki/Let's_Encrypt).
 
 아래의 그림은일반 HTTP 프로토콜과 보안 HTTPS 프로토콜의 차이점을 보여줍니다.
 
@@ -15,17 +15,17 @@ HTTPS(HyperText Transfer Protocol Secure)는 보안을 강화하기 위해 암�
 
 ### 보안 인증서란 무엇인가요?
 
-간단히 말하면 HTTPS는 데이터 암호화를 의미합니다. 그러나 원하시는 웹 사이트와 암호화된 연결을 했는지 어떻게 확인을 할 수 있을까요? 웹 사이트가 보안 인증서가 있으면 연결이 암호화됩니다. 웹 사이트가 보안 인증서가 없거나 인증서에 잘못된 정보가 포함된 경우, 브라우저에서 보안 연결이 될 수 없습니다. 웹 사이트에서 사용하는 인증서를 브라우저에서 신뢰하는 CA(인증 기관)에서 발급받는 것이 중요합니다. 인증 기관은 SSL 인증서가 웹 사이트 소유자에게 발급되는 것을 보장합니다.
+간단히 말하면 HTTPS는 데이터 암호화를 의미합니다. 그러나 원하시는 웹 사이트와 암호화된 연결을 했는지 어떻게 확인을 할 수 있을까요? 웹 사이트가 보안 인증서가 있으면 연결이 암호화됩니다. A certificate serves as proof that the website is really who or what it claims to be. 브라우저에서 보안 연결이 될 수 없습니다. 웹 사이트에서 사용하는 인증서를 브라우저에서 신뢰하는 CA(인증 기관)에서 발급받는 것이 중요합니다. 인증 기관은 SSL 인증서가 웹 사이트 소유자에게 발급되는 것을 보장합니다.
 
 ### AdGuard가 HTTPS를 필터링해야 하는 이유는 무엇인가요?
 
-대부분의 웹 사이트와 광고 네트워크는 현재 HTTPS를 사용하고 있습니다. YouTube와 Facebook, Twitter가 HTTPS를 필터링하지 않고는 광고를 삭제할 수 없는 대표적인 예시입니다.
+대부분의 웹 사이트와 광고 네트워크는 현재 HTTPS를 사용하고 있습니다. Here are a few popular websites where you can’t remove ads without HTTPS filtering: youtube.com, facebook.com, and x.com.
 
 ### HTTPS 필터링은 어떻게 작동하나요?
 
-HTTPS 필터링 작업 방식이 쉬웠다면 HTTPS는 그렇게 안전하지 않을 것입니다. 브라우저가 서버에 연결하려고 하면 AdGuard는 두 개의 보안 연결을 설정하는데, 각각 브라우저나 다른 앱, 그리고 서버와 설정하는 것이 그것입니다. 브라우저는 AdGuard와 AdGuard가 생성하는 연결을 신뢰해야 합니다. 이를 위해 AdGuard는 특수 루트 인증서를 생성하여 시스템에 설치하고 필요한 경우, Firefox와 같은 일부 브라우저에도 설치합니다. 따라서 AdGuard는 보안 연결 상황을 확인하고 광고 및 추적을 차단할 수 있습니다.
+HTTPS 필터링 작업 방식이 쉬웠다면 HTTPS는 그렇게 안전하지 않을 것입니다. 브라우저가 서버에 연결하려고 하면 AdGuard는 두 개의 보안 연결을 설정하는데, 각각 브라우저나 다른 앱, 그리고 서버와 설정하는 것이 그것입니다. 브라우저는 AdGuard와 AdGuard가 생성하는 연결을 신뢰해야 합니다. 이를 위해 AdGuard는 특수 루트 인증서를 생성하여 시스템에 설치하고 필요한 경우, Firefox와 같은 일부 브라우저에도 설치합니다. AdGuard can now see the data packets inside the secure connection and thus do its job — block ads and trackers.
 
-아래의 그림은 이러한 과정을 알기 쉽게 보여줍니다.
+For better understanding, we have depicted this process:
 
 ![HTTPS 필터링은 어떻게 작동하나요](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 

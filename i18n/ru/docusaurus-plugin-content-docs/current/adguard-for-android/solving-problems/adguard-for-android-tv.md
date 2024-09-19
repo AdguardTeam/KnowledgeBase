@@ -5,11 +5,11 @@ sidebar_position: 17
 
 :::info
 
-This article is about AdGuard for Android TV, an ad blocker that protects your TV at the system level. [Скачайте приложение AdGuard для Android TV] (https://agrd.io/tvapk), чтобы увидеть, как оно работает
+В этой статье рассказывается об AdGuard для Android TV — блокировщике рекламы, который защищает ваш телевизор на системном уровне. [Скачайте приложение AdGuard для Android TV] (https://agrd.io/tvapk), чтобы увидеть, как оно работает
 
 :::
 
-В большинстве случаев браузеры не могут установить файл на телевизор. In our guide, we will consider an example of installation using the TV Bro browser, but there are other options and you can choose the one that better suits your needs. Или использовать приложение [Downloader](https://play.google.com/store/apps/details?id=com.esaba.downloader).
+В большинстве случаев браузеры не могут установить файл на телевизор. In our guide, we will go through an example of installation using the TV Bro browser, but there are other options and you can choose the one that better suits your needs. Или использовать приложение [Downloader](https://play.google.com/store/apps/details?id=com.esaba.downloader).
 
 ## Установка AdGuard для Android TV через браузер
 

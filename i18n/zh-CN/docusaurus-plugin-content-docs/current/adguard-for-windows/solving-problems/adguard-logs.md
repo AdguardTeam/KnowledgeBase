@@ -1,5 +1,5 @@
 ---
-title: 如何收集 AdGuard 日志记录
+title: How to collect AdGuard logs
 sidebar_position: 3
 ---
 
@@ -15,7 +15,7 @@ sidebar_position: 3
 
 :::
 
-要分析和诊断可能潜在的问题，AdGuard 技术人员可能需要 AdGuard 日志记录文件。 这些文件包含本软件发生的错误记录和其它事件。 下面是简短的说明，描述获取日志文件的方法，并在必要时将其发送给支持服务。
+要分析和诊断可能潜在的问题，AdGuard 技术人员可能需要 AdGuard 日志记录文件。 These files contain records about errors and other events that occur with the software. 下面是简短的说明，描述获取日志文件的方法，并在必要时将其发送给支持服务。
 
 :::note
 
@@ -25,7 +25,7 @@ AdGuard 致力于保护用户的个人隐私。 我们严格遵守我们的[隐�
 
 ### 调试日志 {#debug-logs}
 
-1. 打开 AdGuard 设置。 转到「*常规设置*」部分，下滚至界面底部并切换「*日志级别*」至「*调试*」。
+1. 打开 AdGuard 设置。 Go to the *General Settings* section, scroll down to the bottom of the screen, and switch the *Logging Level* to *Debug*.
 
     ![调试级别日志 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
@@ -33,13 +33,13 @@ AdGuard 致力于保护用户的个人隐私。 我们严格遵守我们的[隐�
 
     我们强烈建议用户记录问题重现的确切时间：这将有助于我们的支持团队找到相关日志条目并更快地解决问题。
 
-1. 请使用「*导出日志*」按钮以导出记录日志。
+1. Export the collected logs using the *Export Logs* button.
 
     ![导出日志 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
     将存档保存到任意文件夹。
 
-1. **注意**：导出日志后，将日志记录级别设置为「*标准*」。 「*调试*」日志记录级别会降低应用程序的运行速度。
+1. **Important**: after exporting the logs, set the logging level back to *Default*. 「*调试*」日志记录级别会降低应用程序的运行速度。
 
 1. 发送存档给 AdGuard 支持团队 **support@adguard.com** 时，请描述问题和出现问题的时间。
 
@@ -65,7 +65,7 @@ AdGuard 致力于保护用户的个人隐私。 我们严格遵守我们的[隐�
 
     我们强烈建议用户记录问题重现的确切时间：这将有助于我们的支持团队找到相关日志条目并更快地解决问题。
 
-1. 请使用「*导出日志*」按钮以导出记录日志。
+1. Export the collected logs using the *Export Logs* button.
 
     ![导出日志 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 

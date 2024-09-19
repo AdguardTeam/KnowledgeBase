@@ -15,7 +15,7 @@ Günlüklerde sağlanan veriler ve/veya dosyalar [AdGuard Gizlilik Politikasına
 
 :::
 
-Ortaya çıkabilecek farklı sorunları analiz etmek ve teşhis etmek için AdGuard destek hizmetinin AdGuard günlük dosyalarına ihtiyacı olabilir. Bu dosyalar, yazılımda meydana gelen hatalar ve diğer olaylarla ilgili kayıtları içerir. Below is the brief instruction describing the way to get the log files and send them to the support service if necessary.
+Ortaya çıkabilecek farklı sorunları analiz etmek ve teşhis etmek için AdGuard destek hizmetinin AdGuard günlük dosyalarına ihtiyacı olabilir. These files contain records about errors and other events that occur with the software. Below is the brief instruction describing the way to get the log files and send them to the support service if necessary.
 
 :::not
 
@@ -25,7 +25,7 @@ AdGuard gizliliğinizi korumaya kararlıdır. [Gizlilik Politikamıza](https://a
 
 ### Hata ayıklama günlükleri {#debug-logs}
 
-1. AdGuard ayarlarını açın. *Genel Ayarlar* bölümüne gidin, ekranın sonuna kadar aşağı kaydırın ve *Günlük kayıt düzeyi* öğesini *Hata ayıklama* olarak değiştirin.
+1. AdGuard ayarlarını açın. Go to the *General Settings* section, scroll down to the bottom of the screen, and switch the *Logging Level* to *Debug*.
 
     ![Hata ayıklama günlük kayıt düzeyi *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
@@ -33,13 +33,13 @@ AdGuard gizliliğinizi korumaya kararlıdır. [Gizlilik Politikamıza](https://a
 
     Sorunu yeniden oluşturduğunuz tam zamanı not almanızı önemle tavsiye ederiz: bu, destek ekibimizin ilgili günlük girdilerini bulmasına ve sorunu daha hızlı çözmesine yardımcı olur.
 
-1. *Günlükleri dışa aktar* düğmesine kullanarak kaydedilen günlükleri dışa aktarın.
+1. *Günlükleri dışa aktar* düğmesine kullanarak toplanan günlükleri dışa aktarın.
 
     ![Günlükleri dışa aktar *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
     Arşivi herhangi bir klasöre kaydedin.
 
-1. **Önemli**: Günlükleri dışa aktardıktan sonra, günlük kayıt düzeyini tekrar *Varsayılan* olarak ayarlayın. *Hata ayıklama* günlük kayıt düzeyi uygulamayı yavaşlatır.
+1. **Important**: after exporting the logs, set the logging level back to *Default*. *Hata ayıklama* günlük kayıt düzeyi uygulamayı yavaşlatır.
 
 1. Arşivi **support@adguard.com** adresinden AdGuard destek servisine gönderin, sorunu açıklayın ve sorunu yeniden oluşturduğunuz zamanı belirtmeyi unutmayın.
 
@@ -65,7 +65,7 @@ Windows için AdGuard'ın eski bir sürümüne sahipseniz, 64 bit Windows kullan
 
     Sorunu yeniden oluşturduğunuz tam zamanı not almanızı önemle tavsiye ederiz: bu, destek ekibimizin ilgili günlük girdilerini bulmasına ve sorunu daha hızlı çözmesine yardımcı olur.
 
-1. *Günlükleri dışa aktar* düğmesine kullanarak kaydedilen günlükleri dışa aktarın.
+1. *Günlükleri dışa aktar* düğmesine kullanarak toplanan günlükleri dışa aktarın.
 
     ![Günlükleri dışa aktar *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 

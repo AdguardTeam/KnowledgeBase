@@ -99,7 +99,7 @@ Gehen Sie zum Abschnitt Anwendungen. Suchen Sie dort AdGuard, klicken Sie mit de
 
     ![Starten Sie die Anwendung „Activity Monitor“](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. Stoppen Sie den Prozess, der unter dem Benutzer ausgeführt wird (nicht den, der unter Root ausgeführt wird). Klicken Sie dazu auf den Prozess und dann oben links auf X. Confirm the action in the dialogue window.
+1. Stoppen Sie den Prozess, der unter dem Benutzer ausgeführt wird (nicht den, der unter Root ausgeführt wird). Klicken Sie dazu auf den Prozess und dann oben links auf X. Bestätigen Sie die Aktion im Dialogfenster.
 
     ![Bestätigen](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 

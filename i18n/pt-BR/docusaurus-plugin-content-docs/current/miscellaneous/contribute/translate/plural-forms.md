@@ -38,7 +38,7 @@ Quando você se depara com uma tradução que exige o uso de plurais, talvez nã
 
 Aqui estão algumas fontes de informação que você pode usar.
 
-[O Guia de Localização](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contém uma ampla lista de idiomas. O número de formas plurais para diferentes idiomas é mostrado desta forma: `nplurals=2`, `nplurals=4` e assim por diante. O numeral após o sinal de igual `=` significa o número de formas plurais do respectivo idioma.
+[O Guia de Localização](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contém uma ampla lista de idiomas. O número de formas plurais para diferentes idiomas é mostrado desta forma: `nplurals=2`, `nplurals=4` e assim por diante. The numeral after the Equals sign `=` indicates the number of plural forms of the respective language.
 
 Além disso, você pode obter informações sobre formas plurais no [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). As regras do plural CLDR indicam uma forma de palavra adicional para números decimais (1,5; 2,3; 100,1…), mas não as usamos nas traduções do AdGuard.
 

@@ -15,7 +15,7 @@ _Impostazioni_ è la sezione che richiede maggiore attenzione. Qui, puoi configu
 
 ### Impostazioni generali
 
-Qui, puoi impostare la lingua e il tema (Scuro o Chiaro), abilitare l'avvio di AdGuard all'avvio del sistema e silenziare gli aggiornamenti automatici, scegliere il canale d'aggiornamento e filtrare l'intervallo di controllo per gli aggiornamenti. Inoltre, Impostazioni è il posto in cui andare se AdGuard per Windows non funziona correttamente e se il team di supporto ti ha richiesto di [raccogliere i _Registri di debug_](/adguard-for-windows/solving-problems/adguard-logs.md).
+Qui, puoi impostare la lingua e il tema (Scuro o Chiaro), abilitare l'avvio di AdGuard all'avvio del sistema e silenziare gli aggiornamenti automatici, scegliere il canale d'aggiornamento e filtrare l'intervallo di controllo per gli aggiornamenti. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect _Debug logs_](/adguard-for-windows/solving-problems/adguard-logs.md).
 
 ![Impostazioni Avanzate \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
 
@@ -80,7 +80,7 @@ Esistono numerosi siti web a cui dovrebbe essere limitato l'accesso da un PC uti
 
 Il modulo controlla i contenuti delle pagine web aperte nel browser e filtra quelle con contenuti indesiderabili per i bambini: immagini e testi per adulti, linguaggio volgare, violenza, sostanze stupefacenti, etc. Le impostazioni del Controllo Genitori sono protette da password, così che i bambini non possano aggirare le limitazioni. Questo modulo non blocca soltanto le indicazioni ai siti indesiderati, ma può anche eliminare i collegamenti inappropriati per i bambini, dai risultati di ricerca.
 
-Nel modulo Controllo Genitori, puoi abilitare la _Ricerca sicura_ e gestire l'_elenco di blocco_ e l'_elenco consentiti_ per personalizzare il funzionamento d quest'opzione. Inoltre, puoi anche spuntare la casella _Blocca download file eseguibili_ per impedire ai tuoi figli di scaricare e installare software sul computer. Esistono ancora altre due opzioni nel modulo _Controllo Genitori_: puoi selezionare un utente di Windows specifico da proteggere con il _Controllo Genitori_ e impostare una password per proteggere le impostazioni di AdGuard dalla modifica.
+In the _Parental Control_ module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. Inoltre, puoi anche spuntare la casella _Blocca download file eseguibili_ per impedire ai tuoi figli di scaricare e installare software sul computer. Esistono ancora altre due opzioni nel modulo _Controllo Genitori_: puoi selezionare un utente di Windows specifico da proteggere con il _Controllo Genitori_ e impostare una password per proteggere le impostazioni di AdGuard dalla modifica.
 
 ![Controllo Genitori \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 

@@ -5,18 +5,18 @@ sidebar_position: 5
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
-Assistant is a handy tool to quickly change app or website settings and view statistics without opening the AdGuard UI.
+Помощник — удобный инструмент для быстрого изменения настроек приложения или сайта и просмотра статистики без запуска приложения AdGuard.
 
 ### Как получить доступ к Помощнику
 
 1. Проведите пальцем вниз от верхней части экрана, чтобы открыть шторку уведомлений.
-2. Find and **expand** the AdGuard notification.
+2. Найдите и **разверните** уведомление AdGuard.
 
-![Expand AdGuard notification in the notification shade \*mobile](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
+![Развернуть уведомление AdGuard в панели уведомлений \*mobile](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
 
 1. Tap _Assistant_.
 

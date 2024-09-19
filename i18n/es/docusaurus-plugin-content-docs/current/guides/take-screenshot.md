@@ -52,17 +52,17 @@ En algunos portátiles, tienes que mantener pulsada la tecla *Fn* y luego pulsar
 
 Windows captura toda la pantalla y la copia en el portapapeles.
 
-Para tomar una captura de pantalla de una ventana activa, utiliza el siguiente acceso directo:
+To take a screenshot of an active window, use the following shortcut keys:
 
 - **Manten presionado *Alt* y pulsa *PrtScn* (o *Fn + Alt + PrtScn* en algunos portátiles)**
 
-Para tomar una captura de pantalla de un área específica, utiliza el siguiente acceso directo:
+To take a screenshot of a specific area, use the following shortcut keys:
 
 - ***Presiona ***Win + Shift + S******
 
-Después de tomar una captura de pantalla, se guardará en el portapapeles. En la mayoría de los casos, podrás pegarlo en un documento que estés editando actualmente usando el atajo *Ctrl + V*. Alternativamente, si necesitas guardar la captura de pantalla en un archivo, debes abrir el programa estándar **Paint** (o cualquier otra aplicación que pueda trabajar con imágenes). Pega allí tu captura de pantalla utilizando el mismo atajo de teclado o haciendo clic en el botón Pegar (normalmente en la esquina superior izquierda de la pantalla) y luego guárdala.
+Después de tomar una captura de pantalla, se guardará en el portapapeles. En la mayoría de los casos, podrás pegarlo en un documento que estés editando actualmente usando el atajo *Ctrl + V*. Alternativamente, si necesitas guardar la captura de pantalla en un archivo, debes abrir el programa estándar **Paint** (o cualquier otra aplicación que pueda trabajar con imágenes). Paste your screenshot there using the same shortcut keys or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
 
-Windows 8 y 10 te permiten tomar una captura de pantalla muy rápidamente con el atajo *Win + PrtScn*. Tan pronto como presiones estas teclas, la captura de pantalla se guardará automáticamente como un archivo en tu carpeta de *Imágenes* → *Capturas de pantalla*.
+Windows 8 and 10 let you take a screenshot very quickly with the *Win + PrtScn* shortcut keys. Tan pronto como presiones estas teclas, la captura de pantalla se guardará automáticamente como un archivo en tu carpeta de *Imágenes* → *Capturas de pantalla*.
 
 También hay un programa dedicado a tomar capturas de pantalla llamado *Snipping Tool*, que se puede encontrar a través del menú de Inicio entre los programas estándar de tu ordenador. La Snipping Tool te permite capturar cualquier área de tu escritorio o toda la pantalla. Después de tomar una captura de pantalla con este programa, puedes editar la imagen y guardarla en cualquier carpeta de tu ordenador.
 
@@ -70,26 +70,26 @@ Además, también puedes probar a utilizar diferentes aplicaciones para hacer ca
 
 ### macOS {#mac}
 
-Para tomar una captura de pantalla en Mac, usa el siguiente atajo:
+To take a screenshot on Mac, use the following shortcut keys:
 
 - ***Mantén pulsado ***⌘ Cmd + Shift + 3******
 
 Tu Mac capturará toda la pantalla y la guardará como un archivo en el escritorio.
 
-Para tomar una captura de pantalla de una ventana activa, utiliza el siguiente acceso directo:
+To take a screenshot of an active window, use the following shortcut keys:
 
 - **Manten presionadas las teclas *⌘ Cmd + Shift + 4 + Barra espaciadora*. El puntero cambiará a un icono de cámara. Haz clic en la ventana para capturarla. Pulsa Esc para cancelar la captura de pantalla**
 
-Para tomar una captura de pantalla de un área específica, utiliza el siguiente acceso directo:
+To take a screenshot of a specific area, use the following shortcut keys:
 
 - ***Pulsa ***⌘ Cmd + Shift + 5******. Desliza para seleccionar el área necesaria. Suelta el ratón o el trackpad para hacer una captura de pantalla, pulsa Esc para cancelarla.
 
-Para tomar una captura de pantalla de la *Barra táctil* (MacBook Pro), utiliza el siguiente atajo:
+To take a screenshot of the *Touch Bar* (MacBook Pro), use the following shortcut keys:
 
 - ***Presiona ***⌘ Cmd + Shift + 6******
 
 El Mac captura toda la *Touch Bar* y la guarda como un archivo en el escritorio.
 
-Para copiar una captura de pantalla al portapapeles en lugar de guardarla, mantén presionada la tecla *Ctrl* junto con cualquiera de los atajos anteriores. Luego puedes pegar la captura de pantalla (desde el portapapeles) en un documento o una imagen que estés editando actualmente usando el atajo *Cmd + V*.
+To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the shortcut keys above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* shortcut keys.
 
 También puedes hacer capturas de pantalla utilizando la **Vista Previa** y eligiendo **Tomar captura de pantalla** (del área seleccionada, de la ventana o de toda la pantalla). Con la **Vista Previa** puedes guardar tus capturas de pantalla en JPG, TIFF, PDF y otros formatos de archivo.

@@ -1,5 +1,5 @@
 ---
-title: Jak shromažďovat protokoly v AdGuardu pro Safari
+title: How to collect logs in AdGuard for Safari
 sidebar_position: 4
 ---
 
@@ -9,9 +9,9 @@ Tento článek je o AdGuardu pro Safari, který chrání pouze váš prohlíže�
 
 :::
 
-K analýze a diagnostice různých problémů, které mohou nastat s AdGuardem pro Safari, může služba podpory AdGuardu potřebovat soubory záznamu. Tyto soubory obsahují záznamy o chybách a dalších softwarových událostech. Níže jsou uvedeny stručné pokyny, jak shromažďovat protokoly a v případě potřeby je odesílat na podporu.
+K analýze a diagnostice různých problémů, které mohou nastat s AdGuardem pro Safari, může služba podpory AdGuardu potřebovat soubory záznamu. Tyto soubory obsahují záznamy o chybách a dalších softwarových událostech. Below are brief instructions on how to collect logs and send them to support if necessary.
 
-### Jak shromažďovat a záznamy
+### How to collect logs
 
 1. Otevřete aplikaci AdGuard pro Safari.
 2. Přejděte dolů a klikněte na _Exportovat protokoly_.

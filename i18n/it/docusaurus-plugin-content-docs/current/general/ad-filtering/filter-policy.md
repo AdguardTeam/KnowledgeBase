@@ -36,17 +36,19 @@ Gli **anti-adblock** sono tecnologie utilizzate dai siti web o dalle applicazion
 
 ### Filtri
 
-I filtri di blocco degli annunci AdGuard includono:
+I filtri di blocco degli annunci di AdGuard includono:
 
 - Filtro di base di AdGuard
 - Filtro Inserzioni Mobili di AdGuard
 - Filtri regionali divisi per principio linguistico: cinese, olandese, francese, tedesco, giapponese, russo, spagnolo/portoghese, turco e ucraino
+- AdGuard Quick Fixes filter
 
 ### Lo scopo di questi filtri
 
 - Il **filtro di base** è progettato per bloccare le inserzioni sui siti web in lingua inglese, nonché quelle per le quali non è presente alcun filtro separato. Inoltre, contiene le regole di filtraggio generali che si applicano a tutti i siti, indipendentemente dalla lingua
 - Il **filtro delle Inserzioni Mobili** blocca le inserzioni sulle versioni mobili dei siti web, e sulle app mobili. Non esiste alcuna segmentazione basata sulla lingua
 - I **filtri regionali** seguono la stessa politica del **filtro di base**, ma si limitano ai siti web in certe lingue
+- **Quick Fixes filter** used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension.
 
 L'obiettivo dei filtri di blocco delle inserzioni è bloccare ogni tipo di inserzione sui siti web, le applicazioni, e certi dispositivi capaci di caricare inserzioni da Internet:
 

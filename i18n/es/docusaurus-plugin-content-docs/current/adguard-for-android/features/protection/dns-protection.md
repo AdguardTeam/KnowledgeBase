@@ -13,7 +13,7 @@ Se puede acceder al módulo de protección DNS tocando la pestaña _Protección_
 
 :::tip
 
-La protección DNS funciona de manera diferente al bloqueo habitual de anuncios y rastreadores. Tu cámara [obtén más información sobre esto y cómo funciona en un artículo dedicado](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
+La protección DNS funciona de manera diferente al bloqueo habitual de anuncios y rastreadores. You can [learn more about it and how it works from a dedicated article](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
 
 :::
 

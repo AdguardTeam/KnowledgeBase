@@ -11,7 +11,7 @@ sidebar_position: 8
 
 [Windows용 AdGuard](/adguard-for-windows/installation)
 
-[AdGuard for Mac](/adguard-for-mac/installation)
+[Mac용 AdGuard](/adguard-for-mac/installation)
 
 [AdGuard 확장 프로그램](/adguard-browser-extension/installation)
 

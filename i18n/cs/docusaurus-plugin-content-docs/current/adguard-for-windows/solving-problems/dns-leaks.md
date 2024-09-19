@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 AdGuard pro Windows umožňuje uživatelům zadat adresu DNS serveru pro řešení dotazů namísto systémového DNS serveru, který je poskytován ISP, pokud není v nastavení systému potlačen. Použití jiného než výchozího DNS serveru může ochránit vaše přenosy DNS před zachycením ISP. Výběrem šifrovaného a/nebo filtrujícího DNS serveru navíc získáte další vrstvu ochrany před záškodníky a obtěžujícími reklamami.
 
-Mnoho uživatelů AdGuardu pro Windows oceňuje funkci DNS ochrany. Někteří z nich se však setkávají s následujícím problémem: kontrola na webových stránkách, jako je https://ipleak.net/ ukazuje, že požadavky jsou zpracovávány výchozím DNS serverem namísto vybraným. V tomto článku se dozvíte, proč k tomu dochází a jak se tomu vyhnout.
+Mnoho uživatelů AdGuardu pro Windows oceňuje funkci DNS ochrany. But some of them encounter the following issue: a check on a website like https://ipleak.net/ shows that requests are handled by the default DNS server instead of the selected one. V tomto článku se dozvíte, proč k tomu dochází a jak se tomu vyhnout.
 
 ## Bootstrap DNS adresa
 
@@ -21,7 +21,7 @@ Adresy DNS serverů lze zapsat jako IP adresy nebo jako názvy domén. V přípa
 
 - přejděte do *Pokročilých nastavení*
 - přejděte dolů do sekce *Seznam vlastních bootstrap adres*
-- zadejte vlastní bootstrap adresu ve formátu IP adresy (můžete použít [seznam známých poskytovatelů DNS](https://adguard-dns.io/kb/general/dns-providers/))
+- enter the custom bootstrap address in the IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
 - klikněte na *Uložit*
 
 ## Záložní DNS server
@@ -33,7 +33,7 @@ Může se stát, že AdGuard nemůže dosáhnout zadaného serveru z důvodu sla
 - přejděte do *Pokročilých nastavení*
 - přejděte dolů do sekce *Záložní servery*
 - zaškrtněte možnost *Použít vlastní servery*
-- pak vyhledejte sekci *Seznam vlastních záložních serverů* a zadejte vlastní záložní servery po jednom na řádek
+- then find the *List of custom fallback servers* section and enter the custom fallback servers one per line
 
 nebo
 

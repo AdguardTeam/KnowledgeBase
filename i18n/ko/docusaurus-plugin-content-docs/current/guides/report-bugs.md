@@ -17,7 +17,7 @@ AdGuard 제품을 사용하는 동안 버그를 발견하면 문제를 해결하
 
 ### 문제를 설명하는 방법
 
-가능한 한 많은 세부 정보를 제공해 주시면 버그를 재현하고 수정 방법을 쉽게 파악할 수 있습니다. 버그 보고서에서 예상되는 내용은 다음과 같습니다:
+가능한 한 많은 세부 정보를 제공해 주시면 버그를 재현하고 수정 방법을 쉽게 파악할 수 있습니다. Here’s what we expect a bug report to include:
 
 - 앱 버전
 - OS 버전
@@ -26,9 +26,9 @@ AdGuard 제품을 사용하는 동안 버그를 발견하면 문제를 해결하
 - 반복 여부 및 빈도
 - VPN 또는 바이러스 백신 소프트웨어 사용 여부
 
-### 로그 수집 방법
+### How to collect logs
 
-각 플랫폼별 전용 문서에서 로그 수집에 대해 알아보세요.
+Read about collecting logs in dedicated articles for each platform.
 
 ## 버그 신고 또는 기능 요청에 투표하는 방법
 

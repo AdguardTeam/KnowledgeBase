@@ -1,5 +1,5 @@
 ---
-title: AdGuard 安装日志收集方式
+title: How to collect AdGuard installation logs
 sidebar_position: 4
 ---
 
@@ -17,7 +17,7 @@ sidebar_position: 4
 
 如您在安装 AdGuard 期间发生问题，可以发送技术请求给我们的支持团队，但他们会要求您收集并发送 AdGuard 安装日志。 在这种情况下，您需要执行以下操作：
 
-1. 从开始菜单选择「*运行*」命令或按按键组合「*Win + R*」。
+1. Select the *Run* command in Start menu or press *Win + R* on the keyboard.
 
 1. 在字段内键入「*%tmp%*」点击「*确定*」。
 

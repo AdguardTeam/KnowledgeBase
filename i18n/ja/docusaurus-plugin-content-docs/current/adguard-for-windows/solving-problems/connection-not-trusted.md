@@ -1,79 +1,79 @@
 ---
-title: Certificate-related issues
+title: 証明書関連の問題
 sidebar_position: 2
 ---
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際にどのように動作するかを確認するには、[AdGuard アプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
-To be able to filter HTTPS-traffic and efficiently block ads and trackers, AdGuard generates a special (and unique) root certificate and installs it into the system storage. You can learn more about why a certificate is required by reading [this article](/general/https-filtering/what-is-https-filtering).
+HTTPSトラフィックをフィルタリングし、広告やトラッカーを効率的にブロックするために、AdGuardは特別でユニークなルート証明書を生成し、システムストレージにその証明書をインストールします。 （なぜ証明書が必要なのかについて詳しくは、[こちらの記事](/general/https-filtering/what-is-https-filtering)をご覧ください。）
 
-Normally browsers trust the AdGuard certificate once it's added to the system certificate storage during the installation process. But in some cases this is not enough and you may come across warnings or errors. This happens most often in Firefox-based browsers like Mozilla Firefox, PaleMoon, Waterfox, etc., or in Yandex.Browser.
+AdGuard証明書がインストールプロセス中にシステム証明書ストレージに追加されると、ブラウザは通常、その証明書を信頼します。 しかし、場合によってはこれだけでは不十分で、警告やエラーに出くわすこともあります。 この現象は、Mozilla Firefox、PaleMoon、WaterfoxなどのFirefoxベースブラウザや、Yandex.Browserでよく起こります。
 
-## *Potential Security Risk* error in Firefox-based browsers
+## Firefoxベースのブラウザにおける「*潜在的なセキュリティリスク*」エラー
 
-![Security risk error](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
+![セキュリティリスクエラー](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
 
-Old FireFox versions, as well as browsers based on them, do not trust certificates from the system storage, but only those from their local storage. Since v68, FireFox trusts the system certificates, but you still can face the "Connection is untrusted" error. If something like this happens, first try to click the *Reinstall Certificate* button — you will find it in the *Network* tab.
+旧バージョンのFireFoxや、それをベースとしたブラウザは、システムストレージの証明書を信用せず、ローカルストレージの証明書のみを信用します。 バージョン 68 以降、FireFox はシステム証明書を信頼しますが、それでも「接続が信頼されていません」というエラーが発生する可能性があります。 このようなことが起こった場合は、まずはAdGuardの[*ネットワーク*]タブにある*[証明書を再インストールする*]ボタンをクリックしてみてください。
 
-![Reinstall Certificate](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
+![証明書を再インストール](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
 
-If that doesn't help, follow the instructions for manually adding the AdGuard certificate to the FireFox storage.
+それでも解決しない場合は、AdGuard証明書をFireFoxのストレージに手動で追加する手順に従ってください。
 
-> This instruction is for Firefox browser. Names of buttons and menu items may differ in other Firefox-based browsers.
+> ※以下の手順はFirefoxブラウザ用です。 他のFirefoxベースのブラウザでは、ボタンやメニューの名前が多少異なる場合があります。
 
-1. Run AdGuard.
+1. AdGuard を起動します。
 
-1. Go to [http://local.adguard.org/cert](http://local.adguard.org/cert) and click the *Download* button. The browser should start downloading **cert.cer** file.
+1. [http://local.adguard.org/cert](http://local.adguard.org/cert) にアクセスし、 *ダウンロード* ボタンをクリックします。 ブラウザは **cert.cer** ファイルのダウンロードを開始するはずです。
 
     :::note
 
-    You can also open the download page by clicking the link via the AdGuard app at *Settings → Network → HTTPS filtering*.
+    また、AdGuardアプリの*[設定]→[ネットワーク]→[HTTPSフィルタリング]*からリンクをクリックしてダウンロードページを開くこともできます。
 
 
 :::
 
-    ![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
+    ![証明書の設定](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
 
-1. Open your browser and then open *Settings*.
+1. ブラウザを開き、 *設定*を開きます。
 
-1. Go to *Privacy & Security* tab.
+1. *プライバシーとセキュリティ* タブに移動します。
 
-1. Scroll down to *Certificates* and click the *View Certificates* button.
+1. *証明書* まで下にスクロールし、 *証明書を表示* ボタンをクリックします。
 
-    ![View certificates window](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
+    ![証明書ウィンドウを表示](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
 
-1. Select *Authorities* tab.
+1. *権限* タブを選択します。
 
-1. Click *Import...*.
+1. 「*インポート...*」をクリックします。
 
-    ![Certificate settings — import](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
+    ![証明書設定 - インポート](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
 
-1. Browse the downloaded **cert.cer** file and click *Open*.
+1. ダウンロードした **cert.cer** ファイルを参照して、 「*開く*」をクリックします。
 
-1. Check the *Trust this CA to identify websites* box and then click *OK*.
+1. *[この認証局によるウェブサイトの識別を信頼する*] ボックスにチェックを入れ、 *[OK]*をクリックします。
 
-    ![Certificate settings — checkbox](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
+    ![証明書設定 - チェックボックス](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
 
-You've successfully installed AdGuard certificate. Restart the browser and the error should go away.
+これで、AdGuard証明書のインストールは完了です。 ブラウザを再起動すればエラーは解消するはずです。
 
-## Yandex.Browser certificate warning
+## Yandex.Browser証明書の警告
 
-If you are a user of both AdGuard for Windows and Yandex.Browser you may have come across this warning:
+AdGuard for Windows と Yandex.Browserの両方のユーザーであれば、この警告に出くわしたことがあるかもしれません:
 
-![Yandex certificate warning](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
+![Yandex 証明書の警告](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
 
-### Why is this happening
+### なぜこのようなことが起こるのか
 
-Both AdGuard and Yandex take users' security on the Internet very seriously. Current Yandex policy is to warn their users about any certificate that is not recognized by the browser. This is not unsubstantiated, because sometimes malicious apps can inject their own certificates and use this to harm the system and steal private data.
+AdGuardとYandexの両社は、インターネット上のユーザーのセキュリティを非常に重視しています。 現在の Yandex のポリシーでは、ブラウザで認識されない証明書についてはユーザーに警告することになっています。 これは根拠のない話ではありません。悪意のあるアプリが独自の証明書を挿入し、それを使ってシステムに危害を加えたり、個人情報を盗んだりすることがあるからです。
 
-However, AdGuard also adds its certificate to the trusted ones. This leads to the warning message you have encountered.
+しかし、AdGuardもその証明書を信頼できるものに追加します。 これにより、例の警告メッセージが表示されます。
 
-### How to solve the problem
+### この問題を解決する方法
 
-The easiest way is to click the **Go to site** button. This will tell Yandex.Browser to remember AdGuard certificate as a trusted one, at least for a while. Normally, you won't have to see this message anymore, but it is not beyond the realm of possibility for it to appear occasionally, for whatever reasons. In such cases, simply press the same button again *(make sure it is AdGuard's certificate!)*.
+最も簡単な方法は、「**サイトへ移動」**ボタンをクリックすることです。 これによりYandex.Browserは、しばらくの間はAdGuard証明書を信頼できるものとして記憶するようになります。 通常、例のメッセージを見ることはなくなりますが、何らかの理由で時折表示される可能性はゼロではありません。 このような場合は、同じボタンをもう一度押すだけで解決します *(※AdGuard 証明書に関する警告であることにご注意ください。)*
 
-Disabling the HTTPS filtering in AdGuard will also prevent Yandex.Browser from showing this message again, but it comes with a big price: all ads that are loaded by HTTPS (including **Yandex's own ads**) will show up — on such websites as YouTube, Facebook, Instagram, and many more. We strongly advise against it if you want to keep the quality of ad blocking high.
+AdGuardのHTTPSフィルタリングを無効にした場合も、Yandex.Browserがこのメッセージを再び表示することはなくなりますが、それには大きな代償が伴います。HTTPSで読み込まれるすべての広告（**Yandex独自の広告**を含む）が、YouTube、Facebook、Instagramなどのウェブサイトで表示されるようになってしまいます。 広告ブロックの質を高く保ちたいのであれば、HTTPSフィルタリングをオフにする方法はお勧めできません。
