@@ -13,7 +13,7 @@ K modulu DNS ochrana se dostanete klepnutím na kartu _Ochrana_ (druhá ikona vl
 
 :::tip
 
-DNS ochrana funguje jinak než běžné blokování reklam a slídičů. [Více informací o tom, jak to funguje, najdete ve vyhrazeném článku](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
+DNS ochrana funguje jinak než běžné blokování reklam a slídičů. You can [learn more about it and how it works from a dedicated article](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
 
 :::
 

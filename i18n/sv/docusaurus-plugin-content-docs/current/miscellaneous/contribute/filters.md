@@ -13,7 +13,7 @@ Websites constantly change the way they embed ads, and we add new rules to our f
 
 However, working with blocking filters requires specific skills. If you have them and know how to create rules, then head straight to our [AdGuard Filters repository](https://github.com/AdguardTeam/AdguardFilters) on GitHub. There you will find a lot of open issues, each one referencing a problem with some website problem — a missed ad, a false positive, etc. Choose any and suggest your own rules in comments. AdGuard filter engineers will review your suggestions, and if they find them appropriate, your rules will be added to AdGuard filters.
 
-If you are not yet familiar with our filtering rule syntax, or maybe need a refresher, you'll find the basics about the syntax [in our Knowledge base](/general/ad-filtering/create-own-filters).
+If you are not yet familiar with our filtering rule syntax, or maybe need a refresher, you'll find the basics about the syntax [in our Knowledge Base](/general/ad-filtering/create-own-filters).
 
 ### Rewards {#rewards}
 

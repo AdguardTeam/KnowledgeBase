@@ -39,7 +39,7 @@ AdGuard подключается к двум хостам: `api.adguard.org` и 
 
 :::note
 
-If you have installed AdGuard for Windows from an MSI file, AdGuard will not be updated automatically. To allow manual updates:
+If you have installed AdGuard for Windows from an MSI file, AdGuard will not be updated automatically. Чтобы разрешить обновления вручную:
 
 - In versions released after v7.16, delete the `ForbidCheckUpdates` parameter or set its value to `NO` (case-insensitive) in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
 
@@ -51,4 +51,4 @@ Please note that such installation of the application and manual updates are not
 
 ## 5. Протестируйте установку {#installation-test}
 
-Запустите AdGuard на целевой машине. Откройте экран лицензии, чтобы проверить, что используется установленная вами лицензия. Возможно, вам придётся кликнуть по кнопке «Обновить статус», чтобы AdGuard проверил лицензионный ключ.
+Запустите AdGuard на целевой машине. Open the license screen to check that it is using the specified license. Возможно, вам придётся кликнуть по кнопке «Обновить статус», чтобы AdGuard проверил лицензионный ключ.

@@ -9,7 +9,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-On Android devices running OS 6 and earlier, built-in statistics often attributed high data and/or battery usage to AdGuard. Bunun nedeni, AdGuard'ın çeşitli uygulamalardan filtrelediği tüm trafiği saymasıdır. Sonuç olarak, AdGuard'ın toplam veri ve pil kullanımındaki payı abartılırken, diğer uygulamalar olduğundan az gösterildi.
+Due to built-in statistics processes, high data and/or battery consumption was often attributed to AdGuard by Android 6 and earlier. Bunun nedeni, AdGuard'ın çeşitli uygulamalardan filtrelediği tüm trafiği saymasıdır. Sonuç olarak, AdGuard'ın toplam veri ve pil kullanımındaki payı abartılırken, diğer uygulamalar olduğundan az gösterildi.
 
 With Android 7, however, this scenario has improved. Now the data reflected in Android's built-in data usage statistics is very close to reality, although there are minor discrepancies in the battery usage data.
 

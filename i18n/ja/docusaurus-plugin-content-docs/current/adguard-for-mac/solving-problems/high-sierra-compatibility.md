@@ -9,7 +9,7 @@ sidebar_position: 3
 
 :::
 
-macOS High Sierra (またはそれ以降のバージョン) に AdGuard をインストールしているときに、「システム拡張がブロックされました」というメッセージが表示される場合があります。 これは High Sierra で登場した新しいセキュリティメカニズムであり、サードパーティのシステム拡張のインストールを明示的に許可する必要があります。 AdGuard のインストールを完了するには、 *システム環境設定* → *セキュリティ & プライバシー* → *一般* で拡張機能の読み込みを手動で許可する必要があります。
+During the installation of AdGuard on macOS High Sierra (or later), you may see this message: "System Extension Blocked". これは High Sierra で登場した新しいセキュリティメカニズムであり、サードパーティのシステム拡張のインストールを明示的に許可する必要があります。 AdGuard のインストールを完了するには、 *システム環境設定* → *セキュリティ & プライバシー* → *一般* で拡張機能の読み込みを手動で許可する必要があります。
 
 ![設定で拡張機能のインストールを許可する](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/highsierra.png)
 

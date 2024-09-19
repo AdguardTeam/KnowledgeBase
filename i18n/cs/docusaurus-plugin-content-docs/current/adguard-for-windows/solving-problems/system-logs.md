@@ -1,5 +1,5 @@
 ---
-title: Jak shromažďovat systémové záznamy Windows
+title: How to collect Windows system logs
 sidebar_position: 5
 ---
 
@@ -15,7 +15,7 @@ Data and/or files provided in system logs are processed in accordance with [the 
 
 :::
 
-K analýze a diagnostice různých problémů, které mohou potenciálně nastat, může služba podpory AdGuard potřebovat soubory záznamů Windows. Záznamy událostí systému Windows obsahují záznamy o všech chybách, které se vyskytnou v nainstalovaném softwaru, včetně AdGuardu. Níže je uveden stručný návod popisující způsoby, jak získat soubory záznamů a v případě potřeby je odeslat službě podpory.
+K analýze a diagnostice různých problémů, které mohou potenciálně nastat, může služba podpory AdGuard potřebovat soubory záznamů Windows. Windows event logs contain records about all errors that occur with the installed software, including AdGuard. Níže je uveden stručný návod popisující způsoby, jak získat soubory záznamů a v případě potřeby je odeslat službě podpory.
 
 1. Stiskněte *Win + R*
 

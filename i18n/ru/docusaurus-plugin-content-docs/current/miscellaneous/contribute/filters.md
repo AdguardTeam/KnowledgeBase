@@ -13,7 +13,7 @@ sidebar_position: 4
 
 Работа с фильтрами, блокирующими рекламу, требует специальных навыков. Если они у вас есть, и вы знаете, как создавать правила, то направляйтесь прямо в наш репозиторий [AdGuard Filters](https://github.com/AdguardTeam/AdguardFilters) на GitHub. Там вы найдёте множество открытых вопросов, каждый из которых ссылается на проблему с каким-либо сайтом — пропущенное объявление, ложное срабатывание и т. д. Выбирайте любой и предлагайте свои правила в комментариях. Инженеры фильтров AdGuard рассмотрят ваше предложение и добавят правило в фильтры, если оно окажется корректным.
 
-Если вы ещё не знакомы с синтаксисом наших правил фильтрации или просто хотите освежить знания, то вам нужно обратиться к [нашей Базе знаний](/general/ad-filtering/create-own-filters).
+If you are not yet familiar with our filtering rule syntax, or maybe need a refresher, you'll find the basics about the syntax [in our Knowledge Base](/general/ad-filtering/create-own-filters).
 
 ### Как мы благодарим помощников {#rewards}
 

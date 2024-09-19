@@ -21,7 +21,7 @@ Per trovare le *Impostazioni Avanzate*, apri AdGuard, clicca sull'icona dell'ing
 
 ## Impostazioni Avanzate
 
-### Network settings
+### Impostazioni di rete
 
 #### `network.extension.exclude.domains`
 
@@ -71,7 +71,7 @@ Tempo, in secondi, prima dell'invio di un'altra richiesta keepalive verso un pee
 
 #### `network.https.ech.enabled`
 
-Utilizza un proxy DNS locale per cercare le configurazioni nella lista di configurazioni ECH. Se trovata, cripta ClientHellos.
+Utilizza un proxy DNS locale per cercare le configurazioni nella lista di configurazioni ECH. Se trovata, cripta Client Hello.
 
 #### `network.https.enforce.certificate.transparency`
 
@@ -89,7 +89,7 @@ Impostando `true`, abiliti il filtraggio della rete locale.
 
 Impostando `true`, abiliti il filtraggio LoopBack.
 
-### DNS settings
+### Impostazioni DNS
 
 #### `dns.proxy.bootstrap.ips`
 

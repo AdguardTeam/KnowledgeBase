@@ -35,10 +35,10 @@ Data and/or files provided in dump files are processed in accordance with [the A
 
 :::note
 
-AdGuard для Windows имеет два запущенных процесса (`Adguard.exe` и `AdguardSvc.exe`). Поэтому вам нужно создать файл дампа отдельно для каждого процесса.
+AdGuard for Windows has two running processes, `Adguard.exe` and `AdguardSvc.exe`. Therefore, it's necessary to create a separate dump file for each process.
 
 :::
 
 ![Процессы AdGuard](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
 
-Когда вы отправляете файлы дампа команде поддержки, пожалуйста, отправьте их вместе с логами, чтобы мы могли решить проблему как можно быстрее. [Здесь](../adguard-logs) вы можете ознакомиться с инструкцией по сбору логов AdGuard.
+Когда вы отправляете файлы дампа команде поддержки, пожалуйста, отправьте их вместе с логами, чтобы мы могли решить проблему как можно быстрее. [Here](../adguard-logs) you can check the instructions on how to get the log file.

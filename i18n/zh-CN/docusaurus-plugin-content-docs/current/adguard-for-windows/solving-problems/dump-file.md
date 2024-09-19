@@ -35,10 +35,10 @@ sidebar_position: 8
 
 :::note
 
-Windows 版 AdGuard 有两个运行中的进程（`Adguard.exe` 和 `AdguardSvc.exe`）。 所以用户需要为它们分别创建转储文件。
+AdGuard for Windows has two running processes, `Adguard.exe` and `AdguardSvc.exe`. Therefore, it's necessary to create a separate dump file for each process.
 
 :::
 
 ![AdGuard 进程](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
 
-当您发送转储文件给我们的支持团队时，也请附上 AdGuard 程序日志以便我们更好的解决问题。 您可以[在此](../adguard-logs)检查收集日志文件的指示说明。
+当您发送转储文件给我们的支持团队时，也请附上 AdGuard 程序日志以便我们更好的解决问题。 [Here](../adguard-logs) you can check the instructions on how to get the log file.

@@ -29,11 +29,11 @@ AdGuard 可作为[用户脚本管理器](/general/userscripts)以显著扩展网
 
 此自定义扩展设计用于对抗重新插入已拦截广告技术，即所谓的广告拦截器规避/广告重新注入。 两者都是受广告商欢迎的先进的反广告拦截方式。
 
-AdGuard Extra 是一个改变页面工作方式的小程序。它改变页面的工作方式，使得网站更难以使用上述方法绕过拦截器。
+AdGuard Extra is essentially a miniprogram that changes the way pages work in such a way that it becomes much more difficult for sites to use the above-mentioned methods to bypass blockers.
 
 **AdGuard 弹窗拦截器**
 
-用户在查看网页时此扩展防止弹出窗口被打开。 一些弹窗被认为是有用的，它们可能包含网站管理设置或点击链接时显示附加参考信息。 这就是用户可按需关闭拦截器的原因。 此扩展程序也不适用于那些已添加到 AdGuard 排除项列表的网站。 默认情况下其是关闭的，但用户可以在应用程序设置内打开它。 用户可以在我们的知识库内找到更多关于此扩展到信息。
+用户在查看网页时此扩展防止弹出窗口被打开。 一些弹窗被认为是有用的，它们可能包含网站管理设置或点击链接时显示附加参考信息。 这就是用户可按需关闭拦截器的原因。 此扩展程序也不适用于那些已添加到 AdGuard 排除项列表的网站。 默认情况下其是关闭的，但用户可以在应用程序设置内打开它。 You will find more detailed information about this extension in our Knowledge Base.
 
 **Web of Trust**（信任网站）
 
@@ -41,7 +41,7 @@ Web of Trust 让用户根据自己的意见查看每个网站的声誉。 网站
 
 ### 网络
 
-倒数第二个模块专用于网络过滤，用户可以在此处找到附加的网络相关选项。 其中两项默认启动：「开启流量过滤」和「过滤 HTTPS 协议」。 这些重要的额外预防措施可更好地过滤您的网络空间。 当前大部分网站使用 HTTPS，广告亦是如此。 众多网站，如 youtube.com，facebook.com 和 twitter.com，不进行 HTTPS 过滤是无法移除广告的。 因此除非用户有充分的理由不开启它，否则请保持「过滤 HTTPS 协议」功能的开启状态。
+倒数第二个模块专用于网络过滤，用户可以在此处找到附加的网络相关选项。 Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS_. 这些重要的额外预防措施可更好地过滤您的网络空间。 当前大部分网站使用 HTTPS，广告亦是如此。 From many sites, like youtube.com, facebook.com and x.com, it is impossible to remove ads without HTTPS filtering. So keep the _Filter HTTPS_ feature enabled unless you have a strong reason not to.
 
 ![网络设置 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 

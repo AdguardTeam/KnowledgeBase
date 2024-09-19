@@ -5,13 +5,13 @@ sidebar_position: 3
 
 Ser víctima de phishing y malware sigue siendo un problema común. Para mejorar la seguridad digital, hemos incorporado filtros especiales en los productos AdGuard para protegerte de sitios web maliciosos y de phishing. Hasta hoy, hemos categorizado más de 15 millones de sitios y creado una base de datos de 1,5 millones de sitios web conocidos por phishing y malware. Al utilizar esta base de datos, AdGuard verifica los sitios web que visitas para protegerte de amenazas en línea.
 
-::: note
+:::note
 
 Estrictamente no recopilamos ni utilizamos ninguna información sobre los sitios web que visitas.
 
 :::
 
-## ¿Cómo AdGuard verifica los sitios web?
+## How does AdGuard check websites?
 
 Cada vez que visitas un sitio web, tu cliente local intercambia información con nuestro servidor backend en forma de hash y prefijos hash. En base a este intercambio, el cliente local determina si el sitio web figura o no en la base de datos de sitios web potencialmente peligrosos. Hay una diferencia en el alcance de esta verificación para aplicaciones y extensiones.
 
@@ -61,11 +61,11 @@ AdGuard mantiene una extensa base de datos de sitios web de phishing y malware, 
 
 Analizamos automáticamente las quejas sobre sitios sospechosos y dedicamos mucho tiempo a mantener actualizada la base de datos, limpiando falsos positivos e implementando mecanismos para prevenirlos en el futuro.
 
-### ¿Quieres ayudar?
+### Want to help?
 
 ¡Toda ayuda es bienvenida! Si encuentras un sitio web de phishing o malware, infórmalo a <support@adguard.com>.
 
-### Falsos positivos​
+### False-positive responses
 
 Ocasionalmente, se agregan algunos sitios web no maliciosos a los filtros de AdGuard. Hacemos todo lo posible para reducir el porcentaje de falsos positivos, pero aún así ocurren. Si encuentras este comportamiento de AdGuard, por favor reporta el falso positivo a nuestro soporte técnico en <support@adguard.com>.
 

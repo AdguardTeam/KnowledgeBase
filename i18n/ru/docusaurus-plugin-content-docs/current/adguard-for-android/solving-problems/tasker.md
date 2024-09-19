@@ -41,13 +41,13 @@ sidebar_position: 3
 
 `enable:true` или `enable:false` соответственно включает или выключает DNS-фильтрацию.
 
-`fake_dns` allows resolving DNS requests on the specified proxy server. This requires an extra flag:
+`fake_dns` allows resolving DNS requests on the specified proxy server. В поле Extra нужно добавить информацию:
 
 `enable:true` or `enable:false` enables or disables the *Use FakeDNS* setting, respectively.
 
 :::note
 
-When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automatically disabled. DNS requests won't be filtered locally.
+When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automatically disabled. DNS-запросы не будут фильтроваться локально.
 
 :::
 
@@ -65,7 +65,7 @@ When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automaticall
 
  `server:custom` переключается на ранее добавленный сервер с именем `custom`;
 
- `server:tls://dns.adguard.com` создаёт новый сервер и переключается на него, если среди ранее добавленных серверов и провайдеров нет сервера с таким же адресом. В противном случае он переключается на соответствующий сервер. You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or `tls://...` (DNS-over-TLS);
+ `server:tls://dns.adguard.com` создаёт новый сервер и переключается на него, если среди ранее добавленных серверов и провайдеров нет сервера с таким же адресом. В противном случае он переключается на соответствующий сервер. Адреса серверов можно добавлять в виде IP (обычный DNS), `sdns://…` (DNSCrypt или DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) или `tls://...` (DNS-over-TLS);
 
  `server:1.1.1.1, tls://1.1.1.1` создаёт сервер с адресами через запятую и переключается на него. При добавлении сервера через `server:1.1.1.1, tls://1.1.1.1` ранее добавленный сервер удаляется.
 
@@ -126,7 +126,7 @@ When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automaticall
 
 :::
 
-**Не забудьте дополнительно указать пароль, имя приложения (package) и класс. Это нужно делать для каждого интента.**
+**Don't forget to include the password, package name, and class. Это нужно делать для каждого интента.**
 
 Extra: `password:*******`
 
@@ -136,7 +136,7 @@ Class: `com.adguard.android.receiver.AutomationReceiver`
 
 :::note
 
-До версии 4.0 класс назывался `com.adguard.android.receivers.AutomationReceiver`, но затем мы изменили его название на `com.adguard.android.receiver.AutomationReceiver`. Если вы пользовались этой функцией, пожалуйста, используйте новое название.
+До версии 4.0 класс назывался `com.adguard.android.receivers.AutomationReceiver`, но затем мы изменили его название на `com.adguard.android.receiver.AutomationReceiver`. If this function is used, remember to update to the new name.
 
 :::
 

@@ -71,7 +71,7 @@ Tempo, em segundos, antes de enviar outra sonda de manutenção de atividade par
 
 #### `network.https.ech.enabled`
 
-Usa um proxy DNS local para procurar configurações nas listas de configurações ECH. Se encontrado, criptografa ClientHellos.
+Usa um proxy DNS local para procurar configurações nas listas de configurações ECH. If found, encrypts Client Hellos.
 
 #### `network.https.enforce.certificate.transparency`
 

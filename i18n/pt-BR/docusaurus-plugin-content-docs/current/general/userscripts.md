@@ -4,7 +4,7 @@ sidebar_position: 5
 toc_max_heading_level: 4
 ---
 
-Userscripts (também chamados de "extensões") são, na verdade, miniprogramas escritos em JavaScript. Eles modificam ou ampliam a funcionalidade de um ou mais websites. Muitos usuários do AdGuard já podem estar familiarizados com scripts de usuário como o Assistente AdGuard, o Bloqueador de pop-ups e o AdGuard Extra.
+Userscripts (we also call them "extensions") are, de facto, miniprograms written in JavaScript. Eles modificam ou ampliam a funcionalidade de um ou mais websites. Muitos usuários do AdGuard já podem estar familiarizados com scripts de usuário como o Assistente AdGuard, o Bloqueador de pop-ups e o AdGuard Extra.
 
 :::note Aplicativos compatíveis
 
@@ -134,7 +134,7 @@ Aqui está um [link mailto](mailto:devteam@adguard.com?Subject=Userscript%20auth
 
 ##### Propriedades não compatíveis
 
-Essas propriedades serão simplesmente ignoradas pelo Adguard.
+These properties will be simply ignored by AdGuard.
 
 ```text
 @unwrap

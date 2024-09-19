@@ -9,7 +9,7 @@ Este artículo trata sobre AdGuard para Mac, un bloqueador de anuncios multifunc
 
 :::
 
-Durante la instalación de AdGuard en macOS High Sierra (o versiones posteriores), es posible que veas un mensaje: "Extensión del sistema bloqueada". Este es un nuevo mecanismo de seguridad que apareció en High Sierra y requiere que permitas explícitamente la instalación de una extensión del sistema de terceros. Para completar la instalación de AdGuard, tienes que permitir manualmente la carga de la extensión en *Preferencias del Sistema* → *Seguridad & Privacidad* → *General*.
+During the installation of AdGuard on macOS High Sierra (or later), you may see this message: "System Extension Blocked". Este es un nuevo mecanismo de seguridad que apareció en High Sierra y requiere que permitas explícitamente la instalación de una extensión del sistema de terceros. Para completar la instalación de AdGuard, tienes que permitir manualmente la carga de la extensión en *Preferencias del Sistema* → *Seguridad & Privacidad* → *General*.
 
 ![Permitir la instalación de extensiones en la configuración](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/highsierra.png)
 

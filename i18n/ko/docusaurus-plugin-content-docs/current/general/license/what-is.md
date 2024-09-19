@@ -1,5 +1,5 @@
 ---
-title: AdGuard 라이선스란 무엇인가요?
+title: What is an AdGuard license?
 sidebar_position: 1
 ---
 
@@ -12,7 +12,7 @@ sidebar_position: 1
 - **연간 구독** — 이 라이선스는 매년 자동으로 갱신되거나 수동으로 연장할 수 있습니다.
     - 개인용 — 최대 3개의 기기
     - 가족용 — 최대 9개의 기기
-- **평생** — 이 라이선스는 기간 제한이 없습니다.
+- **Lifetime** — these licenses are perpetual
     - 개인용 — 최대 3개의 기기
     - 가족용 — 최대 9개의 기기
 

@@ -29,11 +29,11 @@ O Assistente AdGuard é um assistente antigo que você pode usar se o [novo assi
 
 Esta é uma extensão personalizada projetada para combater a técnica de reinserção de anúncios bloqueados, conhecida com evasão/reinjeção de anúncios do bloqueador de anúncios. Ambos são métodos avançados de bloqueio de anúncios que continuam a crescer em popularidade entre os anunciantes.
 
-O AdGuard Extra é basicamente um miniprograma que altera a forma como as páginas funcionam, de modo que se torna muito mais difícil para os sites usarem os métodos mencionados acima para contornar os bloqueadores.
+AdGuard Extra is essentially a miniprogram that changes the way pages work in such a way that it becomes much more difficult for sites to use the above-mentioned methods to bypass blockers.
 
 **Bloqueador de pop-ups do AdGuard**
 
-Esta extensão evita que janelas popup sejam abertas quando você visualiza páginas da web. Algumas popups são consideradas úteis: elas podem conter configurações para administração do site ou informações de referência adicionais demonstradas ao clicar em um link. É por isso que você pode desligar o bloqueador, se necessário. Esta extensão também não funciona em sites adicionados à lista de exceções do AdGuard. Ele está desativado por padrão, mas você pode ativá-lo nas configurações do aplicativo. Você encontrará informações mais detalhadas sobre esta extensão em nossa base de conhecimento.
+Esta extensão evita que janelas popup sejam abertas quando você visualiza páginas da web. Algumas popups são consideradas úteis: elas podem conter configurações para administração do site ou informações de referência adicionais demonstradas ao clicar em um link. É por isso que você pode desligar o bloqueador, se necessário. Esta extensão também não funciona em sites adicionados à lista de exceções do AdGuard. Ele está desativado por padrão, mas você pode ativá-lo nas configurações do aplicativo. You will find more detailed information about this extension in our Knowledge Base.
 
 **Web of Trust**
 
@@ -41,7 +41,7 @@ O Web of Trust permite que você veja a reputação de cada site com base nas op
 
 ### Rede
 
-O penúltimo módulo é dedicado à filtragem de rede e aqui você encontrará opções adicionais relacionadas à rede. Dois deles estão habilitados por padrão: _Habilitar filtragem de tráfego_ e _Filtrar protocolo HTTPS_. Estas são precauções extras importantes para filtrar melhor o seu espaço web. A maioria dos sites agora usa HTTPS, e o mesmo se aplica à publicidade. Em muitos sites, como youtube.com, facebook.com e twitter.com, é impossível remover anúncios sem filtragem HTTPS. Portanto, mantenha o recurso _Filtrar protocolo HTTPS_ ativado, a menos que você tenha um forte motivo para não fazê-lo.
+O penúltimo módulo é dedicado à filtragem de rede e aqui você encontrará opções adicionais relacionadas à rede. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS_. Estas são precauções extras importantes para filtrar melhor o seu espaço web. A maioria dos sites agora usa HTTPS, e o mesmo se aplica à publicidade. From many sites, like youtube.com, facebook.com and x.com, it is impossible to remove ads without HTTPS filtering. So keep the _Filter HTTPS_ feature enabled unless you have a strong reason not to.
 
 ![Configurações de rede \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 

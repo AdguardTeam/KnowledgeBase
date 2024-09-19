@@ -1,5 +1,5 @@
 ---
-title: 如何收集 Windows 系统日志
+title: How to collect Windows system logs
 sidebar_position: 5
 ---
 
@@ -15,7 +15,7 @@ sidebar_position: 5
 
 :::
 
-要分析和诊断可能潜在的问题，AdGuard 支持服务可能需要 Windows 系统日志文件。 Windows 事件日志记录着所有已安装软件发生的错误，包括 AdGuard 在内。 下面我们简述获取日志文件的方式并在需要的时候反送给我们的支持服务。
+要分析和诊断可能潜在的问题，AdGuard 支持服务可能需要 Windows 系统日志文件。 Windows event logs contain records about all errors that occur with the installed software, including AdGuard. 下面我们简述获取日志文件的方式并在需要的时候反送给我们的支持服务。
 
 1. 按「*Win + R*」
 

@@ -31,7 +31,7 @@ Como consequência, o AdGuard não pode funcionar em conjunto com os recursos de
 
 1. O iCloud Private Relay é aplicado às conexões no nível da biblioteca antes que elas atinjam o nível do soquete, onde o AdGuard opera.
 2. O iCloud Private Relay usa QUIC, que o AdGuard não pode filtrar porque a filtragem HTTP/3 ainda não está disponível.
-3. Consequentemente, o AdGuard bloqueia o QUIC, incluindo o tráfego do iCloud Private Relay. Caso contrário, o bloqueio de anúncios é impossível.
+3. Consequently, AdGuard blocks QUIC, including iCloud Private Relay traffic —otherwise, ad blocking is impossible.
 4. Ao usar o iCloud Private Relay e alternar o AdGuard para o modo "túnel dividido", você não poderá abrir sites no Safari.
 5. Para contornar esse problema em Monterey, aplicamos a regra da "rota padrão". Quando o Private Relay vê essa regra, ele se desativa automaticamente. Portanto, o AdGuard funciona perfeitamente em Monterey, mas o iCloud Private Relay é desativado.
 

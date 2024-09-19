@@ -23,7 +23,7 @@ sidebar_position: 2
 
 Microsoft Windows의 PC 또는 태블릿에서 AdGuard를 사용하려면 설치 패키지를 다운로드하고 설치하면 됩니다. 다음 단계를 따라와 보세요.
 
-1. [AdGuard 웹사이트](http://adguard.com)로 이동하여 [열린 페이지](https://adguard.com/download.html?auto=1)에서 *다운로드*를 클릭합니다.
+1. Go to the [AdGuard website](http://adguard.com) in the address bar and click *Download* [on the homepage](https://adguard.com/download.html?auto=1).
 
    ![Download AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
 
@@ -91,7 +91,7 @@ Follow the next steps only if performing the first two steps wasn’t enough for
 
 :::
 
-- Select *AdGuard Ad Blocker* and *Extended* uninstall type, then click *Uninstall*. Clcik *Yes, continue* in the window prompt.
+- Select *AdGuard Ad Blocker* and *Extended* uninstall type, then click *Uninstall*. Click *Yes, continue* in the window prompt.
 
 ![Extended uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
 

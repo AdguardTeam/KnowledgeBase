@@ -113,7 +113,7 @@ Use it only for debugging purposes!
 
 #### Encrypted Client Hello
 
-Toda conexión a Internet cifrada tiene una parte no cifrada. Este es el primer paquete que contiene el nombre del servidor al que te estás conectando. La tecnología Encrypted Client Hello resuelve este problema y cifra la última parte de la información no cifrada. To benefit from it, enable the *Encrypted Client Hello* option. Utiliza un proxy DNS local para buscar la configuración de ECH para el dominio. Si se encuentra, el paquete ClientHello se cifrará.
+Toda conexión a Internet cifrada tiene una parte no cifrada. Este es el primer paquete que contiene el nombre del servidor al que te estás conectando. La tecnología Encrypted Client Hello resuelve este problema y cifra la última parte de la información no cifrada. To benefit from it, enable the *Encrypted Client Hello* option. Utiliza un proxy DNS local para buscar la configuración de ECH para el dominio. If it is found, Client Hello packet will be encrypted.
 
 #### OCSP checking
 
@@ -147,7 +147,7 @@ Here you can specify port ranges that should be filtered.
 
 If this setting is enabled, AdGuard will record blocked HTML elements in *Recent activity*.
 
-#### Scriplet debugging
+#### Scriptlet debugging
 
 If this setting is enabled, debugging in scriptlets will be activated, and the browser log will record when scriptlet rules are applied.
 

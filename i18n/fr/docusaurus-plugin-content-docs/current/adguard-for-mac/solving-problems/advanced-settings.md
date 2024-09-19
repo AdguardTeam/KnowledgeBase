@@ -71,7 +71,7 @@ Temps, en secondes, avant d'envoyer une autre sonde keepalive à un homologue qu
 
 #### `network.https.ech.enabled`
 
-Utilise un proxy DNS local pour rechercher des configurations dans les listes de configuration ECH. S'il est trouvé, il crypte ClientHellos.
+Utilise un proxy DNS local pour rechercher des configurations dans les listes de configuration ECH. If found, encrypts Client Hellos.
 
 #### `network.https.enforce.certificate.transparency`
 

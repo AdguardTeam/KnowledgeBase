@@ -1,5 +1,5 @@
 ---
-title: HAR 파일을 수집하는 방법
+title: How to generate a HAR file
 sidebar_position: 1
 ---
 

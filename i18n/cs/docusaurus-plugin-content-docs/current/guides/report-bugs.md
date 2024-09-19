@@ -17,7 +17,7 @@ Zkontrolujte, zda nebyla chyba nahlášena již dříve. Doporučujeme věnovat 
 
 ### Jak popsat problém
 
-Pokuste se uvést co nejvíce podrobností — usnadníte nám tak reprodukci chyby a zjistíme, jak ji opravit. V hlášení o chybě očekáváme následující informace:
+Pokuste se uvést co nejvíce podrobností — usnadníte nám tak reprodukci chyby a zjistíme, jak ji opravit. Here’s what we expect a bug report to include:
 
 - Verzi aplikace
 - Verzi OS
@@ -26,9 +26,9 @@ Pokuste se uvést co nejvíce podrobností — usnadníte nám tak reprodukci ch
 - Zda se problém opakuje a s jakou frekvencí
 - Jestli používáte VPN nebo antivirový software
 
-### Jak shromažďovat a záznamy
+### How to collect logs
 
-O shromažďování záznamů se dočtete v článcích věnovaných jednotlivým platformám.
+Read about collecting logs in dedicated articles for each platform.
 
 ## Jak hlasovat pro hlášení chyb nebo požadavky na funkce
 

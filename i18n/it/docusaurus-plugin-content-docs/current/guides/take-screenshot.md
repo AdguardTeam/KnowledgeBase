@@ -52,17 +52,17 @@ Su alcuni portatili, devi tenere premuti *Fn* e *PrtScn*.
 
 Windows cattura l'intera schermata e la copia negli appunti.
 
-Per scattare uno screenshot di una finestra attiva, utilizza la seguente scorciatoia:
+To take a screenshot of an active window, use the following shortcut keys:
 
 - **Tieni premuto *Alt* e *PrtScn* (o *Fn + Alt + PrtScn* su alcuni portatili)**
 
-Per scattare lo screenshot di un'area specifica, utilizza la seguente scorciatoia:
+To take a screenshot of a specific area, use the following shortcut keys:
 
 - ***Press ***Win + Shift + S******
 
-Dopo aver scattato uno screenshot, sarà salvato negli appunti. Nella maggior parte dei casi, potrai incollarlo in un documento che stai modificando utilizzando la scorciatoia *Ctrl + V*. Altrimenti, se necessiti di salvare lo screenshot in un file, dovresti aprire il programma standard **Paint** (o qualsiasi altra app che permetta di lavorare con le immagini). Incolla il tuo screenshot utilizzando la stessa scorciatoia, o utilizzando il tasto Incolla (solitamente, nell'angolo superiore sinistro della schermata), quindi salvalo.
+Dopo aver scattato uno screenshot, sarà salvato negli appunti. Nella maggior parte dei casi, potrai incollarlo in un documento che stai modificando utilizzando la scorciatoia *Ctrl + V*. Altrimenti, se necessiti di salvare lo screenshot in un file, dovresti aprire il programma standard **Paint** (o qualsiasi altra app che permetta di lavorare con le immagini). Paste your screenshot there using the same shortcut keys or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
 
-Windows 8 e 10 ti consentono di scattare uno screenshot molto rapidamente, con la scorciatoia *Win + PrtScn*. Appena premerai questi tasti, lo screenshot sarà automaticamente salvato come un file nella cartella *Immagini* → *Screenshot*.
+Windows 8 and 10 let you take a screenshot very quickly with the *Win + PrtScn* shortcut keys. Appena premerai questi tasti, lo screenshot sarà automaticamente salvato come un file nella cartella *Immagini* → *Screenshot*.
 
 Inoltre, esiste un programma dedicato per scattare screenshot, chiamato *Strumento di Cattura*, che puoi trovare nel menu Start, tra i programmi standard del tuo computer. Strumento di Cattura ti permette di catturare qualsiasi area del tuo desktop o l'intero schermo. Dopo aver scattato uno screenshot utilizzando questo programma, puoi modificare l'immagine e salvarla in qualsiasi cartella sul tuo computer.
 
@@ -70,26 +70,26 @@ Puoi inoltre provare a utilizzare svariate app per scattare screenshot sul tuo c
 
 ### macOS {#mac}
 
-Per effettuare uno screenshot su Mac, utilizza la seguente scorciatoia:
+To take a screenshot on Mac, use the following shortcut keys:
 
 - ***Premi e tieni premuti ***⌘ Cmd + Shift + 3******
 
 Il tuo Mac catturerà l'intera schermata e la salverà come un file sul desktop.
 
-Per scattare uno screenshot di una finestra attiva, utilizza la seguente scorciatoia:
+To take a screenshot of an active window, use the following shortcut keys:
 
 - **Premi e tieni premuti *⌘ Cmd + Shift + 4 + Barra spaziatrice*. Il puntatore si trasformerà nell'icona di una fotocamera. Clicca la finestra per catturarla. Premi Esc per annullare la creazione del screenshot**
 
-Per scattare lo screenshot di un'area specifica, utilizza la seguente scorciatoia:
+To take a screenshot of a specific area, use the following shortcut keys:
 
 - ***Premi ***⌘ Cmd + Shift + 5******. Trascina il puntatore per selezionare l'area necessaria. Rilascia il tuo mouse o trackpad per scattare uno screenshot, premi Esc per annullarlo.
 
-Per scattare uno screenshot della *Barra Tattile* (MacBook Pro), utilizza la seguente scorciatoia:
+To take a screenshot of the *Touch Bar* (MacBook Pro), use the following shortcut keys:
 
 - ***Premi ***⌘ Cmd + Shift + 6******
 
 Il tuo Mac cattura l'intera *Barra Tattile* e la salva come un file sul desktop.
 
-Per copiare uno screenshot negli appunti, invece di salvarlo, tieni premuto *Ctrl* con una qualsiasi delle precedenti scorciatoie da tastiera. Così, potrai incollare lo screenshot (dagli appunti) in un documento o un'immagine che stai modificando, utilizzando la scorciatoia *Cmd + V*.
+To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the shortcut keys above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* shortcut keys.
 
 Inoltre, puoi scattare gli screenshot utilizzando **Anteprima** e scegliendo **Scatta screenshot** (dell'area selezionata, della finestra o dell'intera schermata). Con **Anteprima**, puoi salvare i tuoi screenshot in JPG, TIFF, PDF e altri formati di file.

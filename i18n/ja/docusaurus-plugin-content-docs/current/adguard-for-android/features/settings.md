@@ -27,7 +27,7 @@ sidebar_position: 4
 
 「ウォッチドッグ（Watchdog）」は、AdGuard がシステムによって無効化されるのを防ぎます ([Android のバッテリー節約モードについてもお読みください](/adguard-for-android/solving-problems/background-work/))。 入力した値は、ウォッチドッグチェック間の間隔 (秒単位) になります。
 
-「ログ・レベル」は、アプリの操作に関するどのデータをログに記録するかを定義します。 「デフォルト」レベルでは、アプリはイベントに関するデータを収集します。 「デバッグ」レベルでは、より多くのイベントがログに記録されます。AdGuard チームから問題をより深く理解するために有効にするよう依頼されましたら、これを有効にしてください。 [ログの収集と送信について詳しくはこちら](/adguard-for-android/solving-problems/log/)
+「ログ・レベル」は、アプリの操作に関するどのデータをログに記録するかを定義します。 「デフォルト」レベルでは、アプリはイベントに関するデータを収集します。 「デバッグ」レベルでは、より多くのイベントがログに記録されます。AdGuard チームから問題をより深く理解するために有効にするよう依頼されましたら、これを有効にしてください。 [Read more about collecting and sending logs](/adguard-for-android/solving-problems/log/)
 
 ![Advanced \*mobile\_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
@@ -59,7 +59,7 @@ AdGuard は、フィルタのルールを適用することで、広告、トラ
 
 ### ユーザースクリプト
 
-ユーザースクリプトは、1 つ以上の Web サイトの機能を拡張するミニプログラムです。ユーザースクリプトは JavaScript で書かれています。 ユーザースクリプトをインストールするには、専用のユーザースクリプト・マネージャが必要です。 AdGuard にはこのようなマネージャー機能があるので、そのままURLまたはファイルからユーザースクリプトを追加することができます。
+Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. ユーザースクリプトをインストールするには、専用のユーザースクリプト・マネージャが必要です。 AdGuard にはこのようなマネージャー機能があるので、そのままURLまたはファイルからユーザースクリプトを追加することができます。
 
 ![Userscripts \*mobile\_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
@@ -133,7 +133,7 @@ AdGuardを、デバイスのすべてのトラフィックをプロキシサー�
 - [フルバージョンの機能](/adguard-for-android/features/free-vs-full)を有効にするためのAdGuardライセンス購入
 - AdGuard アカウントにログインするか、ライセンスキーを入力してライセンスを有効化
 - 7日間の無料試用期間をまだ利用していない場合は、登録して試用期間を有効にする
-- 右上の三点メニュー (⋮) からライセンスステータスを更新する
+- Refresh the license status from the three-dots menu (⋮)
 - AdGuard アカウントを開いてライセンスを管理する
 - ライセンスをリセットする（たとえば、ライセンスの最大デバイス数上限に達し、別のライセンスを適用したい場合などです。）
 

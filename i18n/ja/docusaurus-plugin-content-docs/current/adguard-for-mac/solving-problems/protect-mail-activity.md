@@ -31,7 +31,7 @@ Monterey では、iCloud プライベート リレーが登場しました。 Ma
 
 1. iCloud プライベートリレーは、ライブラリレベル（AdGuard が動作するソケットレベルに到達する前）で接続に適用されます。
 2. iCloud プライベートリレーは QUIC を使用しますが、HTTP/3 フィルタリングはまだ利用できないため、AdGuard はQUICをフィルタリングできません。
-3. その結果、AdGuard は iCloud プライベートリレー トラフィックを含む QUIC をブロックしてしまいます。そうしないと、広告をブロックすることは不可能になるからです。
+3. Consequently, AdGuard blocks QUIC, including iCloud Private Relay traffic —otherwise, ad blocking is impossible.
 4. iCloud プライベートリレーを使用し、AdGuard を「split-tunnel」モードに切り替えると、Safari で Web サイトを開くことができなくなります。
 5. Monterey でこの問題を回避するには、「デフォルトルート」ルールを適用します。 プライベートリレーはそのルールを検出すると、自動的に無効になります。 つまり、AdGuard は Monterey 上でシームレスに動作しますが、その場合、iCloud プライベート リレーは無効になります。
 

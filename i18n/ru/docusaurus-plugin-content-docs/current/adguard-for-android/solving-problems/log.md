@@ -1,31 +1,31 @@
 ---
-title: Как получить отладочные логи AdGuard
+title: How to collect debug logs
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Данные и/или файлы в логах обрабатываются в соответствии с [Политикой конфиденциальности AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-В этой статье мы расскажем вам о том, как собирать отладочные логи — важном этапе поиска неисправностей для решения сложных проблем, которые могут потенциально возникнуть. Отладочные логи позволяют получить подробное представление о внутреннем устройстве AdGuard для Android. Если команда поддержки AdGuard попросит вас предоставить отладочные логи, просто следуйте этим инструкциям.
+In this article, we'll guide you through the process of collecting debug logs, an essential troubleshooting step for solving complex issues that may potentially arise. Отладочные логи позволяют получить подробное представление о внутреннем устройстве AdGuard для Android. Если команда поддержки AdGuard попросит вас предоставить отладочные логи, просто следуйте этим инструкциям.
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard стремится защищать вашу конфиденциальность. Мы строго следуем нашей [Политике конфиденциальности](https://adguard.com/privacy/android.html) и не собираем никакой личной информации о пользователях. Перед отправкой логов в поддержку проверьте, не содержит ли файл дополнительную информацию, которую вы не хотите передавать. Если в файле осталась личная информация, рекомендуем удалить её.
 
 :::
 
-### Сбор отладочных логов
+### Запись отладочных логов
 
-Чтобы собрать **отладочные** логи и отправить их нам, сделайте следующее:
+To collect **debug** log and send it to us, you need to perform following steps:
 
 1. Перейдите на страницу *Настройки* → *Основные* → *Расширенные*.
 1. Выберите пункт *Уровень логирования* и установите его на *Записывать всё*.

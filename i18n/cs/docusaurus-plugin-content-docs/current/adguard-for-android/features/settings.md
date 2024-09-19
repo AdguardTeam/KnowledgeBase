@@ -27,7 +27,7 @@ _Automatizace_ vám umožňuje spravovat AdGuard prostřednictvím aplikací Tas
 
 _Hlídací pes_ pomáhá chránit AdGuard před vypnutím systémem ([přečtěte si více o úsporném režimu baterie systému Android](/adguard-for-android/solving-problems/background-work/)). Zadaná hodnota bude interval v sekundách mezi kontrolami watchdog.
 
-_Úroveň záznamu_ definuje, jaká data o provozu aplikace by měla být zaznamenána. Ve výchozím nastavení aplikace shromažďuje údaje o vlastních událostech. _Úroveň ladění_ zaznamenává více událostí – povolte ji, pokud o to tým AdGuardu požádá, abyste mu pomohli lépe porozumět problému. [Přečtěte si více o shromažďování a odesílání záznamů](/adguard-for-android/solving-problems/log/)
+_Úroveň záznamu_ definuje, jaká data o provozu aplikace by měla být zaznamenána. Ve výchozím nastavení aplikace shromažďuje údaje o vlastních událostech. _Úroveň ladění_ zaznamenává více událostí – povolte ji, pokud o to tým AdGuardu požádá, abyste mu pomohli lépe porozumět problému. [Read more about collecting and sending logs](/adguard-for-android/solving-problems/log/)
 
 ![Advanced \*mobile\_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
@@ -59,7 +59,7 @@ Pokud aktivujete příliš mnoho filtrů, mohou některé webové stránky fungo
 
 ### Uživatelské skripty
 
-Uživatelské skripty jsou miniprogramy napsané v jazyce JavaScript, které rozšiřují funkčnost jedné nebo více webových stránek. K instalaci uživatelských skriptů potřebujete speciální správce uživatelských skriptů. AdGuard takovou funkci má a umožňuje přidávat uživatelské skripty pomocí URL nebo ze souboru.
+Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. K instalaci uživatelských skriptů potřebujete speciální správce uživatelských skriptů. AdGuard takovou funkci má a umožňuje přidávat uživatelské skripty pomocí URL nebo ze souboru.
 
 ![Userscripts \*mobile\_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
@@ -133,7 +133,7 @@ V této sekci najdete informace o své licenci a můžete provádět následují
 - Zakoupit licenci AdGuardu pro aktivaci [funkcí plné verze](/adguard-for-android/features/free-vs-full)
 - Přihlásit se ke svému AdGuard účtu nebo zadat licenční klíč pro aktivaci licence
 - Zaregistrovat se a aktivovat si 7denní zkušební dobu, pokud jste ji ještě nevyužili
-- Obnovit stav licence z nabídky se třemi tečkami (:)
+- Refresh the license status from the three-dots menu (⋮)
 - Otevřít AdGuard účet a spravovat v něm své licence
 - Resetovat licenci — například pokud jste dosáhli limitu zařízení pro tuto licenci a chcete použít jinou
 

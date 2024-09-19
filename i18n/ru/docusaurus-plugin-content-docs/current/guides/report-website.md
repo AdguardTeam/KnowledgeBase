@@ -12,7 +12,7 @@ sidebar_position: 3
 - Ошибка, допущенная авторами фильтров при создании правила;
 - Повторное размещение рекламы. Узнайте больше об этом методе [в нашем блоге](https://adguard.com/en/blog/ad-reinsertion.html).
 
-You can help us by filling in a form with examples of ads you have encountered. Для этого воспользуйтесь инструкциями для вашей ОС.
+Вы можете помочь нам, заполнив форму с примерами рекламы, с которой вы столкнулись. Для этого воспользуйтесь инструкциями для вашей ОС.
 
 ## Отправка жалобы {#report}
 
@@ -26,8 +26,8 @@ You can help us by filling in a form with examples of ads you have encountered. 
 
 ### Браузерное расширение {#extension}
 
-- Open the browser extension settings by clicking the corresponding icon;
-- Click **Report an issue**:
+- Откройте настройки расширения браузера, нажав на соответствующий значок;
+- Нажмите на **Сообщить о проблеме**:
 
 ![проблема с расширением *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
 
@@ -53,7 +53,7 @@ You can help us by filling in a form with examples of ads you have encountered. 
 
 ### Mac {#mac}
 
-- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
+- Откройте [Браузерный помощник AdGuard](/adguard-for-mac/features/browser-assistant) и нажмите **Сообщить о проблеме**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 
@@ -135,7 +135,7 @@ You can help us by filling in a form with examples of ads you have encountered. 
 
 1. Отключите **Антитрекинг**;
 2. Если это решило проблему, включите модуль и поочерёдно отключите опции **Антитрекинга** c проверкой результата. Это необходимо для того, чтобы определить, какие именно настройки приводят к некорректной блокировке;
-3. If you have managed to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). Также желательно восстановить настройки по умолчанию;
+3. Если вам удалось выявить, какая настройка приводит к некорректной работе страницы, сообщите об этом разработчикам при заполнении формы (см. выше). Также желательно восстановить настройки по умолчанию;
 4. Если проблема не решилась, перейдите к разделу **Расширения**.
 
 ### **Расширения**
@@ -146,4 +146,4 @@ You can help us by filling in a form with examples of ads you have encountered. 
 
 ### **Сторонние блокировщики**
 
-Некоторые браузеры и антивирусы (такие как Яндекс.Браузер, Kaspersky и т. д.) имеют встроенные блокировщики рекламы. Они могут влиять на функционирование сайтов, вызывать конфликты с AdGuard и приводить к некорректной работе сайтов. If you are using such programs, first make sure that the problem is caused by **AdGuard**: disable **AdGuard** filtering and try to reproduce the problem. Если проблема сохранится, значит, она вызвана другим приложением или браузером. Если же проблема вызвана **AdGuard**, выполните действия, указанные в предыдущих пунктах.
+Некоторые браузеры и антивирусы (такие как Яндекс.Браузер, Kaspersky и т. д.) имеют встроенные блокировщики рекламы. Они могут влиять на функционирование сайтов, вызывать конфликты с AdGuard и приводить к некорректной работе сайтов. Если вы пользуетесь подобными программами, убедитесь, что проблема вызвана именно **AdGuard**: отключите фильтрацию **AdGuard** и попробуйте повторить проблему. Если проблема сохранится, значит, она вызвана другим приложением или браузером. Если же проблема вызвана **AdGuard**, выполните действия, указанные в предыдущих пунктах.

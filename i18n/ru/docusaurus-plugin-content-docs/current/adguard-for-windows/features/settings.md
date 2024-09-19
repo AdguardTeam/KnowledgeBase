@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
@@ -50,7 +50,7 @@ Before you start manually writing your own rules read our detailed [syntax guide
 
 To learn everything about Stealth Mode and its many options, [read this article](/general/stealth-mode).
 
-### Browsing security
+### Защита от фишинга
 
 Browsing security gives strong protection against malicious and phishing websites. Нет, AdGuard для Windows — это не антивирус. Он не остановит загрузку вируса, если она уже началась, и не удалит уже существующие вирусы. Но он предупредит вас, если вы собираетесь перейти на сайт, домен которого был добавлен в нашу базу «ненадёжных сайтов», или загрузить файл с такого сайта. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 
@@ -80,7 +80,7 @@ There are several websites to which access should be restricted from a PC used b
 
 Модуль проверяет содержимое веб-страниц, открытых в браузере, и отфильтровывает страницы с нежелательным для детей контентом: изображения и тексты для взрослых, ненормативная лексика, насилие, пропаганда наркотиков и т. д. Настройки Родительского контроля защищены паролем, чтобы ребёнок не смог обойти ограничения. Этот модуль не только блокирует доступ к нежелательным сайтам, но и удаляет неподходящие для детей ссылки из результатов поиска.
 
-In the Parental Control module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. You can also check the _Block executable files download_ box to prevent your child from downloading and installing software on the computer. There are two more options in the _Parental Control_ module: you can select a specific Windows user to be protected by _Parental Control_ and set a password to protect AdGuard settings from change.
+In the _Parental Control_ module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. You can also check the _Block executable files download_ box to prevent your child from downloading and installing software on the computer. There are two more options in the _Parental Control_ module: you can select a specific Windows user to be protected by _Parental Control_ and set a password to protect AdGuard settings from change.
 
 ![Parental Control \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 

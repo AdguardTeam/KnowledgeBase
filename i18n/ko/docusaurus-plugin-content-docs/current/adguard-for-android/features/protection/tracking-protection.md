@@ -77,4 +77,4 @@ sidebar_position: 2
 
    k. **X-Client-Data 헤더 제거** 이 기능은 Google Chrome이 버전 및 수정 사항에 대한 정보를 Google 도메인(DoubleClick 및 GoogleAnalytics 포함)으로 전송하는 것을 방지합니다.
 
-**추적 보호**에서 개별 설정을 조정하고 사용자 지정 구성을 만들 수 있습니다. 모든 설정에는 해당 역할을 이해하는 데 도움이 되는 설명이 있습니다. [다양한 **추적 보호** 설정의 기능에 대해 자세히 알아보세요](/general/stealth-mode). 일부 설정은 웹사이트 및 브라우저 확장 프로그램의 기능을 방해할 수 있으므로 신중하게 접근하세요.
+**추적 보호**에서 개별 설정을 조정하고 사용자 지정 구성을 만들 수 있습니다. 모든 설정에는 해당 역할을 이해하는 데 도움이 되는 설명이 있습니다. [Read more about what the various _Tracking protection_ settings do](/general/stealth-mode) and utilize them cautiously, as some may interfere with the functionality of websites and browser extensions.

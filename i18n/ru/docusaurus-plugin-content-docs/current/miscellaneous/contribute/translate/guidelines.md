@@ -58,7 +58,7 @@ sidebar_position: 3
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
 
-1. Помимо предложения новых переводов, вы также можете оставлять комментарии к строкам. Use comments to let us know about mistakes in the source text or existing translations, make notes, or ask questions. Если вы видите комментарий к вашему переводу — попробуйте ответить на него.
+1. Помимо предложения новых переводов, вы также можете оставлять комментарии к строкам. Используйте комментарии, чтобы сообщать нам об ошибках в исходном тексте или существующих переводах, делать заметки или задавать вопросы. Если вы видите комментарий к вашему переводу — попробуйте ответить на него.
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/comments.png)
 

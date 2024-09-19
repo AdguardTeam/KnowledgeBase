@@ -3,7 +3,7 @@ title: Übersetzer/Korrekturleser werden
 sidebar_position: 2
 ---
 
-Wenn Sie AdGuard-Produkte, -Websites und -Wissensdatenbanken übersetzen möchten, gehen Sie zu [Crowdin](https://crowdin.com/) und registrieren/melden Sie sich dort an.
+If you want to help translate AdGuard products, websites, and Knowledge Bases, go to [Crowdin](https://crowdin.com/) and sign up/log in there.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/main-screen.png)
 

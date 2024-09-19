@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::정보
 
-본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 작동 방식을 확인하려면 [AdGuard 앱을 다운로드하세요](https://agrd.io/download-kb-adblock).
 
 :::
 
@@ -29,13 +29,13 @@ sidebar_position: 7
 
 이 기능을 활성화하면 AdGuard가 Edge 브라우저에서 TCP 빠른 열기를 차단합니다. 설정을 적용하려면 브라우저를 다시 시작해야 합니다.
 
-### Encrypted ClientHello 사용
+### Use Encrypted Client Hello
 
-모든 암호화된 인터넷 연결에는 암호화되지 않은 부분이 있습니다. 이것은 연결하려는 서버의 이름이 포함된 첫 번째 패킷입니다. Encrypted Client Hello 기술은 이 문제를 해결하고 암호화되지 않은 마지막 비트의 정보를 암호화합니다. 이 기능을 사용하려면 *Encrypted ClientHello 사용* 옵션을 활성화하세요. It uses a local DNS proxy to look for the ECH configuration for the domain. ECH 구성이 발견되면 ClientHello 패킷이 암호화됩니다.
+모든 암호화된 인터넷 연결에는 암호화되지 않은 부분이 있습니다. 이것은 연결하려는 서버의 이름이 포함된 첫 번째 패킷입니다. Encrypted Client Hello 기술은 이 문제를 해결하고 암호화되지 않은 마지막 비트의 정보를 암호화합니다. To benefit from it, enable the *Use Encrypted Client Hello* option. 로컬 DNS 프록시를 사용하여 도메인에 대한 ECH 구성을 찾습니다. If it is found, Client Hello packet will be encrypted.
 
 ### 웹사이트의 인증서 투명성 확인
 
-Chrome 인증서 투명성 정책에 따라 도메인의 모든 인증서를 확인합니다. If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. 반면에 Chrome은 이 사이트를 차단합니다.
+Chrome 인증서 투명성 정책에 따라 도메인의 모든 인증서를 확인합니다. 인증서가 Chrome 인증서 투명성 정책을 준수하지 않는 경우 AdGuard는 웹사이트를 필터링하지 않습니다. 반면에 Chrome은 이 사이트를 차단합니다.
 
 ### SSL/TLS 인증서 해지 확인 활성화
 
@@ -61,9 +61,9 @@ Chrome 인증서 투명성 정책에 따라 도메인의 모든 인증서를 확
 
 AdGuard가 필터 구독 URL(예: `abp:subscribe` 등)을 자동으로 가로채고 사용자 정의 필터 설치 대화 상자를 열도록 하려면 이 기능을 활성화합니다.
 
-### Filter HTTP/3
+### HTTP/3 필터링
 
-If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+이 옵션을 활성화하면 AdGuard는 다른 요청 유형과 함께 HTTP/3을 통해 전송된 요청을 필터링합니다.
 
 ### 리디렉션 드라이버 모드 사용
 
@@ -73,7 +73,7 @@ If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addi
 
 ### 시스템 시작 시 메인 창 열기
 
-이 옵션을 활성화하면 시스템이 로드된 후 기본 AdGuard 창이 열립니다. 이 설정은 *설정 → 일반 설정*에 있으며 실제 필터링 서비스가 실행되는지 여부에는 영향을 미치지 않습니다.
+이 옵션을 활성화하면 시스템이 로드된 후 기본 AdGuard 창이 열립니다. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*.
 
 ### 시스템 시작 시 필터링 활성화
 
@@ -81,7 +81,7 @@ If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addi
 
 :::note
 
-Before v7.12, the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.
+v7.12 이전에는 *시스템 시작 시 AdGard 실행이* 비활성화되어 있어도 기본적으로 필터링 모드에서 AdGard 서비스가 시작되었습니다. 애플리케이션의 이전 동작에 만족했다면 이 옵션을 활성화하세요.
 
 :::
 
@@ -95,7 +95,7 @@ AdGuard가 특정 서브넷을 필터링하지 않도록 설정하려면 이 기
 
 ### HAR 기록 사용
 
-이 옵션은 **디버깅 목적**으로만 활성화해야 합니다. 확인 표시를 선택하면 AdGuard가 필터링된 모든 HTTP 요청에 대한 정보가 포함된 HAR 1.2 형식의 파일을 생성합니다. 이 파일은 Fiddler 앱으로 분석할 수 있습니다. 웹 브라우징 속도가 상당히 느려질 수 있습니다.
+이 옵션은 **디버깅 목적**으로만 활성화해야 합니다. Ticking the checkbox will make AdGuard create a file in the HAR 1.2 format containing information about all filtered HTTP requests. 이 파일은 Fiddler 앱으로 분석할 수 있습니다. 웹 브라우징 속도가 상당히 느려질 수 있습니다.
 
 ### 일반 HTTP 요청에 추가 공백 추가
 
@@ -113,17 +113,17 @@ Host: example.org 요청은`
 
 ### 초기 TLS 패킷의 조각화 크기 조정
 
-심층 패킷 검사를 피하기 위해 TCP 패킷 조각화의 크기를 지정합니다. This option only affects secured (HTTPS) traffic.
+심층 패킷 검사를 피하기 위해 TCP 패킷 조각화의 크기를 지정합니다. 이 옵션은 보안(HTTPS) 트래픽에만 영향을 줍니다.
 
-이 옵션을 활성화하면 AdGuard는 초기 TLS 패킷(ClientHello 패킷)을 두 부분으로 분할합니다. 첫 번째 부분은 지정된 길이를 가지며 두 번째 부분은 나머지 길이(전체 초기 TLS 패킷의 길이까지)를 가집니다.
+If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Valid values: 1–1500. 잘못된 크기를 지정하면 시스템에서 선택한 값이 사용됩니다. 이 설정은 스텔스 모드에서 *DP로부터 보호* 옵션이 활성화된 경우에만 적용됩니다.
+유효한 값은 1~1500입니다. 잘못된 크기를 지정하면 시스템에서 선택한 값이 사용됩니다. 이 설정은 스텔스 모드에서 *DP로부터 보호* 옵션이 활성화된 경우에만 적용됩니다.
 
 ### 일반 HTTP 조각 크기
 
 HTTP 요청 조각화의 크기를 조정합니다. 이 옵션은 일반 HTTP 트래픽에만 영향을 줍니다. 이 옵션을 활성화하면 AdGuard는 초기 패킷을 두 부분으로 분할하여 첫 번째 패킷은 지정된 길이로, 두 번째 패킷은 전체 원본 패킷의 길이까지 나머지 부분을 차지합니다.
 
-Valid values: 1–1500. 잘못된 크기를 지정하면 시스템에서 선택한 값이 사용됩니다. 이 설정은 스텔스 모드에서 *DP로부터 보호* 옵션이 활성화된 경우에만 적용됩니다.
+유효한 값은 1~1500입니다. 잘못된 크기를 지정하면 시스템에서 선택한 값이 사용됩니다. 이 설정은 스텔스 모드에서 *DP로부터 보호* 옵션이 활성화된 경우에만 적용됩니다.
 
 ### QUIC 보기
 
@@ -135,21 +135,21 @@ Valid values: 1–1500. 잘못된 크기를 지정하면 시스템에서 선택�
 
 ### TCP 연결 유지 간격
 
-킵얼라이브 프로브를 보내기 전에 유휴 기간을 초 단위로 지정할 수 있습니다. If 0 is specified, the value selected by the system will be used.
+킵얼라이브 프로브를 보내기 전에 유휴 기간을 초 단위로 지정할 수 있습니다. 0을 지정하면 시스템에서 선택한 값이 사용됩니다.
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+이 설정은 *TCP 킵얼라이브 활성화* 옵션이 활성화된 경우에만 작동합니다.
 
 :::
 
 ### TCP 연결 유지 시간 초과
 
-Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. 0을 지정하면 시스템에서 선택한 값이 사용됩니다.
+여기에서 응답이 없는 피어에게 다른 킵얼라이브 프로브를 보내기 전에 시간을 초 단위로 지정할 수 있습니다. 0을 지정하면 시스템에서 선택한 값이 사용됩니다.
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+이 설정은 *TCP 킵얼라이브 활성화* 옵션이 활성화된 경우에만 작동합니다.
 
 :::
 
@@ -167,11 +167,11 @@ This setting only works when the *Enable TCP keepalive* option is enabled.
 
 ### 폴백 DNS 업스트림 사용
 
-Normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
+선택한 업스트림에 대한 모든 DNS 요청이 실패하면 일반 쿼리는 폴백 업스트림으로 리디렉션됩니다.
 
 ### DNS 업스트림 쿼리를 병렬로 수행
 
-All upstreams will be queried in parallel and the first response is returned. DNS 쿼리는 병렬로 이루어지므로 이 기능을 활성화하면 인터넷 속도가 빨라집니다.
+모든 업스트림이 병렬로 쿼리되고 첫 번째 응답이 반환됩니다. DNS 쿼리는 병렬로 이루어지므로 이 기능을 활성화하면 인터넷 속도가 빨라집니다.
 
 ### 실패한 DNS 쿼리에 항상 응답
 
@@ -179,7 +179,7 @@ All upstreams will be queried in parallel and the first response is returned. DN
 
 ### 보안 DNS 요청 필터링 사용
 
-AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
+AdGuard는 일반 DNS 요청뿐만 아니라 보안 DNS 요청을 로컬 DNS 프록시로 리디렉션합니다.
 
 ### 호스트 규칙에 대한 차단 모드
 
@@ -233,4 +233,4 @@ AdGuard가 사용자 정의 폴백 서버를 사용하도록 하려면 이 섹�
 
 ### 지정된 Wi-Fi 네트워크 이름(SSID)을 DNS 필터링하지 않기
 
-DNS protection will not include Wi-Fi networks listed in this section. Wi-Fi 네트워크 이름(SSID)을 한 줄에 하나씩 지정합니다. 특정 Wi-Fi 네트워크가 이미 AdGuard Home 또는 다른 DNS 보호 시스템에 의해 보호되고 있는 경우 유용할 수 있습니다. 이 경우 DNS 요청을 다시 필터링할 필요가 없습니다.
+DNS 보호에는 이 섹션에 나열된 Wi-Fi 네트워크가 포함되지 않습니다. Wi-Fi 네트워크 이름(SSID)을 한 줄에 하나씩 지정합니다. 특정 Wi-Fi 네트워크가 이미 AdGuard Home 또는 다른 DNS 보호 시스템에 의해 보호되고 있는 경우 유용할 수 있습니다. 이 경우 DNS 요청을 다시 필터링할 필요가 없습니다.
