@@ -13,7 +13,7 @@ sidebar_position: 5
 
 :::caution
 
-Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
+Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. Открывайте этот раздел, только если вы знаете, что делаете, или если вас попросила об этом наша команда поддержки.
 
 :::
 
@@ -25,9 +25,9 @@ sidebar_position: 5
 
 Существует два основных режима работы туннеля: *Split* и *Full*. *Режим Split-Tunnel* обеспечивает совместимость AdGuard c так называемыми персональными VPN-приложениями. В режиме *Full-Tunnel* никакие другие VPN не могут работать одновременно с AdGuard.
 
-Есть особенность режима *Split-Tunnel*: если DNS-прокси работает плохо, например, когда ответ от DNS-сервера AdGuard не возвращается вовремя, iOS перенаправляет трафик через DNS-сервер, указанный в настройках iOS. Реклама не блокируется, а трафик DNS не шифруется.
+There is a specific feature of the *Split-Tunnel* mode: In case of poor DNS proxy performance, for example, if the response from the AdGuard DNS server isn't returned in timely, iOS will instead reroute traffic through the DNS server specified in the iOS settings. Реклама не блокируется, а трафик DNS не шифруется.
 
-В режиме *Full-Tunnel* используется только DNS-сервер, указанный в настройках AdGuard. Если он не будет отвечать, интернет просто не будет работать. Включенный режим *Full-Tunnel* может приводить к некорректной работе некоторых программ (например, Facetime) и вызывать проблемы с обновлением приложений.
+В режиме *Full-Tunnel* используется только DNS-сервер, указанный в настройках AdGuard. Если он не будет отвечать, интернет просто не будет работать. Enabled *Full-Tunnel* mode may negatively impact the performance of some programs (e.g., FaceTime) and cause app update issues.
 
 По умолчанию AdGuard использует режим *Split-Tunnel* как наиболее стабильный вариант.
 

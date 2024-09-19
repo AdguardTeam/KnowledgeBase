@@ -1,5 +1,5 @@
 ---
-title: Как избежать проблем совместимости с FaceTime
+title: How to avoid compatibility issues with FaceTime
 sidebar_position: 3
 ---
 

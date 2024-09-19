@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
@@ -13,13 +13,13 @@ sidebar_position: 4
 
 ### Поддержка
 
-![Support \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
+![Поддержка \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
 
 Нажав на вкладку «Поддержка», вы откроете диалоговое окно, в котором можете сообщить об ошибке, отправить запрос на добавление функции или просто поделиться своим мнением о продукте.
 
 ### Лицензия
 
-![License \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![Лицензия \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
 Эта вкладка содержит информацию о лицензии. Здесь вы можете:
 
@@ -28,13 +28,13 @@ sidebar_position: 4
 
 ### О компании
 
-![About \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![О программе \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 
 In addition to information about the current version of the program, this tab provides some useful links to Licese agreement, Privacy policy, Acknowledgements, Discussions, and Version history pages.
 
 ### Проверить обновления
 
-![Check for updates \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![Проверка обновлений \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
 
 Чтобы проверить наличие обновлений фильтров и пользовательских скриптов, нажмите на значок вращающихся стрелок в правом верхнем углу главного экрана приложения.
 
@@ -44,11 +44,11 @@ In addition to information about the current version of the program, this tab pr
 
 - включить защиту
 - отключить защиту: полностью или на 30 секунд
-- go to _Settings_
-- open the _Tools_ and _Advanced_ menus
+- открыть _Настройки_
+- откройте меню _Инструменты_ и _Дополнительно_
 - проверить обновления фильтров
 - проверить обновления приложения
 - вспомнить последнее всплывающее сообщение
-- reach the _Support_ and _About_ sections
+- перейти к разделам _Поддержка_ и _О программе_
 - закрыть AdGuard без остановки фильтрации
 - закрыть AdGuard

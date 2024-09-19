@@ -20,4 +20,4 @@ AdGuard is one of the leaders on the market of ad-blocking software with 15+ yea
 
 ## 不仅仅是广告拦截
 
-AdGuard 广告拦截程序可不只能拦截广告。 它将保护用户免受在线跟踪的危害并以多种方式增强个人隐私。 根据具体的产品，AdGuard 还可以提供诸如 「DNS 过滤」来提供更全面的保护、「家长控制」以保护您的孩子免受不当内容的侵害、「过滤日志」以更好地控制您的互联网流量等等。 该知识库包含有关所有这些内容的详细信息，请随意跳转到任何引起您兴趣的文章。
+AdGuard 广告拦截程序可不只能拦截广告。 它将保护用户免受在线跟踪的危害并以多种方式增强个人隐私。 根据具体的产品，AdGuard 还可以提供诸如 「DNS 过滤」来提供更全面的保护、「家长控制」以保护您的孩子免受不当内容的侵害、「过滤日志」以更好地控制您的互联网流量等等。 This Knowledge Base contains detailed information about any and all of them — feel free to jump to any article that interests you.

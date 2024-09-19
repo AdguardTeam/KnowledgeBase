@@ -23,9 +23,9 @@ AdGuard is committed to protecting your privacy. We strictly follow our [Privacy
 
 :::
 
-### Collecting debug log
+### Recording debug log
 
-To collect **debug** log and send it to us you need to perform following steps:
+To collect **debug** log and send it to us, you need to perform following steps:
 
 1. Go to *Settings* → *General* → *Advanced*.
 1. Tap *Logging level* and set it to *Debug*.

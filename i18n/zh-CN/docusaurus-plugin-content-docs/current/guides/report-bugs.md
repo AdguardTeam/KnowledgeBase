@@ -17,7 +17,7 @@ sidebar_position: 4
 
 ### 如何描述错误
 
-请您提供尽量多的细节，这将使我们更容易重现该错误，然后着手修复它。 因此，请大家在上报错误时参考以下模版：
+请您提供尽量多的细节，这将使我们更容易重现该错误，然后着手修复它。 Here’s what we expect a bug report to include:
 
 - 应用程序版本
 - 操作系统版本
@@ -28,7 +28,7 @@ sidebar_position: 4
 
 ### 如何收集日志记录
 
-请在描述相应操作系统的文章上了解如何收集日志记录。
+Read about collecting logs in dedicated articles for each platform.
 
 ## 为错误报告或功能请求投票
 

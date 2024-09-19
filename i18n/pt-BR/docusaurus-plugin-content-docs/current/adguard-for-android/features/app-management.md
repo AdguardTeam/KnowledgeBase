@@ -28,7 +28,7 @@ No menu de contexto, você também pode acessar as estatísticas do aplicativo.
 
 ### Aplicativos “sem problemas” e “problemáticos”
 
-A maioria dos aplicativos funciona corretamente quando a filtragem está ativada. Para esses aplicativos, o tráfego é roteado pelo AdGuard e filtrado por padrão.
+Most apps work correctly when filtered. Para esses aplicativos, o tráfego é roteado pelo AdGuard e filtrado por padrão.
 
 Alguns aplicativos, como Download Manager, rádio, aplicativos de sistema com UID 1000 e 1001 (por exemplo, Google Play Services), são “problemáticos” e podem funcionar incorretamente quando roteados pelo AdGuard. É por isso que você poderá ver o seguinte aviso ao tentar rotear ou filtrar todos os aplicativos:
 

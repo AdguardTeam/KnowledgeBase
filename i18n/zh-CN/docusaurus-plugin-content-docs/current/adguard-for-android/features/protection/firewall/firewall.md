@@ -43,10 +43,10 @@ sidebar_position: 1
 
 要从「自定义规则」移除规则或应用，请将其滑动到左侧。
 
-### Notifications
+### 通知
 
-If enabled, this feature notifies you when an app tries to break one of the Firewall rules set for that app (for example, to access mobile data when it shouldn’t). You can turn notifications on and off for all apps or for each app separately.
+启用该功能后，当应用程序试图违反适用的防火墙规则时（例如，试图访问被阻止的移动数据），用户将收到通知。 用户可以设置所有应用程序或单独某个应用程序的通知开关状态。
 
-Tap the notification to access the app’s Firewall settings, or temporary disable all Firewall rules for that app by tapping the corresponding button in the notification. You can also mute all Firewall notifications for the app by tapping the _Mute_ button in the notification for that app.
+点击通知即可进入应用程序的防火墙设置，或者点击通知中的相应按钮暂时禁用该应用程序的所有防火墙规则。 用户还可以通过点击应用程序通知中的「静音」按钮来静音该应用程序的所有防火墙通知。
 
-Note that if notifications for multiple apps would be displayed, they will be bundled into a single notification instead.
+请注意，如果显示多个应用程序的通知，它们将被折叠为单个通知。

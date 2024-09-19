@@ -5,37 +5,37 @@ sidebar_position: 8
 
 :::info
 
-В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
-AdGuard Browser Assistant allows you to manage AdGuard protection directly from your browser.
+Браузерный помощник AdGuard позволяет управлять защитой AdGuard прямо из браузера.
 
 ![The Assistant window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
 
 ## Как это работает
 
-AdGuard Browser Assistant is a browser extension. It allows you to quickly manage the AdGuard app:
+Браузерный помощник AdGuard — это расширение для браузера. Позволяет быстро управлять приложением AdGuard:
 
-- Enable or disable protection for a specific website (a toggle under the website name)
-- Pause protection for 30 seconds
-- Disable protection (the pause icon in the upper right corner)
-- Manually block an ad
-- Open the filtering log
-- Report incorrect blocking
-- Open AdGuard settings
+- Включить или отключить защиту для определённого сайта (переключатель под его названием)
+- Приостановить защиту на 30 секунд
+- Отключить защиту (значок паузы в правом верхнем углу)
+- Блокировка рекламы вручную
+- Открыть журнал фильтрации
+- Сообщить о неправильной блокировке
+- Открыть настройки AdGuard
 - View website certificate and manage HTTPS filtering (the lock icon next to the website name)
 
 ## Как установить
 
-When you install AdGuard for Mac, you will be prompted to install Browser Assistant for your default browser. If you skip this step, you can install it later.
+При установке AdGuard для Mac вам будет предложено установить Помощник для вашего браузера по умолчанию. Если вы пропустите этот шаг, вы сможете установить его позже.
 
-**From settings**:
+**Из настроек**:
 
-1. Open the AdGuard menu.
-2. Click the gear icon and select _Preferences_.
-3. Switch to the _Assistant_ tab.
-4. Click _Get the Extension_ next to your default browser.
+1. Откройте меню AdGuard.
+2. Нажмите на значок шестерёнки и выберите _Настройки_.
+3. Перейдите на вкладку _Помощник_.
+4. Нажмите _Добавить расширение_ рядом с вашим браузером по умолчанию.
 5. Install Assistant from your browser’s extension store.
 
 ![The Assistant tab](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)

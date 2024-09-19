@@ -52,17 +52,17 @@ On some notebooks you have to hold *Fn* and then press *PrtScn*.
 
 Windows tüm ekranı yakalar ve panoya kopyalar.
 
-Etkin bir pencerenin ekran görüntüsünü almak için aşağıdaki kısayolu kullanın:
+To take a screenshot of an active window, use the following shortcut keys:
 
 - **Hold down *Alt* and press *PrtScn* (or *Fn + Alt + PrtScn* on some laptops)**
 
-Belirli bir alanın ekran görüntüsünü almak için aşağıdaki kısayolu kullanın:
+To take a screenshot of a specific area, use the following shortcut keys:
 
 - ******Win + Shift + S*** tuşlarına basın***
 
-Bir ekran görüntüsü aldıktan sonra panoya kaydedilecektir. In most cases, you will be able to paste it into a document that you are currently editing by using the *Ctrl + V* shortcut. Alternatif olarak, ekran görüntüsünü bir dosyaya kaydetmeniz gerekiyorsa, standart **Paint** programını (veya görüntülerle çalışabilen başka bir uygulamayı) açmalısınız. Ekran görüntünüzü aynı kısayolu kullanarak veya Yapıştır düğmesine (genellikle ekranın sol üst köşesinde) tıklayarak buraya yapıştırın ve ardından kaydedin.
+Bir ekran görüntüsü aldıktan sonra panoya kaydedilecektir. In most cases, you will be able to paste it into a document that you are currently editing by using the *Ctrl + V* shortcut. Alternatif olarak, ekran görüntüsünü bir dosyaya kaydetmeniz gerekiyorsa, standart **Paint** programını (veya görüntülerle çalışabilen başka bir uygulamayı) açmalısınız. Paste your screenshot there using the same shortcut keys or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
 
-Windows 8 and 10 let you take a screenshot very quickly with the *Win + PrtScn* shortcut. Bu tuşlara basar basmaz, ekran görüntüsü otomatik olarak *Resimler* → *Ekran Görüntüleri Klasörünüze* bir dosya olarak kaydedilecektir.
+Windows 8 and 10 let you take a screenshot very quickly with the *Win + PrtScn* shortcut keys. Bu tuşlara basar basmaz, ekran görüntüsü otomatik olarak *Resimler* → *Ekran Görüntüleri Klasörünüze* bir dosya olarak kaydedilecektir.
 
 Bilgisayarınızın standart programları arasında Başlat menüsünden bulabileceğiniz *Ekran Alıntısı Aracı* adlı ekran görüntüsü almak için özel bir program da bulunmaktadır. Ekran Alıntısı Aracı, masaüstünüzün herhangi bir alanını veya tüm ekranı yakalamanıza olanak tanır. Bu programı kullanarak ekran görüntüsü aldıktan sonra resmi düzenleyebilir ve bilgisayarınızdaki herhangi bir klasöre kaydedebilirsiniz.
 
@@ -70,26 +70,26 @@ Ayrıca, bilgisayarınızda ekran görüntüsü almak için **PicPick**, **Nimbu
 
 ### macOS {#mac}
 
-Mac'te ekran görüntüsü almak için aşağıdaki kısayolu kullanın:
+To take a screenshot on Mac, use the following shortcut keys:
 
 - ******⌘ Cmd + Shift + 3*** tuşlarını basılı tutun***
 
 Mac'iniz tüm ekranı yakalar ve masaüstünde bir dosya olarak kaydeder.
 
-Etkin bir pencerenin ekran görüntüsünü almak için aşağıdaki kısayolu kullanın:
+To take a screenshot of an active window, use the following shortcut keys:
 
 - ***⌘ Cmd + Shift + 4 + Boşluk çubuğu* tuşlarını basılı tutun. The pointer will change to a camera icon. Click the window to capture it. Ekran görüntüsü almayı iptal etmek için Esc tuşuna basın**
 
-Belirli bir alanın ekran görüntüsünü almak için aşağıdaki kısayolu kullanın:
+To take a screenshot of a specific area, use the following shortcut keys:
 
 - *** ***⌘ Cmd + Shift + 5****** tuşlarına basın. Gerekli alanı seçmek için artı işaretine sürükleyin. Ekran görüntüsü almak için farenizi veya dokunmatik farenizi bırakın, iptal etmek için Esc düğmesine basın.
 
-*Touch Bar* (MacBook Pro) ekran görüntüsü almak için aşağıdaki kısayolu kullanın:
+To take a screenshot of the *Touch Bar* (MacBook Pro), use the following shortcut keys:
 
 - ******⌘ Cmd + Shift + 6*** tuşlarına basın***
 
 Mac'iniz *Touch Bar'ın* tamamını yakalar ve masaüstünde bir dosya olarak kaydeder.
 
-Ekran görüntüsünü kaydetmek yerine panoya kopyalamak için yukarıdaki kısayollardan herhangi biriyle birlikte *Ctrl* tuşuna basılı tutun. Ardından ekran görüntüsünü (panodan) *Cmd + V* kısayolunu kullanarak düzenlemekte olduğunuz bir belgeye veya görüntüye yapıştırabilirsiniz.
+To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the shortcut keys above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* shortcut keys.
 
 Ayrıca **Önizleme** öğesini kullanarak ve **Ekran görüntüsü al** öğesini (seçilen alan, pencere veya tüm ekran) seçerek de ekran görüntüsü alabilirsiniz. **Önizleme** ile ekran görüntülerinizi JPG, TIFF, PDF ve diğer dosya formatlarında kaydedebilirsiniz.

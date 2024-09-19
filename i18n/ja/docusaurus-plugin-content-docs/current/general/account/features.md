@@ -35,4 +35,4 @@ AdGuard 広告ブロッカーライセンスにバインド（紐付け）され
 
 ## サポート・お問い合わせ
 
-「サポート」タブには、AdGuard 製品に関する問題を解決したり、よくあるご質問への回答を見つけたりするのに役立つリンクが含まれています。 6つのセクションがあります：「よくあるご質問（FAQ）、バグ報告・機能リクエストを送る、不適切なブロックを報告、サポート・お問い合わせ、ナレッジベース、意見交換
+「サポート」タブには、AdGuard 製品に関する問題を解決したり、よくあるご質問への回答を見つけたりするのに役立つリンクが含まれています。 They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge Base, and Discuss.

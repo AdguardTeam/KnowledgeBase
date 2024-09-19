@@ -25,17 +25,17 @@ sidebar_position: 2
 
 此为 Windows 版 AdGuard 的主模块，可从用户访问的网站上和设备上安装的应用内移除广告。 要过来广告和威胁隐私的内容，如横幅，弹窗或跟踪器，AdGuard 使用不同的过滤器：用[特定语法](/general/ad-filtering/create-own-filters)编写的有类似用途的规则组。 要了解什么是过滤器及其工作原理，请阅读[本文](/general/ad-filtering/how-ad-blocking-works)。
 
-![Ad Blocker \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
+![广告拦截器 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
 在广告拦截器模块中，可以进行以下设置：
 
-- 开启自动激活特定语言的过滤器
-- 禁用[搜索广告和自我推销](/general/ad-filtering/search-ads)拦截
-- disable ads in the Start menu on Windows 11,
-- 激活预安装的过滤器，如「AdGuard 基础过滤器」
-- 点击「添加过滤器」按钮从列表上安装过滤器或添加自定义过滤器
-- 使用「过滤器编辑器」按钮更改现有规则组
-- 点击「过滤日志」按钮以查看由浏览器和您系统上已安装应用的所有请求。 用户可以在过滤日志创建自定义规则以拦截或取消任何请求的拦截
+- 开启自动激活特定语言的过滤器。
+- 禁用[搜索广告和自我推销](/general/ad-filtering/search-ads)拦截。
+- 禁用 Windows 11 开始菜单中的广告。
+- 激活预安装的过滤器，如「AdGuard 基础过滤器」。
+- 点击「添加过滤器」按钮从列表上安装过滤器或添加自定义过滤器。
+- 使用「过滤器编辑器」按钮更改现有规则组。
+- 点击「过滤日志」按钮以查看由浏览器和您系统上已安装应用的所有请求。 用户可以在过滤日志创建自定义规则以拦截或取消任何请求的拦截。
 - 用自己编写的规则，导入的规则或用 AdGuard 助手扩展创建的规则组成过滤器。
 
 在开始手动编写自己的规则之前，请阅读我们详细的[语法指南](/general/ad-filtering/create-own-filters)。
@@ -80,7 +80,7 @@ sidebar_position: 2
 
 此模块检查浏览器打开的网页内容，过滤儿童不宜的内容：成人图像和文字、粗俗语言、暴力、毒品宣传等。 家长控制设置受密码保护，孩子无法绕过限制。 此模块不仅拦截对不良网站的指向，也可从搜索结果中移除儿童不宜的链接。
 
-在家长控制模块，用户可以开启「安全搜索」，管理「黑名单」和「白名单」以自定义此选项的工作方式。 用户也可以选中「阻止下载可执行文件」以防止儿童在计算机上下载和安装软件。 「家长控制」模块有多个选项：用户可以选择「家长控制」保护特定的 Windows 用户，设置密码保护 AdGuard 设置以防更改。
+在「家长控制」模块，用户可以开启「安全搜索」，管理「黑名单」和「白名单」以自定义此选项的工作方式。 用户也可以选中「阻止下载可执行文件」以防止儿童在计算机上下载和安装软件。 「家长控制」模块有多个选项：用户可以选择「家长控制」保护特定的 Windows 用户，设置密码保护 AdGuard 设置以防更改。
 
 ![家长控制 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 

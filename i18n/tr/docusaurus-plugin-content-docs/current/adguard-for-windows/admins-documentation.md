@@ -51,4 +51,4 @@ Uygulamanın bu şekilde kurulmasının ve elle güncellemelerin tavsiye edilmed
 
 ## 5. Test your installation {#installation-test}
 
-Hedef makinede AdGuard'ı başlatın. Ayarladığınız lisansı kullanıp kullanmadığını kontrol etmek için lisans ekranını açın. AdGuard'ın lisans anahtarını doğrulamasını sağlamak için "Durumu yenile" öğesine tıklamanız gerekebilir.
+Hedef makinede AdGuard'ı başlatın. Open the license screen to check that it is using the specified license. AdGuard'ın lisans anahtarını doğrulamasını sağlamak için "Durumu yenile" öğesine tıklamanız gerekebilir.

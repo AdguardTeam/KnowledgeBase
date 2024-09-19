@@ -41,7 +41,7 @@ Web of Trust 让用户根据自己的意见查看每个网站的声誉。 网站
 
 ### 网络
 
-倒数第二个模块专用于网络过滤，用户可以在此处找到附加的网络相关选项。 其中两项默认启动：「开启流量过滤」和「过滤 HTTPS 协议」。 这些重要的额外预防措施可更好地过滤您的网络空间。 当前大部分网站使用 HTTPS，广告亦是如此。 众多网站，如 youtube.com，facebook.com 和 twitter.com，不进行 HTTPS 过滤是无法移除广告的。 因此除非用户有充分的理由不开启它，否则请保持「过滤 HTTPS 协议」功能的开启状态。
+倒数第二个模块专用于网络过滤，用户可以在此处找到附加的网络相关选项。 其中两项默认启动：「开启流量过滤」和「过滤 HTTPS」。 这些重要的额外预防措施可更好地过滤您的网络空间。 当前大部分网站使用 HTTPS，广告亦是如此。 众多网站，如 youtube.com，facebook.com 和 x.com，不进行 HTTPS 过滤是无法移除广告的。 因此除非用户有充分的理由不开启它，否则请保持「过滤 HTTPS」功能的开启状态。
 
 ![网络设置 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 

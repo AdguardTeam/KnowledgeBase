@@ -1,34 +1,34 @@
 ---
-title: Activity and statistics
+title: アクティビティと統計
 sidebar_position: 4
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for iOS」についてです。 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
-_Activity_ screen is the 'information hub' of AdGuard's DNS protection suite. You can quickswitch to it by tapping the third icon in the bottom bar. N.b. this screen is only seen when DNS protection is enabled.
+「_アクティビティ_」画面は、AdGuard の「DNS通信を保護」機能の「情報ハブ」のようなものです。 画面下のバーの3番目のアイコンをタップすると、この画面に切り替えができます。 ※ この画面は、「DNS通信を保護」が有効な場合にのみ表示されます。
 
 ![Activity screen \*mobile\_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
 
-This is where AdGuard displays statistics about the device's DNS requests, such as total number, number of blocked requests and data saved by blocking them. AdGuard can display the statistics for a day, a week, a month or in total.
+ここでは、AdGuardがデバイスのDNSリクエストに関する統計情報（総数、ブロックされたリクエスト数、ブロックによって節約されたデータ通信量など）を表示します。 1日、1週間、1ヶ月、または全期間合計の統計を表示できます。
 
-Below is the _Recent activity_ feed. AdGuard stores the last 1500 DNS requests that have originated on your device and shows their attributes such as protocol type and target domain.
+下の方には、「_最新アクティビティ_」フィードがあります。 AdGuard は、お使いのデバイスから発信された過去1500件のDNSリクエストを保存し、そのプロトコルタイプやターゲットドメインなどという情報を表示します。
 
 :::note
 
-AdGuard does not send this information anywhere. It is 100% local and does not leave your device.
+※AdGuard はこの情報をどこにも送信しません。 この情報は100％ローカルに保存され、あなたのデバイスの外に出ることはありません。
 
 :::
 
-Tap any request to view more details. There will also be buttons to add the request to Blocklist/Allowlist in one tap.
+各リクエストをタップすると、その詳細が表示されます。 また、リクエストをワンタップでブラックリスト/ホワイトリストに追加するボタンもあります。
 
 ![Request details \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
 
-Above the activity feed, there are _Most active_ and _Most blocked_ companies. Tap each to see data based on the last 1500 requests.
+アクティビティの上には、_最もアクティブな_企業と_最もブロックされた_企業があります。 それぞれをタップすると、直近1500件のリクエストに基づくデータが表示されます。
 
-### Statistics {#statistics}
+### 統計
 
-Aside from the _Activity_ screen, you can find global statistics on the home screen and in widgets.
+_アクティビティ_画面以外にも、ホーム画面やウィジェットでもグローバル統計を確認できます。

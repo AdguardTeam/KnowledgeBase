@@ -1,5 +1,5 @@
 ---
-title: What is AdGuard license?
+title: What is an AdGuard license?
 sidebar_position: 1
 ---
 
@@ -12,7 +12,7 @@ Auf der [Kaufseite](https://adguard.com/license.html) sind folgende Arten von Li
 - **1-Jahres-Abonnements** — diese Lizenzen werden automatisch jedes Jahr erneuert oder können manuell verlängert werden
     - Einzellizenz — schützt bis zu 3 Geräte
     - Familienlizenz — schützt bis zu 9 Geräte
-- **Lebenslang** — diese Lizenzen sind zeitlich nicht begrenzt
+- **Lifetime** — these licenses are perpetual
     - Einzellizenz — schützt bis zu 3 Geräte
     - Familienlizenz — schützt bis zu 9 Geräte
 

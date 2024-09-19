@@ -13,9 +13,9 @@ This article contains some of the most common errors that you can encounter duri
 
 ### Error 5: Access Denied {#error-5}
 
-This error occurs when there's something wrong with permissions. There may be several different reasons why AdGuard installer doesn't have the permissions it requires to properly finish the installation process. You can try the following steps:
+This error message appears when required permissions haven't been granted. There may be several different reasons why AdGuard installer doesn't have the permissions it requires to properly finish the installation process. You can try the following steps:
 
-- Temporarily disable your antiviruses. Some of them may interfere with the installation, depending on the severity of their settings.
+- Temporarily disable your antivirus. Some of them may interfere with the installation, depending on the severity of their settings.
 
 - Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
 
@@ -23,17 +23,17 @@ This error occurs when there's something wrong with permissions. There may be se
 
 ### Error 112: Disk is full, Error 1632: Temporary folder full or inaccessible {#error-112}
 
-These are two different errors with very similar solutions. As their names suggest, AdGuard installer didn't find enough disk space to complete the installation. There are several things you can attempt to fix the problem:
+These are two different errors with very similar solutions. As their titles suggest, AdGuard installer didn't find enough disk space to complete the installation. There are several things you can attempt to fix the problem:
 
 - Uninstall some programs or delete unnecessary files from the drive you were trying to install AdGuard to.
 
-- Download, install, and run [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), a free piece of software by Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstall programs and such. It will help clean up some disk space.
+- Download, install, and run [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), a free piece of software by Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstalled programs and such. It will help clean up some disk space.
 
 - Reboot your computer. Sometimes temporary files can take up a considerable amount of disk space, and restarting your PC is the most reliable way to get rid of them.
 
 ### Error 1601: Windows Installer is not accessible {#error-1601}
 
-You could say this is a particular sub-case of Error 1603. The possible solutions are similar:
+You could say this is a particular subcategory of Error 1603. The possible solutions are similar:
 
 - Start and re-register Microsoft Installer service. It requires some work.
 
@@ -75,7 +75,7 @@ This error occurs when there are several instances of AdGuard installer launched
 
 - Reboot your PC and start the installer again. When you restart the computer, all ongoing processes will stop, including all copies of the installer.
 
-- Don't make multiple clicks on the installer even if doesn't start right away. Sometimes it may take a few seconds to display the installer UI.
+- Don't make multiple clicks on the installer even if it doesn't start right away. Sometimes it may take a few seconds to display the installer UI.
 
 ### Error 1638: Another version of this product is already installed {#error-1638}
 
@@ -83,14 +83,14 @@ It's very likely that you've already installed AdGuard before.
 
 - Check if AdGuard is already installed on your computer. You can do it by pressing the *Win* key and typing in ***AdGuard***.
 
-- Maybe there's some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
+- Maybe there're some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
 
 ### Other errors {#other}
 
 If you've encountered an error that's not listed above, it is possible that we can solve it by ourselves. But in order to do that, we need log files from you. Please perform the following steps:
 
-- Find and archive **AdGuard installation logs** as it is described in [this article](../installation-logs).
+- Find and archive the **AdGuard installation logs** as it is described in [this article](../installation-logs).
 
-- Find and save to disk **Event Viewer** logs. [This article](../system-logs) explains how to do that.
+- Find and save to disk the **Event Viewer** logs. [This article](../system-logs) explains how to do that.
 
 - Please email all these files from two previous steps to the support team at **support@adguard.com** and describe the problem in the message body. Our tech support agents will reply to you as soon as possible.

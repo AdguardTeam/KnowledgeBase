@@ -1,5 +1,5 @@
 ---
-title: Low-level Settings guide
+title: 低级设置
 sidebar_position: 5
 ---
 
@@ -9,7 +9,7 @@ sidebar_position: 5
 
 :::
 
-## How to reach the Low-level settings
+## 如何进入低级设置
 
 :::caution
 
@@ -17,48 +17,48 @@ sidebar_position: 5
 
 :::
 
-To go to *Low-level settings*, tap the gear icon at the bottom right of the screen to open *Settings*. Select the *General* section and then toggle on the *Advanced mode* switch, after that the *Advanced settings* section will appear below. Tap *Advanced settings* to reach the *Low-level settings* section.
+要进入「*低级设置*」，请点击屏幕右下角的齿轮图标打开「*设置*」。 选择「*常规*」部分，然后切换「*高级模式*」开关，将要出现「*高级设置*」部分。 点击「*高级设置*」进入「*低级设置*」部分。
 
 ## 低级设置
 
-### Tunnel mode
+### 隧道模式
 
-There are two main tunnel modes: *Split* and *Full*. *Split-Tunnel* mode provides compatibility of AdGuard and so-called "Personal VPN" apps. In *Full-Tunnel* mode no other VPN can work simultaneously with AdGuard.
+软件主要有两种隧道模式：「*分离*」和「*完全*」。 「*分离隧道*」模式可以兼容 AdGuard 和所谓的“个人 VPN” 应用程序。 在「*完全隧道/0>」模式下，其他 VPN 都无法与 AdGuard 同时工作。</p>
 
-There is a specific feature of *Split-Tunnel* mode: if DNS proxy does not perform well, for example, if the response from the AdGuard DNS server was not returned in time, iOS will "amerce" it and reroute traffic through DNS server, specified in iOS settings. No ads are blocked at this time and DNS traffic is not encrypted.
+「*分离隧道*」模式有一个特殊功能：在 DNS 代理性能不佳的情况下，例如，如果 AdGuard DNS 服务器没有及时返回响应，iOS 将通过 iOS 设置中指定的 DNS 服务器重新路由流量。 当时，无法拦截广告，DNS 流量也没有加密。
 
-In *Full-Tunnel* mode only the DNS server specified in AdGuard settings is used. If it does not respond, the Internet will simply not work. Enabled *Full-Tunnel* mode may cause the incorrect performance of some programs (for instance, Facetime), and lead to problems with app updates.
+在「*完全隧道*」模式下，仅使用 AdGuard 设置中指定的 DNS 服务器。 如果没有响应，互联网连接将无法运行。 启用「*完全隧道*」模式可能会对某些程序（如 FaceTime）的性能产生负面影响，并导致应用程序更新问题。
 
-By default, AdGuard uses *Split-Tunnel* mode as the most stable option.
+默认情况下，AdGuard 使用「*分离隧道*」模式作为更稳定的选项。
 
-There is also an additional mode called *Full-Tunnel (without VPN icon)*. This is exactly the same as *Full-Tunnel* mode, but it is set up so that the VPN icon is not displayed in the system line.
+此外，还有*「完全隧道」模式（无 VPN 图标）*。 该模式与「<0完全隧道</em>」相同，但配置后 VPN 图标不会出现在系统栏上。
 
-### Blocking mode
+### 拦截模式
 
-In this module you can select the way AdGuard will respond to DNS queries that should be blocked:
+在此模块中，用户可以选择 AdGuard 响应应阻止的 DNS 查询的方式：
 
-- Default — respond with zero IP address when blocked by adblock-style rules; respond with the IP address specified in the rule when blocked by /etc/hosts-style rules
-- REFUSED — respond with REFUSED code
-- NXDOMAIN — respond with NXDOMAIN code
-- Unspecified IP — respond with zero IP address
-- Custom IP — respond with a manually set IP address
+- 默认：在被 adblock 式规则拦截时，以零 IP 地址响应；在被 /etc/hosts 式规则拦截时，以规则中指定的 IP 地址响应。
+- REFUSED：以 REFUSED 码响应请求。
+- NXDOMAIN：以 NXDOMAIN 码响应。
+- 未指定 IP：使用零 IP 地址响应。
+- 自定义 IP：以手动设置的 IP 地址响应。
 
-### Block IPv6
+### 拦截 IPv6
 
-By moving the toggle to the right, you activate the blocking of IPv6 queries (AAAA requests). AAAA-type DNS requests will not be resolved, hence only IPv4 queries can be processed.
+将开关向右移动，即可以激活 IPv6 请求（AAAA 请求）阻止功能。 AAAA 类型的 DNS 请求将不会被解析，因此只能处理 IPv4 查询。
 
-### Blocked response TTL
+### 屏蔽的 TTL 应答
 
-Here you can set the period for a device to cache the response to a DNS request. During the specified time to live (in seconds) the request can be read from the cache without re-requesting the DNS server.
+用户可以在此设置设备缓存 DNS 查询响应的时间段。 在指定的有效时间内（以秒为单位），可以从缓存中读取请求，而无需重新请求 DNS 服务器。
 
-### Bootstrap servers
+### Bootstrap 服务器
 
-For DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC a bootstrap server is required for getting the IP address of the main DNS server. If not specified, the DNS server from iOS settings is used as the bootstrap server.
+DNS-over-HTTPS、DNS-over-TLS 和 DNS-over-QUIC 需要引导（ bootstrap）服务器来获取主 DNS 服务器的 IP 地址。 如果未指定，将使用 iOS 设置中的 DNS 服务器作为引导服务器。
 
-### Fallback servers
+### 后备服务器
 
-Here you can specify an alternate server to which a request will be rerouted if the main server fails to respond. If not specified, the system DNS server will be used as the fallback. It is also possible to specify `none`, in this case, there will be no fallback server set and only the main DNS server will be used.
+在这里，可以指定一个备用服务器，如果主服务器没有响应，请求将被转发到该服务器。 如果未指定，将使用系统 DNS 服务器作为后备。 也可以指定「`none`」（无）。在这种情况下，将不设置后备服务器，只使用主 DNS 服务器。
 
-### Background app refresh time
+### 后台应用程序刷新时间
 
-Here you can select the frequency at which the application will check for filter updates while in the background. Note that update checks will not be performed more often than the specified period, but the exact intervals may not be respected.
+在这里，可以选择 AdGuard 应用程序在后台检查过滤器更新的频率。 请注意，更新检查的频率不会超过指定的时间段，但可能不会遵循确切的时间间隔。

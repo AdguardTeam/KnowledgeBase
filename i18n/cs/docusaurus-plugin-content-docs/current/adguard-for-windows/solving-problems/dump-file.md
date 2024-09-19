@@ -35,10 +35,10 @@ Po vytvoření souboru výpisu přejděte do umístění souboru. Ihned po vytvo
 
 :::note
 
-AdGuard pro Windows má dva spuštěné procesy (`Adguard.exe` a `AdguardSvc.exe`). Proto je třeba vytvořit soubor výpisu pro každý proces zvlášť.
+AdGuard for Windows has two running processes, `Adguard.exe` and `AdguardSvc.exe`. Therefore, it's necessary to create a separate dump file for each process.
 
 :::
 
 ![AdGuard processes](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
 
-Při odesílání výpisu souborů týmu podpory přiložte také záznamy aplikace AdGuard, abychom měli větší šanci problém vyřešit. [Zde](../adguard-logs) si můžete prohlédnout pokyny ke shromažďování souboru záznamu.
+Při odesílání výpisu souborů týmu podpory přiložte také záznamy aplikace AdGuard, abychom měli větší šanci problém vyřešit. [Here](../adguard-logs) you can check the instructions on how to get the log file.

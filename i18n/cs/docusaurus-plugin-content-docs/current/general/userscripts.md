@@ -4,7 +4,7 @@ sidebar_position: 5
 toc_max_heading_level: 4
 ---
 
-Uživatelské skripty (říkáme jim také "rozšíření") jsou de facto miniprogramy napsané v jazyce JavaScript. Upravují nebo rozšiřují funkce jedné nebo více webových stránek. Mnoho uživatelů AdGuardu již možná zná uživatelské skripty jako AdGuard asistent, Blokátor vyskakovacích oken a AdGuard Extra.
+Userscripts (we also call them "extensions") are, de facto, miniprograms written in JavaScript. Upravují nebo rozšiřují funkce jedné nebo více webových stránek. Mnoho uživatelů AdGuardu již možná zná uživatelské skripty jako AdGuard asistent, Blokátor vyskakovacích oken a AdGuard Extra.
 
 :::notePodporované aplikace
 
@@ -134,7 +134,7 @@ Zde je [odkaz](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%
 
 ##### Nepodporované vlastnosti
 
-Tyto vlastnosti bude Adguard jednoduše ignorovat.
+These properties will be simply ignored by AdGuard.
 
 ```text
 @unwrap
@@ -208,4 +208,36 @@ GM_log
 !function(){(
     console.log("I am loaded!");
 )}();
+```
+
+## Userstyles
+
+AdGuard products provide limited support for userstyles. `@var` and `@advanced` metadata tags are not supported, as well as any value of the `@preprocessor` metadata tag except `default`.
+
+### Metadata
+
+The metadata block is written using CSS-style comments, starting with `===UserStyle===` and ending with `===/UserStyle===`. All metadata tags that are supported for userscripts are also supported for userstyles, although some of them have no meaning and are ignored. `@var` and `@advanced` tags are not supported. The only supported value of the `@preprocessor` tag is `default`.
+
+### Content
+
+The content of a userstyle is plain CSS with support for the [`@-moz-document` at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@document). The `media-document()` function is not supported. The userstyle will only be applied to pages that match one or more of the `@-moz-document` rules. If the userstyle does not contain any `@-moz-document` rules, it will not be applied.
+
+### Příklad
+
+```css
+/* ==UserStyle==
+@name         Example userstyle
+@namespace    https://example.org/userstyle
+@homepageURL  https://example.org/userstyle
+@version      1.0.0
+@license      Other
+@description  This is an example
+@author       example
+@preprocessor default
+==/UserStyle== */
+@-moz-document regexp("https?\:\/\/(www\.)?example\.(org|com).*") {
+    body {
+        background-color: #000000 !important;
+    }
+}
 ```

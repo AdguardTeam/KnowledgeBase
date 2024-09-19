@@ -5,11 +5,11 @@ sidebar_position: 3
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
-The _Statistics_ module can be accessed by tapping the _Statistics_ tab (fourth icon from the left at the bottom of the screen). Статистика помогает увидеть полную картину того, что происходит с трафиком на вашем устройстве: сколько запросов отправляется и в какие компании, сколько данных загружается и скачивается, какие запросы блокируются и многое другое. You can choose to display the statistics for the selected time period: 24 hours, 7 days, 30 days, or all time.
+Модуль _Статистика_ можно открыть, нажав на вкладку _Статистика_ (четвёртая иконка слева в нижней части экрана). Статистика помогает увидеть полную картину того, что происходит с трафиком на вашем устройстве: сколько запросов отправляется и в какие компании, сколько данных загружается и скачивается, какие запросы блокируются и многое другое. Вы можете выбрать отображение статистики за период времени: 24 часа, 7 дней, 30 дней или за всё время.
 
 ![Statistics \*mobile\_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
 

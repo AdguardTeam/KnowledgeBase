@@ -35,4 +35,4 @@ La sección Historial de compras muestra todas las licencias que hayas comprado 
 
 ## Contactar la asistencia técnica
 
-La pestaña Soporte contiene enlaces útiles que te ayudarán a resolver problemas o encontrar respuestas a tus preguntas sobre los productos AdGuard. Se dividen en seis secciones: Preguntas frecuentes, Enviar un informe de error/solicitud de función, Informar de un bloqueo incorrecto, Contactar con el soporte técnico, Base de conocimientos y Discusión.
+La pestaña Soporte contiene enlaces útiles que te ayudarán a resolver problemas o encontrar respuestas a tus preguntas sobre los productos AdGuard. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge Base, and Discuss.

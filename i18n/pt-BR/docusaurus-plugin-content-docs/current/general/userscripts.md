@@ -66,11 +66,11 @@ Aqui descreveremos alguns dos catálogos de userscript mais populares.
 
 ### Userscript.Zone
 
-[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high credibility, since only scripts from moderated pages are displayed.
+[Userscript.Zone](https://www.userscript.zone) é um site que permite a busca por userscripts inserindo uma URL ou domínio correspondente. O site é fácil de usar e tem alta credibilidade, já que apenas scripts de páginas moderadas são exibidos.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) é um catálogo de userscripts dos criadores do Stylish. The scripts in this catalog undergo moderation, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/) é um catálogo de userscripts dos criadores do Stylish. Os scripts neste catálogo passam por moderação, então sua credibilidade é muito maior.
 
 ### OpenUserJS.org
 
@@ -134,7 +134,7 @@ Aqui está um [link mailto](mailto:devteam@adguard.com?Subject=Userscript%20auth
 
 ##### Propriedades não compatíveis
 
-Essas propriedades serão simplesmente ignoradas pelo Adguard.
+Essas propriedades serão simplesmente ignoradas pelo AdGuard.
 
 ```text
 @unwrap
@@ -208,4 +208,36 @@ GM_log
 !function(){(
     console.log("I am loaded!");
 )}();
+```
+
+## Userstyles
+
+Os produtos AdGuard oferecem suporte limitado para estilos de usuário. As tags de metadados `@var` e `@advanced` não são compatíveis, assim como qualquer valor da tag de metadados `@preprocessor` exceto `padrão`.
+
+### Metadados
+
+O bloco de metadados é escrito usando comentários no estilo CSS, começando com `===UserStyle===` e terminando com `===/UserStyle===`. Todas as tags de metadados suportadas para userscripts também são suportadas para userstyles, embora algumas delas não tenham significado e sejam ignoradas. As tags `@var` e `@advanced` não são suportadas. O único valor suportado da tag `@preprocessor` é `default`.
+
+### Conteúdo
+
+O conteúdo de um estilo de usuário é CSS simples com suporte para [`@-moz-document` at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@document). A função `media-document()` não é compatível. O estilo de usuário só será aplicado a páginas que correspondam a uma ou mais das regras `@-moz-document`. Se o estilo de usuário não contiver nenhuma regra `@-moz-document`, ele não será aplicado.
+
+### Exemplo
+
+```css
+/* ==UserStyle==
+@name         Example userstyle
+@namespace    https://example.org/userstyle
+@homepageURL  https://example.org/userstyle
+@version      1.0.0
+@license      Other
+@description  This is an example
+@author       example
+@preprocessor default
+==/UserStyle== */
+@-moz-document regexp("https?\:\/\/(www\.)?example\.(org|com).*") {
+    body {
+        background-color: #000000 !important;
+    }
+}
 ```

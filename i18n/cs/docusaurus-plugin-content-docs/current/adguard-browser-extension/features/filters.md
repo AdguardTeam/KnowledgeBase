@@ -19,7 +19,7 @@ Všechny filtry jsou seskupeny podle své role. Existují například kategorie 
 
 ## Vlastní filtry
 
-Zatímco vlastnosti ostatních skupin filtrů jsou víceméně předvídatelné, existuje skupina s názvem _Vlastní_, která může vyvolat další otázky.
+While the features of other filter groups are more or less self-explanatory, there is a group called _Custom_ that may raise additional questions.
 
 ![Custom filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
 

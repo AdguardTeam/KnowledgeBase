@@ -1,5 +1,5 @@
 ---
-title: So sammeln Sie eine HAR-Datei
+title: How to generate a HAR file
 sidebar_position: 1
 ---
 

@@ -3,10 +3,10 @@ title: Překladatelský program AdGuardu
 sidebar_position: 1
 ---
 
-> **Odmítnutí odpovědnosti:** můžete se nás zeptat na cokoli ohledně překladu AdGuardu zasláním e-mailu na adresu [translate@adguard.com](mailto:translate@adguard.com) nebo připojením k naší [diskuzi na Telegramu](https://t.me/joinchat/UVYTLcHbr8JmOGIy).
+You can ask us any questions about translating AdGuard by sending an email to [translate@adguard.com](mailto:translate@adguard.com) or by joining our [Telegram chat](https://t.me/joinchat/UVYTLcHbr8JmOGIy).
 
-Pokud jde o překlady, my v AdGuardu vždy do značné míry spoléháme na dobrovolníky.
+When it comes to translations, we at AdGuard always heavily rely on volunteers.
 
-Ke správě překladů našich produktů používáme platformu [Crowdin](https://crowdin.com/). Toto je místo pro každého, kdo chce přispět AdGuardu překladem některého z našich produktů.
+We now use the [Crowdin platform](https://crowdin.com/) to manage translations of our products. So this is the place for anyone who wants to contribute to AdGuard by translating any of our products.
 
-Pokud se chcete zařadit mezi dobrovolníky, kteří nám pomáhají překládat AdGuard, přečtěte si [jak se stát naším překladatelem](../become-translator) a [ jak s nimi spolupracujeme](../rewards).
+If you want to be among the volunteers who help us translate AdGuard, please read the information on [how to become our translator](../become-translator) and [how we collaborate with them](../rewards).

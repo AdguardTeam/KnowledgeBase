@@ -36,7 +36,7 @@ Some device manufacturers keep Private DNS settings hidden and set 'Automatic' m
 
 ### UC Browsers: UC Browser, UC Browser for x86, UC Mini, UC Browser HD
 
-To be able to filter HTTPS traffic, AdGuard requires the user to add a certificate to the device's trusted user certificates. Unfortunately, UC-family browsers don't trust user certificates, so AdGuard cannot perform HTTPS filtering there.
+To be able to filter HTTPS traffic, AdGuard requires the user to add a certificate to the device's trusted user certificates. Unfortunately, UC browsers don't trust user certificates, so AdGuard cannot perform HTTPS filtering there.
 
 - To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md/)
 
