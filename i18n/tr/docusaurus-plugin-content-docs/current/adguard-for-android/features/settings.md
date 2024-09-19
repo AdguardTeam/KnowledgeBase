@@ -27,7 +27,7 @@ _Automation_ allows you to manage AdGuard via tasker apps.
 
 _Watchdog_ helps protect AdGuard from being disabled by the system ([read more about Android's battery save mode](/adguard-for-android/solving-problems/background-work/)). Girdiğiniz değer, watchdog denetimleri arasındaki saniye cinsinden aralık olacaktır.
 
-_Logging level_ defines what data about the app's operation should be logged. Varsayılan olarak, uygulama etkinlikleriyle ilgili verileri toplar. The _Debug_ level logs more events — enable it if asked by the AdGuard team to help them get a better understanding of the problem. [Günlükleri toplama ve gönderme hakkında daha fazla bilgi edinin](/adguard-for-android/solving-problems/log/)
+_Logging level_ defines what data about the app's operation should be logged. Varsayılan olarak, uygulama etkinlikleriyle ilgili verileri toplar. The _Debug_ level logs more events — enable it if asked by the AdGuard team to help them get a better understanding of the problem. [Read more about collecting and sending logs](/adguard-for-android/solving-problems/log/)
 
 ![Advanced \*mobile\_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
@@ -59,7 +59,7 @@ If you activate too many filters, some websites may work incorrectly.
 
 ### Kullanıcı Betikleri
 
-Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. Bir kullanıcı betiği yüklemek için özel bir kullanıcı betiği yöneticisine ihtiyacınız vardır. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
+Userscripts are mini-programs written in JavaScript that extend the functionality of one or more websites. Bir kullanıcı betiği yüklemek için özel bir kullanıcı betiği yöneticisine ihtiyacınız vardır. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
 
 ![Userscripts \*mobile\_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
@@ -133,7 +133,7 @@ In this section, you can find information about your license and manage it:
 - Buy an AdGuard license to activate [the full version's features](/adguard-for-android/features/free-vs-full)
 - Log in to your AdGuard account or enter the license key to activate your license
 - Sign up to activate your 7-day trial period if you haven't used it yet
-- Refresh the license status from the three-dots menu (⋮)
+- Refresh the license status from the three-dots menu (:)
 - Open the AdGuard account to manage your license there
 - Reset your license — for example, if you've reached device limit for this license and want to apply another one
 

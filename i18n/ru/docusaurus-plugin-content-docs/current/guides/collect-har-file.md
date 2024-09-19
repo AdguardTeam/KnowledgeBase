@@ -1,5 +1,5 @@
 ---
-title: Как создать файл HAR
+title: Как собрать файл HAR
 sidebar_position: 1
 ---
 
@@ -92,7 +92,7 @@ sidebar_position: 1
 
 ## Internet Explorer 11 {#ie11}
 
-Чтобы создать файл HAR в Internet Explorer 11, выполните следующие действия:
+To create a HAR file in Internet Explorer 11, follow these steps:
 
 1. Перейдите по URL-адресу, по которому возникает ошибка. Пока не воспроизводите её.
 
@@ -119,7 +119,7 @@ sidebar_position: 1
 
 ## Safari {#safari}
 
-Чтобы создать файл HAR в Safari, выполните следующие действия:
+To create a HAR file in Safari, follow these steps:
 
 1. Найдите в строке меню Safari раздел **Разработка**.
 
@@ -131,7 +131,7 @@ sidebar_position: 1
 1. Откройте вкладку **Сеть** в веб-инспекторе:
 
     - Из меню: **Разработка → Показывать веб-инспектор → Сеть**.
-    - Клавиатура: **⌥+⌘+I → Сеть**
+    - Keyboard: **⌥+⌘+I → Network**
 
 1. Установите флажок **Сохранить журнал** в левой части вкладок Сеть в меню **Другие параметры фильтра...**.
 

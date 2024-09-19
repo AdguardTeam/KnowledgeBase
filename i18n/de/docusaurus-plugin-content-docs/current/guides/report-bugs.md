@@ -17,7 +17,7 @@ Prüfen Sie, ob Sie die aktuellste Version haben, und wenn nicht, aktualisieren 
 
 ### Wie man ein Problem beschreibt
 
-Versuchen Sie, so viele Details wie möglich anzugeben — das macht es für uns einfacher, den Fehler zu reproduzieren und herauszufinden, wie er behoben werden kann. Here’s what we expect a bug report to include:
+Versuchen Sie, so viele Details wie möglich anzugeben — das macht es für uns einfacher, den Fehler zu reproduzieren und herauszufinden, wie er behoben werden kann. Das erwarten wir von einem Fehlerbericht:
 
 - Ihre App-Version
 - Ihre OS-Version
@@ -26,9 +26,9 @@ Versuchen Sie, so viele Details wie möglich anzugeben — das macht es für uns
 - Ob es wieder auftritt und mit welcher Häufigkeit
 - Ob Sie ein VPN oder eine Antiviren-Software haben
 
-### So erfassen Sie Protokolle
+### So erstellen Sie Protokolle
 
-Read about collecting logs in dedicated articles for each platform.
+Lesen Sie über das Sammeln von Protokollen in speziellen Artikeln für jede Plattform.
 
 ## Wie man für Fehlerberichte oder Funktionswünsche abstimmt
 

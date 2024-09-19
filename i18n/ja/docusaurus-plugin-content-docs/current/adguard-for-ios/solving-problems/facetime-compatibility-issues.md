@@ -1,5 +1,5 @@
 ---
-title: How to avoid compatibility issues with FaceTime
+title: AdGuard使用時FaceTime不具合の対処法
 sidebar_position: 3
 ---
 

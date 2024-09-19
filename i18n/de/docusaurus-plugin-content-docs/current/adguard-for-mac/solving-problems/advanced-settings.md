@@ -13,27 +13,27 @@ Dieser Artikel behandelt AdGuard für Mac, einem multifunktionalen Werbeblocker,
 
 :::caution
 
-Das Ändern der *Erweiterten Einstellungen* kann zu Problemen mit der Leistung von AdGuard führen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. Nehmen Sie Änderungen in diesem Bereich nur dann vor, wenn Sie sicher sind, was Sie tun, oder wenn unser Support-Team Sie darum gebeten hat.
+Changing *Advanced Settings* may cause problems with AdGuard's performance, break the Internet connection, or compromise your security and privacy. Make changes to this section only if you are sure of what you are doing or our support team has asked you to do it.
 
 :::
 
-Um die *Erweiterte Einstellungen*zu finden, öffnen Sie AdGuard, klicken Sie auf das Zahnradsymbol, wählen Sie *Erweitert*und dann *Erweiterte Einstellungen*.
+To find *Advanced Settings*, open AdGuard, click the gear icon, select *Advanced*, then select *Advanced Settings*.
 
 ## Erweiterte Einstellungen
 
-### Netzwerkeinstellungen
+### Network settings
 
 #### `network.extension.exclude.domains`
 
-Die aufgelisteten Domains werden von der Filterung im Modus *Netzwerk-Erweiterung* ausgeschlossen. Verwenden Sie ein Komma oder einen Zeilenumbruch, um Werte zu trennen.
+The listed domains will be excluded from filtering in the *Network Extension* mode. Verwenden Sie ein Komma oder einen Zeilenumbruch, um Werte zu trennen.
 
 #### `network.extension.exclude.ports`
 
-Die aufgeführten Ports werden von der Filterung im Modus *Netzwerk-Erweiterung* ausgeschlossen. Verwenden Sie ein Komma oder einen Zeilenumbruch, um Werte zu trennen.
+The listed ports will be excluded from filtering in the *Network Extension* mode. Verwenden Sie ein Komma oder einen Zeilenumbruch, um Werte zu trennen.
 
 #### `network.extension.route.exclude`
 
-Die aufgelisteten Routen werden von der Filterung im Modus *Netzwerk-Erweiterung* ausgeschlossen. Legen Sie Routen mit einer IP-Adresse oder einem Ziel-CIDR fest. Trennen Sie die Werte durch Kommas oder Zeilenumbrüche.
+The listed routes will be excluded from filtering in the *Network Extension* mode. Legen Sie Routen mit einer IP-Adresse oder einem Ziel-CIDR fest. Trennen Sie die Werte durch Kommas oder Zeilenumbrüche.
 
 #### `network.extension.http.downgrade.bundleids`
 
@@ -41,7 +41,7 @@ Hier können Sie eine Liste von Anwendungen angeben, für die das HTTP/2-Protoko
 
 #### `network.extension.monterey.force.split.tunnel`
 
-Hier können Sie AdGuard verbieten, die „Standardroute“ zu verwenden, die im Modus *Netzwerk-Erweiterung* unter macOS Monterey standardmäßig aktiviert ist. AdGuard verwendet die „Standardroute“, um iCloud Privat-Relay und E-Mail-Datenschutz zu deaktivieren, da sie nicht mit ihnen zusammenarbeiten können.
+Here you can prohibit AdGuard from using the "default route" which is enabled by default in the *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, as it cannot operate in unison with them.
 
 Weitere Informationen zum Problem finden Sie in [diesem Artikel](../icloud-private-relay).
 
@@ -51,7 +51,7 @@ Hier können Sie eine Liste von Anwendungen angeben, die DNS-Abfragen direkt und
 
 #### `network.dns.filter.secure.request`
 
-Leitet sichere DNS-Anfragen an einen lokalen DNS-Proxy um, sofern ein solcher vorhanden ist.
+Redirects secure DNS requests to a local DNS proxy, if there is one available.
 
 #### `network.https.ocsp.check`
 
@@ -59,19 +59,19 @@ Indem Sie `true` festlegen, aktivieren Sie die Sperrprüfung von HTTPS-Zertifika
 
 #### `network.tcp.keepalive.enabled`
 
-Sendet in regelmäßigen Abständen TCP-Pakete über eine inaktive Verbindung, um sicherzustellen, dass diese aktiv bleibt und um NAT-Zeitüberschreitungen zu erneuern.
+Periodically sends TCP packets over an idle connection to ensure that it remains active and to renew NAT timeouts.
 
 #### `network.tcp.keepalive.interval.seconds`
 
-Leerlaufzeit (in Sekunden), bevor eine Keepalive-Anfrage gesendet wird. Wenn 0 (Null) angegeben wird, verwendet das System den Standardwert.
+Idle time, in seconds, before sending a keepalive probe. If 0 is specified, the system will use the default value.
 
 #### `network.tcp.keepalive.timeout.seconds`
 
-Zeit (in Sekunden), bevor eine weitere Keepalive-Anfrage an eine nicht reagierende Gegenstelle gesendet wird. Wird 0 (Null) angegeben, wird der vom System gewählte Wert verwendet.
+Time, in seconds, before sending another keepalive probe to an unresponsive peer. Wird 0 (Null) angegeben, wird der vom System gewählte Wert verwendet.
 
 #### `network.https.ech.enabled`
 
-Verwendet einen lokalen DNS-Proxy für die Suche nach Konfigurationen in den ECH-Konfigurationslisten. Falls gefunden, verschlüsselt Client Hellos.
+Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, encrypts ClientHellos.
 
 #### `network.https.enforce.certificate.transparency`
 
@@ -79,7 +79,7 @@ Verwendet einen lokalen DNS-Proxy für die Suche nach Konfigurationen in den ECH
 
 #### `network.https.filter.http3.enabled`
 
-Mit der Einstellung `true` erlauben Sie AdGuard, Datenverkehr zu filtern, der über HTTP/3, die neueste Version des auf QUIC-basierenden HTTP-Protokolls, gesendet wird.
+By setting `true`, you allow AdGuard to filter traffic sent over HTTP/3, the latest version of the HTTP protocol based on QUIC.
 
 #### `network.filtering.localnetwork`
 
@@ -89,7 +89,7 @@ Indem Sie `true` setzen, aktivieren Sie die lokale Netzwerkfilterung.
 
 Wenn Sie `true` setzen, aktivieren Sie die LoopBack-Filterung.
 
-### DNS-Einstellungen
+### DNS settings
 
 #### `dns.proxy.bootstrap.ips`
 
@@ -101,7 +101,7 @@ Hier können Sie eine Liste mit IP-Adressen von DNS-Servern angeben, die als Bac
 
 #### `dns.proxy.fallback.on.upstreams.failure.enabled`
 
-Normale Abfragen werden an einen Fallback-Upstream weitergeleitet, wenn alle normalen Upstreams ausfallen.
+Normal queries will be redirected to a fallback upstream if all normal upstreams fail.
 
 #### `dns.proxy.detect.search.domains`
 
@@ -115,17 +115,17 @@ Hier können Sie Domains auflisten, für die der Fallback-DNS-Server anstelle de
 
 Hier können Sie die Art der Antwort des DNS-Servers auf blockierte Anfragen festlegen, die den Regeln im Stil von Werbeblockern entsprechen.
 
-- 0 — mit REFUSED antworten
-- 1 — mit NXDOMAIN antworten
-- 2 — mit 0.0.0.0 oder den in `dns.proxy.blocking.response.IPv4.address` und/oder `dns.proxy.blocking.response.IPv6.address` angegebenen Adressen antworten
+- 0 — respond with REFUSED
+- 1 — respond with NXDOMAIN
+- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 #### `dns.proxy.hostrules.blocking.mode`
 
 Hier können Sie die Art der Antwort des DNS-Servers auf blockierte Anfragen entsprechend den Hosts-Regeln festlegen:
 
-- 0 — mit REFUSED antworten
-- 1 — mit NXDOMAIN antworten
-- 2 — mit 0.0.0.0 oder den in `dns.proxy.blocking.response.IPv4.address` und/oder `dns.proxy.blocking.response.IPv6.address` angegebenen Adressen antworten
+- 0 — respond with REFUSED
+- 1 — respond with NXDOMAIN
+- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 #### `dns.proxy.blocking.response.IPv4.address`
 
@@ -145,39 +145,39 @@ Hier können Sie den TTL-Wert (Time to Live) angeben, der als Antwort auf eine b
 
 #### `dns.proxy.parallel.upstream.queries.enabled`
 
-Alle Upstreams werden gleichzeitig abgefragt. Die erste Antwort wird zurückgegeben.
+All upstreams are queried simultaneously. The first response is returned.
 
 #### `dns.proxy.servfail.on.upstreams.failure.enabled`
 
-Reagiert auf einen Upstream-Fehler mit einem SERVFAIL-Paket.
+Responds to upstream failure with a SERVFAIL packet.
 
 #### `dns.proxy.http3.enabled`
 
-Aktiviert HTTP/3 für DNS-over-HTTPS-Upstreams, um die Verbindung zu beschleunigen.
+Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection.
 
 #### `dns.proxy.block.encrypted.client.hello.response`
 
-Entfernt die „Encrypted Client Hello“-Parameter aus den Antworten.
+Removes the Encrypted Client Hello parameters from responses.
 
-### Privatsphäre-Einstellungen
+### Stealth Mode settings
 
 #### `stealth.antidpi.http.split.fragment.size`
 
-Passt die Größe der Fragmentierung der HTTP-Anfrage an. Gültige Werte: 1–1500. Wenn eine ungültige Größe angegeben wird, verwendet das System den Standardwert.
+Passt die Größe der Fragmentierung der HTTP-Anfrage an. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
 
 #### `stealth.antidpi.clienthello.split.fragment.size`
 
-Diese Option gibt die Größe der TCP-Paketfragmentierung an, die dazu beiträgt, Deep Packet Inspection zu vermeiden. Gültige Werte: 1–1500. Wenn eine ungültige Größe angegeben wird, verwendet das System den Standardwert.
+This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
 
 #### `stealth.antidpi.http.space.juggling`
 
-Fügt ein zusätzliches Leerzeichen zwischen der HTTP-Methode und der URL ein und entfernt das Leerzeichen nach dem Feld „Host:“.
+Adds extra space between the HTTP method and the URL and removes space after the "Host:" field.
 
 #### `stealth.antidpi.split.delay.millisecond`
 
-Hier können Sie die Verzögerung in Millisekunden angeben, nachdem das erste Fragment gesendet wurde, wenn eine Fragmentierung durchgeführt wird.
+Here you can specify the delay, in milliseconds, after sending the first fragment, if fragmentation is performed.
 
-### Einstellungen für das Abfangen von Abonnement-Links (Benutzerskripte und Filter)
+### Subscription link interception settings (userscripts and filters)
 
 #### `subscription.link.interception.userscript`
 

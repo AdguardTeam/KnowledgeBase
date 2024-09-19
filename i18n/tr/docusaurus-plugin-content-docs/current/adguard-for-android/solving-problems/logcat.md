@@ -15,7 +15,7 @@ Günlüklerde sağlanan veriler ve/veya dosyalar [AdGuard Gizlilik Politikasına
 
 :::
 
-Bazen normal bir günlük, sorunun kaynağını belirlemek için yeterli olmayabilir. In such cases a system log is needed. Aşağıda nasıl toplanacağı ve alınacağı ile ilgili talimatlar bulunmaktadır: Geliştirici seçenekleri ve Logcat aracılığıyla.
+Bazen normal bir günlük, sorunun kaynağını belirlemek için yeterli olmayabilir. In such cases a system log is needed. Below are instructions on how to collect and get it: via Developer options and Logcat.
 
 :::not
 

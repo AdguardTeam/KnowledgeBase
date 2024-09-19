@@ -71,4 +71,4 @@ sidebar_position: 3
 
 ## Safari용 AdGuard 확장 프로그램 설치 방법
 
-Safari용 AdGuard는 일반적으로 브라우저 확장 프로그램이 아닙니다. 자세한 내용은 [이 문서](/adguard-for-safari/features/general)에서 확인할 수 있습니다. 또는 [이 페이지](https://agrd.io/safari_release)에서 설치 파일을 다운로드할 수 있습니다.
+Safari용 AdGuard는 일반적으로 브라우저 확장 프로그램이 아닙니다. You can read more about it in a [dedicated article](/adguard-for-safari/features/general). 또는 [이 페이지](https://agrd.io/safari_release)에서 설치 파일을 다운로드할 수 있습니다.

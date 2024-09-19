@@ -21,7 +21,7 @@ sidebar_position: 9
 
 ## Расширенные настройки
 
-### Настройки сети
+### Network settings
 
 #### `network.extension.exclude.domains`
 
@@ -71,7 +71,7 @@ sidebar_position: 9
 
 #### `network.https.ech.enabled`
 
-Использует локальный DNS-прокси для поиска конфигураций в списках конфигураций ECH. If found, encrypts Client Hellos.
+Использует локальный DNS-прокси для поиска конфигураций в списках конфигураций ECH. Если такие найдены, шифрует ClientHellos.
 
 #### `network.https.enforce.certificate.transparency`
 
@@ -89,7 +89,7 @@ sidebar_position: 9
 
 Установив значение `true`, вы включите фильтрацию loopback-соединений.
 
-### Настройки DNS
+### DNS settings
 
 #### `dns.proxy.bootstrap.ips`
 
@@ -159,7 +159,7 @@ sidebar_position: 9
 
 Удаляет параметры Encrypted Client Hello из ответов.
 
-### Настройки Защиты от трекинга
+### Stealth Mode settings
 
 #### `stealth.antidpi.http.split.fragment.size`
 
@@ -177,7 +177,7 @@ sidebar_position: 9
 
 Здесь можно указать задержку (в миллисекундах) после отправки первого фрагмента, если выполняется фрагментация.
 
-### Настройки перехвата ссылок на подписку (пользовательские скрипты и фильтры)
+### Subscription link interception settings (userscripts and filters)
 
 #### `subscription.link.interception.userscript`
 

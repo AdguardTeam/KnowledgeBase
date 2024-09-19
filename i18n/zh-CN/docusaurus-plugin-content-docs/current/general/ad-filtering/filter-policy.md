@@ -41,14 +41,12 @@ AdGuard 广告拦截的过滤器包含以下过滤器：
 - AdGuard 基础过滤器
 - AdGuard 移动广告过滤器
 - 按语言原则划分的地区过滤器，包括中文、荷兰语、法语、德语、日语、俄语、西班牙语/葡萄牙语、土耳其语和乌克兰语
-- AdGuard Quick Fixes filter
 
 ### 过滤器的用途
 
 - **基础过滤器**旨在拦截英语网站和没有单独过滤器的网站上的广告。 它还包含适用于所有网站（无论网站的语言）的一般过滤规则。
 - **移动广告过滤器**拦截移动版网站和移动应用程序中的广告。 没有基于语言的细分。
 - **地区过滤器**遵循与**基础过滤器**相同的政策，但仅限于特定语言的网站。
-- **Quick Fixes filter** used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension.
 
 广告拦截过滤器的主要目标在于拦截网站、应用程序和某些可以从互联网上加载广告的设备上的所有类型广告。广告类型如下：
 
