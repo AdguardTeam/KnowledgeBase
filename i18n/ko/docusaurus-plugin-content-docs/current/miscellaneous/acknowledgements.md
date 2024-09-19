@@ -1,48 +1,48 @@
 ---
-title: Credits & Acknowledgements
+title: 감사의 말
 sidebar_position: 2
 ---
 
-Our dev team would like to thank the developers of this third-party software, our beta testers and other interested users who helped AdGuard improve and grow.
+우리 개발진은 서드파티 개발자, 베타 테스터 및 AdGuard의 개선과 성장에 도움을 주신 사용자들에게 감사의 뜻을 전합니다.
 
-## Third-party software {#software}
+## 타사 소프트웨어 {#software}
 
-This is the list of libraries and other resources that really helped us with AdGuard software development process.
+다음은 AdGuard 소프트웨어 개발 과정에 도움이 된 라이브러리 및 기타 리소스 목록입니다.
 
 ## Windows용 AdGuard {#win}
 
-- SQLLite database engine: [sqlite.org](https://sqlite.org)
-- ADO.NET provider for SQLite: [system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
-- Json.NET — high-performance JSON framework for .NET: [www.newtonsoft.com/json](https://www.newtonsoft.com/json)
-- AvalonEdit — WPF-based text editor component: [avalonedit.net](https://avalonedit.net)
+- SQLLite 데이터베이스 엔진: [sqlite.org](https://sqlite.org)
+- SQLite용 ADO.NET 공급자: [system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
+- Json.NET — .NET용 고성능 JSON 프레임워크: [www.newtonsoft.com/json](https://www.newtonsoft.com/json)
+- AvalonEdit — WPF 기반 텍스트 편집기: [avalonedit.net](https://avalonedit.net)
 
-## AdGuard for Mac {#mac}
+## Mac용 AdGuard {#mac}
 
-- Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
-- Ilija Tovilo for ITProgressIndicator component: [github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
-- Sparkle Project for Sparkle.framework component: [http://sparkle-project.org](http://sparkle-project.org)
-- Robbie Hanson for GCDAsyncSocket component: [github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
-- Tony Million for Reachability component: [github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
-- August «Gus» Mueller for Fmdb component: [github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
-- Stephen F. Booth for SFBCrashReporter project: [github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)
-- Bartosz Janda for Acextract component: [github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
+- Red Sweater Software, RSVerticallyCenteredTextFieldCell의 개발사: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
+- ITProgressIndicator 컴포넌트용 Ilija Tovilo: [github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
+- Sparkle.framework 컴포넌트용 Sparkle 프로젝트: [http://sparkle-project.org](http://sparkle-project.org)
+- GCDAsyncSocket 컴포넌트의 Robbie Hanson: [github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
+- Reachability 컴포넌트의 Tony Million: [github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
+- Fmdb 컴포넌트용 August “Gus” Mueller: [github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
+- SFBCrashReporter 프로젝트의 Stephen F. Booth: [github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)
+- Acextract 컴포넌트용 Bartosz Janda: [github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
 - FLOPageViewController: [github.com/floschliep/FLOPageViewController](https://github.com/floschliep/FLOPageViewController)
 
 ## Android용 AdGuard {#android}
 
-- Logback-android by Tony19: [tony19.github.io/logback-android](https://tony19.github.io/logback-android)
-- Otto by Square: [http://square.github.io/otto](http://square.github.io/otto)
-- RootTools Library by Stericson: [github.com/Stericson/RootTools](https://github.com/Stericson/RootTools)
-- MaterialDateRangePicker by Supratim Chakraborty: [github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
-- HelloCharts by Leszek Wach: [github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)
+- Tony19의 Logback-android: [tony19.github.io/logback-android](https://tony19.github.io/logback-android)
+- Square의 Otto: [http://square.github.io/otto](http://square.github.io/otto)
+- Stericson의 RootTools 라이브러리: [github.com/Stericson/RootTools](https://github.com/Stericson/RootTools)
+- Supratim Chakraborty의 MaterialDateRangePicker: [github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
+- Leszek Wach의 HelloCharts: [github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)
 
 ## iOS용 AdGuard {#ios}
 
-- Reachability component by Tony Million: [github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
-- Fmdb component by August «Gus» Mueller: [github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
-- NSStringPunycodeAdditions component by Nate Weaver: [github.com/Wevah/Punycode-Cocoa](https://github.com/Wevah/Punycode-Cocoa)
-- Minizip-ng library by Nathan Moinvaziri: [github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
-- Lottie for iOS library by Brandon Withrow: [github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
+- Tony Million의 도달 가능성 컴포넌트: [github.com/tonymillion/Rachability](https://github.com/tonymillion/Reachability)
+- August «Gus» Mueller의 Fmdb 컴포넌트: [github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
+- Nate Weaver의 NSStringPunycodeAdditions 컴포넌트: [github.com/Wevah/Punycode-Cocoa](https://github.com/Wevah/Punycode-Cocoa)
+- Nathan Moinvaziri의 Minizip-ng 라이브러리: [github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
+- Brandon Withrow의 iOS용 Lottie 라이브러리: [github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
 
 ## AdGuard 확장 프로그램 {#extension}
 
@@ -86,7 +86,7 @@ This is the list of libraries and other resources that really helped us with AdG
 - request: [github.com/request/request](https://github.com/request/request)
 - require-dir: [github.com/aseemk/requireDir](https://github.com/aseemk/requireDir)
 
-## AdGuard Browser Assistant {#assistant}
+## AdGuard 브라우저 어시스턴트 {#assistant}
 
 - React: [github.com/facebook/react](https://github.com/facebook/react)
 - webextension-polyfill: [github.com/mozilla/webextension-polyfill](https://github.com/mozilla/webextension-polyfill)
@@ -113,7 +113,7 @@ This is the list of libraries and other resources that really helped us with AdG
 - Chromium: [github.com/chromium/chromium/blob/master/LICENSE](https://github.com/chromium/chromium/blob/master/LICENSE)
 - Detours: [github.com/microsoft/Detours/blob/main/LICENSE.md](https://github.com/microsoft/Detours/blob/main/LICENSE.md)
 - eDistantObject: [github.com/google/eDistantObject/blob/master/LICENSE](https://github.com/google/eDistantObject/blob/master/LICENSE)
-- FF/FFOS libs by Simon Zolin: [github.com/stsaz/ffbase/blob/master/README.md](https://github.com/stsaz/ffbase/blob/master/README.md)
+- Simon Zolin의 FF/FFOS 라이브러리: [github.com/stsaz/ffbase/blob/master/README.md](https://github.com/stsaz/ffbase/blob/master/README.md)
 - Google test: [github.com/google/googletest/blob/master/LICENSE](https://github.com/google/googletest/blob/master/LICENSE)
 - http-parser: [github.com/nodejs/http-parser/blob/master/LICENSE-MIT](https://github.com/nodejs/http-parser/blob/master/LICENSE-MIT)
 - jsmn: [github.com/zserge/jsmn/blob/master/LICENSE](https://github.com/zserge/jsmn/blob/master/LICENSE)
@@ -127,58 +127,58 @@ This is the list of libraries and other resources that really helped us with AdG
 - SQLite: [www.sqlite.org/copyright.html](https://www.sqlite.org/copyright.html)
 - zlib: [zlib.net/zlib_license.html](https://zlib.net/zlib_license.html)
 
-## Special thanks {#testers}
+## 특별한 감사의 말 {#testers}
 
-Also a huge thanks and gratitude to all beta testers and other engaged users, whose help in finding/eliminating all the bugs, translating AdGuard and moderating our communities was priceless. Special thanks to:
+더불어 모든 베타 테스터들과, 버그를 찾거나 제거하고 AdGuard를 번역하며 커뮤니티를 조정할 수 있도록 귀중한 도움을 주신 것에 큰 감사를 표합니다. 특별 기여자 명단:
 
-- ag_bug_finder — beta tester of AdGuard for Windows
-- Aikatsui — active contributor to AdGuard Home
-- Andy Kleinert (AndyKl) — translator and proofreader to German in Crowdin
-- BigDargon — contributed the hostsVN project as a source to the list of AdGuard DNS
-- Blaz — started as a filter contributor and now working at AdGuard
-- Boo Berry — Telegram group moderator
-- buuuuuuu190 — beta tester
-- clarke — beta tester
-- [dartrax](https://github.com/dartrax) — beta tester
-- dja2k — beta tester
-- Eduardo Addad de Oliveira (eduardoaddad) — translator and proofreader to Portuguese and Portuguese, Brazilian in Crowdin
-- fabjazz — beta tester
-- Görkem Emrah Güler (gork7777) — translator and proofreader to Turkish in Crowdin
-- hanschke — beta tester
-- iDjay — outstanding beta tester of AdGuard for iOS
-- Imre Kristoffer Eilertsen (DandelionSprout) — maintainer of "Dandelion Sprout’s Nordic Filters" that are included in all AdGuard tools
-- IONIL — translator and proofreader to Hebrew in Crowdin
-- itabmedia — beta tester
-- kirasam — beta tester
-- krystian3w — very active filter contributor
-- lancelot.moon — translator and proofreader to Chinese Traditional in Crowdin, beta tester
-- Lord Ami — beta tester
-- Lukas Novotny (novas78) — translator and proofreader to Czech in Crowdin
-- malware1 — beta tester
-- milder — beta tester
-- Nicos18 — beta tester
-- Oizaro — translator and proofreader to Italian in Crowdin
-- Oleg Chashko — very active beta tester of AdGuard for Safari
-- Oskari Lavinto (olavinto) — translator and proofreader to Finnish in Crowdin
-- ouzbed — beta tester
-- PentagramTr — filter contributor, namely, he has brought a lot of new things to the Turkish filter
-- Peter Hubinsky (hubak) — translator and proofreader to Slovak in Crowdin
-- PiQuark6046 — filter contributor
-- rickyoh — beta tester
-- Ronin427 — beta tester
-- Sanjay Nand — beta tester
-- saturnotaku — beta tester
-- steve1209 — beta tester
-- streetwolf — beta tester
-- superlex — helps us with scriptlets, filters, and AdGuard for Safari
-- TayTayTheKiller — beta tester
-- [TPS](https://github.com/TPS) — bug finder, filter contributor
-- Yuki2718 — actively contributes to AdGuard filters
-- zznosar — active beta tester focused on AdGuard for iOS
-- Sergey Zozulya (sviperz) — active member of our Telegram group, beta tester
+- ag_bug_finder — Windows용 AdGuard의 베타 테스터
+- Aikatsui — AdGuard Home의 적극적인 기여자
+- Andy Kleinert (AndyKl) — Crowdin의 독일어 번역자 및 교정자
+- BigDargon - AdGuard DNS 목록에 hostsVN 프로젝트를 소스로 제공했습니다.
+- Blaz — 필터 기여자로 시작하여 현재 AdGuard에서 근무
+- Boo Berry — Telegram 그룹 중재자
+- buuuuuuu190 — 베타 테스터
+- clarke — 베타 테스터
+- [dartrax](https://github.com/dartrax) — 베타 테스터
+- dja2k — 베타 테스터
+- Eduardo Addad de Oliveira (eduardoaddad) — Crowdin의 포르투갈어와 브라질어 번역자 및 교정자
+- fabjazz — 베타 테스터
+- Görkem Emrah Güler (gork7777) — Crowdin의 튀르키예어 번역가 및 교정자
+- hanschke — 베타 테스터
+- iDjay — iOS용 AdGuard의 뛰어난 베타 테스터
+- Imre Kristoffer Eilertsen (DandelionSprout) — 모든 AdGuard 도구에 포함된 "Dandelion Sprout’s Nordic Filters" 유지 관리자
+- IONIL — Crowdin의 히브리어 번역가 및 교정자
+- itabmedia — 베타 테스터
+- kirasam — 베타 테스터
+- krystian3w — 매우 적극적인 필터 기여자
+- lancelot.moon — Crowdin의 중국어 번체 번역가 및 교정자, 베타 테스터
+- Lord Ami — 베타 테스터
+- Lukas Novotny (novas78) — Crowdin의 체코어 번역가 및 교정자
+- malware1 — 베타 테스터
+- milder — 베타 테스터
+- Nicos18 — 베타 테스터
+- Oizaro — Crowdin의 이탈리아어 번역가 및 교정자
+- Oleg Chashko — 매우 적극적인 Safari용 AdGuard 베타 테스터
+- Oskari Lavinto (olavinto) — Crowdin의 핀란드어 번역가 및 교정자
+- ouzbed — 베타 테스터
+- PentagramTr — 필터 기여자, 즉, 튀르키예어 필터에 많은 새로운 것을 제공
+- Peter Hubinsky (hubak) — Crowdin의 슬로바키아어 번역가 및 교정자
+- PiQuark6046 — 필터 기여자
+- rickyoh — 베타 테스터
+- Ronin427 — 베타 테스터
+- Sanjay Nand — 베타 테스터
+- saturnotaku — 베타 테스터
+- steve1209 — 베타 테스터
+- streetwolf — 베타 테스터
+- superlex — scriptlets, 필터, Safari용 AdGuard에 도움
+- TayTayTheKiller — 베타 테스터
+- [TPS](https://github.com/TPS) — 버그 수색자, 필터 기여자
+- Yuki2718 — AdGuard 필터의 적극적인 기여자
+- zznosar — iOS용 AdGuard 중심의 적극적 베타 테스터
+- Sergey Zozulya(sviperz) — 우리 Telegram 그룹의 적극적인 멤버, 베타 테스터
 
 ---
 
-We also want to thank the [xda-developers users](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/). Thank you for your helpful feedback!
+우리는 또한 [xda-developers 이용자들](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/)에게 감사드립니다. 유용한 피드백을 보내 주셔서 감사합니다!
 
-We always appreciate comments from our users, especially constructive ones. You can always contact us to share your thoughts about AdGuard, request new features, and submit bugs. Join the [AdGuard Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).
+우리는 언제나 우리 소프트웨어의 사용자들, 특히 열성적인 사용자들의 의견에 감사드립니다. 언제든지 우리에게 연락하여 AdGuard에 대한 의견을 공유하고, 새로운 기능을 요청하고, 버그를 제출할 수 있습니다. [AdGuard 서브레딧](https://reddit.com/r/adguard), [Xda-developers 포럼](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/)에 가입하거나 [GitHub](https://github.com/AdguardTeam)에서 우리의 페이지를 방문하세요.

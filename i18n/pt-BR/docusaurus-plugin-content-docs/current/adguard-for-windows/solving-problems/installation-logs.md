@@ -1,5 +1,5 @@
 ---
-title: Como coletar logs de instalação do AdGuard
+title: How to collect AdGuard installation logs
 sidebar_position: 4
 ---
 
@@ -17,7 +17,7 @@ Os dados e/ou arquivos fornecidos nos registros do sistema são processados de a
 
 Caso ocorra algum problema durante a instalação do AdGuard, a equipe de suporte poderá solicitar que você colete e envie os logs de instalação do AdGuard. Neste caso você precisa:
 
-1. Selecione o comando *Executar* no menu Iniciar ou pressione *Win + R* no teclado.
+1. Select the *Run* command in Start menu or press *Win + R* on the keyboard.
 
 1. Digite *%tmp%* e clique em *OK*.
 

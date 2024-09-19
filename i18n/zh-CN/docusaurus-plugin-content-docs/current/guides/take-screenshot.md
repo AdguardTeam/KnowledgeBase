@@ -52,17 +52,17 @@ sidebar_position: 5
 
 Windows 可以截取整个屏幕并将截图复制到剪贴板。
 
-要获取活动窗口的屏幕截图，请使用以下组合：
+To take a screenshot of an active window, use the following shortcut keys:
 
 - **同时按住 *Alt* 和 *PrtScn* (或在某些笔记本电脑上按 *Fn + Alt + PrtScn* )**
 
-要获取活动窗口的屏幕截图，请使用以下组合：
+To take a screenshot of a specific area, use the following shortcut keys:
 
 - ***按住 ***Win + Shift + S******
 
-截屏后，它将保存在剪贴板中。 在大多数情况下，用户可以使用 *Ctrl + V* 按钮组合将其粘贴到当前正在编辑的文档中。 另外，如果您需要将屏幕截图保存到文件中，则应打开标准的 Paint 程序（或任何其他可以处理图像的应用程序）。 使用相同的按钮组合或单击「粘贴」按钮（通常在屏幕的左上角）将您的屏幕截图粘贴到那里，然后将其保存。
+截屏后，它将保存在剪贴板中。 在大多数情况下，用户可以使用 *Ctrl + V* 按钮组合将其粘贴到当前正在编辑的文档中。 另外，如果您需要将屏幕截图保存到文件中，则应打开标准的 Paint 程序（或任何其他可以处理图像的应用程序）。 Paste your screenshot there using the same shortcut keys or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
 
-在 Windows 8 和 10 上可以通过 *Win + PrtScn* 组合快速捕获屏幕截图。 按下这些按钮后，屏幕快照将自动作为文件保存到*图片* → *屏幕截图文件夹*中。
+Windows 8 and 10 let you take a screenshot very quickly with the *Win + PrtScn* shortcut keys. 按下这些按钮后，屏幕快照将自动作为文件保存到*图片* → *屏幕截图文件夹*中。
 
 还有一个专用的屏幕截图程序，称为 *Snipping Tool* (自带截图工具) ，可通过开始菜单在计算机的标准程序中找到。 该截图工具使您可以捕获桌面的任何区域或整个屏幕。 使用此程序拍摄屏幕快照后，您可以编辑图片并将其保存到计算机上的任何文件夹中。
 
@@ -70,26 +70,26 @@ Windows 可以截取整个屏幕并将截图复制到剪贴板。
 
 ### macOS 系统 {#mac}
 
-要获取活动窗口的屏幕截图，请使用以下组合：
+To take a screenshot on Mac, use the following shortcut keys:
 
 - ***同时按住 ***⌘Cmd + Shift + 3******
 
 Mac 会捕获整个屏幕，并将其另存为在桌面上的文件。
 
-要获取活动窗口的屏幕截图，请使用以下组合：
+To take a screenshot of an active window, use the following shortcut keys:
 
 - **同时按住 *⌘Cmd + Shift + 4 + 空格键*。 指针将变为相机图标。 单击窗口以捕获它。 按 Esc 按钮取消截屏**
 
-要获取活动窗口的屏幕截图，请使用以下组合：
+To take a screenshot of a specific area, use the following shortcut keys:
 
 - ***按 ***⌘ Cmd + Shift + 5******。 拖动十字准线以选择所需的区域。 释放鼠标或触控板以截取屏幕截图。然后按 Esc 按钮将其取消。
 
-要获取 *Touch Bar*（MacBook Pro）的截图，请使用以下组合：
+To take a screenshot of the *Touch Bar* (MacBook Pro), use the following shortcut keys:
 
 - ***按住 ***Win + Shift + S******
 
 您的 Mac 会捕获整个 *Touch Bar*，并在桌面上另存为文件。
 
-若您想将屏幕截图复制到剪贴板而不是保存到剪贴板，请同时按住 *Ctrl* 和上面的任意组合。 然后，您可以使用 *Cmd + V* 组合将屏幕截图（从剪贴板）粘贴到您当前正在编辑的文档或图像中。
+To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the shortcut keys above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* shortcut keys.
 
 您还可以通过使用**预览**并选择**截图**（获取所选区域，窗口或整个屏幕的）来截屏。 使用**预览**时，您可以将屏幕截图保存为 JPG、TIFF、PDF 等文件格式。

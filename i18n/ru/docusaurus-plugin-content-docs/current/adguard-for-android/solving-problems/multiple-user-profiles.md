@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -85,7 +85,7 @@ If you try to reinstall AdGuard after an unsuccessful removal attempt, you will 
 - Откройте **Настройки**;
 - Нажмите **Расширенные**;
 - Прокрутите вниз и нажмите **Dual Messenger**;
-- Disable the **Dual messenger** for all apps;
+- Отключите **Dual Messenger** для всех приложений;
 - Заблокируйте устройство на 5 минут;
 - Разблокируйте экран и повторите попытку создания VPN-профиля.
 
@@ -94,5 +94,5 @@ If you try to reinstall AdGuard after an unsuccessful removal attempt, you will 
 - Откройте **Настройки**;
 - Выберите вкладку **Основные**;
 - Прокрутите вниз и нажмите **Dual App**;
-- Remove all apps from the list;
+- Удалите все приложения из списка;
 - Перезагрузите устройство.

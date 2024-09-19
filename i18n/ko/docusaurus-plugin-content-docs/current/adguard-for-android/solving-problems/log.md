@@ -15,7 +15,7 @@ Data and/or files provided in logs are processed in accordance with [the AdGuard
 
 :::
 
-이 글에서는 디버그 로그를 수집하는 방법을 설명합니다. 디버그 로그는 잠재적으로 복잡한 문제를 해결하는 데 필요합니다. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
+In this article, we'll guide you through the process of collecting debug logs, an essential troubleshooting step for solving complex issues that may potentially arise. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
 
 :::note
 
@@ -23,9 +23,9 @@ AdGuard is committed to protecting your privacy. We strictly follow our [Privacy
 
 :::
 
-### Collecting debug log
+### Recording debug log
 
-**디버그 로그**를 수집하여 저희에게 보내려면 다음 단계를 수행하십시오.
+To collect **debug** log and send it to us, you need to perform following steps:
 
 1. Go to *Settings* → *General* → *Advanced*.
 1. Tap *Logging level* and set it to *Debug*.

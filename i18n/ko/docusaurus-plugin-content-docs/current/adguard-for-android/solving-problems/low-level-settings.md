@@ -63,7 +63,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 
 #### 차단된 TTL 응답
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+여기에서 차단된 요청에 대한 응답으로 반환할 TTL(유지시간) 값을 지정할 수 있습니다.
 
 #### DNS cache size
 
@@ -113,7 +113,7 @@ Use it only for debugging purposes!
 
 #### Encrypted Client Hello
 
-모든 암호화된 인터넷 연결에는 암호화되지 않은 부분이 있습니다. 이것은 연결하려는 서버의 이름이 포함된 첫 번째 패킷입니다. Encrypted Client Hello 기술은 이 문제를 해결하고 암호화되지 않은 마지막 비트의 정보를 암호화합니다. To benefit from it, enable the *Encrypted Client Hello* option. It uses a local DNS proxy to look for the ECH configuration for the domain. ECH 구성이 발견되면 ClientHello 패킷이 암호화됩니다.
+모든 암호화된 인터넷 연결에는 암호화되지 않은 부분이 있습니다. 이것은 연결하려는 서버의 이름이 포함된 첫 번째 패킷입니다. Encrypted Client Hello 기술은 이 문제를 해결하고 암호화되지 않은 마지막 비트의 정보를 암호화합니다. To benefit from it, enable the *Encrypted Client Hello* option. 로컬 DNS 프록시를 사용하여 도메인에 대한 ECH 구성을 찾습니다. If it is found, Client Hello packet will be encrypted.
 
 #### OCSP checking
 
@@ -127,7 +127,7 @@ If the verification takes too long, AdGuard will allow the connection while cont
 
 If this setting is enabled, AdGuard will redirect DNS-over-HTTPS requests to the local DNS proxy in addition to plain DNS requests. We recommend disabling fallback upstreams and using only encrypted DNS servers to maintain privacy.
 
-#### Filter HTTP/3
+#### HTTP/3 필터링
 
 If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
@@ -147,7 +147,7 @@ Here you can specify port ranges that should be filtered.
 
 If this setting is enabled, AdGuard will record blocked HTML elements in *Recent activity*.
 
-#### Scriplet debugging
+#### Scriptlet debugging
 
 If this setting is enabled, debugging in scriptlets will be activated, and the browser log will record when scriptlet rules are applied.
 

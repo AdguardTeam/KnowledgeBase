@@ -5,13 +5,13 @@ sidebar_position: 3
 
 Les victimes d'hameçonnage et de logiciels malveillants restent un problème courant. Pour améliorer la sécurité numérique, nous avons incorporé des filtres spéciaux dans les produits AdGuard pour vous protéger contre les sites web malveillants et ceux de phishing. À ce jour, nous avons catégorisé plus de 15 millions de sites et construit une base de données de 1,5 million de sites web connus pour hameçonnage et maliciels. À l'aide de cette base de données, AdGuard vérifie les sites web que vous visitez pour vous protéger contre les menaces en ligne.
 
-::: note
+:::note
 
 Nous ne collectons ni n'utilisons aucune information sur les sites web que vous visitez.
 
 :::
 
-## Comment AdGuard vérifie-t-il les sites web ?​
+## How does AdGuard check websites?
 
 Chaque fois que vous visitez un site web, votre client local échange des informations avec notre serveur backend sous forme de hachages et de préfixes de hachage. Sur la base de cet échange, le client local détermine si le site web figure ou non dans la base de données des sites web potentiellement dangereux. Il existe une différence dans la portée de cette vérification pour les applications et les extensions.
 
@@ -61,11 +61,11 @@ AdGuard gère une vaste base de données de sites web d'hameçonnage et de logic
 
 Nous analysons automatiquement les plaintes concernant les sites web suspects et passons beaucoup de temps à maintenir la base de données à jour, à nettoyer les faux positifs et à mettre en place des mécanismes pour les éviter à l'avenir.
 
-### Vous souhaitez nous aider ?
+### Want to help?
 
 Nous apprécions toute votre aide ! Si vous rencontrez un site d'hameçonnage ou de maliciels, veuillez le signaler à <support@adguard.com>.
 
-### Réponses faussement positives
+### False-positive responses
 
 Il arrive que des sites web non malveillants soient ajoutés aux filtres d'AdGuard. Nous faisons de notre mieux pour réduire le pourcentage de faux positifs, mais il y en a toujours. Si vous rencontrez ce comportement de la part d'AdGuard, veuillez signaler le faux positif à notre assistance technique à <support@adguard.com>.
 

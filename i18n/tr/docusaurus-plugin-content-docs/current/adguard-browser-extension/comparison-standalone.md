@@ -19,8 +19,8 @@ AdGuard Tarayıcı Uzantısı ücretsiz ve yüklemesi kolay olmasına, reklamlar
 
 ![Extension vs. App \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
 
-`1` – within browser restrictions and only in the browser where it is installed;
+`1` — within browser restrictions and only in the browser where it is installed;
 
-`2` – the extension is unable to detect requests from other extensions. Kötü amaçlı veya izleme uzantısı, sunucusuna size reklam göstermek veya etkinliğinizi izlemek için bir istek gönderirse, AdGuard Tarayıcı Uzantısı bu isteği engellemeyecektir;
+`2` — the extension is unable to detect requests from other extensions. Kötü amaçlı veya izleme uzantısı, sunucusuna size reklam göstermek veya etkinliğinizi izlemek için bir istek gönderirse, AdGuard Tarayıcı Uzantısı bu isteği engellemeyecektir;
 
-`3` – not all types of ads and threats can be blocked by browser extensions due to certain browser limitations. Bazı öğeler sayfaya ulaşabilir ve yükleme sürecini yavaşlatabilir. Ayrıca, tarayıcı tabanlı reklam engelleyicilerin aksine, AdGuard uygulaması reklamları tarayıcıya yüklenmeden önce engeller. Bu, veri tasarrufu ve sayfa açılışını hızlandırır.
+`3` — not all types of ads and threats can be blocked by browser extensions due to certain browser limitations. Bazı öğeler sayfaya ulaşabilir ve yükleme sürecini yavaşlatabilir. Ayrıca, tarayıcı tabanlı reklam engelleyicilerin aksine, AdGuard uygulaması reklamları tarayıcıya yüklenmeden önce engeller. Bu, veri tasarrufu ve sayfa açılışını hızlandırır.

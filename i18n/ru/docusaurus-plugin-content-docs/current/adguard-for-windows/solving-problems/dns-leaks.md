@@ -11,7 +11,7 @@ sidebar_position: 9
 
 В AdGuard для Windows можно указать адрес DNS-сервера, который будет обрабатывать запросы вместо системного DNS-сервера, обычно предоставляемого провайдером (если это не отменено в настройках системы). Замена DNS-сервера, может защитить ваш DNS-трафик от прослушивания провайдером. Более того, выбрав зашифрованный и/или фильтрующий DNS-сервер, вы получите дополнительную защиту от киберпреступников и назойливой рекламы.
 
-Многие пользователи AdGuard для Windows ценят функцию защиты DNS. Но некоторые из них сталкиваются со следующей проблемой: проверка на сайте типа https://ipleak.net/ показывает, что запросы обрабатываются системным DNS-сервером, а не выбранным. В этой статье мы расскажем, почему это происходит и как этого избежать.
+Многие пользователи AdGuard для Windows ценят функцию защиты DNS. But some of them encounter the following issue: a check on a website like https://ipleak.net/ shows that requests are handled by the default DNS server instead of the selected one. В этой статье мы расскажем, почему это происходит и как этого избежать.
 
 ## Bootstrap DNS-адрес
 
@@ -21,7 +21,7 @@ sidebar_position: 9
 
 - перейдите в *Расширенные настройки*
 - прокрутите вниз до раздела *Список пользовательских bootstrap-адресов*
-- введите bootsrap-адрес в формате IP-адреса (вы можете найти нужный в [списке известных DNS-провайдеров](https://adguard-dns.io/kb/general/dns-providers/))
+- enter the custom bootstrap address in the IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
 - нажмите *Сохранить*
 
 ## Резервный (fallback) DNS-сервер
@@ -33,7 +33,7 @@ sidebar_position: 9
 - перейдите в *Расширенные настройки*
 - прокрутите вниз до раздела *Резервные (fallback) серверы*
 - отметьте опцию *Использовать пользовательские серверы*
-- затем найдите раздел *Список пользовательских резервных (fallback) серверов* и укажите серверы по одному в строке
+- then find the *List of custom fallback servers* section and enter the custom fallback servers one per line
 
 или
 

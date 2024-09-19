@@ -1,11 +1,11 @@
 ---
-title: Как получить файлы HAR
+title: How to generate HAR files
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,11 +17,11 @@ HAR files are processed in accordance with [the AdGuard Privacy Policy](https://
 
 ## Что такое файлы HAR?
 
-Формат HAR (HTTP ARchive) представляет собой файл архива в формате JSON для протоколирования взаимодействия браузера с сайтом. Технические характеристики формата HAR определяют архивные данные для транзакций HTTP, которые используются браузером для экспорта подробной информации о загружаемых веб-страницах. Более подробное описание формата файла HAR и его характеристик вы можете найти на сайте [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
+Формат HAR (HTTP ARchive) представляет собой файл архива в формате JSON для протоколирования взаимодействия браузера с сайтом. The specifications of HAR format define archival data for HTTP transactions that a browser uses to export detailed information about the web pages it loads. Более подробное описание формата файла HAR и его характеристик вы можете найти на сайте [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
 
-## Как получить файлы HAR
+## How to generate HAR files
 
-Иногда нам нужно проанализировать данные файлы, чтобы заблокировать определённые объявления, которые по какой-то причине трудно воспроизвести. Чтобы получить файлы HAR, выполните следующие действия:
+Иногда нам нужно проанализировать данные файлы, чтобы заблокировать определённые объявления, которые по какой-то причине трудно воспроизвести. To get HAR files, follow these steps:
 
 1. Откройте AdGuard и перейдите в **Настройки** (значок ⚙ в правом нижнем углу).
 2. Нажмите **Общие** →**Дополнительные** → **Низкоуровневые настройки**.
@@ -31,7 +31,7 @@ HAR files are processed in accordance with [the AdGuard Privacy Policy](https://
 6. Вернитесь в раздел **Расширенные**.
 7. Нажмите **Экспортировать логи и информацию о системе** → **Разрешить** (при необходимости) → **Сохранить**.
 
-**Пожалуйста, пришлите файл с логами (полученный в результате) в службу поддержки AdGuard.**
+**Send the generated file with the logs to the AdGuard support service.**
 
 :::note
 

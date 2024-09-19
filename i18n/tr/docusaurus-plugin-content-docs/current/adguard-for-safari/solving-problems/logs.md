@@ -11,7 +11,7 @@ Bu makale, yalnızca Safari tarayıcınızı koruyan Safari için AdGuard hakkı
 
 Safari için AdGuard ile oluşabilecek çeşitli sorunları analiz etmek ve teşhis etmek için AdGuard destek hizmetinin günlük dosyalarına ihtiyacı olabilir. Bu dosyalar hataların ve diğer yazılım olaylarının kayıtlarını içerir. Aşağıda günlüklerin nasıl toplanacağı ve gerektiğinde desteğe nasıl gönderileceği hakkında kısa talimatlar bulunmaktadır.
 
-### How to collect logs
+### Günlükler nasıl toplanır
 
 1. Safari için AdGuard uygulamasını açın.
 2. Aşağı kaydırın ve _Günlükleri dışa aktar_ öğesine tıklayın.

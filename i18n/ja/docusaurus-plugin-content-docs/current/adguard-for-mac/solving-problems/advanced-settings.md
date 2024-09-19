@@ -71,7 +71,7 @@ sidebar_position: 9
 
 #### `network.https.ech.enabled`
 
-ECH Configs Lists内のconfigsを検索するために、ローカルDNSプロキシを使用します。 見つかった場合、ClientHellosを暗号化します。
+ECH Configs Lists内のconfigsを検索するために、ローカルDNSプロキシを使用します。 If found, encrypts Client Hellos.
 
 #### `network.https.enforce.certificate.transparency`
 

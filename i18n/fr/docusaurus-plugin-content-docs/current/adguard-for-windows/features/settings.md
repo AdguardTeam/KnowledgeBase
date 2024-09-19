@@ -15,7 +15,7 @@ _Paramètres_ est la section qui nécessite un maximum d'attention. C'est ici qu
 
 ### Paramètres généraux
 
-Ici, vous pouvez définir la langue et le thème (Sombre ou Clair), activer le lancement d'AdGuard au démarrage du système et les mises à jour automatiques silencieuses, choisir la chaîne de mise à jour et filtrer l'intervalle de vérification des mises à jour. Les paramètres sont également l'endroit où aller si AdGuard pour Windows ne fonctionne pas correctement et si l'équipe d'assistance vous a demandé de [collecter les _journaux de débogage_](/adguard-for-windows/solving-problems/adguard-logs.md).
+Ici, vous pouvez définir la langue et le thème (Sombre ou Clair), activer le lancement d'AdGuard au démarrage du système et les mises à jour automatiques silencieuses, choisir la chaîne de mise à jour et filtrer l'intervalle de vérification des mises à jour. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect _Debug logs_](/adguard-for-windows/solving-problems/adguard-logs.md).
 
 ![Paramètres avancés \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
 
@@ -80,7 +80,7 @@ Il existe plusieurs sites web dont l'accès doit être restreint à partir d'un 
 
 Le module vérifie le contenu des pages web ouvertes dans le navigateur et filtre celles dont le contenu est indésirable pour les enfants : images et textes pour adultes, langage grossier, violence, propagande de drogue, etc. Les paramètres du Contrôle Parental sont protégés par mot de passe pour que l'enfant ne puisse pas contourner les restrictions. Ce module bloque non seulement les directions vers des sites indésirables, mais peut également supprimer des résultats de recherche les liens inappropriés pour les enfants.
 
-Dans le module Contrôle Parental, vous pouvez activer la _recherche sécurisée_ et gérer la _liste de blocage_ et la _liste d'autorisation_ pour personnaliser le fonctionnement de cette option. Vous pouvez également cocher la case _Bloquer le téléchargement des fichiers exécutables_ pour empêcher votre enfant de télécharger et d'installer des logiciels sur l'ordinateur. Il existe deux autres options dans le module _Contrôle parental_ : vous pouvez sélectionner un utilisateur Windows spécifique à protéger par le _Contrôle parental_ et définir un mot de passe pour protéger les paramètres AdGuard contre toute modification.
+In the _Parental Control_ module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. Vous pouvez également cocher la case _Bloquer le téléchargement des fichiers exécutables_ pour empêcher votre enfant de télécharger et d'installer des logiciels sur l'ordinateur. Il existe deux autres options dans le module _Contrôle parental_ : vous pouvez sélectionner un utilisateur Windows spécifique à protéger par le _Contrôle parental_ et définir un mot de passe pour protéger les paramètres AdGuard contre toute modification.
 
 ![Contrôle parental \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 

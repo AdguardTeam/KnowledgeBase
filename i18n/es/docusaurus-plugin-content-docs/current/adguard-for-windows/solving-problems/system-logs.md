@@ -1,5 +1,5 @@
 ---
-title: Cómo recopilar registros del sistema de Windows
+title: How to collect Windows system logs
 sidebar_position: 5
 ---
 
@@ -15,7 +15,7 @@ Los datos y/o archivos proporcionados en los registros del sistema se procesan d
 
 :::
 
-Para analizar y diagnosticar diferentes problemas que puedan surgir, el servicio de soporte de AdGuard puede necesitar archivos de registro del sistema de Windows. Los registros de eventos de Windows contienen registros sobre todos los errores que ocurren con el software instalado, incluido AdGuard. A continuación, se muestran breves instrucciones que describen la forma de obtener los archivos de registro y enviarlos a nuestro servicio de soporte si es necesario.
+Para analizar y diagnosticar diferentes problemas que puedan surgir, el servicio de soporte de AdGuard puede necesitar archivos de registro del sistema de Windows. Windows event logs contain records about all errors that occur with the installed software, including AdGuard. A continuación, se muestran breves instrucciones que describen la forma de obtener los archivos de registro y enviarlos a nuestro servicio de soporte si es necesario.
 
 1. Presiona *Win + R*
 

@@ -19,7 +19,7 @@ Todos os filtros são agrupados de acordo com sua função. Por exemplo, existem
 
 ## Filtros personalizados
 
-Embora os recursos de outros grupos de filtros sejam mais ou menos previsíveis, existe um grupo chamado _Personalizado_ que pode gerar dúvidas.
+Embora os recursos de outros grupos de filtros sejam mais ou menos autoexplicativos, há um grupo chamado _Personalizado_ que pode levantar questões adicionais.
 
 ![Filtros personalizados \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
 

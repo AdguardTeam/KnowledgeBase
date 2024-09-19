@@ -1,11 +1,11 @@
 ---
-title: Manual installation of the security certificate into the Firefox browser
+title: Instalação manual do certificado de segurança no navegador Firefox
 sidebar_position: 11
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Veja como funciona ao [baixar o AdGuard](https://agrd.io/download-kb-adblock)
+Este artigo é sobre o AdGuard para Android, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Veja como funciona ao [baixar o AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -43,12 +43,12 @@ This method will only work on **rooted** devices.
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Instale e configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) o ADB; Na plataforma Windows, os usuários da **Samsung** talvez precisem instalar [esse utilitário](https://developer.samsung.com/mobile/android-usb-driver.html).
 
-1. Activate the **developer mode** and enable **USB debugging**:
+1. Ative o **modo de desenvolvedor** e ative a **depuração USB**:
 
-    - Open the **Settings** app on your phone;
-    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
+    - Abra as **Configurações** em seu telefone;
+    - Vá para a seção **Sistema** (último item no menu de configurações). In this section, find the sub-item **About phone**;
     - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
     - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 

@@ -19,7 +19,7 @@ Wenn Sie auf den Tab „Support“ klicken, öffnet sich ein Dialogfeld, in dem 
 
 ### Lizenz
 
-![License \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![Lizenz \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
 Auf diesem Tab finden Sie Informationen zu Ihrer Lizenz. Hier können Sie:
 
@@ -28,7 +28,7 @@ Auf diesem Tab finden Sie Informationen zu Ihrer Lizenz. Hier können Sie:
 
 ### Über uns
 
-![About \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![Über \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 
 Zusätzlich zu den Informationen über die aktuelle Version des Programms bietet dieser Tab einige nützliche Links zu den Seiten Lizenzvereinbarung, Datenschutzerklärung, Danksagungen, Diskussionen und Versionsverlauf.
 

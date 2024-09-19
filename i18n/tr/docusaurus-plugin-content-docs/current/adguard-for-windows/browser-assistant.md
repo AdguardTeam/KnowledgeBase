@@ -21,7 +21,7 @@ Arka plan bilgisi:
 
 AdGuard Tarayıcı Uzantısının önceki sürümlerinde (v3.5'ten önce), Windows için AdGuard uygulamasıyla birlikte yüklediyseniz, uzantı Asistanı işlevlerini devralıyor, kendini filtrelemeyi bırakıyor ve bunu yapmak için uygulamaya güveniyordu.
 
-Eklenti ve uygulama birlikte çalışıyordu ancak bazen entegrasyon başarısız oluyordu. Bazı siteler masaüstü programı tarafından korunmuyor ve yalnızca daha az seçeneğe sahip uzantı tarafından korunuyordu.
+Eklenti ve uygulama birlikte çalışıyordu ancak bazen entegrasyon başarısız oluyordu. The protection normally provided by the desktop program would stop on certain sites, where only the less powerful extension would then provide protection.
 
 Tarayıcı Asistanını kullanırken, özünde herhangi bir çakışma olamayacağı için tüm bu sorunlar önemli değildir. Tarayıcı Asistanının rolü iyi tanımlanmıştır ve ana uygulamanın işleyişini engelleyemez, bu nedenle endişelenmenize gerek yoktur.
 
@@ -42,4 +42,4 @@ Eski Asistan, bir tarayıcı uzantısı değil, yalnızca bir kullanıcı betiğ
 
 Tarayıcı Asistanını varsayılan tarayıcınız için yüklemek isterseniz bunu doğrudan uygulama ayarlarından yapabilirsiniz ancak diğer tarayıcılar için de yükleme olanağınız vardır.
 
-AdGuard Tarayıcı Asistanı tüm popüler tarayıcılarda kullanılabilir: Chrome, Firefox, Edge, Opera ve Yandex. İhtiyacınız olanı (veya birçoğunu, yasak değil, hatta teşvik edilir) yüklemek için [sitemize](https://adguard.com/adguard-assistant/overview.html) gidin, tarayıcı simgesine tıklayın ve *Yükle* düğmesine dokunun. Bu kadar!
+AdGuard Tarayıcı Asistanı tüm popüler tarayıcılarda kullanılabilir: Chrome, Firefox, Edge, Opera ve Yandex. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and then the *Install* button. Bu kadar!

@@ -13,9 +13,9 @@ sidebar_position: 6
 
 ### 错误 5：拒绝访问 {#error-5}
 
-这个错误发生在权限设置有问题的时候。 AdGuard 安装程序没有正确完成安装过程所需的权限可能有多种不同的原因。 用户可以尝试以下步骤：
+This error message appears when required permissions haven't been granted. AdGuard 安装程序没有正确完成安装过程所需的权限可能有多种不同的原因。 用户可以尝试以下步骤：
 
-- 暂时禁用防病毒软件。 部分防病毒软件可能会干扰安装，具体取决于其设置的严格程度。
+- Temporarily disable your antivirus. 部分防病毒软件可能会干扰安装，具体取决于其设置的严格程度。
 
 - 选择不同的安装文件夹。 当前安装文件夹可能有一些访问限制。 用户还要确保没有选择外部驱动器、虚拟驱动器等。
 
@@ -23,17 +23,17 @@ sidebar_position: 6
 
 ### 错误 112：磁盘已满；错误 1632：临时文件夹已满或无法访问 {#error-112}
 
-这是两个不同的错误，但解决方案非常相似。 顾名思义，AdGuard 安装程序没有找到足够的磁盘空间来完成安装。 有几种方法可以尝试解决问题：
+这是两个不同的错误，但解决方案非常相似。 As their titles suggest, AdGuard installer didn't find enough disk space to complete the installation. 有几种方法可以尝试解决问题：
 
 - 从尝试安装 AdGuard 的驱动器中卸载一些程序或删除不需要的文件。
 
-- 下载、安装并运行 [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/)，这是一款由 Malwarebytes 提供的免费软件。 软件能够清除系统中因卸载程序错误而产生的各种额外“遗留”文件。 它有助于清理出磁盘空间。
+- 下载、安装并运行 [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/)，这是一款由 Malwarebytes 提供的免费软件。 It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstalled programs and such. 它有助于清理出磁盘空间。
 
 - 重新启动计算机。 有时候临时文件会占用大量磁盘空间，重启电脑是清除临时文件最可靠的方法。
 
 ### 错误 1601：无法访问 Windows Installer {#error-1601}
 
-可以说，这是错误 1603 的一个特殊子案例。 解决方案是相似的：
+You could say this is a particular subcategory of Error 1603. 解决方案是相似的：
 
 - 启动并重新注册 Microsoft Installer 服务。 这需要如下操作：
 
@@ -75,7 +75,7 @@ sidebar_position: 6
 
 - 重启电脑并重新开始安装。 当您重启计算机后，所有正在进行的进程都将停止，包括所有运行中的安装程序。
 
-- 即使安装没有立即开始，也不要多次点击安装程序。 有时候显示安装界面可能会需要几秒钟。
+- Don't make multiple clicks on the installer even if it doesn't start right away. 有时候显示安装界面可能会需要几秒钟。
 
 ### 错误 1638：已安装此软件的另一个版本 {#error-1638}
 
@@ -83,14 +83,14 @@ sidebar_position: 6
 
 - 检查 AdGuard 是否已安装在计算机上。 您可以通过按「*Win*」键并输入 ***AdGuard*** 来完成。
 
-- 也许有一些以前安装 AdGuard 时遗留下来的文件。 使用我们的专用[卸载工具](../../installation#advanced)卸载 AdGuard，然后重复安装。
+- Maybe there're some leftover files from a previous AdGuard installation. 使用我们的专用[卸载工具](../../installation#advanced)卸载 AdGuard，然后重复安装。
 
 ### 其他错误 {#other}
 
 如果您遇到了上面没有列出的错误，请与支持团队联系，我们帮您解决问题。 与我们联系以前，请收集日志文件。 执行以下步骤：
 
-- 找到并保存 **AdGuard 安装日志**，详细步骤见[这篇文章](../installation-logs)。
+- Find and archive the **AdGuard installation logs** as it is described in [this article](../installation-logs).
 
-- 找到并保存**事件查看器**中有关磁盘的日志。 [这篇文章](../system-logs)中有操作步骤。
+- Find and save to disk the **Event Viewer** logs. [这篇文章](../system-logs)中有操作步骤。
 
 - 请将前两个步骤中得到的文件通过电子邮件发送到我们的支持团队 **support@adguard.com**，并在邮件正文中描述您的问题。 我们的技术支持团队将尽快回复您。

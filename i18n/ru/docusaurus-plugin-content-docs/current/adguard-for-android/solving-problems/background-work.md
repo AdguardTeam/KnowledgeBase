@@ -27,31 +27,31 @@ sidebar_position: 9
 
 Устройства Xiaomi (и особенно MIUI) — одни из самых проблемных, когда речь идёт о фоновой работе. Известно, что они ограничивают фоновые процессы и имеют нестандартные разрешения с отсутствием надлежащей документации. Иногда приложения просто не работают на телефонах Xiaomi, и с этим мало что можно сделать. Ниже приведены некоторые действия, которые вы можете выполнить, если столкнётесь с проблемами, связанными с фоновой работой AdGuard на различных устройствах Xiaomi.
 
-### MIUI 13+ and HyperOS
+### MIUI 13+ и HyperOS
 
-Depending on the MIUI and HyperOS versions, there are two ways to change the battery optimization settings on your phone and block ads more efficiently.
+В зависимости от версий MIUI и HyperOS существует два способа изменить настройки оптимизации заряда батареи на телефоне и блокировать рекламу более эффективно.
 
-Option 1
+Опция 1
 
-1. Go to **Settings** → **Apps** → **Permissions** → **Background autostart** and allow AdGuard to run in the background
+1. Перейдите в **Настройки** → **Приложения** → **Разрешения** → **Автозапуск в фоновом режиме** и разрешите AdGuard работать в фоновом режиме
 
 1. Return to **Settings** → **Apps** → **Manage apps** → **AdGuard** and uncheck **Pause app activity if unused**
 
-1. Go to **Battery saver** and tap **No restrictions**
+1. Перейдите в раздел **Экономия заряда батареи** и нажмите **Без ограничений**
 
-Option 2
+Опция 2
 
 1. Go to **Settings** → **Apps** → **Manage apps** → **AdGuard** and enable **Autostart**
 
-1. Go to **Battery saver** and tap **No restrictions**
+1. Перейдите в раздел **Экономия заряда батареи** и нажмите **Без ограничений**
 
-Готово! You have successfully set up AdGuard to work in the background.
+Готово! Вы успешно настроили AdGuard для работы в фоновом режиме.
 
 ### MIUI 12.0.8
 
 Чтобы приложение AdGuard успешно работало в фоновом режиме, сделайте следующее:
 
-В разделе **"Настройки"** → **"Приложения"** → " **Управление приложениями** " → прокрутите вниз до **AdGuard** и включите **Автозапуск"**.
+В разделе **Настройки** → **Приложения** → **Управление приложениями**, прокрутите вниз до **AdGuard** и включите **Автозапуск**.
 
 ![Настройки Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
@@ -529,7 +529,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 Вам также необходимо обозначить AdGuard как Исключенный из функции Энергосбережения:
 
-**Системные настройки** → **Приложения и уведомления** → **Расширенные** → **Доступ к специальным приложениям** → **Энергосбережение** → переключите бегунок напротив AdGuard на **Исключено**
+**System settings** → **Apps & Notifications** → **Advanced** → **Special app access** → **Power saving feature** → Switch AdGuard to **Excepted**
 
 ## Wiko
 

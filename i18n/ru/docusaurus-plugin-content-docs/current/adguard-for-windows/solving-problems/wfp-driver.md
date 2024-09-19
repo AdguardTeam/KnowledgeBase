@@ -9,12 +9,12 @@ sidebar_position: 1
 
 :::
 
-Для фильтрации сетевого трафика AdGuard использует сетевой драйвер. Существует два варианта: драйвер TDI и драйвер WFP. Хотя драйвер WFP, как правило, предпочтительнее и включен по умолчанию для всех новых версий ОС Windows (Windows 8 и новее), он потенциально может вызвать проблемы совместимости, особенно с некоторыми антивирусными программами. Подобные ошибки могут выражаться совершенно по-разному, это зависит от конкретного случая.
+Для фильтрации сетевого трафика AdGuard использует сетевой драйвер. Существует два варианта: драйвер TDI и драйвер WFP. While a WFP driver is generally preferrable and is enabled by default for all newer Windows OS versions (Windows 8 and newer), it can potentially cause compatibility problems, especially with some antiviruses. Подобные ошибки могут выражаться совершенно по-разному, это зависит от конкретного случая.
 
 Если вы столкнулись с проблемой, которая предположительно была связана с совместимостью, вы всегда можете перейти на более старый, но более стабильный сетевой драйвер TDI. Для этого:
 
 1. Перейдите в *Настройки → Сеть*.
 
-2. Отключите драйвер WFP, как показано ниже:
+2. Disable the WFP driver as it’s done in this picture:
 
 ![WFP driver *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)
