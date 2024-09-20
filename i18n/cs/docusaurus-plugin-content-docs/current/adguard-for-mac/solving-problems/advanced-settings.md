@@ -71,7 +71,7 @@ Doba v sekundách před odesláním další udržovací sondy neodpovídajícím
 
 #### `network.https.ech.enabled`
 
-Používá místní DNS proxy k vyhledání konfigurací v seznamech konfigurací ECH. Pokud je nalezeno, zašifruje ClientHellos.
+Používá místní DNS proxy k vyhledání konfigurací v seznamech konfigurací ECH. If found, encrypts Client Hellos.
 
 #### `network.https.enforce.certificate.transparency`
 

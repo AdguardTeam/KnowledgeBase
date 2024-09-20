@@ -25,9 +25,9 @@ Changing *Low-level settings* can cause problems with the performance of AdGuard
 
 İki ana tünel modu vardır: *Bölünmüş* ve *Tam*. *Split-Tunnel* modu, AdGuard ve sözde "Kişisel VPN" uygulamalarının uyumluluğunu sağlar. *Tam Tünel* modunda başka hiçbir VPN AdGuard ile aynı anda çalışamaz.
 
-There is a specific feature of *Split-Tunnel* mode: if DNS proxy does not perform well, for example, if the response from the AdGuard DNS server was not returned in time, iOS will "amerce" it and reroute traffic through DNS server, specified in iOS settings. Şu anda hiçbir reklam engellenmiyor ve DNS trafiği şifrelenmiyor.
+There is a specific feature of the *Split-Tunnel* mode: In case of poor DNS proxy performance, for example, if the response from the AdGuard DNS server isn't returned in timely, iOS will instead reroute traffic through the DNS server specified in the iOS settings. Şu anda hiçbir reklam engellenmiyor ve DNS trafiği şifrelenmiyor.
 
-*Tam Tünel* modunda yalnızca AdGuard ayarlarında belirtilen DNS sunucusu kullanılır. Yanıt vermezse, internet basitçe çalışmaz. Enabled *Full-Tunnel* mode may cause the incorrect performance of some programs (for instance, Facetime), and lead to problems with app updates.
+*Tam Tünel* modunda yalnızca AdGuard ayarlarında belirtilen DNS sunucusu kullanılır. Yanıt vermezse, internet basitçe çalışmaz. Enabled *Full-Tunnel* mode may negatively impact the performance of some programs (e.g., FaceTime) and cause app update issues.
 
 Varsayılan olarak, AdGuard en kararlı seçenek olarak *Bölünmüş Tünel* modunu kullanır.
 

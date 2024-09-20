@@ -4,7 +4,7 @@ sidebar_position: 5
 toc_max_heading_level: 4
 ---
 
-Los scripts de usuario (también los llamamos "extensiones") son, de hecho, miniprogramas escritos en JavaScript. Modifican o amplían la funcionalidad de uno o más sitios web. Es posible que muchos usuarios de AdGuard ya estén familiarizados con scripts de usuario como AdGuard Assistant, Popup Blocker y AdGuard Extra.
+Los scripts de usuario (también los llamamos "extensiones") son, de facto, miniprogramas escritos en JavaScript. Modifican o amplían la funcionalidad de uno o más sitios web. Es posible que muchos usuarios de AdGuard ya estén familiarizados con scripts de usuario como AdGuard Assistant, Popup Blocker y AdGuard Extra.
 
 :::note Aplicaciones compatibles
 
@@ -66,11 +66,11 @@ Aquí describiremos algunos de los catálogos de scripts de usuario más popular
 
 ### Userscript.Zone
 
-[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high credibility, since only scripts from moderated pages are displayed.
+[Userscript.Zone](https://www.userscript.zone) es un sitio web que permite buscar scripts de usuario ingresando una URL o dominio coincidente. El sitio web es fácil de usar y tiene una alta credibilidad, ya que sólo se muestran los scripts de las páginas moderadas.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) es un catálogo de scripts de usuario de los creadores de Stylish. The scripts in this catalog undergo moderation, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/) es un catálogo de scripts de usuario de los creadores de Stylish. Los scripts de este catálogo pasan por moderación, por lo que su credibilidad es mucho mayor.
 
 ### OpenUserJS.org
 
@@ -134,7 +134,7 @@ Aquí hay un [enlace mailto](mailto:devteam@adguard.com?Subject=Userscript%20aut
 
 ##### Propiedades no compatibles
 
-Adguard simplemente ignorará estas propiedades.
+Estas propiedades serán simplemente ignoradas por AdGuard.
 
 ```text
 @unwrap
@@ -208,4 +208,36 @@ GM_log
 !function(){(
     console.log("I am loaded!");
 )}();
+```
+
+## Userstyles
+
+Los productos AdGuard brindan soporte limitado para estilos de usuario. Las tags de metadatos `@var` y `@advanced` no son compatibles, así como cualquier valor de la etiqueta de metadatos `@preprocessor` excepto `predeterminado`.
+
+### Metadatos
+
+El bloque de metadatos se escribe utilizando comentarios de estilo CSS, comenzando con `===UserStyle===` y terminando con `===/UserStyle===`. Todas las tags de metadatos que son compatibles con los scripts de usuario también son compatibles con los estilos de usuario, aunque algunas de ellas no tienen significado y se ignoran. Las etiquetas `@var` y `@advanced` no son compatibles. El único valor admitido de la tag `@preprocessor` es `predeterminado`.
+
+### Contenido
+
+El contenido de un estilo de usuario es CSS simple con soporte para la regla at [`@-moz-document`](https://developer.mozilla.org/en-US/docs/Web/CSS/@document). La función `media-document()` no es compatible. El estilo de usuario solo se aplicará a las páginas que coincidan con una o más de las reglas `@-moz-document`. Si el estilo de usuario no contiene ninguna regla `@-moz-document`, no se aplicará.
+
+### Ejemplo
+
+```css
+/* ==UserStyle==
+@name         Example userstyle
+@namespace    https://example.org/userstyle
+@homepageURL  https://example.org/userstyle
+@version      1.0.0
+@license      Other
+@description  This is an example
+@author       example
+@preprocessor default
+==/UserStyle== */
+@-moz-document regexp("https?\:\/\/(www\.)?example\.(org|com).*") {
+    body {
+        background-color: #000000 !important;
+    }
+}
 ```

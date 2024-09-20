@@ -23,7 +23,7 @@ AdGuard gizliliğinizi korumaya kararlıdır. [Gizlilik Politikamıza](https://a
 
 :::
 
-### Hata ayıklama günlüğü toplama
+### Recording debug log
 
 **hata ayıklama** günlüğünü toplamak ve bize göndermek için aşağıdaki adımları uygulamanız gerekir:
 

@@ -13,7 +13,7 @@ Los sitios web cambian constantemente la forma en que insertan los anuncios y ag
 
 Sin embargo, trabajar con filtros de bloqueo requiere habilidades específicas. Si las tienes y sabes cómo crear reglas, dirígete directamente a nuestro repositorio[de filtros AdGuard](https://github.com/AdguardTeam/AdguardFilters) en GitHub. Allí encontrará muchos problemas abiertos, cada uno de los cuales hace referencia a un problema del sitio web: un anuncio perdido, un falso positivo, etc. Elige cualquiera y sugiere tus propias reglas en los comentarios. Los ingenieros de filtros de AdGuard revisarán tus sugerencias y, si las encuentran apropiadas, tus reglas se agregarán a los filtros de AdGuard.
 
-Si aún no estás familiarizado con la sintaxis de nuestras reglas de filtrado, o tal vez necesites un repaso, encontrarás los conceptos básicos sobre la sintaxis [en nuestra Base de conocimientos](/general/ad-filtering/create-own-filters).
+If you are not yet familiar with our filtering rule syntax, or maybe need a refresher, you'll find the basics about the syntax [in our Knowledge Base](/general/ad-filtering/create-own-filters).
 
 ### Recompensas {#rewards}
 

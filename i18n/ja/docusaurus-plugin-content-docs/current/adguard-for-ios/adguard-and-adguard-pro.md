@@ -1,16 +1,16 @@
 ---
-title: AdGuard and AdGuard Pro
+title: AdGuard と AdGuard Pro
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for iOS」についてです。 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
-If you look for AdGuard in the App Store, you'll find two apps — [AdGuard](https://itunes.apple.com/app/id1047223162) and [AdGuard Pro](https://itunes.apple.com/app/id1126386264). These apps are designed to block ads and trackers in Safari, other browsers, and apps, and to manage DNS protection.
+App Storeで「AdGuard」を検索しますと、[AdGuard](https://itunes.apple.com/app/id1047223162) と [AdGuard Pro](https://itunes.apple.com/app/id1126386264) という2つのアプリが見つかります。 このアプリは両方、Safariや他のブラウザとアプリで広告やトラッカーをブロックし、DNS通信を保護するように設計されています。
 
-Don't be misled by their names, both apps block ads on smartphones and tablets by Apple. They used to differ in functionality due to the changing App Store review guidelines, but now these two apps are [basically the same](https://adguard.com/en/blog/updating-adguard-pro-for-ios.html).
+どちらのアプリもiPhoneやiPadで広告をブロックしてくれます。 以前は機能が異なっていましたが、App Storeのレビューガイドラインの変更により、現在ではこの2つのアプリは[機能としては同じ](https://adguard.com/ja/blog/updating-adguard-pro-for-ios.html)になっています。
 
-If you have purchased AdGuard premium, there is no need to get AdGuard Pro, and vice versa.
+「AdGuard」のプレミアム版を購入した場合、「AdGuard Pro」を購入する必要はなく、その逆も同様です。

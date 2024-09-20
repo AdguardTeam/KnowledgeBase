@@ -5,13 +5,13 @@ sidebar_position: 3
 
 Les victimes d'hameçonnage et de logiciels malveillants restent un problème courant. Pour améliorer la sécurité numérique, nous avons incorporé des filtres spéciaux dans les produits AdGuard pour vous protéger contre les sites web malveillants et ceux de phishing. À ce jour, nous avons catégorisé plus de 15 millions de sites et construit une base de données de 1,5 million de sites web connus pour hameçonnage et maliciels. À l'aide de cette base de données, AdGuard vérifie les sites web que vous visitez pour vous protéger contre les menaces en ligne.
 
-::: note
+:::note importante
 
 Nous ne collectons ni n'utilisons aucune information sur les sites web que vous visitez.
 
 :::
 
-## Comment AdGuard vérifie-t-il les sites web ?​
+## Comment AdGuard vérifie-t-il les sites web ?
 
 Chaque fois que vous visitez un site web, votre client local échange des informations avec notre serveur backend sous forme de hachages et de préfixes de hachage. Sur la base de cet échange, le client local détermine si le site web figure ou non dans la base de données des sites web potentiellement dangereux. Il existe une différence dans la portée de cette vérification pour les applications et les extensions.
 

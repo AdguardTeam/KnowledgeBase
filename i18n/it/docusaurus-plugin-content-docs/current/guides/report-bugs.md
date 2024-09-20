@@ -17,7 +17,7 @@ Verifica se il bug è già stato segnalato. Consigliamo di fare attenzione sia a
 
 ### Come descrivere un problema
 
-Prova a fornire quanti più dettagli possibile: ci faciliteranno nel riprodurre il bug e scoprire come risolverlo. Ecco cosa vorremmo vedere in una segnalazione di bug:
+Prova a fornire quanti più dettagli possibile: ci faciliteranno nel riprodurre il bug e scoprire come risolverlo. Ecco cosa ci aspettiamo incluso in una segnalazione di bug:
 
 - La versione della tua app
 - La versione del tuo OS

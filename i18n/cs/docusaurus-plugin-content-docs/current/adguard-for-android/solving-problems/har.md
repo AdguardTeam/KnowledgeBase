@@ -1,5 +1,5 @@
 ---
-title: Jak získat soubory HAR
+title: How to generate HAR files
 sidebar_position: 5
 ---
 
@@ -17,11 +17,11 @@ Soubory HAR jsou zpracovávány v souladu se [Zásadami ochrany osobních údaj�
 
 ## Co jsou soubory HAR?
 
-Formát HAR (HTTP ARchive) je archivní soubor ve formátu JSON pro zaznamenávání interakce webového prohlížeče s webem. Specifikace formátu HAR definuje archivační data pro transakce HTTP, která prohlížeč používá k exportu podrobných informací o načítaných webových stránkách. Podrobnější popis formátu HAR a jeho specifikace naleznete na webové stránce [ softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
+Formát HAR (HTTP ARchive) je archivní soubor ve formátu JSON pro zaznamenávání interakce webového prohlížeče s webem. The specifications of HAR format define archival data for HTTP transactions that a browser uses to export detailed information about the web pages it loads. Podrobnější popis formátu HAR a jeho specifikace naleznete na webové stránce [ softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
 
-## Jak získat soubory HAR
+## How to generate HAR files
 
-Někdy musíme analyzovat, abychom zablokovali konkrétní reklamy, které je z nějakého důvodu obtížné reprodukovat. Chcete-li získat soubory HAR, postupujte takto:
+Někdy musíme analyzovat, abychom zablokovali konkrétní reklamy, které je z nějakého důvodu obtížné reprodukovat. To get HAR files, follow these steps:
 
 1. Otevřete AdGuard a přejděte do **Nastavení** (ikona ⚙ v pravém dolním rohu).
 2. Klepněte na **Obecné** →**Pokročilé** → **Nízkoúrovňová nastavení**.
@@ -31,7 +31,7 @@ Někdy musíme analyzovat, abychom zablokovali konkrétní reklamy, které je z 
 6. Přejděte zpět na **Pokročilé**.
 7. Klepněte na **Exportovat protokoly a systémové informace** → **Povolit** (je-li to nutné) → **Uložit**.
 
-**Zašlete prosím soubor se záznamy (které jste získali jako výsledek) službě podpory AdGuardu.**
+**Send the generated file with the logs to the AdGuard support service.**
 
 :::note
 

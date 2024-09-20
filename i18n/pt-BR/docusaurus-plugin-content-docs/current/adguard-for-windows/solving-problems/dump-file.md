@@ -35,10 +35,10 @@ Depois de criar o arquivo dump, navegue até o local do arquivo. Será pedido qu
 
 :::note
 
-O AdGuard para Windows tem dois processos em execução (`Adguard.exe` e `AdguardSvc.exe`). Portanto, você precisa criar o arquivo dump separadamente para cada processo.
+AdGuard for Windows has two running processes, `Adguard.exe` and `AdguardSvc.exe`. Therefore, it's necessary to create a separate dump file for each process.
 
 :::
 
 ![Processos do AdGuard](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
 
-Ao enviar os arquivos dump para a equipe de suporte, anexe também os logs do aplicativo AdGuard para que tenhamos mais chances de resolver o problema. [Aqui](../adguard-logs) você pode verificar as instruções sobre como coletar o arquivo de log.
+Ao enviar os arquivos dump para a equipe de suporte, anexe também os logs do aplicativo AdGuard para que tenhamos mais chances de resolver o problema. [Here](../adguard-logs) you can check the instructions on how to get the log file.

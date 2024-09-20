@@ -7,7 +7,7 @@ sidebar_position: 1
 
 HTTPS (HyperText Transfer Protocol Secure) is an extension of the HTTP protocol that supports encryption to increase security. This protocol is used to securely transmit valuable information like personal data, credit card details, etc.
 
-Using HTTPS is highly advantageous because encrypted traffic is protected against eavesdropping by a third party, and we can only welcome this. HTTPS acceptance has been growing in recent years, mainly because it is [encouraged by Google](https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html) and also due to the emergence of a free certificate authority [Let’s Encrypt](https://en.wikipedia.org/wiki/Let's_Encrypt).
+Using HTTPS is highly advantageous because encrypted traffic is protected against eavesdropping by a third party, and we can only welcome this. HTTPS acceptance has been growing in recent years, mainly because it is [encouraged by Google](https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html) and also due to the emergence of the free certificate authority [Let’s Encrypt](https://en.wikipedia.org/wiki/Let's_Encrypt).
 
 The diagram below describes the difference between plain HTTP protocol and secure HTTPS protocol.
 
@@ -15,17 +15,17 @@ The diagram below describes the difference between plain HTTP protocol and secur
 
 ### What is a security certificate?
 
-Simply put, HTTPS means data encryption. But there’s still a problem: how can you be sure that you’ve established an encrypted connection with the right website? That’s where security certificates come into play. A certificate serves as proof that the website is really what it tells you it is. If a website doesn’t have such a certificate, or if the certificate contains incorrect information, the browser will not allow you to establish a secure connection. It is important that the certificate a website uses is issued by a certificate authority (CA) trusted by your browser. Such a CA guarantees that the SSL certificate is, indeed, issued to the website’s owner.
+Simply put, HTTPS means data encryption. But there’s still a problem: how can you be sure that you’ve established an encrypted connection with the right website? That’s where security certificates come into play. A certificate serves as proof that the website is really who or what it claims to be. If a website doesn’t have such a certificate, or if the certificate contains incorrect information, the browser will not allow you to establish a secure connection. It is important that the certificate a website uses is issued by a certificate authority (CA) trusted by your browser. Such a CA guarantees that the SSL certificate is, indeed, issued to the website’s owner.
 
 ### Why does AdGuard need to be able to filter HTTPS?
 
-当前大部分网站使用 HTTPS，广告亦是如此。 Here are a few popular websites where you can’t remove ads without HTTPS filtering: youtube.com, facebook.com, and twitter.com.
+当前大部分网站使用 HTTPS，广告亦是如此。 Here are a few popular websites where you can’t remove ads without HTTPS filtering: youtube.com, facebook.com, and x.com.
 
 ### How does HTTPS filtering work?
 
-If it were easy, HTTPS wouldn’t be that secure. When a browser attempts to connect to a server, AdGuard establishes two secure connections: one with the browser (or another app) and the other with the server. The browser must trust AdGuard and the connections it creates. For this purpose, AdGuard generates a special (and unique) root certificate and installs it into the system and, when it is required, into some browsers (e.g., Firefox). Thus, AdGuard can see what is happening inside the secure connection and do its job — block ads and trackers.
+If it were easy, HTTPS wouldn’t be that secure. When a browser attempts to connect to a server, AdGuard establishes two secure connections: one with the browser (or another app) and the other with the server. The browser must trust AdGuard and the connections it creates. For this purpose, AdGuard generates a special (and unique) root certificate and installs it into the system and, when it is required, into some browsers (e.g., Firefox). AdGuard can now see the data packets inside the secure connection and thus do its job — block ads and trackers.
 
-For better understanding we depicted this process:
+For better understanding, we have depicted this process:
 
 ![How does HTTPS filtering work](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 

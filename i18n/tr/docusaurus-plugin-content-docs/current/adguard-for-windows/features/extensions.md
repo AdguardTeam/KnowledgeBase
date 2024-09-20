@@ -29,11 +29,11 @@ AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](/a
 
 This is a custom extension designed to fight the technique of re-inserting blocked ads — the so-called ad blocker circumvention/ad reinjection. Both are advanced anti-ad blocker methods that continue to rise in popularity among advertisers.
 
-AdGuard Extra, aslında sayfaların çalışma şeklini, sitelerin engelleyicileri atlamak için yukarıda belirtilen yöntemleri kullanmasını çok daha zor hâle getirecek şekilde değiştiren bir mini programdır.
+AdGuard Extra is essentially a miniprogram that changes the way pages work in such a way that it becomes much more difficult for sites to use the above-mentioned methods to bypass blockers.
 
 **AdGuard Açılır Pencere Engelleyici**
 
-Bu uzantı, web sayfalarını görüntülediğinizde açılır pencerelerin açılmasını engeller. Bazı açılır pencereler yararlı kabul edilir — site yönetimi için ayarlar veya bir bağlantıya tıklandığında gösterilen ek referans bilgileri içerebilirler. Bu nedenle gerekirse Engelleyiciyi kapatabilirsiniz. Bu uzantı, AdGuard istisnalar listesine eklenen sitelerde de çalışmaz. Varsayılan olarak kapalıdır, ancak uygulama ayarlarından açabilirsiniz. Bu uzantı hakkında daha ayrıntılı bilgiyi Bilgi tabanımızda bulabilirsiniz.
+Bu uzantı, web sayfalarını görüntülediğinizde açılır pencerelerin açılmasını engeller. Bazı açılır pencereler yararlı kabul edilir — site yönetimi için ayarlar veya bir bağlantıya tıklandığında gösterilen ek referans bilgileri içerebilirler. Bu nedenle gerekirse Engelleyiciyi kapatabilirsiniz. Bu uzantı, AdGuard istisnalar listesine eklenen sitelerde de çalışmaz. Varsayılan olarak kapalıdır, ancak uygulama ayarlarından açabilirsiniz. You will find more detailed information about this extension in our Knowledge Base.
 
 **Web of Trust**
 
@@ -41,7 +41,7 @@ Web of Trust, kullanıcılarının görüşlerine dayanarak her sitenin itibarı
 
 ### Ağ
 
-Sondan bir önceki modül ağ filtrelemeye ayrılmıştır ve burada ağla ilgili ek seçenekler bulacaksınız. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS protocol_. Bunlar, web alanınızı daha iyi filtrelemek için önemli olağanüstü önlemlerdir. Çoğu site artık HTTPS kullanıyor ve aynı durum reklamcılık için de geçerli. Youtube.com, facebook.com ve twitter.com gibi birçok siteden HTTPS filtreleme olmadan reklamları kaldırmak imkansızdır. So keep the _Filter HTTPS protocol_ feature enabled unless you have a strong reason not to.
+Sondan bir önceki modül ağ filtrelemeye ayrılmıştır ve burada ağla ilgili ek seçenekler bulacaksınız. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS_. Bunlar, web alanınızı daha iyi filtrelemek için önemli olağanüstü önlemlerdir. Çoğu site artık HTTPS kullanıyor ve aynı durum reklamcılık için de geçerli. From many sites, like youtube.com, facebook.com and x.com, it is impossible to remove ads without HTTPS filtering. So keep the _Filter HTTPS_ feature enabled unless you have a strong reason not to.
 
 ![Network Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 

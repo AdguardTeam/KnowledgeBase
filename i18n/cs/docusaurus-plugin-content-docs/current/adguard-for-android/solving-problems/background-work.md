@@ -51,7 +51,7 @@ Hotovo! You have successfully set up AdGuard to work in the background.
 
 Chcete-li aplikaci AdGuard úspěšně spustit na pozadí, proveďte následující kroky:
 
-V **Nastavení** → **Aplikace** → **Spravovat aplikace** → přejděte dolů k **AdGuard**, nastavte **Automatické spuštění** na “Zapnuto“.
+In **Settings** → **Apps** → **Manage apps**, scroll down to locate **AdGuard** and set **Autostart** to “On”.
 
 ![Nastavení Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
@@ -529,7 +529,7 @@ V systému Android 11+ je na stejné obrazovce s režimem STAMINA nastavení s n
 
 Je také třeba AdGuard vyjmout z funkce úspory energie:
 
-**Nastavení systému** ​→ **Aplikace a oznámení** ​→ **Pokročilé** ​→ **Speciální přístup aplikací** ​→ **Funkce šetření baterie** → Přepnout AdGuard na **Vyjmuto**
+**System settings** → **Apps & Notifications** → **Advanced** → **Special app access** → **Power saving feature** → Switch AdGuard to **Excepted**
 
 ## Wiko
 

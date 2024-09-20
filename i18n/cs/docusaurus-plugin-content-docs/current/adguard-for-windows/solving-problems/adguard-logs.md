@@ -1,5 +1,5 @@
 ---
-title: Jak shromažďovat záznamy AdGuardu
+title: How to collect AdGuard logs
 sidebar_position: 3
 ---
 
@@ -15,7 +15,7 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 :::
 
-K analýze a diagnostice různých problémů, které mohou potenciálně nastat, může služba podpory AdGuard potřebovat soubory záznamů AdGuardu. Tyto soubory obsahují záznamy o chybách a dalších událostech, ke kterým došlo v softwaru. Níže je uveden stručný návod popisující způsoby, jak získat soubory záznamů a v případě potřeby je odeslat službě podpory.
+K analýze a diagnostice různých problémů, které mohou potenciálně nastat, může služba podpory AdGuard potřebovat soubory záznamů AdGuardu. These files contain records about errors and other events that occur with the software. Níže je uveden stručný návod popisující způsoby, jak získat soubory záznamů a v případě potřeby je odeslat službě podpory.
 
 :::note
 
@@ -25,7 +25,7 @@ AdGuard is committed to protecting your privacy. We strictly follow our [Privacy
 
 ### Debug logs {#debug-logs}
 
-1. Otevřete nastavení AdGuardu. Přejděte do části *Obecná nastavení*, přejděte dolů na konec obrazovky a přepněte *Úroveň záznamu* na *Ladění*.
+1. Otevřete nastavení AdGuardu. Go to the *General Settings* section, scroll down to the bottom of the screen, and switch the *Logging Level* to *Debug*.
 
     ![Debug logging level *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
@@ -33,13 +33,13 @@ AdGuard is committed to protecting your privacy. We strictly follow our [Privacy
 
     Důrazně doporučujeme zaznamenat přesný čas, kdy jste problém reprodukovali: pomůže to našemu týmu podpory najít příslušné záznamy v záznamu a rychleji vyřešit problém.
 
-1. Exportujte záznamy pomocí tlačítka *Exportovat protokoly*.
+1. Export the collected logs using the *Export Logs* button.
 
     ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
     Archiv uložte do libovolné složky.
 
-1. **Důležité**: po exportu záznamů nastavte úroveň záznamu zpět na *Výchozí*. Úroveň *Ladění* zpomalí aplikaci.
+1. **Important**: after exporting the logs, set the logging level back to *Default*. Úroveň *Ladění* zpomalí aplikaci.
 
 1. Archiv odešlete službě podpory AdGuardu na adresu **support@adguard.com**, popište problém a nezapomeňte uvést čas, kdy jste problém reprodukovali.
 
@@ -65,7 +65,7 @@ Pokud máte starší verzi AdGuard pro Windows, spusťte aplikaci příkazem C:\
 
     Důrazně doporučujeme zaznamenat přesný čas, kdy jste problém reprodukovali: pomůže to našemu týmu podpory najít příslušné záznamy v záznamu a rychleji vyřešit problém.
 
-1. Exportujte záznamy pomocí tlačítka *Exportovat protokoly*.
+1. Export the collected logs using the *Export Logs* button.
 
     ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 

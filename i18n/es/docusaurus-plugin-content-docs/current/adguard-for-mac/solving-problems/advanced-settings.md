@@ -21,7 +21,7 @@ Para encontrar *Configuración avanzada*, abre AdGuard, haz clic en el ícono de
 
 ## Configuración avanzada
 
-### Network settings
+### Configuración de red
 
 #### `network.extension.exclude.domains`
 
@@ -71,7 +71,7 @@ Tiempo, en segundos, antes de enviar otra sonda de mantenimiento de actividad a 
 
 #### `network.https.ech.enabled`
 
-Utiliza un proxy DNS local para buscar configuraciones en las listas de configuración de ECH. Si se encuentra, encripta ClientHellos.
+Utiliza un proxy DNS local para buscar configuraciones en las listas de configuración de ECH. Si se encuentra, encripta Client Hellos.
 
 #### `network.https.enforce.certificate.transparency`
 
@@ -89,7 +89,7 @@ Al configurar `true`, habilita el filtrado de red local.
 
 Al configurar `true`, habilita el filtrado LoopBack.
 
-### DNS settings
+### Configuración del DNS
 
 #### `dns.proxy.bootstrap.ips`
 
@@ -159,7 +159,7 @@ Habilita HTTP/3 para servidores DNS de subida con DNS mediante HTTPS para aceler
 
 Elimina los parámetros Encrypted Client Hello de las respuestas.
 
-### Stealth Mode settings
+### Configuración del Modo oculto
 
 #### `stealth.antidpi.http.split.fragment.size`
 
@@ -177,7 +177,7 @@ Agrega espacio adicional entre el método HTTP y la URL y elimina espacio despu�
 
 Aquí puedes especificar el retraso, en milisegundos, después de enviar el primer fragmento, si se realiza la fragmentación.
 
-### Subscription link interception settings (userscripts and filters)
+### Configuración de intercepción de enlaces de suscripción (scripts de usuario y filtros)
 
 #### `subscription.link.interception.userscript`
 
