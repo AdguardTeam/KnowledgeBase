@@ -52,17 +52,17 @@ Na některých noteboocích musíte podržet *Fn* a pak místo toho stisknout *P
 
 Windows zachytí celou obrazovku a zkopíruje ji do schránky.
 
-Chcete-li pořídit snímek obrazovky aktivního okna, použijte následující klávesovou zkratku:
+To take a screenshot of an active window, use the following shortcut keys:
 
 - **Podržte stisknutý *Alt* a stiskněte *PrtScn* (nebo na některých noteboocích *Fn + Alt + PrtScn*)**
 
-Chcete-li pořídit snímek obrazovky určité oblasti, použijte následující klávesovou zkratku:
+To take a screenshot of a specific area, use the following shortcut keys:
 
 - ***Stiskněte ***Win + Shift + S******
 
-Po pořízení snímku obrazovky se snímek uloží do schránky. Ve většině případů jej budete moci vložit do dokumentu, který právě upravujete, pomocí zkratky *Ctrl + V*. Pokud potřebujete snímek obrazovky uložit do souboru, otevřete standardní program **Malování** (nebo jinou aplikaci, která umí pracovat s obrázky). Vložte tam snímek obrazovky pomocí stejné klávesové zkratky nebo kliknutím na tlačítko Vložit (obvykle v levém horním rohu obrazovky) a poté jej uložte.
+Po pořízení snímku obrazovky se snímek uloží do schránky. Ve většině případů jej budete moci vložit do dokumentu, který právě upravujete, pomocí zkratky *Ctrl + V*. Pokud potřebujete snímek obrazovky uložit do souboru, otevřete standardní program **Malování** (nebo jinou aplikaci, která umí pracovat s obrázky). Paste your screenshot there using the same shortcut keys or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
 
-Windows 8 a 10 umožňují pořídit snímek obrazovky velmi rychle pomocí klávesové zkratky *Win + PrtScn*. Jakmile stisknete tyto klávesy, snímek obrazovky se automaticky uloží jako soubor do složky *Obrázky* → *Snímky obrazovky*.
+Windows 8 and 10 let you take a screenshot very quickly with the *Win + PrtScn* shortcut keys. Jakmile stisknete tyto klávesy, snímek obrazovky se automaticky uloží jako soubor do složky *Obrázky* → *Snímky obrazovky*.
 
 K pořizování snímků obrazovky existuje také specializovaný program *Výstřižky*, který najdete v nabídce Start mezi standardními programy počítače. Výstřižky vám umožní zachytit jakoukoli oblast vaší pracovní plochy nebo celou obrazovku. Po pořízení snímku obrazovky pomocí tohoto programu můžete obrázek upravit a uložit do libovolné složky v počítači.
 
@@ -70,26 +70,26 @@ Kromě toho můžete zkusit používat různé aplikace pro pořizování snímk
 
 ### macOS {#mac}
 
-Chcete-li pořídit snímek obrazovky v zařízení se systémem macOS, použijte následující zkratku:
+To take a screenshot on Mac, use the following shortcut keys:
 
 - ***Stiskněte a podržte ***⌘ Cmd + Shift + 3******
 
 Váš Mac zachytí celou obrazovku a uloží ji jako soubor na plochu.
 
-Chcete-li pořídit snímek obrazovky aktivního okna, použijte následující klávesovou zkratku:
+To take a screenshot of an active window, use the following shortcut keys:
 
 - **Stiskněte a podržte *⌘ Cmd + Shift + 4 + mezerník*. Ukazatel se změní na ikonu fotoaparátu. Klikněte na okno a zachyťte snímek. Stisknutím Esc zrušíte pořizování snímku obrazovky**
 
-Chcete-li pořídit snímek obrazovky určité oblasti, použijte následující klávesovou zkratku:
+To take a screenshot of a specific area, use the following shortcut keys:
 
 - ***Stiskněte ***⌘ Cmd + Shift + 5******. Přetažením křížku vyberte potřebnou oblast. Pro pořízení snímku obrazovky, uvolněte myš nebo trackpad, pro zrušení stiskněte Esc.
 
-Chcete-li pořídit snímek obrazovky pomocí *Touch Bar* (MacBook Pro), použijte následující klávesové zkratky:
+To take a screenshot of the *Touch Bar* (MacBook Pro), use the following shortcut keys:
 
 - ***Stiskněte ***⌘ Cmd + Shift + 6******
 
 Mac zachytí celý *Touch Bar* a uloží jej jako soubor na plochu.
 
-Chcete-li snímek obrazovky zkopírovat do schránky namísto uložení, podržte *Ctrl* spolu s některou z výše uvedených klávesových zkratek. Poté můžete snímek obrazovky (ze schránky) vložit do dokumentu nebo obrázku, který právě upravujete pomocí klávesových zkratek *Cmd + V*.
+To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the shortcut keys above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* shortcut keys.
 
 Snímky obrazovky můžete pořizovat také pomocí **Náhled** a výběrem **Pořídit snímek obrazovky** (vybrané oblasti, okna nebo celé obrazovky). Pomocí **Náhledu** můžete ukládat snímky obrazovky ve formátech JPG, TIFF, PDF a dalších.

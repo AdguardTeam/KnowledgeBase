@@ -3,7 +3,7 @@ title: Jak se stát se překladatelem/korektorem
 sidebar_position: 2
 ---
 
-Pokud chcete pomáhat překládat produkty, webové stránky a znalostní databáze AdGuardu, přejděte na [Crowdin](https://crowdin.com/) a zaregistrujte se/přihlaste se.
+If you want to help translate AdGuard products, websites, and Knowledge Bases, go to [Crowdin](https://crowdin.com/) and sign up/log in there.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/main-screen.png)
 

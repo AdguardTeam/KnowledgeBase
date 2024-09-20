@@ -11,7 +11,7 @@ Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multi
 
 AdGuard para Windows permite a los usuarios especificar una dirección de servidor DNS para resolver consultas en lugar del servidor DNS del sistema, que proporciona tu ISP si no se anula en la configuración del sistema. El uso de un servidor DNS no predeterminado puede proteger tu tráfico DNS de la interceptación del ISP. Además, al elegir un servidor DNS cifrado y/o filtrado, obtienes otra capa de protección contra malos actores y anuncios molestos.
 
-Muchos usuarios de AdGuard para Windows aprecian la función de protección DNS. Pero algunos de ellos se encuentran con el siguiente problema: una comprobación en un sitio web como https://ipleak.net/ muestra que las solicitudes son gestionadas por el servidor DNS predeterminado en lugar del seleccionado. En este artículo, te contamos por qué ocurre esto y cómo evitarlo.
+Muchos usuarios de AdGuard para Windows aprecian la función de protección DNS. But some of them encounter the following issue: a check on a website like https://ipleak.net/ shows that requests are handled by the default DNS server instead of the selected one. En este artículo, te contamos por qué ocurre esto y cómo evitarlo.
 
 ## Dirección DNS Bootstrap
 
@@ -21,7 +21,7 @@ Las direcciones del servidor DNS pueden escribirse como IP o como nombres de dom
 
 - ve a *Configuración avanzada*
 - desplázate hacia abajo hasta la sección *Lista de direcciones de arranque personalizadas*
-- ingresa la dirección de arranque personalizada en formato de dirección IP (puedes usar [la lista de proveedores de DNS conocidos](https://adguard-dns.io/kb/general/dns-providers/))
+- enter the custom bootstrap address in the IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
 - haz clic en *Guardar*
 
 ## Servidor DNS fallback
@@ -33,7 +33,7 @@ Puede ocurrir que AdGuard no pueda llegar al servidor especificado debido a una 
 - ve a *Configuración avanzada*
 - desplázate hacia abajo hasta la sección *Servidores fallback*
 - marca la opción *Usar servidores personalizados*
-- luego busca la sección *Lista de servidores fallback personalizados* e ingresa los servidores fallback personalizados, uno por línea
+- then find the *List of custom fallback servers* section and enter the custom fallback servers one per line
 
 o
 

@@ -51,4 +51,4 @@ Please note that such installation of the application and manual updates are not
 
 ## 5. Test your installation {#installation-test}
 
-On a target machine, launch AdGuard. Open the license screen to check that it uses the one you've set. You might need to click "Refresh status" to make AdGuard validate the license key.
+On a target machine, launch AdGuard. Open the license screen to check that it is using the specified license. You might need to click "Refresh status" to make AdGuard validate the license key.

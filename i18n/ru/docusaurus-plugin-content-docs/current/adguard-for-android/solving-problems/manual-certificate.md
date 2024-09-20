@@ -5,22 +5,22 @@ sidebar_position: 12
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Чтобы [фильтровать HTTPS-трафик](/general/https-filtering/what-is-https-filtering.md) (что крайне важно, поскольку большая часть рекламы передаётся по протоколу HTTPS), AdGuard необходимо установить сертификат в пользовательское хранилище устройства. On older versions of the Android OS this was done automatically, but on Android 11 and later users have to install it manually.
+To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install its certificate into your device's user storage. На старых версиях Android это происходило автоматически, но на Android 11 и выше приходится устанавливать его вручную.
 
 ![Сертификат *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
 
-Как установить сертификат AdGuard:
+Follow these steps to install the AdGuard certificate:
 
 1. В уведомлении *«HTTPS-фильтрация отключена»* нажмите *Включить*.
 
 1. Появятся три экрана с объяснениями:
     - Зачем фильтровать HTTPS-трафик
     - Почему эта фильтрация безопасна
-    - Почему сертификат AdGuard необходим
+    - The necessity of the AdGuard certificate
 
     Нажмите *Далее* → *Далее* → *Сохранить сертификат*.
 
@@ -36,7 +36,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 Всё готово! Когда сертификат будет установлен, HTTPS-фильтрация включится автоматически.
 
-Обратите внимание, что эти шаги описаны на основе навигации смартфона Google Pixel 7. В других устройствах Android названия настроек могут отличаться. For easier navigation consider searching for a certificate by entering “certificate” or “credentials” in the settings search bar.
+Обратите внимание, что эти шаги описаны на основе навигации смартфона Google Pixel 7. В других устройствах Android названия настроек могут отличаться. Возможно, вам поможет ввести слово «сертификат» или «сертификат Ca» в строке поиска по настройкам.
 
 Если у вас возникли проблемы при ручной установке сертификата (например, вы установили сертификат, но приложение продолжает его игнорировать), вы можете воспользоваться одним из решений ниже.
 

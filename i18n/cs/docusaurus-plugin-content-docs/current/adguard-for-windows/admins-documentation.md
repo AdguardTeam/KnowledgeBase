@@ -51,4 +51,4 @@ Upozorňujeme, že taková instalace aplikace a ruční aktualizace se nedoporu�
 
 ## 5. Test instalace {#installation-test}
 
-V cílovém počítači spusťte AdGuard. Otevřete obrazovku licence a zkontrolujte, zda používá nastavenou licenci. Možná budete muset kliknout na tlačítko "Obnovit stav", aby AdGuard ověřil licenční klíč.
+V cílovém počítači spusťte AdGuard. Open the license screen to check that it is using the specified license. Možná budete muset kliknout na tlačítko "Obnovit stav", aby AdGuard ověřil licenční klíč.

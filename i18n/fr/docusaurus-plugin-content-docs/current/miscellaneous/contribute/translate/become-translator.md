@@ -3,7 +3,7 @@ title: Devenir traducteur/réviseur
 sidebar_position: 2
 ---
 
-Si vous souhaitez aider à traduire les produits, les sites web et les Bases de connaissances AdGuard, accédez à [Crowdin](https://crowdin.com/) et inscrivez-vous/connectez-vous.
+If you want to help translate AdGuard products, websites, and Knowledge Bases, go to [Crowdin](https://crowdin.com/) and sign up/log in there.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/main-screen.png)
 

@@ -9,7 +9,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-OS 6およびそれ以前のAndroidデバイスでは、内蔵の統計により、多くのデータおよびバッテリーの使用量がAdGuardに起因しているかのよう表示されることがよくありました。 そういった表示の原因、AdGuardがさまざまなアプリからのトラフィックをすべてカウントしていたためです。 その結果、総データ使用量とバッテリー使用量において、AdGuardの分は過大に表示され、他のアプリは過小に表示されていました。
+Due to built-in statistics processes, high data and/or battery consumption was often attributed to AdGuard by Android 6 and earlier. そういった表示の原因、AdGuardがさまざまなアプリからのトラフィックをすべてカウントしていたためです。 その結果、総データ使用量とバッテリー使用量において、AdGuardの分は過大に表示され、他のアプリは過小に表示されていました。
 
 しかし、Android 7では、この状況は改善しました。 現在、Android内蔵のデータ使用量統計に反映されるデータは、バッテリー使用量データに若干の不一致があるものの、現実に非常に近いものになっています。
 

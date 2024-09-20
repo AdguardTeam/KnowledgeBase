@@ -77,4 +77,4 @@ Zde jsou uvedeny aktivní funkce předkonfigurovaných úrovní:
 
    k. _Odstranit X-Client-Data hlavičku_. Tato funkce zabraňuje tomu, aby prohlížeč Google Chrome odesílal informace o své verzi a úpravách do domén společnosti Google (včetně služeb DoubleClick a Google Analytics)
 
-Jednotlivá nastavení můžete upravit v části _Ochrana před sledováním_ a vytvořit si vlastní konfiguraci. Každé nastavení má popis, který vám pomůže pochopit jeho roli. [Další informace o tom, co dělají různá nastavení _Ochrany před sledováním_](/general/stealth-mode). Přistupujte k nim opatrně, protože některá mohou narušovat funkčnost webových stránek a rozšíření prohlížeče.
+Jednotlivá nastavení můžete upravit v části _Ochrana před sledováním_ a vytvořit si vlastní konfiguraci. Každé nastavení má popis, který vám pomůže pochopit jeho roli. [Read more about what the various _Tracking protection_ settings do](/general/stealth-mode) and utilize them cautiously, as some may interfere with the functionality of websites and browser extensions.

@@ -9,7 +9,7 @@ sidebar_position: 4
 
 :::
 
-## DNS protection
+## DNS通信を保護
 
 The _DNS_ section contains one feature, _DNS protection_, with multiple settings:
 

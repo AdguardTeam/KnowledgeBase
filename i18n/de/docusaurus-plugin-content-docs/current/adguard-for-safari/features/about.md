@@ -9,6 +9,6 @@ Im Tab „Über uns” finden Sie Informationen über die aktuelle Version Ihres
 
 :::note Erinnerung
 
-AdGuard für Safari kann kostenlos [aus dem App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259) heruntergeladen werden. Eine ausführliche Installationsanleitung finden Sie in der [Wissensdatenbank](/adguard-for-safari/installation/).
+AdGuard für Safari kann kostenlos [aus dem App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259) heruntergeladen werden. Eine ausführliche Installationsanleitung finden Sie in der [[Wissensdatenbank]](/adguard-for-safari/installation/).
 
 :::

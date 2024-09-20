@@ -13,9 +13,9 @@ Este artigo contém alguns dos erros mais comuns que você pode encontrar durant
 
 ### Erro 5: Acesso negado {#error-5}
 
-Esse erro ocorre quando há algo errado com as permissões. Pode haver vários motivos diferentes pelos quais o instalador do AdGuard não tem as permissões necessárias para concluir corretamente o processo de instalação. Você pode tentar as seguintes etapas:
+This error message appears when required permissions haven't been granted. Pode haver vários motivos diferentes pelos quais o instalador do AdGuard não tem as permissões necessárias para concluir corretamente o processo de instalação. Você pode tentar as seguintes etapas:
 
-- Desative temporariamente seus antivírus. Alguns deles podem interferir na instalação, dependendo de suas configurações.
+- Temporarily disable your antivirus. Alguns deles podem interferir na instalação, dependendo de suas configurações.
 
 - Escolha uma pasta de instalação diferente. É possível que a pasta de instalação atual tenha algumas restrições de acesso. Certifique-se também de não selecionar uma unidade externa, uma unidade virtual, etc.
 
@@ -23,17 +23,17 @@ Esse erro ocorre quando há algo errado com as permissões. Pode haver vários m
 
 ### Erro 112: O disco está cheio, Erro 1632: Pasta temporária cheia ou inacessível {#error-112}
 
-Estes são dois erros diferentes com soluções muito semelhantes. Como seus nomes sugerem, o instalador AdGuard não encontrou espaço em disco suficiente para concluir a instalação. Há várias coisas que você pode fazer para tentar corrigir o problema:
+Estes são dois erros diferentes com soluções muito semelhantes. As their titles suggest, AdGuard installer didn't find enough disk space to complete the installation. Há várias coisas que você pode fazer para tentar corrigir o problema:
 
 - Desinstale alguns programas ou exclua arquivos desnecessários da unidade em que você estava tentando instalar o AdGuard.
 
-- Baixe, instale e execute o [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), um software gratuito da Malwarebytes. Ele irá, entre outras coisas, limpar seu sistema de todos os tipos de arquivos extras “sobras” que permanecem após a desinstalação incorreta de programas e similares. Isso ajudará a liberar espaço em disco.
+- Baixe, instale e execute o [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), um software gratuito da Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstalled programs and such. Isso ajudará a liberar espaço em disco.
 
 - Reinicie o computador. Às vezes, os arquivos temporários podem ocupar uma quantidade considerável de espaço em disco e reiniciar o PC é a maneira mais simples de se livrar deles.
 
 ### Erro 1601: o instalador do Windows não está acessível {#error-1601}
 
-Pode-se dizer que esse é um subcaso específico do Erro 1603. As soluções possíveis são semelhantes:
+You could say this is a particular subcategory of Error 1603. As soluções possíveis são semelhantes:
 
 - Inicie e registre novamente o serviço Instalador Microsoft. Isso dá um pouco de trabalho.
 
@@ -75,7 +75,7 @@ Este erro ocorre quando várias instâncias do instalador do AdGuard são inicia
 
 - Reinicie o computador e inicie o instalador novamente. Quando você reiniciar o computador, todos os processos em andamento serão interrompidos, incluindo todas as cópias do instalador.
 
-- Não faça vários cliques no instalador, mesmo que ele não inicie imediatamente. Às vezes, pode levar alguns segundos para exibir a interface do usuário do instalador.
+- Don't make multiple clicks on the installer even if it doesn't start right away. Às vezes, pode levar alguns segundos para exibir a interface do usuário do instalador.
 
 ### Erro 1638: outra versão deste produto já está instalada {#error-1638}
 
@@ -83,14 +83,14 @@ Este erro ocorre quando várias instâncias do instalador do AdGuard são inicia
 
 - Verifique se o AdGuard já está instalado no seu computador. Você pode fazer isso pressionando a tecla *Win* e digitando ***AdGuard***.
 
-- Pode ser que haja alguns arquivos restantes de uma instalação anterior do AdGuard. Desinstale o AdGuard usando nossa [ferramenta de desinstalação](../../installation#advanced) e repita a instalação.
+- Maybe there're some leftover files from a previous AdGuard installation. Desinstale o AdGuard usando nossa [ferramenta de desinstalação](../../installation#advanced) e repita a instalação.
 
 ### Outros erros {#other}
 
 Se você encontrou um erro que não está listado acima, é possível que possamos resolvê-lo sozinhos. Mas, para isso, precisamos de seus arquivos de log. Por favor, execute as seguintes etapas:
 
-- Encontre e arquive **AdGuard installation logs** conforme descrito em [neste artigo](../installation-logs).
+- Find and archive the **AdGuard installation logs** as it is described in [this article](../installation-logs).
 
-- Localize e salve no disco **Event Viewer** logs. [Este artigo](../system-logs) explica como fazer isso.
+- Find and save to disk the **Event Viewer** logs. [Este artigo](../system-logs) explica como fazer isso.
 
 - Por favor, envie todos esses arquivos das duas etapas anteriores para a equipe de suporte em **support@adguard.com** e descreva o problema no corpo da mensagem. Nossa equipe de suporte responderá o mais rápido possível.

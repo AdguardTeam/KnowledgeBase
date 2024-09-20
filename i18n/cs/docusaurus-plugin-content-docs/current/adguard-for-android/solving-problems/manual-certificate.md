@@ -9,18 +9,18 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-Aby bylo možné [filtrovat provoz HTTPS](/general/https-filtering/what-is-https-filtering.md) (což je velmi důležité, protože většina reklam používá HTTPS), musí AdGuard nainstalovat certifikát do uživatelského úložiště vašeho zařízení. Ve starších verzích operačního systému Android se to provádělo automaticky, ale v Androidu 11 a novějších verzích jej uživatelé musí nainstalovat ručně.
+To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install its certificate into your device's user storage. Ve starších verzích operačního systému Android se to provádělo automaticky, ale v Androidu 11 a novějších verzích jej uživatelé musí nainstalovat ručně.
 
 ![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
 
-Certifikát AdGuardu nainstalujete podle následujících kroků:
+Follow these steps to install the AdGuard certificate:
 
 1. Když uvidíte oznámení *HTTPS filtrování je vypnuto*, klepněte na *Zapnout*.
 
 1. Poté se zobrazí tři obrazovky s vysvětlením:
     - Proč filtrovat HTTPS provoz
     - Bezpečnost tohoto procesu filtrování
-    - Nezbytnost AdGuard certifikátu
+    - The necessity of the AdGuard certificate
 
     Postupně klepněte na *Další* → *Další* → *Uložit certifikát*.
 

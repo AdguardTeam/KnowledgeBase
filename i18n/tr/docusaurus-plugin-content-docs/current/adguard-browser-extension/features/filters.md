@@ -19,7 +19,7 @@ Tüm filtreler rollerine göre gruplandırılmıştır. Örneğin, reklam engell
 
 ## Özel filtreler
 
-While the features of other filter groups are more or less predictable, there is a group called _Custom_ that may raise additional questions.
+While the features of other filter groups are more or less self-explanatory, there is a group called _Custom_ that may raise additional questions.
 
 ![Custom filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
 

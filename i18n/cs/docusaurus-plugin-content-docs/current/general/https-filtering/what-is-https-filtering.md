@@ -7,7 +7,7 @@ sidebar_position: 1
 
 HTTPS (HyperText Transfer Protocol Secure) je rozšíření protokolu HTTP, které podporuje šifrování pro zvýšení bezpečnosti. Tento protokol se používá k bezpečnému přenosu cenných informací, jako jsou osobní údaje, údaje o kreditních kartách atd.
 
-Používání protokolu HTTPS je velmi výhodné, protože šifrovaný provoz je chráněn proti odposlechu třetí stranou, což můžeme jen uvítat. Přijetí protokolu HTTPS v posledních letech roste. Především proto, že je [podporován společností Google](https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html) a také díky vzniku bezplatné certifikační autority [Let's Encrypt](https://en.wikipedia.org/wiki/Let's_Encrypt).
+Používání protokolu HTTPS je velmi výhodné, protože šifrovaný provoz je chráněn proti odposlechu třetí stranou, což můžeme jen uvítat. HTTPS acceptance has been growing in recent years, mainly because it is [encouraged by Google](https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html) and also due to the emergence of the free certificate authority [Let’s Encrypt](https://en.wikipedia.org/wiki/Let's_Encrypt).
 
 Níže uvedený diagram popisuje rozdíl mezi prostým protokolem HTTP a zabezpečeným protokolem HTTPS.
 
@@ -15,17 +15,17 @@ Níže uvedený diagram popisuje rozdíl mezi prostým protokolem HTTP a zabezpe
 
 ### Co je to bezpečnostní certifikát?
 
-Sručně řečeno, HTTPS znamená šifrování dat. Ale stále je tu problém: jak si můžete být jisti, že jste navázali šifrované připojení se správnou webovou stránkou? Zde přicházejí ke slovu bezpečnostní certifikáty. Certifikát slouží jako důkaz, že webová stránka je skutečně taková, jaká je. Pokud webová stránka takový certifikát nemá nebo pokud certifikát obsahuje nesprávné informace, prohlížeč vám neumožní navázat zabezpečené připojení. Je důležité, aby certifikát, který webová stránka používá, byl vydán certifikační autoritou (CA), které prohlížeč důvěřuje. Taková certifikační autorita (CA) zaručuje, že certifikát SSL je skutečně vydán vlastníkovi webových stránek.
+Sručně řečeno, HTTPS znamená šifrování dat. Ale stále je tu problém: jak si můžete být jisti, že jste navázali šifrované připojení se správnou webovou stránkou? Zde přicházejí ke slovu bezpečnostní certifikáty. A certificate serves as proof that the website is really who or what it claims to be. Pokud webová stránka takový certifikát nemá nebo pokud certifikát obsahuje nesprávné informace, prohlížeč vám neumožní navázat zabezpečené připojení. Je důležité, aby certifikát, který webová stránka používá, byl vydán certifikační autoritou (CA), které prohlížeč důvěřuje. Taková certifikační autorita (CA) zaručuje, že certifikát SSL je skutečně vydán vlastníkovi webových stránek.
 
 ### Proč musí být AdGuard schopen filtrovat HTTPS?
 
-Většina webů nyní používá protokol HTTPS a totéž platí i pro reklamu. Zde je několik populárních webových stránek, kde nelze odstranit reklamy bez filtrování HTTPS: youtube.com, facebook.com a twitter.com.
+Většina webů nyní používá protokol HTTPS a totéž platí i pro reklamu. Here are a few popular websites where you can’t remove ads without HTTPS filtering: youtube.com, facebook.com, and x.com.
 
 ### Jak funguje HTTPS filtrování?
 
-Kdyby to bylo snadné, protokol HTTPS by nebyl tak bezpečný. Když se prohlížeč pokusí připojit k serveru, AdGuard vytvoří dvě zabezpečená připojení: jedno s prohlížečem (nebo jinou aplikací) a druhé se serverem. Prohlížeč musí důvěřovat AdGuardu a připojením, která vytváří. Za tímto účelem AdGuard generuje speciální (a jedinečný) kořenový certifikát a instaluje jej do systému a v případě potřeby i do některých prohlížečů (např. Firefox). AdGuard tak může sledovat, co se děje uvnitř zabezpečeného připojení a plnit své úkoly — blokovat reklamy a slídiče.
+Kdyby to bylo snadné, protokol HTTPS by nebyl tak bezpečný. Když se prohlížeč pokusí připojit k serveru, AdGuard vytvoří dvě zabezpečená připojení: jedno s prohlížečem (nebo jinou aplikací) a druhé se serverem. Prohlížeč musí důvěřovat AdGuardu a připojením, která vytváří. Za tímto účelem AdGuard generuje speciální (a jedinečný) kořenový certifikát a instaluje jej do systému a v případě potřeby i do některých prohlížečů (např. Firefox). AdGuard can now see the data packets inside the secure connection and thus do its job — block ads and trackers.
 
-Pro lepší pochopení jsme tento proces znázornili:
+For better understanding, we have depicted this process:
 
 ![How does HTTPS filtering work](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 

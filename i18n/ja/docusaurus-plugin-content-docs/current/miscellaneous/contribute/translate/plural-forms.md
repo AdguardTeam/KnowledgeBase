@@ -38,7 +38,7 @@ Let’s take a look at this picture. ここでは、前に立つと語形が決�
 
 そういった情報を確認できるところをご紹介します。
 
-[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) は、幅広い言語リストを含んでいます。 The number of plural forms for different languages is shown this way: `nplurals=2`, `nplurals=4` and so on. The numeral after the Equals sign `=` means the number of plural forms of the respective language.
+[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) は、幅広い言語リストを含んでいます。 The number of plural forms for different languages is shown this way: `nplurals=2`, `nplurals=4` and so on. The numeral after the Equals sign `=` indicates the number of plural forms of the respective language.
 
 また、 [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR)で複数形に関する情報を入手することもできます。 CLDR Plural Rulesでは、10進数（1.5; 2.3; 100.1…）に対する追加の語形が示されていますが、AdGuardの翻訳ではそのような数字は使用していません。
 
@@ -137,7 +137,7 @@ and **template 2** is Standard license for *%count%* computers
 
 この場合、最後の2つのテンプレートに違いがないことは明らかですが、このルールを守ることは非常に重要です。 **テンプレートの数は、それぞれの言語の複数形の数を反映する必要があります。**(このような複数形文字列の場合)。
 
-### 簡単な要約 {#summury}
+## Short summary {#summary}
 
 AdGuardのプロジェクトを翻訳する際には、複数形の使用を必要とするフレーズに細心の注意を払う必要があります。
 

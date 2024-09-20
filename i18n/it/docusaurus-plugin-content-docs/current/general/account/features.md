@@ -35,4 +35,4 @@ La sezione dello Storico degli acquisti mostra tutte le licenze mai acquistate u
 
 ## Contattare il supporto
 
-La scheda del Supporto contiene i link utili per aiutarti a risolvere problemi e trovare risposte alle tue domande sui prodotti di AdGuard. Sono divisi in sei sezioni: FAQ, Invia una segnalazione di bug/richiesta di funzionalità, Segnala blocco errato, Contatta il supporto, Base di conoscenza e Discuti.
+La scheda del Supporto contiene i link utili per aiutarti a risolvere problemi e trovare risposte alle tue domande sui prodotti di AdGuard. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge Base, and Discuss.

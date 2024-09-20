@@ -24,5 +24,3 @@ Firefox 系ブラウザに証明書を手動でインストールする方法:
   5. ファイル `/Library/Application Support/AdGuard Software/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` を選択するか、Chromium ベースのブラウザ (Google Chrome や新しい Edge など) を使用して、AdGuard で HTTPS フィルタリングがオンの状態で http://local.adguard.org/cert からダウンロードします。
 
 Geckoベースのブラウザによって、必要なアクションは異なる場合がありますが、基本的な流れと `AdGuard Personal CA.cer `ファイルへのパスは同じです。
-
-[追伸] [Setappアプリケーション版](https://setapp.com/apps/adguard)のファイルパスは次の通りです： `/Library/Application Support/com.adguard.mac.adguard-setapp/AdguardCore/Adguard Personal CA.cer`

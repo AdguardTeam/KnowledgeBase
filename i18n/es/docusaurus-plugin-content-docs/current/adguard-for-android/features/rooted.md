@@ -11,6 +11,6 @@ Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multi
 
 Debido a las medidas de seguridad del sistema operativo Android, algunas funciones de AdGuard solo están disponibles en dispositivos rooteados. Aquí está la lista de ellos:
 
-- El **filtrado HTTPS en la mayoría de las aplicaciones** requiere [instalar un certificado CA en el almacén del sistema](/adguard-for-android/features/settings#security-certificates), ya que la mayoría de las aplicaciones no confían en los certificados del almacén del usuario. La instalación de un certificado en el almacén del sistema solo es posible en dispositivos rooteados
+- In most cases, **HTTPS filtering in apps** requires [installing a CA certificate into the system store](/adguard-for-android/features/settings#security-certificates), as most apps don't trust certificates in the user store
 - El [**modo de enrutamiento proxy automático**](/adguard-for-android/features/settings#routing-mode) requiere acceso raíz debido a las restricciones de Android en el filtrado de tráfico en todo el sistema
 - El [**modo de enrutamiento proxy manual**](/adguard-for-android/features/settings#routing-mode) requiere acceso de root en Android 10 y versiones posteriores, ya que ya no es posible determinar el nombre de la aplicación asociada con un conexión filtrada por AdGuard

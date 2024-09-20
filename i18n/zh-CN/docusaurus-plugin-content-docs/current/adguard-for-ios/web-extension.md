@@ -1,9 +1,9 @@
 ---
-title: Safari Web extension
+title: Safari Web 扩展
 sidebar_position: 3
 ---
 
-Web extensions add custom functionality to Safari. You can find [more information about Web extensions here](https://developer.apple.com/documentation/safariservices/safari_web_extensions).
+Web 扩展在 Safari 添加自定义功能。 有关 Web 扩展的更多信息，[请点击此处](https://developer.apple.com/documentation/safariservices/safari_web_extensions)。
 
 ![What the Web extension looks like in Safari *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/menu_en.png)
 

@@ -28,7 +28,7 @@ Z kontextového menu můžete také přistupovat ke statistikám aplikace.
 
 ### “Kompatibilní” a ”nekompatibilní” aplikace
 
-Většina aplikací funguje správně, když je filtrování povoleno. U takových aplikací je jejich provoz směrován skrze AdGuard a ve výchozím nastavení filtrován.
+Most apps work correctly when filtered. U takových aplikací je jejich provoz směrován skrze AdGuard a ve výchozím nastavení filtrován.
 
 Některé aplikace, například Správce stahování, rádio, systémové aplikace s UID 1000 a 1001 (např. služby Google Play), jsou “nekompatibilní“ a mohou při přesměrování skrze AdGuard fungovat nesprávně. Proto se při pokusu o směrování nebo filtrování všech aplikací může zobrazit následující upozornění:
 

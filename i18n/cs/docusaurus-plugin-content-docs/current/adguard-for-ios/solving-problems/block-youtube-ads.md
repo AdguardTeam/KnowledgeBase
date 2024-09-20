@@ -17,7 +17,7 @@ Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který
 1. Vyberte video a klepněte na *Sdílet*.
 1. Klepněte na *Více* a poté vyberte *Blokovat reklamy YouTube (pomocí AdGuardu)*.
 
-AdGuard otevře svůj přehrávač videa bez reklam.
+The video now opens in AdGuard's ad-free player.
 
 ## Jak blokovat reklamy YouTube v Safari
 
@@ -31,4 +31,4 @@ Ujistěte se, že jste povolili AdGuardu přístup ke všem webovým stránkám.
 1. Vyberte video a klepněte na *Sdílet*.
 1. Klepněte na *Blokovat reklamy YouTube (pomocí AdGuardu)*.
 
-AdGuard otevře svůj přehrávač videa bez reklam.
+The video now opens in AdGuard's ad-free player.

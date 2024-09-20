@@ -77,4 +77,4 @@ sidebar_position: 2
 
    ⑩ _X-Client-Dataヘッダーを削除する_ この機能により、Google Chromeのバージョンや変更に関する情報がGoogleドメイン（DoubleClickやGoogle Analyticsを含む）に送信されるのを防ぎます。
 
-「トラッキング防止」で個々の設定を微調整し、カスタム設定にしたりすることもできます。 各設定には、その役割を理解するのに役立つ説明がついています。 [さまざまな「トラッキング防止」設定の効果について詳しくはこちら](/general/stealth-mode)をご覧ください。※一部の設定はウェブサイトやブラウザ拡張機能の機能に干渉する可能性があるため、注意しながらご使用ください。
+「トラッキング防止」で個々の設定を微調整し、カスタム設定にしたりすることもできます。 各設定には、その役割を理解するのに役立つ説明がついています。 [Read more about what the various _Tracking protection_ settings do](/general/stealth-mode) and utilize them cautiously, as some may interfere with the functionality of websites and browser extensions.

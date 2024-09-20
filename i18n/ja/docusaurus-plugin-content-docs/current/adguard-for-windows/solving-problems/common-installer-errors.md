@@ -1,96 +1,96 @@
 ---
-title: Common installer errors
+title: AdGuard インストール中の一般的なエラー
 sidebar_position: 6
 ---
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際にどのように動作するかを確認するには、[AdGuard アプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
-This article contains some of the most common errors that you can encounter during the AdGuard for Windows installation, and possible ways to solve them.
+本記事には、AdGuard for Windows のインストール中に発生する可能性のある最も一般的なエラーと、その解決方法が記載されています。
 
-### Error 5: Access Denied {#error-5}
+### エラー 5: アクセスが拒否されました {#error-5}
 
-This error occurs when there's something wrong with permissions. There may be several different reasons why AdGuard installer doesn't have the permissions it requires to properly finish the installation process. You can try the following steps:
+必要なアクセス権限が与えられていない場合に、このエラーメッセージが表示されます。 AdGuard インストーラー（インストール用プログラム）がインストールのプロセスを適切に完了するために必要な権限を持っていない理由はいくつか考えられます。 以下の手順を試してみてください:
 
-- Temporarily disable your antiviruses. Some of them may interfere with the installation, depending on the severity of their settings.
+- お使いのウイルス対策ソフト（アンチウイルス）を一時的に無効にしてください。 それらの設定の度合いによっては、AdGuard のインストールを妨害するものもあります。
 
-- Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
+- 別のインストールフォルダを選択してください。 現在のインストールフォルダに何らかのアクセス制限がある可能性があります。 また、外付けドライブや仮想ドライブなどを選択しないようにしてください。
 
-- Reboot your computer. Sometimes the permission issues are temporary and can be solved by restarting the PC.
+- コンピュータを再起動してください。 場合によっては、アクセス権限関連問題は一時的なものであり、PC を再起動することで解決できたりすることがあります。
 
-### Error 112: Disk is full, Error 1632: Temporary folder full or inaccessible {#error-112}
+### エラー112: ディスクの空き容量が足りない　エラー1632: 一時フォルダがいっぱいもしくはアクセス不可能 {#error-112}
 
-These are two different errors with very similar solutions. As their names suggest, AdGuard installer didn't find enough disk space to complete the installation. There are several things you can attempt to fix the problem:
+これらは 2 つの異なるエラーですが、解決策は非常に似ています。 その名前が示すように、AdGuard インストーラーがインストールを完了するのに十分なディスク容量を見つけられなかった場合に表示されるエラーです。 問題を解決するにはいくつかの方法があります:
 
-- Uninstall some programs or delete unnecessary files from the drive you were trying to install AdGuard to.
+- AdGuard をインストールしようとしているドライブから、いくつかのプログラムをアンインストールするか、不要なファイルを削除してください。
 
-- Download, install, and run [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), a free piece of software by Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstall programs and such. It will help clean up some disk space.
+- Malwarebytes による無料ソフトウェア [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/) をダウンロード、インストールし、実行しください。 これは、特に、誤ってアンインストールしたプログラムなどの後に残る、あらゆる種類の余分な「残り物」ファイルからシステムをクリーンアップしてくれます。 ディスク領域を空けるのにも役立ちます。
 
-- Reboot your computer. Sometimes temporary files can take up a considerable amount of disk space, and restarting your PC is the most reliable way to get rid of them.
+- コンピュータを再起動してください。 一時ファイルがかなりのディスク容量を占めることがあり、PCを再起動することが、一時ファイルを取り除く最も確実な方法です。
 
-### Error 1601: Windows Installer is not accessible {#error-1601}
+### エラー 1601: Windowsインストーラーにアクセスできません {#error-1601}
 
-You could say this is a particular sub-case of Error 1603. The possible solutions are similar:
+これはエラー1603のサブカテゴリー的なものであると言えます。 考えられる解決策も似ています:
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- Microsoftインストーラーサービスを開始して再登録してください。 これを行うには、多少のステップを踏む必要があります:
 
-    1) Press *Win + R* and enter **services.msc**. 2) Find in the list and double click *Windows Installer*. 3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*. 4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*. 5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    1) *Win + R* を押して、 **services.msc** と入力します。 2) リストから *Windows インストーラー* を探し、ダブルクリックします。 3) *サービスステータス* の下の「*開始*」ボタンを押し、「*OK*」を押します。 サービスステータスが**実行中**の場合、まず「*停止*」をクリックし、次に「*開始*」をクリックします。 4) *Win + R* を押し、 ***msiexec /unregister*** と入力し、 *Enter*キーを押します。 5) *Win + R* をもう一度押し、 ***msiexec /regserver*** と入力し、 *Enter*キーを押します。
 
-- Reboot the PC and start the installation all over again. Sometimes that's enough to fix the problem.
+- PC を再起動し、インストールを最初からやり直してください。 場合によっては、それだけで問題が解決する場合もあります。
 
-### Error 1602: Canceled by user {#error-1602}
+### エラー 1602: ユーザーによってインストールがキャンセルされた時 {#error-1602}
 
-If you got this error code, chances are you have interrupted the installation process manually in one way or another. What you can do is:
+このエラーコードが表示された場合は、何らかの方法でインストールプロセスを手動で中断した可能性があります。 できることは以下のとおりです:
 
-- Don't close the installer window. When the installation is complete, it will close automatically.
+- インストール中、AdGuardインストーラーウィンドウを閉じないでください。 インストールが完了すると、ウィンドウは自動的に閉じます。
 
-- If a dialogue window pops up during the installation, hit "Yes" to grant the installer the required permissions. Clicking "No" will cancel the installation.
+- インストール中にダイアログウィンドウが表示された場合は、「はい」を押して、インストーラーに必要な権限を付与するようにしてください。 「いいえ」をクリックすると、インストールがキャンセルされます。
 
-- Don't start other processes while the installation process is going on.
+- インストール中は、他のプロセスを起動しないようにしてください。
 
-### Error 1603: Fatal error during installation {#error-1603}
+### エラー 1603: インストール中に致命的なエラーが発生しました {#error-1603}
 
-The error sounds scarier than it actually is. In reality, this is a rather generic error that can have many different causes, and some of them are easily fixed. Try the following solutions:
+このエラーは怖く聞こえますが、実際のところ、 原因がさまざまの一般的なエラーであり、原因のいくつかは簡単に修正できます。 以下の解決策を試してみてください:
 
-- Press the *Win* key, search for *Command Prompt* and run it. There, type in `sfc /scannow` and press *Enter*.
+- *Win* キーを押し、「*コマンド プロンプト*」を検索して実行してください。 そこで、 `sfc /scannow` と入力し、 *Enter*キーを押してください。
 
-- Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
+- 別のインストールフォルダを選択してください。 現在のインストールフォルダに何らかのアクセス制限がある可能性があります。 また、外付けドライブや仮想ドライブなどを選択しないようにしてください。
 
-- Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
+- [専用のアンインストールツール](../../installation#advanced)を使用して AdGuard をアンインストールし、その後にインストールを繰り返してください。
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- Microsoftインストーラーサービスを開始して再登録してください。 これを行うには、多少のステップを踏む必要があります:
 
-    1) Press *Win + R* and enter ***services.msc***. 2) Find in the list and double click *Windows Installer*. 3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*. 4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*. 5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    1) *Win + R* を押して、 **services.msc** と入力します。 2) リストから *Windows インストーラー* を探し、ダブルクリックします。 3) *サービスステータス* の下の「*開始*」ボタンを押し、「*OK*」を押します。 サービスステータスが**実行中**の場合、まず「*停止*」をクリックし、次に「*開始*」をクリックします。 4) *Win + R* を押し、 ***msiexec /unregister*** と入力し、 *Enter*キーを押します。 5) *Win + R* をもう一度押し、 ***msiexec /regserver*** と入力し、 *Enter*キーを押します。
 
-- Acquire full permissions on the drive for installation. It is possible that the error 1603 occurs because you don’t have full permissions on the file location. It's also not as easy as some of the other solutions:
+- インストールのためにドライブのフル権限を取得してください。 1603エラーが発生する原因は、ファイルの保存先に対してフルアクセス権限がないことの可能性があります。 結構手間かかりますが、手順は以下のとおりです:
 
-    1) Open *File Explorer*, right-click the drive containing the installation location and select *Properties*. 2) Go to *Security* tab and click *Edit*. 3) Single-click *SYSTEM* and ensure that the *Allow* box of every item in *Permissions for SYSTEM* is checked (if it is checkable). Do the same check for *Administrators*. 4) Click *OK* to go back to *Properties* dialog. Then click *Advanced*. 5) Click *Change Permissions*. 6) On *Permissions* tab, double-click *Administrators*. 7) Select *This folder, subfolders and files* for *Applies to* field and check all the available *Basic permissions*. After that, hit *OK*. 8) Do the same operation above (from item 7) for *SYSTEM*. 9) Click *OK* all the way out. Try installing AdGuard again.
+    1) *ファイルエクスプローラー*を開き、インストール先を含むドライブを右クリックして 「*プロパティ*」を選択します。 2) *セキュリティ*タブに移動して「*編集*」をクリックします。 3) *SYSTEM*（システム）を 1 回クリックし、「*SYSTEMのアクセス許可*」にあるすべての項目の *許可* ボックスがオンになっていることを確認します (チェック可能な場合)。 「*管理者*」に対しても同じチェックを入れます。 4) *OK* をクリックして *プロパティ* に戻ります。 次に「*詳細設定*」をクリックします。 5) 「*権限の変更*」をクリックします。 6) *権限* タブで、「*管理者*」をダブルクリックします。 7) *適用先* フィールドに対して「*このフォルダー、サブフォルダー、およびファイル*」を選択し、*基本権限*のすべてにチェックを入れます。 その後、 *OK* を押します。 8) *SYSTEM*に対してもステップ7と同じことをします。 9) *OK* を最後までクリックし続けます。 AdGuard を再度インストールしてみてください。
 
-### Error 1618: Another installation is already in progress {#error-1618}
+### エラー 1618: 他のインストールがすでに進行中です {#error-1618}
 
-This error occurs when there are several instances of AdGuard installer launched at the same time. What to do if you get this error:
+このエラーは、AdGuard インストーラーの複数のインスタンスが同時に起動された場合に発生します。 このエラーが表示された場合の対処方法は以下のとおりです:
 
-- Reboot your PC and start the installer again. When you restart the computer, all ongoing processes will stop, including all copies of the installer.
+- PC を再起動し、インストーラーを再び起動してください。 コンピュータを再起動すると、インストーラーのすべてのコピーを含め、進行中プロセスがすべて停止します。
 
-- Don't make multiple clicks on the installer even if doesn't start right away. Sometimes it may take a few seconds to display the installer UI.
+- インストーラーがすぐに起動しなくても、何度もクリックしないようにしてください。 インストーラーのUIが表示されるまで数秒かかることがあります。
 
-### Error 1638: Another version of this product is already installed {#error-1638}
+### エラー 1638: この製品の別バージョンがすでにインストールされています {#error-1638}
 
-It's very likely that you've already installed AdGuard before.
+おそらく、すでに AdGuard がインストールされているということです。
 
-- Check if AdGuard is already installed on your computer. You can do it by pressing the *Win* key and typing in ***AdGuard***.
+- お使いのコンピュータに AdGuard がすでにインストールされているかどうかを確認してください。 *Win*キーを押して「**AdGuard**」と入力すれば、コンピューター上に既存のAdGuardアプリがある場合は見つかります。
 
-- Maybe there's some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
+- 以前 AdGuard をインストールしたときのファイルが残っているのかもしれません。 [専用のアンインストールツール](../../installation#advanced)を使用して AdGuard をアンインストールし、その後にインストールを繰り返してください。
 
-### Other errors {#other}
+### その他のエラー {#other}
 
-If you've encountered an error that's not listed above, it is possible that we can solve it by ourselves. But in order to do that, we need log files from you. Please perform the following steps:
+上記に記載されていないエラーが発生した場合、弊社で解決できる可能性があります。 ただし、そのためには、お客様からのログファイルが必要となります。 ログファイルの送信方法は以下のとおりです:
 
-- Find and archive **AdGuard installation logs** as it is described in [this article](../installation-logs).
+- **AdGuard インストールログ**を見つけてアーカイブします。その手順は、 [こちらの記事](../installation-logs)をご覧ください。
 
-- Find and save to disk **Event Viewer** logs. [This article](../system-logs) explains how to do that.
+- **イベント ビューアー**のログを見つけてディスクに保存します。 手順は[こちらの記事](../system-logs)をご覧ください。
 
-- Please email all these files from two previous steps to the support team at **support@adguard.com** and describe the problem in the message body. Our tech support agents will reply to you as soon as possible.
+- 前述した2つのステップで作成したすべてのファイルを、AdGuardサポートチーム（**<0>support@adguard.com**）までメールでお送りください。 テクニカルサポート担当者ができるだけ早く返信いたします。

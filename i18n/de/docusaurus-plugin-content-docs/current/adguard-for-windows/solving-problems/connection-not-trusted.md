@@ -1,5 +1,5 @@
 ---
-title: Certificate-related issues
+title: Zertifikatsbezogene Probleme
 sidebar_position: 2
 ---
 
@@ -17,13 +17,13 @@ Normally browsers trust the AdGuard certificate once it's added to the system ce
 
 ![Security risk error](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
 
-Old FireFox versions, as well as browsers based on them, do not trust certificates from the system storage, but only those from their local storage. Since v68, FireFox trusts the system certificates, but you still can face the "Connection is untrusted" error. If something like this happens, first try to click the *Reinstall Certificate* button — you will find it in the *Network* tab.
+Old FireFox versions, as well as browsers based on them, do not trust certificates from the system storage, but only those from their local storage. Seit Version 68 vertraut FireFox den Systemzertifikaten, aber Sie können immer noch die Fehlermeldung „Verbindung ist nicht vertrauenswürdig” erhalten. If something like this happens, first try to click the *Reinstall Certificate* button — you will find it in the *Network* tab.
 
-![Reinstall Certificate](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
+![Zertifikat neu installieren](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
 
-If that doesn't help, follow the instructions for manually adding the AdGuard certificate to the FireFox storage.
+Wenn das nicht hilft, folgen Sie den Anweisungen zum manuellen Hinzufügen des AdGuard-Zertifikats zum FireFox-Speicher.
 
-> This instruction is for Firefox browser. Names of buttons and menu items may differ in other Firefox-based browsers.
+> Diese Anleitung gilt für den Firefox-Browser. Die Namen der Schaltflächen und Menüpunkte können in anderen Firefox-basierten Browsern abweichen.
 
 1. Run AdGuard.
 
@@ -36,15 +36,15 @@ If that doesn't help, follow the instructions for manually adding the AdGuard ce
 
 :::
 
-    ![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
+    ![Zertifikat-Einstellungen](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
 
-1. Open your browser and then open *Settings*.
+1. Öffnen Sie Ihren Browser und dann die *Einstellungen*.
 
 1. Go to *Privacy & Security* tab.
 
 1. Scroll down to *Certificates* and click the *View Certificates* button.
 
-    ![View certificates window](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
+    ![Fenster „Zertifikate” anzeigen](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
 
 1. Select *Authorities* tab.
 

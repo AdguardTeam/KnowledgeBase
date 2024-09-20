@@ -29,9 +29,9 @@ Gelişmiş Ayarlar öğesini açtığınızda size aşağıdaki seçenekler sunu
 
 Etkinleştirilirse, AdGuard Edge tarayıcısında TCP Fast Open'ı engeller. Ayarları uygulamak için tarayıcıyı yeniden başlatmanız gerekir.
 
-### Use Encrypted ClientHello
+### Use Encrypted Client Hello
 
-Her şifrelenmiş internet bağlantısının bir de şifrelenmemiş kısmı vardır. Bu, bağlandığınız sunucunun adını içeren ilk pakettir. Encrypted Client Hello teknolojisinin bu sorunu çözmesi ve şifrelenmemiş bilgilerin son kısmını şifrelemesi gerekiyor. To benefit from it, enable the *Use Encrypted ClientHello* option. Alan adı için ECH yapılandırmasını aramak için yerel bir DNS proxy'si kullanır. Eğer bulunursa, ClientHello paketi şifrelenecektir.
+Her şifrelenmiş internet bağlantısının bir de şifrelenmemiş kısmı vardır. Bu, bağlandığınız sunucunun adını içeren ilk pakettir. Encrypted Client Hello teknolojisinin bu sorunu çözmesi ve şifrelenmemiş bilgilerin son kısmını şifrelemesi gerekiyor. To benefit from it, enable the *Use Encrypted Client Hello* option. Alan adı için ECH yapılandırmasını aramak için yerel bir DNS proxy'si kullanır. If it is found, Client Hello packet will be encrypted.
 
 ### Sitelerin sertifika şeffaflığını kontrol et
 
@@ -73,7 +73,7 @@ Aksi takdirde, AdGuard tüm trafiği yönlendirme olmadan anında filtreler. Bu 
 
 ### Sistem başlangıcında ana pencereyi aç
 
-Sistem yüklendikten sonra ana AdGuard penceresinin açılmasını sağlamak için bu seçeneği etkinleştirin. Gerçek filtreleme hizmetinin başlatılıp başlatılmamasını etkilemediğini unutmayın, bu ayar *Ayarlar → Genel Ayarlar* öğesinde bulunur.
+Sistem yüklendikten sonra ana AdGuard penceresinin açılmasını sağlamak için bu seçeneği etkinleştirin. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*.
 
 ### Sistem başlangıcında filtrelemeyi etkinleştir
 
@@ -95,7 +95,7 @@ AdGuard'ın belirli alt ağları filtrelemesini istemiyorsanız, bu özelliği e
 
 ### HAR yazımını etkinleştir
 
-Bu seçenek **yalnızca hata ayıklama amacıyla** etkinleştirilmelidir. Onay işaretini işaretlerseniz AdGuard, filtrelenen tüm HTTP istekleri hakkında bilgileri içeren HAR 1.2 biçiminde bir dosya oluşturur. Bu dosya Fiddler uygulamasıyla analiz edilebilir. İnternette gezinmeyi önemli ölçüde yavaşlatabileceğini unutmayın.
+Bu seçenek **yalnızca hata ayıklama amacıyla** etkinleştirilmelidir. Ticking the checkbox will make AdGuard create a file in the HAR 1.2 format containing information about all filtered HTTP requests. Bu dosya Fiddler uygulamasıyla analiz edilebilir. İnternette gezinmeyi önemli ölçüde yavaşlatabileceğini unutmayın.
 
 ### Düz HTTP isteğine fazladan boşluk ekle
 
@@ -115,7 +115,7 @@ Bu seçenek yalnızca *DPİ'den koru* Gizlilik Modu seçeneği etkinleştirildi�
 
 Derin paket incelemesinden kaçınarak TCP paket parçalanmasının boyutunu belirtir. Bu seçenek yalnızca güvenli (HTTPS) trafiğini etkiler.
 
-If this option is enabled, AdGuard splits the initial TLS packet (the ClientHello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
+If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
 Geçerli değerler: 1–1500. Geçersiz boyut belirtilirse, sistem tarafından seçilen değer kullanılacaktır. Bu seçenek yalnızca *DPİ'den koru* Gizlilik Modu seçeneği etkinleştirildiğinde uygulanır.
 
