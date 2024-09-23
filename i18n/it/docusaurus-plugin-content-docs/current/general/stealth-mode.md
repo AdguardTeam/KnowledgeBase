@@ -79,7 +79,7 @@ Abilitare quest'opzione impedirà al browser di inviare dati GPS utilizzabili pe
 
 ### Blocca Flash {#flash}
 
-Il plugin Flash Player è diventato sempre più vulnerabile alle minacce online, quali virus e hacker; potrebbe inoltre influenzare significativamente i tempi di caricamento dei siti web. Attivando quest'impostazione, AdGuard bloccherà l'abilità dei browser di rilevare componenti (quali plugin e oggetti ActiveXObject), che consentano a Flash di mostrare contenuti. Ciò significa effettivamente che i browser non saranno in grado di supportare Flash.
+The Flash Player plugin has become increasingly vulnerable to such online threats as viruses and hackers; it may also significantly increase website load times. Attivando quest'impostazione, AdGuard bloccherà l'abilità dei browser di rilevare componenti (quali plugin e oggetti ActiveXObject), che consentano a Flash di mostrare contenuti. Ciò significa effettivamente che i browser non saranno in grado di supportare Flash.
 
 ### Blocca Java {#java}
 
@@ -95,7 +95,7 @@ Inoltre, puoi impostare un valore arbitrario per il Referente, inserendolo nel c
 
 Tieni presente che per poter filtrare il traffico, le applicazioni AdGuard "intercettano" le richieste dal browser al server. Le richieste effettuate agli server di annunci, tracciamento e di phishing possono essere modificate prima dell'invio al server o bloccate completamente. Lo stesso valore per l'opzione *Nascondi Referente dalle terze parti*: AdGuard intercetta le richieste HTTP(S), in particolare per rimuovere o modificare l'intestazione del Referente, se quest'opzione è abilitata. Tuttavia, ciò accade solo dopo che queste richieste "lasciano" il browser. Ciò significa che se monitori il Referente nel browser (ad esempio, con l'aiuto degli Strumenti per Sviluppatori di Chrome), vedrai il Referente originale, poiché la richiesta non ha ancora raggiunto AdGuard. Puoi utilizzare software come [Fiddler](https://www.telerik.com/fiddler) per assicurarti che il Referente sia alterato correttamente.
 
-Al contrario, a causa della natura stessa di tutte le estensioni del browser, l'Estensione di browser AdGuard funziona "all'interno" del browser. Altererà il Referente in quel momento, quindi, gli Strumenti per Sviluppatori mostreranno il Referente desiderato per le tue richieste.
+On the other hand, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. Altererà il Referente in quel momento, quindi, gli Strumenti per Sviluppatori mostreranno il Referente desiderato per le tue richieste.
 
 ### Nascondi il tuo User-Agent {#useragent}
 
@@ -120,3 +120,9 @@ L'Ispezione Approfondita del Pacchetto è un sistema di analisi profonda e filtr
 AdGuard può modificare i dati del pacchetto in uscita, così che il client non rientri nei criteri di blocco IPP. Ciò significa che, abilitando quest'opzione, gli utenti possono accedere ai contenuti che desiderano. Non tutti i sistemi IPP sono aggirabili al momento, ma lavoriamo costantemente per migliorare questo aspetto.
 
 La funzionalità "Protezione da IPP" è già implementata su AdGuard per Windows, AdGuard per Mac e AdGuard per Android.
+
+:::attenzione
+
+If this feature is enabled in AdGuard for Windows, it may interfere with ESET antivirus. Anti-DPI will prevent ESET from filtering traffic, leaving blacklisted and malicious websites unblocked.
+
+:::

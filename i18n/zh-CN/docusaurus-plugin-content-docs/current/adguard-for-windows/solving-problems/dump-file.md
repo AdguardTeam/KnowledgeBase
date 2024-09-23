@@ -35,7 +35,7 @@ sidebar_position: 8
 
 :::note
 
-Windows 版 AdGuard 有两个运行中的进程（`Adguard.exe` 和 `AdguardSvc.exe`）。 所以用户需要为它们分别创建转储文件。
+Windows 版 AdGuard 有两个运行中的进程（`Adguard.exe` 和 `AdguardSvc.exe`）。 因此，有必要为每个进程创建一个单独的转储文件。
 
 :::
 

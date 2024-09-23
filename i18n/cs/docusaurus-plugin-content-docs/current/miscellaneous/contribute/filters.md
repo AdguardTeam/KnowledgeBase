@@ -13,7 +13,7 @@ Webové stránky neustále mění způsob vkládání reklam a my do našich fil
 
 Práce s filtry blokování však vyžaduje specifické dovednosti. Pokud je máte a umíte vytvářet pravidla, přejděte rovnou do našeho [repozitáře AdGuard Filters](https://github.com/AdguardTeam/AdguardFilters) na GitHubu. Najdete zde spoustu otevřených problémů, z nichž každý odkazuje na problém s nějakou webovou stránkou — nezablokovaná reklama, falešný pozitivní výsledek atd. Vyberte si, co chcete a navrhněte vlastní pravidla v komentářích. Inženýři AdGuard filtrů vaše návrhy posoudí a pokud je shledají vhodnými, budou vaše pravidla přidána do filtrů AdGuardu.
 
-Pokud ještě neznáte syntaxi našich pravidel filtrování nebo si ji potřebujete osvěžit, najdete základní informace o syntaxi v [naší databázi znalostí](/general/ad-filtering/create-own-filters).
+If you are not yet familiar with our filtering rule syntax, or maybe need a refresher, you'll find the basics about the syntax [in our Knowledge Base](/general/ad-filtering/create-own-filters).
 
 ### Odměny {#rewards}
 

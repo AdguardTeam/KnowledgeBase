@@ -17,7 +17,7 @@ Check if the bug hasn’t been reported before. We advise paying attention to bo
 
 ### How to describe a problem
 
-Try to provide as many details as possible — that'll make it easier for us to reproduce the bug and figure out how to fix it. Here’s what we’re expecting to see in a bug report:
+Try to provide as many details as possible — that'll make it easier for us to reproduce the bug and figure out how to fix it. Here’s what we expect a bug report to include:
 
 - Your app version
 - Your OS version

@@ -63,7 +63,7 @@ Monterey または Big Sur で、「ネットワーク拡張」モードのAdGua
 
 #### レガシーAPIを使用したVPNアプリ
 
-AdGuard はシステム設定では VPN として表示されますが、他の VPN ベースのアプリと一緒に動作しても競合は発生しません。 ただし、App Store 以外からダウンロードした VPN ベースのアプリを使用している場合は、古い VPN API を使用している可能性があるため、フィルタリングから除外しておく必要があります。
+AdGuard はシステム設定では VPN として表示されますが、他の VPN ベースのアプリと一緒に動作しても競合は発生しません。 However, if a VPN-based app downloaded outside the App Store is used, there is a risk that it uses the old VPN API and needs to be excluded from filtering:
 
 1. AdGuardのメニューを開きます。
 1. *設定...* を選択します。
@@ -79,9 +79,9 @@ AdGuard はシステム設定では VPN として表示されますが、他の 
 
 ### Little Snitch 5 との互換性
 
-現時点では、AdGuard のネットワーク拡張モードは [Little Snitch 5](https://obdev.at/products/littlesnitch/index.html)と互換性がありません。 両方が実行されている場合、AdGuardによってフィルタリングされていなくても、さまざまなアプリの動作に問題が発生する可能性があります。 この問題は Big Sur のバグによって引き起こされており、我々はすでに Apple にその旨を通知しています。 このため、この問題は今後のmacOSアップデートで解決されると思われます。
+現時点では、AdGuard のネットワーク拡張モードは [Little Snitch 5](https://obdev.at/products/littlesnitch/index.html)と互換性がありません。 When both are running, there's a risk to encounter issues with various apps' behavior, even if they aren't filtered by AdGuard. この問題は Big Sur のバグによって引き起こされており、我々はすでに Apple にその旨を通知しています。 このため、この問題は今後のmacOSアップデートで解決されると思われます。
 
-※この問題は、Little Snitch で接続監視を無効にするだけでは解決できません。このアクションでは、Little Snitch の拡張機能がシステムからアンロードされないためです。 Apple がバグを修正するまでは、Big Sur で AdGuard を Little Snitch と併用する場合は、 [**自動プロキシ**](#automatic-proxy) フィルタリング モードに切り替えることをお勧めします。
+However, disabling connection monitoring in Little Snitch doesn't solve the issue, as this doesn't unload the Little Snitch extension from the system memory. Apple がバグを修正するまでは、Big Sur で AdGuard を Little Snitch と併用する場合は、 [**自動プロキシ**](#automatic-proxy) フィルタリング モードに切り替えることをお勧めします。
 
 ### ローカルプロキシとの互換性問題
 
@@ -121,7 +121,7 @@ Big Surにおいて、AdGuard for Mac でアップストリームプロキシを
 
 :::tip
 
-設定方法についてさらに詳しくは、 [Shadowsocks の Web サイト](https://shadowsocks.org/guide/what-is-shadowsocks.html)をご覧ください。
+More information on how to get started can be found on the [Shadowsocks website](https://shadowsocks.org/guide/what-is-shadowsocks.html).
 
 :::
 

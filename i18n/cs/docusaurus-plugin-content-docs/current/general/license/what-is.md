@@ -1,5 +1,5 @@
 ---
-title: Co je licence AdGuardu?
+title: What is an AdGuard license?
 sidebar_position: 1
 ---
 
@@ -12,7 +12,7 @@ Na [stránce nákupu](https://adguard.com/license.html) můžete vidět následu
 - **Roční předplatné** — tyto licence se obnovují automaticky každý rok nebo je lze prodloužit ručně
     - Osobní — až pro 3 zařízení
     - Rodinná — až pro 9 zařízení
-- **Doživotní** — tyto licence nejsou časově omezené
+- **Lifetime** — these licenses are perpetual
     - Osobní — až pro 3 zařízení
     - Rodinná — až pro 9 zařízení
 

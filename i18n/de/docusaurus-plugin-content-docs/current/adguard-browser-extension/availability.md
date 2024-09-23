@@ -9,18 +9,18 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
 :::
 
-[AdGuard Browser Extension](https://adguard.com/adguard-browser-extension/overview.html) is a free extension that works in five popular browsers: Chrome, Firefox, Edge, Opera, and Yandex Browser. Sie finden sie ganz einfach im Online-Store Ihres Browsers oder auf unserer offiziellen Website.
+[AdGuard Browsererweiterung](https://adguard.com/adguard-browser-extension/overview.html) ist eine kostenlose Erweiterung, die in fünf gängigen Browsern funktioniert: Chrome, Firefox, Edge, Opera und Yandex Browser. Sie finden sie ganz einfach im Online-Store Ihres Browsers oder auf unserer offiziellen Website.
 
-![AdGuard Browser Extension for Chrome \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
+![AdGuard Browsererweiterung für Chrome \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
-Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
+Browsererweiterungen enthalten grundlegende Werbeblockerfunktionen, sind aber nicht mit vollwertigen Desktop-Programmen wie [AdGuard für Windows](/adguard-for-windows/features/home-screen) und [AdGuard für Mac](/adguard-for-mac/features/main) vergleichbar.
 
-![Available for most popular browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
+![Verfügbar für die meisten gängigen Browser \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
 :::note
 
-Wir haben eine eigenständige Erweiterung für Safari. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. We had to develop a [separate extension for Safari](/adguard-for-safari/features/general) that has some differences in comparison with the extension described in this article.
+Wir haben eine eigenständige Erweiterung für Safari. Seit der Veröffentlichung von [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) haben die meisten Werbeblocker-Erweiterungen große Probleme und viele von ihnen funktionieren nicht mehr. Wir mussten eine [separate Erweiterung für Safari](/adguard-for-safari/features/general) entwickeln, die einige Unterschiede zu der in diesem Artikel beschriebenen Erweiterung aufweist.
 
 :::
 
-**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** So if you want to get full-fledged protection, consider installing a standalone program for your computer. There's [a reason why](adguard-browser-extension/comparison-standalone).
+**Vergessen Sie nicht, dass die Funktionalität jeder Erweiterung durch die Möglichkeiten des Browsers begrenzt ist.** Wenn Sie also einen umfassenden Schutz wünschen, sollten Sie die Installation eines eigenständigen Programms für Ihren Computer in Betracht ziehen. Es gibt [einen Grund dafür](adguard-browser-extension/comparison-standalone).

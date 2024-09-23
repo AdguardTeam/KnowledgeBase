@@ -10,7 +10,7 @@ Almost all Windows users are familiar with the [Blue Screen of Death (BSoD)](htt
 A minidump file is a file that contains the information about the nature of the system crash. It is created just before the blue screen appears and it has the minimum amount of useful information that can be used to solve the problem. The minidump file usually has a *.dmp* extension.
 
 :::note
-On Windows 10, the blue screen shows a stop code and a QR code. The user can use this information and search the Web for the specific problem.
+Windows 10'da mavi ekran bir durdurma kodu ve bir QR kodu gösterir. The user can use this information and search the Web for the specific problem.
 
 :::
 

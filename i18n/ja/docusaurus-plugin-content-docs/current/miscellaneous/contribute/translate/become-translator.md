@@ -3,7 +3,7 @@ title: 翻訳者・校正者になるには
 sidebar_position: 2
 ---
 
-AdGuard製品、ウェブサイト、ナレッジベースの翻訳にご協力いただける方は、[Crowdin](https://crowdin.com/)にアクセスして、登録またはログインしてください。
+If you want to help translate AdGuard products, websites, and Knowledge Bases, go to [Crowdin](https://crowdin.com/) and sign up/log in there.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/main-screen.png)
 

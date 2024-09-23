@@ -21,7 +21,7 @@ Die folgenden Erweiterungen werden mit AdGuard installiert:
 
 ![Preinstalled userscripts \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
-**AdGuard Assistant**
+**AdGuard-Assistent**
 
 AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](/adguard-for-windows/browser-assistant.md) is not available for your browser. Der Name dieser Erweiterung ist durchaus beabsichtigt: Sie unterstützt den Benutzer:innen bei der Änderung grundlegender AdGuard-Einstellungen direkt im Browser, ohne dass er die App selbst öffnen muss. Assistent funktioniert mit allen mit Microsoft Windows kompatiblen Browsern. Außerdem wird das AdGuard Assistent-Symbol nicht auf Websites angezeigt, die als Ausschlüsse aufgeführt sind, sowie auf bestimmten Seiten, bei denen die Gefahr besteht, dass falsche Inhalte angezeigt werden.
 
@@ -29,11 +29,11 @@ AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](/a
 
 Dies ist eine benutzerdefinierte Erweiterung, die entwickelt wurde, um die Technik der Wiedereinführung blockierter Werbung zu bekämpfen — die so genannte Umgehung von Werbeblockern/Ad Reinjection. Beides sind fortschrittliche Anti-Werbeblocker-Methoden, die sich bei den Werbetreibenden immer größerer Beliebtheit erfreuen.
 
-AdGuard Extra ist im Wesentlichen ein Miniprogramm, das die Funktionsweise von Seiten so verändert, dass es für Websites sehr viel schwieriger wird, die oben genannten Methoden zur Umgehung von Blockern zu verwenden.
+AdGuard Extra is essentially a miniprogram that changes the way pages work in such a way that it becomes much more difficult for sites to use the above-mentioned methods to bypass blockers.
 
 **AdGuard Popup Blocker**
 
-Diese Erweiterung verhindert das Öffnen von Pop-up-Fenstern, wenn Sie Webseiten aufrufen. Einige Pop-ups werden als nützlich erachtet — sie können Einstellungen für die Verwaltung der Website oder zusätzliche Referenzinformationen enthalten, die beim Anklicken eines Links angezeigt werden. Aus diesem Grund können Sie den Blocker bei Bedarf ausschalten. This extension doesn’t work on websites added to the AdGuard exceptions list either. Sie ist standardmäßig ausgeschaltet, kann aber in den Einstellungen aktiviert werden. Ausführlichere Informationen über diese Erweiterung finden Sie in unserer Wissensdatenbank.
+Diese Erweiterung verhindert das Öffnen von Pop-up-Fenstern, wenn Sie Webseiten aufrufen. Einige Pop-ups werden als nützlich erachtet — sie können Einstellungen für die Verwaltung der Website oder zusätzliche Referenzinformationen enthalten, die beim Anklicken eines Links angezeigt werden. Aus diesem Grund können Sie den Blocker bei Bedarf ausschalten. This extension doesn’t work on websites added to the AdGuard exceptions list either. Sie ist standardmäßig ausgeschaltet, kann aber in den Einstellungen aktiviert werden. You will find more detailed information about this extension in our Knowledge Base.
 
 **Web of Trust**
 
@@ -41,7 +41,7 @@ Mit Web of Trust können Sie den Ruf jeder Website auf der Grundlage von Nutzerm
 
 ### Netzwerk
 
-Das vorletzte Modul ist der Netzwerkfilterung gewidmet, und hier finden Sie weitere netzwerkbezogene Optionen. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS protocol_. Dies sind wichtige zusätzliche Vorsichtsmaßnahmen, um Ihren Webspace besser zu filtern. Most websites are now using HTTPS, and the same applies to advertising. Von vielen Websites, wie youtube.com, facebook.com und twitter.com, ist es unmöglich, Werbung ohne HTTPS-Filterung zu entfernen. So keep the _Filter HTTPS protocol_ feature enabled unless you have a strong reason not to.
+Das vorletzte Modul ist der Netzwerkfilterung gewidmet, und hier finden Sie weitere netzwerkbezogene Optionen. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS_. Dies sind wichtige zusätzliche Vorsichtsmaßnahmen, um Ihren Webspace besser zu filtern. Most websites are now using HTTPS, and the same applies to advertising. From many sites, like youtube.com, facebook.com and x.com, it is impossible to remove ads without HTTPS filtering. So keep the _Filter HTTPS_ feature enabled unless you have a strong reason not to.
 
 ![Network Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 

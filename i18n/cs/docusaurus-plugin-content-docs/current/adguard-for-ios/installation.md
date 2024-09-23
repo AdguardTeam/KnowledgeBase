@@ -29,7 +29,7 @@ AdGuard pro iOS je aplikace uvedená v App Store. Chcete-li AdGuard nainstalovat
 
 ![Na hlavní obrazovce App Store klepněte na možnost Hledat *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/1.png)
 
-Do vyhledávacího pole zadejte *adguard* a klepněte na řetězec *adguard*, který bude mezi výsledky vyhledávání.
+Type *adguard* in the search bar and tap the string *AdGuard* which will be among search results.
 
 ![Do vyhledávacího pole zadejte "AdGuard" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
@@ -43,11 +43,11 @@ AdGuard Pro je placená verze AdGuardu pro iOS, která nabízí rozšířenou sa
 
 ![Na hlavní obrazovce App Store klepněte na možnost Hledat *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/1.png)
 
-Do vyhledávacího pole zadejte *adguard* a klepněte na řetězec *adGuard*, který bude mezi výsledky vyhledávání.
+Type *adguard* in the search form, and then tap the string *AdGuard Pro — adblock* which will be shown among search results.
 
 ![Do vyhledávacího pole zadejte "AdGuard" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
-Na otevřené stránce App Store klepněte na tlačítko s cenou licence pod řetězcem *AdGuard Pro-adblock*a poté klepněte na *ZAKOUPIT*. Můžete být požádáni o zadání přihlašovacího jména a hesla k Apple ID. Zadejte ho a počkejte na dokončení instalace.
+On the opened page of the App Store tap the button with the cost of the license under the string *AdGuard Pro — adblock*, and then tap *BUY*. Můžete být požádáni o zadání přihlašovacího jména a hesla k Apple ID. Zadejte ho a počkejte na dokončení instalace.
 
 ![Klepněte na ZÍSKAT pod AdGuardem *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/3.png)
 

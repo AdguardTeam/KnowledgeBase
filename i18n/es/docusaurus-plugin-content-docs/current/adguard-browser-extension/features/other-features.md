@@ -19,7 +19,7 @@ En la pestaña _General_, puedes permitir los anuncios de búsqueda y la [autopr
 
 Además, aquí puedes habilitar [_Protección contra phishing y malware_](/general/browsing-security).
 
-Puedes guardar tu configuración haciendo clic en el botón _Exportar configuración_. La configuración se guardará como un archivo .json. Para subir la configuración previamente guardada, utiliza la función _Importar configuración_. Incluso puedes usarlo para cambiar rápidamente entre diferentes perfiles de configuración o incluso para transferir configuraciones entre diferentes navegadores.
+Puedes guardar tu configuración haciendo clic en el botón _Exportar configuración_. La configuración se guardará como un archivo .json. Para importar la configuración guardada previamente, utiliza la función _Importar configuración_. Incluso puedes usarlo para cambiar rápidamente entre diferentes perfiles de configuración o incluso para transferir configuraciones entre diferentes navegadores.
 
 ## Configuraciones adicionales {#misc}
 

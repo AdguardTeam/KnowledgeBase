@@ -21,10 +21,10 @@ sidebar_position: 4
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/safari.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard стремится защищать вашу конфиденциальность. Мы строго соблюдаем нашу [Политику конфиденциальности](https://adguard.com/privacy/safari.html) и не собираем никакой личной информации о пользователях. Перед отправкой логов в поддержку проверьте, не содержит ли файл дополнительную информацию, которую вы не хотите передавать. Если в файле осталась личная информация, рекомендуем удалить её.
 
 :::
 
-1. Open the [AdGuard for Safari GitHub repo](https://github.com/AdguardTeam/AdGuardForSafari/issues) and click _New issue_.
-2. Send the log file to devteam@adguard.com. Укажите время возникновения ошибки и прикрепите ссылку на вашу проблему или её номер (он отображается как #число рядом с заголовком).
-   Кроме того, вы можете загрузить файл с логами на Google Диск и отправить его на devteam@adguard.com. Add the file link to your GitHub issue.
+1. Откройте репозиторий [AdGuard для Safari на GitHub](https://github.com/AdguardTeam/AdGuardForSafari/issues) и нажмите _New issue_.
+2. Отправьте файл с логами на адрес devteam@adguard.com. Укажите время возникновения ошибки и прикрепите ссылку на вашу проблему или её номер (он отображается как #число рядом с заголовком).
+   Кроме того, вы можете загрузить файл с логами на Google Диск и отправить его на devteam@adguard.com. Добавьте ссылку на файл к задаче на GitHub.

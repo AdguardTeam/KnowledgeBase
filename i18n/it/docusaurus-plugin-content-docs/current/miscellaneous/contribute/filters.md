@@ -13,7 +13,7 @@ I siti web modificano costantemente come incorporano gli annunci e, noi, aggiung
 
 Tuttavia, lavorare con i filtri di blocco richiede delle competenze specifiche. Se le hai e sai come creare le regole, dirigiti direttamente alla nostra [repository dei Filtri di AdGuard](https://github.com/AdguardTeam/AdguardFilters) su Github. Lì, troverai molti ticket aperti, ognuno riferito a un problema con qualche sito web: un annuncio non bloccato, un falso positivo, etc. Scegline uno qualsiasi e suggerisci le tue regole nei commenti. Gli ingegneri di filtraggio di AdGuard revisioneranno i tuoi suggerimenti e, se li troveranno appropriati, le tue regole saranno aggiunte ai filtri di AdGuard.
 
-Se non sei ancora familiare con la sintassi delle nostre regole di filtraggio, o non ti ricordi come funziona, troverai i fondamenti sulla sintassi [nella nostra Knowledge base](/general/ad-filtering/create-own-filters).
+If you are not yet familiar with our filtering rule syntax, or maybe need a refresher, you'll find the basics about the syntax [in our Knowledge Base](/general/ad-filtering/create-own-filters).
 
 ### Ricompense {#rewards}
 
