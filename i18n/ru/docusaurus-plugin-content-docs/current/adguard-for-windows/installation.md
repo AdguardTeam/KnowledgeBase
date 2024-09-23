@@ -23,7 +23,7 @@ sidebar_position: 2
 
 Чтобы использовать программу AdGuard на компьютере или планшете под управлением Microsoft Windows, загрузите установочный пакет этого приложения и запустите программу установки. Для этого выполните перечисленные ниже действия:
 
-1. Перейдите на [сайт AdGuard](http://adguard.com) и нажмите *Скачать* [на открывшейся странице](https://adguard.com/download.html?auto=1).
+1. Go to the [AdGuard website](http://adguard.com) in the address bar and click *Download* [on the homepage](https://adguard.com/download.html?auto=1).
 
    ![Скачайте AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
 
@@ -91,7 +91,7 @@ sidebar_position: 2
 
 :::
 
-- Выберите *Блокировщик рекламы AdGuard* и *Расширенный* тип удаления, затем нажмите *Удалить*. Clcik *Yes, continue* in the window prompt.
+- Выберите *Блокировщик рекламы AdGuard* и *Расширенный* тип удаления, затем нажмите *Удалить*. В появившемся окне нажмите *Да, продолжить*.
 
 ![Расширенное удаление *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
 

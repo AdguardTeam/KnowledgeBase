@@ -17,7 +17,7 @@ Verifica si el error no se ha informado antes. Aconsejamos prestar atención tan
 
 ### Cómo describir un problema
 
-Intenta proporcionar tantos detalles como sea posible; eso nos facilitará la reproducción del error y descubriremos cómo solucionarlo. Esto es lo que esperamos ver en un informe de errores:
+Intenta proporcionar tantos detalles como sea posible; eso nos facilitará la reproducción del error y descubriremos cómo solucionarlo. Esto es lo que esperamos que incluya un informe de bug:
 
 - La versión de tu aplicación
 - La versión de tu sistema operativo

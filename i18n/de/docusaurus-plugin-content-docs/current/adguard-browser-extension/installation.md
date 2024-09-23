@@ -71,4 +71,4 @@ Klicken Sie im geöffneten Dialogfenster auf *Erweiterung hinzufügen*, um die A
 
 ## So installieren Sie die AdGuard Browsererweiterung für Safari
 
-AdGuard für Safari ist keine Browsererweiterung im herkömmlichen Sinne. You can read more about it in a [dedicated article](/adguard-for-safari/features/general). Oder Sie können [die Installationsdatei](https://agrd.io/safari_release) direkt von dieser Seite herunterladen.
+AdGuard für Safari ist keine Browsererweiterung im herkömmlichen Sinne. Sie können mehr darüber in einem [eigenen Artikel](/adguard-for-safari/features/general) erfahren. Oder Sie können [die Installationsdatei](https://agrd.io/safari_release) direkt von dieser Seite herunterladen.

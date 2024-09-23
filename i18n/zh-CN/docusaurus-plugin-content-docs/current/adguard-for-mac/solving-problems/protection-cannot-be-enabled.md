@@ -1,5 +1,5 @@
 ---
-title: Protection cannot be enabled
+title: 无法启用保护
 sidebar_position: 2
 ---
 
@@ -9,14 +9,14 @@ sidebar_position: 2
 
 :::
 
-If AdGuard Protection cannot be enabled for some reason, perform the following steps:
+如果由于某种原因无法启用 AdGuard 保护，请执行以下操作：
 
-1. Click the AdGuard icon at the menu bar and go to *Advanced* → *Reset settings...* → *Quit AdGuard...*
+1. 单击菜单栏上的 AdGuard 图标并转到「*高级*」→「*重置设置...*」→「*退出 AdGuard...*」。
 
-2. In the Spotlight Search, type Terminal, enter `sudo rm -R /Library/Application\ Support/com.adguard.adguard` and execute.
+2. 在 Spotlight 搜索工具中，键入‘终端’，输入并执行 `sudo rm -R /Library/Application\ Support/com.adguard.adguard` 命令。
 
-3. Restart your computer.
+3. 重启计算机。
 
-4. Open the Terminal again, type `ls -al /Library/StagedExtensions/Library/Application\ Support/com.adguard.adguard/` and execute. You should receive the following: `No such file or directory`.
+4. 再次打开终端，输入并执行 `ls -al /Library/StagedExtensions/Library/Application\ Support/com.adguard.adguard/` 命令。 用户将收到以下信息：`No such file or directory`。
 
-5. Start AdGuard and enter your login information when prompted.
+5. 启动 AdGuard 并按提示输入登录信息。

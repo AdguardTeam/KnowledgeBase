@@ -24,5 +24,3 @@ Pour installer manuellement le certificat dans un navigateur de type Firefox :
   5. Sélectionnez le fichier `/Library/Application Support/AdGuard Software/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` ou téléchargez-le simplement depuis http://local.adguard.org /cert en utilisant un navigateur basé sur Chromium (par exemple Google Chrome ou le nouveau Edge) et avec un filtrage HTTPS exécuté dans AdGuard
 
 Les actions exactes requises pour les différents navigateurs basés sur Gecko peuvent varier, mais la séquence générale et le chemin d'accès au fichier `AdGuard Personal CA.cer` seront les mêmes.
-
-PS : Pour [la version de l'application Setapp](https://setapp.com/apps/adguard) , le chemin du fichier est le suivant : `/Library/Application Support/com.adguard.mac.adguard-setapp/AdguardCore/Adguard Personal CA.cer`

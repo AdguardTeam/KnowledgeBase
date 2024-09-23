@@ -4,7 +4,7 @@ sidebar_position: 5
 toc_max_heading_level: 4
 ---
 
-유저스크립트('확장 프로그램'이라고도 함)는 사실상 자바스크립트로 작성된 미니 프로그램입니다. 하나 이상의 웹사이트의 기능을 수정하거나 확장합니다. 많은 AdGuard 사용자는 이미 AdGuard 어시스턴트, 팝업 차단기 및 AdGuard Extra와 같은 유저스크립트에 익숙할 것입니다.
+Userscripts (we also call them "extensions") are, de facto, miniprograms written in JavaScript. 하나 이상의 웹사이트의 기능을 수정하거나 확장합니다. 많은 AdGuard 사용자는 이미 AdGuard 어시스턴트, 팝업 차단기 및 AdGuard Extra와 같은 유저스크립트에 익숙할 것입니다.
 
 :::note 지원되는 앱
 
@@ -134,7 +134,7 @@ Android용 AdGuard에만 사전 설치된 스크립트입니다. Google 검색 �
 
 ##### 지원되지 않는 속성
 
-이러한 속성은 Adguard에서 무시됩니다.
+These properties will be simply ignored by AdGuard.
 
 ```text
 @unwrap
@@ -208,4 +208,36 @@ GM_log
 !function(){(
     console.log("I am loaded!");
 )}();
+```
+
+## Userstyles
+
+AdGuard products provide limited support for userstyles. `@var` and `@advanced` metadata tags are not supported, as well as any value of the `@preprocessor` metadata tag except `default`.
+
+### Metadata
+
+The metadata block is written using CSS-style comments, starting with `===UserStyle===` and ending with `===/UserStyle===`. All metadata tags that are supported for userscripts are also supported for userstyles, although some of them have no meaning and are ignored. `@var` and `@advanced` tags are not supported. The only supported value of the `@preprocessor` tag is `default`.
+
+### Content
+
+The content of a userstyle is plain CSS with support for the [`@-moz-document` at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@document). The `media-document()` function is not supported. The userstyle will only be applied to pages that match one or more of the `@-moz-document` rules. If the userstyle does not contain any `@-moz-document` rules, it will not be applied.
+
+### Example
+
+```css
+/* ==UserStyle==
+@name         Example userstyle
+@namespace    https://example.org/userstyle
+@homepageURL  https://example.org/userstyle
+@version      1.0.0
+@license      Other
+@description  This is an example
+@author       example
+@preprocessor default
+==/UserStyle== */
+@-moz-document regexp("https?\:\/\/(www\.)?example\.(org|com).*") {
+    body {
+        background-color: #000000 !important;
+    }
+}
 ```

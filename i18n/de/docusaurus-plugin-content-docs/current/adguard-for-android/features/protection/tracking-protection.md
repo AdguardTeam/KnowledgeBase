@@ -77,4 +77,4 @@ Hier sind die aktiven Funktionen der vorkonfigurierten Ebenen:
 
    k. _X-Client-Data-Header entfernen_. Diese Funktion verhindert, dass Google Chrome seine Versions- und Änderungsinformationen an Google-Domains (einschließlich DoubleClick und Google Analytics) sendet
 
-Sie können die einzelnen Einstellungen unter _Tracking-Schutz_ anpassen und eine individuelle Konfiguration erstellen. Zu jeder Einstellung gibt es eine Beschreibung, die Ihnen hilft, ihre Bedeutung zu verstehen. [Erfahren Sie mehr über die Auswirkungen der verschiedenen _Tracking-Schutz_-Einstellungen](/general/stealth-mode) und gehen Sie vorsichtig damit um, da einige die Funktionalität von Websites und Browsererweiterungen beeinträchtigen können.
+Sie können die einzelnen Einstellungen unter _Tracking-Schutz_ anpassen und eine individuelle Konfiguration erstellen. Zu jeder Einstellung gibt es eine Beschreibung, die Ihnen hilft, ihre Bedeutung zu verstehen. [Read more about what the various _Tracking protection_ settings do](/general/stealth-mode) and utilize them cautiously, as some may interfere with the functionality of websites and browser extensions.

@@ -29,9 +29,9 @@ Depois de abrir as Configurações avançadas, você verá as seguintes opções
 
 Se ativado, o AdGuard bloqueará o TCP Fast Open no navegador Edge. Para aplicar as configurações, você precisa reiniciar o navegador.
 
-### Usar Encrypted ClientHello
+### Use Encrypted Client Hello
 
-Cada conexão de Internet criptografada tem uma parte não criptografada. Estamos falando do primeiro pacote, que contém o nome do servidor ao qual você está se conectando. A tecnologia Encrypted ClientHello deve resolver esse problema e criptografar esta última parte de informação não criptografada. Para utilizá-la, habilite a opção *Usar Encrypted ClientHello*. Ela utiliza um proxy DNS local para procurar a configuração ECH para o domínio. Se encontrado, o pacote ClientHello será criptografado.
+Cada conexão de Internet criptografada tem uma parte não criptografada. Estamos falando do primeiro pacote, que contém o nome do servidor ao qual você está se conectando. A tecnologia Encrypted ClientHello deve resolver esse problema e criptografar esta última parte de informação não criptografada. To benefit from it, enable the *Use Encrypted Client Hello* option. Ela utiliza um proxy DNS local para procurar a configuração ECH para o domínio. If it is found, Client Hello packet will be encrypted.
 
 ### Verificar a transparência do certificado dos sites
 
@@ -73,7 +73,7 @@ Caso contrário, o AdGuard filtrará todo o tráfego em tempo real, sem redireci
 
 ### Abrir a janela principal na inicialização do sistema
 
-Ative esta opção para abrir a janela principal do AdGuard depois que o sistema for carregado. Observe que isso não afeta se o serviço de filtragem real será iniciado ou não. Esta configuração está localizada em *Configurações → Configurações Gerais*
+Ative esta opção para abrir a janela principal do AdGuard depois que o sistema for carregado. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*.
 
 ### Ativar filtragem na inicialização do sistema
 
@@ -95,7 +95,7 @@ Se você não deseja que o AdGuard filtre sub-redes específicas, ative esse rec
 
 ### Habilitar escrita HAR
 
-Esta opção deve ser habilitada **apenas para fins de debugging**. Se você marcar esta opção, o AdGuard criará um arquivo que contém informações sobre todas as solicitações HTTP filtradas no formato HAR 1.2. Este arquivo pode ser analisado com o aplicativo Fiddler. Observe que isso pode tornar sua navegação na web significativamente mais lenta.
+Esta opção deve ser habilitada **apenas para fins de debugging**. Ticking the checkbox will make AdGuard create a file in the HAR 1.2 format containing information about all filtered HTTP requests. Este arquivo pode ser analisado com o aplicativo Fiddler. Observe que isso pode tornar sua navegação na web significativamente mais lenta.
 
 ### Adicionar um espaço extra à solicitação HTTP simples
 
@@ -115,7 +115,7 @@ Esta opção só é aplicada quando a opção do modo Stealth *Proteger de DPI* 
 
 Especifica o tamanho da fragmentação do pacote TCP, evitando a inspeção profunda do pacote. Esta opção afeta apenas o tráfego seguro (HTTPS).
 
-Se esta opção estiver ativada, o AdGuard divide o pacote TLS inicial (o pacote ClientHello) em duas partes: a primeira tem o comprimento especificado e a segunda tem o restante, até o comprimento de todo o pacote TLS inicial.
+If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
 Valores válidos: 1–1500. Se for especificado um tamanho inválido, o valor selecionado pelo sistema será utilizado. Esta opção só é aplicada quando a opção do modo Stealth *Proteger de DPI* está habilitada.
 

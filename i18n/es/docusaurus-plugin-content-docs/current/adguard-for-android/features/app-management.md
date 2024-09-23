@@ -28,7 +28,7 @@ Desde el menú contextual, también puedes acceder a las estadísticas de la apl
 
 ### Aplicaciones “libres de problemas” y “problemáticas”
 
-La mayoría de las aplicaciones funcionan correctamente cuando el filtrado está habilitado. Para dichas aplicaciones, su tráfico se dirige a través de AdGuard y se filtra de forma predeterminada.
+Most apps work correctly when filtered. Para dichas aplicaciones, su tráfico se dirige a través de AdGuard y se filtra de forma predeterminada.
 
 Algunas aplicaciones, como el Administrador de descargas, la radio y las aplicaciones del sistema con UID 1000 y 1001 (por ejemplo, los servicios de Google Play), son "problemáticas" y pueden funcionar incorrectamente cuando se enrutan a través de AdGuard. Es por eso que es posible que veas la siguiente advertencia al intentar enrutar o filtrar todas las aplicaciones:
 

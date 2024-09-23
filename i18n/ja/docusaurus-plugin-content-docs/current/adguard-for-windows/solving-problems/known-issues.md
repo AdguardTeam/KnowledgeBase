@@ -1,20 +1,20 @@
 ---
-title: Known issues of AdGuard for Windows
+title: AdGuard for Windows の既知の問題
 sidebar_position: 10
 ---
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際にどのように動作するかを確認するには、[AdGuard アプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
-## AdGuard for Windows and AdGuard VPN for Windows compatibility issues
+## AdGuard for Windows と AdGuard VPN for Windows の互換性問題
 
-Once you install AdGuard for Windows and AdGuard VPN for Windows, they just start working together without any effort on your part. However, changing some of their default settings may cause the apps to work incorrectly when they run at the same time.
+AdGuard for Windows と AdGuard VPN for Windows をインストールすると、何もしなくても連携して動作し始めます。 ただし、一部のデフォルト設定を変更すると、両アプリを同時に実行したときにアプリが正しく動作しなくなる可能性があります。
 
-There are two specific settings in AdGuard for Windows: *Use redirect driver mode* and *Filter localhost*. By default, the first is disabled, and the second is enabled. Changing any of these settings will inevitably disrupt AdGuard's filtering if both AdGuard Ad Blocker and AdGuard VPN are enabled on your device.
+AdGuard for Windows には、2 つの特殊設定があります: *リダイレクト・ドライバ・モードを使用する* 」と「*plocalhostをフィルタリングする*」です。 デフォルトでは、1つ目は無効、2つ目は有効になっています。 デバイスで AdGuard 広告ブロッカーと AdGuard VPN の両方が有効になっている場合、この二つの設定のいずれかを変更すると、必然的に AdGuard のフィルタリングが中断されてしまいます。
 
-Changing these settings is only necessary to resolve issues related to the simultaneous operation of AdGuard Ad Blocker and network-level apps such as antiviruses, VPNs, and network filters. If you come across a situation where you need to change the default state of the above settings and still want AdGuard Ad Blocker and AdGuard VPN to work simultaneously and correctly — [create an issue on GitHub](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) so we can help you personally.
+これらの設定を変更する必要があるのは、AdGuard 広告ブロッカーと、ウイルス対策、VPN、ネットワークフィルタなどのネットワークレベル系アプリの同時操作に関連する問題を解決する場合のみです。 上記の設定のデフォルト状態を変更する必要があり、AdGuard 広告ブロッカーと AdGuard VPN を同時に正しく動作させたい状況に遭遇した場合は、 [GitHub で問題を作成](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose)してください。専用的にサポートさせていただきます。
 
-We are currently working on overcoming the above-listed limitations of the simultaneous work of our apps.
+現在、アプリの併用に関する上記の制限を克服するために取り組んでおります。

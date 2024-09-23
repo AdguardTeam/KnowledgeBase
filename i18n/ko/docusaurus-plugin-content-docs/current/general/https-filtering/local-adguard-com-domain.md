@@ -1,27 +1,27 @@
 ---
-title: Local.adguard.org domain
+title: Local.adguard.org 도메인
 sidebar_position: 3
 ---
 
-Users of AdGuard for Windows, Mac, and Android may notice that AdGuard adds a small script to every web page, that is loaded from the `local.adguard.org` domain.
+Windows, Mac 및 Android용 AdGuard 사용자들은 모든 웹 페이지에 `local.adguard.org` 도메인에서 로드되는 작은 스크립트가 추가되는 것을 볼 수 있습니다.
 
-First of all, don't worry, this is not a real domain, and there is actually no real server with that name. This domain is used to apply cosmetic filtering to web pages, but everything is done locally right on your device without connecting to any server.
+우선, 이 도메인은 실제 도메인이 아니며 해당 이름의 서버가 존재하지 않으니 걱정하지 마세요. 이 도메인은 웹페이지에 코스메틱 필터링을 적용하는 데 사용되지만 모든 작업이 서버에 연결하지 않고 기기에서 로컬로 이루어집니다.
 
-### Technical explanation
+### 기술 설명
 
-But what's going on and why is it done? Please read the technical explanation below.
+그렇다면 그것은 무엇이며 왜 필요한가요? 아래 기술 설명을 읽어보세요.
 
-1. AdGuard is a network-level content blocker so it cannot simply add custom JavaScript and CSS to webpages like what browser extensions do. However, doing this is crucial for quality content blocking.
-2. In order to do it AdGuard injects a "content script" that looks like this: `<script src="https://local.adguard.org/.../content-script.js">`. This "content script" takes care of cosmetic filtering, hides or removes ad content from the web pages.
-3. Connections to the IP address of the `local.adguard.org` domain are intercepted by AdGuard on the network level and **processed locally**. This is why that domain has a "static" IP address that does not change for years.
+1. AdGuard는 네트워크 수준의 콘텐츠 차단기이므로 브라우저 확장 프로그램처럼 웹페이지에 사용자 정의 JavaScript 및 CSS를 추가할 수 없습니다. 하지만 양질의 콘텐츠를 차단하는 데는 매우 중요합니다.
+2. 이를 위해 AdGuard는 다음과 같은 '콘텐츠 스크립트'를 삽입합니다: `<script src="https://local.adguard.org/.../content-script.js">`. 이 '콘텐츠 스크립트'는 외형적 필터링을 처리하고 웹페이지에서 광고 콘텐츠를 숨기거나 제거합니다.
+3. `local.adguard.org` 도메인의 IP 주소에 대한 연결은 네트워크 수준에서 AdGuard가 가로채서 **로컬에서 처리합니다**. 그렇기 때문에 해당 도메인은 수년간 변경되지 않는 '고정' IP 주소를 갖게 됩니다.
 
-**Why do we need to use a real IP address for that?**
+**실제 IP 주소를 사용해야 하는 이유는 무엇인가요?**
 
-- We cannot use `127.0.0.1` as the browsers won't accept it.
-- Using some IP address from the private subnets is possible, but this solution has two downsides.
-    - First, there is a slight chance of intersecting with an existing intranet service and breaking access to it.
-    - Second, some DNS servers may consider this a DNS rebinding attack and refuse to respond to `local.adguard.org`.
+- `127.0.0.1`은 브라우저에서 허용하지 않으므로 사용할 수 없습니다.
+- 사설 서브넷의 일부 IP 주소를 사용할 수 있지만 이 솔루션에는 두 가지 단점이 있습니다.
+    - 첫째, 기존 인트라넷 서비스와 교차하여 액세스가 중단될 가능성이 약간 있습니다.
+    - 둘째, 일부 DNS 서버는 이를 DNS 리바인딩 공격으로 간주하여 `local.adguard.org`에 대한 응답을 거부할 수 있습니다.
 
-### Verification
+### 인증
 
-This is easy to verify. If you disable AdGuard, you'll see that it is simply impossible to establish connection to `local.adguard.org` since there is no server with that address. Just try opening it in your browser when AdGuard is disabled.
+이는 쉽게 확인할 수 있습니다. AdGuard를 비활성화하면 해당 주소의 서버가 없기 때문에 `local.adguard.org`에 연결할 수 없다는 것을 알 수 있습니다. AdGuard가 비활성화되어 있을 때 브라우저에서 열어보세요.

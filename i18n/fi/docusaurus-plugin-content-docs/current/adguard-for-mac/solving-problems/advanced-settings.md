@@ -71,7 +71,7 @@ Time, in seconds, before sending another keepalive probe to an unresponsive peer
 
 #### `network.https.ech.enabled`
 
-Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, encrypts ClientHellos.
+Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, encrypts Client Hellos.
 
 #### `network.https.enforce.certificate.transparency`
 

@@ -4,7 +4,7 @@ sidebar_position: 5
 toc_max_heading_level: 4
 ---
 
-Gli userscript (li chiamiamo anche "estensioni") sono, di fatto, mini-programmi scritti in JavaScript. Essi, modificano o estendono la funzionalità di uno o più siti web. Molti utenti di AdGuard potrebbero già essere a conoscenza di certi userscript, come AdGuard Assistant, Popup Blocker e AdGuard Extra.
+Gli userscript (li chiamiamo anche "estensioni") sono, di fatto, miniprogrammi scritti in JavaScript. Essi, modificano o estendono la funzionalità di uno o più siti web. Molti utenti di AdGuard potrebbero già essere a conoscenza di certi userscript, come AdGuard Assistant, Popup Blocker e AdGuard Extra.
 
 :::note App supportate
 
@@ -66,11 +66,11 @@ Qui, descriveremo alcuni dei cataloghi di userscript più popolari.
 
 ### Userscript.Zone
 
-[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high credibility, since only scripts from moderated pages are displayed.
+[Userscript.Zone](https://www.userscript.zone) è un sito web che consente di cercare userscript immettendo un URL o un dominio corrispondente. Il sito web è facile da usare e ha un'elevata credibilità, poiché vengono visualizzati solo gli script provenienti da pagine moderate.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) è un catalogo di userscript dai creatori di Stylish. The scripts in this catalog undergo moderation, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/) è un catalogo di userscript dai creatori di Stylish. Gli script in questo catalogo sono sottoposti a moderazione, quindi, la loro credibilità è molto più elevata.
 
 ### OpenUserJS.org
 
@@ -208,4 +208,36 @@ GM_log
 !function(){(
     console.log("I am loaded!");
 )}();
+```
+
+## Stili utente
+
+I prodotti AdGuard forniscono un supporto limitato per gli stili utente. I tag di metadati `@var` e `@advanced` non sono supportati, così come qualsiasi valore del tag di metadati `@preprocessor`, tranne `default`.
+
+### Metadati
+
+Il blocco dei metadati è scritto utilizzando commenti in stile CSS, iniziando con `===UserStyle===` e terminando con `===/UserStyle===`. Tutti i tag dei metadati supportati per gli userscript sono supportati anche per gli userstyle, anche se alcuni di essi non hanno alcun significato e vengono ignorati. I tag `@var` e `@advanced` non sono supportati. L'unico valore supportato del tag `@preprocessor` è `predefinito`.
+
+### Contenuto
+
+Il contenuto di uno stile utente è un semplice CSS con supporto per la regola [`@-moz-document` at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@document). La funzione `media-document()` non è supportata. Lo stile utente verrà applicato solo alle pagine che corrispondono a una o più regole `@-moz-document`. Se lo stile utente non contiene alcuna regola `@-moz-document`, non verrà applicato.
+
+### Esempio
+
+```css
+/* ==UserStyle==
+@name         Example userstyle
+@namespace    https://example.org/userstyle
+@homepageURL  https://example.org/userstyle
+@version      1.0.0
+@license      Other
+@description  This is an example
+@author       example
+@preprocessor default
+==/UserStyle== */
+@-moz-document regexp("https?\:\/\/(www\.)?example\.(org|com).*") {
+    body {
+        background-color: #000000 !important;
+    }
+}
 ```

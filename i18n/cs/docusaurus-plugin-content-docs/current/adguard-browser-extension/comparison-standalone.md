@@ -19,8 +19,8 @@ Zatímco Rozšíření prohlížeče AdGuard je zdarma, snadno se instaluje a ob
 
 ![Extension vs. App \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
 
-`1` – v rámci omezení prohlížeče a pouze v prohlížeči, ve kterém je nainstalováno;
+`1` — within browser restrictions and only in the browser where it is installed;
 
-`2` – rozšíření není schopno detekovat požadavky od jiných rozšíření. Pokud škodlivé nebo sledovací rozšíření odešle na svůj server požadavek na zobrazení reklamy nebo sledování vaší aktivity, Rozšíření prohlížeče AdGuard nebude schopno tento požadavek zablokovat;
+`2` — the extension is unable to detect requests from other extensions. Pokud škodlivé nebo sledovací rozšíření odešle na svůj server požadavek na zobrazení reklamy nebo sledování vaší aktivity, Rozšíření prohlížeče AdGuard nebude schopno tento požadavek zablokovat;
 
-`3` – ne všechny typy reklam a hrozeb lze blokovat pomocí rozšíření prohlížeče z důvodu určitých omezení prohlížeče. Některé prvky se mohou dostat na stránku a zpomalit proces načítání. Kromě toho aplikace AdGuard na rozdíl od blokátorů reklam v prohlížeči blokuje reklamy ještě před jejich načtením do prohlížeče. To šetří provoz a zrychluje načítání stránek.
+`3` — not all types of ads and threats can be blocked by browser extensions due to certain browser limitations. Některé prvky se mohou dostat na stránku a zpomalit proces načítání. Kromě toho aplikace AdGuard na rozdíl od blokátorů reklam v prohlížeči blokuje reklamy ještě před jejich načtením do prohlížeče. To šetří provoz a zrychluje načítání stránek.

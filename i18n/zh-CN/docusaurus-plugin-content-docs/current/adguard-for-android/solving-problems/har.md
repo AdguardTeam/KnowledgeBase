@@ -1,5 +1,5 @@
 ---
-title: 如何收集 HAR 文件
+title: 如何生成 HAR 文件
 sidebar_position: 5
 ---
 
@@ -11,7 +11,7 @@ sidebar_position: 5
 
 :::note
 
-HAR files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+HAR 文件将根据 [AdGuard 隐私政策](https://adguard.com/en/privacy.html)处理。
 
 :::
 
@@ -19,7 +19,7 @@ HAR files are processed in accordance with [the AdGuard Privacy Policy](https://
 
 HAR（HTTP ARchive）格式是 JSON 格式的存档文件，用于记录 Web 浏览器与站点的交互。 HAR 格式的规范定义了 HTTP 交易的存档数据，浏览器使用该数据来导出其加载的网页的详细信息。 您可以在 [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/) 网站上找到有关 HAR 文件格式及其使用规范的更详细说明。
 
-## 如何收集 HAR 文件
+## 如何生成 HAR 文件
 
 有时我们需要对文件进行分析以拦截由于某种原因难以再现的特定广告。 要获取 HAR 文件，请执行以下步骤：
 
@@ -31,7 +31,7 @@ HAR（HTTP ARchive）格式是 JSON 格式的存档文件，用于记录 Web 浏
 6. 回到「**高级设置**」。
 7. 点击「**导出日志和系统信息**」→「**允许**」（如有必要）→「**保存**」。
 
-**请将导出的日志记录发送给 AdGuard 客服支持。**
+**将生成的文件与日志记录一起发送至 AdGuard 支持服务。**
 
 :::note
 

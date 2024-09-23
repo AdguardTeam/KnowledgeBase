@@ -13,16 +13,14 @@ AdGuard для Mac должен установить корневой серти
 
 Чтобы установить сертификат вручную:
 
-  1. Open *Preferences*
+  1. Откройте *Настройки*
 
-  2. Go to *Privacy & Security* → *Certificates*
+  2. Перейдите в *Приватность и Защита* — *Просмотр сертификатов*
 
-  3. Click *View Certificates*
+  3. Кликните по *Просмотр сертификатов*
 
-  4. Navigate to the *Authorities* tab and click the *Import...* button
+  4. Перейдите во вкладку *Центры сертификации* и кликните по кнопке *Импортировать...*
 
   5. Выберите файл `/Library/Application Support/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` или скачайте его c http://local.adguard.org/cert через любой браузер на основе Chromium (например, Google Chrome или Edge) с запущенной HTTPS-фильтрацией в AdGuard
 
 Точные действия могут различаться для разных браузеров, но общая последовательность и путь к файлу `AdGuard Personal CA.cer` остаются теми же.
-
-P.S.: For [Setapp application version](https://setapp.com/apps/adguard) the file path is the following: `/Library/Application Support/com.adguard.mac.adguard-setapp/AdguardCore/Adguard Personal CA.cer`

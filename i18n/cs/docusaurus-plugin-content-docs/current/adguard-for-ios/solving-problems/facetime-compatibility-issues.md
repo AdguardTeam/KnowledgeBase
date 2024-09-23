@@ -1,5 +1,5 @@
 ---
-title: Jak se vyhnout problémům s kompatibilitou s FaceTime
+title: How to avoid compatibility issues with FaceTime
 sidebar_position: 3
 ---
 

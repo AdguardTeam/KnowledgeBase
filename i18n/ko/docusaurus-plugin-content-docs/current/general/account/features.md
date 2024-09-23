@@ -35,4 +35,4 @@ AdGuard 광고 차단 라이선스에 연결된 기기의 연결을 해제하거
 
 ## 고객지원 문의
 
-지원 탭에는 문제를 해결하거나 AdGuard 제품에 대한 정보를 찾는 데 도움이 되는 유용한 링크가 포함되어 있습니다. 6개의 섹션으로 나뉘어 있습니다: 자주 묻는 질문, 버그 제보/기능 요청 보내기, 잘못된 차단 신고, 지원팀에 문의, 지식 창고, 토론장입니다.
+지원 탭에는 문제를 해결하거나 AdGuard 제품에 대한 정보를 찾는 데 도움이 되는 유용한 링크가 포함되어 있습니다. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge Base, and Discuss.

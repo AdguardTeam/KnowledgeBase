@@ -66,11 +66,11 @@ Nous décrirons ici certains des catalogues de scripts utilisateur les plus popu
 
 ### Userscript.Zone
 
-[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high credibility, since only scripts from moderated pages are displayed.
+[Userscript.Zone](https://www.userscript.zone) est un site web qui permet de rechercher des scripts utilisateurs en saisissant une URL ou un domaine correspondant. Le site web est facile à utiliser et bénéficie d'une grande crédibilité, car seuls les scripts des pages modérées sont affichés.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) est un catalogue de scripts utilisateur réalisé par les créateurs de Stylish. The scripts in this catalog undergo moderation, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/) est un catalogue de scripts utilisateur réalisé par les créateurs de Stylish. Les scripts de ce catalogue sont soumis à une modération, leur crédibilité est donc beaucoup plus élevée.
 
 ### OpenUserJS.org
 
@@ -208,4 +208,36 @@ Vous trouverez [ici](https://wiki.greasespot.net/GM.info) plus d'informations su
 !function(){(
     console.log("I am loaded!");
 )}();
+```
+
+## Styles utilisateur
+
+Les produits AdGuard offrent une prise en charge limitée des styles d'utilisateur. Les balises de métadonnées `@var` et `@advanced` ne sont pas prises en charge, ainsi que toute valeur de la balise de métadonnées `@preprocessor` à l'exception de la valeur `par défaut`.
+
+### Métadonnées
+
+Le bloc de métadonnées est rédigé à l'aide de commentaires de style CSS, commençant par `===UserStyle===` et se terminant par `===/UserStyle===`. Toutes les balises de métadonnées prises en charge pour les scripts utilisateur sont également prises en charge pour les styles utilisateur, bien que certaines d'entre elles n'aient aucune signification et soient ignorées. Les balises `@var` et `@advanced` ne sont pas prises en charge. La seule valeur prise en charge de la balise `@preprocessor` est `par défaut`.
+
+### Contenu
+
+Le contenu d'un style utilisateur est du CSS simple avec prise en charge de [`@-moz-document` at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@document). La fonction `media-document()` n'est pas prise en charge. Le style utilisateur ne sera appliqué qu'aux pages qui correspondent à une ou plusieurs des règles `@-moz-document`. Si le style utilisateur ne contient aucune règle `@-moz-document` , il ne sera pas appliqué.
+
+### Exemple
+
+```css
+/* ==UserStyle==
+@name         Example userstyle
+@namespace    https://example.org/userstyle
+@homepageURL  https://example.org/userstyle
+@version      1.0.0
+@license      Other
+@description  This is an example
+@author       example
+@preprocessor default
+==/UserStyle== */
+@-moz-document regexp("https?\:\/\/(www\.)?example\.(org|com).*") {
+    body {
+        background-color: #000000 !important;
+    }
+}
 ```

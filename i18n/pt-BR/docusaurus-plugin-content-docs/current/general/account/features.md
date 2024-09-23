@@ -35,4 +35,4 @@ A seção Histórico de compras exibe todas as licenças que você já comprou u
 
 ## Entrar em contato com o suporte
 
-A guia Suporte contém links úteis para ajudá-lo a resolver problemas ou encontrar respostas para suas perguntas sobre os produtos AdGuard. Eles são divididos em seis seções: FAQ, Enviar um relatório de bug/sugestão de funcionalidade, Denunciar bloqueio incorreto, Suporte, Base de conhecimento e Discussão.
+A guia Suporte contém links úteis para ajudá-lo a resolver problemas ou encontrar respostas para suas perguntas sobre os produtos AdGuard. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge Base, and Discuss.

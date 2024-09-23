@@ -3,10 +3,10 @@ title: Programme de traduction AdGuard
 sidebar_position: 1
 ---
 
-> **Avis de non-responsabilité :** vous pouvez nous poser des questions sur la traduction d'AdGuard en envoyant un e-mail à [translate@adguard.com](mailto:translate@adguard.com) ou en rejoignant notre [chat sur Telegram](https://t.me/joinchat/UVYTLcHbr8JmOGIy).
+You can ask us any questions about translating AdGuard by sending an email to [translate@adguard.com](mailto:translate@adguard.com) or by joining our [Telegram chat](https://t.me/joinchat/UVYTLcHbr8JmOGIy).
 
-En ce qui concerne les traductions, chez AdGuard, nous comptons toujours beaucoup sur les bénévoles.
+When it comes to translations, we at AdGuard always heavily rely on volunteers.
 
-Nous utilisons désormais la plateforme [Crowdin](https://crowdin.com/) pour gérer les traductions de nos produits. C'est donc l'endroit idéal pour tous ceux qui souhaitent contribuer à AdGuard en traduisant l'un de nos produits.
+We now use the [Crowdin platform](https://crowdin.com/) to manage translations of our products. So this is the place for anyone who wants to contribute to AdGuard by translating any of our products.
 
-Si vous souhaitez faire partie des bénévoles qui nous aident à traduire AdGuard, veuillez lire les informations sur [comment devenir notre traducteur](../become-translator) et [comment nous collaborons avec eux](../rewards).
+If you want to be among the volunteers who help us translate AdGuard, please read the information on [how to become our translator](../become-translator) and [how we collaborate with them](../rewards).

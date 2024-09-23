@@ -79,7 +79,7 @@ WebRTC(웹 실시간 통신)는 브라우저와 앱 간에 데이터를 직접 �
 
 ### Flash 차단 {#flash}
 
-Flash Player 플러그인은 바이러스 및 해커와 같은 온라인 위협에 점점 더 취약해지고 있습니다. 또한 웹사이트 로딩 시간에 큰 영향을 미칠 수도 있습니다. 이 설정을 켜면 AdGuard가 브라우저에서 Flash의 콘텐츠 표시를 허용하는 구성 요소(예: 플러그인 및 ActiveXObject 개체)를 감지하는 기능을 차단합니다. 이는 사실상 브라우저가 Flash를 지원할 수 없음을 의미합니다.
+The Flash Player plugin has become increasingly vulnerable to such online threats as viruses and hackers; it may also significantly increase website load times. 이 설정을 켜면 AdGuard가 브라우저에서 Flash의 콘텐츠 표시를 허용하는 구성 요소(예: 플러그인 및 ActiveXObject 개체)를 감지하는 기능을 차단합니다. 이는 사실상 브라우저가 Flash를 지원할 수 없음을 의미합니다.
 
 ### Java 차단 {#java}
 
@@ -95,7 +95,7 @@ Flash Player 플러그인은 바이러스 및 해커와 같은 온라인 위협�
 
 트래픽을 필터링하기 위해 AdGuard 애플리케이션은 브라우저-서버 간 요청을 '가로채기'합니다. 광고, 추적 및 피싱 서버에 대한 요청은 서버로 전송되기 전에 변경되거나 완전히 차단될 수 있습니다. *타사 리퍼러 숨기기* 옵션도 마찬가지입니다: 이 옵션이 활성화된 경우 AdGuard는 HTTP(S) 요청, 특히 리퍼러 헤더를 제거하거나 변경하기 위해 요청을 가로챕니다. 그러나 이러한 요청은 브라우저에서 '종료'된 후에만 발생합니다. 즉, 브라우저 내부에서 리퍼러를 모니터링하는 경우(예: Chrome의 개발자 도구 사용) 요청이 아직 AdGuard에 도달하지 않았기 때문에 원래 리퍼러가 표시됩니다. [Fiddler](https://www.telerik.com/fiddler)와 같은 소프트웨어를 사용하여 Referer가 올바르게 변경되었는지 확인할 수 있습니다.
 
-반대로, 모든 브라우저 확장 프로그램의 특성상 AdGuard 브라우저 확장 프로그램은 브라우저 '내부'에서 작동합니다. 그러면 바로 그 자리에서 Referer가 변경되므로 개발자 도구는 귀하의 요청에 대해 원하는 Referer를 표시합니다.
+On the other hand, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. 그러면 바로 그 자리에서 Referer가 변경되므로 개발자 도구는 귀하의 요청에 대해 원하는 Referer를 표시합니다.
 
 ### User Agent 숨기기 {#useragent}
 
@@ -120,3 +120,9 @@ Custom User Agent 필드에 User Agent 값을 입력하여 임의의 값을 설�
 AdGuard는 클라이언트가 DPI 차단 기준에 해당하지 않도록 발신 패킷 데이터를 수정할 수 있습니다. 즉, 이 옵션을 활성화하면 사용자가 원하는 콘텐츠에 액세스할 수 있습니다. 현재 모든 DPI 시스템을 우회할 수 있는 것은 아니지만 이를 개선하기 위해 지속적으로 노력하고 있습니다.
 
 'DPI로부터 보호' 기능은 Windows용 AdGuard, Mac용 AdGuard 및 Android용 AdGuard에 이미 구현되어 있습니다.
+
+:::caution
+
+If this feature is enabled in AdGuard for Windows, it may interfere with ESET antivirus. Anti-DPI will prevent ESET from filtering traffic, leaving blacklisted and malicious websites unblocked.
+
+:::

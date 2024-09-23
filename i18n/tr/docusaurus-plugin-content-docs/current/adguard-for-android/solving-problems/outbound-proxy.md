@@ -9,7 +9,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-Aşağıda AdGuard'da proxy olarak çalışacak şekilde yapılandırabileceğiniz en ünlü uygulamaların bir listesini bulabilirsiniz.
+Below is a list of the most well-known applications that can be configured to work as proxies in AdGuard.
 
 :::not
 
@@ -41,11 +41,11 @@ Bu makalede, AdGuard ile çalışmak için en popüler proxy'lerden bazıların�
     | Proxy ana makine       | *127.0.0.1*            |
     | Proxy bağlantı noktası | *9050*                 |
 
-    Veya **Proxy sunucusu** → **Proxy sunucusu ekle** öğesine dokunabilir, bu değerleri elle girebilir ve Orbot'u varsayılan proxy olarak ayarlayabilirsiniz.
+    Or you can tap **Proxy server** → **Add proxy server**, enter these values manually, and set Orbot as the default proxy.
 
 1. Cihazınızın trafiğini proxy üzerinden yönlendirmek için ana Proxy düğmesini ve AdGuard korumasını etkinleştirin.
 
-    Artık AdGuard tüm trafiği Orbot üzerinden yönlendirir. Orbot'u devre dışı bırakırsanız, AdGuard'da giden proxy ayarlarını devre dışı bırakana kadar internet bağlantısı kullanılamayacaktır.
+    Now AdGuard will route all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable the outbound proxy settings in AdGuard.
 
 ### How to use AdGuard with PIA (Private Internet Access)
 
@@ -157,4 +157,4 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 ## Limitations
 
-AdGuard proxy ayarlarını yapılandırdıktan sonra bile belirli trafiğin giden proxy üzerinden yönlendirilmesini engelleyebilecek bir faktör vardır. Uygulamanın kendisini trafiği AdGuard üzerinden gönderecek şekilde ayarlamazsanız bu durumla karşılaşabilirsiniz. Bunu yapmak için **Uygulama yönetimi** öğesine ilerlemeniz, uygulamayı seçmeniz ve **Trafiği AdGuard üzerinden yönlendir** öğesini açmanız gerekir.
+However, at least one factor may prevent certain traffic from being routed through the outbound proxy, even after configuring the AdGuard proxy settings. That would be if the app itself isn't configured to send its traffic through AdGuard. Bunu yapmak için **Uygulama yönetimi** öğesine ilerlemeniz, uygulamayı seçmeniz ve **Trafiği AdGuard üzerinden yönlendir** öğesini açmanız gerekir.

@@ -35,4 +35,4 @@ La section Historique des achats affiche toutes les licences que vous avez déj�
 
 ## Contacter l'assistance
 
-L'onglet Assistance contient des liens utiles pour vous aider à résoudre des problèmes ou à trouver des réponses à vos questions sur les produits AdGuard. Ils sont divisés en six sections : FAQ, Envoyer un rapport de bug/une demande de fonctionnalité, Signaler un blocage incorrect, Contacter le support, Base de connaissances et Discuter.
+L'onglet Assistance contient des liens utiles pour vous aider à résoudre des problèmes ou à trouver des réponses à vos questions sur les produits AdGuard. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge Base, and Discuss.

@@ -13,7 +13,7 @@ sidebar_position: 1
 
 3. _개발자 모드_를 활성화합니다.
 
-   ![Developer mode \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
+   ![개발자 모드 \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
 
 4. `background.html`을 클릭합니다.
 
@@ -53,11 +53,11 @@ sidebar_position: 1
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/browser-extension.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard는 사용자의 개인정보를 보호하기 위해 최선을 다하고 있습니다. 당사는 [개인정보취급방침](https://adguard.com/privacy/browser-extension.html)을 준수하며 사용자에 대한 어떠한 개인정보도 수집하지 않습니다. 지원팀에 로그를 보내기 전에 파일에 전달하고 싶지 않은 추가 정보가 포함되어 있는지 확인하세요. 이러한 정보가 포함되어 있는 경우, 먼저 삭제하는 것이 좋습니다.
 
 :::
 
-Now that you have collected the logs, please follow these steps to submit them to our development team:
+로그를 저장했다면, 다음 단계에 따라 개발팀에 제출해 주세요.
 
-1. Report the bug on [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
-2. Send your archive with logs and playback time to `devteam@adguard.com` and add a link to your GitHub issue. You can also upload the archive to Google Drive and add the link to it instead of attaching the file.
+1. [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose)에 버그를 제보하세요.
+2. 로그와 재생 시간이 포함된 ZIP 파일을 `devteam@adguard.com`로 보내고 GitHub 이슈에 링크를 추가합니다. 파일을 첨부하는 대신 Google 드라이브에 ZIP 파일을 업로드하고 링크를 추가할 수도 있습니다.

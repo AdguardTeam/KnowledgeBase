@@ -13,7 +13,7 @@ O módulo de proteção DNS pode ser acessado tocando na guia _Proteção_ (segu
 
 :::tip
 
-A proteção DNS funciona de maneira diferente do bloqueio normal de anúncios e rastreadores. [Aprenda mais sobre o assunto e sobre como ela funciona em um artigo dedicado](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
+A proteção DNS funciona de maneira diferente do bloqueio normal de anúncios e rastreadores. You can [learn more about it and how it works from a dedicated article](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
 
 :::
 

@@ -3,10 +3,10 @@ title: AdGuard翻訳プログラム
 sidebar_position: 1
 ---
 
-> **免責事項:** AdGuardの翻訳に関するご質問は、 [translate@adguard.com](mailto:translate@adguard.com) にメールを送るか、もしくは [Telegramチャット](https://t.me/joinchat/UVYTLcHbr8JmOGIy) に参加してください。
+You can ask us any questions about translating AdGuard by sending an email to [translate@adguard.com](mailto:translate@adguard.com) or by joining our [Telegram chat](https://t.me/joinchat/UVYTLcHbr8JmOGIy).
 
-翻訳に関しては、AdGuard は常にボランティアの方々に大変お世話になっております。
+When it comes to translations, we at AdGuard always heavily rely on volunteers.
 
-現在、私たちの製品の翻訳管理には、[Crowdinプラットフォーム](https://crowdin.com/)を使用しています。 そこは、AdGuard製品の翻訳に貢献してくれる方々のための場でもあるのです。
+We now use the [Crowdin platform](https://crowdin.com/) to manage translations of our products. So this is the place for anyone who wants to contribute to AdGuard by translating any of our products.
 
-AdGuardの翻訳を手伝ってくれるボランティアの皆様の一員になりたい方は、 [翻訳者になる方法](../become-translator)と[ボランティアとの協力方法](../rewards)を読んでください。
+If you want to be among the volunteers who help us translate AdGuard, please read the information on [how to become our translator](../become-translator) and [how we collaborate with them](../rewards).
