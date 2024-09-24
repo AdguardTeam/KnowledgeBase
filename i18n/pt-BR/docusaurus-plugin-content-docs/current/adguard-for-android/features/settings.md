@@ -83,7 +83,7 @@ Para gerenciar o tráfego criptografado, o AdGuard instala seu certificado CA no
 
 Nas versões mais antigas do Android, o certificado é instalado automaticamente. No Android 11 e posterior, você precisa instalá-lo manualmente. [Instruções de instalação](/adguard-for-android/solving-problems/manual-certificate/)
 
-O certificado CA no armazenamento do usuário é suficiente para filtrar o tráfego HTTPS em navegadores e alguns aplicativos. No entanto, existem aplicativos que confiam apenas nos certificados do armazenamento do sistema. Para filtrar o tráfego HTTPS lá, você precisa instalar o certificado CA do AdGuard no armazenamento do sistema. [Instruções](/adguard-for-android/resolvendo-problems/https-certificate-for-rooted/)
+O certificado CA no armazenamento do usuário é suficiente para filtrar o tráfego HTTPS em navegadores e alguns aplicativos. No entanto, existem aplicativos que confiam apenas nos certificados do armazenamento do sistema. Para filtrar o tráfego HTTPS lá, você precisa instalar o certificado CA do AdGuard no armazenamento do sistema. [Instruções](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
 ##### Aplicativos filtrados por HTTPS
 
