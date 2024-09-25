@@ -72,7 +72,7 @@ Here's how a rule with a basic modifier is converted to a declarative rule:
 
 is converted to
 
-```bash
+```json
 [
     {
         "id": 1,
