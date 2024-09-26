@@ -66,33 +66,33 @@ If this limit is exceeded, only **5,000 converted rules** will be applied in the
 
 Here's how a rule with a basic modifier is converted to a declarative rule:
 
-    ```bash
-    ||example.org^$script,third-party,domain=example.com
-    ```
+```adblock
+||example.org^$script,third-party,domain=example.com
+```
 
 is converted to
 
-    ```bash
-    [
-        {
-            "id": 1,
-            "action": {
-                "type": "block"
-            },
-            "condition": {
-                "urlFilter": "||example.org^",
-                "domainType": "thirdParty",
-                "initiatorDomains": [
-                    "example.com"
-                ],
-                "resourceTypes": [
-                    "script"
-                ]
-            },
-            "priority": 302
-        }
-    ]
-    ```
+```json
+[
+    {
+        "id": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "||example.org^",
+            "domainType": "thirdParty",
+            "initiatorDomains": [
+                "example.com"
+            ],
+            "resourceTypes": [
+                "script"
+            ]
+        },
+        "priority": 302
+    }
+]
+```
 
 More examples can be found on [GitHub][github-declarative-converter-examples].
 
