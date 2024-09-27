@@ -1,5 +1,5 @@
 ---
-title: AdGuard and AdGuard Pro
+title: AdGuard и AdGuard Pro
 sidebar_position: 5
 ---
 
@@ -9,8 +9,8 @@ sidebar_position: 5
 
 :::
 
-If you look for AdGuard in the App Store, you'll find two apps — [AdGuard](https://itunes.apple.com/app/id1047223162) and [AdGuard Pro](https://itunes.apple.com/app/id1126386264). Они созданы для блокировки рекламы и трекинга в Safari, в других браузерах и приложениях, а также для управления DNS-фильтрацией.
+Если вы введёте «AdGuard» в поиске App Store, вы найдёте два приложения — [AdGuard](https://itunes.apple.com/app/id1047223162) и [AdGuard Pro](https://itunes.apple.com/app/id1126386264). Они созданы для блокировки рекламы и трекинга в Safari, в других браузерах и приложениях, а также для управления DNS-фильтрацией.
 
-Не дайте разным названиям себя обмануть, оба приложения одинаково блокируют рекламу на айфонах и айпадах. They used to differ in functionality due to the changing App Store review guidelines, but now these two apps are [basically the same](https://adguard.com/en/blog/updating-adguard-pro-for-ios.html).
+Оба приложения одинаково блокируют рекламу на iPhone и iPad. Раньше у них были разные функции из-за политики App Store, но [сейчас эти приложения идентичны](https://adguard.com/ru/blog/updating-adguard-pro-for-ios.html).
 
-If you have purchased AdGuard premium, there is no need to get AdGuard Pro, and vice versa.
+Если вы купили AdGuard Premium, вам не нужно покупать AdGuard Pro, и наоборот.

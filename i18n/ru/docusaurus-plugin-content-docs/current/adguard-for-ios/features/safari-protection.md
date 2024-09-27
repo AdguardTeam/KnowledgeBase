@@ -15,7 +15,7 @@ sidebar_position: 1
 
 Все блокировщики контента, их статусы, используемые на данный момент фильтры и общее количество правил фильтрации можно найти на соответствующем экране в _Расширенных настройках_ (нажмите на иконку шестерёнки в правом нижнем углу → _Общие_ → _Расширенные настройки_ → _Блокировщики контента_).
 
-![Блокировщики контента \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
+![Блокировщики контента \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_ru.jpeg)
 
 :::tip
 
@@ -29,7 +29,7 @@ sidebar_position: 1
 
 Фильтры сгруппированы в тематические категории. Чтобы увидеть полный список категорий (не путать с блокировщиками контента), откройте раздел _Защита_, нажав на изображение щита внизу экрана, затем выберите _Защита Safari_ → _Фильтры_.
 
-![Группы фильтров \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
+![Группы фильтров \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_ru.jpeg)
 
 Всего категорий восемь, каждая объединяет несколько фильтров, служащих общей цели. Например, они блокируют рекламу, виджеты социальных сетей, уведомления о cookie или защищают пользователя от мошенников. Чтобы вам было легче решить, какие фильтры вам подходят, читайте их описания и ориентируйтесь по меткам (`ads`, `privacy`, `recommended` и т. д.).
 
@@ -47,7 +47,7 @@ sidebar_position: 1
 
 Узнайте, как создавать пользовательские фильтры рекламы](/general/ad-filtering/create-own-filters). Но обратите внимание, что не все они будут работать в Safari на iOS.
 
-![Экран пользовательских правил \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
+![Пользовательские правила \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/ios/rules_ru.jpg)
 
 ### Белый список {#allowlist}
 

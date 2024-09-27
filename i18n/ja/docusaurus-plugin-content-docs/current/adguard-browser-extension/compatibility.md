@@ -1,5 +1,5 @@
 ---
-title: Compatibility with the standalone app
+title: スタンドアロンAdGuardアプリとの互換性
 sidebar_position: 4
 ---
 
@@ -9,16 +9,16 @@ sidebar_position: 4
 
 :::
 
-While AdGuard Browser Extension can block ads in browsers, [AdGuard standalone programs](/adguard-browser-extension/comparison-standalone) filter all the traffic on your device, including from browsers and apps.
+AdGuard ブラウザ拡張機能はブラウザ内の広告をブロックできますが、[AdGuard スタンドアロンアプリ](/adguard-browser-extension/comparison-standalone)はブラウザやアプリからのトラフィックも含め、デバイス上のすべてのトラフィックをフィルタリングできます。
 
-If you decide to install both the extension and the standalone program on your PC, you may encounter some compatibility issues. The problem is that in some cases the application and the extension may interfere with each other. Some websites will no longer be protected by the desktop program and will only be protected by the extension, which has fewer options. Also, filtering may work incorrectly for some websites. Therefore, we don't recommend using the extension together with the application.
+拡張機能とスタンドアロンアプリの両方をPCにインストールする場合、互換性の問題が発生する可能性があります。 問題は、場合によってはアプリケーションと拡張機能が干渉しあう可能性があることです。 一部のウェブサイトはデスクトップアプリでは保護されなくなり、オプションの少ない拡張機能でのみ保護されるようになってしまいます。 また、ウェブサイトによってはフィルタリングが正しく機能しない場合があります。 そのため、アプリと一緒に拡張機能を使用することはお勧めしません。
 
-If you have the desktop version of AdGuard installed on your PC, it is better to use AdGuard Browser Assistant instead of the extension.
+デスクトップ版のAdGuardがPCにインストールされている場合は、拡張機能の代わりにAdGuard ブラウザアシスタントを使用することをお勧めします。
 
 ## AdGuard Browser Assistant
 
 ![AdGuard Browser Assistant \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 
-AdGuard Browser Assistant is a browser extension that works and feels just like AdGuard Browser Extension, but it's much lighter and doesn't interfere with the desktop apps. You can [read more about Browser Assistant for Windows](/adguard-for-windows/browser-assistant) or [Mac](/adguard-for-mac/features/browser-assistant), or [download it from our website](https://adguard.com/adguard-assistant/overview.html).
+AdGuard ブラウザアシスタントは、AdGuard ブラウザ拡張機能と同じように機能し、同じように感じられるブラウザ拡張機能ですが、はるかにより軽量で、デスクトップ版AdGuardアプリに干渉しません。 役に立つリンク： [Windows版ブラウザアシスタントの詳細はこちら](/adguard-for-windows/browser-assistant)、[Mac版はこちら](/adguard-for-mac/features/browser-assistant)、[AdGuardホームページからダウンロードするにはこちら](https://adguard.com/adguard-assistant/overview.html)
 
-AdGuard Browser Assistant is available in all major browsers.
+AdGuard ブラウザアシスタントは、すべての主要ブラウザで利用できます。

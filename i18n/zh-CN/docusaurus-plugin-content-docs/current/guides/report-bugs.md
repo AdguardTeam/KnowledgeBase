@@ -28,7 +28,7 @@ sidebar_position: 4
 
 ### 如何收集日志记录
 
-Read about collecting logs in dedicated articles for each platform.
+请在描述相应操作系统的文章上了解如何收集日志记录。
 
 ## 为错误报告或功能请求投票
 

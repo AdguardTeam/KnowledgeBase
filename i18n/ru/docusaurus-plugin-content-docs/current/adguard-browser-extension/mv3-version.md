@@ -1,81 +1,77 @@
 ---
-title: AdGuard Browser Extension for Chrome MV3
+title: Браузерное расширение AdGuard MV3 для Chrome
 sidebar_position: 5
 ---
 
-As MV2 extensions are being phased out in the Chrome Web Store, Chrome users may need to switch to MV3 extensions that are compatible with Chrome’s new API Manifest V3. Our thoughts on this topic are extensively discussed on [our blog](https://adguard.com/en/blog/tag/manifest-v3.html).
+Поскольку интернет-магазин Chrome скоро совсем перестанет поддерживать MV2-расширения, пользователям рекомендуется перейти на MV3-расширения, совместимые с новым API Chrome Manifest V3. Что мы думаем о новом API Chrome, мы не раз рассказывали [в блоге](https://adguard.com/ru/blog/tag/manifest-v3.html).
 
-Our MV3 extension effectively blocks ads and trackers while seamlessly managing social widgets, banners, and video ads. Most users will not notice any operational differences, but there are some limitations and changes to be aware of.
+Наше MV3-расширение эффективно блокирует рекламу и трекеры, а также убирает виджеты социальных сетей, баннеры и видеорекламу. Большинство пользователей не заметят переход на MV3, но о некоторых ограничениях и изменениях следует рассказать.
 
-## Where to find our extensions
+## Где найти наши расширения
 
-The **MV3 version** will soon replace our old extension in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
+**MV3-расширение** заменило наше старое расширение [в интернет-магазине Chrome](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
 
-The **beta version of MV3** will still be available in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
+**Бета-версия MV3** по-прежнему доступна [в интернет-магазине Chrome](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
 
-The old beta extension will be renamed to [**AdGuard Ad Blocker MV2**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) and will be supported until Google phases it out.
+Бета-версия старого расширения будет переименована в [**AdGuard Антибаннер**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) и будет поддерживаться до тех пор, пока Google это позволяет.
 
-## Main changes in features and settings
+## Основные изменения в функциях и настройках
 
-- **No auto and manual filter updates.** The options _Auto-update filters_ and _Check filters update_ are no longer available in the _Filters_ tab. Since some of the rules are now applied in DNR form, we can’t update filters on request, only through the full process of updating the extension along with the review in the stores.
+- **Нет автоматического и ручного обновления фильтров.** Во вкладке _Фильтры_ больше нет опций _Автообновление фильтров_ и _Проверить обновления фильтров_. Поскольку некоторые правила теперь применяются с помощью DNR, мы не можем обновлять фильтры по запросу, только через полное обновление расширения в сторах.
 
-- **Filtering log**
+- **Журнал фильтрации**
 
-  ![Filtering log \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+  ![Журнал фильтрации \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules).
+  Из-за ограничений declarativenetRequest мы не можем точно показать, какое правило сработало, но покажем «предполагаемое правило» на основе данных нашего движка. Для получения точной информации можно самостоятельно установить «распакованное» расширение в браузере. Как это сделать, вы узнаете [в другой статье](/adguard-browser-extension/solving-problems/debug-rules/).
 
-- _Tracking protection_ (formerly known as _Stealth mode_)
+- _Защита от трекинга_
 
-  ![Tracking protection \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+  ![Защита от трекинга \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
 
-  There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
+  Здесь больше нет раздела _Файлы cookie_, а также _Самоуничтожение куки сайта_ и _Самоуничтожение сторонних куки_ отсутствуют, поскольку мы не можем устанавливать время жизни файлов cookie с помощью декларативных правил.
 
-- _Phishing & malware protection_ is no longer available in the general settings. To protect yourself from malicious websites and scams, enable the appropriate _Security_ filters in the _Filters_ tab.
+- В основных настройках больше нет вкладки _Защита от фишинговых и вредоносных сайтов_. Чтобы защитить себя от таких сайтов, включите соответствующие фильтры _Безопасности_ на вкладке _Фильтры_.
 
-  ![Security](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![Безопасность \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## Ограничения
 
-### Maximum number of rules and filters
+### Максимальное количество правил и фильтров
 
-Manifest V3 imposes limits on static and regex rules per extension. Users may receive notifications when these limits are exceeded.
+Manifest V3 накладывает ограничения на статические правила и правила с регулярными выражениями для каждого расширения. Пользователи могут увидеть уведомления, если эти ограничения превышены.
 
-![Rule limits \*border](https://cdn.adtidy.org/content/blog/new/rulelimits.png)
+![Лимиты правил \*border](https://cdn.adtidy.org/content/blog/new/rulelimits.png)
 
-![Too many extensions \*border](https://cdn.adtidy.org/content/blog/new/other_extension.png)
+![Слишком много расширений \*border](https://cdn.adtidy.org/content/blog/new/other_extension.png)
 
-Basically, Manifest V3 divides rules into static (built-in) and dynamic, with strict limits in place.
+Manifest V3 делит правила на статические (встроенные) и динамические, и для всех действуют строгие ограничения.
 
-**Static rules:** minimum **30,000** rules per extension, with a cumulative limit of **330,000** for all extensions installed by a single user.
+**Статические правила:** минимум **30 000** правил на расширение, с общим лимитом **330 000** для всех расширений, установленных одним пользователем.
 
-For regex rules, the limit is set at **1,000 per extension**.
+Для правил с регулярными выражениями лимит составит **1000 правил на расширение**.
 
-The maximum number of simultaneously enabled filters is **50**.
+Максимальное количество одновременно включенных фильтров — **50**.
 
-**Dynamic rules:** a strict cap of **5,000** rules is imposed, which includes a maximum of 1,000 regex rules.
+**Динамические правила:** установлено строгое ограничение в **5000** правил, включая не более 1000 правил с регулярными выражениями.
 
-If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first allowlist, then user rules, and finally — custom filters.
+Если этот лимит превышен, будут применены только **5000 преобразованных правил** в следующем порядке: сначала правила Белого списка, затем пользовательские правила и только потом Собственные фильтры.
 
-> **Converted rules** are rules that have been transformed
-> to [DNR format] using the [declarative converter][github-declarative-converter].
-> During this conversion process, some rules may overwrite others (`$badfilter`), some may be combined (`$removeparam`),
-> resulting in a list of rules with a slightly different order.
+> **Преобразованные правила** — это правила, которые были преобразованы
+> в \[формат DNR] с помощью [декларативного конвертера][github-declarative-converter].
+> В ходе преобразования некоторые правила могут отменять другие (`$badfilter`), а некоторые могут объединиться (`$removeparam`), в результате чего порядок правил изменится.
 >
-> From this list of converted rules, we will only use 5,000 rules. The rest of them will be displayed in the editor, but not applied.
+> Из этого списка преобразованных правил будут использоваться только 5000 правил. Остальные будут отображены в редакторе, но применяться не будут.
 
-Here's how a rule with a basic modifier is converted to a declarative rule:
+Вот пример того, как правило с базовым модификатором преобразуется в декларативное правило:
 
-````
-```bash
+```adblock
 ||example.org^$script,third-party,domain=example.com
 ```
-````
 
-is converted to
+преобразуется в
 
-````
-```bash
+```json
 [
     {
         "id": 1,
@@ -96,16 +92,15 @@ is converted to
     }
 ]
 ```
-````
 
-More examples can be found on [GitHub][github-declarative-converter-examples].
+Больше примеров можно найти [на GitHub][github-declarative-converter-examples].
 
-### Network rule modifiers
+### Модификаторы сетевых правил
 
-Network rule modifiers have limitations: some of them cannot be implemented in MV3, or can only be implemented with restrictions.
+Применение модификаторов сетевых правил тоже изменилось: некоторые вообще не могут быть реализованы в условиях MV3, а некоторые работают с ограничениями.
 
-More details about the limitations can be found on [GitHub][github-declarative-converter].
-For further information on modifiers, please refer to our [Knowledge base](/general/ad-filtering/create-own-filters).
+Более подробную информацию об ограничениях можно найти [на GitHub][github-declarative-converter].
+Добавили информацию об этих модификаторах [в Базу знаний](/general/ad-filtering/create-own-filters).
 
 [DNR format]: https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest#build-rules
 

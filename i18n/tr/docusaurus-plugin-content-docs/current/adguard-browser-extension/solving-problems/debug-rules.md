@@ -69,7 +69,7 @@ These instructions are also meant for problematic cases where you want to modify
 
 2. _Paketlenmemiş öğe yükle_ öğesine tıklayın:
 
-   ![Load unacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+   ![Load unpacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
 3. Select the extension directory and click `Select`:
 
