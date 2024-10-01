@@ -101,9 +101,9 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 
 #### Compatibility
 
-##### Metadata block
+#### Metadata block
 
-###### Supported properties
+#### Supported properties
 
 ```text
 @name
@@ -133,7 +133,7 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 @icon64URL
 ```
 
-###### Unsupported properties
+#### Unsupported properties
 
 These properties will be simply ignored by AdGuard.
 
@@ -141,11 +141,11 @@ These properties will be simply ignored by AdGuard.
 @unwrap
 ```
 
-##### Supported GM functions
+#### Supported GM functions
 
 AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
 
-###### Values
+#### Values
 
 :::note
 
