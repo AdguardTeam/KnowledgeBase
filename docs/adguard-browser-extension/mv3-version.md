@@ -9,7 +9,7 @@ Our MV3 extension effectively blocks ads and trackers while seamlessly managing 
 
 ## Where to find our extensions
 
-The **MV3 version** will soon replace our old extension in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
+The **MV3 version** has replaced our old extension in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
 
 The **beta version of MV3** will still be available in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
 
@@ -23,7 +23,7 @@ The old beta extension will be renamed to [**AdGuard Ad Blocker MV2**](https://c
 
     ![Filtering log *border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-    Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules).
+    Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules/).
 
 - *Tracking protection* (formerly known as *Stealth mode*)
 
@@ -33,7 +33,7 @@ The old beta extension will be renamed to [**AdGuard Ad Blocker MV2**](https://c
 
 - *Phishing & malware protection* is no longer available in the general settings. To protect yourself from malicious websites and scams, enable the appropriate *Security* filters in the *Filters* tab.
 
-    ![Security](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+    ![Security *border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## Limitations
 
@@ -66,33 +66,33 @@ If this limit is exceeded, only **5,000 converted rules** will be applied in the
 
 Here's how a rule with a basic modifier is converted to a declarative rule:
 
-    ```bash
-    ||example.org^$script,third-party,domain=example.com
-    ```
+```adblock
+||example.org^$script,third-party,domain=example.com
+```
 
 is converted to
 
-    ```bash
-    [
-        {
-            "id": 1,
-            "action": {
-                "type": "block"
-            },
-            "condition": {
-                "urlFilter": "||example.org^",
-                "domainType": "thirdParty",
-                "initiatorDomains": [
-                    "example.com"
-                ],
-                "resourceTypes": [
-                    "script"
-                ]
-            },
-            "priority": 302
-        }
-    ]
-    ```
+```json
+[
+    {
+        "id": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "||example.org^",
+            "domainType": "thirdParty",
+            "initiatorDomains": [
+                "example.com"
+            ],
+            "resourceTypes": [
+                "script"
+            ]
+        },
+        "priority": 302
+    }
+]
+```
 
 More examples can be found on [GitHub][github-declarative-converter-examples].
 

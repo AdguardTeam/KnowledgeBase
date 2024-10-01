@@ -69,7 +69,7 @@ These instructions are also meant for problematic cases where you want to modify
 
 1. Click *Load unpacked*:
 
-    ![Load unacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+    ![Load unpacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
 1. Select the extension directory and click `Select`:
 
