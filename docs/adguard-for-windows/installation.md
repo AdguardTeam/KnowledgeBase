@@ -112,4 +112,4 @@ Besides running the advanced uninstaller in its user-interactive mode, you can a
 - `/console` runs the uninstaller in console mode, without the interactive UI. All the command-line parameters below will be ignored if the `/console` mode is not activated
 - `/adblocker` runs the uninstaller to uninstall AdGuard for Windows
 - `/advanced` forces the uninstaller to run in *Advanced mode*
-- `/settings` forces the Uninstaller to remove user settings along with the application
+- `/settings` forces the uninstaller to remove user settings along with the application
