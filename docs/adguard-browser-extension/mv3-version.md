@@ -55,7 +55,7 @@ The maximum number of simultaneously enabled filters is **50**.
 
 **Dynamic rules:** a strict cap of **5,000** rules is imposed, which includes a maximum of 1,000 regex rules.
 
-If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first allowlist, then user rules, custom filters, and finally — Quick Fixes rules.
+If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first allowlist, then user rules, custom filters, and finally — Quick Fixes filter.
 
 > **Converted rules** are rules that have been transformed
 > to [DNR format] using the [declarative converter][github-declarative-converter].
