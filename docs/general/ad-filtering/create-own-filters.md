@@ -2384,8 +2384,6 @@ Rules with `$removeheader` modifier are supported by AdGuard for Windows, AdGuar
 
 Rules with `$removeparam` modifier are intended to strip query parameters from requests' URLs. Please note that such rules are only applied to `GET`, `HEAD`, `OPTIONS`, and sometimes `POST` requests.
 
-`$removeparam` rules that do not have any [content type modifiers](#content-type-modifiers) will match only requests where content type is `document`.
-
 **Syntax**
 
 **Basic syntax**
@@ -2551,10 +2549,11 @@ With these rules, specified UTM parameters will be removed from any request save
 
 :::caution Restrictions
 
-- Rules with `$removeparam` modifier can be used [**only in trusted filters**](#trusted-filters).
-- `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers),
-[content-type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers.
-Rules with any other modifiers are considered invalid and will be discarded.
+1. Rules with `$removeparam` modifier can be used [**only in trusted filters**](#trusted-filters).
+1. `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers),
+  [content-type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers.
+  Rules with any other modifiers are considered invalid and will be discarded.
+1. `$removeparam` rules that do not have any [content type modifiers](#content-type-modifiers) will match only requests where content type is `document`.
 
 :::
 
