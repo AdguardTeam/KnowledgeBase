@@ -19,7 +19,7 @@ sidebar_position: 1
 
 ## カスタムフィルタ
 
-While the features of other filter groups are more or less self-explanatory, there is a group called _Custom_ that may raise additional questions.
+ほとんどのフィルタグループの機能は大体その名称から想像がつきますが、「_カスタム_」というグループについては疑問に思われるかもしれません。
 
 ![Custom filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
 

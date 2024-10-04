@@ -1,74 +1,74 @@
 ---
-title: How to install
+title: インストール方法
 sidebar_position: 3
 ---
 
 :::info
 
-この記事は、お使いのブラウザのみを保護する「AdGuard ブラウザ拡張機能」に関するものです。 To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事は、お使いのブラウザのみを保護する「AdGuard ブラウザ拡張機能」に関するものです。 デバイス全体を保護するには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
-## How to install AdGuard Browser Extension for Google Chrome or Chromium browsers
+## Google ChromeまたはChromiumベースブラウザに AdGuard ブラウザ拡張機能をインストールする方法
 
-Open the extension's page in [Chrome Web Store](https://agrd.io/extension_chrome) and click *Add to Chrome*.
+拡張機能のページを[Chromeウェブストア](https://agrd.io/extension_chrome)で開き、「*Chromeに追加*」をクリックします。
 
-![AdGuard Browser Extension in Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome.png)
+![ChromeウェブストアのAdGuardブラウザ拡張機能 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome.png)
 
-In the opened dialog box, click *Add extension*.
+開いたダイアログボックスで、「*拡張機能を追加*」をクリックします。
 
-![Dialog box in Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome1.png)
+![Chrome ウェブストアのダイアログボックス *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome1.png)
 
-## How to install AdGuard Browser Extension for Opera
+## OperaにAdGuardブラウザ拡張機能をインストールする方法
 
-Open the page [addons.opera.com](https://agrd.io/extension_opera).
+[addons.opera.com](https://agrd.io/extension_opera) を開きます。
 
-![AdGuard Browser Extension in Opera addons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_opera.png)
+![OperaアドオンのAdGuardブラウザ拡張機能 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_opera.png)
 
-Click *Add to Opera*.
+「*Operaに追加*」をクリックします。
 
-## How to install AdGuard Browser Extension for Firefox
+## FirefoxにAdGuardブラウザ拡張機能をインストールする方法
 
-Open the page [addons.mozilla.org](https://agrd.io/extension_firefox).
+[addons.mozilla.org](https://agrd.io/extension_firefox) を開きます。
 
-![AdGuard Browser Extension in Firefox add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_firefox.png)
+![FirefoxアドオンのAdGuardブラウザ拡張機能 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_firefox.png)
 
-Click *Add to Firefox*.
+「*Firefoxへ追加*」をクリックします。
 
-## How to install AdGuard Browser Extension for Yandex Browser
+## YandexブラウザにAdGuardブラウザ拡張機能をインストールする方法
 
-Click the browser settings button in the upper right corner of the browser, then choose *Add-ons* in the drop-down menu.
+ブラウザの右上にあるブラウザ設定ボタンをクリックし、ドロップダウンメニューから「*アドイン*」を選択します。
 
-Scroll down to find AdGuard, then click *Install*.
+下にスクロールしてAdGuardを見つけ、「*インストール*」をクリックします。
 
-![AdGuard Browser Extension in Yandex Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_yandex.png)
+![YandexアドオンのAdGuardブラウザ拡張機能 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_yandex.png)
 
-## How to install AdGuard Browser Extension for Microsoft Edge
+## Microsoft EdgeにAdGuardブラウザ拡張機能をインストールする方法
 
-Find AdGuard Browser Extension in the [Edge Add-ons store](https://agrd.io/extension_edge) and click *Get*.
+[Edgeアドオンストア](https://agrd.io/extension_edge)でAdGuardブラウザ拡張機能を見つけ、「*インストール*」をクリックします。
 
-![AdGuard Browser Extension in Edge Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge.png)
+![EdgeアドオンのAdGuardブラウザ拡張機能 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge.png)
 
-In the opened dialog window, press *Add extension*.
+開いたダイアログボックスで、「*拡張機能の追加*」をクリックします。
 
-![Edge dialog window *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge1.png)
+![Edgeダイアログウィンドウ *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge1.png)
 
-Alternatively, you can install AdGuard Browser Extension for Edge from the [Chrome Web Store](https://agrd.io/extension_chrome). Open its web page in your Edge browser and select *Allow extensions from other stores* on the banner at the top of the page.
+別の方法として、Edge向けのAdGuardブラウザ拡張機能を[Chromeウェブストア](https://agrd.io/extension_chrome)からインストールすることもできます。 EdgeブラウザでストアのWebページを開き、ページ上部に表示されているバナーの「*他のストアからの拡張機能を許可する*」をクリックします。
 
-![Edge banner on the Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/edge_banner.jpg)
+![Chrome ウェブストアの Edge バナー *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/edge_banner.jpg)
 
-In the opened dialog box, click *Allow*.
+開いたダイアログボックスで、「*許可*」をクリックします。
 
-![Edge dialog box "Allow extensions from other web stores"](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_from_stores.jpg)
+![Edgeのダイアログボックス「他のストアからの拡張機能を許可する」](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_from_stores.jpg)
 
-Click *Add to Chrome*.
+「*Chromeに追加*」をクリックします。
 
-![Add to Chrome button *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_chrome.jpg)
+![Chromeにインストールボタン *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_chrome.jpg)
 
-In the opened dialog window, click *Add extension* to install AdGuard Browser Extension.
+開いたダイアログボックスで、「*拡張機能の追加*」をクリックすることでAdGuardブラウザ拡張機能をインストールできます。
 
-![Add to Edge button](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_edge.jpg)
+![Edgeに追加ボタン](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_edge.jpg)
 
-## How to install AdGuard Browser Extension for Safari
+## SafariにAdGuardブラウザ拡張機能をインストールする方法
 
-AdGuard for Safari is not a browser extension in a common sense. You can read more about it in a [dedicated article](/adguard-for-safari/features/general). Or you can [download the installation file](https://agrd.io/safari_release) directly from this page.
+AdGuard for Safari は、一般的な意味での拡張機能ではありません。 詳細については、[こちらの記事](/adguard-for-safari/features/general)を参照してください。 または、このページから[直接インストールファイルをダウンロード](https://agrd.io/safari_release)することができます。

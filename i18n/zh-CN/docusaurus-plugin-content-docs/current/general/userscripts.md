@@ -4,105 +4,105 @@ sidebar_position: 5
 toc_max_heading_level: 4
 ---
 
-Userscripts (we also call them "extensions") are, de facto, miniprograms written in JavaScript. 用户脚本修改或扩展一个或多个网站的功能。 许多 AdGuard 用户已经熟悉 AdGuard 助手、弹窗拦截器和 AdGuard Extra 等用户脚本。
+用户脚本（我们也称之为「扩展」）实质上是用 JavaScript 编写的小程序。 用户脚本修改或扩展一个或多个网站的功能。 许多 AdGuard 用户已经熟悉 AdGuard 助手、弹窗拦截器和 AdGuard Extra 等用户脚本。
 
 :::note 支持的应用程序
 
-AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/features/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
+AdGuard 可作为用户脚本管理器以显著扩展网站功能。 用户可以在我们的三款产品中添加自定义脚本或管理现有脚本：[Windows版 AdGuard](/adguard-for-windows/features/extensions)、[Android版 AdGuard](/adguard-for-android/features/settings#userscripts) 和 [Mac版 AdGuard](/adguard-for-mac/features/extensions)。
 
 :::
 
-## Recommended AdGuard scripts
+## 推荐的 AdGuard 脚本
 
-These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you expose yourself to a certain risk, as some scripts may be harmful to your computer.
+AdGuard 开发人员创建这些用户脚本，我们可以保证它们有效且安全。 还有其他人开发创建的自定义脚本，我们认为这些脚本也很好，很可靠。要多了解这些脚本，请[向下滚动到下一部份](#top-picks)。 用户还可以在下面找到一些[流行的脚本网站](#more-userscripts)。请记住，只要您从未知来源下载用户脚本，就会面临一定的风险，因为某些脚本可能对您的计算机造成危害。
 
 ### AdGuard Extra
 
-An extension that blocks ads in difficult cases when the usual filter-based approach is not enough. AdGuard Extra comes pre-installed with all premium AdGuard versions, so you don't need to do anything to enable it. However, if you want to use it alongside AdGuard Browser Extension or any other ad blocker, you'll need to use an additional extension. Learn more about this userscript and how to install it on [GitHub](https://github.com/AdguardTeam/AdGuardExtra).
+该扩展可以在通常的过滤方法无法解决问题的情况下屏蔽广告。 AdGuard Extra 预装在所有 AdGuard 高级版本中，因此，无需安装其他软件。 不过，如果有用户想将 AdGuard Extra 与 AdGuard 浏览器扩展或其他广告拦截器一起使用，需要使用一个额外的扩展。 在 [GitHub](https://github.com/AdguardTeam/AdGuardExtra) 上了解有关此用户脚本的更多信息，以及如何安装它。
 
 ![AdGuard Extra](https://cdn.adtidy.org/content/kb/ad_blocker/general/adguard-extra.png)
 
-### AdGuard Popup Blocker
+### AdGuard 弹窗拦截器
 
-The name speaks for itself: it blocks pop-ups — one of the most annoying types of ads on web pages. Learn more about this userscript, its key features, and how to install it on [GitHub](https://github.com/AdguardTeam/PopupBlocker).
+AdGuard 弹窗拦截器能屏蔽最恼人的广告类型之一，即弹出式广告。 在 [GitHub](https://github.com/AdguardTeam/PopupBlocker) 上了解有关此用户脚本、其主要功能以及安装方法的更多信息。
 
-![AdGuard Popup Blocker](https://cdn.adtidy.org/content/kb/ad_blocker/general/popup-blocker-installation.png)
+![AdGuard 弹窗拦截器](https://cdn.adtidy.org/content/kb/ad_blocker/general/popup-blocker-installation.png)
 
-### AdGuard Assistant (legacy version)
+### AdGuard 助手（旧版）
 
-This custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.).
+这是一款自定义扩展，旨在直接在浏览器页面上管理过滤（手动屏蔽、排除网站等等）。
 
 :::note
 
-This version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). But the legacy Assistant might be of help if there is no Browser Assistant for your browser. If this is your case, your can learn how to install AdGuard Assistant on [GitHub](https://github.com/AdguardTeam/AdguardAssistant).
+这是一个过时的助手版本，在较新的系统上使用它没有意义，因为它早已被[新版本的浏览器助手](https://adguard.com/adguard-assistant/overview.html)所取代。 不过，如果您的浏览器没有浏览器助手，旧版助手可能会有所帮助。 如果是这种情况，请在 [GitHub](https://github.com/AdguardTeam/AdguardAssistant) 上了解如何安装 AdGuard 助手。
 
 :::
 
-### Disable AMP
+### 禁用 AMP
 
-A script that is only pre-installed in AdGuard for Android. It disables AMP (Accelerated Mobile Pages) on the Google search results page. Learn more about this userscript and how to install it on [GitHub](https://github.com/AdguardTeam/DisableAMP).
+这是一个仅在 Android 版 AdGuard 中预安装的脚本。 它禁用 Google 搜索结果页面上的 AMP（加速移动页面）。 在 [GitHub](https://github.com/AdguardTeam/DisableAMP) 上了解有关此用户脚本的更多信息，以及如何安装它。
 
-![Disable AMP](https://cdn.adtidy.org/content/kb/ad_blocker/general/disable-amp-installation.png)
+![禁用 AMP](https://cdn.adtidy.org/content/kb/ad_blocker/general/disable-amp-installation.png)
 
-## Top picks outside AdGuard{#top-picks}
+## AdGuard 以外的最佳脚本选择{#top-picks}
 
-These userscripts are not developed by AdGuard and therefore we can't give a 100% guarantee that they are safe and/or work at all times. However, in our experience they deserve a recommendation as they've all earned their good reputation.
+以下用户脚本并非由 AdGuard 开发，因此我们无法 100% 保证其安全和/或始终有效。 不过，根据我们的经验，这些脚本值得推荐，因为它们都赢得了良好的声誉。
 
 ### Don't track me Google
 
-This script removes Google's tracking feature from the links in Google search results. It speeds up the loading of search results and allows you to right-click or tap to copy the link URL.
+该脚本移除 Google 搜索结果中链接的 Google 跟踪功能。 它加快搜索结果的加载速度，允许用户右键单击或点击复制链接 URL。
 
-Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me-google). This userscript can be downloaded from [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) and installed in any AdGuard CoreLibs-based app.
+[在 GitHub 上](https://github.com/Rob--W/dont-track-me-google)可以查看其源代码。 该用户脚本可以从 [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) 上下载并安装在任何基于 AdGuard CoreLibs 的应用程序中。
 
 ### microShield
 
-A userscript for people who visit Korean websites and some international websites. The microShield userscript blocks Ad-Shield advertisement and anti-adblock. Its original source code is available at [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) and [AdShield Defuser](https://github.com/seia-soto/adshield-defuser). This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about microShield and how to install it on [GitHub](https://github.com/List-KR/microShield).
+这是一个可以用于访问韩国和一些国际网站的用户定制的脚本。 microShield 用户脚本可以阻止 Ad-Shield 广告和反广告拦截器。 在 [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) 和 [AdShield Defuser](https://github.com/seia-soto/adshield-defuser) 网站上可以查看其原始源代码。 该用户脚本可以安装在基于 AdGuard CoreLibs 的应用程序、Violentmonkey、Tampermonkey 和 [quoid/userscripts](https://github.com/quoid/userscripts) 中。 在 [GitHub](https://github.com/List-KR/microShield) 上了解有关 microShield 的更多信息以及如何安装它。
 
-## Where can you get more userscripts?{#more-userscripts}
+## 在哪里查看更多自定义脚本{#more-userscripts}
 
-As userscripts are mainly created by enthusiasts, you should be cautious when installing them. Any script from an unknown source carries a potential risk. Yet, there is a great variety of interesting scripts that, if installed carefully and responsibly, can really make using some websites more convenient.
+由于用户脚本主要由爱好者创建，因此在安装时应小心谨慎。 任何来源不明的脚本都有潜在风险。 不过，也有大量有用的脚本。如果认真负责地选择，确实可以使网页更易于浏览。
 
-Here we will describe some of the most popular userscript catalogs.
+下面我们将介绍一些最常用的用户脚本。
 
 ### Userscript.Zone
 
-[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high credibility, since only scripts from moderated pages are displayed.
+[Userscript.Zone](https://www.userscript.zone) 是一个可以通过输入匹配的 URL 或域名来搜索用户脚本的网站。 该网站使用方便，可信度高，因为它只显示经过审核的网页脚本。
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) is a userscript catalog by Stylish creators. The scripts in this catalog undergo moderation, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/) 是由 Stylish 创建者创建的用户脚本目录。 本目录中的脚本都经过审核。
 
 ### OpenUserJS.org
 
-[OpenUserJS.org](https://openuserjs.org/) is an open source userscript catalog written in nodeJS. It doesn't have moderation so stay alert to any suspicious scripts.
+[OpenUserJS.org](https://openuserjs.org/) 是一个以 nodeJS 编写的开源用户脚本目录。 其没有审核功能，因此请对任何可疑脚本保持警惕。
 
-### Community
+### 社区
 
-If you like the idea of personifying your browser with the help of userscripts, and you have any questions, you can ask them on one of these websites:
+如您想在用户脚本的帮助下个性化您的浏览器但遇到问题，您可在以下网站进行询问：
 
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/userscripts)
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
 - [Reddit](https://www.reddit.com/r/userscripts/)
 
-## Development
+## 开发
 
-### Request license
+### 申请许可证
 
-If you are developing your own custom script and want to test how it works with AdGuard, request a beta license key for the app.
+如果您正在开发自己的自定义脚本，并希望测试它与 AdGuard 配合使用，请申请获得 Beta 测试版许可证密钥。
 
-To get it, please send an email to devteam@adguard.com with the following information:
+要获取许可证，请发送电子邮件至 devteam@adguard.com 并附上以下信息：
 
-**Subject:** Userscript author license request
+**主题：**创建用户脚本的许可证请求
 
-**Body:** Please tell us about the userscripts you are working on.
+**正文：**请告知我们您正在开发的用户脚本。
 
-Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK).
+[点击此处](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK)以发送邮件。
 
-### Compatibility
+### 兼容性
 
-#### Metadata block
+#### 元数据块
 
-##### Supported properties
+##### 支持的属性
 
 ```text
 @name
@@ -132,23 +132,23 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 @icon64URL
 ```
 
-##### Unsupported properties
+##### 不支持的属性
 
-These properties will be simply ignored by AdGuard.
+AdGuard 将忽略这些属性。
 
 ```text
 @unwrap
 ```
 
-#### Supported GM functions
+#### 支持的 GM 函数
 
-AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
+AdGuard 同时支持旧的 GM\_ 函数和使用 GM 对象的新 GM4 API。
 
-##### Values
+##### 数值
 
 :::note
 
-All listed old Greasemonkey functions are deprecated but still supported.
+所有列出的旧 Greasemonkey 函数都已过时，但仍受支持。
 
 :::
 
@@ -169,7 +169,7 @@ GM_addStyle
 GM_log
 ```
 
-[Here](https://wiki.greasespot.net/GM.info) you can find more information about Greasemonkey API.
+您可在[此处](https://wiki.greasespot.net/GM.info)找到关于 Greasemonkey API 的信息。
 
 ### 示例
 
@@ -210,17 +210,17 @@ GM_log
 )}();
 ```
 
-## Userstyles
+## 用户样式
 
-AdGuard products provide limited support for userstyles. `@var` and `@advanced` metadata tags are not supported, as well as any value of the `@preprocessor` metadata tag except `default`.
+AdGuard 对用户样式提供有限的支持。 `@var` 和 `@advanced` 元数据， 以及 `@preprocessor` （ `default` 除外）元数据标签不受支持。
 
-### Metadata
+### 元数据
 
-The metadata block is written using CSS-style comments, starting with `===UserStyle===` and ending with `===/UserStyle===`. All metadata tags that are supported for userscripts are also supported for userstyles, although some of them have no meaning and are ignored. `@var` and `@advanced` tags are not supported. The only supported value of the `@preprocessor` tag is `default`.
+元数据使用 CSS 样式的注释编写，以 `===UserStyle===` 开头，以 `===/UserStyle===` 结尾。 用户脚本支持的所有元数据也同样支持用户样式，但其中有些标记没有意义，会被忽略。 不支持 `@var` 和 `@advanced` 标签。 `@preprocessor` 标签唯一支持的值是 `default`。
 
-### Content
+### 内容
 
-The content of a userstyle is plain CSS with support for the [`@-moz-document` at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@document). The `media-document()` function is not supported. The userstyle will only be applied to pages that match one or more of the `@-moz-document` rules. If the userstyle does not contain any `@-moz-document` rules, it will not be applied.
+用户样式的内容是 CSS，支持 [`@-moz-document`](https://developer.mozilla.org/en-US/docs/Web/CSS/@document) 规则。 `media-document()` 函数不受支持。 用户样式仅适用于符合一个或多个 `@-moz-document` 规则的页面。 如果用户样式不包含任何 `@-moz-document` 规则，无法应用它。
 
 ### 示例
 
