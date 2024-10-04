@@ -41,13 +41,13 @@ sidebar_position: 3
 
 `enable:true` или `enable:false` соответственно включает или выключает DNS-фильтрацию.
 
-`fake_dns` allows resolving DNS requests on the specified proxy server. В поле Extra нужно добавить информацию:
+`fake_dns` позволяет обрабатывать DNS-запросы на указанном прокси-сервере. В поле Extra нужно добавить информацию:
 
-`enable:true` or `enable:false` enables or disables the *Use FakeDNS* setting, respectively.
+`enable:true` или `enable:false` соответственно включает или выключает настройку *Использовать FakeDNS*.
 
 :::note
 
-When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automatically disabled. DNS-запросы не будут фильтроваться локально.
+Если включена настройка *Использовать FakeDNS*, *DNS-защита* отключится автоматически. DNS-запросы не будут фильтроваться локально.
 
 :::
 

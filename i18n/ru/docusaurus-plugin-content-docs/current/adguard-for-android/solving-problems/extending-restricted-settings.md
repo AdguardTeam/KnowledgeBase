@@ -13,7 +13,7 @@ In an effort to improve user privacy, Google has expanded the restriction settin
 
 :::note
 
-AdGuard has a strict no-logging policy, which means that we do not collect your data or send it to third parties. We only ask for access to data without which the application cannot function.
+AdGuard придерживается строгой политики без логов, что означает, что мы не собираем ваши данные и не передаём их третьим лицам. We only ask for access to data without which the application cannot function.
 
 :::
 

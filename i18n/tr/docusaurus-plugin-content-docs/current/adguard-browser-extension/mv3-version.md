@@ -9,7 +9,7 @@ Our MV3 extension effectively blocks ads and trackers while seamlessly managing 
 
 ## Uzantılarımızı nerede bulabilirsiniz
 
-MV3 sürümü\*\* yakında [Chrome Web Mağazası'ndaki](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg) eski uzantımızın yerini alacak.
+The **MV3 version** has replaced our old extension in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
 
 MV3'ün **beta sürümü** [Chrome Web Mağazasında](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf) hâlâ mevcut olacaktır.
 
@@ -23,7 +23,7 @@ Eski beta uzantısı [**AdGuard Reklam Engelleyici MV2**](https://chromewebstore
 
   ![Filtreleme günlüğü \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. Kesin bilgi için, uzantının "Paketlenmemiş öğe" hâlini tarayıcınıza kendiniz yüklemeniz gerekir. Bunu nasıl yapacağınıza dair ayrıntılı talimatları [ayrı bir makalede]](/adguard-browser-extension/solving-problems/debug-rules) bulabilirsiniz.
+  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. Kesin bilgi için, uzantının "Paketlenmemiş öğe" hâlini tarayıcınıza kendiniz yüklemeniz gerekir. Bunu nasıl yapacağınıza dair ayrıntılı talimatları [ayrı bir makalede]](/adguard-browser-extension/solving-problems/debug-rules/) bulabilirsiniz.
 
 - _İzleme koruması_ (eski adıyla _Gizlilik modu_)
 
@@ -33,7 +33,7 @@ Eski beta uzantısı [**AdGuard Reklam Engelleyici MV2**](https://chromewebstore
 
 - _Phishing & malware protection_ is no longer available in the general settings. Kendinizi kötü amaçlı sitelerden ve dolandırıcılıklardan korumak için _Filtreler_ sekmesinde uygun _Güvenlik_ filtrelerini etkinleştirin.
 
-  ![Güvenlik](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![Güvenlik \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## Limitations
 
@@ -66,16 +66,13 @@ If this limit is exceeded, only **5,000 converted rules** will be applied in the
 
 Here's how a rule with a basic modifier is converted to a declarative rule:
 
-````
-```bash
+```adblock
 ||example.org^$script,third-party,domain=example.com
 ```
-````
 
 is converted to
 
-````
-```bash
+```json
 [
     {
         "id": 1,
@@ -96,7 +93,6 @@ is converted to
     }
 ]
 ```
-````
 
 Daha fazla örnek [GitHub][github-declarative-converter-examples] adresinde bulunabilir.
 

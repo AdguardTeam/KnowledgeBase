@@ -2432,7 +2432,7 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
     $xmlhttprequest,removeparam=p1case2
     ```
 
-    is converted to
+    преобразуется в
 
     ```bash
     [
@@ -4766,6 +4766,7 @@ ExtendedCss.query(selector);
 
 [cl-apps]: #what-product "AdGuard для Windows, Mac и Android"
 [ext-chr]: #what-product "Браузерное расширение AdGuard для Chrome и других браузеров на основе Chromium"
+[ext-mv3]: #what-product "Браузерное расширение AdGuard MV3 для Chrome"
 [ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
 [ext-ff]: #what-product "Браузерное расширение AdGuard для Firefox"
 [ios-app]: #what-product "AdGuard для iOS и AdGuard Pro для iOS"

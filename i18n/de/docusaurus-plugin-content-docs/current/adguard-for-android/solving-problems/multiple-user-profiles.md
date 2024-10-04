@@ -25,7 +25,7 @@ To solve this problem, you need to uninstall the application for all users: go t
 
 The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. If you have such a profile, **AdGuard**, like other applications that use VPN, gets restrictions on selective filtering of VPN traffic. As a result, AdGuard cannot launch protection in a **local VPN mode**. Also, one of the reasons for this situation may be using **Dual App/Dual Messenger profile** on your device. Below are described the recommendations that you can apply when this problem occurs.
 
-### Solutions
+### Lösungen
 
 You have three ways to solve the issue:
 
@@ -76,7 +76,7 @@ In some cases restricted user accounts are created implicitly and cannot be remo
 
 To enable this mode, open **AdGuard Settings** → **Network** → **Filtering method** → **Local HTTP proxy**
 
-### LG and Samsung devices
+### LG- und Samsung-Geräte
 
 Owners of **LG** or **Samsung** phones may also encounter a similar issue. It can be caused by using **Dual App/Dual Messenger** function (which automatically creates a restricted profile). To solve this issue, you need to disable this feature.
 

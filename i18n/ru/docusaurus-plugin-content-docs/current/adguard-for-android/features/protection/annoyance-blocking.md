@@ -9,8 +9,8 @@ sidebar_position: 3
 
 :::
 
-Модуль защиты от слежения можно открыть, нажав вкладку _Защита_ (второй слева значок в нижней части экрана), а затем выбрав пункт _Блокировка раздражителей_.
+Блокировка раздражителей находится во вкладке _Защита_ (второй слева значок в нижней части экрана).
 
-This feature is based on AdGuard's annoyance filters and allows you to block popups, online assistant windows, cookie notifications, prompts to download mobile apps, and similar annoyances that aren't ads but still detract from your online experience. [Узнайте больше о фильтрах раздражителей](/general/ad-filtering/adguard-filters/#adguard-filters)
+В основе этой функции лежит Фильтр раздражителей, который блокирует всплывающие окна, окна онлайн-помощников, уведомления о куки, предложения скачать мобильное приложение и прочие раздражители, которые не являются рекламой, но могут мешать вам в интернете. [Подробнее о фильтрах раздражителей](/general/ad-filtering/adguard-filters/#adguard-filters)
 
 ![Блокировка раздражителей \*mobile\_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)

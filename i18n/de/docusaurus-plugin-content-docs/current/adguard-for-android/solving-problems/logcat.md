@@ -31,7 +31,7 @@ To get a bug report directly from your device, do the following:
 
 1. In **Developer options**, tap **Take bug report**.
 
-    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
+    ![Fehlerbericht *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
 1. Select the type of bug report you want and tap **Report**.
 
@@ -42,11 +42,11 @@ To get a bug report directly from your device, do the following:
 
 :::
 
-    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
+    ![Fehlerbericht *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
 1. To share the bug report, tap the notification.
 
-    ![Bug report *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
+    ![Fehlerbericht *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
 1. Send this log to our support team.
 
@@ -95,7 +95,7 @@ It is important to reproduce the problem after you're done with the first part.
 
     An example of a successful result:
 
-    ![Step 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
+    ![Schritt 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
 
 1. Then run the following command (insert the relevant path):
 
