@@ -1569,7 +1569,7 @@ preroll.ts
 
 :::caution Restrictions
 
-- `$hls` rules are only allowed [**in trusted filters**](#trusted-filters).
+- Rules with the `$hls` modifier can only be used [**in trusted filters**](#trusted-filters).
 - `$hls` rules are compatible with the modifiers `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest` only.
 - `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`.
   Any other response will not be modified by these rules.
@@ -2312,7 +2312,7 @@ In case of multiple `$removeheader` rules matching a single request, we will app
 
 :::caution Restrictions
 
-This type of rules can be used [**only in trusted filters**](#trusted-filters).
+This type of rules can only be used [**in trusted filters**](#trusted-filters).
 
 1. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
     - `access-control-allow-origin`
@@ -2549,11 +2549,9 @@ With these rules, specified UTM parameters will be removed from any request save
 
 :::caution Restrictions
 
-1. Rules with `$removeparam` modifier can be used [**only in trusted filters**](#trusted-filters).
-1. `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers),
-  [content-type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers.
-  Rules with any other modifiers are considered invalid and will be discarded.
-1. `$removeparam` rules that do not have any [content type modifiers](#content-type-modifiers) will match only requests where content type is `document`.
+1. Rules with the `$removeparam` modifier can only be used [**in trusted filters**](#trusted-filters).
+1. `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers), [content-type modifiers](#content-type-modifiers), and with the `$important` and `$app` modifiers. Rules with any other modifiers are considered invalid and will be discarded.
+1. `$removeparam` rules without [content type modifiers](#content-type-modifiers) will only match requests where the content type is `document`.
 
 :::
 
@@ -2632,7 +2630,7 @@ http://regexr.com/3cesk
 
 :::caution Restrictions
 
-Rules with `$replace` modifier can be used [**only in trusted filters**](#trusted-filters).
+Rules with the `$replace` modifier can only be used [**in trusted filters**](#trusted-filters).
 
 :::
 
@@ -2727,7 +2725,7 @@ the request to `https://example.com/firstpath` will be blocked.
 
 :::caution Restrictions
 
-Rules with the `$urltransform` modifier can be used [**only in trusted filters**](#trusted-filters).
+Rules with the `$urltransform` modifier can only be used [**in trusted filters**](#trusted-filters).
 
 :::
 
@@ -4156,7 +4154,7 @@ In other cases it is better to change the original rule, using domain restrictio
 
 :::caution Restrictions
 
-JavaScript rules can be used [**only in trusted filters**](#trusted-filters).
+JavaScript rules can only be used [**in trusted filters**](#trusted-filters).
 
 :::
 
@@ -4285,7 +4283,7 @@ Trusted scriptlets are not compatible with other ad blockers except AdGuard.
 
 :::caution Restrictions
 
-Trusted scriptlets rules can be used [**only in trusted filters**](#trusted-filters).
+Trusted scriptlets rules can only be used [**in trusted filters**](#trusted-filters).
 
 :::
 
