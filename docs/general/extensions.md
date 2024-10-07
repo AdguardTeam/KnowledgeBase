@@ -79,7 +79,7 @@ Here we will describe some of the most popular userscript catalogs.
 
 #### Community
 
-If you like the idea of personifying your browser with the help of userscripts, and you have any questions, you can ask them on one of these websites:
+If you like the idea of customizing your browser with userscripts and have questions, you can ask them on one of these websites:
 
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/userscripts)
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
