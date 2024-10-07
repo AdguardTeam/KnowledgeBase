@@ -47,7 +47,7 @@ A script that is only pre-installed in AdGuard for Android. It disables AMP (Acc
 
 ### Top picks outside AdGuard{#top-picks}
 
-These userscripts are not developed by AdGuard and therefore we can't give a 100% guarantee that they are safe and/or work at all times. However, in our experience they deserve a recommendation as they've all earned their good reputation.
+These userscripts are not developed by AdGuard, and therefore we can't give a 100% guarantee that they are safe and/or work at all times. However, in our experience they deserve a recommendation because they've all earned their good reputation.
 
 #### Don't track me Google
 
