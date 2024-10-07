@@ -61,7 +61,7 @@ A userscript for people visiting Korean websites and some international websites
 
 ### Where can you get more userscripts?{#more-userscripts}
 
-As userscripts are mainly created by enthusiasts, you should be cautious when installing them. Any script from an unknown source carries a potential risk. Yet, there is a great variety of interesting scripts that, if installed carefully and responsibly, can really make using some websites more convenient.
+Since userscripts are mainly created by enthusiasts, you should be cautious when installing them. Any script from an unknown source carries a potential risk. Yet, there is a great variety of interesting scripts that, if installed carefully and responsibly, can really make using some websites more convenient.
 
 Here we will describe some of the most popular userscript catalogs.
 
