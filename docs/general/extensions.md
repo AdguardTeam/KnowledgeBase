@@ -35,7 +35,7 @@ This custom extension is designed to control filtering directly from the browser
 
 :::note
 
-This version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). But the legacy Assistant might be of help if there is no Browser Assistant for your browser. If this is your case, your can learn how to install AdGuard Assistant on [GitHub](https://github.com/AdguardTeam/AdguardAssistant).
+This version of Assistant is legacy and there is no point in using it on new systems, as it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). However, the legacy Assistant may be useful if there is no Browser Assistant for your browser. If this is your case, you can learn how to install AdGuard Assistant on [GitHub](https://github.com/AdguardTeam/AdguardAssistant).
 
 :::
 
