@@ -25,7 +25,7 @@ An extension that blocks ads in difficult cases when the usual filter-based appr
 
 #### AdGuard Popup Blocker
 
-The name speaks for itself: it blocks pop-ups — one of the most annoying types of ads on web pages. Learn more about this userscript, its key features, and how to install it on [GitHub](https://github.com/AdguardTeam/PopupBlocker).
+The name speaks for itself: it blocks popups — one of the most annoying types of ads on websites. Learn more about this userscript, its key features, and installation on [GitHub](https://github.com/AdguardTeam/PopupBlocker).
 
 ![AdGuard Popup Blocker](https://cdn.adtidy.org/content/kb/ad_blocker/general/popup-blocker-installation.png)
 
