@@ -15,7 +15,7 @@ AdGuard can significantly broaden website functionality by acting as a userscrip
 
 ### Recommended AdGuard scripts
 
-These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you expose yourself to a certain risk, as some scripts may be harmful to your computer.
+These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you are exposing yourself to a certain risk, as some scripts may be harmful to your computer.
 
 #### AdGuard Extra
 
