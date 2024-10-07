@@ -1,98 +1,98 @@
 ---
-title: How to debug rules in AdGuard for Chrome MV3
+title: AdGuard for Chrome MV3対応版でルールをデバッグする方法
 sidebar_position: 2
 ---
 
-In [AdGuard for Chrome MV3](/adguard-browser-extension/mv3-version), the Filtering log only shows the approximate rules that were applied, which we call “assumed rules”. This is because the browser doesn’t provide details about which specific declarative rules were used unless the extension is in an “unpacked” format. To get precise information, you’ll need to install the unpacked version of the extension in your browser yourself.
+[AdGuard for Chrome MV3対応版](/adguard-browser-extension/mv3-version) では、フィルタリングログに適用されたであろうというルールのみが表示されます。これを「想定ルール」と呼びます。 これは、拡張機能が「解凍」された形式でない限り、ブラウザが具体的にどの宣言的ルールが使われたかについての詳細を提供しないからです。 正確な情報を確認するには、ご自身でブラウザにAdGuardブラウザ拡張機能の「解凍」版をインストールする必要があります。
 
-These instructions are also meant for problematic cases where you want to modify the rules that are bundled with the extension statically. In most cases, using _User rules_ in the extension should be sufficient.
+以下の手順は、拡張機能にバンドルされているルールを静的に変更したいという、問題がある場合のためにも使えます。 ほとんどの場合、拡張機能の「_ユーザールール_」を使用すれば十分です。
 
-## Prerequisites
+## 前提条件
 
-1. **Git:** [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+1. **Git:** [Git をインストールする](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-2. **Node:** [Install Node.js](https://nodejs.org/en/download/package-manager)
+2. **Node:** [Node.js をインストールする](https://nodejs.org/en/download/package-manager)
 
-3. **Yarn:** [Install Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
+3. **Yarn:** [Yarn をインストールする](https://classic.yarnpkg.com/lang/en/docs/install)
 
-## How to clone extension
+## 拡張機能をクローンする方法
 
-1. Clone the repository:
+1. リポジトリをクローンします:
 
    ```bash
    git clone git@github.com:AdguardTeam/AdguardBrowserExtension.git
    ```
 
-2. Navigate to the directory:
+2. ディレクトリに移動します:
 
    ```bash
    cd AdguardBrowserExtension
    ```
 
-3. Switch to the `v5.0` branch:
+3. `v5.0` ブランチに切り替えます:
 
    ```bash
    git checkout v5.0
    ```
 
-4. Install dependencies:
+4. 依存関係をインストールします:
 
    ```bash
    yarn install
    ```
 
-## How to build extension
+## 拡張機能のビルド方法
 
-1. Switch to the `v5.0` branch:
+1. `v5.0` ブランチに切り替えます:
 
    ```bash
    git checkout v5.0
    ```
 
-2. Run the following command in the terminal:
+2. ターミナルで次のコマンドを実行します:
 
    ```bash
    yarn dev chrome-mv3
    ```
 
-3. The built extension will be located in the directory:
+3. ビルドされた拡張機能は次のディレクトリに配置されます:
 
    ```bash
    ./build/dev/chrome-mv3
    ```
 
-## How to install unpacked in the browser
+## ブラウザに解凍版をインストールする方法
 
-1. Turn on developer mode:
+1. 開発者モードをオンにします:
 
    ![Developer mode](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
 
-2. Click _Load unpacked_:
+2. 「_解凍して読み込む_」をクリックします:
 
-   ![Load unacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+   ![Load unpacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
-3. Select the extension directory and click `Select`:
+3. 拡張機能ディレクトリを選択し、「選択」をクリックします:
 
    ![Select](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
 
-That’s it!
+これで完了です。
 
-## How to debug rules
+## ルールをデバッグする方法
 
-1. Find and modify the rule you need in the `./Extension/filters/chromium-mv3` directory in the `.txt` files.
+1. `.txt` ファイルの `./Extension/filters/chromium-mv3` ディレクトリで必要なルールを見つけて変更します。
 
-2. Convert the rules from txt to declarative form:
+2. ルールを txt から宣言形式に変換します:
 
    ```bash
    yarn convert-declarative
    ```
 
-3. Build the extension again:
+3. 拡張機能を再度ビルドします:
 
    ```bash
    yarn dev chrome-mv3
    ```
 
-4. Reload the extension in the browser:
+4. ブラウザで拡張機能を再読み込みします:
 
    ![Reload extension](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)

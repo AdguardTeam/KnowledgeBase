@@ -222,7 +222,7 @@ The metadata block is written using CSS-style comments, starting with `===UserSt
 
 The content of a userstyle is plain CSS with support for the [`@-moz-document` at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@document). The `media-document()` function is not supported. The userstyle will only be applied to pages that match one or more of the `@-moz-document` rules. If the userstyle does not contain any `@-moz-document` rules, it will not be applied.
 
-### Example
+### Beispiel
 
 ```css
 /* ==UserStyle==

@@ -1,5 +1,5 @@
 ---
-title: How to generate HAR files
+title: So können HAR-Dateien erzeugt werden
 sidebar_position: 5
 ---
 
@@ -19,7 +19,7 @@ HAR-Dateien werden in Übereinstimmung mit der [Datenschutzrichtlinie von AdGuar
 
 The HAR (HTTP ARchive) format is a JSON-formatted archive file for logging of a web browser's interaction with a site. The specifications of HAR format define archival data for HTTP transactions that a browser uses to export detailed information about the web pages it loads. More detailed description of HAR file format and its specification you can find at [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/) website.
 
-## How to generate HAR files
+## So können HAR-Dateien erzeugt werden
 
 Sometimes we need to analyze it to block specific ads that are difficult to reproduce for some reason. To get HAR files, follow these steps:
 

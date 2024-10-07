@@ -21,7 +21,7 @@ sidebar_position: 9
 
 - перейдите в *Расширенные настройки*
 - прокрутите вниз до раздела *Список пользовательских bootstrap-адресов*
-- enter the custom bootstrap address in the IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
+- введите bootsrap-адрес в формате IP-адреса (вы можете найти нужный в [списке известных DNS-провайдеров](https://adguard-dns.io/kb/general/dns-providers/))
 - нажмите *Сохранить*
 
 ## Резервный (fallback) DNS-сервер

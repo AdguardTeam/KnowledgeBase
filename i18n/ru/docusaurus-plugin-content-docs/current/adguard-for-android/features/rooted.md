@@ -1,5 +1,5 @@
 ---
-title: Rooted devices
+title: Устройства с root-доступом
 sidebar_position: 7
 ---
 
@@ -11,6 +11,6 @@ sidebar_position: 7
 
 Из-за мер безопасности ОС Android некоторые функции AdGuard доступны только на устройствах с root-доступом. Вот их список:
 
-- In most cases, **HTTPS filtering in apps** requires [installing a CA certificate into the system store](/adguard-for-android/features/settings#security-certificates), as most apps don't trust certificates in the user store
+- **Фильтрация HTTPS в большинстве приложений** требует [установки сертификата ЦС в системное хранилище](/adguard-for-android/features/settings#security-certificates), поскольку большинство приложений не доверяют сертификатам в пользовательском хранилище
 - Режим маршрутизации [**Автоматический прокси**](/adguard-for-android/features/settings#routing-mode) требует root-доступа из-за ограничений Android на фильтрацию трафика в масштабах всей системы
-- The [**Manual proxy** routing mode](/adguard-for-android/features/settings#routing-mode) requires root access on Android 10 and above as it's no longer possible to determine the name of the app associated with a connection filtered by AdGuard
+- Режим маршрутизации [**Ручной прокси**](/adguard-for-android/features/settings#routing-mode) требует root-доступа на Android 10 и выше, поскольку теперь невозможно определить имя приложения, связанного с соединением, отфильтрованным AdGuard
