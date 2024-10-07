@@ -1,36 +1,36 @@
 ---
-title: Problems caused by extending restricted settings
+title: Problemas causados por la ampliación de configuraciones restringidas
 sidebar_position: 18
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Para ver cómo funciona, [descarga la app de AdGuard](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la app de AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-In an effort to improve user privacy, Google has expanded the restriction settings in Android 15. More settings, such as _App usage access_, now require an additional permission to be enabled. Since the _[Firewall](/adguard-for-android/features/protection/firewall)_ and _[Detect Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea)_ features require the _App usage access_ setting to be enabled for them to work properly, you may have experienced problems using them. To resolve these issues, please follow the steps below:
+En un esfuerzo por mejorar la privacidad del usuario, Google ha ampliado la configuración de restricciones en Android 15. Más configuraciones, como _Acceso al uso de la aplicación_, ahora requieren un permiso adicional para ser habilitadas. Dado que las funciones _[Firewall](/adguard-for-android/features/protection/firewall)_ y _[Detectar Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea)_ requieren que la configuración _Acceso al uso de aplicaciones_ esté habilitada para que funcionen correctamente, es posible que hayas experimentado problemas al usarlas. Para resolver estos problemas, sigue los pasos a continuación:
 
 :::note
 
-AdGuard has a strict no-logging policy, which means that we do not collect your data or send it to third parties. We only ask for access to data without which the application cannot function.
+AdGuard tiene una estricta política de no registro, lo que significa que no recopilamos tus datos ni los enviamos a terceros. Sólo pedimos acceso a los datos sin los cuales la aplicación no puede funcionar.
 
 :::
 
-1. On your Android device, open the **Settings app**.
-2. Tap **Apps**.
-3. Tap **AdGuard**
+1. En tu dispositivo Android, abre la aplicación **Configuración**.
+2. Toca **Aplicaciones**.
+3. Toca **AdGuard**
 
-![AdGuard in Apps \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted1.png)
+![AdGuard en Aplicaciones \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted1.png)
 
-If you can't find it, first tap **See all apps** or **App info**.
+Si no lo encuentras, primero toca **Ver todas las aplicaciones** o **Información de la aplicación**.
 
-1. Tap **More** (⁝) → _Allow restricted settings_.
+1. Toca **Más** (⁝) → _Permitir configuraciones restringidas_.
 
-![Allow restricted settings \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted2.png)
+![Permitir configuraciones restringidas \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted2.png)
 
-Follow the on-screen instructions.
+Sigue las instrucciones en pantalla.
 
-All done! Now the _Firewall_ and _Detect Samsung Pay_ features will work correctly.
+¡Todo listo! Ahora las funciones _Firewall_ y _Detectar Samsung Pay_ funcionarán correctamente.
 
-![Restricted settings allowed for AdGuard \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted3.png)
+![Configuraciones restringidas permitidas para AdGuard \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted3.png)

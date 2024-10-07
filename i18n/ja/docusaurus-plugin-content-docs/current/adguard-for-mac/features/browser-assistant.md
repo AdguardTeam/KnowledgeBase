@@ -26,7 +26,7 @@ AdGuard Browser Assistant is a browser extension. It allows you to quickly manag
 - Open AdGuard settings
 - View website certificate and manage HTTPS filtering (the lock icon next to the website name)
 
-## How to install
+## インストール方法
 
 When you install AdGuard for Mac, you will be prompted to install Browser Assistant for your default browser. If you skip this step, you can install it later.
 

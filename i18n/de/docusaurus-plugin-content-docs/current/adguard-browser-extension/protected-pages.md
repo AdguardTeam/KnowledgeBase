@@ -52,10 +52,10 @@ Das Ändern von erweiterten Einstellungen kann die Stabilität und Sicherheit vo
 
 Alternativ können Sie auch:
 
-1. Open a new tab and type **about:config** in the address bar.
-2. Press **Return**. You may encounter a warning. In this case, click **Accept the Risk and Continue**.
-3. Search for `extensions.webextensions.restrictedDomains`. If you can’t find this preference, you can create it. Simply select the **Boolean** type and click **+** to add it.
-4. Click the toggle button next to this preference and change its value to `false`.
-5. Restart Firefox.
+1. Öffnen Sie einem neuen Tab und geben Sie **about:config** in die Adressleiste ein.
+2. Drücken Sie **Eingabetaste**. Möglicherweise erhalten Sie eine Warnhinweis. Klicken Sie in diesem Fall auf **Risiko akzeptieren und fortfahren**.
+3. Suchen Sie nach `extensions.webextensions.restrictedDomains`. Wenn Sie diese Einstellung nicht finden können, können Sie sie erstellen. Wählen Sie einfach den Typ **Boolean** und klicken Sie auf **+**, um ihn hinzuzufügen.
+4. Klicken Sie auf die Schaltfläche neben dieser Einstellung und ändern Sie ihren Wert in `false`.
+5. Starten Sie Firefox neu.
 
-For further information on this subject, read [the article on Mozilla’s support website](https://mzl.la/3POXoWi).
+Weitere Informationen zu diesem Thema finden Sie in [dem Artikel auf der Support-Website von Mozilla](https://mzl.la/3POXoWi).

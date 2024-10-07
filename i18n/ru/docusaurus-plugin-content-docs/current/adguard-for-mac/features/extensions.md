@@ -24,7 +24,7 @@ This userscript allows you to manage AdGuard protection directly from your brows
 - Блокировка рекламы вручную
 - Сообщить о неправильной блокировке
 
-However, the new Assistant is more advanced. It also allows you to manage AdGuard protection for all websites, check the website’s certificate, manage HTTPS filtering, and open the filtering log or the app’s settings. We recommend that you use the legacy Assistant only if the new Assistant is not available.
+However, the new Assistant is more advanced. It also allows you to manage AdGuard protection for all websites, check the website’s certificate, manage HTTPS filtering, and open the filtering log or the app’s settings. Мы рекомендуем использовать предыдущую версию Помощника только в том случае, если новая недоступна.
 
 ## AdGuard Extra
 

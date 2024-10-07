@@ -43,7 +43,7 @@ In diesem Abschnitt können Sie den Internetzugang für bestimmte Apps steuern. 
 
 Um eine Regel oder App aus _Benutzerdefinierte Regeln_ zu löschen, wischen Sie sie nach links.
 
-### Notifications
+### Benachrichtigungen
 
 If enabled, this feature notifies you when an app is attempting to violate an applicable firewall rule, e.g. attempts to access mobile data from which it is blocked. You can turn notifications on and off for all apps or for each app separately.
 

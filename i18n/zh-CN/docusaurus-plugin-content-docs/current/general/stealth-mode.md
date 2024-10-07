@@ -79,7 +79,7 @@ WebRTC（网络实时通信）是一种允许在浏览器和应用程序之间�
 
 ### 拦截 Flash {#flash}
 
-The Flash Player plugin has become increasingly vulnerable to such online threats as viruses and hackers; it may also significantly increase website load times. 启用此设置后，AdGuard 将阻止浏览器检测允许 Flash 显示内容的组件（例如插件和 ActiveXObject 对象）。 这实际上意味着浏览器无法支持 Flash。
+Flash Player 插件越来越容易受到如病毒和黑客之类的在线威胁的影响；它还可能会显著影响网站的加载时间。 启用此设置后，AdGuard 将阻止浏览器检测允许 Flash 显示内容的组件（例如插件和 ActiveXObject 对象）。 这实际上意味着浏览器无法支持 Flash。
 
 ### 拦截 Java {#java}
 
@@ -95,7 +95,7 @@ Referrer 是浏览器发送请求到服务器时所用的 HTTP 头部。 其包�
 
 请注意，要过滤流量，AdGuard 应用会“劫持”浏览器到服务器的请求。 对广告，跟踪和钓鱼网站的请求可在发送其请求到服务器之前更改或完全拦截。 「*隐藏第三方 Referer*」也是如此：AdGuard 拦截 HTTP(S) 请求，在启用该选项后软件删除或更改 Referer 标头。 但是，只有在这些请求“离开”浏览器后软件才开始拦截。 这意味着，如果在浏览器内监视 Referer（例如，借助 Chrome 浏览器的开发者工具），用户将看到原来的 Referer，因为请求尚未到达 AdGuard。 您可以使用 [Fiddler](https://www.telerik.com/fiddler) 等软件来确保 Referer 被正确更改。
 
-On the other hand, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. 它将立即更改 Referer，因此开发工具将为用户的请求显示所需的 Referer。
+相反，由于所有浏览器扩展的性质，AdGuard 浏览器扩展在浏览器“内部”运行。 它将立即更改 Referer，因此开发工具将为用户的请求显示所需的 Referer。
 
 ### 隐藏 User-Agent {#useragent}
 
@@ -123,6 +123,6 @@ Windows 版 AdGuard、Mac 版 AdGuard 和 Android 版 AdGuard 已经有「保护
 
 :::caution
 
-If this feature is enabled in AdGuard for Windows, it may interfere with ESET antivirus. Anti-DPI will prevent ESET from filtering traffic, leaving blacklisted and malicious websites unblocked.
+如果在 Windows 版 AdGuard 中启用此功能，可能会干扰 ESET 防病毒软件。 Anti-DPI 将阻止 ESET 过滤流量，从而使黑名单和恶意网站不受阻止。
 
 :::
