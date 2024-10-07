@@ -2432,7 +2432,7 @@ With these rules, specified UTM parameters will be removed from any request save
     $xmlhttprequest,removeparam=p1case2
     ```
 
-    is converted to
+    wird umgewandelt in
 
     ```bash
     [
@@ -2987,7 +2987,7 @@ Element hiding rules are not dependent on each other. If there is a rule `exampl
 - `example.com,example.org###adblock` — hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
 - `~example.com##.textad` — hides an element with the class `textad` at all domains, except `example.com` and its subdomains.
 
-**Limitations**
+**Beschränkungen**
 
 Safari does not support both allowed and disallowed domains. So the rules like `example.org,~foo.example.org##.textad` are invalid in AdGuard for Safari.
 
@@ -3078,7 +3078,7 @@ CSS rules may operate differently [depending on the platform](#cosmetic-rules-pr
 
 ### Extended CSS selectors {#extended-css-selectors}
 
-- [Limitations](#extended-css-limitations)
+- [Beschränkungen](#extended-css-limitations)
 - [Pseudo-class `:has()`](#extended-css-has)
 - [Pseudo-class `:contains()`](#extended-css-contains)
 - [Pseudo-class `:matches-css()`](#extended-css-matches-css)
@@ -4766,6 +4766,7 @@ The following scriptlets also may be used for debug purposes:
 
 [cl-apps]: #what-product "AdGuard for Windows, Mac, Android"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
+[ext-mv3]: #what-product "AdGuard Browsererweiterung für Chrome MV3"
 [ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
 [ext-ff]: #what-product "AdGuard Browser Extension for Firefox"
 [ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"

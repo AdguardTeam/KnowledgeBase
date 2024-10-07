@@ -2432,7 +2432,7 @@ With these rules, specified UTM parameters will be removed from any request save
     $xmlhttprequest,removeparam=p1case2
     ```
 
-    is converted to
+    が以下のものに変化されます:
 
     ```bash
     [
@@ -4766,6 +4766,7 @@ The following scriptlets also may be used for debug purposes:
 
 [cl-apps]: #what-product "AdGuard for Windows, Mac, Android"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
+[ext-mv3]: #what-product "AdGuard ブラウザ拡張機能 MV3対応版"
 [ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
 [ext-ff]: #what-product "AdGuard Browser Extension for Firefox"
 [ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"

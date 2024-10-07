@@ -29,7 +29,7 @@ AdGuard для Android может [фильтровать зашифрованн
 
 1. Установите [последнюю версию **модуля adguardcert**](https://github.com/AdguardTeam/adguardcert/releases/latest/).
 
-1. Откройте *Magisk → Модули → Установить из хранилища* и выберите загруженный файл **adguardcert**. The AdGuard Personal CA certificate will be copied to the system store.
+1. Откройте *Magisk → Модули → Установить из хранилища* и выберите загруженный файл **adguardcert**. Сертификат AdGuard Personal CA будет скопирован в системное хранилище.
 
     ![Откройте модули Magisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
 

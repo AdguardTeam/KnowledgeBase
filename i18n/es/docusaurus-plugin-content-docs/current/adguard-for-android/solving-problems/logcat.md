@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -107,16 +107,16 @@ It is important to reproduce the problem after you're done with the first part.
 
 1. Download and run [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
 
-1. Choose **Record** in the menu. Choose a name for a log file or just press **OK**. Now you can press **Home** button, CatLog will continue recording the log in background.
+1. Selecciona **Grabar** en el menú. Elige un nombre para un archivo de registro o simplemente presiona **OK**. Ahora puedes presionar el botón **Inicio**, CatLog continuará grabando el registro en segundo plano.
 
-1. Reproduce the issue.
+1. Reproducir el problema.
 
-1. Open CatLog and press **Stop record** in the menu.
+1. Abre CatLog y presiona **Detener grabación** en el menú.
 
-1. Send this log to our support team.
+1. Envía este registro a nuestro equipo de soporte.
 
 :::note
 
-Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+Nuestro equipo de soporte procesará tu ticket mucho más rápido si especificas el número de ticket de HelpDesk o el número de problema de GitHub en tu mensaje de soporte.
 
 :::

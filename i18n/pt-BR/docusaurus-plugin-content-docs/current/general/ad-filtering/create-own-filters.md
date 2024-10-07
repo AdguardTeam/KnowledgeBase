@@ -2987,7 +2987,7 @@ Element hiding rules are not dependent on each other. If there is a rule `exampl
 - `example.com,example.org###adblock` — hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
 - `~example.com##.textad` — hides an element with the class `textad` at all domains, except `example.com` and its subdomains.
 
-**Limitations**
+**Limitações**
 
 Safari does not support both allowed and disallowed domains. So the rules like `example.org,~foo.example.org##.textad` are invalid in AdGuard for Safari.
 
@@ -3078,7 +3078,7 @@ CSS rules may operate differently [depending on the platform](#cosmetic-rules-pr
 
 ### Extended CSS selectors {#extended-css-selectors}
 
-- [Limitations](#extended-css-limitations)
+- [Limitações](#extended-css-limitations)
 - [Pseudo-class `:has()`](#extended-css-has)
 - [Pseudo-class `:contains()`](#extended-css-contains)
 - [Pseudo-class `:matches-css()`](#extended-css-matches-css)

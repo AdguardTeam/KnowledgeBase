@@ -1,81 +1,81 @@
 ---
-title: Manual installation of the security certificate into the Firefox browser
+title: Instalación manual del certificado de seguridad en el navegador Firefox
 sidebar_position: 11
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-For AdGuard to successfully filter HTTPS traffic in Firefox, the browser needs to trust AdGuard's certificate. It can be achieved differently for different versions of the Firefox.
+Para que AdGuard filtre con éxito el tráfico HTTPS en Firefox, el navegador debe confiar en el certificado de AdGuard. Se puede lograr de forma diferente para las distintas versiones de Firefox.
 
-### Method 1
+### Método 1
 
 :::note
 
-This method works in Firefox for Android version 90.0 and later.
+Este método funciona en Firefox para Android versión 90.0 y posteriores.
 
 :::
 
-To make Firefox trust the AdGuard certificate, do the following:
+Para que Firefox confíe en el certificado AdGuard, haz lo siguiente:
 
-1. Run the browser.
+1. Ejecuta el navegador.
 
-1. Go to **Settings** → **About Firefox**.
+1. Ve a **Configuración** → **Acerca de Firefox**.
 
-    ![About Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
+    ![Acerca de Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
-1. Tap the Firefox logo five times.
+1. Toca el logo de Firefox cinco veces.
 
-1. Navigate to **Settings** → **Secret Settings**.
+1. Ve a **Configuración** → **Configuración secreta**.
 
-    ![Secret Settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+    ![Configuraciones secretas *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
-1. Toggle **Use third party CA certificates**.
+1. Activa **Usar certificados CA de terceros**.
 
-### Method 2
+### Método 2
 
 :::note
 
-This method will only work on **rooted** devices.
+Este método sólo funcionará en dispositivos **rooteados**.
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Instala y configura](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; En la plataforma Windows, **los propietarios de Samsung** pueden necesitar instalar [esta utilidad](https://developer.samsung.com/mobile/android-usb-driver.html).
 
-1. Activate the **developer mode** and enable **USB debugging**:
+1. Activa el **modo de desarrollador** y habilita la **depuración USB**:
 
-    - Open the **Settings** app on your phone;
-    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
-    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
-    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+    - Abre la aplicación **Configuración** en tu celular;
+    - Ve a la sección **Sistema** (último elemento en el menú de configuración). En esta sección, encuentra el subelemento **Acerca del teléfono**;
+    - Toca en **Número de build** 7 veces. Después de eso, recibirás una notificación que dice **Ahora eres un desarrollador** (Si es necesario, introduce un código de desbloqueo para el dispositivo);
+    - Abre **Configuración del sistema** → **Opciones de desarrollador** → Desplázate hacia abajo y habilita **depuración USB** → Confirma que la depuración está habilitada en la ventana **Permitir la depuración USB** después de leer la advertencia cuidadosamente.
 
-1. Install the [Firefox](https://www.mozilla.org/en-US/firefox/releases/) browser (release version);
+1. Instala el navegador [Firefox](https://www.mozilla.org/en-US/firefox/releases/) (versión de lanzamiento);
 
-1. Open the **AdGuard settings** (gear icon in the bottom right corner) → **Filtering** → **Network** → **HTTPS filtering** → **Security certificate** → **Instructions for Firefox** → **Install for old versions**;
+1. Abre la configuración de AdGuard **** (icono de engranaje en la esquina inferior derecha) → **Filtrado** → **Red** → **Filtrado HTTPS** → **Certificado de seguridad** → **Instrucciones para Firefox** → **Instalar para versiones anteriores**;
 
-1. Open the folder `data/data/org.mozilla.firefox/files/mozilla` using `adb shell su` and `cd data/data/...`, then browse to the folder named `xxxxxxx.default` and memorize its name;
+1. Abre la carpeta `data/data/org.mozilla.firefox/files/mozilla` usando `adb shell su` y `cd data/data/...`, luego busca la carpeta llamada `xxxxxxx.default` y memoriza tu nombre;
 
-1. In the specified folder we are interested in two files:
+1. En la carpeta indicada nos interesan dos archivos:
 
     - `cert9.db`
     - `key4.db`
 
-1. We need to move these files to a folder of the browser where the security certificate issue occurred:
+1. Necesitamos mover estos archivos a una carpeta del navegador donde ocurrió el problema del certificado de seguridad:
 
-    - `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`.
+    - `datos/datos/org.mozilla.<browser_name>/archivos/mozilla/yyyyyy.predeterminado`.
 
-1. The full command will look like this:
+1. El comando completo se verá así:
 
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
 
-    In case you received the system notification **permission denied**, you should first move the specified files to the permission-free directory. And after that you should move them to the necessary folder in your Firefox browser.
+    En caso de que hayas recibido la notificación del sistema **permiso denegado**, primero debes mover los archivos especificados al directorio sin permisos. Y después, debes moverlos a la carpeta necesaria en tu navegador Firefox.
 
-    The full command should look something like this:
+    El comando completo debería verse así:
 
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxx.default/cert9.db sdcard/Download`
@@ -83,4 +83,4 @@ This method will only work on **rooted** devices.
     - `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
 
-    If `adb shell su` does not work, you should try `adb shell` initially, and then `su`.
+    Si `adb shell su` no funciona, debes probar `adb shell` inicialmente y luego `su`.

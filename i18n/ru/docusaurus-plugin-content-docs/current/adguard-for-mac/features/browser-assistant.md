@@ -24,7 +24,7 @@ sidebar_position: 8
 - Открыть журнал фильтрации
 - Сообщить о неправильной блокировке
 - Открыть настройки AdGuard
-- View website certificate and manage HTTPS filtering (the lock icon next to the website name)
+- Посмотреть сертификат сайта и управлять HTTPS-фильтрацией (значок замка рядом с названием сайта)
 
 ## Как установить
 
@@ -36,28 +36,28 @@ sidebar_position: 8
 2. Нажмите на значок шестерёнки и выберите _Настройки_.
 3. Перейдите на вкладку _Помощник_.
 4. Нажмите _Добавить расширение_ рядом с вашим браузером по умолчанию.
-5. Install Assistant from your browser’s extension store.
+5. Установите Помощник из магазина расширений вашего браузера.
 
-![The Assistant tab](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)
+![Окно Помощника](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)
 
-**From the website**:
+**С сайта**:
 
-1. Open the [Assistant page](https://adguard.com/adguard-assistant/overview.html).
-2. Under your browser name, select _Install_.
-3. Install Assistant from your browser’s extension store.
+1. Откройте [страницу Помощника](https://adguard.com/adguard-assistant/overview.html).
+2. Под названием вашего браузера выберите _Установить_.
+3. Установите Помощник из магазина расширений вашего браузера.
 
 :::note
 
-In rare cases, a browser may be incompatible with Assistant. To manage AdGuard from your browser, you can install the legacy Assistant instead.
+В редких случаях браузер может быть несовместим с Помощником. Чтобы управлять AdGuard из браузера, вы можете установить предыдущую версию Помощника.
 
 :::
 
 ## Предыдущая версия Помощника
 
-The legacy Assistant is the previous version of AdGuard Browser Assistant. It’s a userscript that doesn’t require additional installation. While the legacy Assistant does its job well, it has several drawbacks:
+Предыдущая версия Помощника — это пользовательский скрипт, который не требует дополнительной установки. Хотя он хорошо справляется со своей задачей, у него есть несколько недостатков:
 
-- It has fewer features than the extension version.
-- You have to wait for the userscript to be inserted into a webpage — sometimes it doesn’t load immediately.
-- You can’t hide the Assistant icon on the page.
+- В нём меньше функций, чем в расширении-Помощнике.
+- Иногда он загружается не сразу — придётся ждать, пока скрипт применится на странице.
+- Скрыть значок Помощника на странице не получится.
 
-We recommend that you use the legacy Assistant only if the new Assistant is not available.
+Мы рекомендуем использовать предыдущую версию Помощника только в том случае, если новая недоступна.

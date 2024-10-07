@@ -1,27 +1,27 @@
 ---
-title: Local.adguard.org domain
+title: Domaine local.adguard.org
 sidebar_position: 3
 ---
 
-Users of AdGuard for Windows, Mac, and Android may notice that AdGuard adds a small script to every web page, that is loaded from the `local.adguard.org` domain.
+Les utilisateurs d'AdGuard pour Windows, Mac et Android ont pu remarquer qu'AdGuard ajoute un petit script à chaque page web, qui est chargé à partir du domaine `local.adguard.org` .
 
-First of all, don't worry, this is not a real domain, and there is actually no real server with that name. This domain is used to apply cosmetic filtering to web pages, but everything is done locally right on your device without connecting to any server.
+Tout d'abord, ne vous inquiétez pas, il ne s'agit pas d'un vrai domaine, et il n'y a en fait aucun serveur réel portant ce nom. Ce domaine est utilisé pour appliquer le filtrage cosmétique aux pages web, mais tout est fait localement, directement sur votre appareil, sans connexion à un serveur quelconque.
 
-### Technical explanation
+### Explication technique
 
-But what's going on and why is it done? Please read the technical explanation below.
+Mais que se passe-t-il et pourquoi est-ce fait ? Veuillez lire l'explication technique ci-dessous.
 
-1. AdGuard is a network-level content blocker so it cannot simply add custom JavaScript and CSS to webpages like what browser extensions do. However, doing this is crucial for quality content blocking.
-2. In order to do it AdGuard injects a "content script" that looks like this: `<script src="https://local.adguard.org/.../content-script.js">`. This "content script" takes care of cosmetic filtering, hides or removes ad content from the web pages.
-3. Connections to the IP address of the `local.adguard.org` domain are intercepted by AdGuard on the network level and **processed locally**. This is why that domain has a "static" IP address that does not change for years.
+1. AdGuard est un bloqueur de contenu au niveau du réseau, il ne peut donc pas simplement ajouter du JavaScript et du CSS personnalisés aux pages web comme le font les extensions de navigateur. Cependant, cela est crucial pour un bon blocage de contenu.
+2. Pour faire ça, AdGuard injecte un "script de contenu" qui ressemble à ceci : `<script src="https://local.adguard.org/.../content-script.js">`. Ce "script de contenu" se charge du filtrage cosmétique, cache ou supprime le contenu publicitaire des pages web.
+3. Les connexions à l'adresse IP du domaine `local.adguard.org` sont interceptées par AdGuard au niveau du réseau et **traitées localement**. C'est pourquoi ce domaine a une adresse IP "statique" qui ne change pas pendant des années.
 
-**Why do we need to use a real IP address for that?**
+**Pourquoi avons-nous besoin d'utiliser une véritable adresse IP pour cela ?**
 
-- We cannot use `127.0.0.1` as the browsers won't accept it.
-- Using some IP address from the private subnets is possible, but this solution has two downsides.
-    - First, there is a slight chance of intersecting with an existing intranet service and breaking access to it.
-    - Second, some DNS servers may consider this a DNS rebinding attack and refuse to respond to `local.adguard.org`.
+- Nous ne pouvons pas utiliser `127.0.0.1` car les navigateurs ne l'accepteront pas.
+- C'est possible d’utiliser une adresse IP provenant de sous-réseaux privés, mais cette solution présente deux inconvénients.
+    - Tout d'abord, il y a un léger risque de croiser un service intranet existant et d'y interrompre l'accès.
+    - Deuxièmement, certains serveurs DNS peuvent considérer ça comme une attaque de reliure DNS et refuser de répondre à `local.adguard.org`.
 
-### Verification
+### Vérification
 
-This is easy to verify. If you disable AdGuard, you'll see that it is simply impossible to establish connection to `local.adguard.org` since there is no server with that address. Just try opening it in your browser when AdGuard is disabled.
+Ceci est facile à vérifier. Si vous désactivez AdGuard, vous verrez que c'est tout simplement impossible d'établir une connexion à `local.adguard.org` car il n'y a pas de serveur avec cette adresse. Essayez de l'ouvrir dans votre navigateur lorsque AdGuard est désactivé.
