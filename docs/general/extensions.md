@@ -67,7 +67,7 @@ Here we will describe some of the most popular userscript catalogs.
 
 #### Userscript.Zone
 
-[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high credibility, since only scripts from moderated pages are displayed.
+[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high level of credibility as only scripts from moderated pages are displayed.
 
 #### Greasy Fork
 
