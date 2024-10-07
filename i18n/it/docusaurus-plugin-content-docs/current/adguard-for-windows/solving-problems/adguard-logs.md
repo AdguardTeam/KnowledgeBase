@@ -15,7 +15,7 @@ I dati e/o i file forniti negli registri sono trattati in conformità con [l'Inf
 
 :::
 
-To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need AdGuard log files. These files contain records about errors and other events that occurr with the software. Below is the brief instruction describing the way to get the log files and send them to the support service if necessary.
+To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need AdGuard log files. These files contain records about errors and other events that occur with the software. Below is the brief instruction describing the way to get the log files and send them to the support service if necessary.
 
 :::note
 
@@ -25,7 +25,7 @@ AdGuard si impegna a proteggere la tua privacy. Rispettiamo rigorosamente la nos
 
 ### Registri di debug {#debug-logs}
 
-1. Open the AdGuard settings. Go to the *General Settings* section, scroll down to the end of the screen and switch the *Logging Level* to *Debug*.
+1. Open the AdGuard settings. Go to the *General Settings* section, scroll down to the bottom of the screen, and switch the *Logging Level* to *Debug*.
 
     ![Debug logging level *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
@@ -33,13 +33,13 @@ AdGuard si impegna a proteggere la tua privacy. Rispettiamo rigorosamente la nos
 
     We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
 
-1. Export the recorded logs using the *Export Logs* button.
+1. Export the collected logs using the *Export Logs* button.
 
     ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
     Save the archive to any folder.
 
-1. **Important**: after exporting the logs, set the logging level back to *Standard*. *Debug* logging level will slow down the application.
+1. **Important**: after exporting the logs, set the logging level back to *Default*. *Debug* logging level will slow down the application.
 
 1. Send the archive to the AdGuard support service at **support@adguard.com**, describe the problem and don't forget to mention the time when you reproduced the issue.
 
@@ -65,7 +65,7 @@ If you have an older version of AdGuard for Windows, run the application with th
 
     We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
 
-1. Export the recorded logs using the *Export Logs* button.
+1. Export the collected logs using the *Export Logs* button.
 
     ![Esporta i registri *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 

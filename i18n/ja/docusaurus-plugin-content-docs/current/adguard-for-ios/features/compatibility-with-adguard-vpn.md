@@ -1,32 +1,32 @@
 ---
-title: Compatibility with AdGuard VPN
+title: AdGuard VPN との併用モード
 sidebar_position: 8
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for iOS」についてです。 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
-In most cases, an ad blocker app and a VPN app cannot work together, due to certain system limitations.
+通常、広告ブロッカーアプリとVPNアプリは、技術的なシステム制限のために、同時に動作することはできません。
 
-Nevertheless, we've managed to find a solution to befriend [AdGuard VPN](https://adguard-vpn.com/) and AdGuard Ad Blocker.
+しかし、[AdGuard VPN](https://adguard-vpn.com/) と AdGuard 広告ブロッカーを併用するための解決策を見つけることができました。
 
-On the _Protection_ section, you can easily switch between two apps.
+_AdGuardによる保護_画面で、2つのアプリを簡単に切り替えることができます。
 
-### How to enable compatibility mode
+### 併用モードを有効にする方法
 
-**If you already have AdGuard Ad Blocker when installing AdGuard VPN, integrated (compatibility) mode will turn on automatically, allowing you to use our apps at the same time.**
+**AdGuard VPN のインストール時に、すでに AdGuard 広告ブロッカーがインストールされている場合は、併用モードは自動的にオンになり、両アプリを同時に利用できるようになります。**
 
-If you have installed AdGuard VPN first and only then decided to try AdGuard Ad Blocker, follow these steps to use the two apps together:
+AdGuard VPN を先にインストールしていて、その後 AdGuard 広告ブロッカーをインストールした場合は、両アプリを併用する方法は以下の通りです:
 
-1. Open AdGuard VPN for iOS app and select ⚙ _Settings_ in the lower right corner of the screen.
-2. Go to _App settings_ and select _Operating mode_.
-3. Switch the mode from VPN to Integrated.
+1. AdGuard VPN for iOS アプリを開き、メイン画面右下の ⚙ _設定_を選択します。
+2. 「_アプリの設定_」→「_動作モード_」へ移動します。
+3. 動作モードを「VPN」から「併用モード」に切り替えてください。
 
 :::note
 
-In _Integrated mode_, AdGuard VPN's _Exclusions_ and _DNS server_ features are not available.
+併用モードでは、AdGuard VPN の「VPN対象外リスト」および「DNS サーバー 」機能は利用できません。
 
 :::

@@ -5,59 +5,59 @@ sidebar_position: 8
 
 :::info
 
-В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
-AdGuard Browser Assistant allows you to manage AdGuard protection directly from your browser.
+Браузерный помощник AdGuard позволяет управлять защитой AdGuard прямо из браузера.
 
 ![The Assistant window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
 
 ## Как это работает
 
-AdGuard Browser Assistant is a browser extension. It allows you to quickly manage the AdGuard app:
+Браузерный помощник AdGuard — это расширение для браузера. Позволяет быстро управлять приложением AdGuard:
 
-- Enable or disable protection for a specific website (a toggle under the website name)
-- Pause protection for 30 seconds
-- Disable protection (the pause icon in the upper right corner)
-- Manually block an ad
-- Open the filtering log
-- Report incorrect blocking
-- Open AdGuard settings
-- View website certificate and manage HTTPS filtering (the lock icon next to the website name)
+- Включить или отключить защиту для определённого сайта (переключатель под его названием)
+- Приостановить защиту на 30 секунд
+- Отключить защиту (значок паузы в правом верхнем углу)
+- Блокировка рекламы вручную
+- Открыть журнал фильтрации
+- Сообщить о неправильной блокировке
+- Открыть настройки AdGuard
+- Посмотреть сертификат сайта и управлять HTTPS-фильтрацией (значок замка рядом с названием сайта)
 
 ## Как установить
 
-When you install AdGuard for Mac, you will be prompted to install Browser Assistant for your default browser. If you skip this step, you can install it later.
+При установке AdGuard для Mac вам будет предложено установить Помощник для вашего браузера по умолчанию. Если вы пропустите этот шаг, вы сможете установить его позже.
 
-**From settings**:
+**Из настроек**:
 
-1. Open the AdGuard menu.
-2. Click the gear icon and select _Preferences_.
-3. Switch to the _Assistant_ tab.
-4. Click _Get the Extension_ next to your default browser.
-5. Install Assistant from your browser’s extension store.
+1. Откройте меню AdGuard.
+2. Нажмите на значок шестерёнки и выберите _Настройки_.
+3. Перейдите на вкладку _Помощник_.
+4. Нажмите _Добавить расширение_ рядом с вашим браузером по умолчанию.
+5. Установите Помощник из магазина расширений вашего браузера.
 
-![The Assistant tab](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)
+![Окно Помощника](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)
 
-**From the website**:
+**С сайта**:
 
-1. Open the [Assistant page](https://adguard.com/adguard-assistant/overview.html).
-2. Under your browser name, select _Install_.
-3. Install Assistant from your browser’s extension store.
+1. Откройте [страницу Помощника](https://adguard.com/adguard-assistant/overview.html).
+2. Под названием вашего браузера выберите _Установить_.
+3. Установите Помощник из магазина расширений вашего браузера.
 
 :::note
 
-In rare cases, a browser may be incompatible with Assistant. To manage AdGuard from your browser, you can install the legacy Assistant instead.
+В редких случаях браузер может быть несовместим с Помощником. Чтобы управлять AdGuard из браузера, вы можете установить предыдущую версию Помощника.
 
 :::
 
 ## Предыдущая версия Помощника
 
-The legacy Assistant is the previous version of AdGuard Browser Assistant. It’s a userscript that doesn’t require additional installation. While the legacy Assistant does its job well, it has several drawbacks:
+Предыдущая версия Помощника — это пользовательский скрипт, который не требует дополнительной установки. Хотя он хорошо справляется со своей задачей, у него есть несколько недостатков:
 
-- It has fewer features than the extension version.
-- You have to wait for the userscript to be inserted into a webpage — sometimes it doesn’t load immediately.
-- You can’t hide the Assistant icon on the page.
+- В нём меньше функций, чем в расширении-Помощнике.
+- Иногда он загружается не сразу — придётся ждать, пока скрипт применится на странице.
+- Скрыть значок Помощника на странице не получится.
 
-We recommend that you use the legacy Assistant only if the new Assistant is not available.
+Мы рекомендуем использовать предыдущую версию Помощника только в том случае, если новая недоступна.

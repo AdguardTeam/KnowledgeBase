@@ -79,7 +79,7 @@ L'activation de cette option empêchera le navigateur d'envoyer des données GPS
 
 ### Bloquer Flash {#flash}
 
-Le plugin Flash Player est devenu de plus en plus vulnérable aux menaces en ligne telles que les virus et les pirates informatiques ; il peut également affecter de manière significative le temps de chargement des sites web. L'activation de ce paramètre permet à AdGuard de bloquer la capacité des navigateurs à détecter les composants (tels que les plugins et les objets ActiveXObject) qui permettent à Flash d'afficher du contenu. Cela signifie que les navigateurs ne peuvent pas prendre en charge Flash.
+The Flash Player plugin has become increasingly vulnerable to such online threats as viruses and hackers; it may also significantly increase website load times. L'activation de ce paramètre permet à AdGuard de bloquer la capacité des navigateurs à détecter les composants (tels que les plugins et les objets ActiveXObject) qui permettent à Flash d'afficher du contenu. Cela signifie que les navigateurs ne peuvent pas prendre en charge Flash.
 
 ### Bloquer Java {#java}
 
@@ -95,7 +95,7 @@ Vous pouvez également définir une valeur arbitraire pour le référent en la s
 
 Notez que pour pouvoir filtrer le trafic, les applications AdGuard "interceptent" les requêtes navigateur-serveur. Les requêtes adressées aux serveurs de publicité, de suivi et d'hameçonnage peuvent être modifiées avant d'être envoyées au serveur ou bloquées complètement. Idem pour l'option *Masquer le référent aux tiers* : AdGuard intercepte les requêtes HTTP(S), notamment pour supprimer ou modifier l'en-tête référent si cette option est activée. Toutefois, cela ne se produit qu'une fois que ces requêtes "quittent" le navigateur. Cela signifie que si vous surveillez le référent dans le navigateur (par exemple, avec l'aide des outils de développement de Chrome), vous verrez le référent d'origine car la requête n'a pas encore atteint AdGuard. Vous pouvez utiliser des logiciels tels que [Fiddler](https://www.telerik.com/fiddler) pour vous assurer que le référent est modifié correctement.
 
-En revanche, comme toutes les extensions de navigateur, l'Extension AdGuard fonctionne "à l'intérieur" du navigateur. Elle modifiera le référent à ce moment précis, de sorte que les outils de développeur afficheront le référent souhaité pour vos demandes.
+On the other hand, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. Elle modifiera le référent à ce moment précis, de sorte que les outils de développeur afficheront le référent souhaité pour vos demandes.
 
 ### Masquer votre agent utilisateur {#useragent}
 
@@ -120,3 +120,9 @@ L’inspection approfondie des paquets ou IPP est un système d’analyse et de 
 AdGuard peut modifier les données des paquets sortants afin que le client ne relève pas des critères de blocage IPP. Cela signifie qu'en activant cette option, les utilisateurs peuvent accéder au contenu qu'ils souhaitent. Tous les systèmes IPP ne peuvent pas être contournés pour le moment, mais nous travaillons constamment à les améliorer.
 
 La fonction "Protection anti IPP" est déjà implémentée dans AdGuard pour Windows, AdGuard pour Mac et AdGuard pour Android.
+
+:::caution
+
+If this feature is enabled in AdGuard for Windows, it may interfere with ESET antivirus. Anti-DPI will prevent ESET from filtering traffic, leaving blacklisted and malicious websites unblocked.
+
+:::

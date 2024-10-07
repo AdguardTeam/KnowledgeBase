@@ -13,9 +13,9 @@ Tento článek obsahuje některé z nejčastějších chyb, se kterými se můž
 
 ### Chyba 5: Přístup odepřen {#error-5}
 
-K této chybě dochází, pokud je něco v nepořádku s oprávněními. Může existovat několik různých důvodů, proč instalační program AdGuardu nemá oprávnění potřebná k řádnému dokončení procesu instalace. Můžete vyzkoušet následující kroky:
+This error message appears when required permissions haven't been granted. Může existovat několik různých důvodů, proč instalační program AdGuardu nemá oprávnění potřebná k řádnému dokončení procesu instalace. Můžete vyzkoušet následující kroky:
 
-- Dočasně vypněte antivirové programy. Některé z nich mohou v závislosti na závažnosti svého nastavení instalaci narušovat.
+- Temporarily disable your antivirus. Některé z nich mohou v závislosti na závažnosti svého nastavení instalaci narušovat.
 
 - Zvolte jinou složku pro instalaci. Je možné, že aktuální složka pro instalaci má nějaká omezení přístupu. Také se ujistěte, že jste nevybrali externí jednotku, virtuální jednotku atd.
 
@@ -23,17 +23,17 @@ K této chybě dochází, pokud je něco v nepořádku s oprávněními. Může 
 
 ### Chyba 112: Disk je plný, Chyba 1632: Dočasná složka je plná nebo nedostupná {#error-112}
 
-Jedná se o dvě různé chyby s velmi podobným řešením. Jak napovídá jejich název, instalační program AdGuardu nenašel dostatek místa na disku pro dokončení instalace. Problém můžete vyřešit několika způsoby:
+Jedná se o dvě různé chyby s velmi podobným řešením. As their titles suggest, AdGuard installer didn't find enough disk space to complete the installation. Problém můžete vyřešit několika způsoby:
 
 - Odinstalujte některé programy nebo odstraňte nepotřebné soubory z jednotky, na kterou jste chtěli nainstalovat AdGuard.
 
-- Stáhněte, nainstalujte a spusťte [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), bezplatný software od společnosti Malwarebytes. Mimo jiné vyčistí váš systém od nejrůznějších pozůstatků souborů, které zůstaly po nesprávně odinstalovaných programech a podobně. Pomůže vyčistit místo na disku.
+- Stáhněte, nainstalujte a spusťte [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), bezplatný software od společnosti Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstalled programs and such. Pomůže vyčistit místo na disku.
 
 - Restartujte počítač. Dočasné soubory mohou někdy zabírat značné množství místa na disku a nejspolehlivějším způsobem, jak se jich zbavit, je restartování počítače.
 
 ### Chyba 1601: Instalační program pro Windows není přístupný {#error-1601}
 
-Dalo by se říci, že se jedná o zvláštní podtyp chyby 1603. Možná řešení jsou podobná:
+You could say this is a particular subcategory of Error 1603. Možná řešení jsou podobná:
 
 - Spusťte a znovu zaregistrujte službu Microsoft Installer. Vyžaduje to určitou práci.
 
@@ -75,7 +75,7 @@ K této chybě dochází při současném spuštění několika instancí instal
 
 - Restartujte počítač a spusťte instalaci znovu. Po restartování počítače se zastaví všechny probíhající procesy, včetně všech kopií instalačního programu.
 
-- Na instalační program neklikejte vícekrát, i když se nespustí hned. Zobrazení uživatelského rozhraní instalátoru může někdy trvat několik sekund.
+- Don't make multiple clicks on the installer even if it doesn't start right away. Zobrazení uživatelského rozhraní instalátoru může někdy trvat několik sekund.
 
 ### Chyba 1638: Další verze tohoto produktu je již nainstalována {#error-1638}
 
@@ -83,14 +83,14 @@ Je velmi pravděpodobné, že jste si AdGuard již dříve nainstalovali.
 
 - Zkontrolujte, zda je v počítači již nainstalován AdGuard. Můžete to udělat stisknutím klávesy *Win* a zadáním názvu ***AdGuard***.
 
-- Možná tam jsou nějaké zbytky souborů z předchozí instalace AdGuardu. Odinstalujte AdGuard pomocí našeho speciálního [nástroje pro odinstalaci](../../installation#advanced) a poté instalaci zopakujte.
+- Maybe there're some leftover files from a previous AdGuard installation. Odinstalujte AdGuard pomocí našeho speciálního [nástroje pro odinstalaci](../../installation#advanced) a poté instalaci zopakujte.
 
 ### Další chyby {#other}
 
 Pokud jste narazili na chybu, která není uvedena výše, je možné, že ji dokážeme vyřešit sami. K tomu však od vás potřebujeme soubory záznamů. Proveďte následující kroky:
 
-- Vyhledejte a archivujte **instalační protokoly AdGuardu** jak je popsáno v [tomto článku](../installation-logs).
+- Find and archive the **AdGuard installation logs** as it is described in [this article](../installation-logs).
 
-- Vyhledejte a uložte na disk **záznamy prohlížeče událostí**. [Tento článek](../system-logs) vysvětluje, jak to udělat.
+- Find and save to disk the **Event Viewer** logs. [Tento článek](../system-logs) vysvětluje, jak to udělat.
 
 - Všechny tyto soubory z předchozích dvou kroků zašlete e-mailem na adresu **support@adguard.com** a v těle zprávy popište problém. Naši agenti technické podpory vám odpoví co nejdříve.

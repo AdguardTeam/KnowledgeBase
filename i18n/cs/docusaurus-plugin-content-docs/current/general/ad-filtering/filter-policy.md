@@ -41,12 +41,14 @@ Mezi AdGuard filtry blokující reklamy patří:
 - Základní filtr AdGuardu
 - Filtr mobilních reklam AdGuard
 - Regionální filtry rozdělené podle jazyků — čínština, holandština, francouzština, němčina, japonština, ruština, španělština/portugalština, turečtina a ukrajinština
+- AdGuard Quick Fixes filter
 
 ### Účel těchto filtrů
 
 - **Základní filtr** je určen k blokování reklam na anglicky psaných webových stránkách a na těch, pro které neexistuje samostatný filtr. Obsahuje také obecná pravidla filtrování, která platí pro všechny weby bez ohledu na jazyk
 - **Filtr mobilních reklam** blokuje reklamy na mobilních verzích webových stránek a v mobilních aplikacích. Neexistuje žádná segmentace na základě jazyka
 - **Regionální filtry** se řídí stejnými zásadami jako **Základní filtr**, ale jsou omezeny na webové stránky v konkrétních jazycích
+- **Quick Fixes filter** used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension.
 
 Cílem filtrů pro blokování reklam je blokovat všechny typy reklam na webových stránkách, v aplikacích a v některých zařízeních, která mohou načítat reklamy z internetu:
 

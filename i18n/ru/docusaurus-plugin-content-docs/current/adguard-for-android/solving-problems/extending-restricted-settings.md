@@ -5,7 +5,7 @@ sidebar_position: 18
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
@@ -13,7 +13,7 @@ In an effort to improve user privacy, Google has expanded the restriction settin
 
 :::note
 
-AdGuard has a strict no-logging policy, which means that we do not collect your data or send it to third parties. We only ask for access to data without which the application cannot function.
+AdGuard придерживается строгой политики без логов, что означает, что мы не собираем ваши данные и не передаём их третьим лицам. We only ask for access to data without which the application cannot function.
 
 :::
 

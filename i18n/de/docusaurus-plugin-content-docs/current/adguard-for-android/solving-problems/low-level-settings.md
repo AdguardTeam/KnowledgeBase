@@ -1,5 +1,5 @@
 ---
-title: Low-level settings guide
+title: Leitfaden für Low-Level-Einstellungen
 sidebar_position: 6
 ---
 
@@ -9,7 +9,7 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-## How to reach Low-level settings
+## So öffnen Sie die Low-Level-Einstellungen
 
 :::caution
 
@@ -25,7 +25,7 @@ For AdGuard v4.0 for Android we've completely redesigned the low-level settings:
 
 ### DNS-Schutz
 
-#### Fallback upstreams
+#### Fallback-Upstreams
 
 Here you can specify the fallback DNS resolver(s) to be used if the configured server is unavailable. There are three options: *Automatic DNS*, *None*, and *Custom DNS*. If no fallback server is specified, the *Automatic DNS* — the system DNS or AdGuard DNS — will be used. *None* means no fallback at all. Selecting *Custom DNS* allows you to list IPv4 and IPv6 server addresses to use as upstreams.
 
@@ -37,7 +37,7 @@ Here you can list domains that will be forwarded directly to fallback upstreams 
 
 If this setting is enabled, AdGuard will detect search domains and automatically forward them to fallback upstreams.
 
-#### Bootstrap upstreams
+#### Bootstrap-Upstreams
 
 Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* — the system DNS or AdGuard DNS — is used by default. By selecting *Custom DNS*, you can list IPv4 and IPv6 server addresses to use as bootstrap upstreams.
 
@@ -45,17 +45,17 @@ Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* — the system 
 
 Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for instance, `||example.org^`).
 
-- Respond with REFUSED
-- Respond with NXDOMAIN
-- Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
+- Mit REFUSED antworten
+- Mit NXDOMAIN antworten
+- Mit benutzerdefinierter IP-Adresse antworten (hier können IPv4- und IPv6-Adressen angegeben werden)
 
 #### Sperrmodus für Hosts-Regeln
 
 Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax (for instance, `<ip> <domain> 0.0.0.0 example.com`).
 
-- Respond with REFUSED
-- Respond with NXDOMAIN
-- Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
+- Mit REFUSED antworten
+- Mit NXDOMAIN antworten
+- Mit benutzerdefinierter IP-Adresse antworten (hier können IPv4- und IPv6-Adressen angegeben werden)
 
 #### DNS request timeout
 
@@ -113,7 +113,7 @@ Use it only for debugging purposes!
 
 #### Encrypted Client Hello
 
-Jede verschlüsselte Internetverbindung hat einen unverschlüsselten Teil. Dies ist das allererste Paket, das den Namen des Servers enthält, mit dem Sie sich verbinden. Die verschlüsselte Client-Hallo-Technologie soll dieses Problem lösen und das letzte bisschen an unverschlüsselter Information verschlüsseln. To benefit from it, enable the *Encrypted Client Hello* option. It uses a local DNS proxy to look for the ECH configuration for the domain. Wenn es gefunden wird, wird das ClientHello-Paket verschlüsselt.
+Jede verschlüsselte Internetverbindung hat einen unverschlüsselten Teil. Dies ist das allererste Paket, das den Namen des Servers enthält, mit dem Sie sich verbinden. Die verschlüsselte Client-Hallo-Technologie soll dieses Problem lösen und das letzte bisschen an unverschlüsselter Information verschlüsseln. Um davon zu profitieren, aktivieren Sie die Option *Encrypted ClientHello*. Sie verwendet einen lokalen DNS-Proxy, um nach der ECH-Konfiguration für die Domain zu suchen. If it is found, Client Hello packet will be encrypted.
 
 #### OCSP checking
 
@@ -127,11 +127,11 @@ If the verification takes too long, AdGuard will allow the connection while cont
 
 If this setting is enabled, AdGuard will redirect DNS-over-HTTPS requests to the local DNS proxy in addition to plain DNS requests. We recommend disabling fallback upstreams and using only encrypted DNS servers to maintain privacy.
 
-#### Filter HTTP/3
+#### HTTP/3 filtern
 
 If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
-### Outbound proxy
+### Ausgehender Proxy
 
 #### Show the Filter DNS requests setting
 
@@ -147,7 +147,7 @@ Here you can specify port ranges that should be filtered.
 
 If this setting is enabled, AdGuard will record blocked HTML elements in *Recent activity*.
 
-#### Scriplet debugging
+#### Scriptlet debugging
 
 If this setting is enabled, debugging in scriptlets will be activated, and the browser log will record when scriptlet rules are applied.
 

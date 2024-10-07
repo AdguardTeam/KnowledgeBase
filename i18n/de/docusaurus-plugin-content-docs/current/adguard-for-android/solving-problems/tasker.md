@@ -118,7 +118,7 @@ Or you can configure remove parameters manually:
 
  `[trust]` applies for **HTTPS_CONNECT** server type only and include option **Trust any certificates**. It is necessary to set **true or false** value.
 
-:::note Example
+:::note Beispiel
 
 `setting by name`: server:MyServer
 
@@ -126,7 +126,7 @@ Or you can configure remove parameters manually:
 
 :::
 
-**Don't forget to include the password as an extra and mention package name and class. You need to do so for every intent.**
+**Don't forget to include the password, package name, and class. You need to do so for every intent.**
 
 Extra: `password:*******`
 
@@ -136,7 +136,7 @@ Class: `com.adguard.android.receiver.AutomationReceiver`
 
 :::note
 
-Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. If you used this feature, please pay attention and use the new name.
+Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. If this function is used, remember to update to the new name.
 
 :::
 
@@ -144,6 +144,6 @@ Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiv
 
 To perform a task without showing a toast, add an additional EXTRA `quiet: true`
 
-### Example
+### Beispiel
 
-![Automation *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)
+![Automatisierung *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)

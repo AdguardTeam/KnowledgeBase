@@ -1,5 +1,5 @@
 ---
-title: 'Install/Uninstall'
+title: 'Installazione/Disinstallazione'
 sidebar_position: 2
 ---
 
@@ -11,76 +11,76 @@ Questo articolo riguarda AdGuard per Mac, un blocco annunci multifunzionale che 
 
 ## Requisiti di sistema
 
-**Operating system version:** macOS 10.15 (64 bit) or higher
+**Versione del sistema operativo:** macOS 10.15 (64 bit) o superiore
 
-**RAM:** at least 2 GB
+**RAM:** almeno 2 GB
 
-**Browsers:** Safari, Chrome, Firefox, Opera, Yandex.Browser, and any other macOS compatible browser
+**Browser:** Safari, Chrome, Firefox, Opera, Yandex.Browser e ogni altro browser compatibile con macOS
 
-**Free disk space:** 120 MB
+**Spazio libero su disco:** 120 MB
 
-## Installation
+## Installazione
 
-To install AdGuard for Mac on your computer, launch your browser, type *adguard.com* in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
+Per installare AdGuard per Mac sul tuo computer, avvia il tuo browser, digita *adguard.com* nella barra degli indirizzi e premi su **Scarica** [sulla pagina che si apre](https://adguard.com/download.html?auto=1).
 
-![Download the app *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
+![Scarica l'app *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
-Wait for *AdguardInstaller.dmg* to download and double-click its icon in the list of downloaded files on the Dock panel.
+Attendi il download di *AdguardInstaller.dmg* e fai doppio click sulla sua icona nell'elenco dei file scaricati sul pannello del Dock.
 
-![Double-click to open the file](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
+![Doppio click per aprire il file](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
-The AdGuard icon will appear on your desktop. Click it to open the installation app and double-click the AdGuard icon in the opened window.
+L'icona di AdGuard apparirà sul tuo desktop. Cliccala per aprire l'app di installazione e fai doppio clic sull'icona di AdGuard nella finestra aperta.
 
-![Double-click the AdGuard icon](https://cdn.adtidy.org/content/kb/ad_blocker/mac/3.jpg)
+![Doppio click sull'icona di AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/mac/3.jpg)
 
-Upon the first AdGuard launch, your operating system will warn you that this application has been downloaded from the Internet. Click **Open**.
+Al primo avvio di AdGuard, il tuo sistema operativo ti avviserà che l'applicazione è stata scaricata da Internet. Clicca su **Apri**.
 
-![Click Open](https://cdn.adtidy.org/content/kb/ad_blocker/mac/4.jpg)
+![Clicca Apri](https://cdn.adtidy.org/content/kb/ad_blocker/mac/4.jpg)
 
-In the next step, you'll need to click **Install**.
+Nel passaggio successivo, dovrai cliccare su **Installa**.
 
-![Click Install](https://cdn.adtidy.org/public/Adguard/kb/installation/Mac/en/5.png)
+![Clicca Installa](https://cdn.adtidy.org/public/Adguard/kb/installation/Mac/en/5.png)
 
-Wait for the installer to download the required files.
+Attendi che il programma d'installazione scarichi i file necessari.
 
-![Wait until the necessary files are downloaded](https://cdn.adtidy.org/content/kb/ad_blocker/mac/6.jpg)
+![Attendi che i file necessari siano scaricati](https://cdn.adtidy.org/content/kb/ad_blocker/mac/6.jpg)
 
-To use the application, you will need the administrator password for your macOS account. Enter the password when prompted in the dialogue box and press **OK**.
+Per utilizzare l'applicazione, necessiterai della password dell'amministratore per il tuo profilo di macOS. Inserisci la password quando richiesto nella finestra e premi **OK**.
 
-![Enter the password](https://cdn.adtidy.org/content/kb/ad_blocker/mac/7.jpg)
+![Inserisci la password](https://cdn.adtidy.org/content/kb/ad_blocker/mac/7.jpg)
 
-Now, you'll see a quick installation wizard where you'll be offered to configure protection to your needs. You can either start fine-tuning right away ("Let's do it!") or skip for now ("Leave as it is").
+Ora, vedrai una procedura guidata d'installazione rapida, in cui ti sarà richiesto di configurare la protezione secondo le tue esigenze. Puoi avviare subito la messa a punto ("Facciamolo!") o saltarla per il momento ("Lascia così com'è").
 
-![Configure protection](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation-wizard.jpg)
+![Configura la protezione](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation-wizard.jpg)
 
-Here we are, AdGuard is installed on your Mac!
+Ecco fatto, AdGuard è installata sul tuo Mac!
 
-## Uninstall
+## Disinstallazione
 
-### Regular
+### Normale
 
-First of all, open the Finder app by clicking the respective icon:
+Prima di tutto, apri l'app Finder cliccando sulla rispettiva icona:
 
-![Open Finder](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)
+![Apri Finder](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)
 
-Go to the Applications section. Find AdGuard there, right-click it and choose **Move to Trash**.
+Vai alla sezione Applicazioni. Trova AdGuard, clicca con il destro e scegli **Sposta nel Cestino**.
 
-![Move AdGuard to Trash *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/11.jpg)
+![Sposta AdGuard nel Cestino *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/11.jpg)
 
-### Advanced
+### Avanzate
 
-**Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Also, do all the steps from the "regular uninstall" first.**
+**Utilizza queste istruzioni soltanto se sai cosa stai facendo o se il nostro servizio di supporto ti ha specificamente consigliato la 'disinstallazione avanzata'. Inoltre, esegui prima tutti i passaggi dalla "disinstallazione regolare".**
 
-1. After that, delete following AdGuard files:
-    - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
+1. Successivamente, elimina i seguenti file di AdGuard:
+    - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (cartella)
     - ~/Library/Preferences/com.adguard.mac.adguard.plist (file)
-    - ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (folder)
+    - ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (cartella)
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (file)
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (file)
     - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (file)
     - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (file)
 
-    To do so, open the Terminal app, then enter and execute the following commands:
+    Per farlo, apri l'app del Terminale, quindi, inserisci ed esegui i seguenti comandi:
 
     ```bash
     sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
@@ -94,13 +94,13 @@ Go to the Applications section. Find AdGuard there, right-click it and choose **
     sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log
     ```
 
-1. Run the **Activity Monitor** app.
-1. Using search tool, find the process **cfprefsd**.
+1. Avvia l'app **Monitoraggio Attività**.
+1. Utilizzando lo strumento di ricerca, trova il processo **cfprefsd**.
 
-    ![Run Activity Monitor](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
+    ![Esegui Monitoraggio Attività](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. Stop the process which is being run under the user (not the one run under root). To do so, click the process and then click X on the upper left. Confirm the action in the dialogue window.
+1. Arresta il processo in esecuzione sotto l'utente (non quello eseguito sotto root). Per farlo, clicca sul processo, quindi clicca sulla X in alto a sinistra. Conferma l'azione nella finestra.
 
-    ![Confirm](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
+    ![Conferma](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 
-AdGuard is removed from your computer now.
+AdGuard è ora rimosso dal tuo computer.

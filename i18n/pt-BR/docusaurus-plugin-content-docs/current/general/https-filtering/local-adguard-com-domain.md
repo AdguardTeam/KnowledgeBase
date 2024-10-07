@@ -1,27 +1,27 @@
 ---
-title: Local.adguard.org domain
+title: Domínio local.adguard.org
 sidebar_position: 3
 ---
 
-Users of AdGuard for Windows, Mac, and Android may notice that AdGuard adds a small script to every web page, that is loaded from the `local.adguard.org` domain.
+Usuários do AdGuard para Windows, Mac e Android podem notar que o AdGuard adiciona um pequeno script a cada página da web, que é carregado do domínio `local.adguard.org`.
 
-First of all, don't worry, this is not a real domain, and there is actually no real server with that name. This domain is used to apply cosmetic filtering to web pages, but everything is done locally right on your device without connecting to any server.
+Primeiro, não se preocupe, este não é um domínio real e, na verdade, não há nenhum servidor real com esse nome. Este domínio é usado para aplicar filtragem cosmética a páginas da web, mas tudo é feito localmente no seu dispositivo, sem conexão a nenhum servidor.
 
-### Technical explanation
+### Explicação técnica
 
-But what's going on and why is it done? Please read the technical explanation below.
+Mas o que está acontecendo e por que isso é feito? Leia a explicação técnica abaixo.
 
-1. AdGuard is a network-level content blocker so it cannot simply add custom JavaScript and CSS to webpages like what browser extensions do. However, doing this is crucial for quality content blocking.
-2. In order to do it AdGuard injects a "content script" that looks like this: `<script src="https://local.adguard.org/.../content-script.js">`. This "content script" takes care of cosmetic filtering, hides or removes ad content from the web pages.
-3. Connections to the IP address of the `local.adguard.org` domain are intercepted by AdGuard on the network level and **processed locally**. This is why that domain has a "static" IP address that does not change for years.
+1. O AdGuard é um bloqueador de conteúdo em nível de rede, portanto, ele não é capaz de simplesmente adicionar JavaScript e CSS personalizados a páginas da web como as extensões do navegador fazem. No entanto, isso é crucial para bloquear conteúdo com qualidade.
+2. Para isso, o AdGuard injeta um "script de conteúdo" parecido com este: `<script src="https://local.adguard.org/.../content-script.js">`. Este "script de conteúdo" cuida da filtragem cosmética, ocultando ou removendo conteúdo de anúncios das páginas da web.
+3. As conexões com o endereço IP do domínio `local.adguard.org` são interceptadas pelo AdGuard no nível de rede e **processadas localmente**. É por isso que esse domínio tem um endereço IP "estático" que não muda por anos.
 
-**Why do we need to use a real IP address for that?**
+**Por que precisamos usar um endereço IP real para isso?**
 
-- We cannot use `127.0.0.1` as the browsers won't accept it.
-- Using some IP address from the private subnets is possible, but this solution has two downsides.
-    - First, there is a slight chance of intersecting with an existing intranet service and breaking access to it.
-    - Second, some DNS servers may consider this a DNS rebinding attack and refuse to respond to `local.adguard.org`.
+- Não podemos usar `127.0.0.1` porque os navegadores não o aceitarão.
+- É possível usar alguns endereços IP de sub-redes privadas, mas essa solução tem duas desvantagens.
+    - Primeiro, há uma pequena chance de intersecção com um serviço de intranet existente e interromper o acesso a ele.
+    - Em segundo lugar, alguns servidores DNS podem considerar isso um ataque de revinculação de DNS e se recusar a responder a `local.adguard.org`.
 
-### Verification
+### Verificação
 
-This is easy to verify. If you disable AdGuard, you'll see that it is simply impossible to establish connection to `local.adguard.org` since there is no server with that address. Just try opening it in your browser when AdGuard is disabled.
+Isso é fácil de verificar. Se você desabilitar o AdGuard, verá que é simplesmente impossível estabelecer conexão com `local.adguard.org`, pois não há servidor com esse endereço. Tente abri-lo no seu navegador quando o AdGuard estiver desativado.

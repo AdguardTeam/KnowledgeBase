@@ -18,7 +18,7 @@ sidebar_position: 8
 
 ## Как разрешить создание файла minidump
 
-Even if you don’t experience any BSoD crash errors, you can still set this option — this is a general recommendation, not necessarily related to AdGuard products. Следуйте этой инструкции, чтобы автоматически создать minidump-файл.
+Даже если вы не сталкивались с ошибками BSoD, лучше настроить эту опцию — это общая рекомендация, не обязательно связанная с продуктами AdGuard. Следуйте этой инструкции, чтобы автоматически создать minidump-файл.
 
  1. Наберите *sysdm.cpl* в строке поиска Windows и нажмите **Открыть**. На экране появится окно **Свойства системы**.
 

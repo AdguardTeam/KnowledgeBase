@@ -17,7 +17,7 @@ Vérifier si le bogue n'a pas déjà été signalé. Nous vous conseillons de pr
 
 ### Comment décrire un problème
 
-Essayez de fournir autant de détails que possible – cela nous permettra de reproduire plus facilement le bug et de trouver comment le corriger. Voici ce que nous nous attendons à voir dans un rapport de bug :
+Essayez de fournir autant de détails que possible – cela nous permettra de reproduire plus facilement le bug et de trouver comment le corriger. Voici ce que nous attendons de voir d'un rapport de bogue :
 
 - La version de votre application
 - La version de votre système d’exploitation

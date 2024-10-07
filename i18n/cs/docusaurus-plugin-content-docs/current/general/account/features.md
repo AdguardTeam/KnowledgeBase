@@ -35,4 +35,4 @@ V části Historie nákupů se zobrazují všechny licence, které jste kdy zako
 
 ## Kontaktování podpory
 
-Karta Podpora obsahuje užitečné odkazy, které vám pomohou vyřešit problémy nebo najít odpovědi na vaše otázky týkající se AdGuard produktů. Jsou rozděleny do šesti oddílů: FAQ, Odeslat požadavek na chybu/funkci, Nahlásit nesprávné blokování, Kontaktovat podporu, Databáze znalostí a Diskutovat.
+Karta Podpora obsahuje užitečné odkazy, které vám pomohou vyřešit problémy nebo najít odpovědi na vaše otázky týkající se AdGuard produktů. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge Base, and Discuss.

@@ -1,49 +1,49 @@
 ---
-title: Low-level settings guide
+title: Guía de configuración de bajo nivel
 sidebar_position: 6
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to reach Low-level settings
+## Cómo acceder a la configuración de bajo nivel
 
 :::caution
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
+Cambiar la *configuración de bajo nivel* puede causar problemas con el rendimiento de AdGuard, romper la conexión a Internet o comprometer tu seguridad y privacidad. Esta sección sólo debe abrirse si sabes lo que está haciendo o si se lo ha pedido nuestro equipo de asistencia.
 
 :::
 
-To go to *Low-level settings*, open the AdGuard app and tap the gear icon in the lower right corner of the screen. Then choose *General → Advanced → Low-level settings*.
+Para ir a *Configuración de bajo nivel*, abre la aplicación AdGuard y toca el ícono de engranaje en la esquina inferior derecha de la pantalla. Luego, selecciona *General → Avanzado → Configuración de bajo nivel*.
 
-## Low-level settings
+## Configuración de bajo nivel
 
-For AdGuard v4.0 for Android we've completely redesigned the low-level settings: divided them into thematic blocks, made them clearer, added validation of entered values and other safety valves, got rid of some settings, and added others.
+Para AdGuard v4.0 para Android hemos rediseñado completamente las configuraciones de bajo nivel: las dividimos en bloques temáticos, las hicimos más claras, agregamos validación de valores ingresados y otras válvulas de seguridad, eliminamos algunas configuraciones y agregamos otras.
 
-### DNS protection
+### Protección DNS
 
-#### Fallback upstreams
+#### Upstreams fallback
 
-Here you can specify the fallback DNS resolver(s) to be used if the configured server is unavailable. There are three options: *Automatic DNS*, *None*, and *Custom DNS*. If no fallback server is specified, the *Automatic DNS* — the system DNS or AdGuard DNS — will be used. *None* means no fallback at all. Selecting *Custom DNS* allows you to list IPv4 and IPv6 server addresses to use as upstreams.
+Aquí puedes especificar los solucionadores DNS de respaldo que se utilizarán si el servidor configurado no está disponible. Hay tres opciones: *DNS automático*, *Ninguno*y *DNS personalizado*. Si no se especifica ningún servidor de respaldo, se utilizará el *DNS automático* (el DNS del sistema o el DNS de AdGuard). *Ninguno* significa que no hay respaldo alguno. Seleccionar *DNS personalizado* te permitirá enumerar direcciones de servidores IPv4 e IPv6 para usar como upstream.
 
-#### Fallback domains
+#### Dominios fallback
 
-Here you can list domains that will be forwarded directly to fallback upstreams if they exist.
+Aquí puedes enumerar los dominios que se reenviarán directamente a los servidores ascendentes de respaldo, si existen.
 
-#### Detect search domains
+#### Detectar dominios de búsqueda
 
 If this setting is enabled, AdGuard will detect search domains and automatically forward them to fallback upstreams.
 
 #### Bootstrap upstreams
 
-Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* — the system DNS or AdGuard DNS — is used by default. By selecting *Custom DNS*, you can list IPv4 and IPv6 server addresses to use as bootstrap upstreams.
+DNS de arranque para servidores DoH, DoT y DoQ. El *DNS automático* (el DNS del sistema o DNS AdGuard) se utiliza de forma predeterminada. Al seleccionar *DNS personalizado*, puedes enumerar las direcciones de servidor IPv4 e IPv6 para usar como enlaces ascendentes de arranque.
 
 #### Modo de bloqueo para reglas de estilo adblock
 
-Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for instance, `||example.org^`).
+Aquí puedes especificar el tipo de respuesta para los dominios bloqueados por las reglas DNS según la sintaxis de la regla de bloqueo de publicidad (por ejemplo, `||example.org^`).
 
 - Respond with REFUSED
 - Respond with NXDOMAIN
@@ -113,7 +113,7 @@ Use it only for debugging purposes!
 
 #### Encrypted Client Hello
 
-Toda conexión a Internet cifrada tiene una parte no cifrada. Este es el primer paquete que contiene el nombre del servidor al que te estás conectando. La tecnología Encrypted Client Hello resuelve este problema y cifra la última parte de la información no cifrada. To benefit from it, enable the *Encrypted Client Hello* option. Utiliza un proxy DNS local para buscar la configuración de ECH para el dominio. Si se encuentra, el paquete ClientHello se cifrará.
+Toda conexión a Internet cifrada tiene una parte no cifrada. Este es el primer paquete que contiene el nombre del servidor al que te estás conectando. La tecnología Encrypted Client Hello resuelve este problema y cifra la última parte de la información no cifrada. To benefit from it, enable the *Encrypted Client Hello* option. Utiliza un proxy DNS local para buscar la configuración de ECH para el dominio. If it is found, Client Hello packet will be encrypted.
 
 #### OCSP checking
 
@@ -129,29 +129,29 @@ If this setting is enabled, AdGuard will redirect DNS-over-HTTPS requests to the
 
 #### Filtrar HTTP/3
 
-If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+Si esta configuración está habilitada, AdGuard filtrará las solicitudes enviadas a través de HTTP/3 además de otros tipos de solicitudes.
 
-### Outbound proxy
+### Proxy saliente
 
-#### Show the Filter DNS requests setting
+#### Mostrar la configuración de solicitudes DNS de filtro
 
-If this is enabled, the *Filter DNS requests* switch will be displayed in the *Add proxy server* dialog. Use it to enable filtering of DNS requests passing through the specified proxy.
+Si esta opción está habilitada, el interruptor *Filtrar solicitudes DNS* se mostrará en el cuadro de diálogo *Agregar servidor proxy*. Úsalo para habilitar el filtrado de solicitudes DNS que pasan a través del proxy especificado.
 
-### Protection
+### Protección
 
-#### Port ranges
+#### Rangos de puertos
 
-Here you can specify port ranges that should be filtered.
+Aquí puedes especificar los rangos de puertos que deben filtrarse.
 
-#### Log removed HTML events
+#### Registrar eventos HTML eliminados
 
-If this setting is enabled, AdGuard will record blocked HTML elements in *Recent activity*.
+Si esta configuración está habilitada, AdGuard registrará los elementos HTML bloqueados en *Actividad reciente*.
 
-#### Scriplet debugging
+#### Depuración de scriptlet
 
-If this setting is enabled, debugging in scriptlets will be activated, and the browser log will record when scriptlet rules are applied.
+Si esta configuración está habilitada, se activará la depuración en scriptlets y el registro del navegador registrará cuándo se aplican las reglas de scriptlets.
 
-#### Excluded apps
+#### Aplicaciones excluidas
 
 Here you can list package names and UIDs that you want to exclude from AdGuard protection.
 

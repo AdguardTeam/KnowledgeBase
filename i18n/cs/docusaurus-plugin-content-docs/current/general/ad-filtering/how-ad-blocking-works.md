@@ -3,7 +3,7 @@ title: Jak funguje blokování reklam
 sidebar_position: 1
 ---
 
-AdGuard nabízí mnoho produktů pro blokování reklam pro různé platformy a každý produkt má své vlastní jedinečné funkce. Všechny však spojuje to, že blokují reklamy a slídiče. Tento článek popisuje, jak blokování reklam funguje zevnitř.
+AdGuard has many ad-blocking products for different platforms, each with its own unique features. Všechny však spojuje to, že blokují reklamy a slídiče. Tento článek popisuje, jak blokování reklam funguje zevnitř.
 
 :::note
 

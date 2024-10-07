@@ -1,5 +1,5 @@
 ---
-title: How to activate premium features
+title: 如何激活高级版的功能？
 sidebar_position: 1
 ---
 
@@ -9,16 +9,16 @@ sidebar_position: 1
 
 :::
 
-There are two options to activate premium features on AdGuard for iOS app:
+激活 iOS 版 AdGuard 的高级功能有两种方法：
 
-1. Purchase a subscription. Just tap the **Get Premium** plaque anywhere in the app and follow the on-screen instructions. All you'll need to do is enter your Apple ID password and confirm the purchase. You can choose between a monthly, yearly and lifetime subscriptions.
+1. 购买订阅。 在应用程序中轻点「**获取高级版**」，然后按照屏幕上的说明操作即可。 用户只需输入 Apple ID 密码并确认购买。 用户可以选择月度、年度或终身订阅。
 
-2. Use an AdGuard license (you can purchase it at the [AdGuard website](https://adguard.com/license.html)). Log into your AdGuard personal account via the app: go to *AdGuard app → Settings → License* screen and tap the **Login** button there. You'll be asked to enter your AdGuard Personal account credentials*. After you do, if you have any valid license key in your account, it will be automatically picked up to activate Premium in your AdGuard for iOS app.
+2. 使用 AdGuard 许可证（转到 [AdGuard 网站](https://adguard.com/license.html)购买）。 通过 AdGuard 应用程序登录 AdGuard 个人账号：进入 *AdGuard 应用程序 →「设置」→「许可证」*屏幕，点击「**登录**」按钮。 系统会提示输入 AdGuard 个人账号登录信息。 完成后，如果账号中有有效的许可证密钥，它将被自动应用，以便激活 iOS 版 AdGuard 高级版本。
 
-As an alternative, you can just enter a valid license key in the e-mail field leaving password field blank to activate Premium features.
+要激活高级版功能，用户还可以在电子邮件字段中输入有效的许可证密钥，将密码字段留空。
 
 :::note
 
-AdGuard Pro for iOS (our other iOS app) can only be purchased from [App Store](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264).
+iOS 版 AdGuard Pro（我们的另一款用于 iOS 应用程序）只能在 [App Store](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264) 上购买。
 
 :::

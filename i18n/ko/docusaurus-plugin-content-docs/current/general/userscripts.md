@@ -66,11 +66,11 @@ Android용 AdGuard에만 사전 설치된 스크립트입니다. Google 검색 �
 
 ### Userscript.Zone
 
-[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high credibility, since only scripts from moderated pages are displayed.
+[Userscript.Zone](https://www.userscript.zone)은 일치하는 URL 또는 도메인을 입력하여 유저스크립트를 검색할 수 있는 웹사이트입니다. 이 웹사이트는 사용하기 쉽고 안정적입니다. 스크립트는 조정된 페이지에서만 표시됩니다.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/)는 Stylish 크리에이터의 유저스크립트 카탈로그입니다. The scripts in this catalog undergo moderation, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/)는 Stylish 크리에이터의 유저스크립트 카탈로그입니다. 이 카탈로그의 스크립트는 검토됩니다.
 
 ### OpenUserJS.org
 
@@ -134,7 +134,7 @@ Android용 AdGuard에만 사전 설치된 스크립트입니다. Google 검색 �
 
 ##### 지원되지 않는 속성
 
-이러한 속성은 Adguard에서 무시됩니다.
+이러한 속성은 AdGuard에서 무시됩니다.
 
 ```text
 @unwrap
@@ -208,4 +208,36 @@ GM_log
 !function(){(
     console.log("I am loaded!");
 )}();
+```
+
+## 유저스타일
+
+AdGuard 제품은 제한된 방식으로 유저스타일을 지원합니다. `@var` 및 `@advanced` 메타데이터 태그는 지원되지 않습니다. 그리고 `기본값`을 제외한 `@preprocessor` 메타데이터 태그의 값은 지원되지 않습니다.
+
+### 메타데이터
+
+메타데이터 블록은 `===UserStyle===`로 시작하고 `===/UserStyle===`로 끝나는 CSS 스타일 주석을 사용하여 작성됩니다. 유저스크립트에 지원되는 모든 메타데이터 태그는 유저스타일에도 지원되지만 일부 태그는 의미가 없어 무시됩니다. `@var` 및 `@advanced` 태그는 지원되지 않습니다. `@preprocessor` 태그의 지원되는 값은 `기본값`뿐입니다.
+
+### 콘텐츠
+
+유저스타일의 콘텐츠는 [`@-moz-document` 규칙](https://developer.mozilla.org/en-US/docs/Web/CSS/@document)을 지원하는 간단한 CSS입니다. 이 `media-document()` 기능은 지원되지 않습니다. 유저스타일은 `@-moz-document` 규칙 중 하나 이상과 일치하는 페이지에만 적용됩니다. 유저스타일에 `@-moz-document` 규칙이 포함되어 있지 않으면 적용되지 않습니다.
+
+### 예시
+
+```css
+/* ==UserStyle==
+@name         Example userstyle
+@namespace    https://example.org/userstyle
+@homepageURL  https://example.org/userstyle
+@version      1.0.0
+@license      Other
+@description  This is an example
+@author       example
+@preprocessor default
+==/UserStyle== */
+@-moz-document regexp("https?\:\/\/(www\.)?example\.(org|com).*") {
+    body {
+        background-color: #000000 !important;
+    }
+}
 ```

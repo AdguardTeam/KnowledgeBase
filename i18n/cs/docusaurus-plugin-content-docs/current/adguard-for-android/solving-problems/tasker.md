@@ -126,7 +126,7 @@ Nebo můžete parametry odebrání nakonfigurovat ručně:
 
 :::
 
-**Nezapomeňte uvést heslo jako dodatek a zmínit název balíčku a třídy. Musíte tak učinit pro každý záměr.**
+**Don't forget to include the password, package name, and class. Musíte tak učinit pro každý záměr.**
 
 Dodatek: `password:*******`
 
@@ -136,7 +136,7 @@ Třída: `com.adguard.android.receiver.AutomationReceiver`
 
 :::note
 
-Před verzí 4.0 se třída jmenovala `com.adguard.android.receivers.AutomationReceiver`, ale pak jsme její název změnili na `com.adguard.android.receiver.AutomationReceiver`. Pokud jste tuto funkci používali, věnujte jí pozornost a používejte nový název.
+Před verzí 4.0 se třída jmenovala `com.adguard.android.receivers.AutomationReceiver`, ale pak jsme její název změnili na `com.adguard.android.receiver.AutomationReceiver`. If this function is used, remember to update to the new name.
 
 :::
 

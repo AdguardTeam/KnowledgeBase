@@ -28,7 +28,7 @@ Wenn Sie auf eine App tippen, können Sie deren Einstellungen verwalten:
 
 ### „Problemlose“ und „problematische“ Apps
 
-Die meisten Apps funktionieren ordnungsgemäß, wenn die Filterung aktiviert ist. Bei solchen Apps wird der Datenverkehr durch AdGuard geleitet und standardmäßig gefiltert.
+Most apps work correctly when filtered. Bei solchen Apps wird der Datenverkehr durch AdGuard geleitet und standardmäßig gefiltert.
 
 Einige Apps, wie z. B. Download Manager, Radio, System-Apps mit UID 1000 und 1001 (z. B. Google Play-Dienste), sind „problematisch“ und funktionieren möglicherweise nicht richtig, wenn sie durch AdGuard geleitet werden. Aus diesem Grund kann die folgende Warnung angezeigt werden, wenn Sie versuchen, alle Apps zu leiten oder zu filtern:
 

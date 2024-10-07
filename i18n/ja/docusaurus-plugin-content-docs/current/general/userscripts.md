@@ -4,17 +4,17 @@ sidebar_position: 5
 toc_max_heading_level: 4
 ---
 
-Userscripts (we also call them "extensions") are, de-facto, mini-programs written in JavaScript. They modify or extend the functionality of one or more websites. Many AdGuard users may be already familiar with such userscripts as AdGuard Assistant, Popup Blocker, and AdGuard Extra.
+ユーザースクリプト（私たちは "エクステンション"とも呼んでいます）は、事実上、JavaScriptで書かれたミニプログラムです。 ユーザースクリプトは1つまたは複数のウェブサイトの機能を変更または拡張します。 AdGuardユーザーの多くは、「AdGuard アシスタント」「ポップアップブロッカー」「AdGuard Extra」などのユーザースクリプトをすでにご存知かもしれません。
 
 :::note Supported apps
 
-AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/features/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
+AdGuard はユーザースクリプトマネージャとして、ウェブサイトの機能を大幅に拡張することができます。 ３つのAdGuard製品（[AdGuard for Windows](/adguard-for-windows/features/extensions)、[AdGuard for Android](/adguard-for-android/features/settings#userscripts)、[AdGuard for Mac](/adguard-for-mac/features/extensions)）で、カスタムスクリプトを追加したり、既存のスクリプトを管理することができます。
 
 :::
 
-## Recommended AdGuard scripts
+## お勧めのAdGuardスクリプト
 
-These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you expose yourself to a certain risk, as some scripts may be harmful to your computer.
+これらのユーザースクリプトはAdGuardの開発者から直接提供されたもので、効果的で安全です。 他のユーザーによって開発されたユーザースクリプトのうち、AdGuardが優れていて信頼できると考えるものについては、[下のセクションにスクロールダウン](#top-picks)してください。 以下に、[いろんなスクリプトを紹介する人気ウェブサイトを](#more-userscripts)も載せていますが、未知のソースからユーザースクリプトをダウンロードする場合は、コンピュータに有害なスクリプトをダウンロードしてしまう可能性があり、一定のリスクに身をさらすことになることにご注意ください。
 
 ### AdGuard Extra
 
@@ -134,7 +134,7 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 
 ##### Unsupported properties
 
-These properties will be simply ignored by Adguard.
+These properties will be simply ignored by AdGuard.
 
 ```text
 @unwrap
@@ -208,4 +208,36 @@ GM_log
 !function(){(
     console.log("I am loaded!");
 )}();
+```
+
+## Userstyles
+
+AdGuard products provide limited support for userstyles. `@var` and `@advanced` metadata tags are not supported, as well as any value of the `@preprocessor` metadata tag except `default`.
+
+### Metadata
+
+The metadata block is written using CSS-style comments, starting with `===UserStyle===` and ending with `===/UserStyle===`. All metadata tags that are supported for userscripts are also supported for userstyles, although some of them have no meaning and are ignored. `@var` and `@advanced` tags are not supported. The only supported value of the `@preprocessor` tag is `default`.
+
+### Content
+
+The content of a userstyle is plain CSS with support for the [`@-moz-document` at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@document). The `media-document()` function is not supported. The userstyle will only be applied to pages that match one or more of the `@-moz-document` rules. If the userstyle does not contain any `@-moz-document` rules, it will not be applied.
+
+### Example
+
+```css
+/* ==UserStyle==
+@name         Example userstyle
+@namespace    https://example.org/userstyle
+@homepageURL  https://example.org/userstyle
+@version      1.0.0
+@license      Other
+@description  This is an example
+@author       example
+@preprocessor default
+==/UserStyle== */
+@-moz-document regexp("https?\:\/\/(www\.)?example\.(org|com).*") {
+    body {
+        background-color: #000000 !important;
+    }
+}
 ```

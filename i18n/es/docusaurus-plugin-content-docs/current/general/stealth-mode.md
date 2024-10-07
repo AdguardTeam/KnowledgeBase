@@ -79,7 +79,7 @@ Habilitar esta opción evitará que el navegador envíe datos de GPS que podría
 
 ### Bloquear Flash {#flash}
 
-El complemento Flash Player se ha vuelto cada vez más vulnerable a amenazas en línea como virus y hackers; También puede afectar significativamente el tiempo de carga del sitio web. Al activar esta configuración, AdGuard bloquea la capacidad de los navegadores para detectar componentes (como complementos y objetos ActiveXObject) que permiten que Flash muestre contenido. En la práctica, esto significa que los navegadores no son compatibles con Flash.
+The Flash Player plugin has become increasingly vulnerable to such online threats as viruses and hackers; it may also significantly increase website load times. Al activar esta configuración, AdGuard bloquea la capacidad de los navegadores para detectar componentes (como complementos y objetos ActiveXObject) que permiten que Flash muestre contenido. En la práctica, esto significa que los navegadores no son compatibles con Flash.
 
 ### Bloquear Java {#java}
 
@@ -95,7 +95,7 @@ También puedes establecer un valor arbitrario para Referer ingresándolo en el 
 
 Ten en cuenta que para poder filtrar el tráfico, las aplicaciones AdGuard "interceptan" las solicitudes del navegador al servidor. Las solicitudes a servidores de publicidad, seguimiento y phishing pueden modificarse antes de enviarlas al servidor o bloquearse por completo. Lo mismo ocurre con la opción *Ocultar Referer de terceros*: AdGuard intercepta solicitudes HTTP(S), en particular para eliminar o cambiar el encabezado Referer si esta opción está habilitada. Sin embargo, esto ocurre sólo después de que estas solicitudes “abandonan” el navegador. Esto significa que, si monitoreas el Referer dentro del navegador (por ejemplo, con la ayuda de las herramientas de desarrollo de Chrome), verás el Referer original porque la solicitud aún no ha llegado a AdGuard. Puedes utilizar software como [Fiddler](https://www.telerik.com/fiddler) para asegurarte de que Referer se modifique correctamente.
 
-Por el contrario, debido a la naturaleza de todas las extensiones del navegador, la extensión de navegador AdGuard funciona "dentro" del navegador. Modificará el Referer en ese mismo momento, por lo que Developer Tools mostrará el Referer deseado para tus peticiones.
+On the other hand, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. Modificará el Referer en ese mismo momento, por lo que Developer Tools mostrará el Referer deseado para tus peticiones.
 
 ### Ocultar tu User-Agent {#useragent}
 
@@ -120,3 +120,9 @@ Deep Packet Inspection es un sistema de análisis profundo y filtrado de tráfic
 AdGuard puede modificar los datos de los paquetes salientes para que el cliente no entre en los criterios de bloqueo de DPI. Esto significa que, al habilitar esta opción, los usuarios pueden acceder al contenido que desean. No todos los sistemas DPI se pueden omitir en este momento, pero trabajamos constantemente para mejorarlo.
 
 La función "Proteger de DPI" ya está implementada en AdGuard para Windows, AdGuard para Mac y AdGuard para Android.
+
+:::caution
+
+If this feature is enabled in AdGuard for Windows, it may interfere with ESET antivirus. Anti-DPI will prevent ESET from filtering traffic, leaving blacklisted and malicious websites unblocked.
+
+:::

@@ -31,7 +31,7 @@ sidebar_position: 7
 
 ### 使用 Encrypted ClientHello
 
-每一个加密的互联网连接都有一个未加密的部分， 就是发送的第一个数据包，包含用户要连接的服务器名称。 Encrypted ClientHello（ECH）的技术能够解决该问题，成功加密最后一位未加密的信息。 要使用该功能，请启用「*使用 Encrypted ClientHello*」选项。 本功能使用本地 DNS 代理查找域名的 ECH 配置。 如果找到，将对 ClientHello 数据包进行加密。
+每一个加密的互联网连接都有一个未加密的部分， 就是发送的第一个数据包，包含用户要连接的服务器名称。 Encrypted ClientHello（ECH）的技术能够解决该问题，成功加密最后一位未加密的信息。 要使用该功能，请启用「*使用 Encrypted ClientHello*」选项。 本功能使用本地 DNS 代理查找域名的 ECH 配置。 如果找到，将对 Client Hello 数据包进行加密。
 
 ### 检查网站的证书透明度
 
@@ -95,7 +95,7 @@ sidebar_position: 7
 
 ### 启用 HAR 写入
 
-此选项**仅用于调试目的**。 如果勾选复选标记，AdGuard 将创建一个文件，其中包含 HAR 1.2 格式的所有已过滤 HTTP 请求的信息。 这个文件可以用 Fiddler 应用程序分析。 注意，这可能会显著降低网页加载速度。
+此选项**仅用于调试目的**。 勾选复选框将使 AdGuard 创建一个以 HAR 1.2 格式包含有关所有经过过滤的 HTTP 请求信息的文件。 这个文件可以用 Fiddler 应用程序分析。 注意，这可能会显著降低网页加载速度。
 
 ### 在普通的 HTTP 请求中添加额外的空间
 

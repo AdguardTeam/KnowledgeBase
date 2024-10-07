@@ -1,5 +1,5 @@
 ---
-title: AdGuard使用時FaceTime不具合の対処法
+title: AdGuard使用時のFaceTime不具合の対処法
 sidebar_position: 3
 ---
 
@@ -21,7 +21,7 @@ AdGuardが「Full-Tunnel（VPNアイコンなし）」モードになってい�
 
 【「Split-Tunnel」モードに切り替える方法】
 
-1. Go to AdGuard for iOS *Settings* → *General settings*.
+1. AdGuardアプリ→ *設定*⚙ → *一般設定*
 2. 「*高度な設定モード*」のスイッチをオンにして、その下に現れる「*詳細設定*」をタップ
 3. *Tunnelモード* → *Split-Tunnel* を選択してください。
 

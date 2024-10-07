@@ -1,72 +1,72 @@
 ---
-title: How to collect AdGuard logs
+title: ログの収集・送信方法
 sidebar_position: 3
 ---
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際にどのように動作するかを確認するには、[AdGuard アプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
 :::note
 
-Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+※ログで提供されたデータおよびファイルは、[AdGuardのプライバシーポリシーに従って](https://adguard.com/en/privacy.html)処理されます。
 
 :::
 
-To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need AdGuard log files. These files contain records about errors and other events that occurr with the software. Below is the brief instruction describing the way to get the log files and send them to the support service if necessary.
+AdGuard for Windows で発生した問題を分析および診断するために、AdGuardのお客様サポートチームはログファイルを必要とする場合があります。 これらのファイルには、ソフトウェアで発生したエラーやその他のイベントに関する記録が含まれています。 以下は、ログファイルを取得し、必要に応じてAdGuardサポートに送信する方法についての簡単な説明です。
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard は、お客様のプライバシーを保護することに強くコミットしています。 [プライバシーポリシー](https://adguard.com/privacy/windows.html)を厳守し、ユーザーの個人情報を収集することはありません。 サポートチームにログを送信する前に、機密情報や共有したくない情報が含まれていないかどうか、ログファイルを確認してください。 そのような個人情報が含まれている場合は、削除してからログを送信することをお勧めします。
 
 :::
 
-### Debug logs {#debug-logs}
+### デバッグログ {#debug-logs}
 
-1. Open the AdGuard settings. Go to the *General Settings* section, scroll down to the end of the screen and switch the *Logging Level* to *Debug*.
+1. AdGuardアプリ内で「設定」を開きます。 *一般設定* セクションに移動し、画面の一番下までスクロールして、「*ログレベル*」を「*デバッグ*」に切り替えます。
 
-    ![Debug logging level *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
+    ![デバッグログレベル *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
-1. Reproduce the issue.
+1. 問題を再現します。
 
-    We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
+    問題が発生した正確な時刻をメモしておくことを強くお勧めします。そうすることで、サポートチームが問題に関連するログエントリーを見つけ、問題をより早く解決することができます。
 
-1. Export the recorded logs using the *Export Logs* button.
+1. 「*ログをエクスポートする*」ボタンを使用して、記録されたログをエクスポートします。
 
-    ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+    ![ログをエクスポート *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-    Save the archive to any folder.
+    アーカイブを任意のフォルダに保存します。
 
-1. **Important**: after exporting the logs, set the logging level back to *Standard*. *Debug* logging level will slow down the application.
+1. **重要**: ログをエクスポートした後、ログレベルを「*デフォルト*」に戻してください。 「*デバッグ*」ログレベルのまましてしまうと、アプリの動作が劇的に低速下します。
 
-1. Send the archive to the AdGuard support service at **support@adguard.com**, describe the problem and don't forget to mention the time when you reproduced the issue.
+1. アーカイブを AdGuard サポートサービス (**support@adguard.com**) に送信し、問題を説明してください。また、問題が再現された時刻も必ず記入してください。
 
-### Trace logs {#trace-logs}
+### トレース（Trace）ログ {#trace-logs}
 
-Sometimes support team members may ask you to send *trace* logs. Then you will need to do the following:
+サポートチームのメンバーから、 *トレース*ログの送信を依頼されることがあります。 Traceログの収集方法は以下の通りです:
 
-1. Stop AdGuard by right-clicking the AdGuard icon in the tray menu and choosing *Exit AdGuard*:
+1. トレイメニューのAdGuardアイコンを右クリックし、[ *AdGuardを終了*]を選択してAdGuardを停止します。
 
-    ![Exit AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
+    ![AdGuardを終了する *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
 
-    Please don't leave the service running:
+    サービスを稼働させたままにしないでください:
 
-    ![Stop AdGuard Service *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
+    ![AdGuardサービスを停止する *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
 
-1. Open the console (type `cmd` in the start panel).
+1. コンソールを開きます (スタートパネルに `cmd` と入力します)。
 
-1. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard v7.16 for Windows or later.
+1. AdGuard for Windows v7.16以降をインストールしている場合は、Windows のビット数に関係なく、コマンド `C:\"Program Files"\Adguard\Adguard.exe /trace` でAdGuardアプリを実行します。
 
-If you have an older version of AdGuard for Windows, run the application with the command C:\"Program Files (x86)"\Adguard\Adguard.exe /trace if you are using 64-bit Windows, and C:\"Program Files"\Adguard\Adguard.exe /trace if you are using 32-bit.
+Windows 用 AdGuard のより古いバージョンをお持ちの場合は、64 ビット Windows を使用している場合は C:\"Program Files (x86)"\Adguard\Adguard.exe /trace コマンドでAdGuardアプリを実行し、32 ビットを使用している場合は C:\"Program Files"\Adguard\Adguard.exe /trace コマンドでAdGuardアプリを実行します。
 
-1. Reproduce the issue.
+1. 問題を再現します。
 
-    We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
+    問題が発生した正確な時刻をメモしておくことを強くお勧めします。そうすることで、サポートチームが問題に関連するログエントリーを見つけ、問題をより早く解決することができます。
 
-1. Export the recorded logs using the *Export Logs* button.
+1. 「*ログをエクスポートする*」ボタンを使用して、記録されたログをエクスポートします。
 
-    ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+    ![ログをエクスポート *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-    Don't worry if the log file is large. We need to know as much detail as possible to fix your problem.
+    ログファイルが大きくても心配しないでください。 問題を解決するためには、できるだけ詳しい情報ほど、より早く解決策を見つけることができます。

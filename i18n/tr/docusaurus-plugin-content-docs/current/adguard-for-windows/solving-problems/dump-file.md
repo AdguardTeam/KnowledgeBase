@@ -35,10 +35,10 @@ Döküm dosyasını oluşturduktan sonra lütfen dosya konumuna gidin. Döküm d
 
 :::not
 
-Windows için AdGuard'ın iki çalışan işlemi vardır (`Adguard.exe` ve `AdguardSvc.exe`). Bu nedenle her işlem için ayrı ayrı döküm dosyası oluşturmanız gerekir.
+AdGuard for Windows has two running processes, `Adguard.exe` and `AdguardSvc.exe`. Therefore, it's necessary to create a separate dump file for each process.
 
 :::
 
 ![AdGuard hizmetleri](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
 
-Döküm dosyalarını destek ekibine gönderdiğinizde lütfen AdGuard uygulama günlüklerini de ekleyin, böylece sorunu çözme şansımız artar. [Burada](../adguard-logs) günlük dosyasının nasıl toplanacağına ilişkin talimatları kontrol edebilirsiniz.
+Döküm dosyalarını destek ekibine gönderdiğinizde lütfen AdGuard uygulama günlüklerini de ekleyin, böylece sorunu çözme şansımız artar. [Here](../adguard-logs) you can check the instructions on how to get the log file.

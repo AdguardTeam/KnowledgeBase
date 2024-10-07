@@ -29,9 +29,9 @@ Wenn Sie die erweiterten Einstellungen öffnen, werden Ihnen die folgenden Optio
 
 Wenn aktiviert, blockiert AdGuard TCP Fast Open im Edge-Browser. Um die Einstellungen zu übernehmen, müssen Sie den Browser neu starten.
 
-### Encrypted ClientHello verwenden
+### Encrypted Client Hello verwenden
 
-Jede verschlüsselte Internetverbindung hat einen unverschlüsselten Teil. Dies ist das allererste Paket, das den Namen des Servers enthält, mit dem Sie sich verbinden. Die verschlüsselte Client-Hallo-Technologie soll dieses Problem lösen und das letzte bisschen an unverschlüsselter Information verschlüsseln. Um davon zu profitieren, aktivieren Sie die Option *Encrypted ClientHello verwenden*. It uses a local DNS proxy to look for the ECH configuration for the domain. Wenn es gefunden wird, wird das ClientHello-Paket verschlüsselt.
+Jede verschlüsselte Internetverbindung hat einen unverschlüsselten Teil. Dies ist das allererste Paket, das den Namen des Servers enthält, mit dem Sie sich verbinden. Die verschlüsselte Client-Hallo-Technologie soll dieses Problem lösen und das letzte bisschen an unverschlüsselter Information verschlüsseln. To benefit from it, enable the *Use Encrypted Client Hello* option. Sie verwendet einen lokalen DNS-Proxy, um nach der ECH-Konfiguration für die Domain zu suchen. If it is found, Client Hello packet will be encrypted.
 
 ### Zertifikatstransparenz von Websites prüfen
 
@@ -61,9 +61,9 @@ Aktivieren Sie diese Funktion, um Popup-Benachrichtigungen von AdGuard anzuzeige
 
 Aktivieren Sie diese Funktion, wenn Sie möchten, dass AdGuard automatisch Filter-URLs (z.B. `abp:subscribe` und ähnliche) abfängt und einen benutzerdefinierten Filter-Installationsdialog öffnet.
 
-### Filter HTTP/3
+### HTTP/3 filtern
 
-If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+Ist diese Option aktiviert, filtert AdGuard zusätzlich zu den anderen Anfragetypen auch Anfragen, die über HTTP/3 gesendet werden.
 
 ### Umleitungstreiber-Modus verwenden
 
@@ -73,7 +73,7 @@ Andernfalls filtert AdGuard den gesamten Datenverkehr sofort und ohne Umleitung.
 
 ### Hauptfenster bei Systemstart öffnen
 
-Aktivieren Sie diese Option, damit sich das Hauptfenster von AdGuard nach dem Laden des Systems öffnet. Beachten Sie, dass es keinen Einfluss darauf hat, ob der eigentliche Filterdienst gestartet wird oder nicht. Diese Einstellung befindet sich in *Einstellungen → Allgemeine Einstellungen*
+Aktivieren Sie diese Option, damit sich das Hauptfenster von AdGuard nach dem Laden des Systems öffnet. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*.
 
 ### Filterung beim Systemstart aktivieren
 
@@ -95,7 +95,7 @@ Wenn Sie nicht möchten, dass AdGuard bestimmte Subnetze filtert, aktivieren Sie
 
 ### Das Schreiben im HAR-Format erlauben
 
-Diese Option sollte **nur für die Fehlersuche** aktiviert werden. Wenn Sie das Häkchen setzen, erstellt AdGuard eine Datei, die Informationen über alle gefilterten HTTP-Anfragen im Format HAR 1.2 enthält. Diese Datei kann mit der App „Fiddler“ analysiert werden. Beachten Sie, dass sich Ihr Surfen im Internet dadurch erheblich verlangsamen kann.
+Diese Option sollte **nur für die Fehlersuche** aktiviert werden. Ticking the checkbox will make AdGuard create a file in the HAR 1.2 format containing information about all filtered HTTP requests. Diese Datei kann mit der App „Fiddler“ analysiert werden. Beachten Sie, dass sich Ihr Surfen im Internet dadurch erheblich verlangsamen kann.
 
 ### Zusätzliches Leerzeichen in die einfache HTTP-Anfrage einfügen
 
@@ -115,15 +115,15 @@ Diese Option wird nur angewendet, wenn die Option *Schutz vor DPI* im Privatsph�
 
 Gibt die Größe der TCP-Paketfragmentierung an, um eine Deep Packet Inspection zu vermeiden. This option only affects secured (HTTPS) traffic.
 
-Wenn diese Option aktiviert ist, teilt AdGuard das initiale TLS-Paket (das ClientHello-Paket) in zwei Teile auf: der erste hat die angegebene Länge und der zweite den Rest, bis zur Länge des gesamten initialen TLS-Pakets.
+If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Valid values: 1–1500. Wird eine ungültige Größe angegeben, wird der vom System ausgewählte Wert verwendet. Diese Option wird nur angewendet, wenn die Option *Schutz vor DPI* im Privatsphärenmodus aktiviert ist.
+Gültige Werte: 1–1500. Wird eine ungültige Größe angegeben, wird der vom System ausgewählte Wert verwendet. Diese Option wird nur angewendet, wenn die Option *Schutz vor DPI* im Privatsphärenmodus aktiviert ist.
 
 ### Fragmentgröße einer einfachen HTTP-Anfrage
 
 Passt die Größe der Fragmentierung der HTTP-Anfrage an. Diese Option betrifft nur den einfachen HTTP-Verkehr. Wenn diese Option aktiviert ist, teilt AdGuard das ursprüngliche Paket in zwei Teile auf: der erste hat die angegebene Länge und der zweite den Rest, bis zur Länge des gesamten ursprünglichen Pakets.
 
-Valid values: 1–1500. Wird eine ungültige Größe angegeben, wird der vom System ausgewählte Wert verwendet. Diese Option wird nur angewendet, wenn die Option *Schutz vor DPI* im Privatsphärenmodus aktiviert ist.
+Gültige Werte: 1–1500. Wird eine ungültige Größe angegeben, wird der vom System ausgewählte Wert verwendet. Diese Option wird nur angewendet, wenn die Option *Schutz vor DPI* im Privatsphärenmodus aktiviert ist.
 
 ### QUIC anzeigen
 

@@ -13,7 +13,7 @@ Sie können auf das DNS-Schutzmodul zugreifen, indem Sie auf den Tab _Schutz_ (z
 
 :::tip
 
-Die Funktionsweise des DNS-Schutzes ist anders als die normale Blockierung von Werbung und Trackern. You cam [learn more about it and how it works from a dedicated article](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
+Die Funktionsweise des DNS-Schutzes ist anders als die normale Blockierung von Werbung und Trackern. You can [learn more about it and how it works from a dedicated article](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
 
 :::
 
