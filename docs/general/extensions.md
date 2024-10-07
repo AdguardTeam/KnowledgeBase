@@ -89,7 +89,7 @@ If you like the idea of personifying your browser with the help of userscripts, 
 
 #### Request license
 
-If you are developing your own custom script and want to test how it works with AdGuard, request a beta license key for the app.
+If you are developing your own custom script and want to test how it works with AdGuard, you can request a beta license key for the app.
 
 To get it, please send an email to devteam@adguard.com with the following information:
 
