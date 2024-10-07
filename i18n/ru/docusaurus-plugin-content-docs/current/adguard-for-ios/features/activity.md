@@ -1,5 +1,5 @@
 ---
-title: Activity and statistics
+title: Активность и статистика
 sidebar_position: 4
 ---
 
@@ -9,9 +9,9 @@ sidebar_position: 4
 
 :::
 
-_Activity_ screen is the 'information hub' of AdGuard's DNS protection suite. You can quickswitch to it by tapping the third icon in the bottom bar. Прим. этот экран отображается только при включённой DNS-защите.
+Экран _Активность_ — это «информационный центр» DNS-защиты AdGuard. Вы можете быстро переключиться на него, нажав на третий значок в строке внизу экрана. Прим. этот экран отображается только при включённой DNS-защите.
 
-![Activity screen \*mobile\_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
+![Активность \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/ios/activity_ru.jpg)
 
 Здесь AdGuard отображает статистику DNS-запросов вашего устройства, такую как их общее количество, количество зашифрованных запросов и среднее время обработки. AdGuard может отображать статистику за день, неделю, месяц или за всё время.
 
@@ -25,7 +25,7 @@ AdGuard никуда не отправляет эту информацию. Он
 
 Нажмите на любой запрос, чтобы просмотреть подробную информацию о нём. Внизу также будут кнопки, предлагающие добавить запрос в Белый/Чёрный список.
 
-![Детали запроса \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
+![Информация о запросе \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_ru.jpeg)
 
 Над лентой активности расположены _Наиболее активные_ и _Наиболее блокируемые_ компании. Нажмите на каждый, чтобы увидеть данные по последним 1500 запросам.
 

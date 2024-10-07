@@ -3,10 +3,10 @@ title: AdGuard 翻译
 sidebar_position: 1
 ---
 
-You can ask us any questions about translating AdGuard by sending an email to [translate@adguard.com](mailto:translate@adguard.com) or by joining our [Telegram chat](https://t.me/joinchat/UVYTLcHbr8JmOGIy).
+您可发送电子邮件至 [translate@adguard.com](mailto:translate@adguard.com) 或加入我们的 [Telegram 聊天室](https://t.me/joinchat/UVYTLcHbr8JmOGIy) 以询问我们翻译 AdGuard 的任何问题。
 
-When it comes to translations, we at AdGuard always heavily rely on volunteers.
+说到翻译，我们 AdGuard 非常依赖志愿者们的无私奉献。
 
-We now use the [Crowdin platform](https://crowdin.com/) to manage translations of our products. So this is the place for anyone who wants to contribute to AdGuard by translating any of our products.
+我们现在使用 [Crowdin 平台](https://crowdin.com/)管理我们产品的翻译。 所以，所有想通过翻译任何喜欢的产品对 AdGuard 做贡献的志愿者们请移步 Crowdin 平台。
 
-If you want to be among the volunteers who help us translate AdGuard, please read the information on [how to become our translator](../become-translator) and [how we collaborate with them](../rewards).
+如您想加入 AdGuard 的翻译员大家族，请阅读信息以了解更多关于[如何成为 AdGuard 翻译员](../become-translator)，以及我们[双方合作方式](../rewards)的详情。

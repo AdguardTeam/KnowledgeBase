@@ -4,7 +4,7 @@ sidebar_position: 5
 toc_max_heading_level: 4
 ---
 
-Userscripts (we also call them "extensions") are, de facto, miniprograms written in JavaScript. 하나 이상의 웹사이트의 기능을 수정하거나 확장합니다. 많은 AdGuard 사용자는 이미 AdGuard 어시스턴트, 팝업 차단기 및 AdGuard Extra와 같은 유저스크립트에 익숙할 것입니다.
+유저스크립트('확장 프로그램'이라고도 함)는 사실상 자바스크립트로 작성된 미니 프로그램입니다. 하나 이상의 웹사이트의 기능을 수정하거나 확장합니다. 많은 AdGuard 사용자는 이미 AdGuard 어시스턴트, 팝업 차단기 및 AdGuard Extra와 같은 유저스크립트에 익숙할 것입니다.
 
 :::note 지원되는 앱
 
@@ -66,11 +66,11 @@ Android용 AdGuard에만 사전 설치된 스크립트입니다. Google 검색 �
 
 ### Userscript.Zone
 
-[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high credibility, since only scripts from moderated pages are displayed.
+[Userscript.Zone](https://www.userscript.zone)은 일치하는 URL 또는 도메인을 입력하여 유저스크립트를 검색할 수 있는 웹사이트입니다. 이 웹사이트는 사용하기 쉽고 안정적입니다. 스크립트는 조정된 페이지에서만 표시됩니다.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/)는 Stylish 크리에이터의 유저스크립트 카탈로그입니다. The scripts in this catalog undergo moderation, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/)는 Stylish 크리에이터의 유저스크립트 카탈로그입니다. 이 카탈로그의 스크립트는 검토됩니다.
 
 ### OpenUserJS.org
 
@@ -134,7 +134,7 @@ Android용 AdGuard에만 사전 설치된 스크립트입니다. Google 검색 �
 
 ##### 지원되지 않는 속성
 
-These properties will be simply ignored by AdGuard.
+이러한 속성은 AdGuard에서 무시됩니다.
 
 ```text
 @unwrap
@@ -210,19 +210,19 @@ GM_log
 )}();
 ```
 
-## Userstyles
+## 유저스타일
 
-AdGuard products provide limited support for userstyles. `@var` and `@advanced` metadata tags are not supported, as well as any value of the `@preprocessor` metadata tag except `default`.
+AdGuard 제품은 제한된 방식으로 유저스타일을 지원합니다. `@var` 및 `@advanced` 메타데이터 태그는 지원되지 않습니다. 그리고 `기본값`을 제외한 `@preprocessor` 메타데이터 태그의 값은 지원되지 않습니다.
 
-### Metadata
+### 메타데이터
 
-The metadata block is written using CSS-style comments, starting with `===UserStyle===` and ending with `===/UserStyle===`. All metadata tags that are supported for userscripts are also supported for userstyles, although some of them have no meaning and are ignored. `@var` and `@advanced` tags are not supported. The only supported value of the `@preprocessor` tag is `default`.
+메타데이터 블록은 `===UserStyle===`로 시작하고 `===/UserStyle===`로 끝나는 CSS 스타일 주석을 사용하여 작성됩니다. 유저스크립트에 지원되는 모든 메타데이터 태그는 유저스타일에도 지원되지만 일부 태그는 의미가 없어 무시됩니다. `@var` 및 `@advanced` 태그는 지원되지 않습니다. `@preprocessor` 태그의 지원되는 값은 `기본값`뿐입니다.
 
-### Content
+### 콘텐츠
 
-The content of a userstyle is plain CSS with support for the [`@-moz-document` at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@document). The `media-document()` function is not supported. The userstyle will only be applied to pages that match one or more of the `@-moz-document` rules. If the userstyle does not contain any `@-moz-document` rules, it will not be applied.
+유저스타일의 콘텐츠는 [`@-moz-document` 규칙](https://developer.mozilla.org/en-US/docs/Web/CSS/@document)을 지원하는 간단한 CSS입니다. 이 `media-document()` 기능은 지원되지 않습니다. 유저스타일은 `@-moz-document` 규칙 중 하나 이상과 일치하는 페이지에만 적용됩니다. 유저스타일에 `@-moz-document` 규칙이 포함되어 있지 않으면 적용되지 않습니다.
 
-### Example
+### 예시
 
 ```css
 /* ==UserStyle==

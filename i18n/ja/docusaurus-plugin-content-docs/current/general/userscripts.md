@@ -4,17 +4,17 @@ sidebar_position: 5
 toc_max_heading_level: 4
 ---
 
-Userscripts (we also call them "extensions") are, de facto, miniprograms written in JavaScript. They modify or extend the functionality of one or more websites. Many AdGuard users may be already familiar with such userscripts as AdGuard Assistant, Popup Blocker, and AdGuard Extra.
+ユーザースクリプト（私たちは "エクステンション"とも呼んでいます）は、事実上、JavaScriptで書かれたミニプログラムです。 ユーザースクリプトは1つまたは複数のウェブサイトの機能を変更または拡張します。 AdGuardユーザーの多くは、「AdGuard アシスタント」「ポップアップブロッカー」「AdGuard Extra」などのユーザースクリプトをすでにご存知かもしれません。
 
 :::note Supported apps
 
-AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/features/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
+AdGuard はユーザースクリプトマネージャとして、ウェブサイトの機能を大幅に拡張することができます。 ３つのAdGuard製品（[AdGuard for Windows](/adguard-for-windows/features/extensions)、[AdGuard for Android](/adguard-for-android/features/settings#userscripts)、[AdGuard for Mac](/adguard-for-mac/features/extensions)）で、カスタムスクリプトを追加したり、既存のスクリプトを管理することができます。
 
 :::
 
-## Recommended AdGuard scripts
+## お勧めのAdGuardスクリプト
 
-These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you expose yourself to a certain risk, as some scripts may be harmful to your computer.
+これらのユーザースクリプトはAdGuardの開発者から直接提供されたもので、効果的で安全です。 他のユーザーによって開発されたユーザースクリプトのうち、AdGuardが優れていて信頼できると考えるものについては、[下のセクションにスクロールダウン](#top-picks)してください。 以下に、[いろんなスクリプトを紹介する人気ウェブサイトを](#more-userscripts)も載せていますが、未知のソースからユーザースクリプトをダウンロードする場合は、コンピュータに有害なスクリプトをダウンロードしてしまう可能性があり、一定のリスクに身をさらすことになることにご注意ください。
 
 ### AdGuard Extra
 

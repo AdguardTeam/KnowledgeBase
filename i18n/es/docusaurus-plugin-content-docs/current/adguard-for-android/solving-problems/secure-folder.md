@@ -5,7 +5,7 @@ sidebar_position: 13
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -14,11 +14,11 @@ If you install AdGuard to [the *Secure folder* on your Android](https://www.sams
 1. After installing the app and connecting the local VPN, tap **ENABLE** next to the *HTTPS filtering is off* message.
 1. Tap **Next** → **Next** → **Save it now** → **Save certificate**.
 1. Save the certificate (at this stage, you can rename it to make it easier to locate it later, which you will need to do).
-1. After the *Installation instructions* popup appears, **DO NOT** tap **Open Settings**.
-1. Minimize the app and go to the *Secure folder*.
-1. Tap the three-dot menu and go to **Settings** → **Other security settings**.
-1. Tap **Security certificates** → **Install from device storage** → **CA certificate** → **Install anyway**
-1. Confirm installation with your graphic key/password/fingerprint.
-1. Find and select the previously saved certificate, then tap **Done**.
-1. Return to the AdGuard app and navigate back to the main screen. You may have to swipe and restart the app to get rid of the *HTTPS filtering is off* message.
+1. Después de que aparezca la ventana emergente *Instrucciones de instalación*, **NO** toca **Abrir Configuración**.
+1. Minimiza la aplicación y ve a la *carpeta segura*.
+1. Toca el menú de tres puntos y ve a **Configuración** →**Otras configuraciones de seguridad**.
+1. Toca **Certificados de seguridad** → **Instalar desde el almacenamiento del dispositivo** → **Certificado de CA** → **Instalar**
+1. Confirma la instalación con tu clave gráfica/contraseña/huella digital.
+1. Busca y selecciona el certificado previamente guardado, luego toca **Listo**.
+1. Regresa a la aplicación AdGuard y vuelve a la pantalla principal. Es posible que tengas que deslizar y reiniciar la aplicación para deshacerte del mensaje *El filtrado HTTPS está desactivado*.
 1. ¡Listo! The certificate has been installed.
