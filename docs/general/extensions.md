@@ -227,7 +227,7 @@ This is an experimental feature, so if you encounter any problems while adding o
 
 ### How to set up a userstyle in AdGuard
 
-You can download userstyles from various websites. One of the most popular userstyles websites is [https://userstyles.world/](https://userstyles.world/explore), which we will take as an example for the following instructions on how to set up the userstyle in AdGuard.
+You can download userstyles from various websites. One of the most popular userstyle websites is [https://userstyles.world/](https://userstyles.world/explore), which we will use as an example for the following instructions on how to set up the userstyle in AdGuard.
 
 1. Follow the link above and choose the userstyle you like
 
