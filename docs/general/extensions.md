@@ -19,7 +19,7 @@ These userscripts come directly from the AdGuard developers, and we can guarante
 
 #### AdGuard Extra
 
-An extension that blocks ads in difficult cases when the usual filter-based approach is not enough. AdGuard Extra comes pre-installed with all premium AdGuard versions, so you don't need to do anything to enable it. However, if you want to use it alongside AdGuard Browser Extension or any other ad blocker, you'll need to use an additional extension. Learn more about this userscript and how to install it on [GitHub](https://github.com/AdguardTeam/AdGuardExtra).
+An extension that blocks ads in difficult cases when the usual filter-based approach is not enough. AdGuard Extra comes pre-installed in AdGuard standalone apps, except for the one for iOS, so you don't need to do anything to enable it. However, if you want to use it alongside AdGuard Browser Extension or any other ad blocker, you'll need to use an additional extension. Learn more about this userscript and how to install it on [GitHub](https://github.com/AdguardTeam/AdGuardExtra).
 
 ![AdGuard Extra](https://cdn.adtidy.org/content/kb/ad_blocker/general/adguard-extra.png)
 
@@ -31,7 +31,7 @@ The name speaks for itself: it blocks pop-ups — one of the most annoying types
 
 #### AdGuard Assistant (legacy version)
 
-This custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.).
+This custom extension is designed to control filtering directly from the browser page (manual blocking, allowlisting, etc.).
 
 :::note
 
