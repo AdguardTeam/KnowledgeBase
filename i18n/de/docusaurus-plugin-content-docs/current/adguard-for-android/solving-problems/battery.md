@@ -19,7 +19,7 @@ However, AdGuard users can always get a true picture of the situation on the *Ba
 
 You can access it by navigating to *Statistics* → *Battery usage*.
 
-![Battery stats *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
+![Batteriestatistik *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
 
 Inside you will find a chart that shows the AdGuard battery resource consumption within the last 24 hours, with an option to get more detailed hour-to-hour data by tapping on the chart. Besides that, there’s also a numeric breakdown of the relevant data and a short technical explanation.
 
@@ -55,6 +55,6 @@ First, let us lay down a bit of theory and links with necessary data.
 
     > 506000 *225 / (60* 60 * 1000) = 31,625mAh
 
-### Conclusion
+### Fazit
 
-Real consumption is **several times less** than it is shown in Android statistics. Instead of 220mAh it should be somewhere around 31-40mAh. On the other hand, browser's consumption should be not 66mAh, but ~200mAh.
+Real consumption is **several times less** than it is shown in Android statistics. Statt 220mAh sollten es etwa 31-40mAh sein. On the other hand, browser's consumption should be not 66mAh, but ~200mAh.

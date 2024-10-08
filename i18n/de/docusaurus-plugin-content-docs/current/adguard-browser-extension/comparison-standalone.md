@@ -15,7 +15,7 @@ Der Hauptvorteil der eigenständigen AdGuard-Programme gegenüber Browsererweite
 
 Der zweite Unterschied besteht darin, dass die Möglichkeiten von erweiterungsbasierten Werbeblockern durch die Richtlinien des Browsers stark eingeschränkt sind. Die Browsererweiterungen müssen mit den Richtlinien der Browser übereinstimmen, in denen das Sperren von Werbung eingeschränkt sein kann. Daher werden einige Arten von Filterregeln von den Erweiterungen nicht unterstützt. Die Funktionalität der Desktop-Anwendungen ist nicht eingeschränkt, so dass sie eine bessere Filterqualität aufweisen.
 
-Whereas AdGuard Browser Extension is free and easy to install, and has filters to block ads and fight online threats, the full-fledged apps are more powerful and have a list of advanced features. Alle Unterschiede sind in der nachstehenden Vergleichstabelle aufgeführt.
+Während die AdGuard-Browsererweiterung kostenlos und einfach zu installieren ist und über Filter zum Sperren von Werbung und zur Bekämpfung von Online-Bedrohungen verfügt, sind die vollwertigen Anwendungen leistungsfähiger und verfügen über eine Liste von erweiterten Funktionen. Alle Unterschiede sind in der nachstehenden Vergleichstabelle aufgeführt.
 
 ![Erweiterung vs. Anwendung \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
 
@@ -23,4 +23,4 @@ Whereas AdGuard Browser Extension is free and easy to install, and has filters t
 
 `2` — the extension is unable to detect requests from other extensions. If a malicious or tracking extension sends a request to its server to show you ads or track your activity, AdGuard Browser Extension will not be able to block that request;
 
-`3` — not all types of ads and threats can be blocked by browser extensions due to certain browser limitations. Some elements may get to the page and slow down the loading process. Besides, unlike browser-based ad blockers, the AdGuard app blocks ads before they are loaded to the browser. Das spart Datenverkehr und beschleunigt das Laden der Seite.
+`3` — not all types of ads and threats can be blocked by browser extensions due to certain browser limitations. Einige Elemente können auf die Seite gelangen und den Ladevorgang verlangsamen. Außerdem sperrt die AdGuard-App im Gegensatz zu browserbasierten Werbeblockern die Werbung, bevor sie in den Browser geladen wird. Das spart Datenverkehr und beschleunigt das Laden der Seite.

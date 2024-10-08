@@ -23,32 +23,32 @@ sidebar_position: 2
 
 Если это не помогло, следуйте инструкциям по ручному добавлению сертификата AdGuard в хранилище FireFox.
 
-> This instruction is for Firefox browser. Names of buttons and menu items may differ in other Firefox-based browsers.
+> Эта инструкция предназначена для браузера Firefox. Названия кнопок и пунктов меню могут отличаться в других браузерах на основе Firefox.
 
-1. Run AdGuard.
+1. Запустите AdGuard.
 
-1. Go to [http://local.adguard.org/cert](http://local.adguard.org/cert) and click the *Download* button. The browser should start downloading **cert.cer** file.
+1. Перейдите на страницу [http://local.adguard.org/cert](http://local.adguard.org/cert) и нажмите кнопку *Скачать*. Браузер начнёт загрузку файла **cert.cer**.
 
     :::note
 
-    You can also open the download page by clicking the link via the AdGuard app at *Settings → Network → HTTPS filtering*.
+    Вы также можете открыть страницу загрузки через приложение AdGuard: *Настройки → Сеть → HTTPS-фильтрация*.
 
 
 :::
 
     ![Настройки сертификата](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
 
-1. Open your browser and then open *Settings*.
+1. Откройте браузер, а затем откройте *Настройки*.
 
-1. Go to *Privacy & Security* tab.
+1. Перейдите на вкладку *Приватность и Защита*.
 
-1. Scroll down to *Certificates* and click the *View Certificates* button.
+1. Прокрутите вниз до раздела *Сертификаты* и нажмите кнопку *Просмотр сертификатов*.
 
     ![Окно просмотра сертификатов](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
 
-1. Select *Authorities* tab.
+1. Выберите вкладку *Центры сертификации*.
 
-1. Click *Import...*.
+1. Нажмите *Импортировать...*
 
     ![Настройки сертификата — импорт](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
 

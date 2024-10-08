@@ -1,5 +1,5 @@
 ---
-title: Free vs. full version
+title: Разница между бесплатной и платной версией
 sidebar_position: 9
 ---
 
@@ -11,22 +11,22 @@ sidebar_position: 9
 
 :::note
 
-Both AdGuard for iOS with enabled Premium and AdGuard Pro block ads on Apple smartphones and tablets. They used to differ in functionality due to certain changes made to App Store review policies in the past, but now AdGuard with a purchased subscription and AdGuard Pro are identical in their functionality.
+AdGuard для iOS с подпиской Premium и AdGuard Pro блокируют рекламу на смартфонах и планшетах Apple. Раньше из-за политики App Store у них были разные функции, но теперь AdGuard с подпиской и AdGuard Pro идентичны.
 
 :::
 
-Premium AdGuard for iOS features several differences from the free version, including custom DNS settings. With these settings, you can block ads not only in Safari but in other apps too, protect your kids from adult content online, and keep your personal information safe from theft. There are other differences, too. Let’s explore them all in more detail.
+Премиум-версия AdGuard для iOS имеет ряд отличий от бесплатной версии, включая пользовательские настройки DNS. С помощью этих настроек вы можете блокировать рекламу не только в Safari, но и в других приложениях, защитить детей от взрослого контента в интернете и личную информацию от кражи. Есть и другие различия. Давайте рассмотрим их подробнее.
 
-1. The **DNS protection** module encrypts your DNS traffic to enhance privacy. It works across all apps and browsers, not just Safari, offering broad protection against ads and trackers.
+1. **DNS-защита** повышает конфиденциальность, шифруя DNS-трафик. Она защищает вас от ерекламы и трекеров не только в Safari, но и в остальных браузерах и приложениях.
 
-   - **Custom DNS servers:** Choose from one of the popular DNS servers from our list or add your own custom server.
+   - **Пользовательские DNS-серверы:** Вы можете выбрать один из популярных DNS-серверов из нашего списка или добавить свой собственный.
 
-   - **Family Protection:** The Internet isn’t always kid-friendly. With AdGuard Premium, you can switch to DNS providers that block adult content and other inappropriate material to keep your children safe online.
+   - **Защита детей:** С AdGuard Premium вы можете использовать DNS-сервер, который блокирует контент для взрослых и защищает детей в интернете.
 
-   - **Monitoring and flexible configuration:** Recent activity log allows you to view all DNS requests sent by your device and easily manage your traffic by adding websites to blocklist or allowlist with just a tap.
+   - **Статистика и гибкие настройки:** В _Недавней активности_ вы можете увидеть, какие DNS-запросы отправляет ваше устройство и какие из них блокируются DNS-фильтрацией. Вы также можете настроить фильтрацию под себя, добавляя сайты в чёрный или белый список одним нажатием.
 
-2. **Advanced protection** lets you use advanced filtering rules to block more complex ads that would be left unblocked otherwise.
+2. **Расширенная защита** позволяет использовать расширенные правила для блокировки сложной рекламы, которую нельзя заблокировать обычным способом.
 
-3. **More filter options:** When purchasing AdGuard Premium, you get access to custom filters and a security filter category, where you can choose from over 50 filters, including AdGuard’s and other popular lists.
+3. **Больше фильтров:** С AdGuard Premium у вас появляется возможность добавлять собственные фильтры, а также использовать фильтры безопасности, которые защищают от фишинговых и других опасных сайтов.
 
-Access these features by [purchasing a license](https://adguard.com/license.html).
+Вы можете получить доступ к этим функциям, [купив лицензию](https://adguard.com/license.html).

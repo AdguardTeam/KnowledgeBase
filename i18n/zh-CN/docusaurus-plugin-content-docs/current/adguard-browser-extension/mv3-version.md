@@ -1,5 +1,5 @@
 ---
-title: AdGuard Browser Extension for Chrome MV3
+title: Chrome 版 AdGuard 浏览器扩展 MV3
 sidebar_position: 5
 ---
 
@@ -9,7 +9,7 @@ Our MV3 extension effectively blocks ads and trackers while seamlessly managing 
 
 ## Where to find our extensions
 
-The **MV3 version** will soon replace our old extension in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
+The **MV3 version** has replaced our old extension in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
 
 The **beta version of MV3** will still be available in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
 
@@ -21,19 +21,19 @@ The old beta extension will be renamed to [**AdGuard Ad Blocker MV2**](https://c
 
 - **Filtering log**
 
-  ![Filtering log \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+  ![过滤日志 \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules).
+  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules/).
 
 - _Tracking protection_ (formerly known as _Stealth mode_)
 
-  ![Tracking protection \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+  ![跟踪保护 \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
 
   There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
 
 - _Phishing & malware protection_ is no longer available in the general settings. To protect yourself from malicious websites and scams, enable the appropriate _Security_ filters in the _Filters_ tab.
 
-  ![Security](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![安全 \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## 限制
 
@@ -41,9 +41,9 @@ The old beta extension will be renamed to [**AdGuard Ad Blocker MV2**](https://c
 
 Manifest V3 imposes limits on static and regex rules per extension. Users may receive notifications when these limits are exceeded.
 
-![Rule limits \*border](https://cdn.adtidy.org/content/blog/new/rulelimits.png)
+![规则数量限制 \*border](https://cdn.adtidy.org/content/blog/new/rulelimits.png)
 
-![Too many extensions \*border](https://cdn.adtidy.org/content/blog/new/other_extension.png)
+![扩展数量太多 \*border](https://cdn.adtidy.org/content/blog/new/other_extension.png)
 
 Basically, Manifest V3 divides rules into static (built-in) and dynamic, with strict limits in place.
 
@@ -66,16 +66,13 @@ If this limit is exceeded, only **5,000 converted rules** will be applied in the
 
 Here's how a rule with a basic modifier is converted to a declarative rule:
 
-````
-```bash
+```adblock
 ||example.org^$script,third-party,domain=example.com
 ```
-````
 
 is converted to
 
-````
-```bash
+```json
 [
     {
         "id": 1,
@@ -96,7 +93,6 @@ is converted to
     }
 ]
 ```
-````
 
 More examples can be found on [GitHub][github-declarative-converter-examples].
 

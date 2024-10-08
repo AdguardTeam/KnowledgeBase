@@ -9,7 +9,7 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-## VPN apps
+## VPN-Apps
 
 If you are using AdGuard in the *Local VPN* filtering mode, you cannot run other VPN apps at the same time. To solve this problem, we suggest that you:
 
@@ -24,7 +24,7 @@ The *Automatic proxy* mode is only accessible on rooted devices. For *Manual pro
 
 :::
 
-## Private DNS
+## Privates DNS
 
 The Private DNS feature was introduced in Android Pie. Before version Q, Private DNS didn't break AdGuard DNS filtering logic and the DNS forwarding through AdGuard worked normally. But starting from version Q, the presence of Private DNS forces apps to redirect traffic through the system resolver instead of AdGuard. See Android [devs blog](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html) for more details.
 
@@ -32,7 +32,7 @@ The Private DNS feature was introduced in Android Pie. Before version Q, Private
 
 Some device manufacturers keep Private DNS settings hidden and set 'Automatic' mode as a default one. Thus, disabling Private DNS is impossible but we can make the system think that the upstream is not valid by blocking it with a `$network` rule. For instance, if the system uses Google DNS by default, we can add rules `|8.8.4.4^$network` and `|8.8.8.8^$network` to block Google DNS.
 
-## Unsupported browsers
+## Nicht unterstützte Browser
 
 ### UC Browsers: UC Browser, UC Browser for x86, UC Mini, UC Browser HD
 
@@ -56,10 +56,10 @@ AdGuard cannot filter its traffic when operating in the *Manual proxy* mode beca
 
 Opera mini drives traffic through a compression proxy by default and AdGuard is not able to decompress and filter it at the same time.
 
-- There is no solution at this moment
+- Im Moment gibt es keine Lösung
 
 ### Puffin Browser: Puffin Browser, Puffin Browser Pro
 
 Puffin Browser drives traffic through a compression proxy by default and AdGuard is not able to decompress and filter it at the same time.
 
-- There is no solution at this moment
+- Im Moment gibt es keine Lösung
