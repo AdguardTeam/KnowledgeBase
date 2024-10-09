@@ -19,7 +19,7 @@ sidebar_position: 3
 
 :::note
 
-「高级保护」仅适用于 iOS 15 及更高版本。 If you are using earlier versions of iOS, you will see the _YouTube ad blocking_ module in the app instead of the _Advanced protection_.
+「高级保护」仅适用于 iOS 15 及更高版本。 如果您使用的是早期版本的 iOS，您将在应用程序中看到「_YouTube 广告拦截_」模块，而不是「_高级保护_」。
 
 :::
 

@@ -1,21 +1,21 @@
 ---
-title: Known compatibility issues with Android apps
+title: Problemas de compatibilidad conocidos con aplicaciones de Android
 sidebar_position: 16
 ---
 
 :::info
 
-Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## VPN apps
+## Aplicaciones VPN
 
-If you are using AdGuard in the *Local VPN* filtering mode, you cannot run other VPN apps at the same time. To solve this problem, we suggest that you:
+Si estás utilizando AdGuard en el modo de filtrado *VPN local*, no podrás ejecutar otras aplicaciones VPN al mismo tiempo. Para solucionar este problema, te sugerimos:
 
-- Use [AdGuard VPN](https://adguard-vpn.com/welcome.html) — its *Integrated mode* allows two apps to operate simultaneously
-- Configure your VPN app to act as an [outbound proxy](../solving-problems/outbound-proxy.md) and set up a local outbound proxy using the parameters from the third-party app
-- Switch to the *Automatic proxy* mode. When you do that, AdGuard will no longer use local VPN and will reconfigure iptables instead
+- Usar [AdGuard VPN](https://adguard-vpn.com/welcome.html) — el *modo integrado* permite que dos aplicaciones funcionen simultáneamente
+- Configura tu aplicación VPN para que actúe como un proxy de salida [](../solving-problems/outbound-proxy.md) y configura un proxy de salida local usando los parámetros de la aplicación de terceros
+- Cambia al modo de *Proxy automático*. Cuando lo haces, AdGuard deja de utilizar la VPN local y reconfigura iptables en su lugar
 - Cambia al modo de *proxy manual*. Para ello, ve a *Configuración* → *Filtrado* → *Red* → *Modo de enrutamiento*
 
 :::note Compatibilidad

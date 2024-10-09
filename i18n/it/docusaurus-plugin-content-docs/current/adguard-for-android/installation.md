@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: Installazione
 sidebar_position: 2
 ---
 
@@ -17,7 +17,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 **Free disk space:** 500 MB
 
-## Installation
+## Installazione
 
 Most Android-based apps are distributed via Google Play; however, AdGuard is not presented there, because Google prohibits distribution of network-level ad blockers via Google Play, i.e. apps that block commercials in other apps. You will find more information about Google restrictive policy [in our blog](https://adguard.com/blog/adguard-google-play-removal.html).
 

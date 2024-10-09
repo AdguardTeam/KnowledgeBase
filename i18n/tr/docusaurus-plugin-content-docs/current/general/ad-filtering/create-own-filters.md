@@ -1519,7 +1519,7 @@ preroll.ts
 
 :::dikkat Kısıtlamalar
 
-- `$hls` rules are only allowed [**in trusted filters**](#trusted-filters).
+- Rules with the `$hls` modifier can only be used [**in trusted filters**](#trusted-filters).
 - `$hls` rules are compatible with the modifiers `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest` only.
 - `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`. Diğer yanıtlar bu kurallar tarafından değiştirilmeyecektir.
 - `$hls` rules do not apply if the size of the original response is more than 10 MB.
@@ -2249,7 +2249,7 @@ In case of multiple `$removeheader` rules matching a single request, we will app
 
 :::dikkat Kısıtlamalar
 
-This type of rules can be used [**only in trusted filters**](#trusted-filters).
+This type of rules can only be used [**in trusted filters**](#trusted-filters).
 
 1. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
     - `access-control-allow-origin`
@@ -2320,8 +2320,6 @@ Rules with `$removeheader` modifier are supported by AdGuard for Windows, AdGuar
 :::
 
 Rules with `$removeparam` modifier are intended to strip query parameters from requests' URLs. Please note that such rules are only applied to `GET`, `HEAD`, `OPTIONS`, and sometimes `POST` requests.
-
-`$removeparam` rules that do not have any [content type modifiers](#content-type-modifiers) will match only requests where content type is `document`.
 
 **Söz dizimi**
 
@@ -2488,8 +2486,9 @@ With these rules, specified UTM parameters will be removed from any request save
 
 :::dikkat Kısıtlamalar
 
-- Rules with `$removeparam` modifier can be used [**only in trusted filters**](#trusted-filters).
-- `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers), [content-type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers. Rules with any other modifiers are considered invalid and will be discarded.
+1. Rules with the `$removeparam` modifier can only be used [**in trusted filters**](#trusted-filters).
+1. `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers), [content-type modifiers](#content-type-modifiers), and with the `$important` and `$app` modifiers. Rules with any other modifiers are considered invalid and will be discarded.
+1. `$removeparam` rules without [content type modifiers](#content-type-modifiers) will only match requests where the content type is `document`.
 
 :::
 
@@ -2541,7 +2540,7 @@ In the `$replace` value, two characters must be escaped: comma `,` and dollar si
 ||example.org^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/i
 ```
 
-There are three parts in this rule:
+Bu kuralın üç bölümü vardır:
 
 - `regexp` — `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`;
 - `replacement` — `\$1<\/VAST>` where `$` is escaped;
@@ -2565,7 +2564,7 @@ You can see how this rule works here: http://regexr.com/3cesk
 
 :::dikkat Kısıtlamalar
 
-Rules with `$replace` modifier can be used [**only in trusted filters**](#trusted-filters).
+Rules with the `$replace` modifier can only be used [**in trusted filters**](#trusted-filters).
 
 :::
 
@@ -2581,7 +2580,7 @@ The `$urltransform` rules allow you to modify the request URL by replacing text 
 
 **Özellikler**
 
-- `$urltransform` kuralları normalde yalnızca URL'nin yol ve sorgu bölümleri için geçerlidir, bir istisna için aşağıya bakın.
+- `$urltransform` rules normally only apply to the path and query parts of the URL, see below for one exception.
 - `$urltransform` will not be applied if the original URL is blocked by other rules.
 - `$urltransform` will be applied before `$removeparam` rules.
 
@@ -2613,7 +2612,7 @@ This section only applies to AdGuard for Windows, AdGuard for Mac, and AdGuard f
 
 :::
 
-Yukarıda belirtildiği gibi, normalde `$urltransform` kurallarının yalnızca URL'nin yol ve sorgu bölümlerini değiştirmesine izin verilir. Ancak, kuralın `regexp` öğesinin `^http` dizesiyle başlıyorsa, URL'nin tamamı aranır ve kural tarafından değiştirilebilir. URL dönüşümü bir HTTP yönlendirmesi yoluyla gerçekleştirilemiyorsa (örneğin, isteğin yöntemi `POST` ise) böyle bir kural uygulanmayacaktır.
+As stated above, normally `$urltransform` rules are only allowed to change the path and query parts of the URL. However, if the rule's `regexp` begins with the string `^http`, then the full URL is searched and can be modified by the rule. Such a rule will not be applied if the URL transformation can not be achieved via an HTTP redirect (for example, if the request's method is `POST`).
 
 **Örnekler**
 
@@ -2621,7 +2620,7 @@ Yukarıda belirtildiği gibi, normalde `$urltransform` kurallarının yalnızca 
 ||example.org^$urltransform=/(pref\/).*\/(suf)/\$1\$2/i
 ```
 
-There are three parts in this rule:
+Bu kuralın üç bölümü vardır:
 
 - `regexp` — `(pref\/).*\/(suf)`;
 - `replacement` — `\$1\$2` where `$` is escaped;
@@ -2638,7 +2637,7 @@ There are three parts in this rule:
 
 **Re-matching rules after transforming the URL**
 
-Tüm eşleşen `$urltransform` kurallarını uyguladıktan sonra, dönüştürülen istek diğer tüm kurallarla eşleştirilecektir:
+After applying all matching `$urltransform` rules, the transformed request will be matched against all other rules:
 
 E.g., with the following rules:
 
@@ -2647,7 +2646,7 @@ E.g., with the following rules:
 ||example.com/secondpath^
 ```
 
-`https://example.com/firstpath` adresine yapılan istek engellenecektir.
+the request to `https://example.com/firstpath` will be blocked.
 
 **Disabling `$urltransform` rules**
 
@@ -2658,7 +2657,7 @@ E.g., with the following rules:
 
 :::dikkat Kısıtlamalar
 
-Rules with the `$urltransform` modifier can be used [**only in trusted filters**](#trusted-filters).
+Rules with the `$urltransform` modifier can only be used [**in trusted filters**](#trusted-filters).
 
 :::
 
@@ -2798,7 +2797,7 @@ All valid content types:
 - [`$websocket`](#websocket-modifier),
 - [`$xmlhttprequest`](#xmlhttprequest-modifier);
 
-This also includes rules that implicitly add all content types:
+Bu, tüm içerik türlerini dolaylı olarak ekleyen kuralları da içerir:
 
 - [`$all`](#all-modifier);
 
@@ -2861,7 +2860,7 @@ Each of which adds `10^3` to rule priority.
 - [`$specifichide`](#specifichide-modifier),
 - [`$urlblock`](#urlblock-modifier);
 
-Each of which adds `10^4` to the priority.
+Bunların her biri önceliğe `10^4` ekler.
 
 As well as exception with [`$document modifier`](#document-modifier): because it's an alias for `$elemhide,content,jsinject,urlblock,extension`. It will add `10^4` for each modifier from [the top list](#priority-category-4), `10^4 * 5` in total.
 
@@ -3044,7 +3043,7 @@ example.com#$#body { background-color: #333!important; }
 
 This rule will apply a style `background-color: #333!important;` to the `body` element at `example.com` and all subdomains.
 
-**Exceptions**
+**İstisnalar**
 
 Just like with element hiding, there is a type of rules that disable the selected CSS style rule for particular domains. Exception rule syntax is almost the same, you just have to change `#$#` to `#@$#`.
 
@@ -3096,7 +3095,7 @@ CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends
 
 The idea of extended capabilities is an opportunity to match DOM elements with selectors based on their own representation (style, text content, etc.) or relations with other elements. There is also an opportunity to apply styles with non-standard CSS properties.
 
-**Application area**
+**Uygulama alanı**
 
 Extended selectors can be used in any cosmetic rule, whether they are [element hiding rules](#cosmetic-elemhide-rules) or [CSS rules](#cosmetic-css-rules).
 
@@ -3855,7 +3854,7 @@ The `tag-content` special attribute must not appear in a selector to the left of
 
 :::caution Kullanımdan kaldırma bildirimi
 
-Bu özel özellik gelecekte desteklenmeyebilir. Prefer using the `:contains()` pseudo-class where it is available.
+This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
 
 :::
 
@@ -3941,7 +3940,7 @@ veya
 :contains(/reg(ular )?ex(pression)?/)
 ```
 
-:::note Uyumluluk
+:::note Compatibility
 
 `:-abp-contains()` and `:has-text()` are synonyms for `:contains()`.
 
@@ -4030,7 +4029,7 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 :::dikkat Kısıtlamalar
 
-JavaScript rules can be used [**only in trusted filters**](#trusted-filters).
+JavaScript rules can only be used [**in trusted filters**](#trusted-filters).
 
 :::
 
@@ -4050,7 +4049,7 @@ AdGuard supports a lot of different scriptlets. In order to achieve cross-blocke
 
 :::
 
-**Engelleme kuralları söz dizimi**
+**Blocking rules syntax**
 
 ```text
 [domains]#%#//scriptlet(name[, arguments])
@@ -4074,7 +4073,7 @@ AdGuard supports a lot of different scriptlets. In order to achieve cross-blocke
     example.org#%#//scriptlet('remove-class', 'branding', 'div[class^="inner"]')
     ```
 
-**İstisna kuralları söz dizimi**
+**Exception rules syntax**
 
 Exception rules can disable some scriptlets on particular domains. The syntax for exception scriptlet rules is similar to normal scriptlet rules but uses `#@%#` instead of `#%#`:
 
@@ -4149,7 +4148,7 @@ Trusted scriptlets are not compatible with other ad blockers except AdGuard.
 
 :::dikkat Kısıtlamalar
 
-Trusted scriptlets rules can be used [**only in trusted filters**](#trusted-filters).
+Trusted scriptlets rules can only be used [**in trusted filters**](#trusted-filters).
 
 :::
 
@@ -4401,8 +4400,8 @@ false_conditions_rules_list
 
 where:
 
-- `!#if (conditions)` — koşullar doğru olduğunda bloğun başlangıcı
-- `conditions` — just like in some popular programming languages, preprocessor conditions are based on constants declared by ad blockers. Authors of ad blockers define on their own what exact constants they declare. Olası değerler:
+- `!#if (conditions)` — start of the block when conditions are true
+- `conditions` — just like in some popular programming languages, preprocessor conditions are based on constants declared by ad blockers. Authors of ad blockers define on their own what exact constants they declare. Possible values:
     - `adguard` always declared; shows maintainers that this is one of AdGuard products; should be enough in 95% of cases
     - product-specific constants for cases when you need a rule to work (or not work — then `!` should be used before constant) in a specific product only:
         - `adguard_app_windows` — AdGuard for Windows
@@ -4416,9 +4415,9 @@ where:
         - `adguard_ext_opera` — AdGuard Browser Extension for Opera
         - `adguard_ext_android_cb` — AdGuard Content Blocker for mobile Samsung and Yandex browsers
         - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry][]
-        - `cap_html_filtering` — HTML filtreleme kurallarını destekleyen ürünler: Windows için AdGuard, Mac için AdGuard ve Android için AdGuard
-- `!#else` — koşullar yanlış olduğunda bloğun başlangıcı
-- `rules_list`, `true_conditions_rules_list`, `false_conditions_rules_list` — kural listeleri
+        - `cap_html_filtering` — products that support HTML filtering rules: AdGuard for Windows, AdGuard for Mac, and AdGuard for Android
+- `!#else` — start of the block when conditions are false
+- `rules_list`, `true_conditions_rules_list`, `false_conditions_rules_list` — lists of rules
 - `!#endif` — end of the block
 
 **Örnekler**
@@ -4467,12 +4466,12 @@ Safari's limit for each content blocker is 150,000 active rules. But in AdGuard 
 
 Here is the composition of each content blocker:
 
-- AdGuard Genel — Reklam Engelleme, Dile Özgü
-- AdGuard Gizlilik — Gizlilik
-- AdGuard Sosyal — Sosyal Ağ Araçları, Can Sıkıcı Öğeler
-- AdGuard Güvenliği — Güvenlik
-- AdGuard Diğer — Diğer
-- AdGuard Özel — Özel
+- AdGuard General — Ad Blocking, Language-specific
+- AdGuard Privacy — Privacy
+- AdGuard Social — Social Widgets, Annoyances
+- AdGuard Security — Security
+- AdGuard Other — Other
+- AdGuard Custom — Custom
 
 User rules and allowlist are added to every content blocker.
 
@@ -4493,7 +4492,7 @@ rules_list
 where:
 
 - `!#safari_cb_affinity(content_blockers)` — start of the block
-- `content_blockers` — comma-separated list of content blockers. Olası değerler:
+- `content_blockers` — comma-separated list of content blockers. Possible values:
     - `general` — AdGuard General content blocker
     - `privacy` — AdGuard Privacy content blocker
     - `social` — AdGuard Social content blocker
@@ -4548,18 +4547,18 @@ Rules usage frequency comes from the collected [filter rules statistics](../trac
 
 where:
 
-- **filter** — filtre tanımlayıcısı
-- **yüzde** — beklenen iyileştime yüzde `~= (iyileştirilmiş filtrede kurallar sayılır) / (orijinal filtrede kurallar sayılır) * 100`
-- **minPercent** — `yüzde` değerinin alt sınırı
-- **maxPercent** — `yüzde` değerinin üst sınırı
-- **strict** — `percent < minPercent` VEYA `percent > maxPercent` ve strict modu açıksa filtre derlemesi başarısız olmalıdır, aksi takdirde orijinal kurallar kullanılmalıdır
+- **filter** — filter identifier
+- **percent** — expected optimization percent `~= (rules count in optimized filter) / (rules count in original filter) * 100`
+- **minPercent** — lower bound of `percent` value
+- **maxPercent** — upper bound of `percent` value
+- **strict** — if `percent < minPercent` OR `percent > maxPercent` and strict mode is on then filter compilation should fail, otherwise original rules must be used
 
 In other words, `percent` is the "compression level". For instance, for the Base filter it is configured to 40%. It means that optimization algorithm should strip 60% of rules.
 
 Eventually, here are the two versions of the Base filter for AdGuard Browser Extension:
 
-- tam: https://filters.adtidy.org/extension/chromium/filters/2.txt
-- iyileştirilmiş: https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt
+- full: https://filters.adtidy.org/extension/chromium/filters/2.txt
+- optimized: https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt
 
 **If you want to add a rule which should not be removed at optimization use the `NOT_OPTIMIZED` hint:**
 
@@ -4579,27 +4578,27 @@ Eventually, here are the two versions of the Base filter for AdGuard Browser Ext
 
 Used to specify the platforms to apply the rules. List of existing platforms and links to Base filter, for example, for each of them:
 
-- `windows` — Windows için AdGuard — [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
+- `windows` — AdGuard for Windows — [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
 
-- `mac` — Mac için AdGuard — [https://filters.adtidy.org/mac_v2/filters/2.txt](https://filters.adtidy.org/mac_v2/filters/2.txt)
+- `mac` — AdGuard for Mac — [https://filters.adtidy.org/mac_v2/filters/2.txt](https://filters.adtidy.org/mac_v2/filters/2.txt)
 
-- `android` — Android için AdGuard — [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
+- `android` — AdGuard for Android — [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
 
-- `ios` — iOS için AdGuard — [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
+- `ios` — AdGuard for iOS — [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
 
-- `ext_chromium` — Chrome için AdGuard Tarayıcı Uzantısı — [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
+- `ext_chromium` — AdGuard Browser Extension for Chrome — [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
 
-- `ext_chromium_mv3` — Chrome için AdGuard Tarayıcı Uzantısı MV3— [https://filters.adtidy.org/extension/chromium-mv3/filters/2.txt](https://filters.adtidy.org/extension/chromium-mv3/filters/2.txt)
+- `ext_chromium_mv3` — AdGuard Browser Extension for Chrome MV3 — [https://filters.adtidy.org/extension/chromium-mv3/filters/2.txt](https://filters.adtidy.org/extension/chromium-mv3/filters/2.txt)
 
-- `ext_ff` — Firefox için AdGuard Tarayıcı Uzantısı — [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
+- `ext_ff` — AdGuard Browser Extension for Firefox — [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
 
-- `ext_edge` — Edge için AdGuard Tarayıcı Uzantısı — [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
+- `ext_edge` — AdGuard Browser Extension for Edge — [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
 
-- `ext_opera` — Opera için AdGuard Tarayıcı Uzantısı — [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
+- `ext_opera` — AdGuard Browser Extension for Opera — [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
 
-- `ext_safari` — Safari için AdGuard — [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
+- `ext_safari` — AdGuard for Safari — [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
 
-- `ext_android_cb` — AdGuard İçerik Engelleyici — [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
+- `ext_android_cb` — AdGuard Content Blocker — [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
 
 - `ext_ublock` — uBlock Origin — [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
 
@@ -4629,10 +4628,10 @@ Filtering log is an advanced tool that will be helpful mostly to filter develope
 
 Depending on which AdGuard product you are using, Filtering log can be located in different places.
 
-- **Windows için AdGuard'da**, *Reklam Engelleyici* sekmesinde veya tepsi menüsünde bulabilirsiniz
-- **Mac için AdGuard'da**, *Ayarlar → Gelişmiş → Filtreleme günlüğü* öğesinde bulunur
-- **Android için AdGuard'da**, bunu *İstatistik → Son etkinlik* altında bulabilirsiniz. *Son etkinlik* ayrıca *Asistandan* da erişilebilir
-- **AdGuard Tarayıcı Uzantısında**, *Diğer* ayarlar sekmesinden veya uzantı simgesine sağ tıklayarak erişilebilir. Only Chromium- and Firefox-based web browsers show applied **element hiding rules** (including CSS, ExtCSS) and **JS rules and scriptlets** in their Filtering logs
+- In **AdGuard for Windows**, you can find it in the *Ad Blocker* tab or via the tray menu
+- In **AdGuard for Mac**, it is located in *Settings → Advanced → Filtering log*
+- In **AdGuard for Android**, you can find it under *Statistics → Recent activity*. *Recent activity* can also be accessed from the *Assistant*
+- In **AdGuard Browser Extension**, it is accessible from the *Miscellaneous* settings tab or by right-clicking the extension icon. Only Chromium- and Firefox-based web browsers show applied **element hiding rules** (including CSS, ExtCSS) and **JS rules and scriptlets** in their Filtering logs
 
 :::not
 
@@ -4725,7 +4724,7 @@ The following scriptlets also may be used for debug purposes:
 - [`prevent-requestAnimationFrame`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-requestanimationframe)
 - [`prevent-setInterval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-setinterval)
 - [`prevent-setTimeout`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-settimeout)
-- Belirtilen `replacement` parametresiyle [`prevent-window-open`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-window-open)
+- [`prevent-window-open`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-window-open) with specified `replacement` parameter
 - [`prevent-xhr`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-xhr)
 - [`trusted-replace-fetch-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md#trusted-replace-fetch-response)
 - [`trusted-replace-xhr-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md#trusted-replace-xhr-response)

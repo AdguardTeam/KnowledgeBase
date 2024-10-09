@@ -26,7 +26,7 @@ Pokuste se uvést co nejvíce podrobností — usnadníte nám tak reprodukci ch
 - Zda se problém opakuje a s jakou frekvencí
 - Jestli používáte VPN nebo antivirový software
 
-### How to collect logs
+### Jak shromažďovat a záznamy
 
 Read about collecting logs in dedicated articles for each platform.
 

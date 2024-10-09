@@ -18,87 +18,87 @@ AdGuard はユーザースクリプトマネージャとして、ウェブサイ
 
 ### AdGuard Extra
 
-An extension that blocks ads in difficult cases when the usual filter-based approach is not enough. AdGuard Extra comes pre-installed with all premium AdGuard versions, so you don't need to do anything to enable it. However, if you want to use it alongside AdGuard Browser Extension or any other ad blocker, you'll need to use an additional extension. Learn more about this userscript and how to install it on [GitHub](https://github.com/AdguardTeam/AdGuardExtra).
+通常のフィルタベースアプローチでは不十分な場合に、広告をブロックしてくれる拡張機能。 AdGuard Extraは、AdGuardのすべてのプレミアム版にプリインストールされているため、有効にするために何もする必要はありません。 ただし、AdGuard ブラウザ拡張機能やその他の広告ブロッカーと一緒に使用したい場合は、追加の拡張機能を使用する必要があります。 このユーザースクリプトの詳細とインストール方法については[GitHub](https://github.com/AdguardTeam/AdGuardExtra)をご覧ください。
 
 ![AdGuard Extra](https://cdn.adtidy.org/content/kb/ad_blocker/general/adguard-extra.png)
 
-### AdGuard Popup Blocker
+### AdGuard ポップアップブロッカー
 
-The name speaks for itself: it blocks pop-ups — one of the most annoying types of ads on web pages. Learn more about this userscript, its key features, and how to install it on [GitHub](https://github.com/AdguardTeam/PopupBlocker).
+その名の通り、ウェブページ上の最も迷惑な広告カテゴリのひとつであるポップアップ広告をブロックします。 このユーザースクリプトの詳細、主な機能、インストール方法については[GitHub](https://github.com/AdguardTeam/PopupBlocker)をご覧ください。
 
-![AdGuard Popup Blocker](https://cdn.adtidy.org/content/kb/ad_blocker/general/popup-blocker-installation.png)
+![AdGuard ポップアップブロッカー](https://cdn.adtidy.org/content/kb/ad_blocker/general/popup-blocker-installation.png)
 
-### AdGuard Assistant (legacy version)
+### AdGuard アシスタント (レガシー版)
 
-This custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.).
+このカスタム拡張機能は、ブラウザのページから直接フィルタリングを制御することを可能にします（手動ブロック、サイトの除外などの管理）。
 
 :::note
 
-This version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). But the legacy Assistant might be of help if there is no Browser Assistant for your browser. If this is your case, your can learn how to install AdGuard Assistant on [GitHub](https://github.com/AdguardTeam/AdguardAssistant).
+このバージョンのアシスタントはレガシー版であり、現在、本格的な新 [AdGuard ブラウザアシスタント](https://adguard.com/adguard-assistant/overview.html)に置き換えられているため、新しいシステムやデバイスで使用する意味はありません。 しかし、お使いのブラウザにAdGuardブラウザアシスタントがない場合は、レガシー版アシスタントが役に立つかもしれません。 このような場合は、[GitHub](https://github.com/AdguardTeam/AdguardAssistant)でAdGuard アシスタントのインストール方法をご確認いただけます。
 
 :::
 
-### Disable AMP
+### AMPを無効化
 
-A script that is only pre-installed in AdGuard for Android. It disables AMP (Accelerated Mobile Pages) on the Google search results page. Learn more about this userscript and how to install it on [GitHub](https://github.com/AdguardTeam/DisableAMP).
+Android版AdGuardにのみプリインストールされているスクリプト。 Google 検索結果ページで AMP (Accelerated Mobile Pages) を無効にします。 このユーザースクリプトの詳細とインストール方法については[GitHub](https://github.com/AdguardTeam/DisableAMP)をご覧ください。
 
-![Disable AMP](https://cdn.adtidy.org/content/kb/ad_blocker/general/disable-amp-installation.png)
+![AMPを無効化](https://cdn.adtidy.org/content/kb/ad_blocker/general/disable-amp-installation.png)
 
-## Top picks outside AdGuard{#top-picks}
+## AdGuard以外でおすすめのスクリプト
 
-These userscripts are not developed by AdGuard and therefore we can't give a 100% guarantee that they are safe and/or work at all times. However, in our experience they deserve a recommendation as they've all earned their good reputation.
+これらのユーザースクリプトは、AdGuardによって開発されたものではないため、安全性および/または機能性することを100%保証することはできません。 しかし、私たちの経験では、以下のものは全部、良い評判を得ているので、推薦に値します。
 
 ### Don't track me Google
 
-This script removes Google's tracking feature from the links in Google search results. It speeds up the loading of search results and allows you to right-click or tap to copy the link URL.
+このスクリプトは、Googleの検索結果のリンクからGoogleのトラッキング機能を削除します。 検索結果の読み込みを高速化し、右クリックやタップでリンクURLをコピーできるようにします。
 
-Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me-google). This userscript can be downloaded from [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) and installed in any AdGuard CoreLibs-based app.
+ソースコードは[GitHubで公開されています](https://github.com/Rob--W/dont-track-me-google)。 このユーザースクリプトは[GreasyForkから](https://greasyfork.org/en/scripts/428243-don-t-track-me-google)ダウンロードし、AdGuard CoreLibsベースのアプリにインストールすることができます。
 
 ### microShield
 
-A userscript for people who visit Korean websites and some international websites. The microShield userscript blocks Ad-Shield advertisement and anti-adblock. Its original source code is available at [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) and [AdShield Defuser](https://github.com/seia-soto/adshield-defuser). This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about microShield and how to install it on [GitHub](https://github.com/List-KR/microShield).
+韓国のウェブサイトや一部の国際ウェブサイトを訪問する人のためのユーザースクリプト。 microShield ユーザースクリプトは、Ad-Shield 広告とアンチアドブロック（広告ブロック対策技術）をブロックします。 オリジナルのソースコードは、 [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) および [AdShield Defuser](https://github.com/seia-soto/adshield-defuser)で確認できます。 このユーザースクリプトは、AdGuard CoreLibsベースのアプリ、Violentmonkey、Tampermonkey、および[quoid/userscripts](https://github.com/quoid/userscripts)にインストールできます。 microShieldの詳細とインストール方法については、[GitHub](https://github.com/List-KR/microShield)をご覧ください。
 
-## Where can you get more userscripts?{#more-userscripts}
+## さらに多くのユーザースクリプトはどこで入手できますか？
 
-As userscripts are mainly created by enthusiasts, you should be cautious when installing them. Any script from an unknown source carries a potential risk. Yet, there is a great variety of interesting scripts that, if installed carefully and responsibly, can really make using some websites more convenient.
+ユーザースクリプトは主に愛好家によって作成されるため、インストールする際には注意が必要です。 未知のソースからのスクリプトは、潜在的なリスクを伴います。 しかし、注意深く責任を持ってインストールすれば、ウェブサイトの利用をより便利にしてくれる興味深いスクリプトは実に多種多様です。
 
-Here we will describe some of the most popular userscript catalogs.
+以下で、最も人気なユーザースクリプト・カタログのいくつかをご紹介します。
 
 ### Userscript.Zone
 
-[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high credibility, since only scripts from moderated pages are displayed.
+[Userscript.Zone](https://www.userscript.zone)は、一致するURLまたはドメインを入力してユーザースクリプトを検索できるウェブサイトです。 このウェブサイトは使いやすく、モデレートされたページのスクリプトだけが表示されるため、信頼性も高いです。
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) is a userscript catalog by Stylish creators. The scripts in this catalog undergo moderation, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/)は、Stylishのクリエイターによるユーザースクリプトのカタログです。 このカタログに掲載されているスクリプトは、モデレーションを受けているため、その信頼性はさらに高いです。
 
 ### OpenUserJS.org
 
-[OpenUserJS.org](https://openuserjs.org/) is an open source userscript catalog written in nodeJS. It doesn't have moderation so stay alert to any suspicious scripts.
+[OpenUserJS.org](https://openuserjs.org/)はnodeJSで書かれたオープンソースのユーザースクリプトカタログです。 モデレーションがないので、不審なスクリプトに注意してください。
 
-### Community
+### コミュニティ
 
-If you like the idea of personifying your browser with the help of userscripts, and you have any questions, you can ask them on one of these websites:
+ユーザースクリプトの助けを借りてブラウザを擬人化するというアイデアが好きな方で、何か質問がある場合は以下のウェブサイトのいずれかで質問することができます:
 
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/userscripts)
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
 - [Reddit](https://www.reddit.com/r/userscripts/)
 
-## Development
+## 開発者向け
 
-### Request license
+### AdGuardライセンスをリクエストする
 
-If you are developing your own custom script and want to test how it works with AdGuard, request a beta license key for the app.
+独自のカスタムスクリプトを開発中で、AdGuardとの連携をテストしたい場合は、AdGuardアプリのベータ版ライセンスキーをリクエストしてください。
 
-To get it, please send an email to devteam@adguard.com with the following information:
+ご希望の方は、以下の情報を明記の上、devteam@adguard.com にご連絡ください:
 
-**Subject:** Userscript author license request
+**件名:** Userscript author license request
 
-**Body:** Please tell us about the userscripts you are working on.
+**本文:** 現在取り組んでいるユーザースクリプトについて教えてください（できれば英語でお願いします）。
 
-Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK).
+よかったらこちらの[mailtoリンク](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK)もお使いください。
 
-### Compatibility
+### 互換性
 
 #### Metadata block
 
@@ -134,7 +134,7 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 
 ##### Unsupported properties
 
-These properties will be simply ignored by AdGuard.
+これらのプロパティは、AdGuardによって無視されます:
 
 ```text
 @unwrap
@@ -142,7 +142,7 @@ These properties will be simply ignored by AdGuard.
 
 #### Supported GM functions
 
-AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
+AdGuard は、古い GM\_ 関数と、GM オブジェクトを使用する新しい GM4 API の両方をサポートしています。
 
 ##### Values
 
@@ -169,9 +169,9 @@ GM_addStyle
 GM_log
 ```
 
-[Here](https://wiki.greasespot.net/GM.info) you can find more information about Greasemonkey API.
+Greasemonkey APIについての詳細は[こちら](https://wiki.greasespot.net/GM.info)をご覧ください。
 
-### Example
+### 例:
 
 ```javascript
 // ==UserScript==
@@ -210,19 +210,19 @@ GM_log
 )}();
 ```
 
-## Userstyles
+## ユーザースタイル
 
-AdGuard products provide limited support for userstyles. `@var` and `@advanced` metadata tags are not supported, as well as any value of the `@preprocessor` metadata tag except `default`.
+AdGuard製品では、ユーザースタイルを限定的にサポートしています。 `@var` および `@advanced` メタデータタグはサポートされていません。また、 `@preprocessor` メタデータタグの任意の値 ( `default`を除く) もサポートされていません。
 
 ### Metadata
 
-The metadata block is written using CSS-style comments, starting with `===UserStyle===` and ending with `===/UserStyle===`. All metadata tags that are supported for userscripts are also supported for userstyles, although some of them have no meaning and are ignored. `@var` and `@advanced` tags are not supported. The only supported value of the `@preprocessor` tag is `default`.
+メタデータブロックは、 `===UserStyle===` で始まり、 `===/UserStyle===`で終わる CSS スタイルのコメントを使用して記述されます。 ユーザースクリプトでサポートされているすべてのメタデータタグは、ユーザースタイルでもサポートされています。（一部のタグ意味ないため無視されますが。） `@var` および `@advanced` タグはサポートされていません。 `@preprocessor` タグでサポートされている値は、 `default` のみです。
 
 ### Content
 
-The content of a userstyle is plain CSS with support for the [`@-moz-document` at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@document). The `media-document()` function is not supported. The userstyle will only be applied to pages that match one or more of the `@-moz-document` rules. If the userstyle does not contain any `@-moz-document` rules, it will not be applied.
+ユーザースタイルのコンテンツは、 [`@-moz-document` @-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@document)をサポートするプレーン CSS です。 `media-document()` 関数はサポートされていません。 ユーザースタイルは、 `@-moz-document` ルールの 1 つ以上に一致するページにのみ適用されます。 ユーザースタイルに `@-moz-document` ルールが全く含まれていない場合は、そのユーザースタイルは適用されません。
 
-### Example
+### 例:
 
 ```css
 /* ==UserStyle==

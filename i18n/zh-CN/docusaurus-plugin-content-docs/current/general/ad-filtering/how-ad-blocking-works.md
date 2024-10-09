@@ -1,64 +1,64 @@
 ---
-title: How ad blocking works
+title: 广告拦截的工作方式
 sidebar_position: 1
 ---
 
-AdGuard has many ad-blocking products for different platforms, each with its own unique features. But what unites them all is that they block ads and trackers. This article describes how ad blocking works from the inside.
+AdGuard 有众多广告拦截服务以适用于各种平台且各产品都有独特功能。 所有产品的共同点是拦截广告和跟踪器。 本文将由浅入深描述广告拦截的工作方式。
 
 :::note
 
-We don't cover DNS filtering here. It's a different way of blocking ads, with its own advantages and disadvantages. Follow this link to [learn more about DNS filtering](https://adguard-dns.io/kb/general/dns-filtering#how-does-dns-filtering-work).
+此处我们未涵盖 DNS 过滤。 这是不同的广告拦截方式，有其自己的利弊。 请跟随此链接[以了解更多关于 DNS 过滤的信息](https://adguard-dns.io/kb/general/dns-filtering#how-does-dns-filtering-work)。
 
 :::  
 
-<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/Xq_CUdh0T_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/Xq_CUdh0T_w" title="YouTube 视频播放器" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## General principle
+## 一般原则
 
-Filter lists, also called filters, lie at the core of any ad blocker. Filters are literally lists of rules written in a special syntax. Ad blockers can understand this complex syntax. They interpret filtering rules and perform actions on web traffic based on what the rules tell them to do: block specific elements, alter web pages in certain ways, etc.
+过滤器列表，也称为过滤器，是任何广告拦截器的核心。 实际上，过滤器是用特殊语法编写的规则列表。 广告拦截器能“理解”此复杂的语法。 它们解释过滤规则并基于告知它们要做什么的规则执行网络流量动作：拦截特定元素，以某些方式更改网页等。
 
-![How ad blocking works](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
+![广告拦截的工作方式](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
 
-## Filter lists
+## 过滤器列表
 
-To better understand ad blocking, it's important to know the underlying principles of how filters work.
+要更好的了解广告过滤，知晓过滤器工作原理尤为重要。
 
-Filtering rules that make up filters are not created automatically. They are developed by filter maintainers, including professionals and volunteers, who use browser developer consoles and other tools (such as the AdGuard's filtering log) to determine which rules will block a particular ad or tracker. This description of the process is very simplistic — some ads are particularly hard to block and require multiple rules, multiple iterations, and the use of complex syntax.
+构成过滤器的过滤规则不会自动创建。 它们是由包括专业和业余维护者在内的过滤器维护者开发的，他们使用浏览器开发者控制台和其它工具（如 AdGuard 过滤日志）以确定拦截特定广告或跟踪器的规则。 此过程描述非常简单：某些广告难以拦截且需要多重规则，多次迭代并使用复杂语法。
 
-And even when a rule finally gets added to a filter, it doesn't mean that it stays there forever. Ads change, ways to serve the same ads on the same websites change, and the filter rules have to change, too. Sometimes rules become obsolete, a new ad appears, or a new filtering rule is needed to block the same ad. Filters are often maintained by one person, but even for a team of maintainers, it's impossible to constantly monitor the entire web. That's why many ad blockers have tools to help users easily report any filter-related issues they encounter.
+即使规则最终添加到过滤器中，也不意味着它会永远存在。 因为广告在变，相同网站上提供相同广告的方式在变，过滤规则也须改变。 有时规则会过时，会出现新广告，或者需要新的过滤规则阻止同一广告。 过滤器通常由个人维护，但即使是维护人员团队，也不可能持续监视整个网络。 这就是为什么许多广告拦截器都有工具以帮助用户轻松报告他们遇到的任何与过滤器相关的问题。
 
-![Filter update scheme](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/filtersupdates.png)
+![过滤器更新方案](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/filtersupdates.png)
 
-AdGuard users [have access to a special web reporting tool](https://reports.adguard.com/new_issue.html). Thanks to user complaints, filter developers can focus on correcting their filter lists and not on scouring the Internet for new and old unblocked ads.
+AdGuard 用户[可以访问专门的网络报告工具](https://reports.adguard.com/new_issue.html)。 归功于用户的报告，过滤器开发者才可致力于他们的过滤器列表维护且不用刷网页寻找那些新旧未拦截的广告。
 
-Filters can do more than just block ads. There are filters that block tracking, social media widgets, and annoyances such as cookie notices. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
+过滤器不仅可拦截广告，还能做更多。 过滤器还可以拦截跟踪器，社交媒体小工具及其他烦人的元素，如 Cookie 通知。 不同的用户可以选择不同的过滤器组合以匹配个人首选。 不少网站，如 [filterlists.com](https://filterlists.com/)，有专门的过滤器列表和巨大的数据库。
 
-We develop and maintain [our own set of filter lists](../adguard-filters) that can be used with AdGuard or other ad blockers.
+我们开发并维护[自己的过滤器列表集合](../adguard-filters)以供 AdGuard 或其它广告拦截器使用。
 
-## Types of filtering rules
+## 过滤规则类型
 
-There are many types of filtering rules that serve different purposes. Depending on the ad blocker you use, and especially on your OS, some types of rules may not be supported.
+过滤规则的类型众多，用途不尽相同。 依赖于用户所用的广告拦截器，特别是操作系统，某些规则类型可能不受支持。
 
-### Basic filtering rules
+### 基本过滤规则
 
-To be displayed on a web page or in an app, the ad has to be loaded from a server first. To do so, the browser or the app needs to send a web request. The most basic way of preventing an ad from appearing on your screen is to block this request so it never reaches the server, and thus there's no reply.
+要在网页或应用程序中托管广告，必须首先从服务器加载它们。 为此，浏览器或应用程序要发送网络请求。 阻止广告出现在屏幕上的最基本方式就是拦截相应的请求防止其到达服务器，从而不会有“广告”响应。
 
-Basically, all AdGuard Ad Blocker products can block web requests according to the active filter rules. This method is very effective at stopping the ad, but it has some drawbacks. The most obvious one is: whatever place an ad was taking up will be left empty or occupied by an ad leftover.
+基本上，所有 AdGuard 广告拦截产品都可依据活动的过滤规则拦截网络请求。 此方式对阻止广告非常有效，但其有些弊端。 最明显的就是：在进行拦截后，广告占据的位置就会残留有空白或被其它广告占据。
 
-### Cosmetic filtering rules
+### 修饰过滤规则
 
-Every web page has a Document Object Model (DOM), an HTML document containing the structure and elements of this page. As ads are also page elements, they get recorded in the DOM. Ad blockers can remove parts of the DOM, while filtering rules help them understand which parts are ads and should be removed, and which parts should be left intact.
+各网页都有 Document Object Model（英文简称：DOM，中文：文档对象模型），一种包含网页结构和元素的 HTML 文档。 广告也是网页元素，所以都会记录到 DOM 内。 在过滤规则协助广告拦截器了解哪些部件是广告且需要移除，哪些部件是要保留之时，广告拦截器可移除部分 DOM 内容。
 
-This method allows you to avoid above-mentioned blank spaces and ad leftovers, as well as perform other more complicated tasks.
+此方式允许用户避免以上提及的空白和广告残留，以及执行更多其它更负责的任务。
 
-### HTML filtering rules
+### HTML 过滤规则
 
-In most cases, it's enough to use the above-mentioned basic and cosmetic rules to filter ads. But when it is necessary to change the HTML code of the page itself before it is loaded, you need filtering rules for HTML content. These rules allow you to specify the HTML elements to be cut out before the browser even loads the page.
+在大多数情况下，以上提及的基本规则和修饰规则足以过滤广告。 不过，如果需要在加载页面之前更改页面的 HTML 代码，就需要针对 HTML 内容制定过滤规则。 这些规则允许在浏览器加载网页之前移除特定的 HTML 元素。
 
-These rules are quite complicated and require the ad blocker to be granted certain access rights, so not all platforms support them. Currently, these rules work only in the AdGuard Firefox add-on and in the AdGuard apps for Windows, Mac, and Android.
+这些规则相当复杂，需要授予广告拦截器一定的访问权限，因此并非所有平台都支持这些规则。 当前这些规则仅工作于 AdGuard Firefox 附件以及运行于 Windows、Mac、Android 系统上的 AdGuard 应用程序。
 
 :::info
 
-There are other types of filtering rules, but they require more advanced technical knowledge to understand how they work. If you are interested, [check out our comprehensive guide on filtering rules in the linked article](../create-own-filters).
+还有其它类型的过滤规则，但用户需要有更高级的技术知识以理解其工作方式。 如果有兴趣， [请查看相应文章](../create-own-filters)了解过滤规则的综合指南。
 
 :::

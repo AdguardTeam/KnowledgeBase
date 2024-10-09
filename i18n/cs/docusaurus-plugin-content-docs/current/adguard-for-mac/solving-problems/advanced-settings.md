@@ -21,7 +21,7 @@ Chcete-li najít *Pokročilá nastavení*, otevřete AdGuard, klikněte na ikonu
 
 ## Pokročilá nastavení
 
-### Network settings
+### Nastavení sítě
 
 #### `network.extension.exclude.domains`
 
@@ -71,7 +71,7 @@ Doba v sekundách před odesláním další udržovací sondy neodpovídajícím
 
 #### `network.https.ech.enabled`
 
-Používá místní DNS proxy k vyhledání konfigurací v seznamech konfigurací ECH. If found, encrypts Client Hellos.
+Používá místní DNS proxy k vyhledání konfigurací v seznamech konfigurací ECH. Pokud je nalezeno, zašifruje ClientHellos.
 
 #### `network.https.enforce.certificate.transparency`
 
@@ -89,7 +89,7 @@ Nastavením `true` povolíte filtrování lokální sítě.
 
 Nastavením `true` povolíte filtrování LoopBack.
 
-### DNS settings
+### Nastavení DNS
 
 #### `dns.proxy.bootstrap.ips`
 
@@ -159,7 +159,7 @@ Povolí HTTP/3 pro odchozí připojení DNS-over-HTTPS pro zrychlení připojen�
 
 Odstraní z dotazů parametry Encrypted Client Hello.
 
-### Stealth Mode settings
+### Nastavení Režimu utajení
 
 #### `stealth.antidpi.http.split.fragment.size`
 
@@ -177,7 +177,7 @@ Přidá dodatečnou mezeru mezi metodu HTTP a URL adresu a odstraní mezeru za p
 
 Zde můžete zadat prodlevu v milisekundách po odeslání prvního fragmentu, pokud je provedena fragmentace.
 
-### Subscription link interception settings (userscripts and filters)
+### Nastavení zachycení odkazů předplatného (uživatelské skripty a filtry)
 
 #### `subscription.link.interception.userscript`
 

@@ -29,29 +29,29 @@ Xiaomi (a zejména MIUI) patří mezi nejproblematičtější, pokud jde o prác
 
 ### MIUI 13+ a HyperOS
 
-Depending on the MIUI and HyperOS versions, there are two ways to change the battery optimization settings on your phone and block ads more efficiently.
+V závislosti na verzi MIUI a HyperOS existují dva způsoby, jak změnit nastavení optimalizace baterie v telefonu a účinněji blokovat reklamy.
 
-Option 1
+1. možnost
 
-1. Go to **Settings** → **Apps** → **Permissions** → **Background autostart** and allow AdGuard to run in the background
+1. Přejít do **Nastavení** → **Aplikace** → **Oprávnění** → **Automatické spuštění na pozadí** a umožněte AdGuardu běžet na pozadí
 
-1. Return to **Settings** → **Apps** → **Manage apps** → **AdGuard** and uncheck **Pause app activity if unused**
+1. Vraťte se do **Nastavení** → **Aplikace** → **Správa aplikací** → **AdGuard** a zrušte zaškrtnutí políčka **Pozastavit aktivitu aplikace, pokud není používána**
 
-1. Go to **Battery saver** and tap **No restrictions**
+1. Přejděte do **Spořiče baterie** a klepněte na **Bez omezení**
 
-Option 2
+2. možnost
 
-1. Go to **Settings** → **Apps** → **Manage apps** → **AdGuard** and enable **Autostart**
+1. Přejděte do **Nastavení** → **Aplikace** → **Správa aplikací** → **AdGuard** a povolte **Automatické spouštění**
 
-1. Go to **Battery saver** and tap **No restrictions**
+1. Přejděte do **Spořiče baterie** a klepněte na **Bez omezení**
 
-Hotovo! You have successfully set up AdGuard to work in the background.
+Hotovo! Úspěšně jste nastavili AdGuard tak, aby pracoval na pozadí.
 
 ### MIUI 12.0.8
 
 Chcete-li aplikaci AdGuard úspěšně spustit na pozadí, proveďte následující kroky:
 
-In **Settings** → **Apps** → **Manage apps**, scroll down to locate **AdGuard** and set **Autostart** to “On”.
+V **Nastavení** → **Aplikace** → **Spravovat aplikace** → přejděte dolů k **AdGuard**, nastavte **Automatické spuštění** na “Zapnuto“.
 
 ![Nastavení Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
@@ -529,7 +529,7 @@ V systému Android 11+ je na stejné obrazovce s režimem STAMINA nastavení s n
 
 Je také třeba AdGuard vyjmout z funkce úspory energie:
 
-**System settings** → **Apps & Notifications** → **Advanced** → **Special app access** → **Power saving feature** → Switch AdGuard to **Excepted**
+**Nastavení systému** → **Aplikace a Oznámení** → **Rozšířené** → **Přístup ke speciálním aplikacím** → **Funkce úspory energie** → Přepnout AdGuard na **Vynechat**
 
 ## Wiko
 

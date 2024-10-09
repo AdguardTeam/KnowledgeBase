@@ -35,4 +35,4 @@ Después de habilitar esta función, cuando cambie de Samsung Pay a AdGuard, apa
 
 ![samsungpay *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/samsungpay-with-adguard-in-south-korea/samsung_pay.png)
 
-Alternatively, you can disable filtering for Samsung Pay in *App management*. Simply go to the *App management* screen (third tab from the bottom), find Samsung Pay in the list, and turn off the switch at *Route traffic through AdGuard*.
+Alternativamente, puedes desactivar el filtrado para Samsung Pay en *Administración de aplicaciones*. Simplemente ve a la pantalla *Administración de aplicaciones* (tercera pestaña desde abajo), busca Samsung Pay en la lista y desactiva *Dirigir el tráfico a través de AdGuard*.
