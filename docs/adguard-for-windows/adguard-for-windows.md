@@ -15,25 +15,25 @@ This section is dedicated to the features and settings of AdGuard for Windows. H
 
 Here are outlined the main features and settings available in AdGuard for Windows.
 
-[Features overview](/adguard-for-windows/features.md)
+[Features](/adguard-for-windows/features.md)
 
 ## Installation
 
 Here, you’ll find the system requirements along with instructions on how to install and uninstall AdGuard for Windows.
 
-[Installation](/kb/adguard-for-windows/installation.md)
+[Installation](/adguard-for-windows/installation.md)
 
 ## Browser Assistant
 
 This article covers a browser extension that complements the desktop program, its installation, and its benefits.
 
-[Browser Assistant](/kb/adguard-for-windows/browser-assistant.md)
+[Browser Assistant](/adguard-for-windows/browser-assistant.md)
 
 ## Solving problems
 
 This section includes various articles addressing known issues and possible solutions.
 
-[Solving problems](/kb/adguard-for-windows/solving-problems.md)
+[Solving problems](/adguard-for-windows/solving-problems.md)
 
 ## Documentation for admins
 
