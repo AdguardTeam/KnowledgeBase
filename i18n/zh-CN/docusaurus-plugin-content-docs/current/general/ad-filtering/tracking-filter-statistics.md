@@ -1,45 +1,45 @@
 ---
-title: Tracking filter rules statistics
+title: 跟踪过滤规则统计
 sidebar_position: 4
 ---
 
 :::note
 
-The *Send statistics for ad filters usage* option is disabled by default. Nothing will be sent unless a user manually enables it to help us improve our blocking filters.
+「*发送广告过滤器使用情况*」选项默认是禁用的。 除非用户手动开启该选项以帮助我们改进拦截过滤器，软件什么信息也不会发送。
 
 :::
 
-### Why do we need ad filters?
+### 为什么广告过滤器很重要？
 
-Let's start by defining what ad filters are. Thanks to these filters, AdGuard removes ads from websites. They are manually compiled based on your complaints about ads on websites. Ad filters are an essential element of AdGuard — their quality determines the overall quality of AdGuard ad blocking.
+让我们先从广告过滤器的定义开始。 有了广告过滤器的帮助，AdGuard 才能移除网站上的广告。 它们是基于用户对网站广告的投诉而手动编译的。 广告过滤器是 AdGuard 的重要元素，它们的品质确定 AdGuard 拦截广告的整体效果。
 
-However, there is a downside. Over the years, more and more ad filters have been appearing. And the more ad filters are there, the more memory AdGuard consumes, thus slowing down the rendering of web pages. At the same time, some of the filters start to expire, gradually becoming a dead weight that has no use, only consumes memory, and slows down the program.
+然而，有个缺点。 多年来，广告过滤器的数量越来越多。 而且广告过滤器越多，AdGuard 占用的内存也就越多，从而降低网页的渲染速度。 同时，一些过滤器慢慢过期，逐渐成为无用的累赘，只会占据内存，并降低程序的运行速度。
 
-### Why do we need statistics?
+### 为什么统计数据很重要？
 
-We want to solve the problem of outdated filtering rules once and for all. But we need your help to do so. By gathering statistics on used filtering rules, we detect and remove the rules that are no longer used. As a result, it will help all those who use AdGuard.
+我们希望一劳永逸地解决过滤规则过期的问题。 不过，我们需要大家的帮助。 收集使用的过滤规则的统计数据，让我们检测并移除不再使用的规则。 结果，我们能帮助安装 AdGuard 的新用户。
 
-If your computer is powerful enough, it won’t really affect you. But the difference will be very noticeable for users of low-power netbooks or tablets.
+如果用户有一台足够强大的计算机，本问题就不会真正影响他。 不过，对于低功耗笔记本电脑和平板电脑的用户来说，差异将非常明显。
 
-### What kind of statistics will be sent?
+### 统计数据包括什么信息？
 
-If you enable the *Send statistics for ad filters usage* option, the following information is sent periodically:
+如用户开启「*发送广告过滤器使用情况*」，软件将定期发送以下信息：
 
-- Extension version
-- Browser type (Chrome/Firefox/Opera/Yandex.Browser/Safari).
-- List of enabled ad filters.
-- The list that consists of the following elements:
-    - *The domain name of the website*
-    - *The number of recent page views*
-    - *The list of filtering rules and Filter ID which were activated on this website*
-    - *The domain name of blocked requests is sent for URL rules* The list is created based on the website's visit statistics since the last time statistical data was sent.
+- 扩展版本
+- 浏览器类型（Chrome/Firefox/Opera/Yandex.Browser/Safari）
+- 启用的广告过滤器列表
+- 列表由以下元素组成：
+    - *网站域名*
+    - *最近的页面浏览量*
+    - *在网站上激活的过滤规则和过滤器 ID 的列表*
+    - 「*被阻止发送请求至URL的域名规则*」 该列表是根据网站自上次发送统计数据以来的访问统计数据创建的
 
-The collected statistics will be sent periodically to our server for analysis and filter optimization.
+收集的统计数据将定期发送到我们的服务器以便我们分析和优化过滤器。
 
-It's important to note that all the statistics we get are averaged and anonymized. We don't use these statistics for any purpose other than optimizing the filters, and we do not sell this data to third parties. You can read about it in our [Privacy policy](https://adguard.com/privacy.html).
+请注意，我们获得的所有统计数据都是平均且匿名处理的。 我们不会将统计数据用作除优化过滤器之外的其它用途，我们也不会销售它们给第三方。 用户可以在我们的[隐私政策](https://adguard.com/privacy.html)中阅读相关内容。
 
-### What does tracking filter rules statistics fraught with?
+### 跟踪过滤规则统计会导致什么？
 
-For the vast majority of users, the change in computer speed will not be really noticeable. However, netbook and tablet users may notice a slight slowdown.
+对于绝大多数用户来说，电脑速度的变化其实并不明显。 不过，上网本和平板电脑用户可能会注意到速度略有放缓。
 
-Periodically, we will send the gathered statistics to the server. The size of the transmitted data is not very large and is comparable to the size of an average web page.
+我们将定期向服务器发送收集到的统计数据。 传输的数据大小不是很大，与普通网页的大小相当。

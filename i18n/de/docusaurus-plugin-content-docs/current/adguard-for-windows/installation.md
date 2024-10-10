@@ -31,7 +31,7 @@ Um AdGuard auf einem PC oder Tablet unter Microsoft Windows zu verwenden, müsse
 
    ![Drücken Sie "Ausführen"](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/click-download.png)
 
-3. You’ll see the User Account Control dialogue box requesting to allow the app to make changes to your PC. Klicken Sie auf *Ja*.
+3. Es wird das Dialogfeld der Benutzerkontensteuerung angezeigt, in dem Sie aufgefordert werden, der Anwendung zu erlauben, Änderungen an Ihrem PC vorzunehmen. Klicken Sie auf *Ja*.
 
    ![Lassen Sie Änderungen zu *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/allow-changes.png)
 
@@ -77,9 +77,9 @@ Falls die reguläre Deinstallation aus irgendeinem Grund nicht funktioniert, kö
 
 ![Standard-Deinstallation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard.jpg)
 
-- Click *OK* once the warning window pops up:
+- Klicken Sie auf *OK*, sobald das Warnfenster angezeigt wird:
 
-![Standard uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
+![Standard-Deinstallationshinweis *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
 - Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
 
@@ -87,7 +87,7 @@ Falls die reguläre Deinstallation aus irgendeinem Grund nicht funktioniert, kö
 
 :::caution
 
-Follow the next steps only if performing the first two steps wasn’t enough for some reason. We strongly suggest contacting our support before using steps 3-4 of advanced uninstall instruction.
+Führen Sie die nächsten Schritte nur aus, wenn die ersten beiden Schritte aus irgendeinem Grund nicht ausreichend waren. Wir empfehlen dringend, unseren Support zu kontaktieren, bevor Sie die Schritte 3-4 der erweiterten Deinstallationsanweisung ausführen.
 
 :::
 
@@ -95,12 +95,12 @@ Follow the next steps only if performing the first two steps wasn’t enough for
 
 ![Erweiterte Deinstallation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
 
-- Click *OK* once the warning window pops up:
+- Klicken Sie auf *OK*, sobald das Warnfenster angezeigt wird:
 
 ![Extended uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
 - Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
 
-![Extended uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
+![Erweiterte Deinstallation abgeschlossen *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
 
 AdGuard wurde erfolgreich deinstalliert!

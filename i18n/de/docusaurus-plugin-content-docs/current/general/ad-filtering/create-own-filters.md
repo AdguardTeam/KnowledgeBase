@@ -1519,7 +1519,7 @@ preroll.ts
 
 :::caution Restrictions
 
-- `$hls` rules are only allowed [**in trusted filters**](#trusted-filters).
+- Rules with the `$hls` modifier can only be used [**in trusted filters**](#trusted-filters).
 - `$hls` rules are compatible with the modifiers `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest` only.
 - `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`. Any other response will not be modified by these rules.
 - `$hls` rules do not apply if the size of the original response is more than 10 MB.
@@ -2249,7 +2249,7 @@ In case of multiple `$removeheader` rules matching a single request, we will app
 
 :::caution Restrictions
 
-This type of rules can be used [**only in trusted filters**](#trusted-filters).
+This type of rules can only be used [**in trusted filters**](#trusted-filters).
 
 1. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
     - `access-control-allow-origin`
@@ -2320,8 +2320,6 @@ Rules with `$removeheader` modifier are supported by AdGuard for Windows, AdGuar
 :::
 
 Rules with `$removeparam` modifier are intended to strip query parameters from requests' URLs. Please note that such rules are only applied to `GET`, `HEAD`, `OPTIONS`, and sometimes `POST` requests.
-
-`$removeparam` rules that do not have any [content type modifiers](#content-type-modifiers) will match only requests where content type is `document`.
 
 **Syntax**
 
@@ -2488,8 +2486,9 @@ With these rules, specified UTM parameters will be removed from any request save
 
 :::caution Restrictions
 
-- Rules with `$removeparam` modifier can be used [**only in trusted filters**](#trusted-filters).
-- `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers), [content-type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers. Rules with any other modifiers are considered invalid and will be discarded.
+1. Rules with the `$removeparam` modifier can only be used [**in trusted filters**](#trusted-filters).
+1. `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers), [content-type modifiers](#content-type-modifiers), and with the `$important` and `$app` modifiers. Rules with any other modifiers are considered invalid and will be discarded.
+1. `$removeparam` rules without [content type modifiers](#content-type-modifiers) will only match requests where the content type is `document`.
 
 :::
 
@@ -2565,7 +2564,7 @@ You can see how this rule works here: http://regexr.com/3cesk
 
 :::caution Restrictions
 
-Rules with `$replace` modifier can be used [**only in trusted filters**](#trusted-filters).
+Rules with the `$replace` modifier can only be used [**in trusted filters**](#trusted-filters).
 
 :::
 
@@ -2658,7 +2657,7 @@ the request to `https://example.com/firstpath` will be blocked.
 
 :::caution Restrictions
 
-Rules with the `$urltransform` modifier can be used [**only in trusted filters**](#trusted-filters).
+Rules with the `$urltransform` modifier can only be used [**in trusted filters**](#trusted-filters).
 
 :::
 
@@ -2729,7 +2728,7 @@ Rules with `$mp4` modifier are not supported by AdGuard Content Blocker, AdGuard
 
 Each rule has its own priority, which is necessary when several rules match the request and the filtering engine needs to select one of them. Priority is measured by a positive integer.
 
-:::note Kollisionen
+:::note Collisions
 
 When two rules with the same priority match the same request, the filter engine implementation determines which one is chosen.
 
@@ -3941,7 +3940,7 @@ or
 :contains(/reg(ular )?ex(pression)?/)
 ```
 
-:::note Kompatibilität
+:::note Compatibility
 
 `:-abp-contains()` and `:has-text()` are synonyms for `:contains()`.
 
@@ -4030,7 +4029,7 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 :::caution Restrictions
 
-JavaScript rules can be used [**only in trusted filters**](#trusted-filters).
+JavaScript rules can only be used [**in trusted filters**](#trusted-filters).
 
 :::
 
@@ -4149,7 +4148,7 @@ Trusted scriptlets are not compatible with other ad blockers except AdGuard.
 
 :::caution Restrictions
 
-Trusted scriptlets rules can be used [**only in trusted filters**](#trusted-filters).
+Trusted scriptlets rules can only be used [**in trusted filters**](#trusted-filters).
 
 :::
 
