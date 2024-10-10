@@ -1,5 +1,5 @@
 ---
-title: Problems caused by multiple user profiles
+title: Probleme, die durch mehrere Benutzerprofile verursacht werden
 sidebar_position: 10
 ---
 
@@ -11,13 +11,13 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 In this article you will find the methods on how to solve problems with AdGuard when you set up *multiple accounts* or *Restricted Profiles* on your Android devices.
 
-## Problems caused by multiple user profiles
+## Probleme, die durch mehrere Benutzerprofile verursacht werden
 
-On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. This happens because AdGuard is installed for a different user profile on the device.
+Unter Android 9 und höher, wenn AdGuard für mehr als ein Benutzerprofil auf Ihrem Gerät installiert ist, können Probleme bei der Deinstallation der App auftreten. Wenn Sie AdGuard aus einem Benutzerprofil deinstallieren, wird die App weiterhin in der App-Liste angezeigt, aber Sie können sie weder deinstallieren noch neu installieren. This happens because AdGuard is installed for a different user profile on the device.
 
 If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
 
-To solve this problem, you need to uninstall the application for all users: go to Settings → All apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
+Um dieses Problem zu lösen, müssen Sie die App für alle Benutzer deinstallieren: Gehen Sie zu Einstellungen → Alle Apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
 
 ![Uninstall *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 

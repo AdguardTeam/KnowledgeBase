@@ -1,5 +1,5 @@
 ---
-title: Free vs. full version
+title: Version gratuite vs version complète
 sidebar_position: 9
 ---
 
@@ -11,22 +11,22 @@ Cet article parle de AdGuard pour iOS, un bloqueur de contenus multifonctionnel 
 
 :::note
 
-Both AdGuard for iOS with enabled Premium and AdGuard Pro block ads on Apple smartphones and tablets. They used to differ in functionality due to certain changes made to App Store review policies in the past, but now AdGuard with a purchased subscription and AdGuard Pro are identical in their functionality.
+AdGuard pour iOS avec Premium activé et AdGuard Pro bloquent les publicités sur les smartphones et tablettes Apple. Auparavant, leurs fonctionnalités se différenciaient à cause de certaines modifications apportées aux politiques d’examen de l’App Store dans le passé, mais maintenant AdGuard avec un abonnement acheté et AdGuard Pro sont identiques dans leurs fonctionnalités.
 
 :::
 
-Premium AdGuard for iOS features several differences from the free version, including custom DNS settings. With these settings, you can block ads not only in Safari but in other apps too, protect your kids from adult content online, and keep your personal information safe from theft. There are other differences, too. Let’s explore them all in more detail.
+AdGuard Premium pour iOS présente plusieurs différences par rapport à la version gratuite, notamment des paramètres DNS personnalisés. Grâce à ces paramètres, vous pouvez bloquer les publicités non seulement dans Safari mais également dans d'autres applications, protéger vos enfants du contenu réservé aux adultes en ligne et protéger vos informations personnelles contre le vol. Il y a aussi d’autres différences. Examinons-les en détail.
 
-1. The **DNS protection** module encrypts your DNS traffic to enhance privacy. It works across all apps and browsers, not just Safari, offering broad protection against ads and trackers.
+1. Le module **Protection DNS** crypte votre trafic DNS pour renforcer la confidentialité. Il fonctionne sur toutes les applications et tous les navigateurs, pas seulement Safari, offrant une large protection contre les publicités et les traqueurs.
 
-   - **Custom DNS servers:** Choose from one of the popular DNS servers from our list or add your own custom server.
+   - **Serveurs DNS personnalisés :** choisissez un des serveurs DNS populaires dans notre liste ou ajoutez votre propre serveur personnalisé.
 
-   - **Family Protection:** The Internet isn’t always kid-friendly. With AdGuard Premium, you can switch to DNS providers that block adult content and other inappropriate material to keep your children safe online.
+   - **Protection famille :** Internet n’est pas toujours adapté aux enfants. Avec AdGuard Premium, vous pouvez passer à des fournisseurs DNS qui bloquent le contenu pour adultes et autres contenus inappropriés pour assurer la sécurité de vos enfants en ligne.
 
-   - **Monitoring and flexible configuration:** Recent activity log allows you to view all DNS requests sent by your device and easily manage your traffic by adding websites to blocklist or allowlist with just a tap.
+   - **Surveillance et configuration flexible :** le journal d'activité récent vous permet d'afficher toutes les requêtes DNS envoyées par votre appareil et de gérer facilement votre trafic en ajoutant des sites web à la liste de blocage ou à la liste d'autorisation d'un simple clic.
 
-2. **Advanced protection** lets you use advanced filtering rules to block more complex ads that would be left unblocked otherwise.
+2. **La protection avancée** vous permet d'utiliser des règles de filtrage avancées pour bloquer les publicités plus complexes qui ne seraient pas bloquées autrement.
 
-3. **More filter options:** When purchasing AdGuard Premium, you get access to custom filters and a security filter category, where you can choose from over 50 filters, including AdGuard’s and other popular lists.
+3. **Plus d'options de filtrage :** lors de l'achat d'AdGuard Premium, vous avez accès à des filtres personnalisés et à une catégorie de filtres de sécurité, où vous pouvez choisir parmi plus de 50 filtres, y compris ceux d'AdGuard et d'autres listes populaires.
 
-Access these features by [purchasing a license](https://adguard.com/license.html).
+Accédez à ces fonctionnalités en [achetant une licence](https://adguard.com/license.html).

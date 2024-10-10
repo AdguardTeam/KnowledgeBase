@@ -9,25 +9,25 @@ sidebar_position: 8
 
 :::
 
-AdGuard allows you to install extensions, or userscripts, to extend the functionality of the browser. AdGuard can work as a cross-browser userscript manager: you don’t have to install the same userscript for each browser.
+AdGuardでは、ブラウザの機能を拡張するための拡張機能（ユーザースクリプト）をインストールすることができます。 AdGuardをクロスブラウザ・ユーザースクリプト・マネージャーとして使えます。（各ブラウザに同じユーザースクリプトをインストールする必要がなくなります。）
 
-Some userscripts are pre-installed, others can be installed manually.
+ユーザースクリプトには、プリインストールされているものもあれば、手動でインストールできるものもあります。
 
 ![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mac/extensions.png)
 
-## AdGuard Assistant (legacy)
+## レガシー AdGuard アシスタント (旧バージョン)
 
-This userscript allows you to manage AdGuard protection directly from your browser. While the [new Assistant](/adguard-for-mac/features/browser-assistant) is a browser extension that can be installed from your browser’s store, the legacy Assistant is a userscript that doesn’t require additional installation. Some features are common to both assistants:
+このユーザースクリプトを使って、直接ブラウザから AdGuard アプリの保護機能を管理できます。 [新しいアシスタント](/adguard-for-mac/features/browser-assistant)がブラウザのストアからインストールできるブラウザ拡張機能であるのに対し、このレガシーアシスタントは追加のインストールを必要としないユーザースクリプトです。 両アシスタントに共通する機能はこちら:
 
-- Enable or disable protection for a specific website
-- Pause protection for 30 seconds
-- Manually block an ad
-- Report incorrect blocking
+- 特定のウェブサイトに対する保護をオン・オフにする
+- AdGuardによる保護を30秒間一時停止す
+- 手動で広告や要素を選んでブロックする
+- 不適切なブロックを報告する
 
-However, the new Assistant is more advanced. It also allows you to manage AdGuard protection for all websites, check the website’s certificate, manage HTTPS filtering, and open the filtering log or the app’s settings. We recommend that you use the legacy Assistant only if the new Assistant is not available.
+しかし、新しいアシスタントはより進化しています。 すべてのウェブサイトでのAdGuard保護の管理、ウェブサイトの証明書の確認、HTTPSフィルタリングの管理、フィルタリングログやアプリの設定を開くことが可能です。 新しいAdGuardアシスタントが使用できない場合にのみ、レガシーアシスタントを使用することをお勧めします。
 
 ## AdGuard Extra
 
-This userscript solves the most complex ad blocking issues when regular rules aren’t enough. It also prevents websites from circumventing ad blockers and re-inserting blocked ads. We recommend that you keep it enabled at all times.
+このユーザースクリプトは、通常のルールでは不十分で最も複雑な広告ブロック問題を解決します。 また、ウェブサイトが広告ブロッカーを回避し、ブロックされた広告を再度挿入することもも防いでくれます。 常に有効にしておくことをお勧めします。
 
-To install a userscript, click `+`. You can find userscripts at [greasyfork.org](https://greasyfork.org/).
+ユーザースクリプトをインストールするには、「+」をクリックしてください。 [greasyfork.org](https://greasyfork.org) で様々なユーザースクリプトを見つけることができます。

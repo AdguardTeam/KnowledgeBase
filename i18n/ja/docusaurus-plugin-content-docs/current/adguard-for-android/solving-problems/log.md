@@ -19,7 +19,7 @@ In this article, we'll guide you through the process of collecting debug logs, a
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard は、お客様のプライバシーを保護することに強くコミットしています。 We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. サポートチームにログを送信する前に、機密情報や共有したくない情報が含まれていないかどうか、ログファイルを確認してください。 そのような個人情報が含まれている場合は、削除してからログを送信することをお勧めします。
 
 :::
 

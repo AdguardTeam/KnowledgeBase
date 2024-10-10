@@ -1,5 +1,5 @@
 ---
-title: How to collect debug logs
+title: Jak shromažďovat záznamy ladění
 sidebar_position: 2
 ---
 
@@ -15,7 +15,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-In this article, we'll guide you through the process of collecting debug logs, an essential troubleshooting step for solving complex issues that may potentially arise. Záznamy ladění poskytují podrobný náhled do vnitřního fungování AdGuardu pro Android. Pokud vás tým podpory AdGuardu požádá o poskytnutí záznamů ladění, postupujte podle těchto pokynů.
+V tomto článku vás provedeme procesem shromažďování záznamů ladění, což je zásadní krok při řešení složitých problémů, které mohou nastat. Záznamy ladění poskytují podrobný náhled do vnitřního fungování AdGuardu pro Android. Pokud vás tým podpory AdGuardu požádá o poskytnutí záznamů ladění, postupujte podle těchto pokynů.
 
 :::note
 
@@ -23,9 +23,9 @@ AdGuard se zavazuje chránit vaše soukromí. Přísně dodržujeme naše [Zása
 
 :::
 
-### Recording debug log
+### Záznam protokolu ladění
 
-To collect **debug** log and send it to us, you need to perform following steps:
+Chcete-li shromáždit záznam **ladění** a odeslat nám jej, musíte provést následující kroky:
 
 1. Jděte do *Nastavení* → *Obecné* → *Pokročilé*.
 1. Klepněte na *Úroveň záznamů* a nastavte ji na *Ladění*.

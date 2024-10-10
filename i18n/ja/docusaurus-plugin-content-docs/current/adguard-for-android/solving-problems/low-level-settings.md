@@ -131,7 +131,7 @@ If this setting is enabled, AdGuard will redirect DNS-over-HTTPS requests to the
 
 If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
-### Outbound proxy
+### アウトバウンドプロキシ
 
 #### Show the Filter DNS requests setting
 
