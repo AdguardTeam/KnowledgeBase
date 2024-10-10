@@ -160,7 +160,7 @@ module.exports = {
             },
             {
               label: 'userscripts',
-              to: '/general/userscripts',
+              to: '/general/extensions',
             },
           ],
         },
