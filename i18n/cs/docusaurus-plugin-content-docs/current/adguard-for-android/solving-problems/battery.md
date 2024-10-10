@@ -9,7 +9,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-Due to built-in statistics processes, high data and/or battery consumption was often attributed to AdGuard by Android 6 and earlier. Bylo to proto, že AdGuard počítal veškerý provoz, který filtroval z různých aplikací. V důsledku toho byl podíl AdGuardu na celkovém využití dat a baterie nadhodnocen, zatímco podíl ostatních aplikací byl podhodnocen.
+Kvůli vestavěným statistickým procesům byla vysoká spotřeba dat a/nebo baterie často připisována AdGuardu v systému Android 6 a dřívějších verzích. Bylo to proto, že AdGuard počítal veškerý provoz, který filtroval z různých aplikací. V důsledku toho byl podíl AdGuardu na celkovém využití dat a baterie nadhodnocen, zatímco podíl ostatních aplikací byl podhodnocen.
 
 V Androidu 7 se však tento scénář zlepšil. Nyní se údaje uvedené ve vestavěných statistikách využití dat systému Android velmi blíží skutečnosti, i když v údajích o využití baterie jsou drobné nesrovnalosti.
 

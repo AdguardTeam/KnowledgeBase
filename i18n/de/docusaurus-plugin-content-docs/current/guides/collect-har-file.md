@@ -1,5 +1,5 @@
 ---
-title: How to generate a HAR file
+title: So können HAR-Dateien erzeugt werden
 sidebar_position: 1
 ---
 

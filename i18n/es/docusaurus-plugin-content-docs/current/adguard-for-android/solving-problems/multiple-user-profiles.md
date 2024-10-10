@@ -21,9 +21,9 @@ Para solucionar este problema, debes desinstalar la aplicación para todos los u
 
 ![Desinstalar *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 
-## Problems caused by using a Restricted Mode profile
+## Problemas causados por el uso de un perfil en modo restringido
 
-The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. Si tienes un perfil de este tipo, **AdGuard**, al igual que otras aplicaciones que utilizan VPN, obtiene restricciones en el filtrado selectivo del tráfico VPN. Como resultado, AdGuard no puede iniciar la protección en un **modo VPN local**. Además, una de las razones de esta situación puede ser el uso del **Perfil Dual App/Dual Messenger** en tu dispositivo. A continuación, se describen las recomendaciones que puedes aplicar cuando se presenta este problema.
+Los propietarios de teléfonos, tabletas o televisores con el sistema operativo Android 7+ pueden enfrentar el problema causado por el uso de **un perfil con modo restringido**. Si tienes un perfil de este tipo, **AdGuard**, al igual que otras aplicaciones que utilizan VPN, obtiene restricciones en el filtrado selectivo del tráfico VPN. Como resultado, AdGuard no puede iniciar la protección en un **modo VPN local**. Además, una de las razones de esta situación puede ser el uso del **Perfil Dual App/Dual Messenger** en tu dispositivo. A continuación, se describen las recomendaciones que puedes aplicar cuando se presenta este problema.
 
 ### Soluciones
 

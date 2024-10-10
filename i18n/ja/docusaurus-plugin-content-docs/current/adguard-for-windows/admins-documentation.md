@@ -1,54 +1,54 @@
 ---
-title: Documentation for admins
+title: 管理者向けドキュメンテーション
 sidebar_position: 5
 ---
 
-This page describes the features and details of AdGuard’s central management of policies and preferences.
+このページでは、AdGuard のポリシーと環境設定の一元管理の機能と詳細について説明しています。
 
-## 1. Download the MSI {#msi-download}
+## 1. MSIをダウンロードする {#msi-download}
 
-Download the [AdGuard MSI x86](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi)
+[AdGuard MSI x86 をダウンロード](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi)
 
-Download the [AdGuard MSI x64](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
+[AdGuard MSI x64 をダウンロード](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
 
-## 2. Configure the settings for your network {#settings-configuring}
+## 2. お使いのネットワーク用の設定を構成する {#settings-configuring}
 
-On machines that are joined to an Active Directory domain, policy settings may also be stored in the registry under `HKEY_LOCAL_MACHINE` in the following path: `Software\Policies\AdGuard\`.
+Active Directoryドメインに参加しているマシンでは、ポリシー設定はレジストリ`HKEY_LOCAL_MACHINE`の下のパスに格納されることができます： `Software\Policies\AdGuard\`
 
-The only supported policy is `LicenseKey`. If this policy is set, AdGuard will prefer it over what user can enter in the interface. This license key will be used for checking license status.
+サポートされているポリシーは `LicenseKey` のみです。 このポリシーが設定されている場合、AdGuardは、ユーザーがインターフェイスに入力できる内容よりも、このポリシーを優先します。 このライセンスキーは、ライセンスステータスの確認に使用されます。
 
-## 3. Make sure that AdGuard servers are available {#servers-available}
+## 3. AdGuardサーバーが利用可能であることを確認する {#servers-available}
 
-AdGuard connects to two hosts: `api.adguard.org` and `filters.adtidy.org`. Make sure that both servers are available.
+AdGuardは、`api.adguard.org` と `filters.adtidy.org` という2つのホストに接続します。 両方のサーバーが利用可能であることを確認してください。
 
-## 4. Push the MSI out to your network {#msi-push}
+## 4. MSIをお使いのネットワークにプッシュする {#msi-push}
 
-If you usually use SMS or other tools, use them to push out the AdGuard MSI just as you would normally do with any other installation bundle.
+通常、SMS またはその他のツールを使用している場合は、他のインストー ルバンドルと同様に、それらを使用して AdGuard MSI をプッシュします。
 
-Otherwise, you can run the MSI on the target machine directly (and silently) with this command: `Msiexec /q /i AdGuard.msi`
+そうでない場合は、こちらのコマンドを使用して、ターゲットマシンで直接（そしてsilentに）MSIを実行することができます： `Msiexec /q /i AdGuard.msi`
 
-If you need to roll out an update, use this command: `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
-
-:::note
-
-You must run these commands with admin privileges.
-
-:::
-
-If you want to install AdGuard on a Windows 7 computer, make sure that it has .NET 4 Client Profile installed: https://www.microsoft.com/en-us/download/details.aspx?id=24872
+アップデートを展開する必要がある場合は、こちらのコマンドを使用します： `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
 :::note
 
-If you have installed AdGuard for Windows from an MSI file, AdGuard will not be updated automatically. To allow manual updates:
-
-- In versions released after v7.16, delete the `ForbidCheckUpdates` parameter or set its value to `NO` (case-insensitive) in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
-
-- In v7.16 and earlier versions, set to `YES` (case-insensitive) the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` key on x86 OS or `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key on x64 OS. Any other value or no value for this parameter will disable automatic updates.
-
-Please note that such installation of the application and manual updates are not recommended and can cause technical problems.
+これらのコマンドは管理者権限で実行する必要があります。
 
 :::
 
-## 5. Test your installation {#installation-test}
+AdGuard を Windows 7 搭載コンピュータにインストールする場合は、.NET 4 Client Profile がインストールされていることを確認してください: https://www.microsoft.com/en-us/download/details.aspx?id=24872
 
-On a target machine, launch AdGuard. Open the license screen to check that it is using the specified license. You might need to click "Refresh status" to make AdGuard validate the license key.
+:::note
+
+AdGuard for Windows を MSI ファイルからインストールした場合、AdGuard は自動的に更新されません。 手動アップデートを許可するには：
+
+- v7.16以降のバージョンでは、レジストリの`HKEY_LOCAL_MACHINE`にある`ForbidCheckUpdates`パラメータを削除するか、その値を`NO`（大文字と小文字の区別なし）に設定します。
+
+- v7.16 以前のバージョンでは、x86 OS の `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` キーまたは x64 OS の `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` キーの `AllowCheckUpdates` パラメータを `YES` (大文字と小文字の区別なし) に設定します。 それ以外の値、またはこのパラメータに値がない場合、自動アップデートは無効になります。
+
+※このようなアプリのインストールや手動アップデートは推奨されておらず、技術的な問題を引き起こす可能性があることにご注意ください。
+
+:::
+
+## 5. インストールをテストする {#installation-test}
+
+ターゲットマシンでAdGuardを起動します。 指定したライセンスが使用されていることを確認するために、ライセンス画面を開いてください。 AdGuardにライセンスキーを検証させるには、「ステータスを更新」をクリックする必要があるかもしれません。

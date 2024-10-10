@@ -9,13 +9,13 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-In some cases, apps won't stay in the background (“alive” or in a sleep mode) due to the Android OS optimization function, or the so-called “battery save mode” — this function can kill background apps. Es kann lästig sein, sie jedes Mal neu zu starten, wenn sie geschlossen wurden. Um das Beenden von Apps im Hintergrund zu vermeiden, müssen Sie die Schritte befolgen, die wir für jeden Hersteller (Version) von Android OS separat beschrieben haben. Beachten Sie, dass die Anleitungen der verschiedenen Hersteller meist sehr ähnlich sind.
+In einigen Fällen bleiben Apps aufgrund der Optimierungsfunktion des Android-Betriebssystems oder des so genannten „Batteriesparmodus“ nicht im Hintergrund („aktiv“ oder im Ruhemodus) — diese Funktion kann Hintergrund-Apps abschalten. Es kann lästig sein, sie jedes Mal neu zu starten, wenn sie geschlossen wurden. Um das Beenden von Apps im Hintergrund zu vermeiden, müssen Sie die Schritte befolgen, die wir für jeden Hersteller (Version) von Android OS separat beschrieben haben. Beachten Sie, dass die Anleitungen der verschiedenen Hersteller meist sehr ähnlich sind.
 
 ## Asus
 
 Die Informationen über Asus-Geräte sind noch lange nicht vollständig, so dass es noch mehr Probleme geben kann, als hier aufgeführt sind. Wir werden diesen Teil des Artikels aktualisieren, sobald wir mehr wissen.
 
-Die Hauptursache für mögliche Probleme mit der Hintergrundarbeit bei Asus-Geräten ist die Optimierungs-App namens Power Master. It is pre-installed and has pretty aggressive default settings, e.g. to block apps from starting and to kill background tasks when your screen turns off. Um sicherzustellen, dass die Hintergrundverarbeitung von Apps funktioniert, richten Sie Folgendes ein:
+Die Hauptursache für mögliche Probleme mit der Hintergrundarbeit bei Asus-Geräten ist die Optimierungs-App namens Power Master. Sie ist vorinstalliert und verfügt über ziemlich aggressive Standardeinstellungen, z. B. zum Sperren des Starts von Apps und zum Beenden von Hintergrundaufgaben, wenn der Bildschirm ausgeschaltet wird. Um sicherzustellen, dass die Hintergrundverarbeitung von Apps funktioniert, richten Sie Folgendes ein:
 
 1. Öffnen Sie den **Mobile Manager** → **PowerMaster** → **Einstellungen** (oder **Batteriesparoptionen**) → Deaktivieren Sie **Aufräumen im Standby-Modus**
 
@@ -29,21 +29,21 @@ Xiaomi-Geräte (und insbesondere MIUI-Geräte) gehören zu den problematischsten
 
 ### MIUI 13+ und HyperOS
 
-Depending on the MIUI and HyperOS versions, there are two ways to change the battery optimization settings on your phone and block ads more efficiently.
+Je nach MIUI- und HyperOS-Version gibt es zwei Möglichkeiten, die Einstellungen für die Akkuoptimierung auf Ihrem Telefon zu ändern und Werbung effizienter zu sperren.
 
 Option 1
 
-1. Go to **Settings** → **Apps** → **Permissions** → **Background autostart** and allow AdGuard to run in the background
+1. Öffnen Sie **Einstellungen** → **Apps** → **Berechtigungen** → **Automatisch im Hintegrund starten** und erlauben Sie AdGuard, im Hintergrund ausgeführt zu werden
 
-1. Return to **Settings** → **Apps** → **Manage apps** → **AdGuard** and uncheck **Pause app activity if unused**
+1. Wechseln Sie zurück zu **Einstellungen** → **Apps** → **Apps verwalten** → **AdGuard** und entfernen Sie das Häkchen bei **App-Aktivität anhalten, wenn nicht genutzt**
 
-1. Go to **Battery saver** and tap **No restrictions**
+1. Öffnen Sie <0>Batteriesparer</0> und tippen Sie auf <0>Keine Einschränkungen</0>.
 
 Option 2
 
-1. Go to **Settings** → **Apps** → **Manage apps** → **AdGuard** and enable **Autostart**
+1. Öffnen Sie **Einstellungen** → **Apps** → **Apps verwalten** → **AdGuard** und aktivieren Sie **Autostart**
 
-1. Go to **Battery saver** and tap **No restrictions**
+1. Öffnen Sie <0>Batteriesparer</0> und tippen Sie auf <0>Keine Einschränkungen</0>.
 
 Fertig! You have successfully set up AdGuard to work in the background.
 

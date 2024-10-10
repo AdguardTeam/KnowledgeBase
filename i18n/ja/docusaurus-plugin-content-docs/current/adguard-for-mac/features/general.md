@@ -9,9 +9,9 @@ sidebar_position: 2
 
 :::
 
-## How to open app settings
+## アプリ設定を開く方法
 
-To configure AdGuard for Mac, click the gear icon in the upper right corner of the main window and select _Preferences_.
+AdGuard for Mac を設定するには、メインウィンドウの右上隅にある歯車アイコン「⚙️」をクリックし、「_設定_」を選択します。
 
 ![Main window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
 
@@ -19,22 +19,22 @@ To configure AdGuard for Mac, click the gear icon in the upper right corner of t
 
 ![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
 
-### Do not block search ads and website self-promoting ads
+### 検索広告やウェブサイトの自己宣伝広告をブロックしない
 
-This feature prevents AdGuard from blocking [search ads and self-promotions on websites](/general/ad-filtering/search-ads). This can be useful, for example, when you’re shopping online and want to see discounts offered by some websites. Instead of adding these websites to the allowlist, you can exclude self-promotions and search ads from filtering.
+この機能がオンの場合、AdGuardは[ウェブサイト上の検索広告と自己宣伝](/general/ad-filtering/search-ads)をブロックしません。 これは、例えば、オンラインショッピングをしていて、いくつかのウェブサイトで提供されている割引を見たいときに便利です。 これらのウェブサイトをホワイトリストに追加する代わりに、自己宣伝や検索広告をフィルタリングから除外することができます。
 
-### Activate language-specific filters automatically
+### 言語特化フィルタを自動的に有効にする
 
-This feature detects the language of the website you’re visiting and automatically activates appropriate filters for more accurate ad blocking. This is especially helpful if you change languages frequently.
+この機能は、あなたが訪問しているウェブサイトの言語を検出し、より正確な広告ブロックに適切なフィルタを自動的に有効にします。 これは特に、言語を頻繁に変更する場合に特に役立血ます。
 
-### Launch AdGuard at login
+### ログイン時にAdGuardを起動する
 
-This feature automatically launches AdGuard automatically after you restart your computer. This helps keep AdGuard protection active without having to manually open the app.
+この機能がオンの場合、AdGuardはコンピュータの再起動後に自動的に起動します。 これにより、手動でアプリを開くことなく、AdGuardの保護を有効に保つことができます。
 
-### Hide menu bar icon
+### メニューバーアイコンを非表示にする
 
-This feature hides AdGuard’s icon from the menu bar but keeps AdGuard running in the background. If you want to disable AdGuard completely, click _Quit AdGuard_ in the main window menu.
+この機能は、メニューバーからAdGuardのアイコンを非表示にしますが、AdGuardはバックグラウンドで実行し続けます。 AdGuard を完全に無効にしたい場合は、メインウィンドウの⚙️メニューで [_AdGuard を終了する_] をクリックします。
 
 ### ホワイトリスト
 
-Websites added to this list aren’t filtered. You can also access allowlisted websites from _User rules_.
+このリストに追加されたウェブサイトはフィルタリングされません。 また、「_ユーザールール_」からも、ホワイトリストにあるウェブサイトにアクセスすることができます。
