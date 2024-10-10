@@ -39,4 +39,4 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 ## Free vs. full version
 
-[Free vs. full version](/adguard-for-android/features/free-vs-full.md)
+[Free vs. full version](/adguard-for-android/features/free-vs-full.mdx)

@@ -29,7 +29,7 @@ This module contains following settings:
 
 ## Firewall
 
-[Firewall](/adguard-for-android/features/protection/firewall.md)
+[Firewall](/adguard-for-android/features/protection/firewall/firewall.md)
 
 ## Browsing security
 
