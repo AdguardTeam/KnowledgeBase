@@ -1,6 +1,6 @@
 ---
 title: Stealth Mode
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info

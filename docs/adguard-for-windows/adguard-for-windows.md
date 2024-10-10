@@ -9,9 +9,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 :::
 
-This section is dedicated to the features and settings of AdGuard for Windows. Here’s what you’ll find:
-
-## Features overview
+## Features
 
 Here are outlined the main features and settings available in AdGuard for Windows.
 
