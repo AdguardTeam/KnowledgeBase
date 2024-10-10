@@ -17,7 +17,7 @@ Here are some problems you may encounter and workarounds, as well as guides and 
 - [Compatibility issues with different macOS versions](/adguard-for-mac/solving-problems/big-sur-issues.md)
 - [Installation problems solving](/adguard-for-mac/solving-problems/installation-issues.md)
 - [Launch issues](/adguard-for-mac/solving-problems/launch-issues.md)
-- [iCloud Private Relay and AdGuard](/adguard-for-mac/solving-problems/icloud-private-relay/md)
+- [iCloud Private Relay and AdGuard](/adguard-for-mac/solving-problems/icloud-private-relay.md)
 - [Protect Mail Activity and AdGuard](/adguard-for-mac/solving-problems/protect-mail-activity.md)
 - [Advanced Settings guide](/adguard-for-mac/solving-problems/advanced-settings.md)
 - [Setting up filtering in Tor Browser](/adguard-for-mac/solving-problems/tor-filtering.md)
