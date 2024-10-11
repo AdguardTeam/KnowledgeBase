@@ -73,7 +73,7 @@
   },
   "link.item.label.userscripts": {
     "message": "Uživatelské skripty",
-    "description": "The label of footer link with label=userscripts linking to /general/userscripts"
+    "description": "The label of footer link with label=userscripts linking to /general/extensions"
   },
   "link.item.label.purchase_license": {
     "message": "Zakoupit licenci",
