@@ -9,7 +9,7 @@ sidebar_position: 3
 
 :::
 
-AdGuard は[ユーザースクリプトマネージャ](/general/userscripts)として、ウェブサイトの機能を大幅に拡張することができます。 AdGuard のユーザーは、独自のスクリプトを追加したり、既存のスクリプトを管理したりできます。
+AdGuard は[ユーザースクリプトマネージャ](/general/extensions)として、ウェブサイトの機能を大幅に拡張することができます。 AdGuard のユーザーは、独自のスクリプトを追加したり、既存のスクリプトを管理したりできます。
 
 ![拡張機能画面 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 

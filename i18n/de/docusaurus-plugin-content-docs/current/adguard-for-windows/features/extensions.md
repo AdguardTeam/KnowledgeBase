@@ -9,7 +9,7 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 :::
 
-AdGuard can significantly broaden website functionality working as a [user script manager](/general/userscripts). Sie können ihre eigenen Skripte hinzufügen und bestehende Skripte verwalten.
+AdGuard can significantly broaden website functionality working as a [user script manager](/general/extensions). Sie können ihre eigenen Skripte hinzufügen und bestehende Skripte verwalten.
 
 ![Erweiterungen \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 

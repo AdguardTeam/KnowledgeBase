@@ -73,7 +73,7 @@
   },
   "link.item.label.userscripts": {
     "message": "用户脚本",
-    "description": "The label of footer link with label=userscripts linking to /general/userscripts"
+    "description": "The label of footer link with label=userscripts linking to /general/extensions"
   },
   "link.item.label.purchase_license": {
     "message": "购买许可",
