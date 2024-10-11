@@ -1,5 +1,5 @@
 ---
-title: Extension’s main menu
+title: Main menu
 sidebar_position: 4
 ---
 
