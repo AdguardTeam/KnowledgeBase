@@ -9,7 +9,7 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 :::
 
-AdGuard dokáže výrazně rozšířit funkčnost webových stránek a funguje jako [správce uživatelských skriptů](/general/userscripts). Uživatelé AdGuardu mohou přidávat své vlastní skripty a také spravovat stávající.
+AdGuard dokáže výrazně rozšířit funkčnost webových stránek a funguje jako [správce uživatelských skriptů](/general/extensions). Uživatelé AdGuardu mohou přidávat své vlastní skripty a také spravovat stávající.
 
 ![Extensions \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
