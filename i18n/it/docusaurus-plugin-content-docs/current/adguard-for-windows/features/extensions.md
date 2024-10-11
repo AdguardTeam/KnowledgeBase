@@ -9,7 +9,7 @@ Questo articolo riguarda AdGuard per Windows, un blocco annunci multifunzionale 
 
 :::
 
-AdGuard può ampliare significativamente la funzionalità del sito web, operando da [gestore degli script dell'utente](/general/userscripts). Gli Utenti di AdGuard possono aggiungere i propri script, nonché gestire quelli esistenti.
+AdGuard può ampliare significativamente la funzionalità del sito web, operando da [gestore degli script dell'utente](/general/extensions). Gli Utenti di AdGuard possono aggiungere i propri script, nonché gestire quelli esistenti.
 
 ![Estensioni \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
