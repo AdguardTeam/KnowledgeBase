@@ -11,21 +11,31 @@ This article is about AdGuard Browser Extension, which safeguards only your brow
 
 ## Features
 
+Here are outlined the main features and settings available in the AdGuard Browser Extension.
+
 [Features](/adguard-browser-extension/features/features.md)
 
 ## Availability
+
+In this article, you'll learn about the supported browsers and platforms where the extension can be installed.
 
 [Availability](/adguard-browser-extension/availability.md)
 
 ## Installation
 
+The article explains how to install the AdGuard Browser Extension on various supported browsers.
+
 [Installation](/adguard-browser-extension/installation.md)
 
 ## Compatibility with the standalone app
 
+The article explains the compatibility of the AdGuard Browser Extension with the desktop app.
+
 [Compatibility with the standalone app](adguard-browser-extension/compatibility.md)
 
 ## AdGuard Browser Extension for Chrome MV3
+
+This article discusses the AdGuard browser extension for Chrome, which is compatible with the Manifest V3 API, and how it differs from the browser extension based on Manifest V2.
 
 [AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version/)
 
@@ -35,8 +45,12 @@ This article is about AdGuard Browser Extension, which safeguards only your brow
 
 ## Solving problems
 
+This section includes guides addressing known issues and possible solutions.
+
 [Solving problems](/adguard-browser-extension/solving-problems/solving-problems.md)
 
 ## Comparison to standalone apps
+
+The article highlights the differences in functionality, coverage, and features between the extension and the full desktop app.
 
 [Comparison to standalone apps](/adguard-browser-extension/comparison-standalone.md)
