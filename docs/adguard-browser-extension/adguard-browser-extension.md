@@ -41,6 +41,8 @@ This article discusses the AdGuard browser extension for Chrome, which is compat
 
 ## Browser-protected pages
 
+The article describes how the AdGuard Browser Extension manages protected pages, restricting ad blocking on certain sensitive websites to ensure proper functionality.
+
 [Browser-protected pages](/adguard-browser-extension/protected-pages.md)
 
 ## Solving problems

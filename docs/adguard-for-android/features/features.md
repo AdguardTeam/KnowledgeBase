@@ -39,6 +39,12 @@ Information about a tool that lets you quickly change app or website settings an
 
 [Assistant](/adguard-for-android/features/assistant.md)
 
+## Free vs. full version
+
+Comparison of features between the free version and the paid version.
+
+[Free vs. full version](/adguard-for-android/features/free-vs-full.mdx)
+
 ## Integration with AdGuard VPN
 
 Information on how the app integrates with VPN services, allowing you to run both AdGuard and a AdGUard VPN at the same time without conflict, ensuring ad blocking and privacy protection along with VPN functionality.
@@ -50,9 +56,3 @@ Information on how the app integrates with VPN services, allowing you to run bot
 AdGuard for Android on rooted devices offers advanced features like HTTPS filtering without a certificate installation, automatic ad blocking in apps, and deeper system-wide protection.
 
 [Rooted devices](/adguard-for-android/features/rooted.md)
-
-## Free vs. full version
-
-Comparison of features between the free version and the paid version.
-
-[Free vs. full version](/adguard-for-android/features/free-vs-full.mdx)

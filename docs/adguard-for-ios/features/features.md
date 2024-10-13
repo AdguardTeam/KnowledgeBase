@@ -35,7 +35,7 @@ This article describes the Statistics tab with detailed activity reports that al
 
 ## Assistant
 
-aA tool that helps you manage filtering in Safari right from the browser without switching back to the app.
+A tool that helps you manage filtering in Safari right from the browser without switching back to the app.
 
 [Assistant](/adguard-for-ios/features/assistant.md)
 
