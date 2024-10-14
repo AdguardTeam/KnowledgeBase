@@ -29,7 +29,7 @@ Zde je návod, jak to udělat:
 
 1. Nainstalujte [nejnovější verzi modulu **adguardcert** Magisk](https://github.com/AdguardTeam/adguardcert/releases/latest/).
 
-1. Otevřete *Magisk → Moduly → Instalovat z úložiště* a vyberte stažený soubor **adguardcert**. The AdGuard Personal CA certificate will be copied to the system store.
+1. Otevřete *Magisk → Moduly → Instalovat z úložiště* a vyberte stažený soubor **adguardcert**. Certifikát AdGuard Personal CA bude zkopírován do systémového úložiště.
 
     ![Open Magisk modules *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
 

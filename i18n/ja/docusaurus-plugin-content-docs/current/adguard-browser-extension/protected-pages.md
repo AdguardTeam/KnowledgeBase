@@ -1,33 +1,33 @@
 ---
-title: Browser-protected pages
+title: ブラウザで保護されているページ
 sidebar_position: 6
 ---
 
 :::info
 
-この記事は、お使いのブラウザのみを保護する「AdGuard ブラウザ拡張機能」に関するものです。 To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+この記事は、お使いのブラウザのみを保護する「AdGuard ブラウザ拡張機能」に関するものです。 デバイス全体を保護するには、[AdGuardアプリをダウンロード](https://adguard.com/download.html?auto=true)してください。
 
 :::
 
-When using a web extension like AdGuard Browser Extension, there are certain restricted domains that prohibit access or permissions. As a result, ad blocking extensions are not allowed to interact with or modify the content of these pages. In other words, they are not allowed to block ads and other annoying elements on these web pages.
+AdGuard ブラウザ拡張機能などの Web 拡張機能を使用する場合、アクセスや権限を禁止する特定の制限付きドメインが存在します。 その結果、広告ブロック拡張機能は、これらのページのコンテンツと相互作用したり、コンテンツを変更したりすることはできません。 言い換えれば、これらのウェブページの広告やその他の迷惑な要素をブロックすることは、ブラウザ側で許可されていないのです。
 
-## Chromium browser restrictions
+## Chromium 系ブラウザの制限
 
-Chromium-based browsers, such as Google Chrome, maintain a list of restricted domains that extensions are not allowed to access. These domains include:
+Google ChromeなどのChromiumベースブラウザは、拡張機能がアクセスできないように制限されたドメインのリストを保持しています。 これらのドメインには以下が含まれます:
 
 - clients.google.com
 - clients[0-9]+.google.com
 - sb-ssl.google.com
-- URLs starting with `chrome://`, `chrome-extension://`, or `https://chrome.google.com/webstore/`
-- PDF files
-- Pages where Javascript is disabled
-- Security warning pages
-- Error pages such as 404 errors and network errors
-- URLs starting with `view-source:` or `data:`
+- `chrome://`、 `chrome-extension://`、または `https://chrome.google.com/webstore/` で始まるURL
+- PDFファイル
+- Javascriptが無効になっているページ
+- セキュリティ警告ページ
+- 404エラーやネットワークエラーなどのエラーページ
+- `view-source:` または `data:` で始まるURL
 
-## Firefox browser restrictions
+## Firefoxブラウザの制限
 
-Similarly, the Firefox browser has its own set of restricted domains where extensions are not permitted to operate. These restricted domains include:
+同様に、Firefoxブラウザには、拡張機能の使用が許可されていない独自の制限ドメインがあります。 これらの制限されているドメインには以下が含まれます:
 
 - accounts-static.cdn.mozilla.net
 - accounts.firefox.com
@@ -42,20 +42,20 @@ Similarly, the Firefox browser has its own set of restricted domains where exten
 - support.mozilla.org
 - sync.services.mozilla.com
 
-## Modifying restrictions in Firefox
+## Firefoxの制限を変更する方法
 
-Changing advanced settings can affect the stability and security of Firefox. This is recommended for advanced users only. If you are aware of the associated risk and still wish to enable add-ons disallowed on a protected page, follow the steps below:
+※詳細設定を変更すると、Firefoxの安定性とセキュリティに影響を与える可能性があります。 これは上級ユーザーである場合のみに推奨されます。 関連するリスクを認識した上で、保護されたページで許可されていないアドオンを有効にしたい場合は、以下の手順をご利用ください:
 
-1. Click the menu button → **Add-ons and themes** → **Extensions**.
-2. Click the extension you want to enable on sites with restrictions (In this case, AdGuard).
-3. Select **Allow** in the section **Run on sites with restrictions**.
+1. メニューボタン → **アドオンとテーマ** → **拡張機能** をクリックします。
+2. 制限のあるサイトで有効にしたい拡張機能（この場合はAdGuard）をクリックします。
+3. [ **制限のあるサイトで実行**] セクションで [ **許可** ] を選択します。
 
-Alternatively, you can:
+あるいは、以下の方法もあります:
 
-1. Open a new tab and type **about:config** in the address bar.
-2. Press **Return**. You may encounter a warning. In this case, click **Accept the Risk and Continue**.
-3. Search for `extensions.webextensions.restrictedDomains`. If you can’t find this preference, you can create it. Simply select the **Boolean** type and click **+** to add it.
-4. Click the toggle button next to this preference and change its value to `false`.
-5. Restart Firefox.
+1. 新しいタブを開き、アドレスバーに **about:config **と入力します。
+2. **戻る**を押します。 警告が表示されることがあります。 この場合は、「 **リスクを受け入れて続行**」をクリックします。
+3. `extensions.webextensions.restrictedDomains` を検索します。 この設定が見つからない場合は、作成することができます。 **Boolean** を選択し、「**+**」をクリックするだけで追加できます。
+4. この設定の隣にあるトグルボタンをクリックし、その値を `false` に変更します。
+5. Firefoxを再起動します。
 
-For further information on this subject, read [the article on Mozilla’s support website](https://mzl.la/3POXoWi).
+この件に関する詳細は、[Mozillaのサポートサイトの記事](https://mzl.la/3POXoWi)をお読みください。

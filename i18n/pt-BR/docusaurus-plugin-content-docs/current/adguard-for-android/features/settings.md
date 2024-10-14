@@ -27,7 +27,7 @@ _Automação_ permite que você gerencie o AdGuard por meio de aplicativos de ta
 
 _Watchdog_ ajuda a proteger o AdGuard contra desativação do sistema ([leia mais sobre o modo de economia de bateria do Android](/adguard-for-android/solving-problems/background-work/)). O valor inserido será o intervalo em segundos entre as verificações de watchdog.
 
-_Nível de registro_ define quais dados sobre a operação do aplicativo devem ser registrados. Por padrão, o aplicativo coleta dados sobre seus próprios eventos. O nível _Debug_ registra mais eventos. Ative-o se solicitado pela equipe do AdGuard para ajudá-los a entender melhor o problema. [Read more about collecting and sending logs](/adguard-for-android/solving-problems/log/)
+_Nível de registro_ define quais dados sobre a operação do aplicativo devem ser registrados. Por padrão, o aplicativo coleta dados sobre seus próprios eventos. O nível _Debug_ registra mais eventos. Ative-o se solicitado pela equipe do AdGuard para ajudá-los a entender melhor o problema. [Leia mais sobre como coletar e enviar registros](/adguard-for-android/solving-problems/log/)
 
 ![Avançado \*mobile\_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
@@ -59,7 +59,7 @@ Se você ativar muitos filtros, alguns sites poderão funcionar incorretamente.
 
 ### Userscripts
 
-Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. Para instalar userscripts, você precisa de um gerenciador de userscript especial. O AdGuard tem essa funcionalidade e permite que você adicione scripts de usuário por URL ou a partir de um arquivo.
+Userscripts são miniprogramas escritos em JavaScript que estendem a funcionalidade de um ou mais sites. Para instalar userscripts, você precisa de um gerenciador de userscript especial. O AdGuard tem essa funcionalidade e permite que você adicione scripts de usuário por URL ou a partir de um arquivo.
 
 ![Userscripts \*mobile\_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
@@ -83,7 +83,7 @@ Para gerenciar o tráfego criptografado, o AdGuard instala seu certificado CA no
 
 Nas versões mais antigas do Android, o certificado é instalado automaticamente. No Android 11 e posterior, você precisa instalá-lo manualmente. [Instruções de instalação](/adguard-for-android/solving-problems/manual-certificate/)
 
-O certificado CA no armazenamento do usuário é suficiente para filtrar o tráfego HTTPS em navegadores e alguns aplicativos. No entanto, existem aplicativos que confiam apenas nos certificados do armazenamento do sistema. Para filtrar o tráfego HTTPS lá, você precisa instalar o certificado CA do AdGuard no armazenamento do sistema. [Instruções](/adguard-for-android/resolvendo-problems/https-certificate-for-rooted/)
+O certificado CA no armazenamento do usuário é suficiente para filtrar o tráfego HTTPS em navegadores e alguns aplicativos. No entanto, existem aplicativos que confiam apenas nos certificados do armazenamento do sistema. Para filtrar o tráfego HTTPS lá, você precisa instalar o certificado CA do AdGuard no armazenamento do sistema. [Instruções](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
 ##### Aplicativos filtrados por HTTPS
 
@@ -93,7 +93,7 @@ Esta seção contém a lista de aplicativos para os quais o AdGuard filtra o tr�
 
 Esta configuração permite gerenciar sites para os quais o AdGuard deve filtrar o tráfego HTTPS.
 
-A filtragem HTTPS permite que o AdGuard filtre o conteúdo de solicitações e respostas, mas nunca coletamos ou armazenamos esses dados. No entanto, para aumentar a segurança, [excluímos sites que contêm informações potencialmente confidenciais da filtragem HTTPS](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal- dados).
+A filtragem HTTPS permite que o AdGuard filtre o conteúdo de solicitações e respostas, mas nunca coletamos ou armazenamos esses dados. No entanto, para aumentar a segurança, [excluímos sites que contêm informações potencialmente confidenciais da filtragem HTTPS](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
 
 Você também pode adicionar sites que considere necessários às exclusões, selecionando um dos modos:
 
@@ -133,7 +133,7 @@ Nesta seção você pode encontrar informações sobre sua licença e gerenciá-
 - Compre uma licença do AdGuard para ativar [os recursos da versão completa](/adguard-for-android/features/free-vs-full)
 - Faça login em sua conta AdGuard ou insira a chave de licença para ativar sua licença
 - Inscreva-se para ativar seu período de teste de 7 dias, caso ainda não o tenha usado
-- Refresh the license status from the three-dots menu (⋮)
+- Atualize o status da licença no menu de três pontos (⋮)
 - Abra a conta AdGuard para gerenciar sua licença lá
 - Redefina sua licença. Por exemplo, se você atingiu o limite de dispositivos para esta licença e deseja aplicar outra
 

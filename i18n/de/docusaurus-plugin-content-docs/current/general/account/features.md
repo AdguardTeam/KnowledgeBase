@@ -31,8 +31,8 @@ Geräte, die an Ihre AdGuard Werbeblocker-Lizenzen gebunden sind, können gelös
 
 ## Käufe ansehen
 
-Im Abschnitt Kaufhistorie werden alle Lizenzen angezeigt, die Sie jemals über das E-Mail-Konto erworben haben, mit dem Sie Ihr AdGuard-Konto registriert haben. You will also find there information about the date of purchase, order ID, payment method, and cost of the purchase.
+Im Abschnitt Kaufhistorie werden alle Lizenzen angezeigt, die Sie jemals über das E-Mail-Konto erworben haben, mit dem Sie Ihr AdGuard-Konto registriert haben. Dort finden Sie auch Informationen über das Kaufdatum, die Bestellnummer, die Zahlungsmethode und die Kosten des Kaufs.
 
 ## Support kontaktieren
 
-Der Tab „Support” enthält nützliche Links, die Ihnen helfen, Probleme zu lösen oder Antworten auf Ihre Fragen zu AdGuard-Produkten zu finden. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge Base, and Discuss.
+Der Tab „Support” enthält nützliche Links, die Ihnen helfen, Probleme zu lösen oder Antworten auf Ihre Fragen zu AdGuard-Produkten zu finden. Diese sind in sechs Abschnitte unterteilt: Häufig gestellte Fragen (FAQ), Fehlerbericht/Funktionsanforderung senden, Fehlerhafte Sperrung melden, Support kontaktieren, Wissensdatenbank und Diskutieren.

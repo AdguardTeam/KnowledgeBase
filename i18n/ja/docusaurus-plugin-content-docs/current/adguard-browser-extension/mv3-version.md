@@ -1,81 +1,77 @@
 ---
-title: AdGuard Browser Extension for Chrome MV3
+title: AdGuard ブラウザ拡張機能 MV3対応版
 sidebar_position: 5
 ---
 
-As MV2 extensions are being phased out in the Chrome Web Store, Chrome users may need to switch to MV3 extensions that are compatible with Chrome’s new API Manifest V3. Our thoughts on this topic are extensively discussed on [our blog](https://adguard.com/en/blog/tag/manifest-v3.html).
+ChromeウェブストアではMV2（Manifest V2）拡張機能が段階的に廃止されているため、ChromeユーザーはChromeの新しいAPI、「Manifest V3」（MV3）と互換性のあるMV3拡張機能に切り替える必要があるかもしれません。 このトピックに関する当社の考えは、[当社のブログ](https://adguard.com/en/blog/tag/manifest-v3.html)で詳しく議論されています。
 
-Our MV3 extension effectively blocks ads and trackers while seamlessly managing social widgets, banners, and video ads. Most users will not notice any operational differences, but there are some limitations and changes to be aware of.
+AdGuard ブラウザ拡張機能MV3対応版は、SNSウィジェット、バナー、動画広告をシームレスに処理しながら、広告やトラッカーを効果的にブロックします。 ほとんどのユーザーは操作上の違いに気付かないでしょうが、注意すべき制限や変更点がいくつかあります。
 
-## Where to find our extensions
+## AdGuard ブラウザ拡張機能MV3対応版はどこで入手できるのか
 
-The **MV3 version** will soon replace our old extension in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
+**MV3対応版**は、[Chromeウェブストア](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg)で以前のAdGuardブラウザ拡張機能に取って代わりました。
 
-The **beta version of MV3** will still be available in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
+**MV3対応版のベータ版**は引き続き[Chrome ウェブストア](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf)で入手できます。
 
-The old beta extension will be renamed to [**AdGuard Ad Blocker MV2**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) and will be supported until Google phases it out.
+旧ベータ拡張機能は、[**AdGuard 広告ブロッカー MV2対応版**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl)に改名され、Googleが段階的に廃止するまでサポートされます。
 
-## Main changes in features and settings
+## 機能と設定における主な変更点
 
-- **No auto and manual filter updates.** The options _Auto-update filters_ and _Check filters update_ are no longer available in the _Filters_ tab. Since some of the rules are now applied in DNR form, we can’t update filters on request, only through the full process of updating the extension along with the review in the stores.
+- **自動および手動のフィルタ更新なし**　_フィルタ_タブの「_フィルタの自動更新_」および「_フィルタ更新の確認_」オプションは使用できなくなりました。 一部のルールは現在 DNR 形式で適用されているため、リクエストに応じてフィルタを更新することはできません。ストアでのレビューとともに拡張機能を更新する完全なプロセスを通じてのみ更新できます。
 
-- **Filtering log**
+- **フィルタリングログ**
 
   ![Filtering log \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules).
+  DNRの制限により、どのルールが機能したかを正確に示すことはできませんが、AdGuardのエンジンに基づいて「発動したと想定されるルール」を表示します。 正確な情報を確認されたい場合は、ご自身でブラウザにAdGuardブラウザ拡張機能の「解凍」版をインストールする必要があります。 これを行う方法の詳細な手順については、[別の記事](/adguard-browser-extension/solving-problems/debug-rules/)を参照してください。
 
-- _Tracking protection_ (formerly known as _Stealth mode_)
+- _トラッキング防止_（旧称：_ステルスモード_）
 
   ![Tracking protection \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
 
-  There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
+  宣言型ルールを使用して Cookie の TTL を設定できないため、_Cookie_ セクション、_ファーストパーティ Cookie の自己破壊_、_サードパーティ Cookie の自己破壊_ セクションはありません。
 
-- _Phishing & malware protection_ is no longer available in the general settings. To protect yourself from malicious websites and scams, enable the appropriate _Security_ filters in the _Filters_ tab.
+- 「_フィッシング＆マルウェア保護_」は、一般設定では利用できなくなりました。 悪質なウェブサイトや詐欺から身を守るには、_フィルタ_タブで適切な「_セキュリティ_」フィルタを有効にしてください。
 
-  ![Security](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![Security \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## Limitations
 
-### Maximum number of rules and filters
+### ルールとフィルタの最大数
 
-Manifest V3 imposes limits on static and regex rules per extension. Users may receive notifications when these limits are exceeded.
+Manifest V3 では、拡張子ごとに静的ルールと正規表現ルールの制限が課せられています。 これらの制限を超えた場合、ユーザーは通知を受け取ることができます。
 
 ![Rule limits \*border](https://cdn.adtidy.org/content/blog/new/rulelimits.png)
 
 ![Too many extensions \*border](https://cdn.adtidy.org/content/blog/new/other_extension.png)
 
-Basically, Manifest V3 divides rules into static (built-in) and dynamic, with strict limits in place.
+基本的に、Manifest V3 はルールを静的 (組み込み) と動的に分割し、厳格な制限を設けています。
 
-**Static rules:** minimum **30,000** rules per extension, with a cumulative limit of **330,000** for all extensions installed by a single user.
+**静的ルール:** 拡張機能ごとに最低**30,000**ルール、1ユーザーがインストールしたすべての拡張機能の累積上限は**330,000**
 
-For regex rules, the limit is set at **1,000 per extension**.
+正規表現ルールの場合、**拡張子ごとに1,000**に制限されています。
 
-The maximum number of simultaneously enabled filters is **50**.
+同時に有効なフィルタの最大数は**50**です。
 
-**Dynamic rules:** a strict cap of **5,000** rules is imposed, which includes a maximum of 1,000 regex rules.
+**動的ルール:** ルールの厳密な上限は**5,000**で、これには最大1,000個の正規表現ルールが含まれます。
 
-If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first allowlist, then user rules, and finally — custom filters.
+If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules, Custom filters, and finally — Quick Fixes filter.
 
-> **Converted rules** are rules that have been transformed
-> to [DNR format] using the [declarative converter][github-declarative-converter].
-> During this conversion process, some rules may overwrite others (`$badfilter`), some may be combined (`$removeparam`),
-> resulting in a list of rules with a slightly different order.
+> **変換されたルール**は、[宣言的コンバータ][github-declarative-converter]を使って
+> \[DNR形式]に変換されたルールです。
+> この変換プロセス中に、一部のルールが他のルールを上書きしたり (`$badfilter`)、一部のルールが結合されたり (`$removeparam`)して、順序がわずかに異なるルールのリストが生成され流ことがあります。
 >
-> From this list of converted rules, we will only use 5,000 rules. The rest of them will be displayed in the editor, but not applied.
+> この変換されたルールのリストから、AdGuardは5,000のルールだけを使用します。 それ以外のルールはエディタに表示されますが、適用されません。
 
-Here's how a rule with a basic modifier is converted to a declarative rule:
+基本修飾子を持つルールが、どのように宣言的ルールに変換されるかの一例は以下のとおりです。
 
-````
-```bash
+```adblock
 ||example.org^$script,third-party,domain=example.com
 ```
-````
 
-is converted to
+が以下のものに変化されます:
 
-````
-```bash
+```json
 [
     {
         "id": 1,
@@ -96,16 +92,15 @@ is converted to
     }
 ]
 ```
-````
 
-More examples can be found on [GitHub][github-declarative-converter-examples].
+その他の例については、[GitHub][github-declarative-converter-examples] をご覧ください。
 
-### Network rule modifiers
+### ネットワークルール修飾子
 
-Network rule modifiers have limitations: some of them cannot be implemented in MV3, or can only be implemented with restrictions.
+ネットワークルール修飾子には制限があります。一部、MV3環境では実装できないルール修飾子が合ったり、制限付きでしか実装できないものがあります。
 
-More details about the limitations can be found on [GitHub][github-declarative-converter].
-For further information on modifiers, please refer to our [Knowledge base](/general/ad-filtering/create-own-filters).
+制限の詳細については、[GitHub][github-declarative-converter] を参照してください。
+修飾子の詳細については、[ナレッジベース](/general/ad-filtering/create-own-filters)を参照してください。
 
 [DNR format]: https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest#build-rules
 

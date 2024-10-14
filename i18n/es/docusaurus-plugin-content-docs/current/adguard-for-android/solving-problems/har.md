@@ -1,47 +1,47 @@
 ---
-title: How to generate HAR files
+title: Cómo generar archivos HAR
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-HAR files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Los archivos HAR se procesan de acuerdo con la [Política de privacidad de AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-## What are HAR files?
+## ¿Qué son los archivos HAR?
 
-The HAR (HTTP ARchive) format is a JSON-formatted archive file for logging of a web browser's interaction with a site. The specifications of HAR format define archival data for HTTP transactions that a browser uses to export detailed information about the web pages it loads. More detailed description of HAR file format and its specification you can find at [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/) website.
+El formato HAR (HTTP ARchive) es un archivo de almacenamiento con formato JSON para registrar la interacción de un navegador web con un sitio. Las especificaciones del formato HAR definen datos de archivo para las transacciones HTTP que un navegador utiliza para exportar información detallada sobre las páginas web que carga. Puedes encontrar una descripción más detallada del formato de archivo HAR y su especificación en el sitio web [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
 
-## How to generate HAR files
+## Cómo generar archivos HAR
 
-Sometimes we need to analyze it to block specific ads that are difficult to reproduce for some reason. To get HAR files, follow these steps:
+A veces necesitamos analizarlo para bloquear anuncios específicos que son difíciles de reproducir por algún motivo. Para obtener archivos HAR, sigue estos pasos:
 
-1. Open AdGuard and go to **Settings** (⚙ icon in the lower right corner).
-2. Tap **General** →**Advanced** → **Low-level settings**.
-3. Scroll down and activate **Capture HAR** in the Filtering section.
-4. Open the app and perform the necessary actions to reproduce the problem.
-5. Turn **Capture HAR** off.
-6. Go back to **Advanced**.
-7. Tap **Export logs and system info** → **Allow** (if necessary) → **Save**.
+1. Abre AdGuard y ve a **Configuración** (ícono ⚙ en la esquina inferior derecha).
+2. Toca **General** →**Avanzado** → **Configuración de bajo nivel**.
+3. Desplázate hacia abajo y activa **Capturar HAR** en la sección Filtrado.
+4. Abre la aplicación y realiza las acciones necesarias para reproducir el problema.
+5. Desactive **Capturar HAR**.
+6. Regresa a **Avanzado**.
+7. Toca **Exportar registros e información del sistema** → **Permitir** (si es necesario) → **Guardar**.
 
-**Send the generated file with the logs to the AdGuard support service.**
+**Envía el archivo generado con los registros al servicio de soporte de AdGuard.**
 
 :::note
 
-Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message.
+Nuestro equipo de soporte procesará tu ticket mucho más rápido si especificas el número de ticket de HelpDesk o el número de problema de GitHub en tu mensaje.
 
 :::
 
-## How to analyze HAR files
+## Cómo analizar archivos HAR
 
-Here are some sources that we can recommend to analyze HAR files:
+Aquí hay algunas fuentes que podemos recomendar para analizar archivos HAR:
 
-- [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) is a HAR analyzer tool, visualizes HTTP Archive (HAR) log files created by HTTP tracking tools.
-- [Fiddler](https://www.telerik.com/fiddler) is a web debugging proxy, lets you capture, inspect, monitor all HTTP(S) traffic between your computer and the Internet, mock requests, and diagnose network issues.
+- [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) es una herramienta analizadora HAR que visualiza archivos de registro HTTP Archive (HAR) creados por herramientas de seguimiento HTTP.
+- [Fiddler](https://www.telerik.com/fiddler) es un proxy de depuración web que le permite capturar, inspeccionar y monitorear todo el tráfico HTTP(S) entre tu computadora e Internet, simular solicitudes y diagnosticar problemas de red.

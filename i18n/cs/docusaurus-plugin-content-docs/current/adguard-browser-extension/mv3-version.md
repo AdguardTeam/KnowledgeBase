@@ -1,81 +1,76 @@
 ---
-title: AdGuard Browser Extension for Chrome MV3
+title: Rozšíření prohlížeče AdGuard pro Chrome MV3
 sidebar_position: 5
 ---
 
-As MV2 extensions are being phased out in the Chrome Web Store, Chrome users may need to switch to MV3 extensions that are compatible with Chrome’s new API Manifest V3. Our thoughts on this topic are extensively discussed on [our blog](https://adguard.com/en/blog/tag/manifest-v3.html).
+Vzhledem k tomu, že rozšíření MV2 jsou ve webovém obchodě Chrome postupně ukončována, mohou uživatelé prohlížeče Chrome přejít na rozšíření MV3, která jsou kompatibilní s novým Chrome API Manifest V3. Naše úvahy na toto téma jsou podrobně rozebrány na [našem blogu](https://adguard.com/en/blog/tag/manifest-v3.html).
 
-Our MV3 extension effectively blocks ads and trackers while seamlessly managing social widgets, banners, and video ads. Most users will not notice any operational differences, but there are some limitations and changes to be aware of.
+Naše rozšíření MV3 účinně blokuje reklamy a slídiče a zároveň bezproblémově spravuje sociální widgety, bannery a videoreklamy. Většina uživatelů nezaznamená žádné provozní rozdíly, ale je třeba si uvědomit některá omezení a změny.
 
-## Where to find our extensions
+## Kde najdete naše rozšíření
 
-The **MV3 version** will soon replace our old extension in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
+**Verze MV3** nahradila naše staré rozšíření v [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
 
-The **beta version of MV3** will still be available in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
+**Beta verze MV3** bude stále k dispozici v [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
 
-The old beta extension will be renamed to [**AdGuard Ad Blocker MV2**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) and will be supported until Google phases it out.
+Staré beta rozšíření bude přejmenováno na [**Blokátor reklam AdGuard MV2**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) a bude podporováno, dokud jej společnost Google postupně nezruší.
 
-## Main changes in features and settings
+## Hlavní změny funkcí a nastavení
 
-- **No auto and manual filter updates.** The options _Auto-update filters_ and _Check filters update_ are no longer available in the _Filters_ tab. Since some of the rules are now applied in DNR form, we can’t update filters on request, only through the full process of updating the extension along with the review in the stores.
+- **Není k dispozici automatická a ruční aktualizace filtrů.** Na kartě _Filtry_ již nejsou k dispozici možnosti _Automatická aktualizace filtrů_ a _Kontrola aktualizace filtrů_. Vzhledem k tomu, že některá pravidla jsou nyní aplikována ve formě DNR, nemůžeme aktualizovat filtry na vyžádání, ale pouze prostřednictvím celého procesu aktualizace rozšíření spolu s přezkumem v obchodech.
 
-- **Filtering log**
+- **Záznam filtrování**
 
   ![Filtering log \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules).
+  Vzhledem k omezením DNR nemůžeme přesně ukázat, které pravidlo fungovalo, ale uvedeme "předpokládané pravidlo, které bylo spuštěno" na základě našeho enginu. Chcete-li získat přesné informace, musíte si "rozbalenou" formu rozšíření nainstalovat do prohlížeče sami. Podrobný návod, jak to provést, najdete v [samostatném článku](/adguard-browser-extension/solving-problems/debug-rules/).
 
-- _Tracking protection_ (formerly known as _Stealth mode_)
+- _Ochrana před sledováním_ (dříve známá jako _Režim utajení_)
 
   ![Tracking protection \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
 
-  There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
+  Neexistuje sekce _Cookies_ spolu s _Samozničení vlastních cookies_ a _Samozničení cookies třetích stran_, protože nelze nastavit TTL cookies pomocí deklarativních pravidel.
 
-- _Phishing & malware protection_ is no longer available in the general settings. To protect yourself from malicious websites and scams, enable the appropriate _Security_ filters in the _Filters_ tab.
+- _Ochrana proti phishingu a malwaru_ již není v obecném nastavení k dispozici. Chcete-li se chránit před škodlivými webovými stránkami a podvody, zapněte příslušné filtry _Zabezpečení_ na kartě _Filtry_.
 
-  ![Security](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![Security \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## Omezení
 
-### Maximum number of rules and filters
+### Maximální počet pravidel a filtrů
 
-Manifest V3 imposes limits on static and regex rules per extension. Users may receive notifications when these limits are exceeded.
+Manifest V3 zavádí omezení statických a regexových pravidel na jedno rozšíření. Uživatelé mohou dostávat oznámení o překročení těchto limitů.
 
 ![Rule limits \*border](https://cdn.adtidy.org/content/blog/new/rulelimits.png)
 
 ![Too many extensions \*border](https://cdn.adtidy.org/content/blog/new/other_extension.png)
 
-Basically, Manifest V3 divides rules into static (built-in) and dynamic, with strict limits in place.
+Manifest V3 v zásadě dělí pravidla na statická (vestavěná) a dynamická s přísnými omezeními.
 
-**Static rules:** minimum **30,000** rules per extension, with a cumulative limit of **330,000** for all extensions installed by a single user.
+**Statická pravidla:** minimálně **30000** pravidel na jedno rozšíření s kumulativním limitem **330000** pro všechna rozšíření nainstalovaná jedním uživatelem.
 
-For regex rules, the limit is set at **1,000 per extension**.
+Pro regexová pravidla je nastaven limit **1000 na jedno rozšíření**.
 
-The maximum number of simultaneously enabled filters is **50**.
+Maximální počet současně aktivovaných filtrů je **50**.
 
-**Dynamic rules:** a strict cap of **5,000** rules is imposed, which includes a maximum of 1,000 regex rules.
+**Dynamická pravidla:** je stanoven přísný limit **5000** pravidel, který zahrnuje maximálně 1000 regexových pravidel.
 
-If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first allowlist, then user rules, and finally — custom filters.
+If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules, Custom filters, and finally — Quick Fixes filter.
 
-> **Converted rules** are rules that have been transformed
-> to [DNR format] using the [declarative converter][github-declarative-converter].
-> During this conversion process, some rules may overwrite others (`$badfilter`), some may be combined (`$removeparam`),
-> resulting in a list of rules with a slightly different order.
+> **Převedená pravidla** jsou pravidla, která byla převedena do formátu \[DNR] pomocí [deklarativního převodníku][github-declarative-converter].
+> Během tohoto převodu mohou některá pravidla přepsat jiná (`$badfilter`), některá mohou být sloučena (`$removeparam`), takže vznikne seznam pravidel s mírně odlišným pořadím.
 >
-> From this list of converted rules, we will only use 5,000 rules. The rest of them will be displayed in the editor, but not applied.
+> Z tohoto seznamu převedených pravidel použijeme pouze 5000 pravidel. Ostatní se v editoru zobrazí, ale nepoužijí se.
 
-Here's how a rule with a basic modifier is converted to a declarative rule:
+Zde je uveden způsob převodu pravidla se základním modifikátorem na deklarativní pravidlo:
 
-````
-```bash
+```adblock
 ||example.org^$script,third-party,domain=example.com
 ```
-````
 
-is converted to
+je převedeno na
 
-````
-```bash
+```json
 [
     {
         "id": 1,
@@ -96,16 +91,15 @@ is converted to
     }
 ]
 ```
-````
 
-More examples can be found on [GitHub][github-declarative-converter-examples].
+Další příklady najdete na [GitHubu][github-declarative-converter-examples].
 
-### Network rule modifiers
+### Modifikátory síťových pravidel
 
-Network rule modifiers have limitations: some of them cannot be implemented in MV3, or can only be implemented with restrictions.
+Modifikátory síťových pravidel mají svá omezení: některé z nich nelze v MV3 implementovat nebo je lze implementovat pouze s omezeními.
 
-More details about the limitations can be found on [GitHub][github-declarative-converter].
-For further information on modifiers, please refer to our [Knowledge base](/general/ad-filtering/create-own-filters).
+Další podrobnosti o omezeních najdete na [GitHubu][github-declarative-converter].
+Další informace o modifikátorech naleznete v naší [Databázi znalostí](/general/ad-filtering/create-own-filters).
 
 [DNR format]: https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest#build-rules
 

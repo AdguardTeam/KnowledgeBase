@@ -3,13 +3,13 @@ title: Jak upřednostnit překlady souborů na Crowdinu
 sidebar_position: 5
 ---
 
-There are five major AdGuard projects on Crowdin — [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge Base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), and [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
+Na platformě Crowdin existuje pět hlavních projektů AdGuard — [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge Base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base) a [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
 
 Nemáme jasné pokyny, se kterými soubory nebo produkty projektu *AdGuard Applications* začít. Stačí si vybrat libovolný produkt.
 
 Je tu jen pár věcí, které bychom rádi zmínili:
 
-- The app is only available to users in those languages for which all translations have been completed on Crowdin;
+- Aplikace je dostupná pouze uživatelům v těch jazycích, pro které byly na platformě Crowdin dokončeny všechny překlady;
 - Popisy pro obchody s aplikacemi doporučujeme překládat až na druhém místě, protože bez překladu samotných produktů nebudou popisy potřeba.
 
 V projektu *AdGuard Websites* je situace jiná. Jazyky lze na web přidat, i když není k dispozici úplná sada překladů. To však závisí i na tom, které soubory již byly přeloženy. Proto doporučujeme začít nejdůležitějšími soubory, které jsou uvedeny níže:

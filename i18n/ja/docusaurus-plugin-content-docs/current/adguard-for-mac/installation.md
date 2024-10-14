@@ -3,15 +3,13 @@ title: 'インストール/アンインストール'
 sidebar_position: 2
 ---
 
-:::info
-
-この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for Mac」についてです。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for Mac」についてです。 実際にどのように動作するかを確認するには、[AdGuard アプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
 ## 動作環境
 
-**Operating system version:** macOS 10.15 (64 bit) or higher
+**OSバージョン**: macOS 10.15 (64 bit) 以上
 
 **RAM**: 2 GB以上
 
@@ -21,17 +19,17 @@ sidebar_position: 2
 
 ## インストール方法
 
-To install AdGuard for Mac on your computer, launch your browser, type *adguard.com* in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
+AdGuard for Mac をインストールするには、ブラウザで _adguard.com_ を開き、ページ上の「**ダウンロード**」ボタンを押してください。
 
 ![アプリをダウンロード *border](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-1.png)
 
-Wait for *AdguardInstaller.dmg* to download and double-click its icon in the list of downloaded files on the Dock panel.
+「*AdguardInstaller.dmg*」がダウンロード完了したら、クリックします。（Finderから開くこともできます。）
 
-![Double-click to open the file](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-2.png)
+![ダブルクリックでファイルを開く](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-2.png)
 
 表示されたインストールアプリでAdGuardアイコンをダブルクリックしてください。
 
-![Double-click the AdGuard icon](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-3.png)
+![AdGuardアイコンをダブルクリックします](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-3.png)
 
 AdGuard初インストールの際に、OSからの警告が表示されます。 「**開く**」を押してください。
 
@@ -45,7 +43,7 @@ AdGuard初インストールの際に、OSからの警告が表示されます�
 
 ![必要なファイルがダウンロードされるまで待ちます](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-6.png)
 
-AdGuardアプリを使用するにはmacOS管理者アカウントのパスワードが必要になります。 Enter the password when prompted in the dialogue box and press **OK**.
+AdGuardアプリを使用するにはmacOS管理者アカウントのパスワードが必要になります。 パスワードを入力して「**OK**」を押してください。
 
 ![パスワードを入力します。](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-7.png)
 
@@ -71,16 +69,16 @@ AdGuardアプリを使用するにはmacOS管理者アカウントのパスワ�
 
 **※この手順は、技術的なことが分かる場合、またはAdGuardサポートに「アドバンスドアンインストール」を案内された場合にのみ使用してください。 また、最初に「通常のアンインストール」手順のステップをすべて行ってください。**
 
-1. After that, delete following AdGuard files:
-    - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
-    - ~/Library/Preferences/com.adguard.mac.adguard.plist (file)
-    - ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (folder)
-    - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (file)
-    - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (file)
-    - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (file)
-    - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (file)
+1. 次に、以下のAdGuardファイルを削除してください:
+    - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (フォルダ)
+    - ~/Library/Preferences/com.adguard.mac.adguard.plist (ファイル)
+    - ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (フォルダ)
+    - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (ファイル)
+    - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (ファイル)
+    - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (ファイル)
+    - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (ファイル)
 
-    To do so, open the Terminal app, then enter and execute the following commands:
+    これらのファイルを削除するには、Terminalアプリを開き、以下のコマンドを入力して実行してください:
 
     ```bash
     sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
@@ -94,12 +92,12 @@ AdGuardアプリを使用するにはmacOS管理者アカウントのパスワ�
     sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log
     ```
 
-1. Run the **Activity Monitor** app.
+1. 「**アクティビティモニタ**」アプリを起動します。
 1. 検索ツールを使用して「**cfprefsd**」プロセスを見つける
 
     ![アクティビティモニタを実行する](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. ユーザーで実行されているプロセス（ルートで実行されているものではないほう）を停止します。 そうするにはプロセスをクリックして、左上の「X」をクリックしてください。 Confirm the action in the dialogue window.
+1. ユーザーで実行されているプロセス（ルートで実行されているものではないほう）を停止します。 そうするにはプロセスをクリックして、左上の「X」をクリックしてください。 表示されたダイアログで確認してください。
 
     ![確認](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 

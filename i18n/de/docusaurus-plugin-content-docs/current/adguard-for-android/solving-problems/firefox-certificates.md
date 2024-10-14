@@ -1,5 +1,5 @@
 ---
-title: Manual installation of the security certificate into the Firefox browser
+title: Manuelle Installation des Sicherheitszertifikats im Firefox-Browser
 sidebar_position: 11
 ---
 
@@ -9,37 +9,37 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-For AdGuard to successfully filter HTTPS traffic in Firefox, the browser needs to trust AdGuard's certificate. It can be achieved differently for different versions of the Firefox.
+Damit AdGuard den HTTPS-Datenverkehr in Firefox erfolgreich filtern kann, muss der Browser dem Zertifikat von AdGuard vertrauen. Dies kann bei verschiedenen Firefox-Versionen auf unterschiedliche Weise erreicht werden.
 
-### Method 1
+### Methode 1
 
 :::note
 
-This method works in Firefox for Android version 90.0 and later.
+Diese Methode funktioniert in Firefox für Android Version 90.0 und höher.
 
 :::
 
-To make Firefox trust the AdGuard certificate, do the following:
+Um Firefox zu ermöglichen, dem AdGuard-Zertifikat zu vertrauen, gehen Sie wie folgt vor:
 
-1. Run the browser.
+1. Starten Sie den Browser.
 
-1. Go to **Settings** → **About Firefox**.
+1. Öffnen Sie **Einstellungen** → **Über Firefox**.
 
-    ![About Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
+    ![Über Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
-1. Tap the Firefox logo five times.
+1. Tippen Sie fünfmal auf das Firefox-Logo.
 
 1. Navigate to **Settings** → **Secret Settings**.
 
-    ![Secret Settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+    ![Geheime Einstellungen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
 1. Toggle **Use third party CA certificates**.
 
-### Method 2
+### Methode 2
 
 :::note
 
-This method will only work on **rooted** devices.
+Diese Methode funktioniert nur auf **gerooteten** Geräten.
 
 :::
 
@@ -56,26 +56,26 @@ This method will only work on **rooted** devices.
 
 1. Open the **AdGuard settings** (gear icon in the bottom right corner) → **Filtering** → **Network** → **HTTPS filtering** → **Security certificate** → **Instructions for Firefox** → **Install for old versions**;
 
-1. Open the folder `data/data/org.mozilla.firefox/files/mozilla` using `adb shell su` and `cd data/data/...`, then browse to the folder named `xxxxxxx.default` and memorize its name;
+1. Öffnen Sie den Ordner `data/data/org.mozilla.firefox/files/mozilla` mit `adb shell su` und `cd data/data/...` und suchen Sie dann den Ordner mit dem Namen `xxxxxxx.default` und merken Sie sich dessen Namen;
 
-1. In the specified folder we are interested in two files:
+1. In dem angegebenen Ordner sind wir an zwei Dateien interessiert:
 
     - `cert9.db`
     - `key4.db`
 
-1. We need to move these files to a folder of the browser where the security certificate issue occurred:
+1. Es ist notwendig, diese Dateien in einen Ordner des Browsers zu verschieben, in dem das Problem mit dem Sicherheitszertifikat aufgetreten ist:
 
     - `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`.
 
-1. The full command will look like this:
+1. Der vollständige Befehl sieht wie folgt aus:
 
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
 
-    In case you received the system notification **permission denied**, you should first move the specified files to the permission-free directory. And after that you should move them to the necessary folder in your Firefox browser.
+    In case you received the system notification **permission denied**, you should first move the specified files to the permission-free directory. Danach sollten Sie sie in den entsprechenden Ordner in Ihrem Firefox-Browser verschieben.
 
-    The full command should look something like this:
+    Der vollständige Befehl sollte in etwa so aussehen:
 
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxx.default/cert9.db sdcard/Download`
@@ -83,4 +83,4 @@ This method will only work on **rooted** devices.
     - `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
 
-    If `adb shell su` does not work, you should try `adb shell` initially, and then `su`.
+    Wenn `adb shell su` nicht funktioniert, sollten Sie zunächst `adb shell` und dann `su`versuchen.

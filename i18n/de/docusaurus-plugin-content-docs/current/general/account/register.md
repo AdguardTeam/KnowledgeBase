@@ -13,7 +13,7 @@ Um ein Konto zu erstellen, öffnen Sie die offizielle Website von [AdGuard](http
 
 :::tip
 
-If you enter your email address when purchasing a license, or receive a license linked to your email address as a gift, an account will be created automatically. Um ein Passwort festzulegen, können Sie einem Link in einer Transaktions- oder Geschenk-E-Mail folgen. Sie können sich auch mit der oben genannten Methode registrieren.
+Wenn Sie beim Kauf einer Lizenz Ihre E-Mail-Adresse angeben oder eine mit Ihrer E-Mail-Adresse verknüpfte Lizenz als Geschenk erhalten, wird automatisch ein Konto erstellt. Um ein Passwort festzulegen, können Sie einem Link in einer Transaktions- oder Geschenk-E-Mail folgen. Sie können sich auch mit der oben genannten Methode registrieren.
 
 :::
 

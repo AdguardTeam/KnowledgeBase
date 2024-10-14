@@ -1,5 +1,5 @@
 ---
-title: Battery and traffic consumption issues
+title: Probleme mit dem Akku- und Datenverkehrverbrauch
 sidebar_position: 1
 ---
 
@@ -9,52 +9,52 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-Due to built-in statistics processes, high data and/or battery consumption was often attributed to AdGuard by Android 6 and earlier. This was because AdGuard counted all the traffic it filtered from various apps. As a result, AdGuard's share of total data and battery usage was overstated, while other apps were understated.
+Aufgrund der eingebauten Statistikprozesse wurde AdGuard bei Android 6 und früher oft ein hoher Daten- und/oder Akkuverbrauch zugeschrieben. Das lag daran, dass AdGuard der gesamte von ihm gefilterte Datenverkehr von verschiedenen Anwendungen zugerechnet wurde. Infolgedessen wurde der Anteil von AdGuard an der gesamten Daten- und Batterienutzung überbewertet, während andere Anwendungen zu niedrig bewertet wurden.
 
-With Android 7, however, this scenario has improved. Now the data reflected in Android's built-in data usage statistics is very close to reality, although there are minor discrepancies in the battery usage data.
+Mit Android 7 hat sich dieses Szenario jedoch verbessert. Die Daten, die sich in den in Android integrierten Statistiken zur Datennutzung widerspiegeln, kommen der Realität sehr nahe, auch wenn es bei den Daten zur Akku-Nutzung geringfügige Diskrepanzen gibt.
 
-However, AdGuard users can always get a true picture of the situation on the *Battery usage* screen.
+AdGuard-Nutzer:innen können sich jedoch jederzeit auf dem Bildschirm *Batterieverbrauch* ein genaues Bild der Situation machen.
 
-### Own battery usage stats screen
+### Eigene Statistiken zum Batterieverbrauch
 
-You can access it by navigating to *Statistics* → *Battery usage*.
+Sie können darauf zugreifen, indem Sie zu *Statistiken* → *Batterieverbrauch* navigieren.
 
-![Battery stats *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
+![Batteriestatistik *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
 
-Inside you will find a chart that shows the AdGuard battery resource consumption within the last 24 hours, with an option to get more detailed hour-to-hour data by tapping on the chart. Besides that, there’s also a numeric breakdown of the relevant data and a short technical explanation.
+Darin finden Sie ein Diagramm, das den Verbrauch der AdGuard-Batterieressourcen in den letzten 24 Stunden anzeigt, mit der Option, durch Antippen des Diagramms detailliertere Daten von Stunde zu Stunde zu erhalten. Darüber hinaus gibt es auch eine numerische Aufschlüsselung der relevanten Daten und eine kurze technische Erklärung.
 
-### How much battery resource does AdGuard really consume?
+### Wie viel Batteriekapazität verbraucht AdGuard wirklich?
 
-First, let us lay down a bit of theory and links with necessary data.
+Lassen Sie uns zunächst ein paar theoretische Überlegungen anstellen und mit den erforderlichen Daten verknüpfen.
 
-1. Android derives traffic consumption judging on so-called Power Profile, which is given by every manufacturer: <https://source.android.com/devices/tech/power/values.html>
+1. Android leitet den Datenverkehr nach dem sogenannten Power Profile (Energieprofil) ab, das von jedem Hersteller vorgegeben wird: <https://source.android.com/devices/tech/power/values.html>
 
-1. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: <https://source.android.com/devices/tech/power/values.html>
+1. Hauptbestandteil des Energieprofils ist eine Reihe von Werten in mAh, die den Batterieverbrauch für jede Komponente des Geräts definieren: <https://source.android.com/devices/tech/power/values.html>
 
-    For example, from the table above:
+    Ein Beispiel aus der obigen Tabelle:
 
-    *wifi.active=* 31mA additional consumption in mAh caused by WiFi data exchange.
+    *wifi.active=* 31mA zusätzlicher Verbrauch in mAh durch WLAN-Datenaustausch.
 
-    *radio.active=* 100-300mA additional consumption in mAh caused by data exchange over Mobile network.
+    *radio.active=* 100-300mA zusätzlicher Verbrauch in mAh durch Datenaustausch über das Mobilfunknetz.
 
-    *cpu.active=* 100-200mA additional consumption in mAh caused by CPU load.
+    *cpu.active=* 100-200mA zusätzlicher Verbrauch in mAh, verursacht durch CPU-Last.
 
-1. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating power consumption let's get rid of 'Mobile/Wi-Fi packets' and stick to 'CPU'.
+1. AdGuard selbst verbraucht so gut wie keinen Datenverkehr, also verzichten wir für die Auswertung des Stromverbrauchs auf „Mobile/WLAN-Pakete“ und bleiben bei „CPU“.
 
-    Formula to calculate the consumption:
+    Formel für die Berechnung des Verbrauchs:
 
     > “CPU TIME (ms)” X “cpu.active” / (60 *60* 1000) = “POWER USE mAh”
 
-    Let's put real numbers into this formula.
+    Setzen wir reale Zahlen in diese Formel ein.
 
-    Let's take *CPU total* from the second screenshot and convert into milliseconds: 506000
+    Nehmen wir *CPU total* aus dem zweiten Bildschirmfoto und rechnen es in Millisekunden um: 506000
 
-    A coefficient *cpu.active* for 2GHz will be roughly equal to 225mAh
+    Ein Koeffizient *cpu.active* für 2GHz entspricht ungefähr 225mAh
 
-    Final result:
+    Endergebnis:
 
     > 506000 *225 / (60* 60 * 1000) = 31,625mAh
 
-### Conclusion
+### Fazit
 
-Real consumption is **several times less** than it is shown in Android statistics. Instead of 220mAh it should be somewhere around 31-40mAh. On the other hand, browser's consumption should be not 66mAh, but ~200mAh.
+Der tatsächliche Verbrauch ist **mehrfach geringer** als er in den Android-Statistiken ausgewiesen wird. Statt 220mAh sollten es etwa 31-40mAh sein. Andererseits sollte der Verbrauch des Browsers nicht 66 mAh, sondern ~200 mAh betragen.

@@ -21,7 +21,7 @@ sidebar_position: 9
 
 ## 高度な設定
 
-### Network settings
+### ネットワーク設定
 
 #### `network.extension.exclude.domains`
 
@@ -71,7 +71,7 @@ sidebar_position: 9
 
 #### `network.https.ech.enabled`
 
-ECH Configs Lists内のconfigsを検索するために、ローカルDNSプロキシを使用します。 If found, encrypts Client Hellos.
+ECH Configs Lists内のconfigsを検索するために、ローカルDNSプロキシを使用します。 見つかった場合、Client Hellosを暗号化します。
 
 #### `network.https.enforce.certificate.transparency`
 
@@ -89,7 +89,7 @@ Chrome Certificate Transparency Policy（証明書透過性ポリシー）に基
 
 `true` を設定すると、LoopBack フィルタリングが有効になります。
 
-### DNS settings
+### DNS設定
 
 #### `dns.proxy.bootstrap.ips`
 
@@ -159,7 +159,7 @@ Chrome Certificate Transparency Policy（証明書透過性ポリシー）に基
 
 応答からECH（Encrypted Client Hello）パラメータを削除します。
 
-### Stealth Mode settings
+### ステルスモード設定
 
 #### `stealth.antidpi.http.split.fragment.size`
 
@@ -177,7 +177,7 @@ HTTPメソッドとURLの間に余分なスペースを追加し、「Host: 」�
 
 ここでは、断片化が実行される場合に、最初のフラグメントを送信した後の遅延をミリ秒単位で指定できます。
 
-### Subscription link interception settings (userscripts and filters)
+### （ユーザースクリプトとフィルタへの）購読リンクの遮断設定
 
 #### `subscription.link.interception.userscript`
 

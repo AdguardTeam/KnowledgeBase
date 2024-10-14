@@ -1,81 +1,78 @@
 ---
-title: AdGuard Browser Extension for Chrome MV3
+title: Extensão de navegador AdGuard para Chrome MV3
 sidebar_position: 5
 ---
 
-As MV2 extensions are being phased out in the Chrome Web Store, Chrome users may need to switch to MV3 extensions that are compatible with Chrome’s new API Manifest V3. Our thoughts on this topic are extensively discussed on [our blog](https://adguard.com/en/blog/tag/manifest-v3.html).
+Como as extensões MV2 estão sendo eliminadas gradualmente na Chrome Web Store, os usuários do Chrome talvez precisem mudar para extensões MV3 compatíveis com a nova API do Manifest V3 do Chrome. Nossos pensamentos sobre esse tópico são amplamente discutidos em [nosso blog](https://adguard.com/pt_br/blog/tag/manifest-v3.html).
 
-Our MV3 extension effectively blocks ads and trackers while seamlessly managing social widgets, banners, and video ads. Most users will not notice any operational differences, but there are some limitations and changes to be aware of.
+Nossa extensão MV3 bloqueia anúncios e rastreadores de forma eficaz, além de gerenciar perfeitamente widgets sociais, banners e anúncios em vídeo. A maioria dos usuários não notará nenhuma diferença operacional, mas há algumas limitações e mudanças que você precisa conhecer.
 
-## Where to find our extensions
+## Onde encontrar nossas extensões
 
-The **MV3 version** will soon replace our old extension in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
+A **versão MV3** substituiu nossa antiga extensão na [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
 
-The **beta version of MV3** will still be available in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
+A **versão beta do MV3** ainda estará disponível na [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
 
-The old beta extension will be renamed to [**AdGuard Ad Blocker MV2**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) and will be supported until Google phases it out.
+A antiga extensão beta será renomeada para [**Bloqueador de anúncios AdGuard MV2**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) e terá suporte até que o Google a desative.
 
-## Main changes in features and settings
+## Principais alterações nos recursos e configurações
 
-- **No auto and manual filter updates.** The options _Auto-update filters_ and _Check filters update_ are no longer available in the _Filters_ tab. Since some of the rules are now applied in DNR form, we can’t update filters on request, only through the full process of updating the extension along with the review in the stores.
+- **Nenhuma atualização automática ou manual de filtros.** As opções _Atualizar filtros automaticamente_ e _Verificar atualização de filtros_ não estão mais disponíveis na aba _Filtros_. Como algumas das regras agora são aplicadas na forma de DNR, não podemos atualizar os filtros por solicitação, somente por meio do processo completo de atualização da extensão junto com a revisão nas lojas.
 
-- **Filtering log**
+- **Registro de filtragem**
 
-  ![Filtering log \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+  ![Registro de filtragem \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules).
+  Devido às restrições do DNR, não podemos mostrar exatamente qual regra funcionou, mas forneceremos uma “regra presumida que foi acionada” com base em nosso mecanismo. Para obter informações precisas, você precisará instalar o formato “descompactado” da extensão no seu navegador. Você encontrará instruções detalhadas sobre como fazer isso em um [artigo separado](/adguard-browser-extension/solving-problems/debug-rules/).
 
-- _Tracking protection_ (formerly known as _Stealth mode_)
+- _Proteção de rastreamento_ (anteriormente conhecido como _Modo furtivo_)
 
-  ![Tracking protection \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+  ![Proteção contra rastreamento \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
 
-  There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
+  Não há nenhuma seção _Cookies_, juntamente com _Autodestruição de cookies primários_ e _Autodestruição de cookies de terceiros_, pois não podemos definir o TTL dos cookies usando regras declarativas.
 
-- _Phishing & malware protection_ is no longer available in the general settings. To protect yourself from malicious websites and scams, enable the appropriate _Security_ filters in the _Filters_ tab.
+- _Proteção contra phishing e malware_ não está mais disponível nas configurações gerais. Para se proteger de sites maliciosos e golpes, ative os filtros de _Segurança_ apropriados na aba _Filtros_.
 
-  ![Security](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![Segurança \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
-## Limitations
+## Limitações
 
-### Maximum number of rules and filters
+### Número máximo de regras e filtros
 
-Manifest V3 imposes limits on static and regex rules per extension. Users may receive notifications when these limits are exceeded.
+O Manifest V3 impõe limites em regras estáticas e regex por extensão. Os usuários podem receber notificações quando esses limites forem excedidos.
 
-![Rule limits \*border](https://cdn.adtidy.org/content/blog/new/rulelimits.png)
+![Limites de regras \*border](https://cdn.adtidy.org/content/blog/new/rulelimits.png)
 
-![Too many extensions \*border](https://cdn.adtidy.org/content/blog/new/other_extension.png)
+![Muitas extensões \*border](https://cdn.adtidy.org/content/blog/new/other_extension.png)
 
-Basically, Manifest V3 divides rules into static (built-in) and dynamic, with strict limits in place.
+Basicamente, o Manifest V3 divide as regras em estáticas (integradas) e dinâmicas, com limites rígidos.
 
-**Static rules:** minimum **30,000** rules per extension, with a cumulative limit of **330,000** for all extensions installed by a single user.
+**Regras estáticas:** mínimo de **30.000** regras por extensão, com um limite cumulativo de **330.000** para todas as extensões instaladas por um único usuário.
 
-For regex rules, the limit is set at **1,000 per extension**.
+Para regras regex, o limite é definido como **1.000 por extensão**.
 
-The maximum number of simultaneously enabled filters is **50**.
+O número máximo de filtros ativados simultaneamente é **50**.
 
-**Dynamic rules:** a strict cap of **5,000** rules is imposed, which includes a maximum of 1,000 regex rules.
+**Regras dinâmicas:** é imposto um limite estrito de **5.000** regras, que inclui um máximo de 1.000 regras regex.
 
-If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first allowlist, then user rules, and finally — custom filters.
+If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules, Custom filters, and finally — Quick Fixes filter.
 
-> **Converted rules** are rules that have been transformed
-> to [DNR format] using the [declarative converter][github-declarative-converter].
-> During this conversion process, some rules may overwrite others (`$badfilter`), some may be combined (`$removeparam`),
-> resulting in a list of rules with a slightly different order.
+> **Regras convertidas** são regras que foram transformadas
+> para o \[formato DNR] usando o [conversor declarativo][github-declarative-converter].
+> Durante esse processo de conversão, algumas regras podem substituir outras (`$badfilter`), algumas podem ser combinadas (`$removeparam`),
+> resultando em uma lista de regras com uma ordem ligeiramente diferente.
 >
-> From this list of converted rules, we will only use 5,000 rules. The rest of them will be displayed in the editor, but not applied.
+> Dessa lista de regras convertidas, usaremos apenas 5.000 regras. Os demais serão exibidos no editor, mas não serão aplicados.
 
-Here's how a rule with a basic modifier is converted to a declarative rule:
+Veja como uma regra com um modificador básico é convertida em uma regra declarativa:
 
-````
-```bash
+```adblock
 ||example.org^$script,third-party,domain=example.com
 ```
-````
 
-is converted to
+é convertido para
 
-````
-```bash
+```json
 [
     {
         "id": 1,
@@ -96,16 +93,15 @@ is converted to
     }
 ]
 ```
-````
 
-More examples can be found on [GitHub][github-declarative-converter-examples].
+Mais exemplos podem ser encontrados no [GitHub][github-declarative-converter-examples].
 
-### Network rule modifiers
+### Modificadores de regras de rede
 
-Network rule modifiers have limitations: some of them cannot be implemented in MV3, or can only be implemented with restrictions.
+Os modificadores de regras de rede têm limitações: alguns deles não podem ser implementados no MV3 ou só podem ser implementados com restrições.
 
-More details about the limitations can be found on [GitHub][github-declarative-converter].
-For further information on modifiers, please refer to our [Knowledge base](/general/ad-filtering/create-own-filters).
+Mais detalhes sobre as limitações podem ser encontrados no [GitHub][github-declarative-converter].
+Para obter mais informações sobre modificadores, consulte nossa [Base de conhecimento](/general/ad-filtering/create-own-filters).
 
 [DNR format]: https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest#build-rules
 

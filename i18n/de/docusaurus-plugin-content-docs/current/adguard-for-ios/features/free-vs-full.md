@@ -11,17 +11,17 @@ Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker,
 
 :::note
 
-Both AdGuard for iOS with enabled Premium and AdGuard Pro block ads on Apple smartphones and tablets. They used to differ in functionality due to certain changes made to App Store review policies in the past, but now AdGuard with a purchased subscription and AdGuard Pro are identical in their functionality.
+Sowohl AdGuard für iOS mit aktiviertem Premium als auch AdGuard Pro sperren Werbung auf Apple-Smartphones und -Tablets. Früher unterschieden sie sich in ihrer Funktionalität aufgrund bestimmter Änderungen an den App Store-Bewertungsrichtlinien in der Vergangenheit, aber jetzt sind AdGuard mit einem gekauften Abonnement und AdGuard Pro in ihrer Funktionalität identisch.
 
 :::
 
-Premium AdGuard for iOS features several differences from the free version, including custom DNS settings. With these settings, you can block ads not only in Safari but in other apps too, protect your kids from adult content online, and keep your personal information safe from theft. There are other differences, too. Let’s explore them all in more detail.
+Premium AdGuard for iOS features several differences from the free version, including custom DNS settings. Mit diesen Einstellungen können Sie Werbung nicht nur in Safari, sondern auch in anderen Anwendungen sperren, Ihre Kinder vor nicht jugendfreien Online-Inhalten schützen und Ihre persönlichen Daten vor Diebstahl bewahren. Es gibt auch noch weitere Unterschiede. Lassen Sie uns diese im Detail betrachten.
 
-1. The **DNS protection** module encrypts your DNS traffic to enhance privacy. It works across all apps and browsers, not just Safari, offering broad protection against ads and trackers.
+1. Das Modul **DNS-Schutz** verschlüsselt Ihren DNS-Verkehr, um den Datenschutz zu verbessern. Es funktioniert in allen Anwendungen und Browsern, nicht nur in Safari, und bietet umfassenden Schutz vor Werbung und Trackern.
 
    - **Custom DNS servers:** Choose from one of the popular DNS servers from our list or add your own custom server.
 
-   - **Family Protection:** The Internet isn’t always kid-friendly. With AdGuard Premium, you can switch to DNS providers that block adult content and other inappropriate material to keep your children safe online.
+   - **Family Protection:** The Internet isn’t always kid-friendly. Mit AdGuard Premium können Sie zu DNS-Anbietern wechseln, die Inhalte für Erwachsene und anderes ungeeignetes Material sperren, damit Ihre Kinder im Internet sicher sind.
 
    - **Monitoring and flexible configuration:** Recent activity log allows you to view all DNS requests sent by your device and easily manage your traffic by adding websites to blocklist or allowlist with just a tap.
 
@@ -29,4 +29,4 @@ Premium AdGuard for iOS features several differences from the free version, incl
 
 3. **More filter options:** When purchasing AdGuard Premium, you get access to custom filters and a security filter category, where you can choose from over 50 filters, including AdGuard’s and other popular lists.
 
-Access these features by [purchasing a license](https://adguard.com/license.html).
+Sie können auf diese Funktionen zugreifen, indem Sie [eine Lizenz erwerben](https://adguard.com/license.html).

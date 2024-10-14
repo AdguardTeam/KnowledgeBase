@@ -1,98 +1,98 @@
 ---
-title: How to debug rules in AdGuard for Chrome MV3
+title: So debuggen Sie Regeln in AdGuard für Chrome MV3
 sidebar_position: 2
 ---
 
-In [AdGuard for Chrome MV3](/adguard-browser-extension/mv3-version), the Filtering log only shows the approximate rules that were applied, which we call “assumed rules”. This is because the browser doesn’t provide details about which specific declarative rules were used unless the extension is in an “unpacked” format. To get precise information, you’ll need to install the unpacked version of the extension in your browser yourself.
+In [AdGuard für Chrome MV3](/adguard-browser-extension/mv3-version) zeigt das Filter-Protokoll nur die ungefähren Regeln an, die angewendet wurden, die wir „mutmaßliche Regeln“ nennen. Dies liegt daran, dass der Browser keine Details darüber liefert, welche spezifischen deklarativen Regeln verwendet wurden, es sei denn, die Erweiterung liegt in einem „entpackten" Format vor. Um genaue Informationen zu erhalten, müssen Sie die entpackte Version der Erweiterung selbst in Ihrem Browser installieren.
 
-These instructions are also meant for problematic cases where you want to modify the rules that are bundled with the extension statically. In most cases, using _User rules_ in the extension should be sufficient.
+Diese Anweisungen sind auch für problematische Fälle gedacht, in denen Sie die statisch mit der Erweiterung gelieferten Regeln ändern wollen. In den meisten Fällen sollte die Verwendung von _Benutzerregeln_ in der Erweiterung ausreichen.
 
-## Prerequisites
+## Voraussetzungen
 
-1. **Git:** [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+1. **Git:** [Git installieren](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-2. **Node:** [Install Node.js](https://nodejs.org/en/download/package-manager)
+2. **Node:** [Node.js installieren](https://nodejs.org/en/download/package-manager)
 
-3. **Yarn:** [Install Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
+3. **Yarn:** [Yarn installieren](https://classic.yarnpkg.com/lang/en/docs/install)
 
-## How to clone extension
+## So klonen Sie die Erweiterung
 
-1. Clone the repository:
+1. Klonen Sie das Repository:
 
    ```bash
    git clone git@github.com:AdguardTeam/AdguardBrowserExtension.git
    ```
 
-2. Navigate to the directory:
+2. Wechseln Sie in den Ordner:
 
    ```bash
    cd AdguardBrowserExtension
    ```
 
-3. Switch to the `v5.0` branch:
+3. Wechseln Sie zum Zweig `v5.0`:
 
    ```bash
    git checkout v5.0
    ```
 
-4. Install dependencies:
+4. Installieren Sie Abhängigkeiten:
 
    ```bash
    yarn install
    ```
 
-## How to build extension
+## So erstellen Sie eine Erweiterung
 
-1. Switch to the `v5.0` branch:
+1. Wechseln Sie zum Zweig `v5.0`:
 
    ```bash
    git checkout v5.0
    ```
 
-2. Run the following command in the terminal:
+2. Führen Sie den folgenden Befehl im Terminal aus:
 
    ```bash
    yarn dev chrome-mv3
    ```
 
-3. The built extension will be located in the directory:
+3. Die erstellte Erweiterung befindet sich in diesem Ordner:
 
    ```bash
    ./build/dev/chrome-mv3
    ```
 
-## How to install unpacked in the browser
+## So installieren Sie entpackte Erweiterung im Browser
 
-1. Turn on developer mode:
+1. Aktivieren Sie den Entwicklermodus:
 
-   ![Developer mode](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
+   ![Entwicklermodus](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
 
-2. Click _Load unpacked_:
+2. Klicken Sie auf _Entpackt laden_:
 
-   ![Load unacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+   ![Entpackte Erweiterung laden](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
-3. Select the extension directory and click `Select`:
+3. Wählen Sie den Ordner der Erweiterung und klicken Sie auf `Auswählen`:
 
-   ![Select](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
+   ![Auswählen](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
 
 Das war's!
 
-## How to debug rules
+## So debuggen Sie Regeln
 
-1. Find and modify the rule you need in the `./Extension/filters/chromium-mv3` directory in the `.txt` files.
+1. Suchen Sie die gewünschte Regel im Ordner `./Extension/filters/chromium-mv3` in den `.txt`-Dateien und ändern Sie sie.
 
-2. Convert the rules from txt to declarative form:
+2. Konvertieren Sie die Regeln von txt in deklarative Form:
 
    ```bash
    yarn convert-declarative
    ```
 
-3. Build the extension again:
+3. Erstellen Sie die Erweiterung erneut:
 
    ```bash
    yarn dev chrome-mv3
    ```
 
-4. Reload the extension in the browser:
+4. Laden Sie die Erweiterung erneut im Browser:
 
-   ![Reload extension](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
+   ![Erweiterung neu laden](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)

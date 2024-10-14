@@ -55,7 +55,7 @@ The maximum number of simultaneously enabled filters is **50**.
 
 **Dynamic rules:** a strict cap of **5,000** rules is imposed, which includes a maximum of 1,000 regex rules.
 
-If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first allowlist, then user rules, and finally — custom filters.
+If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules, Custom filters, and finally — Quick Fixes filter.
 
 > **Converted rules** are rules that have been transformed
 > to [DNR format] using the [declarative converter][github-declarative-converter].
@@ -66,33 +66,33 @@ If this limit is exceeded, only **5,000 converted rules** will be applied in the
 
 Here's how a rule with a basic modifier is converted to a declarative rule:
 
-    ```bash
-    ||example.org^$script,third-party,domain=example.com
-    ```
+```adblock
+||example.org^$script,third-party,domain=example.com
+```
 
 is converted to
 
-    ```bash
-    [
-        {
-            "id": 1,
-            "action": {
-                "type": "block"
-            },
-            "condition": {
-                "urlFilter": "||example.org^",
-                "domainType": "thirdParty",
-                "initiatorDomains": [
-                    "example.com"
-                ],
-                "resourceTypes": [
-                    "script"
-                ]
-            },
-            "priority": 302
-        }
-    ]
-    ```
+```json
+[
+    {
+        "id": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "||example.org^",
+            "domainType": "thirdParty",
+            "initiatorDomains": [
+                "example.com"
+            ],
+            "resourceTypes": [
+                "script"
+            ]
+        },
+        "priority": 302
+    }
+]
+```
 
 More examples can be found on [GitHub][github-declarative-converter-examples].
 

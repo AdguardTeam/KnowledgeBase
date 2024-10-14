@@ -9,17 +9,17 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 :::
 
-AdGuard can significantly broaden website functionality working as a [user script manager](/general/userscripts). Sie können ihre eigenen Skripte hinzufügen und bestehende Skripte verwalten.
+AdGuard can significantly broaden website functionality working as a [user script manager](/general/extensions). Sie können ihre eigenen Skripte hinzufügen und bestehende Skripte verwalten.
 
-![Extensions \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![Erweiterungen \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
-**Automatically detect userscripts**
+**Benutzerskripte automatisch erkennen**
 
 Wenn diese Option aktiviert ist, definiert AdGuard automatisch Browser-Anfragen an Benutzerskripte und schlägt deren Installation vor. Andernfalls können die Erweiterungen (Benutzerskripte) heruntergeladen und manuell installiert werden.
 
 Die folgenden Erweiterungen werden mit AdGuard installiert:
 
-![Preinstalled userscripts \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![Vorinstallierte Benutzerskripte \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
 **AdGuard-Assistent**
 
@@ -41,9 +41,9 @@ Mit Web of Trust können Sie den Ruf jeder Website auf der Grundlage von Nutzerm
 
 ### Netzwerk
 
-Das vorletzte Modul ist der Netzwerkfilterung gewidmet, und hier finden Sie weitere netzwerkbezogene Optionen. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS_. Dies sind wichtige zusätzliche Vorsichtsmaßnahmen, um Ihren Webspace besser zu filtern. Most websites are now using HTTPS, and the same applies to advertising. From many sites, like youtube.com, facebook.com and x.com, it is impossible to remove ads without HTTPS filtering. So keep the _Filter HTTPS_ feature enabled unless you have a strong reason not to.
+Das vorletzte Modul ist der Netzwerkfilterung gewidmet, und hier finden Sie weitere netzwerkbezogene Optionen. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS_. Dies sind wichtige zusätzliche Vorsichtsmaßnahmen, um Ihren Webspace besser zu filtern. Die meisten Websites verwenden jetzt HTTPS, und dies gilt auch für die Werbung. Von vielen Websites, wie youtube.com, facebook.com und x.com, ist es unmöglich, Werbung ohne HTTPS-Filterung zu entfernen. Lassen Sie also die Funktion _HTTPS filtern_ aktiviert, es sei denn, Sie haben einen triftigen Grund, dies nicht zu tun.
 
-![Network Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
+![Netzwerkeinstellungen \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 
 In diesem Modul können Sie das Kontrollkästchen „AdGuard als HTTP-Proxy verwenden“ aktivieren, um AdGuard als regulären HTTP-Proxy zu verwenden, der den gesamten Datenverkehr filtert. You can also enable the _Filter websites with EV certificates_ feature. Extended Validation (EV) SSL-Zertifikate bieten eine stärkere Sicherheitsgarantie; die Inhaber solcher Websites müssen ein gründliches und weltweit standardisiertes Identitätsprüfungsverfahren durchlaufen, das durch EV-Richtlinien definiert ist. Aus diesem Grund vertrauen einige Benutzer Websites mit solchen Zertifikaten und ziehen es vor, sie nicht zu filtern.
 
@@ -55,7 +55,7 @@ Der letzte Abschnitt ist AdGuard VPN gewidmet, einem nützlichen Tool, das Siche
 
 Wie funktioniert AdGuard VPN? Ohne auf technische Details einzugehen, können wir sagen, dass VPN einen sicheren verschlüsselten Tunnel zwischen dem Computer oder Mobilgerät und einem entfernten VPN-Server herstellt. Auf diese Weise bleibt die Vertraulichkeit der Daten und Ihre Anonymität gewahrt, da ein Dritter nur die IP-Adresse des VPN-Servers und nicht Ihre tatsächliche IP-Adresse sieht.
 
-**What AdGuard VPN does:**
+**Was AdGuard VPN leistet:**
 
 - verbirgt Ihren tatsächlichen Aufenthaltsort und hilft Ihnen, anonym zu bleiben
 - ändert Ihre IP-Adresse, um Ihre Daten vor Verfolgung zu schützen
