@@ -19,7 +19,7 @@ Besides that, AdGuard's Safari Web extension can be used to quickly manage AdGua
 
 ![Web extension menu *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/ext_adguard_en.png?1)
 
-> On iPads AdGuard's Safari Web extension is accessible directly by tapping the AdGuard icon in the browser's address bar.
+> On iPads, AdGuard's Safari web extension can be accessed directly by tapping the AdGuard icon in the browser's address bar.
 
 You will see the following list of options:
 
