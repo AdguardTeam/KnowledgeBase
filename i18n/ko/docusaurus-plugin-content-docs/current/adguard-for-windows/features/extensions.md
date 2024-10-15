@@ -9,7 +9,7 @@ sidebar_position: 3
 
 :::
 
-AdGuard는 [유저스크립트 관리자](/general/extensions) 역할을 수행하여 웹사이트 기능을 크게 확장할 수 있습니다. AdGuard 사용자는 자체 스크립트를 추가할 수 있을 뿐만 아니라 기존 스크립트를 관리할 수도 있습니다.
+AdGuard can significantly extend website functionality by working as a [userscript manager](/general/extensions.md). AdGuard users can add their own scripts as well as manage existing ones.
 
 ![확장 프로그램 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 

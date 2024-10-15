@@ -11,14 +11,15 @@ sidebar_position: 3
 
 ## Что оно делает
 
-По умолчанию, Safari предоставляет блокировщикам контента только базовые инструменты. Эти инструменты не позволяют добиться уровня блокировки, который доступен блокировщикам на других операционных системах (Windows, Mac, Android). Например, приложения AdGuard для других платформ могут использовать такие мощные средства борьбы против рекламы, как [CSS-правила](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [CSS-селекторы](/general/ad-filtering/create-own-filters#extended-css-selectors) и [скриптлеты](/general/ad-filtering/create-own-filters#scriptlets). К сожалению, эти инструменты совершенно незаменимы при работе со сложной рекламой, такой как, например, видеореклама в YouTube.
+By default, Safari provides only basic tools for content blockers. These tools don't offer the level of performance found in content blockers on other operating systems (Windows, Mac, Android). For example, AdGuard apps on other platforms can use such powerful anti-ad weapons as [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets). Unfortunately, these utilities are absolutely irreplaceable when dealing with more complex cases, such as pre-roll ads on YouTube.
 
 Веб-расширение AdGuard для Safari дополняет AdGuard, давая ему возможность применять все эти типы правил фильтрации.
 
 Помимо этого, веб-расширение AdGuard для Safari может быть использовано для управления приложением AdGuard для iOS прямо из браузера. Нажмите на кнопку *Расширения* — это иконка с пазлом, которая может быть расположена левее или правее адресной строки, в зависимости от типа вашего устройства. Найдите в списке расширений **AdGuard** и нажмите на него.
 
 ![Меню веб-расширения *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/ext_adguard_ru.png)
-> На устройствах iPad веб-расширение AdGuard для Safari доступно напрямую — просто нажмите на иконку AdGuard в адресной строке браузера.
+
+> On iPads, AdGuard's Safari web extension can be accessed directly by tapping the AdGuard icon in the browser's address bar.
 
 Вы увидите следующий список опций:
 
@@ -56,7 +57,7 @@ sidebar_position: 3
 
 ### В Safari
 
-Вы также можете включить расширение AdGuard прямо в браузере Safari. Для этого нажмите кнопку *Расширения* (если рядом с адресной строкой нет кнопки Расширения, нажмите кнопку `aA`).
+You can also enable the AdGuard extension from the Safari browser. To do it, tap *Extensions* (if you don't see it next to the address bar, tap the `aA` icon).
 
 ![В Safari коснитесь значка aA * mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari1_ru.png)
 

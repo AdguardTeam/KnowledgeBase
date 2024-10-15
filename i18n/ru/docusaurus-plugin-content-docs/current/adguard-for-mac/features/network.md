@@ -15,13 +15,13 @@ sidebar_position: 9
 
 ### Автоматически фильтровать трафик приложений
 
-By default, AdGuard blocks ads and trackers in most browsers ([Tor Browser is an exception](/adguard-for-mac/solving-problems/tor-filtering)). Эта настройка позволяет AdGuard блокировать рекламу и в приложениях.
+По умолчанию AdGuard блокирует рекламу и трекеры в большинстве браузеров ([за исключением Tor Browser](/adguard-for-mac/solving-problems/tor-filtering)). Эта настройка позволяет AdGuard блокировать рекламу и в приложениях.
 
 Чтобы управлять отфильтрованными приложениями, нажмите _Приложения_.
 
 ### Фильтровать HTTPS-протокол
 
-This setting allows AdGuard to filter the secure HTTPS protocol, which is currently used by most websites and apps. By default, websites with potentially sensitive information, such as banking services, are not filtered. Чтобы управлять исключениями HTTPS, нажмите _Исключения_.
+Этот параметр позволяет AdGuard фильтровать защищённый HTTPS-протокол, который в настоящее время используется большинством сайтов и приложений. По умолчанию сайты с потенциально конфиденциальной информацией, например банковские сервисы, не фильтруются. Чтобы управлять исключениями HTTPS, нажмите _Исключения_.
 
 По умолчанию AdGuard не фильтрует сайты с сертификатами Extended Validation (EV). При необходимости вы можете включить опцию _Фильтровать сайты с EV-сертификатами_.
 
