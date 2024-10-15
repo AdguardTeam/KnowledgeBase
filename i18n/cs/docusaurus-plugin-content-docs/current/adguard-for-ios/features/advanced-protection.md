@@ -9,7 +9,7 @@ Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který
 
 :::
 
-V systému iOS 15 přidala společnost Apple podporu pro webová rozšíření Safari a my jsme zase přidali nový modul _Pokročilá ochrana_ do AdGuardu pro iOS. Umožňuje AdGuardu aplikovat pokročilá pravidla filtrování, jako jsou pravidla CSS, selektory CSS a skriptlety, a poradit si tak i se složitými reklamami, jako jsou reklamy YouTube.
+In iOS 15, Apple added support for Safari Web Extensions and we added a new _Advanced protection_ module to AdGuard for iOS. It allows AdGuard to apply advanced filtering rules, such as [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets) to deal with even the complex ads, such as YouTube ads.
 
 ![Advanced protection screen \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
 

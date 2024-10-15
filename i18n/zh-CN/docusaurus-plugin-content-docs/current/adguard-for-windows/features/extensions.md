@@ -9,7 +9,7 @@ sidebar_position: 3
 
 :::
 
-AdGuard 可作为[用户脚本管理器](/general/extensions)以显著扩展网站功能。 AdGuard 用户可以添加自己的脚本，也可以管理现有脚本。
+AdGuard can significantly extend website functionality by working as a [userscript manager](/general/extensions.md). AdGuard users can add their own scripts as well as manage existing ones.
 
 ![扩展 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 

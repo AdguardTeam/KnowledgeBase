@@ -1,6 +1,6 @@
 ---
 title: AdGuard를 설치하는 방법
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 설치하려는 AdGuard 앱 또는 확장 프로그램에 따라 다음 링크 중 하나를 클릭하여 관련 지침을 따르세요.

@@ -49,13 +49,19 @@ Les règles d'utilisation et les règles d'autorisation sont incluses dans chaqu
 
 ## AdGuard pour Safari
 
-*AdGuard pour Safari* active l'icône AdGuard à côté de la barre de recherche. Cette fonction est utile si vous souhaitez configurer rapidement la protection d'un site web particulier ou bloquer les publicités manuellement. Vous y trouverez également des règles avancées qui ne sont pas converties au format pris en charge par Safari. Cela inclut les règles CSS, les sélecteurs CSS et les scriptlets qui permettent à AdGuard de bloquer les publicités complexes, par exemple sur YouTube.
+*AdGuard for Safari activates the AdGuard icon next to the search bar. It's useful if you want to quickly set up protection for a specific website or block ads manually. It also contains advanced rules that aren't converted to the format supported by Safari. These include [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), which allow AdGuard to block complex ads, such as those on YouTube.
 
 ## Comment gérer les extensions Safari
 
-1. Ouvrez Safari et cliquez sur *Safari* dans le coin supérieur gauche de l'écran pour développer le menu. ![Paramètres Safari *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
-1. Cliquez sur *Paramètres...*
-1. Sélectionnez *Extensions*. ![Onglet Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
+1. Ouvrez Safari et cliquez sur *Safari* dans le coin supérieur gauche de l'écran pour développer le menu.
+
+    ![Paramètres Safari *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
+
+1. Click *Settings...*
+
+1. Sélectionnez *Extensions*.
+
+    ![Onglet Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
 ## Pourquoi AdGuard pour Safari nécessite une autorisation
 

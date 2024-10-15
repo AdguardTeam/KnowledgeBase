@@ -1,6 +1,6 @@
 ---
 title: 如何安装 AdGuard
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 根据您想安装的 AdGuard 应用程序或浏览器扩展，请按照以下不同的链接找到相关文章：
