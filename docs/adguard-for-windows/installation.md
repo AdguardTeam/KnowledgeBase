@@ -114,8 +114,8 @@ Besides running the advanced uninstaller in its user-interactive mode, you can a
 3. Use `/adblocker` to uninstall AdGuard for Windows. It should look like this:
 
    `Adguard.UninstallUtility.exe /console /adblocker`
-   
-5. You can also use `/advanced` to force the uninstaller to run in *Advanced mode* and `/settings` to force the uninstaller to remove user settings along with the application.
+
+4. You can also use `/advanced` to force the uninstaller to run in *Advanced mode* and `/settings` to force the uninstaller to remove user settings along with the application.
 
 :::note
 
