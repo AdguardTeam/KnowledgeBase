@@ -11,22 +11,22 @@ sidebar_position: 9
 
 :::note
 
-Both AdGuard for iOS with enabled Premium and AdGuard Pro block ads on Apple smartphones and tablets. They used to differ in functionality due to certain changes made to App Store review policies in the past, but now AdGuard with a purchased subscription and AdGuard Pro are identical in their functionality.
+iOS용 AdGuard(프리미엄 구독) 및 AdGuard Pro는 Apple 스마트폰 및 태블릿에서 광고를 차단합니다. 과거에는 App Store 리뷰 정책의 일부 변경으로 인해 기능이 달랐지만, 이제 AdGuard 유료 버전과 AdGuard Pro의 기능은 동일합니다.
 
 :::
 
-Premium AdGuard for iOS features several differences from the free version, including custom DNS settings. With these settings, you can block ads not only in Safari but in other apps too, protect your kids from adult content online, and keep your personal information safe from theft. There are other differences, too. Let’s explore them all in more detail.
+iOS용 프리미엄 AdGuard는 사용자 정의 DNS 설정을 포함하여 무료 버전과 몇 가지 차이점이 있습니다. 이러한 설정을 사용하면 Safari뿐만 아니라 다른 앱에서도 광고를 차단하고, 온라인 성인 콘텐츠로부터 자녀를 보호하며, 개인 정보를 유출되지 않도록 안전하게 보호할 수 있습니다. 다른 차이점도 있습니다. 이 차이점을 좀 더 자세히 살펴보겠습니다.
 
-1. The **DNS protection** module encrypts your DNS traffic to enhance privacy. It works across all apps and browsers, not just Safari, offering broad protection against ads and trackers.
+1. **DNS 보호** 모듈은 DNS 트래픽을 암호화하여 개인정보 보호를 강화합니다. Safari뿐만 아니라 모든 앱과 브라우저에서 작동하여 광고와 추적기로부터 기기를 보호합니다.
 
-   - **Custom DNS servers:** Choose from one of the popular DNS servers from our list or add your own custom server.
+   - **사용자 정의 DNS 서버:** 목록에서 인기 있는 DNS 서버 중 하나를 선택하거나 사용자 정의 서버를 추가하세요.
 
-   - **Family Protection:** The Internet isn’t always kid-friendly. With AdGuard Premium, you can switch to DNS providers that block adult content and other inappropriate material to keep your children safe online.
+   - **자녀 보호:** 인터넷이 항상 어린이 친화적인 것은 아닙니다. AdGuard 프리미엄을 사용하면 성인용 및 부적절한 콘텐츠를 차단하는 DNS 제공업체로 전환하여 자녀를 온라인에서 안전하게 보호할 수 있습니다.
 
-   - **Monitoring and flexible configuration:** Recent activity log allows you to view all DNS requests sent by your device and easily manage your traffic by adding websites to blocklist or allowlist with just a tap.
+   - **모니터링 및 유연한 구성:** 최근 활동 로그를 통해 기기에서 전송한 모든 DNS 요청을 확인하고 탭 한 번으로 차단 목록 또는 허용 목록에 웹사이트를 추가하여 트래픽을 손쉽게 관리할 수 있습니다.
 
-2. **Advanced protection** lets you use advanced filtering rules to block more complex ads that would be left unblocked otherwise.
+2. **고급 보호** 기능은 고급 필터링 규칙을 사용하여 다른 방법으로는 차단되지 않는 더 복잡한 광고를 차단할 수 있습니다.
 
-3. **More filter options:** When purchasing AdGuard Premium, you get access to custom filters and a security filter category, where you can choose from over 50 filters, including AdGuard’s and other popular lists.
+3. **더 많은 필터 옵션:** AdGuard 프리미엄을 구매하면 사용자 정의 필터와 보안 필터 카테고리를 이용할 수 있으며, AdGuard 및 기타 인기 목록을 포함한 50개 이상의 필터 중에서 선택할 수 있습니다.
 
-Access these features by [purchasing a license](https://adguard.com/license.html).
+[라이선스를 구매](https://adguard.com/license.html)하면 이러한 기능을 이용할 수 있습니다.

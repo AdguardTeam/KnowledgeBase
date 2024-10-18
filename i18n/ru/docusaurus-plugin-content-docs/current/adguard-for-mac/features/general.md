@@ -29,7 +29,7 @@ This feature prevents AdGuard from blocking [search ads and self-promotions on w
 
 ### Launch AdGuard at login
 
-This feature automatically launches AdGuard automatically after you restart your computer. This helps keep AdGuard protection active without having to manually open the app.
+This feature automatically launches AdGuard automatically after you restart your computer. Это помогает поддерживать защиту AdGuard включённой без необходимости вручную открывать приложение.
 
 ### Скрыть иконку меню
 
@@ -37,4 +37,4 @@ This feature hides AdGuard’s icon from the menu bar but keeps AdGuard running 
 
 ### Белый список
 
-Websites added to this list aren’t filtered. You can also access allowlisted websites from _User rules_.
+Websites added to this list aren’t filtered. Вы также можете получить доступ к сайтам, включённым в разрешённый список, из _Правил пользователя_.

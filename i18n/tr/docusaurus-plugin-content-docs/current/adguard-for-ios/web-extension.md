@@ -11,14 +11,15 @@ AdGuard'ın Safari Web uzantısı, iOS 15'in yeni özelliklerinden yararlanan bi
 
 ## What it does
 
-By default, Safari provides only basic tools to content blockers. These tools don't allow the level of performance that can be found in content blockers on other operating systems (Windows, Mac, Android). For example, AdGuard apps on other platforms can use such effective weapons against ads as [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets). Unfortunately, these instruments are absolutely irreplaceable when dealing with more complex cases such as pre-roll ads on YouTube, for example.
+Safari, varsayılan olarak içerik engelleyiciler için yalnızca temel araçlar sağlar. Bu araçlar, diğer işletim sistemlerindeki (Windows, Mac, Android) içerik engelleyicilerde bulunan performans düzeyini sunmaz. For example, AdGuard apps on other platforms can use such powerful anti-ad weapons as [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets). Ne yazık ki bu araçlar, YouTube'daki önce gösterilen reklamlar gibi daha karmaşık durumlarla uğraşırken kesinlikle yeri doldurulamaz.
 
 AdGuard's Safari Web extension compliments AdGuard by giving it the ability to employ these types of filtering rules.
 
 Besides that, AdGuard's Safari Web extension can be used to quickly manage AdGuard for iOS right from the browser. Tap the *Extensions* button — it's the one with a jigsaw icon, depending on your device type it may be located to the left or to the right of the address bar. Find **AdGuard** in the list and tap it.
 
 ![Web uzantısı menüsü *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/ext_adguard_en.png?1)
-> iPad'lerde AdGuard'ın Safari Web uzantısına, tarayıcının adres çubuğundaki AdGuard simgesine dokunarak doğrudan erişilebilir.
+
+> iPad'lerde, AdGuard'ın Safari web uzantısına tarayıcının adres çubuğundaki AdGuard simgesine dokunarak doğrudan erişilebilir.
 
 Aşağıdaki seçenekler listesini göreceksiniz:
 
@@ -56,7 +57,7 @@ Tap it, then toggle the switch. On the same screen, set the *All Websites* permi
 
 ### In Safari
 
-Alternatif olarak, AdGuard uzantısını Safari tarayıcısından da açabilirsiniz. Tap the *Extensions* button (if you don't see it next to the address bar, tap the `aA` icon).
+Ayrıca, AdGuard uzantısını Safari tarayıcısından da etkinleştirebilirsiniz. Bunu yapmak için *Uzantılar* öğesine dokunun (adres çubuğunun yanında görmüyorsanız `aA` simgesine dokunun).
 
 ![Safari'de aA simgesine dokunun *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari1_en.png)
 

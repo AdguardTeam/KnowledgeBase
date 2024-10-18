@@ -9,8 +9,8 @@ sidebar_position: 5
 
 :::
 
-## Advanced privacy protection
+## 高度な追跡防止
 
 ![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/stealth.png)
 
-_Advanced privacy protection_ protects your privacy by deleting cookies, UTM tags, online counters, and analytics systems. It doesn’t let websites collect your IP address, device and browser parameters, search queries, and personal information. [Learn more about Stealth Mode settings](/general/stealth-mode)
+「_高度な追跡防止_」は、Cookie、UTMタグ、オンラインカウンター、および分析システムを削除することにより、あなたのプライバシーを保護します。 ウェブサイトがあなたのIPアドレス、デバイスやブラウザのパラメータ、検索クエリ、個人情報を収集するのを防ぎます。 [ステルスモード設定の詳細についてはこちら](/general/stealth-mode)

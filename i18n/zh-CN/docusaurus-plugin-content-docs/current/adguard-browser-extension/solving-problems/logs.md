@@ -15,7 +15,7 @@ sidebar_position: 1
 
    ![开发者模式 \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
 
-4. Click `background.html`.
+4. 点击`background.html`。
 
    ![背景 \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
 

@@ -9,7 +9,7 @@ sidebar_position: 3
 
 :::
 
-AdGuard может значительно расширить функциональность сайта, работая в качестве [менеджера пользовательских скриптов](/general/userscripts). Пользователи AdGuard могут добавлять собственные скрипты, а также управлять существующими.
+AdGuard can significantly extend website functionality by working as a [userscript manager](/general/extensions.md). AdGuard users can add their own scripts as well as manage existing ones.
 
 ![Extensions \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 

@@ -9,7 +9,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-AdGuard can significantly broaden website functionality working as a [user script manager](/general/userscripts). AdGuard Kullanıcıları kendi betiklerini ekleyebilir ve mevcut olanları yönetebilir.
+AdGuard can significantly extend website functionality by working as a [userscript manager](/general/extensions.md). AdGuard users can add their own scripts as well as manage existing ones.
 
 ![Extensions \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 

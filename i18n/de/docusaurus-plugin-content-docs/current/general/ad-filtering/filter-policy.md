@@ -41,14 +41,14 @@ AdGuard-Filter zum Blockieren von Werbung umfassen:
 - AdGuard Basisfilter
 - AdGuard-Filter gegen mobile Werbung
 - Regionale Filter nach Sprachprinzip — Chinesisch, Niederländisch, Französisch, Deutsch, Japanisch, Russisch, Spanisch/Portugiesisch, Türkisch, und Ukrainisch
-- AdGuard Quick Fixes filter
+- AdGuard Quick Fixes-Filter
 
 ### Der Zweck dieser Filter
 
 - **Der Basisfilter** blockiert Werbung auf englischsprachigen Websites und solchen, für die es keinen eigenen Filter gibt. Er enthält auch allgemeine Filterregeln, die für alle Websites unabhängig von der Sprache gelten
 - **Filter gegen mobile Werbung** blockiert Werbung auf mobilen Versionen von Websites und in mobilen Apps. Es gibt keine Unterteilung nach Sprachen
 - **Sprachspezifische Filter** folgen der gleichen Politik wie der **Basisfilter**, sind aber auf Websites in bestimmten Sprachen beschränkt
-- **Quick Fixes filter** used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension.
+- **Quick-Fixes-Filter** zur schnellen Behebung kritischer Probleme bei der Filterung von Inhalten auf beliebten Websites ohne Aktualisierung der MV3-Erweiterung.
 
 Das Ziel von Werbeblockern ist es, alle Arten von Werbung auf Websites, in Apps und auf bestimmten Geräten, die Werbung aus dem Internet laden können, zu blockieren:
 

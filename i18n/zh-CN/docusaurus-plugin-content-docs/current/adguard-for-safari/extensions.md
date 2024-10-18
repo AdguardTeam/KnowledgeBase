@@ -49,13 +49,19 @@ AdGuard 使用过滤规则阻止网站上的广告、跟踪器和其他骚扰。
 
 ## AdGuard Safari版
 
-「*AdGuard Safari 版*」可启用搜索栏旁边的 AdGuard 图标。 如果用户想在特定网站上快速设置保护或手动屏蔽广告，AdGuard Safari 版就非常有用。 它还包含未转换为 Safari 支持格式的高级规则， 包括 CSS 规则、CSS 选择器以及允许 AdGuard 阻止复杂广告（例如 YouTube 上的广告）的脚本程序。
+*AdGuard for Safari activates the AdGuard icon next to the search bar. It's useful if you want to quickly set up protection for a specific website or block ads manually. It also contains advanced rules that aren't converted to the format supported by Safari. These include [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), which allow AdGuard to block complex ads, such as those on YouTube.
 
 ## 如何管理 Safari 扩展程序
 
-1. 打开 Safari，单击屏幕左上角的「*Safari*」展开菜单。 ![Safari 设置 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
-1. 单击「*设置...*」
-1. 选择「*扩展*」 ![扩展标签](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
+1. 打开 Safari，单击屏幕左上角的「*Safari*」展开菜单。
+
+    ![Safari 设置 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
+
+1. Click *Settings...*
+
+1. 选择「*扩展*」
+
+    ![扩展标签](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
 ## 为什么 Safari 版 AdGuard 需要权限
 

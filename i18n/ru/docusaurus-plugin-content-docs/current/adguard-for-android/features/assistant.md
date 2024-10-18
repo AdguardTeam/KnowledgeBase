@@ -38,7 +38,7 @@ sidebar_position: 5
 
 Вы перейдёте в приложение AdGuard, где увидите подробную информацию о последних 10 тысячах запросов, сделанных Chrome.
 
-![App recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![Недавняя активность в приложении \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
 
 #### Статистика приложения
 

@@ -19,7 +19,7 @@ HTTP-трафик будет фильтроваться в любом случа
 
 ### Windows {#windows}
 
-1. Note the IP address of your desktop computer with AdGuard installed.
+1. Узнайте IP-адрес вашего десктопного компьютера, на котором установлен AdGuard.
 
 1. Убедитесь, что защита AdGuard включена. На компьютере с Windows установите флажок **Использовать AdGuard как HTTP-прокси** во вкладке **Сеть** в его настройках. For Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
@@ -75,7 +75,7 @@ HTTP-трафик будет фильтроваться в любом случа
 
 1. Введите пароль администратора и нажмите **Изменить связку ключей**.
 
-1. Go to **Spotlight** (the search icon in the top right corner), type in `Keychain Access`, and then select **Keychain Access** from the search results.
+1. Перейдите в **Spotlight** (значок поиска в правом верхнем углу), введите `Связка ключей` и выберите **Связка ключей** в результатах поиска.
 
 1. В разделе *Система* выделите добавленный сертификат.
 

@@ -47,6 +47,6 @@ To avoid similar ads in the future, you can also block push notifications direct
 
 ### On Mac
 
-1. Open AdGuard. Go to _Preferences_.
+1. Open AdGuard. Перейдите в _Настройки_.
 2. In the _Stealth Mode_ tab, go to _Browser API_.
 3. Enable _Block Push API_.

@@ -24,7 +24,7 @@ sidebar_position: 2
 
 Из контекстного меню вы также можете попасть в статистику приложения.
 
-![App management in Chrome. Контекстное меню \*mobile\_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![Управление приложениями: Chrome. Контекстное меню \*mobile\_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
 ### Непроблемные и проблемные приложения
 
