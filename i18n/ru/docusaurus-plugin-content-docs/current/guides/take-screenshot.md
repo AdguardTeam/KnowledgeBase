@@ -48,21 +48,21 @@ sidebar_position: 5
 
 На некоторых ноутбуках необходимо удерживать клавишу *Fn*, а затем нажимать *PrtScn*.
 
-*Please note: The PrtScn (Print Screen) key may be abbreviated differently on different keyboards — PrntScrn, PrtScn, PrtScr, or PrtSc.*
+*Обратите внимание: клавиша PrtScn (Print Screen) может быть по-разному обозначена на различных клавиатурах — PrntScrn, PrtScn, PrtScr или PrtSc.*
 
 Windows сделает снимок всего экрана и скопирует его в буфер обмена.
 
-To take a screenshot of an active window, use the following shortcut keys:
+Чтобы сделать снимок активного окна, используйте следующее сочетание клавиш:
 
 - **Нажмите и удерживайте клавишу *Alt* и нажмите *PrtScn* (или *Fn + Alt + PrtScn * на некоторых ноутбуках)**
 
-To take a screenshot of a specific area, use the following shortcut keys:
+Чтобы сделать снимок определённой области экрана, используйте следующее сочетание клавиш:
 
 - ***Нажмите сочетание клавиш ***Win + Shift + S******
 
-После того, как вы сделаете скриншот, он сохранится в буфере обмена. In most cases, you will be able to paste it into a document that you are currently editing by using the *Ctrl + V* shortcut. Или, если вам нужно сохранить скриншот как файл, откройте стандартную программу **Paint** (или любую другую, работающую с изображениями). Paste your screenshot there using the same shortcut keys or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
+После того, как вы сделаете скриншот, он сохранится в буфере обмена. Вы сможете вставить его в документ, с которым работаете, используя сочетание клавиш *Ctrl + V*. Или, если вам нужно сохранить скриншот как файл, откройте стандартную программу **Paint** (или любую другую, работающую с изображениями). Вставьте снимок экрана используя ту же комбинацию клавиш или нажав кнопку Вставить (обычно в левом верхнем углу страницы), а затем сохраните его.
 
-Windows 8 and 10 let you take a screenshot very quickly with the *Win + PrtScn* shortcut keys. Как только вы нажмете пки, снимок экрана будет автоматически сохранён в виде файла в вашей папке *Картинки* → *Папка скриншотов*.
+Операционные системы Windows 8 и 10 позволяют быстро создавать скриншоты с помощью сочетания клавиш *Win + PrtScn*. Как только вы нажмете пки, снимок экрана будет автоматически сохранён в виде файла в вашей папке *Картинки* → *Папка скриншотов*.
 
 Существует также специальная программа *Ножницы* для создания скриншотов, которая запускается из меню *Пуск > Все программы > Стандартные*. Ножницы позволяют сделать скриншот любой области экрана или всего экрана целиком. После создания скриншота с помощью данной программы вы сможете редактировать изображение и сохранить его в любой папке вашего компьютера.
 
@@ -70,26 +70,26 @@ Windows 8 and 10 let you take a screenshot very quickly with the *Win + PrtScn* 
 
 ### macOS {#mac}
 
-To take a screenshot on Mac, use the following shortcut keys:
+Чтобы сделать снимок экрана на Mac, используйте следующее сочетание клавиш:
 
 - ***Нажмите и удерживайте ***⌘ Cmd + Shift + 3******
 
 Ваш компьютер зафиксирует изображение всего экрана и сохранит его на рабочем столе.
 
-To take a screenshot of an active window, use the following shortcut keys:
+Чтобы сделать снимок активного окна, используйте следующее сочетание клавиш:
 
 - **Нажмите и удерживайте *⌘ Cmd + Shift + 4 + пробел*. Указатель мыши изменится на значок камеры. Щёлкните по окну, чтобы захватить его. Чтобы отменить создание скриншота, нажмите Esc**
 
-To take a screenshot of a specific area, use the following shortcut keys:
+Чтобы сделать снимок определённой области экрана, используйте следующее сочетание клавиш:
 
-- ***Press ***⌘ Cmd + Shift + 5******. Перетащите перекрестие, чтобы выделить нужную область. Release your mouse or trackpad to take a screenshot, press Esc to cancel it.
+- ***Нажмите ***⌘ Cmd + Shift + 5******. Перетащите перекрестие, чтобы выделить нужную область. Отпустите кнопку миши или трекпада, чтобы сделать снимок экрана, для отмены нажмите кнопку Esc.
 
-To take a screenshot of the *Touch Bar* (MacBook Pro), use the following shortcut keys:
+Чтобы сделать скриншот *Touch Bar* (на MacBook Pro), используйте следующие сочетания клавиш:
 
 - ***Нажмите сочетание клавиш ***⌘ Cmd + Shift + 6******
 
 Ваш компьютер зафиксирует изображение всего *Touch Bar* и сохранит его как файл на вашем рабочем столе.
 
-To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the shortcut keys above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* shortcut keys.
+Чтобы скопировать снимок экрана в буфер обмена вместо сохранения, нажмите и удерживайте клавишу *Ctrl * вместе с любым из вышеперечисленных сочетаний клавиш. Затем вставьте снимок экрана (из буфера обмена) в документ или изображение, которое вы редактируете, используя сочетание клавиш *Cmd + V*.
 
 Вы также можете сделать скриншот, используя **Preview** и выбрав **Сделать скриншот** (выбранной зоны, окна или всего экрана). Пользуясь **Preview** вы можете сохранять файлы в форматах JPG, TIFF, PDF и др.

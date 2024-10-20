@@ -43,7 +43,7 @@ sidebar_position: 2
 
 1. В AdGuard DNS перейдите в _Настройки сервера_ → _Устройства_ → _Настройки_ и измените DNS-сервер на сервер с аутентификацией. Если вы нажмёте _Запретить другие протоколы_, подключиться к вашему серверу через другие протоколы будет невозможно. Скопируйте сгенерированный адрес.
 
-![DNS-over-HTTPS with authentication](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
+![DNS-over-HTTPS с аутентификацией](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
 
 1. В AdGuard для iOS перейдите на вкладку _Защита_ → _DNS-защита_ → _DNS-сервер_ и вставьте сгенерированный адрес в поле _Добавить пользовательский DNS-сервер_. Сохраните и выберите новую конфигурацию.
 

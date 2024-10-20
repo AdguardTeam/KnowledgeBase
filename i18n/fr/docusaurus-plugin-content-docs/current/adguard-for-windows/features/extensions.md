@@ -9,7 +9,7 @@ Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonction
 
 :::
 
-AdGuard peut accroître considérablement les fonctionnalités des sites web en agissant comme un [gestionnaire de scripts utilisateur](/general/extensions). Les utilisateurs d'AdGuard peuvent ajouter leurs propres scripts et gérer les scripts existants.
+AdGuard can significantly extend website functionality by working as a [userscript manager](/general/extensions.md). AdGuard users can add their own scripts as well as manage existing ones.
 
 ![Extensions \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 

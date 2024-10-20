@@ -9,7 +9,7 @@ sidebar_position: 3
 
 :::
 
-在 iOS 15 中，Apple 添加了对 Safari Web Extensions 的支持，而我们又在 AdGuard iOS 版中添加了新的「高级保护」模块。 该模块允许 AdGuard 应用高级过滤规则，例如 CSS 规则、CSS 选择器和 Scriptlet，因此甚至可以处理复杂的广告，例如 YouTube 广告。
+In iOS 15, Apple added support for Safari Web Extensions and we added a new _Advanced protection_ module to AdGuard for iOS. It allows AdGuard to apply advanced filtering rules, such as [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets) to deal with even the complex ads, such as YouTube ads.
 
 ![高级保护 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
 

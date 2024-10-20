@@ -30,7 +30,7 @@ sidebar_position: 4
 
 ![О программе \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 
-In addition to information about the current version of the program, this tab provides some useful links to Licese agreement, Privacy policy, Acknowledgements, Discussions, and Version history pages.
+В дополнение к информации о текущей версии программы, эта вкладка содержит несколько полезных ссылок на страницы Лицензионного соглашения, Политики конфиденциальности, Благодарностей, Обсуждений и Истории версий.
 
 ### Проверить обновления
 

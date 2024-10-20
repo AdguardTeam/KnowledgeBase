@@ -23,7 +23,7 @@ AdGuard стремится защищать вашу конфиденциаль�
 
 :::
 
-### Debug logs {#debug-logs}
+### Отладочные логи {#debug-logs}
 
 1. Откройте настройки AdGuard. Перейдите в раздел *Общие настройки*, прокрутите вниз до конца экрана и измените *Уровень логирования* на *Подробный*.
 
@@ -57,9 +57,9 @@ AdGuard стремится защищать вашу конфиденциаль�
 
 1. Откройте консоль (наберите `cmd` в стартовой панели).
 
-1. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard v7.16 for Windows or later.
+1. Запустите приложение командой `C:\"Program Files"\Adguard\Adguard.exe /trace` независимо от разрядности Windows, если у вас установлен AdGuard 7.16 для Windows или новее.
 
-If you have an older version of AdGuard for Windows, run the application with the command C:\"Program Files (x86)"\Adguard\Adguard.exe /trace if you are using 64-bit Windows, and C:\"Program Files"\Adguard\Adguard.exe /trace if you are using 32-bit.
+Если у вас установлена старая версия AdGuard для Windows, запустите приложение командой C:\"Program Files (x86)"\Adguard\Adguard.exe /trace, если вы используете 64-битную Windows, и C:\"Program Files"\Adguard\Adguard.exe /trace, если 32-битную.
 
 1. Воспроизведите ошибку.
 

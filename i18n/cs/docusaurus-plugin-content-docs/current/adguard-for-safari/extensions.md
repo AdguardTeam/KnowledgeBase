@@ -49,13 +49,19 @@ Uživatelská pravidla a pravidla seznamu povolených jsou součástí každého
 
 ## AdGuard pro Safari
 
-*AdGuard pro Safari* aktivuje ikonu AdGuardu vedle vyhledávací lišty. Je to užitečné, pokud chcete rychle nastavit ochranu na konkrétním webu nebo ručně blokovat reklamy. Obsahuje také pokročilá pravidla, která nejsou převedena do formátu podporovaného prohlížečem Safari. To zahrnuje pravidla CSS, selektory CSS a skriptlety, které umožňují AdGuardu blokovat složité reklamy — například na YouTube.
+*AdGuard for Safari activates the AdGuard icon next to the search bar. It's useful if you want to quickly set up protection for a specific website or block ads manually. It also contains advanced rules that aren't converted to the format supported by Safari. These include [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), which allow AdGuard to block complex ads, such as those on YouTube.
 
 ## Jak spravovat rozšíření Safari
 
-1. Otevřete Safari a kliknutím na *Safari* v levém horním rohu obrazovky rozbalte nabídku. ![Safari settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
-1. Klikněte na *Natavení...*
-1. Vyberte *Rozšíření*. ![Extensions tab](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
+1. Otevřete Safari a kliknutím na *Safari* v levém horním rohu obrazovky rozbalte nabídku.
+
+    ![Safari settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
+
+1. Click *Settings...*
+
+1. Vyberte *Rozšíření*.
+
+    ![Extensions tab](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
 ## Proč vyžaduje AdGuard pro Safari oprávnění
 

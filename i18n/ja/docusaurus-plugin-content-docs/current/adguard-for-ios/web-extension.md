@@ -11,14 +11,15 @@ AdGuardのSafariウェブ拡張機能は、iOS 15の新機能を活用して AdG
 
 ## ウェブ拡張機能の効果
 
-デフォルトでは、Safariはコンテンツブロッカーにベーシックなツールしか提供していません。 これらのツールでは、他のオペレーティング・システム（Windows、Mac、Android）のコンテンツブロッカーにのようなレベルのパフォーマンスは発揮できません。 たとえば、他のプラットフォーム上のAdGuardアプリは、 [CSSルール](/general/ad-filtering/create-own-filters#cosmetic-css-rules)、 [CSSセレクター](/general/ad-filtering/create-own-filters#extended-css-selectors)、 [scriptlets](/general/ad-filtering/create-own-filters#scriptlets)などといった効果的な広告対策武器を使用できます。 複雑なケース（YouTubeのプリロール広告など）を扱う場合、こうした手段は絶対に代用できません。
+By default, Safari provides only basic tools for content blockers. These tools don't offer the level of performance found in content blockers on other operating systems (Windows, Mac, Android). For example, AdGuard apps on other platforms can use such powerful anti-ad weapons as [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets). Unfortunately, these utilities are absolutely irreplaceable when dealing with more complex cases, such as pre-roll ads on YouTube.
 
 AdGuard の Safari Web 拡張機能は、これらのタイプのフィルタリングルールの適用を可能にすることで、AdGuard for iOS を補完します。
 
 さらに、AdGuard の Safari Web 拡張機能は、ブラウザからiOS用AdGuardの管理を可能にします。 Safariで*拡張機能*ボタンをタップします。これはジグソー🧩アイコンのボタンで、デバイスの種類に応じて、アドレスバーの左側または右側に配置されている場合があります。 一覧で **AdGuard** を見つけてタップします。
 
 ![ウェブ拡張機能メニュー *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/ext_adguard_ja.png?1)
-> iPadでは、ブラウザのアドレスバーにあるAdGuardアイコンをタップすることで、AdGuardのSafariウェブ拡張機能に直接アクセスできます。
+
+> On iPads, AdGuard's Safari web extension can be accessed directly by tapping the AdGuard icon in the browser's address bar.
 
 以下のオプションのリストが表示されます:
 
@@ -56,7 +57,7 @@ AdGuard の Safari Web 拡張機能は、これらのタイプのフィルタリ
 
 ### Safari を使った手順
 
-SafariからWeb機能拡張を有効にすることもできます。 Safarアドレスバーの横の*拡張機能ボタン*（🧩）をタップします。（見つからない場合は、アドレスバーの横の「`ぁあ`」アイコンをタップします。
+You can also enable the AdGuard extension from the Safari browser. To do it, tap *Extensions* (if you don't see it next to the address bar, tap the `aA` icon).
 
 ![Safariでぁあアイコンをタップ *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari1_ja.png)
 

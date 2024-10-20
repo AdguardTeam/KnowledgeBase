@@ -38,4 +38,4 @@ To export or import a blocklist, open the context menu.
 
 ### Белый список
 
-Domains from this list aren’t filtered. To add a domain, click `+`. To export or import an allowlist, open the context menu.
+Домены из этого списка не фильтруются. To add a domain, click `+`. To export or import an allowlist, open the context menu.
