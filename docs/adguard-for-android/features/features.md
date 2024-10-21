@@ -47,7 +47,7 @@ Comparison of features between the free and paid versions.
 
 ## Integration with AdGuard VPN
 
-Information on how the app integrates with VPN services, allowing you to run both AdGuard and a AdGUard VPN at the same time without conflict, ensuring ad blocking and privacy protection along with VPN functionality.
+Information on how the app integrates with VPN services, allowing you to run both AdGuard and AdGuard VPN at the same time without conflict, ensuring ad blocking and privacy protection along with VPN functionality.
 
 [Integration with AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
 
