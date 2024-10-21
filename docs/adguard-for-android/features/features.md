@@ -17,7 +17,7 @@ Info on modules in the Protection tab: Ad blocking, Tracking protection, Annoyan
 
 ## App management
 
-AdGuard for Android offers app management features that allow you to control how AdGuard filters traffic for individual apps, providing options to block ads, trackers, or disable protection altogether for selected apps.
+AdGuard for Android offers app management features that allow you to control how AdGuard filters traffic for individual apps, providing options to block ads and trackers or disable protection for selected apps altogether.
 
 [App management](/adguard-for-android/features/app-management.md)
 
