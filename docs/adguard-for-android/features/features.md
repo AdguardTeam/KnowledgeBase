@@ -23,7 +23,7 @@ AdGuard for Android offers app management features that allow you to control how
 
 ## Statistics
 
-Detailed statistics on blocked ads, trackers, and saved traffic that allows s to monitor the app’s performance and protection efficiency over time.
+Detailed statistics on blocked ads, trackers, and saved traffic that allows us to monitor the app’s performance and protection efficiency over time.
 
 [Statistics](/adguard-for-android/features/statistics.md)
 
