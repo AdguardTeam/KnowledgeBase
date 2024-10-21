@@ -9,7 +9,7 @@ This article is about AdGuard for Mac, a multifunctional ad blocker that protect
 
 :::
 
-Here are some problems you may encounter and workarounds, as well as guides and instructions you may need.
+Here are some problems you may encounter and workarounds, guides, and instructions you may need.
 
 - [Manual certificate installation](/adguard-for-mac/solving-problems/manual-certificate-installation.md)
 - [Protection cannot be enabled](/adguard-for-mac/solving-problems/protection-cannot-be-enabled.md)
