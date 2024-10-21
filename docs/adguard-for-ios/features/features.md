@@ -59,6 +59,6 @@ Information on how the app integrates with VPN services, allowing you to run bot
 
 ## Free vs. full version
 
-Comparison of features between the free version and the paid version.
+Comparison of features between the free and paid versions.
 
 [Free vs. full version](/adguard-for-ios/features/free-vs-full.md)
