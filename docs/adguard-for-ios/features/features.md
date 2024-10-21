@@ -53,7 +53,7 @@ The article describes additional features, including widgets, auto-updates, and 
 
 ## Compatibility with AdGuard VPN
 
-Information on how the app integrates with VPN services, allowing you to run both AdGuard and a AdGUard VPN at the same time without conflict, ensuring ad blocking and privacy protection along with VPN functionality.
+Information on how the app integrates with VPN services, allowing you to run both AdGuard and AdGuard VPN at the same time without conflict, ensuring ad blocking and privacy protection along with VPN functionality.
 
 [Compatibility with AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 
