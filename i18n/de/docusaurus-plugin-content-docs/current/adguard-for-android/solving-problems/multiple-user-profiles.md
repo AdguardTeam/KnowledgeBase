@@ -19,15 +19,15 @@ If you try to reinstall AdGuard after an unsuccessful removal attempt, you will 
 
 Um dieses Problem zu lösen, müssen Sie die App für alle Benutzer deinstallieren: Gehen Sie zu Einstellungen → Alle Apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
 
-![Uninstall *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
+![Deinstallation *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 
-## Problems caused by using a Restricted Mode profile
+## Probleme, die durch die Verwendung eines Profils im eingeschränkten Modus verursacht werden
 
 The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. If you have such a profile, **AdGuard**, like other applications that use VPN, gets restrictions on selective filtering of VPN traffic. As a result, AdGuard cannot launch protection in a **local VPN mode**. Also, one of the reasons for this situation may be using **Dual App/Dual Messenger profile** on your device. Below are described the recommendations that you can apply when this problem occurs.
 
 ### Lösungen
 
-You have three ways to solve the issue:
+Sie haben drei Möglichkeiten, das Problem zu lösen:
 
 ### Option 1: Grant permissions to AdGuard using ADB
 
@@ -57,18 +57,18 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. If you're u
 
 1. Open **the command line** on your PC:
 
-    - **Cmd.exe** if you are using **Windows**;
-    - **Terminal** if you are using **macOS**;
+    - **Cmd.exe**, wenn Sie **Windows** verwenden;
+    - **Terminal**, wenn Sie **macOS** verwenden;
 
 1. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
 
 ### Option 2: Remove *restricted user account*
 
-About how to manage user accounts from an Android device you can [find here](https://support.google.com/a/answer/6223444?hl=en).
+Wie Sie Benutzerkonten von einem Android-Gerät aus verwalten können, erfahren Sie [hier](https://support.google.com/a/answer/6223444?hl=en).
 
 :::note
 
-In some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual messenger or Dual app features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
+In einigen Fällen werden eingeschränkte Benutzerkonten implizit erstellt und können nicht entfernt werden. For instance, when you use Dual messenger or Dual app features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
 
 :::
 
@@ -82,17 +82,17 @@ Owners of **LG** or **Samsung** phones may also encounter a similar issue. It ca
 
 ### Samsung
 
-- Open **Settings**;
-- Press **Advanced**;
-- Scroll down and press **Dual messenger**;
-- Disable the **Dual messenger** for all apps;
-- Lock the device for 5 minutes;
-- Unlock the screen and try again to create the VPN profile.
+- Öffnen Sie die **Einstellungen**;
+- Tippen Sie auf **Erweitert**;
+- Blättern Sie nach unten und tippen Sie auf **Dual messenger**;
+- Deaktivieren Sie **Dual Messenger** für alle Apps;
+- Sperren Sie das Gerät für 5 Minuten;
+- Entsperren Sie den Bildschirm und versuchen Sie erneut, das VPN-Profil zu erstellen.
 
 ### LG
 
-- Open **Settings**;
-- Choose **General** tab;
-- Scroll down and press **Dual app**;
-- Remove all apps from the list;
-- Reboot your device.
+- Öffnen Sie die **Einstellungen**;
+- Wählen Sie den Tab **Allgemein**;
+- Blättern Sie nach unten und tippen Sie auf **Dual app**;
+- Entfernen Sie alle Apps aus der Liste;
+- Starten Sie Ihr Gerät neu.

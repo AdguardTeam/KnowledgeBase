@@ -9,7 +9,7 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
 :::
 
-When using a web extension like AdGuard Browser Extension, there are certain restricted domains that prohibit access or permissions. Folglich ist es Werbeblocker-Erweiterungen nicht gestattet, mit dem Inhalt dieser Seiten zu interagieren oder ihn zu verändern. Mit anderen Worten: Sie dürfen Werbung und andere störende Elemente auf diesen Webseiten nicht sperren.
+Wenn Sie eine Web-Erweiterung wie AdGuard Browsererweiterung verwenden, gibt es bestimmte eingeschränkte Bereiche, die den Zugriff verbieten. Folglich ist es Werbeblocker-Erweiterungen nicht gestattet, mit dem Inhalt dieser Seiten zu interagieren oder ihn zu verändern. Mit anderen Worten: Sie dürfen Werbung und andere störende Elemente auf diesen Webseiten nicht sperren.
 
 ## Einschränkungen für Chromium-Browser
 

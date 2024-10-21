@@ -1,5 +1,5 @@
 ---
-title: Как установить
+title: Установка
 sidebar_position: 3
 ---
 

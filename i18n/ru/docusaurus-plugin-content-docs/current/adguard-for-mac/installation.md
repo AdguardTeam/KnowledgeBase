@@ -1,5 +1,5 @@
 ---
-title: 'Установка и удаление'
+title: 'Установка'
 sidebar_position: 2
 ---
 

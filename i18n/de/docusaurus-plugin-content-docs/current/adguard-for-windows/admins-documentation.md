@@ -39,16 +39,16 @@ If you want to install AdGuard on a Windows 7 computer, make sure that it has .N
 
 :::note
 
-If you have installed AdGuard for Windows from an MSI file, AdGuard will not be updated automatically. To allow manual updates:
+If you have installed AdGuard for Windows from an MSI file, AdGuard will not be updated automatically. So erlauben Sie manuelle Aktualisierungen:
 
 - In versions released after v7.16, delete the `ForbidCheckUpdates` parameter or set its value to `NO` (case-insensitive) in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
 
 - In v7.16 and earlier versions, set to `YES` (case-insensitive) the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` key on x86 OS or `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key on x64 OS. Any other value or no value for this parameter will disable automatic updates.
 
-Please note that such installation of the application and manual updates are not recommended and can cause technical problems.
+Bitte beachten Sie, dass eine solche Installation der Anwendung und das manuelle Aktualisieren nicht empfohlen wird und technische Probleme verursachen kann.
 
 :::
 
 ## 5. Testen Sie Ihre Installation {#installation-test}
 
-On a target machine, launch AdGuard. Open the license screen to check that it is using the specified license. You might need to click "Refresh status" to make AdGuard validate the license key.
+Starten Sie AdGuard auf einem Zielrechner. Öffnen Sie den Bildschirm mit den Lizenzinformationen, um zu überprüfen, ob die angegebene Lizenz verwendet wird. You might need to click "Refresh status" to make AdGuard validate the license key.

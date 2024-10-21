@@ -1,6 +1,6 @@
 ---
 title: その他の機能とオプション
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 :::info

@@ -221,7 +221,7 @@ Unter Android 11 verhindert Samsung standardmäßig, dass Apps (einschließlich 
 
 - Check that **Phone settings** → **Apps** → **Sleep as Android** → **Battery** → **Background restriction** is set to **App can use battery in background** for AdGuard.
 
-- Remove AdGuard from Sleeping apps. Um dies zu tun:
+- Entfernen Sie AdGuard aus Apps im Ruhezustand. Um dies zu tun:
 
     1. Go to **Phone settings** → **Device care**
 
@@ -255,7 +255,7 @@ For early Samsung devices, there is no huge need for setting up the background o
 
  ![Samsung Einstellungen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_2.png)
 
-- Tap on the lock icon
+- Tippen Sie auf das Schloss-Symbol
 
  ![Samsung Einstellungen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_3.png)
 
@@ -285,7 +285,7 @@ This feature may or may not be available for all devices or may be labeled diffe
 
     Also for reliable background processes you may need to uninstall **PowerGenie** as detailed below.
 
-### EMUI 9+ devices and PowerGenie
+### EMUI 9+ Geräte und PowerGenie
 
 :::note
 
@@ -305,11 +305,11 @@ Unfortunately, this is a system app that can only be fully uninstalled using ADB
 
 :::
 
-**You need to**:
+**Vorgehensweise**:
 
 It is not confirmed, but it might be possible to just disable PowerGenie in **Phone settings** → **Apps**. If this setting is present in your device's settings, you may skip the following steps. However, it would need to be re-applied every time you reboot your device. If there is no such setting, follow this instruction:
 
-1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1. [Installieren Sie ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) auf Ihrem Computer;
 
 1. Connect your phone with a data cable;
 
@@ -352,11 +352,11 @@ Old Huawei devices are the easiest to set up, it is enough to perform two simple
 
 - Tap the **Recent tasks** button:
 
-    ![Huawei recent apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
+    ![Zuletzt verwendete Huawei-Apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
 
-- Tap on the lock icon:
+- Tippen Sie auf das Schloss-Symbol:
 
-    ![Huawei lock *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
+    ![Huawei sperren *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
 
 Besides, to set up the background work of AdGuard more effectively, you should open device settings and do the following:
 
@@ -379,7 +379,7 @@ Nokia devices running Android 9+ have **The Evenwell Power saver** disabled, whi
 
 ### Nokia 1 (Android Go)
 
-1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1. [Installieren Sie ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) auf Ihrem Computer;
 
 1. Connect your phone with a data cable;
 
@@ -395,7 +395,7 @@ Nokia devices running Android 9+ have **The Evenwell Power saver** disabled, whi
 
 On these devices there is a task killer called **DuraSpeed** that terminates all background apps. It can't be uninstalled or disabled by regular means. These actions require ADB, and even then, when disabled, DuraSpeed will re-enable itself on reboot. You need a tasker app like [MacroDroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid) for automatic DuraSpeed's disabling.
 
-1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1. [Installieren Sie ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) auf Ihrem Computer;
 
 1. Connect your phone with a data cable;
 
@@ -433,9 +433,9 @@ Find **Power saver app** on the list, select it and tap **Force close**. It will
 
 From now on, AdGuard should work normally and use the standard Android battery optimizations until Power Saver restarts.
 
-An alternative, more permanent solution for more tech-savvy users:
+Eine alternative, dauerhaftere Lösung für technisch versiertere Nutzer:innen:
 
-1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1. [Installieren Sie ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) auf Ihrem Computer;
 
 1. Connect your phone with a data cable;
 
@@ -449,21 +449,21 @@ An alternative, more permanent solution for more tech-savvy users:
 
 ## Oppo
 
-Sometimes background services are being killed (including accessibility services, which then need re-enabling) when you turn the screen off. So far, a workaround for this is:
+Sometimes background services are being killed (including accessibility services, which then need re-enabling) when you turn the screen off. Bislang wurde dies durch folgende Maßnahmen umgangen:
 
 Go to **Security Centre** → tap **Privacy Permissions** → **Startup manager** and allow AdGuard app to run in background.
 
 Weitere Lösungen:
 
-- Pin AdGuard to the recent apps screen
+- Heften Sie AdGuard an den Bildschirm der letzten Apps
 - Enable AdGuard in the app list inside the security app’s “startup manager” and “floating app list” (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
-- Turn off battery optimizations
+- Deaktivieren Sie die Akku-Optimierungen
 
 ## OnePlus
 
-Devices with OxygenOS on board are the most problematic, with its OS-specific cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the AdGuard's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps.
+Geräte mit OxygenOS an Bord sind die problematischsten, mit seiner OS-spezifischen Cache-Bereinigung und freiem RAM, einschließlich OS-Optimierung. In addition, OxygenOS can interrupt the AdGuard's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps.
 
-### Locking the app
+### Sperren der App
 
 - Go to **Settings**
 
@@ -471,15 +471,15 @@ Devices with OxygenOS on board are the most problematic, with its OS-specific ca
 
 - Find AdGuard
 
-- Tap on it and select **Don't optimize** option
+- Tippen Sie darauf und wählen Sie die Option **Nicht optimieren**
 
-- Tap **Done** to save
+- Tippen Sie zum Speichern auf **Fertig**
 
 - Open recent apps menu (as showed on this screenshot):
 
     ![Onepluslock *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/onepluslock.png)
 
-- Lock AdGuard app:
+- Sperren Sie die AdGuard-App:
 
     ![Oneplusdots *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
 
@@ -499,7 +499,7 @@ On some OnePlus phones there is also a thing called App Auto-Launch and Deep Opt
 
 App Auto-Launch (on some OnePlus phones) essentially prevents apps from working in the background. Please disable it for AdGuard.
 
-### Enhanced / Advanced optimization
+### Verbesserte/Erweiterte Optimierung
 
 Für OnePlus 6 und höher:
 
@@ -519,7 +519,7 @@ Go to **Settings** → **Advanced** → **Recent app management** → Switch to 
 
 ## Sony
 
-Sony was the first mobile OS developer to introduce non-standard background process optimization. It is called **Stamina mode** and it instantly breaks all background processes if enabled. To solve this:
+Sony was the first mobile OS developer to introduce non-standard background process optimization. It is called **Stamina mode** and it instantly breaks all background processes if enabled. Um dieses Problem zu lösen:
 
 Go to **Settings** → **Battery** → Disable **STAMINA mode**
 

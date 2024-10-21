@@ -1,5 +1,5 @@
 ---
-title: 'Kurma/Kaldırma'
+title: 'Kurulum'
 sidebar_position: 2
 ---
 

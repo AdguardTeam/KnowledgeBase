@@ -1,6 +1,6 @@
 ---
 title: 메인 창
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 :::info
