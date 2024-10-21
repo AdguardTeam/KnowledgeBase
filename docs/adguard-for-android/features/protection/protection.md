@@ -31,7 +31,7 @@ Information on how AdGuard filters block annoyances such as cookie consent pop-u
 
 ## DNS protection
 
-Information on configuring secure DNS servers to help block ads, trackers, and malicious sites while protecting your privacy.
+Information on configuring secure DNS servers to help block ads, trackers, and malicious websites while protecting your privacy.
 
 [DNS protection](/adguard-for-android/features/protection/dns-protection.md)
 
