@@ -29,7 +29,7 @@ Detailed statistics on blocked ads, trackers, and saved traffic that allows us t
 
 ## Settings
 
-Information about customizing settings so you can adjust ad blocking, privacy, DNS settings to suit your needs.
+Information about customizing settings so you can adjust ad blocking, privacy, and DNS settings to suit your needs.
 
 [Settings](/adguard-for-android/features/settings.md)
 
