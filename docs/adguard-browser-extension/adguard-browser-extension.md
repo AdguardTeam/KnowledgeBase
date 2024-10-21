@@ -53,6 +53,6 @@ This section includes guides addressing known issues and possible solutions.
 
 ## Comparison to standalone apps
 
-The article highlights the differences in functionality, coverage, and features between the extension and the full desktop app.
+The article highlights the differences in functionality, coverage, and features between the AdGuard extensions and desktop apps.
 
 [Comparison to standalone apps](/adguard-browser-extension/comparison-standalone.md)
