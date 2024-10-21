@@ -29,7 +29,7 @@ The article explains how to install the AdGuard Browser Extension on various sup
 
 ## Compatibility with the standalone app
 
-The article explains the compatibility of the AdGuard Browser Extension with the desktop app.
+The article explains the compatibility of the AdGuard Browser Extension with the AdGuard desktop apps.
 
 [Compatibility with the standalone app](adguard-browser-extension/compatibility.md)
 
