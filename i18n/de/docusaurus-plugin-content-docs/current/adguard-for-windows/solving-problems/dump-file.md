@@ -35,7 +35,7 @@ Nachdem Sie die Dump-Datei erstellt haben, navigieren Sie bitte zum Speicherort 
 
 :::note
 
-AdGuard for Windows has two running processes, `Adguard.exe` and `AdguardSvc.exe`. Therefore, it's necessary to create a separate dump file for each process.
+AdGuard für Windows verfügt über zwei laufende Prozesse, `Adguard.exe` und `AdguardSvc.exe`. Daher ist es notwendig, für jeden Prozess eine eigene Dump-Datei zu erstellen.
 
 :::
 

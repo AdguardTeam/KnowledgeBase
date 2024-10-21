@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 A number of users have encountered an issue where Samsung Pay does not work while AdGuard is running. This issue occurs almost exclusively on devices registered in South Korea.
 
-What is causing this issue? Sometimes Samsung Pay does not work on devices with VPN services running, and AdGuard is one of these apps. By default, AdGuard uses a local VPN to filter traffic, which can cause problems when using Samsung Pay.
+Was ist die Ursache für dieses Problem? Manchmal funktioniert Samsung Pay nicht auf Geräten mit laufenden VPN-Diensten, und AdGuard ist eine dieser App. Standardmäßig verwendet AdGuard ein lokales VPN zum Filtern des Datenverkehrs, was bei der Verwendung von Samsung Pay zu Problemen führen kann.
 
 As a consequence, users had to disable AdGuard when making payments with Samsung Pay. This can be avoided with the *Detect Samsung Pay* feature. When this option is enabled, the AdGuard app is paused whenever the user opens the Samsung Pay app and resumes when the app is closed.
 

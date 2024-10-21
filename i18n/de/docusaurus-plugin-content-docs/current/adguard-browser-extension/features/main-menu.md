@@ -1,6 +1,6 @@
 ---
-title: Das Hauptmenü der Erweiterung
-sidebar_position: 4
+title: Main menu
+sidebar_position: 1
 ---
 
 :::info

@@ -97,7 +97,7 @@ Führen Sie die nächsten Schritte nur aus, wenn die ersten beiden Schritte aus 
 
 - Klicken Sie auf *OK*, sobald das Warnfenster angezeigt wird:
 
-![Extended uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
+![Erweiterter Deinstallationshinweis *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
 - Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
 
