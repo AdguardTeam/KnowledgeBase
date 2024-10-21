@@ -9,7 +9,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-This module contains following settings:
+This module contains the following settings:
 
 ## Ad blocking
 
