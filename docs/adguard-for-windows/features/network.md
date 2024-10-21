@@ -15,7 +15,7 @@ The *Network* module is dedicated to network filtering, and here you will find a
 
 In this module you can select the checkbox *Use AdGuard as an HTTP proxy* to use AdGuard as a regular HTTP proxy which will filter all traffic passing through it. You can also enable the *Filter websites with EV certificates* feature. Extended Validation (EV) SSL Certificates offer a stronger safety guarantee; owners of such websites have to pass a thorough and globally standardized identity verification process defined by EV guidelines. Which is the reason why some users trust websites with such certificates and prefer not to filter them.
 
-At last, there is a section with proxy settings. There you can specify which proxy server AdGuard should use to update filters, get new versions and so on.
+At last, there is a section with proxy settings. There you can specify which proxy server AdGuard should use to update filters, get new versions, and so on.
 
 ### AdGuard VPN
 
