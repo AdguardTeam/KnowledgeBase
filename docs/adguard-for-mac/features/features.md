@@ -53,7 +53,7 @@ Information on how to manage AdGuard protection directly from the browser.
 
 ## Extensions
 
-Here you’ll how to use AdGuard as a user script manager to extend the functionality of websites. You can add your own scripts as well as manage existing ones.
+Here you’ll how to use AdGuard as a userscript manager to extend the functionality of websites. You can add your own scripts as well as manage existing ones.
 
 [Extensions](/adguard-for-mac/features/extensions.md)
 
