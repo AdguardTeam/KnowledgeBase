@@ -23,7 +23,7 @@ You can customize the program to suit your needs by blocking only what bothers y
 
 ## Extensions
 
-Here you’ll how to use AdGuard as a user script manager to extend the functionality of websites. You can add your own scripts as well as manage existing ones.
+Here you’ll how to use AdGuard as a userscript manager to extend the functionality of websites. You can add your own scripts as well as manage existing ones.
 
 [Extensions](/adguard-for-windows/features/extensions/)
 
