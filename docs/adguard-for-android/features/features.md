@@ -41,7 +41,7 @@ Information about a tool that lets you quickly change app or website settings an
 
 ## Free vs. full version
 
-Comparison of features between the free version and the paid version.
+Comparison of features between the free and paid versions.
 
 [Free vs. full version](/adguard-for-android/features/free-vs-full.mdx)
 
