@@ -19,11 +19,11 @@ If your app is not listed below, please check on its proxy configurations in the
 
 AdGuard allows you to route your device's traffic through a proxy server. To access proxy settings, open **Settings** and then proceed to **Filtering** → **Network** → **Proxy**.
 
-## Proxy configuration examples
+## Beispiele für die Proxy-Konfiguration
 
-In this article we give examples of how to set up some of the most popular proxies to work with AdGuard.
+In diesem Artikel zeigen wir Ihnen anhand von Beispielen, wie Sie einige der gängigsten Proxys für die Zusammenarbeit mit AdGuard einrichten können.
 
-### How to use AdGuard with Tor
+### So verwenden Sie AdGuard mit Tor
 
 1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy**. Download “Orbot: Proxy with Tor” directly from [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) or by tapping **Integrate with Tor** and then **Install**.
 
@@ -33,13 +33,13 @@ In this article we give examples of how to set up some of the most popular proxi
 
 1. Tap the **Integrate with Tor** button.
 
-1. All the required fields will be pre-filled:
+1. Alle erforderlichen Felder sind bereits vorausgefüllt:
 
-    | Field      | Value                |
-    | ---------- | -------------------- |
-    | Proxy type | *SOCKS4* or *SOCKS5* |
-    | Proxy host | *127.0.0.1*          |
-    | Proxy port | *9050*               |
+    | Feld       | Wert                   |
+    | ---------- | ---------------------- |
+    | Proxy-Typ  | *SOCKS4* oder *SOCKS5* |
+    | Proxy-Host | *127.0.0.1*            |
+    | Proxy-Port | *9050*                 |
 
     Or you can tap **Proxy server** → **Add proxy server**, enter these values manually, and set Orbot as the default proxy.
 
@@ -55,11 +55,11 @@ In this article we give examples of how to set up some of the most popular proxi
 
 1. Tap the **Add proxy server** button and enter the following data:
 
-    | Field      | Value                                |
+    | Feld       | Wert                                 |
     | ---------- | ------------------------------------ |
-    | Proxy type | *SOCKS5*                             |
-    | Proxy host | *proxy-nl.privateinternetaccess.com* |
-    | Proxy port | *1080*                               |
+    | Proxy-Typ  | *SOCKS5*                             |
+    | Proxy-Host | *proxy-nl.privateinternetaccess.com* |
+    | Proxy-Port | *1080*                               |
 
 1. You also need to fill out the **Username/Password** fields. To do so, log in to the [Client Control Panel](https://www.privateinternetaccess.com/pages/client-sign-in) on the PIA website. Tap the **Generate Password** button under the **Generate PPTP/L2TP/SOCKS Password** section. A username starting with “x” and a random password will be shown. Use them to fill out the **Proxy username** and **Proxy password** fields in AdGuard.
 
@@ -67,19 +67,19 @@ In this article we give examples of how to set up some of the most popular proxi
 
 1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
 
-### How to use AdGuard with TorGuard
+### So verwenden Sie AdGuard mit TorGuard
 
-*Here we presume that you are already a TorGuard client and have it installed on your device.*
+*Hier gehen wir davon aus, dass Sie bereits ein TorGuard-Kunde sind und es auf Ihrem Gerät installiert haben.*
 
 1. Öffnen Sie AdGuard und wechseln Sie zu **Einstellungen** ➜ **Filterung** ➜ **Netzwerk** ➜ **Proxy** ➜ **Proxy-Server**.
 
 1. Tap the **Add proxy server** button and enter the following data:
 
-    | Field      | Value                                       |
-    | ---------- | ------------------------------------------- |
-    | Proxy type | *SOCKS5*                                    |
-    | Proxy host | *proxy.torguard.org* or *proxy.torguard.io* |
-    | Proxy port | *1080* or *1085* or *1090*                  |
+    | Feld       | Wert                                          |
+    | ---------- | --------------------------------------------- |
+    | Proxy-Typ  | *SOCKS5*                                      |
+    | Proxy-Host | *proxy.torguard.org* oder *proxy.torguard.io* |
+    | Proxy-Port | *1080* oder *1085* oder *1090*                |
 
 1. For **Username** and **Password** fields, enter your proxy username and proxy password you have chosen at TorGuard signup.
 
@@ -87,25 +87,25 @@ In this article we give examples of how to set up some of the most popular proxi
 
 1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
 
-### How to use AdGuard with NordVPN
+### So verwenden Sie AdGuard mit NordVPN
 
-1. Log in to your NordVPN account.
+1. Melden Sie sich bei Ihrem NordVPN-Konto an.
 
 1. Go to **Services** → **NordVPN** → **Manual setup** and set up your service credentials manually.
 
 1. You will receive a verification code on the email address you use for NordVPN. Use it on your NordVPN account as requested, then tap *Apply* and *OK* to save the changes.
 
-![Manual setup](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/outbound-proxy/nordvpn-manual-setup.png)
+![Manuelle Einrichtung](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/outbound-proxy/nordvpn-manual-setup.png)
 
 1. Open the AdGuard app, go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server** → **Add proxy server**.
 
-1. Enter the following data:
+1. Geben Sie die folgenden Daten ein:
 
-    | Field      | Value                                                                                                                         |
+    | Feld       | Wert                                                                                                                          |
     | ---------- | ----------------------------------------------------------------------------------------------------------------------------- |
-    | Proxy type | *SOCKS5*                                                                                                                      |
-    | Proxy host | Any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent) |
-    | Proxy port | *1080*                                                                                                                        |
+    | Proxy-Typ  | *SOCKS5*                                                                                                                      |
+    | Proxy-Host | Any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent) |
+    | Proxy-Port | *1080*                                                                                                                        |
 
 1. Enter your NordVPN credentials in the **Username** and **Password** fields.
 
@@ -127,11 +127,11 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 1. Tap the **Add proxy server** and fill in the fields:
 
-    | Field      | Value       |
+    | Feld       | Wert        |
     | ---------- | ----------- |
-    | Proxy type | *SOCKS5*    |
-    | Proxy host | *127.0.0.1* |
-    | Proxy port | *1080*      |
+    | Proxy-Typ  | *SOCKS5*    |
+    | Proxy-Host | *127.0.0.1* |
+    | Proxy-Port | *1080*      |
 
 1. Tap **Save and select**.
 
@@ -149,11 +149,11 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 1. Tap **Add proxy server** and fill in the fields:
 
-    | Field      | Value       |
+    | Feld       | Wert        |
     | ---------- | ----------- |
-    | Proxy type | *SOCKS5*    |
-    | Proxy host | *127.0.0.1* |
-    | Proxy port | *7891*      |
+    | Proxy-Typ  | *SOCKS5*    |
+    | Proxy-Host | *127.0.0.1* |
+    | Proxy-Port | *7891*      |
 
 ## Beschränkungen
 

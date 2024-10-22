@@ -1,5 +1,5 @@
 ---
-title: How to get system logs
+title: So können Sie Systemprotokolle erstellen
 sidebar_position: 4
 ---
 
@@ -19,13 +19,13 @@ Manchmal reicht ein einfaches Protokoll nicht aus, um die Ursache des Problems z
 
 :::note
 
-AdGuard ist dem Schutz Ihrer Privatsphäre verpflichtet. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Bevor Sie Ihre Protokolle an das Support-Team senden, überprüfen Sie bitte die Datei, da sie zusätzliche Informationen enthalten kann, die Sie vielleicht nicht freigeben möchten. Wenn sie solche persönlichen Informationen enthält, empfehlen wir Ihnen, sie zuerst zu löschen.
+AdGuard ist dem Schutz Ihrer Privatsphäre verpflichtet. Wir halten uns konsequent an unsere [Datenschutzerklärung](https://adguard.com/privacy/android.html) und sammeln keine privaten Informationen über Nutzer:innen. Bevor Sie Ihre Protokolle an das Support-Team senden, überprüfen Sie bitte die Datei, da sie zusätzliche Informationen enthalten kann, die Sie vielleicht nicht freigeben möchten. Wenn sie solche persönlichen Informationen enthält, empfehlen wir Ihnen, sie zuerst zu löschen.
 
 :::
 
-## Capture a bug report from a device
+## Erfassen eines Fehlerberichts von einem Gerät
 
-To get a bug report directly from your device, do the following:
+Um einen Fehlerbericht direkt von Ihrem Gerät zu erhalten, gehen Sie wie folgt vor:
 
 1. Be sure you have [Developer options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
 
@@ -48,11 +48,11 @@ To get a bug report directly from your device, do the following:
 
     ![Fehlerbericht *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
-1. Send this log to our support team.
+1. Senden Sie dieses Protokoll an unser Support-Team.
 
     :::note
 
-    Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+    Unser Support-Team wird Ihr Ticket viel schneller bearbeiten können, wenn Sie die HelpDesk-Ticketnummer oder die GitHub-Issue-Nummer in Ihrer Nachricht an den Support angeben.
 
 
 :::
@@ -61,11 +61,11 @@ To get a bug report directly from your device, do the following:
 
 On devices with Android 7 and below, it is not possible to send a bug report automatically. Then you can capture it manually via Logcat — a standard Android command-line tool that dumps a log of system messages.
 
-Follow this instruction:
+Befolgen Sie diese Anweisungen:
 
-**Part #1: prepare the device**
+**Teil 1: Vorbereiten des Geräts**
 
-1. Switch device to the developer mode. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
+1. Schalten Sie das Gerät in den Entwicklermodus. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
 
 1. Go to **Developer Options**.
 
@@ -77,27 +77,27 @@ Follow this instruction:
 
 **Part #2: reproduce the problem**
 
-It is important to reproduce the problem after you're done with the first part.
+Es ist wichtig, das Problem zu reproduzieren, nachdem der erste Teil abgeschlossen ist.
 
 1. Reproduzieren Sie das Problem.
 
-1. Remember/write down the date and time of reproduction and include it in the email to our support later.
+1. Notieren Sie sich das Datum und die Uhrzeit der Reproduktion und fügen Sie es später in die E-Mail an unseren Support ein.
 
-**Part #3: get the log**
+**Teil 3: Abrufen des Protokolls**
 
-1. Connect your device to a PC with a USB cable.
+1. Schließen Sie Ihr Gerät mit einem USB-Kabel an einen PC an.
 
-1. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). Choose the appropriate download link for your OS from the Downloads section. Once you tap the link, a ZIP file will be downloaded. You can extract the ADB (Android Debug Bridge) files from the ZIP file and store them wherever you want.
+1. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). Choose the appropriate download link for your OS from the Downloads section. Once you tap the link, a ZIP file will be downloaded. Sie können die ADB-Dateien (Android Debug Bridge) aus der ZIP-Datei extrahieren und an einem beliebigen Ort speichern.
 
-1. Test whether ADB is working properly: connect your Android device to your computer using a USB cable, open the Command Prompt, PowerShell or Terminal and run the following command:
+1. Testen Sie, ob ADB ordnungsgemäß funktioniert: Schließen Sie Ihr Android-Gerät mit einem USB-Kabel an Ihren Computer an, öffnen Sie die Eingabeaufforderung, die PowerShell oder das Terminal und führen Sie den folgenden Befehl aus:
 
     `adb devices`
 
-    An example of a successful result:
+    Ein Beispiel für ein erfolgreiches Ergebnis:
 
     ![Schritt 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
 
-1. Then run the following command (insert the relevant path):
+1. Führen Sie dann den folgenden Befehl aus (geben Sie den entsprechenden Pfad ein):
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
@@ -113,10 +113,10 @@ It is important to reproduce the problem after you're done with the first part.
 
 1. Open CatLog and press **Stop record** in the menu.
 
-1. Send this log to our support team.
+1. Senden Sie dieses Protokoll an unser Support-Team.
 
 :::note
 
-Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+Unser Support-Team wird Ihr Ticket viel schneller bearbeiten können, wenn Sie die HelpDesk-Ticketnummer oder die GitHub-Issue-Nummer in Ihrer Nachricht an den Support angeben.
 
 :::

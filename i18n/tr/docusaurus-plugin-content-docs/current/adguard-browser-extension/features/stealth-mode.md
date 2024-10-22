@@ -1,6 +1,6 @@
 ---
-title: Gizlilik Modu
-sidebar_position: 2
+title: İzleme koruması (Gizlilik Modu)
+sidebar_position: 3
 ---
 
 :::info

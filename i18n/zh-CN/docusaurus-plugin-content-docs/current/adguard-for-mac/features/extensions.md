@@ -1,6 +1,6 @@
 ---
 title: 浏览器扩展
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 :::info

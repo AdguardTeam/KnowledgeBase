@@ -1,5 +1,5 @@
 ---
-title: Assistant
+title: Asistan
 sidebar_position: 5
 ---
 

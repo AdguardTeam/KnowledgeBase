@@ -1,6 +1,6 @@
 ---
-title: Uzantının ana menüsü
-sidebar_position: 4
+title: Ana menü
+sidebar_position: 1
 ---
 
 :::info

@@ -1,6 +1,6 @@
 ---
 title: AdGuard VPN との併用モード
-sidebar_position: 8
+sidebar_position: 6
 ---
 
 :::info

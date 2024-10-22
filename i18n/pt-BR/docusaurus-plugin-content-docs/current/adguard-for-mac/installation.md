@@ -1,5 +1,5 @@
 ---
-title: 'Instalar/Desinstalar'
+title: 'Instalação'
 sidebar_position: 2
 ---
 

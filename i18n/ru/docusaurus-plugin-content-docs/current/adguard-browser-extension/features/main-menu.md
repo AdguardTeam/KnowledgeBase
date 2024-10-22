@@ -1,6 +1,6 @@
 ---
-title: Главное меню расширения
-sidebar_position: 4
+title: Main menu
+sidebar_position: 1
 ---
 
 :::info
