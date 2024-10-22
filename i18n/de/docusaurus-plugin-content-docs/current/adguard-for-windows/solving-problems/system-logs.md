@@ -1,5 +1,5 @@
 ---
-title: How to collect Windows system logs
+title: So erfassen Sie Windows-Systemprotokolle
 sidebar_position: 5
 ---
 
@@ -15,9 +15,9 @@ Daten und/oder Dateien, die in Systemprotokollen enthalten sind, werden gemäß 
 
 :::
 
-To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need Windows system log files. Windows event logs contain records about all errors that occur with the installed software, including AdGuard. Nachfolgend finden Sie eine kurze Anleitung, wie Sie die Protokolldateien abrufen und bei Bedarf an unseren Kundenservice senden können.
+Zur Analyse und Diagnose verschiedener Probleme, die auftreten können, benötigt der AdGuard-Support möglicherweise Windows-Systemprotokolldateien. Die Ereignisprotokolle von Windows enthalten Aufzeichnungen über alle Fehler, die im Zusammenhang mit der installierten Software, einschließlich AdGuard, auftreten. Nachfolgend finden Sie eine kurze Anleitung, wie Sie die Protokolldateien abrufen und bei Bedarf an unseren Kundenservice senden können.
 
-1. Press *Win + R*
+1. Drücken Sie die Tasten *Win + R*
 
 1. Geben Sie in dem sich öffnenden Fenster `eventvwr` ein und klicken Sie auf *OK*:
 

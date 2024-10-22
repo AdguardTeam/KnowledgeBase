@@ -1,6 +1,6 @@
 ---
-title: Security
-sidebar_position: 6
+title: Güvenlik
+sidebar_position: 7
 ---
 
 :::info

@@ -1,6 +1,6 @@
 ---
-title: Filters
-sidebar_position: 3
+title: Filtreler
+sidebar_position: 4
 ---
 
 :::info
@@ -9,7 +9,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-## Filters
+## Filtreler
 
 ![Filters](https://cdn.adtidy.org/content/kb/ad_blocker/mac/filters.png)
 

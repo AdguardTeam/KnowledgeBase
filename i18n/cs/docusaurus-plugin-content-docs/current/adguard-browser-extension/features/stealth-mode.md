@@ -1,6 +1,6 @@
 ---
-title: Režim utajení
-sidebar_position: 2
+title: Tracking protection (Stealth Mode)
+sidebar_position: 3
 ---
 
 :::info

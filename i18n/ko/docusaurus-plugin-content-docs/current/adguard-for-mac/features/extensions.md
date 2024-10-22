@@ -1,6 +1,6 @@
 ---
 title: 확장 프로그램
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 :::info

@@ -1,5 +1,5 @@
 ---
-title: Statistics
+title: İstatistikler
 sidebar_position: 3
 ---
 

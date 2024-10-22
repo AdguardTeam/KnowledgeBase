@@ -1,6 +1,6 @@
 ---
-title: 확장 프로그램의 기본 메뉴
-sidebar_position: 4
+title: Main menu
+sidebar_position: 1
 ---
 
 :::info

@@ -1,5 +1,5 @@
 ---
-title: Certificate installation on devices with Android 11+
+title: Zertifikatsinstallation auf Geräten mit Android 11+
 sidebar_position: 12
 ---
 
@@ -19,7 +19,7 @@ Follow these steps to install the AdGuard certificate:
 
 1. Then you'll be presented with three screens that explain:
     - Why filter HTTPS traffic
-    - The safety of this filtering process
+    - Die Sicherheit dieses Filterungsprozesses
     - The necessity of the AdGuard certificate
 
     Consecutively tap *Next* → *Next* → *Save certificate*.
@@ -32,15 +32,15 @@ Follow these steps to install the AdGuard certificate:
 
 1. You might see a warning. If so, tap *Install anyway* and enter your PIN if necessary.
 
-1. Select the AdGuard certificate file. Its name should look like *adguard_1342_020322.crt*.
+1. Wählen Sie die AdGuard-Zertifikatsdatei aus. Sein Name sollte in etwa wie *adguard_1342_020322.crt* aussehen.
 
-Fertig! Once the certificate is installed successfully, you've enabled HTTPS filtering.
+Fertig! Sobald das Zertifikat erfolgreich installiert ist, wurde die HTTPS-Filterung aktiviert.
 
-Please note that the steps provided are based on the Google Pixel 7 smartphone. If you're using a different Android device, the exact menu names or options might vary. For easier navigation consider searching for a certificate by entering “certificate” or “credentials” in the settings search bar.
+Bitte beachten Sie, dass sich die angegebenen Schritte auf das Google Pixel 7 Smartphone beziehen. Wenn Sie ein anderes Android-Gerät verwenden, können die genauen Menünamen oder Optionen abweichen. For easier navigation consider searching for a certificate by entering “certificate” or “credentials” in the settings search bar.
 
 If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
 
-1. Restart AdGuard.
-2. Try to install the correct certificate (AdGuard Personal CA) one more time.
+1. Starten Sie AdGuard neu.
+2. Versuchen Sie noch einmal, das richtige Zertifikat (AdGuard Personal CA) zu installieren.
 
-If you still encounter a problem and can't install the certificate, please contact our support team at support@adguard.com.
+Wenn Sie immer noch ein Problem haben und das Zertifikat nicht installieren können, wenden Sie sich bitte an unser Support-Team unter support@adguard.com.

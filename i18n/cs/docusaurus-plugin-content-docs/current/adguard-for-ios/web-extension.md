@@ -11,7 +11,7 @@ Webové rozšíření pro Safari od AdGuardu je nástroj, který využívá nov�
 
 ## K čemu slouží
 
-By default, Safari provides only basic tools for content blockers. These tools don't offer the level of performance found in content blockers on other operating systems (Windows, Mac, Android). For example, AdGuard apps on other platforms can use such powerful anti-ad weapons as [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets). Unfortunately, these utilities are absolutely irreplaceable when dealing with more complex cases, such as pre-roll ads on YouTube.
+Safari ve výchozím nastavení poskytuje blokátorům obsahu pouze základní nástroje. Tyto nástroje neumožňují takovou úroveň výkonu, jakou mají blokátory obsahu v jiných operačních systémech (Windows, Mac, Android). Například aplikace AdGuard na jiných platformách mohou používat takové mocné zbraně proti reklamám, jako jsou [pravidla CSS](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [rozšířené selektory CSS](/general/ad-filtering/create-own-filters#extended-css-selectors) a [skriptlety](/general/ad-filtering/create-own-filters#scriptlets). Bohužel jsou tyto nástroje naprosto nenahraditelné při řešení složitějších případů, jako jsou například reklamy před videi na YouTube.
 
 Webové rozšíření pro Safari od AdGuardu doplňuje AdGuard tím, že mu umožňuje používat tyto typy pravidel filtrování.
 
@@ -19,7 +19,7 @@ Kromě toho lze Webové rozšíření pro Safari od AdGuardu použít k rychlé 
 
 ![Web extension menu *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/ext_adguard_en.png?1)
 
-> On iPads, AdGuard's Safari web extension can be accessed directly by tapping the AdGuard icon in the browser's address bar.
+> Na iPadech je webové rozšíření pro Safari od AdGuardu dostupné přímo klepnutím na ikonu AdGuardu v adresním řádku prohlížeče.
 
 Zobrazí se vám následující seznam možností:
 
@@ -57,7 +57,7 @@ Klepněte na něj a zapněte přepínač. Na stejné obrazovce nastavte oprávn�
 
 ### V Safari
 
-You can also enable the AdGuard extension from the Safari browser. To do it, tap *Extensions* (if you don't see it next to the address bar, tap the `aA` icon).
+Rozšíření AdGuard můžete povolit také v prohlížeči Safari. Klepněte na *Rozšíření* (pokud jej nevidíte vedle adresního řádku, klepněte na ikonu `aA`).
 
 ![In Safari tap aA icon *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari1_en.png)
 

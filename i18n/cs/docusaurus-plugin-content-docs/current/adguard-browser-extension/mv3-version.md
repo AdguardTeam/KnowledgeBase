@@ -55,7 +55,7 @@ Maximální počet současně aktivovaných filtrů je **50**.
 
 **Dynamická pravidla:** je stanoven přísný limit **5000** pravidel, který zahrnuje maximálně 1000 regexových pravidel.
 
-If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules, Custom filters, and finally — Quick Fixes filter.
+Pokud je tento limit překročen, bude použito pouze **5000 převedených pravidel** v následujícím pořadí: nejprve seznam povolených, poté uživatelská pravidla, vlastní filtry a nakonec — filtr rychlých oprav.
 
 > **Převedená pravidla** jsou pravidla, která byla převedena do formátu \[DNR] pomocí [deklarativního převodníku][github-declarative-converter].
 > Během tohoto převodu mohou některá pravidla přepsat jiná (`$badfilter`), některá mohou být sloučena (`$removeparam`), takže vznikne seznam pravidel s mírně odlišným pořadím.

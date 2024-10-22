@@ -1,5 +1,5 @@
 ---
-title: '安装/卸载'
+title: '安装'
 sidebar_position: 2
 ---
 
