@@ -159,6 +159,10 @@ Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection.
 
 Removes the Encrypted Client Hello parameters from responses.
 
+#### `dns.proxy.private.relay.sequoia.workaround.enabled`
+
+Blocks MacOS Private Relay domains if the user has a firewall enabled, which in turn disables the *Private Relay* feature.
+
 ### Stealth Mode settings
 
 #### `stealth.antidpi.http.split.fragment.size`
