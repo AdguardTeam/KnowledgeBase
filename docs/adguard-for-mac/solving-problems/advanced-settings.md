@@ -163,6 +163,8 @@ Removes the Encrypted Client Hello parameters from responses.
 
 Blocks MacOS Private Relay domains if the user has a firewall enabled, which in turn disables the *Private Relay* feature.
 
+Enabling this setting can be helpful on the following context: When macOS Private Relay is active, filtering does not work, so it needs to be disabled. Up until macOS 14, AdGuard was able to automatically disable Private Relay when *Protection* was activated. However, starting with macOS 15, this is no longer possible if a firewall is enabled. By activating this setting, you can disable Private Relay even when the firewall is turned on, reversing the previous limitation.
+
 ### Stealth Mode settings
 
 #### `stealth.antidpi.http.split.fragment.size`
