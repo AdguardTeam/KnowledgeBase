@@ -21,6 +21,8 @@ As any honest and well-performed effort should be rewarded, active translators o
 :::note Limitations
 As a reward for contributing, We offer licenses and subscriptions valid for a maximum of 5 years. In the case of Ad Blocker, we offer licenses that cover up to 5 devices. We do not offer lifetime licenses.
 
+:::
+
 ## How to request your license
 
 Just send us an email to our translators team at [translate@adguard.com](mailto:translate@adguard.com) with the following information:
