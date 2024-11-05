@@ -7,19 +7,20 @@ As any honest and well-performed effort should be rewarded, active translators o
 
 ## How our reward system works
 
-**For AdGuard licenses:**
+### For AdGuard licenses
 
 - For your first one-year Ad Blocker license, you need to translate **1,000 words**.
 - For your second license, you’ll need an **additional 1,500 words** (a total of 2,500 words).
 - All subsequent licenses require an **additional 2,500** words per license.
 
-**For AdGuard VPN licenses:**
+### For AdGuard VPN licenses
 
 - The first one-year VPN subscription requires translating **3,000 words**.
 - All subsequent subscriptions or renewals require an **additional 3,000 words** per subscription.
 
 :::note Limitations
-As a reward for contributing, We offer licenses and subscriptions valid for a maximum of 5 years. In the case of Ad Blocker, we offer licenses that cover up to 5 devices. We do not offer lifetime licenses.
+
+As a reward for contributing, we offer licenses and subscriptions valid for a maximum of 5 years. In the case of Ad Blocker, we offer licenses that cover up to 5 devices. We do not offer lifetime licenses.
 
 :::
 
@@ -28,7 +29,7 @@ As a reward for contributing, We offer licenses and subscriptions valid for a ma
 Just send us an email to our translators team at [translate@adguard.com](mailto:translate@adguard.com) with the following information:
 
 - Your Crowdin username
-- The projects you contributed to (Websites, Applications, VPN Knowledge Base, etc.)
+- The projects you contributed to (Websites, Applications, Knowledge Base, etc.)
 - The email address to which you want to link your license
 - Your translation statistics (a screenshot or total word count) and the type of license you want
 
@@ -43,7 +44,7 @@ My Crowdin username is (*your username*).
 
 ## How to check your translation progress
 
-Open a project you have worked on, click the *Reports* tab, and select *My Contribution* Then scroll down, select a date range, and generate a report. It will look something like this.
+Open a project you have been working on, click the *Reports* tab, select *My Contribution*, scroll down, select a date range, and generate a report. It will look something like this.
 
 ![Statistics *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/statistics.png)
 
@@ -53,7 +54,7 @@ You can add up the number of words translated across different projects to quali
 
 Our most active translators may be considered for proofreader status in the future. To become a proofreader, you’ll need to deliver consistently high quality translations over a period of several months.
 
-Please note that proofreaders do not receive extra licenses or perks beyond helping more people access AdGuard products in their language. If you’re interested in becoming one of our proofreaders, feel free to reach out at [translate@adguard.com](mailto:translate@adguard.com).
+Please note that proofreaders do not receive extra licenses or benefits beyond helping more people access AdGuard products in their language. If you’re interested in becoming one of our proofreaders, please contact us at [translate@adguard.com](mailto:translate@adguard.com).
 
 ## Gifts for active contributors
 
