@@ -159,6 +159,12 @@ DNS-over-HTTPS 업스트림에 HTTP/3을 활성화하여 연결을 가속화합�
 
 응답에서 Encrypted Client Hello 매개 변수를 제거합니다.
 
+#### `dns.proxy.private.relay.sequoia.workaround.enabled`
+
+Blocks macOS Private Relay domains if the user has a firewall enabled, which in turn disables the *Private Relay* feature.
+
+Enabling this setting is useful in the following scenario: when macOS Private Relay is active, filtering cannot function properly and must be disabled. In macOS versions up to 14, AdGuard could automatically disable Private Relay when Protection was enabled. However, starting with macOS 15, this is no longer possible if a firewall is active. By turning on this setting, you can disable Private Relay even when the firewall is enabled, overcoming the previous limitation.
+
 ### 스텔스 모드 설정
 
 #### `stealth.antidpi.http.split.fragment.size`

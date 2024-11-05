@@ -1,6 +1,6 @@
 ---
-title: Režim utajení
-sidebar_position: 2
+title: Ochrana před sledováním (Režim utajení)
+sidebar_position: 3
 ---
 
 :::info

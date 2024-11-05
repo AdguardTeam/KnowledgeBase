@@ -9,40 +9,40 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 :::
 
-AdGuard for Windows allows users to specify a DNS server address to resolve queries instead of system DNS server, which is provided by your ISP if not overridden in the system settings. Using a non-default DNS server can safeguard your DNS traffic from the ISP’s interception. Moreover, by choosing an encrypted and/or filtering DNS server, you get another layer of protection against bad actors and annoying ads.
+AdGuard für Windows ermöglicht die Angabe einer DNS-Serveradresse zur Auflösung von Anfragen anstelle des System-DNS-Servers, der von Ihrem ISP bereitgestellt wird, sofern dieser nicht in den Systemeinstellungen überschrieben wurde. Die Verwendung eines nicht standardmäßigen DNS-Servers kann Ihren DNS-Verkehr vor dem Abfangen durch den ISP schützen. Außerdem erhalten Sie durch die Wahl eines verschlüsselten oder filternden DNS-Servers eine weitere Schutzschicht gegen bösartige Akteure und lästige Werbung.
 
-Many AdGuard for Windows users appreciate the DNS protection feature. But some of them encounter the following issue: a check on a website like https://ipleak.net/ shows that requests are handled by the default DNS server instead of the selected one. In this article we will tell you why this happens and how to avoid it.
+Viele schätzen den DNS-Schutz von AdGuard für Windows. Einige stoßen jedoch auf das folgende Problem: Eine Überprüfung auf einer Website wie https://ipleak.net/ zeigt, dass die Anfragen vom Standard-DNS-Server statt vom ausgewählten Server bearbeitet werden. In diesem Artikel erfahren Sie, warum das so ist und wie Sie es vermeiden können.
 
-## Bootstrap DNS address
+## Bootstrap-DNS-Adresse
 
-The DNS server addresses could be written as IPs or as domain names. In the case of IP addresses there are no difficulties: AdGuard forwards the DNS request directly to the server specified in the DNS protection module. However, encrypted DNS server addresses, like DoT or DoH, are most often written as domain names. In this case, to first resolve the encrypted DNS server address, AdGuard sends a DNS query to the bootstrap address, which is by default a system DNS server. This connection is what check services perceive as a leak.
+Die DNS-Serveradressen können als IPs oder als Domainnamen geschrieben werden. Im Falle von IP-Adressen gibt es keine Schwierigkeiten: AdGuard leitet die DNS-Anfrage direkt an den im DNS-Schutzmodul angegebenen Server weiter. Verschlüsselte DNS-Serveradressen, wie DoT oder DoH, werden jedoch meist als Domainnamen geschrieben. In diesem Fall sendet AdGuard zunächst eine DNS-Anfrage an die Bootstrap-Adresse, die standardmäßig ein System-DNS-Server ist, um die verschlüsselte DNS-Serveradresse aufzulösen. Diese Verbindung wird von den Kontrolldiensten als Offenlegung (Leck) wahrgenommen.
 
-**To eliminate this leak:**
+**Um diese Offenlegung zu verhindern:**
 
-- go to the *Advanced settings*
-- scroll down to the *List of custom bootstrap addresses* section
-- enter the custom bootstrap address in the IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
-- click *Save*
+- Öffnen Sie *Erweiterten Einstellungen*
+- Blättern Sie nach unten zum Abschnitt *Liste der benutzerdefinierten Bootstrap-Adressen*
+- Geben Sie die benutzerdefinierte Bootstrap-Adresse im IP-Adressformat ein (Sie können [die Liste der bekannten DNS-Anbieter](https://adguard-dns.io/kb/general/dns-providers/) verwenden)
+- Klicken Sie auf *Speichern*
 
 ## Fallback-DNS-Server
 
-It could happen that AdGuard cannot reach the specified server because of a weak internet connection, an expiration of timeout set by default or some server related issues. In this case, it will connect to the fallback server, which is by default a system DNS server. This connection will also be considered by the check service as a leak.
+Es kann vorkommen, dass AdGuard den angegebenen Server nicht erreichen kann, weil die Internetverbindung zu schwach ist, die standardmäßig eingestellte Zeitüberschreitung abgelaufen ist oder es andere Probleme mit dem Server gibt. In diesem Fall wird eine Verbindung zum Fallback-Server hergestellt, der standardmäßig ein System-DNS-Server ist. Diese Verbindung wird vom Kontrolldienst ebenfalls als Offenlegung gewertet.
 
-**To eliminate this leak:**
+**Um diese Offenlegung zu verhindern:**
 
-- go to the *Advanced settings*
-- scroll down to the *Fallback servers* section
-- check the *Use custom servers* option
-- then find the *List of custom fallback servers* section and enter the custom fallback servers one per line
+- Öffnen Sie *Erweiterten Einstellungen*
+- Blättern Sie nach unten zum Abschnitt *Fallback-Server*
+- Aktivieren Sie die Option *Benutzerdefinierte Server verwenden*
+- Suchen Sie anschließend den Abschnitt *Liste der benutzerdefinierten Fallback-Server* und geben Sie die benutzerdefinierten Fallback-Server einzeln pro Zeile ein
 
-or
+oder
 
-- go to the *Advanced settings*
-- scroll down to the *Fallback servers* section
-- check the *Don’t use fallback servers* option
+- Öffnen Sie *Erweiterten Einstellungen*
+- Blättern Sie nach unten zum Abschnitt *Fallback-Server*
+- Aktivieren Sie die Option *Keine Fallback-Server verwenden*
 
-or
+oder
 
-- go to the *Advanced settings*
-- scroll down to the *DNS server timeout period* section
-- enter an arbitrary large number
+- Öffnen Sie *Erweiterten Einstellungen*
+- Blättern Sie nach unten zum Abschnitt *Zeitüberschreitung des DNS-Servers*
+- Geben Sie eine beliebig große Zahl ein

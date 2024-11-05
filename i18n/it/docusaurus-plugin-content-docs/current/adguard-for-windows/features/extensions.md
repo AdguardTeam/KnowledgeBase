@@ -38,28 +38,3 @@ Quest'estensione impedisce l'apertura delle finestre popup quando visualizzi le 
 **Web of Trust**
 
 Web of Trust ti consente di visualizzare la reputazione di ogni sito web, secondo le opinioni dei suoi utenti. Il sito è valutato secondo numerosi criteri specifici: fiducia, sicurezza, etc. Quest'estensione è disattivata di default, ma puoi attivarla nelle impostazioni dell'applicazione. Sei pregato di notare che AdGuard non è lo sviluppatore di quest'estensione.
-
-### Rete
-
-Il penultimo modulo è dedicato al filtraggio di rete e, qui, troverai le opzioni aggiuntive correlate alla rete. Due di esse sono abilitate di default: _Abilita il filtraggio del traffico_ e _Filtra HTTPS_. Queste sono importanti precauzioni aggiuntive, per meglio filtrare il tuo spazio web. Gran parte dei siti, a oggi, utilizzano HTTPS, il che si applica anche agli annunci. Da molti siti, come youtube.com, facebook.com e x.com, è impossibile rimuovere gli annunci senza il filtraggio HTTPS. Quindi, mantieni la funzionalità _Filtra HTTPS_ abiltata, a meno che tu non abbia una valida ragione per non farlo.
-
-![Impostazioni di Rete \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
-
-In questo modulo puoi spuntare la casella "Utilizza AdGuard come proxy HTTP", per utilizzare AdGuard come un proxy HTTP regolare, che filtrerà tutto il traffico che lo attraverserà. Inoltre, puoi abilitare la funzionalità _Filtra siti web con i certificati EV_. I certificati SSL a Validazione Estesa (EV) offrono una maggiore garanzia di sicurezza; i proprietari di tali siti web devono superare un duro processo di verifica dell'identità standardizzato e a livello globale, definito dalle linee guida EV. Per questo, alcuni utenti si fidano dei siti web con tali certificati e preferiscono non filtrarli.
-
-Infine, esiste una sezione con le impostazioni proxy. Lì, puoi specificare quale server proxy dovrebbe essere utilizzato da AdGuard per aggiornare i filtri, ottenere le nuove versioni e così via.
-
-### AdGuard VPN
-
-L'ultima sezione è dedicata ad AdGuard VPN: uno strumento ideale che fornisce sicurezza e anonimato ogni volta che navighi su Internet. Puoi scaricarla cliccando il pulsante _Scarica_ o visita il sito web di AdGuard VPN, cliccando sul pulsante _Pagina Iniziale_.
-
-Come funziona AdGuard VPN? Senza entrare nei dettagli tecnici, possiamo dire che la VPN crea un tunnel crittografato e sicuro tra il computer dell'utente o il dispositivo mobile e un server VPN remoto. Così, è preservata la confidenzialità dei dati, nonché l'anonimato dell'utente, poiché un osservatore di terze parti vede l'indirizzo IP del server VPN e non l'effettivo IP dell'utente.
-
-**Cosa fa AdGuard VPN:**
-
-- nasconde la tua posizione reale e ti aiuta a rimanere anonimo
-- modifica il tuo indirizzo IP per proteggere i tuoi dati dal tracciamento
-- crittografa il tuo traffico per renderlo illeggibile alle terze parti
-- ti consente di configurare dove utilizzare la VPN e dove no (funzionalità di esclusione)
-
-Per ottenere ulteriori informazioni su AdGuard VPN, approfondisci nella [Base di Conoscenze di AdGuard VPN](https://adguard-vpn.com/kb/).

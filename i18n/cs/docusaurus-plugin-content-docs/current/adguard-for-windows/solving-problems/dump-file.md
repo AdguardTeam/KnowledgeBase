@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 :::note
 
-Data and/or files provided in dump files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Údaje a/nebo soubory poskytnuté v souborech dump jsou zpracovávány v souladu se [Zásadami ochrany osobních údajů AdGuardu](https://adguard.com/en/privacy.html).
 
 :::
 
@@ -35,10 +35,10 @@ Po vytvoření souboru výpisu přejděte do umístění souboru. Ihned po vytvo
 
 :::note
 
-AdGuard for Windows has two running processes, `Adguard.exe` and `AdguardSvc.exe`. Therefore, it's necessary to create a separate dump file for each process.
+AdGuard pro Windows má dva spuštěné procesy `Adguard.exe` a `AdguardSvc.exe`. Proto je nutné pro každý proces vytvořit samostatný soubor dump.
 
 :::
 
 ![AdGuard processes](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
 
-Při odesílání výpisu souborů týmu podpory přiložte také záznamy aplikace AdGuard, abychom měli větší šanci problém vyřešit. [Here](../adguard-logs) you can check the instructions on how to get the log file.
+Při odesílání výpisu souborů týmu podpory přiložte také záznamy aplikace AdGuard, abychom měli větší šanci problém vyřešit. [Zde](../adguard-logs) se můžete podívat na pokyny, jak získat soubor protokolu.

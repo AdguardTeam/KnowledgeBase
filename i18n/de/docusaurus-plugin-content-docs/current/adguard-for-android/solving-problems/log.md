@@ -1,5 +1,5 @@
 ---
-title: How to collect debug logs
+title: So werden Fehlersuchprotokolle erfasst
 sidebar_position: 2
 ---
 
@@ -15,24 +15,24 @@ Die in den Protokollen enthaltenen Daten und/oder Dateien werden in Übereinstim
 
 :::
 
-In this article, we'll guide you through the process of collecting debug logs, an essential troubleshooting step for solving complex issues that may potentially arise. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
+In diesem Artikel führen wir Sie durch den Prozess des Erfassens von Fehlersuchprotokollen, einem wichtigen Schritt bei der Fehlersuche zur Lösung komplexer Probleme, die unter Umständen auftreten können. Fehlersuchprotokolle bieten einen detaillierten Einblick in das Innenleben von AdGuard für Android. Wenn das AdGuard-Supportteam Sie auffordert, Fehlersuchprotokolle zur Verfügung zu stellen, folgen Sie einfach diesen Anweisungen.
 
 :::note
 
-AdGuard ist dem Schutz Ihrer Privatsphäre verpflichtet. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Bevor Sie Ihre Protokolle an das Support-Team senden, überprüfen Sie bitte die Datei, da sie zusätzliche Informationen enthalten kann, die Sie vielleicht nicht freigeben möchten. Wenn sie solche persönlichen Informationen enthält, empfehlen wir Ihnen, sie zuerst zu löschen.
+AdGuard ist dem Schutz Ihrer Privatsphäre verpflichtet. Wir halten uns konsequent an unsere [Datenschutzerklärung](https://adguard.com/privacy/android.html) und sammeln keine privaten Informationen über Sie. Bevor Sie Ihre Protokolle an das Support-Team senden, überprüfen Sie bitte die Datei, da sie zusätzliche Informationen enthalten kann, die Sie vielleicht nicht freigeben möchten. Bevor Sie Ihre Protokolle an das Support-Team senden, überprüfen Sie bitte die Datei, da sie zusätzliche Informationen enthalten kann, die Sie vielleicht nicht freigeben möchten.
 
 :::
 
-### Recording debug log
+### Aufzeichnung des Fehlersuchprotokolls
 
-To collect **debug** log and send it to us, you need to perform following steps:
+Um das **Fehlersuchprotokoll** zu erfassen und an uns zu senden, müssen Sie folgende Schritte durchführen:
 
-1. Go to *Settings* → *General* → *Advanced*.
-1. Tap *Logging level* and set it to *Debug*.
-1. Reproduce the problem and try to remember the exact time it occurred.
-1. Wait a while, then return to *Settings* and choose the *Support* tab. Tap *Report a bug* and complete the required fields. Don't forget to check the *Send app logs and system info* checkbox. Finally tap *Send*.
+1. Öffnen Sie die *Einstellungen* → *Allgemein* → *Erweitert*.
+1. Tippen Sie auf *Protokollierungsstufe* und setzen Sie sie auf *Fehlersuche*.
+1. Reproduzieren Sie das Problem und versuchen Sie, sich an den genauen Zeitpunkt des Auftretens zu erinnern.
+1. Warten Sie eine Weile, kehren Sie dann zu *Einstellungen* zurück und wählen Sie die Registerkarte *Support*. Tippen Sie auf *Fehler melden* und füllen Sie die erforderlichen Felder aus. Vergessen Sie nicht, das Kontrollkästchen *App-Protokolle und Systeminformationen senden* zu aktivieren. Tippen Sie schließlich auf *Senden*.
 
-If you're interested in following the resolution of your issue and engaging in a dialogue with the developers, we recommend that you take the following steps after completing the first three:
+Wenn Sie daran interessiert sind, die Lösung Ihres Problems zu verfolgen und in einen Dialog mit den Entwicklern zu treten, empfehlen wir Ihnen, nach Abschluss der ersten drei Schritte die folgenden zu unternehmen:
 
-1. Wait a while, then return to the *Advanced* screen and export logs via *Export logs and system info*. Then report a bug on GitHub by following these [instructions](/guides/report-bugs.md).
-1. After creating an issue on GitHub, send the log file to devteam@adguard.com. Geben Sie die Uhrzeit des Fehlers an und fügen Sie einen Link zu Ihrem Problem oder dessen Nummer hinzu (sie wird neben dem Titel als #Nummer angezeigt). Alternativ können Sie die Protokolldatei auch auf Google Drive hochladen und an devteam@adguard.com senden. Add the file link to your GitHub issue
+1. Warten Sie eine Weile, kehren Sie dann zum Bildschirm *Erweitert* zurück und exportieren Sie die Protokolle über *Protokolle und Systeminformationen exportieren*. Dann melden Sie einen Fehler auf GitHub, indem Sie diese [Anleitung](/guides/report-bugs.md) befolgen.
+1. Nachdem Sie einen Eintrag auf GitHub erstellt haben, senden Sie die Protokolldatei an devteam@adguard.com. Geben Sie die Uhrzeit des Fehlers an und fügen Sie einen Link zu Ihrem Problem oder dessen Nummer hinzu (sie wird neben dem Titel als #Nummer angezeigt). Alternativ können Sie die Protokolldatei auch auf Google Drive hochladen und an devteam@adguard.com senden. Fügen Sie den Dateilink zu Ihrem GitHub-Problem hinzu

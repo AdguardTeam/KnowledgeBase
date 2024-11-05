@@ -13,9 +13,9 @@ In diesem Artikel finden Sie einige der häufigsten Fehler, die bei der Installa
 
 ### Fehler 5: Zugriff verweigert {#error-5}
 
-This error message appears when required permissions haven't been granted. Es kann verschiedene Gründe geben, warum das AdGuard-Installationsprogramm nicht über die erforderlichen Berechtigungen verfügt, um den Installationsvorgang ordnungsgemäß abzuschließen. Sie können die folgenden Schritte versuchen:
+Diese Fehlermeldung wird angezeigt, wenn die erforderlichen Berechtigungen nicht erteilt wurden. Es kann verschiedene Gründe geben, warum das AdGuard-Installationsprogramm nicht über die erforderlichen Berechtigungen verfügt, um den Installationsvorgang ordnungsgemäß abzuschließen. Sie können die folgenden Schritte versuchen:
 
-- Temporarily disable your antivirus. Einige von ihnen können die Installation beeinträchtigen, je nachdem, wie stark sie eingestellt sind.
+- Deaktivieren Sie vorübergehend Ihr Antivirenprogramm. Einige von ihnen können die Installation beeinträchtigen, je nachdem, wie stark sie eingestellt sind.
 
 - Wählen Sie einen anderen Installationsordner. Es ist möglich, dass der aktuelle Installationsordner Zugriffsbeschränkungen hat. Stellen Sie außerdem sicher, dass Sie kein externes oder virtuelles Laufwerk usw. auswählen.
 
@@ -23,17 +23,17 @@ This error message appears when required permissions haven't been granted. Es ka
 
 ### Fehler 112: Datenträger verfügt nicht mehr über genügend Speicherplatz, Fehler 1632: Temporärer Ordner voll oder unzugänglich {#error-112}
 
-Es handelt sich um zwei verschiedene Fehler mit sehr ähnlichen Lösungen. As their titles suggest, AdGuard installer didn't find enough disk space to complete the installation. Es gibt mehrere Möglichkeiten, das Problem zu beheben:
+Es handelt sich um zwei verschiedene Fehler mit sehr ähnlichen Lösungen. Wie der Titel vermuten lässt, hat das Installationsprogramm von AdGuard nicht genügend Speicherplatz gefunden, um die Installation abzuschließen. Es gibt mehrere Möglichkeiten, das Problem zu beheben:
 
 - Deinstallieren Sie einige Programme oder löschen Sie unnötige Dateien von dem Laufwerk, auf dem Sie AdGuard installieren möchten.
 
-- Laden Sie [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), eine kostenlose Software von Malwarebytes, herunter, installieren Sie sie und führen Sie sie aus. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstalled programs and such. Das wird helfen, etwas Speicherplatz freizugeben.
+- Laden Sie [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), eine kostenlose Software von Malwarebytes, herunter, installieren Sie sie und führen Sie sie aus. Es befreit Ihr System unter anderem von allen Arten zusätzlicher „verbliebener“ Dateien, die nach der fehlerhaften Deinstallation von Programmen usw. noch vorhanden sind. Das wird helfen, etwas Speicherplatz freizugeben.
 
 - Starten Sie Ihren Computer neu. Manchmal können temporäre Dateien eine beträchtliche Menge an Speicherplatz beanspruchen, und ein Neustart Ihres PCs ist die zuverlässigste Methode, sie loszuwerden.
 
 ### Fehler 1601: Auf Windows Installer kann nicht zugegriffen werden {#error-1601}
 
-You could say this is a particular subcategory of Error 1603. Die möglichen Lösungen sind ähnlich:
+Man könnte sagen, dass dies eine besondere Unterkategorie des Fehlers 1603 ist. Die möglichen Lösungen sind ähnlich:
 
 - Starten und registrieren Sie den Microsoft Installer-Dienst erneut. Das erfordert etwas Arbeit.
 
@@ -41,7 +41,7 @@ You could say this is a particular subcategory of Error 1603. Die möglichen Lö
 
 - Starten Sie den PC neu und beginnen Sie die Installation von vorne. Manchmal reicht dies aus, um das Problem zu beheben.
 
-### Error 1602: Canceled by user {#error-1602}
+### Fehler 1602: Vom Benutzer abgebrochen {#error-1602}
 
 Wenn Sie diesen Fehlercode erhalten haben, haben Sie den Installationsprozess wahrscheinlich auf die eine oder andere Weise manuell unterbrochen. Was Sie tun können:
 
@@ -65,32 +65,32 @@ Der Fehler klingt erschreckender als er tatsächlich ist. In Wirklichkeit handel
 
     1) Drücken Sie *Win + R* und geben Sie ***services.msc*** ein. 2) Suchen Sie in der Liste und doppelklicken Sie auf *Windows Installer*. 3) Drücken Sie *Start* unter *Dienststatus* und drücken Sie *OK*. Wenn der Dienststatus **Wird ausgeführt** lautet, sollten Sie zuerst auf *Beenden* und anschließend auf *Starten*klicken. 4) Drücken Sie *Win + R*, geben Sie ***msiexec /unregister*** ein und drücken Sie *Eingabetaste*. 5) Drücken Sie erneut *Win + R*, geben Sie ***msiexec /regserver*** ein und drücken Sie *Eingabetaste*
 
-- Acquire full permissions on the drive for installation. It is possible that the error 1603 occurs because you don’t have full permissions on the file location. It's also not as easy as some of the other solutions:
+- Verschaffen Sie sich für die Installation volle Berechtigungen auf dem Laufwerk. Es ist möglich, dass der Fehler 1603 auftritt, weil Sie nicht die vollen Berechtigungen für den Speicherort der Datei haben. Es ist auch nicht so einfach wie einige der anderen Lösungen:
 
-    1) Open *File Explorer*, right-click the drive containing the installation location and select *Properties*. 2) Go to *Security* tab and click *Edit*. 3) Single-click *SYSTEM* and ensure that the *Allow* box of every item in *Permissions for SYSTEM* is checked (if it is checkable). Do the same check for *Administrators*. 4) Click *OK* to go back to *Properties* dialog. Then click *Advanced*. 5) Click *Change Permissions*. 6) On *Permissions* tab, double-click *Administrators*. 7) Select *This folder, subfolders and files* for *Applies to* field and check all the available *Basic permissions*. After that, hit *OK*. 8) Do the same operation above (from item 7) for *SYSTEM*. 9) Click *OK* all the way out. Versuchen Sie, AdGuard erneut zu installieren.
+    1) Öffnen Sie den *Datei-Explorer*, klicken Sie mit der rechten Maustaste auf das Laufwerk, das den Installationsort enthält, und wählen Sie *Eigenschaften*. 2) Öffnen Sie den Tab *Sicherheit* und klicken Sie auf *Bearbeiten*. 3) Klicken Sie einmal auf *SYSTEM* und vergewissern Sie sich, dass das Kontrollkästchen *Zulassen* für jedes Element in *Berechtigungen für SYSTEM* aktiviert ist (falls es aktiviert werden kann). Führen Sie die gleiche Prüfung für *Administratoren* durch. 4) Klicken Sie auf *OK*, um zum Dialogfeld *Eigenschaften* zurückzukehren. Klicken Sie dann auf *Erweitert*. 5) Klicken Sie auf *Berechtigungen ändern*. 6) Im Tab *Berechtigungen* doppelklicken Sie auf *Administratoren*. 7) Wählen Sie *Dieser Ordner, Unterordner und Dateien* für das Feld *Anwenden auf* und markieren Sie alle verfügbaren *Grundlegende Berechtigungen*. Danach drücken Sie *OK*. 8) Führen Sie den gleichen Vorgang (ab Punkt 7) für *SYSTEM* durch. 9) Klicken Sie auf *OK* bis zum Ende. Versuchen Sie, AdGuard erneut zu installieren.
 
-### Error 1618: Another installation is already in progress {#error-1618}
+### Fehler 1618: Eine andere Installation wird bereits ausgeführt {#error-1618}
 
 Dieser Fehler tritt auf, wenn mehrere Instanzen des AdGuard-Installationsprogramms gleichzeitig gestartet wurden. Das sollten Sie tun, wenn Sie diesen Fehler erhalten:
 
 - Starten Sie Ihren PC neu und starten Sie das Installationsprogramm erneut. Wenn Sie den Computer neu starten, werden alle laufenden Prozesse angehalten, einschließlich aller Kopien des Installationsprogramms.
 
-- Don't make multiple clicks on the installer even if it doesn't start right away. Manchmal kann es ein paar Sekunden dauern, bis die Benutzeroberfläche des Installationsprogramms angezeigt wird.
+- Führen Sie nicht mehrere Klicks auf das Installationsprogramm aus, auch wenn es nicht sofort startet. Manchmal kann es ein paar Sekunden dauern, bis die Benutzeroberfläche des Installationsprogramms angezeigt wird.
 
-### Error 1638: Another version of this product is already installed {#error-1638}
+### Fehler 1638: Eine andere Version dieses Produkts ist bereits installiert {#error-1638}
 
-It's very likely that you've already installed AdGuard before.
+Es ist sehr wahrscheinlich, dass Sie AdGuard schon einmal installiert haben.
 
-- Check if AdGuard is already installed on your computer. You can do it by pressing the *Win* key and typing in ***AdGuard***.
+- Überprüfen Sie, ob AdGuard bereits auf Ihrem Computer installiert ist. Sie können dies tun, indem Sie die Taste *Win* ⊞ drücken und ***AdGuard*** eintippen.
 
-- Maybe there're some leftover files from a previous AdGuard installation. Deinstallieren Sie AdGuard mit unserem speziellen [Deinstallationstool](../../installation#advanced) und wiederholen Sie dann die Installation.
+- Vielleicht sind noch Dateien von einer früheren AdGuard-Installation übrig geblieben. Deinstallieren Sie AdGuard mit unserem speziellen [Deinstallationstool](../../installation#advanced) und wiederholen Sie dann die Installation.
 
 ### Andere Fehler {#other}
 
-If you've encountered an error that's not listed above, it is possible that we can solve it by ourselves. But in order to do that, we need log files from you. Bitte führen Sie dazu die folgenden Schritte aus:
+Wenn Sie auf einen Fehler gestoßen sind, der oben nicht aufgeführt ist, ist es möglich, das AdGuard Ihnen helfen kann das Problem zu lösen. Dazu benötigen wir jedoch Protokolldateien von Ihnen. Bitte führen Sie dazu die folgenden Schritte aus:
 
-- Find and archive the **AdGuard installation logs** as it is described in [this article](../installation-logs).
+- Suchen und archivieren Sie die **AdGuard-Installationsprotokolle**, wie es in [diesem Artikel](../installation-logs) beschrieben ist.
 
-- Find and save to disk the **Event Viewer** logs. [This article](../system-logs) explains how to do that.
+- Suchen und speichern Sie die **Ereignisanzeige**-Protokolle auf der Festplatte. [Dieser Artikel](../system-logs) erklärt, wie das geht.
 
-- Please email all these files from two previous steps to the support team at **support@adguard.com** and describe the problem in the message body. Our tech support agents will reply to you as soon as possible.
+- Bitte senden Sie alle diese Dateien aus den beiden vorangegangenen Schritten per E-Mail an das Support-Team unter **support@adguard.com** und beschreiben Sie das Problem im Nachrichtentext. Unser Support-Team wird Ihnen so schnell wie möglich antworten.

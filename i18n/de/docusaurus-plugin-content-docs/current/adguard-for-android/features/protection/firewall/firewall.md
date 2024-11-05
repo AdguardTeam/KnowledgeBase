@@ -45,8 +45,8 @@ Um eine Regel oder App aus _Benutzerdefinierte Regeln_ zu löschen, wischen Sie 
 
 ### Benachrichtigungen
 
-If enabled, this feature notifies you when an app is attempting to violate an applicable firewall rule, e.g. attempts to access mobile data from which it is blocked. You can turn notifications on and off for all apps or for each app separately.
+Wenn diese Funktion aktiviert ist, werden Sie benachrichtigt, wenn eine App versucht, eine geltende Firewall-Regel zu verletzen, z. B. wenn sie versucht, auf mobile Daten zuzugreifen, für die sie gesperrt ist. Sie können die Benachrichtigungen für alle Apps oder für jede App einzeln ein- und ausschalten.
 
-Tap the notification to access the app’s Firewall settings, or temporary disable all Firewall rules for that app by tapping the corresponding button in the notification. You can also mute all Firewall notifications for the app by tapping the _Mute_ button in the notification for that app.
+Tippen Sie auf die Benachrichtigung, um auf die Firewall-Einstellungen der App zuzugreifen, oder deaktivieren Sie vorübergehend alle Firewall-Regeln für diese App, indem Sie auf die entsprechende Schaltfläche in der Benachrichtigung tippen. Sie können auch alle Firewall-Benachrichtigungen für die App stummschalten, indem Sie auf die Schaltfläche _Stumm_ in der Benachrichtigung für diese App tippen.
 
-Note that if notifications for multiple apps would be displayed, they will be bundled into a single notification instead.
+Wenn Benachrichtigungen für mehrere Apps angezeigt werden sollen, werden sie stattdessen in einer einzigen Benachrichtigung gebündelt.

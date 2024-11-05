@@ -1,6 +1,6 @@
 ---
 title: AdGuard VPN ile entegrasyon
-sidebar_position: 8
+sidebar_position: 6
 ---
 
 :::info

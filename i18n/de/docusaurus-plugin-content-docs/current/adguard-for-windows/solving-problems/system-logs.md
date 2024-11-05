@@ -1,5 +1,5 @@
 ---
-title: How to collect Windows system logs
+title: So erfassen Sie Windows-Systemprotokolle
 sidebar_position: 5
 ---
 
@@ -15,9 +15,9 @@ Daten und/oder Dateien, die in Systemprotokollen enthalten sind, werden gemäß 
 
 :::
 
-To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need Windows system log files. Windows event logs contain records about all errors that occur with the installed software, including AdGuard. Nachfolgend finden Sie eine kurze Anleitung, wie Sie die Protokolldateien abrufen und bei Bedarf an unseren Kundenservice senden können.
+Zur Analyse und Diagnose verschiedener Probleme, die auftreten können, benötigt der AdGuard-Support möglicherweise Windows-Systemprotokolldateien. Die Ereignisprotokolle von Windows enthalten Aufzeichnungen über alle Fehler, die im Zusammenhang mit der installierten Software, einschließlich AdGuard, auftreten. Nachfolgend finden Sie eine kurze Anleitung, wie Sie die Protokolldateien abrufen und bei Bedarf an unseren Kundenservice senden können.
 
-1. Press *Win + R*
+1. Drücken Sie die Tasten *Win + R*
 
 1. Geben Sie in dem sich öffnenden Fenster `eventvwr` ein und klicken Sie auf *OK*:
 
@@ -29,22 +29,22 @@ To analyze and diagnose different problems that may potentially arise, the AdGua
 
     Um die benötigten Dateien zu speichern, gehen Sie wie folgt vor:
 
-    - Open *Application*: *Event Viewer (Local)* → *Windows Logs* → *Application*.
+    - Öffnen Sie *Anwendung*: *Ereignisanzeige (lokal)* → *Windows-Protokolle* → *Anwendung*.
 
-    - Right-click *Application* and in the drop-down menu select *Save All Events As...*
+    - Klicken Sie mit der rechten Maustaste auf *Anwendung* und wählen Sie im Auswahlmenü *Alle Ereignisse speichern unter...*
 
-    - Wählen Sie einen Namen und einen Speicherort und klicken Sie auf *Speichern*. Select *Display information for the following languages*. You need to check the checkbox next to *English*. Klicken Sie auf *OK*.
+    - Wählen Sie einen Namen und einen Speicherort und klicken Sie auf *Speichern*. Wählen Sie *Anzeigeinformationen für diese Sprachen:*. Sie müssen das Kästchen neben *Deutsch* ankreuzen. Klicken Sie auf *OK*.
 
-    - Open *System*: *Event Viewer (Local)* → *Windows Logs* → *System*.
+    - Öffnen Sie *System*: *Ereignisanzeige (lokal)* → *Windows-Protokolle* → *System*.
 
-    - Right-click *System* and in the drop-down menu select *Save All Events As...*
+    - Klicken Sie mit der rechten Maustaste auf *System* und wählen Sie im Dropdown-Menü *Alle Ereignisse speichern unter...*
 
-    - Choose a destination folder, enter the name, click *Save*. Select *Display information for the following languages*. You need to tick the box next to *English*. Klicken Sie auf *OK*.
+    - Wählen Sie einen Zielordner, geben Sie den Namen ein und klicken Sie auf *Speichern*. Wählen Sie *Anzeigeinformationen für diese Sprachen:*. Sie müssen das Kästchen neben *Deutsch* ankreuzen. Klicken Sie auf *OK*.
 
 Bitte senden Sie die beiden Dateien, die Sie soeben gespeichert haben, an **support@adguard.com**.
 
 :::note
 
-AdGuard ist dem Schutz Ihrer Privatsphäre verpflichtet. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Bevor Sie Ihre Protokolle an das Support-Team senden, überprüfen Sie bitte die Datei, da sie zusätzliche Informationen enthalten kann, die Sie vielleicht nicht freigeben möchten. Wenn sie solche persönlichen Informationen enthält, empfehlen wir Ihnen, sie zuerst zu löschen.
+AdGuard ist dem Schutz Ihrer Privatsphäre verpflichtet. Wir halten uns konsequent an unsere [Datenschutzerklärung](https://adguard.com/privacy/windows.html) und sammeln keine privaten Informationen über Sie. Bevor Sie Ihre Protokolle an das Support-Team senden, überprüfen Sie bitte die Datei, da sie zusätzliche Informationen enthalten kann, die Sie vielleicht nicht freigeben möchten. Wenn sie solche persönlichen Informationen enthält, empfehlen wir Ihnen, sie zuerst zu löschen.
 
 :::

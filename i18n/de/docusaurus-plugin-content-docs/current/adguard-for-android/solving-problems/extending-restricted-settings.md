@@ -18,19 +18,19 @@ AdGuard has a strict no-logging policy, which means that we do not collect your 
 :::
 
 1. On your Android device, open the **Settings app**.
-2. Tap **Apps**.
-3. Tap **AdGuard**
+2. Tippen Sie auf **Apps**.
+3. Tippen Sie auf **AdGuard**
 
 ![AdGuard in Apps \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted1.png)
 
-If you can't find it, first tap **See all apps** or **App info**.
+Wenn Sie sie dort nicht finden können, tippen Sie zunächst auf **Alle Apps anzeigen** oder **App-Info**.
 
 1. Tap **More** (⁝) → _Allow restricted settings_.
 
-![Allow restricted settings \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted2.png)
+![Eingeschränkte Einstellungen zulassen \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted2.png)
 
-Follow the on-screen instructions.
+Folgen Sie den Anweisungen auf dem Bildschirm.
 
-All done! Now the _Firewall_ and _Detect Samsung Pay_ features will work correctly.
+Fertig! Jetzt funktionieren die Funktionen _Firewall_ und _Samsung Pay erkennen_ korrekt.
 
-![Restricted settings allowed for AdGuard \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted3.png)
+![Eingeschränkte Einstellungen für AdGuard erlaubt \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted3.png)

@@ -25,11 +25,11 @@ Manchmal müssen wir sie analysieren, um bestimmte Anzeigen zu sperren, die aus 
 
 1. Öffnen Sie AdGuard und gehen Sie zu **Einstellungen** (⚙ Symbol in der unteren rechten Ecke).
 2. Tippen Sie auf **Allgemein** → **Erweitert** → **Low-Level-Einstellungen**.
-3. Scroll down and activate **Capture HAR** in the Filtering section.
+3. Blättern Sie nach unten und aktivieren Sie **HAR erfassen** im Abschnitt „Filterung“.
 4. Öffnen Sie die App und führen Sie die erforderlichen Aktionen durch, um das Problem zu reproduzieren.
-5. Turn **Capture HAR** off.
+5. Deaktivieren Sie **HAR erfassen**.
 6. Wechseln Sie zurück zu **Erweitert**.
-7. Tap **Export logs and system info** → **Allow** (if necessary) → **Save**.
+7. Tippen Sie auf **Protokolle und Systeminformationen exportieren** → **Zulassen** (falls erforderlich) → **Speichern**.
 
 **Senden Sie die erzeugte Datei mit den Protokollen an den AdGuard-Support.**
 

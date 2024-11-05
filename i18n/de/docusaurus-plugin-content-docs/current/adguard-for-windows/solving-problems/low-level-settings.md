@@ -31,11 +31,11 @@ Wenn aktiviert, blockiert AdGuard TCP Fast Open im Edge-Browser. Um die Einstell
 
 ### Encrypted Client Hello verwenden
 
-Jede verschlüsselte Internetverbindung hat einen unverschlüsselten Teil. Dies ist das allererste Paket, das den Namen des Servers enthält, mit dem Sie sich verbinden. Die verschlüsselte Client-Hallo-Technologie soll dieses Problem lösen und das letzte bisschen an unverschlüsselter Information verschlüsseln. To benefit from it, enable the *Use Encrypted Client Hello* option. Sie verwendet einen lokalen DNS-Proxy, um nach der ECH-Konfiguration für die Domain zu suchen. If it is found, Client Hello packet will be encrypted.
+Jede verschlüsselte Internetverbindung hat einen unverschlüsselten Teil. Dies ist das allererste Paket, das den Namen des Servers enthält, mit dem Sie sich verbinden. Die verschlüsselte Client-Hallo-Technologie soll dieses Problem lösen und das letzte bisschen an unverschlüsselter Information verschlüsseln. Um davon zu profitieren, aktivieren Sie die Option *Encrypted Client Hello verwenden*. Sie verwendet einen lokalen DNS-Proxy, um nach der ECH-Konfiguration für die Domain zu suchen. Wenn es gefunden wird, wird das Client Hello-Paket verschlüsselt.
 
 ### Zertifikatstransparenz von Websites prüfen
 
-Überprüft die Authentizität aller Zertifikate für die Domain basierend auf der Chrome Certificate Transparency Policy. If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. Chrome wiederum sperrt sie.
+Überprüft die Authentizität aller Zertifikate für die Domain basierend auf der Chrome Certificate Transparency Policy. Wenn das Zertifikat nicht mit der Chrome Certificate Transparency Policy übereinstimmt, wird die Website von AdGuard nicht gefiltert. Chrome wiederum sperrt sie.
 
 ### SSL/TLS-Zertifikatssperrprüfungen aktivieren
 
@@ -73,7 +73,7 @@ Andernfalls filtert AdGuard den gesamten Datenverkehr sofort und ohne Umleitung.
 
 ### Hauptfenster bei Systemstart öffnen
 
-Aktivieren Sie diese Option, damit sich das Hauptfenster von AdGuard nach dem Laden des Systems öffnet. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*.
+Aktivieren Sie diese Option, damit sich das Hauptfenster von AdGuard nach dem Laden des Systems öffnet. Beachten Sie, dass es keinen Einfluss darauf hat, ob der eigentliche Filterdienst gestartet wurde oder nicht. Diese Einstellung befindet sich in *Einstellungen → Allgemeine Einstellungen*.
 
 ### Filterung beim Systemstart aktivieren
 
@@ -81,7 +81,7 @@ Ab v7.12 filtert der AdGuard-Dienst standardmäßig keinen Datenverkehr nach dem
 
 :::note
 
-Before v7.12, the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.
+Vor Version 7.12 startete der AdGuard-Dienst standardmäßig im Filtermodus (auch wenn die Option *AdGuard beim Systemstart starten* deaktiviert war). Wenn Sie mit dem alten Verhalten zufrieden waren, aktivieren Sie diese Option.
 
 :::
 
@@ -95,7 +95,7 @@ Wenn Sie nicht möchten, dass AdGuard bestimmte Subnetze filtert, aktivieren Sie
 
 ### Das Schreiben im HAR-Format erlauben
 
-Diese Option sollte **nur für die Fehlersuche** aktiviert werden. Ticking the checkbox will make AdGuard create a file in the HAR 1.2 format containing information about all filtered HTTP requests. Diese Datei kann mit der App „Fiddler“ analysiert werden. Beachten Sie, dass sich Ihr Surfen im Internet dadurch erheblich verlangsamen kann.
+Diese Option sollte **nur für die Fehlersuche** aktiviert werden. Wenn Sie das Kontrollkästchen aktivieren, erstellt AdGuard eine Datei im Format HAR 1.2 mit Informationen über alle gefilterten HTTP-Anfragen. Diese Datei kann mit der App „Fiddler“ analysiert werden. Beachten Sie, dass sich Ihr Surfen im Internet dadurch erheblich verlangsamen kann.
 
 ### Zusätzliches Leerzeichen in die einfache HTTP-Anfrage einfügen
 
@@ -113,9 +113,9 @@ Diese Option wird nur angewendet, wenn die Option *Schutz vor DPI* im Privatsph�
 
 ### Größe der Fragmentierung des ersten TLS-Pakets anpassen
 
-Gibt die Größe der TCP-Paketfragmentierung an, um eine Deep Packet Inspection zu vermeiden. This option only affects secured (HTTPS) traffic.
+Gibt die Größe der TCP-Paketfragmentierung an, um eine Deep Packet Inspection zu vermeiden. Diese Option wirkt sich nur auf verschlüsselten (HTTPS) Datenverkehr aus.
 
-If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
+Wenn diese Option aktiviert ist, teilt AdGuard das initiale TLS-Paket (das Client-Hallo-Paket) in zwei Teile auf: der erste hat die angegebene Länge und der zweite den Rest, bis zur Länge des gesamten initialen TLS-Pakets.
 
 Gültige Werte: 1–1500. Wird eine ungültige Größe angegeben, wird der vom System ausgewählte Wert verwendet. Diese Option wird nur angewendet, wenn die Option *Schutz vor DPI* im Privatsphärenmodus aktiviert ist.
 
@@ -139,17 +139,17 @@ Hier können Sie eine Leerlaufzeit in Sekunden angeben, bevor ein Keepalive-Test
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+Diese Einstellung funktioniert nur, wenn die Option *TCP-Keepalive aktivieren* aktiviert ist.
 
 :::
 
 ### TCP-Keepalive-Zeitüberschreitung
 
-Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. Wird 0 (Null) angegeben, wird der vom System gewählte Wert verwendet.
+Hier können Sie die Zeit in Sekunden angeben, bevor Sie einen weiteren Keepalive-Test an einen nicht reagierenden Peer senden. Wird 0 (Null) angegeben, wird der vom System gewählte Wert verwendet.
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+Diese Einstellung funktioniert nur, wenn die Option *TCP-Keepalive aktivieren* aktiviert ist.
 
 :::
 
@@ -167,11 +167,11 @@ Aktiviert HTTP/3 für DNS-over-HTTPS-Upstreams, um die Verbindung zu beschleunig
 
 ### Fallback-DNS-Upstreams verwenden
 
-Normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
+Normale Abfragen werden an den Fallback-Upstream umgeleitet, wenn alle DNS-Anfragen an die ausgewählten Upstreams fehlschlagen.
 
 ### Parallele Abfrage von DNS-Upstreams
 
-All upstreams will be queried in parallel and the first response is returned. Da DNS-Abfragen parallel durchgeführt werden, erhöht das Aktivieren dieser Funktion die Internetgeschwindigkeit.
+Alle Upstreams werden parallel abgefragt und die erste Antwort wird zurückgegeben. Da DNS-Abfragen parallel durchgeführt werden, erhöht das Aktivieren dieser Funktion die Internetgeschwindigkeit.
 
 ### Immer auf fehlgeschlagene DNS-Anfragen antworten
 
@@ -179,7 +179,7 @@ Wenn die Adressauflösung in jedem der weitergeleiteten Upstreams sowie in den F
 
 ### Filtern von sicheren DNS-Anfragen aktivieren
 
-AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
+AdGuard leitet sichere DNS-Anfragen an den lokalen DNS-Proxy um, zusätzlich zu den normalen DNS-Anfragen.
 
 ### Sperrmodus für Hosts-Regeln
 
@@ -233,4 +233,4 @@ Alle DNS-Anfragen an die hier aufgeführten Domains werden an den Standard-DNS-S
 
 ### Bestimmte WLAN-Netzwerknamen (SSIDs) von der DNS-Filterung ausschließen
 
-DNS protection will not include Wi-Fi networks listed in this section. Geben Sie die Namen der WLAN-Netzwerke (SSIDs) an, eine pro Zeile. Dies kann nützlich sein, wenn ein bestimmtes WLAN-Netzwerk bereits durch AdGuard Home oder ein anderes DNS-Schutzsystem geschützt ist. In diesem Fall ist es überflüssig, DNS-Anfragen erneut zu filtern.
+Der DNS-Schutz umfasst nicht die in diesem Abschnitt aufgeführten WLAN-Netzwerke. Geben Sie die Namen der WLAN-Netzwerke (SSIDs) an, eine pro Zeile. Dies kann nützlich sein, wenn ein bestimmtes WLAN-Netzwerk bereits durch AdGuard Home oder ein anderes DNS-Schutzsystem geschützt ist. In diesem Fall ist es überflüssig, DNS-Anfragen erneut zu filtern.
