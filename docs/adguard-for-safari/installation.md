@@ -11,7 +11,7 @@ This article is about AdGuard for Safari, which safeguards only your Safari brow
 
 ## System requirements
 
-Requires macOS 10.15 (Catalina). A minimum supported version of Safari — 13 or later.
+Requires macOS 10.15 (Catalina). The minimum supported version of Safari is 13 or later.
 
 ## How to install AdGuard for Safari {#install}
 
@@ -35,13 +35,7 @@ AdGuard for Safari is a free app presented on the App Store. To install it on yo
 
     ![Extensions checked](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 
-1. In order for AdGuard to have an effect on websites, the *Extensions* setting in Safari must be enabled. Open Safari → *Settings* → *Websites* → *Extensions*. If you want to enable AdGuard on every website, set *For other websites* to *Allow*.
-
-<!--     :::note
-
-    This step is needed for iOS 9.0 and later, macOS 10.11 with Safari 10, and macOS 10.12 and later.
-
-    ::: -->
+1. For AdGuard to work on websites, the *Extensions* setting in Safari must be enabled. Open Safari → *Settings* → *Websites* → *Extensions*. If you want to enable AdGuard on every website, set *For other websites* to *Allow*.
 
 ![Mac Safari Content Blocker Setting](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/macos_extensions.png)
 <!-- adguard-for-safari-content-blocker-setting-macos.png -->
