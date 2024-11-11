@@ -71,7 +71,7 @@ Doba v sekundách před odesláním další udržovací sondy neodpovídajícím
 
 #### `network.https.ech.enabled`
 
-Používá místní DNS proxy k vyhledání konfigurací v seznamech konfigurací ECH. Pokud je nalezeno, zašifruje ClientHellos.
+Používá místní DNS proxy k vyhledání konfigurací v seznamech konfigurací ECH. Pokud je nalezeno, zašifruje Client Hello.
 
 #### `network.https.enforce.certificate.transparency`
 
@@ -158,6 +158,12 @@ Povolí HTTP/3 pro odchozí připojení DNS-over-HTTPS pro zrychlení připojen�
 #### `dns.proxy.block.encrypted.client.hello.response`
 
 Odstraní z dotazů parametry Encrypted Client Hello.
+
+#### `dns.proxy.private.relay.sequoia.workaround.enabled`
+
+Blokuje domény macOS Private Relay, pokud má uživatel povolenou bránu firewall, která následně zakáže funkci *Private Relay*.
+
+Povolení tohoto nastavení je užitečné v následujícím scénáři: pokud je aktivní macOS Private Relay, filtrování nemůže správně fungovat a musí být zakázáno. Ve verzích macOS až do verze 14 mohl AdGuard při zapnuté ochraně automaticky vypnout funkci Private Relay. Od systému macOS 15 to však již není možné, pokud je aktivní brána firewall. Zapnutím tohoto nastavení můžete zakázat funkci Private Relay, i když je brána firewall povolena, a překonat tak předchozí omezení.
 
 ### Nastavení Režimu utajení
 

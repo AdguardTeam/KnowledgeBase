@@ -23,13 +23,13 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 AdGuard'ı Microsoft Windows altında bir PC veya tablette kullanmak için kurulum paketini indirmeli ve kurulum programını başlatmalısınız. Aşağıdaki işlemleri gerçekleştirin:
 
-1. Go to the [AdGuard website](http://adguard.com) in the address bar and click *Download* [on the homepage](https://adguard.com/download.html?auto=1).
+1. Adres çubuğundaki [AdGuard sitesine](http://adguard.com) gidin ve [ana sayfadaki](https://adguard.com/download.html?auto=1) *İndir* öğesine tıklayın.
 
    ![AdGuard'ı indir](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
 
 2. İndirme işlemi tamamlandığında, İndirilenler çubuğunda gösterilen *Aç* düğmesine basın veya *adguardInstaller.exe* dosya adına tıklayın.
 
-   !["Çalıştır" öğesine basın](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/click-download.png)
+   !["Çalıştır" öğesine bas](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/click-download.png)
 
 3. Uygulamanın bilgisayarınızda değişiklik yapmasına izin vermek isteyen Kullanıcı Hesabı Denetimi iletişim kutusunu göreceksiniz. *Evet* öğesine tıklayın.
 
@@ -37,7 +37,7 @@ AdGuard'ı Microsoft Windows altında bir PC veya tablette kullanmak için kurul
 
 4. Ardından, uygulamanın kurulacağı PC'nizdeki klasörü seçin.
 
-   ![Klasör seçin *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/install-wizard.png)
+   ![Klasör seç *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/install-wizard.png)
 
    Varsayılan kurulum yolunu kabul etmiyorsanız, *Gözat* öğesine basın, *Klasöre Gözat* penceresinde AdGuard kurması için klasörü seçin ve *Tamam* öğesine tıklayarak seçiminizi onaylayın. AdGuard'ı *Yeni Klasör Oluştur* öğesine tıklayıp adını girerek yeni bir klasöre de kurabilirsiniz. AdGuard için bir masaüstü kısayolu oluşturmak için *Masaüstü kısayolu oluştur* kutusunu işaretleyin. Kuruluma devam etmek için *Kur* öğesine basın.
 
@@ -104,3 +104,21 @@ Sonraki adımları yalnızca ilk iki adımı gerçekleştirmek herhangi bir nede
 ![Genişletilmiş kaldırma işlemi tamamlandı *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
 
 AdGuard başarıyla kaldırıldı!
+
+#### Running the uninstaller in console mode
+
+Besides running the advanced uninstaller in its user-interactive mode, you can also use command-line arguments to uninstall AdGuard for Windows. Bunu yapmak için, aşağıdaki talimatları izleyin:
+
+1. Başlat menüsünden *cmd* yazarak Komut İstemi'ni açın.
+2. Use `/console` to run the uninstaller in console mode, without the interactive UI. All the command-line parameters below will be ignored if the `/console` mode is not activated.
+3. Use `/adblocker` to uninstall AdGuard for Windows. Bu şöyle görünmelidir:
+
+   `Adguard.UninstallUtility.exe /console /adblocker`
+
+4. You can also use `/advanced` to force the uninstaller to run in *Advanced mode* and `/settings` to force the uninstaller to remove user settings along with the application.
+
+:::not
+
+Başarılı bir kaldırma işlemi için `/console` ve `/adblocker` parametrelerinin kullanılması gereklidir. `/advanced` ve `/settings` parametreleri isteğe bağlıdır.
+
+:::

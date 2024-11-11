@@ -135,7 +135,7 @@ Protože Shadowsocks používá SOCKS5, musíte také nastavit hodnotu nastaven�
 
 #### Příklad 2: Konfigurace odchozího proxy Surge
 
-V Big Sur v11.1+ nejsou známy žádné konflikty mezi AdGuardem a proxy Surge. Používáte-li starší verzi Big Sur (před verzí 11.1), zkontrolujte, zda je v pravém dolním rohu vypnutá možnost **Systémový proxy**. V opačném případě nebude Surge s AdGuardem fungovat. Na druhou stranu, **Vylepšený režim** lze povolit, aniž by to způsobilo konflikt v jakékoli verzi Big Sur.
+V Big Sur v11.1+ nejsou známy žádné konflikty mezi AdGuardem a proxy Surge. Používáte-li starší verzi Big Sur (před verzí 11.1), zkontrolujte, zda je v pravém dolním rohu vypnutá možnost **Systémový proxy**. V opačném případě nebude Surge s AdGuardem fungovat. Na druhou stranu, **Vylepšený režim** lze povolit, aniž by to způsobilo konflikt v jakékoli verzi Big Sur.l
 
 ![Configuring an upstream Surge proxy *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/outbound-proxy.png)
 

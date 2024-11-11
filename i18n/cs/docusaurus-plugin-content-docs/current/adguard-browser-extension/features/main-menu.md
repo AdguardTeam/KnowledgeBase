@@ -1,6 +1,6 @@
 ---
-title: Hlavní nabídka rozšíření
-sidebar_position: 4
+title: Hlavní nabídka
+sidebar_position: 1
 ---
 
 :::info
