@@ -159,6 +159,12 @@ Bağlantıyı hızlandırmak için DNS-over-HTTPS üst kaynakları için HTTP/3'
 
 Encrypted Client Hello parametrelerini yanıtlardan kaldırır.
 
+#### `dns.proxy.private.relay.sequoia.workaround.enabled`
+
+Kullanıcının bir güvenlik duvarı etkinse macOS Özel Geçişi alan adlarını engeller ve bu da *Özel Geçişi* özelliğini devre dışı bırakır.
+
+Enabling this setting is useful in the following scenario: when macOS Private Relay is active, filtering cannot function properly and must be disabled. macOS 14'e kadar olan sürümlerde, Koruma etkinleştirildiğinde AdGuard Özel Geçişi otomatik olarak devre dışı bırakabiliyordu. Ancak, macOS 15 ile birlikte, eğer bir güvenlik duvarı etkinse bu artık mümkün değil. Bu ayarı açarak, güvenlik duvarı etkinleştirildiğinde bile Özel Geçişi devre dışı bırakabilir ve önceki kısıtlamanın üstesinden gelebilirsiniz.
+
 ### Gizlilik Modu ayarları
 
 #### `stealth.antidpi.http.split.fragment.size`

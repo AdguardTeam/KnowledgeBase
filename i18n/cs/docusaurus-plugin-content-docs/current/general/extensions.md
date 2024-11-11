@@ -5,81 +5,81 @@ sidebar_position: 6
 
 ## Uživatelské skripty
 
-Userscripts (we also call them "extensions") are, de facto, miniprograms written in JavaScript. Upravují nebo rozšiřují funkce jedné nebo více webových stránek. Mnoho uživatelů AdGuardu již možná zná uživatelské skripty jako AdGuard asistent, Blokátor vyskakovacích oken a AdGuard Extra.
+Uživatelské skripty (říkáme jim také "rozšíření") jsou de facto miniprogramy napsané v jazyce JavaScript. Upravují nebo rozšiřují funkce jedné nebo více webových stránek. Mnoho uživatelů AdGuardu již možná zná uživatelské skripty jako AdGuard asistent, Blokátor vyskakovacích oken a AdGuard Extra.
 
-:::note Supported apps
+:::note Podporované aplikace
 
-AdGuard může výrazně rozšířit funkčnost webových stránek tím, že funguje jako správce uživatelských skriptů. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/features/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
+AdGuard může výrazně rozšířit funkčnost webových stránek tím, že funguje jako správce uživatelských skriptů. V našich třech produktech můžete přidávat vlastní skripty nebo spravovat ty stávající: [AdGuard pro Windows](/adguard-for-windows/features/extensions), [AdGuard pro Android](/adguard-for-android/features/settings#userscripts) a [AdGuard pro macOS](/adguard-for-mac/features/extensions).
 
 :::
 
 ### Doporučené skripty AdGuardu
 
-Tyto uživatelské skripty pocházejí přímo od vývojářů AdGuardu a můžeme zaručit, že jsou účinné a bezpečné. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you are exposing yourself to a certain risk, as some scripts may be harmful to your computer.
+Tyto uživatelské skripty pocházejí přímo od vývojářů AdGuardu a můžeme zaručit, že jsou účinné a bezpečné. Některé uživatelské skripty vyvinuté jinými uživateli, které považujeme za dobré a spolehlivé, najdete [v další další sekci](#top-picks). Níže najdete také některé z [populárních webových stránek se skripty](#more-userscripts), ale nezapomeňte, že kdykoli stahujete uživatelský skript z neznámého zdroje, vystavujete se určitému riziku, protože některé skripty mohou být pro váš počítač škodlivé.
 
 #### AdGuard Extra
 
-Rozšíření, které blokuje reklamu v obtížných případech, kdy běžný přístup založený na filtru nestačí. AdGuard Extra comes pre-installed in AdGuard standalone apps, except for the one for iOS, so you don't need to do anything to enable it. Pokud jej však chcete používat společně s Rozšířením prohlížeče AdGuard nebo jiným blokátorem reklam, musíte použít další rozšíření. Learn more about this userscript and how to install it on [GitHub](https://github.com/AdguardTeam/AdGuardExtra).
+Rozšíření, které blokuje reklamu v obtížných případech, kdy běžný přístup založený na filtru nestačí. AdGuard Extra je předinstalován v samostatných aplikacích AdGuard, s výjimkou aplikace pro iOS, takže pro jeho aktivaci nemusíte nic dělat. Pokud jej však chcete používat společně s Rozšířením prohlížeče AdGuard nebo jiným blokátorem reklam, musíte použít další rozšíření. Více informací o tomto uživatelském skriptu a jeho instalaci najdete na [GitHub](https://github.com/AdguardTeam/AdGuardExtra).
 
 ![AdGuard Extra](https://cdn.adtidy.org/content/kb/ad_blocker/general/adguard-extra.png)
 
 #### AdGuard blokátor vyskakovacích oken
 
-The name speaks for itself: it blocks popups — one of the most annoying types of ads on websites. Learn more about this userscript, its key features, and installation on [GitHub](https://github.com/AdguardTeam/PopupBlocker).
+Název mluví sám za sebe: blokuje vyskakovací okna — jeden z nejotravnějších typů reklam na webových stránkách. Více informací o tomto uživatelském skriptu, jeho klíčových funkcích a instalaci najdete na [GitHubu](https://github.com/AdguardTeam/PopupBlocker).
 
 ![AdGuard Popup Blocker](https://cdn.adtidy.org/content/kb/ad_blocker/general/popup-blocker-installation.png)
 
 #### AdGuard asistent (starší verze)
 
-This custom extension is designed to control filtering directly from the browser page (manual blocking, allowlisting, etc.).
+Toto vlastní rozšíření je určeno k ovládání filtrování přímo ze stránky prohlížeče (ruční blokování, vyloučení webu atd.).
 
 :::note
 
-This version of Assistant is legacy and there is no point in using it on new systems, as it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). However, the legacy Assistant may be useful if there is no Browser Assistant for your browser. If this is your case, you can learn how to install AdGuard Assistant on [GitHub](https://github.com/AdguardTeam/AdguardAssistant).
+Tato verze Asistenta je starší a nemá smysl ji používat v nových systémech, protože byla nahrazena plnohodnotným [Asistentem prohlížeče](https://adguard.com/adguard-assistant/overview.html). Starší asistent však může být užitečný, pokud pro váš prohlížeč není k dispozici asistent prohlížeče. Pokud je to váš případ, můžete se dozvědět, jak nainstalovat Asistenta AdGuard na [GitHubu](https://github.com/AdguardTeam/AdguardAssistant).
 
 :::
 
 #### Zakázat AMP
 
-Skript, který je předinstalován pouze v aplikaci AdGuard pro Android. Zakáže AMP (Accelerated Mobile Pages) na stránce s výsledky vyhledávání Google. Learn more about this userscript and how to install it on [GitHub](https://github.com/AdguardTeam/DisableAMP).
+Skript, který je předinstalován pouze v aplikaci AdGuard pro Android. Zakáže AMP (Accelerated Mobile Pages) na stránce s výsledky vyhledávání Google. Více informací o tomto uživatelském skriptu a jeho instalaci najdete na [GitHubu](https://github.com/AdguardTeam/DisableAMP).
 
 ![Disable AMP](https://cdn.adtidy.org/content/kb/ad_blocker/general/disable-amp-installation.png)
 
-### Top picks outside AdGuard{#top-picks}
+### Nejlepší výběry mimo AdGuard{#top-picks}
 
-These userscripts are not developed by AdGuard, and therefore we can't give a 100% guarantee that they are safe and/or work at all times. However, in our experience they deserve a recommendation because they've all earned their good reputation.
+Tyto uživatelské skripty nebyly vyvinuty AdGuardem, a proto nemůžeme poskytnout 100% záruku, že jsou bezpečné a/nebo vždy fungují. Podle našich zkušeností si však doporučení zaslouží, protože všechny si svou dobrou pověst zaslouží.
 
 #### Don't track me Google
 
-This script removes Google's tracking feature from the links in Google search results. It speeds up the loading of search results and allows you to right-click or tap to copy the link URL.
+Tento skript odstraní z odkazů ve výsledcích vyhledávání Google funkci sledování. Urychluje načítání výsledků vyhledávání a umožňuje kliknutím pravým tlačítkem myši nebo klepnutím zkopírovat adresu URL odkazu.
 
-Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me-google). This userscript can be downloaded from [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) and installed in any AdGuard CoreLibs-based app.
+Jeho zdrojový kód je [k dispozici na GitHubu](https://github.com/Rob--W/dont-track-me-google). Tento uživatelský skript lze stáhnout ze stránek [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) a nainstalovat do libovolné aplikace založené na AdGuard CoreLibs.
 
 #### microShield
 
-A userscript for people visiting Korean websites and some international websites. The microShield userscript blocks Ad-Shield ads and anti-adblocks. Its original source code is available at [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) and [AdShield Defuser](https://github.com/seia-soto/adshield-defuser). This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about microShield and how to install it on [GitHub](https://github.com/List-KR/microShield).
+Uživatelský skript pro lidi, kteří navštěvují korejské a některé mezinárodní webové stránky. Uživatelský skript microShield blokuje Ad-Shield a anti-adblock. Jeho původní zdrojový kód je k dispozici na [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) a [AdShield Defuser](https://github.com/seia-soto/adshield-defuser). Tento uživatelský skript lze nainstalovat v AdGuard CoreLibs, Violentmonkey, Tampermonkey a [quoid/userscripts](https://github.com/quoid/userscripts). Více informací o skriptu microShield a jeho instalaci najdete na [GitHubu](https://github.com/List-KR/microShield).
 
 ### Kde můžete získat další uživatelské skripty?{#more-userscripts}
 
-Since userscripts are mainly created by enthusiasts, you should be cautious when installing them. Any script from an unknown source carries a potential risk. Yet, there is a great variety of interesting scripts that, if installed carefully and responsibly, can really make using some websites more convenient.
+Protože uživatelské skripty vytvářejí především nadšenci, měli byste být při jejich instalaci opatrní. Každý skript z neznámého zdroje představuje potenciální riziko. Přesto existuje celá řada zajímavých skriptů, které při pečlivé a zodpovědné instalaci mohou skutečně zpříjemnit používání některých webových stránek.
 
 Zde popíšeme některé z nejoblíbenějších katalogů uživatelských skriptů.
 
 #### Userscript.Zone
 
-[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high level of credibility as only scripts from moderated pages are displayed.
+[Userscript.Zone](https://www.userscript.zone) je webová stránka, která umožňuje vyhledávat uživatelské skripty zadáním odpovídající adresy URL nebo domény. Webové stránky se snadno používají a mají vysokou úroveň důvěryhodnosti, protože se na nich zobrazují pouze skripty z moderovaných stránek.
 
 #### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) is a userscript catalog of Stylish creators. The scripts in this catalog are moderated, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/) je katalog uživatelských skriptů tvůrců Stylish. Skripty v tomto katalogu jsou moderovany, takže jejich důvěryhodnost je mnohem vyšší.
 
 #### OpenUserJS.org
 
-[OpenUserJS.org](https://openuserjs.org/) is an open-source userscript catalog written in nodeJS. It's not moderated, so keep an eye out for suspicious scripts.
+[OpenUserJS.org](https://openuserjs.org/) je open-source katalog uživatelských skriptů napsaný v nodeJS. Není moderován, takže si dávejte pozor na podezřelé skripty.
 
 #### Komunita
 
-If you like the idea of customizing your browser with userscripts and have questions, you can ask them on one of these websites:
+Pokud se vám líbí myšlenka přizpůsobení prohlížeče pomocí uživatelských skriptů a máte dotazy, můžete je položit na jedné z těchto webových stránek:
 
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/userscripts)
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
@@ -89,15 +89,15 @@ If you like the idea of customizing your browser with userscripts and have quest
 
 #### Žádost o licenci
 
-If you are developing your own custom script and want to test how it works with AdGuard, you can request a beta license key for the app.
+Pokud vyvíjíte vlastní skript a chcete si vyzkoušet, jak s AdGuardem funguje, požádejte o licenční klíč pro beta verzi aplikace.
 
 Chcete-li ji získat, zašlete e-mail na adresu devteam@adguard.com a uveďte následující informace:
 
-**Subject:** Userscript author license request
+**Předmět:** Žádost o autorskou licenci uživatelského skriptu
 
-**Body:** Please tell us about the userscripts you are working on.
+**Popis:** Řekněte nám prosím o uživatelských skriptech, na kterých pracujete.
 
-Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request\&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK).
+Zde je [odkaz na mail](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request\&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK).
 
 #### Kompatibilita
 
@@ -135,7 +135,7 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 
 #### Nepodporované vlastnosti
 
-These properties will be simply ignored by AdGuard.
+Tyto vlastnosti bude AdGuard jednoduše ignorovat.
 
 ```text
 @unwrap
@@ -170,7 +170,7 @@ GM_addStyle
 GM_log
 ```
 
-[Here](https://wiki.greasespot.net/GM.info) you can find more information about Greasemonkey API.
+[Zde](https://wiki.greasespot.net/GM.info) najdete další informace o rozhraní Greasemonkey API.
 
 #### Příklad
 
@@ -211,47 +211,47 @@ GM_log
 )}();
 ```
 
-## Userstyles
+## Uživatelské styly
 
-Userstyles allow users to customize their online experience. Whether you’re looking to change the appearance of a website or automate repetitive tasks, styles offer a world of possibilities.
+Uživatelské styly umožňují uživatelům přizpůsobit si prostředí online. Ať už chcete změnit vzhled webových stránek nebo automatizovat opakující se úlohy, styly nabízejí řadu možností.
 
-AdGuard has the option to upload or create your own userstyles. This is an advanced feature, so you will need some knowledge of HTML and CSS.
+AdGuard má možnost nahrát nebo vytvořit vlastní uživatelské styly. Jedná se o pokročilou funkci, takže budete potřebovat určité znalosti HTML a CSS.
 
-:::info Supported apps
+:::info Podporované aplikace
 
-Currently, two AdGuard apps allow you to create and manage userstyles: AdGuard for Windows (v7.19 or later) and AdGuard for Mac (v2.16 or later). We also plan to implement this new feature in AdGuard v4.8 for Android in the nearest future.
+V současné době umožňují vytvářet a spravovat uživatelské styly dvě aplikace AdGuard: AdGuard pro Windows (verze 7.19 nebo novější) a AdGuard pro macOS (verze 2.16 nebo novější). Tuto novou funkci plánujeme v nejbližší době implementovat také do AdGuardu v4.8 pro Android.
 
 :::
 
-This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at <support@adguard.com>.
+Jedná se o experimentální funkci, takže pokud se při přidávání nebo vytváření uživatelského stylu setkáte s jakýmikoli problémy, kontaktujte prosím náš tým podpory na <support@adguard.com>.
 
-### How to set up a userstyle in AdGuard
+### Jak nastavit uživatelský styl v AdGuardu
 
-You can download userstyles from various websites. One of the most popular userstyle websites is [https://userstyles.world/](https://userstyles.world/explore), which we will use as an example for the following instructions on how to set up the userstyle in AdGuard.
+Uživatelské styly si můžete stáhnout z různých webových stránek. Jednou z nejoblíbenějších webových stránek s uživatelskými styly je [https://userstyles.world/](https://userstyles.world/explore), kterou použijeme jako příklad pro následující pokyny, jak nastavit uživatelský styl v AdGuardu.
 
-1. Follow the link above and choose the userstyle you like
+1. Přejděte na výše uvedený odkaz a vyberte si uživatelský styl, který se vám líbí
 
-2. Right-click the _Install_ button and choose _Copy Link Address_
+2. Klikněte pravým tlačítkem myši na _Instalovat_ a zvolte _Kopírovat adresu odkazu_
 
-3. Open AdGuard settings → _Extensions_
+3. Otevřete nastavení AdGuardu → _Rozšíření_
 
-4. Press the [+] button and paste the userstyle link
+4. Stiskněte tlačítko [+] a vložte odkaz na uživatelský styl
 
 5. Hotovo!
 
-If you’re familiar with CSS rules, you can also create the userstyles yourself.
+Pokud znáte pravidla CSS, můžete si uživatelské styly vytvořit sami.
 
 :::note
 
-We don’t support userstyles that contain `@var` or `@advanced` in the metadata. AdGuard also doesn’t support `@preprocessor` without the `default` value.
+Nepodporujeme uživatelské styly, které v metadatech obsahují `@var` nebo `@advanced`. AdGuard také nepodporuje `@preprocessor` bez hodnoty `default`.
 
 :::
 
-1. Open AdGuard settings → _Extensions_
+1. Otevřete nastavení AdGuardu → _Rozšíření_
 
-2. Press the [+] button and choose the _Create userstyle_ option. A new window will appear on your screen
+2. Stiskněte tlačítko [+] a vyberte možnost _Vytvořit uživatelský styl_. Na obrazovce se zobrazí nové okno
 
-3. To create a userstyle, first write the title with metadata, for example
+3. Chcete-li vytvořit uživatelský styl, napište nejprve název s metadaty, např.
 
    ```CSS
    /* ==UserStyle==
@@ -260,7 +260,7 @@ We don’t support userstyles that contain `@var` or `@advanced` in the metadata
    ==/UserStyle== */
    ```
 
-4. Write the CSS part after the meta data. AdGuard supports website domain names matching (`@-moz-document domain(…), …`). Např:
+4. Část CSS zapište až za metadata. AdGuard podporuje porovnávání názvů domén webových stránek (`@-moz-document domain(...), ...`). Např:
 
    ```CSS
    body {
@@ -268,7 +268,7 @@ We don’t support userstyles that contain `@var` or `@advanced` in the metadata
      }
    ```
 
-   Or:
+   nebo:
 
    ```CSS
    @-moz-document domain('example.org'),
@@ -278,7 +278,7 @@ We don’t support userstyles that contain `@var` or `@advanced` in the metadata
      }
    ```
 
-5. Once you’re finished, press _Save and Close_. Your new userstyle has been successfully added to AdGuard
+5. Po dokončení stiskněte tlačítko _Uložit a zavřít_. Váš nový uživatelský styl byl úspěšně přidán do AdGuardu
 
 ### Příklad
 

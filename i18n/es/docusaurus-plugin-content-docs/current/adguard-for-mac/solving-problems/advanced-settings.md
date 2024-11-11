@@ -159,6 +159,12 @@ Habilita HTTP/3 para servidores DNS de subida con DNS mediante HTTPS para aceler
 
 Elimina los parámetros Encrypted Client Hello de las respuestas.
 
+#### `dns.proxy.private.relay.sequoia.workaround.enabled`
+
+Blocks macOS Private Relay domains if the user has a firewall enabled, which in turn disables the *Private Relay* feature.
+
+Enabling this setting is useful in the following scenario: when macOS Private Relay is active, filtering cannot function properly and must be disabled. In macOS versions up to 14, AdGuard could automatically disable Private Relay when Protection was enabled. However, starting with macOS 15, this is no longer possible if a firewall is active. By turning on this setting, you can disable Private Relay even when the firewall is enabled, overcoming the previous limitation.
+
 ### Configuración del Modo oculto
 
 #### `stealth.antidpi.http.split.fragment.size`

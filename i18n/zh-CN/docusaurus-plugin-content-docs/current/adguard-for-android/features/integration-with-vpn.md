@@ -1,6 +1,6 @@
 ---
 title: 与 AdGuard VPN 整合
-sidebar_position: 8
+sidebar_position: 6
 ---
 
 :::info

@@ -1,5 +1,5 @@
 ---
-title: '설치 방법/ 제거 방법'
+title: '설치 방법'
 sidebar_position: 2
 ---
 

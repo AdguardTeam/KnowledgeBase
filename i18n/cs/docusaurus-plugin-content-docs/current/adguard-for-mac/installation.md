@@ -1,5 +1,5 @@
 ---
-title: 'Instalace/odinstalace'
+title: 'Instalace'
 sidebar_position: 2
 ---
 

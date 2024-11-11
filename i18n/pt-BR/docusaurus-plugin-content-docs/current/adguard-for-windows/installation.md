@@ -104,3 +104,21 @@ Follow the next steps only if performing the first two steps wasn’t enough for
 ![Extended uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
 
 AdGuard is successfully uninstalled!
+
+#### Running the uninstaller in console mode
+
+Besides running the advanced uninstaller in its user-interactive mode, you can also use command-line arguments to uninstall AdGuard for Windows. To do this, follow the instructions below:
+
+1. Open Command Prompt by typing *cmd* from the Start menu.
+2. Use `/console` to run the uninstaller in console mode, without the interactive UI. All the command-line parameters below will be ignored if the `/console` mode is not activated.
+3. Use `/adblocker` to uninstall AdGuard for Windows. Deve ficar assim:
+
+   `Adguard.UninstallUtility.exe /console /adblocker`
+
+4. You can also use `/advanced` to force the uninstaller to run in *Advanced mode* and `/settings` to force the uninstaller to remove user settings along with the application.
+
+:::note
+
+The use of the parameters `/console` and `/adblocker` is necessary for a successful uninstall. The parameters `/advanced` and `/settings` are optional.
+
+:::

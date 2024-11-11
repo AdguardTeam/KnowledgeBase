@@ -2506,7 +2506,7 @@ This modifier completely changes the rule behavior. If it is applied, the rule w
 
 You will need some knowledge of regular expressions to use `$replace` modifier.
 
-**Features**
+**Funktionen**
 
 - `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc.).
 - `$replace` rules do not apply if the size of the original response is more than 10 MB.
@@ -2578,7 +2578,7 @@ Rules with `$replace` modifier are supported by AdGuard for Windows, AdGuard for
 
 The `$urltransform` rules allow you to modify the request URL by replacing text matched by a regular expression.
 
-**Features**
+**Funktionen**
 
 - `$urltransform` rules normally only apply to the path and query parts of the URL, see below for one exception.
 - `$urltransform` will not be applied if the original URL is blocked by other rules.
@@ -3934,7 +3934,7 @@ The `min-length` special attribute must not appear in a selector to the left of 
 :contains(unquoted text)
 ```
 
-or
+oder
 
 ```text
 :contains(/reg(ular )?ex(pression)?/)
@@ -4388,7 +4388,7 @@ rules_list
 !#endif
 ```
 
-or
+oder
 
 ```adblock
 !#if (conditions)

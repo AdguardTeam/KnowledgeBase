@@ -1,6 +1,6 @@
 ---
-title: Privatsphären-Modus
-sidebar_position: 2
+title: Tracking-Schutz (Privatsphäre)
+sidebar_position: 3
 ---
 
 :::info

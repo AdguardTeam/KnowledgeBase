@@ -29,11 +29,11 @@ Um Firefox zu ermöglichen, dem AdGuard-Zertifikat zu vertrauen, gehen Sie wie f
 
 1. Tippen Sie fünfmal auf das Firefox-Logo.
 
-1. Navigate to **Settings** → **Secret Settings**.
+1. Wechseln Sie zu **Einstellungen** → **Geheimeinstellungen**.
 
     ![Geheime Einstellungen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
-1. Toggle **Use third party CA certificates**.
+1. Aktivieren Sie **Zertifikate von Drittanbietern verwenden**.
 
 ### Methode 2
 
@@ -43,18 +43,18 @@ Diese Methode funktioniert nur auf **gerooteten** Geräten.
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Installieren und konfigurieren Sie](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; Auf der Windows-Plattform müssen Besitzer von **Samsung** möglicherweise [dieses Dienstprogramm](https://developer.samsung.com/mobile/android-usb-driver.html)installieren.
 
-1. Activate the **developer mode** and enable **USB debugging**:
+1. Aktivieren Sie den **Entwicklermodus** und aktivieren Sie **USB-Debugging**:
 
-    - Open the **Settings** app on your phone;
-    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
-    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
-    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+    - Öffnen Sie **Einstellungen** auf Ihrem Telefon;
+    - Wechseln Sie zum Abschnitt **System** (letzter Punkt im Einstellungsmenü). In diesem Abschnitt finden Sie den Unterpunkt **Über das Telefon**;
+    - Tippen Sie 7 Mal auf die Zeile **Versionsnummer**. Danach erhalten Sie eine Benachrichtigung: **Sie sind jetzt ein Entwickler** (Geben Sie ggf. einen Entsperrcode für das Gerät ein);
+    - Öffnen Sie **Systemeinstellungen** → **Entwickleroptionen** → Blättern Sie nach unten und aktivieren Sie **USB-Debugging** → Bestätigen Sie, dass das Debugging im Fenster **USB-Debugging zulassen** aktiviert ist, nachdem Sie die Warnung sorgfältig gelesen haben.
 
-1. Install the [Firefox](https://www.mozilla.org/en-US/firefox/releases/) browser (release version);
+1. Installieren Sie den [Firefox-Browser](https://www.mozilla.org/en-US/firefox/releases/) (Release-Version);
 
-1. Open the **AdGuard settings** (gear icon in the bottom right corner) → **Filtering** → **Network** → **HTTPS filtering** → **Security certificate** → **Instructions for Firefox** → **Install for old versions**;
+1. Öffnen Sie die **AdGuard-Einstellungen** (Zahnradsymbol in der rechten unteren Ecke) → **Filterung** → **Netzwerk** → **HTTPS-Filterung** → **Sicherheitszertifikat** → **Anweisungen für Firefox** → **Installation für alte Versionen**;
 
 1. Öffnen Sie den Ordner `data/data/org.mozilla.firefox/files/mozilla` mit `adb shell su` und `cd data/data/...` und suchen Sie dann den Ordner mit dem Namen `xxxxxxx.default` und merken Sie sich dessen Namen;
 
@@ -73,7 +73,7 @@ Diese Methode funktioniert nur auf **gerooteten** Geräten.
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
 
-    In case you received the system notification **permission denied**, you should first move the specified files to the permission-free directory. Danach sollten Sie sie in den entsprechenden Ordner in Ihrem Firefox-Browser verschieben.
+    Falls Sie die Systemmeldung **Berechtigung verweigert** erhalten haben, sollten Sie die angegebenen Dateien zunächst in einen Ordner ohne Berechtigung verschieben. Danach sollten Sie sie in den entsprechenden Ordner in Ihrem Firefox-Browser verschieben.
 
     Der vollständige Befehl sollte in etwa so aussehen:
 
