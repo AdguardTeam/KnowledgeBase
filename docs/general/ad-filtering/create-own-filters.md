@@ -2404,7 +2404,7 @@ E.g. to remove the `?$param=true` you should use the `$removeparam=%24param` rul
 
 :::note
 
-Space and comma symbols should be URL-encoded as well. However, `.`, `-`, `_` and `~` symbols should be used as is because they are not marked as reserved characters in URL-encoding.
+Space and comma symbols should be URL-encoded as well, otherwise the rule won't match the URL. However, `.`, `-`, `_` and `~` symbols should be used as is because they are not marked as reserved characters in URL-encoding.
 
 :::
 
