@@ -2398,19 +2398,23 @@ You can also use regular expressions to match query parameters and/or their valu
 
 **Escaping special characters**
 
-Do not forget to escape special characters like `,`, `/` and `$` in the regular expressions. Use `\` character for that purpose. For example, an escaped comma should look like this: `\,`.
+Special characters should be URL-encoded in a rule to correctly match the URLs text.
+
+E.g. to remove the `?$param=true` you should use the `$removeparam=%24param` rule.
+
+:::note
+
+Space and comma symbols should be URL-encoded as well. However, `.`, `-`, `_` and `~` symbols should be used as is because they are not marked as reserved characters in URL-encoding.
+
+:::
+
+Do not forget to escape special characters like `.` in the regular expressions. Use `\` character for that purpose. For example, an escaped dot should look like this: `\.`.
 
 :::note
 
 Regexp-type rules target both name and value of the parameter. To minimize mistakes, it is safer to start every regexp with `/^` unless you specifically target parameter values.
 
 :::
-
-We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb — it is not an options delimiter if all three are true:
-
-1. It looks like `$/`
-1. There is another slash character `/` to the left of it
-1. There is another unescaped dollar sign `$` to the left of that slash character
 
 **Remove all query parameters**
 
@@ -2424,6 +2428,12 @@ Use `~` to apply inversion:
 
 - `$removeparam=~param` — removes all query parameters with the name different from `param`.
 - `$removeparam=~/regexp/` — removes all query parameters that do not match the `regexp` regular expression.
+
+:::note
+
+If `~` appear not at the beginning of the rule it will be treated just as a symbol in the text.
+
+:::
 
 **Negating `$removeparam`**
 
