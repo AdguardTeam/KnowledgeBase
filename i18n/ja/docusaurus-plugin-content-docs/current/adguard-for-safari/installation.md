@@ -9,6 +9,10 @@ sidebar_position: 2
 
 :::
 
+## 動作環境
+
+Requires macOS 10.15 (Catalina). The minimum supported version of Safari is 13 or later.
+
 ## AdGuard for Safari のインストール方法 {#install}
 
 「AdGuard for Safari」はApp Storeにある無料アプリです。 お使いのデバイスにインストールする方法以下の通りです。
@@ -32,26 +36,12 @@ sidebar_position: 2
 
     ![チェック入り拡張機能](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 
-1. AdGuard をウェブサイトに対して有効にするには、*コンテンツブロッカー*設定がオンになっている必要があります。 すべてのウェブサイトに対して有効にするか、必要なウェブサイトを選択して有効にすることができます。
+1. For AdGuard to work on websites, the *Extensions* setting in Safari must be enabled. Open Safari → *Settings* → *Websites* → *Extensions*. If you want to enable AdGuard on every website, set *For other websites* to *Allow*.
 
-    :::note
-
-    このステップは、iOS 9.0以降、Safari 10を搭載したmacOS 10.11、およびmacOS 10.12以降で必要です。
-
-
-:::
-
-【macOSの場合】Safari→右上の「Safari」メニューを開く→「*環境設定…*」→「*Webサイト*」→「*コンテンツブロッカー*」をクリックします。 すべての Web サイトに対して AdGuard for Safari を有効にするには、「*これ以外のWebサイト訪問時*」を「*オン*」にします。
-
-![Mac Safariのコンテンツブロッカー設定](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
+![Mac Safariのコンテンツブロッカー設定](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/macos_extensions.png)
 <!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
-【iOSの場合】*設定*アプリ →「*Safari*」→「*コンテンツブロッカー*」→「すべての Web サイト」のスイッチを*オン*にします。
-
-![iOS Safari のコンテンツブロッカー設定](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
-<!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
-
-ステップ1～4を完了すると、AdGuard for Safari が機能し始め、 さらなる設定を行うことができるようになります。
+After you complete these steps, AdGuard for Safari will start functioning. さらなる設定を行うことができるようになります。
 
 ## AdGuard for Safari のアンインストール（削除）方法 {#uninstall}
 

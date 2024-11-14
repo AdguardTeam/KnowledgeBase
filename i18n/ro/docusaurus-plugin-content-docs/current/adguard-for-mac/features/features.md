@@ -5,15 +5,15 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru macOS, un blocant de reclame multifuncțional care protejează dispozitivul tău la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Main window
+## Fereastra principală
 
-From the main window, you can toggle protection, view statistics on blocked ads, trackers, and threats, and access settings, updates, support, and license management.
+Din fereastra principală, puteți comuta protecția, vizualiza statistici despre reclamele, trackerele și amenințările blocate și accesa setările, actualizările, suportul și gestionarea licențelor.
 
-[Main window](/adguard-for-mac/features/main.md)
+[Fereastra principală](/adguard-for-mac/features/main.md)
 
 ## General
 
@@ -21,44 +21,44 @@ Here you can configure basic settings such as _Do not block search ads and websi
 
 [General](/adguard-for-mac/features/general.md)
 
-## Filters
+## Filtre
 
 Here you learn how you can customize your ad blocking by enabling different filter lists, including language-specific filters, third-party filters, and user rules.
 
-[Filters](/adguard-for-mac/features/filters.md)
+[Filtre](/adguard-for-mac/features/filters.md)
 
 ## DNS
 
-Here you can find the DNS protection settings: available providers, filters, Blocklist and Allowlist functions.
+Aici puteți găsi setările de protecție DNS: furnizorii disponibili, filtrele, funcțiile listei de blocări și ale listei permise.
 
 [DNS](/adguard-for-mac/features/dns.md)
 
-## Stealth Mode
+## Modul Incognito
 
-[Stealth Mode](/adguard-for-mac/features/stealth.md)
+[Mod invizibil](/adguard-for-mac/features/stealth.md)
 
 Information on how to set up advanced protection by deleting cookies, UTM tags, online counters, and analytics systems, and not allowing websites to collect your IP address, device and browser parameters, search queries, and personal information.
 
-## Security
+## Securitate
 
-It includes settings to protect you from phishing and malware. You can also help AdGuard update its database of known threats by agreeing to send anonymous security-related information.
+Include setări pentru a vă proteja de phishing și malware. De asemenea, puteți ajuta AdGuard să actualizeze baza sa de date cu amenințări cunoscute, acceptând să trimiteți informații anonime legate de securitate.
 
-[Security](/adguard-for-mac/features/security.md)
+[Securitate](/adguard-for-mac/features/security.md)
 
-## Browser Assistant
+## Asistent Browser
 
-Information on how to manage AdGuard protection directly from the browser.
+Informații despre cum să gestionați protecția AdGuard direct din browser.
 
-[Browser Assistant](/adguard-for-mac/features/browser-assistant.md)
+[Asistent Browser](/adguard-for-mac/features/browser-assistant.md)
 
-## Extensions
+## Extensii
 
-Here you’ll how to use AdGuard as a userscript manager to extend the functionality of websites. You can add your own scripts as well as manage existing ones.
+Aici veți învăța cum să utilizați AdGuard ca un manager de scripturi utilizator pentru a extinde funcționalitatea site-urilor. Puteți adăuga propriile scripturi, precum și gestiona scripturile existente.
 
-[Extensions](/adguard-for-mac/features/extensions.md)
+[Extensii](/adguard-for-mac/features/extensions.md)
 
-## Network
+## Rețea
 
-This article describes additional network-related options and proxy settings where you can specify which proxy server AdGuard should use to update filters, download new versions, and so on.
+Acest articol descrie opțiuni suplimentare legate de rețea și setările proxy, unde puteți specifica ce server proxy ar trebui să folosească AdGuard pentru a actualiza filtrele, a descărca versiuni noi și așa mai departe.
 
-[Network](/adguard-for-mac/features/network.md)
+[Rețea](/adguard-for-mac/features/network.md)

@@ -1,5 +1,5 @@
 ---
-title: Problems caused by extending restricted settings
+title: Probleme durch erweiterte, eingeschränkte Einstellungen
 sidebar_position: 18
 ---
 
@@ -9,11 +9,11 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-In an effort to improve user privacy, Google has expanded the restriction settings in Android 15. More settings, such as _App usage access_, now require an additional permission to be enabled. Since the _[Firewall](/adguard-for-android/features/protection/firewall)_ and _[Detect Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea)_ features require the _App usage access_ setting to be enabled for them to work properly, you may have experienced problems using them. To resolve these issues, please follow the steps below:
+In an effort to improve user privacy, Google has expanded the restriction settings in Android 15. Für die Aktivierung weiterer Einstellungen, wie z. B. _Zugang zur Nutzung von Apps_, ist nun eine zusätzliche Berechtigung erforderlich. Since the _[Firewall](/adguard-for-android/features/protection/firewall)_ and _[Detect Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea)_ features require the _App usage access_ setting to be enabled for them to work properly, you may have experienced problems using them. To resolve these issues, please follow the steps below:
 
 :::note
 
-AdGuard has a strict no-logging policy, which means that we do not collect your data or send it to third parties. We only ask for access to data without which the application cannot function.
+AdGuard verfolgt eine strikte Politik das nicht protokolliert wird, was bedeutet, dass wir Ihre Daten nicht sammeln oder an Dritte weitergeben. Wir bitten nur um Zugang zu Daten, ohne die die Anwendung nicht funktionieren kann.
 
 :::
 
@@ -25,7 +25,7 @@ AdGuard has a strict no-logging policy, which means that we do not collect your 
 
 Wenn Sie sie dort nicht finden können, tippen Sie zunächst auf **Alle Apps anzeigen** oder **App-Info**.
 
-1. Tap **More** (⁝) → _Allow restricted settings_.
+1. Tippen Sie auf **Mehr** (⁝) → _Eingeschränkte Einstellungen zulassen_.
 
 ![Eingeschränkte Einstellungen zulassen \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted2.png)
 

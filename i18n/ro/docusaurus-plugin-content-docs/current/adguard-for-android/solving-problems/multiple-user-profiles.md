@@ -1,98 +1,98 @@
 ---
-title: Problems caused by multiple user profiles
+title: Probleme cauzate de mai multe profile de utilizator
 sidebar_position: 10
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Android, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 In this article you will find the methods on how to solve problems with AdGuard when you set up *multiple accounts* or *Restricted Profiles* on your Android devices.
 
-## Problems caused by multiple user profiles
+## Probleme cauzate de mai multe profile de utilizator
 
-On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. This happens because AdGuard is installed for a different user profile on the device.
+Pe Android 9 și versiuni ulterioare, dacă AdGuard este instalat pentru mai mult de un profil de utilizator pe dispozitivul tău, s-ar putea să întâlnești probleme atunci când dezinstalezi aplicația. Când dezinstalezi AdGuard dintr-un profil de utilizator, aplicația va apărea în lista de aplicații, dar nu vei putea să o dezinstalezi sau să o reinstalezi. Aceasta se întâmplă deoarece AdGuard este instalat pentru un profil de utilizator diferit pe dispozitiv.
 
-If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
+Dacă încercați să reinstalați AdGuard după o încercare de dezinstalare nereușită, veți vedea mesajul de eroare „Nu puteți instala aplicația pe dispozitivul dvs.”.
 
-To solve this problem, you need to uninstall the application for all users: go to Settings → All apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
+Pentru a rezolva această problemă, trebuie să dezinstalezi aplicația pentru toți utilizatorii: mergi la Setări → Toate aplicațiile → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
 
 ![Uninstall *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 
-## Problems caused by using a Restricted Mode profile
+## Probleme cauzate de utilizarea unui profil în Modul Restricționat
 
-The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. If you have such a profile, **AdGuard**, like other applications that use VPN, gets restrictions on selective filtering of VPN traffic. As a result, AdGuard cannot launch protection in a **local VPN mode**. Also, one of the reasons for this situation may be using **Dual App/Dual Messenger profile** on your device. Below are described the recommendations that you can apply when this problem occurs.
+Proprietarii de telefoane, tablete sau televizoare care rulează sistemul de operare Android 7+ s-ar putea confrunta cu problema cauzată de utilizarea **unui profil cu Modul Restricționat**. Dacă aveți un astfel de profil, **AdGuard**, ca și alte aplicații care folosesc VPN, primesc restricții asupra filtrării selective a traficului VPN. Ca urmare, AdGuard nu poate lansa protecția într-un **mod VPN local**. De asemenea, unul dintre motivele pentru această situație ar putea fi utilizarea **profilului Dual App/Dual Messenger** pe dispozitivul dvs. Mai jos sunt descrise recomandările pe care le puteți aplica când apare această problemă.
 
-### Solutions
+### Soluții
 
-You have three ways to solve the issue:
+Aveți trei modalități de a rezolva problema:
 
-### Option 1: Grant permissions to AdGuard using ADB
+### Opțiunea 1: Acordați permisiuni AdGuard folosind ADB
 
 :::note
 
-This approach is available starting from **AdGuard v3.5 nightly 6**. If you're using an older version, you can get the latest update [here](https://adguard.com/adguard-android/overview.html).
+Această abordare este disponibilă începând cu **AdGuard v3.5 nightly 6**. Dacă folosiți o versiune mai veche, puteți obține cea mai recentă actualizare [aici](https://adguard.com/adguard-android/overview.html).
 
 :::
 
-1. Activate the **developer mode** and enable **USB debugging**:
+1. Activați **modul dezvoltator** și activați **debugging USB**:
 
-    - Open the **Settings** app phone;
-    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
-    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
+    - Deschideți aplicația **Setări** a telefonului;
+    - Accesați secțiunea **Sistem** (ultimul element din meniul setărilor). În această secțiune, găsiți subelementul **Despre telefon**;
+    - Apăsați pe linia **Numărul construcției** de 7 ori. După aceea, veți primi o notificare că **Sunteți acum dezvoltator** (Dacă este necesar, introduceți un cod de deblocare pentru dispozitiv);
     - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
     :::note
 
-    If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
+    Dacă aveți dificultăți sau întrebări suplimentare, instrucțiuni complete pot fi găsite [aici](https://developer.android.com/studio/debug/dev-options).
 
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Instalare și configurare](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; Pe platforma Windows, proprietarii de **Samsung** pot fi nevoiți să instaleze [această utilitate](https://developer.samsung.com/mobile/android-usb-driver.html).
 
-1. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
+1. Conectați dispozitivul dvs. folosind un **cablu USB** la computerul sau laptopul pe care ați instalat **ADB**;
 
-1. Open **the command line** on your PC:
+1. Deschideți **linia de comandă** pe PC-ul dvs.:
 
-    - **Cmd.exe** if you are using **Windows**;
-    - **Terminal** if you are using **macOS**;
+    - **Cmd.exe** dacă folosiți **Windows**;
+    - **Terminal** dacă folosiți **macOS**;
 
-1. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
+1. Introduceți comanda `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` și apăsați **Enter**.
 
-### Option 2: Remove *restricted user account*
+### Opțiunea 2: Ștergeți *contul de utilizator restricționat*
 
-About how to manage user accounts from an Android device you can [find here](https://support.google.com/a/answer/6223444?hl=en).
+Despre cum să gestionați conturile de utilizator de pe un dispozitiv Android, puteți [găsi aici](https://support.google.com/a/answer/6223444?hl=en).
 
 :::note
 
-In some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual messenger or Dual app features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
+În unele cazuri, conturile de utilizator restricționate sunt create implicit și nu pot fi eliminate. De exemplu, când utilizați funcțiile Dual messenger sau Dual app pe dispozitivele **Samsung** sau **LG**. Puteți citi mai jos cum să rezolvați problema în aceste cazuri.
 
 :::
 
-### Option 3: Use AdGuard in *Local HTTP proxy mode* (requires root)
+### Opțiunea 3: Utilizați AdGuard în *modul proxy HTTP local* (necesită root)
 
-To enable this mode, open **AdGuard Settings** → **Network** → **Filtering method** → **Local HTTP proxy**
+Pentru a activa acest mod, deschideți **Setările AdGuard** → **Rețea** → **Metodă de filtrare** → **Proxy HTTP local**
 
-### LG and Samsung devices
+### Dispozitive LG și Samsung
 
-Owners of **LG** or **Samsung** phones may also encounter a similar issue. It can be caused by using **Dual App/Dual Messenger** function (which automatically creates a restricted profile). To solve this issue, you need to disable this feature.
+Proprietarii de telefoane **LG** sau **Samsung** s-ar putea confrunta, de asemenea, cu o problemă similară. Aceasta poate fi cauzată de utilizarea funcției **Dual App/Dual Messenger** (care creează automat un profil restricționat). Pentru a rezolva această problemă, trebuie să dezactivați această funcție.
 
 ### Samsung
 
-- Open **Settings**;
-- Press **Advanced**;
-- Scroll down and press **Dual messenger**;
+- Deschideți **Setările**;
+- Apăsați **Avansat**;
+- Derulați în jos și apăsați **Dual messenger**;
 - Disable the **Dual messenger** for all apps;
-- Lock the device for 5 minutes;
-- Unlock the screen and try again to create the VPN profile.
+- Blocați dispozitivul timp de 5 minute;
+- Deblocați ecranul și încercați din nou să creați profilul VPN.
 
 ### LG
 
-- Open **Settings**;
-- Choose **General** tab;
-- Scroll down and press **Dual app**;
-- Remove all apps from the list;
-- Reboot your device.
+- Deschideți **Setările**;
+- Alegeți tab-ul **General**;
+- Derulați în jos și apăsați **Dual app**;
+- Ștergeți toate aplicațiile din listă;
+- Reporniți dispozitivul.

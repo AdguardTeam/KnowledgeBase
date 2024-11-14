@@ -1,9 +1,9 @@
 ---
-title: Phishing and malware protection
+title: Protecția împotriva phishing-ului și a malware-ului
 sidebar_position: 3
 ---
 
-Falling prey to phishing and malware remains a common issue. To enhance digital security, we’ve incorporated special filters in AdGuard products to shield you from malicious and phishing websites. To date, we’ve categorized over 15 million sites and built a database of 1.5 million websites known for phishing and malware. Using this database, AdGuard checks the websites you visit to protect you from online threats.
+Falling prey to phishing and malware remains a common issue. To enhance digital security, we’ve incorporated special filters in AdGuard products to shield you from malicious and phishing websites. Până în prezent, am catalogat peste 15 milioane de site-uri și am creat o bază de date de 1,5 milioane de site-uri web cunoscute pentru phishing și malware. Using this database, AdGuard checks the websites you visit to protect you from online threats.
 
 :::note Important
 
@@ -45,7 +45,7 @@ Our browser extensions can only check domain names, not full URLs. They are also
 
 - **For Browser extensions**: Enable *Phishing and malware protection* in the *Settings* tab. For enhanced protection, go to *Filters* → *Security* and activate available filters
 
-![Phishing and malware protection](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
+![Protecția împotriva phishing-ului și a malware-ului](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
 
 - **For Private AdGuard DNS:** Enable malware protection in *Server settings* under *Security*
 

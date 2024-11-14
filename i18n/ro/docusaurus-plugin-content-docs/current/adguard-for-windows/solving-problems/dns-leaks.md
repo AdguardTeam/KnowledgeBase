@@ -1,48 +1,48 @@
 ---
-title: Possible DNS leaks
+title: Posibile scurgeri DNS
 sidebar_position: 9
 ---
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multifuncțional care protejează dispozitivul dumneavoastră la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard for Windows allows users to specify a DNS server address to resolve queries instead of system DNS server, which is provided by your ISP if not overridden in the system settings. Using a non-default DNS server can safeguard your DNS traffic from the ISP’s interception. Moreover, by choosing an encrypted and/or filtering DNS server, you get another layer of protection against bad actors and annoying ads.
+AdGuard pentru Windows permite utilizatorilor să specifice o adresă de server DNS pentru a rezolva interogările în loc de serverul DNS de sistem, care este furnizat de ISP-ul dumneavoastră dacă nu este modificat în setările sistemului. Utilizarea unui server DNS non-implicit poate proteja traficul DNS de interceptarea ISP-ului. În plus, alegând un server DNS criptat și/sau de filtrare, obțineți un alt strat de protecție împotriva actorilor răi și reclamelor enervante.
 
-Many AdGuard for Windows users appreciate the DNS protection feature. But some of them encounter the following issue: a check on a website like https://ipleak.net/ shows that requests are handled by the default DNS server instead of the selected one. In this article we will tell you why this happens and how to avoid it.
+Mulți utilizatori AdGuard pentru Windows apreciază funcția de protecție DNS. Dar unii dintre ei întâmpină următoarea problemă: un control pe un site web precum https://ipleak.net/ arată că cererile sunt gestionate de serverul DNS implicit în loc de cel selectat. În acest articol vă vom spune de ce se întâmplă acest lucru și cum să îl evitați.
 
-## Bootstrap DNS address
+## Adresă DNS bootstrap
 
-The DNS server addresses could be written as IPs or as domain names. In the case of IP addresses there are no difficulties: AdGuard forwards the DNS request directly to the server specified in the DNS protection module. However, encrypted DNS server addresses, like DoT or DoH, are most often written as domain names. In this case, to first resolve the encrypted DNS server address, AdGuard sends a DNS query to the bootstrap address, which is by default a system DNS server. This connection is what check services perceive as a leak.
+The DNS server addresses could be written as IPs or as domain names. În cazul adreselor IP, nu sunt dificultăți: AdGuard trimite cererea DNS direct la serverul specificat în modulul de protecție DNS. Cu toate acestea, adresele serverului DNS criptat, precum DoT sau DoH, sunt de cele mai multe ori scrise ca nume de domeniu. În acest caz, pentru a rezolva mai întâi adresa serverului DNS criptat, AdGuard trimite o interogare DNS la adresa bootstrap, care este implicit un server DNS de sistem. Această conexiune este ceea ce serviciile de verificare percep ca o scurgere.
 
-**To eliminate this leak:**
+**Pentru a elimina această scurgere:**
 
-- go to the *Advanced settings*
-- scroll down to the *List of custom bootstrap addresses* section
-- enter the custom bootstrap address in the IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
-- click *Save*
+- mergeți la *Setări avansate*
+- derulați în jos până la secțiunea *Listă de adrese bootstrap personalizate*
+- introduceți adresa bootstrap personalizată în formatul adresei IP (puteți utiliza [lista furnizorilor DNS cunoscuți](https://adguard-dns.io/kb/general/dns-providers/))
+- faceți clic pe *Salvați*
 
-## Fallback DNS server
+## Server DNS de rezervă
 
-It could happen that AdGuard cannot reach the specified server because of a weak internet connection, an expiration of timeout set by default or some server related issues. In this case, it will connect to the fallback server, which is by default a system DNS server. This connection will also be considered by the check service as a leak.
+Ar putea fi ca AdGuard să nu poată ajunge la serverul specificat din cauza unei conexiuni la internet slabe, a expirării timpului setat implicit sau a unor probleme legate de server. În acest caz, se va conecta la serverul de rezervă, care este implicit un server DNS de sistem. Această conexiune va fi de asemenea considerată de serviciul de verificare ca o scurgere.
 
-**To eliminate this leak:**
+**Pentru a elimina această scurgere:**
 
-- go to the *Advanced settings*
-- scroll down to the *Fallback servers* section
-- check the *Use custom servers* option
-- then find the *List of custom fallback servers* section and enter the custom fallback servers one per line
+- mergeți la *Setări avansate*
+- derulați în jos până la secțiunea *Servere de rezervă*
+- verificați opțiunea *Utilizați servere personalizate*
+- apoi găsiți secțiunea *Listă de servere de rezervă personalizate* și introduceți serverele de rezervă personalizate câte unul pe linie
 
-or
+sau
 
-- go to the *Advanced settings*
-- scroll down to the *Fallback servers* section
-- check the *Don’t use fallback servers* option
+- mergeți la *Setări avansate*
+- derulați în jos până la secțiunea *Servere de rezervă*
+- verificați opțiunea *Nu utilizați servere de rezervă*
 
-or
+sau
 
-- go to the *Advanced settings*
+- mergeți la *Setări avansate*
 - scroll down to the *DNS server timeout period* section
-- enter an arbitrary large number
+- introduceți un număr aleatoriu mare

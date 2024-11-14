@@ -1,64 +1,64 @@
 ---
-title: How ad blocking works
+title: Cum funcționează blocarea reclamelor
 sidebar_position: 1
 ---
 
-AdGuard has many ad-blocking products for different platforms, each with its own unique features. But what unites them all is that they block ads and trackers. This article describes how ad blocking works from the inside.
+AdGuard are multe produse de blocare a reclamelor pentru diferite platforme, fiecare cu propriile caracteristici unice. Dar ceea ce îi unește pe toți este că blochează reclamele și trackerele. Acest articol descrie cum funcționează blocarea reclamelor din interior.
 
 :::note
 
-We don't cover DNS filtering here. It's a different way of blocking ads, with its own advantages and disadvantages. Follow this link to [learn more about DNS filtering](https://adguard-dns.io/kb/general/dns-filtering#how-does-dns-filtering-work).
+Nu acoperim filtrarea DNS aici. Este o modalitate diferită de a bloca reclamele, cu propriile avantaje și dezavantaje. Urmărește acest link pentru [a afla mai multe despre filtrarea DNS](https://adguard-dns.io/kb/general/dns-filtering#how-does-dns-filtering-work).
 
 :::  
 
-<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/Xq_CUdh0T_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/Xq_CUdh0T_w" title="Player video YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## General principle
+## Principiul general
 
-Filter lists, also called filters, lie at the core of any ad blocker. Filters are literally lists of rules written in a special syntax. Ad blockers can understand this complex syntax. They interpret filtering rules and perform actions on web traffic based on what the rules tell them to do: block specific elements, alter web pages in certain ways, etc.
+Listele de filtre, numite și filtre, stau la baza oricărui blocant de reclame. Filtrele sunt literalmente liste de reguli scrise într-o sintaxă specială. Blocantele de reclame pot înțelege această sintaxă complexă. Ele interpretează regulile de filtrare și efectuează acțiuni asupra traficului web pe baza a ceea ce le spun regulile să facă: blochează elemente specifice, alterează paginile web în anumite moduri etc.
 
-![How ad blocking works](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
+![Cum funcționează blocarea reclamelor](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
 
-## Filter lists
+## Listele de filtre
 
-To better understand ad blocking, it's important to know the underlying principles of how filters work.
+Pentru a înțelege mai bine blocarea reclamelor, este important să știi principiile de bază ale modului în care funcționează filtrele.
 
-Filtering rules that make up filters are not created automatically. They are developed by filter maintainers, including professionals and volunteers, who use browser developer consoles and other tools (such as the AdGuard's filtering log) to determine which rules will block a particular ad or tracker. This description of the process is very simplistic — some ads are particularly hard to block and require multiple rules, multiple iterations, and the use of complex syntax.
+Regulile de filtrare care formează filtrele nu sunt create automat. Ele sunt dezvoltate de către întreținătorii filtrelor, inclusiv profesioniști și voluntari, care folosesc consolele de dezvoltator ale browserului și alte instrumente (cum ar fi jurnalul de filtrare al AdGuard) pentru a determina care reguli vor bloca o reclamă sau un tracker particular. Această descriere a procesului este foarte simplistă — unele reclame sunt deosebit de greu de blocat și necesită reguli multiple, multiple iterații și utilizarea unei sintaxe complexe.
 
-And even when a rule finally gets added to a filter, it doesn't mean that it stays there forever. Ads change, ways to serve the same ads on the same websites change, and the filter rules have to change, too. Sometimes rules become obsolete, a new ad appears, or a new filtering rule is needed to block the same ad. Filters are often maintained by one person, but even for a team of maintainers, it's impossible to constantly monitor the entire web. That's why many ad blockers have tools to help users easily report any filter-related issues they encounter.
+Și chiar și atunci când o regulă este în cele din urmă adăugată la un filtru, nu înseamnă că rămâne acolo pentru totdeauna. Reclamele se schimbă, modalitățile de a servi aceleași reclame pe aceleași site-uri se schimbă, iar regulile filtrului trebuie să se schimbe, de asemenea. Uneori regulile devin învechite, apare o nouă reclamă sau este necesară o nouă regulă de filtrare pentru a bloca aceeași reclamă. Filtrele sunt adesea întreținute de o singură persoană, dar chiar și pentru o echipă de întreținători, este imposibil să monitorizezi constant întregul web. De aceea, multe blocante de reclame au instrumente pentru a ajuta utilizatorii să raporteze cu ușurință orice probleme legate de filtre pe care le întâmpină.
 
-![Filter update scheme](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/filtersupdates.png)
+![Schema de actualizare a filtrelor](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/filtersupdates.png)
 
-AdGuard users [have access to a special web reporting tool](https://reports.adguard.com/new_issue.html). Thanks to user complaints, filter developers can focus on correcting their filter lists and not on scouring the Internet for new and old unblocked ads.
+Utilizatorii AdGuard [au acces la un instrument special de raportare web](https://reports.adguard.com/new_issue.html). Datorită plângerilor utilizatorilor, dezvoltatorii filtrelor se pot concentra pe corectarea listelor lor de filtre și nu pe căutarea pe Internet a reclamelor vechi și noi neblocate.
 
-Filters can do more than just block ads. There are filters that block tracking, social media widgets, and annoyances such as cookie notices. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
+Filtrele pot face mai mult decât să blocheze reclame. Există filtre care blochează trackerele, widgeturile de rețele sociale și neplăcerile precum anunțurile privind cookie-urile. Utilizatorii diferiți pot alege combinații diferite de filtre pentru a se potrivi preferințelor lor personale. Există site-uri precum [filterlists.com](https://filterlists.com/) care sunt dedicate listelor de filtre și au baze de date enorme.
 
-We develop and maintain [our own set of filter lists](../adguard-filters) that can be used with AdGuard or other ad blockers.
+Dezvoltăm și întreținem [propria noastră serie de liste de filtre](../adguard-filters) care pot fi folosite cu AdGuard sau alte blocante de reclame.
 
-## Types of filtering rules
+## Tipuri de reguli de filtrare
 
-There are many types of filtering rules that serve different purposes. Depending on the ad blocker you use, and especially on your OS, some types of rules may not be supported.
+Există multe tipuri de reguli de filtrare care servesc scopuri diferite. În funcție de blocantul de reclame pe care îl folosești și, în special, de sistemul tău de operare, unele tipuri de reguli pot să nu fie acceptate.
 
-### Basic filtering rules
+### Reguli de filtrare de bază
 
-To be displayed on a web page or in an app, the ad has to be loaded from a server first. To do so, the browser or the app needs to send a web request. The most basic way of preventing an ad from appearing on your screen is to block this request so it never reaches the server, and thus there's no reply.
+Pentru a fi afișată pe o pagină web sau într-o aplicație, reclama trebuie să fie încărcată mai întâi de pe un server. Pentru a face acest lucru, browserul sau aplicația trebuie să trimită o solicitare web. Cea mai de bază modalitate de a preveni apariția unei reclame pe ecranul tău este să blochezi această solicitare astfel încât să nu ajungă niciodată la server, și astfel să nu existe un răspuns.
 
-Basically, all AdGuard Ad Blocker products can block web requests according to the active filter rules. This method is very effective at stopping the ad, but it has some drawbacks. The most obvious one is: whatever place an ad was taking up will be left empty or occupied by an ad leftover.
+Practic, toate produsele AdGuard Ad Blocker pot bloca cererile web conform regulilor de filtrare active. Această metodă este foarte eficientă în oprirea reclamei, dar are unele dezavantaje. The most obvious one is: whatever place an ad was taking up will be left empty or occupied by an ad leftover.
 
-### Cosmetic filtering rules
+### Reguli de filtrare cosmetică
 
-Every web page has a Document Object Model (DOM), an HTML document containing the structure and elements of this page. As ads are also page elements, they get recorded in the DOM. Ad blockers can remove parts of the DOM, while filtering rules help them understand which parts are ads and should be removed, and which parts should be left intact.
+Fiecare pagină web are un Model de Obiect Document (DOM), un document HTML care conține structura și elementele acestei pagini. Deoarece reclamele sunt de asemenea elemente de pagină, ele sunt înregistrate în DOM. Blocantele de reclame pot elimina părți ale DOM-ului, în timp ce regulile de filtrare le ajută să înțeleagă care părți sunt reclame și ar trebui eliminate și care părți ar trebui lăsate intacte.
 
-This method allows you to avoid above-mentioned blank spaces and ad leftovers, as well as perform other more complicated tasks.
+Această metodă îți permite să eviți spațiile goale menționate mai sus și resturile de reclame, precum și să efectuezi alte sarcini mai complicate.
 
 ### HTML filtering rules
 
-In most cases, it's enough to use the above-mentioned basic and cosmetic rules to filter ads. But when it is necessary to change the HTML code of the page itself before it is loaded, you need filtering rules for HTML content. These rules allow you to specify the HTML elements to be cut out before the browser even loads the page.
+În cele mai multe cazuri, este suficient să folosești regulile de bază și cosmetice menționate anterior pentru a filtra reclamele. Dar când este necesar să schimbi codul HTML al paginii în sine înainte de a fi încărcat, ai nevoie de reguli de filtrare pentru conținutul HTML. Aceste reguli îți permit să specifici elementele HTML care trebuie să fie tăiate înainte ca browserul să încarce pagina.
 
-These rules are quite complicated and require the ad blocker to be granted certain access rights, so not all platforms support them. Currently, these rules work only in the AdGuard Firefox add-on and in the AdGuard apps for Windows, Mac, and Android.
+Aceste reguli sunt destul de complicate și necesită ca blocantul de reclame să fie acordat anumite drepturi de acces, astfel că nu toate platformele le acceptă. În prezent, aceste reguli funcționează doar în extensia AdGuard pentru Firefox și în aplicațiile AdGuard pentru Windows, macOS și Android.
 
 :::info
 
-There are other types of filtering rules, but they require more advanced technical knowledge to understand how they work. If you are interested, [check out our comprehensive guide on filtering rules in the linked article](../create-own-filters).
+Există alte tipuri de reguli de filtrare, dar acestea necesită mai multe cunoștințe tehnice avansate pentru a înțelege cum funcționează. Dacă ești interesat, [consultă ghidul nostru cuprinzător despre regulile de filtrare în articolul linkat](../create-own-filters).
 
 :::

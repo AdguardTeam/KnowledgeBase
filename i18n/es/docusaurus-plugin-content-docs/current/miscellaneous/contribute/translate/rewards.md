@@ -5,56 +5,56 @@ sidebar_position: 6
 
 Como cualquier esfuerzo honesto y bien realizado debe ser recompensado, los traductores activos en Crowdin pueden solicitar una clave de licencia gratuita de AdGuard y una suscripción VPN.
 
-## How our reward system works
+## Cómo funciona nuestro sistema de recompensas
 
-### For AdGuard licenses
+### Para las licencias de AdGuard
 
-- For your first one-year Ad Blocker license, you need to translate **1,000 words**.
-- For your second license, you’ll need an **additional 1,500 words** (a total of 2,500 words).
-- All subsequent licenses require an **additional 2,500** words per license.
+- Para tu primera licencia de Bloqueador de anuncios de un año, necesitas traducir **1.000 palabras**.
+- Para tu segunda licencia, necesitarás **1.500 palabras adicionales** (un total de 2.500 palabras).
+- Todas las licencias posteriores requieren **2.500** palabras adicionales por licencia.
 
-### For AdGuard VPN licenses
+### Para las licencias de AdGuard VPN
 
-- The first one-year VPN subscription requires translating **3,000 words**.
-- All subsequent subscriptions or renewals require an **additional 3,000 words** per subscription.
+- La primera suscripción de un año de VPN requiere traducir **3.000 palabras**.
+- Todas las suscripciones o renovaciones posteriores requieren **3.000 palabras adicionales** por suscripción.
 
-:::note Limitations
+:::note Limitaciones
 
-As a reward for contributing, we offer licenses and subscriptions valid for a maximum of 5 years. In the case of Ad Blocker, we offer licenses that cover up to 5 devices. We do not offer lifetime licenses.
+Como recompensa por contribuir, ofrecemos licencias y suscripciones válidas por un máximo de 5 años. En el caso del Bloqueador de anuncios, ofrecemos licencias que cubren hasta 5 dispositivos. No ofrecemos licencias de por vida.
 
 :::
 
-## How to request your license
+## Cómo solicitar tu licencia
 
-Just send an email to our translators team at [translate@adguard.com](mailto:translate@adguard.com) with the following information:
+Envía un correo electrónico a nuestro equipo de traductores a [translate@adguard.com](mailto:translate@adguard.com) con la siguiente información:
 
-- Your Crowdin username
-- The projects you contributed to (Websites, Applications, Knowledge Base, etc.)
-- The email address to which you want to link your license
-- Your translation statistics (a screenshot or total word count) and the type of license you want
+- Tu nombre de usuario de Crowdin
+- Los proyectos a los que contribuiste (sitios web, aplicaciones, base de conocimientos, etc.)
+- La dirección de correo electrónico a la que deseas vincular tu licencia
+- Tus estadísticas de traducción (una captura de pantalla o el recuento total de palabras) y el tipo de licencia que deseas
 
-**Email template:**
+**Exemplo de correo electrónico:**
 
-> Hi AdGuard team!
+> ¡Hola equipo de AdGuard!
 > 
-> I’ve translated more than 5,000 words in AdGuard for Android in (*your language*) — you can find my stats attached. I would like to request an AdGuard VPN license and an Ad Blocker license for that. My email is (*your email address*). My Crowdin username is (*your username*).
+> He traducido más de **5.000** palabras en AdGuard para Android al *tu idioma*. Puedes encontrar mis estadísticas adjuntas. Me gustaría solicitar una licencia de AdGuard VPN y una licencia del bloqueador de anuncios AdGuard para eso. Mi correo electrónico es (*tu dirección de correo electrónico*). Mi nombre de usuario de Crowdin es *tu nombre de usuario*.
 
-## How to check your translation progress
+## Cómo comprobar el progreso de tu traducción
 
-Open a project you have been working on, click the *Reports* tab, select *My Contribution*, scroll down, select a date range, and generate a report. It will look something like this.
+Abre un proyecto en el que has estado trabajando, haz clic en la pestaña *Informes*, selecciona *Mi Contribución*, desplázate hacia abajo, selecciona un rango de fechas y genera un informe. Se verá algo así.
 
-![Statistics *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/statistics.png)
+![Estadísticas *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/statistics.png)
 
-You can add up the number of words translated across different projects to qualify for a license.
+Puedes sumar la cantidad de palabras traducidas en diferentes proyectos para obtener una licencia.
 
 ## Cómo convertirte en corrector
 
-Our most active translators may be considered for proofreader status in the future. To become a proofreader, you’ll need to deliver consistently high quality translations over a period of several months.
+Nuestros traductores más activos pueden ser considerados para el estado de revisor en el futuro. Para convertirte en corrector, necesitarás entregar traducciones de alta calidad de manera consistente durante un período de varios meses.
 
-Please note that proofreaders do not receive extra licenses or benefits beyond helping more people access AdGuard products in their language. If you’re interested in becoming one of our proofreaders, please contact us at [translate@adguard.com](mailto:translate@adguard.com).
+Ten en cuenta que los correctores no reciben licencias o beneficios adicionales más allá de ayudar a más personas a acceder a los productos de AdGuard en tu idioma. Si estás interesado en convertirte en uno de nuestros correctores, por favor contáctanos en [translate@adguard.com](mailto:translate@adguard.com).
 
-## Gifts for active contributors
+## Regalos para contribuyentes activos
 
-To the best contributors, every year we send gifts with the AdGuard merch and give a shout out on our [blog](https://adguard.com/en/blog/best-contributors-2023.html).
+A los mejores contribuyentes, cada año enviamos regalos con la mercancía de AdGuard y hacemos un reconocimiento en nuestro [blog](https://adguard.com/en/blog/best-contributors-2023.html).
 
-![AdGuard merch *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)
+![Mérch de AdGuard *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

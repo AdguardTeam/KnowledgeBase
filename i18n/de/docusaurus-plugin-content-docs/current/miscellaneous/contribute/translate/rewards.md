@@ -9,14 +9,14 @@ Da jede ehrliche und gut gemachte Arbeit belohnt werden sollte, können aktive �
 
 ### Für AdGuard-Lizenzen
 
-- For your first one-year Ad Blocker license, you need to translate **1,000 words**.
-- For your second license, you’ll need an **additional 1,500 words** (a total of 2,500 words).
-- All subsequent licenses require an **additional 2,500** words per license.
+- Für Ihre erste 1-Jahres-Lizenz von Werbeblocker müssen Sie **1.000 Wörter** übersetzen.
+- Für Ihre zweite Lizenz benötigen Sie **zusätzliche 1.500 Wörter** (insgesamt 2.500 Wörter).
+- Alle nachfolgenden Lizenzen erfordern zusätzlich **2.500** Wörter pro Lizenz.
 
 ### Für AdGuard VPN-Lizenzen
 
-- The first one-year VPN subscription requires translating **3,000 words**.
-- All subsequent subscriptions or renewals require an **additional 3,000 words** per subscription.
+- Für das erste 1-Jahres-Abonnement müssen **3.000 Wörter**übersetzt werden.
+- Alle nachfolgenden Abonnements oder Erneuerungen erfordern zusätzlich **3.000 Wörter** pro Abonnement.
 
 :::note Beschränkungen
 
@@ -26,7 +26,7 @@ Als Belohnung für Ihren Beitrag bieten wir Lizenzen und Abonnements mit einer G
 
 ## So beantragen Sie Ihre Lizenz
 
-Just send an email to our translators team at [translate@adguard.com](mailto:translate@adguard.com) with the following information:
+Senden Sie einfach eine E-Mail an unser Übersetzerteam unter [translate@adguard.com](mailto:translate@adguard.com) mit den folgenden Informationen:
 
 - Ihr Crowdin-Benutzername
 - Die Projekte, zu denen Sie beigetragen haben (Websites, Applications, Knowledge Base usw.)
@@ -43,18 +43,18 @@ Just send an email to our translators team at [translate@adguard.com](mailto:tra
 
 Öffnen Sie ein Projekt, an dem Sie gearbeitet haben, klicken Sie auf die Registerkarte *Reports*, wählen Sie *My Contribution*, scrollen Sie nach unten, wählen Sie einen Datumsbereich und erstellen Sie einen Bericht. Er wird ungefähr so aussehen.
 
-![Statistics *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/statistics.png)
+![Statistiken *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/statistics.png)
 
 Sie können die Anzahl der in verschiedenen Projekten übersetzten Wörter zusammenzählen, um eine Lizenz zu erhalten.
 
 ## Korrekturleser:in werden
 
-Our most active translators may be considered for proofreader status in the future. To become a proofreader, you’ll need to deliver consistently high quality translations over a period of several months.
+Wer aktiv und regelmäßig übersetzt, kann künftig für den Korrekturleserstatus in Betracht gezogen werden. Dafür muss man über einen Zeitraum von mehreren Monaten konstant hochwertige Übersetzungen geliefert haben.
 
-Please note that proofreaders do not receive extra licenses or benefits beyond helping more people access AdGuard products in their language. If you’re interested in becoming one of our proofreaders, please contact us at [translate@adguard.com](mailto:translate@adguard.com).
+Bitte beachten Sie, dass Sie mit diesem Status keine zusätzlichen Lizenzen oder Vorteile erhalten, außer dass Sie mehr Menschen den Zugang zu AdGuard-Produkten in ihrer Sprache ermöglichen. Wenn Sie daran interessiert sind, kontaktieren Sie uns bitte unter [translate@adguard.com](mailto:translate@adguard.com).
 
 ## Geschenke für aktive Mitwirkende
 
 Jedes Jahr senden wir den besten Mitwirkenden Geschenke mit dem AdGuard-Merch und würdigen sie in unserem [Blog](https://adguard.com/en/blog/best-contributors-2023.html).
 
-![AdGuard merch *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)
+![AdGuard Merch *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

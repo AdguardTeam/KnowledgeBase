@@ -5,14 +5,14 @@ sidebar_position: 1
 
 :::info
 
-This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works firsthand, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru iOS, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. To see how it works firsthand, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
-Here are some problems you may encounter and workarounds, guides, and instructions you may need.
+Iată câteva probleme cu care s-ar putea să te confrunți și soluții, ghiduri și instrucțiuni de care ai putea avea nevoie.
 
-- [How to activate premium features](/adguard-for-ios/solving-problems/premium-activation.md)
+- [Cum să activați funcțiile premium](/adguard-for-ios/solving-problems/premium-activation.md)
 - [How to enable system-wide filtering in AdGuard for iOS](/adguard-for-ios/solving-problems/system-wide-filtering.md)
-- [How to avoid compatibility issues with FaceTime](/adguard-for-ios/solving-problems/facetime-compatibility-issues.md)
-- [How to block YouTube ads](/adguard-for-ios/solving-problems/block-youtube-ads.md)
+- [Cum să evitați problemele de compatibilitate cu FaceTime](/adguard-for-ios/solving-problems/facetime-compatibility-issues.md)
+- [Cum să blocați reclamele de pe YouTube](/adguard-for-ios/solving-problems/block-youtube-ads.md)
 - [Low-level settings guide](/adguard-for-ios/solving-problems/low-level-settings.md)

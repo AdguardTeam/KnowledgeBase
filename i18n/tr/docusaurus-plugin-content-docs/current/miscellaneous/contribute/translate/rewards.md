@@ -5,56 +5,56 @@ sidebar_position: 6
 
 As any honest and well-performed effort should be rewarded, active translators on Crowdin can request a free AdGuard license key and a VPN subscription.
 
-## How our reward system works
+## Ödül sistemimiz nasıl çalışır
 
-### For AdGuard licenses
+### AdGuard lisansları için
 
-- For your first one-year Ad Blocker license, you need to translate **1,000 words**.
-- For your second license, you’ll need an **additional 1,500 words** (a total of 2,500 words).
-- All subsequent licenses require an **additional 2,500** words per license.
+- İlk bir yıllık Reklam Engelleyici lisansınız için **1.000 kelime** çevirmeniz gerekir.
+- İkinci lisansınız için **ek 1.500 kelimeye** (toplam 2.500 kelime) ihtiyacınız olur.
+- Sonraki tüm lisanslar lisans başına **ek 2.500** kelime gerektirir.
 
-### For AdGuard VPN licenses
+### AdGuard VPN lisansları için
 
-- The first one-year VPN subscription requires translating **3,000 words**.
-- All subsequent subscriptions or renewals require an **additional 3,000 words** per subscription.
+- İlk bir yıllık VPN aboneliği için **3.000 kelimenin** çevrilmesi gerekir.
+- Sonraki tüm abonelikler veya yenilemeler için abonelik başına **ek 3.000 kelime** gerektirir.
 
-:::note Limitations
+:::note Kısıtlamalar
 
-As a reward for contributing, we offer licenses and subscriptions valid for a maximum of 5 years. In the case of Ad Blocker, we offer licenses that cover up to 5 devices. We do not offer lifetime licenses.
+Katkıda bulunmanın karşılığı olarak, en fazla 5 yıl geçerli olan lisanslar ve abonelikler sunuyoruz. Reklam Engelleyici söz konusu olduğunda, 5 cihaza kadar kapsayan lisanslar sunuyoruz. Ömür boyu lisanslar sunmuyoruz.
 
 :::
 
-## How to request your license
+## Lisansınızı nasıl talep edebilirsiniz
 
-Just send an email to our translators team at [translate@adguard.com](mailto:translate@adguard.com) with the following information:
+Çevirmen ekibimize [translate@adguard.com](mailto:translate@adguard.com) adresine aşağıdaki bilgileri içeren bir e-posta göndermeniz yeterli:
 
-- Your Crowdin username
-- The projects you contributed to (Websites, Applications, Knowledge Base, etc.)
-- The email address to which you want to link your license
-- Your translation statistics (a screenshot or total word count) and the type of license you want
+- Crowdin kullanıcı adınız
+- Katkıda bulunduğunuz projeler (Websites, Applications, Knowledge Base, vb.)
+- Lisansınızı bağlamak istediğiniz e-posta adresi
+- Çeviri istatistikleriniz (bir ekran görüntüsü veya toplam kelime sayısı) ve istediğiniz lisans türü
 
-**Email template:**
+**E-posta şablonu:**
 
-> Hi AdGuard team!
+> Merhaba, AdGuard ekibi!
 > 
-> I’ve translated more than 5,000 words in AdGuard for Android in (*your language*) — you can find my stats attached. I would like to request an AdGuard VPN license and an Ad Blocker license for that. My email is (*your email address*). My Crowdin username is (*your username*).
+> Android için AdGuard'da 5.000'den fazla kelimeyi (*sizin dilinizde*) çevirdim — istatistiklerimi ekte bulabilirsiniz. Bunun için bir AdGuard VPN lisansı ve bir Reklam Engelleyici lisansı talep etmek istiyorum. E-postam (*e-posta adresiniz*). Crowdin kullanıcı adım (*kullanıcı adınız*).
 
-## How to check your translation progress
+## Çeviri ilerlemenizi nasıl kontrol edebilirsiniz
 
-Open a project you have been working on, click the *Reports* tab, select *My Contribution*, scroll down, select a date range, and generate a report. It will look something like this.
+Üzerinde çalıştığınız bir projeyi açın, *Raporlar* sekmesine tıklayın, *Katkım* öğesini seçin, aşağı kaydırın, bir tarih aralığı seçin ve bir rapor oluşturun. Şuna benzer bir şey gibi görünür.
 
-![Statistics *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/statistics.png)
+![İstatistikler *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/statistics.png)
 
-You can add up the number of words translated across different projects to qualify for a license.
+Lisans almaya hak kazanmak için farklı projelerde çevrilen kelime sayısını toplayabilirsiniz.
 
-## How to become a proofreader
+## Nasıl düzeltmen olunur
 
-Our most active translators may be considered for proofreader status in the future. To become a proofreader, you’ll need to deliver consistently high quality translations over a period of several months.
+En aktif çevirmenlerimiz ileride düzeltmen statüsü için değerlendirilebilir. Düzeltmen olmak için birkaç aylık bir süre boyunca sürekli olarak yüksek kalitede çeviriler sunmanız gerekir.
 
-Please note that proofreaders do not receive extra licenses or benefits beyond helping more people access AdGuard products in their language. If you’re interested in becoming one of our proofreaders, please contact us at [translate@adguard.com](mailto:translate@adguard.com).
+Düzeltmenlerin, daha fazla kişinin kendi dillerinde AdGuard ürünlerine erişmesine yardımcı olmanın ötesinde ekstra lisans veya avantaj almadıklarını lütfen unutmayın. Düzeltmenlerimizden biri olmakla ilgileniyorsanız lütfen [translate@adguard.com](mailto:translate@adguard.com) adresinden bizimle iletişime geçin.
 
-## Gifts for active contributors
+## Aktif katkıda bulunanlar için hediyeler
 
-To the best contributors, every year we send gifts with the AdGuard merch and give a shout out on our [blog](https://adguard.com/en/blog/best-contributors-2023.html).
+En iyi katkıda bulunanlara, her yıl AdGuard ürünlerinden oluşan hediyeler gönderir ve [blogumuzda](https://adguard.com/en/blog/best-contributors-2023.html) onları öne çıkarırız.
 
-![AdGuard merch *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)
+![AdGuard ürünleri *kenar](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

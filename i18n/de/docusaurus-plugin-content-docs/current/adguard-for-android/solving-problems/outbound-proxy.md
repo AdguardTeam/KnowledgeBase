@@ -1,5 +1,5 @@
 ---
-title: How to set up outbound proxy
+title: So richten Sie einen ausgehenden Proxy ein
 sidebar_position: 8
 ---
 
@@ -9,15 +9,15 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-Below is a list of the most well-known applications that can be configured to work as proxies in AdGuard.
+Nachfolgend finden Sie eine Liste der bekanntesten Anwendungen, die in AdGuard als Proxys konfiguriert werden können.
 
 :::note
 
-If your app is not listed below, please check on its proxy configurations in the settings or contact its support team.
+Wenn Ihre Anwendung unten nicht aufgeführt ist, überprüfen Sie bitte die Proxy-Konfigurationen in den Einstellungen oder kontaktieren Sie das Support-Team.
 
 :::
 
-AdGuard allows you to route your device's traffic through a proxy server. To access proxy settings, open **Settings** and then proceed to **Filtering** → **Network** → **Proxy**.
+AdGuard ermöglicht Ihnen das Umleiten des Datenverkehrs Ihres Geräts über einen Proxyserver. To access proxy settings, open **Settings** and then proceed to **Filtering** → **Network** → **Proxy**.
 
 ## Beispiele für die Proxy-Konfiguration
 
@@ -43,7 +43,7 @@ In diesem Artikel zeigen wir Ihnen anhand von Beispielen, wie Sie einige der gä
 
     Or you can tap **Proxy server** → **Add proxy server**, enter these values manually, and set Orbot as the default proxy.
 
-1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+1. Aktivieren Sie den Haupt-Proxy-Schalter und den AdGuard-Schutz, um den Datenverkehr Ihres Geräts über den Proxy zu leiten.
 
     Now AdGuard will route all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable the outbound proxy settings in AdGuard.
 
@@ -65,7 +65,7 @@ In diesem Artikel zeigen wir Ihnen anhand von Beispielen, wie Sie einige der gä
 
 1. Tap **Save and select**.
 
-1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+1. Aktivieren Sie den Haupt-Proxy-Schalter und den AdGuard-Schutz, um den Datenverkehr Ihres Geräts über den Proxy zu leiten.
 
 ### So verwenden Sie AdGuard mit TorGuard
 
@@ -85,7 +85,7 @@ In diesem Artikel zeigen wir Ihnen anhand von Beispielen, wie Sie einige der gä
 
 1. Tap **Save and select**.
 
-1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+1. Aktivieren Sie den Haupt-Proxy-Schalter und den AdGuard-Schutz, um den Datenverkehr Ihres Geräts über den Proxy zu leiten.
 
 ### So verwenden Sie AdGuard mit NordVPN
 
@@ -111,11 +111,11 @@ In diesem Artikel zeigen wir Ihnen anhand von Beispielen, wie Sie einige der gä
 
 1. Tap **Save and select**.
 
-1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+1. Aktivieren Sie den Haupt-Proxy-Schalter und den AdGuard-Schutz, um den Datenverkehr Ihres Geräts über den Proxy zu leiten.
 
-### How to use AdGuard with Shadowsocks
+### So verwenden Sie AdGuard mit Shadowsocks
 
-*Here we presume that you have already configured a Shadowsocks server and a client on your device.*
+*Wir gehen hier davon aus, dass Sie bereits einen Shadowsocks-Server und einen Client auf Ihrem Gerät konfiguriert haben.*
 
 :::note
 
@@ -135,15 +135,15 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 1. Tap **Save and select**.
 
-1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+1. Aktivieren Sie den Haupt-Proxy-Schalter und den AdGuard-Schutz, um den Datenverkehr Ihres Geräts über den Proxy zu leiten.
 
-### How to use AdGuard with Clash
+### So verwenden Sie AdGuard mit Clash
 
-*Here we presume that you are already a Clash client and have it installed on your device.*
+*Wir gehen hier davon aus, dass Sie bereits ein Clash-Client sind und es auf Ihrem Gerät installiert haben.*
 
-1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and toggle the switch. This will set Clash to proxy mode.
+1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and toggle the switch. Dadurch wird Clash in den Proxy-Modus versetzt.
 
-1. Open AdGuard and go to **App management**. Choose **Clash For Android** and disable **Route traffic through AdGuard**. This will eliminate traffic looping.
+1. Öffnen Sie AdGuard und wechseln Sie zu **App-Verwaltung**. Choose **Clash For Android** and disable **Route traffic through AdGuard**. This will eliminate traffic looping.
 
 1. Then go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
 

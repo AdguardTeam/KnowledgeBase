@@ -1,63 +1,63 @@
 ---
-title: Browser Assistant
+title: Asistent Browser
 sidebar_position: 8
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru macOS, un blocant de reclame multifuncțional care protejează dispozitivul tău la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard Browser Assistant allows you to manage AdGuard protection directly from your browser.
+Asistentul Browser AdGuard vă permite să gestionați protecția AdGuard direct din browserul dumneavoastră.
 
-![The Assistant window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
+![Fereastra Asistent \*mobil](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
 
-## How it works
+## Cum funcționează
 
-AdGuard Browser Assistant is a browser extension. It allows you to quickly manage the AdGuard app:
+Asistentul Browser AdGuard este o extensie de browser. Vă permite să gestionați rapid aplicația AdGuard:
 
-- Enable or disable protection for a specific website (a toggle under the website name)
-- Pause protection for 30 seconds
-- Disable protection (the pause icon in the upper right corner)
-- Manually block an ad
-- Open the filtering log
-- Report incorrect blocking
-- Open AdGuard settings
-- View website certificate and manage HTTPS filtering (the lock icon next to the website name)
+- Activați sau dezactivați protecția pentru un site web specific (o comutare sub numele site-ului)
+- Pauza protecției timp de 30 de secunde
+- Dezactivați protecția (icoana de pauză din colțul din dreapta sus)
+- Blocați manual o reclamă
+- Deschideți jurnalul de filtrare
+- Raportați blocări incorecte
+- Deschideți setările AdGuard
+- Vizualizați certificatul site-ului și gestionați filtrarea HTTPS (icoana de blocare de lângă numele site-ului)
 
-## How to install
+## Cum se instalează
 
-When you install AdGuard for Mac, you will be prompted to install Browser Assistant for your default browser. If you skip this step, you can install it later.
+Când instalați AdGuard pentru macOS, vi se va solicita să instalați Asistentul Browser pentru browserul dumneavoastră implicit. Dacă săriți peste acest pas, îl puteți instala mai târziu.
 
-**From settings**:
+**Din setări**:
 
-1. Open the AdGuard menu.
-2. Click the gear icon and select _Preferences_.
-3. Switch to the _Assistant_ tab.
-4. Click _Get the Extension_ next to your default browser.
-5. Install Assistant from your browser’s extension store.
+1. Deschideți meniul AdGuard.
+2. Faceți clic pe icoana dințelului și selectați _Preferințe_.
+3. Comutați pe tab-ul _Asistent_.
+4. Faceți clic pe _Obțineți extensia_ lângă browserul dumneavoastră implicit.
+5. Instalați Asistentul din magazinul de extensii al browserului dumneavoastră.
 
-![The Assistant tab](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)
+![Tabul Asistent](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)
 
-**From the website**:
+**De pe site**:
 
-1. Open the [Assistant page](https://adguard.com/adguard-assistant/overview.html).
-2. Under your browser name, select _Install_.
-3. Install Assistant from your browser’s extension store.
+1. Deschideți [pagina Asistent](https://adguard.com/adguard-assistant/overview.html).
+2. Sub numele browserului dumneavoastră, selectați _Instalați_.
+3. Instalați Asistentul din magazinul de extensii al browserului dumneavoastră.
 
 :::note
 
-In rare cases, a browser may be incompatible with Assistant. To manage AdGuard from your browser, you can install the legacy Assistant instead.
+În cazuri rare, un browser poate fi incompatibil cu Asistentul. Pentru a gestiona AdGuard din browserul dumneavoastră, puteți instala în schimb Asistentul Legacy.
 
 :::
 
-## Legacy Assistant
+## Asistent Legacy
 
-The legacy Assistant is the previous version of AdGuard Browser Assistant. It’s a userscript that doesn’t require additional installation. While the legacy Assistant does its job well, it has several drawbacks:
+Asistentul Legacy este versiunea anterioară a Asistentului Browser AdGuard. Este un userscript care nu necesită instalare suplimentară. Deși Asistentul Legacy își face treaba bine, are mai multe dezavantaje:
 
 - It has fewer features than the extension version.
-- You have to wait for the userscript to be inserted into a webpage — sometimes it doesn’t load immediately.
-- You can’t hide the Assistant icon on the page.
+- Trebuie să așteptați ca userscriptul să fie inserat într-o pagină web — uneori nu se încarcă imediat.
+- Nu puteți ascunde icoana Asistentului pe pagină.
 
-We recommend that you use the legacy Assistant only if the new Assistant is not available.
+Recomandăm să folosiți Asistentul Legacy doar dacă noul Asistent nu este disponibil.

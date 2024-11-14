@@ -1,21 +1,21 @@
 ---
-title: How to collect AdGuard installation logs
+title: Cum să colectezi jurnalele de instalare AdGuard
 sidebar_position: 4
 ---
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multifuncțional care protejează dispozitivul dumneavoastră la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-Data and/or files provided in system logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Datele și/sau fișierele furnizate în jurnalele de sistem sunt procesate în conformitate cu [Politica de confidențialitate AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-If any problems occur during the installation of AdGuard, the support team might ask you to collect and send them AdGuard installation logs. In this case you need to:
+If any problems occur during the installation of AdGuard, the support team might ask you to collect and send them AdGuard installation logs. În acest caz, trebuie să:
 
 1. Select the *Run* command in Start menu or press *Win + R* on the keyboard.
 
@@ -23,8 +23,8 @@ If any problems occur during the installation of AdGuard, the support team might
 
     ![Open temp folder *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
 
-1. In the opened folder select all files starting with `Adguard` and add them to archive (using WinRAR or any other archiving software).
+1. În folderul deschis, selectează toate fișierele care încep cu `Adguard` și adaugă-le în arhivă (folosind WinRAR sau orice alt program de arhivare).
 
-    ![AdGuard installation log files *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
+    ![Fișierele jurnal de instalare AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
 
-1. Send this archive to AdGuard tech support at **support@adguard.com**.
+1. Trimite această arhivă echipei de suport AdGuard la **support@adguard.com**.

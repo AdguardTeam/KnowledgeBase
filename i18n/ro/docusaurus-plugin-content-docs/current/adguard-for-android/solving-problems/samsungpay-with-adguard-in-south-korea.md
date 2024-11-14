@@ -1,38 +1,38 @@
 ---
-title: How to use Samsung Pay with AdGuard in South Korea
+title: Cum să folosești Samsung Pay cu AdGuard în Coreea de Sud
 sidebar_position: 17
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Android, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-A number of users have encountered an issue where Samsung Pay does not work while AdGuard is running. This issue occurs almost exclusively on devices registered in South Korea.
+Un număr de utilizatori s-au confruntat cu o problemă în care Samsung Pay nu funcționează în timp ce AdGuard este activ. Această problemă apare aproape exclusiv pe dispozitivele înregistrate în Coreea de Sud.
 
-What is causing this issue? Sometimes Samsung Pay does not work on devices with VPN services running, and AdGuard is one of these apps. By default, AdGuard uses a local VPN to filter traffic, which can cause problems when using Samsung Pay.
+Ce cauzează această problemă? Uneori, Samsung Pay nu funcționează pe dispozitivele cu servicii VPN active, iar AdGuard este una dintre aceste aplicații. Implicit, AdGuard folosește un VPN local pentru a filtra traficul, ceea ce poate cauza probleme la utilizarea Samsung Pay.
 
-As a consequence, users had to disable AdGuard when making payments with Samsung Pay. This can be avoided with the *Detect Samsung Pay* feature. When this option is enabled, the AdGuard app is paused whenever the user opens the Samsung Pay app and resumes when the app is closed.
+Ca urmare, utilizatorii au fost nevoiți să dezactiveze AdGuard când efectuau plăți cu Samsung Pay. Acest lucru poate fi evitat cu caracteristica *Detectare Samsung Pay*. Când această opțiune este activată, aplicația AdGuard este suspendată ori de câte ori utilizatorul deschide aplicația Samsung Pay și se reia când aplicația este închisă.
 
 :::note
 
-This feature will work only if the Local VPN filtering mode is chosen in AdGuard settings. If another mode is being used, Samsung Pay will function without any interruptions.
+Această caracteristică va funcționa doar dacă modul de filtrare VPN local este ales în setările AdGuard. Dacă este utilizat un alt mod, Samsung Pay va funcționa fără întreruperi.
 
 :::
 
-To enable *Detect Samsung Pay*, follow these steps:
+Pentru a activa *Detectare Samsung Pay*, urmează acești pași:
 
-1. Go to *Settings* → *General* → *Advanced*→ *Low-level settings*.
+1. Mergi la *Setări* → *Modul general* → *Avansat*→ *Setări de nivel scăzut*.
 
-1. Scroll to *Detect Samsung Pay* and move the slider to the right.
+1. Derulează la *Detectare Samsung Pay* și mută glisorul spre dreapta.
 
-1. Tap *Allow permissions* and give AdGuard access to information about the use of other apps.
+1. Apasă *Permite permisiuni* și oferă AdGuard acces la informațiile despre utilizarea altor aplicații.
 
-We need it to collect statistics about the operation of Samsung Pay in order for the *Detect Samsung Pay* feature to work.
+Avem nevoie de aceasta pentru a colecta statistici despre funcționarea Samsung Pay, astfel încât caracteristica *Detectare Samsung Pay* să funcționeze.
 
-After enabling this feature, when you switch from Samsung Pay to AdGuard, the following message will appear as shown in the screenshot.
+După activarea acestei caracteristici, când treci de la Samsung Pay la AdGuard, va apărea următorul mesaj, așa cum este arătat în captura de ecran.
 
 ![samsungpay *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/samsungpay-with-adguard-in-south-korea/samsung_pay.png)
 
-Alternatively, you can disable filtering for Samsung Pay in *App management*. Simply go to the *App management* screen (third tab from the bottom), find Samsung Pay in the list, and turn off the switch at *Route traffic through AdGuard*.
+Alternativ, poți dezactiva filtrarea pentru Samsung Pay în *Gestionarea aplicațiilor*. Pur și simplu mergi la ecranul *Gestionarea aplicațiilor* (a treia filă de la fund), găsește Samsung Pay în listă și oprește comutatorul la *Rutează traficul prin AdGuard*.

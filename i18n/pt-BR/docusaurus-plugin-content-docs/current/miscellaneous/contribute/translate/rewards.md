@@ -5,56 +5,56 @@ sidebar_position: 6
 
 Como qualquer esforço honesto e bem executado deve ser recompensado, os tradutores ativos no Crowdin podem solicitar uma chave de licença AdGuard gratuita e uma assinatura VPN.
 
-## How our reward system works
+## Como funciona nosso sistema de recompensas
 
-### For AdGuard licenses
+### Para licenças do AdGuard
 
-- For your first one-year Ad Blocker license, you need to translate **1,000 words**.
-- For your second license, you’ll need an **additional 1,500 words** (a total of 2,500 words).
-- All subsequent licenses require an **additional 2,500** words per license.
+- Para sua primeira licença de um ano do Bloqueador de anúncios, você precisa traduzir **1.000 palavras**.
+- Para sua segunda licença, você precisará de **1.500 palavras adicionais** (um total de 2.500 palavras).
+- Todas as licenças subsequentes exigem **2.500 palavras adicionais** por licença.
 
-### For AdGuard VPN licenses
+### Para licenças do AdGuard VPN
 
-- The first one-year VPN subscription requires translating **3,000 words**.
-- All subsequent subscriptions or renewals require an **additional 3,000 words** per subscription.
+- A primeira assinatura de VPN de um ano requer traduzir **3.000 palavras**.
+- Todas as assinaturas ou renovações subsequentes exigem **3.000 palavras adicionais** por assinatura.
 
-:::note Limitations
+:::note Limitações
 
-As a reward for contributing, we offer licenses and subscriptions valid for a maximum of 5 years. In the case of Ad Blocker, we offer licenses that cover up to 5 devices. We do not offer lifetime licenses.
+Como recompensa por contribuir, oferecemos licenças e assinaturas válidas por um máximo de 5 anos. No caso do Bloqueador de anúncios, oferecemos licenças que cobrem até 5 dispositivos. Não oferecemos licenças vitalícias.
 
 :::
 
-## How to request your license
+## Como solicitar sua licença
 
-Just send an email to our translators team at [translate@adguard.com](mailto:translate@adguard.com) with the following information:
+Basta enviar um e-mail para nossa equipe de tradutores em [translate@adguard.com](mailto:translate@adguard.com) com as seguintes informações:
 
-- Your Crowdin username
-- The projects you contributed to (Websites, Applications, Knowledge Base, etc.)
-- The email address to which you want to link your license
-- Your translation statistics (a screenshot or total word count) and the type of license you want
+- Seu nome de usuário no Crowdin
+- Os projetos aos quais você contribuiu (Sites, Aplicativos, Base de Conhecimento, etc.)
+- O endereço de e-mail para o qual você deseja vincular sua licença
+- Suas estatísticas de tradução (uma captura de tela ou contagem total de palavras) e o tipo de licença que você deseja
 
-**Email template:**
+**Modelo de e-mail:**
 
-> Hi AdGuard team!
+> Olá, equipe AdGuard!
 > 
-> I’ve translated more than 5,000 words in AdGuard for Android in (*your language*) — you can find my stats attached. I would like to request an AdGuard VPN license and an Ad Blocker license for that. My email is (*your email address*). My Crowdin username is (*your username*).
+> Eu traduzi mais de 5.000 palavras no AdGuard para Android para o *sua língua* — você pode encontrar minhas estatísticas em anexo. Eu gostaria de solicitar uma licença do AdGuard VPN e uma licença de Bloqueador de anúncios em troca. Meu e-mail é (*Endereço de e-mail*). Meu nome de usuário do Crowdin é (*seu nome de usuário*).
 
-## How to check your translation progress
+## Como verificar seu progresso de tradução
 
-Open a project you have been working on, click the *Reports* tab, select *My Contribution*, scroll down, select a date range, and generate a report. It will look something like this.
+Abra um projeto no qual você esteja trabalhando, clique na aba *Relatórios*, selecione *Minha Contribuição*, role para baixo, selecione um intervalo de datas e gere um relatório. Ele será assim:
 
-![Statistics *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/statistics.png)
+![Tela de estatísticas *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/statistics.png)
 
-You can add up the number of words translated across different projects to qualify for a license.
+Você pode somar o número de palavras traduzidas em diferentes projetos para obter uma licença.
 
 ## Como se tornar um revisor
 
-Our most active translators may be considered for proofreader status in the future. To become a proofreader, you’ll need to deliver consistently high quality translations over a period of several months.
+Nossos tradutores mais ativos podem ser considerados para o status de revisor no futuro. Para se tornar um revisor, você precisará entregar traduções de alta qualidade de forma consistente ao longo de um período de vários meses.
 
-Please note that proofreaders do not receive extra licenses or benefits beyond helping more people access AdGuard products in their language. If you’re interested in becoming one of our proofreaders, please contact us at [translate@adguard.com](mailto:translate@adguard.com).
+Por favor, note que os revisores não recebem licenças ou benefícios extras além de ajudar mais pessoas a acessarem os produtos AdGuard em seu idioma. Se você estiver interessado em se tornar um de nossos revisores, entre em contato conosco via [translate@adguard.com](mailto:translate@adguard.com).
 
-## Gifts for active contributors
+## Presentes para colaboradores ativos
 
-To the best contributors, every year we send gifts with the AdGuard merch and give a shout out on our [blog](https://adguard.com/en/blog/best-contributors-2023.html).
+Para os melhores colaboradores, todo ano enviamos presentes com os produtos da AdGuard e fazemos uma menção no nosso [blog](https://adguard.com/en/blog/best-contributors-2023.html).
 
 ![AdGuard merch *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

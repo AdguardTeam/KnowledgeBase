@@ -1,38 +1,38 @@
 ---
-title: What can be done in the AdGuard Account
+title: Ce se poate face în contul AdGuard
 sidebar_position: 2
 ---
 
-In your account, you can manage your licenses, devices bound to them, personal data, email and password, view purchases and contact support.
+În contul dumneavoastră, puteți gestiona licențele, dispozitivele legate de acestea, datele personale, e-mailul și parola, vizualizați achizițiile și contactați suportul.
 
-## Manage account settings
+## Gestionați setările contului
 
-In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable [two-factor authentication](../2fa), view the data stored about you by AdGuard and choose the language of your personal account and notifications.
+În secțiunea *Setări* a contului dumneavoastră AdGuard, puteți actualiza sau reseta parola, schimba adresa de e-mail, activa [autentificarea cu doi factori](../2fa), vizualiza datele stocate despre dumneavoastră de către AdGuard și alege limba contului personal și notificărilor.
 
-In this section, you can also manage your email preferences:
+În această secțiune, puteți gestiona și preferințele dumneavoastră de e-mail:
 
-- receive transactional emails,
-- receive AdGuard’s monthly newsletters,
-- receive emails about AdGuard special offers and promotions,
-- send read receipts to AdGuard when you open emails.
+- primiți e-mailuri tranzacționale,
+- primiți buletine informative lunare de la AdGuard,
+- primiți e-mailuri despre oferte speciale și promoții de la AdGuard,
+- trimiteți confirmări de citire către AdGuard atunci când deschideți e-mailuri.
 
-## Manage licenses
+## Gestionați licențele
 
-In the *Licenses* section, you can manage your licenses and the devices bound to them.
+În secțiunea *Licențe*, puteți gestiona licențele dumneavoastră și dispozitivele legate de acestea.
 
-[AdGuard licenses](../../license/what-is) can be:
+[Licențele AdGuard](../../license/what-is) pot fi:
 
 - bound and unbound,
 - extended,
 - upgraded,
-- canceled. You can also update your payment details.
+- anulat. De asemenea, puteți actualiza detaliile de plată.
 
-The devices bound to your AdGuard Ad Blocker licenses can be unbound or renamed. You can unbind unused devices by clicking the cross icon next to them.
+Dispozitivele legate de licențele dumneavoastră AdGuard Ad Blocker pot fi dezlegate sau redenumite. Puteți dezlega dispozitivele nefolosite făcând clic pe iconița încrucișată de lângă ele.
 
-## View purchases
+## Vizualizați achizițiile
 
-The Purchase history section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. You will also find there information about the date of purchase, order ID, payment method, and cost of the purchase.
+Secțiunea istoric de achiziții afișează toate licențele pe care le-ați achiziționat vreodată folosind contul de e-mail cu care v-ați înregistrat contul AdGuard. De asemenea, veți găsi informații despre data achiziției, ID-ul comenzii, metoda de plată și costul achiziției.
 
-## Contact support
+## Contactați suportul
 
-The Support tab contains useful links to help you solve problems or find answers to your questions about AdGuard products. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge Base, and Discuss.
+Tab-ul Suport conține linkuri utile pentru a vă ajuta să rezolvați problemele sau să găsiți răspunsuri la întrebările dumneavoastră despre produsele AdGuard. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge Base, and Discuss.

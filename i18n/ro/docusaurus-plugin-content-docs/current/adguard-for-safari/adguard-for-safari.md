@@ -5,30 +5,30 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard for Safari, which safeguards only your Safari browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Safari, care protejează doar browserul dvs. Safari. Pentru a proteja întregul dispozitiv, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Features
 
-Here are outlined the main features and settings available in AdGuard for Safari.
+Iată evidențiate caracteristicile și setările principale disponibile în AdGuard pentru Safari.
 
-[Features](/adguard-for-safari/features/features.md)
+[Caracteristici](/adguard-for-safari/features/features.md)
 
-## Installation
+## Instalare
 
-Here, you’ll find the system requirements along with instructions on how to install and uninstall AdGuard for Safari.
+Aici veți găsi cerințele sistemului împreună cu instrucțiuni despre cum să instalați și să dezinstalați AdGuard pentru Safari.
 
-[Installation](/adguard-for-safari/installation.md)
+[Instalare](/adguard-for-safari/installation.md)
 
-## Safari extensions
+## Extensii pentru Safari
 
-The article provides an overview of extensions in AdGuard for Safari, how they work, installation instructions, and key features of the extensions.
+Articolul oferă o prezentare generală a extensiilor în AdGuard pentru Safari, cum funcționează acestea, instrucțiuni de instalare și caracteristicile cheie ale extensiilor.
 
-[Safari extensions](/adguard-for-safari/extensions.md)
+[Extensii Safari](/adguard-for-safari/extensions.md)
 
 ## Solving problems
 
-This section includes various articles addressing known issues and possible solutions.
+Această secțiune include diverse articole care abordează problemele cunoscute și soluțiile posibile.
 
-[Solving problems](/adguard-for-safari/solving-problems/solving-problems.md)
+[Rezolvarea problemelor](/adguard-for-safari/solving-problems/solving-problems.md)

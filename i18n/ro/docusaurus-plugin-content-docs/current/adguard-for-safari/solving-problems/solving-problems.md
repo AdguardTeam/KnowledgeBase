@@ -5,14 +5,14 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Safari, which safeguards only your Safari browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Safari, care protejează doar browserul dvs. Safari. Pentru a proteja întregul dispozitiv, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Here are some problems you may encounter and workarounds, as well as guides and instructions you may need.
+Iată câteva probleme pe care le puteți întâlni și soluții alternative, precum și ghiduri și instrucțiuni de care s-ar putea să aveți nevoie.
 
-- [Rule limit issues](/adguard-for-safari/solving-problems/rule-limit.md)
-- [Filtering doesn’t work and ads aren’t blocked](/adguard-for-safari/solving-problems/ads-not-blocked.md)
-- [Filtering doesn’t stop when AdGuard for Safari is disabled](/adguard-for-safari/solving-problems/filters-after-disable.md)
-- [How to collect logs in AdGuard for Safari](/adguard-for-safari/solving-problems/logs.md)
-- [AdGuard for Safari doesn’t work in private tabs on macOS Sonoma](/adguard-for-safari/solving-problems/private-sonoma.md)
+- [Probleme legate de limitele regulilor](/adguard-for-safari/solving-problems/rule-limit.md)
+- [Filtrarea nu funcționează și reclamele nu sunt blocate](/adguard-for-safari/solving-problems/ads-not-blocked.md)
+- [Filtrarea nu se oprește când AdGuard pentru Safari este dezactivat](/adguard-for-safari/solving-problems/filters-after-disable.md)
+- [Cum să colectați jurnalele în AdGuard pentru Safari](/adguard-for-safari/solving-problems/logs.md)
+- [AdGuard pentru Safari nu funcționează în file private pe macOS Sonoma](/adguard-for-safari/solving-problems/private-sonoma.md)
