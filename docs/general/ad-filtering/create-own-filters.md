@@ -2398,21 +2398,21 @@ You can also use regular expressions to match query parameters and/or their valu
 
 **Escaping special characters**
 
-Special characters should be URL-encoded in a rule to correctly match the URLs text.
+Special characters should be URL-encoded in a rule to correctly match the URL text.
 
-E.g. to remove the `?$param=true` you should use the `$removeparam=%24param` rule.
+For example, to remove `?$param=true`, you should use the `$removeparam=%24param` rule.
 
 :::note
 
-Space and comma symbols should be URL-encoded as well, otherwise the rule won't match the URL. However, `.`, `-`, `_` and `~` symbols should be used as is because they are not marked as reserved characters in URL-encoding.
+Spaces and commas should also be URL-encoded, otherwise the rule won't match the URL. However, `.`, `-`, `_`, and `~` should be used as they are, since they are not marked as reserved characters in URL encoding.
 
 :::
 
-Do not forget to escape special characters like `.` in the regular expressions. Use `\` character for that purpose. For example, an escaped dot should look like this: `\.`.
+Remember to escape special characters like `.` in the regular expressions. Use the `\' character to do this. For example, an escaped dot should look like this: `\.`.
 
 :::note
 
-Regexp-type rules target both name and value of the parameter. To minimize mistakes, it is safer to start every regexp with `/^` unless you specifically target parameter values.
+Regexp-type rules apply to both the name and value of the parameter. To minimize errors, it is safer to start each regexp with `/^`, unless you are specifically targeting parameter values.
 
 :::
 
@@ -2431,7 +2431,7 @@ Use `~` to apply inversion:
 
 :::note
 
-If `~` appear not at the beginning of the rule it will be treated just as a symbol in the text.
+If `~` does not appear at the beginning of the rule, it is treated as a symbol in the text.
 
 :::
 
