@@ -1,22 +1,22 @@
 ---
-title: Protection cannot be enabled
+title: Protecția nu poate fi activată
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru macOS, un blocant de reclame multifuncțional care protejează dispozitivul tău la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-If AdGuard Protection cannot be enabled for some reason, perform the following steps:
+Dacă protecția AdGuard nu poate fi activată dintr-un anumit motiv, efectuați următorii pași:
 
-1. Click the AdGuard icon at the menu bar and go to *Advanced* → *Reset settings...* → *Quit AdGuard...*
+1. Faceți clic pe iconița AdGuard din bara de meniu și mergeți la *Avansat* → *Resetare setări...* → *Ieșiți din AdGuard...*
 
-2. In the Spotlight Search, type Terminal, enter `sudo rm -R /Library/Application\ Support/com.adguard.adguard` and execute.
+2. În căutarea Spotlight, tastați Terminal, introduceți `sudo rm -R /Library/Application\ Support/com.adguard.adguard` și executați.
 
-3. Restart your computer.
+3. Reporniți computerul dvs.
 
-4. Open the Terminal again, type `ls -al /Library/StagedExtensions/Library/Application\ Support/com.adguard.adguard/` and execute. You should receive the following: `No such file or directory`.
+4. Deschideți din nou Terminalul, tastați `ls -al /Library/StagedExtensions/Library/Application\ Support/com.adguard.adguard/` și executați. Trebuie să primiți următorul mesaj: `No such file or directory`.
 
-5. Start AdGuard and enter your login information when prompted.
+5. Porniți AdGuard și introduceți informațiile de conectare atunci când vi se solicită.

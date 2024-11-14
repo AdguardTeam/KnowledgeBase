@@ -5,36 +5,36 @@ sidebar_position: 1
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multifuncțional care protejează dispozitivul dumneavoastră la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Features
 
-Here are outlined the main features and settings available in AdGuard for Windows.
+Iată principalele caracteristici și setările disponibile în AdGuard pentru Windows.
 
-[Features](/adguard-for-windows/features/features.md)
+[Caracteristici](/adguard-for-windows/features/features.md)
 
-## Installation
+## Instalare
 
-Here, you’ll find the system requirements along with instructions on how to install and uninstall AdGuard for Windows.
+Aici, veți găsi cerințele de sistem împreună cu instrucțiuni despre cum să instalați și să dezinstalați AdGuard pentru Windows.
 
-[Installation](/adguard-for-windows/installation.md)
+[Instalare](/adguard-for-windows/installation.md)
 
-## Browser Assistant
+## Asistent Browser
 
-This article covers a browser extension that complements the desktop program, its installation, and its benefits.
+Acest articol acoperă o extensie de browser care completează programul desktop, instalarea acesteia și beneficiile sale.
 
 [Browser Assistant](/adguard-for-windows/browser-assistant.md)
 
 ## Solving problems
 
-This section includes various articles addressing known issues and possible solutions.
+Această secțiune include diverse articole care abordează problemele cunoscute și soluțiile posibile.
 
-[Solving problems](/adguard-for-windows/solving-problems/solving-problems.md)
+[Rezolvarea problemelor](/adguard-for-windows/solving-problems/solving-problems.md)
 
-## Documentation for admins
+## Documentație pentru administratori
 
-This page provides details about AdGuard’s central management of policies and preferences.
+Această pagină oferă detalii despre managementul centralizat al politicilor și preferințelor AdGuard.
 
-[Documentation for admins](/adguard-for-windows/admins-documentation.md)
+[Documentație pentru administratori](/adguard-for-windows/admins-documentation.md)

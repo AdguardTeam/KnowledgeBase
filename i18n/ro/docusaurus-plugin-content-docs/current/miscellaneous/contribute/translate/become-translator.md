@@ -49,6 +49,6 @@ So, what are proofreaders responsible for?
 
 - Look after the relevance of translations;
 
-- Respond to comments related to translations in their language.
+- răspund la comentariile legate de traduceri în limba lor.
 
 Every year, the best proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system](../rewards).

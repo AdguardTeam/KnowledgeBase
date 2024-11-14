@@ -1,74 +1,74 @@
 ---
-title: Installation
+title: Instalare
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Android, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## System requirements
+## Cerințele Sistemului
 
 **OS version:** Android 7.0 or higher
 
-**RAM:** at least 2 GB
+**RAM:** cel puțin 2 GB
 
-**Free disk space:** 500 MB
+**Spațiu liber pe disc:** 500 MB
 
-## Installation
+## Instalare
 
-Most Android-based apps are distributed via Google Play; however, AdGuard is not presented there, because Google prohibits distribution of network-level ad blockers via Google Play, i.e. apps that block commercials in other apps. You will find more information about Google restrictive policy [in our blog](https://adguard.com/blog/adguard-google-play-removal.html).
+Cele mai multe aplicații bazate pe Android sunt distribuite prin Google Play; cu toate acestea, AdGuard nu este prezent acolo, deoarece Google interzice distribuirea blocantelor de reclame la nivel de rețea prin Google Play, adică aplicații care blochează reclamele în alte aplicații. Veți găsi mai multe informații despre politica restrictivă Google [în blogul nostru](https://adguard.com/blog/adguard-google-play-removal.html).
 
-That’s why you can only install AdGuard for Android manually. To use the app on your mobile device, you will need to do the following.
+De aceea, puteți instala AdGuard pentru Android manual. Pentru a folosi aplicația pe aparatul dvs. mobil, va trebui să faceți următoarele.
 
-1. **Download the app on your device**. Here are a few ways you can do this:
+1. **Descărcați aplicația pe dispozitivul dvs.**. Iată câteva modalități prin care puteți face acest lucru:
 
-    - head over to [our website](https://adguard.com/adguard-android/overview.html) and tap the *Download* button
-    - start the browser and type in the following URL: [https://adguard.com/apk](https://adguard.com/apk)
-    - or scan this QR code:
+    - mergi la [site-ul nostru](https://adguard.com/adguard-android/overview.html) și apasă pe butonul *Descărcați*
+    - începe browserul și introdu următorul URL: [https://adguard.com/apk](https://adguard.com/apk)
+    - sau scanați acest cod QR:
 
-    ![QR code *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst-qr-en-1.png)
+    ![Cod QR *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst-qr-en-1.png)
 
-1. **Allow installing apps from unknown sources**. Once the file download is complete, tap *Open* in the notification.
+1. **Permiteți instalarea aplicațiilor din surse necunoscute**. Odată ce descărcarea fișierului este completă, apăsați *Deschis* în notificare.
 
-    ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_1.png)
+    ![Instalarea aplicațiilor din surse necunoscute *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_1.png)
 
-    A popup will appear. Tap *Settings*, navigate to *Install unknown apps*, and grant permission for the browser you've used to download the file.
+    Va apărea o fereastră pop-up. Apăsați *Setări*, accesați *Instalare aplicații necunoscute* și permiteți permisiunea pentru browserul pe care l-ați folosit pentru a descărca fișierul.
 
-    ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_3.png)
+    ![Instalarea aplicațiilor din surse necunoscute *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_3.png)
 
-1. **Install the app**. Once the browser has obtained the necessary permissions, the system will ask you if you want to install the AdGuard app. Tap *Install*.
+1. **Instalați aplicația**. Odată ce browserul a obținut permisiunile necesare, sistemul vă va întreba dacă doriți să instalați aplicația AdGuard. Apăsați *Instalare*.
 
-    ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
+    ![Instalarea aplicațiilor din surse necunoscute *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
-    You will then be asked to read AdGuard's *License agreement* and *Privacy policy*. You can also participate in product development. To do this, check the boxes for *Send crash reports automatically* and *Send technical and interaction data*. Then tap *Continue*.
+    You will then be asked to read AdGuard's *License agreement* and *Privacy policy*. De asemenea, puteți participa la dezvoltarea produsului. Pentru a face acest lucru, bifați casetele pentru *Trimiteți rapoarte de accident automat* și *Trimiteți date tehnice și de interacțiune*. Apoi apăsați *Continuare*.
 
-    ![Privacy policy *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
+    ![Politica confidențialității *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
 
-1. **Create a local VPN**. In order to filter all traffic directly on your device and not route it through a remote server, AdGuard needs to establish a VPN connection.
+1. **Creați un VPN local**. Pentru a filtra tot traficul direct pe aparatul dvs. și a nu-l direcționa printr-un server la distanță, AdGuard trebuie să stabilească o conexiune VPN.
 
-    ![Create a local VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_2.png)
+    ![Creați un VPN local *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_2.png)
 
-1. **Enable HTTPS filtering**. It is not a mandatory option, however, we advice to turn it on for the best ad-blocking quality.
+1. **Activați filtrarea HTTPS**. Nu este o opțiune obligatorie, cu toate acestea, recomandăm să o activați pentru cea mai bună calitate a blocării reclamelor.
 
-    If your device is running Android 7–9, you'll be prompted to install a root certificate and configure HTTPS filtering after the local VPN setup.
+    Dacă aparatul dvs. rulează Android 7–9, vi se va solicita să instalați un certificat rădăcină și să configurați filtrarea HTTPS după configurarea VPN-ului local.
 
-    ![Enable HTTPS filtering on Android 7-9 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_1.jpg)
+    ![Activați filtrarea HTTPS pe Android 7-9 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_1.jpg)
 
-    After you tap *Install now*, a prompt will appear asking you to authenticate the certificate installation with a password or fingerprint.
+    După ce apăsați *Instalați acum*, va apărea o fereastră care vă va solicita să autentificați instalarea certificatului cu o parolă sau amprenta digitală.
 
-    ![Enable HTTPS filtering on Android 7-9. Step 2 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_2.jpg)
+    ![Activați filtrarea HTTPS pe Android 7-9. Pasul 2 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_2.jpg)
 
-    If you have Android 10+ on your device, then after creating a local VPN, you will see the main app screen with a snack bar at the bottom with a suggestion to enable HTTPS filtering: tap *Enable* and follow the instructions on the next screen or check [the article about certificate installation](solving-problems/manual-certificate.md) for more information.
+    Dacă aveți Android 10+ pe dispozitivul dvs., atunci după crearea unui VPN local, veți vedea ecranul principal al aplicației cu un snack bar în partea de jos cu o sugestie de a activa filtrarea HTTPS: apăsați *Activează* și urmați instrucțiunile de pe ecranul următor sau verificați [articolul despre instalarea certificatului](solving-problems/manual-certificate.md) pentru mai multe informații.
 
-    ![Enable HTTPS filtering *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_5.png)
+    ![Activați filtrarea HTTPS *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_5.png)
 
-## Uninstalling/Reinstalling AdGuard
+## Dezinstalare/ reinstalare AdGuard
 
-If you need to uninstall AdGuard on your mobile device, open *Settings* and choose *Apps* (Android 7) or *Apps & notifications* (Android 8+). Find AdGuard in the list of installed apps and press *Uninstall*.
+Dacă trebuie să dezinstalați AdGuard pe aparatul dvs. mobil, deschideți *Setări* și alegeți *Aplicații* (Android 7) sau *Aplicații & notificări* (Android 8+). Găsiți AdGuard în lista aplicațiilor instalate și apăsați *Dezinstalare*.
 
-![Reinstall AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
+![Reinstalați AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
-To reinstall AdGuard, just download the apk file again and follow the steps outlined in the Installation section. Uninstallation is not required beforehand.
+Pentru a reinstala AdGuard, descărcați din nou fișierul apk și urmați pașii descriși în secțiunea Instalare. Dezinstalarea nu este necesară în prealabil.

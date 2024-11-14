@@ -5,30 +5,30 @@ sidebar_position: 1
 
 ## Features
 
-Here are outlined the main features and settings available in AdGuard for iOS.
+Iată care sunt caracteristicile principale și setările disponibile în AdGuard pentru iOS.
 
-[Features](/adguard-for-ios/features/features.md)
+[Caracteristici](/adguard-for-ios/features/features.md)
 
-## Installation
+## Instalare
 
-Here, you’ll find the system requirements along with instructions on how to install and uninstall AdGuard for iOS.
+Aici veți găsi cerințele de sistem împreună cu instrucțiuni despre cum să instalați și să dezinstalați AdGuard pentru iOS.
 
-[Installation](/adguard-for-ios/installation.md)
+[Instalare](/adguard-for-ios/installation.md)
 
 ## Safari Web extension
 
-AdGuard for iOS includes a web extension that integrates with Safari to provide efficient ad blocking, privacy protection, and customizable filters directly within the browser.
+AdGuard pentru iOS include o extensie web care se integrează cu Safari pentru a oferi blocare eficientă a reclamelor, protecția vieții private și filtre personalizabile direct în browser.
 
-[Safari Web extension](/adguard-for-ios/web-extension.md)
+[Extensie web Safari](/adguard-for-ios/web-extension.md)
 
 ## Solving problems
 
-This section includes various articles addressing known issues and possible solutions.
+Această secțiune include diverse articole care abordează problemele cunoscute și soluțiile posibile.
 
-[Solving problems](/adguard-for-ios/solving-problems/solving-problems.md)
+[Rezolvarea problemelor](/adguard-for-ios/solving-problems/solving-problems.md)
 
 ## AdGuard and AdGuard Pro
 
-Here we explain why there are two AdGuard apps in the App Store and what the difference is between them.
+Aici explicăm de ce există două aplicații AdGuard în App Store și care este diferența dintre ele.
 
-[AdGuard and AdGuard Pro](/adguard-for-ios/adguard-and-adguard-pro.md)
+[AdGuard și AdGuard Pro](/adguard-for-ios/adguard-and-adguard-pro.md)

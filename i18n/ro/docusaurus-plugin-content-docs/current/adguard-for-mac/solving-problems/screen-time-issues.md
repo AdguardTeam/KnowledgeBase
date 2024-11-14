@@ -1,18 +1,18 @@
 ---
-title: Incompatibility with Screen Time
+title: Incompatibilitate cu Screen Time
 sidebar_position: 11
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru macOS, un blocant de reclame multifuncțional care protejează dispozitivul tău la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-If you have Content Restrictions enabled in _Screen Time_ while AdGuard is on, you may experience problems loading web pages. To check if Content Restrictions are active:
+Dacă ai restricții de conținut activate în _Screen Time_ în timp ce AdGuard este activat, este posibil să întâmpini probleme la încărcarea paginilor web. Pentru a verifica dacă restricțiile de conținut sunt active:
 
-1. Go to System Settings → Screen Time → Content & Privacy → Content Restrictions
+1. Accesează Setările sistemului → Screen Time → Intimitate și Conținut → Restricții de conținut
 
 2. Check if the setting for Access to Web Content is set to _Limit Adult Websites_
 
-If this setting is on, pages won’t load. To continue using AdGuard, disable Content & Privacy in Screen Time, and then restart the system.
+Dacă această setare este activată, paginile nu se vor încărca. Pentru a continua să folosești AdGuard, dezactivează Intimitatea și Conținutul în Screen Time, apoi repornește sistemul.

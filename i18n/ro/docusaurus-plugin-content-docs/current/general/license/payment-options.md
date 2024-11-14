@@ -1,23 +1,23 @@
 ---
-title: How to purchase or upgrade
+title: Cum să cumpărați sau să actualizați
 sidebar_position: 2
 ---
 
-## How to purchase a license{#purchase}
+## Cum să cumpărați o licență{#purchase}
 
-AdGuard licenses can be bought on [adguard.com](https://adguard.com/license.html). You can pay with Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay and UnionPay. We also accept the following cryptocurrencies: Bitcoin, Ethereum, Litecoin, and Tether.
+Licențele AdGuard pot fi cumpărate de pe [adguard.com](https://adguard.com/license.html). Puteți plăti cu Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay și UnionPay. Acceptăm de asemenea următoarele criptomonede: Bitcoin, Ethereum, Litecoin și Tether.
 
-AdGuard Pro for iOS can be bought on the App Store.
+AdGuard Pro poate fi cumpărat pe App Store.
 
-Ad Blocker licenses are also sold by various distributors. The availability of AdGuard products in app stores and by distributors depends on your country.
+Licențele pentru Blocant de reclame sunt de asemenea vândute de diverși distribuitori. Disponibilitatea produselor AdGuard în magazinele de aplicații și la distribuitori depinde de țara dvs.
 
 ## How to upgrade a license{#upgrade}
 
-To make more use of your AdGuard products, you can upgrade your license for the following benefits.
+Pentru a utiliza mai bine produsele AdGuard, puteți actualiza licența pentru următoarele beneficii.
 
-- To extend the number of devices, you can **upgrade your Personal license to Family**
-- You can also **upgrade your 1-year subscription to a lifetime license**
+- Pentru a extinde numărul de dispozitive, puteți **actualiza licența dvs. Personal la Familial**
+- De asemenea, puteți **actualiza abonamentul de 1 an la o licență pe viață**
 
-You can upgrade your license in your AdGuard account. To do so, click *Upgrade to Lifetime* or *Increase device limit*.
+Puteți actualiza licența în contul dvs. AdGuard. To do so, click *Upgrade to Lifetime* or *Increase device limit*.
 
 ![Upgrade](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

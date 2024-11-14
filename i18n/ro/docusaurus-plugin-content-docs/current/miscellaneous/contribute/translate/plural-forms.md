@@ -40,7 +40,7 @@ Here are some sources of information you can use.
 
 [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. The number of plural forms for different languages is shown this way: `nplurals=2`, `nplurals=4` and so on. The numeral after the Equals sign `=` indicates the number of plural forms of the respective language.
 
-Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). The CLDR Plural Rules indicate an additional word form for decimal numbers (1.5; 2.3; 100.1…), but we don’t use them in AdGuard translations.
+Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Regulile CLDR pentru plural indică o formă suplimentară de cuvânt pentru numere zecimale (1,5; 2,3; 100,1…), dar noi nu le folosim în traducerile AdGuard.
 
 ## Plurals in AdGuard translations {#translations}
 
@@ -84,7 +84,7 @@ Crowdin suggests to users that they translate the certain amount of phrases with
 
 If your language provides only one plural form, then you will see only one phrase to translate. If three or more forms, Crowdin will provide you with the string divided into other two or three strings to translate.
 
-For example:
+De exemplu:
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/crowdin_scheme.png)
 

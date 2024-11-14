@@ -9,6 +9,10 @@ sidebar_position: 2
 
 :::
 
+## 系统要求
+
+Requires macOS 10.15 (Catalina). The minimum supported version of Safari is 13 or later.
+
 ## 如何安装 AdGuard Safari 版？ {#install}
 
 AdGuard Safari 版是 App Store 中的一款免费应用程序。 要在设备上安装它，请执行以下操作。
@@ -32,26 +36,12 @@ AdGuard Safari 版是 App Store 中的一款免费应用程序。 要在设备�
 
     ![扩展已检查](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 
-1. 要使 AdGuard 在网站上生效，必须启用「*内容拦截器*」设置。 用户可以启用所有网站，也可以选择想要的网站。
+1. For AdGuard to work on websites, the *Extensions* setting in Safari must be enabled. Open Safari → *Settings* → *Websites* → *Extensions*. If you want to enable AdGuard on every website, set *For other websites* to *Allow*.
 
-    :::note
-
-    iOS 9.0 及更高版本、带有 Safari 10 的 macOS 10.11 以及 macOS 10.12 及更高版本需要执行此步骤。
-
-
-:::
-
-在 macOS 上，单击「*首选项*」→「*网站*」→「*内容拦截器*」。 如果要在每个网站上启用 AdGuard，请将「*访问其他网站时*」转为「*开启*」。
-
-![Mac Safari 内容拦截器设置](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
+![Mac Safari 内容拦截器设置](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/macos_extensions.png)
 <!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
-在 iOS 上，进入「*设置*」→「*Safari*」→ *内容拦截器*，并将选项设置为「*是*」。
-
-![iOS Safari 内容拦截器设置](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
-<!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
-
-完成步骤 1-4 后，AdGuard Safari 版将开始正常运行。 现在可以开始配置扩展程序。
+After you complete these steps, AdGuard for Safari will start functioning. 现在可以开始配置扩展程序。
 
 ## 如何卸载 AdGuard Safari 版本 {#uninstall}
 

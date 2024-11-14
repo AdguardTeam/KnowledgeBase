@@ -1,32 +1,32 @@
 ---
-title: Free vs. full version
+title: Versiune gratuită vs. versiune completă
 sidebar_position: 9
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru iOS, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-Both AdGuard for iOS with enabled Premium and AdGuard Pro block ads on Apple smartphones and tablets. They used to differ in functionality due to certain changes made to App Store review policies in the past, but now AdGuard with a purchased subscription and AdGuard Pro are identical in their functionality.
+Atât AdGuard pentru iOS cu Premium activat, cât și AdGuard Pro blochează reclamele pe smartphone-urile și tabletele Apple. În trecut, acestea se deosebeau prin funcționalitate din cauza unor modificări aduse politicii de revizuire a App Store, dar acum AdGuard cu o subscripție achiziționată și AdGuard Pro sunt identice în funcționalitatea lor.
 
 :::
 
-Premium AdGuard for iOS features several differences from the free version, including custom DNS settings. With these settings, you can block ads not only in Safari but in other apps too, protect your kids from adult content online, and keep your personal information safe from theft. There are other differences, too. Let’s explore them all in more detail.
+AdGuard Premium pentru iOS are mai multe diferențe față de versiunea gratuită, inclusiv setări DNS personalizate. Cu aceste setări, poți bloca reclamele nu doar în Safari, ci și în alte aplicații, proteja copiii tăi de conținutul pentru adulți online și păstra informațiile personale în siguranță de furt. Există și alte diferențe. Să le explorăm pe toate în detaliu.
 
-1. The **DNS protection** module encrypts your DNS traffic to enhance privacy. It works across all apps and browsers, not just Safari, offering broad protection against ads and trackers.
+1. Modulul **Protecție DNS** criptoiază traficul tău DNS pentru a spori intimitatea. Funcționează în toate aplicațiile și browserele, nu doar în Safari, oferind o protecție extinsă împotriva reclamelor și trackerelor.
 
-   - **Custom DNS servers:** Choose from one of the popular DNS servers from our list or add your own custom server.
+   - **Servere DNS personalizate:** Alege dintr-una dintre serverele DNS populare din lista noastră sau adaugă propriul tău server personalizat.
 
-   - **Family Protection:** The Internet isn’t always kid-friendly. With AdGuard Premium, you can switch to DNS providers that block adult content and other inappropriate material to keep your children safe online.
+   - **Protecția familiei:** Internetul nu este întotdeauna prietenos cu copiii. Cu AdGuard Premium, poți comuta la furnizori DNS care blochează conținutul pentru adulți și alte materiale inadecvate pentru a-ți proteja copiii online.
 
-   - **Monitoring and flexible configuration:** Recent activity log allows you to view all DNS requests sent by your device and easily manage your traffic by adding websites to blocklist or allowlist with just a tap.
+   - **Monitorizare și configurare flexibilă:** Jurnalul activității recente îți permite să vizualizezi toate cererile DNS trimise de dispozitivul tău și să gestionezi cu ușurință traficul tău adăugând site-uri în lista de blocări sau lista permisivă cu un singur tap.
 
-2. **Advanced protection** lets you use advanced filtering rules to block more complex ads that would be left unblocked otherwise.
+2. **Protecție avansată** îți permite să folosești reguli de filtrare avansate pentru a bloca reclame mai complexe care ar fi altfel lăsate neblocate.
 
-3. **More filter options:** When purchasing AdGuard Premium, you get access to custom filters and a security filter category, where you can choose from over 50 filters, including AdGuard’s and other popular lists.
+3. **Mai multe opțiuni de filtrare:** Când achiziționezi AdGuard Premium, obții acces la filtre personalizate și o categorie de filtre de securitate, unde poți alege din peste 50 de filtre, inclusiv listele AdGuard și alte liste populare.
 
-Access these features by [purchasing a license](https://adguard.com/license.html).
+Accesează aceste funcții prin [achiziționarea unei licențe](https://adguard.com/license.html).

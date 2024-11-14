@@ -1,81 +1,81 @@
 ---
-title: Advanced Settings guide
+title: Ghid pentru Setări Avansate
 sidebar_position: 9
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru macOS, un blocant de reclame multifuncțional care protejează dispozitivul tău la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to reach Advanced Settings
+## Cum să accesați Setările Avansate
 
-:::caution
+:::atenție
 
-Changing *Advanced Settings* may cause problems with AdGuard's performance, break the Internet connection, or compromise your security and privacy. Make changes to this section only if you are sure of what you are doing or our support team has asked you to do it.
+Modificarea *Setărilor Avansate* poate cauza probleme cu performanța AdGuard, poate întrerupe conexiunea la Internet sau poate compromite securitatea și intimitatea dvs. Faceți modificări în această secțiune doar dacă sunteți sigur de ceea ce faceți sau echipa noastră de asistență v-a cerut să faceți acest lucru.
 
 :::
 
-To find *Advanced Settings*, open AdGuard, click the gear icon, select *Advanced*, then select *Advanced Settings*.
+Pentru a găsi *Setările Avansate*, deschideți AdGuard, faceți clic pe pictograma de setări, selectați *Avansat*, apoi selectați *Setări Avansate*.
 
-## Advanced Settings
+## Setări Avansate
 
 ### Network settings
 
 #### `network.extension.exclude.domains`
 
-The listed domains will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
+Domeniile enumerate vor fi excluse din filtrare în modul *Extensie de rețea*. Utilizați o virgulă sau o întrerupere de linie pentru a separa valorile.
 
 #### `network.extension.exclude.ports`
 
-The listed ports will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
+Porturile enumerate vor fi excluse din filtrare în modul *Extensie de rețea*. Utilizați o virgulă sau o întrerupere de linie pentru a separa valorile.
 
 #### `network.extension.route.exclude`
 
-The listed routes will be excluded from filtering in the *Network Extension* mode. Set routes using an IP address or destination CIDR. Separate values with commas or line breaks.
+Rutele enumerate vor fi excluse din filtrare în modul *Extensie de rețea*. Setați rute folosind o adresă IP sau CIDR de destinație. Separați valorile cu virgule sau întreruperi de linie.
 
 #### `network.extension.http.downgrade.bundleids`
 
-Here you can specify a list of applications for which the HTTP/2 protocol will be downgraded to HTTP/1.1 in the *Network Extension* filtering mode. The bundle ID should be separated by a comma or a line break.
+Aici puteți specifica o listă de aplicații pentru care protocolul HTTP/2 va fi retrogradat la HTTP/1.1 în modul de filtrare *Extensie de rețea*. ID-ul pachetului trebuie să fie separat printr-o virgulă sau o întrerupere de linie.
 
 #### `network.extension.monterey.force.split.tunnel`
 
-Here you can prohibit AdGuard from using the "default route" which is enabled by default in the *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, as it cannot operate in unison with them.
+Aici puteți interzice AdGuard să folosească "ruta implicită" care este activată implicit în modul *Extensie de rețea* pe macOS Monterey. AdGuard folosește "ruta implicită" pentru a dezactiva Transmisia privată iCloud și a proteja activitatea poștei, deoarece nu poate funcționa împreună cu acestea.
 
-You will find more information about the problem [in this article](../icloud-private-relay).
+Veți găsi mai multe informații despre problemă [în acest articol](../icloud-private-relay).
 
 #### `network.extension.dns.redirect.exclude.bundleids`
 
-Here you can specify a list of applications that make DNS queries directly not via system DNS resolver (for example, some VPN clients or DNS filtering applications). DNS filtering will be disabled for them in the *Network Extension mode*. The bundle IDs should be separated by a comma or line break.
+Aici puteți specifica o listă de aplicații care efectuează interogări DNS direct, nu prin rezolvatorul DNS al sistemului (de exemplu, unele clienți VPN sau aplicații de filtrare DNS). DNS filtering will be disabled for them in the *Network Extension mode*. ID-urile pachetului trebuie să fie separate printr-o virgulă sau o întrerupere de linie.
 
-#### `network.dns.filter.secure.request`
+#### `rețea.dns.filtrare.solicitare.sigură`
 
-Redirects secure DNS requests to a local DNS proxy, if there is one available.
+Redirecționează solicitările DNS securizate către un proxy DNS local, dacă există unul disponibil.
 
-#### `network.https.ocsp.check`
+#### `rețea.https.ocsp.check`
 
-By setting `true`, you enable HTTPS certificate revocation checking.
+Prin setarea `true`, activați verificarea revocării certificatului HTTPS.
 
 #### `network.tcp.keepalive.enabled`
 
-Periodically sends TCP packets over an idle connection to ensure that it remains active and to renew NAT timeouts.
+Trimite periodic pachete TCP pe o conexiune inactivă pentru a se asigura că aceasta rămâne activă și pentru a reînnoi timeout-urile NAT.
 
 #### `network.tcp.keepalive.interval.seconds`
 
-Idle time, in seconds, before sending a keepalive probe. If 0 is specified, the system will use the default value.
+Timpul de inactivitate, în secunde, înainte de a trimite o solicitare de menținere activă. Dacă se specifică 0, sistemul va folosi valoarea implicită.
 
 #### `network.tcp.keepalive.timeout.seconds`
 
-Time, in seconds, before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
+Timp, în secunde, înainte de a trimite o altă solicitare de menținere activă unui peer care nu răspunde. Dacă se specifică 0, va fi folosită valoarea selectată de sistem.
 
 #### `network.https.ech.enabled`
 
-Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, encrypts Client Hellos.
+Utilizează un proxy DNS local pentru a căuta configurații în listele de configurare ECH. If found, encrypts Client Hellos.
 
 #### `network.https.enforce.certificate.transparency`
 
-Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy.
+Verifică autenticitatea tuturor certificatelor pentru domeniu pe baza Politicii de transparență a certificatelor Chrome.
 
 #### `network.https.filter.http3.enabled`
 
@@ -83,81 +83,81 @@ By setting `true`, you allow AdGuard to filter traffic sent over HTTP/3, the lat
 
 #### `network.filtering.localnetwork`
 
-By setting `true`, you enable local network filtering.
+Prin setarea `true`, activați filtrarea rețelei locale.
 
 #### `network.filtering.localhost`
 
-By setting `true`, you enable LoopBack filtering.
+Prin setarea `true`, activați filtrarea LoopBack.
 
 ### DNS settings
 
 #### `dns.proxy.bootstrap.ips`
 
-Here you can enter the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server.
+Aici puteți introduce adresele IP ale serverelor DNS care vor fi folosite pentru a determina adresa serverului DNS criptat.
 
 #### `dns.proxy.fallback.ips`
 
-Here you can specify a list of IP addresses of DNS servers that will be used as backups in case the encrypted DNS server fails to respond.
+Aici puteți specifica o listă de adrese IP ale serverelor DNS care vor fi folosite ca backup în caz că serverul DNS criptat nu răspunde.
 
 #### `dns.proxy.fallback.on.upstreams.failure.enabled`
 
-Normal queries will be redirected to a fallback upstream if all normal upstreams fail.
+Interogările normale vor fi redirecționate către un server în amonte de rezervă dacă toate serverele în amonte normale eșuează.
 
 #### `dns.proxy.detect.search.domains`
 
-This option enables automatic detection of the local network domain, which will be automatically redirected to the fallback DNS server instead of the main DNS server.
+Această opțiune permite detectarea automată a domeniului rețelei locale, care va fi redirecționat automat către serverul DNS de rezervă în loc de serverul DNS principal.
 
 #### `dns.proxy.fallback.domains`
 
-Here you can list domains for which the fallback DNS server will be used instead of the main DNS server.
+Aici puteți lista domeniile pentru care serverul DNS de rezervă va fi utilizat în locul serverului DNS principal.
 
 #### `dns.proxy.adblockrules.blocking.mode`
 
-Here you can specify the type of DNS server response to blocked requests, corresponding to ad-blocker-style rules.
+Aici puteți specifica tipul de răspuns al serverului DNS pentru cererile blocate, corespunzător regulilor stilului blocator de reclame.
 
-- 0 — respond with REFUSED
-- 1 — respond with NXDOMAIN
-- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 — răspunde cu REFUSED
+- 1 — răspunde cu NXDOMAIN
+- 2 — răspunde cu 0.0.0.0 sau adresele specificate în `dns.proxy.blocking.response.IPv4.address` și/sau `dns.proxy.blocking.response.IPv6.address`
 
 #### `dns.proxy.hostrules.blocking.mode`
 
-Here you can specify the type of DNS server response to blocked requests, corresponding to hosts rules:
+Aici puteți specifica tipul de răspuns al serverului DNS pentru cererile blocate, corespunzător regulilor gazdelor:
 
-- 0 — respond with REFUSED
-- 1 — respond with NXDOMAIN
-- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 — răspunde cu REFUSED
+- 1 — răspunde cu NXDOMAIN
+- 2 — răspunde cu 0.0.0.0 sau adresele specificate în `dns.proxy.blocking.response.IPv4.address` și/sau `dns.proxy.blocking.response.IPv6.address`
 
-#### `dns.proxy.blocking.response.IPv4.address`
+#### `dns.proxy.blocking.response.adresă.IPv4`
 
-Here you can specify the IPv4 address that will be returned in response to blocked "A" requests when `dns.proxy.adblockrules.blocking.mode` or `dns.proxy.hostrules.blocking.mode` is set to the response type "ADDRESS".
+Aici puteți specifica adresa IPv4 care va fi returnată ca răspuns la cererile "A" blocate când `dns.proxy.adblockrules.blocking.mode` sau `dns.proxy.hostrules.blocking.mode` este setat pe tipul de răspuns "ADRESĂ".
 
-#### `dns.proxy.blocking.response.IPv6.address`
+#### `dns.proxy.blocking.response.adresă.IPv6`
 
-Here you can specify the IPv6 address that will be returned in response to blocked "AAAA" requests when `dns.proxy.adblockrules.blocking.mode` or `dns.proxy.hostrules.blocking.mode` is set to the response type "ADDRESS".
+Aici puteți specifica adresa IPv6 care va fi returnată ca răspuns la cererile "AAAA" blocate când `dns.proxy.adblockrules.blocking.mode` sau `dns.proxy.hostrules.blocking.mode` este setat pe tipul de răspuns "ADRESĂ".
 
 #### `dns.proxy.block.AAAA.requests`
 
-Here you can enable IPv6 DNS query blocking.
+Aici puteți activa blocarea interogărilor DNS IPv6.
 
 #### `dns.proxy.blocked.response.TTL.in.seconds`
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+Aici puteți specifica valoarea TTL (durata de viață) care va fi returnată ca răspuns la o cerere blocată.
 
 #### `dns.proxy.parallel.upstream.queries.enabled`
 
-All upstreams are queried simultaneously. The first response is returned.
+Toate fluxurile ascendente sunt interogate simultan. Primul răspuns este returnat.
 
 #### `dns.proxy.servfail.on.upstreams.failure.enabled`
 
-Responds to upstream failure with a SERVFAIL packet.
+Răspunde la eroarea din amonte cu un pachet SERVFAIL.
 
 #### `dns.proxy.http3.enabled`
 
-Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection.
+Activează HTTP/3 pentru transmisiile ascendente DNS-over-HTTPS pentru a accelera conexiunea.
 
 #### `dns.proxy.block.encrypted.client.hello.response`
 
-Removes the Encrypted Client Hello parameters from responses.
+Elimină parametrii Encrypted Client Hello din răspunsuri.
 
 #### `dns.proxy.private.relay.sequoia.workaround.enabled`
 
@@ -169,15 +169,15 @@ Enabling this setting is useful in the following scenario: when macOS Private Re
 
 #### `stealth.antidpi.http.split.fragment.size`
 
-Adjusts the size of the HTTP request fragmentation. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
+Ajustează dimensiunea fragmentării cererilor HTTP. Valid values: 1–1500. Dacă se specifică o dimensiune invalidă, sistemul va folosi valoarea implicită.
 
 #### `stealth.antidpi.clienthello.split.fragment.size`
 
-This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
+Această opțiune specifică dimensiunea fragmentării pachetelor TCP, ceea ce ajută la evitarea inspectării profunde a pachetelor. Valid values: 1–1500. Dacă se specifică o dimensiune invalidă, sistemul va folosi valoarea implicită.
 
 #### `stealth.antidpi.http.space.juggling`
 
-Adds extra space between the HTTP method and the URL and removes space after the "Host:" field.
+Adaugă un spațiu suplimentar între metoda HTTP și URL și elimină spațiul după câmpul "Host:".
 
 #### `stealth.antidpi.split.delay.millisecond`
 
@@ -185,10 +185,10 @@ Here you can specify the delay, in milliseconds, after sending the first fragmen
 
 ### Subscription link interception settings (userscripts and filters)
 
-#### `subscription.link.interception.userscript`
+#### `abonament.link.interceptare.userscript`
 
-Activate this feature if you want AdGuard to automatically intercept the URLs of userscripts and open the installation window.
+Activați această funcție dacă doriți ca AdGuard să intercepteze automat URL-urile scripturilor de utilizator și să deschidă fereastra de instalare.
 
-#### `subscription.link.interception.filter`
+#### `abonament.link.interceptare.filtru`
 
-Activate this feature if you want AdGuard to automatically intercept subscription URLs (for example, abp:subscribe, etc.) and open the custom filter setup window.
+Activați această funcție dacă doriți ca AdGuard să intercepteze automat URL-urile de abonare (de exemplu, abp:subscribe, etc.) și să deschidă fereastra de setări a filtrului personalizat.

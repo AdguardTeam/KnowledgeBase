@@ -1,36 +1,36 @@
 ---
-title: Installation
+title: Instalare
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard Content Blocker, which only safeguards the Samsung Internet browser and the Yandex Browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol este despre Blocantul de conținut AdGuard, care protejează doar browserul Internet Samsung și Browserul Yandex. Pentru a vă proteja întregul dispozitiv, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-The application is available in five stores: [Google Play](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker), [Samsung Galaxy store](https://galaxystore.samsung.com/detail/com.adguard.android.contentblocker), [Huawei AppGallery](https://appgallery.huawei.com/#/app/C100440597), [Aptoide](https://adguard-content-blocker.en.aptoide.com/), and [F-Droid](https://f-droid.org/en/packages/com.adguard.android.contentblocker/).
+Aplicația este disponibilă în cinci magazine: [Google Play](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker), [Samsung Galaxy store](https://galaxystore.samsung.com/detail/com.adguard.android.contentblocker), [Huawei AppGallery](https://appgallery.huawei.com/#/app/C100440597), [Aptoide](https://adguard-content-blocker.en.aptoide.com/) și [F-Droid](https://f-droid.org/en/packages/com.adguard.android.contentblocker/).
 
-To install AdGuard Content Blocker from Google Play, search *AdGuard Content Blocker* and tap *Install*.
+Pentru a instala Blocantul de conținut AdGuard din Google Play, caută *Blocant de conținut AdGuard* și apasă *Instalare*.
 
-![Content Blocker on Google Play *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market.jpg)
+![Blocant de conținut AdGuard pe Google Play *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market.jpg)
 
 :::note
 
-AdGuard Content Blocker works in two browsers: [Yandex Browser](https://browser.yandex.com/) and [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
+Blocant de conținut AdGuard funcționează în două browsere: [Browser Yandex](https://browser.yandex.com/) și [Browser Internet Samsung](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
 
 :::
 
-After the installation is completed, tap *Open* to run the app.
+După ce instalarea este completă, apasă *Deschis* pentru a rula aplicația.
 
-![Content Blocker installed *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market_installed.jpg)
+![Blocant de conținut instalat *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market_installed.jpg)
 
 If you have a supported browser installed on your device, the app will ask you to enable AdGuard.
 
-![Onboarding: user has a supported browser *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding2.jpg)
+![Introducere: utilizator are un browser acceptat *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding2.jpg)
 
-If you don't have a supported browser, you will be prompted to choose and install one.
+Dacă nu ai un browser acceptat, ți se va solicita să alegi unul și să-l instalezi.
 
-![Onboarding: no supported browser *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding3.jpg)
+![Introducere: nu există browser acceptat *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding3.jpg)
 
-After the browser is installed, you can start AdGuard Content Blocker to block ads and trackers in it.
+După ce browserul este instalat, poți începe Blocantul de conținut AdGuard pentru a bloca reclamele și trackerele în el.

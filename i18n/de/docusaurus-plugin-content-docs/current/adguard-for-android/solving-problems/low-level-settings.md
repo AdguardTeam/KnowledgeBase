@@ -17,7 +17,7 @@ Das Ändern von *Low-Level-Einstellungen* kann Probleme mit der Leistung von AdG
 
 :::
 
-Um zu den *Low-Level-Einstellungen* zu gelangen, öffnen Sie die AdGuard-App und tippen Sie auf das Zahnradsymbol in der unteren rechten Ecke des Bildschirms. Then choose *General → Advanced → Low-level settings*.
+Um zu den *Low-Level-Einstellungen* zu gelangen, öffnen Sie die AdGuard-App und tippen Sie auf das Zahnradsymbol in der unteren rechten Ecke des Bildschirms. Wählen Sie dann *Allgemein → Erweitert → Low-Level-Einstellungen*.
 
 ## Low-Level-Einstellungen
 
@@ -139,7 +139,7 @@ If this is enabled, the *Filter DNS requests* switch will be displayed in the *A
 
 ### Schutz
 
-#### Port ranges
+#### Port-Bereiche
 
 Hier können Sie Portbereiche angeben, die gefiltert werden sollen.
 
@@ -147,7 +147,7 @@ Hier können Sie Portbereiche angeben, die gefiltert werden sollen.
 
 Wenn diese Einstellung aktiviert ist, zeichnet AdGuard gesperrte HTML-Elemente in *Letzte Aktivität* auf.
 
-#### Scriptlet debugging
+#### Fehlersuche im Scriptlet
 
 If this setting is enabled, debugging in scriptlets will be activated, and the browser log will record when scriptlet rules are applied.
 
@@ -185,7 +185,7 @@ Nach einer vom System festgelegten Anzahl erfolgloser Versuche, eine Antwort vom
 
 #### Recovery delay for revoked VPN
 
-Here you can set the time of a delay in milliseconds before AdGuard tries to restore VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. Der Standardwert ist 5000 ms.
+Hier können Sie eine Verzögerungszeit in Millisekunden festlegen, bevor AdGuard versucht, den VPN-Schutz wiederherzustellen, nachdem dieser durch eine VPN-App eines Drittanbieters oder durch Löschen des VPN-Profils aufgehoben wurde. Der Standardwert ist 5000 ms.
 
 #### Reschedule delay for revoked VPN recovery
 
@@ -221,7 +221,7 @@ If this setting is enabled, AdGuard will exclude LAN connections from filtering 
 
 #### IPv6-Adresse
 
-Hier können Sie die IP-Adresse eingeben, die für die Erstellung einer TUN-Schnittstelle verwendet werden soll. By default, it is `2001:db8:ad:0:ff::`.
+Hier können Sie die IP-Adresse eingeben, die für die Erstellung einer TUN-Schnittstelle verwendet werden soll. Standardmäßig ist dies `2001:db8:ad:0:ff::`.
 
 ### Sonstiges
 

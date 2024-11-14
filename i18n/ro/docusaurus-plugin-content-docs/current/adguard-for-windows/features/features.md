@@ -5,36 +5,36 @@ sidebar_position: 1
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multifuncțional care protejează dispozitivul dumneavoastră la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Home screen
 
-This article outlines everything you see when you open the program, including _Settings_, _Support_, _License_, and _About_. You’ll also find statistics on blocked ads and trackers.
+Acest articol conturează tot ce vezi când deschizi programul, inclusiv _Setări_, _Suport_, _Licență_ și _Despre_. You’ll also find statistics on blocked ads and trackers.
 
-[Home screen](/adguard-for-windows/features/home-screen/)
+[Ecranul principal](/adguard-for-windows/features/home-screen/)
 
-## Settings
+## Setări
 
-You can customize the program to suit your needs by blocking only what bothers you, using a trusted DNS server, removing third-party cookies, and more.
+Poți personaliza programul pentru a se potrivi nevoilor tale, blocând doar ceea ce te deranjează, folosind un server DNS de încredere, ștergând cookie-urile ale terților și multe altele.
 
-[Settings](/adguard-for-windows/features/settings/)
+[Setări](/adguard-for-windows/features/settings/)
 
-## Extensions
+## Extensii
 
-Here you’ll how to use AdGuard as a userscript manager to extend the functionality of websites. You can add your own scripts as well as manage existing ones.
+Aici veți învăța cum să utilizați AdGuard ca un manager de scripturi utilizator pentru a extinde funcționalitatea site-urilor. Puteți adăuga propriile scripturi, precum și gestiona scripturile existente.
 
-[Extensions](/adguard-for-windows/features/extensions/)
+[Extensii](/adguard-for-windows/features/extensions/)
 
-## Network
+## Rețea
 
-This article describes additional network-related options and proxy settings where you can specify which proxy server AdGuard should use to update filters, download new versions, and so on.
+Acest articol descrie opțiuni suplimentare legate de rețea și setările proxy, unde puteți specifica ce server proxy ar trebui să folosească AdGuard pentru a actualiza filtrele, a descărca versiuni noi și așa mai departe.
 
-[Network](/adguard-for-windows/features/network/)
+[Rețea](/adguard-for-windows/features/network/)
 
-## Other features
+## Alte caracteristici
 
-Here you can find information on how to reach support, manage your license, view details about the current version and privacy policy, check for updates, and explore options available in the tray menu.
+Aici poți găsi informații despre cum să accesezi suportul, să gestionezi licența, să vizualizezi detalii despre versiunea curentă și politica de confidențialitate, să verifici actualizările și să explorezi opțiunile disponibile în meniul din tava de sistem.
 
-[Other features](/adguard-for-windows/features/others/)
+[Alte caracteristici](/adguard-for-windows/features/others/)

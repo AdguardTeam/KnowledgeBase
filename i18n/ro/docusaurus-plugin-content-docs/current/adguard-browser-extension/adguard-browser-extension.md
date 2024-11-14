@@ -1,58 +1,58 @@
 ---
-title: AdGuard Browser Extension
+title: Extensia de browser AdGuard
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Acest articol se referă la extensia de browser AdGuard, care vă protejează doar browserul dvs. Pentru a proteja întreg dispozitivul dvs., [descărcați aplicația AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
 ## Features
 
-Here are outlined the main features and settings available in the AdGuard Browser Extension.
+Iată principalele caracteristici și setări disponibile în Extensia de browser AdGuard.
 
-[Features](/adguard-browser-extension/features/features.md)
+[Caracteristici](/adguard-browser-extension/features/features.md)
 
 ## Availability
 
-In this article, you'll learn about the supported browsers and platforms where the extension can be installed.
+În acest articol, veți învăța despre browserele și platformele suportate unde extensia poate fi instalată.
 
-[Availability](/adguard-browser-extension/availability.md)
+[Disponibilitate](/adguard-browser-extension/availability.md)
 
-## Installation
+## Instalare
 
-The article explains how to install the AdGuard Browser Extension on various supported browsers.
+Articolul explică cum să instalați Extensia de browser AdGuard pe diferite browsere suportate.
 
-[Installation](/adguard-browser-extension/installation.md)
+[Instalare](/adguard-browser-extension/installation.md)
 
 ## Compatibility with the standalone app
 
-The article explains the compatibility of the AdGuard Browser Extension with the AdGuard desktop apps.
+Articolul explică compatibilitatea Extensiei de browser AdGuard cu aplicațiile desktop AdGuard.
 
-[Compatibility with the standalone app](adguard-browser-extension/compatibility.md)
+[Compatibilitate cu aplicația standalone](adguard-browser-extension/compatibility.md)
 
-## AdGuard Browser Extension for Chrome MV3
+## Extensie de browser AdGuard pentru Chrome MV3
 
-This article discusses the AdGuard browser extension for Chrome, which is compatible with the Manifest V3 API, and how it differs from the browser extension based on Manifest V2.
+Acest articol discută despre extensia de browser AdGuard pentru Chrome, care este compatibilă cu API-ul Manifest V3, și despre cum se diferențiază de extensia de browser bazată pe Manifest V2.
 
-[AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version/)
+[Extensia de browser AdGuard pentru Chrome MV3](/adguard-browser-extension/mv3-version/)
 
-## Browser-protected pages
+## Pagini protejate la nivel de browser
 
-The article describes how the AdGuard Browser Extension manages protected pages, restricting ad blocking on certain sensitive websites to ensure proper functionality.
+Articolul descrie cum Extensia de browser AdGuard gestionează paginile protejate, restricționând blocarea reclamelor pe anumite site-uri web sensibile pentru a asigura funcționalitatea corectă.
 
-[Browser-protected pages](/adguard-browser-extension/protected-pages.md)
+[Pagini protejate de browser](/adguard-browser-extension/protected-pages.md)
 
 ## Solving problems
 
-This section includes guides addressing known issues and possible solutions.
+Această secțiune include ghiduri care abordează problemele cunoscute și soluțiile posibile.
 
-[Solving problems](/adguard-browser-extension/solving-problems/solving-problems.md)
+[Rezolvarea problemelor](/adguard-browser-extension/solving-problems/solving-problems.md)
 
 ## Comparison to standalone apps
 
-The article highlights the differences in functionality, coverage, and features between the AdGuard extensions and desktop apps.
+Articolul evidențiază diferențele de funcționalitate, acoperire și caracteristici între extensiile AdGuard și aplicațiile desktop.
 
-[Comparison to standalone apps](/adguard-browser-extension/comparison-standalone.md)
+[Compararea cu aplicațiile standalone](/adguard-browser-extension/comparison-standalone.md)

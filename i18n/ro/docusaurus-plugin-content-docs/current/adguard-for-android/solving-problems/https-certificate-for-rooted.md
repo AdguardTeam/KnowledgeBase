@@ -1,41 +1,41 @@
 ---
-title: Moving the CA certificate to the system store on rooted devices
+title: Mutarea certificatului CA în stocarea sistemului pe dispozitivele cu acces root
 sidebar_position: 14
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Android, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard for Android can [filter encrypted HTTPS traffic](/general/https-filtering/what-is-https-filtering), thus blocking most ads and trackers on websites. On rooted devices, AdGuard also allows you to filter HTTPS traffic in apps. HTTPS filtering requires adding AdGuard's CA certificate to the list of trusted certificates.
+AdGuard pentru Android poate [filtra traficul HTTPS criptat](/general/https-filtering/what-is-https-filtering), blocând astfel cele mai multe reclame și trackere pe site-uri. Pe dispozitivele cu acces root, AdGuard vă permite de asemenea să filtrați traficul HTTPS în aplicații. Filtrarea HTTPS necesită adăugarea certificatului CA AdGuard în lista certificatelor de încredere.
 
-On non-rooted devices, CA certificates can be installed to the **user store**. Only a limited subset of apps (mostly browsers) trust CA certificates installed to the user store, meaning HTTPS filtering will work only for such apps.
+Pe dispozitivele fără acces root, certificatul CA poate fi instalat în **stocul utilizatorului**. Numai un subset limitat de aplicații (în principal browsere) au încredere în certificatele CA instalate în stocul utilizatorului, ceea ce înseamnă că filtrarea HTTPS va funcționa doar pentru aceste aplicații.
 
-On rooted devices, you can install a certificate to the **system store**. That will allow AdGuard to filer HTTPS traffic in other apps as well.
+Pe dispozitivele cu acces root, puteți instala un certificat în **stocarea sistemului**. That will allow AdGuard to filer HTTPS traffic in other apps as well.
 
-Here's how to do that.
+Iată cum să faceți asta.
 
-## How to install AdGuard's certificate to the system store
+## Cum să instalați certificatul AdGuard în stocarea sistemului
 
-1. Open *AdGuard → Settings → Filtering → Network → HTTPS filtering → Security certificates*.
+1. Deschideți *AdGuard → Setări → Filtrare → Rețea → Filtrare HTTPS → Certificate de securitate*.
 
-1. If you don't have any certificate yet, **install the AdGuard Personal CA into the user store**. This will allow AdGuard to filter HTTPS traffic in browsers.
+1. If you don't have any certificate yet, **install the AdGuard Personal CA into the user store**. Acest lucru va permite AdGuard să filtreze traficul HTTPS în browsere.
 
-1. **Install the AdGuard Intermediate CA into the user store**. You'll need it to run the adguardcert Magisk module that allows you to move certificates to the system store.
+1. **Instalați AdGuard Intermediate CA în stocul utilizatorului**. Veți avea nevoie de el pentru a rula modulul adguardcert Magisk care vă permite să mutați certificatele în stocarea sistemului.
 
     ![Install the certificate *mobile_border](https://cdn.adtidy.org/blog/new/asx1xksecurity_certificates.png)
 
-1. Install the [latest release of the **adguardcert** Magisk module](https://github.com/AdguardTeam/adguardcert/releases/latest/).
+1. Instalați [cea mai recentă versiune a modulului **adguardcert** Magisk](https://github.com/AdguardTeam/adguardcert/releases/latest/).
 
-1. Open *Magisk → Modules → Install from storage* and select the downloaded **adguardcert** file. The AdGuard Personal CA certificate will be copied to the system store.
+1. Open *Magisk → Modules → Install from storage* and select the downloaded **adguardcert** file. Certificatul CA Personal AdGuard va fi copiat în stocarea sistemului.
 
     ![Open Magisk modules *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
 
     ![Install from storage *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-5.png)
 
-    ![Select adguardcert *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-6.png)
+    ![Selectați adguardcert *mobil](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-6.png)
 
 1. Tap **Reboot**.
 
@@ -43,10 +43,10 @@ Here's how to do that.
 
 After the transfer, the **AdGuard Personal CA** in the system store will allow you to filter HTTPS traffic in apps, while the **AdGuard Intermediate CA** in the user store will allow you to filter HTTPS traffic in Chromium-based browsers (see below why).
 
-## Known issues with Chrome and Chromium-based browsers
+## Probleme cunoscute cu Chrome și browserele bazate pe Chromium
 
-Chrome and other Chromium-based browsers require Certificate Transparency (CT) logs for certificates located in the system store. CT logs don't contain information about certificates issued by HTTPS-filtering apps. Therefore, AdGuard requires an additional certificate in the user store to filter HTTPS traffic in these browsers.
+Chrome și alte browsere bazate pe Chromium necesită jurnale de transparență a certificatelor (CT) pentru certificatele aflate în stocarea sistemului. Jurnalele CT nu conțin informații despre certificatele emise de aplicațiile de filtrare HTTPS. Prin urmare, AdGuard necesită un certificat suplimentar în stocul utilizatorului pentru a filtra traficul HTTPS în aceste browsere.
 
-### Bromite browser
+### Browser Bromite
 
-In addition to the above issue, Bromite doesn't trust certificates in the user store by default. To filter HTTPS traffic there, open Bromite, go to `chrome://flags`, and set *Allow user certificates* to *Enabled*. **This applies to both rooted and non-rooted devices**.
+În plus față de problema de mai sus, Bromite nu are încredere în certificatele din stocul utilizatorului în mod implicit. Pentru a filtra traficul HTTPS acolo, deschideți Bromite, mergeți la `chrome://flags` și setați *Permiteți certificatele utilizatorului* pe *Activat*. **Aceasta se aplică atât pentru dispozitivele cu acces root, cât și pentru cele fără acces root**.

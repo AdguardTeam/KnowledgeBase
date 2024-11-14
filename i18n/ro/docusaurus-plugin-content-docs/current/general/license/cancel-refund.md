@@ -1,31 +1,31 @@
 ---
-title: How to cancel or refund
+title: Cum să anulați sau să obțineți o rambursare
 sidebar_position: 5
 ---
 
-## How to cancel a subscription
+## Cum să anulați un abonament
 
-The subscription can be canceled in your AdGuard account. To cancel your subscription:
+Abonamentul poate fi anulat în contul dvs. AdGuard. Pentru a anula abonamentul:
 
- 1. Go to your [AdGuard account](https://my.adguard.com/).
- 1. Select *Licenses*.
- 1. Click *Cancel subscription* below the subscription you no longer need. ![Cancel](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
+ 1. Accesați contul dvs. [AdGuard](https://my.adguard.com/).
+ 1. Selectați *Licențe*.
+ 1. Faceți clic pe *Anulați abonamentul* sub abonamentul de care nu mai aveți nevoie. ![Cancel](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
 
- The canceled subscription will be valid until its expiry date.
+ Abonamentul anulat va fi valabil până la data sa de expirare.
 
 :::note
 
-Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
+Abonamentele achiziționate pe App Store pot fi gestionate în contul App Store sau în setările dispozitivului.
 
 :::
 
-## How to get a refund
+## Cum să obțineți o rambursare
 
-In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at *support@adguard.com* and specify the payment option you've used.
+În conformitate cu [Termenii și condițiile de vânzare](https://adguard.com/terms-of-sale.html), puteți obține o rambursare de 100% pentru cheia de licență AdGuard pe care ați achiziționat-o la https://adguard.com. Pentru a obține o rambursare, contactați echipa noastră de asistență la *support@adguard.com* și specificați opțiunea de plată pe care ați folosit-o.
 
-A refund may be declined if:
+O rambursare poate fi refuzată dacă:
 
-- A license was purchased more than 60 days ago
-- A license was purchased from a distributor
-- A license was purchased from the App Store
-- You applied for a partial refund for a license key upgrade or renewal
+- O licență a fost achiziționată acum mai mult de 60 de zile
+- O licență a fost achiziționată de la un distribuitor
+- O licență a fost achiziționată de pe App Store
+- Ați solicitat o rambursare parțială pentru o actualizare sau o reînnoire a cheii de licență
