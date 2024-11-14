@@ -1,65 +1,65 @@
 ---
-title: Known compatibility issues with Android apps
+title: Probleme cunoscute de compatibilitate cu aplicațiile Android
 sidebar_position: 16
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Android, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## VPN apps
+## Aplicații VPN
 
-If you are using AdGuard in the *Local VPN* filtering mode, you cannot run other VPN apps at the same time. To solve this problem, we suggest that you:
+Dacă folosești AdGuard în modul de filtrare *VPN Local*, nu poți rula alte aplicații VPN în același timp. Pentru a rezolva această problemă, îți sugerăm să:
 
-- Use [AdGuard VPN](https://adguard-vpn.com/welcome.html) — its *Integrated mode* allows two apps to operate simultaneously
-- Configure your VPN app to act as an [outbound proxy](../solving-problems/outbound-proxy.md) and set up a local outbound proxy using the parameters from the third-party app
-- Switch to the *Automatic proxy* mode. When you do that, AdGuard will no longer use local VPN and will reconfigure iptables instead
-- Switch to the *Manual proxy* mode. To do this, go to *Settings* → *Filtering* → *Network* → *Routing mode*
+- Folosești [AdGuard VPN](https://adguard-vpn.com/welcome.html) — modul său *Integrat* permite două aplicații să funcționeze simultan
+- Configurează aplicația ta VPN să acționeze ca un [proxy de ieșire](../solving-problems/outbound-proxy.md) și configurează un proxy de ieșire local folosind parametrii din aplicația terță parte
+- Switch to the *Automatic proxy* mode. Când faci asta, AdGuard nu va mai folosi VPN-ul local și va reconfigura iptables în schimb
+- Switch to the *Manual proxy* mode. Pentru a face acest lucru, mergi la *Setări* → *Filtrare* → *Rețea* → *Mod de rutare*
 
 :::note Compatibility
 
-The *Automatic proxy* mode is only accessible on rooted devices. For *Manual proxy*, rooting is required on devices running on Android 10 or later.
+Modul *proxy Automatic* este accesibil doar pe dispozitivele cu root. Pentru *proxy Manual*, este necesar root pe dispozitivele care rulează Android 10 sau versiuni ulterioare.
 
 :::
 
-## Private DNS
+## DNS privat
 
-The Private DNS feature was introduced in Android Pie. Before version Q, Private DNS didn't break AdGuard DNS filtering logic and the DNS forwarding through AdGuard worked normally. But starting from version Q, the presence of Private DNS forces apps to redirect traffic through the system resolver instead of AdGuard. See Android [devs blog](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html) for more details.
+Funcția DNS privată a fost introdusă în Android Pie. Înainte de versiunea Q, DNS-ul privat nu întrerupea logica de filtrare DNS AdGuard și redirecționarea DNS prin AdGuard funcționa normal. Dar, începând cu versiunea Q, prezența DNS-ului privat forțează aplicațiile să redirecționeze traficul prin rezolvatorul de sistem în loc de AdGuard. Vezi [blogul devs Android](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html) pentru mai multe detalii.
 
-- To solve the problem with Private DNS, use the `$network` rule
+- Pentru a rezolva problema cu DNS-ul privat, folosește regula `$network`
 
-Some device manufacturers keep Private DNS settings hidden and set 'Automatic' mode as a default one. Thus, disabling Private DNS is impossible but we can make the system think that the upstream is not valid by blocking it with a `$network` rule. For instance, if the system uses Google DNS by default, we can add rules `|8.8.4.4^$network` and `|8.8.8.8^$network` to block Google DNS.
+Unii producători de dispozitive țin setările DNS-ului privat ascunse și setează modul 'Automatic' ca modul implicit. Astfel, dezactivarea DNS-ului privat este imposibilă, dar putem face sistemul să creadă că serverul în amonte nu este valid blocându-l cu o regulă `$network`. De exemplu, dacă sistemul folosește DNS-ul Google în mod implicit, putem adăuga regulile `|8.8.4.4^$network` și `|8.8.8.8^$network` pentru a bloca DNS-ul Google.
 
-## Unsupported browsers
+## Browsere nesuportate
 
-### UC Browsers: UC Browser, UC Browser for x86, UC Mini, UC Browser HD
+### Browsere UC: UC Browser, UC Browser pentru x86, UC Mini, UC Browser HD
 
-To be able to filter HTTPS traffic, AdGuard requires the user to add a certificate to the device's trusted user certificates. Unfortunately, UC browsers don't trust user certificates, so AdGuard cannot perform HTTPS filtering there.
+Pentru a putea filtra traficul HTTPS, AdGuard cere utilizatorului să adauge un certificat în certificatele de utilizator de încredere ale dispozitivului. Din păcate, browserele UC nu au încredere în certificatele utilizatorului, așa că AdGuard nu poate efectua filtrare HTTPS acolo.
 
-- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md/)
+- Pentru a rezolva această problemă, mutați [certificatul în magazinul de certificate al sistemului](../solving-problems/https-certificate-for-rooted.md/)
 
 :::note Compatibility
 
-Requires root access.
+Necesită acces root.
 
 :::
 
-### Dolphin Browser: Dolphin Browser, Dolphin Browser Express
+### Browser Dolphin: Dolphin Browser, Dolphin Browser Express
 
-AdGuard cannot filter its traffic when operating in the *Manual proxy* mode because this browser ignores system proxy settings.
+AdGuard nu poate filtra traficul său când funcționează în modul *proxy Manual*, deoarece acest browser ignoră setările proxy de sistem.
 
-- Use the *Local VPN* filtering mode to solve this problem
+- Folosește modul de filtrare *VPN Local* pentru a rezolva această problemă
 
-### Opera mini: Opera mini, Opera mini with Yandex
+### Opera mini: Opera mini, Opera mini cu Yandex
 
-Opera mini drives traffic through a compression proxy by default and AdGuard is not able to decompress and filter it at the same time.
+Opera mini redirecționează traficul printr-un proxy de compresie în mod implicit și AdGuard nu poate decomprima și filtra în același timp.
 
-- There is no solution at this moment
+- Nu există nicio soluție în acest moment
 
-### Puffin Browser: Puffin Browser, Puffin Browser Pro
+### Browser Puffin: Puffin Browser, Puffin Browser Pro
 
-Puffin Browser drives traffic through a compression proxy by default and AdGuard is not able to decompress and filter it at the same time.
+Browser Puffin redirecționează traficul printr-un proxy de compresie în mod implicit și AdGuard nu poate decomprima și filtra în același timp.
 
-- There is no solution at this moment
+- Nu există nicio soluție în acest moment

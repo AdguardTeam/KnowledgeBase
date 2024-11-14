@@ -1,64 +1,64 @@
 ---
-title: How ad blocking works
+title: Wie Werbeblockierung funktioniert
 sidebar_position: 1
 ---
 
-AdGuard has many ad-blocking products for different platforms, each with its own unique features. But what unites them all is that they block ads and trackers. This article describes how ad blocking works from the inside.
+AdGuard bietet viele Werbeblocker-Produkte für verschiedene Plattformen, jedes mit seinen eigenen einzigartigen Funktionen. Was sie aber alle eint, ist, dass sie Werbung und Tracker blockieren. In diesem Artikel wird beschrieben, wie Werbeblocker von innen funktionieren.
 
 :::note
 
-We don't cover DNS filtering here. It's a different way of blocking ads, with its own advantages and disadvantages. Follow this link to [learn more about DNS filtering](https://adguard-dns.io/kb/general/dns-filtering#how-does-dns-filtering-work).
+Die DNS-Filterung wird hier nicht behandelt. Es ist eine andere Art, Werbung zu sperren, mit ihren eigenen Vor- und Nachteilen. Folgen Sie diesem Link, um [mehr über DNS-Filterung](https://adguard-dns.io/kb/general/dns-filtering#how-does-dns-filtering-work) zu erfahren.
 
 :::  
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/Xq_CUdh0T_w" title="YouTube-Videoplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## General principle
+## Allgemeines Prinzip
 
-Filter lists, also called filters, lie at the core of any ad blocker. Filters are literally lists of rules written in a special syntax. Ad blockers can understand this complex syntax. They interpret filtering rules and perform actions on web traffic based on what the rules tell them to do: block specific elements, alter web pages in certain ways, etc.
+Filterlisten, auch Filter genannt, sind das Herzstück eines jeden Werbeblockers. Filter sind buchstäblich Listen von Regeln, die in einer speziellen Syntax geschrieben sind. Werbeblocker können diese komplexe Syntax verstehen. Sie interpretieren die Filterregeln und führen auf der Grundlage der Regeln Aktionen für den Webverkehr durch: Sie sperren bestimmte Elemente, verändern Webseiten auf bestimmte Weise usw.
 
-![How ad blocking works](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
+![Wie Werbeblocker funktionieren](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
 
-## Filter lists
+## Filterlisten
 
-To better understand ad blocking, it's important to know the underlying principles of how filters work.
+Um die Funktionsweise von Werbeblockern besser zu verstehen, ist es wichtig, die grundlegenden Prinzipien der Filter zu kennen.
 
-Filtering rules that make up filters are not created automatically. They are developed by filter maintainers, including professionals and volunteers, who use browser developer consoles and other tools (such as the AdGuard's filtering log) to determine which rules will block a particular ad or tracker. This description of the process is very simplistic — some ads are particularly hard to block and require multiple rules, multiple iterations, and the use of complex syntax.
+Die Filterregeln, aus denen die Filter bestehen, werden nicht automatisch erstellt. Sie werden von professionellen und freiwilligen Filterbetreuern entwickelt, die mithilfe von Browser-Entwicklerkonsolen und anderen Tools (wie dem Filterprotokoll von AdGuard) festlegen, welche Regeln eine bestimmte Anzeige oder einen Tracker sperren sollen. Diese Beschreibung des Prozesses ist sehr vereinfacht — einige Werbeanzeigen sind besonders schwer zu sperren und erfordern mehrere Regeln, mehrere Iterationen und die Verwendung einer komplexen Syntax.
 
-And even when a rule finally gets added to a filter, it doesn't mean that it stays there forever. Ads change, ways to serve the same ads on the same websites change, and the filter rules have to change, too. Sometimes rules become obsolete, a new ad appears, or a new filtering rule is needed to block the same ad. Filters are often maintained by one person, but even for a team of maintainers, it's impossible to constantly monitor the entire web. That's why many ad blockers have tools to help users easily report any filter-related issues they encounter.
+Und selbst wenn eine Regel schließlich zu einem Filter hinzugefügt wird, bedeutet das nicht, dass sie dort für immer bleibt. Die Werbung ändert sich, die Möglichkeiten, dieselbe Werbung auf denselben Websites zu schalten, ändern sich, und die Filterregeln müssen sich ebenfalls ändern. Manchmal werden Regeln hinfällig, eine neue Werbung wird angezeigt oder eine neue Filterregel wird benötigt, um die gleiche Werbung zu sperren. Filter werden oft von einer Person gepflegt, aber selbst für ein Team von Betreuern ist es unmöglich, das gesamte Web ständig zu überwachen. Aus diesem Grund verfügen viele Werbeblocker über Tools, mit denen Sie auf einfache Weise Probleme mit dem Filter melden können.
 
-![Filter update scheme](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/filtersupdates.png)
+![Filter-Aktualisierungsschema](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/filtersupdates.png)
 
-AdGuard users [have access to a special web reporting tool](https://reports.adguard.com/new_issue.html). Thanks to user complaints, filter developers can focus on correcting their filter lists and not on scouring the Internet for new and old unblocked ads.
+Sie [haben Zugang zu einem speziellen Web Reporting Tool](https://reports.adguard.com/new_issue.html). Dank Benutzerbeschwerden können sich Filterentwickler auf die Korrektur ihrer Filterlisten konzentrieren und nicht darauf, das Internet nach neuen und alten nicht blockierten Anzeigen zu durchsuchen.
 
-Filters can do more than just block ads. There are filters that block tracking, social media widgets, and annoyances such as cookie notices. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
+Filter können mehr, als nur Werbung zu blockieren. Es gibt Filter, die Tracking, Social-Media-Widgets und Ärgernisse wie Cookie-Hinweise blockieren. Verschiedene Benutzer können unterschiedliche Kombinationen von Filtern wählen, um ihren persönlichen Vorlieben zu entsprechen. Es gibt Websites wie [filterlists.com](https://filterlists.com/), die sich auf Filterlisten spezialisiert haben und über große Datenbanken verfügen.
 
-We develop and maintain [our own set of filter lists](../adguard-filters) that can be used with AdGuard or other ad blockers.
+Wir entwickeln und pflegen [unsere eigenen Filterlisten](../adguard-filters), die mit AdGuard oder anderen Werbeblockern verwendet werden können.
 
-## Types of filtering rules
+## Arten von Filterregeln
 
-There are many types of filtering rules that serve different purposes. Depending on the ad blocker you use, and especially on your OS, some types of rules may not be supported.
+Es gibt viele Arten von Filterregeln, die unterschiedlichen Zwecken dienen. Abhängig von dem von Ihnen verwendeten Werbeblocker und insbesondere von Ihrem Betriebssystem werden einige Arten von Regeln möglicherweise nicht unterstützt.
 
-### Basic filtering rules
+### Grundlegende Filterregeln
 
-To be displayed on a web page or in an app, the ad has to be loaded from a server first. To do so, the browser or the app needs to send a web request. The most basic way of preventing an ad from appearing on your screen is to block this request so it never reaches the server, and thus there's no reply.
+Um auf einer Webseite oder in einer App angezeigt zu werden, muss die Werbung zunächst von einem Server geladen werden. Dazu muss der Browser oder die App eine Webanforderung senden. Die einfachste Methode, um zu verhindern, dass eine Werbung auf Ihrem Bildschirm angezeigt wird, besteht darin, diese Anfrage zu sperren, so dass sie den Server nicht erreicht und somit auch keine Antwort erfolgt.
 
-Basically, all AdGuard Ad Blocker products can block web requests according to the active filter rules. This method is very effective at stopping the ad, but it has some drawbacks. The most obvious one is: whatever place an ad was taking up will be left empty or occupied by an ad leftover.
+Grundsätzlich können alle AdGuard Werbeblocker-Produkte Webanfragen gemäß den aktiven Filterregeln sperren. Diese Methode ist sehr effektiv, um die Werbung zu stoppen, hat aber auch einige Nachteile. Die offensichtlichste ist: Der Platz, den eine Werbung eingenommen hat, bleibt leer oder wird durch eine verbliebene Werbung besetzt.
 
-### Cosmetic filtering rules
+### Kosmetische Filterregeln
 
-Every web page has a Document Object Model (DOM), an HTML document containing the structure and elements of this page. As ads are also page elements, they get recorded in the DOM. Ad blockers can remove parts of the DOM, while filtering rules help them understand which parts are ads and should be removed, and which parts should be left intact.
+Jede Webseite hat ein Document Object Model (DOM), ein HTML-Dokument, das die Struktur und die Elemente dieser Seite enthält. Da Werbung auch Seitenelemente sind, werden sie im DOM erfasst. Werbeblocker können Teile des DOM entfernen, während Filterregeln ihnen helfen zu verstehen, welche Teile Werbung sind und entfernt werden sollten und welche Teile intakt bleiben sollten.
 
-This method allows you to avoid above-mentioned blank spaces and ad leftovers, as well as perform other more complicated tasks.
+Mit dieser Methode können Sie die oben erwähnten Leerräume und Reste von Werbung vermeiden und auch andere kompliziertere Aufgaben durchführen.
 
-### HTML filtering rules
+### HTML-Filterregeln
 
-In most cases, it's enough to use the above-mentioned basic and cosmetic rules to filter ads. But when it is necessary to change the HTML code of the page itself before it is loaded, you need filtering rules for HTML content. These rules allow you to specify the HTML elements to be cut out before the browser even loads the page.
+In den meisten Fällen reicht es aus, die oben genannten grundlegenden und kosmetischen Regeln zum Filtern von Werbung anzuwenden. Wenn es jedoch notwendig ist, den HTML-Code der Seite selbst zu ändern, bevor sie geladen wird, benötigen Sie Filterregeln für HTML-Inhalte. Mit diesen Regeln können Sie die HTML-Elemente festlegen, die ausgeschnitten werden sollen, bevor der Browser die Seite überhaupt lädt.
 
-These rules are quite complicated and require the ad blocker to be granted certain access rights, so not all platforms support them. Currently, these rules work only in the AdGuard Firefox add-on and in the AdGuard apps for Windows, Mac, and Android.
+Diese Regeln sind recht kompliziert und erfordern, dass dem Werbeblocker bestimmte Zugriffsrechte eingeräumt werden, weshalb sie nicht von allen Plattformen unterstützt werden. Derzeit funktionieren diese Regeln nur im AdGuard-Add-on für Firefox und in den AdGuard-Apps für Windows, Mac und Android.
 
 :::info
 
-There are other types of filtering rules, but they require more advanced technical knowledge to understand how they work. If you are interested, [check out our comprehensive guide on filtering rules in the linked article](../create-own-filters).
+Es gibt noch andere Arten von Filterregeln, die jedoch mehr technisches Wissen erfordern, um ihre Funktionsweise zu verstehen. Wenn Sie daran interessiert sind, [sehen Sie sich unseren umfassenden Leitfaden zu Filterregeln in dem verlinkten Artikel an](../create-own-filters).
 
 :::

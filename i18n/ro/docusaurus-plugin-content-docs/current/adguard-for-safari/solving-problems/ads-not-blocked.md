@@ -1,30 +1,30 @@
 ---
-title: Filtering doesn’t work and ads aren’t blocked
+title: Filtrarea nu funcționează și reclamele nu sunt blocate
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Safari, which safeguards only your Safari browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Safari, care protejează doar browserul dvs. Safari. Pentru a proteja întregul dispozitiv, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-In some cases, filtering may not work and ads may still be displayed even though AdGuard for Safari and the proper filters are enabled. This usually happens when something goes wrong with filter updates due to Safari bugs.
+În unele cazuri, filtrarea poate să nu funcționeze și reclamele ar putea fi afișate chiar dacă AdGuard pentru Safari și filtrele corespunzătoare sunt activate. Acest lucru se întâmplă de obicei când ceva nu merge bine cu actualizările filtrelor din cauza erorilor Safari.
 
 ### How to fix
 
-1. Open Safari.
-2. Click _Safari_ in the left upper corner menu.
-3. Click _Settings…_ → _Extensions_.
-4. Clear the checkboxes for AdGuard’s extensions: _Custom_, _General_, _Other_, _Privacy_, _Security_, _Social_, _AdGuard for Safari_, and _AdGuard Assistant_.
+1. Deschideți Safari.
+2. Faceți clic pe _Safari_ în meniul din colțul din stânga sus.
+3. Faceți clic pe _Setări…_ → _Extensii_.
+4. Debifați casetele de selectare pentru extensiile AdGuard: _Personalizat_, _Modul general_, _Altceva_, _Intimitate_, _Securitate_, _Social_, _AdGuard pentru Safari_ și _Asistentul AdGuard_.
    ![Unchecked content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
-5. Restart Safari.
-6. Return to _Settings..._ → _Extensions_ and re-enable the content-blocking extensions.
-7. Open AdGuard for Safari app.
-8. Go to _Filters_.
-9. Click _Check for updates_.
-10. Do not close the AdGuard for Safari window until the filters are updated.
+5. Reporniți Safari.
+6. Întoarceți-vă la _Setări..._ → _Extensii_ și reactivați extensiile de blocare a conținutului.
+7. Deschide aplicația AdGuard pentru Safari.
+8. Mergi la _filtre_.
+9. Click _Căutare actualizări_.
+10. Nu închide fereastra AdGuard pentru Safari până când filtrele sunt actualizate.
 
-If this doesn’t help and ads are still not being blocked, please contact our support at support@adguard.com.
+Dacă aceasta nu ajută și reclamele continuă să nu fie blocate, vă rugăm să contactați suportul nostru la support@adguard.com.
 
-If you only have problems with a specific page or website, you can report it directly from the browser: click the AdGuard for Safari icon next to the Safari search bar, and then click _Report an issue_.
+Dacă aveți probleme doar cu o pagină sau un site web specific, puteți raporta direct din browser: faceți clic pe iconița AdGuard pentru Safari de lângă bara de căutare Safari și apoi faceți clic pe _Raportați o problemă_.

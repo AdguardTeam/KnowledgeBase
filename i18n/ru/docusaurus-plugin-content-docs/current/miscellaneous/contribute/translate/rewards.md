@@ -20,13 +20,13 @@ sidebar_position: 6
 
 :::note Ограничения
 
-В качестве вознаграждения за вклад мы предлагаем лицензии и подписки, действительные не более 5 лет. In the case of Ad Blocker, we offer licenses that cover up to 5 devices. Мы не выдаём вечные лицензии.
+В качестве вознаграждения за вклад мы предлагаем лицензии и подписки, действительные не более 5 лет. Лицензии Блокировщика рекламы охватывают до 5 устройств. Мы не выдаём вечные лицензии.
 
 :::
 
 ## Как запросить лицензию
 
-Just send an email to our translators team at [translate@adguard.com](mailto:translate@adguard.com) with the following information:
+Просто отправьте нам письмо на [translate@adguard.com](mailto:translate@adguard.com) со следующей информацией:
 
 - Ваше имя пользователя на Crowdin
 - Проекты, в которых вы принимали участие (AdGuard Applications, Websites, Knowledge Base и т. д.)
@@ -37,7 +37,7 @@ Just send an email to our translators team at [translate@adguard.com](mailto:tra
 
 > Здравствуйте!
 > 
-> Я перевел(а) более 5 000 слов в AdGuard для Android на (*ваш язык*) — статистика во вложении. I would like to request an AdGuard VPN license and an Ad Blocker license for that. Моя почта: (*адрес почты*). Я в Crowdin: (*ваше имя пользователя*).
+> Я перевел(а) более 5 000 слов в AdGuard для Android на (*ваш язык*) — статистика во вложении. Хочу запросить лицензию AdGuard VPN и лицензию Блокировщика рекламы. Моя почта: (*адрес почты*). Я в Crowdin: (*ваше имя пользователя*).
 
 ## Как проверить, сколько вы перевели
 

@@ -1,122 +1,122 @@
 ---
-title: How to get system logs
+title: Cum să obțineți jurnalele de sistem
 sidebar_position: 4
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Android, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Datele și/sau fișierele furnizate în jurnale sunt procesate în conformitate cu [Politica de confidențialitate a AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-Sometimes a regular log may not be sufficient to identify the origin of the problem. In such cases a system log is needed. Below are instructions on how to collect and get it: via Developer options and Logcat.
+Uneori, un jurnal obișnuit poate să nu fie suficient pentru a identifica originea problemei. În astfel de cazuri, este necesar un jurnal de sistem. Aici sunt instrucțiuni despre cum să le colectați și să le obțineți: prin Opțiunile pentru dezvoltatori și Logcat.
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard se angajează să protejeze intimitatea dumneavoastră. Urmărim strict [Politica confidențialității](https://adguard.com/privacy/android.html) și nu colectăm informații private despre utilizatori. Înainte de a trimite jurnalele echipei de asistență, vă rugăm să revizuiți fișierul, deoarece acesta poate conține informații suplimentare pe care nu doriți să le împărtășiți. Dacă conține astfel de informații personale, vă recomandăm să le ștergeți mai întâi.
 
 :::
 
-## Capture a bug report from a device
+## Capturați un raport de eroare de pe un dispozitiv
 
-To get a bug report directly from your device, do the following:
+Pentru a obține un raport de eroare direct de pe dispozitivul dvs., faceți următoarele:
 
-1. Be sure you have [Developer options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
+1. Asigurați-vă că aveți [Opțiuni pentru dezvoltatori](https://developer.android.com/studio/run/device.html#developer-device-options) activate.
 
-1. In **Developer options**, tap **Take bug report**.
+1. În **Opțiunile pentru dezvoltatori**, apăsați **Preluați raportul de eroare**.
 
-    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
+    ![Raport de eroare *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-1. Select the type of bug report you want and tap **Report**.
+1. Selectați tipul de raport de eroare dorit și apăsați **Raportați**.
 
     :::note
 
-    After a moment, you will see a notification that the bug report is ready (see Figure 2).
+    După un moment, veți vedea o notificare că raportul de eroare este gata (vezi Figura 2).
 
 
 :::
 
-    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
+    ![Raport de eroare *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
-1. To share the bug report, tap the notification.
+1. Pentru a împărtăși raportul de eroare, apăsați notificarea.
 
-    ![Bug report *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
+    ![Raport de eroare *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
-1. Send this log to our support team.
+1. Trimiteți acest jurnal echipei noastre de asistență.
 
     :::note
 
-    Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+    Echipa noastră de asistență va procesa cererea dumneavoastră mult mai repede dacă specificați numărul cererii HelpDesk sau numărul problemei GitHub în mesajul dumneavoastră către suport.
 
 
 :::
 
-## Capture a bug report via Logcat
+## Capturați un raport de eroare prin Logcat
 
-On devices with Android 7 and below, it is not possible to send a bug report automatically. Then you can capture it manually via Logcat — a standard Android command-line tool that dumps a log of system messages.
+Pe dispozitivele cu Android 7 și versiuni anterioare, nu este posibil să trimiteți un raport de eroare automat. Apoi, puteți să-l capturați manual prin Logcat — un instrument standard de linie de comandă Android care descarcă un jurnal de mesaje de sistem.
 
-Follow this instruction:
+Urmați această instrucțiune:
 
-**Part #1: prepare the device**
+**Partea #1: pregătiți dispozitivul**
 
-1. Switch device to the developer mode. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
+1. Comutați dispozitivul în modul dezvoltator. Pentru a face acest lucru: mergeți la **Setări** → **Despre** → apăsați **Numărul de compilare** de 7 ori.
 
-1. Go to **Developer Options**.
+1. Mergeți la **Opțiuni pentru dezvoltatori**.
 
-1. Enable **USB debugging**.
+1. Permiteți **depanarea USB**.
 
-1. Increase **Logger buffer** sizes to 4 MB per log buffer.
+1. Creșteți dimensiunile **buffer-ului de jurnal** la 4 MB pe buffer de jurnal.
 
-4 MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
+4 MB ar trebui să fie suficient pentru a stoca jurnalele de care avem nevoie până când veți putea face a doua parte (obținerea jurnalului de pe dispozitiv);
 
-**Part #2: reproduce the problem**
+**Partea #2: reproducerea problemei**
 
-It is important to reproduce the problem after you're done with the first part.
+Este important să reproduceți problema după ce ați terminat cu prima parte.
 
-1. Reproduce the problem.
+1. Reproduceți problema.
 
-1. Remember/write down the date and time of reproduction and include it in the email to our support later.
+1. Amintiți-vă/notați data și ora reproducerii și includeți-o în e-mailul către suportul nostru mai târziu.
 
 **Part #3: get the log**
 
-1. Connect your device to a PC with a USB cable.
+1. Conectați dispozitivul la un PC cu un cablu USB.
 
-1. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). Choose the appropriate download link for your OS from the Downloads section. Once you tap the link, a ZIP file will be downloaded. You can extract the ADB (Android Debug Bridge) files from the ZIP file and store them wherever you want.
+1. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). Alegeți linkul de descărcare corespunzător pentru sistemul de operare din secțiunea Descărcări. Odată ce apăsați linkul, un fișier ZIP va fi descărcat. Puteți extrage fișierele ADB (Android Debug Bridge) din fișierul ZIP și le puteți stoca oriunde doriți.
 
-1. Test whether ADB is working properly: connect your Android device to your computer using a USB cable, open the Command Prompt, PowerShell or Terminal and run the following command:
+1. Testați dacă ADB funcționează corect: conectați dispozitivul Android la computer folosind un cablu USB, deschideți Linia de comandă, PowerShell sau Terminal și rulați următoarea comandă:
 
     `adb devices`
 
-    An example of a successful result:
+    Un exemplu de rezultat reușit:
 
-    ![Step 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
+    ![Etapa 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
 
-1. Then run the following command (insert the relevant path):
+1. Apoi rulați următoarea comandă (inserați calea relevantă):
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at support@adguard.com.
+    Trimiteți fișierul `txt` creat, precum și ora la care a fost reprodusă problema (din partea #2) echipei noastre de asistență la support@adguard.com.
 
-### Alternative way for ROOT users
+### Metodă alternativă pentru utilizatorii ROOT
 
-1. Download and run [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
+1. Descărcați și rulați [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
 
-1. Choose **Record** in the menu. Choose a name for a log file or just press **OK**. Now you can press **Home** button, CatLog will continue recording the log in background.
+1. Alegeți **Înregistrare** în meniu. Alegeți un nume pentru un fișier de jurnal sau apăsați pur și simplu **OK**. Acum puteți apăsa butonul **Home**, CatLog va continua să înregistreze jurnalul în fundal.
 
-1. Reproduce the issue.
+1. Reproduceți problema.
 
-1. Open CatLog and press **Stop record** in the menu.
+1. Deschideți CatLog și apăsați **Opriți înregistrarea** în meniu.
 
-1. Send this log to our support team.
+1. Trimiteți acest jurnal echipei noastre de asistență.
 
 :::note
 
-Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+Echipa noastră de asistență va procesa cererea dumneavoastră mult mai repede dacă specificați numărul cererii HelpDesk sau numărul problemei GitHub în mesajul dumneavoastră către suport.
 
 :::

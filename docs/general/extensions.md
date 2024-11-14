@@ -89,15 +89,7 @@ If you like the idea of customizing your browser with userscripts and have quest
 
 #### Request license
 
-If you are developing your own custom script and want to test how it works with AdGuard, you can request a beta license key for the app.
-
-To get it, please send an email to devteam@adguard.com with the following information:
-
-**Subject:** Userscript author license request
-
-**Body:** Please tell us about the userscripts you are working on.
-
-Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK).
+If you are developing your own userscript and want to test how it works with AdGuard, you can request a license by filling in [the form](https://surveys.adguard.com/en/for_developers_request/form.html).
 
 #### Compatibility
 

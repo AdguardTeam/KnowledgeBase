@@ -1,16 +1,16 @@
 ---
-title: Rooted devices
+title: Dispozitive cu acces root
 sidebar_position: 7
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Android, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Due to security measures of the Android OS, some AdGuard features are only available on rooted devices. Here's the list of them:
+Din cauza măsurilor de securitate ale sistemului de operare Android, unele caracteristici AdGuard sunt disponibile doar pe dispozitive cu acces root. Iată lista acestora:
 
-- In most cases, **HTTPS filtering in apps** requires [installing a CA certificate into the system store](/adguard-for-android/features/settings#security-certificates), as most apps don't trust certificates in the user store
-- The [**Automatic proxy** routing mode](/adguard-for-android/features/settings#routing-mode) requires root access due to Android's restrictions on system-wide traffic filtering
-- The [**Manual proxy** routing mode](/adguard-for-android/features/settings#routing-mode) requires root access on Android 10 and above as it's no longer possible to determine the name of the app associated with a connection filtered by AdGuard
+- În majoritatea cazurilor, **Filtrarea HTTPS în aplicații** necesită [instalarea unui certificat CA în magazinul de sistem](/adguard-for-android/features/settings#security-certificates), deoarece majoritatea aplicațiilor nu au încredere în certificatele din magazinul utilizatorului
+- Modul de rutare [**Proxy automat**](/adguard-for-android/features/settings#routing-mode) necesită acces root datorită restricțiilor Android asupra filtrării traficului la nivel de sistem
+- Modul de rutare [**Proxy manual**](/adguard-for-android/features/settings#routing-mode) necesită acces root pe Android 10 și versiuni ulterioare, deoarece nu mai este posibilă determinarea numelui aplicației asociate cu o conexiune filtrată de AdGuard

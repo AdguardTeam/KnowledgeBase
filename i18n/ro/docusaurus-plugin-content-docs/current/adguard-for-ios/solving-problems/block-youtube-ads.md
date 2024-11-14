@@ -1,34 +1,34 @@
 ---
-title: How to block YouTube ads
+title: Cum să blocați reclamele YouTube
 sidebar_position: 4
 ---
 
 :::info
 
-This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru iOS, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::  
 
-<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/YW9Ojcm1Gkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/YW9Ojcm1Gkg" title="Player video YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## How to block ads in the YouTube app
+## Cum să blocați reclamele în aplicația YouTube
 
-1. Open the YouTube app.
+1. Deschideți aplicația YouTube.
 1. Choose a video and tap *Share*.
-1. Tap *More*, then select *Block YouTube Ads (by AdGuard)*.
+1. Atingeți *Mai mult*, apoi selectați *Blocarea reclamelor YouTube (de AdGuard)*.
 
-The video now opens in AdGuard's ad-free player.
+Videoul se deschide acum în player-ul fără reclame al AdGuard.
 
-## How to block ads on YouTube in Safari
+## Cum să blocați reclamele pe YouTube în Safari
 
 :::tip
 
-Make sure you've given AdGuard access to all websites. You can check it in Safari → Extensions → AdGuard. Then open AdGuard and enable *Advanced protection*.
+Asigurați-vă că ați acordat AdGuard acces la toate site-urile web. Puteți verifica acest lucru în Safari → Extensii → AdGuard. Apoi deschideți AdGuard și activați *Protecție avansată*.
 
 :::
 
-1. Open youtube.com in Safari.
+1. Deschideți youtube.com în Safari.
 1. Choose a video and tap *Share*.
-1. Tap *Block YouTube Ads (by AdGuard)*.
+1. Atingeți *Blocarea reclamelor YouTube (de AdGuard)*.
 
-The video now opens in AdGuard's ad-free player.
+Videoul se deschide acum în player-ul fără reclame al AdGuard.

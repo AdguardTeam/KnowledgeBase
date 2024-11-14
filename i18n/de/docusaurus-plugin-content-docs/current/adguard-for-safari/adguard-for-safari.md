@@ -11,24 +11,24 @@ In diesem Artikel geht es um AdGuard für Safari, der nur Ihren Safari-Browser s
 
 ## Funktionen
 
-Here are outlined the main features and settings available in AdGuard for Safari.
+Im Folgenden werden die wichtigsten Funktionen und Einstellungen von AdGuard für Safari beschrieben.
 
-[Features](/adguard-for-safari/features/features.md)
+[Funktionen](/adguard-for-safari/features/features.md)
 
 ## Installation
 
-Here, you’ll find the system requirements along with instructions on how to install and uninstall AdGuard for Safari.
+Im Folgenden finden Sie die Systemvoraussetzungen sowie eine Anleitung zur Installation und Deinstallation von AdGuard für Safari.
 
 [Installation](/adguard-for-safari/installation.md)
 
 ## Safari-Erweiterungen
 
-The article provides an overview of extensions in AdGuard for Safari, how they work, installation instructions, and key features of the extensions.
+Der Artikel gibt einen Überblick über die Erweiterungen in AdGuard für Safari, ihre Funktionsweise, Installationsanweisungen und die wichtigsten Funktionen der Erweiterungen.
 
-[Safari extensions](/adguard-for-safari/extensions.md)
+[Safari-Erweiterungen](/adguard-for-safari/extensions.md)
 
 ## Probleme lösen
 
 In diesem Abschnitt finden Sie verschiedene Artikel, die sich mit bekannten Problemen und möglichen Lösungen befassen.
 
-[Solving problems](/adguard-for-safari/solving-problems/solving-problems.md)
+[Probleme lösen](/adguard-for-safari/solving-problems/solving-problems.md)

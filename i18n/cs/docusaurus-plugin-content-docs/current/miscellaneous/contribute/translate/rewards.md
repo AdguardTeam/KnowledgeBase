@@ -5,56 +5,56 @@ sidebar_position: 6
 
 Protože každá poctivá a dobře odvedená práce by měla být odměněna, mohou aktivní překladatelé na Crowdinu požádat o bezplatný licenční klíč AdGuardu a předplatné VPN.
 
-## How our reward system works
+## Jak funguje náš systém odměn
 
-### For AdGuard licenses
+### Pro AdGuard licence
 
-- For your first one-year Ad Blocker license, you need to translate **1,000 words**.
-- For your second license, you’ll need an **additional 1,500 words** (a total of 2,500 words).
-- All subsequent licenses require an **additional 2,500** words per license.
+- Pro první roční licenci Blokátoru reklam musíte přeložit **1000 slov**.
+- Pro druhou licenci budete potřebovat **dalších 1500 slov** (celkem 2500 slov).
+- Všechny další licence vyžadují **dalších 2500** slov na licenci.
 
-### For AdGuard VPN licenses
+### Pro AdGuard VPN licence
 
-- The first one-year VPN subscription requires translating **3,000 words**.
-- All subsequent subscriptions or renewals require an **additional 3,000 words** per subscription.
+- První roční předplatné VPN vyžaduje přeložení **3000 slov**.
+- Všechna další předplatná nebo obnovení vyžadují **dalších 3000 slov** na předplatné.
 
-:::note Limitations
+:::note Omezení
 
-As a reward for contributing, we offer licenses and subscriptions valid for a maximum of 5 years. In the case of Ad Blocker, we offer licenses that cover up to 5 devices. We do not offer lifetime licenses.
+Jako odměnu za přispění nabízíme licence a předplatné platné maximálně 5 let. V případě Blokátoru reklam nabízíme licence, které pokrývají až 5 zařízení. Nenabízíme doživotní licence.
 
 :::
 
-## How to request your license
+## Jak požádat o licenci
 
-Just send an email to our translators team at [translate@adguard.com](mailto:translate@adguard.com) with the following information:
+Stačí poslat e-mail našemu týmu překladatelů na [translate@adguard.com](mailto:translate@adguard.com) s následujícími informacemi:
 
-- Your Crowdin username
-- The projects you contributed to (Websites, Applications, Knowledge Base, etc.)
-- The email address to which you want to link your license
-- Your translation statistics (a screenshot or total word count) and the type of license you want
+- Vaše uživatelské jméno Crowdin
+- Projekty, na kterých jste se podíleli (webové stránky, aplikace, databáze znalostí atd.)
+- E-mailovou adresu, se kterou chcete propojit svou licenci
+- Statistiky vašich překladů (snímek obrazovky nebo celkový počet slov) a typ licence, kterou chcete
 
-**Email template:**
+**Šablona e-mailu:**
 
 > Hi AdGuard team!
 > 
 > I’ve translated more than 5,000 words in AdGuard for Android in (*your language*) — you can find my stats attached. I would like to request an AdGuard VPN license and an Ad Blocker license for that. My email is (*your email address*). My Crowdin username is (*your username*).
 
-## How to check your translation progress
+## Jak zkontrolovat průběh překladu
 
-Open a project you have been working on, click the *Reports* tab, select *My Contribution*, scroll down, select a date range, and generate a report. It will look something like this.
+Otevřete projekt, na kterém jste pracovali, klikněte na kartu *Reports*, vyberte možnost *My Contribution*, přejděte dolů, vyberte rozsah dat a vygenerujte report. Bude vypadat přibližně takto.
 
 ![Statistics *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/statistics.png)
 
-You can add up the number of words translated across different projects to qualify for a license.
+Pro získání licence můžete sečíst počet přeložených slov v různých projektech.
 
 ## Jak se stát korektorem
 
-Our most active translators may be considered for proofreader status in the future. To become a proofreader, you’ll need to deliver consistently high quality translations over a period of several months.
+Naši nejaktivnější překladatelé mohou v budoucnu získat status korektora. Abyste se mohli stát korektorem, musíte po dobu několika měsíců poskytovat trvale vysoce kvalitní překlady.
 
-Please note that proofreaders do not receive extra licenses or benefits beyond helping more people access AdGuard products in their language. If you’re interested in becoming one of our proofreaders, please contact us at [translate@adguard.com](mailto:translate@adguard.com).
+Vezměte prosím na vědomí, že korektoři nezískávají žádné další licence ani výhody kromě toho, že pomáhají většímu počtu lidí získat přístup k produktům AdGuard v jejich jazyce. Pokud máte zájem stát se jedním z našich korektorů, kontaktujte nás na [translate@adguard.com](mailto:translate@adguard.com).
 
-## Gifts for active contributors
+## Dárky pro aktivní přispěvatele
 
-To the best contributors, every year we send gifts with the AdGuard merch and give a shout out on our [blog](https://adguard.com/en/blog/best-contributors-2023.html).
+Nejlepším přispěvatelům každoročně posíláme dárky s propagačním materiálem AdGuard a děkujeme jim na našem [blogu](https://adguard.com/en/blog/best-contributors-2023.html).
 
 ![AdGuard merch *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

@@ -1,109 +1,109 @@
 ---
-title: Extensions
+title: Extensii
 sidebar_position: 6
 ---
 
 ## Userscripts
 
-Userscripts (we also call them "extensions") are, de facto, miniprograms written in JavaScript. They modify or extend the functionality of one or more websites. Many AdGuard users may be already familiar with such userscripts as AdGuard Assistant, Popup Blocker, and AdGuard Extra.
+Userscripts (pe care le numim și "extensii") sunt, de facto, miniprograme scrise în JavaScript. Ele modifică sau extind funcționalitatea unuia sau mai multor site-uri web. Mulți utilizatori AdGuard s-ar putea să fie deja familiarizați cu userscripts precum Asistentul AdGuard, Blocare Pop-up și AdGuard Extra.
 
-:::note Supported apps
+:::note Aplicații suportate
 
-AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/features/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
+AdGuard poate mări semnificativ funcționalitatea site-ului operând ca manager de userscript. Puteți adăuga scripturi personalizate sau gestiona cele existente în cele trei produse ale noastre: [AdGuard pentru Windows](/adguard-for-windows/features/extensions), [AdGuard pentru Android](/adguard-for-android/features/settings#userscripts) și [AdGuard pentru Mac](/adguard-for-mac/features/extensions).
 
 :::
 
-### Recommended AdGuard scripts
+### Scripturi AdGuard recomandate
 
-These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you are exposing yourself to a certain risk, as some scripts may be harmful to your computer.
+Aceste userscripts provin direct de la dezvoltatorii AdGuard și putem garanta că sunt eficiente și sigure. Pentru unele dintre userscripts-urile dezvoltate de alții pe care le considerăm bune și de încredere, [derulați în jos la secțiunea următoare](#top-picks). De asemenea, puteți găsi câteva dintre [site-urile populare cu scripturi](#more-userscripts) mai jos, dar amintiți-vă că ori de câte ori descărcați un userscript dintr-o sursă necunoscută, vă expuneți la un certain risc, deoarece unele scripturi pot fi dăunătoare pentru computerul dumneavoastră.
 
 #### AdGuard Extra
 
-An extension that blocks ads in difficult cases when the usual filter-based approach is not enough. AdGuard Extra comes pre-installed in AdGuard standalone apps, except for the one for iOS, so you don't need to do anything to enable it. However, if you want to use it alongside AdGuard Browser Extension or any other ad blocker, you'll need to use an additional extension. Learn more about this userscript and how to install it on [GitHub](https://github.com/AdguardTeam/AdGuardExtra).
+O extensie care blochează reclamele în cazuri dificile când abordarea obișnuită bazată pe filtre nu este suficientă. AdGuard Extra vine preinstalat în aplicațiile AdGuard independente, cu excepția celor pentru iOS, astfel că nu trebuie să faceți nimic pentru a-l activa. Cu toate acestea, dacă doriți să-l folosiți împreună cu Extensia de browser AdGuard sau cu orice alt blocant de reclame, va trebui să folosiți o extensie suplimentară. Aflați mai multe despre acest userscript și despre cum să-l instalați pe [GitHub](https://github.com/AdguardTeam/AdGuardExtra).
 
 ![AdGuard Extra](https://cdn.adtidy.org/content/kb/ad_blocker/general/adguard-extra.png)
 
-#### AdGuard Popup Blocker
+#### Blocant Pop-up AdGuard
 
-The name speaks for itself: it blocks popups — one of the most annoying types of ads on websites. Learn more about this userscript, its key features, and installation on [GitHub](https://github.com/AdguardTeam/PopupBlocker).
+Numele spune totul: blochează pop-up-urile — unul dintre cele mai enervante tipuri de reclame de pe site-uri. Aflați mai multe despre acest userscript, principalele sale caracteristici și instalare pe [GitHub](https://github.com/AdguardTeam/PopupBlocker).
 
-![AdGuard Popup Blocker](https://cdn.adtidy.org/content/kb/ad_blocker/general/popup-blocker-installation.png)
+![Blocant Pop-up AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/general/popup-blocker-installation.png)
 
-#### AdGuard Assistant (legacy version)
+#### Asistentul AdGuard (versiune veche)
 
-This custom extension is designed to control filtering directly from the browser page (manual blocking, allowlisting, etc.).
+Această extensie personalizată este concepută pentru a controla filtrarea direct din pagina browser-ului (blocare manuală, permitere, etc.).
 
 :::note
 
-This version of Assistant is legacy and there is no point in using it on new systems, as it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). However, the legacy Assistant may be useful if there is no Browser Assistant for your browser. If this is your case, you can learn how to install AdGuard Assistant on [GitHub](https://github.com/AdguardTeam/AdguardAssistant).
+Această versiune a Asistentului este veche și nu are sens să o folosiți pe sistemele noi, deoarece a fost înlocuită cu [Asistentul Browser](https://adguard.com/adguard-assistant/overview.html). Cu toate acestea, Asistentul vechi poate fi util dacă nu există Asistent Browser pentru browserul dumneavoastră. Dacă acest lucru se aplică în cazul dumneavoastră, puteți învăța cum să instalați Asistentul AdGuard pe [GitHub](https://github.com/AdguardTeam/AdguardAssistant).
 
 :::
 
-#### Disable AMP
+#### Dezactivare AMP
 
-A script that is only pre-installed in AdGuard for Android. It disables AMP (Accelerated Mobile Pages) on the Google search results page. Learn more about this userscript and how to install it on [GitHub](https://github.com/AdguardTeam/DisableAMP).
+Un script care este preinstalat numai în AdGuard pentru Android. Acesta dezactivează AMP (Pagini Mobile Accelerate) pe pagina de rezultate ale căutării Google. Aflați mai multe despre acest userscript și cum să-l instalați pe [GitHub](https://github.com/AdguardTeam/DisableAMP).
 
 ![Disable AMP](https://cdn.adtidy.org/content/kb/ad_blocker/general/disable-amp-installation.png)
 
-### Top picks outside AdGuard{#top-picks}
+### Cele mai bune alegeri dincolo de AdGuard{#top-picks}
 
-These userscripts are not developed by AdGuard, and therefore we can't give a 100% guarantee that they are safe and/or work at all times. However, in our experience they deserve a recommendation because they've all earned their good reputation.
+These userscripts are not developed by AdGuard, and therefore we can't give a 100% guarantee that they are safe and/or work at all times. Cu toate acestea, din experiența noastră, merită o recomandare deoarece toate și-au câștigat o bună reputație.
 
-#### Don't track me Google
+#### Nu mă urmări Google
 
-This script removes Google's tracking feature from the links in Google search results. It speeds up the loading of search results and allows you to right-click or tap to copy the link URL.
+Acest script elimină caracteristica de urmărire a Google din linkurile din rezultatele căutării Google. Aceasta accelerează încărcarea rezultatelor căutării și permite să apăsați cu butonul drept al mouse-ului sau să atingeți pentru a copia URL-ul link-ului.
 
-Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me-google). This userscript can be downloaded from [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) and installed in any AdGuard CoreLibs-based app.
+Codul său sursă este [disponibil pe GitHub](https://github.com/Rob--W/dont-track-me-google). Acest userscript poate fi descărcat de pe [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) și instalat în orice aplicație bazată pe AdGuard CoreLibs.
 
 #### microShield
 
-A userscript for people visiting Korean websites and some international websites. The microShield userscript blocks Ad-Shield ads and anti-adblocks. Its original source code is available at [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) and [AdShield Defuser](https://github.com/seia-soto/adshield-defuser). This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about microShield and how to install it on [GitHub](https://github.com/List-KR/microShield).
+Un userscript pentru persoanele care vizitează site-uri coreene și unele site-uri internaționale. Userscriptul microShield blochează reclamele Ad-Shield și anti-adblock-uri. Codul său sursă original este disponibil la [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) și [AdShield Defuser](https://github.com/seia-soto/adshield-defuser). Acest userscript poate fi instalat în aplicațiile bazate pe AdGuard CoreLibs, Violentmonkey, Tampermonkey și [quoid/userscripts](https://github.com/quoid/userscripts). Aflați mai multe despre microShield și cum să-l instalați pe [GitHub](https://github.com/List-KR/microShield).
 
-### Where can you get more userscripts?{#more-userscripts}
+### De unde puteți obține mai multe userscripts?{#more-userscripts}
 
-Since userscripts are mainly created by enthusiasts, you should be cautious when installing them. Any script from an unknown source carries a potential risk. Yet, there is a great variety of interesting scripts that, if installed carefully and responsibly, can really make using some websites more convenient.
+Deoarece userscripts-urile sunt create în principal de entuziaști, ar trebui să fiți precauți atunci când le instalați. Orice script dintr-o sursă necunoscută prezintă un risc potențial. Cu toate acestea, există o mare varietate de scripturi interesante care, dacă sunt instalate cu atenție și responsabilitate, pot face utilizarea unor site-uri web mult mai convenabilă.
 
-Here we will describe some of the most popular userscript catalogs.
+Aici vom descrie câteva dintre cele mai populare cataloage de userscript.
 
 #### Userscript.Zone
 
-[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high level of credibility as only scripts from moderated pages are displayed.
+[Userscript.Zone](https://www.userscript.zone) este un site web care permite căutarea de userscripts prin introducerea unui URL sau domeniu corespunzător. Site-ul este ușor de utilizat și are un nivel ridicat de credibilitate, deoarece sunt afișate doar scripturi de pe pagini moderate.
 
 #### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) is a userscript catalog of Stylish creators. The scripts in this catalog are moderated, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/) este un catalog de userscripts al creatorilor Stylish. Scripturile din acest catalog sunt moderate, astfel că credibilitatea lor este mult mai mare.
 
 #### OpenUserJS.org
 
-[OpenUserJS.org](https://openuserjs.org/) is an open-source userscript catalog written in nodeJS. It's not moderated, so keep an eye out for suspicious scripts.
+[OpenUserJS.org](https://openuserjs.org/) este un catalog open-source de userscripts scris în nodeJS. Nu este moderat, așa că fiți atenți la scripturile suspecte.
 
-#### Community
+#### Comunitate
 
-If you like the idea of customizing your browser with userscripts and have questions, you can ask them on one of these websites:
+Dacă vă place ideea de a personaliza browserul dvs. cu userscripts și aveți întrebări, le puteți adresa pe unul dintre aceste site-uri:
 
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/userscripts)
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
 - [Reddit](https://www.reddit.com/r/userscripts/)
 
-### Development
+### Dezvoltare
 
-#### Request license
+#### Solicitați licență
 
-If you are developing your own custom script and want to test how it works with AdGuard, you can request a beta license key for the app.
+Dacă dezvoltați propriul script personalizat și doriți să testați cum funcționează cu AdGuard, puteți solicita o cheie de licență beta pentru aplicație.
 
 To get it, please send an email to devteam@adguard.com with the following information:
 
-**Subject:** Userscript author license request
+**Subiect:** Cerere de licență pentru autorul userscript-ului
 
 **Body:** Please tell us about the userscripts you are working on.
 
-Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request\&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK).
+Iată un [link mailto](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request\&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK).
 
-#### Compatibility
+#### Compatibilitate
 
 #### Metadata block
 
-#### Supported properties
+#### Proprietăți suportate
 
 ```text
 @name
@@ -133,23 +133,23 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 @icon64URL
 ```
 
-#### Unsupported properties
+#### Proprietăți nesuportate
 
-These properties will be simply ignored by AdGuard.
+Aceste proprietăți vor fi pur și simplu ignorate de AdGuard.
 
 ```text
 @unwrap
 ```
 
-#### Supported GM functions
+#### Funcții GM suportate
 
-AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
+AdGuard suportă atât vechile funcții GM\_, cât și noul API GM4 care utilizează obiectul GM.
 
-#### Values
+#### Valori
 
 :::note
 
-All listed old Greasemonkey functions are deprecated but still supported.
+Toate funcțiile vechi listate Greasemonkey sunt depreciate, dar încă sunt suportate.
 
 :::
 
@@ -170,16 +170,16 @@ GM_addStyle
 GM_log
 ```
 
-[Here](https://wiki.greasespot.net/GM.info) you can find more information about Greasemonkey API.
+[Aici](https://wiki.greasespot.net/GM.info) puteți găsi mai multe informații despre API-ul Greasemonkey.
 
-#### Example
+#### Exemplu
 
 ```javascript
 // ==UserScript==
-// @name            Name as shown to the user when locale is english or unknown
-// @name:ru         Name as shown to the user when locale is russian
-// @description     Description as shown to the user when locale is english or unknown
-// @description:ru  Description as shown to the user when locale is russian
+// @name            Nume afișat utilizatorului atunci când localizarea este în engleză sau necunoscută
+// @name:ru         Nume afișat utilizatorului atunci când localizarea este în rusă
+// @description     Descriere afișată utilizatorului atunci când localizarea este în engleză sau necunoscută
+// @description:ru  Descriere afișată utilizatorului atunci când localizarea este în rusă
 // @icon            https://myhomepage.com/myuserscript.png
 // @version         1.0.0.0
 // @downloadURL     https://dl.myhomepage.org/myuserscript.user.js
@@ -207,27 +207,27 @@ GM_log
 // @run-at document-start
 // ==/UserScript==
 !function(){(
-    console.log("I am loaded!");
+    console.log("Sunt încărcat!");
 )}();
 ```
 
-## Userstyles
+## Stiluri de utilizator
 
-Userstyles allow users to customize their online experience. Whether you’re looking to change the appearance of a website or automate repetitive tasks, styles offer a world of possibilities.
+Stilurile de utilizator permit utilizatorilor să-și personalizeze experiența online. Indiferent dacă doriți să schimbați aspectul unui site web sau să automatizați sarcini repetitive, stilurile oferă o lume de posibilități.
 
-AdGuard has the option to upload or create your own userstyles. This is an advanced feature, so you will need some knowledge of HTML and CSS.
+AdGuard are opțiunea de a încărca sau crea propriile stiluri de utilizator. Aceasta este o caracteristică avansată, așa că va trebui să aveți cunoștințe despre HTML și CSS.
 
-:::info Supported apps
+:::info Aplicații suportate
 
-Currently, two AdGuard apps allow you to create and manage userstyles: AdGuard for Windows (v7.19 or later) and AdGuard for Mac (v2.16 or later). We also plan to implement this new feature in AdGuard v4.8 for Android in the nearest future.
+În prezent, două aplicații AdGuard vă permit să creați și să gestionați stiluri de utilizator: AdGuard pentru Windows (v7.19 sau mai recent) și AdGuard pentru Mac (v2.16 sau mai recent). De asemenea, planificăm să implementăm această nouă caracteristică în AdGuard v4.8 pentru Android în viitorul apropiat.
 
 :::
 
-This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at <support@adguard.com>.
+Aceasta este o caracteristică experimentală, așa că, dacă întâlniți probleme la adăugarea sau crearea unui stil de utilizator, vă rugăm să contactați echipa noastră de asistență la <support@adguard.com>.
 
-### How to set up a userstyle in AdGuard
+### Cum să configurați un stil de utilizator în AdGuard
 
-You can download userstyles from various websites. One of the most popular userstyle websites is [https://userstyles.world/](https://userstyles.world/explore), which we will use as an example for the following instructions on how to set up the userstyle in AdGuard.
+Puteți descărca stiluri de utilizator de pe diferite site-uri. Unul dintre cele mai populare site-uri de stiluri de utilizator este [https://userstyles.world/](https://userstyles.world/explore), pe care îl vom folosi ca exemplu pentru următoarele instrucțiuni despre cum să configurați stilul de utilizator în AdGuard.
 
 1. Follow the link above and choose the userstyle you like
 
@@ -237,7 +237,7 @@ You can download userstyles from various websites. One of the most popular users
 
 4. Press the [+] button and paste the userstyle link
 
-5. Done!
+5. Terminat!
 
 If you’re familiar with CSS rules, you can also create the userstyles yourself.
 
@@ -260,7 +260,7 @@ We don’t support userstyles that contain `@var` or `@advanced` in the metadata
    ==/UserStyle== */
    ```
 
-4. Write the CSS part after the meta data. AdGuard supports website domain names matching (`@-moz-document domain(…), …`). For example:
+4. Write the CSS part after the meta data. AdGuard supports website domain names matching (`@-moz-document domain(…), …`). De exemplu:
 
    ```CSS
    body {
@@ -280,7 +280,7 @@ We don’t support userstyles that contain `@var` or `@advanced` in the metadata
 
 5. Once you’re finished, press _Save and Close_. Your new userstyle has been successfully added to AdGuard
 
-### Example
+### Exemplu
 
 ```css
 /* ==UserStyle==
