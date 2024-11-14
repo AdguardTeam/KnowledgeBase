@@ -1,81 +1,81 @@
 ---
-title: Manual installation of the security certificate into the Firefox browser
+title: Instalare manuală a certificatului de securitate în browserul Firefox
 sidebar_position: 11
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Android, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-For AdGuard to successfully filter HTTPS traffic in Firefox, the browser needs to trust AdGuard's certificate. It can be achieved differently for different versions of the Firefox.
+Pentru ca AdGuard să filtreze cu succes traficul HTTPS în Firefox, browserul trebuie să aibă încredere în certificatul AdGuard. Acest lucru poate fi realizat diferit pentru diferite versiuni ale Firefox.
 
-### Method 1
+### Metodă 1
 
 :::note
 
-This method works in Firefox for Android version 90.0 and later.
+Această metodă funcționează în Firefox pentru Android versiunea 90.0 și ulterioare.
 
 :::
 
-To make Firefox trust the AdGuard certificate, do the following:
+Pentru a face ca Firefox să aibă încredere în certificatul AdGuard, urmați acești pași:
 
-1. Run the browser.
+1. Rulați browserul.
 
-1. Go to **Settings** → **About Firefox**.
+1. Accesați **Setări** → **Despre Firefox**.
 
-    ![About Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
+    ![Despre Firefox *mobil](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
-1. Tap the Firefox logo five times.
+1. Apăsați de cinci ori pe logo-ul Firefox.
 
-1. Navigate to **Settings** → **Secret Settings**.
+1. Navigați la **Setări** → **Setări secrete**.
 
-    ![Secret Settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+    ![Setări secrete *mobil](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
-1. Toggle **Use third party CA certificates**.
+1. Comutați **Utilizați certificate CA de la terți**.
 
-### Method 2
+### Metodă 2
 
 :::note
 
-This method will only work on **rooted** devices.
+Această metodă va funcționa doar pe dispozitive **rootate**.
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Instalare și configurare](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; Pe platforma Windows, proprietarii de **Samsung** pot fi nevoiți să instaleze [această utilitate](https://developer.samsung.com/mobile/android-usb-driver.html).
 
-1. Activate the **developer mode** and enable **USB debugging**:
+1. Activați **modul dezvoltator** și activați **debugging USB**:
 
-    - Open the **Settings** app on your phone;
-    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
-    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
+    - Deschideți aplicația **Setări** de pe telefon;
+    - Accesați secțiunea **Sistem** (ultimul element din meniul setărilor). În această secțiune, găsiți subelementul **Despre telefon**;
+    - Apăsați pe linia **Numărul construcției** de 7 ori. După aceea, veți primi o notificare că **Sunteți acum dezvoltator** (Dacă este necesar, introduceți un cod de deblocare pentru dispozitiv);
     - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
-1. Install the [Firefox](https://www.mozilla.org/en-US/firefox/releases/) browser (release version);
+1. Instalați browserul [Firefox](https://www.mozilla.org/en-US/firefox/releases/) (versiune de lansare);
 
 1. Open the **AdGuard settings** (gear icon in the bottom right corner) → **Filtering** → **Network** → **HTTPS filtering** → **Security certificate** → **Instructions for Firefox** → **Install for old versions**;
 
-1. Open the folder `data/data/org.mozilla.firefox/files/mozilla` using `adb shell su` and `cd data/data/...`, then browse to the folder named `xxxxxxx.default` and memorize its name;
+1. Deschideți folderul `data/data/org.mozilla.firefox/files/mozilla` folosind `adb shell su` și `cd data/data/...`, apoi navigați la folderul numit `xxxxxxx.default` și memorizați-i numele;
 
-1. In the specified folder we are interested in two files:
+1. În folderul specificat, ne interesează două fișiere:
 
     - `cert9.db`
     - `key4.db`
 
-1. We need to move these files to a folder of the browser where the security certificate issue occurred:
+1. Trebuie să mutăm aceste fișiere într-un folder al browserului în care a apărut problema cu certificatul de securitate:
 
     - `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`.
 
-1. The full command will look like this:
+1. Comanda completă va arăta astfel:
 
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
 
-    In case you received the system notification **permission denied**, you should first move the specified files to the permission-free directory. And after that you should move them to the necessary folder in your Firefox browser.
+    În cazul în care ați primit notificarea de sistem **permisiune refuzată**, trebuie mai întâi să mutați fișierele specificate în directorul fără permisiuni. Și după aceea, ar trebui să le mutați în folderul necesar din browserul dvs. Firefox.
 
-    The full command should look something like this:
+    Comanda completă ar trebui să arate astfel:
 
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxx.default/cert9.db sdcard/Download`
@@ -83,4 +83,4 @@ This method will only work on **rooted** devices.
     - `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
 
-    If `adb shell su` does not work, you should try `adb shell` initially, and then `su`.
+    Dacă `adb shell su` nu funcționează, ar trebui să încercați mai întâi `adb shell`, iar apoi `su`.

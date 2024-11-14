@@ -1,45 +1,45 @@
 ---
-title: Tracking filter rules statistics
+title: Statistiken zur Werbefilternutzung
 sidebar_position: 4
 ---
 
 :::note
 
-The *Send statistics for ad filters usage* option is disabled by default. Nothing will be sent unless a user manually enables it to help us improve our blocking filters.
+Die Option *Bei Verbesserung der AdGuard-Filter helfen* ist standardmäßig deaktiviert. Es wird nichts gesendet, es sei denn, Sie aktivieren dies manuell, damit wir unsere Sperrfilter verbessern können.
 
 :::
 
-### Why do we need ad filters?
+### Warum werden Werbefilter benötigt?
 
-Let's start by defining what ad filters are. Thanks to these filters, AdGuard removes ads from websites. They are manually compiled based on your complaints about ads on websites. Ad filters are an essential element of AdGuard — their quality determines the overall quality of AdGuard ad blocking.
+Definieren wir zunächst, was Werbefilter sind. Dank dieser Filter entfernt AdGuard Werbung von Websites. Sie werden manuell auf der Grundlage Ihrer Beschwerden über Werbung auf Websites zusammengestellt. Werbefilter sind ein wesentliches Element von AdGuard — ihre Qualität bestimmt die Gesamtqualität der von AdGuard gesperrten Werbung.
 
-However, there is a downside. Over the years, more and more ad filters have been appearing. And the more ad filters are there, the more memory AdGuard consumes, thus slowing down the rendering of web pages. At the same time, some of the filters start to expire, gradually becoming a dead weight that has no use, only consumes memory, and slows down the program.
+Allerdings gibt es auch eine Kehrseite. Im Laufe der Jahre sind mehr und mehr Werbefilter aufgetaucht. Und je mehr Werbefilter vorhanden sind, desto mehr Arbeitsspeicher verbraucht AdGuard und verlangsamt damit das Aufbereiten von Webseiten. Gleichzeitig beginnen einige der Filter zu verfallen und werden allmählich zu einem Ballast, der keinen Nutzen hat, nur Speicher verbraucht und das Programm verlangsamt.
 
-### Why do we need statistics?
+### Warum werden Statistiken benötigt?
 
-We want to solve the problem of outdated filtering rules once and for all. But we need your help to do so. By gathering statistics on used filtering rules, we detect and remove the rules that are no longer used. As a result, it will help all those who use AdGuard.
+Wir wollen das Problem der veralteten Filterregeln ein für alle Mal lösen. Doch dazu benötigen wir Ihre Hilfe. Durch das Sammeln von Statistiken über die verwendeten Filterregeln erkennen und entfernen wir die Regeln, die nicht mehr verwendet werden. Das Ergebnis ist eine Hilfe für alle, die AdGuard verwenden.
 
-If your computer is powerful enough, it won’t really affect you. But the difference will be very noticeable for users of low-power netbooks or tablets.
+Wenn Ihr Computer leistungsstark genug ist, wird es Sie nicht wirklich beeinträchtigen. Bei Netbooks oder Tablets mit geringem Stromverbrauch wird der Unterschied jedoch deutlich spürbar sein.
 
-### What kind of statistics will be sent?
+### Welche Arten von Statistiken werden übermittelt?
 
-If you enable the *Send statistics for ad filters usage* option, the following information is sent periodically:
+Wenn Sie die Option *Bei Verbesserung der AdGuard-Filter helfen* aktivieren, werden die folgenden Informationen regelmäßig gesendet:
 
-- Extension version
-- Browser type (Chrome/Firefox/Opera/Yandex.Browser/Safari).
-- List of enabled ad filters.
-- The list that consists of the following elements:
-    - *The domain name of the website*
-    - *The number of recent page views*
-    - *The list of filtering rules and Filter ID which were activated on this website*
-    - *The domain name of blocked requests is sent for URL rules* The list is created based on the website's visit statistics since the last time statistical data was sent.
+- Version der Erweiterung
+- Browser-Typ (Chrome/Firefox/Opera/Yandex.Browser/Safari).
+- Liste der aktivierten Werbefilter.
+- Die Liste, die aus den folgenden Elementen besteht:
+    - *Der Domainname der Website*
+    - *Die Anzahl der letzten Seitenaufrufe*
+    - *Die Liste der Filterregeln und Filter-ID, die auf dieser Website aktiviert wurden*
+    - *Der Domainname der gesperrten Anfragen wird für URL-Regeln gesendet* Die Liste wird auf der Grundlage der Besuchsstatistiken der Website seit der letzten Übermittlung der statistischen Daten erstellt.
 
-The collected statistics will be sent periodically to our server for analysis and filter optimization.
+Die gesammelten Statistiken werden in regelmäßigen Abständen an unseren Server zur Analyse und Filteroptimierung gesendet.
 
-It's important to note that all the statistics we get are averaged and anonymized. We don't use these statistics for any purpose other than optimizing the filters, and we do not sell this data to third parties. You can read about it in our [Privacy policy](https://adguard.com/privacy.html).
+Es ist wichtig zu wissen, dass alle Statistiken, die wir erhalten, gemittelt und anonymisiert sind. Wir verwenden diese Statistiken zu keinem anderen Zweck als zur Optimierung der Filter und verkaufen diese Daten nicht an Dritte. Sie können dies in unserer [Datenschutzerklärung](https://adguard.com/privacy.html) nachlesen.
 
-### What does tracking filter rules statistics fraught with?
+### Was ist bei der Werbefilterstatistik zu beachten?
 
-For the vast majority of users, the change in computer speed will not be really noticeable. However, netbook and tablet users may notice a slight slowdown.
+Wenn Sie diese Einstellung aktivieren, werden Sie wahrscheinlich keine Änderung in der Geschwindigkeit Ihres Computers bemerken. Netbook- und Tablet-Benutzer können jedoch eine leichte Verlangsamung feststellen.
 
-Periodically, we will send the gathered statistics to the server. The size of the transmitted data is not very large and is comparable to the size of an average web page.
+In regelmäßigen Abständen werden wir die gesammelten Statistiken an den Server senden. Der Umfang der übertragenen Daten ist nicht sehr groß und entspricht der Größe einer durchschnittlichen Webseite.

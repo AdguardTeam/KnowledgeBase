@@ -5,24 +5,24 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Android, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Features
 
-Here are outlined the main features and settings available in AdGuard for Android.
+Iată principalele caracteristici și setări disponibile în AdGuard pentru Android.
 
-[Features](/adguard-for-android/features/features.md)
+[Caracteristici](/adguard-for-android/features/features.md)
 
-## Installation
+## Instalare
 
-Here, you’ll find the system requirements along with instructions on how to install and uninstall AdGuard for Android.
+Aici veți găsi cerințele de sistem împreună cu instrucțiuni despre cum să instalați și să dezinstalați AdGuard pentru Android.
 
-[Installation](/adguard-for-android/installation.md)
+[Instalare](/adguard-for-android/installation.md)
 
 ## Solving problems
 
-This section includes various articles addressing known issues and possible solutions.
+Această secțiune include diverse articole care abordează problemele cunoscute și soluțiile posibile.
 
-[Solving problems](/adguard-for-android/solving-problems/solving-problems.md)
+[Rezolvarea problemelor](/adguard-for-android/solving-problems/solving-problems.md)

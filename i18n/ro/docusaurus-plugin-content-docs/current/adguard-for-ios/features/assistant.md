@@ -1,31 +1,31 @@
 ---
-title: Assistant
+title: Asistent
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru iOS, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-### Assistant {#assistant}
+### Asistent {#assistant}
 
-![Safari Assistant \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
+![Asistent Safari \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
 
-Assistant is a tool that helps you manage filtering in Safari right from the browser without switching back to the app.
+Asistentul este un instrument care te ajută să gestionezi filtrarea în Safari direct din browser, fără a reveni la aplicație.
 
-To see it, do the following: open Safari and tap the arrow-in-a-box symbol. Then scroll down to AdGuard/AdGuard Pro (depending on the app you use) and tap it to fetch a window with several options:
+Pentru a-l vedea, fă următoarele: deschide Safari și apasă pe simbolul cu săgeata într-o cutie. Apoi, derulează în jos până la AdGuard/AdGuard Pro (în funcție de aplicația pe care o folosești) și apasă pe el pentru a obține o fereastră cu mai multe opțiuni:
 
-- **Enable on this page.**
-  Turn the switch off to add the current domain to the Allowlist.
-- **Block an element on this page.**
-  Tap it to enter the 'Element blocking' mode: choose any element on the page, adjust the size by tapping '+' or '–', preview if necessary and then tap the checkmark icon to confirm. The selected element will be hidden from the page and a corresponding rule will be added to User rules. Remove or disable it to revert the change.
-- **Report an issue on this page.**
-  Opens a web reporting tool that will help you send a report to our support team in just a few taps. Use it if you noticed a missed ad or an incorrect blocking on the page.
+- **Permite pe această pagină.**
+  Activează comutatorul pentru a adăuga domeniul curent pe lista albă.
+- **Blochează un element pe această pagină.**
+  Apasă pe el pentru a intra în modul 'Blocare element': alege orice element de pe pagină, ajustează dimensiunea apăsând '+' sau '–', previzualizează dacă este necesar și apoi apasă pe iconița cu bifă pentru a confirma. Elementul selectat va fi ascuns de pe pagină și o regulă corespunzătoare va fi adăugată la Regulile utilizator. Remove or disable it to revert the change.
+- **Raportează o problemă pe această pagină.**
+  Deschide un instrument web de raportare care te va ajuta să trimiti un raport echipei noastre de asistență în doar câteva apăsări. Folosește-l dacă ai observat o reclamă ratată sau o blocare incorectă pe pagină.
 
 :::tip
 
-On iOS 15 devices, the Assistant features are available through [AdGuard Safari Web Extension](/adguard-for-ios/web-extension), which enhances the capabilities of AdGuard for iOS and allows you to take advantage of iOS 15. With this web extension, AdGuard can apply advanced filter rules and, as a result, block more ads.
+Pe dispozitivele cu iOS 15, funcțiile Asistentului sunt disponibile prin [Extensia web AdGuard Safari](/adguard-for-ios/web-extension), care îmbunătățește capabilitățile AdGuard pentru iOS și îți permite să profiți de iOS 15. Cu această extensie web, AdGuard poate aplica reguli avansate de filtrare și, ca rezultat, poate bloca mai multe reclame.
 
 :::

@@ -3,13 +3,13 @@ title: Übersetzungspriorität der Crowdin-Dateien
 sidebar_position: 5
 ---
 
-There are five major AdGuard projects on Crowdin — [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge Base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), and [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
+Es gibt fünf große AdGuard-Projekte auf Crowdin — [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge Base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), und [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
 
 Wir haben keine klaren Richtlinien, mit welchen Dateien oder Produkten des Projekts *AdGuard Applications* Sie beginnen sollen. Wählen Sie einfach ein beliebiges Produkt aus.
 
 Es gibt nur ein paar Dinge, die wir erwähnen möchten:
 
-- The app is only available to users in those languages for which all translations have been completed on Crowdin;
+- Die App steht nur in den Sprachen zur Verfügung, die auf Crowdin vollständig übersetzt wurden;
 - Wir empfehlen, die Beschreibungen für App-Stores an zweiter Stelle zu übersetzen, da die Beschreibungen ohne die Übersetzung der Produkte selbst nicht benötigt werden.
 
 Anders verhält es sich bei dem Projekt *AdGuard Websites* . Sprachen können der Website auch dann hinzugefügt werden, wenn noch keine vollständigen Übersetzungen vorhanden sind. Dies hängt jedoch davon ab, welche Dateien bereits übersetzt wurden. Deshalb empfehlen wir Ihnen, mit den wichtigsten Dateien zu beginnen – sie sind unten aufgeführt:

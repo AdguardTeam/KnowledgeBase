@@ -1,37 +1,37 @@
 ---
-title: Other features and options
+title: Alte caracteristici și opțiuni
 sidebar_position: 4
 ---
 
 :::info
 
-This article is about the AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la extensia de browser AdGuard, care protejează doar browserul dvs. Pentru a proteja întregul dispozitiv, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Apart from the large key modules of AdGuard Browser Extension, there are several more specific features that can be configured in the _General_ and _Additional settings_ tabs of the extension settings.
+În afară de modulele cheie mari ale extensiei de browser AdGuard, există mai multe caracteristici specifice care pot fi configurate în filele _General_ și _Setări suplimentare_ ale setărilor extensiei.
 
-## General {#general}
+## Modul general {#general}
 
-In the _General_ tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters' update interval, etc.
+În fila _General_, puteți permite anunțurile de căutare și [autopromovarea site-urilor web](/general/ad-filtering/search-ads), activați activarea automată a filtrelor specifice limbii, indicați intervalul de actualizare a filtrelor etc.
 
 ![General \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
 Besides, here you can enable [_Phishing and malware protection_](/general/browsing-security).
 
-You can save your settings configuration by clicking the _Export settings_ button. The settings will be saved as a .json file. To import the previously saved settings configuration, use the _Import settings_ function. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers.
+Puteți salva configurația setărilor făcând clic pe butonul _Exportați setările_. Setările vor fi salvate sub forma unui fișier .json. Pentru a încărca configurația setărilor salvate anterior, utilizați funcția _Importați setările_. Puteți chiar să-l utilizați pentru a comuta rapid între diferite profiluri de setări sau chiar pentru a transfera configurații de setări între diferite browsere.
 
-## Additional settings {#misc}
+## Setări suplimentare {#misc}
 
-The _Additional settings_ section contains a range of various settings that are related to the ad blocking process and application usability.
+Secțiunea _Setări suplimentare_ conține o serie de diferite setări care sunt legate de procesul de blocare a reclamelor și de utilizare a aplicației.
 
-![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
+![Setări suplimentare \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
 
-From this tab, you can activate optimized filters, enable notifications about extension updates, open the _Filtering log_, or clear the statistics of blocked ads and trackers.
+Pe această filă, puteți activa filtrele optimizate, permiteți notificările despre actualizările extensiei, deschideți _Jurnalul de filtrare_ sau ștergeți statisticile reclamelor și urmăritorilor blocați.
 
-Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
+Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. Această opțiune este dezactivată în mod implicit, deoarece nu colectăm date ale utilizatorilor fără consimțământul acestora. Acum, dacă o activați, toate datele vor fi strict anonime.
 
-## About {#about}
+## Despre {#about}
 
 In the _About_ section, you can find info about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
 

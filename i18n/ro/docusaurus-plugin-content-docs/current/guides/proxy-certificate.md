@@ -1,132 +1,132 @@
 ---
-title: How to install a proxy certificate
+title: Cum se instalează un certificat proxy
 sidebar_position: 2
 ---
 
-Our desktop apps, AdGuard for Windows and AdGuard for Mac, can be used as a proxy for other devices. This means that you can route other devices’ traffic through AdGuard (all traffic or traffic of specific apps and browsers).
+Aplicațiile noastre desktop, AdGuard pentru Windows și AdGuard pentru macOS, pot fi utilizate ca proxy pentru alte dispozitive. Aceasta înseamnă că puteți direcționa traficul altor dispozitive prin AdGuard (toate traficul sau traficul aplicațiilor și browserelor specifice).
 
 :::note
 
-These devices must be in the same network as the PC or Mac with AdGuard.
+Aceste dispozitive trebuie să fie în aceeași rețea cu PC-ul sau Mac-ul cu AdGuard.
 
 :::
 
-HTTP traffic will be filtered in any case, but for AdGuard to be able to filter HTTPS traffic you need to manually install the AdGuard certificate on the connected device.
+Traficul HTTP va fi filtrat în orice caz, dar pentru ca AdGuard să poată filtra trafic HTTPS, trebuie să instalați manual certificatul AdGuard pe dispozitivul conectat.
 
-## How to download and install the certificate
+## Cum se descarcă și se instalează certificatul
 
-Depending on the operating system of the device whose traffic you want to filter, follow one of these instructions:
+În funcție de sistemul de operare al dispozitivului ale cărui trafic doriți să filtrați, urmați una dintre aceste instrucțiuni:
 
 ### Windows {#windows}
 
-1. Note the IP address of your desktop computer with AdGuard installed.
+1. Rețineți adresa IP a computerului dumneavoastră desktop pe care este instalat AdGuard.
 
-1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. For Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
+1. Asigurați-vă că protecția AdGuard este activată. Pe un computer Windows, bifați caseta **Utilizați AdGuard ca proxy HTTP** în tab-ul **Rețea** din setările acestuia. Pentru macOS, mergeți la **Setări** → **Preferințe** → **Rețea** și activați **proxy HTTP**.
 
-1. On the same computer with AdGuard, follow this link: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. Pe același computer cu AdGuard, urmați acest link: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-1. Click the **Download** button. If the download doesn’t start, try another browser, for example Firefox.
+1. Click the **Download** button. Dacă descărcarea nu începe, încercați un alt browser, de exemplu Firefox.
 
-1. Transfer the downloaded **cert.cer** file to the Windows device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
+1. Transferați fișierul descărcat **cert.cer** pe dispozitivul Windows ale cărui trafic doriți să direcționați prin AdGuard. Puteți utiliza un cablu USB, Bluetooth sau servicii de cloud pentru a face acest lucru.
 
-1. On that device, press **Win**, type `Manage computer certificates` and press **Enter**.
+1. Pe acel dispozitiv, apăsați **Win**, tastați `Gestionați certificatele computerului` și apăsați **Enter**.
 
-1. On the *Certificates — Local Computer* page, find the *Trusted Root Certification Authorities* → *Certificates* folder.
+1. Pe pagina *Certificate — Computer local*, găsiți folderul *Autorități de certificare rădăcină de încredere* → *Certificate*.
 
-1. Right-click the *Certificates* folder and click **All Tasks** → **Import**.
+1. Faceți clic dreapta pe folderul *Certificate* și faceți clic pe **Toate sarcinile** → **Importați**.
 
-1. On the *Certificate Import Wizard* page, click **Next**.
+1. Pe pagina *Asistent pentru importul certificatului*, faceți clic pe **Următorul**.
 
 1. Click **Browse** to import the certificate.
 
-1. Navigate to the **cert.cer** certificate file, select it, click **Open**, then **Next**.
+1. Navigați la fișierul certificat **cert.cer**, selectați-l, faceți clic pe **Deschis**, apoi **Următorul**.
 
-1. Select the **Place all certificates in the following store** checkbox.
+1. Selectați caseta de bifat **Plasați toate certificatele în următoarea unitate**.
 
 1. Make sure that the *Certificate store* field displays *Trusted Root Certification Authorities* and click **Next**.
 
-1. Click **Finish**.
+1. Faceți clic pe **Finalizați**.
 
-1. Press **Win**, then open **Settings**.
+1. Apăsați **Win**, apoi deschideți **Setări**.
 
-1. Select **Network & Internet** → **Proxy**.
+1. Selectați **Rețea & Internet** → **Proxy**.
 
 1. Toggle *Automatically detect settings* off.
 
 1. Click **Set up** in the *Use a proxy server* tab.
 
-1. Turn the toggle on. For **Proxy IP address**, type the IP address of your desktop computer that you noted in step 1. For **Port**, enter the port chosen in the network settings of the desktop AdGuard app.
+1. Activați comutatorul. Pentru **Adresa IP proxy**, tastați adresa IP a computerului dumneavoastră desktop pe care ați notat-o în pasul 1. Pentru **Port**, introduceți portul ales în setările rețelei aplicației AdGuard desktop.
 
-1. Click **Save**.
+1. Faceți clic pe **Salvați**.
 
-### Mac {#mac}
+### macOS {#mac}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. Rețineți adresa IP a computerului dumneavoastră desktop pe care este instalat AdGuard.
 
-1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. For Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
+1. Asigurați-vă că protecția AdGuard este activată. Pe un computer Windows, bifați caseta **Utilizați AdGuard ca proxy HTTP** în tab-ul **Rețea** din setările acestuia. Pentru macOS, mergeți la **Setări** → **Preferințe** → **Rețea** și activați **proxy HTTP**.
 
-1. Follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. Urmați acest link folosind un browser web: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-1. Click the **Download** button. If the download doesn’t start, try another browser, for example Firefox.
+1. Click the **Download** button. Dacă descărcarea nu începe, încercați un alt browser, de exemplu Firefox.
 
-1. Transfer the downloaded **cert.cer** file to the Mac device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
+1. Transfer the downloaded **cert.cer** file to the Mac device whose traffic you want to route through AdGuard. Puteți utiliza un cablu USB, Bluetooth sau servicii de cloud pentru a face acest lucru.
 
-1. Double-click the downloaded certificate file.
+1. Faceți dublu clic pe fișierul certificat descărcat.
 
 1. Enter the administrator password and then click **Modify Keychain**.
 
 1. Go to **Spotlight** (the search icon in the top right corner), type in `Keychain Access`, and then select **Keychain Access** from the search results.
 
-1. Under *System*, highlight the certificate that you added.
+1. Sub *Sistem*, evidențiați certificatul pe care l-ați adăugat.
 
-1. Right-click it and select **Get Info** from the context menu.
+1. Faceți clic dreapta pe el și selectați **Obțineți informații** din meniul contextual.
 
-1. Expand *Trust* to display the trust policies for the certificate.
+1. Extindeți *Încredere* pentru a afișa politicile de încredere pentru certificat.
 
-1. Under *Secure Sockets Layers (SSL)*, select **Always Trust**.
+1. Sub *Secure Sockets Layers (SSL)*, selectați **Încredere întotdeauna**.
 
-1. Open **System Preferences** → **Network** and select the active connection at the top.
+1. Deschideți **Preferințe de sistem** → **Rețea** și selectați conexiunea activă din partea de sus.
 
 1. Click **Details...** and navigate to the **Proxies** tab.
 
-1. Tick two checkboxes: *Web proxy (HTTP)* and *Secure web proxy (HTTPS)*. In the **Server** field, type the IP address of your computer that you noted in step 1. In the **Port** field, enter the port chosen in the network settings of the AdGuard desktop app.
+1. Bifați două casete: *Proxy web (HTTP)* și *Proxy web sigur (HTTPS)*. În câmpul **Server**, tastați adresa IP a computerului dumneavoastră pe care ați notat-o în pasul 1. În câmpul **Port**, introduceți portul ales în setările rețelei aplicației AdGuard desktop.
 
 ### Android {#android}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. Rețineți adresa IP a computerului dumneavoastră desktop pe care este instalat AdGuard.
 
-1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. For Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
+1. Asigurați-vă că protecția AdGuard este activată. Pe un computer Windows, bifați caseta **Utilizați AdGuard ca proxy HTTP** în tab-ul **Rețea** din setările acestuia. Pentru macOS, mergeți la **Setări** → **Preferințe** → **Rețea** și activați **proxy HTTP**.
 
-1. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. De pe computerul cu AdGuard, urmați acest link folosind un browser web: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-1. Click the **Download** button. If the download doesn’t start, try another browser, for example Firefox.
+1. Click the **Download** button. Dacă descărcarea nu începe, încercați un alt browser, de exemplu Firefox.
 
-1. Transfer the downloaded **cert.cer** file to the Android device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
+1. Transfer the downloaded **cert.cer** file to the Android device whose traffic you want to route through AdGuard. Puteți utiliza un cablu USB, Bluetooth sau servicii de cloud pentru a face acest lucru.
 
-1. Locate and tap the previously downloaded **cert.cer** certificate to open the file and follow the instructions to install the certificate.
+1. Găsiți și atingeți certificatul **cert.cer** descărcat anterior pentru a deschide fișierul și urmați instrucțiunile pentru a instala certificatul.
 
-1. Android devices do not trust certificates by default, so there will be a warning — you can ignore it. On some phones you may be asked to enter your device password. Do so, then press **OK**. The certificate will be installed.
+1. Dispozitivele Android nu au încredere în certificate în mod implicit, deci va apărea o avertizare — o puteți ignora. Pe unele telefoane, este posibil să vi se ceară să introduceți parola dispozitivului. Faceți acest lucru, apoi apăsați **OK**. Certificatul va fi instalat.
 
-1. Open advanced settings of the active Wi-Fi network.
+1. Deschideți setările avansate ale rețelei Wi-Fi active.
 
-1. Change the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your desktop computer you noted in step 1. For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
+1. Schimbați **Tipul proxy** în **Manual**. For **Proxy hostname**, enter the noted IP address of your desktop computer you noted in step 1. Pentru **Port proxy**, introduceți portul ales în setările rețelei aplicației AdGuard desktop.
 
 ### iOS {#ios}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. Rețineți adresa IP a computerului dumneavoastră desktop pe care este instalat AdGuard.
 
-1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. For Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
+1. Asigurați-vă că protecția AdGuard este activată. Pe un computer Windows, bifați caseta **Utilizați AdGuard ca proxy HTTP** în tab-ul **Rețea** din setările acestuia. Pentru macOS, mergeți la **Setări** → **Preferințe** → **Rețea** și activați **proxy HTTP**.
 
-1. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. De pe computerul cu AdGuard, urmați acest link folosind un browser web: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-1. Click the **Download** button. If the download doesn’t start, try another browser, for example Firefox.
+1. Click the **Download** button. Dacă descărcarea nu începe, încercați un alt browser, de exemplu Firefox.
 
-1. Transfer the downloaded **cert.cer** file to the iOS device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
+1. Transfer the downloaded **cert.cer** file to the iOS device whose traffic you want to route through AdGuard. Puteți utiliza un cablu USB, Bluetooth sau servicii de cloud pentru a face acest lucru.
 
-1. On your iOS device, open **Settings** → **Profile Downloaded** and tap **Install** in the top right corner. Enter your password and confirm the installation. Tap **Done**.
+1. Pe dispozitivul vostru iOS, deschideți **Setări** → **Profil descărcat** și atingeți **Instalați** în colțul din dreapta sus. Introduceți parola și confirmați instalarea. Tap **Done**.
 
-1. Go to **Settings** → **General** → **About** → **Certificate Trust Settings**. Enable the switch beside *Adguard Personal CA*. The certificate is now installed.
+1. Mergeți la **Setări** → **General** → **Despre** → **Setările de încredere a certificatului**. Activați comutatorul de lângă *Adguard Personal CA*. Certificatul este acum instalat.
 
-1. On that device, open advanced settings of the active Wi-Fi network.
+1. Pe acel dispozitiv, deschideți setările avansate ale rețelei Wi-Fi active.
 
-1. Change the **Proxy type** to **Manual**. For **Proxy hostname**, type the IP address of your computer you noted in step 1. For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
+1. Schimbați **Tipul proxy** în **Manual**. For **Proxy hostname**, type the IP address of your computer you noted in step 1. Pentru **Port proxy**, introduceți portul ales în setările rețelei aplicației AdGuard desktop.

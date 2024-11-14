@@ -69,7 +69,7 @@ This problem can be solved in 2 ways:
 
 Thanks to modern cryptography, browsers can usually detect malicious websites that are provisioned with forged or fake SSL certificates. However, current cryptographic mechanisms aren’t so good at detecting malicious websites if they’re provisioned with mistakenly issued certificates or certificates that have been issued by a certificate authority (CA) that’s been compromised or gone rogue. Certificate Transparency aims to remedy these certificate-based threats by making the issuance and existence of SSL certificates open to scrutiny by domain owners, CAs, and domain users.
 
-AdGuard products which use [CoreLibs](https://github.com/AdguardTeam/CoreLibs/) starting with version **1.11** will implement a policy based on [Chrome Certificate Transparency Policy](https://googlechrome.github.io/CertificateTransparency/ct_policy.html).
+Produsele AdGuard care folosesc [CoreLibs](https://github.com/AdguardTeam/CoreLibs/) începând cu versiunea **1.11** vor implementa o politică bazată pe [Politica de transparență a certificatelor Chrome](https://googlechrome.github.io/CertificateTransparency/ct_policy.html).
 
 ## Have remarks or suggestions?
 
