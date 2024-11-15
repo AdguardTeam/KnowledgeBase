@@ -2408,7 +2408,7 @@ Spaces and commas should also be URL-encoded, otherwise the rule won't match the
 
 :::
 
-Remember to escape special characters like `.` in the regular expressions. Use the `\' character to do this. For example, an escaped dot should look like this: `\.`.
+Remember to escape special characters like `.` in the regular expressions. Use the `\` character to do this. For example, an escaped dot should look like this: `\.`.
 
 :::note
 
