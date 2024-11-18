@@ -5,60 +5,60 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru iOS, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Safari protection
+## Protecție Safari
 
 Information on how to configure ad blocking and privacy in Safari using content blockers, filters, and user rules.
 
-[Safari protection](/adguard-for-ios/features/safari-protection.md)
+[Protecția Safari](/adguard-for-ios/features/safari-protection.md)
 
-## DNS protection
+## Protecție DNS
 
-This section describes how AdGuard for iOS allows you to configure secure DNS servers and block ads, trackers, and malicious content.
+Această secțiune descrie cum AdGuard pentru iOS permite configurarea serverelor DNS sigure și blocarea reclamelor, trackerelor și conținutului dăunător.
 
-[DNS protection](/adguard-for-ios/features/dns-protection/)
+[Protecția DNS](/adguard-for-ios/features/dns-protection/)
 
-## Advanced protection
+## Protecție avansată
 
-This article describes how to use CSS rules, CSS selectors, and scriptlets to deal with complex ads, such as YouTube ads.
+Acest articol descrie cum să utilizați reguli CSS, selecțori CSS și scripturi pentru a gestiona reclamele complexe, cum ar fi reclamele YouTube.
 
-[Advanced protection](/adguard-for-ios/features/advanced-protection.md)
+[Protecție avansată](/adguard-for-ios/features/advanced-protection.md)
 
-## Activity and statistics
+## Activitate și statistici
 
 This article describes the Statistics tab with detailed activity reports that allow you to monitor blocked ads, trackers, and DNS queries.
 
-[Activity and statistics](/adguard-for-ios/features/activity.md)
+[Activitate și statistici](/adguard-for-ios/features/activity.md)
 
-## Assistant
+## Asistent
 
-A tool that helps you manage filtering in Safari right from the browser without switching back to the app.
+O unealtă care vă ajută să gestionați filtrarea în Safari direct din browser fără a reveni la aplicație.
 
-[Assistant](/adguard-for-ios/features/assistant.md)
+[Asistent](/adguard-for-ios/features/assistant.md)
 
-## Low-level settings
+## Setări la nivel scăzut
 
 Low-level settings allow advanced users to fine-tune app performance, customize ad blocking, and adjust DNS protection for greater control over their privacy and security.
 
-[Low-level settings](/adguard-for-ios/features/low-level-settings.md)
+[Setări de bază](/adguard-for-ios/features/low-level-settings.md)
 
-## Other features
+## Alte caracteristici
 
-The article describes additional features, including widgets, auto-updates, and statistics reset, as well as how to contact support.
+Articolul descrie caracteristici suplimentare, inclusiv widget-uri, actualizări automate și resetarea statisticilor, precum și modul de contactare a suportului.
 
-[Other features](/adguard-for-ios/features/other-features.md)
+[Alte caracteristici](/adguard-for-ios/features/other-features.md)
 
-## Compatibility with AdGuard VPN
+## Modul de compatibilitate cu AdGuard VPN
 
-Information on how the app integrates with VPN services, allowing you to run both AdGuard and AdGuard VPN at the same time without conflict, ensuring ad blocking and privacy protection along with VPN functionality.
+Informații despre modul în care aplicația se integrează cu serviciile VPN, permițându-vă să rulați atât AdGuard cât și AdGuard VPN în același timp fără conflicte, asigurând blocarea reclamelor și protecția vieții private împreună cu funcționalitatea VPN.
 
-[Compatibility with AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
+[Compatibilitate cu AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 
-## Free vs. full version
+## Versiune gratuită vs. versiune completă
 
 Comparison of features between the free and paid versions.
 
-[Free vs. full version](/adguard-for-ios/features/free-vs-full.md)
+[Versiunea gratuită vs. versiunea completă](/adguard-for-ios/features/free-vs-full.md)

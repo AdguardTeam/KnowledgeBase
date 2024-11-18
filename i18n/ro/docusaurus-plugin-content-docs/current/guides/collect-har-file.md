@@ -3,78 +3,78 @@ title: How to generate a HAR file
 sidebar_position: 1
 ---
 
-HAR files help our technical support teams troubleshoot complex issues. To create these files, we recommend using Chrome or Firefox. However, IE 11, Edge, and Safari also provide `.har` file generation and export capability.
+Fișierele HAR ajută echipele noastre de suport tehnic să rezolve probleme complexe. Pentru a crea aceste fișiere, recomandăm utilizarea Chrome sau Firefox. Cu toate acestea, IE 11, Edge și Safari oferă de asemenea capacitatea de generare și export a fișierelor `.har`.
 
 ## Chrome {#chrome}
 
-To create a HAR file in Chrome, follow these steps:
+Pentru a crea un fișier HAR în Chrome, urmați acești pași:
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Accesați URL-ul unde apare problema. Nu reproduceți încă problema.
 
-1. Open **Developer Tools**:
+1. Deschideți **Instrumentele pentru dezvoltatori**:
 
-    - From menu: **Menu → More Tools → Developer Tools**.
-    - Keyboard: **Ctrl+Shift+C**, or **Ctrl+Alt+I**, or **⌥+⌘+I for Mac**.
+    - Din meniu: **Meniu → Instrumente suplimentare → Instrumente pentru dezvoltatori**.
+    - Tastatură: **Ctrl+Shift+C**, sau **Ctrl+Alt+I**, sau **⌥+⌘+I pentru Mac**.
 
 1. Click the **Network tab**.
 
-1. Locate the round button at the top left of the Network tab and confirm it is in red recording mode. If it's grey, click to turn red to start recording.
+1. Localizați butonul rotund din colțul din stânga sus al tabului Rețea și confirmați că este în modul de înregistrare roșu. Dacă este gri, faceți clic pentru a deveni roșu pentru a începe înregistrarea.
 
-1. Use the **Clear** button (the circle button with a line through it next to the record button) to clear all previous activity.
+1. Utilizați butonul **Ștergeți** (butonul cerc cu o linie prin el lângă butonul de înregistrare) pentru a curăța toată activitatea anterioară.
 
-1. Select the **Preserve log** check box on the Network tab.
+1. Selectați caseta de bifat **Păstrează jurnalul** pe tab-ul Rețea.
 
 1. Check the **Disable cache** check box.
 
     ![Chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
-1. Reproduce the steps that create the issue.
+1. Reproduceți pașii care creează problema.
 
-1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
+1. Salvați sesiunea ca fișier .har făcând clic dreapta pe grilă și selectând **Salvați ca HAR cu conținut**.
 
-1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Trimiteți-l echipei de suport AdGuard (support@adguard.com) cu o explicație detaliată a problemei. Capturile de ecran de suport pot fi de ajutor, de asemenea.
 
 ## Edge {#edge}
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Accesați URL-ul unde apare problema. Nu reproduceți încă problema.
 
-1. Open **Developer Tools**:
+1. Deschideți **Instrumentele pentru dezvoltatori**:
 
-    - From menu: **Menu → More Tools → Developer Tools**.
-    - Keyboard: **Ctrl+Shift+C**, or **Ctrl+Alt+I**, or **⌥+⌘+I for Mac**.
+    - Din meniu: **Meniu → Instrumente suplimentare → Instrumente pentru dezvoltatori**.
+    - Tastatură: **Ctrl+Shift+C**, sau **Ctrl+Alt+I**, sau **⌥+⌘+I pentru Mac**.
 
 1. Click the **Network tab**.
 
-1. Locate the round button at the top left of the Network tab and confirm it is in red recording mode. If it's grey, click to turn red to start recording.
+1. Localizați butonul rotund din colțul din stânga sus al tabului Rețea și confirmați că este în modul de înregistrare roșu. Dacă este gri, faceți clic pentru a deveni roșu pentru a începe înregistrarea.
 
-1. Use the **Clear** button (the circle button with a line through it next to the record button) to clear all previous activity.
+1. Utilizați butonul **Ștergeți** (butonul cerc cu o linie prin el lângă butonul de înregistrare) pentru a curăța toată activitatea anterioară.
 
-1. Select the **Preserve log** check box on the Network tab.
+1. Selectați caseta de bifat **Păstrează jurnalul** pe tab-ul Rețea.
 
 1. Check the **Disable cache** check box.
 
     ![edge](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
 
-1. Reproduce the steps that create the issue.
+1. Reproduceți pașii care creează problema.
 
-1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
+1. Salvați sesiunea ca fișier .har făcând clic dreapta pe grilă și selectând **Salvați ca HAR cu conținut**.
 
-1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Trimiteți-l echipei de suport AdGuard (support@adguard.com) cu o explicație detaliată a problemei. Capturile de ecran de suport pot fi de ajutor, de asemenea.
 
 ## Firefox {#firefox}
 
-To create a HAR file in Firefox, follow these steps:
+Pentru a crea un fișier HAR în Firefox, urmați acești pași:
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Accesați URL-ul unde apare problema. Nu reproduceți încă problema.
 
-1. Open Developer Tools in **Network** mode:
+1. Deschideți Instrumentele pentru dezvoltatori în modul **Rețea**:
 
-    - From menu: **Menu → Web Developer → Network**.
-    - Keyboard: **Ctrl+Shift+C**, or **⌥+⌘+E (Mac)**.
+    - Din meniu: **Meniu → Dezvoltator web → Rețea**.
+    - Tastatură: **Ctrl+Shift+C**, sau **⌥+⌘+E (Mac)**.
 
-1. Note the **Play/Pause** button at the top left of the Network tab.
+1. Observați butonul **Redare/Pauză** din colțul din stânga sus al tabului Rețea.
 
-    - Button should be in play mode.
+    - Butonul ar trebui să fie în modul redare.
 
 1. If any information is currently displayed in the grid, clear by clicking the **Empty trash can** button next to the play/pause button.
 
@@ -84,38 +84,38 @@ To create a HAR file in Firefox, follow these steps:
 
     ![firefox](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
 
-1. Reproduce the steps that create the issue.
+1. Reproduceți pașii care creează problema.
 
-1. Save session as a .har file by right-clicking the grid and selecting **Save all as HAR**.
+1. Salvați sesiunea ca fișier .har făcând clic dreapta pe grilă și selectând **Salvați tot ca HAR**.
 
-1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Trimiteți-l echipei de suport AdGuard (support@adguard.com) cu o explicație detaliată a problemei. Capturile de ecran de suport pot fi de ajutor, de asemenea.
 
 ## Internet Explorer 11 {#ie11}
 
 To create a HAR file in Internet Explorer 11, follow these steps:
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Accesați URL-ul unde apare problema. Nu reproduceți încă problema.
 
-1. Open Developer Tools in **Network** mode:
+1. Deschideți Instrumentele pentru dezvoltatori în modul **Rețea**:
 
-    - From Tools cog wheel menu: **Developer Tools** → **Network tab**.
+    - Din meniul rotiță de unelte: **Instrumentele pentru dezvoltatori** → **Tabul rețea**.
     - Keyboard: **F12 → Network** tab.
 
-1. Note the start profiling session **Play** button and stop profiling **Stop** button at top left of Network tab.
+1. Observați butonul de începere a sesiunii de profilare **Redare** și butonul de oprire a profilării **Oprire** din colțul din stânga sus al tabului Rețea.
 
-    - Play button will be gray when recording and Stop button will be red. Put in **Play** mode.
+    - Butonul de redare va fi gri când înregistrează, iar butonul de oprire va fi roșu. Introduceți în modul **Redare**.
 
-1. Clear any session info appearing in the lower grid using the **Clear session** button on Network tab. Hover over icons to see names.
+1. Ștergeți orice informație de sesiune care apare în grila inferioară folosind butonul **Ștergeți sesiunea** de pe tabul Rețea. Puneți cursorul peste icoane pentru a vedea numele.
 
     - **Clear session** button is a three line icon with an x on it.
 
 1. Check the **Disable cache** check box.
 
-1. Reproduce the steps that create the issue.
+1. Reproduceți pașii care creează problema.
 
 1. Save session as a .har file by clicking the **Save to disk** button (Export as HAR) on Network tab.
 
-1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Trimiteți-l echipei de suport AdGuard (support@adguard.com) cu o explicație detaliată a problemei. Capturile de ecran de suport pot fi de ajutor, de asemenea.
 
 ## Safari {#safari}
 
@@ -123,58 +123,58 @@ To create a HAR file in Safari, follow these steps:
 
 1. Check the Safari menu bar at the top of the screen for a **Develop** menu.
 
-    - If not visible, turn it on by going to **Safari → Settings → Advanced**.
+    - Dacă nu este vizibil, activați-l mergând la **Safari → Setări → Avansat**.
     - Check the checkbox at the bottom next to **Show Develop menu in menu bar**.
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Accesați URL-ul unde apare problema. Nu reproduceți încă problema.
 
-1. Open **Network** tab in Web Inspector:
+1. Deschideți tabul **Rețea** în Inspectorul web:
 
-    - From menu: **Develop → Show Web Inspector → Network**.
+    - Din meniu: **Dezvoltare → Afișați Inspector web → Rețea**.
     - Keyboard: **⌥+⌘+I → Network**
 
-1. Check **Preserve Log** checkbox on left side of the Network tabs, within the **Other filter options...** menu.
+1. Verificați caseta de bifat **Păstrează jurnalul** pe partea stângă a tab-urilor de rețea, în meniul **Alte opțiuni de filtrare...**.
 
     ![safari](https://cdn.adtidy.org/content/kb/ad_blocker/safari/preserve-log.png)
 
 1. Clear current Network items by clicking the **Delete Trash** icon at the far right of Network tabs.
 
-    - Keyboard: **⌘+K**
+    - Tastatură: **⌘+K**
 
 1. Check the **Disable caches** check box.
 
-1. Reproduce the steps that create the issue.
+1. Reproduceți pașii care creează problema.
 
-1. Save session as a .har file by clicking the **Export** icon next to the **Delete Trash** icon.
+1. Salvați sesiunea ca fișier .har făcând clic pe iconița **Exportare** de lângă iconița **Ștergeți coșul de gunoi**.
 
-1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
+1. Trimiteți-l echipei de suport AdGuard (support@adguard.com) cu o explicație detaliată a problemei. Capturile de ecran de suport pot fi de ajutor, de asemenea.
 
 ## Android {#android}
 
-To create HAR files, follow these steps:
+Pentru a crea fișiere HAR, urmați acești pași:
 
-1. Open AdGuard and go to **Settings**.
+1. Deschideți AdGuard și mergeți la **Setări**.
 
-1. Choose **Advanced** in the menu.
+1. Alegeți **Avansat** în meniu.
 
-1. Choose **Low Level Settings**
+1. Alegeți **Setări de nivel scăzut**
 
-1. Activate `pref.har.capture` (you will have to restart the protection).
+1. Activați `pref.har.capture` (va trebui să reporniți protecția).
 
-1. Now reproduce the problem — open the app, perform the necessary actions to make the ad appear.
+1. Acum reproduceți problema — deschideți aplicația, efectuați acțiunile necesare pentru a face reclama să apară.
 
-1. Now turn `pref.har.capture` off again.
+1. Acum dezactivați `pref.har.capture` din nou.
 
-1. Go back and tap **Export logs and system info** → **Save**.
+1. Întoarceți-vă și atingeți **Exportați jurnalele și informațiile sistemului** → **Salvați**.
 
 ## Windows {#windows}
 
-1. Open **Settings*** → **General settings** → **Advanced settings** and scroll down.
+1. Deschideți **Setări*** → **Setări generale** → **Setări avansate** și derulați în jos.
 
 1. Check the **Enable HAR writing** box.
 
-1. Reproduce the problem.
+1. Reproduceți problema.
 
-1. Go to **General settings** → Click **Export logs** → **Save**.
+1. Mergeți la **Setări generale** → Faceți clic pe **Exportați jurnalele** → **Salvați**.
 
-1. Disable HAR writing by unchecking the corresponding box.
+1. Dezactivați scrierea HAR debifând caseta corespunzătoare.

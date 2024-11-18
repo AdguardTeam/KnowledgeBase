@@ -5,54 +5,54 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Android, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Protection
+## Protecție
 
 Info on modules in the Protection tab: Ad blocking, Tracking protection, Annoyance blocking, DNS protection, Firewall, and Browsing security.
 
-[Protection](/adguard-for-android/features/protection/protection.md)
+[Protecție](/adguard-for-android/features/protection/protection.md)
 
-## App management
+## Gestionarea aplicațiilor
 
 AdGuard for Android offers app management features that allow you to control how AdGuard filters traffic for individual apps, providing options to block ads and trackers or disable protection for selected apps altogether.
 
 [App management](/adguard-for-android/features/app-management.md)
 
-## Statistics
+## Statistici
 
-Detailed statistics on blocked ads, trackers, and saved traffic that allows us to monitor the app’s performance and protection efficiency over time.
+Statistici detaliate despre reclamele blocate, trackere și traficul salvat, care ne permit să monitorizăm performanța aplicației și eficiența protecției în timp.
 
-[Statistics](/adguard-for-android/features/statistics.md)
+[Statistici](/adguard-for-android/features/statistics.md)
 
-## Settings
+## Setări
 
-Information about customizing settings so you can adjust ad blocking, privacy, and DNS settings to suit your needs.
+Informații despre personalizarea setărilor astfel încât să puteți ajusta blocarea reclamelor, intimitatea și setările DNS pentru a se potrivi nevoilor dumneavoastră.
 
-[Settings](/adguard-for-android/features/settings.md)
+[Setări](/adguard-for-android/features/settings.md)
 
-## Assistant
+## Asistent
 
-Information about a tool that lets you quickly change app or website settings and view statistics without opening the AdGuard interface.
+Informații despre un instrument care vă permite să schimbați rapid setările aplicației sau ale site-ului și să vizualizați statistici fără a deschide interfața AdGuard.
 
-[Assistant](/adguard-for-android/features/assistant.md)
+[Asistent](/adguard-for-android/features/assistant.md)
 
-## Free vs. full version
+## Versiune gratuită vs. versiune completă
 
 Comparison of features between the free and paid versions.
 
-[Free vs. full version](/adguard-for-android/features/free-vs-full.mdx)
+[Versiunea gratuită vs. versiunea completă](/adguard-for-android/features/free-vs-full.mdx)
 
-## Integration with AdGuard VPN
+## Integrare cu AdGuard VPN
 
-Information on how the app integrates with VPN services, allowing you to run both AdGuard and AdGuard VPN at the same time without conflict, ensuring ad blocking and privacy protection along with VPN functionality.
+Informații despre modul în care aplicația se integrează cu serviciile VPN, permițându-vă să rulați atât AdGuard cât și AdGuard VPN în același timp fără conflicte, asigurând blocarea reclamelor și protecția vieții private împreună cu funcționalitatea VPN.
 
-[Integration with AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
+[Integrarea cu AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
 
-## Rooted devices
+## Dispozitive cu acces root
 
-AdGuard for Android on rooted devices offers advanced features like HTTPS filtering without a certificate installation, automatic ad blocking in apps, and deeper system-wide protection.
+AdGuard pentru Android pe dispozitivele cu root oferă funcții avansate precum filtrarea HTTPS fără instalarea unui certificat, blocarea automată a reclamelor în aplicații și protecție profundă la nivel de sistem.
 
-[Rooted devices](/adguard-for-android/features/rooted.md)
+[Dispozitive rootate](/adguard-for-android/features/rooted.md)

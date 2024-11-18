@@ -1,16 +1,16 @@
 ---
-title: How to install AdGuard on macOS High Sierra and above
+title: Cum să instalați AdGuard pe macOS High Sierra și versiuni ulterioare
 sidebar_position: 3
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru macOS, un blocant de reclame multifuncțional care protejează dispozitivul tău la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-During the installation of AdGuard on macOS High Sierra (or later), you may see this message: "System Extension Blocked". This is a new security mechanism that appeared in High Sierra, it requires you to explicitly allow the installation of a third-party system extension. To complete the installation of AdGuard you have to manually allow loading the extension in *System Preferences* → *Security & Privacy* → *General*.
+În timpul instalării AdGuard pe macOS High Sierra (sau mai recent), este posibil să vedeți acest mesaj: "Extensie de sistem blocată". Acesta este un nou mecanism de securitate care a apărut în High Sierra, și necesită să permiteți explicit instalarea unei extensii de sistem de la terți. To complete the installation of AdGuard you have to manually allow loading the extension in *System Preferences* → *Security & Privacy* → *General*.
 
-![Allow extension installation in settings](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/highsierra.png)
+![Permite instalarea extensiilor în setări](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/highsierra.png)
 
-Click the "Allow" button, and after that you will be able to proceed with the installation as normal.
+Faceți clic pe butonul "Permite", iar după aceea veți putea continua cu instalarea ca de obicei.

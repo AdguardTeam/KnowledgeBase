@@ -5,48 +5,48 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Android, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-The Firewall module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Firewall_.
+Modulul Firewall poate fi accesat atingând fila _Protecție_ (a doua iconiță din stânga, jos pe ecran) și apoi selectând _Firewall_.
 
-This feature helps manage Internet access for specific apps installed on your device and for the device in general.
+Această funcție ajută la gestionarea accesului la Internet pentru aplicațiile specifice instalate pe dispozitivul dumneavoastră și pentru dispozitiv în general.
 
 ![Firewall \*mobile\_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
-### Global firewall rules
+### Reguli globale de firewall
 
-This section allows you to control Internet access for the entire device.
+Această secțiune vă permite să controlați accesul la Internet pentru întregul dispozitiv.
 
-![Global firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
+![Reguli globale de firewall \*mobile\_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
 
-These rules apply to all apps on your device unless you've set custom rules for them.
+Aceste reguli se aplică tuturor aplicațiilor de pe dispozitivul dumneavoastră, cu excepția cazului în care ați stabilit reguli personalizate pentru acestea.
 
-### Custom firewall rules
+### Reguli de firewall personalizate
 
-In this section, you can control Internet access for specific apps — restrict permissions for those that you don’t find trustworthy, or, on the contrary, unblock the ones you want to circumvent the global firewall rules.
+În această secțiune, puteți controla accesul la Internet pentru aplicații specifice — restricționați permisiunile pentru cele pe care nu le considerați de încredere sau, dimpotrivă, deblocați-le pe cele pe care doriți să le ocoliți regulile globale de firewall.
 
-1. Open _Custom firewall rules_. Under _Apps with custom rules_, tap _Add app_.
+1. Deschideți _Reguli de firewall personalizate_. Sub _Aplicații cu reguli personalizate_, atingeți _Adăugați aplicație_.
 
-   ![Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+   ![Reguli de firewall personalizate \*mobile\_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
-2. Select the app for which you want to set individual rules.
+2. Selectați aplicația pentru care doriți să stabiliți reguli individuale.
 
-   ![Adding an app to Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+   ![Adăugarea unei aplicații la regulile de firewall personalizate \*mobile\_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
-3. In _Available custom rules_, select the ones you want to configure and tap the “+” icon. The rules will now appear in _Applied custom rules_.
+3. În _Reguli personalizate disponibile_, selectați cele pe care doriți să le configurați și atingeți iconița “+”. Regulile vor apărea acum în _Reguli personalizate aplicate_.
 
-   ![Added rule \*mobile\_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+   ![Regulă adăugată \*mobile\_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
-4. If you need to block a specific type of connection, toggle the switch to the left. If you want to allow it, leave the switch enabled. **Custom rules override global ones**: any changes you make in _Global firewall rules_ will not affect this app.
+4. Dacă trebuie să blocați un tip specific de conexiune, comutați butonul spre stânga. Dacă doriți să permiteți conexiunea, lăsați butonul activat. **Regulile personalizate suprascriu regulile globale**: orice modificări pe care le faceți în _Reguli globale de firewall_ nu vor afecta această aplicație.
 
-To delete a rule or app from _Custom rules_, swipe it to the left.
+Pentru a șterge o regulă sau o aplicație din _Reguli personalizate_, glisați spre stânga.
 
-### Notifications
+### Notificări
 
-If enabled, this feature notifies you when an app is attempting to violate an applicable firewall rule, e.g. attempts to access mobile data from which it is blocked. You can turn notifications on and off for all apps or for each app separately.
+Dacă este activat, această funcție vă notifică atunci când o aplicație încearcă să încalce o regulă de firewall aplicabilă, de exemplu, încercări de a accesa date mobile de la care este blocată. Puteți activa și dezactiva notificările pentru toate aplicațiile sau pentru fiecare aplicație în parte.
 
 Tap the notification to access the app’s Firewall settings, or temporary disable all Firewall rules for that app by tapping the corresponding button in the notification. You can also mute all Firewall notifications for the app by tapping the _Mute_ button in the notification for that app.
 
-Note that if notifications for multiple apps would be displayed, they will be bundled into a single notification instead.
+Rețineți că dacă notificările pentru mai multe aplicații ar fi afișate, acestea vor fi grupate într-o singură notificare.

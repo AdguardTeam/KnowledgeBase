@@ -21,11 +21,11 @@ Here's how to do that.
 
 1. Open *AdGuard → Settings → Filtering → Network → HTTPS filtering → Security certificates*.
 
-1. If you don't have any certificate yet, **install the AdGuard Personal CA into the user store**. This will allow AdGuard to filter HTTPS traffic in browsers.
+1. Wenn Sie noch kein Zertifikat haben, **installieren Sie die AdGuard Personal CA in den Benutzerspeicher**. Dies ermöglicht es AdGuard, HTTPS-Verkehr in Browsern zu filtern.
 
-1. **Install the AdGuard Intermediate CA into the user store**. You'll need it to run the adguardcert Magisk module that allows you to move certificates to the system store.
+1. **Installieren Sie die AdGuard Intermediate CA in den Benutzerspeicher**. You'll need it to run the adguardcert Magisk module that allows you to move certificates to the system store.
 
-    ![Install the certificate *mobile_border](https://cdn.adtidy.org/blog/new/asx1xksecurity_certificates.png)
+    ![Zertifikat installieren *mobile_border](https://cdn.adtidy.org/blog/new/asx1xksecurity_certificates.png)
 
 1. Install the [latest release of the **adguardcert** Magisk module](https://github.com/AdguardTeam/adguardcert/releases/latest/).
 
@@ -43,10 +43,10 @@ Here's how to do that.
 
 After the transfer, the **AdGuard Personal CA** in the system store will allow you to filter HTTPS traffic in apps, while the **AdGuard Intermediate CA** in the user store will allow you to filter HTTPS traffic in Chromium-based browsers (see below why).
 
-## Known issues with Chrome and Chromium-based browsers
+## Bekannte Probleme mit Chrome und Chromium-basierten Browsern
 
-Chrome and other Chromium-based browsers require Certificate Transparency (CT) logs for certificates located in the system store. CT logs don't contain information about certificates issued by HTTPS-filtering apps. Therefore, AdGuard requires an additional certificate in the user store to filter HTTPS traffic in these browsers.
+Chrome und andere Chromium-basierte Browser erfordern Certificate Transparency (CT)-Protokolle für Zertifikate, die sich im Systemspeicher befinden. Die CT-Protokolle enthalten keine Informationen über Zertifikate, die von Anwendungen zur HTTPS-Filterung ausgestellt wurden. Daher benötigt AdGuard ein zusätzliches Zertifikat im Benutzerspeicher, um den HTTPS-Verkehr in diesen Browsern zu filtern.
 
 ### Bromit-Browser
 
-In addition to the above issue, Bromite doesn't trust certificates in the user store by default. To filter HTTPS traffic there, open Bromite, go to `chrome://flags`, and set *Allow user certificates* to *Enabled*. **This applies to both rooted and non-rooted devices**.
+Zusätzlich zu dem oben genannten Problem vertraut Bromite den Zertifikaten im Benutzerspeicher standardmäßig nicht. To filter HTTPS traffic there, open Bromite, go to `chrome://flags`, and set *Allow user certificates* to *Enabled*. **Dies gilt sowohl für gerootete als auch für nicht gerootete Geräte**.

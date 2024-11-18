@@ -1,5 +1,5 @@
 ---
-title: Advanced Settings guide
+title: Gelişmiş Ayarlar kılavuzu
 sidebar_position: 9
 ---
 
@@ -25,25 +25,25 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 #### `network.extension.exclude.domains`
 
-The listed domains will be excluded from filtering in the *Network Extension* mode. Değerleri ayırmak için virgül veya satır sonu kullanın.
+Listelenen alan adları *Ağ Uzantısı* modunda filtrelemeden hariç tutulacaktır. Değerleri ayırmak için virgül veya satır sonu kullanın.
 
 #### `network.extension.exclude.ports`
 
-The listed ports will be excluded from filtering in the *Network Extension* mode. Değerleri ayırmak için virgül veya satır sonu kullanın.
+Listelenen bağlantı noktaları *Ağ Uzantısı* modunda filtrelemeden hariç tutulacaktır. Değerleri ayırmak için virgül veya satır sonu kullanın.
 
 #### `network.extension.route.exclude`
 
-The listed routes will be excluded from filtering in the *Network Extension* mode. Set routes using an IP address or destination CIDR. Separate values with commas or line breaks.
+Listelenen yönlendirmeler *Ağ Uzantısı* modunda filtrelemeden hariç tutulacaktır. Set routes using an IP address or destination CIDR. Değerleri virgülle veya satır sonlarıyla ayırın.
 
 #### `network.extension.http.downgrade.bundleids`
 
-Here you can specify a list of applications for which the HTTP/2 protocol will be downgraded to HTTP/1.1 in the *Network Extension* filtering mode. The bundle ID should be separated by a comma or a line break.
+Here you can specify a list of applications for which the HTTP/2 protocol will be downgraded to HTTP/1.1 in the *Network Extension* filtering mode. Paket kimliği virgül veya satır sonuyla ayrılmalıdır.
 
 #### `network.extension.monterey.force.split.tunnel`
 
 Here you can prohibit AdGuard from using the "default route" which is enabled by default in the *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, as it cannot operate in unison with them.
 
-You will find more information about the problem [in this article](../icloud-private-relay).
+Sorun hakkında daha fazla bilgiyi [bu makalede](../icloud-private-relay) bulabilirsiniz.
 
 #### `network.extension.dns.redirect.exclude.bundleids`
 

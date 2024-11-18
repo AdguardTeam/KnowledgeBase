@@ -49,7 +49,7 @@ Benutzerregeln und Regeln für die Freigabeliste sind in jeder Erweiterung entha
 
 ## AdGuard für Safari
 
-*AdGuard für Safari aktiviert das AdGuard-Symbol neben der Suchleiste. Dies ist nützlich, wenn Sie schnell einen Schutz für eine bestimmte Website einrichten oder Werbung manuell sperren möchten. Sie enthält zudem erweiterte Regeln, die nicht in das von Safari unterstützte Format konvertiert werden. These include [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), which allow AdGuard to block complex ads, such as those on YouTube.
+*AdGuard für Safari aktiviert das AdGuard-Symbol neben der Suchleiste. Dies ist nützlich, wenn Sie schnell einen Schutz für eine bestimmte Website einrichten oder Werbung manuell sperren möchten. Sie enthält zudem erweiterte Regeln, die nicht in das von Safari unterstützte Format konvertiert werden. Dazu gehören [CSS-Regeln](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [erweiterte CSS-Selektoren](/general/ad-filtering/create-own-filters#extended-css-selectors) und [Scriptlets](/general/ad-filtering/create-own-filters#scriptlets), die es AdGuard ermöglichen, komplexe Werbung, z. B. auf YouTube, zu sperren.
 
 ## So verwalten Sie Safari-Erweiterungen
 
