@@ -205,7 +205,7 @@ GM_log
 
 ## Userstyles
 
-Userstyles allow users to customize their online experience. Whether you’re looking to change the appearance of a website or automate repetitive tasks, styles offer a world of possibilities.
+Userstyles allow users to change the appearance of popular websites.
 
 AdGuard has the option to upload or create your own userstyles. This is an advanced feature, so you will need some knowledge of HTML and CSS.
 
@@ -231,7 +231,7 @@ You can download userstyles from various websites. One of the most popular users
 
 1. Done!
 
-If you’re familiar with CSS rules, you can also create the userstyles yourself.
+If you’re familiar with CSS rules, you can also create userstyles yourself.
 
 :::note
 
