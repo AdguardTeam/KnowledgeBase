@@ -223,7 +223,7 @@ You can download userstyles from various websites. One of the most popular users
 
 1. Follow the link above and choose the userstyle you like
 
-1. Right-click the *Install* button and choose *Copy Link Address*
+1. Click *Copy* next to the userstyle address
 
 1. Open AdGuard settings → *Extensions*
 
