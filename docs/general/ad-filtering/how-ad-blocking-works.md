@@ -97,7 +97,6 @@ Tracking protection feature with protection level set to *High* enables AdGuard 
 `https://www.gog.com/game/spec_ops_the_line`
 
 > Please note that *Modified* events you see in the Filtering log or Recent activity do not refer only to the cases when a request is modified, but also when:
-> 
+>
 > - something on the page is changed (usually by cosmetic rules)
 > - the response is modified
->
