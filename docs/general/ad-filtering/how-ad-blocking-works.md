@@ -69,7 +69,7 @@ AdGuard handles requests according to filters, user rules and settings enabled b
 
 A detailed information about how each request was handled by your AdGuard can be found in the *Filtering log* (AdGuard for Windows, AdGuard for Mac, AdGuard Browser extension) or *Recent activity* (AdGuard for iOS, AdGuard for Android).
 
-Regarding AdGuard filters, you can also check [our filter policy](filter-policy.md), which describes in detail what and why each of our filters blocks.
+Regarding AdGuard filters, you can also check [our filter policy](../filter-policy), which describes in detail what and why each of our filters blocks.
 
 ### Blocked requests examples
 
@@ -99,3 +99,4 @@ Tracking protection feature with protection level set to *High* enables AdGuard 
 > Please note that *Modified* events you see in the Filtering log or Recent activity do not refer only to the cases when a request is modified, but also when: 
 > - something on the page is changed (usually by cosmetic rules)
 > - the response is modified
+>
