@@ -24,7 +24,9 @@ If required, enter your admin password.
 Press `y` to create a link in `/usr/local/bin` to the executable and wait until the installation is complete.
 
 :::note
+
 You can verify the signature to prove it’s an official version of AdGuard by using the `gpg` tool. [Read more on GitHub](https://github.com/AdguardTeam/AdGuardCLI?tab=readme-ov-file#verify-releases)
+
 :::
 
 ## Activate license

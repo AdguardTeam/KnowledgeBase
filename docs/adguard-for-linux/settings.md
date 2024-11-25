@@ -53,5 +53,5 @@ Use the `filters` command to configure AdGuard for Linux. Subcommands:
     - `--all`: View all filters
 - `install`: Install a filter. Enter the URL of the filter you want to install
 - `enable`: Enable a filter. Enter the name or ID of the filter
-- `disable`: Disable a filter. Enter the filter name or ID
+- `disable`: Disable a filter. Enter the name or ID of the filter
 - `update`: Update filters

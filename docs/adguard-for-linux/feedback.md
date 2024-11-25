@@ -8,10 +8,12 @@ sidebar_position: 4
 If you’ve found a bug in AdGuard for Linux or would like to suggest a new feature, here’s how to do it:
 
 - Fill out the [feedback form](https://surveys.adguard.com/en/adguard_linux/form.html).
-- [Create a GitHub issue](https://github.com/AdguardTeam/AdGuardCLI/issues/new/choose). But before you do, check the [repository](https://github.com/AdguardTeam/AdGuardCLI/issues?q=is%3Aissue) for similar issues.
+- Create a [GitHub issue](https://github.com/AdguardTeam/AdGuardCLI/issues/new/choose). But before you do, check the [repository](https://github.com/AdguardTeam/AdGuardCLI/issues?q=is%3Aissue) for similar issues.
 
 :::note
+
 If you want to support the implementation of a new feature or bugfix, you can vote for it on GitHub. To vote, just react with some emoji.
+
 :::
 
 ## Collect and send logs
