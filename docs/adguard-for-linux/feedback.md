@@ -7,7 +7,7 @@ sidebar_position: 4
 
 If you’ve found a bug in AdGuard for Linux or want to suggest a new feature, here’s how to do it:
 
-- Fill out the [feedback form](https://surveys.adguard.com/en/adguard_linux/form.html)
+- Fill out the [feedback form](https://surveys.adguard.com/en/adguard_linux/form.html).
 - [Create a GitHub issue](https://github.com/AdguardTeam/AdGuardCLI/issues/new/choose). But before you do, check the [repository](https://github.com/AdguardTeam/AdGuardCLI/issues?q=is%3Aissue) for similar issues.
 
 :::note
