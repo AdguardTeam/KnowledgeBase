@@ -31,7 +31,7 @@ And even when a rule finally gets added to a filter, it doesn't mean that it sta
 
 AdGuard users [have access to a special web reporting tool](https://reports.adguard.com/new_issue.html). Thanks to user complaints, filter developers can focus on correcting their filter lists and not on scouring the Internet for new and old unblocked ads.
 
-Filters can do more than just block ads. There are filters that block tracking, social media widgets, and annoyances such as cookie notices. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
+Filters can do more than just block ads. There are filters that block tracking, social media widgets, and annoyances, such as cookie notices. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
 
 We develop and maintain [our own set of filter lists](../adguard-filters) that can be used with AdGuard or other ad blockers.
 
@@ -79,7 +79,7 @@ AdGuard Tracking Protection filter blocks tracking requests, such as `youtube.co
 
 ### Examples of allowed requests
 
-AdGuard Base filter allows non-ad requests such as `www.google.com/complete/search?q=`.
+AdGuard Base filter allows non-ad requests, such as `www.google.com/complete/search?q=`.
 
 Filter unblocking search ads and self-promotion allows requests to search ad-related domains, such as `www.google.com/aclk?`.
 
