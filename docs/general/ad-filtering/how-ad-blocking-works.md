@@ -67,17 +67,17 @@ There are other types of filtering rules, but they require more advanced technic
 
 AdGuard handles requests according to filters, user rules and settings enabled by the user. As a result, a request can be blocked, modified, allowed or, when nothing is done to it, just processed.
 
-A detailed information about how each request was handled by your AdGuard can be found in the *Filtering log* (AdGuard for Windows, AdGuard for Mac, AdGuard Browser extension) or *Recent activity* (AdGuard for iOS, AdGuard for Android).
+Detailed information on how each request of yours has been handled by AdGuard can be found in the *Filtering log* (AdGuard for Windows, AdGuard for Mac, AdGuard Browser Extension) or *Recent activity* (AdGuard for iOS, AdGuard for Android).
 
 Regarding AdGuard filters, you can also check [our filter policy](../filter-policy), which describes in detail what and why each of our filters blocks.
 
-### Blocked requests examples
+### Examples of blocked requests
 
 AdGuard DNS filter blocks requests to ad domains, such as `ad.doubleclick.net`.
 
 AdGuard Tracking Protection filter blocks tracking requests, such as `youtube.com/youtubei/log_event?`.
 
-### Allowed requests examples
+### Examples of allowed requests
 
 AdGuard Base filter allows non-ad requests such as `www.google.com/complete/search?q=`.
 
@@ -85,7 +85,7 @@ Filter unblocking search ads and self-promotion allows search ads requests, such
 
 Requests to websites that are added by the user to *Allowlist* are allowed.
 
-### Modified requests examples
+### Examples of modified requests
 
 Tracking protection feature with protection level set to *High* enables AdGuard URL Tracking filter which modifies requests by removing tracking parameters from them:
 
@@ -96,7 +96,7 @@ Tracking protection feature with protection level set to *High* enables AdGuard 
 `https://www.gog.com/game/spec_ops_the_line?pp=2863d7ae605104eeef364e3f164d3404e20f680c&gad_source=1` →
 `https://www.gog.com/game/spec_ops_the_line`
 
-Please note that *Modified* events you see in the Filtering log or Recent activity do not refer only to the cases when a request is modified, but also when:
+Please note that *modified* events you see in the Filtering log or Recent activity refer not only to the cases when a request is modified, but also when:
 
 - something on the page is changed (usually by cosmetic rules)
 - the response is modified
