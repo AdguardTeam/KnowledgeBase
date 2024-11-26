@@ -81,7 +81,7 @@ AdGuard Tracking Protection filter blocks tracking requests, such as `youtube.co
 
 AdGuard Base filter allows non-ad requests such as `www.google.com/complete/search?q=`.
 
-Filter unblocking search ads and self-promotion allows search ads requests, such as `www.google.com/aclk?`.
+Filter unblocking search ads and self-promotion allows requests to search ad-related domains, such as `www.google.com/aclk?`.
 
 Requests to websites that are added by the user to *Allowlist* are allowed.
 
