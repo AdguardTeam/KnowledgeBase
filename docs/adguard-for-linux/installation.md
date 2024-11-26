@@ -39,7 +39,7 @@ To log in or create an account, enter:
 
 To reset your license, enter:
 
-    adguard-cli reset-license
+    adguard-cli reset-activation
 
 To view the license info, enter:
 
