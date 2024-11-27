@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::
 
-## Advanced privacy protection
+## Расширенная защита от отслеживания
 
 ![Защита от трекинга](https://cdn.adtidy.org/content/kb/ad_blocker/mac/stealth.png)
 

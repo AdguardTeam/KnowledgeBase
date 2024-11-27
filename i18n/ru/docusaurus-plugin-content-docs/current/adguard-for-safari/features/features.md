@@ -1,34 +1,34 @@
 ---
-title: Features
+title: Функции
 sidebar_position: 1
 ---
 
-## Основное
+## Основные
 
-The article highlights basic features, including notifications, update intervals, and logging level.
+В статье рассматриваются основные функции, включая уведомления, интервалы обновления и уровень логирования.
 
-[General](adguard-for-safari/features/general.md)
+[Общие](adguard-for-safari/features/general.md)
 
 ## Фильтры
 
-This article explains how AdGuard for Safari allows you to customize ad blocking by enabling different filters, such as language-specific filters, anti-malware filters, and user rules.
+В этой статье объясняется, как AdGuard для Safari позволяет настраивать блокировку рекламы, включая различные фильтры, такие как языковые фильтры, фильтры защиты от вредоносных программ и пользовательские правила.
 
-[Filters](/adguard-for-safari/features/filters.md)
+[Фильтры](/adguard-for-safari/features/filters.md)
 
 ## Блокировщики контента
 
-This section explains why AdGuard for Safari consists of six content blockers and how they work.
+В этом разделе объясняется, почему AdGuard для Safari состоит из шести блокировщиков контента и как они работают.
 
-[Content Blockers](/adguard-for-safari/features/content-blockers/content-blockers.md)
+[Блокировщики контента](/adguard-for-safari/features/content-blockers/content-blockers.md)
 
 ## Пользовательские правила
 
-The article is dedicated to how you can use AdGuard for Safari to create and manage custom filtering rules to personalize your ad blocking experience.
+Статья посвящена тому, как использовать AdGuard для Safari для создания и управления пользовательскими правилами, чтобы персонализировать блокировку рекламы.
 
-[User rules](/adguard-for-safari/features/rules.md)
+[Пользовательские правила](/adguard-for-safari/features/rules.md)
 
 ## О компании
 
-Here you’ll find useful links to privacy documents, GitHub repository, and version history.
+Здесь вы найдёте полезные ссылки на документы о конфиденциальности, репозиторий GitHub и историю версий.
 
-[About](/adguard-for-safari/features/about.md)
+[О программе](/adguard-for-safari/features/about.md)

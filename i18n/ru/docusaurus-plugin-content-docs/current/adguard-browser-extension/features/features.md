@@ -1,5 +1,5 @@
 ---
-title: Features
+title: Функции
 sidebar_position: 1
 ---
 
@@ -9,26 +9,26 @@ sidebar_position: 1
 
 :::
 
-## Main menu
+## Главное меню
 
-The article explains the main functions on the pop-up, such as enabling or disabling ad blocking, accessing settings, managing filters, and viewing protection statistics.
+В статье рассказывается об основных функциях всплывающего окна: включение или отключение блокировки рекламы, доступ к настройкам, управление фильтрами и просмотр статистики защиты.
 
-[Main menu](/adguard-browser-extension/features/main-menu.md)
+[Главное меню](/adguard-browser-extension/features/main-menu.md)
 
 ## Фильтры
 
-The article describes how AdGuard Browser Extension allows you to customize ad blocking with different filters and custom user rules.
+В статье описывается, как Браузерное расширение AdGuard позволяет настраивать блокировку рекламы с различными фильтрами и пользовательскими правилами.
 
-[Filters](/adguard-browser-extension/features/filters.md)
+[Фильтры](/adguard-browser-extension/features/filters.md)
 
-## Tracking protection (Stealth Mode)
+## Защита от трекинга
 
-The article explains how this feature enhances privacy by blocking online trackers, hiding user information, and preventing third-party data collection.
+В статье объясняется, как эта функция повышает конфиденциальность, блокируя онлайн-трекеры, скрывая информацию о пользователе и предотвращая сбор данных третьими лицами.
 
-[Tracking protection (Stealth Mode)](/adguard-browser-extension/features/stealth-mode.md)
+[Защита от трекинга](/adguard-browser-extension/features/stealth-mode.md)
 
 ## Другие функции и опции
 
-The article describes additional features and information, such as update notifications, filtering log, statistics on blocked ads and trackers, links to privacy documents, and the repository.
+В статье описаны дополнительные функции и информация, такие как уведомления об обновлениях, журнал фильтрации, статистика заблокированной рекламы и трекеров, ссылки на документы о конфиденциальности и репозиторий.
 
-[Other features and options](/adguard-browser-extension/features/other-features.md)
+[Другие функции и опции](/adguard-browser-extension/features/other-features.md)

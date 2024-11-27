@@ -19,7 +19,7 @@ Chaque fois que vous visitez un site web, votre client local échange des inform
 
 AdGuard offre la meilleure protection possible en inspectant à la fois les pages et tous les objets qui y sont chargés. AdGuard vérifie les URL et les noms de domaine à l'aide de préfixes de hachage, et non des URL complètes, de sorte que nos serveurs ne conservent aucune information sur les sites Web que vous visitez et que vos informations personnelles sont totalement sécurisées. Nos serveurs répondent à la requête de l'application avec une liste de toutes les adresses possibles correspondant au préfixe de hachage. Lorsqu'une menace potentielle est détectée grâce à des correspondances de hachage, l'accès à ce site web est immédiatement bloqué.
 
-![DNS warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_diana.png)
+![AdGuard warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/dangerous_website_blocked.png)
 
 ### Dans les extensions de navigateur
 

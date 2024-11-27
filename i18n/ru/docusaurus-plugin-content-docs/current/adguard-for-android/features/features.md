@@ -1,5 +1,5 @@
 ---
-title: Features
+title: Функции
 sidebar_position: 1
 ---
 
@@ -11,48 +11,48 @@ sidebar_position: 1
 
 ## Защита
 
-Info on modules in the Protection tab: Ad blocking, Tracking protection, Annoyance blocking, DNS protection, Firewall, and Browsing security.
+Статья описывает модули, которые находятся на вкладке _Защита_: _Блокировка рекламы_, _Защита от трекинга_, _Блокировка раздражителей_, _DNS-защита_, _Фаервол_ и _Защита от фишинга_.
 
-[Protection](/adguard-for-android/features/protection/protection.md)
+[Защита](/adguard-for-android/features/protection/protection.md)
 
 ## Управление приложениями
 
-AdGuard for Android offers app management features that allow you to control how AdGuard filters traffic for individual apps, providing options to block ads and trackers or disable protection for selected apps altogether.
+Статья описывает функции AdGuard для Android для управления приложениями. Они позволяют настроить фильтрацию и маршрутизирование трафика для каждого приложения в отдельности.
 
-[App management](/adguard-for-android/features/app-management.md)
+[Управление приложениями](/adguard-for-android/features/app-management.md)
 
 ## Статистика
 
-Detailed statistics on blocked ads, trackers, and saved traffic that allows us to monitor the app’s performance and protection efficiency over time.
+В статье рассказывается о функции, которая отображает статистику по заблокированной рекламе, трекерам и сэкономленному трафику и позволяет отслеживать производительность приложения и эффективность защиты с течением времени.
 
-[Statistics](/adguard-for-android/features/statistics.md)
+[Статистика](/adguard-for-android/features/statistics.md)
 
 ## Настройки
 
-Information about customizing settings so you can adjust ad blocking, privacy, and DNS settings to suit your needs.
+Статья описывает раздел настроек AdGuard: фильтрацию, сеть и расширенные настройки.
 
-[Settings](/adguard-for-android/features/settings.md)
+[Настройки](/adguard-for-android/features/settings.md)
 
 ## Помощник
 
-Information about a tool that lets you quickly change app or website settings and view statistics without opening the AdGuard interface.
+Статья рассказывает о Помощнике — инструменте, который позволяет быстр изменять настройки приложения или сайта и просматривать статистику без запуска приложения AdGuard.
 
-[Assistant](/adguard-for-android/features/assistant.md)
+[Помощник](/adguard-for-android/features/assistant.md)
 
 ## Разница между бесплатной и платной версией
 
-Comparison of features between the free and paid versions.
+В статье сравниваются функции, доступные в платной и бесплатной версиях.
 
-[Free vs. full version](/adguard-for-android/features/free-vs-full.mdx)
+[Разница между бесплатной и платной версией](/adguard-for-android/features/free-vs-full.mdx)
 
 ## Интеграция с AdGuard VPN
 
-Information on how the app integrates with VPN services, allowing you to run both AdGuard and AdGuard VPN at the same time without conflict, ensuring ad blocking and privacy protection along with VPN functionality.
+Здесь мы рассказываем о Режиме интеграции, при котором Блокировщик AdGuard и AdGuard VPN могут работать одновременно несмотря на ограничения системы.
 
-[Integration with AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
+[Интеграция с AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
 
 ## Устройства с root-доступом
 
-AdGuard for Android on rooted devices offers advanced features like HTTPS filtering without a certificate installation, automatic ad blocking in apps, and deeper system-wide protection.
+Здесь мы рассказываем о функциях, которые доступны в AdGuard для Android на рутованных устройствах: HTTPS-фильтрация во всех приложениях, режимы _Автоматический прокси_ и _Ручной прокси_.
 
-[Rooted devices](/adguard-for-android/features/rooted.md)
+[Устройства с root-доступом](/adguard-for-android/features/rooted.md)

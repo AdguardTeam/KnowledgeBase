@@ -9,15 +9,15 @@ sidebar_position: 1
 
 :::
 
-Here are some problems you may encounter and workarounds, guides, and instructions you may need.
+Вот некоторые проблемы, с которыми вы можете столкнуться, а также обходные пути и инструкции, которые вам могут понадобиться.
 
-- [WFP driver compatibility](/adguard-for-windows/solving-problems/wfp-driver/)
-- [Certificate-related issues](/adguard-for-windows/solving-problems/connection-not-trusted/)
-- [How to collect AdGuard logs](/adguard-for-windows/solving-problems/adguard-logs/)
-- [How to collect AdGuard installation logs](/adguard-for-windows/solving-problems/installation-logs/)
-- [How to collect Windows system logs](/adguard-for-windows/solving-problems/system-logs/)
-- [Common installer errors](/adguard-for-windows/solving-problems/common-installer-errors/)
-- [Advanced (low-level) Settings guide](/adguard-for-windows/solving-problems/low-level-settings/)
-- [How to create a dump file](/adguard-for-windows/solving-problems/dump-file/)
-- [Possible DNS leaks](/adguard-for-windows/solving-problems/dns-leaks/)
-- [Known issues of AdGuard for Windows](/adguard-for-windows/solving-problems/known-issues/)
+- [Совместимость WFP-драйвера](/adguard-for-windows/solving-problems/wfp-driver/)
+- [Проблемы, связанные с сертификатом](/adguard-for-windows/solving-problems/connection-not-trusted/)
+- [Как собирать логи AdGuard](/adguard-for-windows/solving-problems/adguard-logs/)
+- [Как собирать логи установки AdGuard](/adguard-for-windows/solving-problems/installation-logs/)
+- [Как собирать системные логи Windows](/adguard-for-windows/solving-problems/adguard-logs/)
+- [Типичные ошибки установщика](/adguard-for-windows/solving-problems/common-installer-errors/)
+- [Расширенные (низкоуровневые) настройки](/adguard-for-windows/solving-problems/low-level-settings/)
+- [Как создать файл дампа](/adguard-for-windows/solving-problems/dump-file/)
+- [Возможные утечки DNS](/adguard-for-windows/solving-problems/dns-leaks/)
+- [Известные проблемы AdGuard для Windows](/adguard-for-windows/solving-problems/known-issues/)

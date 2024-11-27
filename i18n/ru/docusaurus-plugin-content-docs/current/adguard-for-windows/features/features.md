@@ -1,5 +1,5 @@
 ---
-title: Features
+title: Функции
 sidebar_position: 1
 ---
 
@@ -11,30 +11,30 @@ sidebar_position: 1
 
 ## Главный экран
 
-This article outlines everything you see when you open the program, including _Settings_, _Support_, _License_, and _About_. You’ll also find statistics on blocked ads and trackers.
+Из главного экрана можно перейти в разделы _Настройки_, _Поддержка_, _Лицензия_ и _О программе_. На главном экране также можно найти статистику по заблокированной рекламе и трекерам.
 
-[Home screen](/adguard-for-windows/features/home-screen/)
+[Главный экран](/adguard-for-windows/features/home-screen/)
 
 ## Настройки
 
-You can customize the program to suit your needs by blocking only what bothers you, using a trusted DNS server, removing third-party cookies, and more.
+Вы можете настроить программу в соответствии с вашими потребностями. Например, выбрать категории для блокировки, настроить DNS-сервер или блокировать сторонние куки.
 
-[Settings](/adguard-for-windows/features/settings/)
+[Настройки](/adguard-for-windows/features/settings/)
 
 ## Расширения
 
-Here you’ll how to use AdGuard as a userscript manager to extend the functionality of websites. You can add your own scripts as well as manage existing ones.
+Здесь вы узнаете, как использовать AdGuard в качестве менеджера пользовательских скриптов, чтобы расширить функциональность сайтов. Вы можете добавлять собственные скрипты, а также управлять существующими.
 
-[Extensions](/adguard-for-windows/features/extensions/)
+[Расширения](/adguard-for-windows/features/extensions/)
 
 ## Сеть
 
-This article describes additional network-related options and proxy settings where you can specify which proxy server AdGuard should use to update filters, download new versions, and so on.
+Эта статья описывает дополнительные параметры, связанные с сетью, и настройки прокси, где вы можете указать, какой прокси сервер AdGuard должен использовать для обновления фильтров и скачивания новых версий.
 
-[Network](/adguard-for-windows/features/network/)
+[Сеть](/adguard-for-windows/features/network/)
 
 ## Другие функции
 
-Here you can find information on how to reach support, manage your license, view details about the current version and privacy policy, check for updates, and explore options available in the tray menu.
+Здесь вы можете найти информацию о том, как обратиться в поддержку, управлять лицензией, узнать детали текущей версии, открыть юридические документы и проверить обновления. В статье также перечислены все доступные варианты действий по клику на иконку в области уведомлений.
 
-[Other features](/adguard-for-windows/features/others/)
+[Другие функции](/adguard-for-windows/features/others/)

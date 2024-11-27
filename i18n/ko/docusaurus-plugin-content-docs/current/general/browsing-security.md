@@ -19,7 +19,7 @@ sidebar_position: 3
 
 AdGuard는 페이지와 페이지에 로드된 모든 개체를 검사하여 최상의 보호 기능을 제공합니다. AdGuard는 전체 URL이 아닌 해시 접두사를 사용하여 URL과 도메인 이름을 확인하므로, 당사 서버는 사용자가 방문한 웹사이트에 대한 정보를 보유하지 않으며 사용자의 개인 정보는 완전히 안전합니다. AdGuard 서버는 해시 접두사와 일치하는 모든 가능한 주소 목록으로 앱의 쿼리에 응답합니다. 해시 일치를 기반으로 잠재적 위협이 감지되면 해당 웹사이트에 대한 액세스가 즉시 차단됩니다.
 
-![DNS 경고](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_diana.png)
+![AdGuard warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/dangerous_website_blocked.png)
 
 ### 확장 프로그램
 

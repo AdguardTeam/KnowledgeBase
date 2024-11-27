@@ -71,7 +71,7 @@ sidebar_position: 9
 
 #### `network.https.ech.enabled`
 
-Использует локальный DNS-прокси для поиска конфигураций в списках конфигураций ECH. If found, encrypts Client Hellos.
+Использует локальный DNS-прокси для поиска конфигураций в списках конфигураций ECH. Если они найдены, шифрует Client Hellos.
 
 #### `network.https.enforce.certificate.transparency`
 
@@ -161,9 +161,9 @@ sidebar_position: 9
 
 #### `dns.proxy.private.relay.sequoia.workaround.enabled`
 
-Blocks macOS Private Relay domains if the user has a firewall enabled, which in turn disables the *Private Relay* feature.
+Блокирует домены Частного узла iCloud (iCloud Private Relay), если у пользователя включён фаервол. Это отключает функцию Частного узла.
 
-Enabling this setting is useful in the following scenario: when macOS Private Relay is active, filtering cannot function properly and must be disabled. In macOS versions up to 14, AdGuard could automatically disable Private Relay when Protection was enabled. However, starting with macOS 15, this is no longer possible if a firewall is active. By turning on this setting, you can disable Private Relay even when the firewall is enabled, overcoming the previous limitation.
+Эта настройка полезна, если Частный узел препятствует фильтрации. В версиях macOS до 14 AdGuard мог автоматически отключать Частный узел при включённой защите. Но начиная с macOS 15 это больше невозможно, если у пользователя включён фаервол. Эта настройка помогает исправить проблему.
 
 ### Настройки Защиты от трекинга
 

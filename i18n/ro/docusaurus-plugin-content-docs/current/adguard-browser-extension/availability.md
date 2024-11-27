@@ -23,4 +23,4 @@ Avem o extensie independentă pentru Safari. Începând cu versiunea [Safari 13]
 
 :::
 
-**Nu uitați că funcționalitatea fiecărei extensii este strict limitată la capacitățile browserului.** Deci, dacă doriți să obțineți o protecție completă, luați în considerare instalarea unui program de sine stătător pentru computerul dvs. Există [un motiv pentru care](adguard-browser-extension/comparison-standalone).
+**Nu uitați că funcționalitatea fiecărei extensii este strict limitată la capacitățile browserului.** Deci, dacă doriți să obțineți o protecție completă, luați în considerare instalarea unui program de sine stătător pentru computerul dvs. There's [a reason why](/adguard-browser-extension/comparison-standalone).

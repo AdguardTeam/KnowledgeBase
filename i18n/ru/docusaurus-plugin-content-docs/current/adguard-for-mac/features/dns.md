@@ -24,18 +24,18 @@ sidebar_position: 5
 
 ### Провайдеры
 
-В разделе _Провайдеры_ вы можете выбрать DNS-сервер, который будет шифровать DNS-трафик и, если это необходимо, блокировать рекламу и трекеры. Мы рекомендуем AdGuard DNS. For more advanced configuration, you can [set up a private AdGuard DNS server](https://adguard-dns.io/welcome.html) or add a custom one by clicking the `+` icon in the lower left corner.
+В разделе _Провайдеры_ вы можете выбрать DNS-сервер, который будет шифровать DNS-трафик и, если это необходимо, блокировать рекламу и трекеры. Мы рекомендуем AdGuard DNS. Для более продвинутой настройки вы можете использовать [личный сервер AdGuard DNS](https://adguard-dns.io/welcome.html) или добавить любой другой, нажав на иконку `+` в левом нижнем углу.
 
 ### Фильтры
 
-DNS filters apply ad-blocking rules at the DNS level. Such filtering is less precise than regular ad blocking, but it’s particularly useful for blocking an entire domain. To add a DNS filter, click `+`. You can find more DNS filters at [filterlists.com](https://filterlists.com/).
+DNS-фильтры применяют правила блокировки на уровне DNS. Такая фильтрация менее точна, чем обычная блокировка рекламы, но она особенно полезна для блокировки всего домена. Чтобы добавить DNS-фильтр, нажмите `+`. DNS-фильтры можно найти на сайте [filterlists.com](https://filterlists.com/).
 
 ### Чёрный список
 
-Domains from this list will be blocked. To add a domain, click `+`. You can add domain names or DNS filtering rules using a [special syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/).
+Домены из этого списка будут заблокированы. Чтобы добавить домен, нажмите `+`. Вы можете добавлять доменные имена или правила DNS-фильтрации — для них нужно знать [синтаксис](https://adguard-dns.io/kb/general/dns-filtering-syntax/).
 
-To export or import a blocklist, open the context menu.
+Чтобы экспортировать или импортировать чёрный список, откройте контекстное меню.
 
 ### Белый список
 
-Домены из этого списка не фильтруются. To add a domain, click `+`. To export or import an allowlist, open the context menu.
+Домены из этого списка не фильтруются. Чтобы добавить домен, нажмите `+`. Чтобы экспортировать или импортировать белый список, откройте контекстное меню.

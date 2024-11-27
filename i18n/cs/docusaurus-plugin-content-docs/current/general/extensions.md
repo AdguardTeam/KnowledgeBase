@@ -55,9 +55,9 @@ Tento skript odstraní z odkazů ve výsledcích vyhledávání Google funkci sl
 
 Jeho zdrojový kód je [k dispozici na GitHubu](https://github.com/Rob--W/dont-track-me-google). Tento uživatelský skript lze stáhnout ze stránek [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) a nainstalovat do libovolné aplikace založené na AdGuard CoreLibs.
 
-#### microShield
+#### tinyShield
 
-Uživatelský skript pro lidi, kteří navštěvují korejské a některé mezinárodní webové stránky. Uživatelský skript microShield blokuje Ad-Shield a anti-adblock. Jeho původní zdrojový kód je k dispozici na [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) a [AdShield Defuser](https://github.com/seia-soto/adshield-defuser). Tento uživatelský skript lze nainstalovat v AdGuard CoreLibs, Violentmonkey, Tampermonkey a [quoid/userscripts](https://github.com/quoid/userscripts). Více informací o skriptu microShield a jeho instalaci najdete na [GitHubu](https://github.com/List-KR/microShield).
+Uživatelský skript pro lidi, kteří navštěvují korejské a některé mezinárodní webové stránky. Uživatelský skript tinyShield blokuje Ad-Shield a anti-adblock. Tento uživatelský skript lze nainstalovat v AdGuard CoreLibs, Violentmonkey, Tampermonkey a [quoid/userscripts](https://github.com/quoid/userscripts). Více informací o skriptu microShield a jeho instalaci najdete na [GitHubu](https://github.com/List-KR/tinyShield).
 
 ### Kde můžete získat další uživatelské skripty?{#more-userscripts}
 
@@ -89,15 +89,7 @@ Pokud se vám líbí myšlenka přizpůsobení prohlížeče pomocí uživatelsk
 
 #### Žádost o licenci
 
-Pokud vyvíjíte vlastní skript a chcete si vyzkoušet, jak s AdGuardem funguje, požádejte o licenční klíč pro beta verzi aplikace.
-
-Chcete-li ji získat, zašlete e-mail na adresu devteam@adguard.com a uveďte následující informace:
-
-**Předmět:** Žádost o autorskou licenci uživatelského skriptu
-
-**Popis:** Řekněte nám prosím o uživatelských skriptech, na kterých pracujete.
-
-Zde je [odkaz na mail](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request\&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK).
+Pokud vyvíjíte vlastní uživatelský skript a chcete si vyzkoušet, jak funguje s AdGuardem, můžete požádat o licenci vyplněním [formuláře](https://surveys.adguard.com/en/for_developers_request/form.html).
 
 #### Kompatibilita
 
@@ -213,7 +205,7 @@ GM_log
 
 ## Uživatelské styly
 
-Uživatelské styly umožňují uživatelům přizpůsobit si prostředí online. Ať už chcete změnit vzhled webových stránek nebo automatizovat opakující se úlohy, styly nabízejí řadu možností.
+Uživatelské styly umožňují uživatelům změnit vzhled oblíbených webových stránek.
 
 AdGuard má možnost nahrát nebo vytvořit vlastní uživatelské styly. Jedná se o pokročilou funkci, takže budete potřebovat určité znalosti HTML a CSS.
 
@@ -231,7 +223,7 @@ Uživatelské styly si můžete stáhnout z různých webových stránek. Jednou
 
 1. Přejděte na výše uvedený odkaz a vyberte si uživatelský styl, který se vám líbí
 
-2. Klikněte pravým tlačítkem myši na _Instalovat_ a zvolte _Kopírovat adresu odkazu_
+2. Klikněte na _Kopírovat_ vedle adresy uživatelského stylu
 
 3. Otevřete nastavení AdGuardu → _Rozšíření_
 

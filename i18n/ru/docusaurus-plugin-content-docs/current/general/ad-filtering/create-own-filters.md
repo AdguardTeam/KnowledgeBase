@@ -265,7 +265,7 @@ Wildcard-символы поддерживаются для TLD-доменов �
 
 <!-- Please keep them sorted -->
 
-| Модификатор \ Продукты                             |    [Приложения CoreLibs][cl-apps]     |    [AdGuard для Chromium][ext-chr]     |   [AdGuard for Chrome MV3][ext-mv3]    |     [AdGuard для Firefox][ext-ff]      |       [AdGuard для iOS][ios-app]       |     [AdGuard для Safari][ext-saf]      | [AdGuard Content Blocker][and-cb] |
+| Модификатор \ Продукты                             |    [Приложения CoreLibs][cl-apps]     |    [AdGuard для Chromium][ext-chr]     |   [AdGuard для Chrome MV3][ext-mv3]    |     [AdGuard для Firefox][ext-ff]      |       [AdGuard для iOS][ios-app]       |     [AdGuard для Safari][ext-saf]      | [AdGuard Content Blocker][and-cb] |
 | --------------------------------------------------- |:-------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:---------------------------------:|
 | [$app](#app-modifier)                               |                   ✅                   |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                 ❌                 |
 | [$denyallow](#denyallow-modifier)                   |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                 ❌                 |
@@ -318,7 +318,7 @@ Wildcard-символы поддерживаются для TLD-доменов �
 :::info Совместимость
 
 - Только AdGuard для Windows, Mac и Android имеют технические возможности для поддержки правил с модификатором `$app`.
-- On Windows the process name is case-insensitive starting with AdGuard for Windows with [CoreLibs][] v1.12 or later.
+- На Windows имя процесса нечувствительно к регистру, начиная с версий AdGuard для Windows [c CoreLibs][] 1.12 или более поздней версии.
 
 :::
 
@@ -381,11 +381,11 @@ entry_i = ( regular_domain / any_tld_domain / regexp )
 
 - **`Regular_domain`** — обычное доменное имя (`domain.com`). Соответствует указанному домену и его поддоменам. Сопоставляется лексикографически.
 - **`any_tld_domain`** — доменное имя, оканчивающееся подстановочным знаком в качестве [публичного суффикса](https://publicsuffix.org/learn/), например, для `example.*` это `co.uk` в `example.co.uk`. Соответствует указанному домену и его поддоменам с любым публичным суффиксом. Сопоставляется лексикографически.
-- **`regexp`** — регулярное выражение, начинается и заканчивается символом `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$`, `,`, and `|` must be escaped with `\`.
+- **`regexp`** — регулярное выражение, начинается и заканчивается символом `/`. Паттерн работает так же, как и в основных правилах URL, но символы `/`, `$`, `,` и `|` должны быть экранированы с помощью `\`.
 
 :::info
 
-Rules with `$domain` modifier as `regular_domain` are supported by all AdGuard products.
+Правила с модификатором `$domain` в виде `regular_domain` поддерживаются всеми продуктами AdGuard.
 
 :::
 
@@ -458,7 +458,7 @@ Safari не поддерживает одновременно разрешённ
 
 :::info Совместимость
 
-Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+Правила с регулярными выражениями в модификаторе `$domain` поддерживаются в AdGuard для Windows, AdGuard для Mac и AdGuard для Android [с CoreLibs][] версии 1.11 или выше и в Браузерном расширении AdGuard [с TSUrlFilter][] версии 3.0.0 или выше.
 
 In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.12 or later the `$domain` modifier can be alternatively spelled as `$from`.
 
@@ -495,14 +495,14 @@ h_value = string / regexp
 
 :::caution Ограничения
 
-1. The `$header` modifier can be matched only when headers are received. So if the request is blocked or redirected at an earlier stage, the modifier cannot be applied.
-1. In Adguard Browser Extension, the `$header` modifier is only compatible with [`$csp`](#csp-modifier), [`$removeheader`](#removeheader-modifier), [`$important`](#important-modifier), and [`$badfilter`](#badfilter-modifier).
+1. Модификатор `$header` может быть сопоставлен, только когда заголовки получены. Если запрос блокируется или перенаправляется на более ранней стадии, модификатор не может быть применён.
+1. В браузерном расширении AdGuard модификатор `$header` совместим только с [`$csp`](#csp-modifier), [`$removeheader`](#removeheader-modifier), [`$important`](#important-modifier) и [`$badfilter`](#badfilter-modifier).
 
 :::
 
 :::info Совместимость
 
-Rules with the `$header` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+Правила с модификатором `$header` поддерживаются в AdGuard для Windows, AdGuard для Mac и AdGuard для Android [с CoreLibs][] версии 1.11 или выше и в Браузерном расширении AdGuard [с TSUrlFilter][] версии 3.0.0 или выше.
 
 :::
 
@@ -561,7 +561,7 @@ Rules with the `$header` modifier are supported by AdGuard for Windows, AdGuard 
 
 :::info Совместимость
 
-Rules with `$method` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.12 or later, and AdGuard Browser Extension for Chrome, Firefox, and Edge with [TSUrlFilter][] v2.1.1 or later.
+Правила с модификатором `$method` поддерживаются в AdGuard для Windows, AdGuard для Mac и AdGuard для Android [с CoreLibs][] 1.12 или более поздней версии, а также в Браузерном расширении AdGuard для Chrome, Firefox и Edge с [TSUrlFilter][] 2.1.1 или более поздней версии.
 
 :::
 
@@ -577,10 +577,10 @@ AdGuard будет пытаться закрыть браузерную вкла
 
 :::caution Ограничения
 
-1. The `$popup` modifier works best in AdGuard Browser Extension for Chromium-based browsers and Firefox.
-1. In [AdGuard for Chrome MV3][ext-mv3] rules with the [`$popup`][popup-in-mv3] modifier would not work, so we disable converting them to declarative rules. We will try to use them only in our [TSUrlFilter][] engine and close new tabs programmatically.
+1. Модификатор `$popup` лучше всего работает в расширении AdGuard для браузеров на базе Chromium и Firefox.
+1. In [AdGuard for Chrome MV3][ext-mv3] rules with the [`$popup`][popup-in-mv3] modifier would not work, so we disable converting them to declarative rules. Мы попытаемся использовать их только в нашем движке [TSUrlFilter][] и закрывать новые вкладки программно.
 1. В AdGuard для iOS и AdGuard для Safari `$popup`-правила просто заблокируют страницу.
-1. В AdGuard для Windows, AdGuard для Mac и AdGuard для Android модификатор `$popup` в некоторых случаях может не обнаружить всплывающее окно, и оно не будет заблокировано. Модификатор `$popup` применяет тип контента `document` со специальным флагом, который передаётся блокирующей странице. Блокирующая страница сама может провести некоторые проверки и закрыть окно, если это действительно всплывающее окно. В противном случае страница должна быть загружена. It can be combined with other request type modifiers, such as `$third-party`, `$strict-third-party`, `$strict-first-party`, and `$important`.
+1. В AdGuard для Windows, AdGuard для Mac и AdGuard для Android модификатор `$popup` в некоторых случаях может не обнаружить всплывающее окно, и оно не будет заблокировано. Модификатор `$popup` применяет тип контента `document` со специальным флагом, который передаётся блокирующей странице. Блокирующая страница сама может провести некоторые проверки и закрыть окно, если это действительно всплывающее окно. В противном случае страница должна быть загружена. Его можно комбинировать с другими модификаторами типа запроса, такими как `$third-party`, `$strict-third-party`, `$strict-first-party` и `$important`.
 
 :::
 
@@ -592,47 +592,47 @@ AdGuard будет пытаться закрыть браузерную вкла
 
 #### **`$strict-first-party`** {#strict-first-party-modifier}
 
-Works the same as the [`$~third-party`](#third-party-modifier) modifier, but only treats the request as first-party if the referrer and origin have exactly the same hostname.
+Работает так же, как модификатор [`$~third-party`](#third-party-modifier), но обрабатывает запрос как запрос первой стороны только в том случае, если реферер и источник имеют одинаковое имя хоста.
 
 **Примеры**
 
-- domain.com$strict-first-party' — this rule applies only to `domain.com`. Например, запрос с домена `domain.com` к домену `http://domain.com/icon.ico` — это запрос первой стороны. A request from `sub.domain.com` to `http://domain.com/icon.ico` is treated as a third-party one (as opposed to the `$~third-party` modifier).
+- domain.com$strict-first-party — это правило применяется только к `domain.com`. Например, запрос с домена `domain.com` к домену `http://domain.com/icon.ico` — это запрос первой стороны. Запрос от `sub.domain.com` к `http://domain.com/icon.ico` рассматривается как сторонний (в отличие от модификатора `$~third-party`).
 
 :::note
 
-You can use a shorter name (alias) instead of using the full modifier name: `$strict1p`.
+Вы можете использовать более короткое название (псевдоним) вместо полного названия модификатора: `$strict1p`.
 
 :::
 
 :::info Совместимость
 
-Rules with the `$strict-first-party` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.16 or later.
+Правила с модификатором `$strict-first-party` поддерживаются в AdGuard для Windows, AdGuard для Mac и AdGuard для Android с [CoreLibs][] версии 1.16 или выше.
 
 :::
 
 #### **`$strict-third-party`** {#strict-third-party-modifier}
 
-Works the same as the [`$third-party`](#third-party-modifier) modifier but also treats requests from the domain to its subdomains and vice versa as third-party requests.
+Работает так же, как модификатор [`$third-party`](#third-party-modifier), но также обрабатывает запросы от домена к его поддоменам и наоборот как сторонние запросы.
 
 **Примеры**
 
-- `||domain.com^$strict-third-party` — правило применяется на всех доменах, кроме `domain.com`. An example of a third-party request: `http://sub.domain.com/banner.jpg` (as opposed to the `$third-party` modifier).
+- `||domain.com^$strict-third-party` — правило применяется на всех доменах, кроме `domain.com`. Пример стороннего запроса: `http://sub.domain.com/banner.jpg` (в отличие от модификатора `$third-party`).
 
 :::note
 
-You can use a shorter name (alias) instead of using the full modifier name: `$strict3p`.
+Вы можете использовать более короткое название (псевдоним) вместо полного названия модификатора: `$strict3p`.
 
 :::
 
 :::info Совместимость
 
-Rules with the `$strict-third-party` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.16 or later.
+Правила с модификатором `$strict-third-party` поддерживаются в AdGuard для Windows, AdGuard для Mac и AdGuard для Android с [CoreLibs][] версии 1.16 или выше.
 
 :::
 
 #### **`$third-party`** {#third-party-modifier}
 
-A restriction on third-party and custom requests. A third-party request is a request from an external domain. Например, запрос к домену `example.org`, отправленный с домена `domain.com`, является сторонним.
+Ограничение на сторонние или пользовательские запросы. Сторонним является запрос, отправленный с внешнего домена. Например, запрос к домену `example.org`, отправленный с домена `domain.com`, является сторонним.
 
 :::note
 
@@ -653,7 +653,7 @@ A restriction on third-party and custom requests. A third-party request is a req
 
 **`$~third-party`:**
 
-- `||domain.com$~third-party` — это правило применяется исключительно к `domain.com`. Example of a non third-party request: `http://domain.com/icon.ico`.
+- `||domain.com$~third-party` — это правило применяется исключительно к `domain.com`. Пример запроса, который не является сторонним: `http://domain.com/icon.ico`.
 
 :::note
 
@@ -679,7 +679,7 @@ A restriction on third-party and custom requests. A third-party request is a req
 
 :::info Совместимость
 
-Rules with the `$to` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.12 or later, and AdGuard Browser Extension with [TSUrlFilter][] v2.1.3 or later.
+Правила с модификатором `$to` поддерживаются в AdGuard для Windows, AdGuard для Mac и AdGuard для Android [с CoreLibs][] версии 1.12 или выше и в Браузерном расширении AdGuard [с TSUrlFilter][] версии 2.1.3 или выше.
 
 :::
 
@@ -701,7 +701,7 @@ Rules with the `$to` modifier are supported by AdGuard for Windows, AdGuard for 
 
 <!-- Please keep them sorted -->
 
-| Модификатор \ Продукты                                      |       [Приложения CoreLibs][cl-apps]        | [AdGuard для Chromium][ext-chr] | [AdGuard for Chrome MV3][ext-mv3] | [AdGuard для Firefox][ext-ff] |        [AdGuard для iOS][ios-app]         |       [AdGuard для Safari][ext-saf]       | [AdGuard Content Blocker][and-cb] |
+| Модификатор \ Продукты                                      |       [Приложения CoreLibs][cl-apps]        | [AdGuard для Chromium][ext-chr] | [AdGuard для Chrome MV3][ext-mv3] | [AdGuard для Firefox][ext-ff] |        [AdGuard для iOS][ios-app]         |       [AdGuard для Safari][ext-saf]       | [AdGuard Content Blocker][and-cb] |
 | ------------------------------------------------------------ |:-------------------------------------------:|:-------------------------------:|:---------------------------------:|:-----------------------------:|:-----------------------------------------:|:-----------------------------------------:|:---------------------------------:|
 | [$document](#document-modifier)                              |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ❌                 |
 | [$font](#font-modifier)                                      |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
@@ -774,7 +774,7 @@ Rules with the `$to` modifier are supported by AdGuard for Windows, AdGuard for 
 
 Правило соответствует запросам, вызванным атрибутом `navigator.sendBeacon()` или `ping` в ссылках.
 
-##### `$ping` modifier limitations {#ping-modifier-limitations}
+##### Ограничения модификатора `$ping` {#ping-modifier-limitations}
 
 :::caution Ограничения
 
@@ -900,7 +900,7 @@ AdGuard для Windows, Mac и Android часто не может точно о�
 
 <!-- Please keep them sorted -->
 
-| Модификатор \ Продукты                 | [Приложения CoreLibs][cl-apps] | [AdGuard для Chromium][ext-chr] |    [AdGuard for Chrome MV3][ext-mv3]     | [AdGuard для Firefox][ext-ff] |          [AdGuard для iOS][ios-app]          |        [AdGuard для Safari][ext-saf]         | [AdGuard Content Blocker][and-cb] |
+| Модификатор \ Продукты                 | [Приложения CoreLibs][cl-apps] | [AdGuard для Chromium][ext-chr] |    [AdGuard для Chrome MV3][ext-mv3]     | [AdGuard для Firefox][ext-ff] |          [AdGuard для iOS][ios-app]          |        [AdGuard для Safari][ext-saf]         | [AdGuard Content Blocker][and-cb] |
 | --------------------------------------- |:------------------------------:|:-------------------------------:|:----------------------------------------:|:-----------------------------:|:--------------------------------------------:|:--------------------------------------------:|:---------------------------------:|
 | [$content](#content-modifier)           |               ✅                |                ❌                |                    ❌                     |               ✅               |                      ❌                       |                      ❌                       |                 ❌                 |
 | [$elemhide](#elemhide-modifier)         |               ✅                |                ✅                |                    ✅                     |               ✅               |                      ✅                       |                      ✅                       |                 ✅                 |
@@ -1184,7 +1184,7 @@ Rules with `$genericblock` modifier are not supported by AdGuard Content Blocker
 
 <!-- Please keep them sorted -->
 
-| Модификатор \ Продукты                     |       [Приложения CoreLibs][cl-apps]        | [AdGuard для Chromium][ext-chr] |      [AdGuard for Chrome MV3][ext-mv3]      |        [AdGuard для Firefox][ext-ff]        | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
+| Модификатор \ Продукты                     |       [Приложения CoreLibs][cl-apps]        | [AdGuard для Chromium][ext-chr] |      [AdGuard для Chrome MV3][ext-mv3]      |        [AdGuard для Firefox][ext-ff]        | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | ------------------------------------------- |:-------------------------------------------:|:-------------------------------:|:-------------------------------------------:|:-------------------------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
 | [$all](#all-modifier)                       |                      ✅                      |                ✅                |     ✅ [*[1]](#all-modifier-limitations)     |                      ✅                      |             ✅              |               ✅               |                 ❌                 |
 | [$badfilter](#badfilter-modifier)           |                      ✅                      |                ✅                |  ✅ [*[2]](#badfilter-modifier-limitations)  |                      ✅                      |             ✅              |               ✅               |                 ❌                 |
@@ -2926,7 +2926,7 @@ The [`$replace`](#replace-modifier) modifier takes precedence over all blocking 
 
 However, basic rules may not be enough to block ads. Sometimes you need to hide an element or change part of the HTML code of a web page without breaking anything. The rules described in this section are created specifically for this purpose.
 
-| Категории \ Продукты                         | [Приложения CoreLibs][cl-apps] | [AdGuard для Chromium][ext-chr] | [AdGuard for Chrome MV3][ext-mv3] | [AdGuard для Firefox][ext-ff] | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
+| Категории \ Продукты                         | [Приложения CoreLibs][cl-apps] | [AdGuard для Chromium][ext-chr] | [AdGuard для Chrome MV3][ext-mv3] | [AdGuard для Firefox][ext-ff] | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | --------------------------------------------- |:------------------------------:|:-------------------------------:|:---------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
 | [Скрытие элементов](#cosmetic-elemhide-rules) |               ✅                |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ✅                 |
 | [CSS-правила](#cosmetic-css-rules)            |               ✅                |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ❌                 |
@@ -4180,7 +4180,7 @@ For example, `[$domain=example.com,app=test_app]##selector`.
 
 In the modifiers values, the following characters must be escaped: `[`, `]`, `,`, and `\` (unless it is used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like this: `\]`.
 
-| Модификатор \ Продукты               | [Приложения CoreLibs][cl-apps] |        [AdGuard для Chromium][ext-chr]        |        [AdGuard for Chrome MV3][ext-mv3]         |         [AdGuard для Firefox][ext-ff]         | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
+| Модификатор \ Продукты               | [Приложения CoreLibs][cl-apps] |        [AdGuard для Chromium][ext-chr]        |        [AdGuard для Chrome MV3][ext-mv3]         |         [AdGuard для Firefox][ext-ff]         | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | ------------------------------------- |:------------------------------:|:---------------------------------------------:|:------------------------------------------------:|:---------------------------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
 | [$app](#non-basic-app-modifier)       |               ✅                |                       ❌                       |                        ❌                         |                       ❌                       |             ❌              |               ❌               |                 ❌                 |
 | [$domain](#non-basic-domain-modifier) |               ✅                |                       ✅                       | ✅ [*[1]](#non-basic-domain-modifier-limitations) |                       ✅                       |             ✅              |               ✅               |                 ❌                 |
@@ -4778,6 +4778,9 @@ The following scriptlets also may be used for debug purposes:
 
 [gh-filters-downloader]: https://github.com/AdguardTeam/FiltersDownloader
 [FiltersRegistry]: https://github.com/AdguardTeam/FiltersRegistry
+[c CoreLibs]: https://adguard.com/en/blog/introducing-corelibs.html
+[с CoreLibs]: https://adguard.com/en/blog/introducing-corelibs.html
 [CoreLibs]: https://adguard.com/en/blog/introducing-corelibs.html
+[с TSUrlFilter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter#tsurlfilter
 [TSUrlFilter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter#tsurlfilter
 [TSWebExtension]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tswebextension#tswebextension

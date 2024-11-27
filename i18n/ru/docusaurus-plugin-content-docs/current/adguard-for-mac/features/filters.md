@@ -11,23 +11,23 @@ sidebar_position: 4
 
 ## Фильтры
 
-![Filters](https://cdn.adtidy.org/content/kb/ad_blocker/mac/filters.png)
+![Фильтры](https://cdn.adtidy.org/content/kb/ad_blocker/mac/filters.png)
 
-Filter lists are sets of rules written using a [special syntax](/general/ad-filtering/create-own-filters). AdGuard interprets and implements these rules to block ads, trackers, and annoyances. Some filters (for example, AdGuard Base filter, Tracking Protection filter, or EasyList) are pre-installed, others can be installed additionally.
+Фильтры — это наборы правил, написанных с использованием [специального синтаксиса](/general/ad-filtering/create-own-filters). AdGuard интерпретирует и применяет эти правила, чтобы блокировать рекламу, трекеры и раздражители. Некоторые фильтры (например, Базовый фильтр, Фильтр счётчиков и систем аналитики или EasyList) предустановлены, другие можно установить дополнительно.
 
-We recommend enabling the following filters:
+Мы рекомендуем включить следующие фильтры:
 
-- Базовый фильтр AdGuard
-- AdGuard Tracking Protection filter and AdGuard URL Tracking filter
-- AdGuard Annoyances filter
-- Filters for your language
+- Базовый фильтр
+- Фильтр счётчиков и систем аналитики и Фильтр отслеживания по URL
+- Фильтр раздражителей
+- Фильтры для вашего языка
 
-These filters are important for blocking most ads, trackers, and annoying elements. For more advanced ad blocking, you can use custom filters and user rules.
+Эти фильтры важны для блокировки большей части рекламы, трекеров и раздражителей. Для более продвинутой блокировки вы можете использовать собственные фильтры и правила.
 
-To add a filter, click `+` in the lower left corner of the list. To enable a filter, select its checkbox.
+Чтобы добавить фильтр, нажмите `+` в левом нижнем углу списка. Чтобы включить фильтр, нажмите на его галочку.
 
 ## Пользовательские правила
 
-In AdGuard for Mac, user rules are located in _Filters_. To create a rule, click `+`. To enable a rule, select its checkbox. To export or import rules, open the context menu.
+В AdGuard для Mac пользовательские правила находятся в _Фильтрах_. Чтобы создать правило, нажмите `+`. Чтобы включить правило, нажмите на его галочку. Чтобы экспортировать или импортировать правила, откройте контекстное меню.
 
-![User rules: context menu](https://cdn.adtidy.org/content/kb/ad_blocker/mac/rules.png)
+![Пользовательские правила: контекстное меню](https://cdn.adtidy.org/content/kb/ad_blocker/mac/rules.png)
