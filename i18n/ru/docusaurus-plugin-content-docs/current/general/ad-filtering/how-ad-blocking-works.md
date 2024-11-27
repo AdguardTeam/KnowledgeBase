@@ -31,7 +31,7 @@ sidebar_position: 1
 
 Пользователи AdGuard [могут отправлять такие отчёты при помощи специальной веб-утилиты](https://reports.adguard.com/new_issue.html). Благодаря жалобам пользователей разработчики могут сфокусироваться на исправлении и дополнении фильтров, а не на поиске пропущенной рекламы по всей сети.
 
-Фильтры могут гораздо больше, чем просто блокировать рекламу. Существуют фильтры для блокировки трекеров, виджетов социальных сетей, раздражающих элементов вроде уведомлений о куки и т. д. Разные пользователи могут выбирать разные комбинации фильтров, чтобы подстроить фильтрацию под свои нужды. Существуют специальные сайты, такие как [filterlists.com](https://filterlists.com/), где собраны огромные базы всевозможных фильтров.
+Фильтры могут гораздо больше, чем просто блокировать рекламу. There are filters that block tracking, social media widgets, and annoyances, such as cookie notices. Разные пользователи могут выбирать разные комбинации фильтров, чтобы подстроить фильтрацию под свои нужды. Существуют специальные сайты, такие как [filterlists.com](https://filterlists.com/), где собраны огромные базы всевозможных фильтров.
 
 Мы разрабатываем и поддерживаем свой [собственный набор фильтров](../adguard-filters), которые можно использовать как внутри AdGuard, так и с другими блокировщиками.
 
@@ -62,3 +62,40 @@ sidebar_position: 1
 Есть и другие типы правил фильтрации, но для их понимания необходим ещё более высокий уровень технической подготовки. Если вам интересно, вы можете [ознакомиться с подробным описанием правил фильтрации в статье по ссылке](../create-own-filters).
 
 :::
+
+## Types of request handling in AdGuard
+
+AdGuard handles requests according to filters, user rules and settings enabled by the user. As a result, a request can be blocked, modified, allowed or, when nothing is done to it, just processed.
+
+Detailed information on how each request of yours has been handled by AdGuard can be found in the *Filtering log* (AdGuard for Windows, AdGuard for Mac, AdGuard Browser Extension) or *Recent activity* (AdGuard for iOS, AdGuard for Android).
+
+Regarding AdGuard filters, you can also check [our filter policy](../filter-policy), which describes in detail what and why each of our filters blocks.
+
+### Examples of blocked requests
+
+AdGuard DNS filter blocks requests to ad domains, such as `ad.doubleclick.net`.
+
+AdGuard Tracking Protection filter blocks tracking requests, such as `youtube.com/youtubei/log_event?`.
+
+### Examples of allowed requests
+
+AdGuard Base filter allows non-ad requests, such as `www.google.com/complete/search?q=`.
+
+Filter unblocking search ads and self-promotion allows requests to search ad-related domains, such as `www.google.com/aclk?`.
+
+Requests to websites that are added by the user to *Allowlist* are allowed.
+
+### Examples of modified requests
+
+Tracking protection feature with protection level set to *High* enables AdGuard URL Tracking filter which modifies requests by removing tracking parameters from them:
+
+`https://www.rentio.jp/products/ax-n1b?click_from=top_newitems` → `https://www.rentio.jp/products/ax-n1b`
+
+`https://www.baseballchannel.jp/npb/183688/?ref=ise` → `https://www.baseballchannel.jp/npb/183688/`
+
+`https://www.gog.com/game/spec_ops_the_line?pp=2863d7ae605104eeef364e3f164d3404e20f680c&gad_source=1` → `https://www.gog.com/game/spec_ops_the_line`
+
+Please note that *modified* events you see in the Filtering log or Recent activity refer not only to the cases when a request is modified, but also when:
+
+- something on the page is changed (usually by cosmetic rules)
+- the response is modified

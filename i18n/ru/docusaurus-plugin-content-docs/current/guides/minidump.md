@@ -24,7 +24,7 @@ sidebar_position: 8
 
     :::tip
 
-    Alternatively, click **Settings** → **System** → **About** → **Advanced system settings**.
+    Вы таежн можете перейти в **Настройки** → **Система** → **О программе** → **Дополнительные параметры системы**.
 
 
 :::

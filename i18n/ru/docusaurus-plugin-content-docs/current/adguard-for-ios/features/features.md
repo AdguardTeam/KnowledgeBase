@@ -1,5 +1,5 @@
 ---
-title: Features
+title: Функции
 sidebar_position: 1
 ---
 
@@ -11,54 +11,54 @@ sidebar_position: 1
 
 ## Защита Safari
 
-Information on how to configure ad blocking and privacy in Safari using content blockers, filters, and user rules.
+В статье рассказывается, как настроить блокировку рекламы и трекеров в Safari с использованием блокировщиков контента, фильтров и пользовательских правил.
 
-[Safari protection](/adguard-for-ios/features/safari-protection.md)
+[Защита Safari](/adguard-for-ios/features/safari-protection.md)
 
 ## DNS-защита
 
-This section describes how AdGuard for iOS allows you to configure secure DNS servers and block ads, trackers, and malicious content.
+В статье рассказывается, как настроить безопасный DNS-сервер, чтобы блокировать рекламу, трекеры и вредоносный контент во всех браузерах и приложениях.
 
-[DNS protection](/adguard-for-ios/features/dns-protection/)
+[DNS-защита](/adguard-for-ios/features/dns-protection/)
 
 ## Расширенная защита
 
-This article describes how to use CSS rules, CSS selectors, and scriptlets to deal with complex ads, such as YouTube ads.
+В статье рассказывается о фукнкции, которая позволяет блокировать сложную рекламу с помощью CSS-правил, CSS-селекторов и скриптлетов.
 
-[Advanced protection](/adguard-for-ios/features/advanced-protection.md)
+[Расширенная защита](/adguard-for-ios/features/advanced-protection.md)
 
 ## Активность и статистика
 
-This article describes the Statistics tab with detailed activity reports that allow you to monitor blocked ads, trackers, and DNS queries.
+В статье описывается вкладка Статистики, на которой можно найти подробные отчёты об активности: все запросы, заблокированные запросы и объём сэкономленного трафика.
 
-[Activity and statistics](/adguard-for-ios/features/activity.md)
+[Активность и статистика](/adguard-for-ios/features/activity.md)
 
 ## Помощник
 
-A tool that helps you manage filtering in Safari right from the browser without switching back to the app.
+В статье рассказывается о Помощнике AdGuard — инструменте, который помогает управлять фильтрацией прямо из Safari, не возвращаясь в приложение.
 
-[Assistant](/adguard-for-ios/features/assistant.md)
+[Помощник](/adguard-for-ios/features/assistant.md)
 
 ## Низкоуровневые настройки
 
-Low-level settings allow advanced users to fine-tune app performance, customize ad blocking, and adjust DNS protection for greater control over their privacy and security.
+Низкоуровневые настройки позволяют опытным пользователям более прицельно настраивать производительность приложения, блокировку рекламы и DNS-защиту для большего контроля над конфиденциальностью и безопасностью.
 
-[Low-level settings](/adguard-for-ios/features/low-level-settings.md)
+[Низкоуровневые настройки](/adguard-for-ios/features/low-level-settings.md)
 
 ## Другие функции
 
-The article describes additional features, including widgets, auto-updates, and statistics reset, as well as how to contact support.
+Статья описывает дополнительные функции, такие как виджеты, автообновление и сброс статистики, а способы связаться с поддержкой.
 
-[Other features](/adguard-for-ios/features/other-features.md)
+[Другие функции](/adguard-for-ios/features/other-features.md)
 
 ## Совместимость с AdGuard VPN
 
-Information on how the app integrates with VPN services, allowing you to run both AdGuard and AdGuard VPN at the same time without conflict, ensuring ad blocking and privacy protection along with VPN functionality.
+Здесь мы рассказываем о Режиме интеграции, при котором Блокировщик AdGuard и AdGuard VPN могут работать одновременно несмотря на ограничения системы.
 
-[Compatibility with AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
+[Совместимость с AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 
 ## Разница между бесплатной и платной версией
 
-Comparison of features between the free and paid versions.
+В статье сравниваются функции, доступные в платной и бесплатной версиях.
 
-[Free vs. full version](/adguard-for-ios/features/free-vs-full.md)
+[Разница между бесплатной и платной версией](/adguard-for-ios/features/free-vs-full.md)

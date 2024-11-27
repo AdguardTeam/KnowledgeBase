@@ -1,5 +1,5 @@
 ---
-title: Как получить логи AdGuard
+title: Как собирать логи AdGuard
 sidebar_position: 3
 ---
 

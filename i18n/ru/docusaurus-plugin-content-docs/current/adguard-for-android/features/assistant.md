@@ -20,13 +20,13 @@ sidebar_position: 5
 
 1. Нажмите _Помощник_.
 
-![Tap Assistant \*mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
+![Нажмите «Помощник» \*mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
 
 ### Как пользоваться Помощником
 
 Открыв Помощник, вы увидите две вкладки: **Приложения** и **Сайты**. В каждой есть список недавно использованных приложений и сайтов соответственно.
 
-![Assistant main \*mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
+![Окно Помощника \*mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
 
 ### Приложения
 
@@ -58,11 +58,11 @@ sidebar_position: 5
 
 ### Сайты
 
-![Assistant websites tab \*mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
+![Вкладка Сайты \*mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
 
 Выберите сайт (**например, google.com**), и вы увидите несколько вариантов того, что можно сделать.
 
-![Assistant google.com info \*mobile](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
+![google.com в Помощнике \*mobile](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
 
 #### Добавить в белый список
 

@@ -11,8 +11,8 @@ sidebar_position: 1
 
 ## Обзор функций
 
-[Features overview](/adguard-content-blocker/overview.md)
+[Обзор функций](/adguard-content-blocker/overview.md)
 
 ## Установка
 
-[Installation](/adguard-content-blocker/installation.md)
+[Установка](/adguard-content-blocker/installation.md)

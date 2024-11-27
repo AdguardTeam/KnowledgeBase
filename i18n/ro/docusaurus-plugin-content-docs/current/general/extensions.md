@@ -55,9 +55,9 @@ Acest script elimină caracteristica de urmărire a Google din linkurile din rez
 
 Codul său sursă este [disponibil pe GitHub](https://github.com/Rob--W/dont-track-me-google). Acest userscript poate fi descărcat de pe [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) și instalat în orice aplicație bazată pe AdGuard CoreLibs.
 
-#### microShield
+#### tinyShield
 
-Un userscript pentru persoanele care vizitează site-uri coreene și unele site-uri internaționale. Userscriptul microShield blochează reclamele Ad-Shield și anti-adblock-uri. Codul său sursă original este disponibil la [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) și [AdShield Defuser](https://github.com/seia-soto/adshield-defuser). Acest userscript poate fi instalat în aplicațiile bazate pe AdGuard CoreLibs, Violentmonkey, Tampermonkey și [quoid/userscripts](https://github.com/quoid/userscripts). Aflați mai multe despre microShield și cum să-l instalați pe [GitHub](https://github.com/List-KR/microShield).
+Un userscript pentru persoanele care vizitează site-uri coreene și unele site-uri internaționale. The tinyShield userscript blocks Ad-Shield ads and anti-adblocks. Acest userscript poate fi instalat în aplicațiile bazate pe AdGuard CoreLibs, Violentmonkey, Tampermonkey și [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about tinyShield and how to install it on [GitHub](https://github.com/List-KR/tinyShield).
 
 ### De unde puteți obține mai multe userscripts?{#more-userscripts}
 
@@ -89,15 +89,7 @@ Dacă vă place ideea de a personaliza browserul dvs. cu userscripts și aveți 
 
 #### Solicitați licență
 
-Dacă dezvoltați propriul script personalizat și doriți să testați cum funcționează cu AdGuard, puteți solicita o cheie de licență beta pentru aplicație.
-
-To get it, please send an email to devteam@adguard.com with the following information:
-
-**Subiect:** Cerere de licență pentru autorul userscript-ului
-
-**Body:** Please tell us about the userscripts you are working on.
-
-Iată un [link mailto](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request\&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK).
+If you are developing your own userscript and want to test how it works with AdGuard, you can request a license by filling in [the form](https://surveys.adguard.com/en/for_developers_request/form.html).
 
 #### Compatibilitate
 
@@ -213,7 +205,7 @@ GM_log
 
 ## Stiluri de utilizator
 
-Stilurile de utilizator permit utilizatorilor să-și personalizeze experiența online. Indiferent dacă doriți să schimbați aspectul unui site web sau să automatizați sarcini repetitive, stilurile oferă o lume de posibilități.
+Userstyles allow users to change the appearance of popular websites.
 
 AdGuard are opțiunea de a încărca sau crea propriile stiluri de utilizator. Aceasta este o caracteristică avansată, așa că va trebui să aveți cunoștințe despre HTML și CSS.
 
@@ -231,7 +223,7 @@ Puteți descărca stiluri de utilizator de pe diferite site-uri. Unul dintre cel
 
 1. Follow the link above and choose the userstyle you like
 
-2. Right-click the _Install_ button and choose _Copy Link Address_
+2. Click _Copy_ next to the userstyle address
 
 3. Open AdGuard settings → _Extensions_
 
@@ -239,7 +231,7 @@ Puteți descărca stiluri de utilizator de pe diferite site-uri. Unul dintre cel
 
 5. Terminat!
 
-If you’re familiar with CSS rules, you can also create the userstyles yourself.
+If you’re familiar with CSS rules, you can also create userstyles yourself.
 
 :::note
 
