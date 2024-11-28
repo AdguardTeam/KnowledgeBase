@@ -33,7 +33,7 @@ Here you can find the DNS protection settings: available providers, filters, Blo
 
 [DNS](/adguard-for-mac/features/dns.md)
 
-## Modo invisível
+## Modo Stealth
 
 [Stealth Mode](/adguard-for-mac/features/stealth.md)
 

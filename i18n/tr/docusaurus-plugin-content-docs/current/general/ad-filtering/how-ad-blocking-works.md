@@ -31,7 +31,7 @@ And even when a rule finally gets added to a filter, it doesn't mean that it sta
 
 AdGuard users [have access to a special web reporting tool](https://reports.adguard.com/new_issue.html). Thanks to user complaints, filter developers can focus on correcting their filter lists and not on scouring the Internet for new and old unblocked ads.
 
-Filters can do more than just block ads. There are filters that block tracking, social media widgets, and annoyances, such as cookie notices. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
+Filters can do more than just block ads. İzlenmeyi, sosyal medya araçlarını ve çerez bildirimleri gibican sıkıcı öğeleri engelleyen filtreler vardır. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
 
 We develop and maintain [our own set of filter lists](../adguard-filters) that can be used with AdGuard or other ad blockers.
 
@@ -63,31 +63,31 @@ There are other types of filtering rules, but they require more advanced technic
 
 :::
 
-## Types of request handling in AdGuard
+## AdGuard'da istek işleme türleri
 
-AdGuard handles requests according to filters, user rules and settings enabled by the user. As a result, a request can be blocked, modified, allowed or, when nothing is done to it, just processed.
+AdGuard, istekleri kullanıcı tarafından etkinleştirilen filtrelere, kullanıcı kurallarına ve ayarlara göre işler. Sonuç olarak, bir istek engellenebilir, değiştirilebilir, izin verilebilir veya üzerine hiçbir işlem yapılmadığında sadece işlenebilir.
 
 Detailed information on how each request of yours has been handled by AdGuard can be found in the *Filtering log* (AdGuard for Windows, AdGuard for Mac, AdGuard Browser Extension) or *Recent activity* (AdGuard for iOS, AdGuard for Android).
 
-Regarding AdGuard filters, you can also check [our filter policy](../filter-policy), which describes in detail what and why each of our filters blocks.
+AdGuard filtreleriyle ilgili olarak, filtrelerimizin her birinin neyi ve neden engellediğini ayrıntılı olarak açıklayan [filtre politikamızı](../filter-policy) da kontrol edebilirsiniz.
 
-### Examples of blocked requests
+### Engellenen isteklerin örnekleri
 
-AdGuard DNS filter blocks requests to ad domains, such as `ad.doubleclick.net`.
+AdGuard DNS filtresi, `ad.doubleclick.net` gibi reklam alan adlarına gelen istekleri engeller.
 
-AdGuard Tracking Protection filter blocks tracking requests, such as `youtube.com/youtubei/log_event?`.
+AdGuard İzleme Koruması filtresi, `youtube.com/youtubei/log_event?` gibi izleme isteklerini engeller.
 
-### Examples of allowed requests
+### İzin verilen isteklerin örnekleri
 
-AdGuard Base filter allows non-ad requests, such as `www.google.com/complete/search?q=`.
+AdGuard Temel filtresi, `www.google.com/complete/search?q=` gibi reklam dışı isteklerin yapılmasına izin verir.
 
 Filter unblocking search ads and self-promotion allows requests to search ad-related domains, such as `www.google.com/aclk?`.
 
-Requests to websites that are added by the user to *Allowlist* are allowed.
+Kullanıcı tarafından *İzin listesine* eklenen sitelere yapılan isteklere izin verilir.
 
-### Examples of modified requests
+### Değiştirilmiş isteklerin örnekleri
 
-Tracking protection feature with protection level set to *High* enables AdGuard URL Tracking filter which modifies requests by removing tracking parameters from them:
+Koruma seviyesi *Yüksek* olarak ayarlanmış izleme koruması özelliği, izleme parametrelerini kaldırarak istekleri değiştiren AdGuard URL İzleme filtresini etkinleştirir:
 
 `https://www.rentio.jp/products/ax-n1b?click_from=top_newitems` → `https://www.rentio.jp/products/ax-n1b`
 
@@ -97,5 +97,5 @@ Tracking protection feature with protection level set to *High* enables AdGuard 
 
 Please note that *modified* events you see in the Filtering log or Recent activity refer not only to the cases when a request is modified, but also when:
 
-- something on the page is changed (usually by cosmetic rules)
-- the response is modified
+- sayfadaki bir şey değiştirilirse (genellikle kozmetik kurallar tarafından)
+- yanıt değiştirilirse

@@ -284,7 +284,7 @@ Wildcard-символы поддерживаются для TLD-доменов �
 
 - ✅ — полностью поддерживается
 - ✅ * — поддерживается, но надёжность может быть разной или могут возникнуть ограничения; ознакомьтесь с описанием модификатора для получения подробной информации
-- ⏳ — feature that is planned to be implemented but is not yet available in any product
+- ⏳ — планируется к реализации, но пока недоступен ни в одном продукте
 - ❌ — не поддерживается
 
 :::
@@ -446,7 +446,7 @@ entry_i = ( regular_domain / any_tld_domain / regexp )
 
 :::caution Ограничения
 
-In [AdGuard for Chrome MV3][ext-mv3] `regexp` and `any_tld domains` are not supported.
+In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries are not supported.
 
 :::
 
@@ -460,7 +460,7 @@ Safari не поддерживает одновременно разрешённ
 
 Правила с регулярными выражениями в модификаторе `$domain` поддерживаются в AdGuard для Windows, AdGuard для Mac и AdGuard для Android [с CoreLibs][] версии 1.11 или выше и в Браузерном расширении AdGuard [с TSUrlFilter][] версии 3.0.0 или выше.
 
-In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.12 or later the `$domain` modifier can be alternatively spelled as `$from`.
+В AdGuard для Windows, Mac и Android [с CoreLibs 1.12 или более поздней версии][] вместо модификатора `$domain` можно также использовать `$from`.
 
 :::
 
@@ -578,7 +578,7 @@ AdGuard будет пытаться закрыть браузерную вкла
 :::caution Ограничения
 
 1. Модификатор `$popup` лучше всего работает в расширении AdGuard для браузеров на базе Chromium и Firefox.
-1. In [AdGuard for Chrome MV3][ext-mv3] rules with the [`$popup`][popup-in-mv3] modifier would not work, so we disable converting them to declarative rules. Мы попытаемся использовать их только в нашем движке [TSUrlFilter][] и закрывать новые вкладки программно.
+1. [В AdGuard для Chrome MV3][ext-mv3] правила с модификатором [`$popup`][popup-in-mv3] не будут работать, поэтому мы отключаем их преобразование в декларативные правила. Мы попытаемся использовать их только в нашем движке [TSUrlFilter][] и закрывать новые вкладки программно.
 1. В AdGuard для iOS и AdGuard для Safari `$popup`-правила просто заблокируют страницу.
 1. В AdGuard для Windows, AdGuard для Mac и AdGuard для Android модификатор `$popup` в некоторых случаях может не обнаружить всплывающее окно, и оно не будет заблокировано. Модификатор `$popup` применяет тип контента `document` со специальным флагом, который передаётся блокирующей странице. Блокирующая страница сама может провести некоторые проверки и закрыть окно, если это действительно всплывающее окно. В противном случае страница должна быть загружена. Его можно комбинировать с другими модификаторами типа запроса, такими как `$third-party`, `$strict-third-party`, `$strict-first-party` и `$important`.
 
@@ -784,7 +784,7 @@ AdGuard для Windows, Mac и Android часто не может точно о�
 
 :::info Совместимость
 
-Rules with `$ping` modifier are not supported by AdGuard for Safari and AdGuard for iOS.
+Правила с модификатором `$ping` не поддерживаются в AdGuard для Safari и AdGuard для iOS.
 
 :::
 
@@ -817,11 +817,11 @@ Rules with `$ping` modifier are not supported by AdGuard for Safari and AdGuard 
 
 :::
 
-##### `$subdocument` modified limitations {#subdocument-modifier-limitations}
+##### Ограничения модификатора `$subdocument` {#subdocument-modifier-limitations}
 
 :::caution Ограничения
 
-In AdGuard for Windows, Mac, and Android subdocuments are being detected by the [Sec-Fetch-Dest header][] if it is present. В противном случае некоторые основные страницы могут рассматриваться как поддокументы.
+В AdGuard для Windows, Mac и Android поддокументы определяются [по заголовку Sec-Fetch-Dest][], если он присутствует. В противном случае некоторые основные страницы могут рассматриваться как поддокументы.
 
 :::
 
@@ -835,11 +835,11 @@ In AdGuard for Windows, Mac, and Android subdocuments are being detected by the 
 
 Правило применяется только к соединениям WebSocket.
 
-##### `$websocket` modifier limitations {#websocket-modifier-limitations}
+##### Ограничения модификатора `$websocket` {#websocket-modifier-limitations}
 
 :::caution Ограничения
 
-For AdGuard for Safari and AdGuard for iOS, it is supported on devices with macOS Monterey (version 12) and iOS 16 or higher respectively.
+Что касается AdGuard для Safari и AdGuard для iOS, то они поддерживаются на устройствах с macOS Monterey (версия 12) и iOS 16 и выше соответственно.
 
 :::
 
@@ -993,7 +993,7 @@ $extension="userscript name\, with \"quote\""
 
 #### **`$jsinject`** {#jsinject-modifier}
 
-Forbids adding of JavaScript code to the page. О скриптлетах и javascript-правилах речь пойдёт ниже.
+Запрещает добавлять JavaScript-код на страницу. О скриптлетах и javascript-правилах речь пойдёт ниже.
 
 **Примеры**
 
@@ -1212,7 +1212,7 @@ Rules with `$genericblock` modifier are not supported by AdGuard Content Blocker
 
 - ✅ — полностью поддерживается
 - ✅ * — поддерживается, но надёжность может быть разной или могут возникнуть ограничения; ознакомьтесь с описанием модификатора для получения подробной информации
-- ⏳ — feature that is planned to be implemented but is not yet available in any product
+- ⏳ — планируется к реализации, но пока недоступен ни в одном продукте
 - ❌ — не поддерживается
 - 👎 — устарел; всё ещё поддерживается, но в будущем будет удалён
 
@@ -4749,7 +4749,7 @@ The following scriptlets also may be used for debug purposes:
 - ✅ — полностью поддерживается
 - ✅ * — поддерживается, но надёжность может быть разной или могут возникнуть ограничения; ознакомьтесь с описанием модификатора для получения подробной информации
 - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
-- ⏳ — feature that is planned to be implemented but is not yet available in any product
+- ⏳ — планируется к реализации, но пока недоступен ни в одном продукте
 - ❌ — не поддерживается
 - 👎 — устарел; всё ещё поддерживается, но в будущем будет удалён
 - 🚫 — удалён и больше не поддерживается
@@ -4758,7 +4758,7 @@ The following scriptlets also may be used for debug purposes:
 
 [popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#popup
 
-[Sec-Fetch-Dest header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
+[по заголовку Sec-Fetch-Dest]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
 
 [jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#jsinject
 
@@ -4768,6 +4768,7 @@ The following scriptlets also may be used for debug purposes:
 [ext-chr]: #what-product "Браузерное расширение AdGuard для Chrome и других браузеров на основе Chromium"
 [ext-mv3]: #what-product "Браузерное расширение AdGuard MV3 для Chrome"
 [ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
+[ext-mv3]: #what-product "Браузерное расширение AdGuard для Chrome MV3"
 [ext-ff]: #what-product "Браузерное расширение AdGuard для Firefox"
 [ios-app]: #what-product "AdGuard для iOS и AdGuard Pro для iOS"
 [ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"
@@ -4780,6 +4781,7 @@ The following scriptlets also may be used for debug purposes:
 [FiltersRegistry]: https://github.com/AdguardTeam/FiltersRegistry
 [c CoreLibs]: https://adguard.com/en/blog/introducing-corelibs.html
 [с CoreLibs]: https://adguard.com/en/blog/introducing-corelibs.html
+[с CoreLibs 1.12 или более поздней версии]: https://adguard.com/ru/blog/introducing-corelibs.html
 [CoreLibs]: https://adguard.com/en/blog/introducing-corelibs.html
 [с TSUrlFilter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter#tsurlfilter
 [TSUrlFilter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter#tsurlfilter

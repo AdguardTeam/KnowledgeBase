@@ -446,7 +446,7 @@ In the following examples it is implied that requests are sent from `http://exam
 
 :::caution Limitations
 
-In [AdGuard for Chrome MV3][ext-mv3] `regexp` and `any_tld domains` are not supported.
+In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries are not supported.
 
 :::
 

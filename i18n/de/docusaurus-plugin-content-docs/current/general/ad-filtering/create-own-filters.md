@@ -446,7 +446,7 @@ In den folgenden Beispielen wird davon ausgegangen, dass die Anfragen von `http:
 
 :::caution Beschränkungen
 
-In [AdGuard für Chrome MV3][ext-mv3] werden `regexp` und `any_tld domains` nicht unterstützt.
+In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries are not supported.
 
 :::
 
@@ -4764,7 +4764,6 @@ The following scriptlets also may be used for debug purposes:
 [cl-apps]: #what-product "AdGuard für Windows, Mac und Android"
 [ext-chr]: #what-product "AdGuard Browsererweiterung für Chrome und andere Chromium-basierte Browser"
 [ext-mv3]: #what-product "AdGuard Browsererweiterung für Chrome MV3"
-[ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
 [ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
 [ext-ff]: #what-product "AdGuard Browsererweiterung für Firefox"
 [ext-ff]: #what-product "AdGuard Erweiterung für Firefox"
