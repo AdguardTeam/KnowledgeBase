@@ -453,7 +453,7 @@ despite the pattern `||*page` may match specific domains.
 
 :::caution Limitations
 
-In [AdGuard for Chrome MV3][ext-mv3] `regexp` and `any_tld domains` are not supported.
+In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` modifiers are not supported.
 
 :::
 
