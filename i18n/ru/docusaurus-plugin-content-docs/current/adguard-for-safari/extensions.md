@@ -49,7 +49,7 @@ sidebar_position: 3
 
 ## AdGuard для Safari
 
-*AdGuard for Safari* activates the AdGuard icon next to the search bar. Это полезно, если вы хотите быстро настроить защиту на конкретном сайте или заблокировать рекламу вручную. Расширение также содержит продвинутые правила, которые не преобразуются в формат, поддерживаемый Safari. These include [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), which allow AdGuard to block complex ads, such as those on YouTube.
+*AdGuard для Safari* добавляет иконку AdGuard рядом со строкой поиска. Это полезно, если вы хотите быстро настроить защиту на конкретном сайте или заблокировать рекламу вручную. Расширение также содержит продвинутые правила, которые не преобразуются в формат, поддерживаемый Safari. К ним относятся [CSS-правила](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [расширенные CSS-селекторы](/general/ad-filtering/create-own-filters#extended-css-selectors) и [скриптлеты](/general/ad-filtering/create-own-filters#scriptlets), которые позволяют AdGuard блокировать сложную рекламу, например, на YouTube.
 
 ## Как управлять расширениями Safari
 

@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::note
 
-Die in den Protokollen enthaltenen Daten und/oder Dateien werden in Übereinstimmung mit der [Datenschutzrichtlinie von AdGuard](https://adguard.com/de/privacy.html) verarbeitet.
+Die in den Protokollen enthaltenen Daten und Dateien werden in Übereinstimmung mit der <a [Datenschutzerklärung von AdGuard](https://adguard.com/en/privacy.html) verarbeitet.
 
 :::
 
@@ -59,11 +59,11 @@ Um einen Fehlerbericht direkt von Ihrem Gerät zu erhalten, gehen Sie wie folgt 
 
 ## Erfassen eines Fehlerberichts über Logcat
 
-Auf Geräten mit Android 7 und darunter ist es nicht möglich, einen Fehlerbericht automatisch zu senden. Dann können Sie sie ihn manuell über Logcat erfassen — ein Standard-Android-Befehlszeilentool, das ein Protokoll der Systemmeldungen ausgibt.
+Auf Geräten mit Android 7 und darunter ist es nicht möglich, einen Fehlerbericht automatisch zu senden. Sie können ihn manuell über Logcat erfassen — ein Standard-Android-Befehlszeilentool, das ein Protokoll der Systemmeldungen ausgibt.
 
 Befolgen Sie diese Anweisungen:
 
-**Teil 1: Vorbereiten des Geräts**
+**Teil 1: Gerät vorbereiten**
 
 1. Schalten Sie das Gerät in den Entwicklermodus. Öffnen Sie dazu **Einstellungen** → **Über** → und tippen Sie 7-mal auf **Build-Nummer**.
 
@@ -75,7 +75,7 @@ Befolgen Sie diese Anweisungen:
 
 4 MB sollten ausreichen, um die benötigten Protokolle zu speichern, bis Sie in der Lage sind, den zweiten Teil zu erledigen (das Protokoll vom Gerät abzurufen);
 
-**Teil 2: Das Problem reproduzieren**
+**Teil 2: Problem reproduzieren**
 
 Es ist wichtig, das Problem zu reproduzieren, nachdem der erste Teil abgeschlossen ist.
 
@@ -83,7 +83,7 @@ Es ist wichtig, das Problem zu reproduzieren, nachdem der erste Teil abgeschloss
 
 1. Notieren Sie sich das Datum und die Uhrzeit der Reproduktion und fügen Sie es später in die E-Mail an unseren Support ein.
 
-**Teil 3: Abrufen des Protokolls**
+**Teil #3: Protokoll abrufen**
 
 1. Schließen Sie Ihr Gerät mit einem USB-Kabel an einen PC an.
 
@@ -101,9 +101,9 @@ Es ist wichtig, das Problem zu reproduzieren, nachdem der erste Teil abgeschloss
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-    Senden Sie die erstellte `TXT`-Datei sowie die Zeit, zu der das Problem reproduziert wurde (aus Teil 2), per E-Mail an unser Support-Team unter support@adguard.com.
+    Senden Sie die erstellte `txt`-Datei sowie die Zeit, zu der das Problem reproduziert wurde (aus Teil 2), per E-Mail an unser Support-Team unter support@adguard.com.
 
-### Alternative way for ROOT users
+### Alternative Möglichkeit für gerootete Geräte
 
 1. Laden Sie [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog) herunter und führen Sie es aus.
 

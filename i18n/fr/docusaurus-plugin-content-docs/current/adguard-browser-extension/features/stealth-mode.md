@@ -1,5 +1,5 @@
 ---
-title: Tracking protection (Stealth Mode)
+title: Protection contre le suivi (Mode furtif)
 sidebar_position: 3
 ---
 
