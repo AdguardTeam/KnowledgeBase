@@ -19,7 +19,7 @@ Při každé návštěvě webové stránky si místní klient vyměňuje informa
 
 AdGuard poskytuje nejlepší možnou ochranu tím, že kontroluje jak stránky, tak všechny objekty na nich načtené. AdGuard kontroluje adresy URL a názvy domén pomocí hash prefixů, nikoli celých adres URL, takže naše servery nezachovávají žádné informace o navštívených webových stránkách a vaše osobní údaje jsou zcela v bezpečí. Naše servery odpoví na dotaz aplikace seznamem všech možných adres, které odpovídají prefixu hash. Pokud je na základě shody hash detekována potenciální hrozba, přístup na danou webovou stránku je okamžitě zablokován.
 
-![DNS warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_diana.png)
+![AdGuard warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/dangerous_website_blocked.png)
 
 ### V rozšířeních prohlížeče
 

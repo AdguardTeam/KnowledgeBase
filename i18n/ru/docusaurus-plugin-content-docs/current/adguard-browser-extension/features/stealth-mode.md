@@ -1,5 +1,5 @@
 ---
-title: Tracking protection (Stealth Mode)
+title: Защита от трекинга
 sidebar_position: 3
 ---
 

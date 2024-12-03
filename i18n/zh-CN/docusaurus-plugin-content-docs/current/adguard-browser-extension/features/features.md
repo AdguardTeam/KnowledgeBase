@@ -1,5 +1,5 @@
 ---
-title: Features
+title: 功能
 sidebar_position: 1
 ---
 
@@ -9,7 +9,7 @@ sidebar_position: 1
 
 :::
 
-## Main menu
+## 主菜单
 
 The article explains the main functions on the pop-up, such as enabling or disabling ad blocking, accessing settings, managing filters, and viewing protection statistics.
 
@@ -21,7 +21,7 @@ The article describes how AdGuard Browser Extension allows you to customize ad b
 
 [Filters](/adguard-browser-extension/features/filters.md)
 
-## Tracking protection (Stealth Mode)
+## 跟踪保护（隐身模式）
 
 The article explains how this feature enhances privacy by blocking online trackers, hiding user information, and preventing third-party data collection.
 
@@ -31,4 +31,4 @@ The article explains how this feature enhances privacy by blocking online tracke
 
 The article describes additional features and information, such as update notifications, filtering log, statistics on blocked ads and trackers, links to privacy documents, and the repository.
 
-[Other features and options](/adguard-browser-extension/features/other-features.md)
+[其他功能与选项](/adguard-browser-extension/features/other-features.md)

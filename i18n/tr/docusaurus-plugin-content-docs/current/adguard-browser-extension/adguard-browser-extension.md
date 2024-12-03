@@ -13,25 +13,25 @@ Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakk
 
 Here are outlined the main features and settings available in the AdGuard Browser Extension.
 
-[Features](/adguard-browser-extension/features/features.md)
+[Features](/adguard-browser-extension/features)
 
 ## Kullanılabilirlik
 
 In this article, you'll learn about the supported browsers and platforms where the extension can be installed.
 
-[Kullanılabilirlik](/adguard-browser-extension/availability.md)
+[Availability](/adguard-browser-extension/availability)
 
 ## Kurulum
 
 The article explains how to install the AdGuard Browser Extension on various supported browsers.
 
-[Yükleme](/adguard-browser-extension/installation.md)
+[Installation](/adguard-browser-extension/installation)
 
 ## Bağımsız uygulama ile uyumluluk
 
 The article explains the compatibility of the AdGuard Browser Extension with the AdGuard desktop apps.
 
-[Bağımsız uygulama ile uyumluluk](adguard-browser-extension/compatibility.md)
+[Compatibility with the standalone app](/adguard-browser-extension/compatibility)
 
 ## Chrome için AdGuard Tarayıcı Uzantısı MV3
 
@@ -43,16 +43,16 @@ This article discusses the AdGuard browser extension for Chrome, which is compat
 
 The article describes how the AdGuard Browser Extension manages protected pages, restricting ad blocking on certain sensitive websites to ensure proper functionality.
 
-[Browser-protected pages](/adguard-browser-extension/protected-pages.md)
+[Browser-protected pages](/adguard-browser-extension/protected-pages)
 
 ## Sorunları çözme
 
 Bu bölümde bilinen sorunları ve olası çözümleri ele alan kılavuzlar yer almaktadır.
 
-[Sorunları çözme](/adguard-browser-extension/solving-problems/solving-problems.md)
+[Solving problems](/adguard-browser-extension/solving-problems)
 
 ## Bağımsız uygulamalar ile karşılaştırma
 
 The article highlights the differences in functionality, coverage, and features between the AdGuard extensions and desktop apps.
 
-[Bağımsız uygulama ile uyumluluk](/adguard-browser-extension/comparison-standalone.md)
+[Comparison to standalone apps](/adguard-browser-extension/comparison-standalone)

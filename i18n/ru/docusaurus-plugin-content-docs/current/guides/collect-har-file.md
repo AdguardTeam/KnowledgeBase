@@ -113,7 +113,7 @@ sidebar_position: 1
 
 1. Воспроизведите действия, создающие проблему.
 
-1. Save session as a .har file by clicking the **Save to disk** button (Export as HAR) on Network tab.
+1. Сохраните сессию в виде файла .har, нажав на кнопку **Сохранить на диск** (Экспортировать как HAR) во вкладке Сеть.
 
 1. Отправьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
 

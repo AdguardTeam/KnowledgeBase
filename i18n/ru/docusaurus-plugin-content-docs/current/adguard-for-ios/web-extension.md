@@ -11,7 +11,7 @@ sidebar_position: 3
 
 ## Что оно делает
 
-By default, Safari provides only basic tools for content blockers. These tools don't offer the level of performance found in content blockers on other operating systems (Windows, Mac, Android). For example, AdGuard apps on other platforms can use such powerful anti-ad weapons as [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets). Unfortunately, these utilities are absolutely irreplaceable when dealing with more complex cases, such as pre-roll ads on YouTube.
+По умолчанию Safari предоставляет блокировщикам контента только базовые инструменты. Эти инструменты не позволяют добиться уровня блокировки, который доступен блокировщикам на других операционных системах (Windows, Mac, Android). Например, приложения AdGuard на других платформах могут использовать такие мощные средства борьбы с рекламой, как [CSS-правила](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [расширенные CSS-селекторы](/general/ad-filtering/create-own-filters#extended-css-selectors) и [скриптлеты](/general/ad-filtering/create-own-filters#scriptlets). Эти инструменты совершенно незаменимы при работе со сложной рекламой, например, с рекламой на YouTube.
 
 Веб-расширение AdGuard для Safari дополняет AdGuard, давая ему возможность применять все эти типы правил фильтрации.
 
@@ -19,7 +19,7 @@ By default, Safari provides only basic tools for content blockers. These tools d
 
 ![Меню веб-расширения *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/ext_adguard_ru.png)
 
-> On iPads, AdGuard's Safari web extension can be accessed directly by tapping the AdGuard icon in the browser's address bar.
+> На устройствах iPad веб-расширение AdGuard для Safari доступно напрямую — просто нажмите на иконку AdGuard в адресной строке браузера.
 
 Вы увидите следующий список опций:
 
@@ -57,7 +57,7 @@ By default, Safari provides only basic tools for content blockers. These tools d
 
 ### В Safari
 
-You can also enable the AdGuard extension from the Safari browser. To do it, tap *Extensions* (if you don't see it next to the address bar, tap the `aA` icon).
+Вы также можете включить расширение AdGuard в браузере Safari. Для этого нажмите *Расширения* (если этого раздела нет рядом с адресной строкой, нажмите на иконку `aA`).
 
 ![В Safari коснитесь значка aA * mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari1_ru.png)
 

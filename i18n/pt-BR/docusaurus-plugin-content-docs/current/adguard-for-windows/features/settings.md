@@ -40,7 +40,7 @@ No módulo Bloqueador de anuncios, você pode:
 
 Antes de começar a escrever manualmente suas próprias regras, leia nosso [guia de sintaxe](/general/ad-filtering/create-own-filters) detalhado.
 
-### Modo invisível
+### Modo Stealth
 
 Muitos sites coletam informações sobre seus visitantes, como endereços IP, informações sobre o navegador e sistema operacional instalado, resolução de tela e até mesmo de qual página o usuário veio ou foi redirecionado. Algumas páginas da web usam cookies para marcar o navegador e salvar suas configurações pessoais, preferências de usuário ou “reconhecê-lo” em sua próxima visita. O Modo Sigiloso protege suas informações pessoais desses sistemas de coleta de dados e estatísticas.
 

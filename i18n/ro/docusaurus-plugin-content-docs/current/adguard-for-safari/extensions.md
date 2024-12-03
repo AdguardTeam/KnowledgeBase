@@ -49,7 +49,7 @@ Regulile utilizatorilor și regulile din lista albă sunt incluse în fiecare ex
 
 ## AdGuard for Safari
 
-*AdGuard pentru Safari activează iconița AdGuard lângă bara de căutare. Este util dacă doriți să configurați rapid protecția pentru un site web specific sau să blocați manual reclamele. De asemenea, conține reguli avansate care nu sunt convertite în formatul acceptat de Safari. Acestea includ [reguli CSS](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Selectoare CSS extinse](/general/ad-filtering/create-own-filters#extended-css-selectors), și [scripturi](/general/ad-filtering/create-own-filters#scriptlets), care permit AdGuard să blocheze reclame complexe, cum ar fi cele de pe YouTube.
+*AdGuard for Safari* activates the AdGuard icon next to the search bar. Este util dacă doriți să configurați rapid protecția pentru un site web specific sau să blocați manual reclamele. De asemenea, conține reguli avansate care nu sunt convertite în formatul acceptat de Safari. These include [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), which allow AdGuard to block complex ads, such as those on YouTube.
 
 ## Cum să gestionați extensiile Safari
 

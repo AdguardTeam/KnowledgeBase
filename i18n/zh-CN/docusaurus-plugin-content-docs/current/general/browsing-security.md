@@ -19,7 +19,7 @@ sidebar_position: 3
 
 AdGuard 检查页面和页面上加载的所有元素提供最佳保护。 AdGuard 使用散列前缀检查 URL 和域名，而不是完整的 URL，因此我们的服务器不会保留用户访问的网站信息，个人信息受100%的安全保护。 我们的服务器会响应 App 的查询，列出所有与散列前缀匹配的可能地址。 当根据哈希匹配检测到潜在威胁时，会立即阻止该网站。
 
-![DNS 警告](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_diana.png)
+![AdGuard warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/dangerous_website_blocked.png)
 
 ### 浏览器扩展
 

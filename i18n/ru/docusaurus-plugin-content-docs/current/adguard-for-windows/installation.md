@@ -23,31 +23,31 @@ sidebar_position: 2
 
 Чтобы использовать программу AdGuard на компьютере или планшете под управлением Microsoft Windows, загрузите установочный пакет этого приложения и запустите программу установки. Для этого выполните перечисленные ниже действия:
 
-1. Go to the [AdGuard website](http://adguard.com) in the address bar and click *Download* [on the homepage](https://adguard.com/download.html?auto=1).
+1. Перейдите [ на сайт AdGuard](http://adguard.com) в адресной строке и нажмите *Скачать*.
 
-   ![Download AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
+   ![Скачайте AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
 
-2. When the download is finished, press the *Open* button shown in the Downloads bar or click the file name *adguardInstaller.exe*.
+2. После завершения загрузки нажмите на кнопку *Открыть*, которая отобразится на панели загрузки браузера, либо нажмите на скачанный файл *adguardInstaller.exe*.
 
-   ![Press "Run"](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/click-download.png)
+   ![Нажмите "Запустить"](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/click-download.png)
 
-3. You’ll see the User Account Control dialogue box requesting to allow the app to make changes to your PC. Click *Yes*.
+3. Вы увидите окно Контроля учётных записей, запрашивающее разрешение вносить изменения в ваш компьютер. Нажмите *Да*.
 
-   ![Allow changes *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/allow-changes.png)
+   ![Разрешите изменения *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/allow-changes.png)
 
-4. Next, choose the folder on your PC for the app to be installed to.
+4. Выберите папку на компьютере, в которую будет установлено приложение.
 
-   ![Choose folder *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/install-wizard.png)
+   ![Выберите папку *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/install-wizard.png)
 
-   If you do not agree with the default installation path, press *Browse*, select the folder for AdGuard installation in the *Browse For Folder* window, and confirm your choice by clicking *OK*. You can also install AdGuard to a new folder by clicking *Make New Folder* and entering its name. To create a desktop shortcut for AdGuard, check the *Create a desktop shortcut* box. Press *Install* to proceed with installation.
+   Если вы не согласны с путём установки по умолчанию, нажмите *Обзор*, укажите папку для установки AdGuard в окне *Обзор папок* и подтвердите свой выбор, нажав *ОК*. Вы также можете установить AdGuard в новую папку, нажав *Создать папку* и введя её имя. Чтобы добавить ярлык AdGuard на рабочий стол Windows, установите флажок *Создать ярлык на рабочем столе*. Для продолжения установки нажмите на кнопку *Установить*.
 
-   ![Start installation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/start-install.png)
+   ![Начните установку *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/start-install.png)
 
-5. Wait for the installation to complete and click *Finish*.
+5. Дождитесь завершения установки и нажмите *Готово*.
 
-   ![Complete installation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/finish-install.png)
+   ![Полная установка *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/finish-install.png)
 
-   Congratulations! You have successfully installed AdGuard on your computer. On the screen you will see the main window where you can change the app’s settings.
+   Поздравляем! Вы установили AdGuard на компьютер. На экране отобразится основное окно приложения, в котором вы сможете изменить его настройки.
 
 ## Как удалить AdGuard для Windows {#uninstall}
 
@@ -105,20 +105,20 @@ sidebar_position: 2
 
 AdGuard успешно удалён
 
-#### Running the uninstaller in console mode
+#### Запуск инструмента удаления в консольном режиме
 
-Besides running the advanced uninstaller in its user-interactive mode, you can also use command-line arguments to uninstall AdGuard for Windows. To do this, follow the instructions below:
+Вы также можете использовать командную строку, чтобы запустить программу удаления AdGuard для Windows. Чтобы это сделать, следуйте инструкции ниже:
 
-1. Open Command Prompt by typing *cmd* from the Start menu.
-2. Use `/console` to run the uninstaller in console mode, without the interactive UI. All the command-line parameters below will be ignored if the `/console` mode is not activated.
-3. Use `/adblocker` to uninstall AdGuard for Windows. Это должно выглядеть так:
+1. Введите *cmd* в меню Пуск, чтобы открыть командную строку.
+2. Используйте `/console`, чтобы запустить программу удаления в консольном режиме, без интерактивного интерфейса. Все параметры командной строки ниже будут игнорироваться, если режим `/console` не активирован.
+3. Используйте `/adblocker`, чтобы удалить AdGuard для Windows. Это должно выглядеть так:
 
    `Adguard.UninstallUtility.exe /console /adblocker`
 
-4. You can also use `/advanced` to force the uninstaller to run in *Advanced mode* and `/settings` to force the uninstaller to remove user settings along with the application.
+4. Вы также можете использовать `/advanced`, чтобы принудить программу удалить программу в *расширенном режиме* и `/settings`, чтобы принудить программу удалить пользовательские настройки вместе с приложением.
 
 :::note
 
-The use of the parameters `/console` and `/adblocker` is necessary for a successful uninstall. The parameters `/advanced` and `/settings` are optional.
+Для успешного удаления необходимо использование параметров `/console` и `/adblocker`. Параметры `/advanced` и `/settings` являются необязательными.
 
 :::

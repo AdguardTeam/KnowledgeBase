@@ -9,7 +9,7 @@ sidebar_position: 10
 
 :::
 
-## Основное
+## Основные
 
 ![Сеть](https://cdn.adtidy.org/content/kb/ad_blocker/mac/network.png)
 

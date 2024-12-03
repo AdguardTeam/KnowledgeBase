@@ -19,7 +19,7 @@ AdGuardは、お客様が訪問されたウェブサイトに関するい情報�
 
 AdGuard は、ページとページ上にロードされたすべてのオブジェクトの両方を検査することで、可能な限り最高の保護を提供します。 AdGuardは、完全なURLではなく、ハッシュ接頭辞（プレフィックス）を使用してURLとドメイン名をチェックするため、AdGuardのサーバーはお客様が訪問したウェブサイトに関する情報を保持しないため、お客様の個人情報は完全に安全になります。 AdGuardのサーバーは、ハッシュ接頭辞に一致するすべての可能なアドレスのリストで、アプリのクエリに応答します。 ハッシュマッチに基づいて潜在的な脅威が検出されると、そのウェブサイトへのアクセスが即座にブロックされます。
 
-![DNS警告](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_diana.png)
+![AdGuard warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/dangerous_website_blocked.png)
 
 ### AdGuard ブラウザ拡張機能の場合
 

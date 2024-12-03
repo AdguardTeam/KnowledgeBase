@@ -31,7 +31,7 @@ And even when a rule finally gets added to a filter, it doesn't mean that it sta
 
 AdGuard users [have access to a special web reporting tool](https://reports.adguard.com/new_issue.html). Thanks to user complaints, filter developers can focus on correcting their filter lists and not on scouring the Internet for new and old unblocked ads.
 
-Filters can do more than just block ads. There are filters that block tracking, social media widgets, and annoyances such as cookie notices. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
+Filters can do more than just block ads. İzlenmeyi, sosyal medya araçlarını ve çerez bildirimleri gibican sıkıcı öğeleri engelleyen filtreler vardır. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
 
 We develop and maintain [our own set of filter lists](../adguard-filters) that can be used with AdGuard or other ad blockers.
 
@@ -62,3 +62,40 @@ These rules are quite complicated and require the ad blocker to be granted certa
 There are other types of filtering rules, but they require more advanced technical knowledge to understand how they work. If you are interested, [check out our comprehensive guide on filtering rules in the linked article](../create-own-filters).
 
 :::
+
+## AdGuard'da istek işleme türleri
+
+AdGuard, istekleri kullanıcı tarafından etkinleştirilen filtrelere, kullanıcı kurallarına ve ayarlara göre işler. Sonuç olarak, bir istek engellenebilir, değiştirilebilir, izin verilebilir veya üzerine hiçbir işlem yapılmadığında sadece işlenebilir.
+
+Detailed information on how each request of yours has been handled by AdGuard can be found in the *Filtering log* (AdGuard for Windows, AdGuard for Mac, AdGuard Browser Extension) or *Recent activity* (AdGuard for iOS, AdGuard for Android).
+
+AdGuard filtreleriyle ilgili olarak, filtrelerimizin her birinin neyi ve neden engellediğini ayrıntılı olarak açıklayan [filtre politikamızı](../filter-policy) da kontrol edebilirsiniz.
+
+### Engellenen isteklerin örnekleri
+
+AdGuard DNS filtresi, `ad.doubleclick.net` gibi reklam alan adlarına gelen istekleri engeller.
+
+AdGuard İzleme Koruması filtresi, `youtube.com/youtubei/log_event?` gibi izleme isteklerini engeller.
+
+### İzin verilen isteklerin örnekleri
+
+AdGuard Temel filtresi, `www.google.com/complete/search?q=` gibi reklam dışı isteklerin yapılmasına izin verir.
+
+Filter unblocking search ads and self-promotion allows requests to search ad-related domains, such as `www.google.com/aclk?`.
+
+Kullanıcı tarafından *İzin listesine* eklenen sitelere yapılan isteklere izin verilir.
+
+### Değiştirilmiş isteklerin örnekleri
+
+Koruma seviyesi *Yüksek* olarak ayarlanmış izleme koruması özelliği, izleme parametrelerini kaldırarak istekleri değiştiren AdGuard URL İzleme filtresini etkinleştirir:
+
+`https://www.rentio.jp/products/ax-n1b?click_from=top_newitems` → `https://www.rentio.jp/products/ax-n1b`
+
+`https://www.baseballchannel.jp/npb/183688/?ref=ise` → `https://www.baseballchannel.jp/npb/183688/`
+
+`https://www.gog.com/game/spec_ops_the_line?pp=2863d7ae605104eeef364e3f164d3404e20f680c&gad_source=1` → `https://www.gog.com/game/spec_ops_the_line`
+
+Please note that *modified* events you see in the Filtering log or Recent activity refer not only to the cases when a request is modified, but also when:
+
+- sayfadaki bir şey değiştirilirse (genellikle kozmetik kurallar tarafından)
+- yanıt değiştirilirse

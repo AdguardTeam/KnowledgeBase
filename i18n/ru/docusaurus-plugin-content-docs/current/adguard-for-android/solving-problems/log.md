@@ -1,5 +1,5 @@
 ---
-title: Как получить отладочные логи AdGuard
+title: Как собрать отладочные логи AdGuard
 sidebar_position: 2
 ---
 

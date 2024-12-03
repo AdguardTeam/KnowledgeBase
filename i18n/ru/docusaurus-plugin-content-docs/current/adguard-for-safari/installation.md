@@ -11,7 +11,7 @@ sidebar_position: 2
 
 ## Системные требования
 
-Requires macOS 10.15 (Catalina). The minimum supported version of Safari is 13 or later.
+Требуется macOS 10.15 (Catalina). Минимальная поддерживаемая версия Safari — 13 или более поздняя.
 
 ## Как установить AdGuard для Safari {#install}
 
@@ -36,12 +36,12 @@ AdGuard для Safari — это бесплатная программа. Она
 
     ![Отмеченные расширения](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 
-1. For AdGuard to work on websites, the *Extensions* setting in Safari must be enabled. Open Safari → *Settings* → *Websites* → *Extensions*. If you want to enable AdGuard on every website, set *For other websites* to *Allow*.
+1. Чтобы AdGuard работал на сайтах, настройка *Расширения* в Safari должна быть включена. Откройте Safari → *Настройки* → *Веб-сайты* → *Расширения*. Если вы хотите, чтобы AdGuard работал на всех сайтах, в опции *Для других веб-сайтов* выберите *Разрешить*.
 
 ![Настройка блокировщика контента на Mac в Safari](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/macos_extensions.png)
 <!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
-After you complete these steps, AdGuard for Safari will start functioning. Теперь вы можете настроить его параметры.
+Готово, AdGuard для Safari заработал. Теперь вы можете настроить его параметры.
 
 ## Как удалить AdGuard для Safari {#uninstall}
 

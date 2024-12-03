@@ -1,5 +1,5 @@
 ---
-title: Modo invisível
+title: Modo Stealth
 sidebar_position: 6
 ---
 

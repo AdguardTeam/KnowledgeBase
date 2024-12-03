@@ -5,54 +5,54 @@ sidebar_position: 1
 
 :::info
 
-Эта статья о Браузерном расширении AdGuard, которое защищает только ваш браузер. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Эта статья о Браузерном расширении AdGuard, которое защищает только ваш браузер. [Скачайте приложение AdGuard](https://adguard.com/download.html?auto=true), чтобы защитить своё устройство
 
 :::
 
-## Features
+## Функции
 
-Here are outlined the main features and settings available in the AdGuard Browser Extension.
+Здесь описаны основные функции и настройки, доступные в Браузерном расширении AdGuard.
 
-[Features](/adguard-browser-extension/features/features.md)
+[Функции](/adguard-browser-extension/features)
 
 ## Доступность
 
-In this article, you'll learn about the supported browsers and platforms where the extension can be installed.
+В этой статье вы узнаете о поддерживаемых браузерах и платформах, на которые можно установить расширение.
 
-[Availability](/adguard-browser-extension/availability.md)
+[Доступность](/adguard-browser-extension/availability)
 
 ## Установка
 
-The article explains how to install the AdGuard Browser Extension on various supported browsers.
+В статье объясняется, как установить Браузерное расширение AdGuard в различных поддерживаемых браузерах.
 
-[Installation](/adguard-browser-extension/installation.md)
+[Установка](/adguard-browser-extension/installation)
 
 ## Совместимость с основным приложением
 
-The article explains the compatibility of the AdGuard Browser Extension with the AdGuard desktop apps.
+В статье рассказывается о совместимости Браузерного расширения AdGuard с десктопными приложениями AdGuard.
 
-[Compatibility with the standalone app](adguard-browser-extension/compatibility.md)
+[Совместимость с автономным приложением](/adguard-browser-extension/compatibility)
 
 ## Браузерное расширение AdGuard MV3 для Chrome
 
-This article discusses the AdGuard browser extension for Chrome, which is compatible with the Manifest V3 API, and how it differs from the browser extension based on Manifest V2.
+В этой статье обсуждается расширение AdGuard для браузера Chrome, которое совместимо с API Manifest V3, и то, чем оно отличается от расширения, основанного на Manifest V2.
 
-[AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version/)
+[Браузерное расширение AdGuard для Chrome MV3](/adguard-browser-extension/mv3-version/)
 
 ## Страницы, защищённые браузером
 
-The article describes how the AdGuard Browser Extension manages protected pages, restricting ad blocking on certain sensitive websites to ensure proper functionality.
+В статье описывается, как браузерное расширение AdGuard управляет защищёнными страницами — оно ограничивает блокировку рекламы на сайтах с конфиденциальной информацией для их нормального функционирования.
 
-[Browser-protected pages](/adguard-browser-extension/protected-pages.md)
+[Защищённые страницы](/adguard-browser-extension/protected-pages)
 
 ## Решение проблем
 
-This section includes guides addressing known issues and possible solutions.
+В этом разделе собраны руководства, в которых рассматриваются известные проблемы и их возможные решения.
 
-[Solving problems](/adguard-browser-extension/solving-problems/solving-problems.md)
+[Решение проблем](/adguard-browser-extension/solving-problems)
 
 ## Сравнение с автономными приложениями
 
-The article highlights the differences in functionality, coverage, and features between the AdGuard extensions and desktop apps.
+Статья подчёркивает различия в функциональности, охвате и функциях между расширениями AdGuard и десктопными приложениями.
 
-[Comparison to standalone apps](/adguard-browser-extension/comparison-standalone.md)
+[Сравнение с отдельными приложениями](/adguard-browser-extension/comparison-standalone)

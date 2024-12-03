@@ -49,7 +49,7 @@ Kullanıcı kuralları ve izin listesi kuralları her uzantıya dahildir.
 
 ## Safari için AdGuard
 
-*Safari için AdGuard, arama çubuğunun yanındaki AdGuard simgesini etkinleştirir. Belirli bir sitede hızlı bir şekilde koruma ayarlamak veya reklamları elle engellemek istiyorsanız kullanışlıdır. Ayrıca Safari tarafından desteklenen biçime dönüştürülmemiş gelişmiş kurallar da içerir. These include [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), which allow AdGuard to block complex ads, such as those on YouTube.
+*Safari için AdGuard*, arama çubuğunun yanındaki AdGuard simgesini etkinleştirir. Belirli bir sitede hızlı bir şekilde koruma ayarlamak veya reklamları elle engellemek istiyorsanız kullanışlıdır. Ayrıca Safari tarafından desteklenen biçime dönüştürülmemiş gelişmiş kurallar da içerir. These include [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), which allow AdGuard to block complex ads, such as those on YouTube.
 
 ## Safari uzantıları nasıl yönetilir
 

@@ -9,40 +9,40 @@ sidebar_position: 1
 
 :::
 
-This module contains the following settings:
+Раздел «Защита» содержит следующие настройки, о которых есть подробные статьи в этой Базе знаний:
 
 ## Блокировка рекламы
 
-Information on customizing ad blocking, filtering ads and trackers across apps and browsers, with filters and advanced options for system-wide ad blocking.
+В статье рассказывается о настройках для блокировки рекламы в браузерах и приложениях.
 
-[Ad blocking](/adguard-for-android/features/protection/ad-blocking.md)
+[Блокировка рекламы](/adguard-for-android/features/protection/ad-blocking.md)
 
 ## Защита от трекинга
 
-Information on how to block third-party trackers in apps and websites to protect your privacy and prevent data collection.
+В статье рассказывается о настройках, которые позволяют блокировать инструменты отслеживания, которые собирают данные о пользователях.
 
-[Tracking protection](/adguard-for-android/features/protection/tracking-protection.md)
+[Защита от трекинга](/adguard-for-android/features/protection/tracking-protection.md)
 
 ## Блокировка раздражителей
 
-Information on how AdGuard filters block annoyances such as cookie consent pop-ups, banners, and other intrusive elements.
+В статье рассказывается о настройках, которые блокируют раздражающие элементы: например, уведомления о куки, виджеты соцсетей или баннеры, предлагающие скачать мобильные приложения.
 
-[Annoyance blocking](/adguard-for-android/features/protection/annoyance-blocking.md)
+[Блокировка раздражителей](/adguard-for-android/features/protection/annoyance-blocking.md)
 
 ## DNS-защита
 
-Information on configuring secure DNS servers to help block ads, trackers, and malicious websites while protecting your privacy.
+В статье рассказывается о настройке защищённого DNS-сервера и DNS-фильтров для блокировки рекламы, трекеров и опасных сайтов.
 
-[DNS protection](/adguard-for-android/features/protection/dns-protection.md)
+[DNS-защита](/adguard-for-android/features/protection/dns-protection.md)
 
 ## Фаервол
 
-The Firewall feature, which allows users to control Internet access for individual apps, block background data, and monitor network activity for enhanced privacy and data management.
+В статье рассказывается о Фаерволе — функции, которая позволяет управлять доступом в интернет для отдельных приложений.
 
-[Firewall](/adguard-for-android/features/protection/firewall/firewall.md)
+[Фаервол](/adguard-for-android/features/protection/firewall/firewall.md)
 
 ## Защита от фишинга
 
-The Browsing security feature helps block access to malicious and phishing websites, protecting you from online threats.
+В статье рассказывается о Защите от фишинга — функции, которая блокирует доступ к вредоносным и фишинговым сайтам и защищает от онлайн-угроз.
 
-[Browsing security](/adguard-for-android/features/protection/browsing-security.md)
+[Защита от фишинга](/adguard-for-android/features/protection/browsing-security.md)

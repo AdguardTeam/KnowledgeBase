@@ -23,4 +23,4 @@ Tenemos una extensión independiente para Safari. Desde el lanzamiento de [Safar
 
 :::
 
-**No olvides que la funcionalidad de cada extensión está estrictamente limitada por las capacidades del navegador**. Entonces, si deseas obtener una protección completa, considera instalar un programa independiente para tu computadora. Hay [una razón para ello](adguard-browser-extension/comparison-standalone).
+**No olvides que la funcionalidad de cada extensión está estrictamente limitada por las capacidades del navegador**. Entonces, si deseas obtener una protección completa, considera instalar un programa independiente para tu computadora. There's [a reason why](/adguard-browser-extension/comparison-standalone).
