@@ -13,24 +13,36 @@ We recommend setting up two-factor authentication for your AdGuard account. It w
 
 1. Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the Settings tab:
 
-![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
+![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Scroll down to *Password and 2FA* section and click **Enable**:
+1. Scroll down to *Two-factor authentication* section and enable it:
 
-![The Change button *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
+![The Change button *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. Follow the on-screen instructions to install an authenticator app and scan the QR code:
+1. To enable *Two-factor authentication* a code will be sent to the email address associated with your AdGuard account. Enter the code and click *Enable*.
 
-![The verification code](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
+![The verification code](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-***Important***
+:::note
 
-- Save the second-factor backup code somewhere, it will be necessary to recover your account in case your mobile phone gets lost or stolen;
+Save the second-factor backup code somewhere, it will be necessary to recover your account in case your mobile phone gets lost or stolen.
+
+:::
+
+After your enabled *Two-factor authentication* there are two options to choose:
+
+- *One-time email code*: when you log in, we will ask you to enter the code we sent to your email
+
+- *Code from authentication app*: when you log in, we will ask for a code from your authentication app
+
+![The verification options](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 
 If everything is done right, you will see this when you log into your account the next time:
 
 ![The result *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
 
-Use your mobile authenticator app to read the code and enter it. You should be logged in now!
+:::note
 
-***NOTE***: If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
+If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
+
+:::
