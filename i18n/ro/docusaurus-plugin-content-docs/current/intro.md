@@ -15,7 +15,7 @@ AdGuard este unul dintre liderii pe piața software-ului de blocare a reclamelor
 
 Dar dezvoltăm și menținem extensii de browser gratuite pentru toate browserele populare:
 
-- [Extensia de browser AdGuard](/adguard-browser-extension/features/filters)
+- [Extensia de browser AdGuard](/adguard-browser-extension/availability)
 - [AdGuard for Safari](/adguard-for-safari/features/general)
 
 ## Nu doar blocarea reclamelor

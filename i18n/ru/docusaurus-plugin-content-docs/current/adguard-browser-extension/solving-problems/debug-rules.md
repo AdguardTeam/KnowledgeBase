@@ -69,7 +69,7 @@ sidebar_position: 2
 
 2. Нажмите _Загрузить распакованное_:
 
-   ![Load unpacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+   ![Загрузить нераспакованное](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
 3. Выберите каталог расширения и нажмите _Выбрать_:
 

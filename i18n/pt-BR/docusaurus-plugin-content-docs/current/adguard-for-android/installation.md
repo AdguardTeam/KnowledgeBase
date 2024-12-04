@@ -11,39 +11,39 @@ Este artigo é sobre o AdGuard para Android, um bloqueador de anúncios multifun
 
 ## Requisitos do sistema
 
-**OS version:** Android 7.0 or higher
+**Versão do OS:** Android **7,0** ou superior
 
 **RAM:** pelo menos 2 GB
 
-**Free disk space:** 500 MB
+**Espaço livre em disco:** 500 MB
 
 ## Instalação
 
-Most Android-based apps are distributed via Google Play; however, AdGuard is not presented there, because Google prohibits distribution of network-level ad blockers via Google Play, i.e. apps that block commercials in other apps. You will find more information about Google restrictive policy [in our blog](https://adguard.com/blog/adguard-google-play-removal.html).
+A maioria dos aplicativos baseados em Android é distribuída via Google Play; no entanto, o AdGuard não está presente lá, porque o Google proíbe a distribuição de bloqueadores de anúncio em nível de rede via Google Play, ou seja, aplicativos que bloqueiam publicidade em outros aplicativos. Você encontrará mais informações sobre a política restritiva do Google [em nosso blog](https://adguard.com/blog/adguard-google-play-removal.html).
 
-That’s why you can only install AdGuard for Android manually. To use the app on your mobile device, you will need to do the following.
+É por isso que você só pode instalar o AdGuard para Android manualmente. Para usar o aplicativo em seu dispositivo móvel, você precisará fazer o seguinte:
 
-1. **Download the app on your device**. Here are a few ways you can do this:
+1. **Baixe o aplicativo em seu dispositivo**. Aqui estão algumas maneiras de fazer isso:
 
-    - head over to [our website](https://adguard.com/adguard-android/overview.html) and tap the *Download* button
-    - start the browser and type in the following URL: [https://adguard.com/apk](https://adguard.com/apk)
-    - or scan this QR code:
+    - vá para [nosso site](https://adguard.com/adguard-android/overview.html) e toque no botão *Baixar*
+    - inicie o navegador e digite o seguinte URL: [https://adguard.com/apk](https://adguard.com/apk)
+    - ou escaneie este QR code:
 
     ![QR code *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst-qr-en-1.png)
 
-1. **Allow installing apps from unknown sources**. Once the file download is complete, tap *Open* in the notification.
+1. **Permitir a instalação de aplicativos de fontes desconhecidas**. Uma vez que o download do arquivo estiver completo, toque em *Abrir* na notificação.
 
-    ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_1.png)
+    ![Instalando aplicativos de fontes desconhecidas *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_1.png)
 
-    A popup will appear. Tap *Settings*, navigate to *Install unknown apps*, and grant permission for the browser you've used to download the file.
+    Um pop-up aparecerá. Toque em *Configurações*, navegue até *Instalar aplicativos desconhecidos*, e permita a permissão para o navegador que você usou para baixar o arquivo.
 
-    ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_3.png)
+    ![Instalando aplicativos de fontes desconhecidas *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_3.png)
 
-1. **Install the app**. Once the browser has obtained the necessary permissions, the system will ask you if you want to install the AdGuard app. Tap *Install*.
+1. **Instale o aplicativo**. Uma vez que o navegador obteve as permissões necessárias, o sistema perguntará se você deseja instalar o aplicativo. Toque em *Instalar*.
 
-    ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
+    ![Instalando aplicativos de fontes desconhecidas *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
-    You will then be asked to read AdGuard's *License agreement* and *Privacy policy*. You can also participate in product development. To do this, check the boxes for *Send crash reports automatically* and *Send technical and interaction data*. Then tap *Continue*.
+    Em seguida, você será convidado a ler o *Contrato de licença* e a *Política de privacidade* do AdGuard. Você também pode participar do desenvolvimento de produtos. To do this, check the boxes for *Send crash reports automatically* and *Send technical and interaction data*. Then tap *Continue*.
 
     ![Privacy policy *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
 

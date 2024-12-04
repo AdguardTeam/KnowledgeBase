@@ -23,4 +23,4 @@ Per Safari, abbiamo un'estensione indipendente. Dal rilascio di [Safari 13](http
 
 :::
 
-**Non dimenticare che la funzionalità di ogni estensione è rigorosamente limitata dalle capacità del browser**. Quindi, se desideri ottenere una protezione completa, considera d'installare un programma indipendente per il tuo computer. There's [a reason why](adguard-browser-extension/comparison-standalone).
+**Non dimenticare che la funzionalità di ogni estensione è rigorosamente limitata dalle capacità del browser**. Quindi, se desideri ottenere una protezione completa, considera d'installare un programma indipendente per il tuo computer. There's [a reason why](/adguard-browser-extension/comparison-standalone).

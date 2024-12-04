@@ -15,7 +15,7 @@ AdGuard je jedním z lídrů na trhu softwaru pro blokování reklam s více ne�
 
 Vyvíjíme a spravujeme také bezplatná rozšíření prohlížeče pro všechny oblíbené prohlížeče:
 
-- [Rozšíření prohlížeče AdGuard](/adguard-browser-extension/features/filters)
+- [Rozšíření prohlížeče AdGuard](/adguard-browser-extension/availability)
 - [AdGuard pro Safari](/adguard-for-safari/features/general)
 
 ## Nejen blokování reklam

@@ -1,5 +1,5 @@
 ---
-title: Tracking protection (Stealth Mode)
+title: 跟踪保护（隐身模式）
 sidebar_position: 3
 ---
 

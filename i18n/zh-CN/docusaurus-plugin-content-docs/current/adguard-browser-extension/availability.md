@@ -23,4 +23,4 @@ sidebar_position: 2
 
 :::
 
-**请记住，各种浏览器扩展的功能都严格受制于浏览器本身**。因此，如果您想获得全面的保护，还是建议安装单独的程序。 这是[有原因的](adguard-browser-extension/comparison-standalone)。
+**请记住，各种浏览器扩展的功能都严格受制于浏览器本身**。因此，如果您想获得全面的保护，还是建议安装单独的程序。 There's [a reason why](/adguard-browser-extension/comparison-standalone).

@@ -62,3 +62,40 @@ Tato pravidla jsou poměrně složitá a vyžadují, aby blokátor reklam získa
 Existují i další typy pravidel filtrování, ale jejich fungování vyžaduje pokročilejší technické znalosti. Pokud máte zájem, podívejte se na [našeho komplexního průvodce pravidly filtrování v odkazovaném článku](../create-own-filters).
 
 :::
+
+## Typy požadavků zpracovaných AdGuardem
+
+AdGuard zpracovává požadavky podle filtrů, uživatelských pravidel a nastavení povolených uživatelem. Výsledkem je, že požadavek může být zablokován, upraven, povolen, nebo pokud se s ním nic nedělá, pouze zpracován.
+
+Podrobné informace o tom, jak AdGuard zpracoval každý váš požadavek, najdete v *Záznamu filtrování* (AdGuard pro Windows, AdGuard pro Mac, Rozšíření prohlížeče AdGuard) nebo *Nedávná aktivita* (AdGuard pro iOS, AdGuard pro Android).
+
+Pokud jde o filtry AdGuardu, můžete se také podívat na [naše zásady filtrování](../filter-policy), kde je podrobně popsáno, co a proč jednotlivé filtry blokují.
+
+### Příklady blokovaných požadavků
+
+Filtr AdGuard DNS blokuje požadavky na reklamní domény, například `ad.doubleclick.net`.
+
+Filtr AdGuard Ochrana před sledováním blokuje požadavky na sledování, jako jsou `youtube.com/youtubei/log_event?`.
+
+### Příklady povolených požadavků
+
+Základní filtr AdGuardu povoluje požadavky jiné než reklamní, například `www.google.com/complete/search?q=`.
+
+Filtr odblokování reklam ve vyhledávání a vlastní propagace povoluje požadavky o vyhledávání v doménách souvisejících s reklamami, jako je `www.google.com/aclk?`.
+
+Požadavky na webové stránky, které uživatel přidal do *seznamu povolených*, jsou povoleny.
+
+### Příklady modifikovaných požadavků
+
+Funkce ochrany proti sledování s úrovní ochrany nastavenou na *Vysoká* povoluje filtr AdGuard Filtr sledování URL, který upravuje požadavky tím, že z nich odstraňuje parametry sledování:
+
+`https://www.rentio.jp/products/ax-n1b?click_from=top_newitems` → `https://www.rentio.jp/products/ax-n1b`
+
+`https://www.baseballchannel.jp/npb/183688/?ref=ise` → `https://www.baseballchannel.jp/npb/183688/`
+
+`https://www.gog.com/game/spec_ops_the_line?pp=2863d7ae605104eeef364e3f164d3404e20f680c&gad_source=1` → `https://www.gog.com/game/spec_ops_the_line`
+
+Vezměte prosím na vědomí, že *modifikované* události, které vidíte v záznamu filtrování nebo v seznamu nedávných aktivit, se týkají nejen případů, kdy je požadavek změněn, ale také případů, kdy:
+
+- se něco na stránce změní (obvykle podle kosmetických pravidel)
+- je odezva modifikována

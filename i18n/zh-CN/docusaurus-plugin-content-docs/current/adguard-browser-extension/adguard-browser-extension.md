@@ -13,25 +13,25 @@ sidebar_position: 1
 
 Here are outlined the main features and settings available in the AdGuard Browser Extension.
 
-[Features](/adguard-browser-extension/features/features.md)
+[Features](/adguard-browser-extension/features)
 
 ## 可用性
 
 In this article, you'll learn about the supported browsers and platforms where the extension can be installed.
 
-[Availability](/adguard-browser-extension/availability.md)
+[Availability](/adguard-browser-extension/availability)
 
 ## 安装
 
 The article explains how to install the AdGuard Browser Extension on various supported browsers.
 
-[Installation](/adguard-browser-extension/installation.md)
+[Installation](/adguard-browser-extension/installation)
 
 ## 与独立应用程序兼容
 
 The article explains the compatibility of the AdGuard Browser Extension with the AdGuard desktop apps.
 
-[Compatibility with the standalone app](adguard-browser-extension/compatibility.md)
+[Compatibility with the standalone app](/adguard-browser-extension/compatibility)
 
 ## Chrome 版 AdGuard 浏览器扩展 MV3
 
@@ -43,16 +43,16 @@ This article discusses the AdGuard browser extension for Chrome, which is compat
 
 The article describes how the AdGuard Browser Extension manages protected pages, restricting ad blocking on certain sensitive websites to ensure proper functionality.
 
-[Browser-protected pages](/adguard-browser-extension/protected-pages.md)
+[Browser-protected pages](/adguard-browser-extension/protected-pages)
 
 ## 解决问题
 
 This section includes guides addressing known issues and possible solutions.
 
-[Solving problems](/adguard-browser-extension/solving-problems/solving-problems.md)
+[Solving problems](/adguard-browser-extension/solving-problems)
 
 ## 与独立应用程序的比较
 
 The article highlights the differences in functionality, coverage, and features between the AdGuard extensions and desktop apps.
 
-[Comparison to standalone apps](/adguard-browser-extension/comparison-standalone.md)
+[Comparison to standalone apps](/adguard-browser-extension/comparison-standalone)

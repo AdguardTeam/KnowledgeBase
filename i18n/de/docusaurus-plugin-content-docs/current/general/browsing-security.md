@@ -19,7 +19,7 @@ Jedes Mal, wenn Sie eine Website besuchen, tauscht Ihr lokaler Client Informatio
 
 AdGuard bietet den bestmöglichen Schutz, indem es sowohl die Seiten als auch alle auf ihnen geladenen Objekte überprüft. AdGuard prüft URLs und Domain-Namen anhand von Hash-Präfixen, nicht anhand der vollständigen URLs, so dass unsere Server keine Informationen über die von Ihnen besuchten Websites speichern und Ihre persönlichen Daten vollkommen sicher sind. Unsere Server antworten auf die Anfrage der App mit einer Liste aller möglichen Adressen, die mit dem Hash-Präfix übereinstimmen. Wenn eine potenzielle Bedrohung auf der Grundlage von Hash-Übereinstimmungen erkannt wird, wird der Zugriff auf diese Website sofort gesperrt.
 
-![DNS-Warnung](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_diana.png)
+![AdGuard-Warnung](https://cdn.adtidy.org/content/kb/ad_blocker/general/dangerous_website_blocked.png)
 
 ### In Browsererweiterungen
 

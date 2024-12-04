@@ -23,4 +23,4 @@ Nous avons une extension autonome pour Safari. Depuis la sortie de [Safari 13] (
 
 :::
 
-**N'oubliez pas que la fonctionnalité de chaque extension est strictement limitée par les capacités du navigateur.** Donc, si vous souhaitez une protection complète, envisagez d'installer un programme autonome sur votre ordinateur. Il existe [une raison pourquoi](adguard-browser-extension/comparison-standalone).
+**N'oubliez pas que la fonctionnalité de chaque extension est strictement limitée par les capacités du navigateur.** Donc, si vous souhaitez une protection complète, envisagez d'installer un programme autonome sur votre ordinateur. There's [a reason why](/adguard-browser-extension/comparison-standalone).
