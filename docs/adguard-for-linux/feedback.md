@@ -20,7 +20,7 @@ If you want to support the implementation of a new feature or bugfix, you can vo
 
 1. Enable debug logging:
 
-    `adguard-cli config set standaloneServer.logLevel debug`
+    `adguard-cli config set log_level debug`
 
 1. Reproduce the problem and try to remember the exact time it occurred.
 
@@ -34,4 +34,4 @@ If you want to support the implementation of a new feature or bugfix, you can vo
 
 1. Switch the logging mode back to `info`:
 
-    `adguard-cli config set standaloneServer.logLevel info`
+    `adguard-cli config set log_level info`
