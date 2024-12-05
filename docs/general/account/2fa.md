@@ -23,7 +23,7 @@ We recommend setting up two-factor authentication for your AdGuard account. It w
 
  ![The verification code *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-After your enabled *Two-factor authentication* there are two options to choose:
+After you enable two-factor authentication, you have two options to choose from:
 
 - *One-time email code*: when you log in, we will ask you to enter the code we sent to your email
 
