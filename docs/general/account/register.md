@@ -9,7 +9,7 @@ sidebar_position: 1
 
 ## How to create an account
 
-To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and press the *Log in* button on the top right corner of the screen. Enter your email address and create a password — your account will be registered.
+To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and click the *Log in* button on the top right corner of the screen. Enter your email address and create a password — your account will be registered.
 
 :::tip
 
