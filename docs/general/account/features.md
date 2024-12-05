@@ -7,7 +7,7 @@ In your account, you can manage your licenses, devices bound to them, personal d
 
 ## Manage account settings
 
-In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable one-time code log in or [two-factor authentication](../2fa), view the data stored about you by AdGuard and choose the language of your personal account and notifications.
+In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable one-time code login or [two-factor authentication](../2fa), view the data stored about you by AdGuard, and select the language of your account and notifications.
 
 In this section, you can also manage your email preferences:
 
