@@ -13,15 +13,15 @@ We recommend setting up two-factor authentication for your AdGuard account. It w
 
 1. Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the *Settings* tab:
 
- ![AdGuard Account settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
+ ![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
 1. Scroll down to *Two-factor authentication* section and enable it:
 
- ![The Change button *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
+ ![The toggle button *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
 1. To enable *Two-factor authentication* a code will be sent to the email address associated with your AdGuard account. Enter the code and click *Enable*.
 
- ![The verification code *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
+ ![The verification code *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
 After your enabled *Two-factor authentication* there are two options to choose:
 
@@ -29,17 +29,19 @@ After your enabled *Two-factor authentication* there are two options to choose:
 
 - *Code from authentication app*: when you log in, we will ask for a code from your authentication app
 
-![The verification options *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
+![2FA options *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 
 :::note
 
-Save the second-factor backup code somewhere, it will be necessary to recover your account in case your mobile phone gets lost or stolen.
+If you use the authentication app, make sure to save the **setup key** somewhere. It will be necessary to recover your account in case your mobile phone gets lost or stolen.
+
+![The setup key in the authentication app *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
 
 :::
 
 If everything is done right, you will see this when you log into your account the next time:
 
-![The result *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+![The result *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
 
 :::note
 

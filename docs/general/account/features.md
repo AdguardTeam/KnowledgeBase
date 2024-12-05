@@ -1,5 +1,5 @@
 ---
-title: What can be done in the AdGuard Account
+title: What can be done in the AdGuard account
 sidebar_position: 2
 ---
 
@@ -11,9 +11,10 @@ In the *Settings* section of your AdGuard account, you can update or reset your 
 
 In this section, you can also manage your email preferences:
 
-- receive AdGuard’s monthly newsletters,
-- receive transactional emails,
-- send read receipts to AdGuard when you open emails.
+- Receive AdGuard newsletter
+- Receive transactional emails
+- Send read receipts to AdGuard
+- Opt-out preferences
 
 ## Manage licenses
 
