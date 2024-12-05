@@ -15,7 +15,7 @@ We recommend setting up two-factor authentication for your AdGuard account. It w
 
  ![AdGuard Account settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Scroll down to *Two-factor authentication* section and enable it:
+1. Scroll down to *Two-factor authentication* and enable it:
 
  ![The Change button *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
