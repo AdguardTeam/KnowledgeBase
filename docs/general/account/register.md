@@ -9,7 +9,7 @@ sidebar_position: 1
 
 ## How to create an account
 
-To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and press the *Log in* button on the top right corner of the screen. Enter your email address and create a password — your account will be registered.
+To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and click the *Log in* button on the top right corner of the screen. Enter your email address and create a password — your account will be registered.
 
 :::tip
 
@@ -23,7 +23,7 @@ After the account is created, activate it by following the link in the activatio
 
 :::tip
 
-After you registered the account you can use *One-time code* option to log in the application. Enter your email address and then choose to eaither enter your password or recieve a code sent directly to your email.
+After you've registered your account, you can use the *One-time code* option to log in to the application. Enter your email address and choose to enter either your password or the the code sent to your email address.
 
 :::
 

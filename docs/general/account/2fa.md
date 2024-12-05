@@ -15,15 +15,15 @@ We recommend setting up two-factor authentication for your AdGuard account. It w
 
  ![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Scroll down to *Two-factor authentication* section and enable it:
+1. Scroll down to *Two-factor authentication* and enable it:
 
  ![The toggle button *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. To enable *Two-factor authentication* a code will be sent to the email address associated with your AdGuard account. Enter the code and click *Enable*.
+1. A code will be sent to the email address associated with your AdGuard account. To enable 2FA, enter the code and click *Enable*.
 
  ![The verification code *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-After your enabled *Two-factor authentication* there are two options to choose:
+After you enable two-factor authentication, you have two options to choose from:
 
 - *One-time email code*: when you log in, we will ask you to enter the code we sent to your email
 
