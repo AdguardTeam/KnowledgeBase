@@ -35,7 +35,7 @@ AdGuard ブラウザ拡張機能MV3対応版は、SNSウィジェット、バナ
 
   ![Security \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
-## Limitations
+## 制限
 
 ### ルールとフィルタの最大数
 
@@ -55,7 +55,7 @@ Manifest V3 では、拡張子ごとに静的ルールと正規表現ルール�
 
 **動的ルール:** ルールの厳密な上限は**5,000**で、これには最大1,000個の正規表現ルールが含まれます。
 
-If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules, Custom filters, and finally — Quick Fixes filter.
+この制限を超えた場合、**5,000の変換されたルール**のみが次の順序で適用されます：最初にホワイトリスト、次にユーザールール、カスタムフィルタ、最後に臨時修正フィルタ。
 
 > **変換されたルール**は、[宣言的コンバータ][github-declarative-converter]を使って
 > \[DNR形式]に変換されたルールです。

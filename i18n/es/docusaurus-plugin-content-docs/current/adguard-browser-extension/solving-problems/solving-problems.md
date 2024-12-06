@@ -3,7 +3,7 @@ title: Resolución de problemas
 sidebar_position: 1
 ---
 
-Here are some guides you may need to solve problems with the AdGuard Browser Extension.
+Aquí hay algunas guías que puede necesitar para resolver problemas con la extensión de navegador AdGuard.
 
-- [How to export logs from the background page](/adguard-browser-extension/solving-problems/logs.md)
-- [How to debug rules in AdGuard for Chrome MV3](/adguard-browser-extension/solving-problems/debug-rules.md)
+- [Cómo exportar registros desde la página de fondo](/adguard-browser-extension/solving-problems/logs.md)
+- [Cómo depurar reglas en AdGuard para Chrome MV3](/adguard-browser-extension/solving-problems/debug-rules.md)

@@ -9,7 +9,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-:::note
+::note
 
 Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
 
@@ -115,7 +115,7 @@ It is important to reproduce the problem after you're done with the first part.
 
 1. Send this log to our support team.
 
-:::note
+::note
 
 Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
 

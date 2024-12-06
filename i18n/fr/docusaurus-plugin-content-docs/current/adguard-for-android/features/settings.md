@@ -87,7 +87,7 @@ The CA certificate in the user store is enough to filter HTTPS traffic in browse
 
 ##### HTTPS-filtered apps
 
-This section contains the list of apps for which AdGuard filters HTTPS traffic. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
+This section contains the list of apps for which AdGuard filters HTTPS traffic. Veuillez noter que ce paramètre peut être appliqué à toutes les applications uniquement si vous avez des certificats CA dans le stockage d'utilisateur et dans le stockage système.
 
 ##### HTTPS-filtered websites
 

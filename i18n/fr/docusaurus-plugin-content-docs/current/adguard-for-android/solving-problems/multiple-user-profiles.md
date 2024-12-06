@@ -51,7 +51,7 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. If you're u
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Installer et configurer](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB ; Sur la plateforme Windows, les propriétaires de **Samsung** peuvent avoir besoin d'installer [cet utilitaire](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
 
@@ -68,7 +68,7 @@ About how to manage user accounts from an Android device you can [find here](htt
 
 :::note
 
-In some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual messenger or Dual app features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
+In some cases restricted user accounts are created implicitly and cannot be removed. Par exemple, lorsque vous utilisez les fonctionnalités Dual Messenger ou Dual App sur appareils **Samsung** ou **LG**. You can read below how to fix the issue in these cases.
 
 :::
 
@@ -76,9 +76,9 @@ In some cases restricted user accounts are created implicitly and cannot be remo
 
 To enable this mode, open **AdGuard Settings** → **Network** → **Filtering method** → **Local HTTP proxy**
 
-### LG and Samsung devices
+### Appareils LG et Samsung
 
-Owners of **LG** or **Samsung** phones may also encounter a similar issue. It can be caused by using **Dual App/Dual Messenger** function (which automatically creates a restricted profile). To solve this issue, you need to disable this feature.
+Les propriétaires de téléphones **LG** ou **Samsung** peuvent rencontrer un problème similaire. It can be caused by using **Dual App/Dual Messenger** function (which automatically creates a restricted profile). To solve this issue, you need to disable this feature.
 
 ### Samsung
 
