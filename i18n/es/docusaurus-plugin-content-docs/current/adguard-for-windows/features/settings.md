@@ -40,7 +40,7 @@ En el módulo Bloqueador de anuncios, podrás:
 
 Antes de empezar a escribir manualmente tus propias reglas, lee nuestra detallada [guía de sintaxis](/general/ad-filtering/create-own-filters).
 
-### Modo sigiloso
+### Modo Stealth
 
 Muchos sitios web recopilan información sobre sus visitantes, como sus direcciones IP, información sobre el navegador y el sistema operativo instalado, la resolución de la pantalla e incluso desde qué página llegó o fue redirigido el usuario. Algunas páginas web utilizan cookies para marcar el navegador y guardar tu configuración personal, preferencias de usuario o "reconocerte" en tu próxima visita. El modo oculto protege tu información personal de dichos sistemas de recopilación de datos y estadísticas.
 

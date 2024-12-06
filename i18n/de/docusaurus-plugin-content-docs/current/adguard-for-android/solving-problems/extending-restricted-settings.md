@@ -9,7 +9,7 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-In an effort to improve user privacy, Google has expanded the restriction settings in Android 15. Für die Aktivierung weiterer Einstellungen, wie z. B. _Zugang zur Nutzung von Apps_, ist nun eine zusätzliche Berechtigung erforderlich. Since the _[Firewall](/adguard-for-android/features/protection/firewall)_ and _[Detect Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea)_ features require the _App usage access_ setting to be enabled for them to work properly, you may have experienced problems using them. To resolve these issues, please follow the steps below:
+In dem Bemühen, die Privatsphäre der Nutzer zu verbessern, hat Google die Beschränkungseinstellungen in Android 15 erweitert. Für die Aktivierung weiterer Einstellungen, wie z. B. _Zugang zur Nutzung von Apps_, ist nun eine zusätzliche Berechtigung erforderlich. Da für die Funktionen _[Firewall](/adguard-for-android/features/protection/firewall)_ und _[Samsung Pay erkennen](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea)_ die Einstellung _Zugriff auf App-Nutzung_ aktiviert sein muss, damit sie ordnungsgemäß funktionieren, kann es zu Problemen bei der Verwendung kommen. Um diese Probleme zu beheben, führen Sie bitte die folgenden Schritte aus:
 
 :::note
 
@@ -17,7 +17,7 @@ AdGuard verfolgt eine strikte Politik das nicht protokolliert wird, was bedeutet
 
 :::
 
-1. On your Android device, open the **Settings app**.
+1. Öffnen Sie auf Ihrem Android-Gerät die App **Einstellungen**.
 2. Tippen Sie auf **Apps**.
 3. Tippen Sie auf **AdGuard**
 

@@ -27,5 +27,5 @@ Here are some problems you may encounter and workarounds, guides, and instructio
 - [Moving the CA certificate to the system store on rooted devices](/adguard-for-android/solving-problems/https-certificate-for-rooted.md)
 - [Known compatibility issues with Android apps](/adguard-for-android/solving-problems/compatibility-issues.md)
 - [How to install AdGuard for Android TV](/adguard-for-android/solving-problems/adguard-for-android-tv.md)
-- [How to use Samsung Pay with AdGuard in South Korea](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea.md)
+- [Comment utiliser Samsung Pay avec AdGuard en Corée du Sud](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea.md)
 - [Problems caused by extending restricted settings](/adguard-for-android/solving-problems/extending-restricted-settings.md)

@@ -11,22 +11,22 @@ Este artigo é sobre o AdGuard para iOS, um bloqueador de anúncios multifuncion
 
 :::note
 
-Both AdGuard for iOS with enabled Premium and AdGuard Pro block ads on Apple smartphones and tablets. They used to differ in functionality due to certain changes made to App Store review policies in the past, but now AdGuard with a purchased subscription and AdGuard Pro are identical in their functionality.
+Tanto o AdGuard para iOS com o Premium ativado quanto o AdGuard Pro bloqueiam anúncios em smartphones e tablets da Apple. Eles costumavam diferir em funcionalidade devido a certas mudanças nas políticas de revisão da App Store no passado, mas agora o AdGuard com uma assinatura adquirida e o AdGuard Pro são idênticos em sua funcionalidade.
 
 :::
 
-Premium AdGuard for iOS features several differences from the free version, including custom DNS settings. With these settings, you can block ads not only in Safari but in other apps too, protect your kids from adult content online, and keep your personal information safe from theft. There are other differences, too. Let’s explore them all in more detail.
+O AdGuard para iOS premium possui várias diferenças em relação à versão gratuita, incluindo configurações de DNS personalizadas. Com essas configurações, você pode bloquear anúncios não apenas no Safari, mas em outros aplicativos também, proteger seus filhos de conteúdo adulto on-line e manter suas informações pessoais seguras contra roubo. Há outras diferenças também. Vamos explorar todos eles em mais detalhes.
 
-1. The **DNS protection** module encrypts your DNS traffic to enhance privacy. It works across all apps and browsers, not just Safari, offering broad protection against ads and trackers.
+1. O **módulo de Proteção de DNS** criptografa seu tráfego de DNS para aumentar a privacidade. Funciona em todos os aplicativos e navegadores, não apenas no Safari, oferecendo ampla proteção contra anúncios e rastreadores.
 
-   - **Custom DNS servers:** Choose from one of the popular DNS servers from our list or add your own custom server.
+   - **Servidores DNS personalizados:** Escolha um dos servidores DNS populares da nossa lista ou adicione seu próprio servidor personalizado.
 
-   - **Family Protection:** The Internet isn’t always kid-friendly. With AdGuard Premium, you can switch to DNS providers that block adult content and other inappropriate material to keep your children safe online.
+   - **Proteção famíliar:** A Internet nem sempre é adequada para crianças. Com o AdGuard Premium, você pode alternar para provedores DNS que bloqueiam conteúdo adulto e outro material inadequado para manter seus filhos seguros online.
 
-   - **Monitoring and flexible configuration:** Recent activity log allows you to view all DNS requests sent by your device and easily manage your traffic by adding websites to blocklist or allowlist with just a tap.
+   - **Monitoramento e configuração flexível:** O registro de atividade recente permite que você veja todas as solicitações de DNS enviadas pelo seu dispositivo e gerencie seu tráfego facilmente, adicionando sites à lista de bloqueio ou à lista de perrmissões com apenas um toque.
 
-2. **Advanced protection** lets you use advanced filtering rules to block more complex ads that would be left unblocked otherwise.
+2. A **Proteção avançada** permite que você use regras de filtragem avançadas para bloquear anúncios mais complexos que seriam deixados desbloqueados de outra forma.
 
-3. **More filter options:** When purchasing AdGuard Premium, you get access to custom filters and a security filter category, where you can choose from over 50 filters, including AdGuard’s and other popular lists.
+3. **Mais opções de filtragem:** Ao comprar o AdGuard Premium, você tem acesso a filtros personalizados e uma categoria de filtros de segurança, onde pode escolher entre mais de 50 filtros, incluindo os do AdGuard e de outras listas populares.
 
-Access these features by [purchasing a license](https://adguard.com/license.html).
+Você pode obter acesso a esses recursos [comprando uma licença](https://adguard.com/license.html).

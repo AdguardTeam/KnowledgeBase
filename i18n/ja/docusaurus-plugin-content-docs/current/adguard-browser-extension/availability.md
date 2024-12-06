@@ -1,5 +1,5 @@
 ---
-title: Availability
+title: どこで手に入れられるか
 sidebar_position: 2
 ---
 
@@ -23,4 +23,4 @@ Safari向けにはスタンドアロンの拡張機能があります。 [Safari
 
 :::
 
-**各拡張機能は、ブラウザの機能により機能性が非常に限られていることにご注意ください**。そのため、本格的な保護を実現するためには、お使いのコンピュータにスタンドアロンのプログラムをインストールすることを検討してください。 There's [a reason why](/adguard-browser-extension/comparison-standalone).
+**各拡張機能は、ブラウザの機能により機能性が非常に限られていることにご注意ください**。そのため、本格的な保護を実現するためには、お使いのコンピュータにスタンドアロンのプログラムをインストールすることを検討してください。 その理由は[こちら](/adguard-browser-extension/comparison-standalone)。

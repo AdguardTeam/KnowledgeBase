@@ -1,5 +1,5 @@
 ---
-title: Main menu
+title: Menu principal
 sidebar_position: 1
 ---
 
