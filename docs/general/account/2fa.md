@@ -27,15 +27,15 @@ After you enable two-factor authentication, you have two options to choose from:
 
 - *One-time email code*: when you log in, we will ask you to enter the code we sent to your email
 
-- *Code from authentication app*: when you log in, we will ask for a code from your authentication app
+- *Code from authenticator app*: when you log in, we will ask for a code from your authenticator app
 
 ![2FA options *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 
 :::note
 
-If you use the authentication app, make sure to save the **setup key** somewhere. It will be necessary to recover your account in case your mobile phone gets lost or stolen.
+If you use the authenticator app, make sure to save the **setup key** somewhere. It will be necessary to recover your account in case your mobile phone gets lost or stolen.
 
-![The setup key in the authentication app *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
+![The setup key in the authenticator app *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
 
 :::
 
