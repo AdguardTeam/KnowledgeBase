@@ -20,6 +20,5 @@ files:
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%
     languages_mapping: *languages_mapping
     update_option: 'update_as_unapproved'
-
     ignore:
       - "/**/_category_.json"
