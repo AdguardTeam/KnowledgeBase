@@ -55,7 +55,7 @@ Manifest V3 对每个扩展的静态规则和正则表达式规则施加限制�
 
 **动态规则**：严格限制 **5,000** 个规则，其中包括最多 1,000 个正则表达式规则。
 
-If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules, Custom filters, and finally — Quick Fixes filter.
+如果超出此限制，则仅会按以下顺序应用 **5,000 个转换后的规则**：首先是白名单，然后是用户规则，自定义过滤器，最后是快速修复的过滤器。
 
 > **转换后的规则**是使用[声明性转换器][github-declarative-converter]转换为 \[DNR 格式]的规则。
 > 在转换过程中，一些规则会覆盖其他规则（`$badfilter`），一些规则会合并（`$removeparam`），从而导致规则列表的顺序略有不同。

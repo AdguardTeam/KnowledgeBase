@@ -9,20 +9,20 @@ sidebar_position: 1
 
 :::
 
-## Features
+## 功能
 
-Here are outlined the main features and settings available in AdGuard for Android.
+以下是 Android 版 AdGuard 提供的主要功能和设置。
 
-[Features](/adguard-for-android/features/features.md)
+[功能](/adguard-for-android/features/features.md)
 
 ## 安装
 
-Here, you’ll find the system requirements along with instructions on how to install and uninstall AdGuard for Android.
+点击以下链接，查看系统要求以及如何安装和卸载 Android 版 AdGuard。
 
-[Installation](/adguard-for-android/installation.md)
+[安装](/adguard-for-android/installation.md)
 
 ## 解决问题
 
-This section includes various articles addressing known issues and possible solutions.
+此部分包括解决已知问题和可能解决方案的文章。
 
-[Solving problems](/adguard-for-android/solving-problems/solving-problems.md)
+[解决问题](/adguard-for-android/solving-problems/solving-problems.md)

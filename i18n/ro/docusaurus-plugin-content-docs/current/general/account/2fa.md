@@ -11,26 +11,40 @@ Recomandăm să configurați autentificarea cu doi factori pentru contul dvs. Ad
 
 ## Cum să-l configurați
 
-1. Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the Settings tab:
+1. Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the *Settings* tab:
 
-![Setările contului AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
+ ![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Scroll down to *Password and 2FA* section and click **Enable**:
+1. Scroll down to *Two-factor authentication* and enable it:
 
-![Butonul Schimbare *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
+ ![Two-factor authentication toggle *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. Urmăriți instrucțiunile de pe ecran pentru a instala o aplicație de autentificare și a scana codul QR:
+1. A code will be sent to the email address associated with your AdGuard account. To enable 2FA, enter the code and click *Enable*.
 
-![Codul de verificare](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
+ ![The verification code *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-***Important***
+After you enable two-factor authentication, you have two options to choose from:
 
-- Save the second-factor backup code somewhere, it will be necessary to recover your account in case your mobile phone gets lost or stolen;
+- *One-time email code*: when you log in, we will ask you to enter the code we sent to your email
 
-Dacă totul este făcut corect, veți vedea acest lucru când vă conectați la contul dvs. data viitoare:
+- *Code from authenticator app*: when you log in, we will ask for a code from your authenticator app
 
-![Rezultatul *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+![2FA options *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 
-Folosiți aplicația de autentificare mobilă pentru a citi codul și a-l introduce. Ar trebui să fiți autentificat acum!
+:::note
 
-***OBSERVAȚIE***: Dacă întâlniți o eroare de autentificare, verificați ceasul de pe telefonul dvs. Ajustați-l dacă este necesar, deoarece un ceas nesincronizat poate fi cauza erorii.
+If you use the authenticator app, make sure to save the **setup key** somewhere. It will be necessary to recover your account in case your mobile phone gets lost or stolen.
+
+![The setup key in the authenticator app *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
+
+:::
+
+If everything is done right, you will see this when you log into your account the next time:
+
+![The result *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
+
+:::note
+
+If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
+
+:::

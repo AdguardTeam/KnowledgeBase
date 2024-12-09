@@ -9,7 +9,7 @@ sidebar_position: 1
 
 ## AdGuard アカウントを登録する方法
 
-アカウントを登録するには、 [AdGuard の公式ウェブサイト](https://adguard.com/welcome.html) にアクセスし、画面右上の「*マイ・アカウント*」を押します。 メールアドレスを入力し、パスワードを作成すると、アカウント登録されます。
+To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and click the *Log in* button on the top right corner of the screen. メールアドレスを入力し、パスワードを作成すると、アカウント登録されます。
 
 :::tip
 
@@ -21,6 +21,12 @@ sidebar_position: 1
 
 アカウントが作成されましたら、認証確認メールに記載されているリンクを使ってメールアドレス認証を行ってください。
 
+:::tip
+
+After you've registered your account, you can use the *One-time code* option to log in to the application. Enter your email address and choose to enter either your password or the the code sent to your email address.
+
+:::
+
 ## SNSアカウント経由でAdGuardアカウントを登録する方法
 
-ソーシャルネットワーク経由でアカウントを作成するには、 [こちらリンク](https://auth.adguard.com/login.html)へ進み、お持ちのアカウントにログインするだけです。 登録が完了しましたら、メールの受信トレイをチェックしてください。 パスワードを設定して完了です。 これで、[AdGuard アカウントのすべての機能](https://adguard.com/kb/general/account/features/)を使用できます。
+To create an account via a social network, simply follow the [link](https://auth.adguard.com/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.com/kb/general/account/features/).

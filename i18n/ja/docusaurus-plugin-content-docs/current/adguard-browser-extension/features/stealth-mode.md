@@ -1,5 +1,5 @@
 ---
-title: Tracking protection (Stealth Mode)
+title: トラッキング防止（ステルスモード）
 sidebar_position: 3
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Tracking protection (Stealth Mode)
+title: Protezione dal tracciamento (Modalità Invisibile)
 sidebar_position: 3
 ---
 

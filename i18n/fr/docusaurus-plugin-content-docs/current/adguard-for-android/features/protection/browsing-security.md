@@ -21,7 +21,7 @@ If you're about to visit a dangerous website, Browsing security will show you th
 
 :::warning
 
-Please note that AdGuard for Android is not an antivirus program. It neither stops viruses from downloading nor deletes already downloaded ones. To fully protect your device, we recommend using AdGuard in conjunction with an antivirus
+Veuillez noter qu'AdGuard pour Android n'est pas un programme antivirus. It neither stops viruses from downloading nor deletes already downloaded ones. To fully protect your device, we recommend using AdGuard in conjunction with an antivirus
 
 :::
 
