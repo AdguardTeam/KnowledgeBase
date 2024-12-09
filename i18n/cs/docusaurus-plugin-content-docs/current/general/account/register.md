@@ -9,7 +9,7 @@ sidebar_position: 1
 
 ## Jak vytvořit účet
 
-Chcete-li vytvořit účet, přejděte na [oficiální web AdGuardu](https://adguard.com/welcome.html) a stiskněte tlačítko *Můj účet* v pravém horním rohu obrazovky. Zadejte svou e-mailovou adresu a vytvořte si heslo — váš účet bude zaregistrován.
+To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and click the *Log in* button on the top right corner of the screen. Zadejte svou e-mailovou adresu a vytvořte si heslo — váš účet bude zaregistrován.
 
 :::tip
 
@@ -21,6 +21,12 @@ Pokud při nákupu licence zadáte svou e-mailovou adresu nebo licenci spojenou 
 
 Po vytvoření účtu jej aktivujte pomocí odkazu v aktivačním e-mailu.
 
+:::tip
+
+After you've registered your account, you can use the *One-time code* option to log in to the application. Enter your email address and choose to enter either your password or the the code sent to your email address.
+
+:::
+
 ## Jak vytvořit účet prostřednictvím sociálních sítí
 
-Chcete-li si vytvořit účet prostřednictvím sociálních sítí, jednoduše jděte na tento [odkaz](https://auth.adguard.com/login.html) a přihlaste se ke svému účtu. Po registraci zkontrolujte svou e-mailovou schránku — přijde vám potvrzovací e-mail. Nastavte heslo a je to! Nyní můžete využívat všechny [funkce účtu AdGuard](https://adguard.com/kb/general/account/features/).
+To create an account via a social network, simply follow the [link](https://auth.adguard.com/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.com/kb/general/account/features/).

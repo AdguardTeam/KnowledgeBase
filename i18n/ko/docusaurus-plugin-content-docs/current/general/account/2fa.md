@@ -11,26 +11,40 @@ AdGuard 계정에서 이중 인증 기능을 설정하는 것을 권해드립니
 
 ## 이중 인증 설정 방법
 
-1. [AdGuard 계정](https://auth.adguard.com/login.html)에 로그인하고 설정 탭으로 이동합니다.
+1. Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the *Settings* tab:
 
-![AdGuard 계정 설정 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
+ ![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Scroll down to *Password and 2FA* section and click **Enable**:
+1. Scroll down to *Two-factor authentication* and enable it:
 
-![변경 버튼 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
+ ![Two-factor authentication toggle *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. 화면의 설명서에 따라 인증 앱을 설치하고 QR 코드를 스캔합니다.
+1. A code will be sent to the email address associated with your AdGuard account. To enable 2FA, enter the code and click *Enable*.
 
-![인증 코드](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
+ ![The verification code *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-***중요 정보***
+After you enable two-factor authentication, you have two options to choose from:
 
-- 인증 백업 코드를 저장하십시오. 휴대폰 분실과 같은 비상시에 인증 코드를 통해 계정을 복구할 수 있습니다.
+- *One-time email code*: when you log in, we will ask you to enter the code we sent to your email
 
-모든 작업이 올바르게 완료되면 다음에 계정에 로그인할 때 다음과 같은 내용이 표시됩니다.
+- *Code from authenticator app*: when you log in, we will ask for a code from your authenticator app
 
-![결과 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+![2FA options *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 
-모바일 인증 앱을 사용하여 코드를 읽고 입력하세요. 이제 계정에 로그인되었습니다.
+:::note
 
-***참고***: 전화기의 시간이 정확하지 않으면 인증 문제가 발생할 수 있습니다. 시간을 확인하고 필요한 경우 올바른 시간을 설정하세요.
+If you use the authenticator app, make sure to save the **setup key** somewhere. It will be necessary to recover your account in case your mobile phone gets lost or stolen.
+
+![The setup key in the authenticator app *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
+
+:::
+
+If everything is done right, you will see this when you log into your account the next time:
+
+![The result *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
+
+:::note
+
+If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
+
+:::

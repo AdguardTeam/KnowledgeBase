@@ -1,5 +1,5 @@
 ---
-title: Co lze dělat v AdGuard účtu
+title: What can be done in the AdGuard account
 sidebar_position: 2
 ---
 
@@ -7,14 +7,14 @@ Ve svém účtu můžete spravovat své licence, k nim vázaná zařízení, oso
 
 ## Správa nastavení účtu
 
-V části *Nastavení* svého AdGuard účtu můžete aktualizovat nebo resetovat své heslo, změnit svou e-mailovou adresu, povolit [dvoufaktorové ověření](../2fa), zobrazit data, která o vás AdGuard ukládá, a zvolit jazyk svého osobního účtu a oznámení.
+In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable one-time code login or [two-factor authentication](../2fa), view the data stored about you by AdGuard, and select the language of your account and notifications.
 
 V této části můžete také spravovat e-mailové preference:
 
-- přijímat transakční e-maily,
-- dostávat měsíční zpravodaje AdGuardu,
-- zasílání e-mailů o speciálních nabídkách a propagačních akcích AdGuardu,
-- odesílání potvrzení o přečtení do AdGuardu při otevření e-mailů.
+- Receive AdGuard newsletter
+- Receive transactional emails
+- Send read receipts to AdGuard
+- Opt-out preferences
 
 ## Správa licencí
 
@@ -27,12 +27,12 @@ V sekci *Licence* můžete spravovat své licence a zařízení s nimi spojená.
 - upgradovaná,
 - zrušená. Můžete zde také aktualizovat své platební údaje.
 
-Zařízení svázaná s licencemi blokátoru reklam AdGuard lze zrušit nebo přejmenovat. Nepoužívaná zařízení můžete odpojit kliknutím na ikonu křížku vedle nich.
+Zařízení svázaná s licencemi blokátoru reklam AdGuard lze zrušit nebo přejmenovat. To unbind unused devices, click the number of bound devices next to *Devices*, then select the right arrow → *Remove*.
 
 ## Zobrazení nákupů
 
-V části Historie nákupů se zobrazují všechny licence, které jste kdy zakoupili pomocí e-mailového účtu, pod kterým jste účet AdGuard zaregistrovali. Najdete zde také informace o datu nákupu, ID objednávky, způsobu platby a ceně nákupu.
+The *Purchases* section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. Najdete zde také informace o datu nákupu, ID objednávky, způsobu platby a ceně nákupu.
 
-## Kontaktování podpory
+## Activity
 
-Karta Podpora obsahuje užitečné odkazy, které vám pomohou vyřešit problémy nebo najít odpovědi na vaše otázky týkající se AdGuard produktů. Jsou rozděleny do šesti oddílů: FAQ, Odeslat požadavek na chybu/funkci, Nahlásit nesprávné blokování, Kontaktovat podporu, Databáze znalostí a Diskutovat.
+The *Activity* tab allows you to monitor login activity for your AdGuard account. It displays the email address used, location, and login date. You can also filter records by product: *All products*, *AdGuard Ad Blocker*, *AdGuard VPN*, *AdGuard DNS*.

@@ -1,5 +1,5 @@
 ---
-title: Moving the CA certificate to the system store on rooted devices
+title: Verschieben von CA-Zertifikaten in den Systemspeicher auf gerooteten Geräten
 sidebar_position: 14
 ---
 
@@ -9,27 +9,27 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-AdGuard for Android can [filter encrypted HTTPS traffic](/general/https-filtering/what-is-https-filtering), thus blocking most ads and trackers on websites. Auf gerooteten Geräten können Sie mit AdGuard auch den HTTPS-Datenverkehr in Apps filtern. Für die HTTPS-Filterung muss das CA-Zertifikat von AdGuard in die Liste der vertrauenswürdigen Zertifikate aufgenommen werden.
+AdGuard für Android kann [verschlüsselten HTTPS-Verkehr filtern](/general/https-filtering/what-is-https-filtering) und damit die meisten Anzeigen und Tracker auf Websites sperren. Auf gerooteten Geräten können Sie mit AdGuard auch den HTTPS-Datenverkehr in Apps filtern. Für die HTTPS-Filterung muss das CA-Zertifikat von AdGuard in die Liste der vertrauenswürdigen Zertifikate aufgenommen werden.
 
-On non-rooted devices, CA certificates can be installed to the **user store**. Only a limited subset of apps (mostly browsers) trust CA certificates installed to the user store, meaning HTTPS filtering will work only for such apps.
+Auf nicht gerooteten Geräten können CA-Zertifikate in den **Benutzerspeicher** installiert werden. Nur eine begrenzte Anzahl von Apps (vor allem Browser) vertrauen CA-Zertifikaten, die im Benutzerspeicher installiert sind, was bedeutet, dass die HTTPS-Filterung nur bei diesen Apps funktioniert.
 
-On rooted devices, you can install a certificate to the **system store**. That will allow AdGuard to filer HTTPS traffic in other apps as well.
+Auf gerooteten Geräten können Sie ein Zertifikat im **Systemspeicher** installieren. Dadurch kann AdGuard den HTTPS-Datenverkehr auch in anderen Apps filtern.
 
-Here's how to do that.
+Und so geht's.
 
-## How to install AdGuard's certificate to the system store
+## So installieren Sie das Zertifikat von AdGuard im Systemspeicher
 
-1. Open *AdGuard → Settings → Filtering → Network → HTTPS filtering → Security certificates*.
+1. Öffnen Sie *AdGuard → Einstellungen → Filterung → Netzwerk → HTTPS-Filterung → Sicherheitszertifikate*.
 
-1. Wenn Sie noch kein Zertifikat haben, **installieren Sie die AdGuard Personal CA in den Benutzerspeicher**. Dies ermöglicht es AdGuard, HTTPS-Verkehr in Browsern zu filtern.
+1. Wenn Sie noch kein Zertifikat haben, **installieren Sie das AdGuard Personal CA in den Benutzerspeicher**. Dies ermöglicht es AdGuard, HTTPS-Verkehr in Browsern zu filtern.
 
-1. **Installieren Sie die AdGuard Intermediate CA in den Benutzerspeicher**. You'll need it to run the adguardcert Magisk module that allows you to move certificates to the system store.
+1. **Installieren Sie das AdGuard Intermediate CA in den Benutzerspeicher**. Sie benötigen es, um das Magisk-Modul adguardcert auszuführen, mit dem Sie Zertifikate in den Systemspeicher verschieben können.
 
     ![Zertifikat installieren *mobile_border](https://cdn.adtidy.org/blog/new/asx1xksecurity_certificates.png)
 
-1. Install the [latest release of the **adguardcert** Magisk module](https://github.com/AdguardTeam/adguardcert/releases/latest/).
+1. Installieren Sie die [neueste Version des Magisk-Moduls **adguardcert**](https://github.com/AdguardTeam/adguardcert/releases/latest/).
 
-1. Open *Magisk → Modules → Install from storage* and select the downloaded **adguardcert** file. The AdGuard Personal CA certificate will be copied to the system store.
+1. Öffnen Sie *Magisk → Module → Aus Speicher installieren* und wählen Sie die heruntergeladene **adguardcert-Datei** aus. Das AdGuard Personal CA-Zertifikat wird in den Systemspeicher kopiert.
 
     ![Magisk-Module öffnen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
 
@@ -37,16 +37,16 @@ Here's how to do that.
 
     ![adguardcert auswählen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-6.png)
 
-1. Tap **Reboot**.
+1. Tippen Sie auf **Neu starten**.
 
     ![Gerät neu starten *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
 
-After the transfer, the **AdGuard Personal CA** in the system store will allow you to filter HTTPS traffic in apps, while the **AdGuard Intermediate CA** in the user store will allow you to filter HTTPS traffic in Chromium-based browsers (see below why).
+Nach der Übertragung ermöglicht das **AdGuard Personal CA** im Systemspeicher die Filterung des HTTPS-Verkehrs in Apps, während das **AdGuard Intermediate CA** im Benutzerspeicher die Filterung des HTTPS-Verkehrs in Chromium-basierten Browsern ermöglicht (siehe unten warum).
 
 ## Bekannte Probleme mit Chrome und Chromium-basierten Browsern
 
-Chrome und andere Chromium-basierte Browser erfordern Certificate Transparency (CT)-Protokolle für Zertifikate, die sich im Systemspeicher befinden. Die CT-Protokolle enthalten keine Informationen über Zertifikate, die von Anwendungen zur HTTPS-Filterung ausgestellt wurden. Daher benötigt AdGuard ein zusätzliches Zertifikat im Benutzerspeicher, um den HTTPS-Verkehr in diesen Browsern zu filtern.
+Chrome und andere Chromium-basierte Browser erfordern Certificate Transparency (CT)-Protokolle für Zertifikate, die sich im Systemspeicher befinden. Die CT-Protokolle enthalten keine Informationen über Zertifikate, die von Apps zur HTTPS-Filterung ausgestellt wurden. Daher benötigt AdGuard ein zusätzliches Zertifikat im Benutzerspeicher, um den HTTPS-Verkehr in diesen Browsern zu filtern.
 
-### Bromit-Browser
+### Bromite-Browser
 
-Zusätzlich zu dem oben genannten Problem vertraut Bromite den Zertifikaten im Benutzerspeicher standardmäßig nicht. To filter HTTPS traffic there, open Bromite, go to `chrome://flags`, and set *Allow user certificates* to *Enabled*. **Dies gilt sowohl für gerootete als auch für nicht gerootete Geräte**.
+Zusätzlich zu dem oben genannten Problem vertraut Bromite den Zertifikaten im Benutzerspeicher standardmäßig nicht. Um dort den HTTPS-Verkehr zu filtern, öffnen Sie Bromite, gehen Sie zu `chrome://flags` und setzen Sie *Benutzerzertifikate zulassen* auf *Aktiviert*. **Dies gilt sowohl für gerootete als auch für nicht gerootete Geräte**.

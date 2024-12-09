@@ -1,5 +1,5 @@
 ---
-title: Features
+title: Recursos
 sidebar_position: 1
 ---
 
@@ -11,54 +11,54 @@ Este artigo é sobre o AdGuard para iOS, um bloqueador de anúncios multifuncion
 
 ## Proteção do Safari
 
-Information on how to configure ad blocking and privacy in Safari using content blockers, filters, and user rules.
+Informações sobre como configurar bloqueio de anúncios e privacidade no Safari usando bloqueadores de conteúdo, filtros e Regras de usuário.
 
-[Safari protection](/adguard-for-ios/features/safari-protection.md)
+[Proteção do Safari](/adguard-for-ios/features/safari-protection.md)
 
 ## Proteção DNS
 
-This section describes how AdGuard for iOS allows you to configure secure DNS servers and block ads, trackers, and malicious content.
+Esta seção descreve como o AdGuard para iOS permite configurar servidores DNS seguros e bloquear anúncios, rastreadores e conteúdo malicioso.
 
-[DNS protection](/adguard-for-ios/features/dns-protection/)
+[Proteção de DNS](/adguard-for-ios/features/dns-protection/)
 
 ## Proteção avançada
 
-This article describes how to use CSS rules, CSS selectors, and scriptlets to deal with complex ads, such as YouTube ads.
+Este artigo descreve como usar regras de CSS, seletores de CSS e scriptlets para lidar com anúncios complexos, como anúncios do YouTube.
 
-[Advanced protection](/adguard-for-ios/features/advanced-protection.md)
+[Proteção Avançada](/adguard-for-ios/features/advanced-protection.md)
 
 ## Atividade e estatísticas
 
-This article describes the Statistics tab with detailed activity reports that allow you to monitor blocked ads, trackers, and DNS queries.
+Este artigo descreve a aba Estatísticas com relatórios detalhados de atividades que permitem monitorar anúncios bloqueados, rastreadores e Consultas de DNS.
 
-[Activity and statistics](/adguard-for-ios/features/activity.md)
+[Atividades e estatísticas](/adguard-for-ios/features/activity.md)
 
 ## Assistente
 
-A tool that helps you manage filtering in Safari right from the browser without switching back to the app.
+Uma ferramenta que ajuda você a gerenciar a filtragem no Safari diretamente do navegador sem precisar voltar para o aplicativo.
 
-[Assistant](/adguard-for-ios/features/assistant.md)
+[Assistente](/adguard-for-ios/features/assistant.md)
 
 ## Configurações de baixo nível
 
-Low-level settings allow advanced users to fine-tune app performance, customize ad blocking, and adjust DNS protection for greater control over their privacy and security.
+Configurações de baixo nível permitem que usuários avançados ajustem o desempenho do aplicativo, personalizem o bloqueio de anúncios e ajustem a Proteção de DNS para ter maior controle sobre a sua privacidade e segurança.
 
-[Low-level settings](/adguard-for-ios/features/low-level-settings.md)
+[Configurações de baixo nível](/adguard-for-ios/features/low-level-settings.md)
 
 ## Outros recursos
 
-The article describes additional features, including widgets, auto-updates, and statistics reset, as well as how to contact support.
+O artigo descreve recursos adicionais, incluindo widgets, atualizações automáticas e redefinição de estatísticas, bem como como entrar em contato com o suporte.
 
-[Other features](/adguard-for-ios/features/other-features.md)
+[Outros recursos](/adguard-for-ios/features/other-features.md)
 
 ## Compatibilidade com o AdGuard VPN
 
-Information on how the app integrates with VPN services, allowing you to run both AdGuard and AdGuard VPN at the same time without conflict, ensuring ad blocking and privacy protection along with VPN functionality.
+Informações sobre como o aplicativo se integra aos serviços de VPN, permitindo que você execute tanto o AdGuard quanto o AdGuard VPN ao mesmo tempo sem conflitos, garantindo o bloqueio de anúncios e a proteção de privacidade juntamente com a funcionalidade de VPN.
 
-[Compatibility with AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
+[Compatibilidade com AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 
 ## Versão gratuita vs. versão completa
 
-Comparison of features between the free and paid versions.
+Comparação de recursos entre as versões gratuita e paga.
 
-[Free vs. full version](/adguard-for-ios/features/free-vs-full.md)
+[Versão gratuita vs. versão completa](/adguard-for-ios/features/free-vs-full.md)

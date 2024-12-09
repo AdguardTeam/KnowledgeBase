@@ -11,8 +11,8 @@ sidebar_position: 1
 
 ## 功能概览
 
-[Features overview](/adguard-content-blocker/overview.md)
+[功能概述](/adguard-content-blocker/overview.md)
 
 ## 安装
 
-[Installation](/adguard-content-blocker/installation.md)
+[安装](/adguard-content-blocker/installation.md)

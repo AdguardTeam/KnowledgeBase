@@ -23,13 +23,13 @@ You can customize the program to suit your needs by blocking only what bothers y
 
 ## Extensiones
 
-Here you’ll how to use AdGuard as a userscript manager to extend the functionality of websites. You can add your own scripts as well as manage existing ones.
+Aquí aprenderás cómo usar AdGuard como un gestor de scripts de usuario para extender la funcionalidad de sitios web. Puedes añadir tus propios scripts así como administrar los existentes.
 
 [Extensions](/adguard-for-windows/features/extensions/)
 
 ## Red
 
-This article describes additional network-related options and proxy settings where you can specify which proxy server AdGuard should use to update filters, download new versions, and so on.
+Este artículo describe opciones adicionales relacionadas con la red y la configuración de proxy donde puedes especificar qué proxy debe usar AdGuard para actualizar los filtros, descargar nuevas versiones, y así sucesivamente.
 
 [Network](/adguard-for-windows/features/network/)
 
