@@ -1,5 +1,5 @@
 ---
-title: How to fix `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE` error
+title: How to fix the `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE` error
 sidebar_position: 11
 ---
 
@@ -9,7 +9,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 :::
 
-Some users of AdGuard for Windows with enabled HTTPS filtering are unable to access google.com and youtube.com. Instead of opening the websites, browsers with Strict Certificate Pinning display a `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE` error.
+Some users of AdGuard for Windows with enabled [HTTPS filtering](/general/https-filtering/what-is-https-filtering) are unable to access certain websites like google.com and youtube.com. Instead of opening a website, browsers with Strict Certificate Pinning would display a `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE` error.
 
 Here is a list of impacted browsers:
 
