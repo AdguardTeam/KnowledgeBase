@@ -1,0 +1,24 @@
+---
+title: Private browser
+sidebar_position: 7
+---
+
+:::info
+
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+
+:::
+
+Starting with v4.7, AdGuard for Android introduced an in-app private browser. You can access this feature from the main screen by tapping the *Private browser* button.
+
+The browser is also accessible through the *Protection* tab, where you can find some customization options:
+
+- To set a default search engine, click *Default search engine* and choose between the available options: DuckDuckGo (default), Google, Bing, Yahoo, Baidu or Yandex
+- To create a shortcut to the browser, click *Create browser widget* and follow the instructions on the screen
+- To get suggestions from your search engine instead of typing the entire query, toggle the option *Search suggestions*
+
+:::note
+
+The private browser is still in the early stages of development and has a few limitations. For now, we recommend using it as a supplement to your usual browser’s Incognito Mode, rather than a replacement.
+
+:::
