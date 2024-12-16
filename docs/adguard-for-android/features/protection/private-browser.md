@@ -21,6 +21,6 @@ The browser is also accessible through the *Protection* tab, where you can find 
 
 :::note
 
-The private browser is still in the early stages of development and has a few limitations. For now, we recommend using it as a supplement to your usual browser’s Incognito Mode, rather than a replacement.
+The private browser is still in the early stages of development and has some limitations. For now, we recommend using it as a supplement to your browser’s Incognito mode, rather than as a replacement.
 
 :::
