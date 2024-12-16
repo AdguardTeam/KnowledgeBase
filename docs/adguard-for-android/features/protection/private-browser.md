@@ -13,7 +13,6 @@ In v4.7, AdGuard for Android introduced an in-app private browser. You can acces
 
 ![Private browser](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
 
-The browser is also accessible through the *Protection* tab, where you can find some customization options:
 
 - To set a default search engine, click *Default search engine* and choose between the available options: DuckDuckGo (default), Google, Bing, Yahoo, Baidu or Yandex
 - To create a shortcut to the browser, click *Create browser widget* and follow the instructions on the screen
