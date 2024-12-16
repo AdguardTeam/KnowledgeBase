@@ -17,7 +17,7 @@ From the main window, you can toggle protection, view statistics on blocked ads,
 
 ## Général
 
-Here you can configure basic settings such as _Do not block search ads and website self-promoting ads_, _Activate language-specific filters automatically_, _Launch AdGuard at login_, _Hide menu bar icon_, and _Allowlist_.
+Ici, vous pouvez configurer les paramètres de base tels que _Ne pas bloquer les publicités de recherche et d'auto-promotion_, _Activer les filtres spécifiques à la langue automatiquement_, _Lancer AdGuard à la connexion_, _Masquer l'icône de la barre de menu_, et _Liste d'autorisation_.
 
 [General](/adguard-for-mac/features/general.md)
 

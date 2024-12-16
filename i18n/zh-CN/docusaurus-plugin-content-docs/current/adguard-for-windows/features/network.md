@@ -9,9 +9,9 @@ sidebar_position: 4
 
 :::
 
-The _Network_ module is dedicated to network filtering, and here you will find additional network-related options. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS_. These are important extra precautions to better filter your web space. 当前大部分网站使用 HTTPS，广告亦是如此。 From many websites, like youtube.com, facebook.com, and x.com, it is impossible to remove ads without HTTPS filtering. So keep the _Filter HTTPS_ feature enabled unless you have a strong reason not to.
+「_网络_」模块专用于网络过滤，用户可以找到其他与网络相关的选项。 其中两项默认启动：「开启流量过滤」和「过滤 HTTPS」。 这都是重要的额外预防措施，可以更好地过滤网络空间。 当前大部分网站使用 HTTPS，广告亦是如此。 在许多网站上，例如 youtube.com、facebook.com 和 x.com，如果没有 HTTPS 过滤就无法删除广告。 因此除非用户有充分的理由不开启它，否则请保持开启「过滤 HTTPS」功能。
 
-![Network Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
+![网络设置 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 
 In this module you can select the checkbox _Use AdGuard as an HTTP proxy_ to use AdGuard as a regular HTTP proxy which will filter all traffic passing through it. You can also enable the _Filter websites with EV certificates_ feature. Extended Validation (EV) SSL Certificates offer a stronger safety guarantee; owners of such websites have to pass a thorough and globally standardized identity verification process defined by EV guidelines. Which is the reason why some users trust websites with such certificates and prefer not to filter them.
 

@@ -23,6 +23,6 @@ Here, you’ll find the system requirements along with instructions on how to in
 
 ### Risoluzione problemi
 
-This section includes various articles addressing known issues and possible solutions.
+Questa sezione include vari articoli che affrontano problemi noti e le possibili soluzioni.
 
 [Solving problems](/adguard-for-mac/solving-problems/solving-problems.md)

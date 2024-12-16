@@ -1,5 +1,5 @@
 ---
-title: Tracking protection (Stealth Mode)
+title: Protección de rastreo (Modo sigiloso)
 sidebar_position: 3
 ---
 
