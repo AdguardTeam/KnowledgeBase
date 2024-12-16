@@ -11,7 +11,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 Starting with One UI 6.1.1 (Android 14), Samsung introduced a security enhancement called *Auto Blocker*, which is enabled by default on the latest Galaxy smartphones. This feature automatically blocks sideloaded apps from unverified sources unless the user manually overrides the setting.
 
-Since AdGuard for Android [can't be published on Google Play](https://adguard.com/en/blog/adguard-google-play-removal.html), you need to mannualy install it. However, with the new *Auto Blocker* enabled, some users may encounter issues when installing AdGuard APK files. To address this, we’ve provided a step-by-step guide below on how to disable *Auto Blocker*.
+Since AdGuard for Android [can’t be published on Google Play](https://adguard.com/en/blog/adguard-google-play-removal.html), you have to install it manually. However, with the new *Auto Blocker* feature enabled, some users may experience problems when installing AdGuard APK files. To address this issue, we’ve provided a step-by-step guide on how to disable *Auto Blocker* below.
 
 ## How to disable Auto Blocker
 
