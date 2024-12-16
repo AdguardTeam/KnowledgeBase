@@ -9,7 +9,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-Starting with v4.7, AdGuard for Android introduced an in-app private browser. You can access this feature from the main screen by tapping the *Private browser* button.
+In v4.7, AdGuard for Android introduced an in-app private browser. You can access it from the main screen by tapping the *Private browser* button or from the *Protection* tab, where you can find some customization options:.
 
 ![Private browser](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
 
