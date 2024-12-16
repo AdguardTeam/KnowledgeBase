@@ -15,7 +15,7 @@ In v4.7, AdGuard for Android introduced an in-app private browser. You can acces
 
 
 - To set a default search engine, click *Default search engine* and choose between the available options: DuckDuckGo (default), Google, Bing, Yahoo, Baidu, or Yandex
-- To create a shortcut to the browser, click *Create browser widget* and follow the instructions on the screen
+- To create a browser shortcut, click *Create browser widget* and follow the on-screen instructions
 - To get suggestions from your search engine instead of typing the entire query, toggle the *Search suggestions* option
 
 :::note
