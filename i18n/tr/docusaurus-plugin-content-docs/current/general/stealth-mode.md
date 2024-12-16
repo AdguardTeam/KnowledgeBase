@@ -1,9 +1,9 @@
 ---
-title: Stealth Mode (Tracking protection)
+title: Gizlilik Modu (İzleme koruması)
 sidebar_position: 4
 ---
 
-Birçok site ziyaretçileri hakkında IP adresi, yüklü tarayıcı ve işletim sistemi, ekran çözünürlüğü ve hatta bir ziyaretçinin yönlendirildiği sayfa gibi bilgileri toplar. Some web pages use cookies to mark your browser and save your personal settings and preferences, or to "recognize" you upon your next visit. *Stealth Mode* (or *Tracking protection* in AdGuard for Windows and AdGuard Browser Extension) safeguards your personal information from such data- and statistics-gathering systems.
+Birçok site ziyaretçileri hakkında IP adresi, yüklü tarayıcı ve işletim sistemi, ekran çözünürlüğü ve hatta bir ziyaretçinin yönlendirildiği sayfa gibi bilgileri toplar. Some web pages use cookies to mark your browser and save your personal settings and preferences, or to "recognize" you upon your next visit. *Gizlilik Modu* (veya Windows için AdGuard ve AdGuard Tarayıcı Uzantısındaki *İzleme koruması*) kişisel bilgilerinizi bu tür veri ve istatistik toplama sistemlerinden korur.
 
 You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website from receiving the search request you used to find it on the Internet, automatically delete both third-party and the website's own cookies, turn off browser geolocation sharing that can be used to track your whereabouts, and hide your true IP address or even replace it with an arbitrary one.
 
@@ -113,7 +113,7 @@ You can set an arbitrary IP address, which you would like others to perceive as 
 
 It forbids Google Chrome from sending its version and modification information with requests to Google domains (including Double Click and Google Analytics).
 
-### Protect against DPI {#dpi}
+### DPİ'ye karşı koruma {#dpi}
 
 The Deep Packet Inspection is a system of deep analysis and filtering of traffic by packet content, as well as the accumulation of statistical data. Using this technology, ISPs have the ability to control the passing traffic and limit access to content for their clients.
 

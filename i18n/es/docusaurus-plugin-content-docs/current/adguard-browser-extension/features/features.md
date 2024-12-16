@@ -1,5 +1,5 @@
 ---
-title: Features
+title: Funciones
 sidebar_position: 1
 ---
 
@@ -9,26 +9,26 @@ Este artículo trata sobre la extensión del navegador de AdGuard, que protege s
 
 :::
 
-## Main menu
+## Menú principal
 
-The article explains the main functions on the pop-up, such as enabling or disabling ad blocking, accessing settings, managing filters, and viewing protection statistics.
+El artículo explica las funciones principales en las ventanas emergentes, como habilitar o deshabilitar el bloqueo de anuncios, acceder a la configuración, administrar filtros y ver estadísticas de protección.
 
-[Main menu](/adguard-browser-extension/features/main-menu.md)
+[Menú principal](/adguard-browser-extension/features/main-menu.md)
 
 ## Filtros
 
-The article describes how AdGuard Browser Extension allows you to customize ad blocking with different filters and custom user rules.
+El artículo describe cómo la extensión de navegador AdGuard permite personalizar el bloqueo de anuncios con diferentes filtros y reglas del usuario.
 
-[Filters](/adguard-browser-extension/features/filters.md)
+[Filtros](/adguard-browser-extension/features/filters.md)
 
-## Tracking protection (Stealth Mode)
+## Protección de rastreo (Modo sigiloso)
 
-The article explains how this feature enhances privacy by blocking online trackers, hiding user information, and preventing third-party data collection.
+El artículo explica cómo esta función mejora la privacidad al bloquear rastreadores en línea, ocultar información del usuario y prevenir la recopilación de datos por terceros.
 
-[Tracking protection (Stealth Mode)](/adguard-browser-extension/features/stealth-mode.md)
+[Protección de rastreo (Modo sigiloso)](/adguard-browser-extension/features/stealth-mode.md)
 
 ## Otras funciones y opciones
 
-The article describes additional features and information, such as update notifications, filtering log, statistics on blocked ads and trackers, links to privacy documents, and the repository.
+El artículo describe funciones e información adicionales, como notificaciones de actualización, registro de filtrado, estadísticas sobre anuncios bloqueados y rastreadores, enlaces a documentos de privacidad y el repositorio.
 
-[Other features and options](/adguard-browser-extension/features/other-features.md)
+[Otras funciones y opciones](/adguard-browser-extension/features/other-features.md)

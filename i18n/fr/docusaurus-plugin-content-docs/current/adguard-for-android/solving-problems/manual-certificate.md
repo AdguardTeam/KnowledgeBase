@@ -36,7 +36,7 @@ Follow these steps to install the AdGuard certificate:
 
 You're all set! Once the certificate is installed successfully, you've enabled HTTPS filtering.
 
-Please note that the steps provided are based on the Google Pixel 7 smartphone. If you're using a different Android device, the exact menu names or options might vary. For easier navigation consider searching for a certificate by entering “certificate” or “credentials” in the settings search bar.
+Veuillez noter que les étapes fournies sont basées sur le smartphone Google Pixel 7. If you're using a different Android device, the exact menu names or options might vary. For easier navigation consider searching for a certificate by entering “certificate” or “credentials” in the settings search bar.
 
 If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
 

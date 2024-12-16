@@ -21,7 +21,7 @@ sidebar_position: 2
 
 虽然其他过滤器组的功能易于理解，但一个名为「自定义」的组可能会引起额外的问题。
 
-![Custom filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
+![自定义过滤器 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
 
 在此选项卡中，用户可以添加默认情况下扩展中不存在的过滤器。 互联网上有很多[公开的过滤器](https://filterlists.com)。 除此之外，您还可以创建和添加自己的过滤器。 其实，用户可以创建任意过滤器组并按照自己喜欢的方式自定义拦截广告。
 

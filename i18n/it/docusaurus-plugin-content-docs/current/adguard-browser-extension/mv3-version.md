@@ -55,7 +55,7 @@ Il numero massimo di filtri abilitati contemporaneamente è **50**.
 
 **Regole dinamiche:** è imposto un limite massimo di **5.000** regole, che include un massimo di 1.000 regole regex.
 
-If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules, Custom filters, and finally — Quick Fixes filter.
+Se questo limite viene superato, verranno applicate solo **5.000 regole convertite** nel seguente ordine: prima la Lista consentita, poi le Regole utente, i Filtri personalizzati e infine — il Filtro Quick Fixes delle correzioni rapide.
 
 > Le **regole convertite** sono regole che sono state trasformate
 > in \[formato DNR] utilizzando il [convertitore dichiarativo][github-declarative-converter].

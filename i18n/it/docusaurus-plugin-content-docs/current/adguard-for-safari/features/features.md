@@ -1,34 +1,34 @@
 ---
-title: Features
+title: Funzionalità
 sidebar_position: 1
 ---
 
 ## Generali
 
-The article highlights basic features, including notifications, update intervals, and logging level.
+L'articolo evidenzia le funzionalità di base, tra cui le notifiche, gli intervalli di aggiornamento e il livello di registrazione.
 
-[General](adguard-for-safari/features/general.md)
+[Generale](adguard-for-safari/features/general.md)
 
 ## Filtri
 
-This article explains how AdGuard for Safari allows you to customize ad blocking by enabling different filters, such as language-specific filters, anti-malware filters, and user rules.
+Questo articolo spiega come AdGuard per Safari consenta di personalizzare il blocco degli annunci abilitando diversi filtri, come filtri specifici per lingua, filtri anti-malware e regole utente.
 
-[Filters](/adguard-for-safari/features/filters.md)
+[Filtri](/adguard-for-safari/features/filters.md)
 
-## Content Blockers
+## Bloccatori di contenuti
 
-This section explains why AdGuard for Safari consists of six content blockers and how they work.
+Questa sezione spiega perché AdGuard per Safari è composto da sei bloccatori di contenuti e come funzionano.
 
-[Content Blockers](/adguard-for-safari/features/content-blockers/content-blockers.md)
+[Bloccatori di contenuti](/adguard-for-safari/features/content-blockers/content-blockers.md)
 
 ## Regole dell'utente
 
-The article is dedicated to how you can use AdGuard for Safari to create and manage custom filtering rules to personalize your ad blocking experience.
+L'articolo è dedicato a come utilizzare AdGuard per Safari per creare e gestire regole di filtraggio personalizzate per personalizzare la tua esperienza di filtraggio degli annunci.
 
-[User rules](/adguard-for-safari/features/rules.md)
+[Regole utente](/adguard-for-safari/features/rules.md)
 
 ## Info
 
-Here you’ll find useful links to privacy documents, GitHub repository, and version history.
+Qui troverete link utili ai documenti sulla privacy, al repository GitHub e alla cronologia delle versioni.
 
-[About](/adguard-for-safari/features/about.md)
+[Informazioni](/adguard-for-safari/features/about.md)

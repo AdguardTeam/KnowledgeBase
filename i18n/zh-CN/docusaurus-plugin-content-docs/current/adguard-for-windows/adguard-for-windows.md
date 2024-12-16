@@ -29,7 +29,7 @@ This article covers a browser extension that complements the desktop program, it
 
 ## 解决问题
 
-This section includes various articles addressing known issues and possible solutions.
+此部分包括已知问题和可能解决方案的文章。
 
 [Solving problems](/adguard-for-windows/solving-problems/solving-problems.md)
 

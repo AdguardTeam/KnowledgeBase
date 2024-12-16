@@ -1,5 +1,5 @@
 ---
-title: Qué se puede hacer en la cuenta de AdGuard
+title: What can be done in the AdGuard account
 sidebar_position: 2
 ---
 
@@ -7,14 +7,14 @@ En tu cuenta, puedes administrar tus licencias, dispositivos vinculados a ellas,
 
 ## Administrar la configuración de la cuenta
 
-En la sección *Configuración* de tu cuenta AdGuard, puedes actualizar o restablecer tu contraseña, cambiar tu dirección de correo electrónico, habilitar [la autenticación de dos factores](../2fa), ver los datos almacenados sobre ti por AdGuard y elegir el idioma de tu cuenta personal y de las notificaciones.
+In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable one-time code login or [two-factor authentication](../2fa), view the data stored about you by AdGuard, and select the language of your account and notifications.
 
 En esta sección también puedes gestionar tus preferencias de correo electrónico:
 
-- recibir correos electrónicos transaccionales,
-- recibir los boletines mensuales de AdGuard,
-- recibir correos electrónicos sobre ofertas especiales y promociones de AdGuard,
-- enviar recibos de lectura a AdGuard cuando abras correos electrónicos.
+- Receive AdGuard newsletter
+- Receive transactional emails
+- Send read receipts to AdGuard
+- Opt-out preferences
 
 ## Administrar licencias
 
@@ -27,12 +27,12 @@ En la sección *Licencias*, puedes administrar tus licencias y los dispositivos 
 - mejorada,
 - cancelada. También puedes actualizar tus datos de pago.
 
-Los dispositivos vinculados a tus licencias del bloqueador de anuncios AdGuard se pueden desvincular o cambiar de nombre. Puedes desvincular los dispositivos que no utilices haciendo clic en el icono con forma de cruz que aparece junto a ellos.
+Los dispositivos vinculados a tus licencias del bloqueador de anuncios AdGuard se pueden desvincular o cambiar de nombre. To unbind unused devices, click the number of bound devices next to *Devices*, then select the right arrow → *Remove*.
 
 ## Ver compras
 
-La sección Historial de compras muestra todas las licencias que hayas comprado utilizando la cuenta de correo electrónico con la que registraste tu cuenta AdGuard. You will also find there information about the date of purchase, order ID, payment method, and cost of the purchase.
+The *Purchases* section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. You will also find there information about the date of purchase, order ID, payment method, and cost of the purchase.
 
-## Contactar la asistencia técnica
+## Activity
 
-La pestaña Soporte contiene enlaces útiles que te ayudarán a resolver problemas o encontrar respuestas a tus preguntas sobre los productos AdGuard. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge Base, and Discuss.
+The *Activity* tab allows you to monitor login activity for your AdGuard account. It displays the email address used, location, and login date. You can also filter records by product: *All products*, *AdGuard Ad Blocker*, *AdGuard VPN*, *AdGuard DNS*.
