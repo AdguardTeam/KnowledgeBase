@@ -24,6 +24,6 @@ Follow the instructions to turn off *Auto Blocker*.
 
 ![Disable Auto Blocker setting *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/auto-blocker/auto_blocker_en.png)
 
-Once Auto Blocker is disabled, you can proceed with installing AdGuard Ad Blocker by tapping *Install*.
+Once *Auto Blocker* is disabled, you can proceed with installing AdGuard Ad Blocker.
 
 ![Press Install button *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/auto-blocker/install_en.png)
