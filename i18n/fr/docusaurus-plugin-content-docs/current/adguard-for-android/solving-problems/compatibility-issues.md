@@ -18,7 +18,7 @@ If you are using AdGuard in the *Local VPN* filtering mode, you cannot run other
 - Switch to the *Automatic proxy* mode. When you do that, AdGuard will no longer use local VPN and will reconfigure iptables instead
 - Switch to the *Manual proxy* mode. To do this, go to *Settings* → *Filtering* → *Network* → *Routing mode*
 
-:::note Compatibility
+:::note Compatibilité
 
 The *Automatic proxy* mode is only accessible on rooted devices. For *Manual proxy*, rooting is required on devices running on Android 10 or later.
 
@@ -40,7 +40,7 @@ To be able to filter HTTPS traffic, AdGuard requires the user to add a certifica
 
 - To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md/)
 
-:::note Compatibility
+:::note Compatibilité
 
 Requires root access.
 

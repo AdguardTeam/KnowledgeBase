@@ -104,7 +104,7 @@ HTTPS 过滤允许 AdGuard 过滤请求和响应的内容，但我们从不收�
 
 #### 代理
 
-用户可以设置 AdGuard 通过代理服务器路由所有设备的流量。 [设置出站代理的说明](/adguard-for-android/Solving-problems/outbound-proxy)
+用户可以设置 AdGuard 通过代理服务器路由所有设备的流量。 [设置出站代理的说明](/adguard-for-android/solving-problems/outbound-proxy)
 
 如果您的 VPN 提供商允许，还可以设置第三方 VPN 与 AdGuard 一起工作。
 

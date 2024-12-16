@@ -1,5 +1,5 @@
 ---
-title: Main menu
+title: 主菜单
 sidebar_position: 1
 ---
 

@@ -11,26 +11,40 @@ Recomendamos configurar a autenticação de dois fatores para sua conta AdGuard.
 
 ## Como configurá-lo
 
-1. Faça login em sua conta [AdGuard](https://auth.adguard.com/login.html) e vá para a aba Configurações:
+1. Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the *Settings* tab:
 
-![Configurações da conta AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
+ ![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Role para baixo até a seção *Senha e 2FA* e clique em **Ativar**:
+1. Scroll down to *Two-factor authentication* and enable it:
 
-![O botão Alterar *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
+ ![Two-factor authentication toggle *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. Siga as instruções na tela para instalar um aplicativo autenticador e digitalizar o código QR:
+1. A code will be sent to the email address associated with your AdGuard account. To enable 2FA, enter the code and click *Enable*.
 
-![O código de verificação](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
+ ![The verification code *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-***Importante***
+After you enable two-factor authentication, you have two options to choose from:
 
-- Salve o código de backup do segundo fator em algum lugar, ele será necessário para recuperar sua conta caso seu celular seja perdido ou roubado;
+- *One-time email code*: when you log in, we will ask you to enter the code we sent to your email
 
-Se tudo for feito corretamente, você verá isto na próxima vez que fizer login em sua conta:
+- *Code from authenticator app*: when you log in, we will ask for a code from your authenticator app
 
-![O resultado *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+![2FA options *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 
-Use seu aplicativo autenticador móvel para ler o código e inseri-lo. Você provavelmente já está logado!
+:::note
 
-***NOTA***: Se você receber um erro de autenticação, verifique o relógio do seu telefone. Ajuste-o se necessário, pois um relógio não sincronizado pode ser a causa do erro.
+If you use the authenticator app, make sure to save the **setup key** somewhere. It will be necessary to recover your account in case your mobile phone gets lost or stolen.
+
+![The setup key in the authenticator app *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
+
+:::
+
+If everything is done right, you will see this when you log into your account the next time:
+
+![The result *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
+
+:::note
+
+If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
+
+:::

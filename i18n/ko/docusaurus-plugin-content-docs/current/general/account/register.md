@@ -9,7 +9,7 @@ sidebar_position: 1
 
 ## 계정을 만드는 방법
 
-계정을 만들려면 [AdGuard 공식 웹사이트](https://adguard.com/welcome.html)로 이동하여 화면 오른쪽 상단의 *내 계정* 버튼을 누르세요. 이메일 주소를 입력하고 비밀번호를 생성하면 계정이 등록됩니다.
+To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and click the *Log in* button on the top right corner of the screen. 이메일 주소를 입력하고 비밀번호를 생성하면 계정이 등록됩니다.
 
 :::tip
 
@@ -21,6 +21,12 @@ AdGuard 앱에서 직접 계정을 생성할 수도 있습니다. *로그인* �
 
 계정이 생성된 후 활성화 이메일에 포함된 링크를 따라 계정을 활성화합니다.
 
+:::tip
+
+After you've registered your account, you can use the *One-time code* option to log in to the application. Enter your email address and choose to enter either your password or the the code sent to your email address.
+
+:::
+
 ## 소셜 네트워크를 통해 계정을 만드는 방법
 
-소셜 네트워크를 통해 계정을 만들려면 [링크](https://auth.adguard.com/login.html)를 따라 계정에 로그인하기만 하면 됩니다. 가입이 완료되면 받은 편지함을 확인하면 확인 이메일이 전송됩니다. 비밀번호를 설정하면 끝입니다! 이제 [AdGuard 계정의 모든 기능](https://adguard.com/kb/general/account/features/)을 사용할 수 있습니다.
+To create an account via a social network, simply follow the [link](https://auth.adguard.com/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.com/kb/general/account/features/).

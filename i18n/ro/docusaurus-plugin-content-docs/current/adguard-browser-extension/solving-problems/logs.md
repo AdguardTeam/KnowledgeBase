@@ -13,7 +13,7 @@ sidebar_position: 1
 
 3. Activați _Mod pentru dezvoltatori_.
 
-   ![Mod pentru dezvoltatori \*chenar](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
+   ![Developer mode \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
 
 4. Da-ți clic pe `background.html`.
 

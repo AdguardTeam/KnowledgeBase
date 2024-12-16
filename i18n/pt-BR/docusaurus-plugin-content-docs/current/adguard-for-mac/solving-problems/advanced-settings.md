@@ -161,9 +161,9 @@ Remove os parâmetros Encrypted Client Hello das respostas.
 
 #### `dns.proxy.private.relay.sequoia.workaround.enabled`
 
-Blocks macOS Private Relay domains if the user has a firewall enabled, which in turn disables the *Private Relay* feature.
+Bloqueia domínios do Private Relay do macOS se o usuário tiver um firewall ativado, o que por sua vez desativa o recurso *Private Relay*.
 
-Enabling this setting is useful in the following scenario: when macOS Private Relay is active, filtering cannot function properly and must be disabled. In macOS versions up to 14, AdGuard could automatically disable Private Relay when Protection was enabled. However, starting with macOS 15, this is no longer possible if a firewall is active. By turning on this setting, you can disable Private Relay even when the firewall is enabled, overcoming the previous limitation.
+Ativar esta configuração é útil no seguinte cenário: quando o Private Relay do macOS está ativo, a filtragem não pode funcionar corretamente e deve ser desativada. Nas versões do macOS até 14, o AdGuard podia desativar automaticamente o Private Relay quando a proteção estava ativada. No entanto, a partir do macOS 15, isso não é mais possível se um Firewall estiver ativo. Ao ativar esta configuração, você pode desativar o Firewall mesmo quando está ativado, superando a limitação anterior.
 
 ### Configurações do Modo Furtivo
 

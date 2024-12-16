@@ -11,26 +11,40 @@ AdGuard hesabınız için iki faktörlü kimlik doğrulamayı ayarlamanızı ön
 
 ## Nasıl ayarlanır
 
-1. Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the Settings tab:
+1. [AdGuard hesabınıza](https://auth.adguard.com/login.html) giriş yapın ve *Ayarlar* sekmesine gidin:
 
-![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
+ ![AdGuard Hesap ayarları *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Scroll down to *Password and 2FA* section and click **Enable**:
+1. Aşağı kaydırın ve *İki faktörlü kimlik doğrulamasını* etkinleştirin:
 
-![The Change button *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
+ ![İki faktörlü kimlik doğrulama geçişi *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. Kimlik doğrulama uygulaması yüklemek ve QR kodunu taramak için ekrandaki talimatları izleyin:
+1. AdGuard hesabınızla ilişkili e-posta adresinize bir kod gönderilecektir. 2FKD'yı etkinleştirmek için kodu girin ve *Etkinleştir* öğesine tıklayın.
 
-![The verification code](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
+ ![Doğrulama kodu *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-***Important***
+İki faktörlü kimlik doğrulamayı etkinleştirdikten sonra, aralarından seçim yapabileceğiniz iki seçeneğiniz olur:
 
-- İkinci faktör yedekleme kodunu bir yere kaydedin, cep telefonunuzun kaybolması veya çalınması durumunda hesabınızı kurtarmanız gerekecektir;
+- *Tek seferlik e-posta kodu*: Giriş yaptığınızda, e-postanıza gönderdiğimiz kodu girmenizi isteyeceğiz
 
-Her şey doğru yapıldıysa, bir sonraki sefer hesabınıza giriş yaptığınızda bunu göreceksiniz:
+- *Kimlik doğrulayıcı uygulamasından gelen kod*: Giriş yaptığınızda, kimlik doğrulayıcı uygulamanızdan bir kod isteyeceğiz
 
-![Sonuç *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+![2FA options *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 
-Kodu okumak ve girmek için mobil kimlik doğrulayıcı uygulamanızı kullanın. Şimdi giriş yapmış olmalısınız!
+:::not
 
-***NOT***: Kimlik doğrulama hatası alırsanız, telefonunuzdaki saati kontrol edin. Hatanın nedeni senkronize olmayan bir saat olabileceğinden, gerekiyorsa saati düzeltin.
+Eğer kimlik doğrulama uygulamasını kullanıyorsanız **kurulum anahtarını** bir yere kaydettiğinizden emin olun. Cep telefonunuzun kaybolması veya çalınması durumunda hesabınızı kurtarmanız gerekecektir.
+
+![Kimlik doğrulayıcı uygulamasındaki kurulum anahtarı *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
+
+:::
+
+If everything is done right, you will see this when you log into your account the next time:
+
+![Sonuç *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
+
+:::not
+
+Kimlik doğrulama hatası alırsanız telefonunuzun saatini kontrol edin. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
+
+:::

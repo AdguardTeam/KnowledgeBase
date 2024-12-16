@@ -1,5 +1,5 @@
 ---
-title: Features
+title: 功能
 sidebar_position: 1
 ---
 
@@ -11,54 +11,54 @@ sidebar_position: 1
 
 ## 主窗口
 
-From the main window, you can toggle protection, view statistics on blocked ads, trackers, and threats, and access settings, updates, support, and license management.
+在主页上可以开关保护，查看已拦截广告、跟踪器和威胁的统计数字，以及访问设置、更新、支持和许可证管理。
 
-[Main window](/adguard-for-mac/features/main.md)
+[主页](/adguard-for-mac/features/main.md)
 
 ## 常规
 
-Here you can configure basic settings such as _Do not block search ads and website self-promoting ads_, _Activate language-specific filters automatically_, _Launch AdGuard at login_, _Hide menu bar icon_, and _Allowlist_.
+在这里，可以配置基本设置，例如「不拦截搜索广告和网站自我推销广告」、「自动激活特定语言的过滤器」、「AdGuard 随系统启动运行」、「隐藏菜单栏的图标」和「白名单」。
 
-[General](/adguard-for-mac/features/general.md)
+[常规](/adguard-for-mac/features/general.md)
 
 ## 过滤器
 
-Here you learn how you can customize your ad blocking by enabling different filter lists, including language-specific filters, third-party filters, and user rules.
+在这里，可以启用不同的过滤列表来定制广告拦截，包括特定语言过滤器、第三方过滤器和用户规则。
 
-[Filters](/adguard-for-mac/features/filters.md)
+[过滤器](/adguard-for-mac/features/filters.md)
 
 ## DNS
 
-Here you can find the DNS protection settings: available providers, filters, Blocklist and Allowlist functions.
+在这里，可以调整 DNS 保护设置，包括可用的提供商、过滤器、黑名单和白名单功能。
 
 [DNS](/adguard-for-mac/features/dns.md)
 
 ## 隐身模式
 
-[Stealth Mode](/adguard-for-mac/features/stealth.md)
+[隐身模式](/adguard-for-mac/features/stealth.md)
 
-Information on how to set up advanced protection by deleting cookies, UTM tags, online counters, and analytics systems, and not allowing websites to collect your IP address, device and browser parameters, search queries, and personal information.
+有关如何通过删除 Cookie、UTM 标签、在线计数器和分析系统来设置高级保护的信息，不允许网站收集个人的 IP 地址、设备和浏览器参数、搜索查询和其他个人信息。
 
 ## 安全
 
-It includes settings to protect you from phishing and malware. You can also help AdGuard update its database of known threats by agreeing to send anonymous security-related information.
+该部分包含保护用户免受钓鱼和恶意软件攻击的设置。 用户还可以同意发送匿名的安全相关信息帮助 AdGuard 更新已知威胁的数据库。
 
-[Security](/adguard-for-mac/features/security.md)
+[安全](/adguard-for-mac/features/security.md)
 
 ## 浏览器助手
 
-Information on how to manage AdGuard protection directly from the browser.
+关于如何从浏览器管理 AdGuard 保护的信息。
 
-[Browser Assistant](/adguard-for-mac/features/browser-assistant.md)
+[AdGuard 助手](/adguard-for-mac/features/browser-assistant.md)
 
 ## 浏览器扩展
 
-Here you’ll how to use AdGuard as a userscript manager to extend the functionality of websites. You can add your own scripts as well as manage existing ones.
+在这里，用户将学习如何使用 AdGuard 作为用户脚本管理器来扩展网站的功能。 用户可以添加自己的脚本，也可以管理现有脚本。
 
-[Extensions](/adguard-for-mac/features/extensions.md)
+[扩展](/adguard-for-mac/features/extensions.md)
 
 ## 网络
 
-This article describes additional network-related options and proxy settings where you can specify which proxy server AdGuard should use to update filters, download new versions, and so on.
+本文描述其他网络相关选项和代理设置，可以在设置中指定 AdGuard 应使用哪个代理服务器来更新过滤器、下载新版本，等等。
 
-[Network](/adguard-for-mac/features/network.md)
+[网络](/adguard-for-mac/features/network.md)

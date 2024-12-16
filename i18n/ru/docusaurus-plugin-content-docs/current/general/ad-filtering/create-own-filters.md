@@ -446,7 +446,7 @@ entry_i = ( regular_domain / any_tld_domain / regexp )
 
 :::caution Ограничения
 
-In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries are not supported.
+В [AdGuard для Chrome MV3][ext-mv3] записи `regexp` и `any_tld_domain` не поддерживаются.
 
 :::
 
@@ -976,18 +976,18 @@ $extension="userscript name\, with \"quote\""
 
 **Примеры**
 
-- `@@||example.com^$extension="AdGuard Assistant"` отключает пользовательский скрипт `AdGuard Assistant` на сайте `example.com`.
+- `@@||example.com^$extension="AdGuard Assistant"` отключает пользовательский скрипт `Помощник AdGuard` на сайте `example.com`.
 - `@@||example.com^$extension=MyUserscript` отключает пользовательский скрипт `MyUserscript` на сайте `example.com`.
-- `@@||example.com^$extension='AdGuard Assistant'|'AdGuard Popup Blocker'` disables both `AdGuard Assistant` and `AdGuard Popup Blocker` userscripts on `example.com` website.
-- `@@||example.com^$extension=~"AdGuard Assistant"` отключает все пользовательские скрипты на сайте `example.com`, кроме `AdGuard Assistant`.
-- `@@||example.com^$extension=~"AdGuard Assistant"|~"AdGuard Popup Blocker"` disables all user scripts on `example.com` website, except `AdGuard Assistant` and `AdGuard Popup Blocker`.
+- `@@||example.com^$extension='AdGuard Assistant'|'AdGuard Popup Blocker'` отключает оба пользовательских скрипта `Помощник AdGuard` и `Блокировщик всплывающей рекламы от AdGuard` на сайте `example.com`.
+- `@@||example.com^$extension=~"AdGuard Assistant"` отключает все пользовательские скрипты на сайте `example.com`, кроме `Помощника AdGuard`.
+- `@@||example.com^$extension=~"AdGuard Assistant"|~"AdGuard Popup Blocker"` отключает все пользовательские скрипты на сайте `example.com`, кроме `Помощника AdGuard` и `Блокировщика всплывающей рекламы от AdGuard`.
 - `@@||example.com^$extension` — пользовательские скрипты не будут работать на страницах сайта `example.com`.
 - `@@||example.com^$extension="AdGuard \"Assistant\""` отключает пользовательский скрипт `AdGuard "Assistant"` на сайте `example.com`.
 
 :::info Совместимость
 
 - Только AdGuard для Windows, Mac и Android имеют технические возможности для поддержки правил с модификатором `$extension`.
-- Rules with `$extension` modifier with specific userscript name are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.13 or later.
+- Правила с модификатором `$extension` поддерживаются в AdGuard для Windows, AdGuard для Mac и AdGuard для Android [с CoreLibs][] версии 1.13 или выше.
 
 :::
 
@@ -999,23 +999,23 @@ $extension="userscript name\, with \"quote\""
 
 - `@@||example.com^$jsinject` отменяет все javascript-правила для страниц на сайте `example.com` и на всех его поддоменах.
 
-##### `$jsinject` modifier limitations {#jsinject-modifier-limitations}
+##### Ограничения модификатора `$jsinject` {#jsinject-modifier-limitations}
 
-:::info Limitations
+:::info Ограничения
 
-Rules with the [`$jsinject`][jsinject-in-mv3] modifier cannot be converted to DNR in [AdGuard for Chrome MV3][ext-mv3]. We only use them in the [TSUrlFilter][] engine to disable some cosmetic rules.
+Правила с модификатором [`$jsinject`][jsinject-in-mv3] не могут быть преобразованы в DNR в [AdGuard для Chrome MV3][ext-mv3]. Мы используем их только в движке [TSUrlFilter][] для отключения некоторых косметических правил.
 
 :::
 
 :::info Совместимость
 
-The `$jsinject` modifier is not supported by AdGuard for Chrome MV3 ([yet][jsinject-in-mv3]) and AdGuard Content Blocker.
+Модификатор `$jsinject` не поддерживается AdGuard для Chrome MV3 ([пока][jsinject-in-mv3]) и AdGuard Content Blocker.
 
 :::
 
 #### **`$stealth`** {#stealth-modifier}
 
-Disables the Tracking protection (formerly Stealth Mode) module for all corresponding pages and requests.
+Отключает Защиту от трекинга для всех страниц и запросов, подходящих под это правило.
 
 **Синтаксис**
 
@@ -1023,7 +1023,7 @@ Disables the Tracking protection (formerly Stealth Mode) module for all correspo
 $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 ```
 
-`opt(i)` stand for certain Tracking protection options disabled by the modifier. Модификатор может содержать любое количество опций (см. ниже) или не содержать их вовсе. In the latter case the modifier disables all the Tracking protection features.
+Здесь `opt(i)` — опции Защиты от трекинга‎, отключённые модификатором. Модификатор может содержать любое количество опций (см. ниже) или не содержать их вовсе. В последнем случае модификатор отключает Защиту от трекинга полностью.
 
 Список доступных опций модификатора:
 
@@ -1046,13 +1046,13 @@ $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 
 **Примеры**
 
-- `@@||example.com^$stealth` disables Tracking protection for `example.com` (and subdomains) requests, except for blocking cookies and hiding tracking parameters (see below).
-- `@@||domain.com^$script,stealth,domain=example.com` disables Tracking protection only for script requests to `domain.com` (and its subdomains) on `example.com` and all its subdomains.
+- `@@||example.com^$stealth` полностью отключает Защиту от трекинга для запросов к `example.com` и поддоменам, кроме блокировки куки и скрытия параметров отслеживания (см. ниже).
+- `@@||domain.com^$script,stealth,domain=example.com` отключает Защиту от трекинга только для script-запросов к `domain.com` и поддоменам на `example.com` и всех его поддоменах.
 - `@@||example.com^$stealth=3p-cookie|dpi` отключает блокировку сторонних куки-файлов и меры защиты от DPI для запросов к `example.com`.
 
 :::note
 
-Блокировка куки и удаление параметров отслеживания достигается с помощью правил с модификаторами [`$cookie`](#cookie-modifier), [`$urltransform`](#urltransform-modifier) и [`$removeparam`](#removeparam-modifier). Правила-исключения, которые содержат только модификатор `$stealth`, не будут выполнять эти действия. If you want to completely disable all Tracking protection features for a given domain, you must include all three modifiers: `@@||example.org^$stealth,removeparam,cookie`.
+Блокировка куки и удаление параметров отслеживания достигается с помощью правил с модификаторами [`$cookie`](#cookie-modifier), [`$urltransform`](#urltransform-modifier) и [`$removeparam`](#removeparam-modifier). Правила-исключения, которые содержат только модификатор `$stealth`, не будут выполнять эти действия. Если вы хотите полностью отключить все функции Защиты от трекинга для определённого домена, нужно включить в правило все три модификатора: `@@||example.org^$stealth,removeparam,cookie`.
 
 :::
 
@@ -1066,8 +1066,8 @@ $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 
 :::info Совместимость
 
-- Tracking protection (formerly Stealth Mode) is available in AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox and Chromium-based browsers, except AdGuard for Chrome MV3. Все остальные продукты будут игнорировать правила с модификатором `$stealth`.
-- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+- Защита от трекинга доступна в AdGuard для Windows, AdGuard для Mac, AdGuard для Android и расширении AdGuard для Firefox и браузеров на базе Chromium, за исключением AdGuard для Chrome MV3. Все остальные продукты будут игнорировать правила с модификатором `$stealth`.
+- Правила с модификатором `$stealth` поддерживаются в AdGuard для Windows, AdGuard для Mac и AdGuard для Android [с CoreLibs][] версии 1.10 или выше и в Браузерном расширении AdGuard [с TSUrlFilter][] версии 3.0.0 или выше.
 
 :::
 
@@ -1079,7 +1079,7 @@ $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 
 - `@@||example.com^$urlblock` — любые запросы, отправленные со страниц сайта `example.com` и всех его поддоменов, не будут блокироваться.
 
-##### `$urlblock` modifier limitations {#urlblock-modifier-limitations}
+##### Ограничения модификатора `$urlblock` {#urlblock-modifier-limitations}
 
 :::caution Ограничения
 
@@ -1089,7 +1089,7 @@ $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 
 :::info Совместимость
 
-Rules with `$urlblock` modifier are not supported by AdGuard Content Blocker, and AdGuard for Chrome MV3.
+Правила с модификатором `$urlblock` не поддерживаются в AdGuard Content Blocker и AdGuard для Chrome MV3.
 
 :::
 
@@ -1124,7 +1124,7 @@ domain.com###banner
 
 - `@@||example.com^$genericblock` отключает базовые правила generic на любых страницах `example.com` и всех поддоменах.
 
-##### `$genericblock` modifier limitations {#genericblock-modifier-limitations}
+##### Ограничения модификатора `$genericblock` {#genericblock-modifier-limitations}
 
 :::caution Ограничения
 
@@ -1134,7 +1134,7 @@ domain.com###banner
 
 :::info Совместимость
 
-Rules with `$genericblock` modifier are not supported by AdGuard Content Blocker, and AdGuard for Chrome MV3.
+Правила с модификатором `$genericblock` не поддерживаются в AdGuard Content Blocker и AdGuard для Chrome MV3.
 
 :::
 
@@ -1232,11 +1232,11 @@ Rules with `$genericblock` modifier are not supported by AdGuard Content Blocker
 
 :::
 
-##### `$all` modifier limitations {#all-modifier-limitations}
+##### Ограничения модификатора `$all` {#all-modifier-limitations}
 
 :::caution Ограничения
 
-Since `$popup` is a part if `$all`, the `$all` modifier is not supported by AdGuard for Chrome MV3 because of [`$popup` modifier limitations](#popup-modifier-limitations).
+Так как `$popup` является частью `$all`, модификатор `$all` не поддерживается в AdGuard для Chrome MV3 из-за ограничений модификатора [`$popup`](#popup-modifier-limitations).
 
 :::
 
@@ -1273,11 +1273,11 @@ Since `$popup` is a part if `$all`, the `$all` modifier is not supported by AdGu
 - `/some$domain=example.*` отключено для `example.com` и `example.org` правилом `/some$domain=example.com|example.org,badfilter`
 - `/some$domain=example.com|example.org|example.io` НЕ отключено для `example.com` правилом `/some$domain=example.com|~example.org,badfilter`, поскольку значение модификатора `$domain` содержит отрицание домена
 
-##### `$badfilter` modifier limitations {#badfilter-modifier-limitations}
+##### Ограничения модификатора `$badfilter` {#badfilter-modifier-limitations}
 
 :::caution Ограничения
 
-In [AdGuard for Chrome MV3][ext-mv3] a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. We cannot calculate it if it is only partially canceled. [Examples](https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#badfilter)
+В [AdGuard для Chrome MV3][ext-mv3] правило с модификатором `$badfilter` применяется в DNR только в том случае, если оно полностью отменяет исходное правило. Мы не можем рассчитать его, если он отменён лишь частично. [Примеры](https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#badfilter)
 
 :::
 
@@ -1305,7 +1305,7 @@ $cookie [= name[; maxAge = seconds [; sameSite = strategy ]]]
 
 - **`name`** — опционально, строка или регулярное выражение для сопоставления с именем куки.
 - **`seconds`** — количество секунд, на которое сместится истечение срока действия куки.
-- **`strategy`** — string for [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) strategy to be applied to the cookie.
+- **`strategy`** — строка для стратегии [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite), которая будет применена к куки.
 
 Например,
 
@@ -1320,7 +1320,7 @@ $cookie [= name[; maxAge = seconds [; sameSite = strategy ]]]
 
 **Экранирование специальных символов**
 
-Если для сопоставления используется регулярное выражение `name`, необходимо экранировать два символа: запятую `,` и знак доллара `$`. Use backslash `\` to escape each of them. Например, экранированная запятая будет выглядеть так: `\,`.
+Если для сопоставления используется регулярное выражение `name`, необходимо экранировать два символа: запятую `,` и знак доллара `$`. Используйте для этого обратный слеш `\`. Например, экранированная запятая будет выглядеть так: `\,`.
 
 **Примеры**
 
@@ -1336,17 +1336,17 @@ $cookie [= name[; maxAge = seconds [; sameSite = strategy ]]]
 - `@@||example.org^$cookie=concept` разблокирует один куки-файл с именем `concept`
 - `@@||example.org^$cookie=/^_ga_/` разблокирует все куки, соответствующие регулярному выражению
 
-##### `$cookie` modifier limitations {#cookie-modifier-limitations}
+##### Ограничения модификатора `$cookie` {#cookie-modifier-limitations}
 
 :::caution Ограничения
 
-In [AdGuard for Chrome MV3][ext-mv3] we delete cookies in 2 ways: from `content-script` side (to which we have access) and from `onBeforeSendHeaders` listener. Since `onBeforeSendHeaders` and other listeners are no longer blocking, we are not able to delete them in all cases. You can check if a rule works with [this test](https://testcases.agrd.dev/Filters/cookie-rules/test-cookie-rules).
+В [AdGuard for Chrome MV3][ext-mv3] мы удаляем куки двумя способами: из `content-script`, к которому у нас есть доступ, и из слушателя событий `onBeforeSendHeaders`. Поскольку `onBeforeSendHeaders` и другие слушатели больше не блокируют выполнение запроса, мы не можем удалить их во всех случаях. Вы можете проверить, работает ли правило, [с помощью этого теста](https://testcases.agrd.dev/Filters/cookie-rules/test-cookie-rules).
 
 :::
 
 :::caution Ограничения
 
-`$cookie` rules support these types of modifiers: `$domain`, `$~domain`, `$important`, `$third-party`, `$~third-party`, `strict-third-party`, and `strict-first-party`.
+Правила `$cookie` поддерживают эти типы модификаторов: `$domain`, `$~domain`, `$important`, `$third-party`, `$~third-party`, `strict-third-party` и `strict-first-party`.
 
 :::
 
@@ -1389,7 +1389,7 @@ In [AdGuard for Chrome MV3][ext-mv3] we delete cookies in 2 ways: from `content-
 :::caution Ограничения
 
 - Некоторые символы запрещены в значении `$csp`: `,`, `$`.
-- `$csp` rules support three types of modifiers: `$domain`, `$important`, `$subdocument`.
+- Правила `$csp` поддерживают три типа модификаторов: `$domain`, `$important` и `$subdocument`.
 - Правила с директивами `report-*` считаются некорректными.
 
 :::
@@ -1458,7 +1458,7 @@ In [AdGuard for Chrome MV3][ext-mv3] we delete cookies in 2 ways: from `content-
 1. Когда сегмент удаляется, все теги, относящиеся только к нему, тоже удаляются
 1. Теги, относящиеся к нескольким сегментам, удаляются, если все эти сегменты были удалены
 1. Поскольку различные типы тегов невозможно распознать по синтаксису, мы распознаем все теги, указанные в RFC, плюс некоторые нестандартные теги, которые встречались нам в полевых условиях. Любые строки, начинающиеся с `#` и не распознанные как тег, пропускаются без модификации и не сопоставляются с правилами
-1. Tags will not be matched if they apply to the entire playlist, and `$hls` rules cannot be used to remove them, as these rule types are intended for segment removals. Если вы знаете, что делаете, вы можете использовать правила `$replace` для удаления или перезаписи только одного тега из плейлиста
+1. Теги не будут сопоставлены, если они применяются ко всему списку воспроизведения, а правила `$hls` нельзя использовать для их удаления, поскольку эти типы правил предназначены для удаления сегментов. Если вы знаете, что делаете, вы можете использовать правила `$replace` для удаления или перезаписи только одного тега из плейлиста
 
 **Пример работы правил:**
 
@@ -1519,8 +1519,8 @@ preroll.ts
 
 :::caution Ограничения
 
-- Rules with the `$hls` modifier can only be used [**in trusted filters**](#trusted-filters).
-- `$hls` rules are compatible with the modifiers `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest` only.
+- Правила с модификатором `$hls` могут быть использованы [**только в доверенных фильтрах**](#trusted-filters).
+- Правила `$hls` совместимы только с модификаторами `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case` и `$xmlhttprequest`.
 - Правила `$hls` применимы только к HLS-плейлистам, т. е. к тексту в кодировке UTF-8, начинающемуся со строки `#EXTM3U`. Никакие другие ответы не будут модифицированы этими правилами.
 - Правила с `$hls` не применяются к ответам размером больше 10 МБ.
 
@@ -1528,7 +1528,7 @@ preroll.ts
 
 :::info Совместимость
 
-Rules with the `$hls` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.10 or later.
+Правила с модификатором `$hls` поддерживаются в AdGuard для Windows, AdGuard для Mac и AdGuard для Android с [CoreLibs][] версии 10 или выше.
 
 :::
 
@@ -1552,7 +1552,7 @@ Rules with the `$hls` modifier are supported by AdGuard for Windows, AdGuard for
 
 Правила `$jsonprune` модифицируют ответ на соответствующий запрос, удаляя JSON-элементы, которые соответствуют модифицированному выражению [JSONPath](https://goessner.net/articles/JsonPath/). Эти правила не изменяют ответы, которые не являются действительными JSON-документами.
 
-In AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later, `$jsonprune` also supports modifying JSONP (padded JSON) documents.
+В AdGuard для Windows, Mac и Android [с CoreLibs][] версии 1.11 или выше `$jsonprune` также поддерживает модификацию документов JSONP (padded JSON).
 
 **Синтаксис**
 
@@ -1689,7 +1689,7 @@ https://www.site24x7.com/tools/jsonpath-finder-validator.html https://jsonpathfi
 
 **Вложенные выражения JSONPath**
 
-In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.11 or later, JSONPath expressions may be used as keys in filter expressions.
+В AdGuard для Windows, Mac и Android [с CoreLibs][] версии 1.11 или выше выражения JSONPath могут быть использованы как ключи в выражениях фильтра.
 
 - `||example.org^$jsonprune=\$.elems[?(has "\$.a.b.c")]` удаляет всех прямых потомков `elems`, которые обладают свойством, выбираемым JSONPath-выражением `$.a.b.c`.
 
@@ -1766,14 +1766,14 @@ In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.11 or later, JSONPa
 
 :::caution Ограничения
 
-- `$jsonprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+- Правила `$jsonprune` совместимы только с этими модификаторами: `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case` и `$xmlhttprequest`.
 - Правила с `$jsonprune` не применяются к ответам размером больше 10 МБ.
 
 :::
 
 :::info Совместимость
 
-Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.10 or later.
+Правила с модификатором `$jsonprune` поддерживаются в AdGuard для Windows, AdGuard для Mac и AdGuard для Android с [CoreLibs][] версии 10 или выше.
 
 :::
 
@@ -1804,7 +1804,7 @@ Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, AdGua
 
 **Примеры**
 
-- `||example.org^$xmlprune=/bookstore/book[position() mod 2 = 1]` removes odd-numbered books from the bookstore.
+- `||example.org^$xmlprune=/bookstore/book[position() mod 2 = 1]` удаляет книги с нечётными номерами из книжного магазина.
 
 <details>
 <summary>До</summary>
@@ -1882,7 +1882,7 @@ Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, AdGua
 
 </details>
 
-- `||example.org^$xmlprune=/bookstore/book[year = 2003]` removes books from the year 2003 from the bookstore.
+- `||example.org^$xmlprune=/bookstore/book[year = 2003]` удаляет книги за 2003 год из книжного магазина.
 
 <details>
 <summary>До</summary>
@@ -2004,14 +2004,14 @@ Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, AdGua
 
 :::caution Ограничения
 
-- `$xmlprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+- Правила `$xmlprune` совместимы только с этими модификаторами: `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case` и `$xmlhttprequest`.
 - Правила с `$xmlprune` не применяются к ответам размером больше 10 МБ.
 
 :::
 
 :::info Совместимость
 
-Rules with the `$xmlprune` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.15 or later.
+Правила с модификатором `$xmlprune` поддерживаются в AdGuard для Windows, AdGuard для Mac и AdGuard для Android с [CoreLibs][] версии 15 или выше.
 
 :::
 
@@ -2061,56 +2061,56 @@ Rules with the `$xmlprune` modifier are supported by AdGuard for Windows, AdGuar
 
 **Синтаксис**
 
-`$permissions` value syntax is identical to that of the `Permissions-Policy` header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) with the following exceptions:
+Синтаксис значений `$permissions` идентичен [синтаксису](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) заголовка `Permissions-Policy` со следующими исключениями:
 
-1. A comma that separates multiple features **MUST** be escaped — see examples below.
-2. A pipe character (`|`) can be used instead of a comma to separate features.
+1. Запятая, разделяющая несколько функций, **должна быть экранирована** — см. примеры ниже.
+2. Вместо запятой для разделения функций можно использовать символ вертикальной черты (`|`).
 
-The list of available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
+[Список доступных директив](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives)
 
-`$permissions` value can be empty in the case of exception rules — see examples below.
+Значение `$permissions` может быть пустым в случае правил исключений — смотрите примеры ниже.
 
 **Примеры**
 
 - `||example.org^$permissions=autoplay=()` запрещает автовоспроизведение медиафайлов, запрашиваемых через интерфейс `HTMLMediaElement` на сайте `example.org`.
-- `@@||example.org/page/*$permissions=autoplay=()` отключает все правила с модификатором `$permissions`, в точности соответствующим `autoplay=()` на всех страницах, подходящих под паттерн правила. Например, правило выше. It is important to note that the exception rule only takes effect in the case of an **exact value match**. For example, if you want to disable the rule  `$permissions=a=()\,b=()`, you need exception rule `@@$permissions=a=()\,b=()`, and **not** `@@$permissions=b=()\,a=()`, **nor** `@@$permissions=b=()` because `b=()\,a=()` or `b=()` does not match with `a=()\,b=()`.
+- `@@||example.org/page/*$permissions=autoplay=()` отключает все правила с модификатором `$permissions`, в точности соответствующим `autoplay=()` на всех страницах, подходящих под паттерн правила. Например, правило выше. Важно отметить, что правило исключения действует только в случае **точного совпадения значений**. Например, если вы хотите отключить правило `$permissions=a=()\,b=()`, вам нужно правило исключения `@@$permissions=a=()\,b=()`, а **не** `@@$permissions=b=()\,a=()` **или** `@@$permissions=b=()`, потому что `b=()\,a=()` или `b=()` не совпадает с `a=()\,b=()`.
 - `@@||example.org/page/*$permissions` отключает все `$permissions`-правила на всех страницах, подходящих под паттерн правила.
 - `$domain=example.org|example.com,permissions=storage-access=()\, camera=()` запрещает использование Storage Access API для запроса доступа к неразмеченным куки, а также использование устройств видеоввода на сайтах `example.org` и `example.com`.
-- `$domain=example.org|example.com,permissions=storage-access=()|camera=()` does the same — a `|` can be used to separate the features instead of an escaped comma.
+- `$domain=example.org|example.com,permissions=storage-access=()|camera=()` делает то же самое — вместо экранированной запятой для разделения функций можно использовать `|`.
 - `@@||example.org^$document` или `@@||example.org^$urlblock` отключает все `$permission`-правила на всех страницах, подходящих под паттерн правила.
 
 :::note
 
-`$permissions` rules only take effect for main frame and sub frame requests. This means they are applied when a page is loaded or when an iframe is loaded.
+Правила `$permissions` действуют только для запросов основного фрейма и подфреймов. Это означает, что они применяются при загрузке страницы или при загрузке iframe.
 
 :::
 
 :::note
 
-If there are multiple `$permissions` rules that match the same request, multiple `Permissions-Policy` headers will be added to the response for each rule with their `$permissions` value. So if you have two rules: `||example.org^$permissions=autoplay=()` and `||example.org^$permissions=geolocation=()\,camera=()` that match the same request, the response will contain two `Permissions-Policy` headers: `autoplay=()` and `geolocation=()\,camera=()`.
+Если имеется несколько правил `$permissions`, соответствующих одному и тому же запросу, к ответу для каждого правила будут добавлены несколько заголовков `Permissions-Policy` со своими значениями `$permissions`. Итак, если у вас есть два правила: `||example.org^$permissions=autoplay=()` и `||example.org^$permissions=geolocation=()\,camera=()`, которые соответствуют одному и тому же запросу, ответ будет содержать два заголовка `Permissions-Policy`: `autoplay=()` и `geolocation=()\,camera=()`.
 
 :::
 
-##### `$permissions` modifier limitations {#permissions-modifier-limitations}
+##### Ограничения модификатора `$permissions` {#permissions-modifier-limitations}
 
 :::caution Ограничения
 
-Firefox ignores the `Permissions-Policy` header. For more information, see [this issue](https://bugzilla.mozilla.org/show_bug.cgi?id=1694922).
+Firefox игнорирует заголовок `Permissions-Policy`. Подробнее см. [на сайте Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1694922).
 
 :::
 
 :::caution Ограничения
 
 1. В модификаторе `$permissions` запрещён символ `$`.
-2. `$permissions` is compatible with a limited set of modifiers: `$domain`, `$important`, `$subdocument`, and [content-type modifiers](#content-type-modifiers).
-3. Правила с модификатором `$permissions`, не содержащие [модификаторов типа контента](#content-type-modifiers), будут соответствовать только тем запросам, которые имеют тип контента `document`.
+2. `$permissions` совместим с ограниченным набором модификаторов: `$domain`, `$important`, `$subdocument` и [модификаторами типа контента](#content-type-modifiers).
+3. Правила с модификатором `$permissions`, не содержащие [модификаторов типа контента](#content-type-modifiers), будут применяться только к тем запросам, которые имеют тип контента `document`.
 
 :::
 
 :::info Совместимость
 
-- Rules with the `$permissions` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
-- Pipe separator `|` instead of escaped comma is supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.14 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+- Правила с модификатором `$permissions` поддерживаются в AdGuard для Windows, AdGuard для Mac и AdGuard для Android [с CoreLibs][] версии 1.11 или выше и в Браузерном расширении AdGuard [с TSUrlFilter][] версии 3.0.0 или выше.
+- Разделитель `|` вместо запятой поддерживается в AdGuard для Windows, AdGuard для Mac и AdGuard для Android [с CoreLibs][] версии 1.14 или выше и в Браузерном расширении AdGuard [с TSUrlFilter][] версии 3.0.0 или выше.
 
 :::
 
@@ -2133,7 +2133,7 @@ AdGuard использует тот же синтаксис правил фил�
 - `@@||example.org^$redirect` отключит все правила `$redirect` для URL-адресов, соответствующих `||example.org^`.
 - `@@||example.org^$redirect=nooptext` отключит все правила с `$redirect=nooptext` для любого запроса, который соответствует `||example.org^`.
 
-More information on redirects and their usage is available [on GitHub](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
+Больше информации о редиректах и их использовании доступно [на GitHub](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
 
 ##### Приоритеты правил `$redirect` {#redirect-rule-priorities}
 
@@ -2145,17 +2145,17 @@ More information on redirects and their usage is available [on GitHub](https://g
 
 Перейдите [к приоритетам правил](#rule-priorities) для более подробной информации.
 
-##### `$redirect` modifier limitations {#redirect-modifier-limitations}
+##### Ограничения модификатора `$redirect` {#redirect-modifier-limitations}
 
 :::caution Ограничения
 
-In [AdGuard for Chrome MV3][ext-mv3] allowlist rules with `$redirect` are not supported.
+В [AdGuard для Chrome MV3][ext-mv3] правила белого списка с `$redirect` не поддерживаются.
 
 :::
 
 :::info Совместимость
 
-- Rules with `$redirect` modifier are not supported by [AdGuard Content Blocker][and-cb], [AdGuard for iOS][ios-app], and [AdGuard for Safari][ext-saf] .
+- Правила с модификатором `$redirect` не поддерживаются в [AdGuard Content Blocker][and-cb], [AdGuard для iOS][ios-app] и [AdGuard для Safari][ext-saf] .
 - `$redirect` в uBlock Origin поддерживает указание приоритета, например, `$redirect=noopjs:42`. AdGuard не поддерживает его и вместо этого просто отбрасывает приоритетный постфикс.
 
 :::
@@ -2179,13 +2179,13 @@ In [AdGuard for Chrome MV3][ext-mv3] allowlist rules with `$redirect` are not su
 
 :::info Совместимость
 
-Rules with `$redirect-rule` modifier are not supported by [AdGuard Content Blocker][and-cb], [AdGuard for iOS][ios-app], [AdGuard for Safari][ext-saf], and [AdGuard for Chrome MV3][ext-mv3]. [The discussion about adding support for `$redirect-rule` rules in Chrome MV3 extensions](https://github.com/w3c/webextensions/issues/493) is currently open.
+Правила с модификатором `$redirect-rule` не поддерживаются в [AdGuard Content Blocker][and-cb], [AdGuard для iOS][ios-app], [AdGuard для Safari][ext-saf] и [AdGuard для Chrome MV3][ext-mv3]. [Обсуждение о том, чтобы добавить поддержку правил `$redirect-rule` в расширения Chrome MV3](https://github.com/w3c/webextensions/issues/493), сейчас открыто.
 
 :::
 
 #### **`$referrerpolicy`** {#referrerpolicy-modifier}
 
-These rules allow overriding of a page's [referrer policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy). В ответах на соответствующие запросы все заголовки `Referrer-Policy` заменит один заголовок со значением, равным значению модификатора правила сопоставления. Если ответ содержит HTML-документ с тегом `<meta name="referrer"...`, то атрибут `content` этого тега также будет заменён на значение модификатора.
+Эти правила позволяют переопределять [политику реферера страницы](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy). В ответах на соответствующие запросы все заголовки `Referrer-Policy` заменит один заголовок со значением, равным значению модификатора правила сопоставления. Если ответ содержит HTML-документ с тегом `<meta name="referrer"...`, то атрибут `content` этого тега также будет заменён на значение модификатора.
 
 Правило исключения со значением модификатора отключает правило блокировки с тем же значением. Правило исключения без значения модификатора отключает все совпадающие правила referrer-policy.
 
@@ -2199,7 +2199,7 @@ These rules allow overriding of a page's [referrer policy](https://developer.moz
 
 :::info Совместимость
 
-Rules with the `$referrerpolicy` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.12 or later.
+Правила с модификатором `$referrerpolicy` поддерживаются в AdGuard для Windows, AdGuard для Mac и AdGuard для Android с [CoreLibs][] версии 1.12 или выше.
 
 :::
 
@@ -2249,7 +2249,7 @@ Rules with the `$referrerpolicy` modifier are supported by AdGuard for Windows, 
 
 :::caution Ограничения
 
-This type of rules can only be used [**in trusted filters**](#trusted-filters).
+Этот тип правил может использоваться [**только в доверенных фильтрах**](#trusted-filters).
 
 1. Чтобы избежать потенциальных проблем с безопасностью, `$removeheader` не может убрать следующие заголовки:
     - `access-control-allow-origin`
@@ -2301,13 +2301,13 @@ This type of rules can only be used [**in trusted filters**](#trusted-filters).
     - `transfer-encoding`
     - `upgrade`
 
-1. `$removeheader` rules are only compatible with `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers) such as `$script` and `$stylesheet`. Правила с другими модификаторами считаются некорректными и не будут применены.
+1. Правила `$removeheader` совместимы только с `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case` и [модификаторами типа контента](#content-type-modifiers), такими как `$script` и `$stylesheet`. Правила с другими модификаторами считаются некорректными и не будут применены.
 
 :::
 
 :::info Совместимость
 
-Rules with `$removeheader` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Chrome, Firefox, and Edge.
+Правила с модификатором `$removeheader` поддерживаются в AdGuard для Windows, AdGuard для Mac, AdGuard для Android, а также в Браузерном расширении AdGuard для Chrome, Firefox и Edge.
 
 :::
 
@@ -2414,14 +2414,14 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 
 Правила с `$removeparam` также можно отключить с помощью правил исключений с `$document` и `$urlblock`. Но базовые правила исключений без модификаторов не могут этого сделать. Например, `@@||example.com^` не отключит `$removeparam=p` для запросов к **example.com**, а вот `@@||example.com^$urlblock` — отключит.
 
-##### `$removeparam` modifier limitations {#removeparam-modifier-limitations}
+##### Ограничения модификатора `$removeparam` {#removeparam-modifier-limitations}
 
 :::caution Ограничения
 
-[AdGuard for Chrome MV3][ext-mv3] has some limitations:
+[AdGuard для Chrome MV3][ext-mv3] имеет некоторые ограничения:
 
-- Regular expressions, negation and allowlist rules are not supported.
-- Group of similar `$removeparam` rules will be combined into one. Пример:
+- Регулярные выражения, отрицание и правила белого списка не поддерживаются.
+- Группа похожих правил `$removeparam` будет объединена в одно. Пример:
 
     ```bash
     ||testcases.adguard.com$xmlhttprequest,removeparam=p1case1
@@ -2486,53 +2486,53 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 
 :::caution Ограничения
 
-1. Rules with the `$removeparam` modifier can only be used [**in trusted filters**](#trusted-filters).
-1. `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers), [content-type modifiers](#content-type-modifiers), and with the `$important` and `$app` modifiers. Правила с любыми другими модификаторами считаются некорректными и не будут применены.
-1. `$removeparam` rules without [content type modifiers](#content-type-modifiers) will only match requests where the content type is `document`.
+1. Правила с модификатором `$removeparam` могут использоваться [**только в доверенных фильтрах**](#trusted-filters).
+1. Правила с `$removeparam` совместимы с [базовыми модификаторами](#basic-rules-basic-modifiers), [модификаторами типа контента](#content-type-modifiers), а также с модификаторами `$important` и `$app`. Правила с любыми другими модификаторами считаются некорректными и не будут применены.
+1. Правила `$removeparam`, не содержащие [модификаторов типа контента](#content-type-modifiers), будут применяться только к тем запросам, где тип контента `document`.
 
 :::
 
 :::info Совместимость
 
-- Rules with `$removeparam` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.7 or later, and AdGuard Browser Extension v3.6 or later.
-- `$removeparam` syntax for regular expressions is supported AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.8 or later, and AdGuard Browser Extension v4.0 or later.
-- `POST` request types are supported only by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSWebExtension][] v0.4.6 or later.
+- Правила с модификатором `$removeparam` поддерживаются в AdGuard для Windows, AdGuard для Mac и AdGuard для Android с [CoreLibs][] версии 1.7 или выше, а также в Браузерном расширении AdGuard версии 3.6 или выше.
+- Синтаксис `$removeparam` для регулярных выражений поддерживается в AdGuard для Windows, AdGuard для Mac и AdGuard для Android с [CoreLibs][] версии 1.8 или выше, а также в Браузерном расширении AdGuard версии 4.0 или выше.
+- Запросы `POST` поддерживаются только в AdGuard для Windows, Mac и Android с [CoreLibs][] версии 1.10 или выше, и в Браузерном расширении AdGuard с [TSWebExtension][] версии 0.4.6 или выше.
 
 :::
 
 #### **`$replace`** {#replace-modifier}
 
-Этот модификатор полностью меняет поведение правила. If it is applied, the rule will not block the request. The response is going to be modified instead.
+Этот модификатор полностью меняет поведение правила. Когда он применяется, правило не блокирует запрос. Вместо этого ответ модифицируется.
 
-You will need some knowledge of regular expressions to use `$replace` modifier.
+Вам потребуется знание регулярных выражений, чтобы использовать модификатор `$replace`.
 
-**Features**
+**Функции**
 
-- `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc.).
-- `$replace` rules do not apply if the size of the original response is more than 10 MB.
-- `$replace` rules have a higher priority than other basic rules (**including** exception rules). So if a request natches two different rules, one of which has the `$replace` modifier, this rule will be applied.
-- Document-level exception rules with `$content` or `$document` modifiers do disable `$replace` rules for requests matching them.
-- Other document-level exception rules (`$generichide`, `$elemhide` or `$jsinject` modifiers) are applied alongside `$replace` rules. It means that you can modify the page content with a `$replace` rule and disable cosmetic rules there at the same time.
+- Правила с `$replace` применяются к любому текстовому ответу, но не применяются к binary (`media`, `image`, `object` и т. д.).
+- Правила с `$replace` не применяются к ответам размером больше 10 МБ.
+- Правила с `$replace` обладают более высоким приоритетом, чем другие базовые правила (**включая** правила исключений). Если запрос соответствует двум различным правилам, одно из которых имеет модификатор `$replace`, применится именно это правило.
+- Правила исключений уровня document с модификаторами `$content` или `$document` отменяют срабатывание правил `$replace`, даже если запрос им соответствует.
+- Прочие правила исключений уровня document (с модификаторами `$generichide`, `$elemhide` или `$jsinject`) применяются вместе с правилами `$replace`. Это означает, что вы можете изменять содержимое страницы при помощи правила `$replace` и отключить косметические правила там же.
 
-`$replace` value can be empty in the case of exception rules. See examples section for further information.
+Значение `$replace` может быть пустым в случае правил исключений. Более подробную информацию вы найдёте в разделе с примерами.
 
 **Несколько правил, соответствующих одному запросу**
 
-In case if multiple `$replace` rules match a single request, we will apply each of them. **The order is defined alphabetically.**
+В случае, когда несколько правил `$replace` соответствуют одному запросу, мы применим каждое из них. **Правила будут применяться в алфавитном порядке.**
 
 **Синтаксис**
 
-In general, `$replace` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
+В целом синтаксис `$replace` аналогичен замене регулярными выражениями [в Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
 
 ```text
 replace = "/" regexp "/" replacement "/" modifiers
 ```
 
-- **`regexp`** — a regular expression.
-- **`replacement`** — a string that will be used to replace the string corresponding to `regexp`.
-- **`modifiers`** — a regular expression flags. For example, `i` — insensitive search, or `s` — single-line mode.
+- **`regexp`** — регулярное выражение.
+- **`replacement`** — строка, которая будет использована для замены строки в соответствии с `regexp`.
+- **`modifiers `** — флаги регулярных выражений. Например, `i` — поиск без учёта регистра, `s` — режим одной строки.
 
-In the `$replace` value, two characters must be escaped: comma `,` and dollar sign `$`. Use backslash `\` for it. For example, an escaped comma looks like this: `\,`.
+В значении `$replace` необходимо экранировать два символа: запятую `,` и знак доллара `$`. Используйте для этого обратный слеш `\`. Например, экранированная запятая будет выглядеть так: `\,`.
 
 **Примеры**
 
@@ -2540,79 +2540,79 @@ In the `$replace` value, two characters must be escaped: comma `,` and dollar si
 ||example.org^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/i
 ```
 
-There are three parts in this rule:
+У этого правила три части:
 
-- `regexp` — `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`;
-- `replacement` — `\$1<\/VAST>` where `$` is escaped;
-- `modifiers` — `i` for insensitive search.
+- `regexp` (регулярное выражение) — `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`
+- `replacement` (замена) — `\$1<\/VAST>` где `$` экранируется
+- `modifiers` (флаги регулярных выражений) — `i` для поиска без учёта регистра
 
-You can see how this rule works here: http://regexr.com/3cesk
+Здесь вы можете увидеть, как работает это правило: http://regexr.com/3cesk
 
-**Multiple `$replace` rules**
+**Несколько правил с `$replace`**
 
 1. `||example.org^$replace=/X/Y/`
 2. `||example.org^$replace=/Z/Y/`
 3. `@@||example.org/page/*$replace=/Z/Y/`
 
-- Both rule 1 and 2 will be applied to all requests sent to `example.org`.
-- Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**
+- Правила 1 и 2 будут применены ко всем запросам, отправленным к `example.org`.
+- Правило 2 отключено для запросов, соответствующих `||example.org/page/`, **но правило 1 при этом всё равно работает!**
 
-**Disabling `$replace` rules**
+**Отключение правил с `$replace`**
 
-- `@@||example.org^$replace` will disable all `$replace` rules matching `||example.org^`.
-- `@@||example.org^$document` or `@@||example.org^$content` will disable all `$replace` rules **originated from** pages of `example.org` **including the page itself**.
+- `@@||example.org^$replace` отключит все правила `$replace`, соответствующие `||example.org^`.
+- `@@||example.org^$document` или `@@||example.org^$content` отключит все правила `$replace`, **исходящие** со страниц домена `example.org`, **включая саму эту страницу**.
 
 :::caution Ограничения
 
-Rules with the `$replace` modifier can only be used [**in trusted filters**](#trusted-filters).
+Правила с модификатором `$replace` могут использоваться [**только в доверенных фильтрах**](#trusted-filters).
 
 :::
 
 :::info Совместимость
 
-Rules with `$replace` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on the network level.
+Правила с модификатором `$replace` поддерживаются в AdGuard для Windows, AdGuard для Mac, AdGuard для Android, а также в Браузерном расширении AdGuard для Firefox. Другие расширения не могут модифицировать содержимое страниц на сетевом уровне, поэтому там эти правила не работают.
 
 :::
 
 #### **`$urltransform`** {#urltransform-modifier}
 
-The `$urltransform` rules allow you to modify the request URL by replacing text matched by a regular expression.
+Правила `$urltransform` позволяют изменять URL-адрес запроса, заменяя текст, соответствующий регулярным выражениям.
 
-**Features**
+**Функции**
 
-- `$urltransform` rules normally only apply to the path and query parts of the URL, see below for one exception.
-- `$urltransform` will not be applied if the original URL is blocked by other rules.
-- `$urltransform` will be applied before `$removeparam` rules.
+- Правила `$urltransform` обычно применяются только к частям URL-адреса, относящимся к пути и запросу, одно исключение см. ниже.
+- `$urltransform` не будет применяться, если исходный URL-адрес заблокирован другими правилами.
+- `$urltransform` будет применяться перед правилами `$removeparam`.
 
-The `$urltransform` value can be empty for exception rules.
+Значение `$urltransform` может быть пустым для правил исключений.
 
 **Несколько правил, соответствующих одному запросу**
 
-If multiple `$urltransform` rules match a single request, we will apply each of them. **The order is defined alphabetically.**
+Если несколько правил `$urltransform` соответствуют одному запросу, мы применим каждое из них. **Правила будут применяться в алфавитном порядке.**
 
 **Синтаксис**
 
-`$urltransform` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
+Синтаксис `$urltransform` аналогичен замене регулярными выражениями [в Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
 
 ```text
 urltransform = "/" regexp "/" replacement "/" modifiers
 ```
 
-- **`regexp`** — a regular expression.
-- **`replacement`** — a string that will be used to replace the string corresponding to `regexp`.
-- **`modifiers`** — a regular expression flags. For example, `i` — insensitive search, or `s` — single-line mode.
+- **`regexp`** — регулярное выражение.
+- **`replacement`** — строка, которая будет использована для замены строки в соответствии с `regexp`.
+- **`modifiers `** — флаги регулярных выражений. Например, `i` — поиск без учёта регистра, `s` — режим одной строки.
 
-In the `$urltransform` value, two characters must be escaped: the comma `,` and the dollar sign `$`. Use the backslash character `\` for this. For example, an escaped comma looks like this: `\,`.
+В значении `$urltransform` необходимо экранировать два символа: запятую `,` и знак доллара `$`. Для этого используйте обратный слеш `\`. Например, экранированная запятая будет выглядеть так: `\,`.
 
-**Changing the origin**
+**Изменение происхождения**
 
 :::info Совместимость
 
-This section only applies to AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.17 or later.
+Этот раздел относится только к AdGuard для Windows, AdGuard для Mac и AdGuard для Android с [CoreLibs][] 1.17 или более поздней версии.
 
 :::
 
-As stated above, normally `$urltransform` rules are only allowed to change the path and query parts of the URL. However, if the rule's `regexp` begins with the string `^http`, then the full URL is searched and can be modified by the rule. Such a rule will not be applied if the URL transformation can not be achieved via an HTTP redirect (for example, if the request's method is `POST`).
+Как указано выше, обычно правилам `$urltransform` разрешено изменять только части пути и запроса URL-адреса. Однако, если `regexp` правила начинается со строки `^http`, то полный URL ищется и может быть изменён правилом. Такое правило не будет применяться, если преобразование URL не может быть выполнено с помощью HTTP-перенаправления (например, если метод запроса — `POST`).
 
 **Примеры**
 
@@ -2620,56 +2620,56 @@ As stated above, normally `$urltransform` rules are only allowed to change the p
 ||example.org^$urltransform=/(pref\/).*\/(suf)/\$1\$2/i
 ```
 
-There are three parts in this rule:
+У этого правила три части:
 
-- `regexp` — `(pref\/).*\/(suf)`;
-- `replacement` — `\$1\$2` where `$` is escaped;
-- `modifiers` — `i` for insensitive search.
+- `regexp` — `(pref\/).*\/(suf)`
+- `replacement` — `\$1\$2`, где `$` экранируется
+- `modifiers` (флаги регулярных выражений) — `i` для поиска без учёта регистра
 
-**Multiple `$urltransform` rules**
+**Несколько правил с `$urltransform`**
 
 1. `||example.org^$urltransform=/X/Y/`
 2. `||example.org^$urltransform=/Z/Y/`
 3. `@@||example.org/page/*$urltransform=/Z/Y/`
 
-- Both rule 1 and 2 will be applied to all requests sent to `example.org`.
-- Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**
+- Правила 1 и 2 будут применены ко всем запросам, отправленным к `example.org`.
+- Правило 2 отключено для запросов, соответствующих `||example.org/page/`, **но правило 1 при этом всё равно работает!**
 
-**Re-matching rules after transforming the URL**
+**Повторное сопоставление правил после преобразования URL**
 
-After applying all matching `$urltransform` rules, the transformed request will be matched against all other rules:
+После применения всех соответствующих правил `$urltransform` преобразованный запрос будет сопоставлен со всеми остальными правилами:
 
-E.g., with the following rules:
+Например, при следующих правилах:
 
 ```adblock
 ||example.com^$urltransform=/firstpath/secondpath/
 ||example.com/secondpath^
 ```
 
-the request to `https://example.com/firstpath` will be blocked.
+запрос к `https://example.com/firstpath` будет заблокирован.
 
-**Disabling `$urltransform` rules**
+**Отключение правил с `$urltransform`**
 
-- `@@||example.org^$urltransform` will disable all `$urltransform` rules matching `||example.org^`.
-- `@@||example.org^$urltransform=/Z/Y/` will disable the rule with `$urltransform=/Z/Y/` for any request matching `||example.org^`.
+- `@@||example.org^$urltransform` отключит все правила с `$urltransform`, где есть `||example.org^`.
+- `@@||example.org^$urltransform=/Z/Y/` отключит правило с `$urltransform=/Z/Y/` для любого запроса, соответствующего `||example.org^`.
 
-`$urltransform` rules can also be disabled by `$document` and `$urlblock` exception rules. Но базовые правила исключений без модификаторов не могут этого сделать. For example, `@@||example.com^` will not disable `$urltransform=/X/Y/` for requests to **example.com**, but `@@||example.com^$urlblock` will.
+Правила с `$urltransform` также можно отключить, используя правила исключений с `$document` и `$urlblock`. Но базовые правила исключений без модификаторов не могут этого сделать. Например, `@@||example.com^` не отключит `$urltransform=/X/Y/` для запросов к **example.com**, а `@@||example.com^$urlblock` отключит.
 
 :::caution Ограничения
 
-Rules with the `$urltransform` modifier can only be used [**in trusted filters**](#trusted-filters).
+Правила с модификатором `$urltransform` могут использоваться [**только в доверенных фильтрах**](#trusted-filters).
 
 :::
 
 :::info Совместимость
 
-Rules with the `$urltransform` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.15 or later.
+Правила с модификатором `$urltransform` поддерживаются в AdGuard для Windows, AdGuard для Mac и AdGuard для Android с [CoreLibs][] версии 1.15 или выше.
 
 :::
 
 #### **`noop`** {#noop-modifier}
 
-`noop` modifier does nothing and can be used solely to increase rules' readability. It consists of a sequence of underscore characters (`_`) of arbitrary length and can appear in a rule as often as needed.
+Модификатор `noop` не делает ничего и используется только для того, чтобы улучшить читаемость правил. Он состоит из последовательности символов нижнего подчёркивания (`_`) произвольной длины и может фигурировать в правиле так часто, как это необходимо.
 
 **Примеры**
 
@@ -2680,67 +2680,67 @@ Rules with the `$urltransform` modifier are supported by AdGuard for Windows, Ad
 
 :::info Совместимость
 
-Rules with `noop` modifier are not supported by AdGuard Content Blocker.
+Правила с модификатором `noop` не поддерживаются в AdGuard Content Blocker.
 
 :::
 
 #### **`$empty` (устаревший)** {#empty-modifier}
 
-:::caution Deprecation notice
+:::caution Скоро устареет
 
-This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$empty` are still supported and being converted into `$redirect=nooptext` now but the support shall be removed in the future.
+Этот модификатор считается устаревшим. Вместо него теперь используется [модификатор `$redirect`](#redirect-modifier). Правила с `$empty` всё ещё поддерживаются и преобразуются в `$redirect=nooptext`, но в будущем перестанут поддерживаться.
 
 :::
 
-Usually, blocked requests look like a server error to browser. If you use `$empty` modifier, AdGuard will emulate a blank response from the server with`200 OK` status.
+Обычно заблокированный запрос выглядит для браузера как ошибка сервера. В случае применения модификатора `$empty` AdGuard эмулирует пустой ответ сервера со статусом `200 OK`.
 
 **Примеры**
 
-- `||example.org^$empty` returns an empty response to all requests to `example.org` and all subdomains.
+- `||example.org^$empty` возвращает пустой ответ для всех запросов к домену `example.org` и всех его поддоменов.
 
 :::info Совместимость
 
-Rules with `$empty` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS, and AdGuard for Safari.
+Правила с модификатором `$empty` не поддерживаются в AdGuard Content Blocker, AdGuard для iOS и AdGuard для Safari.
 
 :::
 
 #### **`$mp4` (устаревший)** {#mp4-modifier}
 
-:::caution Deprecation notice
+:::caution Скоро устареет
 
-This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$mp4` are still supported and being converted into `$redirect=noopmp4-1s,media` now but the support shall be removed in the future.
+Этот модификатор считается устаревшим. Вместо него теперь используется [модификатор `$redirect`](#redirect-modifier). Правила с `$mp4` всё ещё поддерживаются и преобразуются в `$redirect=noopmp4-1s,media`, но в будущем перестанут поддерживаться.
 
 :::
 
-As a response to blocked request AdGuard returns a short video placeholder.
+В качестве ответа на заблокированный запрос AdGuard возвращает короткую видео-заглушку.
 
 **Примеры**
 
-- `||example.com/videos/$mp4` blocks all video downloads from `||example.com/videos/*` and changes the response to a video placeholder.
+- `||example.com/videos/$mp4` блокирует загрузку видео с адресов `||example.com/videos/*` и заменяет ответ на видео-заглушку.
 
 :::info Совместимость
 
-Rules with `$mp4` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS, and AdGuard for Safari.
+Правила с модификатором `$mp4` не поддерживаются в AdGuard Content Blocker, AdGuard для iOS и AdGuard для Safari.
 
 :::
 
 ### Приоритеты правил {#rule-priorities}
 
-Each rule has its own priority, which is necessary when several rules match the request and the filtering engine needs to select one of them. Priority is measured by a positive integer.
+Каждое правило имеет свой приоритет, что необходимо, когда запросу соответствует несколько правил и фильтрующий механизм должен выбрать одно из них. Приоритет измеряется целым положительным числом.
 
-:::note Collisions
+:::note Конфликты
 
-When two rules with the same priority match the same request, the filter engine implementation determines which one is chosen.
+Когда два правила с одинаковым приоритетом соответствуют одному и тому же запросу, реализация механизма фильтрации определяет, какое из них будет выбрано.
 
 :::
 
 :::info
 
-The concept of rule priorities becomes increasingly important in light of Manifest V3, as the existing rules need to be converted to declarativeNetRequest rules.
+Концепция приоритетов правил становится всё более важной в свете Manifest V3, поскольку существующие правила должны быть преобразованы в правила declarativeNetRequest.
 
 :::
 
-#### Priority calculation
+#### Расчёт приоритетов
 
 To calculate priority, we've categorized modifiers into different groups. These groups are ranked based on their priority, from lowest to highest. A modifier that significantly narrows the scope of a rule adds more weight to its total priority. Conversely, if a rule applies to a broader range of requests, its priority decreases.
 
@@ -3820,7 +3820,7 @@ In addition to usual attributes, which value is every element checked for, there
 
 #### `tag-content`
 
-:::caution Deprecation notice
+:::caution Скоро устареет
 
 This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
 
@@ -3852,7 +3852,7 @@ The `tag-content` special attribute must not appear in a selector to the left of
 
 #### `wildcard`
 
-:::caution Deprecation notice
+:::caution Скоро устареет
 
 This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
 
@@ -3874,7 +3874,7 @@ The `wildcard` special attribute must not appear in a selector to the left of a 
 
 #### `max-length`
 
-:::caution Deprecation notice
+:::caution Скоро устареет
 
 This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
 
@@ -3902,7 +3902,7 @@ The `max-length` special attribute must not appear in a selector to the left of 
 
 #### `min-length`
 
-:::caution Deprecation notice
+:::caution Скоро устареет
 
 This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
 
@@ -4769,6 +4769,7 @@ The following scriptlets also may be used for debug purposes:
 [ext-mv3]: #what-product "Браузерное расширение AdGuard MV3 для Chrome"
 [ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
 [ext-mv3]: #what-product "Браузерное расширение AdGuard для Chrome MV3"
+[ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
 [ext-ff]: #what-product "Браузерное расширение AdGuard для Firefox"
 [ios-app]: #what-product "AdGuard для iOS и AdGuard Pro для iOS"
 [ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"
@@ -4783,6 +4784,8 @@ The following scriptlets also may be used for debug purposes:
 [с CoreLibs]: https://adguard.com/en/blog/introducing-corelibs.html
 [с CoreLibs 1.12 или более поздней версии]: https://adguard.com/ru/blog/introducing-corelibs.html
 [CoreLibs]: https://adguard.com/en/blog/introducing-corelibs.html
+[с CoreLibs]: https://adguard.com/ru/blog/introducing-corelibs.html
+[CoreLibs]: https://adguard.com/ru/blog/introducing-corelibs.html
 [с TSUrlFilter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter#tsurlfilter
 [TSUrlFilter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter#tsurlfilter
 [TSWebExtension]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tswebextension#tswebextension
