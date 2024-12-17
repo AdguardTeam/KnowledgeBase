@@ -1,5 +1,5 @@
 ---
-title: Features
+title: Fonctionnalités
 sidebar_position: 1
 ---
 
@@ -11,54 +11,54 @@ Cet article parle de AdGuard pour Mac, un bloqueur d'annonces multifonctionnel q
 
 ## Fenêtre principale
 
-From the main window, you can toggle protection, view statistics on blocked ads, trackers, and threats, and access settings, updates, support, and license management.
+Depuis la fenêtre principale, vous pouvez activer la protection, consulter les statistiques sur les publicités bloquées, les traqueurs et les menaces, et accéder aux paramètres, mises à jour, assistance et à la gestion des licences.
 
-[Main window](/adguard-for-mac/features/main.md)
+[Fenêtre principale](/adguard-for-mac/features/main.md)
 
 ## Général
 
 Ici, vous pouvez configurer les paramètres de base tels que _Ne pas bloquer les publicités de recherche et d'auto-promotion_, _Activer les filtres spécifiques à la langue automatiquement_, _Lancer AdGuard à la connexion_, _Masquer l'icône de la barre de menu_, et _Liste d'autorisation_.
 
-[General](/adguard-for-mac/features/general.md)
+[Général](/adguard-for-mac/features/general.md)
 
 ## Filtres
 
-Here you learn how you can customize your ad blocking by enabling different filter lists, including language-specific filters, third-party filters, and user rules.
+Cet article explique comment vous pouvez personnaliser le blocage des publicités en activant des différentes listes de filtres, y compris les filtres spécifiques à la langue, les filtres tiers et les règles utilisateur.
 
-[Filters](/adguard-for-mac/features/filters.md)
+[Filtres](/adguard-for-mac/features/filters.md)
 
 ## DNS
 
-Here you can find the DNS protection settings: available providers, filters, Blocklist and Allowlist functions.
+Vous trouverez ici les paramètres de protection DNS : fournisseurs disponibles, filtres, fonctions de liste de blocage et de liste d'autorisation.
 
 [DNS](/adguard-for-mac/features/dns.md)
 
 ## Mode furtif
 
-[Stealth Mode](/adguard-for-mac/features/stealth.md)
+[Mode furtif](/adguard-for-mac/features/stealth.md)
 
-Information on how to set up advanced protection by deleting cookies, UTM tags, online counters, and analytics systems, and not allowing websites to collect your IP address, device and browser parameters, search queries, and personal information.
+Des informations sur la manière de mettre en place une protection avancée en supprimant les cookies, les balises UTM, les compteurs en ligne et les systèmes d'analyse, et en n'autorisant pas les sites web à collecter votre adresse IP, les paramètres de votre appareil et de votre navigateur, vos requêtes de recherche et vos informations personnelles.
 
 ## Sécurité
 
-It includes settings to protect you from phishing and malware. You can also help AdGuard update its database of known threats by agreeing to send anonymous security-related information.
+Comprend des paramètres pour vous protéger contre l'hameçonnage et les maliciels. Vous pouvez également aider AdGuard à mettre à jour sa base de données des menaces connues en acceptant d'envoyer des informations anonymes liées à la sécurité.
 
-[Security](/adguard-for-mac/features/security.md)
+[Sécurité](/adguard-for-mac/features/security.md)
 
 ## Assistant de navigateur
 
-Information on how to manage AdGuard protection directly from the browser.
+Informations sur la façon de gérer la protection AdGuard directement depuis le navigateur.
 
-[Browser Assistant](/adguard-for-mac/features/browser-assistant.md)
+[Assistant AdGuard](/adguard-for-mac/features/browser-assistant.md)
 
 ## Extensions
 
-Here you’ll how to use AdGuard as a userscript manager to extend the functionality of websites. You can add your own scripts as well as manage existing ones.
+Ici, vous apprendrez comment utiliser AdGuard en tant que gestionnaire de scripts utilisateur pour étendre la fonctionnalité des sites Web. Vous pouvez ajouter des scripts de votre choix et gérer les scripts existants.
 
 [Extensions](/adguard-for-mac/features/extensions.md)
 
 ## Réseau
 
-This article describes additional network-related options and proxy settings where you can specify which proxy server AdGuard should use to update filters, download new versions, and so on.
+Cet article décrit des options supplémentaires liées au réseau et les paramètres de proxy où vous pouvez spécifier quel proxy AdGuard doit utiliser pour mettre à jour le filtrage, télécharger de nouvelles versions, etc.
 
-[Network](/adguard-for-mac/features/network.md)
+[Réseau](/adguard-for-mac/features/network.md)

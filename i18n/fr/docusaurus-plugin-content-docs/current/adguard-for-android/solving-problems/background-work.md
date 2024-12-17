@@ -1,83 +1,83 @@
 ---
-title: How to protect AdGuard from being disabled by the system
+title: Comment empêcher le système de désactiver AdGuard
 sidebar_position: 9
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour Android, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment il fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-In some cases, apps won't stay in the background (“alive” or in a sleep mode) due to the Android OS optimization function, or the so-called “battery save mode” — this function can kill background apps. It may be inconvenient to relaunch them each time they are getting closed. To avoid the background app termination, you need to follow the steps we described separately for each manufacturer (version) of Android OS. Veuillez noter que les instructions des différents fabricants sont généralement très similaires.
+Dans certains cas, les applications ne restent pas en arrière-plan ("actives" ou en mode veille) en raison de la fonction d'optimisation du système d'exploitation Android, ou du soi-disant "mode d'économie de batterie" — cette fonction peut tuer les applications en arrière-plan. Il peut être peu pratique de les relancer à chaque fois qu'elles sont arrêtées. Pour éviter l'arrêt de l'application en arrière-plan, vous devez suivre les étapes décrites séparément pour chaque fabricant (version) du système d'exploitation Android. Veuillez noter que les instructions des différents fabricants sont généralement très similaires.
 
 ## Asus
 
-Information on Asus devices is still far from being exhaustive so there may be more issues than listed here. We're going to update this part of the article when we know more.
+Les informations sur les appareils Asus sont encore loin d'être exhaustives et il est donc possible que d'autres problèmes se posent. Nous mettrons à jour cette partie de l'article lorsque nous en saurons plus.
 
-The main source of potential problems with background work on Asus devices is associated with the optimization app called Power Master. It is pre-installed and has pretty aggressive default settings, e.g. to block apps from starting and to kill background tasks when your screen turns off. To make sure apps background processing works, set up the following:
+La principale source de problèmes potentiels liés au travail en arrière-plan sur les appareils Asus est associée à l'application d'optimisation appelée Power Master. Elle est préinstallée et possède des paramètres par défaut assez agressifs, par exemple pour bloquer le démarrage des applications et pour tuer les tâches d'arrière-plan lorsque l'écran s'éteint. Pour vous assurer que le traitement en arrière-plan des applications fonctionne, configurez les éléments suivants :
 
-1. Go to **Mobile Manager** → **PowerMaster** → **Settings** (or **Battery-saving options**) → Uncheck **Clean up in suspend**
+1. Allez dans **Mobile Manager** → **PowerMaster** → **Paramètres** (ou **Options d'économie de la batterie**) → Décochez la case **Nettoyer en cas de suspension.**
 
-1. Go to **Mobile Manager** → **PowerMaster** → **Settings** (or **Battery-saving options**) → Uncheck **Auto-deny apps from auto starting**
+1. Allez à **Mobile Manager** → **PowerMaster** → **Paramètres** (ou **Options d'économie de batterie**) → Décochez **Interdire automatiquement aux applications de se lancer automatiquement**
 
-Alternatively, instead of unchecking **Auto-deny apps from auto starting** entirely, you can go to **Settings** → **Battery-saving options** → **Auto-start manager** → **AdGuard** and uncheck it.
+Par ailleurs, au lieu de décocher complètement l'option **Autoriser les applications à démarrer automatiquement**, vous pouvez aller dans **Réglages** → **Options d'économie de la batterie** → **Gestionnaire de démarrage automatique** → **AdGuard** et la décocher.
 
 ## Xiaomi
 
-Xiaomi (and especially MIUI) devices are among the most troublesome ones when it comes to background work. They are known to limit background processes and have non-standard permissions with a lack of proper documentation to top it off. Sometimes apps just don't work right on Xiaomi phones and there's little that can be done about that. Below are some actions you might attempt to perform if you run into any trouble regarding AdGuard's background work on various Xiaomi devices.
+Les appareils Xiaomi (et surtout MIUI) sont parmi les plus gênants en matière de fonctionnement en arrière-plan. Ils sont connus pour limiter les processus d’arrière-plan et disposent d’autorisations non standard, avec un manque de documentation appropriée pour couronner le tout. Parfois, les applications ne fonctionnent tout simplement pas correctement sur les téléphones Xiaomi et il n'y a pas grand-chose à faire à ce sujet. Vous trouverez ci-dessous quelques actions que vous pouvez tenter d'effectuer si vous rencontrez des problèmes concernant le fonctionnement en arrière-plan d'AdGuard sur différents appareils Xiaomi.
 
-### MIUI 13+ and HyperOS
+### MIUI 13+ et HyperOS
 
-Depending on the MIUI and HyperOS versions, there are two ways to change the battery optimization settings on your phone and block ads more efficiently.
+Selon les versions MIUI et HyperOS, il existe deux façons de modifier les paramètres d'optimisation de la batterie sur votre téléphone et de bloquer les publicités plus efficacement.
 
 Option 1
 
-1. Go to **Settings** → **Apps** → **Permissions** → **Background autostart** and allow AdGuard to run in the background
+1. Allez dans **Paramètres** → **Applications** → **Permissions** → **Démarrage automatique en arrière-plan** et autorisez AdGuard à s'exécuter en arrière-plan
 
-1. Return to **Settings** → **Apps** → **Manage apps** → **AdGuard** and uncheck **Pause app activity if unused**
+1. Retournez à **Paramètres** → **Applications** → **Gérer les applications** → **AdGuard** et décochez la case **Suspendre l'activité de l'application si elle n'est pas utilisée**
 
-1. Go to **Battery saver** and tap **No restrictions**
+1. Accédez à **Économiseur de batterie** et appuyez sur **Aucune restriction**
 
 Option 2
 
-1. Go to **Settings** → **Apps** → **Manage apps** → **AdGuard** and enable **Autostart**
+1. Accédez à **Paramètres** → **Applications** → **Gérer les applications** → **AdGuard** et activez **Démarrage automatique**
 
-1. Go to **Battery saver** and tap **No restrictions**
+1. Accédez à **Économiseur de batterie** et appuyez sur **Aucune restriction**
 
-C'est fait ! You have successfully set up AdGuard to work in the background.
+C'est fait ! Vous avez configuré AdGuard avec succès pour qu'il fonctionne en arrière-plan.
 
 ### MIUI 12.0.8
 
-To let your AdGuard app run successfully in the background, do the following:
+Pour permettre à votre application AdGuard de fonctionner correctement en arrière-plan, procédez comme suit :
 
-In **Settings** → **Apps** → **Manage apps**, scroll down to locate **AdGuard** and set **Autostart** to “On”.
+Dans **Paramètres** → **Applications** → **Gérer les applications**, faites défiler l'écran jusqu'à **AdGuard** et réglez le **démarrage automatique** sur "Activé".
 
-![Xiaomi Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
+![Paramètres Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
-Scroll down to **Battery saver**, tap it, and set to “No restrictions”.
+Faites défiler vers le bas jusqu'à **Économiseur de batterie**, appuyez dessus et réglez sur "Aucune restriction".
 
 ![Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_0a.png)
 
-In **Other Permissions**, set all possible permissions to “On”
+Dans la rubrique **Autres autorisations**, réglez toutes les autorisations possibles sur "Activé"
 
-Run the **Security** app.
+Lancez l'application **Sécurité**.
 
-Tap on the **Gear** icon at the top-right corner of the screen.
+Tapez sur l'icône de l'**engrenage** dans le coin supérieur droit de l'écran.
 
-![Miui Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_1.jpeg)
+![Paramètres Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_1.jpeg)
 
-Tap **Boost speed** in Feature Settings.
+Appuyez sur **Augmenter la vitesse** dans les paramètres des fonctionnalités.
 
-![Miui Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_2.png)
+![Paramètres Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_2.png)
 
-Tap **Lock apps**.
+Appuyez sur **Verrouiller les applications.**.
 
-![Miui Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_3.jpeg)
+![Paramètres Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_3.jpeg)
 
 In the **Lock apps** screen, set the toggle switch for the AdGuard app to On.
 
-![Miui Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_4.jpeg)
+![Paramètres Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_4.jpeg)
 
 That’s all! You’ve successfully pinned the AdGuard app.
 

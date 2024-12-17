@@ -21,8 +21,8 @@ Here, you’ll find the system requirements along with instructions on how to in
 
 [Installation](/adguard-for-android/installation.md)
 
-## Solving problems
+## 문제 해결
 
-This section includes various articles addressing known issues and possible solutions.
+이 섹션에는 알려진 문제와 가능한 해결책을 다루는 다양한 글이 포함되어 있습니다.
 
 [Solving problems](/adguard-for-android/solving-problems/solving-problems.md)

@@ -49,7 +49,7 @@ Safari 확장 프로그램은 Safari 웹 브라우저에 기능을 추가하는 
 
 ## Safari용 AdGuard
 
-*AdGuard for Safari* activates the AdGuard icon next to the search bar. It's useful if you want to quickly set up protection for a specific website or block ads manually. It also contains advanced rules that aren't converted to the format supported by Safari. These include [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), which allow AdGuard to block complex ads, such as those on YouTube.
+*Safari용 AdGuard*는 검색창 옆에 있는 AdGuard 아이콘을 활성화합니다. 특정 웹사이트에 대한 보호 기능을 빠르게 설정하거나 수동으로 광고를 차단하려는 경우 유용합니다. 또한 Safari에서 지원되지 않는 형식으로 변환되지 않는 고급 규칙도 포함되어 있습니다. 여기에는 [CSS 규칙](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [확장 CSS 선택기](/general/ad-filtering/create-own-filters#extended-css-selectors) 및 [스크립틀릿](/general/ad-filtering/create-own-filters#scriptlets)이 포함되며, 이를 통해 AdGuard는 YouTube의 광고와 같은 복잡한 광고를 차단할 수 있습니다.
 
 ## Safari용 확장 프로그램 관리 방법
 
@@ -57,7 +57,7 @@ Safari 확장 프로그램은 Safari 웹 브라우저에 기능을 추가하는 
 
     ![Safari 설정 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
 
-1. Click *Settings...*
+1. *설정...*를 클릭합니다.
 
 1. *확장 프로그램*을 선택합니다.
 

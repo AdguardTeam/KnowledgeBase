@@ -32,7 +32,7 @@
     "description": "The label for category AdGuard for Mac in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Solving problems": {
-    "message": "Solving problems",
+    "message": "문제 해결",
     "description": "The label for category Solving problems in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Android": {
@@ -88,7 +88,7 @@
     "description": "The label for category Features in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Content Blockers": {
-    "message": "Content Blockers",
+    "message": "콘텐츠 차단기",
     "description": "The label for category Content Blockers in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Protection": {
