@@ -9,20 +9,20 @@ Questo articolo riguarda AdGuard per Mac, un blocco annunci multifunzionale che 
 
 :::
 
-## Features
+## Funzionalità
 
-Here are outlined the main features and settings available in AdGuard for Mac.
+Qui sono delineate le principali caratteristiche e impostazioni disponibili in AdGuard per Mac.
 
-[Features](/adguard-for-mac/features/features.md)
+[Funzionalità](/adguard-for-mac/features/features.md)
 
 ## Installazione
 
-Here, you’ll find the system requirements along with instructions on how to install and uninstall AdGuard for Mac.
+Qui troverai i requisiti di sistema insieme alle istruzioni su come installare e disinstallare AdGuard per macOS.
 
-[Installation](/adguard-for-mac/installation.md)
+[Installazione](/adguard-for-mac/installation.md)
 
 ### Risoluzione problemi
 
 Questa sezione include vari articoli che affrontano problemi noti e le possibili soluzioni.
 
-[Solving problems](/adguard-for-mac/solving-problems/solving-problems.md)
+[Risoluzione dei problemi](/adguard-for-mac/solving-problems/solving-problems.md)
