@@ -51,7 +51,7 @@ Hier können Sie den Antworttyp für Domains angeben, die von DNS-Regeln basiere
 
 #### Sperrmodus für Hosts-Regeln
 
-Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax (for instance, `<ip> <domain> 0.0.0.0 example.com`).
+Hier können Sie den Antworttyp für Domains angeben, die von DNS-Regeln auf der Grundlage der Syntax der Hosts-Regel gesperrt werden (z. B. `<ip> <domain> 0.0.0.0 example.com`).
 
 - Mit REFUSED antworten
 - Mit NXDOMAIN antworten
@@ -123,9 +123,9 @@ Wird eine OCSP-Prüfung innerhalb der geforderten Zeitspanne abgeschlossen, sper
 
 Wenn die Überprüfung zu lange dauert, lässt AdGuard die Verbindung zu, während der Zertifikatsstatus im Hintergrund weiter überprüft wird. Wird das Zertifikat widerrufen, werden aktuelle und zukünftige Verbindungen zu der Domain gesperrt.
 
-#### Redirect DNS-over-HTTPS requests
+#### DNS-over-HTTPS-Anfragen umleiten
 
-If this setting is enabled, AdGuard will redirect DNS-over-HTTPS requests to the local DNS proxy in addition to plain DNS requests. Wir empfehlen, Fallback-Upstreams zu deaktivieren und nur verschlüsselte DNS-Server zu verwenden, um die Privatsphäre zu wahren.
+Wenn diese Einstellung aktiviert ist, leitet AdGuard DNS-over-HTTPS-Anfragen zusätzlich zu einfachen DNS-Anfragen an den lokalen DNS-Proxy um. Wir empfehlen, Fallback-Upstreams zu deaktivieren und nur verschlüsselte DNS-Server zu verwenden, um die Privatsphäre zu wahren.
 
 #### HTTP/3 filtern
 
@@ -135,7 +135,7 @@ Ist diese Einstellung aktiviert, filtert AdGuard zusätzlich zu den anderen Anfr
 
 #### Einstellung „DNS-Anfragen filtern“ anzeigen
 
-Wenn dies aktiviert ist, wird der Schalter *DNS-Anfragen filtern* im Dialog *Proxy-Server hinzufügen* angezeigt. Use it to enable filtering of DNS requests passing through the specified proxy.
+Wenn dies aktiviert ist, wird der Schalter *DNS-Anfragen filtern* im Dialog *Proxy-Server hinzufügen* angezeigt. Verwenden Sie es, um die Filterung von DNS-Anfragen zu aktivieren, die durch den angegebenen Proxy geleitet werden.
 
 ### Schutz
 
@@ -183,13 +183,13 @@ Nach einer vom System festgelegten Anzahl erfolgloser Versuche, eine Antwort vom
 
 ### Einstellungen des lokalen VPN
 
-#### Recovery delay for revoked VPN
+#### Wartezeit für widerrufenes VPN
 
 Hier können Sie eine Verzögerungszeit in Millisekunden festlegen, bevor AdGuard versucht, den VPN-Schutz wiederherzustellen, nachdem dieser durch eine VPN-App eines Drittanbieters oder durch Löschen des VPN-Profils aufgehoben wurde. Der Standardwert ist 5000 ms.
 
-#### Reschedule delay for revoked VPN recovery
+#### Wartezeit für widerrufenes VPN neu planen
 
-Here you can set the time of a delay in milliseconds before AdGuard reschedules the restoration of VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. Der Standardwert ist 5000 ms.
+Hier können Sie eine Verzögerungszeit in Millisekunden festlegen, bevor AdGuard die Wiederherstellung des VPN-Schutzes neu plant, nachdem dieser durch eine VPN-App eines Drittanbieters oder durch Löschen des VPN-Profils aufgehoben wurde. Der Standardwert ist 5000 ms.
 
 #### MTU
 
@@ -217,7 +217,7 @@ Wenn diese Einstellung aktiviert ist, filtert AdGuard alle LAN-Verbindungen, ein
 
 #### Alle LAN-IPv4-Verbindungen weiterleiten
 
-If this setting is enabled, AdGuard will exclude LAN connections from filtering for simple networks. This may not work for complex networks. This setting only applies if *Forcibly route LAN IPv4* is disabled.
+Wenn diese Einstellung aktiviert ist, schließt AdGuard LAN-Verbindungen von der Filterung für einfache Netzwerke aus. Bei komplexen Netzen funktioniert dies möglicherweise nicht. Diese Einstellung gilt nur, wenn *LAN-IPv4 zwangsweise weiterleiten* deaktiviert ist.
 
 #### IPv6-Adresse
 
@@ -227,4 +227,4 @@ Hier können Sie die IP-Adresse eingeben, die für die Erstellung einer TUN-Schn
 
 #### Samsung Pay erkennen
 
-Wenn diese Einstellung aktiviert ist, wird der AdGuard-Schutz pausiert, während Samsung Pay verwendet wird. Korean users require this feature as they experience [issues with Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) when AdGuard is enabled.
+Wenn diese Einstellung aktiviert ist, wird der AdGuard-Schutz pausiert, während Samsung Pay verwendet wird. Koreanische Nutzer benötigen diese Funktion, da sie [Probleme mit Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) haben, wenn AdGuard aktiviert ist.

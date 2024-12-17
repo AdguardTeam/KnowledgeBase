@@ -1,9 +1,9 @@
 ---
-title: Stealth Mode (Tracking protection)
+title: Privatsphäre (Tracking-Schutz)
 sidebar_position: 4
 ---
 
-Viele Websites sammeln Informationen über ihre Besucher, z. B. ihre IP-Adresse, den installierten Browser und das Betriebssystem, die Bildschirmauflösung und sogar die Seite, von der ein Besucher weitergeleitet wurde. Einige Webseiten verwenden Cookies, um Ihren Browser zu kennzeichnen und Ihre persönlichen Einstellungen und Präferenzen zu speichern oder um Sie bei Ihrem nächsten Besuch „wiederzuerkennen”. *Stealth Mode* (or *Tracking protection* in AdGuard for Windows and AdGuard Browser Extension) safeguards your personal information from such data- and statistics-gathering systems.
+Viele Websites sammeln Informationen über ihre Besucher, z. B. ihre IP-Adresse, den installierten Browser und das Betriebssystem, die Bildschirmauflösung und sogar die Seite, von der ein Besucher weitergeleitet wurde. Einige Webseiten verwenden Cookies, um Ihren Browser zu kennzeichnen und Ihre persönlichen Einstellungen und Präferenzen zu speichern oder um Sie bei Ihrem nächsten Besuch „wiederzuerkennen”. Der Modus *Privatsphäre* (oder *Tracking-Schutz* in AdGuard für Windows und AdGuard Browsererweiterung) schützt Ihre persönlichen Informationen vor solchen daten- und statistiksammelnden Systemen.
 
 Sie können die Funktionsweise des Stealth-Modus flexibel anpassen: Sie können z. B. verhindern, dass die Website die Suchanfrage erhält, mit der Sie sie im Internet gefunden haben, Sie können sowohl Cookies von Drittanbietern als auch eigene Cookies der Website automatisch löschen, Sie können die gemeinsame Nutzung der Geolokalisierung durch den Browser deaktivieren, die dazu verwendet werden kann, Ihren Aufenthaltsort zu verfolgen, und Sie können Ihre wahre IP-Adresse verbergen oder sie sogar durch eine beliebige ersetzen.
 
@@ -17,21 +17,21 @@ Einige Optionen sind je nach Produkt aufgrund des Betriebssystems oder anderer E
 
 ## Allgemein {#general}
 
-### Hide search queries {#searchqueries}
+### Suchanfragen verbergen {#searchqueries}
 
 Wenn Sie von Google, Yahoo oder einer anderen Suchmaschine auf eine Website weitergeleitet werden, blendet diese Option die Suchanfrage aus, mit der Sie die Website gefunden haben.
 
-### Send signals to opt out of tracking {#donottrack}
+### Anweisung senden, um das Tracking zu beenden {#donottrack}
 
 Sendet die Nachricht [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) und [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) an die Websites, die Sie besuchen.
 
-### Remove tracking parameters from URLs {#removetracking}
+### Tracking-Parameter aus URLs entfernen {#removetracking}
 
 Wenn Sie diese Option aktivieren, entfernt AdGuard Tracking-Parameter wie `utm_*` und `fb_ref` aus den URLs der Seiten.
 
 ### Tracking-Methoden {#tracking-methods}
 
-### Delete third-party cookies {#3p-cookie}
+### Cookies von Drittanbietern löschen {#3p-cookie}
 
 Websites verwenden Cookies, um Ihre Informationen und Präferenzen zu speichern, z. B. die von Ihnen gewählte Sprache, Ihren Standort oder die Liste der Artikel in Ihrem Einkaufswagen. Wenn Sie auf eine Website zurückkehren, sendet Ihr Browser die zu dieser Website gehörenden Cookies zurück, so dass er sich Ihre Daten „merken” kann.
 
@@ -45,7 +45,7 @@ Diese Einstellung löscht alle Cookies von Drittanbietern, einschließlich der I
 
 :::
 
-### Delete first-party cookies (not recommended) {#1p-cookie}
+### Cookies von Erstanbieter löschen (nicht empfohlen) {#1p-cookie}
 
 Legen Sie eine Zeitspanne (in Minuten) fest, nach deren Ablauf alle Cookies gelöscht werden sollen. Stellen Sie den Timer auf 0 (Null), um sie vollständig zu sperren.
 
@@ -55,7 +55,7 @@ Wir raten davon ab, diese Option zu aktivieren, da sie die Arbeit bestimmter Web
 
 :::
 
-### Block ETag and If-None-Match headers {#3p-cache}
+### ETag- und If-None-Match-Header sperren {#3p-cache}
 
 Wenn ein Browser eine Seite aufruft, weist der Server dieser Seite einen ETag zu. Dieser ETag wird vom Browser verwendet, um den Inhalt der Seite zwischenzuspeichern. Bei nachfolgenden Anfragen sendet der Browser den ETag an den entsprechenden Server, so dass der Server die Identität des Besuchers erfährt. Solange die Dateien der Website im Cache gespeichert sind, wird der ETag jedes Mal gesendet, wenn Ihr Browser diese Website aufruft. Wenn auf der Website Inhalte von einem anderen Server eingebettet sind (z. B. ein Bild oder ein iFrame), kann dieser Server Ihre Aktivitäten ohne Ihr Wissen verfolgen.
 
@@ -97,23 +97,23 @@ Beachten Sie, dass AdGuard-Anwendungen Browser-zu-Server-Anfragen „abfangen”
 
 Andererseits arbeitet die AdGuard Browsererweiterung aufgrund der Natur aller Browsererweiterungen „innerhalb“ des Browsers. Dadurch wird der Referer auf der Stelle geändert, so dass die Entwicklertools den gewünschten Referer für Ihre Anfragen anzeigen.
 
-### Hide User-Agent {#useragent}
+### Browserkennung verbergen {#useragent}
 
 Wenn Sie eine Website besuchen, sendet Ihr Browser seine Informationen an den Server. Sie sieht aus wie eine Textzeile, die Teil einer HTTP-Anfrage ist und mit „User-Agent:” beginnt. Sie enthält in der Regel den Namen und die Version des Browsers, das Betriebssystem und die Spracheinstellungen. Wir trennen den User-Agent (Browserkennung) von identifizierenden Informationen, so dass Werbetreibende ihn nicht erhalten können.
 
 Sie können auch einen beliebigen Wert für die Browserkennung festlegen, indem Sie ihn in das Feld Benutzerdefinierter User Agent eingeben. Um die Standard-Browserkennung zu verwenden, lassen Sie das Feld leer.
 
-### Mask IP address {#ip}
+### IP-Adresse maskieren {#ip}
 
 Der Stealth-Modus kann Ihre IP-Adresse nicht verbergen. Wir können sie jedoch verbergen, so dass die von Ihnen besuchten Websites annehmen, dass Sie ein Proxy sind. Manchmal hilft das, und Websites ignorieren Ihre wahre IP-Adresse.
 
 Sie können eine beliebige IP-Adresse festlegen, die andere als Ihre wahrnehmen sollen, indem Sie sie einfach in das entsprechende Feld eingeben. Um die Standard-IP-Adresse zu verwenden, lassen Sie das Feld leer.
 
-### Remove X-Client-Data header {#xclientdata}
+### X-Client-Data-Header entfernen {#xclientdata}
 
 Es verbietet Google Chrome, seine Versions- und Änderungsinformationen bei Anfragen an Google-Domains (einschließlich „Double Click” und „Google Analytics”) zu senden.
 
-### Protect against DPI {#dpi}
+### Schutz vor DPI {#dpi}
 
 Bei der Deep Packet Inspection handelt es sich um ein System zur Tiefenanalyse und Filterung des Datenverkehrs nach Paketinhalt sowie zur Sammlung statistischer Daten. Mit dieser Technologie können Internetanbieter den Datenverkehr kontrollieren und den Zugang zu Inhalten für ihre Kunden beschränken.
 

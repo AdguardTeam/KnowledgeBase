@@ -9,7 +9,7 @@ sidebar_position: 1
 
 ## Cum să creați un cont
 
-Pentru a crea un cont, accesați [site-ul oficial AdGuard](https://adguard.com/welcome.html) și apăsați butonul *Contul Meu* din colțul din dreapta sus al ecranului. Introduceți adresa dvs. de e-mail și creați o parolă – contul dvs. va fi înregistrat.
+To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and click the *Log in* button on the top right corner of the screen. Introduceți adresa dvs. de e-mail și creați o parolă – contul dvs. va fi înregistrat.
 
 :::tip
 
@@ -21,6 +21,12 @@ Un cont poate fi creat, de asemenea, direct într-o aplicație AdGuard. Apăsaț
 
 După ce contul este creat, activați-l urmând linkul din e-mailul de activare.
 
+:::tip
+
+After you've registered your account, you can use the *One-time code* option to log in to the application. Enter your email address and choose to enter either your password or the the code sent to your email address.
+
+:::
+
 ## Cum să creați un cont printr-o rețea socială
 
-Pentru a crea un cont printr-o rețea socială, urmați simplu [linkul](https://auth.adguard.com/login.html) și conectați-vă la contul dvs. Odată ce v-ați înscris, verificați-vă căsuța de e-mail — va fi un e-mail de confirmare. Stabiliți o parolă și asta e tot! Acum puteți folosi toate [funcțiile contului AdGuard](https://adguard.com/kb/general/account/features/).
+To create an account via a social network, simply follow the [link](https://auth.adguard.com/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.com/kb/general/account/features/).

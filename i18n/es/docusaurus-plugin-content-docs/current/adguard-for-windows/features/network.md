@@ -9,25 +9,25 @@ Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multi
 
 :::
 
-The _Network_ module is dedicated to network filtering, and here you will find additional network-related options. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS_. These are important extra precautions to better filter your web space. La mayoría de los sitios web utilizan ahora HTTPS y lo mismo se aplica a la publicidad. From many websites, like youtube.com, facebook.com, and x.com, it is impossible to remove ads without HTTPS filtering. So keep the _Filter HTTPS_ feature enabled unless you have a strong reason not to.
+El _módulo_ de _red_ está dedicado al filtrado de _redes_ y aquí encontrarás opciones adicionales relacionadas con la _red_. Dos de ellos están habilitados de forma predeterminada: _Habilitar filtrado de tráfico_ y _Filtrar HTTPS_. Estas son precauciones adicionales importantes para filtrar mejor tu internet. La mayoría de los sitios web utilizan ahora HTTPS y lo mismo se aplica a la publicidad. En muchos sitios web, como youtube.com, facebook.com y x.com, es imposible eliminar anuncios sin el filtrado HTTPS. Así que mantén habilitada la función _Filtrar HTTPS_ a menos que tengas una buena razón para no hacerlo.
 
-![Network Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
+![Configuración de red \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 
-In this module you can select the checkbox _Use AdGuard as an HTTP proxy_ to use AdGuard as a regular HTTP proxy which will filter all traffic passing through it. You can also enable the _Filter websites with EV certificates_ feature. Extended Validation (EV) SSL Certificates offer a stronger safety guarantee; owners of such websites have to pass a thorough and globally standardized identity verification process defined by EV guidelines. Which is the reason why some users trust websites with such certificates and prefer not to filter them.
+En este módulo, puedes marcar la casilla de verificación _Usar AdGuard como proxy HTTP_ para usar AdGuard como un proxy HTTP normal que filtrará todo el tráfico que pasa a través de él. También puedes habilitar la función _Filtrar sitios web con certificados EV_. Los certificados SSL de validación extendida (EV) ofrecen una garantía de seguridad más sólida; los propietarios de dichos sitios web deben pasar un proceso de verificación de identidad exhaustivo y estandarizado a nivel mundial definido por las directrices EV. Esta es la razón por la que algunos usuarios confían en sitios web con dichos certificados y prefieren no filtrarlos.
 
-At last, there is a section with proxy settings. There you can specify which proxy server AdGuard should use to update filters, get new versions, and so on.
+Por fin, hay una sección con configuración de proxy. Allí puedes especificar qué servidor proxy AdGuard debe utilizar para actualizar los filtros, obtener nuevas versiones, etc.
 
 ### AdGuard VPN
 
-The last section is dedicated to AdGuard VPN — an ideal tool that provides security and anonymity each time you browse the Internet. You can download it by clicking the _Download_ button or go to the AdGuard VPN website by clicking the _Homepage_ button.
+La última sección está dedicada a AdGuard VPN, una herramienta ideal que brinda seguridad y anonimato cada vez que navegas por Internet. Puedes descargarlo haciendo clic en el botón _Descargar_ o ir al sitio web de AdGuard VPN haciendo clic en el botón _Página de inicio_.
 
-How does AdGuard VPN work? Without going into technical details, we can say that VPN creates a secure encrypted tunnel between the user's computer or mobile device and a remote VPN server. In this way, data privacy is preserved, as well as the anonymity of the user, because a third-party observer sees the IP address of the VPN server and not the actual user's IP.
+¿Cómo funciona AdGuard VPN? Sin entrar en detalles técnicos, podemos decir que la VPN crea un túnel cifrado seguro entre la computadora o dispositivo móvil del usuario y un servidor VPN remoto. De esta manera, se preserva la privacidad de los datos, así como el anonimato del usuario, porque un observador externo ve la dirección IP del servidor VPN y no la dirección IP verdadera del usuario.
 
-**What AdGuard VPN does:**
+**Qué hace AdGuard VPN:**
 
-- hides your real whereabouts and helps you stay anonymous
-- changes your IP address to protect your data from tracking
-- encrypts your traffic to make it unreadable to third parties
-- lets you configure where to use VPN and where not to (exclusions feature)
+- oculta tu paradero real y te ayuda a permanecer en el anonimato
+- cambia tu dirección IP para proteger tus datos del seguimiento
+- cifra tu tráfico para hacerlo ilegible para terceros
+- te permite configurar dónde usar la VPN y dónde no usarla (función de exclusiones)
 
-To get more information about AdGuard VPN, dive into the [AdGuard VPN Knowledge Base](https://adguard-vpn.com/kb/).
+Para obtener más información sobre AdGuard VPN, consulta la [Base de conocimientos de AdGuard VPN](https://adguard-vpn.com/kb/).

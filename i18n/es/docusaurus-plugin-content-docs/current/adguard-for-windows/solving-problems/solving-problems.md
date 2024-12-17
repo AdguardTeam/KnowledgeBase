@@ -9,15 +9,15 @@ Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multi
 
 :::
 
-Here are some problems you may encounter and workarounds, guides, and instructions you may need.
+Aquí hay algunos problemas comunes y sus soluciones, guías e instrucciones que puedes necesitar.
 
-- [WFP driver compatibility](/adguard-for-windows/solving-problems/wfp-driver/)
-- [Certificate-related issues](/adguard-for-windows/solving-problems/connection-not-trusted/)
-- [How to collect AdGuard logs](/adguard-for-windows/solving-problems/adguard-logs/)
-- [How to collect AdGuard installation logs](/adguard-for-windows/solving-problems/installation-logs/)
-- [How to collect Windows system logs](/adguard-for-windows/solving-problems/system-logs/)
-- [Common installer errors](/adguard-for-windows/solving-problems/common-installer-errors/)
-- [Advanced (low-level) Settings guide](/adguard-for-windows/solving-problems/low-level-settings/)
-- [How to create a dump file](/adguard-for-windows/solving-problems/dump-file/)
-- [Possible DNS leaks](/adguard-for-windows/solving-problems/dns-leaks/)
-- [Known issues of AdGuard for Windows](/adguard-for-windows/solving-problems/known-issues/)
+- [Compatibilidad del controlador WFP](/adguard-for-windows/solving-problems/wfp-driver/)
+- [Problemas relacionados con certificados](/adguard-for-windows/solving-problems/connection-not-trusted/)
+- [Cómo recoger registros de AdGuard](/adguard-for-windows/solving-problems/adguard-logs/)
+- [Cómo recoger registros de instalación de AdGuard](/adguard-for-windows/solving-problems/installation-logs/)
+- [Cómo recoger registros del sistema de Windows](/adguard-for-windows/solving-problems/system-logs/)
+- [Errores comunes del instalador](/adguard-for-windows/solving-problems/common-installer-errors/)
+- [Guía de configuración de bajo nivel Avanzado](/adguard-for-windows/solving-problems/low-level-settings/)
+- [Cómo crear un archivo de volcado](/adguard-for-windows/solving-problems/dump-file/)
+- [Posibles filtraciones de DNS](/adguard-for-windows/solving-problems/dns-leaks/)
+- [Problemas conocidos de AdGuard para Windows](/adguard-for-windows/solving-problems/known-issues/)

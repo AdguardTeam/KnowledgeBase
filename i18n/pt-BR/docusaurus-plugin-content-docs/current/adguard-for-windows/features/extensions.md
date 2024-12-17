@@ -9,7 +9,7 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 :::
 
-AdGuard can significantly extend website functionality by working as a [userscript manager](/general/extensions.md). AdGuard users can add their own scripts as well as manage existing ones.
+O AdGuard pode estender significativamente a funcionalidade do site trabalhando como um [gerenciador de script de usuário](/general/extensions.md). Os usuários do AdGuard podem adicionar seus próprios scripts, bem como gerenciar os existentes.
 
 ![Extensões \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
@@ -29,11 +29,11 @@ O Assistente AdGuard é um assistente antigo que você pode usar se o [novo assi
 
 Esta é uma extensão personalizada projetada para combater a técnica de reinserção de anúncios bloqueados, conhecida com evasão/reinjeção de anúncios do bloqueador de anúncios. Ambos são métodos avançados de bloqueio de anúncios que continuam a crescer em popularidade entre os anunciantes.
 
-AdGuard Extra is essentially a miniprogram that changes the way pages work in such a way that it becomes much more difficult for sites to use the above-mentioned methods to bypass blockers.
+O AdGuard Extra é basicamente um miniprograma que altera a forma como as páginas funcionam, de modo que se torna muito mais difícil para os sites usarem os métodos mencionados acima para contornar os bloqueadores.
 
 **Bloqueador de pop-ups do AdGuard**
 
-Esta extensão evita que janelas popup sejam abertas quando você visualiza páginas da web. Algumas popups são consideradas úteis: elas podem conter configurações para administração do site ou informações de referência adicionais demonstradas ao clicar em um link. É por isso que você pode desligar o bloqueador, se necessário. Esta extensão também não funciona em sites adicionados à lista de exceções do AdGuard. Ele está desativado por padrão, mas você pode ativá-lo nas configurações do aplicativo. You will find more detailed information about this extension in our Knowledge Base.
+Esta extensão evita que janelas popup sejam abertas quando você visualiza páginas da web. Algumas popups são consideradas úteis: elas podem conter configurações para administração do site ou informações de referência adicionais demonstradas ao clicar em um link. É por isso que você pode desligar o bloqueador, se necessário. Esta extensão também não funciona em sites adicionados à lista de exceções do AdGuard. Ele está desativado por padrão, mas você pode ativá-lo nas configurações do aplicativo. Você encontrará informações mais detalhadas sobre esta extensão em nossa base de conhecimento.
 
 **Web of Trust**
 

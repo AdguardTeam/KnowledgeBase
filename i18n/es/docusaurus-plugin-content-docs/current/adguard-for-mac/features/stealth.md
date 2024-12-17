@@ -1,5 +1,5 @@
 ---
-title: Modo sigiloso
+title: Modo Stealth
 sidebar_position: 6
 ---
 

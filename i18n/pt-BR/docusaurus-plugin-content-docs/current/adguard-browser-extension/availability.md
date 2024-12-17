@@ -23,4 +23,4 @@ Temos uma extensão independente para Safari. Desde o lançamento do [Safari 13]
 
 :::
 
-**Não esqueça que a funcionalidade de cada extensão é estritamente limitada pelas capacidades do navegador.** Então, se você deseja uma proteção completa, considere instalar a versão de desktop para seu computador. There's [a reason why](/adguard-browser-extension/comparison-standalone).
+**Não esqueça que a funcionalidade de cada extensão é estritamente limitada pelas capacidades do navegador.** Então, se você deseja uma proteção completa, considere instalar a versão de desktop para seu computador. Existe um [motivo](adguard-browser-extension/comparison-standalone) para isso.

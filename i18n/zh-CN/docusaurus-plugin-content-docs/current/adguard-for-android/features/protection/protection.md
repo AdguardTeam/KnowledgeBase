@@ -9,40 +9,40 @@ sidebar_position: 1
 
 :::
 
-This module contains the following settings:
+模块包含以下设置：
 
 ## 广告拦截
 
-Information on customizing ad blocking, filtering ads and trackers across apps and browsers, with filters and advanced options for system-wide ad blocking.
+有关自定义广告拦截、跨应用程序和浏览器过滤广告和跟踪器的信息，以及用于系统范围广告拦截的过滤器和高级选项。
 
-[Ad blocking](/adguard-for-android/features/protection/ad-blocking.md)
+[广告拦截](/adguard-for-android/features/protection/ad-blocking.md)
 
 ## 跟踪保护
 
-Information on how to block third-party trackers in apps and websites to protect your privacy and prevent data collection.
+这篇文章介绍可以拦截收集用户数据的跟踪工具的设置。
 
-[Tracking protection](/adguard-for-android/features/protection/tracking-protection.md)
+[跟踪保护](/adguard-for-android/features/protection/tracking-protection.md)
 
 ## 烦人元素拦截
 
-Information on how AdGuard filters block annoyances such as cookie consent pop-ups, banners, and other intrusive elements.
+有关 AdGuard 如何过滤烦人元素，例如 Cookie 同意弹窗、横幅广告和其他干扰元素的信息。
 
-[Annoyance blocking](/adguard-for-android/features/protection/annoyance-blocking.md)
+[烦人元素拦截](/adguard-for-android/features/protection/annoyance-blocking.md)
 
 ## DNS 保护功能
 
-Information on configuring secure DNS servers to help block ads, trackers, and malicious websites while protecting your privacy.
+有关配置安全 DNS 服务器以帮助拦截广告、跟踪器和恶意网站，同时保护用户隐私的信息。
 
-[DNS protection](/adguard-for-android/features/protection/dns-protection.md)
+[DNS 保护](/adguard-for-android/features/protection/dns-protection.md)
 
 ## 防火墙
 
-The Firewall feature, which allows users to control Internet access for individual apps, block background data, and monitor network activity for enhanced privacy and data management.
+防火墙功能，允许用户控制单个应用程序的互联网连接，拦截后台数据，并监控网络活动以增强隐私和数据管理。
 
-[Firewall](/adguard-for-android/features/protection/firewall/firewall.md)
+[防火墙](/adguard-for-android/features/protection/firewall/firewall.md)
 
 ## 浏览安全
 
-The Browsing security feature helps block access to malicious and phishing websites, protecting you from online threats.
+「浏览安全」功能拦截恶意和钓鱼网站，保护用户免受在线威胁。
 
-[Browsing security](/adguard-for-android/features/protection/browsing-security.md)
+[浏览安全](/adguard-for-android/features/protection/browsing-security.md)

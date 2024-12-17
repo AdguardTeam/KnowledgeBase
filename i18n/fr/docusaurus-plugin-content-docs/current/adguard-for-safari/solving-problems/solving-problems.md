@@ -9,10 +9,10 @@ Cet article concerne AdGuard pour Safari, qui protège uniquement votre navigate
 
 :::
 
-Here are some problems you may encounter and workarounds, as well as guides and instructions you may need.
+Voici quelques problèmes que vous pourriez rencontrer ainsi que des solutions, des guides et des instructions dont vous pourriez avoir besoin.
 
-- [Rule limit issues](/adguard-for-safari/solving-problems/rule-limit.md)
-- [Filtering doesn’t work and ads aren’t blocked](/adguard-for-safari/solving-problems/ads-not-blocked.md)
-- [Filtering doesn’t stop when AdGuard for Safari is disabled](/adguard-for-safari/solving-problems/filters-after-disable.md)
-- [How to collect logs in AdGuard for Safari](/adguard-for-safari/solving-problems/logs.md)
-- [AdGuard for Safari doesn’t work in private tabs on macOS Sonoma](/adguard-for-safari/solving-problems/private-sonoma.md)
+- [Problèmes de limite de règle](/adguard-for-safari/solving-problems/rule-limit.md)
+- [Le filtrage ne fonctionne pas et les publicités ne sont pas bloquées](/adguard-for-safari/solving-problems/ads-not-blocked.md)
+- [Le filtrage ne s'arrête pas lorsque AdGuard pour Safari est désactivé](/adguard-for-safari/solving-problems/filters-after-disable.md)
+- [Comment collecter les journaux dans AdGuard pour Safari](/adguard-for-safari/solving-problems/logs.md)
+- [AdGuard pour Safari ne fonctionne pas dans les onglets privés sur macOS Sonoma](/adguard-for-safari/solving-problems/private-sonoma.md)

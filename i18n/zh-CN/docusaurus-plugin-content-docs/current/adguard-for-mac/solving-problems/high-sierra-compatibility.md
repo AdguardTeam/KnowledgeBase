@@ -9,12 +9,12 @@ sidebar_position: 3
 
 :::
 
-During the installation of AdGuard on macOS High Sierra (or later), you may receive the message "System Extension Blocked". This is a new security mechanism introduced in High Sierra that requires you to explicitly allow the installation of a third-party system extension.
+在 macOS High Sierra（或更高版本）上安装 AdGuard 时，用户可能会接受信息，即「系统扩展已阻止」。 这是 High Sierra 中的一种新安全机制，要求用户允许安装第三方系统扩展。
 
-To complete the installation of AdGuard you have to manually allow loading the extension by clicking the "Allow" button in *System Preferences* → *Security & Privacy* → *General*.
+要完成 AdGuard 的安装，必须在「*系统偏好设置*」→「*安全和隐私*」→「*常规*」中点击「允许」按钮手动允许进行扩展的加载。
 
-On macOS Sequoia, you can do it in *System Preferences* → *Security & Privacy* → *General* → *Login Items & Extensions*. Once there, click the "i" icon next to *Network Extensions* and toggle the AdGuard option.
+在 macOS Sequoia 中，可以在「*系统偏好设置*」→「*安全与隐私*」→「*常规*」→「*登录项目和扩展*」中完成此操作。 然后，请点击「*网络扩展*」旁边的「i」图标，然后切换 AdGuard 选项。
 
 ![在设置中允许安装扩展](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/highsierra.png)
 
-After that you will be able to proceed with the installation as usual.
+之后，就可以像往常一样继续进行安装。
