@@ -7,79 +7,79 @@ sidebar_position: 6
 
 Userscripts (também chamados de "extensões") são, na verdade, miniprogramas escritos em JavaScript. Eles modificam ou ampliam a funcionalidade de um ou mais websites. Muitos usuários do AdGuard já podem estar familiarizados com scripts de usuário como o Assistente AdGuard, o Bloqueador de pop-ups e o AdGuard Extra.
 
-:::note Supported apps
+:::note Aplicativos compatíveis
 
-O AdGuard pode ampliar significativamente a funcionalidade de sites, agindo como um gerenciador de userscripts. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/features/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
+O AdGuard pode ampliar significativamente a funcionalidade de sites, agindo como um gerenciador de userscripts. Você pode adicionar seus scripts personalizados ou gerenciar os existentes em nossos três produtos: [AdGuard para Windows](/adguard-for-windows/features/extensions), [AdGuard para Android](/adguard-for-android/features/settings#userscripts) e [AdGuard para Mac](/adguard-for-mac/features/extensions).
 
 :::
 
 ### Scripts recomendados do AdGuard
 
-Esses scripts de usuário vêm diretamente dos desenvolvedores do AdGuard e podemos garantir que são eficazes e seguros. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you are exposing yourself to a certain risk, as some scripts may be harmful to your computer.
+Esses scripts de usuário vêm diretamente dos desenvolvedores do AdGuard e podemos garantir que são eficazes e seguros. Para alguns dos userscripts desenvolvidos por terceiros que consideramos bons e confiáveis, [role para baixo até a próxima seção](#top-picks). Você também pode encontrar alguns dos [sites populares com scripts](#more-userscripts) abaixo, mas lembre-se de que sempre que você baixa um userscript de uma fonte desconhecida, você se expõe a um certo risco, pois alguns scripts podem ser prejudiciais para o seu computador.
 
 #### AdGuard Extra
 
-Uma extensão que bloqueia anúncios em casos difíceis, quando a abordagem usual baseada em filtros não é suficiente. AdGuard Extra comes pre-installed in AdGuard standalone apps, except for the one for iOS, so you don't need to do anything to enable it. No entanto, se quiser usá-lo junto com a extensão do navegador AdGuard ou qualquer outro bloqueador de anúncios, você precisará usar uma extensão adicional. Learn more about this userscript and how to install it on [GitHub](https://github.com/AdguardTeam/AdGuardExtra).
+Uma extensão que bloqueia anúncios em casos difíceis, quando a abordagem usual baseada em filtros não é suficiente. O AdGuard Extra vem pré-instalado nos aplicativos autônomos do AdGuard, exceto no AdGuard para iOS, então você não precisa fazer nada para ativá-lo. No entanto, se quiser usá-lo junto com a extensão do navegador AdGuard ou qualquer outro bloqueador de anúncios, você precisará usar uma extensão adicional. Saiba mais sobre este userscript e como instalá-lo em [GitHub](https://github.com/AdguardTeam/AdGuardExtra).
 
 ![AdGuard Extra](https://cdn.adtidy.org/content/kb/ad_blocker/general/adguard-extra.png)
 
 #### Bloqueador de pop-ups do AdGuard
 
-The name speaks for itself: it blocks popups — one of the most annoying types of ads on websites. Learn more about this userscript, its key features, and installation on [GitHub](https://github.com/AdguardTeam/PopupBlocker).
+O nome fala por si: ele bloqueia pop-ups, um dos tipos mais irritantes de anúncios em sites. Saiba mais sobre este userscript, seus recursos principais e a sua instalação no [GitHub](https://github.com/AdguardTeam/PopupBlocker).
 
 ![AdGuard Popup Blocker](https://cdn.adtidy.org/content/kb/ad_blocker/general/popup-blocker-installation.png)
 
 #### Assistente AdGuard (versão antiga)
 
-This custom extension is designed to control filtering directly from the browser page (manual blocking, allowlisting, etc.).
+Esta extensão personalizada foi projetada para controlar a filtragem diretamente da página do navegador (bloqueio manual, exclusão de permitidos etc.).
 
 :::note
 
-This version of Assistant is legacy and there is no point in using it on new systems, as it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). However, the legacy Assistant may be useful if there is no Browser Assistant for your browser. If this is your case, you can learn how to install AdGuard Assistant on [GitHub](https://github.com/AdguardTeam/AdguardAssistant).
+Essa versão do Assistente é antiga e não faz sentido usá-la em novos sistemas, pois foi substituída pelo <a href="https://adguard.com/adguard-assistant/overview.html">Assistente de navegador</a>. Mas o Assistente antigo pode ser útil se não houver um Assistente de navegador para o seu navegador. Se este for o seu caso, você pode aprender como instalar o Assistente AdGuard no [GitHub](https://github.com/AdguardTeam/AdguardAssistant).
 
 :::
 
 #### Desativar AMP
 
-Um script pré-instalado apenas no AdGuard para Android. Ele desativa o AMP (Accelerated Mobile Pages) na página de resultados de pesquisa do Google. Learn more about this userscript and how to install it on [GitHub](https://github.com/AdguardTeam/DisableAMP).
+Um script pré-instalado apenas no AdGuard para Android. Ele desativa o AMP (Accelerated Mobile Pages) na página de resultados de pesquisa do Google. Saiba mais sobre este userscript e como instalá-lo no [GitHub](https://github.com/AdguardTeam/DisableAMP).
 
-![Disable AMP](https://cdn.adtidy.org/content/kb/ad_blocker/general/disable-amp-installation.png)
+![Desativar AMP](https://cdn.adtidy.org/content/kb/ad_blocker/general/disable-amp-installation.png)
 
 ### Principais opções fora do AdGuard{#top-picks}
 
-These userscripts are not developed by AdGuard, and therefore we can't give a 100% guarantee that they are safe and/or work at all times. However, in our experience they deserve a recommendation because they've all earned their good reputation.
+Esses userscripts não são desenvolvidos pela AdGuard e, portanto, não podemos dar 100% de garantia de que eles são seguros e/ou funcionam em todos os momentos. No entanto, de acordo com a nossa experiência, eles merecem uma recomendação, pois todos conquistaram uma boa reputação.
 
 #### Don't track me Google
 
 Este script remove o recurso de rastreamento do Google dos links nos resultados de pesquisa do Google. Ele acelera o carregamento dos resultados da pesquisa e permite clicar com o botão direito ou tocar para copiar o link do URL.
 
-Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me-google). This userscript can be downloaded from [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) and installed in any AdGuard CoreLibs-based app.
+O código-fonte está [disponível no GitHub](https://github.com/Rob--W/dont-track-me-google). Este userscript pode ser baixado no [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) e instalado em qualquer aplicativo baseado em AdGuard CoreLibs.
 
 #### tinyShield
 
-A userscript for people visiting Korean websites and some international websites. The tinyShield userscript blocks Ad-Shield ads and anti-adblocks. This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about tinyShield and how to install it on [GitHub](https://github.com/List-KR/tinyShield).
+Um userscripts para pessoas que visitam sites coreanos e alguns sites internacionais. O userscript do tinyShield bloqueia anúncios do Ad-Shield e anti-adblocks. Este userscript pode ser instalado em aplicativos baseados no CoreLibs do AdGuard, Violentmonkey, Tampermonkey e [quoid/userscripts](https://github.com/quoid/userscripts). Saiba mais sobre o tinyShield e como instalá-lo no [GitHub](https://github.com/List-KR/tinyShield).
 
 ### Onde obter mais userscripts?{#more-userscripts}
 
-Since userscripts are mainly created by enthusiasts, you should be cautious when installing them. Qualquer script de fonte desconhecida acarreta um risco potencial. No entanto, há uma grande variedade de scripts interessantes que, se instalados com cuidado e responsabilidade, podem realmente tornar o uso de alguns sites mais conveniente.
+Como os userscripts são criados principalmente por entusiastas, você deve ter cuidado ao instalá-los. Qualquer script de fonte desconhecida acarreta um risco potencial. No entanto, há uma grande variedade de scripts interessantes que, se instalados com cuidado e responsabilidade, podem realmente tornar o uso de alguns sites mais conveniente.
 
 Aqui descreveremos alguns dos catálogos de userscript mais populares.
 
 #### Userscript.Zone
 
-[Userscript.Zone](https://www.userscript.zone) is a website that allows searching for userscripts by entering a matching URL or domain. The website is easy to use and has a high level of credibility as only scripts from moderated pages are displayed.
+[Userscript.Zone](https://www.userscript.zone) é um site que permite a busca por userscripts inserindo uma URL ou domínio correspondente. O site é fácil de usar e tem um alto nível de credibilidade, já que apenas scripts de páginas moderadas são exibidos.
 
 #### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) is a userscript catalog of Stylish creators. The scripts in this catalog are moderated, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/) é um catálogo de userscripts dos criadores do Stylish. Os scripts neste catálogo passam por moderação, então sua credibilidade é muito maior.
 
 #### OpenUserJS.org
 
-[OpenUserJS.org](https://openuserjs.org/) is an open-source userscript catalog written in nodeJS. It's not moderated, so keep an eye out for suspicious scripts.
+[OpenUserJS.org](https://openuserjs.org/) é um catálogo de userscripts de código aberto escrito em nodeJS. Não é moderado, então fique atento a scripts suspeitos.
 
 #### Comunidade
 
-If you like the idea of customizing your browser with userscripts and have questions, you can ask them on one of these websites:
+Se você gosta da ideia de personalizar seu navegador com userscripts e tem alguma dúvida, pode perguntar em um destes sites:
 
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/userscripts)
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
@@ -89,7 +89,7 @@ If you like the idea of customizing your browser with userscripts and have quest
 
 #### Solicitar licença
 
-If you are developing your own userscript and want to test how it works with AdGuard, you can request a license by filling in [the form](https://surveys.adguard.com/en/for_developers_request/form.html).
+Se você está desenvolvendo seu próprio userscript e quer testar como ele funciona com o AdGuard, pode solicitar uma licença preenchendo [o formulário](https://surveys.adguard.com/en/for_developers_request/form.html).
 
 #### Compatibilidade
 
@@ -162,7 +162,7 @@ GM_addStyle
 GM_log
 ```
 
-[Here](https://wiki.greasespot.net/GM.info) you can find more information about Greasemonkey API.
+[Aqui](https://wiki.greasespot.net/GM.info) você pode encontrar mais informações sobre a API do Greasemonkey.
 
 #### Exemplo
 
@@ -205,45 +205,45 @@ GM_log
 
 ## Userstyles
 
-Userstyles allow users to change the appearance of popular websites.
+Userstyles permitem que usuários mudem a aparência de sites populares.
 
-AdGuard has the option to upload or create your own userstyles. This is an advanced feature, so you will need some knowledge of HTML and CSS.
+O AdGuard tem a opção de fazer upload ou criar seus próprios userstyles. Esta é uma função avançada, portanto, você precisará de algum conhecimento de HTML e CSS.
 
-:::info Supported apps
+:::info Aplicativos compatíveis
 
-Currently, two AdGuard apps allow you to create and manage userstyles: AdGuard for Windows (v7.19 or later) and AdGuard for Mac (v2.16 or later). We also plan to implement this new feature in AdGuard v4.8 for Android in the nearest future.
+Atualmente, dois aplicativos AdGuard permitem que você crie e gerencie userstyles: AdGuard para Windows (v7.19 ou posterior) e AdGuard para macOS (v2.16 ou posterior). Nós também planejamos implementar este novo recurso no AdGuard v4.8 para Android no futuro próximo.
 
 :::
 
-This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at <support@adguard.com>.
+Este é um recurso experimental, então se você encontrar algum problema ao adicionar ou criar um userstyle, por favor, entre em contato com nosso suporte ao cliente em <support@adguard.com>.
 
-### How to set up a userstyle in AdGuard
+### Como configurar um userstyle no AdGuard
 
-You can download userstyles from various websites. One of the most popular userstyle websites is [https://userstyles.world/](https://userstyles.world/explore), which we will use as an example for the following instructions on how to set up the userstyle in AdGuard.
+Você pode baixar userstyles de vários sites. Um dos sites de userstyles mais populares é [https://userstyles.world/](https://userstyles.world/explore), que usaremos como exemplo para as seguintes instruções sobre como configurar o userstyle no AdGuard.
 
-1. Follow the link above and choose the userstyle you like
+1. Siga o link acima e escolha o userstyle que você gosta
 
-2. Click _Copy_ next to the userstyle address
+2. Clique em _Copiar_ ao lado do endereço do userstyle
 
-3. Open AdGuard settings → _Extensions_
+3. Abra as configurações do AdGuard → _Extensões_
 
-4. Press the [+] button and paste the userstyle link
+4. Pressione o botão [+] e cole o link do userstyle
 
 5. Pronto!
 
-If you’re familiar with CSS rules, you can also create userstyles yourself.
+Se você está familiarizado com regras CSS, também pode criar userstyles por conta própria.
 
 :::note
 
-We don’t support userstyles that contain `@var` or `@advanced` in the metadata. AdGuard also doesn’t support `@preprocessor` without the `default` value.
+Nós não somos compatíveis com userstyles que contenham `@var` ou `@advanced` nos metadados. AdGuard também não suporta `@preprocessor` sem o valor `default`.
 
 :::
 
-1. Open AdGuard settings → _Extensions_
+1. Abra as configurações do AdGuard → _Extensões_
 
-2. Press the [+] button and choose the _Create userstyle_ option. A new window will appear on your screen
+2. Pressione o botão [+] e escolha a opção _Criar userstyle_. Uma nova janela aparecerá na sua tela
 
-3. To create a userstyle, first write the title with metadata, for example
+3. Para criar um estilo de usuário, primeiro escreva o título com metadados, por exemplo
 
    ```CSS
    /* ==UserStyle==
@@ -252,7 +252,7 @@ We don’t support userstyles that contain `@var` or `@advanced` in the metadata
    ==/UserStyle== */
    ```
 
-4. Write the CSS part after the meta data. AdGuard supports website domain names matching (`@-moz-document domain(…), …`). For example:
+4. Escreva a parte CSS depois dos metadados. O AdGuard oferece compatibilidade com nomes de domínio de site correspondentes (`@-moz-document domain(…), …`). Por exemplo:
 
    ```CSS
    body {
@@ -260,7 +260,7 @@ We don’t support userstyles that contain `@var` or `@advanced` in the metadata
      }
    ```
 
-   Or:
+   Ou:
 
    ```CSS
    @-moz-document domain('example.org'),
@@ -270,7 +270,7 @@ We don’t support userstyles that contain `@var` or `@advanced` in the metadata
      }
    ```
 
-5. Once you’re finished, press _Save and Close_. Your new userstyle has been successfully added to AdGuard
+5. Quando terminar, pressione _Salvar e Fechar_. Seu novo userstyle foi adicionado com sucesso ao AdGuard
 
 ### Exemplo
 

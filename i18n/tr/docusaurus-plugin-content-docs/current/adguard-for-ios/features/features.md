@@ -9,7 +9,7 @@ This article is about AdGuard for iOS, a multifunctional ad blocker that protect
 
 :::
 
-## Safari protection
+## Safari koruması
 
 Information on how to configure ad blocking and privacy in Safari using content blockers, filters, and user rules.
 
