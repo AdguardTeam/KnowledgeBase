@@ -1,5 +1,5 @@
 ---
-title: Problems caused by multiple user profiles
+title: Problèmes causés par des profils d'utilisateurs multiples
 sidebar_position: 10
 ---
 
@@ -11,13 +11,13 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 In this article you will find the methods on how to solve problems with AdGuard when you set up *multiple accounts* or *Restricted Profiles* on your Android devices.
 
-## Problems caused by multiple user profiles
+## Problèmes causés par des profils d'utilisateurs multiples
 
-On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. This happens because AdGuard is installed for a different user profile on the device.
+Sur Android 9 et les versions ultérieures, si AdGuard est installé pour plus d'un profil d'utilisateur sur votre appareil, vous pouvez rencontrer des problèmes lors de la désinstallation de l'application. Lorsque vous désinstallez AdGuard d'un profil d'utilisateur, l'application apparaîtra toujours dans la liste des applications, mais vous ne pourrez pas la désinstaller ou la réinstaller. This happens because AdGuard is installed for a different user profile on the device.
 
 If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
 
-To solve this problem, you need to uninstall the application for all users: go to Settings → All apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
+Pour résoudre ce problème, vous devez désinstaller l'application pour tous les utilisateurs : allez dans Paramètres → Toutes les applications → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
 
 ![Uninstall *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 
@@ -37,10 +37,10 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. If you're u
 
 :::
 
-1. Activate the **developer mode** and enable **USB debugging**:
+1. Activez le **mode développeur** et activez ensuite **le débogage USB** :
 
     - Open the **Settings** app phone;
-    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
+    - Accédez à la section **Système** (dernier élément du menu des paramètres). Dans cette section, trouvez le sous-élément **À propos du téléphone** ;
     - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
     - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 

@@ -1,5 +1,5 @@
 ---
-title: Two-factor authentication
+title: İki faktörlü kimlik doğrulama
 sidebar_position: 3
 ---
 

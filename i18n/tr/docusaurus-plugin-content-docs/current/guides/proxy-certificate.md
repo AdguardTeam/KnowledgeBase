@@ -105,7 +105,7 @@ Trafiğini filtrelemek istediğiniz cihazın işletim sistemine bağlı olarak, 
 
 1. Locate and tap the previously downloaded **cert.cer** certificate to open the file and follow the instructions to install the certificate.
 
-1. Android devices do not trust certificates by default, so there will be a warning — you can ignore it. On some phones you may be asked to enter your device password. Do so, then press **OK**. Sertifika yüklenecektir.
+1. Android devices do not trust certificates by default, so there will be a warning — you can ignore it. On some phones you may be asked to enter your device password. Bunu yapın, ardından **Tamam ** öğesine basın. Sertifika yüklenecektir.
 
 1. Open advanced settings of the active Wi-Fi network.
 

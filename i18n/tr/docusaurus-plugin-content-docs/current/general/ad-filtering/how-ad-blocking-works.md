@@ -15,7 +15,7 @@ We don't cover DNS filtering here. It's a different way of blocking ads, with it
 
 ## General principle
 
-Filter lists, also called filters, lie at the core of any ad blocker. Filters are literally lists of rules written in a special syntax. Ad blockers can understand this complex syntax. They interpret filtering rules and perform actions on web traffic based on what the rules tell them to do: block specific elements, alter web pages in certain ways, etc.
+Filter lists, also called filters, lie at the core of any ad blocker. Filters are literally lists of rules written in a special syntax. Reklam engelleyiciler bu karmaşık söz dizimini anlayabilir. They interpret filtering rules and perform actions on web traffic based on what the rules tell them to do: block specific elements, alter web pages in certain ways, etc.
 
 ![Reklam engelleme nasıl çalışır](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
 
@@ -31,7 +31,7 @@ And even when a rule finally gets added to a filter, it doesn't mean that it sta
 
 AdGuard users [have access to a special web reporting tool](https://reports.adguard.com/new_issue.html). Thanks to user complaints, filter developers can focus on correcting their filter lists and not on scouring the Internet for new and old unblocked ads.
 
-Filters can do more than just block ads. İzlenmeyi, sosyal medya araçlarını ve çerez bildirimleri gibican sıkıcı öğeleri engelleyen filtreler vardır. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
+Filtreler yalnızca reklamları engellemekten daha fazlasını yapabilir. İzlenmeyi, sosyal medya araçlarını ve çerez bildirimleri gibican sıkıcı öğeleri engelleyen filtreler vardır. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
 
 We develop and maintain [our own set of filter lists](../adguard-filters) that can be used with AdGuard or other ad blockers.
 

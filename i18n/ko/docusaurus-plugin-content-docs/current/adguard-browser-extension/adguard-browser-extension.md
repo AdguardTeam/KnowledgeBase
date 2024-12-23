@@ -45,7 +45,7 @@ The article describes how the AdGuard Browser Extension manages protected pages,
 
 [Browser-protected pages](/adguard-browser-extension/protected-pages)
 
-## Solving problems
+## 문제 해결
 
 This section includes guides addressing known issues and possible solutions.
 

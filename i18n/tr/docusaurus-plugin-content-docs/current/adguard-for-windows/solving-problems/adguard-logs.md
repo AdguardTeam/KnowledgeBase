@@ -43,7 +43,7 @@ AdGuard gizliliğinizi korumaya kararlıdır. [Gizlilik Politikamıza](https://a
 
 1. Arşivi **support@adguard.com** adresinden AdGuard destek servisine gönderin, sorunu açıklayın ve sorunu yeniden oluşturduğunuz zamanı belirtmeyi unutmayın.
 
-### Trace logs {#trace-logs}
+### İzleme günlükleri {#trace-logs}
 
 Sometimes support team members may ask you to send *trace* logs. Daha sonra aşağıdakileri yapmanız gerekir:
 

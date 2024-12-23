@@ -9,15 +9,15 @@ sidebar_position: 1
 
 :::
 
-Here are some problems you may encounter and workarounds, guides, and instructions you may need.
+以下是用户会遇到的一些问题以及可能需要的解决方法、指南和指示说明。
 
-- [WFP driver compatibility](/adguard-for-windows/solving-problems/wfp-driver/)
-- [Certificate-related issues](/adguard-for-windows/solving-problems/connection-not-trusted/)
-- [How to collect AdGuard logs](/adguard-for-windows/solving-problems/adguard-logs/)
-- [How to collect AdGuard installation logs](/adguard-for-windows/solving-problems/installation-logs/)
-- [How to collect Windows system logs](/adguard-for-windows/solving-problems/system-logs/)
-- [Common installer errors](/adguard-for-windows/solving-problems/common-installer-errors/)
-- [Advanced (low-level) Settings guide](/adguard-for-windows/solving-problems/low-level-settings/)
-- [How to create a dump file](/adguard-for-windows/solving-problems/dump-file/)
-- [Possible DNS leaks](/adguard-for-windows/solving-problems/dns-leaks/)
-- [Known issues of AdGuard for Windows](/adguard-for-windows/solving-problems/known-issues/)
+- [WFP 驱动兼容性](/adguard-for-windows/solving-problems/wfp-driver/)
+- [证书相关问题](/adguard-for-windows/solving-problems/connection-not-trusted/)
+- [如何收集 AdGuard 日志](/adguard-for-windows/solving-problems/adguard-logs/)
+- [如何收集 AdGuard 安装日志](/adguard-for-windows/solving-problems/installation-logs/)
+- [如何收集 Windows 系统日志](/adguard-for-windows/solving-problems/system-logs/)
+- [常见安装错误](/adguard-for-windows/solving-problems/common-installer-errors/)
+- [高级（低级）设置指南](/adguard-for-windows/solving-problems/low-level-settings/)
+- [如何创建 Dump 文件](/adguard-for-windows/solving-problems/dump-file/)
+- [可能的 DNS 泄漏](/adguard-for-windows/solving-problems/dns-leaks/)
+- [已知的 Windows 版 AdGuard 问题](/adguard-for-windows/solving-problems/known-issues/)

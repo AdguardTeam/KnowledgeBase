@@ -23,31 +23,31 @@ sidebar_position: 2
 
 如您想要在 Microsoft Windows 操作系统的电脑或笔记本上使用 AdGuard ，您要下载安装包并启用安装程序。 请执行以下步骤：
 
-1. Go to the [AdGuard website](http://adguard.com) in the address bar and click *Download* [on the homepage](https://adguard.com/download.html?auto=1).
+1. 在地址栏中前往 [AdGuard 网站](http://adguard.com) ，然后在[主页](https://adguard.com/download.html?auto=1)上点击「*下载*」。
 
-   ![Download AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
+   ![下载 AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
 
-2. When the download is finished, press the *Open* button shown in the Downloads bar or click the file name *adguardInstaller.exe*.
+2. 下载完成后，请点击显示在下载栏上的「*打开*」按钮或点击 *adguardInstaller.exe* 的文件名即可。
 
-   ![Press "Run"](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/click-download.png)
+   ![按"运行"](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/click-download.png)
 
-3. You’ll see the User Account Control dialogue box requesting to allow the app to make changes to your PC. Click *Yes*.
+3. 您将看到用户账户控制（UAC）对话框请求您允许应用程序对电脑设置进行更改。 请点击「*是*」。
 
-   ![Allow changes *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/allow-changes.png)
+   ![允许更改 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/allow-changes.png)
 
-4. Next, choose the folder on your PC for the app to be installed to.
+4. 下一步，请选择安装位置。
 
-   ![Choose folder *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/install-wizard.png)
+   ![选择文件夹 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/install-wizard.png)
 
-   If you do not agree with the default installation path, press *Browse*, select the folder for AdGuard installation in the *Browse For Folder* window, and confirm your choice by clicking *OK*. You can also install AdGuard to a new folder by clicking *Make New Folder* and entering its name. To create a desktop shortcut for AdGuard, check the *Create a desktop shortcut* box. Press *Install* to proceed with installation.
+   要更改应用程序默认安装路径，请点击「* 浏览*」，在*浏览文件夹*窗口里选择想要安装 AdGuard 的文件夹位置。选择好后，请点击「*确定*」。 如您想要将 AdGuard 安装到新建的文件夹位置，请点击「*新建文件夹*」并输入文件夹名。 如果想要创建 AdGuard 桌面快捷键，查看「*创建桌面快捷方式*」的复选框。 点击「*安装*」以继续安装过程。
 
-   ![Start installation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/start-install.png)
+   ![开始安装 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/start-install.png)
 
-5. Wait for the installation to complete and click *Finish*.
+5. 请稍等，安装完成后，点击「*完成*」。
 
-   ![Complete installation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/finish-install.png)
+   ![安装完成 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/finish-install.png)
 
-   Congratulations! You have successfully installed AdGuard on your computer. On the screen you will see the main window where you can change the app’s settings.
+   恭喜！ 您成功在计算机上安装 AdGuard。 在屏幕上，您将看到主窗口，可以在其中更改应用程序的设置。
 
 ## 如何卸载 Windows 版 AdGuard  {#uninstall}
 
@@ -105,20 +105,20 @@ sidebar_position: 2
 
 AdGuard 卸载成功完成！
 
-#### Running the uninstaller in console mode
+#### 在控制台模式下运行卸载程序
 
-Besides running the advanced uninstaller in its user-interactive mode, you can also use command-line arguments to uninstall AdGuard for Windows. To do this, follow the instructions below:
+除了以用户交互模式运行高级卸载程序之外，您还可以使用命令行参数来卸载 Windows 版 AdGuard。 请按照以下说明进行操作：
 
-1. Open Command Prompt by typing *cmd* from the Start menu.
-2. Use `/console` to run the uninstaller in console mode, without the interactive UI. All the command-line parameters below will be ignored if the `/console` mode is not activated.
-3. Use `/adblocker` to uninstall AdGuard for Windows. 如图所示：
+1. 从开始菜单中输入 *cmd* 打开命令提示符。
+2. 使用 `/console` 在控制台模式下运行卸载程序，无需交互式 UI。 如果未激活 `/console` 模式，则以下所有命令行参数将被忽略。
+3. 使用 `/adblocker` 卸载 Windows 版 AdGuard。 如图所示：
 
    `Adguard.UninstallUtility.exe /console /adblocker`
 
-4. You can also use `/advanced` to force the uninstaller to run in *Advanced mode* and `/settings` to force the uninstaller to remove user settings along with the application.
+4. 用户还可以使用 `/advanced` 强制卸载程序在「*高级模式*」下运行，以及使用 `/settings` 强制卸载程序与应用程序一起删除用户设置。
 
 :::note
 
-The use of the parameters `/console` and `/adblocker` is necessary for a successful uninstall. The parameters `/advanced` and `/settings` are optional.
+必须使用参数 `/console` 和 `/adblocker` 才能成功卸载。 参数 `/advanced` 和 `/settings` 是可选的。
 
 :::

@@ -36,7 +36,7 @@ A **filter** (or a **filter list**) is a set of filtering rules designed to filt
 
 ### Filtreler
 
-AdGuard ad-blocking filters include:
+AdGuard reklam engelleme filtreleri şunları içerir:
 
 - AdGuard Temel filtresi
 - AdGuard Mobil Reklam filtresi

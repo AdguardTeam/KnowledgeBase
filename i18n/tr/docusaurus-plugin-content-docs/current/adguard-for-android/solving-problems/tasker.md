@@ -110,7 +110,7 @@ Or you can configure remove parameters manually:
 
 `[port]` — outbound proxy port (integer number from 1 to 65535);
 
-- **Optional parameters**:
+- **İsteğe bağlı parametreler**:
 
  `[login and password]` — only if proxy requires it. This data is ignored when setting up **SOCKS4**;
 
@@ -130,7 +130,7 @@ Or you can configure remove parameters manually:
 
 Extra: `password:*******`
 
-Package name: `com.adguard.android`
+Paket adı: `com.adguard.android`
 
 Class: `com.adguard.android.receiver.AutomationReceiver`
 

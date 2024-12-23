@@ -227,7 +227,7 @@ You can download userstyles from various websites. One of the most popular users
 
 3. Open AdGuard settings → _Extensions_
 
-4. Press the [+] button and paste the userstyle link
+4. [+] düğmesine basın ve kullanıcı stili bağlantısını yapıştırın
 
 5. Tamamlandı!
 

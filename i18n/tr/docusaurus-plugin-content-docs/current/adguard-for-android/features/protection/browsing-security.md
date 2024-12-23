@@ -1,5 +1,5 @@
 ---
-title: Browsing security
+title: Gezinti koruması
 sidebar_position: 6
 ---
 

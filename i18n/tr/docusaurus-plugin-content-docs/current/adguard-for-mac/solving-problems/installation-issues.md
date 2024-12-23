@@ -15,7 +15,7 @@ During the installation you can face an error like this:
 
 ![Kurulum hatası ekranı](https://cdn.adtidy.org/content/kb/ad_blocker/mac/macerrorscreenEN.jpg)
 
-Follow this instruction to solve the problem:
+Sorunu çözmek için şu talimatları izleyin:
 
 1. Mac'inizi yeniden başlatın
 2. As your Mac restarts, press and hold down the *Command(⌘) + R* keys immediately upon hearing the startup chime. Hold the keys until the Apple logo appears to get the computer into Recovery mode.

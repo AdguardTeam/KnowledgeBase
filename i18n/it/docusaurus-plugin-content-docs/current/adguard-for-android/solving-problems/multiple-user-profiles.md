@@ -1,5 +1,5 @@
 ---
-title: Problems caused by multiple user profiles
+title: Problemi causati da profili utente multipli
 sidebar_position: 10
 ---
 
@@ -11,13 +11,13 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 In this article you will find the methods on how to solve problems with AdGuard when you set up *multiple accounts* or *Restricted Profiles* on your Android devices.
 
-## Problems caused by multiple user profiles
+## Problemi causati da profili utente multipli
 
-On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. This happens because AdGuard is installed for a different user profile on the device.
+Su Android 9 e successive, se AdGuard è installata per più di un profilo utente sul tuo dispositivo, potresti riscontrare dei problemi disinstallando l'app. Quando disinstalli AdGuard da un profilo utente, l'app continuerà ad apparire sull'elenco delle app, ma non potrai disinstallarla o reinstallarla. This happens because AdGuard is installed for a different user profile on the device.
 
 If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
 
-To solve this problem, you need to uninstall the application for all users: go to Settings → All apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
+Per risolvere questo problema, devi disinstallare l'applicazione per tutti gli utenti: vai su Impostazioni → Tutte le app → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
 
 ![Uninstall *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 
@@ -37,12 +37,12 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. If you're u
 
 :::
 
-1. Activate the **developer mode** and enable **USB debugging**:
+1. Attiva la **modalità sviluppatore** e abilita il **Debug USB**:
 
     - Open the **Settings** app phone;
-    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
-    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
-    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+    - Vai alla sezione **Sistema** (ultima voce nel menu delle impostazioni). In questa sezione, trova **Informazioni sul telefono**;
+    - Tocca la riga **Numero di build** per 7 volte. Dopodiché, riceverai la notifica "**Sei ora uno sviluppatore**" (Se necessario, inserisci un codice di sblocco per il dispositivo);
+    - Apri le **Impostazioni di sistema** → **Opzioni per sviluppatori** → Scorri in basso e abilita **Debug USB** → Conferma che il debug sia abilitato nella finestra **Consenti debug USB**, dopo aver letto attentamente l'avviso.
 
     :::note
 

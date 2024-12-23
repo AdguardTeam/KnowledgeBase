@@ -15,7 +15,7 @@ The _Statistics_ module can be accessed by tapping the _Statistics_ tab (fourth 
 
 The stats are categorized into different sections.
 
-### Requests
+### İstekler
 
 This section shows the number of blocked ads, trackers, and the total number of requests. You can filter requests by data type: mobile data, Wi-Fi, or all data combined.
 

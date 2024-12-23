@@ -27,8 +27,8 @@ Yukarıdaki yöntem en çok tercih edilendir, ancak gerekirse diğerlerini de ku
 
 If you have already received a beta key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Once there, enter the credentials from your AdGuard account. After that, the premium features will become available automatically.
 
-### What else?
+### Başka ne var?
 
 There is not much more to add. You don't have to go out of your way to find bugs. You can continue using AdGuard as usual. However, if you encounter a bug, please report it. Tabii ki, herhangi bir ek çabayı takdir ediyoruz.
 
-Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta (in case you missed them) and other important news. You can unsubscribe from it at any time.
+Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta (in case you missed them) and other important news. İstediğiniz zaman abonelikten çıkabilirsiniz.

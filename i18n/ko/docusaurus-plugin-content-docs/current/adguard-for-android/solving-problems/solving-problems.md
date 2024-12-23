@@ -1,5 +1,5 @@
 ---
-title: Solving problems
+title: 문제 해결
 sidebar_position: 1
 ---
 

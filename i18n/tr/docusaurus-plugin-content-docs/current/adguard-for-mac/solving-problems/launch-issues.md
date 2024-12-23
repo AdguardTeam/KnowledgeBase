@@ -21,7 +21,7 @@ If you have problems launching AdGuard for Mac on Big Sur and Monterey operating
 1. Close the AdGuard app, open **Terminal** and type `systemextensionsctl reset`.
 1. Reboot Mac and enter recovery mode.
 1. Enable SIP (Launch **Terminal** from the **Utilities** menu and type `csrutil enable`).
-1. Launch the AdGuard app and enable protection.
+1. AdGuard uygulamasını başlatın ve korumayı etkinleştirin.
 
 ## macOS 10'da başlatma sorunları
 

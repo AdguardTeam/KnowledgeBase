@@ -35,7 +35,7 @@ If you're seeing annoying ads and popups in the bottom right corner of your scre
 4. Toggle off _Ask before sending_ to block all browser notifications within Microsoft Edge.
 5. Alternatively, add domains to the _Block_ section for each site you want to block.
 
-## Blocking push notifications with AdGuard
+## AdGuard ile anlık bildirimleri engelleme
 
 To avoid similar ads in the future, you can also block push notifications directly from the AdGuard apps.
 

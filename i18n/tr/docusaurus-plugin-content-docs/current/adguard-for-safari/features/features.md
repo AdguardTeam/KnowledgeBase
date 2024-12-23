@@ -31,4 +31,4 @@ The article is dedicated to how you can use AdGuard for Safari to create and man
 
 Here you’ll find useful links to privacy documents, GitHub repository, and version history.
 
-[About](/adguard-for-safari/features/about.md)
+[Hakkında](/adguard-for-safari/features/about.md)
