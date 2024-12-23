@@ -93,51 +93,38 @@ If you are developing your own userscript and want to test how it works with AdG
 
 #### Compatibility
 
-#### Metadata block
+##### Metadata block
 
-#### Supported properties
+###### Supported properties
 
-```text
-@name
-@namespace
-@description
-@version
-@match
-@include
-@exclude
-@grant
-@connect
-@require
-@resource
-@downloadURL
-@updateURL
-@supportURL
-@homepageURL
-@homepage
-@website
-@source
-@run-at
-@noframes
-@icon
-@iconURL
-@defaulticon
-@icon64
-@icon64URL
-```
+- [`@name`](https://wiki.greasespot.net/Metadata_Block#@name)
+- [`@namespace`](https://wiki.greasespot.net/Metadata_Block#@namespace)
+- [`@description`](https://wiki.greasespot.net/Metadata_Block#@description)
+- [`@version`](https://wiki.greasespot.net/Metadata_Block#@version)
+- [`@match`](https://wiki.greasespot.net/Metadata_Block#@match)
+- [`@include`](https://wiki.greasespot.net/Metadata_Block#@include)
+- [`@exclude`](https://wiki.greasespot.net/Metadata_Block#@exclude)
+- [`@grant`](https://wiki.greasespot.net/Metadata_Block#@grant)
+- [`@connect`](https://www.tampermonkey.net/documentation.php#meta:connect)
+- [`@require`](https://wiki.greasespot.net/Metadata_Block#@require)
+- [`@resource`](https://wiki.greasespot.net/Metadata_Block#@resource)
+- [`@downloadURL`](https://www.tampermonkey.net/documentation.php#meta:downloadURL)
+- [`@updateURL`](https://www.tampermonkey.net/documentation.php#meta:updateURL)
+- [`@homepage`, `@homepageURL`, `@source`, `@website`](https://www.tampermonkey.net/documentation.php#meta:homepage)
+- [`@run-at`](https://wiki.greasespot.net/Metadata_Block#@run-at)
+- [`@noframes`](https://wiki.greasespot.net/Metadata_Block#@noframes)
+- [`@icon`, `@iconURL`, `@defaulticon`](https://www.tampermonkey.net/documentation.php#meta:icon)
+- [`@icon64`, `@icon64URL`](https://www.tampermonkey.net/documentation.php#meta:icon64)
 
-#### Unsupported properties
+###### Unsupported properties
 
 These properties will be simply ignored by AdGuard.
 
-```text
-@unwrap
-```
+- [`@unwrap`](https://www.tampermonkey.net/documentation.php#meta:unwrap)
 
-#### Supported GM functions
+##### Supported GM functions
 
 AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
-
-#### Values
 
 :::note
 
@@ -145,25 +132,23 @@ All listed old Greasemonkey functions are deprecated but still supported.
 
 :::
 
-```text
-GM.info / GM_info
-GM.setValue / GM_setValue
-GM.getValue / GM_getValue
-GM.listValues / GM_listValues
-GM.deleteValue / GM_deleteValue
-GM.getResourceUrl / GM_getResourceURL
-GM.setClipboard / GM_setClipboard
-GM.xmlHttpRequest / GM_xmlhttpRequest
-GM.openInTab / GM_openInTab
-GM.notification
-unsafeWindow
-GM_getResourceText
-GM_addStyle
-GM_log
-GM_addElement
-```
+- [`GM.info`, `GM_info`](https://wiki.greasespot.net/GM.info)
+- [`GM.setValue`, `GM_setValue`](https://wiki.greasespot.net/GM.setValue)
+- [`GM.getValue`, `GM_getValue`](https://wiki.greasespot.net/GM.getValue)
+- [`GM.listValues`, `GM_listValues`](https://wiki.greasespot.net/GM.listValues)
+- [`GM.deleteValue`, `GM_deleteValue`](https://wiki.greasespot.net/GM.deleteValue)
+- [`GM.getResourceUrl`, `GM_getResourceURL`](https://wiki.greasespot.net/GM.getResourceUrl)
+- [`GM.setClipboard`, `GM_setClipboard`](https://wiki.greasespot.net/GM.setClipboard)
+- [`GM.xmlHttpRequest`, `GM_xmlhttpRequest`](https://wiki.greasespot.net/GM.xmlHttpRequest)
+- [`GM.openInTab`, `GM_openInTab`](https://wiki.greasespot.net/GM.openInTab)
+- [`GM.notification`](https://wiki.greasespot.net/GM.notification)
+- [`unsafeWindow`](https://wiki.greasespot.net/UnsafeWindow)
+- [`GM_getResourceText`](https://www.tampermonkey.net/documentation.php#api:GM_getResourceText)
+- [`GM_addStyle`](https://www.tampermonkey.net/documentation.php#api:GM_addStyle)
+- [`GM_log`](https://www.tampermonkey.net/documentation.php#api:GM_log)
+- [`GM.addElement`, `GM_addElement`](https://www.tampermonkey.net/documentation.php#api:GM_addElement)
 
-[Here](https://wiki.greasespot.net/GM.info) you can find more information about Greasemonkey API.
+[Here](https://wiki.greasespot.net/Greasemonkey_Manual:API) you can find more information about Greasemonkey API.
 
 #### Example
 
@@ -198,7 +183,7 @@ GM_addElement
 // @grant           GM_openInTab
 // @grant           GM_registerMenuCommand
 // @grant           GM_addElement
-// @run-at document-start
+// @run-at          document-start
 // ==/UserScript==
 !function(){(
     console.log("I am loaded!");
@@ -207,8 +192,7 @@ GM_addElement
 
 #### Trusted Types Policy API
 
-AdGuard provides an instance of class `PolicyApi` that allows you to manage Trusted Types in your userscripts.
-It's useful when your userscript is running on websites that requires Trusted Types.
+AdGuard provides an instance of `PolicyApi` class that allows you to manage Trusted Types in your userscripts.
 
 You can access instance of this class by using `ADG_policyApi` variable in your userscript.
 
@@ -219,14 +203,23 @@ You can access instance of this class by using `ADG_policyApi` variable in your 
 
 ##### Polyfilled methods
 
-- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). If not supported returns `input: string` back.
-- [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). If not supported returns `input: string` back.
-- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). If not supported returns `input: string` back.
-- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). If not supported returns `null`.
-- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). If not supported returns `null`.
-- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). If not supported returns `false`.
-- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). If not supported returns `false`.
-- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). If not supported returns `false`.
+- [`ADG_policyApi.createHTML`]. If not supported returns `input: string` back.
+- [`ADG_policyApi.createScript`]. If not supported returns `input: string` back.
+- [`ADG_policyApi.createScriptURL`]. If not supported returns `input: string` back.
+- [`ADG_policyApi.getAttributeType`]. If not supported returns `null`.
+- [`ADG_policyApi.getPropertyType`]. If not supported returns `null`.
+- [`ADG_policyApi.isHTML`]. If not supported returns `false`.
+- [`ADG_policyApi.isScript`]. If not supported returns `false`.
+- [`ADG_policyApi.isScriptURL`]. If not supported returns `false`.
+
+[`ADG_policyApi.createHTML`]: https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML
+[`ADG_policyApi.createScript`]: https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript
+[`ADG_policyApi.createScriptURL`]: https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL
+[`ADG_policyApi.getAttributeType`]: https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType
+[`ADG_policyApi.getPropertyType`]: https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType
+[`ADG_policyApi.isHTML`]: https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML
+[`ADG_policyApi.isScript`]: https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript
+[`ADG_policyApi.isScriptURL`]: https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL
 
 ##### Additional Types
 
