@@ -190,7 +190,7 @@ You can find more information about Greasemonkey API in [its manual](https://wik
 )}();
 ```
 
-#### Trusted Types Policy API
+#### Trusted Types API
 
 AdGuard provides an instance of the `PolicyApi` class that allows you to manage Trusted Types in your userscripts.
 
