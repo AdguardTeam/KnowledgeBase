@@ -252,10 +252,10 @@ type TrustedValue = string | TrustedHTML | TrustedScript | TrustedScriptURL;
  * - `TrustedScriptURL`
  * - or returns `value` if none of them is applicable.
  *
- * @param type Trusted Type.
- * @param value Value from which a Trusted Type is created.
- * @param createArgs Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
- * @returns Created value.
+ * @param type          Trusted Type.
+ * @param value         Value from which a Trusted Type is created.
+ * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
+ * @returns             Created value.
  */
 function create(
     type: TrustedType,
@@ -274,13 +274,13 @@ const trustedHTML = ADG_policyApi.create(ADG_TrustedType.HTML, '<div></div>');
  * - `TrustedScriptURL`
  * - or returns `value` if none of them is applicable.
  *
- * @param tagName Name of an HTML tag.
- * @param attribute Attribute.
- * @param value Value of an attribute to be converted.
- * @param elementNS Element namespace. If empty, defaults to the HTML namespace.
- * @param attrNS Attribute namespace. If empty, defaults to null.
- * @param createArgs Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
- * @returns Converted value.
+ * @param tagName       Name of an HTML tag.
+ * @param attribute     Attribute.
+ * @param value         Value of an attribute to be converted.
+ * @param elementNS     Element namespace. If empty, defaults to the HTML namespace.
+ * @param attrNS        Attribute namespace. If empty, defaults to null.
+ * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
+ * @returns             Converted value.
  */
 function convertAttributeToTrusted(
     tagName: string,
@@ -302,12 +302,12 @@ scriptElement.setAttribute("src", trustedScriptURL);
  * - `TrustedScriptURL`
  * - or returns `value` if none of them is applicable.
  *
- * @param tagName Name of an HTML tag.
- * @param property Property.
- * @param value Value of a property to be converted.
- * @param elementNS Element namespace. If empty, defaults to the HTML namespace.
- * @param createArgs Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
- * @returns Converted value.
+ * @param tagName       Name of an HTML tag.
+ * @param property      Property.
+ * @param value         Value of a property to be converted.
+ * @param elementNS     Element namespace. If empty, defaults to the HTML namespace.
+ * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
+ * @returns             Converted value.
  */
 function convertPropertyToTrusted(
     tagName: string,
