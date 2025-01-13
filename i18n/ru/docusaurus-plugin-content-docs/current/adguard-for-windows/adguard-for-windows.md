@@ -9,32 +9,32 @@ sidebar_position: 1
 
 :::
 
-## Features
+## Функции
 
-Here are outlined the main features and settings available in AdGuard for Windows.
+Здесь описаны основные функции и настройки, доступные в AdGuard для Windows.
 
-[Features](/adguard-for-windows/features/features.md)
+[Функции](/adguard-for-windows/features/features.md)
 
 ## Установка
 
-Here, you’ll find the system requirements along with instructions on how to install and uninstall AdGuard for Windows.
+Здесь вы найдёте системные требования, а также инструкции по установке и удалению AdGuard для Windows.
 
-[Installation](/adguard-for-windows/installation.md)
+[Установка](/adguard-for-windows/installation.md)
 
 ## Браузерный помощник
 
-This article covers a browser extension that complements the desktop program, its installation, and its benefits.
+В этой статье рассказывается о браузерном расширении, которое дополняет десктопные приложения AdGuard, а также о его установке и преимуществах.
 
-[Browser Assistant](/adguard-for-windows/browser-assistant.md)
+[Браузерный помощник](/adguard-for-windows/browser-assistant.md)
 
 ## Решение проблем
 
-This section includes various articles addressing known issues and possible solutions.
+Этот раздел включает в себя статьи, посвящённые известным проблемам и возможным решениям.
 
-[Solving problems](/adguard-for-windows/solving-problems/solving-problems.md)
+[Решение проблем](/adguard-for-windows/solving-problems/solving-problems.md)
 
 ## Документация для администраторов
 
-This page provides details about AdGuard’s central management of policies and preferences.
+На этой странице представлена подробная информация о централизованном управлении политиками и настройками приложений AdGuard.
 
-[Documentation for admins](/adguard-for-windows/admins-documentation.md)
+[Документация для администраторов](/adguard-for-windows/admins-documentation.md)

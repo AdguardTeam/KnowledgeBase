@@ -5,54 +5,54 @@ sidebar_position: 1
 
 :::info
 
-这篇文章是关于 AdGuard 浏览器扩展，它只能保护用户的浏览器。 To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+这篇文章是关于 AdGuard 浏览器扩展，它只能保护用户的浏览器。 要全面保护设备，请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)。
 
 :::
 
-## Features
+## 功能
 
-Here are outlined the main features and settings available in the AdGuard Browser Extension.
+以下是 AdGuard 浏览器扩展提供的主要功能和设置。
 
-[Features](/adguard-browser-extension/features/features.md)
+[功能](/adguard-browser-extension/features)
 
 ## 可用性
 
-In this article, you'll learn about the supported browsers and platforms where the extension can be installed.
+在本文中了解可以安装扩展的浏览器和平台。
 
-[Availability](/adguard-browser-extension/availability.md)
+[可用性](/adguard-browser-extension/availability)
 
 ## 安装
 
-The article explains how to install the AdGuard Browser Extension on various supported browsers.
+这篇文章解释如何在各种浏览器上安装 AdGuard 浏览器扩展。
 
-[Installation](/adguard-browser-extension/installation.md)
+[安装](/adguard-browser-extension/installation)
 
 ## 与独立应用程序兼容
 
-The article explains the compatibility of the AdGuard Browser Extension with the AdGuard desktop apps.
+本文解释 AdGuard 浏览器扩展与 AdGuard 桌面应用程序的兼容性。
 
-[Compatibility with the standalone app](adguard-browser-extension/compatibility.md)
+[与独立应用程序的兼容性](/adguard-browser-extension/compatibility)
 
 ## Chrome 版 AdGuard 浏览器扩展 MV3
 
-This article discusses the AdGuard browser extension for Chrome, which is compatible with the Manifest V3 API, and how it differs from the browser extension based on Manifest V2.
+本文描述适用于 Chrome 的 AdGuard 浏览器扩展与 Manifest V3 API 兼容，介绍与基于 Manifest V2 的浏览器扩展有什么不同。
 
-[AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version/)
+[用于 Chrome Manifest 的 AdGuard 浏览器扩展](/adguard-browser-extension/mv3-version/)
 
 ## 受浏览器保护的网页
 
-The article describes how the AdGuard Browser Extension manages protected pages, restricting ad blocking on certain sensitive websites to ensure proper functionality.
+这篇文章描述 AdGuard 浏览器扩展如何管理受保护的网页，在某些敏感网站上限制广告阻止，以确保功能的正常运行。
 
-[Browser-protected pages](/adguard-browser-extension/protected-pages.md)
+[浏览器保护的网页](/adguard-browser-extension/protected-pages)
 
 ## 解决问题
 
-This section includes guides addressing known issues and possible solutions.
+此部分包括解决已知问题和可能解决方案的指南。
 
-[Solving problems](/adguard-browser-extension/solving-problems/solving-problems.md)
+[解决问题](/adguard-browser-extension/solving-problems)
 
 ## 与独立应用程序的比较
 
-The article highlights the differences in functionality, coverage, and features between the AdGuard extensions and desktop apps.
+这篇文章突出 AdGuard 扩展和桌面应用程序之间在功能、运行范围和特性方面的差异。
 
-[Comparison to standalone apps](/adguard-browser-extension/comparison-standalone.md)
+[与独立应用程序的比较](/adguard-browser-extension/comparison-standalone)

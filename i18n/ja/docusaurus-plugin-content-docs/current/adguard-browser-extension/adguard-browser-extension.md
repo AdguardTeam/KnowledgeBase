@@ -5,54 +5,54 @@ sidebar_position: 1
 
 :::info
 
-この記事は、お使いのブラウザのみを保護する「AdGuard ブラウザ拡張機能」に関するものです。 To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+この記事は、お使いのブラウザのみを保護する「AdGuard ブラウザ拡張機能」に関するものです。 デバイス全体を保護するには、[AdGuardアプリをダウンロード](https://adguard.com/download.html?auto=true)してください。
 
 :::
 
-## Features
+## 機能
 
-Here are outlined the main features and settings available in the AdGuard Browser Extension.
+AdGuard ブラウザ拡張機能の主な機能と設定は以下のとおりです。
 
-[Features](/adguard-browser-extension/features/features.md)
+[機能](/adguard-browser-extension/features)
 
-## Availability
+## どこで手に入れられるか
 
-In this article, you'll learn about the supported browsers and platforms where the extension can be installed.
+この記事では、拡張機能をインストールできる対応ブラウザとプラットフォームについて説明しております:
 
-[Availability](/adguard-browser-extension/availability.md)
+どこで手に入れられるか
 
 ## インストール/アンインストール
 
-The article explains how to install the AdGuard Browser Extension on various supported browsers.
+この記事では、AdGuard ブラウザ拡張機能をさまざまな対応ブラウザにインストールする方法を説明しております:
 
-[Installation](/adguard-browser-extension/installation.md)
+[インストール方法](/adguard-browser-extension/installation)
 
 ## スタンドアロンAdGuardアプリとの互換性
 
-The article explains the compatibility of the AdGuard Browser Extension with the AdGuard desktop apps.
+この記事では、AdGuard ブラウザ拡張機能とAdGuard デスクトップアプリの互換性について説明しております:
 
-[Compatibility with the standalone app](adguard-browser-extension/compatibility.md)
+[スタンドアロンアプリとの互換性](/adguard-browser-extension/compatibility)
 
-## AdGuard ブラウザ拡張機能 MV3対応版
+## Chrome用 AdGuard ブラウザ拡張機能 MV3対応版
 
-This article discusses the AdGuard browser extension for Chrome, which is compatible with the Manifest V3 API, and how it differs from the browser extension based on Manifest V2.
+本記事では、Manifest V3 APIに対応したChrome用AdGuardブラウザ拡張機能と、Manifest V2に基づくブラウザ拡張機能との違いについて説明しております。
 
-[AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version/)
+[Chrome用 AdGuard ブラウザ拡張機能 MV3対応版](/adguard-browser-extension/mv3-version/)
 
 ## ブラウザで保護されているページ
 
-The article describes how the AdGuard Browser Extension manages protected pages, restricting ad blocking on certain sensitive websites to ensure proper functionality.
+この記事では、AdGuard ブラウザ拡張機能が保護されたページをどのように扱い、特定の機密性の高いウェブサイトでの広告ブロックを制限している方法について説明しています:
 
-[Browser-protected pages](/adguard-browser-extension/protected-pages.md)
+[ブラウザで保護されているページ](/adguard-browser-extension/protected-pages)
 
 ## 問題解決
 
-This section includes guides addressing known issues and possible solutions.
+このセクションには、既知の問題と考えられる解決策を説明するガイドが含まれています:
 
-[Solving problems](/adguard-browser-extension/solving-problems/solving-problems.md)
+[問題解決](/adguard-browser-extension/solving-problems)
 
 ## スタンドアロンAdGuardアプリとの比較
 
-The article highlights the differences in functionality, coverage, and features between the AdGuard extensions and desktop apps.
+この記事では、AdGuard ブラウザ拡張機能とデスクトップアプリの機能、対象範囲、特徴の違いを紹介しています:
 
-[Comparison to standalone apps](/adguard-browser-extension/comparison-standalone.md)
+[スタンドアロンAdGuardアプリとの比較](/adguard-browser-extension/comparison-standalone)

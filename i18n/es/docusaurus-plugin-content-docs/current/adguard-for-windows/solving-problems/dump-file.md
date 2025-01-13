@@ -35,10 +35,10 @@ Una vez que hayas creado el archivo de volcado, navega hasta la ubicación del a
 
 :::note
 
-AdGuard for Windows has two running processes, `Adguard.exe` and `AdguardSvc.exe`. Therefore, it's necessary to create a separate dump file for each process.
+AdGuard para Windows tiene dos procesos en ejecución, `Adguard.exe` y `AdguardSvc.exe`. Por lo tanto, es necesario crear un archivo dump separado para cada proceso.
 
 :::
 
 ![Procesos de AdGuard](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
 
-Cuando envíes los archivos dump al equipo de soporte, adjunte también los registros de la aplicación AdGuard para que tengamos más posibilidades de resolver el problema. [Here](../adguard-logs) you can check the instructions on how to get the log file.
+Cuando envíes los archivos dump al equipo de soporte, adjunte también los registros de la aplicación AdGuard para que tengamos más posibilidades de resolver el problema. [Aquí](../adguard-logs) puedes consultar las instrucciones sobre cómo obtener el archivo de log.

@@ -9,25 +9,25 @@ sidebar_position: 9
 
 :::
 
-AdGuard allows you to install extensions, or userscripts, to extend the functionality of the browser. AdGuard can work as a cross-browser userscript manager: you don’t have to install the same userscript for each browser.
+AdGuard позволяет устанавливать расширения, или пользовательские скрипты, для расширения функциональности браузера. AdGuard может работать как менеджер пользовательских скриптов для разных браузеров: вам не нужно устанавливать один и тот же пользовательский скрипт для каждого браузера.
 
-Some userscripts are pre-installed, others can be installed manually.
+Некоторые пользовательские скрипты предустановлены, другие можно установить вручную.
 
-![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mac/extensions.png)
+![Расширения](https://cdn.adtidy.org/content/kb/ad_blocker/mac/extensions.png)
 
-## AdGuard Assistant (legacy)
+## Помощник AdGuard (устаревшая версия)
 
-This userscript allows you to manage AdGuard protection directly from your browser. While the [new Assistant](/adguard-for-mac/features/browser-assistant) is a browser extension that can be installed from your browser’s store, the legacy Assistant is a userscript that doesn’t require additional installation. Some features are common to both assistants:
+Этот пользовательский скрипт позволяет управлять защитой AdGuard прямо из браузера. В отличие от [нового Помощника](/adguard-for-mac/features/browser-assistant), который имеет формат расширения и доступен в магазинах браузеров, устаревшая версия Помощника — это пользовательский скрипт, который не нужно отдельно устанавливать. Некоторые функции совпадают у обоих помощников:
 
-- Enable or disable protection for a specific website
+- Включить или отключить защиту на определённом сайте
 - Приостановить защиту на 30 секунд
 - Блокировка рекламы вручную
 - Сообщить о неправильной блокировке
 
-However, the new Assistant is more advanced. It also allows you to manage AdGuard protection for all websites, check the website’s certificate, manage HTTPS filtering, and open the filtering log or the app’s settings. Мы рекомендуем использовать предыдущую версию Помощника только в том случае, если новая недоступна.
+Но новый Помощник более продвинутый. Он также позволяет управлять защитой для всех сайтов, проверить сертификат сайта и управлять HTTPS-фильтрацией, а также перейти в журнал фильтрации или в настройки приложения. Мы рекомендуем использовать предыдущую версию Помощника только в том случае, если новая недоступна.
 
 ## AdGuard Extra
 
-This userscript solves the most complex ad blocking issues when regular rules aren’t enough. It also prevents websites from circumventing ad blockers and re-inserting blocked ads. We recommend that you keep it enabled at all times.
+Этот скрипт решает самые сложные проблемы блокировки рекламы, когда обычных правил недостаточно. Он также не позволяет сайтам обходить блокировщики рекламы и повторно вставлять заблокированную рекламу. Мы рекомендуем всегда держать его включённым.
 
-To install a userscript, click `+`. You can find userscripts at [greasyfork.org](https://greasyfork.org/).
+Чтобы установить пользовательский скрипт, нажмите `+`. Вы можете найти пользовательские скрипты на [greasyfork.org](https://greasyfork.org/).

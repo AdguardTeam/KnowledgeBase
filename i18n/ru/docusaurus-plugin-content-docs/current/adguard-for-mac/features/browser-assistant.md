@@ -11,7 +11,7 @@ sidebar_position: 8
 
 Браузерный помощник AdGuard позволяет управлять защитой AdGuard прямо из браузера.
 
-![The Assistant window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
+![Окно Помощника \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
 
 ## Как это работает
 

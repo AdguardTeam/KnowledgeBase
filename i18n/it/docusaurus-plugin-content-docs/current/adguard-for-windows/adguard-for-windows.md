@@ -29,7 +29,7 @@ This article covers a browser extension that complements the desktop program, it
 
 ## Risoluzione problemi
 
-This section includes various articles addressing known issues and possible solutions.
+Questa sezione include vari articoli che affrontano problemi noti e le possibili soluzioni.
 
 [Solving problems](/adguard-for-windows/solving-problems/solving-problems.md)
 

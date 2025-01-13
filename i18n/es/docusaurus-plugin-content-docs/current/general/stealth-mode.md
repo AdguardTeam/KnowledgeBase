@@ -1,9 +1,9 @@
 ---
-title: Modo sigiloso
+title: Modo sigiloso (protección contra rastreo)
 sidebar_position: 4
 ---
 
-Muchos sitios web recopilan información sobre sus visitantes, como su dirección IP, navegador y sistema operativo instalados, resolución de pantalla e incluso la página desde la que se redirige al visitante. Algunas páginas web utilizan cookies para marcar tu navegador y guardar tus configuraciones y preferencias personales, o para "reconocerte" en tu próxima visita. El modo oculto protege tu información personal de sistemas de recopilación de datos y estadísticas.
+Muchos sitios web recopilan información sobre sus visitantes, como su dirección IP, navegador y sistema operativo instalados, resolución de pantalla e incluso la página desde la que se redirige al visitante. Algunas páginas web utilizan cookies para marcar tu navegador y guardar tus configuraciones y preferencias personales, o para "reconocerte" en tu próxima visita. El *Modo sigiloso* (o *Protección contra rastreo* en AdGuard para Windows y Extensión de navegador de AdGuard) protege tu información personal de tales sistemas que recopilan datos y estadísticas.
 
 Puedes ajustar de manera flexible el trabajo del Modo sigiloso: por ejemplo, puedes prohibir que el sitio web reciba la solicitud de búsqueda que utilizaste para encontrarlo en Internet, eliminar automáticamente tanto las cookies de terceros como las propias del sitio web, desactivar el uso compartido de geolocalización del navegador que puede usarse para rastrear tu ubicación, y ocultar tu verdadera Dirección IP o incluso reemplazarla por una arbitraria.
 
@@ -17,21 +17,21 @@ Es posible que algunas opciones no estén disponibles según el producto en part
 
 ## General {#general}
 
-### Ocultar tus consultas de búsqueda {#searchqueries}
+### Ocultar consultas de búsqueda {#searchqueries}
 
 Cuando Google, Yahoo o cualquier otro motor de búsqueda te dirigen a un sitio web, esta opción oculta la consulta de búsqueda que utilizaste para encontrar ese sitio web.
 
-### Pedir a los sitios web que no te rastreen {#donottrack}
+### Enviar señales para optar por no recibir seguimiento {#donottrack}
 
 Envía las señales [Control de privacidad global](https://globalprivacycontrol.org/#gpc-spec) y [No rastrear](https://en.wikipedia.org/wiki/Do_Not_Track) a los sitios web que visitas.
 
-### Eliminar los parámetros de seguimiento de las URL
+### Eliminar parámetros de seguimiento de las URL {#removetracking}
 
 Si habilitas esta opción, AdGuard eliminará parámetros de seguimiento como `utm_*` y `fb_ref` de las URL de las páginas.
 
 ### Métodos de seguimiento {#tracking-methods}
 
-### Autodestrucción de cookies de terceros {#3p-cookie}
+### Eliminar cookies de terceros {#3p-cookie}
 
 Los sitios web utilizan cookies para almacenar tu información y preferencias, como el idioma que seleccionaste, tu ubicación o la lista de artículos en tu carrito de compras. Cuando regresas a un sitio web, tu navegador devuelve las cookies pertenecientes a ese sitio web, lo que te permite "recordar" tus datos.
 
@@ -45,7 +45,7 @@ Esta configuración elimina todas las cookies de terceros, incluida la informaci
 
 :::
 
-### Autodestrucción de cookies de origen {#1p-cookie}
+### Eliminar las cookies de origen (no recomendado) {#1p-cookie}
 
 Establece un período de tiempo (en minutos) al final del cual se destruirán todas las cookies. Pon el temporizador en 0 para bloquearlos por completo.
 
@@ -55,7 +55,7 @@ No recomendamos habilitar esta opción ya que puede interferir gravemente con el
 
 :::
 
-### Desactivar caché para solicitudes de terceros {#3p-cache}
+### Bloquear las cabeceras ETag e If-None-Match {#3p-cache}
 
 Cuando un navegador accede a una página, el servidor asigna una ETag a esa página. El navegador utiliza esta ETag para almacenar en caché el contenido de la página. Tras solicitudes posteriores, el navegador envía la ETag al servidor correspondiente, permitiendo así que el servidor conozca la identidad del visitante. Siempre que los archivos del sitio estén almacenados en caché, la ETag se envía cada vez que tu navegador accede a este sitio. Si el sitio tiene contenido incrustado de otro servidor (como una imagen o un iframe), ese servidor puede rastrear tus actividades sin tu conocimiento.
 
@@ -79,7 +79,7 @@ Habilitar esta opción evitará que el navegador envíe datos de GPS que podría
 
 ### Bloquear Flash {#flash}
 
-The Flash Player plugin has become increasingly vulnerable to such online threats as viruses and hackers; it may also significantly increase website load times. Al activar esta configuración, AdGuard bloquea la capacidad de los navegadores para detectar componentes (como complementos y objetos ActiveXObject) que permiten que Flash muestre contenido. En la práctica, esto significa que los navegadores no son compatibles con Flash.
+El complemento Flash Player se ha vuelto cada vez más vulnerable a amenazas en línea como virus y hackers; también puede aumentar significativamente los tiempos de carga del sitio web. Al activar esta configuración, AdGuard bloquea la capacidad de los navegadores para detectar componentes (como complementos y objetos ActiveXObject) que permiten que Flash muestre contenido. En la práctica, esto significa que los navegadores no son compatibles con Flash.
 
 ### Bloquear Java {#java}
 
@@ -95,25 +95,25 @@ También puedes establecer un valor arbitrario para Referer ingresándolo en el 
 
 Ten en cuenta que para poder filtrar el tráfico, las aplicaciones AdGuard "interceptan" las solicitudes del navegador al servidor. Las solicitudes a servidores de publicidad, seguimiento y phishing pueden modificarse antes de enviarlas al servidor o bloquearse por completo. Lo mismo ocurre con la opción *Ocultar Referer de terceros*: AdGuard intercepta solicitudes HTTP(S), en particular para eliminar o cambiar el encabezado Referer si esta opción está habilitada. Sin embargo, esto ocurre sólo después de que estas solicitudes “abandonan” el navegador. Esto significa que, si monitoreas el Referer dentro del navegador (por ejemplo, con la ayuda de las herramientas de desarrollo de Chrome), verás el Referer original porque la solicitud aún no ha llegado a AdGuard. Puedes utilizar software como [Fiddler](https://www.telerik.com/fiddler) para asegurarte de que Referer se modifique correctamente.
 
-On the other hand, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. Modificará el Referer en ese mismo momento, por lo que Developer Tools mostrará el Referer deseado para tus peticiones.
+Por el contrario, debido a la naturaleza de todas las extensiones de navegador, la extensión de navegador de AdGuard funciona "dentro" del navegador. Modificará el Referer en ese mismo momento, por lo que Developer Tools mostrará el Referer deseado para tus peticiones.
 
-### Ocultar tu User-Agent {#useragent}
+### Ocultar User-Agent {#useragent}
 
 Cuando visitas un sitio web, tu navegador envía tu información al servidor. Parece una línea de texto que forma parte de una petición HTTP que comienza con "User-Agent:". Suele incluir el nombre y la versión del navegador, el sistema operativo y la configuración del idioma. Eliminamos la información de identificación del User-Agent para que los anunciantes no puedan obtenerla.
 
 También puedes establecer un valor arbitrario para el User-Agent ingresándolo en el campo User-Agent personalizado. Para utilizar el User-Agent predeterminado, deja el campo en blanco.
 
-### Enmascarar tu dirección IP {#ip}
+### Enmascarar dirección IP {#ip}
 
 El modo sigiloso no puede ocultar tu dirección IP. Sin embargo, podemos ocultarlo para que los sitios web que visite piensen que eres un proxy. A veces esto ayuda y los sitios web ignoran tu verdadera dirección IP.
 
 Puedes establecer una dirección IP arbitraria, que te gustaría que otros perciban como tuya, simplemente introduciéndola en el campo correspondiente. Para utilizar la dirección IP predeterminada, deja el campo en blanco.
 
-### Eliminar encabezado X-Client-Data de las peticiones HTTP {#xclientdata}
+### Eliminar encabezado X-Client-Data {#xclientdata}
 
 Prohíbe a Google Chrome enviar su versión y información de modificación con solicitudes a dominios de Google (incluidos Double Click y Google Analytics).
 
-### Proteger de DPI {#dpi}
+### Proteger contra DPI {#dpi}
 
 Deep Packet Inspection es un sistema de análisis profundo y filtrado de tráfico por contenido de paquetes, así como de acumulación de datos estadísticos. Al utilizar esta tecnología, los ISP tienen la capacidad de controlar el tráfico que pasa por ello y limitar el acceso al contenido para sus clientes.
 
@@ -123,6 +123,6 @@ La función "Proteger de DPI" ya está implementada en AdGuard para Windows, AdG
 
 :::caution
 
-If this feature is enabled in AdGuard for Windows, it may interfere with ESET antivirus. Anti-DPI will prevent ESET from filtering traffic, leaving blacklisted and malicious websites unblocked.
+Si esta función está habilitada en AdGuard para Windows, puede interferir con el antivirus ESET. Anti-DPI evitará que ESET filtre el tráfico, dejando los sitios web maliciosos y de la lista negra desbloqueados.
 
 :::

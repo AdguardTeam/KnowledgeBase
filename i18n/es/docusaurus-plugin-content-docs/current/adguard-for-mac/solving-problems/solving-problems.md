@@ -9,16 +9,16 @@ Este artículo trata sobre AdGuard para Mac, un bloqueador de anuncios multifunc
 
 :::
 
-Here are some problems you may encounter and workarounds, guides, and instructions you may need.
+Aquí hay algunos problemas comunes y sus soluciones, guías e instrucciones que puedes necesitar.
 
-- [Manual certificate installation](/adguard-for-mac/solving-problems/manual-certificate-installation.md)
-- [Protection cannot be enabled](/adguard-for-mac/solving-problems/protection-cannot-be-enabled.md)
-- [How to install AdGuard on macOS High Sierra and above](/adguard-for-mac/solving-problems/high-sierra-compatibility.md)
-- [Compatibility issues with different macOS versions](/adguard-for-mac/solving-problems/big-sur-issues.md)
-- [Installation problems solving](/adguard-for-mac/solving-problems/installation-issues.md)
-- [Launch issues](/adguard-for-mac/solving-problems/launch-issues.md)
-- [iCloud Private Relay and AdGuard](/adguard-for-mac/solving-problems/icloud-private-relay.md)
-- [Protect Mail Activity and AdGuard](/adguard-for-mac/solving-problems/protect-mail-activity.md)
-- [Advanced Settings guide](/adguard-for-mac/solving-problems/advanced-settings.md)
-- [Setting up filtering in Tor Browser](/adguard-for-mac/solving-problems/tor-filtering.md)
-- [Incompatibility with Screen Time](/adguard-for-mac/solving-problems/screen-time-issues.md)
+- [Instalación manual del certificado](/adguard-for-mac/solving-problems/manual-certificate-installation.md)
+- [La protección no se puede habilitar](/adguard-for-mac/solving-problems/protection-cannot-be-enabled.md)
+- [Cómo instalar AdGuard en macOS High Sierra y versiones posteriores](/adguard-for-mac/solving-problems/high-sierra-compatibility.md)
+- [Problemas de compatibilidad con diferentes versiones de macOS](/adguard-for-mac/solving-problems/big-sur-issues.md)
+- [Resolución de problemas de instalación](/adguard-for-mac/solving-problems/installation-issues.md)
+- [Problemas de lanzamiento](/adguard-for-mac/solving-problems/launch-issues.md)
+- [iCloud Private Relay y AdGuard](/adguard-for-mac/solving-problems/icloud-private-relay.md)
+- [Proteger la actividad del correo y AdGuard](/adguard-for-mac/solving-problems/protect-mail-activity.md)
+- [Guía de configuración avanzada](/adguard-for-mac/solving-problems/advanced-settings.md)
+- [Configuración de filtrado en Tor Browser](/adguard-for-mac/solving-problems/tor-filtering.md)
+- [Incompatibilidad con el Tiempo de Pantalla](/adguard-for-mac/solving-problems/screen-time-issues.md)

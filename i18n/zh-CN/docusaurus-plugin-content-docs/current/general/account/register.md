@@ -9,7 +9,7 @@ sidebar_position: 1
 
 ## 账号创建方式
 
-要创建账号，请转到 [AdGuard 官方网站](https://adguard.com/welcome.html)并点击屏幕右上角的「*我的账号*」按钮。 输入您的电子邮件地址和所需密码，这将自动注册您的账号。
+To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and click the *Log in* button on the top right corner of the screen. 输入您的电子邮件地址和所需密码，这将自动注册您的账号。
 
 :::tip
 
@@ -21,6 +21,12 @@ sidebar_position: 1
 
 账号创建后，点击激活电子邮件内的链接以激活它。
 
+:::tip
+
+After you've registered your account, you can use the *One-time code* option to log in to the application. Enter your email address and choose to enter either your password or the the code sent to your email address.
+
+:::
+
 ## 通过社交网络创建账号
 
-要通过社交网络创建账号，请点击[链接](https://auth.adguard.com/login.html)并登录账号即可。 注册后，请查看收件箱，您将会收到一封确认电子邮件。 设置密码即可！ 现在您可以使用 [AdGuard 账号的所有功能](https://adguard.com/kb/general/account/features/)。
+To create an account via a social network, simply follow the [link](https://auth.adguard.com/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.com/kb/general/account/features/).

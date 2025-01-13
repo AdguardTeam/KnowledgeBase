@@ -1,54 +1,54 @@
 ---
-title: Manual installation of the security certificate into the Firefox browser
+title: Installation manuelle du certificat de sécurité dans le navigateur Firefox
 sidebar_position: 11
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour Android, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment il fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-For AdGuard to successfully filter HTTPS traffic in Firefox, the browser needs to trust AdGuard's certificate. It can be achieved differently for different versions of the Firefox.
+Pour qu’AdGuard puisse filtrer avec succès le trafic HTTPS dans Firefox, le navigateur doit faire confiance au certificat d’AdGuard. Cela peut être réalisé différemment pour différentes versions de Firefox.
 
-### Method 1
+### Méthode 1
 
 :::note
 
-This method works in Firefox for Android version 90.0 and later.
+Cette méthode fonctionne avec Firefox pour Android version 90.0 et suivantes.
 
 :::
 
-To make Firefox trust the AdGuard certificate, do the following:
+Pour que Firefox fasse confiance au certificat AdGuard, procédez comme suit :
 
-1. Run the browser.
+1. Lancez le navigateur.
 
-1. Go to **Settings** → **About Firefox**.
+1. Allez dans **Paramètres** → **À propos de Firefox.**.
 
-    ![About Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
+    ![A propos de Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
-1. Tap the Firefox logo five times.
+1. Appuyez cinq fois sur le logo Firefox.
 
-1. Navigate to **Settings** → **Secret Settings**.
+1. Naviguez vers **Paramètres** → **Paramètres secrets**.
 
-    ![Secret Settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+    ![Paramètres secrets *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
-1. Toggle **Use third party CA certificates**.
+1. Basculez **Utiliser des certificats CA tiers**.
 
-### Method 2
+### Méthode 2
 
 :::note
 
-This method will only work on **rooted** devices.
+Cette méthode ne fonctionnera que sur les appareils **rootés** .
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Installer et configurer](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB ; Sur la plateforme Windows, les propriétaires de **Samsung** peuvent avoir besoin d'installer [cet utilitaire.](https://developer.samsung.com/mobile/android-usb-driver.html).
 
-1. Activate the **developer mode** and enable **USB debugging**:
+1. Activez le **mode développeur** et activez ensuite **le débogage USB** :
 
-    - Open the **Settings** app on your phone;
-    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
+    - Ouvrez l'application **Paramètres** sur votre téléphone ;
+    - Accédez à la section **Système** (dernier élément du menu des paramètres). Dans cette section, trouvez le sous-élément **À propos du téléphone** ;
     - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
     - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
@@ -80,7 +80,7 @@ This method will only work on **rooted** devices.
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxx.default/cert9.db sdcard/Download`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxx.default/key4.db sdcard/Download`
-    - `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
-    - `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
+    - `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyyyy.default`
+    - `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyyyy.default`
 
-    If `adb shell su` does not work, you should try `adb shell` initially, and then `su`.
+    Si `adb shell su` ne fonctionne pas, essayez d'abord `adb shell`, puis `su`

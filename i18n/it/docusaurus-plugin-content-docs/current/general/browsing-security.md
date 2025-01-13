@@ -19,7 +19,7 @@ Ogni volta che visiti un sito web, il tuo client locale scambia informazioni con
 
 AdGuard fornisce la migliore protezione possibile ispezionando sia le pagine che tutti gli oggetti caricati su di esse. AdGuard controlla URL e nomi di dominio utilizzando prefissi hash, non gli URL completi, quindi i nostri server non conservano informazioni sui siti web che visiti e le tue informazioni personali sono completamente sicure. I nostri server rispondono alla richiesta dell'applicazione con un elenco di tutti i possibili indirizzi che corrispondono al prefisso hash. Quando viene rilevata una potenziale minaccia in base alle corrispondenze hash, l'accesso a quel sito web viene immediatamente bloccato.
 
-![Avviso DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_diana.png)
+![AdGuard warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/dangerous_website_blocked.png)
 
 ### Nelle estensioni di browser
 

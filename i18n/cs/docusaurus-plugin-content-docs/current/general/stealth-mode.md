@@ -1,9 +1,9 @@
 ---
-title: Režim utajení
+title: Režim utajení (Ochrana před sledováním)
 sidebar_position: 4
 ---
 
-Mnoho webových stránek shromažďuje informace o svých návštěvnících, například jejich IP adresu, nainstalovaný prohlížeč a operační systém, rozlišení obrazovky a dokonce i stránku, ze které byl návštěvník přesměrován. Některé webové stránky používají soubory cookies k označení prohlížeče a uložení vašich osobních nastavení, uživatelských preferencí nebo k vašemu "rozpoznání" při příští návštěvě. Režim utajení chrání vaše osobní údaje před takovými systémy sběru dat a statistik.
+Mnoho webových stránek shromažďuje informace o svých návštěvnících, například jejich IP adresu, nainstalovaný prohlížeč a operační systém, rozlišení obrazovky a dokonce i stránku, ze které byl návštěvník přesměrován. Některé webové stránky používají soubory cookies k označení prohlížeče a uložení vašich osobních nastavení, uživatelských preferencí nebo k vašemu "rozpoznání" při příští návštěvě. *Režim utajení* (nebo *ochrana před sledováním* v aplikacích AdGuard pro Windows a Rozšíření prohlížeče AdGuard) chrání vaše osobní údaje před takovými systémy shromažďujícími data a statistiky.
 
 Práci Režimu utajení můžete flexibilně upravit: můžete například zakázat webové stránce přijímat požadavky na vyhledávání, které jste použili k jejímu nalezení na internetu, automaticky odstranit soubory cookies třetích stran i vlastní soubory cookies webové stránky, vypnout sdílení zeměpisné polohy prohlížeče, které lze použít ke sledování vaší polohy a skrýt svou skutečnou IP adresu nebo ji dokonce nahradit libovolnou adresou.
 
@@ -21,17 +21,17 @@ Některé možnosti nemusí být v závislosti na konkrétním produktu dostupn�
 
 Když jste přesměrováni na webovou stránku z vyhledávače Google, Yahoo nebo jiného vyhledávače, tato možnost skryje vyhledávací dotaz, který jste použili k nalezení dané webové stránky.
 
-### Požádat webové stránky, aby vás nesledovaly {#donottrack}
+### Odeslat signály k zrušení sledování {#donottrack}
 
 Odesílá webovým stránkám, které jste navštívili signály [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track).
 
-### Odebrat sledovací parametry z URL
+### Odebrat sledovací parametry z URL {#removetracking}
 
 Pokud tuto možnost povolíte, AdGuard odstraní z adres URL parametry sledování, jako je `utm_*` a `fb_ref`.
 
 ### Metody sledování {#tracking-methods}
 
-### Automatické odstranění cookies třetích stran {#3p-cookie}
+### Smazat soubory cookies třetích stran {#3p-cookie}
 
 Webové stránky používají soubory cookies k ukládání vašich informací a preferencí, jako je zvolený jazyk, vaše poloha nebo seznam položek v nákupním košíku. Když se vrátíte na webovou stránku, váš prohlížeč odešle zpět soubory cookies patřící dané webové stránce, což mu umožní "zapamatovat si" vaše údaje.
 
@@ -45,7 +45,7 @@ Toto nastavení odstraní všechny soubory cookies třetích stran, včetně inf
 
 :::
 
-### Automatické odstranění cookies aktuální stránky {#1p-cookie}
+### Smazat vlastní cookies (není doporučeno) {#1p-cookie}
 
 Nastavte dobu (v minutách), po jejímž uplynutí budou všechny soubory vlastních cookies zničeny. Pro úplné zablokování nastavte časovač na 0.
 
@@ -55,7 +55,7 @@ Tuto možnost nedoporučujeme povolovat, protože může vážně narušit prác
 
 :::
 
-### Zakázat mezipaměť požadavků třetích stran {#3p-cache}
+### Blokovat záhlaví ETag a If-None-Match {#3p-cache}
 
 Když prohlížeč osloví stránku, server jí přiřadí značku ETag. Značka ETag používá prohlížeč k ukládání obsahu stránky do mezipaměti. Při dalších požadavcích prohlížeč odešle ETag příslušnému serveru, čímž mu umožní zjistit identitu návštěvníka. Dokud jsou soubory webu uloženy v mezipaměti, je značka ETag odesílána pokaždé, když se váš prohlížeč obrátí na tento web. Pokud je na webu vložen obsah z jiného serveru (například obrázek nebo iframe), může tento server sledovat vaše aktivity bez vašeho vědomí.
 
@@ -103,17 +103,17 @@ Když navštívíte webovou stránku, váš prohlížeč odešle své informace 
 
 Můžete také nastavit libovolnou hodnotu User-Agent zadáním do pole Vlastní User-Agent. Chcete-li použít User-Agent, ponechte pole prázdné.
 
-### Skrýt IP adresu {#ip}
+### Maskovat IP adresu {#ip}
 
 Režim utajení nemůže skrýt vaši IP adresu. Můžeme ji však skrýt, takže navštívené webové stránky si budou myslet, že jste proxy server. Někdy to pomůže a webové stránky vaši skutečnou IP adresu ignorují.
 
 Můžete nastavit libovolnou IP adresu, kterou chcete, aby ostatní vnímali jako vaši, a to tak, že ji jednoduše zadáte do příslušného pole. Chcete-li použít výchozí IP adresu, ponechte pole prázdné.
 
-### Odstranit záhlaví X-Client-Data z požadavků HTTP {#xclientdata}
+### Odstranit X-Client-Data hlavičku {#xclientdata}
 
 Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-### Ochrana před DPI {#dpi}
+### Ochrana proti DPI {#dpi}
 
 Deep Packet Inspection je systém hloubkové analýzy a filtrování provozu podle obsahu paketů a shromažďování statistických údajů. Pomocí této technologie mají poskytovatelé internetových služeb možnost kontrolovat procházející provoz a omezovat přístup k obsahu pro své klienty.
 

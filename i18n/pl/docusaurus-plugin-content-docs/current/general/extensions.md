@@ -55,9 +55,9 @@ This script removes Google's tracking feature from the links in Google search re
 
 Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me-google). This userscript can be downloaded from [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) and installed in any AdGuard CoreLibs-based app.
 
-#### microShield
+#### tinyShield
 
-A userscript for people visiting Korean websites and some international websites. The microShield userscript blocks Ad-Shield ads and anti-adblocks. Its original source code is available at [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) and [AdShield Defuser](https://github.com/seia-soto/adshield-defuser). This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about microShield and how to install it on [GitHub](https://github.com/List-KR/microShield).
+A userscript for people visiting Korean websites and some international websites. The tinyShield userscript blocks Ad-Shield ads and anti-adblocks. This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about tinyShield and how to install it on [GitHub](https://github.com/List-KR/tinyShield).
 
 ### Where can you get more userscripts?{#more-userscripts}
 
@@ -89,15 +89,7 @@ If you like the idea of customizing your browser with userscripts and have quest
 
 #### Request license
 
-If you are developing your own custom script and want to test how it works with AdGuard, you can request a beta license key for the app.
-
-To get it, please send an email to devteam@adguard.com with the following information:
-
-**Subject:** Userscript author license request
-
-**Body:** Please tell us about the userscripts you are working on.
-
-Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request\&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK).
+If you are developing your own userscript and want to test how it works with AdGuard, you can request a license by filling in [the form](https://surveys.adguard.com/en/for_developers_request/form.html).
 
 #### Compatibility
 
@@ -213,7 +205,7 @@ GM_log
 
 ## Userstyles
 
-Userstyles allow users to customize their online experience. Whether you’re looking to change the appearance of a website or automate repetitive tasks, styles offer a world of possibilities.
+Userstyles allow users to change the appearance of popular websites.
 
 AdGuard has the option to upload or create your own userstyles. This is an advanced feature, so you will need some knowledge of HTML and CSS.
 
@@ -231,7 +223,7 @@ You can download userstyles from various websites. One of the most popular users
 
 1. Follow the link above and choose the userstyle you like
 
-2. Right-click the _Install_ button and choose _Copy Link Address_
+2. Click _Copy_ next to the userstyle address
 
 3. Open AdGuard settings → _Extensions_
 
@@ -239,7 +231,7 @@ You can download userstyles from various websites. One of the most popular users
 
 5. Done!
 
-If you’re familiar with CSS rules, you can also create the userstyles yourself.
+If you’re familiar with CSS rules, you can also create userstyles yourself.
 
 :::note
 

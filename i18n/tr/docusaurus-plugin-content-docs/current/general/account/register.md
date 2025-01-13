@@ -9,7 +9,7 @@ sidebar_position: 1
 
 ## Hesap nasıl oluşturulur
 
-To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and press the *My Account* button on the top right corner of the screen. Enter your email address and create a password — your account will be registered.
+To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and click the *Log in* button on the top right corner of the screen. Enter your email address and create a password — your account will be registered.
 
 :::tip
 
@@ -21,6 +21,12 @@ An account can also be created directly in an AdGuard app. Press the *Log in* or
 
 After the account is created, activate it by following the link in the activation email.
 
+:::tip
+
+Hesabınızı kaydettikten sonra, uygulamaya giriş yapmak için *Tek seferlik kod* seçeneğini kullanabilirsiniz. E-posta adresinizi girin ve parolanızı veya e-posta adresinize gönderilen kodu girmeyi seçin.
+
+:::
+
 ## How to create an account via a social network
 
-Sosyal ağ üzerinden hesap oluşturmak için [bağlantıyı](https://auth.adguard.com/login.html) takip etmeniz ve hesabınıza giriş yapmanız yeterlidir. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Artık [AdGuard hesabının tüm özelliklerini](https://adguard.com/kb/general/account/features/) kullanabilirsiniz.
+To create an account via a social network, simply follow the [link](https://auth.adguard.com/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.com/kb/general/account/features/).

@@ -15,7 +15,7 @@ AdGuard는 15년 이상의 경험, 다양한 플랫폼을 위한 여러 제품, 
 
 또한 저희는 모든 인기 브라우저들을 위한 무료 브라우저 확장 프로그램도 개발 및 유지 관리 중입니다.
 
-- [AdGuard 확장 프로그램](/adguard-browser-extension/features/filters)
+- [AdGuard 확장 프로그램](/adguard-browser-extension/availability)
 - [Safari용 AdGuard](/adguard-for-safari/features/general)
 
 ## 광고 차단뿐이 아닙니다

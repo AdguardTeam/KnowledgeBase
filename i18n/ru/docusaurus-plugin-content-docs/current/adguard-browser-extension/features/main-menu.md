@@ -1,5 +1,5 @@
 ---
-title: Main menu
+title: Главное меню
 sidebar_position: 1
 ---
 

@@ -15,7 +15,7 @@ Az AdGuard az egyik vezető a hirdetésblokkoló szoftverpiacon 15 éves tapaszt
 
 De ingyenes böngészőbővítményeket is fejlesztünk és tartunk fenn minden népszerű böngészőhöz:
 
-- [AdGuard Böngészőkiegészítő](/adguard-browser-extension/features/filters)
+- [AdGuard Böngészőkiegészítő](/adguard-browser-extension/availability)
 - [AdGuard for Safari](/adguard-for-safari/features/general)
 
 ## Nem csak reklámblokkolás

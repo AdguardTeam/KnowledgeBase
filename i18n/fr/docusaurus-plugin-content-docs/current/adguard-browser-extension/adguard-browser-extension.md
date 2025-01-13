@@ -5,54 +5,54 @@ sidebar_position: 1
 
 :::info
 
-Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement votre navigateur. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement votre navigateur. Pour protéger votre appareil entier, [téléchargez l'application AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
-## Features
+## Fonctionnalités
 
-Here are outlined the main features and settings available in the AdGuard Browser Extension.
+Voici les principales fonctionnalités et réglages disponibles dans l'extension de navigateur AdGuard.
 
-[Features](/adguard-browser-extension/features/features.md)
+[Fonctionnalités](/adguard-browser-extension/features)
 
 ## Disponibilité
 
-In this article, you'll learn about the supported browsers and platforms where the extension can be installed.
+Dans cet article, vous découvrirez les navigateurs et plateformes compatibles où l'extension peut être installée.
 
-[Availability](/adguard-browser-extension/availability.md)
+[Disponibilité](/adguard-browser-extension/availability)
 
 ## Installation
 
-The article explains how to install the AdGuard Browser Extension on various supported browsers.
+L'article explique la compatibilité de l'extension de navigateur AdGuard avec les applications AdGuard pour ordinateur.
 
-[Installation](/adguard-browser-extension/installation.md)
+[Installation](/adguard-browser-extension/installation)
 
 ## Compatibilité avec l'application autonome
 
-The article explains the compatibility of the AdGuard Browser Extension with the AdGuard desktop apps.
+L'article explique comment installer l'extension de navigateur AdGuard sur les différents navigateurs compatibles.
 
-[Compatibility with the standalone app](adguard-browser-extension/compatibility.md)
+[Compatibilité avec l'application autonome](/adguard-browser-extension/compatibility)
 
-## Extension AdGuard pour Chrome MV3
+## Extension de navigateur AdGuard pour Chrome MV3
 
-This article discusses the AdGuard browser extension for Chrome, which is compatible with the Manifest V3 API, and how it differs from the browser extension based on Manifest V2.
+Cet article discute de l'extension de navigateur AdGuard pour Chrome, compatible avec l'API Manifest V3, et des différences avec l'extension basée sur Manifest V2.
 
-[AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version/)
+[Extension de navigateur AdGuard pour Chrome MV3](/adguard-browser-extension/mv3-version/)
 
 ## Pages protégées par le navigateur
 
-The article describes how the AdGuard Browser Extension manages protected pages, restricting ad blocking on certain sensitive websites to ensure proper functionality.
+L'article décrit comment l'extension de navigateur AdGuard gère les pages protégées, en restreignant le blocage des publicités sur certains sites sensibles pour garantir leur bon fonctionnement.
 
-[Browser-protected pages](/adguard-browser-extension/protected-pages.md)
+[Pages protégées par le navigateur](/adguard-browser-extension/protected-pages)
 
-## Résoudre les problèmes
+## Résolution des problèmes
 
-This section includes guides addressing known issues and possible solutions.
+Cette section comprend des guides traitant des problèmes connus et des solutions possibles.
 
-[Solving problems](/adguard-browser-extension/solving-problems/solving-problems.md)
+[Résolution des problèmes](/adguard-browser-extension/solving-problems)
 
 ## Comparaison avec les applications autonomes
 
-The article highlights the differences in functionality, coverage, and features between the AdGuard extensions and desktop apps.
+L'article met en avant les différences de fonctionnalités, de couverture et d'options entre les extensions AdGuard et les applications pour ordinateur.
 
-[Comparison to standalone apps](/adguard-browser-extension/comparison-standalone.md)
+[Comparaison avec les applications autonomes](/adguard-browser-extension/comparison-standalone)

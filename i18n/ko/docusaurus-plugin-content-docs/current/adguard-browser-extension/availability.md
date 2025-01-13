@@ -23,4 +23,4 @@ Safari용 독립 실행형 확장 프로그램이 있습니다. [Safari 13](http
 
 :::
 
-**각 확장 프로그램의 기능은 브라우저에 의해 엄격하게 제한된다는 것을 잊지 마세요**. 따라서 본격적인 보호를 받으려면 컴퓨터용 독립 실행형 프로그램을 설치하는 것이 좋습니다. [여기](adguard-browser-extension/comparison-standalone)에서 독립 실행형 프로그램을 설치해야 하는 이유를 확인할 수 있습니다.
+**각 확장 프로그램의 기능은 브라우저에 의해 엄격하게 제한된다는 것을 잊지 마세요**. 따라서 본격적인 보호를 받으려면 컴퓨터용 독립 실행형 프로그램을 설치하는 것이 좋습니다. There's [a reason why](/adguard-browser-extension/comparison-standalone).

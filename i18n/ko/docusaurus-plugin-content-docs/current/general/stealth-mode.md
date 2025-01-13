@@ -1,9 +1,9 @@
 ---
-title: 스텔스 모드
+title: Stealth Mode (Tracking protection)
 sidebar_position: 4
 ---
 
-많은 웹사이트는 방문자의 IP 주소, 설치된 브라우저 및 운영 체제, 화면 해상도, 심지어 방문자가 리디렉션된 페이지 등 방문자에 대한 정보를 수집합니다. 일부 웹 페이지에서는 쿠키를 사용하여 브라우저를 표시하고 개인 설정 및 환경설정을 저장하거나 다음 방문 시 사용자를 '인식'합니다. 스텔스 모드는 이러한 데이터 및 통계 수집 시스템으로부터 개인 정보를 보호합니다.
+많은 웹사이트는 방문자의 IP 주소, 설치된 브라우저 및 운영 체제, 화면 해상도, 심지어 방문자가 리디렉션된 페이지 등 방문자에 대한 정보를 수집합니다. 일부 웹 페이지에서는 쿠키를 사용하여 브라우저를 표시하고 개인 설정 및 환경설정을 저장하거나 다음 방문 시 사용자를 '인식'합니다. *Stealth Mode* (or *Tracking protection* in AdGuard for Windows and AdGuard Browser Extension) safeguards your personal information from such data- and statistics-gathering systems.
 
 스텔스 모드의 작업을 유연하게 조정할 수 있습니다. 예를 들어 인터넷에서 웹사이트를 찾는 데 사용한 검색 요청을 웹사이트가 수신하지 못하도록 하고, 타사 쿠키와 웹사이트 자체 쿠키를 모두 자동으로 삭제하고, 내 위치를 추적하는 데 사용할 수 있는 브라우저 지리적 위치 공유를 끄고, 실제 IP 주소를 숨기거나 임의의 주소로 대체할 수도 있습니다.
 
@@ -17,21 +17,21 @@ sidebar_position: 4
 
 ## 일반 {#general}
 
-### 검색어 숨기기 {#searchqueries}
+### Hide search queries {#searchqueries}
 
 Google, Yahoo 또는 기타 검색 엔진에서 웹사이트로 이동하는 경우 이 옵션은 해당 웹사이트를 찾는 데 사용한 검색어를 숨깁니다.
 
-### 웹사이트에 추적하지 않도록 요청하기 {#donottrack}
+### Send signals to opt out of tracking {#donottrack}
 
 방문하는 웹사이트에 [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) 및 [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) 요청을 보냅니다.
 
-### URL에서 추적 매개변수 제거
+### Remove tracking parameters from URLs {#removetracking}
 
 이 옵션을 활성화하면 AdGuard는 페이지의 URL에서 `utm_*` 및 `fb_ref와` 같은 추적 매개변수를 제거합니다.
 
 ### 추적 방법 {#tracking-methods}
 
-### 타사 쿠키의 자체 파기 {#3p-cookie}
+### Delete third-party cookies {#3p-cookie}
 
 웹사이트는 쿠키를 사용하여 사용자가 선택한 언어, 위치, 장바구니의 품목 목록 등 사용자의 정보와 기본 설정을 저장합니다. 웹사이트에 다시 방문하면 브라우저는 해당 웹사이트에 속한 쿠키를 다시 전송하여 사용자의 데이터를 기억할 수 있습니다.
 
@@ -45,7 +45,7 @@ Google, Yahoo 또는 기타 검색 엔진에서 웹사이트로 이동하는 경
 
 :::
 
-### 자사 쿠키의 자체 파괴 {#1p-cookie}
+### Delete first-party cookies (not recommended) {#1p-cookie}
 
 모든 쿠키가 삭제되는 기간(분 단위)을 설정합니다. 완전히 차단하려면 타이머를 0으로 설정합니다.
 
@@ -55,7 +55,7 @@ Google, Yahoo 또는 기타 검색 엔진에서 웹사이트로 이동하는 경
 
 :::
 
-### 타사 요청에 대한 캐시 비활성화 {#3p-cache}
+### Block ETag and If-None-Match headers {#3p-cache}
 
 브라우저가 페이지 주소를 지정하면 서버는 해당 페이지에 ETag를 할당합니다. 이 ETag는 브라우저에서 페이지의 콘텐츠를 캐시하는 데 사용됩니다. 후속 요청 시 브라우저는 해당 서버로 ETag를 전송하여 서버가 방문자의 신원을 파악할 수 있도록 합니다. 사이트의 파일이 캐시되어 있는 한, 브라우저에서 이 사이트를 주소 지정할 때마다 ETag가 전송됩니다. 사이트에 다른 서버의 콘텐츠(예: 이미지 또는 iframe)가 포함된 경우 해당 서버는 사용자 모르게 사용자의 활동을 추적할 수 있습니다.
 
@@ -97,23 +97,23 @@ The Flash Player plugin has become increasingly vulnerable to such online threat
 
 On the other hand, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. 그러면 바로 그 자리에서 Referer가 변경되므로 개발자 도구는 귀하의 요청에 대해 원하는 Referer를 표시합니다.
 
-### User Agent 숨기기 {#useragent}
+### Hide User-Agent {#useragent}
 
 웹사이트를 방문하면 브라우저가 해당 정보를 서버로 전송합니다. 'User-Agent:'로 시작하는 HTTP 요청의 일부인 텍스트 줄처럼 보입니다. 일반적으로 브라우저의 이름과 버전, 운영 체제 및 언어 설정이 포함됩니다. 우리는 광고주가 정보를 얻을 수 없도록 User Agent를 식별 정보에서 제외했습니다.
 
 Custom User Agent 필드에 User Agent 값을 입력하여 임의의 값을 설정할 수도 있습니다. 기본 User Agent를 사용하려면 필드를 비워 두세요.
 
-### IP 주소 숨기기 {#ip}
+### Mask IP address {#ip}
 
 스텔스 모드에서는 IP 주소를 숨길 수 없습니다. 그러나 방문하는 웹사이트가 귀하를 프록시로 인식하도록 숨길 수 있습니다. 이 방법이 도움이 될 때도 있지만 웹사이트는 실제 IP 주소를 무시합니다.
 
 다른 사람이 내 IP 주소로 인식하도록 하려면 해당 필드에 입력하기만 하면 임의의 IP 주소를 설정할 수 있습니다. 기본 IP 주소를 사용하려면 이 필드를 비워둡니다.
 
-### HTTP 요청으로 부터 X-Client-Data 헤더를 제거 {#xclientdata}
+### Remove X-Client-Data header {#xclientdata}
 
 이는 Google Chrome이 Google 도메인(Double Click 및 Google Analytics 포함)에 대한 요청과 함께 버전 및 수정 정보를 보내는 것을 금지합니다.
 
-### DPI로부터 보호 {#dpi}
+### Protect against DPI {#dpi}
 
 심층 패킷 검사는 패킷 내용별로 트래픽을 심층 분석 및 필터링하고 통계 데이터를 축적하는 시스템입니다. ISP는 이 기술을 사용하여 통과하는 트래픽을 제어하고 클라이언트의 콘텐츠 액세스를 제한할 수 있습니다.
 

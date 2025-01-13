@@ -11,49 +11,49 @@ sidebar_position: 3
 
 :::
 
-## Как AdGuard проверяет сайты?
+## Как AdGuard проверяет сайты
 
-Каждый раз, когда вы посещаете  сайт, ваш локальный клиент обменивается информацией с нашим внутренним сервером в виде хешей и хеш-префиксов. На основе этого обмена локальный клиент определяет, занесён ли сайт в базу потенциально опасных сайтов. There is a difference in the scope of this check for apps and extensions.
+Каждый раз, когда вы посещаете  сайт, ваш локальный клиент обменивается информацией с нашим внутренним сервером в виде хешей и хеш-префиксов. На основе этого обмена локальный клиент определяет, занесён ли сайт в базу потенциально опасных сайтов. Возможности такой проверки различаются для приложений и ресширений.
 
 ### В приложениях
 
-AdGuard provides the best possible protection by inspecting both the pages and all objects loaded on them. AdGuard checks URLs and domain names using hash prefixes, not the full URLs, so our servers retain no information about the websites you visit and your personal information is completely safe. Our servers respond to the app’s query with a list of all possible addresses that match the hash prefix. When a potential threat is detected based on hash matches, access to that website is immediately blocked.
+AdGuard обеспечивает наилучшую защиту, проверяя как страницы, так и все загруженные на них объекты. AdGuard проверяет URL и доменные имена с помощью префиксов хешей, а не полных URL, поэтому не знает, какие сайты вы посещаете. Наши серверы отвечают на запрос приложения списком всех возможных адресов, соответствующих префиксу хеша. Когда на основе совпадений хеша обнаруживается потенциальная угроза, доступ к этому сайту немедленно блокируется.
 
-![DNS-предупреждение](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_diana.png)
+![Предупреждение AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/general/dangerous_website_blocked.png)
 
 ### В браузерных расширениях
 
-Наши браузерные расширения могут проверять только имена доменов, а не полные URL-адреса. They are also unable to check subqueries. This means that if there are potentially malicious elements on the page, they will be loaded even if the page itself is from a safe domain. The extension won’t be able to protect against them. It's also important to note that the check performed is asynchronous, i.e. it happens at the same time as the page is loaded, so it’s possible that malware could be loaded as well.
+Наши браузерные расширения могут проверять только имена доменов, а не полные URL-адреса. Они также не могут проверять подзапросы. Если страница находится на безопасном домене, но на ней есть потенциально вредоносные элементы, они будут загружены. Расширение не сможет защитить от них. Проверка выполняется асинхронно, то есть одновременно с загрузкой страницы. Это тоже слегка повышает вероятность загрузки вредоносного ПО.
 
-## Setting up phishing and malware protection in AdGuard products
+## Как настроить защиту от фишинга и вредоносного ПО в продуктах AdGuard
 
-- **For Windows**: Activate the *Browsing Security* module in the *Settings* menu
+- **Для Windows**: Включите *Защиту от фишинга* в *Настройках*
 
-![Browsing Security in Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
+![Защита от фишинга на Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
 
-- **For Mac**: Enable the *Security* module in *Preferences*
+- **Для Mac**: Включите модуль *Безопасность* в *Настройках*
 
-![Безопасность в Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
+![Безопасность на Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
 
-- **For Android**: Turn on *Browsing Security* in the *Protection* tab
+- **Для Android**: Включите *Защиту от фишинга* на вкладке *Защита*
 
-![Browsing security in Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
+![Защита от фишинга на Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
 
-- **For iOS**: Although there’s no separate module, you can go to *Safari protection* → *Filters* → *Security* and enable the available filters. Кроме того, включите *DNS-защиту* и выберите один из серверов AdGuard DNS
+- **Для iOS**: Хотя отдельный модуль не предусмотрен, вы можете перейти в *Защиту Safari* → *Фильтры* → *Безопасность* и включить доступные фильтры. Кроме того, включите *DNS-защиту* и выберите один из серверов AdGuard DNS
 
-![Безопасность в iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
+![Безопасность на iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
 
-- **Для расширений браузера**: включите *Защитe от фишинговых и вредоносных сайтов* на вкладке *Настройки*. Для усиленной защиты перейдите в *Фильтры* → *Безопасность* и активируйте доступные фильтры
+- **Для браузерных расширений**: включите *Защиту от фишинговых и вредоносных сайтов* во вкладке *Настройки*. Для усиленной защиты перейдите в *Фильтры* → *Безопасность* и активируйте доступные фильтры
 
 ![Защита от фишинга и вредоносных программ](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
 
-- **Для приватного DNS AdGuard:** Включите защиту от вредоносных программ в *Настройках сервера* в разделе *Безопасность*
+- **Для приватного AdGuard DNS:** Включите защиту от вредоносных программ в *Настройках сервера* в разделе *Безопасность*
 
 ![Безопасность в DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
 
 ## Что мы блокируем
 
-Мы используем два основных фильтра: один защищает от фишинговых и мошеннических сайтов, которые пытаются украсть учётные данные пользователя, а другой блокирует доступ к сайтам. Эти сайты, как известно, распространяют вредоносное ПО, что может привести к потере данных, утечке информации или повреждению устройства. These filters also protect you from websites with various scams and fraudulent schemes. Более подробную информацию можно найти в этой [статье на Википедии](https://ru.wikipedia.org/wiki/Фишинг).
+Мы используем два основных фильтра. Один защищает от фишинговых и мошеннических сайтов, которые пытаются украсть учётные данные пользователя. Другой блокирует доступ к сайтам, которые распространяют вредоносное ПО, что может привести к потере данных, утечке информации или повреждению устройства. Эти фильтры также защищают вас от сайтов с различными мошенническими схемами и обманом. Более подробную информацию можно найти в этой [статье на Википедии](https://ru.wikipedia.org/wiki/Фишинг).
 
 ## Поддержка наших фильтров
 
