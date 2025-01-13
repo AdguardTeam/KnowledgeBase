@@ -9,11 +9,11 @@ sidebar_position: 1
 
 ## Cómo crear una cuenta
 
-To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and click the *Log in* button on the top right corner of the screen. Ingresa tu dirección de correo electrónico y crea una contraseña: tu cuenta se registrará.
+Para crear una cuenta, ve al [sitio web oficial de AdGuard](https://adguard.com/welcome.html) y pulsa el botón *Iniciar sesión* en la esquina superior derecha de la pantalla. Ingresa tu dirección de correo electrónico y crea una contraseña: tu cuenta se registrará.
 
 :::consejo
 
-If you enter your email address when purchasing a license, or receive a license linked to your email address as a gift, an account will be created automatically. Para establecer una contraseña, puedes seguir el enlace en el correo de transacción o de regalo. También puedes registrarte con el método anterior.
+Si ingresas tu Dirección de correo electrónico al comprar una licencia, o recibes una licencia vinculada a tu dirección de correo electrónico como regalo, se creará una cuenta automáticamente. Para establecer una contraseña, puedes seguir el enlace en el correo de transacción o de regalo. También puedes registrarte con el método anterior.
 
 :::
 
@@ -23,10 +23,10 @@ Una vez creada la cuenta, actívala siguiendo el enlace en el correo de activaci
 
 :::tip
 
-After you've registered your account, you can use the *One-time code* option to log in to the application. Enter your email address and choose to enter either your password or the the code sent to your email address.
+Después de haber registrado tu cuenta, puedes usar la opción de *código único* para iniciar sesión en la app. Ingresa tu dirección de correo electrónico y elige ingresar tu contraseña o el código enviado a tu dirección de correo electrónico.
 
 :::
 
 ## Cómo crear una cuenta a través de una red social
 
-To create an account via a social network, simply follow the [link](https://auth.adguard.com/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.com/kb/general/account/features/).
+Para crear una cuenta a través de una red social, simplemente sigue el enlace [](https://auth.adguard.com/login.html) e inicia sesión en tu cuenta. Una vez que te hayas registrado, revisa tu bandeja de entrada, recibirás un correo electrónico de confirmación. Establece una contraseña y ¡listo! Ahora puedes utilizar las [funciones de la cuenta AdGuard](https://adguard.com/kb/general/account/features/).

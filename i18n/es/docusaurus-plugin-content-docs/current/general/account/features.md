@@ -1,5 +1,5 @@
 ---
-title: What can be done in the AdGuard account
+title: Qué se puede hacer en la cuenta de AdGuard
 sidebar_position: 2
 ---
 
@@ -11,10 +11,10 @@ In the *Settings* section of your AdGuard account, you can update or reset your 
 
 En esta sección también puedes gestionar tus preferencias de correo electrónico:
 
-- Receive AdGuard newsletter
-- Receive transactional emails
-- Send read receipts to AdGuard
-- Opt-out preferences
+- Recibir el boletín de AdGuard
+- Recibir correos electrónicos transaccionales
+- recibir correos electrónicos sobre ofertas especiales y promociones de AdGuard,
+- Preferencias de permiso
 
 ## Administrar licencias
 
@@ -27,12 +27,12 @@ En la sección *Licencias*, puedes administrar tus licencias y los dispositivos 
 - mejorada,
 - cancelada. También puedes actualizar tus datos de pago.
 
-Los dispositivos vinculados a tus licencias del bloqueador de anuncios AdGuard se pueden desvincular o cambiar de nombre. To unbind unused devices, click the number of bound devices next to *Devices*, then select the right arrow → *Remove*.
+Los dispositivos vinculados a tus licencias del bloqueador de anuncios AdGuard se pueden desvincular o cambiar de nombre. Para desvincular dispositivos no utilizados, haz clic en el número de dispositivos vinculados junto a *Dispositivos*, luego selecciona la flecha derecha → *Eliminar*.
 
 ## Ver compras
 
-The *Purchases* section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. You will also find there information about the date of purchase, order ID, payment method, and cost of the purchase.
+La sección *Compras* muestra todas las licencias que alguna vez compraste usando la cuenta de correo electrónico con la que registraste tu cuenta de AdGuard. Allí también encontrarás información sobre la fecha de la compra, ID de pedido, forma de pago y el coste de la compra.
 
-## Activity
+## Actividad
 
-The *Activity* tab allows you to monitor login activity for your AdGuard account. It displays the email address used, location, and login date. You can also filter records by product: *All products*, *AdGuard Ad Blocker*, *AdGuard VPN*, *AdGuard DNS*.
+La pestaña *Actividad* permite monitorear la actividad de inicio de sesión de tu cuenta de AdGuard. Muestra la dirección de correo electrónico utilizada, la ubicación y la fecha de inicio de sesión. También puedes filtrar registros por producto: *Todos los productos*, *bloqueador de anuncios AdGuard*, *AdGuard VPN*, *AdGuard DNS*.

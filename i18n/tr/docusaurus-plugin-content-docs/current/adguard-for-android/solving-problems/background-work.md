@@ -323,7 +323,7 @@ It is not confirmed, but it might be possible to just disable PowerGenie in **Ph
 
 `adb shell pm uninstall -k --user 0 com.huawei.android.hwapsvv`
 
-If AdGuard keeps getting killed, also try running
+AdGuard sürekli kapatılıyorsa, şunu çalıştırmayı da deneyin
 
 `adb shell pm stopservice hwPfwService`
 

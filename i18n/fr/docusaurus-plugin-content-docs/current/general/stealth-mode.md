@@ -1,9 +1,9 @@
 ---
-title: Stealth Mode (Tracking protection)
+title: Mode furtif (Protection contre le suivi)
 sidebar_position: 4
 ---
 
-De nombreux sites web recueillent des informations sur leurs visiteurs, telles que leur adresse IP, le navigateur et le système d'exploitation installés, la résolution de l'écran et même la page à partir de laquelle le visiteur a été redirigé. Certaines pages web utilisent des cookies pour marquer votre navigateur et enregistrer vos paramètres personnels et vos préférences, ou pour vous "reconnaître" lors de votre prochaine visite. *Stealth Mode* (or *Tracking protection* in AdGuard for Windows and AdGuard Browser Extension) safeguards your personal information from such data- and statistics-gathering systems.
+De nombreux sites web recueillent des informations sur leurs visiteurs, telles que leur adresse IP, le navigateur et le système d'exploitation installés, la résolution de l'écran et même la page à partir de laquelle le visiteur a été redirigé. Certaines pages web utilisent des cookies pour marquer votre navigateur et enregistrer vos paramètres personnels et vos préférences, ou pour vous "reconnaître" lors de votre prochaine visite. *Le mode furtif* (ou *La protection contre le suivi* dans AdGuard pour Windows et l'extension de navigateur AdGuard) protège vos informations personnelles contre ces systèmes de collecte de données et de statistiques.
 
 Vous pouvez adapter le fonctionnement du mode furtif de manière flexible : par exemple, vous pouvez interdire au site web de recevoir la requête de recherche que vous avez utilisée pour le trouver sur Internet, supprimer automatiquement les cookies de tiers et ceux du site web, désactiver le partage de la géolocalisation du navigateur qui peut être utilisé pour suivre vos déplacements, et masquer votre véritable adresse IP ou même la remplacer par une adresse arbitraire.
 
@@ -17,21 +17,21 @@ Certaines options peuvent ne pas être disponibles en fonction du produit partic
 
 ## Général {#general}
 
-### Hide search queries {#searchqueries}
+### Masquer les requêtes de recherche {#searchqueries}
 
 Lorsque vous êtes redirigé vers un site web par Google, Yahoo ou tout autre moteur de recherche, cette option masque la requête de recherche que vous avez utilisée pour trouver ce site web.
 
-### Send signals to opt out of tracking {#donottrack}
+### Envoyer des signaux pour refuser le suivi {#donottrack}
 
 Envoie les signaux [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) et [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) aux sites web que vous visitez.
 
-### Remove tracking parameters from URLs {#removetracking}
+### Supprimer les paramètres de suivi des URL {#removetracking}
 
 Si vous activez cette option, AdGuard supprimera les paramètres de suivi tels que `utm_*` et `fb_ref` des URL des pages.
 
 ### Méthodes de suivi {#tracking-methods}
 
-### Delete third-party cookies {#3p-cookie}
+### Supprimer les cookies tiers {#3p-cookie}
 
 Les sites web utilisent des cookies pour stocker vos informations et vos préférences, telles que la langue que vous avez sélectionnée, votre localisation ou la liste des articles de votre panier d'achat. Lorsque vous revenez sur un site web, votre navigateur renvoie les cookies appartenant à ce site, ce qui lui permet de "mémoriser" vos données.
 
@@ -45,7 +45,7 @@ Ce paramètre supprime tous les cookies de tiers, y compris les informations rel
 
 :::
 
-### Delete first-party cookies (not recommended) {#1p-cookie}
+### Supprimer les cookies propriétaires (non recommandé) {#1p-cookie}
 
 Définissez une période de temps (en minutes) au terme de laquelle tous les cookies seront détruits. Réglez la minuterie sur 0 pour les bloquer complètement.
 
@@ -55,11 +55,11 @@ Nous vous déconseillons d'activer cette option car elle pourrait gravement inte
 
 :::
 
-### Block ETag and If-None-Match headers {#3p-cache}
+### Bloquer les en-têtes ETag et If-None-Match {#3p-cache}
 
 Lorsqu'un navigateur accède à une page, le serveur lui attribue un ETag. Cet ETag est utilisé par le navigateur pour mettre en cache le contenu de la page. Lors de requêtes ultérieures, le navigateur envoie l'ETag au serveur correspondant, permettant ainsi au serveur de connaître l'identité du visiteur. Tant que les fichiers du site sont mis en cache, l'ETag est envoyé à chaque fois que votre navigateur accède à ce site. Si le site intègre du contenu provenant d'un autre serveur (comme une image ou une iframe), ce serveur peut suivre vos activités à votre insu.
 
-### Blocage de l'en-tête Autorisation tiers {#3p-auth}
+### Bloquer l'en-tête Autorisation tiers {#3p-auth}
 
 La valeur de l'en-tête "Autorisation" est mise en cache par le navigateur et est ensuite envoyée avec chaque requête vers ce domaine. Cela signifie qu'il peut être utilisé à des fins de suivi, tout comme les cookies.
 
@@ -79,7 +79,7 @@ L'activation de cette option empêchera le navigateur d'envoyer des données GPS
 
 ### Bloquer Flash {#flash}
 
-The Flash Player plugin has become increasingly vulnerable to such online threats as viruses and hackers; it may also significantly increase website load times. L'activation de ce paramètre permet à AdGuard de bloquer la capacité des navigateurs à détecter les composants (tels que les plugins et les objets ActiveXObject) qui permettent à Flash d'afficher du contenu. Cela signifie que les navigateurs ne peuvent pas prendre en charge Flash.
+Le plugin Flash Player est devenu de plus en plus vulnérable aux menaces en ligne telles que les virus et les pirates informatiques ; il peut aussi augmenter l'intervalle de chargement des sites web de manière dramatique. L'activation de ce paramètre permet à AdGuard de bloquer la capacité des navigateurs à détecter les composants (tels que les plugins et les objets ActiveXObject) qui permettent à Flash d'afficher du contenu. Cela signifie que les navigateurs ne peuvent pas prendre en charge Flash.
 
 ### Bloquer Java {#java}
 
@@ -95,27 +95,27 @@ Vous pouvez également définir une valeur arbitraire pour le référent en la s
 
 Notez que pour pouvoir filtrer le trafic, les applications AdGuard "interceptent" les requêtes navigateur-serveur. Les requêtes adressées aux serveurs de publicité, de suivi et d'hameçonnage peuvent être modifiées avant d'être envoyées au serveur ou bloquées complètement. Idem pour l'option *Masquer le référent aux tiers* : AdGuard intercepte les requêtes HTTP(S), notamment pour supprimer ou modifier l'en-tête référent si cette option est activée. Toutefois, cela ne se produit qu'une fois que ces requêtes "quittent" le navigateur. Cela signifie que si vous surveillez le référent dans le navigateur (par exemple, avec l'aide des outils de développement de Chrome), vous verrez le référent d'origine car la requête n'a pas encore atteint AdGuard. Vous pouvez utiliser des logiciels tels que [Fiddler](https://www.telerik.com/fiddler) pour vous assurer que le référent est modifié correctement.
 
-On the other hand, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. Elle modifiera le référent à ce moment précis, de sorte que les outils de développeur afficheront le référent souhaité pour vos demandes.
+En revanche, l'Extension AdGuard fonctionne "à l'intérieur" du navigateur, comme le font toutes les extensions. Elle modifiera le référent à ce moment précis, de sorte que les outils de développeur afficheront le référent souhaité pour vos demandes.
 
-### Hide User-Agent {#useragent}
+### Masquer l'Agent utilisateur {#useragent}
 
 Lorsque vous visitez un site web, votre navigateur envoie ses informations au serveur. Il s’agit d’une ligne de texte qui fait partie d’une requête HTTP commençant par "User-Agent :". Il s’agit généralement du nom et de la version du navigateur, du système d’exploitation et des paramètres de langue. Nous empêchons l'agent-utilisateur d'identifier les informations pour que les annonceurs ne puissent pas les obtenir.
 
 Vous pouvez également définir une valeur arbitraire pour l'agent-utilisateur en la saisissant dans le champ Agent-utilisateur personnalisé . Pour utiliser l'agent-utilisateur par défaut, laissez le champ vide.
 
-### Mask IP address {#ip}
+### Masquer l'adresse IP {#ip}
 
 Le mode furtif ne peut pas masquer votre adresse IP. Cependant, nous pouvons le dissimuler pour faire de sorte que les sites web que vous visitez pensent que vous êtes un proxy. Parfois, cette méthode aide et les sites web ignorent votre véritable adresse IP.
 
 Vous pouvez définir une adresse IP arbitraire, que vous souhaiteriez que les autres perçoivent comme la vôtre, en la saisissant simplement dans le champ correspondant. Pour utiliser l'adresse IP par défaut, laissez le champ vide.
 
-### Remove X-Client-Data header {#xclientdata}
+### Retirer l'en-tête X-Client-Data {#xclientdata}
 
 Il interdit à Google Chrome d'envoyer ses informations de version et de modification avec les demandes adressées aux domaines de Google (y compris Double Click et Google Analytics).
 
-### Protect against DPI {#dpi}
+### Protection contre l’IAP {#dpi}
 
-L’inspection approfondie des paquets ou IPP est un système d’analyse et de filtrage approfondis du trafic par contenu des paquets, ainsi que l’accumulation de données statistiques. Grâce à cette technologie, les FAI ont la possibilité de contrôler le trafic passant et de limiter l'accès au contenu pour leurs clients.
+L’inspection approfondie des paquets ou IAP est un système d’analyse et de filtrage approfondis du trafic par contenu des paquets, ainsi que l’accumulation de données statistiques. Grâce à cette technologie, les FAI ont la possibilité de contrôler le trafic passant et de limiter l'accès au contenu pour leurs clients.
 
 AdGuard peut modifier les données des paquets sortants afin que le client ne relève pas des critères de blocage IPP. Cela signifie qu'en activant cette option, les utilisateurs peuvent accéder au contenu qu'ils souhaitent. Tous les systèmes IPP ne peuvent pas être contournés pour le moment, mais nous travaillons constamment à les améliorer.
 
@@ -123,6 +123,6 @@ La fonction "Protection anti IPP" est déjà implémentée dans AdGuard pour Win
 
 :::caution
 
-If this feature is enabled in AdGuard for Windows, it may interfere with ESET antivirus. Anti-DPI will prevent ESET from filtering traffic, leaving blacklisted and malicious websites unblocked.
+Si cette fonction est activée dans AdGuard pour Windows, elle peut interférer avec l'antivirus ESET. Le filtrage Anti-IAP empêchera ESET de filtrer le trafic, laissant les sites Web blacklistés et les sites malveillants débloqués.
 
 :::

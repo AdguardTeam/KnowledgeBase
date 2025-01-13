@@ -27,7 +27,7 @@ Originally, the AdGuard's syntax was based on the syntax of Adblock Plus rules. 
 
 Any line that starts with an exclamation mark is a comment. In the list of rules it is displayed in gray color. AdGuard will ignore this line, so you can write anything you want. Comments are usually placed above the rules and used to describe what a rule does.
 
-For example:
+Por exemplo:
 
 ```adblock
 ! This is the comment. Below this line, there is an actual filtering rule.
@@ -3886,7 +3886,7 @@ Specifies the maximum length for content of HTML element. If this parameter is s
 
 If this parameter is not specified, the `max-length` is considered to be 8192.
 
-For example:
+Por exemplo:
 
 ```adblock
 $$div[tag-content="banner"][max-length="400"]
@@ -3910,7 +3910,7 @@ This special attribute may become unsupported in the future. Prefer using the `:
 
 Specifies the minimum length for content of HTML element. If this parameter is set and the content length is less than preset value, a rule does not apply to the element.
 
-For example:
+Por exemplo:
 
 ```adblock
 $$div[tag-content="banner"][min-length="400"]

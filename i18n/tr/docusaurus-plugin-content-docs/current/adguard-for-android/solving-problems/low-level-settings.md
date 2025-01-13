@@ -181,7 +181,7 @@ If this setting is enabled, AdGuard will send a keepalive probe after the specif
 
 After a system-defined number of unsuccessful attempts to get a response from the server, the system automatically closes the TCP connection.
 
-### Local VPN settings
+### Yerel VPN ayarları
 
 #### Recovery delay for revoked VPN
 
@@ -193,7 +193,7 @@ Here you can set the time of a delay in milliseconds before AdGuard reschedules 
 
 #### MTU
 
-Here you can set the maximum transmission unit (MTU) of the VPN interface. The recommended range is 1500-1900 bytes.
+Here you can set the maximum transmission unit (MTU) of the VPN interface. Önerilen aralık 1500-1900 bayttır.
 
 #### Restore VPN automatically
 

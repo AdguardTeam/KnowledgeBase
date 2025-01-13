@@ -29,7 +29,7 @@ To add a filter, just click _Add custom filter_, enter the URL or the file path 
 
 ![Add a custom filter \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
-## User rules {#user-rules}
+## Kullanıcı kuralları {#user-rules}
 
 _User rules_ is another tool that helps you customize the blocking of ads.
 
