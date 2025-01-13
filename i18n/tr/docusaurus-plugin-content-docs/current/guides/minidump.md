@@ -31,7 +31,7 @@ Even if you don’t experience any BSoD crash errors, you can still set this opt
 
     ![System Properties *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
 
- 1. Go to the **Advanced** tab.
+ 1. **Gelişmiş** sekmesine gidin.
  1. In the **Startup and Recovery** section, click **Settings**.
 
     ![Startup and Recovery *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
@@ -45,9 +45,9 @@ Even if you don’t experience any BSoD crash errors, you can still set this opt
     ![Üç seçenek *mobile_border](https://cdn.adtidy.org/blog/new/nmr4eThree_options.png)
 
  1. Click **OK** to apply the settings.
- 1. Restart the computer.
+ 1. Bilgisayarı yeniden başlatın.
 
-You've successfully enabled the minidump file. Now it will be created automatically when the system crashes.
+Minidump dosyasını başarıyla etkinleştirdiniz. Now it will be created automatically when the system crashes.
 
 :::not
 
