@@ -4170,14 +4170,14 @@ HTML filtering rules are supported by AdGuard for Windows, AdGuard for Mac, AdGu
    combinator = ">"
          rule = [domains] "$$" selector *(combinator selector)
       domains = [domain0, domain1[, ...[, domainN]]]
-   attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = valueN "]"
+   attributes = "[" name0[ = value0] "]" "[" name1[ = value2] "]" ... "[" nameN[ = valueN] "]"
 pseudoClasses = pseudoClass *pseudoClass
   pseudoClass = ":" pseudoName [ "(" pseudoArgs ")" ]
 ```
 
 - **`tagName`** — name of the element in lower case, for example, `div` or `script`.
 - **`domains`** — domain restriction for the rule. Same principles as in [element hiding rule syntax](#cosmetic-elemhide-rules).
-- **`attributes`** — a list of attributes that limit the selection of elements. `name` — attribute name, `value` — substring, that is contained in attribute value.
+- **`attributes`** — a list of attributes that limit the selection of elements. `name` — attribute name, `value` — substring, that is contained in attribute value. `value` might not be specified.
 - **`pseudoName`** — the name of a pseudo-class.
 - **`pseudoArgs`** — the arguments of a function-style pseudo-class.
 - **`combinator`** — an operator that works similarly to the [CSS child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator): that is, the `selector` on the right of the `combinator` will only match an element whose direct parent matches the `selector` on the left of the `combinator`.
@@ -4197,6 +4197,20 @@ example.org$$script[data-src="banner"]
 ```
 
 This rule removes all `script` elements with the attribute `data-src` containing the substring `banner`. The rule applies only to `example.org` and all its subdomains.
+
+If the value of the attribute is omitted in the rule, then the element will be removed if it contains the specified attribute no matter what its value is.
+This is also the way to remove the elements those attributes don't have any value at all.
+
+```html
+<div some_attribute="some_value"></div>
+<div some_attribute></div>
+```
+
+```adblock
+example.org$$div[some_attribute]
+```
+
+This rule removes all `div` elements with the attribute `some_attribute` on `example.org` and all its subdomains. So, the both `div` elements from the example above will be removed.
 
 ### Special attributes
 
