@@ -555,3 +555,49 @@ Android stock OS normally does not conflict with apps working in the background,
 - Set up **Always-on VPN** mode
 
     ![Stockadguard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)
+
+## Realme
+
+On devices running Realme UI 4.0, there are three key configurations to ensure AdGuard functions properly in the background.
+
+1. Set up the AdGuard app:
+
+- Long press the AdGuard icon
+- From the menu that appears, select **App info**
+
+![App info *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/1appinfo.jpg)
+
+- Go to **Battery usage** and enable all options:
+      - Allow background activity
+      - Allow foreground activity
+      - Allow auto aunch
+
+![Allow background info *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/2allowbackgroundactivity.jpg)
+
+- In the **App info** section, scroll down and turn off the option **Pause app activity if unused**
+
+1. Set up the battery:
+
+- Go to **Settings → Battery → More settings → Optimize battery use**
+
+![Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/3settings.jpg)
+
+![More settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/4moresettings.jpg)
+
+- Find **AdGuard** in the list and enable **Don't optimize**
+
+![Don't optimize *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/5donotoptimize.jpg)
+
+- In **Other settings**, check the **App Quick Freeze** section and disable it for **AdGuard**
+
+1. Enable *Always-On VPN* for AdGuard:
+
+- Go to **Settings → Connection & sharing → VPN**
+
+![Connection & sharing *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/6connectionsharing.jpg)
+
+![VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/7connectionvpn.jpg)
+
+- Find **AdGuard** and enable the **Always-on VPN** option
+
+![Always-on VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/8alwaysonvpn.jpg)
