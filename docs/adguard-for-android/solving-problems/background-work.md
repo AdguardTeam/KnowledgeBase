@@ -578,7 +578,7 @@ On devices running Realme UI 4.0, there are three key configurations to ensure t
     - Find AdGuard in the list and enable **Don't optimize**
     - In **Other settings**, check the **App Quick Freeze** section and disable it for AdGuard
 
-    ![Always-on VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realm345.png)
+    ![Always-on VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
 
 1. Enable *Always-On VPN* for AdGuard:
 
