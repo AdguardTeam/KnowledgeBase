@@ -1,34 +1,34 @@
 ---
-title: Features
+title: Fonctionnalités
 sidebar_position: 1
 ---
 
 ## Général
 
-The article highlights basic features, including notifications, update intervals, and logging level.
+L'article met en évidence des fonctionnalités de base, y compris les notifications, les intervalles de mise à jour et le niveau de journalisation.
 
-[General](adguard-for-safari/features/general.md)
+[Fonctionnalités générales](/adguard-for-safari/features/general.md)
 
 ## Filtres
 
-This article explains how AdGuard for Safari allows you to customize ad blocking by enabling different filters, such as language-specific filters, anti-malware filters, and user rules.
+Cet article explique comment AdGuard pour Safari vous permet de personnaliser le blocage des publicités en activant des filtres différents comme les filtres spécifiques à la langue, les filtres anti-malware et les règles utilisateur.
 
-[Filters](/adguard-for-safari/features/filters.md)
+[Filtres](/adguard-for-safari/features/filters.md)
 
-## Content Blockers
+## Bloqueurs de contenu
 
-This section explains why AdGuard for Safari consists of six content blockers and how they work.
+Cette section explique pourquoi AdGuard pour Safari se compose de six bloqueurs de contenu et comment ils fonctionnent.
 
-[Content Blockers](/adguard-for-safari/features/content-blockers/content-blockers.md)
+[Bloqueur de contenu AdGuard](/adguard-for-safari/features/content-blockers/content-blockers.md)
 
 ## Règles utilisateur
 
-The article is dedicated to how you can use AdGuard for Safari to create and manage custom filtering rules to personalize your ad blocking experience.
+L'article est consacré à la façon dont vous pouvez utiliser AdGuard pour Safari pour créer et gérer des règles de filtrage personnalisées afin de personnaliser votre expérience de blocage de publicité.
 
-[User rules](/adguard-for-safari/features/rules.md)
+[Règles utilisateur](/adguard-for-safari/features/rules.md)
 
 ## À propos
 
-Here you’ll find useful links to privacy documents, GitHub repository, and version history.
+Ici, vous trouverez des liens utiles vers des fichiers de confidentialité, le dépôt GitHub et l'historique des versions.
 
-[About](/adguard-for-safari/features/about.md)
+[À propos](/adguard-for-safari/features/about.md)

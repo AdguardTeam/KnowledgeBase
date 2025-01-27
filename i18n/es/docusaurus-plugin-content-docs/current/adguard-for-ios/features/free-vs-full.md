@@ -11,22 +11,22 @@ Este artículo trata sobre AdGuard para iOS, un bloqueador de anuncios multifunc
 
 :::note
 
-Both AdGuard for iOS with enabled Premium and AdGuard Pro block ads on Apple smartphones and tablets. They used to differ in functionality due to certain changes made to App Store review policies in the past, but now AdGuard with a purchased subscription and AdGuard Pro are identical in their functionality.
+Tanto AdGuard para iOS con Premium habilitado como AdGuard Pro bloquean anuncios en smartphones y tabletas de Apple. Solían diferir en funcionalidad debido a ciertos cambios realizados en las políticas de revisión de la App Store en el pasado, pero ahora AdGuard con una suscripción adquirida y AdGuard Pro son idénticos en su funcionalidad.
 
 :::
 
-Premium AdGuard for iOS features several differences from the free version, including custom DNS settings. With these settings, you can block ads not only in Safari but in other apps too, protect your kids from adult content online, and keep your personal information safe from theft. There are other differences, too. Let’s explore them all in more detail.
+AdGuard Premium para iOS presenta varias diferencias con respecto a la versión gratuita, incluida la configuración DNS personalizada. Con estas configuraciones, puedes bloquear anuncios no solo en Safari sino también en otras aplicaciones, proteger a tus hijos del contenido para adultos en línea y mantener tu información personal a salvo del robo. También hay otras diferencias. Vamos a explorarlos todos con más detalle.
 
-1. The **DNS protection** module encrypts your DNS traffic to enhance privacy. It works across all apps and browsers, not just Safari, offering broad protection against ads and trackers.
+1. El módulo **Protección DNS** encripta tu tráfico DNS para mejorar la privacidad. Funciona en todas las aplicaciones y navegadores, no sólo en Safari, y ofrece una amplia protección contra anuncios y rastreadores.
 
-   - **Custom DNS servers:** Choose from one of the popular DNS servers from our list or add your own custom server.
+   - **Servidores DNS personalizados:** Elige uno de los servidores DNS populares de nuestra lista o agregua tu propio servidor personalizado.
 
-   - **Family Protection:** The Internet isn’t always kid-friendly. With AdGuard Premium, you can switch to DNS providers that block adult content and other inappropriate material to keep your children safe online.
+   - **Protección familiar:** Internet no siempre es adecuado para los niños. Con AdGuard Premium, puedes cambiar a proveedores de DNS que bloquean contenido para adultos y otro material inapropiado para mantener a tus hijos seguros en línea.
 
-   - **Monitoring and flexible configuration:** Recent activity log allows you to view all DNS requests sent by your device and easily manage your traffic by adding websites to blocklist or allowlist with just a tap.
+   - **Monitoreo y configuración flexible:** El registro de actividad reciente te permite ver todas las solicitudes de DNS enviadas por tu dispositivo y administrar fácilmente tu tráfico agregando sitios web a la lista de bloqueo o lista de autorización con solo un toque.
 
-2. **Advanced protection** lets you use advanced filtering rules to block more complex ads that would be left unblocked otherwise.
+2. **La protección avanzada** te permite utilizar reglas de filtrado avanzadas para bloquear anuncios más complejos que de otro modo quedarían desbloqueados.
 
-3. **More filter options:** When purchasing AdGuard Premium, you get access to custom filters and a security filter category, where you can choose from over 50 filters, including AdGuard’s and other popular lists.
+3. **Más opciones de filtro:** Al comprar AdGuard Premium, obtienes acceso a filtros personalizados y una categoría de filtros de seguridad, donde puedes elegir entre más de 50 filtros, incluidos los de AdGuard y otras listas populares.
 
-Access these features by [purchasing a license](https://adguard.com/license.html).
+Acceda a estas funciones [comprando una licencia](https://adguard.com/license.html).

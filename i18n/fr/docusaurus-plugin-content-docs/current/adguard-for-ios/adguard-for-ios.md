@@ -3,32 +3,32 @@ title: AdGuard pour iOS
 sidebar_position: 1
 ---
 
-## Features
+## Fonctionnalités
 
-Here are outlined the main features and settings available in AdGuard for iOS.
+Voici les principales fonctionnalités et paramètres disponibles dans AdGuard pour iOS.
 
-[Features](/adguard-for-ios/features/features.md)
+[Disponibilité](/adguard-for-ios/features/features.md)
 
 ## Installation
 
-Here, you’ll find the system requirements along with instructions on how to install and uninstall AdGuard for iOS.
+Vous trouverez ici la configuration requise ainsi que des instructions sur l'installation et la désinstallation d'AdGuard pour iOS.
 
 [Installation](/adguard-for-ios/installation.md)
 
 ## Extension web Safari
 
-AdGuard for iOS includes a web extension that integrates with Safari to provide efficient ad blocking, privacy protection, and customizable filters directly within the browser.
+AdGuard pour iOS inclut une extension web qui s'intègre à Safari pour fournir un blocage efficace des publicités, une protection de la confidentialité et des filtres personnalisables directement dans le navigateur.
 
-[Safari Web extension](/adguard-for-ios/web-extension.md)
+[Extension web Safari](/adguard-for-ios/web-extension.md)
 
 ## Résoudre les problèmes
 
-This section includes various articles addressing known issues and possible solutions.
+Cette section comprend divers articles traitant des problèmes connus et des solutions possibles.
 
-[Solving problems](/adguard-for-ios/solving-problems/solving-problems.md)
+[Résolution des problèmes](/adguard-for-ios/solving-problems/solving-problems.md)
 
 ## AdGuard et AdGuard Pro
 
-Here we explain why there are two AdGuard apps in the App Store and what the difference is between them.
+Ici, nous expliquons pourquoi il y a deux applications AdGuard dans l'App Store et quelle est la différence entre elles.
 
-[AdGuard and AdGuard Pro](/adguard-for-ios/adguard-and-adguard-pro.md)
+[AdGuard et AdGuard Pro](/adguard-for-ios/adguard-and-adguard-pro.md)

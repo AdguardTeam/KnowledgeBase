@@ -9,32 +9,32 @@ sidebar_position: 1
 
 :::
 
-## Features
+## 功能
 
-Here are outlined the main features and settings available in AdGuard for Windows.
+以下是 Windows 版 AdGuard 提供的主要功能和设置。
 
-[Features](/adguard-for-windows/features/features.md)
+[功能](/adguard-for-windows/features/features.md)
 
 ## 安装
 
-Here, you’ll find the system requirements along with instructions on how to install and uninstall AdGuard for Windows.
+点击以下链接，查看系统要求以及如何安装和卸载 Windows 版 AdGuard。
 
-[Installation](/adguard-for-windows/installation.md)
+[安装](/adguard-for-windows/installation.md)
 
 ## 浏览器助手
 
-This article covers a browser extension that complements the desktop program, its installation, and its benefits.
+本文介绍一款浏览器扩展，这是桌面程序的补充。了解浏览器扩展的安装方式和其他优势。
 
-[Browser Assistant](/adguard-for-windows/browser-assistant.md)
+[AdGuard 助手](/adguard-for-windows/browser-assistant.md)
 
 ## 解决问题
 
-This section includes various articles addressing known issues and possible solutions.
+此部分包括已知问题和可能解决方案的文章。
 
-[Solving problems](/adguard-for-windows/solving-problems/solving-problems.md)
+[解决问题](/adguard-for-windows/solving-problems/solving-problems.md)
 
 ## 管理员文档
 
-This page provides details about AdGuard’s central management of policies and preferences.
+本页提供有关 AdGuard 集中管理政策和首选项的详细信息。
 
-[Documentation for admins](/adguard-for-windows/admins-documentation.md)
+[管理员文档](/adguard-for-windows/admins-documentation.md)

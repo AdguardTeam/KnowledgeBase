@@ -9,25 +9,25 @@ sidebar_position: 4
 
 :::
 
-The _Network_ module is dedicated to network filtering, and here you will find additional network-related options. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS_. These are important extra precautions to better filter your web space. 当前大部分网站使用 HTTPS，广告亦是如此。 From many websites, like youtube.com, facebook.com, and x.com, it is impossible to remove ads without HTTPS filtering. So keep the _Filter HTTPS_ feature enabled unless you have a strong reason not to.
+「_网络_」模块专用于网络过滤，用户可以找到其他与网络相关的选项。 其中两项默认启动：「开启流量过滤」和「过滤 HTTPS」。 这都是重要的额外预防措施，可以更好地过滤网络空间。 当前大部分网站使用 HTTPS，广告亦是如此。 在许多网站上，例如 youtube.com、facebook.com 和 x.com，如果没有 HTTPS 过滤就无法删除广告。 因此除非用户有充分的理由不开启它，否则请保持开启「过滤 HTTPS」功能。
 
-![Network Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
+![网络设置 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 
-In this module you can select the checkbox _Use AdGuard as an HTTP proxy_ to use AdGuard as a regular HTTP proxy which will filter all traffic passing through it. You can also enable the _Filter websites with EV certificates_ feature. Extended Validation (EV) SSL Certificates offer a stronger safety guarantee; owners of such websites have to pass a thorough and globally standardized identity verification process defined by EV guidelines. Which is the reason why some users trust websites with such certificates and prefer not to filter them.
+用户也可选中此模块内的复选框「AdGuard 用作 HTTP 代理」以将 AdGuard 用作常规的 HTTP 代理过滤经由它的所有流量。 用户还可以开启「用 EV 证书过滤网站」功能。 扩展验证（EV）SSL 证书提供更强大的安全保障；此类网站的所有者必须通过 EV 指南定义的彻底的全球标准化身份验证过程。 这就是一些用户信任具有此类证书的网站并且不愿过滤它们的原因。
 
-At last, there is a section with proxy settings. There you can specify which proxy server AdGuard should use to update filters, get new versions, and so on.
+最后是代理设置部分。 用户可以在此处指定 AdGuard 更新过滤器，获取新版本等所用的代理服务器。
 
 ### AdGuard VPN
 
-The last section is dedicated to AdGuard VPN — an ideal tool that provides security and anonymity each time you browse the Internet. You can download it by clicking the _Download_ button or go to the AdGuard VPN website by clicking the _Homepage_ button.
+最后一部分专门介绍 AdGuard VPN。这是一个理想的工具，用户在每次上网时都能享受安全性和匿名性。 点击「_下载_」按钮进行下载，或者点击「_主页_」按钮访问 AdGuard VPN 网站。
 
-How does AdGuard VPN work? Without going into technical details, we can say that VPN creates a secure encrypted tunnel between the user's computer or mobile device and a remote VPN server. In this way, data privacy is preserved, as well as the anonymity of the user, because a third-party observer sees the IP address of the VPN server and not the actual user's IP.
+AdGuard VPN 工作原理是什么？ 在不讨论技术细节的情况下，可以说 VPN 在用户的计算机或移动设备与远程 VPN 服务器之间创建一个安全的加密隧道。 通过这种方式，数据隐私得以保护，同时用户的匿名性也得以维持，因为第三方观察者只能看到 VPN 服务器的 IP 地址，而非用户的真实 IP 地址。
 
-**What AdGuard VPN does:**
+**AdGuard VPN 能做什么：**
 
-- hides your real whereabouts and helps you stay anonymous
-- changes your IP address to protect your data from tracking
-- encrypts your traffic to make it unreadable to third parties
-- lets you configure where to use VPN and where not to (exclusions feature)
+- 隐藏用户的真实位置帮助保持匿名性
+- 更改用户的 IP 地址避免他人跟踪个人数据
+- 加密用户的流量防止第三方访问个人数据
+- 让用户自己配置在哪里启用或禁用 VPN（排除项功能）
 
-To get more information about AdGuard VPN, dive into the [AdGuard VPN Knowledge Base](https://adguard-vpn.com/kb/).
+要了解更多关于 AdGuard VPN 的信息，请转到 [AdGuard VPN 知识库](https://adguard-vpn.com/kb/)。

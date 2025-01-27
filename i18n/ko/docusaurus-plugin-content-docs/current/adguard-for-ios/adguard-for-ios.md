@@ -21,9 +21,9 @@ AdGuard for iOS includes a web extension that integrates with Safari to provide 
 
 [Safari Web extension](/adguard-for-ios/web-extension.md)
 
-## Solving problems
+## 문제 해결
 
-This section includes various articles addressing known issues and possible solutions.
+이 섹션에는 알려진 문제와 가능한 해결책을 다루는 다양한 글이 포함되어 있습니다.
 
 [Solving problems](/adguard-for-ios/solving-problems/solving-problems.md)
 

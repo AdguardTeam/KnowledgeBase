@@ -51,4 +51,4 @@ So, what are proofreaders responsible for?
 
 - Respond to comments related to translations in their language.
 
-Her yıl, en iyi düzeltmenler AdGuard'dan hediyeler alır. Active translators do not go unrewarded either. Read more about our [reward system](../rewards).
+Her yıl, en iyi düzeltmenler AdGuard'dan hediyeler alır. Aktif çevirmenler de ödülsüz kalmıyor. Read more about our [reward system](../rewards).

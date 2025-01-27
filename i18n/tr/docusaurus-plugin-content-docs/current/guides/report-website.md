@@ -109,7 +109,7 @@ When you send a complaint via the app or via AdGuard Assistant, all information 
 
     ![forma6 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma6en.png)
 
-7. Check each step before sending the form;
+7. Formu göndermeden önce her adımı kontrol edin;
 
     ![forma7 *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma7en.png)
 

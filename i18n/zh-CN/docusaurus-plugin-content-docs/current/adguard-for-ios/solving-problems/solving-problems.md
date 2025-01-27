@@ -9,7 +9,7 @@ sidebar_position: 1
 
 :::
 
-Here are some problems you may encounter and workarounds, guides, and instructions you may need.
+以下是用户会遇到的一些问题以及可能需要的解决方法、指南和指示说明。
 
 - [How to activate premium features](/adguard-for-ios/solving-problems/premium-activation.md)
 - [How to enable system-wide filtering in AdGuard for iOS](/adguard-for-ios/solving-problems/system-wide-filtering.md)

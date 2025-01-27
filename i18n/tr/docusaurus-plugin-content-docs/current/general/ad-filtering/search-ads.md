@@ -43,6 +43,6 @@ When you enable 'Search ads and self-promotion', search ads from the following s
 
 As well as all self-promotional ads that satisfy our filter policy.
 
-### Summary
+### Özet
 
 Allowing 'Search ads and self-promotion' is a 100% optional feature that may be helpful in some cases. If you don't like it, you can turn it off at any time. It does not, and never will, include any ad types or individual ads that do not fall into one of the two categories described above.

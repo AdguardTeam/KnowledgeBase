@@ -23,13 +23,13 @@ You can customize the program to suit your needs by blocking only what bothers y
 
 ## 확장 프로그램
 
-Here you’ll how to use AdGuard as a userscript manager to extend the functionality of websites. You can add your own scripts as well as manage existing ones.
+여기에서는 웹사이트의 기능을 확장하는 유저스크립트 관리자로 AdGuard를 사용하는 방법을 설명합니다. 나만의 스크립트를 추가하고 기존 스크립트를 관리할 수 있습니다.
 
 [Extensions](/adguard-for-windows/features/extensions/)
 
 ## 네트워크
 
-This article describes additional network-related options and proxy settings where you can specify which proxy server AdGuard should use to update filters, download new versions, and so on.
+이 문서에서는 필터를 업데이트하고 새 버전을 다운로드하는 데 사용할 프록시 서버를 지정할 수 있는 추가 네트워크 관련 설정 및 프록시 설정에 대해 설명합니다.
 
 [Network](/adguard-for-windows/features/network/)
 
