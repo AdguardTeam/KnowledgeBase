@@ -100,7 +100,7 @@ Pay close attention to a vertical bar sign between the sentences and **%count%**
 
 Now, let’s imagine — you are faced with such a string: `Standard license for %count% computer | Standard license for %count% computers`.
 
-What should you know to translate it correctly?
+Bunu doğru bir şekilde çevirmek için ne bilmelisiniz?
 
 Let's call the sentences which are divided by a vertical bar sign **"templates"**, because actually they serve as templates for phrases with different numbers.
 

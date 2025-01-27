@@ -1,9 +1,9 @@
 ---
-title: Stealth Mode (Tracking protection)
+title: Gizlilik Modu (İzleme koruması)
 sidebar_position: 4
 ---
 
-Birçok site ziyaretçileri hakkında IP adresi, yüklü tarayıcı ve işletim sistemi, ekran çözünürlüğü ve hatta bir ziyaretçinin yönlendirildiği sayfa gibi bilgileri toplar. Some web pages use cookies to mark your browser and save your personal settings and preferences, or to "recognize" you upon your next visit. *Stealth Mode* (or *Tracking protection* in AdGuard for Windows and AdGuard Browser Extension) safeguards your personal information from such data- and statistics-gathering systems.
+Birçok site ziyaretçileri hakkında IP adresi, yüklü tarayıcı ve işletim sistemi, ekran çözünürlüğü ve hatta bir ziyaretçinin yönlendirildiği sayfa gibi bilgileri toplar. Some web pages use cookies to mark your browser and save your personal settings and preferences, or to "recognize" you upon your next visit. *Gizlilik Modu* (veya Windows için AdGuard ve AdGuard Tarayıcı Uzantısındaki *İzleme koruması*) kişisel bilgilerinizi bu tür veri ve istatistik toplama sistemlerinden korur.
 
 You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website from receiving the search request you used to find it on the Internet, automatically delete both third-party and the website's own cookies, turn off browser geolocation sharing that can be used to track your whereabouts, and hide your true IP address or even replace it with an arbitrary one.
 
@@ -89,9 +89,9 @@ Some websites and web services still use the old technology to support Java plug
 
 ### Hide Referer from third parties {#referer}
 
-Referer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referer saves the URL of the initial page. The server that hosts the destination web page often has software that parses Referer and extracts various pieces of information from it. Enabling the *Hide Referer from third-parties* option hides the current website from third-party sites by altering the HTTP header.
+Referer is an HTTP header used in browser-to-server requests. İstek kaynağının URL'sini içerir. When you navigate from one page to another, Referer saves the URL of the initial page. The server that hosts the destination web page often has software that parses Referer and extracts various pieces of information from it. Enabling the *Hide Referer from third-parties* option hides the current website from third-party sites by altering the HTTP header.
 
-You can also set an arbitrary value for Referer by entering it into the *Custom Referer* field. To use default Referer, leave the field blank.
+You can also set an arbitrary value for Referer by entering it into the *Custom Referer* field. Varsayılan Referer'i kullanmak için alanı boş bırakın.
 
 Note that to be able to filter traffic, AdGuard applications 'intercept' browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely. Same goes for the *Hide Referer from third parties* option: AdGuard intercepts HTTP(S) requests, in particular to remove or change the Referer header if this option is enabled. However, it happens only after these requests “leave” the browser. This means that if you monitor Referer inside the browser (for example, with the help of Chrome's Developer Tools), you will see the original Referer because the request hasn't reached AdGuard yet. You can use software like [Fiddler](https://www.telerik.com/fiddler) to make sure that Referer gets altered correctly.
 
@@ -101,7 +101,7 @@ On the other hand, due to the nature of all browser extensions, AdGuard Browser 
 
 When you visit a website, your browser sends its information to the server. It looks like a text line that is part of an HTTP request that begins with "User-Agent:". It usually includes the name and version of the browser, the operating system, and language settings. We cut User-Agent from identifying information so that advertisers cannot obtain it.
 
-You can also set an arbitrary value for User-Agent by entering it into the Custom User-Agent field. To use default User-Agent, leave the field blank.
+You can also set an arbitrary value for User-Agent by entering it into the Custom User-Agent field. Varsayılan Kullanıcı Aracısını kullanmak için alanı boş bırakın.
 
 ### Mask IP address {#ip}
 
@@ -113,7 +113,7 @@ You can set an arbitrary IP address, which you would like others to perceive as 
 
 It forbids Google Chrome from sending its version and modification information with requests to Google domains (including Double Click and Google Analytics).
 
-### Protect against DPI {#dpi}
+### DPİ'ye karşı koruma {#dpi}
 
 The Deep Packet Inspection is a system of deep analysis and filtering of traffic by packet content, as well as the accumulation of statistical data. Using this technology, ISPs have the ability to control the passing traffic and limit access to content for their clients.
 

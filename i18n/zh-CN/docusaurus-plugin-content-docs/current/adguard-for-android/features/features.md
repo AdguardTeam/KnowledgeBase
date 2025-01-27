@@ -1,5 +1,5 @@
 ---
-title: Features
+title: 功能
 sidebar_position: 1
 ---
 
@@ -11,48 +11,48 @@ sidebar_position: 1
 
 ## 防护
 
-Info on modules in the Protection tab: Ad blocking, Tracking protection, Annoyance blocking, DNS protection, Firewall, and Browsing security.
+「保护」部分中的模块信息，包括广告拦截、跟踪保护、恼人元素拦截、DNS 保护、防火墙和浏览安全。
 
-[Protection](/adguard-for-android/features/protection/protection.md)
+[保护](/adguard-for-android/features/protection/protection.md)
 
 ## 应用管理
 
-AdGuard for Android offers app management features that allow you to control how AdGuard filters traffic for individual apps, providing options to block ads and trackers or disable protection for selected apps altogether.
+本文介绍 Android 版 AdGuard 用于管理应用程序的功能。软件允许用户为每个应用程序单独配置流量过滤和路由。
 
-[App management](/adguard-for-android/features/app-management.md)
+[应用管理](/adguard-for-android/features/app-management.md)
 
 ## 统计
 
-Detailed statistics on blocked ads, trackers, and saved traffic that allows us to monitor the app’s performance and protection efficiency over time.
+有关拦截的广告、跟踪器和节省流量的详细统计数据，使我们能够随时监控应用程序的性能和保护效率。
 
-[Statistics](/adguard-for-android/features/statistics.md)
+[统计数字](/adguard-for-android/features/statistics.md)
 
 ## 设置
 
-Information about customizing settings so you can adjust ad blocking, privacy, and DNS settings to suit your needs.
+关于自定义设置的信息，以便用户可以调整广告拦截、隐私和 DNS 设置以满足自己的需求。
 
-[Settings](/adguard-for-android/features/settings.md)
+[设置](/adguard-for-android/features/settings.md)
 
 ## 助手
 
-Information about a tool that lets you quickly change app or website settings and view statistics without opening the AdGuard interface.
+有关可让用户快速更改应用程序或网站设置并查看统计信息而无需打开 AdGuard 界面的工具的信息。
 
-[Assistant](/adguard-for-android/features/assistant.md)
+[AdGuard 助手](/adguard-for-android/features/assistant.md)
 
 ## 免费版和完整版
 
-Comparison of features between the free and paid versions.
+免费版本与付费版本的特性比较。
 
-[Free vs. full version](/adguard-for-android/features/free-vs-full.mdx)
+[免费与完整版](/adguard-for-android/features/free-vs-full.mdx)
 
 ## 与 AdGuard VPN 整合
 
-Information on how the app integrates with VPN services, allowing you to run both AdGuard and AdGuard VPN at the same time without conflict, ensuring ad blocking and privacy protection along with VPN functionality.
+有关应用程序与 VPN 服务集成的信息，允许用户同时运行 AdGuard 和 AdGuard VPN 而不会发生冲突，保证广告拦截和隐私保护以及 VPN 正常运行。
 
-[Integration with AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
+[与 AdGuard VPN 的集成](/adguard-for-android/features/integration-with-vpn.md)
 
 ## 有 Root 权限的设备
 
-AdGuard for Android on rooted devices offers advanced features like HTTPS filtering without a certificate installation, automatic ad blocking in apps, and deeper system-wide protection.
+Android 版 AdGuard 在 Root 设备上提供高级功能，如无需安装证书的 HTTPS 过滤、应用程序中的自动广告拦截和更深入的全系统保护。
 
-[Rooted devices](/adguard-for-android/features/rooted.md)
+[Root 设备](/adguard-for-android/features/rooted.md)

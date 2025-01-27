@@ -1,34 +1,34 @@
 ---
-title: Features
+title: Funciones
 sidebar_position: 1
 ---
 
 ## General
 
-The article highlights basic features, including notifications, update intervals, and logging level.
+El artículo destaca funciones básicas, incluidas notificaciones, intervalos de actualización y nivel de registro.
 
 [General](adguard-for-safari/features/general.md)
 
 ## Filtros
 
-This article explains how AdGuard for Safari allows you to customize ad blocking by enabling different filters, such as language-specific filters, anti-malware filters, and user rules.
+Este artículo explica cómo AdGuard para Safari te permite personalizar el bloqueo de anuncios habilitando diferentes filtros, como filtros específicos por idioma, filtros contra malware y Reglas de usuario.
 
-[Filters](/adguard-for-safari/features/filters.md)
+[Filtros](/adguard-for-safari/features/filters.md)
 
-## Content Blockers
+## Bloqueadores de contenido
 
-This section explains why AdGuard for Safari consists of six content blockers and how they work.
+Esta sección explica por qué AdGuard para Safari consiste en seis bloqueadores de contenido y cómo funcionan.
 
-[Content Blockers](/adguard-for-safari/features/content-blockers/content-blockers.md)
+[Bloqueador de contenido AdGuard](/adguard-for-safari/features/content-blockers/content-blockers.md)
 
 ## Reglas de usuario
 
-The article is dedicated to how you can use AdGuard for Safari to create and manage custom filtering rules to personalize your ad blocking experience.
+El artículo está dedicado a cómo puedes usar AdGuard para Safari para crear y administrar reglas de filtrado para personalizar tu experiencia de bloqueo de anuncios.
 
-[User rules](/adguard-for-safari/features/rules.md)
+[Reglas del usuario](/adguard-for-safari/features/rules.md)
 
 ## Acerca de
 
-Here you’ll find useful links to privacy documents, GitHub repository, and version history.
+Aquí encontrarás enlaces útiles a documentos sobre privacidad, el repositorio de GitHub y el historial de versiones.
 
-[About](/adguard-for-safari/features/about.md)
+[Acerca de](/adguard-for-safari/features/about.md)

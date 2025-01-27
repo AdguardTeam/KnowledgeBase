@@ -11,26 +11,40 @@ Recomendamos configurar la autenticación de dos factores para tu cuenta AdGuard
 
 ## Cómo configurarlo
 
-1. Inicia sesión en tu cuenta [AdGuard](https://auth.adguard.com/login.html) y ve a la pestaña Configuración:
+1. Inicia sesión en tu [cuenta AdGuard](https://auth.adguard.com/login.html) y ve a la pestaña *Configuración*:
 
-![Configuración de la cuenta de AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
+ ![Configuración de la cuenta de AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Desplázate hacia abajo hasta *Contraseña y 2FA* y haz clic en **Habilitar**:
+1. Desplázate hacia abajo hasta *Autenticación de dos factores* y habilítalo:
 
-![El botón Cambiar *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
+ ![Alternar la autenticación de dos factores *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. Sigue las instrucciones que aparecen en la pantalla para instalar una aplicación de autenticación y escanear el código QR:
+1. Se enviará un código a la dirección de correo electrónico asociada con tu cuenta de AdGuard. Para habilitar la 2FA, ingresa el código y haz clic en *Habilitar*.
 
-![El código de verificación](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
+ ![El código de verificación *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-***Importante***
+Después de habilitar la autenticación de dos factores, tienes dos opciones para elegir:
 
-- Guarda el código de seguridad de segundo factor en algún lugar, será necesario para recuperar tu cuenta en caso de pérdida o robo de tu teléfono móvil;
+- *Código de un solo uso para correo electrónico*: cuando inicies sesión, te pediremos que introduzcas el código que te enviamos a tu correo electrónico
 
-Si todo se ha hecho correctamente, lo verás la próxima vez que acceda a tu cuenta:
+- *Código de la app de autenticator*: cuando inicies sesión, te pediremos un código de tu app de autenticator
 
-![El resultado *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+![Opciones de 2FA *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 
-Utiliza tu aplicación de autenticación móvil para leer el código e ingresarlo. Ya debes haber iniciado sesión.
+:::note
 
-***NOTA***: Si recibes un error de autenticación, verifica el reloj de tu teléfono. Ajústalo si es necesario, ya que un reloj no sincronizado puede ser la causa del error.
+Si usas la app de autenticador, asegúrate de guardar la **clave de configuración** en algún lugar. Será necesario para recuperar tu cuenta en caso de que tu móvil se pierda o sea robado.
+
+![La clave de configuración en la app de autenticación *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
+
+:::
+
+Si todo se ha hecho correctamente, lo verás la próxima vez que accedas a tu cuenta:
+
+![El resultado *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
+
+:::note
+
+Si recibes un error de autenticación, verifica el reloj de tu teléfono. Ajústalo si es necesario, ya que un reloj no sincronizado puede ser la causa del error.
+
+:::

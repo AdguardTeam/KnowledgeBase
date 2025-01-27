@@ -31,7 +31,7 @@ Und selbst wenn eine Regel schließlich zu einem Filter hinzugefügt wird, bedeu
 
 Sie [haben Zugang zu einem speziellen Web Reporting Tool](https://reports.adguard.com/new_issue.html). Dank Benutzerbeschwerden können sich Filterentwickler auf die Korrektur ihrer Filterlisten konzentrieren und nicht darauf, das Internet nach neuen und alten nicht blockierten Anzeigen zu durchsuchen.
 
-Filter können mehr, als nur Werbung zu blockieren. There are filters that block tracking, social media widgets, and annoyances, such as cookie notices. Verschiedene Benutzer können unterschiedliche Kombinationen von Filtern wählen, um ihren persönlichen Vorlieben zu entsprechen. Es gibt Websites wie [filterlists.com](https://filterlists.com/), die sich auf Filterlisten spezialisiert haben und über große Datenbanken verfügen.
+Filter können mehr, als nur Werbung zu blockieren. Es gibt Filter, die Tracking, Widgets für soziale Medien und lästige Cookies-Hinweise sperren. Verschiedene Benutzer können unterschiedliche Kombinationen von Filtern wählen, um ihren persönlichen Vorlieben zu entsprechen. Es gibt Websites wie [filterlists.com](https://filterlists.com/), die sich auf Filterlisten spezialisiert haben und über große Datenbanken verfügen.
 
 Wir entwickeln und pflegen [unsere eigenen Filterlisten](../adguard-filters), die mit AdGuard oder anderen Werbeblockern verwendet werden können.
 
@@ -63,31 +63,31 @@ Es gibt noch andere Arten von Filterregeln, die jedoch mehr technisches Wissen e
 
 :::
 
-## Types of request handling in AdGuard
+## Arten der Anfragenbearbeitung in AdGuard
 
-AdGuard handles requests according to filters, user rules and settings enabled by the user. As a result, a request can be blocked, modified, allowed or, when nothing is done to it, just processed.
+AdGuard bearbeitet Anfragen gemäß den aktivierten Filtern, Benutzerregeln und Einstellungen. Als Ergebnis kann eine Anfrage blockiert, geändert, zugelassen oder, wenn nichts damit geschieht, einfach nur verarbeitet werden.
 
-Detailed information on how each request of yours has been handled by AdGuard can be found in the *Filtering log* (AdGuard for Windows, AdGuard for Mac, AdGuard Browser Extension) or *Recent activity* (AdGuard for iOS, AdGuard for Android).
+Detaillierte Informationen darüber, wie jede Ihrer Anfragen von AdGuard behandelt wurde, finden Sie im *Filter-Protokoll* (AdGuard für Windows, AdGuard für Mac, AdGuard Browsererweiterung) oder *Letzte Aktivität* (AdGuard für iOS, AdGuard für Android).
 
-Regarding AdGuard filters, you can also check [our filter policy](../filter-policy), which describes in detail what and why each of our filters blocks.
+Bezüglich der AdGuard-Filter können Sie auch [unsere Filterrichtlinie](../filter-policy)lesen, in der detailliert beschrieben wird, was jeder unserer Filter blockiert und warum.
 
-### Examples of blocked requests
+### Beispiele für blockierte Anfragen
 
-AdGuard DNS filter blocks requests to ad domains, such as `ad.doubleclick.net`.
+Der DNS-Filter von AdGuard sperrt Anfragen an Werbedomains, wie z.B. `ad.doubleclick.net`.
 
-AdGuard Tracking Protection filter blocks tracking requests, such as `youtube.com/youtubei/log_event?`.
+Der Filter „AdGuard Tracking Protection“ sperrt Tracking-Anfragen, wie z.B. `youtube.com/youtubei/log_event?`.
 
-### Examples of allowed requests
+### Beispiele für zulässige Anfragen
 
-AdGuard Base filter allows non-ad requests, such as `www.google.com/complete/search?q=`.
+Der AdGuard Basisfilter erlaubt auch werbefreie Anfragen, wie z.B. `www.google.com/complete/search?q=`.
 
-Filter unblocking search ads and self-promotion allows requests to search ad-related domains, such as `www.google.com/aclk?`.
+Filter, die Suchanzeigen und Eigenwerbung entsperren, ermöglichen die Suche nach werbebezogenen Domains, wie `www.google.com/aclk?`.
 
-Requests to websites that are added by the user to *Allowlist* are allowed.
+Anfragen an Websites, die zur *Freigabeliste* hinzugefügt wurden, sind zulässig.
 
-### Examples of modified requests
+### Beispiele für geänderte Anfragen
 
-Tracking protection feature with protection level set to *High* enables AdGuard URL Tracking filter which modifies requests by removing tracking parameters from them:
+Die Funktion Tracking-Schutz mit der Schutzstufe *Hoch* aktiviert den AdGuard URL-Tracking-Filter, der Anfragen verändert, indem er Tracking-Parameter aus ihnen entfernt:
 
 `https://www.rentio.jp/products/ax-n1b?click_from=top_newitems` → `https://www.rentio.jp/products/ax-n1b`
 
@@ -95,7 +95,7 @@ Tracking protection feature with protection level set to *High* enables AdGuard 
 
 `https://www.gog.com/game/spec_ops_the_line?pp=2863d7ae605104eeef364e3f164d3404e20f680c&gad_source=1` → `https://www.gog.com/game/spec_ops_the_line`
 
-Please note that *modified* events you see in the Filtering log or Recent activity refer not only to the cases when a request is modified, but also when:
+Bitte beachten Sie, dass *geänderte* Ereignisse, die Sie im Filter-Protokoll oder in der Letzten Aktivität sehen, sich nicht nur auf die Fälle beziehen, in denen eine Anfrage geändert wurde, sondern auch, wenn:
 
-- something on the page is changed (usually by cosmetic rules)
-- the response is modified
+- etwas auf der Seite geändert wird (normalerweise durch kosmetische Regeln)
+- die Antwort geändert wird

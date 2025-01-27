@@ -53,12 +53,12 @@ The article describes additional features, including widgets, auto-updates, and 
 
 ## AdGuard VPN 兼容模式
 
-Information on how the app integrates with VPN services, allowing you to run both AdGuard and AdGuard VPN at the same time without conflict, ensuring ad blocking and privacy protection along with VPN functionality.
+有关应用程序与 VPN 服务集成的信息，允许用户同时运行 AdGuard 和 AdGuard VPN 而不会发生冲突，保证广告拦截和隐私保护以及 VPN 正常运行。
 
 [Compatibility with AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 
 ## 免费版和完整版
 
-Comparison of features between the free and paid versions.
+免费版本与付费版本的特性比较。
 
 [Free vs. full version](/adguard-for-ios/features/free-vs-full.md)

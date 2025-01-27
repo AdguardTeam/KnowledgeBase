@@ -49,7 +49,7 @@ Les règles d'utilisation et les règles d'autorisation sont incluses dans chaqu
 
 ## AdGuard pour Safari
 
-*AdGuard for Safari* activates the AdGuard icon next to the search bar. It's useful if you want to quickly set up protection for a specific website or block ads manually. It also contains advanced rules that aren't converted to the format supported by Safari. These include [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), which allow AdGuard to block complex ads, such as those on YouTube.
+*AdGuard pour Safari* active l'icône AdGuard à côté de la barre de recherche. Cette fonction est utile si vous souhaitez configurer rapidement la protection d'un site web spécifique ou bloquer les publicités manuellement. Vous y trouverez également des règles avancées qui ne sont pas converties au format pris en charge par Safari. Il s'agit notamment des [règles CSS](/general/ad-filtering/create-own-filters#cosmetic-css-rules), des [sélecteurs de CSS étendu](/general/ad-filtering/create-own-filters#extended-css-selectors) et des [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), qui permettent à AdGuard de bloquer des publicités complexes, comme celles diffusées sur YouTube.
 
 ## Comment gérer les extensions Safari
 
@@ -57,7 +57,7 @@ Les règles d'utilisation et les règles d'autorisation sont incluses dans chaqu
 
     ![Paramètres Safari *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
 
-1. Click *Settings...*
+1. Cliquez sur *Paramètres...*
 
 1. Sélectionnez *Extensions*.
 

@@ -3,32 +3,32 @@ title: AdGuard for iOS
 sidebar_position: 1
 ---
 
-## Features
+## 機能
 
-Here are outlined the main features and settings available in AdGuard for iOS.
+AdGuard for iOS の主な機能と設定は以下のとおりです。
 
-[Features](/adguard-for-ios/features/features.md)
+[機能](/adguard-for-ios/features/features.md)
 
 ## インストール/アンインストール
 
-Here, you’ll find the system requirements along with instructions on how to install and uninstall AdGuard for iOS.
+この記事では、動作環境と、AdGuard for iOS のインストールおよびアンインストール方法の手順について説明しております。
 
-[Installation](/adguard-for-ios/installation.md)
+[インストール/アンインストール](/adguard-for-ios/installation.md)
 
 ## Safari Web拡張機能（Safari web extension）
 
-AdGuard for iOS includes a web extension that integrates with Safari to provide efficient ad blocking, privacy protection, and customizable filters directly within the browser.
+AdGuard for iOS には、Safari と統合して効率的な広告ブロック、プライバシー保護、カスタマイズ可能なフィルタをブラウザ内で直接提供する Web 拡張機能というものが使われています。
 
-[Safari Web extension](/adguard-for-ios/web-extension.md)
+[Safari Web拡張機能（Safari web extension）](/adguard-for-ios/web-extension.md)
 
 ## 問題解決
 
-This section includes various articles addressing known issues and possible solutions.
+このセクションには、既知の問題と考えられる解決策を説明する記事が含まれています:
 
-[Solving problems](/adguard-for-ios/solving-problems/solving-problems.md)
+[問題解決](/adguard-for-ios/solving-problems/solving-problems.md)
 
 ## AdGuard と AdGuard Pro
 
-Here we explain why there are two AdGuard apps in the App Store and what the difference is between them.
+この記事では、App Store に2つの AdGuard アプリが存在する理由と、それらの違いについて説明しております。
 
-[AdGuard and AdGuard Pro](/adguard-for-ios/adguard-and-adguard-pro.md)
+AdGuard と AdGuard Pro

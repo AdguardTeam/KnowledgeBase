@@ -21,7 +21,7 @@ Aşağıdaki uzantılar AdGuard ile birlikte yüklenir:
 
 ![Preinstalled userscripts \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
-**AdGuard Assistant**
+**AdGuard Asistanı**
 
 AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](/adguard-for-windows/browser-assistant.md) is not available for your browser. Bu uzantının adı oldukça bilinçli: Aslında, kullanıcının uygulamayı açmaya gerek kalmadan doğrudan tarayıcıda temel AdGuard ayarlarını değiştirmesine yardımcı oluyor. AdGuard Asistanı, tüm Microsoft Windows uyumlu tarayıcılarla çalışır. Ayrıca, AdGuard Asistanı simgesi, kullanıcı tarafından istisna olarak listelenen sitelerde ve yanlış içerik görüntüleme riski bulunan belirli web sayfalarında görüntülenmeyecektir.
 

@@ -7,14 +7,14 @@ Em sua conta, você pode gerenciar suas licenças, dispositivos vinculados a ele
 
 ## Gerenciar configurações da conta
 
-Na seção *Configurações* da sua conta AdGuard, você pode atualizar ou redefinir sua senha, alterar seu endereço de e-mail, ativar a [autenticação de dois fatores](../2fa), visualizar os dados armazenados sobre você pelo AdGuard e escolher o idioma de sua conta pessoal e das notificações.
+Na seção *Configurações* da sua conta AdGuard, você pode atualizar ou redefinir sua senha, alterar seu Endereço de e-mail, ativar o login com código de uso único ou a [autenticação de dois fatores](../2fa), visualizar os dados armazenados sobre você pelo AdGuard e selecionar o idioma de sua conta e das notificações.
 
 Nesta seção, você também pode gerenciar suas preferências de e-mail:
 
-- receber e-mails transacionais,
-- receber as newletters mensais do AdGuard,
-- receber e-mails sobre ofertas especiais e promoções do AdGuard,
-- enviar confirmações de leitura para o AdGuard quando você abrir e-mails.
+- Receber a newsletter do AdGuard
+- Receber e-mails transacionais
+- Enviar recibos de leitura para o AdGuard
+- Preferências de permissão
 
 ## Gerenciar licenças
 
@@ -31,8 +31,8 @@ Os dispositivos vinculados às suas licenças do bloqueador de anúncios AdGuard
 
 ## Ver compras
 
-A seção Histórico de compras exibe todas as licenças que você já comprou usando a conta de e-mail com a qual registrou sua conta AdGuard. You will also find there information about the date of purchase, order ID, payment method, and cost of the purchase.
+A seção Histórico de compras exibe todas as licenças que você já comprou usando a conta de e-mail com a qual registrou sua conta AdGuard. Você também encontrará informações sobre a data da compra, ID do pedido, forma de pagamento e custo da compra.
 
-## Entrar em contato com o suporte
+## Atividade
 
-A guia Suporte contém links úteis para ajudá-lo a resolver problemas ou encontrar respostas para suas perguntas sobre os produtos AdGuard. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge Base, and Discuss.
+A aba *Atividade* permite monitorar a atividade de login da sua conta AdGuard. Exibe o endereço de e-mail utilizado, a localização e a data de login. Você também pode filtrar registros por produto: *Todos os produtos*, *bloqueador de anúncios AdGuard*, *AdGuard VPN*, *AdGuard DNS*.
