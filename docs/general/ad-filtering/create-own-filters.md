@@ -4177,7 +4177,7 @@ pseudoClasses = pseudoClass *pseudoClass
 
 - **`tagName`** — name of the element in lower case, for example, `div` or `script`.
 - **`domains`** — domain restriction for the rule. Same principles as in [element hiding rule syntax](#cosmetic-elemhide-rules).
-- **`attributes`** — a list of attributes that limit the selection of elements. `name` — attribute name, `value` — substring, that is contained in attribute value. `value` might not be specified.
+- **`attributes`** — a list of attributes that limit the selection of elements. `name` — required, attribute name; `value` — optional (may not be specified), substring that is contained in attribute value.
 - **`pseudoName`** — the name of a pseudo-class.
 - **`pseudoArgs`** — the arguments of a function-style pseudo-class.
 - **`combinator`** — an operator that works similarly to the [CSS child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator): that is, the `selector` on the right of the `combinator` will only match an element whose direct parent matches the `selector` on the left of the `combinator`.
@@ -4198,8 +4198,8 @@ example.org$$script[data-src="banner"]
 
 This rule removes all `script` elements with the attribute `data-src` containing the substring `banner`. The rule applies only to `example.org` and all its subdomains.
 
-If the value of the attribute is omitted in the rule, then the element will be removed if it contains the specified attribute no matter what its value is.
-This is also the way to remove the elements those attributes don't have any value at all.
+If the value of the attribute is omitted in the rule, then the element will be removed if it contains the specified attribute, regardless of its value.
+This is also the way to remove the elements whose attributes don't have any value at all.
 
 ```html
 <div some_attribute="some_value"></div>
