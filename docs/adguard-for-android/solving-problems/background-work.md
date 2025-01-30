@@ -570,7 +570,7 @@ On devices running Realme UI 4.0, there are three key configurations to ensure t
         - Allow auto launch
     - In the **App info** section, scroll down and turn off the option **Pause app activity if unused**
 
-    ![Always-on VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
 
 1. Set up the battery:
 
