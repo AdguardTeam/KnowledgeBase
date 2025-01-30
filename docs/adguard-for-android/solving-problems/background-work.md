@@ -585,4 +585,4 @@ On devices running Realme UI 4.0, there are three key configurations to ensure t
     - Go to **Settings → Connection & sharing → VPN**
     - Find **AdGuard** and enable the **Always-on VPN** option
 
-    ![Always-on VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)
