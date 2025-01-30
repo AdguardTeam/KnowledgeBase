@@ -792,6 +792,12 @@ The rule corresponds to requests for media files — music and video, e.g. `.mp4
 
 The rule corresponds to browser plugins resources, e.g. Java or Flash.
 
+:::info Compatibility
+
+Rules with `$object` modifier are not supported by AdGuard for Safari and AdGuard for iOS and have limited CoreLibs support.
+
+:::
+
 #### **`$other`** {#other-modifier}
 
 The rule applies to requests for which the type has not been determined or does not match the types listed above.
