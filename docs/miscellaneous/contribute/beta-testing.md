@@ -19,7 +19,7 @@ In any case, every single thing you need to know is gathered on a [dedicated pag
 
 If you want to skip the description part and get straight to the action, you can apply [here](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1-3 working days, and you'll get a reply via email.
 
-::: note
+:::note
 
 To get the AdGuard for iOS beta or nightly build, first you have to install [Testflight](https://apps.apple.com/app/testflight/id899247664) on your iOS device.
 
