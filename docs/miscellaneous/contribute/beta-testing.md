@@ -3,13 +3,13 @@ title: AdGuard beta/nightly testing
 sidebar_position: 1
 ---
 
-There is an AdGuard app for virtually every major platform out there, and we regularly release updates for all of them. This would not be possible without beta and nightly testing and, more importantly, without our testers. Want to become one of them? Here's how you can do it.
+There is an AdGuard app for virtually every major platform out there, and we regularly release updates for all of them. This would not be possible without beta and nightly testing and, more importantly, without our testers. Want to become one of them? Here’s how you can do it.
 
 ### Beta or nightly: what is the difference?
 
 Both beta and nightly testing are important to make AdGuard constantly better. However, they are different, and you can choose the one that suits you more.
 
-The development process follows a progression from nightly to beta and then from beta to the final, stable version. It means that you are more likely to find bugs in the nightly builds, but you get access to new features faster, almost on a daily basis. On the other hand, the beta is more stable, but you will get updates less often.
+The development process follows a progression from nightly to beta and then from beta to the final, stable version — release. It means that you are more likely to find bugs in nightly builds, but you get access to new features faster, almost on a daily basis. Betas are more stable, but you will get updates less often.
 
 ## How to become a beta or nightly tester {#intro}
 
