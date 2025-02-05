@@ -35,7 +35,7 @@ The above method is the most preferred, but you can use others if necessary:
 
 - Email our support team from the Support tab in the app or write directly to [support@adguard.com](mailto:support@adguard.com).
 
-## How to activate a beta/nightly key in the iOS application {#ios}
+## How to activate a beta/nightly key in the iOS app {#ios}
 
 If you have already received a beta key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Once there, enter the credentials from your AdGuard account. After that, the premium features will become available automatically.
 
