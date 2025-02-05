@@ -247,7 +247,7 @@ Safari Converter supports most of the [cosmetic rules](#cosmetic-rules) although
 - [Non-basic rules modifiers](#non-basic-rules-modifiers) are supported with some limitations:
 
     - `$domain` - the same limitations as everywhere else.
-    - `$path` - supported, but if you use regular expressions, they will be limited to the subset of regex that is [supported by Safari][safariregex].
+    - `$path` - supported, but if you use regular expressions, they will be limited to the subset of regex that is [supported by Safari][https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern].
     - `$url` - to be supported in the future: [#68](https://github.com/AdguardTeam/SafariConverterLib/issues/68)
 
 #### Script/scriptlet rules
