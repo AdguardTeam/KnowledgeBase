@@ -263,9 +263,7 @@ For scriptlet rules it is **very important** to run them as soon as possible whe
 
 #### HTML filtering rules
 
-[HTML filtering rules][htmlfilteringrules] are **not supported** and will not be supported in the future. Unfortunately, Safari does not provide necessary technical capabilities to implement them.
-
-[htmlfilteringrules]: https://adguard.com/kb/general/ad-filtering/create-own-filters/#html-filtering-rules
+[HTML filtering rules](#html-filtering-rules) are **not supported** and will not be supported in the future. Unfortunately, Safari does not provide necessary technical capabilities to implement them.
 
 ## Basic rules
 
