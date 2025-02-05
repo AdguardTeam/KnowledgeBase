@@ -1,5 +1,5 @@
 ---
-title: How to get HAR files
+title: So können HAR-Dateien erzeugt werden
 sidebar_position: 5
 ---
 
@@ -15,33 +15,33 @@ HAR-Dateien werden in Übereinstimmung mit der [Datenschutzrichtlinie von AdGuar
 
 :::
 
-## What are HAR files?
+## Was sind HAR-Dateien?
 
-The HAR (HTTP ARchive) format is a JSON-formatted archive file for logging of a web browser's interaction with a site. The specifications of HAR format defines an archival data for HTTP transactions that used by a browser to export detailed information about web pages it loads. More detailed description of HAR file format and its specification you can find at [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/) website.
+Das HAR-Format (HTTP ARchive) ist eine JSON-formatierte Archivdatei zur Protokollierung der Interaktion eines Webbrowsers mit einer Website. Die Spezifikationen des HAR-Formats definieren Archivierungsdaten für HTTP-Transaktionen, die ein Browser verwendet, um detaillierte Informationen über die von ihm geladenen Webseiten zu exportieren. Eine genauere Beschreibung des HAR-Dateiformats und seiner Spezifikationen finden Sie auf der Website [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
 
-## How to get HAR files
+## So können HAR-Dateien erzeugt werden
 
-Sometimes we need to analyze it to block specific ads that are difficult to reproduce for some reason. To get HAR files follow these steps:
+Manchmal müssen wir sie analysieren, um bestimmte Anzeigen zu sperren, die aus irgendeinem Grund schwer zu reproduzieren sind. Gehen Sie wie folgt vor, um HAR-Dateien zu erstellen:
 
-1. Open AdGuard and go to **Settings** (⚙ icon in the lower right corner).
-2. Tap **General** →**Advanced** → **Low-level settings**.
-3. Scroll down and activate **Capture HAR** in the Filtering section.
-4. Open the app and perform the necessary actions to reproduce the problem.
-5. Turn **Capture HAR** off.
-6. Go back to **Advanced**.
-7. Tap **Export logs and system info** → **Allow** (if necessary) → **Save**.
+1. Öffnen Sie AdGuard und gehen Sie zu **Einstellungen** (⚙ Symbol in der unteren rechten Ecke).
+2. Tippen Sie auf **Allgemein** → **Erweitert** → **Low-Level-Einstellungen**.
+3. Blättern Sie nach unten und aktivieren Sie **HAR erfassen** im Abschnitt „Filterung“.
+4. Öffnen Sie die App und führen Sie die erforderlichen Aktionen durch, um das Problem zu reproduzieren.
+5. Deaktivieren Sie **HAR erfassen**.
+6. Wechseln Sie zurück zu **Erweitert**.
+7. Tippen Sie auf **Protokolle und Systeminformationen exportieren** → **Zulassen** (falls erforderlich) → **Speichern**.
 
-**Please send the file with logs (that you've got as a result) to the AdGuard support service.**
+**Senden Sie die erzeugte Datei mit den Protokollen an den AdGuard-Support.**
 
 :::note
 
-Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message.
+Unser Support-Team wird Ihr Ticket viel schneller bearbeiten, wenn Sie die HelpDesk-Ticketnummer oder die GitHub-Issue-Nummer in Ihrer Nachricht angeben.
 
 :::
 
-## How to analyze HAR files
+## So können Sie HAR-Dateien analysieren
 
-Here are some sources that we can recommend to analyze HAR files:
+Hier sind einige Anwendungen, die wir für die Analyse von HAR-Dateien empfehlen können:
 
-- [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) is a HAR analyzer tool, visualizes HTTP Archive (HAR) log files created by HTTP tracking tools.
-- [Fiddler](https://www.telerik.com/fiddler) is a web debugging proxy, lets you capture, inspect, monitor all HTTP(S) traffic between your computer and the Internet, mock requests, and diagnose network issues.
+- [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) ist ein HAR-Analysetool, das von HTTP-Tracking-Tools erstellte HTTP Archive (HAR) Log-Dateien visualisiert.
+- [Fiddler](https://www.telerik.com/fiddler) ist ein Web-Debugging-Proxy, mit dem Sie den gesamten HTTP(S)-Verkehr zwischen Ihrem Computer und dem Internet erfassen, untersuchen, überwachen, Anfragen simulieren und Netzwerkprobleme diagnostizieren können.

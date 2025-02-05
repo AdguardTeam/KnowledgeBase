@@ -1,5 +1,5 @@
 ---
-title: Safari protection
+title: Safari koruması
 sidebar_position: 1
 ---
 
@@ -41,7 +41,7 @@ Daha fazla filtrenin etkin olması daha az reklam olacağını garanti etmez. Ay
 
 Özel filtreler kategorisi, kullanıcıların filtrelerini URL'ye göre eklemeleri için varsayılan olarak boştur. You can find filters on the Internet or even try to [create one by yourself](/general/ad-filtering/create-own-filters).
 
-### User rules {#user-rules}
+### Kullanıcı kuralları {#user-rules}
 
 Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](#assistant). Tüm filtre listesini eklemeden Safari filtrelemesini özelleştirmek için bu aracı kullanın.
 

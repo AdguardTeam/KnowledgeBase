@@ -13,7 +13,7 @@ The _App management_ module can be accessed by tapping the _App management_ tab 
 
 ![App management \*mobile\_border](https://cdn.adtidy.org/blog/new/9sakapp_management.png)
 
-By tapping an app, you can manage its settings:
+Bir uygulamaya dokunarak ayarlarını yönetebilirsiniz:
 
 - Route its traffic through AdGuard
 - Block ads and trackers in this app (_Filter app content_)
@@ -28,7 +28,7 @@ Bağlam menüsünden uygulamanın istatistiklerine de erişebilirsiniz.
 
 ### “Problem-free” and “problematic” apps
 
-Most apps work properly when filtering is enabled. For such apps, their traffic is routed through AdGuard and filtered by default.
+Most apps work correctly when filtered. For such apps, their traffic is routed through AdGuard and filtered by default.
 
 Some apps, such as Download Manager, radio, system apps with UID 1000 and 1001 (for example, Google Play services), are “problematic” and may work incorrectly when routed through AdGuard. Bu nedenle, tüm uygulamaları yönlendirmeye veya filtrelemeye çalışırken aşağıdaki uyarıyı görebilirsiniz:
 

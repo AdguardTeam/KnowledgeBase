@@ -1,6 +1,6 @@
 ---
 title: Outros recursos e opções
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 :::info
@@ -19,7 +19,7 @@ Na aba _Geral_, você pode permitir anúncios de pesquisa e a [autopromoção de
 
 Além disso, aqui você pode ativar a [_Proteção contra phishing e malware_](/general/browsing-security).
 
-Você pode salvar suas configurações clicando no botão _Exportar configurações_. As configurações serão salvas como um arquivo .json. Para carregar as configurações salvas anteriormente, use a função _Importar configurações_. Você pode até usá-lo para alternar rapidamente entre diferentes perfis de configurações ou até mesmo para transferir configurações entre diferentes navegadores.
+Você pode salvar suas configurações clicando no botão _Exportar configurações_. As configurações serão salvas como um arquivo .json. Para importar as configurações salvas anteriormente, use a função _Importar configurações_. Você pode até usá-lo para alternar rapidamente entre diferentes perfis de configurações ou até mesmo para transferir configurações entre diferentes navegadores.
 
 ## Configurações adicionais {#misc}
 

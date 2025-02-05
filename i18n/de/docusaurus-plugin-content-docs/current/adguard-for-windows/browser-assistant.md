@@ -15,19 +15,19 @@ AdGuard Browser-Assistent ist eine Browsererweiterung, die im Browser installier
 
 ### Kompatibilität mit der Haupt-App
 
-If you got into the habit of using our previous [AdGuard Ad Blocker extension](/adguard-browser-extension/compatibility), you might like the solution that we have developed for the new Browser Assistant.
+Wenn Sie daran gewöhnt sind, unsere frühere [AdGuard Werbeblocker-Erweiterung](/adguard-browser-extension/compatibility) zu verwenden, könnte Ihnen die Lösung gefallen, die wir für den neuen Browser-Assistenten entwickelt haben.
 
 Hintergrundinformationen:
 
 In früheren Versionen der AdGuard-Browsererweiterung (vor v3.5) hat die Erweiterung, wenn sie zusammen mit AdGuard für Windows installiert wurde, die Funktionen des Assistenten übernommen, das Filtern selbst eingestellt und sich auf die App verlassen, die dies übernimmt.
 
-Die Erweiterung und die App funktionierten zusammen, aber manchmal schlug die Integration fehl. Some websites would stop being protected by the desktop program and be backed up only by the less powerful extension.
+Die Erweiterung und die App funktionierten zusammen, aber manchmal schlug die Integration fehl. Der Schutz, den das Desktop-Programm normalerweise bietet, würde auf bestimmten Websites nicht mehr greifen, so dass nur noch die weniger leistungsfähige Erweiterung Schutz bieten würde.
 
 Bei der Verwendung des Browser-Assistenten spielen all diese Probleme keine Rolle, da es im Grunde genommen keine Konflikte geben kann. Die Rolle des Browser-Assistenten ist klar definiert, und er kann die Funktion der App nicht beeinträchtigen, so dass es keinen Grund zur Sorge gibt.
 
 ## Separater Tab in den Einstellungen
 
-The new Browser Assistant has its own tab in AdGuard for Windows settings, along with Stealth Mode, Browsing security, Parental Control and others. Dort finden Sie einen Link zum Herunterladen der Erweiterung für Ihren Standardbrowser. Außerdem gibt es ein Kontrollkästchen, um den alten Assistenten zu aktivieren.
+Der neue Browser-Assistent hat einen eigenen Tab in den Einstellungen von AdGuard für Windows, zusammen mit Tracking-Schutz, Internetsicherheit, Kindersicherung und anderen. Dort finden Sie einen Link zum Herunterladen der Erweiterung für Ihren Standardbrowser. Außerdem gibt es ein Kontrollkästchen, um den alten Assistenten zu aktivieren.
 
 ![Einstellungen *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
@@ -42,4 +42,4 @@ Legacy-Assistent ist die ältere Version des Assistenten, die nur ein Benutzersk
 
 Wenn Sie den Browser-Assistenten für Ihren Standardbrowser installieren möchten, können Sie dies direkt in den Einstellungen der App tun. Sie haben auch die Möglichkeit, ihn für andere Browser zu installieren.
 
-Der AdGuard Browser-Assistent ist für alle gängigen Browser verfügbar: Chrome, Firefox, Edge, Opera und Yandex. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and tap the *Install* button. Das war's!
+Der AdGuard Browser-Assistent ist für alle gängigen Browser verfügbar: Chrome, Firefox, Edge, Opera und Yandex. Um die von Ihnen benötigte zu installieren (oder mehrere, das ist nicht verboten, sondern sogar erwünscht), gehen Sie auf [unsere Website](https://adguard.com/adguard-assistant/overview.html), klicken Sie auf das Browser-Symbol und dann auf die Schaltfläche *Installieren*. Das war's!

@@ -1,37 +1,37 @@
 ---
-title: Search ads and self-promotion
+title: 搜索广告和网站自宣传
 sidebar_position: 3
 ---
 
-**Disclosure.** While AdGuard provides an option to show some ads, we do not have any 'acceptable ads' program like Adblock Plus and some other ad blockers, where they take money for leaving certain ads unblocked. This isn't our way of doing business. We do not get paid for showing any of the ads, and we do not use the term 'acceptable' for a reason: the ads we might show may be, in fact, useful and not just 'acceptable'. All of this applies only to search ads and self-promotion ads.
+**重要信息**。尽管 AdGuard 提供「允许搜索广告和网站自宣传」的选项，但这并不意味着我们有一个“可接受的广告”计划（正如 Adblock Plus 和其他一些拦截器）。有些软件会付费以将某些类型的广告排除在拦截之外。 这不是我们做生意的方式。 我们没有付费托管任何广告，而且我们不使用“可接受”一词并非巧合：我们有选项让用户展示广告，因为这些广告可能有用而不仅仅是“可接受”。 这些设置仅适用于搜索广告和网站自宣传。
 
-You can turn off the display of these ads at any time. Furthermore, we will explain which ads qualify for this definition.
+用户可以随时关闭上述功能。 以下我们解释「允许搜索广告和网站自宣传」功能包括的广告。
 
-### Search ads
+### 搜索广告
 
-Search ads are ads that you see among search query results when using online search engines, such as Google, Bing, DuckDuckGo, etc.
+搜索广告是用户在使用 Google、Bing、DuckDuckGo 等搜索引擎时在搜索结果中看到的广告。
 
-![Search ads](https://cdn.adtidy.org/content/kb/ad_blocker/general/googlead.jpg)
+![搜索广告](https://cdn.adtidy.org/content/kb/ad_blocker/general/googlead.jpg)
 
-These ads are always contextual: they are targeted to match the keywords you used in the query. This helps you find exactly what you are searching for. Moreover, search ads (because they go through manual moderation) are often more relevant and helpful than the rest of the search results.
+这些广告始终与上下文相关：它们有针对性地匹配用户在查询中使用的关键字。 这可以帮用户找到想要搜索的内容。 此外，搜索广告（要经过人工审核）往往比其他搜索结果更相关、更有帮助。
 
-Another argument in defense of search ads is that they are much less intrusive than many other ad formats.
+支持搜索广告显示的另一个论点是，它们比许多其他广告格式的侵入性要小得多。
 
-### What is websites' self-promotion?
+### 什么是网站自推销？
 
-In principle, when an ad on a website promotes this particular website or closely related websites, social media, and so on, such an ad is considered a self-promoting one.
+原则上，当网站上的广告推广该网站或紧密相关的网站、社交媒体等时，这种广告被视为自我推广广告。
 
-![Search ads](https://cdn.adtidy.org/content/kb/ad_blocker/general/echodot.jpg)
+![搜索广告](https://cdn.adtidy.org/content/kb/ad_blocker/general/echodot.jpg)
 
-Our general stance here is very similar to the EasyList policy regarding self-promotion ads. According to our [filter policy](../filter-policy), we should not block these ads; however, we should not make an exception if such an ad gets blocked by some rule 'alongside' a regular ad.
+我们对这类广告的想法与 EasyList 对自我推广广告的政策非常相似。 根据我们的[过滤政策](../filter-policy)，我们不应该拦截这类广告。同时，如果此类广告与常规广告一起被规则屏蔽，我们也不应将其作为例外情况处理。
 
-Partly, this is due to ethical reasons, but mostly because such ads are rarely too intrusive and are often useful for the visitor of the website (who is supposedly interested in this website's content).
+部分原因是出于伦理原因，但主要是因为这样的广告很少过于干扰，并且通常对访问网站的访客（用户很可能对该网站的内容感兴趣）是有用的。
 
-By enabling 'Search ads and self-promotion', AdGuard users can unblock some of these self-promotion ads.
+启用「搜索广告和网站自宣传」，AdGuard 用户可以解除对部分网站自宣传广告的屏蔽。
 
-### What ads are on the list?
+### 拦截的广告
 
-When you enable 'Search ads and self-promotion', search ads from the following search engines are shown:
+启用「搜索广告和网站自宣传」后，将显示以下搜索引擎的搜索广告：
 
 - Google
 - Yahoo
@@ -41,8 +41,8 @@ When you enable 'Search ads and self-promotion', search ads from the following s
 - DuckDuckGo
 - StartPage
 
-As well as all self-promotional ads that satisfy our filter policy.
+以及所有符合我们过滤规则的网站自宣传广告。
 
-### Summary
+### 总结
 
-Allowing 'Search ads and self-promotion' is a 100% optional feature that may be helpful in some cases. If you don't like it, you can turn it off at any time. It does not, and never will, include any ad types or individual ads that do not fall into one of the two categories described above.
+允许「搜索广告和网站自宣传」是一项完全可选的功能，它在某些情况下可能会有所帮助。 如果有用户不想看到此类广告，可以随时将其关闭。 此选项不包括（也永远不会包括）任何不属于上述两类中的任何广告类型或单个广告。

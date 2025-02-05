@@ -43,10 +43,10 @@ En esta sección, puedes controlar el acceso a Internet para aplicaciones espec�
 
 Para eliminar una regla o aplicación de _Reglas personalizadas_, deslízala hacia la izquierda.
 
-### Notifications
+### Notificaciones
 
-If enabled, this feature notifies you when an app tries to break one of the Firewall rules set for that app (for example, to access mobile data when it shouldn’t). You can turn notifications on and off for all apps or for each app separately.
+Si está habilitada, esta función te notifica cuando una app intenta violar una regla aplicable del cortafuegos, por ejemplo, intentos de acceder a datos móviles desde los cuales está bloqueado. Puedes activar y desactivar las notificaciones para todas las apps o para cada app por separado.
 
-Tap the notification to access the app’s Firewall settings, or temporary disable all Firewall rules for that app by tapping the corresponding button in the notification. You can also mute all Firewall notifications for the app by tapping the _Mute_ button in the notification for that app.
+Toca la notificación para acceder a la configuración del Cortafuegos de la app, o deshabilita temporalmente todas las reglas del Cortafuegos para esa app tocando el botón correspondiente en la notificación. También puedes silenciar todas las notificaciones del Cortafuegos para la app tocando el botón _Silenciar_ en la notificación de esa app.
 
-Note that if notifications for multiple apps would be displayed, they will be bundled into a single notification instead.
+Ten en cuenta que si se muestran notificaciones para múltiples apps, se agruparán en una sola notificación.

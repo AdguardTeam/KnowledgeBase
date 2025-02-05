@@ -7,7 +7,7 @@ At AdGuard, we’ve long followed certain principles in making our filters, whic
 
 ## Ortak kriterler
 
-These criteria are equally applied to the rules of all filters.
+Bu kriterler tüm filtrelerin kurallarına eşit olarak uygulanır.
 
 - Rules for a specific site will only be added if there is sufficient traffic. Traffic is determined by public statistics (if available) or indirect indicators, such as the number of subscribers on social networks. A site’s traffic is considered sufficient if it reaches 100,000 visits per month. We will consider adding a rule for a site that is not as popular, but the final decision rests with filter developers. Sites with low traffic should still be checked for third-party analytics and advertising networks
 - The decision about content farms (websites that produce large amounts of content primarily aimed at achieving high visibility in search results and generating advertising revenue) is made by filter developers depending on the quality of the content
@@ -34,25 +34,27 @@ A **filter** (or a **filter list**) is a set of filtering rules designed to filt
 - Implementing alternative advertising in response to ad blocker usage: sites introduce alternative advertising when ad blockers are detected
 - Paywall: a method of content monetization where content is partially or fully hidden from users, with a message prompting them to purchase a subscription for access
 
-### Filters
+### Filtreler
 
-AdGuard ad-blocking filters include:
+AdGuard reklam engelleme filtreleri şunları içerir:
 
 - AdGuard Temel filtresi
 - AdGuard Mobil Reklam filtresi
 - Dil ilkesine göre ayrılmış bölgesel filtreler — Çince, Felemenkçe, Fransızca, Almanca, Japonca, Rusça, İspanyolca/Portekizce, Türkçe ve Ukraynaca
+- AdGuard Hızlı Çözümler filtresi
 
 ### Bu filtrelerin amacı
 
 - **Base filter** is designed to block ads on English-language websites and those for which there is no separate filter. Ayrıca, dilden bağımsız olarak tüm siteler için geçerli olan genel filtreleme kuralları da içerir
 - **Mobile Ads filter** blocks advertisements on mobile versions of websites and within mobile apps. Dile dayalı bir sınıflandırma yoktur
 - **Regional filters** follow the same policy as the **Base filter**, but limited to websites in certain languages
+- **Hızlı Çözümler filtresi**, MV3 uzantısını güncellemeden popüler sitelerdeki kritik içerik filtreleme sorunlarını hızlı bir şekilde çözmek için kullanılır.
 
 The goal of ad-blocking filters is to block all types of advertising on websites, applications, and certain devices that can load ads from the Internet:
 
 - Afişler — web sayfalarının çeşitli bölümlerinde resim olarak görüntülenen reklamlar
 - Teasers — text or graphical ads, often animated, designed to intrigue visitors (sensational headlines, attention-grabbing images) and prompt them to click on the banner (clickbait)
-- Text ads — advertising in the form of text, including links
+- Metin reklamları — bağlantılar da dâhil olmak üzere metin biçimindeki reklamlar
 - Modal adverts — advertising that suddenly appears over the current content in the form of modal windows
 - Popunders — advertising that opens in a separate window under the current one, when clicked anywhere on the page
 - Redirect advertising — mechanisms which automatically redirect users to another site after clicking
@@ -66,7 +68,7 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 - Site’s own advertising, if it has been blocked by general filtering rules (see *Limitations and exceptions*)
 - Anti-adblock scripts that prevent site usage (see *Limitations and exceptions*)
 - Advertising injected by malware, if detailed information about its loading method or steps for reproduction is provided
-- Unwanted mining — scripts that mine cryptocurrency without user consent
+- İstenmeyen madencilik — kullanıcı izni olmadan kripto para madenciliği yapan betikler
 
 ### Kısıtlamalar ve istisnalar
 
@@ -95,7 +97,7 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 
 **Cookies** — files that websites send to and store on devices. These files contain various information — both necessary for the functioning of the site on the device and used for analytics purposes — unique identifiers used to track visitor activity on the website, advertising parameters, and more.
 
-### Filters
+### Filtreler
 
 AdGuard izleme korumasu filtreleri şunları içerir:
 
@@ -124,9 +126,9 @@ The **URL Tracking filter** is designed to remove tracking parameters from web a
 Tracking protection filters should not block a tracker if blocking would disrupt the correct functioning of the website:
 
 - Anti-bots and fraud protection if it interferes with using the site. Örneğin, PerimeterX veya hCaptcha ile engelleme, site ziyaretçisini bir captcha ile doğrulamaya çalıştığında sorunlara neden olur
-- Error tracking systems like Sentry or Bugsnag are not blocked
+- Sentry veya Bugsnag gibi hata izleme sistemleri engellenmez
 
-## Annoyance filters
+## Can sıkıcı öğe filtresi
 
 Annoyance filters are designed to improve the usability of websites by blocking elements on pages that are not advertisements but distract from and interfere with site interaction or content consumption — such as various modal windows and interactive forms, cookie consent notifications and requests, mobile app banners, and various widgets.
 
@@ -136,11 +138,11 @@ Annoyance filters are designed to improve the usability of websites by blocking 
 
 **CMP (Consent Management Platform)** — software that helps websites comply with cookie usage rules. CMPs limit cookies usage until user consent is obtained, providing users with the option to accept certain cookies and manage privacy settings.
 
-**Widget** — a user interface element that extends the functionality of a website. Web widgets are integrated into web pages and can include interactive elements such as buttons, forms, or banners. They can provide users with access to specific services or content without requiring navigation to other pages.
+**Widget** — a user interface element that extends the functionality of a website. Web widgets are integrated into web pages and can include interactive elements such as buttons, forms, or banners. Kullanıcılara, diğer sayfalara gitmeye gerek kalmadan belirli hizmetlere veya içeriğe erişim sağlayabilirler.
 
 **Popup** — a window that appears above the current web page. It is intended to display additional information, advertisements, notifications, or data entry forms. Popups usually block the view of the main content of the page and require user action to close, which can be irritating.
 
-### Filters
+### Filtreler
 
 For better customization, annoyance filters are divided by their purpose:
 
@@ -197,7 +199,7 @@ This is a filter that blocks various widgets that are not essential for the func
 - Widgets for content recommendations — related articles, similar websites, various personalized recommendations
 - Chat widgets that are not integrated with the content and are not the main content of the page
 - Marketing widgets:
-    - Chats for communication with assistants or bots
+    - Asistanlar veya botlarla iletişim için sohbetler
     - Widgets with product recommendations that are shown to the user
     - Call-back forms
 - Other widgets that do not have a separate category but may visually clutter the page. For example, weather widgets, currency exchange rates, job listings, and donations
@@ -226,7 +228,7 @@ Bu filtre tüm kullanıcılar için uygun olmayan kurallar içerebilir. Bazen bu
 
 ## Sosyal medya filtreleri
 
-### Filters
+### Filtreler
 
 AdGuard Sosyal Medya filtreleri şunları içerir:
 
@@ -254,7 +256,7 @@ This group contains filters that are not essential for blocking advertisements.
 
 For more details on these types of advertising, refer to the [article on search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
-### Filters
+### Filtreler
 
 - Arama motoru reklamları ve öz tanıtımına izin veren filtre
 - AdGuard DNS filtresi
@@ -264,7 +266,7 @@ For more details on these types of advertising, refer to the [article on search 
 
 #### Arama motoru reklamları ve öz tanıtımına izin veren filtre
 
-This filter unblocks:
+Bu filtre şunların engelini kaldırır:
 
 - Contextual advertising in search results when using search engines (such as Google, Bing, Yandex, DuckDuckGo)
 - Self-promotion of websites

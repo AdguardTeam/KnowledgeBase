@@ -21,7 +21,7 @@ Pour accéder aux *Paramètres avancés*, ouvrez AdGuard, cliquez sur l'icône d
 
 ## Paramètres avancés
 
-### Network settings
+### Paramètres réseau
 
 #### `network.extension.exclude.domains`
 
@@ -71,7 +71,7 @@ Temps, en secondes, avant d'envoyer une autre sonde keepalive à un homologue qu
 
 #### `network.https.ech.enabled`
 
-Utilise un proxy DNS local pour rechercher des configurations dans les listes de configuration ECH. S'il est trouvé, il crypte ClientHellos.
+Utilise un proxy DNS local pour rechercher des configurations dans les listes de configuration ECH. S'il les trouve, il crypte les Client Hello.
 
 #### `network.https.enforce.certificate.transparency`
 
@@ -89,7 +89,7 @@ En définissant `true`, vous activez le filtrage du réseau local.
 
 En définissant `true`, vous activez le filtrage LoopBack.
 
-### DNS settings
+### Paramètres DNS
 
 #### `dns.proxy.bootstrap.ips`
 
@@ -159,7 +159,13 @@ Active HTTP/3 pour les amonts DNS-over-HTTPS pour accélérer la connexion.
 
 Supprime les paramètres Encrypted Client Hello des réponses.
 
-### Stealth Mode settings
+#### `dns.proxy.private.relay.sequoia.workaround.enabled`
+
+Bloque les domaines macOS Private Relay si l'utilisateur a un pare-feu activé, ce qui désactive à son tour la fonction *Private Relay*.
+
+L'activation de ce paramètre est utile dans le scénario suivant : lorsque macOS Private Relay est actif, le filtrage ne peut pas fonctionner correctement et doit être désactivé. Dans les versions de macOS jusqu'à 14, AdGuard pouvait désactiver automatiquement le Private Relay lorsque la protection était activée. Toutefois, à partir de macOS 15, cela n'est plus possible si un pare-feu est actif. En activant ce paramètre, vous pouvez désactiver Private Relay même lorsque le pare-feu est activé, contournant ainsi la limitation précédente.
+
+### Paramètres du Mode furtif
 
 #### `stealth.antidpi.http.split.fragment.size`
 
@@ -177,7 +183,7 @@ Ajoute un espace supplémentaire entre la méthode HTTP et l'URL et supprime l'e
 
 Ici, vous pouvez spécifier le délai, en millisecondes, après l'envoi du premier fragment, si la fragmentation est effectuée.
 
-### Subscription link interception settings (userscripts and filters)
+### Paramètres d'interception des liens d'abonnement (scripts utilisateurs et filtres)
 
 #### `subscription.link.interception.userscript`
 

@@ -1,43 +1,76 @@
 ---
-title: Known issues
+title: Problemi noti
 sidebar_position: 2
+toc_min_heading_level: 2
+toc_max_heading_level: 4
 ---
 
-Last update: September 20, 2022
+Last update: September 17, 2024
 
-Understanding this article may require some basic knowledge about encryption, TLS, and HTTPS.
+Per comprendere questo articolo potrebbero essere necessarie alcune conoscenze di base sulla crittografia, TLS e HTTPS.
 
-First, look at this simple diagram that shows the general structure of the HTTPS protocol:
+Prima di tutto, osserva questo semplice diagramma che mostra la struttura generale del protocollo HTTPS:
 
-![What is HTTPS filtering?](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
+![Cos'è il filtraggio HTTP?](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
-AdGuard copies properties of the TLS connection that your browser uses:
+AdGuard copia le proprietà della connessione TLS utilizzata dal tuo browser:
 
-- AdGuard uses the same TLS version
-- AdGuard uses the same encrypting methods (ciphers) as your browser
+- AdGuard utilizza la stessa versione TLS
+- AdGuard utilizza gli stessi metodi di crittografia (cifrario) del tuo browser
 
-Effectively, it means that if you use a modern, safe browser, it will take all known TLS problems into account and won’t attempt to use unsafe ciphers.
+Effettivamente, significa che se utilizzi un browser moderno e sicuro, terrà conto di tutti i problemi TLS noti e non tenterà di utilizzare cifrature non sicure.
 
-**What does AdGuard do when there are any doubts about the certificate’s validity?** In such cases, AdGuard entirely ceases filtering of all connections to this domain and leaves the browser in charge of all decisions.
+**Cosa fa AdGuard quando non ci sono dubbi sulla validità del certificato?** In questi casi, AdGuard cessa interamente il filtraggio di tutte le connessioni a questo dominio, lasciando il browser in carica di tutte le decisioni.
 
-## Known issues
+## Problemi noti
 
-HTTPS filtering in AdGuard has its drawbacks. Almost all of them are scheduled to be eliminated in the next few AdGuard versions.
+Il filtraggio HTTPS su AdGuard ha i propri svantaggi. Quasi tutti dovrebbero essere eliminati nelle prossime versioni di AdGuard.
 
-All the issues known to us and the ETAs on their fixes are listed below.
+Tutti i problemi a noi noti e le stime sulle correzioni, sono elencati di seguito.
 
-### Inspecting the original certificate
+### Ispezionare il certificato originale
 
-The most important drawback of the HTTPS filtering mechanism is that it hides the real certificate of a website. You cannot simply check its original certificate because you can only see the one issued by AdGuard.
+Lo svantaggio più importante del meccanismo di filtraggio HTTPS è che nasconde il certificato reale di un sito web. Non puoi semplicemente controllarne il certificato originale, poiché puoi visualizzare soltanto quello emesso da AdGuard.
 
-This problem is solved in [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). This browser extension helps you manage filtering directly from the browser and allows you to inspect the original certificate of any website.
+This problem can be solved in 2 ways:
 
-### Certificate Transparency
+- By using our [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). This browser extension helps you manage filtering directly from the browser and allows you to inspect the original certificate of any website
 
-Thanks to modern cryptography, browsers can usually detect malicious websites that are provisioned with forged or fake SSL certificates. However, current cryptographic mechanisms aren’t so good at detecting malicious websites if they’re provisioned with mistakenly issued certificates or certificates that have been issued by a certificate authority (CA) that’s been compromised or gone rogue. Certificate Transparency aims to remedy these certificate-based threats by making the issuance and existence of SSL certificates open to scrutiny by domain owners, CAs, and domain users.
+  ![Certificate Browser Assistant *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-browser.png)
 
-AdGuard products which use [CoreLibs](https://github.com/AdguardTeam/CoreLibs/) starting with version **1.11** will implement a policy based on [Chrome Certificate Transparency Policy](https://googlechrome.github.io/CertificateTransparency/ct_policy.html).
+- By visiting the *Recent activity* section in AdGuard for Android or the *Filtering log* section in AdGuard for Windows and AdGuard for Mac. While in the Browser Assistant you can only see the certificate of the website, in Recent activity you can inspect the certificate of any server used in a subrequest or browser, with or without the Browser Assistant. To view the certificate using this method, follow the instructions below.
 
-## Have remarks or suggestions?
+#### Inspect original certificate in AdGuard for Android
 
-If you’d like to add something, report any errors, or ask a question, please contact us at: `devteam@adguard.com`.
+1. Click the Statistics icon on the navigation bar.
+2. Go to *Recent activity*.
+3. Click the request whose certificate you want to inspect to open the request details.
+4. Scroll down to *Original certificate*. Click for more info.
+
+![Recent activity AdGuard for Android *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-android.png)
+
+#### Inspect original certificate in AdGuard for Windows
+
+1. Go to *Settings* → *Ad Blocker* → *Filtering log*.
+2. Click the request whose certificate you want to inspect to open the request details.
+3. Under the *TLS* section, click *View website certificate*.
+
+![Filtering log AdGuard for Windows *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-win.png)
+
+#### Inspect original certificate in AdGuard for macOS
+
+1. Click the gear icon. In the drop-down menu, go to *Advanced* → *Filtering log...*.
+2. Click the request whose certificate you want to inspect to open the request details.
+3. Click *View certificate*.
+
+![Filtering log AdGuard for Mac *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-mac.png)
+
+### Trasparenza del Certificato
+
+Grazie alla crittografia moderna, i browser, solitamente, possono rilevare i siti web dannosi, forniti di certificati SSL forgiati o falsi. Tuttavia, i meccanismi crittografici correnti non sono così buoni per rilevarli, se forniti con certificati emessi per errore o da un'autorità di certificazione (CA) che sia stata o sia diventata compromessa. La Trasparenza dei Certificati mira a rimediare a queste minacce, rendendo aperti allo scrutinio l'emissione ed esistenza dei certificati SSL ai titolari del dominio, alle CA e agli utenti del dominio.
+
+I prodotti di AdGuard che utilizzano [CoreLibs](https://github.com/AdguardTeam/CoreLibs/) a partire dalla versione **1.11**, implementeranno una politica basata sulla [Politica di Trasparenza dei Certificati di Chrome](https://googlechrome.github.io/CertificateTransparency/ct_policy.html).
+
+## Hai commenti o suggerimenti?
+
+Se vorresti aggiungere qualcosa, segnalare degli errori, o porre una domanda, ti preghiamo di contattarci a: `devteam@adguard.com`.

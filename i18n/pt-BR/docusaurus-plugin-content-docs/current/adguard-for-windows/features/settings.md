@@ -15,7 +15,7 @@ _Configurações_ é a seção que requer mais atenção. É aqui que você pode
 
 ### Configurações gerais
 
-Aqui você pode definir o idioma e o tema (escuro ou claro), ativar o lançamento do AdGuard na inicialização do sistema e atualizações automáticas silenciosas, escolher o canal de atualização e filtrar o intervalo de verificação de atualização. Além disso, você pode recorrer às Configurações se o AdGuard para Windows não estiver funcionando corretamente e a equipe de suporte solicitar que você [colete _logs de depuração_](/adguard-for-windows/solving-problems/adguard-logs.md).
+Aqui você pode definir o idioma e o tema (escuro ou claro), ativar o lançamento do AdGuard na inicialização do sistema e atualizações automáticas silenciosas, escolher o canal de atualização e filtrar o intervalo de verificação de atualização. Além disso, você pode recorrer às configurações se o AdGuard para Windows não estiver funcionando corretamente e o Suporte ao cliente solicitar que você [colete _Logs de depuração_](/adguard-for-windows/solving-problems/adguard-logs.md).
 
 ![Configurações avançadas \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
 
@@ -40,7 +40,7 @@ No módulo Bloqueador de anuncios, você pode:
 
 Antes de começar a escrever manualmente suas próprias regras, leia nosso [guia de sintaxe](/general/ad-filtering/create-own-filters) detalhado.
 
-### Modo invisível
+### Modo Stealth
 
 Muitos sites coletam informações sobre seus visitantes, como endereços IP, informações sobre o navegador e sistema operacional instalado, resolução de tela e até mesmo de qual página o usuário veio ou foi redirecionado. Algumas páginas da web usam cookies para marcar o navegador e salvar suas configurações pessoais, preferências de usuário ou “reconhecê-lo” em sua próxima visita. O Modo Sigiloso protege suas informações pessoais desses sistemas de coleta de dados e estatísticas.
 
@@ -80,7 +80,7 @@ Existem vários websites aos quais o acesso deve ser restringido a partir de um 
 
 O módulo verifica o conteúdo das páginas web abertas no navegador e filtra aquelas com conteúdo indesejável para crianças: imagens e textos para adultos, linguagem grosseira, violência, propaganda de drogas, etc. As configurações do Controle Parental são protegidas por senha para que a criança não consiga contornar as restrições. Este módulo não apenas bloqueia direções para sites indesejáveis, mas também pode excluir links inadequados para crianças dos resultados da pesquisa.
 
-No módulo Controle Parental você pode ativar a _Pesquisa segura_ e gerenciar a _lista de bloqueios_ e a _lista de permissões_ para personalizar o funcionamento desta opção. Você também pode marcar a caixa _Bloquear download de arquivos executáveis_ para evitar que seu filho baixe e instale software no computador. Existem mais duas opções no módulo _Controle Parental_: você pode selecionar um usuário específico do Windows para ser protegido pelo _Controle Parental_ e definir uma senha para proteger as configurações do AdGuard contra alterações.
+No módulo _Controle parental_ você pode ativar a _Pesquisa segura_ e gerenciar a _lista de bloqueio_ e a _lista de permissões_ para personalizar o funcionamento desta opção. Você também pode marcar a caixa _Bloquear download de arquivos executáveis_ para evitar que seu filho baixe e instale software no computador. Existem mais duas opções no módulo _Controle Parental_: você pode selecionar um usuário específico do Windows para ser protegido pelo _Controle Parental_ e definir uma senha para proteger as configurações do AdGuard contra alterações.
 
 ![Controle parental \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 

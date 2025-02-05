@@ -1,96 +1,96 @@
 ---
-title: Common installer errors
+title: Erori comune ale instalatorului
 sidebar_position: 6
 ---
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multifuncțional care protejează dispozitivul dumneavoastră la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-This article contains some of the most common errors that you can encounter during the AdGuard for Windows installation, and possible ways to solve them.
+Acest articol conține unele dintre cele mai frecvente erori pe care le puteți întâlni în timpul instalării AdGuard pentru Windows și modalitățile posibile de a le rezolva.
 
-### Error 5: Access Denied {#error-5}
+### Eroare 5: Acces refuzat {#error-5}
 
-This error occurs when there's something wrong with permissions. There may be several different reasons why AdGuard installer doesn't have the permissions it requires to properly finish the installation process. You can try the following steps:
+Acest mesaj de eroare apare când permisiunile necesare nu au fost acordate. There may be several different reasons why AdGuard installer doesn't have the permissions it requires to properly finish the installation process. Puteți încerca următorii pași:
 
-- Temporarily disable your antiviruses. Some of them may interfere with the installation, depending on the severity of their settings.
+- Dezactivați temporar antivirusul. Unele dintre ele pot interfera cu instalarea, în funcție de severitatea setărilor lor.
 
-- Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
+- Alegeți un folder de instalare diferit. Este posibil ca folderul de instalare actual să aibă unele restricții de acces. De asemenea, asigurați-vă că nu selectați un disc extern, un disc virtual etc.
 
-- Reboot your computer. Sometimes the permission issues are temporary and can be solved by restarting the PC.
+- Reporniți computerul. Uneori, problemele de permisiuni sunt temporare și pot fi rezolvate prin repornirea PC-ului.
 
-### Error 112: Disk is full, Error 1632: Temporary folder full or inaccessible {#error-112}
+### Eroare 112: Disc plin, Eroare 1632: Folder temporar plin sau inaccesibil {#error-112}
 
-These are two different errors with very similar solutions. As their names suggest, AdGuard installer didn't find enough disk space to complete the installation. There are several things you can attempt to fix the problem:
+Acestea sunt două erori diferite cu soluții foarte asemănătoare. Așa cum sugerează titlurile lor, instalatorul AdGuard nu a găsit suficient spațiu pe disc pentru a finaliza instalarea. Există mai multe lucruri pe care le puteți încerca pentru a remedia problema:
 
-- Uninstall some programs or delete unnecessary files from the drive you were trying to install AdGuard to.
+- Dezinstalați unele programe sau ștergeți fișierele inutile de pe disc la care încercați să instalați AdGuard.
 
-- Download, install, and run [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), a free piece of software by Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstall programs and such. It will help clean up some disk space.
+- Descărcați, instalați și rulați [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), un program gratuit de la Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstalled programs and such. Acesta va ajuta la curățarea unei părți din spațiul pe disc.
 
-- Reboot your computer. Sometimes temporary files can take up a considerable amount of disk space, and restarting your PC is the most reliable way to get rid of them.
+- Reporniți computerul. Uneori, fișierele temporare pot ocupa o cantitate considerabilă de spațiu pe disc, iar repornirea PC-ului este cea mai fiabilă modalitate de a scăpa de ele.
 
-### Error 1601: Windows Installer is not accessible {#error-1601}
+### Eroare 1601: Instalatorul Windows nu este accesibil {#error-1601}
 
-You could say this is a particular sub-case of Error 1603. The possible solutions are similar:
+Puteți spune că aceasta este o subcategorie particulară a Erorii 1603. Soluțiile posibile sunt similare:
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- Porniți și înregistrați din nou serviciul Installator Microsoft. Acest lucru necesită ceva muncă.
 
-    1) Press *Win + R* and enter **services.msc**. 2) Find in the list and double click *Windows Installer*. 3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*. 4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*. 5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    1) Apăsați *Win + R* și introduceți **services.msc**. 2) Găsiți în listă și faceți dublu clic pe *Windows Installer*. 3) Apăsați butonul *Start* sub *Stare serviciu* și apăsați *OK*. Dacă starea serviciului este **în funcțiune**, ar trebui să faceți clic pe *Oprire* mai întâi și apoi să apăsați *Start*. 4) Apăsați *Win + R*, tastați și introduceți ***msiexec /unregister*** și apăsați *Enter*. 5) Apăsați *Win + R* din nou, tastați și introduceți ***msiexec /regserver*** și apăsați *Enter*
 
-- Reboot the PC and start the installation all over again. Sometimes that's enough to fix the problem.
+- Reporniți PC-ul și începeți din nou instalarea. Uneori, asta este suficient pentru a rezolva problema.
 
-### Error 1602: Canceled by user {#error-1602}
+### Eroare 1602: Anulată de utilizator {#error-1602}
 
-If you got this error code, chances are you have interrupted the installation process manually in one way or another. What you can do is:
+Dacă ați primit acest cod de eroare, este foarte probabil să fi întrerupt procesul de instalare manual într-un fel sau altul. Ce puteți face este:
 
-- Don't close the installer window. When the installation is complete, it will close automatically.
+- Nu închideți fereastra instalatorului. Atunci când instalarea este finalizată, se va închide automat.
 
-- If a dialogue window pops up during the installation, hit "Yes" to grant the installer the required permissions. Clicking "No" will cancel the installation.
+- Dacă apare o fereastră de dialog în timpul instalării, apăsați "Da" pentru a permite instalatorului permisiunile necesare. Apăsați "Nu" pentru a anula instalarea.
 
-- Don't start other processes while the installation process is going on.
+- Nu începeți alte procese în timp ce procesul de instalare este în curs.
 
-### Error 1603: Fatal error during installation {#error-1603}
+### Eroare 1603: Eroare fatală în timpul instalării {#error-1603}
 
-The error sounds scarier than it actually is. In reality, this is a rather generic error that can have many different causes, and some of them are easily fixed. Try the following solutions:
+Eroarea sună mai înfricoșător decât este de fapt. În realitate, aceasta este o eroare destul de generică care poate avea multe cauze diferite, iar unele dintre ele sunt ușor de remediat. Încercați următoarele soluții:
 
-- Press the *Win* key, search for *Command Prompt* and run it. There, type in `sfc /scannow` and press *Enter*.
+- Press the *Win* key, search for *Command Prompt* and run it. Acolo, tastați `sfc /scannow` și apăsați *Enter*.
 
-- Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
+- Alegeți un folder de instalare diferit. Este posibil ca folderul de instalare actual să aibă unele restricții de acces. De asemenea, asigurați-vă că nu selectați un disc extern, un disc virtual etc.
 
 - Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- Porniți și înregistrați din nou serviciul Installator Microsoft. Acest lucru necesită ceva muncă.
 
-    1) Press *Win + R* and enter ***services.msc***. 2) Find in the list and double click *Windows Installer*. 3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*. 4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*. 5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    1) Apăsați *Win + R* și introduceți ***services.msc***. 2) Găsiți în listă și faceți dublu clic pe *Windows Installer*. 3) Apăsați butonul *Start* sub *Stare serviciu* și apăsați *OK*. Dacă starea serviciului este **în funcțiune**, ar trebui să faceți clic pe *Oprire* mai întâi și apoi să apăsați *Start*. 4) Apăsați *Win + R*, tastați și introduceți ***msiexec /unregister*** și apăsați *Enter*. 5) Apăsați *Win + R* din nou, tastați și introduceți ***msiexec /regserver*** și apăsați *Enter*
 
-- Acquire full permissions on the drive for installation. It is possible that the error 1603 occurs because you don’t have full permissions on the file location. It's also not as easy as some of the other solutions:
+- Obțineți permisiuni complete pe disc pentru instalare. Este posibil ca eroarea 1603 să apară pentru că nu aveți permisiuni complete asupra locației fișierului. De asemenea, nu este la fel de ușor ca unele dintre celelalte soluții:
 
-    1) Open *File Explorer*, right-click the drive containing the installation location and select *Properties*. 2) Go to *Security* tab and click *Edit*. 3) Single-click *SYSTEM* and ensure that the *Allow* box of every item in *Permissions for SYSTEM* is checked (if it is checkable). Do the same check for *Administrators*. 4) Click *OK* to go back to *Properties* dialog. Then click *Advanced*. 5) Click *Change Permissions*. 6) On *Permissions* tab, double-click *Administrators*. 7) Select *This folder, subfolders and files* for *Applies to* field and check all the available *Basic permissions*. After that, hit *OK*. 8) Do the same operation above (from item 7) for *SYSTEM*. 9) Click *OK* all the way out. Try installing AdGuard again.
+    1) Deschideți *File Explorer*, faceți clic dreapta pe discul care conține locația de instalare și selectați *Proprietăți*. 2) Mergeți la tab-ul *Securitate* și faceți clic pe *Editare*. 3) Single-click *SYSTEM* and ensure that the *Allow* box of every item in *Permissions for SYSTEM* is checked (if it is checkable). Faceți aceeași verificare pentru *Administratori*. 4) Faceți clic pe *OK* pentru a reveni la dialogul *Proprietăți*. Apoi faceți clic pe *Avansat*. 5) Click *Change Permissions*. 6) Pe tab-ul *Permisiuni*, faceți dublu clic pe *Administratori*. 7) Select *This folder, subfolders and files* for *Applies to* field and check all the available *Basic permissions*. După aceea, apăsați *OK*. 8) Faceți aceeași operație de mai sus (de la punctul 7) pentru *SYSTEM*. 9) Faceți clic pe *OK* până la final. Încercați să instalați din nou AdGuard.
 
-### Error 1618: Another installation is already in progress {#error-1618}
+### Eroare 1618: O altă instalare este deja în desfășurare {#error-1618}
 
-This error occurs when there are several instances of AdGuard installer launched at the same time. What to do if you get this error:
+Această eroare apare atunci când există mai multe instanțe ale instalatorului AdGuard lansate în același timp. Ce să faceți dacă primiți această eroare:
 
-- Reboot your PC and start the installer again. When you restart the computer, all ongoing processes will stop, including all copies of the installer.
+- Reporniți PC-ul și începeți din nou instalatorul. Când reporniți computerul, toate procesele în curs se vor opri, inclusiv toate copiile instalatorului.
 
-- Don't make multiple clicks on the installer even if doesn't start right away. Sometimes it may take a few seconds to display the installer UI.
+- Don't make multiple clicks on the installer even if it doesn't start right away. Uneori poate dura câteva secunde pentru a afișa interfața instalatorului.
 
-### Error 1638: Another version of this product is already installed {#error-1638}
+### Eroare 1638: O altă versiune a acestui produs este deja instalată {#error-1638}
 
-It's very likely that you've already installed AdGuard before.
+Este foarte probabil să fi instalat deja AdGuard înainte.
 
-- Check if AdGuard is already installed on your computer. You can do it by pressing the *Win* key and typing in ***AdGuard***.
+- Verificați dacă AdGuard este deja instalat pe computerul dumneavoastră. Puteți face acest lucru apăsând tasta *Win* și tastând ***AdGuard***.
 
-- Maybe there's some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
+- Maybe there're some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
 
-### Other errors {#other}
+### Alte erori {#other}
 
-If you've encountered an error that's not listed above, it is possible that we can solve it by ourselves. But in order to do that, we need log files from you. Please perform the following steps:
+Dacă ați întâmpinat o eroare care nu este listată mai sus, este posibil să o putem rezolva singuri. Dar, pentru a face acest lucru, avem nevoie de fișierele jurnal de la dumneavoastră. Vă rugăm să efectuați următorii pași:
 
-- Find and archive **AdGuard installation logs** as it is described in [this article](../installation-logs).
+- Find and archive the **AdGuard installation logs** as it is described in [this article](../installation-logs).
 
-- Find and save to disk **Event Viewer** logs. [This article](../system-logs) explains how to do that.
+- Find and save to disk the **Event Viewer** logs. [Acest articol](../system-logs) explică cum să faceți asta.
 
-- Please email all these files from two previous steps to the support team at **support@adguard.com** and describe the problem in the message body. Our tech support agents will reply to you as soon as possible.
+- Vă rugăm să trimiteți toate aceste fișiere din două pași anteriori echipei de asistență la **support@adguard.com** și să descrieți problema în corpul mesajului. Agenții noștri de asistență pentru clienți vă vor răspunde cât mai curând posibil.

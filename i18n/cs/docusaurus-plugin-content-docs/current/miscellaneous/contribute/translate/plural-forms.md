@@ -38,7 +38,7 @@ Když se setkáte s překladem, který vyžaduje použití množného čísla, m
 
 Zde je několik zdrojů informací, které můžete použít.
 
-[Průvodce překlady](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) obsahuje široký seznam jazyků. Počet tvarů množného čísla pro různé jazyky se zobrazuje takto: `nplurals=2`, `nplurals=4` atd. Číslice za znaménkem rovnosti `=` znamená počet tvarů množného čísla příslušného jazyka.
+[Průvodce překlady](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) obsahuje široký seznam jazyků. Počet tvarů množného čísla pro různé jazyky se zobrazuje takto: `nplurals=2`, `nplurals=4` atd. Číslice za znaménkem rovnosti `=` indikuje počet tvarů množného čísla příslušného jazyka.
 
 Informace o tvarech množného čísla můžete také získat v databázi [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Pravidla CLDR pro množné číslo uvádějí další slovní tvar pro desetinná čísla (1,5; 2,3; 100,1…), ale v překladech AdGuardu je nepoužíváme.
 
@@ -137,7 +137,7 @@ Překlad z angličtiny do srbštiny by tedy měl znít:
 
 I když je zřejmé, že poslední dvě šablony se neliší, je velmi důležité toto pravidlo dodržet: **Počet šablon by měl odpovídat počtu tvarů množného čísla příslušného jazyka!** (typicky pro tento typ řetězců s množným číslem).
 
-### Krátké shrnutí {#summury}
+## Krátké shrnutí {#summary}
 
 Při překladu projektů AdGuardu věnujte zvýšenou pozornost frázím, které vyžadují použití tvarů množného čísla.
 

@@ -1,5 +1,5 @@
 ---
-title: How to purchase or upgrade
+title: Nasıl satın alınır veya yükseltilir
 sidebar_position: 2
 ---
 

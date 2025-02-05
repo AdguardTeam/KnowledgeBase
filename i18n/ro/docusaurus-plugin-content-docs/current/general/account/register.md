@@ -1,26 +1,32 @@
 ---
-title: How to register
+title: Cum să mă înregistrez
 sidebar_position: 1
 ---
 
-## What an AdGuard account is
+## Ce este un cont AdGuard
 
-[AdGuard account](https://my.adguard.com/) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. Many AdGuard products offer an option to activate them by entering the credentials for your AdGuard account, provided it contains a valid license.
+[Contul AdGuard](https://my.adguard.com/) este un cont de utilizator care stochează informații despre licențele și abonamentele AdGuard, dispozitivele active, istoricul achizițiilor, limba preferată și alte preferințe. Multe produse AdGuard oferă o opțiune de activare prin introducerea acreditivelor pentru contul dvs. AdGuard, cu condiția să conțină o licență validă.
 
-## How to create an account
+## Cum să creați un cont
 
-To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and press the *My Account* button on the top right corner of the screen. Enter your email address and create a password — your account will be registered.
+To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and click the *Log in* button on the top right corner of the screen. Introduceți adresa dvs. de e-mail și creați o parolă – contul dvs. va fi înregistrat.
 
 :::tip
 
-If you enter your email address when purchasing a license, or receive a license linked to your email address as a gift, an account will be created automatically. To set a password, you can follow a link from a transactional or gift letter. You can also register with the above method.
+Dacă introduceți adresa dvs. de e-mail atunci când achiziționați o licență sau primiți o licență asociată cu adresa dvs. de e-mail ca un cadou, un cont va fi creat automat. Pentru a seta o parolă, puteți urma un link dintr-o scrisoare tranzacțională sau de cadou. De asemenea, puteți să vă înregistrați folosind metoda de mai sus.
 
 :::
 
-An account can also be created directly in an AdGuard app. Press the *Log in* or *Activate* button (it can be found in the *License* section or on a separate screen), enter your email and create a password.
+Un cont poate fi creat, de asemenea, direct într-o aplicație AdGuard. Apăsați butonul *Conectați-vă* sau *Activați* (poate fi găsit în secțiunea *Licență* sau pe un ecran separat), introduceți adresa dvs. de e-mail și creați o parolă.
 
-After the account is created, activate it by following the link in the activation email.
+După ce contul este creat, activați-l urmând linkul din e-mailul de activare.
 
-## How to create an account via a social network
+:::tip
+
+After you've registered your account, you can use the *One-time code* option to log in to the application. Enter your email address and choose to enter either your password or the the code sent to your email address.
+
+:::
+
+## Cum să creați un cont printr-o rețea socială
 
 To create an account via a social network, simply follow the [link](https://auth.adguard.com/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.com/kb/general/account/features/).

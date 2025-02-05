@@ -5,24 +5,56 @@ sidebar_position: 6
 
 Protože každá poctivá a dobře odvedená práce by měla být odměněna, mohou aktivní překladatelé na Crowdinu požádat o bezplatný licenční klíč AdGuardu a předplatné VPN.
 
-Chcete-li požádat o **roční licenci AdGuardu** nebo **roční předplatné AdGuard VPN**, musíte přeložit alespoň **500**, respektive **2500** slov.
+## Jak funguje náš systém odměn
 
-Chcete-li zkontrolovat průběh překladů, otevřete projekt, na kterém jste pracovali, klikněte na kartu *Reports* a vyberte možnost *My Contribution*. Pro získání licence můžete sečíst počet přeložených slov v různých projektech.
+### Pro AdGuard licence
 
-## Zde je popsáno, jak funguje náš systém odměn
+- Pro první roční licenci Blokátoru reklam musíte přeložit **1000 slov**.
+- Pro druhou licenci budete potřebovat **dalších 1500 slov** (celkem 2500 slov).
+- Všechny další licence vyžadují **dalších 2500** slov na licenci.
 
-```text
-Pro první roční licenci AdGuardu je třeba přeložit 500 slov.
-Pro druhou licenci potřebujete 1000 slov, tj. dohromady 1500 slov.
-Všechny další licence vyžadují dalších 1500 slov na licenci.
+### Pro AdGuard VPN licence
 
-Pro první roční předplatné AdGuard VPN je třeba přeložit 2500 slov.
-Všechny další předplatné nebo obnovení vyžadují dalších 2500 slov na předplatné.
+- První roční předplatné VPN vyžaduje přeložení **3000 slov**.
+- Všechna další předplatná nebo obnovení vyžadují **dalších 3000 slov** na předplatné.
 
-```
+:::note Omezení
 
-Stačí nám zaslat žádost na adresu [translate@adguard.com](mailto:translate@adguard.com) a licenci dostanete jako projev našeho vděku.
+Jako odměnu za přispění nabízíme licence a předplatné platné maximálně 5 let. V případě Blokátoru reklam nabízíme licence, které pokrývají až 5 zařízení. Nenabízíme doživotní licence.
 
-Kromě toho mohou nejaktivnější překladatelé v budoucnu získat status korektora, pokud o to projeví zájem, a to slibuje ještě více dobrých věcí.
+:::
 
-Každoročně předáváme našim aktivním korektorům dárky s logem AdGuardu. Pokud se chcete stát jedním z nich, napište nám na adresu [translate@adguard.com](mailto:translate@adguard.com).
+## Jak požádat o licenci
+
+Stačí poslat e-mail našemu týmu překladatelů na [translate@adguard.com](mailto:translate@adguard.com) s následujícími informacemi:
+
+- Vaše uživatelské jméno Crowdin
+- Projekty, na kterých jste se podíleli (webové stránky, aplikace, databáze znalostí atd.)
+- E-mailovou adresu, se kterou chcete propojit svou licenci
+- Statistiky vašich překladů (snímek obrazovky nebo celkový počet slov) a typ licence, kterou chcete
+
+**Šablona e-mailu:**
+
+> Hi AdGuard team!
+> 
+> I’ve translated more than 5,000 words in AdGuard for Android in (*your language*) — you can find my stats attached. I would like to request an AdGuard VPN license and an Ad Blocker license for that. My email is (*your email address*). My Crowdin username is (*your username*).
+
+## Jak zkontrolovat průběh překladu
+
+Otevřete projekt, na kterém jste pracovali, klikněte na kartu *Reports*, vyberte možnost *My Contribution*, přejděte dolů, vyberte rozsah dat a vygenerujte report. Bude vypadat přibližně takto.
+
+![Statistics *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/statistics.png)
+
+Pro získání licence můžete sečíst počet přeložených slov v různých projektech.
+
+## Jak se stát korektorem
+
+Naši nejaktivnější překladatelé mohou v budoucnu získat status korektora. Abyste se mohli stát korektorem, musíte po dobu několika měsíců poskytovat trvale vysoce kvalitní překlady.
+
+Vezměte prosím na vědomí, že korektoři nezískávají žádné další licence ani výhody kromě toho, že pomáhají většímu počtu lidí získat přístup k produktům AdGuard v jejich jazyce. Pokud máte zájem stát se jedním z našich korektorů, kontaktujte nás na [translate@adguard.com](mailto:translate@adguard.com).
+
+## Dárky pro aktivní přispěvatele
+
+Nejlepším přispěvatelům každoročně posíláme dárky s propagačním materiálem AdGuard a děkujeme jim na našem [blogu](https://adguard.com/en/blog/best-contributors-2023.html).
+
+![AdGuard merch *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

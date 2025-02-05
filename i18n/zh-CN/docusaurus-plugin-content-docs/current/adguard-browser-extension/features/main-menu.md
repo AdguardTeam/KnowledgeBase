@@ -1,6 +1,6 @@
 ---
-title: 扩展的主菜单
-sidebar_position: 4
+title: 主菜单
+sidebar_position: 1
 ---
 
 :::info

@@ -44,7 +44,7 @@
     "description": "The label of footer link with label=adguard_for_android linking to https://adguard.com/adguard-android/overview.html"
   },
   "link.item.label.adguard_for_mac": {
-    "message": "AdGuard for Mac",
+    "message": "Mac용 AdGuard",
     "description": "The label of footer link with label=adguard_for_mac linking to https://adguard.com/adguard-mac/overview.html"
   },
   "link.item.label.adguard_for_ios": {
@@ -73,7 +73,7 @@
   },
   "link.item.label.userscripts": {
     "message": "유저스크립트",
-    "description": "The label of footer link with label=userscripts linking to /general/userscripts"
+    "description": "The label of footer link with label=userscripts linking to /general/extensions"
   },
   "link.item.label.purchase_license": {
     "message": "Purchase License",

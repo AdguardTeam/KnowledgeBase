@@ -1,6 +1,6 @@
 ---
 title: Další funkce a možnosti
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 :::info
@@ -19,7 +19,7 @@ Na kartě Obecné můžete povolit reklamy ve vyhledávání a [vlastní propaga
 
 Kromě toho zde můžete povolit [_Ochranu proti phishingu a malwaru_](/general/browsing-security).
 
-Konfiguraci nastavení můžete uložit kliknutím na tlačítko _Exportovat nastavení_. Nastavení se uloží jako soubor .json. Chcete-li nahrát dříve uloženou konfiguraci nastavení, použijte funkci _Importovat nastavení_. Můžete to použít i k rychlému přepínání mezi různými profily nastavení nebo dokonce k přenosu konfigurací nastavení mezi různými prohlížeči.
+Konfiguraci nastavení můžete uložit kliknutím na tlačítko _Exportovat nastavení_. Nastavení se uloží jako soubor .json. Chcete-li importovat dříve uloženou konfiguraci nastavení, použijte funkci _Importovat nastavení_. Můžete to použít i k rychlému přepínání mezi různými profily nastavení nebo dokonce k přenosu konfigurací nastavení mezi různými prohlížeči.
 
 ## Další nastavení {#misc}
 

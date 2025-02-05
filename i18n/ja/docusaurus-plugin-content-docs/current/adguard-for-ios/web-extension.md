@@ -1,81 +1,82 @@
 ---
-title: Safari Web extension
+title: Safari Web拡張機能（Safari web extension）
 sidebar_position: 3
 ---
 
-Web extensions add custom functionality to Safari. You can find [more information about Web extensions here](https://developer.apple.com/documentation/safariservices/safari_web_extensions).
+Web拡張機能は、Safariにカスタム機能を追加します。 Web 拡張機能についてより詳しくは、[こちらのAppleドキュメンテーション](https://developer.apple.com/documentation/safariservices/safari_web_extensions)をご覧ください。
 
-![What the Web extension looks like in Safari *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/menu_en.png)
+![SafariでのWeb拡張機能の見た目 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/menu_ja.png)
 
-AdGuard's Safari Web extension is a tool that takes advantage of the new features of iOS 15. It serves to enhance the capabilities of AdGuard for iOS. With it, AdGuard can apply advanced filtering rules and ultimately block more ads.
+AdGuardのSafariウェブ拡張機能は、iOS 15の新機能を活用して AdGuard for iOS の機能を強化してくれるツールです。 これにより、AdGuardは高度なフィルタリングルールを適用することで、より多くの広告をブロックすることができるようになります。
 
-## What it does
+## ウェブ拡張機能の効果
 
-By default, Safari provides only basic tools to content blockers. These tools don't allow the level of performance that can be found in content blockers on other operating systems (Windows, Mac, Android). For example, AdGuard apps on other platforms can use such effective weapons against ads as [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets). Unfortunately, these instruments are absolutely irreplaceable when dealing with more complex cases such as pre-roll ads on YouTube, for example.
+デフォルトでは、Safariはコンテンツブロッカー用にベーシックなツールしか提供していません。 これらのツールでは、他のオペレーティング・システム（Windows、Mac、Android）のコンテンツブロッカー並みのパフォーマンスは発揮できません。 たとえば、他のプラットフォーム上のAdGuardアプリは、 [CSSルール](/general/ad-filtering/create-own-filters#cosmetic-css-rules)、 [拡張CSSセレクター](/general/ad-filtering/create-own-filters#extended-css-selectors)、 [スクリプトレット（Scriptlets）](/general/ad-filtering/create-own-filters#scriptlets)などのような強力な広告対策技術を使用できます。 複雑なケース（YouTubeのプリロール広告など）を扱う場合、こうしたユーティリティはなかなか代用できないものです。
 
-AdGuard's Safari Web extension compliments AdGuard by giving it the ability to employ these types of filtering rules.
+AdGuard の Safari Web 拡張機能は、これらのタイプのフィルタリングルールの適用を可能にすることで、AdGuard for iOS を補完します。
 
-Besides that, AdGuard's Safari Web extension can be used to quickly manage AdGuard for iOS right from the browser. Tap the *Extensions* button — it's the one with a jigsaw icon, depending on your device type it may be located to the left or to the right of the address bar. Find **AdGuard** in the list and tap it.
+さらに、AdGuard の Safari Web 拡張機能は、ブラウザからiOS用AdGuardの管理を可能にします。 Safariで*拡張機能*ボタンをタップします。これはジグソー🧩アイコンのボタンで、デバイスの種類に応じて、アドレスバーの左側または右側に配置されている場合があります。 一覧で **AdGuard** を見つけてタップします。
 
-![Web extension menu *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/ext_adguard_en.png?1)
-> On iPads AdGuard's Safari Web extension is accessible directly by tapping the AdGuard icon in the browser's address bar.
+![ウェブ拡張機能メニュー *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/ext_adguard_ja.png?1)
 
-You will see the following list of options:
+> iPadでは、ブラウザのアドレスバーにあるAdGuardアイコンをタップすることで、AdGuardのSafariウェブ拡張機能に直接アクセスできます。
 
-- **Enabling/disabling protection on the website**. Turning the switch off will disable AdGuard completely for the current website and add a respective exclusion rule. Turning the switch back on will resume protection for the website and delete the rule. Any such change will require some time to take effect.
+以下のオプションのリストが表示されます:
 
-- **Blocking elements on the page manually**. Tap the *Block elements on this page* button to prompt a pop-up for element blocking. Select any element on the page you want to hide, adjust the selection zone, then preview changes and confirm the removal. A corresponding filtering rule will be added to AdGuard (that you can later disable or delete to revert the change).
+- **ウェブサイトでの保護の有効化/無効化**　 スイッチをオフにすると、現在のウェブサイトに対してAdGuardが完全に無効になり、対象の除外ルールが追加されます。 スイッチをオンに戻すと、ウェブサイトでの保護が再開され、除外ルールが削除されます。 この変更が有効になるには、少し時間がかかる場合があります。
 
-- **Report an issue**. Swipe up to bring out the *Report an issue* button. Use it to report a missed ad or any other problem that you encountered on the current page.
+- **ページ上の要素を手動でブロック**　 「*このページで要素をブロックする*」ボタンをタップすると、要素の手動ブロック画面が表示されます。 非表示にしたいページ上の要素を選択し、選択範囲を調整し、結果のプレビューを確認して、削除を確定します。 対応するフィルタリングルールが AdGuard に追加されます。（後でそのルールを無効にしたり、削除して変更を元に戻すことができます。）
 
-## How to enable AdGuard's Safari Web extension
+- **問題・不具合を報告する**　 上にスワイプすると、「*問題を報告する*」ボタンが表示されます。 現在のページですり抜けた広告やその他の問題を報告する際にご利用ください。
 
-:::note
-
-AdGuard's Safari Web extension requires access to the web pages' content to operate, but doesn't use it for any purpose other than blocking ads.
-
-:::
-
-### In the iOS settings
-
-The Web extension is not a standalone tool and requires AdGuard for iOS. If you don't have AdGuard for iOS installed on your device, please [install it first](../installation) and complete the onboarding process to prepare it for work.
-
-Once done, open *Settings → Safari → Extensions*.
-
-![Select "Safari" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings1_en.png)
-
-![Select "Extensions" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings2_en.png)
-
-Find **ALLOW THESE EXTENSIONS** section and then find **AdGuard** among the available extensions.
-
-![Select "AdGuard" in ALLOW THESE EXTENSIONS section *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_en.png)
-
-Tap it, then toggle the switch. On the same screen, set the *All Websites* permission for AdGuard to either *Allow* or *Ask*. If you choose *Allow*, you won't have to give permission every time you visit a new website. If you are unsure, choose *Ask* to grant permissions on a per-site basis.
-
-![Extension settings *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
-
-### In Safari
-
-Alternitavely, you can also turn AdGuard extension on from the Safari browser. Tap the *Extensions* button (if you don't see it next to the address bar, tap the `aA` icon).
-
-![In Safari tap aA icon *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari1_en.png)
-
-Then find the *Manage Extensions* option in the list and tap it. In the opened window turn on the switch next to **AdGuard**.
-
-![Extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari2_en.png)
-
-![Extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari3_en.png)
-
-If you use this method, you may have to go to Safari settings to grant AdGuard extension the necessary permissions anyway.
-
-You should now be able to see AdGuard among the available extensions. Tap it and then the yellow **i** icon. Enable **Advanced protection** by tapping the *Turn on* button and confirming the action.
+## AdGuardのSafariウェブ拡張機能を有効にする方法
 
 :::note
 
-If you use AdGuard for iOS without Premium subscription, you won't be able to enable **Advanced protection**.
+※AdGuardのSafariウェブ拡張機能は、動作するためにウェブページのコンテンツにアクセスする必要がありますが、広告ブロック以外の目的でこのアクセス権限を使用することはありません。
 
 :::
 
-Alternatively, you can enable **Advanced protection** directly from the app, in the **Protection** tab (second from the left in the bottom icon row).
+### iOS設定を使った手順
 
-AdGuard's Safari Web extension only works on iOS versions 15 and later.
+ウェブ拡張機能はスタンドアロンツールではなく、AdGuard for iOS が必要です。 お使いのデバイスに AdGuard for iOS がインストールされていない場合は、まず[インストール](../installation)して初期設定を完了してください。
+
+次に、 *設定 → Safari → 機能拡張* を開きます。
+
+!["Safari"を選択 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings1_ja.png)
+
+!["拡張機能"を選択 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings2_ja.png)
+
+「**これらの機能拡張を許可**」セクションで「**AdGuard**」をタップします。
+
+![これらの拡張機能を許可するセクションで AdGuard を選択 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_ja.png)
+
+「AdGuard」のスイッチをオンにします。 同画面の下の「*すべてのWebサイト*」が「*許可*」または「*尋ねる*」になっていることを確認してください。 「*許可*」を選択すると、新しい Web サイトにアクセスするたびに許可を与える手間がなくなります。 サイトごとに許可を与えたい場合には「*尋ねる*」選択してください。
+
+![拡張機能設定 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_ja.png)
+
+### Safari を使った手順
+
+SafariブラウザからWeb機能拡張を有効にすることもできます。 Safarアドレスバーの横の*拡張機能ボタン*（🧩）をタップします。（見つからない場合は、アドレスバーの横の「`ぁあ`」アイコンをタップします。）
+
+![Safariでぁあアイコンをタップ *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari1_ja.png)
+
+「*機能拡張を管理*」を開きます。 **AdGuard**のスイッチをオンにします。
+
+![拡張機能 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari2_ja.png)
+
+![拡張機能 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari3_ja.png)
+
+この方法を使用した場合でも、Safari の設定に移動して、AdGuard 拡張機能に必要な権限を付与する必要がある場合があります。
+
+これで、利用可能なWeb拡張機能の中にAdGuardが表示されるはずです。 aAメニュー→AdGuardで**ℹ️アイコン**が表示された場合、 そのアイコンをタップして「**高度な保護機能**」を*オン*にしてください。
+
+:::note
+
+※「高度な保護機能」は、AdGuardプレミアム版でのみご利用いただけます。
+
+:::
+
+または、AdGuardアプリから直接、**AdGuardによる保護**（画面下の左から2番目の盾アイコン）で**高度な保護機能**を有効にすることもできます。
+
+※「高度な保護機能」は、iOS 15以降でのみご利用いただけることにご注意ください。

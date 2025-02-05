@@ -1,6 +1,6 @@
 ---
 title: 常规
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 :::info
@@ -11,7 +11,7 @@ sidebar_position: 2
 
 ## 如何打开应用设置
 
-To configure AdGuard for Mac, click the gear icon in the upper right corner of the main window and select _Preferences_.
+要配置 Mac 版 AdGuard，请单击主窗口右上角的齿轮图标并选择「设置」。
 
 ![主窗口 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
 

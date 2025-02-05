@@ -23,7 +23,7 @@ AdGuard se zavazuje chránit vaše soukromí. Přísně dodržujeme naše [Zása
 
 :::
 
-### Shromažďování záznamů ladění
+### Záznam protokolu ladění
 
 Chcete-li shromáždit záznam **ladění** a odeslat nám jej, musíte provést následující kroky:
 

@@ -27,7 +27,7 @@ Mit _Automatisierung_ können Sie AdGuard über Tasker-Apps verwalten.
 
 _Watchdog_ hilft, AdGuard davor zu schützen, vom System deaktiviert zu werden. [Lesen Sie mehr über den Batteriesparmodus von Android](/adguard-for-android/solving-problems/background-work/). Der von Ihnen eingegebene Wert ist das Intervall in Sekunden zwischen den Watchdog-Prüfungen.
 
-Die _Protokollierungsebene_ legt fest, welche Daten über die Funktion der App protokolliert werden sollen. Standardmäßig sammelt die App die Daten über ihre Ereignisse. Die Ebene _Fehlersuche_ protokolliert mehr Ereignisse. Aktivieren Sie sie, wenn das AdGuard-Team sie darum bittet, um ein besseres Verständnis des Problems zu erhalten. [Erfahren Sie mehr über das Sammeln und Senden von Protokollen](/adguard-for-android/solving-problems/log/)
+Die _Protokollierungsebene_ legt fest, welche Daten über die Funktion der App protokolliert werden sollen. Standardmäßig sammelt die App die Daten über ihre Ereignisse. Die Ebene _Fehlersuche_ protokolliert mehr Ereignisse. Aktivieren Sie sie, wenn das AdGuard-Team sie darum bittet, um ein besseres Verständnis des Problems zu erhalten. [Lesen Sie mehr über das Erfassen und Senden von Protokollen](/adguard-for-android/solving-problems/log/)
 
 ![Erweitert \*mobile\_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
@@ -133,7 +133,7 @@ In diesem Abschnitt finden Sie Informationen über Ihre Lizenz und können sie v
 - Eine AdGuard-Lizenz kaufen, um [die Funktionen der Vollversion](/adguard-for-android/features/free-vs-full) zu aktivieren
 - Sich bei Ihrem AdGuard-Konto anmelden oder den Lizenzschlüssel eingeben, um Ihre Lizenz zu aktivieren
 - Sich anmelden, um Ihren 7-tägigen Testzeitraum zu aktivieren, falls Sie ihn noch nicht genutzt haben
-- Den Lizenzstatus über das Menü mit den drei Punkten (⋮) aktualisieren
+- Aktualisieren Sie den Lizenzstatus über das Menü mit den drei Punkten (⋮)
 - Das AdGuard-Konto öffnen und Ihre Lizenz dort verwalten
 - Ihre Lizenz zurücksetzen — zum Beispiel, wenn Sie das Gerätelimit für diese Lizenz erreicht haben und eine andere Lizenz beantragen möchten
 

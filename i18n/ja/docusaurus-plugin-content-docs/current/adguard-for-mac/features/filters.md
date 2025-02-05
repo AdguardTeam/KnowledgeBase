@@ -1,6 +1,6 @@
 ---
 title: フィルタ
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 :::info
@@ -13,21 +13,21 @@ sidebar_position: 3
 
 ![Filters](https://cdn.adtidy.org/content/kb/ad_blocker/mac/filters.png)
 
-Filter lists are sets of rules written using a [special syntax](/general/ad-filtering/create-own-filters). AdGuard interprets and implements these rules to block ads, trackers, and annoyances. Some filters (for example, AdGuard Base filter, Tracking Protection filter, or EasyList) are pre-installed, others can be installed additionally.
+フィルターリストは、[特別な構文](/general/ad-filtering/create-own-filters)を使って書かれたルールのセットです。 AdGuardは、これらのルールを解釈・実行し、広告、トラッカー、迷惑要素をブロックします。 一部のフィルタ（AdGuard ベースフィルタ、AdGuard 日本語フィルタ、AdGuard トラッキング防止フィルタ、EasyList など）はプリインストールされていますが、その他のフィルタは追加でインストールできます。
 
-We recommend enabling the following filters:
+以下のフィルタを有効にしておくことをお勧めします:
 
 - AdGuard ベースフィルタ
-- AdGuard Tracking Protection filter and AdGuard URL Tracking filter
-- AdGuard Annoyances filter
-- Filters for your language
+- AdGuard 追跡防止フィルタと AdGuard URL追跡防止フィルタ
+- AdGuard 迷惑要素フィルタ
+- お使いの言語に応じたフィルタ（AdGuard 日本語フィルタなど）
 
-These filters are important for blocking most ads, trackers, and annoying elements. For more advanced ad blocking, you can use custom filters and user rules.
+これらのフィルタは、広告、トラッカー、迷惑要素のほとんどをブロックしてくれます。 より高度な広告ブロックには、カスタムフィルタとユーザールールを使用できます。
 
-To add a filter, click `+` in the lower left corner of the list. To enable a filter, select its checkbox.
+フィルタを追加するには、リストの左下にある`+`をクリックします。 フィルタを有効にするには、そのチェックボックスにチェックを入れます。
 
 ## ユーザールール
 
-In AdGuard for Mac, user rules are located in _Filters_. To create a rule, click `+`. To enable a rule, select its checkbox. To export or import rules, open the context menu.
+AdGuard for Mac では、ユーザールールは「_フィルタ_」にあります。 ルールを作成するには、`+`をクリックします。 ルールを有効にするには、そのチェックボックスを選択します。 ルールをエクスポートまたはインポートするには、コンテキストメニューを開きます。
 
 ![User rules: context menu](https://cdn.adtidy.org/content/kb/ad_blocker/mac/rules.png)

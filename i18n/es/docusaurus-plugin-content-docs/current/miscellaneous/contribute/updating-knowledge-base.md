@@ -1,28 +1,28 @@
 ---
-title: Actualizando la Base de conocimientos
+title: Updating the Knowledge Base
 sidebar_position: 2
 ---
 
-El objetivo de la base de conocimientos de AdGuard Ad Blocker es brindar a todos la información más actualizada sobre todo tipo de temas relacionados con AdGuard. Pero las cosas cambian constantemente y, a veces, un artículo ya no refleja el estado actual de las cosas.
+The goal of AdGuard Ad Blocker Knowledge Base is to provide everyone with the most up-to-date information on all kinds of AdGuard-related topics. Pero las cosas cambian constantemente y, a veces, un artículo ya no refleja el estado actual de las cosas.
 
 Por eso hemos colocado todo el contenido de nuestra base de conocimiento en [GitHub](https://github.com/AdguardTeam/KnowledgeBase), y ahora, literalmente, cualquiera puede contribuir a ella sugiriendo modificaciones y traducciones de los artículos existentes, así como otros totalmente nuevos.
 
 ## Cómo sugerir un cambio o redactar un nuevo artículo {#suggest-change}
 
-Puedes sugerir cambios a los artículos actuales y agregar otros nuevos a nuestra base de conocimientos utilizando la funcionalidad de GitHub mencionada anteriormente. Si no estás familiarizado con los principios de trabajo con la plataforma, comienza leyendo la documentación de [GitHub](https://docs.github.com/en).
+You can suggest changes to current articles and add new ones to our Knowledge Base using the functionality of GitHub mentioned above. Si no estás familiarizado con los principios de trabajo con la plataforma, comienza leyendo la documentación de [GitHub](https://docs.github.com/en).
 
-Una vez que estés listo para comenzar, trabaja en el repositorio [KnowledgeBase](https://github.com/AdguardTeam/KnowledgeBase). Todos los textos de nuestra Base de conocimientos están escritos en lenguaje de marcado `Markdown`. Tenlo en cuenta cuando edites o escribas artículos. Sigue [este enlace](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) para aprender más sobre la sintaxis de Markdown.
+Una vez que estés listo para comenzar, trabaja en el repositorio [KnowledgeBase](https://github.com/AdguardTeam/KnowledgeBase). All texts in our Knowledge Base are written in `Markdown` markup language. Tenlo en cuenta cuando edites o escribas artículos. Sigue [este enlace](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) para aprender más sobre la sintaxis de Markdown.
 
-El sitio web de Base de conocimiento se construye utilizando Docusaurus 2 - un moderno generador de sitios web estáticos. Al sugerir cambios o adiciones, ten en cuenta que todos los documentos deben cumplir con los principios de la plataforma. Puedes leer sobre ellos en [Guías de Docusaurus](https://docusaurus.io/docs/category/guides).
+The Knowledge Base website is built using Docusaurus 2 — a modern static website generator. Al sugerir cambios o adiciones, ten en cuenta que todos los documentos deben cumplir con los principios de la plataforma. Puedes leer sobre ellos en [Guías de Docusaurus](https://docusaurus.io/docs/category/guides).
 
-Puedes implementar esta base de conocimiento localmente en tu computadora para obtener una vista previa de los cambios que sugiere. Puede encontrar instrucciones detalladas sobre cómo hacerlo [en el archivo README](https://github.com/AdguardTeam/KnowledgeBase#readme) de la página de GitHub de esta Base de conocimientos.
+You can deploy this Knowledge Base locally on your computer to preview the changes you suggest. Detailed instructions on how to do this can be found [in the README file](https://github.com/AdguardTeam/KnowledgeBase#readme) on this Knowledge Base's GitHub page.
 
 ## Traducción de artículos {#translate-adguard}
 
-La traducción de los artículos existentes de la Base de conocimientos se realiza a través de la [ plataforma Crowdin](https://crowdin.com/profile/adguard). Todos los detalles sobre las traducciones y el trabajo con Crowdin se pueden consultar [en el artículo ](../translate/guidelines) dedicado de la Base de conocimientos del bloqueador de anuncios AdGuard.
+Translation of the existing articles of the Knowledge Base is carried out on [the Crowdin platform](https://crowdin.com/profile/adguard). All the details about translations and working with Crowdin can be found [in the dedicated article](../translate/guidelines) of the AdGuard Ad Blocker Knowledge Base.
 
-Cuando se trabaja en los artículos de la Base de conocimientos de AdGuard, es posible que encuentres con cadenas que contienen formas plurales que debes traducir con especial atención. [En un artículo separado](../translate/plural-forms), describimos en detalle las dificultades que pueden surgir al traducir cadenas con formas plurales, y dimos amplias instrucciones sobre cómo trabajar con ellas en la plataforma Crowdin.
+When working on AdGuard Knowledge Base articles, you may meet strings containing plural forms that you should translate with extra attention. [En un artículo separado](../translate/plural-forms), describimos en detalle las dificultades que pueden surgir al traducir cadenas con formas plurales, y dimos amplias instrucciones sobre cómo trabajar con ellas en la plataforma Crowdin.
 
 ## Trabajar en los temas pendientes
 
-A veces existen [tareas abiertas](https://github.com/AdguardTeam/KnowledgeBase/issues) en relación con la actualización de la Base de conocimientos. Puedes ayudarnos a acelerar su finalización [del mismo modo](#suggest-change) que sugerirías cualquier otro cambio en la Base de conocimientos. Elige cualquier tema que te parezca atractivo y empieza a trabajar en él. Si tienes alguna pregunta, puedes hacerla en los comentarios de ese tema.
+Sometimes there exist [open tasks](https://github.com/AdguardTeam/KnowledgeBase/issues) related to updating the Knowledge Base. You can help us speed up their completion [the same way](#suggest-change) you would suggest any other changes to the Knowledge Base. Elige cualquier tema que te parezca atractivo y empieza a trabajar en él. Si tienes alguna pregunta, puedes hacerla en los comentarios de ese tema.

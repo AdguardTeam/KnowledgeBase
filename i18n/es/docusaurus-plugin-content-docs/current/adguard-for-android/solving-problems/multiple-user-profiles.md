@@ -1,98 +1,98 @@
 ---
-title: Problems caused by multiple user profiles
+title: Problemas causados por múltiples perfiles de usuario
 sidebar_position: 10
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-In this article you will find the methods on how to solve problems with AdGuard when you set up *multiple accounts* or *Restricted Profiles* on your Android devices.
+En este artículo, encontrarás los métodos sobre cómo resolver problemas con AdGuard cuando configura *múltiples cuentas* o *Perfiles restringidos* en tus dispositivos Android.
 
-## Problems caused by multiple user profiles
+## Problemas causados por múltiples perfiles de usuario
 
-On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. This happens because AdGuard is installed for a different user profile on the device.
+En Android 9 y versiones posteriores, si AdGuard está instalado para más de un perfil de usuario en tu dispositivo, puedes encontrar problemas al desinstalar la aplicación. Cuando desinstalas AdGuard de un perfil de usuario, la aplicación seguirá apareciendo en la lista de aplicaciones, pero no podrás desinstalarla ni reinstalarla. Esto sucede porque AdGuard está instalado para un perfil de usuario diferente en el dispositivo.
 
-If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
+Si intentas reinstalar AdGuard después de un intento de eliminación fallido, verás el mensaje de error "No puedes instalar la aplicación en tu dispositivo”.
 
-To solve this problem, you need to uninstall the application for all users: go to Settings → All apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
+Para solucionar este problema, debes desinstalar la aplicación para todos los usuarios: ve a Ajustes → Todas las apps → AdGuard. Toca el menú de tres puntos en la esquina superior derecha y selecciona *Desinstalar para todos los usuarios*.
 
-![Uninstall *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
+![Desinstalar *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 
-## Problems caused by using a Restricted Mode profile
+## Problemas causados por el uso de un perfil en modo restringido
 
-The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. If you have such a profile, **AdGuard**, like other applications that use VPN, gets restrictions on selective filtering of VPN traffic. As a result, AdGuard cannot launch protection in a **local VPN mode**. Also, one of the reasons for this situation may be using **Dual App/Dual Messenger profile** on your device. Below are described the recommendations that you can apply when this problem occurs.
+Los propietarios de teléfonos, tabletas o televisores con el sistema operativo Android 7+ pueden enfrentar el problema causado por el uso de **un perfil con modo restringido**. Si tienes un perfil de este tipo, **AdGuard**, al igual que otras aplicaciones que utilizan VPN, obtiene restricciones en el filtrado selectivo del tráfico VPN. Como resultado, AdGuard no puede iniciar la protección en un **modo VPN local**. Además, una de las razones de esta situación puede ser el uso del **Perfil Dual App/Dual Messenger** en tu dispositivo. A continuación, se describen las recomendaciones que puedes aplicar cuando se presenta este problema.
 
-### Solutions
+### Soluciones
 
-You have three ways to solve the issue:
+Tienes tres formas de resolver el problema:
 
-### Option 1: Grant permissions to AdGuard using ADB
+### Opción 1: Conceder permisos a AdGuard mediante ADB
 
 :::note
 
-This approach is available starting from **AdGuard v3.5 nightly 6**. If you're using an older version, you can get the latest update [here](https://adguard.com/adguard-android/overview.html).
+Este enfoque está disponible a partir de **AdGuard v3.5 nightly 6**. Si estás usando una versión anterior, puedes obtener la última actualización [aquí](https://adguard.com/adguard-android/overview.html).
 
 :::
 
-1. Activate the **developer mode** and enable **USB debugging**:
+1. Activa el **modo de desarrollador** y habilita la **depuración USB**:
 
-    - Open the **Settings** app phone;
-    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
-    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
-    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+    - Abre la aplicación **Configuración** en tu celular;
+    - Ve a la sección **Sistema** (último elemento en el menú de configuración). En esta sección, encuentra el subelemento **Acerca del teléfono**;
+    - Toca en **Número de build** 7 veces. Después de eso, recibirás una notificación que dice **Ahora eres un desarrollador** (Si es necesario, introduce un código de desbloqueo para el dispositivo);
+    - Abre **Configuración del sistema** → **Opciones de desarrollador** → Desplázate hacia abajo y habilita **depuración USB** → Confirma que la depuración está habilitada en la ventana **Permitir la depuración USB** después de leer la advertencia cuidadosamente.
 
     :::note
 
-    If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
+    Si encuentras alguna dificultad o tienes preguntas adicionales, puedes encontrar instrucciones completas [aquí](https://developer.android.com/studio/debug/dev-options).
 
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Instala y configura](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; En la plataforma Windows, **los propietarios de Samsung** pueden necesitar instalar [esta utilidad](https://developer.samsung.com/mobile/android-usb-driver.html).
 
-1. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
+1. Conecta tu dispositivo usando un ** cable USB** a la computadora o portátil en la que instalaste **ADB**;
 
-1. Open **the command line** on your PC:
+1. Abre **la línea de comando** en tu PC:
 
-    - **Cmd.exe** if you are using **Windows**;
-    - **Terminal** if you are using **macOS**;
+    - **Cmd.exe** si estás usando **Windows**;
+    - **Terminal** si estás usando **macOS**;
 
-1. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
+1. Introduce el comando `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` y pulsa **Enter**.
 
-### Option 2: Remove *restricted user account*
+### Opción 2: Elimina la *cuenta de usuario restringida*
 
-About how to manage user accounts from an Android device you can [find here](https://support.google.com/a/answer/6223444?hl=en).
+Sobre cómo gestionar cuentas de usuario desde un dispositivo [Android](https://support.google.com/a/answer/6223444?hl=en) puedes [encontrar información aquí](https://support.google.com/a/answer/6223444?hl=en).
 
 :::note
 
-In some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual messenger or Dual app features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
+En algunos casos, se crean cuentas de usuario restringidas de forma implícita y no se pueden eliminar. Por ejemplo, cuando utilizas las funciones de mensajería dual o de aplicación dual en dispositivos **Samsung** o **LG**. A continuación, puedes leer cómo solucionar el problema en estos casos.
 
 :::
 
-### Option 3: Use AdGuard in *Local HTTP proxy mode* (requires root)
+### Opción 3: Usar AdGuard en *modo proxy HTTP local* (requiere root)
 
-To enable this mode, open **AdGuard Settings** → **Network** → **Filtering method** → **Local HTTP proxy**
+Para habilitar este modo, abre **Configuración de AdGuard** → **Red** → **Método de filtrado** → **Proxy HTTP local**
 
-### LG and Samsung devices
+### Dispositivos LG y Samsung
 
-Owners of **LG** or **Samsung** phones may also encounter a similar issue. It can be caused by using **Dual App/Dual Messenger** function (which automatically creates a restricted profile). To solve this issue, you need to disable this feature.
+Los propietarios de los teléfonos **LG** o **Samsung** también pueden encontrar un problema similar. Puede ser causada por el uso de la **función dual App/Dual Messenger** (que crea automáticamente un perfil restringido). Para resolver este problema, deshabilita esta función.
 
 ### Samsung
 
-- Open **Settings**;
-- Press **Advanced**;
-- Scroll down and press **Dual messenger**;
-- Disable the **Dual messenger** for all apps;
-- Lock the device for 5 minutes;
-- Unlock the screen and try again to create the VPN profile.
+- Abre **Configuración**;
+- Presiona **Avanzado**;
+- Desplázate hacia abajo y pulsa **Dual messenger**;
+- Desactivar el **Dual messenger** para todas las aplicaciones;
+- Bloquea el dispositivo durante 5 minutos;
+- Desbloquea la pantalla y vuelve a intentar crear el perfil VPN.
 
 ### LG
 
-- Open **Settings**;
-- Choose **General** tab;
-- Scroll down and press **Dual app**;
-- Remove all apps from the list;
-- Reboot your device.
+- Abre **Configuración**;
+- Selecciona la pestaña **General**;
+- Desplázate hacia abajo y pulsa **Dual app**;
+- Elimina todas las aplicaciones de la lista;
+- Reinicia tu dispositivo.

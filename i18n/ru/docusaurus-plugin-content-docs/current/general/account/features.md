@@ -1,5 +1,5 @@
 ---
-title: Что можно делать в аккаунте AdGuard
+title: What can be done in the AdGuard account
 sidebar_position: 2
 ---
 
@@ -7,14 +7,14 @@ sidebar_position: 2
 
 ## Управление настройками личного кабинета
 
-В разделе *Настройки* аккаунта AdGuard вы можете обновить или сбросить пароль, изменить адрес электронной почты, включить [двухфакторную аутентификацию](../2fa), просмотреть данные, сохранённые о вас AdGuard, и выбрать язык личного кабинета и уведомлений.
+In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable one-time code login or [two-factor authentication](../2fa), view the data stored about you by AdGuard, and select the language of your account and notifications.
 
 В этом разделе вы также можете управлять настройками электронной почты:
 
-- получать транзакционные письма,
-- получать ежемесячные рассылки AdGuard,
-- получать письма о специальных предложениях и акциях AdGuard,
-- отправлять уведомления об открытии письма в AdGuard.
+- Receive AdGuard newsletter
+- Receive transactional emails
+- Send read receipts to AdGuard
+- Opt-out preferences
 
 ## Управление лицензиями
 
@@ -27,12 +27,12 @@ sidebar_position: 2
 - улучшенной,
 - отменённой. Вы также можете обновить свои платёжные реквизиты.
 
-Устройства, привязанные к вашим лицензиям Блокировщика рекламы AdGuard, можно отменить или переименовать. Вы можете отвязать неиспользуемые устройства, нажав на значок крестика рядом с ними.
+Устройства, привязанные к вашим лицензиям Блокировщика рекламы AdGuard, можно отменить или переименовать. To unbind unused devices, click the number of bound devices next to *Devices*, then select the right arrow → *Remove*.
 
 ## Просмотр покупок
 
-В разделе «История покупок» отображаются все лицензии, которые вы когда-либо приобретали, используя адрес электронной почты, на которую зарегистрирован личный кабинет AdGuard. You will also find there information about the date of purchase, order ID, payment method, and cost of the purchase.
+The *Purchases* section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. Вы также найдете там информацию о дате покупки, номере заказа, способе оплаты и стоимости покупки.
 
-## Связаться с поддержкой
+## Activity
 
-Вкладка «Поддержка» содержит полезные ссылки, которые помогут вам решить проблемы или найти ответы на ваши вопросы о продуктах AdGuard. Они разделены на шесть разделов: FAQ, «Отправить отчёт об ошибке/новое предложение», «Сообщить о некорректной блокировке», «Написать в поддержку», «База знаний» и «Обсудить».
+The *Activity* tab allows you to monitor login activity for your AdGuard account. It displays the email address used, location, and login date. You can also filter records by product: *All products*, *AdGuard Ad Blocker*, *AdGuard VPN*, *AdGuard DNS*.

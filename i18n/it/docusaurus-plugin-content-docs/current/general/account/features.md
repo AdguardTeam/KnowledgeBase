@@ -1,5 +1,5 @@
 ---
-title: Cosa si può fare nel Profilo di AdGuard
+title: What can be done in the AdGuard account
 sidebar_position: 2
 ---
 
@@ -7,14 +7,14 @@ Nel tuo profilo, puoi gestire le tue licenze, i dispositivi a esse associati, i 
 
 ## Gestire le impostazioni del profilo
 
-Nella sezione delle *Impostazioni* del tuo profilo di AdGuard, puoi aggiornare o ripristinare la tua password, cambiare il tuo indirizzo email, abilitare l'[autenticazione a due fattori](../2fa), visualizzare i dati memorizzati su di te da AdGuard e scegliere la lingua del tuo profilo personale e delle tue notifiche.
+In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable one-time code login or [two-factor authentication](../2fa), view the data stored about you by AdGuard, and select the language of your account and notifications.
 
 In questa sezione, puoi anche gestire le tue preferenze email:
 
-- ricevi le email transazionali,
-- ricevi le newsletter mensili di AdGuard,
-- ricevi le email su offerte speciali e promozioni di AdGuard,
-- invia le conferme di lettura ad AdGuard quando apri le email.
+- Receive AdGuard newsletter
+- Receive transactional emails
+- Send read receipts to AdGuard
+- Opt-out preferences
 
 ## Gestione delle licenze
 
@@ -27,12 +27,12 @@ Le [licenze di AdGuard](../../license/what-is) possono essere:
 - aggiornate,
 - annullate. Inoltre, puoi aggiornare i tuoi dettagli di pagamento.
 
-I dispositivi collegati alle tue licenze di AdGuard Ad Blocker sono collegabili o scollegabili. Puoi scollegare i dispositivi inutilizzati, cliccando sull'icona della croce affianco a essi.
+I dispositivi collegati alle tue licenze di AdGuard Ad Blocker sono collegabili o scollegabili. To unbind unused devices, click the number of bound devices next to *Devices*, then select the right arrow → *Remove*.
 
 ## Visualizza gli acquisti
 
-La sezione dello Storico degli acquisti mostra tutte le licenze mai acquistate utilizzando il profilo email registrato con il tuo profilo di AdGuard. Troverai lì tutte le informazioni sulla data d'acquisto, ID dell'ordine, metodo di pagamento e costo dell'acquisto.
+The *Purchases* section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. Troverai lì tutte le informazioni sulla data d'acquisto, ID dell'ordine, metodo di pagamento e costo dell'acquisto.
 
-## Contattare il supporto
+## Activity
 
-La scheda del Supporto contiene i link utili per aiutarti a risolvere problemi e trovare risposte alle tue domande sui prodotti di AdGuard. Sono divisi in sei sezioni: FAQ, Invia una segnalazione di bug/richiesta di funzionalità, Segnala blocco errato, Contatta il supporto, Base di conoscenza e Discuti.
+The *Activity* tab allows you to monitor login activity for your AdGuard account. It displays the email address used, location, and login date. You can also filter records by product: *All products*, *AdGuard Ad Blocker*, *AdGuard VPN*, *AdGuard DNS*.

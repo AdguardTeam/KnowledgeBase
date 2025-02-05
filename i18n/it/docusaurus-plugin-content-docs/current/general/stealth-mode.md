@@ -1,9 +1,9 @@
 ---
-title: Modalità Invisibilità
+title: Modalità Invisibilità (Protezione dal tracciamento)
 sidebar_position: 4
 ---
 
-Molti siti web raccolgono informazioni sui propri visitatori, quali il loro indirizzo IP, browser e sistema operativo installati, risoluzione dello schermo e persino la pagina da cui un visitatore è stato reindirizzato. Alcune pagine web utilizzano i cookie per contrassegnare il tuo browser e salvare le tue impostazioni personali e preferenze o per "riconoscerti" alla tua visita successiva. La Modalità Invisibilità salvaguarda le tue informazioni personali da tali sistemi di raccolta di dati e statistiche.
+Molti siti web raccolgono informazioni sui propri visitatori, quali il loro indirizzo IP, browser e sistema operativo installati, risoluzione dello schermo e persino la pagina da cui un visitatore è stato reindirizzato. Alcune pagine web utilizzano i cookie per contrassegnare il tuo browser e salvare le tue impostazioni personali e preferenze o per "riconoscerti" alla tua visita successiva. *La modalità invisibile* (o *Protezione dal tracciamento* in AdGuard per Windows e anche nell'estensione del browser AdGuard) protegge le tue informazioni personali da tali sistemi di raccolta dati e statistiche.
 
 Puoi regolare in modo flessibile il funzionamento della Modalità Invisibilità: ad esempio, puoi impedire al sito web di ricevere la richiesta di ricerca che hai utilizzato per trovarlo su Internet, eliminare automaticamente i cookie di terze parti, disattivare la condivisione della posizione del browser, utilizzabile per tracciare la tua posizione e nascondere il tuo vero indirizzo IP o persino sostituirlo con uno arbitrario.
 
@@ -17,21 +17,21 @@ Alcune opzioni potrebbero non essere disponibili a seconda del prodotto specific
 
 ## Generali {#general}
 
-### Nascondi le tue richieste di ricerca {#searchqueries}
+### Nascondi le richieste di ricerca {#searchqueries}
 
 Quando vieni diretto a un sito web da Google, Yahoo o qualsiasi altro motore di ricerca, quest'opzione nasconde la richiesta di ricerca che hai utilizzato per trovare quel sito web.
 
-### Chiedi ai siti web di non tracciarti {#donottrack}
+### Invia segnali per disattivare il tracciamento {#donottrack}
 
 Invia i segnali di [Controllo Globale della Privacy](https://globalprivacycontrol.org/#gpc-spec) e [Non Tracciare](https://en.wikipedia.org/wiki/Do_Not_Track) ai siti web che visiti.
 
-### Elimina i parametri di tracciamento dagli URL
+### Elimina i parametri di tracciamento dagli URL {#removetracking}
 
 Se abiliti quest'opzione, AdGuard eliminerà i parametri di tracciamento come `utm_*` e `fb_ref` dagli URL delle pagine.
 
 ### Metodi di tracciamento {#tracking-methods}
 
-### Autodistruzione dei cookie di terze parti {#3p-cookie}
+### Elimina i cookie di terze parti {#3p-cookie}
 
 I siti web utilizzano i cookie per memorizzare le tue informazioni e preferenze, quali la lingua selezionata, la tua posizione o l'elenco di articoli nel tuo carrello. Quando torni su un sito web, il tuo browser reinvia i cookie a esso appartenenti, che gli consentono di "ricordare" i tuoi dati.
 
@@ -45,7 +45,7 @@ Quest'impostazione elimina tutti i cookie di terze parti, incluse le informazion
 
 :::
 
-### Autodistruzione dei cookie proprietari {#1p-cookie}
+### Elimina i cookie proprietari (non consigliato) {#1p-cookie}
 
 Imposta un periodo di tempo (in minuti), al termine di cui saranno distrutti tutti i cookie. Imposta il timer a 0 per bloccarli completamente.
 
@@ -55,7 +55,7 @@ Sconsigliamo di abilitae quest'opzione, poiché potrebbe interferire gravemente 
 
 :::
 
-### Disabilita la cache per le richieste di terze parti {#3p-cache}
+### Blocca le intestazioni ETag e If-None-Match {#3p-cache}
 
 Quando un browser indirizza una pagina, il server gli assegna un ETag. Questo, è utilizzato dal browser per salvare i contenuti della pagina nella cache. Alle successive richieste, il browser invia l'ETag al server corrispondente, dunque, consentendogli di imparare l'identità del visitatore. Finché i file dei siti sono nella cache, l'ETag è inviato ogni volta che il tuo browser accede a questo sito. Se il sito ha dei contenuti incorporati da un altro server (come un'immagine o un iframe), quel server può tracciare le tue attività a tua insaputa.
 
@@ -95,28 +95,34 @@ Inoltre, puoi impostare un valore arbitrario per il Referente, inserendolo nel c
 
 Tieni presente che per poter filtrare il traffico, le applicazioni AdGuard "intercettano" le richieste dal browser al server. Le richieste effettuate agli server di annunci, tracciamento e di phishing possono essere modificate prima dell'invio al server o bloccate completamente. Lo stesso valore per l'opzione *Nascondi Referente dalle terze parti*: AdGuard intercetta le richieste HTTP(S), in particolare per rimuovere o modificare l'intestazione del Referente, se quest'opzione è abilitata. Tuttavia, ciò accade solo dopo che queste richieste "lasciano" il browser. Ciò significa che se monitori il Referente nel browser (ad esempio, con l'aiuto degli Strumenti per Sviluppatori di Chrome), vedrai il Referente originale, poiché la richiesta non ha ancora raggiunto AdGuard. Puoi utilizzare software come [Fiddler](https://www.telerik.com/fiddler) per assicurarti che il Referente sia alterato correttamente.
 
-Al contrario, a causa della natura stessa di tutte le estensioni del browser, l'Estensione di browser AdGuard funziona "all'interno" del browser. Altererà il Referente in quel momento, quindi, gli Strumenti per Sviluppatori mostreranno il Referente desiderato per le tue richieste.
+D'altra parte, a causa della natura stessa di tutte le estensioni del browser, l'Estensione Browser AdGuard funziona "all'interno" del browser. Altererà il Referente in quel momento, quindi, gli Strumenti per Sviluppatori mostreranno il Referente desiderato per le tue richieste.
 
-### Nascondi il tuo User-Agent {#useragent}
+### Nascondi User Agent {#useragent}
 
 Quando visiti un sito web, il tuo browser invia le sue informazioni al server. Somiglia a una riga di testo, parte di una richiesta HTTP, che inizia per "User-Agent:". Solitamente, include il nome e la versione del browser, il sistema operativo e le impostazioni della lingua. Escludiamo l'User-Agent dalle informazioni identificative, così che gli inserzionisti non le possano ottenere.
 
 Inoltre, puoi impostare un valore arbitrario per l'User-Agent, inserendolo nel campo User-Agent Personalizzato. Per utilizzare l'User-Agent predefinito, lascia vuoto il campo.
 
-### Nascondi il tuo indirizzo IP {#ip}
+### Nascondi indirizzo IP {#ip}
 
 La Modalità Invisibilità non può nascondere il tuo indirizzo IP. Tuttavia, possiamo nasconderlo così che i siti web che visiti penseranno che tu sia un proxy. Ciò, talvolta, aiuta e i siti web ignorano il tuo indirizzo IP reale.
 
 Puoi impostare un indirizzo IP arbitrario, che vorresti fosse percepito dagli altri come tuo, semplicemente inserendolo nel campo corrispondente. Per utilizzare l'indirizzo IP predefinito, lascia vuoto il campo.
 
-### Rimuovi l'intestazione X-Client-Data dalle richieste HTTP {#xclientdata}
+### Rimuovi intestazione X-Client-Data {#xclientdata}
 
 Proibisce a Google Chrome di inviare le proprie informazioni sulla versione e sulle modifiche, con richieste ai domini di Google (inclusi Double Click e Google Analytics).
 
-### Protezione da IPP {#dpi}
+### Proteggiti dall'IAP {#dpi}
 
 L'Ispezione Approfondita del Pacchetto è un sistema di analisi profonda e filtraggio del traffico per contenuto del pacchetto, nonché l'accumulo di dati statistici. Utilizzando questa tecnologia, gli ISP possono controllare il traffico in transito e limitare i contenuti per i loro clienti.
 
 AdGuard può modificare i dati del pacchetto in uscita, così che il client non rientri nei criteri di blocco IPP. Ciò significa che, abilitando quest'opzione, gli utenti possono accedere ai contenuti che desiderano. Non tutti i sistemi IPP sono aggirabili al momento, ma lavoriamo costantemente per migliorare questo aspetto.
 
 La funzionalità "Protezione da IPP" è già implementata su AdGuard per Windows, AdGuard per Mac e AdGuard per Android.
+
+:::attenzione
+
+Se questa funzionalità è abilitata in AdGuard per Windows, potrebbe interferire con l'antivirus ESET. L'Anti-IAP impedirà a ESET di filtrare il traffico, lasciando i siti web inseriti nella lista nera e dannosi sbloccati.
+
+:::

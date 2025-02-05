@@ -1,5 +1,5 @@
 ---
-title: Nasıl yüklenir
+title: Kurulum
 sidebar_position: 3
 ---
 

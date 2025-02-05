@@ -17,7 +17,7 @@ Verificar se o bug não foi reportado antes. Aconselhamos prestar atenção a qu
 
 ### Como descrever um problema
 
-Tente fornecer o máximo de detalhes possível, isso facilitará a reprodução do bug e a descoberta de como corrigi-lo. Aqui está o que esperamos ver em um relatório de bug:
+Tente fornecer o máximo de detalhes possível, isso facilitará a reprodução do bug e a descoberta de como corrigi-lo. Aqui está o que esperamos que um relatório de bug inclua:
 
 - A versão do seu aplicativo
 - A sua versão do SO

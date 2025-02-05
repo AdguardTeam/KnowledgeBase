@@ -5,19 +5,20 @@ sidebar_position: 3
 
 Веб-расширения добавляют дополнительные функции в Safari. Здесь вы можете найти [больше информации о веб-расширениях](https://developer.apple.com/documentation/safariservices/safari_web_extensions).
 
-![Как выглядит веб-расширение в Safari *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/menu_en.png)
+![Как выглядит веб-расширение в Safari *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/menu_ru.png)
 
 Веб-расширение AdGuard для Safari — это инструмент, который позволяет пользоваться преимуществами новых функций iOS 15. Он служит для расширения возможностей приложения AdGuard для iOS. С ним AdGuard может применять продвинутые правила фильтрации и, в конечном счёте, блокировать больше рекламы.
 
 ## Что оно делает
 
-По умолчанию, Safari предоставляет блокировщикам контента только базовые инструменты. Эти инструменты не позволяют добиться уровня блокировки, который доступен блокировщикам на других операционных системах (Windows, Mac, Android). Например, приложения AdGuard для других платформ могут использовать такие мощные средства борьбы против рекламы, как [CSS-правила](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [CSS-селекторы](/general/ad-filtering/create-own-filters#extended-css-selectors) и [скриптлеты](/general/ad-filtering/create-own-filters#scriptlets). К сожалению, эти инструменты совершенно незаменимы при работе со сложной рекламой, такой как, например, видеореклама в YouTube.
+По умолчанию Safari предоставляет блокировщикам контента только базовые инструменты. Эти инструменты не позволяют добиться уровня блокировки, который доступен блокировщикам на других операционных системах (Windows, Mac, Android). Например, приложения AdGuard на других платформах могут использовать такие мощные средства борьбы с рекламой, как [CSS-правила](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [расширенные CSS-селекторы](/general/ad-filtering/create-own-filters#extended-css-selectors) и [скриптлеты](/general/ad-filtering/create-own-filters#scriptlets). Эти инструменты совершенно незаменимы при работе со сложной рекламой, например, с рекламой на YouTube.
 
 Веб-расширение AdGuard для Safari дополняет AdGuard, давая ему возможность применять все эти типы правил фильтрации.
 
 Помимо этого, веб-расширение AdGuard для Safari может быть использовано для управления приложением AdGuard для iOS прямо из браузера. Нажмите на кнопку *Расширения* — это иконка с пазлом, которая может быть расположена левее или правее адресной строки, в зависимости от типа вашего устройства. Найдите в списке расширений **AdGuard** и нажмите на него.
 
-![Меню веб-расширения *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/ext_adguard_en.png?1)
+![Меню веб-расширения *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/ext_adguard_ru.png)
+
 > На устройствах iPad веб-расширение AdGuard для Safari доступно напрямую — просто нажмите на иконку AdGuard в адресной строке браузера.
 
 Вы увидите следующий список опций:
@@ -42,29 +43,29 @@ sidebar_position: 3
 
 После того, как вы выполнили эти действия, откройте раздел *Настройки → Safari → Расширения*.
 
-![Выберите "Safari" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings1_en.png)
+![Выберите "Safari" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings1_ru.png)
 
-![Выберите "Расширения" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings2_en.png)
+![Выберите "Расширения" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings2_ru.png)
 
 Найдите раздел **Разрешить эти расширения** и выберите **AdGuard** среди доступных расширений. Нажмите на него и включите переключатель.
 
-![Выберите "AdGuard" в разделе РАЗРЕШИТЬ ЭТИ РАСШИРЕНИЯ *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_en.png)
+![Выберите "AdGuard" в разделе РАЗРЕШИТЬ ЭТИ РАСШИРЕНИЯ *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_ru.png)
 
-Tap it, then toggle the switch. On the same screen, set the *All Websites* permission for AdGuard to either *Allow* or *Ask*. If you choose *Allow*, you won't have to give permission every time you visit a new website. If you are unsure, choose *Ask* to grant permissions on a per-site basis.
+Коснитесь его, затем включите переключатель. На том же экране установите разрешение *Все сайты* для AdGuard на *Разрешить* или *Спрашивать*. Если вы выберете *Разрешить*, вам не придётся давать разрешение каждый раз, когда вы посещаете новый сайт. Если вы не уверены, выберите *Спрашивать*, чтобы выдавать разрешения для каждого сайта.
 
-![Extension settings *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
+![Настройки расширения *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_ru.png)
 
 ### В Safari
 
-Вы также можете включить расширение AdGuard прямо в браузере Safari. Для этого нажмите кнопку *Расширения* (если рядом с адресной строкой нет кнопки Расширения, нажмите кнопку `aA`).
+Вы также можете включить расширение AdGuard в браузере Safari. Для этого нажмите *Расширения* (если этого раздела нет рядом с адресной строкой, нажмите на иконку `aA`).
 
-![В Safari коснитесь значка aA * mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari1_en.png)
+![В Safari коснитесь значка aA * mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari1_ru.png)
 
 Затем найдите опцию *Управлять расширениями* и выберите её. В открывшемся окне активируйте переключатель **AdGuard**.
 
-![Расширения *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari2_en.png)
+![Расширения *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari2_ru.png)
 
-![Расширения *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari3_en.png)
+![Расширения *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari3_ru.png)
 
 Если вы используете этот метод, вам всё равно может потребоваться открыть настройки Safari, чтобы выдать расширению AdGuard необходимые разрешения.
 

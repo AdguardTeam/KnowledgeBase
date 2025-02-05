@@ -13,7 +13,7 @@ Este artículo contiene algunos de los errores más comunes que puedes encontrar
 
 ### Error 5: Acceso denegado {#error-5}
 
-Este error ocurre cuando hay algún problema con los permisos. Puede haber varias razones por las que el instalador de AdGuard no tenga los permisos necesarios para finalizar correctamente el proceso de instalación. Puedes intentar los siguientes pasos:
+Este mensaje de error aparece cuando no se han concedido los permisos necesarios. Puede haber varias razones por las que el instalador de AdGuard no tenga los permisos necesarios para finalizar correctamente el proceso de instalación. Puedes intentar los siguientes pasos:
 
 - Desactiva temporalmente tu antivirus. Algunos de ellos pueden interferir con la instalación, dependiendo de su configuración.
 
@@ -23,17 +23,17 @@ Este error ocurre cuando hay algún problema con los permisos. Puede haber varia
 
 ### Error 112: El disco está lleno, Error 1632: Carpeta temporal llena o inaccesible {#error-112}
 
-Estos son dos errores diferentes con soluciones muy similares. Como sugieren sus nombres, el instalador de AdGuard no encontró suficiente espacio en el disco para completar la instalación. Hay varias cosas que puedes intentar para solucionar el problema:
+Estos son dos errores diferentes con soluciones muy similares. Como sugieren sus títulos, el instalador de AdGuard no encontró suficiente espacio en el disco para completar la instalación. Hay varias cosas que puedes intentar para solucionar el problema:
 
 - Desinstale algunos programas o elimina archivos innecesarios de la unidad en la que intentabas instalar AdGuard.
 
-- Descarga, instala y ejecuta [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), un software gratuito de Malwarebytes. Entre otras cosas, limpiará tu sistema de todo tipo de archivos "sobrantes" que quedan después de desinstalar incorrectamente programas. Ayudará a limpiar algo de espacio en disco.
+- Descarga, instala y ejecuta [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), un software gratuito de Malwarebytes. Entre otras cosas, él limpiará tu sistema de todo tipo de archivos "sobrantes" que quedan después de programas desinstalados incorrectamente. Ayudará a limpiar algo de espacio en disco.
 
 - Reinicia tu computadora. A veces, los archivos temporales pueden ocupar una cantidad considerable de espacio en disco, y reiniciar tu PC es la forma más confiable de deshacerse de ellos.
 
 ### Error 1601: no se puede acceder al instalador de Windows {#error-1601}
 
-Se podría decir que este es un subcaso particular del Error 1603. Las posibles soluciones son similares:
+Se podría decir que este es un subcategoría particular del Error 1603. Las posibles soluciones son similares:
 
 - Inicia y vuelve a registrar el servicio Microsoft Installer. Esto puede resultar laborioso.
 

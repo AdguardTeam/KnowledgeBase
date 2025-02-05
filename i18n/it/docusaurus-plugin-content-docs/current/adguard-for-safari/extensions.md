@@ -49,13 +49,19 @@ Le regole degli utenti e dell'allowlist sono incluse in ogni estensione.
 
 ## AdGuard per Safari
 
-*AdGuard per Safari* abilita l'icona di AdGuard affianco alla barra di ricerca. È utile se desideri configurare rapidamente la protezione su un sito web in particolare, o bloccare manualmente gli annunci. Inoltre, contiene delle regole avanzate, non convertite nel formato supportato da Safari. Ciò include le regole e i selettori CSS e gli scriptlet che consentono ad AdGuard di bloccare gli annunci complessi, ad esempio, su YouTube.
+*AdGuard per Safari* attiva l'icona di AdGuard affianco alla barra di ricerca. È utile se desideri configurare rapidamente la protezione su un sito web in particolare, o bloccare manualmente le inserzioni. Inoltre, contiene delle regole avanzate, non convertite nel formato supportato da Safari. Ciò include [regole CSS](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [selettori CSS estesi](/general/ad-filtering/create-own-filters#extended-css-selectors) e [scriptlet](/general/ad-filtering/create-own-filters#scriptlets), che consentono ad AdGuard di bloccare inserzioni complesse, come quelle su YouTube.
 
 ## Come gestire le estensioni di Safari
 
-1. Apri Safari e clicca su *Safari* nell'angolo superiore destro della schermata, per espandere il menu. ![Impostazioni di Safari *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
+1. Apri Safari e clicca su *Safari* nell'angolo superiore destro della schermata, per espandere il menu.
+
+    ![Impostazioni di Safari *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
+
 1. Clicca su *Impostazioni...*
-1. Seleziona *Estensioni*. ![Scheda delle estensioni](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
+
+1. Seleziona *Estensioni*.
+
+    ![Scheda delle estensioni](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
 ## Perché AdGuard per Safari richiede l'autorizzazione
 

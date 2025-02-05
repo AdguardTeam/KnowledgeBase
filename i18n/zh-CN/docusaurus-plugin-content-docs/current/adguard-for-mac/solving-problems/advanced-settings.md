@@ -21,7 +21,7 @@ sidebar_position: 9
 
 ## 高级设置
 
-### Network settings
+### 网络设置
 
 #### `network.extension.exclude.domains`
 
@@ -71,7 +71,7 @@ sidebar_position: 9
 
 #### `network.https.ech.enabled`
 
-使用本地 DNS 代理在 ECH 配置列表中查找配置。 如果找到，加密 ClientHellos。
+使用本地 DNS 代理在 ECH 配置列表中查找配置。 如果找到，加密 Client Hellos。
 
 #### `network.https.enforce.certificate.transparency`
 
@@ -89,7 +89,7 @@ sidebar_position: 9
 
 设置为 `true` 即可启用 LoopBack 过滤功能。
 
-### DNS settings
+### DNS 设置
 
 #### `dns.proxy.bootstrap.ips`
 
@@ -145,7 +145,7 @@ sidebar_position: 9
 
 #### `dns.proxy.parallel.upstream.queries.enabled`
 
-同时查询所有上游。 The first response is returned.
+同时查询所有上游。 返回第一个响应。
 
 #### `dns.proxy.servfail.on.upstreams.failure.enabled`
 
@@ -159,7 +159,13 @@ sidebar_position: 9
 
 删除响应中的 Encrypted Client Hello 参数。
 
-### Stealth Mode settings
+#### `dns.proxy.private.relay.sequoia.workaround.enabled`
+
+如果用户启用防火墙，将阻止 macOS 私有代理域名，这将禁用「*私有代理*」功能。
+
+启用此设置在一些情况下很有用，比如，当 macOS 私有代理被启动时，过滤无法正常工作，必须禁用。 在 macOS 14 及以前的版本中，当启用保护时，AdGuard 将自动禁用私有代理。 但从 macOS 15 开始，如果用户启用防火墙，就不能再这样做了。 启用此设置，即使防火墙已启用，用户也可以禁用私有代理，从而克服先前的限制。
+
+### 隐身模式设置
 
 #### `stealth.antidpi.http.split.fragment.size`
 
@@ -177,7 +183,7 @@ sidebar_position: 9
 
 如果执行了分片，用户可以在此处指定发送第一个分片后的延迟（以毫秒为单位）。
 
-### Subscription link interception settings (userscripts and filters)
+### 订阅链接拦截设置（用户脚本和过滤器）
 
 #### `subscription.link.interception.userscript`
 

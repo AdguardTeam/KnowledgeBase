@@ -13,7 +13,7 @@ Tento článek obsahuje některé z nejčastějších chyb, se kterými se můž
 
 ### Chyba 5: Přístup odepřen {#error-5}
 
-K této chybě dochází, pokud je něco v nepořádku s oprávněními. Může existovat několik různých důvodů, proč instalační program AdGuardu nemá oprávnění potřebná k řádnému dokončení procesu instalace. Můžete vyzkoušet následující kroky:
+Tato chybová zpráva se zobrazí, pokud nejsou udělena požadovaná oprávnění. Může existovat několik různých důvodů, proč instalační program AdGuardu nemá oprávnění potřebná k řádnému dokončení procesu instalace. Můžete vyzkoušet následující kroky:
 
 - Dočasně vypněte antivirové programy. Některé z nich mohou v závislosti na závažnosti svého nastavení instalaci narušovat.
 
@@ -33,7 +33,7 @@ Jedná se o dvě různé chyby s velmi podobným řešením. Jak napovídá jeji
 
 ### Chyba 1601: Instalační program pro Windows není přístupný {#error-1601}
 
-Dalo by se říci, že se jedná o zvláštní podtyp chyby 1603. Možná řešení jsou podobná:
+Dalo by se říci, že se jedná o zvláštní podkategorii chyby 1603. Možná řešení jsou podobná:
 
 - Spusťte a znovu zaregistrujte službu Microsoft Installer. Vyžaduje to určitou práci.
 

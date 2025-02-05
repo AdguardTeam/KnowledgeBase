@@ -5,44 +5,44 @@ sidebar_position: 7
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru macOS, un blocant de reclame multifuncțional care protejează dispozitivul tău la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Problem description in a nutshell
+## Descrierea problemei pe scurt
 
 By default, AdGuard uses the "default route" which disables iCloud Private Relay.
 
-Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuard cannot block ads because iCloud Private Relay encrypts traffic before AdGuard can filter network connections. When iCloud Private Relay is active, any filtering (including local filtering) becomes impossible. Thus, AdGuard can't filter traffic or perform DNS filtering in Safari. Yet, AdGuard still filters traffic in other browsers. To keep using iCloud Private Relay, consider installing [AdGuard for Safari](https://adguard.com/adguard-safari/overview.html).
+În prezent, AdGuard și Transmisia privată iCloud nu pot funcționa simultan. AdGuard cannot block ads because iCloud Private Relay encrypts traffic before AdGuard can filter network connections. Când Transmisia privată iCloud este activă, orice filtrare (inclusiv filtrarea locală) devine imposibilă. Astfel, AdGuard nu poate filtra traficul sau efectua filtrarea DNS în Safari. Totuși, AdGuard tot filtrează traficul în alte browsere. To keep using iCloud Private Relay, consider installing [AdGuard for Safari](https://adguard.com/adguard-safari/overview.html).
 
-The same applies to using any VPN apps on Mac: you have to choose between using iCloud Private Relay or a VPN service.
+Același lucru se aplică la utilizarea oricăror aplicații VPN pe macOS: trebuie să alegi între utilizarea Transmisiei private iCloud sau a unui serviciu VPN.
 
-## In detail
+## În detaliu
 
-AdGuard for Mac now uses macOS built-in socket filtering based on the network extensions API. This new and rather buggy mechanism replaced good old Kernel extensions. Over the last 1.5 years, we've reported more than 20(!) bugs to Apple regarding their new filtering method.
+AdGuard pentru macOS folosește acum filtrarea de socket încorporată în macOS, bazată pe API-ul extensiilor de rețea. This new and rather buggy mechanism replaced good old Kernel extensions. În ultimii 1,5 ani, am raportat mai mult de 20(!) de buguri către Apple referitoare la noua lor metodă de filtrare.
 
-The network extensions API has a VPN-like configuration with a list of route-like entries. On Big Sur, AdGuard developed "split-tunnel" rules to avoid creating the "default route" rule because it causes problems on early Big Sur releases.
+API-ul extensiilor de rețea are o configurație asemănătoare VPN-ului, cu o listă de intrări asemănătoare rutelor. Pe Big Sur, AdGuard a dezvoltat reguli de "tunnel separat" pentru a evita crearea regulii "implicită" deoarece aceasta cauzează probleme în versiunile timpurii ale Big Sur.
 
-On Monterey, iCloud Private Relay got introduced. Privacy features of the Mail app also use Private Relay servers.
+On Monterey, iCloud Private Relay got introduced. Funcțiile de intimitate ale aplicației Mail utilizează de asemenea servere Private Relay.
 
-As a consequence, AdGuard can't work together with iCloud Private Relay and the Mail app privacy features:
+Ca urmare, AdGuard nu poate funcționa împreună cu Transmisia privată iCloud și funcțiile de intimitate ale aplicației Mail:
 
 1. iCloud Private Relay is applied to connections at the library level — before they reach the socket level, where AdGuard operates.
 2. iCloud Private Relay uses QUIC, which AdGuard can't filter in filtered apps because HTTP/3 filtering is not yet available.
-3. Consequently, AdGuard blocks QUIC, including iCloud Private Relay traffic — otherwise, ad blocking is impossible.
+3. Prin urmare, AdGuard blochează QUIC, inclusiv traficul Transmisiei private iCloud — altfel, blocarea reclamelor este imposibilă.
 4. When you use iCloud Private Relay and switch AdGuard into the "split-tunnel" mode, you can't open websites in Safari.
-5. To work around this issue for Monterey, we apply the "default route" rule. When Private Relay sees that rule, it disables itself automatically. So, AdGuard works seamlessly on Monterey, but iCloud Private Relay gets disabled.
+5. To work around this issue for Monterey, we apply the "default route" rule. Când Private Relay vede această regulă, se dezactivează automat. So, AdGuard works seamlessly on Monterey, but iCloud Private Relay gets disabled.
 
-`network.extension.monterey.force.split.tunnel` restores the "Big Sur" behavior, but this option may break access to websites due to (3) and (4). We keep searching for a solution to this issue. One of the options is implementing HTTP/3 filtering.
+`network.extension.monterey.force.split.tunnel` restaurează comportamentul "Big Sur", dar această opțiune poate întrerupe accesul la site-uri web din cauza (3) și (4). Continuăm să căutăm o soluție pentru această problemă. Una dintre opțiuni este implementarea filtrării HTTP/3.
 
-## Recommended solution
+## Soluția recomandată
 
-We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/).
+Recomandăm utilizarea AdGuard împreună cu un serviciu VPN mai tradițional, cum ar fi [AdGuard VPN](https://adguard-vpn.com/).
 
-## Alternative solution
+## Soluție alternativă
 
-You can prevent AdGuard from using the "default route" by disabling the "default route". It can be done via Advanced Settings → `network.extension.monterey.force.split.tunnel`.
+You can prevent AdGuard from using the "default route" by disabling the "default route". Poate fi făcut prin Setări avansate → `network.extension.monterey.force.split.tunnel`.
 
-![Disable default route in advanced settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
+![Dezactivează regula implicită în setările avansate *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
 
-Bear in mind that, in this case, you'll face the issues described above.
+Ține cont că, în acest caz, te vei confrunta cu problemele descrise mai sus.

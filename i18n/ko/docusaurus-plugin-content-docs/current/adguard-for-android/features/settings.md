@@ -27,7 +27,7 @@ sidebar_position: 4
 
 **Watchdog**은 AdGuard가 시스템에 의해 비활성화되지 않도록 보호합니다 ([Android의 배터리 절약 모드에 대해 자세히 알아보기](/adguard-for-android/solving-problems/background-work/)). 입력하는 값은 감시 확인 사이의 간격(초)이 됩니다.
 
-**로깅 수준**은 앱 성능에 대한 어떤 데이터를 기록할지 정의합니다. 기본적으로 앱은 이벤트에 대한 데이터를 수집합니다. **디버그 로깅 수준**은 더 많은 이벤트를 기록합니다. 문제가 있는 경우, 이 수준은 AdGuard 팀이 문제를 더 잘 이해하는 데 도움이 됩니다. 하지만 리소스를 더 많이 소모하므로 지원팀에서 요청하는 경우에만 활성화하는 것이 좋습니다. [로그 수집 및 전송에 대해 자세히 알아보기](/adguard-for-android/solving-problems/log/)
+**로깅 수준**은 앱 성능에 대한 어떤 데이터를 기록할지 정의합니다. 기본적으로 앱은 이벤트에 대한 데이터를 수집합니다. **디버그 로깅 수준**은 더 많은 이벤트를 기록합니다. 문제가 있는 경우, 이 수준은 AdGuard 팀이 문제를 더 잘 이해하는 데 도움이 됩니다. 하지만 리소스를 더 많이 소모하므로 지원팀에서 요청하는 경우에만 활성화하는 것이 좋습니다. [Read more about collecting and sending logs](/adguard-for-android/solving-problems/log/)
 
 ![고급 \*mobile\_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
@@ -59,7 +59,7 @@ AdGuard는 필터의 규칙을 적용하여 광고, 추적기 및 성가신 광�
 
 ### 유저스크립트
 
-유저스크립트는 하나 이상의 웹사이트의 기능을 확장하는 자바스크립트로 작성된 미니 프로그램입니다. 유저스크립트를 설치하려면 특별한 유저스크립트 관리자가 필요합니다. AdGuard에는 이러한 기능이 있으며 URL 또는 파일에서 유저스크립트를 추가할 수 있습니다.
+Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. 유저스크립트를 설치하려면 특별한 유저스크립트 관리자가 필요합니다. AdGuard에는 이러한 기능이 있으며 URL 또는 파일에서 유저스크립트를 추가할 수 있습니다.
 
 ![유저스크립트 \*mobile\_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
@@ -133,7 +133,7 @@ HTTPS 필터링을 통해 AdGuard는 요청 및 응답의 콘텐츠를 필터링
 - AdGuard 라이선스를 구매하여 [정식 버전의 기능](/adguard-for-android/features/free-vs-full)을 활성화하세요.
 - AdGuard 계정에 로그인하거나 라이선스 키를 입력하여 라이선스를 활성화하세요.
 - 아직 7일 체험판을 사용하지 않았다면 가입하여 활성화하세요.
-- 점 3개 메뉴(:)에서 라이선스 상태를 새로 고칩니다.
+- Refresh the license status from the three-dots menu (⋮)
 - AdGuard 계정을 열어 라이선스를 관리하세요.
 - 이 라이선스의 기기 제한에 도달하여 다른 라이선스를 적용하려면 라이선스를 초기화하세요.
 

@@ -13,7 +13,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 **OS version:** Android 7.0 or higher
 
-**RAM:** at least 2 GB
+**RAM :** au moins 2 Go
 
 **Free disk space:** 500 MB
 

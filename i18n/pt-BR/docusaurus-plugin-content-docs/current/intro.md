@@ -15,9 +15,9 @@ AdGuard is one of the leaders on the market of ad-blocking software with 15+ yea
 
 But we also develop and maintain free browser extensions for all popular browsers:
 
-- [Extensão do AdGuard para navegador](/adguard-browser-extension/features/filters)
+- [Extensão do AdGuard para navegador](/adguard-browser-extension/availability)
 - [AdGuard para Safari](/adguard-for-safari/features/general)
 
 ## Not just ad blocking
 
-AdGuard Ad Blocker does more than just block ads. It will protect you from online tracking and enhance your privacy in many ways. Depending on the specific product, AdGuard can also offer such perks as DNS filtering for more rounded-up protection, Parental Control to shield your kids from inappropriate content, Filtering log to have better control over your internet traffic, and more. This Knowledge base contains detailed information about any and all of them — feel free to jump to any article that interests you.
+AdGuard Ad Blocker does more than just block ads. It will protect you from online tracking and enhance your privacy in many ways. Depending on the specific product, AdGuard can also offer such perks as DNS filtering for more rounded-up protection, Parental Control to shield your kids from inappropriate content, Filtering log to have better control over your internet traffic, and more. This Knowledge Base contains detailed information about any and all of them — feel free to jump to any article that interests you.

@@ -1,45 +1,45 @@
 ---
-title: Browser Assistant
+title: Asistente de navegador
 sidebar_position: 3
 ---
 
-AdGuard Assistant’s primary function is to manage filtering directly from the browser. It has existed for quite a long time, and its form and content have changed. More precisely, it used to be a mere userscript incorporated into AdGuard for Windows app and became a full-fledged browser extension. Now it yields more benefits.
+La función principal del Asistente de AdGuard es administrar el filtrado directamente desde el navegador. Ha existido durante bastante tiempo, y su forma y contenido han cambiado. Más precisamente, solía ser un simple script de usuario incorporado en la app de AdGuard para Windows y se convirtió en una extensión de navegador completa. Ahora tiene más beneficios.
 
-![Browser Assistant *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
+![Asistente de navegador *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
 
-## Benefits
+## Beneficios
 
-### Independence
+### Independencia
 
-AdGuard Browser Assistant is a browser extension, it is installed in a browser, so there is no need to wait for the userscript to be injected into the filtered web page, as it was with the preceding one. In other words, it is more autonomous from the main AdGuard app. Still, Browser Assistant needs the installed AdGuard for Windows, because there is no point in using the extension without the app.
+El Asistente de navegador AdGuard es una extensión de navegador, se instala en un navegador, por lo que no hay necesidad de esperar a que el script de usuario se inyecte en la página web filtrada. En otras palabras, es más autónomo de la aplicación principal de AdGuard. Aún así, el Asistente del navegador necesita tener instalado AdGuard para Windows, ya que no tiene sentido utilizar la extensión sin la aplicación.
 
-### Compatibility with the main app
+### Compatibilidad con la aplicación principal
 
-If you got into the habit of using our previous [AdGuard Ad Blocker extension](/adguard-browser-extension/compatibility), you might like the solution that we have developed for the new Browser Assistant.
+Si adquiriste el hábito de usar nuestra [Extensión del bloqueador de anuncios AdGuard](/adguard-browser-extension/compatibility) anterior, te podría gustar la solución que hemos desarrollado para el nuevo Asistente de navegador.
 
-Background information:
+Información de fondo:
 
-In previous versions of the AdGuard Browser Extension (before v3.5), if you had it installed along with the AdGuard for Windows app, the extension took over the functions of Assistant, stopped filtering itself and relied on the app to do this.
+En versiones anteriores de la Extensión de navegador de AdGuard (antes de v3.5), si la tenías instalada junto con la app de AdGuard para Windows, la extensión asumía las funciones del Asistente, dejaba de filtrar por sí misma y dependía de la app para hacerlo.
 
-The extension and the app worked in conjunction but sometimes the integration would fail. Some websites would stop being protected by the desktop program and be backed up only by the less powerful extension.
+La extensión y la aplicación funcionaban en conjunto, pero a veces la integración fallaba. La protección normalmente proporcionada por el programa de escritorio se detendría en ciertos sitios, donde solo la extensión menos potente proporcionaría protección.
 
-When using the Browser Assistant, all these problems don’t matter as there can be no conflicts in essence. The role of the Browser Assistant is well-defined and it can’t hinder the functioning of the main app, so there is no need to worry.
+Al usar el Asistente de Navegador, todos estos problemas no importan ya que no puede haber conflictos en esencia. El papel del Asistente de Navegador está bien definido y no puede perjudicar el funcionamiento de la app principal, así que no hay de qué preocuparse.
 
-## Separate tab in Settings
+## Pestaña separada en Configuración
 
-The new Browser Assistant has its own tab in AdGuard for Windows settings, along with Stealth Mode, Browsing security, Parental Control and others. There you will find a link to download the extension for your default browser. Besides, there is a checkbox to enable the legacy Assistant.
+El nuevo Asistente de navegador tiene su propia pestaña en la configuración de AdGuard para Windows, junto con Modo sigiloso, Seguridad de navegación, Control parental y otros. Ahí encontrarás un enlace para descargar la extensión para tu navegador predeterminado. Además, hay una casilla de verificación para habilitar el Asistente legacy.
 
-![Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Configuración *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
-## Legacy Assistant
+## Asistente legacy
 
-Legacy Assistant is the previous version of Assistant, which is a mere userscript, not a browser extension. Basically, there are two cases when you might want to pick it instead of the new Browser Assistant:
+Asistente legacy es la versión anterior de Asistente, que es un mero scripts de usuario, no una extensión. Básicamente, hay dos casos en los que podrías querer elegirlo en lugar del nuevo Asistente de Navegador:
 
-1. The new Assistant is not available for your browser.
-1. You are used to the green shield icon and want to leave things as they were.
+1. El nuevo Asistente no está disponible para tu navegador.
+1. Estás acostumbrado al icono del escudo verde y quiere dejar las cosas como estaban.
 
-## How to install AdGuard Browser Assistant
+## Cómo instalar el Asistente de navegador AdGuard
 
-If you want to install the Browser Assistant for your default browser, you can do it directly from the app settings, but you also have an opportunity to install it for other browsers.
+Si deseas instalar el Asistente de Navegador para tu navegador predeterminado, puedes hacerlo directamente desde la configuración de la app, pero también tienes la oportunidad de instalarlo para otros navegadores.
 
-AdGuard Browser Assistant is available for all popular browsers: Chrome, Firefox, Edge, Opera, and Yandex. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and tap the *Install* button. That’s it!
+Asistente de navegador AdGuard está disponible para todos los navegadores populares: Chrome, Firefox, Edge, Opera y Yandex. Para instalar el que necesitas (o muchos, no está prohibido, sino que se fomenta), ve a [nuestro sitio web](https://adguard.com/adguard-assistant/overview.html), haz clic en el icono del navegador y luego en el botón *Instalar*. ¡Listo!

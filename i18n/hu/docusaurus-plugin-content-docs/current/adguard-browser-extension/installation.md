@@ -1,5 +1,5 @@
 ---
-title: Hogyan kell telepíteni
+title: Installation
 sidebar_position: 3
 ---
 

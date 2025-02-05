@@ -5,13 +5,13 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
-The Ad blocking module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Ad blocking_.
+Блокировка рекламы находится во вкладке _Защита_ (второй слева значок в нижней части экрана).
 
-Эта функция блокирует рекламу, применяя фильтры для блокировки рекламы и языковые фильтры. To learn about the mechanism of ad blocking, you can read a [dedicated article](/general/ad-filtering/how-ad-blocking-works).
+Эта функция блокирует рекламу с помощью фильтров для блокировки рекламы и языковых фильтров. [В отдельной статье](/general/ad-filtering/how-ad-blocking-works) рассказали, как это работает.
 
 Базовая защита эффективно блокирует рекламу на большинстве сайтов. Чтобы настроить блокировку рекламы, вы можете:
 
@@ -19,6 +19,6 @@ The Ad blocking module can be accessed by tapping the _Protection_ tab (second-l
 
 - Добавить сайты в белый список — они не будут фильтроваться AdGuard
 
-- Создавать пользовательские правила — AdGuard будет применять их на указанных сайтах [Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+- Создавать пользовательские правила — AdGuard будет применять их на указанных сайтах. [Как создавать пользовательские правила](/general/ad-filtering/create-own-filters)
 
-![Ad blocking \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
+![Блокировка рекламы \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)

@@ -1,5 +1,5 @@
 ---
-title: HAR 파일 수집 방법
+title: How to generate HAR files
 sidebar_position: 5
 ---
 
@@ -17,11 +17,11 @@ HAR files are processed in accordance with [the AdGuard Privacy Policy](https://
 
 ## HAR 파일이란 무엇인가요?
 
-HAR(HTTP ARchive) 형식은 웹 브라우저와 사이트 간의 상호 작용을 로깅하기 위한 JSON 형식의 아카이브 파일로, 브라우저가 불러오는 웹 페이지에 대한 자세한 정보를 내보내는 데 이용되는 HTTP 트랜잭션에 대한 보관 데이터를 정의합니다. HAR 파일 형식에 대한 자세한 내용은 [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/)에서 확인하실 수 있습니다.
+HAR(HTTP ARchive) 형식은 웹 브라우저와 사이트 간의 상호 작용을 로깅하기 위한 JSON 형식의 아카이브 파일로, The specifications of HAR format define archival data for HTTP transactions that a browser uses to export detailed information about the web pages it loads. HAR 파일 형식에 대한 자세한 내용은 [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/)에서 확인하실 수 있습니다.
 
-## HAR 파일 수집 방법
+## How to generate HAR files
 
-간혹 재생산하기 어려운 특정 광고를 차단하기 위해 HAR 파일 분석이 필요합니다. HAR 파일을 수집하려면 다음 단계를 따르십시오.
+간혹 재생산하기 어려운 특정 광고를 차단하기 위해 HAR 파일 분석이 필요합니다. To get HAR files, follow these steps:
 
 1. Open AdGuard and go to **Settings** (⚙ icon in the lower right corner).
 2. Tap **General** →**Advanced** → **Low-level settings**.
@@ -31,7 +31,7 @@ HAR(HTTP ARchive) 형식은 웹 브라우저와 사이트 간의 상호 작용�
 6. Go back to **Advanced**.
 7. Tap **Export logs and system info** → **Allow** (if necessary) → **Save**.
 
-**.har 파일을 AdGuard 지원 팀에 보내 주세요.**
+**Send the generated file with the logs to the AdGuard support service.**
 
 :::note
 

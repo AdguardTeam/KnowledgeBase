@@ -23,7 +23,7 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 Chcete-li AdGuard používat v počítači nebo tabletu se systémem Microsoft Windows, stáhněte si instalační balíček a spusťte instalační program. Proveďte následující akce:
 
-1. Přejděte na web [AdGuardu](http://adguard.com) v adresním řádku a klikněte na *Stáhnout* [na otevřené stránce](https://adguard.com/download.html?auto=1).
+1. Přejděte na [webovou stránku AdGuardu](http://adguard.com) v adresním řádku a klikněte na tlačítko *Stáhnout* [na domovské stránce](https://adguard.com/download.html?auto=1).
 
    ![Download AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
 
@@ -104,3 +104,21 @@ Další kroky proveďte pouze v případě, že provedení prvních dvou kroků 
 ![Extended uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
 
 AdGuard byl úspěšně odinstalován!
+
+#### Spuštění odinstalačního programu v konzolovém režimu
+
+Kromě spuštění pokročilého odinstalátoru v uživatelsky interaktivním režimu můžete k odinstalaci AdGuard pro Windows použít také argumenty příkazového řádku. Postupujte podle následujících pokynů:
+
+1. Otevřete příkazový řádek zadáním příkazu *cmd* v nabídce Start.
+2. Chcete-li odinstalátor spustit v konzolovém režimu bez interaktivního uživatelského rozhraní, použijte příkaz `/console`. Všechny níže uvedené parametry příkazového řádku budou ignorovány, pokud není aktivován režim `/console`.
+3. Pomocí příkazu `/adblocker` odinstalujte AdGuard pro Windows. Mělo by to vypadat takto:
+
+   `Adguard.UninstallUtility.exe /console /adblocker`
+
+4. Můžete také použít příkaz `/advanced`, který vynutí spuštění odinstalačního programu v *pokročilém režimu* a ` příkaz /settings`, který vynutí, aby odinstalační program smazal spolu s aplikací i uživatelská nastavení.
+
+:::note
+
+Pro úspěšné odinstalování je nutné použít parametry `/console` a `/adblocker`. Parametry `/advanced` a `/settings` jsou volitelné.
+
+:::

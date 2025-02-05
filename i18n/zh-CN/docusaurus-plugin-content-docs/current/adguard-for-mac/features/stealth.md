@@ -1,6 +1,6 @@
 ---
 title: 隐身模式
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info

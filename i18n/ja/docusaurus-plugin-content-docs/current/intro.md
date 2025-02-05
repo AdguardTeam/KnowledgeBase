@@ -15,9 +15,9 @@ AdGuard は、15 年以上の経験、さまざまなプラットフォーム向
 
 また、一般的なブラウザ向けの無料ブラウザ拡張機能の開発とメンテナンスも行っております:
 
-- [AdGuard ブラウザ拡張機能](/adguard-browser-extension/features/filters)
+- [AdGuard ブラウザ拡張機能](/adguard-browser-extension/availability)
 - [AdGuard for Safari](/adguard-for-safari/features/general)
 
 ## 広告ブロック以外の機能もたくさんあります
 
-AdGuard 広告ブロッカーは、広告をブロックするだけではありません。 トラッキングから守り、さまざまな方法であなたのオンラインプライバシーを強化してくれます。 各製品によって、保護層を増やしてくれる*DNSフィルタリング*、不適切なコンテンツから子供を守る*ペアレンタルコントロール*、インターネットトラフィックを制御するための*フィルタリングログ*などという機能も提供しています。 本ナレッジベースには、各製品の機能に関する詳細な情報が含まれています。左側の目次（スマホの場合は左上の「≡」アイコン）から、興味のある記事にジャンプしてお読みください。
+AdGuard 広告ブロッカーは、広告をブロックするだけではありません。 トラッキングから守り、さまざまな方法であなたのオンラインプライバシーを強化してくれます。 各製品によって、保護層を増やしてくれる*DNSフィルタリング*、不適切なコンテンツから子供を守る*ペアレンタルコントロール*、インターネットトラフィックを制御するための*フィルタリングログ*などという機能も提供しています。 This Knowledge Base contains detailed information about any and all of them — feel free to jump to any article that interests you.

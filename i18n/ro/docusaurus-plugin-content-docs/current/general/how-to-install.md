@@ -1,9 +1,9 @@
 ---
 title: How to install AdGuard
-sidebar_position: 8
+sidebar_position: 9
 ---
 
-Depending on which AdGuard app or browser extension you want to install, follow one of these links to find the relevant article:
+În funcție de care aplicație AdGuard sau extensie de browser doriți să instalați, urmați unul dintre aceste linkuri pentru a găsi articolul relevant:
 
 [AdGuard for Android](/adguard-for-android/installation)
 
@@ -13,7 +13,7 @@ Depending on which AdGuard app or browser extension you want to install, follow 
 
 [AdGuard for Mac](/adguard-for-mac/installation)
 
-[AdGuard Browser Extension](/adguard-browser-extension/installation)
+[Extensia de browser AdGuard](/adguard-browser-extension/installation)
 
 [AdGuard for Safari](/adguard-for-safari/installation)
 

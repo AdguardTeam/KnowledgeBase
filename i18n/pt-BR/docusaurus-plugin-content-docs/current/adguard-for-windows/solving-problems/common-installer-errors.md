@@ -13,7 +13,7 @@ Este artigo contém alguns dos erros mais comuns que você pode encontrar durant
 
 ### Erro 5: Acesso negado {#error-5}
 
-Esse erro ocorre quando há algo errado com as permissões. Pode haver vários motivos diferentes pelos quais o instalador do AdGuard não tem as permissões necessárias para concluir corretamente o processo de instalação. Você pode tentar as seguintes etapas:
+Esta mensagem de erro aparece se as permissões necessárias não forem concedidas. Pode haver vários motivos diferentes pelos quais o instalador do AdGuard não tem as permissões necessárias para concluir corretamente o processo de instalação. Você pode tentar as seguintes etapas:
 
 - Desative temporariamente seus antivírus. Alguns deles podem interferir na instalação, dependendo de suas configurações.
 
@@ -23,17 +23,17 @@ Esse erro ocorre quando há algo errado com as permissões. Pode haver vários m
 
 ### Erro 112: O disco está cheio, Erro 1632: Pasta temporária cheia ou inacessível {#error-112}
 
-Estes são dois erros diferentes com soluções muito semelhantes. Como seus nomes sugerem, o instalador AdGuard não encontrou espaço em disco suficiente para concluir a instalação. Há várias coisas que você pode fazer para tentar corrigir o problema:
+Estes são dois erros diferentes com soluções muito semelhantes. Como o nome sugere, o instalador AdGuard não encontrou espaço em disco suficiente para concluir a instalação. Há várias coisas que você pode fazer para tentar corrigir o problema:
 
 - Desinstale alguns programas ou exclua arquivos desnecessários da unidade em que você estava tentando instalar o AdGuard.
 
-- Baixe, instale e execute o [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), um software gratuito da Malwarebytes. Ele irá, entre outras coisas, limpar seu sistema de todos os tipos de arquivos extras “sobras” que permanecem após a desinstalação incorreta de programas e similares. Isso ajudará a liberar espaço em disco.
+- Baixe, instale e execute o [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), um software gratuito da Malwarebytes. Entre outras coisas, ele irá limpar seu sistema de todos os "restos" de arquivos que permanecem após a desinstalação incorreta de programas e similares. Isso ajudará a liberar espaço em disco.
 
 - Reinicie o computador. Às vezes, os arquivos temporários podem ocupar uma quantidade considerável de espaço em disco e reiniciar o PC é a maneira mais simples de se livrar deles.
 
 ### Erro 1601: o instalador do Windows não está acessível {#error-1601}
 
-Pode-se dizer que esse é um subcaso específico do Erro 1603. As soluções possíveis são semelhantes:
+Pode-se dizer que esse é uma subcategoria específica do Erro 1603. As soluções possíveis são semelhantes:
 
 - Inicie e registre novamente o serviço Instalador Microsoft. Isso dá um pouco de trabalho.
 
@@ -89,8 +89,8 @@ Este erro ocorre quando várias instâncias do instalador do AdGuard são inicia
 
 Se você encontrou um erro que não está listado acima, é possível que possamos resolvê-lo sozinhos. Mas, para isso, precisamos de seus arquivos de log. Por favor, execute as seguintes etapas:
 
-- Encontre e arquive **AdGuard installation logs** conforme descrito em [neste artigo](../installation-logs).
+- Encontre e arquive os **Registros de instalação do AdGuard** conforme descrito em [neste artigo](../installation-logs).
 
-- Localize e salve no disco **Event Viewer** logs. [Este artigo](../system-logs) explica como fazer isso.
+- Encontre e salve no disco os registros do **Event Viewer**. [Este artigo](../system-logs) explica como fazer isso.
 
 - Por favor, envie todos esses arquivos das duas etapas anteriores para a equipe de suporte em **support@adguard.com** e descreva o problema no corpo da mensagem. Nossa equipe de suporte responderá o mais rápido possível.

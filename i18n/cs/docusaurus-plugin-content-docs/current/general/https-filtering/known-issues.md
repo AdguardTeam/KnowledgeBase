@@ -1,9 +1,11 @@
 ---
 title: Známé problémy
 sidebar_position: 2
+toc_min_heading_level: 2
+toc_max_heading_level: 4
 ---
 
-Poslední aktualizace: 20. září 2022
+Poslední aktualizace: 17. září 2024
 
 Pochopení tohoto článku může vyžadovat základní znalosti o šifrování, TLS a HTTPS.
 
@@ -30,7 +32,38 @@ Všechny nám známé problémy a předpokládané termíny jejich oprav jsou uv
 
 Největší nevýhodou mechanismu HTTPS filtrování je, že skrývá skutečný certifikát webové stránky. Nemůžete jednoduše zkontrolovat jeho originální certifikát, protože vidíte pouze ten, který vydal AdGuard.
 
-Tento problém řeší v [Asistent prohlížeče](https://adguard.com/adguard-assistant/overview.html). Toto rozšíření prohlížeče vám pomůže spravovat filtrování přímo z prohlížeče a umožní vám zkontrolovat originální certifikát jakékoli webové stránky.
+Tento problém lze řešit dvěma způsoby:
+
+- Pomocí našeho [Asistenta prohlížeče](https://adguard.com/adguard-assistant/overview.html). Toto rozšíření prohlížeče vám pomůže spravovat filtrování přímo z prohlížeče a umožní vám zkontrolovat originální certifikát jakékoli webové stránky
+
+  ![Certificate Browser Assistant *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-browser.png)
+
+- Navštívením sekce *Nedávná aktivita* v AdGuardu pro Android nebo sekce *Záznam filtrování* v AdGuardu pro Windows a AdGuardu pro macOS. Zatímco v Asistentu prohlížeče můžete zobrazit pouze certifikát webové stránky, v Nedávné aktivitě můžete zkontrolovat certifikát libovolného serveru použitého v dílčím požadavku nebo prohlížeči, a to s asistentem prohlížeče nebo bez něj. Chcete-li zobrazit certifikát touto metodou, postupujte podle následujících pokynů.
+
+#### Zkontrolujte originální certifikát v AdGuardu pro Android
+
+1. Klikněte na ikonu Statistiky na navigačním panelu.
+2. Přejděte na *Nedávná aktivita*.
+3. Klikněte na požadavek, jehož certifikát chcete zkontrolovat, aby se otevřely detaily požadavku.
+4. Přejděte dolů na *Původní certifikát*. Klikněte pro více informací.
+
+![Recent activity AdGuard for Android *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-android.png)
+
+#### Zkontrolujte originální certifikát v AdGuardu pro Windows
+
+1. Přejděte do *Nastavení* → *Blokování reklam* → *Záznam filtrování*.
+2. Klikněte na požadavek, jehož certifikát chcete zkontrolovat, aby se otevřely detaily požadavku.
+3. V části *TLS* klikněte na *Zobrazit certifikát webové stránky*.
+
+![Filtering log AdGuard for Windows *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-win.png)
+
+#### Zkontrolujte originální certifikát v AdGuardu pro macOS
+
+1. Klikněte na ikonu ozubeného kola. V rozevírací nabídce přejděte na *Pokročilé* → *Protokol programu....*.
+2. Klikněte na požadavek, jehož certifikát chcete zkontrolovat, aby se otevřely detaily požadavku.
+3. Klikněte na *Zobrazit certifikát*.
+
+![Filtering log AdGuard for Mac *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-mac.png)
 
 ### Transparentnost certifikátu
 

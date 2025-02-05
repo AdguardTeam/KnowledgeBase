@@ -9,7 +9,7 @@ Este artículo trata sobre AdGuard para iOS, un bloqueador de anuncios multifunc
 
 :::
 
-En iOS 15 Apple ha añadido el soporte para Extensiones Web de Safari, y a su vez hemos añadido un nuevo módulo de _protección avanzada_ a AdGuard para iOS. Permite a AdGuard aplicar reglas de filtrado avanzadas, como reglas CSS, selectores CSS y scriptlets, y por tanto hacer frente incluso a los anuncios más complejos, como los de YouTube.
+En iOS 15, Apple ha añadido el soporte para Extensiones Web de Safari, y a su vez hemos añadido un nuevo módulo de _protección avanzada_ a AdGuard para iOS. Permite que AdGuard aplique reglas de filtrado avanzadas, como [reglas CSS](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [selectores CSS extendidos](/general/ad-filtering/create-own-filters#extended-css-selectors) y [scriptlets](/general/ad-filtering/create-own-filters#scriptlets) para manejar incluso los anuncios complejos, como los anuncios de YouTube.
 
 ![Pantalla de protección avanzada \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
 

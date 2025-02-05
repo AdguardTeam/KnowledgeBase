@@ -52,7 +52,7 @@ Auf manchen Laptops müssen Sie *Fn* gedrückt halten und dann *Druck* drücken.
 
 Windows erfasst den gesamten Bildschirm und kopiert ihn in die Zwischenablage.
 
-Um ein Bildschirmfoto von einem aktiven Fenster zu machen, verwenden Sie das folgende Tastaturkürzel:
+Um ein Bildschirmfoto eines aktiven Fensters zu erstellen, verwenden Sie das folgende Tastaturkürzel:
 
 - **Halten Sie *Alt* gedrückt und drücken Sie *Druck* (oder *Fn + Alt + Druck* auf einigen Laptops)**
 
@@ -60,9 +60,9 @@ Um ein Bildschirmfoto von einem bestimmten Bereich zu machen, verwenden Sie das 
 
 - ***Drücken Sie ***Win + Umschalt + S******
 
-Nachdem Sie ein Bildschirmfoto erstellt haben, wird es in der Zwischenablage gespeichert. In den meisten Fällen können Sie es mit dem Tastaturkürzel *Strg + V* in ein Dokument einfügen, das Sie gerade bearbeiten. Wenn Sie das Bildschirmfoto in einer Datei speichern möchten, sollten Sie alternativ das Standardprogramm **Paint** (oder eine andere Anwendung, die mit Bildern arbeiten kann) öffnen. Fügen Sie Ihr Bildschirmfoto mit demselben Tastaturkürzel oder durch Klicken auf die Schaltfläche „Einfügen“ (in der Regel in der oberen linken Ecke des Bildschirms) ein und speichern Sie es dann.
+Nachdem Sie ein Bildschirmfoto erstellt haben, wird es in der Zwischenablage gespeichert. In den meisten Fällen können Sie es mit dem Tastaturkürzel *Strg + V* in ein Dokument einfügen, das Sie gerade bearbeiten. Wenn Sie das Bildschirmfoto in einer Datei speichern möchten, sollten Sie alternativ das Standardprogramm **Paint** (oder eine andere Anwendung, die mit Bildern arbeiten kann) öffnen. Fügen Sie Ihr Bildschirmfoto mit denselben Tastenkombinationen oder durch Klicken auf die Schaltfläche „Einfügen” (in der Regel in der oberen linken Ecke des Bildschirms) ein und speichern Sie es dann.
 
-Unter Windows 8 und 10 können Sie mit dem Tastaturkürzel *Win + Druck* sehr schnell ein Bildschirmfoto aufnehmen. Sobald Sie diese Tasten drücken, wird das Bildschirmfoto automatisch als Datei in Ihrem Ordner *Bilder* → *Bildschirmfotos* gespeichert.
+In Windows 8 und 10 können Sie mit den Tastaturkürzeln *Win + PrtScn* sehr schnell ein Bildschirmfoto erstellen. Sobald Sie diese Tasten drücken, wird das Bildschirmfoto automatisch als Datei in Ihrem Ordner *Bilder* → *Bildschirmfotos* gespeichert.
 
 Es gibt auch ein spezielles Programm zum Erstellen von Bildschirmfotos namens *Snipping Tool*. Sie finden es im Startmenü unter den Standardprogrammen Ihres Computers. Mit dem Snipping Tool können Sie einen beliebigen Bereich Ihres Desktops oder den gesamten Bildschirm erfassen. Nach der Aufnahme eines Bildschirmfotos mit diesem Programm können Sie das Bild bearbeiten und in einem beliebigen Ordner auf Ihrem Computer speichern.
 
@@ -70,13 +70,13 @@ Außerdem können Sie auch versuchen, verschiedene Apps zum Aufnehmen von Bildsc
 
 ### macOS {#mac}
 
-Um ein Bildschirmfoto auf dem Mac zu erstellen, verwenden Sie das folgende Tastaturkürzel:
+Um ein Bildschirmfoto auf dem Mac zu erstellen, verwenden Sie die folgenden Tastaturkürzel:
 
 - ***Drücken und halten Sie ***⌘ Cmd + Umschalt + 3******
 
 Ihr Mac erfasst den gesamten Bildschirm und speichert ihn als Datei auf dem Desktop.
 
-Um ein Bildschirmfoto von einem aktiven Fenster zu machen, verwenden Sie das folgende Tastaturkürzel:
+Um ein Bildschirmfoto eines aktiven Fensters zu erstellen, verwenden Sie das folgende Tastaturkürzel:
 
 - **Drücken und halten Sie *⌘ Cmd + Umschalt + 4 + Leertaste*. Der Zeiger verwandelt sich in ein Kamerasymbol. Klicken Sie auf das Fenster, um es zu erfassen. Drücken Sie die Esc-Taste, um die Aufnahme eines Bildschirmfotos abzubrechen**
 
@@ -84,12 +84,12 @@ Um ein Bildschirmfoto von einem bestimmten Bereich zu machen, verwenden Sie das 
 
 - ***Drücken Sie ***⌘ Cmd + Umschalt + 5******. Ziehen Sie das Fadenkreuz, um den gewünschten Bereich auszuwählen. Lassen Sie die Maus oder das Trackpad los, um ein Bildschirmfoto zu erstellen, und drücken Sie Esc, um den Vorgang abzubrechen.
 
-Um ein Bildschirmfoto von der *Touch Bar* (MacBook Pro) zu erstellen, verwenden Sie das folgende Tastaturkürzel:
+Um ein Bildschirmfoto der *Touch Bar* (MacBook Pro) zu erstellen, verwenden Sie die folgenden Tastaturkürzel:
 
 - ***Drücken Sie ***⌘ Cmd + Umschalt + 6******
 
 Ihr Mac nimmt die gesamte *Touch Bar* auf und speichert sie als Datei auf dem Desktop.
 
-Um ein Bildschirmfoto in die Zwischenablage zu kopieren, anstatt es zu speichern, halten Sie *Strg* zusammen mit einem der oben genannten Tastaturkürzel gedrückt. Dann können Sie das Bildschirmfoto (aus der Zwischenablage) mit der Tastenkombination *Cmd + V* in ein Dokument oder ein Bild einfügen, das Sie gerade bearbeiten.
+Um ein Bildschirmfoto in die Zwischenablage zu kopieren, anstatt es zu speichern, halten Sie die Steuerungstaste *Ctrl* zusammen mit einer der oben genannten Tastaturkürzel gedrückt. Dann können Sie das Bildschirmfoto (aus der Zwischenablage) mit der Tastenkombination *Cmd + V* in ein Dokument oder ein Bild einfügen, das Sie gerade bearbeiten.
 
 Sie können auch Bildschirmfotos erstellen, indem Sie die **Vorschau** verwenden und **Bildschirmfoto aufnehmen** (von dem ausgewählten Bereich, Fenster oder dem gesamten Bildschirm) wählen. Mit der **Vorschau** können Sie Ihre Bildschirmfotos in JPG, TIFF, PDF und anderen Dateiformaten speichern.

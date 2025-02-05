@@ -17,7 +17,7 @@ Zkontrolujte, zda nebyla chyba nahlášena již dříve. Doporučujeme věnovat 
 
 ### Jak popsat problém
 
-Pokuste se uvést co nejvíce podrobností — usnadníte nám tak reprodukci chyby a zjistíme, jak ji opravit. V hlášení o chybě očekáváme následující informace:
+Pokuste se uvést co nejvíce podrobností — usnadníte nám tak reprodukci chyby a zjistíme, jak ji opravit. Očekáváme, že hlášení o chybě bude obsahovat následující informace:
 
 - Verzi aplikace
 - Verzi OS

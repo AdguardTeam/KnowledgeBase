@@ -52,17 +52,17 @@ On some notebooks you have to hold *Fn* and then press *PrtScn*.
 
 Windows captures the entire screen and copies it to the clipboard.
 
-To take a screenshot of an active window, use the following shortcut:
+To take a screenshot of an active window, use the following shortcut keys:
 
 - **Hold down *Alt* and press *PrtScn* (or *Fn + Alt + PrtScn* on some laptops)**
 
-To take a screenshot of a specific area, use the following shortcut:
+To take a screenshot of a specific area, use the following shortcut keys:
 
 - ***Press ***Win + Shift + S******
 
-After you take a screenshot, it will be saved in the clipboard. In most cases, you will be able to paste it into a document that you are currently editing by using the *Ctrl + V* shortcut. Alternatively, if you need to save the screenshot into a file, you should open the standard **Paint** program (or any other app that can work with images). Paste your screenshot there using the same shortcut or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
+After you take a screenshot, it will be saved in the clipboard. In most cases, you will be able to paste it into a document that you are currently editing by using the *Ctrl + V* shortcut. Alternatively, if you need to save the screenshot into a file, you should open the standard **Paint** program (or any other app that can work with images). Paste your screenshot there using the same shortcut keys or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
 
-Windows 8 and 10 let you take a screenshot very quickly with the *Win + PrtScn* shortcut. As soon as you press these keys, the screenshot will be automatically saved as a file to your *Pictures* → *Screenshots Folder*.
+Windows 8 and 10 let you take a screenshot very quickly with the *Win + PrtScn* shortcut keys. As soon as you press these keys, the screenshot will be automatically saved as a file to your *Pictures* → *Screenshots Folder*.
 
 There is also a dedicated program for taking screenshots called *Snipping Tool* that you can find via Start menu among standard programs of your computer. Snipping Tool lets you capture of any area of your desktop or the entire screen. After taking a screenshot using this program you can edit the picture and save it to any folder on your computer.
 
@@ -70,26 +70,26 @@ Besides, you can also try using different apps for taking screenshots on your co
 
 ### macOS {#mac}
 
-To take a screenshot on Mac, use the following shortcut:
+To take a screenshot on Mac, use the following shortcut keys:
 
 - ***Press and hold ***⌘ Cmd + Shift + 3******
 
 Your Mac will capture the entire screen and save it as a file on the desktop.
 
-To take a screenshot of an active window, use the following shortcut:
+To take a screenshot of an active window, use the following shortcut keys:
 
 - **Press and hold *⌘ Cmd + Shift + 4 + Space bar*. The pointer will change to a camera icon. Click the window to capture it. Press Esc to cancel taking a screenshot**
 
-To take a screenshot of a specific area, use the following shortcut:
+To take a screenshot of a specific area, use the following shortcut keys:
 
 - ***Press ***⌘ Cmd + Shift + 5******. Drag the crosshair to select the needed area. Release your mouse or trackpad to take a screenshot, press Esc to cancel it.
 
-To take a screenshot of the *Touch Bar* (MacBook Pro), use the following shortcut:
+To take a screenshot of the *Touch Bar* (MacBook Pro), use the following shortcut keys:
 
 - ***Press ***⌘ Cmd + Shift + 6******
 
 Your Mac captures the entire *Touch Bar* and saves it as a file on the desktop.
 
-To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the shortcuts above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* shortcut.
+To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the shortcut keys above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* shortcut keys.
 
 You can also take screenshots by using **Preview** and choosing **Take screenshot** (of the selected area, window, or the entire screen). With **Preview** you can save your screenshots in JPG, TIFF, PDF, and other file formats.

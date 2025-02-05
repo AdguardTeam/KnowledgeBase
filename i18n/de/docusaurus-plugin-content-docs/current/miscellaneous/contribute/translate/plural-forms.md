@@ -38,7 +38,7 @@ Wenn Sie eine Phrase mit Pluralformen übersetzen, können Sie möglicherweise n
 
 Hier sind einige Informationsquellen, die Sie verwenden können.
 
-[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) enthält eine umfangreiche Liste von Sprachen. Die Anzahl der Pluralformen für die verschiedenen Sprachen wird auf diese Weise dargestellt: `nplurals=2`, `nplurals=4` und so weiter. Die Zahl nach dem Gleichheitszeichen `=` gibt die Anzahl der Pluralformen der jeweiligen Sprache an.
+[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) enthält eine umfangreiche Liste von Sprachen. Die Anzahl der Pluralformen für die verschiedenen Sprachen wird auf diese Weise dargestellt: `nplurals=2`, `nplurals=4` und so weiter. Die Zahl hinter dem Gleichheitszeichen `=` gibt die Anzahl der Pluralformen der jeweiligen Sprache an.
 
 Informationen zu Pluralformen finden Sie auch im [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Die CLDR-Pluralregeln geben eine zusätzliche Wortform für Dezimalzahlen an (1,5; 2,3; 100,1…), aber wir verwenden sie nicht in AdGuard-Übersetzungen.
 
@@ -137,7 +137,7 @@ Die Übersetzung aus dem Englischen ins Serbische sollte also lauten:
 
 Obwohl es offensichtlich ist, dass die letzten beiden Vorlagen keine Unterschiede aufweisen, ist es sehr wichtig, die Regel einzuhalten: **Die Anzahl der Vorlagen sollte die Anzahl der Pluralformen der jeweiligen Sprache widerspiegeln!**(typisch für diese Art von Strings mit Pluralformen).
 
-### Kurze Zusammenfassung {#summury}
+## Kurze Zusammenfassung {#summary}
 
 Achten Sie beim Übersetzen von AdGuard-Projekten genau auf Formulierungen, die die Verwendung von Pluralformen erfordern.
 

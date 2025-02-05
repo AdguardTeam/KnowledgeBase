@@ -43,10 +43,10 @@ Nesta seção, você pode controlar o acesso à Internet para aplicativos espec�
 
 Para excluir uma regra ou aplicativo de _Regras personalizadas_, deslize-o para a esquerda.
 
-### Notifications
+### Notificações
 
-If enabled, this feature notifies you when an app tries to break one of the Firewall rules set for that app (for example, to access mobile data when it shouldn’t). You can turn notifications on and off for all apps or for each app separately.
+Se ativado, este recurso notifica você quando um aplicativo está tentando violar uma regra de firewall aplicável, por exemplo, tentativas de acessar dados móveis dos quais está bloqueado. Você pode ativar e desativar as notificação para todos os aplicativos ou para cada aplicativo separadamente.
 
-Tap the notification to access the app’s Firewall settings, or temporary disable all Firewall rules for that app by tapping the corresponding button in the notification. You can also mute all Firewall notifications for the app by tapping the _Mute_ button in the notification for that app.
+Toque na notificação para acessar as configurações do Firewall do aplicativo ou desative temporariamente todas as regras do Firewall para esse aplicativo tocando no botão correspondente na notificação. Você também pode silenciar todas as notificações do Firewall para o aplicativo tocando no botão _Mudo_ na notificação daquele aplicativo.
 
-Note that if notifications for multiple apps would be displayed, they will be bundled into a single notification instead.
+Observe que, se as notificações de vários aplicativos forem exibidas, elas serão agrupadas em uma única notificação.

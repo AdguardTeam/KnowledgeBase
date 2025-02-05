@@ -17,7 +17,7 @@ Data and/or files provided in system logs are processed in accordance with [the 
 
 If any problems occur during the installation of AdGuard, the support team might ask you to collect and send them AdGuard installation logs. In this case you need to:
 
-1. Select *Run* command in Start menu or press *Win + R* on the keyboard.
+1. Select the *Run* command in Start menu or press *Win + R* on the keyboard.
 
 1. Type in *%tmp%* and click *OK*.
 

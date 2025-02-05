@@ -1,5 +1,5 @@
 ---
-title: AdGuard アカウントでできること
+title: What can be done in the AdGuard account
 sidebar_position: 2
 ---
 
@@ -7,14 +7,14 @@ sidebar_position: 2
 
 ## AdGuard アカウント設定の管理
 
-AdGuard アカウントの「*設定*」セクションで、パスワードの更新またはリセット、メールアドレスの変更、 [二要素認証](../2fa)の有効化、AdGuard が保存するお客様のデータの表示、アカウントおよび通知の言語の選択を行うことができます。
+In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable one-time code login or [two-factor authentication](../2fa), view the data stored about you by AdGuard, and select the language of your account and notifications.
 
 また、このセクションでは、AdGuardからのメール配信設定を管理することもできます:
 
-- トランザクションメール（購入完了通知、ライセンスの有効期限に関する通知など）の受け取り
-- AdGuardの月刊ニュースレターの受け取り
-- AdGuardのキャンペーンやスペシャルオファーに関するメールの受け取り
-- メールを開封したことをAdGuardに知らせるか知らせないかを設定
+- Receive AdGuard newsletter
+- Receive transactional emails
+- Send read receipts to AdGuard
+- Opt-out preferences
 
 ## ライセンスを管理
 
@@ -27,12 +27,12 @@ AdGuard アカウントの「*設定*」セクションで、パスワードの�
 - アップグレード
 - 解約 お支払い方法と情報を変更することもできます。
 
-AdGuard 広告ブロッカーライセンスにバインド（紐付け）されているデバイスは、バインド（紐付け）を解除したり、デバイス名を変更したりできます。 いらないデバイスの横にある✖️アイコンをクリックすると、バインド（紐付け）を解除できます。
+AdGuard 広告ブロッカーライセンスにバインド（紐付け）されているデバイスは、バインド（紐付け）を解除したり、デバイス名を変更したりできます。 To unbind unused devices, click the number of bound devices next to *Devices*, then select the right arrow → *Remove*.
 
 ## ご購入履歴
 
-「ご購入履歴」セクションには、AdGuard アカウントの登録時メールアドレスを使用して購入したすべてのライセンスが表示されます。 また、購入日、オーダー番号、支払い方法、購入金額に関する情報も掲載されています。
+The *Purchases* section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. また、購入日、オーダー番号、支払い方法、購入金額に関する情報も掲載されています。
 
-## サポート・お問い合わせ
+## Activity
 
-「サポート」タブには、AdGuard 製品に関する問題を解決したり、よくあるご質問への回答を見つけたりするのに役立つリンクが含まれています。 6つのセクションがあります：「よくあるご質問（FAQ）、バグ報告・機能リクエストを送る、不適切なブロックを報告、サポート・お問い合わせ、ナレッジベース、意見交換
+The *Activity* tab allows you to monitor login activity for your AdGuard account. It displays the email address used, location, and login date. You can also filter records by product: *All products*, *AdGuard Ad Blocker*, *AdGuard VPN*, *AdGuard DNS*.

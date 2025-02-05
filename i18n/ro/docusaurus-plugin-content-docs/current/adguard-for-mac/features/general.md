@@ -1,40 +1,40 @@
 ---
 title: General
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru macOS, un blocant de reclame multifuncțional care protejează dispozitivul tău la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to open app settings
+## Cum să deschideți setările aplicației
 
-To configure AdGuard for Mac, click the gear icon in the upper right corner of the main window and select _Preferences_.
+Pentru a configura AdGuard pentru macOS, faceți clic pe pictograma cu rotiță din colțul din dreapta sus al ferestrei principale și selectați _Preferințe_.
 
-![Main window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
+![Fereastra principală mobil](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
 
 ## General
 
-![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
+![Modul general](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
 
-### Do not block search ads and website self-promoting ads
+### Nu blocați anunțurile de căutare și anunțurile de autopromovare a site-urilor web
 
-This feature prevents AdGuard from blocking [search ads and self-promotions on websites](/general/ad-filtering/search-ads). This can be useful, for example, when you’re shopping online and want to see discounts offered by some websites. Instead of adding these websites to the allowlist, you can exclude self-promotions and search ads from filtering.
+Această caracteristică împiedică AdGuard să blocheze [anunțurile de căutare și autopromovările pe site-uri](/general/ad-filtering/search-ads). Acest lucru poate fi util, de exemplu, atunci când faceți cumpărături online și doriți să vedeți reducerile oferite de anumite site-uri. În loc să adăugați aceste site-uri la lista de permisiuni, puteți exclude autopromovările și anunțurile de căutare din filtrare.
 
-### Activate language-specific filters automatically
+### Activați automat filtre specifice limbii
 
-This feature detects the language of the website you’re visiting and automatically activates appropriate filters for more accurate ad blocking. This is especially helpful if you change languages frequently.
+Această caracteristică detectează limba site-ului pe care îl vizitați și activează automat filtrele corespunzătoare pentru o blocare mai precisă a anunțurilor. Acest lucru este deosebit de util dacă schimbați frecvent limbile.
 
-### Launch AdGuard at login
+### Lansați AdGuard la logare
 
-This feature automatically launches AdGuard automatically after you restart your computer. This helps keep AdGuard protection active without having to manually open the app.
+Această caracteristică lansează automat AdGuard după ce reporniți computerul. Acest lucru ajută la menținerea protecției AdGuard active fără a fi nevoie să deschideți manual aplicația.
 
-### Hide menu bar icon
+### Ascundeți iconul barei de meniu
 
-This feature hides AdGuard’s icon from the menu bar but keeps AdGuard running in the background. If you want to disable AdGuard completely, click _Quit AdGuard_ in the main window menu.
+Această caracteristică ascunde pictograma AdGuard din bara de meniu, dar menține AdGuard în funcțiune în fundal. Dacă doriți să dezactivați complet AdGuard, faceți clic pe _Iesiți din AdGuard_ în meniul ferestrei principale.
 
 ### Allowlist
 
-Websites added to this list aren’t filtered. You can also access allowlisted websites from _User rules_.
+Site-urile adăugate la această listă nu sunt filtrate. De asemenea, puteți accesa site-urile din lista de permisiuni din _Reguli utilizator_.

@@ -110,7 +110,7 @@ Or you can configure remove parameters manually:
 
 `[port]` — outbound proxy port (integer number from 1 to 65535);
 
-- **Optional parameters**:
+- **İsteğe bağlı parametreler**:
 
  `[login and password]` — only if proxy requires it. This data is ignored when setting up **SOCKS4**;
 
@@ -126,17 +126,17 @@ Or you can configure remove parameters manually:
 
 :::
 
-**Don't forget to include the password as an extra and mention package name and class. You need to do so for every intent.**
+**Don't forget to include the password, package name, and class. You need to do so for every intent.**
 
 Extra: `password:*******`
 
-Package name: `com.adguard.android`
+Paket adı: `com.adguard.android`
 
 Class: `com.adguard.android.receiver.AutomationReceiver`
 
 :::not
 
-Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. If you used this feature, please pay attention and use the new name.
+Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. If this function is used, remember to update to the new name.
 
 :::
 

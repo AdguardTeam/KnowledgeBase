@@ -1,48 +1,48 @@
 ---
-title: Possible DNS leaks
+title: DNSリークの可能性
 sidebar_position: 9
 ---
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際にどのように動作するかを確認するには、[AdGuard アプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
-AdGuard for Windows allows users to specify a DNS server address to resolve queries instead of system DNS server, which is provided by your ISP if not overridden in the system settings. Using a non-default DNS server can safeguard your DNS traffic from the ISP’s interception. Moreover, by choosing an encrypted and/or filtering DNS server, you get another layer of protection against bad actors and annoying ads.
+AdGuard for Windowsでは、クエリを解決するために、システムDNSサーバーの代わりにDNSサーバーアドレスを指定することができます。（システムDNSサーバーは、システム設定で上書きされていない場合、インターネットプロバイダによって提供されます。） デフォルトでないDNSサーバーを使うことで、インターンシッププロバイダーの傍受からDNSトラフィックを守ることができます。 さらに、暗号化および/またはフィルタリングDNSサーバーを選択することで、悪質業者や迷惑な広告からの保護機能を得ることができます。
 
-Many AdGuard for Windows users appreciate the DNS protection feature. But some of them encounter the following issue: a check on a website like https://ipleak.net/ shows that requests are handled by default DNS server instead of the selected one. In this article we will tell you why this happens and how to avoid it.
+多くの AdGuard for Windows ユーザーは、DNS保護機能を高く評価してくれています。 しかし、次のような問題が発生していることもあります。https://ipleak.net/ のようなウェブサイトをチェックすると、リクエストは選択したDNSサーバーではなく、デフォルトのDNSサーバーによって処理されていることがわかります。 本記事では、なぜこのようなことが起こるのか、またそれを回避する方法を説明します。
 
-## Bootstrap DNS address
+## bootstrap DNSアドレス
 
-The DNS server addresses could be written as IPs or as domain names. In the case of IP addresses there are no difficulties: AdGuard forwards the DNS request directly to the server specified in the DNS protection module. However, encrypted DNS server addresses, like DoT or DoH, are most often written as domain names. In this case, to first resolve the encrypted DNS server address, AdGuard sends a DNS query to the bootstrap address, which is by default a system DNS server. This connection is what check services perceive as a leak.
+DNS サーバーのアドレスは、IP またはドメイン名として記述できます。 IPアドレスの場合、AdGuardはDNS保護モジュールで指定されたサーバーにDNSリクエストを直接転送しますので、問題はありません。 しかし、DoTやDoHのような暗号化されたDNSサーバーアドレスは、ドメイン名として記述されることがほとんどです。 この場合、最初に暗号化されたDNSサーバーアドレスを解決するために、AdGuardはデフォルトでシステムDNSサーバーにDNSクエリを送信します。 この接続を、チェックサービスがリークと認識してしまうものです。
 
-**To eliminate this leak:**
+**このリークを解消する方法はこちら:**
 
-- go to the *Advanced settings*
-- scroll down to the *List of custom bootstrap addresses* section
-- enter the custom bootstrap address in IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
-- click *Save*
+- 「*詳細設定*」へ移動します。
+- 「*カスタムbootstrapアドレスの一覧*」セクションまでスクロールダウンします。
+- IPアドレス形式でカスタムブートストラップアドレスを入力してください（[こちらの既知のDNSプロバイダリスト](https://adguard-dns.io/kb/general/dns-providers/)を使用できます）。
+- 「*保存*」をクリックします。
 
-## Fallback DNS server
+## フォールバックDNSサーバー
 
-It could happen that AdGuard cannot reach the specified server because of a weak internet connection, an expiration of timeout set by default or some server related issues. In this case, it will connect to the fallback server, which is by default a system DNS server. This connection will also be considered by the check service as a leak.
+インターネット接続が弱い、デフォルトで設定されているタイムアウトの期限切れ、またはサーバー関連の問題のために、AdGuardが指定されたサーバーに到達できないことがあります。 この場合、デフォルトではシステムDNSサーバーであるフォールバックサーバーに、AdGuardは接続します。 この接続もチェックサービスによってリークとして認識されます。
 
-**To eliminate this leak:**
+**このリークを解消する方法はこちら:**
 
-- go to the *Advanced settings*
-- scroll down to the *Fallback servers* section
-- check the *Use custom servers* option
-- then find the *List of custom fallback servers* section and enter custom fallback servers one per line
+- 「*詳細設定*」へ移動します。
+- 「*フォールバックサーバー*」セクションまでスクロールします。
+- 「*カスタムサーバーを使用*」オプションをチェックします。
+- 次に、「*カスタムフォールバックサーバーのリスト*」セクションを見つけて、カスタムフォールバックサーバーを1行に1つずつ入力します。
 
-or
+もしくは
 
-- go to the *Advanced settings*
-- scroll down to the *Fallback servers* section
-- check the *Don’t use fallback servers* option
+- 「*詳細設定*」へ移動します。
+- 「*フォールバックサーバー*」セクションまでスクロールします。
+- 「*フォールバックサーバーを使用しない*」オプションをチェックします。
 
-or
+もしくは
 
-- go to the *Advanced settings*
-- scroll down to the *DNS server timeout period* section
-- enter an arbitrary large number
+- 「*詳細設定*」へ移動します。
+- 「*DNSサーバーのタイムアウト期間*」セクションまでスクロールします。
+- 任意の大きな数値を入力します。

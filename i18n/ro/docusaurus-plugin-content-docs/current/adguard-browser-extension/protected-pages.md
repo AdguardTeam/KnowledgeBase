@@ -1,33 +1,33 @@
 ---
-title: Browser-protected pages
-sidebar_position: 5
+title: Pagini protejate la nivel de browser
+sidebar_position: 6
 ---
 
 :::info
 
-This article is about AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Acest articol se referă la extensia de browser AdGuard, care vă protejează doar browserul dvs. Pentru a proteja întregul dispozitiv, [descărcați aplicația AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
-When using a web extension like AdGuard Browser Extension, there are certain restricted domains that prohibit access or permissions. As a result, ad blocking extensions are not allowed to interact with or modify the content of these pages. In other words, they are not allowed to block ads and other annoying elements on these web pages.
+Atunci când utilizați o extensie web precum Extensia de browser AdGuard, există anumite domenii restricționate care interzic accesul sau permisiunile. Ca urmare, extensiile de blocare a anunțurilor nu sunt permise să interacționeze sau să modifice conținutul acestor pagini. Cu alte cuvinte, nu li se permite să blocheze reclame și alte elemente enervante pe aceste pagini web.
 
-## Chromium browser restrictions
+## Restricții pentru browserul Chromium
 
-Chromium-based browsers, such as Google Chrome, maintain a list of restricted domains that extensions are not allowed to access. These domains include:
+Browserele bazate pe Chromium, cum ar fi Google Chrome, mențin o listă de domenii restricționate la care extensiile nu au voie să acceseze. Aceste domenii includ:
 
 - clients.google.com
 - clients[0-9]+.google.com
 - sb-ssl.google.com
-- URLs starting with `chrome://`, `chrome-extension://`, or `https://chrome.google.com/webstore/`
-- PDF files
-- Pages where Javascript is disabled
-- Security warning pages
-- Error pages such as 404 errors and network errors
-- URLs starting with `view-source:` or `data:`
+- URL-uri care încep cu `chrome://`, `chrome-extension://` sau `https://chrome.google.com/webstore/`
+- Fișiere PDF
+- Pagini în care JavaScript este dezactivat
+- Pagini de avertizare de securitate
+- Pagini de eroare, cum ar fi erorile 404 și erorile de rețea
+- URL-uri care încep cu `view-source:` sau `data:`
 
-## Firefox browser restrictions
+## Restricții pentru browserul Firefox
 
-Similarly, the Firefox browser has its own set of restricted domains where extensions are not permitted to operate. These restricted domains include:
+În mod similar, browserul Firefox are propriul set de domenii restricționate unde extensiile nu au voie să funcționeze. Aceste domenii restricționate includ:
 
 - accounts-static.cdn.mozilla.net
 - accounts.firefox.com
@@ -42,20 +42,20 @@ Similarly, the Firefox browser has its own set of restricted domains where exten
 - support.mozilla.org
 - sync.services.mozilla.com
 
-## Modifying restrictions in Firefox
+## Modificarea restricțiilor în Firefox
 
-Changing advanced settings can affect the stability and security of Firefox. This is recommended for advanced users only. If you are aware of the associated risk and still wish to enable add-ons disallowed on a protected page, follow the steps below:
+Modificarea setărilor avansate poate afecta stabilitatea și securitatea Firefox. Acest lucru este recomandat doar pentru utilizatori avansați. Dacă sunteți conștient de riscurile asociate și doriți totuși să activați modulele adăugate interzise pe o pagină protejată, urmați pașii de mai jos:
 
-1. Click the menu button → **Add-ons and themes** → **Extensions**.
-2. Click the extension you want to enable on sites with restrictions (In this case, AdGuard).
+1. Faceți clic pe butonul de meniu → **Module și teme** → **Extensii**.
+2. Faceți clic pe extensia pe care doriți să o activați pe site-urile cu restricții (în acest caz, AdGuard).
 3. Select **Allow** in the section **Run on sites with restrictions**.
 
-Alternatively, you can:
+Alternativ, puteți:
 
-1. Open a new tab and type **about:config** in the address bar.
-2. Press **Return**. You may encounter a warning. In this case, click **Accept the Risk and Continue**.
-3. Search for `extensions.webextensions.restrictedDomains`. If you can’t find this preference, you can create it. Simply select the **Boolean** type and click **+** to add it.
-4. Click the toggle button next to this preference and change its value to `false`.
-5. Restart Firefox.
+1. Deschideți o filă nouă și tastați **about:config** în bara de adrese.
+2. Apăsați **Return**. Este posibil să întâlniți o avertizare. În acest caz, faceți clic pe **Acceptați riscul și continuați**.
+3. Căutați `extensions.webextensions.restrictedDomains`. Dacă nu găsiți această preferință, o puteți crea. Selectați pur și simplu tipul **Boolean** și faceți clic pe **+** pentru a-l adăuga.
+4. Faceți clic pe butonul de comutare de lângă această preferință și schimbați valoarea acesteia în `false`.
+5. Reporniti Firefox.
 
-For further information on this subject, read [the article on Mozilla’s support website](https://mzl.la/3POXoWi).
+Pentru informații suplimentare despre acest subiect, citiți [articolul de pe site-ul de suport Mozilla](https://mzl.la/3POXoWi).

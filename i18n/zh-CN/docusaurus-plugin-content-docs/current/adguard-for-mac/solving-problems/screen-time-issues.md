@@ -1,5 +1,5 @@
 ---
-title: Incompatibility with Screen Time
+title: 屏幕时间兼容性问题
 sidebar_position: 11
 ---
 
@@ -9,10 +9,10 @@ sidebar_position: 11
 
 :::
 
-If you have Content Restrictions enabled in _Screen Time_ while AdGuard is on, you may experience problems loading web pages. To check if Content Restrictions are active:
+启用 AdGuard 时，在「屏幕时间」中启用内容限制可能会导致网页加载问题。 检查「内容限制」是否已激活：
 
-1. Go to System Settings → Screen Time → Content & Privacy → Content Restrictions
+1. 转到系统设置 →「屏幕时间」→「内容和隐私」→「内容限制」
 
-2. Check if the setting for Access to Web Content is set to _Limit Adult Websites_
+2. 检查「访问网页内容」设置是否设为「_限制成人网站_」
 
-If this setting is on, pages won’t load. To continue using AdGuard, disable Content & Privacy in Screen Time, and then restart the system.
+如果设置已启用，网页将无法加载。 要继续使用 AdGuard，请在「屏幕时间」中禁用「内容与隐私」，然后重新启动系统。

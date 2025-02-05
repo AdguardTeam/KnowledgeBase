@@ -21,7 +21,7 @@ Os endereços dos servidores DNS podem ser escritos como IPs ou nomes de domíni
 
 - vá para *Configurações avançadas*
 - role para baixo até a seção *Lista de endereços de bootstrap personalizados*
-- insira o endereço de inicialização personalizado no formato de endereço IP (você pode usar [a lista de provedores de DNS conhecidos](https://adguard-dns.io/kb/general/dns-providers/))
+- insira o endereço de bootstrap personalizado no formato de Endereço de IP (você pode usar [a lista de provedores DNS conhecidos](https://adguard-dns.io/kb/general/dns-providers/))
 - clique em *Salvar*
 
 ## Servidor DNS fallback
@@ -33,7 +33,7 @@ Pode ser que o AdGuard não consiga acessar o servidor especificado devido a uma
 - vá para *Configurações avançadas*
 - role para baixo até a seção *Servidores de fallback*
 - marque a opção *Usar servidores personalizados*
-- em seguida, encontre a seção *Lista de servidores fallback personalizados* e insira servidores fallback personalizados, um por linha
+- em seguida, encontre a seção *Lista de servidores fallback personalizados* e insira os servidores alternativos personalizados, um por linha
 
 ou
 

@@ -19,7 +19,7 @@ Sometimes a regular log may not be sufficient to identify the origin of the prob
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard는 사용자의 개인정보를 보호하기 위해 최선을 다하고 있습니다. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. 지원팀에 로그를 보내기 전에 파일에 전달하고 싶지 않은 추가 정보가 포함되어 있는지 확인하세요. 이러한 정보가 포함되어 있는 경우, 먼저 삭제하는 것이 좋습니다.
 
 :::
 

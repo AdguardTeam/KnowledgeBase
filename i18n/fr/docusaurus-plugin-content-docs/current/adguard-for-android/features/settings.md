@@ -59,7 +59,7 @@ If you activate too many filters, some websites may work incorrectly.
 
 ### Scripts utilisateur
 
-Userscripts are mini-programs written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
+Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
 
 ![Userscripts \*mobile\_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
@@ -87,7 +87,7 @@ The CA certificate in the user store is enough to filter HTTPS traffic in browse
 
 ##### HTTPS-filtered apps
 
-This section contains the list of apps for which AdGuard filters HTTPS traffic. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
+This section contains the list of apps for which AdGuard filters HTTPS traffic. Veuillez noter que ce paramètre peut être appliqué à toutes les applications uniquement si vous avez des certificats CA dans le stockage d'utilisateur et dans le stockage système.
 
 ##### HTTPS-filtered websites
 
@@ -133,7 +133,7 @@ In this section, you can find information about your license and manage it:
 - Buy an AdGuard license to activate [the full version's features](/adguard-for-android/features/free-vs-full)
 - Log in to your AdGuard account or enter the license key to activate your license
 - Sign up to activate your 7-day trial period if you haven't used it yet
-- Refresh the license status from the three-dots menu (:)
+- Refresh the license status from the three-dots menu (⋮)
 - Open the AdGuard account to manage your license there
 - Reset your license — for example, if you've reached device limit for this license and want to apply another one
 

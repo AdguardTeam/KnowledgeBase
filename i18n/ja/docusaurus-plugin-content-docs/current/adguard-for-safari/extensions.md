@@ -49,13 +49,19 @@ Safari拡張機能は、Safariウェブブラウザで機能を追加する小�
 
 ## 「AdGuard for Safari」拡張機能
 
-「*AdGuard for Safari*」という拡張機能は検索バーの横にあるAdGuardアイコンを有効にします。 特定のウェブサイトに対して広告ブロックを素早くオン・オフにしたい場合や、手動で広告をブロックしたい場合に便利です。 また、Safariがサポートするフォーマットに変換できない高度なルールもこの拡張機能に含まれています。 高度なルールにはCSSルール、CSSセレクタ、scriptletsが含まれ、これらのおかげでAdGuardはYouTubeなどの複雑な広告をブロックすることができます。
+*AdGuard for Safari* activates the AdGuard icon next to the search bar. It's useful if you want to quickly set up protection for a specific website or block ads manually. It also contains advanced rules that aren't converted to the format supported by Safari. These include [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), which allow AdGuard to block complex ads, such as those on YouTube.
 
 ## Safariの拡張機能を管理する方法
 
-1. Safariを開き、画面左上の *Safari* をクリックしてメニューを展開します。 ![Safari設定 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
-1. *環境設定...*をクリックします。
-1. 🧩「*拡張機能*」タブを選択します。 ![拡張機能タブ](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
+1. Safariを開き、画面左上の *Safari* をクリックしてメニューを展開します。
+
+    ![Safari設定 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
+
+1. Click *Settings...*
+
+1. 🧩「*拡張機能*」タブを選択します。
+
+    ![拡張機能タブ](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
 ## AdGuard for Safari にアクセス権限が必要な理由
 

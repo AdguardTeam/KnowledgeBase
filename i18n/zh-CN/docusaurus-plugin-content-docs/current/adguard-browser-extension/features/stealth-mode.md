@@ -1,6 +1,6 @@
 ---
-title: 隐身模式
-sidebar_position: 2
+title: 跟踪保护（隐身模式）
+sidebar_position: 3
 ---
 
 :::info

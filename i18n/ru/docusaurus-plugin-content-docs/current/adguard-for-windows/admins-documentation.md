@@ -7,9 +7,9 @@ sidebar_position: 5
 
 ## 1. Скачайте MSI-установщик {#msi-download}
 
-Download the [AdGuard MSI x86](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi)
+Скачать [AdGuard MSI x86](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi)
 
-Download the [AdGuard MSI x64](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
+Скачать [AdGuard MSI x64](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
 
 ## 2. Настройте параметры сети {#settings-configuring}
 
@@ -39,16 +39,16 @@ AdGuard подключается к двум хостам: `api.adguard.org` и 
 
 :::note
 
-If you have installed AdGuard for Windows from an MSI file, AdGuard will not be updated automatically. To allow manual updates:
+Если вы установили AdGuard для Windows из файла MSI, AdGuard не будет обновляться автоматически. Чтобы разрешить обновления вручную:
 
-- In versions released after v7.16, delete the `ForbidCheckUpdates` parameter or set its value to `NO` (case-insensitive) in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
+- В версиях, выпущенных после v7.16, удалите параметр `ForbidCheckUpdates` или установите для него значение `NO` (регистр не учитывается) в реестре в разделе `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
 
-- In v7.16 and earlier versions, set to `YES` (case-insensitive) the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` key on x86 OS or `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key on x64 OS. Any other value or no value for this parameter will disable automatic updates.
+- В версии 7.16 и более ранних установите значение `YES` (регистр не учитывается) для параметра `AllowCheckUpdates` для `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` в ОС x86 или для `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` в ОС x64. Любое другое значение или отсутствие значения для этого параметра отключит автоматические обновления.
 
-Please note that such installation of the application and manual updates are not recommended and can cause technical problems.
+Обратите внимание, что такая установка приложения и обновление вручную не рекомендуется и может привести к техническим проблемам.
 
 :::
 
 ## 5. Протестируйте установку {#installation-test}
 
-Запустите AdGuard на целевой машине. Откройте экран лицензии, чтобы проверить, что используется установленная вами лицензия. Возможно, вам придётся кликнуть по кнопке «Обновить статус», чтобы AdGuard проверил лицензионный ключ.
+Запустите AdGuard на нужном устройстве. Откройте экран лицензии, чтобы убедиться, что используется указанная лицензия. Возможно, вам придётся нажать «Обновить статус», чтобы AdGuard проверил лицензионный ключ.

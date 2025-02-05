@@ -29,7 +29,7 @@ sidebar_position: 1
 
 所有过滤器均按主题类别分组。 要查看这些类别的完整列表（不要与内容拦截器混淆），请通过点击盾牌图标打开「保护」部分，然后转到「Safari 保护」→「过滤器」。
 
-![Filter groups \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
+![过滤器类型 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
 
 共有 8 个类别，每个类别都包含多个过滤器，这些过滤器都有一个共同的目的，即阻止广告、社交媒体小工具、Cookie 通知、保护用户免受在线诈骗。 要确定哪些筛选器适合您的需要，请阅读它们的说明，并根据标签进行导航 (`ads`、`privacy`、`recommended` 等等)。
 

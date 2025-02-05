@@ -31,7 +31,7 @@ And even when a rule finally gets added to a filter, it doesn't mean that it sta
 
 AdGuard users [have access to a special web reporting tool](https://reports.adguard.com/new_issue.html). Thanks to user complaints, filter developers can focus on correcting their filter lists and not on scouring the Internet for new and old unblocked ads.
 
-Filters can do more than just block ads. There are filters that block tracking, social media widgets, and annoyances such as cookie notices. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
+Filters can do more than just block ads. There are filters that block tracking, social media widgets, and annoyances, such as cookie notices. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
 
 We develop and maintain [our own set of filter lists](../adguard-filters) that can be used with AdGuard or other ad blockers.
 
@@ -62,3 +62,41 @@ These rules are quite complicated and require the ad blocker to be granted certa
 There are other types of filtering rules, but they require more advanced technical knowledge to understand how they work. If you are interested, [check out our comprehensive guide on filtering rules in the linked article](../create-own-filters).
 
 :::
+
+## Types of request handling in AdGuard
+
+AdGuard handles requests according to filters, user rules and settings enabled by the user. As a result, a request can be blocked, modified, allowed or, when nothing is done to it, just processed.
+
+Detailed information on how each request of yours has been handled by AdGuard can be found in the *Filtering log* (AdGuard for Windows, AdGuard for Mac, AdGuard Browser Extension) or *Recent activity* (AdGuard for iOS, AdGuard for Android).
+
+Regarding AdGuard filters, you can also check [our filter policy](../filter-policy), which describes in detail what and why each of our filters blocks.
+
+### Examples of blocked requests
+
+AdGuard DNS filter blocks requests to ad domains, such as `ad.doubleclick.net`.
+
+AdGuard Tracking Protection filter blocks tracking requests, such as `youtube.com/youtubei/log_event?`.
+
+### Examples of allowed requests
+
+AdGuard Base filter allows non-ad requests, such as `www.google.com/complete/search?q=`.
+
+Filter unblocking search ads and self-promotion allows requests to search ad-related domains, such as `www.google.com/aclk?`.
+
+Requests to websites that are added by the user to *Allowlist* are allowed.
+
+### Examples of modified requests
+
+Tracking protection feature with protection level set to *High* enables AdGuard URL Tracking filter which modifies requests by removing tracking parameters from them:
+
+`https://www.rentio.jp/products/ax-n1b?click_from=top_newitems` → `https://www.rentio.jp/products/ax-n1b`
+
+`https://www.baseballchannel.jp/npb/183688/?ref=ise` → `https://www.baseballchannel.jp/npb/183688/`
+
+`https://www.gog.com/game/spec_ops_the_line?pp=2863d7ae605104eeef364e3f164d3404e20f680c&gad_source=1` →
+`https://www.gog.com/game/spec_ops_the_line`
+
+Please note that *modified* events you see in the Filtering log or Recent activity refer not only to the cases when a request is modified, but also when:
+
+- something on the page is changed (usually by cosmetic rules)
+- the response is modified

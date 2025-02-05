@@ -1,106 +1,124 @@
 ---
-title: Installation
+title: Instalare
 sidebar_position: 2
 ---
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multifuncțional care protejează dispozitivul dumneavoastră la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## System requirements
+## Cerințele Sistemului
 
 **Operating system:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
 
-**RAM:** at least 512 MB.
+**RAM:** cel puțin 512 MB.
 
-**Free disk space:** 150 Mbytes.
+**Spațiu liber pe disc:** 150 Mbytes.
 
-**Browsers:** Microsoft Edge, Microsoft Internet Explorer (all versions), Opera, Google Chrome, Yandex.Browser, Mozilla Firefox, and many other browsers.
+**Browsere:** Microsoft Edge, Microsoft Internet Explorer (toate versiunile), Opera, Google Chrome, Yandex.Browser, Mozilla Firefox și multe alte browsere.
 
-## AdGuard installation
+## Instalarea AdGuard
 
-To use AdGuard on a PC or tablet under Microsoft Windows, you should download the installation package and launch the installation program. Perform the following actions:
+Pentru a folosi AdGuard pe un PC sau tabletă cu Microsoft Windows, trebuie să descărcați pachetul de instalare și să lansați programul de instalare. Executați următoarele acțiuni:
 
-1. Go to the [AdGuard website](http://adguard.com) in the address bar and click *Download* [on the opened page](https://adguard.com/download.html?auto=1).
+1. Accesați [site-ul AdGuard](http://adguard.com) în bara de adrese și faceți clic pe *Descărcați* [pe pagina principală](https://adguard.com/download.html?auto=1).
 
-   ![Download AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
+   ![Descărcați AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
 
-2. When the download is finished, press the *Open* button shown in the Downloads bar or click the file name *adguardInstaller.exe*.
+2. Când descărcarea este finalizată, apăsați butonul *Deschis* afișat în bara de Descărcări sau faceți clic pe numele fișierului *adguardInstaller.exe*.
 
-   ![Press "Run"](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/click-download.png)
+   ![Apăsați "Rulați"](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/click-download.png)
 
-3. You’ll see the User Account Control dialogue box requesting to allow the app to make changes to your PC. Click *Yes*.
+3. Veți vedea caseta de dialog Control Cont Utilizator care solicită permisiunea aplicației de a efectua modificări pe PC-ul dvs. Faceți clic pe *Da*.
 
-   ![Allow changes *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/allow-changes.png)
+   ![Permiteți modificări *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/allow-changes.png)
 
-4. Next, choose the folder on your PC for the app to be installed to.
+4. Apoi, alegeți folderul pe PC-ul dvs. în care doriți să fie instalată aplicația.
 
-   ![Choose folder *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/install-wizard.png)
+   ![Alegeți folder *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/install-wizard.png)
 
-   If you do not agree with the default installation path, press *Browse*, select the folder for AdGuard installation in the *Browse For Folder* window, and confirm your choice by clicking *OK*. You can also install AdGuard to a new folder by clicking *Make New Folder* and entering its name. To create a desktop shortcut for AdGuard, check the *Create a desktop shortcut* box. Press *Install* to proceed with installation.
+   Dacă nu sunteți de acord cu calea de instalare implicită, apăsați *Răsfoiți*, selectați folderul pentru instalarea AdGuard în fereastra *Răsfoiți după folder* și confirmați alegerea făcând clic pe *OK*. De asemenea, puteți instala AdGuard într-un folder nou făcând clic pe *Creează folder nou* și introducând numele său. Pentru a crea un shortcut pe desktop pentru AdGuard, bifați caseta *Creează un shortcut pe desktop*. Apăsați *Instalare* pentru a continua cu instalarea.
 
-   ![Start installation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/start-install.png)
+   ![Începeți instalarea *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/start-install.png)
 
-5. Wait for the installation to complete and click *Finish*.
+5. Așteptați finalizarea instalării și faceți clic pe *Finalizare*.
 
-   ![Complete installation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/finish-install.png)
+   ![Finalizarea instalării *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/finish-install.png)
 
-   Congratulations! You have successfully installed AdGuard on your computer. On the screen you will see the main window where you can change the app’s settings.
+   Felicitări! Ați instalat cu succes AdGuard pe computerul dumneavoastră. Pe ecran veți vedea fereastra principală unde puteți schimba setările aplicației.
 
-## How to uninstall AdGuard for Windows {#uninstall}
+## Cum se dezinstalează AdGuard pentru Windows {#uninstall}
 
-### Regular method
+### Metoda obișnuită
 
-If you need to uninstall or reinstall AdGuard, do the following:
+Dacă trebuie să dezinstalați sau să reinstalați AdGuard, faceți următoarele:
 
-- For Microsoft Windows 10 & 11: Open *Start Menu* by clicking *Start*, and select *Settings*. Click the *Apps* icon in the window that opens. Select *Apps and Features* from the list on the left in the *Apps* window. Select *AdGuard* from the list of your installed apps and click *Uninstall*. Click *Uninstall* in the dialogue box that opens to confirm.
+- Pentru Microsoft Windows 10 & 11: Deschideți *Meniul Start* făcând clic pe *Start* și selectați *Setări*. Faceți clic pe iconița *Aplicații* în fereastra care se deschide. Selectați *Aplicații și caracteristici* din lista din stânga în fereastra *Aplicații*. Selectați *AdGuard* din lista aplicațiilor instalate și faceți clic pe *Dezinstalare*. Faceți clic pe *Dezinstalare* în caseta de dialog care se deschide pentru a confirma.
 
-![Windows 10 & 11 uninstallation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/win10-uninstall.png)
+![Dezinstalarea Windows 10 & 11 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/win10-uninstall.png)
 
-- For Microsoft Windows 8: Right-click the *empty space* in the lower left corner of the task bar and select *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
+- Pentru Microsoft Windows 8: Faceți clic dreapta pe *spațiul gol* din colțul din stânga jos al barei de activitate și selectați *Panoul de control*. Faceți clic pe *Dezinstalați un program* în secțiunea *Programe*, apoi selectați *AdGuard* din lista aplicațiilor instalate și apăsați butonul *Dezinstalați* situat deasupra listei. Confirmați acțiunea făcând clic pe *Dezinstalați AdGuard* în fereastra care se deschide.
 
-![Windows 8 uninstallation](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/win8-uninstall.png)
+![Dezinstalarea Windows 8](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/win8-uninstall.png)
 
-- For Microsoft Windows 8.1: Right-click the *Start button* and select *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
+- For Microsoft Windows 8.1: Right-click the *Start button* and select *Control Panel*. Faceți clic pe *Dezinstalați un program* în secțiunea *Programe*, apoi selectați *AdGuard* din lista aplicațiilor instalate și apăsați butonul *Dezinstalați* situat deasupra listei. Confirmați acțiunea făcând clic pe *Dezinstalați AdGuard* în fereastra care se deschide.
 
-- For Microsoft Windows 7: Open *Start Menu*. In the search box, type *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
+- Pentru Microsoft Windows 7: Deschideți *Meniul Start*. In the search box, type *Control Panel*. Faceți clic pe *Dezinstalați un program* în secțiunea *Programe*, apoi selectați *AdGuard* din lista aplicațiilor instalate și apăsați butonul *Dezinstalați* situat deasupra listei. Confirmați acțiunea făcând clic pe *Dezinstalați AdGuard* în fereastra care se deschide.
 
-![Windows 7 uninstallation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/win7-uninstall.png)
+![Dezinstalarea Windows 7 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/win7-uninstall.png)
 
-### Advanced method {#advanced}
+### Metoda avansată {#advanced}
 
-In case regular uninstall doesn't work for any reason, you can try to use an advanced method. First of all, you need to [download the uninstaller tool](https://cdn.adtidy.org/distr/windows/Uninstall_Utility.zip) created by our developers. Extract the archive to any folder on your PC and run the **Adguard.UninstallUtility.exe** file, and allow the app to make changes to your device. Then follow the instruction below:
+În cazul în care dezinstalarea obișnuită nu funcționează din anumite motive, puteți încerca să folosiți o metodă avansată. În primul rând, trebuie să [descărcați instrumentul de dezinstalare](https://cdn.adtidy.org/distr/windows/Uninstall_Utility.zip) creat de dezvoltatorii noștri. Extrageți arhiva în orice folder de pe PC-ul dvs. și rulați fișierul **Adguard.UninstallUtility.exe**, și permiteți aplicației să efectueze modificări pe dispozitivul dumneavoastră. Apoi urmați instrucțiunile de mai jos:
 
 - Select *AdGuard Ad Blocker* and *Standard* uninstall type, then click *Uninstall*.
 
-![Standard uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard.jpg)
+![Dezinstalare standard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard.jpg)
 
-- Click *OK* once the warning window pops up:
+- Faceți clic pe *OK* când fereastra de avertizare apare:
 
-![Standard uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
+![Avertizare dezinstalare standard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
+- Așteptați până când dezinstalarea este finalizată — va fi o frază **Dezinstalare completă** și o solicitare de a reporni computerul dumneavoastră:
 
-![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard_complete.jpg)
+![Dezinstalare finalizată *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard_complete.jpg)
 
-:::caution
+:::atenție
 
-Follow the next steps only if performing the first two steps wasn’t enough for some reason. We strongly suggest contacting our support before using steps 3-4 of advanced uninstall instruction.
+Urmați pașii următori doar dacă efectuarea primelor două etape nu a fost suficientă din anumite motive. Vă sugerăm cu tărie să contactați suportul nostru înainte de a utiliza pașii 3-4 din instrucțiunile avansate de dezinstalare.
 
 :::
 
-- Select *AdGuard Ad Blocker* and *Extended* uninstall type, then click *Uninstall*. Clcik *Yes, continue* in the window prompt.
+- Selectați *Blocant de reclame AdGuard* și *Tip extins* de dezinstalare, apoi faceți clic pe *Dezinstalare*. Faceți clic pe *Da, continuați* în fereastra de prompt.
 
-![Extended uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
+![Dezinstalare extinsă *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
 
-- Click *OK* once the warning window pops up:
+- Faceți clic pe *OK* când fereastra de avertizare apare:
 
-![Extended uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
+![Avertizare dezinstalare extinsă *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
+- Așteptați până când dezinstalarea este finalizată — va fi o frază **Dezinstalare completă** și o solicitare de a reporni computerul dumneavoastră:
 
-![Extended uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
+![Dezinstalarea extinsă s-a finalizat *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
 
-AdGuard is successfully uninstalled!
+AdGuard a fost dezinstalat cu succes!
+
+#### Rularea dezinstalatorului în modul consolei
+
+Pe lângă rularea dezinstalatorului avansat în modul interactiv, puteți folosi de asemenea argumente din linia de comandă pentru a dezinstala AdGuard pentru Windows. Pentru a face acest lucru, urmați instrucțiunile de mai jos:
+
+1. Deschideți Promptul de comandă tastând *cmd* din meniul Start.
+2. Utilizați `/console` pentru a rula dezinstalatorul în modul consolei, fără interfața interactivă. Toate parametrii din linia de comandă de mai jos vor fi ignorați dacă modul `/console` nu este activat.
+3. Utilizați `/adblocker` pentru a dezinstala AdGuard pentru Windows. Ar trebui să arate astfel:
+
+   `Adguard.UninstallUtility.exe /console /adblocker`
+
+4. You can also use `/advanced` to force the uninstaller to run in *Advanced mode* and `/settings` to force the uninstaller to remove user settings along with the application.
+
+:::note
+
+Utilizarea parametrilor `/console` și `/adblocker` este necesară pentru o dezinstalare de succes. Parametrii `/advanced` și `/settings` sunt opționali.
+
+:::

@@ -133,7 +133,7 @@ En esta sección podrás encontrar información sobre tu licencia y gestionarla:
 - Compra una licencia de AdGuard para activar [las funciones de la versión completa](/adguard-for-android/features/free-vs-full)
 - Inicia sesión en tu cuenta AdGuard o ingresa la clave de licencia para activar tu licencia
 - Regístrate para activar tu período de prueba de 7 días si aún no lo has usado
-- Actualiza el estado de la licencia desde el menú de tres puntos
+- Actualiza el estado de la licencia desde el menú de tres puntos (⋮)
 - Abre la cuenta AdGuard para administrar tu licencia allí
 - Restablece tu licencia. Por ejemplo, si has alcanzado el límite de dispositivos para esta licencia y deseas aplicar otra
 

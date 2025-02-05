@@ -1,5 +1,5 @@
 ---
-title: Advanced Settings guide
+title: Gelişmiş Ayarlar kılavuzu
 sidebar_position: 9
 ---
 
@@ -25,25 +25,25 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 #### `network.extension.exclude.domains`
 
-The listed domains will be excluded from filtering in the *Network Extension* mode. Değerleri ayırmak için virgül veya satır sonu kullanın.
+Listelenen alan adları *Ağ Uzantısı* modunda filtrelemeden hariç tutulacaktır. Değerleri ayırmak için virgül veya satır sonu kullanın.
 
 #### `network.extension.exclude.ports`
 
-The listed ports will be excluded from filtering in the *Network Extension* mode. Değerleri ayırmak için virgül veya satır sonu kullanın.
+Listelenen bağlantı noktaları *Ağ Uzantısı* modunda filtrelemeden hariç tutulacaktır. Değerleri ayırmak için virgül veya satır sonu kullanın.
 
 #### `network.extension.route.exclude`
 
-The listed routes will be excluded from filtering in the *Network Extension* mode. Set routes using an IP address or destination CIDR. Separate values with commas or line breaks.
+Listelenen yönlendirmeler *Ağ Uzantısı* modunda filtrelemeden hariç tutulacaktır. Set routes using an IP address or destination CIDR. Değerleri virgülle veya satır sonlarıyla ayırın.
 
 #### `network.extension.http.downgrade.bundleids`
 
-Here you can specify a list of applications for which the HTTP/2 protocol will be downgraded to HTTP/1.1 in the *Network Extension* filtering mode. The bundle ID should be separated by a comma or a line break.
+Here you can specify a list of applications for which the HTTP/2 protocol will be downgraded to HTTP/1.1 in the *Network Extension* filtering mode. Paket kimliği virgül veya satır sonuyla ayrılmalıdır.
 
 #### `network.extension.monterey.force.split.tunnel`
 
 Here you can prohibit AdGuard from using the "default route" which is enabled by default in the *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, as it cannot operate in unison with them.
 
-You will find more information about the problem [in this article](../icloud-private-relay).
+Sorun hakkında daha fazla bilgiyi [bu makalede](../icloud-private-relay) bulabilirsiniz.
 
 #### `network.extension.dns.redirect.exclude.bundleids`
 
@@ -71,7 +71,7 @@ Time, in seconds, before sending another keepalive probe to an unresponsive peer
 
 #### `network.https.ech.enabled`
 
-Uses a local DNS proxy to look for configs in the ECH Config Lists. Bulunursa, ClientHellos'u şifreler.
+Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, encrypts Client Hellos.
 
 #### `network.https.enforce.certificate.transparency`
 
@@ -158,6 +158,12 @@ Bağlantıyı hızlandırmak için DNS-over-HTTPS üst kaynakları için HTTP/3'
 #### `dns.proxy.block.encrypted.client.hello.response`
 
 Encrypted Client Hello parametrelerini yanıtlardan kaldırır.
+
+#### `dns.proxy.private.relay.sequoia.workaround.enabled`
+
+Kullanıcının bir güvenlik duvarı etkinse macOS Özel Geçişi alan adlarını engeller ve bu da *Özel Geçişi* özelliğini devre dışı bırakır.
+
+Enabling this setting is useful in the following scenario: when macOS Private Relay is active, filtering cannot function properly and must be disabled. macOS 14'e kadar olan sürümlerde, Koruma etkinleştirildiğinde AdGuard Özel Geçişi otomatik olarak devre dışı bırakabiliyordu. Ancak, macOS 15 ile birlikte, eğer bir güvenlik duvarı etkinse bu artık mümkün değil. Bu ayarı açarak, güvenlik duvarı etkinleştirildiğinde bile Özel Geçişi devre dışı bırakabilir ve önceki kısıtlamanın üstesinden gelebilirsiniz.
 
 ### Gizlilik Modu ayarları
 
