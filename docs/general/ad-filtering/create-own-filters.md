@@ -733,7 +733,7 @@ the type will be determined using the `Content-Type` header at the beginning of 
 | [$font](#font-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$image](#image-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$media](#media-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$object](#object-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
+| [$object](#object-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
 | [$other](#other-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$ping](#ping-modifier) | ✅ [*[1]](#ping-modifier-limitations) | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
 | [$script](#script-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
