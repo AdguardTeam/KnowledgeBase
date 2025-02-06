@@ -15,7 +15,7 @@ Da jede ehrliche und gut gemachte Arbeit belohnt werden sollte, können aktive �
 
 ### Für AdGuard VPN-Lizenzen
 
-- Für das erste 1-Jahres-Abonnement müssen **3.000 Wörter**übersetzt werden.
+- Für das erste 1-Jahres-Abonnement müssen **3.000 Wörter** übersetzt werden.
 - Alle nachfolgenden Abonnements oder Erneuerungen erfordern zusätzlich **3.000 Wörter** pro Abonnement.
 
 :::note Beschränkungen

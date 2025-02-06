@@ -554,3 +554,34 @@ Android stock OS normally does not conflict with apps working in the background,
 - Set up **Always-on VPN** mode
 
     ![Stockadguard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)
+
+## Realme
+
+Realme UI 4.0 çalıştıran cihazlarda, AdGuard'ın arka planda düzgün çalışmasını sağlamak için üç temel yapılandırma bulunuyor.
+
+1. AdGuard uygulamasını ayarlayın:
+
+    - AdGuard simgesine uzun basın
+    - Görüntülenen menüden **Uygulama bilgileri** öğesini seçin
+    - **Pil kullanımı** öğesine gidin ve tüm seçenekleri etkinleştirin:
+        - Arka planda çalışmaya izin ver
+        - Ön planda çalışmaya izin ver
+        - Otomatik başlatmaya izin ver
+    - In the **App info** section, scroll down and turn off the option **Pause app activity if unused**
+
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
+
+1. Pili ayarlayın:
+
+    - **Ayarlar → Pil → Diğer ayarlar → Pil kullanımını optimize et** öğesine gidin
+    - Listede AdGuard'ı bulun ve **Optimize etme** öğesini etkinleştirin
+    - In **Other settings**, check the **App Quick Freeze** section and disable it for AdGuard
+
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
+
+1. Enable *Always-On VPN* for AdGuard:
+
+    - Go to **Settings → Connection & sharing → VPN**
+    - Find **AdGuard** and enable the **Always-on VPN** option
+
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)

@@ -1,20 +1,20 @@
 ---
-title: Known issues of AdGuard for Windows
+title: Problemi noti di AdGuard per Windows
 sidebar_position: 10
 ---
 
 :::info
 
-Questo articolo riguarda AdGuard per Windows, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## AdGuard for Windows and AdGuard VPN for Windows compatibility issues
+## Problemi di compatibilità di AdGuard per Windows e AdGuard VPN per Windows
 
-Once you install AdGuard for Windows and AdGuard VPN for Windows, they just start working together without any effort on your part. However, changing some of their default settings may cause the apps to work incorrectly when they run at the same time.
+Una volta installato AdGuard per Windows e AdGuard VPN per Windows, iniziano a collaborare senza alcuno sforzo da parte tua. Tuttavia, modificare alcune delle loro impostazioni predefinite, potrebbe causarne un malfunzionamento, qualora siano eseguite contemporaneamente.
 
-There are two specific settings in AdGuard for Windows: *Use redirect driver mode* and *Filter localhost*. By default, the first is disabled, and the second is enabled. Changing any of these settings will inevitably disrupt AdGuard's filtering if both AdGuard Ad Blocker and AdGuard VPN are enabled on your device.
+Esistono due impostazioni specifiche su AdGuard per Windows: *Utilizza modalità driver di reindirizzamento* e *Filtra host locale*. Di default, la prima è disabilitata e la seconda è abilitata. Modificare una di queste impostazioni, interromperà inevitabilmente il filtraggio di AdGuard, se sia il blocco-inserzioni AdGuard Ad Blocker che AdGuard VPN sono abilitate sul tuo dispositivo.
 
-Modificare queste impostazioni è necessario soltanto per risolvere problemi correlati all'operazione simultanea del blocco AdGuard Ad Blocker e delle app a livello di rete, quali antivirus, VPN e filtri di rete. If you come across a situation where you need to change the default state of the above settings and still want AdGuard Ad Blocker and AdGuard VPN to work simultaneously and correctly — [create an issue on GitHub](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) so we can help you personally.
+Modificare queste impostazioni è necessario soltanto per risolvere problemi correlati all'operazione simultanea del blocco AdGuard Ad Blocker e delle app a livello di rete, quali antivirus, VPN e filtri di rete. Se ti imbatti in una situazione in cui necessiti di modificare lo stato predefinito delle suddette impostazioni e desideri comunque che AdGuard Ad Blocker e AdGuard VPN operino simultaneamente e correttamente, [crea un ticket su GitHub](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose), così che possiamo aiutarti personalmente.
 
-We are currently working on overcoming the above-listed limitations of the simultaneous work of our apps.
+Stiamo correntemente lavorando per superare le limitazioni sopra elencate, per l'operazione simultanea delle nostre app.

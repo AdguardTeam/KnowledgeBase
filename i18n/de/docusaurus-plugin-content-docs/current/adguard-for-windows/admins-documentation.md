@@ -7,9 +7,9 @@ Diese Seite beschreibt die Funktionen und Details der zentralen Verwaltung der R
 
 ## 1. MSI herunterladen {#msi-download}
 
-Laden Sie [AdGuard MSI x86](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi)herunter
+Download the [AdGuard MSI x86](https://static.adguard.com/windows/setup86.msi)
 
-Laden Sie [AdGuard MSI x64](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)herunter
+Download the [AdGuard MSI x64](https://static.adguard.com/windows/setup64.msi)
 
 ## 2. Konfigurieren Sie die Einstellungen für Ihr Netzwerk {#settings-configuring}
 

@@ -5,13 +5,13 @@ sidebar_position: 1
 
 :::info
 
-Cet article concerne AdGuard Content Blocker, qui protège uniquement le navigateur Samsung Internet browser et Yandex Browser. Pour protéger l'ensemble de votre appareil, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
+Cet article concerne le Bloqueur de publicités AdGuard, qui protège uniquement le navigateur Samsung Internet Browser et Yandex Browser. Pour protéger l'ensemble de votre appareil, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Aperçu des fonctionnalités
 
-[Features overview](/adguard-content-blocker/overview.md)
+[Aperçu des fonctionnalités](/adguard-content-blocker/overview.md)
 
 ## Installation
 

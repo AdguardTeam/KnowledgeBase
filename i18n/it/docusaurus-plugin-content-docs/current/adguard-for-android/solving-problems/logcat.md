@@ -109,7 +109,7 @@ It is important to reproduce the problem after you're done with the first part.
 
 1. Choose **Record** in the menu. Choose a name for a log file or just press **OK**. Now you can press **Home** button, CatLog will continue recording the log in background.
 
-1. Reproduce the issue.
+1. Riproduci il problema.
 
 1. Open CatLog and press **Stop record** in the menu.
 

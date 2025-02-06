@@ -21,3 +21,4 @@ Aquí hay algunos problemas comunes y sus soluciones, guías e instrucciones que
 - [Cómo crear un archivo de volcado](/adguard-for-windows/solving-problems/dump-file/)
 - [Posibles filtraciones de DNS](/adguard-for-windows/solving-problems/dns-leaks/)
 - [Problemas conocidos de AdGuard para Windows](/adguard-for-windows/solving-problems/known-issues/)
+- [Cómo solucionar el error `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE`](/adguard-for-windows/solving-problems/mozilla-error/)

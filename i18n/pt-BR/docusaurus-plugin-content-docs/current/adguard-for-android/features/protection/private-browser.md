@@ -1,5 +1,5 @@
 ---
-title: Private browser
+title: Navegador privado
 sidebar_position: 7
 ---
 
@@ -9,18 +9,18 @@ Este artigo é sobre o AdGuard para Android, um bloqueador de anúncios multifun
 
 :::
 
-In v4.7, AdGuard for Android introduced an in-app private browser. You can access it from the main screen by tapping the _Private browser_ button or from the _Protection_ tab, where you can find some customization options.
+Na v4.7, o AdGuard para Android introduziu um navegador privado no aplicativo. Você pode acessá-lo a partir da tela principal tocando no botão _Navegador privado_ ou na aba _Proteção_, onde você pode encontrar algumas opções de personalização.
 
-![Private browser](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
+![Navegador privado](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
 
-Here's what you can set up:
+Veja o que você pode configurar:
 
-- To set a default search engine, tap _Default search engine_ and choose between the available options: DuckDuckGo (default), Google, Bing, Yahoo, Baidu, or Yandex
-- To create a browser shortcut, tap _Create browser widget_ and follow the on-screen instructions
-- To get suggestions from your search engine instead of typing the entire query, toggle the _Search suggestions_ option
+- Para definir um mecanismo de pesquisa padrão, toque em _Mecanismo de pesquisa padrão_ e escolha entre as opções disponíveis: DuckDuckGo (padrão), Google, Bing, Yahoo, Baidu ou Yandex
+- Para criar um atalho no navegador, toque em _Criar widget do navegador_ e siga as instruções na tela
+- Para obter sugestões do seu mecanismo de busca em vez de digitar a consulta completa, ative a opção _Sugestões de pesquisa_
 
 :::note
 
-The private browser is still in the early stages of development and has some limitations. For now, we recommend using it as a supplement to your browser’s Incognito mode, rather than as a replacement.
+O navegador privado ainda está nas fases iniciais de desenvolvimento e tem algumas limitações. Por agora, nós recomendados usar isso como um complemento ao modo de navegação anônima do seu navegador, e não como um substituto.
 
 :::

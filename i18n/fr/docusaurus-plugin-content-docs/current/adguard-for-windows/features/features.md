@@ -1,5 +1,5 @@
 ---
-title: Features
+title: Fonctionnalités
 sidebar_position: 1
 ---
 
@@ -11,15 +11,15 @@ Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonction
 
 ## Écran d'accueil
 
-This article outlines everything you see when you open the program, including _Settings_, _Support_, _License_, and _About_. You’ll also find statistics on blocked ads and trackers.
+Cet article décrit tout ce que vous voyez lorsque vous ouvrez le programme, y compris _Paramètres_, _Assistance_, _Licence_ et _À propos_. Vous trouverez également des statistiques sur les publicités bloquées et les traqueurs.
 
-[Home screen](/adguard-for-windows/features/home-screen/)
+[Écran d'accueil](/adguard-for-windows/features/home-screen/)
 
 ## Paramètres
 
-You can customize the program to suit your needs by blocking only what bothers you, using a trusted DNS server, removing third-party cookies, and more.
+Vous pouvez personnaliser le programme pour répondre à vos besoins en bloquant uniquement ce qui vous dérange, en utilisant un serveur DNS de confiance, en supprimant les cookies tiers, et plus encore.
 
-[Settings](/adguard-for-windows/features/settings/)
+[Paramètres](/adguard-for-windows/features/settings/)
 
 ## Extensions
 
@@ -31,10 +31,10 @@ Ici, vous apprendrez comment utiliser AdGuard en tant que gestionnaire de script
 
 Cet article décrit des options supplémentaires liées au réseau et les paramètres de proxy où vous pouvez spécifier quel proxy AdGuard doit utiliser pour mettre à jour le filtrage, télécharger de nouvelles versions, etc.
 
-[Network](/adguard-for-windows/features/network/)
+[Réseau](/adguard-for-windows/features/network/)
 
 ## Autres fonctions
 
-Here you can find information on how to reach support, manage your license, view details about the current version and privacy policy, check for updates, and explore options available in the tray menu.
+Ici, vous pouvez trouver des informations sur la façon de contacter l'assistance, de gérer votre licence, de consulter les détails sur la version actuelle et la Politique de confidentialité, de vérifier les mises à jour et d'explorer les options disponibles dans le menu de la barre d'état.
 
-[Other features](/adguard-for-windows/features/others/)
+[Autres fonctionnalités](/adguard-for-windows/features/others/)
