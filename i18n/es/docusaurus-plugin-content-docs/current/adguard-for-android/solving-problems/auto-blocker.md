@@ -1,5 +1,5 @@
 ---
-title: How to disable the Samsung Auto Blocker feature
+title: Cómo deshabilitar la función de bloqueo automático de Samsung
 sidebar_position: 19
 ---
 
@@ -9,21 +9,21 @@ Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multi
 
 :::
 
-Starting with One UI 6.1.1 (Android 14), Samsung introduced a security enhancement called _Auto Blocker_, which is enabled by default on the latest Galaxy smartphones. This feature automatically blocks sideloaded apps from unverified sources unless the user manually overrides the setting.
+A partir de One UI 6.1.1 (Android 14), Samsung introdujo una mejora de seguridad llamada _Auto Blocker_, que está habilitada de forma predeterminada en los últimos smartphones Galaxy. Esta función bloquea automáticamente las apps instaladas de fuentes no verificadas a menos que el usuario anule manualmente la configuración.
 
-Since AdGuard for Android [can’t be published on Google Play](https://adguard.com/en/blog/adguard-google-play-removal.html), you have to install it manually. However, with the new _Auto Blocker_ feature enabled, some users may experience problems when installing AdGuard APK files. To address this issue, we’ve provided a step-by-step guide on how to disable _Auto Blocker_ below.
+Dado que AdGuard para Android [no se puede publicar en Google Play](https://adguard.com/en/blog/adguard-google-play-removal.html), tienes que instalarlo manualmente. Sin embargo, con la nueva función _Auto Blocker_ habilitada, algunos usuarios pueden experimentar problemas al instalar archivos APK de AdGuard. Para abordar este problema, hemos proporcionado una guía paso a paso sobre cómo deshabilitar _Auto Blocker_ a continuación.
 
-## How to disable Auto Blocker
+## Como desactivar Auto Blocker
 
-Follow the instructions to turn off _Auto Blocker_.
+Sigue las instrucciones para desactivar _Auto Blocker_.
 
-1. Open your device settings
-2. Go to _Security and privacy_
-3. Scroll down and select _Auto Blocker_
-4. Toggle the setting off
+1. Abre la configuración de tu dispositivo
+2. Navega hacia _Seguridad y privacidad_
+3. Desplázate hacia abajo y selecciona _Auto Blocker_
+4. Desactiva la configuración
 
-![Disable Auto Blocker \*border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/auto-blocker/auto_blocker_en.png)
+![Deshabilita Auto Blocker \*border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/auto-blocker/auto_blocker_en.png)
 
-Once _Auto Blocker_ is disabled, you can proceed with installing AdGuard Ad Blocker.
+Una vez que _Auto Blocker_ está deshabilitado, puedes proceder con la instalación del Bloqueador de anuncios AdGuard.
 
-![Tap Install \*border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/auto-blocker/install_en.png)
+![Toca Instalar \*border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/auto-blocker/install_en.png)

@@ -1,5 +1,5 @@
 ---
-title: What can be done in the AdGuard account
+title: Cosa si può fare nel Profilo di AdGuard
 sidebar_position: 2
 ---
 
@@ -7,14 +7,14 @@ Nel tuo profilo, puoi gestire le tue licenze, i dispositivi a esse associati, i 
 
 ## Gestire le impostazioni del profilo
 
-In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable one-time code login or [two-factor authentication](../2fa), view the data stored about you by AdGuard, and select the language of your account and notifications.
+Nella sezione delle *Impostazioni* del tuo profilo di AdGuard, puoi aggiornare o ripristinare la tua password, cambiare il tuo indirizzo email, abilitare l'[autenticazione a due fattori](../2fa), visualizzare i dati memorizzati su di te da AdGuard e scegliere la lingua del tuo profilo personale e delle tue notifiche.
 
 In questa sezione, puoi anche gestire le tue preferenze email:
 
-- Receive AdGuard newsletter
-- Receive transactional emails
-- Send read receipts to AdGuard
-- Opt-out preferences
+- Ricevi la newsletter di AdGuard
+- Ricevi le email transazionali
+- Invia conferme di lettura ad AdGuard
+- Preferenze di opt-out
 
 ## Gestione delle licenze
 
@@ -27,12 +27,12 @@ Le [licenze di AdGuard](../../license/what-is) possono essere:
 - aggiornate,
 - annullate. Inoltre, puoi aggiornare i tuoi dettagli di pagamento.
 
-I dispositivi collegati alle tue licenze di AdGuard Ad Blocker sono collegabili o scollegabili. To unbind unused devices, click the number of bound devices next to *Devices*, then select the right arrow → *Remove*.
+I dispositivi collegati alle tue licenze di AdGuard Ad Blocker sono collegabili o scollegabili. Per dissociare i dispositivi non utilizzati, fai clic sul numero di dispositivi legati accanto a *Dispositivi*, quindi seleziona la freccia destra → *Elimina*.
 
 ## Visualizza gli acquisti
 
-The *Purchases* section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. Troverai lì tutte le informazioni sulla data d'acquisto, ID dell'ordine, metodo di pagamento e costo dell'acquisto.
+La sezione *Acquisti* mostra tutte le licenze mai acquistate utilizzando l'e-mail registrata con il tuo profilo di AdGuard. Troverai lì tutte le informazioni sulla data d'acquisto, ID dell'ordine, metodo di pagamento e costo dell'acquisto.
 
-## Activity
+## Attività
 
-The *Activity* tab allows you to monitor login activity for your AdGuard account. It displays the email address used, location, and login date. You can also filter records by product: *All products*, *AdGuard Ad Blocker*, *AdGuard VPN*, *AdGuard DNS*.
+La scheda *Attività* consente di monitorare l'attività di accesso al tuo account AdGuard. Viene visualizzato l'indirizzo e-mail utilizzato, la posizione e la data di accesso. Puoi anche filtrare i record per prodotto: *Tutti i prodotti*, *AdGuard Ad Blocker*, *AdGuard VPN*, *AdGuard DNS*.

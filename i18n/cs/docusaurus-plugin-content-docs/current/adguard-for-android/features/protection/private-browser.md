@@ -1,5 +1,5 @@
 ---
-title: Private browser
+title: Soukromý prohlížeč
 sidebar_position: 7
 ---
 
@@ -9,18 +9,18 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-In v4.7, AdGuard for Android introduced an in-app private browser. You can access it from the main screen by tapping the _Private browser_ button or from the _Protection_ tab, where you can find some customization options.
+Ve verzi 4.7, AdGuard pro Android představil soukromý prohlížeč v aplikaci. Můžete se k němu dostat z hlavní obrazovky klepnutím na tlačítko _Soukromý prohlížeč_ nebo z karty _Ochrana_, kde najdete některé možnosti přizpůsobení.
 
 ![Private browser](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
 
-Here's what you can set up:
+Zde se dozvíte, co můžete nastavit:
 
-- To set a default search engine, tap _Default search engine_ and choose between the available options: DuckDuckGo (default), Google, Bing, Yahoo, Baidu, or Yandex
-- To create a browser shortcut, tap _Create browser widget_ and follow the on-screen instructions
-- To get suggestions from your search engine instead of typing the entire query, toggle the _Search suggestions_ option
+- Chcete-li nastavit výchozí vyhledávač, klepněte na možnost _Výchozí vyhledávač_ a vyberte jednu z dostupných možností: DuckDuckGo (výchozí), Google, Bing, Yahoo, Baidu nebo Yandex
+- Chcete-li vytvořit zástupce prohlížeče, klepněte na možnost _Vytvořit widget prohlížeče_ a postupujte podle pokynů na obrazovce
+- Chcete-li získat návrhy z vyhledávače místo zadávání celého dotazu, přepněte možnost _Návrhy vyhledávání_
 
 :::note
 
-The private browser is still in the early stages of development and has some limitations. For now, we recommend using it as a supplement to your browser’s Incognito mode, rather than as a replacement.
+Soukromý prohlížeč je stále v rané fázi vývoje a má určitá omezení. Prozatím jej doporučujeme používat spíše jako doplněk k režimu inkognito prohlížeče než jako jeho náhradu.
 
 :::

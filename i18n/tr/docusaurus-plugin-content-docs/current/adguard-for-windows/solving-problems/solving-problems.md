@@ -21,3 +21,4 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 - [How to create a dump file](/adguard-for-windows/solving-problems/dump-file/)
 - [Olası DNS sızıntıları](/adguard-for-windows/solving-problems/dns-leaks/)
 - [Windows için AdGuard'ın bilinen sorunları](/adguard-for-windows/solving-problems/known-issues/)
+- [`MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE` hatası nasıl düzeltilir](/adguard-for-windows/solving-problems/mozilla-error/)

@@ -1,5 +1,5 @@
 ---
-title: How to collect AdGuard logs
+title: Come raccogliere i registri di AdGuard
 sidebar_position: 3
 ---
 
@@ -15,7 +15,7 @@ I dati e/o i file forniti negli registri sono trattati in conformità con [l'Inf
 
 :::
 
-To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need AdGuard log files. These files contain records about errors and other events that occur with the software. Below is the brief instruction describing the way to get the log files and send them to the support service if necessary.
+Per analizzare e diagnosticare i diversi problemi che potrebbero sorgere, il servizio di supporto di AdGuard potrebbe necessitare dei file di registro di AdGuard. Questi file contengono registri su errori e altri eventi verificatisi nel programma. Segue una breve introduzione che descrive come ottenere i file di registro e come inviarli al servizio di supporto, se necessario.
 
 :::note
 
@@ -25,48 +25,48 @@ AdGuard si impegna a proteggere la tua privacy. Rispettiamo rigorosamente la nos
 
 ### Registri di debug {#debug-logs}
 
-1. Open the AdGuard settings. Go to the *General Settings* section, scroll down to the bottom of the screen, and switch the *Logging Level* to *Debug*.
+1. Apri le impostazioni di AdGuard. Vai alla sezione *Impostazioni Generali*, scorri in basso alla fine della schermata e modifica il *Livello di registrazione* a *Debug*.
 
-    ![Debug logging level *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
+    ![Livello di registrazione di debug *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
-1. Reproduce the issue.
+1. Riproduci il problema.
 
-    We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
+    Consigliamo vivamente di prendere nota dell'orario esatto di riproduzione del problema: aiuterà il nostro team di supporto a trovare le voci del registro rilevanti e a risolvere più velocemente il problema.
 
-1. Export the collected logs using the *Export Logs* button.
-
-    ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
-
-    Save the archive to any folder.
-
-1. **Important**: after exporting the logs, set the logging level back to *Default*. *Debug* logging level will slow down the application.
-
-1. Send the archive to the AdGuard support service at **support@adguard.com**, describe the problem and don't forget to mention the time when you reproduced the issue.
-
-### Trace logs {#trace-logs}
-
-Sometimes support team members may ask you to send *trace* logs. Then you will need to do the following:
-
-1. Stop AdGuard by right-clicking the AdGuard icon in the tray menu and choosing *Exit AdGuard*:
-
-    ![Exit AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
-
-    Please don't leave the service running:
-
-    ![Stop AdGuard Service *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
-
-1. Open the console (type `cmd` in the start panel).
-
-1. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard v7.16 for Windows or later.
-
-If you have an older version of AdGuard for Windows, run the application with the command C:\"Program Files (x86)"\Adguard\Adguard.exe /trace if you are using 64-bit Windows, and C:\"Program Files"\Adguard\Adguard.exe /trace if you are using 32-bit.
-
-1. Reproduce the issue.
-
-    We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
-
-1. Export the collected logs using the *Export Logs* button.
+1. Esporta i registri raccolti, usando il pulsante *Esporta Registri*.
 
     ![Esporta i registri *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-    Don't worry if the log file is large. We need to know as much detail as possible to fix your problem.
+    Salva l'archivio in qualsiasi cartella.
+
+1. **Importante**: dopo aver esportato i registri, reimposta il livello di registrazione a *Predefinito*. Il livello di registrazione *Debug* rallenterà l'applicazione.
+
+1. Invia l'archivio al servizio di assistenza AdGuard a **support@adguard.com**, descrivi il problema e non ti dimenticare di menzionare l'orario di riproduzione del problema.
+
+### Registri di traccia {#trace-logs}
+
+Talvolta, i membri del team di supporto potrebbero chiederti di inviare i registri di *traccia*. Quindi, dovrai fare quanto segue:
+
+1. Arresta AdGuard cliccando con il destro sull'icona di AdGuard nel menu della barra delle applicazioni e selezionando *Esci da AdGuard*:
+
+    ![Esci da AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
+
+    Ti preghiamo di non lasciare il servizio in esecuzione:
+
+    ![Arresta il servizio di AdGuard *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
+
+1. Apri la console (digita `cmd` nel pannello Start).
+
+1. Esegui l'applicazione con il comando `C:\"Program Files"\Adguard\Adguard.exe /trace`, indipendentemente dal numero di bit di Windows, se hai installato AdGuard v7.16 per Windows, o successive.
+
+Se possiedi una versione precedente di AdGuard per Windows, esegui l'applicazione con il comando C:\"Program Files (x86)"\Adguard\Adguard.exe /trace se stai utilizzando Windows a 64-bit, e "Program Files"\Adguard\Adguard.exe /trace se stai utilizzando Windows a 32-bit.
+
+1. Riproduci il problema.
+
+    Consigliamo vivamente di prendere nota dell'orario esatto di riproduzione del problema: aiuterà il nostro team di supporto a trovare le voci del registro rilevanti e a risolvere più velocemente il problema.
+
+1. Esporta i registri raccolti, usando il pulsante *Esporta Registri*.
+
+    ![Esporta i registri *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+
+    Non ti preoccupare se il file di registro è grande. Necessitiamo di quanti più dettagli possibile per risolvere il problema.

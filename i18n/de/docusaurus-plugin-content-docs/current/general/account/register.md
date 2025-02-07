@@ -9,7 +9,7 @@ sidebar_position: 1
 
 ## So erstellen Sie ein Konto
 
-To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and click the *Log in* button on the top right corner of the screen. Geben Sie Ihre E-Mail-Adresse ein und erstellen Sie ein Passwort — Ihr Konto wird dann registriert.
+Um ein Konto zu erstellen, öffnen Sie die offizielle Website von [AdGuard](https://adguard.com/welcome.html) und klicken Sie auf die Schaltfläche *Anmelden* in der oberen rechten Ecke des Bildschirms. Geben Sie Ihre E-Mail-Adresse ein und erstellen Sie ein Passwort — Ihr Konto wird dann registriert.
 
 :::tip
 
@@ -23,10 +23,10 @@ Nachdem das Konto erstellt wurde, aktivieren Sie es, indem Sie dem Link in der A
 
 :::tip
 
-After you've registered your account, you can use the *One-time code* option to log in to the application. Enter your email address and choose to enter either your password or the the code sent to your email address.
+Nachdem Sie Ihr Konto registriert haben, können Sie sich mit der Option *Einmaliger Code* bei der App anmelden. Geben Sie Ihre E-Mail-Adresse ein und wählen Sie, ob Sie Ihr Passwort oder den an Ihre E-Mail-Adresse gesendeten Code eingeben möchten.
 
 :::
 
 ## So erstellen Sie ein Konto über soziale Netzwerke
 
-To create an account via a social network, simply follow the [link](https://auth.adguard.com/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.com/kb/general/account/features/).
+Um ein Konto über ein soziales Netzwerk zu erstellen, folgen Sie einfach dem [Link](https://auth.adguard.com/login.html) und melden Sie sich bei Ihrem Konto an. Sobald Sie sich angemeldet haben, prüfen Sie Ihren Posteingang. Sie erhalten eine Bestätigungs-E-Mail. Legen Sie ein Passwort fest und das war's! Jetzt können Sie alle [Funktionen des AdGuard-Kontos](https://adguard.com/kb/general/account/features/) nutzen.

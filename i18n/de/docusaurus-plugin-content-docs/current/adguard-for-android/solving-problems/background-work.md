@@ -554,3 +554,34 @@ Android Stock OS steht normalerweise nicht in Konflikt mit Apps, die im Hintergr
 - Einrichten des **Always-on VPN**-Modus
 
     ![Stockadguard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)
+
+## Realme
+
+Auf Geräten mit Realme UI 4.0 gibt es drei wichtige Konfigurationen, um sicherzustellen, dass AdGuard ordnungsgemäß im Hintergrund funktioniert.
+
+1. AdGuard-App einrichten:
+
+    - Drücken Sie lange auf das AdGuard-Symbol
+    - Wählen Sie aus dem angezeigten Menü **App-Info**
+    - Wechseln Sie zu **Batterienutzung** und aktivieren Sie alle Optionen:
+        - Hintergrundaktivität zulassen
+        - Vordergrundaktivität zulassen
+        - Automatischen Start zulassen
+    - Blättern Sie im Abschnitt **App-Info** nach unten und deaktivieren Sie die Option **App-Aktivität bei Nichtbenutzung anhalten**
+
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
+
+1. Batterie einrichten:
+
+    - Öffnen Sie **Einstellungen → Akku → Weitere Einstellungen → Akkuverbrauch optimieren**
+    - Suchen Sie AdGuard in der Liste und aktivieren Sie **Nicht optimieren**
+    - Prüfen Sie unter **Sonstige Einstellungen** den Abschnitt **App Quick Freeze** und deaktivieren Sie ihn für AdGuard
+
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
+
+1. *Always-On VPN* für AdGuard aktivieren:
+
+    - Öffnen Sie **Einstellungen → Verbindung & Freigabe → VPN**
+    - Suchen Sie **AdGuard** und aktivieren Sie die Option **Always-on VPN**
+
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)
