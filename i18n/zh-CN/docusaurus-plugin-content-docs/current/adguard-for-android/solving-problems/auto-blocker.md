@@ -1,5 +1,5 @@
 ---
-title: How to disable the Samsung Auto Blocker feature
+title: 如何禁用 Samsung Auto Blocker 功能
 sidebar_position: 19
 ---
 
@@ -9,21 +9,21 @@ sidebar_position: 19
 
 :::
 
-Starting with One UI 6.1.1 (Android 14), Samsung introduced a security enhancement called _Auto Blocker_, which is enabled by default on the latest Galaxy smartphones. This feature automatically blocks sideloaded apps from unverified sources unless the user manually overrides the setting.
+从 One UI 6.1.1 (Android 14) 开始，Samsung 引入了一项名为 **Auto Blocker**（中文：自动拦截程序）的安全增强功能，该功能在最新的 Galaxy 智能手机上默认启用。 此功能将自动拦截来自未验证来源的侧载应用程序，除非用户手动更改设置。
 
-Since AdGuard for Android [can’t be published on Google Play](https://adguard.com/en/blog/adguard-google-play-removal.html), you have to install it manually. However, with the new _Auto Blocker_ feature enabled, some users may experience problems when installing AdGuard APK files. To address this issue, we’ve provided a step-by-step guide on how to disable _Auto Blocker_ below.
+由于 Android 版 AdGuard [无法在 Google Play 上发布](https://adguard.com/en/blog/adguard-google-play-removal.html)，用户必须手动安装 APP。 然而，当新的 _Auto Blocker_ 功能启用时，有些用户在安装 AdGuard APK 文件时会遇到问题。 为了解决这个问题，我们在下文中提供了如何禁用 _Auto Blocker_ 功能的指南。
 
-## How to disable Auto Blocker
+## 如何禁用 Auto Blocker
 
-Follow the instructions to turn off _Auto Blocker_.
+请按照以下说明关闭 _Auto Blocker_ 功能。
 
-1. Open your device settings
-2. Go to _Security and privacy_
-3. Scroll down and select _Auto Blocker_
-4. Toggle the setting off
+1. 打开设备的设置
+2. 转到「安全与隐私」
+3. 向下滚动并选择「_Auto Blocker_」
+4. 关闭设置
 
-![Disable Auto Blocker \*border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/auto-blocker/auto_blocker_en.png)
+![禁用 Auto Blocker 功能 \*border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/auto-blocker/auto_blocker_en.png)
 
-Once _Auto Blocker_ is disabled, you can proceed with installing AdGuard Ad Blocker.
+一旦 _Auto Blocker_ 功能被禁用，用户可以继续安装 AdGuard 广告拦截程序。
 
-![Tap Install \*border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/auto-blocker/install_en.png)
+![点击安装 \*border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/auto-blocker/install_en.png)

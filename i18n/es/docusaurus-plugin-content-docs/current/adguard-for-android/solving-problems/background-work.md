@@ -554,3 +554,34 @@ El sistema operativo Android estándar normalmente no entra en conflicto con las
 - Configura el **Modo VPN siempre activo**
 
     ![Stockadguard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)
+
+## Realme
+
+On devices running Realme UI 4.0, there are three key configurations to ensure that AdGuard works properly in the background.
+
+1. Set up the AdGuard app:
+
+    - Long press the AdGuard icon
+    - From the menu that appears, select **App info**
+    - Go to **Battery usage** and enable all options:
+        - Allow background activity
+        - Allow foreground activity
+        - Allow auto launch
+    - In the **App info** section, scroll down and turn off the option **Pause app activity if unused**
+
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
+
+1. Set up the battery:
+
+    - Go to **Settings → Battery → More settings → Optimize battery use**
+    - Find AdGuard in the list and enable **Don't optimize**
+    - In **Other settings**, check the **App Quick Freeze** section and disable it for AdGuard
+
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
+
+1. Enable *Always-On VPN* for AdGuard:
+
+    - Go to **Settings → Connection & sharing → VPN**
+    - Find **AdGuard** and enable the **Always-on VPN** option
+
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)

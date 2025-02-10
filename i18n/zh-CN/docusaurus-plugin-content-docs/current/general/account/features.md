@@ -1,5 +1,5 @@
 ---
-title: What can be done in the AdGuard account
+title: AdGuard 账号的功能
 sidebar_position: 2
 ---
 
@@ -7,14 +7,14 @@ sidebar_position: 2
 
 ## 管理账号设置
 
-In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable one-time code login or [two-factor authentication](../2fa), view the data stored about you by AdGuard, and select the language of your account and notifications.
+在 AdGuard 账号的「*设置*」部分，用户可以更改或重置密码，更改电子邮件地址，启用一次性验证码登录方式，开启[两步验证](../2fa)，查看 AdGuard 所存储的关于您的数据以及选择个人账号和通知的语言。
 
 在此部分，用户也可管理电子邮件首选项：
 
-- Receive AdGuard newsletter
-- Receive transactional emails
-- Send read receipts to AdGuard
-- Opt-out preferences
+- 接收 AdGuard 新闻简报
+- 接收交易电子邮件
+- 向 AdGuard 发送已阅读的通知
+- 设置订阅
 
 ## 管理许可证
 
@@ -27,12 +27,12 @@ In the *Settings* section of your AdGuard account, you can update or reset your 
 - 升级，
 - 取消。 您也可更新付款详细信息。
 
-与 AdGuard 广告拦截程序许可证绑定的设备可取消绑定或重命名。 To unbind unused devices, click the number of bound devices next to *Devices*, then select the right arrow → *Remove*.
+与 AdGuard 广告拦截程序许可证绑定的设备可取消绑定或重命名。 要解除未使用设备的绑定，请单击「*设备*」旁边的绑定设备数量，然后选择右箭头 →「*删除*」。
 
 ## 查看购买
 
-The *Purchases* section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. 用户也会找到购买日期，订单号，支付方式，购买费用的相关信息。
+「*购买*」部分显示您曾经用注册 AdGuard 账号时的电子邮箱购买的所有许可证。 用户也会找到购买日期，订单号，支付方式，购买费用的相关信息。
 
-## Activity
+## 活动
 
-The *Activity* tab allows you to monitor login activity for your AdGuard account. It displays the email address used, location, and login date. You can also filter records by product: *All products*, *AdGuard Ad Blocker*, *AdGuard VPN*, *AdGuard DNS*.
+「*活动*」标签允许用户监控 AdGuard 账号的登录活动， 包括使用的电子邮件地址、位置和登录日期。 用户还可以按产品种类筛选记录：*所有产品*、*AdGuard 广告拦截程序*、*AdGuard VPN* 和 *AdGuard DNS*。

@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-Questo articolo riguarda AdGuard per Windows, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -23,74 +23,90 @@ Questo messaggio d'errore appare quando le autorizzazioni necessarie non sono st
 
 ### Errore 112: Il disco è pieno, Errore 1632: Cartella temporanea piena o inaccessibile {#error-112}
 
-Esistono due errori differenti con soluzioni molto simili. As their titles suggest, AdGuard installer didn't find enough disk space to complete the installation. Esistono diverse cose che puoi tentare per risolvere questo problema:
+Esistono due errori differenti con soluzioni molto simili. Come suggerito dai loro titoli, il programma d'installazione di AdGuard non ha trovato abbastanza spazio per completare l'installazione. Esistono diverse cose che puoi tentare per risolvere questo problema:
 
 - Disinstalla alcuni programmi o elimina i file non necessari, dall'unità in cui stavi tentando d'installare AdGuard.
 
-- Scarica, installa ed esegui [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), un software gratuito di Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstalled programs and such. It will help clean up some disk space.
+- Scarica, installa ed esegui [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), un software gratuito di Malwarebytes. Tra le altre cose, pulirà il sistema da tutti i tipi di file "residui" che rimangono dopo aver disinstallato programmi in modo errato e simili. Aiuterà a svuotare dello spazio su disco.
 
-- Riavvia il tuo computer. Sometimes temporary files can take up a considerable amount of disk space, and restarting your PC is the most reliable way to get rid of them.
+- Riavvia il tuo computer. Talvolta, i file temporanei, possono occupare una notevole quantità di spazio su disco e, riavviare il tuo PC, è il metodo più affidabile per liberarsene.
 
-### Error 1601: Windows Installer is not accessible {#error-1601}
+### Errore 1601: Il programma d'installazione di Windows non è accessibile {#error-1601}
 
-You could say this is a particular subcategory of Error 1603. The possible solutions are similar:
+Si potrebbe dire che questa è una sottocategoria particolare dell'errore 1603. Le possibili soluzioni sono simili:
 
 - Start and re-register Microsoft Installer service. It requires some work.
 
-    1) Press *Win + R* and enter **services.msc**. 2) Find in the list and double click *Windows Installer*. 3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*. 4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*. 5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    - Press *Win + R* and enter **services.msc**.
+    - Find in the list and double click *Windows Installer*.
+    - Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
+    - Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*.
+    - Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
 
-- Reboot the PC and start the installation all over again. Sometimes that's enough to fix the problem.
+- Riavvia il PC e ricomincia l'installazione. Talvolta, ciò è sufficiente per risolvere il problema.
 
-### Error 1602: Canceled by user {#error-1602}
+### Errore 1602: Annullata dall'utente {#error-1602}
 
-If you got this error code, chances are you have interrupted the installation process manually in one way or another. What you can do is:
+Se ottieni questo codice d'errore, è possibile che tu abbia interrotto il processo d'installaziona manualmente, in un modo o nell'altro. Ciò che puoi fare è:
 
-- Don't close the installer window. When the installation is complete, it will close automatically.
+- Non chiudere la finestra d'installazione. Al completamento dell'installazione, si chiuderà da sola.
 
-- If a dialogue window pops up during the installation, hit "Yes" to grant the installer the required permissions. Clicking "No" will cancel the installation.
+- Se appare una finestra durante l'installazione, clicca su "Sì" per condere le autorizzazioni necessarie al programma d'installazione. Facendo clic su "No" l'installazione verrà annullata.
 
-- Don't start other processes while the installation process is going on.
+- Non avviare altri processi durante il processo d'installazione.
 
-### Error 1603: Fatal error during installation {#error-1603}
+### Errore 1603: Errore critico durante l'installazione {#error-1603}
 
-The error sounds scarier than it actually is. In reality, this is a rather generic error that can have many different causes, and some of them are easily fixed. Try the following solutions:
+L'errore sembra più spaventoso di quanto non sia in realtà. Infatti, questo è un errore piuttosto generico che può avere molte cause differenti, alcune delle quali sono facilmente risolvibili. Prova le seguenti soluzioni:
 
-- Press the *Win* key, search for *Command Prompt* and run it. There, type in `sfc /scannow` and press *Enter*.
+- Premi il tasto *Win*, cerca *Prompt dei Comandi* ed eseguilo. Qui, digita `sfc /scannow` e premi *Invio*.
 
 - Scegli una cartella d'installazione differente. È possibile che la cartella d'installazione corrente preveda delle limitazioni d'accesso. Assicurati, inoltre, di non selezionare un'unità esterna, un'unità virtuale, etc.
 
-- Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
+- Disinstalla AdGuard utilizzando il nostro [strumento di disinstallazione](../../installation#advanced) speciale, poi ripeti l'installazione.
 
 - Start and re-register Microsoft Installer service. It requires some work.
 
-    1) Press *Win + R* and enter ***services.msc***. 2) Find in the list and double click *Windows Installer*. 3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*. 4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*. 5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    - Press *Win + R* and enter ***services.msc***.
+    - Find in the list and double click *Windows Installer*.
+    - Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
+    - Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*.
+    - Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
 
 - Acquire full permissions on the drive for installation. It is possible that the error 1603 occurs because you don’t have full permissions on the file location. It's also not as easy as some of the other solutions:
 
-    1) Open *File Explorer*, right-click the drive containing the installation location and select *Properties*. 2) Go to *Security* tab and click *Edit*. 3) Single-click *SYSTEM* and ensure that the *Allow* box of every item in *Permissions for SYSTEM* is checked (if it is checkable). Do the same check for *Administrators*. 4) Click *OK* to go back to *Properties* dialog. Then click *Advanced*. 5) Click *Change Permissions*. 6) On *Permissions* tab, double-click *Administrators*. 7) Select *This folder, subfolders and files* for *Applies to* field and check all the available *Basic permissions*. After that, hit *OK*. 8) Do the same operation above (from item 7) for *SYSTEM*. 9) Click *OK* all the way out. Try installing AdGuard again.
+    - Open *File Explorer*, right-click the drive containing the installation location and select *Properties*.
+    - Go to *Security* tab and click *Edit*.
+    - Single-click *SYSTEM* and ensure that the *Allow* box of every item in *Permissions for SYSTEM* is checked (if it is checkable). Do the same check for *Administrators*.
+    - Click *OK* to go back to *Properties* dialog. Then click *Advanced*.
+    - Click *Change Permissions*.
+    - On *Permissions* tab, double-click *Administrators*.
+    - Select *This folder, subfolders and files* for *Applies to* field and check all the available *Basic permissions*. After that, hit *OK*.
+    - Do the same operation above (from item 7) for *SYSTEM*.
+    - Click *OK* all the way out. Try installing AdGuard again.
 
-### Error 1618: Another installation is already in progress {#error-1618}
+### Errore 1618: Un'altra installazione è già in corso {#error-1618}
 
-This error occurs when there are several instances of AdGuard installer launched at the same time. What to do if you get this error:
+Questo errore si verifica quando ci sono diverse istanze del programma d'installazione di AdGuard, avviate al contempo. Cosa fare se riscontri questo errore:
 
-- Reboot your PC and start the installer again. When you restart the computer, all ongoing processes will stop, including all copies of the installer.
+- Riavvia il tuo PC e riavvia il programma d'installazione. Riavviando il computer, tutti i processi in corso saranno interrotti, incluse tutte le copie del programma d'installazione.
 
-- Don't make multiple clicks on the installer even if it doesn't start right away. Sometimes it may take a few seconds to display the installer UI.
+- Non cliccare più volte sul programma d'installazione, anche se non si avvia subito. Talvolta, potrebbe volerci qualche secondo per visualizzare l'UI del programma d'installazione.
 
-### Error 1638: Another version of this product is already installed {#error-1638}
+### Errore 1638: Un'altra versione del prodotto è già installata {#error-1638}
 
-It's very likely that you've already installed AdGuard before.
+È molto probabile che tu abbia già installato AdGuard in precedenza.
 
-- Check if AdGuard is already installed on your computer. You can do it by pressing the *Win* key and typing in ***AdGuard***.
+- Verifica se AdGuard è già installato sul tuo computer. Puoi farlo premendo il tasto *Win* e digitando ***AdGuard***.
 
-- Maybe there're some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
+- Forse ci sono alcuni file rimasti da una precedente installazione di AdGuard. Disinstalla AdGuard utilizzando il nostro [strumento di disinstallazione](../../installation#advanced) speciale, poi ripeti l'installazione.
 
-### Other errors {#other}
+### Altri errori {#other}
 
-If you've encountered an error that's not listed above, it is possible that we can solve it by ourselves. But in order to do that, we need log files from you. Please perform the following steps:
+Se hai riscontrato un errore che non è elencato sopra, è possibile che possiamo risolverlo da soli. Ma per poterlo fare, necessitiamo dei tuoi file di registro. Sei pregato di eseguire i seguenti passaggi:
 
-- Find and archive the **AdGuard installation logs** as it is described in [this article](../installation-logs).
+- Trova e archivia i **registri d'installazione di AdGuard** come descritto in [questo articolo](../installation-logs).
 
-- Find and save to disk the **Event Viewer** logs. [This article](../system-logs) explains how to do that.
+- Trova e salva sul disco i registri del **Event Viewer**. [Questo articolo](../system-logs) spiega come farlo.
 
-- Please email all these files from two previous steps to the support team at **support@adguard.com** and describe the problem in the message body. Our tech support agents will reply to you as soon as possible.
+- Sei pregato di inviare tutti i file dai due passaggi precedenti, al team di supporto a **support@adguard.com** e di descrivere il problema nel corpo del messaggio. I nostri agenti dell'assistenza tecnica ti risponderanno il prima possibile.

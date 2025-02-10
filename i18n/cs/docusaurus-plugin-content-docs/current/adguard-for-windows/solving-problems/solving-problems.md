@@ -21,3 +21,4 @@ Zde jsou uvedeny některé problémy, se kterými se můžete setkat, řešení,
 - [Jak vytvořit soubor dump](/adguard-for-windows/solving-problems/dump-file/)
 - [Možné úniky DNS](/adguard-for-windows/solving-problems/dns-leaks/)
 - [Známé problémy s AdGuard pro Windows](/adguard-for-windows/solving-problems/known-issues/)
+- [Jak opravit chybu `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE`](/adguard-for-windows/solving-problems/mozilla-error/)

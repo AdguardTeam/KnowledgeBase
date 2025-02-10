@@ -1,5 +1,5 @@
 ---
-title: What can be done in the AdGuard account
+title: AdGuard 계정으로 할 수 있는 일
 sidebar_position: 2
 ---
 
@@ -7,14 +7,14 @@ sidebar_position: 2
 
 ## 계정 설정 관리
 
-In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable one-time code login or [two-factor authentication](../2fa), view the data stored about you by AdGuard, and select the language of your account and notifications.
+AdGuard 계정의 *설정* 섹션에서 비밀번호를 업데이트 또는 초기화하고, 이메일 주소를 변경하며, [이중 인증](../2fa)을 활성화할 수 있습니다. 또한 AdGuard에 저장된 귀하에 대한 정보를 확인하고 개인 계정 및 알림의 언어를 선택할 수 있습니다.
 
 이 섹션에서는 이메일 기본 설정을 관리할 수도 있습니다.
 
-- Receive AdGuard newsletter
-- Receive transactional emails
-- Send read receipts to AdGuard
-- Opt-out preferences
+- AdGuard 뉴스레터 수신
+- 거래 이메일 수신
+- AdGuard에게 읽은 알림 보내기
+- 옵트아웃 기본 설정
 
 ## 라이선스 관리
 
@@ -27,12 +27,12 @@ In the *Settings* section of your AdGuard account, you can update or reset your 
 - 업그레이드,
 - 취소할 수 있습니다. 결제 세부 정보를 업데이트할 수도 있습니다.
 
-AdGuard 광고 차단 라이선스에 연결된 기기의 연결을 해제하거나 이름을 변경할 수 있습니다. To unbind unused devices, click the number of bound devices next to *Devices*, then select the right arrow → *Remove*.
+AdGuard 광고 차단 라이선스에 연결된 기기의 연결을 해제하거나 이름을 변경할 수 있습니다. 사용하지 않는 기기 연결을 해제하려면 *기기* 옆의 연결된 기기 수를 클릭한 다음 오른쪽 화살표 → *제거*를 선택합니다.
 
 ## 구매 내역 보기
 
-The *Purchases* section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. 구매 날짜, 주문 ID, 결제 방법 및 구매 비용에 대한 정보도 확인할 수 있습니다.
+*구매 내역* 섹션에는 AdGuard 계정을 등록한 이메일 계정을 사용하여 구매한 모든 라이선스가 표시됩니다. 구매 날짜, 주문 ID, 결제 방법 및 구매 비용에 대한 정보도 확인할 수 있습니다.
 
-## Activity
+## 활동
 
-The *Activity* tab allows you to monitor login activity for your AdGuard account. It displays the email address used, location, and login date. You can also filter records by product: *All products*, *AdGuard Ad Blocker*, *AdGuard VPN*, *AdGuard DNS*.
+*활동 탭*에서는 AdGuard 계정의 로그인 활동을 확인할 수 있습니다. 사용된 이메일 주소, 위치, 로그인 날짜가 표시됩니다. 다음 제품별로 기록을 필터링할 수도 있습니다: *모든 제품*, *AdGuard 광고 차단기*, *AdGuard VPN*, *AdGuard DNS*.
