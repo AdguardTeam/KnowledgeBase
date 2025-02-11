@@ -35,9 +35,13 @@ Estos son dos errores diferentes con soluciones muy similares. Como sugieren sus
 
 Se podría decir que este es un subcategoría particular del Error 1603. Las posibles soluciones son similares:
 
-- Inicia y vuelve a registrar el servicio Microsoft Installer. Esto puede resultar laborioso.
+- Start and re-register Microsoft Installer service. It requires some work.
 
-    1) Presiona *Win + R* e ingresa **services.msc**. 2) Búscalo en la lista y haz doble clic en *Windows Installer*. 3) Presiona el botón *Iniciar* debajo de *Estado del servicio* y presiona *Aceptar*. Si el estado del servicio es **ejecutando**, debes hacer clic en *Detener* primero y luego presionar *Iniciar*. 4) Presiona *Win + R*, ingresa ***msiexec /unregister*** y presiona *Enter*. 5) Presiona *Win + R* nuevamente, ingresa ***msiexec /regserver*** y presiona *Enter*
+    - Press *Win + R* and enter **services.msc**.
+    - Find in the list and double click *Windows Installer*.
+    - Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
+    - Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*.
+    - Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
 
 - Reinicia la PC y comienza la instalación nuevamente. A veces eso es suficiente para solucionar el problema.
 
@@ -61,13 +65,25 @@ El error suena más aterrador de lo que realmente es. En realidad, este es un er
 
 - Desinstala AdGuard usando nuestra herramienta especial de desinstalación [](../../installation#advanced) y luego repite la instalación.
 
-- Inicia y vuelve a registrar el servicio Microsoft Installer. Esto puede resultar laborioso.
+- Start and re-register Microsoft Installer service. It requires some work.
 
-    1) Presiona *Win + R* e ingresa ***services.msc***. 2) Búscalo en la lista y haz doble clic en *Windows Installer*. 3) Presiona el botón *Iniciar* debajo de *Estado del servicio* y presiona *Aceptar*. Si el estado del servicio es **ejecutando**, debes hacer clic en *Detener* primero y luego presionar *Iniciar*. 4) Presiona *Win + R*, ingresa ***msiexec /unregister*** y presiona *Enter*. 5) Presiona *Win + R* nuevamente, ingresa ***msiexec /regserver*** y presiona *Enter*
+    - Press *Win + R* and enter ***services.msc***.
+    - Find in the list and double click *Windows Installer*.
+    - Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
+    - Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*.
+    - Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
 
-- Adquiere permisos completos en la unidad para la instalación. Es posible que se produzca el error 1603 porque no tienes permisos completos en la ubicación del archivo. Esto tampoco es tan fácil como algunas de las otras soluciones:
+- Acquire full permissions on the drive for installation. It is possible that the error 1603 occurs because you don’t have full permissions on the file location. It's also not as easy as some of the other solutions:
 
-    1) Abre *Explorador de archivos*, haz clic con el botón derecho en la unidad que contiene la ubicación de instalación y selecciona *Propiedades*. 2) Ve a la pestaña *Seguridad* y haz clic en *Editar*. 3) Haz clic en *SISTEMA* y asegúrate de que la casilla *Permitir* de cada elemento en *Permisos para SISTEMA* esté marcada (si es posible). Haz la misma verificación para *Administradores*. 4) Haz clic en *Aceptar* para volver al cuadro de diálogo *Propiedades*. Luego haz clic en *Avanzado*. 5) Haz clic en *Cambiar permisos*. 6) En la pestaña *Permisos*, haz doble clic en *Administradores*. 7) Selecciona *Esta carpeta, subcarpetas y archivos* para el campo *Se aplica a* y marca todos los *Permisos básicos* disponibles. Luego, presiona *OK*. 8) Haz la misma operación del punto 7 para *SISTEMA*. 9) Haz clic en *OK* hasta el final. Intenta instalar AdGuard de nuevo.
+    - Open *File Explorer*, right-click the drive containing the installation location and select *Properties*.
+    - Go to *Security* tab and click *Edit*.
+    - Single-click *SYSTEM* and ensure that the *Allow* box of every item in *Permissions for SYSTEM* is checked (if it is checkable). Do the same check for *Administrators*.
+    - Click *OK* to go back to *Properties* dialog. Then click *Advanced*.
+    - Click *Change Permissions*.
+    - On *Permissions* tab, double-click *Administrators*.
+    - Select *This folder, subfolders and files* for *Applies to* field and check all the available *Basic permissions*. After that, hit *OK*.
+    - Do the same operation above (from item 7) for *SYSTEM*.
+    - Click *OK* all the way out. Try installing AdGuard again.
 
 ### Error 1618: ya hay otra instalación en curso {#error-1618}
 

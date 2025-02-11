@@ -11,7 +11,7 @@ AdGuard Safari Web 扩展是一款让用户利用 iOS 15 新功能的工具。 �
 
 ## 工作原理
 
-By default, Safari provides only basic tools for content blockers. These tools don't offer the level of performance found in content blockers on other operating systems (Windows, Mac, Android). For example, AdGuard apps on other platforms can use such powerful anti-ad weapons as [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets). Unfortunately, these utilities are absolutely irreplaceable when dealing with more complex cases, such as pre-roll ads on YouTube.
+默认情况下，Safari 仅提供基本的内容拦截工具。 这些工具无法提供与其他操作系统（如 Windows、Mac、Android）上的内容拦截器相同水平的性能。 例如，其他平台上的 AdGuard 应用程序可以使用诸如 [CSS 规则](/general/ad-filtering/create-own-filters#cosmetic-css-rules)、[扩展 CSS 选择器](/general/ad-filtering/create-own-filters#extended-css-selectors)和[脚本](/general/ad-filtering/create-own-filters#scriptlets)等强大的反广告工具。 遗憾的是，在处理更复杂的案例（如 YouTube 上的前置广告）时，这些工具绝对是无可替代的。
 
 AdGuard Safari Web 扩展应用这些过滤规则增加 iOS 版 AdGuard 能力。
 
@@ -19,7 +19,7 @@ AdGuard Safari Web 扩展应用这些过滤规则增加 iOS 版 AdGuard 能力�
 
 ![Web 扩展菜单 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/ext_adguard_en.png?1)
 
-> On iPads, AdGuard's Safari web extension can be accessed directly by tapping the AdGuard icon in the browser's address bar.
+> 在 iPad 上，可以通过点击浏览器地址栏中的 AdGuard 图标直接访问 AdGuard 的 Safari 网页扩展。
 
 用户将看到以下列表：
 
@@ -57,7 +57,7 @@ Web 扩展不是独立工具，需要 iOS 版 AdGuard。 如果设备上未安�
 
 ### Safari 浏览器
 
-You can also enable the AdGuard extension from the Safari browser. To do it, tap *Extensions* (if you don't see it next to the address bar, tap the `aA` icon).
+用户也可以在 Safari 浏览器中启用 AdGuard 扩展。 要进行此操作，请点击「*扩展*」（如果地址栏旁边没有看到它，请点击 `aA` 图标）。
 
 ![在 Safari 中点击「大小」图标 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari1_en.png)
 

@@ -7,44 +7,44 @@ sidebar_position: 3
 
 Мы считаем добавление опции 2FA преимуществом. Мы также понимаем, что принуждение к её использованию может раздражать некоторых пользователей. Именно поэтому мы сделали 2FA необязательной для вашего личного кабинета на adguard.com — по умолчанию эта функция отключена. Вы можете включить её вручную в настройках. Что касается доступных в настоящее время методов аутентификации, мы используем проверенный и испытанный: приложение-аутентификатор для Android или iOS. Вы можете использовать практически любое подобное приложение из множества доступных.
 
-Мы рекомендуем настроить двухфакторную аутентификацию для вашего личного кабинета AdGuard. Это не займёт у вас много времени, но поможет защитить ваши лицензионные ключи, подписки и, самое главное, любую личную информацию, связанную с учётной записью.
+Мы рекомендуем настроить двухфакторную аутентификацию для вашего личного кабинета AdGuard. Это не займёт много времени, но поможет защитить ваши лицензионные ключи, подписки и, самое главное, любую личную информацию, связанную с учётной записью.
 
 ## Как настроить
 
-1. Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the *Settings* tab:
+1. Войдите в свой [аккаунт AdGuard](https://auth.adguard.com/login.html) и перейдите во вкладку *Настройки*:
 
- ![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
+ ![Настройки личного кабинета AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Scroll down to *Two-factor authentication* and enable it:
+1. Прокрутите вниз до *Двухфакторной аутентификации* и включите её:
 
- ![Two-factor authentication toggle *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
+ ![Переключатель двухфакторной аутентификации *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. A code will be sent to the email address associated with your AdGuard account. To enable 2FA, enter the code and click *Enable*.
+1. Код будет отправлен на адрес почты, привязанный к вашему аккаунту AdGuard. Чтобы включить 2FA, введите код и нажмите *Включить*.
 
- ![The verification code *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
+ ![Проверочный код *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
 After you enable two-factor authentication, you have two options to choose from:
 
-- *One-time email code*: when you log in, we will ask you to enter the code we sent to your email
+- *Одноразовый код из письма*: при входе мы попросим вас ввести код, который отправили на вашу почту
 
-- *Code from authenticator app*: when you log in, we will ask for a code from your authenticator app
+- *Код из приложения-аутентификатора*: при входе мы запросим код из вашего приложения-аутентификатора
 
-![2FA options *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
+![Опции двухфакторной аутентификации *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 
 :::note
 
-If you use the authenticator app, make sure to save the **setup key** somewhere. It will be necessary to recover your account in case your mobile phone gets lost or stolen.
+Если вы используете приложение-аутентификатор, обязательно сохраните **ключ настройки**. It will be necessary to recover your account in case your mobile phone gets lost or stolen.
 
-![The setup key in the authenticator app *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
+![Ключ настройки в приложении-аутентификаторе *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
 
 :::
 
-If everything is done right, you will see this when you log into your account the next time:
+Если всё правильно настроено, то при следующем входе в аккаунт вы увидите такой экран:
 
-![The result *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
+![Результат *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
 
 :::note
 
-If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
+Если произошла ошибка аутентификации, проверьте часы на своём телефоне. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
 
 :::

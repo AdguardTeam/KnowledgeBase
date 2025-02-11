@@ -25,4 +25,4 @@ sidebar_position: 1
 
 此部分包括已知问题和可能解决方案的文章。
 
-[Solving problems](/adguard-for-mac/solving-problems/solving-problems.md)
+[解决问题](/adguard-for-mac/solving-problems/solving-problems.md)

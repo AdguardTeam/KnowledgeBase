@@ -5,19 +5,20 @@ sidebar_position: 1
 
 :::info
 
-Questo articolo riguarda AdGuard per Windows, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Here are some problems you may encounter and workarounds, guides, and instructions you may need.
+Ecco alcuni problemi che puoi riscontrare e le loro soluzioni, guide e istruzioni di cui potresti avere bisogno.
 
-- [WFP driver compatibility](/adguard-for-windows/solving-problems/wfp-driver/)
-- [Certificate-related issues](/adguard-for-windows/solving-problems/connection-not-trusted/)
-- [How to collect AdGuard logs](/adguard-for-windows/solving-problems/adguard-logs/)
-- [How to collect AdGuard installation logs](/adguard-for-windows/solving-problems/installation-logs/)
-- [How to collect Windows system logs](/adguard-for-windows/solving-problems/system-logs/)
-- [Common installer errors](/adguard-for-windows/solving-problems/common-installer-errors/)
-- [Advanced (low-level) Settings guide](/adguard-for-windows/solving-problems/low-level-settings/)
-- [How to create a dump file](/adguard-for-windows/solving-problems/dump-file/)
-- [Possible DNS leaks](/adguard-for-windows/solving-problems/dns-leaks/)
-- [Known issues of AdGuard for Windows](/adguard-for-windows/solving-problems/known-issues/)
+- [Compatibilità del driver WFP](/adguard-for-windows/solving-problems/wfp-driver/)
+- [Problemi relativi al certificato](/adguard-for-windows/solving-problems/connection-not-trusted/)
+- [Come raccogliere registri di AdGuard](/adguard-for-windows/solving-problems/adguard-logs/)
+- [Come raccogliere registri di installazione di AdGuard](/adguard-for-windows/solving-problems/installation-logs/)
+- [Come raccogliere registri di sistema di Windows](/adguard-for-windows/solving-problems/system-logs/)
+- [Errori comuni dell'installatore](/adguard-for-windows/solving-problems/common-installer-errors/)
+- [Guida alle impostazioni Avanzate (basso livello)](/adguard-for-windows/solving-problems/low-level-settings/)
+- [Come creare un file di dump](/adguard-for-windows/solving-problems/dump-file/)
+- [Possibili perdite DNS](/adguard-for-windows/solving-problems/dns-leaks/)
+- [Problemi noti di AdGuard per Windows](/adguard-for-windows/solving-problems/known-issues/)
+- [Come risolvere l'errore `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE`](/adguard-for-windows/solving-problems/mozilla-error/)

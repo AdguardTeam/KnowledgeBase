@@ -554,3 +554,34 @@ Zařízení Wiko jsou problematická z hlediska nestandardních optimalizací pr
 - Nastavte režim **Trvalá síť VPN**
 
     ![Stockadguard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)
+
+## Realme
+
+Na zařízeních s uživatelským rozhraním Realme UI 4.0 existují tři klíčové konfigurace, které zajistí správnou funkci AdGuardu na pozadí.
+
+1. Nastavte aplikaci AdGuard:
+
+    - Dlouze stiskněte ikonu AdGuardu
+    - V zobrazené nabídce vyberte možnost **Informace o aplikaci**
+    - Přejděte na **Využití baterie** a povolte všechny možnosti:
+        - Povolit aktivitu na pozadí
+        - Povolit aktivitu na popředí
+        - Povolit automatické spouštění
+    - V sekci **Informace o aplikaci** přejděte dolů a vypněte možnost **Pozastavit aktivitu aplikace, pokud se nepoužívá**
+
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
+
+1. Nastavte baterii:
+
+    - Přejděte na **Nastavení → Baterie → Další nastavení → Optimalizace využití baterie**
+    - Vyhledejte AdGuard v seznamu a povolte **Neoptimalizovat**
+    - V **Dalších nastaveních** zkontrolujte sekci **Rychlé zmrazení aplikace** a zakažte pro AdGuard
+
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
+
+1. Povolte *Always-On VPN* pro AdGuard:
+
+    - Přejděte na **Nastavení → Připojení a sdílení → VPN**
+    - Vyhledejte **AdGuard** a povolte možnost **Always-on VPN**
+
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)

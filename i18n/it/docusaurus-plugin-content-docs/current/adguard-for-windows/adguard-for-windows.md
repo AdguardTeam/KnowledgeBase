@@ -5,25 +5,25 @@ sidebar_position: 1
 
 :::info
 
-Questo articolo riguarda AdGuard per Windows, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Features
+## Funzioni
 
-Here are outlined the main features and settings available in AdGuard for Windows.
+Qui sono delineate le principali funzioni e impostazioni disponibili in AdGuard per Windows.
 
-[Features](/adguard-for-windows/features/features.md)
+[Funzioni](/adguard-for-windows/features/features.md)
 
 ## Installazione
 
-Here, you’ll find the system requirements along with instructions on how to install and uninstall AdGuard for Windows.
+Qui troverai i requisiti di sistema insieme alle istruzioni su come installare e disinstallare AdGuard per Windows.
 
-[Installation](/adguard-for-windows/installation.md)
+[Installazione](/adguard-for-windows/installation.md)
 
 ## Browser Assistant
 
-This article covers a browser extension that complements the desktop program, its installation, and its benefits.
+Questo articolo tratta di un'estensione per browser che completa il programma installato, la sua installazione e i suoi vantaggi.
 
 [Browser Assistant](/adguard-for-windows/browser-assistant.md)
 
@@ -31,10 +31,10 @@ This article covers a browser extension that complements the desktop program, it
 
 Questa sezione include vari articoli che affrontano problemi noti e le possibili soluzioni.
 
-[Solving problems](/adguard-for-windows/solving-problems/solving-problems.md)
+[Risoluzione problemi](/adguard-for-windows/solving-problems/solving-problems.md)
 
-## Documentazione per admin
+## Documentazione per amministratori
 
-This page provides details about AdGuard’s central management of policies and preferences.
+Questa pagina fornisce dettagli su gestione centrale di politiche e preferenze di AdGuard.
 
-[Documentation for admins](/adguard-for-windows/admins-documentation.md)
+[Documentazione per amministratori](/adguard-for-windows/admins-documentation.md)

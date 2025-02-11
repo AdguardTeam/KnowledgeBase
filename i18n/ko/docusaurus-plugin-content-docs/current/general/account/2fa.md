@@ -11,40 +11,40 @@ AdGuard 계정에서 이중 인증 기능을 설정하는 것을 권해드립니
 
 ## 이중 인증 설정 방법
 
-1. Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the *Settings* tab:
+1. [AdGuard 계정](https://auth.adguard.com/login.html)에 로그인하고 *설정* 탭으로 이동합니다.
 
- ![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
+ ![AdGuard 계정 설정 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Scroll down to *Two-factor authentication* and enable it:
+1. 아래로 스크롤하여 *2단계 인증*으로 이동하여 활성화합니다.
 
- ![Two-factor authentication toggle *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
+ ![2단계 인증 토글 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. A code will be sent to the email address associated with your AdGuard account. To enable 2FA, enter the code and click *Enable*.
+1. AdGuard 계정과 연결된 이메일 주소로 코드가 전송됩니다. 2FA를 사용하려면 코드를 입력하고 *활성화*를 클릭합니다.
 
- ![The verification code *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
+ ![인증 코드 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-After you enable two-factor authentication, you have two options to choose from:
+2단계 인증을 사용 설정한 후에는 두 가지 옵션 중에서 선택할 수 있습니다:
 
-- *One-time email code*: when you log in, we will ask you to enter the code we sent to your email
+- *일회용 이메일 코드*: 로그인할 때 이메일로 전송한 코드를 입력하라는 메시지가 표시됩니다.
 
-- *Code from authenticator app*: when you log in, we will ask for a code from your authenticator app
+- *인증 앱의 코드*: 로그인할 때 인증 앱에서 코드를 요청합니다.
 
-![2FA options *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
+![2FA 옵션 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 
 :::note
 
-If you use the authenticator app, make sure to save the **setup key** somewhere. It will be necessary to recover your account in case your mobile phone gets lost or stolen.
+인증 앱을 사용하면 **설정 키**를 어딘가에 저장해야 합니다. 휴대폰을 분실하거나 도난당한 경우 계정을 복구해야 합니다.
 
-![The setup key in the authenticator app *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
+![인증 앱의 설정 키 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
 
 :::
 
-If everything is done right, you will see this when you log into your account the next time:
+모든 것이 올바르게 완료되면 계정에 로그인할 때 다음 메시지가 표시됩니다.
 
-![The result *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
+![결과 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
 
 :::note
 
-If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
+전화기의 시간이 정확하지 않으면 인증 문제가 발생할 수 있습니다. 시간을 확인하고 필요한 경우 올바른 시간을 설정하세요.
 
 :::

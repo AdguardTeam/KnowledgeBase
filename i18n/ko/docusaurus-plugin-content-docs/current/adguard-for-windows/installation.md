@@ -23,31 +23,31 @@ sidebar_position: 2
 
 Microsoft Windows의 PC 또는 태블릿에서 AdGuard를 사용하려면 설치 패키지를 다운로드하고 설치하면 됩니다. 다음 단계를 따라와 보세요.
 
-1. Go to the [AdGuard website](http://adguard.com) in the address bar and click *Download* [on the homepage](https://adguard.com/download.html?auto=1).
+1. 주소 표시줄에서 [AdGuard 웹사이트](http://adguard.com)로 이동하여 [홈페이지](https://adguard.com/download.html?auto=1)에서 *다운로드*를 클릭합니다.
 
-   ![Download AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
+   ![AdGuard 다운로드](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
 
-2. When the download is finished, press the *Open* button shown in the Downloads bar or click the file name *adguardInstaller.exe*.
+2. 다운로드가 완료되면 다운로드 표시줄에서 *열기* 버튼을 누르거나 *adguardInstaller.exe* 파일을 클릭합니다.
 
-   ![Press "Run"](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/click-download.png)
+   !["실행" 누르기](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/click-download.png)
 
-3. You’ll see the User Account Control dialogue box requesting to allow the app to make changes to your PC. Click *Yes*.
+3. 사용자 계정 제어 서비스 대화 상자가 화면에 나타나 컴퓨터 설정을 변경할지 묻는 메시지가 표시됩니다. *네* 버튼을 클릭합니다.
 
-   ![Allow changes *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/allow-changes.png)
+   ![변경 허용 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/allow-changes.png)
 
-4. Next, choose the folder on your PC for the app to be installed to.
+4. 다음으로, 앱을 설치할 컴퓨터의 폴더를 선택합니다.
 
-   ![Choose folder *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/install-wizard.png)
+   ![폴더 선택 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/install-wizard.png)
 
-   If you do not agree with the default installation path, press *Browse*, select the folder for AdGuard installation in the *Browse For Folder* window, and confirm your choice by clicking *OK*. You can also install AdGuard to a new folder by clicking *Make New Folder* and entering its name. To create a desktop shortcut for AdGuard, check the *Create a desktop shortcut* box. Press *Install* to proceed with installation.
+   기본 설치 경로에 동의하지 않는 경우, *찾아보기*를 누르고 *폴더 찾아보기* 창에서 AdGuard를 설치할 폴더를 선택한 후 *확인*을 클릭합니다. 또한 *새 폴더 만들기*를 클릭하고 이름을 입력하여 AdGuard를 새 폴더에 설치할 수 있습니다. AdGuard 바탕 화면 바로 가기를 만들려면 바탕 화면 *바로 가기 만들기* 확인란을 선택합니다. *설치*를 눌러 설치를 계속합니다.
 
-   ![Start installation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/start-install.png)
+   ![설치 시작 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/start-install.png)
 
-5. Wait for the installation to complete and click *Finish*.
+5. 설치가 완료된 후 *마침*을 클릭합니다.
 
-   ![Complete installation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/finish-install.png)
+   ![설치 완료 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/finish-install.png)
 
-   Congratulations! You have successfully installed AdGuard on your computer. On the screen you will see the main window where you can change the app’s settings.
+   축하드립니다! AdGuard가 컴퓨터에 설치되었습니다. 화면에 프로그램 설정을 변경할 수 있는 메인 창이 표시됩니다.
 
 ## Windows용 AdGuard를 제거하는 방법 {#uninstall}
 
@@ -105,20 +105,20 @@ AdGuard 제거 및 재설치 방법은 다음과 같습니다.
 
 AdGuard가 제거되었습니다!
 
-#### Running the uninstaller in console mode
+#### 콘솔 모드에서 제거 프로그램 실행
 
-Besides running the advanced uninstaller in its user-interactive mode, you can also use command-line arguments to uninstall AdGuard for Windows. To do this, follow the instructions below:
+사용자 대화형 모드에서 고급 제거 프로그램을 실행하는 것 외에도 명령줄 인수를 사용하여 Windows용 AdGuard를 제거할 수도 있습니다. 아래 지침을 따르세요.
 
-1. Open Command Prompt by typing *cmd* from the Start menu.
-2. Use `/console` to run the uninstaller in console mode, without the interactive UI. All the command-line parameters below will be ignored if the `/console` mode is not activated.
-3. Use `/adblocker` to uninstall AdGuard for Windows. It should look like this:
+1. 시작 메뉴에서 *cmd를* 입력하여 명령 프롬프트를 엽니다.
+2. 대화형 UI 없이 콘솔 모드에서 제거 프로그램을 실행하려면 `/console`을 사용합니다. `콘솔` 모드가 활성화되지 않은 경우, 아래의 모든 명령줄 매개변수는 무시됩니다.
+3. Windows용 AdGuard를 제거하려면 `/adblocker`를 사용합니다. 다음과 같이 표시되어야 합니다.
 
    `Adguard.UninstallUtility.exe /console /adblocker`
 
-4. You can also use `/advanced` to force the uninstaller to run in *Advanced mode* and `/settings` to force the uninstaller to remove user settings along with the application.
+4. 또한 `/advanced`를 사용하여 제거 프로그램이 *고급 모드*에서 강제로 실행되도록 하고 `/settings`를 사용하여 제거 프로그램이 애플리케이션과 함께 사용자 설정을 제거하도록 할 수도 있습니다.
 
 :::note
 
-The use of the parameters `/console` and `/adblocker` is necessary for a successful uninstall. The parameters `/advanced` and `/settings` are optional.
+성공적인 제거를 위해서는 `/console` 및 `/adblocker` 매개변수를 사용해야 합니다. `/advanced` 및 `/settings` 매개변수는 선택 사항입니다.
 
 :::

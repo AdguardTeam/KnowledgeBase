@@ -1,50 +1,50 @@
 ---
-title: How to collect Windows system logs
+title: Comment collecter les journaux système Windows
 sidebar_position: 5
 ---
 
 :::info
 
-Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-Data and/or files provided in system logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Les données et/ou les fichiers fournis dans les journaux système sont traités conformément à [la Politique de confidentialité d'AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need Windows system log files. Windows event logs contain records about all errors that occur with the installed software, including AdGuard. Below is the brief instruction describing the way to get the log files and to send them to our support service if necessary.
+Pour analyser et diagnostiquer les différents problèmes susceptibles de survenir, le service d'assistance d'AdGuard peut avoir besoin des fichiers journaux du système Windows. Les journaux d'événements Windows contiennent des enregistrements de toutes les erreurs qui se produisent avec le logiciel installé, y compris AdGuard. Vous trouverez ci-dessous de brèves instructions décrivant comment obtenir les fichiers journaux et les envoyer à notre service d'assistance si nécessaire.
 
-1. Press *Win + R*
+1. Appuyez sur *Win + R*
 
-1. In the window that appears type in `eventvwr` and click *OK*:
+1. Dans la fenêtre qui apparaît, tapez `eventvwr` et cliquez sur *OK* :
 
-    ![Run window *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
+    ![Exécuter la fenêtre *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
 
-1. Event Viewer window appears as shown in the picture.
+1. La fenêtre de l'Event Viewer apparaît comme indiqué dans l'image.
 
     ![Event viewer *border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
 
-    To save files that we need, do the following:
+    Pour enregistrer les fichiers dont nous avons besoin, faites ce qui suit :
 
-    - Open *Application*: *Event Viewer (Local)* → *Windows Logs* → *Application*.
+    - Ouvrir *Application*: *Event Viewer (local)* → *Journaux Windows* → *Application*.
 
-    - Right-click *Application* and in the drop-down menu select *Save All Events As...*
+    - Faites un clic droit sur *Application* et dans le menu déroulant, sélectionnez *Enregistrer tous les événements sous...*
 
-    - Select a name and where to save, click *Save*. Select *Display information for the following languages*. You need to check the checkbox next to *English*. Click *OK*.
+    - Sélectionnez un nom et un emplacement pour enregistrer, puis cliquez sur *Enregistrer.*. Sélectionnez *Afficher les informations pour les langues suivantes*. Vous devez cocher la case à cocher à côté de *Anglais*. Cliquez sur *OK*.
 
-    - Open *System*: *Event Viewer (Local)* → *Windows Logs* → *System*.
+    - Ouvrir *Système* : *Event Viewer (Local)* → *Journaux Windows* → *Système*.
 
-    - Right-click *System* and in the drop-down menu select *Save All Events As...*
+    - Faites un clic droit sur *Système* et dans le menu déroulant, sélectionnez *Enregistrer tous les événements sous...*
 
-    - Choose a destination folder, enter the name, click *Save*. Select *Display information for the following languages*. You need to tick the box next to *English*. Click *OK*.
+    - Choisissez un dossier de destination, saisissez le nom, cliquez sur *Enregistrer*. Sélectionnez *Afficher les informations pour les langues suivantes*. Vous devez cocher la case à cocher à côté de *Anglais*. Cliquez sur *OK*.
 
-Please send the two files that you've recently saved to **support@adguard.com**.
+Veuillez envoyer les deux fichiers que vous avez récemment enregistrés à **support@adguard.com**.
 
 :::note
 
-AdGuard s'engage à protéger votre vie privée. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Avant d'envoyer vos journaux à l'équipe d'assistance, veuillez consulter le fichier car il peut contenir des informations supplémentaires que vous ne souhaitez pas partager. S'il contient de telles informations personnelles, nous vous recommandons de les supprimer au préalable.
+AdGuard s'engage à protéger votre vie privée. Nous suivons strictement notre [Politique de confidentialité](https://adguard.com/privacy/windows.html) et ne collectons aucune information privée sur les utilisateurs. Avant d'envoyer vos journaux à l'équipe d'assistance, veuillez consulter le fichier car il peut contenir des informations supplémentaires que vous ne souhaitez pas partager. S'il contient de telles informations personnelles, nous vous recommandons de les supprimer au préalable.
 
 :::
