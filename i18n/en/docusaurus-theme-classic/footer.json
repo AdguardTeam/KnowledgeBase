@@ -114,5 +114,9 @@
   "link.item.label.distribution": {
     "message": "Distribution",
     "description": "The label of footer link with label=distribution linking to https://adguard.com/partners.html"
+  },
+  "copyright": {
+    "message": "© 2009–2025 Adguard Software Ltd.",
+    "description": "The footer copyright"
   }
 }
