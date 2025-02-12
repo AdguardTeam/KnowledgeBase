@@ -94,9 +94,5 @@
   "link.item.label.contribute_to_adguard": {
     "message": "Contribuisci ad AdGuard",
     "description": "The label of footer link with label=contribute_to_adguard linking to https://adguard.com/contribute.html"
-  },
-  "copyright": {
-    "message": "© AdGuard, 2009–2023",
-    "description": "The footer copyright"
   }
 }
