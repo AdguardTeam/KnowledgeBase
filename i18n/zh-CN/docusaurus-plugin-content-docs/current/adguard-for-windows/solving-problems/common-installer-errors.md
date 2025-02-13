@@ -35,13 +35,13 @@ sidebar_position: 6
 
 可以说，这是错误 1603 的一个特殊子案例。 解决方案是相似的：
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- 启动并重新注册 Microsoft Installer 服务。 请执行以下操作：
 
-    - Press *Win + R* and enter **services.msc**.
-    - Find in the list and double click *Windows Installer*.
-    - Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
-    - Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*.
-    - Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    - 按 *Win + R* 并输入 **services.msc**。
+    - 在列表中找到并双击「*Windows Installer*」。
+    - 点击「*服务状态*」下的「*开始*」按钮，然后点击「*确定*」。 如果服务状态是「**正在运行**」，应该先点击「*停止*」，然后再点击「*启动*」。
+    - 按 *Win + R*，输入 ***msiexec /unregister*** 并按 *Enter*。
+    - 再次按 *Win + R* ，输入 ***msiexec /regserver*** 并按 *Enter*。
 
 - 重启电脑并重新开始安装。 有时这足以修复此问题。
 
@@ -65,25 +65,25 @@ sidebar_position: 6
 
 - 使用我们的专用[卸载工具](../../installation#advanced)卸载 AdGuard，然后重复安装。
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- 启动并重新注册 Microsoft Installer 服务。 请执行以下操作：
 
-    - Press *Win + R* and enter ***services.msc***.
-    - Find in the list and double click *Windows Installer*.
-    - Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
-    - Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*.
-    - Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    - 按 *Win + R* 并输入 ***services.msc***。
+    - 在列表中找到并双击「*Windows Installer*」。
+    - 点击「*服务状态*」下的「*开始*」按钮，然后点击「*确定*」。 如果服务状态是「**正在运行**」，应该先点击「*停止*」，然后再点击「*启动*」。
+    - 按 *Win + R*，输入 ***msiexec /unregister*** 并按 *Enter*。
+    - 再次按 *Win + R* ，输入 ***msiexec /regserver*** 并按 *Enter*。
 
-- Acquire full permissions on the drive for installation. It is possible that the error 1603 occurs because you don’t have full permissions on the file location. It's also not as easy as some of the other solutions:
+- 获取驱动器的全部安装权限。 出现错误 1603 的原因是您没有文件位置的权限。 这种情况的解决方案会稍微复杂一些：
 
-    - Open *File Explorer*, right-click the drive containing the installation location and select *Properties*.
-    - Go to *Security* tab and click *Edit*.
-    - Single-click *SYSTEM* and ensure that the *Allow* box of every item in *Permissions for SYSTEM* is checked (if it is checkable). Do the same check for *Administrators*.
-    - Click *OK* to go back to *Properties* dialog. Then click *Advanced*.
-    - Click *Change Permissions*.
-    - On *Permissions* tab, double-click *Administrators*.
-    - Select *This folder, subfolders and files* for *Applies to* field and check all the available *Basic permissions*. After that, hit *OK*.
-    - Do the same operation above (from item 7) for *SYSTEM*.
-    - Click *OK* all the way out. Try installing AdGuard again.
+    - 打开「*文件资源管理器*」，右键单击安装位置所在的驱动器，然后选择「*属性*」。
+    - 转到「*安全*」标签并点击「*编辑*」。
+    - ) 单击「*SYSTEM*」（中文：系统）并确保勾选「*SYSTEM* 的权限」中每一项的「*允许*」框（如果可以选中）。 对「*Administrators*」（中文：管理员）进行相同的勾选操作。
+    - 单击「*确定*」返回「*属性*」对话框。 然后单击「*高级*」。
+    - 单击「*更改权限*」。
+    - 在「*权限*」标签中，双击「* Administrators *」。
+    - 在「*应用于*」中选择「*此文件夹、子文件夹和文件*」并勾选所有可用的「*基本权限*」。 然后点击「*确定*」。
+    - 对「*SYSTEM*」执行上述相同操作（从第 7 项开始）。
+    - 点击「*确定*」直到所有对话框关闭。 尝试重新安装 AdGuard。
 
 ### 错误 1618：另一个安装已在进行中 {#error-1618}
 

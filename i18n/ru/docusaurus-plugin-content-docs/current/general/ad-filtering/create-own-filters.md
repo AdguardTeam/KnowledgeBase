@@ -828,7 +828,7 @@ AdGuard будет пытаться закрыть браузерную вкла
 | [$font](#font-modifier)                                      |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
 | [$image](#image-modifier)                                    |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
 | [$media](#media-modifier)                                    |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
-| [$object](#object-modifier)                                  |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
+| [$object](#object-modifier)                                  |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ❌                     |                     ❌                     |                 ✅                 |
 | [$other](#other-modifier)                                    |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ❌                 |
 | [$ping](#ping-modifier)                                      |    ✅ [*[1]](#ping-modifier-limitations)     |                ✅                |                 ✅                 |               ✅               |                     ❌                     |                     ❌                     |                 ✅                 |
 | [$script](#script-modifier)                                  |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
@@ -886,6 +886,12 @@ AdGuard будет пытаться закрыть браузерную вкла
 #### **`$object`** {#object-modifier}
 
 Правило соответствует ресурсам плагинов браузера, например, Java или Flash.
+
+:::info Совместимость
+
+Rules with `$object` modifier are not supported by AdGuard for Safari and AdGuard for iOS.
+
+:::
 
 #### **`$other`** {#other-modifier}
 

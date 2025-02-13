@@ -3,7 +3,7 @@ title: Extensions
 sidebar_position: 6
 ---
 
-## Userscripts
+## 使用者腳本
 
 Userscripts (we also call them "extensions") are, de facto, miniprograms written in JavaScript. They modify or extend the functionality of one or more websites. Many AdGuard users may be already familiar with such userscripts as AdGuard Assistant, Popup Blocker, and AdGuard Extra.
 

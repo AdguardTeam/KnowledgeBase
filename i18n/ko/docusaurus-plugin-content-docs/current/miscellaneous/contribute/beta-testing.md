@@ -1,34 +1,46 @@
 ---
-title: AdGuard 베타 테스트
+title: AdGuard beta/nightly testing
 sidebar_position: 1
 ---
 
-거의 모든 주요 플랫폼을 위한 AdGuard 앱이 있으며, 모든 플랫폼에 대한 업데이트를 정기적으로 출시합니다. 이는 베타 테스트, 더 중요한 것은 베타 테스터 없이는 불가능합니다. 베타 테스터가 되고 싶다면 아래 방법을 확인하세요.
+거의 모든 주요 플랫폼을 위한 AdGuard 앱이 있으며, 모든 플랫폼에 대한 업데이트를 정기적으로 출시합니다. This would not be possible without beta and nightly testing and, more importantly, without our testers. Want to become one of them? Here’s how you can do it.
 
-## 베타 테스터가 되는 방법 {#intro}
+### Beta or nightly: what is the difference?
 
-AdGuard를 사용하고, 베타 버전이 출시되면 베타 버전으로 업그레이드하고, 발견되는 버그를 신고하세요. 하지만 베타 테스터가 되려면 [GitHub](https://github.com/) 계정이 필요하므로 먼저 계정을 만드는 것이 좋습니다.
+Both beta and nightly testing are important to make AdGuard constantly better. However, they are different, and you can choose the one that suits you more.
 
-어떤 경우든 알아야 할 모든 정보가 [전용 페이지](https://adguard.com/beta.html)에 모여 있습니다.
+The development process follows a progression from nightly to beta and then from beta to the final, stable version — release. It means that you are more likely to find bugs in nightly builds, but you get access to new features faster, almost on a daily basis. Betas are more stable, but you will get updates less often.
 
-설명 부분을 건너뛰고 바로 실행에 옮기고 싶다면 [여기](https://surveys.adguard.com/beta_testing_program/form.html)에서 신청할 수 있습니다. 신청서는 영업일 기준 1~3일 이내에 검토되며 이메일을 통해 회신해 드립니다.
+## How to become a beta or nightly tester {#intro}
+
+Our requirements are easy: use AdGuard, upgrade to the beta/nightly version when it becomes available, and report any bugs you notice. You will need a [GitHub](https://github.com/) account to become our tester, so you may want to get that out of the way first.
+
+You will also need the device on which you will install the app and [the link to the the beta testing page](https://adguard.com/beta.html). There you will find more information on how to join our program and test AdGuard for Windows, Mac, Android, and iOS.
+
+If you want to skip the description part and get straight to the action, you can apply [here](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1-3 working days, and you'll get a reply via email.
+
+:::note
+
+To get the AdGuard for iOS beta or nightly build, first you have to install [Testflight](https://apps.apple.com/app/testflight/id899247664) on your iOS device.
+
+:::
 
 ## 버그를 신고하는 방법 {#report-a-bug}
 
-버그를 발견했거나 제안을 공유하고 싶으시면 [GitHub](https://github.com/AdguardTeam/)로 이동하여 적합한 리포지토리를 찾은 후 새 이슈를 생성하고 버그/기능 요청을 자세히 설명해 주세요.
+If you spotted a bug or just want to share your suggestion, let us know: go to [GitHub](https://github.com/AdguardTeam/), find a suitable repository, create a new issue there, and describe the bug/feature request in detail.
 
-이상의 방법이 가장 선호되지만, 만약 필요하다면 다른 방법을 사용할 수도 있습니다:
+The above method is the most preferred, but you can use others if necessary:
 
 - [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/) 등 다양한 소셜 미디어 플랫폼에서 저희를 만나보세요. 하지만 이는 기술적인 문제를 논의하는 데 가장 편리한 방법은 아닙니다.
 
 - 앱의 지원 탭에서 저희의 지원 팀에게 이메일을 보내거나, [support@adguard.com](mailto:support@adguard.com)으로 직접 보내주세요.
 
-## iOS 앱에서 베타 키를 활성화하는 방법 {#ios}
+## How to activate a beta/nightly key in the iOS app {#ios}
 
-이미 베타 키를 받았고 `adguard.com` 계정에 베타 키가 등록되어 있는 경우 앱으로 이동하여 라이선스 섹션(프리미엄 받기)을 엽니다. AdGuard 계정의 자격 증명을 입력하세요. 그 후에는 프리미엄 기능을 자동으로 사용할 수 있게 됩니다.
+If you have already received a beta key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Once there, enter the credentials from your AdGuard account. After that, the premium features will become available automatically.
 
-### 기타
+### What else?
 
-더 이상 추가할 내용이 많지 않습니다. 버그를 찾기 위해 직접 찾아다니지 않아도 됩니다. 평소와 같이 AdGuard를 계속 사용할 수 있습니다. 하지만 버그가 발견되면 신고해 주세요. 물론 추가적인 노력에 감사드립니다.
+There is not much more to add. You don't have to go out of your way to find bugs. You can continue using AdGuard as usual. However, if you encounter a bug, please report it. Of course, we appreciate any additional effort.
 
-가끔씩 뉴스레터를 통해 베타의 최신 변경 사항(놓친 경우) 및 기타 중요한 소식을 알려드립니다. 언제든 구독을 취소할 수 있습니다.
+Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta (in case you missed them) and other important news. You can unsubscribe from it at any time.
