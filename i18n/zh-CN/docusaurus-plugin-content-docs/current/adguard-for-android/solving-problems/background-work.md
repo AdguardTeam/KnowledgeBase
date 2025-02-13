@@ -557,31 +557,31 @@ Android 原生操作系统通常不会干预在后台运行的应用程序，但
 
 ## Realme
 
-On devices running Realme UI 4.0, there are three key configurations to ensure that AdGuard works properly in the background.
+在 Realme UI 4.0 上，有三个关键配置以确保 AdGuard 在后台正常工作。
 
-1. Set up the AdGuard app:
+1. 设置 AdGuard 软件：
 
-    - Long press the AdGuard icon
-    - From the menu that appears, select **App info**
-    - Go to **Battery usage** and enable all options:
-        - Allow background activity
-        - Allow foreground activity
-        - Allow auto launch
-    - In the **App info** section, scroll down and turn off the option **Pause app activity if unused**
+    - 长按 AdGuard 图标
+    - 从弹出的菜单中，选择「**应用程序信息**」
+    - 转到「**电池使用情况**」并启用所有选项：
+        - 允许应用在后台运行
+        - 允许应用在前台运行
+        - 允许自动启动
+    - 在「**应用程序信息**」部分，向下滚动并关闭「**暂停闲置应用的活动**」选项
 
-    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
+    ![始终启用 VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
 
-1. Set up the battery:
+1. 设置电池：
 
-    - Go to **Settings → Battery → More settings → Optimize battery use**
-    - Find AdGuard in the list and enable **Don't optimize**
-    - In **Other settings**, check the **App Quick Freeze** section and disable it for AdGuard
+    - 转到 **「设置」→「电池」→「更多设置」→「优化电池使用」**
+    - 在列表中找到 AdGuard 并启用「**不优化**」
+    - 在「**其他设置**」中，检查「**应用速冻**」部分，禁用它以使用 AdGuard
 
-    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
+    ![始终启用 VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
 
-1. Enable *Always-On VPN* for AdGuard:
+1. 为 AdGuard 启用「*始终启用 VPN*」：
 
-    - Go to **Settings → Connection & sharing → VPN**
-    - Find **AdGuard** and enable the **Always-on VPN** option
+    - 前往**「设置」→「连接与分享」→「VPN」**
+    - 找到 **AdGuard** 并启用「**始终启用 VPN**」选项
 
-    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)
+    ![始终启用 VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)
