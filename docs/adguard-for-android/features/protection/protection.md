@@ -31,7 +31,7 @@ Settings to block annoyances such as cookie consent popups, social widgets, and 
 
 ## DNS protection
 
-Settings for a secure DNS server and DNS filters to block ads, trackers and dangerous websites
+Settings for a secure DNS server and DNS filters to block ads, trackers, and dangerous websites
 
 [DNS protection](/adguard-for-android/features/protection/dns-protection.md)
 
