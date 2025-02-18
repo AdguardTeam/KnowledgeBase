@@ -9,32 +9,32 @@ sidebar_position: 1
 
 :::
 
-## Features
+## 기능
 
-Here are outlined the main features and settings available in AdGuard for Windows.
+다음은 Windows용 AdGuard에서 사용할 수 있는 주요 기능 및 설정에 대한 간략한 설명입니다.
 
-[Features](/adguard-for-windows/features/features.md)
+[기능](/adguard-for-windows/features/features.md)
 
 ## 설치 방법
 
-Here, you’ll find the system requirements along with instructions on how to install and uninstall AdGuard for Windows.
+여기에서 시스템 요구사항과 함께 Windows용 AdGuard 설치 및 제거 방법에 대한 지침을 확인할 수 있습니다.
 
-[Installation](/adguard-for-windows/installation.md)
+[설치](/adguard-for-windows/installation.md)
 
 ## 브라우저 어시스턴트
 
-This article covers a browser extension that complements the desktop program, its installation, and its benefits.
+이 글에서는 데스크톱 프로그램을 보완하는 브라우저 확장 프로그램과 그 설치 및 이점에 대해 설명합니다.
 
-[Browser Assistant](/adguard-for-windows/browser-assistant.md)
+[브라우저 어시스턴트](/adguard-for-windows/browser-assistant.md)
 
-## Solving problems
+## 문제 해결
 
-This section includes various articles addressing known issues and possible solutions.
+이 섹션에는 알려진 문제와 가능한 해결책을 다루는 다양한 글이 포함되어 있습니다.
 
-[Solving problems](/adguard-for-windows/solving-problems/solving-problems.md)
+[문제 해결](/adguard-for-windows/solving-problems/solving-problems.md)
 
 ## 관리자를 위한 문서
 
-This page provides details about AdGuard’s central management of policies and preferences.
+이 페이지에서 AdGuard의 정책 및 기본 설정 중앙 관리에 대한 자세한 내용을 확인할 수 있습니다.
 
-[Documentation for admins](/adguard-for-windows/admins-documentation.md)
+[관리자를 위한 문서](/adguard-for-windows/admins-documentation.md)

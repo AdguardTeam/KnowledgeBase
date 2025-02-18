@@ -11,26 +11,40 @@ Pro váš AdGuard účet doporučujeme nastavit dvoufaktorové ověřování. Ne
 
 ## Jak to nastavit
 
-1. Přihlaste se ke svému [AdGuard účtu](https://auth.adguard.com/login.html) a přejděte na kartu Nastavení:
+1. Přihlaste se ke svému [AdGuard účtu](https://auth.adguard.com/login.html) a přejděte na kartu *Nastavení*:
 
-![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
+ ![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Přejděte dolů do části *Heslo a 2FA* a klikněte na **Zapnout**:
+1. Přejděte dolů na položku *Dvoufázové ověřování* a povolte ji:
 
-![The Change button *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
+ ![Two-factor authentication toggle *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. Podle pokynů na obrazovce nainstalujte autentizační aplikaci a naskenujte QR kód:
+1. Kód bude odeslán na e-mailovou adresu spojenou s vaším AdGuard účtem. Chcete-li povolit 2FA, zadejte kód a klikněte na *Povolit*.
 
-![The verification code](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
+ ![The verification code *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-***Důležité***
+Po povolení dvoufázového ověřování máte na výběr ze dvou možností:
 
-- Uložte si někam záložní kód pro ověření, který bude potřebný pro obnovení účtu v případě ztráty nebo krádeže mobilního telefonu;
+- *Jednorázový e-mailový kód*: při přihlášení vás požádáme o zadání kódu, který jsme vám odeslali na e-mail
+
+- *Kód z aplikace pro oveřování*: při přihlášení vás požádáme o kód z vaší aplikace pro ověřování
+
+![The Change button *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
+
+:::note
+
+Pokud používáte aplikaci pro ověřování, nezapomeňte si někam uložit **klíč nastavení**. V případě ztráty nebo krádeže mobilního telefonu je nutné obnovit účet.
+
+![The setup key in the authenticator app *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
+
+:::
 
 Pokud je vše provedeno správně, zobrazí se tato informace při příštím přihlášení k účtu:
 
-![The result *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+![The result *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
 
-K přečtení kódu a jeho zadání použijte mobilní ověřovací aplikaci. Nyní byste měli být přihlášeni!
+:::note
 
-***POZNÁMKA***: pokud se zobrazí chyba ověření, zkontrolujte hodiny na telefonu. V případě potřeby nastavte čas, protože příčinou chyby mohou být nesynchronizované hodiny.
+Pokud se zobrazí chyba ověření, zkontrolujte hodiny na telefonu. V případě potřeby nastavte čas, protože příčinou chyby mohou být nesynchronizované hodiny.
+
+:::

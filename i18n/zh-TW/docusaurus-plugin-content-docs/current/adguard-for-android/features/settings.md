@@ -57,7 +57,7 @@ If you activate too many filters, some websites may work incorrectly.
 
 [Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
 
-### Userscripts
+### 使用者腳本
 
 Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
 
@@ -139,7 +139,7 @@ In this section, you can find information about your license and manage it:
 
 ![License screen \*mobile\_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
-## Support
+## 支援
 
 Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting _[FAQ](https://adguard.com/support/adguard_for_android.html)_ or this knowledge base before contacting support.
 

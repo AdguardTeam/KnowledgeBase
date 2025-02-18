@@ -5,7 +5,7 @@ toc_min_heading_level: 2
 toc_max_heading_level: 4
 ---
 
-Last update: September 17, 2024
+Dernière mise à jour : 17 septembre 2024
 
 La compréhension de cet article peut nécessiter des connaissances de base sur le chiffrement, TLS et HTTPS.
 
@@ -32,38 +32,38 @@ Tous les problèmes que nous connaissons et les dates de résolution estimées s
 
 L'inconvénient le plus important du mécanisme de filtrage HTTPS est qu'il cache le véritable certificat d'un site web. Vous ne pouvez pas simplement vérifier son certificat d'origine car vous ne pouvez voir que celui émis par AdGuard.
 
-This problem can be solved in 2 ways:
+Ce problème peut être résolu de 2 manières :
 
-- By using our [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). This browser extension helps you manage filtering directly from the browser and allows you to inspect the original certificate of any website
+- En utilisant notre [Assistant de navigateur](https://adguard.com/adguard-assistant/overview.html). Cette extension de navigateur vous aide à gérer le filtrage directement à partir du navigateur et vous permet d'inspecter le certificat d’origine de n'importe quel site Web
 
-  ![Certificate Browser Assistant *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-browser.png)
+  ![Certificat Assistant de navigateur AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-browser.png)
 
-- By visiting the *Recent activity* section in AdGuard for Android or the *Filtering log* section in AdGuard for Windows and AdGuard for Mac. While in the Browser Assistant you can only see the certificate of the website, in Recent activity you can inspect the certificate of any server used in a subrequest or browser, with or without the Browser Assistant. To view the certificate using this method, follow the instructions below.
+- En visitant la section *Activité récente* dans AdGuard pour Android ou la section *Journal de filtrage* dans AdGuard pour Windows et AdGuard pour Mac. Alors que dans l'Assistant du navigateur, vous ne pouvez voir que le certificat du site Web, dans l'Activité récente, vous pouvez inspecter le certificat de tout serveur utilisé dans une sous-requête ou un navigateur, avec ou sans l'Assistant du navigateur. Pour voir le certificat en utilisant cette méthode, suivez les instructions ci-dessous.
 
-#### Inspect original certificate in AdGuard for Android
+#### Inspection du certificat d’origine dans AdGuard pour Android
 
-1. Click the Statistics icon on the navigation bar.
-2. Go to *Recent activity*.
-3. Click the request whose certificate you want to inspect to open the request details.
-4. Scroll down to *Original certificate*. Click for more info.
+1. Cliquez sur l'icône Statistiques dans la barre de navigation.
+2. Accédez à l'*Activité récente*.
+3. Cliquez sur la requête dont vous souhaitez inspecter le certificat pour ouvrir les détails de la requête.
+4. Faites défiler vers le bas jusqu'au *Certificat d’origine*. Appuyez pour plus d'infos.
 
-![Recent activity AdGuard for Android *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-android.png)
+![Activité récente AdGuard pour Android *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-android.png)
 
-#### Inspect original certificate in AdGuard for Windows
+#### Inspection du certificat d’origine dans AdGuard pour Windows
 
-1. Go to *Settings* → *Ad Blocker* → *Filtering log*.
-2. Click the request whose certificate you want to inspect to open the request details.
-3. Under the *TLS* section, click *View website certificate*.
+1. Allez dans les *Paramètres* → *Bloqueur de publicités* → *Journal de filtrage*.
+2. Cliquez sur la requête dont vous souhaitez inspecter le certificat pour ouvrir les détails de la requête.
+3. Sous la section *TLS*, cliquez sur *Afficher le certificat du site Web*.
 
-![Filtering log AdGuard for Windows *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-win.png)
+![Journal de filtrage AdGuard pour Windows *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-win.png)
 
-#### Inspect original certificate in AdGuard for macOS
+#### Inspection du certificat d’origine dans AdGuard pour macOS
 
-1. Click the gear icon. In the drop-down menu, go to *Advanced* → *Filtering log...*.
-2. Click the request whose certificate you want to inspect to open the request details.
-3. Click *View certificate*.
+1. Cliquez sur l'icône de l'engrenage. Dans le menu déroulant, allez dans *Avancés* → *Journal de filtrage...*.
+2. Cliquez sur la requête dont vous souhaitez inspecter le certificat pour ouvrir les détails de la requête.
+3. Cliquez sur *Afficher le certificat*.
 
-![Filtering log AdGuard for Mac *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-mac.png)
+![Journal de filtrage AdGuard pour Mac *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-mac.png)
 
 ### Transparence des certificats
 

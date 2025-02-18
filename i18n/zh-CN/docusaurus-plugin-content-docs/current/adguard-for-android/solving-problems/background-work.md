@@ -554,3 +554,34 @@ Android 原生操作系统通常不会干预在后台运行的应用程序，但
 - 设置「**始终在线 VPN**」模式
 
     ![Stockadguard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)
+
+## Realme
+
+在 Realme UI 4.0 上，有三个关键配置以确保 AdGuard 在后台正常工作。
+
+1. 设置 AdGuard 软件：
+
+    - 长按 AdGuard 图标
+    - 从弹出的菜单中，选择「**应用程序信息**」
+    - 转到「**电池使用情况**」并启用所有选项：
+        - 允许应用在后台运行
+        - 允许应用在前台运行
+        - 允许自动启动
+    - 在「**应用程序信息**」部分，向下滚动并关闭「**暂停闲置应用的活动**」选项
+
+    ![始终启用 VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
+
+1. 设置电池：
+
+    - 转到 **「设置」→「电池」→「更多设置」→「优化电池使用」**
+    - 在列表中找到 AdGuard 并启用「**不优化**」
+    - 在「**其他设置**」中，检查「**应用速冻**」部分，禁用它以使用 AdGuard
+
+    ![始终启用 VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
+
+1. 为 AdGuard 启用「*始终启用 VPN*」：
+
+    - 前往**「设置」→「连接与分享」→「VPN」**
+    - 找到 **AdGuard** 并启用「**始终启用 VPN**」选项
+
+    ![始终启用 VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)

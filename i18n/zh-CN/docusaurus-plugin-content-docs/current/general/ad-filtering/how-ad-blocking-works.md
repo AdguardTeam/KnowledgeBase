@@ -31,7 +31,7 @@ AdGuard 有众多广告拦截服务以适用于各种平台且各产品都有独
 
 AdGuard 用户[可以访问专门的网络报告工具](https://reports.adguard.com/new_issue.html)。 归功于用户的报告，过滤器开发者才可致力于他们的过滤器列表维护且不用刷网页寻找那些新旧未拦截的广告。
 
-过滤器不仅可拦截广告，还能做更多。 There are filters that block tracking, social media widgets, and annoyances, such as cookie notices. 不同的用户可以选择不同的过滤器组合以匹配个人首选。 不少网站，如 [filterlists.com](https://filterlists.com/)，有专门的过滤器列表和巨大的数据库。
+过滤器不仅可拦截广告，还能做更多。 过滤器还可以拦截跟踪器，社交媒体小工具及其他烦人的元素，如 Cookie 通知。 不同的用户可以选择不同的过滤器组合以匹配个人首选。 不少网站，如 [filterlists.com](https://filterlists.com/)，有专门的过滤器列表和巨大的数据库。
 
 我们开发并维护[自己的过滤器列表集合](../adguard-filters)以供 AdGuard 或其它广告拦截器使用。
 
@@ -63,31 +63,31 @@ AdGuard 用户[可以访问专门的网络报告工具](https://reports.adguard.
 
 :::
 
-## Types of request handling in AdGuard
+## AdGuard 请求处理的类型
 
-AdGuard handles requests according to filters, user rules and settings enabled by the user. As a result, a request can be blocked, modified, allowed or, when nothing is done to it, just processed.
+AdGuard 根据用户启用的过滤器、用户规则和设置处理请求。 因此，请求可以被拦截、修改、允许，或者在没有进行任何操作时，只需处理请求。
 
-Detailed information on how each request of yours has been handled by AdGuard can be found in the *Filtering log* (AdGuard for Windows, AdGuard for Mac, AdGuard Browser Extension) or *Recent activity* (AdGuard for iOS, AdGuard for Android).
+有关 AdGuard 如何处理每个请求的详细信息，可在 *过滤日志* （Windows 版 AdGuard、Mac 版 AdGuard、AdGuard 浏览器扩展）或 *最近活动* （iOS 版 AdGuard、Android 版 AdGuard）中找到。
 
-Regarding AdGuard filters, you can also check [our filter policy](../filter-policy), which describes in detail what and why each of our filters blocks.
+关于 AdGuard 过滤器，用户还可以查看[我们的过滤政策](../filter-policy)，该政策详细描述我们的每个过滤器阻止的内容及其原因。
 
-### Examples of blocked requests
+### 已拦截请求示例
 
-AdGuard DNS filter blocks requests to ad domains, such as `ad.doubleclick.net`.
+AdGuard DNS 过滤拦截对广告域名的请求，例如 `ad.doubleclick.net`。
 
-AdGuard Tracking Protection filter blocks tracking requests, such as `youtube.com/youtubei/log_event?`.
+AdGuard 防跟踪保护过滤拦截跟踪请求，例如 `youtube.com/youtubei/log_event?`。
 
-### Examples of allowed requests
+### 已允许请求示例
 
-AdGuard Base filter allows non-ad requests, such as `www.google.com/complete/search?q=`.
+AdGuard 基础过滤器允许非广告请求，例如 `www.google.com/complete/search?q=`。
 
-Filter unblocking search ads and self-promotion allows requests to search ad-related domains, such as `www.google.com/aclk?`.
+过滤解除对搜索广告和自我推销的屏蔽，允许请求搜索与广告相关的域名，如 `www.google.com/aclk?`。
 
-Requests to websites that are added by the user to *Allowlist* are allowed.
+用户添加到「*白名单*」的网站请求是允许的。
 
-### Examples of modified requests
+### 已修改请求示例
 
-Tracking protection feature with protection level set to *High* enables AdGuard URL Tracking filter which modifies requests by removing tracking parameters from them:
+保护级别设置为「*高*」的跟踪保护功能可以启用 AdGuard URL 跟踪过滤器，该过滤器通删除请求中的跟踪参数以修改请求：
 
 `https://www.rentio.jp/products/ax-n1b?click_from=top_newitems` → `https://www.rentio.jp/products/ax-n1b`
 
@@ -95,7 +95,7 @@ Tracking protection feature with protection level set to *High* enables AdGuard 
 
 `https://www.gog.com/game/spec_ops_the_line?pp=2863d7ae605104eeef364e3f164d3404e20f680c&gad_source=1` → `https://www.gog.com/game/spec_ops_the_line`
 
-Please note that *modified* events you see in the Filtering log or Recent activity refer not only to the cases when a request is modified, but also when:
+请注意，在过滤日志或近期活动中看到的*修改的*事件不仅指请求被修改的情况，还包括以下情况：
 
-- something on the page is changed (usually by cosmetic rules)
-- the response is modified
+- 网页上的某些内容发生了变化（通常是指外观规则）
+- 响应已修改成功

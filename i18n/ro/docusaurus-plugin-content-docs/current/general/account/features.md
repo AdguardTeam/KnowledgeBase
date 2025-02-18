@@ -1,5 +1,5 @@
 ---
-title: Ce se poate face în contul AdGuard
+title: What can be done in the AdGuard account
 sidebar_position: 2
 ---
 
@@ -7,14 +7,14 @@ sidebar_position: 2
 
 ## Gestionați setările contului
 
-În secțiunea *Setări* a contului dumneavoastră AdGuard, puteți actualiza sau reseta parola, schimba adresa de e-mail, activa [autentificarea cu doi factori](../2fa), vizualiza datele stocate despre dumneavoastră de către AdGuard și alege limba contului personal și notificărilor.
+In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable one-time code login or [two-factor authentication](../2fa), view the data stored about you by AdGuard, and select the language of your account and notifications.
 
 În această secțiune, puteți gestiona și preferințele dumneavoastră de e-mail:
 
-- primiți e-mailuri tranzacționale,
-- primiți buletine informative lunare de la AdGuard,
-- primiți e-mailuri despre oferte speciale și promoții de la AdGuard,
-- trimiteți confirmări de citire către AdGuard atunci când deschideți e-mailuri.
+- Receive AdGuard newsletter
+- Receive transactional emails
+- Send read receipts to AdGuard
+- Opt-out preferences
 
 ## Gestionați licențele
 
@@ -27,12 +27,12 @@ sidebar_position: 2
 - upgraded,
 - anulat. De asemenea, puteți actualiza detaliile de plată.
 
-Dispozitivele legate de licențele dumneavoastră AdGuard Ad Blocker pot fi dezlegate sau redenumite. Puteți dezlega dispozitivele nefolosite făcând clic pe iconița încrucișată de lângă ele.
+Dispozitivele legate de licențele dumneavoastră AdGuard Ad Blocker pot fi dezlegate sau redenumite. To unbind unused devices, click the number of bound devices next to *Devices*, then select the right arrow → *Remove*.
 
 ## Vizualizați achizițiile
 
-Secțiunea istoric de achiziții afișează toate licențele pe care le-ați achiziționat vreodată folosind contul de e-mail cu care v-ați înregistrat contul AdGuard. De asemenea, veți găsi informații despre data achiziției, ID-ul comenzii, metoda de plată și costul achiziției.
+The *Purchases* section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. De asemenea, veți găsi informații despre data achiziției, ID-ul comenzii, metoda de plată și costul achiziției.
 
-## Contactați suportul
+## Activity
 
-Tab-ul Suport conține linkuri utile pentru a vă ajuta să rezolvați problemele sau să găsiți răspunsuri la întrebările dumneavoastră despre produsele AdGuard. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge Base, and Discuss.
+The *Activity* tab allows you to monitor login activity for your AdGuard account. It displays the email address used, location, and login date. You can also filter records by product: *All products*, *AdGuard Ad Blocker*, *AdGuard VPN*, *AdGuard DNS*.

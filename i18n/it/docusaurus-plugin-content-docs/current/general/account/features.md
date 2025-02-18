@@ -11,10 +11,10 @@ Nella sezione delle *Impostazioni* del tuo profilo di AdGuard, puoi aggiornare o
 
 In questa sezione, puoi anche gestire le tue preferenze email:
 
-- ricevi le email transazionali,
-- ricevi le newsletter mensili di AdGuard,
-- ricevi le email su offerte speciali e promozioni di AdGuard,
-- invia le conferme di lettura ad AdGuard quando apri le email.
+- Ricevi la newsletter di AdGuard
+- Ricevi le email transazionali
+- Invia conferme di lettura ad AdGuard
+- Preferenze di opt-out
 
 ## Gestione delle licenze
 
@@ -27,12 +27,12 @@ Le [licenze di AdGuard](../../license/what-is) possono essere:
 - aggiornate,
 - annullate. Inoltre, puoi aggiornare i tuoi dettagli di pagamento.
 
-I dispositivi collegati alle tue licenze di AdGuard Ad Blocker sono collegabili o scollegabili. Puoi scollegare i dispositivi inutilizzati, cliccando sull'icona della croce affianco a essi.
+I dispositivi collegati alle tue licenze di AdGuard Ad Blocker sono collegabili o scollegabili. Per dissociare i dispositivi non utilizzati, fai clic sul numero di dispositivi legati accanto a *Dispositivi*, quindi seleziona la freccia destra → *Elimina*.
 
 ## Visualizza gli acquisti
 
-La sezione dello Storico degli acquisti mostra tutte le licenze mai acquistate utilizzando il profilo email registrato con il tuo profilo di AdGuard. Troverai lì tutte le informazioni sulla data d'acquisto, ID dell'ordine, metodo di pagamento e costo dell'acquisto.
+La sezione *Acquisti* mostra tutte le licenze mai acquistate utilizzando l'e-mail registrata con il tuo profilo di AdGuard. Troverai lì tutte le informazioni sulla data d'acquisto, ID dell'ordine, metodo di pagamento e costo dell'acquisto.
 
-## Contattare il supporto
+## Attività
 
-La scheda del Supporto contiene i link utili per aiutarti a risolvere problemi e trovare risposte alle tue domande sui prodotti di AdGuard. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge Base, and Discuss.
+La scheda *Attività* consente di monitorare l'attività di accesso al tuo account AdGuard. Viene visualizzato l'indirizzo e-mail utilizzato, la posizione e la data di accesso. Puoi anche filtrare i record per prodotto: *Tutti i prodotti*, *AdGuard Ad Blocker*, *AdGuard VPN*, *AdGuard DNS*.

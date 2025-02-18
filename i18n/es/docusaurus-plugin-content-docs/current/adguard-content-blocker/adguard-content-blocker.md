@@ -13,6 +13,6 @@ Este artículo trata sobre el bloqueador de contenido AdGuard, que solo protege 
 
 [Features overview](/adguard-content-blocker/overview.md)
 
-## Installation
+## Instalación
 
 [Installation](/adguard-content-blocker/installation.md)

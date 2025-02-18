@@ -21,6 +21,12 @@ Ein Konto kann auch direkt in einer AdGuard-App erstellt werden. Klicken Sie auf
 
 Nachdem das Konto erstellt wurde, aktivieren Sie es, indem Sie dem Link in der Aktivierungs-E-Mail folgen.
 
+:::tip
+
+Nachdem Sie Ihr Konto registriert haben, können Sie sich mit der Option *Einmaliger Code* bei der App anmelden. Geben Sie Ihre E-Mail-Adresse ein und wählen Sie, ob Sie Ihr Passwort oder den an Ihre E-Mail-Adresse gesendeten Code eingeben möchten.
+
+:::
+
 ## So erstellen Sie ein Konto über soziale Netzwerke
 
-Um ein Konto über ein soziales Netzwerk zu erstellen, folgen Sie einfach dem [Link](https://auth.adguard.com/login.html) und melden Sie sich bei Ihrem Konto an. Sobald Sie sich angemeldet haben, überprüfen Sie Ihren Posteingang — Sie erhalten eine Bestätigungs-E-Mail. Legen Sie ein Passwort fest und das war's! Jetzt können Sie alle [Funktionen des AdGuard-Kontos](https://adguard.com/kb/general/account/features/) nutzen.
+Um ein Konto über ein soziales Netzwerk zu erstellen, folgen Sie einfach dem [Link](https://auth.adguard.com/login.html) und melden Sie sich bei Ihrem Konto an. Sobald Sie sich angemeldet haben, prüfen Sie Ihren Posteingang. Sie erhalten eine Bestätigungs-E-Mail. Legen Sie ein Passwort fest und das war's! Jetzt können Sie alle [Funktionen des AdGuard-Kontos](https://adguard.com/kb/general/account/features/) nutzen.

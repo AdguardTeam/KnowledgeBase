@@ -1,34 +1,46 @@
 ---
-title: Testarea beta AdGuard
+title: AdGuard beta/nightly testing
 sidebar_position: 1
 ---
 
-Există o aplicație AdGuard pentru practic fiecare platformă majoră disponibilă și lansăm actualizări pentru toate acestea în mod regulat. Acest lucru nu ar fi fost posibil fără testarea beta și, mai important, fără testeri beta. Vrei să devii unul? Iată cum poți face asta.
+Există o aplicație AdGuard pentru practic fiecare platformă majoră disponibilă și lansăm actualizări pentru toate acestea în mod regulat. This would not be possible without beta and nightly testing and, more importantly, without our testers. Want to become one of them? Here’s how you can do it.
 
-## Cum să deveniți un tester beta {#intro}
+### Beta or nightly: what is the difference?
 
-Cerințele noastre sunt ușor de îndeplinit: folosiți AdGuard, actualizați la versiunea beta când devine disponibilă și raportați orice erori pe care le observați. However, you will need a [GitHub](https://github.com/) account to become our beta tester, so you may want to get that out of the way first.
+Both beta and nightly testing are important to make AdGuard constantly better. However, they are different, and you can choose the one that suits you more.
 
-În orice caz, fiecare detaliu de care trebuie să știți este adunat pe o [pagină dedicată](https://adguard.com/beta.html).
+The development process follows a progression from nightly to beta and then from beta to the final, stable version — release. It means that you are more likely to find bugs in nightly builds, but you get access to new features faster, almost on a daily basis. Betas are more stable, but you will get updates less often.
 
-Dacă doriți să ocoliți partea de descriere și să ajungeți direct la acțiune, puteți aplica [aici](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1-3 working days, and you'll get a reply via email.
+## How to become a beta or nightly tester {#intro}
+
+Our requirements are easy: use AdGuard, upgrade to the beta/nightly version when it becomes available, and report any bugs you notice. You will need a [GitHub](https://github.com/) account to become our tester, so you may want to get that out of the way first.
+
+You will also need the device on which you will install the app and [the link to the the beta testing page](https://adguard.com/beta.html). There you will find more information on how to join our program and test AdGuard for Windows, Mac, Android, and iOS.
+
+If you want to skip the description part and get straight to the action, you can apply [here](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1-3 working days, and you'll get a reply via email.
+
+:::note
+
+To get the AdGuard for iOS beta or nightly build, first you have to install [Testflight](https://apps.apple.com/app/testflight/id899247664) on your iOS device.
+
+:::
 
 ## Cum să raportați o eroare {#report-a-bug}
 
-Dacă ați observat o eroare sau pur și simplu doriți să împărtășiți sugestia dumneavoastră, anunțați-ne: mergeți pe [GitHub](https://github.com/AdguardTeam/), găsiți un repozitoriu potrivit, creați o problemă nouă acolo și descrieți eroarea/cererea de caracteristici în detaliu.
+If you spotted a bug or just want to share your suggestion, let us know: go to [GitHub](https://github.com/AdguardTeam/), find a suitable repository, create a new issue there, and describe the bug/feature request in detail.
 
-Metoda de mai sus este cea mai preferată, dar puteți folosi altele dacă este necesar:
+The above method is the most preferred, but you can use others if necessary:
 
 - Găsiți-ne pe diverse platforme de socializare, cum ar fi [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. Cu toate acestea, aceasta nu este cea mai convenabilă modalitate de a discuta probleme tehnice.
 
 - Trimiteți un e-mail echipei noastre de suport din fila de Suport din aplicație sau scrieți direct la [support@adguard.com](mailto:support@adguard.com).
 
-## Cum să activați cheia beta în aplicația iOS {#ios}
+## How to activate a beta/nightly key in the iOS app {#ios}
 
-Dacă ați primit deja o cheie beta și este listată în contul dumneavoastră `adguard.com`, mergeți la aplicație și deschideți secțiunea de licență (Obțineți Premium). Odată ajunși acolo, introduceți acreditivele din contul dumneavoastră AdGuard. După aceea, funcțiile premium vor deveni disponibile automat.
+If you have already received a beta key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Once there, enter the credentials from your AdGuard account. After that, the premium features will become available automatically.
 
-### Ce altceva?
+### What else?
 
-There is not much more to add. Nu trebuie să depuneți eforturi suplimentare pentru a găsi erori. Puteți continua să utilizați AdGuard ca de obicei. Cu toate acestea, dacă întâlniți o eroare, vă rugăm să o raportați. Desigur, apreciem orice efort suplimentar.
+There is not much more to add. You don't have to go out of your way to find bugs. You can continue using AdGuard as usual. However, if you encounter a bug, please report it. Of course, we appreciate any additional effort.
 
-Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta (in case you missed them) and other important news. Vă puteți dezabona oricând.
+Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta (in case you missed them) and other important news. You can unsubscribe from it at any time.

@@ -7,9 +7,9 @@ sidebar_position: 5
 
 ## 1. 下载 MSI 分发包 {#msi-download}
 
-下载 [AdGuard MSI x86](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi)
+Download the [AdGuard MSI x86](https://static.adguard.com/windows/setup86.msi)
 
-下载 [AdGuard MSI x64](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
+Download the [AdGuard MSI x64](https://static.adguard.com/windows/setup64.msi)
 
 ## 2. 配置网络设置 {#settings-configuring}
 
