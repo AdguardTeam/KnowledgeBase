@@ -17,7 +17,7 @@ Main features and settings available in AdGuard for Android
 
 ## Installation
 
-Instructions on how to install and uninstall AdGuard for Android, as well as system requirements
+Installation, removal, and system requirements for AdGuard for Android
 
 [Installation](/adguard-for-android/installation.md)
 
