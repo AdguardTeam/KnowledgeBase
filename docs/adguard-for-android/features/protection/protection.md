@@ -43,6 +43,6 @@ A feature that allows you to control Internet access for individual apps
 
 ## Browsing security
 
-Feature that blocks access to malicious and phishing websites and protects you from online threats
+A feature that blocks access to malicious and phishing websites and protects you from online threats
 
 [Browsing security](/adguard-for-android/features/protection/browsing-security.md)
