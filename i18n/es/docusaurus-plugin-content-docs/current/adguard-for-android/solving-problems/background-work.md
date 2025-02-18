@@ -557,31 +557,31 @@ El sistema operativo Android estándar normalmente no entra en conflicto con las
 
 ## Realme
 
-On devices running Realme UI 4.0, there are three key configurations to ensure that AdGuard works properly in the background.
+En los dispositivos que ejecutan Realme UI 4.0, hay tres configuraciones clave para garantizar que AdGuard funcione correctamente en segundo plano.
 
-1. Set up the AdGuard app:
+1. Configuración de la app AdGuard:
 
-    - Long press the AdGuard icon
-    - From the menu that appears, select **App info**
-    - Go to **Battery usage** and enable all options:
-        - Allow background activity
-        - Allow foreground activity
-        - Allow auto launch
-    - In the **App info** section, scroll down and turn off the option **Pause app activity if unused**
+    - Mantén presionado el icono de AdGuard
+    - Del menú que aparece, selecciona **Información de la app**
+    - Ve a **Uso de batería** y habilita todas las opciones:
+        - Permite el funcionamiento en segundo plano
+        - Permite la actividad en primer plano
+        - Permite el inicio automático
+    - En la sección **Información de la app**, desplázate hacia abajo y desactiva la opción **Pausar la actividad de la app si no se utiliza**
 
-    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
+    ![VPN siempre activa *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
 
-1. Set up the battery:
+1. Configura la batería:
 
-    - Go to **Settings → Battery → More settings → Optimize battery use**
-    - Find AdGuard in the list and enable **Don't optimize**
-    - In **Other settings**, check the **App Quick Freeze** section and disable it for AdGuard
+    - Ve a **Configuración → Batería → Más configuraciones → Optimizar el uso de la batería**
+    - Encuentra AdGuard en la lista y habilita **No optimizar**
+    - En **Otra configuración**, verifica la sección **App Quick Freeze** y deshabilítala para AdGuard
 
-    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
+    ![VPN siempre activa *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
 
-1. Enable *Always-On VPN* for AdGuard:
+1. Habilita *VPN siempre activa* para AdGuard:
 
-    - Go to **Settings → Connection & sharing → VPN**
-    - Find **AdGuard** and enable the **Always-on VPN** option
+    - Ve a **Configuración → Compartir & conexión → VPN**
+    - Encuentra **AdGuard** y habilita la opción **VPN siempre activa**
 
-    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)
+    ![VPN siempre activa *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)

@@ -1,5 +1,5 @@
 ---
-title: Features
+title: Funzioni
 sidebar_position: 1
 ---
 
@@ -21,7 +21,7 @@ AdGuard for Android offers app management features that allow you to control how
 
 [App management](/adguard-for-android/features/app-management.md)
 
-## Statistics
+## Statistiche
 
 Detailed statistics on blocked ads, trackers, and saved traffic that allows us to monitor the app’s performance and protection efficiency over time.
 
@@ -29,30 +29,30 @@ Detailed statistics on blocked ads, trackers, and saved traffic that allows us t
 
 ## Impostazioni
 
-Information about customizing settings so you can adjust ad blocking, privacy, and DNS settings to suit your needs.
+Informazioni sulla personalizzazione delle impostazioni in modo da poter regolare l'inserzione, la riservatezza e le impostazioni DNS in base alle tue esigenze.
 
-[Settings](/adguard-for-android/features/settings.md)
+[Impostazioni](/adguard-for-android/features/settings.md)
 
 ## Assistant
 
-Information about a tool that lets you quickly change app or website settings and view statistics without opening the AdGuard interface.
+Informazioni su uno strumento che ti consente di modificare rapidamente le impostazioni dell'app o del sito web e vedere le statistiche senza aprire l'interfaccia di AdGuard.
 
 [Assistant](/adguard-for-android/features/assistant.md)
 
-## Free vs. full version
+## Versione gratuita e versione completa
 
-Comparison of features between the free and paid versions.
+Confronto delle caratteristiche tra la versione gratuita e quella a pagamento.
 
-[Free vs. full version](/adguard-for-android/features/free-vs-full.mdx)
+[Versione gratuita e versione completa](/adguard-for-android/features/free-vs-full.mdx)
 
-## Integration with AdGuard VPN
+## Integrazione con AdGuard VPN
 
-Information on how the app integrates with VPN services, allowing you to run both AdGuard and AdGuard VPN at the same time without conflict, ensuring ad blocking and privacy protection along with VPN functionality.
+Informazioni su come l'app si integra con i servizi VPN, consentendo di usare sia AdGuard che AdGuard VPN contemporaneamente senza conflitti, garantendo il blocco delle inserzioni e la protezione della riservatezza accanto alla funzionalità VPN.
 
-[Integration with AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
+[Integrazione con AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
 
-## Rooted devices
+## Dispositivi rootati
 
-AdGuard for Android on rooted devices offers advanced features like HTTPS filtering without a certificate installation, automatic ad blocking in apps, and deeper system-wide protection.
+AdGuard per Android sui dispositivi rootati offre funzionalità avanzate come il filtraggio HTTPS senza installazione di certificati, il blocco automatico delle inserzioni nelle app e una protezione più approfondita dell'intero sistema.
 
-[Rooted devices](/adguard-for-android/features/rooted.md)
+[Dispositivi rootati](/adguard-for-android/features/rooted.md)

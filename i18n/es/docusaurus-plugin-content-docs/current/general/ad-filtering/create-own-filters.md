@@ -399,14 +399,14 @@ The following modifiers are the most simple and frequently used. Basically, they
 | [$strict-first-party](#strict-first-party-modifier) |                   ⏳                   |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                     ❌                     |
 | [$strict-third-party](#strict-third-party-modifier) |                   ⏳                   |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                     ❌                     |
 | [$third-party](#third-party-modifier)               |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                     ✅                     |
-| [$to](#to-modifier)                                 |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ❌                    |                   ❌                    |                     ❌                     |
+| [✅](#to-modifier)                                   |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ❌                    |                   ❌                    |                     ❌                     |
 
 :::note
 
-- ✅ — fully supported
-- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- ⏳ — feature that is planned to be implemented but is not yet available in any product
-- ❌ — not supported
+- ✅ — totalmente compatible
+- ✅ * — compatible, pero la confiabilidad puede variar o pueden ocurrir limitaciones; verifica la descripción del modificador para más detalles
+- ⏳ — funcionalidad que se planea implementar pero que aún no está disponible en ningún producto
+- ❌ — no compatible
 
 :::
 
@@ -430,7 +430,7 @@ If you want the rule not to be applied to certain apps, start the app name with 
 - `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask and are sent from any app except for the `org.example.app`.
 - `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
-:::caution Restrictions
+:::caution Restricciones
 
 Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`. Rules with such modifier are considered invalid.
 
@@ -449,21 +449,21 @@ Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`. Rule
 
 Adding this modifier to a rule is equivalent to excluding the domains by the rule's matching pattern or to adding the corresponding exclusion rules. To add multiple domains to one rule, use the `|` character as a separator.
 
-**Examples**
+**Ejemplos**
 
-This rule:
+Esta regla:
 
 ```adblock
 *$script,domain=a.com|b.com,denyallow=x.com|y.com
 ```
 
-is equivalent to this one:
+equivale a esto:
 
 ```adblock
 /^(?!.*(x.com|y.com)).*$/$script,domain=a.com|b.com
 ```
 
-or to the combination of these three:
+o a la combinación de estos tres:
 
 ```adblock
 *$script,domain=a.com|b.com
@@ -471,19 +471,19 @@ or to the combination of these three:
 @@||y.com$script,domain=a.com|b.com
 ```
 
-:::caution Restrictions
+:::caution Restricciones
 
-- The rule's matching pattern cannot target any specific domains, e.g. it cannot start with `||`.
-- Domains in the modifier value cannot be negated, e.g. `$denyallow=~x.com`, or have a wildcard TLD, e.g. `$denyallow=x.*`, or be a regular expression, e.g. `$denyallow=/\.(com\|org)/`.
-- `$denyallow` cannot be used together with [`$to`](#to-modifier). It can be expressed with inverted `$to`: `$denyallow=a.com|b.com` is equivalent to `$to=~a.com|~b.com`.
+- El patrón de coincidencia de la regla no puede dirigirse a ningún dominio específico, por ejemplo, no puede comenzar con `||`.
+- Los dominios en el valor del modificador no pueden ser negados, por ejemplo, `$denyallow=~x.com`, o tener un TLD comodín, por ejemplo, `$denyallow=x.*`, o ser una expresión regular, por ejemplo, `$denyallow=/\.(com\|org)/`.
+- `$denyallow` no se puede usar junto con [`$to`](#to-modifier). Se puede expresar con `$to` invertido: `$denyallow=a.com|b.com` es equivalente a `$to=~a.com|~b.com`.
 
-The rules which violate these restrictions are considered invalid.
+Las reglas que violen estas restricciones se consideran inválidas.
 
 :::
 
-:::info Compatibility
+:::info Compatibilidad
 
-Rules with `$denyallow` modifier are not supported by AdGuard for iOS, Safari, and AdGuard Content Blocker.
+Las reglas con el modificador `$denyallow` no son compatibles con AdGuard para iOS, Safari y el Bloqueador de contenido AdGuard.
 
 :::
 
@@ -491,9 +491,9 @@ Rules with `$denyallow` modifier are not supported by AdGuard for iOS, Safari, a
 
 `$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header).
 
-**Syntax**
+**Sintaxis**
 
-The modifier is a list of one or more expressions separated by the `|` symbol, each of which is matched against a domain in a particular way depending on its type (see below).
+El modificador es una lista de una o más expresiones separadas por el símbolo `|`, cada una de las cuales se empareja con un dominio de una manera particular dependiendo de su tipo (ver más abajo).
 
 ```text
 domains = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
@@ -535,7 +535,7 @@ In some cases the `$domain` modifier can match not only the referrer domain, but
 1. The request has the `document` content type
 1. The rule pattern does not match any particular domains
 1. The rule pattern does not contain regular expressions
-1. The `$domain` modifier contains only excluded domains, e.g. `$domain=~example.org|~example.com`
+1. El modificador `$domain` contiene solo dominios excluidos, p. ej. `$domain=~example.org|~example.com`
 
 The following predicate should be satisfied to perform a target domain matching:
 
@@ -571,7 +571,7 @@ In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries are 
 
 :::
 
-:::caution Restrictions
+:::caution Restricciones
 
 Safari does not support the simultaneous use of allowed and disallowed domains, so rules like `||baddomain.com^$domain=example.org|~foo.example.org` will not work in AdGuard for iOS and AdGuard for Safari.
 
@@ -614,7 +614,7 @@ The modifier part, `":" h_value`, may be omitted. In that case, the modifier mat
 
 ##### `$header` modifier limitations {#header-modifier-limitations}
 
-:::caution Restrictions
+:::caution Restricciones
 
 1. The `$header` modifier can be matched only when headers are received. So if the request is blocked or redirected at an earlier stage, the modifier cannot be applied.
 1. In Adguard Browser Extension, the `$header` modifier is only compatible with [`$csp`](#csp-modifier), [`$removeheader`](#removeheader-modifier), [`$important`](#important-modifier), and [`$badfilter`](#badfilter-modifier).
@@ -674,7 +674,7 @@ This modifier limits the rule scope to requests that use the specified set of HT
 - `@@||evil.com$method=get` unblocks only GET requests to `evil.com`.
 - `@@||evil.com$method=~post` unblocks any requests to `evil.com` except POST.
 
-:::caution Restrictions
+:::caution Restricciones
 
 Rules with mixed negated and not negated values are considered invalid. So, for example, the rule `||evil.com^$method=get|~head` will be ignored.
 
@@ -782,7 +782,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 
 :::
 
-#### **`$to`** {#to-modifier}
+#### **`✅`** {#to-modifier}
 
 `$to` limits the rule scope to requests made **to** the specified domains and their subdomains. To add multiple domains to one rule, use the `|` character as a separator.
 
@@ -792,9 +792,9 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 - `/ads$to=~not.evil.com|evil.com` blocks any request to `evil.com` and its subdomains, with a path matching `/ads`, except requests to `not.evil.com` and its subdomains.
 - `/ads$to=~good.com|~good.org` blocks any request with a path matching `/ads`, except requests to `good.com` or `good.org` and their subdomains.
 
-:::caution Restrictions
+:::caution Restricciones
 
-[`$denyallow`](#denyallow-modifier) cannot be used together with `$to`. It can be expressed with inverted `$to`: `$denyallow=a.com|b.com` is equivalent to `$to=~a.com|~b.com`.
+[`$denyallow`](#denyallow-modifier) cannot be used together with `$to`. Se puede expresar con `$to` invertido: `$denyallow=a.com|b.com` es equivalente a `$to=~a.com|~b.com`.
 
 :::
 
@@ -841,9 +841,9 @@ There is a big difference in how AdGuard determines the content type on differen
 
 :::note
 
-- ✅ — fully supported
-- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- ❌ — not supported
+- ✅ — totalmente compatible
+- ✅ * — compatible, pero la confiabilidad puede variar o pueden ocurrir limitaciones; verifica la descripción del modificador para más detalles
+- ❌ — no compatible
 - 🚫 — removed and no longer supported
 
 :::
@@ -1041,9 +1041,9 @@ We recommend to get acquainted with [the Adblock Plus filter cheatsheet](https:/
 
 :::note
 
-- ✅ — fully supported
-- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- ❌ — not supported
+- ✅ — totalmente compatible
+- ✅ * — compatible, pero la confiabilidad puede variar o pueden ocurrir limitaciones; verifica la descripción del modificador para más detalles
+- ❌ — no compatible
 
 :::
 
@@ -1183,7 +1183,7 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 
 :::
 
-:::caution Restrictions
+:::caution Restricciones
 
 - Modifier options must be lowercase, i.e. `$stealth=DPI` will be rejected.
 - Modifier options cannot be negated, i.e. `$stealth=~3p-cookie` will be rejected.
@@ -1337,10 +1337,10 @@ These modifiers are able to completely change the behavior of basic rules.
 
 :::note
 
-- ✅ — fully supported
-- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- ⏳ — feature that is planned to be implemented but is not yet available in any product
-- ❌ — not supported
+- ✅ — totalmente compatible
+- ✅ * — compatible, pero la confiabilidad puede variar o pueden ocurrir limitaciones; verifica la descripción del modificador para más detalles
+- ⏳ — funcionalidad que se planea implementar pero que aún no está disponible en ningún producto
+- ❌ — no compatible
 - 👎 — deprecated; still supported but will be removed in the future
 
 :::
@@ -1353,7 +1353,7 @@ These modifiers are able to completely change the behavior of basic rules.
 ||example.org^$document,subdocument,font,image,media,object,other,ping,script,stylesheet,websocket,xmlhttprequest,popup
 ```
 
-:::caution Restrictions
+:::caution Restricciones
 
 This modifier cannot be used as an exception with the `@@` mark.
 
@@ -1404,7 +1404,7 @@ In that case, the `$badfilter` rule will disable the corresponding rule for doma
 
 :::caution Limitations
 
-In [AdGuard for Chrome MV3][ext-mv3] a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. We cannot calculate it if it is only partially canceled. [Examples](https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#badfilter)
+In [AdGuard for Chrome MV3][ext-mv3] a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. We cannot calculate it if it is only partially canceled. [Examples][badfilter-in-mv3].
 
 :::
 
@@ -1471,7 +1471,7 @@ In [AdGuard for Chrome MV3][ext-mv3] we delete cookies in 2 ways: from `content-
 
 :::
 
-:::caution Restrictions
+:::caution Restricciones
 
 `$cookie` rules support these types of modifiers: `$domain`, `$~domain`, `$important`, `$third-party`, `$~third-party`, `strict-third-party`, and `strict-first-party`.
 
@@ -1513,7 +1513,7 @@ In case if multiple `$csp` rules match a single request, we will apply each of t
 - `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` disables inline scripts on all the pages matching the rule pattern.
 - `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$csp` rules on all the pages matching the rule pattern.
 
-:::caution Restrictions
+:::caution Restricciones
 
 - There are a few characters forbidden in the `$csp` value: `,`, `$`.
 - `$csp` rules support three types of modifiers: `$domain`, `$important`, `$subdocument`.
@@ -1644,7 +1644,7 @@ preroll.ts
 
 </details>
 
-:::caution Restrictions
+:::caution Restricciones
 
 - Rules with the `$hls` modifier can only be used [**in trusted filters**](#trusted-filters).
 - `$hls` rules are compatible with the modifiers `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest` only.
@@ -1891,7 +1891,7 @@ In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.11 or later, JSONPa
 
 </details>
 
-:::caution Restrictions
+:::caution Restricciones
 
 - `$jsonprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
 - `$jsonprune` rules do not apply if the size of the original response is greater than 10 MB.
@@ -2129,7 +2129,7 @@ When multiple `$xmlprune` rules match the same request, they are applied in lexi
 
 </details>
 
-:::caution Restrictions
+:::caution Restricciones
 
 - `$xmlprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
 - `$xmlprune` rules do not apply if the size of the original response is greater than 10 MB.
@@ -2153,7 +2153,7 @@ This is basically a Firewall-like rule allowing to fully block or unblock access
 
 We recommend to get acquainted with this [article](#regexp-support) for better understanding of regular expressions.
 
-:::caution Restrictions
+:::caution Restricciones
 
 The `$network` modifier can only be used in rules together with the `$app` and `$important` modifiers, and not with any other modifiers.
 
@@ -2226,7 +2226,7 @@ Firefox ignores the `Permissions-Policy` header. For more information, see [this
 
 :::
 
-:::caution Restrictions
+:::caution Restricciones
 
 1. Characters forbidden in the `$permissions` value: `$`.
 2. `$permissions` is compatible with a limited set of modifiers: `$domain`, `$important`, `$subdocument`, and [content-type modifiers](#content-type-modifiers).
@@ -2374,7 +2374,7 @@ In case of multiple `$removeheader` rules matching a single request, we will app
     @@||example.org/path/$removeheader
     ```
 
-:::caution Restrictions
+:::caution Restricciones
 
 This type of rules can only be used [**in trusted filters**](#trusted-filters).
 
@@ -2621,7 +2621,7 @@ With these rules, specified UTM parameters will be removed from any request save
 
 :::
 
-:::caution Restrictions
+:::caution Restricciones
 
 1. Rules with the `$removeparam` modifier can only be used [**in trusted filters**](#trusted-filters).
 1. `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers), [content-type modifiers](#content-type-modifiers), and with the `$important` and `$app` modifiers. Rules with any other modifiers are considered invalid and will be discarded.
@@ -2699,7 +2699,7 @@ You can see how this rule works here: http://regexr.com/3cesk
 - `@@||example.org^$replace` will disable all `$replace` rules matching `||example.org^`.
 - `@@||example.org^$document` or `@@||example.org^$content` will disable all `$replace` rules **originated from** pages of `example.org` **including the page itself**.
 
-:::caution Restrictions
+:::caution Restricciones
 
 Rules with the `$replace` modifier can only be used [**in trusted filters**](#trusted-filters).
 
@@ -2792,7 +2792,7 @@ the request to `https://example.com/firstpath` will be blocked.
 
 `$urltransform` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$urltransform=/X/Y/` for requests to **example.com**, but `@@||example.com^$urlblock` will.
 
-:::caution Restrictions
+:::caution Restricciones
 
 Rules with the `$urltransform` modifier can only be used [**in trusted filters**](#trusted-filters).
 
@@ -3074,8 +3074,8 @@ However, basic rules may not be enough to block ads. Sometimes you need to hide 
 
 :::note
 
-- ✅ — fully supported
-- ❌ — not supported
+- ✅ — totalmente compatible
+- ❌ — no compatible
 
 :::
 
@@ -3198,7 +3198,7 @@ example.com#@$#.textad { visibility: hidden; }
 
 We recommend to use this kind of exceptions only if it is not possible to change the CSS rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
-:::caution Restrictions
+:::caution Restricciones
 
 Styles that lead to loading any resource are forbidden. Basically, it means that you cannot use any `<url>` type of value in the style.
 
@@ -3489,7 +3489,7 @@ div:matches-css(before, content: block*)
 div:matches-css(before, content: /block me/)
 ```
 
-:::caution Restrictions
+:::caution Restricciones
 
 Regexp patterns **do not support** flags.
 
@@ -3557,7 +3557,7 @@ For **regexp** patterns `"` and `\` should be **escaped**, e.g. `div:matches-att
 </div>
 ```
 
-:::caution Restrictions
+:::caution Restricciones
 
 Regexp patterns **do not support** flags.
 
@@ -3632,7 +3632,7 @@ To check properties of a specific element, do the following:
 
 :::
 
-:::caution Restrictions
+:::caution Restricciones
 
 Regexp patterns **do not support** flags.
 
@@ -4164,7 +4164,7 @@ Sometimes, it may be necessary to disable all restriction rules. For example, to
 
 We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
-:::caution Restrictions
+:::caution Restricciones
 
 JavaScript rules can only be used [**in trusted filters**](#trusted-filters).
 
@@ -4283,7 +4283,7 @@ Trusted scriptlets are not compatible with other ad blockers except AdGuard.
 
 :::
 
-:::caution Restrictions
+:::caution Restricciones
 
 Trusted scriptlets rules can only be used [**in trusted filters**](#trusted-filters).
 
@@ -4326,9 +4326,9 @@ In the modifiers values, the following characters must be escaped: `[`, `]`, `,`
 
 :::note
 
-- ✅ — fully supported
-- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- ❌ — not supported
+- ✅ — totalmente compatible
+- ✅ * — compatible, pero la confiabilidad puede variar o pueden ocurrir limitaciones; verifica la descripción del modificador para más detalles
+- ❌ — no compatible
 
 :::
 
@@ -4883,23 +4883,25 @@ The following scriptlets also may be used for debug purposes:
 
 :::note
 
-- ✅ — fully supported
-- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
+- ✅ — totalmente compatible
+- ✅ * — compatible, pero la confiabilidad puede variar o pueden ocurrir limitaciones; verifica la descripción del modificador para más detalles
 - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
-- ⏳ — feature that is planned to be implemented but is not yet available in any product
-- ❌ — not supported
+- ⏳ — funcionalidad que se planea implementar pero que aún no está disponible en ningún producto
+- ❌ — no compatible
 - 👎 — deprecated; still supported but will be removed in the future
 - 🚫 — removed and no longer supported
 
 :::
 
-[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#popup
+[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#popup
 
 [Sec-Fetch-Dest header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
 
-[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#jsinject
 
-[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+
+[badfilter-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#badfilter
 
 [cl-apps]: #what-product "AdGuard for Windows, Mac, Android"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"

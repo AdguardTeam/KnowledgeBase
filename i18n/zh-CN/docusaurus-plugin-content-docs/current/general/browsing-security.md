@@ -21,56 +21,56 @@ AdGuard 检查页面和页面上加载的所有元素提供最佳保护。 AdGua
 
 ![AdGuard warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/dangerous_website_blocked.png)
 
-### 浏览器扩展
+### In browser extensions {#extension}
 
 我们的浏览器扩展只能检查域名，无法检查完整的 URL， 或者子查询。 这意味着，如果页面上有潜在的恶意元素，即使页面本身来自安全域名，它们也会被加载 扩展无法进行它们的保护。 另一个需要注意的是，执行的检查是异步的，即在加载页面的同时进行，因此也有可能加载恶意软件。
 
 ## 在 AdGuard 设置钓鱼和恶意软件保护
 
-- **Windows 版本**。转到「*设置*」菜单中的「*浏览安全*」模块。
+- **For Windows**: Activate the *Browsing Security* module in the *Settings* menu
 
-![Windows 的浏览安全](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
+    ![Browsing Security in Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
 
-- **Mac 版本**： 在「*首选项*」中启用「*安全*」模块。
+- **For Mac**: Enable the *Security* module in *Preferences*
 
-![Mac 的安全](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
+    ![Security in Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
 
-- **Android 版本**： 在「*保护*」选项卡中打开「*浏览安全*」功能。
+- **For Android**: Turn on *Browsing Security* in the *Protection* tab
 
-![Android 的浏览安全 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
+    ![Browsing security in Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
 
-- **iOS 版本**： 虽然这个版本没有单独模块，但可以进入「*Safari 保护*」→「*过滤器*」→「*安全*」，然后启用可用的过滤器。 此外，启用「*DNS 保护*」并选择一个AdGuard DNS 服务器。
+- **For iOS**: Although there’s no separate module, you can go to *Safari protection* → *Filters* → *Security* and enable the available filters. Additionally, enable *DNS protection* and select one of the AdGuard DNS servers
 
-![iOS 的安全 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
+    ![Security in iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
 
-- **浏览器扩展**： 在「*设置*」选项卡中启用「*网络钓鱼和恶意软件保护*」。 要增强保护，请转到「*过滤器*」→「*安全*」并激活可用的过滤器。
+- **For Browser extensions**: Enable *Phishing and malware protection* in the *Settings* tab. For enhanced protection, go to *Filters* → *Security* and activate filters
 
-![钓鱼和恶意保护](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
+    ![钓鱼和恶意保护](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
 
-- **专用 AdGuard DNS**： 在「*安全*」下的「*服务器设置*」中启用恶意软件保护。
+- **For Private AdGuard DNS:** Enable malware protection in *Server settings* under *Security*
 
-![DNS 的安全](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
+    ![Security in DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
 
 ## 拦截的内容
 
-我们维护两个主要的过滤器：一个用于防止试图窃取用户凭据的网络钓鱼和欺诈网站，另一个用于阻止访问已知传播恶意软件的网站，这些恶意软件可能会导致数据丢失、信息泄露或设备损坏。 这些过滤器还能保护你免受各种欺诈网站的攻击。 更多详细信息，请参阅[维基百科](https://en.wikipedia.org/wiki/Phishing)上的这篇文章。
+We maintain two primary filters: one that protects against phishing and fraudulent websites that attempt to steal user credentials, and another that blocks access to websites known to distribute malware, which could lead to data loss, information leaks, or damage to your device. These filters also protect you from websites with various scams and fraudulent schemes. For more detailed information, refer to this [Wikipedia article](https://en.wikipedia.org/wiki/Phishing).
 
 ## 维护我们的过滤器
 
-AdGuard 维护一个广泛的网络钓鱼和恶意软件网站数据库，并在发现新威胁时定期自动更新。 我们从各种可靠的高质量来源（包括公共来源和其他公司）收集信息，并将其汇总到一个危险网站的通用数据库中。
+AdGuard maintains an extensive database of phishing and malware websites, and it’s updated regularly and automatically as new threats are discovered. We collect information from a variety of reliable, high-quality sources, both public and from other companies, and aggregate it into a common database of dangerous sites.
 
-我们会自动分析有关可疑网站的投诉，并花时间对数据库进行更新，清除误报，并实施相关机制以防止今后出现误报。
+We automatically analyze complaints about suspicious sites and spend a great deal of time keeping the database up-to-date, cleaning up false positives, and implementing mechanisms to prevent them in the future.
 
 ### 帮助我们
 
-我们非常感谢大家给予我们的帮助！ 如果有用户遇到钓鱼网站或恶意软件网站，请向 <support@adguard.com> 报告。
+Any help is welcome! If you encounter a phishing or malware website, please report it to <support@adguard.com>.
 
 ### 假阳性反应
 
-偶尔会有一些非恶意网站被添加到 AdGuard 的过滤器中。 我们尽最大努力降低误报率，但误报依然可能发生。 如果有用户遇到 AdGuard 的错误行为，请通过 <support@adguard.com> 向我们的技术支持报告误报情况。
+Occasionally, some non-malicious websites are added to AdGuard’s filters. We do our best to reduce the percentage of false positives, but they still occur. If you encounter this behavior from AdGuard, please report the false positive to our technical support at <support@adguard.com>.
 
 ## 发现可疑网站
 
-如果怀疑某个网站可能有危险，请先使用我们的[安全检查工具](https://reports.adguard.com/welcome.html)进行检查。
+If you suspect that a certain website might be dangerous, check it first by using our [security check tool](https://reports.adguard.com/welcome.html).
 
-![安全检查](https://cdn.adtidy.org/content/kb/ad_blocker/general/site_warning.png)
+![Security check](https://cdn.adtidy.org/content/kb/ad_blocker/general/site_warning.png)

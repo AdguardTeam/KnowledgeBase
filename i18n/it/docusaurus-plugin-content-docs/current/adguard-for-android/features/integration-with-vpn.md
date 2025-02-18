@@ -1,5 +1,5 @@
 ---
-title: Integration with AdGuard VPN
+title: Integrazione con AdGuard VPN
 sidebar_position: 6
 ---
 
