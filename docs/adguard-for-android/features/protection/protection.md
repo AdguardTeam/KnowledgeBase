@@ -25,7 +25,7 @@ Settings that allow you to block tracking tools that collect user information
 
 ## Annoyance blocking
 
-Settings to block annoyances such as cookie consent pop-ups, social widgets, and banners that prompt you to download mobile apps
+Settings to block annoyances such as cookie consent popups, social widgets, and banners that prompt you to download mobile apps
 
 [Annoyance blocking](/adguard-for-android/features/protection/annoyance-blocking.md)
 
