@@ -29,7 +29,7 @@ Detailed statistics on blocked ads, trackers, and data usage
 
 ## Settings
 
-General settings such as language and theme, as well as advanced and low-level settings that allow you to customize DNS protection, HTTPS filtering, and add userscripts
+General, advanced, and low-level settings that let you select the language and theme, customize DNS protection, enable HTTPS filtering, and manage userscripts
 
 [Settings](/adguard-for-android/features/settings.md)
 
