@@ -37,7 +37,7 @@ Settings for a secure DNS server and DNS filters to block ads, trackers, and dan
 
 ## Firewall
 
-Feature that allows you to control Internet access for individual apps
+A feature that allows you to control Internet access for individual apps
 
 [Firewall](/adguard-for-android/features/protection/firewall/firewall.md)
 
