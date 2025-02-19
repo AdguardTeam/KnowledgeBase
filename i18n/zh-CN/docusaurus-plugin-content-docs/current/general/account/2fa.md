@@ -11,40 +11,40 @@ sidebar_position: 3
 
 ## 如何设置 2FA
 
-1. Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the *Settings* tab:
+1. 登录 [AdGuard 账号](https://auth.adguard.com/login.html)并转到「*设置*」标签：
 
- ![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
+ ![AdGuard 账号设置 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Scroll down to *Two-factor authentication* and enable it:
+1. 滚动到「*两步验证*」启用它：
 
- ![Two-factor authentication toggle *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
+ ![两步验证开关 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. A code will be sent to the email address associated with your AdGuard account. To enable 2FA, enter the code and click *Enable*.
+1. 验证码将发送到与您的 AdGuard 账号关联的电子邮件地址上。 要启用两步验证，请输入代码并点击「*启用*」。
 
- ![The verification code *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
+ ![验证码 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-After you enable two-factor authentication, you have two options to choose from:
+在启用两步验证后，可以选择两种选项：
 
-- *One-time email code*: when you log in, we will ask you to enter the code we sent to your email
+- *一次性电子邮件代码*：登录时，我们会要求输入发送到您电子邮件的验证码。
 
-- *Code from authenticator app*: when you log in, we will ask for a code from your authenticator app
+- *身份验证软件的代码*：当您登录时，我们会要求输入身份验证应用程序生成的验证码。
 
-![2FA options *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
+![两步验证 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 
 :::note
 
-If you use the authenticator app, make sure to save the **setup key** somewhere. It will be necessary to recover your account in case your mobile phone gets lost or stolen.
+如果您使用身份验证器应用程序，请保存**设置密钥**。 在手机丢失或被盗的情况下，有设置密钥才能恢复个人账号。
 
-![The setup key in the authenticator app *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
+![身份验证器应用程序中的设置密钥 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
 
 :::
 
-If everything is done right, you will see this when you log into your account the next time:
+如果每个步骤都完成，下次登录个人账号时，将看到以下窗口：
 
-![The result *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
+![结果 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
 
 :::note
 
-If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
+请注意：如果看到验证错误通知，请查看手机上的时间设置。 如果需要，请更改时间设置。错误的时钟会导致验证错误。
 
 :::

@@ -43,10 +43,10 @@ sidebar_position: 1
 
 **사용자 정의 규칙**에서 규칙 또는 앱을 삭제하려면 왼쪽으로 스와이프합니다.
 
-### Notifications
+### 알림
 
-If enabled, this feature notifies you when an app is attempting to violate an applicable firewall rule, e.g. attempts to access mobile data from which it is blocked. You can turn notifications on and off for all apps or for each app separately.
+이 기능을 활성화했을 경우, 어떤 앱이 해당되는 방화벽 규칙을 위반하려 할 때(예: 차단된 모바일 데이터에 접근하려고 시도) 알려줍니다. 모든 앱 또는 각각의 앱에 대한 알림을 별도로 켜거나 끌 수 있습니다.
 
-Tap the notification to access the app’s Firewall settings, or temporary disable all Firewall rules for that app by tapping the corresponding button in the notification. You can also mute all Firewall notifications for the app by tapping the _Mute_ button in the notification for that app.
+앱의 방화벽 설정에 접근하시려면 알림을 누르세요. 알림에서 해당 버튼을 누르면 특정 앱에 대한 모든 방화벽 규칙을 일시적으로 비활성화할 수 있습니다. 또한, 알림에서 **음소거** 버튼을 눌러 특정 앱에 대한 모든 방화벽 알림을 음소거할 수도 있습니다.
 
-Note that if notifications for multiple apps would be displayed, they will be bundled into a single notification instead.
+여러 앱들에 대한 알림이 표시되는 경우, 하나의 알림으로 묶여서 표시된다는 점에 유의하세요.

@@ -11,7 +11,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 There are other useful AdGuard options that shouldn't go unnoticed in this article, since they add much to user experience.
 
-### Support
+### 支援
 
 ![Support \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
 
@@ -26,7 +26,7 @@ This tab contains information about your license. Here you can:
 - find out the license type (nightly build, beta or release), the number of devices available for simultaneous connection to AdGuard, the license expiration date;
 - click the button to go to the license purchase page, and activate, reset or recover a license.
 
-### About
+### 關於
 
 ![About \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 

@@ -139,6 +139,127 @@ Blokátor obsahu AdGuard je rozšíření pro prohlížeče Samsung a Yandex, kt
 
 Vzhledem k výše uvedeným omezením nebude Blokátor obsahu AdGuard uveden v poznámkách ke kompatibilitě.
 
+### SafariConverterLib
+
+Safari Converter se snaží co nejvíce podporovat syntaxi pravidel filtrování AdGuard, ale stále existují omezení a nedostatky, které je těžké překonat.
+
+#### Základní (síťová) pravidla
+
+Safari Converter podporuje podstatnou podmnožinu [základních pravidel](#basic-rules) a určitě podporuje nejdůležitější typy těchto pravidel.
+
+##### Podporováno s omezeními
+
+- [Pravidla regulárních výrazů](#regexp-support) jsou omezena na podmnožinu regex [podporovanou prohlížečem Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
+
+- `$domain` - [modifikátor domén](#domain-modifier) je podporován s několika omezeními.
+
+    - Není možné míchat povolené a zakázané domény (například `$domain=example.org|~sub.example.org`). Dejte prosím pozitivní hodnocení [žádosti o funkci](https://bugs.webkit.org/show_bug.cgi?id=226076) pro WebKit, aby toto omezení zrušil.
+    - "Libovolná TLD" (tj. `domain.*`) není plně podporována. V současné implementaci konvertor pouze nahrazuje `.*` 100 nejoblíbenějšími TLD. Tato implementace bude v [budoucnu](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732) vylepšena.
+    - Použití regulárních výrazů v `$domain` není podporováno, ale i to bude v [budoucnu](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732) vylepšeno.
+
+- `$denyallow` - tento modifikátor je podporován převodem pravidla `$denyallow` na sadu pravidel (jedno pravidlo blokování + několik pravidel pro odblokování).
+
+  Vzhledem k tomuto omezení `$denyallow` je povoleno pouze v případě, že pravidlo má také modifikátor `$domain`.
+
+    - Generické pravidlo `*$denyallow=x.com,image,domain=a.com` bude převedeno na:
+
+    ```adblock
+    *$image,domain=a.com
+    @@||x.com$image,domain=a.com
+    ```
+
+    - Pravidlo `/banner.png$image,denyallow=test1.com|test2.com,domain=example.org` bude převedeno na:
+
+    ```adblock
+    /banner.png$image,domain=example.org
+    @@||test1.com/banner.png$image,domain=example.org
+    @@||test1.com/*/banner.png$image,domain=example.org
+    @@||test2.com/banner.png$image,domain=example.org
+    @@||test2.com/*/banner.png$image,domain=example.org
+    ```
+
+    - Pravidlo bez `$domain`**není podporováno**: `$denyallow=a.com|b.com`.
+
+- `$popup` - jsou podporována pravidla vyskakovacích oken, ale jsou v podstatě stejná jako pravidla pro `$document`-pravidla blokování a nepokusí se kartu zavřít.
+
+- Pravidla výjimek`(@@`) zakazují kosmetické filtrování odpovídajících domén.
+
+  Pravidla výjimek v Safari se spoléhají na typ pravidla `ignore-previous-rules`, takže aby to fungovalo, musíme pravidla seřadit v určitém pořadí. Pravidla výjimek bez modifikátorů jsou umístěna na konci seznamu a proto znemožňují nejen blokování URL, ale i kosmetická pravidla.
+
+  Toto omezení může být zrušeno, pokud bude implementována položka [#70](https://github.com/AdguardTeam/SafariConverterLib/issues/70).
+
+- `$urlblock`, `$genericblock` je v podstatě stejné jako `$document`, tj. zakáže všechny druhy filtrování webových stránek.
+
+  Tato omezení mohou být zrušena, až budou zavedeny položky [#69](https://github.com/AdguardTeam/SafariConverterLib/issues/69) a [#71](https://github.com/AdguardTeam/SafariConverterLib/issues/71).
+
+- `$content` nemá v případě Safari smysl, protože pravidla filtrování HTML nejsou podporována, takže je zde pouze pro účely kompatibility. Pravidla s `$content` jsou omezena na typ zdroje `document`.
+
+- `$specifichide` je implementováno prohledáním existujících pravidel pro skrývání prvků a odstraněním cílové domény z jejich řady `if-domain`.
+
+    - `$specifichide` pravidlo MUSÍ být zaměřeno na doménu, tj. musí vypadat takto: `||example.org^$specifichide`. Pravidla s konkrétnějšími vzory budou vyřazena, tj. `||example.org/path$specifichide` nebude podporováno.
+    - `$specifichide` se vztahuje pouze na pravidla, která jsou zaměřena na stejnou doménu jako samotné pravidlo, subdomény jsou ignorovány. Tj. pravidlo `@@||example.org^$specifichide` zakáže `example.org##.banner`, ale bude ignorovat `sub.example.org##.banner`. Toto omezení může být zrušeno, pokud bude implementována položka [#72](https://github.com/AdguardTeam/SafariConverterLib/issues/72).
+
+- Modifikátory `urlblock`, `genericblock`, `generichide`, `elemhide`, `specifichide` a `jsinject` lze v pravidle použít pouze jako jeden modifikátor. Toto omezení může být v budoucnu zrušeno: [#73](https://github.com/AdguardTeam/SafariConverterLib/issues/73).
+
+- `$websocket` (plně podporováno od Safari 15).
+
+- `$ping` (plně podporováno od Safari 14).
+
+##### Nepodporováno
+
+- `$app`
+- `$header`
+- `$method`
+- `$strict-first-party` (bude podporováno v budoucnu: [#64](https://github.com/AdguardTeam/SafariConverterLib/issues/64))
+- `$strict-third-party` (bude podporováno v budoucnu: [#65](https://github.com/AdguardTeam/SafariConverterLib/issues/65))
+- `$to` (bude podporováno v budoucnu: [#60](https://github.com/AdguardTeam/SafariConverterLib/issues/60))
+- `$extension`
+- `$stealth`
+- `$cookie` (bude částečně podporováno v budoucnu: [#54](https://github.com/AdguardTeam/SafariConverterLib/issues/54))
+- `$csp`
+- `$hls`
+- `$inline-script`
+- `$inline-font`
+- `$jsonprune`
+- `$xmlprune`
+- `$network`
+- `$permissions`
+- `$redirect`
+- `$redirect-rule`
+- `$referrerpolicy`
+- `$removeheader`
+- `$removeparam`
+- `$replace`
+- `$urltransform`
+
+#### Kosmetická pravidla
+
+Safari Converter podporuje většinu [kosmetických pravidel](#cosmetic-rules) ačkoli jsou nativně podporována pouze pravidla skrývání prvků se základními selektory CSS prostřednictvím blokování obsahu v Safari, vše ostatní je třeba interpretovat dalším rozšířením.
+
+##### Omezení kosmetických pravidel
+
+- Pro zadávání domén platí stejná omezení jako pro modifikátor základních pravidel `$domain`.
+
+- [Modifikátory jiných než základních pravidel](#non-basic-rules-modifiers) jsou podporovány s určitými omezeními:
+
+    - `$domain` - stejná omezení jako všude jinde.
+    - `$path` - podporováno, ale pokud použijete regulární výrazy, budou omezeny na podmnožinu regex [podporovanou prohlížečem Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
+    - `$url` - bude podporováno v budoucnu: [#68](https://github.com/AdguardTeam/SafariConverterLib/issues/68)
+
+#### Pravidla script/scriptlet
+
+Safari Converter plně podporuje [pravidla script](#javascript-rules) a [pravidla scriplet](#scriptlets). Tato pravidla však lze vykládat pouze pomocí samostatného rozšíření.
+
+:::varování
+
+Pro pravidla scriplet je **velmi důležité** spustit je co nejdříve po načtení stránky. Důvodem je to, že je důležité, aby se spustil dříve než skripty stránky. V prohlížeči Safari bohužel vždy dochází k mírnému zpoždění, které může snížit kvalitu blokování.
+
+:::
+
+#### HTML pravidla filtrování
+
+[Pravidla filtrování HTML](#html-filtering-rules) **nejsou**, a v budoucnu nebudou podporována. Safari bohužel neposkytuje potřebné technické možnosti pro jejich implementaci.
+
 ## Základní pravidla
 
 Nejjednoduššími pravidly jsou tzv. *základní pravidla*. Slouží k blokování požadavků na konkrétní adresy URL. Nebo je odblokují, pokud je na začátku pravidla speciální znak "@@". Základní princip tohoto typu pravidel je poměrně jednoduchý: je třeba zadat adresu a další parametry, které omezují nebo rozšiřují rozsah pravidla.
@@ -707,7 +828,7 @@ V tom, jak AdGuard určuje typ obsahu na různých platformách, je velký rozd�
 | [$font](#font-modifier)                                       |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
 | [$image](#image-modifier)                                     |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
 | [$media](#media-modifier)                                     |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
-| [$object](#object-modifier)                                   |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
+| [$object](#object-modifier)                                   |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ❌                     |                     ❌                     |                 ✅                 |
 | [$other](#other-modifier)                                     |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ❌                 |
 | [$ping](#ping-modifier)                                       |    ✅ [*[1]](#ping-modifier-limitations)     |                ✅                |                 ✅                 |               ✅               |                     ❌                     |                     ❌                     |                 ✅                 |
 | [$script](#script-modifier)                                   |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
@@ -765,6 +886,12 @@ Pravidlo odpovídá požadavkům na mediální soubory — hudbu a video, např.
 #### **`$object`** {#object-modifier}
 
 Pravidlo odpovídá prostředkům pluginů prohlížeče, např. Java nebo Flash.
+
+:::info Kompatibilita
+
+Rules with `$object` modifier are not supported by AdGuard for Safari and AdGuard for iOS.
+
+:::
 
 #### **`$other`** {#other-modifier}
 
@@ -2335,19 +2462,23 @@ Regulární výrazy můžete použít také k porovnání parametrů dotazu a/ne
 
 **Uvození speciálních znaků**
 
-Nezapomeňte v regulárních výrazech uvodit speciální znaky jako `,`, `/` a `$`. Pro tento účel použijte znak `\`. Např. uvozená čárka by měla vypadat takto: `\,`.
+Speciální znaky by měly být v pravidle URL zakódovány, aby správně odpovídaly textu URL.
+
+Například, pro odstranění `?$param=true` byste měli použít pravidlo `$removeparam=%24param`.
 
 :::note
 
-Pravidla typu regexp se zaměřují na název i hodnotu parametru. Aby se minimalizovala možnost chyb, je bezpečnější začínat každý regexp znakem `/^`, pokud se nezaměřujete výslovně na hodnoty parametrů.
+Mezery a čárky by měly být také zakódovány v adrese URL, jinak pravidlo nebude odpovídat adrese URL. Nicméně, znaky `.`, `-`, `_` a `~` by měly být používány tak, jak jsou, protože nejsou označeny jako rezervované znaky v kódování URL.
 
 :::
 
-Pokusíme se automaticky detekovat a ignorovat neuvozený znak `$` pomocí jednoduchého pravidla — nejedná se o oddělovač možností, pokud jsou všechny tři hodnoty pravdivé:
+Nezapomeňte v regulárních výrazech používat uvození speciálních znaků, jako je například `.`. K tomu použijte znak `\`. Např. uvozená tečka by měla vypadat takto: `\.`.
 
-1. Vypadá to jako `$/`
-1. Nalevo od něj je další znak lomítka `/`
-1. Nalevo od tohoto znaku lomítka je další znak dolaru bez uvození `$`
+:::note
+
+Pravidla typu regexp se vztahují na název i hodnotu parametru. Pro minimalizaci chyb je bezpečnější začínat každý regexp znakem `/^`, pokud se nezaměřujete konkrétně na hodnoty parametrů.
+
+:::
 
 **Odebrat všechny parametry dotazu**
 
@@ -2361,6 +2492,12 @@ Pro použití inverze použijte `~`:
 
 - `$removeparam=~param` — odstraní všechny parametry dotazu s názvem odlišným od `param`.
 - `$removeparam=~/regexp/` — odstraní všechny parametry dotazu, které neodpovídají regulárnímu výrazu `regexp`.
+
+:::note
+
+Pokud se `~` neobjeví na začátku pravidla, považuje se za symbol v textu.
+
+:::
 
 **Negace `$removeparam`**
 

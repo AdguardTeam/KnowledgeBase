@@ -21,3 +21,4 @@ sidebar_position: 1
 - [如何创建 Dump 文件](/adguard-for-windows/solving-problems/dump-file/)
 - [可能的 DNS 泄漏](/adguard-for-windows/solving-problems/dns-leaks/)
 - [已知的 Windows 版 AdGuard 问题](/adguard-for-windows/solving-problems/known-issues/)
+- [如何修复 `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE` 错误](/adguard-for-windows/solving-problems/mozilla-error/)

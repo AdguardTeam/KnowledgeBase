@@ -142,6 +142,129 @@ are limited by what the browsers allow and they only support an old Adblock Plus
 
 Because of the limitations above AdGuard Content Blocker will not be mentioned in the compatibility notes.
 
+### SafariConverterLib
+
+Safari Converter aims to support AdGuard filtering rules syntax as much as possible, but still there are limitations and shortcomings that are
+hard to overcome.
+
+#### Basic (network) rules
+
+Safari Converter supports a substantial subset of [basic rules](#basic-rules) and certainly supports the most important types of those rules.
+
+##### Supported with limitations
+
+- [Regular expression rules](#regexp-support) are limited to the subset of regex that is [supported by Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
+
+- `$domain` - [domain modifier](#domain-modifier) is supported with several limitations.
+
+    - It's impossible to mix allowed and disallowed domains (like `$domain=example.org|~sub.example.org`). Please upvote the [feature request](https://bugs.webkit.org/show_bug.cgi?id=226076) to WebKit to lift this limitation.
+    - "Any TLD" (i.e. `domain.*`) is not fully supported. In the current implementation the converter just replaces `.*` with top 100 popular TLDs. This implementation will be improved [in the future](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732).
+    - Using regular expressions in `$domain` is not supported, but it also will be improved [in the future](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732).
+
+- `$denyallow` - this modifier is supported via converting `$denyallow` rule to a set of rules (one blocking rule + several unblocking rules).
+
+  Due to that limitation `$denyallow` is only allowed when the rule also has `$domain` modifier.
+
+    - Generic rule `*$denyallow=x.com,image,domain=a.com` will be converted to:
+
+    ```adblock
+    *$image,domain=a.com
+    @@||x.com$image,domain=a.com
+    ```
+
+    - Rule `/banner.png$image,denyallow=test1.com|test2.com,domain=example.org` will be converted to:
+
+    ```adblock
+    /banner.png$image,domain=example.org
+    @@||test1.com/banner.png$image,domain=example.org
+    @@||test1.com/*/banner.png$image,domain=example.org
+    @@||test2.com/banner.png$image,domain=example.org
+    @@||test2.com/*/banner.png$image,domain=example.org
+    ```
+
+    - Rule without `$domain` is **not supported**: `$denyallow=a.com|b.com`.
+
+- `$popup` - popup rules are supported, but they're basically the same as `$document`-blocking rules and will not attempt to close the tab.
+
+- Exception rules (`@@`) disable cosmetic filtering on matching domains.
+
+  Exception rules in Safari rely on the rule type `ignore-previous-rules` so to make it work we have to order the rules in a specific order. Exception rules without modifiers are placed at the end of the list and therefore they disable not just URL blocking, but cosmetic rules as well.
+
+  This limitation may be lifted if [#70](https://github.com/AdguardTeam/SafariConverterLib/issues/70) is implemented.
+
+- `$urlblock`, `$genericblock` is basically the same as `$document`, i.e. it disables all kinds of filtering on websites.
+
+  These limitations may be lifted when [#69](https://github.com/AdguardTeam/SafariConverterLib/issues/69) and [#71](https://github.com/AdguardTeam/SafariConverterLib/issues/71) are implemented.
+
+- `$content` makes no sense in the case of Safari since HTML filtering rules are not supported so it's there for compatibility purposes only. Rules with `$content` modifier are limited to `document` resource type.
+
+- `$specifichide` is implemented by scanning existing element hiding rules and removing the target domain from their `if-domain` array.
+
+    - `$specifichide` rules MUST target a domain, i.e. be like this: `||example.org^$specifichide`. Rules with more specific patterns will be discarded, i.e. `||example.org/path$specifichide` will not be supported.
+    - `$specifichide` rules only cover rules that target the same domain as the rule itself, subdomains are ignored. I.e. the rule `@@||example.org^$specifichide` will disable `example.org##.banner`, but will ignore `sub.example.org##.banner`. This limitation may be lifted if [#(72](https://github.com/AdguardTeam/SafariConverterLib/issues/72) is implemented.
+
+- `urlblock`, `genericblock`, `generichide`, `elemhide`, `specifichide`, and `jsinject` modifiers can be used only as a single modifier in a rule. This limitation may be lifted in the future: [#73](https://github.com/AdguardTeam/SafariConverterLib/issues/73).
+
+- `$websocket` (fully supported starting with Safari 15).
+
+- `$ping` (fully supported starting with Safari 14).
+
+##### Not supported
+
+- `$app`
+- `$header`
+- `$method`
+- `$strict-first-party` (to be supported in the future: [#64](https://github.com/AdguardTeam/SafariConverterLib/issues/64))
+- `$strict-third-party` (to be supported in the future: [#65](https://github.com/AdguardTeam/SafariConverterLib/issues/65))
+- `$to` (to be supported in the future: [#60](https://github.com/AdguardTeam/SafariConverterLib/issues/60))
+- `$extension`
+- `$stealth`
+- `$cookie` (partial support in the future: [#54](https://github.com/AdguardTeam/SafariConverterLib/issues/54))
+- `$csp`
+- `$hls`
+- `$inline-script`
+- `$inline-font`
+- `$jsonprune`
+- `$xmlprune`
+- `$network`
+- `$permissions`
+- `$redirect`
+- `$redirect-rule`
+- `$referrerpolicy`
+- `$removeheader`
+- `$removeparam`
+- `$replace`
+- `$urltransform`
+
+#### Cosmetic rules
+
+Safari Converter supports most of the [cosmetic rules](#cosmetic-rules) although only element hiding rules with basic CSS selectors are supported natively via Safari Content Blocking, everything else needs to be interpreted by an additional extension.
+
+##### Limitations of cosmetic rules
+
+- Specifying domains is subject of the same limitations as the `$domain` modifier of basic rules.
+
+- [Non-basic rules modifiers](#non-basic-rules-modifiers) are supported with some limitations:
+
+    - `$domain` - the same limitations as everywhere else.
+    - `$path` - supported, but if you use regular expressions, they will be limited to the subset of regex that is [supported by Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
+    - `$url` - to be supported in the future: [#68](https://github.com/AdguardTeam/SafariConverterLib/issues/68)
+
+#### Script/scriptlet rules
+
+Safari Converter fully supports both [script rules](#javascript-rules) and
+[scriptlet rules](#scriptlets). However, these rules can only be interpreted by a separate extension.
+
+:::warning
+
+For scriptlet rules it is **very important** to run them as soon as possible when the page is loaded. The reason for that is that it's important to run earlier than the page scripts do. Unfortunately, with Safari there will always be a slight delay that can decrease the quality of blocking.
+
+:::
+
+#### HTML filtering rules
+
+[HTML filtering rules](#html-filtering-rules) are **not supported** and will not be supported in the future. Unfortunately, Safari does not provide necessary technical capabilities to implement them.
+
 ## Basic rules
 
 The most simple rules are so-called *Basic rules*. They are used to block requests to specific URLs. Or to unblock it, if there is a special marker "@@" at the beginning of the rule. The basic principle for this type of rules is quite simple: you have to specify the address and additional parameters that limit or expand the rule scope.
@@ -609,7 +732,7 @@ Rules with the `$popup` modifier are not supported by AdGuard Content Blocker.
 
 :::
 
-[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#popup
+[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#popup
 
 #### **`$strict-first-party`** {#strict-first-party-modifier}
 
@@ -733,7 +856,7 @@ the type will be determined using the `Content-Type` header at the beginning of 
 | [$font](#font-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$image](#image-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$media](#media-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$object](#object-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [$object](#object-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
 | [$other](#other-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$ping](#ping-modifier) | ✅ [*[1]](#ping-modifier-limitations) | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
 | [$script](#script-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -791,6 +914,12 @@ The rule corresponds to requests for media files — music and video, e.g. `.mp4
 #### **`$object`** {#object-modifier}
 
 The rule corresponds to browser plugins resources, e.g. Java or Flash.
+
+:::info Compatibility
+
+Rules with `$object` modifier are not supported by AdGuard for Safari and AdGuard for iOS.
+
+:::
 
 #### **`$other`** {#other-modifier}
 
@@ -1046,7 +1175,7 @@ and AdGuard Content Blocker.
 
 :::
 
-[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#jsinject
 
 #### **`$stealth`** {#stealth-modifier}
 
@@ -1323,7 +1452,7 @@ In that case, the `$badfilter` rule will disable the corresponding rule for doma
 
 :::caution Limitations
 
-In [AdGuard for Chrome MV3][ext-mv3] a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. We cannot calculate it if it is only partially canceled. [Examples](https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#badfilter)
+In [AdGuard for Chrome MV3][ext-mv3] a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. We cannot calculate it if it is only partially canceled. [Examples][badfilter-in-mv3].
 
 :::
 
@@ -1332,6 +1461,8 @@ In [AdGuard for Chrome MV3][ext-mv3] a rule with the `$badfilter` modifier is ap
 Rules with `$badfilter` modifier are not supported by AdGuard Content Blocker.
 
 :::
+
+[badfilter-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#badfilter
 
 #### **`$cookie`** {#cookie-modifier}
 

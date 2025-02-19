@@ -13,7 +13,7 @@ DNS 보호 모듈은 **보호** 탭(화면 하단의 왼쪽 두 번째 아이콘
 
 :::tip
 
-DNS 보호는 일반 광고 및 추적기 차단과는 다른 방식으로 작동합니다. You can [learn more about it and how it works from a dedicated article](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
+DNS 보호는 일반 광고 및 추적기 차단과는 다른 방식으로 작동합니다. [별도의 글을 통해 작동 방식에 대해 자세히 알아볼 수 있습니다.](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
 
 :::
 

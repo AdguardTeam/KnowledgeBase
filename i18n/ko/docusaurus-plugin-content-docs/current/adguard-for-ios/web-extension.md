@@ -11,7 +11,7 @@ AdGuard의 Safari 웹 확장 프로그램은 iOS 15의 새로운 기능을 활�
 
 ## AdGuard Safari 웹 확장 프로그램의 기능
 
-By default, Safari provides only basic tools for content blockers. These tools don't offer the level of performance found in content blockers on other operating systems (Windows, Mac, Android). For example, AdGuard apps on other platforms can use such powerful anti-ad weapons as [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets). Unfortunately, these utilities are absolutely irreplaceable when dealing with more complex cases, such as pre-roll ads on YouTube.
+기본적으로 Safari는 콘텐츠 차단기에게 기본 도구만 제공합니다. 이러한 도구는 다른 운영 체제(Windows, Mac, Android)의 콘텐츠 차단 프로그램에서 볼 수 있는 수준의 성능을 제공하지 않습니다. 예를 들어, 다른 플랫폼의 AdGuard 앱은 [CSS 규칙](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [확장 CSS 선택기](/general/ad-filtering/create-own-filters#extended-css-selectors) 및 [스크립틀릿](/general/ad-filtering/create-own-filters#scriptlets)과 같은 강력한 광고 방지 도구를 사용할 수 있습니다. 이러한 도구는 YouTube 광고와 같은 복잡한 광고를 처리할 때 절대적으로 필요한 도구입니다.
 
 Safari용 AdGuard 웹 확장 프로그램은 이러한 모든 유형의 필터링 규칙을 적용할 수 있는 기능을 제공함으로써 AdGuard를 보완합니다.
 
@@ -19,7 +19,7 @@ Safari용 AdGuard 웹 확장 프로그램은 이러한 모든 유형의 필터�
 
 ![웹 확장 프로그램 메뉴 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/ext_adguard_en.png?1)
 
-> On iPads, AdGuard's Safari web extension can be accessed directly by tapping the AdGuard icon in the browser's address bar.
+> iPad의 경우, 브라우저 주소 표시줄에서 AdGuard 아이콘을 탭하여 AdGuard의 Safari 웹 확장 프로그램에 바로 액세스할 수 있습니다.
 
 다음과 같은 옵션 목록이 표시됩니다.
 
@@ -57,7 +57,7 @@ AdGuard의 Safari 웹 확장 프로그램은 작동을 위해 웹페이지의 �
 
 ### Safari
 
-You can also enable the AdGuard extension from the Safari browser. To do it, tap *Extensions* (if you don't see it next to the address bar, tap the `aA` icon).
+Safari 브라우저에서 AdGuard 확장 프로그램을 활성화할 수도 있습니다. 이렇게 하려면 *확장 프로그램*을 누릅니다(주소 표시줄 옆에 확장 프로그램이 보이지 않으면 `aA` 아이콘을 누릅니다).
 
 ![Safari에서 aA 아이콘을 탭하기 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari1_en.png)
 

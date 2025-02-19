@@ -5,7 +5,7 @@ toc_min_heading_level: 2
 toc_max_heading_level: 4
 ---
 
-Last update: September 17, 2024
+마지막 업데이트: 2024년 9월 17일
 
 이 글을 읽으려면 암호화, TLS 및 HTTPS에 대한 기본적인 지식이 필요할 수 있습니다.
 
@@ -32,38 +32,38 @@ AdGuard의 HTTPS 필터링에는 단점이 있지만, 이미 이에 대한 업�
 
 HTTPS 필터링을 사용하는 경우, 웹사이트에서 사용하는 실제 인증서가 숨겨집니다. 실제 인증서를 확인할 수 없으며 AdGuard에서 발급한 인증서만 볼 수 있습니다.
 
-This problem can be solved in 2 ways:
+이 문제는 두 가지 방법으로 해결할 수 있습니다.
 
-- By using our [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). This browser extension helps you manage filtering directly from the browser and allows you to inspect the original certificate of any website
+- [브라우저 어시스턴트](https://adguard.com/adguard-assistant/overview.html)를 사용합니다. 어시스턴트를 사용하면 브라우저에서 바로 필터링을 관리하고 모든 웹사이트의 원본 인증서를 확인할 수 있습니다.
 
-  ![Certificate Browser Assistant *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-browser.png)
+  ![인증서 브라우저 어시스턴트 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-browser.png)
 
-- By visiting the *Recent activity* section in AdGuard for Android or the *Filtering log* section in AdGuard for Windows and AdGuard for Mac. While in the Browser Assistant you can only see the certificate of the website, in Recent activity you can inspect the certificate of any server used in a subrequest or browser, with or without the Browser Assistant. To view the certificate using this method, follow the instructions below.
+- Android용 AdGard의 *최근 활동* 섹션 또는 Windows 및 Mac용 AdGard의 *필터링 로그* 섹션을 방문합니다. 브라우저 어시스턴트에서는 웹사이트의 인증서만 볼 수 있지만, 최근 활동에서는 브라우저 어시스턴트 사용 여부에 관계없이 하위 요청 또는 브라우저에 사용된 모든 서버의 인증서를 검사할 수 있습니다. 이 방법을 사용하여 인증서를 보려면 아래 지침을 따르세요.
 
-#### Inspect original certificate in AdGuard for Android
+#### Android용 AdGuard에서 원본 인증서를 검사하는 방법
 
-1. Click the Statistics icon on the navigation bar.
-2. Go to *Recent activity*.
-3. Click the request whose certificate you want to inspect to open the request details.
-4. Scroll down to *Original certificate*. Click for more info.
+1. 탐색 모음에서 통계 아이콘을 클릭합니다.
+2. *최근 활동*으로 이동합니다.
+3. 인증서를 검사하려는 요청을 클릭하여 요청 세부 정보를 엽니다.
+4. 아래로 스크롤하여 *원본 인증서*로 이동합니다. 자세한 내용을 보려면 클릭하세요.
 
-![Recent activity AdGuard for Android *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-android.png)
+![Android용 AdGuard 최근 활동 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-android.png)
 
-#### Inspect original certificate in AdGuard for Windows
+#### Windows용 AdGuard에서 원본 인증서를 검사하는 방법
 
-1. Go to *Settings* → *Ad Blocker* → *Filtering log*.
-2. Click the request whose certificate you want to inspect to open the request details.
-3. Under the *TLS* section, click *View website certificate*.
+1. *설정* → *광고 차단기* → *필터링 로그*로 이동합니다.
+2. 인증서를 검사하려는 요청을 클릭하여 요청 세부 정보를 엽니다.
+3. *TLS* 섹션에서 *웹사이트 인증서 보기*를 클릭합니다.
 
-![Filtering log AdGuard for Windows *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-win.png)
+![Windows용 AdGuard 필터링 로그 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-win.png)
 
-#### Inspect original certificate in AdGuard for macOS
+#### macOS용 AdGuard에서 원본 인증서를 검사하는 방법
 
-1. Click the gear icon. In the drop-down menu, go to *Advanced* → *Filtering log...*.
-2. Click the request whose certificate you want to inspect to open the request details.
-3. Click *View certificate*.
+1. 톱니바퀴 아이콘을 클릭합니다. 드롭다운 메뉴에서 *고급* → *로그 필터링....*으로 이동합니다.
+2. 인증서를 검사하려는 요청을 클릭하여 요청 세부 정보를 엽니다.
+3. *인증서 보기*를 클릭합니다.
 
-![Filtering log AdGuard for Mac *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-mac.png)
+![Mac용 AdGuard 필터링 로그 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-mac.png)
 
 ### 인증서 투명성(Certificate Transparency)
 

@@ -501,29 +501,29 @@ App Auto-Launch (on some OnePlus phones) essentially prevents apps from working 
 
 ### Enhanced / Advanced optimization
 
-For OnePlus 6 and above:
+Per OnePlus 6 e superiori:
 
 - Open **System settings** → **Battery** → **Battery optimization** → (⁝) three-dot menu → **Advanced optimization**
 - Disable **Deep optimization** / **Adaptive Battery**
-- Disble **Sleep standby optimization**. OnePlus tries to learn when you are usually asleep, and in those times it will then disable the phone’s network connections. This setting will prevent push notifications from being delivered.
+- Disble **Sleep standby optimization**. OnePlus cerca di capire quando l'utente è solito dormire e in quei momenti disabilita le connessioni di rete del telefono. Quest'impostazione impedirà la ricezione delle notifiche push.
 
-For OnePlus below 6:
+Per OnePlus inferiore a 6:
 
-- Turn off **System settings** → **Battery** → **Battery optimization** → (⁝) three-dot menu → **Enhanced optimization**.
+- Disattiva le **Impostazioni di sistema** → **Batteria** → **Ottimizzazione batteria** → Menu a tre puntini (⁝) → **Ottimizzazione migliorata**.
 
-### Recent apps clearing behaviour
+### Comportamento di pulizia delle app recenti
 
-Normally when you swipe an app away, it won’t close. On OnePlus this may however work in a different way. Recent app clear behaviour manager might be set up in a way that swiping the app to close will kill it. To return it to the “normal” mode:
+Normalmente, quando esci da un'app, non si chiuderà. Su OnePlus, tuttavia, ciò potrebbe funzionare diversamente. Il gestore del comportamento di cancellazione delle app recenti potrebbe esser configurato in modo che, l'uscita dall'app, la termini. Per tornare alla modalità "normale":
 
-Go to **Settings** → **Advanced** → **Recent app management** → Switch to **Normal clear**
+Vai in **Impostazioni** → **Avanzate** → **Gestione app recenti** → Passa a **Pulizia normale**
 
 ## Sony
 
-Sony was the first mobile OS developer to introduce non-standard background process optimization. It is called **Stamina mode** and it instantly breaks all background processes if enabled. To solve this:
+Sony è stato il primo sviluppatore di OS mobili a introdurre l'ottimizzazione non standard dei processi in background. Si chiama **Modalità Stamina** e interrompe istantaneamente tutti i processi in background, se abilitata. Per risolvere:
 
-Go to **Settings** → **Battery** → Disable **STAMINA mode**
+Vai in **Impostazioni** → **Batteria** → Disabilita la **Modalità STAMINA**
 
-![Sony Stamina mode *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/sony_stamina.png)
+![Modalità Stamina Sony *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/sony_stamina.png)
 
 Su Android 11+, sulla stessa schermata della Modalità STAMINA, esiste un'impostazione detta **Batteria adattiva**, che dovrebbe anch'essa esser disabilitata.
 
@@ -554,3 +554,34 @@ Il Sistema Operativo Android di fabbrica, normalmente, non va in conflitto con l
 - Configura la modalità **VPN Always-on**
 
     ![Stockadguard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)
+
+## Realme
+
+Su dispositivi che eseguono Realme UI 4.0, ci sono tre configurazioni chiave per garantire che AdGuard funzioni correttamente in secondo piano.
+
+1. Imposta l'app AdGuard:
+
+    - Premi a lungo l'icona di AdGuard
+    - Dalla voce di menu' che appare, seleziona **Informazioni app**
+    - Vai in **Uso della batteria** e abilita tutte le opzioni:
+        - Consenti attività in secondo piano
+        - Consenti attività in primo piano
+        - Consenti l'avvio automatico
+    - Nella sezione **Informazioni app**, scorri verso il basso e disattiva l'opzione **Metti in pausa attività app se non usata**
+
+    ![VPN sempre attiva *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
+
+1. Appronta la batteria:
+
+    - Vai in **Impostazioni → Batteria → Altre impostazioni → Ottimizza uso batteria**
+    - Trova AdGuard nella lista e abilita **Non ottimizzare**
+    - In **Altre impostazioni**, controlla la sezione **Congelamento rapido dell'app** e disabilitala per AdGuard
+
+    ![VPN sempre attiva *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
+
+1. Abilita *VPN sempre attiva* per AdGuard:
+
+    - Vai in **Impostazioni → Condivisione e connessione→ VPN**
+    - Trova **AdGuard** e abilita l'opzione **VPN sempre attiva**
+
+    ![VPN sempre attiva *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)
