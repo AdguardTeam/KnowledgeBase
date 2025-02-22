@@ -1,13 +1,13 @@
----
+  ---
 title: Legacy licenses FAQ
 sidebar_position: 6
----
+---      
 
 We have written this article to avoid confusion and explain in detail how you can renew/upgrade an outdated (legacy) AdGuard license.
 
 ## About the outdated licenses
 
-Initially licenses of the following types were available to activate AdGuard products:
+Initially licenses of the following types were available to activate Ahttps://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntaxdGuard products:
 
 **Standard** was for desktop applications, AdGuard for Windows and AdGuard for Mac
 
