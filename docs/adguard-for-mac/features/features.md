@@ -29,7 +29,7 @@ Filters and user rules to fine-tune ad blocking
 
 ## DNS
 
-Settings for a secure DNS server and DNS filters to block ads, trackers, and dangerous websites
+DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
 
 [DNS](/adguard-for-mac/features/dns.md)
 

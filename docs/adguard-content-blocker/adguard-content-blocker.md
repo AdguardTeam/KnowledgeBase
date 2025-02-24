@@ -17,6 +17,6 @@ Main features and settings available in AdGuard Content Blocker
 
 ## Installation
 
-Installation, removal, and system requirements for AdGuard Content Blocker
+Installation, removal, and system requirements
 
 [Installation](/adguard-content-blocker/installation.md)
