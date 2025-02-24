@@ -53,7 +53,7 @@ An extension that complements the desktop program and allows you to manage filte
 
 ## Extensions
 
-A script manager that allows you to extend the functionality of websites by adding userscripts and userstyles
+A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
 
 [Extensions](/adguard-for-mac/features/extensions.md)
 

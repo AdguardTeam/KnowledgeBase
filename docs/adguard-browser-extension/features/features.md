@@ -11,7 +11,7 @@ This article is about the AdGuard Browser Extension, which safeguards only your 
 
 ## Main menu
 
-Main functions on the pop-up: enabling or disabling ad blocking, settings, filtering log, and statistics
+The main popup from which you can access settings, filtering log and statistics, and report problems
 
 [Main menu](/adguard-browser-extension/features/main-menu.md)
 
@@ -29,6 +29,6 @@ Settings to block cookies, UTM tags, and online analytics that collect user info
 
 ## Other features and options
 
-Notifications, filtering log, statistics on blocked ads and trackers, links to privacy documents, and the repository
+General and additional settings, links to privacy documents and the repository
 
 [Other features and options](/adguard-browser-extension/features/other-features.md)
