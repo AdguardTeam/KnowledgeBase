@@ -29,12 +29,12 @@ An extension that complements the desktop program and allows you to manage filte
 
 ## Solving problems
 
-Articles about known issues and possible solutions
+Known issues and possible solutions
 
 [Solving problems](/adguard-for-windows/solving-problems/solving-problems.md)
 
 ## Documentation for admins
 
-AdGuard’s central management of policies and preferences
+Configuration guide for system administrators
 
 [Documentation for admins](/adguard-for-windows/admins-documentation.md)

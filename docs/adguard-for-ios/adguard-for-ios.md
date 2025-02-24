@@ -23,7 +23,7 @@ A web extension that extends the functionality of AdGuard for iOS and allows you
 
 ## Solving problems
 
-Articles about known issues and possible solutions
+Known issues and possible solutions
 
 [Solving problems](/adguard-for-ios/solving-problems/solving-problems.md)
 

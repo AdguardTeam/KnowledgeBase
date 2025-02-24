@@ -29,6 +29,6 @@ Extensions that add functionality to the Safari web browser
 
 ## Solving problems
 
-Articles about known issues and possible solutions
+Known issues and possible solutions
 
 [Solving problems](/adguard-for-safari/solving-problems/solving-problems.md)
