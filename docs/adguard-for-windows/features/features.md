@@ -11,7 +11,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 ## Home screen
 
-Main screen with tabs *Settings*, *Support*, *License*, and *About*, as well as statistics on blocked ads and trackers
+On the main screen you’ll find *Settings*, *Support*, *License*, and *About*, as well as statistics on blocked ads and trackers
 
 [Home screen](/adguard-for-windows/features/home-screen/)
 

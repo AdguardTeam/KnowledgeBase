@@ -29,6 +29,6 @@ Custom filtering rules to fine-tune ad blocking
 
 ## About
 
-Links to privacy documents, GitHub repository, and version history
+Section with links to privacy documents, GitHub repository, and version history
 
 [About](/adguard-for-safari/features/about.md)

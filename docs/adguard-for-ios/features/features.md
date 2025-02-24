@@ -11,19 +11,19 @@ This article is about AdGuard for iOS, a multifunctional ad blocker that protect
 
 ## Safari protection
 
-Available features and settings in the *Safari protection* tab: *Content blockers*, *Filters*, *User rules*, and *Allowlist*
+Available features and settings in the *Safari protection* tab: *Filters*, *User rules*, and *Allowlist*
 
 [Safari protection](/adguard-for-ios/features/safari-protection.md)
 
 ## DNS protection
 
-Settings for a secure DNS server and DNS filters to block ads, trackers and dangerous websites
+DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
 
 [DNS protection](/adguard-for-ios/features/dns-protection/)
 
 ## Advanced protection
 
-A module that allows AdGuard to apply advanced filtering rules and scriptlets to handle complex ads
+A feature that allows AdGuard to apply advanced filtering rules and scriptlets to handle complex ads
 
 [Advanced protection](/adguard-for-ios/features/advanced-protection.md)
 
@@ -35,7 +35,7 @@ Statistics with detailed activity reports that allow you to monitor blocked ads,
 
 ## Assistant
 
-A tool that lets you quickly manage filtering in Safari right from the browser wwithout opening the AdGuard interface
+A tool that lets you quickly manage filtering in Safari right from the browser without opening the AdGuard interface
 
 [Assistant](/adguard-for-ios/features/assistant.md)
 

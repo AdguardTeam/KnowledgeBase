@@ -35,7 +35,7 @@ Settings for a secure DNS server and DNS filters to block ads, trackers, and dan
 
 ## Stealth Mode
 
-Advanced protections settings to block tracking, cookies, UTM tags, online analytics that collect user information
+Settings to block cookies, UTM tags, and online analytics that collect user information
 
 [Stealth Mode](/adguard-for-mac/features/stealth.md)
 

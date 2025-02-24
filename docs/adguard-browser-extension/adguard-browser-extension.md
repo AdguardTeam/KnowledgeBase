@@ -23,13 +23,13 @@ Supported browsers and platforms where the extension can be installed
 
 ## Installation
 
-The article explains how to install the AdGuard Browser Extension on various supported browsers.
+Installation and removal
 
 [Installation](/adguard-browser-extension/installation)
 
 ## Compatibility with the standalone app
 
-The compatibility of the AdGuard Browser Extension with the AdGuard desktop apps
+Compatibility of the AdGuard Browser Extension with the AdGuard desktop apps
 
 [Compatibility with the standalone app](/adguard-browser-extension/compatibility)
 
@@ -41,7 +41,7 @@ A separate AdGuard Browser Extension compatible with the Manifest V3 API
 
 ## Browser-protected pages
 
-Management of protected pages, restricting ad blocking on certain sensitive websites
+Restricted domains whose content can’t be modified with ad blocking extensions
 
 [Browser-protected pages](/adguard-browser-extension/protected-pages)
 
@@ -53,6 +53,6 @@ Known issues and possible solutions
 
 ## Comparison to standalone apps
 
-The differences in functionality, coverage, and features between the AdGuard extensions and desktop apps
+The differences in functionality and features between the AdGuard extensions and desktop apps
 
 [Comparison to standalone apps](/adguard-browser-extension/comparison-standalone)
