@@ -21,7 +21,7 @@ AdGuard provides the best possible protection by inspecting both the pages and a
 
 ![AdGuard uyarısı](https://cdn.adtidy.org/content/kb/ad_blocker/general/dangerous_website_blocked.png)
 
-### Tarayıcı uzantılarında
+### In browser extensions {#extension}
 
 Our browser extensions can only check domain names, not full URLs. They are also unable to check subqueries. This means that if there are potentially malicious elements on the page, they will be loaded even if the page itself is from a safe domain. The extension won’t be able to protect against them. It's also important to note that the check performed is asynchronous, i.e. it happens at the same time as the page is loaded, so it’s possible that malware could be loaded as well.
 
@@ -29,31 +29,31 @@ Our browser extensions can only check domain names, not full URLs. They are also
 
 - **For Windows**: Activate the *Browsing Security* module in the *Settings* menu
 
-![Browsing Security in Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
+    ![Browsing Security in Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
 
 - **For Mac**: Enable the *Security* module in *Preferences*
 
-![Security in Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
+    ![Security in Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
 
 - **For Android**: Turn on *Browsing Security* in the *Protection* tab
 
-![Browsing security in Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
+    ![Browsing security in Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
 
-- **For iOS**: Although there’s no separate module, you can go to *Safari protection* → *Filters* → *Security* and enable the available filters. Additionally, enable *DNS protection* and select one of the AdGuard DNS servers
+- **For iOS**: Although there’s no separate module, you can go to *Safari protection* → *Filters* → *Security* and enable the available filters. Ayrıca, *DNS koruması* öğesini etkinleştirin ve AdGuard DNS sunucularından birini seçin
 
-![Security in iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
+    ![Security in iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
 
-- **For Browser extensions**: Enable *Phishing and malware protection* in the *Settings* tab. For enhanced protection, go to *Filters* → *Security* and activate available filters
+- **For Browser extensions**: Enable *Phishing and malware protection* in the *Settings* tab. For enhanced protection, go to *Filters* → *Security* and activate filters
 
-![Phishing and malware protection](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
+    ![Kimlik avı ve kötü amaçlı yazılım koruması](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
 
 - **For Private AdGuard DNS:** Enable malware protection in *Server settings* under *Security*
 
-![Security in DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
+    ![Security in DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
 
 ## Neleri engelliyoruz
 
-We maintain two primary filters: one that protects against phishing and fraudulent websites that attempt to steal user credentials, and another that blocks access to websites known to distribute malware, which could lead to data loss, information leaks, or damage to your device. These filters also protect you from websites with various scams and fraudulent schemes. For more detailed information, refer to this [Wikipedia article](https://en.wikipedia.org/wiki/Phishing).
+İki temel filtre kullanıyoruz: biri kullanıcı kimlik bilgilerini çalmaya çalışan kimlik avı ve dolandırıcılık sitelere karşı koruma sağlarken diğeri veri kaybına, bilgi sızıntılarına veya cihazınızın zarar görmesine neden olabilecek kötü amaçlı yazılım dağıttığı bilinen sitelere erişimi engeller. These filters also protect you from websites with various scams and fraudulent schemes. For more detailed information, refer to this [Wikipedia article](https://en.wikipedia.org/wiki/Phishing).
 
 ## Maintaining our filters
 
@@ -63,7 +63,7 @@ We automatically analyze complaints about suspicious sites and spend a great dea
 
 ### Yardım etmek ister misiniz?
 
-Any help is welcome! If you encounter a phishing or malware website, please report it to <support@adguard.com>.
+Her türlü yardıma açığız! If you encounter a phishing or malware website, please report it to <support@adguard.com>.
 
 ### False-positive responses
 
@@ -73,4 +73,4 @@ Occasionally, some non-malicious websites are added to AdGuard’s filters. We d
 
 If you suspect that a certain website might be dangerous, check it first by using our [security check tool](https://reports.adguard.com/welcome.html).
 
-![Security check](https://cdn.adtidy.org/content/kb/ad_blocker/general/site_warning.png)
+![Güvenlik kontrolü](https://cdn.adtidy.org/content/kb/ad_blocker/general/site_warning.png)

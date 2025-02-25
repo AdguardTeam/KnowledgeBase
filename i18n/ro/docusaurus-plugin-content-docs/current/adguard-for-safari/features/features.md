@@ -5,30 +5,30 @@ sidebar_position: 1
 
 ## General
 
-Articolul subliniază caracteristicile de bază, inclusiv notificări, intervale de actualizare și nivel de jurnal.
+Basic features, including notifications, update intervals, and logging level
 
 [Modul general](adguard-for-safari/features/general.md)
 
 ## Filtre
 
-Acest articol explică modul în care AdGuard pentru Safari îți permite să personalizezi blocarea reclamelor activând diferite filtre, cum ar fi filtrele specifice limbii, filtrele anti-malware și regulile utilizatorului.
+Different filters that allow you to customize ad blocking
 
 [Filtre](/adguard-for-safari/features/filters.md)
 
 ## Content Blockers
 
-Această secțiune explică de ce AdGuard pentru Safari constă în șase blocante de conținut și cum funcționează acestea.
+Six thematic content blockers that conform to Apple’s restrictions
 
 [Blocante de conţinut](/adguard-for-safari/features/content-blockers/content-blockers.md)
 
 ## Reguli utilizator
 
-The article is dedicated to how you can use AdGuard for Safari to create and manage custom filtering rules to personalize your ad blocking experience.
+Custom filtering rules to fine-tune ad blocking
 
 [Reguli utilizator](/adguard-for-safari/features/rules.md)
 
 ## About
 
-Here you’ll find useful links to privacy documents, GitHub repository, and version history.
+A section with links to privacy documents, GitHub repository, and version history
 
 [Despre](/adguard-for-safari/features/about.md)

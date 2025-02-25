@@ -11,24 +11,24 @@ Acest articol se referă la AdGuard pentru Safari, care protejează doar browser
 
 ## Features
 
-Iată evidențiate caracteristicile și setările principale disponibile în AdGuard pentru Safari.
+Main features and settings available in AdGuard for Safari
 
 [Caracteristici](/adguard-for-safari/features/features.md)
 
 ## Instalare
 
-Aici veți găsi cerințele sistemului împreună cu instrucțiuni despre cum să instalați și să dezinstalați AdGuard pentru Safari.
+Installation, removal, and system requirements for AdGuard for Safari
 
 [Instalare](/adguard-for-safari/installation.md)
 
 ## Extensii pentru Safari
 
-Articolul oferă o prezentare generală a extensiilor în AdGuard pentru Safari, cum funcționează acestea, instrucțiuni de instalare și caracteristicile cheie ale extensiilor.
+Extensions that add functionality to the Safari web browser
 
 [Extensii Safari](/adguard-for-safari/extensions.md)
 
 ## Solving problems
 
-Această secțiune include diverse articole care abordează problemele cunoscute și soluțiile posibile.
+Known issues and possible solutions
 
 [Rezolvarea problemelor](/adguard-for-safari/solving-problems/solving-problems.md)

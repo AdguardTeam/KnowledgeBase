@@ -21,6 +21,7 @@ Per bloccare annunci, tracciatori e fastidi sui siti web, AdGuard utilizza le re
 - AdGuard Privacy
 - AdGuard Social
 - AdGuard Sicurezza
+- AdGuard Personalizzati
 - AdGuard Altri
 
 Ogni estensione di blocco dei contenuti può includere fino a 150.000 regole di filtraggio attive. Il numero di regole in gran parte dei gruppi di filtri non supera le 150.000. Tuttavia, se attivi troppi filtri specifici per lingua o personalizzati, potresti superare il limite. In questi casi, delle regole casuali che superano il limite saranno disabilitate automaticamente, che potrebbe portare a un blocco errato. **Consigliamo vivamente di attivare esclusivamente i filtri di cui necessiti**.

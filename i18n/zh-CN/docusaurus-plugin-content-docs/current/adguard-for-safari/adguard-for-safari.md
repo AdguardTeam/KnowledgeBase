@@ -11,24 +11,24 @@ sidebar_position: 2
 
 ## 功能
 
-以下是 iOS 版 AdGuard 提供的主要功能和设置。
+Main features and settings available in AdGuard for Safari
 
 [功能](/adguard-for-safari/features/features.md)
 
 ## 安装
 
-点击以下链接，查看系统要求以及如何安装和卸载适用于 Safari 的 AdGuard。
+Installation, removal, and system requirements for AdGuard for Safari
 
 [安装](/adguard-for-safari/installation.md)
 
 ## Safari 扩展
 
-本文概述适用于 Safari 的 AdGuard 扩展，包括工作原理、安装指示说明和扩展的主要功能。
+Extensions that add functionality to the Safari web browser
 
 [Safari 扩展](/adguard-for-safari/extensions.md)
 
 ## 解决问题
 
-此部分包括已知问题和可能解决方案的文章。
+Known issues and possible solutions
 
 [解决问题](/adguard-for-safari/solving-problems/solving-problems.md)

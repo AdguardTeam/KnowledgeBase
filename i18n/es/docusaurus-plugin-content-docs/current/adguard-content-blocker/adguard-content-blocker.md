@@ -11,8 +11,12 @@ Este artículo trata sobre el bloqueador de contenido AdGuard, que solo protege 
 
 ## Descripción general de las funciones
 
+Main features and settings available in AdGuard Content Blocker
+
 [Features overview](/adguard-content-blocker/overview.md)
 
 ## Instalación
+
+Installation, removal, and system requirements for AdGuard Content Blocker
 
 [Installation](/adguard-content-blocker/installation.md)

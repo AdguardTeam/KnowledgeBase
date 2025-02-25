@@ -25,7 +25,7 @@ Here are the active features of the pre-configured levels:
 
    b. _Ask websites not to track you_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
 
-   c. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending information about its version and modifications to Google domains (including DoubleClick and Google Analytics)
+   c. _Rimuovi intestazione X-Client-Data_. This feature prevents Google Chrome from sending information about its version and modifications to Google domains (including DoubleClick and Google Analytics)
 
 2. **High**
 
@@ -45,7 +45,7 @@ Here are the active features of the pre-configured levels:
 
    :::
 
-   f. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
+   f. _Rimuovi intestazione X-Client-Data_. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
 
 3. **Extreme** (formerly known as _Ultimate_)
 
@@ -67,14 +67,14 @@ Here are the active features of the pre-configured levels:
 
    f. _Block WebRTC_. This feature blocks WebRTC, a known vulnerability that can leak your real IP address even if you use a proxy or VPN
 
-   g. _Block Push API_. This feature prevents your browsers from receiving push messages from servers
+   g. _Blocca API Push_. Questa funzionalità impedisce ai tuoi browser di ricevere messaggi push dai server
 
-   h. _Block Location API_. This feature prevents browsers from accessing your GPS data and determining your location
+   h. _Blocca API di localizzazione_. Questa funzionalità impedisce ai browser di accedere ai tuoi dati GPS e di determinare la tua posizione
 
-   i. _Hide Referer from third parties_. This feature prevents third parties from knowing which websites you visit. It hides the HTTP header that contains the URL of the initial page and replaces it with a default or custom one that you can set
+   i. _Nascondi il referente a terze parti_. Questa funzionalità impedisce alle terze parti di conoscere i siti web che visiti. Nasconde l'intestazione HTTP contenente l'URL della pagina iniziale, sostituendolo con uno predefinito o personalizzato, che puoi impostare
 
-   j. _Hide your User-Agent_. This feature removes identifying information from the User-Agent header, which typically includes the name and version of the browser, the operating system, and language settings
+   j. _Nascondi il tuo User-Agent_. Questa funzionalità rimuove le informazioni identificative dall'intestazione User-Agent, che include tipicamente il nome e la versione del browser, il sistema operativo, e le impostazioni della lingua
 
-   k. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
+   k. _Rimuovi intestazione X-Client-Data_. Questa funzionalità impedisce a Google Chrome d'inviare le proprie informazioni sulla versione e sulle modifiche ai domini di Google (inclusi DoubleClick e Google Analytics)
 
-You can tweak individual settings in _Tracking protection_ and come up with a custom configuration. Every setting has a description that will help you understand its role. [Read more about what the various _Tracking protection_ settings do](/general/stealth-mode) and utilize them cautiously, as some may interfere with the functionality of websites and browser extensions.
+Puoi modificare le impostazioni individuali in _Protezione dal tracciamento_ e creare una configurazione personale. Ogni impostazione ha una descrizione che ti aiuterà a capire il suo ruolo. [Leggi di più su cosa fanno le varie impostazioni di _Protezione dal tracciamento_](/general/stealth-mode) e usale con cautela, poiché alcune potrebbero interferire con la funzionalità dei siti web e delle estensioni del browser.

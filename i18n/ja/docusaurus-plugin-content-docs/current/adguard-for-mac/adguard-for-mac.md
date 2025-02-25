@@ -11,18 +11,18 @@ sidebar_position: 1
 
 ## Features
 
-Here are outlined the main features and settings available in AdGuard for Mac.
+Main features and settings available in AdGuard for Mac
 
 [Features](/adguard-for-mac/features/features.md)
 
 ## インストール/アンインストール
 
-Here, you’ll find the system requirements along with instructions on how to install and uninstall AdGuard for Mac.
+Installation, removal, and system requirements for AdGuard for Mac
 
 [Installation](/adguard-for-mac/installation.md)
 
 ### 問題解決
 
-This section includes various articles addressing known issues and possible solutions.
+Known issues and possible solutions
 
 [Solving problems](/adguard-for-mac/solving-problems/solving-problems.md)

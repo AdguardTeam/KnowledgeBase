@@ -9,40 +9,40 @@ sidebar_position: 1
 
 :::
 
-Раздел «Защита» содержит следующие настройки, о которых есть подробные статьи в этой Базе знаний:
+The _Protection_ tab includes the following features or settings. You’ll find a detailed article for each of them in this Knowledge Base.
 
 ## Блокировка рекламы
 
-В статье рассказывается о настройках для блокировки рекламы в браузерах и приложениях.
+Settings to block ads in browsers and apps
 
 [Блокировка рекламы](/adguard-for-android/features/protection/ad-blocking.md)
 
 ## Защита от трекинга
 
-В статье рассказывается о настройках, которые позволяют блокировать инструменты отслеживания, которые собирают данные о пользователях.
+Settings that allow you to block tracking tools that collect user information
 
 [Защита от трекинга](/adguard-for-android/features/protection/tracking-protection.md)
 
 ## Блокировка раздражителей
 
-В статье рассказывается о настройках, которые блокируют раздражающие элементы: например, уведомления о куки, виджеты соцсетей или баннеры, предлагающие скачать мобильные приложения.
+Settings to block annoyances such as cookie consent popups, social widgets, and banners that prompt you to download mobile apps
 
 [Блокировка раздражителей](/adguard-for-android/features/protection/annoyance-blocking.md)
 
 ## DNS-защита
 
-В статье рассказывается о настройке защищённого DNS-сервера и DNS-фильтров для блокировки рекламы, трекеров и опасных сайтов.
+DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
 
 [DNS-защита](/adguard-for-android/features/protection/dns-protection.md)
 
 ## Фаервол
 
-В статье рассказывается о Фаерволе — функции, которая позволяет управлять доступом в интернет для отдельных приложений.
+A feature that allows you to control Internet access for individual apps
 
 [Фаервол](/adguard-for-android/features/protection/firewall/firewall.md)
 
 ## Защита от фишинга
 
-В статье рассказывается о Защите от фишинга — функции, которая блокирует доступ к вредоносным и фишинговым сайтам и защищает от онлайн-угроз.
+A feature that blocks access to malicious and phishing websites and protects you from online threats
 
 [Защита от фишинга](/adguard-for-android/features/protection/browsing-security.md)

@@ -23,7 +23,7 @@ sidebar_position: 3
 
  ![Проверочный код *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-After you enable two-factor authentication, you have two options to choose from:
+После включения двухфакторной аутентификации у вас будет два варианта на выбор:
 
 - *Одноразовый код из письма*: при входе мы попросим вас ввести код, который отправили на вашу почту
 
@@ -33,7 +33,7 @@ After you enable two-factor authentication, you have two options to choose from:
 
 :::note
 
-Если вы используете приложение-аутентификатор, обязательно сохраните **ключ настройки**. It will be necessary to recover your account in case your mobile phone gets lost or stolen.
+Если вы используете приложение-аутентификатор, обязательно сохраните **ключ настройки**. Он понадобится для восстановления аккаунта в случае, если вы потеряете доступ к телефону.
 
 ![Ключ настройки в приложении-аутентификаторе *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
 

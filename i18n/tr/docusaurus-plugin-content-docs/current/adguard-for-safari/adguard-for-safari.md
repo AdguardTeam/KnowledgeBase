@@ -11,24 +11,24 @@ Bu makale, yalnızca Safari tarayıcınızı koruyan Safari için AdGuard hakkı
 
 ## Özellikler
 
-Safari için AdGuard'da bulunan ana özellikler ve ayarlar burada özetlenmiştir.
+Main features and settings available in AdGuard for Safari
 
 [Özellikler](/adguard-for-safari/features/features.md)
 
 ## Kurulum
 
-Here, you’ll find the system requirements along with instructions on how to install and uninstall AdGuard for Safari.
+Installation, removal, and system requirements for AdGuard for Safari
 
 [Installation](/adguard-for-safari/installation.md)
 
 ## Safari uzantıları
 
-The article provides an overview of extensions in AdGuard for Safari, how they work, installation instructions, and key features of the extensions.
+Extensions that add functionality to the Safari web browser
 
 [Safari extensions](/adguard-for-safari/extensions.md)
 
 ## Sorunları çözme
 
-This section includes various articles addressing known issues and possible solutions.
+Known issues and possible solutions
 
 [Sorunları çözme](/adguard-for-android/solving-problems/solving-problems.md)

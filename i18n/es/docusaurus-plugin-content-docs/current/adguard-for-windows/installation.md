@@ -71,7 +71,7 @@ Si necesitas desinstalar o reinstalar AdGuard, haz lo siguiente:
 
 ### Método avanzado {#advanced}
 
-En caso de que la desinstalación normal no funcione por algún motivo, puedes intentar utilizar un método avanzado. En primer lugar, debes [descargar la herramienta de desinstalación](https://cdn.adtidy.org/distr/windows/Uninstall_Utility.zip) creada por nuestros desarrolladores. Extrae el archivo a cualquier carpeta de tu PC y ejecuta el archivo **Adguard.UninstallUtility.exe** y permite que la app realice cambios en tu dispositivo. Luego sigue las instrucciones a continuación:
+En caso de que la desinstalación normal no funcione por algún motivo, puedes intentar utilizar un método avanzado. First of all, you need to [download the uninstaller tool](https://static.adtidy.org/windows/uninstaller/uninstal_utility.zip) created by our developers. Extrae el archivo a cualquier carpeta de tu PC y ejecuta el archivo **Adguard.UninstallUtility.exe** y permite que la app realice cambios en tu dispositivo. Luego sigue las instrucciones a continuación:
 
 - Selecciona *Bloqueador de anuncios AdGuard* y *estándar* tipo de desinstalación, luego haz clic en *Desinstalar*.
 
