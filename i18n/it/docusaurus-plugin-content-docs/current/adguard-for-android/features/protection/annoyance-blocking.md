@@ -1,5 +1,5 @@
 ---
-title: Annoyance blocking
+title: Blocco dei fastidi
 sidebar_position: 3
 ---
 

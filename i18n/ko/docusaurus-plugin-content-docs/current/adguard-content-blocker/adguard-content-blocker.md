@@ -11,8 +11,12 @@ sidebar_position: 1
 
 ## 기능 개요
 
+Main features and settings available in AdGuard Content Blocker
+
 [Features overview](/adguard-content-blocker/overview.md)
 
 ## 설치 방법
+
+Installation, removal, and system requirements for AdGuard Content Blocker
 
 [Installation](/adguard-content-blocker/installation.md)

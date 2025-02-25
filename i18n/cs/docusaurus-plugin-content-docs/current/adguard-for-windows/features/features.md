@@ -11,30 +11,30 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 ## Domovská obrazovka
 
-Tento článek popisuje vše, co se zobrazí po otevření programu, včetně _Nastavení_, _Podpory_, _Licence_ a _O programu_. Najdete zde také statistiky blokovaných reklam a slídičů.
+On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
 
 [Úvodní obrazovka](/adguard-for-windows/features/home-screen/)
 
 ## Nastavení
 
-Program si můžete přizpůsobit svým potřebám tak, že budete blokovat pouze to, co vám vadí, používat důvěryhodný server DNS, odstraňovat soubory cookies třetích stran a další.
+Theme and language settings, ad blocking customization, DNS protection, parental controls, extension management, and advanced options for expert users
 
 [Nastavení](/adguard-for-windows/features/settings/)
 
 ## Rozšíření
 
-Zde se dozvíte, jak používat AdGuard jako správce uživatelských skriptů k rozšíření funkčnosti webových stránek. Můžete přidávat vlastní skripty i spravovat stávající.
+A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
 
 [Rozšíření](/adguard-for-windows/features/extensions/)
 
 ## Síť
 
-Tento článek popisuje další možnosti související se sítí a nastavení proxy serveru, kde můžete určit, který proxy server má AdGuard používat k aktualizaci filtrů, stahování nových verzí apod.
+Additional network-related options and proxy settings
 
 [Síť](/adguard-for-windows/features/network/)
 
 ## Další funkce
 
-Zde najdete informace o tom, jak získat podporu, spravovat licenci, zobrazit podrobnosti o aktuální verzi a zásadách ochrany osobních údajů, zkontrolovat aktualizace a prozkoumat možnosti dostupné v nabídce.
+Support, license management, tray menu options, program version and updates
 
 [Další funkce](/adguard-for-windows/features/others/)

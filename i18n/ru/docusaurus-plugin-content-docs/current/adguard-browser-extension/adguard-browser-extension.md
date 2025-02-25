@@ -11,48 +11,48 @@ sidebar_position: 1
 
 ## Функции
 
-Здесь описаны основные функции и настройки, доступные в Браузерном расширении AdGuard.
+Main features and settings available in the AdGuard Browser Extension
 
 [Функции](/adguard-browser-extension/features)
 
 ## Доступность
 
-В этой статье вы узнаете о поддерживаемых браузерах и платформах, на которые можно установить расширение.
+Supported browsers and platforms where the extension can be installed
 
 [Доступность](/adguard-browser-extension/availability)
 
 ## Установка
 
-В статье объясняется, как установить Браузерное расширение AdGuard в различных поддерживаемых браузерах.
+Installation and removal
 
 [Установка](/adguard-browser-extension/installation)
 
 ## Совместимость с основным приложением
 
-В статье рассказывается о совместимости Браузерного расширения AdGuard с десктопными приложениями AdGuard.
+Compatibility of the AdGuard Browser Extension with the AdGuard desktop apps
 
 [Совместимость с автономным приложением](/adguard-browser-extension/compatibility)
 
 ## Браузерное расширение AdGuard MV3 для Chrome
 
-В этой статье обсуждается расширение AdGuard для браузера Chrome, которое совместимо с API Manifest V3, и то, чем оно отличается от расширения, основанного на Manifest V2.
+A separate AdGuard Browser Extension compatible with the Manifest V3 API
 
 [Браузерное расширение AdGuard для Chrome MV3](/adguard-browser-extension/mv3-version/)
 
 ## Страницы, защищённые браузером
 
-В статье описывается, как браузерное расширение AdGuard управляет защищёнными страницами — оно ограничивает блокировку рекламы на сайтах с конфиденциальной информацией для их нормального функционирования.
+Restricted domains whose content can’t be modified with ad blocking extensions
 
 [Защищённые страницы](/adguard-browser-extension/protected-pages)
 
 ## Решение проблем
 
-В этом разделе собраны руководства, в которых рассматриваются известные проблемы и их возможные решения.
+Known issues and possible solutions
 
 [Решение проблем](/adguard-browser-extension/solving-problems)
 
 ## Сравнение с автономными приложениями
 
-Статья подчёркивает различия в функциональности, охвате и функциях между расширениями AdGuard и десктопными приложениями.
+The differences in functionality and features between the AdGuard extensions and desktop apps
 
 [Сравнение с отдельными приложениями](/adguard-browser-extension/comparison-standalone)

@@ -11,54 +11,54 @@ sidebar_position: 1
 
 ## Главное окно
 
-В главном окне вы можете включить или отключить защиту, просмотреть статистику по заблокированной рекламе, трекерам и угрозам, а также получить доступ к настройкам, обновлениям, поддержке и управлению лицензиями.
+Main screen with statistics on blocked ads and trackers and access to main settings
 
 [Главное окно](/adguard-for-mac/features/main.md)
 
 ## Основные
 
-Здесь вы можете настроить основные параметры, такие как _Не блокировать поисковую рекламу и саморекламу_, _Автоматически включать подходящие языковые фильтры_, _Запускать AdGuard при старте системы_, _Скрыть иконку меню_ и _Белый список_.
+Basic settings to block search ads and website self-promotional ads, enable language-specific filters, and manage _Allowlist_
 
 [Основные](/adguard-for-mac/features/general.md)
 
 ## Фильтры
 
-Здесь вы узнаете, как настроить блокировку рекламы с помощью фильтров и пользовательских правил.
+Filters and user rules to fine-tune ad blocking
 
 [Фильтры](/adguard-for-mac/features/filters.md)
 
 ## DNS
 
-Здесь вы можете найти настройки DNS-защиты: доступные провайдеры, фильтры, чёрный и белый спики.
+DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
 
 [DNS](/adguard-for-mac/features/dns.md)
 
 ## Защита от трекинга
 
-[Защита от трекинга](/adguard-for-mac/features/stealth.md)
+Settings to block cookies, UTM tags, and online analytics that collect user information
 
-В этой статье вы узнаете, как настроить расширенную защиту от трекинга, блокируя куки, UTM-теги, онлайн-счётчики и системы аналитики и не позволяя сайтам собирать информацию о вас.
+[Stealth Mode](/adguard-for-mac/features/stealth.md)
 
 ## Безопасность
 
-Настройки безопасности включают в себя функции для защиты от фишинга и вредоносного ПО. Вы также можете помочь AdGuard пополнять базу данных известных угроз, согласившись отправить анонимную информацию, связанную с безопасностью.
+A setting that blocks access to malicious and phishing websites and protects you from online threats
 
 [Безопасность](/adguard-for-mac/features/security.md)
 
 ## Браузерный помощник
 
-В этой статье рассказывается о Браузерном помощнике — расширении, которое позволяет управлять защитой прямо из браузера.
+An extension that complements the desktop program and allows you to manage filtering from your browser
 
 [Браузерный помощник](/adguard-for-mac/features/browser-assistant.md)
 
 ## Расширения
 
-Здесь вы узнаете, как использовать AdGuard в качестве менеджера пользовательских скриптов, чтобы расширить функциональность сайтов. Вы можете добавлять собственные скрипты, а также управлять существующими.
+A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
 
 [Расширения](/adguard-for-mac/features/extensions.md)
 
 ## Сеть
 
-Эта статья описывает дополнительные параметры, связанные с сетью, и настройки прокси, где вы можете указать, какой прокси сервер AdGuard должен использовать для обновления фильтров и скачивания новых версий.
+Additional network-related options and proxy settings
 
 [Сеть](/adguard-for-mac/features/network.md)

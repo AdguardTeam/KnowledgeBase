@@ -5,30 +5,30 @@ sidebar_position: 1
 
 ## Основные
 
-В статье рассматриваются основные функции, включая уведомления, интервалы обновления и уровень логирования.
+Basic features, including notifications, update intervals, and logging level
 
 [Общие](adguard-for-safari/features/general.md)
 
 ## Фильтры
 
-В этой статье объясняется, как AdGuard для Safari позволяет настраивать блокировку рекламы, включая различные фильтры, такие как языковые фильтры, фильтры защиты от вредоносных программ и пользовательские правила.
+Different filters that allow you to customize ad blocking
 
 [Фильтры](/adguard-for-safari/features/filters.md)
 
 ## Блокировщики контента
 
-В этом разделе объясняется, почему AdGuard для Safari состоит из шести блокировщиков контента и как они работают.
+Six thematic content blockers that conform to Apple’s restrictions
 
 [Блокировщики контента](/adguard-for-safari/features/content-blockers/content-blockers.md)
 
 ## Пользовательские правила
 
-Статья посвящена тому, как использовать AdGuard для Safari для создания и управления пользовательскими правилами, чтобы персонализировать блокировку рекламы.
+Custom filtering rules to fine-tune ad blocking
 
 [Пользовательские правила](/adguard-for-safari/features/rules.md)
 
 ## О компании
 
-Здесь вы найдёте полезные ссылки на документы о конфиденциальности, репозиторий GitHub и историю версий.
+A section with links to privacy documents, GitHub repository, and version history
 
 [О программе](/adguard-for-safari/features/about.md)

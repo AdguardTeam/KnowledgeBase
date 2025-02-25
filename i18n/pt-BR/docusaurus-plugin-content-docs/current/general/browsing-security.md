@@ -21,7 +21,7 @@ AdGuard provides the best possible protection by inspecting both the pages and a
 
 ![AdGuard warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/dangerous_website_blocked.png)
 
-### In browser extensions
+### In browser extensions {#extension}
 
 Our browser extensions can only check domain names, not full URLs. They are also unable to check subqueries. This means that if there are potentially malicious elements on the page, they will be loaded even if the page itself is from a safe domain. The extension won’t be able to protect against them. It's also important to note that the check performed is asynchronous, i.e. it happens at the same time as the page is loaded, so it’s possible that malware could be loaded as well.
 
@@ -29,27 +29,27 @@ Our browser extensions can only check domain names, not full URLs. They are also
 
 - **For Windows**: Activate the *Browsing Security* module in the *Settings* menu
 
-![Browsing Security in Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
+    ![Browsing Security in Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
 
 - **For Mac**: Enable the *Security* module in *Preferences*
 
-![Security in Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
+    ![Security in Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
 
 - **For Android**: Turn on *Browsing Security* in the *Protection* tab
 
-![Browsing security in Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
+    ![Browsing security in Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
 
 - **For iOS**: Although there’s no separate module, you can go to *Safari protection* → *Filters* → *Security* and enable the available filters. Additionally, enable *DNS protection* and select one of the AdGuard DNS servers
 
-![Security in iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
+    ![Security in iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
 
-- **For Browser extensions**: Enable *Phishing and malware protection* in the *Settings* tab. For enhanced protection, go to *Filters* → *Security* and activate available filters
+- **For Browser extensions**: Enable *Phishing and malware protection* in the *Settings* tab. For enhanced protection, go to *Filters* → *Security* and activate filters
 
-![Proteção de malware e phishing](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
+    ![Proteção de malware e phishing](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
 
 - **For Private AdGuard DNS:** Enable malware protection in *Server settings* under *Security*
 
-![Security in DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
+    ![Security in DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
 
 ## What we block
 
@@ -67,10 +67,10 @@ Any help is welcome! If you encounter a phishing or malware website, please repo
 
 ### False-positive responses
 
-Occasionally, some non-malicious websites are added to AdGuard’s filters. Fazemos o possível para reduzir a porcentagem de falsos positivos, mas eles ainda assim podem ocorrer. If you encounter this behavior from AdGuard, please report the false positive to our technical support at <support@adguard.com>.
+Occasionally, some non-malicious websites are added to AdGuard’s filters. We do our best to reduce the percentage of false positives, but they still occur. If you encounter this behavior from AdGuard, please report the false positive to our technical support at <support@adguard.com>.
 
 ## If you are suspicious about a website
 
 If you suspect that a certain website might be dangerous, check it first by using our [security check tool](https://reports.adguard.com/welcome.html).
 
-![Verificação de segurança](https://cdn.adtidy.org/content/kb/ad_blocker/general/site_warning.png)
+![Security check](https://cdn.adtidy.org/content/kb/ad_blocker/general/site_warning.png)

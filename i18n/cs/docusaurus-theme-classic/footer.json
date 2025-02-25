@@ -64,39 +64,39 @@
     "description": "The label of footer link with label=blog linking to https://adguard.com/blog/index.html"
   },
   "link.item.label.discuss": {
-    "message": "Discuss",
+    "message": "Diskutovat",
     "description": "The label of footer link with label=discuss linking to https://adguard.com/discuss.html"
   },
   "link.item.label.support_adguard": {
-    "message": "Support AdGuard",
+    "message": "Podpořit AdGuard",
     "description": "The label of footer link with label=support_adguard linking to https://adguard.com/support-adguard.html"
   },
   "link.item.label.for_windows": {
-    "message": "For Windows",
+    "message": "Pro Windows",
     "description": "The label of footer link with label=for_windows linking to https://adguard.com/adguard-windows/overview.html"
   },
   "link.item.label.for_mac": {
-    "message": "For Mac",
+    "message": "Pro macOS",
     "description": "The label of footer link with label=for_mac linking to https://adguard.com/adguard-mac/overview.html"
   },
   "link.item.label.for_android": {
-    "message": "For Android",
+    "message": "Pro Android",
     "description": "The label of footer link with label=for_android linking to https://adguard.com/adguard-android/overview.html"
   },
   "link.item.label.for_android_tv": {
-    "message": "For Android TV",
+    "message": "Pro Android TV",
     "description": "The label of footer link with label=for_android_tv linking to https://adguard.com/adguard-android-tv/overview.html"
   },
   "link.item.label.for_ios": {
-    "message": "For iOS",
+    "message": "Pro iOS",
     "description": "The label of footer link with label=for_ios linking to https://adguard.com/adguard-ios/overview.html"
   },
   "link.item.label.for_browsers": {
-    "message": "For browsers",
+    "message": "Pro prohlížeče",
     "description": "The label of footer link with label=for_browsers linking to https://adguard.com/adguard-browser-extension/overview.html"
   },
   "link.item.label.version_history": {
-    "message": "Version history",
+    "message": "Historie verzí",
     "description": "The label of footer link with label=version_history linking to https://adguard.com/versions.html"
   },
   "link.item.label.faq": {
@@ -104,19 +104,19 @@
     "description": "The label of footer link with label=faq linking to https://adguard.com/support/faq.html"
   },
   "link.item.label.status": {
-    "message": "AdGuard status",
+    "message": "Status AdGuardu",
     "description": "The label of footer link with label=status linking to https://status.adguard.com/"
   },
   "link.item.label.diagnostics": {
-    "message": "AdGuard diagnostics",
+    "message": "Diagnostika AdGuardu",
     "description": "The label of footer link with label=diagnostics linking to https://adguard.com/test.html"
   },
   "link.item.label.distribution": {
-    "message": "Distribution",
+    "message": "Distribuce",
     "description": "The label of footer link with label=distribution linking to https://adguard.com/partners.html"
   },
   "copyright": {
-    "message": "© 2009–2025 Adguard Software Ltd.",
+    "message": "© AdGuard, 2009–2023",
     "description": "The footer copyright"
   }
 }

@@ -11,54 +11,54 @@ sidebar_position: 1
 
 ## Защита Safari
 
-В статье рассказывается, как настроить блокировку рекламы и трекеров в Safari с использованием блокировщиков контента, фильтров и пользовательских правил.
+Available features and settings in the _Safari protection_ tab: _Filters_, _User rules_, and _Allowlist_
 
 [Защита Safari](/adguard-for-ios/features/safari-protection.md)
 
 ## DNS-защита
 
-В статье рассказывается, как настроить безопасный DNS-сервер, чтобы блокировать рекламу, трекеры и вредоносный контент во всех браузерах и приложениях.
+DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
 
 [DNS-защита](/adguard-for-ios/features/dns-protection/)
 
 ## Расширенная защита
 
-В статье рассказывается о фукнкции, которая позволяет блокировать сложную рекламу с помощью CSS-правил, CSS-селекторов и скриптлетов.
+A feature that allows AdGuard to apply advanced filtering rules and scriptlets to handle complex ads
 
 [Расширенная защита](/adguard-for-ios/features/advanced-protection.md)
 
 ## Активность и статистика
 
-В статье описывается вкладка Статистики, на которой можно найти подробные отчёты об активности: все запросы, заблокированные запросы и объём сэкономленного трафика.
+Statistics with detailed activity reports that allow you to monitor blocked ads, trackers, and DNS queries
 
 [Активность и статистика](/adguard-for-ios/features/activity.md)
 
 ## Помощник
 
-В статье рассказывается о Помощнике AdGuard — инструменте, который помогает управлять фильтрацией прямо из Safari, не возвращаясь в приложение.
+A tool that lets you quickly manage filtering in Safari right from the browser without opening the AdGuard interface
 
 [Помощник](/adguard-for-ios/features/assistant.md)
 
 ## Низкоуровневые настройки
 
-Низкоуровневые настройки позволяют опытным пользователям более прицельно настраивать производительность приложения, блокировку рекламы и DNS-защиту для большего контроля над конфиденциальностью и безопасностью.
+Settings that allow advanced users to fine-tune app performance and adjust DNS protection
 
 [Низкоуровневые настройки](/adguard-for-ios/features/low-level-settings.md)
 
 ## Другие функции
 
-Статья описывает дополнительные функции, такие как виджеты, автообновление и сброс статистики, а способы связаться с поддержкой.
+General settings: theme, settings and statistics reset, auto-update
 
 [Другие функции](/adguard-for-ios/features/other-features.md)
 
 ## Совместимость с AdGuard VPN
 
-Здесь мы рассказываем о Режиме интеграции, при котором Блокировщик AdGuard и AdGuard VPN могут работать одновременно несмотря на ограничения системы.
+Integrated mode that allows AdGuard Ad Blocker and AdGuard VPN to run simultaneously despite system limitations
 
 [Совместимость с AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 
 ## Разница между бесплатной и платной версией
 
-В статье сравниваются функции, доступные в платной и бесплатной версиях.
+Comparison of features between the free and paid versions
 
 [Разница между бесплатной и платной версией](/adguard-for-ios/features/free-vs-full.md)

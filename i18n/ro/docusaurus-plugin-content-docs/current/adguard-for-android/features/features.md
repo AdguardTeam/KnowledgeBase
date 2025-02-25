@@ -11,48 +11,48 @@ Acest articol se referă la AdGuard pentru Android, un blocant de reclame multif
 
 ## Protecție
 
-Info on modules in the Protection tab: Ad blocking, Tracking protection, Annoyance blocking, DNS protection, Firewall, and Browsing security.
+Available settings in the _Protection_ tab: _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Firewall_, and _Browsing security_
 
 [Protecție](/adguard-for-android/features/protection/protection.md)
 
 ## Gestionarea aplicațiilor
 
-AdGuard for Android offers app management features that allow you to control how AdGuard filters traffic for individual apps, providing options to block ads and trackers or disable protection for selected apps altogether.
+Features that allow you to customize traffic filtering and routing for each app
 
 [App management](/adguard-for-android/features/app-management.md)
 
 ## Statistici
 
-Statistici detaliate despre reclamele blocate, trackere și traficul salvat, care ne permit să monitorizăm performanța aplicației și eficiența protecției în timp.
+Detailed statistics on blocked ads, trackers, and data usage
 
 [Statistici](/adguard-for-android/features/statistics.md)
 
 ## Setări
 
-Informații despre personalizarea setărilor astfel încât să puteți ajusta blocarea reclamelor, intimitatea și setările DNS pentru a se potrivi nevoilor dumneavoastră.
+General, advanced, and low-level settings that let you select the language and theme, customize DNS protection, enable HTTPS filtering, and manage userscripts
 
 [Setări](/adguard-for-android/features/settings.md)
 
 ## Asistent
 
-Informații despre un instrument care vă permite să schimbați rapid setările aplicației sau ale site-ului și să vizualizați statistici fără a deschide interfața AdGuard.
+A tool that lets you quickly change app or website settings and view statistics without opening the AdGuard interface
 
 [Asistent](/adguard-for-android/features/assistant.md)
 
 ## Versiune gratuită vs. versiune completă
 
-Comparison of features between the free and paid versions.
+Comparison of features between the free and paid versions
 
 [Versiunea gratuită vs. versiunea completă](/adguard-for-android/features/free-vs-full.mdx)
 
 ## Integrare cu AdGuard VPN
 
-Informații despre modul în care aplicația se integrează cu serviciile VPN, permițându-vă să rulați atât AdGuard cât și AdGuard VPN în același timp fără conflicte, asigurând blocarea reclamelor și protecția vieții private împreună cu funcționalitatea VPN.
+Integrated mode that allows AdGuard Ad Blocker and AdGuard VPN to run simultaneously despite system limitations
 
 [Integrarea cu AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
 
 ## Dispozitive cu acces root
 
-AdGuard pentru Android pe dispozitivele cu root oferă funcții avansate precum filtrarea HTTPS fără instalarea unui certificat, blocarea automată a reclamelor în aplicații și protecție profundă la nivel de sistem.
+Features available in AdGuard for Android on rooted devices: HTTPS filtering in all apps, _Automatic proxy_ and _Manual proxy_ modes
 
 [Dispozitive rootate](/adguard-for-android/features/rooted.md)

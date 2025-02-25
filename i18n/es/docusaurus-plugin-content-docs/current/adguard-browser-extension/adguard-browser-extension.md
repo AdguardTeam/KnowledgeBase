@@ -11,48 +11,48 @@ Este artículo trata sobre la extensión de navegador AdGuard, que protege solo 
 
 ## Funciones
 
-Aquí se presentan las principales funciones y configuración disponibles en la Extensión de navegador AdGuard.
+Main features and settings available in the AdGuard Browser Extension
 
 [Funciones](/adguard-browser-extension/features)
 
 ## Disponibilidad
 
-En este artículo, aprenderás sobre los navegadores y plataformas compatibles donde se puede instalar la extensión.
+Supported browsers and platforms where the extension can be installed
 
 [Disponibilidad](/adguard-browser-extension/availability)
 
 ## Instalación
 
-El artículo explica cómo instalar la Extensión de navegador de AdGuard en varios navegadores compatibles.
+Installation and removal
 
 [Instalación](/adguard-browser-extension/installation)
 
 ## Compatibilidad con la aplicación independiente
 
-El artículo explica la compatibilidad de la Extensión de navegador AdGuard con las aplicaciones de escritorio de AdGuard.
+Compatibility of the AdGuard Browser Extension with the AdGuard desktop apps
 
 [Compatibilidad con la app independiente](/adguard-browser-extension/compatibility)
 
 ## Extensión de navegador AdGuard para Chrome MV3
 
-Este artículo discute la extensión de navegador AdGuard para Chrome, que es compatible con la API de Manifest V3, y cómo se diferencia de la extensión del navegador basada en el Manifest V2.
+A separate AdGuard Browser Extension compatible with the Manifest V3 API
 
 [Extensión de navegador de AdGuard para Chrome MV3](/adguard-browser-extension/mv3-version/)
 
 ## Páginas protegidas por el navegador
 
-El artículo describe cómo la extensión de navegador AdGuard administra páginas protegidas, restringiendo el bloqueo de anuncios en ciertos sitios web sensibles para garantizar la funcionalidad adecuada.
+Restricted domains whose content can’t be modified with ad blocking extensions
 
 [Páginas protegidas por el navegador](/adguard-browser-extension/protected-pages)
 
 ## Resolución de problemas
 
-Esta sección incluye guías que abordan problemas conocidos y posibles soluciones.
+Known issues and possible solutions
 
 [Resolviendo problemas](/adguard-browser-extension/solving-problems)
 
 ## Comparación con aplicaciones independientes
 
-El artículo destaca las diferencias en funcionalidad, cobertura y características entre las extensiones de AdGuard y las apps de escritorio.
+The differences in functionality and features between the AdGuard extensions and desktop apps
 
 [Comparación con aplicaciones independientes](/adguard-browser-extension/comparison-standalone)

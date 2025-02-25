@@ -11,24 +11,24 @@ sidebar_position: 1
 
 ## Главное меню
 
-В статье рассказывается об основных функциях всплывающего окна: включение или отключение блокировки рекламы, доступ к настройкам, управление фильтрами и просмотр статистики защиты.
+The main popup from which you can access settings, filtering log and statistics, and report problems
 
 [Главное меню](/adguard-browser-extension/features/main-menu.md)
 
 ## Фильтры
 
-В статье описывается, как Браузерное расширение AdGuard позволяет настраивать блокировку рекламы с различными фильтрами и пользовательскими правилами.
+Filters and user rules to fine-tune ad blocking
 
 [Фильтры](/adguard-browser-extension/features/filters.md)
 
 ## Защита от трекинга
 
-В статье объясняется, как эта функция повышает конфиденциальность, блокируя онлайн-трекеры, скрывая информацию о пользователе и предотвращая сбор данных третьими лицами.
+Settings to block cookies, UTM tags, and online analytics that collect user information
 
 [Защита от трекинга](/adguard-browser-extension/features/stealth-mode.md)
 
 ## Другие функции и опции
 
-В статье описаны дополнительные функции и информация, такие как уведомления об обновлениях, журнал фильтрации, статистика заблокированной рекламы и трекеров, ссылки на документы о конфиденциальности и репозиторий.
+General and additional settings, links to privacy documents and the repository
 
 [Другие функции и опции](/adguard-browser-extension/features/other-features.md)

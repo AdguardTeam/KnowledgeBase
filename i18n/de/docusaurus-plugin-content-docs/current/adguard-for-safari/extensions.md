@@ -21,6 +21,7 @@ Um Werbung, Tracker und störende Elemente auf Websites zu blockieren, verwendet
 - AdGuard Privacy (Datenschutz)
 - AdGuard Soziales
 - AdGuard Security (Sicherheit)
+- AdGuard Benutzerdefiniert
 - AdGuard Other (Sonstiges)
 
 Jede Erweiterung zum Blockieren von Inhalten kann bis zu 150.000 aktive Filterregeln enthalten. Die Anzahl der Regeln in den meisten Filtergruppen beträgt nicht mehr als 150.000. Wenn Sie jedoch zu viele sprachspezifische oder benutzerdefinierte Filter aktivieren, könnten Sie das Limit überschreiten. In solchen Fällen werden zufällige Regeln, die den Grenzwert überschreiten, automatisch deaktiviert, was zu fehlerhaften Blockierungen führen kann. **Wir empfehlen dringend, nur die Filter zu aktivieren, die Sie benötigen**.

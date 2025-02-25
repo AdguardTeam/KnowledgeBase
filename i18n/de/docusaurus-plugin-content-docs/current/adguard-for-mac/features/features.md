@@ -11,54 +11,54 @@ Dieser Artikel behandelt AdGuard für Mac, einem multifunktionalen Werbeblocker,
 
 ## Hauptfenster
 
-Vom Hauptfenster aus können Sie den Schutz umschalten, Statistiken über gesperrte Werbung, Tracker und Bedrohungen einsehen und auf Einstellungen, Aktualisierungen, Support und Lizenzverwaltung zugreifen.
+Main screen with statistics on blocked ads and trackers and access to main settings
 
 [Hauptfenster](/adguard-for-mac/features/main.md)
 
 ## Allgemein
 
-Hier können Sie grundlegende Einstellungen vornehmen, wie z. B. _Suchanzeigen und Website-Eigenwerbung nicht sperren_, _Sprachspezifische Filter automatisch aktivieren_, _AdGuard bei Anmeldung starten_, _Menüleistensymbol ausblenden_ und _Positivliste_.
+Basic settings to block search ads and website self-promotional ads, enable language-specific filters, and manage _Allowlist_
 
 [Allgemein](/adguard-for-mac/features/general.md)
 
 ## Filter
 
-Hier erfahren Sie, wie Sie Ihre Werbeblockierung durch die Aktivierung verschiedener Filterlisten, einschließlich sprachspezifischer Filter, Drittanbieterfilter und Benutzerregeln, anpassen können.
+Filters and user rules to fine-tune ad blocking
 
 [Filter](/adguard-for-mac/features/filters.md)
 
 ## DNS
 
-Hier finden Sie die Einstellungen für den DNS-Schutz: verfügbare Anbieter, Filter, Funktionen der Sperr- und die Positivliste.
+DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
 
 [DNS](/adguard-for-mac/features/dns.md)
 
 ## Privatsphäre (Tracking-Schutz)
 
-[Privatsphäre](/adguard-for-mac/features/stealth.md)
+Settings to block cookies, UTM tags, and online analytics that collect user information
 
-Informationen darüber, wie Sie einen erweiterten Schutz einrichten können, indem Sie Cookies, UTM-Tags, Online-Zähler und Analysesysteme löschen und es Websites nicht gestatten, Ihre IP-Adresse, Geräte- und Browserparameter, Suchanfragen und persönliche Daten zu erfassen.
+[Stealth Mode](/adguard-for-mac/features/stealth.md)
 
 ## Sicherheit
 
-Es sind Einstellungen enthalten, die Sie vor Phishing und Malware schützen. Sie können AdGuard auch dabei helfen, seine Datenbank mit bekannten Bedrohungen zu aktualisieren, indem Sie sich bereit erklären, anonyme sicherheitsrelevante Informationen zu senden.
+A setting that blocks access to malicious and phishing websites and protects you from online threats
 
 [Sicherheit](/adguard-for-mac/features/security.md)
 
 ## Browser-Assistent
 
-Informationen zur Verwaltung des AdGuard-Schutzes direkt über den Browser.
+An extension that complements the desktop program and allows you to manage filtering from your browser
 
 [Browser-Assistent](/adguard-for-mac/features/browser-assistant.md)
 
 ## Erweiterungen
 
-Hier erfahren Sie, wie Sie AdGuard als Benutzerskript-Verwaltung einsetzen können, um die Funktionalität von Websites zu erweitern. Sie können sowohl eigene Skripte hinzufügen als auch bestehende Skripte verwalten.
+A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
 
 [Erweiterungen](/adguard-for-mac/features/extensions.md)
 
 ## Netzwerk
 
-Dieser Artikel beschreibt zusätzliche netzwerkbezogene Optionen und Proxy-Einstellungen, mit denen Sie festlegen können, welchen Proxy-Server AdGuard für die Aktualisierung von Filtern, das Herunterladen neuer Versionen usw. verwenden soll.
+Additional network-related options and proxy settings
 
 [Netzwerk](/adguard-for-mac/features/network.md)

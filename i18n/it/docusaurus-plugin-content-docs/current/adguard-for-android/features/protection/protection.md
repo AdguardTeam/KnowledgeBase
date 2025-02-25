@@ -1,48 +1,48 @@
 ---
-title: Protection
+title: Protezione
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-This module contains the following settings:
+The _Protection_ tab includes the following features or settings. You’ll find a detailed article for each of them in this Knowledge Base.
 
 ## Blocco degli annunci
 
-Information on customizing ad blocking, filtering ads and trackers across apps and browsers, with filters and advanced options for system-wide ad blocking.
+Impostazioni per bloccare le inserzioni nei browser e nelle app
 
-[Ad blocking](/adguard-for-android/features/protection/ad-blocking.md)
+[Bloccaggio inserzioni](/adguard-for-android/features/protection/ad-blocking.md)
 
-## Tracking protection
+## Protezione dal tracciamento
 
-Information on how to block third-party trackers in apps and websites to protect your privacy and prevent data collection.
+Impostazioni che consenti di bloccare gli strumenti di tracciamento che raccolgono informazioni sugli utenti
 
-[Tracking protection](/adguard-for-android/features/protection/tracking-protection.md)
+[Protezione dal tracciamento](/adguard-for-android/features/protection/tracking-protection.md)
 
-## Annoyance blocking
+## Blocco dei fastidi
 
-Information on how AdGuard filters block annoyances such as cookie consent pop-ups, banners, and other intrusive elements.
+Impostazioni per bloccare fastidi come i popup di consenso ai cookie, gli elementi social e i banner che ti invitano a scaricare app mobili
 
-[Annoyance blocking](/adguard-for-android/features/protection/annoyance-blocking.md)
+[Blocco dei fastidi](/adguard-for-android/features/protection/annoyance-blocking.md)
 
 ## Protezione DNS
 
-Information on configuring secure DNS servers to help block ads, trackers, and malicious websites while protecting your privacy.
+DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
 
-[DNS protection](/adguard-for-android/features/protection/dns-protection.md)
+[Protezione DNS](/adguard-for-android/features/protection/dns-protection.md)
 
 ## Firewall
 
-The Firewall feature, which allows users to control Internet access for individual apps, block background data, and monitor network activity for enhanced privacy and data management.
+A feature that allows you to control Internet access for individual apps
 
 [Firewall](/adguard-for-android/features/protection/firewall/firewall.md)
 
-## Browsing security
+## Sicurezza di navigazione
 
-The Browsing security feature helps block access to malicious and phishing websites, protecting you from online threats.
+A feature that blocks access to malicious and phishing websites and protects you from online threats
 
-[Browsing security](/adguard-for-android/features/protection/browsing-security.md)
+[Sicurezza di navigazione](/adguard-for-android/features/protection/browsing-security.md)

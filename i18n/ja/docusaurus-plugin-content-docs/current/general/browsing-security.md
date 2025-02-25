@@ -21,56 +21,56 @@ AdGuard は、ページとページ上にロードされたすべてのオブジ
 
 ![AdGuard warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/dangerous_website_blocked.png)
 
-### AdGuard ブラウザ拡張機能の場合
+### In browser extensions {#extension}
 
 AdGuard ブラウザ拡張機能は、完全なURLではなく、ドメイン名しかチェックすることができません。 また、サブクエリをチェックすることもできません。 つまり、ページ上に悪意のある可能性のある要素がある場合、そのページ自体が安全なドメインのものであっても、読み込まれてしまうのです。 拡張機能ではそれらから保護することはできません。 また、実行されるチェックは非同期、つまりページがロードされるのと同時に行われるため、マルウェアもロードされる可能性があることにも注意が必要です。
 
 ## AdGuard製品でフィッシングとマルウェア対策を設定する方法
 
-- **Windowsの場合**: *設定* メニューで「*ブラウジングセキュリティ*」モジュールを有効にします。
+- **For Windows**: Activate the *Browsing Security* module in the *Settings* menu
 
-![Windowsのブラウジング・セキュリティ](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
+    ![Browsing Security in Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
 
-- **Macの場合**: *設定*で「*セキュリティ*」モジュールを有効にします。
+- **For Mac**: Enable the *Security* module in *Preferences*
 
-![Macのセキュリティ](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
+    ![Security in Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
 
-- **Androidの場合**: *AdGuardによる保護* タブで「*ブラウジングセキュリティ*」をオンにします。
+- **For Android**: Turn on *Browsing Security* in the *Protection* tab
 
-![Browsing security in Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
+    ![Browsing security in Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
 
-- **iOS の場合**: 個別のモジュールはありませんが、 *Safari でブロック* → *フィルタ* → *セキュリティ* に移動して、利用可能なフィルタを有効にすることができます。 追加で、「*DNS通信を保護*」を有効にし、AdGuard DNS サーバーの1つを選択します。
+- **For iOS**: Although there’s no separate module, you can go to *Safari protection* → *Filters* → *Security* and enable the available filters. Additionally, enable *DNS protection* and select one of the AdGuard DNS servers
 
-![Security in iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
+    ![Security in iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
 
-- **ブラウザ拡張機能の場合**: *設定* タブで「*フィッシングとマルウェアからの保護*」を有効にします。 保護を強化するには、 *フィルタ* → *セキュリティ* に移動して、利用可能なフィルタを有効にします。
+- **For Browser extensions**: Enable *Phishing and malware protection* in the *Settings* tab. For enhanced protection, go to *Filters* → *Security* and activate filters
 
-![フィッシングやマルウェアからの保護](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
+    ![フィッシングやマルウェアからの保護](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
 
-- **プライベートAdGuard DNSの場合:** *サーバー設定* の *セキュリティ*でマルウェア保護を有効にします。
+- **For Private AdGuard DNS:** Enable malware protection in *Server settings* under *Security*
 
-![DNSのセキュリティ](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
+    ![Security in DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
 
 ## どんなものをブロックするのか
 
-AdGuardは、2 つの主要なフィルタを維持しています。1つは、ユーザーの認証情報を盗もうとするフィッシングや詐欺的なウェブサイトから保護するもので、もう1つは、データ損失、情報漏えい、またはデバイスの損傷につながる可能性のあるマルウェアを配布することが知られているウェブサイトへのアクセスをブロックするものです。 これらのフィルタは、様々ななりすましや詐欺スキームを持つウェブサイトからもあなたを守ります。 詳しくは[こちらのウィキペディア記事を](https://en.wikipedia.org/wiki/Phishing)を参照してください。
+We maintain two primary filters: one that protects against phishing and fraudulent websites that attempt to steal user credentials, and another that blocks access to websites known to distribute malware, which could lead to data loss, information leaks, or damage to your device. These filters also protect you from websites with various scams and fraudulent schemes. For more detailed information, refer to this [Wikipedia article](https://en.wikipedia.org/wiki/Phishing).
 
 ## フィルタのメンテナンス
 
-AdGuardは、フィッシングやマルウェアのウェブサイトに関する広範なデータベースを維持し、新しい脅威が発見されるたびに定期的かつ自動的に更新されます。 質が高く信頼できるさまざまな情報源（公的なもの、他社のもの）から情報を収集し、危険なサイトに関する共通のデータベースに集約しています。
+AdGuard maintains an extensive database of phishing and malware websites, and it’s updated regularly and automatically as new threats are discovered. We collect information from a variety of reliable, high-quality sources, both public and from other companies, and aggregate it into a common database of dangerous sites.
 
-AdGuardは不審なサイトに関する苦情を自動的に分析し、データベースを最新の状態に保ち、誤検知を一掃し、今後の誤検知を防止する仕組みを導入することに多大な時間を費やしています。
+We automatically analyze complaints about suspicious sites and spend a great deal of time keeping the database up-to-date, cleaning up false positives, and implementing mechanisms to prevent them in the future.
 
 ### ご協力いただける場合
 
-どのような助けでも大歓迎しております！ フィッシングやマルウェアのウェブサイトに遭遇した場合は、 <support@adguard.com>までご報告ください。
+Any help is welcome! If you encounter a phishing or malware website, please report it to <support@adguard.com>.
 
 ### 誤検知への対応
 
-時折、悪意のないウェブサイトがAdGuardのフィルタに追加されてしまうことがあります。 誤検知の割合を減らすために最善を尽くしていますが、それでも誤検知は起こることがあります。 AdGuard で誤検知が発生した場合は、AdGuardのテクニカルサポート ( <support@adguard.com>) に報告してください。
+Occasionally, some non-malicious websites are added to AdGuard’s filters. We do our best to reduce the percentage of false positives, but they still occur. If you encounter this behavior from AdGuard, please report the false positive to our technical support at <support@adguard.com>.
 
 ## ウェブサイトが疑わしい場合
 
-あるウェブサイトが危険かもしれないと思ったら、まず[AdGuardのセキュリティ・チェック・ツール](https://reports.adguard.com/welcome.html)を使ってチェックしてください。
+If you suspect that a certain website might be dangerous, check it first by using our [security check tool](https://reports.adguard.com/welcome.html).
 
-![セキュリティチェック](https://cdn.adtidy.org/content/kb/ad_blocker/general/site_warning.png)
+![Security check](https://cdn.adtidy.org/content/kb/ad_blocker/general/site_warning.png)

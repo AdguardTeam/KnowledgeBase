@@ -5,27 +5,27 @@ sidebar_position: 4
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-The _Settings_ tab can be accessed by tapping the right-most icon at the bottom of the screen. This section contains various settings, information about your app, license & subscription, and various support resources.
+La scheda _Impostazioni_ può essere accessibile toccando l'icona più a destra in fondo allo schermo. Questa sezione contiene varie impostazioni, informazioni sulla tua app, licenza e abbonamento, e varie risorse di assistenza.
 
 ## Generali
 
-This section helps you manage the appearance and behavior of the app: you can set the color theme and language, manage notifications, and more. If you want to help the AdGuard team detect app crashes and research usability, you can enable _Auto-report crashes_ and _Send technical and interaction data_.
+Questa sezione ti aiuta a gestire l'aspetto e il comportamento dell'app: puoi impostare il tema del colore e la lingua, gestire le notifiche, e altro ancora. Se vuoi aiutare il gruppo di AdGuard a rilevare gli arresti anomali dell'app ed effettuare ricerche sull'utilizzabilità, puoi abilitare _Segnala automaticamente gli arresti anomali_ e _Invia dati tecnici e d'interazione_.
 
-![General \*mobile\_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
+![Generale \*mobile\_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
 
-Under _App and filter updates_, you can configure automatic filter updates and select an app update channel. Choose _Release_ for more stability and _Beta_ or _Nightly_ for early access to new features.
+In _Aggiornamenti dell'app e dei filtri_, puoi configurare gli aggiornamenti automatici dei filtri e selezionare un canale di aggiornamento dell'app. Scegli _Release_ per una maggiore stabilità, e _Beta_ o _Nightly_ per l'accesso anticipato a nuove funzioni.
 
-![Updates \*mobile\_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
+![Aggiornamenti \*mobile\_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
 
-### Advanced settings
+### Impostazioni avanzate
 
-_Automation_ allows you to manage AdGuard via tasker apps.
+_Automatizzazione_ ti consente di gestire AdGuard tramite gestori attività.
 
-_Watchdog_ helps protect AdGuard from being disabled by the system ([read more about Android's battery save mode](/adguard-for-android/solving-problems/background-work/)). The value you enter will be the interval in seconds between watchdog checks.
+_Watchdog_ aiuta a proteggere AdGuard dall'essere disabilitata dal sistema ([leggi di più sulla modalità di risparmio energetico di Android](/adguard-for-android/solving-problems/background-work/)). Il valore che inserisci sarà l'intervallo in secondi tra i controlli del watchdog.
 
 _Logging level_ defines what data about the app's operation should be logged. By default, the app collects the data about its events. The _Debug_ level logs more events — enable it if asked by the AdGuard team to help them get a better understanding of the problem. [Read more about collecting and sending logs](/adguard-for-android/solving-problems/log/)
 

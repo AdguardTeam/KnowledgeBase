@@ -11,30 +11,30 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 ## Startseite
 
-Dieser Artikel beschreibt alles, was Sie sehen, wenn Sie das Programm öffnen, einschließlich _Einstellungen_, _Support_, _Lizenz_ und _Über_. Hier finden Sie auch Statistiken über gesperrte Werbung und Tracker.
+On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
 
 [Startbildschirm](/adguard-for-windows/features/home-screen/)
 
 ## Einstellungen
 
-Sie können das Programm an Ihre Bedürfnisse anpassen, indem Sie nur das sperren, was Sie stört, einen vertrauenswürdigen DNS-Server verwenden, Cookies von Drittanbietern entfernen und vieles mehr.
+Theme and language settings, ad blocking customization, DNS protection, parental controls, extension management, and advanced options for expert users
 
 [Einstellungen](/adguard-for-windows/features/settings/)
 
 ## Erweiterungen
 
-Hier erfahren Sie, wie Sie AdGuard als Benutzerskript-Verwaltung einsetzen können, um die Funktionalität von Websites zu erweitern. Sie können sowohl eigene Skripte hinzufügen als auch bestehende Skripte verwalten.
+A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
 
 [Erweiterungen](/adguard-for-windows/features/extensions/)
 
 ## Netzwerk
 
-Dieser Artikel beschreibt zusätzliche netzwerkbezogene Optionen und Proxy-Einstellungen, mit denen Sie festlegen können, welchen Proxy-Server AdGuard für die Aktualisierung von Filtern, das Herunterladen neuer Versionen usw. verwenden soll.
+Additional network-related options and proxy settings
 
 [Netzwerk](/adguard-for-windows/features/network/)
 
 ## Weitere Funktionen
 
-Hier finden Sie Informationen darüber, wie Sie den Support erreichen, Ihre Lizenz verwalten, Details über die aktuelle Version und die Datenschutzerklärung einsehen, nach Updates suchen und die im Infobereich der Taskleiste verfügbaren Optionen verwenden können.
+Support, license management, tray menu options, program version and updates
 
 [Weitere Funktionen](/adguard-for-windows/features/others/)

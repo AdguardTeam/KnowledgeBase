@@ -48,7 +48,7 @@ You'll be taken to the AdGuard app, where you'll see detailed statistics about C
 - Data saved by blocking Chrome's ad or tracking requests
 - Companies that Chrome sends requests to
 
-#### App management
+#### Gestione delle app
 
 You'll be taken to the AdGuard app screen where you can disable AdGuard protection for the app.
 

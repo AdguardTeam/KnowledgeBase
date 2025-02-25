@@ -71,7 +71,7 @@ AdGuardをアンインストールまたは再インストールする必要が�
 
 ### アドバンスド方法 {#advanced}
 
-何らかの理由で通常のアンインストールがうまくいかない場合は、アドバンスド方法を試してみてください。 まず、AdGuardのエンジニアが作成した[アンインストーラーツールをダウンロード](https://cdn.adtidy.org/distr/windows/Uninstall_Utility.zip)する必要があります。 アーカイブをお使いのPCの任意のフォルダに解凍し、「**Adguard_Uninstall_Utility.exe**」ファイルを実行して、パソコンに変化を与えることを許可してください。 その後、以下の手順に行なってください:
+何らかの理由で通常のアンインストールがうまくいかない場合は、アドバンスド方法を試してみてください。 First of all, you need to [download the uninstaller tool](https://static.adtidy.org/windows/uninstaller/uninstal_utility.zip) created by our developers. アーカイブをお使いのPCの任意のフォルダに解凍し、「**Adguard_Uninstall_Utility.exe**」ファイルを実行して、パソコンに変化を与えることを許可してください。 その後、以下の手順に行なってください:
 
 - *AdGuard Ad Blocker*と *Standard*uninstall type を選択し、*Uninstall* をクリックします。
 

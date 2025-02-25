@@ -11,54 +11,54 @@ sidebar_position: 1
 
 ## Safariでブロック
 
-Safariでコンテンツブロッカー、フィルタリング、およびユーザールールを使用して広告ブロックとプライバシーを設定する方法に関する情報。
+Available features and settings in the _Safari protection_ tab: _Filters_, _User rules_, and _Allowlist_
 
 [Safariでブロック](/adguard-for-ios/features/safari-protection.md)
 
 ## DNS通信を保護
 
-このセクションでは、AdGuard for iOS で安全なDNSサーバーを設定し、広告、トラッカー、および悪意のあるコンテンツをブロックする方法について説明します。
+DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
 
 [DNS通信を保護](/adguard-for-ios/features/dns-protection/)
 
 ## 高度な保護機能
 
-この記事では、CSSルール、CSSセレクタ、スクリプトレットを使用して、YouTube広告のような複雑な広告に対処する方法について説明しております。
+A feature that allows AdGuard to apply advanced filtering rules and scriptlets to handle complex ads
 
 [高度な保護機能](/adguard-for-ios/features/advanced-protection.md)
 
 ## アクティビティと統計
 
-この記事では、ブロックされた広告、トラッカー、DNSクエリを監視できるようにする詳細なアクティビティレポートを備えた「統計」タブについて説明しております。
+Statistics with detailed activity reports that allow you to monitor blocked ads, trackers, and DNS queries
 
 [アクティビティと統計](/adguard-for-ios/features/activity.md)
 
 ## アシスタント
 
-アシスタントは、AdGuardアプリを開くことなく、直接Safariブラウザからフィルタリングを管理できるツールです。
+A tool that lets you quickly manage filtering in Safari right from the browser without opening the AdGuard interface
 
 [アシスタント](/adguard-for-ios/features/assistant.md)
 
 ## ローレベル設定
 
-ローレベル設定で、上級ユーザーはアプリのパフォーマンスを微調整したり、広告ブロックをカスタマイズしたり、DNS通信の保護を調整したりして、プライバシーとセキュリティをより細かく管理できます。
+Settings that allow advanced users to fine-tune app performance and adjust DNS protection
 
 [ローレベル設定](/adguard-for-ios/features/low-level-settings.md)
 
 ## その他の機能
 
-この記事では、ウィジェット、自動更新、統計リセットなどの追加機能と、サポートへの連絡方法について説明しております。
+General settings: theme, settings and statistics reset, auto-update
 
 [その他の機能](/adguard-for-ios/features/other-features.md)
 
 ## AdGuard VPN との併用モード
 
-AdGuardアプリとVPNサービスとの統合により、AdGuardとAdGuard VPNの両方を競合することなく同時に実行することができ、VPN機能とともに広告ブロックとプライバシー保護が保証される仕組みについての記事です。
+Integrated mode that allows AdGuard Ad Blocker and AdGuard VPN to run simultaneously despite system limitations
 
 [AdGuard VPN との併用モード](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 
 ## 無料版 vs フルバージョン（有料版）
 
-無料版とフルバージョン（有料版）の機能比較です。
+Comparison of features between the free and paid versions
 
 [無料版 vs フルバージョン（有料版）](/adguard-for-ios/features/free-vs-full.md)

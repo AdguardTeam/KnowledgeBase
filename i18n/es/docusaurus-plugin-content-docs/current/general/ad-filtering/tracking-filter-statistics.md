@@ -13,33 +13,33 @@ The *Send statistics for ad filters usage* option is disabled by default. Nothin
 
 Let's start by defining what ad filters are. Thanks to these filters, AdGuard removes ads from websites. They are manually compiled based on your complaints about ads on websites. Ad filters are an essential element of AdGuard — their quality determines the overall quality of AdGuard ad blocking.
 
-However, there is a downside. Over the years, more and more ad filters have been appearing. And the more ad filters are there, the more memory AdGuard consumes, thus slowing down the rendering of web pages. At the same time, some of the filters start to expire, gradually becoming a dead weight that has no use, only consumes memory, and slows down the program.
+However, there is a downside. Over the years, more and more ad filters have been appearing. And the more ad filters are there, the more memory AdGuard consumes, thus slowing down the rendering of web pages. Al mismo tiempo, algunos de los filtros comienzan a expirar, convirtiéndose gradualmente en un peso muerto que no tiene utilidad, solo consume memoria y ralentiza la app.
 
-### Why do we need statistics?
+### ¿Por qué necesitamos estadísticas?
 
-We want to solve the problem of outdated filtering rules once and for all. But we need your help to do so. By gathering statistics on used filtering rules, we detect and remove the rules that are no longer used. As a result, it will help all those who use AdGuard.
+Queremos resolver el problema de las reglas de filtrado obsoletas de una vez por todas. Pero necesitamos tu ayuda para hacerlo. Al recopilar estadísticas sobre las reglas de filtrado utilizadas, detectamos y eliminamos las reglas que ya no se usan. Como resultado, ayudará a todos los que usen AdGuard.
 
-If your computer is powerful enough, it won’t really affect you. But the difference will be very noticeable for users of low-power netbooks or tablets.
+Si tu computadora es lo suficientemente potente, no te afectará. Pero la diferencia será muy notable para los usuarios de netbooks o tabletas de baja potencia.
 
-### What kind of statistics will be sent?
+### ¿Qué tipo de estadísticas se enviarán?
 
-If you enable the *Send statistics for ad filters usage* option, the following information is sent periodically:
+Si habilitas la opción *Enviar estadísticas sobre el uso de filtros de anuncios*, la siguiente información se envía periódicamente:
 
-- Extension version
-- Browser type (Chrome/Firefox/Opera/Yandex.Browser/Safari).
-- List of enabled ad filters.
-- The list that consists of the following elements:
-    - *The domain name of the website*
-    - *The number of recent page views*
-    - *The list of filtering rules and Filter ID which were activated on this website*
-    - *The domain name of blocked requests is sent for URL rules* The list is created based on the website's visit statistics since the last time statistical data was sent.
+- Versión de la extensión
+- Tipo de navegador (Chrome/Firefox/Opera/Yandex.Browser/Safari).
+- Lista de filtros de anuncios habilitados.
+- La lista que consiste en los siguientes elementos:
+    - *El nombre de dominio del sitio web*
+    - *El número de visualizaciones de página recientes*
+    - *La lista de reglas de filtrado y el ID de filtro que fueron activados en este sitio web*
+    - *El nombre de dominio de las peticiones bloqueadas se envía para las reglas de URL* La lista se crea basándose en las estadísticas de visita del sitio web desde la última vez que se enviaron los datos estadísticos.
 
-The collected statistics will be sent periodically to our server for analysis and filter optimization.
+Las estadísticas recopiladas se enviarán periódicamente a nuestro servidor para análisis y optimización del filtrado.
 
-It's important to note that all the statistics we get are averaged and anonymized. We don't use these statistics for any purpose other than optimizing the filters, and we do not sell this data to third parties. You can read about it in our [Privacy policy](https://adguard.com/privacy.html).
+Es importante tener en cuenta que todas las estadísticas que obtenemos son promediadas y anonimizadas. No utilizamos estas estadísticas para ningún propósito aparte de optimizar el filtrado, y no vendemos estos datos a terceros. Puedes leer sobre esto en nuestra [Política de privacidad](https://adguard.com/privacy.html).
 
-### What does tracking filter rules statistics fraught with?
+### ¿Con qué está cargado el de las estadísticas de reglas de filtrado de seguimiento?
 
-For the vast majority of users, the change in computer speed will not be really noticeable. However, netbook and tablet users may notice a slight slowdown.
+Para la gran mayoría de usuarios, el cambio en la velocidad del ordenador no será realmente notable. Sin embargo, los usuarios de netbooks y tabletas pueden notar una ligera desaceleración.
 
-Periodically, we will send the gathered statistics to the server. The size of the transmitted data is not very large and is comparable to the size of an average web page.
+Periódicamente, enviaremos las estadísticas recopiladas al servidor. El tamaño de los datos transmitidos no es muy grande y es comparable al tamaño de una página web.
