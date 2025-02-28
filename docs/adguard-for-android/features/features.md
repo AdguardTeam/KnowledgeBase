@@ -33,6 +33,12 @@ Information about customizing settings so you can adjust ad blocking, privacy, a
 
 [Settings](/adguard-for-android/features/settings.md)
 
+## Low-level settings guide
+
+Descriptions of the low-level settings available in AdGuard for Android 4.3 and later.
+
+- [Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
+
 ## Assistant
 
 Information about a tool that lets you quickly change app or website settings and view statistics without opening the AdGuard interface.

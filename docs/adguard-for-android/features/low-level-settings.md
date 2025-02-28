@@ -239,6 +239,8 @@ Here you can enter the IP address that will be used to create a TUN interface. T
 
 If this setting is enabled, AdGuard will display the **Developer tools** icon in the upper right corner of the app's home screen.
 
+**Developer tools** is a specialized section available in AdGuard for Android v4.3 and later, designed for quick navigation and switching between features. It allows you to quickly enable or disable custom filters, access logs, enable various logs, and more.
+
 #### Detect Samsung Pay
 
 If this setting is enabled, AdGuard protection will be paused when you open the Samsung Pay app. Korean users require this feature as they experience [issues with Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) when AdGuard is enabled.
