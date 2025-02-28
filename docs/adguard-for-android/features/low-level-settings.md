@@ -1,6 +1,6 @@
 ---
 title: Low-level settings guide
-sidebar_position: 6
+sidebar_position: 5
 ---
 
 :::info
@@ -13,54 +13,63 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::caution
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
+Changing the low-level settings can cause problems with AdGuard's performance, interrupt your Internet connection, or compromise your security and privacy. Only use the low-level features only if you are an experienced user and know what you are doing, or if our support team has asked you to do so.
 
 :::
 
-To go to *Low-level settings*, open the AdGuard app and tap the gear icon in the lower right corner of the screen. Then choose *General → Advanced → Low-level settings*.
+To access *Low-level settings*, open the AdGuard app and tap the gear icon in the lower-right corner of the screen. Then select *General → Advanced → Low-level settings*.
 
 ## Low-level settings
 
-For AdGuard v4.0 for Android we've completely redesigned the low-level settings: divided them into thematic blocks, made them clearer, added validation of entered values and other safety valves, got rid of some settings, and added others.
+For AdGuard v4.x for Android we've completely redesigned the low-level settings. We have reworked the list of settings and organized them into thematic groups with improved descriptions. We also added input validation and other safety valves.
 
 ### DNS protection
 
 #### Fallback upstreams
 
-Here you can specify the fallback DNS resolver(s) to be used if the configured server is unavailable. There are three options: *Automatic DNS*, *None*, and *Custom DNS*. If no fallback server is specified, the *Automatic DNS* — the system DNS or AdGuard DNS — will be used. *None* means no fallback at all. Selecting *Custom DNS* allows you to list IPv4 and IPv6 server addresses to use as upstreams.
+Here you can specify the fallback DNS resolver(s) to use when the configured server is unavailable. Available options:
+
+- *Automatic DNS*: Select this option if you want to use the system DNS or AdGuard DNS.
+- *None*: Select this option if you do not want to have any fallback.
+- *Custom DNS*: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. These addresses will be used as upstreams.
 
 #### Fallback domains
 
-Here you can list domains that will be forwarded directly to fallback upstreams if they exist.
+Here you can list domains that will be redirected to fallback upstreams, if available. You can enter multiple domains, one per line. You can use limited wildcards.
 
 #### Detect search domains
 
-If this setting is enabled, AdGuard will detect search domains and automatically forward them to fallback upstreams.
+If this setting is enabled, AdGuard will detect DNS search domains and automatically redirect them to fallback upstreams, if available.
 
 #### Bootstrap upstreams
 
-Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* — the system DNS or AdGuard DNS — is used by default. By selecting *Custom DNS*, you can list IPv4 and IPv6 server addresses to use as bootstrap upstreams.
+Bootstrap DNS for encrypted DNS upstreams, such as DoH, DoT, and DoQ servers. Available options:
+
+- *Automatic DNS*: Select this option if you want to use the system DNS or AdGuard DNS. This option is selected by default.
+- *Custom DNS*: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. These addresses will be used as bootstrap upstreams.
 
 #### Blocking mode for adblock-style rules
 
-Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for instance, `||example.org^`).
+Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for example, `||example.org^`). Available options:
 
-- Respond with REFUSED
-- Respond with NXDOMAIN
-- Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
+- *REFUSED*: Respond with REFUSED
+- *NXDOMAIN*: Respond with NXDOMAIN
+- *Custom IP address*: Select this option to respond with a custom IP address. You will have to enter an IPv4 address for blocked A requests and an IPv6 address for blocked AAAA requests.
 
 #### Blocking mode for hosts rules
 
 Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax
-(for instance, `<ip> <domain> 0.0.0.0 example.com`).
+(for example, `<ip> <domain> 0.0.0.0 example.com`).
 
-- Respond with REFUSED
-- Respond with NXDOMAIN
-- Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
+- *REFUSED*: Respond with REFUSED
+- *NXDOMAIN*: Respond with NXDOMAIN
+- *Custom IP address*: Select this option to respond with a custom IP address. You will have to enter an IPv4 address for blocked A requests and an IPv6 address for blocked AAAA requests.
 
 #### DNS request timeout
 
-Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
+Here you can specify the timeout, in milliseconds, that AdGuard will wait for each DNS request before redirecting it to a fallback DNS resolver.
+If you have multiple upstreams, the fallback DNS will only be used after the timeouts of each upstream have expired.
+If you don’t fill in this field or enter an invalid value, the value of 5000 ms will be used.
 
 #### Blocked response TTL
 
