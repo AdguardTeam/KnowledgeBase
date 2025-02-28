@@ -111,7 +111,7 @@ Outre l'exécution du programme de désinstallation avancé dans son mode intera
 
 1. Ouvrez l’invite de commande en tapant *cmd* dans le menu Démarrer.
 2. Utilisez `/console` pour exécuter le programme de désinstallation en mode console, sans l'interface utilisateur interactive. Tous les paramètres de ligne de commande ci-dessous seront ignorés si le mode `/console` n'est pas activé.
-3. Utilisez `/adblocker` pour désinstaller AdGuard pour Windows. Il devrait ressembler à ceci :
+3. Utilisez `/adblocker` pour désinstaller AdGuard pour Windows. Elle devrait ressembler à ceci :
 
    `Adguard.UninstallUtility.exe /console /adblocker`
 

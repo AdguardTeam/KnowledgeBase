@@ -1,5 +1,5 @@
 ---
-title: Features
+title: 功能
 sidebar_position: 1
 ---
 

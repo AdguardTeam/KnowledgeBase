@@ -1,17 +1,29 @@
 ---
-title: AdGuardベータテスト
+title: AdGuard beta/nightly testing
 sidebar_position: 1
 ---
 
-AdGuardアプリは、すべての主要プラットフォーム（iOS/Android/Windows/Mac）に対応しており、定期的に各プラットフォーム版のアップデートをリリースしております。 これは、ベータテストそのものと、特にベータテスターの皆様のおかげです。 ベータテスターになりたいですか？ 以下では、AdGuardベータテスターになる方法をご紹介します。
+AdGuardアプリは、すべての主要プラットフォーム（iOS/Android/Windows/Mac）に対応しており、定期的に各プラットフォーム版のアップデートをリリースしております。 This would not be possible without beta and nightly testing and, more importantly, without our testers. Want to become one of them? Here’s how you can do it.
 
-## AdGuardベータ版テスターになる方法 {#intro}
+### Beta or nightly: what is the difference?
 
-基本要件は簡単で、AdGuardを使用し、ベータ版が利用可能になったらアップグレードし、気づいたバグをご報告いただく、という三つだけです。 However, you will need a [GitHub](https://github.com/) account to become our beta tester, so you may want to get that out of the way first.
+Both beta and nightly testing are important to make AdGuard constantly better. However, they are different, and you can choose the one that suits you more.
 
-In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/beta.html).
+The development process follows a progression from nightly to beta and then from beta to the final, stable version — release. It means that you are more likely to find bugs in nightly builds, but you get access to new features faster, almost on a daily basis. Betas are more stable, but you will get updates less often.
 
-説明を飛ばして、すぐに行動に移りたい方は、[こちら](https://surveys.adguard.com/beta_testing_program/form.html)からベータテスト参加をお申し込みください。 申請は1〜3営業日以内に審査され、メールで結果を返信いたします。
+## How to become a beta or nightly tester {#intro}
+
+Our requirements are easy: use AdGuard, upgrade to the beta/nightly version when it becomes available, and report any bugs you notice. You will need a [GitHub](https://github.com/) account to become our tester, so you may want to get that out of the way first.
+
+You will also need the device on which you will install the app and [the link to the the beta testing page](https://adguard.com/beta.html). There you will find more information on how to join our program and test AdGuard for Windows, Mac, Android, and iOS.
+
+If you want to skip the description part and get straight to the action, you can apply [here](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1-3 working days, and you'll get a reply via email.
+
+:::note
+
+To get the AdGuard for iOS beta or nightly build, first you have to install [Testflight](https://apps.apple.com/app/testflight/id899247664) on your iOS device.
+
+:::
 
 ## バグ・不具合を報告する方法 {#report-a-bug}
 
@@ -23,12 +35,12 @@ The above method is the most preferred, but you can use others if necessary:
 
 - AdGuardアプリ内の「サポート」セクションからサポートチームにメッセージを送るか、[support@adguard.com](mailto:support@adguard.com)（日本語対応）までご連絡ください。
 
-## iOS版AdGuardアプリでベータテスト用キーを有効にする方法 {#ios}
+## How to activate a beta/nightly key in the iOS app {#ios}
 
-すでにベータキーを受け取っていて、 `adguard.com` のマイ・アカウントにそのキーが追加されている場合は、アプリを開いてログイン画面（「プレミアム版でパワーアップ」→右上の「ログイン」）を開いてください。 そちらで、AdGuard アカウントの認証情報（メールアドレスとパスワード）を入力します。 そうしますと、自動的にプレミアム機能が利用できるようになります。
+If you have already received a beta key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Once there, enter the credentials from your AdGuard account. After that, the premium features will become available automatically.
 
-### 最後に
+### What else?
 
-これ以上、付け加えることはあまりありません。 わざわざ無理してバグを見つける必要はございません。 AdGuardを通常通りご利用いただけます。 ただし、バグ・不具合が見つかった場合はご報告ください。 Of course, we appreciate any additional effort.
+There is not much more to add. You don't have to go out of your way to find bugs. You can continue using AdGuard as usual. However, if you encounter a bug, please report it. Of course, we appreciate any additional effort.
 
-時折、ベータ版の最新の変更点やその他の重要なニュースを含むニュースレターをお届けいたします。 いつでも配信を停止することができます。
+Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta (in case you missed them) and other important news. You can unsubscribe from it at any time.

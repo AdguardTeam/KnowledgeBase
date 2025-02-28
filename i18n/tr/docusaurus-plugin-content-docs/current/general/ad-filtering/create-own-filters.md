@@ -197,7 +197,7 @@ Safari Converter supports a substantial subset of [basic rules](#basic-rules) an
 - `$specifichide` is implemented by scanning existing element hiding rules and removing the target domain from their `if-domain` array.
 
     - `$specifichide` rules MUST target a domain, i.e. be like this: `||example.org^$specifichide`. Rules with more specific patterns will be discarded, i.e. `||example.org/path$specifichide` will not be supported.
-    - `$specifichide` rules only cover rules that target the same domain as the rule itself, subdomains are ignored. I.e. the rule `@@||example.org^$specifichide` will disable `example.org##.banner`, but will ignore `sub.example.org##.banner`. This limitation may be lifted if [#(72](https://github.com/AdguardTeam/SafariConverterLib/issues/72) is implemented.
+    - `$specifichide` rules only cover rules that target the same domain as the rule itself, subdomains are ignored. Yani the rule `@@||example.org^$specifichide` will disable `example.org##.banner`, but will ignore `sub.example.org##.banner`. This limitation may be lifted if [#(72](https://github.com/AdguardTeam/SafariConverterLib/issues/72) is implemented.
 
 - `urlblock`, `genericblock`, `generichide`, `elemhide`, `specifichide`, and `jsinject` modifiers can be used only as a single modifier in a rule. This limitation may be lifted in the future: [#73](https://github.com/AdguardTeam/SafariConverterLib/issues/73).
 
@@ -205,7 +205,7 @@ Safari Converter supports a substantial subset of [basic rules](#basic-rules) an
 
 - `$ping` (fully supported starting with Safari 14).
 
-##### Not supported
+##### Desteklenmiyor
 
 - `$app`
 - `$header`
@@ -828,7 +828,7 @@ There is a big difference in how AdGuard determines the content type on differen
 | [$font](#font-modifier)                                       |                      ✅                      |                ✅                 |                 ✅                  |               ✅                |                     ✅                     |                     ✅                     |                  ✅                   |
 | [$image](#image-modifier)                                     |                      ✅                      |                ✅                 |                 ✅                  |               ✅                |                     ✅                     |                     ✅                     |                  ✅                   |
 | [$media](#media-modifier)                                     |                      ✅                      |                ✅                 |                 ✅                  |               ✅                |                     ✅                     |                     ✅                     |                  ✅                   |
-| [$object](#object-modifier)                                   |                      ✅                      |                ✅                 |                 ✅                  |               ✅                |                     ✅                     |                     ✅                     |                  ✅                   |
+| [$object](#object-modifier)                                   |                      ✅                      |                ✅                 |                 ✅                  |               ✅                |                     ❌                     |                     ❌                     |                  ✅                   |
 | [$other](#other-modifier)                                     |                      ✅                      |                ✅                 |                 ✅                  |               ✅                |                     ✅                     |                     ✅                     |                  ❌                   |
 | [$ping](#ping-modifier)                                       |    ✅ [*[1]](#ping-modifier-limitations)     |                ✅                 |                 ✅                  |               ✅                |                     ❌                     |                     ❌                     |                  ✅                   |
 | [$script](#script-modifier)                                   |                      ✅                      |                ✅                 |                 ✅                  |               ✅                |                     ✅                     |                     ✅                     |                  ✅                   |
@@ -886,6 +886,12 @@ The rule corresponds to requests for media files — music and video, e.g. `.mp4
 #### **`$object`** {#object-modifier}
 
 The rule corresponds to browser plugins resources, e.g. Java or Flash.
+
+:::info Uyumluluk
+
+`$object` değiştiricisine sahip kurallar Safari için AdGuard ve iOS için AdGuard tarafından desteklenmez.
+
+:::
 
 #### **`$other`** {#other-modifier}
 

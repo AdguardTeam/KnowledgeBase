@@ -27,7 +27,7 @@ The article is dedicated to how you can use AdGuard for Safari to create and man
 
 [User rules](/adguard-for-safari/features/rules.md)
 
-## About
+## 關於
 
 Here you’ll find useful links to privacy documents, GitHub repository, and version history.
 
