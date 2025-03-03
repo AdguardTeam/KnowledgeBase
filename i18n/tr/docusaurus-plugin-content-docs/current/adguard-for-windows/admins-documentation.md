@@ -7,9 +7,9 @@ Bu sayfada AdGuard'ın politika ve tercihlere ilişkin merkezi yönetiminin öze
 
 ## 1. MSI'ı indirin {#msi-download}
 
-[AdGuard MSI x86'yı](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi) indirin
+Download the [AdGuard MSI x86](https://static.adguard.com/windows/setup86.msi)
 
-[AdGuard MSI x64'ü](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi) indirin
+Download the [AdGuard MSI x64](https://static.adguard.com/windows/setup64.msi)
 
 ## 2. Ağınız için ayarları yapılandırın {#settings-configuring}
 
@@ -51,4 +51,4 @@ Uygulamanın bu şekilde kurulmasının ve elle güncellemelerin tavsiye edilmed
 
 ## 5. Test your installation {#installation-test}
 
-Hedef makinede AdGuard'ı başlatın. Ayarladığınız lisansı kullanıp kullanmadığını kontrol etmek için lisans ekranını açın. AdGuard'ın lisans anahtarını doğrulamasını sağlamak için "Durumu yenile" öğesine tıklamanız gerekebilir.
+Hedef makinede AdGuard'ı başlatın. Open the license screen to check that it is using the specified license. AdGuard'ın lisans anahtarını doğrulamasını sağlamak için "Durumu yenile" öğesine tıklamanız gerekebilir.

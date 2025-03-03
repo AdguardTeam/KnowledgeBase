@@ -41,7 +41,7 @@ If this setting is enabled, AdGuard will detect search domains and automatically
 
 Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* — the system DNS or AdGuard DNS — is used by default. By selecting *Custom DNS*, you can list IPv4 and IPv6 server addresses to use as bootstrap upstreams.
 
-#### Blocking mode for adblock-style rules
+#### Modalità di blocco per le regole in stile adblock
 
 Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for instance, `||example.org^`).
 
@@ -49,7 +49,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 - Respond with NXDOMAIN
 - Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
 
-#### Blocking mode for hosts rules
+#### Modalità di blocco per le regole degli host
 
 Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax (for instance, `<ip> <domain> 0.0.0.0 example.com`).
 
@@ -59,7 +59,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 
 #### DNS request timeout
 
-Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
+Qui, puoi specificare il tempo in millisecondi che sarà atteso da AdGuard per la risposta dal server DNS selezionato, prima di ricorrere a quello di fallback. Se non compili questo campo o inserisci un valore non valido, sarà utilizzato il valore 5000.
 
 #### Risposta TTL bloccata
 
@@ -101,7 +101,7 @@ If this setting is on, AdGuard will apply all enabled DNS filters and DNS user r
 
 - **Redirect to DNS proxy**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic by redirecting it to the local DNS proxy. The DNS server specified in the AdGuard’s DNS settings will handle all DoH traffic
 
-### Filtering
+### Filtraggio
 
 #### Capture HAR
 
@@ -113,7 +113,7 @@ Use it only for debugging purposes!
 
 #### Encrypted Client Hello
 
-Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Encrypted Client Hello* option. Utilizza un proxy DNS locale per cercare la configurazione ECH per il dominio. Se trovato, il pacchetto ClientHello sarà crittografato.
+Ogni connessione Internet crittografata ha una parte non crittografata. Questo è il primissimo pacchetto che contiene il nome del server a cui ti stai connettendo. La tecnologia Encrypted Client Hello dovrebbe risolvere questo problema e crittografare quell'ultima parte di informazioni non crittografate. To benefit from it, enable the *Encrypted Client Hello* option. Utilizza un proxy DNS locale per cercare la configurazione ECH per il dominio. Se trovata, il pacchetto Client Hello sarà crittografato.
 
 #### OCSP checking
 
@@ -137,7 +137,7 @@ If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in add
 
 If this is enabled, the *Filter DNS requests* switch will be displayed in the *Add proxy server* dialog. Use it to enable filtering of DNS requests passing through the specified proxy.
 
-### Protection
+### Protezione
 
 #### Port ranges
 
@@ -147,7 +147,7 @@ Here you can specify port ranges that should be filtered.
 
 If this setting is enabled, AdGuard will record blocked HTML elements in *Recent activity*.
 
-#### Scriplet debugging
+#### Scriptlet debugging
 
 If this setting is enabled, debugging in scriptlets will be activated, and the browser log will record when scriptlet rules are applied.
 

@@ -13,19 +13,19 @@ sidebar_position: 1
 
 3. Activa el _Modo desarrollador_.
 
-   ![Modo desarrollador \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
+    ![Modo desarrollador \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
 
 4. Haz clic en `background.html`.
 
-   ![Background \*borde](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
+    ![Background \*borde](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
 
 5. Abre la pestaña _Consola_.
 
-   ![La pestaña Consola \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
+    ![La pestaña Consola \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
 
 6. Abre el menú contextual y selecciona _Guardar como…_.
 
-   ![Guardar como \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
+    ![Guardar como \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
 
 ### Firefox
 
@@ -35,29 +35,29 @@ sidebar_position: 1
 
 3. Haz clic en _Depurar complementos_.
 
-   ![Depurar complementos \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+    ![Depurar complementos \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
 
 4. Haz clic en _Inspeccionar_.
 
-   ![Inspeccionar \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
+    ![Inspeccionar \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
 
 5. Ve a la pestaña _Consola_.
 
-   ![Consola \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
+    ![Consola \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
 
 6. Haz clic en _Guardar todos los mensajes en un archivo_.
 
-   ![Guardar \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
+    ![Guardar \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
 
 ## Enviar registros
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/browser-extension.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard se compromete a proteger tu privacidad. Seguimos estrictamente nuestra [Política de Privacidad](https://adguard.com/privacy/browser-extension.html) y no recopilamos ninguna información privada sobre los usuarios. Antes de enviar tus registros al equipo de soporte, revisa el archivo, ya que puede contener información adicional que no deseas compartir. Si contiene información personal, te recomendamos que la elimines primero.
 
 :::
 
-Now that you have collected the logs, please follow these steps to submit them to our development team:
+Ahora que has recopilado los registros, sigue estos pasos para enviarlos a nuestro equipo de desarrollo:
 
-1. Report the bug on [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
-2. Send your archive with logs and playback time to `devteam@adguard.com` and add a link to your GitHub issue. You can also upload the archive to Google Drive and add the link to it instead of attaching the file.
+1. Informa el error en [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
+2. Envía tu archivo con los registros y el tiempo de reproducción a `devteam@adguard.com` y añade un enlace a tu GitHub issue. También puedes cargar el archivo en Google Drive y agregarle el enlace en lugar de adjuntar el archivo.

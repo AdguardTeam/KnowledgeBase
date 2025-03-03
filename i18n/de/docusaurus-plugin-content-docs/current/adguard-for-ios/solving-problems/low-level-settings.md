@@ -25,9 +25,9 @@ Um die *Low-Level-Einstellungen* aufzurufen, tippen Sie auf das Zahnradsymbol un
 
 Es gibt zwei Haupttypen von Tunneln: *Split-Tunnel* und *Full-Tunnel*. Der *Split-Tunnel*-Modus sorgt für Kompatibilität von AdGuard und sogenannten „Personal VPN” Apps. Im *Full-Tunnel*-Modus kann kein anderes VPN gleichzeitig mit AdGuard zusammenarbeiten.
 
-Es gibt eine Besonderheit des *Split-Tunnel*-Modus: Wenn der DNS-Proxy nicht gut funktioniert, z. B. wenn die Antwort vom AdGuard-DNS-Server nicht rechtzeitig zurückkommt, wird iOS ihn „umgehen” und den Datenverkehr über den DNS-Server umleiten, der in den iOS-Einstellungen angegeben ist. Während dieser Zeit wird keine Werbung blockiert und der DNS-Verkehr nicht verschlüsselt.
+Es gibt eine Besonderheit des *Split-Tunnel*-Modus: Bei schlechter DNS-Proxy-Leistung, zum Beispiel wenn die Antwort vom AdGuard-DNS-Server nicht rechtzeitig zurückkommt, leitet iOS den Datenverkehr stattdessen über den in den iOS-Einstellungen angegebenen DNS-Server um. Während dieser Zeit wird keine Werbung blockiert und der DNS-Verkehr nicht verschlüsselt.
 
-Im *Full-Tunnel*-Modus wird nur der in den AdGuard-Einstellungen angegebene DNS-Server verwendet. Wenn der Server nicht reagiert, funktioniert das Internet einfach nicht. Der aktivierte *Full-Tunnel*-Modus kann die Leistung einiger Programme (z. B. Facetime) beeinträchtigen und zu Problemen bei App-Updates führen.
+Im *Full-Tunnel*-Modus wird nur der in den AdGuard-Einstellungen angegebene DNS-Server verwendet. Wenn der Server nicht reagiert, funktioniert das Internet einfach nicht. Der aktivierte *Full-Tunnel*-Modus kann die Leistung einiger Programme (z. B. FaceTime) beeinträchtigen und Probleme bei der Aktualisierung von Apps verursachen.
 
 Standardmäßig verwendet AdGuard den Modus *Split-Tunnel* als stabilste Option.
 

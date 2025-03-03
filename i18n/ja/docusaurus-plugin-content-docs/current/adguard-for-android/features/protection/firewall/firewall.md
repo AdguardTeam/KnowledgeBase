@@ -13,13 +13,13 @@ sidebar_position: 1
 
 「ファイアウォール」機能は、デバイスにインストールされているアプリごとやデバイス全体のインターネットアクセスを管理するのに役立つツールです。
 
-![ファイアウォール \*mobile\_border](https://cdn.adtidy.org/blog/new/i5y7stempFileForShare_20230614-170512.png)
+![ファイアウォール \*mobile_border](https://cdn.adtidy.org/blog/new/i5y7stempFileForShare_20230614-170512.png)
 
 ### グローバルファイアウォールルール
 
 このセクションでは、デバイス全体のインターネットアクセスを制御できます。
 
-![グローバル ファイアウォール ルール \*mobile\_border](https://cdn.adtidy.org/blog/new/xa46aScreenshot_20230706-142041_AdGuard.jpg)
+![グローバル ファイアウォール ルール \*mobile_border](https://cdn.adtidy.org/blog/new/xa46aScreenshot_20230706-142041_AdGuard.jpg)
 
 これらのルールは、デバイス上のすべてのアプリに適用されます（※特定のアプリなどに対してカスタムファイアウォールルールが設定されている場合は、そのアプリに対してはカスタムルールが優先されます）。
 
@@ -29,15 +29,15 @@ sidebar_position: 1
 
 1. 「カスタムファイアウォールルール」を開きます。 「カスタムルールがあるアプリ」の下で、「＋ アプリを追加する」をタップします。
 
-   ![カスタム ファイアウォール ルール \*mobile\_border](https://cdn.adtidy.org/blog/new/blce3Screenshot_20230706-150816_AdGuard.jpg)
+    ![カスタム ファイアウォール ルール \*mobile_border](https://cdn.adtidy.org/blog/new/blce3Screenshot_20230706-150816_AdGuard.jpg)
 
 2. 個別のルールを設定したいアプリを選択します。
 
-   ![カスタム ファイアウォール ルールにアプリを追加 \*mobile\_border](https://cdn.adtidy.org/blog/new/3k7kaScreenshot_20230706-150855_AdGuard.jpg)
+    ![カスタム ファイアウォール ルールにアプリを追加 \*mobile_border](https://cdn.adtidy.org/blog/new/3k7kaScreenshot_20230706-150855_AdGuard.jpg)
 
 3. 「利用可能なカスタムルール」で、追加したいルールを選んでタップします。 そうすると、「適用されているカスタムルール」にルールが表示されます。
 
-   ![追加されたルール \*mobile\_border](https://cdn.adtidy.org/blog/new/b4cupScreenshot_20230706-151426_AdGuard.jpg)
+    ![追加されたルール \*mobile_border](https://cdn.adtidy.org/blog/new/b4cupScreenshot_20230706-151426_AdGuard.jpg)
 
 4. アプリに対して、特定の種類の通信をブロックする必要がある場合は、スイッチを左に切り替えてください（スイッチが赤色の状態）。 その通信を許可したい場合は、スイッチを有効（緑色）のままにしてください。 **※カスタムファイアウォールルールはグローバルファイアウォールルールよりも優先されます**。グローバルファイアウォールルールを変更したりしても、カスタムルールのあるアプリには影響しません。
 
@@ -45,7 +45,7 @@ sidebar_position: 1
 
 ### 通知
 
-この機能を有効にすると、アプリがそのアプリに対して設定されているファイアウォールルールのいずれかを破ろうとしたときに通知が表示されます（たとえば、モバイルデータ通信へのアクセスが制限されているアプリがモバイル通信しようとした時など）。 すべてのアプリ、またはアプリごとに通知のオン／オフを切り替えることができます。
+If enabled, this feature notifies you when an app is attempting to violate an applicable firewall rule, e.g. attempts to access mobile data from which it is blocked. すべてのアプリ、またはアプリごとに通知のオン／オフを切り替えることができます。
 
 通知をタップするとアプリに対するファイアウォール設定を開くことができます。また、通知内の対応するボタンをタップして、そのアプリに対するすべてのファイアウォールルールを一時的に無効にすることができます。 さらに、通知内の「ミュート」ボタンをタップすると、そのアプリに対するファイアウォール通知をすべてミュートできます。
 

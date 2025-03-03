@@ -1,37 +1,37 @@
 ---
-title: Search ads and self-promotion
+title: Anuncios de búsqueda y autopromoción
 sidebar_position: 3
 ---
 
-**Disclosure.** While AdGuard provides an option to show some ads, we do not have any 'acceptable ads' program like Adblock Plus and some other ad blockers, where they take money for leaving certain ads unblocked. This isn't our way of doing business. We do not get paid for showing any of the ads, and we do not use the term 'acceptable' for a reason: the ads we might show may be, in fact, useful and not just 'acceptable'. All of this applies only to search ads and self-promotion ads.
+**Importante.** Aunque AdGuard ofrece una opción para mostrar algunos anuncios, no tenemos ningún programa de "anuncios aceptables" como Adblock Plus y algunos otros bloqueadores de anuncios, donde cobran dinero por dejar ciertos anuncios desbloqueados. Esta no es nuestra forma de hacer negocios. No recibimos pago por mostrar ninguno de los anuncios, y no utilizamos el término 'aceptable' por una razón: los anuncios que podríamos mostrar pueden ser, de hecho, útiles y no solo "aceptables". Todo esto se aplica solo a anuncios de búsqueda y anuncios de autopromoción.
 
-You can turn off the display of these ads at any time. Furthermore, we will explain which ads qualify for this definition.
+Puedes desactivar la visualización de estos anuncios en cualquier momento. Además, explicaremos cuáles anuncios califican para esta definición.
 
-### Search ads
+### Anuncios de búsqueda
 
-Search ads are ads that you see among search query results when using online search engines, such as Google, Bing, DuckDuckGo, etc.
+Los anuncios de búsqueda son anuncios que se ven entre los resultados de una consulta de búsqueda cuando se utiliza motores de búsqueda en línea, como Google, Bing, DuckDuckGo, etc.
 
-![Search ads](https://cdn.adtidy.org/content/kb/ad_blocker/general/googlead.jpg)
+![Anuncios de búsqueda](https://cdn.adtidy.org/content/kb/ad_blocker/general/googlead.jpg)
 
-These ads are always contextual: they are targeted to match the keywords you used in the query. This helps you find exactly what you are searching for. Moreover, search ads (because they go through manual moderation) are often more relevant and helpful than the rest of the search results.
+Estos anuncios siempre son contextuales: están diseñados para coincidir con las palabras clave que utilizaste en la consulta. Esto te ayuda a encontrar exactamente lo que estás buscando. Además, los anuncios de búsqueda (debido a que pasan por una moderación manual) son a menudo más relevantes y útiles que el resto de los resultados de búsqueda.
 
-Another argument in defense of search ads is that they are much less intrusive than many other ad formats.
+Otro argumento en defensa de los anuncios de búsqueda es que son mucho menos intrusivos que muchos otros formatos de anuncios.
 
-### What is websites' self-promotion?
+### ¿Qué es la autopromoción de sitios web?
 
-In principle, when an ad on a website promotes this particular website or closely related websites, social media, and so on, such an ad is considered a self-promoting one.
+En principio, cuando un anuncio en un sitio web promociona este sitio web en particular o sitios web estrechamente relacionados, redes sociales, etc., se considera que dicho anuncio es uno que se autopromociona.
 
-![Search ads](https://cdn.adtidy.org/content/kb/ad_blocker/general/echodot.jpg)
+![Anuncios de búsqueda](https://cdn.adtidy.org/content/kb/ad_blocker/general/echodot.jpg)
 
-Our general stance here is very similar to the EasyList policy regarding self-promotion ads. According to our [filter policy](../filter-policy), we should not block these ads; however, we should not make an exception if such an ad gets blocked by some rule 'alongside' a regular ad.
+Nuestra postura general aquí es muy similar a la política de EasyList con respecto a los anuncios de autopromoción. Según nuestra [política de filtrado](../filter-policy), no deberíamos bloquear estos anuncios; sin embargo, no deberíamos hacer una excepción si un anuncio de este tipo se bloquea por alguna regla "junto a" un anuncio regular.
 
-Partly, this is due to ethical reasons, but mostly because such ads are rarely too intrusive and are often useful for the visitor of the website (who is supposedly interested in this website's content).
+En parte, esto se debe a razones éticas, pero sobre todo porque tales anuncios son raramente demasiado intrusivos y a menudo son útiles para el visitante del sitio web (que supuestamente está interesado en el contenido de este sitio web).
 
-By enabling 'Search ads and self-promotion', AdGuard users can unblock some of these self-promotion ads.
+Al habilitar "Anuncios de búsqueda y autopromoción" los usuarios de AdGuard pueden desbloquear algunos de estos anuncios de autopromoción.
 
-### What ads are on the list?
+### ¿Qué anuncios están en la lista?
 
-When you enable 'Search ads and self-promotion', search ads from the following search engines are shown:
+Cuando habilitas "Anuncios de búsqueda y autopromoción", se muestran anuncios de búsqueda de los siguientes motores de búsqueda:
 
 - Google
 - Yahoo

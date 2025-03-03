@@ -11,7 +11,7 @@ sidebar_position: 8
 
 :::note
 
-Data and/or files provided in dump files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Данные и/или файлы в дампах обрабатываются в соответствии с [Политикой конфиденциальности AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
@@ -35,7 +35,7 @@ Data and/or files provided in dump files are processed in accordance with [the A
 
 :::note
 
-AdGuard для Windows имеет два запущенных процесса (`Adguard.exe` и `AdguardSvc.exe`). Поэтому вам нужно создать файл дампа отдельно для каждого процесса.
+AdGuard для Windows имеет два запущенных процесса: `Adguard.exe` и `AdguardSvc.exe`. Поэтому необходимо создать отдельный файл дампа для каждого процесса.
 
 :::
 

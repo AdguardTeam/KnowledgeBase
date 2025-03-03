@@ -11,26 +11,40 @@ Consigliamo di configurare l'autenticazione a due fattori per il tuo profilo di 
 
 ## Come configurarla
 
-1. Accedi all'account [AdGuard](https://auth.adguard.com/login.html) e vai nella scheda Impostazioni:
+1. Accedi all'account [AdGuard](https://auth.adguard.com/login.html) e vai nella scheda *Impostazioni*:
 
-![Impostazioni dell'account AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
+ ![Impostazioni dell'account AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Scorri fino alla sezione *Password e 2FA* e clicca su **Abilita**:
+1. Scorri verso il basso fino a *Autenticazione a due fattori* e abilitala:
 
-![Il pulsante Cambia *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
+ ![Attivazione/disattivazione dell'autenticazione a due fattori *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. Segui le istruzioni sullo schermo per installare un'app di autenticazione e scansiona il codice QR:
+1. Un codice verrà inviato all'indirizzo e-mail associato al tuo account AdGuard. Per abilitare 2FA, inserisci il codice e fai clic su *Abilita*.
 
-![Il codice di verifica](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
+ ![Il codice di verifica *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-***Importante***
+Dopo aver abilitato l'autenticazione a due fattori, hai due opzioni tra cui scegliere:
 
-- Salva da qualche parte il codice di backup di secondo fattore, sarà necessario per recuperare il tuo profilo nel caso in cui il tuo telefono sia smarrito o rubato;
+- *Codice e-mail una tantum*: quando accedi, ti chiederemo di inserire il codice che ti abbiamo inviato via e-mail
+
+- *Codice dall'app di autenticazione*: quando accedi, ti chiederemo un codice dalla tua app di autenticazione
+
+![Opzioni 2FA *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
+
+:::note
+
+Se utilizzi l'app di autenticazione, assicurati di salvare la **chiave impostazioni** da qualche parte. Sarà necessario recuperare il tuo profilo nel caso in cui il tuo mobile venga smarrito o rubato.
+
+![La chiave delle impostazioni nell'app di autenticazione *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
+
+:::
 
 Se tutto è stato fatto correttamente, vedrai questo al prossimo accesso al tuo profilo:
 
-![Il risultato *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+![Il risultato *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
 
-Utilizza l'app di autenticazione del tuo dispositivo mobile per leggere il codice e inserirlo. Ora dovresti essere connesso!
+:::note
 
-***NOTA***: Se ricevi un errore d'autenticazione, verifica l'orologio del tuo dispositivo. Regolalo se necessario, poiché un orologio non sincronizzato potrebbe essere la causa dell'errore.
+Se ricevi un errore d'autenticazione, verifica l'orologio del tuo dispositivo. Regolalo se necessario, poiché un orologio non sincronizzato potrebbe essere la causa dell'errore.
+
+:::

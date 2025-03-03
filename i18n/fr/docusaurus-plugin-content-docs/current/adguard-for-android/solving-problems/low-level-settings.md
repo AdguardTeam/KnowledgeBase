@@ -41,7 +41,7 @@ If this setting is enabled, AdGuard will detect search domains and automatically
 
 Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* — the system DNS or AdGuard DNS — is used by default. By selecting *Custom DNS*, you can list IPv4 and IPv6 server addresses to use as bootstrap upstreams.
 
-#### Blocking mode for adblock-style rules
+#### Mode de blocage pour les règles de type adblock
 
 Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for instance, `||example.org^`).
 
@@ -49,7 +49,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 - Respond with NXDOMAIN
 - Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
 
-#### Blocking mode for hosts rules
+#### Mode de blocage pour les règles d’hôtes
 
 Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax (for instance, `<ip> <domain> 0.0.0.0 example.com`).
 
@@ -59,7 +59,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 
 #### DNS request timeout
 
-Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
+Ici, vous pouvez spécifier le temps en millisecondes que AdGuard attendra pour la réponse du serveur DNS sélectionné avant de recourir au traitement de secours. Si vous ne remplissez pas ce champ ou si vous saisissez une valeur invalide, la valeur de 5000 sera utilisée.
 
 #### Réponse TTL bloquée
 
@@ -113,7 +113,7 @@ Use it only for debugging purposes!
 
 #### Encrypted Client Hello
 
-Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Encrypted Client Hello* option. It uses a local DNS proxy to look for the ECH configuration for the domain. If it is found, ClientHello packet will be encrypted.
+Chaque connexion Internet chiffrée comporte une partie non chiffrée. Il s'agit du tout premier paquet qui contient le nom du serveur auquel vous vous connectez. La technologie Encrypted Client Hello est censée résoudre ce problème et chiffrer ce dernier morceau d'information non chiffrée. To benefit from it, enable the *Encrypted Client Hello* option. Elle utilise un proxy DNS local pour rechercher la configuration ECH pour le domaine. Si elle est trouvée, le paquet Client Hello sera chiffré.
 
 #### OCSP checking
 
@@ -121,13 +121,13 @@ If this setting is enabled, AdGuard will perform asynchronous OCSP checks to get
 
 If an OCSP check is completed within the required timeout, AdGuard will immediately block the connection if the certificate is revoked or establish the connection if the certificate is valid.
 
-If the verification takes too long, AdGuard will allow the connection while continuing to check the certificate status in the background. If the certificate is revoked, current and future connections to the domain will be blocked.
+If the verification takes too long, AdGuard will allow the connection while continuing to check the certificate status in the background. Si le certificat est révoqué, les connexions actuelles et futures au domaine seront bloquées.
 
 #### Redirect DNS-over-HTTPS requests
 
 If this setting is enabled, AdGuard will redirect DNS-over-HTTPS requests to the local DNS proxy in addition to plain DNS requests. We recommend disabling fallback upstreams and using only encrypted DNS servers to maintain privacy.
 
-#### Filter HTTP/3
+#### Filtrer HTTP/3
 
 If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
@@ -147,7 +147,7 @@ Here you can specify port ranges that should be filtered.
 
 If this setting is enabled, AdGuard will record blocked HTML elements in *Recent activity*.
 
-#### Scriplet debugging
+#### Scriptlet debugging
 
 If this setting is enabled, debugging in scriptlets will be activated, and the browser log will record when scriptlet rules are applied.
 
@@ -225,6 +225,6 @@ Here you can enter the IP address that will be used to create a TUN interface. B
 
 ### Divers
 
-#### Detect Samsung Pay
+#### Détection de Samsung Pay
 
-If this setting is enabled, AdGuard protection will be paused while Samsung Pay is in use. Korean users require this feature as they experience [issues with Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) when AdGuard is enabled.
+Si ce paramètre est activé, la protection AdGuard sera mise en pause pendant que Samsung Pay est utilisé. Les utilisateurs coréens nécessitent cette fonctionnalité car ils rencontrent [des problèmes avec Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) lorsque AdGuard est activé.

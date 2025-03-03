@@ -5,24 +5,56 @@ sidebar_position: 6
 
 Poiché qualsiasi sforzo onesto e ben fatto dovrebbe esser ricompensato, i traduttori attivi su Crowdin possono richiedere una chiave di licenza gratuita di AdGuard e un abbonamento alla VPN.
 
-Per richiedere una **chiave di licenza di AdGuard della durata di un anno** o un **abbonamento di un anno ad AdGuard VPN**, devi tradurre almeno **500** e **2,500** parole rispettivamente.
+## How our reward system works
 
-Per verificare l'avanzamento della traduzione, apri un progetto su cui hai lavorato, fai clic sulla scheda *Rapporti* e seleziona *Il mio contributo*. Puoi sommare il numero di parole tradotte in diversi progetti per ottenere una licenza.
+### For AdGuard licenses
 
-## Ecco come funziona il nostro sistema di ricompense
+- For your first one-year Ad Blocker license, you need to translate **1,000 words**.
+- For your second license, you’ll need an **additional 1,500 words** (a total of 2,500 words).
+- All subsequent licenses require an **additional 2,500** words per license.
 
-```text
-Per la prima licenza di un anno di Adguard, devi tradurre 500 parole.
-Per la seconda licenza, devi tradurre 1.000 parole, ovvero 1.500 parole in totale.
-Tutte le licenze successive richiedono la traduzione di ulteriori 1.500 parole per licenza.
+### For AdGuard VPN licenses
 
-Per il primo anno di abbonammento ad AdGuard VPN, devi tradurre 2.500 parole.
-Tutti gli abbonamenti o rinnovi successivi richiedono la traduzione di ulteriori 2.500 parole per abbonamento.
+- The first one-year VPN subscription requires translating **3,000 words**.
+- All subsequent subscriptions or renewals require an **additional 3,000 words** per subscription.
 
-```
+:::note Limitations
 
-Basta inviarci una richiesta a [translate@adguard.com](mailto:translate@adguard.com) e otterrai la licenza, come nostro segno di gratitudine.
+As a reward for contributing, we offer licenses and subscriptions valid for a maximum of 5 years. In the case of Ad Blocker, we offer licenses that cover up to 5 devices. We do not offer lifetime licenses.
 
-Inoltre, i traduttori più attivi potrebbero ricevere lo stato di revisori in futuro, dovessero esprimere tale intenzione e, ciò, promette cose persino migliori.
+:::
 
-Ogni anno presentiamo regali con il logo di AdGuard ai nostri revisori attivi. Se desideri divenire uno di loro, ti preghiamo di scriverci a [translate@adguard.com](mailto:translate@adguard.com).
+## How to request your license
+
+Just send an email to our translators team at [translate@adguard.com](mailto:translate@adguard.com) with the following information:
+
+- Your Crowdin username
+- The projects you contributed to (Websites, Applications, Knowledge Base, etc.)
+- The email address to which you want to link your license
+- Your translation statistics (a screenshot or total word count) and the type of license you want
+
+**Email template:**
+
+> Hi AdGuard team!
+> 
+> I’ve translated more than 5,000 words in AdGuard for Android in (*your language*) — you can find my stats attached. I would like to request an AdGuard VPN license and an Ad Blocker license for that. My email is (*your email address*). My Crowdin username is (*your username*).
+
+## How to check your translation progress
+
+Open a project you have been working on, click the *Reports* tab, select *My Contribution*, scroll down, select a date range, and generate a report. It will look something like this.
+
+![Statistics *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/statistics.png)
+
+You can add up the number of words translated across different projects to qualify for a license.
+
+## Come diventare un revisore
+
+Our most active translators may be considered for proofreader status in the future. To become a proofreader, you’ll need to deliver consistently high quality translations over a period of several months.
+
+Please note that proofreaders do not receive extra licenses or benefits beyond helping more people access AdGuard products in their language. If you’re interested in becoming one of our proofreaders, please contact us at [translate@adguard.com](mailto:translate@adguard.com).
+
+## Gifts for active contributors
+
+To the best contributors, every year we send gifts with the AdGuard merch and give a shout out on our [blog](https://adguard.com/en/blog/best-contributors-2023.html).
+
+![AdGuard merch *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

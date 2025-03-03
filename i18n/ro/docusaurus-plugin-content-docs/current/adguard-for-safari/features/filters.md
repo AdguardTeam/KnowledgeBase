@@ -1,5 +1,5 @@
 ---
-title: Filters
+title: Filtre
 sidebar_position: 2
 ---
 
@@ -9,6 +9,6 @@ A filter is a list of rules written in a special syntax. Following these rules, 
 
 Filters are combined into eight thematic categories: _Ad Blocking, Privacy, Social widgets, Annoyances, Security, Language-specific filters, Custom, and Other filters_.
 
-Read more about [AdGuard filters](/general/ad-filtering/adguard-filters) or [ad filtering in general](/general/ad-filtering/how-ad-blocking-works).
+Citește mai mult despre [filtrele AdGuard](/general/ad-filtering/adguard-filters) sau [filtrarea reclamelor în general](/general/ad-filtering/how-ad-blocking-works).
 
-In the Filters tab, you can enable the whole category or separate filters. Changes in the Filters tab are reflected in the Content Blockers section (located in the General tab).
+În tab-ul Filtre, poți activa întreaga categorie sau filtre separate. Changes in the Filters tab are reflected in the Content Blockers section (located in the General tab).

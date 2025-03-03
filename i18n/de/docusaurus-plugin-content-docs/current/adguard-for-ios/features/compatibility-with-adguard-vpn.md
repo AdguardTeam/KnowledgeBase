@@ -15,9 +15,9 @@ Dennoch ist es uns gelungen, eine Lösung zu finden, um [AdGuard VPN](https://ad
 
 Im Abschnitt _Schutz_ können Sie ganz einfach zwischen zwei Apps wechseln.
 
-### How to enable compatibility mode
+### So aktivieren Sie den Kompatibilitätsmodus
 
-**If you already have AdGuard Ad Blocker when installing AdGuard VPN, integrated (compatibility) mode will turn on automatically, allowing you to use our apps at the same time.**
+**Wenn Sie bei der Installation von AdGuard VPN bereits über AdGuard Werbeblocker verfügen, wird dieser Modus automatisch aktiviert und ermöglicht Ihnen die gleichzeitige Nutzung unserer Apps.**
 
 Wenn Sie zuerst AdGuard VPN installiert haben und sich erst dann für AdGuard Werbeblocker entschieden haben, befolgen Sie diese Schritte, um die beiden Apps zusammen zu verwenden:
 

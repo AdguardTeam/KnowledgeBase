@@ -1,64 +1,64 @@
 ---
-title: Low-level Settings guide
+title: ローレベル設定の使い方ガイド
 sidebar_position: 5
 ---
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for iOS」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for iOS」についてです。 実際にどのように動作するかを確認するには、[AdGuard アプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
-## How to reach the Low-level settings
+## ローレベル設定にアクセスする方法
 
 :::caution
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
+※*ローレベル設定*を考えずに変更すると、AdGuard のパフォーマンスの悪化やインターネット接続の切断につながったり、あなたのセキュリティやプライバシーを侵害してしまう可能性があります。 これらの設定は、何をしているのかわかっている場合、またはサポートチームから指示された場合にのみ開いてください。
 
 :::
 
-To go to *Low-level settings*, tap the gear icon at the bottom right of the screen to open *Settings*. Select the *General* section and then toggle on the *Advanced mode* switch, after that the *Advanced settings* section will appear below. Tap *Advanced settings* to reach the *Low-level settings* section.
+*ローレベル設定*に移動するには、画面右下の⚙️アイコンをタップして*設定*を開きます。 *一般設定* を選択し、 *高度な設定モード* スイッチをオンにすると、その下に *詳細設定* セクションがに現れます。 *詳細設定* をタップして、 *ローレベル設定* に移動します。
 
-## Low-level settings
+## ローレベル設定
 
-### Tunnel mode
+### Tunnelモード
 
-There are two main tunnel modes: *Split* and *Full*. *Split-Tunnel* mode provides compatibility of AdGuard and so-called "Personal VPN" apps. In *Full-Tunnel* mode no other VPN can work simultaneously with AdGuard.
+主なモードは2つあります: *Split* と *Full* です。 *Split-Tunnel*モードでは、AdGuardはいわゆる「パーソナルVPN」系アプリと互換性があります。 *Full-Tunnel*モードでは、AdGuardと同時に他のVPNを使用することはできません。
 
-There is a specific feature of *Split-Tunnel* mode: if DNS proxy does not perform well, for example, if the response from the AdGuard DNS server was not returned in time, iOS will "amerce" it and reroute traffic through DNS server, specified in iOS settings. No ads are blocked at this time and DNS traffic is not encrypted.
+*Split-Tunnel*モードには特有の機能があります。DNSプロキシのパフォーマンスが低い場合（例えばAdGuard DNSサーバーからの応答がタイムリーに返ってこない場合）、iOSは代わりにiOS設定で指定されたDNSサーバーを経由してトラフィックを迂回させます。 この時、広告はブロックされておらず、DNSトラフィックは暗号化されていません。
 
-In *Full-Tunnel* mode only the DNS server specified in AdGuard settings is used. If it does not respond, the Internet will simply not work. Enabled *Full-Tunnel* mode may cause the incorrect performance of some programs (for instance, Facetime), and lead to problems with app updates.
+*Full-Tunnel*モードでは、AdGuard設定で指定されたDNSサーバーのみが使用されます。 サーバーが応答しない場合は、インターネットは機能しません。 *Full-Tunnel*モードを有効にすると、一部のプログラム（FaceTimeなど）のパフォーマンスに悪影響を与えたり、アプリのアップデートに問題が生じたりする場合があります。
 
-By default, AdGuard uses *Split-Tunnel* mode as the most stable option.
+デフォルトでは、AdGuardは最も安定したオプションとして*Split-Tunnel*モードを使用します。
 
-There is also an additional mode called *Full-Tunnel (without VPN icon)*. This is exactly the same as *Full-Tunnel* mode, but it is set up so that the VPN icon is not displayed in the system line.
+*Full-Tunnel(VPN アイコンなし)*と呼ばれる追加モードもあります。 これは*Full-Tunnel*モードと全く同じですが、システムラインにVPNアイコンが表示されないように設定されています。
 
-### Blocking mode
+### ブロックモード
 
-In this module you can select the way AdGuard will respond to DNS queries that should be blocked:
+このモジュールでは、ブロックすべきDNSクエリに対するAdGuardの応答方法を選択できます:
 
-- Default — respond with zero IP address when blocked by adblock-style rules; respond with the IP address specified in the rule when blocked by /etc/hosts-style rules
-- REFUSED — respond with REFUSED code
-- NXDOMAIN — respond with NXDOMAIN code
-- Unspecified IP — respond with zero IP address
-- Custom IP — respond with a manually set IP address
+- デフォルト：Adblockスタイルのルールによってブロックされると、ゼロIPアドレスで応答します。 /etc/hostsスタイルのルールによってブロックされると、ルールで指定されたIPアドレスで応答します。
+- REFUSED：「REFUSED」コードで応答します
+- NXDOMAIN：NXDOMAINコードで応答します。
+- Unspecified IP：ゼロIPアドレスで応答します。
+- Custom IP：手動で設定されたIPアドレスで応答します。
 
-### Block IPv6
+### IPv6をブロックする
 
-By moving the toggle to the right, you activate the blocking of IPv6 queries (AAAA requests). AAAA-type DNS requests will not be resolved, hence only IPv4 queries can be processed.
+スイッチをオンにしますと、IPv6クエリ（AAAAリクエスト）のブロックが有効になります。 AAAAタイプのDNSリクエストは解決されなくなるので、IPv4クエリしか処理できないくなります。
 
-### Blocked response TTL
+### Blocked response TTL（ブロック済み応答のTTL）
 
-Here you can set the period for a device to cache the response to a DNS request. During the specified time to live (in seconds) the request can be read from the cache without re-requesting the DNS server.
+ここでは、デバイスがDNSリクエストに対する応答のキャッシュ期間を設定できます。 指定された生存時間(秒単位)の間、リクエストはDNSサーバーに再リクエストすることなくキャッシュから読み出されます。
 
 ### Bootstrap servers
 
-For DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC a bootstrap server is required for getting the IP address of the main DNS server. If not specified, the DNS server from iOS settings is used as the bootstrap server.
+DNS-over-HTTPS、DNS-over-TLS、およびDNS-over-QUICでは、メインDNSサーバーのIPアドレスを取得するためにbootstrap（ブートストラップ）サーバーが必要です。 指定されていない場合は、iOS設定にあるDNSサーバーがブートストラップサーバーとして使用されます。
 
 ### Fallback servers
 
-Here you can specify an alternate server to which a request will be rerouted if the main server fails to respond. If not specified, the system DNS server will be used as the fallback. It is also possible to specify `none`, in this case, there will be no fallback server set and only the main DNS server will be used.
+ここでは、メインサーバーが応答しなかった場合にリクエストを再ルーティング する代替サーバー（フォールバックサーバー）を指定することができます。 指定がない場合、システムDNSサーバーがフォールバックとして使用されます。 `none`を指定することもできます。この場合、フォールバックサーバーは設定なしになり、メインDNSサーバーのみが使用されます。
 
-### Background app refresh time
+### バックグラウンドでのアプリ更新間隔
 
-Here you can select the frequency at which the application will check for filter updates while in the background. Note that update checks will not be performed more often than the specified period, but the exact intervals may not be respected.
+ここでは、AdGuardアプリがバックグラウンドでフィルタの更新チェックを行う頻度を選択できます。 更新チェックは、指定された期間よりも頻繁に実行されることはありませんが、正確な間隔は守られない可能性があることに注意してください。

@@ -9,7 +9,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-Níže naleznete seznam nejznámějších aplikací, které můžete nakonfigurovat tak, aby v AdGuardu fungovaly jako proxy servery.
+Níže je uveden seznam nejznámějších aplikací, které lze v AdGuardu nakonfigurovat jako proxy servery.
 
 :::note
 
@@ -45,7 +45,7 @@ V tomto článku uvádíme příklady nastavení některých nejoblíbenějšíc
 
 1. Zapněte hlavní přepínač Proxy a AdGuard ochranu, aby byl provoz zařízení směrován přes proxy server.
 
-    Nyní bude AdGuard přeposílat veškerý provoz přes Orbot. Pokud zakážete Orbot, připojení k Internetu bude nedostupné, dokud nezakážete nastavení odchozího proxy v AdGuardu.
+    Nyní bude AdGuard směrovat veškerý provoz přes Orbot. Pokud zakážete Orbot, připojení k Internetu bude nedostupné, dokud nezakážete nastavení odchozího proxy v AdGuardu.
 
 ### Jak používat AdGuard s PIA (Private Internet Access)
 
@@ -157,4 +157,4 @@ Před nastavením procesu byste měli odstranit aplikaci Shadowsocks z filtrová
 
 ## Omezení
 
-Existuje faktor, který může zabránit přesměrování určitého provozu přes odchozí proxy server i po konfiguraci nastavení proxy serveru AdGuard. To se může stát, pokud aplikaci nenastavíte tak, aby odesílala provoz skrze AdGuard. Chcete-li to provést, musíte přejít na **Správa aplikací**, vybrat aplikaci a zapnout **Směrovat provoz skrze AdGuard**.
+Přinejmenším jeden faktor však může zabránit tomu, aby byl určitý provoz směrován přes odchozí proxy server, a to i po konfiguraci nastavení proxy serveru AdGuard. To v případě, že samotná aplikace není nakonfigurována tak, aby odesílala svůj provoz přes AdGuard. Chcete-li to provést, musíte přejít na **Správa aplikací**, vybrat aplikaci a zapnout **Směrovat provoz skrze AdGuard**.

@@ -9,6 +9,10 @@ Tento článek je o AdGuardu pro Safari, který chrání pouze váš prohlíže�
 
 :::
 
+## Požadavky na systém
+
+Vyžaduje macOS 10.15 (Catalina). Minimální podporovaná verze prohlížeče Safari je 13 nebo novější.
+
 ## Jak nainstalovat AdGuard pro Safari {#install}
 
 AdGuard pro Safari je bezplatná aplikace uvedená v App Store. Chcete-li ji nainstalovat do zařízení, postupujte takto.
@@ -32,26 +36,12 @@ AdGuard pro Safari je bezplatná aplikace uvedená v App Store. Chcete-li ji nai
 
     ![Extensions checked](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 
-1. Aby AdGuard na webových stránkách fungoval, musí být povoleno nastavení *Blokátory obsahu*. Můžete je povolit pro všechny webové stránky nebo vybrat ty, které chcete.
+1. Aby AdGuard na webových stránkách fungoval, musí být v nastavení Safari povolena *Rozšíření*. Otevřete Safari → *Nastavení* → *Webové stránky* → *Rozšíření*. Pokud chcete povolit AdGuard na každé webové stránce, nastavte *Pro ostatní webové stránky* na *Povolit*.
 
-    :::note
-
-    Tento krok je nutný pro iOS 9.0 a novější, macOS 10.11 se Safari 10 a macOS 10.12 a novější.
-
-
-:::
-
-V macOS klikněte na *Předvolby* → *Webové stránky* → *Blokátory obsahu*. Pokud chcete povolit AdGuard na každé webové stránce, nastavte *Při návštěvě jiných webových stránek* na *Zapnuto*.
-
-![Mac Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
+![Mac Safari Content Blocker Setting](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/macos_extensions.png)
 <!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
-V iOS přejděte na *Nastavení* → *Safari* → *Blokování obsahu* a nastavte možnost *Ano*.
-
-![iOS Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
-<!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
-
-Po dokončení kroků 1-4 začne AdGuard pro Safari fungovat. Nyní můžete nakonfigurovat jeho nastavení.
+Po dokončení těchto kroků začne AdGuard pro Safari fungovat. Nyní můžete nakonfigurovat jeho nastavení.
 
 ## Jak odinstalovat AdGuard pro Safari {#uninstall}
 

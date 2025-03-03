@@ -1,14 +1,14 @@
 ---
-title: Main window
-sidebar_position: 1
+title: Fereastra principală
+sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru macOS, un blocant de reclame multifuncțional care protejează dispozitivul tău la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-The main window of AdGuard for Mac allows you to enable or disable the AdGuard protection. It also gives you a quick overview of the app’s stats: ads, trackers, and threats blocked since you’ve installed AdGuard or since your last stats reset. By clicking the gear icon, you can access settings, check for app and filter updates, contact support, and manage your license.
+The main window of AdGuard for Mac allows you to enable or disable the AdGuard protection. De asemenea, vă oferă o imagine de ansamblu rapidă a statisticilor aplicației: reclame, trackere și amenințări blocate de când ați instalat AdGuard sau de când ați efectuat ultima resetare a statisticilor. By clicking the gear icon, you can access settings, check for app and filter updates, contact support, and manage your license.
 
-![Main window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
+![Fereastra principală mobil](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)

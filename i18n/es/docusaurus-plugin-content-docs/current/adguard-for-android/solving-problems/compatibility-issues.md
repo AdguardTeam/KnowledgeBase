@@ -1,65 +1,65 @@
 ---
-title: Known compatibility issues with Android apps
+title: Problemas de compatibilidad conocidos con aplicaciones de Android
 sidebar_position: 16
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## VPN apps
+## Aplicaciones VPN
 
-If you are using AdGuard in the *Local VPN* filtering mode, you cannot run other VPN apps at the same time. To solve this problem, we suggest that you:
+Si estás utilizando AdGuard en el modo de filtrado *VPN local*, no podrás ejecutar otras aplicaciones VPN al mismo tiempo. Para solucionar este problema, te sugerimos:
 
-- Use [AdGuard VPN](https://adguard-vpn.com/welcome.html) — its *Integrated mode* allows two apps to operate simultaneously
-- Configure your VPN app to act as an [outbound proxy](../solving-problems/outbound-proxy.md) and set up a local outbound proxy using the parameters from the third-party app
-- Switch to the *Automatic proxy* mode. When you do that, AdGuard will no longer use local VPN and will reconfigure iptables instead
-- Switch to the *Manual proxy* mode. To do this, go to *Settings* → *Filtering* → *Network* → *Routing mode*
+- Usar [AdGuard VPN](https://adguard-vpn.com/welcome.html) — el *modo integrado* permite que dos aplicaciones funcionen simultáneamente
+- Configura tu aplicación VPN para que actúe como un proxy de salida [](../solving-problems/outbound-proxy.md) y configura un proxy de salida local usando los parámetros de la aplicación de terceros
+- Cambia al modo de *Proxy automático*. Cuando lo haces, AdGuard deja de utilizar la VPN local y reconfigura iptables en su lugar
+- Cambia al modo de *proxy manual*. Para ello, ve a *Configuración* → *Filtrado* → *Red* → *Modo de enrutamiento*
 
-:::note Compatibility
+:::note Compatibilidad
 
-The *Automatic proxy* mode is only accessible on rooted devices. For *Manual proxy*, rooting is required on devices running on Android 10 or later.
-
-:::
-
-## Private DNS
-
-The Private DNS feature was introduced in Android Pie. Before version Q, Private DNS didn't break AdGuard DNS filtering logic and the DNS forwarding through AdGuard worked normally. But starting from version Q, the presence of Private DNS forces apps to redirect traffic through the system resolver instead of AdGuard. See Android [devs blog](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html) for more details.
-
-- To solve the problem with Private DNS, use the `$network` rule
-
-Some device manufacturers keep Private DNS settings hidden and set 'Automatic' mode as a default one. Thus, disabling Private DNS is impossible but we can make the system think that the upstream is not valid by blocking it with a `$network` rule. For instance, if the system uses Google DNS by default, we can add rules `|8.8.4.4^$network` and `|8.8.8.8^$network` to block Google DNS.
-
-## Unsupported browsers
-
-### UC Browsers: UC Browser, UC Browser for x86, UC Mini, UC Browser HD
-
-To be able to filter HTTPS traffic, AdGuard requires the user to add a certificate to the device's trusted user certificates. Unfortunately, UC-family browsers don't trust user certificates, so AdGuard cannot perform HTTPS filtering there.
-
-- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md/)
-
-:::note Compatibility
-
-Requires root access.
+El modo *proxy automático* solo es accesible en dispositivos rooteados. Para el *Proxy manual*, se requiere root en dispositivos que funcionen con Android 10 o posterior.
 
 :::
 
-### Dolphin Browser: Dolphin Browser, Dolphin Browser Express
+## DNS privado
 
-AdGuard cannot filter its traffic when operating in the *Manual proxy* mode because this browser ignores system proxy settings.
+La función DNS privado se introdujo en Android Pie. Antes de la versión Q, el DNS privado no rompía la lógica de filtrado de AdGuard DNS y el reenvío de DNS a través de AdGuard funcionaba normalmente. Pero a partir de la versión Q, la presencia de DNS privado obliga a las aplicaciones a redirigir el tráfico a través del solucionador del sistema en lugar de AdGuard. Consulta el [blog de desarrolladores](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html) de Android para más detalles.
 
-- Use the *Local VPN* filtering mode to solve this problem
+- Para resolver el problema con DNS privado, usa la regla `$network`
 
-### Opera mini: Opera mini, Opera mini with Yandex
+Algunos fabricantes de dispositivos mantienen ocultas las configuraciones de DNS privado y establecen el modo “Automático” como predeterminado. Por lo tanto, deshabilitar el DNS privado es imposible, pero podemos hacer que el sistema piense que el upstream no es válido bloqueándolo con una regla `$network`. Por ejemplo, si el sistema usa Google DNS de forma predeterminada, podemos agregar reglas `|8.8.4.4^$network` y `|8.8.8.8^$network` para bloquear Google DNS.
 
-Opera mini drives traffic through a compression proxy by default and AdGuard is not able to decompress and filter it at the same time.
+## Navegadores no compatibles
 
-- There is no solution at this moment
+### Navegadores UC: UC Browser, UC Browser para x86, UC Mini, UC Browser HD
 
-### Puffin Browser: Puffin Browser, Puffin Browser Pro
+Para poder filtrar el tráfico HTTPS, AdGuard requiere que el usuario agregue un certificado a los certificados de usuario confiables del dispositivo. Lamentablemente, los navegadores UC no confían en los certificados de usuario, por lo que AdGuard no puede realizar el filtrado HTTPS allí.
 
-Puffin Browser drives traffic through a compression proxy by default and AdGuard is not able to decompress and filter it at the same time.
+- Para resolver este problema, mueve el certificado [al almacenamiento de certificados del sistema](../solving-problems/https-certificate-for-rooted.md/)
 
-- There is no solution at this moment
+:::note Compatibilidad
+
+Requiere acceso root.
+
+:::
+
+### Navegador Dolphin: Navegador Dolphin, Navegador Dolphin Express
+
+AdGuard no puede filtrar tu tráfico cuando opera en el modo *Proxy manual* porque este navegador ignora la configuración del proxy del sistema.
+
+- Utiliza el modo de filtrado *VPN local* para resolver este problema
+
+### Opera mini: Opera mini, Opera mini con Yandex
+
+Opera mini dirige el tráfico a través de un proxy de compresión de forma predeterminada y AdGuard no puede descomprimirlo y filtrarlo al mismo tiempo.
+
+- No hay solución en este momento
+
+### Navegador Puffin: Navegador Puffin, Navegador Puffin Pro
+
+Puffin Browser dirige el tráfico a través de un proxy de compresión por defecto y AdGuard no es capaz de descomprimirlo y filtrarlo al mismo tiempo.
+
+- No hay solución en este momento

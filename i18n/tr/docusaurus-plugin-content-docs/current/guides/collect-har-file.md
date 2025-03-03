@@ -1,5 +1,5 @@
 ---
-title: HAR dosyası nasıl toplanır
+title: HAR dosyası nasıl oluşturulur
 sidebar_position: 1
 ---
 

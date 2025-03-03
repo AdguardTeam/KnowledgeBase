@@ -1,18 +1,18 @@
 ---
-title: Integration with AdGuard VPN
-sidebar_position: 8
+title: Integrazione con AdGuard VPN
+sidebar_position: 6
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard for Android creates a local VPN to filter traffic. Thus, other VPN apps cannot be used while AdGuard for Android is running. However, both AdGuard and [AdGuard VPN](https://adguard-vpn.com/) apps have Integrated modes that let you use them together.
+AdGuard per Android crea una VPN locale per filtrare il traffico. Dunque, le altre app VPN non sono utilizzabili durante l'esecuzione di AdGuard per Android. Tuttavia, sia AdGuard che [AdGuard VPN](https://adguard-vpn.com/) dispongono di modalità Integrata per consentirti di usarle insieme.
 
-In this mode, AdGuard VPN acts as an outbound proxy server through which AdGuard Ad Blocker routes its traffic. This allows AdGuard to create a VPN interface and block ads and trackers locally, while AdGuard VPN routes all traffic through a remote server.
+In questa modalità, AdGuard VPN funge da server proxy in uscita, tramite il quale AdGuard Ad Blocker instrada il proprio traffico. Ciò consente ad AdGuard di creare un'interfaccia VPN e di bloccare localmente annunci e tracciatori, mentre AdGuard VPN instrada tutto il traffico attraverso un server remoto.
 
-If you disable AdGuard VPN, AdGuard will stop using it as an outbound proxy. If you disable AdGuard, AdGuard VPN will route traffic through its own VPN interface.
+Se disabiliti AdGuard VPN, AdGuard smetterà di usarla come un proxy in uscita. Se disabiliti AdGuard, AdGuard VPN instraderà il traffico attraverso la propria interfaccia VPN.
 
-If you have AdGuard Ad Blocker and install AdGuard VPN, the Ad Blocker app will detect it and enable _Integration with AdGuard VPN_ automatically. The same happens in reverse. Note that if you've enabled integration, you won't be able to manage app exclusions and connect to DNS servers from the AdGuard VPN app. You can specify apps to be routed through your VPN tunnel via _Settings_ → _Filtering_ → _Network_ → _Proxy_ → _Apps operating through proxy_. To select a DNS server, open AdGuard → _Protection_ → _DNS protection_ → _DNS server_.
+Se hai AdGuard Ad Blocker e installi AdGuard VPN, l'app di blocco delle inserzioni la rileverà e abiliterà automaticamente l'integrazione con AdGuard VPN. Lo stesso si verifica al contrario. Nota che se hai abilitato l'integrazione, non potrai gestire le esclusioni dell'app e connetterti ai server DNS dall'app di AdGuard VPN. Puoi specificare le app da instradare attraverso il tuo Tunnel VPN tramite _Impostazioni_ → _Filtraggio_ → _Rete dedicata_ → _Proxy_ → _App eseguite tramite proxy_. Per selezionare un server DNS, apri AdGuard → _Protezione_ → _Protezione DNS_ → _Server DNS_.

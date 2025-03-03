@@ -21,7 +21,7 @@ Para encontrar as *Configurações avançadas*, abra o AdGuard, clique no ícone
 
 ## Configurações avançadas
 
-### Network settings
+### Configurações de rede
 
 #### `network.extension.exclude.domains`
 
@@ -71,7 +71,7 @@ Tempo, em segundos, antes de enviar outra sonda de manutenção de atividade par
 
 #### `network.https.ech.enabled`
 
-Usa um proxy DNS local para procurar configurações nas listas de configurações ECH. Se encontrado, criptografa ClientHellos.
+Usa um proxy DNS local para procurar configurações nas listas de configurações ECH. Se encontrado, criptografa Client Hellos.
 
 #### `network.https.enforce.certificate.transparency`
 
@@ -89,7 +89,7 @@ Ao definir `true`, você habilita a filtragem de rede local.
 
 Ao definir `true`, você habilita a filtragem LoopBack.
 
-### DNS settings
+### Configurações de DNS
 
 #### `dns.proxy.bootstrap.ips`
 
@@ -159,7 +159,13 @@ Ativa HTTP/3 para upstreams de DNS-over-HTTPS para acelerar a conexão.
 
 Remove os parâmetros Encrypted Client Hello das respostas.
 
-### Stealth Mode settings
+#### `dns.proxy.private.relay.sequoia.workaround.enabled`
+
+Bloqueia domínios do Private Relay do macOS se o usuário tiver um firewall ativado, o que por sua vez desativa o recurso *Private Relay*.
+
+Ativar esta configuração é útil no seguinte cenário: quando o Private Relay do macOS está ativo, a filtragem não pode funcionar corretamente e deve ser desativada. Nas versões do macOS até 14, o AdGuard podia desativar automaticamente o Private Relay quando a proteção estava ativada. No entanto, a partir do macOS 15, isso não é mais possível se um Firewall estiver ativo. Ao ativar esta configuração, você pode desativar o Firewall mesmo quando está ativado, superando a limitação anterior.
+
+### Configurações do Modo Furtivo
 
 #### `stealth.antidpi.http.split.fragment.size`
 
@@ -177,7 +183,7 @@ Adiciona espaço extra entre o método HTTP e o URL e remove espaço após o cam
 
 Aqui você pode especificar o atraso, em milissegundos, após o envio do primeiro fragmento, caso a fragmentação seja realizada.
 
-### Subscription link interception settings (userscripts and filters)
+### Configurações de interceptação de link de assinatura (scripts de usuário e filtros)
 
 #### `subscription.link.interception.userscript`
 

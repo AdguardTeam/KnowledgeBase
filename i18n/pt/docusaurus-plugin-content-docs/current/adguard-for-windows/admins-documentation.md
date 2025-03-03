@@ -7,9 +7,9 @@ This page describes the features and details of AdGuard’s central management o
 
 ## 1. Download the MSI {#msi-download}
 
-Download the [AdGuard MSI x86](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi)
+Download the [AdGuard MSI x86](https://static.adguard.com/windows/setup86.msi)
 
-Download the [AdGuard MSI x64](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
+Download the [AdGuard MSI x64](https://static.adguard.com/windows/setup64.msi)
 
 ## 2. Configure the settings for your network {#settings-configuring}
 
@@ -51,4 +51,4 @@ Please note that such installation of the application and manual updates are not
 
 ## 5. Test your installation {#installation-test}
 
-On a target machine, launch AdGuard. Open the license screen to check that it uses the one you've set. You might need to click "Refresh status" to make AdGuard validate the license key.
+On a target machine, launch AdGuard. Open the license screen to check that it is using the specified license. You might need to click "Refresh status" to make AdGuard validate the license key.

@@ -1,40 +1,40 @@
 ---
-title: Основное
-sidebar_position: 2
+title: Основные
+sidebar_position: 3
 ---
 
 :::info
 
-В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
-## How to open app settings
+## Как открыть настройки приложения
 
-To configure AdGuard for Mac, click the gear icon in the upper right corner of the main window and select _Preferences_.
+Чтобы настроить AdGuard для Mac, нажмите на иконку в верхнем правом углу основного окна и выберите _Настройки_.
 
-![Main window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
+![Главное окно \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
 
-## Основное
+## Основные
 
-![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
+![Основные](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
 
-### Do not block search ads and website self-promoting ads
+### Не блокировать поисковую рекламу и саморекламу
 
-This feature prevents AdGuard from blocking [search ads and self-promotions on websites](/general/ad-filtering/search-ads). This can be useful, for example, when you’re shopping online and want to see discounts offered by some websites. Instead of adding these websites to the allowlist, you can exclude self-promotions and search ads from filtering.
+Эта функция не позволяет AdGuard блокировать [рекламу в результатах поиска и саморекламу сайтов](/general/ad-filtering/search-ads). Это может быть полезно, например, если вы хотите увидеть скидки на сайтах интернет-магазинов. Вместо того, чтобы добавлять эти сайты в белый список, вы можете исключить из фильтрации саморекламу и поисковую рекламу.
 
-### Activate language-specific filters automatically
+### Автоматически включать подходящие языковые фильтры
 
-This feature detects the language of the website you’re visiting and automatically activates appropriate filters for more accurate ad blocking. This is especially helpful if you change languages frequently.
+Эта функция определяет язык посещаемого вами сайта и автоматически активирует соответствующие фильтры для более точной блокировки рекламы. Это особенно полезно, если вы часто меняете языки.
 
-### Launch AdGuard at login
+### Запускать AdGuard при входе в систему
 
-This feature automatically launches AdGuard automatically after you restart your computer. This helps keep AdGuard protection active without having to manually open the app.
+Эта функция автоматически запускает AdGuard после перезагрузки компьютера. Это помогает поддерживать защиту AdGuard включённой без необходимости вручную открывать приложение.
 
-### Hide menu bar icon
+### Скрыть иконку меню
 
-This feature hides AdGuard’s icon from the menu bar but keeps AdGuard running in the background. If you want to disable AdGuard completely, click _Quit AdGuard_ in the main window menu.
+Эта функция скрывает иконку AdGuard из строки меню. При этом AdGuard продолжает работать в фоновом режиме. Если вы хотите полностью отключить AdGuard, нажмите _Выйти из AdGuard_ в меню главного окна.
 
 ### Белый список
 
-Websites added to this list aren’t filtered. You can also access allowlisted websites from _User rules_.
+Сайты, добавленные в этот список, не фильтруются. Вы также можете получить доступ к сайтам, включённым в разрешённый список, из _Правил пользователя_.

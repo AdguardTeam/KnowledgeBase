@@ -13,4 +13,4 @@ O módulo de proteção contra rastreamento pode ser acessado tocando na guia _P
 
 Este recurso é baseado nos filtros de incômodo do AdGuard e permite bloquear pop-ups, janelas de assistente online, notificações de cookies, solicitações para baixar aplicativos móveis e incômodos semelhantes que não são anúncios, mas ainda prejudicam sua experiência online. [Saiba mais sobre os filtros de incômodo](/general/ad-filtering/adguard-filters/#adguard-filters)
 
-![Bloqueio de elementos incômodos \*mobile\_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)
+![Bloqueio de elementos incômodos \*mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)

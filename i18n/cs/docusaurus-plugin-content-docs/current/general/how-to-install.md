@@ -1,6 +1,6 @@
 ---
 title: Jak nainstalovat AdGuard
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 Podle toho, kterou aplikaci AdGuard nebo rozšíření prohlížeče chcete nainstalovat, vyhledejte příslušný článek pomocí jednoho z těchto odkazů:

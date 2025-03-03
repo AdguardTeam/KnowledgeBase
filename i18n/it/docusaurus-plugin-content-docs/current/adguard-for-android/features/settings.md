@@ -5,154 +5,154 @@ sidebar_position: 4
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-The _Settings_ tab can be accessed by tapping the right-most icon at the bottom of the screen. This section contains various settings, information about your app, license & subscription, and various support resources.
+La scheda _Impostazioni_ può essere accessibile toccando l'icona più a destra in fondo allo schermo. Questa sezione contiene varie impostazioni, informazioni sulla tua app, licenza e abbonamento, e varie risorse di assistenza.
 
 ## Generali
 
-This section helps you manage the appearance and behavior of the app: you can set the color theme and language, manage notifications, and more. If you want to help the AdGuard team detect app crashes and research usability, you can enable _Auto-report crashes_ and _Send technical and interaction data_.
+Questa sezione ti aiuta a gestire l'aspetto e il comportamento dell'app: puoi impostare il tema del colore e la lingua, gestire le notifiche, e altro ancora. Se vuoi aiutare il gruppo di AdGuard a rilevare gli arresti anomali dell'app ed effettuare ricerche sull'utilizzabilità, puoi abilitare _Segnala automaticamente gli arresti anomali_ e _Invia dati tecnici e d'interazione_.
 
-![General \*mobile\_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
+![Generale \*mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
 
-Under _App and filter updates_, you can configure automatic filter updates and select an app update channel. Choose _Release_ for more stability and _Beta_ or _Nightly_ for early access to new features.
+In _Aggiornamenti dell'app e dei filtri_, puoi configurare gli aggiornamenti automatici dei filtri e selezionare un canale di aggiornamento dell'app. Scegli _Release_ per una maggiore stabilità, e _Beta_ o _Nightly_ per l'accesso anticipato a nuove funzioni.
 
-![Updates \*mobile\_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
+![Aggiornamenti \*mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
 
-### Advanced settings
+### Impostazioni avanzate
 
-_Automation_ allows you to manage AdGuard via tasker apps.
+_Automatizzazione_ ti consente di gestire AdGuard tramite gestori attività.
 
-_Watchdog_ helps protect AdGuard from being disabled by the system ([read more about Android's battery save mode](/adguard-for-android/solving-problems/background-work/)). The value you enter will be the interval in seconds between watchdog checks.
+_Watchdog_ aiuta a proteggere AdGuard dall'essere disabilitata dal sistema ([leggi di più sulla modalità di risparmio energetico di Android](/adguard-for-android/solving-problems/background-work/)). Il valore che inserisci sarà l'intervallo in secondi tra i controlli del watchdog.
 
-_Logging level_ defines what data about the app's operation should be logged. By default, the app collects the data about its events. The _Debug_ level logs more events — enable it if asked by the AdGuard team to help them get a better understanding of the problem. [Read more about collecting and sending logs](/adguard-for-android/solving-problems/log/)
+_Il Livello di registrazione_ definisce quali dati sull'operazione dell'app devono essere registrati. Per impostazione predefinita, l'app raccoglie i dati sui suoi eventi. Il livello _Debug_ registra più eventi: abilitalo se richiesto dal gruppo di AdGuard, per aiutarli a comprendere meglio un problema. [Leggi di più su raccolta e invio dei registri](/adguard-for-android/solving-problems/log/)
 
-![Advanced \*mobile\_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
+![Avanzate \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-The _Low-level settings_ section is for expert users. [Read more about low-level settings](/adguard-for-android/solving-problems/low-level-settings/)
+La sezione delle _Impostazioni di basso livello_ è indirizzata agli utenti esperti. [Leggi di più sulle impostazioni di basso livello](/adguard-for-android/solving-problems/low-level-settings/)
 
-![Low-level settings \*mobile\_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
+![Impostazioni di basso livello \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
-## Filtering
+## Filtraggio
 
-This section allows you to manage HTTPS filtering settings, filters, and userscripts, and set up a proxy server.
+Questa sezione ti consente di gestire le impostazioni di filtraggio HTTPS, i filtri e gli userscript, e a configurare il server di un proxy.
 
-![Filtering \*mobile\_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
+![Filtraggio \*mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
 
 ### Filtri
 
-AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the _Protection_ section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable _Basic protection_, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, _Basic protection_ will also be disabled.
+AdGuard blocca inserzioni, tracciatori e fastidi, applicando le regole dai propri filtri. La maggior parte delle funzioni della sezione _Protezione_ è alimentata da [filtri AdGuard](/general/ad-filtering/adguard-filters/#adguard-filters). Se abiliti la _Protezione di base_, questa attiverà automaticamente il filtro Base di AdGuard e il Filtro per Dispositivi. E viceversa: se disattivi entrambi i filtri, anche la _Protezione di base_ sarà disabilitata.
 
-![Filters \*mobile\_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
+![Filtri \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
-Filters enabled by default are enough for normal AdGuard operation. However, if you want to customize ad blocking, you can use other AdGuard or third-party filters. To do this, select a category and enable the filters you'd like. To add a custom filter, tap _Custom filters_ → _Add custom filter_ and enter its URL or file path.
+I filtri abilitati per impostazione predefinita sono sufficienti per il normale funzionamento di AdGuard. Tuttavia, se desideri personalizzare il processo di filtraggio delle inserzioni, puoi usare altri filtri di AdGuard o quelli di terze parti. Per farlo, seleziona una categoria e abilita i filtri desiderati. Per aggiungere un filtro personale, tocca _Filtri personalizzati_ → _Aggiungi filtro personale_ e inserisci il suo URL o il percorso del file.
 
 :::note
 
-If you activate too many filters, some websites may work incorrectly.
+Se attivi troppi filtri, alcuni siti web potrebbero non funzionare correttamente.
 
 :::
 
-[Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
+[Leggi di più sui filtri](https://adguard.com/en/blog/what-are-filters.html)
 
 ### Script utente
 
-Userscripts are mini-programs written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
+Gli script utente sono mini-programmi scritti in JavaScript che estendono la funzionalità di uno o più siti web. Per installare uno userscript, hai bisogno di un gestore speciale di script utente. AdGuard dispone di questa funzionalità e ti consente di aggiungere gli script utente tramite URL o da file.
 
-![Userscripts \*mobile\_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
+![Script utente \*mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
 #### AdGuard Extra
 
-AdGuard Extra is a custom userscript that blocks complex ads and mechanisms that reinject ads to websites.
+AdGuard Extra è uno script utente personalizzato che blocca le inserzioni complesse e i meccanismi che le reinseriscono nei siti web.
 
 #### Disable AMP
 
-Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) on the Google search results page.
+Disabilita AMP è uno script utente che disabilita le [pagine mobili accelerate](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) nella pagina dei risultati di ricerca di Google.
 
-### Rete
+### Rete dedicata
 
 #### Filtraggio HTTPS
 
-To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
+Per bloccare le inserzioni e i tracciatori in gran parte dei siti web e delle app, AdGuard ha bisogno di filtrarne il traffico HTTPS. [Leggi di più sul filtraggio HTTPS](/general/https-filtering/what-is-https-filtering)
 
-##### Security certificates
+##### Certificati di sicurezza
 
-To manage encrypted traffic, AdGuard installs its CA certificate on your device. It's safe: the traffic is filtered locally and AdGuard verifies the security of the connection.
+Per gestire il traffico crittografato, AdGuard installa il proprio certificato CA sul tuo dispositivo. È sicuro: il traffico viene filtrato localmente e AdGuard verifica la sicurezza della connessione.
 
-On older versions of Android, the certificate is installed automatically. On Android 11 and later, you need to install it manually. [Installation instructions](/adguard-for-android/solving-problems/manual-certificate/)
+Sulle versioni precedenti di Android, il certificato viene installato automaticamente. Su Android 11 e successive, devi installarlo manualmente. [Istruzioni per l'installazione](/adguard-for-android/solving-problems/manual-certificate/)
 
-The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
+Il certificato CA nell'archivio dell'utente è sufficiente per filtrare il traffico HTTPS nei browser e su alcune app. Tuttavia, esistono delle app che si fidano soltanto dei certificati dall'archivio di sistema. Per filtrare il traffico HTTPS su questi, devi installare il certificato CA di AdGuard nell'archivio di sistema. [Istruzioni](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
-##### HTTPS-filtered apps
+##### App con filtraggio HTTPS
 
-This section contains the list of apps for which AdGuard filters HTTPS traffic. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
+Questa sezione contiene l'elenco delle app per cui AdGuard filtra il traffico HTTPS. Ti preghiamo di notare che l'impostazione è applicabile a tutte le app soltanto se disponi dei certificati CA sia nell'archivio utente che nell'archivio di sistema.
 
-##### HTTPS-filtered websites
+##### Siti web con filtraggio HTTPS
 
-This setting allows you to manage websites for which AdGuard should filter HTTPS traffic.
+Quest'impostazione ti consente di gestire i siti web per cui AdGuard dovrebbe filtrare il traffico HTTPS.
 
-HTTPS filtering allows AdGuard to filter the content of requests and responses, but we never collect or store this data. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
+Il Filtraggio HTTPS consente ad AdGuard di filtrare i contenuti di richieste e risposte, senza mai raccogliere o archiviare tali dati. Tuttavia, per aumentare la sicurezza, noi [escludiamo i siti web che contengono informazioni potenzialmente sensibili dal filtraggio HTTPS](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
 
-You can also add websites that you consider necessary to exclusions by selecting one of the modes:
+Inoltre, puoi aggiungere i siti web che consideri necessari alle esclusioni, selezionando una delle modalità:
 
-- Exclude specific websites from HTTPS filtering
-- Filter HTTPS traffic only on the websites added to exclusions
+- Escludi siti web specifici dal Filtraggio HTTPS
+- Filtra il traffico HTTPS soltanto sui siti web aggiunti alle esclusioni
 
-By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. Se necessario, puoi abilitare l'opzione _Filtra siti web con certificati EV_.
+Per impostazioni predefiniti, inoltre, non filtriamo i siti web che dispongono di certificati di Convalida Estesa (EV), come i siti web finanziari. Se necessario, puoi abilitare l'opzione _Filtra siti web con certificati EV_.
 
 #### Proxy
 
-You can set up AdGuard to route all your device's traffic through your proxy server. [How to set up an outbound proxy](/adguard-for-android/solving-problems/outbound-proxy)
+Puoi configurare AdGuard per instradare tutto il traffico del tuo dispositivo attraverso il tuo proxy. [Come impostare un proxy in uscita](/adguard-for-android/solving-problems/outbound-proxy)
 
-In this section, you can also set up a third-party VPN to work with AdGuard, if your VPN provider allows it.
+In questa sezione, inoltre, puoi configurare una VPN di terze parti affinché funzioni con AdGuard, se il fornitore della tua VPN lo consente.
 
-Under _Apps operating through proxy_, you can select apps that will route their traffic through your specified proxy. If you have _Integration with AdGuard VPN_ enabled, this setting plays the role of AdGuard VPN's app exclusions: it allows you to specify apps to be routed through the AdGuard VPN tunnel.
+In _App operanti tramite proxy_, puoi selezionare le app che instraderanno il proprio traffico attraverso il tuo proxy specificato. Se hai abilitato _Integrazione con AdGuard VPN_, quest'impostazione svolge il ruolo delle esclusioni delle app di AdGuard VPN: ti consente di specificare le app da instradare attraverso il Tunnel VPN di AdGuard.
 
-#### Routing mode
+#### Modalità d'instradamento
 
-This section allows you to select the traffic filtering method.
+Questa sezione ti consente di selezionare il metodo di filtraggio del traffico.
 
-- _Local VPN_ filters traffic through a locally created VPN. This is the most reliable mode. Due to Android restrictions, it is also the only system-wide traffic filtering method available on non-rooted devices.
+- _VPN Locale_ filtra il traffico attraverso una VPN creata localmente. Questa è la modalità più affidabile. A causa delle limitazioni di Android, inoltre, è il solo metodo di filtraggio del traffico disponibile a livello di sistema, sui dispositivi senza permessi di root.
 
 :::note
 
-The _Local VPN_ mode doesn't allow AdGuard to be used simultaneously with other VPNs. To use another VPN with AdGuard, you need to reconfigure it to work in proxy mode and set up an outbound proxy in AdGuard. For AdGuard VPN, this is done automatically with the help of the [_Integrated mode_](/adguard-for-android/features/integration-with-vpn).
+La modalità _VPN Locale_ non consente che AdGuard sia usata assieme ad altre VPN. Per usare un'altra VPN con AdGuard, devi riconfigurarla affinché funzioni in modalità proxy, e configurare un proxy in uscita su AdGuard. Per AdGuard VPN, questo viene fatto automaticamente con l'aiuto della [_Modalità Integrata_](/adguard-for-android/features/integration-with-vpn).
 
 :::
 
-- _Automatic proxy_ is an alternative traffic routing method that does not require the use of a VPN. One significant advantage is that it can be run in parallel with a VPN. This mode requires root access.
+- Il _proxy automatico_ è un metodo di instradamento del traffico alternativo che non richiede l'uso di una VPN. Un vantaggio significativo è che può essere eseguito insieme a una VPN. Questa modalità richiede l'accesso di root.
 
-- _Manual proxy_ involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
+- Il _proxy manuale_ prevede la configurazione di un server proxy su una porta specifica, poi configurabile nelle impostazioni del Wi-Fi. Questa modalità richiede l'accesso di root per Android 10 e superiori.
 
 ## Licenza
 
-In this section, you can find information about your license and manage it:
+In questa sezione, puoi trovare le informazioni sulla tua licenza, e gestirla:
 
-- Buy an AdGuard license to activate [the full version's features](/adguard-for-android/features/free-vs-full)
-- Log in to your AdGuard account or enter the license key to activate your license
-- Sign up to activate your 7-day trial period if you haven't used it yet
-- Refresh the license status from the three-dots menu (:)
-- Open the AdGuard account to manage your license there
-- Reset your license — for example, if you've reached device limit for this license and want to apply another one
+- Compra una licenza AdGuard per attivare le [funzionalità della versione completa](/adguard-for-android/features/free-vs-full)
+- Accedi al tuo profilo di AdGuard o inserisci la chiave di licenza per attivare la tua licenza
+- Iscriviti per attivare il tuo periodo di prova di 7 giorni, se non lo hai ancora usato
+- Aggiorna lo stato della licenza dal menu' dei tre punti (⋮)
+- Apri il profilo di AdGuard per gestirvi la tua licenza
+- Ripristina la tua licenza: ad esempio, se hai raggiunto il limite di dispositivi per questa licenza, e desideri applicarla a un altro
 
-![License screen \*mobile\_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![Schermata della licenza \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
-## Supporto
+## Assistenza
 
-Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting _[FAQ](https://adguard.com/support/adguard_for_android.html)_ or this knowledge base before contacting support.
+Usa questa sezione se hai qualsiasi domanda o suggerimento riguardanti AdGuard per Android. Consigliamo di consultare _[FAQ](https://adguard.com/support/adguard_for_android.html)_ o queste nozioni di base prima di contattare l'assistenza.
 
-![Support \*mobile\_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
+![Assistenza \*mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
-If you notice a missed ad, please report it via _Report incorrect blocking_.
+Se noti un'inserzione non bloccata, segnalala tramite _Segnala bloccaggio scorretto_.
 
-For unexpected app behavior, select _Report a bug_. If possible, describe your problem in detail and add app logs. [How to describe an issue](/guides/report-bugs/#how-to-describe-a-problem)
+Per i comportamenti inaspettati dell'app, seleziona _Segnala un bug_. Se possibile, descrivi il tuo problema nei dettagli e aggiungi i registri dell'app. [Come descrivere un problema](/guides/report-bugs/#how-to-describe-a-problem)
 
-For your suggestions, use _Request a feature_.
+Per i tuoi suggerimenti, usa _Richiedi una funzione_.
 
 :::note
 
-GitHub is an alternative way to report bugs and suggest new features. [Instructions and repository links](/guides/report-bugs/#adguard-for-android)
+GitHub è un metodo alternativo per segnalare i bug e suggerire nuove funzionalità. [Istruzioni e collegamenti del dispensario](/guides/report-bugs/#adguard-for-android)
 
 :::

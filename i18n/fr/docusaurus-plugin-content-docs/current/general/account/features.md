@@ -11,10 +11,10 @@ Dans la section *Paramètres* de votre compte AdGuard, vous pouvez mettre à jou
 
 Dans cette section, vous pouvez également gérer vos préférences de messagerie :
 
-- recevoir des e-mails opérationnels,
-- recevoir la newsletter mensuelle de AdGuard,
-- recevoir des e-mails concernant les offres et promos AdGuard,
-- envoyer des accusés de réception à AdGuard après l'ouverture des e-mails.
+- Recevoir la lettre d'information d'AdGuard
+- Recevoir des e-mails opérationnels
+- Envoyer les accusés de réception à AdGuard
+- Préférences de désinscription
 
 ## Gestion des licences
 
@@ -27,12 +27,12 @@ Dans la section *Licences* , vous pouvez gérer vos licences et les appareils qu
 - surclassées,
 - annulées. Vous pouvez également mettre à jour vos informations de paiement.
 
-Les appareils liés à vos licences du Bloqueur AdGuard peuvent être déliés ou renommés. Vous pouvez délier les appareils inutilisés en cliquant sur l'icône en forme de croix à côté d'eux.
+Les appareils liés à vos licences du Bloqueur AdGuard peuvent être déliés ou renommés. Pour dissocier les appareils inutilisés, cliquez sur le nombre d'appareils liés à côté de *Appareils*, puis sélectionnez la flèche droite → *Supprimer*.
 
 ## Afficher les achats
 
-La section Historique des achats affiche toutes les licences que vous avez déjà achetées en utilisant le compte de messagerie avec lequel vous avez enregistré votre compte AdGuard. Vous y trouverez également des informations sur la date d'achat, l'ID de commande, le mode de paiement et le coût de l'achat.
+La section *Achats* affiche toutes les licences que vous avez déjà achetées en utilisant le compte de courriel avec lequel vous avez enregistré votre compte AdGuard. Vous y trouverez également des informations sur la date d'achat, l'ID de commande, le mode de paiement et le coût de l'achat.
 
-## Contacter l'assistance
+## Activité
 
-L'onglet Assistance contient des liens utiles pour vous aider à résoudre des problèmes ou à trouver des réponses à vos questions sur les produits AdGuard. Ils sont divisés en six sections : FAQ, Envoyer un rapport de bug/une demande de fonctionnalité, Signaler un blocage incorrect, Contacter le support, Base de connaissances et Discuter.
+L'onglet *Activité* vous permet de surveiller l'activité de connexion de votre compte AdGuard. L'adresse électronique utilisée, le lieu et la date de connexion y sont affichées. Vous pouvez également filtrer les enregistrements par produit : *Tous les produits*, *Bloqueur AdGuard*, *AdGuard VPN*, *AdGuard DNS*.

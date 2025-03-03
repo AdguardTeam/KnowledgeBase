@@ -1,17 +1,29 @@
 ---
-title: Testovací beta program AdGuard
+title: Testovací beta/nightly program AdGuard
 sidebar_position: 1
 ---
 
-Aplikace AdGuard existuje prakticky pro všechny hlavní platformy a pro všechny pravidelně vydáváme aktualizace. To by nebylo možné bez beta testování a hlavně bez beta testerů. Chcete se stát jedním z nich? Zde se dozvíte, jak to můžete udělat.
+Aplikace AdGuard existuje prakticky pro všechny hlavní platformy a pro všechny pravidelně vydáváme aktualizace. To by nebylo možné bez beta a nightly testování a hlavně bez našich testerů. Chcete se stát jedním z nich? Zde se dozvíte, jak to můžete udělat.
 
-## Jak se stát beta testerem {#intro}
+### Beta nebo nightly: jaký je v tom rozdíl?
 
-Naše požadavky jsou jednoduché: používejte AdGuard, přejděte na beta verzi až bude k dispozici a nahlaste všechny zjištěné chyby. Abyste se mohli stát naším beta testerem, budete potřebovat účet [GitHub](https://github.com/), takže si to možná budete chtít nejprve vyřídit.
+Beta i nightly testování jsou důležité pro neustálé zlepšování AdGuardu. Jsou však různé a vy si můžete vybrat tu, která vám více vyhovuje.
 
-V každém případě jsou všechny potřebné informace shromážděny na [vyhrazené stránce](https://adguard.com/beta.html).
+Proces vývoje probíhá postupně od verze nightly k beta verzi a poté od beta verze ke konečné stabilní verzi — hlavní. To znamená, že je pravděpodobnější, že v nightly sestaveních najdete chyby, ale získáte přístup k novým funkcím rychleji, téměř denně. Betaverze jsou stabilnější, ale aktualizace budete dostávat méně často.
+
+## Jak se stát beta nebo nightly testerem {#intro}
+
+Naše požadavky jsou jednoduché: používejte AdGuard, přejděte na beta/nightly verzi až bude k dispozici a nahlaste všechny zjištěné chyby. Budete potřebovat účet [GitHub](https://github.com/), takže si to možná budete chtít nejprve vyřídit.
+
+Budete také potřebovat zařízení, na které budete aplikaci instalovat a [odkaz na stránku beta testování](https://adguard.com/beta.html). Tam najdete další informace o tom, jak se zapojit do našeho programu a otestovat AdGuard pro Windows, Mac, Android a iOS.
 
 Pokud chcete přeskočit část s popisem a přejít rovnou k akci, můžete se přihlásit [zde](https://surveys.adguard.com/beta_testing_program/form.html). Vaše žádost bude zkontrolována během 1-3 pracovních dnů a odpověď obdržíte e-mailem.
+
+:::note
+
+Chcete-li získat beta nebo nightly sestavení AdGuardu pro iOS, musíte nejprve do svého zařízení se systémem iOS nainstalovat [aplikaci Testflight](https://apps.apple.com/app/testflight/id899247664).
+
+:::
 
 ## Jak nahlásit chybu {#report-a-bug}
 
@@ -23,7 +35,7 @@ Výše uvedená metoda je nejvhodnější, ale v případě potřeby můžete po
 
 - Pošlete e-mail našemu týmu podpory z karty Podpora v aplikaci nebo napište přímo na adresu [support@adguard.com](mailto:support@adguard.com).
 
-## Jak aktivovat klíč pro beta verzi v aplikaci pro iOS {#ios}
+## Jak aktivovat klíč pro beta/ nightly v aplikaci pro iOS {#ios}
 
 Pokud jste již obdrželi klíč pro beta verzi a je uveden ve vašem účtu `adguard.com`, přejděte do aplikace a otevřete část s licencí (Získat Premium). Tam zadejte přihlašovací údaje z AdGuard účtu. Poté se automaticky zpřístupní prémiové funkce.
 

@@ -1,72 +1,72 @@
 ---
-title: How to collect AdGuard logs
+title: Comment collecter les journaux AdGuard
 sidebar_position: 3
 ---
 
 :::info
 
-Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment cela fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
+
+::note
+
+Les données et/ou les fichiers fournis dans les journaux sont traités conformément à [la Politique de confidentialité d'AdGuard](https://adguard.com/en/privacy.html).
+
+:::
+
+Pour analyser et diagnostiquer les différents problèmes susceptibles de survenir, le service d'assistance d'AdGuard peut avoir besoin des fichiers journaux d'AdGuard. Ces fichiers contiennent des enregistrements d'erreurs et d'autres événements qui se produisent avec le logiciel. Vous trouverez ci-dessous de brèves instructions décrivant comment obtenir les fichiers journaux et les envoyer à notre service d'assistance si nécessaire.
 
 :::note
 
-Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+AdGuard s'engage à protéger votre vie privée. Nous suivons strictement notre [Politique de confidentialité](https://adguard.com/privacy/windows.html) et ne collectons aucune information privée sur les utilisateurs. Avant d'envoyer vos journaux à l'équipe d'assistance, veuillez consulter le fichier car il peut contenir des informations supplémentaires que vous ne souhaitez pas partager. S'il contient de telles informations personnelles, nous vous recommandons de les supprimer au préalable.
 
 :::
 
-To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need AdGuard log files. These files contain records about errors and other events that occurr with the software. Below is the brief instruction describing the way to get the log files and send them to the support service if necessary.
+### Journaux de débogage {#debug-logs}
 
-:::note
+1. Ouvrez les paramètres d'AdGuard. Accédez à la section *Paramètres généraux* , faites défiler vers le bas de l'écran et basculez le *Niveau de journalisation* sur *Débogage*.
 
-AdGuard s'engage à protéger votre vie privée. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Avant d'envoyer vos journaux à l'équipe d'assistance, veuillez consulter le fichier car il peut contenir des informations supplémentaires que vous ne souhaitez pas partager. S'il contient de telles informations personnelles, nous vous recommandons de les supprimer au préalable.
+    ![Niveau de journalisation du débogage *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
-:::
+1. Reproduisez le problème.
 
-### Debug logs {#debug-logs}
+    Nous vous conseillons vivement de noter l'heure exacte à laquelle vous avez reproduit le problème : cela aidera notre équipe d'assistance à trouver les entrées de journal pertinentes et à résoudre le problème plus rapidement.
 
-1. Open the AdGuard settings. Go to the *General Settings* section, scroll down to the end of the screen and switch the *Logging Level* to *Debug*.
+1. Exportez les journaux collectés en utilisant le bouton *Exporter les journaux*.
 
-    ![Debug logging level *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
+    ![Exportation des journaux *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-1. Reproduce the issue.
+    Enregistrez l'archive dans n'importe quel dossier.
 
-    We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
+1. **Important**: après avoir exporté les journaux, rétablissez le niveau de journalisation à *Par défaut*. Le niveau de journalisation *débogage* ralentira l'application.
 
-1. Export the recorded logs using the *Export Logs* button.
+1. Envoyez l'archive au service d'assistance AdGuard à **support@adguard.com**, décrivez le problème et n'oubliez pas de mentionner l'heure à laquelle vous avez reproduit le problème.
 
-    ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+### Journaux de trace {#trace-logs}
 
-    Save the archive to any folder.
+Parfois, les membres de l'équipe d'assistance peuvent vous demander d'envoyer des journaux de *trace*. Ensuite, vous devrez faire ce qui suit :
 
-1. **Important**: after exporting the logs, set the logging level back to *Standard*. *Debug* logging level will slow down the application.
+1. Arrêtez AdGuard en faisant un clic droit sur l'icône AdGuard dans le menu de la barre d'état et en choisissant *Quitter AdGuard*:
 
-1. Send the archive to the AdGuard support service at **support@adguard.com**, describe the problem and don't forget to mention the time when you reproduced the issue.
+    ![Quitter AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
 
-### Trace logs {#trace-logs}
+    Veuillez ne pas laisser le service en cours d'exécution :
 
-Sometimes support team members may ask you to send *trace* logs. Then you will need to do the following:
+    ![Arrêter le service AdGuard *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
 
-1. Stop AdGuard by right-clicking the AdGuard icon in the tray menu and choosing *Exit AdGuard*:
+1. Ouvrez la console (tapez `cmd` dans le panneau de démarrage).
 
-    ![Exit AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
+1. Exécutez l'application avec la commande `C:\"Program Files"\Adguard\Adguard.exe /trace` peu importe l'architecture de Windows si vous avez installé AdGuard v7.16 pour Windows ou une version ultérieure.
 
-    Please don't leave the service running:
+Si vous avez une version plus ancienne d'AdGuard pour Windows, exécutez l'application avec la commande C:\"Program Files (x86)"\Adguard\Adguard.exe /trace si vous utilisez Windows 64 bits, et C:\"Program Files"\Adguard\Adguard.exe /trace si vous utilisez Windows 32 bits.
 
-    ![Stop AdGuard Service *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
+1. Reproduisez le problème.
 
-1. Open the console (type `cmd` in the start panel).
+    Nous vous conseillons vivement de noter l'heure exacte à laquelle vous avez reproduit le problème : cela aidera notre équipe d'assistance à trouver les entrées de journal pertinentes et à résoudre le problème plus rapidement.
 
-1. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard v7.16 for Windows or later.
+1. Exportez les journaux collectés en utilisant le bouton *Exporter les journaux*.
 
-If you have an older version of AdGuard for Windows, run the application with the command C:\"Program Files (x86)"\Adguard\Adguard.exe /trace if you are using 64-bit Windows, and C:\"Program Files"\Adguard\Adguard.exe /trace if you are using 32-bit.
+    ![Exporter les journaux *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-1. Reproduce the issue.
-
-    We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
-
-1. Export the recorded logs using the *Export Logs* button.
-
-    ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
-
-    Don't worry if the log file is large. We need to know as much detail as possible to fix your problem.
+    Ne vous inquiétez pas si le fichier de journal est volumineux. Nous avons besoin de connaître autant de détails que possible pour résoudre votre problème.

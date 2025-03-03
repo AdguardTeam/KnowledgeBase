@@ -3,74 +3,74 @@ title: Ochrana proti podvodnému a zákeřnému software
 sidebar_position: 3
 ---
 
-Falling prey to phishing and malware remains a common issue. To enhance digital security, we’ve incorporated special filters in AdGuard products to shield you from malicious and phishing websites. To date, we’ve categorized over 15 million sites and built a database of 1.5 million websites known for phishing and malware. Using this database, AdGuard checks the websites you visit to protect you from online threats.
+Oběti phishingu a malwaru jsou stále častým problémem. Pro zvýšení digitální bezpečnosti jsme do produktů AdGuard začlenili speciální filtry, které vás ochrání před škodlivými a podvodnými webovými stránkami. K dnešnímu dni jsme kategorizovali více než 15 milionů webů a vytvořili databázi 1,5 milionu webů, o nichž je známo, že obsahují phishing a malware. Pomocí této databáze, AdGuard kontroluje navštívené webové stránky a chrání vás před online hrozbami.
 
-::: note
+:::note Důležité
 
-We strictly do not collect or use any information about the websites you visit.
+Přísně vzato neshromažďujeme ani nepoužíváme žádné informace o navštívených webových stránkách.
 
 :::
 
-## How does AdGuard check websites?​
+## Jak AdGuard kontroluje webové stránky?
 
-Each time you visit a website, your local client exchanges information with our backend server in the form of hashes and hash prefixes. Based on this exchange, the local client determines whether or not the website is listed in the potentially dangerous websites database. There is a difference in the scope of this check for apps and extensions.
+Při každé návštěvě webové stránky si místní klient vyměňuje informace s naším koncovým serverem ve formě hashů a prefixů hash. Na základě této výměny místní klient určí, zda je web zařazen do databáze potenciálně nebezpečných webů. Rozsah této kontroly se u aplikací a rozšíření liší.
 
-### In apps
+### V aplikacích
 
-AdGuard provides the best possible protection by inspecting both the pages and all objects loaded on them. AdGuard checks URLs and domain names using hash prefixes, not the full URLs, so our servers retain no information about the websites you visit and your personal information is completely safe. Our servers respond to the app’s query with a list of all possible addresses that match the hash prefix. When a potential threat is detected based on hash matches, access to that website is immediately blocked.
+AdGuard poskytuje nejlepší možnou ochranu tím, že kontroluje jak stránky, tak všechny objekty na nich načtené. AdGuard kontroluje adresy URL a názvy domén pomocí hash prefixů, nikoli celých adres URL, takže naše servery nezachovávají žádné informace o navštívených webových stránkách a vaše osobní údaje jsou zcela v bezpečí. Naše servery odpoví na dotaz aplikace seznamem všech možných adres, které odpovídají prefixu hash. Pokud je na základě shody hash detekována potenciální hrozba, přístup na danou webovou stránku je okamžitě zablokován.
 
-![DNS warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_diana.png)
+![AdGuard warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/dangerous_website_blocked.png)
 
-### In browser extensions
+### V rozšířeních prohlížeče {#extension}
 
-Our browser extensions can only check domain names, not full URLs. They are also unable to check subqueries. This means that if there are potentially malicious elements on the page, they will be loaded even if the page itself is from a safe domain. The extension won’t be able to protect against them. It's also important to note that the check performed is asynchronous, i.e. it happens at the same time as the page is loaded, so it’s possible that malware could be loaded as well.
+Naše rozšíření prohlížeče mohou kontrolovat pouze názvy domén, nikoli celé adresy URL. Nemohou také kontrolovat poddotazy. To znamená, že pokud jsou na stránce potenciálně škodlivé prvky, budou načteny, i když je stránka sama o sobě z bezpečné domény. Rozšíření proti nim nebude schopno chránit. Je také důležité poznamenat, že prováděná kontrola je asynchronní, tj. probíhá současně s načítáním stránky, takže je možné, že se načte i škodlivý software.
 
-## Setting up phishing and malware protection in AdGuard products
+## Nastavení ochrany proti phishingu a malwaru v produktech AdGuard
 
-- **For Windows**: Activate the *Browsing Security* module in the *Settings* menu
+- **Pro Windows**: Aktivujte *modul Bezpečné prohlížení* v menu *Nastavení*
 
-![Browsing Security in Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
+    ![Browsing Security in Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
 
-- **For Mac**: Enable the *Security* module in *Preferences*
+- **Pro macOS**: Povolte modul *Bezpečnost* v *Předvolbách*
 
-![Security in Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
+    ![Security in Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
 
-- **For Android**: Turn on *Browsing Security* in the *Protection* tab
+- **Pro Android**: Zapněte *Bezpečné prohlížení* na kartě *Ochrana*
 
-![Browsing security in Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
+    ![Browsing security in Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
 
-- **For iOS**: Although there’s no separate module, you can go to *Safari protection* → *Filters* → *Security* and enable the available filters. Additionally, enable *DNS protection* and select one of the AdGuard DNS servers
+- **Pro iOS**: Ačkoli neexistuje samostatný modul, můžete přejít do *Ochrany Safari* → *Filtrování* → *Bezpečnost* a povolit dostupná filtrování. Dále povolte *DNS ochranu* a vyberte jeden ze serverů AdGuard DNS
 
-![Security in iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
+    ![Security in iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
 
-- **For Browser extensions**: Enable *Phishing and malware protection* in the *Settings* tab. For enhanced protection, go to *Filters* → *Security* and activate available filters
+- **Pro rozšíření prohlížeče**: Povolte *ochranu proti phishingu a malwaru* na kartě *Nastavení*. Pro lepší ochranu přejděte na *Filtry* → *Bezpečnost* a aktivujte filtry
 
-![Ochrana proti podvodnému a zákeřnému software](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
+    ![Ochrana proti podvodnému a zákeřnému software](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
 
-- **For Private AdGuard DNS:** Enable malware protection in *Server settings* under *Security*
+- **Pro soukromý AdGuard DNS:** Povolte ochranu proti malware v *Nastavení serveru* v nabídce *Bezpečnost*
 
-![Security in DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
+    ![Security in DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
 
-## What we block
+## Co blokujeme
 
-We maintain two primary filters: one that protects against phishing and fraudulent websites that attempt to steal user credentials, and another that blocks access to websites known to distribute malware, which could lead to data loss, information leaks, or damage to your device. These filters also protect you from websites with various scams and fraudulent schemes. For more detailed information, refer to this [Wikipedia article](https://en.wikipedia.org/wiki/Phishing).
+Spravujeme dva základní filtry: jeden chrání před phishingem a podvodnými webovými stránkami, které se snaží ukrást přihlašovací údaje uživatele, a druhý blokuje přístup k webovým stránkám, o nichž je známo, že šíří malware, který by mohl vést ke ztrátě dat, úniku informací nebo poškození vašeho zařízení. Tyto filtry vás také chrání před webovými stránkami s různými podvody a podvodnými schématy. Podrobnější informace naleznete v tomto [článku na Wikipedii](https://en.wikipedia.org/wiki/Phishing).
 
-## Maintaining our filters
+## Správa našich filtrů
 
-AdGuard maintains an extensive database of phishing and malware websites, and it’s updated regularly and automatically as new threats are discovered. We collect information from a variety of reliable, high-quality sources, both public and from other companies, and aggregate it into a common database of dangerous sites.
+AdGuard spravuje rozsáhlou databázi phishingových a malwarových webových stránek, která je pravidelně a automaticky aktualizována podle objevených nových hrozeb. Shromažďujeme informace z různých spolehlivých a kvalitních zdrojů, veřejných i od jiných společností, a shromažďujeme je do společné databáze nebezpečných stránek.
 
-We automatically analyze complaints about suspicious sites and spend a great deal of time keeping the database up-to-date, cleaning up false positives, and implementing mechanisms to prevent them in the future.
+Automaticky analyzujeme stížnosti na podezřelé weby a trávíme mnoho času udržováním databáze v aktuálním stavu, odstraňováním falešných hlášení a zaváděním mechanismů, které jim v budoucnu zabrání.
 
-### Want to help?​
+### Chcete nám pomoci?
 
-Any help is welcome! If you encounter a phishing or malware website, please report it to <support@adguard.com>.
+Jakákoli pomoc je vítána! Pokud narazíte na phishingovou nebo malwarovou webovou stránku, nahlaste ji na <support@adguard.com>.
 
-### False-positive responses​
+### Falešně pozitivní odezvy
 
-Occasionally, some non-malicious websites are added to AdGuard’s filters. Snažíme se procento falešných pozitivních výsledků snížit, ale stále se vyskytují. If you encounter this behavior from AdGuard, please report the false positive to our technical support at <support@adguard.com>.
+Občas se do AdGuard filtrů přidají i jiné než škodlivé webové stránky. Snažíme se procento falešných pozitivních výsledků snížit, ale stále se vyskytují. Pokud se s tímto chováním AdGuardu setkáte, nahlaste prosím falešné hlášení naší technické podpoře na <support@adguard.com>.
 
-## If you are suspicious about a website
+## Pokud máte podezření na webovou stránku
 
-If you suspect that a certain website might be dangerous, check it first by using our [security check tool](https://reports.adguard.com/welcome.html).
+Pokud máte podezření, že by určitá webová stránka mohla být nebezpečná, zkontrolujte ji nejprve pomocí našeho nástroje [pro kontrolu zabezpečení](https://reports.adguard.com/welcome.html).
 
 ![Security check](https://cdn.adtidy.org/content/kb/ad_blocker/general/site_warning.png)

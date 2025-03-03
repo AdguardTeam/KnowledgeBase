@@ -1,53 +1,53 @@
 ---
-title: How to enable system-wide filtering in AdGuard for iOS
+title: iOS版AdGuardでSafari外の広告ブロックを設定する方法（システムワイドブロック）
 sidebar_position: 2
 ---
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for iOS」について書いています。 To see how it works firsthand, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for iOS」について書いています。 実際にどのように動作するかを確認するには、[AdGuard アプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
 ## システムワイドブロックについて
 
-iOSでのシステムワイドブロックとは、Safariブラウザ以外、つまり他のアプリやブラウザで、ネットワークレベルで広告やトラッカー（個人情報追跡ソフト）をブロックすることです。 This article will tell you how to enable it on your iOS device.
+iOSでのシステムワイドブロックとは、Safariブラウザ以外、つまり他のアプリやブラウザで、ネットワークレベルで広告やトラッカー（個人情報追跡ソフト）をブロックすることです。 他社広告ブロッカーのほとんどはシステムワイドブロックをできませんが、AdGuardはできます。ただし、少し設定が必要であり、本記事では、お使いのiOSデバイスでこの機能を設定する方法をご紹介します。
 
-On iOS, the only way to block ads and trackers system-wide is to use [DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/).
+iOSでは、広告やトラッカーをシステム全体でブロックする唯一の方法は、[DNSフィルタリング](https://adguard-dns.io/kb/general/dns-filtering/)を使用することです。
 
-First, you have to enable DNS protection. To do so:
+まず、「DNS通信を保護」を有効にする必要があります。 その方法は以下の通りです:
 
-1. Open *AdGuard for iOS*.
-2. Tap *Protection* icon (the second icon in the bottom menu bar).
-3. Turn *DNS protection* switch on.
+1. *AdGuard for iOS* アプリを開きます。
+2. *AdGuardによる保護*アイコン（下部メニューバーの2番目の盾アイコン）をタップします。
+3. 「*DNS通信を保護*」のスイッチをオンにします。
 
 ![DNS通信を保護画面 *mobile_border](https://cdn.adguard.com/public/Adguard/Blog/ios_dns_protection_ja.PNG)
 
-Now, if your purpose is to block ads and trackers system-wide, you have three options:
+AdGuardを使ってシステムワイドブロックを行うには3つの方法があります:
 
- 1. Use AdGuard DNS filter (*Protection* (the shield icon in the bottom menu) → *DNS protection* → *DNS filtering* → *DNS filters* → *AdGuard DNS filter*).
- 2. Use AdGuard DNS server (*Protection* (the shield icon in the bottom menu) → *DNS protection* → *DNS server* → *AdGuard DNS*) or another blocking DNS server to your liking.
- 3. Add a custom DNS filter/hosts file to your liking.
+ 1. AdGuard DNS フィルタを使用する（<*AdGuardによる保護*アイコン（下部メニューバーの2番目の盾アイコン）） → *DNS通信を保護* → *DNSフィルタリング* → *DNSフィルタ* → *AdGuard DNS フィルタ*）
+ 2. AdGuard DNS サーバー（<*AdGuardによる保護*アイコン（下部メニューバーの2番目の盾アイコン）） → *DNS通信を保護* → *DNSサーバー* → *AdGuard DNS*）を使用するか、その他の任意のDNSサーバーを使用する
+ 3. お好みのカスタムDNSフィルターやhostsファイルを追加する
 
-The first and third option have several advantages:
+第1と第3の方法の利点は以下のとおりです:
 
-- You can use any DNS server at your discretion and you are not tied up to a specific blocking server, because the filter does the blocking.
-- You can add multiple DNS filters and/or hosts files (although using too many might slow down AdGuard).
+- DNSフィルタが広告ブロックしてくれるので、DNSサーバーは任意のものにすることが可能
+- 複数のDNSフィルタおよびhostsファイルを追加することが可能（ただし、多すぎるとAdGuardの動作が遅くなる可能性がありますので、数にはご注意ください。）
 
 ![DNSフィルタリングの仕組み](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_ja.png)
 
-## How to add custom DNS filter/hosts file
+## カスタムDNSフィルタやhostsファイルを追加する方法
 
-You can add any DNS filter or hosts file you like.
+好きなDNSフィルタやhostsファイルをなんでも追加できます。
 
-For the sake of the example, let's add [OISD Blocklist Big](https://oisd.nl/).
+例として、[OISD Blocklist Big](https://oisd.nl/) を追加してみましょう。
 
-1. Copy this link: `https://big.oisd.nl` (it's a link for OISD Blocklist Big filter)
-2. Open *Protection* (the shield icon in the bottom menu) → *DNS protection* → *DNS filtering* → *DNS filters*.
-3. Tap *Add a filter*.
-4. Paste the link into the filter URL field.
-5. Tap *Next* → *Add*.
+1. このリンクをコピーします: `https://big.oisd.nl` ( OISD Blocklist Big フィルタのリンクです)
+2. AdGuardアプリ→ *AdGuardによる保護*アイコン（下部メニューバーの2番目の盾アイコン）） → *DNS通信を保護* → *DNSフィルタリング* → *DNSフィルタ*
+3. 「*フィルターを追加する*」をタップします。
+4. フィルタURL欄にリンクを貼り付けます。
+5. *次へ* → *追加* をタップします。
 
 ![DNSフィルタ追加画面 *mobile_border](https://cdn.adtidy.org/blog/new/ot4okIMGD236EB8905471.jpeg)
 
-Add any number of other DNS filters the same way by pasting a different URL at step 4. 様々なフィルターやそのリンクは[こちら](https://filterlists.com)で確認することができます。
+完了です。ステップ4で別のDNSフィルタのURLをコピーして貼り付けることで、DNSフィルタをいくつでも追加できます。 様々なフィルターやそのリンクは[こちら](https://filterlists.com)で確認することができます。

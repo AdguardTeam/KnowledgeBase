@@ -1,5 +1,5 @@
 ---
-title: Jak získat soubory HAR
+title: Jak generovat soubory HAR
 sidebar_position: 5
 ---
 
@@ -17,9 +17,9 @@ Soubory HAR jsou zpracovávány v souladu se [Zásadami ochrany osobních údaj�
 
 ## Co jsou soubory HAR?
 
-Formát HAR (HTTP ARchive) je archivní soubor ve formátu JSON pro zaznamenávání interakce webového prohlížeče s webem. Specifikace formátu HAR definuje archivační data pro transakce HTTP, která prohlížeč používá k exportu podrobných informací o načítaných webových stránkách. Podrobnější popis formátu HAR a jeho specifikace naleznete na webové stránce [ softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
+Formát HAR (HTTP ARchive) je archivní soubor ve formátu JSON pro zaznamenávání interakce webového prohlížeče s webem. Specifikace formátu HAR definují archivační data pro transakce HTTP, která prohlížeč používá k exportu podrobných informací o načítaných webových stránkách. Podrobnější popis formátu HAR a jeho specifikace naleznete na webové stránce [ softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
 
-## Jak získat soubory HAR
+## Jak generovat soubory HAR
 
 Někdy musíme analyzovat, abychom zablokovali konkrétní reklamy, které je z nějakého důvodu obtížné reprodukovat. Chcete-li získat soubory HAR, postupujte takto:
 
@@ -31,7 +31,7 @@ Někdy musíme analyzovat, abychom zablokovali konkrétní reklamy, které je z 
 6. Přejděte zpět na **Pokročilé**.
 7. Klepněte na **Exportovat protokoly a systémové informace** → **Povolit** (je-li to nutné) → **Uložit**.
 
-**Zašlete prosím soubor se záznamy (které jste získali jako výsledek) službě podpory AdGuardu.**
+**Vygenerovaný soubor s protokoly odešlete službě podpory AdGuard.**
 
 :::note
 

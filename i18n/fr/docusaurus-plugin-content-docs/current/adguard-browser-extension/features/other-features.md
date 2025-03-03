@@ -1,6 +1,6 @@
 ---
 title: Autres fonctionnalités et options
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 :::info
@@ -19,13 +19,13 @@ Dans l'onglet _Général_, vous pouvez autoriser les publicités de recherche et
 
 De plus, ici vous pouvez activer la [_Protection contre l'hameçonnage et les logiciels malveillants_](/general/browsing-security).
 
-Vous pouvez sauvegarder la configuration de vos paramètres en cliquant sur le bouton _Exporter les paramètres_. Les paramètres seront sauvegardés sous la forme d'un fichier .json. Pour charger la configuration de paramètres précédemment sauvegardée, utilisez la fonction _Importer les paramètres_. Vous pouvez même l'utiliser pour passer rapidement entre différents profils de paramètres ou même pour transférer des configurations de paramètres entre différents navigateurs.
+Vous pouvez sauvegarder la configuration de vos paramètres en cliquant sur le bouton _Exporter les paramètres_. Les paramètres seront sauvegardés sous la forme d'un fichier .json. Pour importer la configuration de paramètres précédemment sauvegardée, utilisez la fonction _Importer les paramètres_. Vous pouvez même l'utiliser pour passer rapidement entre différents profils de paramètres ou même pour transférer des configurations de paramètres entre différents navigateurs.
 
 ## Paramètres supplémentaires {#misc}
 
 La section _Paramètres supplémentaires_ contient une gamme de paramètres variés liés au processus de blocage des publicités et à la convivialité de l'application.
 
-![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
+![Paramètres additionnels \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
 
 Depuis cet onglet, vous pouvez activer les filtres optimisés, activer les notifications concernant les mises à jour de l'extension, ouvrir le _Journal de filtrage_ ou effacer les statistiques des publicités et traceurs bloqués.
 
@@ -35,4 +35,4 @@ De plus, vous pouvez choisir de nous aider dans le développement des filtres en
 
 Dans la section _À propos_, vous pouvez trouver des informations sur la version actuelle, des liens vers le CLUF et la Politique de confidentialité, ainsi que vers le dépôt de l'extension de navigateur sur GitHub.
 
-![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+![À propos \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)

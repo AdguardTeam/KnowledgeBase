@@ -11,48 +11,48 @@ Questo articolo riguarda AdGuard per Android, un blocco annunci multifunzionale 
 
 :::note
 
-Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+I dati e/o i file forniti negli registri sono trattati in conformità con [l'Informativa sulla privacy di AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-Sometimes a regular log may not be sufficient to identify the origin of the problem. In such cases a system log is needed. Below are instructions on how to collect and get it: via Developer options and Logcat.
+A volte un registro regolare potrebbe non essere sufficiente per identificare l'origine del problema. In questi casi è necessario un registro di sistema. Di seguito sono riportate istruzioni su come raccoglierlo e ottenerlo: tramite Opzioni sviluppatore e Logcat.
 
 :::note
 
-AdGuard si impegna a proteggere la tua privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Prima di inviare i registri al team di supporto, esamina il file poiché potrebbe contenere informazioni aggiuntive che non desideri condividere. Se contiene tali informazioni personali, ti consigliamo di eliminarle prima.
+AdGuard si impegna a proteggere la tua privacy. Rispettiamo rigorosamente la nostra [Politica di riservatezza](https://adguard.com/privacy/android.html) e non raccogliamo alcuna informazione privata sugli utenti. Prima di inviare i registri al team di supporto, esamina il file poiché potrebbe contenere informazioni aggiuntive che non desideri condividere. Se contiene tali informazioni personali, ti consigliamo di eliminarle prima.
 
 :::
 
-## Capture a bug report from a device
+## Catturare una segnalazione di bug da un dispositivo
 
-To get a bug report directly from your device, do the following:
+Per ottenere una segnalazione di bug direttamente dal tuo dispositivo, fai quanto segue:
 
-1. Be sure you have [Developer options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
+1. Assicurati di avere [Opzioni sviluppatore](https://developer.android.com/studio/run/device.html#developer-device-options) abilitate.
 
-1. In **Developer options**, tap **Take bug report**.
+1. Nelle **Opzioni per sviluppatori**, tocca su **Segnala bug**.
 
-    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
+    ![Segnalazione bug *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-1. Select the type of bug report you want and tap **Report**.
+1. Seleziona il tipo di segnalazione di bug desiderata e tocca su **Segnala**.
 
     :::note
 
-    After a moment, you will see a notification that the bug report is ready (see Figure 2).
+    Dopo qualche istante, ti sarà notificato che la segnalazione del bug è pronta (visualizza la Figura 2).
 
 
 :::
 
-    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
+    ![Segnalazione bug *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
-1. To share the bug report, tap the notification.
+1. Per condividerla, tocca la notifica.
 
-    ![Bug report *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
+    ![Segnalazione bug *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
-1. Send this log to our support team.
+1. Invia questo registro al nostro team di supporto.
 
     :::note
 
-    Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+    Il nostro team di supporto elaborerà il tuo ticket molto più velocemente, se specificherai il numero del ticket di HelpDesk o il numero di ticket di GitHub, nel tuo messaggio di supporto.
 
 
 :::
@@ -109,14 +109,14 @@ It is important to reproduce the problem after you're done with the first part.
 
 1. Choose **Record** in the menu. Choose a name for a log file or just press **OK**. Now you can press **Home** button, CatLog will continue recording the log in background.
 
-1. Reproduce the issue.
+1. Riproduci il problema.
 
 1. Open CatLog and press **Stop record** in the menu.
 
-1. Send this log to our support team.
+1. Invia questo registro al nostro team di supporto.
 
 :::note
 
-Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+Il nostro team di supporto elaborerà il tuo ticket molto più velocemente, se specificherai il numero del ticket di HelpDesk o il numero di ticket di GitHub, nel tuo messaggio di supporto.
 
 :::

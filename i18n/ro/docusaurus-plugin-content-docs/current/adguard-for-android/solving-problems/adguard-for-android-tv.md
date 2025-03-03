@@ -1,60 +1,60 @@
 ---
-title: How to install AdGuard for Android TV
+title: Cum instalez AdGuard pentru Android TV
 sidebar_position: 17
 ---
 
 :::info
 
-This article is about AdGuard for Android TV, an ad blocker that protects your TV at the system level. To see how it works, [download the AdGuard TV app](https://agrd.io/tvapk)
+Acest articol se referă la AdGuard pentru Android TV, un blocant de reclame care protejează TV-ul dvs. la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/tvapk)
 
 :::
 
-In most cases, stock browsers cannot install a file on your TV, but you can download a browser from the Google Play Store that has this functionality. In our guide, we will consider an example of installation using the TV Bro browser, but there are other options and you can choose the one that better suits your needs. As an alternative, you can use the [Downloader](https://play.google.com/store/apps/details?id=com.esaba.downloader) app.
+În cele mai multe cazuri, browserele stock nu pot instala un fișier pe TV-ul dvs., dar puteți descărca un browser din Google Play Store care are această funcționalitate. În ghidul nostru, vom trece printr-un exemplu de instalare folosind browserul TV Bro, dar există și alte opțiuni și puteți alege varianta care se potrivește mai bine nevoilor dvs. Ca alternativă, puteți folosi aplicația [Downloader](https://play.google.com/store/apps/details?id=com.esaba.downloader).
 
-## Installing AdGuard for Android TV via browser
+## Instalarea AdGuard pentru Android TV prin browser
 
-1. Install the [TV Bro browser](https://play.google.com/store/apps/details?id=com.phlox.tvwebbrowser) on your Android TV.
+1. Instalați browserul [TV Bro](https://play.google.com/store/apps/details?id=com.phlox.tvwebbrowser) pe TV-ul dvs. Android.
 
-2. Download and install AdGuard for Android TV:
+2. Descărcați și instalați AdGuard pentru Android TV:
 
-- Open the installed TV Bro browser on your Android TV.
-- In the address bar of the browser, type `https://agrd.io/tvapk` and press _Enter_ or follow the link.
-- The browser will start downloading the AdGuard for Android TV installation file automatically.
-- Once the download is complete, select _Downloads_ in the browser control bar, then select the downloaded file.
-- In a warning message, allow installing files from the browser.
-- Return to your browser, open _Downloads_, and click the downloaded file.
+- Deschideți browserul TV Bro instalat pe TV-ul dvs. Android.
+- În bara de adrese a browserului, tastați `https://agrd.io/tvapk` și apăsați _Enter_ sau urmați linkul.
+- Browserul va începe să descarce automat fișierul de instalare AdGuard pentru Android TV.
+- Odată ce descărcarea este completă, selectați _Downloads_ în bara de control a browserului, apoi selectați fișierul descărcat.
+- Într-un mesaj de avertizare, permiteți instalarea fișierelor din browser.
+- Întoarceți-vă la browser, deschideți _Downloads_ și faceți clic pe fișierul descărcat.
 - In the system window that appears, click _Install_, then _Done_ or _Open_.
 
-Done, AdGuard for Android TV is installed.
+Finalizat, AdGuard pentru Android TV este instalat.
 
-1. Launch AdGuard for Android TV:
+1. Lansați AdGuard pentru Android TV:
 
-- After the installation is complete, find the AdGuard app in the list of installed apps on your Android TV.
-- Click the AdGuard icon to launch the app.
-- Follow the on-screen instructions to complete the setup.
+- După ce instalarea este completă, găsiți aplicația AdGuard în lista de aplicații instalate pe TV-ul dvs. Android.
+- Faceți clic pe pictograma AdGuard pentru a lansa aplicația.
+- Urmați instrucțiunile de pe ecran pentru a finaliza configurarea.
 
-## Installing AdGuard for Android TV via ADB
+## Instalarea AdGuard pentru Android TV prin ADB
 
-1. Make sure that Android Debug Bridge (ADB) is installed on your computer. If not, you can follow the instructions on XDA Developers: [ADB Installation Guide](https://www.xda-developers.com/install-adb-windows-macos-linux).
+1. Asigurați-vă că Android Debug Bridge (ADB) este instalat pe computerul dvs. Dacă nu este, puteți urma instrucțiunile de pe XDA Developers: [Ghid pentru Instalarea ADB](https://www.xda-developers.com/install-adb-windows-macos-linux).
 
-2. Download [AdGuard for Android TV](https://agrd.io/tvapk).
+2. Descărcați [AdGuard pentru Android TV](https://agrd.io/tvapk).
 
-3. In your TV settings, go to _System_ → _About_ and press the build number seven times to unlock developer options. Enable _USB debugging_.
+3. În setările TV-ului, mergeți la _System_ → _About_ și apăsați de șapte ori pe numărul de construcție pentru a debloca opțiunile de dezvoltator. Enable _USB debugging_.
 
-4. Write down the IP address of your Android TV:
+4. Notează adresa IP a TV-ului tău Android:
 
-   - On your Android TV, navigate to Settings.
-   - Select _System_ → _About_.
-   - Find _Network_ and select _Wi-Fi_ or _Ethernet_, depending on your connection type.
-   - Go to the network section and find _IP address_. Note down this IP address.
+    - Pe TV-ul tău Android, navighează la Setări.
+    - Selectează _System_ → _About_.
+    - Găsiți _Network_ și selectați _Wi-Fi_ sau _Ethernet_, în funcție de tipul de conexiune.
+    - Go to the network section and find _IP address_. Notează această adresă IP.
 
-5. Connect to Android TV via ADB:
+5. Conectați-vă la Android TV prin ADB:
 
-   - Open the terminal or command prompt on your computer.
-   - Enter the command `adb connect` and paste the IP address of your TV.
-   - The connection will be established.
+    - Deschideți terminalul sau promptul de comandă pe computerul dvs.
+    - Introduceți comanda `adb connect` și lipiți adresa IP a TV-ului dvs.
+    - Conexiunea va fi stabilită.
 
-6. Install AdGuard for Android TV via ADB:
+6. Instalați AdGuard pentru Android TV prin ADB:
 
-   - In the terminal, enter the command `adb install Downloads/adguard_tv.apk`. If necessary, replace `Downloads/adguard_tv.apk` with your path.
-   - Wait for a message in the terminal indicating the successful installation of the app.
+    - În terminal, introduceți comanda `adb install Downloads/adguard_tv.apk`. Dacă este necesar, înlocuiți `Downloads/adguard_tv.apk` cu calea dvs.
+    - Așteptați un mesaj în terminal care să indice instalarea reușită a aplicației.

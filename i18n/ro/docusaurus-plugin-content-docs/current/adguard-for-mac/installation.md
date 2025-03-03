@@ -1,86 +1,86 @@
 ---
-title: 'Install/Uninstall'
+title: 'Instalare'
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru macOS, un blocant de reclame multifuncțional care protejează dispozitivul tău la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## System requirements
+## Cerințele Sistemului
 
-**Operating system version:** macOS 10.15 (64 bit) or higher
+**Versiunea sistemului de operare:** macOS 10.15 (64 biți) sau mai recent
 
-**RAM:** at least 2 GB
+**RAM:** cel puțin 2 GB
 
 **Browsers:** Safari, Chrome, Firefox, Opera, Yandex.Browser, and any other macOS compatible browser
 
-**Free disk space:** 120 MB
+**Spațiu liber pe disc:** 120 MB
 
-## Installation
+## Instalare
 
-To install AdGuard for Mac on your computer, launch your browser, type *adguard.com* in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
+Pentru a instala AdGuard pentru Mac pe computerul dumneavoastră, lansați browserul, tastați *adguard.com* în bara de adrese și apăsați **Descărcați** [pe pagina care se deschide](https://adguard.com/download.html?auto=1).
 
-![Download the app *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
+![Descărcați aplicația *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
-Wait for *AdguardInstaller.dmg* to download and double-click its icon in the list of downloaded files on the Dock panel.
+Așteptați ca *AdguardInstaller.dmg* să se descarce și faceți dublu clic pe iconița sa din lista de fișiere descărcate pe panoul Dock.
 
-![Double-click to open the file](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
+![Faceți dublu clic pentru a deschide fișierul](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
-The AdGuard icon will appear on your desktop. Click it to open the installation app and double-click the AdGuard icon in the opened window.
+Iconița AdGuard va apărea pe desktop-ul dumneavoastră. Faceți clic pe aceasta pentru a deschide aplicația de instalare și faceți dublu clic pe iconița AdGuard din fereastra deschisă.
 
-![Double-click the AdGuard icon](https://cdn.adtidy.org/content/kb/ad_blocker/mac/3.jpg)
+![Faceți dublu clic pe iconița AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/mac/3.jpg)
 
-Upon the first AdGuard launch, your operating system will warn you that this application has been downloaded from the Internet. Click **Open**.
+La prima lansare a AdGuard, sistemul dumneavoastră de operare vă va avertiza că această aplicație a fost descărcată de pe Internet. Faceți clic **Deschide**.
 
-![Click Open](https://cdn.adtidy.org/content/kb/ad_blocker/mac/4.jpg)
+![Faceți clic pe Deschidere](https://cdn.adtidy.org/content/kb/ad_blocker/mac/4.jpg)
 
-In the next step, you'll need to click **Install**.
+În pasul următor, va trebui să faceți clic pe **Instalare**.
 
-![Click Install](https://cdn.adtidy.org/public/Adguard/kb/installation/Mac/en/5.png)
+![Faceți clic pe Instalare](https://cdn.adtidy.org/public/Adguard/kb/installation/Mac/en/5.png)
 
-Wait for the installer to download the required files.
+Așteptați ca programul de instalare să descarce fișierele necesare.
 
-![Wait until the necessary files are downloaded](https://cdn.adtidy.org/content/kb/ad_blocker/mac/6.jpg)
+![Așteptați până când fișierele necesare sunt descărcate](https://cdn.adtidy.org/content/kb/ad_blocker/mac/6.jpg)
 
-To use the application, you will need the administrator password for your macOS account. Enter the password when prompted in the dialogue box and press **OK**.
+Pentru a utiliza aplicația, va trebui să introduci parola administratorului pentru contul tău de macOS. Introduceți parola când vi se cere în fereastra de dialog și apăsați **OK**.
 
-![Enter the password](https://cdn.adtidy.org/content/kb/ad_blocker/mac/7.jpg)
+![Introduceți parola](https://cdn.adtidy.org/content/kb/ad_blocker/mac/7.jpg)
 
-Now, you'll see a quick installation wizard where you'll be offered to configure protection to your needs. You can either start fine-tuning right away ("Let's do it!") or skip for now ("Leave as it is").
+Acum, veți vedea un asistent rapid de instalare în care veți fi oferit să configurați protecția conform nevoilor dumneavoastră. Puteți începe fie refinisarea imediat ("Hai să facem asta!") sau să omiteți acum ("Lăsați-l așa cum este").
 
-![Configure protection](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation-wizard.jpg)
+![Configurați protecția](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation-wizard.jpg)
 
-Here we are, AdGuard is installed on your Mac!
+Iată-ne, AdGuard este instalat pe Mac-ul dumneavoastră!
 
-## Uninstall
+## Dezinstalare
 
 ### Regular
 
-First of all, open the Finder app by clicking the respective icon:
+În primul rând, deschideți aplicația Finder făcând clic pe iconița respectivă:
 
-![Open Finder](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)
+![Deschideți Finder](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)
 
-Go to the Applications section. Find AdGuard there, right-click it and choose **Move to Trash**.
+Mergeți la secțiunea Aplicații. Găsiți AdGuard acolo, faceți clic dreapta pe el și alegeți **Mutați în Coșul de gunoi**.
 
-![Move AdGuard to Trash *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/11.jpg)
+![Mutați AdGuard în Coșul de gunoi *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/11.jpg)
 
-### Advanced
+### Avansat
 
-**Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Also, do all the steps from the "regular uninstall" first.**
+**Folosiți această instrucțiune doar dacă știți ce faceți sau dacă serviciul nostru de suport v-a recomandat în mod specific 'dezinstalarea avansată'. De asemenea, faceți toate etapele din "dezinstalarea regulată" întâi.**
 
-1. After that, delete following AdGuard files:
+1. După aceea, ștergeți următoarele fișiere AdGuard:
     - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
-    - ~/Library/Preferences/com.adguard.mac.adguard.plist (file)
+    - ~/Library/Preferences/com.adguard.mac.adguard.plist (fișier)
     - ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (folder)
-    - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (file)
-    - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (file)
-    - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (file)
-    - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (file)
+    - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (fișier)
+    - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (fișier)
+    - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (fișier)
+    - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (fișier)
 
-    To do so, open the Terminal app, then enter and execute the following commands:
+    Pentru a face acest lucru, deschideți aplicația Terminal, apoi introduceți și executați următoarele comenzi:
 
     ```bash
     sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
@@ -94,13 +94,13 @@ Go to the Applications section. Find AdGuard there, right-click it and choose **
     sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log
     ```
 
-1. Run the **Activity Monitor** app.
-1. Using search tool, find the process **cfprefsd**.
+1. Rulați aplicația **Activity Monitor**.
+1. Folosind instrumentul de căutare, găsiți procesul **cfprefsd**.
 
-    ![Run Activity Monitor](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
+    ![Rulați aplicația Activity Monitor](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. Stop the process which is being run under the user (not the one run under root). To do so, click the process and then click X on the upper left. Confirm the action in the dialogue window.
+1. Opriți procesul care este rulat sub utilizator (nu cel care este rulat sub root). To do so, click the process and then click X on the upper left. Confirmați acțiunea în fereastra de dialog.
 
-    ![Confirm](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
+    ![Confirmați](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 
-AdGuard is removed from your computer now.
+AdGuard a fost eliminat acum de pe computerul dumneavoastră.

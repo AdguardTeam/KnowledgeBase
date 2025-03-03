@@ -1,28 +1,26 @@
 ---
-title: Manual certificate installation
+title: Instalarea manuală a certificatului
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru macOS, un blocant de reclame multifuncțional care protejează dispozitivul tău la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard for Mac needs to install the root certificate into certificate storage to be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering). This action is performed automatically in most cases as you run the app for the first time, but users of Gecko-based browsers (Firefox, Waterfox etc.) who have a master password set up for their browser may be required to take additional steps (because these browsers use their own certificate storage instead of the system one). They need to either enter the master password when prompted (to grant AdGuard access to the certificate storage) or manually install the certificate.
+AdGuard pentru macOS trebuie să instaleze certificatul rădăcină în depozitul de certificate pentru a putea [filtra traficul HTTPS](/general/https-filtering/what-is-https-filtering). Această acțiune se efectuează automat în cele mai multe cazuri atunci când rulați aplicația pentru prima dată, dar utilizatorii browserelor bazate pe Gecko (Firefox, Waterfox etc.) care au setată o parolă principală pentru browserul lor pot fi solicitați să facă pași suplimentari (deoarece aceste browsere folosesc propriul depozit de certificate în loc de cel al sistemului). Aceștia trebuie fie să introducă parola principală atunci când sunt solicitați (pentru a permite AdGuard accesul la depozitul de certificate), fie să instaleze manual certificatul.
 
-To manually install the certificate into Firefox-like browser:
+Pentru a instala manual certificatul în browser de tip Firefox:
 
-  1. Open *Preferences*
+  1. Deschide *Preferințe*
 
-  2. Go to *Privacy & Security* → *Certificates*
+  2. Mergeți la *Intimitate & Securitate* → *Certificate*
 
-  3. Click *View Certificates*
+  3. Faceți clic pe *Vizualizați Certificatele*
 
-  4. Navigate to the *Authorities* tab and click the *Import...* button
+  4. Navigați la tab-ul *Autorități* și faceți clic pe butonul *Import...*
 
-  5. Select file `/Library/Application Support/AdGuard Software/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` or just download it from http://local.adguard.org/cert using a Chromium-based browser (e.g Google Chrome or new Edge) and with a HTTPS-filtering running in AdGuard
+  5. Selectați fișierul `/Library/Application Support/AdGuard Software/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` sau descărcați-l de la http://local.adguard.org/cert utilizând un browser bazat pe Chromium (de exemplu, Google Chrome sau noul Edge) și cu filtrarea HTTPS activată în AdGuard
 
-Exact actions required for different Gecko-based browsers may vary, but the general sequence and the path to `AdGuard Personal CA.cer` file will be the same.
-
-P.S.: For [Setapp application version](https://setapp.com/apps/adguard) the file path is the following: `/Library/Application Support/com.adguard.mac.adguard-setapp/AdguardCore/Adguard Personal CA.cer`
+Acțiunile exacte necesare pentru diferite browsere bazate pe Gecko pot varia, dar secvența generală și calea către `AdGuard Personal CA.cer` vor fi aceleași.

@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-Эта статья об AdGuard для Safari, который защищает только этот браузер. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы защитить своё устройство
+Эта статья об AdGuard для Safari, который защищает только этот браузер. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы защитить устройство целиком
 
 :::
 
@@ -15,7 +15,7 @@ sidebar_position: 5
 2. Нажмите _Safari_ в левом верхнем углу меню.
 3. Нажмите _Настройки…_ → _Расширения_.
 4. Установите флажок _В режиме Частного доступа»_ для всех расширений AdGuard.
-   ![Галочка Частного доступа](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
+ ![Галочка Частного доступа](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
 
 Если это не помогло и реклама по-прежнему не блокируется, напишите на почту поддержки support@adguard.com.
 

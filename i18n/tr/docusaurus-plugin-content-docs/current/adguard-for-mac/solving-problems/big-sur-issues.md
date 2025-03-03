@@ -13,7 +13,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 Every year Apple releases a new version of macOS, introducing innovative solutions and adding new useful features. But some of them, such as Network Extensions API (Big Sur) or iCloud Private Relay (Monterey), cause some problems to many applications, AdGuard not being an exception. In this article we go over the known issues specific to each macOS version and possible ways to solve them.
 
-### Monterey 12: currently existing problems
+### Monterey 12: Şu anda mevcut sorunlar
 
 These problems aren't fixed by Apple yet, or fixed only partially.
 
@@ -31,7 +31,7 @@ We recommend using AdGuard together with a more traditional VPN service such as 
 
 You can prevent AdGuard from using the "default route" by disabling it. It can be done via Advanced Settings → `network.extension.monterey.force.split.tunnel`. Note that enabling this setting will cause the problems described above.
 
-![Advanced Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
+![Gelişmiş Ayarlar *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
 
 #### Compatibility with Protect Mail Activity
 
@@ -55,7 +55,7 @@ AdGuard will not work together with Cisco AnyConnect while in the *Network Exten
 
 This problem is solved in Flutter 2.2, released in June 2021. But to fix it for applications developed in Flutter, you need to wait for updates.
 
-If you use Flutter alongside AdGuard in "Network Extension" mode (or any other "Transparent Proxy"-type app) in Monterey or Big Sur, you will run into problems: projects won't open and Flutter will be effectively broken. We have already reported this bug to Apple. Meanwhile, you can use these temporary solutions:
+If you use Flutter alongside AdGuard in "Network Extension" mode (or any other "Transparent Proxy"-type app) in Monterey or Big Sur, you will run into problems: projects won't open and Flutter will be effectively broken. We have already reported this bug to Apple. Bu arada, geçici olarak şu çözümleri kullanabilirsiniz:
 
 1. Use AdGuard in [Automatic Proxy](#automatic-proxy) mode.
 
@@ -63,15 +63,15 @@ If you use Flutter alongside AdGuard in "Network Extension" mode (or any other "
 
 #### VPN apps with legacy API
 
-Despite AdGuard is displayed as a VPN in system settings, it shouldn't cause any conflicts when working alongside other VPN-based apps. However, if you're using a VPN-based app that was downloaded from outside App Store, there's a chance it uses the old VPN API and you have to exclude it from filtering:
+Despite AdGuard is displayed as a VPN in system settings, it shouldn't cause any conflicts when working alongside other VPN-based apps. However, if a VPN-based app downloaded outside the App Store is used, there is a risk that it uses the old VPN API and needs to be excluded from filtering:
 
 1. Open AdGuard's menu.
-1. Select *Preferences...*.
+1. *Tercihler...* öğesini seçin.
 1. Switch to the *Network* tab.
 1. Click the *Applications...* button.
 1. Find the app you want to exclude and uncheck the checkbox next to it.
 
-![Filtered applications](https://cdn.adtidy.org/content/kb/ad_blocker/mac/legacy.jpg)
+![Filtrelenen uygulamalar](https://cdn.adtidy.org/content/kb/ad_blocker/mac/legacy.jpg)
 
 ## Already fixed problems
 
@@ -79,9 +79,9 @@ These problems have been fixed by Apple by now but can be encountered in the old
 
 ### Compatibility with Little Snitch 5
 
-At this moment, Network Extension mode in AdGuard isn't compatible with [Little Snitch 5](https://obdev.at/products/littlesnitch/index.html). When both are running, there's a chance to encounter issues with various apps' behavior, even if they aren't filtered by AdGuard. This problem is directly caused by a bug in Big Sur, and we've already informed Apple about it. This leaves us to believe that this issue will get resolved in one of the next updates.
+At this moment, Network Extension mode in AdGuard isn't compatible with [Little Snitch 5](https://obdev.at/products/littlesnitch/index.html). When both are running, there's a risk to encounter issues with various apps' behavior, even if they aren't filtered by AdGuard. This problem is directly caused by a bug in Big Sur, and we've already informed Apple about it. This leaves us to believe that this issue will get resolved in one of the next updates.
 
-It needs to be said that this problem can't be solved by disabling connections monitoring in Little Snitch, because this action doesn't unload Little Snitch's extension from the system. We recommend to switch to [**Automatic Proxy**](#automatic-proxy) filtering mode when running AdGuard alongside with Little Snitch on Big Sur, at least until Apple fixes the bug.
+However, disabling connection monitoring in Little Snitch doesn't solve the issue, as this doesn't unload the Little Snitch extension from the system memory. We recommend to switch to [**Automatic Proxy**](#automatic-proxy) filtering mode when running AdGuard alongside with Little Snitch on Big Sur, at least until Apple fixes the bug.
 
 ### Compatibility with local proxies
 
@@ -121,7 +121,7 @@ First of all, you need a working server side for your proxy. Most likely, to set
 
 :::tip
 
-You can find more information about how to get started on [Shadowsocks website](https://shadowsocks.org/guide/what-is-shadowsocks.html).
+More information on how to get started can be found on the [Shadowsocks website](https://shadowsocks.org/guide/what-is-shadowsocks.html).
 
 :::
 
@@ -144,7 +144,7 @@ In Big Sur v11.1+, there are no known conflicts between AdGuard and Surge proxy.
 - `host`: localhost
 - `port`: 6153 For HTTP proxy type:
 - `host`: localhost
-- `port`: 6152
+- `bağlantı noktası`: 6152
 
 ## Alternatives to using a Network Extension
 
@@ -155,7 +155,7 @@ It's impossible to foresee each and every possible problem that can pop up in Bi
 If you face problems in Big Sur or Monterey which can't be resolved by any of the methods above, you can try switching AdGuard to *Automatic proxy* mode.
 
 1. Open AdGuard's menu.
-1. Select *Preferences...*.
+1. *Tercihler...* öğesini seçin.
 1. Switch to the *Network* tab.
 1. Click the *Select Mode...* button.
 1. Select *Automatic Proxy*.
@@ -189,7 +189,7 @@ Now that SIP is disabled, this is how you enable Kernel Extension:
 ![Enable Kernel Extension](https://cdn.adtidy.org/content/kb/ad_blocker/mac/kernel_en.jpg)
 
 1. Open AdGuard's menu.
-1. Select *Preferences...*.
+1. *Tercihler...* öğesini seçin.
 1. Switch to the *Network* tab.
 1. Click the *Select Mode...* button.
 1. Select *Kernel Extension*.

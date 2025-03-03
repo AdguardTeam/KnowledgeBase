@@ -1,5 +1,5 @@
 ---
-title: Jak shromažďovat soubory HAR
+title: Jak generovat soubor HAR
 sidebar_position: 1
 ---
 

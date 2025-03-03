@@ -1,5 +1,5 @@
 ---
-title: Compatibility with the standalone app
+title: Compatibilidad con la aplicación independiente
 sidebar_position: 4
 ---
 
@@ -9,16 +9,16 @@ Este artículo trata sobre la extensión del navegador de AdGuard, que protege s
 
 :::
 
-While AdGuard Browser Extension can block ads in browsers, [AdGuard standalone programs](/adguard-browser-extension/comparison-standalone) filter all the traffic on your device, including from browsers and apps.
+Mientras que AdGuard Browser Extension puede bloquear anuncios en los navegadores, los [programas independientes de AdGuard](/adguard-browser-extension/comparison-standalone) filtran todo el tráfico de tu dispositivo, incluido el de navegadores y aplicaciones.
 
-If you decide to install both the extension and the standalone program on your PC, you may encounter some compatibility issues. The problem is that in some cases the application and the extension may interfere with each other. Some websites will no longer be protected by the desktop program and will only be protected by the extension, which has fewer options. Also, filtering may work incorrectly for some websites. Therefore, we don't recommend using the extension together with the application.
+Si decides instalar tanto la extensión como el programa independiente en tu PC, puedes encontrar algunos problemas de compatibilidad. El problema es que en algunos casos la aplicación y la extensión pueden interferir entre sí. Algunos sitios web ya no estarán protegidos por el programa de escritorio y solo estarán protegidos por la extensión, que tiene menos opciones. Además, el filtrado puede funcionar incorrectamente en algunos sitios web. Por lo tanto, no recomendamos utilizar la extensión junto con la aplicación.
 
-If you have the desktop version of AdGuard installed on your PC, it is better to use AdGuard Browser Assistant instead of the extension.
+Si tienes la versión de escritorio de AdGuard instalada en su PC, es mejor utilizar AdGuard Browser Assistant en lugar de la extensión.
 
 ## AdGuard Browser Assistant
 
-![AdGuard Browser Assistant \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
+![Asistente de navegador AdGuard \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 
-AdGuard Browser Assistant is a browser extension that works and feels just like AdGuard Browser Extension, but it's much lighter and doesn't interfere with the desktop apps. You can [read more about Browser Assistant for Windows](/adguard-for-windows/browser-assistant) or [Mac](/adguard-for-mac/features/browser-assistant), or [download it from our website](https://adguard.com/adguard-assistant/overview.html).
+AdGuard Browser Assistant es una extensión del navegador que funciona y se siente igual que AdGuard Browser Extension, pero es mucho más liviana y no interfiere con las aplicaciones de escritorio. Puedes [leer más sobre Browser Assistant para Windows](/adguard-for-windows/browser-assistant) o [Mac](/adguard-for-mac/features/browser-assistant), o [descargarlo de nuestro sitio web](https://adguard.com/adguard-assistant/overview.html).
 
-AdGuard Browser Assistant is available in all major browsers.
+El Asistente de Navegador AdGuard está disponible en todos los navegadores principales.

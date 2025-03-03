@@ -1,84 +1,84 @@
 ---
-title: Assistant
+title: Asistent
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Android, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 Assistant is a handy tool to quickly change app or website settings and view statistics without opening the AdGuard UI.
 
-### How to access Assistant
+### Cum să accesați Asistentul
 
-1. On your Android device, swipe down from the top of the screen to open the notification shade.
-2. Find and **expand** the AdGuard notification.
+1. Pe dispozitivul dvs. Android, trageți în jos din partea de sus a ecranului pentru a deschide fila de notificări.
+2. Găsiți și **extindeți** notificarea AdGuard.
 
-![Expand AdGuard notification in the notification shade \*mobile](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
+![Extindeți notificarea AdGuard în fila de notificări \*mobile](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
 
-1. Tap _Assistant_.
+1. Atingeți _Asistent_.
 
-![Tap Assistant \*mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
+![Atingeți Asistent \*mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
 
-### How to use Assistant
+### Cum să utilizați Asistentul
 
-When you open Assistant, you will see two tabs: **Apps** and **Websites**. Each of them contains a list of the recently used apps and websites respectively.
+Când deschideți Asistentul, veți vedea două file: **Aplicații** și **Site-uri web**. Fiecare dintre ele conține o listă cu aplicațiile și site-urile web utilizate recent, respectiv.
 
-![Assistant main \*mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
+![Asistent principal \*mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
 
-### Apps tab
+### Filă Aplicații
 
-After you select an app (**let's take Chrome as an example**), you'll get a few options of what you can do.
+După ce selectați o aplicație (**să luăm Chrome ca exemplu**), veți obține câteva opțiuni de ceea ce puteți face.
 
-![Assistant Chrome menu \*mobile\_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Meniul Asistent Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
-#### Recent activity
+#### Activitate recentă
 
-You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests made by Chrome.
+Veți fi dus la aplicația AdGuard, unde veți vedea informații detaliate despre ultimele solicitări făcute de Chrome.
 
-![App recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![Activitate recentă aplicație \*mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
 
-#### App statistics
+#### Statisticile aplicației
 
-You'll be taken to the AdGuard app, where you'll see detailed statistics about Chrome:
+Veți fi dus la aplicația AdGuard, unde veți vedea statistici detaliate despre Chrome:
 
-- Number of ads and trackers blocked in Chrome
-- Data saved by blocking Chrome's ad or tracking requests
-- Companies that Chrome sends requests to
+- Numărul de reclame și trackere blocate în Chrome
+- Date salvate prin blocarea solicitărilor de reclame sau de urmărire ale Chrome
+- Companiile căror solicitări le trimite Chrome
 
-#### App management
+#### Gestionarea aplicațiilor
 
-You'll be taken to the AdGuard app screen where you can disable AdGuard protection for the app.
+Veți fi dus la ecranul aplicației AdGuard, unde puteți dezactiva protecția AdGuard pentru aplicație.
 
-#### Firewall settings
+#### Setări firewall
 
-You'll be taken to the AdGuard screen where you can change Firewall settings for the app, meaning you can manage the app's Internet access.
+Veți fi dus la ecranul AdGuard unde puteți schimba setările firewall pentru aplicație, ceea ce înseamnă că puteți gestiona accesul la Internet al aplicației.
 
-### Websites tab
+### Filă Site-uri
 
-![Assistant websites tab \*mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
+![Filă asistent site-uri \*mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
 
-Select a website (**we use google.com here purely as an example**) and you'll see few options of what you can do.
+Selectați un site web (**folosim google.com aici pur și simplu ca exemplu**) și veți vedea câteva opțiuni de ceea ce puteți face.
 
-![Assistant google.com info \*mobile](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
+![Informații asistent google.com \*mobile](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
 
-#### Add to allowlist
+#### Adăugare la lista de autorizări
 
-Tapping this option will instantly add `google.com` to allowlist, and AdGuard will no longer filter it (meaning ads and trackers won't be blocked for the website).
+Atingerea acestei opțiuni va adăuga instantaneu `google.com` în lista de autorizări, iar AdGuard nu va mai filtra acest site (înseamnă că reclamele și trackerele nu vor fi blocate pentru site).
 
-#### Recent activity
+#### Activitate recentă
 
-You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests to google.com.
+Veți fi dus la aplicația AdGuard, unde veți vedea informații detaliate despre ultimele solicitări către google.com.
 
-![website recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+![activitate recentă site \*mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
 
-#### Website statistics
+#### Statistici site
 
-You'll be taken to the AdGuard app, where you'll see detailed statistics about google.com:
+Veți fi dus la aplicația AdGuard, unde veți vedea statistici detaliate despre google.com:
 
-- Number of blocked ad and tracking requests to google.com
-- Data saved by blocking ad and tracking requests to google.com
-- Apps that send requests to google.com
-- Information about google.com's subdomains
+- Numărul de solicitări de reclame și trackere blocate către google.com
+- Datele salvate prin blocarea solicitărilor de reclame și de urmărire către google.com
+- Aplicațiile care trimit solicitări către google.com
+- Informații despre subdomeniile google.com

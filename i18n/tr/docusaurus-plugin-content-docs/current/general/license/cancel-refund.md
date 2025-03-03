@@ -1,5 +1,5 @@
 ---
-title: How to cancel or refund
+title: İptal veya para iadesi nasıl yapılır
 sidebar_position: 5
 ---
 
@@ -25,7 +25,7 @@ In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), 
 
 A refund may be declined if:
 
-- A license was purchased more than 60 days ago
+- Lisans 60 günden daha uzun bir süre önce satın alınmışsa
 - A license was purchased from a distributor
 - A license was purchased from the App Store
 - You applied for a partial refund for a license key upgrade or renewal

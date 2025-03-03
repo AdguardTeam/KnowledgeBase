@@ -11,10 +11,10 @@ En la sección *Configuración* de tu cuenta AdGuard, puedes actualizar o restab
 
 En esta sección también puedes gestionar tus preferencias de correo electrónico:
 
-- recibir correos electrónicos transaccionales,
-- recibir los boletines mensuales de AdGuard,
+- Recibir el boletín de AdGuard
+- Recibir correos electrónicos transaccionales
 - recibir correos electrónicos sobre ofertas especiales y promociones de AdGuard,
-- enviar recibos de lectura a AdGuard cuando abras correos electrónicos.
+- Preferencias de permiso
 
 ## Administrar licencias
 
@@ -27,12 +27,12 @@ En la sección *Licencias*, puedes administrar tus licencias y los dispositivos 
 - mejorada,
 - cancelada. También puedes actualizar tus datos de pago.
 
-Los dispositivos vinculados a tus licencias del bloqueador de anuncios AdGuard se pueden desvincular o cambiar de nombre. Puedes desvincular los dispositivos que no utilices haciendo clic en el icono con forma de cruz que aparece junto a ellos.
+Los dispositivos vinculados a tus licencias del bloqueador de anuncios AdGuard se pueden desvincular o cambiar de nombre. Para desvincular dispositivos no utilizados, haz clic en el número de dispositivos vinculados junto a *Dispositivos*, luego selecciona la flecha derecha → *Eliminar*.
 
 ## Ver compras
 
-La sección Historial de compras muestra todas las licencias que hayas comprado utilizando la cuenta de correo electrónico con la que registraste tu cuenta AdGuard. You will also find there information about the date of purchase, order ID, payment method, and cost of the purchase.
+La sección *Compras* muestra todas las licencias que alguna vez compraste usando la cuenta de correo electrónico con la que registraste tu cuenta de AdGuard. Allí también encontrarás información sobre la fecha de la compra, ID de pedido, forma de pago y el coste de la compra.
 
-## Contactar la asistencia técnica
+## Actividad
 
-La pestaña Soporte contiene enlaces útiles que te ayudarán a resolver problemas o encontrar respuestas a tus preguntas sobre los productos AdGuard. Se dividen en seis secciones: Preguntas frecuentes, Enviar un informe de error/solicitud de función, Informar de un bloqueo incorrecto, Contactar con el soporte técnico, Base de conocimientos y Discusión.
+La pestaña *Actividad* permite monitorear la actividad de inicio de sesión de tu cuenta de AdGuard. Muestra la dirección de correo electrónico utilizada, la ubicación y la fecha de inicio de sesión. También puedes filtrar registros por producto: *Todos los productos*, *bloqueador de anuncios AdGuard*, *AdGuard VPN*, *AdGuard DNS*.

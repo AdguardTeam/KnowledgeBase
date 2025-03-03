@@ -1,6 +1,6 @@
 ---
 title: Filtros
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 :::info
@@ -19,7 +19,7 @@ Todos los filtros se agrupan según tu función. Por ejemplo, existen categoría
 
 ## Filtros personalizados
 
-Si bien las características de otros grupos de filtros son más o menos predecibles, hay un grupo llamado _Personalizado_ que puede generar dudas adicionales.
+Si bien las características de otros grupos de filtros son más o menos autoexplicativas, hay un grupo llamado _Personalizado_ que puede generar dudas adicionales.
 
 ![Filtros personalizados \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
 

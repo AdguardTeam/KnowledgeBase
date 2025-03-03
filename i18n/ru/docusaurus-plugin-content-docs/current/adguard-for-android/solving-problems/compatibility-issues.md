@@ -5,7 +5,7 @@ sidebar_position: 16
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -16,7 +16,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 - Использовать [AdGuard VPN](https://adguard-vpn.com/welcome.html): в *Режиме интеграции* два приложения могут работать одновременно
 - Использовать ваш VPN в качестве [исходящего прокси-сервера](../solving-problems/outbound-proxy.md) и прописать его параметры в AdGuard
 - Выбрать режим *Автоматический прокси*. AdGuard больше не будет использовать локальный VPN и вместо этого перенастроит iptables
-- Выбрать режим *Ручной прокси*. To do this, go to *Settings* → *Filtering* → *Network* → *Routing mode*
+- Выбрать режим *Ручной прокси*. Для этого перейдите в раздел *Настройки* → *Фильтрация* → *Сеть* → *Режим маршрутизации*
 
 :::note Совместимость
 
@@ -36,7 +36,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 ### UC браузеры: UC Browser, UC Browser для x86, UC Mini, UC Browser HD
 
-Чтобы фильтровать HTTPS-трафик, AdGuard добавляет свой сертификат в пользовательское хранилище. К сожалению, браузеры UC не доверяют пользовательским сертификатам, поэтому AdGuard не может фильтровать их HTTPS-трафик.
+Чтобы фильтровать HTTPS-трафик, AdGuard добавляет свой сертификат в пользовательское хранилище. Браузеры UC не доверяют пользовательским сертификатам, поэтому AdGuard не может фильтровать их HTTPS-трафик.
 
 - Чтобы решить эту проблему, переместите сертификат [в системное хранилище сертификатов](../solving-problems/https-certificate-for-rooted.md/)
 

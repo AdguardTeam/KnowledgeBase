@@ -13,19 +13,19 @@ sidebar_position: 1
 
 3. _Geliştirici modu_ öğesini etkinleştirin.
 
-   ![Geliştirici modu \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
+    ![Geliştirici modu \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
 
 4. `background.html` öğesine tıklayın.
 
-   ![Arka plan \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
+    ![Arka plan \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
 
 5. _Konsol_ sekmesini açın.
 
-   ![Konsol sekmesi \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
+    ![Konsol sekmesi \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
 
 6. Sağ tık menüsünü açın ve _Farklı kaydet…_ öğesini seçin.
 
-   ![Farklı kaydet \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
+    ![Farklı kaydet \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
 
 ### Firefox
 
@@ -35,19 +35,19 @@ sidebar_position: 1
 
 3. _Eklentilerde hata ayıkla_ öğesine tıklayın.
 
-   ![Eklentilerde hata ayıkla \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+    ![Eklentilerde hata ayıkla \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
 
 4. _İncele_ öğesine tıklayın.
 
-   ![İncele \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
+    ![İncele \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
 
 5. _Konsol_ sekmesine gidin.
 
-   ![Konsol \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
+    ![Konsol \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
 
 6. _Tüm Mesajları Dosyaya Kaydet_ öğesine tıklayın.
 
-   ![Kaydet \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
+    ![Kaydet \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
 
 ## Günlükleri gönderme
 

@@ -5,24 +5,56 @@ sidebar_position: 6
 
 As any honest and well-performed effort should be rewarded, active translators on Crowdin can request a free AdGuard license key and a VPN subscription.
 
-To request a **one-year AdGuard license key** or a **one-year AdGuard VPN subscription**, you must translate at least **500** and **2,500** words respectively.
+## Ödül sistemimiz nasıl çalışır
 
-To check your translation progress, open a project you have worked on, click the *Reports* tab and select *My Contribution*. You can sum up the number of words translated in different projects to get a license.
+### AdGuard lisansları için
 
-## Here’s how our reward system works
+- İlk bir yıllık Reklam Engelleyici lisansınız için **1.000 kelime** çevirmeniz gerekir.
+- İkinci lisansınız için **ek 1.500 kelimeye** (toplam 2.500 kelime) ihtiyacınız olur.
+- Sonraki tüm lisanslar lisans başına **ek 2.500** kelime gerektirir.
 
-```text
-For the first one-year AdGuard license, you need to translate 500 words.
-For the second license, you need 1,000 words, i.e. 1,500 words altogether.
-All subsequent licenses require an additional 1,500 words per license.
+### AdGuard VPN lisansları için
 
-For the first one-year AdGuard VPN subscription, you need to translate 2,500 words.
-All subsequent subscriptions or renewals require an additional 2,500 words per subscription.
+- İlk bir yıllık VPN aboneliği için **3.000 kelimenin** çevrilmesi gerekir.
+- Sonraki tüm abonelikler veya yenilemeler için abonelik başına **ek 3.000 kelime** gerektirir.
 
-```
+:::note Kısıtlamalar
 
-Just send us a request to [translate@adguard.com](mailto:translate@adguard.com) and you’ll get the license as a token of our gratitude.
+Katkıda bulunmanın karşılığı olarak, en fazla 5 yıl geçerli olan lisanslar ve abonelikler sunuyoruz. Reklam Engelleyici söz konusu olduğunda, 5 cihaza kadar kapsayan lisanslar sunuyoruz. Ömür boyu lisanslar sunmuyoruz.
 
-Besides, the most active translators may receive proofreader status in the future, should they express such an intention, and that promises even more good stuff.
+:::
 
-Every year we present gifts with the AdGuard logo to our active proofreaders. If you want to become one of them, please write to [translate@adguard.com](mailto:translate@adguard.com).
+## Lisansınızı nasıl talep edebilirsiniz
+
+Çevirmen ekibimize [translate@adguard.com](mailto:translate@adguard.com) adresine aşağıdaki bilgileri içeren bir e-posta göndermeniz yeterli:
+
+- Crowdin kullanıcı adınız
+- Katkıda bulunduğunuz projeler (Websites, Applications, Knowledge Base, vb.)
+- Lisansınızı bağlamak istediğiniz e-posta adresi
+- Çeviri istatistikleriniz (bir ekran görüntüsü veya toplam kelime sayısı) ve istediğiniz lisans türü
+
+**E-posta şablonu:**
+
+> Merhaba, AdGuard ekibi!
+> 
+> Android için AdGuard'da 5.000'den fazla kelimeyi (*sizin dilinizde*) çevirdim — istatistiklerimi ekte bulabilirsiniz. Bunun için bir AdGuard VPN lisansı ve bir Reklam Engelleyici lisansı talep etmek istiyorum. E-postam (*e-posta adresiniz*). Crowdin kullanıcı adım (*kullanıcı adınız*).
+
+## Çeviri ilerlemenizi nasıl kontrol edebilirsiniz
+
+Üzerinde çalıştığınız bir projeyi açın, *Raporlar* sekmesine tıklayın, *Katkım* öğesini seçin, aşağı kaydırın, bir tarih aralığı seçin ve bir rapor oluşturun. Şuna benzer bir şey gibi görünür.
+
+![İstatistikler *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/statistics.png)
+
+Lisans almaya hak kazanmak için farklı projelerde çevrilen kelime sayısını toplayabilirsiniz.
+
+## Nasıl düzeltmen olunur
+
+En aktif çevirmenlerimiz ileride düzeltmen statüsü için değerlendirilebilir. Düzeltmen olmak için birkaç aylık bir süre boyunca sürekli olarak yüksek kalitede çeviriler sunmanız gerekir.
+
+Düzeltmenlerin, daha fazla kişinin kendi dillerinde AdGuard ürünlerine erişmesine yardımcı olmanın ötesinde ekstra lisans veya avantaj almadıklarını lütfen unutmayın. Düzeltmenlerimizden biri olmakla ilgileniyorsanız lütfen [translate@adguard.com](mailto:translate@adguard.com) adresinden bizimle iletişime geçin.
+
+## Aktif katkıda bulunanlar için hediyeler
+
+En iyi katkıda bulunanlara, her yıl AdGuard ürünlerinden oluşan hediyeler gönderir ve [blogumuzda](https://adguard.com/en/blog/best-contributors-2023.html) onları öne çıkarırız.
+
+![AdGuard ürünleri *kenar](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

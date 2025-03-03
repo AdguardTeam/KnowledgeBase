@@ -19,7 +19,7 @@ Um die DNS-Einstellungen verwalten zu können, muss für die AdGuard-Apps ein lo
 
 ### DNS-Implementierung {#dns-implementation}
 
-![Bildschirm für die DNS-Implementierung \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_en.jpeg)
+![Bildschirm für die DNS-Implementierung \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_en.jpeg)
 
 In diesem Abschnitt gibt es zwei Optionen: AdGuard und Nativ. Im Grunde sind dies zwei Methoden zur Einrichtung von DNS.
 
@@ -29,7 +29,7 @@ Bei der nativen Implementierung wird das DNS vom System und nicht von der App ve
 
 Der nächste Abschnitt, den Sie auf dem Bildschirm DNS-Schutz sehen, ist DNS-Server. Hier werden der aktuell ausgewählte DNS-Server und die Verschlüsselungsart angezeigt. Um eine der beiden Optionen zu ändern, tippen Sie auf die Schaltfläche, um den Bildschirm „DNS-Server” aufzurufen.
 
-![DNS-Server \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
+![DNS-Server \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
 
 Die Server unterscheiden sich durch ihre Geschwindigkeit, das verwendete Protokoll, die Vertrauenswürdigkeit, die Protokollierungspolitik usw. Standardmäßig schlägt AdGuard mehrere DNS-Server aus den beliebtesten vor (einschließlich AdGuard DNS). Tippen Sie auf eine beliebige Option, um die Verschlüsselungsart zu ändern (sofern der Eigentümer des Servers eine solche Option anbietet) oder um die Homepage des Servers anzuzeigen. Wir haben Kennzeichnungen wie „Keine Protokollierung“, „Sperren von Werbung“ und „Sicher“ hinzugefügt, um Ihnen die Auswahl zu erleichtern.
 
@@ -51,7 +51,7 @@ Um zu überprüfen, ob alles richtig eingestellt ist, besuchen Sie unsere [Diagn
 
 ### Netzwerkeinstellungen {#network-settings}
 
-![Bildschirm der Netzwerkeinstellungen \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
+![Bildschirm der Netzwerkeinstellungen \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
 
 Die Benutzer:innen können ihre DNS-Sicherheit auch im Bereich „Netzwerk-Einstellungen” festlegen. _Mobile Daten filtern_ und _WLAN filtern_ aktivieren oder deaktivieren den DNS-Schutz für die jeweiligen Netzwerktypen. Weiter unten, unter _WLAN-Ausnahmen_, können Sie bestimmte WLAN-Netzwerke vom DNS-Schutz ausschließen (z. B. können Sie Ihr Heimnetzwerk ausschließen, wenn Sie [AdGuard Home](https://adguard.com/adguard-home/overview.html) verwenden).
 
@@ -63,7 +63,7 @@ So finden Sie diese Funktion:
 
 _Schutz_ (das Schildsymbol in der unteren Menüleiste) → _DNS-Schutz_ → _DNS-Filterung_
 
-![Bildschirm für die DNS-Filterung \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
+![Bildschirm für die DNS-Filterung \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
 #### DNS-Filter {#dns-filters}
 

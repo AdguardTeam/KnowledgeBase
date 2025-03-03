@@ -5,40 +5,40 @@ sidebar_position: 4
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-The DNS protection module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _DNS protection_.
+Il modulo di protezione DNS può essere aperto toccando la scheda _Protezione_ (seconda icona a sinistra nella parte inferiore dello schermo) e poi selezionando _Protezione DNS_.
 
 :::tip
 
-DNS protection works differently from regular ad and tracker blocking. You cam [learn more about it and how it works from a dedicated article](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
+La protezione DNS funziona in modo diverso rispetto al blocco normale delle inserzioni e dei tracciatori. Puoi [scoprire di più su di esso e su come funziona in un articolo dedicato](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
 
 :::
 
-_DNS protection_ allows you to filter DNS requests with the help of a selected DNS server, DNS filters, and user rules:
+\*La Protezione DNS ti consente di filtrare le richieste DNS con l'aiuto di un dato server DNS, filtri DNS e regole dell'utente:
 
-- Some DNS servers have blocklists that help block DNS requests to potentially harmful domains
+- Alcuni server DNS prevedono delle liste di blocco, che aiutano a bloccare le richieste DNS ai domini potenzialmente dannosi
 
-- In addition to DNS servers, AdGuard can filter DNS requests on its own using a special DNS filter. It contains a large list of ad and tracking domains — requests to them are rerouted to a blackhole server
+- Oltre ai server DNS, AdGuard può filtrare le richieste DNS per conto proprio, utilizzando un filtro DNS speciale. Contiene un grande elenco di domini pubblicitari e di tracciamento: le richieste a essi sono reindirizzate a un server blackhole
 
-- You can also block and unblock domains by creating user rules. You might need to consult our article about [DNS filtering rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
+- Inoltre, puoi bloccare e sbloccare i domini, creando delle regole dell'utente. Potresti dover consultare il nostro articolo sulla [sintassi delle regole di filtraggio DNS](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
 
-![DNS protection \*mobile\_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
+![Protezione DNS \*mobile_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
 
-#### DNS server
+#### Server DNS
 
-In this section, you can select a DNS server to resolve DNS requests, block ads and trackers, and encrypt DNS traffic. Tap a server to read its full description and select a protocol. If you didn't find the desired server, you can add it manually:
+In questa sezione, puoi selezionare un server DNS per risolvere le richieste DNS, bloccare annunci e tracciatori e crittografare il traffico DNS. Tocca un server per leggerne la descrizione completa e selezionare un protocollo. Se non hai trovato il server desiderato, puoi aggiungerlo manualmente:
 
-- Tap _Add DNS server_ and enter the server address (or addresses)
+- Tocca _Aggiungi server DNS_ e inserisci l'indirizzo (o gli indirizzi) del server
 
-- Alternatively, you can select a DNS server from the [list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/) and tap _Add to AdGuard_ next to it
+- In alternativa, puoi selezionare un server DNS dall'[elenco di fornitori DNS noti](https://adguard-dns.io/kb/general/dns-providers/) e toccare _Aggiungi ad AdGuard_ accanto ad esso
 
-- If you're using a private AdGuard DNS server, you can add it to AdGuard from the [dashboard](https://adguard-dns.io/dashboard/)
+- Se stai usando un server privato di AdGuard DNS, puoi aggiungerlo ad AdGuard dal [cruscotto](https://adguard-dns.io/dashboard/)
 
-By default, _Automatic DNS_ is selected. It sets a DNS server based on your AdGuard and device settings. If you have [integration with AdGuard VPN](/adguard-for-android/features/integration-with-vpn) or another SOCKS5 proxy enabled, it connects to _AdGuard DNS Non-filtering_ or any other server you specify. In all other cases, it connects to the DNS server selected in your device settings.
+Per impostazione predefinita, è selezionato _DNS automatico_. Imposta un server DNS secondo le tue impostazioni di AdGuard e del dispositivo. Se hai abilitato [l'integrazione con AdGuard VPN](/adguard-for-android/features/integration-with-vpn) o con un altro proxy SOCKS5, si connette al AdGuard DNS non filtrante o a qualsiasi altro server tu specifichi. In tutti gli altri casi, si connette al server DNS selezionato nelle impostazioni del tuo dispositivo.
 
-#### DNS filters
+#### Filtri DNS
 
-This section allows you to add custom DNS filters and DNS filtering rules. You can find more filters at [filterlists.com](https://filterlists.com/).
+Questa sezione ti consente di aggiungere filtri DNS personalizzati e regole di filtraggio DNS. Puoi trovare altri filtri su [filterlists.com](https://filterlists.com/).

@@ -27,7 +27,7 @@ Existují dva hlavní režimy tunelu: *Dělený* a *Úplný*. Režim *Dělený t
 
 Existuje specifická funkce režimu *Dělený tunel*: pokud proxy server DNS nefunguje dobře, například pokud se odpověď ze serveru AdGuard DNS nevrátila včas, systém iOS jej "zneplatní" a přesměruje provoz přes server DNS zadaný v nastavení systému iOS. V tuto chvíli nejsou blokovány žádné reklamy a provoz DNS není šifrován.
 
-V režimu *Úplný tunel* se používá pouze server DNS zadaný v nastavení AdGuardu. Pokud neodpovídá, internet jednoduše nefunguje. Zapnutý režim *Úplný tunel* může způsobit nesprávný výkon některých programů (například FaceTime) a vést k problémům s aktualizacemi aplikací.
+V režimu *Úplný tunel* se používá pouze server DNS zadaný v nastavení AdGuardu. Pokud neodpovídá, internet jednoduše nefunguje. Zapnutý režim *Úplný tunel* může negativně ovlivnit výkon některých programů (např. FaceTime) a způsobit problémy s aktualizací aplikací.
 
 Ve výchozím nastavení používá AdGuard režim *Dělený tunel* jako nejstabilnější možnost.
 

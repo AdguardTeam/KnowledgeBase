@@ -1,32 +1,32 @@
 ---
-title: How to block ads in the YouTube app
+title: Cum să blocați reclamele în aplicația YouTube
 sidebar_position: 7
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Android, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-One of the most popular questions users ask us is: 'Is it possible to block ads in YouTube on Android?'. Due to the technical restrictions of the Android OS, there is no way to *completely* remove ads from the YouTube app. But we've found an alternative that brings you to it as close as possible, while getting around the Android-imposed restrictions.
+Una dintre cele mai populare întrebări pe care ni le pun utilizatorii este: "Este posibil să blocăm reclamele din YouTube pe Android?". Din cauza restricțiilor tehnice ale sistemului de operare Android, nu există nicio modalitate de a elimina *complet* reclamele din aplicația YouTube. Dar noi am găsit o alternativă care vă aduce cât mai aproape posibil, în timp ce ocolim restricțiile impuse de Android.
 
-## Watch YouTube in the AdGuard app
+## Vizionează YouTube în aplicația AdGuard
 
-![Instruction *mobile](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-6/share.gif)
+![Instrucțiune *mobil](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-6/share.gif)
 
-1. Open the YouTube app and start the video you want to watch.
+1. Deschideți aplicația YouTube și începeți videoclipul pe care doriți să îl vizionați.
 
 1. Tap the *Share* button.
 
-    ![Share to YouTube step 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
+    ![Distribuiți pe YouTube pasul 1 *mobil](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
 
-1. Select *AdGuard* from the list of apps.
+1. Selectați *AdGuard* din lista de aplicații.
 
-    ![Share to YouTube step 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
+    ![Distribuiți pe YouTube pasul 2 mobil](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
 
-That's it! A new window with the video will open where you'll be able to watch it without being interrupted by ads.
+Asta e tot! Se va deschide o fereastră nouă cu videoclipul, unde îl veți putea viziona fără a fi întrerupt de reclame.
 
-## Watch YouTube in a browser
+## Vizionează YouTube într-un browser
 
-Alternatively, you can also watch YouTube in a browser and there will be no ads if you have AdGuard installed and enabled.
+Alternativ, puteți viziona YouTube într-un browser și nu vor exista reclame dacă aveți AdGuard instalat și activat.

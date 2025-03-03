@@ -1,12 +1,12 @@
 ---
-title: AdGuard translation program
+title: Programul de traducere AdGuard
 sidebar_position: 1
 ---
 
-> **Disclaimer:** you can ask us any questions about translating AdGuard by sending an email to [translate@adguard.com](mailto:translate@adguard.com) or by joining our [Telegram chat](https://t.me/joinchat/UVYTLcHbr8JmOGIy).
+Ne poți adresa orice întrebări legate de traducerea AdGuard trimițând un e-mail la [translate@adguard.com](mailto:translate@adguard.com) sau alăturându-te [chatului nostru Telegram](https://t.me/joinchat/UVYTLcHbr8JmOGIy).
 
-When it comes to translations, we at AdGuard always heavily rely on volunteers.
+Când vine vorba de traduceri, noi de la AdGuard ne bazăm întotdeauna puternic pe voluntari.
 
-We now use the [Crowdin platform](https://crowdin.com/) to manage translations of our products. So this is the place for anyone who wants to contribute to AdGuard by translating any of our products.
+Acum folosim [platforma Crowdin](https://crowdin.com/) pentru a gestiona traducerile produselor noastre. Așadar, acesta este locul pentru oricine dorește să contribuie la AdGuard prin traducerea produselor noastre.
 
-If you want to be among the volunteers who help us translate AdGuard, please read the information on [how to become our translator](../become-translator) and [how we collaborate with them](../rewards).
+Dacă vrei să fii printre voluntarii care ne ajută să traducem AdGuard, te rugăm să citești informațiile despre [cum să devii translatorul nostru](../become-translator) și [cum colaborăm cu ei](../rewards).

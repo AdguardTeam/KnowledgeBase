@@ -33,13 +33,13 @@ AdGuard se compromete a proteger tu privacidad. Seguimos estrictamente nuestra [
 
     Te recomendamos encarecidamente que tomes nota de la hora exacta en la que reprodujo el problema: ayudará a nuestro equipo de soporte a encontrar entradas de registro relevantes y resolver el problema más rápido.
 
-1. Exporta los registros grabados usando el botón *Exportar registros*.
+1. Exporta los registros recopilados usando el botón *Exportar registros*.
 
     ![Exportar registros *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
     Guarda el archivo en cualquier carpeta.
 
-1. **Importante**: después de exportar los registros, vuelve a establecer el nivel de registro en *Estándar*. *Depurar* el nivel de registro ralentizará la aplicación.
+1. **Importante**: después de exportar los registros, vuelve a establecer el nivel de registro en *Predeterminado*. *Depurar* el nivel de registro ralentizará la aplicación.
 
 1. Envía el archivo al servicio de soporte de AdGuard a **support@adguard.com**, describe el problema y no olvides mencionar el momento en que reprodujo el problema.
 
@@ -65,7 +65,7 @@ Si tienes una versión anterior de AdGuard para Windows, ejecuta la aplicación 
 
     Te recomendamos encarecidamente que tomes nota de la hora exacta en la que reprodujo el problema: ayudará a nuestro equipo de soporte a encontrar entradas de registro relevantes y resolver el problema más rápido.
 
-1. Exporta los registros grabados usando el botón *Exportar registros*.
+1. Exporta los registros recopilados usando el botón *Exportar registros*.
 
     ![Exportar registros *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 

@@ -1,17 +1,17 @@
 ---
-title: Как получить файлы HAR
+title: Как сгенерировать файлы HAR
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-HAR files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Файлы HAR обрабатываются в соответствии с [Политикой конфиденциальности AdGuard](https://adguard.com/ru/privacy.html).
 
 :::
 
@@ -19,7 +19,7 @@ HAR files are processed in accordance with [the AdGuard Privacy Policy](https://
 
 Формат HAR (HTTP ARchive) представляет собой файл архива в формате JSON для протоколирования взаимодействия браузера с сайтом. Технические характеристики формата HAR определяют архивные данные для транзакций HTTP, которые используются браузером для экспорта подробной информации о загружаемых веб-страницах. Более подробное описание формата файла HAR и его характеристик вы можете найти на сайте [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
 
-## Как получить файлы HAR
+## Как сгенерировать файлы HAR
 
 Иногда нам нужно проанализировать данные файлы, чтобы заблокировать определённые объявления, которые по какой-то причине трудно воспроизвести. Чтобы получить файлы HAR, выполните следующие действия:
 
@@ -31,7 +31,7 @@ HAR files are processed in accordance with [the AdGuard Privacy Policy](https://
 6. Вернитесь в раздел **Расширенные**.
 7. Нажмите **Экспортировать логи и информацию о системе** → **Разрешить** (при необходимости) → **Сохранить**.
 
-**Пожалуйста, пришлите файл с логами (полученный в результате) в службу поддержки AdGuard.**
+**Отправьте сгенерированный файл с логами в поддержку AdGuard.**
 
 :::note
 

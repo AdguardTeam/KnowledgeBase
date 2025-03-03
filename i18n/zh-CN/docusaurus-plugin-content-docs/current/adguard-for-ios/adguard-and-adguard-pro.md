@@ -1,5 +1,5 @@
 ---
-title: AdGuard and AdGuard Pro
+title: AdGuard 和 AdGuard Pro
 sidebar_position: 5
 ---
 
@@ -9,8 +9,8 @@ sidebar_position: 5
 
 :::
 
-If you look for AdGuard in the App Store, you'll find two apps — [AdGuard](https://itunes.apple.com/app/id1047223162) and [AdGuard Pro](https://itunes.apple.com/app/id1126386264). These apps are designed to block ads and trackers in Safari, other browsers, and apps, and to manage DNS protection.
+在 App Store 搜索 AdGuard，会有两个应用程序，即 [AdGuard](https://itunes.apple.com/app/id1047223162) 和 [AdGuard Pro](https://itunes.apple.com/app/id1126386264)。 这些应用程序旨在阻止 Safari、其他浏览器和应用程序中的广告和跟踪器，并管理 DNS 保护。
 
-Don't be misled by their names, both apps block ads on smartphones and tablets by Apple. They used to differ in functionality due to the changing App Store review guidelines, but now these two apps are [basically the same](https://adguard.com/en/blog/updating-adguard-pro-for-ios.html).
+不要被它们的名字所误导，这两款应用程序都能阻止 Apple 手机和平板电脑上的广告。 由于 App Store 审核指南的变化，它们的功能曾经有所不同，但现在这两个应用程序[基本相同](https://adguard.com/zh_cn/blog/updating-adguard-pro-for-ios.html)。
 
-If you have purchased AdGuard premium, there is no need to get AdGuard Pro, and vice versa.
+如果您已经购买了 AdGuard 高级版，无需再购买 AdGuard Pro，反之亦然。

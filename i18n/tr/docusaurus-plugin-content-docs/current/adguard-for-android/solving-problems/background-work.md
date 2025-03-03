@@ -51,7 +51,7 @@ Tamamlandı! You have successfully set up AdGuard to work in the background.
 
 To let your AdGuard app run successfully in the background, do the following:
 
-In **Settings** → **Apps** → **Manage apps** → scroll down to locate **AdGuard**, set **Autostart** to “On”.
+In **Settings** → **Apps** → **Manage apps**, scroll down to locate **AdGuard** and set **Autostart** to “On”.
 
 ![Xiaomi Ayarları *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
@@ -323,7 +323,7 @@ It is not confirmed, but it might be possible to just disable PowerGenie in **Ph
 
 `adb shell pm uninstall -k --user 0 com.huawei.android.hwapsvv`
 
-If AdGuard keeps getting killed, also try running
+AdGuard sürekli kapatılıyorsa, şunu çalıştırmayı da deneyin
 
 `adb shell pm stopservice hwPfwService`
 
@@ -529,7 +529,7 @@ On Android 11+, on the same screen with STAMINA mode, there is a setting called 
 
 You also need to be set AdGuard as Excepted from Power-saving feature:
 
-**System settings** ​→ **Apps & Notifications** ​→ **Advanced** ​→ **Special app access** ​→ **Power saving feature** → Switch AdGuard to **Excepted**
+**System settings** → **Apps & Notifications** → **Advanced** → **Special app access** → **Power saving feature** → Switch AdGuard to **Excepted**
 
 ## Wiko
 
@@ -554,3 +554,34 @@ Android stock OS normally does not conflict with apps working in the background,
 - Set up **Always-on VPN** mode
 
     ![Stockadguard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)
+
+## Realme
+
+Realme UI 4.0 çalıştıran cihazlarda, AdGuard'ın arka planda düzgün çalışmasını sağlamak için üç temel yapılandırma bulunuyor.
+
+1. AdGuard uygulamasını ayarlayın:
+
+    - AdGuard simgesine uzun basın
+    - Görüntülenen menüden **Uygulama bilgileri** öğesini seçin
+    - **Pil kullanımı** öğesine gidin ve tüm seçenekleri etkinleştirin:
+        - Arka planda çalışmaya izin ver
+        - Ön planda çalışmaya izin ver
+        - Otomatik başlatmaya izin ver
+    - In the **App info** section, scroll down and turn off the option **Pause app activity if unused**
+
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
+
+1. Pili ayarlayın:
+
+    - **Ayarlar → Pil → Diğer ayarlar → Pil kullanımını optimize et** öğesine gidin
+    - Listede AdGuard'ı bulun ve **Optimize etme** öğesini etkinleştirin
+    - In **Other settings**, check the **App Quick Freeze** section and disable it for AdGuard
+
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
+
+1. Enable *Always-On VPN* for AdGuard:
+
+    - Go to **Settings → Connection & sharing → VPN**
+    - Find **AdGuard** and enable the **Always-on VPN** option
+
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)

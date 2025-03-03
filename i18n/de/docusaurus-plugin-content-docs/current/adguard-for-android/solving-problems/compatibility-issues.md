@@ -1,5 +1,5 @@
 ---
-title: Known compatibility issues with Android apps
+title: Bekannte Kompatibilitätsprobleme mit Android-Anwendungen
 sidebar_position: 16
 ---
 
@@ -9,57 +9,57 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-## VPN apps
+## VPN-Apps
 
-If you are using AdGuard in the *Local VPN* filtering mode, you cannot run other VPN apps at the same time. To solve this problem, we suggest that you:
+Wenn Sie AdGuard im Filtermodus *Lokales VPN* verwenden, können Sie keine anderen VPN-Anwendungen gleichzeitig ausführen. Um dieses Problem zu lösen, schlagen wir vor, dass Sie:
 
-- Use [AdGuard VPN](https://adguard-vpn.com/welcome.html) — its *Integrated mode* allows two apps to operate simultaneously
-- Configure your VPN app to act as an [outbound proxy](../solving-problems/outbound-proxy.md) and set up a local outbound proxy using the parameters from the third-party app
-- Switch to the *Automatic proxy* mode. Wenn Sie dies tun, wird AdGuard kein lokales VPN mehr verwenden und stattdessen „iptables“ neu konfigurieren
-- Switch to the *Manual proxy* mode. To do this, go to *Settings* → *Filtering* → *Network* → *Routing mode*
+- [AdGuard VPN](https://adguard-vpn.com/welcome.html) verwenden — sein *Integrierter Modus* ermöglicht das gleichzeitige Verwenden von zwei Anwendungen
+- Ihre VPN-Anwendung so konfigurieren, dass sie als [Outbound-Proxy](../solving-problems/outbound-proxy.md) fungiert, und einen lokalen Outbound-Proxy mit den Parametern der Drittanbieter-Anwendung einrichten
+- In den *Automatischen Proxy*-Modus wechseln. Wenn Sie dies tun, wird AdGuard kein lokales VPN mehr verwenden und stattdessen „iptables“ neu konfigurieren
+- In den *Manuellen Proxy*-Modus wechseln. Öffnen Sie dazu *Einstellungen* → *Filtern* → *Netzwerk* → *Routing-Modus*
 
-:::note Compatibility
+:::note Kompatibilität
 
-The *Automatic proxy* mode is only accessible on rooted devices. For *Manual proxy*, rooting is required on devices running on Android 10 or later.
+Der *Automatische Proxy*-Modus ist nur auf gerooteten Geräten verfügbar. Für *Manuellen Proxy* ist das Rooten auf Geräten mit Android 10 oder höher erforderlich.
 
 :::
 
-## Private DNS
+## Privates DNS
 
-The Private DNS feature was introduced in Android Pie. Before version Q, Private DNS didn't break AdGuard DNS filtering logic and the DNS forwarding through AdGuard worked normally. But starting from version Q, the presence of Private DNS forces apps to redirect traffic through the system resolver instead of AdGuard. See Android [devs blog](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html) for more details.
+Die Private DNS-Funktion wurde in Android Pie eingeführt. Vor Version Q hat Private DNS die DNS-Filterlogik von AdGuard nicht unterbrochen und die DNS-Weiterleitung durch AdGuard hat normal funktioniert. Aber ab Version Q zwingt das Vorhandensein von Private DNS Anwendungen dazu, den Datenverkehr über den Systemresolver statt über AdGuard umzuleiten. Siehe Android [devs blog](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html) für weitere Details.
 
-- To solve the problem with Private DNS, use the `$network` rule
+- Um das Problem mit Private DNS zu lösen, verwenden Sie die Regel `$network`
 
-Some device manufacturers keep Private DNS settings hidden and set 'Automatic' mode as a default one. Thus, disabling Private DNS is impossible but we can make the system think that the upstream is not valid by blocking it with a `$network` rule. For instance, if the system uses Google DNS by default, we can add rules `|8.8.4.4^$network` and `|8.8.8.8^$network` to block Google DNS.
+Einige Gerätehersteller halten die privaten DNS-Einstellungen verborgen und stellen den Modus „Automatisch“ als Standard ein. Es ist also nicht möglich, Private DNS zu deaktivieren, aber wir können das System dazu bringen, den Upstream für ungültig zu erachten, indem wir ihn mit einer `$network`-Regel sperren. Wenn das System zum Beispiel standardmäßig Google DNS verwendet, können wir die Regeln `|8.8.4.4^$network` und `|8.8.8.8^$network` hinzufügen, um Google DNS zu sperren.
 
-## Unsupported browsers
+## Nicht unterstützte Browser
 
-### UC Browsers: UC Browser, UC Browser for x86, UC Mini, UC Browser HD
+### UC Browser: UC Browser, UC Browser für x86, UC Mini, UC Browser HD
 
-To be able to filter HTTPS traffic, AdGuard requires the user to add a certificate to the device's trusted user certificates. Unfortunately, UC-family browsers don't trust user certificates, so AdGuard cannot perform HTTPS filtering there.
+Um den HTTPS-Datenverkehr filtern zu können, muss AdGuard ein Zertifikat zu den vertrauenswürdigen Benutzerzertifikaten des Geräts hinzufügen. Leider trauen UC-Browser den Benutzerzertifikaten nicht, so dass AdGuard dort keine HTTPS-Filterung durchführen kann.
 
-- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md/)
+- Um dieses Problem zu lösen, verschieben Sie das [Zertifikat in den Zertifikatspeicher des Systems](../solving-problems/https-certificate-for-rooted.md/)
 
-:::note Compatibility
+:::note Kompatibilität
 
-Requires root access.
+Erfordert Root-Zugriff.
 
 :::
 
 ### Dolphin Browser: Dolphin Browser, Dolphin Browser Express
 
-AdGuard cannot filter its traffic when operating in the *Manual proxy* mode because this browser ignores system proxy settings.
+AdGuard kann seinen Datenverkehr nicht filtern, wenn er im Modus *Manueller Proxy* arbeitet, da dieser Browser die Proxy-Einstellungen des Systems ignoriert.
 
-- Use the *Local VPN* filtering mode to solve this problem
+- Verwenden Sie den *Lokalen VPN*-Filtermodus, um dieses Problem zu lösen
 
-### Opera mini: Opera mini, Opera mini with Yandex
+### Opera mini: Opera mini, Opera mini mit Yandex
 
-Opera mini drives traffic through a compression proxy by default and AdGuard is not able to decompress and filter it at the same time.
+Opera mini leitet den Datenverkehr standardmäßig über einen Komprimierungs-Proxy, und AdGuard ist nicht in der Lage, ihn gleichzeitig zu dekomprimieren und zu filtern.
 
-- There is no solution at this moment
+- Im Moment gibt es keine Lösung
 
 ### Puffin Browser: Puffin Browser, Puffin Browser Pro
 
-Puffin Browser drives traffic through a compression proxy by default and AdGuard is not able to decompress and filter it at the same time.
+Der Puffin-Browser leitet den Datenverkehr standardmäßig durch einen Komprimierungsproxy und AdGuard ist nicht in der Lage, ihn gleichzeitig zu dekomprimieren und zu filtern.
 
-- There is no solution at this moment
+- Im Moment gibt es keine Lösung

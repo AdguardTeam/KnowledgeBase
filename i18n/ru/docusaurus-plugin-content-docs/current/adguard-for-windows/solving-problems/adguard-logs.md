@@ -1,5 +1,5 @@
 ---
-title: Как получить логи AdGuard
+title: Как собирать логи AdGuard
 sidebar_position: 3
 ---
 
@@ -11,7 +11,7 @@ sidebar_position: 3
 
 :::note
 
-Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Данные и/или файлы в логах обрабатываются в соответствии с [Политикой конфиденциальности AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
@@ -19,13 +19,13 @@ Data and/or files provided in logs are processed in accordance with [the AdGuard
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard стремится защищать вашу конфиденциальность. Мы строго следуем нашей [Политике конфиденциальности](https://adguard.com/privacy/windows.html) и не собираем никакой личной информации о пользователях. Перед отправкой логов в поддержку проверьте, не содержит ли файл дополнительную информацию, которую вы не хотите передавать. Если в файле осталась личная информация, рекомендуем удалить её.
 
 :::
 
-### Debug logs {#debug-logs}
+### Отладочные логи {#debug-logs}
 
-1. Откройте настройки AdGuard. Перейдите в раздел *Общие настройки*, прокрутите вниз до конца экрана и выберите *Уровень логирования* *Подробный*.
+1. Откройте настройки AdGuard. Перейдите в раздел *Общие настройки*, прокрутите вниз до конца экрана и измените *Уровень логирования* на *Подробный*.
 
     ![Подробный уровень логирования *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
@@ -39,7 +39,7 @@ AdGuard is committed to protecting your privacy. We strictly follow our [Privacy
 
     Сохраните архив в любую папку.
 
-1. **Important**: after exporting the logs, set the logging level back to *Standard*. *Подробный* уровень логирования может значительно замедлить работу приложения.
+1. **Важно**: после экспорта логов не забудьте вернуть *Стандартный* уровень логирования. *Подробный* уровень логирования может значительно замедлить работу приложения.
 
 1. Отправьте сохранённый архив в службу поддержки AdGuard по адресу **support@adguard.com**, опишите проблему и не забудьте указать время, когда вы воспроизвели проблему.
 
@@ -57,9 +57,9 @@ AdGuard is committed to protecting your privacy. We strictly follow our [Privacy
 
 1. Откройте консоль (наберите `cmd` в стартовой панели).
 
-1. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard v7.16 for Windows or later.
+1. Запустите приложение командой `C:\"Program Files"\Adguard\Adguard.exe /trace` независимо от разрядности Windows, если у вас установлен AdGuard 7.16 для Windows или новее.
 
-If you have an older version of AdGuard for Windows, run the application with the command C:\"Program Files (x86)"\Adguard\Adguard.exe /trace if you are using 64-bit Windows, and C:\"Program Files"\Adguard\Adguard.exe /trace if you are using 32-bit.
+Если у вас установлена старая версия AdGuard для Windows, запустите приложение командой C:\"Program Files (x86)"\Adguard\Adguard.exe /trace, если вы используете 64-битную Windows, и C:\"Program Files"\Adguard\Adguard.exe /trace, если 32-битную.
 
 1. Воспроизведите ошибку.
 

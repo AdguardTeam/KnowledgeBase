@@ -1,21 +1,21 @@
 ---
-title: Activity and statistics
+title: Активность и статистика
 sidebar_position: 4
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для iOS — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
-_Activity_ screen is the 'information hub' of AdGuard's DNS protection suite. You can quickswitch to it by tapping the third icon in the bottom bar. Прим. этот экран отображается только при включённой DNS-защите.
+Экран _Активность_ — это «информационный центр» DNS-защиты AdGuard. Вы можете быстро переключиться на него, нажав на третий значок в строке внизу экрана. Прим. этот экран отображается только при включённой DNS-защите.
 
-![Activity screen \*mobile\_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
+![Активность \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/ios/activity_ru.jpg)
 
 Здесь AdGuard отображает статистику DNS-запросов вашего устройства, такую как их общее количество, количество зашифрованных запросов и среднее время обработки. AdGuard может отображать статистику за день, неделю, месяц или за всё время.
 
-Below is the _Recent activity_ feed. AdGuard хранит последние 1500 DNS-запросов с вашего устройства и показывает информацию о них: например, тип протокола и домен.
+Ниже есть лента _Недавняя активность_. AdGuard хранит последние 1500 DNS-запросов с вашего устройства и показывает информацию о них: например, тип протокола и домен.
 
 :::note
 
@@ -25,10 +25,10 @@ AdGuard никуда не отправляет эту информацию. Он
 
 Нажмите на любой запрос, чтобы просмотреть подробную информацию о нём. Внизу также будут кнопки, предлагающие добавить запрос в Белый/Чёрный список.
 
-![Request details \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
+![Информация о запросе \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_ru.jpeg)
 
-Above the activity feed, there are _Most active_ and _Most blocked_ companies. Нажмите на каждый, чтобы увидеть данные по последним 1500 запросам.
+Над лентой активности расположены _Наиболее активные_ и _Наиболее блокируемые_ компании. Нажмите на каждый, чтобы увидеть данные по последним 1500 запросам.
 
-### Statistics {#statistics}
+### Статистика {#statistics}
 
-Aside from the _Activity_ screen, you can find global statistics on the home screen and in widgets.
+Помимо экрана _Активность_, глобальную статистику можно найти на главном экране и в виджетах.

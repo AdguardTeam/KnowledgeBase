@@ -9,7 +9,7 @@ sidebar_position: 1
 
 ## Comment créer un compte
 
-Pour créer un compte, allez sur [le site officiel d'AdGuard](https://adguard.com/welcome.html) et appuyez sur le bouton *Mon compte* dans le coin supérieur droit de l'écran. Saisissez votre adresse électronique et créez un mot de passe - votre compte sera enregistré.
+Pour créer un compte, allez sur [le site officiel d'AdGuard](https://adguard.com/welcome.html) et appuyez sur le bouton *Connexion* dans le coin supérieur droit de l'écran. Saisissez votre adresse électronique et créez un mot de passe - votre compte sera enregistré.
 
 :::tip
 
@@ -20,6 +20,12 @@ Si vous saisissez votre adresse e-mail lors de l'achat d'une licence ou recevez 
 Un compte peut également être créé directement dans une application AdGuard. Appuyez sur le bouton *Connexion* ou *Activer* (il se trouve dans la section *Licence* ou sur un écran séparé), saisissez votre email et créez un mot de passe.
 
 Une fois le compte créé, activez-le en suivant le lien dans l'e-mail d'activation.
+
+:::tip
+
+Après avoir enregistré votre compte, vous pouvez utiliser l'option *Code à usage unique* pour vous connecter à l'application. Saisissez votre adresse électronique et choisissez de saisir soit votre mot de passe soit le code envoyé à votre adresse électronique.
+
+:::
 
 ## Comment créer un compte via un réseau social
 

@@ -1,6 +1,6 @@
 ---
 title: その他の機能
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 :::info
@@ -13,13 +13,13 @@ AdGuard のその他の便利なオプションを紹介いたします。
 
 ### サポート
 
-![サポート \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
+![サポート \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
 
 「サポート」タブをクリックすると、ダイアログボックスが表示され、バグを報告したり、新機能を提案したり、製品に関するご意見を共有したりすることができます。
 
 ### ライセンス
 
-![ライセンス \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![ライセンス \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
 このタブには、ライセンスに関する情報が表示されています。 ここでできること:
 
@@ -28,13 +28,13 @@ AdGuard のその他の便利なオプションを紹介いたします。
 
 ### AdGuardについて
 
-![AdGuardについて \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![AdGuardについて \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 
 このタブには、プログラムの現在のバージョンに関する情報に加え、ライセンス契約、プライバシーポリシー、謝辞、ディスカッション、バージョン履歴ページへの便利なリンクが用載っています。
 
 ### フィルタ更新を確認する
 
-![フィルタ更新を確認する \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![フィルタ更新を確認する \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
 
 フィルタやユーザースクリプトの更新があるかどうかを確認するには、アプリのメイン画面の右上にある回転する🔄のアイコンをクリックします。
 

@@ -1,5 +1,5 @@
 ---
-title: Problems caused by multiple user profiles
+title: Problèmes causés par des profils d'utilisateurs multiples
 sidebar_position: 10
 ---
 
@@ -11,13 +11,13 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 In this article you will find the methods on how to solve problems with AdGuard when you set up *multiple accounts* or *Restricted Profiles* on your Android devices.
 
-## Problems caused by multiple user profiles
+## Problèmes causés par des profils d'utilisateurs multiples
 
-On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. This happens because AdGuard is installed for a different user profile on the device.
+Sur Android 9 et les versions ultérieures, si AdGuard est installé pour plus d'un profil d'utilisateur sur votre appareil, vous pouvez rencontrer des problèmes lors de la désinstallation de l'application. Lorsque vous désinstallez AdGuard d'un profil d'utilisateur, l'application apparaîtra toujours dans la liste des applications, mais vous ne pourrez pas la désinstaller ou la réinstaller. This happens because AdGuard is installed for a different user profile on the device.
 
 If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
 
-To solve this problem, you need to uninstall the application for all users: go to Settings → All apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
+Pour résoudre ce problème, vous devez désinstaller l'application pour tous les utilisateurs : allez dans Paramètres → Toutes les applications → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
 
 ![Uninstall *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 
@@ -37,10 +37,10 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. If you're u
 
 :::
 
-1. Activate the **developer mode** and enable **USB debugging**:
+1. Activez le **mode développeur** et activez ensuite **le débogage USB** :
 
     - Open the **Settings** app phone;
-    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
+    - Accédez à la section **Système** (dernier élément du menu des paramètres). Dans cette section, trouvez le sous-élément **À propos du téléphone** ;
     - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
     - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
@@ -51,7 +51,7 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. If you're u
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Installer et configurer](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB ; Sur la plateforme Windows, les propriétaires de **Samsung** peuvent avoir besoin d'installer [cet utilitaire](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
 
@@ -68,7 +68,7 @@ About how to manage user accounts from an Android device you can [find here](htt
 
 :::note
 
-In some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual messenger or Dual app features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
+In some cases restricted user accounts are created implicitly and cannot be removed. Par exemple, lorsque vous utilisez les fonctionnalités Dual Messenger ou Dual App sur appareils **Samsung** ou **LG**. You can read below how to fix the issue in these cases.
 
 :::
 
@@ -76,9 +76,9 @@ In some cases restricted user accounts are created implicitly and cannot be remo
 
 To enable this mode, open **AdGuard Settings** → **Network** → **Filtering method** → **Local HTTP proxy**
 
-### LG and Samsung devices
+### Appareils LG et Samsung
 
-Owners of **LG** or **Samsung** phones may also encounter a similar issue. It can be caused by using **Dual App/Dual Messenger** function (which automatically creates a restricted profile). To solve this issue, you need to disable this feature.
+Les propriétaires de téléphones **LG** ou **Samsung** peuvent rencontrer un problème similaire. It can be caused by using **Dual App/Dual Messenger** function (which automatically creates a restricted profile). To solve this issue, you need to disable this feature.
 
 ### Samsung
 

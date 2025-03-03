@@ -13,7 +13,7 @@ sidebar_position: 4
 
 :::tip
 
-「DNS通信を保護」は、通常の広告やトラッカーのブロック機能とは異なる動作をします。 その仕組みについては[こちらの専用記事](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)でご確認いただけます。
+「DNS通信を保護」は、通常の広告やトラッカーのブロック機能とは異なる動作をします。 You can [learn more about it and how it works from a dedicated article](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
 
 :::
 
@@ -25,7 +25,7 @@ sidebar_position: 4
 
 - また、DNSユーザールールを作成することで、ドメインをブロックしたり、ブロック解除したりすることもできる。 [こちらのDNSフィルタリングルールの構文](https://adguard-dns.io/kb/general/dns-filtering-syntax/)を参照してください。
 
-![DNS 通信を保護 \*mobile\_border](https://cdn.adtidy.org/blog/new/9htftScreenshot_20230621-163736_AdGuard.jpg?mw=1360)
+![DNS 通信を保護 \*mobile_border](https://cdn.adtidy.org/blog/new/9htftScreenshot_20230621-163736_AdGuard.jpg?mw=1360)
 
 #### DNSサーバー
 

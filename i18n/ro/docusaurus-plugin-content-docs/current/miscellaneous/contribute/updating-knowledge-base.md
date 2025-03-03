@@ -1,28 +1,28 @@
 ---
-title: Updating the Knowledge base
+title: Actualizarea bazei de cunoștințe
 sidebar_position: 2
 ---
 
-The goal of AdGuard Ad Blocker Knowledge base is to provide everyone with the most up-to-date information on all kinds of AdGuard-related topics. But things constantly change, and sometimes an article doesn't reflect the current state of things anymore.
+Scopul bazei de cunoștințe AdGuard Ad Blocker este de a oferi tuturor informații actualizate despre toate tipurile de subiecte legate de AdGuard. Dar lucrurile se schimbă constant și, uneori, un articol nu mai reflectă starea actuală a lucrurilor.
 
-This is why we placed all of our KB content on [GitHub](https://github.com/AdguardTeam/KnowledgeBase), and now literally anyone can contribute to it by suggesting edits and translations to existing articles, as well as totally new ones.
+De aceea, am plasat tot conținutul nostru KB pe [GitHub](https://github.com/AdguardTeam/KnowledgeBase), și acum literar oricine poate contribui la acesta sugerând modificări și traduceri pentru articolele existente, precum și pentru cele complet noi.
 
-## How to suggest a change or write a new article {#suggest-change}
+## Cum să sugerați o modificare sau să scrieți un articol nou {#suggest-change}
 
-You can suggest changes to current articles and add new ones to our Knowledge base using the functionality of GitHub mentioned above. If you are unfamiliar with principles of working with the platform, start by reading [GitHub documentation](https://docs.github.com/en).
+Puteți sugera modificări pentru articolele curente și adăuga articole noi la baza noastră de cunoștințe folosind funcționalitatea GitHub menționată mai sus. Dacă nu sunteți familiarizat cu principii de lucru cu platforma, începeți prin a citi [documentația GitHub](https://docs.github.com/en).
 
-Once you are ready to start, work in the [KnowledgeBase repository](https://github.com/AdguardTeam/KnowledgeBase). All texts in our Knowledge base are written in `Markdown` markup language. Keep this in mind when editing or writing articles. Follow [this link](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) to learn more about Markdown syntax.
+Odată ce sunteți pregătit să începeți, lucrați în [repositoriul KnowledgeBase](https://github.com/AdguardTeam/KnowledgeBase). Toate textele din baza noastră de cunoștințe sunt scrise în `Markdown`. Țineți cont de acest lucru atunci când editați sau scrieți articole. Urmăriți [acest link](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) pentru a afla mai multe despre sintaxa Markdown.
 
-The Knowledge base website is built using Docusaurus 2 — a modern static website generator. When suggesting changes or additions, take into account that all documents must comply with the principles of the platform. You can read about them in [Docusaurus Guides](https://docusaurus.io/docs/category/guides).
+Site-ul bazei de cunoștințe este construit folosind Docusaurus 2 — un generator modern de site-uri statice. Când sugerați modificări sau adăugiri, țineți cont că toate documentele trebuie să respecte principiile platformei. Puteți citi despre ele în [Ghidurile Docusaurus](https://docusaurus.io/docs/category/guides).
 
-You can deploy this Knowledge base locally on your computer to preview the changes you suggest. Detailed instructions on how to do this can be found [in the README file](https://github.com/AdguardTeam/KnowledgeBase#readme) on this Knowledge base's GitHub page.
+You can deploy this Knowledge Base locally on your computer to preview the changes you suggest. Instrucțiuni detaliate despre cum să faceți acest lucru pot fi găsite [în fișierul README](https://github.com/AdguardTeam/KnowledgeBase#readme) de pe pagina GitHub a acestei baze de cunoștințe.
 
-## Translating articles {#translate-adguard}
+## Traducerea articolelor {#translate-adguard}
 
-Translation of the existing articles of the Knowledge base is carried out on [the Crowdin platform](https://crowdin.com/profile/adguard). All the details about translations and working with Crowdin can be found [in the dedicated article](../translate/guidelines) of the AdGuard Ad Blocker Knowledge base.
+Traducerea articolelor existente din baza de cunoștințe se realizează pe [platforma Crowdin](https://crowdin.com/profile/adguard). Toate detaliile despre traduceri și lucrul cu Crowdin pot fi găsite [în articolul dedicat](../translate/guidelines) din baza de cunoștințe AdGuard Ad Blocker.
 
-When working on AdGuard Knowledge base articles, you may meet strings containing plural forms that you should translate with extra attention. [In a separate article](../translate/plural-forms), we described in detail the difficulties that can arise when translating strings with plural forms and gave extensive instructions on how to work with them on the Crowdin platform.
+Când lucrați la articolele bazei de cunoștințe AdGuard, s-ar putea să întâlniți șiruri care conțin forme de plural pe care ar trebui să le traduceți cu o atenție suplimentară. [Într-un articol separat](../translate/plural-forms), am descris în detaliu dificultățile care pot apărea atunci când traducem șiruri cu forme de plural și am oferit instrucțiuni extinse despre cum să lucrăm cu acestea pe platforma Crowdin.
 
-## Working on open issues
+## Lucrul la problemele deschise
 
-Sometimes there exist [open tasks](https://github.com/AdguardTeam/KnowledgeBase/issues) related to updating the Knowledge base. You can help us speed up their completion [the same way](#suggest-change) you would suggest any other changes to the Knowledge base. Choose any issue that you find appealing and start working on it. If you have any questions — you can ask them right in the comments to that issue.
+Sometimes there exist [open tasks](https://github.com/AdguardTeam/KnowledgeBase/issues) related to updating the Knowledge Base. Puteți să ne ajutați să accelerăm finalizarea lor [în același mod](#suggest-change) în care ați sugera orice alte modificări la baza de cunoștințe. Alegeți orice problemă care vă interesează și începeți să lucrați la ea. Dacă aveți întrebări — le puteți pune chiar în comentarii la acea problemă.

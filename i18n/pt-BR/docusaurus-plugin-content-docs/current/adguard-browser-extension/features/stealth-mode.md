@@ -1,6 +1,6 @@
 ---
-title: Modo invisível
-sidebar_position: 2
+title: Proteção contra rastreamento (Modo invisível)
+sidebar_position: 3
 ---
 
 :::info

@@ -1,54 +1,54 @@
 ---
-title: Safari protection
+title: Protecție Safari
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru iOS, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ### Content blockers {#content-blockers}
 
-Content blockers serve as 'containers' for filtering rules that do the actual job of blocking ads and tracking. AdGuard for iOS contains six content blockers: General, Privacy, Social, Security, Custom, and Other. Previously Apple only allowed each content blocker to contain a maximum of 50K filtering rules, but with iOS 15 release the upper limit has moved to 150K rules.
+Content blockers serve as 'containers' for filtering rules that do the actual job of blocking ads and tracking. AdGuard pentru iOS conține șase blocante de conținut: Modul general, Intimitate, Social, Securitate, Personalizat și Alte. Previously Apple only allowed each content blocker to contain a maximum of 50K filtering rules, but with iOS 15 release the upper limit has moved to 150K rules.
 
-All content blockers, their statuses, which thematic filters they currently include, and a total number of used filtering rules can be found on the respective screen in _Advanced settings_ (tap the gear icon at the bottom right → _General_ → _Advanced settings_ → _Content blockers_).
+Toate blocantele de conținut, statusurile lor, filtrele tematice pe care le includ în prezent și numărul total de reguli de filtrare utilizate pot fi găsite pe ecranul respectiv în _Setări avansate_ (apăsați pe pictograma roată din colțul din dreapta jos → _General_ → _Setări avansate_ → _Blocante de conținut_).
 
-![Content blockers \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
+![Blocante de conținut \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
 
 :::tip
 
-Keep all content blockers enabled for the best filtering quality.
+Păstrați toate blocantele de conținut activate pentru cea mai bună calitate a filtrării.
 
 :::
 
-### Filters {#filters}
+### Filtre {#filters}
 
-Content blockers' work is based on filters, also sometimes referred to as filter lists. Each filter is a list of filtering rules. If you have an enabled ad blocker when browsing, it constantly checks the visited pages and elements on them against these filtering rules, and blocks anything that matches. Rules are developed to block ads, trackers, and more.
+Funcționarea blocantelor de conținut se bazează pe filtre, uneori denumite liste de filtre. Fiecare filtru este o listă de reguli de filtrare. Dacă aveți un blocant de reclame activat atunci când răsfoiți, acesta verifică constant paginile vizitate și elementele de pe acestea în raport cu aceste reguli de filtrare și blochează orice element care se potrivește. Regulile sunt dezvoltate pentru a bloca reclamele, trackerele și altele.
 
-All filters are grouped into thematic categories. To see the full list of these categories (not to be confused with content blockers), open the _Protection_ section by tapping the shield icon, then go to _Safari protection_ → _Filters_.
+Toate filtrele sunt grupate în categorii tematice. Pentru a vedea lista completă a acestor categorii (nu trebuie confundate cu blocantele de conținut), deschideți secțiunea _Protecție_ atingând pictograma scut, apoi mergeți la _Protecție Safari_ → _Filtre_.
 
-![Filter groups \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
+![Grupuri de filtre \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
 
-There are eight of them, each category unites several filters that serve and share a common purpose, i.e. blocking ads, social media widgets, cookie notices, protecting the user from online scams. To decide which filters suit your needs, read their descriptions and navigate by the labels (`ads`, `privacy`, `recommended`, etc.).
+Există opt dintre ele, fiecare categorie unește mai multe filtre care servesc și împărtășesc un scop comun, adică blocarea reclamelor, widgeturi de socializare, notificări de cookie-uri, protejând utilizatorul de înșelătorii online. Pentru a decide care filtre se potrivesc nevoilor dumneavoastră, citiți descrierile lor și navigați după etichete (`reclame`, `intimitate`, `recomandate`, etc.).
 
 :::note
 
-More enabled filters does not guarantee that there will be less ads. A large number of various filters enabled simultaneously reduces the quality of ad blocking.
+Mai multe filtre activate nu garantează că vor fi mai puține reclame. Un număr mare de filtre diferite activate simultan reduce calitatea blocării reclamelor.
 
 :::
 
-Custom filters category is empty by default for users to add there their filters by URL. You can find filters on the Internet or even try to [create one by yourself](/general/ad-filtering/create-own-filters).
+Categoria filtre personalizate este goală în mod implicit pentru ca utilizatorii să-și adauge filtrele prin URL. Puteți găsi filtre pe Internet sau chiar să încercați să [creați unul singur](/general/ad-filtering/create-own-filters).
 
-### User rules {#user-rules}
+### Reguli utilizator {#user-rules}
 
-Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](#assistant). Use this tool to customize Safari filtering without adding an entire filter list.
+Aici puteți adăuga reguli noi — fie introducându-le manual, fie folosind [instrumentul manual de blocare AdGuard în Safari](#assistant). Utilizați acest instrument pentru a personaliza filtrarea Safari fără a adăuga o întreagă listă de filtre.
 
-Learn [how to create your own ad filters](/general/ad-filtering/create-own-filters). But please note that many of them won't work in Safari on iOS.
+Aflați [cum să creați propriile filtre de reclame](/general/ad-filtering/create-own-filters). Dar vă rugăm să rețineți că multe dintre ele nu vor funcționa în Safari pe iOS.
 
-![User rules screen \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
+![Ecran reguli utilizator \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
-### Allowlist {#allowlist}
+### Lista de permisiuni {#allowlist}
 
-The third section of the _Safari protection_ screen. If you want to disable ad blocking on a certain website, Allowlist will be of help. It allows you to add domains and subdomains to exclusions. AdGuard for iOS has an Import/Export feature, so the allowlist from one device can be easily transferred to another.
+A treia secțiune a ecranului _Protecție Safari_. Dacă doriți să dezactivați blocarea reclamelor pe un anumit site web, lista de permisiuni vă va ajuta. Aceasta vă permite să adăugați domenii și subdomenii la excluderi. AdGuard pentru iOS are o funcție de Import/Export, astfel încât lista de permisiuni de pe un dispozitiv să poată fi transferată cu ușurință pe altul.
