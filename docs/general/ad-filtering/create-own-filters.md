@@ -1080,6 +1080,21 @@ We recommend to get acquainted with [the Adblock Plus filter cheatsheet](https:/
 
 :::
 
+:::info
+
+Exception rule modifiers will disable other basic rules only for main frame document requests (see [`$document`](#document-modifier) for more information about main frame document).
+
+For example:
+
+- Website `example.com` contains an `iframe` pointing to `example1.com`.
+- Rule `#%#//console.log('test')` is applied.
+
+In this case, log will appear twice in the console: once for the main frame document and once for the `iframe`.
+
+If you add `@@||example.com^$jsinject` rule, the log will appear only once for the `iframe`.
+
+:::
+
 #### **`$content`** {#content-modifier}
 
 Disables [HTML filtering](#html-filtering-rules), [`$hls`](#hls-modifier), [`$replace`](#replace-modifier), and [`$jsonprune`](#jsonprune-modifier) rules on the pages that match the rule.
