@@ -19,7 +19,7 @@ Depending on the operating system of the device whose traffic you want to filter
 
 ### Windows {#windows}
 
-1. Note the IP address of your computerwith AdGuard installed.
+1. Note the IP address of your computer with AdGuard installed.
 
 1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
@@ -61,7 +61,7 @@ Depending on the operating system of the device whose traffic you want to filter
 
 ### Mac {#mac}
 
-1. Note the IP address of your computerwith installed AdGuard.
+1. Note the IP address of your computer with installed AdGuard.
 
 1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
@@ -93,7 +93,7 @@ Depending on the operating system of the device whose traffic you want to filter
 
 ### Android {#android}
 
-1. Note the IP address of your computerwith installed AdGuard.
+1. Note the IP address of your computer with installed AdGuard.
 
 1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
@@ -113,7 +113,7 @@ Depending on the operating system of the device whose traffic you want to filter
 
 ### iOS {#ios}
 
-1. Note the IP address of your computerwith installed AdGuard.
+1. Note the IP address of your computer with installed AdGuard.
 
 1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
