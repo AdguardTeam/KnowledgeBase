@@ -1,6 +1,6 @@
 ---
 title: DNS
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 :::info
@@ -9,33 +9,33 @@ sidebar_position: 4
 
 :::
 
-## DNS protection
+## DNS通信を保護
 
-The _DNS_ section contains one feature, _DNS protection_, with multiple settings:
+「_DNS_」セクションには、「_DNS通信保護_」という1つの機能があり、複数の設定があります:
 
-- Providers
+- プロバイダ
 - フィルタ
-- Blocklist
+- ブラックリスト
 - ホワイトリスト
 
 ![DNS](https://cdn.adtidy.org/content/kb/ad_blocker/mac/dns.png)
 
-If you enable _DNS protection_, DNS traffic will be managed by AdGuard.
+「_DNS通信を保護_」を有効にすると、DNSトラフィックはAdGuardによって管理されるようになります。
 
-### Providers
+### プロバイダ
 
-Under _Providers_, you can select a DNS server to encrypt your DNS traffic and block ads and trackers if necessary. We recommend AdGuard DNS. For more advanced configuration, you can [set up a private AdGuard DNS server](https://adguard-dns.io/welcome.html) or add a custom one by clicking the `+` icon in the lower left corner.
+「_プロバイダー_」では、DNSサーバーを選択してDNSトラフィックを暗号化し、必要に応じて広告やトラッカーをブロックすることができます。 サーバーは AdGuard DNS がお勧めです。 より高度な設定を行うには、[プライベートAdGuard DNSサーバーを設定する](https://adguard-dns.io/welcome.html)か、左下隅にある`+`アイコンをクリックしてカスタムDNSサーバーを追加することができます。
 
 ### フィルタ
 
-DNS filters apply ad-blocking rules at the DNS level. Such filtering is less precise than regular ad blocking, but it’s particularly useful for blocking an entire domain. To add a DNS filter, click `+`. You can find more DNS filters at [filterlists.com](https://filterlists.com/).
+DNSフィルタは、DNSレベルで広告ブロックルールを適用します。 DNSフィルタリングは、通常の広告ブロックよりも精度は落ちるが、ドメイン全体をブロックするのに特に有用です。 DNSフィルタを追加するには、`+`をクリックします。 [filterlists.com](https://filterlists.com) で様々なDNSフィルタを見つけることができます。
 
-### Blocklist
+### ブラックリスト
 
-Domains from this list will be blocked. To add a domain, click `+`. You can add domain names or DNS filtering rules using a [special syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/).
+このリストにあるドメインはブロックされます。 ドメインを追加するには、`+`をクリックします。 また、[専用の構文](https://adguard-dns.io/kb/general/dns-filtering-syntax/)を使ってドメインやDNSフィルタリングルールを追加することもできます。
 
-To export or import a blocklist, open the context menu.
+ブラックリストをエクスポートまたはインポートするには、コンテキストメニューを開きます。
 
 ### ホワイトリスト
 
-Domains from this list aren’t filtered. To add a domain, click `+`. To export or import an allowlist, open the context menu.
+このリストにあるドメインはブロックされません。 ドメインを追加するには、`+`をクリックします。 ホワイトリストをエクスポートまたはインポートするには、コンテキストメニューを開きます。

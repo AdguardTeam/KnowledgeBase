@@ -23,38 +23,6 @@
     "message": "О компании",
     "description": "The label of footer link with label=about linking to https://adguard.com/contacts.html"
   },
-  "link.item.label.in_the_press": {
-    "message": "В СМИ",
-    "description": "The label of footer link with label=in_the_press linking to https://adguard.com/press-releases.html"
-  },
-  "link.item.label.media_kits": {
-    "message": "Медиа-материалы",
-    "description": "The label of footer link with label=media_kits linking to https://adguard.com/media-materials.html"
-  },
-  "link.item.label.awards": {
-    "message": "Награды",
-    "description": "The label of footer link with label=awards linking to https://adguard.com/awards.html"
-  },
-  "link.item.label.adguard_for_windows": {
-    "message": "AdGuard для Windows",
-    "description": "The label of footer link with label=adguard_for_windows linking to https://adguard.com/adguard-windows/overview.html"
-  },
-  "link.item.label.adguard_for_android": {
-    "message": "AdGuard для Android",
-    "description": "The label of footer link with label=adguard_for_android linking to https://adguard.com/adguard-android/overview.html"
-  },
-  "link.item.label.adguard_for_mac": {
-    "message": "AdGuard для Mac",
-    "description": "The label of footer link with label=adguard_for_mac linking to https://adguard.com/adguard-mac/overview.html"
-  },
-  "link.item.label.adguard_for_ios": {
-    "message": "AdGuard для iOS",
-    "description": "The label of footer link with label=adguard_for_ios linking to https://adguard.com/adguard-ios/overview.html"
-  },
-  "link.item.label.adguard_for_ios_pro": {
-    "message": "AdGuard для iOS Pro",
-    "description": "The label of footer link with label=adguard_for_ios_pro linking to https://adguard.com/adguard-ios-pro/overview.html"
-  },
   "link.item.label.support_center": {
     "message": "Техподдержка",
     "description": "The label of footer link with label=support_center linking to https://adguard.com/support.html"
@@ -73,7 +41,7 @@
   },
   "link.item.label.userscripts": {
     "message": "Пользовательские скрипты",
-    "description": "The label of footer link with label=userscripts linking to /general/userscripts"
+    "description": "The label of footer link with label=userscripts linking to /general/extensions"
   },
   "link.item.label.purchase_license": {
     "message": "Купить лицензию",
@@ -91,12 +59,64 @@
     "message": "Бесплатная версия",
     "description": "The label of footer link with label=get_free_license linking to https://adguard.com/get-adguard-for-free.html"
   },
-  "link.item.label.contribute_to_adguard": {
-    "message": "Станьте частью команды AdGuard",
-    "description": "The label of footer link with label=contribute_to_adguard linking to https://adguard.com/contribute.html"
+  "link.item.label.blog": {
+    "message": "Блог",
+    "description": "The label of footer link with label=blog linking to https://adguard.com/blog/index.html"
+  },
+  "link.item.label.discuss": {
+    "message": "Обсудить",
+    "description": "The label of footer link with label=discuss linking to https://adguard.com/discuss.html"
+  },
+  "link.item.label.support_adguard": {
+    "message": "Поддержать AdGuard",
+    "description": "The label of footer link with label=support_adguard linking to https://adguard.com/support-adguard.html"
+  },
+  "link.item.label.for_windows": {
+    "message": "Для Windows",
+    "description": "The label of footer link with label=for_windows linking to https://adguard.com/adguard-windows/overview.html"
+  },
+  "link.item.label.for_mac": {
+    "message": "Для Mac",
+    "description": "The label of footer link with label=for_mac linking to https://adguard.com/adguard-mac/overview.html"
+  },
+  "link.item.label.for_android": {
+    "message": "Для Android",
+    "description": "The label of footer link with label=for_android linking to https://adguard.com/adguard-android/overview.html"
+  },
+  "link.item.label.for_android_tv": {
+    "message": "Для Android TV",
+    "description": "The label of footer link with label=for_android_tv linking to https://adguard.com/adguard-android-tv/overview.html"
+  },
+  "link.item.label.for_ios": {
+    "message": "Для iOS",
+    "description": "The label of footer link with label=for_ios linking to https://adguard.com/adguard-ios/overview.html"
+  },
+  "link.item.label.for_browsers": {
+    "message": "Для браузеров",
+    "description": "The label of footer link with label=for_browsers linking to https://adguard.com/adguard-browser-extension/overview.html"
+  },
+  "link.item.label.version_history": {
+    "message": "История версий",
+    "description": "The label of footer link with label=version_history linking to https://adguard.com/versions.html"
+  },
+  "link.item.label.faq": {
+    "message": "FAQ",
+    "description": "The label of footer link with label=faq linking to https://adguard.com/support/faq.html"
+  },
+  "link.item.label.status": {
+    "message": "Статус AdGuard",
+    "description": "The label of footer link with label=status linking to https://status.adguard.com/"
+  },
+  "link.item.label.diagnostics": {
+    "message": "Тестовая страница AdGuard",
+    "description": "The label of footer link with label=diagnostics linking to https://adguard.com/test.html"
+  },
+  "link.item.label.distribution": {
+    "message": "Программа по распространению",
+    "description": "The label of footer link with label=distribution linking to https://adguard.com/partners.html"
   },
   "copyright": {
-    "message": "© AdGuard, 2009–2023",
+    "message": "© 2009–2025 Adguard Software Ltd.",
     "description": "The footer copyright"
   }
 }

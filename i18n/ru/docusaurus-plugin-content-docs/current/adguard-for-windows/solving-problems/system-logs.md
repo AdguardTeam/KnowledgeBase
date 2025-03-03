@@ -1,5 +1,5 @@
 ---
-title: Как получить файлы журнала Windows
+title: Как собирать системные логи Windows
 sidebar_position: 5
 ---
 
@@ -11,7 +11,7 @@ sidebar_position: 5
 
 :::note
 
-Data and/or files provided in system logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Данные и/или файлы в логах обрабатываются в соответствии с [Политикой конфиденциальности AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
@@ -33,7 +33,7 @@ Data and/or files provided in system logs are processed in accordance with [the 
 
     - Щёлкните правой кнопкой мыши по разделу *Приложение* и в выпадающем меню выберите *Сохранять все события как...*
 
-    - Выберите имя и место сохранения, нажмите *Сохранить*. Выберите *Отображать сведения для следующих языков*. You need to check the checkbox next to *English*. Нажмите *OK*.
+    - Выберите имя и место сохранения, нажмите *Сохранить*. Выберите *Отображать сведения для следующих языков*. Поставьте галочку напротив пункта *Английский язык*. Нажмите *OK*.
 
     - Откройте *Система*: *Просмотр событий (локальный)* → *Логи Windows* → *Система*.
 
@@ -45,6 +45,6 @@ Data and/or files provided in system logs are processed in accordance with [the 
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard стремится защищать вашу конфиденциальность. Мы строго следуем нашей [Политике конфиденциальности](https://adguard.com/privacy/windows.html) и не собираем никакой личной информации о пользователях. Перед отправкой логов в поддержку проверьте, не содержит ли файл дополнительную информацию, которую вы не хотите передавать. Если в файле осталась личная информация, рекомендуем удалить её.
 
 :::

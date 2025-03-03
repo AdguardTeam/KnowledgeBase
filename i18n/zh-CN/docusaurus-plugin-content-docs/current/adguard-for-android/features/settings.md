@@ -15,11 +15,11 @@ sidebar_position: 4
 
 此部分可帮助用户管理本应用的外观和行为：可以设置颜色主题和语言，管理通知等。 如您想帮助 AdGuard 团队检测应用崩溃并研究可用性，您可以开启「自动报告崩溃」和「发送技术和交互数据」。
 
-![General \*mobile\_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
+![General \*mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
 
 用户可在「应用和过滤器更新」下配置自动更新过滤器，以及选择应用更新通道。 选择「稳定版」可试用正式发布版本，选择「测试版」或「Nightly」可提前使用最新功能。
 
-![Updates \*mobile\_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
+![Updates \*mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
 
 ### 高级设置
 
@@ -29,23 +29,23 @@ sidebar_position: 4
 
 「日志级别」定义应记录哪些有关应用程序运行的数据。 默认情况下，应用程序会收集有关其事件的数据。 「调试」级别记录更多事件，有时 AdGuard 团队要求启用调试级别，因为它们可以帮助支持团队更好地了解问题原因。 [了解有关收集和发送日志的更多信息](/adguard-for-android/solving-problems/log/)。
 
-![Advanced \*mobile\_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
+![Advanced \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
 「低级设置」部分适用于专家用户。 [了解有关低级设置的更多信息](/adguard-for-android/solving-problems/low-level-settings/)
 
-![Low-level settings \*mobile\_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
+![Low-level settings \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
 ## 过滤
 
 此部分允许用户管理 HTTPS 过滤设置、过滤器和用户脚本，以及设置代理服务器。
 
-![Filtering \*mobile\_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
+![Filtering \*mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
 
 ### 过滤器
 
 AdGuard 应用过滤器中的规则以阻止广告、跟踪器和其他干扰。 「保护」的大部分功能基于 [AdGuard 过滤器](/general/ad-filtering/adguard-filters/#adguard-filters)。 如果启用「基本保护」，它将自动打开 AdGuard 基础过滤器和 AdGuard 移动广告过滤器。 在关闭两个过滤器的情况下，「基本保护」也将被禁用。
 
-![Filters \*mobile\_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
+![Filters \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
 默认启用的过滤器足以保证 AdGuard 的正常运行。 不过，如果用户想自定义广告拦截，可以使用其他 AdGuard 或第三方过滤器。 要管理广告拦截请选择某个类别并启用自己想要的过滤器。 要添加自定义过滤器，请点击「自定义过滤器」→「添加自定义过滤器」，然后输入 URL 或文件路径。
 
@@ -61,7 +61,7 @@ AdGuard 应用过滤器中的规则以阻止广告、跟踪器和其他干扰。
 
 用户脚本是用 JavaScript 编写的迷你程序，用于扩展一个或多个网站的功能。 要安装用户脚本，需要一个特殊的用户脚本管理器。 AdGuard 有这样的功能，让用户通过 URL 或文件添加用户脚本。
 
-![Userscripts \*mobile\_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
+![Userscripts \*mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
 #### AdGuard Extra
 
@@ -104,7 +104,7 @@ HTTPS 过滤允许 AdGuard 过滤请求和响应的内容，但我们从不收�
 
 #### 代理
 
-用户可以设置 AdGuard 通过代理服务器路由所有设备的流量。 [设置出站代理的说明](/adguard-for-android/Solving-problems/outbound-proxy)
+用户可以设置 AdGuard 通过代理服务器路由所有设备的流量。 [设置出站代理的说明](/adguard-for-android/solving-problems/outbound-proxy)
 
 如果您的 VPN 提供商允许，还可以设置第三方 VPN 与 AdGuard 一起工作。
 
@@ -132,18 +132,18 @@ HTTPS 过滤允许 AdGuard 过滤请求和响应的内容，但我们从不收�
 
 - 购买 AdGuard 许可证以激活[完整版功能](/adguard-for-android/features/free-vs-full)。
 - 登录 AdGuard 账号或输入许可证密钥以激活许可证。
-- 如果尚未使用许可证，请激活 7 天试用期
-- 通过三点菜单（:）刷新许可证状态
+- 如果尚未使用许可证，请激活 7 天试用期。
+- 通过三点菜单（⋮）刷新许可证状态。
 - 打开 AdGuard 账号管理许可证。
 - 重置许可证。在您已达到此许可证可绑定的设备数量限制，并希望申请另一个许可证的情况下。
 
-![License screen \*mobile\_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![License screen \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
 ## 支持
 
 如果用户对 AdGuard Android 版有任何问题或建议，请了解本部分。 我们建议在联系支持人员之前先查阅「[常见问题](https://adguard.com/support/adguard_for_android.html)」或本知识库。
 
-![Support \*mobile\_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
+![Support \*mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
 如果您发现没有被拦截的广告，请通过「报告错误拦截」报告错误。
 

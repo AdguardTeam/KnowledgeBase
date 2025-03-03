@@ -1,5 +1,5 @@
 ---
-title: HARファイルを収集する方法
+title: HARファイルを生成する方法
 sidebar_position: 1
 ---
 

@@ -13,13 +13,13 @@ sidebar_position: 1
 
 此功能有助于管理设备上安装的特定应用程序和设备的互联网连接。
 
-![Firewall \*mobile\_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
+![Firewall \*mobile_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
 ### 全局防火墙规则
 
 该设置让用户控制整个设备的互联网连接。
 
-![Global firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
+![Global firewall rules \*mobile_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
 
 这些规则应用到设备上的所有应用程序，除非您设置自定义规则。
 
@@ -29,24 +29,24 @@ sidebar_position: 1
 
 1. 打开「自定义防火墙规则」。 在「具有自定义规则的应用」下，点击「添加应用」。
 
-   ![Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+    ![Custom firewall rules \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
 2. 选择您想要设置单独规则的应用程序。
 
-   ![Adding an app to Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+    ![Adding an app to Custom firewall rules \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
 3. 在「可用的自定义规则」中，选择要配置的规则并点击「+」。 相应规则会随之出现在「已应用的自定义规则」中。
 
-   ![Added rule \*mobile\_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+    ![Added rule \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
 4. 如您需要拦截特定类型的连接，请切换到左侧。 如您要允许它，请保持开启状态。 **自定义规则会优先于全局规则**：即您在「全局防火墙规则」内所在的更改不会影响此应用。
 
 要从「自定义规则」移除规则或应用，请将其滑动到左侧。
 
-### Notifications
+### 通知
 
-If enabled, this feature notifies you when an app tries to break one of the Firewall rules set for that app (for example, to access mobile data when it shouldn’t). You can turn notifications on and off for all apps or for each app separately.
+启用该功能后，当应用程序试图违反适用的防火墙规则时（例如，试图访问被阻止的移动数据），用户将收到通知。 用户可以设置所有应用程序或单独某个应用程序的通知开关状态。
 
-Tap the notification to access the app’s Firewall settings, or temporary disable all Firewall rules for that app by tapping the corresponding button in the notification. You can also mute all Firewall notifications for the app by tapping the _Mute_ button in the notification for that app.
+点击通知即可进入应用程序的防火墙设置，或者点击通知中的相应按钮暂时禁用该应用程序的所有防火墙规则。 用户还可以通过点击应用程序通知中的「静音」按钮来静音该应用程序的所有防火墙通知。
 
-Note that if notifications for multiple apps would be displayed, they will be bundled into a single notification instead.
+请注意，如果显示多个应用程序的通知，它们将被折叠为单个通知。

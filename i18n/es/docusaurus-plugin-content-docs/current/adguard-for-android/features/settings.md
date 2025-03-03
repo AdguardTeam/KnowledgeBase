@@ -15,7 +15,7 @@ Se puede acceder a la pestaña _Configuración_ tocando el ícono más a la dere
 
 Esta sección te ayuda a administrar la apariencia y el comportamiento de la aplicación: puedes configurar el tema de color y el idioma, administrar notificaciones y más. Si deseas ayudar al equipo de AdGuard a detectar fallas de la aplicación e investigar la usabilidad, puedes habilitar _Informar automáticamente fallas_ y _Enviar datos técnicos y de interacción_.
 
-![General \*mobile\_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
+![General \*mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
 
 En _Actualizaciones de aplicaciones y filtros_, puedes configurar actualizaciones automáticas de filtros y seleccionar un canal de actualización de aplicaciones. Elige _Release_ para una mayor estabilidad y _Beta_ o _Nightly_ para acceder antes a las nuevas funciones.
 
@@ -29,7 +29,7 @@ _Watchdog_ ayuda a proteger AdGuard para que no sea desactivado por el sistema (
 
 _Nivel de registro_ define qué datos sobre el funcionamiento de la aplicación deben registrarse. De forma predeterminada, la aplicación recopila datos sobre sus eventos. El nivel _Debug_ registra más eventos; habilítalo si el equipo de AdGuard lo solicita para ayudarlos a comprender mejor el problema. [Más información sobre la recopilación y el envío de registros](/adguard-for-android/solving-problems/log/)
 
-![Avanzado \*mobile\_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
+![Avanzado \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
 La sección _Configuración de bajo nivel_ es para usuarios expertos. [Más información sobre la configuración de bajo nivel](/adguard-for-android/solving-problems/low-level-settings/)
 
@@ -39,13 +39,13 @@ Configuración de bajo nivel \*mobile_border](https://cdn.adtidy.org/blog/new/n9
 
 Esta sección te permite administrar la configuración de filtrado HTTPS, los filtros y las secuencias de comandos de usuario, y configurar un servidor proxy.
 
-![Filtrado \*mobile\_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
+![Filtrado \*mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
 
 ### Filtros
 
 AdGuard bloquea anuncios, rastreadores y molestias aplicando reglas de sus filtros. La mayoría de las funciones de la sección _Protección_ funcionan con [filtros AdGuard](/general/ad-filtering/adguard-filters/#adguard-filters). Si habilitas la _Protección básica_, se activará automáticamente el filtro AdGuard Base y el filtro AdGuard Mobile Ads. Y viceversa: si desactivas ambos filtros, la _Protección básica_ también se desactivará.
 
-![Filtros \*mobile\_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
+![Filtros \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
 Los filtros habilitados de forma predeterminada son suficientes para el funcionamiento normal de AdGuard. Sin embargo, si deseas personalizar el bloqueo de anuncios, puedes utilizar otros filtros de AdGuard o de terceros. Para ello, selecciona una categoría y activa los filtros que desees. Para agregar un filtro personalizado, toca _Filtros personalizados_ → _Agregar filtro personalizado_ e ingresa tu URL o ruta de archivo.
 
@@ -61,7 +61,7 @@ Si activas demasiados filtros, es posible que algunos sitios web funcionen incor
 
 Los scripts de usuario son miniprogramas escritos en JavaScript que amplían la funcionalidad de uno o más sitios web. Para instalar scripts de usuario, necesitas un administrador de userscripts especial. AdGuard tiene una funcionalidad de este tipo y te permite añadir usercripts por URL o desde un archivo.
 
-![Userscripts \*mobile\_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
+![Userscripts \*mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
 #### AdGuard Extra
 
@@ -133,17 +133,17 @@ En esta sección podrás encontrar información sobre tu licencia y gestionarla:
 - Compra una licencia de AdGuard para activar [las funciones de la versión completa](/adguard-for-android/features/free-vs-full)
 - Inicia sesión en tu cuenta AdGuard o ingresa la clave de licencia para activar tu licencia
 - Regístrate para activar tu período de prueba de 7 días si aún no lo has usado
-- Actualiza el estado de la licencia desde el menú de tres puntos
+- Actualiza el estado de la licencia desde el menú de tres puntos (⋮)
 - Abre la cuenta AdGuard para administrar tu licencia allí
 - Restablece tu licencia. Por ejemplo, si has alcanzado el límite de dispositivos para esta licencia y deseas aplicar otra
 
-![Pantalla de licencia \*mobile\_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![Pantalla de licencia \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
 ## Asistencia técnica
 
 Utiliza esta sección si tienes alguna pregunta o sugerencia sobre AdGuard para Android. Recomendamos consultar el _[FAQ](https://adguard.com/support/adguard_for_android.html)_ o esta base de conocimientos antes de contactar al soporte.
 
-![Soporte \*mobile\_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
+![Soporte \*mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
 Si notas un anuncio perdido, infórmalo a través de _Informar bloqueo incorrecto_.
 

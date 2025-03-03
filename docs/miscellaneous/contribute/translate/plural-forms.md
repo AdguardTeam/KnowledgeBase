@@ -138,7 +138,7 @@ Thus, the translation from English into Serbian should be:
 
 Although it is obvious that the last two templates have no differences, it is very important to keep the rule: **The number of templates should reflect the number of plural forms of the respective language!**(typically for this type of strings with plurals).
 
-### Short summary {#summury}
+## Short summary {#summary}
 
 When translating AdGuard projects pay your close attention to phrases which require the use of plural forms.
 

@@ -1,54 +1,54 @@
 ---
-title: Other features
+title: Alte caracteristici
 sidebar_position: 7
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru iOS, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-While Safari content blocking and DNS protection are indisputably two major modules of AdGuard/AdGuard Pro, there are some other minor features that don't fall into either of them directly but still can be useful and are worth knowing about.
+Deși blocarea conținutului Safari și protecția DNS sunt fără îndoială două module majore ale AdGuard/AdGuard Pro, există și alte caracteristici mai mici care nu se încadrează direct în niciunul dintre acestea, dar care pot fi utile și merită să le cunoașteți.
 
-### **Dark theme**
+### **Temă întunecată**
 
-![Light theme \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
+![Light theme \*mobile_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Dark theme \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![Dark theme \*mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
-Residing right at the top of **Settings** → **General** screen, this setting allows you to switch between dark and light themes.
+Situat chiar în partea de sus a ecranului **Setări** → **Modul general**, această setare vă permite să comutați între temele întunecate și luminoase.
 
-### **Widgets**
+### **Widgeturi**
 
 ![Widgets \*mobile](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/widget_en.jpg)
 
-AdGuard supports widgets that provide quick access to Safari content blocking and DNS protection switches, and also show global requests stats.
+AdGuard suportă widgeturi care oferă acces rapid la comutatoarele de blocare a conținutului Safari și protecție DNS, și de asemenea arată statistici globale ale solicitărilor.
 
-### **Auto-update over Wi-Fi only**
+### **Actualizare automată doar prin Wi-Fi**
 
-If this setting is enabled, AdGuard will use only Wi-Fi for background filter updates.
+Dacă această setare este activată, AdGuard va folosi doar Wi-Fi pentru actualizările de filtre în fundal.
 
-### **Invert the Allowlist**
+### **Listă autorizări inversată**
 
-An alternative mode for Safari filtering, it unblocks ads everywhere except for the specified websites from the list. Disabled by default.
+Un modul alternativ pentru filtrarea Safari, deblochează reclamele oriunde, cu excepția site-urilor specificate din listă. Dezactivat implicit.
 
-### **Advanced mode**
+### **Modul avansat**
 
-**Advanced mode** unlocks **Advanced settings**. We don't recommend messing with those, unless you know what you're doing or you have consulted with technical support first.
+**Modul avansat** deblochează **Setările avansate**. Nu recomandăm să modificați aceste setări, decât dacă știți ce faceți sau ați consultat mai întâi suportul tehnic.
 
-### **Reset statistics**
+### **Resetare statistici**
 
-Clears all statistical data, such as number of requests, etc.
+Această opțiune va șterge toate datele statistice, cum ar fi numărul de solicitări etc.
 
-### **Reset settings**
+### **Resetați setările**
 
-This option will reset all your settings.
+Această opțiune vă va reseta toate setările.
 
-### **Support**
+### **Suport**
 
-Use this option to contact support, report a missed ad (although we advise to use the Assistant or AdGuard's Safari Web extension for your own convenience), export logs or to make a feature request.
+Folosiți această opțiune pentru a contacta suportul, pentru a raporta o reclamă ratată (deși vă sfătuim să folosiți Asistentul sau extensia web Safari de la AdGuard pentru conveniența dumneavoastră), pentru a exporta jurnale sau pentru a face o solicitare de caracteristică.
 
-### **About**
+### **Despre aplicație**
 
-Contains the current version of the app and an assortment of rarely needed options and links.
+Conține versiunea curentă a aplicației și o varietate de opțiuni și linkuri rar folosite.

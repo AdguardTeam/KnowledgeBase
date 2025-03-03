@@ -1,78 +1,78 @@
 ---
-title: How to activate
+title: Cum să activați
 sidebar_position: 3
 ---
 
-To activate your license, go to the *License* section of your AdGuard product and find the *Log in* field or *Activate* button. Use the email and password of your AdGuard account to log in. If you don't have an account yet, you will be offered to create one.
+Pentru a activa licența, mergeți la secțiunea *Licență* a produsului dvs. AdGuard și găsiți câmpul *Conectare* sau butonul *Activează*. Utilizați adresa de e-mail și parola contului dvs. AdGuard pentru a vă conecta. Dacă nu aveți încă un cont, vi se va oferi opțiunea de a crea unul.
 
 :::note
 
-To activate a license via the AdGuard account, a valid license with at least one free slot is required. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
+Pentru a activa o licență prin contul AdGuard, este necesară o licență validă cu cel puțin un slot liber. Dacă licența dvs. este deja utilizată pe un număr maxim de dispozitive, puteți [îmbunătăți](../payment-options#upgrade) sau [transfera](../transfer) de pe un dispozitiv pe altul.
 
 :::
 
-Alternatively, you can use a [license key](../what-is#license-key) to activate the license.
+Alternativ, puteți utiliza un [cod de licență](../what-is#license-key) pentru a activa licența.
 
-**Below you can check step-by-step activation instructions for each platform.**
+**Mai jos puteți verifica instrucțiunile de activare pas cu pas pentru fiecare platformă.**
 
-### Activating AdGuard for Windows
+### Activarea AdGuard pentru Windows
 
-1. On the expired license screen, click *Activate*.
+1. Pe ecranul licenței expirate, faceți clic pe *Activează*.
 
-    ![Expired license screen *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
+    ![Ecranul licenței expirate *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
 
-    Alternatively, select *License* in the upper right corner of the main screen and click *Activate*.
+    Alternativ, selectați *Licență* în colțul din dreapta sus al ecranului principal și faceți clic pe *Activează*.
 
-    ![Main screen *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
+    ![Ecranul principal *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
 
-    ![License screen *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
+    ![Ecranul cu licență *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
 
-1. Activate your license using your preferred method. If the license is bound to your email address, click *AdGuard Account* or select a social network associated with this email address. Alternatively, enter your license key.
+1. Activați licența folosind metoda preferată. Dacă licența este legată de adresa dvs. de e-mail, faceți clic pe *Cont AdGuard* sau selectați o rețea socială asociată cu această adresă de e-mail. Alternativ, introduceți codul de licență.
 
-    ![Activating a license *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
+    ![Activarea unei licențe *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
 
 ### Activating AdGuard for Mac
 
-1. On the expired license screen, click *Activate*.
+1. Pe ecranul licenței expirate, faceți clic pe *Activează*.
 
-    ![Expired license screen *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
+    ![Ecranul licenței expirate *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
 
     Alternatively, click the gear icon in the AdGuard menu, then click *License*.
 
-    ![Preferences *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
+    ![Preferințe *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
 
 1. In the opened window, click *Activate*.
 
-    ![License screen *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
+    ![Ecranul cu licență *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
 
-1. Activate your license using your preferred method. If the license is bound to your email address, click *AdGuard Account* or select a social network associated with this email address. Alternatively, enter your license key.
+1. Activați licența folosind metoda preferată. Dacă licența este legată de adresa dvs. de e-mail, faceți clic pe *Cont AdGuard* sau selectați o rețea socială asociată cu această adresă de e-mail. Alternativ, introduceți codul de licență.
 
-    ![Activating a license *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
+    ![Activarea unei licențe *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
 
-### Activating AdGuard for Android
+### Activarea AdGuard pentru Android
 
-1. Tap *Settings*, then select *License*.
+1. Atingeți *Setări*, apoi selectați *Licență*.
 
-    ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
+    ![Ecranul setărilor *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
 
-1. Tap *Activate license*.
+1. Atingeți *Activează licența*.
 
-    ![License screen *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
+    ![Ecranul licenței *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
 
-1. Activate your license using your preferred method. If the license is bound to your email address, tap *Continue with email* or select a social network associated with this email address. Alternatively, enter your license key.
+1. Activați licența folosind metoda preferată. Dacă licența este legată de adresa dvs. de e-mail, atingeți *Continuați cu e-mail* sau selectați o rețea socială asociată cu această adresă de e-mail. Alternativ, introduceți codul de licență.
 
-    ![Activating a license *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
+    ![Activarea unei licențe *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
-### Activating AdGuard for iOS
+### Activarea AdGuard pentru iOS
 
-1. Tap *Settings*, then select *License*.
+1. Atingeți *Setări*, apoi selectați *Licență*.
 
-    ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
+    ![Ecranul setărilor *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
 
-1. Tap **Log in** in the upper right corner of the screen
+1. Atingeți **Conectare** în colțul din dreapta sus al ecranului
 
-    ![Purchase screen *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
+    ![Ecranul de achiziție *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
 
-1. Use your email address or social media account to activate your license.
+1. Utilizați adresa dvs. de e-mail sau contul de rețea socială pentru a activa licența.
 
-    ![Login screen *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
+    ![Ecran de conectare *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)

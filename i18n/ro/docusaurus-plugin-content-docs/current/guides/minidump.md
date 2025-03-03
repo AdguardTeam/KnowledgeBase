@@ -1,56 +1,56 @@
 ---
-title: How to create a minidump file to fix the BSoD error
+title: Cum să creați un fișier minidump pentru a repara eroarea BSoD
 sidebar_position: 8
 ---
 
-Almost all Windows users are familiar with the [Blue Screen of Death (BSoD)](https://en.wikipedia.org/wiki/Blue_screen_of_death) error unfortunately. BSoD occurs when the Windows system encounters problems that can affect safe system operation, such as problems with third-party driver code, hardware, or Microsoft code. To solve the blue screen error, users can use a minidump file.
+Majoritatea utilizatorilor de Windows sunt familiarizați cu [eroarea Ecranului Albastru al Morții (BSoD)](https://en.wikipedia.org/wiki/Blue_screen_of_death) din păcate. BSoD apare atunci când sistemul Windows întâlnește probleme care pot afecta operarea sigură a sistemului, cum ar fi probleme cu codul driverelor de terță parte, hardware sau codul Microsoft. Pentru a rezolva eroarea ecranului albastru, utilizatorii pot folosi un fișier minidump.
 
-## What is Minidump file?
+## Ce este un fișier Minidump?
 
-A minidump file is a file that contains the information about the nature of the system crash. It is created just before the blue screen appears and it has the minimum amount of useful information that can be used to solve the problem. The minidump file usually has a *.dmp* extension.
+Un fișier minidump este un fișier care conține informații despre natura prăbușirii sistemului. Este creat imediat înainte de apariția ecranului albastru și are cantitatea minimă de informații utile care pot fi folosite pentru a rezolva problema. Fișierul minidump are de obicei o extensie *.dmp*.
 
 :::note
-On Windows 10, the blue screen shows a stop code and a QR code. The user can use this information and search the Web for the specific problem.
+Pe Windows 10, ecranul albastru arată un cod de oprire și un cod QR. Utilizatorul poate folosi aceste informații și căuta pe Web problema specifică.
 
 :::
 
-The option to create the minidump file is disabled by default, so before we go into more detail on how to use the file, let’s take a closer look at how to enable it.
+Opțiunea de a crea fișierul minidump este dezactivată implicit, așa că înainte de a intra în mai multe detalii despre cum să folosiți fișierul, să aruncăm o privire mai atentă asupra modului de a-l activa.
 
-## Set up Windows to create the Minidump file
+## Configurați Windows pentru a crea fișierul Minidump
 
-Even if you don’t experience any BSoD crash errors, you can still set this option — this is a general recommendation, not necessarily related to AdGuard products. Please follow the instructions below to automatically create the minidump file.
+Chiar dacă nu experimentați nicio eroare de prăbușire BSoD, puteți să activați această opțiune — aceasta este o recomandare generală, nu neapărat legată de produsele AdGuard. Vă rugăm să urmați instrucțiunile de mai jos pentru a crea automat fișierul minidump.
 
- 1. Type *sysdm.cpl* in the Windows search bar and click **Open**. The **System Properties Control Panel Menu** window will appear on the screen.
+ 1. Tastați *sysdm.cpl* în bara de căutare Windows și dați clic pe **Deschis**. Fereastra **Meniului Proprietăți sistem** va apărea pe ecran.
 
     :::tip
 
-    Alternatively, click **Settings** → **System** → **About** → **Advanced system settings**.
+    Alternativ, faceți clic pe **Setări** → **Sistem** → **Despre** → **Setări avansate ale sistemului**.
 
 
 :::
 
-    ![System Properties *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
+    ![Proprietăți sistem *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
 
- 1. Go to the **Advanced** tab.
- 1. In the **Startup and Recovery** section, click **Settings**.
+ 1. Accesați tab-ul **Avansat**.
+ 1. În secțiunea **Demaraj și recuperare**, dați clic pe **Setări**.
 
-    ![Startup and Recovery *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
+    ![Demaraj și recuperare *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
 
- 1. Enable the following three options:
+ 1. Activați următoarele trei opțiuni:
 
-    - Write an event to the system log
-    - Automatically restart
-    - Writing debugging information → Small memory dump (256 kb)
+    - Scrieți un eveniment în jurnalul sistemului
+    - Repornire automată
+    - Scrierea informațiilor de depanare → Mic dump de memorie (256 kb)
 
-    ![Three options *mobile_border](https://cdn.adtidy.org/blog/new/nmr4eThree_options.png)
+    ![Trei opțiuni *mobile_border](https://cdn.adtidy.org/blog/new/nmr4eThree_options.png)
 
- 1. Click **OK** to apply the settings.
+ 1. Dați clic pe **OK** pentru a aplica setările.
  1. Restart the computer.
 
-You've successfully enabled the minidump file. Now it will be created automatically when the system crashes.
+Ați activat cu succes fișierul minidump. Acum va fi creat automat când sistemul se prăbușește.
 
 :::note
 
-By default the minidump file is stored in the **%SystemRoot%\Minidump** folder. You can change the directory location to whatever you like, but please remember that a lot of programs are set to look for this location by default, so we recommend that you do not change the location.
+Implicit, fișierul minidump este stocat în folderul **%SystemRoot%\Minidump**. You can change the directory location to whatever you like, but please remember that a lot of programs are set to look for this location by default, so we recommend that you do not change the location.
 
 :::

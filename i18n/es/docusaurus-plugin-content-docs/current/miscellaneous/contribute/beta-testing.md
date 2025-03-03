@@ -5,13 +5,25 @@ sidebar_position: 1
 
 Hay una aplicación AdGuard para prácticamente todas las plataformas principales que existen, y publicamos regularmente actualizaciones para todas ellas. Esto no sería posible sin las pruebas beta y, lo que es más importante, los probadores beta. ¿Quiere convertirse en uno? Aquí explicamos cómo puede hacerlo.
 
-## Cómo convertirte en probador beta {#intro}
+### Beta o nightly: ¿cuál es la diferencia?
 
 Nuestros requisitos son sencillos: usa AdGuard, actualiza a la versión beta cuando esté disponible e informa cualquier error que observes. Sin embargo, necesitarás una cuenta de GitHub [](https://github.com/) para convertirte en nuestro evaluador beta, por lo que es posible que quieras sacarte eso de encima primero.
 
-En cualquier caso, todo lo que necesitas saber está recopilado en una [página](https://adguard.com/beta.html).
+El proceso de desarrollo sigue una progresión desde la versión nocturna a la beta y luego de la beta a la versión final, estable — release. Significa que es más probable que encuentres errores en las compilaciones nocturnas, pero tienes acceso a nuevas funcionalidades más rápido, casi a diario. Las betas son más estables, pero recibirás actualizaciones con menos frecuencia.
+
+## Cómo convertirte en probador beta {#intro}
+
+Nuestros requisitos son sencillos: usa AdGuard, actualiza a la versión beta/nocturna cuando esté disponible e informa cualquier error que observes. Necesitarás una cuenta de [ GitHub](https://github.com/) para convertirte en nuestro evaluador, por lo que es posible que quieras crearla primero.
+
+También necesitarás el dispositivo en el que instalarás la app y [el enlace a la página de pruebas beta](https://adguard.com/beta.html). Allí encontrarás más información sobre cómo unirte a nuestra app y probar AdGuard para Windows, iOS y Android.
 
 Si deseas omitir la parte de descripción y pasar directamente a la acción, puedes solicitar [aquí](https://surveys.adguard.com/beta_testing_program/form.html). Tu solicitud será revisada dentro de 1 a 3 días hábiles y recibirás una respuesta por correo electrónico.
+
+:::note
+
+Para obtener la versión beta o la versión nocturna de AdGuard para iOS, primero tienes que instalar [Testflight](https://apps.apple.com/app/testflight/id899247664) en tu dispositivo iOS.
+
+:::
 
 ## Cómo informar de un error {#report-a-bug}
 

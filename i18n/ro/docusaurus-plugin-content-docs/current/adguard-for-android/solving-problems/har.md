@@ -1,37 +1,37 @@
 ---
-title: How to get HAR files
+title: Cum să generați fișiere HAR
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Android, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-HAR files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Fișierele HAR sunt procesate conform [Politicii de confidențialitate AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-## What are HAR files?
+## Ce sunt fișierele HAR?
 
-The HAR (HTTP ARchive) format is a JSON-formatted archive file for logging of a web browser's interaction with a site. The specifications of HAR format defines an archival data for HTTP transactions that used by a browser to export detailed information about web pages it loads. More detailed description of HAR file format and its specification you can find at [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/) website.
+Formatul HAR (HTTP ARchive) este un fișier arhivă format JSON pentru înregistrarea interacțiunii unui browser web cu un site. Specificațiile formatului HAR definesc datele arhivate pentru tranzacțiile HTTP pe care un browser le folosește pentru a exporta informații detaliate despre paginile web pe care le încarcă. O descriere mai detaliată a formatului fișierelor HAR și a specificațiilor sale poate fi găsită pe site-ul [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
 
-## How to get HAR files
+## Cum să generați fișiere HAR
 
-Sometimes we need to analyze it to block specific ads that are difficult to reproduce for some reason. To get HAR files follow these steps:
+Sometimes we need to analyze it to block specific ads that are difficult to reproduce for some reason. Pentru a obține fișiere HAR, urmați acești pași:
 
-1. Open AdGuard and go to **Settings** (⚙ icon in the lower right corner).
-2. Tap **General** →**Advanced** → **Low-level settings**.
-3. Scroll down and activate **Capture HAR** in the Filtering section.
-4. Open the app and perform the necessary actions to reproduce the problem.
-5. Turn **Capture HAR** off.
-6. Go back to **Advanced**.
-7. Tap **Export logs and system info** → **Allow** (if necessary) → **Save**.
+1. Deschideți AdGuard și mergeți la **Setări** (⚙ icon în colțul din dreapta jos).
+2. Atingeți **Modul general** → **Avansat** → **Setări de nivel scăzut**.
+3. Derulați în jos și activați **Capturați HAR** în secțiunea de filtrare.
+4. Deschideți aplicația și efectuați acțiunile necesare pentru a reproduce problema.
+5. Dezactivați **Capturați HAR**.
+6. Întoarceți-vă la **Avansat**.
+7. Atingeți **Exportați jurnalele și informațiile de sistem** → **Permiteți** (dacă este necesar) → **Salvați**.
 
-**Please send the file with logs (that you've got as a result) to the AdGuard support service.**
+**Trimiteți fișierul generat cu jurnalele la serviciul de suport AdGuard.**
 
 :::note
 
@@ -39,9 +39,9 @@ Our support team will process your ticket much faster if you specify the HelpDes
 
 :::
 
-## How to analyze HAR files
+## Cum să analizați fișiere HAR
 
-Here are some sources that we can recommend to analyze HAR files:
+Iată câteva surse pe care le putem recomanda pentru a analiza fișiere HAR:
 
-- [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) is a HAR analyzer tool, visualizes HTTP Archive (HAR) log files created by HTTP tracking tools.
-- [Fiddler](https://www.telerik.com/fiddler) is a web debugging proxy, lets you capture, inspect, monitor all HTTP(S) traffic between your computer and the Internet, mock requests, and diagnose network issues.
+- [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) este un instrument de analiză HAR, vizualizând fișierele jurnal HTTP Archive (HAR) create de instrumentele de urmărire HTTP.
+- [Fiddler](https://www.telerik.com/fiddler) este un proxy de depanare web, vă permite să capturați, inspectați, monitorizați tot traficul HTTP(S) între computerul dvs. și Internet, să simulați solicitări și să diagnosticați problemele de rețea.

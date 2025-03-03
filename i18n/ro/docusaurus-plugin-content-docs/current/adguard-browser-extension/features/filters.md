@@ -1,56 +1,56 @@
 ---
-title: Filters
-sidebar_position: 1
+title: Filtre
+sidebar_position: 2
 ---
 
 :::info
 
-This article is about the AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la extensia de browser AdGuard, care protejează doar browserul dvs. Pentru a proteja întregul dispozitiv, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Blocking ads is the key functionality of any ad blocker, and AdGuard Browser Extension is not an exception. Ad blocking is based on filters — sets of rules written in a special language. These rules tell which elements should be blocked and which should not. AdGuard interpretes the rules and modifies web requests based on them. As a result, you stop seeing ads on your webpages.
+Blocarea reclamelor este funcționalitatea cheie a oricărui blocant de reclame, iar Extensie de browser AdGuard nu face excepție. Blocarea reclamelor se bazează pe filtre — seturi de reguli scrise într-un limbaj special. Aceste reguli spun care elemente ar trebui blocate și care nu. AdGuard interpretează regulile și modifică solicitările web pe baza acestora. Ca urmare, nu veți mai vedea reclame pe paginile dvs. web.
 
-![Filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
+![Filtre \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
 
-All filters are grouped according to their role. For example, there are categories for ad-blocking filters, privacy protection filters, social media-related filters, etc. You can enable either individual filters or the entire group at once.
+Toate filtrele sunt grupate în funcție de rolul lor. De exemplu, există categorii pentru filtrele de blocare a anunțurilor, filtrele de protecție a intimității, filtrele legate de rețelele de socializare, etc. Puteți activa fie filtre individuale, fie întregul grup deodată.
 
-![Ad blocking filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
+![Filtre de blocare a reclamelor \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
 
-## Custom filters
+## Filtre personalizate
 
-While the features of other filter groups are more or less predictable, there is a group called _Custom_ that may raise additional questions.
+În timp ce caracteristicile altor grupuri de filtre sunt mai mult sau mai puțin previzibile, există un grup numit _Personalizat_ care ar putea ridica întrebări suplimentare.
 
-![Custom filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
+![Filtre personalizate \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
 
-In this tab, you can add filters that are not present in the extension by default. There are plenty of [publicly available filters on the Internet](https://filterlists.com). Moreover, you can create and add your own filters. In fact, you can build any set of filters and customize ad blocking the way you like.
+În această filă, puteți adăuga filtre care nu sunt prezente în extensie în mod implicit. Există o mulțime de [filtre disponibile publicului pe Internet](https://filterlists.com). În plus, puteți crea și adăuga propriile filtre. De fapt, puteți construi orice set de filtre și să personalizați blocarea reclamelor așa cum doriți.
 
-To add a filter, just click _Add custom filter_, enter the URL or the file path of the filter you want to be added and click _Next_.
+Pentru a adăuga un filtru, pur și simplu faceți clic pe _Adăugați filtru personalizat_, introduceți URL-ul sau calea fișierului filtrului pe care doriți să-l adăugați și faceți clic pe _Următorul_.
 
-![Add a custom filter \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
+![Adăugați un filtru personalizat \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
-## User rules {#user-rules}
+## Reguli utilizator {#user-rules}
 
 _User rules_ is another tool that helps you customize the blocking of ads.
 
-![User rules \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
+![Reguli utilizator \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
 
-There are several ways to add new rules. The most straightforward is to just type a rule in, but it requires some knowledge of the [rule syntax](/general/ad-filtering/create-own-filters).
+Există mai multe modalități de a adăuga reguli noi. Cea mai simplă metodă este să introduceți o regulă, dar necesită unele cunoștințe despre [sintaxa regulilor](/general/ad-filtering/create-own-filters).
 
-You can import a ready-to-use filter list from a text file as well. **Make sure that different rules are separated by line breaks.** Note that importing a ready-to-use filter list is better done in the Custom filters tab.
+Puteți importa și o listă de filtre gata de utilizare dintr-un fișier text. **Make sure that different rules are separated by line breaks.** Note that importing a ready-to-use filter list is better done in the Custom filters tab.
 
-Besides, you can export your own filtering rules. This option is good for transferring your list of rules between browsers or devices.
+În plus, puteți exporta propriile reguli de filtrare. Această opțiune este bună pentru transferul listei tale de reguli între browsere sau dispozitive.
 
-When you add a website to the Allowlist (more on that below) or use the Assistant tool for hiding an element on the page, a corresponding rule is also saved in _User rules_.
+Atunci când adăugați un site web la lista de permisiuni (mai multe detalii despre acest lucru mai jos) sau utilizați instrumentul Asistent pentru ascunderea unui element de pe pagină, o regulă corespunzătoare este salvată, de asemenea în _Reguli utilizator_.
 
 ## Allowlist
 
-The _allowlist_ is used to exclude certain websites from filtering. Blocking rules are not applied to the websites on the list.
+Lista de permisiuni este utilizată pentru a exclude anumite site-uri web de la filtrare. Regulile de blocare nu sunt aplicate site-urilor web din listă.
 
-![Allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
+![Lista de permisiuni \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-The _allowlist_ can be inverted, too: you can unblock ads everywhere except on the websites added to this list. To do that, activate the _Invert allowlist_ option.
+De asemenea, lista de permisiuni poate fi inversată: puteți debloca reclamele de peste tot, cu excepția site-urilor web adăugate în această listă. Pentru a face acest lucru, activați opțiunea _Inversare listă de permisiuni_.
 
-![Invert allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
+![Inversare listă de permisiuni \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 
-You can also import and export existing allowlists. It is useful, for instance, if you want to apply the same allowing rules in each of your browsers.
+De asemenea, puteți importa și exporta listele de permisiuni existente. Acest lucru este util, de exemplu, dacă doriți să aplicați aceleași reguli de autorizare în fiecare dintre browserele dvs.

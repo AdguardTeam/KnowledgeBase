@@ -1,65 +1,40 @@
 ---
-title: Extensions
+title: Extensii
 sidebar_position: 3
 ---
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multifuncțional care protejează dispozitivul dumneavoastră la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard can significantly broaden website functionality working as a [user script manager](/general/userscripts). AdGuard Users can add their own scripts, as well as manage existing ones.
+AdGuard can significantly extend website functionality by working as a [userscript manager](/general/extensions.md). Utilizatorii AdGuard pot adăuga propriile scripturi, precum și gestiona scripturile existente.
 
-![Extensions \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
 **Automatically detect userscripts**
 
-With this option enabled, AdGuard will automatically define browser queries to userscripts and suggest their installation. Otherwise, extensions can be downloaded and installed manually.
+Cu această opțiune activată, AdGuard va defini automat interogările browser-ului pentru userscript-uri și va sugera instalarea acestora. Altfel, extensiile pot fi descărcate și instalate manual.
 
-The following extensions are installed with AdGuard:
+Următoarele extensii sunt instalate cu AdGuard:
 
-![Preinstalled userscripts \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![Preinstalled userscripts \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
 **AdGuard Assistant**
 
-AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](/adguard-for-windows/browser-assistant.md) is not available for your browser. The name of this extension is quite deliberate: it actually assists the user in changing basic AdGuard settings right in the browser, without the need to open the app itself. AdGuard Assistant works with all Microsoft Windows compatible browsers. In addition, the AdGuard Assistant icon will not be displayed on websites listed as exceptions by the user and on certain web pages where there is a risk of incorrect content display.
+AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](/adguard-for-windows/browser-assistant.md) is not available for your browser. Numele acestei extensii este destul de deliberat: efectiv asistează utilizatorul în schimbarea setărilor de bază AdGuard chiar în browser, fără a fi nevoie să deschideți aplicația în sine. Asistentul AdGuard funcționează cu toate browserele compatibile cu Microsoft Windows. În plus, iconița Asistentului AdGuard nu va fi afișată pe site-urile listate ca excepții de utilizator și pe anumite pagini web unde există riscul de afișare incorrectă a conținutului.
 
 **AdGuard Extra**
 
-This is a custom extension designed to fight the technique of re-inserting blocked ads — the so-called ad blocker circumvention/ad reinjection. Both are advanced anti-ad blocker methods that continue to rise in popularity among advertisers.
+Aceasta este o extensie personalizată concepută pentru a combate tehnica reintroducerii reclamelor blocate — așa-numita ocolire a blocantului de reclame/reintroducerea reclamelor. Ambele sunt metode avansate de combatere a blocantului de reclame care continuă să câștige popularitate în rândul advertiserilor.
 
-AdGuard Extra is essentially a mini-program that changes the way pages work in such a way that it becomes much more difficult for sites to use the above-mentioned methods to bypass blockers.
+AdGuard Extra este practic un mini-program care schimbă modul în care funcționează paginile într-un mod în care devine mult mai dificil pentru site-uri să folosească metodele menționate mai sus pentru a ocoli blocantele.
 
 **AdGuard Popup Blocker**
 
-This extension prevents popup windows from opening when you view web pages. Some pop-ups are considered useful — they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge base.
+Această extensie împiedică deschiderea ferestrelor pop-up atunci când vizualizați pagini web. Unele pop-up-uri sunt considerate utile — ele pot conține setări pentru administrarea site-ului sau informații de referință suplimentare prezentate la clic pe un link. De aceea, puteți dezactiva Blocantul dacă este necesar. Această extensie nu funcționează nici pe site-urile adăugate pe lista de excepții AdGuard. Este dezactivată implicit, dar o puteți activa în setările aplicației. Veți găsi informații mai detaliate despre această extensie în baza noastră de cunoștințe.
 
 **Web of Trust**
 
-Web of Trust lets you see the reputation of each website based on its users’ opinions. The site is rated by a number of specific criteria: trust, security, etc. This extension is turned off by default, but you can turn it on in the application settings. Please, note that AdGuard is not the developer of this extension.
-
-### Network
-
-The penultimate module is dedicated to network filtering, and here you will find additional network-related options. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS protocol_. These are important extra precautions to better filter your web space. Most websites are now using HTTPS, and the same applies to advertising. From many sites, like youtube.com, facebook.com and twitter.com, it is impossible to remove ads without HTTPS filtering. So keep the _Filter HTTPS protocol_ feature enabled unless you have a strong reason not to.
-
-![Network Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
-
-In this module you can check the checkbox "Use AdGuard as an HTTP proxy" to use AdGuard as a regular HTTP proxy which will filter all traffic passing through it. You can also enable the _Filter websites with EV certificates_ feature. Extended Validation (EV) SSL Certificates offer a stronger safety guarantee; owners of such websites have to pass a thorough and globally standardized identity verification process defined by EV guidelines. Which is the reason why some users trust websites with such certificates and prefer not to filter them.
-
-At last, there is a section with proxy settings. There you can specify which proxy server AdGuard should use to update filters, get new versions and so on.
-
-### AdGuard VPN
-
-The last section is dedicated to AdGuard VPN — an ideal tool that provides security and anonymity each time you browse the Internet. You can download it by clicking the _Download_ button or go to the AdGuard VPN website by clicking the _Homepage_ button.
-
-How does AdGuard VPN work? Without going into technical details, we can say that VPN creates a secure encrypted tunnel between the user's computer or mobile device and a remote VPN server. In this way, data confidentiality is preserved, as well as the anonymity of the user, because a third-party observer sees the IP address of the VPN server and not the actual user's IP.
-
-**What AdGuard VPN does:**
-
-- hides your real whereabouts and helps you stay anonymous
-- changes your IP address to protect your data from tracking
-- encrypts your traffic to make it unreadable to third parties
-- lets you configure where to use VPN and where not to (exclusions feature)
-
-To get more information about AdGuard VPN dive into the [AdGuard VPN Knowledge Base](https://adguard-vpn.com/kb/).
+Web of Trust vă permite să vedeți reputația fiecărui site bazându-se pe părerile utilizatorilor săi. Site-ul este evaluat pe baza unui număr de criterii specifice: încredere, securitate, etc. Această extensie este dezactivată implicit, dar o puteți activa în setările aplicației. Vă rugăm, rețineți că AdGuard nu este dezvoltatorul acestei extensii.

@@ -3,7 +3,7 @@ title: Becoming a translator/proofreader
 sidebar_position: 2
 ---
 
-If you want to help translate AdGuard products, websites, and Knowledge bases, go to [Crowdin](https://crowdin.com/) and sign up/log in there.
+If you want to help translate AdGuard products, websites, and Knowledge Bases, go to [Crowdin](https://crowdin.com/) and sign up/log in there.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/main-screen.png)
 

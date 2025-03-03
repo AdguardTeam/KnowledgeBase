@@ -3,7 +3,7 @@ title: Becoming a translator/proofreader
 sidebar_position: 2
 ---
 
-If you want to help translate AdGuard products, websites, and Knowledge bases, go to [Crowdin](https://crowdin.com/) and sign up/log in there.
+If you want to help translate AdGuard products, websites, and Knowledge Bases, go to [Crowdin](https://crowdin.com/) and sign up/log in there.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/main-screen.png)
 
@@ -37,7 +37,7 @@ Besides, there is an opportunity to open translations in a Voting mode if you ju
 
 You can find some [helpful tips on translating AdGuard in this article](../guidelines). Lütfen bir göz atın.
 
-### How to become a proofreader {#proofreaders}
+### Nasıl düzeltmen olunur {#proofreaders}
 
 We have proofreaders (previously known as moderators) for each language. And every active translator has an option to become one.
 
@@ -51,4 +51,4 @@ So, what are proofreaders responsible for?
 
 - Respond to comments related to translations in their language.
 
-Her yıl, en iyi düzeltmenler AdGuard'dan hediyeler alır. Active translators do not go unrewarded either. Read more about our [reward system](../rewards).
+Her yıl, en iyi düzeltmenler AdGuard'dan hediyeler alır. Aktif çevirmenler de ödülsüz kalmıyor. Read more about our [reward system](../rewards).

@@ -15,9 +15,9 @@ AdGuard ist einer der Marktführer für Werbeblocker-Software mit mehr als 15 Ja
 
 Wir entwickeln und pflegen aber auch kostenlose Browsererweiterungen für alle gängigen Browser:
 
-- [AdGuard Browsererweiterung](/adguard-browser-extension/features/filters)
+- [AdGuard Browsererweiterung](/adguard-browser-extension/availability)
 - [AdGuard für Safari](/adguard-for-safari/features/general)
 
 ## Nicht nur Werbeblocker
 
-AdGuard Werbeblocker kann mehr als nur Werbung blockieren. Er schützt Sie vor Online-Tracking und verbessert Ihre Privatsphäre in vielerlei Hinsicht. Je nach Produkt bietet AdGuard auch Vorteile wie DNS-Filterung für einen umfassenderen Schutz, Kindersicherung, um Ihre Kinder vor ungeeigneten Inhalten zu schützen, Filterungsprotokolle für eine bessere Kontrolle Ihres Internetverkehrs und vieles mehr. Diese Wissensdatenbank enthält detaillierte Informationen zu all diesen Themen — Sie können direkt auf die Artikel zugreifen, die Sie interessieren.
+AdGuard Werbeblocker kann mehr als nur Werbung blockieren. Er schützt Sie vor Online-Tracking und verbessert Ihre Privatsphäre in vielerlei Hinsicht. Je nach Produkt bietet AdGuard auch Vorteile wie DNS-Filterung für einen umfassenderen Schutz, Kindersicherung, um Ihre Kinder vor ungeeigneten Inhalten zu schützen, Filterungsprotokolle für eine bessere Kontrolle Ihres Internetverkehrs und vieles mehr. Diese Wissensdatenbank enthält ausführliche Informationen zu allen diesen Themen. Sie können jederzeit zu jedem Artikel springen, der Sie interessiert.

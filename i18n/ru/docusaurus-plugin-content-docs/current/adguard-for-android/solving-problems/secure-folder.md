@@ -5,11 +5,11 @@ sidebar_position: 13
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-После установки AdGuard в [*Защищённую папку* на вашем Android-устройстве](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) (это в основном относится к устройствам Samsung), вы можете столкнуться с некоторыми трудностями при установке HTTPS-сертификата. Дело в том, что в *Защищённой папке* есть собственное хранилище для сертификатов. However, if you do everything according to the regular certificate installation instructions ([described here](/adguard-for-android/features/settings#https-filtering)), the certificate will be installed into the main memory and will play no role for your ad blocker in the *Secure folder*. Чтобы справиться с этой проблемой и установить сертификат в хранилище *Защищённой папки*, воспользуйтесь следующей инструкцией:
+После установки AdGuard в [*Защищённую папку* на вашем Android-устройстве](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) (это в основном относится к устройствам Samsung), вы можете столкнуться с некоторыми трудностями при установке HTTPS-сертификата. Дело в том, что в *Защищённой папке* есть собственное хранилище для сертификатов. Поэтому, если вы сделаете всё согласно [стандартной инструкции по установке сертификата](/adguard-for-android/features/settings#https-filtering), он будет установлен в основное хранилище и будет бесполезен для вашего блокировщика рекламы в *Защищённой папке*. Чтобы справиться с этой проблемой и установить сертификат в хранилище *Защищённой папки*, воспользуйтесь следующей инструкцией:
 
 1. После установки приложения и подключения к локальному VPN нажмите **Включить** рядом с надписью *HTTPS-фильтрация отключена*.
 1. Нажмите **Далее** → **Далее** → **Сохранить сейчас** → **Сохранить сертификат**.

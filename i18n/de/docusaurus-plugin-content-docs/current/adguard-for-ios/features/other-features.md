@@ -13,9 +13,9 @@ Während das Blockieren von Inhalten in Safari und der DNS-Schutz zweifellos die
 
 ### **Dunkles Design**
 
-![Helles Design \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
+![Helles Design \*mobile_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Dunkles Design \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![Dunkles Design \*mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
 Mit dieser Einstellung, die sich ganz oben auf dem Bildschirm **Einstellungen** → **Allgemein** befindet, können Sie zwischen einem dunklen und einem hellen Design wechseln.
 

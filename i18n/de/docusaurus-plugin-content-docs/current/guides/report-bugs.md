@@ -17,7 +17,7 @@ Prüfen Sie, ob Sie die aktuellste Version haben, und wenn nicht, aktualisieren 
 
 ### Wie man ein Problem beschreibt
 
-Versuchen Sie, so viele Details wie möglich anzugeben — das macht es für uns einfacher, den Fehler zu reproduzieren und herauszufinden, wie er behoben werden kann. Das erwarten wir von einem Fehlerbericht:
+Versuchen Sie, so viele Details wie möglich anzugeben — das macht es für uns einfacher, den Fehler zu reproduzieren und herauszufinden, wie er behoben werden kann. Wir erwarten, dass ein Fehlerbericht folgende Angaben enthält:
 
 - Ihre App-Version
 - Ihre OS-Version
@@ -26,9 +26,9 @@ Versuchen Sie, so viele Details wie möglich anzugeben — das macht es für uns
 - Ob es wieder auftritt und mit welcher Häufigkeit
 - Ob Sie ein VPN oder eine Antiviren-Software haben
 
-### So erstellen Sie Protokolle
+### So erfassen Sie Protokolle
 
-Lesen Sie über das Sammeln von Protokollen in speziellen Artikeln für jede Plattform.
+Lesen Sie über das Erfassen von Protokollen in speziellen Artikeln für jede Plattform.
 
 ## Wie man für Fehlerberichte oder Funktionswünsche abstimmt
 

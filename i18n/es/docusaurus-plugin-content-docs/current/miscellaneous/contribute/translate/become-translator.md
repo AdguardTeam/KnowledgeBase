@@ -3,7 +3,7 @@ title: Convertirte en traductor/revisor
 sidebar_position: 2
 ---
 
-Si deseas ayudar a traducir productos, sitios web y bases de conocimiento de AdGuard, ve a [Crowdin](https://crowdin.com/) y regístrate/inicia sesión allí.
+Si deseas ayudar a traducir productos, sitios web y Bases de conocimiento de AdGuard, ve a [Crowdin](https://crowdin.com/) y regístrate/inicia sesión allí.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/main-screen.png)
 

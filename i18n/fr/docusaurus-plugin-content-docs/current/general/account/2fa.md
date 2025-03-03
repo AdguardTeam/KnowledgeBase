@@ -11,26 +11,40 @@ Nous vous recommandons de mettre en place une authentification à deux facteurs 
 
 ## Comment la mettre en place
 
-1. Connectez-vous à votre [ compte AdGuard](https://auth.adguard.com/login.html) et accédez à l'onglet Paramètres :
+1. Connectez-vous à votre [ compte AdGuard](https://auth.adguard.com/login.html) et accédez à l'onglet *Paramètres* :
 
-![Paramètres du compte AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
+ ![Paramètres du compte AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Faites défiler jusqu'à la section *Mot de passe et 2FA* et cliquez sur **Activer** :
+1. Faites défiler vers le bas jusqu'à *L'authentification à deux facteurs* et activez-la :
 
-![Le bouton Modifier *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
+ ![Bascule de l'authentification à deux facteurs *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. Suivez les instructions sur l'écran pour installer une application d'authentification et scannez le code QR :
+1. Un code sera envoyé à l'adresse électronique associée à votre compte AdGuard. Pour activer 2FA, saisissez le code et cliquez sur *Activer*.
 
-![Le code de vérification](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
+ ![Le code de vérification *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-***Important***
+Après avoir activé l'authentification à deux facteurs, vous avez deux options à choisir :
 
-- Enregistrez le code de sauvegarde de 2FA quelque part, il sera nécessaire pour récupérer votre compte en cas de perte ou de vol de votre téléphone mobile ;
+- *Code de courriel à usage unique*: lorsque vous vous connecterez, nous vous demanderons de saisir le code que nous vous avons envoyé à votre courriel
+
+- *Code de l'application d'authentification*: lorsque vous vous connectez, nous vous demanderons un code de votre application d'authentification
+
+![Options 2FA *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
+
+:::note
+
+Si vous utilisez une application d'authentification, assurez-vous de noter la **clé de paramètres** quelque part. Vous en aurez besoin pour récupérer votre compte en cas de perte ou de vol de votre appareil mobile.
+
+![La clé de configuration dans l'application d'authentification *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
+
+:::
 
 Si tout est bien fait, vous verrez ceci lors de votre prochaine connexion à votre compte :
 
-![Le résultat *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+![Le résultat *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
 
-Utilisez votre application d'authentification mobile pour lire le code et saisissez-le. Vous devriez être connecté maintenant !
+:::note
 
-***REMARQUE*** : Si vous obtenez une erreur d'authentification, vérifiez l'horloge de votre téléphone. Ajustez-la si nécessaire, car une horloge non synchronisée peut entraîner des erreurs.
+Si vous voyez une erreur d'authentification, vérifiez l'horloge de votre téléphone. Ajustez-la si nécessaire, car une horloge non synchronisée peut entraîner des erreurs.
+
+:::

@@ -5,48 +5,48 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-The Firewall module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Firewall_.
+È possibile accedere al modulo Firewall toccando la scheda _Protezione_ (seconda icona a sinistra nella parte inferiore dello schermo) e selezionando _Firewall_.
 
-This feature helps manage Internet access for specific apps installed on your device and for the device in general.
+Questa funzionalità aiuta a gestire l'accesso a Internet per le app specifiche installate sul tuo dispositivo, e per il dispositivo in generale.
 
-![Firewall \*mobile\_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
+![Firewall \*mobile_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
-### Global firewall rules
+### Regole globali del firewall
 
-This section allows you to control Internet access for the entire device.
+Questa sezione ti consente di controllare l'accesso a Internet per l'intero dispositivo.
 
-![Global firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
+![Regole globali del firewall \*mobile_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
 
-These rules apply to all apps on your device unless you've set custom rules for them.
+Queste regole si applicano a tutte le app sul tuo dispositivo, a meno che tu non abbia impostato delle regole personalizzate per esse.
 
-### Custom firewall rules
+### Regole personalizzate del firewall
 
-In this section, you can control Internet access for specific apps — restrict permissions for those that you don’t find trustworthy, or, on the contrary, unblock the ones you want to circumvent the global firewall rules.
+In questa sezione, puoi controllare l'accesso a Internet per app specifiche — bloccare i permessi per quelle che non ritieni affidabili, o, al contrario, sbloccare quelle che desideri aggirino le regole globali del firewall.
 
-1. Open _Custom firewall rules_. Under _Apps with custom rules_, tap _Add app_.
+1. Apri _Regole firewall personalizzate_. Sotto _App con regole personalizzate_, tocca _Aggiungi app_.
 
-   ![Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+    ![Regole firewall personalizzate \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
-2. Select the app for which you want to set individual rules.
+2. Seleziona l'app per cui desideri impostare delle regole individuali.
 
-   ![Adding an app to Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+    ![Aggiunta di un'app alle regole firewall personalizzate \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
-3. In _Available custom rules_, select the ones you want to configure and tap the “+” icon. The rules will now appear in _Applied custom rules_.
+3. In _Regole personalizzate disponibili_, seleziona quelle che desideri configurare e tocca l'icona "+". Le regole ora appariranno in _Regole personalizzate applicate_.
 
-   ![Added rule \*mobile\_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+    ![Regola aggiunta \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
-4. If you need to block a specific type of connection, toggle the switch to the left. If you want to allow it, leave the switch enabled. **Custom rules override global ones**: any changes you make in _Global firewall rules_ will not affect this app.
+4. Se devi bloccare un tipo specifico di connessione, sposta l'interruttore a sinistra. Se desideri consentirlo, lascia abilitato l'interruttore. **Le regole personalizzate sovrascrivono quelle globali**: qualsiasi modifica tu apporti nelle _Regole globali del firewall_ non influirà su quest'app.
 
-To delete a rule or app from _Custom rules_, swipe it to the left.
+Per eliminare una regola o app dalle _Regole personalizzate_, falla scorrere verso sinistra.
 
-### Notifications
+### Notifiche
 
-If enabled, this feature notifies you when an app tries to break one of the Firewall rules set for that app (for example, to access mobile data when it shouldn’t). You can turn notifications on and off for all apps or for each app separately.
+Se abilitata, questa funzione ti notifica quando un'app sta tentando di violare una regola del firewall applicabile, ad esempio tentativi di accedere a dati mobile per i quali è bloccata. Puoi attivare e disattivare le notifiche per tutte le app o per ciascuna app separatamente.
 
-Tap the notification to access the app’s Firewall settings, or temporary disable all Firewall rules for that app by tapping the corresponding button in the notification. You can also mute all Firewall notifications for the app by tapping the _Mute_ button in the notification for that app.
+Tocca la notifica per accedere alle impostazioni del Firewall dell'app, o disabilita temporaneamente tutte le regole del Firewall per quell'app toccando il pulsante corrispondente nella notifica. Puoi anche disattivare tutte le notifica del Firewall per l'app toccando il pulsante _Muto_ nella notifica per quell'app.
 
-Note that if notifications for multiple apps would be displayed, they will be bundled into a single notification instead.
+Tieni presente che se saranno mostrate notifiche per più app, esse saranno raggruppate in un'unica notifica.

@@ -1,6 +1,6 @@
 ---
-title: Filters
-sidebar_position: 3
+title: Filtreler
+sidebar_position: 4
 ---
 
 :::info
@@ -9,7 +9,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-## Filters
+## Filtreler
 
 ![Filters](https://cdn.adtidy.org/content/kb/ad_blocker/mac/filters.png)
 
@@ -19,8 +19,8 @@ We recommend enabling the following filters:
 
 - AdGuard Temel filtresi
 - AdGuard Tracking Protection filter and AdGuard URL Tracking filter
-- AdGuard Annoyances filter
-- Filters for your language
+- AdGuard Can Sıkıcı Öğeler filtresi
+- Diliniz için filtreler
 
 These filters are important for blocking most ads, trackers, and annoying elements. For more advanced ad blocking, you can use custom filters and user rules.
 

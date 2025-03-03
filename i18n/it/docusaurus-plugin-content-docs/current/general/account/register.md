@@ -9,7 +9,7 @@ Il [profilo di AdGuard](https://my.adguard.com/) è un profilo utente che memori
 
 ## Come creare un profilo
 
-Per creare un profilo, vai al [sito web ufficiale di AdGuard](https://adguard.com/welcome.html) e premi il pulsante *Il Mio Profilo* nell'angolo superiore destro della schermata. Inserisci il tuo indirizzo email e creare una password: il tuo profilo sarà registrato.
+Per creare un profilo, vai al [sito web ufficiale di AdGuard](https://adguard.com/welcome.html) e premi il pulsante *Log in* nell'angolo superiore destro della schermata. Inserisci il tuo indirizzo email e creare una password: il tuo profilo sarà registrato.
 
 :::tip
 
@@ -21,6 +21,12 @@ Puoi anche creare un profilo direttamente in un'app di AdGuard. Premi il pulsant
 
 Dopo la creazione del profilo, attivalo seguendo il link nell'email d'attivazione.
 
+:::tip
+
+Dopo aver registrato il tuo account, puoi usare l'opzione *Codice una tantum* per accedere all'app. Inserisci il tuo indirizzo e-mail e scegli di inserire o la tua parola d'accesso o il codice inviato al tuo indirizzo e-mail.
+
+:::
+
 ## Come creare un account tramite un social network
 
-Per creare un account tramite un social network, segui semplicemente il collegamento [](https://auth.adguard.com/login.html) e accedi al tuo account. Una volta registrato, controlla la tua casella di posta: riceverai un'e-mail di conferma. Imposta una password e tutto è fatto! Ora puoi utilizzare tutte le [funzionalità dell'account AdGuard](https://adguard.com/kb/general/account/features/).
+Per creare un account tramite un social network, segui semplicemente [ il collegamento](https://auth.adguard.com/login.html) e accedi al tuo account. Una volta registrato, controlla la tua casella di posta: riceverai un'e-mail di conferma. Imposta una password e tutto è fatto! Ora puoi utilizzare tutte le [funzionalità dell'account AdGuard](https://adguard.com/kb/general/account/features/).

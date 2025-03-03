@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.General": {
-    "message": "Основное",
+    "message": "Основные",
     "description": "The label for category General in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Ad filtering": {
@@ -98,5 +98,9 @@
   "sidebar.tutorialSidebar.category.Firewall": {
     "message": "Фаервол",
     "description": "The label for category Firewall in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.AdGuard for Linux": {
+    "message": "AdGuard для Linux",
+    "description": "The label for category AdGuard for Linux in sidebar tutorialSidebar"
   }
 }

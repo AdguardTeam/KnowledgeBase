@@ -1,45 +1,45 @@
 ---
-title: Browser Assistant
+title: 브라우저 어시스턴트
 sidebar_position: 3
 ---
 
-AdGuard Assistant’s primary function is to manage filtering directly from the browser. It has existed for quite a long time, and its form and content have changed. More precisely, it used to be a mere userscript incorporated into AdGuard for Windows app and became a full-fledged browser extension. Now it yields more benefits.
+AdGuard 어시스턴트의 주요 기능은 브라우저에서 직접 필터링을 관리하는 것입니다. 이 도구는 꽤 오랫동안 존재해 왔으며 그 형태와 기능이 변화해 왔습니다. 이전에는 단순한 유저스크립트였으나 Windows용 AdGuard 앱에 통합되어 브라우저 확장 프로그램이 되었습니다. 이제 어시스턴트의 기능이 더욱 향상되었습니다.
 
-![Browser Assistant *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
+![브라우저 어시스턴트 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
 
-## Benefits
+## 장점
 
-### Independence
+### 독립 도구
 
-AdGuard Browser Assistant is a browser extension, it is installed in a browser, so there is no need to wait for the userscript to be injected into the filtered web page, as it was with the preceding one. In other words, it is more autonomous from the main AdGuard app. Still, Browser Assistant needs the installed AdGuard for Windows, because there is no point in using the extension without the app.
+AdGuard 브라우저 어시스턴트는 브라우저 확장 프로그램으로, 브라우저에 설치되므로 이전처럼 필터링된 웹 페이지에 유저스크립트가 삽입될 때까지 기다릴 필요가 없습니다. 즉, 기본 AdGuard 앱에서 보다 자율적으로 사용할 수 있습니다. 하지만 브라우저 어시스턴트는 앱이 없으면 사용할 수 없으므로 Windows용 AdGuard가 설치되어 있어야 합니다.
 
-### Compatibility with the main app
+### 주요 앱과의 호환성
 
-If you got into the habit of using our previous [AdGuard Ad Blocker extension](/adguard-browser-extension/compatibility), you might like the solution that we have developed for the new Browser Assistant.
+이전 [AdGuard 광고 차단 확장 프로그램](/adguard-browser-extension/compatibility)을 사용했다면 새로운 브라우저 어시스턴트를 위해 개발한 솔루션이 마음에 들 것입니다.
 
-Background information:
+배경 정보
 
-In previous versions of the AdGuard Browser Extension (before v3.5), if you had it installed along with the AdGuard for Windows app, the extension took over the functions of Assistant, stopped filtering itself and relied on the app to do this.
+이전 버전의 AdGuard 브라우저 확장 프로그램(v3.5 이전 버전)에서는 Windows용 AdGuard 앱과 함께 설치한 경우 확장 프로그램이 어시스턴트의 기능을 대신하여 자체 필터링을 중단하고 앱에 의존하여 필터링을 수행했습니다.
 
-The extension and the app worked in conjunction but sometimes the integration would fail. Some websites would stop being protected by the desktop program and be backed up only by the less powerful extension.
+확장 프로그램과 앱이 함께 작동하지만 간혹 통합이 실패할 수 있습니다. 일반적으로 데스크톱 프로그램에서 제공하는 보호 기능은 특정 사이트에서 중지되며, 이 경우 덜 강력한 확장 프로그램만이 보호 기능을 제공합니다.
 
-When using the Browser Assistant, all these problems don’t matter as there can be no conflicts in essence. The role of the Browser Assistant is well-defined and it can’t hinder the functioning of the main app, so there is no need to worry.
+브라우저 어시스턴트를 사용할 때는 본질적으로 충돌이 발생하지 않으므로 이러한 모든 문제는 중요하지 않습니다. 브라우저 어시스턴트의 역할은 잘 정의되어 있으며 기본 앱의 기능을 방해하지 않으므로 걱정할 필요가 없습니다.
 
-## Separate tab in Settings
+## 설정의 별도 탭
 
-The new Browser Assistant has its own tab in AdGuard for Windows settings, along with Stealth Mode, Browsing security, Parental Control and others. There you will find a link to download the extension for your default browser. Besides, there is a checkbox to enable the legacy Assistant.
+새로운 브라우저 어시스턴트에는 스텔스 모드, 브라우징 보안, 자녀보호 기능 등과 함께 Windows용 AdGuard 설정에 자체 탭이 있습니다. 거기에서 기본 브라우저용 확장 프로그램을 다운로드할 수 있는 링크를 찾을 수 있습니다. 또한 이전 버전의 어시스턴트를 사용하도록 설정하는 확인란도 있습니다.
 
-![Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![설정 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
-## Legacy Assistant
+## 레거시 어시스턴트
 
-Legacy Assistant is the previous version of Assistant, which is a mere userscript, not a browser extension. Basically, there are two cases when you might want to pick it instead of the new Browser Assistant:
+레거시 어시스턴트는 브라우저 확장 프로그램이 아닌 단순한 유저스크립트인 이전 버전의 어시스턴트입니다. 기본적으로 새로운 브라우저 어시스턴트 대신 이 기능을 선택하는 경우는 두 가지입니다.
 
-1. The new Assistant is not available for your browser.
-1. You are used to the green shield icon and want to leave things as they were.
+1. 현재 사용 중인 브라우저에서는 새 어시스턴트를 사용할 수 없습니다.
+1. 녹색 방패 아이콘에 익숙해져서 그대로 두고 싶을 때입니다.
 
-## How to install AdGuard Browser Assistant
+## AdGuard 브라우저 어시스턴트 설치 방법
 
-If you want to install the Browser Assistant for your default browser, you can do it directly from the app settings, but you also have an opportunity to install it for other browsers.
+기본 브라우저에 브라우저 어시스턴트를 설치하려면 앱 설정에서 직접 설치할 수 있지만, 다른 브라우저에도 설치할 수 있습니다.
 
-AdGuard Browser Assistant is available for all popular browsers: Chrome, Firefox, Edge, Opera, and Yandex. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and tap the *Install* button. That’s it!
+AdGuard 브라우저 어시스턴트는 Chrome, Firefox, Edge, Opera 및 Yandex와 같은 모든 인기 브라우저에서 사용할 수 있습니다. 필요한 어시스턴트를 설치하려면(여러 개를 설치하는 것을 권장) [AdGuard 웹사이트](https://adguard.com/adguard-assistant/overview.html)로 이동하여 브라우저 아이콘을 클릭한 다음 *설치* 버튼을 누르세요.

@@ -4,99 +4,119 @@
     "description": "The title of the footer links column with title=adguard in the footer"
   },
   "link.title.products": {
-    "message": "Products",
+    "message": "產品",
     "description": "The title of the footer links column with title=products in the footer"
   },
   "link.title.support": {
-    "message": "Support",
+    "message": "支援",
     "description": "The title of the footer links column with title=support in the footer"
   },
   "link.title.license": {
-    "message": "License",
+    "message": "授權",
     "description": "The title of the footer links column with title=license in the footer"
   },
   "link.item.label.official_website": {
-    "message": "Official website",
+    "message": "官方網站",
     "description": "The label of footer link with label=official_website linking to https://adguard.com"
   },
   "link.item.label.about": {
-    "message": "About",
+    "message": "關於",
     "description": "The label of footer link with label=about linking to https://adguard.com/contacts.html"
   },
-  "link.item.label.in_the_press": {
-    "message": "In the press",
-    "description": "The label of footer link with label=in_the_press linking to https://adguard.com/press-releases.html"
-  },
-  "link.item.label.media_kits": {
-    "message": "Media kits",
-    "description": "The label of footer link with label=media_kits linking to https://adguard.com/media-materials.html"
-  },
-  "link.item.label.awards": {
-    "message": "Awards",
-    "description": "The label of footer link with label=awards linking to https://adguard.com/awards.html"
-  },
-  "link.item.label.adguard_for_windows": {
-    "message": "AdGuard for Windows",
-    "description": "The label of footer link with label=adguard_for_windows linking to https://adguard.com/adguard-windows/overview.html"
-  },
-  "link.item.label.adguard_for_android": {
-    "message": "AdGuard for Android",
-    "description": "The label of footer link with label=adguard_for_android linking to https://adguard.com/adguard-android/overview.html"
-  },
-  "link.item.label.adguard_for_mac": {
-    "message": "AdGuard for Mac",
-    "description": "The label of footer link with label=adguard_for_mac linking to https://adguard.com/adguard-mac/overview.html"
-  },
-  "link.item.label.adguard_for_ios": {
-    "message": "AdGuard for iOS",
-    "description": "The label of footer link with label=adguard_for_ios linking to https://adguard.com/adguard-ios/overview.html"
-  },
-  "link.item.label.adguard_for_ios_pro": {
-    "message": "AdGuard for iOS Pro",
-    "description": "The label of footer link with label=adguard_for_ios_pro linking to https://adguard.com/adguard-ios-pro/overview.html"
-  },
   "link.item.label.support_center": {
-    "message": "Support Center",
+    "message": "支援中心",
     "description": "The label of footer link with label=support_center linking to https://adguard.com/support.html"
   },
   "link.item.label.how_to_create_your_own_ad_filter": {
-    "message": "How to create your own ad filter",
+    "message": "如何創建自己的廣告過濾器",
     "description": "The label of footer link with label=how_to_create_your_own_ad_filter linking to /general/ad-filtering/create-own-filters"
   },
   "link.item.label.adguard_ad_filters": {
-    "message": "AdGuard Ad Filters",
+    "message": "AdGuard 廣告過濾器",
     "description": "The label of footer link with label=adguard_ad_filters linking to /general/ad-filtering/adguard-filters"
   },
   "link.item.label.removal_instructions": {
-    "message": "Removal Instructions",
+    "message": "移除說明",
     "description": "The label of footer link with label=removal_instructions linking to https://adguard.com/removal.html"
   },
   "link.item.label.userscripts": {
-    "message": "Userscripts",
-    "description": "The label of footer link with label=userscripts linking to /general/userscripts"
+    "message": "使用者腳本",
+    "description": "The label of footer link with label=userscripts linking to /general/extensions"
   },
   "link.item.label.purchase_license": {
-    "message": "Purchase License",
+    "message": "購買授權",
     "description": "The label of footer link with label=purchase_license linking to https://adguard.com/license.html"
   },
   "link.item.label.recover_license": {
-    "message": "Recover License",
+    "message": "恢復授權",
     "description": "The label of footer link with label=recover_license linking to /general/license/what-is"
   },
   "link.item.label.terms_of_sale": {
-    "message": "Terms of sale",
+    "message": "銷售條款",
     "description": "The label of footer link with label=terms_of_sale linking to https://adguard.com/terms-of-sale.html"
   },
   "link.item.label.get_free_license": {
-    "message": "Get Free License",
+    "message": "取得免費的授權",
     "description": "The label of footer link with label=get_free_license linking to https://adguard.com/get-adguard-for-free.html"
   },
-  "link.item.label.contribute_to_adguard": {
-    "message": "Contribute to AdGuard",
-    "description": "The label of footer link with label=contribute_to_adguard linking to https://adguard.com/contribute.html"
+  "link.item.label.blog": {
+    "message": "部落格",
+    "description": "The label of footer link with label=blog linking to https://adguard.com/blog/index.html"
+  },
+  "link.item.label.discuss": {
+    "message": "討論",
+    "description": "The label of footer link with label=discuss linking to https://adguard.com/discuss.html"
+  },
+  "link.item.label.support_adguard": {
+    "message": "支援 AdGuard",
+    "description": "The label of footer link with label=support_adguard linking to https://adguard.com/support-adguard.html"
+  },
+  "link.item.label.for_windows": {
+    "message": "Windows 版",
+    "description": "The label of footer link with label=for_windows linking to https://adguard.com/adguard-windows/overview.html"
+  },
+  "link.item.label.for_mac": {
+    "message": "Mac 版",
+    "description": "The label of footer link with label=for_mac linking to https://adguard.com/adguard-mac/overview.html"
+  },
+  "link.item.label.for_android": {
+    "message": "Android 版",
+    "description": "The label of footer link with label=for_android linking to https://adguard.com/adguard-android/overview.html"
+  },
+  "link.item.label.for_android_tv": {
+    "message": "Android TV",
+    "description": "The label of footer link with label=for_android_tv linking to https://adguard.com/adguard-android-tv/overview.html"
+  },
+  "link.item.label.for_ios": {
+    "message": "iOS 版",
+    "description": "The label of footer link with label=for_ios linking to https://adguard.com/adguard-ios/overview.html"
+  },
+  "link.item.label.for_browsers": {
+    "message": "瀏覽器",
+    "description": "The label of footer link with label=for_browsers linking to https://adguard.com/adguard-browser-extension/overview.html"
+  },
+  "link.item.label.version_history": {
+    "message": "版本歷史",
+    "description": "The label of footer link with label=version_history linking to https://adguard.com/versions.html"
+  },
+  "link.item.label.faq": {
+    "message": "常見問答集",
+    "description": "The label of footer link with label=faq linking to https://adguard.com/support/faq.html"
+  },
+  "link.item.label.status": {
+    "message": "AdGuard 狀態",
+    "description": "The label of footer link with label=status linking to https://status.adguard.com/"
+  },
+  "link.item.label.diagnostics": {
+    "message": "AdGuard 診斷頁面",
+    "description": "The label of footer link with label=diagnostics linking to https://adguard.com/test.html"
+  },
+  "link.item.label.distribution": {
+    "message": "經銷",
+    "description": "The label of footer link with label=distribution linking to https://adguard.com/partners.html"
   },
   "copyright": {
-    "message": "© AdGuard, 2009–2023",
+    "message": "© 2009–2025 Adguard Software Ltd.",
     "description": "The footer copyright"
   }
 }

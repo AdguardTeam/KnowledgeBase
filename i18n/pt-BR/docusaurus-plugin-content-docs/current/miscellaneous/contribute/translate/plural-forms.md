@@ -137,7 +137,7 @@ Assim, a tradução do inglês para o sérvio deve ser:
 
 Embora seja óbvio que os dois últimos modelos não têm diferenças, é muito importante manter a regra: **O número de modelos deve refletir o número de formas plurais do respectivo idioma!**(normalmente para este tipo de strings com plurais).
 
-### Breve resumo {#summury}
+## Breve resumo {#summary}
 
 Ao traduzir projetos do AdGuard, preste muita atenção às frases que exigem o uso de formas plurais.
 

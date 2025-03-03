@@ -1,80 +1,80 @@
 ---
-title: Tracking protection
+title: Защита от трекинга
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
-The Tracking protection module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Tracking protection_.
+Защита от трекинга находится во вкладке _Защита_ (второй слева значок в нижней части экрана).
 
-_Tracking protection_ (formerly known as _Stealth Mode_) prevents websites from collecting information about you, such as your IP addresses, information about your browser and operating system, screen resolution, and the page you came or were redirected from. It can also block cookies that websites use to mark your browser, save your personal settings and user preferences, or recognize you on your next visit.
+_Защита от трекинга_ (ранее _Антитрекинг_) не позволяет сайтам собирать информацию о вас: IP-адрес, информацию о вашем браузере, операционной системе, разрешении экрана и странице, с которой вы пришли или были перенаправлены. Защита от трекинга позволяет блокировать куки, которые сайты используют, чтобы сохранять ваши настройки и пользовательские предпочтения или узнавать вас при следующем посещении.
 
-![Tracking protection \*mobile\_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
+![Защита от трекинга \*mobile_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
 
-_Tracking protection_ has three pre-configured levels of privacy protection (_Standard_, _High_, and _Extreme_) and one user-defined level (_Custom_).
+_Защита от трекинга_ имеет три предварительно настроенных уровня защиты конфиденциальности (_Стандартный_, _Высокий_ и _Экстремальный_) и один настраиваемый уровень (_Пользовательский_).
 
-Here are the active features of the pre-configured levels:
+Вот функции, которые по умолчанию включены на разных уровнях защиты:
 
-1. **Standard**
+1. **Стандартный**
 
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
+    a. _Блокировать трекеры_. Эта функция использует _Фильтр счётчиков и систем аналитики_ для защиты от трекеров и инструментов веб-аналитики
 
-   b. _Ask websites not to track you_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+    b. _Просить сайты не отслеживать вас_. Эта функция отправляет сигналы [Global Privacy Control](https://globalprivacycontrol.org/) и [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) на сайты, которые вы посещаете. Она запрашивает веб-приложения отключить отслеживание вашей активности
 
-   c. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending information about its version and modifications to Google domains (including DoubleClick and Google Analytics)
+    c. _Удалять заголовок X-Client-Data_. Эта функция не даёт отправлять информацию о версии и модификации Google Chrome на домены Google (включая DoubleClick и Google Analytics)
 
-2. **High**
+2. **Высокий**
 
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
+    a. _Блокировать трекеры_. Эта функция использует _Фильтр счётчиков и систем аналитики_ для защиты от трекеров и инструментов веб-аналитики
 
-   b. _Remove tracking parameters from URLs_. This feature uses _AdGuard URL Tracking filter_ to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
+    b. _Удалять параметры отслеживания из URL-адресов_. Эта функция использует _Фильтр отслеживания по URL_ для удаления параметров отслеживания, таких как `utm_*` и `fb_ref`, из URL-адресов страниц
 
-   c. _Hide your search queries_. This feature hides queries for websites visited from a search engine
+    c. _Скрывать поисковые запросы_. Эта функция скрывает запросы к сайтам, на которые вы пришли из поисковой системы
 
-   d. _Ask websites not to track you_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+    d. _Просить сайты не отслеживать вас_. Эта функция отправляет сигналы [Global Privacy Control](https://globalprivacycontrol.org/) и [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) на сайты, которые вы посещаете. Она запрашивает веб-приложения отключить отслеживание вашей активности
 
-   е. _Self-destruction of third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes
+    е. _Самоуничтожение сторонних куки_. Эта функция ограничивает время жизни сторонних куки до 180 минут
 
-   :::caution
+    :::caution
 
-   This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. To block only tracking cookies, use the _Standard_ protection level.
+    Эта функция удаляет все сторонние файлы куки после истечения срока их действия. Если вы использовали соцсети или другие сторонние сервисы для входа, эти данные также удалятся. Возможно, вам придётся периодически повторно входить на некоторые сайты или столкнуться с другими проблемами, связанными с файлами куки. Чтобы блокировать только отслеживающие куки, используйте _Стандартный_ уровень защиты.
 
-   :::
+    :::
 
-   f. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
+    f. _Удалять заголовок X-Client-Data_. Эта функция не даёт отправлять информацию о версии и модификации Google Chrome на домены Google (включая DoubleClick и Google Analytics)
 
-3. **Extreme** (formerly known as _Ultimate_)
+3. **Экстремальный**
 
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
+    a. _Блокировать трекеры_. Эта функция использует _Фильтр счётчиков и систем аналитики_, чтобы защитить вас от онлайн-счётчиков и инструментов веб-аналитики
 
-   b. _Remove tracking parameters from URLs_. This feature uses _AdGuard URL Tracking filter_ to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
+    b. _Удалять параметры отслеживания из URL-адресов_. Эта функция использует _Фильтр отслеживания по URL_ для удаления параметров отслеживания, таких как `utm_*` и `fb_ref`, из URL-адресов страниц
 
-   c. _Hide your search queries_. This feature hides queries for websites visited from a search engine
+    c. _Скрывать поисковые запросы_. Эта функция скрывает запросы к сайтам, на которые вы пришли из поисковой системы
 
-   d. _Ask websites not to track you_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+    d. _Просить сайты не отслеживать вас_. Эта функция отправляет сигналы [Global Privacy Control](https://globalprivacycontrol.org/) и [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) на сайты, которые вы посещаете. Она запрашивает веб-приложения отключить отслеживание вашей активности
 
-   е. _Self-destruction of third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes
+    е. _Самоуничтожение сторонних куки_. Эта функция ограничивает время жизни сторонних куки до 180 минут
 
-   :::caution
+    :::caution
 
-   This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. To block only tracking cookies, use the _Standard_ protection level.
+    Эта функция удаляет все сторонние файлы куки после истечения срока их действия. Если вы использовали соцсети или другие сторонние сервисы для входа, эти данные также удалятся. Возможно, вам придётся периодически повторно входить на некоторые сайты или испытывать другие проблемы, связанные с файлами куки. Чтобы блокировать только отслеживающие куки, используйте _Стандартный_ уровень защиты.
 
-   :::
+    :::
 
-   f. _Block WebRTC_. This feature blocks WebRTC, a known vulnerability that can leak your real IP address even if you use a proxy or VPN
+    f. _Блокировать WebRTC_. Эта функция блокирует WebRTC — уязвимость, которая может привести к утечке вашего IP-адреса, даже если вы используете прокси или VPN
 
-   g. _Block Push API_. This feature prevents your browsers from receiving push messages from servers
+    g. _Блокировать Push API_. Эта функция не позволяет вашим браузерам получать push-сообщения от серверов
 
-   h. _Block Location API_. This feature prevents browsers from accessing your GPS data and determining your location
+    h. _Блокировать Location API_. Эта функция не позволяет браузерам получать доступ к вашим данным GPS и определять ваше местоположение
 
-   i. _Hide Referer from third parties_. This feature prevents third parties from knowing which websites you visit. It hides the HTTP header that contains the URL of the initial page and replaces it with a default or custom one that you can set
+    i. _Скрывать Referer от третьих лиц_. Эта функция не позволяет третьим лицам узнать, какие сайты вы посещаете. Она скрывает HTTP-заголовок, содержащий URL-адрес начальной страницы, и заменяет его на стандартный или пользовательский, который вы можете задать
 
-   j. _Hide your User-Agent_. This feature removes identifying information from the User-Agent header, which typically includes the name and version of the browser, the operating system, and language settings
+    j. _Скрыть User-Agent_. Эта функция удаляет из заголовка User-Agent идентифицирующую информацию, которая обычно включает название и версию браузера, операционную систему и языковые настройки
 
-   k. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
+    k. _Удалять заголовок X-Client-Data_. Эта функция не даёт отправлять информацию о версии и модификации Google Chrome на домены Google (включая DoubleClick и Google Analytics)
 
-You can tweak individual settings in _Tracking protection_ and come up with a custom configuration. Every setting has a description that will help you understand its role. [Learn more about what various _Tracking protection_ settings do](/general/stealth-mode) and approach them with caution, as some may interfere with the functionality of websites and browser extensions.
+Эти параметры можно изменить, если выбрать _Пользовательский_ уровень защиты. У каждой настройки есть описание, которое поможет вам понять её роль. [Узнайте больше о том, что делают настройки _Защиты от трекинга_](/general/stealth-mode) и относитесь к ним с осторожностью, поскольку некоторые из них могут мешать работе сайтов и браузерных расширений.

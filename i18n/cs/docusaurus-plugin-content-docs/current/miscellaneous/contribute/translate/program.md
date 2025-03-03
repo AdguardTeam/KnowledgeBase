@@ -3,7 +3,7 @@ title: Překladatelský program AdGuardu
 sidebar_position: 1
 ---
 
-> **Odmítnutí odpovědnosti:** můžete se nás zeptat na cokoli ohledně překladu AdGuardu zasláním e-mailu na adresu [translate@adguard.com](mailto:translate@adguard.com) nebo připojením k naší [diskuzi na Telegramu](https://t.me/joinchat/UVYTLcHbr8JmOGIy).
+Jakékoli dotazy týkající se překladu AdGuardu nám můžete položit zasláním e-mailu na [translate@adguard.com](mailto:translate@adguard.com) nebo se připojit k našemu [elegram chatu](https://t.me/joinchat/UVYTLcHbr8JmOGIy).
 
 Pokud jde o překlady, my v AdGuardu vždy do značné míry spoléháme na dobrovolníky.
 

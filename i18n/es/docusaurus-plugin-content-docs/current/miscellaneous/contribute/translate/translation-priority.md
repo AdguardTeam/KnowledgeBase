@@ -3,13 +3,13 @@ title: Cómo dar prioridad a las traducciones de archivos Crowdin
 sidebar_position: 5
 ---
 
-Hay cinco proyectos principales de AdGuard en Crowdin - [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), y [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
+Hay cinco proyectos principales de AdGuard en Crowdin: [Aplicaciones de AdGuard](https://crowdin.com/project/adguard-applications), [Sitios web de AdGuard](https://crowdin.com/project/adguard-websites), [Base de conocimientos del bloqueador de anuncios AdGuard](https://crowdin.com/project/adguard-knowledge-base), [Base de conocimientos de AdGuard VPN](https://crowdin.com/project/adguard-vpn-knowledge-base) y [Base de conocimientos de AdGuard DNS](https://crowdin.com/project/adguard-knowledge-bases).
 
 No tenemos pautas claras sobre con qué archivos o productos del proyecto *AdGuard Applications* comenzar. Simplemente elige cualquier producto que desees.
 
 Solo hay un par de cosas que queremos mencionar:
 
-- Puedes ver la aplicación solo en aquellos idiomas para los que todas las traducciones se completan en Crowdin;
+- La app solo está disponible para usuarios en aquellos idiomas para los que todas las traducciones se han completado en Crowdin;
 - Recomendamos traducir las descripciones de las tiendas de aplicaciones en segundo lugar, porque sin la traducción de los productos en sí, las descripciones no serán necesarias.
 
 La situación es diferente en el proyecto *AdGuard Websites*. Se pueden agregar idiomas al sitio incluso si no está disponible un conjunto completo de traducciones. Sin embargo, esto depende de qué archivos ya se han traducido. Es por eso que te recomendamos que comiences con los archivos más importantes, que se enumeran a continuación:

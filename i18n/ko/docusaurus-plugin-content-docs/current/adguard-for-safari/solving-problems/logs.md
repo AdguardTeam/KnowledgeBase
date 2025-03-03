@@ -21,10 +21,10 @@ Safari용 AdGuard에서 발생할 수 있는 문제를 분석하고 진단하기
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/safari.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard는 사용자의 개인정보를 보호하기 위해 최선을 다하고 있습니다. 당사는 [개인정보취급방침](https://adguard.com/privacy/safari.html)을 준수하며 사용자에 대한 어떠한 개인 정보도 수집하지 않습니다. 지원팀에 로그를 보내기 전에 파일에 전달하고 싶지 않은 추가 정보가 포함되어 있는지 확인하세요. 이러한 정보가 포함되어 있는 경우, 먼저 삭제하는 것이 좋습니다.
 
 :::
 
-1. Open the [AdGuard for Safari GitHub repo](https://github.com/AdguardTeam/AdGuardForSafari/issues) and click _New issue_.
-2. Send the log file to devteam@adguard.com. Include the time of the bug and attach a link to your issue or its number (it appears as #number next to the title).
-   Alternatively, you can upload the log file to Google Drive and send it to devteam@adguard.com. Add the file link to your GitHub issue.
+1. [Safari용 AdGuard GitHub 리포지토리](https://github.com/AdguardTeam/AdGuardForSafari/issues)를 열고 **New issue**를 클릭합니다.
+2. 로그 파일을 devteam@adguard.com으로 보내세요. 버그가 발생한 시간을 포함하고 문제 링크 또는 번호(제목 옆에 #번호로 표시됨)를 첨부하세요.
+ 또는 로그 파일을 Google 드라이브에 업로드하고 devteam@adguard.com으로 보낼 수 있습니다. GitHub 이슈에 파일 링크를 추가합니다.

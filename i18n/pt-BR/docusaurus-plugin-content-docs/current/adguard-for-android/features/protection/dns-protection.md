@@ -13,7 +13,7 @@ O módulo de proteção DNS pode ser acessado tocando na guia _Proteção_ (segu
 
 :::tip
 
-A proteção DNS funciona de maneira diferente do bloqueio normal de anúncios e rastreadores. [Aprenda mais sobre o assunto e sobre como ela funciona em um artigo dedicado](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
+A proteção DNS funciona de maneira diferente do bloqueio normal de anúncios e rastreadores. Você pode [saber mais sobre o assunto e sobre como ela funciona em um artigo dedicado](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
 
 :::
 
@@ -25,7 +25,7 @@ _Proteção DNS_ permite filtrar solicitações DNS com a ajuda de um servidor D
 
 - Você também pode bloquear e desbloquear domínios criando regras de usuário. Talvez seja necessário consultar nosso artigo sobre [sintaxe da regra de filtragem de DNS](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
 
-![Proteção DNS \*mobile\_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
+![Proteção DNS \*mobile_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
 
 #### Servidor DNS
 

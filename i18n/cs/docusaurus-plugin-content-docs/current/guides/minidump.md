@@ -18,13 +18,13 @@ Možnost vytvoření souboru minidump je ve výchozím nastavení zakázána, ta
 
 ## Nastavení systému Windows pro vytvoření souboru minidump
 
-Even if you don’t experience any BSoD crash errors, you can still set this option — this is a general recommendation, not necessarily related to AdGuard products. Pro automatické vytvoření souboru minidump postupujte podle níže uvedených pokynů.
+I když nedochází k chybám při pádu BSoD, můžete tuto možnost nastavit — jedná se o obecné doporučení, které se nemusí nutně týkat produktů AdGuard. Pro automatické vytvoření souboru minidump postupujte podle níže uvedených pokynů.
 
  1. Do vyhledávacího pole Windows napište *sysdm.cpl* a klikněte na **Otevřít**. Na obrazovce se zobrazí okno **Vlastnosti systému**.
 
     :::tip
 
-    Alternatively, click **Settings** → **System** → **About** → **Advanced system settings**.
+    Případně klikněte na **Nastavení** → **Systém** → **Informace** → **Pokročilá nastavení systému**.
 
 
 :::

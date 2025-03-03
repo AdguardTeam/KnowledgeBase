@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::
 
-![低级设置 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
+![低级设置 \*mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
 
 要打开「低级设置」，请转到「设置」→「常规」→（如果关闭，请启用「高级模式」 ）→「高级设置」→「低级设置」。
 

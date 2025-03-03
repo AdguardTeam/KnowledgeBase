@@ -11,26 +11,40 @@ AdGuard 계정에서 이중 인증 기능을 설정하는 것을 권해드립니
 
 ## 이중 인증 설정 방법
 
-1. [AdGuard 계정](https://auth.adguard.com/login.html)에 로그인하고 설정 탭으로 이동합니다.
+1. [AdGuard 계정](https://auth.adguard.com/login.html)에 로그인하고 *설정* 탭으로 이동합니다.
 
-![AdGuard 계정 설정 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
+ ![AdGuard 계정 설정 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Scroll down to *Password and 2FA* section and click **Enable**:
+1. 아래로 스크롤하여 *2단계 인증*으로 이동하여 활성화합니다.
 
-![변경 버튼 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
+ ![2단계 인증 토글 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. 화면의 설명서에 따라 인증 앱을 설치하고 QR 코드를 스캔합니다.
+1. AdGuard 계정과 연결된 이메일 주소로 코드가 전송됩니다. 2FA를 사용하려면 코드를 입력하고 *활성화*를 클릭합니다.
 
-![인증 코드](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
+ ![인증 코드 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-***중요 정보***
+2단계 인증을 사용 설정한 후에는 두 가지 옵션 중에서 선택할 수 있습니다:
 
-- 인증 백업 코드를 저장하십시오. 휴대폰 분실과 같은 비상시에 인증 코드를 통해 계정을 복구할 수 있습니다.
+- *일회용 이메일 코드*: 로그인할 때 이메일로 전송한 코드를 입력하라는 메시지가 표시됩니다.
 
-모든 작업이 올바르게 완료되면 다음에 계정에 로그인할 때 다음과 같은 내용이 표시됩니다.
+- *인증 앱의 코드*: 로그인할 때 인증 앱에서 코드를 요청합니다.
 
-![결과 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+![2FA 옵션 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 
-모바일 인증 앱을 사용하여 코드를 읽고 입력하세요. 이제 계정에 로그인되었습니다.
+:::note
 
-***참고***: 전화기의 시간이 정확하지 않으면 인증 문제가 발생할 수 있습니다. 시간을 확인하고 필요한 경우 올바른 시간을 설정하세요.
+인증 앱을 사용하면 **설정 키**를 어딘가에 저장해야 합니다. 휴대폰을 분실하거나 도난당한 경우 계정을 복구해야 합니다.
+
+![인증 앱의 설정 키 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
+
+:::
+
+모든 것이 올바르게 완료되면 계정에 로그인할 때 다음 메시지가 표시됩니다.
+
+![결과 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
+
+:::note
+
+전화기의 시간이 정확하지 않으면 인증 문제가 발생할 수 있습니다. 시간을 확인하고 필요한 경우 올바른 시간을 설정하세요.
+
+:::

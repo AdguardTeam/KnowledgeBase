@@ -13,7 +13,7 @@ DNS 보호 모듈은 **보호** 탭(화면 하단의 왼쪽 두 번째 아이콘
 
 :::tip
 
-DNS 보호는 일반 광고 및 추적기 차단과는 다른 방식으로 작동합니다. [DNS 보호 및 작동 방식에 대한 자세한 내용은 전용 문서](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)에서 확인할 수 있습니다.
+DNS 보호는 일반 광고 및 추적기 차단과는 다른 방식으로 작동합니다. [별도의 글을 통해 작동 방식에 대해 자세히 알아볼 수 있습니다.](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
 
 :::
 
@@ -25,7 +25,7 @@ DNS 보호는 일반 광고 및 추적기 차단과는 다른 방식으로 작�
 
 - 사용자 규칙을 만들어 도메인을 차단하고 차단을 해제할 수도 있습니다. [DNS 필터링 규칙 구문에 대한 도움말 문서](https://adguard-dns.io/kb/general/dns-filtering-syntax/)를 참조해야 할 수도 있습니다.
 
-![DNS 보호 \*mobile\_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
+![DNS 보호 \*mobile_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
 
 #### DNS 서버
 

@@ -1,6 +1,6 @@
 ---
-title: Mode furtif
-sidebar_position: 2
+title: Protection contre le suivi (Mode furtif)
+sidebar_position: 3
 ---
 
 :::info

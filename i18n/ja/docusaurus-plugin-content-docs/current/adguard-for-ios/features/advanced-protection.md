@@ -1,26 +1,26 @@
 ---
-title: Advanced protection
+title: 高度な保護機能
 sidebar_position: 3
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for iOS」についてです。 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
-In iOS 15 Apple has added the support for Safari Web Extensions, and we in turn added a new _Advanced protection_ module to AdGuard for iOS. It allows AdGuard to apply advanced filtering rules, such as CSS rules, CSS selectors, and scriptlets, and therefore to deal even with the complex ads, such as YouTube ads.
+iOS 15でAppleはSafari Web Extensionsのサポートを開始したことにより、AdGuard for iOS に新しい「_高度な保護機能_」を追加することができました。 これにより、AdGuard は [CSS ルール](/general/ad-filtering/create-own-filters#cosmetic-css-rules)、[拡張 CSS セレクター](/general/ad-filtering/create-own-filters#extended-css-selectors)、[スクリプトレット（Scriptlets）](/general/ad-filtering/create-own-filters#scriptlets) などの高度なフィルタリングルールを適用して、YouTube 広告のような複雑な広告にも対応できます。
 
-![Advanced protection screen \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
+![Advanced protection screen \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
 
-### How to enable
+### 高度な保護機能を有効にする方法
 
-To enable _Advanced protection_, open the _Protection_ tab by tapping the second left icon at the bottom of the screen, select the _Advanced protection_ module, activate the feature by toggling the switch slider, and follow the on-screen instructions.
+_高度な保護機能_を有効にするには、画面下部の左から2番目の盾アイコンをタップして_AdGuardによる保護_タブを開き、「_高度な保護機能_」を選択し、スイッチをオンにして、画面の指示に沿って進みます。
 
 :::note
 
-The _Advanced protection_ only works on iOS 15 and later versions. If you are using earlier versions of iOS, you will see the _YouTube ad blocking_ module in the app instead of the _Advanced protection_.
+_高度な保護機能_は、iOS 15以降でのみご利用可能です。 それ以前のiOSバージョンをお使いの場合、AdGuardアプリには_高度な保護機能_の代わりに「_YouTubeで広告ブロック_」という機能が表示されます。
 
 :::
 
-![Protection screen on iOS 14 and earlier \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)
+![Protection screen on iOS 14 and earlier \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)

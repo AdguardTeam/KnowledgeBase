@@ -1,146 +1,148 @@
 ---
-title: AdGuard filter policy
+title: Politica de filtrare AdGuard
 sidebar_position: 6
 ---
 
-At AdGuard, we’ve long followed certain principles in making our filters, which, along with filter descriptions, are outlined below as part of our filtering policy.
+La AdGuard, am urmat mult timp anumite principii în realizarea filtrelor noastre, care, împreună cu descrierile filtrelor, sunt detaliate mai jos ca parte a politicii noastre de filtrare.
 
-## Common criteria
+## Criterii comune
 
-These criteria are equally applied to the rules of all filters.
+Aceste criterii se aplică în mod egal regulilor tuturor filtrelor.
 
-- Rules for a specific site will only be added if there is sufficient traffic. Traffic is determined by public statistics (if available) or indirect indicators, such as the number of subscribers on social networks. A site’s traffic is considered sufficient if it reaches 100,000 visits per month. We will consider adding a rule for a site that is not as popular, but the final decision rests with filter developers. Sites with low traffic should still be checked for third-party analytics and advertising networks
-- The decision about content farms (websites that produce large amounts of content primarily aimed at achieving high visibility in search results and generating advertising revenue) is made by filter developers depending on the quality of the content
+- Regulile pentru un site specific vor fi adăugate doar dacă există trafic suficient. Traficul este determinat de statistici publice (dacă sunt disponibile) sau de indicatori indirecți, cum ar fi numărul de abonați pe rețelele sociale. Traficul unui site este considerat suficient dacă atinge 100.000 de vizite pe lună. Vom lua în considerare adăugarea unei reguli pentru un site care nu este atât de popular, dar decizia finală revine dezvoltatorilor de filtre. Site-urile cu trafic scăzut ar trebui să fie verificate totuși pentru analize de terță parte și rețele publicitare
+- Decizia cu privire la fermele de conținut (site-uri care produc cantități mari de conținut destinat în principal obținerii unei vizibilități ridicate în rezultatele căutărilor și generării de venituri din publicitate) este luată de dezvoltatorii de filtre în funcție de calitatea conținutului
 
-Quality requirements for filtering rules:
+Cerințele de calitate pentru regulile de filtrare:
 
-- Rules should not negatively impact the websites in terms of performance
-- Unblocking rules must be as specific as possible to avoid unblocking anything unnecessary
-- JavaScript rules should be used as sparingly as possible and only if blocking ads is impossible without them
+- Regulile nu ar trebui să afecteze negativ site-urile în termeni de performanță
+- Regulile de deblocare trebuie să fie cât mai specifice posibil pentru a evita deblocarea oricărui lucru inutil
+- Regulile JavaScript ar trebui folosite cât mai puțin posibil și doar dacă blocarea reclamelor este imposibilă fără ele
 
 ## Ad blocking filters
 
-### Terminology
+### Terminologie
 
-**Ad blocker** is a software or hardware tool designed to filter, hide, or block advertisements and other elements on web pages. Ad blockers are created to improve user experience, reduce page load times, decrease internet traffic consumption, block ads, enhance privacy while browsing websites and using applications, and block annoying elements.
+**Blocant de reclame** este un instrument software sau hardware destinat filtrării, ascunderii sau blocării reclamelor și altor elemente de pe paginile web. Blocantele de reclame sunt create pentru a îmbunătăți experiența utilizatorului, a reduce timpii de încărcare a paginilor, a diminua consumul de trafic pe internet, a bloca reclamele, a spori intimitatea în timp ce navighează pe site-uri web și folosește aplicații, și a bloca elemente enervante.
 
-A **filter** (or a **filter list**) is a set of filtering rules designed to filter content and block various types of advertisements and other types of content using ad blockers. These filters usually operate at the level of the web browser, programs, or DNS server.
+Un **filtru** (sau o **listă de filtre**) este un set de reguli de filtrare conceput pentru a filtra conținutul și a bloca diferite tipuri de reclame și alte tipuri de conținut folosind blocante de reclame. Aceste filtre funcționează, de obicei, la nivelul browserului web, programelor sau serverului DNS.
 
-**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so called “adblock walls”). Anti-adblocks may be of different types:
+**Anti-adblock** este o tehnologie utilizată de site-uri sau aplicații pentru a detecta blocarea reclamelor și a reacționa în diferite moduri: urmărire, reinjectare de reclame, încurajarea dezactivării blocantului de reclame (așa-numitele „perete anti-adblock”). Anti-adblockurile pot fi de diferite tipuri:
 
-- Anti-adblock that blocks website content without offering an alternative: to continue using the site, the user must disable the ad blocker on the site
-- “Anti-adblock wall” with alternative options offered, such as purchasing a subscription to continue using the ad blocker
-- Informational messages that do not obligate action: users are asked to disable the ad blocker, but these messages can be closed, allowing users to continue using the site without restrictions
-- Implementing alternative advertising in response to ad blocker usage: sites introduce alternative advertising when ad blockers are detected
-- Paywall: a method of content monetization where content is partially or fully hidden from users, with a message prompting them to purchase a subscription for access
+- Anti-adblock care blochează conținutul site-ului fără a oferi o alternativă: pentru a continua utilizarea site-ului, utilizatorul trebuie să dezactiveze blocantul de reclame pe site
+- „Perete anti-adblock” cu opțiuni alternative oferite, cum ar fi achiziționarea unui abonament pentru a continua utilizarea blocantului de reclame
+- Mesaje informative care nu obligă la acțiune: utilizatorii sunt rugați să dezactiveze blocantul de reclame, dar aceste mesaje pot fi închise, permițând utilizatorilor să continue utilizarea site-ului fără restricții
+- Implementarea publicității alternative ca răspuns la utilizarea blocantului de reclame: site-urile introduc publicitate alternativă atunci când blocantele de reclame sunt detectate
+- Paywall: o metodă de monetizare a conținutului în care conținutul este parțial sau complet ascuns de utilizatori, cu un mesaj care îi îndeamnă să achiziționeze un abonament pentru acces
 
-### Filters
+### Filtre
 
-AdGuard ad-blocking filters include:
+Filtrele de blocare a reclamelor AdGuard includ:
 
-- AdGuard Base filter
+- Filtru de bază AdGuard
 - AdGuard Mobile Ads filter
-- Regional filters divided by language principle — Chinese, Dutch, French, German, Japanese, Russian, Spanish/Portuguese, Turkish, and Ukrainian
+- Filtre regionale împărțite pe principiu de limbă — chineză, olandeză, franceză, germană, japoneză, rusă, spaniolă/portugheză, turcă și ucraineană
+- AdGuard Quick Fixes filter
 
-### The purpose of these filters
+### Scopul acestor filtre
 
-- **Base filter** is designed to block ads on English-language websites and those for which there is no separate filter. It also contains general filtering rules that apply to all sites regardless of language
+- **Filtrul de bază** este conceput pentru a bloca reclamele pe site-uri în limba engleză și pe cele pentru care nu există un filtru separat. It also contains general filtering rules that apply to all sites regardless of language
 - **Mobile Ads filter** blocks advertisements on mobile versions of websites and within mobile apps. There is no segmentation based on language
 - **Regional filters** follow the same policy as the **Base filter**, but limited to websites in certain languages
+- **Quick Fixes filter** used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension.
 
-The goal of ad-blocking filters is to block all types of advertising on websites, applications, and certain devices that can load ads from the Internet:
+Obiectivul filtrelor de blocare a reclamelor este de a bloca toate tipurile de publicitate pe site-uri, aplicații și anumite dispozitive care pot încărca reclame de pe Internet:
 
-- Banners — advertisements displayed as images in various parts of web pages
-- Teasers — text or graphical ads, often animated, designed to intrigue visitors (sensational headlines, attention-grabbing images) and prompt them to click on the banner (clickbait)
-- Text ads — advertising in the form of text, including links
+- Bannere — reclame afișate ca imagini în diferite părți ale paginilor web
+- Teaser-e — reclame textuale sau grafice, adesea animate, concepute pentru a intrigui vizitatorii (titluri senzationaliste, imagini atrăgătoare) și a-i determina să dea click pe banner (clickbait)
+- Reclame textuale — publicitate sub formă de text, inclusiv linkuri
 - Modal adverts — advertising that suddenly appears over the current content in the form of modal windows
-- Popunders — advertising that opens in a separate window under the current one, when clicked anywhere on the page
-- Redirect advertising — mechanisms which automatically redirect users to another site after clicking
-- Ads disguised as site content, which open pages with promoted products or unrelated content upon clicking
-- Video ads — advertisement videos embedded within video content or in separate ad elements on websites and applications
-- Interactive ads — ads with which users can interact (e.g., games and surveys, upon completion of which the advertised item opens)
+- Popunders — publicitate care se deschide într-o fereastră separată sub cea curentă, atunci când se face click oriunde pe pagină
+- Publicitate redirect — mecanisme care redirecționează automat utilizatorii către un alt site după click
+- Reclame mascate ca conținut al site-ului, care deschid pagini cu produse promovate sau conținut nelegat la clic
+- Reclame video — videoclipuri publicitare încorporate în conținutul video sau în elemente de reclame separate pe site-uri web și aplicații
+- Reclame interactive — reclame cu care utilizatorii pot interacționa (de exemplu, jocuri și sondaje, la finalizarea cărora se deschide elementul publicitar)
 - Interstitial ads — full-screen ads on mobile devices that cover the interface of the app or web browser
 - Ads leftovers that occupy large spaces or stand out against the background and attract visitors' attention (except barely discernible or unnoticeable ones)
-- Anti-adblock advertising — alternative advertising displayed on the site when the main one is blocked
+- Publicitate anti-adblock — publicitate alternativă afișată pe site atunci când cea principală este blocată
 - Bait elements that are used by multiple known adblock detection scripts to detect an ad blocker presence for different goals including changing the way ads are shown, fingerprinting, etc.
 - Site’s own advertising, if it has been blocked by general filtering rules (see *Limitations and exceptions*)
 - Anti-adblock scripts that prevent site usage (see *Limitations and exceptions*)
-- Advertising injected by malware, if detailed information about its loading method or steps for reproduction is provided
-- Unwanted mining — scripts that mine cryptocurrency without user consent
+- Publicitate injectată de malware, dacă sunt furnizate informații detaliate despre metoda de încărcare sau pașii pentru reproducere
+- Minerit nedorit — Script-uri care minează criptomonedă fără consimțământul utilizatorului
 
-### Limitations and exceptions
+### Limitări și excepții
 
-- The site’s own advertising should not be deliberately blocked. However, it should not be unblocked if the blocking is caused by general filtering rules
-- Content access measures like paywalls are not blocked
+- Publicitatea proprie a site-ului nu ar trebui să fie blocată intenționat. Cu toate acestea, nu ar trebui să fie deblocată dacă blocarea este cauzată de regulile de filtrare generale
+- Măsurile de acces la conținut, cum ar fi paywalls, nu sunt blocate
 - Anti-adblock walls will be blocked in the following cases:
-    - They aggressively insist on disabling or removing the ad blocker or effectively prevent using the website
-    - They feature incorrect and misleading descriptions of possible consequences of ad blockers’ use
-    - They put visitors at risk of malvertising — when unblocked advertisements come from dubious sources
-- We do not block ad blocker detection messages that satisfy at least one of the following criteria:
-    - They allow the usage of the website and do not overlay the significant amount of content
-    - They provide an alternative to disabling an ad blocker given that this alternative does not put the users’ privacy or security at risk
-    - They allow the user to proceed to the website’s content or offer a feasible value exchange that does not put the user’s privacy or security at risk
-    - Some legacy rules may continue to block messages that satisfy one or more of these criteria. If identified, such rules will be handled according to this policy
-- Mining pools are not blocked if they are public and not used solely for malicious purposes
+    - Ele insistă agresiv pe dezactivarea sau eliminarea blocantului de reclame sau împiedică efectiv utilizarea site-ului
+    - Conțin descrieri incorecte și înșelătoare ale posibilelor consecințe ale utilizării blocantelor de reclame
+    - Expun vizitatorii la riscul de malware — când reclamele deblocate provind din surse dubioase
+- Nu blocăm mesajele de detectare a blocantelor de reclame care respectă cel puțin unul dintre următoarele criterii:
+    - Ele permit utilizarea site-ului și nu suprapun o cantitate semnificativă de conținut
+    - Ele oferă o alternativă la dezactivarea blocantului de reclame, cu condiția ca această alternativă să nu pună în pericol intimitatea sau securitatea utilizatorilor
+    - Ele permit utilizatorului să continue pe conținutul site-ului sau oferă un schimb de valoare fezabil, care nu pune în pericol intimitatea sau securitatea utilizatorului
+    - Unele reguli de moștenire pot continua să blocheze mesaje care respectă unul sau mai multe dintre aceste criterii. Dacă sunt identificate, astfel de reguli vor fi gestionate conform acestei politici
+- Piscinele de minerit nu sunt blocate dacă sunt publice și nu sunt utilizate exclusiv în scopuri dăunătoare
 
 ## Tracking protection filters
 
-### Terminology
+### Terminologie
 
-**Tracking** — the process of monitoring and collecting data about users and their interactions with websites and applications for marketing purposes, as well as to obtain telemetry about the functioning of websites or applications for the purpose of analyzing their operation. This process includes tracking visited pages, time spent, interaction with website elements (e.g., clicks, form submissions), and other metrics. It allows website and application owners to better understand user behavior, optimize functionality, and adapt marketing strategies. Tracking is also used to monitor performance, usage patterns, and identify issues, providing developers with the necessary data to improve the stability and quality of the website or application. Even if the data obtained cannot reveal a person’s identity, such actions are still considered tracking.
+**Tracking** — the process of monitoring and collecting data about users and their interactions with websites and applications for marketing purposes, as well as to obtain telemetry about the functioning of websites or applications for the purpose of analyzing their operation. Acest proces include urmărirea paginilor vizitate, timpul petrecut, interacțiunea cu elementele site-ului (de exemplu, cliuri, trimiterea formularelor) și alte statistici. Permite proprietarilor de site-uri și aplicații să înțeleagă mai bine comportamentul utilizatorilor, să optimizeze funcționalitatea și să adapteze strategiile de marketing. Urmărirea este folosită și pentru a monitoriza performanța, modele de utilizare și a identifica probleme, oferind dezvoltatorilor datele necesare pentru a îmbunătăți stabilitatea și calitatea site-ului sau aplicației. Even if the data obtained cannot reveal a person’s identity, such actions are still considered tracking.
 
-**Tracker** — software used on a website or in an application and designed to collect information about their operation and visitors’ actions. It tracks user interaction with the website or application, recording data about page views, time spent, clicks, form submissions, and other events. Its purpose is to provide website and application owners with a tool for analyzing user behavior, improving the user experience, and optimizing content and advertising.
+**Tracker** — program folosit pe un site web sau într-o aplicație și destinat să colecteze informații despre funcționarea lor și acțiunile vizitatorilor. Urmărește interacțiunea utilizatorului cu site-ul sau aplicația, înregistrând date despre vizualizările paginilor, timpul petrecut, cliuri, trimiterea formularelor și alte evenimente. Its purpose is to provide website and application owners with a tool for analyzing user behavior, improving the user experience, and optimizing content and advertising.
 
-**URL tracking parameter** — a part of the address that is added to links by analytics systems or present in some links on web pages. When a request is made, this URL tracking parameter can be processed by the backend of an analytics system or website, which will extract information from it. For example, URL tracking parameters can transmit information about clicks or advertising campaigns. URL tracking parameters can also be used by fraud protection or bot detection systems.
+**Parametru de urmărire URL** — o parte a adresei care este adăugată la linkuri de sistemele de analiză sau care este prezentă în unele linkuri de pe paginile web. Când se face o solicitare, acest parametru de urmărire URL poate fi procesat de backend-ul unui sistem de analiză sau site web, care va extrage informații din acesta. De exemplu, parametrii de urmărire URL pot transmite informații despre cliuri sau campanii publicitare. URL tracking parameters can also be used by fraud protection or bot detection systems.
 
-**Cookies** — files that websites send to and store on devices. These files contain various information — both necessary for the functioning of the site on the device and used for analytics purposes — unique identifiers used to track visitor activity on the website, advertising parameters, and more.
+**Cookies** — fișiere pe care site-urile le trimit și stochează pe dispozitive. These files contain various information — both necessary for the functioning of the site on the device and used for analytics purposes — unique identifiers used to track visitor activity on the website, advertising parameters, and more.
 
-### Filters
+### Filtre
 
-AdGuard tracking protection filters include:
+Filtrele de protecție împotriva urmăririi AdGuard includ:
 
-- AdGuard Tracking Protection filter
-- AdGuard URL Tracking filter
+- Filtrul AdGuard de protecție de urmărire
+- Filtrul de urmărire URL AdGuard
 
-### The purpose of these filters
+### Scopul acestor filtre
 
-**Tracking Protection filter** is designed to block trackers that collect users’ personal data and to improve users’ privacy.
+**Filtrul de protecție de urmărire** este conceput pentru a bloca trackerele care colectează datele personale ale utilizatorilor și pentru a îmbunătăți intimitatea utilizatorilor.
 
 What it blocks:
 
-- Analytics systems’ scripts
-- Websites’ and applications’ own tracking scripts
+- Scripturile sistemelor de analiză
+- Scripturile de urmărire proprii ale site-urilor și aplicațiilor
 - Masked CNAME trackers
-- Tracking cookies
-- Tracking pixels
-- Tracking APIs of browsers
+- Cookie-uri de urmărire
+- Pixeli de urmărire
+- API-uri de urmărire ale browserelor
 - Detection of the ad blocker for tracking purposes
 - Privacy Sandbox functionality in Google Chrome and its forks used for tracking (Google Topics API, the Protected Audience API)
 
 The **URL Tracking filter** is designed to remove tracking parameters from web addresses
 
-### Limitations and exceptions
+### Limitări și excepții
 
-Tracking protection filters should not block a tracker if blocking would disrupt the correct functioning of the website:
+Filtrele de protecție împotriva urmăririi nu ar trebui să blocheze un tracker dacă blocarea ar perturba funcționarea corectă a site-ului:
 
-- Anti-bots and fraud protection if it interferes with using the site. For example, with PerimeterX or hCaptcha blocking causes problems when the site attempts to verify its visitor with a captcha
-- Error tracking systems like Sentry or Bugsnag are not blocked
+- Anti-boti și protecție împotriva fraudei dacă interferează cu utilizarea site-ului. For example, with PerimeterX or hCaptcha blocking causes problems when the site attempts to verify its visitor with a captcha
+- Sistemele de urmărire a erorilor, cum ar fi Sentry sau Bugsnag, nu sunt blocate
 
-## Annoyance filters
+## Filtrele de enervare
 
-Annoyance filters are designed to improve the usability of websites by blocking elements on pages that are not advertisements but distract from and interfere with site interaction or content consumption — such as various modal windows and interactive forms, cookie consent notifications and requests, mobile app banners, and various widgets.
+Filtrele de enervare sunt concepute pentru a îmbunătăți utilizabilitatea site-urilor prin blocarea elementelor din pagini care nu sunt reclame, dar care distrag și interferează cu interacțiunea pe site sau consumul de conținut — cum ar fi diverse feronerie modale și formulare interactive, notificări și solicitări privind consimțământul pentru cookie-uri, bannerele aplicațiilor mobile și diverse widgeturi.
 
-### Terminology
+### Terminologie
 
-**Cookie notice** — a form that describes the types and use of cookies on a website. A cookie notice appears when a user visits the website, informing the user that the website uses cookies or other tracking technologies to collect and use personal information, and explaining why and with whom the information collected is shared.
+**Notificare pentru cookie-uri** — un formular care descrie tipurile și utilizarea cookie-urilor pe un site web. O notificare pentru cookie-uri apare atunci când un utilizator vizitează site-ul, informând utilizatorul că site-ul utilizează cookie-uri sau alte tehnologii de urmărire pentru a colecta și utiliza informații personale și explicând de ce și cu cine sunt împărtășite informațiile colectate.
 
-**CMP (Consent Management Platform)** — software that helps websites comply with cookie usage rules. CMPs limit cookies usage until user consent is obtained, providing users with the option to accept certain cookies and manage privacy settings.
+**CMP (Platforma de Gestionare a Consimțământului)** — program care ajută site-urile să respecte regulile privind utilizarea cookie-urilor. CMPs limit cookies usage until user consent is obtained, providing users with the option to accept certain cookies and manage privacy settings.
 
 **Widget** — a user interface element that extends the functionality of a website. Web widgets are integrated into web pages and can include interactive elements such as buttons, forms, or banners. They can provide users with access to specific services or content without requiring navigation to other pages.
 
 **Popup** — a window that appears above the current web page. It is intended to display additional information, advertisements, notifications, or data entry forms. Popups usually block the view of the main content of the page and require user action to close, which can be irritating.
 
-### Filters
+### Filtre
 
 For better customization, annoyance filters are divided by their purpose:
 
@@ -151,7 +153,7 @@ For better customization, annoyance filters are divided by their purpose:
 - AdGuard Other Annoyances filter
 - AdGuard Annoyances filter — a combined filter that includes all 5 specialized annoyance filters
 
-### The purpose of these filters
+### Scopul acestor filtre
 
 #### AdGuard Cookie Notices filter
 
@@ -163,7 +165,7 @@ This filter is designed to block both cookie notices and requests from cookie ma
     - Reject (except for functional cookies — depending on the CMP system) — the preferred option, as there is less risk of loading additional analytics tools
     - Accept — this option is used as the last resort if other methods fail. In this case, the site is additionally checked for the use of analytics tools, which are then blocked by the **AdGuard Tracking Protection filter**
 
-**Limitations and exceptions**
+**Limitări și excepții**
 
 In some cases, the decision to add rules is made independently by filter developers; mostly, when the choice made when simulating actions would affect the site’s functionality (for example, history may not work, or user settings may not be saved on such a site).
 
@@ -176,7 +178,7 @@ This is a filter that blocks various popups on web pages that are not necessary 
 - Popups that encourage users to disable ad blocker and violate user’s privacy (at the discretion of the filter developers)
 - Other types of popups that may annoy users (at the discretion of filter developers)
 
-**Limitations and exceptions**
+**Limitări și excepții**
 
 - Push notifications are only blocked on sites where they are not used for practical purposes. For example, in email web clients or tools used for work purposes, such notifications will not be blocked
 - Some popups that do not fall into the categories described above but still interfere with the user’s experience may be also blocked. For example, registration prompts on a site or popups that introduce the site’s features. The decision is made by filter developers
@@ -186,7 +188,7 @@ This is a filter that blocks various popups on web pages that are not necessary 
 
 This is a filter that blocks banners and popups that encourage visitors to install mobile apps.
 
-**Limitations and exceptions**
+**Limitări și excepții**
 
 Banners located in the headers or in the menus of websites are not blocked if they are not animated and do not occupy a significant portion of usable space. If a banner is located in the footer, the decision is made by filter developers case-by-case. Usually, banners in the footer do not stand out against other elements and are not distracting.
 
@@ -202,7 +204,7 @@ This is a filter that blocks various widgets that are not essential for the func
     - Call-back forms
 - Other widgets that do not have a separate category but may visually clutter the page. For example, weather widgets, currency exchange rates, job listings, and donations
 
-**Limitations and exceptions**
+**Limitări și excepții**
 
 This filter doesn’t block:
 
@@ -220,23 +222,23 @@ This filter is designed to block annoying elements that are not included in othe
 - Speed up countdown timers when loading files from websites, if the check is not controlled by the server or is not hindered
 - Apply various rules that may be useful for filter developers. For example, blocking web debugger detection
 
-**Limitations and exceptions**
+**Limitări și excepții**
 
 This filter may contain rules that are not suitable for all users. Sometimes it is recommended to disable this filter. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
 
 ## Social media filters
 
-### Filters
+### Filtre
 
 AdGuard Social Media filters include:
 
 - AdGuard Social Media filter
 
-### The purpose of these filters
+### Scopul acestor filtre
 
 This filter will block social media widgets on third-party websites, such as “Like” and “Share” buttons, group widgets, recommendations, and similar widgets.
 
-### Limitations and exceptions
+### Limitări și excepții
 
 Widgets that are part of the website’s functionality or content, such as comments, embedded posts, polls, as well as social media login widgets, are not blocked. Links to the website’s social media pages are also not blocked.
 
@@ -244,7 +246,7 @@ Widgets that are part of the website’s functionality or content, such as comme
 
 This group contains filters that are not essential for blocking advertisements.
 
-### Terminology
+### Terminologie
 
 **Contextual advertising** is a type of internet advertising where the advertisement is displayed based on the content, selected audience, location, time, or other context of internet pages.
 
@@ -254,22 +256,22 @@ This group contains filters that are not essential for blocking advertisements.
 
 For more details on these types of advertising, refer to the [article on search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
-### Filters
+### Filtre
 
-- Filter unblocking search ads and self-promotion
+- Filtru care deblochează reclamele de căutare și auto-promovare
 - AdGuard DNS filter
 - AdGuard Experimental filter
 
-### The purpose of these filters
+### Scopul acestor filtre
 
-#### Filter unblocking search ads and self-promotion
+#### Filtru care deblochează reclamele de căutare și auto-promovare
 
 This filter unblocks:
 
 - Contextual advertising in search results when using search engines (such as Google, Bing, Yandex, DuckDuckGo)
 - Self-promotion of websites
 
-**Limitations and exceptions**
+**Limitări și excepții**
 
 - Search advertising is unblocked only if it corresponds to the user’s search query, as it is contextual. Otherwise, the advertising remains blocked
 - Self-promotion is unblocked only if it complies with the filter policy. A request for unblocking may be rejected by filter developers
@@ -279,7 +281,7 @@ This filter unblocks:
 
 This filter is used in AdGuard DNS. It is not a replacement for ad-blocking filters.
 
-**Limitations and exceptions**
+**Limitări și excepții**
 
 Same as for ad-blocking filters.
 
@@ -287,7 +289,7 @@ Same as for ad-blocking filters.
 
 This filter is intended for testing and debugging rules that potentially may break websites’ functionality. Rules are added by filter developers when there’s a need to test a particular solution. As the filter is designed for debugging purposes, its limitations are minimal.
 
-**Limitations and exceptions**
+**Limitări și excepții**
 
 - Rules should not intentionally break websites’ functionality
 - Rules should not unblock advertisements or otherwise violate the Policy

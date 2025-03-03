@@ -1,28 +1,60 @@
 ---
-title: Reward system
+title: Sistem de recompense
 sidebar_position: 6
 ---
 
-As any honest and well-performed effort should be rewarded, active translators on Crowdin can request a free AdGuard license key and a VPN subscription.
+Așa cum orice efort onest și bine realizat ar trebui să fie recompensat, traducătorii activi de pe Crowdin pot solicita o licență gratuită AdGuard și un abonament VPN.
 
-To request a **one-year AdGuard license key** or a **one-year AdGuard VPN subscription**, you must translate at least **500** and **2,500** words respectively.
+## Cum funcționează sistemul nostru de recompense
 
-To check your translation progress, open a project you have worked on, click the *Reports* tab and select *My Contribution*. You can sum up the number of words translated in different projects to get a license.
+### Pentru licențele AdGuard
 
-## Here’s how our reward system works
+- For your first one-year Ad Blocker license, you need to translate **1,000 words**.
+- For your second license, you’ll need an **additional 1,500 words** (a total of 2,500 words).
+- Toate licențele ulterioare necesită **încă 2.500** de cuvinte pe licență.
 
-```text
-For the first one-year AdGuard license, you need to translate 500 words.
-For the second license, you need 1,000 words, i.e. 1,500 words altogether.
-All subsequent licenses require an additional 1,500 words per license.
+### Pentru licențele AdGuard VPN
 
-For the first one-year AdGuard VPN subscription, you need to translate 2,500 words.
-All subsequent subscriptions or renewals require an additional 2,500 words per subscription.
+- Prima abonare VPN de un an necesită traducerea a **3.000 de cuvinte**.
+- All subsequent subscriptions or renewals require an **additional 3,000 words** per subscription.
 
-```
+:::note Limite
 
-Just send us a request to [translate@adguard.com](mailto:translate@adguard.com) and you’ll get the license as a token of our gratitude.
+Ca recompensă pentru contribuție, oferim licențe și abonamente valabile pentru un maxim de 5 ani. În cazul Blocantului de reclame, oferim licențe care acoperă până la 5 dispozitive. Nu oferim licențe pe viață.
 
-Besides, the most active translators may receive proofreader status in the future, should they express such an intention, and that promises even more good stuff.
+:::
 
-Every year we present gifts with the AdGuard logo to our active proofreaders. If you want to become one of them, please write to [translate@adguard.com](mailto:translate@adguard.com).
+## How to request your license
+
+Trimiteți un e-mail echipei noastre de traducători la [translate@adguard.com](mailto:translate@adguard.com) cu următoarele informații:
+
+- Numele de utilizator Crowdin
+- Proiectele la care ați contribuit (Site-uri web, Aplicații, Baza de cunoștințe etc.)
+- The email address to which you want to link your license
+- Statistici de traducere (o captură de ecran sau numărul total de cuvinte) și tipul de licență dorită
+
+**Tipul de e-mail:**
+
+> Hi AdGuard team!
+> 
+> I’ve translated more than 5,000 words in AdGuard for Android in (*your language*) — you can find my stats attached. Aș dori să solicit o licență AdGuard VPN și o licență de Blocant de reclame pentru aceasta. My email is (*your email address*). My Crowdin username is (*your username*).
+
+## Cum să verificați progresul traducerii
+
+Deschideți un proiect pe care ați lucrat, faceți clic pe tab-ul *Rapoarte*, selectați *Contribuția mea*, derulați în jos, selectați un interval de date și generați un raport. Va arăta ceva de genul acesta.
+
+![Statistici *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/statistics.png)
+
+Puteți aduna numărul de cuvinte traduse din diferite proiecte pentru a vă califica pentru o licență.
+
+## How to become a proofreader
+
+Cei mai activi traducători ai noștri pot fi considerați pentru statut de corector în viitor. Pentru a deveni corector, va trebui să livrați traduceri de calitate înaltă în mod constant pe parcursul a câteva luni.
+
+Vă rugăm să rețineți că corectorii nu primesc licențe sau beneficii suplimentare în afară de a ajuta mai mulți oameni să acceseze produsele AdGuard în limba lor. Dacă sunteți interesat să deveniți unul dintre corectorii noștri, vă rugăm să ne contactați la [translate@adguard.com](mailto:translate@adguard.com).
+
+## Cadouri pentru contribuitorii activi
+
+Pentru cei mai buni contribuitori, în fiecare an trimitem cadouri cu produse AdGuard și dăm un shout out pe [blogul nostru](https://adguard.com/en/blog/best-contributors-2023.html).
+
+![Produse AdGuard *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

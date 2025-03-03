@@ -1,37 +1,37 @@
 ---
-title: App management
+title: Gestionarea aplicațiilor
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Android, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-The _App management_ module can be accessed by tapping the _App management_ tab (third icon from the left at the bottom of the screen). This section allows you to manage permissions and filtering settings for all apps installed on your device.
+The _App management_ module can be accessed by tapping the _App management_ tab (third icon from the left at the bottom of the screen). Această secțiune vă permite să gestionați permisiunile și setările de filtrare pentru toate aplicațiile instalate pe dispozitivul dvs.
 
-![App management \*mobile\_border](https://cdn.adtidy.org/blog/new/9sakapp_management.png)
+![App management \*mobile_border](https://cdn.adtidy.org/blog/new/9sakapp_management.png)
 
-By tapping an app, you can manage its settings:
+Prin atingerea unei aplicații, puteți gestiona setările acesteia:
 
-- Route its traffic through AdGuard
+- Rutați traficul său prin AdGuard
 - Block ads and trackers in this app (_Filter app content_)
-- Filter its HTTPS traffic (for non-browser apps, it requires [installing AdGuard's CA certificate into the system store](/adguard-for-android/solving-problems/https-certificate-for-rooted/), available on rooted devices)
-- Route it through your specified proxy server or AdGuard VPN in the Integration mode
+- Filtrați traficul său HTTPS (pentru aplicațiile care nu sunt browsere, necesită [instalarea certificatului CA AdGuard în magazinul de sistem](/adguard-for-android/solving-problems/https-certificate-for-rooted/), disponibil pe dispozitivele cu root)
+- Rutați-l prin serverul proxy specificat sau AdGuard VPN în modul Integrare
 
-![App management in Chrome \*mobile\_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![App management in Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
-From the context menu, you can also access the app's stats.
+Din meniul contextual, puteți accesa și statisticile aplicației.
 
-![App management in Chrome. Context menu \*mobile\_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![App management in Chrome. Context menu \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
-### “Problem-free” and “problematic” apps
+### Aplicații „fără probleme” și „problematici”
 
-Most apps work properly when filtering is enabled. For such apps, their traffic is routed through AdGuard and filtered by default.
+Cele mai multe aplicații funcționează corect atunci când sunt filtrate. Pentru astfel de aplicații, traficul lor este rutat prin AdGuard și filtrat implicit.
 
-Some apps, such as Download Manager, radio, system apps with UID 1000 and 1001 (for example, Google Play services), are “problematic” and may work incorrectly when routed through AdGuard. That's why you may see the following warning when trying to route or filter all apps:
+Unele aplicații, cum ar fi Managerul de descărcări, radio, aplicații de sistem cu UID 1000 și 1001 (de exemplu, servicii Google Play), sunt „problematici” și pot funcționa incorect atunci când sunt rutează prin AdGuard. De aceea, puteți vedea următoarea avertizare când încercați să rutezați sau să filtrați toate aplicațiile:
 
-![Route all apps dialog \*mobile\_border](https://cdn.adtidy.org/blog/new/6du8jiroute_all.png)
+![Dialogul rutează toate aplicațiile \*mobile_border](https://cdn.adtidy.org/blog/new/6du8jiroute_all.png)
 
-To ensure proper operation of all apps installed on your device, we strongly recommend that you route only problem-free apps through AdGuard. You can see the full list of apps not recommended for filtering in _Settings_ → _General_ → _Advanced_ → _Low-level settings_ → _Protection_ → _Excluded apps_.
+Pentru a asigura funcționarea corectă a tuturor aplicațiilor instalate pe dispozitivul dvs., vă recomandăm cu tărie să rutați doar aplicațiile fără probleme prin AdGuard. Puteți vedea lista completă a aplicațiilor care nu sunt recomandate pentru filtrare în _Setări_ → _Modul general_ → _Avansat_ → _Setări de nivel inferior_ → _Protecție_ → _Aplicații excluse_.

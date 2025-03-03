@@ -1,6 +1,6 @@
 ---
-title: Modo sigiloso
-sidebar_position: 5
+title: Modo Stealth
+sidebar_position: 6
 ---
 
 :::info

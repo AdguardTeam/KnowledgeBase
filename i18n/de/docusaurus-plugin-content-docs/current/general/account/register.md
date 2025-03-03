@@ -13,7 +13,7 @@ Um ein Konto zu erstellen, öffnen Sie die offizielle Website von [AdGuard](http
 
 :::tip
 
-If you enter your email address when purchasing a license, or receive a license linked to your email address as a gift, an account will be created automatically. Um ein Passwort festzulegen, können Sie einem Link in einer Transaktions- oder Geschenk-E-Mail folgen. Sie können sich auch mit der oben genannten Methode registrieren.
+Wenn Sie beim Kauf einer Lizenz Ihre E-Mail-Adresse angeben oder eine mit Ihrer E-Mail-Adresse verknüpfte Lizenz als Geschenk erhalten, wird automatisch ein Konto erstellt. Um ein Passwort festzulegen, können Sie einem Link in einer Transaktions- oder Geschenk-E-Mail folgen. Sie können sich auch mit der oben genannten Methode registrieren.
 
 :::
 
@@ -21,6 +21,12 @@ Ein Konto kann auch direkt in einer AdGuard-App erstellt werden. Klicken Sie auf
 
 Nachdem das Konto erstellt wurde, aktivieren Sie es, indem Sie dem Link in der Aktivierungs-E-Mail folgen.
 
+:::tip
+
+Nachdem Sie Ihr Konto registriert haben, können Sie sich mit der Option *Einmaliger Code* bei der App anmelden. Geben Sie Ihre E-Mail-Adresse ein und wählen Sie, ob Sie Ihr Passwort oder den an Ihre E-Mail-Adresse gesendeten Code eingeben möchten.
+
+:::
+
 ## So erstellen Sie ein Konto über soziale Netzwerke
 
-Um ein Konto über ein soziales Netzwerk zu erstellen, folgen Sie einfach dem [Link](https://auth.adguard.com/login.html) und melden Sie sich bei Ihrem Konto an. Sobald Sie sich angemeldet haben, überprüfen Sie Ihren Posteingang — Sie erhalten eine Bestätigungs-E-Mail. Legen Sie ein Passwort fest und das war's! Jetzt können Sie alle [Funktionen des AdGuard-Kontos](https://adguard.com/kb/general/account/features/) nutzen.
+Um ein Konto über ein soziales Netzwerk zu erstellen, folgen Sie einfach dem [Link](https://auth.adguard.com/login.html) und melden Sie sich bei Ihrem Konto an. Sobald Sie sich angemeldet haben, prüfen Sie Ihren Posteingang. Sie erhalten eine Bestätigungs-E-Mail. Legen Sie ein Passwort fest und das war's! Jetzt können Sie alle [Funktionen des AdGuard-Kontos](https://adguard.com/kb/general/account/features/) nutzen.

@@ -9,6 +9,10 @@ Bu makale, yalnızca Safari tarayıcınızı koruyan Safari için AdGuard hakkı
 
 :::
 
+## Sistem gereksinimleri
+
+macOS 10.15 (Catalina) gerektirir. The minimum supported version of Safari is 13 or later.
+
 ## Safari için AdGuard nasıl yüklenir {#install}
 
 Safari için AdGuard, App Store'da sunulan ücretsiz bir uygulamadır. Cihazınıza yüklemek için aşağıdakileri yapın.
@@ -32,26 +36,12 @@ Safari için AdGuard, App Store'da sunulan ücretsiz bir uygulamadır. Cihazın�
 
     ![Extensions checked](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 
-1. To make AdGuard take effects on websites, the *Content Blockers* setting must be enabled. You can either enable for all websites or select the ones you want.
+1. AdGuard'ın sitelerde çalışması için Safari'deki <em x-id=“3”>Uzantılar</em> ayarının etkinleştirilmesi gerekir. Safari → *Ayarlar* → *Siteler* → *Uzantılar* öğesini açın. AdGuard'ı her sitede etkinleştirmek istiyorsanız, <em x-id=“3”>Diğer siteler için</em> öğesini <em x-id=“3”>İzin ver</em> olarak ayarlayın.
 
-    :::not
-
-    This step is needed for iOS 9.0 and later, macOS 10.11 with Safari 10, and macOS 10.12 and later.
-
-
-:::
-
-On macOS, click *Preference* → *Websites* → *Content Blockers*. If you want to enable AdGuard on every website, turn *When visiting other websites* to *On*.
-
-![Mac Safari İçerik Engelleyici Ayarı](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
+![Mac Safari İçerik Engelleyici Ayarı](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/macos_extensions.png)
 <!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
-iOS'ta, *Ayarlar* → *Safari* → *İçerik Engelleyiciler* öğesine gidin ve seçeneği *Evet* olarak ayarlayın.
-
-![iOS Safari İçerik Engelleyici Ayarı](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
-<!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
-
-After you complete steps 1-4, AdGuard for Safari will start functioning. You can now configure its settings.
+Bu adımları tamamladıktan sonra, Safari için AdGuard çalışmaya başlar. You can now configure its settings.
 
 ## Safari için AdGuard nasıl kaldırılır {#uninstall}
 

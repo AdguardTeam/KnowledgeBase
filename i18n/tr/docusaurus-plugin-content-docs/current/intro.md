@@ -15,9 +15,9 @@ AdGuard, 15 yılı aşkın deneyimi, çeşitli platformlar için neredeyse onlar
 
 Ancak tüm popüler tarayıcılar için ücretsiz tarayıcı uzantıları da geliştiriyor ve sürdürüyoruz:
 
-- [AdGuard Tarayıcı Uzantısı](/adguard-browser-extension/features/filters)
+- [AdGuard Tarayıcı Uzantısı](/adguard-browser-extension/availability)
 - [Safari için AdGuard](/adguard-for-safari/features/general)
 
 ## Sadece reklam engelleme değil
 
-AdGuard Reklam Engelleyici, reklamları engellemekten daha fazlasını yapar. Sizi çevrimiçi izlemeden korur ve gizliliğinizi birçok yönden geliştirir. Belirli ürüne bağlı olarak AdGuard, daha kapsamlı koruma için DNS filtreleme, çocuklarınızı uygunsuz içerikten korumak için Ebeveyn Denetimi, internet trafiğiniz üzerinde daha iyi kontrol sahibi olmak için Filtreleme günlüğü ve daha fazlası gibi avantajlar da sunabilir. Bu Bilgi tabanı bunların hepsi hakkında ayrıntılı bilgi içerir — ilginizi çeken herhangi bir makaleye atlamaktan çekinmeyin.
+AdGuard Reklam Engelleyici, reklamları engellemekten daha fazlasını yapar. Sizi çevrimiçi izlemeden korur ve gizliliğinizi birçok yönden geliştirir. Belirli ürüne bağlı olarak AdGuard, daha kapsamlı koruma için DNS filtreleme, çocuklarınızı uygunsuz içerikten korumak için Ebeveyn Denetimi, internet trafiğiniz üzerinde daha iyi kontrol sahibi olmak için Filtreleme günlüğü ve daha fazlası gibi avantajlar da sunabilir. This Knowledge Base contains detailed information about any and all of them — feel free to jump to any article that interests you.

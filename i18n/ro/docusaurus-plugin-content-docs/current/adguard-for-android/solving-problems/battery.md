@@ -1,60 +1,60 @@
 ---
-title: Battery and traffic consumption issues
+title: Probleme de consum al bateriei și al traficului
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Android, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-On Android devices running OS 6 and earlier, built-in statistics often attributed high data and/or battery usage to AdGuard. This was because AdGuard counted all the traffic it filtered from various apps. As a result, AdGuard's share of total data and battery usage was overstated, while other apps were understated.
+Datorită proceselor de statistici încorporate, consumul ridicat de date și/sau de baterie era adesea atribuit AdGuard de Android 6 și versiunile anterioare. Acest lucru s-a datorat faptului că AdGuard a numărat tot traficul pe care l-a filtrat din diverse aplicații. Ca rezultat, cota AdGuard din utilizarea totală a datelor și a bateriei a fost exagerată, în timp ce alte aplicații au fost subestimate.
 
-With Android 7, however, this scenario has improved. Now the data reflected in Android's built-in data usage statistics is very close to reality, although there are minor discrepancies in the battery usage data.
+Cu Android 7, totuși, acest scenariu s-a îmbunătățit. Acum, datele reflectate în statisticile de utilizare a datelor încorporate în Android sunt foarte aproape de realitate, deși există discrepanțe minore în datele de utilizare a bateriei.
 
-However, AdGuard users can always get a true picture of the situation on the *Battery usage* screen.
+Cu toate acestea, utilizatorii AdGuard pot obține întotdeauna o imagine clară a situației pe ecranul *Utilizarea bateriei*.
 
-### Own battery usage stats screen
+### Ecranul propriilor statistici de utilizare a bateriei
 
-You can access it by navigating to *Statistics* → *Battery usage*.
+Îl poți accesa navigând la *Statistici* → *Utilizarea bateriei*.
 
-![Battery stats *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
+![Statistici baterie *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
 
-Inside you will find a chart that shows the AdGuard battery resource consumption within the last 24 hours, with an option to get more detailed hour-to-hour data by tapping on the chart. Besides that, there’s also a numeric breakdown of the relevant data and a short technical explanation.
+În interior vei găsi un grafic care arată consumul de resurse al bateriei AdGuard în ultimele 24 de ore, cu o opțiune de a obține date mai detaliate oră de oră atingând graficul. În plus, există o defalcare numerică a datelor relevante și o scurtă explicație tehnică.
 
-### How much battery resource does AdGuard really consume?
+### Cât de multă resursă de baterie consumă de fapt AdGuard?
 
-First, let us lay down a bit of theory and links with necessary data.
+În primul rând, să stabilim câteva teorii și legături cu datele necesare.
 
-1. Android derives traffic consumption judging on so-called Power Profile, which is given by every manufacturer: <https://source.android.com/devices/tech/power/values.html>
+1. Android derivă consumul de trafic pe baza așa-numitului Profil de putere, care este oferit de fiecare fabricant: <https://source.android.com/devices/tech/power/values.html>
 
-1. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: <https://source.android.com/devices/tech/power/values.html>
+1. Partea principală a Profilului de putere este un set de valori în mAh care definesc consumul de baterie pentru fiecare componentă a dispozitivului: <https://source.android.com/devices/tech/power/values.html>
 
-    For example, from the table above:
+    De exemplu, din tabelul de mai sus:
 
-    *wifi.active=* 31mA additional consumption in mAh caused by WiFi data exchange.
+    *wifi.active=* 31mA consum suplimentar în mAh cauzat de schimbul de date WiFi.
 
-    *radio.active=* 100-300mA additional consumption in mAh caused by data exchange over Mobile network.
+    *radio.active=* 100-300mA consum suplimentar în mAh cauzat de schimbul de date în rețeaua mobilă.
 
-    *cpu.active=* 100-200mA additional consumption in mAh caused by CPU load.
+    *cpu.active=* 100-200mA consum suplimentar în mAh cauzat de încărcarea CPU.
 
-1. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating power consumption let's get rid of 'Mobile/Wi-Fi packets' and stick to 'CPU'.
+1. AdGuard în sine aproape că nu consumă trafic, așa că, în scopul evaluării consumului de energie, să renunțăm la 'Pachete Mobile/Wi-Fi' și să ne concentrăm pe 'CPU'.
 
-    Formula to calculate the consumption:
+    Formula pentru a calcula consumul:
 
     > “CPU TIME (ms)” X “cpu.active” / (60 *60* 1000) = “POWER USE mAh”
 
-    Let's put real numbers into this formula.
+    Să introducem numere reale în această formulă.
 
-    Let's take *CPU total* from the second screenshot and convert into milliseconds: 506000
+    Să luăm *CPU total* din a doua captură de ecran și să convertim în milisecunde: 506000
 
-    A coefficient *cpu.active* for 2GHz will be roughly equal to 225mAh
+    Un coeficient *cpu.active* pentru 2GHz va fi aproximativ egal cu 225mAh
 
-    Final result:
+    Rezultatul final:
 
     > 506000 *225 / (60* 60 * 1000) = 31,625mAh
 
-### Conclusion
+### Concluzie
 
-Real consumption is **several times less** than it is shown in Android statistics. Instead of 220mAh it should be somewhere around 31-40mAh. On the other hand, browser's consumption should be not 66mAh, but ~200mAh.
+Consumul real este **de câteva ori mai mic** decât cel arătat în statisticile Android. În loc de 220mAh, ar trebui să fie undeva în jurul valorii de 31-40mAh. Pe de altă parte, consumul browserului nu ar trebui să fie 66mAh, ci ~200mAh.

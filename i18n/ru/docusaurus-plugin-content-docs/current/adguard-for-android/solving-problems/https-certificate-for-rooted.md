@@ -5,7 +5,7 @@ sidebar_position: 14
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -29,7 +29,7 @@ AdGuard для Android может [фильтровать зашифрованн
 
 1. Установите [последнюю версию **модуля adguardcert**](https://github.com/AdguardTeam/adguardcert/releases/latest/).
 
-1. Откройте *Magisk → Модули → Установить из хранилища* и выберите загруженный файл **adguardcert**. AdGuard Personal CA будет перемещён из пользовательского хранилища в системное.
+1. Откройте *Magisk → Модули → Установить из хранилища* и выберите загруженный файл **adguardcert**. Сертификат AdGuard Personal CA будет скопирован в системное хранилище.
 
     ![Откройте модули Magisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
 

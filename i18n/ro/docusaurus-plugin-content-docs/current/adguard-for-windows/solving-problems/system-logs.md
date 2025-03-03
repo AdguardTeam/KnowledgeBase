@@ -1,50 +1,50 @@
 ---
-title: How to collect Windows system logs
+title: Cum să colectați jurnalele sistemului Windows
 sidebar_position: 5
 ---
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multifuncțional care protejează dispozitivul dumneavoastră la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-Data and/or files provided in system logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Datele și/sau fișierele furnizate în jurnalele de sistem sunt procesate în conformitate cu [Politica de confidențialitate AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need Windows system log files. Windows event logs contain records about all errors that occurr with the installed software, including AdGuard. Below is the brief instruction describing the way to get the log files and to send them to our support service if necessary.
+Pentru a analiza și a diagnostica diferite probleme care pot apărea, serviciul de suport AdGuard poate necesita fișierele jurnal ale sistemului Windows. Jurnalele de evenimente Windows conțin înregistrări despre toate erorile care apar cu software-ul instalat, inclusiv AdGuard. Mai jos se află instrucțiunile sumare care descriu modalitatea de a obține fișierele jurnal și de a le trimite serviciului nostru de suport, dacă este necesar.
 
-1. Press *Win + R*
+1. Apăsați *Win + R*
 
-1. In the window that appears type in `eventvwr` and click *OK*:
+1. În fereastra care apare, tastați `eventvwr` și faceți clic pe *OK*:
 
-    ![Run window *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
+    ![Fereastra de rulare *mobil](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
 
-1. Event Viewer window appears as shown in the picture.
+1. Fereastra Event Viewer apare așa cum este prezentată în imagine.
 
-    ![Event viewer *border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
+    ![Vizualizator de evenimente *margine](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
 
-    To save files that we need, do the following:
+    Pentru a salva fișierele de care avem nevoie, faceți următoarele:
 
-    - Open *Application*: *Event Viewer (Local)* → *Windows Logs* → *Application*.
+    - Deschideți *Aplicație*: *Event Viewer (Local)* → *Windows Logs* → *Aplicație*.
 
-    - Right-click *Application* and in the drop-down menu select *Save All Events As...*
+    - Faceți clic dreapta pe *Aplicație* și în meniul derulant selectați *Salvați toate evenimentele ca...*
 
-    - Select a name and where to save, click *Save*. Select *Display information for the following languages*. You need to check the checkbox next to *English*. Click *OK*.
+    - Selectați un nume și unde să salvați, faceți clic pe *Salvați*. Select *Display information for the following languages*. Trebuie să bifați caseta de lângă *Engleză*. Faceți clic pe *OK*.
 
-    - Open *System*: *Event Viewer (Local)* → *Windows Logs* → *System*.
+    - Deschideți *Sistem*: *Event Viewer (Local)* → *Windows Logs* → *Sistem*.
 
-    - Right-click *System* and in the drop-down menu select *Save All Events As...*
+    - Faceți clic dreapta pe *Sistem* și în meniul derulant selectați *Salvați toate evenimentele ca...*
 
-    - Choose a destination folder, enter the name, click *Save*. Select *Display information for the following languages*. You need to tick the box next to *English*. Click *OK*.
+    - Alegeți un folder de destinație, introduceți numele, faceți clic pe *Salvați*. Select *Display information for the following languages*. Trebuie să bifați caseta de lângă *Engleză*. Faceți clic pe *OK*.
 
-Please send the two files that you've recently saved to **support@adguard.com**.
+Vă rugăm să trimiteți cele două fișiere pe care le-ați salvat recent la **support@adguard.com**.
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard se angajează să protejeze intimitatea dumneavoastră. Respectăm strict [Politica confidențialității](https://adguard.com/privacy/windows.html) și nu colectăm informații private despre utilizatori. Înainte de a trimite jurnalele echipei de asistență, vă rugăm să revizuiți fișierul, deoarece acesta poate conține informații suplimentare pe care nu doriți să le împărtășiți. Dacă conține astfel de informații personale, vă recomandăm să le ștergeți mai întâi.
 
 :::

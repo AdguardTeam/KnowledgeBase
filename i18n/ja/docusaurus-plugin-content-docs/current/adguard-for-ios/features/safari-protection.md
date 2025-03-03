@@ -1,54 +1,54 @@
 ---
-title: Safari protection
+title: Safariでブロック
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for iOS」についてです。 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
-### Content blockers {#content-blockers}
+### コンテンツブロッカー
 
-Content blockers serve as 'containers' for filtering rules that do the actual job of blocking ads and tracking. AdGuard for iOS contains six content blockers: General, Privacy, Social, Security, Custom, and Other. Previously Apple only allowed each content blocker to contain a maximum of 50K filtering rules, but with iOS 15 release the upper limit has moved to 150K rules.
+コンテンツブロッカーは、広告やトラッキングをブロックするフィルタリングルールの「コンテナ」として機能します。 AdGuard for iOS には、「一般」「プライバシー」「ソーシャル」「セキュリティ」「カスタム」「その他」という6つのコンテンツ ブロッカーが含まれています。 以前、アップルは一つのコンテンツブロッカーに最大5万のフィルタリングルールしか許可していなかったが、iOS 15でその上限は15万ルールに変更されました。
 
-All content blockers, their statuses, which thematic filters they currently include, and a total number of used filtering rules can be found on the respective screen in _Advanced settings_ (tap the gear icon at the bottom right → _General_ → _Advanced settings_ → _Content blockers_).
+全コンテンツブロッカーの一覧、そのステータス、現在含まれている専用フィルタ、使用されているフィルタリングルールの総数は、AdGuardアプリ内の_詳細設定_にある専用画面で確認できます（右下の⚙️アイコン→_一般設定_→_詳細設定_→_コンテンツブロッカー_）。
 
-![Content blockers \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
+![Content blockers \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
 
 :::tip
 
-Keep all content blockers enabled for the best filtering quality.
+ベストなフィルタリング品質を得るには、AdGuardのコンテンツブロッカーを全部有効にしておいてください。
 
 :::
 
-### Filters {#filters}
+### フィルタ
 
-Content blockers' work is based on filters, also sometimes referred to as filter lists. Each filter is a list of filtering rules. If you have an enabled ad blocker when browsing, it constantly checks the visited pages and elements on them against these filtering rules, and blocks anything that matches. Rules are developed to block ads, trackers, and more.
+コンテンツブロッカーの仕事はフィルタというものに基づいております（フィルターリストと呼ばれることもあります）。 各フィルタは、フィルタリングルールのリストである。 ネット閲覧時に広告ブロッカーが有効の場合、広告ブロッカーは訪問したページとそのページ上の要素をフィルタリングルールに照らして常にチェックし、一致するものはすべてブロックしてくれます。 ルールは、広告やトラッカーなどをブロックするように作られています。
 
-All filters are grouped into thematic categories. To see the full list of these categories (not to be confused with content blockers), open the _Protection_ section by tapping the shield icon, then go to _Safari protection_ → _Filters_.
+フィルタは全て、カテゴリ別に分類されています。 これらのカテゴリ（※コンテンツブロッカーの種類と混同しないでくださいね）のフルリストを表示するには、_AdGuardによる保護_（画面下の左から2番目の盾アイコン）セクションを開き、[_Safariでブロック_] → [_フィルタ_] に進みます。
 
-![Filter groups \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
+![Filter groups \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
 
-There are eight of them, each category unites several filters that serve and share a common purpose, i.e. blocking ads, social media widgets, cookie notices, protecting the user from online scams. To decide which filters suit your needs, read their descriptions and navigate by the labels (`ads`, `privacy`, `recommended`, etc.).
+フィルタのカテゴリは8つあり、各カテゴリは、共通の目的（広告ブロック、SNSウィジェット、Cookie使用同意通知、オンライン詐欺からのユーザー保護など）を果たす複数のフィルタを統合しています。 どのフィルターが自分のニーズに合うかを決めるには、その説明を読み、ラベル（`ads`、`privacy`、`recommended`など）を参考にしてください。
 
 :::note
 
-More enabled filters does not guarantee that there will be less ads. A large number of various filters enabled simultaneously reduces the quality of ad blocking.
+フィルタをできるだけ多く有効にすることで、広告がよち減るとは限りません。 むしろ、様々なフィルタが同時に多数有効になっていると、広告ブロックの質が低下することもあります。
 
 :::
 
-Custom filters category is empty by default for users to add there their filters by URL. You can find filters on the Internet or even try to [create one by yourself](/general/ad-filtering/create-own-filters).
+カスタムフィルターカテゴリーはデフォルトでは空になっており、ユーザーがURLでフィルタを追加できるようになっています。 独自のフィルタを追加するには、インターネットでフィルタを見つけたり、[自分でフィルタを作る](/general/ad-filtering/create-own-filters)こともできます。
 
-### User rules {#user-rules}
+### ユーザールール
 
-Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](#assistant). Use this tool to customize Safari filtering without adding an entire filter list.
+ここでは新しいルールを追加できます。手動で入力するか、[SafariのAdGuard手動ブロックツール](#assistant)を使用してください。 このツールは、フィルターリスト全体を追加することなくSafariのフィルタリングをカスタマイズするのに役立ちます。
 
-Learn [how to create your own ad filters](/general/ad-filtering/create-own-filters). But please note that many of them won't work in Safari on iOS.
+[独自の広告フィルタを作成する方法についてはこちら](/general/ad-filtering/create-own-filters)をご覧ください。 フィルタによってはiOSのSafariでは動作しないのでご注意ください。
 
-![User rules screen \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
+![User rules screen \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
-### Allowlist {#allowlist}
+### ホワイトリスト
 
-The third section of the _Safari protection_ screen. If you want to disable ad blocking on a certain website, Allowlist will be of help. It allows you to add domains and subdomains to exclusions. AdGuard for iOS has an Import/Export feature, so the allowlist from one device can be easily transferred to another.
+_Safariでブロック_画面の3番目のセクションです。 ホワイトリストは、特定のウェブサイトで広告ブロックをオフにしたい場合のための機能（いわゆる「大丈夫リスト」）です。 ドメインやサブドメインを除外対象に追加できます。 また、AdGuard for iOS にはインポート・エクスポート機能があるため、あるデバイスのホワイリストを別のデバイスに簡単に転送することもできます。

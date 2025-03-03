@@ -1,38 +1,38 @@
 ---
-title: How to collect debug logs
+title: Cum să colectezi jurnalele de depanare
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Android, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Datele și/sau fișierele furnizate în jurnale sunt procesate în conformitate cu [Politica de confidențialitate a AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-In this article, we'll guide you through the process of collecting debug logs, an essential troubleshooting step for solving complex issues that may potentially arise. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
+In this article, we'll guide you through the process of collecting debug logs, an essential troubleshooting step for solving complex issues that may potentially arise. Jurnalele de depanare oferă o perspectivă detaliată asupra funcționării interne a AdGuard pentru Android. Dacă echipa de asistență a AdGuard îți cere să oferi jurnale de depanare, urmează aceste instrucțiuni.
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard se angajează să protejeze intimitatea dumneavoastră. Urmărim strict [Politica confidențialității](https://adguard.com/privacy/android.html) și nu colectăm informații private despre utilizatori. Înainte de a trimite jurnalele echipei de asistență, vă rugăm să revizuiți fișierul, deoarece acesta poate conține informații suplimentare pe care nu doriți să le împărtășiți. Dacă conține astfel de informații personale, vă recomandăm să le ștergeți mai întâi.
 
 :::
 
-### Collecting debug log
+### Înregistrarea jurnalului de depanare
 
-To collect **debug** log and send it to us you need to perform following steps:
+To collect **debug** log and send it to us, you need to perform following steps:
 
 1. Go to *Settings* → *General* → *Advanced*.
 1. Tap *Logging level* and set it to *Debug*.
-1. Reproduce the problem and try to remember the exact time it occurred.
-1. Wait a while, then return to *Settings* and choose the *Support* tab. Tap *Report a bug* and complete the required fields. Don't forget to check the *Send app logs and system info* checkbox. Finally tap *Send*.
+1. Reproduce problema și încearcă să îți amintești momentul exact în care a apărut.
+1. Wait a while, then return to *Settings* and choose the *Support* tab. Atinge *Raportează o eroare* și completează câmpurile necesare. Nu uita să verifici caseta de bifat *Trimite jurnalele aplicației și informații despre sistem*. În cele din urmă, atinge *Trimite*.
 
-If you're interested in following the resolution of your issue and engaging in a dialogue with the developers, we recommend that you take the following steps after completing the first three:
+Dacă ești interesat să urmezi rezolvarea problemei tale și să te implici într-un dialog cu dezvoltatorii, îți recomandăm să urmezi pașii următori după ce ai completat primii trei:
 
-1. Wait a while, then return to the *Advanced* screen and export logs via *Export logs and system info*. Then report a bug on GitHub by following these [instructions](/guides/report-bugs.md).
-1. After creating an issue on GitHub, send the log file to devteam@adguard.com. Include the time of the bug and attach a link to your issue or its number (it appears as #number next to the title). Alternatively, you can upload the log file to Google Drive and send it to devteam@adguard.com. Add the file link to your GitHub issue
+1. Așteaptă puțin, apoi revino la ecranul *Avansat* și exportă jurnalele prin *Exportă jurnalele și informațiile despre sistem*. Apoi raportează o eroare pe GitHub urmând aceste [instrucțiuni](/guides/report-bugs.md).
+1. După ce ai creat o problemă pe GitHub, trimite fișierul jurnal la devteam@adguard.com. Include ora erorii și atașează un link la problema ta sau numărul acesteia (apare ca #number lângă titlu). Alternativ, poți încărca fișierul jurnal pe Google Drive și trimite-l la devteam@adguard.com. Adaugă linkul fișierului la problema ta de pe GitHub

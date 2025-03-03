@@ -1,6 +1,6 @@
 ---
 title: Gizlilik Modu
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info
@@ -9,7 +9,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-## Advanced privacy protection
+## Gelişmiş gizlilik koruması
 
 ![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/stealth.png)
 

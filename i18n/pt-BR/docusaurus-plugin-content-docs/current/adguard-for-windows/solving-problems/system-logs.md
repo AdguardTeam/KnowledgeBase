@@ -1,5 +1,5 @@
 ---
-title: Como coletar logs do sistema Windows
+title: Como coletar logs do sistema no Windows
 sidebar_position: 5
 ---
 

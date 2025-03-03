@@ -13,13 +13,13 @@ sidebar_position: 1
 
 이 기능은 기기에 설치된 특정 앱과 기기 일반에 대한 인터넷 액세스를 관리하는 데 도움이 됩니다.
 
-![방화벽 \*mobile\_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
+![방화벽 \*mobile_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
 ### 글로벌 방화벽 규칙
 
 이 섹션에서는 전체 기기에 대한 인터넷 액세스를 제어할 수 있습니다.
 
-![글로벌 방화벽 규칙 \*mobile\_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
+![글로벌 방화벽 규칙 \*mobile_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
 
 이러한 규칙은 사용자 정의 규칙을 설정하지 않은 경우 기기의 모든 앱에 적용됩니다.
 
@@ -29,24 +29,24 @@ sidebar_position: 1
 
 1. **사용자 정의 방화벽 규칙**을 엽니다. **사용자 정의 규칙이 있는 앱** 아래에서 **앱 추가**를 탭합니다.
 
-   ![사용자 정의 방화벽 규칙 \*mobile\_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+    ![사용자 정의 방화벽 규칙 \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
 2. 개별 규칙을 설정할 앱을 선택합니다.
 
-   ![사용자 정의 방화벽 규칙에 앱 추가 \*mobile\_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+    ![사용자 정의 방화벽 규칙에 앱 추가 \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
 3. **사용 가능한 사용자 정의 규칙**에서 설정하려는 규칙을 선택하고 '+' 아이콘을 탭합니다. 이제 규칙이 **적용한 사용자 정의 규칙**에 표시됩니다.
 
-   ![규칙 추가됨 \*mobile\_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+    ![규칙 추가됨 \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
 4. 특정 유형의 연결을 차단해야 하는 경우 스위치를 왼쪽으로 옮깁니다. 허용하려면 스위치를 활성화한 상태로 두세요. **사용자 정의 규칙이 글로벌 규칙보다 우선합니다**. **글로벌 방화벽 규칙**에서 변경한 사항은 이 앱에 영향을 미치지 않습니다.
 
 **사용자 정의 규칙**에서 규칙 또는 앱을 삭제하려면 왼쪽으로 스와이프합니다.
 
-### Notifications
+### 알림
 
-If enabled, this feature notifies you when an app tries to break one of the Firewall rules set for that app (for example, to access mobile data when it shouldn’t). You can turn notifications on and off for all apps or for each app separately.
+이 기능을 활성화했을 경우, 어떤 앱이 해당되는 방화벽 규칙을 위반하려 할 때(예: 차단된 모바일 데이터에 접근하려고 시도) 알려줍니다. 모든 앱 또는 각각의 앱에 대한 알림을 별도로 켜거나 끌 수 있습니다.
 
-Tap the notification to access the app’s Firewall settings, or temporary disable all Firewall rules for that app by tapping the corresponding button in the notification. You can also mute all Firewall notifications for the app by tapping the _Mute_ button in the notification for that app.
+앱의 방화벽 설정에 접근하시려면 알림을 누르세요. 알림에서 해당 버튼을 누르면 특정 앱에 대한 모든 방화벽 규칙을 일시적으로 비활성화할 수 있습니다. 또한, 알림에서 **음소거** 버튼을 눌러 특정 앱에 대한 모든 방화벽 알림을 음소거할 수도 있습니다.
 
-Note that if notifications for multiple apps would be displayed, they will be bundled into a single notification instead.
+여러 앱들에 대한 알림이 표시되는 경우, 하나의 알림으로 묶여서 표시된다는 점에 유의하세요.

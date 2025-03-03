@@ -29,7 +29,7 @@ Dans l'implémentation native, le DNS est géré par le système et non par l'ap
 
 La section suivante que vous verrez sur l'écran Protection DNS est le serveur DNS. Il affiche le serveur DNS actuellement sélectionné et le type de cryptage. Pour modifier l'un ou l'autre, appuyez sur le bouton pour accéder à l'écran du serveur DNS.
 
-![Serveurs DNS \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
+![Serveurs DNS \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
 
 Les serveurs diffèrent par leur vitesse, le protocole utilisé, leur fiabilité, leur politique de journalisation, etc. Par défaut, AdGuard proposera plusieurs serveurs DNS parmi les plus populaires (dont AdGuard DNS). Appuyez sur n'importe quel bouton pour modifier le type de cryptage (si cette option est proposée par le propriétaire du serveur) ou pour afficher la page d'accueil du serveur. Nous avons ajouté des étiquettes telles que « Aucune politique de journalisation », « Blocage des publicités », « Sécurité » pour vous aider à faire un choix.
 
@@ -51,7 +51,7 @@ Pour vérifier si tout est correctement configuré, visitez notre [page de diagn
 
 ### Paramètres réseau {#network-settings}
 
-![Écran des paramètres réseau \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
+![Écran des paramètres réseau \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
 
 Les utilisateurs peuvent également gérer leur sécurité DNS sur l'écran Paramètres réseau. _Filtrer les données mobiles_ et _Filtrer le Wi-Fi_ activent ou désactivent la protection DNS pour les types de réseaux respectifs. Plus bas, sous _Exceptions Wi-Fi_, vous pouvez exclure certains réseaux Wi-Fi de la protection DNS (par exemple, vous pourriez vouloir exclure votre réseau domestique si vous utilisez [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
 
@@ -63,7 +63,7 @@ Comment accéder :
 
 _Protection_ (l'icône de bouclier dans la barre de menu inférieure) → _Protection DNS_ → _Filtrage DNS_
 
-![Écran de filtrage DNS \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
+![Écran de filtrage DNS \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
 #### Filtres DNS {#dns-filters}
 

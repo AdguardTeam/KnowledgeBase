@@ -13,7 +13,7 @@ Este artículo contiene algunos de los errores más comunes que puedes encontrar
 
 ### Error 5: Acceso denegado {#error-5}
 
-Este error ocurre cuando hay algún problema con los permisos. Puede haber varias razones por las que el instalador de AdGuard no tenga los permisos necesarios para finalizar correctamente el proceso de instalación. Puedes intentar los siguientes pasos:
+Este mensaje de error aparece cuando no se han concedido los permisos necesarios. Puede haber varias razones por las que el instalador de AdGuard no tenga los permisos necesarios para finalizar correctamente el proceso de instalación. Puedes intentar los siguientes pasos:
 
 - Desactiva temporalmente tu antivirus. Algunos de ellos pueden interferir con la instalación, dependiendo de su configuración.
 
@@ -23,21 +23,25 @@ Este error ocurre cuando hay algún problema con los permisos. Puede haber varia
 
 ### Error 112: El disco está lleno, Error 1632: Carpeta temporal llena o inaccesible {#error-112}
 
-Estos son dos errores diferentes con soluciones muy similares. Como sugieren sus nombres, el instalador de AdGuard no encontró suficiente espacio en el disco para completar la instalación. Hay varias cosas que puedes intentar para solucionar el problema:
+Estos son dos errores diferentes con soluciones muy similares. Como sugieren sus títulos, el instalador de AdGuard no encontró suficiente espacio en el disco para completar la instalación. Hay varias cosas que puedes intentar para solucionar el problema:
 
 - Desinstale algunos programas o elimina archivos innecesarios de la unidad en la que intentabas instalar AdGuard.
 
-- Descarga, instala y ejecuta [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), un software gratuito de Malwarebytes. Entre otras cosas, limpiará tu sistema de todo tipo de archivos "sobrantes" que quedan después de desinstalar incorrectamente programas. Ayudará a limpiar algo de espacio en disco.
+- Descarga, instala y ejecuta [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), un software gratuito de Malwarebytes. Entre otras cosas, él limpiará tu sistema de todo tipo de archivos "sobrantes" que quedan después de programas desinstalados incorrectamente. Ayudará a limpiar algo de espacio en disco.
 
 - Reinicia tu computadora. A veces, los archivos temporales pueden ocupar una cantidad considerable de espacio en disco, y reiniciar tu PC es la forma más confiable de deshacerse de ellos.
 
 ### Error 1601: no se puede acceder al instalador de Windows {#error-1601}
 
-Se podría decir que este es un subcaso particular del Error 1603. Las posibles soluciones son similares:
+Se podría decir que este es un subcategoría particular del Error 1603. Las posibles soluciones son similares:
 
 - Inicia y vuelve a registrar el servicio Microsoft Installer. Esto puede resultar laborioso.
 
-    1) Presiona *Win + R* e ingresa **services.msc**. 2) Búscalo en la lista y haz doble clic en *Windows Installer*. 3) Presiona el botón *Iniciar* debajo de *Estado del servicio* y presiona *Aceptar*. Si el estado del servicio es **ejecutando**, debes hacer clic en *Detener* primero y luego presionar *Iniciar*. 4) Presiona *Win + R*, ingresa ***msiexec /unregister*** y presiona *Enter*. 5) Presiona *Win + R* nuevamente, ingresa ***msiexec /regserver*** y presiona *Enter*
+    - Presiona *Win + R* e introduce **services.msc**.
+    - Búscalo en la lista y haz doble clic en *Windows Installer*.
+    - Presione el botón *Iniciar* debajo de *Estado del servicio* y presiona *Aceptar*. Si el estado del servicio es **Ejecutando**, debes hacer clic en *Detener* primero y luego presionar *Iniciar*.
+    - Pulsa *Win + R*, introduce ***msiexec /unregister*** y pulsa *Enter*.
+    - Pulsa *Win + R* nuevamente, introduce ***msiexec /regserver*** y pulsa *Enter*
 
 - Reinicia la PC y comienza la instalación nuevamente. A veces eso es suficiente para solucionar el problema.
 
@@ -63,11 +67,23 @@ El error suena más aterrador de lo que realmente es. En realidad, este es un er
 
 - Inicia y vuelve a registrar el servicio Microsoft Installer. Esto puede resultar laborioso.
 
-    1) Presiona *Win + R* e ingresa ***services.msc***. 2) Búscalo en la lista y haz doble clic en *Windows Installer*. 3) Presiona el botón *Iniciar* debajo de *Estado del servicio* y presiona *Aceptar*. Si el estado del servicio es **ejecutando**, debes hacer clic en *Detener* primero y luego presionar *Iniciar*. 4) Presiona *Win + R*, ingresa ***msiexec /unregister*** y presiona *Enter*. 5) Presiona *Win + R* nuevamente, ingresa ***msiexec /regserver*** y presiona *Enter*
+    - Pulsa *Win + R* e introduce ***services.msc***.
+    - Búscalo en la lista y haz doble clic en *Windows Installer*.
+    - Presione el botón *Iniciar* debajo de *Estado del servicio* y presiona *Aceptar*. Si el estado del servicio es **Ejecutando**, debes hacer clic en *Detener* primero y luego presionar *Iniciar*.
+    - Pulsa *Win + R*, introduce ***msiexec /unregister*** y pulsa *Enter*.
+    - Pulsa *Win + R* nuevamente, introduce ***msiexec /regserver*** y pulsa *Enter*
 
 - Adquiere permisos completos en la unidad para la instalación. Es posible que se produzca el error 1603 porque no tienes permisos completos en la ubicación del archivo. Esto tampoco es tan fácil como algunas de las otras soluciones:
 
-    1) Abre *Explorador de archivos*, haz clic con el botón derecho en la unidad que contiene la ubicación de instalación y selecciona *Propiedades*. 2) Ve a la pestaña *Seguridad* y haz clic en *Editar*. 3) Haz clic en *SISTEMA* y asegúrate de que la casilla *Permitir* de cada elemento en *Permisos para SISTEMA* esté marcada (si es posible). Haz la misma verificación para *Administradores*. 4) Haz clic en *Aceptar* para volver al cuadro de diálogo *Propiedades*. Luego haz clic en *Avanzado*. 5) Haz clic en *Cambiar permisos*. 6) En la pestaña *Permisos*, haz doble clic en *Administradores*. 7) Selecciona *Esta carpeta, subcarpetas y archivos* para el campo *Se aplica a* y marca todos los *Permisos básicos* disponibles. Luego, presiona *OK*. 8) Haz la misma operación del punto 7 para *SISTEMA*. 9) Haz clic en *OK* hasta el final. Intenta instalar AdGuard de nuevo.
+    - Abre *Explorador de archivos*, haz clic con el botón derecho en la unidad que contiene la ubicación de instalación y selecciona *Propiedades*.
+    - Ve a la pestaña *Seguridad* y haz clic en *Editar*.
+    - Haz clic en *SYSTEM* y asegúrate de que la casilla *Permitir* de cada elemento en *Permisos para SISTEMA* esté marcada (si es posible). Haz la misma verificación para *Administradores*.
+    - Haz clic en *Aceptar* para volver al cuadro de diálogo *Propiedades*. Luego haz clic en *Avanzado*.
+    - Haz clic en *Cambiar permisos*.
+    - En la pestaña *Permisos*, haz doble clic en *Administradores*.
+    - Selecciona *Esta carpeta, subcarpetas y archivos* para el campo *Se aplica a* y marca todos los *Permisos básicos* disponibles. Luego, presiona *OK*.
+    - Haz la misma operación del punto 7 para *SYSTEM*.
+    - Haz clic en *OK* hasta el final. Intenta instalar AdGuard de nuevo.
 
 ### Error 1618: ya hay otra instalación en curso {#error-1618}
 

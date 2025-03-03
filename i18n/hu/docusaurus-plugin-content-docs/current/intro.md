@@ -15,9 +15,9 @@ Az AdGuard az egyik vezető a hirdetésblokkoló szoftverpiacon 15 éves tapaszt
 
 De ingyenes böngészőbővítményeket is fejlesztünk és tartunk fenn minden népszerű böngészőhöz:
 
-- [AdGuard Böngészőkiegészítő](/adguard-browser-extension/features/filters)
+- [AdGuard Böngészőkiegészítő](/adguard-browser-extension/availability)
 - [AdGuard for Safari](/adguard-for-safari/features/general)
 
 ## Nem csak reklámblokkolás
 
-Az AdGuard Ad Blocker nem csak a hirdetéseket blokkolja. Megvédi Önt az online nyomon követéstől, és számos módon javítja a magánéletét. Az adott terméktől függően az AdGuard olyan előnyöket is kínálhat, mint a DNS-szűrés a kerekebb védelem érdekében, a szülői felügyelet, amely megvédi a gyerekeket a nem megfelelő tartalomtól, a szűrési napló az internetes forgalom jobb ellenőrzése érdekében és még sok más. Ez a tudásbázis részletes információkat tartalmaz mindegyikről - nyugodtan ugorjon bármelyik cikkre, amelyik érdekli.
+Az AdGuard Ad Blocker nem csak a hirdetéseket blokkolja. Megvédi Önt az online nyomon követéstől, és számos módon javítja a magánéletét. Az adott terméktől függően az AdGuard olyan előnyöket is kínálhat, mint a DNS-szűrés a kerekebb védelem érdekében, a szülői felügyelet, amely megvédi a gyerekeket a nem megfelelő tartalomtól, a szűrési napló az internetes forgalom jobb ellenőrzése érdekében és még sok más. This Knowledge Base contains detailed information about any and all of them — feel free to jump to any article that interests you.

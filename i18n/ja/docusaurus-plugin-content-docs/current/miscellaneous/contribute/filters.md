@@ -13,7 +13,7 @@ sidebar_position: 4
 
 ブロックフィルターを扱うには、ある程度のスキルと知識が必要です。 もし、スキルをお持ちで、ルールの作り方をご存知でしたら、[GitHubの「AdGuard Filters」リポジトリ](https://github.com/AdguardTeam/AdguardFilters) に直接アクセスしてください。 そこには、広告の見逃しや誤検出など、それぞれのウェブサイトでの問題に対する多くのopen issueがあります。 好きなissueを選んで、コメントで独自のルールを提案してください。 AdGuardフィルターエンジニアがご提案を確認し、適切と判断した場合、ご指摘のルールはAdGuardのフィルターに追加されます。
 
-If you are not yet familiar with our filtering rule syntax, or maybe need a refresher, you'll find the basics about the syntax [in our Knowledge base](/general/ad-filtering/create-own-filters).
+If you are not yet familiar with our filtering rule syntax, or maybe need a refresher, you'll find the basics about the syntax [in our Knowledge Base](/general/ad-filtering/create-own-filters).
 
 ### 報酬 {#rewards}
 

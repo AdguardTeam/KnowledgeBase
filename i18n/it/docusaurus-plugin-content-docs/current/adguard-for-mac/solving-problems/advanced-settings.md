@@ -21,7 +21,7 @@ Per trovare le *Impostazioni Avanzate*, apri AdGuard, clicca sull'icona dell'ing
 
 ## Impostazioni Avanzate
 
-### Network settings
+### Impostazioni di rete
 
 #### `network.extension.exclude.domains`
 
@@ -71,7 +71,7 @@ Tempo, in secondi, prima dell'invio di un'altra richiesta keepalive verso un pee
 
 #### `network.https.ech.enabled`
 
-Utilizza un proxy DNS locale per cercare le configurazioni nella lista di configurazioni ECH. Se trovata, cripta ClientHellos.
+Utilizza un proxy DNS locale per cercare le configurazioni nella lista di configurazioni ECH. Se trovata, cripta Client Hello.
 
 #### `network.https.enforce.certificate.transparency`
 
@@ -89,7 +89,7 @@ Impostando `true`, abiliti il filtraggio della rete locale.
 
 Impostando `true`, abiliti il filtraggio LoopBack.
 
-### DNS settings
+### Impostazioni DNS
 
 #### `dns.proxy.bootstrap.ips`
 
@@ -159,7 +159,13 @@ Abilita HTTP/3 per gli upstream DNS-over-HTTPS per velocizzare la connessione.
 
 Rimuove i parametri Encrypted Client Hello dalle risposte.
 
-### Stealth Mode settings
+#### `dns.proxy.private.relay.sequoia.workaround.abilitato`
+
+Blocca i domini di macOS Private Relay se l'utente ha un Firewall abilitato, il che disattiva a sua volta la funzionalità *Private Relay*.
+
+Abilitare questa impostazione è utile nel seguente scenario: quando il Relay Privato di macOS è attivo, il filtraggio non può funzionare correttamente e deve essere disattivato. Nelle versioni di macOS fino alla 14, AdGuard poteva disattivare Private Relay automaticamente se la protezione era abilitata. Tuttavia, a partire da macOS 15, non è più possibile se un firewall è attivo. Attivando questa impostazione, puoi disattivare il Private Relay anche quando il Firewall è abilitato, superando la limitazione precedente.
+
+### Impostazioni della modalità invisibile
 
 #### `stealth.antidpi.http.split.fragment.size`
 
@@ -177,7 +183,7 @@ Aggiunge spazio extra tra il metodo HTTP e l'URL e rimuove lo spazio dopo il cam
 
 Qui puoi specificare il ritardo, in millisecondi, dall'invio del primo frammento, se la frammentazione è eseguita.
 
-### Subscription link interception settings (userscripts and filters)
+### Impostazioni d'intercettazione dei link dell'abbonamento (userscript e filtri)
 
 #### `subscription.link.interception.userscript`
 

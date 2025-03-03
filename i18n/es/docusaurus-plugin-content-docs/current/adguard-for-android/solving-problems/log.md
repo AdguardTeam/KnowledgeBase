@@ -1,38 +1,38 @@
 ---
-title: How to collect debug logs
+title: Cómo recopilar registros de depuración
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Los datos y/o archivos proporcionados en los registros se procesan de acuerdo con [la Política de privacidad de AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-En este artículo, te guiaremos a través del proceso de recopilación de registros de depuración, un paso de solución de problemas esencial para resolver problemas complejos que puedan surgir. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
+En este artículo, te guiaremos a través del proceso de recopilación de registros de depuración, un paso de solución de problemas esencial para resolver problemas complejos que puedan surgir. Los registros de depuración brindan información detallada sobre el funcionamiento interno de AdGuard para Android. Si el equipo de soporte de AdGuard te solicita que proporcione registros de depuración, simplemente sigue estas instrucciones.
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard se compromete a proteger tu privacidad. Seguimos estrictamente nuestra [Política de Privacidad](https://adguard.com/privacy/android.html) y no recopilamos ninguna información privada sobre los usuarios. Antes de enviar tus registros al equipo de soporte, revisa el archivo, ya que puede contener información adicional que no deseas compartir. Si contiene información personal, te recomendamos que la elimines primero.
 
 :::
 
-### Collecting debug log
+### Grabación del registro de depuración
 
-To collect **debug** log and send it to us you need to perform following steps:
+Para recopilar el registro de ** depuración** y enviárnoslo, debes realizar los siguientes pasos:
 
-1. Go to *Settings* → *General* → *Advanced*.
-1. Tap *Logging level* and set it to *Debug*.
-1. Reproduce the problem and try to remember the exact time it occurred.
-1. Wait a while, then return to *Settings* and choose the *Support* tab. Tap *Report a bug* and complete the required fields. Don't forget to check the *Send app logs and system info* checkbox. Finally tap *Send*.
+1. Ve a *Configuración* → *General* → *Avanzado*.
+1. Toca *Nivel de registro* y configúralo en *Depuración*.
+1. Reproduzca el problema e intenta recordar la hora exacta en que ocurrió.
+1. Espera un momento, luego regresa a *Configuración* y elige la pestaña *Soporte*. Toca *Informar un error* y completa los campos obligatorios. No olvides marcar la casilla de verificación *Enviar registros de aplicaciones e información del sistema*. Finalmente, toca *Enviar*.
 
-If you're interested in following the resolution of your issue and engaging in a dialogue with the developers, we recommend that you take the following steps after completing the first three:
+Si estás interesado en seguir la resolución de tu problema y iniciar un diálogo con los desarrolladores, te recomendamos que sigas los siguientes pasos después de completar los primeros tres:
 
-1. Wait a while, then return to the *Advanced* screen and export logs via *Export logs and system info*. Then report a bug on GitHub by following these [instructions](/guides/report-bugs.md).
-1. After creating an issue on GitHub, send the log file to devteam@adguard.com. Include the time of the bug and attach a link to your issue or its number (it appears as #number next to the title). Alternatively, you can upload the log file to Google Drive and send it to devteam@adguard.com. Add the file link to your GitHub issue
+1. Espera un momento, luego regresa a la pantalla *Avanzado* y exporte registros a través de *Exportar registros e información del sistema*. Luego, informa un error en GitHub siguiendo estas [instrucciones](/guides/report-bugs.md).
+1. Después de crear un problema en GitHub, envía el archivo de registro a devteam@adguard.com. Incluye la hora del error y adjunta un enlace a tu issue o su número (aparece como #número junto al título). Alternativamente, puedes transferir el archivo de registro en Google Drive y enviarlo a devteam@adguard.com. Agrega el enlace del archivo a tu problema de GitHub

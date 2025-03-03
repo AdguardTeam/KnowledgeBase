@@ -1,6 +1,6 @@
 ---
-title: Modo sigiloso
-sidebar_position: 2
+title: Protección de rastreo (Modo sigiloso)
+sidebar_position: 3
 ---
 
 :::info

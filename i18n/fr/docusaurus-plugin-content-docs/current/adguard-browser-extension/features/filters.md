@@ -1,6 +1,6 @@
 ---
 title: Filtres
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 :::info
@@ -15,25 +15,25 @@ Bloquer les publicités est la fonctionnalité clé de tout bloqueur de publicit
 
 Tous les filtres sont regroupés en fonction de leur rôle. Par exemple, il existe des catégories pour les filtres de blocage de publicités, les filtres de protection de la vie privée, les filtres liés aux médias sociaux, etc. Vous pouvez activer soit des filtres individuels, soit l'ensemble du groupe à la fois.
 
-![Ad blocking filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
+![Filtres anti-publicitaires \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
 
 ## Filtres personnalisés
 
-Alors que les fonctionnalités des autres groupes de filtres sont plus ou moins prévisibles, il y existe un groupe appelé _Personnalisé_ qui peut soulever des questions supplémentaires.
+Alors que les fonctionnalités des autres groupes de filtres sont plus ou moins explicites, il y existe un groupe appelé _Personnalisés_ qui peut soulever des questions supplémentaires.
 
-![Custom filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
+![Filtres personnalisés \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
 
 Dans cet onglet, vous pouvez ajouter des filtres qui ne sont pas présents par défaut dans l'extension. Il existe de nombreux [filtres disponibles publiquement sur Internet](https://filterlists.com). De plus, vous pouvez créer et ajouter vos propres filtres. En fait, vous pouvez construire n'importe quel ensemble de filtres et personnaliser le blocage des publicités selon vos préférences.
 
 Pour ajouter un filtre, cliquez simplement sur _Ajouter un filtre personnalisé_, saisissez l'URL ou le chemin du fichier du filtre que vous souhaitez ajouter, puis cliquez sur _Suivant_.
 
-![Add a custom filter \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
+![Ajouter un filtre personnalisé \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
 ## Règles utilisateur {#user-rules}
 
 Les _règles utilisateur_ sont un autre outil qui vous aide à personnaliser le blocage des publicités.
 
-![User rules \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
+![Règles utilisateur \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
 
 Il existe plusieurs façons d'ajouter de nouvelles règles. Le plus simple est de taper une règle, mais cela nécessite une certaine connaissance de la [syntaxe des règles](/general/ad-filtering/create-own-filters).
 
@@ -47,10 +47,10 @@ Lorsque vous ajoutez un site à la liste autorisée (plus d'informations à ce s
 
 La _liste d'autorisation_ est utilisée pour exclure certains sites web du filtrage. Les règles de blocage ne s'appliquent pas aux sites web figurant sur la liste.
 
-![Allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
+![Liste autorisée \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
 La _liste d'autorisation_ peut également être inversée : vous pouvez débloquer les publicités partout, sauf sur les sites ajoutés à cette liste. Pour faire ça, activez l'option _Inverser la liste blanche_.
 
-![Invert allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
+![Inverser la liste autorisée \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 
 Vous pouvez également importer et exporter des listes d'autorisation existantes. C'est utile, par exemple, si vous souhaitez appliquer les mêmes règles d'autorisation dans chacun de vos navigateurs.

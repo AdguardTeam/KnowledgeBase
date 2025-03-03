@@ -21,7 +21,7 @@ sidebar_position: 9
 
 ## Расширенные настройки
 
-### Network settings
+### Настройки сети
 
 #### `network.extension.exclude.domains`
 
@@ -71,7 +71,7 @@ sidebar_position: 9
 
 #### `network.https.ech.enabled`
 
-Использует локальный DNS-прокси для поиска конфигураций в списках конфигураций ECH. Если такие найдены, шифрует ClientHellos.
+Использует локальный DNS-прокси для поиска конфигураций в списках конфигураций ECH. Если они найдены, шифрует Client Hellos.
 
 #### `network.https.enforce.certificate.transparency`
 
@@ -89,7 +89,7 @@ sidebar_position: 9
 
 Установив значение `true`, вы включите фильтрацию loopback-соединений.
 
-### DNS settings
+### Настройки DNS
 
 #### `dns.proxy.bootstrap.ips`
 
@@ -159,7 +159,13 @@ sidebar_position: 9
 
 Удаляет параметры Encrypted Client Hello из ответов.
 
-### Stealth Mode settings
+#### `dns.proxy.private.relay.sequoia.workaround.enabled`
+
+Блокирует домены Частного узла iCloud (iCloud Private Relay), если у пользователя включён фаервол. Это отключает функцию Частного узла.
+
+Эта настройка полезна, если Частный узел препятствует фильтрации. В версиях macOS до 14 AdGuard мог автоматически отключать Частный узел при включённой защите. Но начиная с macOS 15 это больше невозможно, если у пользователя включён фаервол. Эта настройка помогает исправить проблему.
+
+### Настройки Защиты от трекинга
 
 #### `stealth.antidpi.http.split.fragment.size`
 
@@ -177,7 +183,7 @@ sidebar_position: 9
 
 Здесь можно указать задержку (в миллисекундах) после отправки первого фрагмента, если выполняется фрагментация.
 
-### Subscription link interception settings (userscripts and filters)
+### Настройки перехвата ссылок на подписку (пользовательские скрипты и фильтры)
 
 #### `subscription.link.interception.userscript`
 

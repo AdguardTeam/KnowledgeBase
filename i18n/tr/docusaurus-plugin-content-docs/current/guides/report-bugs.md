@@ -17,7 +17,7 @@ Check if the bug hasn’t been reported before. We advise paying attention to bo
 
 ### How to describe a problem
 
-Try to provide as many details as possible — that'll make it easier for us to reproduce the bug and figure out how to fix it. Here’s what we’re expecting to see in a bug report:
+Try to provide as many details as possible — that'll make it easier for us to reproduce the bug and figure out how to fix it. Here’s what we expect a bug report to include:
 
 - Your app version
 - Your OS version
@@ -26,9 +26,9 @@ Try to provide as many details as possible — that'll make it easier for us to 
 - Whether it recurred and with what frequency
 - Whether you have a VPN or an antivirus software
 
-### How to collect logs
+### Günlükler nasıl toplanır
 
-Read about collecting logs in dedicated articles for each platform.
+Her platform için özel makalelerde günlük toplama hakkında bilgi edinin.
 
 ## How to vote for bug reports or feature requests
 

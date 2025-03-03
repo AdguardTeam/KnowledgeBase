@@ -15,11 +15,11 @@ sidebar_position: 4
 
 このセクションでは、アプリの外観や動作を管理することができます。カラーテーマや言語を変更したり、通知を設定したりすることが可能です。 AdGuardチームがアプリのクラッシュを検出し、ユーザビリティを調査するのを支援したい場合は、「クラッシュを自動報告する」と「技術的情報とインタラクション情報を送信する」をオンにできます。
 
-![General \*mobile\_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
+![General \*mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
 
 「アプリとフィルタのアップデート」では、フィルタの自動更新を設定し、アプリのアップデートチャネルを選択できます。 一般使用向けの安定したバージョンのアップデートを受け取るには「安定版」チャネル、新機能への早期アクセスしたい場合には 「ベータ版」または「Nightly」チャネルを選択してください。
 
-![Updates \*mobile\_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
+![Updates \*mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
 
 ### 詳細設定
 
@@ -27,25 +27,25 @@ sidebar_position: 4
 
 「ウォッチドッグ（Watchdog）」は、AdGuard がシステムによって無効化されるのを防ぎます ([Android のバッテリー節約モードについてもお読みください](/adguard-for-android/solving-problems/background-work/))。 入力した値は、ウォッチドッグチェック間の間隔 (秒単位) になります。
 
-「ログ・レベル」は、アプリの操作に関するどのデータをログに記録するかを定義します。 「デフォルト」レベルでは、アプリはイベントに関するデータを収集します。 「デバッグ」レベルでは、より多くのイベントがログに記録されます。AdGuard チームから問題をより深く理解するために有効にするよう依頼されましたら、これを有効にしてください。 [ログの収集と送信について詳しくはこちら](/adguard-for-android/solving-problems/log/)
+「ログ・レベル」は、アプリの操作に関するどのデータをログに記録するかを定義します。 「デフォルト」レベルでは、アプリはイベントに関するデータを収集します。 「デバッグ」レベルでは、より多くのイベントがログに記録されます。AdGuard チームから問題をより深く理解するために有効にするよう依頼されましたら、これを有効にしてください。 [Read more about collecting and sending logs](/adguard-for-android/solving-problems/log/)
 
-![Advanced \*mobile\_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
+![Advanced \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
 「ローレベル設定」セクションは上級者ユーザー向けです。 [ローレベル設定について詳しくはこちら](/adguard-for-android/solving-problems/log/)
 
-![Low-level settings \*mobile\_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
+![Low-level settings \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
 ## フィルタリング
 
 このセクションでは、HTTPSフィルタリング設定、フィルタ、ユーザースクリプトを管理し、プロキシサーバーを設定することができます。
 
-![Filtering \*mobile\_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
+![Filtering \*mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
 
 ### フィルタ
 
 AdGuard は、フィルタのルールを適用することで、広告、トラッカー（追跡）、迷惑なコンテンツをブロックします。 「AdGuardによる保護」セクションにある機能のほとんどは、[AdGuard フィルタ](/general/ad-filtering/adguard-filters/#adguard-filters) を使って動いています。 例えば、「基本的な保護」を有効にすると、「AdGuard ベースフィルタ」と「AdGuard モバイル広告フィルタ」が自動的にオンになります。 逆もまた同様で、両方のフィルタをオフにすると、「基本的な保護」も無効になります。
 
-![Filters \*mobile\_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
+![Filters \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
 デフォルトで有効になっているフィルタは、AdGuard が普通に動作するのに十分です。 しかし、広告ブロックをカスタマイズしたい場合は、他のAdGuardフィルタやサードパーティのフィルタを使用することができます。 既存のフィルタを追加で有効にするには、フィルタのカテゴリを選択し、必要なフィルタを選んでオンにします。 カスタムフィルタを追加するには、[_カスタムフィルタ_] → [_カスタムフィルターを追加する_] をタップし、フィルタの URL またはファイルパスを入力します。
 
@@ -59,9 +59,9 @@ AdGuard は、フィルタのルールを適用することで、広告、トラ
 
 ### ユーザースクリプト
 
-ユーザースクリプトは、1 つ以上の Web サイトの機能を拡張するミニプログラムです。ユーザースクリプトは JavaScript で書かれています。 ユーザースクリプトをインストールするには、専用のユーザースクリプト・マネージャが必要です。 AdGuard にはこのようなマネージャー機能があるので、そのままURLまたはファイルからユーザースクリプトを追加することができます。
+Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. ユーザースクリプトをインストールするには、専用のユーザースクリプト・マネージャが必要です。 AdGuard にはこのようなマネージャー機能があるので、そのままURLまたはファイルからユーザースクリプトを追加することができます。
 
-![Userscripts \*mobile\_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
+![Userscripts \*mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
 #### AdGuard Extra
 
@@ -133,17 +133,17 @@ AdGuardを、デバイスのすべてのトラフィックをプロキシサー�
 - [フルバージョンの機能](/adguard-for-android/features/free-vs-full)を有効にするためのAdGuardライセンス購入
 - AdGuard アカウントにログインするか、ライセンスキーを入力してライセンスを有効化
 - 7日間の無料試用期間をまだ利用していない場合は、登録して試用期間を有効にする
-- 右上の三点メニュー (⋮) からライセンスステータスを更新する
+- Refresh the license status from the three-dots menu (⋮)
 - AdGuard アカウントを開いてライセンスを管理する
 - ライセンスをリセットする（たとえば、ライセンスの最大デバイス数上限に達し、別のライセンスを適用したい場合などです。）
 
-![License screen \*mobile\_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![License screen \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
 ## サポート
 
 AdGuard for Android に関するご質問やご意見には、このセクションをご利用ください。 サポートにお問い合わせいただく前に、_[よくあるご質問（FAQ）](https://adguard.com/support/adguard_for_android.html)_ またはこのナレッジベースを参照することをお勧めします。
 
-![Support \*mobile\_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
+![Support \*mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
 すり抜け広告を見つけた場合は、「不適切なブロックを報告する」からご報告ください。
 

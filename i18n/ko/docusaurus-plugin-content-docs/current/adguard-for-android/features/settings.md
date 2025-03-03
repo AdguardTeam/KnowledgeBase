@@ -15,11 +15,11 @@ sidebar_position: 4
 
 이 섹션에서는 색상 테마 및 언어를 설정하고 알림 등을 관리할 수 있습니다. AdGuard 팀이 앱 충돌을 감지하고 사용성을 조사하는 데 도움을 주고 싶다면 **충돌 자동 보고** 및 **기술 및 상호 작용 데이터 전송**을 활성화할 수 있습니다.
 
-![일반 \*mobile\_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
+![일반 \*mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
 
 **앱과 필터 업데이트**에서 자동 필터 업데이트를 설정하고 앱 업데이트 채널을 선택할 수 있습니다. 더 안정적인 버전을 사용하려면 **정식 버전**를 선택하고, 새로운 기능을 가장 먼저 사용해보고 싶다면 **베타** 또는 **Nightly**을 선택하세요.
 
-![업데이트 \*mobile\_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
+![업데이트 \*mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
 
 ### 고급 설정
 
@@ -29,23 +29,23 @@ sidebar_position: 4
 
 **로깅 수준**은 앱 성능에 대한 어떤 데이터를 기록할지 정의합니다. 기본적으로 앱은 이벤트에 대한 데이터를 수집합니다. **디버그 로깅 수준**은 더 많은 이벤트를 기록합니다. 문제가 있는 경우, 이 수준은 AdGuard 팀이 문제를 더 잘 이해하는 데 도움이 됩니다. 하지만 리소스를 더 많이 소모하므로 지원팀에서 요청하는 경우에만 활성화하는 것이 좋습니다. [로그 수집 및 전송에 대해 자세히 알아보기](/adguard-for-android/solving-problems/log/)
 
-![고급 \*mobile\_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
+![고급 \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
 **로우 레벨 설정** 섹션은 고급 사용자를 위한 섹션입니다. [로우 레벨 설정에 대해 자세히 알아보기](/adguard-for-android/solving-problems/low-level-settings/)
 
-![로우 레벨 설정 \*mobile\_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
+![로우 레벨 설정 \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
 ## 필터링
 
 이 섹션에서는 HTTPS 필터링 설정, 필터, 유저스크립트를 관리하고 프록시 서버를 설정할 수 있습니다.
 
-![필터링 \*mobile\_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
+![필터링 \*mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
 
 ### 필터
 
 AdGuard는 필터의 규칙을 적용하여 광고, 추적기 및 성가신 광고를 차단합니다. **보호** 섹션의 대부분의 기능은 [AdGuard 필터](/general/ad-filtering/adguard-filters/#adguard-filters)를 기반으로 작동합니다. **기본 보호**를 활성화하면 AdGuard 베이스 필터와 AdGuard 모바일 광고 필터가 자동으로 켜집니다. 두 필터를 모두 끄면 **기본 보호** 기능도 비활성화됩니다.
 
-![필터 \*mobile\_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
+![필터 \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
 기본적으로 활성화된 필터만으로도 AdGuard를 정상적으로 작동할 수 있습니다. 그러나 광고 차단을 맞춤 설정하려면 다른 AdGuard 또는 타사 필터를 사용할 수 있습니다. 이렇게 하려면 카테고리를 선택하고 원하는 필터를 활성화합니다. 사용자 정의 필터를 추가하려면 **사용자 정의 필터** → **사용자 정의 필터 추가**를 탭하고 해당 URL 또는 파일 경로를 입력합니다.
 
@@ -59,9 +59,9 @@ AdGuard는 필터의 규칙을 적용하여 광고, 추적기 및 성가신 광�
 
 ### 유저스크립트
 
-유저스크립트는 하나 이상의 웹사이트의 기능을 확장하는 자바스크립트로 작성된 미니 프로그램입니다. 유저스크립트를 설치하려면 특별한 유저스크립트 관리자가 필요합니다. AdGuard에는 이러한 기능이 있으며 URL 또는 파일에서 유저스크립트를 추가할 수 있습니다.
+유저스크립트는 하나 또는 그 이상의 웹사이트의 기능을 확장하기 위해 JavaScript로 쓰여진 미니 프로그램입니다. 유저스크립트를 설치하려면 특별한 유저스크립트 관리자가 필요합니다. AdGuard에는 이러한 기능이 있으며 URL 또는 파일에서 유저스크립트를 추가할 수 있습니다.
 
-![유저스크립트 \*mobile\_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
+![유저스크립트 \*mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
 #### AdGuard Extra
 
@@ -133,17 +133,17 @@ HTTPS 필터링을 통해 AdGuard는 요청 및 응답의 콘텐츠를 필터링
 - AdGuard 라이선스를 구매하여 [정식 버전의 기능](/adguard-for-android/features/free-vs-full)을 활성화하세요.
 - AdGuard 계정에 로그인하거나 라이선스 키를 입력하여 라이선스를 활성화하세요.
 - 아직 7일 체험판을 사용하지 않았다면 가입하여 활성화하세요.
-- 점 3개 메뉴(:)에서 라이선스 상태를 새로 고칩니다.
+- 점 3개가 있는 메뉴(⋮)에서 라이선스 상태를 새로고침하세요.
 - AdGuard 계정을 열어 라이선스를 관리하세요.
 - 이 라이선스의 기기 제한에 도달하여 다른 라이선스를 적용하려면 라이선스를 초기화하세요.
 
-![라이선스 화면 \*mobile\_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![라이선스 화면 \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
 ## 고객 지원
 
 이 섹션은 Android용 AdGuard에 대한 질문이나 제안 사항이 있는 경우, 도움이 될 것입니다. 지원팀에 문의하기 전에 **[FAQ](https://adguard.com/support/adguard_for_android.html)** 또는 지식창고를 참조하는 것이 좋습니다.
 
-![고객 지원 \*mobile\_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
+![고객 지원 \*mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
 누락된 광고를 발견하면 **잘못된 차단 신고**를 통해 신고해 주세요.
 

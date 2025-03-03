@@ -11,7 +11,7 @@ sidebar_position: 5
 
 ### 助手 {#assistant}
 
-![Safari 助手 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
+![Safari 助手 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
 
 助手是一款工具，可帮助用户从浏览器管理 Safari 中的过滤，而无需切换回应用程序。
 

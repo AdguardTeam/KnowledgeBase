@@ -1,74 +1,74 @@
 ---
-title: Installation
+title: Instalación
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Requisitos del sistema
 
-**OS version:** Android 7.0 or higher
+**Versión del sistema operativo:** Android 7.0 o superior
 
-**RAM:** at least 2 GB
+**RAM:** por lo menos 2 GB
 
-**Free disk space:** 500 MB
+**Espacio libre en disco:** 500 MB
 
-## Installation
+## Instalación
 
-Most Android-based apps are distributed via Google Play; however, AdGuard is not presented there, because Google prohibits distribution of network-level ad blockers via Google Play, i.e. apps that block commercials in other apps. You will find more information about Google restrictive policy [in our blog](https://adguard.com/blog/adguard-google-play-removal.html).
+La mayoría de las apps basadas en Android se distribuyen a través de Google Play; sin embargo, AdGuard no está presente allí, porque Google prohíbe la distribución de bloqueadores de anuncios a nivel de red a través de Google Play, es decir, apps que bloquean comerciales en otras apps. Encontrarás más información sobre la política restrictiva de Google [en nuestro blog](https://adguard.com/blog/adguard-google-play-removal.html).
 
-That’s why you can only install AdGuard for Android manually. To use the app on your mobile device, you will need to do the following.
+Por ello, solo puedes instalar AdGuard para Android manualmente. Para usar la app en tu dispositivo móvil, necesitarás hacer lo siguiente:
 
-1. **Download the app on your device**. Here are a few ways you can do this:
+1. **Descargar la app en tu dispositivo**. A continuación se muestran algunas formas de hacerlo:
 
-    - head over to [our website](https://adguard.com/adguard-android/overview.html) and tap the *Download* button
-    - start the browser and type in the following URL: [https://adguard.com/apk](https://adguard.com/apk)
-    - or scan this QR code:
+    - dirígete a [nuestro sitio web](https://adguard.com/adguard-android/overview.html) y toca el botón *Descargar*
+    - inicia el navegador y escribe la siguiente URL: [https://adguard.com/apk](https://adguard.com/apk)
+    - o escanea este código QR:
 
-    ![QR code *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst-qr-en-1.png)
+    ![Código QR *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst-qr-en-1.png)
 
-1. **Allow installing apps from unknown sources**. Once the file download is complete, tap *Open* in the notification.
+1. **Permitir la instalación de apps de fuentes desconocidas**. Una vez que la descarga del archivo esté completa, toca *Abrir* en la notificación.
 
-    ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_1.png)
+    ![Instalando apps de fuentes desconocidas *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_1.png)
 
-    A popup will appear. Tap *Settings*, navigate to *Install unknown apps*, and grant permission for the browser you've used to download the file.
+    Aparecerá una ventana emergente. Toca *Configuración*, navega a *Instalar aplicaciones desconocidas*, y da el permiso para el navegador que has utilizado para descargar el archivo.
 
-    ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_3.png)
+    ![Instalando apps de fuentes desconocidas *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_3.png)
 
-1. **Install the app**. Once the browser has obtained the necessary permissions, the system will ask you if you want to install the AdGuard app. Tap *Install*.
+1. **Instala la aplicación**. Una vez que el navegador haya obtenido los permisos necesarios, el sistema te preguntará si deseas instalar la app. Pulsa *Instalar*.
 
-    ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
+    ![Instalando apps de fuentes desconocidas *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
-    You will then be asked to read AdGuard's *License agreement* and *Privacy policy*. You can also participate in product development. To do this, check the boxes for *Send crash reports automatically* and *Send technical and interaction data*. Then tap *Continue*.
+    A continuación, se te pedirá que leas el *Acuerdo de licencia* y la *Política de privacidad* de AdGuard. También puedes participar en el desarrollo del producto. Para ello, marca las casillas de *Enviar informes de error automáticamente* y *Enviar datos técnicos e interacción*. Luego haz clic en *Continuar*.
 
-    ![Privacy policy *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
+    ![Política de privacidad *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
 
-1. **Create a local VPN**. In order to filter all traffic directly on your device and not route it through a remote server, AdGuard needs to establish a VPN connection.
+1. **Crea una VPN local**. Para filtrar todo el tráfico directamente en tu dispositivo y no dirigirlo a través de un servidor remoto, AdGuard necesita establecer una conexión VPN.
 
-    ![Create a local VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_2.png)
+    ![Crear una VPN local *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_2.png)
 
-1. **Enable HTTPS filtering**. It is not a mandatory option, however, we advice to turn it on for the best ad-blocking quality.
+1. **Habilita el filtrado HTTPS**. No es una opción obligatoria; sin embargo, recomendamos activarla para obtener la mejor calidad de bloqueo de anuncios.
 
-    If your device is running Android 7–9, you'll be prompted to install a root certificate and configure HTTPS filtering after the local VPN setup.
+    Si tu dispositivo está ejecutando Android 7–9, se te pedirá que instales un certificado y configures el filtrado HTTPS después de la configuración local de la VPN.
 
-    ![Enable HTTPS filtering on Android 7-9 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_1.jpg)
+    ![Habilitar el filtrado HTTPS en Android 7-9 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_1.jpg)
 
-    After you tap *Install now*, a prompt will appear asking you to authenticate the certificate installation with a password or fingerprint.
+    Después de que toques *Instalar ahora*, aparecerá un aviso solicitándote que autentiques la instalación del certificado con una contraseña o huella digital.
 
-    ![Enable HTTPS filtering on Android 7-9. Step 2 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_2.jpg)
+    ![Habilita el filtrado HTTPS en Android 7-9. Paso 2 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_2.jpg)
 
-    If you have Android 10+ on your device, then after creating a local VPN, you will see the main app screen with a snack bar at the bottom with a suggestion to enable HTTPS filtering: tap *Enable* and follow the instructions on the next screen or check [the article about certificate installation](solving-problems/manual-certificate.md) for more information.
+    Si tienes Android 10+ en tu dispositivo, después de crear una VPN local, verás la pantalla principal de la app con un snack bar en la parte inferior con una sugerencia para habilitar el filtrado HTTPS: toca *Habilitar* y sigue las instrucciones en la pantalla siguiente o consulta [el artículo sobre la instalación del certificado](solving-problems/manual-certificate.md) para más información.
 
-    ![Enable HTTPS filtering *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_5.png)
+    ![Habilita el filtrado HTTPS *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_5.png)
 
-## Uninstalling/Reinstalling AdGuard
+## Desinstalando/Reinstalando AdGuard
 
-If you need to uninstall AdGuard on your mobile device, open *Settings* and choose *Apps* (Android 7) or *Apps & notifications* (Android 8+). Find AdGuard in the list of installed apps and press *Uninstall*.
+Si necesitas desinstalar AdGuard en tu dispositivo móvil, abre *Configuración* y elige *Apps* (Android 7) o *Apps & notificaciones* (Android 8+). Encuentra AdGuard en la lista de apps instaladas y presiona *Desinstalar*.
 
-![Reinstall AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
+![Reinstalar AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
-To reinstall AdGuard, just download the apk file again and follow the steps outlined in the Installation section. Uninstallation is not required beforehand.
+Para reinstalar AdGuard, solo descarga el archivo apk nuevamente y sigue los pasos descritos en la sección de instalación. La desinstalación no es necesaria de antemano.

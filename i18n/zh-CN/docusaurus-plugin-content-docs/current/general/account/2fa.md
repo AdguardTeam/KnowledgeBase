@@ -11,26 +11,40 @@ sidebar_position: 3
 
 ## 如何设置 2FA
 
-1. 登录 [AdGuard 账号](https://auth.adguard.com/login.html)并转到「设置」选项卡：
+1. 登录 [AdGuard 账号](https://auth.adguard.com/login.html)并转到「*设置*」标签：
 
-![AdGuard 账号设置 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
+ ![AdGuard 账号设置 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. 向下滚动到「*密码和两步验证*」并单击「**启用**」：
+1. 滚动到「*两步验证*」启用它：
 
-![更改按钮 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
+ ![两步验证开关 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. 按照屏幕上的指示，安装一个认证器应用程序，并扫描 QR 码：
+1. 验证码将发送到与您的 AdGuard 账号关联的电子邮件地址上。 要启用两步验证，请输入代码并点击「*启用*」。
 
-![验证码](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
+ ![验证码 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-***重要信息***
+在启用两步验证后，可以选择两种选项：
 
-- 请您保存第二个备用密码。该密码是在您的手机丢失或被偷窃的情况下用于恢复您的账号的必要信息。
+- *一次性电子邮件代码*：登录时，我们会要求输入发送到您电子邮件的验证码。
 
-如果每个步骤都完成，下次登录个人账号时，将看到：
+- *身份验证软件的代码*：当您登录时，我们会要求输入身份验证应用程序生成的验证码。
 
-![结果 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+![两步验证 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 
-使用手机的认证软件扫码并输入验证码。 登录成功了！
+:::note
 
-***请注意***：如果看到验证错误通知，请您查看手机上的时间设置。 如果需要，请更改时间设置。错误的时钟会导致验证错误。
+如果您使用身份验证器应用程序，请保存**设置密钥**。 在手机丢失或被盗的情况下，有设置密钥才能恢复个人账号。
+
+![身份验证器应用程序中的设置密钥 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
+
+:::
+
+如果每个步骤都完成，下次登录个人账号时，将看到以下窗口：
+
+![结果 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
+
+:::note
+
+请注意：如果看到验证错误通知，请查看手机上的时间设置。 如果需要，请更改时间设置。错误的时钟会导致验证错误。
+
+:::
