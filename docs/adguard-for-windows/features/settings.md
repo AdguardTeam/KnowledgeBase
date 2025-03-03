@@ -77,7 +77,7 @@ From v7.20, you can also add filters simply by selecting them from a list of pre
 - **General**: block ads and trackers
 - **Regional**: target websites in specific languages
 - **Security**: block phishing and other threats
-- **Other**: cover special use cases that don’t fit the above
+- **Other**: cover special use cases that don’t fit into the above categories
 
 ![DNS filters *border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
 
