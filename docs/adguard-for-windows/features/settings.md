@@ -72,7 +72,7 @@ There are three significant reasons why you might want to explore the DNS protec
 
 In the DNS protection module of AdGuard for Windows, you can choose DNS servers from known DNS providers, including AdGuard DNS, which blocks ads and trackers, AdGuard DNS Family Protection, which also blocks adult content, or AdGuard DNS Non-filtering, which provides a secure and reliable connection but doesn’t filter anything. You can even add custom DNS servers and rules using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). If necessary, you can add [DNS filters of your choice](https://filterlists.com).
 
-From v7.20, you can also add filters simply by selecting them from a list of pre-built, trusted filters. They are grouped into categories for convenience:
+Starting with v7.20, you can also add filters by simply selecting them from a list of pre-built, trusted filters. They are grouped into four categories for your convenience:
 
 - **General**: block ads and trackers
 - **Regional**: target websites in specific languages
