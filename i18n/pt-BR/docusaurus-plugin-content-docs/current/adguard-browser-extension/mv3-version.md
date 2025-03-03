@@ -21,19 +21,19 @@ A antiga extensão beta será renomeada para [**Bloqueador de anúncios AdGuard 
 
 - **Registro de filtragem**
 
-  ![Registro de filtragem \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+    ![Registro de filtragem \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-  Devido às restrições do DNR, não podemos mostrar exatamente qual regra funcionou, mas forneceremos uma “regra presumida que foi acionada” com base em nosso mecanismo. Para obter informações precisas, você precisará instalar o formato “descompactado” da extensão no seu navegador. Você encontrará instruções detalhadas sobre como fazer isso em um [artigo separado](/adguard-browser-extension/solving-problems/debug-rules/).
+    Devido às restrições do DNR, não podemos mostrar exatamente qual regra funcionou, mas forneceremos uma “regra presumida que foi acionada” com base em nosso mecanismo. Para obter informações precisas, você precisará instalar o formato “descompactado” da extensão no seu navegador. Você encontrará instruções detalhadas sobre como fazer isso em um [artigo separado](/adguard-browser-extension/solving-problems/debug-rules/).
 
 - _Proteção de rastreamento_ (anteriormente conhecido como _Modo furtivo_)
 
-  ![Proteção contra rastreamento \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+    ![Proteção contra rastreamento \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
 
-  Não há nenhuma seção _Cookies_, juntamente com _Autodestruição de cookies primários_ e _Autodestruição de cookies de terceiros_, pois não podemos definir o TTL dos cookies usando regras declarativas.
+    Não há nenhuma seção _Cookies_, juntamente com _Autodestruição de cookies primários_ e _Autodestruição de cookies de terceiros_, pois não podemos definir o TTL dos cookies usando regras declarativas.
 
 - _Proteção contra phishing e malware_ não está mais disponível nas configurações gerais. Para se proteger de sites maliciosos e golpes, ative os filtros de _Segurança_ apropriados na aba _Filtros_.
 
-  ![Segurança \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+    ![Segurança \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## Limitações
 
@@ -104,8 +104,5 @@ Mais detalhes sobre as limitações podem ser encontrados no [GitHub][github-dec
 Para obter mais informações sobre modificadores, consulte nossa [Base de conhecimento](/general/ad-filtering/create-own-filters).
 
 [DNR format]: https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest#build-rules
-
-<!-- TODO: update the following urls after the release/v3.1 branch is merged -->
-
-[github-declarative-converter]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter
-[github-declarative-converter-examples]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#basic-examples
+[github-declarative-converter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#table-of-contents
+[github-declarative-converter-examples]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#basic-examples

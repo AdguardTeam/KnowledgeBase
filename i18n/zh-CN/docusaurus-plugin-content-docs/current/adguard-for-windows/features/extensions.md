@@ -11,7 +11,7 @@ sidebar_position: 3
 
 AdGuard 可作为[用户脚本管理器](/general/extensions.md)以显著扩展网站功能。 AdGuard 用户可以添加自己的脚本，也可以管理现有脚本。
 
-![扩展 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![扩展 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
 **自动检测用户脚本**
 
@@ -19,7 +19,7 @@ AdGuard 可作为[用户脚本管理器](/general/extensions.md)以显著扩展�
 
 以下扩展是随 AdGuard 一起安装的：
 
-![预装用户脚本 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![预装用户脚本 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
 **AdGuard 助手**
 

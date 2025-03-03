@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který
 
 ### Asistent {#assistant}
 
-![Safari Assistant \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
+![Safari Assistant \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
 
 Asistent je nástroj, který vám pomůže spravovat filtrování v Safari přímo z prohlížeče bez nutnosti přepínat zpět do aplikace.
 

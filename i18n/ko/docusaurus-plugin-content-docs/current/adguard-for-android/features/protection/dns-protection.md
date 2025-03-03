@@ -25,7 +25,7 @@ DNS 보호는 일반 광고 및 추적기 차단과는 다른 방식으로 작�
 
 - 사용자 규칙을 만들어 도메인을 차단하고 차단을 해제할 수도 있습니다. [DNS 필터링 규칙 구문에 대한 도움말 문서](https://adguard-dns.io/kb/general/dns-filtering-syntax/)를 참조해야 할 수도 있습니다.
 
-![DNS 보호 \*mobile\_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
+![DNS 보호 \*mobile_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
 
 #### DNS 서버
 

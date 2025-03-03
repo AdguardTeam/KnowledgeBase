@@ -11,7 +11,7 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
 Sie können die Hauptseite der Erweiterung aufrufen, indem Sie auf das Erweiterungssymbol in der Symbolleiste Ihres Browsers klicken.
 
-![Hauptmenü \*mobile\_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Hauptmenü \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
 Auf der Hauptseite können Sie jedes Element auf jeder Seite manuell ausblenden — eine entsprechende Regel wird zu den _Benutzerregeln_ hinzugefügt. Sie können auch das _Filter-Protokoll_ öffnen, um vollständige Informationen über den Datenverkehr Ihres Browsers zu erhalten und Anfragen zu blockieren, oder einen Blick auf den Sicherheitsbericht einer Website werfen. Außerdem können Sie Statistiken über die angewandten Sperrregeln einsehen und eine Website melden, wenn z. B. Werbung nicht blockiert wurde. Unsere Filter-Ingenieure werden die Meldung prüfen und das Problem beheben.
 

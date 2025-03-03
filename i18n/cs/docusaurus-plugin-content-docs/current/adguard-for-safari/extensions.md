@@ -21,6 +21,7 @@ K blokování reklam, slídičů a obtěžujících prvků na webových stránk�
 - AdGuard – Privacy
 - AdGuard – Social
 - AdGuard – Security
+- AdGuard – Custom
 - AdGuard – Other
 
 Každé rozšíření pro blokování obsahu může obsahovat až 150 000 aktivních pravidel filtrování. Počet pravidel ve většině skupin filtrů nepřesahuje 150 000. Pokud však aktivujete příliš mnoho jazykově specifických nebo vlastních filtrů, můžete tento limit překročit. V takových případech budou náhodná pravidla, která překročí limit, automaticky zakázána, což může vést k nesprávnému blokování. **Důrazně doporučujeme aktivovat pouze ty filtry, které potřebujete**.

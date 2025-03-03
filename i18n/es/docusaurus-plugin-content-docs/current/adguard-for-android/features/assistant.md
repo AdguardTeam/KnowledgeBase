@@ -32,13 +32,13 @@ Cuando abras el Asistente, verás dos pestañas: **Aplicaciones** y **Sitios web
 
 Después de seleccionar una aplicación (**tomemos Chrome como ejemplo**), te aparecerán unas cuantas opciones de lo que puedes hacer.
 
-![Menú del Asistente de Chrome \*mobile\_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Menú del Asistente de Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
 #### Actividad reciente
 
 Accederás a la aplicación AdGuard, donde verás información detallada sobre las últimas 10.000 solicitudes realizadas por Chrome.
 
-![Actividad reciente de la aplicación \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![Actividad reciente de la aplicación \*mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
 
 #### Estadísticas de la aplicación
 
@@ -72,7 +72,7 @@ Al tocar esta opción, se agregará instantáneamente "google.com" a la lista de
 
 Accederás a la aplicación AdGuard, donde verás información detallada sobre las últimas 10.000 peticiones a google.com.
 
-![Actividad reciente del sitio web \*mobile\_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+![Actividad reciente del sitio web \*mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
 
 #### Estadísticas del sitio
 

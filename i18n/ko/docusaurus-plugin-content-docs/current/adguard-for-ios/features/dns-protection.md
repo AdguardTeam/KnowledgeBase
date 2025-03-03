@@ -19,7 +19,7 @@ DNS 설정을 관리하려면 AdGuard 앱에서 로컬 VPN을 설정해야 합�
 
 ### DNS 구현 {#dns-implementation}
 
-![DNS 구현 화면 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_en.jpeg)
+![DNS 구현 화면 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_en.jpeg)
 
 이 섹션에는 AdGuard 및 기본 구현 옵션이 있습니다. 기본적으로 DNS를 설정하는 방법입니다.
 
@@ -29,7 +29,7 @@ DNS 설정을 관리하려면 AdGuard 앱에서 로컬 VPN을 설정해야 합�
 
 DNS 보호 화면에 표시되는 다음 섹션은 DNS 서버입니다. 현재 선택된 DNS 서버와 암호화 유형이 표시됩니다. 둘 중 하나를 변경하려면 버튼을 탭하여 DNS 서버 화면으로 들어갑니다.
 
-![DNS 서버 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
+![DNS 서버 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
 
 서버는 속도, 사용하는 프로토콜, 신뢰성, 로깅 정책 등에 따라 다릅니다. 기본적으로 AdGard는 가장 인기 있는 DNS 서버(AdGard DNS 포함) 중에서 여러 개의 DNS 서버를 제안합니다. 아무거나 탭하여 암호화 유형을 변경하거나(서버 소유자가 해당 옵션을 제공한 경우) 서버의 홈페이지를 확인합니다. '무로깅 정책', '광고 차단', '보안' 등의 레이블을 추가하여 선택에 도움을 드리고자 합니다.
 
@@ -51,7 +51,7 @@ DNS 보호 화면에 표시되는 다음 섹션은 DNS 서버입니다. 현재 �
 
 ### 네트워크 설정 {#network-settings}
 
-![네트워크 설정 화면 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
+![네트워크 설정 화면 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
 
 사용자는 네트워크 설정 화면에서 DNS 보안을 관리할 수도 있습니다. **모바일 데이터 필터링** 및 **Wi-Fi 필터링**은 각 네트워크 유형에 대한 DNS 보호를 활성화 또는 비활성화합니다. 더 아래로 내려가면 **Wi-Fi 예외**에서 특정 Wi-Fi 네트워크를 DNS 보호에서 제외할 수 있습니다(예를 들어, [AdGuard Home](https://adguard.com/adguard-home/overview.html)을 사용하는 경우 홈 네트워크를 제외할 수 있음).
 
@@ -63,7 +63,7 @@ DNS 필터링에 액세스하는 방법
 
 **보호**(하단 메뉴 표시줄의 방패 아이콘) → **DNS 보호** → **DNS 필터링**으로 이동합니다.
 
-![DNS 필터링 화면 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
+![DNS 필터링 화면 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
 #### DNS 필터 {#dns-filters}
 

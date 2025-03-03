@@ -11,7 +11,7 @@ Acest articol se referă la AdGuard pentru iOS, un blocant de reclame multifunc�
 
 _Activity_ screen is the 'information hub' of AdGuard's DNS protection suite. Puteți comuta rapid la acesta atingând a treia iconiță din bara de jos. N.b. acest ecran este vizibil doar când protecția DNS este activată.
 
-![Ecran Activitate \*mobil\_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
+![Ecran Activitate \*mobil_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
 
 Aici AdGuard afișează statistici despre cererile DNS ale dispozitivului, precum numărul total, numărul de cereri blocate și datele salvate prin blocarea acestora. AdGuard poate afișa statisticile pentru o zi, o săptămână, o lună sau în total.
 
@@ -25,7 +25,7 @@ AdGuard nu trimite aceste informații nicăieri. Este 100% local și nu părăse
 
 Atinge orice cerere pentru a vedea mai multe detalii. Vor exista, de asemenea, butoane pentru a adăuga cererea la lista de blocări/permisă cu o singură atingere.
 
-![Detalii cerere \*mobil\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
+![Detalii cerere \*mobil_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
 
 Deasupra fluxului de activitate, există companii _Cele mai active_ și _Cele mai blocate_. Atingeți fiecare pentru a vedea datele bazate pe ultimele 1500 de cereri.
 

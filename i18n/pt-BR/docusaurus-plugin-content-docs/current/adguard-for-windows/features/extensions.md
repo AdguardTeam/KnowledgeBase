@@ -11,7 +11,7 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 O AdGuard pode estender significativamente a funcionalidade do site trabalhando como um [gerenciador de script de usuário](/general/extensions.md). Os usuários do AdGuard podem adicionar seus próprios scripts, bem como gerenciar os existentes.
 
-![Extensões \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![Extensões \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
 **Detectar automaticamente scripts de usuário**
 
@@ -19,7 +19,7 @@ Com esta opção habilitada, o AdGuard definirá automaticamente as consultas do
 
 As seguintes extensões são instaladas com o AdGuard:
 
-![Userscripts pré-instalados \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![Userscripts pré-instalados \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
 **Assistente AdGuard**
 

@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 Do modulu _Statistiky_ se dostanete klepnutím na kartu _Statistiky_ (čtvrtá ikona zleva v dolní části obrazovky). Tato funkce vám poskytne kompletní přehled o provozu ve vašem zařízení: kolik požadavků je odesláno a kterým společnostem, kolik dat je odesláno a staženo, jaké požadavky jsou blokovány atd. Můžete si vybrat, zda chcete zobrazit statistiky za vybrané časové období: 24 hodin, 7 dní, 30 dní nebo za celou dobu.
 
-![Statistics \*mobile\_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
+![Statistics \*mobile_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
 
 Statistiky jsou rozděleny do různých sekcí.
 
@@ -33,7 +33,7 @@ Tato sekce zobrazuje statistiky všech aplikací nainstalovaných ve vašem zař
 
 Klepnutím na _Zobrazit všechny aplikace_ rozbalíte seznam svých aplikací seřazený podle počtu reklam, slídičů nebo požadavků.
 
-![List of apps \*mobile\_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
+![List of apps \*mobile_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
 
 Pokud klepnete na aplikaci, zobrazí se její úplné statistiky: požadavky, které odesílá, domény a společnosti, na které obrací.
 

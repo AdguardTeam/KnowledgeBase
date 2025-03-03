@@ -11,8 +11,12 @@ In diesem Artikel geht es um AdGuard Inhaltsblocker, der nur den Samsung Browser
 
 ## Funktionsübersicht
 
+Main features and settings available in AdGuard Content Blocker
+
 [Funktionsübersicht](/adguard-content-blocker/overview.md)
 
 ## Installation
+
+Installation, removal, and system requirements for AdGuard Content Blocker
 
 [Installation](/adguard-content-blocker/installation.md)

@@ -21,4 +21,4 @@ sidebar_position: 1
 
 - Создавать пользовательские правила — AdGuard будет применять их на указанных сайтах. [Как создавать пользовательские правила](/general/ad-filtering/create-own-filters)
 
-![Блокировка рекламы \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
+![Блокировка рекламы \*mobile_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)

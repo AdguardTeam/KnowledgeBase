@@ -13,13 +13,13 @@ Existují i další užitečné možnosti AdGuardu, které by v tomto článku n
 
 ### Podpora
 
-![Support \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
+![Support \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
 
 Kliknutím na kartu Podpora otevřete dialogové okno, ve kterém můžete nahlásit chybu, odeslat požadavek na funkci nebo se jednoduše podělit o svůj názor na produkt.
 
 ### Licence
 
-![License \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![License \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
 Tato karta obsahuje informace o vaší licenci. Zde můžete:
 
@@ -28,13 +28,13 @@ Tato karta obsahuje informace o vaší licenci. Zde můžete:
 
 ### Informace
 
-![About \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![About \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 
 Kromě informací o aktuální verzi programu jsou na této kartě k dispozici užitečné odkazy na Licenční smlouvu, Zásady ochrany osobních údajů, Poděkování, Diskuzi a Historii verzí.
 
 ### Zkontrolovat aktualizace
 
-![Check for updates \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![Check for updates \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
 
 Chcete-li zkontrolovat aktualizace filtrů a uživatelských skriptů, klikněte na ikonu rotujících šipek v pravém horním rohu domovské stránky programu.
 

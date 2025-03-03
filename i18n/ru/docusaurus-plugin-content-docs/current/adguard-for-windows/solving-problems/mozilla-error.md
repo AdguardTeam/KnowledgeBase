@@ -1,5 +1,5 @@
 ---
-title: How to fix the `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE` error
+title: Как исправить ошибку `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE`
 sidebar_position: 11
 ---
 
@@ -9,9 +9,9 @@ sidebar_position: 11
 
 :::
 
-Some users of AdGuard for Windows with enabled [HTTPS filtering](/general/https-filtering/what-is-https-filtering) are unable to access certain websites like google.com and youtube.com. Instead of opening a website, browsers with Strict Certificate Pinning would display a `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE` error.
+Некоторые пользователи AdGuard для Windows с включённой [HTTPS-фильтрацией](/general/https-filtering/what-is-https-filtering) не могут получить доступ к определённым сайтам, таким как google.com и youtube.com. Вместо открытия сайта браузеры со Strict Certificate Pinning отображали ошибку `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE`.
 
-Here is a list of impacted browsers:
+Вот список затронутых браузеров:
 
 - Arkenfox
 - Brace
@@ -24,8 +24,8 @@ Here is a list of impacted browsers:
 - Phoenix
 - Tor Browser
 
-If your default browser is one of these, do the following to solve the problem:
+Если ваш браузер по умолчанию является одним из этих браузеров, выполните следующие действия, чтобы решить проблему:
 
-1. Type `about:config` in the address bar of your browser
-2. In the menu that appears, enter `security.cert_pinning.enforcement_level` in the search field.
-3. Change the `security.cert_pinning.enforcement_level` parameter from 2 to 1.
+1. Введите `about:config` в адресной строке браузера
+2. В появившемся меню введите `security.cert_pinning.enforcement_level` в поле поиска.
+3. Измените параметр `security.cert_pinning.enforcement_level` с 2 на 1.

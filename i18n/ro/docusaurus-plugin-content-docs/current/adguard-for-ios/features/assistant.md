@@ -11,7 +11,7 @@ Acest articol se referă la AdGuard pentru iOS, un blocant de reclame multifunc�
 
 ### Asistent {#assistant}
 
-![Asistent Safari \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
+![Asistent Safari \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
 
 Asistentul este un instrument care te ajută să gestionezi filtrarea în Safari direct din browser, fără a reveni la aplicație.
 

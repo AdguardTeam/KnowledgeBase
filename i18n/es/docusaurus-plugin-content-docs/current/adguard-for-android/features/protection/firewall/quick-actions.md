@@ -13,6 +13,6 @@ Las acciones rápidas se pueden encontrar dentro del módulo _Firewall_, al que 
 
 _Las acciones rápidas_ se basan en las solicitudes de _Actividad reciente_ (que se puede encontrar en [_Estadísticas_](/adguard-for-android/features/statistics)). Esta sección muestra qué aplicaciones se han conectado recientemente a Internet.
 
-![Acciones rápidas \*mobile\_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
+![Acciones rápidas \*mobile_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
 
 Si ves una aplicación que no debería usar Internet en absoluto o una aplicación que no usaste recientemente, puedes bloquear tu acceso sobre la marcha. Esto no será posible a menos que el módulo _Firewall_ esté activado.

@@ -13,11 +13,11 @@ sidebar_position: 6
 
 브라우징 보안은 피싱 및 악성 웹사이트 방문으로부터 사용자를 보호합니다. 또한 잠재적인 멀웨어에 대해서도 경고합니다.
 
-![브라우징 보안 \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
+![브라우징 보안 \*mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
 위험한 웹사이트를 방문하려는 경우 브라우징 보안에 다음과 같은 경고가 표시됩니다.
 
-![브라우징 보안 경고 \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
+![브라우징 보안 경고 \*mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
 :::warning
 

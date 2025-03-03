@@ -21,6 +21,7 @@ Pentru a bloca reclame, trackere și elemente deranjante pe site-uri, AdGuard fo
 - AdGuard Privacy
 - AdGuard Social
 - AdGuard Security
+- AdGuard Custom
 - AdGuard Altele
 
 Fiecare extensie de blocare a conținutului poate include până la 150.000 de reguli active de filtrare. Numărul de reguli din majoritatea grupurilor de filtrare nu depășește 150.000. Cu toate acestea, dacă activați prea multe filtre specifice limbii sau filtre personalizate, s-ar putea să depășiți limita. În astfel de cazuri, regulile aleatorii care depășesc limita vor fi dezactivate automat, ceea ce poate duce la blocări incorecte. **Recomandăm cu tărie activarea doar a filtrelor de care aveți nevoie**.

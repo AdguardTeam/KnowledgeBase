@@ -5,56 +5,56 @@ sidebar_position: 6
 
 每一位认真努力的人都值得被感谢。Crowdin 上活跃的译员们都可以主动申请一个免费的 AdGuard 许可证密钥和一个 VPN 订阅。
 
-## How our reward system works
+## 以下是我们的奖励系统的详情：
 
-### For AdGuard licenses
+### AdGuard 许可证
 
-- For your first one-year Ad Blocker license, you need to translate **1,000 words**.
-- For your second license, you’ll need an **additional 1,500 words** (a total of 2,500 words).
-- All subsequent licenses require an **additional 2,500** words per license.
+- 翻译 **1000 个单词**可以获取您的第一个一年广告拦截程序许可证。
+- **额外翻译 1500 个单词**（总共 2500 个单词）可以获得第二个许可证。
+- 在此之后，每年许可证需要**额外 2500 个单词**的翻译。
 
-### For AdGuard VPN licenses
+### AdGuard VPN 许可证
 
-- The first one-year VPN subscription requires translating **3,000 words**.
-- All subsequent subscriptions or renewals require an **additional 3,000 words** per subscription.
+- 第一个一年 VPN 订阅需要翻译 **3000 个单词**。
+- 所有后续订阅，每个订阅需要**额外翻译 3000 个单词**。
 
-:::note Limitations
+:::note 限制
 
-As a reward for contributing, we offer licenses and subscriptions valid for a maximum of 5 years. In the case of Ad Blocker, we offer licenses that cover up to 5 devices. We do not offer lifetime licenses.
+作为贡献的奖励，我们提供有效期最长为 5 年的许可证和订阅。 我们提供可连接 5 台设备的广告拦截程序许可证。 我们不提供终身许可证。
 
 :::
 
-## How to request your license
+## 如何请求许可证
 
-Just send an email to our translators team at [translate@adguard.com](mailto:translate@adguard.com) with the following information:
+只需将以下信息通过电子邮箱发送至我们的翻译团队（translate@adguard.com）：
 
-- Your Crowdin username
-- The projects you contributed to (Websites, Applications, Knowledge Base, etc.)
-- The email address to which you want to link your license
-- Your translation statistics (a screenshot or total word count) and the type of license you want
+- 您的 Crowdin 用户名
+- 您所贡献的项目（网站、应用程序、知识库等）
+- 您要链接许可证的电子邮件地址
+- 您的翻译统计数字（屏幕截图或总字数）和您想要的许可证类型
 
-**Email template:**
+**电子邮箱模板:**
 
-> Hi AdGuard team!
+> 您好，AdGuard 团队！
 > 
-> I’ve translated more than 5,000 words in AdGuard for Android in (*your language*) — you can find my stats attached. I would like to request an AdGuard VPN license and an Ad Blocker license for that. My email is (*your email address*). My Crowdin username is (*your username*).
+> 我已经在 Android 版 AdGuard 中翻译了超过 5000 个单词（*您翻译的语言*）。您可以查看附上的统计信息。 我想申请一个 AdGuard VPN 许可证和一个广告拦截程序的许可证。 我的电子邮箱是 (*您的电子邮件地址*)。 我的 Crowdin 用户名是 (*您的用户名*)。
 
-## How to check your translation progress
+## 如何检查翻译进度
 
-Open a project you have been working on, click the *Reports* tab, select *My Contribution*, scroll down, select a date range, and generate a report. It will look something like this.
+打开您正在翻译的项目，单击「报告」（英文：Reports）选项卡，选择「我的贡献」（英文：My Contribution），向下滚动，选择日期范围，然后生成报告。 查看以下截图：
 
-![Statistics *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/statistics.png)
+![统计数字 *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/statistics.png)
 
-You can add up the number of words translated across different projects to qualify for a license.
+您可以将不同项目中的翻译字数累计起来，以满足申请许可证的条件。
 
-## 如何成为审核员
+## 如何成为校对员
 
-Our most active translators may be considered for proofreader status in the future. To become a proofreader, you’ll need to deliver consistently high quality translations over a period of several months.
+我们最活跃的翻译者未来可能会被考虑晋升为校对员。 要成为校对员，您需要在几个月内持续提供高质量的翻译。
 
-Please note that proofreaders do not receive extra licenses or benefits beyond helping more people access AdGuard products in their language. If you’re interested in becoming one of our proofreaders, please contact us at [translate@adguard.com](mailto:translate@adguard.com).
+请注意，校对员除了帮助更多人使用自己语言的 AdGuard 服务外，并不会获得额外的许可证或福利。 如果您有兴趣成为我们的校对员之一，请联系 translate@adguard.com。
 
-## Gifts for active contributors
+## 给活跃贡献者的礼物
 
-To the best contributors, every year we send gifts with the AdGuard merch and give a shout out on our [blog](https://adguard.com/en/blog/best-contributors-2023.html).
+每年，我们会为最优秀的贡献者送上 AdGuard 的周边礼物，并在我们的[博客](https://adguard.com/en/blog/best-contributors-2023.html)上公开致谢。
 
-![AdGuard merch *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)
+![AdGuard 商品 *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

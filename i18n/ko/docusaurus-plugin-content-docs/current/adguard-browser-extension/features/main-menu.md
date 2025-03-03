@@ -11,7 +11,7 @@ sidebar_position: 1
 
 확장 프로그램의 메인 페이지는 브라우저의 도구 모음에서 확장 프로그램의 아이콘을 클릭하여 액세스할 수 있습니다.
 
-![메인 메뉴 \*mobile\_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![메인 메뉴 \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
 기본 페이지에서 페이지의 모든 요소를 수동으로 숨기거나(**사용자 규칙**에 해당 규칙이 추가됨), **필터링 로그**를 열어 브라우저의 트래픽에 대한 전체 정보를 확인하고 이동 중에 요청을 차단하거나 웹사이트의 보안 보고서를 확인할 수 있습니다. 또한 모든 웹사이트에 대한 불만 사항을 제출하고 (예: 페이지에 누락된 광고가 있는 경우 필터 개발자가 신고를 검토하여 문제를 해결합니다) 적용된 차단 규칙에 대한 통계를 확인할 수 있습니다.
 

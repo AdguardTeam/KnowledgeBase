@@ -11,8 +11,12 @@ sidebar_position: 1
 
 ## 功能概览
 
+Main features and settings available in AdGuard Content Blocker
+
 [功能概述](/adguard-content-blocker/overview.md)
 
 ## 安装
+
+Installation, removal, and system requirements for AdGuard Content Blocker
 
 [安装](/adguard-content-blocker/installation.md)

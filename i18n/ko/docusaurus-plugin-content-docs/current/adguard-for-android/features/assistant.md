@@ -32,13 +32,13 @@ sidebar_position: 5
 
 앱을 선택하면 수행할 수 있는 몇 가지 옵션이 표시됩니다. **Chrome을 예로** 들어 보겠습니다.
 
-![Chrome 메뉴 \*mobile\_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Chrome 메뉴 \*mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
 #### 최근 활동
 
 AdGuard 앱으로 이동하게되고 Chrome에서 최근에 발생한 10,000개의 요청에 대한 자세한 정보를 볼 수 있습니다.
 
-![앱 최근 활동 \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![앱 최근 활동 \*mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
 
 #### 앱 통계
 
@@ -72,7 +72,7 @@ AdGuard 화면으로 이동하여 앱에대한 방화벽 설정을 변경할 수
 
 AdGuard 앱으로 이동하여 google.com에 대한 최근 10,000개의 요청에 대한 자세한 정보를 볼 수 있습니다.
 
-![웹사이트 최근 활동 \*mobile\_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+![웹사이트 최근 활동 \*mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
 
 #### 웹사이트 통계
 

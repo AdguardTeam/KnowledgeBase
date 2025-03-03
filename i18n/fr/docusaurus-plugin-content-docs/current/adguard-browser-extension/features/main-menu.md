@@ -11,7 +11,7 @@ Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement 
 
 La page principale de l'extension peut être accédée en cliquant sur l'icône de l'extension dans la barre d'outils de votre navigateur.
 
-![Menu Principal \*mobile\_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Menu Principal \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
 Sur la page principale, vous pouvez masquer manuellement n'importe quel élément sur n'importe quelle page (une règle correspondante sera ajoutée aux _Règles utilisateur_), ouvrir le _Journal de filtrage_ pour consulter des informations complètes sur le trafic de votre navigateur et bloquer les requêtes en cours, ou consulter le rapport de sécurité d'un site web. De plus, vous pouvez soumettre une plainte concernant n'importe quel site web (par exemple, s'il y a des publicités manquées sur la page, nos ingénieurs en filtrage examineront le rapport et résoudront le problème) et consulter les statistiques sur les règles de blocage appliquées.
 

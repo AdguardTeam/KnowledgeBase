@@ -25,7 +25,7 @@ _DNS-защита_ позволяет фильтровать DNS-запросы 
 
 - Вы также можете блокировать и разблокировать домены с помощью пользовательских правил. Вам может понадобиться наша статья о [синтаксисе правил DNS-фильтрации](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
 
-![DNS-защита \*mobile\_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
+![DNS-защита \*mobile_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
 
 #### DNS-сервер
 

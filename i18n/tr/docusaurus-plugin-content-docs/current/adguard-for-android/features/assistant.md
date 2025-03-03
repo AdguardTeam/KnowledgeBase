@@ -32,13 +32,13 @@ When you open Assistant, you will see two tabs: **Apps** and **Websites**. Her b
 
 After you select an app (**let's take Chrome as an example**), you'll get a few options of what you can do.
 
-![Assistant Chrome menu \*mobile\_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Assistant Chrome menu \*mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
 #### Son etkinlikler
 
 You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests made by Chrome.
 
-![App recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![App recent activity \*mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
 
 #### Uygulama istatistikleri
 
@@ -72,7 +72,7 @@ Tapping this option will instantly add `google.com` to allowlist, and AdGuard wi
 
 You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests to google.com.
 
-![website recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+![website recent activity \*mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
 
 #### Site istatistikleri
 

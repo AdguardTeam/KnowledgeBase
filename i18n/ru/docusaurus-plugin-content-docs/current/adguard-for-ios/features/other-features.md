@@ -13,9 +13,9 @@ sidebar_position: 7
 
 ### **Тёмная тема**
 
-![Светлая тема \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/ios/light_mode_ru.png)
+![Светлая тема \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/ios/light_mode_ru.png)
 
-![Тёмная тема \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![Тёмная тема \*mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
 Эта настройка находится в **Настройки** → **Общие** и позволяет переключатьс между тёмной и светлой темами.
 

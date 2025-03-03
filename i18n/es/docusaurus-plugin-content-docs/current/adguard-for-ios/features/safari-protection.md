@@ -15,7 +15,7 @@ Los bloqueadores de contenido sirven como 'contenedores' para reglas de filtrado
 
 Todos los bloqueadores de contenido, sus estados, qué filtros temáticos incluyen actualmente y el total de reglas de filtrado utilizadas se pueden encontrar en la pantalla respectiva en _Configuración avanzada_ (tocar el icono de engranaje en la esquina inferior derecha → _General_ → _Configuración avanzada_ → _Bloqueadores de contenido_).
 
-![Bloqueadores de contenido \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
+![Bloqueadores de contenido \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
 
 :::tip
 
@@ -29,7 +29,7 @@ El trabajo de los bloqueadores de contenido se basa en filtros, a veces también
 
 Todos los filtros se agrupan en categorías temáticas. Para ver la lista completa de estas categorías (no confundir con bloqueadores de contenido), abre la sección de _Protección_ tocando el icono del escudo, luego ve a _Protección de Safari_ → _Filtros_.
 
-![Grupos de filtrado \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
+![Grupos de filtrado \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
 
 Hay ocho de ellos, cada categoría une varios filtros que sirven y comparten un propósito común: bloquear anuncios, widgets de redes sociales, anuncios de cookies, protegiendo al usuario de estafas en línea. Para decidir qué filtros se adaptan a tus necesidades, lee sus descripciones y navega por las etiquetas (`anuncios`, `privacidad`, `recomendado`, etc.).
 
@@ -47,7 +47,7 @@ Aquí puedes añadir nuevas reglas, ya sea ingresándolas manualmente o usando [
 
 Aprenda [cómo crear tus propios filtros de anuncios](/general/ad-filtering/create-own-filters). Pero ten en cuenta que muchos de ellos no funcionarán en Safari en iOS.
 
-![Pantalla de Reglas de usuario \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
+![Pantalla de Reglas de usuario \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
 ### Lista de permisos {#allowlist}
 
