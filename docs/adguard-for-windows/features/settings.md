@@ -75,7 +75,7 @@ In the DNS protection module of AdGuard for Windows, you can choose DNS servers 
 Starting with v7.20, you can also add filters by simply selecting them from a list of pre-built, trusted filters. They are grouped into four categories for your convenience:
 
 - **General**: block ads and trackers
-- **Regional**: target websites in specific languages
+- **Regional**: block ads and trackers on language-specific websites
 - **Security**: block phishing and unreliable websites
 - **Other**: cover special use cases that don’t fit into the above categories
 
