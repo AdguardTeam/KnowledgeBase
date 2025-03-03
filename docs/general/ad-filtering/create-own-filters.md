@@ -1082,7 +1082,7 @@ We recommend to get acquainted with [the Adblock Plus filter cheatsheet](https:/
 
 :::info
 
-Exception rule modifiers will disable other basic rules only for main frame document requests (see [`$document`](#document-modifier) for more information about main frame document).
+By default, without specifying additional content type modifiers exception rule modifiers will disable other basic rules only for main frame document requests (see [`$document`](#document-modifier) for more information about main frame document).
 
 For example:
 
