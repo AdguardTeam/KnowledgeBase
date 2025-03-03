@@ -11,7 +11,7 @@ In this article, we explain how to write custom filtering rules for use in AdGua
 
 :::
 
-A filter is a set of filtering rules applied to specific content, such as banners or pop-ups. AdGuard has a list of standard filters created by our team. We constantly improve and update them, striving to meet the needs of most of our users.
+A filter is a set of filtering rules applied to specific content, such as banners or popups. AdGuard has a list of standard filters created by our team. We constantly improve and update them, striving to meet the needs of most of our users.
 
 At the same time, AdGuard allows you to create your own custom filters using the same types of rules that we have in our filters.
 
@@ -201,7 +201,7 @@ Safari Converter supports a substantial subset of [basic rules](#basic-rules) an
 - `$specifichide` is implemented by scanning existing element hiding rules and removing the target domain from their `if-domain` array.
 
     - `$specifichide` rules MUST target a domain, i.e. be like this: `||example.org^$specifichide`. Rules with more specific patterns will be discarded, i.e. `||example.org/path$specifichide` will not be supported.
-    - `$specifichide` rules only cover rules that target the same domain as the rule itself, subdomains are ignored. I.e. the rule `@@||example.org^$specifichide` will disable `example.org##.banner`, but will ignore `sub.example.org##.banner`. This limitation may be lifted if [#(72](https://github.com/AdguardTeam/SafariConverterLib/issues/72) is implemented.
+    - `$specifichide` rules only cover rules that target the same domain as the rule itself, subdomains are ignored. I.e. the rule `@@||example.org^$specifichide` will disable `example.org##.banner`, but will ignore `sub.example.org##.banner`. This limitation may be lifted if [#72](https://github.com/AdguardTeam/SafariConverterLib/issues/72) is implemented.
 
 - `urlblock`, `genericblock`, `generichide`, `elemhide`, `specifichide`, and `jsinject` modifiers can be used only as a single modifier in a rule. This limitation may be lifted in the future: [#73](https://github.com/AdguardTeam/SafariConverterLib/issues/73).
 
@@ -242,7 +242,7 @@ Safari Converter supports most of the [cosmetic rules](#cosmetic-rules) although
 
 ##### Limitations of cosmetic rules
 
-- Specifying domains is subject of the same limitations as the `$domain` modifier of basic rules.
+- Specifying domains is subject to the same limitations as the `$domain` modifier of basic rules.
 
 - [Non-basic rules modifiers](#non-basic-rules-modifiers) are supported with some limitations:
 
@@ -257,7 +257,7 @@ Safari Converter fully supports both [script rules](#javascript-rules) and
 
 :::warning
 
-For scriptlet rules it is **very important** to run them as soon as possible when the page is loaded. The reason for that is that it's important to run earlier than the page scripts do. Unfortunately, with Safari there will always be a slight delay that can decrease the quality of blocking.
+For scriptlet rules, it is **very important** that they are run as early as possible when the page loads. The reason for that is that it's important to run them before the page scripts. Unfortunately, with Safari there will always be a slight delay that can decrease the quality of blocking.
 
 :::
 
@@ -973,7 +973,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$fr
 
 :::
 
-##### `$subdocument` modified limitations {#subdocument-modifier-limitations}
+##### `$subdocument` modifier limitations {#subdocument-modifier-limitations}
 
 :::caution Limitations
 
