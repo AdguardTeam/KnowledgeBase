@@ -11,7 +11,7 @@ Our requirements are easy: use AdGuard, upgrade to the beta version when it beco
 
 In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/beta.html).
 
-If you want to skip the description part and get straight to the action, you can apply [here](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1-3 working days, and you'll get a reply via email.
+If you want to skip the description part and get straight to the action, you can apply [here](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1–3 working days, and you'll get a reply via email.
 
 ## How to report a bug {#report-a-bug}
 

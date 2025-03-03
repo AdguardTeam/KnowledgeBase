@@ -498,7 +498,7 @@ The modifier part, `":" h_value`, may be omitted. In that case, the modifier mat
 
 1. The `$header` modifier can be matched only when headers are received.
   So if the request is blocked or redirected at an earlier stage, the modifier cannot be applied.
-1. In Adguard Browser Extension, the `$header` modifier is only compatible with
+1. In AdGuard Browser Extension, the `$header` modifier is only compatible with
   [`$csp`](#csp-modifier), [`$removeheader`](#removeheader-modifier), [`$important`](#important-modifier),
   and [`$badfilter`](#badfilter-modifier).
 
@@ -800,7 +800,7 @@ Rules with `$ping` modifier are not supported by AdGuard for Safari and iOS.
 
 #### **`$script`** {#script-modifier}
 
-The rule corresponds to script requests, e.g. javascript, vbscript.
+The rule corresponds to script requests, e.g. JavaScript, VBScript.
 
 #### **`$stylesheet`** {#stylesheet-modifier}
 
@@ -849,7 +849,7 @@ The rule applies only to WebSocket connections.
 
 #### **`$xmlhttprequest`** {#xmlhttprequest-modifier}
 
-The rule applies only to ajax requests (requests sent via javascript object `XMLHttpRequest`).
+The rule applies only to ajax requests (requests sent via the JavaScript object `XMLHttpRequest`).
 
 :::note
 
@@ -1368,7 +1368,7 @@ The characters `/`, `$` and `,` must be escaped with `\` inside `regexp`.
 
 **Exceptions**
 
-Basic URL exceptions shall not disable rules with `$hls` modifier. They can be disabled as described below:
+Basic URL exceptions shall not disable rules with the `$hls` modifier. They can be disabled as described below:
 
 - `@@||example.org^$hls` disables all `$hls` rules for responses from URLs matching `||example.org^`.
 - `@@||example.org^$hls=text` disables all `$hls` rules with the value of the `$hls` modifier equal to `text` for responses from URLs matching `||example.org^`.
@@ -2253,7 +2253,7 @@ This type of rules can be used [**only in trusted filters**](#trusted-filters).
     - `transfer-encoding`
     - `upgrade`
 
-1. `$removeheader` rules are only compatible with `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers) such as `$script` and `$stylesheet`. The rules which have any other modifiers are considered invalid and will be discarded.
+1. `$removeheader` rules are only compatible with `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and [content-type modifiers](#content-type-modifiers) such as `$script` and `$stylesheet`. The rules which have any other modifiers are considered invalid and will be discarded.
 
 :::
 
@@ -2273,7 +2273,7 @@ Rules with `$removeheader` modifier are supported by AdGuard for Windows, Mac, a
 
 Rules with `$removeparam` modifier are intended to strip query parameters from requests' URLs. Please note that such rules are only applied to `GET`, `HEAD`, `OPTIONS`, and sometimes `POST` requests.
 
-`$removeparam` rules that do not have any [content type modifiers](#content-type-modifiers) will match only requests where content type is `document`.
+`$removeparam` rules that do not have any [content-type modifiers](#content-type-modifiers) will match only requests where content type is `document`.
 
 **Syntax**
 
@@ -2732,7 +2732,7 @@ Or rules with [`$header`](#header-modifier).
 The presence of any content-type modifiers adds `(50 + 50 / N)`, where `N` is the number of modifiers present, for example:
 `||example.com^$image,script` will add `50 + 50 / 2 = 50 + 25 = 75` to the total weight of the rule.
 
-The `$all` also belongs to this category, because it implicitly adds all content type modifiers,
+The `$all` also belongs to this category, because it implicitly adds all content-type modifiers,
 e.g., `$document,subdocument,image,script,media,<etc>` + `$popup`.
 
 The `$popup` also belongs to this category, because it implicitly adds the modifier `$document`.
@@ -2793,12 +2793,11 @@ Modifier [`$important`](#important-modifier) adds `10^6` to rule priority.
 
 #### Rules for which there is no priority weight {#priority-category-extra}
 
-[Other modifiers](#advanced-capabilities), which are supposed to perform additional post- or pre-processing of requests,
-do not add anything to the rules priority.
+[Other modifiers](#advanced-capabilities), which are supposed to perform additional post- or pre-processing of requests, do not add anything to the rule priority.
 
 :::note
 
-The [`$replace`](#replace-modifier) modifier takes precedence over all blocking rules of categories 1-3, as well as exception rules from categories 3-5, **except** [`$content`](#content-modifier), because an exception with the `$content` modifier overrides all `$replace` rules.
+The [`$replace`](#replace-modifier) modifier takes precedence over all blocking rules of categories 1–3, as well as exception rules from categories 3–5, **except** [`$content`](#content-modifier), because an exception with the `$content` modifier overrides all `$replace` rules.
 
 :::
 
@@ -3719,7 +3718,7 @@ The way **element hiding** and **CSS rules** are applied is platform-specific.
 
 **In AdGuard for Windows, Mac, and Android**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](#cosmetic-elemhide-rules) and [CSS rules](#cosmetic-css-rules) cannot override inline styles. In such cases, it is recommended to use extended selectors or HTML filtering.
 
-**In AdGuard Browser Extension**, the so called "user stylesheets" are used. They have higher priority than even the inline styles.
+**In AdGuard Browser Extension**, the so-called "user stylesheets" are used. They have higher priority than even the inline styles.
 
 **Extended CSS selectors** use JavaScript to work and basically add an inline style themselves, therefore they can override any style.
 
@@ -3813,7 +3812,7 @@ This special attribute may become unsupported in the future. Prefer using the `:
 
 :::
 
-This special attribute works almost like `tag-content` and allows you to check the innerHTML code of the document. Rule will check if HTML code of the element fits to the [search pattern](https://en.wikipedia.org/wiki/Glob_(programming)).
+This special attribute works almost like `tag-content` and allows you to check the innerHTML code of the document. Rule will check if HTML code of the element fits the [search pattern](https://en.wikipedia.org/wiki/Glob_(programming)).
 
 You must use `""` to escape `"`, for instance:
 `$$script[wildcard=""banner""]`
@@ -3963,7 +3962,7 @@ rule = [domains] "#%#" script
 
 **Exceptions**
 
-Similar to hiding rules, there is a special type of rules that disable the selected javascript rule for particular domains.
+Similar to hiding rules, there is a special type of rules that disable the selected JavaScript rule for particular domains.
 The syntax is the same, you just have to change `#%#` to `#@%#`.
 
 For example, there is a rule in filter:
@@ -4017,7 +4016,7 @@ AdGuard supports a lot of different scriptlets. In order to achieve cross-blocke
 ```
 
 - `domains` — optional, a list of domains where the rule should be applied;
-- `name` — required, a name of the scriptlet from AdGuard Scriptlets library;
+- `name` — required, a name of the scriptlet from the AdGuard Scriptlets library;
 - `arguments` — optional, a list of `string` arguments (no other types of arguments are supported).
 
 **Examples**
