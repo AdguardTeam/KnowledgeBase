@@ -11,7 +11,7 @@ Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakk
 
 Uzantının ana sayfasına, tarayıcınızın araç çubuğundaki uzantı simgesine tıklayarak erişebilirsiniz.
 
-![Main menu \*mobile\_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Main menu \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
 On the main page, you can hide any element on any page manually (a corresponding rule will be added to the _User rules_), open the _Filtering log_ to view the complete information about your browser's traffic and block requests on the go, or look at a website’s security report. Ayrıca, herhangi bir site hakkında bir şikayet gönderebilir (örneğin, sayfada gözden kaçan reklamlar varsa, filtre mühendislerimiz raporu inceler ve sorunu çözer) ve uygulanan engelleme kurallarına ilişkin istatistikleri görebilirsiniz.
 

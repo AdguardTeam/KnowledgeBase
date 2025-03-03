@@ -1,5 +1,5 @@
 ---
-title: How to disable the Samsung Auto Blocker feature
+title: Как отключить функцию Автоблокировка на Samsung
 sidebar_position: 19
 ---
 
@@ -9,21 +9,21 @@ sidebar_position: 19
 
 :::
 
-Starting with One UI 6.1.1 (Android 14), Samsung introduced a security enhancement called _Auto Blocker_, which is enabled by default on the latest Galaxy smartphones. This feature automatically blocks sideloaded apps from unverified sources unless the user manually overrides the setting.
+Начиная с One UI 6.1.1 (Android 14), Samsung представила улучшение безопасности под названием _Автоблокировка_. Эта функция включена по умолчанию на последних смартфонах Galaxy. Она автоматически блокирует приложения, загружаемые из сторонних источников, если пользователь вручную не изменит настройки.
 
-Since AdGuard for Android [can’t be published on Google Play](https://adguard.com/en/blog/adguard-google-play-removal.html), you have to install it manually. However, with the new _Auto Blocker_ feature enabled, some users may experience problems when installing AdGuard APK files. To address this issue, we’ve provided a step-by-step guide on how to disable _Auto Blocker_ below.
+Так как AdGuard для Android [не может быть опубликован в Google Play](https://adguard.com/ru/blog/adguard-google-play-removal.html), вам нужно установить его вручную. Но с включённой новой функцией _Автоблокировка_ некоторые пользователи могут столкнуться с проблемами при установке APK-файлов AdGuard. Чтобы решить эту проблему, ниже мы предоставили пошаговое руководство о том, как отключить _Автоблокировку_.
 
-## How to disable Auto Blocker
+## Как отключить Автоблокировку
 
-Follow the instructions to turn off _Auto Blocker_.
+Следуйте инструкции, чтобы отключить _Автоблокировку_.
 
-1. Open your device settings
-2. Go to _Security and privacy_
-3. Scroll down and select _Auto Blocker_
-4. Toggle the setting off
+1. Откройте настройки устройства
+2. Перейдите в _Безопасность и конфиденциальность_
+3. Прокрутите вниз и выберите _Автоблокировка_
+4. Отключите настройку
 
-![Disable Auto Blocker \*border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/auto-blocker/auto_blocker_en.png)
+![Отключить Автоблокировку \*border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/auto-blocker/auto_blocker_en.png)
 
-Once _Auto Blocker_ is disabled, you can proceed with installing AdGuard Ad Blocker.
+После отключения _Автоблокировки_ вы можете продолжить установку AdGuard.
 
-![Tap Install \*border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/auto-blocker/install_en.png)
+![Нажмите Установить \*border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/auto-blocker/install_en.png)

@@ -19,7 +19,7 @@ sidebar_position: 2
 
 ### DNS 实现 {#dns-implementation}
 
-![DNS实现 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_en.jpeg)
+![DNS实现 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_en.jpeg)
 
 此部分有两个选项：AdGuard 和本地实现。 基本上，这是两种设置 DNS 的方法。
 
@@ -29,7 +29,7 @@ sidebar_position: 2
 
 在 DNS 保护屏幕上下一个部分是 DNS 服务器。 该部分显示当前选择的 DNS 服务器和加密类型。 要更改设置，请点击按钮进入 DNS 服务器界面。
 
-![DNS 服务器 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
+![DNS 服务器 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
 
 服务器的速度、使用的协议、可信度、日志记录策略等等。 默认情况下，AdGuard 会建议几个最流行的 DNS 服务器（包括 AdGuard DNS）。 点击任意以更改加密类型（如果服务器所有者提供此类选项）或查看服务器的主页。 我们添加了一些标签，如 `No logging policy`、`Ad blocking`、`Security` 以帮助用户做出选择。
 
@@ -51,7 +51,7 @@ sidebar_position: 2
 
 ### 网络设置 {#network-settings}
 
-![网络设置 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
+![网络设置 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
 
 用户还可以在网络设置上掌握 DNS 安全性。 「过滤移动数据」和「过滤 Wi-Fi」启用或禁用相应网络类型的 DNS 保护。 再往下，在「Wi-Fi 特例」，用户可以将特定 Wi-Fi 网络排除在 DNS 保护之外（例如，如果用户使用 [AdGuard Home](https://adguard.com/adguard-home/overview.html)，您可能希望将家庭网络排除在外）。
 
@@ -63,7 +63,7 @@ DNS 过滤让用户通过 AdGuard DNS 过滤器、添加自定义 DNS 过滤器�
 
 「保护」（底部菜单栏中的盾牌图标）→「DNS 保护」→「DNS 过滤」。
 
-![DNS 过滤屏幕 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
+![DNS 过滤屏幕 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
 #### DNS 过滤器 {#dns-filters}
 

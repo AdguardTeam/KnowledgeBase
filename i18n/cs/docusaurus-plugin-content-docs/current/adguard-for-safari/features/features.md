@@ -5,30 +5,30 @@ sidebar_position: 1
 
 ## Obecné
 
-Článek upozorňuje na základní funkce, včetně oznámení, intervalů aktualizací a úrovně záznamů.
+Základní funkce, včetně oznámení, intervalů aktualizací a úrovně záznamů
 
 [Obecné](/adguard-for-safari/features/general.md)
 
 ## Filtry
 
-Tento článek vysvětluje, jak AdGuard pro Safari umožňuje přizpůsobit blokování reklam povolením různých filtrů, například filtrů pro konkrétní jazyk, filtrů proti malwaru a uživatelských pravidel.
+Různé filtry umožňující přizpůsobit blokování reklam
 
 [Filtry](/adguard-for-safari/features/filters.md)
 
 ## Blokátory obsahu
 
-Tato část vysvětluje, proč se AdGuard pro Safari skládá ze šesti blokátorů obsahu a jak fungují.
+Šest tematických blokátorů obsahu, které splňují omezení společnosti Apple
 
 [Blokátory obsahu AdGuard](/adguard-for-safari/features/content-blockers/content-blockers.md)
 
 ## Uživatelská pravidla
 
-Článek se věnuje tomu, jak můžete pomocí AdGuard pro Safari vytvářet a spravovat vlastní pravidla filtrování a přizpůsobit si tak blokování reklam.
+Vlastní pravidla filtrování pro přsené doladění blokování reklam
 
 [Uživatelská pravidla](/adguard-for-safari/features/rules.md)
 
 ## Informace
 
-Zde najdete užitečné odkazy na dokumenty o ochraně osobních údajů, repozitář GitHub a historii verzí.
+Sekce s odkazy na dokumenty o ochraně osobních údajů, repozitář GitHub a historie verzí
 
 [Informace](/adguard-for-safari/features/about.md)

@@ -11,7 +11,7 @@ Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multif
 
 AdGuard can significantly extend website functionality by working as a [userscript manager](/general/extensions.md). Utilizatorii AdGuard pot adăuga propriile scripturi, precum și gestiona scripturile existente.
 
-![Extensions \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
 **Automatically detect userscripts**
 
@@ -19,7 +19,7 @@ Cu această opțiune activată, AdGuard va defini automat interogările browser-
 
 Următoarele extensii sunt instalate cu AdGuard:
 
-![Preinstalled userscripts \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![Preinstalled userscripts \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
 **AdGuard Assistant**
 

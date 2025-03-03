@@ -13,13 +13,13 @@ O módulo Firewall pode ser acessado tocando na guia _Proteção_ (segundo ícon
 
 Este recurso ajuda a gerenciar o acesso à Internet para aplicativos específicos instalados no seu dispositivo e para o dispositivo em geral.
 
-![Firewall \*mobile\_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
+![Firewall \*mobile_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
 ### Regras globais de firewall
 
 Esta seção permite controlar o acesso à Internet para todo o dispositivo.
 
-![Regras globais de firewall \*mobile\_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
+![Regras globais de firewall \*mobile_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
 
 Essas regras se aplicam a todos os aplicativos do seu dispositivo, a menos que você defina regras personalizadas para eles.
 
@@ -29,15 +29,15 @@ Nesta seção, você pode controlar o acesso à Internet para aplicativos espec�
 
 1. Abra _Regras de firewall personalizadas_. Em _Aplicativos com regras personalizadas_, toque em _Adicionar aplicativo_.
 
-   ![Regras de firewall personalizadas \*mobile\_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+    ![Regras de firewall personalizadas \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
 2. Selecione o aplicativo para o qual deseja definir regras individuais.
 
-   ![Adicionando um aplicativo às regras de firewall personalizadas \*mobile\_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+    ![Adicionando um aplicativo às regras de firewall personalizadas \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
 3. Em _Regras personalizadas disponíveis_, selecione aquelas que deseja configurar e toque no ícone “+”. As regras agora aparecerão em _Regras personalizadas aplicadas_.
 
-   ![Regra adicionada \*mobile\_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+    ![Regra adicionada \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
 4. Se você precisar bloquear um tipo específico de conexão, alterne a chave para a esquerda. Se você quiser permitir isso, deixe a chave ativada. **As regras personalizadas substituem as globais**: quaisquer alterações feitas nas _Regras globais de firewall_ não afetarão este aplicativo.
 

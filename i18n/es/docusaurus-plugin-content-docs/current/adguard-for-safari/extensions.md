@@ -21,6 +21,7 @@ Para bloquear anuncios, rastreadores y molestias en los sitios web, AdGuard util
 - AdGuard - Privacidad
 - AdGuard - Redes sociales
 - AdGuard - Seguridad
+- AdGuard - Personalizado
 - AdGuard - Otros
 
 Cada extensión de bloqueo de contenido puede incluir hasta 150.000 reglas de filtrado activas. El número de reglas dentro de la mayoría de los grupos de filtros no supera las 150.000. Sin embargo, si activas demasiados filtros personalizados o específicos de un idioma, es posible que superes el límite. En tales casos, las reglas aleatorias que superen el límite se desactivarán automáticamente, lo que puede provocar un bloqueo incorrecto. **Recomendamos encarecidamente activar solo los filtros que necesitas**.

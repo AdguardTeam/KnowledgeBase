@@ -32,13 +32,13 @@ Ao abrir o Assistente, você verá duas guias: **Aplicativos** e **Sites**. Cada
 
 Depois de selecionar um aplicativo (**tomemos o Chrome como exemplo**), você terá algumas opções do que pode fazer.
 
-![Menu do Assistente do Chrome \*mobile\_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Menu do Assistente do Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
 #### Atividade recente
 
 Você será direcionado ao aplicativo AdGuard, onde verá informações detalhadas sobre as últimas 10 mil solicitações feitas pelo Chrome.
 
-![Atividade recente do aplicativo \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![Atividade recente do aplicativo \*mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
 
 #### Estatísticas do aplicativo
 
@@ -72,7 +72,7 @@ Tocar nesta opção adicionará instantaneamente `google.com` à lista de permis
 
 Você será direcionado ao aplicativo AdGuard, onde verá informações detalhadas sobre as últimas 10 mil solicitações para google.com.
 
-![Atividade recente do site \*mobile\_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+![Atividade recente do site \*mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
 
 #### Estatísticas do site
 

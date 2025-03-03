@@ -131,44 +131,44 @@ Some rules can be used only in trusted filters. This category includes:
 
 ### Bloqueador de conteúdo do AdGuard
 
-AdGuard Content Blocker is an extension for Samsung and Yandex browsers that can be installed from Google Play. It is not to be confused with the fully functional AdGuard for Android that can only be downloaded from [our website](https://adguard.com/adguard-android/overview.html). Unfortunately, AdGuard Content Blocker capabilities are limited by what the browsers allow and they only support an old Adblock Plus filters syntax:
+AdGuard Content Blocker is an extension for Samsung and Yandex browsers that can be installed from Google Play. Não deve ser confundido com o AdGuard para Android, que é totalmente funcional e só pode ser baixado a partir do [nosso site](https://adguard.com/adguard-android/overview.html). Infelizmente, as capacidades do Bloqueador de conteúdo AdGuard são limitadas pelas permissões dos navegadores, compatíveis apenas com uma sintaxe antiga de filtros do Adblock Plus:
 
-- Basic blocking rules with the following modifiers: `$domain`, `$third-party`, [content-type modifiers](#content-type-modifiers).
-- Basic exception rules with the following modifiers: `$document`, `$elemhide`.
-- Basic [element hiding rules](#cosmetic-elemhide-rules) with no extended CSS support.
+- Regras básicas de bloqueio com os seguintes modificadores: `$domain`, `$third-party`, [modificadores de tipo de conteúdo](#content-type-modifiers).
+- Regras básicas de exceção com os seguintes modificadores: `$document`, `$elemhide`.
+- Regras básicas de [ocultação de elementos](#cosmetic-elemhide-rules) sem suporte CSS estendido.
 
-Because of the limitations above AdGuard Content Blocker will not be mentioned in the compatibility notes.
+Devido às limitações acima, o Bloqueador de conteúdo AdGuard não será mencionado nas notas de compatibilidade.
 
 ### SafariConverterLib
 
-Safari Converter aims to support AdGuard filtering rules syntax as much as possible, but still there are limitations and shortcomings that are hard to overcome.
+O Safari Converter tem como objetivo suportar a sintaxe das regras de filtragem do AdGuard o máximo possível, mas ainda existem limitações e deficiências difíceis de superar.
 
-#### Basic (network) rules
+#### Regras básicas (de rede)
 
-Safari Converter supports a substantial subset of [basic rules](#basic-rules) and certainly supports the most important types of those rules.
+O conversor Safari suporta um subconjunto substancial de [regras básicas](#basic-rules) e certamente suporta os tipos mais importantes dessas regras.
 
-##### Supported with limitations
+##### Suporte com limitações
 
-- [Regular expression rules](#regexp-support) are limited to the subset of regex that is [supported by Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
+- [As regras de expressão regular](#regexp-support) são limitadas ao subconjunto de regex que é [compatível com o Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
 
-- `$domain` - [domain modifier](#domain-modifier) is supported with several limitations.
+- `$domain` - o [modificador de domínio](#domain-modifier) é compatível com várias limitações.
 
-    - It's impossible to mix allowed and disallowed domains (like `$domain=example.org|~sub.example.org`). Please upvote the [feature request](https://bugs.webkit.org/show_bug.cgi?id=226076) to WebKit to lift this limitation.
-    - "Any TLD" (i.e. `domain.*`) is not fully supported. In the current implementation the converter just replaces `.*` with top 100 popular TLDs. This implementation will be improved [in the future](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732).
-    - Using regular expressions in `$domain` is not supported, but it also will be improved [in the future](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732).
+    - É impossível misturar domínios permitidos e não permitidos (como `$domain=example.org|~sub.example.org`). Por favor, dê um upvote para a [solicitação de funcionalidade](https://bugs.webkit.org/show_bug.cgi?id=226076) para que o WebKit remova esta limitação.
+    - "Any TLD" (ou seja, `domain.*`) não é totalmente suportado. Na implementação atual, o conversor simplesmente substitui `.*` pelos 100 TLDs mais populares. Esta implementação será aprimorada [no futuro](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732).
+    - O uso de expressões regulares em `$domain` não é compatível, mas também será melhorado [no futuro](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732).
 
-- `$denyallow` - this modifier is supported via converting `$denyallow` rule to a set of rules (one blocking rule + several unblocking rules).
+- `$denyallow` - este modificador é suportado através da conversão da regra `$denyallow` para um conjunto de regras (uma regra de bloqueio + várias regras de desbloqueio).
 
-  Due to that limitation `$denyallow` is only allowed when the rule also has `$domain` modifier.
+  Devido a essa limitação, `$denyallow` é permitido apenas quando a regra também possui o modificador `$domain`.
 
-    - Generic rule `*$denyallow=x.com,image,domain=a.com` will be converted to:
+    - A regra genérica `*$denyallow=x.com,image,domain=a.com` será convertida para:
 
     ```adblock
     *$image,domain=a.com
     @@||x.com$image,domain=a.com
     ```
 
-    - Rule `/banner.png$image,denyallow=test1.com|test2.com,domain=example.org` will be converted to:
+    - A regra `/banner.png$image,denyallow=test1.com|test2.com,domain=example.org` será convertida para:
 
     ```adblock
     /banner.png$image,domain=example.org
@@ -178,44 +178,44 @@ Safari Converter supports a substantial subset of [basic rules](#basic-rules) an
     @@||test2.com/*/banner.png$image,domain=example.org
     ```
 
-    - Rule without `$domain` is **not supported**: `$denyallow=a.com|b.com`.
+    - A regra sem `$domain` **não é suportada**: `$denyallow=a.com|b.com`.
 
-- `$popup` - popup rules are supported, but they're basically the same as `$document`-blocking rules and will not attempt to close the tab.
+- `$popup` - as regras de popup são compatíveis, mas são basicamente as mesmas que as regras de `$document` de bloqueio e não tentarão fechar a aba.
 
-- Exception rules (`@@`) disable cosmetic filtering on matching domains.
+- As regras de exceção (`@@`) desativam a filtragem cosmética em domínios correspondentes.
 
-  Exception rules in Safari rely on the rule type `ignore-previous-rules` so to make it work we have to order the rules in a specific order. Exception rules without modifiers are placed at the end of the list and therefore they disable not just URL blocking, but cosmetic rules as well.
+  As regras de exceção no Safari dependem do tipo de regra `ignore-previous-rules`, então, para que funcione, precisamos ordenar as regras em uma ordem específica. As regras de exceção sem modificadores são colocadas no final da lista e, portanto, desativam não apenas o bloqueio de URL, mas também as regras cosméticas.
 
-  This limitation may be lifted if [#70](https://github.com/AdguardTeam/SafariConverterLib/issues/70) is implemented.
+  Essa limitação pode ser removida se [#70](https://github.com/AdguardTeam/SafariConverterLib/issues/70) for implementado.
 
-- `$urlblock`, `$genericblock` is basically the same as `$document`, i.e. it disables all kinds of filtering on websites.
+- `$urlblock`, `$genericblock` é basicamente o mesmo que `$document`, ou seja, desativa todos os tipos de filtragem em sites.
 
-  These limitations may be lifted when [#69](https://github.com/AdguardTeam/SafariConverterLib/issues/69) and [#71](https://github.com/AdguardTeam/SafariConverterLib/issues/71) are implemented.
+  Estas limitações podem ser removidas quando [#69](https://github.com/AdguardTeam/SafariConverterLib/issues/69) e [#71](https://github.com/AdguardTeam/SafariConverterLib/issues/71) são implementados.
 
-- `$content` makes no sense in the case of Safari since HTML filtering rules are not supported so it's there for compatibility purposes only. Rules with `$content` modifier are limited to `document` resource type.
+- `$content` não faz sentido no caso do Safari, uma vez que as regras de filtragem HTML não são compatíveis, então está lá apenas por razões de compatibilidade. As regras com `$content` estão limitadas ao tipo de recurso `documento`.
 
-- `$specifichide` is implemented by scanning existing element hiding rules and removing the target domain from their `if-domain` array.
+- `$specifichide` é implementado escaneando as regras de esconder elementos existentes e removendo o domínio alvo de sua matriz `if-domain`.
 
-    - `$specifichide` rules MUST target a domain, i.e. be like this: `||example.org^$specifichide`. Rules with more specific patterns will be discarded, i.e. `||example.org/path$specifichide` will not be supported.
-    - `$specifichide` rules only cover rules that target the same domain as the rule itself, subdomains are ignored. I.e. the rule `@@||example.org^$specifichide` will disable `example.org##.banner`, but will ignore `sub.example.org##.banner`. This limitation may be lifted if [#(72](https://github.com/AdguardTeam/SafariConverterLib/issues/72) is implemented.
+    - As regras de `$specifichide` DEVEM ter como alvo um domínio, ou seja, devem ser assim: `||example.org^$specifichide`. Regras com padrões mais específicos serão descartadas, ou seja, `||example.org/path$specifichide` não será suportado.
+    - `$specifichide` regras cobrem apenas regras que visam o mesmo domínio que a regra em si, subdomínios são ignorados. I.e. a regra `@@||example.org^$specifichide` irá desativar `example.org##.banner`, mas irá ignorar `sub.example.org##.banner`. Essa limitação pode ser removida se [#(72](https://github.com/AdguardTeam/SafariConverterLib/issues/72) for implementado.
 
-- `urlblock`, `genericblock`, `generichide`, `elemhide`, `specifichide`, and `jsinject` modifiers can be used only as a single modifier in a rule. This limitation may be lifted in the future: [#73](https://github.com/AdguardTeam/SafariConverterLib/issues/73).
+- Os modificadores `urlblock`, `genericblock`, `generichide`, `elemhide`, `specifichide` e `jsinject` podem ser usados apenas como modificador único em uma regra. Essa limitação pode ser removida no futuro: [#73](https://github.com/AdguardTeam/SafariConverterLib/issues/73).
 
-- `$websocket` (fully supported starting with Safari 15).
+- `$websocket` (suporte total a partir do Safari 15).
 
-- `$ping` (fully supported starting with Safari 14).
+- `$ping` (totalmente suportado a partir do Safari 14).
 
-##### Not supported
+##### Não compatível
 
 - `$app`
 - `$header`
 - `$method`
-- `$strict-first-party` (to be supported in the future: [#64](https://github.com/AdguardTeam/SafariConverterLib/issues/64))
-- `$strict-third-party` (to be supported in the future: [#65](https://github.com/AdguardTeam/SafariConverterLib/issues/65))
-- `$to` (to be supported in the future: [#60](https://github.com/AdguardTeam/SafariConverterLib/issues/60))
+- `$strict-first-party` (a ser compatível no futuro: [#64](https://github.com/AdguardTeam/SafariConverterLib/issues/64))
+- `$strict-third-party` (a ser compatível no futuro: [#65](https://github.com/AdguardTeam/SafariConverterLib/issues/65))
+- `$to` (a ser compatível no futuro: [#60](https://github.com/AdguardTeam/SafariConverterLib/issues/60))
 - `$extension`
 - `$stealth`
-- `$cookie` (partial support in the future: [#54](https://github.com/AdguardTeam/SafariConverterLib/issues/54))
+- `$cookie` (suporte parcial no futuro: [#54](https://github.com/AdguardTeam/SafariConverterLib/issues/54))
 - `$csp`
 - `$hls`
 - `$inline-script`
@@ -232,37 +232,37 @@ Safari Converter supports a substantial subset of [basic rules](#basic-rules) an
 - `$replace`
 - `$urltransform`
 
-#### Cosmetic rules
+#### Regras cosméticas
 
-Safari Converter supports most of the [cosmetic rules](#cosmetic-rules) although only element hiding rules with basic CSS selectors are supported natively via Safari Content Blocking, everything else needs to be interpreted by an additional extension.
+O Safari Converter suporta a maioria das [regras cosméticas](#cosmetic-rules), embora apenas as regras de ocultação de elementos com seletores CSS básicos sejam suportadas nativamente via bloqueio de conteúdo do Safari; tudo o mais precisa ser interpretado por uma extensão adicional.
 
-##### Limitations of cosmetic rules
+##### Limitações das regras de cosméticos
 
-- Specifying domains is subject of the same limitations as the `$domain` modifier of basic rules.
+- Especificar domínios está sujeito às mesmas limitações que o modificador `$domain` das regras básicas.
 
-- [Non-basic rules modifiers](#non-basic-rules-modifiers) are supported with some limitations:
+- [Modificadores de regras não básicas](#non-basic-rules-modifiers) são suportados com algumas limitações:
 
-    - `$domain` - the same limitations as everywhere else.
-    - `$path` - supported, but if you use regular expressions, they will be limited to the subset of regex that is [supported by Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
-    - `$url` - to be supported in the future: [#68](https://github.com/AdguardTeam/SafariConverterLib/issues/68)
+    - `$domain` - as mesmas limitações que em qualquer outro lugar.
+    - `$path` - suportado, mas se você usar expressões regulares, elas serão limitadas ao subconjunto de expressão regular que é [compatível com o Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
+    - `$url` - a ser compatível no futuro: [#68](https://github.com/AdguardTeam/SafariConverterLib/issues/68)
 
-#### Script/scriptlet rules
+#### Regras de script/scriptlet
 
-Safari Converter fully supports both [script rules](#javascript-rules) and [scriptlet rules](#scriptlets). However, these rules can only be interpreted by a separate extension.
+O Safari Converter oferece suporte completo tanto às [regras de script](#javascript-rules) quanto às [regras de scriptlet](#scriptlets). No entanto, essas regras só podem ser interpretadas por uma extensão separada.
 
 :::warning
 
-For scriptlet rules it is **very important** to run them as soon as possible when the page is loaded. The reason for that is that it's important to run earlier than the page scripts do. Unfortunately, with Safari there will always be a slight delay that can decrease the quality of blocking.
+Para as regras de scriptlet, é **muito importante** executá-las assim que possível quando a página é carregada. O motivo para isso é que é importante executá-las antes dos scripts de página. Infelizmente, com o Safari sempre haverá um pequeno atraso que pode diminuir a qualidade do bloqueio.
 
 :::
 
-#### HTML filtering rules
+#### Regras de filtragem HTML
 
-[HTML filtering rules](#html-filtering-rules) are **not supported** and will not be supported in the future. Unfortunately, Safari does not provide necessary technical capabilities to implement them.
+[Regras de filtragem HTML](#html-filtering-rules) **não são compatíveis** e não o serão no futuro. Infelizmente, Safari não fornece as capacidades técnicas necessárias para implementá-las.
 
 ## Basic rules
 
-The most simple rules are so-called *Basic rules*. They are used to block requests to specific URLs. Or to unblock it, if there is a special marker "@@" at the beginning of the rule. The basic principle for this type of rules is quite simple: you have to specify the address and additional parameters that limit or expand the rule scope.
+The most simple rules are so-called *Basic rules*. Elas são usadas para bloquear solicitações a URLs específicas. Or to unblock it, if there is a special marker "@@" at the beginning of the rule. The basic principle for this type of rules is quite simple: you have to specify the address and additional parameters that limit or expand the rule scope.
 
 :::note Sub-requests
 
@@ -1404,7 +1404,7 @@ In that case, the `$badfilter` rule will disable the corresponding rule for doma
 
 :::caution Limitations
 
-In [AdGuard for Chrome MV3][ext-mv3] a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. We cannot calculate it if it is only partially canceled. [Examples](https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#badfilter)
+In [AdGuard for Chrome MV3][ext-mv3] a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. We cannot calculate it if it is only partially canceled. [Examples][badfilter-in-mv3].
 
 :::
 
@@ -3079,7 +3079,7 @@ However, basic rules may not be enough to block ads. Sometimes you need to hide 
 
 :::
 
-## Cosmetic rules {#cosmetic-rules}
+## Regras cosméticas {#cosmetic-rules}
 
 :::info
 
@@ -3125,11 +3125,11 @@ Element hiding rules are not dependent on each other. If there is a rule `exampl
 
 **Limitações**
 
-Safari does not support both allowed and disallowed domains. So the rules like `example.org,~foo.example.org##.textad` are invalid in AdGuard for Safari.
+O Safari não é compatível com domínios permitidos e não permitidos. Portanto, as regras como `example.org,~foo.example.org##.textad` são inválidas no AdGuard para Safari.
 
 **Exceptions**
 
-Exceptions can disable some rules on particular domains. They are very similar to usual exception rules, but instead of `##` you have to use `#@#`.
+As exceções podem desativar algumas regras em domínios específicos. Elas são muito semelhantes às regras de exceção habituais, mas em vez de `##` você deve usar `#@#`.
 
 For example, there is a rule in filter:
 
@@ -3143,23 +3143,23 @@ If you want to disable it for `example.com`, you can create an exception rule:
 example.com#@#.textad
 ```
 
-Sometimes, it may be necessary to disable all restriction rules. For example, to conduct tests. To do this, use the exclusion rule without specifying a domain. It will completely disable matching CSS elemhide rule on ALL domains:
+Sometimes, it may be necessary to disable all restriction rules. Por exemplo, para realizar testes. Para isso, use a regra de exclusão sem especificar um domínio. Ele desativará completamente a regra elemhide CSS correspondente em TODOS os domínios:
 
 ```adblock
 #@#.textad
 ```
 
-The same can be achieved by adding this rule:
+O mesmo pode ser alcançado adicionando esta regra:
 
 ```adblock
 *#@#.textad
 ```
 
-We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
+Recomendamos usar esse tipo de exceção somente se não for possível alterar a própria regra de ocultação. In other cases it is better to change the original rule, using domain restrictions.
 
-### CSS rules {#cosmetic-css-rules}
+### Regras CSS {#cosmetic-css-rules}
 
-Sometimes, simple hiding of an element is not enough to deal with advertising. For example, blocking an advertising element can just break the page layout. In this case AdGuard can use rules that are much more flexible than hiding rules. With these rules you can basically add any CSS styles to the page.
+Às vezes, simplesmente ocultar um elemento não é suficiente para lidar com a publicidade. Por exemplo, bloquear um elemento de publicidade pode apenas quebrar o layout da página. Neste caso, o AdGuard pode usar regras que são muito mais flexíveis do que regras de ocultação. Com essas regras, você pode basicamente adicionar qualquer estilo CSS à página.
 
 **Syntax**
 
@@ -3169,8 +3169,8 @@ domains = [domain0, domain1[, ...[, domainN]]]
 ```
 
 - **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), that defines the elements we want to apply the style to.
-- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#cosmetic-elemhide-rules).
-- **`style`** — CSS style, that we want to apply to selected elements.
+- **`domains`** — domain restriction for the rule. Os mesmos princípios que nas [regras de ocultação de elementos](#cosmetic-elemhide-rules).
+- **`style`** — estilo CSS que queremos aplicar aos elementos selecionados.
 
 **Examples**
 
@@ -3182,7 +3182,7 @@ This rule will apply a style `background-color: #333!important;` to the `body` e
 
 **Exceptions**
 
-Just like with element hiding, there is a type of rules that disable the selected CSS style rule for particular domains. Exception rule syntax is almost the same, you just have to change `#$#` to `#@$#`.
+Assim como na ocultação de elementos, há um tipo de regras que desativam a regra de estilo CSS selecionada para domínios específicos. A sintaxe da regra de exceção é quase a mesma, você só precisa mudar `#$#` para `#@$#`.
 
 For example, there is a rule in filter:
 
@@ -3200,41 +3200,41 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 :::caution Restrictions
 
-Styles that lead to loading any resource are forbidden. Basically, it means that you cannot use any `<url>` type of value in the style.
+Estilos que levam ao carregamento de qualquer recurso são proibidos. Basicamente, isso significa que você não pode usar nenhum valor do tipo `<url>` no estilo.
 
 :::
 
 :::info Compatibility
 
-CSS rules are not supported by AdGuard Content Blocker.
+As regras CSS não são suportadas pelo Bloqueador de conteúdo AdGuard.
 
-CSS rules may operate differently [depending on the platform](#cosmetic-rules-priority).
+As regras de CSS podem operar de maneira diferente [dependendo da plataforma](#cosmetic-rules-priority).
 
 :::
 
-### Extended CSS selectors {#extended-css-selectors}
+### Seletores CSS Estendidos {#extended-css-selectors}
 
 - [Limitações](#extended-css-limitations)
-- [Pseudo-class `:has()`](#extended-css-has)
-- [Pseudo-class `:contains()`](#extended-css-contains)
-- [Pseudo-class `:matches-css()`](#extended-css-matches-css)
-- [Pseudo-class `:matches-attr()`](#extended-css-matches-attr)
-- [Pseudo-class `:matches-property()`](#extended-css-property)
-- [Pseudo-class `:xpath()`](#extended-css-xpath)
-- [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
-- [Pseudo-class `:upward()`](#extended-css-upward)
-- [Pseudo-class `:remove()` and pseudo-property `remove`](#remove-pseudos)
-- [Pseudo-class `:is()`](#extended-css-is)
-- [Pseudo-class `:not()`](#extended-css-not)
-- [Pseudo-class `:if-not()` (removed)](#extended-css-if-not)
+- [Pseudo-classe `:has()`](#extended-css-has)
+- [Pseudo-classe `:contains()`](#extended-css-contains)
+- [Pseudo-classe `:matches-css()`](#extended-css-matches-css)
+- [Pseudo-classe `:matches-attr()`](#extended-css-matches-attr)
+- [Pseudo-classe `:matches-property()`](#extended-css-property)
+- [Pseudo-classe `:xpath()`](#extended-css-xpath)
+- [Pseudo-classe `:nth-ancestor()`](#extended-css-nth-ancestor)
+- [Pseudo-classe `:upward()`](#extended-css-upward)
+- [Pseudo-classe `:remove()` e pseudo-propriedade `remover`](#remove-pseudos)
+- [Pseudo-classe `:is()`](#extended-css-is)
+- [Pseudo-classe `:not()`](#extended-css-not)
+- [Pseudo-classe `:if-not()` (excluída)](#extended-css-if-not)
 
-CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends CSS capabilities by adding support for the new pseudo-elements. We have developed a separate [open-source library](https://github.com/AdguardTeam/ExtendedCss) for non-standard element selecting and applying CSS styles with extended properties.
+CSS 3.0 não é sempre suficiente para bloquear anúncios. Para resolver esse problema, o AdGuard estende as capacidades do CSS ao adicionar suporte para os novos pseudo-elementos. Desenvolvemos uma [biblioteca de código aberto](https://github.com/AdguardTeam/ExtendedCss) separada para seleção de elementos não padronizados e aplicação de estilos CSS com propriedades estendidas.
 
-The idea of extended capabilities is an opportunity to match DOM elements with selectors based on their own representation (style, text content, etc.) or relations with other elements. There is also an opportunity to apply styles with non-standard CSS properties.
+A ideia de capacidades estendidas é uma oportunidade de combinar elementos do DOM com seletores com base em sua própria representação (estilo, conteúdo de texto, etc.) ou relações com outros elementos. Há também uma oportunidade de aplicar estilos com propriedades CSS não padrão.
 
-**Application area**
+**Área do aplicativo**
 
-Extended selectors can be used in any cosmetic rule, whether they are [element hiding rules](#cosmetic-elemhide-rules) or [CSS rules](#cosmetic-css-rules).
+Seletores Estendidos podem ser usados em qualquer regra cosmética, sejam elas [regras de ocultação de elementos](#cosmetic-elemhide-rules) ou [regras CSS](#cosmetic-css-rules).
 
 :::info Compatibility
 
@@ -3278,7 +3278,7 @@ Pseudo-class names are case-insensitive, e.g. `:HAS()` works as `:has()`. Still 
 
 2. Specific pseudo-class may have its own limitations: [`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), and [`:remove()`](#extended-css-remove-limitations).
 
-#### Pseudo-class `:has()` {#extended-css-has}
+#### Pseudo-classe `:has()` {#extended-css-has}
 
 Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3.org/TR/selectors-4/#relational). Unfortunately, [it is not yet supported](https://caniuse.com/css-has) by all popular browsers.
 
@@ -3381,7 +3381,7 @@ Native implementation does not allow any usage of `:scope` inside the `:has()` a
 
 :::
 
-#### Pseudo-class `:contains()` {#extended-css-contains}
+#### Pseudo-classe `:contains()` {#extended-css-contains}
 
 The `:contains()` pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Regexp flags are supported.
 
@@ -3507,7 +3507,7 @@ Obsolete pseudo-classes `:matches-css-before()` and `:matches-css-after()` are n
 
 :::
 
-#### Pseudo-class `:matches-attr()` {#extended-css-matches-attr}
+#### Pseudo-classe `:matches-attr()` {#extended-css-matches-attr}
 
 The `:matches-attr()` pseudo-class allows selecting an element by its attributes, especially if they are randomized.
 
@@ -3534,21 +3534,21 @@ For **regexp** patterns `"` and `\` should be **escaped**, e.g. `div:matches-att
 <div id="target1" ad-link="1random23-banner_240x400"></div>
 ```
 
-`div:matches-attr("data-*"="adBanner")` selects the element `div#target2`:
+`div:matches-attr("data-*"="adBanner")` seleciona o elemento `div#target2`:
 
 ```html
 <!-- HTML code -->
 <div id="target2" data-1random23="adBanner"></div>
 ```
 
-`div:matches-attr(*unit*=/^click$/)` selects the element `div#target3`:
+`div:matches-attr(*unit*=/^click$/)` seleciona o elemento `div#target3`:
 
 ```html
 <!-- HTML code -->
 <div id="target3" random123-unit094="click"></div>
 ```
 
-`*:matches-attr("/.{5,}delay$/"="/^[0-9]*$/")` selects the element `#target4`:
+`*:matches-attr("/.{5,}delay$/"="/^[0-9]*$/")` seleciona o elemento `#target4`:
 
 ```html
 <!-- HTML code -->
@@ -3559,13 +3559,13 @@ For **regexp** patterns `"` and `\` should be **escaped**, e.g. `div:matches-att
 
 :::caution Restrictions
 
-Regexp patterns **do not support** flags.
+Padrões Regexp **não são compatíveis** com flags.
 
 :::
 
-#### Pseudo-class `:matches-property()` {#extended-css-property}
+#### Pseudo-classe `:matches-property()` {#extended-css-property}
 
-The `:matches-property()` pseudo-class allows selecting an element by matching its properties.
+A pseudo-classe `:matches-property()` permite selecionar um elemento correspondendo às suas propriedades.
 
 **Syntax**
 
@@ -3638,7 +3638,7 @@ Regexp patterns **do not support** flags.
 
 :::
 
-#### Pseudo-class `:xpath()` {#extended-css-xpath}
+#### Pseudo-classe `:xpath()` {#extended-css-xpath}
 
 The `:xpath()` pseudo-class allows selecting an element by evaluating an XPath expression.
 
@@ -3677,7 +3677,7 @@ Works properly only at the end of selector, except for [pseudo-class :remove()](
 </div>
 ```
 
-#### Pseudo-class `:nth-ancestor()` {#extended-css-nth-ancestor}
+#### Pseudo-classe `:nth-ancestor()` {#extended-css-nth-ancestor}
 
 The `:nth-ancestor()` pseudo-class allows to lookup the *nth* ancestor relative to the previously selected element.
 
@@ -3722,7 +3722,7 @@ For such DOM:
 
 `.child:nth-ancestor(1)` selects the element `div#target1`, `div[class="inner"]:nth-ancestor(3)` selects the element `div#target2`.
 
-#### Pseudo-class `:upward()` {#extended-css-upward}
+#### Pseudo-classe `:upward()` {#extended-css-upward}
 
 The `:upward()` pseudo-class allows to lookup the ancestor relative to the previously selected element.
 
@@ -3762,7 +3762,7 @@ For such DOM:
 
 `.inner:upward(div[data])` selects the element `div#target1`, `.inner:upward(div[id])` selects the element `div#target2`, `.child:upward(1)` selects the element `div#target1`, `.inner:upward(3)` selects the element `div#target2`.
 
-#### Pseudo-class `:remove()` and pseudo-property `remove` {#remove-pseudos}
+#### Pseudo-classe `:remove()` e pseudo-propriedade `remover` {#remove-pseudos}
 
 Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use the `:remove()` pseudo-class as well as the `remove` pseudo-property.
 
@@ -3804,7 +3804,7 @@ Rules with the `remove` pseudo-property must use `#$?#` marker: `$` for CSS-styl
 
 :::
 
-#### Pseudo-class `:is()` {#extended-css-is}
+#### Pseudo-classe `:is()` {#extended-css-is}
 
 The `:is()` pseudo-class allows to match any element that can be selected by any of selectors passed to it. Invalid selectors are skipped and the pseudo-class deals with valid ones with no error thrown. Our implementation of the [native `:is()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:is).
 
@@ -3850,7 +3850,7 @@ Due to limitations `:is(*:not([class]) > .banner)'` does not work but `:is(*:not
 </div>
 ```
 
-#### Pseudo-class `:not()` {#extended-css-not}
+#### Pseudo-classe `:not()` {#extended-css-not}
 
 The `:not()` pseudo-class allows to select elements which are *not matched* by selectors passed as argument. Invalid argument selectors are not allowed and error is to be thrown. Our implementation of the [`:not()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
 
@@ -3886,7 +3886,7 @@ The `:not()` is considered as a standard CSS pseudo-class inside the argument of
 </div>
 ```
 
-#### Pseudo-class `:if-not()` (removed) {#extended-css-if-not}
+#### Pseudo-classe `:if-not()` (excluída) {#extended-css-if-not}
 
 :::danger Removal notice
 
@@ -3906,7 +3906,7 @@ The way **element hiding** and **CSS rules** are applied is platform-specific.
 
 **Extended CSS selectors** use JavaScript to work and basically add an inline style themselves, therefore they can override any style.
 
-## HTML filtering rules {#html-filtering-rules}
+## Regras de filtragem HTML {#html-filtering-rules}
 
 In most cases, the basis and cosmetic rules are enough to filter ads. But sometimes it is necessary to change the HTML-code of the page itself before it is loaded. This is when you need filtering rules for HTML content. They allow to indicate the HTML elements to be cut out before the browser loads the page.
 
@@ -4045,7 +4045,7 @@ This special attribute may become unsupported in the future. Prefer using the `:
 
 :::
 
-Specifies the minimum length for content of HTML element. If this parameter is set and the content length is less than preset value, a rule does not apply to the element.
+Specifies the minimum length for content of HTML element. Se este parâmetro estiver definido e o comprimento do conteúdo for menor que o valor predefinido, uma regra não se aplica ao elemento.
 
 Por exemplo:
 
@@ -4053,11 +4053,11 @@ Por exemplo:
 $$div[tag-content="banner"][min-length="400"]
 ```
 
-This rule will remove all the `div` elements, whose code contains the substring `banner` and the length of which exceeds `400` characters.
+Esta regra irá remover todos os elementos `div`, cujo código contém a substring `banner` e cujo comprimento excede `400` caracteres.
 
 :::caution Limitations
 
-The `min-length` special attribute must not appear in a selector to the left of a `>` combinator.
+O atributo especial `min-length` não deve aparecer em um seletor à esquerda de um combinador `>`.
 
 :::
 
@@ -4079,27 +4079,27 @@ ou
 
 :::note Compatibility
 
-`:-abp-contains()` and `:has-text()` are synonyms for `:contains()`.
+`:-abp-contains()` e `:has-text()` são sinônimos para `:contains()`.
 
 :::
 
 :::info Compatibility
 
-The `:contains()` pseudo-class is supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.13 or later.
+A pseudoclasse `:contains()` é compatível com o AdGuard para Windows, Mac e Android com [CoreLibs][] v1.13 ou posterior.
 
 :::
 
-Requires that the inner HTML of the element contains the specified text or matches the specified regular expression.
+Requer que o HTML interno do elemento contenha o texto especificado ou corresponda à expressão regular especificada.
 
 :::caution Limitations
 
-A `:contains()` pseudo-class must not appear in a selector to the left of a `>` combinator.
+Uma pseudo-classe `:contains()` não deve aparecer em um seletor à esquerda de um combinador `>`.
 
 :::
 
 ### Exceptions
 
-Similar to hiding rules, there is a special type of rules that disable the selected HTML filtering rule for particular domains. The syntax is the same, you just have to change `$$` to `$@$`.
+Assim como nas regras de ocultação, há um tipo especial de regras que desativam a regra de filtragem HTML selecionada para domínios específicos. A sintaxe é a mesma, você só precisa mudar `$$` para `$@$`.
 
 For example, there is a rule in filter:
 
@@ -4113,19 +4113,19 @@ If you want to disable it for `example.com`, you can create an exception rule:
 example.com$@$script[tag-content="banner"]
 ```
 
-Sometimes, it may be necessary to disable all restriction rules. For example, to conduct tests. To do this, use the exclusion rule without specifying a domain.
+Sometimes, it may be necessary to disable all restriction rules. Por exemplo, para realizar testes. Para isso, use a regra de exclusão sem especificar um domínio.
 
 ```adblock
 $@$script[tag-content="banner"]
 ```
 
-We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
+Recomendamos usar esse tipo de exceção somente se não for possível alterar a própria regra de ocultação. In other cases it is better to change the original rule, using domain restrictions.
 
 ## JavaScript rules {#javascript-rules}
 
-AdGuard supports a special type of rules that allows you to inject any JavaScript code to websites pages.
+O AdGuard oferece um tipo especial de regras que permite injetar qualquer código JavaScript nas páginas dos sites.
 
-We **strongly recommend** using [scriptlets](#scriptlets) instead of JavaScript rules whenever possible. JS rules are supposed to help with debugging, but as a long-time solution a scriptlet rule should be used.
+Nós **recomendamos fortemente** o uso de [scriptlets](#scriptlets) em vez de regras JavaScript sempre que possível. As regras do JS devem ajudar na depuração, mas como uma solução de longo prazo, uma regra de script deve ser usada.
 
 **Syntax**
 
@@ -4133,8 +4133,8 @@ We **strongly recommend** using [scriptlets](#scriptlets) instead of JavaScript 
 rule = [domains] "#%#" script
 ```
 
-- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#cosmetic-elemhide-rules).
-- **`script`** — arbitrary JavaScript code **in one string**.
+- **`domains`** — restrição de domínio para a regra. Os mesmos princípios que nas [regras de ocultação de elementos](#cosmetic-elemhide-rules).
+- **`script`** — código JavaScript arbitrário **em uma string**.
 
 **Examples**
 
@@ -4142,7 +4142,7 @@ rule = [domains] "#%#" script
 
 **Exceptions**
 
-Similar to hiding rules, there is a special type of rules that disable the selected javascript rule for particular domains. The syntax is the same, you just have to change `#%#` to `#@%#`.
+Assim como nas regras de ocultação, há um tipo especial de regras que desativam a regra de JavaScript selecionada para domínios específicos. A sintaxe é a mesma, você só precisa mudar `#%#` para `#@%#`.
 
 For example, there is a rule in filter:
 
@@ -4156,63 +4156,63 @@ If you want to disable it for `example.com`, you can create an exception rule:
 example.com#@%#window.__gaq = undefined;
 ```
 
-Sometimes, it may be necessary to disable all restriction rules. For example, to conduct tests. To do this, use the exclusion rule without specifying a domain.
+Sometimes, it may be necessary to disable all restriction rules. Por exemplo, para realizar testes. Para isso, use a regra de exclusão sem especificar um domínio.
 
 ```adblock
 #@%#window.__gaq = undefined;
 ```
 
-We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
+Recomendamos usar esse tipo de exceção somente se não for possível alterar a própria regra de ocultação. In other cases it is better to change the original rule, using domain restrictions.
 
 :::caution Restrictions
 
-JavaScript rules can only be used [**in trusted filters**](#trusted-filters).
+As regras de JavaScript só podem ser usadas [**em filtros confiáveis**](#trusted-filters).
 
 :::
 
 :::info Compatibility
 
-JavaScript rules are not supported by AdGuard Content Blocker.
+As regras JavaScript não são compatíveis com o Bloqueador de conteúdo AdGuard.
 
 :::
 
-## Scriptlet rules {#scriptlets}
+## Regras de scriptlets {#scriptlets}
 
-Scriptlet is a JavaScript function that provides extended capabilities for content blocking. These functions can be used in a declarative manner in AdGuard filtering rules.
+Scriptlet é uma função JavaScript que fornece capacidades estendidas para bloqueio de conteúdo. Essas funções podem ser usadas de maneira declarativa nas regras de filtragem do AdGuard.
 
 :::note
 
-AdGuard supports a lot of different scriptlets. In order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
+AdGuard oferece suporte a muitos scriptlets diferentes. Para alcançar a compatibilidade entre bloqueadores, também oferecemos suporte à sintaxe do uBO e ABP.
 
 :::
 
-**Blocking rules syntax**
+**Sintaxe das regras de bloqueio**
 
 ```text
 [domains]#%#//scriptlet(name[, arguments])
 ```
 
-- `domains` — optional, a list of domains where the rule should be applied;
-- `name` — required, a name of the scriptlet from AdGuard Scriptlets library;
-- `arguments` — optional, a list of `string` arguments (no other types of arguments are supported).
+- `domains` — opcional, uma lista de domínios onde a regra deve ser aplicada;
+- `name` — obrigatório, um nome do scriptlet da biblioteca de Scriptlets do AdGuard;
+- `arguments` — opcional, uma lista de `string` argumentos (nenhum outro tipo de argumento é suportado).
 
 **Examples**
 
-1. Apply the `abort-on-property-read` scriptlet on all pages of `example.org` and its subdomains, and pass it an `alert` argument:
+1. Aplique o `abort-on-property-read` scriptlet em todas as páginas de `example.org` e seus subdomínios, e passe um argumento `alert`:
 
     ```adblock
     example.org#%#//scriptlet('abort-on-property-read', 'alert')
     ```
 
-1. Remove the `branding` class from all `div[class^="inner"]` elements on all pages of `example.org` and its subdomains:
+1. Remova a classe `branding` de todos os elementos `div[class^="inner"]` em todas as páginas de `example.org` e seus subdomínios:
 
     ```adblock
     example.org#%#//scriptlet('remove-class', 'branding', 'div[class^="inner"]')
     ```
 
-**Exception rules syntax**
+**Sintaxe das regras de exceção**
 
-Exception rules can disable some scriptlets on particular domains. The syntax for exception scriptlet rules is similar to normal scriptlet rules but uses `#@%#` instead of `#%#`:
+As regras de exceção podem desativar alguns scriptlets em domínios específicos. A sintaxe para regras de scriptlet de exceção é semelhante às regras normais de scriptlet, mas usa `#@%#` em vez de `#%#`:
 
 ```text
 [domains]#@%#//scriptlet([name[, arguments]])
@@ -4224,28 +4224,28 @@ Exception rules can disable some scriptlets on particular domains. The syntax fo
 
 **Examples**
 
-1. Disable specific scriptlet rule so that only `abort-on-property-read` is applied only on `example.org` and its subdomains:
+1. Desativar regra de scriptlet específica para que apenas `abort-on-property-read` seja aplicada somente em `example.org` e seus subdomínios:
 
     ```adblock
     example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
     example.com#@%#//scriptlet("abort-on-property-read", "alert")
     ```
 
-1. Disable all `abort-on-property-read` scriptlets for `example.com` and its subdomains:
+1. Desativar todos os `abort-on-property-read` scriptlets para `example.com` e seus subdomínios:
 
     ```adblock
     example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
     example.com#@%#//scriptlet("abort-on-property-read")
     ```
 
-1. Disable all scriptlets for `example.com` and its subdomains:
+1. Desativar todos os scriptlets para `example.com` e seus subdomínios:
 
     ```adblock
     example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
     example.com#@%#//scriptlet()
     ```
 
-1. Apply `set-constant` and `set-cookie` to any web page, but due to special scriptlet exception rule only the `set-constant` scriptlet will be applied on `example.org` and its subdomains:
+1. Aplique `set-constant` e `set-cookie` a qualquer página web, mas devido à regra de exceção de scriptlet especial apenas o scriptlet `set-constant` será aplicado em `example.org` e seus subdomínios:
 
     ```adblock
     #%#//scriptlet('set-constant', 'adList', 'emptyArr')
@@ -4893,13 +4893,15 @@ The following scriptlets also may be used for debug purposes:
 
 :::
 
-[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#popup
+[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#popup
 
 [Sec-Fetch-Dest header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
 
-[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#jsinject
 
-[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+
+[badfilter-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#badfilter
 
 [cl-apps]: #what-product "AdGuard for Windows, Mac, Android"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"

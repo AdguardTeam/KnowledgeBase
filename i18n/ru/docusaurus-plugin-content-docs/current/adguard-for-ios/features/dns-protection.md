@@ -19,7 +19,7 @@ sidebar_position: 2
 
 ### Реализация DNS {#dns-implementation}
 
-![Экран реализации DNS \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_ru.jpeg)
+![Экран реализации DNS \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_ru.jpeg)
 
 В этом разделе есть две опции на выбор: AdGuard и Нативная. Это два метода настройки DNS.
 
@@ -29,7 +29,7 @@ sidebar_position: 2
 
 Следующий раздел, который вы увидите на экране DNS-защиты, — это DNS-сервер. В ней показаны выбранные в данный момент DNS-сервер и тип шифрования. Нажмите на кнопку «DNS-сервер», если хотите изменить один из этих параметров (или оба).
 
-![DNS-серверы \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_ru.jpeg)
+![DNS-серверы \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_ru.jpeg)
 
 Серверы отличаются скоростью, используемым протоколом, надёжностью, политикой логирования и т. д. По умолчанию AdGuard предложит несколько DNS-серверов из числа наиболее популярных (включая AdGuard DNS). Нажмите на любой из них, чтобы изменить тип шифрования (если такая опция предусмотрена владельцем сервера) или перейти на домашнюю страницу сервера. Мы добавили такие ярлыки, как `Политика «Без логов»`, `Блокировка рекламы`, `Безопасность`, чтобы помочь вам сделать выбор.
 
@@ -51,7 +51,7 @@ sidebar_position: 2
 
 ### Настройки сети {#network-settings}
 
-![Настройки сети \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_ru.jpeg)
+![Настройки сети \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_ru.jpeg)
 
 Пользователи также могут управлять DNS-защитой на экране _Настройки сети_. Опции _Фильтровать мобильные данные_ и _Фильтровать Wi-Fi_ включают или отключают DNS-защиту для соответствующих типов сети. Ниже, в разделе _Сети-исключения_, вы можете исключить определённые сети Wi-Fi из DNS-защиты (например, исключить домашнюю сеть, если вы используете [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
 
@@ -63,7 +63,7 @@ DNS-фильтрация позволяет настроить DNS-трафик:
 
 _Защита_ (значок щита в нижней строке меню) → _DNS-защита_ → _DNS-фильтрация_
 
-![Экран DNS-фильтрации \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_ru.jpeg)
+![Экран DNS-фильтрации \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_ru.jpeg)
 
 #### DNS-фильтры {#dns-filters}
 

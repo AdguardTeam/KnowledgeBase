@@ -15,11 +15,11 @@ Tab-ul _Setări_ poate fi accesat atingând pictograma din dreapta jos a ecranul
 
 Această secțiune te ajută să gestionezi aspectul și comportamentul aplicației: poți seta tema de culoare și limba, gestiona notificările și multe altele. Dacă dorești să ajuți echipa AdGuard să detecteze căderile aplicației și să cerceteze utilizabilitatea, poți activa _Raportarea automată a căderilor_ și _Trimiterea datelor tehnice și de interacțiune_.
 
-![General \*mobile\_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
+![General \*mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
 
 Sub _Actualizările aplicației și filtrului_, poți configura actualizările automate ale filtrului și selecta un canal de actualizare a aplicației. Choose _Release_ for more stability and _Beta_ or _Nightly_ for early access to new features.
 
-![Updates \*mobile\_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
+![Updates \*mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
 
 ### Setări avansate
 
@@ -29,23 +29,23 @@ _Watchdog_ ajută la protejarea AdGuard de a fi dezactivat de sistem ([citește 
 
 _Nivelul de jurnalizare_ definește ce date despre funcționarea aplicației ar trebui să fie înregistrate. Implicit, aplicația colectează date despre evenimentele sale. Nivelul _Debug_ înregistrează mai multe evenimente - activează-l dacă echipa AdGuard te solicită pentru a-i ajuta să obțină o mai bună înțelegere a problemei. [Read more about collecting and sending logs](/adguard-for-android/solving-problems/log/)
 
-![Advanced \*mobile\_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
+![Advanced \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
 Secțiunea _Setări de nivel scăzut_ este pentru utilizatorii avansați. [Citește mai multe despre setările de nivel scăzut](/adguard-for-android/solving-problems/low-level-settings/)
 
-![Low-level settings \*mobile\_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
+![Low-level settings \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
 ## Filtrarea
 
 Această secțiune îți permite să gestionezi setările de filtrare HTTPS, filtrele și script-urile de utilizator, și să configurezi un server proxy.
 
-![Filtering \*mobile\_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
+![Filtering \*mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
 
 ### Filtre
 
 AdGuard blochează reclame, trackere și neplăceri prin aplicarea regulilor din filtrele sale. Cele mai multe caracteristici din secțiunea _Protecție_ sunt alimentate de [filtrele AdGuard](/general/ad-filtering/adguard-filters/#adguard-filters). Dacă activezi _Protecția de bază_, aceasta va activa automat filtrul de bază AdGuard și filtrul de reclame mobile AdGuard. Și invers: dacă dezactivezi ambele filtre, _Protecția de bază_ va fi de asemenea dezactivată.
 
-![Filters \*mobile\_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
+![Filters \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
 Filtrele activate implicit sunt suficiente pentru funcționarea normală a AdGuard. Cu toate acestea, dacă dorești să personalizezi blocarea reclamelor, poți folosi alte filtre AdGuard sau filtre terță parte. Pentru a face acest lucru, selectează o categorie și activează filtrele pe care le dorești. Pentru a adăuga un filtru personalizat, atingeti _Filtre personalizate_ → _Adăugați filtru personalizat_ și introduceți URL-ul sau calea către fișier.
 
@@ -61,7 +61,7 @@ Dacă activezi prea multe filtre, unele site-uri pot funcționa incorect.
 
 Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. Pentru a instala scripturi de utilizator, ai nevoie de un manager special de scripturi de utilizator. AdGuard are o astfel de funcționalitate și îți permite să adaugi scripturi de utilizator prin URL sau din fișier.
 
-![Userscripts \*mobile\_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
+![Userscripts \*mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
 #### AdGuard Extra
 
@@ -137,13 +137,13 @@ Modul _VPN local_ nu permite utilizarea AdGuard simultan cu alte VPN-uri. Pentru
 - Deschide contul AdGuard pentru a-ți gestiona licența acolo
 - Reset your license — for example, if you've reached device limit for this license and want to apply another one
 
-![License screen \*mobile\_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![License screen \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
 ## Support
 
 Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting _[FAQ](https://adguard.com/support/adguard_for_android.html)_ or this knowledge base before contacting support.
 
-![Support \*mobile\_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
+![Support \*mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
 If you notice a missed ad, please report it via _Report incorrect blocking_.
 

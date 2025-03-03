@@ -11,7 +11,7 @@ sidebar_position: 1
 
 ブラウザ拡張機能のメイン画面は、ブラウザのツールバーにある拡張機能のアイコンをクリックすることで開くことができます。
 
-![Main menu \*mobile\_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Main menu \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
 メイン画面では、ページ上の任意の要素を手動で非表示にしたり（対応するルールは「ユーザールール」に追加されます）、「フィルタリングログ」を開いてブラウザのトラフィックやブロック要求の情報を随時確認したり、ウェブサイトの安全性の報告を確認したりできます。 さらに、現在閲覧中のウェブサイトについて苦情を提出することができ（例えば、ページ上に見逃された広告がある場合、当社のフィルターエンジニアがご報告を確認し、問題を修正します）、適用されたブロックルールに関する統計情報を見ることができます。
 

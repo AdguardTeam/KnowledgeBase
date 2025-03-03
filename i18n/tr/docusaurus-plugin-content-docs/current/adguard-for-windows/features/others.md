@@ -13,13 +13,13 @@ There are other useful AdGuard options that shouldn't go unnoticed in this artic
 
 ### Destek
 
-![Support \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
+![Support \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
 
 Destek sekmesine tıkladığınızda, bir hatayı bildirebileceğiniz, bir özellik talebi gönderebileceğiniz veya sadece ürün hakkındaki görüşlerinizi paylaşabileceğiniz bir uyarı kutusu açılır.
 
 ### Lisans
 
-![License \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![License \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
 Bu sekme lisansınızla ilgili bilgileri içerir. Burada şunları yapabilirsiniz:
 
@@ -28,13 +28,13 @@ Bu sekme lisansınızla ilgili bilgileri içerir. Burada şunları yapabilirsini
 
 ### Hakkında
 
-![About \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![About \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 
 Bu sekme, programın geçerli sürümü hakkındaki bilgilere ek olarak Lisans sözleşmesi, Gizlilik politikası, Katkıda Bulunanlar, Tartışmalar ve Sürüm geçmişi sayfalarına bazı yararlı bağlantılar sağlar.
 
 ### Güncellemeleri denetleyin
 
-![Check for updates \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![Check for updates \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
 
 Filtre ve kullanıcı betikleri güncellemelerini denetlemek için uygulamanın ana ekranının sağ üst köşesindeki dönen ok simgesine tıklayın.
 

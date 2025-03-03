@@ -25,7 +25,7 @@ _Proteção DNS_ permite filtrar solicitações DNS com a ajuda de um servidor D
 
 - Você também pode bloquear e desbloquear domínios criando regras de usuário. Talvez seja necessário consultar nosso artigo sobre [sintaxe da regra de filtragem de DNS](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
 
-![Proteção DNS \*mobile\_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
+![Proteção DNS \*mobile_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
 
 #### Servidor DNS
 

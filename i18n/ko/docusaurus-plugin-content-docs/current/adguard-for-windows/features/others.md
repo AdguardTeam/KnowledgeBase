@@ -13,13 +13,13 @@ sidebar_position: 5
 
 ### 고객 지원
 
-![지원 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
+![지원 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
 
 지원 탭을 클릭하면 버그를 신고하고 기능 요청을 제출할 수 있는 대화 상자가 열립니다. 또한 제품에 대한 의견을 공유할 수도 있습니다.
 
 ### 라이선스
 
-![라이센스 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![라이센스 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
 이 탭에서는 라이선스에 대한 정보를 확인할 수 있습니다.
 
@@ -28,13 +28,13 @@ sidebar_position: 5
 
 ### 정보
 
-![정보 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![정보 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 
 이 탭에는 현재 버전의 프로그램에 대한 정보 외에도 라이선스 계약, 개인정보취급방침, 감사의 말, 토론 및 버전 기록 페이지로 연결되는 유용한 링크가 있습니다.
 
 ### 업데이트 확인
 
-![업데이트 확인 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![업데이트 확인 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
 
 필터 및 유저스크립트 업데이트를 확인하려면 앱 메인 화면의 오른쪽 상단에 있는 회전 화살표 아이콘을 클릭합니다.
 

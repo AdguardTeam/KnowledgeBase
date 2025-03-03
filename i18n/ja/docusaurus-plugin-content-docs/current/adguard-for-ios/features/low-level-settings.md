@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::
 
-![Low-level settings \*mobile\_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
+![Low-level settings \*mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
 
 【_ローレベル設定_を開く方法】AdGuardアプリ内の_設定_⚙️ → _一般設定_ → (_高度な設定モード_がオフになっている場合はオンにしてから) _詳細設定_ → _ローレベル設定_
 

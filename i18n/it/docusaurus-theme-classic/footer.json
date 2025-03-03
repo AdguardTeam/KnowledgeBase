@@ -64,7 +64,7 @@
     "description": "The label of footer link with label=blog linking to https://adguard.com/blog/index.html"
   },
   "link.item.label.discuss": {
-    "message": "Discussione",
+    "message": "Discuti",
     "description": "The label of footer link with label=discuss linking to https://adguard.com/discuss.html"
   },
   "link.item.label.support_adguard": {
@@ -96,7 +96,7 @@
     "description": "The label of footer link with label=for_browsers linking to https://adguard.com/adguard-browser-extension/overview.html"
   },
   "link.item.label.version_history": {
-    "message": "Cronologia delle versioni",
+    "message": "Cronologia versioni",
     "description": "The label of footer link with label=version_history linking to https://adguard.com/versions.html"
   },
   "link.item.label.faq": {

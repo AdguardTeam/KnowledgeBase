@@ -15,7 +15,7 @@ sidebar_position: 1
 
 全コンテンツブロッカーの一覧、そのステータス、現在含まれている専用フィルタ、使用されているフィルタリングルールの総数は、AdGuardアプリ内の_詳細設定_にある専用画面で確認できます（右下の⚙️アイコン→_一般設定_→_詳細設定_→_コンテンツブロッカー_）。
 
-![Content blockers \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
+![Content blockers \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
 
 :::tip
 
@@ -29,7 +29,7 @@ sidebar_position: 1
 
 フィルタは全て、カテゴリ別に分類されています。 これらのカテゴリ（※コンテンツブロッカーの種類と混同しないでくださいね）のフルリストを表示するには、_AdGuardによる保護_（画面下の左から2番目の盾アイコン）セクションを開き、[_Safariでブロック_] → [_フィルタ_] に進みます。
 
-![Filter groups \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
+![Filter groups \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
 
 フィルタのカテゴリは8つあり、各カテゴリは、共通の目的（広告ブロック、SNSウィジェット、Cookie使用同意通知、オンライン詐欺からのユーザー保護など）を果たす複数のフィルタを統合しています。 どのフィルターが自分のニーズに合うかを決めるには、その説明を読み、ラベル（`ads`、`privacy`、`recommended`など）を参考にしてください。
 
@@ -47,7 +47,7 @@ sidebar_position: 1
 
 [独自の広告フィルタを作成する方法についてはこちら](/general/ad-filtering/create-own-filters)をご覧ください。 フィルタによってはiOSのSafariでは動作しないのでご注意ください。
 
-![User rules screen \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
+![User rules screen \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
 ### ホワイトリスト
 

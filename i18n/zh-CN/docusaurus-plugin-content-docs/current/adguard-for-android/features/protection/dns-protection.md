@@ -25,7 +25,7 @@ DNS 保护功能的工作原理与常规广告和跟踪器拦截不同。 用户
 
 - 用户还可以创建用户规则来屏蔽和解除域名的拦截。 用户可以查阅关于 [DNS 过滤规则语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/)的文章。
 
-![DNS protection \*mobile\_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
+![DNS protection \*mobile_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
 
 #### DNS 服务器
 

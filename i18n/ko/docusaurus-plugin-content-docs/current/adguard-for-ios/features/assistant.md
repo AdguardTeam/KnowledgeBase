@@ -11,7 +11,7 @@ sidebar_position: 5
 
 ### 어시스턴트 {#assistant}
 
-![Safari 어시스턴트 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
+![Safari 어시스턴트 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
 
 어시스턴트는 앱으로 다시 전환하지 않고 브라우저에서 바로 Safari의 필터링을 관리할 수 있도록 도와주는 도구입니다.
 

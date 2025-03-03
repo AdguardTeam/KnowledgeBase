@@ -13,9 +13,9 @@ Safari içerik engelleme ve DNS koruması AdGuard/AdGuard Pro'nun tartışmasız
 
 ### **Koyu tema**
 
-![Light theme \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
+![Light theme \*mobile_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Dark theme \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![Dark theme \*mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
 Residing right at the top of **Settings** → **General** screen, this setting allows you to switch between dark and light themes.
 

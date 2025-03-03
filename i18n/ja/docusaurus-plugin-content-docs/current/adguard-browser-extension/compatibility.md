@@ -17,7 +17,7 @@ AdGuard ブラウザ拡張機能はブラウザ内の広告をブロックでき
 
 ## AdGuard Browser Assistant
 
-![AdGuard Browser Assistant \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
+![AdGuard Browser Assistant \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 
 AdGuard ブラウザアシスタントは、AdGuard ブラウザ拡張機能と同じように機能し、同じように感じられるブラウザ拡張機能ですが、はるかにより軽量で、デスクトップ版AdGuardアプリに干渉しません。 役に立つリンク： [Windows版ブラウザアシスタントの詳細はこちら](/adguard-for-windows/browser-assistant)、[Mac版はこちら](/adguard-for-mac/features/browser-assistant)、[AdGuardホームページからダウンロードするにはこちら](https://adguard.com/adguard-assistant/overview.html)
 

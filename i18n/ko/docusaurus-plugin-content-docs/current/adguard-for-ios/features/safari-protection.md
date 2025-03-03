@@ -15,7 +15,7 @@ sidebar_position: 1
 
 모든 콘텐츠 차단 기능, 해당 기능의 상태, 현재 포함된 주제별 필터, 사용된 필터링 규칙의 총 개수는 해당 화면의 **고급 설정**(오른쪽 하단의 톱니바퀴 아이콘 탭 → **일반** → **고급 설정** → **콘텐츠 차단 기능**)에서 확인할 수 있습니다.
 
-![콘텐츠 차단기 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
+![콘텐츠 차단기 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
 
 :::tip
 
@@ -29,7 +29,7 @@ sidebar_position: 1
 
 모든 필터는 주제별 카테고리로 그룹화됩니다. 이러한 카테고리의 전체 목록을 보려면(콘텐츠 차단과 혼동하지 마세요) 방패 아이콘을 탭하여 **보호** 섹션을 연 다음 **Safari 보호** → **필터**로 이동하세요.
 
-![필터 그룹 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
+![필터 그룹 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
 
 8개의 필터가 있으며, 각 카테고리에는 광고 차단, 소셜 미디어 위젯, 쿠키 알림, 온라인 사기로부터 사용자 보호 등 공통의 목적을 가진 여러 필터가 통합되어 있습니다. 필요에 맞는 필터를 결정하려면 설명을 읽고 라벨(`광고`, `개인정보`, `추천` 등)을 따라 탐색하세요.
 
@@ -47,7 +47,7 @@ sidebar_position: 1
 
 [나만의 광고 필터를 만드는 방법](/general/ad-filtering/create-own-filters)을 알아보세요. 하지만 iOS의 Safari에서는 작동하지 않는 경우가 많다는 점에 유의하세요.
 
-![사용자 규칙 화면 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
+![사용자 규칙 화면 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
 ### 허용 목록 {#allowlist}
 

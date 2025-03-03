@@ -11,30 +11,30 @@ Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multi
 
 ## Pantalla de inicio
 
-Este artículo describe todo lo que ves cuando abres la app, incluyendo _Configuración_, _Soporte_, _Licencia_ y _Acerca de_. También encontrará estadísticas sobre anuncios bloqueados y rastreadores.
+On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
 
 [Pantalla de inicio](/adguard-for-windows/features/home-screen/)
 
 ## Configuración
 
-Puedes personalizar la app para adaptarla a tus necesidades bloqueando solo lo que te molesta, utilizando un servidor DNS de confianza, eliminando cookies de terceros, y más.
+Theme and language settings, ad blocking customization, DNS protection, parental controls, extension management, and advanced options for expert users
 
 [Configuración](/adguard-for-windows/features/settings/)
 
 ## Extensiones
 
-Aquí aprenderás cómo usar AdGuard como un gestor de scripts de usuario para extender la funcionalidad de sitios web. Puedes añadir tus propios scripts así como administrar los existentes.
+A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
 
 [Extensiones](/adguard-for-windows/features/extensions/)
 
 ## Red
 
-Este artículo describe opciones adicionales relacionadas con la red y la configuración de proxy donde puedes especificar qué proxy debe usar AdGuard para actualizar los filtros, descargar nuevas versiones, y así sucesivamente.
+Additional network-related options and proxy settings
 
 [Red](/adguard-for-windows/features/network/)
 
 ## Otras funciones
 
-Aquí puedes encontrar información sobre cómo contactar con el soporte, administrar tu licencia, ver detalles sobre la versión actual y la Política de privacidad, buscar actualizaciones y explorar las opciones disponibles en el menú de la bandeja.
+Support, license management, tray menu options, program version and updates
 
 [Otras funciones](/adguard-for-windows/features/others/)

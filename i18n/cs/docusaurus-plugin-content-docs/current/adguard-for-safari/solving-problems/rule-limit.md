@@ -31,6 +31,6 @@ Nicméně **rozšíření může obsahovat až 150 000 pravidel**. Pokud tento l
 1. Otevřete aplikaci AdGuard pro Safari.
 2. Přejděte dolů a klikněte na _Blokátory obsahu_.
 3. Pod každým blokátorem obsahu můžete vidět povolené filtry a počet aktivních pravidel.
-   ![Content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
+ ![Content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
 
 Pokud je v blokátoru obsahu povoleno více než 150 000 pravidel, může být nutné zakázat některé filtry nebo uživatelská pravidla. Přejděte na _Filtry_, vyberte problematickou kategorii a zakažte filtry nebo uživatelská pravidla, která nepotřebujete.

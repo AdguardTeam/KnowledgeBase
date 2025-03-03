@@ -439,7 +439,7 @@ Değiştirici değerindeki uygulamaların joker karakteri olamaz, örneğin `$ap
 :::info Uyumluluk
 
 - Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$app` modifier.
-- Windows'ta işlem adı, [CoreLibs][] v1.12 veya sonraki sürümlere sahip Windows için AdGuard ile başlayarak büyük/küçük harfe duyarlı değildir.
+- On Windows the process name is case-insensitive starting with AdGuard for Windows with [CoreLibs][] v1.12 or later.
 
 :::
 
@@ -1404,7 +1404,7 @@ In that case, the `$badfilter` rule will disable the corresponding rule for doma
 
 :::caution Limitations
 
-In [AdGuard for Chrome MV3][ext-mv3] a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. Sadece kısmen iptal edilmişse bunu hesaplayamayız. [Örnekler](https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#badfilter)
+In [AdGuard for Chrome MV3][ext-mv3] a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. Sadece kısmen iptal edilmişse bunu hesaplayamayız. [Examples][badfilter-in-mv3].
 
 :::
 
@@ -4547,7 +4547,7 @@ where:
         - `adguard_app_ios` — iOS için AdGuard
         - `adguard_ext_safari` — AdGuard for Safari
         - `adguard_ext_chromium` — AdGuard Browser Extension for Chrome (and chromium-based browsers, e.g. new Microsoft Edge)
-        - `adguard_ext_chromium_mv3` — [Chrome MV3 için AdGuard][ext-mv3]
+        - `adguard_ext_chromium_mv3` — [AdGuard for Chrome MV3][ext-mv3]
         - `adguard_ext_firefox` — AdGuard Browser Extension for Firefox
         - `adguard_ext_edge` — AdGuard Browser Extension for Edge Legacy
         - `adguard_ext_opera` — AdGuard Browser Extension for Opera
@@ -4893,13 +4893,15 @@ The following scriptlets also may be used for debug purposes:
 
 :::
 
-[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#popup
+[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#popup
 
 [Sec-Fetch-Dest header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
 
-[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#jsinject
 
-[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+
+[badfilter-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#badfilter
 
 [cl-apps]: #what-product "AdGuard for Windows, Mac, Android"
 
@@ -4908,7 +4910,6 @@ The following scriptlets also may be used for debug purposes:
 [cl-apps]: #what-product "Windows, Mac, Android için AdGuard"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
 [ext-mv3]: #what-product "Chrome için AdGuard Tarayıcı Uzantısı MV3"
-[ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
 [ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
 [ext-ff]: #what-product "AdGuard Browser Extension for Firefox"
 [ext-ff]: #what-product "AdGuard Browser Extension for Firefox"

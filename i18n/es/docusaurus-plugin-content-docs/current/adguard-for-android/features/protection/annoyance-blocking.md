@@ -13,4 +13,4 @@ Se puede acceder al módulo de protección de seguimiento tocando la pestaña _P
 
 Esta función se basa en los filtros de molestias de AdGuard y te permite bloquear ventanas emergentes, ventanas de asistente en línea, notificaciones de cookies, indicaciones para descargar aplicaciones móviles y molestias similares que no son anuncios pero que aun así restan valor a tu experiencia en línea. [Más información sobre los filtros de molestias](/general/ad-filtering/adguard-filters/#adguard-filters)
 
-![Bloqueo de molestias \*mobile\_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)
+![Bloqueo de molestias \*mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)

@@ -21,19 +21,19 @@ Vechea extensie beta va fi redenumită în [**AdGuard Ad Blocker MV2**](https://
 
 - **Jurnal de filtrare**
 
-  ![Jurnal de filtrare \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+    ![Jurnal de filtrare \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-  Din cauza restricțiilor DNR, nu putem arăta exact care regulă a funcționat, dar vom oferi o “regulă presupusă care a fost declanșată” pe baza motorului nostru. Pentru informații precise, va trebui să instalați singur forma “dezgolită” a extensiei în browserul dumneavoastră. Veți găsi instrucțiuni detaliate despre cum să faceți acest lucru într-un [articol separat](/adguard-browser-extension/solving-problems/debug-rules/).
+    Din cauza restricțiilor DNR, nu putem arăta exact care regulă a funcționat, dar vom oferi o “regulă presupusă care a fost declanșată” pe baza motorului nostru. Pentru informații precise, va trebui să instalați singur forma “dezgolită” a extensiei în browserul dumneavoastră. Veți găsi instrucțiuni detaliate despre cum să faceți acest lucru într-un [articol separat](/adguard-browser-extension/solving-problems/debug-rules/).
 
 - _Tracking protection_ (formerly known as _Stealth mode_)
 
-  ![Protecția împotriva urmăririi \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+    ![Protecția împotriva urmăririi \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
 
-  There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
+    There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
 
 - _Protecția împotriva phishingului și malware-ului_ nu mai este disponibilă în setările generale. To protect yourself from malicious websites and scams, enable the appropriate _Security_ filters in the _Filters_ tab.
 
-  ![Securitate \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+    ![Securitate \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## Limitări
 
@@ -104,8 +104,5 @@ Mai multe detalii despre limitări pot fi găsite pe [GitHub][github-declarative
 Pentru informații suplimentare despre modificatori, vă rugăm să consultați [Baza noastră de cunoștințe](/general/ad-filtering/create-own-filters).
 
 [DNR format]: https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest#build-rules
-
-<!-- TODO: update the following urls after the release/v3.1 branch is merged -->
-
-[github-declarative-converter]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter
-[github-declarative-converter-examples]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#basic-examples
+[github-declarative-converter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#table-of-contents
+[github-declarative-converter-examples]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#basic-examples

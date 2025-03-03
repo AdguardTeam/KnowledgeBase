@@ -11,30 +11,30 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 ## Tela inicial
 
-Este artigo descreve tudo o que você vê quando abre o aplicativo, incluindo _Configurações_, _Suporte_, _Licença_ e _Sobre_. Você também encontrará estatísticas sobre anúncios bloqueados e rastreadores.
+On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
 
 [Tela inicial](/adguard-for-windows/features/home-screen/)
 
 ## Configurações
 
-Você pode personalizar o aplicativo para atender às suas necessidades bloqueando apenas o que te incomoda, usando um servidor DNS confiável, excluindo cookies de terceiros e muito mais.
+Theme and language settings, ad blocking customization, DNS protection, parental controls, extension management, and advanced options for expert users
 
 [Configurações](/adguard-for-windows/features/settings/)
 
 ## Extensões
 
-Aqui você aprenderá como usar o AdGuard como um gerenciador de scripts de usuário para estender a funcionalidade dos sites. Você pode adicionar seus próprios scripts e gerenciar os existentes.
+A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
 
 [Extensões](/adguard-for-windows/features/extensions/)
 
 ## Rede
 
-Este artigo descreve opções adicionais relacionadas à rede e configurações de proxy onde você pode especificar qual servidor proxy o AdGuard deve usar para atualizar filtros, baixar novas versões e assim por diante.
+Additional network-related options and proxy settings
 
 [Rede](/adguard-for-windows/features/network/)
 
 ## Outros recursos
 
-Aqui você pode encontrar informações sobre como entrar em contato com o suporte, gerenciar sua licença, visualizar detalhes sobre a versão atual e a Política de privacidade, verificar atualizações e explorar opções disponíveis no menu de bandeja.
+Support, license management, tray menu options, program version and updates
 
 [Outros recursos](/adguard-for-windows/features/others/)

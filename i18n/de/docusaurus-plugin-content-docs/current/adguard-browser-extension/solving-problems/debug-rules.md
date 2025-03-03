@@ -19,61 +19,61 @@ Diese Anweisungen sind auch für problematische Fälle gedacht, in denen Sie die
 
 1. Klonen Sie das Repository:
 
-   ```bash
-   git clone git@github.com:AdguardTeam/AdguardBrowserExtension.git
-   ```
+    ```bash
+    git clone git@github.com:AdguardTeam/AdguardBrowserExtension.git
+    ```
 
 2. Wechseln Sie in den Ordner:
 
-   ```bash
-   cd AdguardBrowserExtension
-   ```
+    ```bash
+    cd AdguardBrowserExtension
+    ```
 
 3. Wechseln Sie zum Zweig `v5.0`:
 
-   ```bash
-   git checkout v5.0
-   ```
+    ```bash
+    git checkout v5.0
+    ```
 
 4. Installieren Sie Abhängigkeiten:
 
-   ```bash
-   yarn install
-   ```
+    ```bash
+    yarn install
+    ```
 
 ## So erstellen Sie eine Erweiterung
 
 1. Wechseln Sie zum Zweig `v5.0`:
 
-   ```bash
-   git checkout v5.0
-   ```
+    ```bash
+    git checkout v5.0
+    ```
 
 2. Führen Sie den folgenden Befehl im Terminal aus:
 
-   ```bash
-   yarn dev chrome-mv3
-   ```
+    ```bash
+    yarn dev chrome-mv3
+    ```
 
 3. Die erstellte Erweiterung befindet sich in diesem Ordner:
 
-   ```bash
-   ./build/dev/chrome-mv3
-   ```
+    ```bash
+    ./build/dev/chrome-mv3
+    ```
 
 ## So installieren Sie entpackte Erweiterung im Browser
 
 1. Aktivieren Sie den Entwicklermodus:
 
-   ![Entwicklermodus](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
+    ![Entwicklermodus](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
 
 2. Klicken Sie auf _Entpackt laden_:
 
-   ![Entpackte Erweiterung laden](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+    ![Entpackte Erweiterung laden](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
 3. Wählen Sie den Ordner der Erweiterung und klicken Sie auf `Auswählen`:
 
-   ![Auswählen](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
+    ![Auswählen](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
 
 Das war's!
 
@@ -83,16 +83,16 @@ Das war's!
 
 2. Konvertieren Sie die Regeln von txt in deklarative Form:
 
-   ```bash
-   yarn convert-declarative
-   ```
+    ```bash
+    yarn convert-declarative
+    ```
 
 3. Erstellen Sie die Erweiterung erneut:
 
-   ```bash
-   yarn dev chrome-mv3
-   ```
+    ```bash
+    yarn dev chrome-mv3
+    ```
 
 4. Laden Sie die Erweiterung erneut im Browser:
 
-   ![Erweiterung neu laden](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
+    ![Erweiterung neu laden](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)

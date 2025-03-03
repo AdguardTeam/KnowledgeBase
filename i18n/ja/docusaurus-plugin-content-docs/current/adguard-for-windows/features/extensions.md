@@ -11,7 +11,7 @@ sidebar_position: 3
 
 AdGuard can significantly extend website functionality by working as a [userscript manager](/general/extensions.md). AdGuard users can add their own scripts as well as manage existing ones.
 
-![拡張機能画面 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![拡張機能画面 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
 **ユーザースクリプトを自動で検出する**
 
@@ -19,7 +19,7 @@ AdGuard can significantly extend website functionality by working as a [userscri
 
 AdGuard にインストールされている拡張機能は以下の通りです:
 
-![プリインストールされているユーザースクリプト \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![プリインストールされているユーザースクリプト \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
 **AdGuard アシスタント**
 

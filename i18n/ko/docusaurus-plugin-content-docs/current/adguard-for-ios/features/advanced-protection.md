@@ -11,7 +11,7 @@ sidebar_position: 3
 
 iOS 15에서 Apple은 Safari 웹 확장 프로그램에 대한 지원을 추가했으며, iOS용 AdGuard에 새로운 **고급 보호** 모듈을 추가했습니다. 이 기능을 통해 AdGuard는 [CSS 규칙](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [확장 CSS 선택기](/general/ad-filtering/create-own-filters#extended-css-selectors), [스크립틀릿](/general/ad-filtering/create-own-filters#scriptlets) 등의 고급 필터링 규칙을 적용하여 YouTube 광고와 같은 복잡한 광고도 처리할 수 있습니다.
 
-![고급 보호 화면 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
+![고급 보호 화면 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
 
 ### 고급 보호 기능을 활성화하는 방법
 
@@ -23,4 +23,4 @@ iOS 15에서 Apple은 Safari 웹 확장 프로그램에 대한 지원을 추가�
 
 :::
 
-![iOS 14 이하 버전의 보호 화면 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)
+![iOS 14 이하 버전의 보호 화면 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)

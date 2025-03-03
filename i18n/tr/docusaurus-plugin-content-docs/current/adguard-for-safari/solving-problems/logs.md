@@ -27,4 +27,4 @@ AdGuard gizliliğinizi korumaya kararlıdır. [Gizlilik Politikamıza](https://a
 
 1. [Safari için AdGuard GitHub reposunu](https://github.com/AdguardTeam/AdGuardForSafari/issues) açın ve _New issue_ öğesine tıklayın.
 2. Günlük dosyasını devteam@adguard.com adresine gönderin. Hatanın zamanını ekleyin ve sorununuzun bağlantısını veya numarasını ekleyin (başlığın yanında #sayı olarak görünür).
-   Alternatif olarak, günlük dosyasını Google Drive'a yükleyebilir ve devteam@adguard.com adresine gönderebilirsiniz. Dosya bağlantısını GitHub sorununuza ekleyin.
+ Alternatif olarak, günlük dosyasını Google Drive'a yükleyebilir ve devteam@adguard.com adresine gönderebilirsiniz. Dosya bağlantısını GitHub sorununuza ekleyin.

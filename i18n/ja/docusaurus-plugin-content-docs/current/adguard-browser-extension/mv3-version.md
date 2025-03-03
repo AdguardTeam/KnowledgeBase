@@ -21,19 +21,19 @@ AdGuard ブラウザ拡張機能MV3対応版は、SNSウィジェット、バナ
 
 - **フィルタリングログ**
 
-  ![Filtering log \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+    ![Filtering log \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-  DNRの制限により、どのルールが機能したかを正確に示すことはできませんが、AdGuardのエンジンに基づいて「発動したと想定されるルール」を表示します。 正確な情報を確認されたい場合は、ご自身でブラウザにAdGuardブラウザ拡張機能の「解凍」版をインストールする必要があります。 これを行う方法の詳細な手順については、[別の記事](/adguard-browser-extension/solving-problems/debug-rules/)を参照してください。
+    DNRの制限により、どのルールが機能したかを正確に示すことはできませんが、AdGuardのエンジンに基づいて「発動したと想定されるルール」を表示します。 正確な情報を確認されたい場合は、ご自身でブラウザにAdGuardブラウザ拡張機能の「解凍」版をインストールする必要があります。 これを行う方法の詳細な手順については、[別の記事](/adguard-browser-extension/solving-problems/debug-rules/)を参照してください。
 
 - _トラッキング防止_（旧称：_ステルスモード_）
 
-  ![Tracking protection \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+    ![Tracking protection \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
 
-  宣言型ルールを使用して Cookie の TTL を設定できないため、_Cookie_ セクション、_ファーストパーティ Cookie の自己破壊_、_サードパーティ Cookie の自己破壊_ セクションはありません。
+    宣言型ルールを使用して Cookie の TTL を設定できないため、_Cookie_ セクション、_ファーストパーティ Cookie の自己破壊_、_サードパーティ Cookie の自己破壊_ セクションはありません。
 
 - 「_フィッシング＆マルウェア保護_」は、一般設定では利用できなくなりました。 悪質なウェブサイトや詐欺から身を守るには、_フィルタ_タブで適切な「_セキュリティ_」フィルタを有効にしてください。
 
-  ![Security \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+    ![Security \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## 制限
 
@@ -103,8 +103,5 @@ Manifest V3 では、拡張子ごとに静的ルールと正規表現ルール�
 修飾子の詳細については、[ナレッジベース](/general/ad-filtering/create-own-filters)を参照してください。
 
 [DNR format]: https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest#build-rules
-
-<!-- TODO: update the following urls after the release/v3.1 branch is merged -->
-
-[github-declarative-converter]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter
-[github-declarative-converter-examples]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#basic-examples
+[github-declarative-converter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#table-of-contents
+[github-declarative-converter-examples]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#basic-examples

@@ -13,19 +13,19 @@ sidebar_position: 1
 
 3. 启用「开发者模式」。
 
-   ![开发者模式 \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
+    ![开发者模式 \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
 
 4. 点击`background.html`。
 
-   ![背景 \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
+    ![背景 \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
 
 5. 打开「Console」（控制台）选项卡。
 
-   ![控制台选项卡 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
+    ![控制台选项卡 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
 
 6. 打开上下文菜单，选择「另存为…」。
 
-   ![另存为 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
+    ![另存为 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
 
 ### Firefox 浏览器
 
@@ -35,19 +35,19 @@ sidebar_position: 1
 
 3. 单击「调试附加组件」。
 
-   ![调试组件 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+    ![调试组件 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
 
 4. 点击「检查」。
 
-   ![检查 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
+    ![检查 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
 
 5. 打开「Console」（控制台）选项卡。
 
-   ![控制台 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
+    ![控制台 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
 
 6. 单击「Save all Messages to File」（将所有信息保存到文件）。
 
-   ![保存 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
+    ![保存 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
 
 ## 发送日志记录
 

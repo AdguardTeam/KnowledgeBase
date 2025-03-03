@@ -19,11 +19,11 @@ AdGuard Premium para iOS presenta varias diferencias con respecto a la versión 
 
 1. El módulo **Protección DNS** encripta tu tráfico DNS para mejorar la privacidad. Funciona en todas las aplicaciones y navegadores, no sólo en Safari, y ofrece una amplia protección contra anuncios y rastreadores.
 
-   - **Servidores DNS personalizados:** Elige uno de los servidores DNS populares de nuestra lista o agregua tu propio servidor personalizado.
+    - **Servidores DNS personalizados:** Elige uno de los servidores DNS populares de nuestra lista o agregua tu propio servidor personalizado.
 
-   - **Protección familiar:** Internet no siempre es adecuado para los niños. Con AdGuard Premium, puedes cambiar a proveedores de DNS que bloquean contenido para adultos y otro material inapropiado para mantener a tus hijos seguros en línea.
+    - **Protección familiar:** Internet no siempre es adecuado para los niños. Con AdGuard Premium, puedes cambiar a proveedores de DNS que bloquean contenido para adultos y otro material inapropiado para mantener a tus hijos seguros en línea.
 
-   - **Monitoreo y configuración flexible:** El registro de actividad reciente te permite ver todas las solicitudes de DNS enviadas por tu dispositivo y administrar fácilmente tu tráfico agregando sitios web a la lista de bloqueo o lista de autorización con solo un toque.
+    - **Monitoreo y configuración flexible:** El registro de actividad reciente te permite ver todas las solicitudes de DNS enviadas por tu dispositivo y administrar fácilmente tu tráfico agregando sitios web a la lista de bloqueo o lista de autorización con solo un toque.
 
 2. **La protección avanzada** te permite utilizar reglas de filtrado avanzadas para bloquear anuncios más complejos que de otro modo quedarían desbloqueados.
 

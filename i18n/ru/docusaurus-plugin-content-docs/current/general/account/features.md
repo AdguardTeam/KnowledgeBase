@@ -7,14 +7,14 @@ sidebar_position: 2
 
 ## Настройки личного кабинета
 
-In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable one-time code login or [two-factor authentication](../2fa), view the data stored about you by AdGuard, and select the language of your account and notifications.
+В разделе *Настройки* вы можете обновить пароль и адрес почты, включить [двухфакторную аутентификацию](../2fa), просмотреть, какие именно данные хранит AdGuard, и выбрать язык.
 
 В этом разделе вы также можете управлять настройками электронной почты:
 
-- Receive AdGuard newsletter
-- Receive transactional emails
-- Send read receipts to AdGuard
-- Opt-out preferences
+- Получать рассылку AdGuard
+- Получать письма о покупках и изменениях настроек
+- Отправлять уведомления о прочтении в AdGuard
+- Настроить рассылку
 
 ## Лицензии
 
@@ -27,7 +27,7 @@ In the *Settings* section of your AdGuard account, you can update or reset your 
 - улучшенной,
 - отменённой. Вы также можете обновить свои платёжные реквизиты.
 
-Вы можете дать имена устройствам, привязанным к лицензиям Блокировщика AdGuard. To unbind unused devices, click the number of bound devices next to *Devices*, then select the right arrow → *Remove*.
+Вы можете дать имена устройствам, привязанным к лицензиям Блокировщика AdGuard. Чтобы отвязать неиспользуемые устройства, нажмите на число рядом с *Устройствами*, затем на стрелку и *Удалить*.
 
 ## Покупки
 

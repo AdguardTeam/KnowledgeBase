@@ -13,13 +13,13 @@ The Firewall module can be accessed by tapping the _Protection_ tab (second-left
 
 This feature helps manage Internet access for specific apps installed on your device and for the device in general.
 
-![Firewall \*mobile\_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
+![Firewall \*mobile_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
 ### Genel güvenlik duvarı kuralları
 
 This section allows you to control Internet access for the entire device.
 
-![Global firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
+![Global firewall rules \*mobile_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
 
 Bu kurallar, özel kurallar belirlemediğiniz sürece cihazınızdaki tüm uygulamalar için geçerlidir.
 
@@ -29,15 +29,15 @@ In this section, you can control Internet access for specific apps — restrict 
 
 1. Open _Custom firewall rules_. Under _Apps with custom rules_, tap _Add app_.
 
-   ![Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+    ![Custom firewall rules \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
 2. Select the app for which you want to set individual rules.
 
-   ![Adding an app to Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+    ![Adding an app to Custom firewall rules \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
 3. In _Available custom rules_, select the ones you want to configure and tap the “+” icon. The rules will now appear in _Applied custom rules_.
 
-   ![Added rule \*mobile\_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+    ![Added rule \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
 4. Belirli bir bağlantı türünü engellemeniz gerekiyorsa, düğmeyi sola kaydırın. Buna izin vermek istiyorsanız, düğmeyi etkin bırakın. **Custom rules override global ones**: any changes you make in _Global firewall rules_ will not affect this app.
 
