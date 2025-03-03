@@ -13,7 +13,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::caution
 
-Changing the low-level settings can cause problems with AdGuard's performance, interrupt your Internet connection, or compromise your security and privacy. Only use the low-level features only if you are an experienced user and know what you are doing, or if our support team has asked you to do so.
+Changing the low-level settings can cause problems with AdGuard’s performance, interrupt your Internet connection, or compromise your security and privacy. Use the low-level features only if you are an experienced user and know what you are doing, or if our support team has asked you to do so.
 
 :::
 
@@ -21,7 +21,7 @@ To access *Low-level settings*, open the AdGuard app and tap the gear icon in th
 
 ## Low-level settings
 
-For AdGuard v4.x for Android we've completely redesigned the low-level settings. We have reworked the list of settings and organized them into thematic groups with improved descriptions. We also added input validation and other safety valves.
+For AdGuard v4.x for Android we’ve completely redesigned the low-level settings. We have reworked the list of settings and organized them into thematic groups with improved descriptions. We also added input validation and other safety valves.
 
 ### DNS protection
 
@@ -237,7 +237,7 @@ Here you can enter the IP address that will be used to create a TUN interface. T
 
 #### Show Developer tools on the main screen
 
-If this setting is enabled, AdGuard will display the **Developer tools** icon in the upper right corner of the app's home screen.
+If this setting is enabled, AdGuard will display the **Developer tools** icon in the upper right corner of the app’s home screen.
 
 **Developer tools** is a specialized section available in AdGuard for Android v4.3 and later, designed for quick navigation and switching between features. It allows you to quickly enable or disable custom filters, access logs, enable various logs, and more.
 
