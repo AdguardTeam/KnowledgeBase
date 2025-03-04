@@ -1,5 +1,5 @@
 ---
-title: Private browser
+title: Приватный браузер
 sidebar_position: 7
 ---
 
@@ -9,18 +9,18 @@ sidebar_position: 7
 
 :::
 
-In v4.7, AdGuard for Android introduced an in-app private browser. You can access it from the main screen by tapping the _Private browser_ button or from the _Protection_ tab, where you can find some customization options.
+В версии 4.7 AdGuard для Android появился встроенный в приложение приватный браузер. Доступ к нему можно получить с главного экрана, нажав кнопку _Приватный браузер_, или со вкладки _Защита_, где вы найдёте некоторые параметры настройки.
 
-![Private browser](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
+![Приватный браузер](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_ru.png)
 
-Here's what you can set up:
+Вот что вы можете настроить:
 
-- To set a default search engine, tap _Default search engine_ and choose between the available options: DuckDuckGo (default), Google, Bing, Yahoo, Baidu, or Yandex
-- To create a browser shortcut, tap _Create browser widget_ and follow the on-screen instructions
-- To get suggestions from your search engine instead of typing the entire query, toggle the _Search suggestions_ option
+- Чтобы установить поисковую систему по умолчанию, коснитесь _Поисковая система по умолчанию_ и выберите один из доступных вариантов: DuckDuckGo (по умолчанию), Google, Bing, Yahoo, Baidu или Yandex
+- Чтобы создать ярлык браузера, нажмите _Создать виджет браузера_ и следуйте инструкциям на экране
+- Чтобы получать подсказки от поисковой системы, а не вводить весь запрос, включите опцию _Поисковые подсказки_
 
 :::note
 
-The private browser is still in the early stages of development and has some limitations. For now, we recommend using it as a supplement to your browser’s Incognito mode, rather than as a replacement.
+Приватный браузер всё ещё на ранних стадиях разработки и имеет некоторые ограничения. Пока что мы рекомендуем использовать его как дополнение к режиму инкогнито в вашем браузере, а не как его замену.
 
 :::

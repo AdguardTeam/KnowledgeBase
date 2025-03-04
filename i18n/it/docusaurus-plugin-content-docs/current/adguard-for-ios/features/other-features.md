@@ -13,9 +13,9 @@ Mentre il blocco dei contenuti di Safari e la protezione DNS sono indiscutibilme
 
 ### **Tema scuro**
 
-![Tema chiaro \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
+![Tema chiaro \*mobile_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Tema scuro \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![Tema scuro \*mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
 Situata in cima alla schermata delle **Impostazioni** → **Generali**, quest'impostazione ti consente di passare tra i temi scuro e chiaro.
 

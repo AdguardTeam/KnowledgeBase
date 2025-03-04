@@ -29,7 +29,7 @@ To collect **debug** log and send it to us, you need to perform following steps:
 
 1. Go to *Settings* → *General* → *Advanced*.
 1. Tap *Logging level* and set it to *Debug*.
-1. Reproduce the problem and try to remember the exact time it occurred.
+1. Riproduci il problema e cerca di ricordare l'ora esatta in cui si è verificato.
 1. Wait a while, then return to *Settings* and choose the *Support* tab. Tap *Report a bug* and complete the required fields. Don't forget to check the *Send app logs and system info* checkbox. Finally tap *Send*.
 
 If you're interested in following the resolution of your issue and engaging in a dialogue with the developers, we recommend that you take the following steps after completing the first three:

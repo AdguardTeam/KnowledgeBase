@@ -17,7 +17,7 @@ AdGuard 확장 프로그램은 브라우저에서 광고를 차단할 수 있지
 
 ## AdGuard 브라우저 어시스턴트
 
-![AdGuard 브라우저 어시스턴트 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
+![AdGuard 브라우저 어시스턴트 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 
 AdGuard 브라우저 어시스턴트는 AdGuard 브라우저 확장 프로그램처럼 작동하지만 훨씬 가볍고 데스크톱 앱과 간섭하지 않는 브라우저 확장 프로그램입니다. [Windows](/adguard-for-windows/browser-assistant) 또는 [Mac용 브라우저 어시스턴트](/adguard-for-mac/features/browser-assistant)에 대한 자세한 내용을 읽고 [웹사이트에서 다운로드](https://adguard.com/adguard-assistant/overview.html)할 수 있습니다.
 

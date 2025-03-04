@@ -21,7 +21,7 @@ AdGuard poskytuje nejlepší možnou ochranu tím, že kontroluje jak stránky, 
 
 ![AdGuard warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/dangerous_website_blocked.png)
 
-### V rozšířeních prohlížeče
+### V rozšířeních prohlížeče {#extension}
 
 Naše rozšíření prohlížeče mohou kontrolovat pouze názvy domén, nikoli celé adresy URL. Nemohou také kontrolovat poddotazy. To znamená, že pokud jsou na stránce potenciálně škodlivé prvky, budou načteny, i když je stránka sama o sobě z bezpečné domény. Rozšíření proti nim nebude schopno chránit. Je také důležité poznamenat, že prováděná kontrola je asynchronní, tj. probíhá současně s načítáním stránky, takže je možné, že se načte i škodlivý software.
 
@@ -29,27 +29,27 @@ Naše rozšíření prohlížeče mohou kontrolovat pouze názvy domén, nikoli 
 
 - **Pro Windows**: Aktivujte *modul Bezpečné prohlížení* v menu *Nastavení*
 
-![Browsing Security in Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
+    ![Browsing Security in Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
 
 - **Pro macOS**: Povolte modul *Bezpečnost* v *Předvolbách*
 
-![Security in Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
+    ![Security in Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
 
 - **Pro Android**: Zapněte *Bezpečné prohlížení* na kartě *Ochrana*
 
-![Browsing security in Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
+    ![Browsing security in Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
 
 - **Pro iOS**: Ačkoli neexistuje samostatný modul, můžete přejít do *Ochrany Safari* → *Filtrování* → *Bezpečnost* a povolit dostupná filtrování. Dále povolte *DNS ochranu* a vyberte jeden ze serverů AdGuard DNS
 
-![Security in iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
+    ![Security in iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
 
-- **Pro rozšíření prohlížeče**: Povolte *ochranu proti phishingu a malwaru* na kartě *Nastavení*. Pro lepší ochranu přejděte na *Filtrování* → *Bezpečnost* a aktivujte dostupné filtry
+- **Pro rozšíření prohlížeče**: Povolte *ochranu proti phishingu a malwaru* na kartě *Nastavení*. Pro lepší ochranu přejděte na *Filtry* → *Bezpečnost* a aktivujte filtry
 
-![Ochrana proti podvodnému a zákeřnému software](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
+    ![Ochrana proti podvodnému a zákeřnému software](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
 
 - **Pro soukromý AdGuard DNS:** Povolte ochranu proti malware v *Nastavení serveru* v nabídce *Bezpečnost*
 
-![Security in DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
+    ![Security in DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
 
 ## Co blokujeme
 

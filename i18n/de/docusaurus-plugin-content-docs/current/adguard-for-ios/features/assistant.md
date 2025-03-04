@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker,
 
 ### Assistent {#assistant}
 
-![Safari-Assistent \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
+![Safari-Assistent \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
 
 „Assistent” ist ein Werkzeug, mit dem Sie das Filtern in Safari direkt vom Browser aus verwalten können, ohne zurück zur App wechseln zu müssen.
 

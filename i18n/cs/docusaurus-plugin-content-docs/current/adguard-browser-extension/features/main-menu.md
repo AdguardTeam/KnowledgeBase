@@ -11,7 +11,7 @@ Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze v
 
 Hlavní stránka rozšíření je přístupná po kliknutí na ikonu rozšíření na panelu nástrojů prohlížeče.
 
-![Main menu \*mobile\_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Main menu \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
 Na hlavní stránce můžete ručně skrýt libovolný prvek na libovolné stránce (příslušné pravidlo bude přidáno do _Uživatelských pravidel_), otevřít _Záznam filtrování_ a zobrazit kompletní informace o provozu prohlížeče a blokovat požadavky za chodu nebo se podívat na zprávu o zabezpečení webové stránky. Kromě toho můžete podat stížnost na jakoukoli webovou stránku (například pokud jsou na stránce zobrazené reklamy, naši technici filtrů zprávu přezkoumají a problém vyřeší) a zobrazit statistiky použitých pravidel blokování.
 

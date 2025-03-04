@@ -11,24 +11,24 @@ Acest articol se referă la extensia de browser AdGuard, care protejează doar b
 
 ## Main menu
 
-Articolul explică principalele funcții de pe pop-up, cum ar fi activarea sau dezactivarea blocării reclamelor, accesarea setărilor, gestionarea filtrelor și vizualizarea statisticilor de protecție.
+The main popup from which you can access settings, filtering log and statistics, and report problems
 
 [Meniul principal](/adguard-browser-extension/features/main-menu.md)
 
 ## Filtre
 
-Articolul descrie cum extensia de browser AdGuard permite personalizarea blocării reclamelor cu diferite filtre și reguli personalizate pentru utilizatori.
+Filters and user rules to fine-tune ad blocking
 
 [Filtre](/adguard-browser-extension/features/filters.md)
 
 ## Protecție de urmărire (Mod invizibil)
 
-The article explains how this feature enhances privacy by blocking online trackers, hiding user information, and preventing third-party data collection.
+Settings to block cookies, UTM tags, and online analytics that collect user information
 
 [Protecție de urmărire (Mod invizibil)](/adguard-browser-extension/features/stealth-mode.md)
 
 ## Alte caracteristici și opțiuni
 
-The article describes additional features and information, such as update notifications, filtering log, statistics on blocked ads and trackers, links to privacy documents, and the repository.
+General and additional settings, links to privacy documents and the repository
 
 [Alte caracteristici și opțiuni](/adguard-browser-extension/features/other-features.md)

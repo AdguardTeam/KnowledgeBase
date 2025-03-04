@@ -11,18 +11,18 @@ sidebar_position: 1
 
 ## 기능
 
-다음은 Mac용 AdGuard에서 사용할 수 있는 주요 기능 및 설정에 대한 간략한 설명입니다.
+Main features and settings available in AdGuard for Mac
 
 [기능](/adguard-for-mac/features/features.md)
 
 ## 설치 방법
 
-여기에서 시스템 요구사항과 함께 Mac용 AdGuard 설치 및 제거 방법에 대한 지침을 확인할 수 있습니다.
+Installation, removal, and system requirements for AdGuard for Mac
 
 [설치](/adguard-for-mac/installation.md)
 
 ### 문제 해결
 
-이 섹션에는 알려진 문제와 가능한 해결책을 다루는 다양한 글이 포함되어 있습니다.
+Known issues and possible solutions
 
 [문제 해결](/adguard-for-mac/solving-problems/solving-problems.md)

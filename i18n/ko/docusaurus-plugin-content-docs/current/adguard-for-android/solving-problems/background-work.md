@@ -31,19 +31,19 @@ Xiaomi (and especially MIUI) devices are among the most troublesome ones when it
 
 Depending on the MIUI and HyperOS versions, there are two ways to change the battery optimization settings on your phone and block ads more efficiently.
 
-Option 1
+옵션 1
 
-1. Go to **Settings** → **Apps** → **Permissions** → **Background autostart** and allow AdGuard to run in the background
+1. **설정** → **앱** → **권한** → **백그라운드 자동 시작으로** 이동하여 AdGuard가 백그라운드에서 실행되도록 허용합니다.
 
-1. Return to **Settings** → **Apps** → **Manage apps** → **AdGuard** and uncheck **Pause app activity if unused**
+1. **설정** → **앱** → **앱 관리** → **AdGuard**로 돌아가서 **사용하지 않는 경우 앱 활동 일시 중지**를 선택 취소합니다.
 
-1. Go to **Battery saver** and tap **No restrictions**
+1. **배터리 절약**으로 이동하여 **제한 없음**을 탭합니다.
 
-Option 2
+옵션 2
 
-1. Go to **Settings** → **Apps** → **Manage apps** → **AdGuard** and enable **Autostart**
+1. **설정** → **앱** → **앱 관리** → **AdGuard**로 이동하여 **자동 시작**을 활성화합니다.
 
-1. Go to **Battery saver** and tap **No restrictions**
+1. **배터리 절약**으로 이동하여 **제한 없음**을 탭합니다.
 
 끝! You have successfully set up AdGuard to work in the background.
 
@@ -53,7 +53,7 @@ To let your AdGuard app run successfully in the background, do the following:
 
 In **Settings** → **Apps** → **Manage apps**, scroll down to locate **AdGuard** and set **Autostart** to “On”.
 
-![Xiaomi Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
+![Xiaomi 설정 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
 Scroll down to **Battery saver**, tap it, and set to “No restrictions”.
 
@@ -87,9 +87,9 @@ Go to **Settings** → **Apps** → **Manage apps** → **AdGuard**.
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
-- Set Autostart to “On”
+- 자동 시작을 '켜기'로 설정합니다.
 - Set all possible permissions in Other Permissions to “On”
-- Set Battery saver to **No restrictions**
+- 배터리 절약을 **제한 없음**으로 설정합니다.
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi5en.jpeg)
 
@@ -109,7 +109,7 @@ The lock icon should appear above the app window.
 
 To let your app run successfully in the background, configure its settings as follows:
 
-- Set Autostart to “On”
+- 자동 시작을 '켜기'로 설정합니다.
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi1en.png)
 
@@ -121,15 +121,15 @@ To let your app run successfully in the background, configure its settings as fo
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi3en.png)
 
-### All models
+### 모든 기기
 
 The following steps should be performed on any Xiaomi device that keeps killing the AdGuard app:
 
-#### Power management
+#### 전원 관리
 
 Please enable:
 
-- **Settings** → **Advanced Settings** → **Battery manager** → set **Power plan** to **Performance**
+- **설정** → **고급 설정** → **배터리 관리자** → **전원 정책**애서 **성능 우선**을 선택합니다.
 - **Device Settings** → **Advanced Settings** → **Battery Manager** → **Protected apps** — AdGuard needs to be **Protected**
 - **Device Settings** → **Apps** → **AdGuard** → **Battery** → **Power-intensive prompt** and **Keep running after screen off**
 - **Settings** → **Additional Settings** → **Battery & Performance** → **Manage apps’ battery usage** and here:
@@ -249,15 +249,15 @@ For early Samsung devices, there is no huge need for setting up the background o
 
 - Tap the **Recent tasks** button, tap the **Additional settings** icon. It should look like this:
 
- ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_1.png)
+ ![Samsung 설정 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_1.png)
 
 - Tap **Lock Apps**:
 
- ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_2.png)
+ ![Samsung 설정 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_2.png)
 
 - Tap on the lock icon
 
- ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_3.png)
+ ![Samsung 설정 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_3.png)
 
 ## Huawei
 
@@ -569,7 +569,7 @@ On devices running Realme UI 4.0, there are three key configurations to ensure t
         - Allow auto launch
     - In the **App info** section, scroll down and turn off the option **Pause app activity if unused**
 
-    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
+    ![항상 켜져 있는 VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
 
 1. Set up the battery:
 
@@ -577,11 +577,11 @@ On devices running Realme UI 4.0, there are three key configurations to ensure t
     - Find AdGuard in the list and enable **Don't optimize**
     - In **Other settings**, check the **App Quick Freeze** section and disable it for AdGuard
 
-    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
+    ![항상 켜져 있는 VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
 
 1. Enable *Always-On VPN* for AdGuard:
 
     - Go to **Settings → Connection & sharing → VPN**
     - Find **AdGuard** and enable the **Always-on VPN** option
 
-    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)
+    ![항상 켜져 있는 VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)

@@ -11,7 +11,7 @@ Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multif
 
 Modulul _Rețea_ este dedicat filtrării rețelei, și aici veți găsi opțiuni suplimentare legate de rețea. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS_. Acestea sunt măsuri suplimentare importante pentru a filtra mai bine spațiul dumneavoastră web. Majoritatea site-urilor web folosesc acum HTTPS, iar același lucru se aplică și publicității. De pe multe site-uri, cum ar fi youtube.com, facebook.com și x.com, este imposibil să ștergeți reclamele fără filtrarea HTTPS. So keep the _Filter HTTPS_ feature enabled unless you have a strong reason not to.
 
-![Setări rețea \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
+![Setări rețea \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 
 În acest modul, puteți selecta caseta de bifat _Utilizați AdGuard ca proxy HTTP_ pentru a folosi AdGuard ca un proxy HTTP obișnuit care va filtra tot traficul care trece prin el. De asemenea, puteți activa funcția _Filtrare site-uri cu certificate EV_. Certificatele SSL Validare Extinsă (EV) oferă o garanție mai bună; proprietarii acestor site-uri trebuie să treacă printr-un proces riguros și standardizat la nivel global de verificare a identității definit în liniile directoare EV. Care este motivul pentru care unii utilizatori au încredere în site-urile cu astfel de certificate și preferă să nu le filtreze.
 

@@ -71,7 +71,7 @@ sidebar_position: 2
 
 ### 卸载的进阶方法 {#advanced}
 
-如果由于某些原因将无法通过常规的方式卸载应用程序，可以尝试使用卸载的进阶方法。 首先，要通过[该链接下载并安装我们开发人员创建的卸载软件](https://cdn.adtidy.org/distr/windows/Uninstall_Utility.zip)。 您可以将压缩包发送到电脑上的任何一个文件夹里。解压后，请开启 **Adguard_Uninstall_Utility.exe** 文件，并允许应用程序对设备设置进行更改。 然后按照以下说明进行操作：
+如果由于某些原因将无法通过常规的方式卸载应用程序，可以尝试使用卸载的进阶方法。 First of all, you need to [download the uninstaller tool](https://static.adtidy.org/windows/uninstaller/uninstal_utility.zip) created by our developers. 您可以将压缩包发送到电脑上的任何一个文件夹里。解压后，请开启 **Adguard_Uninstall_Utility.exe** 文件，并允许应用程序对设备设置进行更改。 然后按照以下说明进行操作：
 
 - 选择「*AdGuard 广告拦截程序*」和「*标准*」（Standard）卸载类型，然后点击「*卸载*」（Uninstall）。
 

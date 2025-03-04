@@ -19,61 +19,61 @@ sidebar_position: 2
 
 1. Клонируйте репозиторий:
 
-   ```bash
-   git clone git@github.com:AdguardTeam/AdguardBrowserExtension.git
-   ```
+    ```bash
+    git clone git@github.com:AdguardTeam/AdguardBrowserExtension.git
+    ```
 
 2. Перейдите в каталог:
 
-   ```bash
-   cd AdguardBrowserExtension
-   ```
+    ```bash
+    cd AdguardBrowserExtension
+    ```
 
 3. Переключитесь на ветку `v5.0`:
 
-   ```bash
-   git checkout v5.0
-   ```
+    ```bash
+    git checkout v5.0
+    ```
 
 4. Установите зависимости:
 
-   ```bash
-   yarn install
-   ```
+    ```bash
+    yarn install
+    ```
 
 ## Как собрать расширение
 
 1. Переключитесь на ветку `v5.0`:
 
-   ```bash
-   git checkout v5.0
-   ```
+    ```bash
+    git checkout v5.0
+    ```
 
 2. Выполните следующую команду в терминале:
 
-   ```bash
-   yarn dev chrome-mv3
-   ```
+    ```bash
+    yarn dev chrome-mv3
+    ```
 
 3. Собранное расширение будет находиться в каталоге:
 
-   ```bash
-   ./build/dev/chrome-mv3
-   ```
+    ```bash
+    ./build/dev/chrome-mv3
+    ```
 
 ## Как установить распакованное расширение в браузере
 
 1. Включите режим разработчика:
 
-   ![Режим разработчика](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
+    ![Режим разработчика](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
 
 2. Нажмите _Загрузить распакованное_:
 
-   ![Загрузить нераспакованное](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+    ![Загрузить нераспакованное](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
 3. Выберите каталог расширения и нажмите _Выбрать_:
 
-   ![Выбрать](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
+    ![Выбрать](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
 
 Готово!
 
@@ -83,16 +83,16 @@ sidebar_position: 2
 
 2. Преобразуйте правила из txt в декларативный формат:
 
-   ```bash
-   yarn convert-declarative
-   ```
+    ```bash
+    yarn convert-declarative
+    ```
 
 3. Снова соберите расширение:
 
-   ```bash
-   yarn dev chrome-mv3
-   ```
+    ```bash
+    yarn dev chrome-mv3
+    ```
 
 4. Перезагрузите расширение в браузере:
 
-   ![Перезагрузка расширения](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
+    ![Перезагрузка расширения](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)

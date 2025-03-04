@@ -11,18 +11,18 @@ Este artigo é sobre o AdGuard para Android, um bloqueador de anúncios multifun
 
 ## Recursos
 
-Aqui estão os principais recursos e configurações disponíveis no AdGuard para Android.
+Main features and settings available in AdGuard for Android
 
 [Recursos](/adguard-for-android/features/features.md)
 
 ## Instalação
 
-Aqui, você encontrará os requisitos do sistema, juntamente com instruções sobre como instalar e desinstalar o AdGuard para Android.
+Installation, removal, and system requirements for AdGuard for Android
 
 [Instalação](/adguard-for-android/installation.md)
 
 ## Resolvendo problemas
 
-Esta seção inclui vários artigos que abordam problemas conhecidos e possíveis soluções.
+Known issues and possible solutions
 
 [Resolvendo problemas](/adguard-for-android/solving-problems/solving-problems.md)

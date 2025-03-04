@@ -17,7 +17,7 @@ Pokud máte v počítači nainstalovanou desktopovou verzi AdGuard, je lepší p
 
 ## AdGuard Asistent prohlížeče
 
-![AdGuard Browser Assistant \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
+![AdGuard Browser Assistant \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 
 Asistent prohlížeče AdGuard je rozšíření prohlížeče, které funguje a působí stejně jako rozšíření prohlížeče AdGuard, ale je mnohem lehčí a nezasahuje do aplikací na ploše. Můžete si [přečíst více o programu Asistent prohlížeče pro Windows](/adguard-for-windows/browser-assistant) nebo [Mac](/adguard-for-mac/features/browser-assistant), případně [stáhnout z našich webových stránek](https://adguard.com/adguard-assistant/overview.html).
 

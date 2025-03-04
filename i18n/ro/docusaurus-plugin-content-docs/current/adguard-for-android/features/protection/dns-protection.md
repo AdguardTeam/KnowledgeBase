@@ -25,7 +25,7 @@ _Protecția DNS_ vă permite să filtrați cererile DNS cu ajutorul unui server 
 
 - De asemenea, puteți bloca și debloca domenii creând reguli ale utilizatorului. S-ar putea să fie necesar să consultați articolul nostru despre [sintaxa regulilor de filtrare DNS](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
 
-![Protecție DNS \*mobil\_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
+![Protecție DNS \*mobil_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
 
 #### Server DNS
 

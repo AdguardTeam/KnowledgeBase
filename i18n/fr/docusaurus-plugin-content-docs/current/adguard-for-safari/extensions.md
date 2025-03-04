@@ -21,6 +21,7 @@ Pour bloquer les publicités, les traqueurs et les nuisances sur les sites web, 
 - AdGuard Confidentialité
 - AdGuard Social
 - AdGuard Sécurité
+- AdGuard Personnalisé
 - AdGuard Autres
 
 Chaque extension de blocage de contenu peut inclure jusqu'à 150 000 règles de filtrage actives. Le nombre de règles au sein de la plupart des groupes de filtres ne dépasse pas 150 000. Toutefois, si vous activez trop de filtres spécifiques à une langue ou de filtres personnalisés, vous risquez de dépasser la limite. Dans de tels cas, les règles aléatoires dépassant la limite seront automatiquement désactivées, ce qui peut entraîner un blocage incorrect. **Nous vous recommandons fortement d'activer uniquement les filtres dont vous avez besoin**.

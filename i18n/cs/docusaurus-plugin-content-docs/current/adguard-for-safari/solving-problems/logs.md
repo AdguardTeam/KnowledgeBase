@@ -27,4 +27,4 @@ AdGuard se zavazuje chránit vaše soukromí. Přísně dodržujeme naše [Zása
 
 1. Otevřete [GitHub repozitář AdGuard pro Safari](https://github.com/AdguardTeam/AdGuardForSafari/issues) a klikněte na _New issue_.
 2. Odešlete soubor se záznamem na devteam@adguard.com. Uveďte čas chyby a připojte odkaz na problém nebo jeho číslo (zobrazuje se jako #číslo vedle názvu).
-   Soubor se záznamem můžete také nahrát na Disk Google a odeslat jej na adresu devteam@adguard.com. Přidejte odkaz na soubor do svého problému na GitHubu.
+ Soubor se záznamem můžete také nahrát na Disk Google a odeslat jej na adresu devteam@adguard.com. Přidejte odkaz na soubor do svého problému na GitHubu.

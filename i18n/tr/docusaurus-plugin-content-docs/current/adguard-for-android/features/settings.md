@@ -15,11 +15,11 @@ The _Settings_ tab can be accessed by tapping the right-most icon at the bottom 
 
 This section helps you manage the appearance and behavior of the app: you can set the color theme and language, manage notifications, and more. If you want to help the AdGuard team detect app crashes and research usability, you can enable _Auto-report crashes_ and _Send technical and interaction data_.
 
-![General \*mobile\_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
+![General \*mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
 
 Under _App and filter updates_, you can configure automatic filter updates and select an app update channel. Choose _Release_ for more stability and _Beta_ or _Nightly_ for early access to new features.
 
-![Updates \*mobile\_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
+![Updates \*mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
 
 ### Advanced settings
 
@@ -29,23 +29,23 @@ _Watchdog_ helps protect AdGuard from being disabled by the system ([read more a
 
 _Logging level_ defines what data about the app's operation should be logged. Varsayılan olarak, uygulama etkinlikleriyle ilgili verileri toplar. The _Debug_ level logs more events — enable it if asked by the AdGuard team to help them get a better understanding of the problem. [Günlükleri toplama ve gönderme hakkında daha fazla bilgi edinin](/adguard-for-android/solving-problems/log/)
 
-![Advanced \*mobile\_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
+![Advanced \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
 The _Low-level settings_ section is for expert users. [Read more about low-level settings](/adguard-for-android/solving-problems/low-level-settings/)
 
-![Low-level settings \*mobile\_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
+![Low-level settings \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
 ## Filtreleme
 
 This section allows you to manage HTTPS filtering settings, filters, and userscripts, and set up a proxy server.
 
-![Filtering \*mobile\_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
+![Filtering \*mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
 
 ### Filtreler
 
 AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the _Protection_ section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable _Basic protection_, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, _Basic protection_ will also be disabled.
 
-![Filters \*mobile\_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
+![Filters \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
 Filters enabled by default are enough for normal AdGuard operation. However, if you want to customize ad blocking, you can use other AdGuard or third-party filters. To do this, select a category and enable the filters you'd like. To add a custom filter, tap _Custom filters_ → _Add custom filter_ and enter its URL or file path.
 
@@ -61,7 +61,7 @@ If you activate too many filters, some websites may work incorrectly.
 
 Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. Bir kullanıcı betiği yüklemek için özel bir kullanıcı betiği yöneticisine ihtiyacınız vardır. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
 
-![Userscripts \*mobile\_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
+![Userscripts \*mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
 #### AdGuard Extra
 
@@ -137,13 +137,13 @@ In this section, you can find information about your license and manage it:
 - Open the AdGuard account to manage your license there
 - Reset your license — for example, if you've reached device limit for this license and want to apply another one
 
-![License screen \*mobile\_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![License screen \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
 ## Destek
 
 Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting _[FAQ](https://adguard.com/support/adguard_for_android.html)_ or this knowledge base before contacting support.
 
-![Support \*mobile\_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
+![Support \*mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
 If you notice a missed ad, please report it via _Report incorrect blocking_.
 

@@ -9,40 +9,40 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-Tento modul obsahuje následující nastavení:
+Karta _Ochrana_ obsahuje následující funkce nebo nastavení. Podrobný článek ke každému z nich najdete v této databázi znalostí.
 
 ## Blokování reklam
 
-Informace o přizpůsobení blokování reklam, filtrování reklam a slídičů v aplikacích a prohlížečích, s filtry a pokročilými možnostmi pro blokování reklam v celém systému.
+Nastavení blokování reklam v prohlížečích a aplikacích
 
 [Blokování reklam](/adguard-for-android/features/protection/ad-blocking.md)
 
 ## Ochrana před sledováním
 
-Informace o tom, jak zablokovat slídiče třetích stran v aplikacích a na webových stránkách, abyste ochránili své soukromí a zabránili shromažďování údajů.
+Nastavení umožňující blokovat sledovací prvky, které shromažďují informace o uživateli
 
 [Ochrana před sledováním](/adguard-for-android/features/protection/tracking-protection.md)
 
 ## Blokování obtěžování
 
-Informace o tom, jak filtry AdGuard blokují obtěžující prvky, jako jsou vyskakovací okna se souhlasem se soubory cookies, bannery a další rušivé prvky.
+Nastavení pro blokování obtěžujících prvků, jako jsou vyskakovací okna se souhlasem se soubory cookies, widgety sociálních sítí a bannery vyzývající ke stažení mobilních aplikací
 
 [Blokování obtěžování](/adguard-for-android/features/protection/annoyance-blocking.md)
 
 ## DNS ochrana
 
-Informace o konfiguraci zabezpečených serverů DNS, které pomáhají blokovat reklamy, slídiče a škodlivé webové stránky a zároveň chrání vaše soukromí.
+DNS servery a DNS filtry, které umožňují blokovat reklamy, slídiče a nebezpečné webové stránky
 
 [DNS ochrana](/adguard-for-android/features/protection/dns-protection.md)
 
 ## Firewall
 
-Funkce Firewall, která umožňuje uživatelům řídit přístup k internetu pro jednotlivé aplikace, blokovat data na pozadí a sledovat síťovou aktivitu pro lepší ochranu soukromí a správu dat.
+Funkce, která umožňuje řídit přístup k internetu pro jednotlivé aplikace
 
 [Firewall](/adguard-for-android/features/protection/firewall/firewall.md)
 
 ## Bezpečné prohlížení
 
-Funkce Bezpečné prohlížení pomáhá blokovat přístup ke škodlivým a phishingovým webovým stránkám a chrání vás tak před online hrozbami.
+Funkce, která blokuje přístup ke škodlivým a phishingovým webům a chrání vás před online hrozbami
 
 [Bezpečné prohlížení](/adguard-for-android/features/protection/browsing-security.md)

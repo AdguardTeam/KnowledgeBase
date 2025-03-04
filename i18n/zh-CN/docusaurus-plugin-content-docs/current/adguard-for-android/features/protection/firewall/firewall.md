@@ -13,13 +13,13 @@ sidebar_position: 1
 
 此功能有助于管理设备上安装的特定应用程序和设备的互联网连接。
 
-![Firewall \*mobile\_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
+![Firewall \*mobile_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
 ### 全局防火墙规则
 
 该设置让用户控制整个设备的互联网连接。
 
-![Global firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
+![Global firewall rules \*mobile_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
 
 这些规则应用到设备上的所有应用程序，除非您设置自定义规则。
 
@@ -29,15 +29,15 @@ sidebar_position: 1
 
 1. 打开「自定义防火墙规则」。 在「具有自定义规则的应用」下，点击「添加应用」。
 
-   ![Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+    ![Custom firewall rules \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
 2. 选择您想要设置单独规则的应用程序。
 
-   ![Adding an app to Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+    ![Adding an app to Custom firewall rules \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
 3. 在「可用的自定义规则」中，选择要配置的规则并点击「+」。 相应规则会随之出现在「已应用的自定义规则」中。
 
-   ![Added rule \*mobile\_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+    ![Added rule \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
 4. 如您需要拦截特定类型的连接，请切换到左侧。 如您要允许它，请保持开启状态。 **自定义规则会优先于全局规则**：即您在「全局防火墙规则」内所在的更改不会影响此应用。
 

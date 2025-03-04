@@ -13,9 +13,9 @@ Safari 콘텐츠 차단과 DNS 보호는 AdGuard/AdGuard Pro의 두 가지 주�
 
 ### **다크 테마**
 
-![라이트 테마 \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
+![라이트 테마 \*mobile_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![다크 테마 \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![다크 테마 \*mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
 **설정** → **일반** 화면 상단에 있는 이 설정에서는 다크 테마와 라이트 테마를 전환할 수 있습니다.
 

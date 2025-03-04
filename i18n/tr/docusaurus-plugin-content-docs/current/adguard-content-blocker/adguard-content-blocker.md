@@ -11,8 +11,12 @@ This article is about AdGuard Content Blocker, which only safeguards the Samsung
 
 ## Özelliklere genel bakış
 
+AdGuard İçerik Engelleyicide mevcut temel özellikler ve ayarlar
+
 [Features overview](/adguard-content-blocker/overview.md)
 
 ## Kurulum
+
+AdGuard İçerik Engelleyici için yükleme, kaldırma ve sistem gereksinimleri
 
 [Installation](/adguard-content-blocker/installation.md)

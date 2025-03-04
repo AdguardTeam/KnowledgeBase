@@ -889,7 +889,7 @@ Pravidlo odpovídá prostředkům pluginů prohlížeče, např. Java nebo Flash
 
 :::info Kompatibilita
 
-Rules with `$object` modifier are not supported by AdGuard for Safari and AdGuard for iOS.
+Pravidla s modifikátorem `$object` nejsou podporována AdGuardem pro iOS a Safari.
 
 :::
 
@@ -1404,7 +1404,7 @@ V takovém případě pravidlo `$badfilter` zakáže odpovídající pravidlo pr
 
 :::caution Omezení
 
-V [AdGuardu pro Chrome MV3][ext-mv3] se pravidlo s modifikátorem `$badfilter` použije v DNR pouze v případě, že úplně zruší zdrojové pravidlo. Nemůžeme ho vypočítat, pokud je zrušeno pouze částečně. [Příklady](https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#badfilter)
+V [AdGuardu pro Chrome MV3][ext-mv3] se pravidlo s modifikátorem `$badfilter` použije v DNR pouze v případě, že úplně zruší zdrojové pravidlo. Nemůžeme ho vypočítat, pokud je zrušeno pouze částečně. [Příklady][badfilter-in-mv3].
 
 :::
 
@@ -4893,13 +4893,15 @@ Následující skriptlety lze také použít pro účely ladění:
 
 :::
 
-[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#popup
+[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#popup
 
 [Sec-Fetch-Dest]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
 
-[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#jsinject
 
-[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+
+[badfilter-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#badfilter
 
 [cl-apps]: #what-product "AdGuard for Windows, Mac, Android"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"

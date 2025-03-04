@@ -32,13 +32,13 @@ sidebar_position: 5
 
 アプリを選択する(**Chrome を例に挙げよう**)と、実行できる操作のオプションがいくつか表示されます。
 
-![Assistant Chrome menu \*mobile\_border](https://cdn.adtidy.org/blog/new/2fp3ugassistant-menu-chrome-ja.jpg)
+![Assistant Chrome menu \*mobile_border](https://cdn.adtidy.org/blog/new/2fp3ugassistant-menu-chrome-ja.jpg)
 
 #### 最新アクティビティ
 
 AdGuard アプリに移動し、Chrome によって行われた最新 10,000 件のリクエストに関する詳細情報が表示されます。
 
-![App recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/8rrjxchrome-recent-ja.jpg)
+![App recent activity \*mobile_border](https://cdn.adtidy.org/blog/new/8rrjxchrome-recent-ja.jpg)
 
 #### このアプリの統計
 
@@ -72,7 +72,7 @@ AdGuard に移動し、このアプリ（Chrome）に対するファイアウォ
 
 これを押しますと、AdGuardアプリに移動し、www.google.comへの直近10,000リクエストの詳細情報が表示されます。
 
-![website recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/rg2aegoogle-com-recent-ja.jpg)
+![website recent activity \*mobile_border](https://cdn.adtidy.org/blog/new/rg2aegoogle-com-recent-ja.jpg)
 
 #### ウェブサイト統計
 

@@ -101,7 +101,7 @@ If this setting is on, AdGuard will apply all enabled DNS filters and DNS user r
 
 - **Redirect to DNS proxy**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic by redirecting it to the local DNS proxy. The DNS server specified in the AdGuard’s DNS settings will handle all DoH traffic
 
-### Filtering
+### Filtraggio
 
 #### Capture HAR
 
@@ -137,7 +137,7 @@ If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in add
 
 If this is enabled, the *Filter DNS requests* switch will be displayed in the *Add proxy server* dialog. Use it to enable filtering of DNS requests passing through the specified proxy.
 
-### Protection
+### Protezione
 
 #### Port ranges
 

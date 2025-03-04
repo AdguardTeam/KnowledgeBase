@@ -13,11 +13,11 @@ sidebar_position: 6
 
 ブラウジング・セキュリティは、フィッシング詐欺系サイトや悪意のあるウェブサイトへのアクセスを防ぎます。 また、マルウェアのリスクについても警告してくれます。
 
-![ブラウジングセキュリティ \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
+![ブラウジングセキュリティ \*mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
 危険なウェブサイトにアクセスしようとすると、ブラウジング・セキュリティが以下のような警告を表示します:
 
-![ブラウジングセキュリティの警告 \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
+![ブラウジングセキュリティの警告 \*mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
 :::warning
 

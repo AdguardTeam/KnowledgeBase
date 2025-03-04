@@ -13,19 +13,19 @@ sidebar_position: 1
 
 3. _개발자 모드_를 활성화합니다.
 
-   ![개발자 모드 \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
+    ![개발자 모드 \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
 
 4. `background.html`을 클릭합니다.
 
-   ![Background \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
+    ![Background \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
 
 5. _콘솔_ 탭을 엽니다.
 
-   ![콘솔 탭 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
+    ![콘솔 탭 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
 
 6. 상황에 맞는 메뉴를 열어 _다른 이름으로 저장_을 선택합니다.
 
-   ![다른 이름으로 저장 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
+    ![다른 이름으로 저장 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
 
 ### Firefox
 
@@ -35,19 +35,19 @@ sidebar_position: 1
 
 3. _부가 기능 디버그_를 누릅니다.
 
-   ![부가 기능 디버그 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+    ![부가 기능 디버그 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
 
 4. _검사_를 누릅니다.
 
-   ![검사 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
+    ![검사 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
 
 5. _콘솔_ 탭으로 이동합니다.
 
-   ![콘솔 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
+    ![콘솔 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
 
 6. _모든 메세지를 파일에 저장_을 클릭합니다.
 
-   ![저장 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
+    ![저장 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
 
 ## 로그 전송하기
 

@@ -13,11 +13,11 @@ The Browsing security module can be accessed by tapping the _Protection_ tab (se
 
 Securitatea la navigare te protejează de vizitarea site-urilor de phishing și rău intenționate. It also warns you about potential malware.
 
-![Securitate la navigare \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
+![Securitate la navigare \*mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
 Dacă urmează să vizitați un site web periculos, Securitatea la navigare vă va arăta următoarea avertizare:
 
-![Avertizare de securitate la navigare \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
+![Avertizare de securitate la navigare \*mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
 :::warning
 

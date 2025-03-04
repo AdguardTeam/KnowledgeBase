@@ -71,7 +71,7 @@ AdGuard 제거 및 재설치 방법은 다음과 같습니다.
 
 ### 고급 방법 {#advanced}
 
-일반 방법으로 프로그램이 제거되지 않으면 고급 방법을 시도할 수 있습니다. 먼저 AdGuard 개발자가 만든 [제거 도구를 다운로드](https://cdn.adtidy.org/distr/windows/Uninstall_Utility.zip)하세요. 이 링크를 클릭하면 제거 도구를 다운로드할 수 있습니다. 컴퓨터의 폴더에 압축을 풀고 **Adguard_Uninstall_Utility.exe** 파일을 실행합니다. 그런 다음 지침을 따르세요.
+일반 방법으로 프로그램이 제거되지 않으면 고급 방법을 시도할 수 있습니다. First of all, you need to [download the uninstaller tool](https://static.adtidy.org/windows/uninstaller/uninstal_utility.zip) created by our developers. 이 링크를 클릭하면 제거 도구를 다운로드할 수 있습니다. 컴퓨터의 폴더에 압축을 풀고 **Adguard_Uninstall_Utility.exe** 파일을 실행합니다. 그런 다음 지침을 따르세요.
 
 - *AdGuard 광고 차단기* 및 *일반* 제거 방법을 선택한 다음 *제거*를 클릭합니다.
 

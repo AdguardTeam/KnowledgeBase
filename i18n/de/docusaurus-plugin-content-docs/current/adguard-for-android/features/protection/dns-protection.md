@@ -25,7 +25,7 @@ _DNS-Schutz_ ermöglicht das Filtern von DNS-Anfragen mit Hilfe eines ausgewähl
 
 - Sie können Domains auch sperren und entsperren, indem Sie Benutzerregeln erstellen. Dazu sollten Sie unseren Artikel über [Syntax von DNS-Filterregeln](https://adguard-dns.io/kb/general/dns-filtering-syntax/) lesen
 
-![DNS-Schutz \*mobile\_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
+![DNS-Schutz \*mobile_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
 
 #### DNS-Server
 
