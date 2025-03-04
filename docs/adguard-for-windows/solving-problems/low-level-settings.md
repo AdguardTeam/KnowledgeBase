@@ -73,7 +73,7 @@ Otherwise, AdGuard will filter all the traffic on the fly, without redirection. 
 
 ### Open main window at system start-up
 
-Enable this option to make the main AdGuard window open after the system is loaded. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*.
+Enable this option to make the main AdGuard window open after the system is loaded. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in *Settings → General Settings*.
 
 ### Enable filtering at system start-up
 
