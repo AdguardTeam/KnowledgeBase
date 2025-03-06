@@ -73,7 +73,7 @@ Andernfalls filtert AdGuard den gesamten Datenverkehr sofort und ohne Umleitung.
 
 ### Hauptfenster bei Systemstart öffnen
 
-Aktivieren Sie diese Option, damit sich das Hauptfenster von AdGuard nach dem Laden des Systems öffnet. Beachten Sie, dass es keinen Einfluss darauf hat, ob der eigentliche Filterdienst gestartet wurde oder nicht. Diese Einstellung befindet sich in *Einstellungen → Allgemeine Einstellungen*.
+Aktivieren Sie diese Option, damit sich das Hauptfenster von AdGuard nach dem Laden des Systems öffnet. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in *Settings → General Settings*.
 
 ### Filterung beim Systemstart aktivieren
 

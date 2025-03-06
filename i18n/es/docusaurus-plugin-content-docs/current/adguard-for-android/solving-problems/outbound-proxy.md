@@ -141,7 +141,7 @@ Debes eliminar la aplicación Shadowsocks del filtrado antes de configurar el pr
 
 *Aquí asumimos que ya eres un cliente de Clash y lo tienes instalado en tu dispositivo.*
 
-1. Abre Clash y ve a **Configuración** → **Red** → **Tráfico del sistema de ruta** y actívalo. Esto establecerá Clash en modo proxy.
+1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and toggle the switch on. Esto establecerá Clash en modo proxy.
 
 1. Abre AdGuard y ve a **Administración de aplicaciones**. Elige **Clash para Android** y desactiva **Enrutar tráfico a través de AdGuard**. Esto eliminará los loopings de tráfico.
 

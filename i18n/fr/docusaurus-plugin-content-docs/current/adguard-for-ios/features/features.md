@@ -11,54 +11,54 @@ Cet article parle de AdGuard pour iOS, un bloqueur de contenus multifonctionnel 
 
 ## Protection Safari
 
-Available features and settings in the _Safari protection_ tab: _Filters_, _User rules_, and _Allowlist_
+Fonctionnalités et paramètres disponibles dans l'onglet _Protection Safari_ : _Filtres_, _Règles utilisateur_ et _Liste autorisée_
 
 [Protection Safari](/adguard-for-ios/features/safari-protection.md)
 
 ## Protection DNS
 
-DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
+Les serveurs DNS et les filtres DNS qui vous permettent de bloquer les annonces, les traqueurs et les sites Web dangereux
 
 [Protection DNS](/adguard-for-ios/features/dns-protection/)
 
 ## Protection avancée
 
-A feature that allows AdGuard to apply advanced filtering rules and scriptlets to handle complex ads
+Une fonctionnalité qui permet à AdGuard d'appliquer des règles de filtrage avancées et des scripts pour gérer des publicités complexes
 
 [Protection Avancée](/adguard-for-ios/features/advanced-protection.md)
 
 ## Activité et statistiques
 
-Statistics with detailed activity reports that allow you to monitor blocked ads, trackers, and DNS queries
+Les statistiques avec des rapports d'activité détaillés qui vous permettent de surveiller les publicités bloquées, les traqueurs et les requêtes DNS
 
 [Activité et statistiques](/adguard-for-ios/features/activity.md)
 
 ## Assistant
 
-A tool that lets you quickly manage filtering in Safari right from the browser without opening the AdGuard interface
+Un outil qui vous permet de gérer rapidement le filtrage dans Safari directement depuis le navigateur sans ouvrir l’interface AdGuard
 
 [Assistant AdGuard](/adguard-for-ios/features/assistant.md)
 
 ## Paramètres de bas niveau
 
-Settings that allow advanced users to fine-tune app performance and adjust DNS protection
+Paramètres qui permettent aux utilisateurs avancés d'affiner les performances de l'application et d'ajuster la Protection DNS
 
 [Paramètres de bas niveau](/adguard-for-ios/features/low-level-settings.md)
 
 ## Autres fonctions
 
-General settings: theme, settings and statistics reset, auto-update
+Mode général : thème, paramètres et réinitialisation des statistiques, mise à jour automatique
 
 [Autres fonctionnalités](/adguard-for-ios/features/other-features.md)
 
 ## Compatibilité avec AdGuard VPN
 
-Integrated mode that allows AdGuard Ad Blocker and AdGuard VPN to run simultaneously despite system limitations
+Mode intégré qui permet au Bloqueur AdGuard et à AdGuard VPN de fonctionner simultanément malgré les limitations du système
 
 [Compatibilité avec AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 
 ## Version gratuite vs version complète
 
-Comparison of features between the free and paid versions
+Une comparaison des fonctionnalités de la version gratuite à la version payante
 
 [Version gratuite vs. version complète](/adguard-for-ios/features/free-vs-full.md)

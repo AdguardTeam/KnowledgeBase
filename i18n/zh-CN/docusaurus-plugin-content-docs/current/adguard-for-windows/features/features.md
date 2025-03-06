@@ -23,13 +23,13 @@ Theme and language settings, ad blocking customization, DNS protection, parental
 
 ## 浏览器扩展
 
-A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
+通过添加用户脚本和用户样式来扩展网站功能的功能。
 
 [扩展](/adguard-for-windows/features/extensions/)
 
 ## 网络
 
-Additional network-related options and proxy settings
+其他网络相关选项和代理设置。
 
 [网络](/adguard-for-windows/features/network/)
 

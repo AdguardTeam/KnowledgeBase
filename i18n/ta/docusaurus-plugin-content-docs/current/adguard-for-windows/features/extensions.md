@@ -11,7 +11,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 AdGuard can significantly extend website functionality by working as a [userscript manager](/general/extensions.md). AdGuard users can add their own scripts as well as manage existing ones.
 
-![Extensions \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
 **Automatically detect userscripts**
 
@@ -19,7 +19,7 @@ With this option enabled, AdGuard will automatically define browser queries to u
 
 The following extensions are installed with AdGuard:
 
-![Preinstalled userscripts \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![Preinstalled userscripts \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
 **AdGuard Assistant**
 
@@ -33,7 +33,7 @@ AdGuard Extra is essentially a miniprogram that changes the way pages work in su
 
 **AdGuard Popup Blocker**
 
-This extension prevents popup windows from opening when you view web pages. Some pop-ups are considered useful — they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge Base.
+This extension prevents popup windows from opening when you view web pages. Some popups are considered useful — they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings.
 
 **Web of Trust**
 

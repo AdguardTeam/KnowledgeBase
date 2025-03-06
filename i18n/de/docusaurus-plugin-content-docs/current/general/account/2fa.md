@@ -25,9 +25,9 @@ Wir empfehlen die Einrichtung einer Zwei-Faktor-Authentifizierung für Ihr AdGua
 
 Nachdem Sie die Zwei-Faktor-Authentifizierung aktiviert haben, können Sie zwischen zwei Optionen wählen:
 
-- *One-time email code*: when you log in, we will ask you to enter the code we sent to your email
+- *Einmaliger E-Mail-Code*: Wenn Sie sich anmelden, werden Sie aufgefordert, den Code einzugeben, der Ihnen per E-Mail zugesandt wurde
 
-- *Code from authenticator app*: when you log in, we will ask for a code from your authenticator app
+- *Code aus der Authentifikator-App*: Wenn Sie sich anmelden, wird ein Code aus Ihrer Authentifikator-App abgefragt
 
 ![2FA-Optionen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 

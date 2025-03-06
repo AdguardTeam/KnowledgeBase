@@ -11,9 +11,9 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 ## Požadavky na systém
 
-**Operační systém:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
+**Operační systém:** Microsoft Windows 11, 10, 8.1, 8.
 
-**RAM:** alespoň 512 MB.
+**RAM:** alespoň 1 GB.
 
 **Volné místo na disku:** 150 MB.
 

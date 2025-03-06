@@ -105,7 +105,7 @@ Um eine HAR-Datei in Internet Explorer 11 zu erstellen, gehen Sie folgendermaße
 
     - Die Wiedergabetaste wird während der Aufnahme grau und die Stopptaste rot dargestellt. Wechseln Sie in den **Wiedergeben**-Modus.
 
-1. Löschen Sie alle Sitzungsinformationen, die in der unteren Tabelle angezeigt werden, mit der Schaltfläche **Sitzung löschen** im Tab „Netzwerk“. Bewegen Sie den Mauszeiger über die Symbole, um deren Namen anzuzeigen.
+1. Clear any session info appearing in the lower grid using the **Clear session** button on the **Network** tab. Bewegen Sie den Mauszeiger über die Symbole, um deren Namen anzuzeigen.
 
     - Die Schaltfläche **Sitzung löschen** ist ein dreizeiliges Symbol mit einem X darauf.
 
@@ -113,7 +113,7 @@ Um eine HAR-Datei in Internet Explorer 11 zu erstellen, gehen Sie folgendermaße
 
 1. Reproduzieren Sie die Schritte, die das Problem verursachen.
 
-1. Speichern Sie die Sitzung als .har-Datei, indem Sie auf der Tab „Netzwerk“ auf die Schaltfläche **Auf Datenträger speichern** (Export als HAR) klicken.
+1. Save session as a .har file by clicking the **Save to disk** button (Export as HAR) on the **Network** tab.
 
 1. Senden Sie die Datei an den AdGuard-Support (support@adguard.com) mit einer detaillierten Erklärung des Problems. Zusätzliche Bildschirmfotos können ebenfalls hilfreich sein.
 

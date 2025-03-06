@@ -1,5 +1,5 @@
 ---
-title: Blocco degli annunci
+title: Blocco inserzioni
 sidebar_position: 1
 ---
 

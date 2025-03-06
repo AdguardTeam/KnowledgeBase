@@ -23,7 +23,7 @@ Na parte inferior da tela, você encontrará as _Configurações avançadas_. Se
 
 ### Bloqueador de anúncios
 
-Este é o módulo principal do AdGuard para Windows que remove anúncios dos sites que você visita e dos aplicativos instalados no seu dispositivo. Para filtrar publicidade e conteúdo que ameaça a privacidade como banners, pop-ups ou rastreadores, o AdGuard usa filtros diferentes: grupos de regras com finalidade semelhante escritas com uma [sintaxe especial](/general/ad-filtering/create-own- filtros). Para entender o que são filtros e como funcionam, leia [este artigo](/general/ad-filtering/how-ad-blocking-works).
+Este é o módulo principal do AdGuard para Windows que remove anúncios dos sites que você visita e dos aplicativos instalados no seu dispositivo. To filter out advertising and privacy-threatening content such as banners, popups, or trackers AdGuard uses different filters — groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). Para entender o que são filtros e como funcionam, leia [este artigo](/general/ad-filtering/how-ad-blocking-works).
 
 ![Bloqueador de anúncios \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
@@ -54,7 +54,7 @@ Para saber tudo sobre o Modo Sigiloso e suas diversas opções, [leia este artig
 
 A segurança da navegação oferece forte proteção contra sites maliciosos e de phishing. Não, o AdGuard para Windows não é um antivírus. Ele não interromperá o download de um vírus quando ele já estiver iniciado, nem excluirá os já existentes. Mas ele te avisará se você estiver prestes a acessar um site cujo domínio tenha sido adicionado ao nosso banco de dados de "sites não confiáveis" ou a fazer download de um arquivo desse site. Você pode encontrar mais informações sobre como este módulo funciona no [nosso artigo](/general/browsing-security).
 
-Neste módulo você pode
+In this module, you can:
 
 - ativar notificações para bloquear solicitações a sites maliciosos e de phishing,
 - ativar notificações sonoras,

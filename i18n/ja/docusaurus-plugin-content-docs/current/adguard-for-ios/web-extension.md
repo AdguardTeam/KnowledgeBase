@@ -51,7 +51,7 @@ AdGuard の Safari Web 拡張機能は、これらのタイプのフィルタリ
 
 ![これらの拡張機能を許可するセクションで AdGuard を選択 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_ja.png)
 
-「AdGuard」のスイッチをオンにします。 同画面の下の「*すべてのWebサイト*」が「*許可*」または「*尋ねる*」になっていることを確認してください。 「*許可*」を選択すると、新しい Web サイトにアクセスするたびに許可を与える手間がなくなります。 サイトごとに許可を与えたい場合には「*尋ねる*」選択してください。
+Tap it, then toggle the switch on. 同画面の下の「*すべてのWebサイト*」が「*許可*」または「*尋ねる*」になっていることを確認してください。 「*許可*」を選択すると、新しい Web サイトにアクセスするたびに許可を与える手間がなくなります。 サイトごとに許可を与えたい場合には「*尋ねる*」選択してください。
 
 ![拡張機能設定 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_ja.png)
 

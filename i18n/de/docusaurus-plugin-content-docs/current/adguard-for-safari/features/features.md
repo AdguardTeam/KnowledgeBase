@@ -5,30 +5,30 @@ sidebar_position: 1
 
 ## Allgemein
 
-Basic features, including notifications, update intervals, and logging level
+Grundlegende Funktionen, einschließlich Benachrichtigungen, Aktualisierungsintervalle und Protokollierungsstufe
 
 [Allgemein](/adguard-for-mac/features/general.md)
 
 ## Filter
 
-Different filters that allow you to customize ad blocking
+Verschiedene Filter, mit denen Sie die Werbeblockierung anpassen können
 
 [Filter](/adguard-for-safari/features/filters.md)
 
 ## Inhaltsblocker
 
-Six thematic content blockers that conform to Apple’s restrictions
+Sechs thematische Inhaltsblocker, die den Beschränkungen von Apple entsprechen
 
 [Inhaltsblocker](/adguard-for-safari/features/content-blockers/content-blockers.md)
 
 ## Benutzerregeln
 
-Custom filtering rules to fine-tune ad blocking
+Benutzerdefinierte Filterregeln zur Feinabstimmung der Werbeblockierung
 
 [Benutzerregeln](/adguard-for-safari/features/rules.md)
 
 ## Über uns
 
-A section with links to privacy documents, GitHub repository, and version history
+Ein Abschnitt mit Links zu Datenschutzdokumenten, dem GitHub-Repository und dem Versionsverlauf
 
 [Über uns](/adguard-for-safari/features/about.md)

@@ -23,7 +23,7 @@ Zde můžete nastavit jazyk a motiv (tmavý nebo světlý), povolit spouštění
 
 ### Blokátor reklam
 
-Jedná se o hlavní modul AdGuardu pro Windows, který odstraňuje reklamy z navštívených webových stránek a aplikací nainstalovaných v zařízení. K filtrování reklam a obsahu ohrožujícího soukromí, jako jsou bannery, vyskakovací okna nebo slídiče, používá AdGuard různé filtry: skupiny pravidel s podobným účelem zapsané pomocí [speciální syntaxe](/general/ad-filtering/create-own-filters). Chcete-li pochopit, co jsou to filtry a jak fungují, přečtěte si [tento článek](/general/ad-filtering/how-ad-blocking-works).
+Jedná se o hlavní modul AdGuardu pro Windows, který odstraňuje reklamy z navštívených webových stránek a aplikací nainstalovaných v zařízení. K filtrování reklam a obsahu ohrožujícího soukromí, jako jsou bannery, vyskakovací okna nebo slídiče, používá AdGuard různé filtry — skupiny pravidel s podobným účelem zapsané pomocí [speciální syntaxe](/general/ad-filtering/create-own-filters). Chcete-li pochopit, co jsou to filtry a jak fungují, přečtěte si [tento článek](/general/ad-filtering/how-ad-blocking-works).
 
 ![Ad Blocker \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
@@ -70,26 +70,26 @@ Existují tři důležité důvody, proč byste měli prozkoumat nastavení DNS 
 
 ![DNS Protection \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
 
-In the DNS protection module of AdGuard for Windows, you can choose DNS servers from known DNS providers, including AdGuard DNS, which blocks ads and trackers, AdGuard DNS Family Protection, which also blocks adult content, or AdGuard DNS Non-filtering, which provides a secure and reliable connection but doesn’t filter anything. You can even add custom DNS servers and rules using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). If necessary, you can add [DNS filters of your choice](https://filterlists.com).
+V modulu DNS ochrany AdGuardu pro Windows můžete vybrat DNS servery od známých poskytovatelů DNS, včetně [AdGuard DNS](https://adguard-dns.io/kb/), který blokuje reklamy a slídiče, AdGuard DNS Ochrana rodiny, který navíc blokuje obsah pro dospělé, nebo AdGuard DNS - bez filtrování, který poskytuje bezpečné a spolehlivé připojení, ale nic nefiltruje. Můžete dokonce přidat vlastní DNS servery a pravidla pomocí [syntaxe pravidel DNS](https://adguard-dns.io/kb/general/dns-filtering-syntax/). Pokud je to nutné, můžete přidat [DNS filtry dle vlastního výběru](https://filterlists.com).
 
-Starting with v7.20, you can also add filters by simply selecting them from a list of pre-built, trusted filters. They are grouped into four categories for your convenience:
+Od verze 7.20 můžete také přidávat filtry jednoduchým výběrem ze seznamu předpřipravených důvěryhodných filtrů. Pro vaše pohodlí jsou rozděleny do čtyř kategorií:
 
-- **General**: block ads and trackers
-- **Regional**: block ads and trackers on language-specific websites
-- **Security**: block phishing and unreliable websites
-- **Other**: cover special use cases that don’t fit into the above categories
+- **General**: blokování reklam a slídičů
+- **Regional**: blokování reklam a slídičů na webových stránkách v konkrétním jazyce
+- **Security**: blokování phishingových a nespolehlivých webových stránek
+- **Other**: pokrývají zvláštní případy použití, které nespadají do výše uvedených kategorií
 
 ![DNS filters \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
 
-### Parental Control
+### Rodičovská ochrana
 
-There are several websites to which access should be restricted from a PC used by children. This task is accomplished by Parental Control.
+Existuje několik webových stránek, ke kterým by měl být omezen přístup z PC používaného dětmi. Tento úkol zajišťuje Rodičovská ochrana.
 
 ![Parental Control \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
-The module checks the contents of web pages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental Control settings are password-protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results.
+Modul kontroluje obsah webových stránek otevřených v prohlížeči a filtruje ty, jejichž obsah je pro děti nežádoucí: obrázky a texty pro dospělé, hrubý jazyk, násilí, propagace drog atd. Nastavení Rodičovské ochrany jsou zabezpečena heslem, takže dítě nemůže obejít omezení. Tento modul nejenže blokuje vstup na nežádoucí stránky, ale také dokáže z výsledků vyhledávání odstranit odkazy, které jsou nevhodné pro děti.
 
-In the _Parental Control_ module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. You can also check the _Block executable files download_ box to prevent your child from downloading and installing software on the computer. There are two more options in the _Parental Control_ module: you can select a specific Windows user to be protected by _Parental Control_ and set a password to protect AdGuard settings from change.
+V modulu _Rodičovská ochrana_ můžete povolit _Bezpečné vyhledávání_, spravovat _seznam zakázaných_, _seznam povolených_ a přizpůsobit si funkce těchto možností. Můžete také zaškrtnout políčko _Blokovat stahování spustitelných souborů_ a zabránit tak vašemu dítěti ve stahování a instalaci softwaru do PC. V modulu _Rodičovská ochrana_ jsou další dvě možnosti: můžete vybrat konkrétního uživatele Windows, který má být chráněn _Rodičovskou ochranou_ a nastavit heslo pro zabezpečení nastavení AdGuardu před změnami.
 
 ![Parental Control \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
@@ -97,4 +97,4 @@ In the _Parental Control_ module you can enable the _Safe search_ and manage the
 
 ![Browser Assistant \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
-From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](/adguard-for-windows/browser-assistant.md).
+Z této záložky můžete snadno přejít k instalaci Asistenta prohlížeče AdGuard, jehož primární funkcí je správa filtrování přímo z prohlížeče. Více informací o tom, jak s ním pracovat a co dělat, pokud pro váš prohlížeč není k dispozici asistent prohlížeče, jsme uvedli v [samostatném článku](/adguard-for-windows/browser-assistant.md).

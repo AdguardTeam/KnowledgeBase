@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 ## Systemanforderungen
 
-**OS-Version:** Android 7.0 oder höher
+**OS version:** Android 9.0 or higher
 
 **RAM:** mindestens 2 GB
 

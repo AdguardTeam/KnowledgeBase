@@ -23,7 +23,7 @@ sidebar_position: 2
 
 ### Блокировщик рекламы
 
-Это основной модуль AdGuard для Windows, блокирующий рекламу на сайтах, которые вы посещаете, и в приложениях, установленных на вашем устройстве. Для фильтрации рекламы и контента, угрожающего конфиденциальности, такого как баннеры, всплывающие окна или трекеры, AdGuard использует разные фильтры — группы правил с похожим назначением, написанные с использованием [специального синтаксиса](/general/ad-filtering/create-own-filters). [Что такое фильтры и как они работают](/general/ad-filtering/how-ad-blocking-works)
+Это основной модуль AdGuard для Windows, блокирующий рекламу на сайтах, которые вы посещаете, и в приложениях, установленных на вашем устройстве. To filter out advertising and privacy-threatening content such as banners, popups, or trackers AdGuard uses different filters — groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). [Что такое фильтры и как они работают](/general/ad-filtering/how-ad-blocking-works)
 
 ![Блокировка рекламы \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
@@ -54,7 +54,7 @@ sidebar_position: 2
 
 Защита от фишинга надёжно защищает от вредоносных и мошеннических сайтов. Нет, AdGuard для Windows — это не антивирус. Он не остановит загрузку вируса, если она уже началась, и не удалит уже существующие вирусы. Но он предупредит вас, если вы собираетесь перейти на сайт, домен которого был добавлен в нашу базу «ненадёжных сайтов», или загрузить файл с такого сайта. [Как работает Защита от фишинга](/general/browsing-security)
 
-В этом модуле вы можете:
+In this module, you can:
 
 - включить уведомления для блокировки запросов к вредоносным и фишинговым сайтам,
 - активировать звуковые уведомления,

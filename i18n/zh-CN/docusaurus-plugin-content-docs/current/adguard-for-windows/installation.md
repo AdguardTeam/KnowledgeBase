@@ -11,9 +11,9 @@ sidebar_position: 2
 
 ## 系统要求
 
-**操作系统**： Microsoft Windows 11、10、8.1、8、7、Vista
+**Operating system:** Microsoft Windows 11, 10, 8.1, 8.
 
-**RAM**： 至少 512 MB
+**RAM:** at least 1 GB.
 
 **可用磁盘空间**： 150 MB
 

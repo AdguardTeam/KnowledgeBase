@@ -11,9 +11,9 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 ## Sistem gereksinimleri
 
-**İşletim sistemi:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
+**Operating system:** Microsoft Windows 11, 10, 8.1, 8.
 
-**RAM:** en az 512 MB.
+**RAM:** at least 1 GB.
 
 **Boş disk alanı:** 150 Mbyte.
 

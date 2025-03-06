@@ -21,19 +21,19 @@ The old beta extension will be renamed to [**AdGuard Ad Blocker MV2**](https://c
 
 - **Filtering log**
 
-  ![Filtering log \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+    ![Filtering log \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules/).
+    Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules/).
 
 - _Tracking protection_ (formerly known as _Stealth mode_)
 
-  ![Tracking protection \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+    ![Tracking protection \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
 
-  There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
+    There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
 
 - _Phishing & malware protection_ is no longer available in the general settings. To protect yourself from malicious websites and scams, enable the appropriate _Security_ filters in the _Filters_ tab.
 
-  ![Security \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+    ![Security \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## Limitations
 

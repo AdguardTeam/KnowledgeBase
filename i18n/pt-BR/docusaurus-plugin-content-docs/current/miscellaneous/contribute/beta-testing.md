@@ -17,11 +17,11 @@ Nossos requisitos são simples: use o AdGuard, atualize para a versão beta/nigh
 
 Você também precisará do dispositivo no qual instalará o aplicativo e [o link para a página de testes beta](https://adguard.com/beta.html). Lá você encontrará mais informações sobre como se juntar ao nosso programa e testar o AdGuard para Windows, iOS e Android.
 
-Se quiser pular a parte da descrição e ir direto para a ação, você pode se inscrever [aqui](https://surveys.adguard.com/beta_testing_program/form.html). Sua inscrição será analisada dentro de 1 a 3 dias úteis e você receberá uma resposta por e-mail.
+Se quiser pular a parte da descrição e ir direto para a ação, você pode se inscrever [aqui](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1–3 working days, and you'll get a reply via email.
 
 :::note
 
-Para obter a versão beta ou a compilação noturna do AdGuard para iOS, primeiro você precisa instalar o [Testflight](https://apps.apple.com/app/testflight/id899247664) no seu dispositivo iOS.
+To get the AdGuard for iOS beta or nightly build, first you have to install [TestFlight](https://apps.apple.com/app/testflight/id899247664) on your iOS device.
 
 :::
 
@@ -37,10 +37,10 @@ O método acima é o melhor, mas você pode usar outros, se necessário:
 
 ## Como ativar a chave beta no aplicativo para o iOS {#ios}
 
-Se você já recebeu uma chave beta e ela está listada em sua conta `adguard.com`, acesse o aplicativo e abra a seção de licenças (Obtenha Premium). Uma vez lá, insira as credenciais da sua conta do AdGuard. Depois disso, os recursos premium ficarão disponíveis automaticamente.
+If you have already received a beta or nightly key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Uma vez lá, insira as credenciais da sua conta do AdGuard. Depois disso, os recursos premium ficarão disponíveis automaticamente.
 
 ### E o que mais?
 
 Não há muito mais a acrescentar. Você não precisa se esforçar para encontrar bugs. Você pode continuar usando o AdGuard normalmente. No entanto, se você encontrar um bug, por favor, nos informe. É claro que apreciamos qualquer esforço adicional.
 
-Ocasionalmente, você receberá nossos boletins, mantendo-o informado sobre as últimas mudanças no beta (caso você tenha perdido) e outras notícias importantes. Você pode cancelar a assinatura a qualquer momento.
+Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta/nightly (in case you missed them) and other important news. Você pode cancelar a assinatura a qualquer momento.

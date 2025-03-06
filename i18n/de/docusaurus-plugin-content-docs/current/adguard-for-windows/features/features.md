@@ -11,30 +11,30 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 ## Startseite
 
-On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
+Auf dem Hauptbildschirm finden Sie _Einstellungen_, _Support_, _Lizenz_ und _Über_, sowie Statistiken über blockierte Werbung und Tracker
 
 [Startbildschirm](/adguard-for-windows/features/home-screen/)
 
 ## Einstellungen
 
-Theme and language settings, ad blocking customization, DNS protection, parental controls, extension management, and advanced options for expert users
+Design- und Spracheinstellungen, Anpassung des Werbeblockers, DNS-Schutz, Kindersicherung, Erweiterungsverwaltung und erweiterte Optionen
 
 [Einstellungen](/adguard-for-windows/features/settings/)
 
 ## Erweiterungen
 
-A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
+Eine Funktion, mit der Sie die Funktionalität von Websites durch Hinzufügen von Benutzerskripten und Benutzerstilen erweitern können
 
 [Erweiterungen](/adguard-for-windows/features/extensions/)
 
 ## Netzwerk
 
-Additional network-related options and proxy settings
+Zusätzliche netzwerkbezogene Optionen und Proxy-Einstellungen
 
 [Netzwerk](/adguard-for-windows/features/network/)
 
 ## Weitere Funktionen
 
-Support, license management, tray menu options, program version and updates
+Support, Lizenzverwaltung, Tray-Menü-Optionen, Programmversion und Updates
 
 [Weitere Funktionen](/adguard-for-windows/features/others/)

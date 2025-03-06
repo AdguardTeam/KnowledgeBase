@@ -11,9 +11,9 @@ Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multi
 
 ## Requisitos del sistema
 
-**Sistema operativo:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
+**Operating system:** Microsoft Windows 11, 10, 8.1, 8.
 
-**RAM:** al menos 512 MB.
+**RAM:** at least 1 GB.
 
 **Espacio libre en disco:** 150 Mbytes.
 

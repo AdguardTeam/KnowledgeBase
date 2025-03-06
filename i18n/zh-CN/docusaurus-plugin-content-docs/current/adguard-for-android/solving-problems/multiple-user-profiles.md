@@ -68,7 +68,7 @@ sidebar_position: 10
 
 :::note
 
-在某些情况下，受限用户账户会自动创建，且无法删除。 例如，您在 **Android** 或 **LG** 设备上使用应用分身或双开应用功能时，将会自动创建受限用户账户。 您可以阅读以下内容以查看，在上面描述的情况下该如何解决问题。
+在某些情况下，受限用户账户会自动创建，且无法删除。 For instance, when you use Dual Messenger or Dual App features on **Samsung** or **LG** devices. 您可以阅读以下内容以查看，在上面描述的情况下该如何解决问题。
 
 :::
 
@@ -84,8 +84,8 @@ sidebar_position: 10
 
 - 前往**设置**；
 - 点击**高级**功能；
-- 向下移动，点击**双 Messenger 账户**；
-- 禁用所有应用的「**双 Messenger 账户**」；
+- Scroll down and press **Dual Messenger**;
+- Disable the **Dual Messenger** for all apps;
 - 锁定您的设备5分钟；
 - 解锁屏幕并重新试图创建 VPN 账号。
 
@@ -93,6 +93,6 @@ sidebar_position: 10
 
 - 前往**设置**；
 - 选择**常规**标签钮；
-- 向下移动，点击**双开应用**；
+- Scroll down and press **Dual App**;
 - 移除应用分身列表中的所有应用；
 - 重启您的设备。

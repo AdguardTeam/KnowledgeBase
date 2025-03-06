@@ -11,9 +11,9 @@ Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunziona
 
 ## Requisiti di sistema
 
-**Sistema operativo:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
+**Operating system:** Microsoft Windows 11, 10, 8.1, 8.
 
-**RAM:** almeno 512 MB.
+**RAM:** at least 1 GB.
 
 **Spazio libero su disco:** 150 Mbyte.
 

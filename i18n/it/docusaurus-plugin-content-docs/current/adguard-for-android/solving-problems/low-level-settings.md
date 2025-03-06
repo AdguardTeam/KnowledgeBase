@@ -113,7 +113,7 @@ Use it only for debugging purposes!
 
 #### Encrypted Client Hello
 
-Ogni connessione Internet crittografata ha una parte non crittografata. Questo è il primissimo pacchetto che contiene il nome del server a cui ti stai connettendo. La tecnologia Encrypted Client Hello dovrebbe risolvere questo problema e crittografare quell'ultima parte di informazioni non crittografate. To benefit from it, enable the *Encrypted Client Hello* option. Utilizza un proxy DNS locale per cercare la configurazione ECH per il dominio. Se trovata, il pacchetto Client Hello sarà crittografato.
+Ogni connessione Internet crittografata ha una parte non crittografata. Questo è il primissimo pacchetto che contiene il nome del server a cui ti stai connettendo. La tecnologia Encrypted Client Hello dovrebbe risolvere questo problema e crittografare quell'ultima parte di informazioni non crittografate. To benefit from it, enable the *Encrypted Client Hello* option. Usa un proxy DNS locale per cercare la configurazione ECH per il dominio. Se trovata, il pacchetto Client Hello sarà crittografato.
 
 #### OCSP checking
 

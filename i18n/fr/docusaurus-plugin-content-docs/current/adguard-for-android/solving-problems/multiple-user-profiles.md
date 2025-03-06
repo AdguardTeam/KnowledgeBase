@@ -68,7 +68,7 @@ About how to manage user accounts from an Android device you can [find here](htt
 
 :::note
 
-In some cases restricted user accounts are created implicitly and cannot be removed. Par exemple, lorsque vous utilisez les fonctionnalités Dual Messenger ou Dual App sur appareils **Samsung** ou **LG**. You can read below how to fix the issue in these cases.
+In some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual Messenger or Dual App features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
 
 :::
 
@@ -84,8 +84,8 @@ Les propriétaires de téléphones **LG** ou **Samsung** peuvent rencontrer un p
 
 - Open **Settings**;
 - Press **Advanced**;
-- Scroll down and press **Dual messenger**;
-- Disable the **Dual messenger** for all apps;
+- Scroll down and press **Dual Messenger**;
+- Disable the **Dual Messenger** for all apps;
 - Lock the device for 5 minutes;
 - Unlock the screen and try again to create the VPN profile.
 
@@ -93,6 +93,6 @@ Les propriétaires de téléphones **LG** ou **Samsung** peuvent rencontrer un p
 
 - Open **Settings**;
 - Choose **General** tab;
-- Scroll down and press **Dual app**;
+- Scroll down and press **Dual App**;
 - Remove all apps from the list;
 - Reboot your device.
