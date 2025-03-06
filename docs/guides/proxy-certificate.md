@@ -55,7 +55,7 @@ Depending on the operating system of the device whose traffic you want to filter
 
 1. Click **Set up** in the *Use a proxy server* tab.
 
-1. Turn the toggle on. For **Proxy IP address**, type the IP address of your computerthat you noted in step 1. For **Port**, enter the port chosen in the network settings of the desktop AdGuard app.
+1. Turn the toggle on. For **Proxy IP address**, type the IP address of your computer that you noted in step 1. For **Port**, enter the port chosen in the network settings of the desktop AdGuard app.
 
 1. Click **Save**.
 
@@ -109,7 +109,7 @@ Depending on the operating system of the device whose traffic you want to filter
 
 1. Open advanced settings of the active Wi-Fi network.
 
-1. Change the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your computeryou noted in step 1. For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
+1. Change the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your computer you noted in step 1. For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
 
 ### iOS {#ios}
 
