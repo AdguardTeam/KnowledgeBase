@@ -68,7 +68,7 @@
     "description": "The label of footer link with label=discuss linking to https://adguard.com/discuss.html"
   },
   "link.item.label.support_adguard": {
-    "message": "Aiutare AdGuard",
+    "message": "Sostieni AdGuard",
     "description": "The label of footer link with label=support_adguard linking to https://adguard.com/support-adguard.html"
   },
   "link.item.label.for_windows": {

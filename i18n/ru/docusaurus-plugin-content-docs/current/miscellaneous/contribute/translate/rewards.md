@@ -37,7 +37,7 @@ sidebar_position: 6
 
 > Здравствуйте!
 > 
-> Я перевел(а) более 5 000 слов в AdGuard для Android на (*ваш язык*) — статистика во вложении. Хочу запросить лицензию AdGuard VPN и лицензию Блокировщика рекламы. Моя почта: (*адрес почты*). Я в Crowdin: (*ваше имя пользователя*).
+> Я перевел(а) более 5 000 слов в AdGuard для Android на (*ваш язык*) — статистика во вложении. As a reward, I’d like to request an AdGuard VPN license and an Ad Blocker license My email is (*your email address*). My Crowdin username is (*your username*).
 
 ## Как проверить, сколько вы перевели
 

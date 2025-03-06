@@ -38,10 +38,10 @@ You could say this is a particular subcategory of Error 1603. Olası çözümler
 - Microsoft Installer hizmetini başlatın ve yeniden kaydettirin. Bu biraz uğraş gerektirir.
 
     - *Win + R* tuşlarına basın ve **services.msc** yazın.
-    - Listeden *Windows Installer* öğesini bulun ve çift tıklayın.
+    - Find in the list and double-click *Windows Installer*.
     - Hit *Start* button under *Service status* and hit *OK*. Hizmet durumu **çalışıyor** ise, önce *Durdur* öğesine ve ardından *Başlat* öğesine tıklamalısınız.
-    - *Win + R* tuşlarına basın, ***msiexec /unregister*** yazın ve *Enter* düğmesine basın.
-    - *Win + R* tuşlarına tekrar basın, ***msiexec /regserver*** yazın ve *Enter* düğmesine basın
+    - Press *Win + R*, type ***msiexec /unregister***, and hit *Enter*.
+    - Press *Win + R* again, type ***msiexec /regserver***, and hit *Enter*
 
 - PC'yi yeniden başlatın ve kurulumu baştan başlatın. Bazen sorunu çözmek için bu yeterli olur.
 
@@ -68,10 +68,10 @@ Hata kulağa gerçekte olduğundan daha korkutucu geliyor. Gerçekte bu, birçok
 - Microsoft Installer hizmetini başlatın ve yeniden kaydettirin. Bu biraz uğraş gerektirir.
 
     - *Win + R* tuşlarına basın ve ***services.msc*** yazın.
-    - Listeden *Windows Installer* öğesini bulun ve çift tıklayın.
+    - Find in the list and double-click *Windows Installer*.
     - Hit *Start* button under *Service status* and hit *OK*. Hizmet durumu **çalışıyor** ise, önce *Durdur* öğesine ve ardından *Başlat* öğesine tıklamalısınız.
-    - *Win + R* tuşlarına basın, ***msiexec /unregister*** yazın ve *Enter* düğmesine basın.
-    - *Win + R* tuşlarına tekrar basın, ***msiexec /regserver*** yazın ve *Enter* düğmesine basın
+    - Press *Win + R*, type ***msiexec /unregister***, and hit *Enter*.
+    - Press *Win + R* again, type ***msiexec /regserver***, and hit *Enter*
 
 - Kurulum için sürücüde tam izinleri alın. Dosya konumunda tam izinlere sahip olmadığınız için 1603 hatasının oluşması olasıdır. Ayrıca diğer bazı çözümler kadar kolay değildir:
 

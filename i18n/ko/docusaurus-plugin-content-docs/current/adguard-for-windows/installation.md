@@ -11,9 +11,9 @@ sidebar_position: 2
 
 ## 시스템 요구 사항
 
-**운영 체제**: Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
+**Operating system:** Microsoft Windows 11, 10, 8.1, 8.
 
-**RAM**: 512 MB 이상.
+**RAM:** at least 1 GB.
 
 **디스크 여유 공간**: 150 Mbytes.
 

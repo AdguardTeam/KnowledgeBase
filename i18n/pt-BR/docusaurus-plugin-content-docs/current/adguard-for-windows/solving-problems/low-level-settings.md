@@ -73,7 +73,7 @@ Caso contrário, o AdGuard filtrará todo o tráfego em tempo real, sem redireci
 
 ### Abrir a janela principal na inicialização do sistema
 
-Ative esta opção para abrir a janela principal do AdGuard depois que o sistema for carregado. Observe que isso não afeta se o serviço de filtragem real será iniciado ou não. Esta configuração está localizada em *Configurações → Configurações Gerais*.
+Ative esta opção para abrir a janela principal do AdGuard depois que o sistema for carregado. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in *Settings → General Settings*.
 
 ### Ativar filtragem na inicialização do sistema
 

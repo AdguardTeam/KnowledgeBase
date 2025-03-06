@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
+Cet article concerne AdGuard pour Android, un bloqueur de publicités multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -83,7 +83,7 @@ To manage encrypted traffic, AdGuard installs its CA certificate on your device.
 
 On older versions of Android, the certificate is installed automatically. On Android 11 and later, you need to install it manually. [Installation instructions](/adguard-for-android/solving-problems/manual-certificate/)
 
-The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
+Le certificat CA dans le stockage utilisateur est suffisant pour filtrer le trafic HTTPS dans les navigateurs et certaines applications. Cependant, certaines applications n'acceptent que les certificats provenant du stockage système. Pour filtrer le trafic HTTPS dans celles-ci, vous devez installer le certificat CA d'AdGuard dans le stockage système. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
 ##### HTTPS-filtered apps
 
@@ -147,12 +147,12 @@ Use this section if you have any questions or suggestions regarding AdGuard for 
 
 If you notice a missed ad, please report it via _Report incorrect blocking_.
 
-For unexpected app behavior, select _Report a bug_. If possible, describe your problem in detail and add app logs. [How to describe an issue](/guides/report-bugs/#how-to-describe-a-problem)
+For unexpected app behavior, select _Report a bug_. If possible, describe your problem in detail and add app logs. [Comment décrire un problème](/guides/report-bugs/#how-to-describe-a-problem)
 
-For your suggestions, use _Request a feature_.
+Pour vos suggestions, utilisez _Demander une fonctionnalité_.
 
 :::note
 
-GitHub is an alternative way to report bugs and suggest new features. [Instructions and repository links](/guides/report-bugs/#adguard-for-android)
+GitHub est une méthode alternative pour signaler des bugs et suggérer de nouvelles fonctionnalités. [Instructions et liens vers les dépôts](/guides/report-bugs/#adguard-for-android)
 
 :::

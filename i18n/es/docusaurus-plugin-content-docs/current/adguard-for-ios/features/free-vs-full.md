@@ -27,6 +27,6 @@ AdGuard Premium para iOS presenta varias diferencias con respecto a la versión 
 
 2. **La protección avanzada** te permite utilizar reglas de filtrado avanzadas para bloquear anuncios más complejos que de otro modo quedarían desbloqueados.
 
-3. **Más opciones de filtro:** Al comprar AdGuard Premium, obtienes acceso a filtros personalizados y una categoría de filtros de seguridad, donde puedes elegir entre más de 50 filtros, incluidos los de AdGuard y otras listas populares.
+3. **More filter options:** When purchasing AdGuard Premium, you get access to custom and security filters.
 
 Acceda a estas funciones [comprando una licencia](https://adguard.com/license.html).

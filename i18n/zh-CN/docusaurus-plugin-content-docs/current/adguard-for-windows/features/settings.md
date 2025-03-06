@@ -23,7 +23,7 @@ sidebar_position: 2
 
 ### 广告拦截器
 
-此为 Windows 版 AdGuard 的主模块，可从用户访问的网站上和设备上安装的应用内移除广告。 要过来广告和威胁隐私的内容，如横幅，弹窗或跟踪器，AdGuard 使用不同的过滤器：用[特定语法](/general/ad-filtering/create-own-filters)编写的有类似用途的规则组。 要了解什么是过滤器及其工作原理，请阅读[本文](/general/ad-filtering/how-ad-blocking-works)。
+此为 Windows 版 AdGuard 的主模块，可从用户访问的网站上和设备上安装的应用内移除广告。 To filter out advertising and privacy-threatening content such as banners, popups, or trackers AdGuard uses different filters — groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). 要了解什么是过滤器及其工作原理，请阅读[本文](/general/ad-filtering/how-ad-blocking-works)。
 
 ![广告拦截器 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
@@ -54,7 +54,7 @@ sidebar_position: 2
 
 「浏览安全」功能针对恶意网站和钓鱼网站提供给用户强力保护。 AdGuard Windows 版并非反病毒软件。 软件无法阻止已开始下载的病毒或删除现有病毒。 但如您要访问一个已添加到我们的“不受信任的站点”数据库中的网站，或者从此类网站下载文件，软件会发出警告。 您可[在专门文章内](/general/browsing-security)找到关于此模块工作方式的更多信息。
 
-在此模块内，用户可以进行以下设置：
+In this module, you can:
 
 - 开启对恶意和钓鱼网站的拦截请求的通知，
 - 激活声音通知，

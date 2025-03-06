@@ -105,7 +105,7 @@ Para criar um arquivo HAR no Internet Explorer 11, siga estas etapas:
 
     - O botão Reproduzir ficará cinza durante a gravação e o botão Parar ficará vermelho. Coloque no modo **Play**.
 
-1. Limpe todas as informações da sessão que aparecem na grade inferior usando o botão **Limpar sessão** na guia Rede. Passe o mouse sobre os ícones para ver os nomes.
+1. Clear any session info appearing in the lower grid using the **Clear session** button on the **Network** tab. Passe o mouse sobre os ícones para ver os nomes.
 
     - **O botão Limpar sessão** é um ícone de três linhas com um x.
 
@@ -113,7 +113,7 @@ Para criar um arquivo HAR no Internet Explorer 11, siga estas etapas:
 
 1. Reproduza as etapas que criam o problema.
 
-1. Salve a sessão como um arquivo .har clicando no botão **Salvar disco** (Exportar como HAR) na aba Rede.
+1. Save session as a .har file by clicking the **Save to disk** button (Export as HAR) on the **Network** tab.
 
 1. Envie para o suporte do AdGuard (support@adguard.com) com uma explicação detalhada do problema. Capturas de tela de suporte também podem ser úteis.
 

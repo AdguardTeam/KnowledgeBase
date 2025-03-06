@@ -1,5 +1,5 @@
 ---
-title: Private browser
+title: Privater Browser
 sidebar_position: 7
 ---
 
@@ -9,18 +9,18 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-In v4.7, AdGuard for Android introduced an in-app private browser. You can access it from the main screen by tapping the _Private browser_ button or from the _Protection_ tab, where you can find some customization options.
+In Version 4.7 hat AdGuard für Android einen privaten In-App-Browser eingeführt. Sie können darauf vom Hauptbildschirm aus zugreifen, indem Sie auf die Schaltfläche _Privater Browser_ oder auf den Tab _Schutz_ tippen, in dem sich einige Anpassungsoptionen befinden.
 
-![Private browser](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
+![Privater Browser](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
 
-Here's what you can set up:
+Das können Sie einrichten:
 
-- To set a default search engine, tap _Default search engine_ and choose between the available options: DuckDuckGo (default), Google, Bing, Yahoo, Baidu, or Yandex
-- To create a browser shortcut, tap _Create browser widget_ and follow the on-screen instructions
-- To get suggestions from your search engine instead of typing the entire query, toggle the _Search suggestions_ option
+- Um eine Standardsuchmaschine festzulegen, tippen Sie auf _Standardsuchmaschine_ und wählen Sie eine der verfügbaren Optionen: DuckDuckGo (Standard), Google, Bing, Yahoo, Baidu oder Yandex
+- Um eine Browser-Verknüpfung zu erstellen, tippen Sie auf _Browser-Widget erstellen_ und folgen Sie den Anweisungen auf dem Bildschirm
+- Um Vorschläge von Ihrer Suchmaschine zu erhalten, anstatt die gesamte Suchanfrage einzugeben, aktivieren Sie die Option _Suchvorschläge_
 
 :::note
 
-The private browser is still in the early stages of development and has some limitations. For now, we recommend using it as a supplement to your browser’s Incognito mode, rather than as a replacement.
+Der private Browser befindet sich noch in der frühen Entwicklungsphase und weist einige Einschränkungen auf. Im Moment empfehlen wir, ihn als Ergänzung zum Inkognitomodus Ihres Browsers zu verwenden, nicht als Ersatz.
 
 :::

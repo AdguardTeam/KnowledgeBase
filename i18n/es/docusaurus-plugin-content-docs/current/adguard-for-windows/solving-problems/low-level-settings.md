@@ -73,7 +73,7 @@ De lo contrario, AdGuard filtrará todo el tráfico, sin redirección. En este c
 
 ### Abrir la ventana principal al inicio del sistema
 
-Activa esta opción para que la ventana principal de AdGuard se abra después de cargar el sistema. Ten en cuenta que no afecta si el servicio de filtrado real se inicia o no, esta configuración se encuentra en *Configuración → Modo general*.
+Activa esta opción para que la ventana principal de AdGuard se abra después de cargar el sistema. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in *Settings → General Settings*.
 
 ### Habilitar filtrado al iniciar el sistema
 

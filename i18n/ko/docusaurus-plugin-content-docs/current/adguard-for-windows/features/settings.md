@@ -23,7 +23,7 @@ sidebar_position: 2
 
 ### 광고 차단기
 
-광고 차단기는 사용자가 방문하는 웹사이트와 앱에서 광고를 제거하는 Windows용 AdGuard의 메인 모듈입니다. 배너, 팝업 또는 트래커와 같은 광고 및 개인 정보를 위협하는 콘텐츠를 필터링하기 위해 AdGuard는 다양한 필터([특수 구문](/general/ad-filtering/create-own-filters)으로 작성된 유사한 목적을 가진 규칙 그룹)를 사용합니다. 필터가 무엇인지, 어떻게 작동하는지 이해하려면 [이글](/general/ad-filtering/how-ad-blocking-works)을 참조하세요.
+광고 차단기는 사용자가 방문하는 웹사이트와 앱에서 광고를 제거하는 Windows용 AdGuard의 메인 모듈입니다. To filter out advertising and privacy-threatening content such as banners, popups, or trackers AdGuard uses different filters — groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). 필터가 무엇인지, 어떻게 작동하는지 이해하려면 [이글](/general/ad-filtering/how-ad-blocking-works)을 참조하세요.
 
 ![광고 차단기 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
@@ -54,7 +54,7 @@ sidebar_position: 2
 
 브라우징 보안은 악성 및 피싱 웹사이트에 대한 강력한 보호 기능을 제공합니다. 아니요, Windows용 AdGuard는 바이러스 백신이 아닙니다. 바이러스가 이미 시작된 경우 다운로드를 중지하거나 이미 존재하는 바이러스를 삭제하지 않습니다. 하지만 '신뢰할 수 없는 사이트' 데이터베이스에 추가된 도메인이 있는 웹사이트로 이동하거나 해당 웹사이트에서 파일을 다운로드하려고 하면 경고 메시지가 표시됩니다. 이 모듈의 작동 방식에 대한 자세한 내용은 [이 글](/general/browsing-security)에서 확인할 수 있습니다.
 
-이 모듈에서는 다음을 수행할 수 있습니다.
+In this module, you can:
 
 - 알림을 활성화하여 악성 및 피싱 사이트로의 요청을 차단합니다.
 - 소리 알림을 활성화합니다.

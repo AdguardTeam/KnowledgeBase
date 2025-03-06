@@ -105,7 +105,7 @@ Per creare un file HAR in Internet Explorer 11, segui questi passaggi:
 
     - Il pulsante "Riproduci" sarà grigio durante la registrazione e il pulsante "Pausa" sarà rosso. Attiva la modalità **Riproduci**.
 
-1. Cancella tutte le informazioni sulla sessione, visualizzate nella griglia inferiore, utilizzando il pulsante **Cancella sessione**, sulla scheda Rete. Passa sulle icone per vederne i nomi.
+1. Clear any session info appearing in the lower grid using the **Clear session** button on the **Network** tab. Passa sulle icone per vederne i nomi.
 
     - Il pulsante **Cancella sessione** è un'icona a tre linee, con una x sopra di esse.
 
@@ -113,7 +113,7 @@ Per creare un file HAR in Internet Explorer 11, segui questi passaggi:
 
 1. Riproduci i passaggi per causare il problema.
 
-1. Salva la sessione come un file .har cliccando il pulsante **Salva su disco** (Esporta come HAR), sulla scheda Rete.
+1. Save session as a .har file by clicking the **Save to disk** button (Export as HAR) on the **Network** tab.
 
 1. Invialo al supporto di AdGuard (support@adguard.com) con una spiegazione dettagliata del problema. Anche degli screenshot di supporto potrebbero essere utili.
 

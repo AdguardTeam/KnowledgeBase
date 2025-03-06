@@ -68,7 +68,7 @@ Wie Sie Benutzerkonten von einem Android-Gerät aus verwalten können, erfahren 
 
 :::note
 
-In einigen Fällen werden eingeschränkte Benutzerkonten implizit erstellt und können nicht entfernt werden. Zum Beispiel, wenn Sie Dual Messenger oder Dual App Funktionen auf **Samsung**- oder **LG**-Geräten verwenden. Im Folgenden erfahren Sie, wie Sie das Problem in diesen Fällen beheben können.
+In einigen Fällen werden eingeschränkte Benutzerkonten implizit erstellt und können nicht entfernt werden. For instance, when you use Dual Messenger or Dual App features on **Samsung** or **LG** devices. Im Folgenden erfahren Sie, wie Sie das Problem in diesen Fällen beheben können.
 
 :::
 
@@ -84,8 +84,8 @@ Bei **LG**- oder **Samsung**-Handys kann ein ähnliches Problem auftreten. Es ka
 
 - Öffnen Sie die **Einstellungen**;
 - Tippen Sie auf **Erweitert**;
-- Blättern Sie nach unten und tippen Sie auf **Dual messenger**;
-- Deaktivieren Sie **Dual Messenger** für alle Apps;
+- Scroll down and press **Dual Messenger**;
+- Disable the **Dual Messenger** for all apps;
 - Sperren Sie das Gerät für 5 Minuten;
 - Entsperren Sie den Bildschirm und versuchen Sie erneut, das VPN-Profil zu erstellen.
 
@@ -93,6 +93,6 @@ Bei **LG**- oder **Samsung**-Handys kann ein ähnliches Problem auftreten. Es ka
 
 - Öffnen Sie die **Einstellungen**;
 - Wählen Sie den Tab **Allgemein**;
-- Blättern Sie nach unten und tippen Sie auf **Dual app**;
+- Scroll down and press **Dual App**;
 - Entfernen Sie alle Apps aus der Liste;
 - Starten Sie Ihr Gerät neu.

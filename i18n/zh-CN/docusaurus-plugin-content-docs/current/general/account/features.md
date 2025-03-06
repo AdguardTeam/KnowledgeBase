@@ -24,10 +24,9 @@ sidebar_position: 2
 
 - 绑定和取消绑定，
 - 续订，
-- 升级，
-- 取消。 您也可更新付款详细信息。
+- upgraded.
 
-与 AdGuard 广告拦截程序许可证绑定的设备可取消绑定或重命名。 要解除未使用设备的绑定，请单击「*设备*」旁边的绑定设备数量，然后选择右箭头 →「*删除*」。
+与 AdGuard 广告拦截程序许可证绑定的设备可取消绑定或重命名。 To unbind unused devices, click the number of bound devices next to *Devices*, then select `>` → *Remove*.
 
 ## 查看购买
 

@@ -1,5 +1,5 @@
 ---
-title: Tracking protection
+title: Protection contre le suivi
 sidebar_position: 2
 ---
 

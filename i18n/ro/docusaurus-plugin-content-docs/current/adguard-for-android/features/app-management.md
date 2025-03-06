@@ -20,11 +20,11 @@ Prin atingerea unei aplicații, puteți gestiona setările acesteia:
 - Filtrați traficul său HTTPS (pentru aplicațiile care nu sunt browsere, necesită [instalarea certificatului CA AdGuard în magazinul de sistem](/adguard-for-android/solving-problems/https-certificate-for-rooted/), disponibil pe dispozitivele cu root)
 - Rutați-l prin serverul proxy specificat sau AdGuard VPN în modul Integrare
 
-![App management in Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![App management: Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
 Din meniul contextual, puteți accesa și statisticile aplicației.
 
-![App management in Chrome. Context menu \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![App management: Chrome Context menu \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
 ### Aplicații „fără probleme” și „problematici”
 

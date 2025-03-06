@@ -26,7 +26,7 @@ Cerințele de calitate pentru regulile de filtrare:
 
 Un **filtru** (sau o **listă de filtre**) este un set de reguli de filtrare conceput pentru a filtra conținutul și a bloca diferite tipuri de reclame și alte tipuri de conținut folosind blocante de reclame. Aceste filtre funcționează, de obicei, la nivelul browserului web, programelor sau serverului DNS.
 
-**Anti-adblock** este o tehnologie utilizată de site-uri sau aplicații pentru a detecta blocarea reclamelor și a reacționa în diferite moduri: urmărire, reinjectare de reclame, încurajarea dezactivării blocantului de reclame (așa-numitele „perete anti-adblock”). Anti-adblockurile pot fi de diferite tipuri:
+**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so-called “adblock walls”). Anti-adblockurile pot fi de diferite tipuri:
 
 - Anti-adblock care blochează conținutul site-ului fără a oferi o alternativă: pentru a continua utilizarea site-ului, utilizatorul trebuie să dezactiveze blocantul de reclame pe site
 - „Perete anti-adblock” cu opțiuni alternative oferite, cum ar fi achiziționarea unui abonament pentru a continua utilizarea blocantului de reclame
@@ -81,7 +81,7 @@ Obiectivul filtrelor de blocare a reclamelor este de a bloca toate tipurile de p
 - Nu blocăm mesajele de detectare a blocantelor de reclame care respectă cel puțin unul dintre următoarele criterii:
     - Ele permit utilizarea site-ului și nu suprapun o cantitate semnificativă de conținut
     - Ele oferă o alternativă la dezactivarea blocantului de reclame, cu condiția ca această alternativă să nu pună în pericol intimitatea sau securitatea utilizatorilor
-    - Ele permit utilizatorului să continue pe conținutul site-ului sau oferă un schimb de valoare fezabil, care nu pune în pericol intimitatea sau securitatea utilizatorului
+    - They allow the user to proceed to the website’s content
     - Unele reguli de moștenire pot continua să blocheze mesaje care respectă unul sau mai multe dintre aceste criterii. Dacă sunt identificate, astfel de reguli vor fi gestionate conform acestei politici
 - Piscinele de minerit nu sunt blocate dacă sunt publice și nu sunt utilizate exclusiv în scopuri dăunătoare
 
