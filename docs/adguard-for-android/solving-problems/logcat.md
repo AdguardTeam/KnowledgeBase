@@ -61,7 +61,7 @@ On devices with Android 7 and below, it is not possible to send a bug report aut
 
 Follow this instruction:
 
-**Part #1: prepare the device**
+### Part #1: prepare the device
 
 1. Switch device to the developer mode. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
 
@@ -73,7 +73,7 @@ Follow this instruction:
 
 4 MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
 
-**Part #2: reproduce the problem**
+### Part #2: reproduce the problem
 
 It is important to reproduce the problem after you're done with the first part.
 
@@ -81,7 +81,7 @@ It is important to reproduce the problem after you're done with the first part.
 
 1. Remember/write down the date and time of reproduction and include it in the email to our support later.
 
-**Part #3: get the log**
+### Part #3: get the log
 
 1. Connect your device to a PC with a USB cable.
 
@@ -99,7 +99,7 @@ It is important to reproduce the problem after you're done with the first part.
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at support@adguard.com.
+    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at <support@adguard.com>.
 
 ### Alternative way for ROOT users
 
