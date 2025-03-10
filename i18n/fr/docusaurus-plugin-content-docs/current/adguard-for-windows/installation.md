@@ -11,9 +11,9 @@ Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonction
 
 ## Configuration requise
 
-**Système d'exploitation :** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
+**Operating system:** Microsoft Windows 11, 10, 8.1, 8.
 
-**RAM :** au moins 512 Mo.
+**RAM:** at least 1 GB.
 
 **Espace disque libre :** 150 Mo.
 

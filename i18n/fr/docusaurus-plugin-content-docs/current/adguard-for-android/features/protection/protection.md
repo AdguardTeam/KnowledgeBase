@@ -17,13 +17,13 @@ Settings to block ads in browsers and apps
 
 [Ad blocking](/adguard-for-android/features/protection/ad-blocking.md)
 
-## Tracking protection
+## Protection contre le suivi
 
 Settings that allow you to block tracking tools that collect user information
 
 [Tracking protection](/adguard-for-android/features/protection/tracking-protection.md)
 
-## Annoyance blocking
+## Blocage des nuisances
 
 Settings to block annoyances such as cookie consent popups, social widgets, and banners that prompt you to download mobile apps
 
@@ -35,7 +35,7 @@ DNS servers and DNS filters that let you block ads, trackers, and dangerous webs
 
 [DNS protection](/adguard-for-android/features/protection/dns-protection.md)
 
-## Firewall
+## Pare-feu
 
 A feature that allows you to control Internet access for individual apps
 

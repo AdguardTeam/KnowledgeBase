@@ -20,11 +20,11 @@ sidebar_position: 2
 - HTTPS 트래픽 필터링(비브라우저 앱의 경우, [시스템 스토어에 AdGuard의 CA 인증서를 설치](/adguard-for-android/solving-problems/https-certificate-for-rooted/)해야 함(루팅된 기기에서 사용 가능))
 - 통합 모드에서 지정한 프록시 서버 또는 AdGuard VPN을 통해 라우팅
 
-![Chrome에서 앱 관리 \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![App management: Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
 컨텍스트 메뉴에서 앱 통계로 이동할 수 있습니다.
 
-![Chrome의 앱 관리. 컨텍스트 메뉴 \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![App management: Chrome Context menu \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
 ### '문제가 없는' 앱과 '문제가 있는' 앱
 

@@ -35,7 +35,7 @@ DNS servers and DNS filters that let you block ads, trackers, and dangerous webs
 
 ## 스텔스 모드
 
-Settings to block cookies, UTM tags, and online analytics that collect user information
+추적 보호에서는 사용자 정보를 수집하는 쿠키, UTM 태그 및 온라인 분석을 차단하는 설정을 찾을 수 있습니다.
 
 [Stealth Mode](/adguard-for-mac/features/stealth.md)
 

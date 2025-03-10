@@ -11,7 +11,7 @@ Acest articol se referă la AdGuard pentru Android, un blocant de reclame multif
 
 ## Cerințele Sistemului
 
-**OS version:** Android 7.0 or higher
+**OS version:** Android 9.0 or higher
 
 **RAM:** cel puțin 2 GB
 

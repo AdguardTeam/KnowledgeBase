@@ -17,11 +17,11 @@ sidebar_position: 1
 
 Вам также понадобится устройство, на которое вы будете устанавливать приложение, и [ссылка на страницу бета-тестирования](https://adguard.com/beta.html). Там вы найдёте больше информации о том, как присоединиться к нашей программе и тестировать приложения AdGuard для Windows, Mac, Android и iOS.
 
-Если вы хотите пропустить описание и сразу перейти к делу, то вам [сюда](https://surveys.adguard.com/beta_testing_program/form.html). Ваша заявка будет рассмотрена в течение 1–3 рабочих дней. Вы получите ответ по почте.
+Если вы хотите пропустить описание и сразу перейти к делу, то вам [сюда](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1–3 working days, and you'll get a reply via email.
 
 :::note
 
-Чтобы получить бета- или nightly-сборку AdGuard для iOS, сначала необходимо установить [Testflight](https://apps.apple.com/app/testflight/id899247664) на вашем устройстве с iOS.
+To get the AdGuard for iOS beta or nightly build, first you have to install [TestFlight](https://apps.apple.com/app/testflight/id899247664) on your iOS device.
 
 :::
 
@@ -37,10 +37,10 @@ sidebar_position: 1
 
 ## Как активировать бета/nightly-ключ в приложении iOS {#ios}
 
-If you have already received a beta key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Введите учётные данные вашего аккаунта AdGuard. После этого премиум-функции станут доступны автоматически.
+If you have already received a beta or nightly key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Введите учётные данные вашего аккаунта AdGuard. После этого премиум-функции станут доступны автоматически.
 
 ### Что ещё?
 
 There is not much more to add. Вам не нужно старательно искать ошибки. Вы можете продолжать использовать AdGuard как обычно. Однако, если вы столкнётесь с ошибкой, пожалуйста, сообщите о ней. Мы будем вам очень признательны.
 
-Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta (in case you missed them) and other important news. Вы можете отписаться в любой момент.
+Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta/nightly (in case you missed them) and other important news. Вы можете отписаться в любой момент.

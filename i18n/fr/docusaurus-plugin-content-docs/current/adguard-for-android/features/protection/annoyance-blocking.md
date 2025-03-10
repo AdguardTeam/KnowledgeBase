@@ -1,5 +1,5 @@
 ---
-title: Annoyance blocking
+title: Blocage des nuisances
 sidebar_position: 3
 ---
 

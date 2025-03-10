@@ -73,7 +73,7 @@ Dacă această opțiune este activată, AdGuard intercepta tot traficul și îl 
 
 ### Deschideți fereastra principală la demarajul sistemului
 
-Activați această opțiune pentru a face fereastra principală AdGuard să se deschidă după ce sistemul este încărcat. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*.
+Activați această opțiune pentru a face fereastra principală AdGuard să se deschidă după ce sistemul este încărcat. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in *Settings → General Settings*.
 
 ### Activați filtrarea la demarajul sistemului
 

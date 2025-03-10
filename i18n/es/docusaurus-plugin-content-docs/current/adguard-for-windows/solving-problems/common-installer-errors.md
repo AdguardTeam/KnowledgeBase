@@ -38,10 +38,10 @@ Se podría decir que este es un subcategoría particular del Error 1603. Las pos
 - Inicia y vuelve a registrar el servicio Microsoft Installer. Esto puede resultar laborioso.
 
     - Presiona *Win + R* e introduce **services.msc**.
-    - Búscalo en la lista y haz doble clic en *Windows Installer*.
+    - Find in the list and double-click *Windows Installer*.
     - Presione el botón *Iniciar* debajo de *Estado del servicio* y presiona *Aceptar*. Si el estado del servicio es **Ejecutando**, debes hacer clic en *Detener* primero y luego presionar *Iniciar*.
-    - Pulsa *Win + R*, introduce ***msiexec /unregister*** y pulsa *Enter*.
-    - Pulsa *Win + R* nuevamente, introduce ***msiexec /regserver*** y pulsa *Enter*
+    - Press *Win + R*, type ***msiexec /unregister***, and hit *Enter*.
+    - Press *Win + R* again, type ***msiexec /regserver***, and hit *Enter*
 
 - Reinicia la PC y comienza la instalación nuevamente. A veces eso es suficiente para solucionar el problema.
 
@@ -68,10 +68,10 @@ El error suena más aterrador de lo que realmente es. En realidad, este es un er
 - Inicia y vuelve a registrar el servicio Microsoft Installer. Esto puede resultar laborioso.
 
     - Pulsa *Win + R* e introduce ***services.msc***.
-    - Búscalo en la lista y haz doble clic en *Windows Installer*.
+    - Find in the list and double-click *Windows Installer*.
     - Presione el botón *Iniciar* debajo de *Estado del servicio* y presiona *Aceptar*. Si el estado del servicio es **Ejecutando**, debes hacer clic en *Detener* primero y luego presionar *Iniciar*.
-    - Pulsa *Win + R*, introduce ***msiexec /unregister*** y pulsa *Enter*.
-    - Pulsa *Win + R* nuevamente, introduce ***msiexec /regserver*** y pulsa *Enter*
+    - Press *Win + R*, type ***msiexec /unregister***, and hit *Enter*.
+    - Press *Win + R* again, type ***msiexec /regserver***, and hit *Enter*
 
 - Adquiere permisos completos en la unidad para la instalación. Es posible que se produzca el error 1603 porque no tienes permisos completos en la ubicación del archivo. Esto tampoco es tan fácil como algunas de las otras soluciones:
 

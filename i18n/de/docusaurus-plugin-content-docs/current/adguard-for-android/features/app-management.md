@@ -20,11 +20,11 @@ Wenn Sie auf eine App tippen, können Sie deren Einstellungen verwalten:
 - HTTPS-Verkehr filtern (für Apps, die nicht im Browser ausgeführt werden, müssen Sie [das CA-Zertifikat von AdGuard im Systemspeicher installieren](/adguard-for-android/solving-problems/https-certificate-for-rooted/)). Diese Option ist nur auf gerooteten Geräten verfügbar
 - Datenverkehr über den von Ihnen angegebenen Proxy-Server oder AdGuard VPN im Integrationsmodus leiten
 
-![App-Verwaltung in Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![App management: Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
 Über das Kontextmenü können Sie auch auf die Statistiken der App zugreifen.
 
-![App-Verwaltung in Chrome. Kontextmenü \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![App management: Chrome Context menu \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
 ### „Problemlose“ und „problematische“ Apps
 
