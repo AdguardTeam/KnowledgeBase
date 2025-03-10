@@ -9,7 +9,7 @@ Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunziona
 
 :::
 
-Per filtrare il traffico di rete, AdGuard utilizza un driver di rete. Esistono due opzioni: il driver TDI e WFP. Mentre il driver WFP è generalmente preferibile ed è abilitato per tutte le versioni dell'OS di Windows (Windows 8 e successive), potrebbe causare dei problemi di compatibilità, specialmente con certi antivirus. Questi problemi e i successivi errori possono variare di molto in ciascun caso.
+Per filtrare il traffico di rete, AdGuard usa un driver di rete. Esistono due opzioni: il driver TDI e WFP. Mentre il driver WFP è generalmente preferibile ed è abilitato per tutte le versioni dell'OS di Windows (Windows 8 e successive), potrebbe causare dei problemi di compatibilità, specialmente con certi antivirus. Questi problemi e i successivi errori possono variare di molto in ciascun caso.
 
 Se riscontri un problema che sospetti possa esser causato da ciò, puoi sempre passare al driver di rete TDI, più vecchio, ma più stabile. Per farlo:
 

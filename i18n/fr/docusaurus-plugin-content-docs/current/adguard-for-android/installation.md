@@ -11,7 +11,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 ## Configuration requise
 
-**OS version:** Android 7.0 or higher
+**OS version:** Android 9.0 or higher
 
 **RAM :** au moins 2 Go
 

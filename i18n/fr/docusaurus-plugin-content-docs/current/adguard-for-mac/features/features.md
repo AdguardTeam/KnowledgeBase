@@ -35,7 +35,7 @@ DNS servers and DNS filters that let you block ads, trackers, and dangerous webs
 
 ## Mode furtif
 
-Settings to block cookies, UTM tags, and online analytics that collect user information
+Paramètres permettant de bloquer les cookies, les balises UTM et les outils d'analyse en ligne qui collectent des informations sur l'utilisateur
 
 [Stealth Mode](/adguard-for-mac/features/stealth.md)
 

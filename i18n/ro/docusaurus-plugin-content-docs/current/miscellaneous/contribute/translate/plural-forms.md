@@ -38,7 +38,7 @@ When you are faced with a translation that requires the use of plurals, you may 
 
 Here are some sources of information you can use.
 
-[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. The number of plural forms for different languages is shown this way: `nplurals=2`, `nplurals=4` and so on. The numeral after the Equals sign `=` indicates the number of plural forms of the respective language.
+[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. The number of plural forms for different languages is shown this way: `nplurals=2`, `nplurals=4` and so on. The numeral after the equals sign `=` indicates the number of plural forms of the respective language.
 
 Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Regulile CLDR pentru plural indică o formă suplimentară de cuvânt pentru numere zecimale (1,5; 2,3; 100,1…), dar noi nu le folosim în traducerile AdGuard.
 

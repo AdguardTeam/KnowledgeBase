@@ -51,7 +51,7 @@ Găsiți secțiunea **PERMITEȚI ACESTE EXTENSII** și apoi găsiți **AdGuard**
 
 ![Selectați "AdGuard" în secțiunea PERMITEȚI ACESTE EXTENSII *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_en.png)
 
-Apăsați pe ea, apoi activați comutatorul. Pe aceeași pagină, setați permisiunea *Toate site-urile* pentru AdGuard fie pe *Permite*, fie pe *Întreabă*. Dacă alegeți *Permite*, nu va trebui să oferiți permisiunea de fiecare dată când vizitați un site nou. Dacă nu sunteți sigur, alegeți *Întreabă* pentru a oferi permisiuni pe bază de site.
+Tap it, then toggle the switch on. Pe aceeași pagină, setați permisiunea *Toate site-urile* pentru AdGuard fie pe *Permite*, fie pe *Întreabă*. Dacă alegeți *Permite*, nu va trebui să oferiți permisiunea de fiecare dată când vizitați un site nou. Dacă nu sunteți sigur, alegeți *Întreabă* pentru a oferi permisiuni pe bază de site.
 
 ![Setările extensiei *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 

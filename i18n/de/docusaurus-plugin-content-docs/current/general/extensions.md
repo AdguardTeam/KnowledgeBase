@@ -148,16 +148,16 @@ Alle aufgeführten früheren Greasemonkey-Funktionen sind veraltet, werden aber 
 - [`GM_log`](https://www.tampermonkey.net/documentation.php#api:GM_log)
 - [`GM.addElement`, `GM_addElement`](https://www.tampermonkey.net/documentation.php#api:GM_addElement)
 
-You can find more information about Greasemonkey API in [its manual](https://wiki.greasespot.net/Greasemonkey_Manual:API).
+Weitere Informationen zur Greasemonkey-API finden Sie im [Handbuch] (https://wiki.greasespot.net/Greasemonkey_Manual:API).
 
 #### Beispiel
 
 ```javascript
 // ==UserScript==
-// @name            Name as shown to the user when locale is english or unknown
-// @name:ru         Name as shown to the user when locale is russian
-// @description     Description as shown to the user when locale is english or unknown
-// @description:ru  Description as shown to the user when locale is russian
+// @name            Name, der dem Benutzer angezeigt wird, wenn das Gebietsschema „Englisch“ oder „Unbekannt“ ist
+// @name:ru         Name, wie er dem Benutzer angezeigt wird, wenn das Gebietsschema „Russisch” ist
+// @description     Beschreibung, die dem Benutzer angezeigt wird, wenn das Gebietsschema „Englisch“ oder „Unbekannt“ ist
+// @description:ru  Beschreibung, wie sie dem Benutzer angezeigt wird, wenn das Gebietsschema „Russisch“ ist
 // @icon            https://myhomepage.com/myuserscript.png
 // @version         1.0.0.0
 // @downloadURL     https://dl.myhomepage.org/myuserscript.user.js
@@ -192,35 +192,35 @@ You can find more information about Greasemonkey API in [its manual](https://wik
 
 #### Trusted Types API
 
-AdGuard provides an instance of the `PolicyApi` class that allows you to manage Trusted Types in your userscripts.
+AdGuard stellt eine Instanz der Klasse `PolicyApi` zur Verfügung, mit der Sie vertrauenswürdige Typen in Ihren Benutzerskripten verwalten können.
 
-You can access the instance of this class by using the `ADG_policyApi` variable in your userscript.
+Sie können auf die Instanz dieser Klasse zugreifen, indem Sie die Variable `ADG_policyApi` in Ihrem Benutzerskript verwenden.
 
-##### Properties
+##### Eigenschaften
 
-- `name: string` — a name of the policy (Default is `"AGPolicy"`).
-- `isSupported: boolean` — a flag indicating whether or not the Trusted Types API is supported by the current browser.
+- `name: string` — ein Name für die Richtlinie (Standard ist `„AGPolicy“`).
+- `isSupported: boolean` — ein Flag, das angibt, ob die Trusted Types API vom aktuellen Browser unterstützt wird oder nicht.
 
-##### Polyfilled methods
+##### Polyfilled-Methoden
 
-- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). If not supported, returns `input: string`.
-- [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). If not supported, returns `input: string`.
-- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). If not supported, returns `input: string`.
-- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). If not supported, returns `null`.
-- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). If not supported, returns `null`.
-- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). If not supported, returns `false`.
-- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). If not supported, returns `false`.
-- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). If not supported, returns `false`.
+- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/de/docs/Web/API/TrustedTypePolicy/createHTML). Falls nicht unterstützt, wird `input: string` zurückgegeben.
+- [`ADG_policyApi.createScript`](https://developer.mozilla.org/de/docs/Web/API/TrustedTypePolicy/createScript). Falls nicht unterstützt, wird `input: string` zurückgegeben.
+- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). Falls nicht unterstützt, wird `input: string` zurückgegeben.
+- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). Wenn nicht unterstützt, wird `null` zurückgegeben.
+- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). Wenn nicht unterstützt, wird `null` zurückgegeben.
+- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). Wenn nicht unterstützt, wird `false` zurückgegeben.
+- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). Wenn nicht unterstützt, wird `false` zurückgegeben.
+- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). Wenn nicht unterstützt, wird `false` zurückgegeben.
 
-##### Additional Types
+##### Zusätzliche Typen
 
 ```typescript
 /**
- * Enum representation of the return values of the `getAttributeType` and
- * `getPropertyType` methods of the native Trusted Types API.
+ * Enum-Darstellung der Rückgabewerte der Methoden
+ * `getAttributeType` und `getPropertyType` der nativen Trusted Types API.
  *
- * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType}
- * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType}
+ * @see {@link https://developer.mozilla.org/de/docs/Web/API/TrustedTypePolicyFactory/getAttributeType}
+ * @see {@link https://developer.mozilla.org/dedocs/Web/API/TrustedTypePolicyFactory/getPropertyType}
  */
 enum TrustedType {
     HTML = 'TrustedHTML',
@@ -228,21 +228,21 @@ enum TrustedType {
     ScriptURL = 'TrustedScriptURL',
 }
 
-// You can access it like that inside of userscript
-ADG_TrustedType.HTML // "TrustedHTML"
+// Sie können innerhalb eines Userscripts wie folgt darauf zugreifen
+ADG_TrustedType.HTML // „TrustedHTML“
 
 /**
- * Isomorphic trusted value type. If a browser supports the Trusted Types API, it will be one of the enum Trusted Types
- * (`TrustedHTML`, `TrustedScript` or `TrustedScriptURL`); otherwise, it will be regular `string`.
+ * Isomorpher vertrauenswürdiger Werttyp. Wenn ein Browser die API für vertrauenswürdige Typen unterstützt, handelt es sich um einen der enum Trusted Types
+ * (`TrustedHTML`, `TrustedScript` or `TrustedScriptURL`); andernfalls ist es ein normaler `string`.
  *
- * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedHTML}
- * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedScript}
- * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedScriptURL}
+ * @see {@link https://developer.mozilla.org/de/docs/Web/API/TrustedHTML}
+ * @see {@link https://developer.mozilla.org/de/docs/Web/API/TrustedScript}
+ * @see {@link https://developer.mozilla.org/de/docs/Web/API/TrustedScriptURL}
  */
 type TrustedValue = string | TrustedHTML | TrustedScript | TrustedScriptURL;
 ```
 
-##### Additional methods
+##### Weitere Methoden
 
 ```typescript
 /**

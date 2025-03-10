@@ -26,7 +26,7 @@ Un **bloqueador de anuncios** es una herramienta de software o hardware diseñad
 
 Un **filtro** (o una **lista de filtros**) es un conjunto de reglas de filtrado diseñadas para filtrar contenido y bloquear varios tipos de anuncios y otros tipos de contenido utilizando bloqueadores de anuncios. Estos filtros generalmente operan en el navegador, en programas o en servidores DNS.
 
-**Anti-adblock** es una tecnología utilizada por sitios web o aplicaciones para detectar el bloqueo de anuncios y reaccionar a ellos de diferentes maneras: rastreándolos, reinyectándolos o alentando a desactivar el bloqueador de anuncios (llamados "anti-adblock walls"). Los anti-adblocks pueden ser de diferentes tipos:
+**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so-called “adblock walls”). Los anti-adblocks pueden ser de diferentes tipos:
 
 - Anti-adblock que bloqueia el contenido del sitio sin ofrecer alternativas: para seguir utilizando el sitio, el usuario debe desactivar el bloqueador de anuncios
 - "Anti-adblock wall" con ofrecimiento de opciones alternativas, como la compra de una suscripción para seguir utilizando el bloqueador de anuncios
@@ -81,7 +81,7 @@ El objetivo de los filtros de bloqueo de anuncios es bloquear todos los tipos de
 - No bloqueamos mensajes de detección de bloqueadores de anuncios que cumplan al menos uno de los siguientes criterios:
     - Permiten el uso del sitio y no se superponen a una cantidad significativa de contenido
     - Proporcionan una alternativa a la desactivación de un bloqueador de anuncios, ya que esta opción no pone en riesgo la privacidad o la seguridad de los usuarios
-    - Permiten el acceso al contenido del sitio o una alternativa viable que no ponga en riesgo la privacidad o seguridad del usuario
+    - They allow the user to proceed to the website’s content
     - Algunas reglas antiguas pueden continuar bloqueando mensajes que cumplan uno o más de estos criterios. Si se identifican, dichas reglas serán reformadas de acuerdo con esta política
 - Los pools de minería no serán bloqueados si son públicos y no son utilizados exclusivamente con fines maliciosos
 

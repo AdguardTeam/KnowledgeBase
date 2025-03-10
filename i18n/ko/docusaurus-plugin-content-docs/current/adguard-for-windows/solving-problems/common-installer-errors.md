@@ -38,10 +38,10 @@ sidebar_position: 6
 - Start and re-register Microsoft Installer service. It requires some work.
 
     - Press *Win + R* and enter **services.msc**.
-    - Find in the list and double click *Windows Installer*.
+    - Find in the list and double-click *Windows Installer*.
     - Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
-    - Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*.
-    - Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    - Press *Win + R*, type ***msiexec /unregister***, and hit *Enter*.
+    - Press *Win + R* again, type ***msiexec /regserver***, and hit *Enter*
 
 - PC를 재부팅하고 설치를 처음부터 다시 시작하세요. 때로는 그것만으로도 문제를 해결할 수 있습니다.
 
@@ -68,10 +68,10 @@ sidebar_position: 6
 - Start and re-register Microsoft Installer service. It requires some work.
 
     - Press *Win + R* and enter ***services.msc***.
-    - Find in the list and double click *Windows Installer*.
+    - Find in the list and double-click *Windows Installer*.
     - Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
-    - Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*.
-    - Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    - Press *Win + R*, type ***msiexec /unregister***, and hit *Enter*.
+    - Press *Win + R* again, type ***msiexec /regserver***, and hit *Enter*
 
 - Acquire full permissions on the drive for installation. It is possible that the error 1603 occurs because you don’t have full permissions on the file location. It's also not as easy as some of the other solutions:
 

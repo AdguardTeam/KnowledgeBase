@@ -105,7 +105,7 @@ HAR 文件可帮助我们的技术支持团队解决复杂的问题。 为了创
 
     - 录音时继续按钮将变为灰色，停止按钮为红色。 进入「**Play**」模式。
 
-1. 使用网络标签上的「**Clear session**」（清除会话）按钮以清除显示在下部网格中的所有会话信息。 将鼠标悬停在图标上可以查看名称。
+1. Clear any session info appearing in the lower grid using the **Clear session** button on the **Network** tab. 将鼠标悬停在图标上可以查看名称。
 
     - 「**Clear session** 」（清除会话）按钮是一个三行图标，上面带有一个「X」。
 
@@ -113,7 +113,7 @@ HAR 文件可帮助我们的技术支持团队解决复杂的问题。 为了创
 
 1. 重复导致问题的步骤。
 
-1. 单击网络标签上的「**Save disk**」（保存磁盘） 按钮（导出为 HAR）将会话内容另存为 .har 文件。
+1. Save session as a .har file by clicking the **Save to disk** button (Export as HAR) on the **Network** tab.
 
 1. 发送至 AdGuard 支持团队（support@adguard.com），并详细描述问题。 屏幕截图也会有所帮助。
 
