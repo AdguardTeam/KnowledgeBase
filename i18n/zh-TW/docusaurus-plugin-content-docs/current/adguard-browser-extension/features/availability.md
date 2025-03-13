@@ -3,24 +3,26 @@ title: Availability
 sidebar_position: 10
 ---
 
-:::info
+:::資訊
 
-This article is about the AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+這篇文章是關於 AdGuard 瀏覽器擴充功能，它只保護您的瀏覽器。若要保護您的整個裝置，請[下載 AdGuard應用程式](https://agrd.io/download-kb-adblock)
 
 :::
 
-[AdGuard Browser Extension](https://adguard.com/adguard-browser-extension/overview.html) is a free extension that works in five popular browsers: Chrome, Firefox, Edge, Opera, and Yandex Browser. You can easily find it in your browser’s online store or on our official website.
+[AdGuard 瀏覽器擴充套件](https://adguard.com/adguard-browser-extension/overview.html)是一個免費的擴充套件，可在五種常用的瀏覽器中使用： Chrome、Firefox、Edge、Opera 和 Yandex 瀏覽器。您可以輕鬆的在瀏覽器的線上商店或我們的官方網站上找到它。
 
 ![AdGuard Browser Extension for Chrome \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
-Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
+瀏覽器擴充套件包含基本的廣告封鎖功能，但無法與全功能的桌面程式相提並論，例如 Windows 版 AdGuard 和 Mac 版 AdGuard。 [Windows 版 AdGuard](/adguard-for-windows/features/home-screen) 還有 [Mac 版 AdGuard](/adguard-for-mac/features/main).
 
 ![Available for most popular browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
-:::note
+:::注意
 
-We have a standalone extension for Safari. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. We had to develop a [separate extension for Safari](/adguard-for-safari/features/general) that has some differences in comparison with the extension described in this article.
+我們有 Safari 的獨立擴充套件。自從 [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html)發布後，大多數的廣告阻擋擴充套件都遇到了巨大的問題，許多都停止運作。我們不得不[為Safari 開發一個獨立的擴充套件](/adguard-for-safari/features/general)，它與本文所描述的擴充套件有一些差異。
+
+ 
 
 :::
 
-**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** So if you want to get full-fledged protection, consider installing a standalone program for your computer. There's [a reason why](adguard-browser-extension/comparison-standalone).
+**不要忘記，每個擴充套件的功能都受到瀏覽器功能的嚴格限制。**因此，如果您想要取得全面的保護，請考慮為電腦安裝獨立的應用程式。這是[有原因的](adguard-browser-extension/comparison-standalone)。

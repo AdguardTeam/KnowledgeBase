@@ -3,18 +3,18 @@ title: Main menu
 sidebar_position: 1
 ---
 
-:::info
+:::資訊
 
-This article is about the AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+這篇文章是關於 AdGuard 瀏覽器擴充套件，它只保護您的瀏覽器。 若要保護您的整個裝置，請[下載 AdGuard 應用程式](https://agrd.io/download-kb-adblock)
 
 :::
 
-The extension's main page can be accessed by clicking the extension's icon on the toolbar of your browser.
+按一下瀏覽器工具列上的擴充套件圖示，即可進入該擴充套件的主頁。
 
 ![Main menu \*mobile\_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
-On the main page, you can hide any element on any page manually (a corresponding rule will be added to the _User rules_), open the _Filtering log_ to view the complete information about your browser's traffic and block requests on the go, or look at a website’s security report. Besides, you can submit a complaint about any website (for example, if there are missed ads on the page, our filter engineers will review the report and fix the problem) and see the statistics on applied blocking rules.
+在主頁面上，您可以手動隱藏任何頁面上的任何元素（相應的規則將添加到 _用戶規則_ 中），打開_過濾日誌_查看瀏覽器流量的完整資訊，並隨時攔截請求，或者查看網站的安全報告。此外，您還可以提交對任何網站的回報（例如，如果頁面上有遺漏的廣告，我們的過濾工程師將檢查回報並修復問題），並查看已應用封鎖規則的統計資料。
 
-All web requests made by the browser are displayed in the _Filtering log_, along with detailed information about each request. The _Filtering log_ makes it easy, for example, to monitor requests blocked by AdGuard Browser Extension. Besides, it allows you to block any request or add a previously blocked request to Allowlist in two clicks. The _Filtering log_ also offers you a wide variety of options for sorting web requests, which can be helpful when creating your own filtering rules. You can open the _Filtering log_ by selecting the corresponding item in the main menu, or from the settings page (in the _Additional settings_ tab).
+瀏覽器提出的所有網頁請求都會顯示在 _過濾紀錄_（過濾紀錄）中，以及每個請求的詳細資訊。透過 _過濾紀錄_，您可以輕鬆監控 AdGuard 瀏覽器擴充套件 封鎖的請求。此外，它還可以讓您封鎖任何請求，或在 允許列表 中新增先前封鎖的請求，只需按兩下即可完成。_過濾紀錄_ 也為您提供多種網頁要求排序選項，這對您建立自己的過濾規則很有幫助。您可以在主功能表中選擇相應的項目，或從設定頁面（在 _其他設定_ 標籤中）開啟 _過濾紀錄_。
 
-By clicking the icons in the top right corner of the extension's main menu, you can open the extension settings or pause the protection.
+按一下擴充套件主功能表右上角的圖示，即可開啟擴充套件設定或暫停保護。

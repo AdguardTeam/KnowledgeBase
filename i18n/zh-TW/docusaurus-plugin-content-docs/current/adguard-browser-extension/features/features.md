@@ -3,32 +3,34 @@ title: Features
 sidebar_position: 1
 ---
 
-:::info
+:::資訊
 
-This article is about the AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+這篇文章是關於 AdGuard 瀏覽器擴充套件，它只保護您的瀏覽器。若要保護整個裝置，[請下載 AdGuard 應用程式](https://agrd.io/download-kb-adblock)
+
+
 
 :::
 
-## Main menu
+## 主功能表
 
-The main popup from which you can access settings, filtering log and statistics, and report problems
+主彈出式視窗，您可以從中存取設定、篩選日誌和統計資料，以及回報問題
 
 [Main menu](/adguard-browser-extension/features/main-menu.md)
 
-## Filters
+## 過濾器
 
-Filters and user rules to fine-tune ad blocking
+過濾器和使用者規則可微調廣告封鎖
 
-[Filters](/adguard-browser-extension/features/filters.md)
+[過濾器](/adguard-browser-extension/features/filters.md)
 
-## Tracking protection (Stealth Mode)
+## 追蹤保護（隱藏模式）
 
-Settings to block cookies, UTM tags, and online analytics that collect user information
+阻擋收集使用者資訊的 cookies、UTM 標籤和線上分析的設定
 
-[Tracking protection (Stealth Mode)](/adguard-browser-extension/features/stealth-mode.md)
+[追蹤保護（隱藏模式）](/adguard-browser-extension/features/stealth-mode.md)
 
-## Other features and options
+## 其他功能和選項
 
-General and additional settings, links to privacy documents and the repository
+一般與其他設定、隱私權文件與儲存庫的連結
 
-[Other features and options](/adguard-browser-extension/features/other-features.md)
+[其他功能和選項](/adguard-browser-extension/features/other-features.md)
