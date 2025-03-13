@@ -12,7 +12,7 @@ La clave de licencia se puede activar en un [número limitado de dispositivos](.
 - Haz clic en *Restablecer licencia* o *Cerrar sesión* en una aplicación AdGuard
 
 - Elimina el dispositivo de tu cuenta de AdGuard:
-    1. Haz clic en *Bloqueador de anuncios AdGuard* en tu [cuenta de AdGuard](https://my.adguard.com/).
+    1. Click *AdGuard Ad Blocker* in your [AdGuard account](https://adguardaccount.com/).
 
         ![Pestaña cuenta del bloqueador de anuncios *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 

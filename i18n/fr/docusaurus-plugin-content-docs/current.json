@@ -96,7 +96,7 @@
     "description": "The label for category Protection in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Firewall": {
-    "message": "Firewall",
+    "message": "Pare-feu",
     "description": "The label for category Firewall in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Linux": {

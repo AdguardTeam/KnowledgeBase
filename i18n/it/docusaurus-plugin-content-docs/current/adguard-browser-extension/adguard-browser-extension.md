@@ -11,48 +11,48 @@ Questo articolo riguarda l'Estensione di browser AdGuard, che protegge solo il t
 
 ## Funzionalità
 
-Main features and settings available in the AdGuard Browser Extension
+Principali caratteristiche e impostazioni disponibili nell'Estensione di browser AdGuard
 
 [Funzionalità](/adguard-browser-extension/features)
 
 ## Disponibilità
 
-Supported browsers and platforms where the extension can be installed
+Browser e piattaforme supportati dove l'estensione può essere installata
 
 [Disponibilità](/adguard-browser-extension/availability)
 
 ## Installazione
 
-Installation and removal
+Installazione e rimozione
 
 [Installazione](/adguard-browser-extension/installation)
 
 ## Compatibilità con l'app autonoma
 
-Compatibility of the AdGuard Browser Extension with the AdGuard desktop apps
+Compatibilità dell'Estensione di browser AdGuard con le app desktop AdGuard
 
 [Compatibilità con l'app autonoma](/adguard-browser-extension/compatibility)
 
 ## Estensione AdGuard Browser per Chrome MV3
 
-A separate AdGuard Browser Extension compatible with the Manifest V3 API
+Un'estensione AdGuard autonoma per browser compatibile con l'API Manifest V3
 
 [Estensione di browser AdGuard per Chrome MV3](/adguard-browser-extension/mv3-version/)
 
 ## Pagine protette dal browser
 
-Restricted domains whose content can’t be modified with ad blocking extensions
+Domini con restrizioni i cui contenuti non possono essere modificati con le estensioni di blocco-inserzioni
 
 [Pagine protette dal browser](/adguard-browser-extension/protected-pages)
 
 ## Risoluzione problemi
 
-Known issues and possible solutions
+Problemi noti e possibili soluzioni
 
 [Risoluzione dei problemi](/adguard-browser-extension/solving-problems)
 
 ## Comparazione con le app autonome
 
-The differences in functionality and features between the AdGuard extensions and desktop apps
+Differenze in funzioni e caratteristiche tra le estensioni di AdGuard e le app desktop
 
 [Confronto con le app autonome](/adguard-browser-extension/comparison-standalone)

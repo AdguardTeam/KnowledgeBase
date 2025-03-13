@@ -11,7 +11,7 @@ AdGuard 계정에서 이중 인증 기능을 설정하는 것을 권해드립니
 
 ## 이중 인증 설정 방법
 
-1. [AdGuard 계정](https://auth.adguard.com/login.html)에 로그인하고 *설정* 탭으로 이동합니다.
+1. Log into your [AdGuard account](https://auth.adguardaccount.com/login.html) and go to the *Settings* tab:
 
  ![AdGuard 계정 설정 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 

@@ -12,7 +12,7 @@ La chiave di licenza è attivabile su un [numero limitato di dispositivi](../wha
 - Fai clic su *Reimpostare licenza* o *Esci* in un'app AdGuard
 
 - Rimuovi il dispositivo dal tuo account AdGuard:
-    1. Fai clic su *Blocco AdGuard* nel tuo [account AdGuard](https://my.adguard.com/).
+    1. Click *AdGuard Ad Blocker* in your [AdGuard account](https://adguardaccount.com/).
 
         ![Scheda dell'account di Blocco annunci *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 

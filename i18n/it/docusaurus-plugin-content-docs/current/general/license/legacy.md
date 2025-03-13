@@ -46,7 +46,7 @@ Ad esempio, ecco l'aspetto della chiave 1+1:
 
 ## Ho una chiave (ereditaria) obsoleta. Che opzioni di rinnovo/aggiornamento sono disponibili per me?
 
-Puoi verificarle sulla [pagina di rinnovo](https://adguard.com/renew.html) o nel tuo [profilo AdGuard](https://my.adguard.com/main.html):
+You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://adguardaccount.com/main.html):
 
 ![Upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
 > Vai alla scheda "Le mie licenze" e controlla quali azioni sono per te disponibili, per ogni specifica chiave. Di seguito, le spiegheremo con esempi specifici.

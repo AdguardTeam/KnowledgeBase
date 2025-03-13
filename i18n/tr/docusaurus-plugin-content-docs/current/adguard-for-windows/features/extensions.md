@@ -33,7 +33,7 @@ AdGuard Extra is essentially a miniprogram that changes the way pages work in su
 
 **AdGuard Açılır Pencere Engelleyici**
 
-Bu uzantı, web sayfalarını görüntülediğinizde açılır pencerelerin açılmasını engeller. Bazı açılır pencereler yararlı kabul edilir — site yönetimi için ayarlar veya bir bağlantıya tıklandığında gösterilen ek referans bilgileri içerebilirler. Bu nedenle gerekirse Engelleyiciyi kapatabilirsiniz. Bu uzantı, AdGuard istisnalar listesine eklenen sitelerde de çalışmaz. Varsayılan olarak kapalıdır, ancak uygulama ayarlarından açabilirsiniz. You will find more detailed information about this extension in our Knowledge Base.
+Bu uzantı, web sayfalarını görüntülediğinizde açılır pencerelerin açılmasını engeller. Some popups are considered useful — they may contain settings for site administering or additional reference information demonstrated upon clicking a link. Bu nedenle gerekirse Engelleyiciyi kapatabilirsiniz. Bu uzantı, AdGuard istisnalar listesine eklenen sitelerde de çalışmaz. Varsayılan olarak kapalıdır, ancak uygulama ayarlarından açabilirsiniz.
 
 **Web of Trust**
 

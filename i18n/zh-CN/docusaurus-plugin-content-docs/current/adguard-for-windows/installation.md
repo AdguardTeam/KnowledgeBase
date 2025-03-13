@@ -11,11 +11,11 @@ sidebar_position: 2
 
 ## 系统要求
 
-**操作系统**： Microsoft Windows 11、10、8.1、8、7、Vista
+**操作系统**： Microsoft Windows 11、10、8.1、8。
 
-**RAM**： 至少 512 MB
+**RAM**： 至少 1GB
 
-**可用磁盘空间**： 150 MB
+**可用磁盘空间**： 150MB
 
 **浏览器**： 百度、Microsoft Edge、Microsoft Internet Explorer（所有版本）、Opera、Google Chrome、Yandex.Browser、Mozilla Firefox 和其他浏览器。
 
@@ -71,7 +71,7 @@ sidebar_position: 2
 
 ### 卸载的进阶方法 {#advanced}
 
-如果由于某些原因将无法通过常规的方式卸载应用程序，可以尝试使用卸载的进阶方法。 First of all, you need to [download the uninstaller tool](https://static.adtidy.org/windows/uninstaller/uninstal_utility.zip) created by our developers. 您可以将压缩包发送到电脑上的任何一个文件夹里。解压后，请开启 **Adguard_Uninstall_Utility.exe** 文件，并允许应用程序对设备设置进行更改。 然后按照以下说明进行操作：
+如果由于某些原因将无法通过常规的方式卸载应用程序，可以尝试使用卸载的进阶方法。 首先，要通过[该链接下载并安装我们开发人员创建的卸载软件](https://static.adtidy.org/windows/uninstaller/uninstal_utility.zip)。 您可以将压缩包发送到电脑上的任何一个文件夹里。解压后，请开启 **Adguard_Uninstall_Utility.exe** 文件，并允许应用程序对设备设置进行更改。 然后按照以下说明进行操作：
 
 - 选择「*AdGuard 广告拦截程序*」和「*标准*」（Standard）卸载类型，然后点击「*卸载*」（Uninstall）。
 

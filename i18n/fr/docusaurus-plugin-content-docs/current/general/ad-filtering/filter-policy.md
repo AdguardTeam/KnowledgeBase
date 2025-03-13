@@ -26,7 +26,7 @@ Exigences de qualité pour les règles de filtrage :
 
 Un **filtre** (ou une **liste de filtres**) est un ensemble de règles de filtrage conçues pour filtrer le contenu et bloquer des divers types de publicités et d'autres types de contenu à l'aide de bloqueurs de publicités. Ces filtres fonctionnent généralement au niveau du navigateur web, des programmes ou du serveur DNS.
 
-**Anti-adblock** est une technologie utilisée par des sites web ou des applications destinées à détecter le blocage publicitaire et à réagir de différentes manières : suivi, réinjecter des publicités, encourager à désactiver le bloqueur de publicité (appelé "mur anti-bloqueur de publicité"). Les anti-ablocks peuvent être de types différents :
+**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so-called “adblock walls”). Les anti-ablocks peuvent être de types différents :
 
 - Anti-adblock qui bloque le contenu du site web sans proposer d'alternative : pour continuer à utiliser le site, l'utilisateur doit y désactiver le bloqueur de publicité
 - "Mur anti-adblock" avec des options alternatives proposées, telles que l'achat d'un abonnement pour continuer à utiliser le bloqueur de publicité
@@ -81,7 +81,7 @@ L'objectif des filtres de blocage des publicités est de bloquer tous les types 
 - Nous ne bloquons pas les messages de détection des bloqueurs de publicités qui satisfont à au moins un des critères suivants :
     - Ils permettent l'utilisation du site Internet et ne superposent pas une quantité importante de contenu
     - Ils offrent une alternative à la désactivation d'un bloqueur de publicité étant donné que cette alternative ne met pas la vie privée ou la sécurité des utilisateurs en danger
-    - Ils permettent à l'utilisateur d'accéder au contenu du site web ou offrent un échange de valeur réalisable qui ne met pas en péril la vie privée ou la sécurité de l'utilisateur
+    - They allow the user to proceed to the website’s content
     - Certaines règles héritées peuvent continuer à bloquer les messages qui répondent à un ou plusieurs de ces critères. Si elles sont identifiées, ces règles seront traitées conformément à cette politique
 - Les pools de minage ne sont pas bloqués s'ils sont publics et s'ils ne sont pas utilisés uniquement à des fins malveillantes
 

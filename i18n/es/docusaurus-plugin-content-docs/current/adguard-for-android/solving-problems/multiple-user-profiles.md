@@ -68,7 +68,7 @@ Sobre cómo gestionar cuentas de usuario desde un dispositivo [Android](https://
 
 :::note
 
-En algunos casos, se crean cuentas de usuario restringidas de forma implícita y no se pueden eliminar. Por ejemplo, cuando utilizas las funciones de mensajería dual o de aplicación dual en dispositivos **Samsung** o **LG**. A continuación, puedes leer cómo solucionar el problema en estos casos.
+En algunos casos, se crean cuentas de usuario restringidas de forma implícita y no se pueden eliminar. For instance, when you use Dual Messenger or Dual App features on **Samsung** or **LG** devices. A continuación, puedes leer cómo solucionar el problema en estos casos.
 
 :::
 
@@ -84,8 +84,8 @@ Los propietarios de los teléfonos **LG** o **Samsung** también pueden encontra
 
 - Abre **Configuración**;
 - Presiona **Avanzado**;
-- Desplázate hacia abajo y pulsa **Dual messenger**;
-- Desactivar el **Dual messenger** para todas las aplicaciones;
+- Scroll down and press **Dual Messenger**;
+- Disable the **Dual Messenger** for all apps;
 - Bloquea el dispositivo durante 5 minutos;
 - Desbloquea la pantalla y vuelve a intentar crear el perfil VPN.
 
@@ -93,6 +93,6 @@ Los propietarios de los teléfonos **LG** o **Samsung** también pueden encontra
 
 - Abre **Configuración**;
 - Selecciona la pestaña **General**;
-- Desplázate hacia abajo y pulsa **Dual app**;
+- Scroll down and press **Dual App**;
 - Elimina todas las aplicaciones de la lista;
 - Reinicia tu dispositivo.

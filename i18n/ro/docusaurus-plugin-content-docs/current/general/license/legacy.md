@@ -46,7 +46,7 @@ De exemplu, așa arată cheia 1+1:
 
 ## Am o cheie învechită. Ce opțiuni de reînnoire/modernizare sunt disponibile pentru mine?
 
-Puteți verifica acest lucru pe [pagina de reînnoire](https://adguard.com/renew.html) sau în [contul dumneavoastră AdGuard](https://my.adguard.com/main.html):
+You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://adguardaccount.com/main.html):
 
 ![Upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
 > Mergeți la fila "Licențele mele" și verificați ce acțiuni sunt disponibile pentru fiecare cheie specifică. Mai jos vom explica cu exemple specifice.

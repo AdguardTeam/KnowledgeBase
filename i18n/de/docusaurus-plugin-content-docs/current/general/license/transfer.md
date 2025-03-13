@@ -12,7 +12,7 @@ Der Lizenzschlüssel kann auf einer [begrenzten Anzahl von Geräten](../what-is)
 - Klicken Sie auf *Lizenz zurücksetzen* oder *Abmelden* in einer AdGuard-App
 
 - Entfernen Sie das Gerät aus Ihrem AdGuard-Konto:
-    1. Klicken Sie auf *AdGuard Werbeblocker* in Ihrem [AdGuard Konto](https://my.adguard.com/).
+    1. Click *AdGuard Ad Blocker* in your [AdGuard account](https://adguardaccount.com/).
 
         ![Tab Werbeblocker-Konto *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 

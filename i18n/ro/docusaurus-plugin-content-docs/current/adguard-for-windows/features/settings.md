@@ -23,7 +23,7 @@ Aici poți seta limba și tema (Întuneric sau Lumină), activați lansarea AdGu
 
 ### Blocant de reclame
 
-Acesta este modul principal al AdGuard pentru Windows care elimină reclamele de pe site-urile pe care le vizitezi și din aplicațiile instalate pe dispozitivul tău. Pentru a filtra conținutul publicitar și amenințător pentru intimitate, cum ar fi bannerele, pop-up-urile sau trackerele, AdGuard folosește diferite filtre: grupuri de reguli cu un scop similar scrise cu o [sintaxă specială](/general/ad-filtering/create-own-filters). Pentru a înțelege ce sunt filtrele și cum funcționează, citește [acest articol](/general/ad-filtering/how-ad-blocking-works).
+Acesta este modul principal al AdGuard pentru Windows care elimină reclamele de pe site-urile pe care le vizitezi și din aplicațiile instalate pe dispozitivul tău. To filter out advertising and privacy-threatening content such as banners, popups, or trackers AdGuard uses different filters — groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). Pentru a înțelege ce sunt filtrele și cum funcționează, citește [acest articol](/general/ad-filtering/how-ad-blocking-works).
 
 ![Blocant de reclame \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
@@ -54,7 +54,7 @@ Pentru a învăța totul despre Modul invizibil și opțiunile sale, [citește a
 
 Securitatea la navigare oferă o protecție puternică împotriva site-urilor web dăunătoare și de phishing. Nu, AdGuard pentru Windows nu este un antivirus. Nu va opri descărcarea unui virus atunci când aceasta a început deja, nici nu va șterge virusurile deja existente. Dar te va avertiza dacă ești pe cale să accesezi un site web al cărui domeniu a fost adăugat în baza noastră de date de "site-uri neîncrezătoare", sau să descarci un fișier de pe un astfel de site. Poți găsi mai multe informații despre modul în care funcționează acest modul în [articolul dedicat](/general/browsing-security).
 
-În acest modul poți
+In this module, you can:
 
 - permite notificări pentru a bloca solicitările către site-uri dăunătoare și de phishing,
 - activează notificările sonore,

@@ -5,13 +5,13 @@ sidebar_position: 1
 
 ## Général
 
-Basic features, including notifications, update intervals, and logging level
+L'article met en évidence des fonctionnalités de base, y compris les notifications, les intervalles de mise à jour et le niveau de journalisation
 
 [Fonctionnalités générales](/adguard-for-safari/features/general.md)
 
 ## Filtres
 
-Different filters that allow you to customize ad blocking
+Les filtres différents qui permettent de personnaliser le blocage des publicités
 
 [Filtres](/adguard-for-safari/features/filters.md)
 

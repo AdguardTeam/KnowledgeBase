@@ -46,7 +46,7 @@ sidebar_position: 6
 
 ## 旧キーを持っています。 更新・アップグレードする方法は？
 
-[更新用ページ](https://adguard.com/renew.html)または[AdGuardアカウント](https://my.adguard.com/main.html)で確認することができます。
+You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://adguardaccount.com/main.html):
 
 ![アップグレード](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
 > 「ライセンス」タブで、キーごとにどのようなアクションが可能かを確認することができます。 以下、具体的な例を挙げて説明しております。

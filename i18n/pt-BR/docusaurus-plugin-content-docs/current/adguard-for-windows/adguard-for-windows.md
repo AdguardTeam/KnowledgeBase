@@ -11,30 +11,30 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 ## Recursos
 
-Main features and settings available in AdGuard for Windows
+Principais recursos e configurações disponíveis no AdGuard para Windows
 
 [Recursos](/adguard-for-windows/features/features.md)
 
 ## Instalação
 
-Installation, removal, and system requirements for AdGuard for Windows
+Instalação, desinstalação e requisitos de sistema do AdGuard para Windows
 
 [Instalação](/adguard-for-windows/installation.md)
 
 ## Assistente de navegador
 
-An extension that complements the desktop program and allows you to manage filtering from your browser
+Uma extensão que complementa o programa de computador e permite que você gerencie a filtragem do seu navegador
 
 [Assistente de navegador](/adguard-for-windows/browser-assistant.md)
 
 ## Resolvendo problemas
 
-Known issues and possible solutions
+Problemas conhecidos e possíveis soluções
 
 [Resolvendo problemas](/adguard-for-windows/solving-problems/solving-problems.md)
 
 ## Documentação para administradores
 
-Configuration guide for system administrators
+Guia de configuração para administradores de sistema
 
 [Documentação para administradores](/adguard-for-windows/admins-documentation.md)

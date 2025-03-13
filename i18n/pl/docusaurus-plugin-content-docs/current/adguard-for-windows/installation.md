@@ -11,9 +11,9 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 ## System requirements
 
-**Operating system:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
+**Operating system:** Microsoft Windows 11, 10, 8.1, 8.
 
-**RAM:** at least 512 MB.
+**RAM:** at least 1 GB.
 
 **Free disk space:** 150 Mbytes.
 

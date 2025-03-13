@@ -11,18 +11,18 @@ sidebar_position: 1
 
 ## 功能
 
-Main features and settings available in AdGuard for Mac
+Mac 版 AdGuard 的主要功能和可用设置。
 
 [功能](/adguard-for-mac/features/features.md)
 
 ## 安装
 
-Installation, removal, and system requirements for AdGuard for Mac
+Mac 版 AdGuard 的安装、卸载和系统要求。
 
 [安装](/adguard-for-mac/installation.md)
 
 ### 解决问题
 
-Known issues and possible solutions
+已知问题和可能的解决方案。
 
 [解决问题](/adguard-for-mac/solving-problems/solving-problems.md)

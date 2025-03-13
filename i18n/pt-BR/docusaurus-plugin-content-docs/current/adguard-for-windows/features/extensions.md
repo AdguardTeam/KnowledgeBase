@@ -33,7 +33,7 @@ O AdGuard Extra é basicamente um miniprograma que altera a forma como as págin
 
 **Bloqueador de pop-ups do AdGuard**
 
-Esta extensão evita que janelas popup sejam abertas quando você visualiza páginas da web. Algumas popups são consideradas úteis: elas podem conter configurações para administração do site ou informações de referência adicionais demonstradas ao clicar em um link. É por isso que você pode desligar o bloqueador, se necessário. Esta extensão também não funciona em sites adicionados à lista de exceções do AdGuard. Ele está desativado por padrão, mas você pode ativá-lo nas configurações do aplicativo. Você encontrará informações mais detalhadas sobre esta extensão em nossa base de conhecimento.
+Esta extensão evita que janelas popup sejam abertas quando você visualiza páginas da web. Algumas popups são consideradas úteis: elas podem conter configurações para administração do site ou informações de referência adicionais demonstradas ao clicar em um link. É por isso que você pode desligar o bloqueador, se necessário. Esta extensão também não funciona em sites adicionados à lista de exceções do AdGuard. Ele está desativado por padrão, mas você pode ativá-lo nas configurações do aplicativo.
 
 **Web of Trust**
 

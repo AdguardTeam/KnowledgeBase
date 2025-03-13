@@ -19,9 +19,9 @@ HTTP 트래픽은 어떤 경우에도 필터링되지만, AdGard가 HTTPS 트래
 
 ### Windows {#windows}
 
-1. AdGuard가 설치된 데스크톱 컴퓨터의 IP 주소를 기록해 두세요.
+1. Note the IP address of your computer with AdGuard installed.
 
-1. AdGuard 보호 기능이 활성화되어 있는지 확인하세요. Windows 컴퓨터의 경우, 설정의 **네트워크** 탭에서 **AdGuard를 HTTP 프록시로 사용** 확인란을 선택합니다. Mac의 경우, **설정** → **환경설정** → **네트워크**로 이동하여 **HTTP 프록시**를 활성화합니다.
+1. AdGuard 보호 기능이 활성화되어 있는지 확인하세요. Windows 컴퓨터의 경우, 설정의 **네트워크** 탭에서 **AdGuard를 HTTP 프록시로 사용** 확인란을 선택합니다. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
 1. AdGuard가 설치된 동일한 컴퓨터에서 다음 링크를 따르세요: [http://local.adguard.org/cert](http://local.adguard.org/cert)
 
@@ -55,15 +55,15 @@ HTTP 트래픽은 어떤 경우에도 필터링되지만, AdGard가 HTTPS 트래
 
 1. *프록시 서버 사용* 탭에서 **설정**을 클릭합니다.
 
-1. 토글을 켭니다. **프록시 IP 주소에** 1단계에서 기록한 데스크톱 컴퓨터의 IP 주소를 입력합니다. **포트**, 데스크톱 AdGuard 앱의 네트워크 설정에서 선택한 포트를 입력합니다.
+1. 토글을 켭니다. For **Proxy IP address**, type the IP address of your computer that you noted in step 1. **포트**, 데스크톱 AdGuard 앱의 네트워크 설정에서 선택한 포트를 입력합니다.
 
 1. **저장**을 클릭합니다.
 
 ### Mac {#mac}
 
-1. AdGuard가 설치된 데스크톱 컴퓨터의 IP 주소를 기록해 두세요.
+1. Note the IP address of your computer with installed AdGuard.
 
-1. AdGuard 보호 기능이 활성화되어 있는지 확인하세요. Windows 컴퓨터의 경우, 설정의 **네트워크** 탭에서 **AdGuard를 HTTP 프록시로 사용** 확인란을 선택합니다. Mac의 경우, **설정** → **환경설정** → **네트워크**로 이동하여 **HTTP 프록시**를 활성화합니다.
+1. AdGuard 보호 기능이 활성화되어 있는지 확인하세요. Windows 컴퓨터의 경우, 설정의 **네트워크** 탭에서 **AdGuard를 HTTP 프록시로 사용** 확인란을 선택합니다. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
 1. 웹 브라우저를 사용하여 이 링크를 클릭하세요: [http://local.adguard.org/cert](http://local.adguard.org/cert)
 
@@ -93,9 +93,9 @@ HTTP 트래픽은 어떤 경우에도 필터링되지만, AdGard가 HTTPS 트래
 
 ### Android {#android}
 
-1. AdGuard가 설치된 데스크톱 컴퓨터의 IP 주소를 기록해 두세요.
+1. Note the IP address of your computer with installed AdGuard.
 
-1. AdGuard 보호 기능이 활성화되어 있는지 확인하세요. Windows 컴퓨터의 경우, 설정의 **네트워크** 탭에서 **AdGuard를 HTTP 프록시로 사용** 확인란을 선택합니다. Mac의 경우, **설정** → **환경설정** → **네트워크**로 이동하여 **HTTP 프록시**를 활성화합니다.
+1. AdGuard 보호 기능이 활성화되어 있는지 확인하세요. Windows 컴퓨터의 경우, 설정의 **네트워크** 탭에서 **AdGuard를 HTTP 프록시로 사용** 확인란을 선택합니다. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
 1. AdGuard가 설치된 컴퓨터에서 웹 브라우저를 사용하여 다음 링크를 따르세요: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -109,13 +109,13 @@ HTTP 트래픽은 어떤 경우에도 필터링되지만, AdGard가 HTTPS 트래
 
 1. 활성 Wi-Fi 네트워크의 고급 설정을 엽니다.
 
-1. **프록시 유형**을 **수동**으로 변경합니다. **프록시 호스트 이름**에 1단계에서 기록한 데스크톱 컴퓨터의 IP 주소를 입력합니다. **프록시 포트**, AdGuard 데스크톱 앱의 네트워크 설정에서 선택한 포트를 입력합니다.
+1. **프록시 유형**을 **수동**으로 변경합니다. For **Proxy hostname**, enter the noted IP address of your computer you noted in step 1. **프록시 포트**, AdGuard 데스크톱 앱의 네트워크 설정에서 선택한 포트를 입력합니다.
 
 ### iOS {#ios}
 
-1. AdGuard가 설치된 데스크톱 컴퓨터의 IP 주소를 기록해 두세요.
+1. Note the IP address of your computer with installed AdGuard.
 
-1. AdGuard 보호 기능이 활성화되어 있는지 확인하세요. Windows 컴퓨터의 경우, 설정의 **네트워크** 탭에서 **AdGuard를 HTTP 프록시로 사용** 확인란을 선택합니다. Mac의 경우, **설정** → **환경설정** → **네트워크**로 이동하여 **HTTP 프록시**를 활성화합니다.
+1. AdGuard 보호 기능이 활성화되어 있는지 확인하세요. Windows 컴퓨터의 경우, 설정의 **네트워크** 탭에서 **AdGuard를 HTTP 프록시로 사용** 확인란을 선택합니다. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
 1. AdGuard가 설치된 컴퓨터에서 웹 브라우저를 사용하여 다음 링크를 따르세요: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 

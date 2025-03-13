@@ -5,30 +5,30 @@ sidebar_position: 1
 
 ## Funzionalità
 
-Main features and settings available in AdGuard for iOS
+Funzioni principali e impostazioni disponibili in AdGuard per iOS
 
 [Funzionalità](/adguard-for-ios/features/features.md)
 
 ## Installazione
 
-Installation, removal, and system requirements for AdGuard for iOS
+Installazione, rimozione e requisiti di sistema per AdGuard per iOS
 
 [Installazione](/adguard-for-ios/installation.md)
 
 ## Estensione Web per Safari
 
-A web extension that extends the functionality of AdGuard for iOS and allows you to manage AdGuard from your browser
+Un'estensione web che estende la funzionalità di AdGuard per iOS e consente di gestire AdGuard dal tuo browser
 
 [Estensione web di Safari](/adguard-for-ios/web-extension.md)
 
 ## Risoluzione problemi
 
-Known issues and possible solutions
+Problemi noti e possibili soluzioni
 
 [Risoluzione dei problemi](/adguard-for-ios/solving-problems/solving-problems.md)
 
 ## AdGuard e AdGuard Pro
 
-Why there are two AdGuard apps in the App Store and how they differ
+Perché ci sono due app di AdGuard nell'App Store e qual è la differenza tra di esse
 
 [AdGuard e AdGuard Pro](/adguard-for-ios/adguard-and-adguard-pro.md)

@@ -11,7 +11,7 @@ Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multi
 
 ## Pantalla de inicio
 
-On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
+En la pantalla principal encontrarás _Configuración_, _Soporte_, _Licencia_ y _Acerca de_, así como estadísticas sobre anuncios y rastreadores bloqueados
 
 [Pantalla de inicio](/adguard-for-windows/features/home-screen/)
 
@@ -23,7 +23,7 @@ Theme and language settings, ad blocking customization, DNS protection, parental
 
 ## Extensiones
 
-A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
+Una función que te permite ampliar la funcionalidad de los sitios web agregando scripts y estilos de usuario
 
 [Extensiones](/adguard-for-windows/features/extensions/)
 

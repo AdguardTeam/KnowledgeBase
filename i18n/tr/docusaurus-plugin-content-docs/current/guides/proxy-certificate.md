@@ -19,9 +19,9 @@ Trafiğini filtrelemek istediğiniz cihazın işletim sistemine bağlı olarak, 
 
 ### Windows {#windows}
 
-1. AdGuard'ın kurulu olduğu masaüstü bilgisayarınızın IP adresini not edin.
+1. Note the IP address of your computer with AdGuard installed.
 
-1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. Mac için, **Ayarlar** → **Tercihler** → **Ağ** öğesine gidin ve **HTTP proxy** öğesini etkinleştirin.
+1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
 1. AdGuard ile aynı bilgisayarda şu bağlantıyı izleyin: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -55,15 +55,15 @@ Trafiğini filtrelemek istediğiniz cihazın işletim sistemine bağlı olarak, 
 
 1. Click **Set up** in the *Use a proxy server* tab.
 
-1. Turn the toggle on. For **Proxy IP address**, type the IP address of your desktop computer that you noted in step 1. **Bağlantı noktası** için, masaüstü AdGuard uygulamasının ağ ayarlarında seçilen bağlantı noktasını girin.
+1. Turn the toggle on. For **Proxy IP address**, type the IP address of your computer that you noted in step 1. **Bağlantı noktası** için, masaüstü AdGuard uygulamasının ağ ayarlarında seçilen bağlantı noktasını girin.
 
 1. **Kaydet** öğesine tıklayın.
 
 ### Mac {#mac}
 
-1. AdGuard'ın kurulu olduğu masaüstü bilgisayarınızın IP adresini not edin.
+1. Note the IP address of your computer with installed AdGuard.
 
-1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. Mac için, **Ayarlar** → **Tercihler** → **Ağ** öğesine gidin ve **HTTP proxy** öğesini etkinleştirin.
+1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
 1. Web tarayıcısı kullanarak bu bağlantıyı izleyin: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -93,9 +93,9 @@ Trafiğini filtrelemek istediğiniz cihazın işletim sistemine bağlı olarak, 
 
 ### Android {#android}
 
-1. AdGuard'ın kurulu olduğu masaüstü bilgisayarınızın IP adresini not edin.
+1. Note the IP address of your computer with installed AdGuard.
 
-1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. Mac için, **Ayarlar** → **Tercihler** → **Ağ** öğesine gidin ve **HTTP proxy** öğesini etkinleştirin.
+1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
 1. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -109,13 +109,13 @@ Trafiğini filtrelemek istediğiniz cihazın işletim sistemine bağlı olarak, 
 
 1. Open advanced settings of the active Wi-Fi network.
 
-1. Change the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your desktop computer you noted in step 1. For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
+1. Change the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your computer you noted in step 1. For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
 
 ### iOS {#ios}
 
-1. AdGuard'ın kurulu olduğu masaüstü bilgisayarınızın IP adresini not edin.
+1. Note the IP address of your computer with installed AdGuard.
 
-1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. Mac için, **Ayarlar** → **Tercihler** → **Ağ** öğesine gidin ve **HTTP proxy** öğesini etkinleştirin.
+1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
 1. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 

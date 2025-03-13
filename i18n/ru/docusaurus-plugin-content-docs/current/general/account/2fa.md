@@ -11,7 +11,7 @@ sidebar_position: 3
 
 ## Как настроить
 
-1. Войдите в свой [аккаунт AdGuard](https://auth.adguard.com/login.html) и перейдите во вкладку *Настройки*:
+1. Log into your [AdGuard account](https://auth.adguardaccount.com/login.html) and go to the *Settings* tab:
 
  ![Настройки личного кабинета AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 

@@ -51,7 +51,7 @@ Web 扩展不是独立工具，需要 iOS 版 AdGuard。 如果设备上未安�
 
 ![在「允许这些扩展」部分中选择 "AdGuard" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_en.png)
 
-点击它，然后切换开关。 确保同一屏幕底部的「*所有网站*」设置为「*允许*」或「*询问*」。 选择「*允许*」，无需在每次访问新网站时授予权限。 如果要按站点授予权限，请选择「*询问*」。
+点击它，然后打开开关。 确保同一屏幕底部的「*所有网站*」设置为「*允许*」或「*询问*」。 选择「*允许*」，无需在每次访问新网站时授予权限。 如果要按站点授予权限，请选择「*询问*」。
 
 ![扩展设置 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 

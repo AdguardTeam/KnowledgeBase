@@ -40,8 +40,8 @@ Pode-se dizer que esse é uma subcategoria específica do Erro 1603. As soluçõ
     - Pressione *Win + R* e insira **services.msc**.
     - Encontre na lista e clique duas vezes em *Instalador do Windows*.
     - Pressione o botão *Iniciar* sob *Status do serviço* e pressione *OK*. Se o status do serviço for **Em execução**, você deve clicar em *Parar* primeiro e depois em *Iniciar*.
-    - Pressione *Win + R*, digite e pressione ***msiexec /unregister*** e pressione *Enter*.
-    - Pressione *Win + R* novamente, digite e pressione ***msiexec /regserver*** e pressione *Enter*
+    - Pressione *Win + R*, digite ***msiexec /unregister*** e pressione *Enter*.
+    - Pressione *Win + R* novamente, digite ***msiexec /regserver***e pressione *Enter*
 
 - Reinicialize o computador e inicie a instalação novamente. Às vezes, isso é suficiente para resolver o problema.
 
@@ -70,8 +70,8 @@ Este erro parece mais assustador do que realmente é. Na realidade, esse é um e
     - Pressione *Win + R* e digite ***services.msc***.
     - Encontre na lista e clique duas vezes em *Instalador do Windows*.
     - Pressione o botão *Iniciar* sob *Status do serviço* e pressione *OK*. Se o status do serviço for **Em execução**, você deve clicar em *Parar* primeiro e depois em *Iniciar*.
-    - Pressione *Win + R*, digite e pressione ***msiexec /unregister*** e pressione *Enter*.
-    - Pressione *Win + R* novamente, digite e pressione ***msiexec /regserver*** e pressione *Enter*
+    - Pressione *Win + R*, digite ***msiexec /unregister*** e pressione *Enter*.
+    - Pressione *Win + R* novamente, digite ***msiexec /regserver***e pressione *Enter*
 
 - Adquira permissões completas na unidade para instalação. É possível que o erro 1603 ocorra porque você não tem permissões completas no local do arquivo. Também não é tão fácil quanto algumas das outras soluções:
 

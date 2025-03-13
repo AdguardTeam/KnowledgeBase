@@ -11,18 +11,18 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 ## Funktionen
 
-Main features and settings available in AdGuard for Android
+Die wichtigsten Funktionen und Einstellungen von AdGuard für Android
 
 [Funktionen](/adguard-for-android/features/features.md)
 
 ## Installation
 
-Installation, removal, and system requirements for AdGuard for Android
+Installation, Deinstallation und Systemanforderungen für AdGuard für Android
 
 [Installation](/adguard-for-android/installation.md)
 
 ## Probleme lösen
 
-Known issues and possible solutions
+Bekannte Probleme und mögliche Lösungen
 
 [Probleme lösen](/adguard-for-android/solving-problems/solving-problems.md)

@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Qu'est-ce qu'un compte AdGuard
 
-[Le compte AdGuard](https://my.adguard.com/) est un compte utilisateur qui stocke des informations sur vos licences et abonnements AdGuard, vos appareils actifs, votre historique d'achats, votre langue préférée et d'autres préférences. De nombreux produits AdGuard offrent la possibilité de les activer en saisissant les informations d'identification de votre compte AdGuard, à condition qu'il contienne une licence valide.
+[AdGuard account](https://adguardaccount.com/) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. De nombreux produits AdGuard offrent la possibilité de les activer en saisissant les informations d'identification de votre compte AdGuard, à condition qu'il contienne une licence valide.
 
 ## Comment créer un compte
 
@@ -29,4 +29,4 @@ Après avoir enregistré votre compte, vous pouvez utiliser l'option *Code à us
 
 ## Comment créer un compte via un réseau social
 
-Pour créer un compte via un réseau social, suivez simplement [le lien](https://auth.adguard.com/login.html) et connectez-vous à votre compte. Une fois inscrit, vérifiez votre boîte de réception : vous recevrez un e-mail de confirmation. Définissez un mot de passe et c'est tout ! Vous pouvez désormais utiliser toutes les [fonctionnalités du compte AdGuard](https://adguard.com/kb/general/account/features/).
+To create an account via a social network, simply follow the [link](https://auth.adguardaccount.com/login.html) and log in to your account. Une fois inscrit, vérifiez votre boîte de réception : vous recevrez un e-mail de confirmation. Définissez un mot de passe et c'est tout ! Vous pouvez désormais utiliser toutes les [fonctionnalités du compte AdGuard](https://adguard.com/kb/general/account/features/).

@@ -46,7 +46,7 @@ sidebar_position: 6
 
 ## 我有旧版许可证密钥。 我有什么续订/升级选择？
 
-用户可以在[续订网页](https://adguard.com/renew.html)或 [AdGuard 账号](https://my.adguard.com/main.html)里查看该消息：
+You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://adguardaccount.com/main.html):
 
 ![升级](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
 > 请前往「我的许可证」选项卡，检查每个特定密钥有哪些操作可供执行。 下面我们将用具体的例子给您解释。
