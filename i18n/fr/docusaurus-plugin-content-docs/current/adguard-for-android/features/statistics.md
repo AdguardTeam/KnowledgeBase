@@ -43,8 +43,8 @@ Cette section affiche les entreprises que votre appareil contacte. Qu'est-ce que
 
 ### Statistiques DNS
 
-This section shows data about the requests handled by _DNS protection_. You can see the total number of requests sent and how many were blocked by AdGuard in figures and graphs. You'll also find statistics on the amount of traffic saved and data downloaded and uploaded.
+Cette section montre les données relatives aux requêtes traitées par la _Protection DNS_. Vous pouvez voir le nombre total de requêtes envoyées et combien ont été bloquées par AdGuard en chiffres et en graphiques. Vous trouverez également des statistiques sur la quantité de trafic économisé et les données téléchargées et envoyées.
 
-### Battery usage
+### Utilisation de la batterie
 
-This section displays statistics on the device resources used by AdGuard during the last 24 hours. The data may differ from the stats displayed in your device settings. This happens because the system attributes the traffic of all filtered apps to AdGuard. Thus, the device shows that AdGuard consumes more resources than it actually does. [Read more about battery and traffic consumption issues](/adguard-for-android/solving-problems/battery/).
+Cette section affiche les statistiques sur les ressources de l'appareil utilisées par AdGuard au cours des dernières 24 heures. Les données peuvent différer des statistiques affichées dans les paramètres de votre appareil. Cela se produit parce que le système attribue le trafic de toutes les applications filtrées à AdGuard. Ainsi, l'appareil montre qu'AdGuard consomme plus de ressources qu'il ne le fait réellement. [En savoir plus sur les problèmes de consommation de batterie et de trafic](/adguard-for-android/solving-problems/battery/).

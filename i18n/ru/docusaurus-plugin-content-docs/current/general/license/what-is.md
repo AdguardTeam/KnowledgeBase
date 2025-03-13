@@ -3,7 +3,7 @@ title: Что такое лицензия AdGuard?
 sidebar_position: 1
 ---
 
-Лицензия — это разрешение на использование продукта AdGuard, предоставляемое в соответствии [с Лицензионным соглашением](https://adguard.com/eula.html). Если лицензия AdGuard привязана к электронной почте, её можно найти [в личном кабинете AdGuard](https://my.adguard.com/).
+Лицензия — это разрешение на использование продукта AdGuard, предоставляемое в соответствии [с Лицензионным соглашением](https://adguard.com/eula.html). If bound to an email address, AdGuard licenses can be found in the user's [AdGuard account](https://adguardaccount.com/).
 
 ## Какие типы лицензий AdGuard существуют
 
@@ -35,7 +35,7 @@ sidebar_position: 1
 
 ## Как использовать лицензию AdGuard
 
-Чтобы использовать лицензию на устройстве, войдите в приложение AdGuard через почту, связанную с лицензией. Если вы ещё не привязывали лицензию к почте, это можно сделать [в личном кабинете AdGuard](https://my.adguard.com/). Для этого откройте вкладку *Лицензии* и нажмите *Привязать лицензию*.
+Чтобы использовать лицензию на устройстве, войдите в приложение AdGuard через почту, связанную с лицензией. If the license hasn't been bound to your email address yet, you can do it in your [AdGuard account](https://adguardaccount.com/). Для этого откройте вкладку *Лицензии* и нажмите *Привязать лицензию*.
 
 Вы также можете ввести [лицензионный ключ](#license-key) сразу в приложении AdGuard.
 

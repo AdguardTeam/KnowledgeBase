@@ -7,7 +7,7 @@ Cadere vittima di phishing e malware rimane un problema comune. Per migliorare l
 
 :::note Important
 
-Non raccogliamo né utilizziamo alcuna informazione sui siti web visitati.
+Non raccogliamo né usiamo alcuna informazione sui siti web visitati.
 
 :::
 

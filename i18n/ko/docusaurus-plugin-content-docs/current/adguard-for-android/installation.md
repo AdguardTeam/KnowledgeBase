@@ -11,7 +11,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 ## 시스템 요구 사항
 
-**OS version:** Android 7.0 or higher
+**OS version:** Android 9.0 or higher
 
 **RAM**: 2 GB 이상
 

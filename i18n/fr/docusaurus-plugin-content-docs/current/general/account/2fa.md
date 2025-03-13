@@ -11,7 +11,7 @@ Nous vous recommandons de mettre en place une authentification à deux facteurs 
 
 ## Comment la mettre en place
 
-1. Connectez-vous à votre [ compte AdGuard](https://auth.adguard.com/login.html) et accédez à l'onglet *Paramètres* :
+1. Log into your [AdGuard account](https://auth.adguardaccount.com/login.html) and go to the *Settings* tab:
 
  ![Paramètres du compte AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 

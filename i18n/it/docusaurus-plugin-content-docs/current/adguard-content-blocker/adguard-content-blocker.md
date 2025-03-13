@@ -11,12 +11,12 @@ Questo articolo riguarda AdGuard Content Blocker, che protegge soltanto i browse
 
 ## Panoramica delle funzionalità
 
-Main features and settings available in AdGuard Content Blocker
+Funzioni principali e impostazioni disponibili in AdGuard Content Blocker
 
-[Features overview](/adguard-content-blocker/overview.md)
+[Panoramica delle funzionalità](/adguard-content-blocker/overview.md)
 
 ## Installazione
 
-Installation, removal, and system requirements for AdGuard Content Blocker
+Installazione, rimozione e requisiti di sistema per AdGuard Content Blocker
 
-[Installation](/adguard-content-blocker/installation.md)
+[installazione](/adguard-content-blocker/installation.md)

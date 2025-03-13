@@ -11,24 +11,24 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
 ## Hauptmenü
 
-The main popup from which you can access settings, filtering log and statistics, and report problems
+Das Pop-up, von dem aus Sie auf Einstellungen, das Filterungsprotokoll und Statistiken zugreifen und Probleme melden können
 
 [Hauptmenü](/adguard-browser-extension/features/main-menu.md)
 
 ## Filter
 
-Filters and user rules to fine-tune ad blocking
+Filter und Benutzerregeln zur Feinabstimmung der Werbeblockierung
 
 [Filter](/adguard-browser-extension/features/filters.md)
 
 ## Tracking-Schutz (Privatsphäre)
 
-Settings to block cookies, UTM tags, and online analytics that collect user information
+Einstellungen zum Blockieren von Cookies, UTM-Tags und Analyse-Tools, die Nutzerdaten sammeln
 
 [Tracking-Schutz (Privatsphäre)](/adguard-browser-extension/features/stealth-mode.md)
 
 ## Weitere Funktionen und Optionen
 
-General and additional settings, links to privacy documents and the repository
+Allgemeine und zusätzliche Einstellungen, Links zu Datenschutzdokumenten und zum Repository
 
 [Weitere Funktionen und Optionen](/adguard-browser-extension/features/other-features.md)

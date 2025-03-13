@@ -24,10 +24,9 @@ V sekci *Licence* můžete spravovat své licence a zařízení s nimi spojená.
 
 - svázaná a nesvázaná,
 - rozšířená,
-- upgradovaná,
-- zrušená. Můžete zde také aktualizovat své platební údaje.
+- upgradována.
 
-Zařízení svázaná s licencemi blokátoru reklam AdGuard lze zrušit nebo přejmenovat. Chcete-li odpojit nepoužívaná zařízení, klikněte na počet zařízení vedle položky *Zařízení*, poté vyberte šipku doprava → *Odebrat*.
+Zařízení svázaná s licencemi blokátoru reklam AdGuard lze zrušit nebo přejmenovat. Chcete-li odpojit nepoužívaná zařízení, klikněte na počet zařízení vedle položky *Zařízení*, `>` → *Odebrat*.
 
 ## Zobrazení nákupů
 

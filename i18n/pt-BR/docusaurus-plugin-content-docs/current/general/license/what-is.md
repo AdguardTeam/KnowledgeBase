@@ -3,7 +3,7 @@ title: What is an AdGuard license?
 sidebar_position: 1
 ---
 
-Uma licença é uma permissão para usar o produto AdGuard, fornecida de acordo com o Contrato de Licença de Usuário Final [](https://adguard.com/eula.html). Se vinculadas a um endereço de e-mail, as licenças do AdGuard podem ser encontradas na [conta do AdGuard](https://my.adguard.com/) do usuário.
+Uma licença é uma permissão para usar o produto AdGuard, fornecida de acordo com o Contrato de Licença de Usuário Final [](https://adguard.com/eula.html). If bound to an email address, AdGuard licenses can be found in the user's [AdGuard account](https://adguardaccount.com/).
 
 ## Quais os tipos de licença do AdGuard?
 
@@ -35,7 +35,7 @@ Para estender o limite de dispositivos, você pode [fazer upgrade](../payment-op
 
 ## Como usar a licença do AdGuard
 
-Para usar sua licença em um dispositivo, faça login no aplicativo AdGuard usando o endereço de e-mail associado à licença. Se a licença ainda não estiver vinculada ao seu endereço de e-mail, você poderá fazer isso na sua conta [AdGuard](https://my.adguard.com/). Para isso, abra a aba *Licenças* e clique em *Vincular licença*.
+Para usar sua licença em um dispositivo, faça login no aplicativo AdGuard usando o endereço de e-mail associado à licença. If the license hasn't been bound to your email address yet, you can do it in your [AdGuard account](https://adguardaccount.com/). Para isso, abra a aba *Licenças* e clique em *Vincular licença*.
 
 Como alternativa, você pode inserir sua chave de licença [](#license-key) em seu aplicativo AdGuard.
 

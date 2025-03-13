@@ -73,7 +73,7 @@ AdGuard가 필터 구독 URL(예: `abp:subscribe` 등)을 자동으로 가로채
 
 ### 시스템 시작 시 메인 창 열기
 
-이 옵션을 활성화하면 시스템이 로드된 후 기본 AdGuard 창이 열립니다. 이 설정은 *설정 → 일반 설정*에 있으며 실제 필터링 서비스가 실행되는지 여부에는 영향을 미치지 않습니다.
+이 옵션을 활성화하면 시스템이 로드된 후 기본 AdGuard 창이 열립니다. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in *Settings → General Settings*.
 
 ### 시스템 시작 시 필터링 활성화
 

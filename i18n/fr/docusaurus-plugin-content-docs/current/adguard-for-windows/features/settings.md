@@ -23,7 +23,7 @@ Tout en bas de l'écran, vous trouverez les _Paramètres avancés_. Changer cert
 
 ### Bloqueur d'annonces
 
-C'est le module principal d'AdGuard pour Windows qui supprime les publicités des sites web que vous visitez et des applications installées sur votre appareil. Pour filtrer la publicité et les contenus menaçant la vie privée tels que les bannières, les pop-ups ou les traqueurs, AdGuard utilise des filtres différents : des groupes de règles ayant un objectif similaire écrites avec une [syntaxe spéciale](/general/ad-filtering/create-own- filtres). Pour comprendre ce que sont les filtres et comment ils fonctionnent, lisez [cet article](/general/ad-filtering/how-ad-blocking-works).
+C'est le module principal d'AdGuard pour Windows qui supprime les publicités des sites web que vous visitez et des applications installées sur votre appareil. To filter out advertising and privacy-threatening content such as banners, popups, or trackers AdGuard uses different filters — groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). Pour comprendre ce que sont les filtres et comment ils fonctionnent, lisez [cet article](/general/ad-filtering/how-ad-blocking-works).
 
 ![Bloqueur de publicités \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
@@ -54,7 +54,7 @@ Pour tout apprendre sur le Mode furtif et ses nombreuses options, [lisez cet art
 
 La Navigation sécurisée offre une protection efficace contre les sites web malveillants et les sites d'hameçonnage. Non, AdGuard pour Windows n'est pas un antivirus. Il n'arrêtera pas le téléchargement d'un virus lorsqu'il est déjà lancé, ni ne supprimera ceux déjà existants. Mais il vous avertira si vous êtes sur le point de vous rendre sur un site web dont le domaine a été ajouté à notre base de données de "sites non fiables", ou de télécharger un fichier à partir d'un tel site web. Vous trouverez plus d'informations sur le fonctionnement de ce module dans l'[article dédié](/general/browsing-security).
 
-Dans ce module, vous pouvez
+In this module, you can:
 
 - activer les notifications pour bloquer les requêtes vers des sites malveillants et ceux d'hameçonnage,
 - activer les notifications sonores,

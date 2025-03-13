@@ -46,7 +46,7 @@ sidebar_position: 6
 
 ## У меня устаревший ключ. Как я могу продлить или улучшить его?
 
-Сделать это можно на [странице продления](https://adguard.com/renew.html) или в [личном кабинете AdGuard](https://my.adguard.com/main.html):
+You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://adguardaccount.com/main.html):
 
 ![Улучшить](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
 > Перейдите в «Мои лицензии» и проверьте, какие улучшения вам доступны для каждого конкретного ключа. Ниже поясним на конкретных примерах.

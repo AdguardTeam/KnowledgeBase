@@ -12,7 +12,7 @@ Codul de licență poate fi activat pe un [număr limitat de dispozitive](../wha
 - Faceți clic pe *Resetați licența* sau *Deconectare* în aplicația AdGuard
 
 - Ștergeți dispozitivul din contul dvs. AdGuard:
-    1. Faceți clic pe *AdGuard Ad Blocker* în contul dvs. [AdGuard](https://my.adguard.com/).
+    1. Click *AdGuard Ad Blocker* in your [AdGuard account](https://adguardaccount.com/).
 
         ![Tab-ul Blocant de reclame AdGuard *mobil](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 

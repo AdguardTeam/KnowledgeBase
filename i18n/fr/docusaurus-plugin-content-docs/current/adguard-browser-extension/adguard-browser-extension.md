@@ -11,48 +11,48 @@ Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement 
 
 ## Fonctionnalités
 
-Main features and settings available in the AdGuard Browser Extension
+Les fonctionnalités principales et les réglages disponibles dans l'extension de navigateur AdGuard
 
 [Fonctionnalités](/adguard-browser-extension/features)
 
 ## Disponibilité
 
-Supported browsers and platforms where the extension can be installed
+Les navigateurs et plateformes compatibles où l'extension peut être installée
 
 [Disponibilité](/adguard-browser-extension/availability)
 
 ## Installation
 
-Installation and removal
+Installation et désinstallation
 
 [Installation](/adguard-browser-extension/installation)
 
 ## Compatibilité avec l'application autonome
 
-Compatibility of the AdGuard Browser Extension with the AdGuard desktop apps
+Compatibilité de l'extension de navigateur AdGuard avec les applications de bureau AdGuard
 
 [Compatibilité avec l'application autonome](/adguard-browser-extension/compatibility)
 
 ## Extension de navigateur AdGuard pour Chrome MV3
 
-A separate AdGuard Browser Extension compatible with the Manifest V3 API
+Une extension de navigation AdGuard autonome compatible avec l'API Manifest V3
 
 [Extension de navigateur AdGuard pour Chrome MV3](/adguard-browser-extension/mv3-version/)
 
 ## Pages protégées par le navigateur
 
-Restricted domains whose content can’t be modified with ad blocking extensions
+Domaines restreints dont le contenu ne peut pas être modifié avec des extensions de blocage de publicité
 
 [Pages protégées par le navigateur](/adguard-browser-extension/protected-pages)
 
 ## Résolution des problèmes
 
-Known issues and possible solutions
+Problèmes connus et solutions possibles
 
 [Résolution des problèmes](/adguard-browser-extension/solving-problems)
 
 ## Comparaison avec les applications autonomes
 
-The differences in functionality and features between the AdGuard extensions and desktop apps
+Les différences de fonctionnalités et d'options entre les extensions AdGuard et les applications de bureau
 
 [Comparaison avec les applications autonomes](/adguard-browser-extension/comparison-standalone)

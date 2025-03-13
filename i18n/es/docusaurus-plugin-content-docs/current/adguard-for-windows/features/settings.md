@@ -23,7 +23,7 @@ En la parte inferior de la pantalla encontrarás _Configuración avanzada_. Camb
 
 ### Bloqueador de anuncios
 
-Este es el módulo principal de AdGuard para Windows que elimina anuncios de los sitios web que visitas y de las aplicaciones instaladas en tu dispositivo. Para filtrar publicidad y contenido que amenaza la privacidad, como banners, ventanas emergentes o rastreadores, AdGuard utiliza diferentes filtros: grupos de reglas con un propósito similar escrito con una [sintaxis especial](/general/ad-filtering/create-own-filters). Para comprender qué son los filtros y cómo funcionan, lee [este artículo](/general/ad-filtering/how-ad-blocking-works).
+Este es el módulo principal de AdGuard para Windows que elimina anuncios de los sitios web que visitas y de las aplicaciones instaladas en tu dispositivo. To filter out advertising and privacy-threatening content such as banners, popups, or trackers AdGuard uses different filters — groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). Para comprender qué son los filtros y cómo funcionan, lee [este artículo](/general/ad-filtering/how-ad-blocking-works).
 
 ![Bloqueador de anuncios \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
@@ -54,7 +54,7 @@ Para aprender todo sobre el modo sigiloso y sus muchas opciones, [lee este artí
 
 La seguridad de la navegación brinda una sólida protección contra sitios web maliciosos y de phishing. No, AdGuard para Windows no es un antivirus. No detendrá la descarga de un virus cuando ya esté iniciado ni eliminará los ya existentes. Pero te avisará si estás a punto de acceder a un sitio web cuyo dominio se ha agregado a nuestra base de datos de "sitios no confiables" o de descargar un archivo del dicho sitio web. Puedes encontrar más información sobre el funcionamiento de este módulo en el [artículo dedicado](/general/browsing-security).
 
-En este módulo podrás
+In this module, you can:
 
 - activar notificaciones para bloquear solicitudes a sitios maliciosos y de phishing,
 - activar las notificaciones sonoras,
@@ -72,14 +72,14 @@ Hay tres razones importantes por las que es posible que desees explorar la confi
 
 In the DNS protection module of AdGuard for Windows, you can choose DNS servers from known DNS providers, including AdGuard DNS, which blocks ads and trackers, AdGuard DNS Family Protection, which also blocks adult content, or AdGuard DNS Non-filtering, which provides a secure and reliable connection but doesn’t filter anything. You can even add custom DNS servers and rules using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). If necessary, you can add [DNS filters of your choice](https://filterlists.com).
 
-Starting with v7.20, you can also add filters by simply selecting them from a list of pre-built, trusted filters. They are grouped into four categories for your convenience:
+A partir de la v7.20, también puedes añadir filtrados simplemente seleccionándolos de una lista predefinida de filtrados de confianza. Se agrupan en cuatro categorías para tu conveniencia:
 
-- **General**: block ads and trackers
-- **Regional**: block ads and trackers on language-specific websites
-- **Security**: block phishing and unreliable websites
-- **Other**: cover special use cases that don’t fit into the above categories
+- **Modo general**: bloquea anuncios y rastreadores
+- **Regional**: bloquea anuncios y rastreadores en sitios web específicos del idioma
+- **Seguridad**: bloquea phishing y sitios web poco fiables
+- **Otro**: cubre casos de uso especiales que no se ajustan a las categorías anteriores
 
-![DNS filters \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
+![Servidores DNS \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
 
 ### Parental Control
 

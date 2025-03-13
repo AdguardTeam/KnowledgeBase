@@ -23,7 +23,7 @@ In fondo alla schermata, troverai le _Impostazioni Avanzate_. Modificarne alcune
 
 ### Blocco degli Annunci
 
-Questo è il modulo principale di AdGuard per Windows che rimuove gli annunci dai siti web che visiti e dalle app installate sul tuo dispositivo. Per filtrare i contenuti inserzionistici e che minacciano la privacy, quali banner, popup, o tracciatori, AdGuard utilizza filtri differenti: gruppi di regole con uno scopo simile, scritte con una [sintassi speciale](/general/ad-filtering/create-own-filters). Per comprendere cosa sono i filtri e come funzionano, leggi [questo articolo](/general/ad-filtering/how-ad-blocking-works).
+Questo è il modulo principale di AdGuard per Windows che rimuove gli annunci dai siti web che visiti e dalle app installate sul tuo dispositivo. To filter out advertising and privacy-threatening content such as banners, popups, or trackers AdGuard uses different filters — groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). Per comprendere cosa sono i filtri e come funzionano, leggi [questo articolo](/general/ad-filtering/how-ad-blocking-works).
 
 ![Blocco inserzioni \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
@@ -54,7 +54,7 @@ Per imparare tutto sulla Modalità Stealth e sulle sue tante opzioni, [leggi que
 
 La Sicurezza di navigazione offre una forte protezione dai siti web dannosi e di phishing. No, AdGuard per Windows non è un antivirus. Non interromperà il download di un virus quando è già avviato, né eliminerà quelli già esistenti. Ma ti avviserà se stai per procedere a un sito web il cui dominio è stato aggiunto al nostro database dei "siti non attendibili" o se stai per scaricare un file da tale sito web. Puoi trovare ulteriori informazioni sul funzionamento di questo modulo nell'[articolo dedicato](/general/browsing-security).
 
-In questo modulo, puoi
+In this module, you can:
 
 - abilitare le notifiche per bloccare le richieste a siti dannosi e di phishing,
 - attivare le notifiche sonore,
