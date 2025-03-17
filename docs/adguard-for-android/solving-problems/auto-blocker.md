@@ -1,6 +1,6 @@
 ---
 title: How to disable the Samsung Auto Blocker feature
-sidebar_position: 18
+sidebar_position: 19
 ---
 
 :::info

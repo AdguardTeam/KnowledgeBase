@@ -1,6 +1,6 @@
 ---
 title: Moving the CA certificate to the system store on rooted devices
-sidebar_position: 13
+sidebar_position: 14
 ---
 
 :::info

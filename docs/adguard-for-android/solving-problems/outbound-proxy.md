@@ -1,6 +1,6 @@
 ---
 title: How to set up outbound proxy
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 :::info

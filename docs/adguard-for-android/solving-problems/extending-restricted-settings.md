@@ -1,6 +1,6 @@
 ---
 title: Problems caused by extending restricted settings
-sidebar_position: 17
+sidebar_position: 18
 ---
 
 :::info
