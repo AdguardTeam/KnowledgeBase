@@ -19,7 +19,6 @@ Here are some problems you may encounter and workarounds, guides, and instructio
 - [Low-level settings guide](/adguard-for-android/solving-problems/low-level-settings.md)
 - [How to block ads in the YouTube app](adguard-for-android/solving-problems/youtube-ads.md)
 - [How to set up outbound proxy](/adguard-for-android/solving-problems/outbound-proxy.md)
-- [How to protect AdGuard from being disabled by the system](/adguard-for-android/solving-problems/background-work.md)
 - [Problems caused by multiple user profiles](/adguard-for-android/solving-problems/multiple-user-profiles.md)
 - [Manual installation of the security certificate into the Firefox browser](/adguard-for-android/solving-problems/firefox-certificates.md)
 - [Certificate installation on devices with Android 11+](/adguard-for-android/solving-problems/manual-certificate.md)

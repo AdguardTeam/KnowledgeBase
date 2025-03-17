@@ -33,6 +33,12 @@ General, advanced, and low-level settings that let you select the language and t
 
 [Settings](/adguard-for-android/features/settings.md)
 
+## Low-level settings guide
+
+Descriptions of the low-level settings available in AdGuard v4.3 for Android and later.
+
+- [Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
+
 ## Assistant
 
 A tool that lets you quickly change app or website settings and view statistics without opening the AdGuard interface
