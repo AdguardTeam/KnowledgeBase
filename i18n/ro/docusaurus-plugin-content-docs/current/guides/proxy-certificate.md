@@ -19,9 +19,9 @@ Traficul HTTP va fi filtrat în orice caz, dar pentru ca AdGuard să poată filt
 
 ### Windows {#windows}
 
-1. Rețineți adresa IP a computerului dumneavoastră desktop pe care este instalat AdGuard.
+1. Note the IP address of your computer with AdGuard installed.
 
-1. Asigurați-vă că protecția AdGuard este activată. Pe un computer Windows, bifați caseta **Utilizați AdGuard ca proxy HTTP** în tab-ul **Rețea** din setările acestuia. Pentru macOS, mergeți la **Setări** → **Preferințe** → **Rețea** și activați **proxy HTTP**.
+1. Asigurați-vă că protecția AdGuard este activată. Pe un computer Windows, bifați caseta **Utilizați AdGuard ca proxy HTTP** în tab-ul **Rețea** din setările acestuia. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
 1. Pe același computer cu AdGuard, urmați acest link: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -55,15 +55,15 @@ Traficul HTTP va fi filtrat în orice caz, dar pentru ca AdGuard să poată filt
 
 1. Click **Set up** in the *Use a proxy server* tab.
 
-1. Activați comutatorul. Pentru **Adresa IP proxy**, tastați adresa IP a computerului dumneavoastră desktop pe care ați notat-o în pasul 1. Pentru **Port**, introduceți portul ales în setările rețelei aplicației AdGuard desktop.
+1. Activați comutatorul. For **Proxy IP address**, type the IP address of your computer that you noted in step 1. Pentru **Port**, introduceți portul ales în setările rețelei aplicației AdGuard desktop.
 
 1. Faceți clic pe **Salvați**.
 
 ### macOS {#mac}
 
-1. Rețineți adresa IP a computerului dumneavoastră desktop pe care este instalat AdGuard.
+1. Note the IP address of your computer with installed AdGuard.
 
-1. Asigurați-vă că protecția AdGuard este activată. Pe un computer Windows, bifați caseta **Utilizați AdGuard ca proxy HTTP** în tab-ul **Rețea** din setările acestuia. Pentru macOS, mergeți la **Setări** → **Preferințe** → **Rețea** și activați **proxy HTTP**.
+1. Asigurați-vă că protecția AdGuard este activată. Pe un computer Windows, bifați caseta **Utilizați AdGuard ca proxy HTTP** în tab-ul **Rețea** din setările acestuia. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
 1. Urmați acest link folosind un browser web: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -93,9 +93,9 @@ Traficul HTTP va fi filtrat în orice caz, dar pentru ca AdGuard să poată filt
 
 ### Android {#android}
 
-1. Rețineți adresa IP a computerului dumneavoastră desktop pe care este instalat AdGuard.
+1. Note the IP address of your computer with installed AdGuard.
 
-1. Asigurați-vă că protecția AdGuard este activată. Pe un computer Windows, bifați caseta **Utilizați AdGuard ca proxy HTTP** în tab-ul **Rețea** din setările acestuia. Pentru macOS, mergeți la **Setări** → **Preferințe** → **Rețea** și activați **proxy HTTP**.
+1. Asigurați-vă că protecția AdGuard este activată. Pe un computer Windows, bifați caseta **Utilizați AdGuard ca proxy HTTP** în tab-ul **Rețea** din setările acestuia. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
 1. De pe computerul cu AdGuard, urmați acest link folosind un browser web: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -109,13 +109,13 @@ Traficul HTTP va fi filtrat în orice caz, dar pentru ca AdGuard să poată filt
 
 1. Deschideți setările avansate ale rețelei Wi-Fi active.
 
-1. Schimbați **Tipul proxy** în **Manual**. For **Proxy hostname**, enter the noted IP address of your desktop computer you noted in step 1. Pentru **Port proxy**, introduceți portul ales în setările rețelei aplicației AdGuard desktop.
+1. Schimbați **Tipul proxy** în **Manual**. For **Proxy hostname**, enter the noted IP address of your computer you noted in step 1. Pentru **Port proxy**, introduceți portul ales în setările rețelei aplicației AdGuard desktop.
 
 ### iOS {#ios}
 
-1. Rețineți adresa IP a computerului dumneavoastră desktop pe care este instalat AdGuard.
+1. Note the IP address of your computer with installed AdGuard.
 
-1. Asigurați-vă că protecția AdGuard este activată. Pe un computer Windows, bifați caseta **Utilizați AdGuard ca proxy HTTP** în tab-ul **Rețea** din setările acestuia. Pentru macOS, mergeți la **Setări** → **Preferințe** → **Rețea** și activați **proxy HTTP**.
+1. Asigurați-vă că protecția AdGuard este activată. Pe un computer Windows, bifați caseta **Utilizați AdGuard ca proxy HTTP** în tab-ul **Rețea** din setările acestuia. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
 1. De pe computerul cu AdGuard, urmați acest link folosind un browser web: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 

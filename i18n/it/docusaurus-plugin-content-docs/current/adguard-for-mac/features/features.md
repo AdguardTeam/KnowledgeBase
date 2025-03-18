@@ -35,7 +35,7 @@ Impostazioni per un server DNS sicuro e filtri DNS per bloccare le inserzioni, i
 
 ## Modalità Invisibilità
 
-Settings to block cookies, UTM tags, and online analytics that collect user information
+Impostazioni per bloccare cookie, tag UTM e le analisi in rete che raccolgono informazioni sugli utenti
 
 [Stealth Mode](/adguard-for-mac/features/stealth.md)
 

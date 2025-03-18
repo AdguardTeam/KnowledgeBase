@@ -16,7 +16,6 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 - [Android için AdGuard nasıl otomasyona geçirilir](/adguard-for-android/solving-problems/tasker.md)
 - [Sistem günlükleri nasıl alınır](/adguard-for-android/solving-problems/logcat.md)
 - [HAR dosyaları nasıl oluşturulur](/adguard-for-android/solving-problems/har.md)
-- [Alt seviye ayarlar kılavuzu](/adguard-for-android/solving-problems/low-level-settings.md)
 - [YouTube uygulamasında reklamlar nasıl engellenir](adguard-for-android/solving-problems/youtube-ads.md)
 - [Giden proxy nasıl ayarlanır](/adguard-for-android/solving-problems/outbound-proxy.md)
 - [How to protect AdGuard from being disabled by the system](/adguard-for-android/solving-problems/background-work.md)

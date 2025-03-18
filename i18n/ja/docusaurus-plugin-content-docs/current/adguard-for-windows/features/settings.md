@@ -23,7 +23,7 @@ sidebar_position: 2
 
 ### 広告ブロッカー
 
-これは AdGuard for Windows のメインモジュールで、アクセスしたウェブサイトやデバイスにインストールされたアプリから広告を削除します。 AdGuard は、バナー、ポップアップ、トラッカーなどのような、広告やプライバシーを脅かすコンテンツをフィルタリングするために、さまざまなフィルタ（[特別な構文](/general/ad-filtering/create-own-filters)で記述され、同様の目的を持つルールグループ）を使用します。 フィルタとは何か、どのように機能するのかについては、[こちらの記事](/general/ad-filtering/how-ad-blocking-works)をお読みください。
+これは AdGuard for Windows のメインモジュールで、アクセスしたウェブサイトやデバイスにインストールされたアプリから広告を削除します。 To filter out advertising and privacy-threatening content such as banners, popups, or trackers AdGuard uses different filters — groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). フィルタとは何か、どのように機能するのかについては、[こちらの記事](/general/ad-filtering/how-ad-blocking-works)をお読みください。
 
 ![広告ブロッカー \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
@@ -54,7 +54,7 @@ sidebar_position: 2
 
 ブラウジング・セキュリティは、悪意のあるウェブサイトやフィッシングサイトからしっかり保護してくれます。 （※AdGuard for Windows はアンチウイルスソフトではありません。 すでに始まっているウイルスのダウンロードを止めることや、すでに存在するウイルスを削除することはできません。） しかし、ドメインが「信頼できないサイト」データベースに追加されたウェブサイトにアクセスしようとしたり、そのようなウェブサイトからファイルをダウンロードしようとしたりすると、警告が表示されます。 このモジュールがどのように機能するかについての詳細は、[こちらの専用記事](/general/browsing-security)をご覧ください。
 
-このモジュールでできること:
+In this module, you can:
 
 - 悪質なウェブサイトやフィッシング詐欺サイトへのリクエストがブロックされた際の通知の受け取りを有効にする
 - サウンド通知を有効にする

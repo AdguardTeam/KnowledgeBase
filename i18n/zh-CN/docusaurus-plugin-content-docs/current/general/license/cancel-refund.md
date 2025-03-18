@@ -7,7 +7,7 @@ sidebar_position: 5
 
 用户可以在 AdGuard 账号中取消订阅。 使用以下方式取消订阅：
 
- 1. 前往 [AdGuard 账号](https://my.adguard.com/)
+ 1. Go to your [AdGuard account](https://adguardaccount.com/).
  1. 选择「*许可证*」
  1. 在不再需要的订阅下方点击「*取消订阅*」 ![取消](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
 

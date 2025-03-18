@@ -31,7 +31,7 @@ Se abilitata, AdGuard bloccherà l'Apertura Veloce TCP sul browser Edge. Per app
 
 ### Usa Encrypted Client Hello
 
-Ogni connessione Internet crittografata ha una parte non crittografata. Questo è il primissimo pacchetto che contiene il nome del server a cui ti stai connettendo. La tecnologia Encrypted Client Hello dovrebbe risolvere questo problema e crittografare quell'ultima parte di informazioni non crittografate. Per trarne vantaggio, abilita l'opzione *Usa Encrypted Client Hello*. Utilizza un proxy DNS locale per cercare la configurazione ECH per il dominio. Se trovata, il pacchetto Client Hello sarà crittografato.
+Ogni connessione Internet crittografata ha una parte non crittografata. Questo è il primissimo pacchetto che contiene il nome del server a cui ti stai connettendo. La tecnologia Encrypted Client Hello dovrebbe risolvere questo problema e crittografare quell'ultima parte di informazioni non crittografate. Per trarne vantaggio, abilita l'opzione *Usa Encrypted Client Hello*. Usa un proxy DNS locale per cercare la configurazione ECH per il dominio. Se trovata, il pacchetto Client Hello sarà crittografato.
 
 ### Verifica la trasparenza del certificato dei siti web
 
@@ -73,7 +73,7 @@ Altrimenti, AdGuard filtrerà tutto il traffico al volo, senza reindirizzamento.
 
 ### Apri la finestra principale all'avvio del sistema
 
-Abilita quest'opzione per far aprire la finestra principale di AdGuard all'avvio del sistema. Nota che ciò non influenza se il servizio di filtraggio effettivo sia avviato o no, quest'impostazione si trova in *Impostazioni → Impostazioni Generali*.
+Abilita quest'opzione per far aprire la finestra principale di AdGuard all'avvio del sistema. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in *Settings → General Settings*.
 
 ### Abilita il filtraggio all'avvio del sistema
 

@@ -16,7 +16,6 @@ sidebar_position: 1
 - [Как автоматизировать AdGuard для Android](/adguard-for-android/solving-problems/tasker.md)
 - [Как собрать системные логи](/adguard-for-android/solving-problems/logcat.md)
 - [Как сгенерировать файлы HAR](/adguard-for-android/solving-problems/har.md)
-- [Низкоуровневые настройки](/adguard-for-android/solving-problems/low-level-settings.md)
 - [Как заблокировать рекламу в приложении YouTube](adguard-for-android/solving-problems/youtube-ads.md)
 - [Как настроить исходящий прокси](/adguard-for-android/solving-problems/outbound-proxy.md)
 - [Как защитить AdGuard от отключения системой](/adguard-for-android/solving-problems/background-work.md)

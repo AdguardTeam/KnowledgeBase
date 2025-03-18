@@ -63,7 +63,7 @@ AdGuard 致力于保护用户的个人隐私。 我们严格遵守我们的[隐�
 
 请按此说明操作：
 
-**第一部分：准备设备**
+### Part #1: prepare the device
 
 1. 将设备切换到开发者模式。 打开手机「**设置**」→「**关于**」→ 点击 7 次**版本号**。
 
@@ -73,17 +73,17 @@ AdGuard 致力于保护用户的个人隐私。 我们严格遵守我们的[隐�
 
 1. 将每个「**日志缓冲区**」的大小增加到 4MB。
 
-在完成第二部分（从设备中获取日志）之前，4MB 应该足以存储我们需要的日志；
+4 MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
 
-**第二部分：复现问题**
+### Part #2: reproduce the problem
 
-在完成第一部分后，复现问题非常重要。
+It is important to reproduce the problem after you're done with the first part.
 
 1. 复现问题。
 
 1. 记住/写下复现的日期和时间，并将其包含在稍后发送给我们支持人员的电子邮件中。
 
-**第三部分：获取日志**
+### Part #3: get the log
 
 1. 用 USB 数据线将设备连接到电脑。
 
@@ -101,9 +101,9 @@ AdGuard 致力于保护用户的个人隐私。 我们严格遵守我们的[隐�
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-    将创建的 `txt` 文件以及复现问题的时间（来自第二部分）通过电子邮件发送给我们的支持团队：support@adguard.com。
+    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at <support@adguard.com>.
 
-### ROOT 用户的替代方法
+### Alternative way for ROOT users
 
 1. 下载并运行 [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog)。
 

@@ -11,54 +11,54 @@ Dieser Artikel behandelt AdGuard für Mac, einem multifunktionalen Werbeblocker,
 
 ## Hauptfenster
 
-Main screen with statistics on blocked ads and trackers and access to main settings
+Hauptbildschirm mit Statistiken zu blockierten Anzeigen und Trackern sowie Zugriff auf die Haupteinstellungen
 
 [Hauptfenster](/adguard-for-mac/features/main.md)
 
 ## Allgemein
 
-Basic settings to block search ads and website self-promotional ads, enable language-specific filters, and manage _Allowlist_
+Grundlegende Einstellungen zum Blockieren von Suchanzeigen und Eigenwerbung auf Websites, Aktivieren sprachspezifischer Filter und Verwalten der _Freigabeliste_
 
 [Allgemein](/adguard-for-mac/features/general.md)
 
 ## Filter
 
-Filters and user rules to fine-tune ad blocking
+Filter und Benutzerregeln zur Feinabstimmung der Werbeblockierung
 
 [Filter](/adguard-for-mac/features/filters.md)
 
 ## DNS
 
-DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
+DNS-Server und DNS-Filter, mit denen Sie Werbung, Tracker und gefährliche Websites blockieren können
 
 [DNS](/adguard-for-mac/features/dns.md)
 
 ## Privatsphäre (Tracking-Schutz)
 
-Settings to block cookies, UTM tags, and online analytics that collect user information
+Einstellungen zum Blockieren von Cookies, UTM-Tags und Analyse-Tools, die Nutzerdaten sammeln
 
-[Stealth Mode](/adguard-for-mac/features/stealth.md)
+[Privatsphäre](/adguard-for-mac/features/stealth.md)
 
 ## Sicherheit
 
-A setting that blocks access to malicious and phishing websites and protects you from online threats
+Eine Einstellung, die den Zugriff auf bösartige und Phishing-Websites blockiert und Sie vor Online-Bedrohungen schützt
 
 [Sicherheit](/adguard-for-mac/features/security.md)
 
 ## Browser-Assistent
 
-An extension that complements the desktop program and allows you to manage filtering from your browser
+Eine Erweiterung, die das Desktop-Programm ergänzt und es Ihnen ermöglicht, die Filterung von Ihrem Browser aus zu verwalten
 
 [Browser-Assistent](/adguard-for-mac/features/browser-assistant.md)
 
 ## Erweiterungen
 
-A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
+Eine Funktion, mit der Sie die Funktionalität von Websites durch Hinzufügen von Benutzerskripten und Benutzerstilen erweitern können
 
 [Erweiterungen](/adguard-for-mac/features/extensions.md)
 
 ## Netzwerk
 
-Additional network-related options and proxy settings
+Zusätzliche netzwerkbezogene Optionen und Proxy-Einstellungen
 
 [Netzwerk](/adguard-for-mac/features/network.md)

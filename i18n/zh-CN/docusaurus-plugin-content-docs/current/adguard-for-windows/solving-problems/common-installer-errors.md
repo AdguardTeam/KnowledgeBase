@@ -40,8 +40,8 @@ sidebar_position: 6
     - 按 *Win + R* 并输入 **services.msc**。
     - 在列表中找到并双击「*Windows Installer*」。
     - 点击「*服务状态*」下的「*开始*」按钮，然后点击「*确定*」。 如果服务状态是「**正在运行**」，应该先点击「*停止*」，然后再点击「*启动*」。
-    - 按 *Win + R*，输入 ***msiexec /unregister*** 并按 *Enter*。
-    - 再次按 *Win + R* ，输入 ***msiexec /regserver*** 并按 *Enter*。
+    - 按 *Win + R*，输入 ***msiexec /unregister***，并点击 *Enter*。
+    - 再次按 *Win + R*，输入 ***msiexec /regserver***，并点击 *Enter*
 
 - 重启电脑并重新开始安装。 有时这足以修复此问题。
 
@@ -70,8 +70,8 @@ sidebar_position: 6
     - 按 *Win + R* 并输入 ***services.msc***。
     - 在列表中找到并双击「*Windows Installer*」。
     - 点击「*服务状态*」下的「*开始*」按钮，然后点击「*确定*」。 如果服务状态是「**正在运行**」，应该先点击「*停止*」，然后再点击「*启动*」。
-    - 按 *Win + R*，输入 ***msiexec /unregister*** 并按 *Enter*。
-    - 再次按 *Win + R* ，输入 ***msiexec /regserver*** 并按 *Enter*。
+    - 按 *Win + R*，输入 ***msiexec /unregister***，并点击 *Enter*。
+    - 再次按 *Win + R*，输入 ***msiexec /regserver***，并点击 *Enter*
 
 - 获取驱动器的全部安装权限。 出现错误 1603 的原因是您没有文件位置的权限。 这种情况的解决方案会稍微复杂一些：
 

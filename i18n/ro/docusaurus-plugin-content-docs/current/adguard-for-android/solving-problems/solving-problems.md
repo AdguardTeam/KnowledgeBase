@@ -16,7 +16,6 @@ Iată câteva probleme cu care s-ar putea să te confrunți și soluții, ghidur
 - [Cum să automatizezi AdGuard pentru Android](/adguard-for-android/solving-problems/tasker.md)
 - [Cum să obții jurnalele sistemului](/adguard-for-android/solving-problems/logcat.md)
 - [Cum să generezi fișiere HAR](/adguard-for-android/solving-problems/har.md)
-- [Low-level settings guide](/adguard-for-android/solving-problems/low-level-settings.md)
 - [Cum să blochezi reclamele în aplicația YouTube](adguard-for-android/solving-problems/youtube-ads.md)
 - [How to set up outbound proxy](/adguard-for-android/solving-problems/outbound-proxy.md)
 - [Cum să protejezi AdGuard de dezactivare de către sistem](/adguard-for-android/solving-problems/background-work.md)

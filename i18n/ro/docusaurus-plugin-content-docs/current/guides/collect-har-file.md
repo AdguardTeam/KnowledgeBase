@@ -105,7 +105,7 @@ To create a HAR file in Internet Explorer 11, follow these steps:
 
     - Butonul de redare va fi gri când înregistrează, iar butonul de oprire va fi roșu. Introduceți în modul **Redare**.
 
-1. Ștergeți orice informație de sesiune care apare în grila inferioară folosind butonul **Ștergeți sesiunea** de pe tabul Rețea. Puneți cursorul peste icoane pentru a vedea numele.
+1. Clear any session info appearing in the lower grid using the **Clear session** button on the **Network** tab. Puneți cursorul peste icoane pentru a vedea numele.
 
     - **Clear session** button is a three line icon with an x on it.
 
@@ -113,7 +113,7 @@ To create a HAR file in Internet Explorer 11, follow these steps:
 
 1. Reproduceți pașii care creează problema.
 
-1. Save session as a .har file by clicking the **Save to disk** button (Export as HAR) on Network tab.
+1. Save session as a .har file by clicking the **Save to disk** button (Export as HAR) on the **Network** tab.
 
 1. Trimiteți-l echipei de suport AdGuard (support@adguard.com) cu o explicație detaliată a problemei. Capturile de ecran de suport pot fi de ajutor, de asemenea.
 

@@ -27,11 +27,11 @@ Kdyby to bylo snadné, protokol HTTPS by nebyl tak bezpečný. Když se prohlí�
 
 Pro lepší pochopení jsme tento proces znázornili:
 
-![How does HTTPS filtering work](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
+![Jak funguje HTTPS filtrování](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
 ### Zůstane můj provoz zašifrovaný a zabezpečený?
 
-Samozřejmě! Vaše připojení se vzdáleným serverem zůstává šifrované a zabezpečené. AdGuard, stejně jako váš prohlížeč, kontroluje certifikát serveru, než se rozhodne, zda jej bude filtrovat.
+Samozřejmě! Vaše připojení se vzdáleným serverem zůstává šifrované a zabezpečené. AdGuard, stejně jako váš prohlížeč, kontroluje certifikát serveru, než se rozhodne, zda jej bude filtrovat nebo ne.
 
 Filtrování HTTPS má však i své nevýhody. Nejdůležitější je, že před prohlížečem skrývá skutečný certifikát webové stránky. Místo toho prohlížeč vidí certifikát vydaný AdGuardem.
 

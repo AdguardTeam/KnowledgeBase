@@ -1,5 +1,5 @@
 ---
-title: Main menu
+title: 메인 메뉴
 sidebar_position: 1
 ---
 

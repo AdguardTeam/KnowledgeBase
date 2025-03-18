@@ -46,7 +46,7 @@ So sieht zum Beispiel die Taste 1+1 aus:
 
 ## Ich habe einen veralteten (Legacy) Schlüssel. Welche Erneuern/Erweitern-Optionen stehen mir zur Verfügung?
 
-Sie können dies auf der [Verlängerungsseite](https://adguard.com/renew.html) oder in Ihrem [AdGuard-Konto](https://my.adguard.com/main.html) überprüfen:
+You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://adguardaccount.com/main.html):
 
 ![Erweitern](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
 > Gehen Sie zur Registerkarte „Meine Lizenzen“ und prüfen Sie, welche Aktionen Ihnen für jeden bestimmten Schlüssel zur Verfügung stehen. Im Folgenden erläutern wir dies anhand konkreter Beispiele.

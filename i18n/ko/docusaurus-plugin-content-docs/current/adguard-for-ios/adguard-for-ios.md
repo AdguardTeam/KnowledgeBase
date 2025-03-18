@@ -5,30 +5,30 @@ sidebar_position: 1
 
 ## 기능
 
-Main features and settings available in AdGuard for iOS
+iOS용 AdGuard의 주요 기능 및 설정
 
 [기능](/adguard-for-ios/features/features.md)
 
 ## 설치 방법
 
-Installation, removal, and system requirements for AdGuard for iOS
+iOS용 AdGuard의 설치, 제거 방법 및 시스템 요구 사항
 
 [설치](/adguard-for-ios/installation.md)
 
 ## Safari 웹 확장 프로그램
 
-A web extension that extends the functionality of AdGuard for iOS and allows you to manage AdGuard from your browser
+iOS용 AdGuard의 기능을 확장하고 브라우저에서 AdGuard를 관리할 수 있는 웹 확장 프로그램입니다.
 
 [Safari 확장 프로그램](/adguard-for-ios/web-extension.md)
 
 ## 문제 해결
 
-Known issues and possible solutions
+알려진 문제 및 해결 방법
 
 [문제 해결](/adguard-for-ios/solving-problems/solving-problems.md)
 
 ## AdGuard 및 AdGuard Pro
 
-Why there are two AdGuard apps in the App Store and how they differ
+App Store에 두 개의 AdGuard 앱이 있는 이유와 차이점
 
 [AdGuard 및 AdGuard Pro](/adguard-for-ios/adguard-and-adguard-pro.md)

@@ -11,30 +11,30 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 ## Funktionen
 
-Main features and settings available in AdGuard for Windows
+Die wichtigsten Funktionen und Einstellungen von AdGuard für Windows
 
 [Funktionen](/adguard-for-windows/features/features.md)
 
 ## Installation
 
-Installation, removal, and system requirements for AdGuard for Windows
+Installation, Deinstallation und Systemanforderungen für AdGuard für Windows
 
 [Installation](/adguard-for-windows/installation.md)
 
 ## Browser-Assistent
 
-An extension that complements the desktop program and allows you to manage filtering from your browser
+Eine Erweiterung, die das Desktop-Programm ergänzt und es Ihnen ermöglicht, die Filterung von Ihrem Browser aus zu verwalten
 
 [Browser-Assistent](/adguard-for-windows/browser-assistant.md)
 
 ## Probleme lösen
 
-Known issues and possible solutions
+Bekannte Probleme und mögliche Lösungen
 
 [Probleme lösen](/adguard-for-windows/solving-problems/solving-problems.md)
 
 ## Dokumentation für Administratoren
 
-Configuration guide for system administrators
+Konfigurationshandbuch für Systemadministratoren
 
 [Dokumentation für Administratoren](/adguard-for-windows/admins-documentation.md)

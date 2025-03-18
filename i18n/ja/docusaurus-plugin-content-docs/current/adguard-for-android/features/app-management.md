@@ -20,11 +20,11 @@ sidebar_position: 2
 - HTTPSトラフィックをフィルタリングするかどうか（非ブラウザアプリの場合、[システムストアにAdGuardのCA証明書をインストールする](/adguard-for-android/solving-problems/https-certificate-for-rooted/)必要があり、ルート化デバイスで利用可能）
 - 指定したプロキシサーバー経由でルーティングするか、または併用モードの場合は AdGuard VPN を経由させるか
 
-![App management in Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![App management: Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
 コンテキストメニューからは、アプリの統計情報にアクセスすることもできます。
 
-![App management in Chrome. Context menu \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![App management: Chrome Context menu \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
 ### "問題のない"アプリと"問題あり"アプリ
 

@@ -3,7 +3,7 @@ title: Stealth Mode (Tracking protection)
 sidebar_position: 4
 ---
 
-많은 웹사이트는 방문자의 IP 주소, 설치된 브라우저 및 운영 체제, 화면 해상도, 심지어 방문자가 리디렉션된 페이지 등 방문자에 대한 정보를 수집합니다. 일부 웹 페이지에서는 쿠키를 사용하여 브라우저를 표시하고 개인 설정 및 환경설정을 저장하거나 다음 방문 시 사용자를 '인식'합니다. *Stealth Mode* (or *Tracking protection* in AdGuard for Windows and AdGuard Browser Extension) safeguards your personal information from such data- and statistics-gathering systems.
+많은 웹사이트는 방문자의 IP 주소, 설치된 브라우저 및 운영 체제, 화면 해상도, 심지어 방문자가 리디렉션된 페이지 등 방문자에 대한 정보를 수집합니다. 일부 웹 페이지에서는 쿠키를 사용하여 브라우저를 표시하고 개인 설정 및 환경설정을 저장하거나 다음 방문 시 사용자를 '인식'합니다. *Tracking protection* safeguards your personal information from such data- and statistics-gathering systems.
 
 스텔스 모드의 작업을 유연하게 조정할 수 있습니다. 예를 들어 인터넷에서 웹사이트를 찾는 데 사용한 검색 요청을 웹사이트가 수신하지 못하도록 하고, 타사 쿠키와 웹사이트 자체 쿠키를 모두 자동으로 삭제하고, 내 위치를 추적하는 데 사용할 수 있는 브라우저 지리적 위치 공유를 끄고, 실제 IP 주소를 숨기거나 임의의 주소로 대체할 수도 있습니다.
 
@@ -95,7 +95,7 @@ The Flash Player plugin has become increasingly vulnerable to such online threat
 
 트래픽을 필터링하기 위해 AdGuard 애플리케이션은 브라우저-서버 간 요청을 '가로채기'합니다. 광고, 추적 및 피싱 서버에 대한 요청은 서버로 전송되기 전에 변경되거나 완전히 차단될 수 있습니다. *타사 리퍼러 숨기기* 옵션도 마찬가지입니다: 이 옵션이 활성화된 경우 AdGuard는 HTTP(S) 요청, 특히 리퍼러 헤더를 제거하거나 변경하기 위해 요청을 가로챕니다. 그러나 이러한 요청은 브라우저에서 '종료'된 후에만 발생합니다. 즉, 브라우저 내부에서 리퍼러를 모니터링하는 경우(예: Chrome의 개발자 도구 사용) 요청이 아직 AdGuard에 도달하지 않았기 때문에 원래 리퍼러가 표시됩니다. [Fiddler](https://www.telerik.com/fiddler)와 같은 소프트웨어를 사용하여 Referer가 올바르게 변경되었는지 확인할 수 있습니다.
 
-On the other hand, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. 그러면 바로 그 자리에서 Referer가 변경되므로 개발자 도구는 귀하의 요청에 대해 원하는 Referer를 표시합니다.
+Due to the nature of all web browser extensions, AdGuard Browser Extension instead works 'inside' the web browser. 그러면 바로 그 자리에서 Referer가 변경되므로 개발자 도구는 귀하의 요청에 대해 원하는 Referer를 표시합니다.
 
 ### Hide User-Agent {#useragent}
 

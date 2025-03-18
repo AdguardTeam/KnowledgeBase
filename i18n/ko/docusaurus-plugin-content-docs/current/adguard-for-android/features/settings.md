@@ -31,7 +31,7 @@ sidebar_position: 4
 
 ![고급 \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-**로우 레벨 설정** 섹션은 고급 사용자를 위한 섹션입니다. [로우 레벨 설정에 대해 자세히 알아보기](/adguard-for-android/solving-problems/low-level-settings/)
+**로우 레벨 설정** 섹션은 고급 사용자를 위한 섹션입니다. [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
 
 ![로우 레벨 설정 \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 

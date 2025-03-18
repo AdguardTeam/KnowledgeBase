@@ -26,7 +26,7 @@ Requisitos de qualidade para regras de filtragem:
 
 Um **filtro** (ou uma **lista de filtros**) é um conjunto de regras de filtragem projetadas para filtrar conteúdo e bloquear vários tipos de anúncios e outros tipos de conteúdo usando bloqueadores de anúncios. Esses filtros geralmente operam no navegador, em programas ou servidor DNS.
 
-**Anti-adblock** é uma tecnologia usada por sites ou aplicativos destinados a detectar bloqueio de anúncios e reagir a eles de diferentes maneiras: rastreando-os, reinjetando-os ou encorajando a desativação do bloqueador de anúncios (os chamados “adblock walls”). Os anti-adblocks podem ser de diferentes tipos:
+**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so-called “adblock walls”). Os anti-adblocks podem ser de diferentes tipos:
 
 - Anti-adblock que bloqueia o conteúdo do site sem oferecer alternativa: para continuar usando o site, o usuário deve desabilitar o bloqueador de anúncios
 - “Anti-adblock wall” com oferecimento de opções alternativas, como a compra de uma assinatura para continuar usando o bloqueador de anúncios
@@ -81,7 +81,7 @@ O objetivo dos filtros de bloqueio de anúncios é bloquear todos os tipos de pu
 - Não bloqueamos mensagens de detecção de bloqueadores de anúncios que atendam a pelo menos um dos seguintes critérios:
     - Permitem a utilização do site e não se sobrepõem a uma quantidade significativa de conteúdo
     - Eles fornecem uma alternativa à desativação de um bloqueador de anúncios, visto que esta opção não coloca em risco a privacidade ou a segurança dos usuários
-    - Permitem o acesso ao conteúdo do site ou uma troca viável que não coloque em risco a privacidade ou a segurança do usuário
+    - They allow the user to proceed to the website’s content
     - Algumas regras antigas podem continuar a bloquear mensagens que satisfaçam um ou mais destes critérios. Se identificadas, tais regras serão reformadas de acordo com esta política
 - Os pools de mineração não são bloqueados se forem públicos e não forem usados exclusivamente para fins maliciosos
 

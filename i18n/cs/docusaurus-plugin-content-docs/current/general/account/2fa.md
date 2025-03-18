@@ -11,7 +11,7 @@ Pro váš AdGuard účet doporučujeme nastavit dvoufaktorové ověřování. Ne
 
 ## Jak to nastavit
 
-1. Přihlaste se ke svému [AdGuard účtu](https://auth.adguard.com/login.html) a přejděte na kartu *Nastavení*:
+1. Přihlaste se ke svému [AdGuard účtu](https://auth.adguardaccount.com/login.html) a přejděte na kartu *Nastavení*:
 
  ![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 

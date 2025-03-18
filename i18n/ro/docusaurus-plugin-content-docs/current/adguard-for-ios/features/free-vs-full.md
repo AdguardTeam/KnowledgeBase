@@ -27,6 +27,6 @@ AdGuard Premium pentru iOS are mai multe diferențe față de versiunea gratuit�
 
 2. **Protecție avansată** îți permite să folosești reguli de filtrare avansate pentru a bloca reclame mai complexe care ar fi altfel lăsate neblocate.
 
-3. **Mai multe opțiuni de filtrare:** Când achiziționezi AdGuard Premium, obții acces la filtre personalizate și o categorie de filtre de securitate, unde poți alege din peste 50 de filtre, inclusiv listele AdGuard și alte liste populare.
+3. **More filter options:** When purchasing AdGuard Premium, you get access to custom and security filters.
 
 Accesează aceste funcții prin [achiziționarea unei licențe](https://adguard.com/license.html).

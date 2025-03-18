@@ -51,7 +51,7 @@ AdGuard의 Safari 웹 확장 프로그램은 작동을 위해 웹페이지의 �
 
 ![확장 프로그램 허용 섹션에서 "AdGuard"를 선택하기](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_en.png)
 
-탭한 다음 스위치를 전환합니다. 같은 화면에서 AdGard의 *모든 웹사이트* 권한을 *허용* 또는 *요청*으로 설정합니다. *허용*을 선택하면 새 웹사이트를 방문할 때마다 권한을 부여할 필요가 없습니다. 확실하지 않은 경우, 사이트별로 권한 부여 *요청*을 선택하세요.
+탭한 다음 스위치를 켭니다. 같은 화면에서 AdGard의 *모든 웹사이트* 권한을 *허용* 또는 *요청*으로 설정합니다. *허용*을 선택하면 새 웹사이트를 방문할 때마다 권한을 부여할 필요가 없습니다. 확실하지 않은 경우, 사이트별로 권한 부여 *요청*을 선택하세요.
 
 ![확장 프로그램 설정 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 

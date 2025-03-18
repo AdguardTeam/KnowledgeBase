@@ -11,30 +11,30 @@ sidebar_position: 1
 
 ## 主页
 
-On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
+在主屏幕上，用户可以找到「_设置_」、「_支持_」、「_许可证_」和「_关于_」，以及被拦截广告和跟踪器的统计数据。
 
 [主页](/adguard-for-windows/features/home-screen/)
 
 ## 设置
 
-Theme and language settings, ad blocking customization, DNS protection, parental controls, extension management, and advanced options for expert users
+主题和语言设置，广告拦截自定义，DNS 保护，家长控制，扩展管理，以及适用于高级用户的选项。
 
 [设置](/adguard-for-windows/features/settings/)
 
 ## 浏览器扩展
 
-A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
+通过添加用户脚本和用户样式来扩展网站功能的功能。
 
 [扩展](/adguard-for-windows/features/extensions/)
 
 ## 网络
 
-Additional network-related options and proxy settings
+其他网络相关选项和代理设置。
 
 [网络](/adguard-for-windows/features/network/)
 
 ## 其他功能
 
-Support, license management, tray menu options, program version and updates
+支持、许可证管理、托盘菜单选项、程序版本和更新。
 
 [其他功能](/adguard-for-windows/features/others/)
