@@ -20,11 +20,11 @@ sidebar_position: 2
 - 过滤应用 HTTPS 流量（对于非浏览器应用，需要[安装 AdGuard 的 CA 证书到系统存储](/adguard-for-android/solving-problems/https-certificate-for-rooted/)，可用于获取 Root 权限的设备）。
 - 在「集成模式」下，通过指定的代理服务器或 AdGuard VPN 路由。
 
-![App management in Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![应用管理: Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
 您也可从上下文菜单访问应用的状态。
 
-![Chrome 中的应用管理。 上下文菜单 \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![应用管理：Chrome 菜单 \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
 ### “无问题”与“有问题”的应用
 

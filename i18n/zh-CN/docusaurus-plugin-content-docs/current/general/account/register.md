@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## 什么是 AdGuard 账号
 
-[AdGuard 账号](https://my.adguard.com/)是一种可存储您的 AdGuard 许可证/订阅，活动的设备，购买历史，首选语言及其它首选项的用户账号。 许多 AdGuard 产品具有通过输入 AdGuard 账号凭证激活软件的选项，但前提是其须包含有效许可证。
+[AdGuard account](https://adguardaccount.com/) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. 许多 AdGuard 产品具有通过输入 AdGuard 账号凭证激活软件的选项，但前提是其须包含有效许可证。
 
 ## 账号创建方式
 
@@ -29,4 +29,4 @@ sidebar_position: 1
 
 ## 通过社交网络创建账号
 
-要通过社交网络创建账号，请点击「[链接](https://auth.adguard.com/login.html)」并登录账号即可。 注册后，请查看收件箱，您将会收到一封确认电子邮件。 设置密码即可！ 现在您可以使用 [AdGuard 账号的所有功能](https://adguard.com/kb/general/account/features/)。
+To create an account via a social network, simply follow the [link](https://auth.adguardaccount.com/login.html) and log in to your account. 注册后，请查看收件箱，您将会收到一封确认电子邮件。 设置密码即可！ 现在您可以使用 [AdGuard 账号的所有功能](https://adguard.com/kb/general/account/features/)。

@@ -31,7 +31,7 @@ _Logging level_ defines what data about the app's operation should be logged. Va
 
 ![Advanced \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-The _Low-level settings_ section is for expert users. [Read more about low-level settings](/adguard-for-android/solving-problems/low-level-settings/)
+The _Low-level settings_ section is for expert users. [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
 
 ![Low-level settings \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 

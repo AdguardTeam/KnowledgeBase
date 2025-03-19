@@ -9,40 +9,40 @@ Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multi
 
 :::
 
-The _Protection_ tab includes the following features or settings. You’ll find a detailed article for each of them in this Knowledge Base.
+La pestaña _Protección_ incluye las siguientes características o configuraciones. Encontrarás un artículo detallado para cada uno de ellos en nuestra Base de Conocimientos.
 
 ## Bloqueo de anuncios
 
-Settings to block ads in browsers and apps
+Configuración para bloquear anuncios en navegadores y apps
 
 [Bloqueo de anuncios](/adguard-for-android/features/protection/ad-blocking.md)
 
 ## Protección de rastreo
 
-Settings that allow you to block tracking tools that collect user information
+Configuraciones que permiten bloquear herramientas de seguimiento que recopilan información del usuario
 
 [Protección contra el rastreo](/adguard-for-android/features/protection/tracking-protection.md)
 
 ## Bloqueo de elementos molestos
 
-Settings to block annoyances such as cookie consent popups, social widgets, and banners that prompt you to download mobile apps
+Configuración para bloquear molestias como ventanas emergentes de consentimiento de cookies, widgets sociales y banners que te incitan a descargar aplicaciones móviles
 
 [Bloqueo de elementos molestos](/adguard-for-android/features/protection/annoyance-blocking.md)
 
 ## Protección DNS
 
-DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
+Servidores DNS y filtros DNS que permiten bloquear anuncios, rastreadores y sitios web peligrosos
 
 [Protección DNS](/adguard-for-android/features/protection/dns-protection.md)
 
 ## Cortafuegos
 
-A feature that allows you to control Internet access for individual apps
+Una característica que permite controlar el acceso a Internet para apps individuales
 
 [Cortafuegos](/adguard-for-android/features/protection/firewall/firewall.md)
 
 ## Seguridad de navegación
 
-A feature that blocks access to malicious and phishing websites and protects you from online threats
+Una función que bloquea el acceso a sitios web maliciosos y de phishing, protegiéndote de amenazas en línea
 
 [Seguridad de navegación](/adguard-for-android/features/protection/browsing-security.md)

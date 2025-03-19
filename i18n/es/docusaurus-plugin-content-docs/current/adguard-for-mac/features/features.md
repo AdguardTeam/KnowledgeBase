@@ -29,7 +29,7 @@ Filters and user rules to fine-tune ad blocking
 
 ## DNS
 
-DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
+Servidores DNS y filtros DNS que permiten bloquear anuncios, rastreadores y sitios web peligrosos
 
 [DNS](/adguard-for-mac/features/dns.md)
 
@@ -47,7 +47,7 @@ A setting that blocks access to malicious and phishing websites and protects you
 
 ## Asistente de navegador
 
-An extension that complements the desktop program and allows you to manage filtering from your browser
+Una extensión que complementa el programa de escritorio y permite administrar el filtrado desde tu navegador
 
 [Asistente de navegador](/adguard-for-mac/features/browser-assistant.md)
 

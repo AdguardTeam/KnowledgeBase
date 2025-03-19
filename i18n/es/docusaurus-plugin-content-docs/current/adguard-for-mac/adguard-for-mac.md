@@ -23,6 +23,6 @@ Installation, removal, and system requirements for AdGuard for Mac
 
 ### Resolución de problemas
 
-Known issues and possible solutions
+Problemas conocidos y posibles soluciones
 
 [Resolviendo problemas](/adguard-for-mac/solving-problems/solving-problems.md)

@@ -63,7 +63,7 @@ Na zařízeních se systémem Android 7 a nižším není možné automaticky od
 
 Postupujte podle těchto pokynů:
 
-**Část #1: příprava zařízení**
+### Část #1: příprava zařízení
 
 1. Přepněte zařízení do režimu pro vývojáře. Postupujte takto: přejděte do **Nastavení** → **O zařízení** → klepněte na **Číslo sestavení** 7krát.
 
@@ -75,7 +75,7 @@ Postupujte podle těchto pokynů:
 
 4 MB by mělo stačit na uložení záznamů, které potřebujeme, dokud nebudete schopni provést druhou část (získání záznamů ze zařízení);
 
-**Část #2: reprodukujte problém**
+### Část #2: reprodukujte problém
 
 Po dokončení první části je důležité problém reprodukovat.
 
@@ -83,7 +83,7 @@ Po dokončení první části je důležité problém reprodukovat.
 
 1. Zapamatujte si/zapište si datum a čas reprodukce a později je uveďte v e-mailu pro naši podporu.
 
-**Část #3: získání záznamu**
+### Část #3: získání záznamu
 
 1. Připojte zařízení k počítači pomocí kabelu USB.
 
@@ -101,7 +101,7 @@ Po dokončení první části je důležité problém reprodukovat.
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-    Pošlete vytvořený `txt` soubor a čas, kdy byl problém reprodukován (z části #2) našemu týmu podpory na adresu support@adguard.com.
+    Pošlete vytvořený `txt` soubor a čas, kdy byl problém reprodukován (z části #2) našemu týmu podpory na adresu <support@adguard.com>.
 
 ### Alternativní způsob pro uživatele s přístupem ROOT
 

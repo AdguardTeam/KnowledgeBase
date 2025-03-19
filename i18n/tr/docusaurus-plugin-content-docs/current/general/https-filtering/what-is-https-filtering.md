@@ -27,11 +27,11 @@ If it were easy, HTTPS wouldn’t be that secure. When a browser attempts to con
 
 For better understanding, we have depicted this process:
 
-![How does HTTPS filtering work](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
+![How HTTPS filtering works](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
 ### Does my traffic remain encrypted and secure?
 
-Of course! Your connection with a remote server remains encrypted and secure. AdGuard, just like your browser, checks the server’s certificate before deciding whether to filter it or not.
+Of course! Your connection with a remote server remains encrypted and secure. AdGuard, just like a browser, checks the server’s certificate before determining if the connection should be filtered or not.
 
 However, HTTPS filtering has its drawbacks. The most important one is that it hides from the browser the actual certificate of the website. Instead, the browser sees the certificate issued by AdGuard.
 
@@ -51,7 +51,7 @@ An EV certificate offers a higher level of security and provides more guarantees
 
 ### Problems related to HTTPS filtering
 
-A [2017 study](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-ndss17.pdf) shows that 5 to 10% of HTTPS connections are established by HTTPS-filtering applications. It is usually done by various kinds of antivirus software. The bad news is that 24 out of 26 tested antiviruses reduced, in various ways, the connection security level, while two-thirds created connections prone to hacking.
+A [2017 study](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-ndss17.pdf) found that 5 to 10% of HTTPS connections were established by HTTPS filtering applications. It is usually done by various kinds of antivirus software. The bad news is that 24 out of 26 tested antiviruses reduced, in various ways, the connection security level, while two-thirds created connections prone to hacking.
 
 The researchers came to a simple conclusion: the Internet security community should pay close attention to applications that filter secure connections. And the developers of such software must pay serious attention to the quality of filtering implementations.
 
@@ -71,7 +71,7 @@ Finally, if your device is rooted, you can move the AdGuard certificate to the s
 
 ### How to manually check HTTPS quality?
 
-There are several dedicated websites where you can check the quality of your HTTPS connection. These websites check if your browser (or, in our case, your browser plus AdGuard) is susceptible to common vulnerabilities. If you plan to use any program that filters HTTPS, not necessarily AdGuard (e.g., an antivirus), we advise that you check the connection quality on these websites.
+There are several dedicated websites where you can check the quality of your HTTPS connection. These websites check if your browser (or, in our case, your browser plus AdGuard) is susceptible to common vulnerabilities. If you plan to use any program that filters HTTPS, not necessarily AdGuard (e.g., an antivirus), we advise that you check the connection quality using these websites.
 
 - [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
 - [https://www.howsmyssl.com/](https://www.howsmyssl.com/)

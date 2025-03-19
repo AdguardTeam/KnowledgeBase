@@ -73,7 +73,7 @@ Aksi takdirde, AdGuard tüm trafiği yönlendirme olmadan anında filtreler. Bu 
 
 ### Sistem başlangıcında ana pencereyi aç
 
-Sistem yüklendikten sonra ana AdGuard penceresinin açılmasını sağlamak için bu seçeneği etkinleştirin. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*.
+Sistem yüklendikten sonra ana AdGuard penceresinin açılmasını sağlamak için bu seçeneği etkinleştirin. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in *Settings → General Settings*.
 
 ### Sistem başlangıcında filtrelemeyi etkinleştir
 

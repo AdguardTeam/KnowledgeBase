@@ -24,10 +24,9 @@ In the *Licenses* section, you can manage your licenses and the devices bound to
 
 - bound and unbound,
 - extended,
-- upgraded,
-- canceled. You can also update your payment details.
+- upgraded.
 
-The devices bound to your AdGuard Ad Blocker licenses can be unbound or renamed. To unbind unused devices, click the number of bound devices next to *Devices*, then select the right arrow → *Remove*.
+The devices bound to your AdGuard Ad Blocker licenses can be unbound or renamed. To unbind unused devices, click the number of bound devices next to *Devices*, then select `>` → *Remove*.
 
 ## View purchases
 

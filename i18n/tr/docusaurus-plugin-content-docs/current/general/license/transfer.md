@@ -12,7 +12,7 @@ The license key can be activated on a [limited number of devices](../what-is). A
 - Click *Reset license* or *Log out* in an AdGuard app
 
 - Remove the device from your AdGuard account:
-    1. Click *AdGuard Ad Blocker* in your [AdGuard account](https://my.adguard.com/).
+    1. Click *AdGuard Ad Blocker* in your [AdGuard account](https://adguardaccount.com/).
 
         ![Account Ad Blocker tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 

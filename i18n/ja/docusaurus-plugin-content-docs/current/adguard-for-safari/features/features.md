@@ -1,34 +1,34 @@
 ---
-title: Features
+title: 機能
 sidebar_position: 1
 ---
 
 ## 一般
 
-Basic features, including notifications, update intervals, and logging level
+通知、更新間隔、ログレベルなどの基本機能の説明です：
 
-[General](adguard-for-safari/features/general.md)
+[一般設定](adguard-for-safari/features/general.md)
 
 ## フィルタ
 
-Different filters that allow you to customize ad blocking
+広告ブロックのカスタマイズを可能にするさまざまなフィルタについてです：
 
-[Filters](/adguard-for-safari/features/filters.md)
+[フィルタ](/adguard-for-safari/features/filters.md)
 
-## Content Blockers
+## コンテンツブロッカー
 
-Six thematic content blockers that conform to Apple’s restrictions
+Appleの制約に準拠した6つのテーマ別コンテンツブロッカーについてです：
 
-[Content Blockers](/adguard-for-safari/features/content-blockers/content-blockers.md)
+[コンテンツブロッカー](/adguard-for-safari/features/content-blockers/content-blockers.md)
 
 ## ユーザールール
 
-Custom filtering rules to fine-tune ad blocking
+広告ブロックを微調整するためのカスタムフィルタリングルールについてです：
 
-[User rules](/adguard-for-safari/features/rules.md)
+[ユーザールール](/adguard-for-safari/features/rules.md)
 
 ## AdGuardについて
 
-A section with links to privacy documents, GitHub repository, and version history
+プライバシーに関する文書、GitHubリポジトリ、およびバージョン履歴へのリンクを含むセクションです：
 
-[About](/adguard-for-safari/features/about.md)
+[このアプリについて](/adguard-for-safari/features/about.md)

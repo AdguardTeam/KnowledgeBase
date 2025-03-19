@@ -33,6 +33,12 @@ Impostazioni generali, avanzate e quelli di basso livello che ti permettono di s
 
 [Impostazioni](/adguard-for-android/features/settings.md)
 
+## Low-level settings guide
+
+Descriptions of the low-level settings available in AdGuard v4.3 for Android and later.
+
+[Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
+
 ## Assistant
 
 Uno strumento che ti consente di modificare rapidamente le impostazioni dell'app o del sito web e vedere le statistiche senza aprire l'interfaccia di AdGuard

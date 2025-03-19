@@ -33,6 +33,12 @@ General, advanced, and low-level settings that let you select the language and t
 
 [Ayarlar](/adguard-for-android/features/settings.md)
 
+## Alt seviye ayarlar rehberi
+
+Descriptions of the low-level settings available in AdGuard v4.3 for Android and later.
+
+[Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
+
 ## Asistan
 
 A tool that lets you quickly change app or website settings and view statistics without opening the AdGuard interface

@@ -63,7 +63,7 @@ Pe dispozitivele cu Android 7 și versiuni anterioare, nu este posibil să trimi
 
 Urmați această instrucțiune:
 
-**Partea #1: pregătiți dispozitivul**
+### Part #1: prepare the device
 
 1. Comutați dispozitivul în modul dezvoltator. Pentru a face acest lucru: mergeți la **Setări** → **Despre** → apăsați **Numărul de compilare** de 7 ori.
 
@@ -73,17 +73,17 @@ Urmați această instrucțiune:
 
 1. Creșteți dimensiunile **buffer-ului de jurnal** la 4 MB pe buffer de jurnal.
 
-4 MB ar trebui să fie suficient pentru a stoca jurnalele de care avem nevoie până când veți putea face a doua parte (obținerea jurnalului de pe dispozitiv);
+4 MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
 
-**Partea #2: reproducerea problemei**
+### Part #2: reproduce the problem
 
-Este important să reproduceți problema după ce ați terminat cu prima parte.
+It is important to reproduce the problem after you're done with the first part.
 
 1. Reproduceți problema.
 
 1. Amintiți-vă/notați data și ora reproducerii și includeți-o în e-mailul către suportul nostru mai târziu.
 
-**Part #3: get the log**
+### Part #3: get the log
 
 1. Conectați dispozitivul la un PC cu un cablu USB.
 
@@ -101,9 +101,9 @@ Este important să reproduceți problema după ce ați terminat cu prima parte.
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-    Trimiteți fișierul `txt` creat, precum și ora la care a fost reprodusă problema (din partea #2) echipei noastre de asistență la support@adguard.com.
+    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at <support@adguard.com>.
 
-### Metodă alternativă pentru utilizatorii ROOT
+### Alternative way for ROOT users
 
 1. Descărcați și rulați [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
 

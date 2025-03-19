@@ -1,6 +1,6 @@
 ---
 title: Assistent
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info
@@ -68,7 +68,7 @@ Wählen Sie eine Website aus (**wir verwenden google.com hier nur als Beispiel**
 
 Wenn Sie auf diese Option tippen, wird `google.com` sofort zur Freigabeliste hinzugefügt und von AdGuard nicht mehr gefiltert. Werbung und Tracker werden für diese Website nicht blockiert.
 
-#### Letzte Aktivität
+#### Recent activity (websites)
 
 Sie werden zur AdGuard-App weitergeleitet, in der Sie detaillierte Informationen zu den letzten 10.000 Anfragen an google.com finden.
 

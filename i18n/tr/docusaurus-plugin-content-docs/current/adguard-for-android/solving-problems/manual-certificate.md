@@ -43,4 +43,4 @@ If you experience issues during the manual certificate installation (for example
 1. AdGuard'ı yeniden başlatın.
 2. Doğru sertifikayı (AdGuard Personal CA) bir kez daha yüklemeyi deneyin.
 
-Hâlâ bir sorunla karşılaşıyorsanız ve sertifikayı yükleyemiyorsanız, lütfen support@adguard.com adresinden destek ekibimizle iletişime geçin.
+If you still encounter a problem and can't install the certificate, please contact our support team at <support@adguard.com>.

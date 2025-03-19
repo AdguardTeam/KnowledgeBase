@@ -33,6 +33,12 @@ Obecná, pokročilá a nízkoúrovňová nastavení, která umožňují vybrat j
 
 [Nastavení](/adguard-for-android/features/settings.md)
 
+## Průvodce nízkoúrovňových nastavení
+
+Descriptions of the low-level settings available in AdGuard v4.3 for Android and later.
+
+[Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
+
 ## Assistant
 
 Nástroj, který umožňuje rychle měnit nastavení aplikací nebo webových stránek a zobrazovat statistiky bez nutnosti otevírat rozhraní AdGuardu

@@ -1,58 +1,64 @@
 ---
-title: Features
+title: Fonctionnalités
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
+Cet article concerne AdGuard pour Android, un bloqueur de publicité multifonctionnel qui protège votre appareil au niveau système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Protection
 
-Available settings in the _Protection_ tab: _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Firewall_, and _Browsing security_
+Paramètres disponibles dans l'onglet _Protection_ : _Blocage des publicités_, _Protection contre le suivi_, _Blocage des nuisances_, _Protection DNS_, _Pare-feu_, et _Navigation sécurisée_
 
 [Protection](/adguard-for-android/features/protection/protection.md)
 
 ## Gestion des applications
 
-Features that allow you to customize traffic filtering and routing for each app
+Fonctionnalités qui vous permettent de personnaliser le filtrage et le routage du trafic pour chaque application
 
 [Gestion des applications](/adguard-for-android/features/app-management.md)
 
 ## Statistiques
 
-Detailed statistics on blocked ads, trackers, and data usage
+Statistiques détaillées sur les publicités bloquées, les traqueurs et l'utilisation des données
 
 [Statistiques](/adguard-for-android/features/statistics.md)
 
 ## Paramètres
 
-General, advanced, and low-level settings that let you select the language and theme, customize DNS protection, enable HTTPS filtering, and manage userscripts
+Paramètres généraux, avancés et de bas niveau qui vous permettent de sélectionner la langue et le thème, de personnaliser la protection DNS, d'activer le filtrage HTTPS et de gérer les scripts utilisateur
 
 [Paramètres](/adguard-for-android/features/settings.md)
 
+## Low-level settings guide
+
+Descriptions of the low-level settings available in AdGuard v4.3 for Android and later.
+
+[Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
+
 ## Assistant
 
-A tool that lets you quickly change app or website settings and view statistics without opening the AdGuard interface
+Un outil qui vous permet de changer rapidement les paramètres d'application ou de site Web et de consulter les Statistiques sans ouvrir l'interface AdGuard
 
 [Assistant](/adguard-for-android/features/assistant.md)
 
 ## Version gratuite vs version complète
 
-Comparison of features between the free and paid versions
+Une comparaison des fonctionnalités entre la version gratuite et la version payante.
 
 [Version gratuite vs. version complète](/adguard-for-android/features/free-vs-full.mdx)
 
 ## Intégration avec AdGuard VPN
 
-Integrated mode that allows AdGuard Ad Blocker and AdGuard VPN to run simultaneously despite system limitations
+Mode intégré qui permet au Bloqueur AdGuard et à AdGuard VPN de fonctionner simultanément malgré les limitations du système
 
 [Intégration avec AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
 
 ## Appareils rootés
 
-Features available in AdGuard for Android on rooted devices: HTTPS filtering in all apps, _Automatic proxy_ and _Manual proxy_ modes
+Fonctionnalités disponibles dans AdGuard pour Android sur les appareils rootés : filtrage HTTPS dans toutes les applications, modes _Proxy automatique_ et _Proxy manuel_
 
 [Appareils rootés](/adguard-for-android/features/rooted.md)

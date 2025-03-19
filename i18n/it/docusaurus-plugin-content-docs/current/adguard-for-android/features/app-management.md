@@ -20,11 +20,11 @@ Toccando un'app puoi gestirne le impostazioni:
 - Filtra il suo traffico HTTPS (per le app non browser, richiede [l'installazione del certificato CA di AdGuard nell'archivio di sistema](/adguard-for-android/solving-problems/https-certificate-for-rooted/), disponibile sui dispositivi rootati)
 - Instradalo attraverso il tuo server proxy specificato o AdGuard VPN in modalità Integrazione
 
-![Gestione app in Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![App management: Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
 Dal menu contestuale, puoi accedere anche alle statistiche dell'app.
 
-![Gestione dell'app in Chrome. Menu' contestuale \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![App management: Chrome Context menu \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
 ### App “senza problemi” e “problematiche”
 

@@ -43,4 +43,4 @@ Wenn bei der manuellen Zertifikatsinstallation Probleme auftreten (z. B. wenn Si
 1. Starten Sie AdGuard neu.
 2. Versuchen Sie noch einmal, das richtige Zertifikat (AdGuard Personal CA) zu installieren.
 
-Wenn Sie immer noch ein Problem haben und das Zertifikat nicht installieren können, wenden Sie sich bitte an unser Support-Team unter support@adguard.com.
+If you still encounter a problem and can't install the certificate, please contact our support team at <support@adguard.com>.

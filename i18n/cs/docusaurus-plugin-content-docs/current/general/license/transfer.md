@@ -12,7 +12,7 @@ Licenční klíč lze aktivovat na [omezený počet zařízení](../what-is). Po
 - Klikněte na *Obnovit licenci* nebo *Odhlásit se* v aplikaci AdGuard
 
 - Odeberte zařízení z AdGuard účtu:
-    1. Klikněte na *Blokátor reklam AdGuard* ve svém [AdGuard účtu](https://my.adguard.com/).
+    1. Klikněte na *Blokátor reklam AdGuard* ve svém [AdGuard účtu](https://adguardaccount.com/).
 
         ![Account Ad Blocker tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 

@@ -31,7 +31,7 @@ sidebar_position: 4
 
 ![Advanced \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-「ローレベル設定」セクションは上級者ユーザー向けです。 [ローレベル設定について詳しくはこちら](/adguard-for-android/solving-problems/log/)
+「ローレベル設定」セクションは上級者ユーザー向けです。 [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
 
 ![Low-level settings \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
