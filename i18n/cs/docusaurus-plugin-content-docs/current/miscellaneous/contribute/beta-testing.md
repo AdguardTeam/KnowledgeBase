@@ -17,11 +17,11 @@ Naše požadavky jsou jednoduché: používejte AdGuard, přejděte na beta/nigh
 
 Budete také potřebovat zařízení, na které budete aplikaci instalovat a [odkaz na stránku beta testování](https://adguard.com/beta.html). Tam najdete další informace o tom, jak se zapojit do našeho programu a otestovat AdGuard pro Windows, Mac, Android a iOS.
 
-Pokud chcete přeskočit část s popisem a přejít rovnou k akci, můžete se přihlásit [zde](https://surveys.adguard.com/beta_testing_program/form.html). Vaše žádost bude zkontrolována během 1-3 pracovních dnů a odpověď obdržíte e-mailem.
+Pokud chcete přeskočit část s popisem a přejít rovnou k akci, můžete se přihlásit [zde](https://surveys.adguard.com/beta_testing_program/form.html). Vaše žádost bude zkontrolována během 1–3 pracovních dnů a odpověď obdržíte e-mailem.
 
 :::note
 
-Chcete-li získat beta nebo nightly sestavení AdGuardu pro iOS, musíte nejprve do svého zařízení se systémem iOS nainstalovat [aplikaci Testflight](https://apps.apple.com/app/testflight/id899247664).
+Chcete-li získat beta nebo nightly sestavení AdGuardu pro iOS, musíte nejprve do svého zařízení se systémem iOS nainstalovat [aplikaci TestFlight](https://apps.apple.com/app/testflight/id899247664).
 
 :::
 
@@ -37,10 +37,10 @@ Výše uvedená metoda je nejvhodnější, ale v případě potřeby můžete po
 
 ## Jak aktivovat klíč pro beta/ nightly v aplikaci pro iOS {#ios}
 
-Pokud jste již obdrželi klíč pro beta verzi a je uveden ve vašem účtu `adguard.com`, přejděte do aplikace a otevřete část s licencí (Získat Premium). Tam zadejte přihlašovací údaje z AdGuard účtu. Poté se automaticky zpřístupní prémiové funkce.
+Pokud jste již obdrželi klíč pro beta nebo nightly verzi a je uveden ve vašem účtu `adguard.com`, přejděte do aplikace a otevřete část s licencí (Získat Premium). Tam zadejte přihlašovací údaje z AdGuard účtu. Poté se automaticky zpřístupní prémiové funkce.
 
 ### Co ještě?
 
 Víc k tomu není třeba dodávat. Při hledání chyb se nemusíte nijak zdržovat. AdGuard můžete nadále používat jako obvykle. Pokud však narazíte na chybu, nahlaste ji. Samozřejmě oceníme jakoukoli další snahu.
 
-Příležitostně budete dostávat naše informační bulletiny, které vás budou informovat o nejnovějších změnách v beta verzi (pokud jste je přehlédli) a dalších důležitých novinkách. Můžete se kdykoliv odhlásit z odběru.
+Příležitostně budete dostávat naše informační bulletiny, které vás budou informovat o nejnovějších změnách v beta/nightly verzi (pokud jste je přehlédli) a dalších důležitých novinkách. Můžete se kdykoliv odhlásit z odběru.

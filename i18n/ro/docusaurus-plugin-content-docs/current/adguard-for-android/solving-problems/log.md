@@ -35,4 +35,4 @@ To collect **debug** log and send it to us, you need to perform following steps:
 Dacă ești interesat să urmezi rezolvarea problemei tale și să te implici într-un dialog cu dezvoltatorii, îți recomandăm să urmezi pașii următori după ce ai completat primii trei:
 
 1. Așteaptă puțin, apoi revino la ecranul *Avansat* și exportă jurnalele prin *Exportă jurnalele și informațiile despre sistem*. Apoi raportează o eroare pe GitHub urmând aceste [instrucțiuni](/guides/report-bugs.md).
-1. După ce ai creat o problemă pe GitHub, trimite fișierul jurnal la devteam@adguard.com. Include ora erorii și atașează un link la problema ta sau numărul acesteia (apare ca #number lângă titlu). Alternativ, poți încărca fișierul jurnal pe Google Drive și trimite-l la devteam@adguard.com. Adaugă linkul fișierului la problema ta de pe GitHub
+1. After creating an issue on GitHub, send the log file to <devteam@adguard.com>. Include ora erorii și atașează un link la problema ta sau numărul acesteia (apare ca #number lângă titlu). Alternatively, you can upload the log file to Google Drive and send it to <devteam@adguard.com>. Adaugă linkul fișierului la problema ta de pe GitHub

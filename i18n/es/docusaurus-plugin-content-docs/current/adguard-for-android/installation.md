@@ -11,7 +11,7 @@ Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multi
 
 ## Requisitos del sistema
 
-**Versión del sistema operativo:** Android 7.0 o superior
+**Versión del sistema operativo:** Android 9.0 o superior
 
 **RAM:** por lo menos 2 GB
 

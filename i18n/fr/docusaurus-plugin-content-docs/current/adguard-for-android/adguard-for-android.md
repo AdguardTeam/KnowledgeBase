@@ -23,6 +23,6 @@ Installation, removal, and system requirements for AdGuard for Android
 
 ## Résoudre les problèmes
 
-Known issues and possible solutions
+Problèmes connus et solutions possibles
 
 [Solving problems](/adguard-for-android/solving-problems/solving-problems.md)

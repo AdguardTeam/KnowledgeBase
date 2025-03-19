@@ -13,218 +13,232 @@ Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multi
 
 :::caution
 
-Cambiar la *configuración de bajo nivel* puede causar problemas con el rendimiento de AdGuard, romper la conexión a Internet o comprometer tu seguridad y privacidad. Esta sección sólo debe abrirse si sabes lo que está haciendo o si se lo ha pedido nuestro equipo de asistencia.
+Changing the low-level settings can cause problems with AdGuard’s performance, interrupt your Internet connection, or compromise your security and privacy. Use the low-level features only if you are an experienced user and know what you are doing, or if our support team has asked you to do so.
 
 :::
 
-Para ir a *Configuración de bajo nivel*, abre la aplicación AdGuard y toca el ícono de engranaje en la esquina inferior derecha de la pantalla. Luego, selecciona *General → Avanzado → Configuración de bajo nivel*.
+To access *Low-level settings*, open the AdGuard app and tap the gear icon in the lower-right corner of the screen. Then select *General → Advanced → Low-level settings*.
 
 ## Configuración de bajo nivel
 
-Para AdGuard v4.0 para Android hemos rediseñado completamente las configuraciones de bajo nivel: las dividimos en bloques temáticos, las hicimos más claras, agregamos validación de valores ingresados y otras válvulas de seguridad, eliminamos algunas configuraciones y agregamos otras.
+For AdGuard v4.x for Android we’ve completely redesigned the low-level settings. We have reworked the list of settings and organized them into thematic groups with improved descriptions. We also added input validation and other safety valves.
 
 ### Protección DNS
 
 #### Upstreams fallback
 
-Aquí puedes especificar los solucionadores DNS de respaldo que se utilizarán si el servidor configurado no está disponible. Hay tres opciones: *DNS automático*, *Ninguno*y *DNS personalizado*. Si no se especifica ningún servidor de respaldo, se utilizará el *DNS automático* (el DNS del sistema o el DNS de AdGuard). *Ninguno* significa que no hay respaldo alguno. Seleccionar *DNS personalizado* te permitirá enumerar direcciones de servidores IPv4 e IPv6 para usar como upstream.
+Here you can specify the fallback DNS resolver(s) to use when the configured server is unavailable. Available options:
+
+- *Automatic DNS*: Select this option if you want to use the system DNS or AdGuard DNS.
+- *None*: Select this option if you do not want to have any fallback.
+- *Custom DNS*: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. These addresses will be used as upstreams.
 
 #### Dominios fallback
 
-Aquí puedes enumerar los dominios que se reenviarán directamente a los servidores ascendentes de respaldo, si existen.
+Here you can list domains that will be redirected to fallback upstreams, if available. You can enter multiple domains, one per line. You can use limited wildcards.
 
 #### Detectar dominios de búsqueda
 
-Si esta configuración está habilitada, AdGuard detectará los dominios de búsqueda y los reenviará automáticamente a los dominios fallback de subida.
+If this setting is enabled, AdGuard will detect DNS search domains and automatically redirect them to fallback upstreams, if available.
 
 #### Bootstrap de subida
 
-DNS de arranque para servidores DoH, DoT y DoQ. El *DNS automático* (el DNS del sistema o DNS AdGuard) se utiliza de forma predeterminada. Al seleccionar *DNS personalizado*, puedes enumerar las direcciones de servidor IPv4 e IPv6 para usar como enlaces ascendentes de arranque.
+Bootstrap DNS for encrypted DNS upstreams, such as DoH, DoT, and DoQ servers. Available options:
+
+- *Automatic DNS*: Select this option if you want to use the system DNS or AdGuard DNS. This option is selected by default.
+- *Custom DNS*: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. These addresses will be used as bootstrap upstreams.
 
 #### Modo de bloqueo para reglas de estilo adblock
 
-Aquí puedes especificar el tipo de respuesta para los dominios bloqueados por las reglas DNS según la sintaxis de la regla de bloqueo de publicidad (por ejemplo, `||example.org^`).
+Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for example, `||example.org^`). Available options:
 
-- Responder con REFUSED
-- Responder con NXDOMAIN
-- Responder con dirección IP personalizada (aquí se pueden especificar direcciones IPv4 e IPv6)
+- *REFUSED*: Respond with REFUSED
+- *NXDOMAIN*: Respond with NXDOMAIN
+- *Custom IP address*: Select this option to respond with a custom IP address. You will have to enter an IPv4 address for blocked A requests and an IPv6 address for blocked AAAA requests.
 
 #### Modo de bloqueo para reglas de hosts
 
-Aquí puede especificar el tipo de respuesta para los dominios bloqueados por las reglas DNS según la sintaxis de la regla de hosts (por ejemplo, `<ip> <domain> 0.0.0.0 example.com`).
+Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax (for example, `<ip> <domain> 0.0.0.0 example.com`).
 
-- Responder con REFUSED
-- Responder con NXDOMAIN
-- Responder con dirección IP personalizada (aquí se pueden especificar direcciones IPv4 e IPv6)
+- *REFUSED*: Respond with REFUSED
+- *NXDOMAIN*: Respond with NXDOMAIN
+- *Custom IP address*: Select this option to respond with a custom IP address. You will have to enter an IPv4 address for blocked A requests and an IPv6 address for blocked AAAA requests.
 
 #### Tiempo de espera de petición de DNS
 
-Aquí puedes especificar el tiempo en milisegundos que AdGuard esperará la respuesta del servidor DNS seleccionado antes de recurrir al fallback. Si no completas este campo o ingresas un valor no válido, se utilizará el valor de 5000.
+Here you can specify the timeout, in milliseconds, that AdGuard will wait for each DNS request before redirecting it to a fallback DNS resolver. If you don’t fill in this field or enter an invalid value, the value of 5000 ms will be used. If you have multiple upstreams, the fallback DNS will only be used after the timeouts of each upstream have expired.
 
 #### TTL de respuesta bloqueada
 
-Aquí puedes especificar el valor TTL (tiempo de vida) que se devolverá en respuesta a una solicitud bloqueada.
+Here you can set the time to live (TTL) of the record for blocked domains. The default value is 3600 seconds.
 
 #### Tamaño de caché de DNS
 
-Aquí puedes especificar el número máximo de respuestas almacenadas en caché. El valor predeterminado es 1000.
+Aquí puedes especificar el número máximo de respuestas almacenadas en caché. The default value is 1000.
 
 #### Bloqueo ECH
 
-Si está habilitado, AdGuard elimina los parámetros Encrypted Client Hello de las respuestas DNS.
+If this setting is enabled, AdGuard will block TLS Encrypted Hello (ECH) in DNS responses.
 
-#### Ignorar proxy de salida no disponible
+#### Try HTTP/3 for DNS-over-HTTPS upstreams
 
-Si esta configuración está habilitada, AdGuard enviará solicitudes de DNS directamente cuando el proxy saliente no esté disponible.
+If this setting is enabled, AdGuard will use HTTP/3 to speed up DNS query resolution for DNS-over-HTTPS upstreams. Otherwise, AdGuard will revert to its default behavior and use HTTP/2 to send all DNS requests for DNS-over-HTTPS.
 
-#### Probar HTTP/3 para upstreams de DNS-over-HTTPS
+#### SERVFAIL failure response
 
-Si esta configuración está habilitada, AdGuard utilizará HTTP/3 para acelerar la resolución de consultas DNS para los enlaces ascendentes de DoH. De lo contrario, AdGuard volverá a su comportamiento predeterminado y utilizará HTTP/2 para enviar todas las solicitudes de DNS para DNS sobre HTTPS.
+If this setting is enabled, AdGuard will send a SERVFAIL response to the client if all upstreams, including the fallback ones, fail to reply. If this setting is disabled, no response will be sent to the client in such a case.
 
-#### Respuesta a fallos de SERVFAIL
+#### Use fallback for all domains
 
-Si esta configuración está habilitada y todos los upstreams, incluidos los de respaldo, no responden, AdGuard enviará una respuesta SERVFAIL al cliente.
+If this setting is enabled, AdGuard will use fallback upstreams for all domains, including non-fallback ones. Otherwise, fallback upstreams will only be used for fallback domains and search domains if the corresponding option is enabled.
 
-#### Usar fallback para dominios que no son de fallback
+#### Validate DNS upstreams
 
-Si esta configuración está habilitada, AdGuard utilizará rutas ascendentes de respaldo para todos los dominios. De lo contrario, los upstreams de respaldo solo se utilizarán para dominios de respaldo y dominios de búsqueda si la opción correspondiente está habilitada.
+If this setting is enabled, AdGuard will test DNS upstreams before adding or updating custom DNS servers.
 
-#### Validar upstreams DNS
+#### Filter secure DNS
 
-Si esta configuración está habilitada, AdGuard probará los servidores DNS ascendentes antes de agregar o actualizar servidores DNS personalizados.
+If this setting is enabled, AdGuard will filter encrypted DNS requests in addition to plain DNS requests. Encrypted DNS traffic mostly comes from Chrome and other browsers that have a secure DNS setting.
 
-#### Filtrar DNS seguro
+This setting has two modes:
 
-Si esta configuración está activada, AdGuard aplicará todos los filtros DNS habilitados y las reglas de usuario DNS al tráfico DNS sobre HTTPS (DoH) cifrado y no solo al DNS simple. El tráfico de DoH proviene principalmente de Chrome y otros navegadores que tienen una configuración *DNS seguro* (o similar). Puedes usar *Filtro DNS seguro* en dos modos diferentes:
+- **Filter on the fly**. In this mode, AdGuard will filter DNS-over-HTTPS traffic without redirecting it to the local DNS proxy. It will use the DNS server specified in the browser settings.
 
-- **Filtrar en tiempo real**. En este modo, AdGuard aplica todos los filtros DNS habilitados y las reglas de usuario DNS al tráfico DoH, pero no lo redirecciona al proxy DNS local. Si se especifica un servidor DNS en la configuración del navegador, este servidor manejará el tráfico DoH para este navegador
-
-- **Redirigir al proxy DNS**. En este modo, AdGuard aplica todos los filtros DNS habilitados y las reglas de usuario DNS al tráfico DoH redirigiéndolo al proxy DNS local. El servidor DNS especificado en la configuración de DNS de AdGuard manejará todo el tráfico DoH
+- **Redirect to DNS proxy**. In this mode, AdGuard will redirect DNS-over-HTTPS requests to the local DNS proxy for filtering. It will use the DNS server selected in the DNS settings of the AdGuard app.
 
 ### Filtrado
 
-#### Capturar HAR
+#### Capture HAR
 
-Si esta configuración está habilitada, AdGuard capturará archivos HAR. Creará un directorio llamado “har” dentro del directorio de caché de la aplicación y agregará allí información sobre todas las solicitudes HTTP filtradas en formato HAR 1.2 que se pueden analizar con el programa Fiddler.
+If this setting is enabled, AdGuard will log all filtered HTTP requests in HAR 1.2 format to the “har” subdirectory in the app cache directory. These files can be analyzed with the Fiddler tool.
 
-¡Úsalo sólo para fines de depuración!
+This setting may slow down your device. Use it for debugging purposes only.
 
 ### Filtrado HTTPS
 
 #### Encrypted Client Hello
 
-Toda conexión a Internet cifrada tiene una parte no cifrada. Este es el primer paquete que contiene el nombre del servidor al que te estás conectando. La tecnología Encrypted Client Hello resuelve este problema y cifra la última parte de la información no cifrada. Para beneficiarte de ello, habilita la opción *Encrypted Client Hello*. Utiliza un proxy DNS local para buscar la configuración de ECH para el dominio. Si se encuentra, se cifrará el paquete Client Hello.
+If this setting is enabled, AdGuard will encrypt ClientHellos, if necessary. This feature requires HTTPS filtering to be enabled. This feature uses a local DNS proxy to look for the ECH configuration for the domain. If it is found, the ClientHello packet will be encrypted. Make sure to use an encrypted DNS server with this feature.
 
-#### Verificación de OCSP
+**About ClientHellos and ECH**: Every encrypted Internet connection has an unencrypted part. This is the very first packet that contains the name of the server you are connecting to. Encrypted Client Hello technology is designed to solve this problem by encrypting this packet.
 
-Si esta configuración está habilitada, AdGuard realizará comprobaciones OCSP asincrónicas para obtener el estado de revocación del certificado SSL de un sitio web.
+#### OCSP checking
 
-Si se completa una verificación OCSP dentro del tiempo de espera requerido, AdGuard bloqueará inmediatamente la conexión si se revoca el certificado o establecerá la conexión si el certificado es válido.
+If this setting is enabled, AdGuard will automatically check the revocation status of SSL certificates before connecting to a website. This feature requires HTTPS filtering to be enabled.
 
-Si la verificación tarda demasiado tiempo, AdGuard permitirá la conexión mientras continúa verificando el estado del certificado en segundo plano. Si se revoca el certificado, se bloquearán las conexiones actuales y futuras al dominio.
+If the check is completed within the required timeout, AdGuard will  allow the connection if the certificate is valid or immediately block the connection if the certificate is revoked.
 
-#### Redirigir solicitudes de DNS-over-HTTPS
-
-Si esta configuración está habilitada, AdGuard redirigirá las solicitudes de DNS-over-HTTPS al proxy DNS local, además de las solicitudes de DNS simples. Recomendamos deshabilitar los servidores ascendentes de respaldo y utilizar solo servidores DNS encriptados para mantener la privacidad.
+If the verification takes too long, AdGuard will allow the connection while continuing to check the certificate status in the background. Si se revoca el certificado, se bloquearán las conexiones actuales y futuras al dominio.
 
 #### Filtrar HTTP/3
 
-Si esta configuración está habilitada, AdGuard filtrará las solicitudes enviadas a través de HTTP/3 además de otros tipos de solicitudes.
+If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types. This feature requires HTTPS filtering to be enabled.
+
+**About HTTP/3**: This is the latest version of the HTTP protocol, based on QUIC.
 
 ### Proxy saliente
 
-#### Mostrar la configuración de solicitudes DNS de filtro
+#### Show the Filter DNS requests setting
 
-Si esta opción está habilitada, el interruptor *Filtrar solicitudes DNS* se mostrará en el cuadro de diálogo *Agregar servidor proxy*. Úsalo para habilitar el filtrado de solicitudes DNS que pasan a través del proxy especificado.
+When this setting is enabled, the *Filter DNS requests* switch is displayed in the *Add proxy server* dialog. To access the dialog, open **Settings**, then go to **Filtering** → **Network** → **Proxy** → **Proxy server**, and click *+ Add proxy server*. Turning on that switch enables filtering of DNS requests passing through the specified outbound proxy.
 
 ### Protección
 
-#### Rangos de puertos
+#### Port ranges
 
-Aquí puedes especificar los rangos de puertos que deben filtrarse.
+This setting allows you to specify the port ranges that should be filtered. Enter port ranges, one range per line. Use `..` to specify the range. For example, `80..5221`.
 
-#### Registrar eventos HTML eliminados
+#### Log removed HTML events
 
-Si esta configuración está habilitada, AdGuard registrará los elementos HTML bloqueados en *Actividad reciente*.
+If this setting is enabled, AdGuard will write information about blocked HTML elements to *Recent activity*. To access the logs, go to go to **Statistics** → **Recent activity**.
 
-#### Depuración de scriptlet
+#### Scriptlet debugging
 
-Si esta configuración está habilitada, se activará la depuración en scriptlets y el registro del navegador registrará cuándo se aplican las reglas de scriptlets.
+If this setting is enabled, the app will display debugging information in the browser console. In this mode, debugging in scriptlets is activated, and the browser logs the events that occur when applying scriptlet rules are applied.
 
-#### Aplicaciones excluidas
+#### Excluded apps
 
-Aquí puedes enumerar los nombres de los paquetes y los UID que deseas excluir de la protección de AdGuard.
+This setting allows you to list the packages and UIDs to exclude from AdGuard protection. Enter package names or UIDs, one per line. You can use `//` for comments.
 
-#### Paquetes de derivación QUIC
+#### QUIC bypass packages
 
-Aquí puedes especificar los nombres de los paquetes para los cuales AdGuard debe omitir el tráfico QUIC.
+Here you can specify package names for which AdGuard should bypass QUIC traffic. Enter package names, one per line. You can use `//` for comments.
 
-#### Reconfiguración automática del proxy cuando cambia la red
+#### Reconfigure Automatic proxy when network changes
 
-Si esta configuración está habilitada, la protección AdGuard se reiniciará para reconfigurar la configuración automática del proxy cuando tu dispositivo se conecte a otra red. Esta configuración solo se aplica si el *Modo de enrutamiento* está configurado en *Proxy automático*.
+If this setting is enabled, the AdGuard protection will restart to reconfigure the automatic proxy parameters when your device connects to another network. This setting only applies when *Routing mode* is set to *Automatic proxy*.
 
-#### Filtrado IPv6
+#### IPv6 filtering
 
-Si esta configuración está habilitada, AdGuard filtrará las redes IPv6 si hay una interfaz de red IPv6 disponible.
+If this setting is enabled, AdGuard will filter IPv6 networks if an IPv6 network interface is available.
 
-#### Intervalos de IPv4 excluidos del filtrado
+#### IPv4 ranges excluded from filtering
 
-El filtrado para los intervalos de IPv4 enumerados en esta sección está deshabilitado.
+Here you can list the IPv4 ranges to exclude from filtering. Enter one IP range per line. You can use `//` for comments.
 
-#### Intervalos de IPv6 excluidos del filtrado
+#### IPv6 ranges excluded from filtering
 
-El filtrado para los intervalos de IPv6 enumerados en esta sección está deshabilitado.
+Here you can list the IPv6 ranges to exclude from filtering. Enter one IP range per line. You can use `//` for comments.
 
-#### TCP keepalive para sockets salientes
+#### TCP keepalive for outgoing sockets
 
-Si esta configuración está habilitada, AdGuard enviará una sonda de mantenimiento después del período de tiempo especificado para garantizar que la conexión TCP esté activa. Aquí puedes especificar el tiempo de inactividad antes de iniciar las sondas keepalive y el tiempo entre sondas keepalive para un peer que no responde.
+If this setting is enabled, AdGuard will send a keepalive probe after the specified time interval to ensure that the TCP connection is still alive. After a system-defined number of unsuccessful attempts to get a response from the server, the system will automatically close the TCP connection.
 
-Después de un número definido por el sistema de intentos fallidos de obtener una respuesta del servidor, el sistema cierra automáticamente la conexión TCP.
+This setting allows you to specify:
+
+- **Idle time**, in seconds, before sending TCP keepalive probes to outgoing sockets. The default value is 0. If you are having problems with NAT, set this to 20.
+- **Time between keepalive probes** for an unresponsive peer. The default value is 0 seconds.
 
 ### Configuración de VPN local
 
-#### Retraso de recuperación para VPN revocada
+#### Recovery delay for revoked VPN
 
-Aquí puedes establecer el tiempo de retraso en milisegundos antes de que AdGuard intente restaurar la protección VPN después de que haya sido revocada por una aplicación VPN de terceros o eliminando el perfil VPN. El valor predeterminado es 5000 ms.
+Here you can set the delay in milliseconds before AdGuard tries to restore VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. The default value is 5000 ms.
 
-#### Reprogramar el retraso para la recuperación de VPN revocada
+#### Reschedule delay for revoked VPN recovery
 
-Aquí puedes establecer el tiempo de retraso en milisegundos antes de que AdGuard reprograme la restauración de la protección VPN después de que haya sido revocada por una aplicación VPN de terceros o al eliminar el perfil VPN. El valor predeterminado es 5000 ms.
+Here you can set the delay in milliseconds before AdGuard reschedules the restoration of VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. The default value is 5000 ms.
 
 #### MTU
 
-Aquí puedes configurar la unidad de transmisión máxima (MTU) de la interfaz VPN. El intervalo recomendado es de 1500 a 1900 bytes.
+Here you can set the maximum transmission unit (MTU) of the VPN interface. This is the maximum size of the data packet used in your local VPN. The recommended range is 1500-1900 bytes.
 
-#### Restaurar VPN automáticamente
+#### Restore VPN automatically
 
-Si esta configuración está habilitada, la VPN local de AdGuard se volverá a habilitar automáticamente después de apagarse debido a ausencia de red, conexión compartida o modo de bajo consumo.
+If this setting is enabled, AdGuard’s local VPN will be automatically re-enabled after being turned off due to network absence, tethering, or low-power mode.
 
-#### Captura de paquetes (PCAP)
+#### Packet capture (PCAP)
 
-Si esta configuración está habilitada, AdGuard creará un archivo `timestamp.pcap` (por ejemplo, 1682599851461.pcap) en el directorio de caché de la aplicación. Este archivo enumera todos los paquetes de red transferidos a través de la VPN y puede analizarse con el programa Wireshark.
+This setting enables logging of TUN interfaces. When enabled, AdGuard creates a file `timestamp.pcap`, such as  1682599851461.pcap, in the app cache directory. This file lists all network packets transmitted through the VPN and can be analyzed using the Wireshark tool.
 
-#### Incluir puerta de enlace Wi-Fi en rutas VPN
+#### Include Wi-Fi gateway in VPN routes
 
-Si esta configuración está habilitada, las direcciones IP de la puerta de enlace se agregarán a las rutas VPN cuando esté en Wi-Fi.
+If this setting is enabled, the gateway IP addresses will be added to VPN routes when the device is on Wi-Fi.
 
-#### Dirección IPv4
+#### IPv4 address
 
-Aquí puedes ingresar la dirección IP que se utilizará para crear una interfaz TUN. De forma predeterminada, es `172.18.11.218`.
+Here you can specify the IP address that will be used to create a TUN interface. The default value is `172.18.11.218`.
 
-#### Enrutar a la fuerza LAN IPv4
+#### Forcibly route LAN IPv4
 
-Si esta configuración está habilitada, AdGuard filtrará todas las conexiones LAN, incluido el tráfico de red IPv4 local, incluso si la opción *Enrutar todas las conexiones IPv4 LAN* está habilitada.
+If this setting is enabled, AdGuard will filter all LAN connections, including local IPv4 network traffic, even if the *Route all LAN IPv4 connections* option is enabled.
 
-#### Enrutar todas las conexiones LAN IPv4
+#### Route all LAN IPv4 connections
 
-Si esta configuración está habilitada, AdGuard excluirá las conexiones LAN del filtrado para redes simples. Es posible que esto no funcione para redes complejas. Esta configuración solo se aplica si la opción *Enrutar forzosamente LAN IPv4* está deshabilitada.
+If this setting is enabled, AdGuard will exclude LAN connections from filtering for simple networks. This may not work for complex networks. This setting only applies if *Forcibly route LAN IPv4* is disabled.
 
-#### Dirección IPv6
+#### IPv6 address
 
-Aquí puedes ingresar la dirección IP que se utilizará para crear una interfaz TUN. De forma predeterminada, es `2001:db8:ad:0:ff::`.
+Here you can enter the IP address that will be used to create a TUN interface. The default value is `2001:db8:ad:0:ff::`.
 
 ### Misceláneo
 
-#### Detectar Samsung Pay
+#### Show Developer tools on the main screen
 
-Si esta configuración está habilitada, la protección de AdGuard se pausará mientras Samsung Pay esté en uso. Los usuarios coreanos requieren esta función porque experimentan [problemas con Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) cuando AdGuard está habilitado.
+If this setting is enabled, AdGuard will display the **Developer tools** icon in the upper right corner of the app’s home screen.
+
+**Developer tools** is a specialized section available in AdGuard for Android v4.3 and later, designed for quick navigation and switching between features. It allows you to quickly enable or disable custom filters, access logs, enable various logs, and more.
+
+#### Detect Samsung Pay
+
+If this setting is enabled, AdGuard protection will be paused when you open the Samsung Pay app. Korean users require this feature as they experience [issues with Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) when AdGuard is enabled.

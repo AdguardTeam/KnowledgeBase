@@ -33,7 +33,7 @@ AdGuard Extra este practic un mini-program care schimbă modul în care funcțio
 
 **AdGuard Popup Blocker**
 
-Această extensie împiedică deschiderea ferestrelor pop-up atunci când vizualizați pagini web. Unele pop-up-uri sunt considerate utile — ele pot conține setări pentru administrarea site-ului sau informații de referință suplimentare prezentate la clic pe un link. De aceea, puteți dezactiva Blocantul dacă este necesar. Această extensie nu funcționează nici pe site-urile adăugate pe lista de excepții AdGuard. Este dezactivată implicit, dar o puteți activa în setările aplicației. Veți găsi informații mai detaliate despre această extensie în baza noastră de cunoștințe.
+Această extensie împiedică deschiderea ferestrelor pop-up atunci când vizualizați pagini web. Some popups are considered useful — they may contain settings for site administering or additional reference information demonstrated upon clicking a link. De aceea, puteți dezactiva Blocantul dacă este necesar. Această extensie nu funcționează nici pe site-urile adăugate pe lista de excepții AdGuard. Este dezactivată implicit, dar o puteți activa în setările aplicației.
 
 **Web of Trust**
 

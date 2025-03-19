@@ -24,10 +24,9 @@ In the *Settings* section of your AdGuard account, you can update or reset your 
 
 - デバイスに紐付けする・紐付けを解除する
 - 更新・延長
-- アップグレード
-- 解約 お支払い方法と情報を変更することもできます。
+- upgraded.
 
-AdGuard 広告ブロッカーライセンスにバインド（紐付け）されているデバイスは、バインド（紐付け）を解除したり、デバイス名を変更したりできます。 To unbind unused devices, click the number of bound devices next to *Devices*, then select the right arrow → *Remove*.
+AdGuard 広告ブロッカーライセンスにバインド（紐付け）されているデバイスは、バインド（紐付け）を解除したり、デバイス名を変更したりできます。 To unbind unused devices, click the number of bound devices next to *Devices*, then select `>` → *Remove*.
 
 ## ご購入履歴
 

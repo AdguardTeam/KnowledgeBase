@@ -33,6 +33,12 @@ sidebar_position: 1
 
 [Настройки](/adguard-for-android/features/settings.md)
 
+## Низкоуровневые настройки
+
+Descriptions of the low-level settings available in AdGuard v4.3 for Android and later.
+
+[Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
+
 ## Помощник
 
 Инструмент, который позволяет быстр изменять настройки приложения или сайта и просматривать статистику, не открывая AdGuard

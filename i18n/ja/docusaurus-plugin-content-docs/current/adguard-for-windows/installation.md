@@ -11,9 +11,9 @@ sidebar_position: 2
 
 ## 動作環境
 
-**オペレーティングシステム**: Microsoft Windows 11、10、8.1、8、7、Vista
+**オペレーティングシステム**: Microsoft Windows 11、10、8.1、8
 
-**RAM:** 512MB以上
+**RAM:** 1GB以上
 
 **ディスクの空き容量:** 150MB
 

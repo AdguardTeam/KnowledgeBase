@@ -12,7 +12,7 @@ La clef de licence peut être activée sur un [nombre limité d'appareils](../wh
 - Cliquez sur *Réinitialiser la licence* ou *Déconnexion* dans une application AdGuard
 
 - Supprimez l'appareil de votre compte AdGuard :
-    1. Cliquez sur le *Bloqueur AdGuard* dans votre [compte AdGuard](https://my.adguard.com/).
+    1. Click *AdGuard Ad Blocker* in your [AdGuard account](https://adguardaccount.com/).
 
         ![Onglet du compte du Bloqueur *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 

@@ -24,10 +24,9 @@ In the *Settings* section of your AdGuard account, you can update or reset your 
 
 - bound and unbound,
 - extended,
-- upgraded,
-- anulat. De asemenea, puteți actualiza detaliile de plată.
+- upgraded.
 
-Dispozitivele legate de licențele dumneavoastră AdGuard Ad Blocker pot fi dezlegate sau redenumite. To unbind unused devices, click the number of bound devices next to *Devices*, then select the right arrow → *Remove*.
+Dispozitivele legate de licențele dumneavoastră AdGuard Ad Blocker pot fi dezlegate sau redenumite. To unbind unused devices, click the number of bound devices next to *Devices*, then select `>` → *Remove*.
 
 ## Vizualizați achizițiile
 

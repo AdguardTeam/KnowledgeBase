@@ -1,6 +1,6 @@
 ---
 title: 어시스턴트
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info

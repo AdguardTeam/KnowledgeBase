@@ -51,7 +51,7 @@ Encontre a seção **PERMITIR ESTAS EXTENSÕES** e, em seguida, encontre **AdGua
 
 ![Selecione "AdGuard" na seção PERMITIR ESTAS EXTENSÕES *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_en.png)
 
-Toque nele e ative o interruptor. Na mesma tela, defina a permissão *Todos os sites* do AdGuard como *Permitir* ou *Perguntar*. Se você escolher *Permitir*, não será necessário dar permissão toda vez que visitar um novo site. Se você não tiver certeza, escolha *Perguntar* para conceder permissões para cada site individualmente.
+Toque nele e ative-o. Na mesma tela, defina a permissão *Todos os sites* do AdGuard como *Permitir* ou *Perguntar*. Se você escolher *Permitir*, não será necessário dar permissão toda vez que visitar um novo site. Se você não tiver certeza, escolha *Perguntar* para conceder permissões para cada site individualmente.
 
 ![Configurações de extensão *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 

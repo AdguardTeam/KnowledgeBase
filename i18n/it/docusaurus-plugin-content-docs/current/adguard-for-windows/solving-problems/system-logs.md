@@ -11,7 +11,7 @@ Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunziona
 
 :::note
 
-I dati e/o i file forniti negli registri di sistema sono trattati in conformità con [l'Informativa sulla privacy di AdGuard](https://adguard.com/en/privacy.html).
+I dati e/o i file forniti nei registri sono trattati in conformità con la [politica di riservatezza AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 

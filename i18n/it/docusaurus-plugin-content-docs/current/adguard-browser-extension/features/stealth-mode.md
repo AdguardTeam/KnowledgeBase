@@ -1,5 +1,5 @@
 ---
-title: Protezione dal tracciamento (Modalità Invisibile)
+title: Protezione dal tracciamento (Modalità Invisibilità)
 sidebar_position: 3
 ---
 
@@ -9,11 +9,11 @@ Questo articolo riguarda l'Estensione di browser AdGuard, che protegge solo il t
 
 :::
 
-_La Modalità Invisibilità_ mira ad assicurare la protezione dei dati personali sensibili, da tracciatori e truffatori online.
+_La Modalità Invisibilità_ mira ad assicurare la protezione dei dati personali sensibili da tracciatori e truffatori in rete.
 
 ![Modalità Invisibilità \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
 
-In Modalità Invisibilità, puoi impedire a un sito web di visualizzare i tuoi quesiti di ricerca utilizzati per trovarlo su Internet, eliminare automaticamente i cookie di terze parti o del sito stesso, etc. A tutte queste caratteristiche è dedicato un [articolo separato](/general/stealth-mode).
+In Modalità Invisibilità, puoi impedire a un sito web di vedere i quesiti di ricerca usati per trovarlo in Internet, eliminare automaticamente i cookie di terze parti o del sito stesso, etc. A tutte queste caratteristiche è dedicato un [articolo separato](/general/stealth-mode).
 
 :::note
 

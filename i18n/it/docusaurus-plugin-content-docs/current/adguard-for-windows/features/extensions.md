@@ -33,7 +33,7 @@ AdGuard Extra è, essenzialmente, un microprogramma che modifica il funzionament
 
 **AdGuard Popup Blocker**
 
-Quest'estensione impedisce l'apertura delle finestre popup quando visualizzi le pagine web. Alcuni pop-up sono considerati utili: possono contenere impostazioni per l'amministrazione del sito o informazioni di riferimento aggiuntive mostrate facendo clic su un collegamento. Per questo, puoi disattivare il Blocco, se necessario. Quest'estensione non funziona neanche sui siti web aggiunti all'elenco di eccezioni di AdGuard. È disattivata di default, ma puoi attivarla nelle impostazioni dell'applicazione. Troverai delle informazioni più dettagliate su quest'estensione nella nostra Base di conoscenza.
+Quest'estensione impedisce l'apertura delle finestre popup quando visualizzi le pagine web. Some popups are considered useful — they may contain settings for site administering or additional reference information demonstrated upon clicking a link. Per questo, puoi disattivare il Blocco, se necessario. Quest'estensione non funziona neanche sui siti web aggiunti all'elenco di eccezioni di AdGuard. È disattivata di default, ma puoi attivarla nelle impostazioni dell'applicazione.
 
 **Web of Trust**
 

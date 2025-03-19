@@ -11,18 +11,18 @@ sidebar_position: 1
 
 ## 기능
 
-Main features and settings available in AdGuard for Mac
+Mac용 AdGuard의 주요 기능 및 설정
 
 [기능](/adguard-for-mac/features/features.md)
 
 ## 설치 방법
 
-Installation, removal, and system requirements for AdGuard for Mac
+Mac용 AdGuard의 설치, 제거 방법 및 시스템 요구 사항
 
 [설치](/adguard-for-mac/installation.md)
 
 ### 문제 해결
 
-Known issues and possible solutions
+알려진 문제 및 해결 방법
 
 [문제 해결](/adguard-for-mac/solving-problems/solving-problems.md)

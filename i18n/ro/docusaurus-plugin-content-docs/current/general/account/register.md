@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Ce este un cont AdGuard
 
-[Contul AdGuard](https://my.adguard.com/) este un cont de utilizator care stochează informații despre licențele și abonamentele AdGuard, dispozitivele active, istoricul achizițiilor, limba preferată și alte preferințe. Multe produse AdGuard oferă o opțiune de activare prin introducerea acreditivelor pentru contul dvs. AdGuard, cu condiția să conțină o licență validă.
+[AdGuard account](https://adguardaccount.com/) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. Multe produse AdGuard oferă o opțiune de activare prin introducerea acreditivelor pentru contul dvs. AdGuard, cu condiția să conțină o licență validă.
 
 ## Cum să creați un cont
 
@@ -29,4 +29,4 @@ After you've registered your account, you can use the *One-time code* option to 
 
 ## Cum să creați un cont printr-o rețea socială
 
-To create an account via a social network, simply follow the [link](https://auth.adguard.com/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.com/kb/general/account/features/).
+To create an account via a social network, simply follow the [link](https://auth.adguardaccount.com/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.com/kb/general/account/features/).

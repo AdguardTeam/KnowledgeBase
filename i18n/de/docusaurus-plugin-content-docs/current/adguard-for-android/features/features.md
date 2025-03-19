@@ -11,48 +11,54 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 ## Schutz
 
-Available settings in the _Protection_ tab: _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Firewall_, and _Browsing security_
+Verfügbare Einstellungen im Tab _Schutz_: _Sperren von Werbung_, _Tracking-Schutz_, _Belästigungsblockierung_, _DNS-Schutz_, _Firewall_ und _Internetsicherheit_
 
 [Schutz](/adguard-for-android/features/protection/protection.md)
 
 ## App-Verwaltung
 
-Features that allow you to customize traffic filtering and routing for each app
+Funktionen, mit denen Sie die Filterung und Weiterleitung des Datenverkehrs für jede App anpassen können
 
 [App-Verwaltung](/adguard-for-android/features/app-management.md)
 
 ## Statistiken
 
-Detailed statistics on blocked ads, trackers, and data usage
+Detaillierte Statistiken zu blockierten Anzeigen, Trackern und Datennutzung
 
 [Statistiken](/adguard-for-android/features/statistics.md)
 
 ## Einstellungen
 
-General, advanced, and low-level settings that let you select the language and theme, customize DNS protection, enable HTTPS filtering, and manage userscripts
+Allgemeine, erweiterte und Low-Level-Einstellungen, mit denen Sie die Sprache und das Design auswählen, den DNS-Schutz anpassen, die HTTPS-Filterung aktivieren und Benutzerskripte verwalten können
 
 [Einstellungen](/adguard-for-android/features/settings.md)
 
+## Low-Level-Einstellungen
+
+Descriptions of the low-level settings available in AdGuard v4.3 for Android and later.
+
+[Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
+
 ## Assistent
 
-A tool that lets you quickly change app or website settings and view statistics without opening the AdGuard interface
+Ein Tool, mit dem Sie App- oder Website-Einstellungen schnell ändern und Statistiken anzeigen können, ohne die AdGuard-Oberfläche zu öffnen
 
 [Assistent](/adguard-for-android/features/assistant.md)
 
 ## Kostenlose Version vs. Vollversion
 
-Comparison of features between the free and paid versions
+Vergleich der Funktionen zwischen der kostenlosen und der kostenpflichtigen Version
 
 [Kostenlose vs. Vollversion](/adguard-for-android/features/free-vs-full.mdx)
 
 ## Integration mit AdGuard VPN
 
-Integrated mode that allows AdGuard Ad Blocker and AdGuard VPN to run simultaneously despite system limitations
+Integrierter Modus, der die gleichzeitige Ausführung von AdGuard Werbeblocker und AdGuard VPN trotz Systembeschränkungen ermöglicht
 
 [Integration mit AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
 
 ## Gerootete Geräte
 
-Features available in AdGuard for Android on rooted devices: HTTPS filtering in all apps, _Automatic proxy_ and _Manual proxy_ modes
+Funktionen, die in AdGuard für Android auf gerooteten Geräten verfügbar sind: HTTPS-Filterung in allen Apps, _Automatischer Proxy_ und _Manueller Proxy_
 
 [Gerootete Geräte](/adguard-for-android/features/rooted.md)

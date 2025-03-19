@@ -31,7 +31,7 @@ _Nivel de registro_ define qué datos sobre el funcionamiento de la aplicación 
 
 ![Avanzado \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-La sección _Configuración de bajo nivel_ es para usuarios expertos. [Más información sobre la configuración de bajo nivel](/adguard-for-android/solving-problems/low-level-settings/)
+La sección _Configuración de bajo nivel_ es para usuarios expertos. [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
 
 Configuración de bajo nivel \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 

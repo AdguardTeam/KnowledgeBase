@@ -31,7 +31,7 @@ sidebar_position: 4
 
 ![Advanced \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-「低级设置」部分适用于专家用户。 [了解有关低级设置的更多信息](/adguard-for-android/solving-problems/low-level-settings/)
+「低级设置」部分适用于专家用户。 [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
 
 ![Low-level settings \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 

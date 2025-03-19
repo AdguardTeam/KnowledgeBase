@@ -23,7 +23,7 @@ sidebar_position: 2
 
 ### 광고 차단기
 
-광고 차단기는 사용자가 방문하는 웹사이트와 앱에서 광고를 제거하는 Windows용 AdGuard의 메인 모듈입니다. 배너, 팝업 또는 트래커와 같은 광고 및 개인 정보를 위협하는 콘텐츠를 필터링하기 위해 AdGuard는 다양한 필터([특수 구문](/general/ad-filtering/create-own-filters)으로 작성된 유사한 목적을 가진 규칙 그룹)를 사용합니다. 필터가 무엇인지, 어떻게 작동하는지 이해하려면 [이글](/general/ad-filtering/how-ad-blocking-works)을 참조하세요.
+광고 차단기는 사용자가 방문하는 웹사이트와 앱에서 광고를 제거하는 Windows용 AdGuard의 메인 모듈입니다. 배너, 팝업 또는 추적기와 같은 광고 및 개인정보를 위협하는 콘텐츠를 필터링하기 위해 AdGuard는 다양한 필터([특수 구문](/general/ad-filtering/create-own-filters)으로 작성된 유사한 목적을 가진 규칙 그룹)를 사용합니다. 필터가 무엇인지, 어떻게 작동하는지 이해하려면 [이글](/general/ad-filtering/how-ad-blocking-works)을 참조하세요.
 
 ![광고 차단기 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
@@ -70,31 +70,31 @@ DNS 보호 설정을 살펴봐야 하는 세 가지 중요한 이유가 있습�
 
 ![DNS 보호 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
 
-In the DNS protection module of AdGuard for Windows, you can choose DNS servers from known DNS providers, including AdGuard DNS, which blocks ads and trackers, AdGuard DNS Family Protection, which also blocks adult content, or AdGuard DNS Non-filtering, which provides a secure and reliable connection but doesn’t filter anything. You can even add custom DNS servers and rules using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). If necessary, you can add [DNS filters of your choice](https://filterlists.com).
+Windows용 AdGuard의 DNS 보호 모듈에서 광고 및 추적기를 차단하는 AdGuard DNS, 성인 콘텐츠도 차단하는 AdGuard DNS 가족 보호 또는 안전하고 안정적인 연결을 제공하지만 아무것도 필터링하지 않는 AdGuard DNS 비필터링 등 알려진 DNS 제공업체의 DNS 서버를 선택할 수 있습니다. [DNS 규칙 구문](https://adguard-dns.io/kb/general/dns-filtering-syntax/)을 사용하여 사용자 정의 DNS 서버와 규칙을 추가할 수도 있습니다. 필요한 경우 [원하는 DNS 필터](https://filterlists.com)를 추가할 수 있습니다.
 
-Starting with v7.20, you can also add filters by simply selecting them from a list of pre-built, trusted filters. They are grouped into four categories for your convenience:
+v7.20부터는 미리 구축된 신뢰할 수 있는 필터 목록에서 필터를 선택하기만 하면 필터를 추가할 수도 있습니다. 사용자의 편의를 위해 네 가지 카테고리로 분류했습니다.
 
-- **General**: block ads and trackers
-- **Regional**: block ads and trackers on language-specific websites
-- **Security**: block phishing and unreliable websites
-- **Other**: cover special use cases that don’t fit into the above categories
+- **일반**: 광고 및 추적기 차단
+- **지역**: 언어별 웹사이트의 광고 및 추적기 차단
+- **보안**: 피싱 및 신뢰할 수 없는 웹사이트 차단
+- **기타**: 위의 범주에 속하지 않는 특수한 사용 사례 차단
 
-![DNS filters \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
+![DNS 필터링 \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
 
-### Parental Control
+### 자녀 보호
 
-There are several websites to which access should be restricted from a PC used by children. This task is accomplished by Parental Control.
+자녀가 사용하는 컴퓨터에서 액세스하지 못하도록 제한해야 하는 사이트가 몇 가지 있습니다. 이 작업은 자녀 보호 기능을 통해 수행됩니다.
 
-![Parental Control \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
+![자녀 보호 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
-The module checks the contents of web pages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental Control settings are password-protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results.
+이 모듈은 브라우저에서 열린 웹페이지의 콘텐츠를 확인하고 성인용 이미지 및 텍스트, 거친 언어, 폭력, 마약 선전 등 어린이에게 바람직하지 않은 콘텐츠가 포함된 웹페이지를 필터링합니다. 자녀 보호 설정은 자녀가 제한을 우회할 수 없도록 비밀번호로 보호됩니다. 이 모듈은 원치 않는 사이트로 연결되는 경로를 차단할 뿐만 아니라 검색 결과에서 어린이에게 부적절한 링크를 삭제할 수도 있습니다.
 
-In the _Parental Control_ module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. You can also check the _Block executable files download_ box to prevent your child from downloading and installing software on the computer. There are two more options in the _Parental Control_ module: you can select a specific Windows user to be protected by _Parental Control_ and set a password to protect AdGuard settings from change.
+**자녀 보호** 모듈에서 **안전 검색**을 활성화하고 **차단 목록** 및 **허용 목록**을 관리하여 이 옵션의 작동 방식을 사용자 지정할 수 있습니다. 자녀가 컴퓨터에 소프트웨어를 다운로드하고 설치하지 못하도록 **실행 파일 다운로드 차단** 확인란을 선택할 수도 있습니다. **자녀 보호** 모듈에서 **자녀 보호 기능**으로 보호할 특정 Windows 사용자를 선택하고 AdGuard 설정을 변경하지 못하도록 보호할 암호를 설정할 수 있습니다.
 
-![Parental Control \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
+![자녀 보호 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
 ### 브라우저 어시스턴트
 
-![Browser Assistant \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![브라우저 어시스턴트 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
-From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](/adguard-for-windows/browser-assistant.md).
+이 탭에서 브라우저에서 직접 필터링을 관리하는 주요 기능인 AdGuard 브라우저 어시스턴트 설치를 쉽게 진행할 수 있습니다. 사용 중인 브라우저에 브라우저 어시스턴트가 없는 경우, 어떻게 해야 하는지 [별도 문서](/adguard-for-windows/browser-assistant.md)에서 자세히 설명했습니다.

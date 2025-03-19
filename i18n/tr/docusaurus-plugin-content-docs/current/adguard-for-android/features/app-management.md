@@ -20,11 +20,11 @@ Bir uygulamaya dokunarak ayarlarını yönetebilirsiniz:
 - Filter its HTTPS traffic (for non-browser apps, it requires [installing AdGuard's CA certificate into the system store](/adguard-for-android/solving-problems/https-certificate-for-rooted/), available on rooted devices)
 - Route it through your specified proxy server or AdGuard VPN in the Integration mode
 
-![App management in Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![App management: Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
 Bağlam menüsünden uygulamanın istatistiklerine de erişebilirsiniz.
 
-![App management in Chrome. Context menu \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![Uygulama yönetimi: Chrome Bağlam menüsü \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
 ### “Problem-free” and “problematic” apps
 

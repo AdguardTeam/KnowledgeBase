@@ -238,7 +238,7 @@ AdGuard Content Blocker — это расширение для браузеро�
 
 ##### Ограничения косметических правил
 
-- Ограничения для указания доменов такие же, как и у модификатора базовых правил `$domain`.
+- Specifying domains is subject to the same limitations as the `$domain` modifier of basic rules.
 
 - [Небазовые модификаторы правил](#non-basic-rules-modifiers) поддерживаются с некоторыми ограничениями:
 
@@ -252,7 +252,7 @@ Safari Converter полностью поддерживает как [прави�
 
 :::warning
 
-Правила скриптлетов **очень важно** запускать как можно раньше после загрузки страницы. Причина в том, что их важно запустить раньше, чем скрипты страницы. К сожалению, в Safari всегда будет небольшая задержка, которая может снизить качество блокировки.
+For scriptlet rules, it is **very important** that they are run as early as possible when the page loads. The reason for that is that it's important to run them before the page scripts. К сожалению, в Safari всегда будет небольшая задержка, которая может снизить качество блокировки.
 
 :::
 
@@ -617,7 +617,7 @@ h_value = string / regexp
 :::caution Ограничения
 
 1. Модификатор `$header` может быть сопоставлен, только когда заголовки получены. Если запрос блокируется или перенаправляется на более ранней стадии, модификатор не может быть применён.
-1. В браузерном расширении AdGuard модификатор `$header` совместим только с [`$csp`](#csp-modifier), [`$removeheader`](#removeheader-modifier), [`$important`](#important-modifier) и [`$badfilter`](#badfilter-modifier).
+1. In AdGuard Browser Extension, the `$header` modifier is only compatible with [`$csp`](#csp-modifier), [`$removeheader`](#removeheader-modifier), [`$important`](#important-modifier), and [`$badfilter`](#badfilter-modifier).
 
 :::
 
@@ -917,7 +917,7 @@ AdGuard для Windows, Mac и Android часто не может точно о�
 
 #### **`$script`** {#script-modifier}
 
-Правило соответствет запросам к файлам скриптов, например, javascript или vbscript.
+The rule corresponds to script requests, e.g. JavaScript, VBScript.
 
 #### **`$stylesheet`** {#stylesheet-modifier}
 
@@ -944,7 +944,7 @@ AdGuard для Windows, Mac и Android часто не может точно о�
 
 :::
 
-##### Ограничения модификатора `$subdocument` {#subdocument-modifier-limitations}
+##### `$subdocument` modifier limitations {#subdocument-modifier-limitations}
 
 :::caution Ограничения
 
@@ -978,7 +978,7 @@ AdGuard для Windows, Mac и Android часто не может точно о�
 
 #### **`$xmlhttprequest`** {#xmlhttprequest-modifier}
 
-Правило применяется только к ajax-запросам (запросам, отправленным через объект JavaScript `XMLHttpRequest`).
+The rule applies only to ajax requests (requests sent via the JavaScript object `XMLHttpRequest`).
 
 :::note
 
@@ -1044,6 +1044,21 @@ AdGuard для Windows, Mac и Android часто не может точно о�
 - ✅ — полностью поддерживается
 - ✅ * — поддерживается, но надёжность может быть разной или могут возникнуть ограничения; ознакомьтесь с описанием модификатора для получения подробной информации
 - ❌ — не поддерживается
+
+:::
+
+:::info
+
+By default, without specifying additional content type modifiers, exception rule modifiers override other basic rules only for main frame document requests (see [`$document`](#document-modifier) for more information about main frame document).
+
+Например:
+
+- The website `example.com` contains an `iframe` pointing to `example1.com`.
+- The rule `#%#//console.log('test')` is applied.
+
+In this case, the log will appear twice in the console: once for the main frame document and once for `iframe`.
+
+If you add the `@@||example.com^$jsinject` rule, the log will appear only once for `iframe`.
 
 :::
 
@@ -1548,7 +1563,7 @@ $cookie [= name[; maxAge = seconds [; sameSite = strategy ]]]
 
 **Исключения**
 
-Базовые URL-исключения не должны отключать правила с модификатором `$hls`. Отключить их можно следующим образом:
+Basic URL exceptions shall not disable rules with the `$hls` modifier. Отключить их можно следующим образом:
 
 - `@@||example.org^$hls` отключает все правила `$hls` для ответов от URL-адресов, соответствующих `||example.org^ URL`.
 - `@@||example.org^$hls=text` отключает все правила `$hls`, у которых значение модификатора `$hls` равно `text`, для ответов с URL-адресов, соответствующих `||example.org^ URL`.
@@ -2428,7 +2443,7 @@ AdGuard использует тот же синтаксис правил фил�
     - `transfer-encoding`
     - `upgrade`
 
-1. Правила `$removeheader` совместимы только с `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case` и [модификаторами типа контента](#content-type-modifiers), такими как `$script` и `$stylesheet`. Правила с другими модификаторами считаются некорректными и не будут применены.
+1. `$removeheader` rules are only compatible with `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and [content-type modifiers](#content-type-modifiers) such as `$script` and `$stylesheet`. Правила с другими модификаторами считаются некорректными и не будут применены.
 
 :::
 
@@ -2961,7 +2976,7 @@ urltransform = "/" regexp "/" replacement "/" modifiers
 
 Наличие любых модификаторов content-type добавляет `(50 + 50 / N)`, где `N` — количество модификаторов, например: `||example.com^$image,script` добавит `50 + 50 / 2 = 50 + 25 = 75` к общему весу правила.
 
-Код `$all` также относится к этой категории, поскольку он неявно добавляет все модификаторы типа содержимого, например, `$document,subdocument,image,script,media,<и т.д.>` + `$popup`.
+The `$all` also belongs to this category, because it implicitly adds all content-type modifiers, e.g., `$document,subdocument,image,script,media,<etc>` + `$popup`.
 
 К этой категории относится и `$popup`, так как в нём неявно добавляется модификатор `$document`. Аналогично, конкретные исключения добавляют `$document,subdocument`.
 
@@ -3013,11 +3028,11 @@ urltransform = "/" regexp "/" replacement "/" modifiers
 
 #### Правила, для которых нет веса приоритета {#priority-category-extra}
 
-[Прочие модификаторы](#advanced-capabilities), которые должны выполнять дополнительную пост- или предобработку запросов, ничего не добавляют к приоритету правил.
+[Other modifiers](#advanced-capabilities), which are supposed to perform additional post- or pre-processing of requests, do not add anything to the rule priority.
 
 :::note
 
-Модификатор [`$replace`](#replace-modifier) имеет приоритет над всеми блокирующими правилами категорий 1–3, а также над правилами исключений из категорий 3–5, **, кроме** [`$content`](#content-modifier), поскольку исключение с модификатором `$content` отменяет все правила `$replace`.
+The [`$replace`](#replace-modifier) modifier takes precedence over all blocking rules of categories 1–3, as well as exception rules from categories 3–5, **except** [`$content`](#content-modifier), because an exception with the `$content` modifier overrides all `$replace` rules.
 
 :::
 
@@ -3902,7 +3917,7 @@ div[class]:has(> a > img) { remove: true; }
 
 **В AdGuard для Windows, Mac и Android** мы используем таблицу стилей, встроенную в страницу. Приоритет у косметических правил такой же, как и у любых других таблиц стилей CSS на сайтах. Но есть ограничение: [правила скрытия элементов](#cosmetic-elemhide-rules) и [CSS-правила](#cosmetic-css-rules) не могут обходить встроенные стили. В таких случаях рекомендуется использовать расширенные селекторы или HTML-фильтрацию.
 
-**В Браузерном расширении AdGuard** используются так называемые «пользовательские таблицы стилей». Их приоритет выше, даже чем у встроенных стилей.
+**In AdGuard Browser Extension**, the so-called "user stylesheets" are used. Их приоритет выше, даже чем у встроенных стилей.
 
 **Расширенные CSS-селекторы** используют для работы JavaScript и добавляют встроенные стили сами, поэтому могут игнорировать любой стиль.
 
@@ -3995,7 +4010,7 @@ $$script[tag-content="banner"]
 
 :::
 
-Этот специальный атрибут работает почти как `tag-content` и позволяет проверить внутренний HTML-код документа. Правило проверит, удовлетворяет ли HTML-код элемента заданному [шаблону поиска](https://ru.wikipedia.org/wiki/Шаблон_поиска).
+Этот специальный атрибут работает почти как `tag-content` и позволяет проверить внутренний HTML-код документа. Rule will check if HTML code of the element fits the [search pattern](https://en.wikipedia.org/wiki/Glob_(programming)).
 
 Вы должны использовать `""`, чтобы избежать `"`, например: `$$script[wildcard=""banner""]`
 
@@ -4142,7 +4157,7 @@ rule = [domains] "#%#" script
 
 **Исключения**
 
-По аналогии с правилами скрытия, существует специальный тип правил, отключающий действие выбранного javascript-правила фильтрации для определённых доменов. Синтаксис правил-исключений такой же, только маркер `#%#` заменяется на `#@%#`.
+Similar to hiding rules, there is a special type of rules that disable the selected JavaScript rule for particular domains. Синтаксис правил-исключений такой же, только маркер `#%#` заменяется на `#@%#`.
 
 Например, в фильтре есть правило:
 
@@ -4193,7 +4208,7 @@ AdGuard поддерживает множество различных скри�
 ```
 
 - `domains` — опционально, список доменов, к которым должно применяться правило;
-- `scriptletName` — обязательно, имя скриптлета из библиотеки AdGuard Scriptlets;
+- `name` — required, a name of the scriptlet from the AdGuard Scriptlets library;
 - `arguments` — опционально, список аргументов в формате `string` (другие типы аргументов не поддерживаются).
 
 **Примеры**
@@ -4376,7 +4391,7 @@ modifiers = modifier0[, modifier1[, ...[, modifierN]]]
 
 :::info Совместимость
 
-Такие правила с модификатором `$domain` поддерживаются AdGuard для Windows, AdGuard для Mac, AdGuard для Android, Браузерным расширением AdGuard для Chrome, Chrome MV3, Firefox и Edge.
+Such rules with `$domain` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard Browser Extension for Chrome, Chrome MV3, Firefox, and Edge.
 
 :::
 
@@ -4872,7 +4887,7 @@ ExtendedCss.query(selector);
 ### Краткие обозначения продуктов {#what-product}
 
 1. `CoreLibs apps` — [AdGuard для Windows](/adguard-for-windows/features/home-screen), [AdGuard для Mac](/adguard-for-mac/features/main) и [AdGuard для Android](/adguard-for-android/features/protection/ad-blocking)
-1. `AdGuard для Chromium` — [Браузерное расширение AdGuard](/adguard-browser-extension/availability) для Chrome и других браузеров на основе Chromium, таких как Microsoft Edge, Opera
+1. `AdGuard for Chromium` — [AdGuard Browser Extension](/adguard-browser-extension/availability) for Chrome and other Chromium-based browsers such as Microsoft Edge and Opera
 1. `AdGuard для Chrome MV3` — [Браузерное расширение AdGuard для Chrome MV3](/adguard-browser-extension/mv3-version)
 1. `AdGuard для Firefox` — [Браузерное расширение AdGuard](/adguard-browser-extension/availability) для Firefox
 1. `AdGuard для iOS` — [AdGuard для iOS](/adguard-for-ios/features/safari-protection) и AdGuard Pro для iOS (для мобильного браузера Safari)

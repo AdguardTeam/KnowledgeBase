@@ -1,34 +1,34 @@
 ---
-title: Funzionalità
+title: Funzioni
 sidebar_position: 1
 ---
 
 :::info
 
-Questo articolo riguarda l'Estensione di browser AdGuard, che protegge solo il tuo browser. Per proteggere l'intero dispositivo, [scarica l'app AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda l'estensione per browser di AdGuard, che protegge solo il tuo browser. Per proteggere l'intero dispositivo, [scarica l'app AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Menu principale
+## Menu' principale
 
 Il popup principale da cui puoi accedere alle impostazioni, al registro di filtraggio e alle statistiche, e segnalare problemi
 
-[Menu prinicpale](/adguard-browser-extension/features/main-menu.md)
+[Menu' prinicpale](/adguard-browser-extension/features/main-menu.md)
 
 ## Filtri
 
-Filters and user rules to fine-tune ad blocking
+Filtri e regole utente per ottimizzare il blocco delle inserzioni
 
 [Filtri](/adguard-browser-extension/features/filters.md)
 
 ## Protezione dal tracciamento (Modalità Invisibile)
 
-Settings to block cookies, UTM tags, and online analytics that collect user information
+Impostazioni per bloccare cookie, tag UTM e le analisi in rete che raccolgono informazioni sugli utenti
 
 [Protezione dal Tracciamento (Modalità Invisibile)](/adguard-browser-extension/features/stealth-mode.md)
 
-## Altre funzionalità e opzioni
+## Altre funzioni e opzioni
 
-General and additional settings, links to privacy documents and the repository
+Impostazioni generali e aggiuntive, collegamenti ai documenti sulla riservatezza e al repository
 
-[Altre funzionalità e opzioni(/adguard-browser-extension/features/other-features.md)
+[Altre funzioni e opzioni(/adguard-browser-extension/features/other-features.md)

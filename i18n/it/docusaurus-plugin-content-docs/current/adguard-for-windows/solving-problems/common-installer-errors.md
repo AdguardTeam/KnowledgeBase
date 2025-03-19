@@ -38,10 +38,10 @@ Si potrebbe dire che questa è una sottocategoria particolare dell'errore 1603. 
 - Start and re-register Microsoft Installer service. It requires some work.
 
     - Press *Win + R* and enter **services.msc**.
-    - Find in the list and double click *Windows Installer*.
+    - Find in the list and double-click *Windows Installer*.
     - Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
-    - Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*.
-    - Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    - Press *Win + R*, type ***msiexec /unregister***, and hit *Enter*.
+    - Press *Win + R* again, type ***msiexec /regserver***, and hit *Enter*
 
 - Riavvia il PC e ricomincia l'installazione. Talvolta, ciò è sufficiente per risolvere il problema.
 
@@ -68,10 +68,10 @@ L'errore sembra più spaventoso di quanto non sia in realtà. Infatti, questo è
 - Start and re-register Microsoft Installer service. It requires some work.
 
     - Press *Win + R* and enter ***services.msc***.
-    - Find in the list and double click *Windows Installer*.
+    - Find in the list and double-click *Windows Installer*.
     - Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
-    - Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*.
-    - Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    - Press *Win + R*, type ***msiexec /unregister***, and hit *Enter*.
+    - Press *Win + R* again, type ***msiexec /regserver***, and hit *Enter*
 
 - Acquire full permissions on the drive for installation. It is possible that the error 1603 occurs because you don’t have full permissions on the file location. It's also not as easy as some of the other solutions:
 

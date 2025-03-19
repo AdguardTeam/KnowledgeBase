@@ -16,7 +16,6 @@ Im Folgenden finden Sie einige Probleme, auf die Sie stoßen könnten, sowie Abh
 - [So automatisieren Sie AdGuard für Android](/adguard-for-android/solving-problems/tasker.md)
 - [So erstellen Sie Systemprotokolle](/adguard-for-android/solving-problems/logcat.md)
 - [So erzeugen Sie HAR-Dateien](/adguard-for-android/solving-problems/har.md)
-- [Leitfaden zu den low-level Einstellungen](/adguard-for-android/solving-problems/low-level-settings.md)
 - [So blockieren Sie Werbung in der YouTube-App](adguard-for-android/solving-problems/youtube-ads.md)
 - [So richten Sie einen ausgehenden Proxy ein](/adguard-for-android/solving-problems/outbound-proxy.md)
 - [Einrichten des AdGuard-Hintergrundbetriebs](/adguard-for-android/solving-problems/background-work.md)

@@ -1,5 +1,5 @@
 ---
-title: Tracking protection (Stealth Mode)
+title: 추적 보호(스텔스 모드)
 sidebar_position: 3
 ---
 

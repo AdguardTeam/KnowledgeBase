@@ -37,7 +37,7 @@ Katkıda bulunmanın karşılığı olarak, en fazla 5 yıl geçerli olan lisans
 
 > Merhaba, AdGuard ekibi!
 > 
-> Android için AdGuard'da 5.000'den fazla kelimeyi (*sizin dilinizde*) çevirdim — istatistiklerimi ekte bulabilirsiniz. Bunun için bir AdGuard VPN lisansı ve bir Reklam Engelleyici lisansı talep etmek istiyorum. E-postam (*e-posta adresiniz*). Crowdin kullanıcı adım (*kullanıcı adınız*).
+> Android için AdGuard'da 5.000'den fazla kelimeyi (*sizin dilinizde*) çevirdim — istatistiklerimi ekte bulabilirsiniz. As a reward, I’d like to request an AdGuard VPN license and an Ad Blocker license My email is (*your email address*). My Crowdin username is (*your username*).
 
 ## Çeviri ilerlemenizi nasıl kontrol edebilirsiniz
 

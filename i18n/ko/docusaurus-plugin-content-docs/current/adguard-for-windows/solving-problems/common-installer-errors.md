@@ -35,13 +35,13 @@ sidebar_position: 6
 
 이것은 오류 1603의 특정 하위 범주라고 할 수 있습니다. 가능한 해결책은 비슷합니다:
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- Microsoft 설치 관리자 서비스를 시작하고 다시 등록합니다. 다음 단계를 따르세요.
 
-    - Press *Win + R* and enter **services.msc**.
-    - Find in the list and double click *Windows Installer*.
-    - Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
-    - Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*.
-    - Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    - *Win + R* 를 누르고 **services.msc**를 입력합니다.
+    - 목록에서 *Windows 설치 프로그램*을 찾아 두 번 클릭합니다.
+    - *서비스 상태* 아래의 *시작* 버튼을 누르고 *확인*을 선택합니다. 서비스 상태가 **실행 중**이면 먼저 *중지* 를 클릭한 다음 *시작*을 클릭해야 합니다.
+    - *Win + R*을 누르고 ***msiexec /unregister***를 입력한 다음 *Enter* 키를 누릅니다.
+    - *Win + R*를 다시 누르고 ***msiexec /regserver***를 입력하고 *Enter*를 누릅니다.
 
 - PC를 재부팅하고 설치를 처음부터 다시 시작하세요. 때로는 그것만으로도 문제를 해결할 수 있습니다.
 
@@ -65,25 +65,25 @@ sidebar_position: 6
 
 - 전용 [제거 도구를](../../installation#advanced) 사용하여 AdGuard를 제거한 다음 설치를 반복하세요.
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- Microsoft 설치 관리자 서비스를 시작하고 다시 등록합니다. 다음 단계를 따르세요.
 
-    - Press *Win + R* and enter ***services.msc***.
-    - Find in the list and double click *Windows Installer*.
-    - Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
-    - Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*.
-    - Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    - *Win + R*를 누르고 ***services.msc***를 입력합니다.
+    - 목록에서 *Windows 설치 프로그램*을 찾아 두 번 클릭합니다.
+    - *서비스 상태* 아래의 *시작* 버튼을 누르고 *확인*을 선택합니다. 서비스 상태가 **실행 중**이면 먼저 *중지* 를 클릭한 다음 *시작*을 클릭해야 합니다.
+    - *Win + R*을 누르고 ***msiexec /unregister***를 입력한 다음 *Enter* 키를 누릅니다.
+    - *Win + R*를 다시 누르고 ***msiexec /regserver***를 입력하고 *Enter*를 누릅니다.
 
-- Acquire full permissions on the drive for installation. It is possible that the error 1603 occurs because you don’t have full permissions on the file location. It's also not as easy as some of the other solutions:
+- 설치를 위해 드라이브에 대한 전체 권한을 획득합니다. 파일 위치에 대한 전체 권한이 없기 때문에 오류 1603이 발생할 수 있습니다. 또한 다른 솔루션들처럼 쉬운 것이 아닙니다.
 
-    - Open *File Explorer*, right-click the drive containing the installation location and select *Properties*.
-    - Go to *Security* tab and click *Edit*.
-    - Single-click *SYSTEM* and ensure that the *Allow* box of every item in *Permissions for SYSTEM* is checked (if it is checkable). Do the same check for *Administrators*.
-    - Click *OK* to go back to *Properties* dialog. Then click *Advanced*.
-    - Click *Change Permissions*.
-    - On *Permissions* tab, double-click *Administrators*.
-    - Select *This folder, subfolders and files* for *Applies to* field and check all the available *Basic permissions*. After that, hit *OK*.
-    - Do the same operation above (from item 7) for *SYSTEM*.
-    - Click *OK* all the way out. Try installing AdGuard again.
+    - *파일 탐색기*를 열고, 설치 위치가 있는 드라이브를 우클릭한 다음, *속성*을 선택합니다.
+    - *보안* 탭으로 이동하여 *편집*을 클릭합니다.
+    - *시스템*을 한 번 클릭하고 *시스템 권한*에 있는 모든 항목의 *허용* 상자가 선택되어 있는지 확인합니다(선택 가능한 경우). *관리자에* 대해서도 동일한 확인을 수행합니다.
+    - *OK*를 클릭하여 *속성* 대화 상자로 돌아갑니다. 그런 다음 *고급*을 클릭합니다.
+    - *권한 변경*을 클릭합니다.
+    - *권한* 탭에서 *관리자*를 두 번 클릭합니다.
+    - *적용 대상* 필드에서 *이 폴더, 하위 폴더 및 파일*을 선택하고 사용 가능한 모든 *기본 권한*을 확인합니다. 그런 다음 *OK*를 누릅니다.
+    - *시스템*에 대해서도 위와 같은 작업(항목 7부터)을 수행합니다.
+    - *OK*를 끝까지 클릭합니다. AdGuard를 다시 설치해 보세요.
 
 ### 오류 1618: 다른 설치가 이미 진행 중입니다. {#error-1618}
 

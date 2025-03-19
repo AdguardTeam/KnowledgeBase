@@ -31,7 +31,7 @@ Die _Protokollierungsebene_ legt fest, welche Daten über die Funktion der App p
 
 ![Erweitert \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-Der Abschnitt _Low-Level-Einstellungen_ ist für erfahrene Benutzer:innen gedacht. [Weitere Informationen über Low-Level-Einstellungen](/adguard-for-android/solving-problems/low-level-settings/)
+Der Abschnitt _Low-Level-Einstellungen_ ist für erfahrene Benutzer:innen gedacht. [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
 
 ![Low-Level-Einstellungen \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 

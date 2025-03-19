@@ -3,7 +3,7 @@ title: What is an AdGuard license?
 sidebar_position: 1
 ---
 
-ライセンスとは、[利用許諾契約（EULA）](https://adguard.com/eula.html)に基づいて提供されるAdGuard製品の使用許可です。 AdGuardライセンスがメールアドレスにバインド（紐付け）されている場合、[AdGuard アカウント](https://my.adguard.com/)でお持ちのライセンスを確認できます。
+ライセンスとは、[利用許諾契約（EULA）](https://adguard.com/eula.html)に基づいて提供されるAdGuard製品の使用許可です。 If bound to an email address, AdGuard licenses can be found in the user's [AdGuard account](https://adguardaccount.com/).
 
 ## AdGuard ライセンスの種類
 
@@ -35,7 +35,7 @@ sidebar_position: 1
 
 ## AdGuard ライセンスの使用方法
 
-ライセンスをデバイスで使用するには、ライセンスに関連付けられているメールアドレスを使用して AdGuard アプリにログインします。 ライセンスがまだメールアドレスにバインド（紐付け）されていない場合は、[AdGuardアカウント](https://my.adguard.com/)でバインドできます。 これを行うには、AdGuardアカウントで「*ライセンス*」画面を開き、「*ライセンスを紐付けする*」をクリックします。
+ライセンスをデバイスで使用するには、ライセンスに関連付けられているメールアドレスを使用して AdGuard アプリにログインします。 If the license hasn't been bound to your email address yet, you can do it in your [AdGuard account](https://adguardaccount.com/). これを行うには、AdGuardアカウントで「*ライセンス*」画面を開き、「*ライセンスを紐付けする*」をクリックします。
 
 または、AdGuard アプリに[ライセンスキー](#license-key)を直接入力するというライセンス使用方法もあります。
 
