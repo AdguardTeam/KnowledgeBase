@@ -3,7 +3,7 @@ title: Režim utajení (Ochrana před sledováním)
 sidebar_position: 4
 ---
 
-Mnoho webových stránek shromažďuje informace o svých návštěvnících, například jejich IP adresu, nainstalovaný prohlížeč a operační systém, rozlišení obrazovky a dokonce i stránku, ze které byl návštěvník přesměrován. Některé webové stránky používají soubory cookies k označení prohlížeče a uložení vašich osobních nastavení, uživatelských preferencí nebo k vašemu "rozpoznání" při příští návštěvě. *Režim utajení* (nebo *ochrana před sledováním* v aplikacích AdGuard pro Windows a Rozšíření prohlížeče AdGuard) chrání vaše osobní údaje před takovými systémy shromažďujícími data a statistiky.
+Mnoho webových stránek shromažďuje informace o svých návštěvnících, například jejich IP adresu, nainstalovaný prohlížeč a operační systém, rozlišení obrazovky a dokonce i stránku, ze které byl návštěvník přesměrován. Některé webové stránky používají soubory cookies k označení prohlížeče a uložení vašich osobních nastavení, uživatelských preferencí nebo k vašemu "rozpoznání" při příští návštěvě. *Ochrana před sledováním* chrání vaše osobní údaje před takovými systémy shromažďujícími data a statistiky.
 
 Práci Režimu utajení můžete flexibilně upravit: můžete například zakázat webové stránce přijímat požadavky na vyhledávání, které jste použili k jejímu nalezení na internetu, automaticky odstranit soubory cookies třetích stran i vlastní soubory cookies webové stránky, vypnout sdílení zeměpisné polohy prohlížeče, které lze použít ke sledování vaší polohy a skrýt svou skutečnou IP adresu nebo ji dokonce nahradit libovolnou adresou.
 
@@ -95,7 +95,7 @@ Můžete také nastavit libovolnou hodnotu pro referenční ID zadáním do pole
 
 Všimněte si, že aby bylo možné filtrovat provoz, aplikace AdGuard "zachycují" požadavky prohlížeče na server. Požadavky na reklamní, sledovací a phishingové servery mohou být před odesláním na server změněny nebo zcela zablokovány. Totéž platí pro možnost *Skrýt třetím stranám referenční ID*: AdGuard zachycuje požadavky HTTP(S) zejména za účelem odstranění nebo změny hlavičky referenčního ID, pokud je tato možnost povolena. K tomu však dochází až poté, co tyto požadavky "opustí" prohlížeč. To znamená, že pokud sledujete referenční ID v prohlížeči (například pomocí vývojářských nástrojů Chrome), uvidíte původní referenční ID, protože požadavek ještě nedorazil do AdGuardu. Můžete použít software jako [Fiddler](https://www.telerik.com/fiddler), abyste se ujistili, že referenční ID bude změněno správně.
 
-Naopak, vzhledem k povaze všech rozšíření prohlížeče funguje Rozšíření prohlížeče AdGuard "uvnitř" prohlížeče. Hned na místě změní referenční ID, takže nástroje pro vývojáře budou zobrazovat požadované referenční ID pro vaše požadavky.
+Vzhledem k povaze všech rozšíření prohlížeče funguje Rozšíření prohlížeče AdGuard "uvnitř" prohlížeče. Hned na místě změní referenční ID, takže nástroje pro vývojáře budou zobrazovat požadované referenční ID pro vaše požadavky.
 
 ### Skrýt User-Agent {#useragent}
 

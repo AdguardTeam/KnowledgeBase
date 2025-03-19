@@ -73,7 +73,7 @@ Sinon, AdGuard effectuera le filtrage de tout le trafic en temps réel, sans red
 
 ### Afficher la fenêtre principale au démarrage du système
 
-Activez cette option pour ouvrir la fenêtre principale d'AdGuard après le chargement du système. Notez que cela n'affecte pas le lancement ou non du service de filtrage réel, ce paramètre se situe dans *Paramètres → Mode général*.
+Activez cette option pour ouvrir la fenêtre principale d'AdGuard après le chargement du système. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in *Settings → General Settings*.
 
 ### Activer le filtrage au démarrage du système
 

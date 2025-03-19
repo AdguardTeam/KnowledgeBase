@@ -27,11 +27,11 @@ Dacă ar fi ușor, HTTPS nu ar fi atât de sigur. Când un browser încearcă s�
 
 Pentru o mai bună înțelegere, am reprezentat acest proces:
 
-![Cum funcționează filtrarea HTTPS](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
+![How HTTPS filtering works](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
 ### Traficul meu rămâne criptat și sigur?
 
-Desigur! Conexiunea ta cu un server la distanță rămâne criptată și sigură. AdGuard, la fel ca browserul tău, verifică certificatul serverului înainte de a decide dacă să-l filtreze sau nu.
+Desigur! Conexiunea ta cu un server la distanță rămâne criptată și sigură. AdGuard, just like a browser, checks the server’s certificate before determining if the connection should be filtered or not.
 
 Cu toate acestea, filtrarea HTTPS are dezavantajele sale. Cel mai important este că ascunde de browser certificatul real al site-ului. În schimb, browserul vede certificatul emis de AdGuard.
 
@@ -51,7 +51,7 @@ Un certificat EV oferă un nivel mai înalt de securitate și oferă mai multe g
 
 ### Probleme legate de filtrarea HTTPS
 
-Un [studiu din 2017](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-ndss17.pdf) arată că 5 până la 10% din conexiunile HTTPS sunt stabilite de aplicații care filtrează HTTPS. De obicei, aceasta se face prin diferite tipuri de programe antivirus. Veștile proaste sunt că 24 din 26 de antivirusi testați au redus, în diverse moduri, nivelul de securitate al conexiunii, în timp ce două treimi au creat conexiuni vulnerabile la atacuri.
+A [2017 study](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-ndss17.pdf) found that 5 to 10% of HTTPS connections were established by HTTPS filtering applications. De obicei, aceasta se face prin diferite tipuri de programe antivirus. Veștile proaste sunt că 24 din 26 de antivirusi testați au redus, în diverse moduri, nivelul de securitate al conexiunii, în timp ce două treimi au creat conexiuni vulnerabile la atacuri.
 
 Cercetătorii au ajuns la o concluzie simplă: comunitatea de securitate a Internetului ar trebui să acorde o atenție deosebită aplicațiilor care filtrează conexiunile sigure. Și dezvoltatorii unor astfel de programe trebuie să acorde o atenție serioasă calității implementărilor de filtrare.
 
@@ -71,7 +71,7 @@ Primul lucru de menționat este că multe aplicații (chiar și cele moderne) î
 
 ### Cum să verifici manual calitatea HTTPS?
 
-Există mai multe site-uri dedicate unde poți verifica calitatea conexiunii tale HTTPS. Aceste site-uri verifică dacă browserul tău (sau, în cazul nostru, browserul tău plus AdGuard) este vulnerabil la vulnerabilități comune. Dacă planifici să folosești orice program care filtrează HTTPS, nu neapărat AdGuard (de exemplu, un antivirus), îți recomandăm să verifici calitatea conexiunii pe aceste site-uri.
+Există mai multe site-uri dedicate unde poți verifica calitatea conexiunii tale HTTPS. Aceste site-uri verifică dacă browserul tău (sau, în cazul nostru, browserul tău plus AdGuard) este vulnerabil la vulnerabilități comune. If you plan to use any program that filters HTTPS, not necessarily AdGuard (e.g., an antivirus), we advise that you check the connection quality using these websites.
 
 - [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
 - [https://www.howsmyssl.com/](https://www.howsmyssl.com/)

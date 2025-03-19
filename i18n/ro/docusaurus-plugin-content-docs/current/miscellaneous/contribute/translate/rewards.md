@@ -37,7 +37,7 @@ Trimiteți un e-mail echipei noastre de traducători la [translate@adguard.com](
 
 > Hi AdGuard team!
 > 
-> I’ve translated more than 5,000 words in AdGuard for Android in (*your language*) — you can find my stats attached. Aș dori să solicit o licență AdGuard VPN și o licență de Blocant de reclame pentru aceasta. My email is (*your email address*). My Crowdin username is (*your username*).
+> I’ve translated more than 5,000 words in AdGuard for Android in (*your language*) — you can find my stats attached. As a reward, I’d like to request an AdGuard VPN license and an Ad Blocker license My email is (*your email address*). My Crowdin username is (*your username*).
 
 ## Cum să verificați progresul traducerii
 

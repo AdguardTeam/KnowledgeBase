@@ -16,7 +16,6 @@ Aquí hay algunos problemas comunes y sus soluciones, guías e instrucciones que
 - [Cómo automatizar AdGuard para Android](/adguard-for-android/solving-problems/tasker.md)
 - [Cómo obtener registros del sistema](/adguard-for-android/solving-problems/logcat.md)
 - [Cómo generar archivos HAR](/adguard-for-android/solving-problems/har.md)
-- [Guía de configuración de bajo nivel](/adguard-for-android/solving-problems/low-level-settings.md)
 - [Cómo bloquear anuncios en la app de YouTube](adguard-for-android/solving-problems/youtube-ads.md)
 - [Cómo configurar un proxy saliente](/adguard-for-android/solving-problems/outbound-proxy.md)
 - [Cómo proteger AdGuard de ser deshabilitado por el sistema](/adguard-for-android/solving-problems/background-work.md)

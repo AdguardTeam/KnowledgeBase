@@ -31,7 +31,7 @@ _Nivelul de jurnalizare_ definește ce date despre funcționarea aplicației ar 
 
 ![Advanced \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-Secțiunea _Setări de nivel scăzut_ este pentru utilizatorii avansați. [Citește mai multe despre setările de nivel scăzut](/adguard-for-android/solving-problems/low-level-settings/)
+Secțiunea _Setări de nivel scăzut_ este pentru utilizatorii avansați. [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
 
 ![Low-level settings \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 

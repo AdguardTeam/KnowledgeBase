@@ -5,17 +5,17 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article concerne AdGuard pour Android, un bloqueur de publicités multifonctionnel qui protège votre appareil au niveau système. Pour voir comment il fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Configuration requise
 
-**OS version:** Android 7.0 or higher
+**Version du système d'exploitation :** Android 9.0 ou supérieur
 
 **RAM :** au moins 2 Go
 
-**Free disk space:** 500 MB
+**Espace disque libre :** 500 Mo
 
 ## Installation
 
@@ -71,4 +71,4 @@ If you need to uninstall AdGuard on your mobile device, open *Settings* and choo
 
 ![Reinstall AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
-To reinstall AdGuard, just download the apk file again and follow the steps outlined in the Installation section. Uninstallation is not required beforehand.
+Pour réinstaller AdGuard, il suffit de télécharger le fichier apk à nouveau et de suivre les étapes décrites dans la section Installation. Aucune désinstallation préalable n'est nécessaire.

@@ -11,24 +11,24 @@ Safari 브라우저만 보호하는 Safari용 AdGuard에 관한 문서입니다.
 
 ## 기능
 
-Main features and settings available in AdGuard for Safari
+Safari용 AdGuard의 주요 기능 및 설정
 
 [기능](/adguard-for-safari/features/features.md)
 
 ## 설치 방법
 
-Installation, removal, and system requirements for AdGuard for Safari
+Safari용 AdGuard의 설치, 제거 방법 및 시스템 요구 사항
 
 [설치](/adguard-for-safari/installation.md)
 
 ## Safari 확장 프로그램
 
-Extensions that add functionality to the Safari web browser
+Safari 웹 브라우저에 기능을 추가하는 확장 프로그램
 
 [Safari 확장 프로그램](/adguard-for-safari/extensions.md)
 
 ## 문제 해결
 
-Known issues and possible solutions
+알려진 문제 및 해결 방법
 
 [문제 해결](/adguard-for-safari/solving-problems/solving-problems.md)

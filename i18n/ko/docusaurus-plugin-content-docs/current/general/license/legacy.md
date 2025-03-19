@@ -46,7 +46,7 @@ AdGuard 이전 라이선스 키를 업그레이드·갱신하는 방법을 살�
 
 ## 이전 키 업그레이드· 갱신 방법
 
-[갱신 페이지](https://adguard.com/renew.html) 또는 [AdGuard 계정](https://my.adguard.com/main.html)에서 라이선스 변경이 가능합니다.
+You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://adguardaccount.com/main.html):
 
 ![업그레이드](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
 > '내 라이선스'에서 특정 키에 대한 업그레이드·갱신 가능성을 확인할 수 있습니다. 구체적인 예를 살펴 보겠습니다.

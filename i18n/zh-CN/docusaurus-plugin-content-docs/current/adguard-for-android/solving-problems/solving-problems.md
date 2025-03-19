@@ -16,7 +16,6 @@ sidebar_position: 1
 - [如何自动化 Android 版 AdGuard](/adguard-for-android/solving-problems/tasker.md)
 - [如何收集系统日志](/adguard-for-android/solving-problems/logcat.md)
 - [如何生成 HAR 文件](/adguard-for-android/solving-problems/har.md)
-- [低级设置指南](/adguard-for-android/solving-problems/low-level-settings.md)
 - [如何在 YouTube 应用中拦截广告](/adguard-for-android/solving-problems/youtube-ads.md)
 - [设置出站代理的说明](/adguard-for-android/solving-problems/outbound-proxy.md)
 - [防止 AdGuard 被系统禁用](/adguard-for-android/solving-problems/background-work.md)

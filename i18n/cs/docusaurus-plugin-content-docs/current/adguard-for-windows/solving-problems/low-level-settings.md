@@ -73,7 +73,7 @@ V opačném případě bude AdGuard filtrovat veškerý provoz za běhu bez pře
 
 ### Otevřít hlavní okno při startu systému
 
-Tuto možnost povolte, aby se po načtení systému otevřelo hlavní okno AdGuardu. Všimněte si, že toto nastavení nemá vliv na to, zda je skutečná služba filtrování spuštěna, nebo ne, toto nastavení se nachází v *Nastavení → Obecná nastavení*.
+Tuto možnost povolte, aby se po načtení systému otevřelo hlavní okno AdGuardu. Toto nastavení nemá vliv na to, zda je skutečná služba filtrování spuštěna, nebo ne, toto nastavení se nachází v *Nastavení → Obecná nastavení*.
 
 ### Zapnout filtrování při spuštění systému
 

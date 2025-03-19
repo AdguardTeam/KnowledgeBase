@@ -70,31 +70,31 @@ sidebar_position: 2
 
 ![DNS 保护 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
 
-In the DNS protection module of AdGuard for Windows, you can choose DNS servers from known DNS providers, including AdGuard DNS, which blocks ads and trackers, AdGuard DNS Family Protection, which also blocks adult content, or AdGuard DNS Non-filtering, which provides a secure and reliable connection but doesn’t filter anything. You can even add custom DNS servers and rules using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). If necessary, you can add [DNS filters of your choice](https://filterlists.com).
+在 AdGuard Windows 版的 DNS 保护模块中，用户可以从知名 DNS 提供商中选择 DNS 服务器，包括可以拦截广告和跟踪器的 AdGuard DNS，还可拦截成人内容的 AdGuard DNS 家庭保护，或提供安全可靠连接但不过滤任何内容的 AdGuard DNS 无过滤。 您也可以使用 [DNS 规则语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/) 添加自定义 DNS 服务器和规则。 如有必要，用户可以添加[自己选择的 DNS 过滤器](https://filterlists.com)。
 
-Starting with v7.20, you can also add filters by simply selecting them from a list of pre-built, trusted filters. They are grouped into four categories for your convenience:
+从 v7.20 版本开始，您还可以通过从预置的可信过滤器列表中选择来轻松添加过滤器。 为了方便用户使用，它们被分为四类：
 
-- **General**: block ads and trackers
-- **Regional**: block ads and trackers on language-specific websites
-- **Security**: block phishing and unreliable websites
-- **Other**: cover special use cases that don’t fit into the above categories
+- **常规**：拦截广告和跟踪器。
+- **区域**：在特定语言的网站上拦截广告和跟踪器。
+- **安全**：屏蔽钓鱼和不可靠的网站。
+- **其他**：涵盖不适合上述类别的特殊用例。
 
-![DNS filters \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
+![DNS 过滤 \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
 
-### Parental Control
+### 家长控制
 
-There are several websites to which access should be restricted from a PC used by children. This task is accomplished by Parental Control.
+有一些网站不适合儿童访问，建议在儿童使用的电脑上对其进行访问限制。 这项任务由「家长控制」功能完成。
 
-![Parental Control \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
+![家长控制 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
-The module checks the contents of web pages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental Control settings are password-protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results.
+此模块检查浏览器打开的网页内容，过滤儿童不宜的内容：成人图像和文字、粗俗语言、暴力、毒品宣传等。 家长控制设置受密码保护，孩子无法绕过限制。 此模块不仅拦截对不良网站的指向，也可从搜索结果中移除儿童不宜的链接。
 
-In the _Parental Control_ module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. You can also check the _Block executable files download_ box to prevent your child from downloading and installing software on the computer. There are two more options in the _Parental Control_ module: you can select a specific Windows user to be protected by _Parental Control_ and set a password to protect AdGuard settings from change.
+在「家长控制」模块，用户可以开启「安全搜索」，管理「黑名单」和「白名单」以自定义此选项的工作方式。 用户也可以选中「阻止下载可执行文件」以防止儿童在计算机上下载和安装软件。 「家长控制」模块有多个选项：用户可以选择「家长控制」保护特定的 Windows 用户，设置密码保护 AdGuard 设置以防更改。
 
-![Parental Control \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
+![家长控制 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
 ### 浏览器助手
 
-![Browser Assistant \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![浏览器助手 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
-From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](/adguard-for-windows/browser-assistant.md).
+用户可以在此选项页上轻松处理已安装的 AdGuard 浏览器助手，其主功能是从浏览器内直接管理过滤。 我们在[单独的文章](/adguard-for-windows/browser-assistant.md)内解释其工作方式以及如您的浏览器没有浏览器助手要如何处理。

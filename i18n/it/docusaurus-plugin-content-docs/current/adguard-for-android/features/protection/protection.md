@@ -11,7 +11,7 @@ Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunziona
 
 La scheda _Protezione_ include le seguenti funzioni o impostazioni. Troverai un articolo dettagliato per ciascuno di essi in questa Base di Conoscenze.
 
-## Blocco degli annunci
+## Blocco inserzioni
 
 Impostazioni per bloccare le inserzioni nei browser e nelle app
 

@@ -16,7 +16,6 @@ Zde jsou uvedeny některé problémy, se kterými se můžete setkat, řešení,
 - [Jak automatizovat AdGuard pro Android](/adguard-for-android/solving-problems/tasker.md)
 - [Jak získat systémové protokoly](/adguard-for-android/solving-problems/logcat.md)
 - [Jak generovat soubory HAR](/adguard-for-android/solving-problems/har.md)
-- [Průvodce nízkoúrovňovým nastavením](/adguard-for-android/solving-problems/low-level-settings.md)
 - [Jak blokovat reklamy v aplikaci YouTube](adguard-for-android/solving-problems/youtube-ads.md)
 - [Jak nastavit odchozí proxy server](/adguard-for-android/solving-problems/outbound-proxy.md)
 - [Jak ochránit AdGuard před ukončením systémem](/adguard-for-android/solving-problems/background-work.md)

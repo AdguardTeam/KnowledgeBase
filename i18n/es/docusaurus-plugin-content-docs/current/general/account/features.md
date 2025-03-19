@@ -24,10 +24,9 @@ En la sección *Licencias*, puedes administrar tus licencias y los dispositivos 
 
 - vinculada o no vinculada,
 - ampliada,
-- mejorada,
-- cancelada. También puedes actualizar tus datos de pago.
+- upgraded.
 
-Los dispositivos vinculados a tus licencias del bloqueador de anuncios AdGuard se pueden desvincular o cambiar de nombre. Para desvincular dispositivos no utilizados, haz clic en el número de dispositivos vinculados junto a *Dispositivos*, luego selecciona la flecha derecha → *Eliminar*.
+Los dispositivos vinculados a tus licencias del bloqueador de anuncios AdGuard se pueden desvincular o cambiar de nombre. To unbind unused devices, click the number of bound devices next to *Devices*, then select `>` → *Remove*.
 
 ## Ver compras
 

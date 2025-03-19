@@ -9,10 +9,10 @@ sidebar_position: 1
 
 :::
 
-Here are some problems you may encounter and workarounds, as well as guides and instructions you may need.
+ここでは、あなたが遭遇する可能性のある問題と、それらへの回避策、ガイド、および手順を紹介します。
 
-- [Rule limit issues](/adguard-for-safari/solving-problems/rule-limit.md)
-- [Filtering doesn’t work and ads aren’t blocked](/adguard-for-safari/solving-problems/ads-not-blocked.md)
-- [Filtering doesn’t stop when AdGuard for Safari is disabled](/adguard-for-safari/solving-problems/filters-after-disable.md)
-- [How to collect logs in AdGuard for Safari](/adguard-for-safari/solving-problems/logs.md)
-- [AdGuard for Safari doesn’t work in private tabs on macOS Sonoma](/adguard-for-safari/solving-problems/private-sonoma.md)
+- [ルール制限の問題](/adguard-for-safari/solving-problems/rule-limit.md)
+- [フィルタリングが機能せず、広告がブロックされない](/adguard-for-safari/solving-problems/ads-not-blocked.md)
+- [AdGuard for Safariを無効にしてもフィルタリングが止まらない](/adguard-for-safari/solving-problems/filters-after-disable.md)
+- [AdGuard for Safari でログを収集する方法](/adguard-for-safari/solving-problems/logs.md)
+- [AdGuard for Safari がmacOS Sonomaにおいてプライベートタブで動作しない](/adguard-for-safari/solving-problems/private-sonoma.md)

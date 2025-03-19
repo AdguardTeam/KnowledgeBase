@@ -51,7 +51,7 @@ Busca la sección **PERMITIR ESTAS EXTENSIONES** y, a continuación, busca **AdG
 
 ![Selecciona "AdGuard" en la sección PERMITIR ESTAS EXTENSIONES *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_en.png)
 
-Tócalo y luego activa el interruptor. En la misma pantalla, establece el permiso *Todos los sitios web* para AdGuard en *Permitir* o *Preguntar*. Si eliges *Permitir*, no tendrás que dar permiso cada vez que visites un nuevo sitio web. Si no está seguro, elige *Preguntar* para conceder permisos por sitio.
+Tócalo y luego actívalo. En la misma pantalla, establece el permiso *Todos los sitios web* para AdGuard en *Permitir* o *Preguntar*. Si eliges *Permitir*, no tendrás que dar permiso cada vez que visites un nuevo sitio web. Si no está seguro, elige *Preguntar* para conceder permisos por sitio.
 
 ![Configuración de la extensión *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 

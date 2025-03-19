@@ -11,48 +11,48 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
 ## Funktionen
 
-Main features and settings available in the AdGuard Browser Extension
+Die wichtigsten Funktionen und Einstellungen der AdGuard Browsererweiterung
 
 [Funktionen](/adguard-browser-extension/features)
 
 ## Verfügbarkeit
 
-Supported browsers and platforms where the extension can be installed
+Unterstützte Browser und Plattformen, auf denen die Erweiterung installiert werden kann
 
 [Verfügbarkeit](/adguard-browser-extension/availability)
 
 ## Installation
 
-Installation and removal
+Installation und Entfernung
 
 [Installation](/adguard-browser-extension/installation)
 
 ## Kompatibilität mit der eigenständigen App
 
-Compatibility of the AdGuard Browser Extension with the AdGuard desktop apps
+Kompatibilität der AdGuard Browsererweiterung mit den AdGuard-Desktop-Apps
 
 [Kompatibilität mit der eigenständigen App](adguard-browser-extension/compatibility)
 
 ## AdGuard Browsererweiterung für Chrome MV3
 
-A separate AdGuard Browser Extension compatible with the Manifest V3 API
+Eine separate AdGuard Browsererweiterung, die mit der Manifest V3-API kompatibel ist
 
 [AdGuard Browsererweiterung für Chrome MV3](/adguard-browser-extension/mv3-version/)
 
 ## Browser-geschützte Webseiten
 
-Restricted domains whose content can’t be modified with ad blocking extensions
+Eingeschränkte Domains, deren Inhalt nicht mit Werbeblocker-Erweiterungen geändert werden kann
 
 [Browser-geschützte Seiten](/adguard-browser-extension/protected-pages)
 
 ## Probleme lösen
 
-Known issues and possible solutions
+Bekannte Probleme und mögliche Lösungen
 
 [Probleme lösen](/adguard-browser-extension/solving-problems)
 
 ## Vergleich mit eigenständigen Anwendungen
 
-The differences in functionality and features between the AdGuard extensions and desktop apps
+Die Unterschiede in der Funktionalität und den Merkmalen zwischen den AdGuard-Erweiterungen und den Desktop-Apps
 
 [Kompatibilität mit der eigenständigen App](/adguard-browser-extension/comparison-standalone)
