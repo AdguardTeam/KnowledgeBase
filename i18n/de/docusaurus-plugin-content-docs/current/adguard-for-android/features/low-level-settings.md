@@ -120,13 +120,13 @@ This setting may slow down your device. Use it for debugging purposes only.
 
 #### Encrypted Client Hello
 
-If this setting is enabled, AdGuard will encrypt ClientHellos, if necessary. This feature requires HTTPS filtering to be enabled. This feature uses a local DNS proxy to look for the ECH configuration for the domain. If it is found, the ClientHello packet will be encrypted. Make sure to use an encrypted DNS server with this feature.
+If this setting is enabled, AdGuard will encrypt ClientHellos, if necessary. Für diese Funktion muss die HTTPS-Filterung aktiviert sein. This feature uses a local DNS proxy to look for the ECH configuration for the domain. If it is found, the ClientHello packet will be encrypted. Make sure to use an encrypted DNS server with this feature.
 
 **About ClientHellos and ECH**: Every encrypted Internet connection has an unencrypted part. This is the very first packet that contains the name of the server you are connecting to. Encrypted Client Hello technology is designed to solve this problem by encrypting this packet.
 
 #### OCSP checking
 
-If this setting is enabled, AdGuard will automatically check the revocation status of SSL certificates before connecting to a website. This feature requires HTTPS filtering to be enabled.
+If this setting is enabled, AdGuard will automatically check the revocation status of SSL certificates before connecting to a website. Für diese Funktion muss die HTTPS-Filterung aktiviert sein.
 
 If the check is completed within the required timeout, AdGuard will  allow the connection if the certificate is valid or immediately block the connection if the certificate is revoked.
 
@@ -134,7 +134,7 @@ If the verification takes too long, AdGuard will allow the connection while cont
 
 #### HTTP/3 filtern
 
-If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types. This feature requires HTTPS filtering to be enabled.
+If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types. Für diese Funktion muss die HTTPS-Filterung aktiviert sein.
 
 **About HTTP/3**: This is the latest version of the HTTP protocol, based on QUIC.
 

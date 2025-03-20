@@ -7,7 +7,7 @@ sidebar_position: 5
 
 AdGuard 계정에서 구독을 취소할 수 있습니다. 구독을 취소하는 방법은 다음과 같습니다.
 
- 1. Go to your [AdGuard account](https://adguardaccount.com/).
+ 1. [AdGuard 계정](https://adguardaccount.com/)으로 이동합니다.
  1. *라이선스*를 선택하세요.
  1. 더 이상 필요하지 않은 구독 아래의 *구독 취소*를 클릭합니다. ![취소](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
 

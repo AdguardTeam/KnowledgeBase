@@ -11,25 +11,25 @@ Este artículo trata sobre AdGuard para Mac, un bloqueador de anuncios multifunc
 
 ## Ventana principal
 
-Main screen with statistics on blocked ads and trackers and access to main settings
+Pantalla principal con estadísticas sobre anuncios y rastreadores bloqueados y acceso a la configuración principal
 
 [Ventana principal](/adguard-for-mac/features/main.md)
 
 ## General
 
-Basic settings to block search ads and website self-promotional ads, enable language-specific filters, and manage _Allowlist_
+Configuraciones básicas para bloquear anuncios de búsqueda y anuncios autopromocionales de sitios web, habilitar filtros específicos de idioma y administrar la _Lista de permitidos_
 
 [General](/adguard-for-mac/features/general.md)
 
 ## Filtros
 
-Filters and user rules to fine-tune ad blocking
+Filtros y reglas de usuario para mejorar el bloqueo de anuncios
 
 [Filtros](/adguard-for-mac/features/filters.md)
 
 ## DNS
 
-Servidores DNS y filtros DNS que permiten bloquear anuncios, rastreadores y sitios web peligrosos
+Servidores DNS y filtros DNS que permiten bloquear anuncios, rastreadores y sitios web
 
 [DNS](/adguard-for-mac/features/dns.md)
 
@@ -37,11 +37,11 @@ Servidores DNS y filtros DNS que permiten bloquear anuncios, rastreadores y siti
 
 Configuración para bloquear cookies, etiquetas UTM y análisis en línea que recopilan información del usuario
 
-[Stealth Mode](/adguard-for-mac/features/stealth.md)
+[Modo sigiloso](/adguard-for-mac/features/stealth.md)
 
 ## Seguridad
 
-A setting that blocks access to malicious and phishing websites and protects you from online threats
+Una configuración que bloquea el acceso a sitios web maliciosos y de phishing, protegiéndote de amenazas en línea
 
 [Seguridad](/adguard-for-mac/features/security.md)
 
@@ -53,12 +53,12 @@ Una extensión que complementa el programa de escritorio y permite administrar e
 
 ## Extensiones
 
-A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
+Una función que te permite ampliar la funcionalidad de los sitios web agregando scripts de usuario y estilos de usuario
 
 [Extensiones](/adguard-for-mac/features/extensions.md)
 
 ## Red
 
-Additional network-related options and proxy settings
+Opciones adicionales relacionadas con la red y configuración de proxy
 
 [Red](/adguard-for-mac/features/network.md)

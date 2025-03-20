@@ -11,19 +11,19 @@ Este artigo é sobre o AdGuard para Mac, um bloqueador de anúncios multifuncion
 
 ## Janela principal
 
-Main screen with statistics on blocked ads and trackers and access to main settings
+Tela principal com estatísticas sobre anúncios e rastreadores bloqueados e acesso às principais configurações
 
 [Janela principal](/adguard-for-mac/features/main.md)
 
 ## Geral
 
-Basic settings to block search ads and website self-promotional ads, enable language-specific filters, and manage _Allowlist_
+Configurações básicas para bloquear anúncios de busca e anúncios auto-promotionais de sites, ativar filtros específicos por idioma e gerenciar a _Lista de permissões_
 
 [Modo geral](/adguard-for-mac/features/general.md)
 
 ## Filtros
 
-Filters and user rules to fine-tune ad blocking
+Filtros e regras de usuário para ajustar o bloqueio de anúncios
 
 [Filtros](/adguard-for-mac/features/filters.md)
 
@@ -37,11 +37,11 @@ Servidores DNS e filtros DNS que permitem bloquear anúncios, rastreadores e sit
 
 Configurações de bloqueio cookies, tags UTM e análises online que coletam informações do usuário
 
-[Stealth Mode](/adguard-for-mac/features/stealth.md)
+[Modo invisível](/adguard-for-mac/features/stealth.md)
 
 ## Segurança
 
-A setting that blocks access to malicious and phishing websites and protects you from online threats
+Uma definição que bloqueia o acesso a sites maliciosos e de phishing e o protege de ameaças online
 
 [Segurança](/adguard-for-mac/features/security.md)
 
@@ -59,6 +59,6 @@ Um recurso que permite ampliar a funcionalidade dos sites adicionando scripts e 
 
 ## Rede
 
-Additional network-related options and proxy settings
+Opções adicionais relacionadas à rede e configurações de proxy
 
 [Rede](/adguard-for-mac/features/network.md)
