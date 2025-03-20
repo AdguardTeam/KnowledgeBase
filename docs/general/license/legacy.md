@@ -57,7 +57,7 @@ Or, go to the [renewal page](https://adguard.com/renew.html), enter your license
 
 ### Licenses for 1/2/3 devices
 
-**Yearly** licenses for 1, 2, 3 devices can be upgraded to either Personal or Family:
+Mobile Yearly licenses for 3 devices can be converted to Personal licenses or upgraded to Family ones:
 
 ![Upgrade Yearly licenses for 1, 2, 3 devices](https://cdn.adtidy.org/blog/new/fh5r7upgrade3.png)
 
