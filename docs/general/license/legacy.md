@@ -53,7 +53,7 @@ To extend/renew or upgrade a legacy license in your AdGuard account, go to the *
 
 ![Renew or upgrade a license in your AdGuard account](https://cdn.adtidy.org/blog/new/rf4zgklicense2.png)
 
-Or, go to the [renewal page](https://adguard.com/renew.html), enter your license, and click *Apply*. On the new page select one of the available options.
+Or go to the [Extend or upgrade page](https://adguard.com/renew.html), enter your license, and click *Apply*. On the new page, select one of the available options.
 
 ### Licenses for 1/2/3 devices
 
