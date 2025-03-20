@@ -47,7 +47,7 @@ For example, this is how the 1+1 key looks like:
 
 ## How to renew or upgrade a legacy key?
 
-You can renew or upgrade a legacy license in your [AdGuard account](https://adguardaccount.com) or on the [renewal page](https://adguard.com/renew.html).
+You can extend/renew or upgrade a legacy license in your [AdGuard account](https://adguardaccount.com) or on the [Extend or upgrade page](https://adguard.com/renew.html).
 
 To extend/renew or upgrade a legacy license in your AdGuard account, go to the *Licenses* tab, find the license you need, and select one of the available options.
 
