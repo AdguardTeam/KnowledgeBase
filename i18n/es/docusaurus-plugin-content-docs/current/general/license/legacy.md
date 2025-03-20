@@ -46,7 +46,7 @@ Por ejemplo, así es como se ve la llave 1+1:
 
 ## Tengo una clave obsoleta (heredada). ¿Qué opciones de renovación/actualización están disponibles para mí?
 
-You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://adguardaccount.com/main.html):
+Puedes verificarlo en la [página de renovación](https://adguard.com/renew.html) o en tu [cuenta de AdGuard](https://adguardaccount.com/main.html):
 
 ![Actualizar](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
 > Ve a la pestaña "Mis licencias" y verifica qué acciones están disponibles para cada clave específica. A continuación lo explicaremos con ejemplos concretos.

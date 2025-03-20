@@ -24,9 +24,9 @@ Na seção *Licenças*, você pode gerenciar as suas licenças e os dispositivos
 
 - vinculada e não vinculada,
 - estendida,
-- upgraded.
+- atualizada.
 
-Os dispositivos vinculados às suas licenças do bloqueador de anúncios AdGuard podem ser desvinculados ou renomeados. To unbind unused devices, click the number of bound devices next to *Devices*, then select `>` → *Remove*.
+Os dispositivos vinculados às suas licenças do bloqueador de anúncios AdGuard podem ser desvinculados ou renomeados. Para desvincular dispositivos não utilizados, clique no número de dispositivos vinculados ao lado de *Dispositivos*, em seguida, selecione `>` → *Remover*.
 
 ## Ver compras
 
