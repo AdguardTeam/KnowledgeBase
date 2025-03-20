@@ -46,7 +46,7 @@ Takto například vypadá klíč 1+1:
 
 ## Mám zastaralý (starší) klíč. Jaké možnosti obnovení/upgrade mám k dispozici?
 
-Můžete to zkontrolovat na [stránce obnovení](https://adguard.com/renew.html) nebo ve svém [AdGuard účtu](https://my.adguard.com/main.html):
+Můžete to zkontrolovat na [stránce obnovení](https://adguard.com/renew.html) nebo ve svém [AdGuard účtu](https://adguardaccount.com/main.html):
 
 ![Upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
 > Přejděte na kartu "Moje licence" a zkontrolujte, jaké akce máte k dispozici pro každý konkrétní klíč. Níže to vysvětlíme na konkrétních příkladech.

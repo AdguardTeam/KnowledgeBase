@@ -29,7 +29,7 @@ An extension that complements the desktop program and allows you to manage filte
 
 ## Risoluzione problemi
 
-Known issues and possible solutions
+Problemi noti e possibili soluzioni
 
 [Risoluzione problemi](/adguard-for-windows/solving-problems/solving-problems.md)
 

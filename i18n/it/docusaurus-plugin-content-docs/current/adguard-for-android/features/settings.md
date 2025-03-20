@@ -31,7 +31,7 @@ _Il Livello di registrazione_ definisce quali dati sull'operazione dell'app devo
 
 ![Avanzate \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-La sezione delle _Impostazioni di basso livello_ è indirizzata agli utenti esperti. [Leggi di più sulle impostazioni di basso livello](/adguard-for-android/solving-problems/low-level-settings/)
+La sezione delle _Impostazioni di basso livello_ è indirizzata agli utenti esperti. [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
 
 ![Impostazioni di basso livello \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 

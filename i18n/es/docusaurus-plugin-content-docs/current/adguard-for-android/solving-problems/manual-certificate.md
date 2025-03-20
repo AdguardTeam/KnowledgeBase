@@ -43,4 +43,4 @@ Si tienes problemas durante la instalación manual del certificado (por ejemplo,
 1. Reinicia AdGuard.
 2. Intenta instalar el certificado correcto (AdGuard Personal CA) una vez más.
 
-Si aún tienes algún problema y no puedes instalar el certificado, comunícate con nuestro equipo de soporte en support@adguard.com.
+If you still encounter a problem and can't install the certificate, please contact our support team at <support@adguard.com>.

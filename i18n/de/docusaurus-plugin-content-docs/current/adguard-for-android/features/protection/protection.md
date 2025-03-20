@@ -9,40 +9,40 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-The _Protection_ tab includes the following features or settings. You’ll find a detailed article for each of them in this Knowledge Base.
+Der Tab _Schutz_ umfasst die folgenden Funktionen oder Einstellungen. In dieser Wissensdatenbank finden Sie einen ausführlichen Artikel zu jedem dieser Themen.
 
 ## Werbeblockierung
 
-Settings to block ads in browsers and apps
+Einstellungen zum Blockieren von Werbung in Browsern und Apps
 
 [Sperren von Werbung](/adguard-for-android/features/protection/ad-blocking.md)
 
 ## Tracking-Schutz
 
-Settings that allow you to block tracking tools that collect user information
+Einstellungen, mit denen Sie Tracking-Tools blockieren können, die Nutzerdaten sammeln
 
 [Schutz vor Tracking](/adguard-for-android/features/protection/tracking-protection.md)
 
 ## Belästigungsblockierung
 
-Settings to block annoyances such as cookie consent popups, social widgets, and banners that prompt you to download mobile apps
+Einstellungen zum Blockieren von störenden Elementen wie Pop-ups mit Cookie-Zustimmung, sozialen Widgets und Bannern, die Sie zum Herunterladen von mobilen Apps auffordern
 
 [Sperren von Belästigungen](/adguard-for-android/features/protection/annoyance-blocking.md)
 
 ## DNS-Schutz
 
-DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
+DNS-Server und DNS-Filter, mit denen Sie Werbung, Tracker und gefährliche Websites blockieren können
 
 [DNS-Schutz](/adguard-for-android/features/protection/dns-protection.md)
 
 ## Firewall
 
-A feature that allows you to control Internet access for individual apps
+Eine Funktion, mit der Sie den Internetzugriff für einzelne Apps steuern können
 
 [Firewall](/adguard-for-android/features/protection/firewall/firewall.md)
 
 ## Internetsicherheit
 
-A feature that blocks access to malicious and phishing websites and protects you from online threats
+Eine Funktion, die den Zugriff auf bösartige und Phishing-Websites blockiert und Sie vor Online-Bedrohungen schützt
 
 [Internetsicherheit](/adguard-for-android/features/protection/browsing-security.md)

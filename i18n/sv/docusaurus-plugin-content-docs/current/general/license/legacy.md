@@ -46,7 +46,7 @@ For example, this is how the 1+1 key looks like:
 
 ## I have an outdated (legacy) key. What renewal/upgrade options are available for me?
 
-You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://my.adguard.com/main.html):
+You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://adguardaccount.com/main.html):
 
 ![Upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
 > Go to "My licenses" tab and check what actions are available to you for each specific key. Below we will explain with specific examples.

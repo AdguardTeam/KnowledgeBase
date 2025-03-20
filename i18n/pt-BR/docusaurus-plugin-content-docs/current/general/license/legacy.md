@@ -46,7 +46,7 @@ Por exemplo, é assim que a tecla 1+1 aparece:
 
 ## Eu tenho uma chave desatualizada (herdada). Quais opções de renovação/atualização estão disponíveis para mim?
 
-Você pode verificar isso na [página de renovação](https://adguard.com/renew.html) ou na sua [conta AdGuard](https://my.adguard.com/main.html):
+Você pode verificar isso na [página de renovação](https://adguard.com/renew.html) ou na sua [conta AdGuard](https://adguardaccount.com/main.html):
 
 ![Fazer upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
 > Vá para a guia "Minhas licenças" e verifique quais ações estão disponíveis para você para cada chave específica. Explicaremos a seguir com exemplos específicos.

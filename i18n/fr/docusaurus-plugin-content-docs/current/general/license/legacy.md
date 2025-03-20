@@ -46,7 +46,7 @@ Par exemple, voici à quoi ressemble la clef 1+1 :
 
 ## J'ai une clé obsolète (ancienne). Quelles options de renouvellement/surclassements sont disponibles pour moi ?
 
-Vous pouvez le vérifier sur la page [renouvellement](https://adguard.com/renew.html) ou dans votre [compte AdGuard](https://my.adguard.com/main.html):
+You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://adguardaccount.com/main.html):
 
 ![Surclasser](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
 > Allez dans l'onglet "Mes licences" et vérifiez quelles actions vous sont disponibles pour chaque clef spécifique. Nous l'expliquons ci-dessous à l'aide d'exemples concrets.

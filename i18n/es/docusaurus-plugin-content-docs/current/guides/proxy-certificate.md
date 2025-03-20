@@ -19,9 +19,9 @@ Dependiendo del sistema operativo del dispositivo cuyo tráfico deseas filtrar, 
 
 ### Windows {#windows}
 
-1. Anota la dirección IP de tu computadora de escritorio con AdGuard instalado.
+1. Anota la dirección IP de tu computadora con AdGuard instalado.
 
-1. Asegúrate de que la protección AdGuard esté habilitada. En una computadora con Windows, marca la casilla **Usar AdGuard como proxy HTTP** en la pestaña **Red** de su configuración. Para Mac, ve a **Configuración** → **Preferencias** → **Red** y habilita **Proxy HTTP**.
+1. Asegúrate de que la protección AdGuard esté habilitada. En una computadora con Windows, marca la casilla **Usar AdGuard como proxy HTTP** en la pestaña **Red** de su configuración. Em um Mac, ve a **Configuración** → **Preferencias** → **Red** y habilita **Proxy HTTP**.
 
 1. En la misma computadora con AdGuard, sigue este enlace: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -63,7 +63,7 @@ Dependiendo del sistema operativo del dispositivo cuyo tráfico deseas filtrar, 
 
 1. Anota la dirección IP de tu computadora con AdGuard instalado.
 
-1. Asegúrate de que la protección AdGuard esté habilitada. En una computadora con Windows, marca la casilla **Usar AdGuard como proxy HTTP** en la pestaña **Red** de su configuración. Para Mac, ve a **Configuración** → **Preferencias** → **Red** y habilita **Proxy HTTP**.
+1. Asegúrate de que la protección AdGuard esté habilitada. En una computadora con Windows, marca la casilla **Usar AdGuard como proxy HTTP** en la pestaña **Red** de su configuración. Em um Mac, ve a **Configuración** → **Preferencias** → **Red** y habilita **Proxy HTTP**.
 
 1. Sigue este enlace usando un navegador web: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -95,7 +95,7 @@ Dependiendo del sistema operativo del dispositivo cuyo tráfico deseas filtrar, 
 
 1. Anota la dirección IP de tu computadora con AdGuard instalado.
 
-1. Asegúrate de que la protección AdGuard esté habilitada. En una computadora con Windows, marca la casilla **Usar AdGuard como proxy HTTP** en la pestaña **Red** de su configuración. Para Mac, ve a **Configuración** → **Preferencias** → **Red** y habilita **Proxy HTTP**.
+1. Asegúrate de que la protección AdGuard esté habilitada. En una computadora con Windows, marca la casilla **Usar AdGuard como proxy HTTP** en la pestaña **Red** de su configuración. Em um Mac, ve a **Configuración** → **Preferencias** → **Red** y habilita **Proxy HTTP**.
 
 1. Desde la computadora con AdGuard, sigue este enlace usando un navegador web: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -115,7 +115,7 @@ Dependiendo del sistema operativo del dispositivo cuyo tráfico deseas filtrar, 
 
 1. Anota la dirección IP de tu computadora con AdGuard instalado.
 
-1. Asegúrate de que la protección AdGuard esté habilitada. En una computadora con Windows, marca la casilla **Usar AdGuard como proxy HTTP** en la pestaña **Red** de su configuración. Para Mac, ve a **Configuración** → **Preferencias** → **Red** y habilita **Proxy HTTP**.
+1. Asegúrate de que la protección AdGuard esté habilitada. En una computadora con Windows, marca la casilla **Usar AdGuard como proxy HTTP** en la pestaña **Red** de su configuración. Em um Mac, ve a **Configuración** → **Preferencias** → **Red** y habilita **Proxy HTTP**.
 
 1. Desde la computadora con AdGuard, sigue este enlace usando un navegador web: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 

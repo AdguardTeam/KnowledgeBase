@@ -29,13 +29,13 @@ Filters and user rules to fine-tune ad blocking
 
 ## DNS
 
-DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
+Les serveurs DNS et les filtres DNS qui vous permettent de bloquer les publicités, les traqueurs et les sites Web dangereux
 
 [DNS](/adguard-for-mac/features/dns.md)
 
 ## Mode furtif
 
-Settings to block cookies, UTM tags, and online analytics that collect user information
+Paramètres permettant de bloquer les cookies, les balises UTM et les outils d'analyse en ligne qui collectent des informations sur l'utilisateur
 
 [Stealth Mode](/adguard-for-mac/features/stealth.md)
 

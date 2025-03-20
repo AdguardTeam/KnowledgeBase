@@ -7,7 +7,7 @@ sidebar_position: 5
 
 サブスクリプションは、AdGuardアカウントでキャンセルすることができます。 その方法以下の通りです:
 
- 1. お使いの[AdGuardアカウント](https://my.adguard.com/)にアクセスします。
+ 1. Go to your [AdGuard account](https://adguardaccount.com/).
  1. メニューで「*ライセンス*」を押します。
  1. 解約したいサブスクリプションの下の「**サブスクリプションを解約する**」をクリックします。 ![キャンセル](https://cdn.adtidy.org/blog/new/fgjbxcancel-ja-1.png)
 

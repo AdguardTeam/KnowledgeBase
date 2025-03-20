@@ -81,7 +81,7 @@ Cílem filtrů pro blokování reklam je blokovat všechny typy reklam na webov�
 - Neblokujeme zprávy o detekci blokování reklam, které splňují alespoň jedno z následujících kritérií:
     - Umožňují používání webových stránek a nepřekrývají značné množství obsahu
     - Poskytují alternativu k deaktivaci blokátoru reklam, protože tato alternativa neohrožuje soukromí ani bezpečnost uživatelů
-    - Umožňují uživateli přejít k obsahu webové stránky nebo nabízejí proveditelnou výměnu hodnot, která neohrožuje soukromí nebo bezpečnost uživatele
+    - Umožňují uživateli přejít k obsahu webové stránky
     - Některá starší pravidla mohou nadále blokovat zprávy, které splňují jedno nebo více z těchto kritérií. Pokud budou taková pravidla identifikována, bude s nimi nakládáno v souladu s těmito zásadami
 - Prostory pro těžbu kryptoměn nejsou blokovány, pokud jsou veřejné a nejsou používány výhradně ke škodlivým účelům
 

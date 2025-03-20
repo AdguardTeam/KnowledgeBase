@@ -20,11 +20,11 @@ sidebar_position: 2
 - Фильтрация HTTPS-трафика (для приложений, не являющихся браузерами, требуется [установка сертификата CA AdGuard в системное хранилище](/adguard-for-android/solving-problems/https-certificate-for-rooted/), доступного на устройствах с root-доступом)
 - Направлять его трафик через указанный прокси-сервер или AdGuard VPN в Режиме интеграции
 
-![Управление приложениями: Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![App management: Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
 Из контекстного меню вы также можете попасть в статистику приложения.
 
-![Управление приложениями: Chrome. Контекстное меню \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![Управление приложениями: контекстное меню Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
 ### Непроблемные и проблемные приложения
 

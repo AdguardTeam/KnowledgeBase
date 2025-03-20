@@ -31,7 +31,7 @@ _Úroveň záznamu_ definuje, jaká data o provozu aplikace by měla být zaznam
 
 ![Advanced \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-Sekce _Nízkoúrovňová nastavení_ je určena pro zkušené uživatele. [Přečtěte si více o Nízkoúrovňových nastavení](/adguard-for-android/solving-problems/low-level-settings/)
+Sekce _Nízkoúrovňová nastavení_ je určena pro zkušené uživatele. [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
 
 ![Low-level settings \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 

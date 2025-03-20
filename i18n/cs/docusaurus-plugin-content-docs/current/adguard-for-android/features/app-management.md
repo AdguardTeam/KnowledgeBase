@@ -20,11 +20,11 @@ Klepnutím na aplikaci můžete spravovat její nastavení:
 - Filtrovat provoz HTTPS (pro aplikace, které nejsou v prohlížeči, vyžaduje [instalaci certifikátu CA AdGuard do systémového úložiště](/adguard-for-android/solving-problems/https-certificate-for-rooted/), k dispozici na zařízeních s přístupem root)
 - Směrovat skrze zadaný proxy server nebo AdGuard VPN v režimu integrace
 
-![App management in Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![App management: Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
 Z kontextového menu můžete také přistupovat ke statistikám aplikace.
 
-![App management in Chrome. Context menu \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![App management: Chrome Context menu \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
 ### “Kompatibilní” a ”nekompatibilní” aplikace
 

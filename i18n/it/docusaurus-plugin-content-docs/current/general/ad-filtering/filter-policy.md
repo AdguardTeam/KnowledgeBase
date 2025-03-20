@@ -26,7 +26,7 @@ Un **ad blocker**, o blocco annunci, è uno strumento software o hardware proget
 
 Un **filtro** (o un **elenco di filtri**) è una serie di regole di filtraggio, per filtrare i contenuti e bloccare vari tipi di inserzioni e altri tipi di contenuti, utilizzando gli ad blocker. Questi filtri, solitamente, funzionano al livello del browser web, programma, o server DNS.
 
-Gli **anti-adblock** sono tecnologie utilizzate dai siti web o dalle applicazioni, intese a rilevare il blocco degli annunci e reagirvi in modi differenti: tracciamento, reiniezione delle inserzioni, incoraggiamento a disabilitare il blocco di annunci (cosiddetti "muri adblock"). Gli anti-adblock potrebbero essere di diversi tipi:
+**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so-called “adblock walls”). Gli anti-adblock potrebbero essere di diversi tipi:
 
 - Anti-adblock che bloccano i contenuti del sito web senza offrire un'alternativa: per continuare a utilizzare il sito, l'utente deve disabilitare l'ad blocker sul sito
 - "Muri anti-adblock" con opzioni alternative offerte, come l'acquisto di un abbonamento per continuare a utilizzare il blocco annunci
@@ -81,7 +81,7 @@ L'obiettivo dei filtri di blocco delle inserzioni è bloccare ogni tipo di inser
 - Non blocchiamo i messaggi di rilevamento dell'ad blocker che soddisfano almeno uno dei seguenti criteri:
     - Consentono l'utilizzo del sito e non coprono una significativa quantità di contenuti
     - Forniscono un'alternativa a disabilitare un ad blocker, a patto che tale alternativa non metta a rischio la privacy o la sicurezza degli utenti
-    - Consentono all'utente di procedere ai contenuti del sito web od offrono uno scambio di valore fattibile, che non metta a rischio la privacy o la sicurezza dell'utente
+    - They allow the user to proceed to the website’s content
     - Alcune regole ereditarie potrebbero continuare a bloccare i messaggi che soddisfano uno o più di questi criteri. Se identificate, tali regole saranno gestite secondo questa politica
 - I gruppi di mining non sono bloccati se sono pubblici e non utilizzati esclusivamente per scopi malevoli
 

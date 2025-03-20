@@ -11,7 +11,7 @@ AdGuard hesabınız için iki faktörlü kimlik doğrulamayı ayarlamanızı ön
 
 ## Nasıl ayarlanır
 
-1. [AdGuard hesabınıza](https://auth.adguard.com/login.html) giriş yapın ve *Ayarlar* sekmesine gidin:
+1. Log into your [AdGuard account](https://auth.adguardaccount.com/login.html) and go to the *Settings* tab:
 
  ![AdGuard Hesap ayarları *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 

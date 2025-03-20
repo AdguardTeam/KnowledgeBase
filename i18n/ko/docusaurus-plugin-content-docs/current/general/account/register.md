@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## AdGuard 계정이란 무엇인가요?
 
-[AdGuard 계정](https://my.adguard.com/)은 AdGuard 라이선스 및 구독, 활성 기기, 구매 내역, 기본 설정 언어 및 기타 기본 설정에 대한 정보를 보관하는 사용자 계정입니다. 유효한 라이선스가 포함되어 있는 경우, 많은 AdGuard 제품을 AdGuard 계정으로 활성화할 수 있습니다.
+[AdGuard 계정](https://adguardaccount.com/)은 AdGuard 라이선스 및 구독, 활성 기기, 구매 내역, 기본 설정 언어 및 기타 기본 설정에 대한 정보를 보관하는 사용자 계정입니다. 유효한 라이선스가 포함되어 있는 경우, 많은 AdGuard 제품을 AdGuard 계정으로 활성화할 수 있습니다.
 
 ## 계정을 만드는 방법
 
@@ -29,4 +29,4 @@ AdGuard 앱에서 직접 계정을 생성할 수도 있습니다. *로그인* �
 
 ## 소셜 네트워크를 통해 계정을 만드는 방법
 
-소셜 네트워크를 통해 계정을 만들려면 [링크](https://auth.adguard.com/login.html)를 따라 계정에 로그인하기만 하면 됩니다. 가입을 완료한 후 받은 편지함을 확인하면 확인 이메일이 전송됩니다. 비밀번호를 설정하면 끝입니다! 이제 [AdGuard 계정의 모든 기능](https://adguard.com/kb/general/account/features/)을 사용할 수 있습니다.
+소셜 네트워크를 통해 계정을 만들려면 [링크](https://auth.adguardaccount.com/login.html)를 클릭하고 계정에 로그인하기만 하면 됩니다. 가입을 완료한 후 받은 편지함을 확인하면 확인 이메일이 전송됩니다. 비밀번호를 설정하면 끝입니다! 이제 [AdGuard 계정의 모든 기능](https://adguard.com/kb/general/account/features/)을 사용할 수 있습니다.

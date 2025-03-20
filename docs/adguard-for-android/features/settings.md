@@ -31,7 +31,7 @@ Under *App and filter updates*, you can configure automatic filter updates and s
 
 ![Advanced *mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-The *Low-level settings* section is for expert users. [Read more about low-level settings](/adguard-for-android/solving-problems/low-level-settings/)
+The *Low-level settings* section is for expert users. [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
 
 ![Low-level settings *mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 

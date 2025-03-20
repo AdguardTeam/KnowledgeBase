@@ -43,4 +43,4 @@ Please note that the steps provided are based on the Google Pixel 7 smartphone. 
 1. AdGuardを再起動してみる
 2. 正しい証明書（AdGuard Personal CA）をもう一度インストールしてみてください。
 
-それでも問題が発生し、証明書をインストールできない場合は、サポートチームの support@adguard.com （日本語対応）までご連絡ください。
+If you still encounter a problem and can't install the certificate, please contact our support team at <support@adguard.com>.

@@ -20,11 +20,11 @@ Ao tocar em um aplicativo, você pode gerenciar suas configurações:
 - Filtre o tráfego HTTPS (para aplicativos que não sejam de navegador, é necessário [instalar o certificado CA do AdGuard no armazenamento do sistema](/adguard-for-android/solving-problems/https-certificate-for-rooted/), disponível em dispositivos com acesso root
 - Roteie-o através do servidor proxy especificado ou AdGuard VPN no modo de integração
 
-![Gerenciamento de aplicativos no Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![Gerenciamento de aplicativos: Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
 No menu de contexto, você também pode acessar as estatísticas do aplicativo.
 
-![Gerenciamento de aplicativos no Chrome. Menu de contexto \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![Gerenciamento de aplicativos: menu contextual do Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
 ### Aplicativos “sem problemas” e “problemáticos”
 

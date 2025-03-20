@@ -38,7 +38,7 @@ sidebar_position: 4
 
 다음은 사용할 수 있는 몇 가지 정보 출처입니다.
 
-[현지화 가이드](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html)에는 다양한 언어 목록이 포함되어 있습니다. 다른 언어의 복수형 수는 `nplurals=2`, `nplurals=4` 등과 같은 방식으로 표시됩니다. 등호 기호 `=` 뒤의 숫자는 해당 언어의 복수형 개수를 나타냅니다.
+[현지화 가이드](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html)에는 다양한 언어 목록이 포함되어 있습니다. 다른 언어의 복수형 수는 `nplurals=2`, `nplurals=4` 등과 같은 방식으로 표시됩니다. The numeral after the equals sign `=` indicates the number of plural forms of the respective language.
 
 또한 [Unicode Common Locale Data Repository(CLDR)](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules)에서 복수형에 대한 정보를 확인할 수 있습니다. CLDR 복수형 규칙은 10진수(1.5, 2.3, 100.1…)에 대한 추가 단어 형식을 나타내지만 AdGuard 번역에는 사용하지 않습니다.
 

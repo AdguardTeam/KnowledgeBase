@@ -26,7 +26,7 @@ sidebar_position: 6
 
 **过滤器**（或者，**过滤器列表**）是一套过滤规则，旨在使用广告拦截程序过滤内容和拦截各种类型的广告和其他内容。 这些过滤器通常在浏览器、程序或 DNS 服务器级别上运行。
 
-**Anti-adblock**（中文：反广告拦截）是网站或应用程序使用的一种技术，旨在检测广告拦截并以不同方式对其做出反应：跟踪、重新注入广告、鼓励禁用广告拦截器（即所谓的“广告拦截墙”（英文：Adblock walls））。 反广告拦截有多种类型
+**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so-called “adblock walls”). 反广告拦截有多种类型
 
 - 不提供其他选择的 Anti-adblock：要继续使用网站，用户必须禁用网站上的广告拦截程序。
 - 提供替代选项的 “Anti-adblock wall”，例如购买订阅以继续使用广告拦截程序。
@@ -81,7 +81,7 @@ AdGuard 广告拦截的过滤器包含以下过滤器：
 - 如果广告拦截程序检测到的信息至少满足以下条件之一，我们将不予拦截：
     - 监测到的信息允许不干扰网站使用体验，不会覆盖大量页面内容。
     - 监测到的信息提供禁用广告拦截器的替代方案，但这种替代方案不会危及用户的隐私或安全。
-    - 监测到的信息允许用户继续浏览网站内容，或提供可行的价值交换，不会危及用户的隐私或安全。
+    - They allow the user to proceed to the website’s content
     - 某些传统规则可能会继续拦截符合上述一个或多个标准的信息。 如果发现此类规则，将依照政策进行处理。
 - 如果网络矿池是公开的，且不完全用于恶意目的，则不会被封锁。
 

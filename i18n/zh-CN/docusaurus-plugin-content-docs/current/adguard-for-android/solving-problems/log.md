@@ -35,4 +35,4 @@ AdGuard 致力于保护用户的个人隐私。 我们严格遵守我们的[隐�
 如果您有兴趣跟踪问题的解决流程并与开发人员进行对话，我们建议您在完成前三个步骤后采取以下步骤：
 
 1. 稍等片刻，然后返回「*高级*」屏幕，通过 「*导出日志和系统信息*」以导出日志。 然后按照这些[指示说明](/guides/report-bugs.md)在 GitHub 上报告错误。
-1. 在 GitHub 上创建问题后，将日志文件发送至 devteam@adguard.com。 包括错误发生的时间并附加指向您的问题或其编号的链接（它在标题旁边显示为 #number）。 或者，您可以将日志文件上传到 Google Drive 并将其发送至 devteam@adguard.com。 将文件链接添加到您的 GitHub 问题。
+1. After creating an issue on GitHub, send the log file to <devteam@adguard.com>. 包括错误发生的时间并附加指向您的问题或其编号的链接（它在标题旁边显示为 #number）。 Alternatively, you can upload the log file to Google Drive and send it to <devteam@adguard.com>. 将文件链接添加到您的 GitHub 问题。

@@ -21,7 +21,7 @@ Se quiser pular a parte da descrição e ir direto para a ação, você pode se 
 
 :::note
 
-Para obter a versão beta ou a compilação noturna do AdGuard para iOS, primeiro você precisa instalar o [Testflight](https://apps.apple.com/app/testflight/id899247664) no seu dispositivo iOS.
+Para obter a versão beta ou a compilação noturna do AdGuard para iOS, primeiro você precisa instalar o [TestFlight](https://apps.apple.com/app/testflight/id899247664) no seu dispositivo iOS.
 
 :::
 
@@ -37,10 +37,10 @@ O método acima é o melhor, mas você pode usar outros, se necessário:
 
 ## Como ativar a chave beta no aplicativo para o iOS {#ios}
 
-Se você já recebeu uma chave beta e ela está listada em sua conta `adguard.com`, acesse o aplicativo e abra a seção de licenças (Obtenha Premium). Uma vez lá, insira as credenciais da sua conta do AdGuard. Depois disso, os recursos premium ficarão disponíveis automaticamente.
+Se você já recebeu uma chave beta ou nightly e ela está listada em sua conta `adguard.com`, acesse o aplicativo e abra a seção de licenças (Obtenha Premium). Uma vez lá, insira as credenciais da sua conta do AdGuard. Depois disso, os recursos premium ficarão disponíveis automaticamente.
 
 ### E o que mais?
 
 Não há muito mais a acrescentar. Você não precisa se esforçar para encontrar bugs. Você pode continuar usando o AdGuard normalmente. No entanto, se você encontrar um bug, por favor, nos informe. É claro que apreciamos qualquer esforço adicional.
 
-Ocasionalmente, você receberá nossos boletins, mantendo-o informado sobre as últimas mudanças no beta (caso você tenha perdido) e outras notícias importantes. Você pode cancelar a assinatura a qualquer momento.
+Ocasionalmente, você receberá nossos boletins, mantendo-o informado sobre as últimas mudanças no beta ou nightly (caso você tenha perdido) e outras notícias importantes. Você pode cancelar a assinatura a qualquer momento.

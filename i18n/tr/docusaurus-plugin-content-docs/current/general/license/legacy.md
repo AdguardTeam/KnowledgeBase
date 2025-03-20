@@ -46,7 +46,7 @@ Premium lisanslar da değişmedi ve platformla sınırlı kaldı. Ayrıca **Prem
 
 ## Eski (güncel olmayan) bir anahtarım var. Benim için hangi yenileme/yükseltme seçenekleri mevcut?
 
-Bunu [yenileme sayfasında](https://adguard.com/renew.html) veya [AdGuard hesabınızda](https://my.adguard.com/main.html) kontrol edebilirsiniz:
+You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://adguardaccount.com/main.html):
 
 ![Upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
 > Go to "My licenses" tab and check what actions are available to you for each specific key. Aşağıda belirli örneklerle açıklayacağız.

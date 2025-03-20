@@ -11,9 +11,9 @@ Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multif
 
 ## Cerințele Sistemului
 
-**Operating system:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
+**Operating system:** Microsoft Windows 11, 10, 8.1, 8.
 
-**RAM:** cel puțin 512 MB.
+**RAM:** at least 1 GB.
 
 **Spațiu liber pe disc:** 150 Mbytes.
 

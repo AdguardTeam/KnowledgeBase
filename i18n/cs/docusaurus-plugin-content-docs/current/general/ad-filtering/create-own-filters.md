@@ -617,7 +617,7 @@ kde:
 :::caution Omezení
 
 1. Modifikátor `$header` lze použít pouze při příjmu záhlaví. Pokud je tedy požadavek zablokován nebo přesměrován v dřívější fázi, nelze modifikátor použít.
-1. V rozšíření prohlížeče Adguard je `$header` modifikátor kompatibilní pouze s [`$csp`](#csp-modifier), [`$removeheader`](#removeheader-modifier), [`$important`](#important-modifier), a [`$badfilter`](#badfilter-modifier).
+1. V rozšíření prohlížeče AdGuard je `$header` modifikátor kompatibilní pouze s [`$csp`](#csp-modifier), [`$removeheader`](#removeheader-modifier), [`$important`](#important-modifier), a [`$badfilter`](#badfilter-modifier).
 
 :::
 
@@ -917,7 +917,7 @@ Pravidla s modifikátorem `$ping` nejsou podporována AdGuardem pro iOS a Safari
 
 #### **`$script`** {#script-modifier}
 
-Pravidlo odpovídá požadavkům na skripty, např. javascript, vbscript.
+Pravidlo odpovídá požadavkům na skripty, např. JavaScript, VBScript.
 
 #### **`$stylesheet`** {#stylesheet-modifier}
 
@@ -978,7 +978,7 @@ Modifikátor `$websocket` je podporován ve všech produktech AdGuardu kromě Bl
 
 #### **`$xmlhttprequest`** {#xmlhttprequest-modifier}
 
-Pravidlo se vztahuje pouze na požadavky ajax (požadavky odeslané prostřednictvím objektu javascript `XMLHttpRequest`).
+Pravidlo se vztahuje pouze na požadavky ajax (požadavky odeslané prostřednictvím objektu JavaScript `XMLHttpRequest`).
 
 :::note
 
@@ -1044,6 +1044,21 @@ Doporučujeme také seznámit se s [přehledem filtrů Adblock Plus](https://adb
 - ✅ — plně podporováno
 - ✅ * — podporováno, ale spolehlivost se může lišit nebo se mohou vyskytnout omezení; více informací naleznete v popisu modifikátoru
 - ❌ — nepodporováno
+
+:::
+
+:::info
+
+Ve výchozím nastavení, bez zadání dalších modifikátorů typu obsahu, jsou modifikátory pravidel výjimek nadřazeny ostatním základním pravidlům pouze pro požadavky na dokument hlavního rámce (viz [`$document`](#document-modifier) pro více informací o dokumentu hlavního rámve).
+
+Např:
+
+- Webová stránka `example.com` obsahuje `iframe` odkazující na `example1.com`.
+- Použije se pravidlo `#%#//console.log('test')`.
+
+V tomto případě se log v konzole zobrazí dvakrát: jednou pro hlavní dokument rámce a jednou pro `iframe`.
+
+Pokud přidáte pravidlo `@@|||example.com^$jsinject`, log se pro `iframe` zobrazí pouze jednou.
 
 :::
 
@@ -3017,7 +3032,7 @@ Modifikátor [`$important`](#important-modifier) přidává `10^6` k prioritě p
 
 :::note
 
-Modifikátor [`$replace`](#replace-modifier) má přednost před všemi pravidly blokování kategorií 1-3, stejně jako před pravidly výjimek z kategorií 3-5, **kromě** [`$content`](#content-modifier), protože výjimka s modifikátorem `$content` má přednost před všemi pravidly `$replace`.
+Modifikátor [`$replace`](#replace-modifier) má přednost před všemi pravidly blokování kategorií 1–3, stejně jako před pravidly výjimek z kategorií 3–5, **kromě** [`$content`](#content-modifier), protože výjimka s modifikátorem `$content` má přednost před všemi pravidly `$replace`.
 
 :::
 
@@ -4872,7 +4887,7 @@ Následující skriptlety lze také použít pro účely ladění:
 ### Zkratky produktů {#what-product}
 
 1. `aplikací CoreLibs` — [AdGuard pro Windows](/adguard-for-windows/features/home-screen), [AdGuard pro Mac](/adguard-for-mac/features/main) a [AdGuard pro Android](/adguard-for-android/features/protection/ad-blocking)
-1. `AdGuard pro Chromium` — [Rozšíření prohlížeče AdGuard](/adguard-browser-extension/availability) pro Chrome a další prohlížeče založené na Chromium, např. nový Microsoft Edge, Opera
+1. `AdGuard pro Chromium` — [Rozšíření prohlížeče AdGuard](/adguard-browser-extension/availability) pro Chrome a další prohlížeče založené na Chromium, např. nový Microsoft Edge a Opera
 1. `Adguard pro Chrome MV3` — [Rozšíření prohlížeče AdGuard pro Chrome MV3](/adguard-browser-extension/mv3-version)
 1. `Adguard pro Firefox` — [Rozšíření prohlížeče AdGuard](/adguard-browser-extension/availability) pro Firefox
 1. `AdGuard pro iOS` — [AdGuard pro iOS](/adguard-for-ios/features/safari-protection) a AdGuard pro iOS Pro (pro mobilní prohlížeč Safari)

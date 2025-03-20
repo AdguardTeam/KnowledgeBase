@@ -35,4 +35,4 @@ Chcete-li shromáždit záznam **ladění** a odeslat nám jej, musíte provést
 Pokud máte zájem sledovat řešení svého problému a navázat dialog s vývojáři, doporučujeme vám po dokončení prvních tří kroků provést následující:
 
 1. Chvíli počkejte, poté se vraťte na obrazovku *Pokročilé* a exportujte záznamy pomocí *Exportovat záznamy a systémové informace*. Poté nahlaste chybu na GitHub podle těchto [pokynů](/guides/report-bugs.md).
-1. Po vytvoření problému na GitHubu odešlete soubor se záznamem na adresu devteam@adguard.com. Uveďte čas chyby a připojte odkaz na problém nebo jeho číslo (zobrazuje se jako #číslo vedle názvu). Soubor se záznamem můžete také nahrát na Disk Google a odeslat jej na adresu devteam@adguard.com. Přidejte odkaz na soubor do svého problému na GitHubu
+1. Po vytvoření problému na GitHubu odešlete soubor se záznamem na adresu <devteam@adguard.com>. Uveďte čas chyby a připojte odkaz na problém nebo jeho číslo (zobrazuje se jako #číslo vedle názvu). Soubor se záznamem můžete také nahrát na Disk Google a odeslat jej na adresu <devteam@adguard.com>. Přidejte odkaz na soubor do svého problému na GitHubu

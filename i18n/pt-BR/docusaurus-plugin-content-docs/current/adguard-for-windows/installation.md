@@ -11,9 +11,9 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 ## Requisitos do sistema
 
-**Sistema operacional:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
+**Sistema operacional:** Microsoft Windows 11, 10, 8.1, 8.
 
-**RAM:** 512 MB ou mais.
+**RAM:** pelo menos 1 GB.
 
 **Espaço livre em disco:** 150 Mbytes.
 
@@ -71,7 +71,7 @@ Se precisar desinstalar ou reinstalar o AdGuard, faça o seguinte:
 
 ### Modo avançado {#advanced}
 
-Caso a desinstalação regular não funcione por qualquer motivo, você pode tentar usar um método avançado. First of all, you need to [download the uninstaller tool](https://static.adtidy.org/windows/uninstaller/uninstal_utility.zip) created by our developers. Extraia o arquivo para qualquer pasta em seu PC, execute o arquivo **Adguard.UninstallUtility.exe** e permita que o aplicativo faça alterações em seu dispositivo. Em seguida, siga as instruções abaixo:
+Caso a desinstalação regular não funcione por qualquer motivo, você pode tentar usar um método avançado. Antes de tudo, é necessário [baixar a ferramenta de desinstalação](https://cdn.adtidy.org/distr/windows/Uninstall_Utility.zip) criada por nossos programadores. Extraia o arquivo para qualquer pasta em seu PC, execute o arquivo **Adguard.UninstallUtility.exe** e permita que o aplicativo faça alterações em seu dispositivo. Em seguida, siga as instruções abaixo:
 
 - Selecione *AdGuard VPN* e a categoria de desinstalação *Padrão*, depois clique em *Desinstalar*.
 

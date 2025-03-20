@@ -24,7 +24,7 @@ Al tocar una aplicación, puedes administrar su configuración:
 
 Desde el menú contextual, también puedes acceder a las estadísticas de la aplicación.
 
-![Gestión de aplicaciones en Chrome. Menú contextual \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![Administrador de la Aplicación: menú contextual de Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
 ### Aplicaciones “libres de problemas” y “problemáticas”
 

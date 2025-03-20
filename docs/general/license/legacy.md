@@ -47,17 +47,17 @@ For example, this is how the 1+1 key looks like:
 
 ## How to renew or upgrade a legacy key
 
-You can renew or upgrade a legacy license in your [AdGuard account](https://adguardaccount.com) or on the [renewal page](https://adguard.com/renew.html).
+You can extend/renew or upgrade a legacy license in your [AdGuard account](https://adguardaccount.com) or on the [Extend or upgrade page](https://adguard.com/renew.html).
 
-To renew or update an outdated license in your AdGuard account, go to the *Licenses* tab, find the license you need, and select one of the available options.
+To extend/renew or upgrade a legacy license in your AdGuard account, go to the *Licenses* tab, find the license you need, and select one of the available options.
 
 ![Renew or upgrade a license in your AdGuard account](https://cdn.adtidy.org/blog/new/rf4zgklicense2.png)
 
-Or, go to the [renewal page](https://adguard.com/renew.html), enter your license, and click *Apply*. On the new page select one of the available options.
+Or go to the [Extend or upgrade page](https://adguard.com/renew.html), enter your license, and click *Apply*. On the new page, select one of the available options.
 
 ### Licenses for 1/2/3 devices
 
-**Yearly** licenses for 1, 2, 3 devices can be upgraded to either Personal or Family:
+Mobile Yearly licenses for 3 devices can be converted to Personal licenses or upgraded to Family ones:
 
 ![Upgrade Yearly licenses for 1, 2, 3 devices](https://cdn.adtidy.org/blog/new/fh5r7upgrade3.png)
 

@@ -19,9 +19,9 @@ HTTPトラフィックはどのような場合でもフィルタリングされ�
 
 ### Windows の場合 {#windows}
 
-1. AdGuard がインストール済みパソコンのIPアドレスをメモしてください。
+1. Note the IP address of your computer with AdGuard installed.
 
-1. AdGuard による保護がオンになっていることを確認してください。 Windowsパソコンでは、AdGuard アプリ内の設定⚙️の「**ネットワーク**」タブにある「**AdGuard をHTTPプロキシとして使用する**」チェックボックスにチェックを入れます。 Mac の場合は、 **設定⚙️** → **設定** → **ネットワーク** に移動して、「**HTTP プロキシ**」を有効にします。
+1. AdGuard による保護がオンになっていることを確認してください。 Windowsパソコンでは、AdGuard アプリ内の設定⚙️の「**ネットワーク**」タブにある「**AdGuard をHTTPプロキシとして使用する**」チェックボックスにチェックを入れます。 On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
 1. AdGuard がインストールされているパソコンで、こちらのリンクをたどってください： [ http://local.adguard.org/cert](http://local.adguard.org/cert)
 
@@ -55,15 +55,15 @@ HTTPトラフィックはどのような場合でもフィルタリングされ�
 
 1. 「*プロキシサーバーの使用*」タブの「**設定**」をクリックします。
 
-1. トグルをオンにします。 「**プロキシIPアドレス**」には、コンピュータのIPアドレス（ステップ1からのもの）を入力します。 「**ポート**」には、デスクトップ版AdGuardアプリのネットワーク設定で選択したポートを入力します。
+1. トグルをオンにします。 For **Proxy IP address**, type the IP address of your computer that you noted in step 1. 「**ポート**」には、デスクトップ版AdGuardアプリのネットワーク設定で選択したポートを入力します。
 
 1. 「**保存**」をクリックします。
 
 ### Mac の場合 {#mac}
 
-1. AdGuardがインストール済みコンピュータのIPアドレスをメモしてください。
+1. Note the IP address of your computer with installed AdGuard.
 
-1. AdGuard による保護がオンになっていることを確認してください。 Windowsパソコンでは、AdGuard アプリ内の設定⚙️の「**ネットワーク**」タブにある「**AdGuard をHTTPプロキシとして使用する**」チェックボックスにチェックを入れます。 Mac の場合は、 **設定⚙️** → **設定** → **ネットワーク** に移動して、「**HTTP プロキシ**」を有効にします。
+1. AdGuard による保護がオンになっていることを確認してください。 Windowsパソコンでは、AdGuard アプリ内の設定⚙️の「**ネットワーク**」タブにある「**AdGuard をHTTPプロキシとして使用する**」チェックボックスにチェックを入れます。 On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
 1. ブラウザを使用してこちらのリンクをたどってください： [ http://local.adguard.org/cert](http://local.adguard.org/cert)
 
@@ -93,9 +93,9 @@ HTTPトラフィックはどのような場合でもフィルタリングされ�
 
 ### Android の場合 {#android}
 
-1. AdGuardがインストール済みコンピュータのIPアドレスをメモしてください。
+1. Note the IP address of your computer with installed AdGuard.
 
-1. AdGuard による保護がオンになっていることを確認してください。 Windowsパソコンでは、AdGuard アプリ内の設定⚙️の「**ネットワーク**」タブにある「**AdGuard をHTTPプロキシとして使用する**」チェックボックスにチェックを入れます。 Mac の場合は、 **設定⚙️** → **設定** → **ネットワーク** に移動して、「**HTTP プロキシ**」を有効にします。
+1. AdGuard による保護がオンになっていることを確認してください。 Windowsパソコンでは、AdGuard アプリ内の設定⚙️の「**ネットワーク**」タブにある「**AdGuard をHTTPプロキシとして使用する**」チェックボックスにチェックを入れます。 On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
 1. AdGuardがインストール済みのデバイスで、ブラウザを使用してこちらのリンクをたどってください： [ http://local.adguard.org/cert](http://local.adguard.org/cert)
 
@@ -109,13 +109,13 @@ HTTPトラフィックはどのような場合でもフィルタリングされ�
 
 1. アクティブなWi-Fiネットワークの詳細設定を開きます。
 
-1. **プロキシタイプ** を **手動**に変更します。 「**プロキシホスト名**」には、パソコンのIPアドレス（ステップ1からのもの）を入力します。 「**プロキシポート**」には、デスクトップ版AdGuardアプリのネットワーク設定で選択したポートを入力します。
+1. **プロキシタイプ** を **手動**に変更します。 For **Proxy hostname**, enter the noted IP address of your computer you noted in step 1. 「**プロキシポート**」には、デスクトップ版AdGuardアプリのネットワーク設定で選択したポートを入力します。
 
 ### iOS （iPhone/iPad）の場合 {#ios}
 
-1. AdGuardがインストール済みコンピュータのIPアドレスをメモしてください。
+1. Note the IP address of your computer with installed AdGuard.
 
-1. AdGuard による保護がオンになっていることを確認してください。 Windowsパソコンでは、AdGuard アプリ内の設定⚙️の「**ネットワーク**」タブにある「**AdGuard をHTTPプロキシとして使用する**」チェックボックスにチェックを入れます。 Mac の場合は、 **設定⚙️** → **設定** → **ネットワーク** に移動して、「**HTTP プロキシ**」を有効にします。
+1. AdGuard による保護がオンになっていることを確認してください。 Windowsパソコンでは、AdGuard アプリ内の設定⚙️の「**ネットワーク**」タブにある「**AdGuard をHTTPプロキシとして使用する**」チェックボックスにチェックを入れます。 On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
 1. AdGuardがインストール済みのデバイスで、ブラウザを使用してこちらのリンクをたどってください： [ http://local.adguard.org/cert](http://local.adguard.org/cert)
 
