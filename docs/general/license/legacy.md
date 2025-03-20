@@ -45,7 +45,7 @@ For example, this is how the 1+1 key looks like:
 
 >All the outdated licenses have a "legacy" badge in the AdGuard account. And they are automatically converted to a new type when you either renew or upgrade them. But there are some nuances. Let's see which licenses can be converted to a new type and how to do it.
 
-## How to renew or upgrade a legacy key?
+## How to renew or upgrade a legacy key
 
 You can renew or upgrade a legacy license in your [AdGuard account](https://adguardaccount.com) or on the [renewal page](https://adguard.com/renew.html).
 
@@ -72,7 +72,9 @@ You can also upgrade your license to Lifetime:
 
 ### Licenses for 4+ devices (up to 9)
 
-**Yearly** licenses for 4 or more devices can be upgraded to Family licenses, but **Lifetime** licenses cannot be upgraded due to technical limitations.
+**Yearly** licenses for 4 or more devices can be upgraded to Family and Lifetime licenses.
+
+However, if you already have a **Lifetime** license, it cannot be upgraded due to technical limitations.
 
 ### Licenses for 9+ devices
 
