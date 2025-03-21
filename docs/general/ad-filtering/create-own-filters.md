@@ -629,11 +629,11 @@ The modifier part, `":" h_value`, may be omitted. In that case, the modifier mat
   So if the request is blocked or redirected at an earlier stage, the modifier cannot be applied.
 
 1. In AdGuard Browser Extension, the `$header` modifier is only compatible with
-  [`$csp`](#csp-modifier), [`$removeheader`](#removeheader-modifier) (only response headers), [`$important`](#important-modifier),
+  [`$csp`](#csp-modifier), [`$removeheader`](#removeheader-modifier) (response headers only), [`$important`](#important-modifier),
   [`$badfilter`](#badfilter-modifier), [`$domain`](#domain-modifier), [`$third-party`](#third-party-modifier),
   [`$match-case`](#match-case-modifier), and [content-type modifiers](#content-type-modifiers) such as
-  [`$script`](#script-modifier) and [`$stylesheet`](#stylesheet-modifier). The rules which have any other
-  modifiers are considered invalid and will be discarded.
+  [`$script`](#script-modifier) and [`$stylesheet`](#stylesheet-modifier). The rules with other modifiers
+  are considered invalid and will be discarded.
 
 :::
 
@@ -2467,7 +2467,7 @@ In case of multiple `$removeheader` rules matching a single request, we will app
 [AdGuard for Chrome MV3][ext-mv3] has some limitations:
 
 - Negation and allowlist rules are not supported.
-- Group of similar `$removeheader` rules will be combined into one. Example:
+- Group of similar `$removeheader` rules will be combined into one declarative rule. For example:
 
     ```bash
     ||testcases.adguard.com$xmlhttprequest,removeheader=p1case1
