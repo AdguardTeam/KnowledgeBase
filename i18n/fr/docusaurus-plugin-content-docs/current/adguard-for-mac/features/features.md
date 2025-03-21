@@ -47,7 +47,7 @@ A setting that blocks access to malicious and phishing websites and protects you
 
 ## Assistant de navigateur
 
-An extension that complements the desktop program and allows you to manage filtering from your browser
+Une extension qui complète le programme de bureau et vous permet de gérer le filtrage depuis votre navigateur
 
 [Assistant AdGuard](/adguard-for-mac/features/browser-assistant.md)
 

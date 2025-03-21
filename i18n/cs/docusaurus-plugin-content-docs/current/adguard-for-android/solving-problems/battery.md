@@ -23,6 +23,12 @@ Přístup k ní získáte v sekci *Statistiky* → *Využití baterie*.
 
 Uvnitř najdete graf, který zobrazuje spotřebu zdrojů baterie AdGuard za posledních 24 hodin s možností získat podrobnější údaje po jednotlivých hodinách klepnutím v grafu. Kromě toho je zde také číselný rozpis příslušných údajů a krátké technické vysvětlení.
 
+There are several other parameters below the chart: *CPU foreground*, *CPU background*, *Mobile data usage*, and *Wi-Fi data usage*.
+
+*CPU foreground* and *CPU background* show how much CPU time is used by AdGuard when the app is active or running in the background.
+
+And with *Mobile data usage* and *Wi-Fi data usage*, you can see how much traffic AdGuard consumed when your phone was using mobile Internet or connected to Wi-Fi.
+
 ### Kolik prostředků baterie AdGuard skutečně spotřebovává?
 
 Nejprve si řekneme něco málo z teorie a uvedeme si souvislosti s potřebnými údaji.

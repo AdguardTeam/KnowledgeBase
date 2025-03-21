@@ -35,9 +35,9 @@ Obecná, pokročilá a nízkoúrovňová nastavení, která umožňují vybrat j
 
 ## Průvodce nízkoúrovňových nastavení
 
-Descriptions of the low-level settings available in AdGuard v4.3 for Android and later.
+Popisy nízkoúrovňových nastavení dostupných v aplikaci AdGuard v4.3 pro Android a novější.
 
-[Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
+[Průvodce nízkoúrovňovým nastavením](/adguard-for-android/features/low-level-settings.md)
 
 ## Assistant
 
