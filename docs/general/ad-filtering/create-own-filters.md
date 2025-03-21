@@ -1387,7 +1387,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$permissions](#permissions-modifier) | ✅ [*[4]](#permissions-modifier-limitations) | ✅ | ✅ | ✅ [*[4]](#permissions-modifier-limitations) | ❌ | ❌ | ❌ |
 | [$redirect](#redirect-modifier) | ✅ | ✅ | ✅ [*[5]](#redirect-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
 | [$redirect-rule](#redirect-rule-modifier) | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
-| [$referrerpolicy](#referrerpolicy-modifier) | ✅ | ❌ | ⏳ | ❌ | ❌ | ❌ | ❌ |
+| [$referrerpolicy](#referrerpolicy-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$removeheader](#removeheader-modifier) | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
 | [$removeparam](#removeparam-modifier) | ✅ | ✅ | ✅ [*[6]](#removeparam-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
 | [$replace](#replace-modifier) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
