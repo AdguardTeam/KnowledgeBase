@@ -3,9 +3,9 @@ title: Domande frequenti sulle licenze ereditarie
 sidebar_position: 6
 ---
 
-Abbiamo redatto questo articolo per evitare confusione e spiegare nel dettaglio come puoi rinnovare/aggiornare una licenza obsoleta (ereditaria) di AdGuard.
+We have written this article to avoid confusion and explain in detail how you can renew/upgrade a legacy AdGuard license.
 
-## Sulle licenze obsolete
+## About legacy licenses
 
 Inizialmente, le licenze dei seguenti tipi erano disponibili per l'attivazione sui prodotti di AdGuard:
 
@@ -27,57 +27,55 @@ Per tutti i tipi (Standard, Mobile, Premium), esistevano opzioni per una licenza
 
 A ottobre 2019, AdGuard è passato al nuovo sistema di licenze: da allora, le licenze sono ancora acquistabili per 1 anno o A Vita, ma le tipologie sono diventate: **Personale ** (fino a 3 dispositivi) o **Famiglia** (fino a 9 dispositivi).
 
-Ancora una modifica: **le chiavi di licenza del nuovo tipo sono ora utilizzabili su qualsiasi dispositivo, in qualsiasi combinazione. Ad esempio, una licenza Personale è utilizzabile su Android, Mac e iOS, proprio come su due computer Windows e un tablet Apple.**
+Another change is that the **new types of license keys can now be used on any device, in any combination**. For example, a Personal license can be used on Android, Mac and iOS, as well as on two Windows computers and an Apple tablet.
 
-## Cosa è successo alle licenze obsolete?
+## What happened to the legacy licenses?
 
-Le licenze standard sono state automaticamente rese universali, a significare che sono attivabili su qualsiasi dispositivo.
+**Standard licenses** were automatically made **universal**, which means that they can be activated on any device.
 
-Le licenze mobili sono rimaste invariate e limitate alla piattaforma (sono ancora utilizzabili soltanto su telefoni o tablet).
+**Mobile licenses** remained unchanged and platform-limited (they can still only be used on phones or tablets).
 
-Anche le licenze Premium sono rimaste invariate e limitate alla piattaforma. E, sebbene **le licenze Premium siano ora mostrate nel tuo profilo personale dal numero totale di dispositivi**, sono ancora attivabili su serie di dispositivi desktop + mobile.
+**Premium licenses** also remained unchanged and platform-limited. E, sebbene **le licenze Premium siano ora mostrate nel tuo profilo personale dal numero totale di dispositivi**, sono ancora attivabili su serie di dispositivi desktop + mobile.
 
 Ad esempio, ecco l'aspetto della chiave 1+1:
 
-![Chiave 1+1](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
+![Chiave 1+1](https://cdn.adtidy.org/blog/new/7rh5nlicense1.png)
 
 *Ma, nonostante il numero totale di dispositivi (2), è attivabile su 1 desktop e 1 dispositivo mobile.*
 > Tutte le licenze obsolete presentano un distintivo "ereditaria" nel profilo AdGuard. E sono automaticamente convertite a un nuovo tipo, al loro rinnovo o aggiornamento. Ma esistono delle sfumature. Vediamo quali licenze sono convertibili in un nuovo tipo e come farlo.
 
-## Ho una chiave (ereditaria) obsoleta. Che opzioni di rinnovo/aggiornamento sono disponibili per me?
+## How to renew or upgrade a legacy key
 
-You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://adguardaccount.com/main.html):
+You can extend/renew or upgrade a legacy license in your [AdGuard account](https://adguardaccount.com) or on the [Extend or upgrade page](https://adguard.com/renew.html).
 
-![Upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
-> Vai alla scheda "Le mie licenze" e controlla quali azioni sono per te disponibili, per ogni specifica chiave. Di seguito, le spiegheremo con esempi specifici.
+To extend/renew or upgrade a legacy license in your AdGuard account, go to the *Licenses* tab, find the license you need, and select one of the available options.
+
+![Renew or upgrade a license in your AdGuard account](https://cdn.adtidy.org/blog/new/rf4zgklicense2.png)
+
+Or go to the [Extend or upgrade page](https://adguard.com/renew.html), enter your license, and click *Apply*. On the new page, select one of the available options.
 
 ### Licenze per 1/2/3 dispositivi
 
-Le licenze **Annuali** per 1, 2, 3 dispositivi, sono convertibili in Personale o Famiglia:
+Mobile Yearly licenses for 3 devices can be converted to Personal licenses or upgraded to Family ones:
 
-![Aggiorna o rinnova](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
-> Scegli a seconda di quanti dispositivi necessiti di proteggere.
+![Upgrade Yearly licenses for 1, 2, 3 devices](https://cdn.adtidy.org/blog/new/fh5r7upgrade3.png)
 
-Invece di rinnovarla, puoi passare a una licenza A Vita:
+> If you have a **Standard license for 3 devices**, it already works as a **Personal** license. If you renew your **Mobile license** for 3 devices, you will be able to use it on a **different set of device**s, not just phones.
 
-![A Vita](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
+You can also upgrade your license to Lifetime:
 
-Le licenze **A Vita** sono convertibili soltanto in Famiglia (9 dispositivi) a causa di limitazioni tecniche:
+![Upgrade to Lifetime](https://cdn.adtidy.org/blog/new/7j4l6gupgrade4.png)
 
-![Aggiornamento A Vita](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
+**Lifetime** licenses can only be upgraded to Family (9 devices) due to technical limitations.
 
 ### Licenze per oltre 4 dispositivi (fino a 9)
 
-Le chiavi **Annuali** di questa configurazione sono convertibili soltanto in una licenza Famiglia:
+**Yearly** licenses for 4 or more devices can be upgraded to Family and Lifetime licenses.
 
-![Licenza Annuale per 4 dispositivi](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png)
-
-Le licenze **A Vita** per 4 o più dispositivi non possono essere aggiornate a causa di limitazioni tecniche:
-
-![Licenza A Vita per 4 dispositivi](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
+However, if you already have a **Lifetime** license, it cannot be upgraded due to technical limitations.
 
 ### Licenze per oltre 9 dispositivi
 
-Le chiavi Premium (5+5 e superiori) e le chiavi personalizzate per oltre 10 dispositivi, acquistate individualmente con l'aiuto dei nostri manager.
+Premium keys (5+5 and more) and custom keys for 10+ devices that you purchased individually with the help of our managers.
 
-Queste rappresentano dei casi abbastanza unici, quindi, se desideri aggiornare la tua licenza a una A Vita, sei pregato di contattarci a partner@adguard.com. Ti faremo un'offerta speciale a seconda della configurazione specifica della tua licenza.
+These are quite unique cases, so if you want to upgrade your license to Lifetime, please contact us at partners@adguard.com. We will make you a special offer depending on the specific configuration of your license.

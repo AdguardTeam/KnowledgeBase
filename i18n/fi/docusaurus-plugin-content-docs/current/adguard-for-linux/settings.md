@@ -55,8 +55,8 @@ Use the `config` command to configure AdGuard for Linux. Subcommands:
 
 - `show`: Show the current configuration in `proxy.yaml`
 - `set`: Configure an option in `proxy.yaml`
-  - `listen_ports.http_proxy`: HTTP listening port
-  - `proxy_mode`: Proxy mode (`manual` or `auto`)
+    - `listen_ports.http_proxy`: HTTP listening port
+    - `proxy_mode`: Proxy mode (`manual` or `auto`)
 - `get`: Get the current status of the above options
 
 ## Manage filters
@@ -64,7 +64,7 @@ Use the `config` command to configure AdGuard for Linux. Subcommands:
 Use the `filters` command to configure AdGuard for Linux. Subcommands:
 
 - `list`: List installed filters
-  - `--all`: View all filters
+    - `--all`: View all filters
 - `install`: Install a filter. Enter the URL of the filter you want to install
 - `enable`: Enable a filter. Enter the name or ID of the filter
 - `disable`: Disable a filter. Enter the name or ID of the filter

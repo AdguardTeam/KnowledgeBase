@@ -23,6 +23,12 @@ Sie können darauf zugreifen, indem Sie zu *Statistiken* → *Batterieverbrauch*
 
 Darin finden Sie ein Diagramm, das den Verbrauch der AdGuard-Batterieressourcen in den letzten 24 Stunden anzeigt, mit der Option, durch Antippen des Diagramms detailliertere Daten von Stunde zu Stunde zu erhalten. Darüber hinaus gibt es auch eine numerische Aufschlüsselung der relevanten Daten und eine kurze technische Erklärung.
 
+There are several other parameters below the chart: *CPU foreground*, *CPU background*, *Mobile data usage*, and *Wi-Fi data usage*.
+
+*CPU foreground* and *CPU background* show how much CPU time is used by AdGuard when the app is active or running in the background.
+
+And with *Mobile data usage* and *Wi-Fi data usage*, you can see how much traffic AdGuard consumed when your phone was using mobile Internet or connected to Wi-Fi.
+
 ### Wie viel Batteriekapazität verbraucht AdGuard wirklich?
 
 Lassen Sie uns zunächst ein paar theoretische Überlegungen anstellen und mit den erforderlichen Daten verknüpfen.
