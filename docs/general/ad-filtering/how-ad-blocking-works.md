@@ -1,93 +1,93 @@
 ---
-title: How ad blocking works
+title: Comment fonctionne le blocage des publicités
 sidebar_position: 1
 ---
 
-AdGuard has many ad-blocking products for different platforms, each with its own unique features. But what unites them all is that they block ads and trackers. This article describes how ad blocking works from the inside.
+AdGuard propose de nombreux produits de blocage des publicités pour différentes plateformes, chacun avec ses propres caractéristiques. Mais ce qui les unit tous, c'est qu'ils bloquent les publicités et les traqueurs. Cet article décrit le fonctionnement du blocage des publicités en détail.
 
-:::note
+:::remarque
 
-We don't cover DNS filtering here. It's a different way of blocking ads, with its own advantages and disadvantages. Follow this link to [learn more about DNS filtering](https://adguard-dns.io/kb/general/dns-filtering#how-does-dns-filtering-work).
+Nous ne traitons pas ici du filtrage DNS. Il s'agit d'une autre manière de bloquer les publicités, avec ses propres avantages et inconvénients. Suivez ce lien pour [en savoir plus sur le filtrage DNS](https://adguard-dns.io/kb/general/dns-filtering#how-does-dns-filtering-work).
 
 :::
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/Xq_CUdh0T_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## General principle
+## Principe général
 
-Filter lists, also called filters, lie at the core of any ad blocker. Filters are literally lists of rules written in a special syntax. Ad blockers can understand this complex syntax. They interpret filtering rules and perform actions on web traffic based on what the rules tell them to do: block specific elements, alter web pages in certain ways, etc.
+Les listes de filtres, également appelées filtres, sont au cœur de tout bloqueur de publicités. Les filtres sont littéralement des listes de règles écrites dans une syntaxe spéciale. Les bloqueurs de publicité peuvent comprendre cette syntaxe complexe. Ils interprètent les règles de filtrage et agissent sur le trafic web en fonction de ce que les règles leur indiquent de faire : bloquer des éléments spécifiques, modifier les pages web d'une certaine manière, etc.
 
-![How ad blocking works](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
+![Comment fonctionne le blocage des publicités](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
 
-## Filter lists
+## Listes de filtres
 
-To better understand ad blocking, it's important to know the underlying principles of how filters work.
+Pour mieux comprendre le blocage des publicités, il est important de connaître les principes sous-jacents du fonctionnement des filtres.
 
-Filtering rules that make up filters are not created automatically. They are developed by filter maintainers, including professionals and volunteers, who use browser developer consoles and other tools (such as the AdGuard's filtering log) to determine which rules will block a particular ad or tracker. This description of the process is very simplistic — some ads are particularly hard to block and require multiple rules, multiple iterations, and the use of complex syntax.
+Les règles de filtrage qui composent les filtres ne sont pas créées automatiquement. Elles sont développées par les personnes qui maintiennent les filtres, y compris des professionnels et des bénévoles, qui utilisent les consoles de développement des navigateurs et d'autres outils (tels que le journal de filtrage d'AdGuard) pour déterminer les règles qui bloqueront une publicité ou un traqueur particulier. Cette description du processus est très simpliste : certaines publicités sont particulièrement difficiles à bloquer et nécessitent plusieurs règles, plusieurs itérations et l'utilisation d'une syntaxe complexe.
 
-And even when a rule finally gets added to a filter, it doesn't mean that it stays there forever. Ads change, ways to serve the same ads on the same websites change, and the filter rules have to change, too. Sometimes rules become obsolete, a new ad appears, or a new filtering rule is needed to block the same ad. Filters are often maintained by one person, but even for a team of maintainers, it's impossible to constantly monitor the entire web. That's why many ad blockers have tools to help users easily report any filter-related issues they encounter.
+Et même lorsqu'une règle est finalement ajoutée à un filtre, cela ne signifie pas qu'elle y reste pour toujours. Les publicités sont en constante évolution, les moyens de diffuser les mêmes publicités sur les mêmes sites web évoluent, et les règles de filtrage doivent elles aussi être adaptées. Parfois, les règles deviennent obsolètes, une nouvelle publicité apparaît ou une nouvelle règle de filtrage est nécessaire pour bloquer la même publicité. Les filtres sont souvent gérés par une seule personne, mais même pour une équipe de responsables, il est impossible de surveiller en permanence l'ensemble du web. C'est pourquoi de nombreux bloqueurs de publicités disposent d'outils permettant aux utilisateurs de signaler facilement tout problème lié au filtre qu'ils rencontrent.
 
-![Filter update scheme](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/filtersupdates.png)
+![Schéma de révision des filtres](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/filtersupdates.png)
 
-AdGuard users [have access to a special web reporting tool](https://reports.adguard.com/new_issue.html). Thanks to user complaints, filter developers can focus on correcting their filter lists and not on scouring the Internet for new and old unblocked ads.
+Les utilisateurs d'AdGuard [ont accès à un outil spécial de signalement sur le web] (https://reports.adguard.com/new_issue.html). Grâce aux plaintes des utilisateurs, les développeurs de filtres peuvent se concentrer sur la correction de leurs listes de filtres et non sur la recherche sur Internet de nouvelles et d'anciennes publicités non bloquées.
 
-Filters can do more than just block ads. There are filters that block tracking, social media widgets, and annoyances, such as cookie notices. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
+Les filtres ne se contentent pas de bloquer les publicités. Il existe des filtres qui bloquent le suivi, les widgets de médias sociaux et les désagréments, tels que les notifications de cookies. Chaque utilisateur peut choisir différentes combinaisons de filtres en fonction de ses préférences personnelles. Il existe des sites web tels que [filterlists.com] (https://filterlists.com/) qui sont consacrés aux listes de filtres et qui disposent d'énormes bases de données.
 
-We develop and maintain [our own set of filter lists](../adguard-filters) that can be used with AdGuard or other ad blockers.
+Nous développons et maintenons [notre propre ensemble de listes de filtres](../adguard-filters) qui peuvent être utilisées avec AdGuard ou d'autres bloqueurs de publicité.
 
-## Types of filtering rules
+## Types de règles de filtrage
 
-There are many types of filtering rules that serve different purposes. Depending on the ad blocker you use, and especially on your OS, some types of rules may not be supported.
+Il existe de nombreux types de règles de filtrage qui répondent à des objectifs différents. En fonction du bloqueur de publicités que vous utilisez, et surtout de votre système d'exploitation, certains types de règles peuvent ne pas être pris en charge.
 
-### Basic filtering rules
+### Règles de filtrage de base
 
-To be displayed on a web page or in an app, the ad has to be loaded from a server first. To do so, the browser or the app needs to send a web request. The most basic way of preventing an ad from appearing on your screen is to block this request so it never reaches the server, and thus there's no reply.
+Pour être affichée sur une page web ou dans une application, la publicité doit d'abord être chargée à partir d'un serveur. Pour ce faire, le navigateur ou l'application doit envoyer une requête web. La façon la plus simple d'empêcher une publicité d'apparaître sur votre écran est de bloquer cette requête afin qu'elle n'atteigne jamais le serveur et qu'il n'y ait donc pas de réponse.
 
-Basically, all AdGuard Ad Blocker products can block web requests according to the active filter rules. This method is very effective at stopping the ad, but it has some drawbacks. The most obvious one is: whatever place an ad was taking up will be left empty or occupied by an ad leftover.
+En principe, tous les produits AdGuard Bloqueurs de publicités peuvent bloquer les requêtes Web conformément aux règles du filtre actif. Cette méthode est très efficace pour bloquer la publicité, mais elle présente quelques inconvénients. Le plus évident est que la place occupée par une publicité sera laissée vide ou occupée par un reste de publicité.
 
-### Cosmetic filtering rules
+### Règles de filtrage cosmétique
 
-Every web page has a Document Object Model (DOM), an HTML document containing the structure and elements of this page. As ads are also page elements, they get recorded in the DOM. Ad blockers can remove parts of the DOM, while filtering rules help them understand which parts are ads and should be removed, and which parts should be left intact.
+Chaque page web possède un modèle d'objet de document (DOM), un document HTML contenant la structure et les éléments de cette page. Les publicités étant également des éléments de la page, elles sont enregistrées dans le DOM. Les bloqueurs de publicité peuvent supprimer des parties du DOM, tandis que les règles de filtrage les aident à comprendre quelles parties sont des publicités et doivent être supprimées, et quelles parties doivent être laissées intactes.
 
-This method allows you to avoid above-mentioned blank spaces and ad leftovers, as well as perform other more complicated tasks.
+Cette méthode vous permet d'éviter les espaces vides et les restes de publicité mentionnés ci-dessus, ainsi que d'effectuer d'autres tâches plus complexes.
 
-### HTML filtering rules
+### Règles de filtrage HTML
 
-In most cases, it's enough to use the above-mentioned basic and cosmetic rules to filter ads. But when it is necessary to change the HTML code of the page itself before it is loaded, you need filtering rules for HTML content. These rules allow you to specify the HTML elements to be cut out before the browser even loads the page.
+Dans la plupart des cas, il suffit d'utiliser les règles de base et les règles cosmétiques mentionnées ci-dessus pour filtrer les publicités. Mais lorsqu'il est nécessaire de modifier le code HTML de la page elle-même avant qu'elle ne soit chargée, vous avez besoin de règles de filtrage pour le contenu HTML. Ces règles vous permettent de spécifier les éléments HTML à supprimer avant même que le navigateur ne charge la page.
 
-These rules are quite complicated and require the ad blocker to be granted certain access rights, so not all platforms support them. Currently, these rules work only in the AdGuard Firefox add-on and in the AdGuard apps for Windows, Mac, and Android.
+Ces règles sont assez compliquées et exigent que le bloqueur de publicité se voie accorder certains droits d'accès, de sorte que toutes les plateformes ne les prennent pas en charge. Actuellement, ces règles ne fonctionnent que dans le module complémentaire AdGuard Firefox et dans les applications AdGuard pour Windows, Mac et Android.
 
 :::info
 
-There are other types of filtering rules, but they require more advanced technical knowledge to understand how they work. If you are interested, [check out our comprehensive guide on filtering rules in the linked article](../create-own-filters).
+Il existe d'autres types de règles de filtrage, mais leur fonctionnement nécessite des connaissances techniques plus poussées. Si vous êtes intéressé, [consultez notre guide complet sur les règles de filtrage dans l'article lié](../create-own-filters).
 
 :::
 
-## Types of request handling in AdGuard
+## Types de traitement des demandes dans AdGuard
 
-AdGuard handles requests according to filters, user rules and settings enabled by the user. As a result, a request can be blocked, modified, allowed or, when nothing is done to it, just processed.
+AdGuard traite les demandes en fonction des filtres, des règles d'utilisation et des paramètres activés par l'utilisateur. Par conséquent, une demande peut être bloquée, modifiée, autorisée ou, si rien n'est fait, simplement traitée.
 
-Detailed information on how each request of yours has been handled by AdGuard can be found in the *Filtering log* (AdGuard for Windows, AdGuard for Mac, AdGuard Browser Extension) or *Recent activity* (AdGuard for iOS, AdGuard for Android).
+Des informations détaillées sur la façon dont chacune de vos demandes a été traitée par AdGuard peuvent être trouvées dans le *Journal de filtrage* (AdGuard pour Windows, AdGuard pour Mac, AdGuard Browser Extension) ou *Activité récente* (AdGuard pour iOS, AdGuard pour Android).
 
-Regarding AdGuard filters, you can also check [our filter policy](../filter-policy), which describes in detail what and why each of our filters blocks.
+En ce qui concerne les filtres AdGuard, vous pouvez également consulter [notre politique de filtrage](../filter-policy), qui décrit en détail ce que chacun de nos filtres bloque et pourquoi.
 
-### Examples of blocked requests
+### Exemples de requêtes bloquées
 
-AdGuard DNS filter blocks requests to ad domains, such as `ad.doubleclick.net`.
+Le filtre DNS AdGuard bloque les requêtes vers les domaines publicitaires, tels que `ad.doubleclick.net`.
 
-AdGuard Tracking Protection filter blocks tracking requests, such as `youtube.com/youtubei/log_event?`.
+Le filtre AdGuard Tracking Protection bloque les requêtes de suivi, telles que `youtube.com/youtubei/log_event?`.
 
-### Examples of allowed requests
+### Exemples de requêtes autorisées
 
-AdGuard Base filter allows non-ad requests, such as `www.google.com/complete/search?q=`.
+Le filtre AdGuard Base autorise les requêtes non publicitaires, telles que `www.google.com/complete/search?q=`.
 
-Filter unblocking search ads and self-promotion allows requests to search ad-related domains, such as `www.google.com/aclk?`.
+Le filtre débloquant les annonces de recherche et l'autopromotion autorise les requêtes vers des domaines liés aux annonces de recherche, tels que `www.google.com/aclk?`.
 
-Requests to websites that are added by the user to *Allowlist* are allowed.
+Les requêtes vers des sites Web ajoutés par l'utilisateur à *Allowlist* sont autorisées.
 
-### Examples of modified requests
+### Exemples de demandes modifiées
 
-Tracking protection feature with protection level set to *High* enables AdGuard URL Tracking filter which modifies requests by removing tracking parameters from them:
+La fonction de protection contre le suivi, dont le niveau de protection est défini sur *High*, active le filtre AdGuard URL Tracking qui modifie les demandes en supprimant les paramètres de suivi :
 
 `https://www.rentio.jp/products/ax-n1b?click_from=top_newitems` → `https://www.rentio.jp/products/ax-n1b`
 
@@ -96,7 +96,8 @@ Tracking protection feature with protection level set to *High* enables AdGuard 
 `https://www.gog.com/game/spec_ops_the_line?pp=2863d7ae605104eeef364e3f164d3404e20f680c&gad_source=1` →
 `https://www.gog.com/game/spec_ops_the_line`
 
-Please note that *modified* events you see in the Filtering log or Recent activity refer not only to the cases when a request is modified, but also when:
+Veuillez noter que les événements *modifiés* que vous voyez dans le journal de filtrage ou l'activité récente ne se réfèrent pas seulement aux cas où une requête est modifiée, mais aussi lorsque :
 
-- something on the page is changed (usually by cosmetic rules)
-- the response is modified
+- un élément de la page est modifié (généralement par des règles esthétiques)
+- la réponse est modifiée
+- 
