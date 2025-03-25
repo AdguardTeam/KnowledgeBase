@@ -4932,7 +4932,7 @@ Except for AdGuard for Safari, AdGuard Content Blocker, and AdGuard for iOS, thi
 
 This hint is used to skip validation of the rule. It is useful for rules for which support has not yet been added to the filters compiler, or for rules that are incorrectly discarded.
 
-**If you want to add a rule which should not be validated use the `NOT_VALIDATE` hint:**
+**If you want to add a rule that should not be validated, use the `NOT_VALIDATE` hint:**
 
 ```adblock
 !+ NOT_VALIDATE
