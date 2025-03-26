@@ -67,7 +67,31 @@ or  view the license info by entering
 
 The wizard will ask basic questions required for the initial setup.
 
-For further information on configurations, check out the section [Settings and protection management](https://adguard.com/kb/adguard-for-linux/settings/)
+1. After that, you can start the AdGuard protection by entering
+
+    adguard-cli start
+
+![Start protecton *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation5.png)
+
+1. You can check the protection status using
+
+    adguard-cli status
+
+and stop it with
+
+    adguard-cli stop
+
+![Stop protecton *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+
+1. To check the current configuration, enter
+
+    adguard-cli config show
+
+![Current setup *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+
+After installation and initial setup, the wizard will offer many different options. All of these can be set up later using commands for managing filters and configuration.
+
+For further information on the available commands, check out the section [Settings and protection management](https://adguard.com/kb/adguard-for-linux/settings/)
 
 ## Uninstall AdGuard for Linux
 
