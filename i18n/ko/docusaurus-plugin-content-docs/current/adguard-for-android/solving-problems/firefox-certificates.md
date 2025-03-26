@@ -1,6 +1,6 @@
 ---
 title: Firefox 브라우저의 인증서 신뢰 문제
-sidebar_position: 11
+sidebar_position: 10
 ---
 
 :::정보

@@ -1,6 +1,6 @@
 ---
 title: Manuelle Installation des Sicherheitszertifikats im Firefox-Browser
-sidebar_position: 11
+sidebar_position: 10
 ---
 
 :::info

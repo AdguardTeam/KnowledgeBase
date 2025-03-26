@@ -1,6 +1,6 @@
 ---
 title: Jak nainstalovat AdGuard pro Android TV
-sidebar_position: 16
+sidebar_position: 15
 ---
 
 :::info

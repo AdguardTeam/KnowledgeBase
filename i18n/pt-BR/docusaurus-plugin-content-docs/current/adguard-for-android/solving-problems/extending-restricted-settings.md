@@ -1,6 +1,6 @@
 ---
 title: Problemas causados pela extensão de configurações restritas
-sidebar_position: 18
+sidebar_position: 17
 ---
 
 :::info

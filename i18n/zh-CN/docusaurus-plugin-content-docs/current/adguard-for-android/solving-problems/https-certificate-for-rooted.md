@@ -1,6 +1,6 @@
 ---
 title: 将 CA 证书移至 Root 设备的系统证书区
-sidebar_position: 14
+sidebar_position: 13
 ---
 
 :::info

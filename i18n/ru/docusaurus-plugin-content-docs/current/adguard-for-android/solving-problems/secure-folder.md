@@ -1,6 +1,6 @@
 ---
 title: Установка сертификата в Защищённую папку
-sidebar_position: 13
+sidebar_position: 12
 ---
 
 :::info

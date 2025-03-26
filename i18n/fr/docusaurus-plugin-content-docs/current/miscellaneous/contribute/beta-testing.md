@@ -1,46 +1,46 @@
 ---
-title: AdGuard beta/nightly testing
+title: Testing bêta/nightly de AdGuard
 sidebar_position: 1
 ---
 
-Il existe une application AdGuard pour pratiquement toutes les plates-formes principales, et nous publions régulièrement des mises à jour pour chacune d'entre elles. This would not be possible without beta and nightly testing and, more importantly, without our testers. Want to become one of them? Here’s how you can do it.
+Il existe une application AdGuard pour pratiquement toutes les plates-formes principales, et nous publions régulièrement des mises à jour pour chacune d'entre elles. Cela ne serait pas possible sans les tests bêta et nightly et, surtout, sans les bêta-testeurs. Vous souhaitez devenir l'un d'entre eux ? Voici comment faire.
 
-### Beta or nightly: what is the difference?
+### Bêta ou nightly : quelle est la différence ?
 
-Both beta and nightly testing are important to make AdGuard constantly better. However, they are different, and you can choose the one that suits you more.
+Les tests bêta et nightly sont importants pour améliorer AdGuard constamment. Cependant, elles sont différentes, et vous pouvez choisir celle qui vous convient le mieux.
 
-The development process follows a progression from nightly to beta and then from beta to the final, stable version — release. It means that you are more likely to find bugs in nightly builds, but you get access to new features faster, almost on a daily basis. Betas are more stable, but you will get updates less often.
+Le processus de développement suit une progression de nightly à bêta, puis de bêta à la version définitive et stable — version release. Cela signifie que vous êtes plus susceptible de trouver des bogues dans les versions nightly, mais vous accédez plus rapidement aux nouvelles fonctionnalités, presque quotidiennement. Les bêtas sont plus stables, mais vous recevrez des mises à jour moins souvent.
 
-## How to become a beta or nightly tester {#intro}
+## Comment devenir testeur de bêta ou nightly {#intro}
 
-Our requirements are easy: use AdGuard, upgrade to the beta/nightly version when it becomes available, and report any bugs you notice. You will need a [GitHub](https://github.com/) account to become our tester, so you may want to get that out of the way first.
+Nos exigences sont simples : utilisez AdGuard, passez à la version bêta/nightly lorsqu'elle sera disponible et signalez les bogues que vous constatez. Vous aurez besoin d'un compte [GitHub](https://github.com/) pour devenir notre testeur, vous voudrez peut-être commencer par ça.
 
-You will also need the device on which you will install the app and [the link to the the beta testing page](https://adguard.com/beta.html). There you will find more information on how to join our program and test AdGuard for Windows, Mac, Android, and iOS.
+Vous aurez également besoin de l'appareil sur lequel vous allez installer l'application et [le lien vers la page de test bêta](https://adguard.com/beta.html). Vous y trouverez plus d'informations sur la manière de rejoindre notre programme et de tester AdGuard pour Windows, iOS et Android.
 
-If you want to skip the description part and get straight to the action, you can apply [here](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1–3 working days, and you'll get a reply via email.
+Si vous souhaitez sauter la partie description et passer directement à l'action, vous pouvez vous inscrire [ici](https://surveys.adguard.com/beta_testing_program/form.html). Votre candidature sera examinée dans un délai de 1 à 3 jours ouvrables et vous recevrez une réponse par e-mail.
 
 :::note
 
-To get the AdGuard for iOS beta or nightly build, first you have to install [TestFlight](https://apps.apple.com/app/testflight/id899247664) on your iOS device.
+Pour obtenir la version bêta ou la version nightly d'AdGuard pour iOS, vous devez d'abord installer [TestFlight](https://apps.apple.com/app/testflight/id899247664) sur votre appareil iOS.
 
 :::
 
 ## Comment signaler un problème {#report-a-bug}
 
-If you spotted a bug or just want to share your suggestion, let us know: go to [GitHub](https://github.com/AdguardTeam/), find a suitable repository, create a new issue there, and describe the bug/feature request in detail.
+Si vous avez repéré un bug ou souhaitez simplement partager votre suggestion, dites nous : allez sur [GitHub](https://github.com/AdguardTeam/), trouvez un référentiel approprié, créez-y un nouveau problème et décrivez la demande de bug/fonctionnalité dans détail.
 
-The above method is the most preferred, but you can use others if necessary:
+La méthode ci-dessus est plus privilégiée, mais vous pouvez en utiliser d'autres si nécessaire :
 
 - Retrouvez-nous sur des plateformes de médias sociaux diverses, comme [Facebook](https://www.facebook.com/AdguardFr/), [Reddit](https://www.reddit.com/r/Adguard/), etc. Toutefois, ce n'est pas le moyen le plus pratique de discuter de questions techniques.
 
 - Envoyez un e-mail à notre équipe d'assistance depuis l'onglet Assistance dans l'application ou écrivez directement à [support@adguard.com](mailto:support@adguard.com).
 
-## How to activate a beta/nightly key in the iOS app {#ios}
+## Comment activer la clef bêta/nightly dans l'application iOS {#ios}
 
-If you have already received a beta or nightly key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Once there, enter the credentials from your AdGuard account. After that, the premium features will become available automatically.
+Si vous avez déjà reçu une clef bêta ou nightly et elle est répertoriée dans votre compte `adguard.com`, accédez à l'application et ouvrez la section licence (Obtenir Premium). Une fois là-bas, saisissez les informations d'identification de votre compte AdGuard. Après cela, les fonctionnalités premium seront disponibles automatiquement.
 
-### What else?
+### Quoi d'autre ?
 
-There is not much more to add. You don't have to go out of your way to find bugs. You can continue using AdGuard as usual. However, if you encounter a bug, please report it. Of course, we appreciate any additional effort.
+Il n'y a plus grand-chose à ajouter. Vous n’avez pas besoin de faire trop d'efforts pour trouver des bugs. Vous pouvez continuer à utiliser AdGuard comme d'habitude. Cependant, si vous trouvez un bug, merci de le signaler. Bien entendu, nous apprécions tout effort supplémentaire.
 
-Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta/nightly (in case you missed them) and other important news. You can unsubscribe from it at any time.
+Occasionnellement, vous recevrez nos bulletins d'information, qui vous tiendront au courant des dernières modifications apportées à la version bêta/nightly (au cas où vous les auriez manquées) et d'autres nouvelles importantes. Vous pouvez vous en désinscrire à tout moment.

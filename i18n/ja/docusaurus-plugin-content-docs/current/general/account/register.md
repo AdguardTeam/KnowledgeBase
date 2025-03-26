@@ -5,11 +5,11 @@ sidebar_position: 1
 
 ## AdGuard アカウントとは？
 
-[AdGuard account](https://adguardaccount.com/) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. 多くの AdGuard 製品には、AdGuard アカウントを使ってログインすることで製品をアクティベートするオプションがあります（アカウントに有効なライセンスがある場合）。
+[AdGuard アカウント](https://adguardaccount.com/) （マイ・アカウント）は、お客様の AdGuard ライセンスおよびサブスクリプション、使用しているデバイス、購入履歴、言語、その他の設定に関する情報があるユーザーアカウントです。 多くの AdGuard 製品には、AdGuard アカウントを使ってログインすることで製品をアクティベートするオプションがあります（アカウントに有効なライセンスがある場合）。
 
 ## AdGuard アカウントを登録する方法
 
-To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and click the *Log in* button on the top right corner of the screen. メールアドレスを入力し、パスワードを作成すると、アカウント登録されます。
+アカウントを登録するには、 [AdGuard の公式ウェブサイト](https://adguard.com/welcome.html) にアクセスし、画面右上の「*ログイン*」を押します。 メールアドレスを入力し、パスワードを作成すると、アカウント登録されます。
 
 :::tip
 
@@ -23,10 +23,10 @@ To create an account, go to [AdGuard's official website](https://adguard.com/wel
 
 :::tip
 
-After you've registered your account, you can use the *One-time code* option to log in to the application. Enter your email address and choose to enter either your password or the the code sent to your email address.
+アカウント登録後、*ワンタイムコードオプション*を使用してアプリにログインすることができます。 メールアドレスを入力して、パスワードを入力するか、メールアドレスに送信されたコードを入力するかを選択します。
 
 :::
 
 ## SNSアカウント経由でAdGuardアカウントを登録する方法
 
-To create an account via a social network, simply follow the [link](https://auth.adguardaccount.com/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.com/kb/general/account/features/).
+SNSアカウント経由でAdGuardアカウントを作成するには、 [こちらリンク](https://auth.adguardaccount.com/login.html)へ進み、お持ちのSNSアカウントでログインするだけです。 登録が完了しましたら、確認メールが届きますので、受信トレイをチェックしてください。  パスワードを設定して完了です。 これで、[AdGuard アカウントのすべての機能](https://adguard.com/kb/general/account/features/)をご利用いただけます。
