@@ -89,9 +89,19 @@ and stop it with
 
 ![Current setup *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
-After installation and initial setup, the wizard will offer many different options. All of these can be set up later using commands for managing filters and configuration.
+The path to the configuration file will also be displayed, which you can and should edit directly. It contains descriptions of all additional options.
 
-For further information on the available commands, check out the section [Settings and protection management](https://adguard.com/kb/adguard-for-linux/settings/)
+As an alternative, you can use the commands:
+
+    adguard-cli config get
+
+or
+
+    adguard-cli config get
+
+They are primarily intended for scripting, though.
+
+For further information on the available commands, check out the section [Settings and protection management](https://adguard.com/kb/adguard-for-linux/settings/).
 
 ## Uninstall AdGuard for Linux
 
