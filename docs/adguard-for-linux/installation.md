@@ -5,6 +5,8 @@ sidebar_position: 2
 
 ## Install AdGuard for Linux
 
+Before starting, you have to open the command line in your computer. On Linux, press `Ctrl+Alt+T`. On Mac, type `Terminal` in the search field.
+
 To install AdGuard, enter:
 
 Release
@@ -29,29 +31,43 @@ You can verify the signature to prove it’s an official version of AdGuard by u
 
 :::
 
-## Activate license
+## Initial setup
 
-AdGuard for Linux requires an [AdGuard license](https://adguard.com/license.html). If you don't have a license yet, you can log in or create an account to get a free 14-day trial. If you already have a license, log in to activate it.
+AdGuard for Linux requires an [AdGuard license](https://adguard.com/license.html). If you don't have a license yet, you can log in or create an account to get a free 14-day trial. If you already have a license, log in to activate it. To do it, follow this step-by-step guide:
 
-To log in or create an account, enter:
+1. After installation, enter
 
     adguard-cli activate
 
-To reset your license, enter:
+and select the desired option:
+
+![adguard-cli activate *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation1.png)
+
+1. Once you have a license, follow the provided link to proceed with the activation:
+
+![Activate license *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation2.png)
+
+1. After activation, you can continue to work with the program:
+
+![Successful activation *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation3.png)
+
+You can also reset your license by entering
 
     adguard-cli reset-license
 
-To view the license info, enter:
+or  view the license info by entering
 
     adguard-cli license
 
-## Initial setup
-
-To get AdGuard up and running, complete the initial setup. This includes installing the AdGuard CA certificate, enabling the necessary filters, and selecting the proxy mode.
-
-To run the configuration wizard, enter:
+1. Now you need to set up AdGuard CLI. To run the configuration wizard, enter:
 
     adguard-cli configure
+
+![Setup *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation4.png)
+
+The wizard will ask basic questions required for the initial setup.
+
+For further information on configurations, check out the section [Settings and protection management](https://adguard.com/kb/adguard-for-linux/settings/)
 
 ## Uninstall AdGuard for Linux
 
