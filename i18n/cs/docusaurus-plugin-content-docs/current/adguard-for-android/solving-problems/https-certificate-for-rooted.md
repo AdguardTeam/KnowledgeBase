@@ -1,6 +1,6 @@
 ---
 title: Přesunutí certifikátu CA do systémového úložiště na zařízeních s root přístupem
-sidebar_position: 14
+sidebar_position: 13
 ---
 
 :::info

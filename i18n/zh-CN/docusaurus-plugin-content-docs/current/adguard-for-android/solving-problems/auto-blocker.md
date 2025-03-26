@@ -1,6 +1,6 @@
 ---
 title: 如何禁用 Samsung Auto Blocker 功能
-sidebar_position: 19
+sidebar_position: 18
 ---
 
 :::info

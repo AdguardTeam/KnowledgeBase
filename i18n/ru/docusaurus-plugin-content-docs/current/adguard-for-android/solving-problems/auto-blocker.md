@@ -1,6 +1,6 @@
 ---
 title: Как отключить функцию Автоблокировка на Samsung
-sidebar_position: 19
+sidebar_position: 18
 ---
 
 :::info

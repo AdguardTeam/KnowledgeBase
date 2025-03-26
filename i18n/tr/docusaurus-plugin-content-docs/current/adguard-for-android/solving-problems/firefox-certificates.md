@@ -1,6 +1,6 @@
 ---
 title: Güvenlik sertifikasının Firefox tarayıcısına elle yükleme
-sidebar_position: 11
+sidebar_position: 10
 ---
 
 :::info

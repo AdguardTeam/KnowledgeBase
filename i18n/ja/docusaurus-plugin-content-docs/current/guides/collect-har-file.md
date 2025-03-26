@@ -105,7 +105,7 @@ Internet Explorer 11 でHARファイルを作成する手順は以下の通り�
 
     - 録画中、再生ボタンは灰色、停止ボタンは赤色になります。 **再生**モードにしてください。
 
-1. Clear any session info appearing in the lower grid using the **Clear session** button on the **Network** tab. アイコンにカーソルを合わせるとボタン・操作の名前が表示されます。
+1. **ネットワーク**タブの**[セッションをクリア]**ボタンを使用して、下のグリッドに表示されているセッション情報をすべてクリアします。 アイコンにカーソルを合わせるとボタン・操作の名前が表示されます。
 
     - **セッションをクリア**ボタンは、×印の三本線のアイコンです。
 
@@ -113,7 +113,7 @@ Internet Explorer 11 でHARファイルを作成する手順は以下の通り�
 
 1. 問題を再現してください。
 
-1. Save session as a .har file by clicking the **Save to disk** button (Export as HAR) on the **Network** tab.
+1. **Network**タブの**Save to disk**ボタン（Export as HAR）をクリックして、セッションを.harファイルとして保存します。
 
 1. 問題の詳細な説明を添えて、保存したHARファイルを AdGuard サポート (support@adguard.com) までお送りください。 可能でしたら、問題に関するスクリーンショットも添付いただけると大変助かります。
 

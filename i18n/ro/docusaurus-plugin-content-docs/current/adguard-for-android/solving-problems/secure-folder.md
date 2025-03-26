@@ -1,6 +1,6 @@
 ---
 title: Instalarea certificatului într-un folder sigur
-sidebar_position: 13
+sidebar_position: 12
 ---
 
 :::info

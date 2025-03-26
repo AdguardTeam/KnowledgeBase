@@ -1,6 +1,6 @@
 ---
 title: Trasladar el certificado de CA al almacenamiento del sistema en dispositivos rooteados
-sidebar_position: 14
+sidebar_position: 13
 ---
 
 :::info

@@ -1,6 +1,6 @@
 ---
 title: Problemi causati da profili utente multipli
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 :::info

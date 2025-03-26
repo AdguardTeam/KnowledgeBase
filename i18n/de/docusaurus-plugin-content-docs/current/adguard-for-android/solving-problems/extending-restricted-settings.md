@@ -1,6 +1,6 @@
 ---
 title: Probleme durch erweiterte, eingeschränkte Einstellungen
-sidebar_position: 18
+sidebar_position: 17
 ---
 
 :::info
