@@ -12,7 +12,7 @@ A chave de licença pode ser ativada em um número [limitado de dispositivos](..
 - Clique em *Redefinir licença* ou *Sair* em um aplicativo AdGuard
 
 - Remova o dispositivo da sua conta AdGuard:
-    1. Click *AdGuard Ad Blocker* in your [AdGuard account](https://adguardaccount.com/).
+    1. Clique em *bloqueador de anúncios AdGuard* em sua [conta AdGuard](https://adguardaccount.com/).
 
         ![Aba conta do bloqueador de anúncios *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 
