@@ -27,6 +27,8 @@ To disable protection, enter:
 
     adguard-cli stop
 
+This command not only stops the proxy but also stops the trafic from redirecting to it.
+
 ### Check protection status
 
 To view the protection status, enter:
