@@ -95,7 +95,7 @@ As an alternative, you can use the commands:
 
     adguard-cli config get
 
-or
+or:
 
     adguard-cli config get
 
