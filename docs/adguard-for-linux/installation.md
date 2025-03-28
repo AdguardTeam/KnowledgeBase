@@ -73,7 +73,7 @@ The wizard will ask basic questions required for the initial setup.
 
 ![Start protecton *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation5.png)
 
-1. You can check the protection status using
+1. You can check the protection status using:
 
     adguard-cli status
 
