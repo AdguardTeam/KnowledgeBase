@@ -77,7 +77,7 @@ The wizard will ask basic questions required for the initial setup.
 
     adguard-cli status
 
-and stop it with
+and stop it with:
 
     adguard-cli stop
 
