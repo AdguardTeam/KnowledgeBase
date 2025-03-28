@@ -51,7 +51,7 @@ and select the desired option:
 
 ![Successful activation *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation3.png)
 
-You can also reset your license by entering
+You can also reset your license by entering:
 
     adguard-cli reset-license
 
