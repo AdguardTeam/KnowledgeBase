@@ -83,7 +83,7 @@ and stop it with:
 
 ![Stop protecton *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
 
-1. To check the current configuration, enter
+1. To check the current configuration, enter:
 
     adguard-cli config show
 
