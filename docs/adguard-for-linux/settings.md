@@ -63,7 +63,7 @@ Use the `config` command to configure AdGuard for Linux. Subcommands:
 
 - `show`: Show the current configuration in `proxy.yaml`
 
-![Current setup *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+    ![Current setup *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
 - `set`: Configure an option in `proxy.yaml`
     - `listen_ports.http_proxy`: HTTP listening port
@@ -77,12 +77,12 @@ Use the `filters` command to configure AdGuard for Linux. Subcommands:
 - `list`: List installed filters
     - `--all`: View all filters
 
-![Filter list *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
+    ![Filter list *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
 - `install`: Install a filter. Enter the URL of the filter you want to install
 - `enable`: Enable a filter. Enter the name or ID of the filter
 
-![Enable filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+    ![Enable filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
 - `disable`: Disable a filter. Enter the name or ID of the filter
 - `update`: Update filters
