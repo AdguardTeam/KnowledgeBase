@@ -33,7 +33,7 @@ You can verify the signature to prove it’s an official version of AdGuard by u
 
 ## Initial setup
 
-AdGuard for Linux requires an [AdGuard license](https://adguard.com/license.html). If you don't have a license yet, you can log in or create an account to get a free 14-day trial. If you already have a license, log in to activate it. To do it, follow this step-by-step guide:
+AdGuard for Linux requires an [AdGuard license](https://adguard.com/license.html). If you don’t have a license yet, you can log in or create an account to get a free 14-day trial. If you already have a license, log in to activate it. To do it, follow this step-by-step guide:
 
 1. After installation, enter
 
