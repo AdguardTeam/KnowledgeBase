@@ -2963,7 +2963,7 @@ In our example:
  1. Tracking websites' “clean” url: `https://www.aff.example.com/visit?url=https://www.somestore.com/`
  1. The destination website you intend to visit: `https://www.somestore.com`
 
-To achieve the “clean” url result we need to decode url-encoded characters (like `%3A` → `:`, `%2F` → `/`, etc), and extract the real url from the tracking parameters. We will use the `$urltransform` modifier to do it. The following 4 rules replace url-encoded symbols with their actual characters:
+To clean the URL, we first need to decode special characters (like `%3A` → `:`, `%2F` → `/`, etc), and extract the real url from the tracking parameters. We will use the `$urltransform` modifier to do it. The following 4 rules replace URL-encoded symbols with their actual characters:
 
 `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3A/:/`
 `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%2F/\//`
