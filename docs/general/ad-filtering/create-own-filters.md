@@ -2958,9 +2958,10 @@ Many websites route clicks through tracking URLs before redirecting to the final
 Below you'll find an example demonstrating how to "clean" the original link to bypass tracking websites and proceed directly to the target destination.
 
 In our example:
- - original url (messy tracking link): `https://www.aff.example.com/visit?url=https%3A%2F%2Fwww.somestore.com%2F%26referrer%3Dhttps%3A%2F%2Fwww.aff.example.com%2F%26ref%3Dref-123`
- - tracking websites' “clean” url: `https://www.aff.example.com/visit?url=https://www.somestore.com/`
- - the destination website you intend to visit: `https://www.somestore.com`
+
+ 1. Original url (messy tracking link): `https://www.aff.example.com/visit?url=https%3A%2F%2Fwww.somestore.com%2F%26referrer%3Dhttps%3A%2F%2Fwww.aff.example.com%2F%26ref%3Dref-123`
+ 1. Tracking websites' “clean” url: `https://www.aff.example.com/visit?url=https://www.somestore.com/`
+ 1. The destination website you intend to visit: `https://www.somestore.com`
 
 To achieve the “clean” url result we need to decode url-encoded characters (like `%3A` → `:`, `%2F` → `/`, etc), and extract the real url from the tracking parameters. We will use the `$urltransform` modifier to do it. The following 4 rules replace url-encoded symbols with their actual characters:
 
