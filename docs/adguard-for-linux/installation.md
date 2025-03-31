@@ -11,15 +11,21 @@ To install AdGuard, enter:
 
 Release
 
+    ```sh
     curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/release/install.sh | sh -s -- -v
+    ```
 
 Beta
 
+    ```sh
     curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/beta/install.sh | sh -s -- -v
+    ```
 
 Nightly
 
+    ```sh
     curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/nightly/install.sh | sh -s -- -v
+    ```
 
 If required, enter your admin password.
 
@@ -53,11 +59,15 @@ and select the desired option:
 
 You can also reset your license by entering:
 
+    ```sh
     adguard-cli reset-license
+    ```
 
 or  view the license info by entering
 
+    ```sh
     adguard-cli license
+    ```
 
 1. Now you need to set up AdGuard CLI. To run the configuration wizard, enter:
 
