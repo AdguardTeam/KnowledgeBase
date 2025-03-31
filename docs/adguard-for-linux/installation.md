@@ -43,7 +43,9 @@ AdGuard for Linux requires an [AdGuard license](https://adguard.com/license.html
 
 1. After installation, enter:
 
-    `adguard-cli activate`
+    ```sh
+    adguard-cli activate
+    ```
 
 and select the desired option:
 
@@ -71,7 +73,9 @@ or  view the license info by entering
 
 1. Now you need to set up AdGuard CLI. To run the configuration wizard, enter:
 
+    ```sh
     adguard-cli configure
+    ```
 
 ![Setup *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation4.png)
 
@@ -79,23 +83,31 @@ The wizard will ask basic questions required for the initial setup.
 
 1. After that, you can start the AdGuard protection by entering
 
+    ```sh
     adguard-cli start
+    ```
 
 ![Start protecton *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation5.png)
 
 1. You can check the protection status using:
 
+    ```sh
     adguard-cli status
+    ```
 
 and stop it with:
 
+    ```sh
     adguard-cli stop
+    ```
 
 ![Stop protecton *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
 
 1. To check the current configuration, enter:
-
+   
+    ```sh
     adguard-cli config show
+    ```
 
 ![Current setup *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
@@ -103,11 +115,15 @@ The path to the configuration file will also be displayed, which you can and sho
 
 As an alternative, you can use the commands:
 
+    ```sh
     adguard-cli config get
+    ```
 
 or:
 
+    ```sh
     adguard-cli config get
+    ```
 
 They are primarily intended for scripting, though.
 
@@ -119,14 +135,20 @@ To uninstall AdGuard, enter:
 
 Release
 
+    ```sh
     curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/release/install.sh | sh -s -- -v -u
+    ```
 
 Beta
 
+    ```sh
     curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/beta/install.sh | sh -s -- -v -u
+    ```
 
 Nightly
 
+    ```sh
     curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/nightly/install.sh | sh -s -- -v -u
+    ```
 
 If required, enter your admin password.
