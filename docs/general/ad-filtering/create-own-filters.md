@@ -2951,6 +2951,31 @@ the request to `https://example.com/firstpath` will be blocked.
 
 `$urltransform` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$urltransform=/X/Y/` for requests to **example.com**, but `@@||example.com^$urlblock` will.
 
+**The rule example on how to clean affiliate links**
+
+Many websites route clicks through tracking URLs before redirecting to the final destination. These intermediary links often contain marketing parameters and analytics tokens.
+
+Below you'll find an example demonstrating how to "clean" the original link to bypass tracking websites and proceed directly to the target destination.
+
+In our example:
+ - original url (messy tracking link): `https://www.aff.example.com/visit?url=https%3A%2F%2Fwww.somestore.com%2F%26referrer%3Dhttps%3A%2F%2Fwww.aff.example.com%2F%26ref%3Dref-123`
+ - tracking websites' “clean” url: `https://www.aff.example.com/visit?url=https://www.somestore.com/`
+ - the destination website you intend to visit: `https://www.somestore.com`
+
+To achieve the “clean” url result we need to decode url-encoded characters (like `%3A` → `:`, `%2F` → `/`, etc), and extract the real url from the tracking parameters. We will use the `$urltransform` modifier to do it. The following 4 rules replace url-encoded symbols with their actual characters:
+
+`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3A/:/`
+`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%2F/\//`
+`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3F/?/`
+`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3D/=/`
+`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%26/&/`
+
+After that, we need to write the rule that will block the tracking website and transfer you directly to the targeted website (somestore.com):
+
+`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com.*url=([^&]*).*/\$1/`
+
+Done! Now you can bypass tracking mechanisms and maintain full privacy protection.
+
 :::caution Restrictions
 
 Rules with the `$urltransform` modifier can only be used [**in trusted filters**](#trusted-filters).
