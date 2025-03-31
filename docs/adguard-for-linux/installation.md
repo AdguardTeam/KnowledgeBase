@@ -42,10 +42,8 @@ You can verify the signature to prove it’s an official version of AdGuard by u
 AdGuard for Linux requires an [AdGuard license](https://adguard.com/license.html). If you don’t have a license yet, you can log in or create an account to get a free 14-day trial. If you already have a license, log in to activate it. To do it, follow this step-by-step guide:
 
 1. After installation, enter:
-
-    ```sh
+    
     adguard-cli activate
-    ```
 
 and select the desired option:
 
@@ -72,28 +70,22 @@ or  view the license info by entering
     ```
 
 1. Now you need to set up AdGuard CLI. To run the configuration wizard, enter:
-
-    ```sh
+   
     adguard-cli configure
-    ```
 
 ![Setup *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation4.png)
 
 The wizard will ask basic questions required for the initial setup.
 
 1. After that, you can start the AdGuard protection by entering
-
-    ```sh
+    
     adguard-cli start
-    ```
 
 ![Start protecton *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation5.png)
 
 1. You can check the protection status using:
-
-    ```sh
+    
     adguard-cli status
-    ```
 
 and stop it with:
 
@@ -104,10 +96,8 @@ and stop it with:
 ![Stop protecton *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
 
 1. To check the current configuration, enter:
-   
-    ```sh
+    
     adguard-cli config show
-    ```
 
 ![Current setup *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
