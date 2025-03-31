@@ -2953,7 +2953,7 @@ the request to `https://example.com/firstpath` will be blocked.
 
 **The rule example on how to clean affiliate links**
 
-Many websites route clicks through tracking URLs before redirecting to the final destination. These intermediary links often contain marketing parameters and analytics tokens.
+Many websites use tracking URLs to monitor clicks before redirecting to the actual destination. These URLs include marketing parameters and analytics tokens, which we can remove to improve privacy.
 
 Below you'll find an example demonstrating how to "clean" the original link to bypass tracking websites and proceed directly to the target destination.
 
