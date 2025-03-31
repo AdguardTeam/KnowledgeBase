@@ -43,7 +43,7 @@ AdGuard for Linux requires an [AdGuard license](https://adguard.com/license.html
 
 1. After installation, enter:
 
-    adguard-cli activate
+    `adguard-cli activate`
 
 and select the desired option:
 
@@ -71,7 +71,7 @@ or  view the license info by entering
 
 1. Now you need to set up AdGuard CLI. To run the configuration wizard, enter:
 
-    adguard-cli configure
+    `adguard-cli configure`
 
 ![Setup *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation4.png)
 
@@ -79,13 +79,13 @@ The wizard will ask basic questions required for the initial setup.
 
 1. After that, you can start the AdGuard protection by entering
 
-    adguard-cli start
+    `adguard-cli start`
 
 ![Start protecton *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation5.png)
 
 1. You can check the protection status using:
 
-    adguard-cli status
+    `adguard-cli status`
 
 and stop it with:
 
@@ -97,7 +97,7 @@ and stop it with:
 
 1. To check the current configuration, enter:
 
-    adguard-cli config show
+    `adguard-cli config show`
 
 ![Current setup *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
