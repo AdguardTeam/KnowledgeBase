@@ -2975,7 +2975,7 @@ After that, we need to write the rule that will block the tracking website and t
 
 `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com.*url=([^&]*).*/\$1/`
 
-Done! Now you can bypass tracking mechanisms and maintain full privacy protection.
+Tracking links will now be automatically cleaned, enabling direct navigation to the destination site without tracking.
 
 :::caution Restrictions
 
