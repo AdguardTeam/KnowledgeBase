@@ -7,9 +7,9 @@ sidebar_position: 3
 
 To get a list of all available AdGuard commands, enter:
 
-    ```sh
-    adguard-cli --help-all
-    ```
+```sh
+`adguard-cli --help-all
+```
 
 ## Enable and disable protection
 
@@ -17,9 +17,9 @@ To get a list of all available AdGuard commands, enter:
 
 To enable protection, enter:
 
-    ```sh
-    adguard-cli start
-    ```
+```sh
+`adguard-cli start`
+```
 
 This command attempts to configure a redirection to the proxy.
 
@@ -29,9 +29,9 @@ This command attempts to configure a redirection to the proxy.
 
 To disable protection, enter:
 
-    ```sh
-    adguard-cli stop
-    ```
+```sh
+`adguard-cli stop`
+```
 
 This command not only stops the proxy but also stops the trafic from redirecting to it.
 
@@ -39,9 +39,9 @@ This command not only stops the proxy but also stops the trafic from redirecting
 
 To view the protection status, enter:
 
-    ```sh
-    adguard-cli status
-    ```
+```sh
+`adguard-cli status`
+```
 
 ![Status/Stop protection *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
 
@@ -51,25 +51,25 @@ To view the protection status, enter:
 
 To check for updates, enter:
 
-    ```sh
-    adguard-cli check-update
-    ```
+```sh
+`adguard-cli check-update`
+```
 
 ### Update AdGuard for Linux
 
 To update AdGuard for Linux, enter:
 
-    ```sh
-    adguard-cli update
-    ```
+```sh
+`adguard-cli update`
+```
 
 ### Update script output
 
 To view the update script output, enter:
 
-    ```sh
-    adguard-cli update -v
-    ```
+```sh
+`adguard-cli update -v`
+```
 
 ## Configure AdGuard for Linux
 
