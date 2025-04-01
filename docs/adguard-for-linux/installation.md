@@ -12,19 +12,19 @@ To install AdGuard, enter:
 Release
 
 ```sh
-`curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/release/install.sh | sh -s -- -v`
+curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/release/install.sh | sh -s -- -v
 ```
 
 Beta
 
 ```sh
-`curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/beta/install.sh | sh -s -- -v`
+curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/beta/install.sh | sh -s -- -v
 ```
 
 Nightly
 
 ```sh
-`curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/nightly/install.sh | sh -s -- -v`
+curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/nightly/install.sh | sh -s -- -v
 ```
 
 If required, enter your admin password.
@@ -44,10 +44,10 @@ AdGuard for Linux requires an [AdGuard license](https://adguard.com/license.html
 1. After installation, enter:
 
     ```sh
-    `adguard-cli activate`
+    adguard-cli activate
     ```
 
-    and select the desired option:
+1. Then select the desired option:
 
     ![adguard-cli activate *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation1.png)
 
@@ -62,51 +62,51 @@ AdGuard for Linux requires an [AdGuard license](https://adguard.com/license.html
 1. You can also reset your license by entering:
 
     ```sh
-    `adguard-cli reset-license`
+    adguard-cli reset-license
     ```
 
     or  view the license info by entering
 
     ```sh
-    `adguard-cli license`
+    adguard-cli license
     ```
 
 1. Now you need to set up AdGuard CLI. To run the configuration wizard, enter:
 
     ```sh
-    `adguard-cli configure`
+    adguard-cli configure
     ```
 
     ![Setup *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation4.png)
 
-The wizard will ask basic questions required for the initial setup.
+    The wizard will ask basic questions required for the initial setup.
 
 1. After that, you can start the AdGuard protection by entering
 
     ```sh
-    `adguard-cli start`
+    adguard-cli start
     ```
 
     ![Start protecton *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation5.png)
 
-1. You can check the protection status using:
+    1. You can check the protection status using:
 
     ```sh
-    `adguard-cli status`
+    adguard-cli status
     ```
 
     and stop it with:
 
     ```sh
-    `adguard-cli stop`
+    adguard-cli stop
     ```
 
-![Stop protecton *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+    ![Stop protecton *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
 
 1. To check the current configuration, enter:
 
     ```sh
-    `adguard-cli config show`
+    adguard-cli config show
     ```
 
     ![Current setup *border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
@@ -116,16 +116,16 @@ The wizard will ask basic questions required for the initial setup.
     As an alternative, you can use the commands:
 
     ```sh
-        `adguard-cli config get`
+    adguard-cli config get
     ```
 
     or:
 
     ```sh
-        `adguard-cli config get`
+    adguard-cli config set
     ```
 
-They are primarily intended for scripting, though.
+    They are primarily intended for scripting, though.
 
 For further information on the available commands, check out the section [Settings and protection management](https://adguard.com/kb/adguard-for-linux/settings/).
 
@@ -136,19 +136,19 @@ To uninstall AdGuard, enter:
 Release
 
 ```sh
-`curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/release/install.sh | sh -s -- -v -u`
+curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/release/install.sh | sh -s -- -v -u
 ```
 
 Beta
 
 ```sh
-`curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/beta/install.sh | sh -s -- -v -u`
+curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/beta/install.sh | sh -s -- -v -u
 ```
 
 Nightly
 
 ```sh
-`curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/nightly/install.sh | sh -s -- -v -u
+curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/nightly/install.sh | sh -s -- -v -u
 ```
 
 If required, enter your admin password.
