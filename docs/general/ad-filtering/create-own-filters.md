@@ -2960,7 +2960,7 @@ Below is an example of how to “clean” the original link to bypass tracking w
 In our example:
 
  1. Original URL (dirty tracking link): `https://www.aff.example.com/visit?url=https%3A%2F%2Fwww.somestore.com%2F%26referrer%3Dhttps%3A%2F%2Fwww.aff.example.com%2F%26ref%3Dref-123`
- 1. Tracking websites' “clean” url: `https://www.aff.example.com/visit?url=https://www.somestore.com/`
+ 1. Clean URL of a tracking website: `https://www.aff.example.com/visit?url=https://www.somestore.com/`
  1. The destination website you intend to visit: `https://www.somestore.com`
 
 To clean the URL, we first need to decode special characters (like `%3A` → `:`, `%2F` → `/`, etc), and extract the real url from the tracking parameters. We will use the `$urltransform` modifier to do it. The following 4 rules replace URL-encoded symbols with their actual characters:
