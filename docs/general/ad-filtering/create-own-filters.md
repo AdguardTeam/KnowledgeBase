@@ -2955,7 +2955,7 @@ the request to `https://example.com/firstpath` will be blocked.
 
 Many websites use tracking URLs to monitor clicks before redirecting to the actual destination. These URLs contain marketing parameters and analytics tokens that can be removed to improve privacy.
 
-Below is an example of how to “clean” the original link to bypass tracking websites and go directly to the destination.
+Below is an example of how to obtain the clean destination link to bypass tracking websites and go directly to the destination.
 
 In our example:
 
