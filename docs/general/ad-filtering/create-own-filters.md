@@ -2951,7 +2951,7 @@ the request to `https://example.com/firstpath` will be blocked.
 
 `$urltransform` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$urltransform=/X/Y/` for requests to **example.com**, but `@@||example.com^$urlblock` will.
 
-**The rule example on how to clean affiliate links**
+**The rule example for cleaning affiliate links**
 
 Many websites use tracking URLs to monitor clicks before redirecting to the actual destination. These URLs include marketing parameters and analytics tokens, which we can remove to improve privacy.
 
