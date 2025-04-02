@@ -2971,7 +2971,7 @@ To clean the URL, we first need to decode special characters (like `%3A` → `:`
 `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3D/=/`
 `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%26/&/`
 
-After that, we need to write the rule that will block the tracking website and redirect you directly to the target website (somestore.com):
+After that, we need to write the rule that will block the tracking website and redirect you directly to the target address (somestore.com):
 
 `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com.*url=([^&]*).*/\$1/`
 
