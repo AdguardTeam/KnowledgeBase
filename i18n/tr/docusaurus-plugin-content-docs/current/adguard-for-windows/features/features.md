@@ -1,5 +1,5 @@
 ---
-title: Özellikler
+title: Features
 sidebar_position: 1
 ---
 

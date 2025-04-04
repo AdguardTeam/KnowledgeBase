@@ -1,6 +1,6 @@
 ---
 title: Come bloccare gli annunci nell'app di YouTube
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 :::info

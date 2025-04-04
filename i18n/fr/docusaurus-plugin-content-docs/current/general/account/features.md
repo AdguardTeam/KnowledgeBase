@@ -24,9 +24,9 @@ Dans la section *Licences* , vous pouvez gérer vos licences et les appareils qu
 
 - liées et non liées,
 - prolongées
-- upgraded.
+- surclassées.
 
-Les appareils liés à vos licences du Bloqueur AdGuard peuvent être déliés ou renommés. To unbind unused devices, click the number of bound devices next to *Devices*, then select `>` → *Remove*.
+Les appareils liés à vos licences du Bloqueur AdGuard peuvent être déliés ou renommés. Pour dissocier les appareils inutilisés, cliquez sur le nombre d'appareils liés à côté de *Appareils*, puis sélectionnez `>` → *Supprimer*.
 
 ## Afficher les achats
 

@@ -19,7 +19,7 @@ Cet article concerne AdGuard pour Android, un bloqueur de publicités multifonct
 
 ## Installation
 
-Most Android-based apps are distributed via Google Play; however, AdGuard is not presented there, because Google prohibits distribution of network-level ad blockers via Google Play, i.e. apps that block commercials in other apps. You will find more information about Google restrictive policy [in our blog](https://adguard.com/blog/adguard-google-play-removal.html).
+La plupart des applications basées sur Android sont distribuées via Google Play ; toutefois, AdGuard n'y est pas présenté, car Google interdit la distribution de bloqueurs d'annonces au niveau du réseau via Google Play, donc des applications qui bloquent les annonces dans d'autres applications. You will find more information about Google restrictive policy [in our blog](https://adguard.com/blog/adguard-google-play-removal.html).
 
 That’s why you can only install AdGuard for Android manually. To use the app on your mobile device, you will need to do the following.
 

@@ -1,6 +1,6 @@
 ---
 title: Jak blokovat reklamy v YouTube
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 :::info

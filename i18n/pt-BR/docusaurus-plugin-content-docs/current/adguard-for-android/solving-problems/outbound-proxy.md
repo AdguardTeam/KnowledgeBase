@@ -1,6 +1,6 @@
 ---
 title: Como configurar o proxy de saída
-sidebar_position: 8
+sidebar_position: 7
 ---
 
 :::info

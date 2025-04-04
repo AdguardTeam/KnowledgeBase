@@ -7,9 +7,9 @@ This page describes the features and details of AdGuard’s central management o
 
 ## 1. Download the MSI {#msi-download}
 
-Download the [AdGuard MSI x86](https://static.adguard.com/windows/setup86.msi)
+Download the [AdGuard MSI x86](https://agrd.io/adguard_setup86_msi)
 
-Download the [AdGuard MSI x64](https://static.adguard.com/windows/setup64.msi)
+Download the [AdGuard MSI x64](https://agrd.io/adguard_setup64_msi)
 
 ## 2. Configure the settings for your network {#settings-configuring}
 

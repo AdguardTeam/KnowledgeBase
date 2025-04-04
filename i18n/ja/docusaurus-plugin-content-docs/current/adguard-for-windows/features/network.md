@@ -9,25 +9,25 @@ sidebar_position: 4
 
 :::
 
-The _Network_ module is dedicated to network filtering, and here you will find additional network-related options. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS_. These are important extra precautions to better filter your web space. Most websites are now using HTTPS, and the same applies to advertising. From many websites, like youtube.com, facebook.com, and x.com, it is impossible to remove ads without HTTPS filtering. So keep the _Filter HTTPS_ feature enabled unless you have a strong reason not to.
+この「ネットワーク」モジュールはネットワークフィルタリング専用のもので、ネットワーク関連の追加オプションがあります。 このうち、「トラフィックフィルタリングを有効にする」と「HTTPS をフィルタリングする」は、デフォルトで有効になっています。 これらは、あなたのウェブスペースをより良くフィルタリングするための重要な追加予防措置です。 現在、ほとんどのウェブサイトがHTTPSを使用しており、広告も同様です。 youtube.com、facebook.com、x.comなど多くのウェブサイトでは、HTTPSフィルタリングなしでは広告を削除することができません。 そのため、特別な理由がない限り、「HTTPSをフィルタリングする」機能は有効にしておいてください。
 
 ![Network Settings \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 
-In this module you can select the checkbox _Use AdGuard as an HTTP proxy_ to use AdGuard as a regular HTTP proxy which will filter all traffic passing through it. You can also enable the _Filter websites with EV certificates_ feature. Extended Validation (EV) SSL Certificates offer a stronger safety guarantee; owners of such websites have to pass a thorough and globally standardized identity verification process defined by EV guidelines. Which is the reason why some users trust websites with such certificates and prefer not to filter them.
+このモジュールでは、「HTTPプロキシとしてAdGuardを使用する」チェックボックスをオンにすると、AdGuardを通常のHTTPプロキシとして使用し、通過するすべてのトラフィックをフィルタリングできます。 「EV証明書を持つウェブサイトをフィルタリング」オプションを有効にすることもできます。 EV (Extended Validation) SSL証明書は、ウェブサイトの所有者がEVガイドラインで定義されている国際標準化された徹底的な身元確認プロセスに合格したことを保証します。 これは、このような証明書を持つウェブサイトを信頼してフィルタリングをしないようなユーザーがいる理由でもあります。
 
-At last, there is a section with proxy settings. There you can specify which proxy server AdGuard should use to update filters, get new versions, and so on.
+最後に、プロキシ設定のセクションがあります。 そこで、AdGuard がフィルタの更新や新バージョンの取得などに使用するプロキシサーバーを指定できます。
 
 ### AdGuard VPN
 
-The last section is dedicated to AdGuard VPN — an ideal tool that provides security and anonymity each time you browse the Internet. You can download it by clicking the _Download_ button or go to the AdGuard VPN website by clicking the _Homepage_ button.
+最後のセクションは AdGuard VPN に関するものです。AdGuard VPN は、インターネットを閲覧するたびにセキュリティと匿名性を提供する理想的なツールです。 「ダウンロード」ボタンをクリックしてダウンロードするか、「ホームページ」ボタンをクリックして AdGuard VPN のウェブサイトにアクセスしてください。
 
-How does AdGuard VPN work? Without going into technical details, we can say that VPN creates a secure encrypted tunnel between the user's computer or mobile device and a remote VPN server. In this way, data privacy is preserved, as well as the anonymity of the user, because a third-party observer sees the IP address of the VPN server and not the actual user's IP.
+そもそも、AdGuard VPN の仕組みは何なのか？ 技術的な詳細は省きますが、VPNは、ユーザーのコンピュータまたはモバイル端末とリモートVPNサーバーの間に安全な暗号化トンネルを作成すると言えます。 これにより、データと個人情報のプライバシーが保たれるだけでなく、オンライン上の第三者にはユーザーの実際のIPではなく、VPNサーバーのIPアドレスが見えるので、ユーザーの位置情報も隠されます。
 
-**What AdGuard VPN does:**
+**AdGuard VPN の機能:**
 
-- hides your real whereabouts and helps you stay anonymous
-- changes your IP address to protect your data from tracking
-- encrypts your traffic to make it unreadable to third parties
-- lets you configure where to use VPN and where not to (exclusions feature)
+- あなたの本当の居場所を隠し、匿名性を保てるようにします。
+- IPアドレスを変更することで、トラッキングからデータ・個人情報を保護します。
+- トラフィック（通信）を暗号化し、詐欺師やハッカーが通信内容にアクセスできないようにします。
+- VPNを使用するとしない場所を設定できます（「VPN対象外リスト「機能）
 
-To get more information about AdGuard VPN, dive into the [AdGuard VPN Knowledge Base](https://adguard-vpn.com/kb/).
+AdGuard VPN についての詳しい情報は、[AdGuard VPN ナレッジベース](https://adguard-vpn.com/kb/)をご覧ください。

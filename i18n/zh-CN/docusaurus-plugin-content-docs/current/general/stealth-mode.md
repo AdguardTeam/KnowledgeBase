@@ -3,7 +3,7 @@ title: 隐身模式（跟踪保护）
 sidebar_position: 4
 ---
 
-众多网站收集其访问者的信息，例如 IP 地址，安装的浏览器及操作系统，屏幕分辨率，甚至是重新定向访问者的页面。 有些网页使用 Cookie 以标记用户的浏览器并保存个人设置及首选项，或在用户下次访问时进行身份识别。 *Tracking protection* safeguards your personal information from such data- and statistics-gathering systems.
+众多网站收集其访问者的信息，例如 IP 地址，安装的浏览器及操作系统，屏幕分辨率，甚至是重新定向访问者的页面。 有些网页使用 Cookie 以标记用户的浏览器并保存个人设置及首选项，或在用户下次访问时进行身份识别。 *跟踪保护*可以保护个人信息免受此类数据和统计收集系统的侵害。
 
 您可以灵活调整隐身模式的工作：例如，可以禁止网站接收您在互联网上查找其时使用的搜索请求，自动删除第三方和网站自己的 Cookie，关闭可用于跟踪您行踪的浏览器地理位置共享，以及隐藏真实 IP 地址，甚至用任意 IP 地址取而代之。
 
@@ -95,7 +95,7 @@ Referrer 是浏览器发送请求到服务器时所用的 HTTP 头部。 其包�
 
 请注意，要过滤流量，AdGuard 应用会“劫持”浏览器到服务器的请求。 对广告，跟踪和钓鱼网站的请求可在发送其请求到服务器之前更改或完全拦截。 「*隐藏第三方 Referer*」也是如此：AdGuard 拦截 HTTP(S) 请求，在启用该选项后软件删除或更改 Referer 标头。 但是，只有在这些请求“离开”浏览器后软件才开始拦截。 这意味着，如果在浏览器内监视 Referer（例如，借助 Chrome 浏览器的开发者工具），用户将看到原来的 Referer，因为请求尚未到达 AdGuard。 您可以使用 [Fiddler](https://www.telerik.com/fiddler) 等软件来确保 Referer 被正确更改。
 
-Due to the nature of all web browser extensions, AdGuard Browser Extension instead works 'inside' the web browser. 它将立即更改 Referer，因此开发工具将为用户的请求显示所需的 Referer。
+由于所有浏览器扩展的性质，AdGuard 浏览器扩展在浏览器“内部”运行。 它将立即更改 Referer，因此开发工具将为用户的请求显示所需的 Referer。
 
 ### 隐藏 User-Agent {#useragent}
 

@@ -17,7 +17,7 @@ Changing the low-level settings can cause problems with AdGuard’s performance,
 
 :::
 
-To access _Low-level settings_, open the AdGuard app and tap the gear icon in the lower-right corner of the screen. Then select _General → Advanced → Low-level settings_.
+要转到「低级设置」，请打开 AdGuard 应用并点击屏幕右下角的齿轮图标。 然后转到「常规」→「高级」→「低级设置」。
 
 ## 低级设置
 

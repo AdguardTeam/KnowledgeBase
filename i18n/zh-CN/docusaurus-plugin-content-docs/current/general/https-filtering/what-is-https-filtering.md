@@ -27,11 +27,11 @@ HTTPS（安全超文本传输协议）是 HTTP 协议的扩展，支持加密以
 
 以下查看处理过程：
 
-![How HTTPS filtering works](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
+![HTTPS 过滤的工作方式](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
 ### 用户流量是否保持加密且安全？
 
-当然！ 用户与远程服务器的连接保持加密且安全。 AdGuard, just like a browser, checks the server’s certificate before determining if the connection should be filtered or not.
+当然！ 用户与远程服务器的连接保持加密且安全。 AdGuard 与浏览器一样，会在决定是否过滤服务器证书之前检查服务器的证书。
 
 然而，HTTPS 过滤也有其缺点。 最重要的一点是它向浏览器隐藏网站的实际证书。 浏览器看到的是 AdGuard 颁发的证书。
 
@@ -51,7 +51,7 @@ AdGuard 让用户禁用对所有使用扩展验证证书的网站的过滤。
 
 ### 与 HTTPS 过滤有关的问题
 
-A [2017 study](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-ndss17.pdf) found that 5 to 10% of HTTPS connections were established by HTTPS filtering applications. 它通常是由各种防病毒软件完成的。 坏消息是，26 款经过测试的防病毒软件中有 24 款以各种方式降低连接安全级别，而三分之二的产品创建了容易遭受黑客攻击的连接。
+[2017 年研究](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-ndss17.pdf)发现 5% 到 10% 的 HTTPS 连接是由 HTTPS 过滤应用程序建立的。 它通常是由各种防病毒软件完成的。 坏消息是，26 款经过测试的防病毒软件中有 24 款以各种方式降低连接安全级别，而三分之二的产品创建了容易遭受黑客攻击的连接。
 
 研究人员得出一个简单的结论：互联网安全社区应密切关注过滤安全连接的应用程序。 此类软件的开发人员必须认真关注过滤的质量。
 
@@ -71,7 +71,7 @@ A [2017 study](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-nds
 
 ### 如何手动检查 HTTPS 品质？
 
-有数个专门的网站可用于您检查 HTTPS 连结品质。 这些网站会检查您的浏览器（或者在我们的例子中，您的浏览器加上 AdGuard）是否容易受到常见漏洞的影响。 If you plan to use any program that filters HTTPS, not necessarily AdGuard (e.g., an antivirus), we advise that you check the connection quality using these websites.
+有数个专门的网站可用于您检查 HTTPS 连结品质。 这些网站会检查您的浏览器（或者在我们的例子中，您的浏览器加上 AdGuard）是否容易受到常见漏洞的影响。 如果您打算使用任何过滤 HTTPS 的程序，不一定是 AdGuard（例如防病毒软件），我们建议您使用这些网站检查连接质量。
 
 - [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
 - [https://www.howsmyssl.com/](https://www.howsmyssl.com/)

@@ -63,7 +63,7 @@ En dispositivos con Android 7 y anteriores, no es posible enviar un informe de b
 
 Sigue estas instrucciones:
 
-### Part #1: prepare the device
+### Parte #1: prepara el dispositivo
 
 1. Pon el dispositivo al modo de desarrollador. Para ello: ve a **Ajustes** → **Acerca de** → toca el **Número de compilación** 7 veces.
 
@@ -73,9 +73,9 @@ Sigue estas instrucciones:
 
 1. Aumenta el tamaño del **Logger buffer** a 4 MB por log buffer.
 
-4 MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
+4 MB deberían ser suficientes para almacenar los registros que necesitamos hasta que puedas hacer la segunda parte (obtener el registro del dispositivo);
 
-### Part #2: reproduce the problem
+### Parte #2: reproduce el problema
 
 It is important to reproduce the problem after you're done with the first part.
 
@@ -83,7 +83,7 @@ It is important to reproduce the problem after you're done with the first part.
 
 1. Recuerda/anota la fecha y hora de reproducción e inclúyela en el correo electrónico que enviarás posteriormente a nuestro soporte.
 
-### Part #3: get the log
+### Parte nº 3: obtén el registro
 
 1. Conecta tu dispositivo a una PC con un cable USB.
 
@@ -103,7 +103,7 @@ It is important to reproduce the problem after you're done with the first part.
 
     Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at <support@adguard.com>.
 
-### Alternative way for ROOT users
+### Forma alternativa para usuarios ROOT
 
 1. Descarga y ejecuta [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
 

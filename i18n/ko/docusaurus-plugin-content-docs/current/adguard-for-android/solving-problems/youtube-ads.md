@@ -1,6 +1,6 @@
 ---
 title: How to block ads in the YouTube app
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 :::정보
