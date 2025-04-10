@@ -261,7 +261,7 @@ For scriptlet rules, it is **very important** that they are run as early as poss
 
 :::
 
-#### HTML filtering rules {#html-filtering-rules-safari}
+#### HTML filtering rules {#html-filtering-rules-safari-limitations}
 
 [HTML filtering rules](#html-filtering-rules) are **not supported** and will not be supported in the future. Unfortunately, Safari does not provide necessary technical capabilities to implement them.
 
