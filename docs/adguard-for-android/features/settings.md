@@ -39,7 +39,7 @@ The *Low-level settings* section is for expert users. [Read more about low-level
 
 This section allows you to manage HTTPS filtering settings, filters, and userscripts, and set up a proxy server.
 
-![Filtering *mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
+![Filtering *mobile_border](https://cdn.adtidy.org/blog/new/qckx6Screenshot_20250403_200349_AdGuard.jpg)
 
 ### Filters
 
@@ -57,11 +57,19 @@ If you activate too many filters, some websites may work incorrectly.
 
 [Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
 
-### Userscripts
+### Extensions
+
+Extensions allow you to use userscripts and userstyles.
+
+![Extensions *mobile_border](https://cdn.adtidy.org/blog/new/oizxaScreenshot_20250410_151117_AdGuard.jpg)
 
 Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
 
-![Userscripts *mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
+Userstyles are like userscripts that allow you to change how web pages look in the browser without modifying their content. They work by adding CSS styles to the website’s existing styles. For example, if you want a dark theme on a website that doesn’t offer one, you can use a userstyle to do it.
+
+To add a userstyle, go to *Settings* → *Filtering* → *Extensions*→ *Add extension* → *Import from file or URL*. You can find ready-made user styles [online](https://userstyles.world/).
+
+To create your own style, tap *Add extension* → *Create userstyle*.
 
 #### AdGuard Extra
 
