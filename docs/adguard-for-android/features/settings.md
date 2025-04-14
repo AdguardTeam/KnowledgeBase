@@ -59,7 +59,7 @@ If you activate too many filters, some websites may work incorrectly.
 
 ### Extensions
 
-Extensions allow you to use userscripts and userstyles.
+Extensions allow you to add userscripts and userstyles.
 
 ![Extensions *mobile_border](https://cdn.adtidy.org/blog/new/oizxaScreenshot_20250410_151117_AdGuard.jpg)
 
