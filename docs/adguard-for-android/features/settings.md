@@ -39,7 +39,7 @@ The *Low-level settings* section is for expert users. [Read more about low-level
 
 This section allows you to manage HTTPS filtering settings, filters, and userscripts, and set up a proxy server.
 
-![Filtering *mobile_border](https://cdn.adtidy.org/blog/new/qckx6Screenshot_20250403_200349_AdGuard.jpg)
+![Filtering *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.jpg)
 
 ### Filters
 
@@ -61,7 +61,7 @@ If you activate too many filters, some websites may work incorrectly.
 
 Extensions allow you to add userscripts and userstyles.
 
-![Extensions *mobile_border](https://cdn.adtidy.org/blog/new/oizxaScreenshot_20250410_151117_AdGuard.jpg)
+![Extensions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.jpg)
 
 Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
 
