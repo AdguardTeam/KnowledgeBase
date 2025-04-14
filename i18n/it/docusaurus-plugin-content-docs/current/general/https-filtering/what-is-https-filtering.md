@@ -27,11 +27,11 @@ Se fosse facile, HTTPS non sarebbe così sicuro. Quando un browser tenta di conn
 
 Per una migliore comprensione, abbiamo raffigurato questo processo:
 
-![How HTTPS filtering works](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
+![Come funziona il filtraggio HTTPS](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
 ### Il mio traffico rimane crittografato e sicuro?
 
-Ovviamente! La tua connessione con un server remoto resta crittografata e sicura. AdGuard, just like a browser, checks the server’s certificate before determining if the connection should be filtered or not.
+Ovviamente! La tua connessione con un server remoto resta crittografata e sicura. AdGuard, proprio come il tuo browser, controlla il certificato del server prima di decidere se filtrarlo o no.
 
 Tuttavia, il filtraggio HTTPS presenta degli svantaggi. Il più importante è che nasconde il certificato effettivo del sito web dal browser. Invece, il browser visualizza il certificato emesso da AdGuard.
 
@@ -51,7 +51,7 @@ Un certificato EV offre un livello maggiore di sicurezza e fornisce maggiori gar
 
 ### Problemi correlati al filtraggio HTTPS
 
-A [2017 study](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-ndss17.pdf) found that 5 to 10% of HTTPS connections were established by HTTPS filtering applications. Solitamente, ciò viene eseguito da vari tipi di software antivirus. La cattiva notizia è che 24 dei 26 antivirus testati riduceva, in vari modi, il livello di sicurezza della connessione, mentre i due terzi delle connessioni create erano soggette ad hacking.
+Uno [studio del 2017](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-ndss17.pdf), dimostra che dal 5 al 10% delle connessioni HTTPS, sono stabilite da applicazioni di filtraggio HTTPS. Solitamente, ciò viene eseguito da vari tipi di software antivirus. La cattiva notizia è che 24 dei 26 antivirus testati riduceva, in vari modi, il livello di sicurezza della connessione, mentre i due terzi delle connessioni create erano soggette ad hacking.
 
 I ricercatori sono giunti a una semplice conclusione: la community della sicurezza di Internet dovrebbe prestare maggiore attenzione alle applicazioni che filtrano le connessioni sicure. E gli sviluppatori di tali software, devono prestare molta attenzione alla qualità delle implementazioni di filtraggio.
 
@@ -71,7 +71,7 @@ Infine, se il tuo dispositivo ha i permessi di root, puoi spostare il certificat
 
 ### Come verificare manualmente la qualità HTTPS?
 
-Esistono svariati siti web dedicati su cui puoi verificare la qualità della tua connessione HTTPS. Questi siti web verificano se il tuo browser (o, nel nostro caso, il tuo browser con AdGuard), è suscettibile alle vulnerabilità comuni. If you plan to use any program that filters HTTPS, not necessarily AdGuard (e.g., an antivirus), we advise that you check the connection quality using these websites.
+Esistono svariati siti web dedicati su cui puoi verificare la qualità della tua connessione HTTPS. Questi siti web verificano se il tuo browser (o, nel nostro caso, il tuo browser con AdGuard), è suscettibile alle vulnerabilità comuni. Se pianifichi di utilizzare qualsiasi programma che filtri HTTPS, non necessariamente AdGuard (es., un antivirus), ti consigliamo di verificare la qualità della connessione su tali siti web.
 
 - [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
 - [https://www.howsmyssl.com/](https://www.howsmyssl.com/)

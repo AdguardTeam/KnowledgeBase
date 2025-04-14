@@ -1,6 +1,6 @@
 ---
 title: Instalace certifikátu do Zabezpečené složky
-sidebar_position: 13
+sidebar_position: 12
 ---
 
 :::info

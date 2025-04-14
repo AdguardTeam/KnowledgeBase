@@ -39,7 +39,7 @@ Tato verze Asistenta je starší a nemá smysl ji používat v nových systémec
 
 :::
 
-#### Zakázat AMP
+#### Disable AMP
 
 Skript, který je předinstalován pouze v aplikaci AdGuard pro Android. Zakáže AMP (Accelerated Mobile Pages) na stránce s výsledky vyhledávání Google. Více informací o tomto uživatelském skriptu a jeho instalaci najdete na [GitHubu](https://github.com/AdguardTeam/DisableAMP).
 

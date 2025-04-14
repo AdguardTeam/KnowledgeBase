@@ -31,7 +31,7 @@ _Úroveň záznamu_ definuje, jaká data o provozu aplikace by měla být zaznam
 
 ![Advanced \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-Sekce _Nízkoúrovňová nastavení_ je určena pro zkušené uživatele. [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
+Sekce _Nízkoúrovňová nastavení_ je určena pro zkušené uživatele. [Přečtěte si více o Nízkoúrovňových nastavení](/adguard-for-android/features/low-level-settings/)
 
 ![Low-level settings \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
@@ -39,7 +39,7 @@ Sekce _Nízkoúrovňová nastavení_ je určena pro zkušené uživatele. [Read 
 
 Tato sekce umožňuje spravovat nastavení HTTPS filtrování, filtry a uživatelské skripty a nastavit proxy server.
 
-![Filtering \*mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
+![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.jpg)
 
 ### Filtry
 
@@ -57,102 +57,110 @@ Pokud aktivujete příliš mnoho filtrů, mohou některé webové stránky fungo
 
 [Více informací o filtrech](https://adguard.com/en/blog/what-are-filters.html)
 
-### Uživatelské skripty
+### Rozšíření
 
-Uživatelské skripty jsou miniprogramy napsané v jazyce JavaScript, které rozšiřují funkčnost jedné nebo více webových stránek. K instalaci uživatelských skriptů potřebujete speciální správce uživatelských skriptů. AdGuard takovou funkci má a umožňuje přidávat uživatelské skripty pomocí URL nebo ze souboru.
+Extensions allow you to add userscripts and userstyles.
 
-![Userscripts \*mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
+![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.jpg)
+
+Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
+
+Userstyles are like userscripts that allow you to change how web pages look in the browser without modifying their content. They work by adding CSS styles to the website’s existing styles. For example, if you want a dark theme on a website that doesn’t offer one, you can use a userstyle to do it.
+
+To add a userstyle, go to _Settings_ → _Filtering_ → _Extensions_→ _Add extension_ → _Import from file or URL_. You can find ready-made user styles [online](https://userstyles.world/).
+
+To create your own style, tap _Add extension_ → _Create userstyle_.
 
 #### AdGuard Extra
 
-AdGuard Extra je vlastní uživatelský skript, který blokuje složité reklamy a mechanismy, které znovu vkládají reklamy na webové stránky.
+AdGuard Extra is a custom userscript that blocks complex ads and mechanisms that reinject ads to websites.
 
-#### Zakázat AMP
+#### Disable AMP
 
-Zakázat AMP je uživatelský skript, který zakáže [Accelerated mobile pages](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) na stránce s výsledky vyhledávání Google.
+Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) on the Google search results page.
 
 ### Síť
 
 #### HTTPS filtrování
 
-K blokování reklam a slídičů na většině webových stránek a ve většině aplikací potřebuje AdGuard filtrovat jejich provoz HTTPS. [Další informace o HTTPS filtrování](/general/https-filtering/what-is-https-filtering)
+To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
 
-##### Bezpečnostní certifikáty
+##### Security certificates
 
-Za účelem správy šifrovaného provozu nainstaluje AdGuard do vašeho zařízení certifikát CA. Je to bezpečné: provoz je filtrován lokálně a AdGuard ověřuje bezpečnost připojení.
+To manage encrypted traffic, AdGuard installs its CA certificate on your device. It's safe: the traffic is filtered locally and AdGuard verifies the security of the connection.
 
-Ve starších verzích Androidu se certifikát nainstaluje automaticky. V systému Android 11 a novějších verzích je třeba certifikát nainstalovat ručně. [Pokyny k instalaci](/adguard-for-android/solving-problems/manual-certificate/)
+On older versions of Android, the certificate is installed automatically. On Android 11 and later, you need to install it manually. [Installation instructions](/adguard-for-android/solving-problems/manual-certificate/)
 
-Certifikát CA v uživatelském úložišti stačí k filtrování provozu HTTPS v prohlížečích a některých aplikacích. Existují však aplikace, které důvěřují pouze certifikátům ze systémového úložiště. Chcete-li tam filtrovat provoz HTTPS, musíte do systémového úložiště nainstalovat CA certifikát AdGuardu. [Pokyny](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
+The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
-##### Filtrované aplikace HTTPS
+##### HTTPS-filtered apps
 
-Tato sekce obsahuje seznam aplikací, pro které AdGuard filtruje provoz HTTPS. Upozorňujeme, že nastavení lze použít pro všechny aplikace pouze v případě, že máte certifikáty CA v uživatelském úložišti i v systémovém úložišti.
+This section contains the list of apps for which AdGuard filters HTTPS traffic. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
 
-##### Weby s HTTPS filtrováním
+##### HTTPS-filtered websites
 
-Toto nastavení umožňuje spravovat weby, pro které má AdGuard filtrovat provoz HTTPS.
+This setting allows you to manage websites for which AdGuard should filter HTTPS traffic.
 
-Filtrování HTTPS umožňuje AdGuardu filtrovat obsah požadavků a odezev, tato data však nikdy neshromažďujeme ani neukládáme. Pro zvýšení bezpečnosti však z HTTPS filtrování [vylučujeme webové stránky, které obsahují potenciálně citlivé informace](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
+HTTPS filtering allows AdGuard to filter the content of requests and responses, but we never collect or store this data. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
 
-Výběrem jednoho z režimů můžete do výjimek přidat také weby, které považujete za nezbytné:
+You can also add websites that you consider necessary to exclusions by selecting one of the modes:
 
-- Vyloučení konkrétních webových stránek z HTTPS filtrování
-- Filtrování provozu HTTPS pouze na webech přidaných do výjimek
+- Exclude specific websites from HTTPS filtering
+- Filter HTTPS traffic only on the websites added to exclusions
 
-Ve výchozím nastavení také nefiltrujeme weby s certifikáty s rozšířeným ověřením (EV), jako jsou například finanční webové stránky. Pokud potřebujete, můžete také povolit možnost _Filtrovat weby s certifikáty EV_.
+By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. Pokud potřebujete, můžete také povolit možnost _Filtrovat weby s certifikáty EV_.
 
 #### Proxy
 
-AdGuard můžete nastavit tak, aby veškerý provoz vašeho zařízení směroval přes server proxy. [Jak nastavit odchozí proxy](/adguard-for-android/solving-problems/outbound-proxy)
+You can set up AdGuard to route all your device's traffic through your proxy server. [How to set up an outbound proxy](/adguard-for-android/solving-problems/outbound-proxy)
 
-V této sekci můžete také nastavit VPN třetí strany pro spolupráci s AdGuardem, pokud to váš poskytovatel VPN umožňuje.
+In this section, you can also set up a third-party VPN to work with AdGuard, if your VPN provider allows it.
 
-V sekci _Aplikace pracující skrze proxy server_ můžete vybrat aplikace, které budou směrovat svůj provoz přes zadaný proxy. Pokud máte povolenou _Integraci s AdGuard VPN_, plní toto nastavení roli vyloučení aplikací AdGuard VPN: umožňuje určit aplikace, které mají být směrovány skrze tunel AdGuard VPN.
+Under _Apps operating through proxy_, you can select apps that will route their traffic through your specified proxy. If you have _Integration with AdGuard VPN_ enabled, this setting plays the role of AdGuard VPN's app exclusions: it allows you to specify apps to be routed through the AdGuard VPN tunnel.
 
-#### Režim směrování
+#### Routing mode
 
-V této sekci můžete vybrat metodu filtrování provozu.
+This section allows you to select the traffic filtering method.
 
-- _Lokální VPN_ filtruje provoz skrze lokálně vytvořenou VPN. Jedná se o nejspolehlivější režim. Vzhledem k omezením systému Android je to také jediná celosystémová metoda filtrování provozu dostupná na zařízeních bez přístupu root.
+- _Local VPN_ filters traffic through a locally created VPN. This is the most reliable mode. Due to Android restrictions, it is also the only system-wide traffic filtering method available on non-rooted devices.
 
 :::note
 
-Režim _Lokální VPN_ neumožňuje používat AdGuard současně s jinými VPN. Chcete-li s AdGuardem používat jinou VPN, musíte ji překonfigurovat, aby fungovala v režimu proxy, a nastavit odchozí proxy v AdGuardu. U AdGuard VPN se to provádí automaticky pomocí [_Režimu integrace_](/adguard-for-android/features/integration-with-vpn).
+The _Local VPN_ mode doesn't allow AdGuard to be used simultaneously with other VPNs. To use another VPN with AdGuard, you need to reconfigure it to work in proxy mode and set up an outbound proxy in AdGuard. For AdGuard VPN, this is done automatically with the help of the [_Integrated mode_](/adguard-for-android/features/integration-with-vpn).
 
 :::
 
-- _Automatický proxy_ je alternativní metoda směrování provozu, která nevyžaduje použití VPN. Významnou výhodou je, že jej lze provozovat souběžně s VPN. Tento režim vyžaduje přístup root.
+- _Automatic proxy_ is an alternative traffic routing method that does not require the use of a VPN. One significant advantage is that it can be run in parallel with a VPN. This mode requires root access.
 
-- _Manuální proxy_ zahrnuje nastavení proxy na konkrétním portu, který lze poté nakonfigurovat v nastavení Wi-Fi. Tento režim vyžaduje přístup root pro Android 10 a vyšší.
+- _Manual proxy_ involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
 
 ## Licence
 
-V této sekci najdete informace o své licenci a můžete provádět následující:
+In this section, you can find information about your license and manage it:
 
-- Zakoupit licenci AdGuardu pro aktivaci [funkcí plné verze](/adguard-for-android/features/free-vs-full)
-- Přihlásit se ke svému AdGuard účtu nebo zadat licenční klíč pro aktivaci licence
-- Zaregistrovat se a aktivovat si 7denní zkušební dobu, pokud jste ji ještě nevyužili
-- Obnovit stav licence z nabídky se třemi tečkami (⋮)
-- Otevřít AdGuard účet a spravovat v něm své licence
-- Resetovat licenci — například pokud jste dosáhli limitu zařízení pro tuto licenci a chcete použít jinou
+- Buy an AdGuard license to activate [the full version's features](/adguard-for-android/features/free-vs-full)
+- Log in to your AdGuard account or enter the license key to activate your license
+- Sign up to activate your 7-day trial period if you haven't used it yet
+- Refresh the license status from the three-dots menu (⋮)
+- Open the AdGuard account to manage your license there
+- Reset your license — for example, if you've reached device limit for this license and want to apply another one
 
 ![License screen \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
 ## Podpora
 
-Tuto sekci použijte, pokud máte nějaké dotazy nebo návrhy týkající se AdGuardu pro Android. Před kontaktováním podpory doporučujeme nahlédnout do _[FAQ](https://adguard.com/support/adguard_for_android.html)_ nebo do této databáze znalostí.
+Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting _[FAQ](https://adguard.com/support/adguard_for_android.html)_ or this knowledge base before contacting support.
 
 ![Support \*mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
-Pokud si všimnete nezablokované reklamy, nahlaste ji prosím skrze menu _Nahlásit nesprávné blokování_.
+If you notice a missed ad, please report it via _Report incorrect blocking_.
 
-Pro neobvyklé chování aplikace vyberte _Nahlásit chybu_. Pokud je to možné, popište podrobně svůj problém a přidejte záznamy aplikace. [Jak popsat problém](/guides/report-bugs/#how-to-describe-a-problem)
+For unexpected app behavior, select _Report a bug_. If possible, describe your problem in detail and add app logs. [How to describe an issue](/guides/report-bugs/#how-to-describe-a-problem)
 
-Pro vaše návrhy použijte _Požádat o funkci_.
+For your suggestions, use _Request a feature_.
 
 :::note
 
-GitHub je alternativní způsob, jak hlásit chyby a navrhovat nové funkce. [Pokyny a odkazy na repozitář](/guides/report-bugs/#adguard-for-android)
+GitHub is an alternative way to report bugs and suggest new features. [Instructions and repository links](/guides/report-bugs/#adguard-for-android)
 
 :::

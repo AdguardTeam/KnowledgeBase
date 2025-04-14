@@ -39,7 +39,7 @@ Esta versión del Asistente de AdGuard es antigua y no tiene sentido usarla en s
 
 :::
 
-#### Deshabilitar AMP
+#### Disable AMP
 
 Un script que sólo está preinstalado en AdGuard para Android. Desactiva AMP (Accelerated Mobile Pages) en la página de resultados de búsqueda de Google. Obtén más información sobre este scripts de usuario y cómo instalarlo en [GitHub](https://github.com/AdguardTeam/DisableAMP).
 

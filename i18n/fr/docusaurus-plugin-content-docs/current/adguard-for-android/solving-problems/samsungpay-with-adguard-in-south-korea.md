@@ -1,11 +1,11 @@
 ---
 title: Comment utiliser Samsung Pay avec AdGuard en Corée du Sud
-sidebar_position: 17
+sidebar_position: 16
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article concerne AdGuard pour Android, un bloqueur de publicité multifonctionnel qui protège votre appareil au niveau système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -27,7 +27,7 @@ Pour activer *Détecter Samsung Pay*, suivez ces étapes :
 
 1. Faites défiler jusqu'à *Détecter Samsung Pay* et déplacez le curseur vers la droite.
 
-1. Tap *Allow permissions* and give AdGuard access to information about the use of other apps.
+1. Appuyez sur *Accorder les autorisations* et donnez à AdGuard l'accès aux informations sur l'utilisation d'autres applications.
 
 Nous en avons besoin pour collecter des statistiques sur le fonctionnement de Samsung Pay afin que la fonction *Détecter Samsung Pay* puisse être utilisée.
 

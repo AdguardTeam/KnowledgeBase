@@ -7,9 +7,9 @@ Esta página descreve os recursos e detalhes sobre a gestão central de polític
 
 ## 1. Baixe o MSI {#msi-download}
 
-Baixe o [AdGuard MSI x86](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi)
+Baixe o [AdGuard MSI x86](https://agrd.io/adguard_setup86_msi)
 
-Baixe o [AdGuard MSI x64](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
+Baixe o [AdGuard MSI x64](https://agrd.io/adguard_setup64_msi)
 
 ## 2. Configure as configurações da sua rede {#settings-configuring}
 

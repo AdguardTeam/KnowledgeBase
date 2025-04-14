@@ -13,7 +13,7 @@ Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multi
 
 :::caution
 
-Changing the low-level settings can cause problems with AdGuard’s performance, interrupt your Internet connection, or compromise your security and privacy. Use the low-level features only if you are an experienced user and know what you are doing, or if our support team has asked you to do so.
+Changing the low-level settings can cause problems with AdGuard’s performance, interrupt your Internet connection, or compromise your security and privacy. Utiliza las características de bajo nivel solo si eres un usuario experimentado y sabes lo que estás haciendo, o si nuestro equipo de soporte te lo ha pedido.
 
 :::
 
@@ -21,13 +21,13 @@ To access _Low-level settings_, open the AdGuard app and tap the gear icon in th
 
 ## Configuración de bajo nivel
 
-For AdGuard v4.x for Android we’ve completely redesigned the low-level settings. We have reworked the list of settings and organized them into thematic groups with improved descriptions. We also added input validation and other safety valves.
+Para AdGuard v4.x para Android hemos rediseñado completamente las configuraciones de bajo nivel. We have reworked the list of settings and organized them into thematic groups with improved descriptions. We also added input validation and other safety valves.
 
 ### Protección DNS
 
 #### Upstreams fallback
 
-Here you can specify the fallback DNS resolver(s) to use when the configured server is unavailable. Available options:
+Aquí puedes especificar los solucionadores DNS fallback que se utilizarán si el servidor configurado no está disponible. Opciones disponibles:
 
 - _Automatic DNS_: Select this option if you want to use the system DNS or AdGuard DNS.
 - _None_: Select this option if you do not want to have any fallback.
@@ -39,18 +39,18 @@ Here you can list domains that will be redirected to fallback upstreams, if avai
 
 #### Detectar dominios de búsqueda
 
-If this setting is enabled, AdGuard will detect DNS search domains and automatically redirect them to fallback upstreams, if available.
+Si esta configuración está habilitada, AdGuard detectará los dominios de búsqueda DNS y los redirigirá automáticamente a fallback upstreams, si están disponibles.
 
 #### Bootstrap de subida
 
-Bootstrap DNS for encrypted DNS upstreams, such as DoH, DoT, and DoQ servers. Available options:
+Bootstrap DNS para DNS upstream cifrado, como servidores DoH, DoT y DoQ. Opciones disponibles:
 
 - _Automatic DNS_: Select this option if you want to use the system DNS or AdGuard DNS. This option is selected by default.
 - _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. These addresses will be used as bootstrap upstreams.
 
 #### Modo de bloqueo para reglas de estilo adblock
 
-Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for example, `||example.org^`). Available options:
+Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for example, `||example.org^`). Opciones disponibles:
 
 - _REFUSED_: Respond with REFUSED
 - _NXDOMAIN_: Respond with NXDOMAIN
@@ -76,29 +76,29 @@ Here you can set the time to live (TTL) of the record for blocked domains. The d
 
 #### Tamaño de caché de DNS
 
-Aquí puedes especificar el número máximo de respuestas almacenadas en caché. The default value is 1000.
+Aquí puedes especificar el número máximo de respuestas almacenadas en caché. El valor predeterminado es 1000.
 
 #### Bloqueo ECH
 
-If this setting is enabled, AdGuard will block TLS Encrypted Hello (ECH) in DNS responses.
+Si esta configuración está habilitada, AdGuard bloqueará TLS Encrypted Hello (ECH) en las respuestas DNS.
 
-#### Try HTTP/3 for DNS-over-HTTPS upstreams
+#### Probar HTTP/3 para upstreams de DNS-over-HTTPS
 
-If this setting is enabled, AdGuard will use HTTP/3 to speed up DNS query resolution for DNS-over-HTTPS upstreams. Otherwise, AdGuard will revert to its default behavior and use HTTP/2 to send all DNS requests for DNS-over-HTTPS.
+If this setting is enabled, AdGuard will use HTTP/3 to speed up DNS query resolution for DNS-over-HTTPS upstreams. De lo contrario, AdGuard volverá a su comportamiento predeterminado y utilizará HTTP/2 para enviar todas las peticiones DNS para DNS-over-HTTPS.
 
-#### SERVFAIL failure response
+#### Respuesta a fallos de SERVFAIL
 
-If this setting is enabled, AdGuard will send a SERVFAIL response to the client if all upstreams, including the fallback ones, fail to reply. If this setting is disabled, no response will be sent to the client in such a case.
+Si esta configuración está habilitada, AdGuard enviará una respuesta SERVFAIL al cliente si todas las fuentes, incluidas las de segunda opción, no responden. If this setting is disabled, no response will be sent to the client in such a case.
 
 #### Use fallback for all domains
 
-If this setting is enabled, AdGuard will use fallback upstreams for all domains, including non-fallback ones. Otherwise, fallback upstreams will only be used for fallback domains and search domains if the corresponding option is enabled.
+If this setting is enabled, AdGuard will use fallback upstreams for all domains, including non-fallback ones. De lo contrario, los upstreams de fallback solo se utilizarán para dominios de segunda opción y dominios de búsqueda si la opción correspondiente está habilitada.
 
-#### Validate DNS upstreams
+#### Validar upstreams DNS
 
-If this setting is enabled, AdGuard will test DNS upstreams before adding or updating custom DNS servers.
+Si esta configuración está habilitada, AdGuard probará las fuentes DNS upstream antes de agregar o actualizar servidores DNS personalizados.
 
-#### Filter secure DNS
+#### Filtrar DNS seguro
 
 If this setting is enabled, AdGuard will filter encrypted DNS requests in addition to plain DNS requests. Encrypted DNS traffic mostly comes from Chrome and other browsers that have a secure DNS setting.
 
@@ -110,9 +110,9 @@ This setting has two modes:
 
 ### Filtrado
 
-#### Capture HAR
+#### Capturar HAR
 
-If this setting is enabled, AdGuard will log all filtered HTTP requests in HAR 1.2 format to the “har” subdirectory in the app cache directory. These files can be analyzed with the Fiddler tool.
+Si esta configuración está habilitada, AdGuard registrará todas las peticiones HTTP filtradas en formato HAR 1.2 en el subdirectorio “har” del directorio de caché de la app. Estos archivos se pueden analizar con la aplicación Fiddler.
 
 This setting may slow down your device. Use it for debugging purposes only.
 
@@ -120,17 +120,17 @@ This setting may slow down your device. Use it for debugging purposes only.
 
 #### Encrypted Client Hello
 
-If this setting is enabled, AdGuard will encrypt ClientHellos, if necessary. This feature requires HTTPS filtering to be enabled. This feature uses a local DNS proxy to look for the ECH configuration for the domain. If it is found, the ClientHello packet will be encrypted. Make sure to use an encrypted DNS server with this feature.
+If this setting is enabled, AdGuard will encrypt ClientHellos, if necessary. This feature requires HTTPS filtering to be enabled. This feature uses a local DNS proxy to look for the ECH configuration for the domain. Si se encuentra, el paquete ClientHello se cifrará. Make sure to use an encrypted DNS server with this feature.
 
 **About ClientHellos and ECH**: Every encrypted Internet connection has an unencrypted part. This is the very first packet that contains the name of the server you are connecting to. Encrypted Client Hello technology is designed to solve this problem by encrypting this packet.
 
-#### OCSP checking
+#### Verificación de OCSP
 
 If this setting is enabled, AdGuard will automatically check the revocation status of SSL certificates before connecting to a website. This feature requires HTTPS filtering to be enabled.
 
 If the check is completed within the required timeout, AdGuard will  allow the connection if the certificate is valid or immediately block the connection if the certificate is revoked.
 
-If the verification takes too long, AdGuard will allow the connection while continuing to check the certificate status in the background. Si se revoca el certificado, se bloquearán las conexiones actuales y futuras al dominio.
+Si la verificación tarda demasiado tiempo, AdGuard permitirá la conexión mientras continúa verificando el estado del certificado en segundo plano. Si se revoca el certificado, se bloquearán las conexiones actuales y futuras al dominio.
 
 #### Filtrar HTTP/3
 

@@ -1,6 +1,6 @@
 ---
 title: Mover o certificado CA para o armazenamento do sistema em dispositivos com root
-sidebar_position: 14
+sidebar_position: 13
 ---
 
 :::info

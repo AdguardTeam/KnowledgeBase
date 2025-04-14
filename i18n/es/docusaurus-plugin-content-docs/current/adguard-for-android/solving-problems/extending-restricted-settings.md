@@ -1,6 +1,6 @@
 ---
 title: Problemas causados por la ampliación de configuraciones restringidas
-sidebar_position: 18
+sidebar_position: 17
 ---
 
 :::info

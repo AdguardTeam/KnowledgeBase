@@ -23,6 +23,12 @@ Acesse-a ao navegar até *Estatísticas* → *Uso da bateria*.
 
 Dentro dele, você encontrará um gráfico que mostra o consumo de recursos da bateria do AdGuard nas últimas 24 horas, com uma opção para obter dados mais detalhados de hora em hora tocando no gráfico. Além disso, há também uma análise numérica dos dados relevantes e uma breve explicação técnica.
 
+Existem vários outros parâmetros abaixo do gráfico: *CPU em primeiro plano*, *CPU em segundo plano*, *Uso de dados móveis* e *Uso de dados Wi-Fi*.
+
+*CPU em primeiro plano* e *CPU em segundo plano* mostram quanto tempo de CPU é usado pelo AdGuard quando o app está ativo ou em execução em segundo plano.
+
+E com o *uso de dados móveis* e *uso de dados Wi-Fi*, você pode ver quanto tráfego o AdGuard consumiu quando seu celular estava usando Internet móvel ou conectado ao Wi-Fi.
+
 ### Quanto da bateria o AdGuard realmente consome?
 
 Primeiro, vamos estabelecer um pouco de teoria e links com os dados necessários.

@@ -23,6 +23,12 @@ AdGuard for Android アプリ →「*統計*」（画面下左から3番目の�
 
 この画面では、過去24時間以内のAdGuardによるバッテリー消費量を示すグラフが表示されています。また、グラフをタップすることで、より詳細な1時間ごとのデータも確認できます。 そのほか、関連データの数値的な内訳と短い技術的な説明もあります。
 
+There are several other parameters below the chart: *CPU foreground*, *CPU background*, *Mobile data usage*, and *Wi-Fi data usage*.
+
+*CPU foreground* and *CPU background* show how much CPU time is used by AdGuard when the app is active or running in the background.
+
+And with *Mobile data usage* and *Wi-Fi data usage*, you can see how much traffic AdGuard consumed when your phone was using mobile Internet or connected to Wi-Fi.
+
 ### AdGuard の本当のバッテリー消費量はどのくらいですか？
 
 まず、少し理論を整理し、必要なデータへのリンク挙げたいと思います。を

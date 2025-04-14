@@ -38,10 +38,10 @@ Man könnte sagen, dass dies eine besondere Unterkategorie des Fehlers 1603 ist.
 - Starten und registrieren Sie den Microsoft Installer-Dienst erneut. Es erfordert einige Schritte.
 
     - Drücken Sie *Win + R* und geben Sie **services.msc** ein.
-    - Find in the list and double-click *Windows Installer*.
+    - Suchen Sie in der Liste *Windows Installer* und doppelklicken Sie darauf.
     - Klicken Sie die Schaltfläche *Starten* unter *Dienststatus* und klicken Sie anschließend auf *OK*. Sollte der Dienststatus **Wird ausgeführt** sein, sollten Sie zuerst auf *Beenden* und anschließend auf *Starten* klicken.
-    - Press *Win + R*, type ***msiexec /unregister***, and hit *Enter*.
-    - Press *Win + R* again, type ***msiexec /regserver***, and hit *Enter*
+    - Drücken Sie *⊞ Win + R*, geben Sie ***msiexec /unregister*** ein und drücken Sie *Eingabetaste*.
+    - Drücken Sie erneut *Win + R*, geben Sie ***msiexec /regserver*** ein und drücken Sie *Eingabetaste*
 
 - Starten Sie den PC neu und beginnen Sie die Installation von vorne. Manchmal reicht dies aus, um das Problem zu beheben.
 
@@ -68,10 +68,10 @@ Der Fehler klingt erschreckender als er tatsächlich ist. In Wirklichkeit handel
 - Starten und registrieren Sie den Microsoft Installer-Dienst erneut. Es erfordert einige Schritte.
 
     - Drücken Sie *Win + R* und geben Sie ***services.msc*** ein.
-    - Find in the list and double-click *Windows Installer*.
+    - Suchen Sie in der Liste *Windows Installer* und doppelklicken Sie darauf.
     - Klicken Sie die Schaltfläche *Starten* unter *Dienststatus* und klicken Sie anschließend auf *OK*. Sollte der Dienststatus **Wird ausgeführt** sein, sollten Sie zuerst auf *Beenden* und anschließend auf *Starten* klicken.
-    - Press *Win + R*, type ***msiexec /unregister***, and hit *Enter*.
-    - Press *Win + R* again, type ***msiexec /regserver***, and hit *Enter*
+    - Drücken Sie *⊞ Win + R*, geben Sie ***msiexec /unregister*** ein und drücken Sie *Eingabetaste*.
+    - Drücken Sie erneut *Win + R*, geben Sie ***msiexec /regserver*** ein und drücken Sie *Eingabetaste*
 
 - Verschaffen Sie sich für die Installation volle Berechtigungen auf dem Laufwerk. Es ist möglich, dass der Fehler 1603 auftritt, weil Sie nicht die vollen Berechtigungen für den Dateispeicherort besitzen. Es ist leider auch nicht so einfach wie einige der anderen Lösungen:
 

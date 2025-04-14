@@ -39,7 +39,7 @@ This version of Assistant is legacy and there is no point in using it on new sys
 
 :::
 
-#### AMP'yi devre dışı bırak
+#### Disable AMP
 
 Yalnızca Android için AdGuard'da önceden yüklenmiş olan bir betik. Google arama sonuçları sayfasında AMP'yi (Hızlandırılmış Mobil Sayfalar) devre dışı bırakır. Learn more about this userscript and how to install it on [GitHub](https://github.com/AdguardTeam/DisableAMP).
 

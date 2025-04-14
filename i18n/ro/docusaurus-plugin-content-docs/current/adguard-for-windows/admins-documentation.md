@@ -7,9 +7,9 @@ Această pagină descrie caracteristicile și detaliile gestionării centrale a 
 
 ## 1. Descărcați MSI-ul {#msi-download}
 
-Download the [AdGuard MSI x86](https://static.adguard.com/windows/setup86.msi)
+Download the [AdGuard MSI x86](https://agrd.io/adguard_setup86_msi)
 
-Download the [AdGuard MSI x64](https://static.adguard.com/windows/setup64.msi)
+Download the [AdGuard MSI x64](https://agrd.io/adguard_setup64_msi)
 
 ## 2. Configurați setările pentru rețeaua dumneavoastră {#settings-configuring}
 

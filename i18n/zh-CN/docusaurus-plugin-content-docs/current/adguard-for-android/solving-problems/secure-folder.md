@@ -1,6 +1,6 @@
 ---
 title: 在安全文件夹中安装证书
-sidebar_position: 13
+sidebar_position: 12
 ---
 
 :::info

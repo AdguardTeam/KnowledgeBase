@@ -7,9 +7,9 @@ sidebar_position: 5
 
 ## 1. MSI 다운로드 {#msi-download}
 
-[AdGuard MSI x86](https://static.adguard.com/windows/setup86.msi)을 다운로드합니다.
+[AdGuard MSI x86](https://agrd.io/adguard_setup86_msi)을 다운로드합니다.
 
-[AdGuard MSI x64](https://static.adguard.com/windows/setup64.msi)을 다운로드합니다.
+[AdGuard MSI x64](https://agrd.io/adguard_setup64_msi)을 다운로드합니다.
 
 ## 2. 네트워크 설정 구성 {#settings-configuring}
 
