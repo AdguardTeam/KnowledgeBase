@@ -1,6 +1,6 @@
 ---
 title: Jak používat Samsung Pay s AdGuardem v Jižní Korei
-sidebar_position: 17
+sidebar_position: 16
 ---
 
 :::info

@@ -1,6 +1,6 @@
 ---
 title: How to protect AdGuard from being disabled by the system
-sidebar_position: 9
+sidebar_position: 8
 ---
 
 :::info

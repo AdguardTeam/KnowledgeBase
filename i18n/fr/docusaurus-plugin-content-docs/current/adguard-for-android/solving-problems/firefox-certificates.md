@@ -1,6 +1,6 @@
 ---
 title: Installation manuelle du certificat de sécurité dans le navigateur Firefox
-sidebar_position: 11
+sidebar_position: 10
 ---
 
 :::info
@@ -56,7 +56,7 @@ Cette méthode ne fonctionnera que sur les appareils **rootés** .
 
 1. Open the **AdGuard settings** (gear icon in the bottom right corner) → **Filtering** → **Network** → **HTTPS filtering** → **Security certificate** → **Instructions for Firefox** → **Install for old versions**;
 
-1. Open the folder `data/data/org.mozilla.firefox/files/mozilla` using `adb shell su` and `cd data/data/...`, then browse to the folder named `xxxxxxx.default` and memorize its name;
+1. Ouvrez le dossier `data/data/org.mozilla.firefox/files/mozilla` en utilisant `adb shell su` et `cd data/data/...`, puis naviguez jusqu'au dossier nommé `xxxxxxx.default` et mémorisez son nom ;
 
 1. In the specified folder we are interested in two files:
 

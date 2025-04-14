@@ -5,17 +5,17 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Requisiti di sistema
 
-**OS version:** Android 9.0 or higher
+**Versione OS:** Android 9.0 o superiore
 
 **RAM:** almeno 2 GB
 
-**Free disk space:** 500 MB
+**Spazio libero su disco:** 500 MB
 
 ## Installazione
 

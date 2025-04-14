@@ -17,7 +17,7 @@ Změna nízkoúrovňových nastavení může způsobit problémy s výkonem AdGu
 
 :::
 
-To access _Low-level settings_, open the AdGuard app and tap the gear icon in the lower-right corner of the screen. Then select _General → Advanced → Low-level settings_.
+Chcete-li přejít na _Nízkoúrovňová nastavení_, otevřete aplikaci AdGuard a klepněte na ikonu ozubeného kola v pravém dolním rohu obrazovky. Poté zvolte Obecné → Pokročilé → Nízkoůrovňová nastavení\*.
 
 ## Nízkoúrovňová nastavení
 
@@ -29,9 +29,9 @@ Ve verzi AdGuard v4.x pro Android jsme zcela přepracovali nízkoúrovňová nas
 
 Zde můžete zadat záložní DNS řešitel, který se použije v případě nedostupnosti nakonfigurovaného serveru. Dostupné možnosti:
 
-- _Automatic DNS_: Select this option if you want to use the system DNS or AdGuard DNS.
-- _None_: Select this option if you do not want to have any fallback.
-- _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. Tyto adresy budou použity jako upstreamy.
+- _Automatický DNS_: Tuto možnost vyberte, pokud chcete použít systémový DNS nebo AdGuard DNS.
+- _Nic_: Tuto možnost vyberte, pokud nechcete mít žádnou záložní možnost.
+- _Vlastní DNS_: Tuto možnost vyberte a zadejte adresy běžného DNS IPv4 nebo IPv6, jednu na řádek. Tyto adresy budou použity jako upstreamy.
 
 #### Záložní domény
 
@@ -45,25 +45,24 @@ Pokud je tato možnost povolena, AdGuard zjistí vyhledávací domény a automat
 
 Bootstrap DNS pro šifrované upstream DNS, například servery DoH, DoT a DoQ. Dostupné možnosti:
 
-- _Automatic DNS_: Select this option if you want to use the system DNS or AdGuard DNS. Tato možnost je ve výchozím nastavení vybrána.
-- _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. Tyto adresy budou použity jako bootstrap upstreamy.
+- _Automatický DNS_: Tuto možnost vyberte, pokud chcete použít systémový DNS nebo AdGuard DNS. Tato možnost je ve výchozím nastavení vybrána.
+- _Vlastní DNS_: Tuto možnost vyberte a zadejte adresy běžného DNS IPv4 nebo IPv6, jednu na řádek. Tyto adresy budou použity jako bootstrap upstreamy.
 
 #### Režim blokování pro pravidla stylu adblock
 
-Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for example, `||example.org^`). Dostupné možnosti:
+Zde můžete zadat typ odpovědi pro domény blokované DNS pravidly na základě syntaxe pravidla adblock (například `||example.org^`). Dostupné možnosti:
 
-- _REFUSED_: Respond with REFUSED
-- _NXDOMAIN_: Respond with NXDOMAIN
-- _Custom IP address_: Select this option to respond with a custom IP address. Pro blokované požadavky A je třeba zadat adresu IPv4 a pro blokované požadavky AAAA adresu IPv6.
+- _REFUSED_: Odezva pomocí REFUSED
+- _NXDOMAIN_: Odezva pomocí NXDOMAIN
+- _Vlastní IP adresa_: Tuto možnost vyberte, chcete-li odpovědět pomocí vlastní IP adresy. Pro blokované požadavky A je třeba zadat adresu IPv4 a pro blokované požadavky AAAA adresu IPv6.
 
 #### Režim blokování pro pravidla hosts
 
-Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax
-(for example, `<ip> <domain> 0.0.0.0 example.com`).
+Zde můžete zadat typ odpovědi pro domény blokované DNS pravidly na základě syntaxe pravidla hosts (například `<ip> <domain> 0.0.0.0 example.com`).
 
-- _REFUSED_: Respond with REFUSED
-- _NXDOMAIN_: Respond with NXDOMAIN
-- _Custom IP address_: Select this option to respond with a custom IP address. Pro blokované požadavky A je třeba zadat adresu IPv4 a pro blokované požadavky AAAA adresu IPv6.
+- _REFUSED_: Odezva pomocí REFUSED
+- _NXDOMAIN_: Odezva pomocí NXDOMAIN
+- _Vlastní IP adresa_: Tuto možnost vyberte, chcete-li odpovědět pomocí vlastní IP adresy. Pro blokované požadavky A je třeba zadat adresu IPv4 a pro blokované požadavky AAAA adresu IPv6.
 
 #### Časový limit DNS požadavku
 
@@ -104,9 +103,9 @@ Pokud je toto nastavení povoleno, bude AdGuard kromě běžných požadavků DN
 
 Toto nastavení má dva režimy:
 
-- **Filter on the fly**. V tomto režimu bude AdGuard filtrovat přenosy DNS-over-HTTPS bez přesměrování na místní proxy server DNS. Použije server DNS zadaný v nastavení prohlížeče.
+- **Filtrování za chodu**. V tomto režimu bude AdGuard filtrovat přenosy DNS-over-HTTPS bez přesměrování na místní proxy server DNS. Použije server DNS zadaný v nastavení prohlížeče.
 
-- **Redirect to DNS proxy**. V tomto režimu AdGuard přesměruje požadavky DNS-over-HTTPS na místní proxy server DNS za účelem filtrování. Použije server DNS vybraný v nastavení DNS aplikace AdGuard.
+- **Přesměrování na DNS proxy**. V tomto režimu AdGuard přesměruje požadavky DNS-over-HTTPS na místní proxy server DNS za účelem filtrování. Použije server DNS vybraný v nastavení DNS aplikace AdGuard.
 
 ### Filtrování
 
@@ -122,7 +121,7 @@ Toto nastavení může zpomalit zařízení. Používejte jej pouze pro účely 
 
 Pokud je toto nastavení povoleno, bude AdGuard v případě potřeby šifrovat soubory ClientHellos. Tato funkce vyžaduje, aby bylo povoleno filtrování HTTPS. Tato funkce používá místní proxy server DNS k vyhledání konfigurace ECH pro danou doménu. Pokud je nalezen, paket ClientHello bude zašifrován. Ujistěte se, že s touto funkcí používáte šifrovaný server DNS.
 
-**About ClientHellos and ECH**: Every encrypted Internet connection has an unencrypted part. Jedná se o první paket, který obsahuje název serveru, ke kterému se připojujete. Technologie Encrypted Client Hello je navržena tak, aby tento problém řešila šifrováním tohoto paketu.
+**O ClientHello and ECH**: Každé šifrované internetové připojení má i nešifrovanou část. Jedná se o první paket, který obsahuje název serveru, ke kterému se připojujete. Technologie Encrypted Client Hello je navržena tak, aby tento problém řešila šifrováním tohoto paketu.
 
 #### Kontrola OCSP
 
@@ -136,23 +135,23 @@ Pokud ověření trvá příliš dlouho, AdGuard připojení povolí a zároveň
 
 Pokud je toto nastavení povoleno, bude AdGuard filtrovat kromě jiných typů požadavků také požadavky odeslané skrze HTTP/3. Tato funkce vyžaduje, aby bylo povoleno filtrování HTTPS.
 
-**About HTTP/3**: This is the latest version of the HTTP protocol, based on QUIC.
+**O HTTP/3**: Jedná se o nejnovější verzi protokolu HTTP založenou na protokolu QUIC.
 
 ### Odchozí proxy
 
 #### Zobrazit nastavení Filtrovat požadavky DNS
 
-When this setting is enabled, the _Filter DNS requests_ switch is displayed in the _Add proxy server_ dialog. To access the dialog, open **Settings**, then go to **Filtering** → **Network** → **Proxy** → **Proxy server**, and click _+ Add proxy server_. Zapnutím tohoto přepínače povolíte filtrování DNS požadavků procházejících přes zadaný odchozí proxy server.
+Je-li toto nastavení povoleno, zobrazí se v dialogu _Přidat proxy server_ přepínač _Filtrovat požadavky DNS_. Chcete-li otevřít dialogové okno, otevřete **Nastavení**, přejděte na **Filtrování** → **Síť** → **Proxy** → **Proxy server** a klikněte na _+ Přidat proxy_. Zapnutím tohoto přepínače povolíte filtrování DNS požadavků procházejících přes zadaný odchozí proxy server.
 
 ### Ochrana
 
 #### Rozsahy portů
 
-Toto nastavení umožňuje zadat rozsahy portů, které mají být filtrovány. Zadejte rozsahy portů, jeden rozsah na řádek. Use `..` to specify the range. For example, `80..5221`.
+Toto nastavení umožňuje zadat rozsahy portů, které mají být filtrovány. Zadejte rozsahy portů, jeden rozsah na řádek. Rozsah zadejte pomocí `..`. Např. `80..5221`.
 
 #### Zaznamenat odstraněné HTML události
 
-If this setting is enabled, AdGuard will write information about blocked HTML elements to _Recent activity_. To access the logs, go to go to **Statistics** → **Recent activity**.
+Pokud je toto nastavení povoleno, bude AdGuard zapisovat informace o blokovaných prvcích HTML do _Nedávné aktivity_. Chcete-li získat přístup k protokolům, přejděte do **Statistika** → **Nedávná aktivita**.
 
 #### Ladění skripletů
 
@@ -160,15 +159,15 @@ Pokud je toto nastavení povoleno, aplikace bude zobrazovat informace o ladění
 
 #### Vyloučené aplikace
 
-Toto nastavení umožňuje zobrazit seznam balíčků a identifikátorů UID, které mají být vyloučeny z ochrany AdGuardem. Zadejte názvy balíčků, nebo UID, jeden na řádek. You can use `//` for comments.
+Toto nastavení umožňuje zobrazit seznam balíčků a identifikátorů UID, které mají být vyloučeny z ochrany AdGuardem. Zadejte názvy balíčků, nebo UID, jeden na řádek. Pro komentáře můžete použít `//`.
 
 #### Obcházení balíčků QUIC
 
-Zde můžete zadat názvy balíčků, pro které má AdGuard obejít provoz QUIC. Zadejte názvy balíčků, jeden na řádek. You can use `//` for comments.
+Zde můžete zadat názvy balíčků, pro které má AdGuard obejít provoz QUIC. Zadejte názvy balíčků, jeden na řádek. Pro komentáře můžete použít `//`.
 
 #### Překonfigurovat automatický proxy při změně sítě
 
-Pokud je toto nastavení povoleno, ochrana AdGuardem se po připojení zařízení k jiné síti znovu spustí a znovu nakonfiguruje automatické parametry proxy. This setting only applies when _Routing mode_ is set to _Automatic proxy_.
+Pokud je toto nastavení povoleno, ochrana AdGuardem se po připojení zařízení k jiné síti znovu spustí a znovu nakonfiguruje automatické parametry proxy. Toto nastavení platí pouze v případě, že je _Režim směrování_ nastaven na _Automatický proxy_.
 
 #### Filtrování IPv6
 
@@ -176,11 +175,11 @@ Pokud je toto nastavení povoleno, bude AdGuard filtrovat sítě IPv6, pokud je 
 
 #### Rozsahy IPv4 vyloučené z filtrování
 
-Zde můžete uvést rozsahy IPv4, které chcete z filtrování vyloučit. Na každý řádek zadejte jeden rozsah IP. You can use `//` for comments.
+Zde můžete uvést rozsahy IPv4, které chcete z filtrování vyloučit. Na každý řádek zadejte jeden rozsah IP. Pro komentáře můžete použít `//`.
 
 #### Rozsahy IPv6 vyloučené z filtrování
 
-Zde můžete uvést rozsahy IPv6, které chcete z filtrování vyloučit. Na každý řádek zadejte jeden rozsah IP. You can use `//` for comments.
+Zde můžete uvést rozsahy IPv6, které chcete z filtrování vyloučit. Na každý řádek zadejte jeden rozsah IP. Pro komentáře můžete použít `//`.
 
 #### Zachování záznamů TCP pro odchozí sokety
 
@@ -188,8 +187,8 @@ Pokud je toto nastavení povoleno, AdGuard po uplynutí zadané doby odešle udr
 
 Toto nastavení vám umožňuje zadat:
 
-- **Idle time**, in seconds, before sending TCP keepalive probes to outgoing sockets. Výchozí hodnota je 0. Pokud máte problémy s NAT, nastavte tuto hodnotu na 20.
-- **Time between keepalive probes** for an unresponsive peer. Výchozí hodnota je 0 swkund.
+- **Dobu nečinnosti** v sekundách před odesláním sond TCP keepalive odchozím soketům. Výchozí hodnota je 0. Pokud máte problémy s NAT, nastavte tuto hodnotu na 20.
+- **Dobu mezi sondami keepalive** pro neodpovídajícího partnera. Výchozí hodnota je 0 swkund.
 
 ### Nastavení lokální VPN
 
@@ -211,7 +210,7 @@ Pokud je toto nastavení povoleno, lokální VPN AdGuardu se po vypnutí z důvo
 
 #### Zachycování paketů (PCAP)
 
-Toto nastavení povoluje protokolování rozhraní TUN. When enabled, AdGuard creates a file `timestamp.pcap`, such as  1682599851461.pcap, in the app cache directory. Tento soubor obsahuje seznam všech síťových paketů přenášených prostřednictvím sítě VPN a lze jej analyzovat pomocí nástroje Wireshark.
+Toto nastavení povoluje protokolování rozhraní TUN. Je-li tato funkce povolena, vytvoří AdGuard v adresáři mezipaměti aplikace soubor `timestamp.pcap`, například 1682599851461.pcap. Tento soubor obsahuje seznam všech síťových paketů přenášených prostřednictvím sítě VPN a lze jej analyzovat pomocí nástroje Wireshark.
 
 #### Zahrnout bránu Wi-Fi v trasách VPN
 
@@ -219,28 +218,28 @@ Pokud je toto nastavení povoleno, budou IP adresy brány přidány do tras VPN 
 
 #### Adresa IPv4
 
-Zde můžete zadat IP adresu, která bude použita pro vytvoření rozhraní TUN. The default value is `172.18.11.218`.
+Zde můžete zadat IP adresu, která bude použita pro vytvoření rozhraní TUN. Výchozí hodnota je `172.18.11.218`.
 
 #### Vynucené směrování LAN IPv4
 
-If this setting is enabled, AdGuard will filter all LAN connections, including local IPv4 network traffic, even if the _Route all LAN IPv4 connections_ option is enabled.
+Pokud je toto nastavení povoleno, bude AdGuard filtrovat všechna připojení LAN, včetně místního síťového provozu IPv4, i když je povolena možnost _Směrovat všechna připojení LAN IPv4_.
 
 #### Nucené směrování všech LAN IPv4
 
-Pokud je toto nastavení povoleno, AdGuard vyloučí připojení LAN z filtrování pro jednoduché sítě. To nemusí fungovat pro složité sítě. This setting only applies if _Forcibly route LAN IPv4_ is disabled.
+Pokud je toto nastavení povoleno, AdGuard vyloučí připojení LAN z filtrování pro jednoduché sítě. To nemusí fungovat pro složité sítě. Toto nastavení platí pouze v případě, že je zakázána možnost _Vynutit směrování LAN IPv4_.
 
 #### Adresa IPv6
 
-Zde můžete zadat IP adresu, která bude použita pro vytvoření rozhraní TUN. The default value is `2001:db8:ad:0:ff::`.
+Zde můžete zadat IP adresu, která bude použita pro vytvoření rozhraní TUN. Výchozí hodnota je `2001:db8:ad:0:ff::`.
 
 ### Různé
 
 #### Zobrazit nástroje pro vývojáře na hlavní obrazovce
 
-If this setting is enabled, AdGuard will display the **Developer tools** icon in the upper right corner of the app’s home screen.
+Pokud je toto nastavení povoleno, zobrazí AdGuard v pravém horním rohu domovské obrazovky aplikace ikonu **Nástroje vývojáře**.
 
-**Developer tools** is a specialized section available in AdGuard for Android v4.3 and later, designed for quick navigation and switching between features. Umožňuje rychle povolit nebo zakázat vlastní filtry, přístup k protokolům, povolit různé protokoly a další funkce.
+**Nástroje vývojáře** je specializovaná sekce dostupná v aplikaci AdGuard pro Android v4.3 a novější, která je určena pro rychlou navigaci a přepínání mezi funkcemi. Umožňuje rychle povolit nebo zakázat vlastní filtry, přístup k protokolům, povolit různé protokoly a další funkce.
 
 #### Detekce Samsung Pay
 
-Pokud je toto nastavení povoleno, ochrana AdGuard se při otevření aplikace Samsung Pay pozastaví. Korean users require this feature as they experience [issues with Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) when AdGuard is enabled.
+Pokud je toto nastavení povoleno, ochrana AdGuard se při otevření aplikace Samsung Pay pozastaví. Korejští uživatelé tuto funkci vyžadují, protože se u nich při zapnutém AdGuardu objevují [problémy se Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea).

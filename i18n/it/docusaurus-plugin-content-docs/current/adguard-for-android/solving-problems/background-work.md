@@ -1,6 +1,6 @@
 ---
 title: Come proteggere AdGuard dalla disabilitazione da parte del sistema
-sidebar_position: 9
+sidebar_position: 8
 ---
 
 :::info

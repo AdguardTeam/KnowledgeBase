@@ -1,6 +1,6 @@
 ---
 title: 如何设置出站代理
-sidebar_position: 8
+sidebar_position: 7
 ---
 
 :::info

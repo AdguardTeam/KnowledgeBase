@@ -105,7 +105,7 @@ Pour créer un fichier HAR dans Internet Explorer 11, procédez comme suit :
 
     - Le bouton de lecture sera gris lors de l'enregistrement et le bouton d'arrêt sera rouge. Mettez en mode **Lecture** .
 
-1. Clear any session info appearing in the lower grid using the **Clear session** button on the **Network** tab. Passez la souris sur les icônes pour voir les noms.
+1. Effacez toutes les informations de session apparaissant dans la grille inférieure à l'aide du bouton **Effacer la session** de l'onglet **Réseau**. Passez la souris sur les icônes pour voir les noms.
 
     - **Le bouton Effacer la session** est une icône à trois lignes avec un x dessus.
 
@@ -113,7 +113,7 @@ Pour créer un fichier HAR dans Internet Explorer 11, procédez comme suit :
 
 1. Reproduisez les étapes qui créent le problème.
 
-1. Save session as a .har file by clicking the **Save to disk** button (Export as HAR) on the **Network** tab.
+1. Enregistrez la session en tant que fichier .har en cliquant sur le bouton **Enregistrer sur le disque** (Exporter en tant que HAR) dans l'onglet **Réseau**.
 
 1. Envoyez-le au service d'assistance AdGuard (support@adguard.com) avec une explication détaillée du problème. Les captures d’écran prises en charge peuvent également être utiles.
 

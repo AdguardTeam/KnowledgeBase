@@ -17,7 +17,7 @@ Alterar as configurações de baixo nível pode causar problemas no desempenho d
 
 :::
 
-To access _Low-level settings_, open the AdGuard app and tap the gear icon in the lower-right corner of the screen. Then select _General → Advanced → Low-level settings_.
+Para acessar _Configurações de baixo nível_, abra o aplicativo AdGuard e toque no ícone de engrenagem no canto inferior direito da tela. Em seguida, selecione _Modo geral → Avançado → Configurações de baixo nível_.
 
 ## Configurações de baixo nível
 
@@ -29,9 +29,9 @@ Para o AdGuard v4.x para Android, redesenhamos completamente as configurações 
 
 Aqui você pode especificar o(s) resolvedor(es) DNS de recuo a ser(em) usado(s) quando o servidor configurado não estiver disponível. Opções disponíveis:
 
-- _Automatic DNS_: Select this option if you want to use the system DNS or AdGuard DNS.
-- _None_: Select this option if you do not want to have any fallback.
-- _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. Estes endereços serão utilizados como servidores DNS primários.
+- _DNS automático_: Selecione esta opção se você quiser usar o DNS do sistema ou o AdGuard DNS.
+- _Nenhum_: Selecione esta opção se você não quiser ter nenhum fallback.
+- _DNS personalizado_: Selecione esta opção e insira os endereços de servidor DNS simples IPv4 ou IPv6, um por linha. Estes endereços serão utilizados como servidores DNS primários.
 
 #### Domínios de fallback
 
@@ -45,25 +45,25 @@ Se essa configuração estiver ativada, o AdGuard detectará os domínios de pes
 
 Bootstrap DNS para servidores DNS primários criptografados, como DoH, DoT e DoQ. Opções disponíveis:
 
-- _Automatic DNS_: Select this option if you want to use the system DNS or AdGuard DNS. Esta opção está selecionada por padrão.
-- _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. Estes endereços serão utilizados como servidores DNS primários bootstrap.
+- _DNS automático_: Selecione esta opção se você quiser usar o DNS do sistema ou o AdGuard DNS. Esta opção está selecionada por padrão.
+- _DNS personalizado_: Selecione esta opção e insira os endereços de servidor DNS simples IPv4 ou IPv6, um por linha. Estes endereços serão utilizados como servidores DNS primários bootstrap.
 
 #### Modo de bloqueio para regras de estilo adblock
 
-Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for example, `||example.org^`). Opções disponíveis:
+Aqui você pode especificar o tipo de resposta para domínios Bloqueado por regras de DNS com base na sintaxe da regra de bloqueio de anúncios (por exemplo, `||example.org^`). Opções disponíveis:
 
-- _REFUSED_: Respond with REFUSED
-- _NXDOMAIN_: Respond with NXDOMAIN
-- _Custom IP address_: Select this option to respond with a custom IP address. Você terá que inserir um endereço IPv4 para solicitações A bloqueadas e um endereço IPv6 para solicitações AAAA bloqueadas.
+- _REFUSED_: responder com o código REFUSED
+- _NXDOMAIN_: responder com NXDOMAIN
+- _Endereço de IP personalizado_: Selecione esta opção para responder com um endereço de IP personalizado. Você terá que inserir um endereço IPv4 para solicitações A bloqueadas e um endereço IPv6 para solicitações AAAA bloqueadas.
 
 #### Modo de bloqueio para regras de hosts
 
-Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax
-(for example, `<ip> <domain> 0.0.0.0 example.com`).
+Aqui você pode especificar o tipo de resposta para domínios bloqueados por regras de DNS com base na sintaxe da regra de hosts
+(por exemplo, `<ip><domain> 0.0.0.0 example.com`).
 
-- _REFUSED_: Respond with REFUSED
-- _NXDOMAIN_: Respond with NXDOMAIN
-- _Custom IP address_: Select this option to respond with a custom IP address. Você terá que inserir um endereço IPv4 para solicitações A bloqueadas e um endereço IPv6 para solicitações AAAA bloqueadas.
+- _REFUSED_: responder com o código REFUSED
+- _NXDOMAIN_: responder com NXDOMAIN
+- _Endereço de IP personalizado_: Selecione esta opção para responder com um endereço de IP personalizado. Você terá que inserir um endereço IPv4 para solicitações A bloqueadas e um endereço IPv6 para solicitações AAAA bloqueadas.
 
 #### Tempo limite de solicitação de DNS
 
@@ -104,9 +104,9 @@ Se essa configuração estiver ativada, o AdGuard filtrará as solicitações de
 
 Esta configuração possui dois modos:
 
-- **Filter on the fly**. Neste modo, o AdGuard filtra o tráfego DNS-over-HTTPS sem redirecioná-lo para o proxy DNS local. Ele usará o servidor DNS especificado nas configurações do navegador.
+- **Filtrar em tempo real**. Neste modo, o AdGuard filtra o tráfego DNS-over-HTTPS sem redirecioná-lo para o proxy DNS local. Ele usará o servidor DNS especificado nas configurações do navegador.
 
-- **Redirect to DNS proxy**. Nesse modo, o AdGuard redirecionará as solicitações de DNS-over-HTTPS para o proxy DNS local para filtragem. Ele usará o servidor DNS selecionado nas configurações de DNS do aplicativo AdGuard.
+- **Redirecionar para o proxy DNS**. Nesse modo, o AdGuard redirecionará as solicitações de DNS-over-HTTPS para o proxy DNS local para filtragem. Ele usará o servidor DNS selecionado nas configurações de DNS do aplicativo AdGuard.
 
 ### Filtragem
 
@@ -122,7 +122,7 @@ Essa configuração pode desacelerar seu dispositivo. Use-o apenas para fins de 
 
 Se esta configuração estiver ativada, o AdGuard criptografará ClientHellos, se necessário. Este recurso requer a filtragem HTTPS para ser ativada. Este recurso utiliza um proxy DNS local para procurar a configuração ECH para o domínio. Se encontrado, o pacote ClientHello será criptografado. Certifique-se de usar um servidor DNS criptografado com este recurso.
 
-**About ClientHellos and ECH**: Every encrypted Internet connection has an unencrypted part. Estamos falando do primeiro pacote, que contém o nome do servidor ao qual você está se conectando. A tecnologia Encrypted Client Hello é projetada para resolver este problema ao criptografar este pacote.
+**Sobre ClientHellos e ECH**: Cada conexão de Internet criptografada tem uma parte não criptografada. Estamos falando do primeiro pacote, que contém o nome do servidor ao qual você está se conectando. A tecnologia Encrypted Client Hello é projetada para resolver este problema ao criptografar este pacote.
 
 #### Verificação OCSP
 
@@ -136,23 +136,23 @@ Se a verificação demorar muito, o AdGuard permitirá a conexão enquanto conti
 
 Se esta configuração estiver ativada, o AdGuard filtrará as solicitações enviadas por HTTP/3, além de outros tipos de solicitação. Este recurso requer a filtragem HTTPS para ser ativada.
 
-**About HTTP/3**: This is the latest version of the HTTP protocol, based on QUIC.
+**Sobre o HTTP/3**: Esta é a versão mais recente do protocolo HTTP, baseado em QUIC.
 
 ### Proxy de saída
 
 #### Mostrar a configuração Filtrar solicitações de DNS
 
-When this setting is enabled, the _Filter DNS requests_ switch is displayed in the _Add proxy server_ dialog. To access the dialog, open **Settings**, then go to **Filtering** → **Network** → **Proxy** → **Proxy server**, and click _+ Add proxy server_. Ativar aquele interruptor ativa a filtragem de Solicitações de DNS que passam pelo proxy de saída especificado.
+Quando esta configuração estiver ativada, a opção _Filtragem de solicitações DNS_ será exibida no diálogo _Adicionar proxy_. Para acessar o diálogo, abra **Configurações**, em seguida vá para **Filtragem** → **Rede** → **Proxy** → **Servidor proxy**, e clique em _+ Adicionar servidor proxy_. Ativar aquele interruptor ativa a filtragem de Solicitações de DNS que passam pelo proxy de saída especificado.
 
 ### Proteção
 
 #### Intervalo de portas
 
-Esta configuração permite que você especifique os intervalos de portas que devem ser filtrados. Insira intervalos de portas, um intervalo por linha. Use `..` to specify the range. For example, `80..5221`.
+Esta configuração permite que você especifique os intervalos de portas que devem ser filtrados. Insira intervalos de portas, um intervalo por linha. Use `..` para especificar o alcance. Por exemplo, `80..5221`.
 
 #### Registrar eventos HTML removidos
 
-If this setting is enabled, AdGuard will write information about blocked HTML elements to _Recent activity_. To access the logs, go to go to **Statistics** → **Recent activity**.
+Se esta configuração estiver ativada, o AdGuard registrará informações sobre elementos HTML bloqueados em _Atividade recente_. Para acessar os registros, vá para **Estatísticas** → **Atividade recente**.
 
 #### Correção de Scriptlet
 
@@ -160,15 +160,15 @@ Se esta configuração estiver ativada, o aplicativo exibirá informações de d
 
 #### Aplicativos excluídos
 
-Esta configuração permite que você liste os pacotes e UIDs a excluir da proteção do AdGuard. Digite os nomes dos pacotes ou UIDs, um por linha. You can use `//` for comments.
+Esta configuração permite que você liste os pacotes e UIDs a excluir da proteção do AdGuard. Digite os nomes dos pacotes ou UIDs, um por linha. Você pode usar `//` para comentários.
 
 #### Pacotes QUIC bypass
 
-Aqui você pode especificar nomes de pacotes para os quais o AdGuard deve ignorar o tráfego QUIC. Digite os nomes dos pacotes, um por linha. You can use `//` for comments.
+Aqui você pode especificar nomes de pacotes para os quais o AdGuard deve ignorar o tráfego QUIC. Digite os nomes dos pacotes, um por linha. Você pode usar `//` para comentários.
 
 #### Reconfigurar o proxy automático quando a rede mudar
 
-Se esta configuração estiver ativada, a proteção do AdGuard será reiniciada para reconfigurar os parâmetros automáticos do proxy quando seu dispositivo se conectar a outra rede. This setting only applies when _Routing mode_ is set to _Automatic proxy_.
+Se esta configuração estiver ativada, a proteção do AdGuard será reiniciada para reconfigurar os parâmetros automáticos do proxy quando seu dispositivo se conectar a outra rede. Esta configuração só se aplica quando o _Modo de roteamento_ está definido como _Proxy automático_.
 
 #### Filtragem IPv6
 
@@ -176,11 +176,11 @@ Se esta configuração estiver ativada, o AdGuard filtrará redes IPv6 se uma in
 
 #### Intervalos IPv4 excluídos da filtragem
 
-Aqui você pode listar os intervalos de endereços IPv4 a excluir da filtragem. Insira um alcance de IP por linha. You can use `//` for comments.
+Aqui você pode listar os intervalos de endereços IPv4 a excluir da filtragem. Insira um alcance de IP por linha. Você pode usar `//` para comentários.
 
 #### Intervalos IPv6 excluídos da filtragem
 
-Aqui você pode listar os intervalos de endereços IPv6 a excluir da filtragem. Insira um alcance de IP por linha. You can use `//` for comments.
+Aqui você pode listar os intervalos de endereços IPv6 a excluir da filtragem. Insira um alcance de IP por linha. Você pode usar `//` para comentários.
 
 #### TCP keepalive para soquetes de saída
 
@@ -188,8 +188,8 @@ Se essa configuração estiver ativada, o AdGuard enviará uma sonda keepalive a
 
 Esta configuração permite que você especifique:
 
-- **Idle time**, in seconds, before sending TCP keepalive probes to outgoing sockets. O valor padrão é 0. Se você estiver tendo problemas com NAT, defina isso como 20.
-- **Time between keepalive probes** for an unresponsive peer. O valor padrão é 0 segundos.
+- **Tempo ocioso**, em segundos, antes de enviar sondas TCP keepalive para soquetes de saída. O valor padrão é 0. Se você estiver tendo problemas com NAT, defina isso como 20.
+- **Tempo entre sondagens de keepalive** para um par não responsivo. O valor padrão é 0 segundos.
 
 ### Configurações locais de VPN
 
@@ -211,7 +211,7 @@ Se esta configuração estiver ativada, a VPN local do AdGuard será reativada a
 
 #### Captura de pacotes (PCAP)
 
-Essa configuração ativa o registro de interfaces TUN. When enabled, AdGuard creates a file `timestamp.pcap`, such as  1682599851461.pcap, in the app cache directory. Este arquivo lista todos os pacotes de rede transmitidos pela VPN e pode ser analisado usando a ferramenta Wireshark.
+Essa configuração ativa o registro de interfaces TUN. Quando ativado, o AdGuard cria um arquivo `timestamp.pcap`, como 1682599851461.pcap, no diretório de cache do aplicativo. Este arquivo lista todos os pacotes de rede transmitidos pela VPN e pode ser analisado usando a ferramenta Wireshark.
 
 #### Incluir a porta Wi-Fi nas rotas VPN
 
@@ -219,28 +219,28 @@ Se esta configuração estiver ativada, os endereços IP do gateway serão adici
 
 #### Endereço IPv4
 
-Aqui você pode inserir o endereço IP que será usado para criar uma interface TUN. The default value is `172.18.11.218`.
+Aqui você pode inserir o endereço IP que será usado para criar uma interface TUN. O valor padrão é `172.18.11.218`.
 
 #### Forçar o roteamento de LAN IPv4
 
-If this setting is enabled, AdGuard will filter all LAN connections, including local IPv4 network traffic, even if the _Route all LAN IPv4 connections_ option is enabled.
+Se esta configuração estiver ativada, o AdGuard filtrará todas as conexões LAN, incluindo o tráfego de rede IPv4 local, mesmo que a opção _Rotear todas as conexões LAN IPv4_ esteja ativada.
 
 #### Rotear todas as conexões LAN IPv4
 
-Se esta configuração estiver ativada, o AdGuard excluirá as conexões LAN da filtragem de redes simples. Isso pode não funcionar para redes complexas. This setting only applies if _Forcibly route LAN IPv4_ is disabled.
+Se esta configuração estiver ativada, o AdGuard excluirá as conexões LAN da filtragem de redes simples. Isso pode não funcionar para redes complexas. Esta configuração só se aplica se _Forçar roteamento LAN IPv4_ estiver desativado.
 
 #### Endereço IPv6
 
-Aqui você pode inserir o endereço de IP que será usado para criar uma interface TUN. The default value is `2001:db8:ad:0:ff::`.
+Aqui você pode inserir o endereço de IP que será usado para criar uma interface TUN. O valor padrão é `2001:db8:ad:0:ff::`.
 
 ### Diversos
 
 #### Mostrar as ferramentas para desenvolvedores na tela principal
 
-If this setting is enabled, AdGuard will display the **Developer tools** icon in the upper right corner of the app’s home screen.
+Se esta configuração estiver ativada, o AdGuard exibirá o ícone de **Ferramentas de desenvolvedor** no canto superior direito da tela inicial do aplicativo.
 
-**Developer tools** is a specialized section available in AdGuard for Android v4.3 and later, designed for quick navigation and switching between features. Ele permite que você ative ou desative rapidamente filtros personalizados, acesse registros, ative vários registros e muito mais.
+**Ferramentas de desenvolvedor** é uma seção especializada disponível no AdGuard para Android v4.3 e posterior, projetada para navegação rápida e alternância entre funcionalidades. Ele permite que você ative ou desative rapidamente filtros personalizados, acesse registros, ative vários registros e muito mais.
 
 #### Detectar Samsung Pay
 
-Se esta configuração estiver ativada, a proteção do AdGuard será pausada quando você abrir o aplicativo Samsung Pay. Korean users require this feature as they experience [issues with Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) when AdGuard is enabled.
+Se esta configuração estiver ativada, a proteção do AdGuard será pausada quando você abrir o aplicativo Samsung Pay. Os usuários coreanos precisam desse recurso, pois enfrentam [problemas com o Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) quando o AdGuard está ativado.

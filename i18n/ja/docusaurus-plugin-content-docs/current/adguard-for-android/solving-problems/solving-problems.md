@@ -9,7 +9,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-Here are some problems you may encounter and workarounds, guides, and instructions you may need.
+あなたが遭遇する可能性のある問題と、それらへの回避策、ガイド、および手順を紹介しております：
 
 - [Battery and traffic consumption issues](/adguard-for-android/solving-problems/battery.md)
 - [How to collect debug logs](/adguard-for-android/solving-problems/log.md)

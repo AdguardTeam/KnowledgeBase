@@ -1,11 +1,11 @@
 ---
-title: Low-level settings guide
+title: Guide sur les paramètres de bas niveau
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
+Cet article concerne AdGuard pour Android, un bloqueur de publicité multifonctionnel qui protège votre appareil au niveau système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,23 +13,23 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::caution
 
-Changing the low-level settings can cause problems with AdGuard’s performance, interrupt your Internet connection, or compromise your security and privacy. Use the low-level features only if you are an experienced user and know what you are doing, or if our support team has asked you to do so.
+La modification des paramètres de bas niveau peut entraîner des problèmes de performance d'AdGuard, interrompre votre connexion Internet ou compromettre votre sécurité et votre confidentialité. N'utilisez les fonctions de bas niveau que si vous êtes un utilisateur expérimenté et si vous savez ce que vous faites, soit si notre équipe d'assistance vous a demandé de le faire.
 
 :::
 
-To access _Low-level settings_, open the AdGuard app and tap the gear icon in the lower-right corner of the screen. Then select _General → Advanced → Low-level settings_.
+Pour accéder aux _Paramètres de bas niveau_, ouvrez l'application AdGuard et appuyez sur l'icône d'engrenage dans le coin inférieur droit de l'écran. Then select _General → Advanced → Low-level settings_.
 
-## Low-level settings
+## Paramètres de bas niveau
 
-For AdGuard v4.x for Android we’ve completely redesigned the low-level settings. We have reworked the list of settings and organized them into thematic groups with improved descriptions. We also added input validation and other safety valves.
+Pour AdGuard v4.x pour Android, nous avons complètement repensé les paramètres de bas niveau. Nous avons retravaillé la liste des paramètres et les avons organisés en groupes thématiques avec des descriptions améliorées. Nous avons également ajouté une validation de l'input et d'autres dispositifs de sécurité.
 
-### DNS protection
+### Protection DNS
 
-#### Fallback upstreams
+#### Repli en amont
 
-Here you can specify the fallback DNS resolver(s) to use when the configured server is unavailable. Available options:
+Ici, vous pouvez spécifier le ou les résolveurs DNS de traitement de secours à utiliser lorsque le serveur configuré n'est pas disponible. Options disponibles :
 
-- _Automatic DNS_: Select this option if you want to use the system DNS or AdGuard DNS.
+- _DNS automatique_: Sélectionnez cette option si vous souhaitez utiliser le DNS système ou le DNS AdGuard.
 - _None_: Select this option if you do not want to have any fallback.
 - _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. These addresses will be used as upstreams.
 
@@ -39,18 +39,18 @@ Here you can list domains that will be redirected to fallback upstreams, if avai
 
 #### Detect search domains
 
-If this setting is enabled, AdGuard will detect DNS search domains and automatically redirect them to fallback upstreams, if available.
+Si ce paramètre est activé, AdGuard détectera les domaines de recherche DNS et les redirigera automatiquement vers les traitements de secours en amont, si disponibles.
 
 #### Bootstrap upstreams
 
-Bootstrap DNS for encrypted DNS upstreams, such as DoH, DoT, and DoQ servers. Available options:
+Bootstrap DNS for encrypted DNS upstreams, such as DoH, DoT, and DoQ servers. Options disponibles :
 
-- _Automatic DNS_: Select this option if you want to use the system DNS or AdGuard DNS. This option is selected by default.
+- _DNS automatique_: Sélectionnez cette option si vous souhaitez utiliser le DNS système ou le DNS AdGuard. This option is selected by default.
 - _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. These addresses will be used as bootstrap upstreams.
 
 #### Mode de blocage pour les règles de type adblock
 
-Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for example, `||example.org^`). Available options:
+Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for example, `||example.org^`). Options disponibles :
 
 - _REFUSED_: Respond with REFUSED
 - _NXDOMAIN_: Respond with NXDOMAIN

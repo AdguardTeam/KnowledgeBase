@@ -1,6 +1,6 @@
 ---
 title: 扩展受限设置造成的问题
-sidebar_position: 18
+sidebar_position: 17
 ---
 
 :::info

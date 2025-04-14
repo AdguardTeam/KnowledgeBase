@@ -1,6 +1,6 @@
 ---
 title: Android TV 版 AdGuard 安装方式
-sidebar_position: 16
+sidebar_position: 15
 ---
 
 :::info
