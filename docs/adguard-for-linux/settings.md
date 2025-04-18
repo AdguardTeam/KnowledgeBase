@@ -100,3 +100,20 @@ Use the `filters` command to configure AdGuard for Linux. Subcommands:
 
 - `disable`: Disable a filter. Enter the name or ID of the filter
 - `update`: Update filters
+
+## Changing the proxy server listen address in manual proxy mode
+
+By default, the proxy server listens on `127.0.0.1` — the address of the loopback network interface.
+There are two ways to make the proxy server listen on a different interface:
+
+1. Run `adguard-cli config set listen_address <address>` where `<address>` is the address to listen on.
+1. Edit the config file directly.
+1. To determine the location of the config file, run `adguard-cli config show | grep "Config location"`.
+1. Look for the key `listen_address` and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0`.
+
+> Listening on IPv6 addresses is currently not supported
+
+If the listen address is set to anything other than `127.0.0.1`, then proxy client authentication is required. AdGuard CLI will not start unless proxy authentication is configured:
+
+- When running `adguard-cli config set listen_address <address>` where `<address>` is not `127.0.0.1`, AdGuard CLI will prompt for a username and password if proxy authentication is not already configured.
+- When editing the config file directly, look for the key `listen_auth`. Set the sub-key `enabled` to `true`, and `username` and `password` to non-empty values.
