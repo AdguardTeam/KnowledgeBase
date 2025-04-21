@@ -5,23 +5,23 @@ sidebar_position: 2
 
 ## Install AdGuard for Linux
 
-Open the command line on your computer. On Linux, use the keyboard shortcut “Ctrl+Alt+T”. On Mac, type “Terminal” in the search field.
+Open the command line on your computer. On Linux, use the keyboard shortcut *Ctrl+Alt+T*. On Mac, type *Terminal* in the search field.
 
-To install AdGuard, enter:
+To install AdGuard, choose the version that better suits you (release, nightly or beta) and enter the respective command.
 
-Release
+**Release**:
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/release/install.sh | sh -s -- -v
 ```
 
-Beta
+**Beta**:
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/beta/install.sh | sh -s -- -v
 ```
 
-Nightly
+**Nightly**:
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/nightly/install.sh | sh -s -- -v
