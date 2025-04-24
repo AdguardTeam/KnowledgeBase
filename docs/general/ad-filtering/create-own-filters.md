@@ -556,15 +556,22 @@ If some of the conditions above are not met but the rule contains [`$cookie`](#c
 
 If the referrer matches a rule with `$domain` that explicitly excludes the referrer domain, then the rule will not be applied even if the target domain also matches the rule. This affects rules with [`$cookie`](#cookie-modifier) and [`$csp`](#csp-modifier) modifiers, too.
 
+:::note
+
+Starting from [CoreLibs] v1.18 the logic was simplified:
+the `$domain` modifier now matches the target domain only if the rule contains either the `$cookie` or `$csp` modifier.
+
+:::
+
 **Examples**
 
 - `*$cookie,domain=example.org|example.com` will block cookies for all requests to and from `example.org` and `example.com`.
-- `*$document,domain=example.org|example.com` will block all requests to and from `example.org` and `example.com`.
+- `*$document,domain=example.org|example.com` will block all requests to and from `example.org` and `example.com`. Since [CoreLibs] v1.18: blocks only requests from `example.org` and `example.com`, but not to them.
 
 In the following examples it is implied that requests are sent from `http://example.org/page` (the referrer) and the target URL is `http://targetdomain.com/page`.
 
 - `page$domain=example.org` will be matched, as it matches the referrer domain.
-- `page$domain=targetdomain.com` will be matched, as it matches the target domain and satisfies all requirements mentioned above.
+- `page$domain=targetdomain.com` will be matched, as it matches the target domain and satisfies all requirements mentioned above. Since [CoreLibs] v1.18: will not be matched, as the rule does not contain `$cookie` or `$csp` modifiers.
 - `||*page$domain=targetdomain.com` will not be matched, as the pattern `||*page` may match specific domains,
 e.g. `example.page`.
 - `||*page$domain=targetdomain.com,cookie` will be matched because the rule contains `$cookie` modifier
