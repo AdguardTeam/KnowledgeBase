@@ -107,11 +107,9 @@ By default, the proxy server listens on `127.0.0.1` — the address of the loopb
 There are two ways to make the proxy server listen on a different interface:
 
 1. Run `adguard-cli config set listen_address <address>` where `<address>` is the address to listen on.
-1. Edit the config file directly.
-1. To determine the location of the config file, run `adguard-cli config show | grep "Config location"`.
-1. Look for the key `listen_address` and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0`.
-
-> Listening on IPv6 addresses is currently not supported
+2. Edit the config file directly:
+    - To determine the location of the config file, run `adguard-cli config show | grep "Config location"`.
+    - Look for the key `listen_address` and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0` or `::`.
 
 If the listen address is set to anything other than `127.0.0.1`, then proxy client authentication is required. AdGuard CLI will not start unless proxy authentication is configured:
 
