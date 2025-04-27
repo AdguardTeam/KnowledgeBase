@@ -17,7 +17,7 @@ AdGuard has a strict no-logging policy, which means that we do not collect your 
 
 :::
 
-## The main instruction
+## Basic instructions
 
 1. On your Android device, open the **Settings app**.
 1. Tap **Apps**.
