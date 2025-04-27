@@ -45,7 +45,7 @@ The settings interface in OneUI 7.0 has been redesigned. Follow these steps to c
 
 ![Apps settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/apps.jpg)
 
-1. Tap the ⋮ (menu icon) in the top right corner, then select *Special access*
+1. Tap the menu icon (⋮) in the top-right corner, then select *Special access*
 
 ![Special access *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/three-dots.jpg)
 
