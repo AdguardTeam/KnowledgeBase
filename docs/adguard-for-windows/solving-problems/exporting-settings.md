@@ -23,4 +23,4 @@ As an alternative, the following method is also available:
    - `agflm_dns.db` and `agflm_standard.db` → `C:\ProgramData\Adguard\FLM`
 7. Launch AdGuard.
 
-All set! Now you can use your costumary settings in AdGuard for Windows v8.0.
+All set! Now you can use your custom settings in AdGuard v8.0 for Windows.
