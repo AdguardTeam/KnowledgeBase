@@ -18,7 +18,7 @@ As an alternative, the following method is also available:
 3. Uninstall version 8.0 with the **setting removal** option on.
 4. Install the version 7 build that was installed before the update.
 5. Exit version 7 from the system tray to stop the filtering.
-6. Extract the contents of the ZIP file from first step and replace the following files:
+6. Extract the contents of the ZIP file from the first step and replace the following files:
    - `adguard.db` → `C:\ProgramData\Adguard`
    - `agflm_dns.db` and `agflm_standard.db` → `C:\ProgramData\Adguard\FLM`
 7. Launch AdGuard.
