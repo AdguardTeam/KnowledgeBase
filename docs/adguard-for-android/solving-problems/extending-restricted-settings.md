@@ -39,7 +39,7 @@ All done! Now the *Firewall* and *Detect Samsung Pay* features will work correct
 
 ## For OneUI 7.0 users
 
-The settings interface in OneUI 7.0 has been redesigned. Follow these steps to configure app usage access:
+For samsung devices with OneUI 7.0 the app permission settings follow a different path. Follow these steps to configure app usage access:
 
 1. Open *System settings* → *Apps*
 
