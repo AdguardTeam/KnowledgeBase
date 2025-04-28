@@ -9,7 +9,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 :::
 
-After installing AdGuard for Windows v8.0, your user settings will be reset. To keep your preferences, the most reliable way is to export your settings before upgrading to version 8. Then, if needed, you can reinstall version 7 and simply import them back.
+After installing AdGuard v8.0 for Windows, your user settings will be reset. The safest way to keep your settings is to export them before upgrading to version 8. Then, if necessary, you can reinstall version 7 and simply import them back.
 
 As an alternative, the following method is also available:
 
