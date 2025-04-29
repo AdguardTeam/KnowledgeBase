@@ -109,9 +109,9 @@ There are two ways to make the proxy server listen on a different interface:
 1. Run `adguard-cli config set listen_address <address>` where `<address>` is the address to listen on.
 2. Edit the config file directly:
     - To determine the location of the config file, run `adguard-cli config show | grep "Config location"`.
-    - Look for the key `listen_address` and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0` or `::`.
+    - Look for the `listen_address` key and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0` or `::`.
 
 If the listen address is set to anything other than `127.0.0.1`, then proxy client authentication is required. AdGuard CLI will not start unless proxy authentication is configured:
 
 - When running `adguard-cli config set listen_address <address>` where `<address>` is not `127.0.0.1`, AdGuard CLI will prompt for a username and password if proxy authentication is not already configured.
-- When editing the config file directly, look for the key `listen_auth`. Set the sub-key `enabled` to `true`, and `username` and `password` to non-empty values.
+- When editing the config file directly, look for the `listen_auth`key. Set the `enabled` sub-key to `true`, and `username` and `password` to non-empty values.
