@@ -4988,7 +4988,7 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 - `windows` — AdGuard for Windows — [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
 
-- `mac` — AdGuard for Mac — [https://filters.adtidy.org/mac_v2/filters/2.txt](https://filters.adtidy.org/mac_v2/filters/2.txt)
+- `mac` — AdGuard for Mac — [https://filters.adtidy.org/mac_v3/filters/2.txt](https://filters.adtidy.org/mac_v3/filters/2.txt)
 
 - `android` — AdGuard for Android — [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
 
