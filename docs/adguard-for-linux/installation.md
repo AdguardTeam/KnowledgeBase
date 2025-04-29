@@ -7,7 +7,7 @@ sidebar_position: 2
 
 Open the command line on your computer. On Linux, use the keyboard shortcut *Ctrl+Alt+T*. On Mac, type *Terminal* in the search field.
 
-To install AdGuard, choose the version that better suits you (release, nightly or beta) and enter the respective command.
+To install AdGuard, choose the version that better suits you (release, beta, or nightly) and enter the respective command.
 
 **Release**:
 
