@@ -65,7 +65,7 @@ By default, such rules do not work for document requests. This means that the `|
 
 - `https://example.org/banner/img`
 
-### Basic rule modifiers {#basic-rule-modifiers}
+### Basic rule modifiers {#basic-rule-modifiers-examples}
 
 Filtering rules support numerous modifiers that allow you to fine-tune the rule behavior. Here is an example of a rule with some simple modifiers.
 
@@ -236,7 +236,7 @@ Safari Converter supports a substantial subset of [basic rules](#basic-rules) an
 - `$replace`
 - `$urltransform`
 
-#### Cosmetic rules
+#### Cosmetic rules {#cosmetic-rules-safari-limitations}
 
 Safari Converter supports most of the [cosmetic rules](#cosmetic-rules) although only element hiding rules with basic CSS selectors are supported natively via Safari Content Blocking, everything else needs to be interpreted by an additional extension.
 
@@ -261,7 +261,7 @@ For scriptlet rules, it is **very important** that they are run as early as poss
 
 :::
 
-#### HTML filtering rules
+#### HTML filtering rules {#html-filtering-rules-safari-limitations}
 
 [HTML filtering rules](#html-filtering-rules) are **not supported** and will not be supported in the future. Unfortunately, Safari does not provide necessary technical capabilities to implement them.
 
@@ -2951,6 +2951,32 @@ the request to `https://example.com/firstpath` will be blocked.
 
 `$urltransform` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$urltransform=/X/Y/` for requests to **example.com**, but `@@||example.com^$urlblock` will.
 
+**The rule example for cleaning affiliate links**
+
+Many websites use tracking URLs to monitor clicks before redirecting to the actual destination. These URLs contain marketing parameters and analytics tokens that can be removed to improve privacy.
+
+Below is an example of how to obtain the clean destination link to bypass tracking websites and go directly to the destination.
+
+In our example:
+
+ 1. The initial URL (with click tracking): `https://www.aff.example.com/visit?url=https%3A%2F%2Fwww.somestore.com%2F%26referrer%3Dhttps%3A%2F%2Fwww.aff.example.com%2F%26ref%3Dref-123`
+ 1. Tracking URL after decoding special characters: `https://www.aff.example.com/visit?url=https://www.somestore.com/`
+ 1. The website you want to visit: `https://www.somestore.com`
+
+To clean the URL, we first need to decode special characters (like `%3A` → `:`, `%2F` → `/`, etc.) and extract the real URL from the tracking parameters. We will use the `$urltransform` modifier to do this. The following 4 rules replace URL-encoded symbols with their real characters:
+
+`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3A/:/`
+`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%2F/\//`
+`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3F/?/`
+`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3D/=/`
+`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%26/&/`
+
+After that, we need to write the rule that will block the tracking website and redirect you directly to the target address (somestore.com):
+
+`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com.*url=([^&]*).*/\$1/`
+
+Tracking links will now be automatically cleaned up, allowing direct navigation to the destination website without tracking.
+
 :::caution Restrictions
 
 Rules with the `$urltransform` modifier can only be used [**in trusted filters**](#trusted-filters).
@@ -4962,7 +4988,7 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 - `windows` — AdGuard for Windows — [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
 
-- `mac` — AdGuard for Mac — [https://filters.adtidy.org/mac_v2/filters/2.txt](https://filters.adtidy.org/mac_v2/filters/2.txt)
+- `mac` — AdGuard for Mac — [https://filters.adtidy.org/mac_v3/filters/2.txt](https://filters.adtidy.org/mac_v3/filters/2.txt)
 
 - `android` — AdGuard for Android — [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
 
