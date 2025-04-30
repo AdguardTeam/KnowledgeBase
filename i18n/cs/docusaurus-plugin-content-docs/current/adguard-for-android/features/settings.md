@@ -31,7 +31,7 @@ _Úroveň záznamu_ definuje, jaká data o provozu aplikace by měla být zaznam
 
 ![Advanced \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-Sekce _Nízkoúrovňová nastavení_ je určena pro zkušené uživatele. [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
+Sekce _Nízkoúrovňová nastavení_ je určena pro zkušené uživatele. [Přečtěte si více o Nízkoúrovňových nastavení](/adguard-for-android/features/low-level-settings/)
 
 ![Low-level settings \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
@@ -39,7 +39,7 @@ Sekce _Nízkoúrovňová nastavení_ je určena pro zkušené uživatele. [Read 
 
 Tato sekce umožňuje spravovat nastavení HTTPS filtrování, filtry a uživatelské skripty a nastavit proxy server.
 
-![Filtering \*mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
+![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.jpg)
 
 ### Filtry
 
@@ -57,11 +57,19 @@ Pokud aktivujete příliš mnoho filtrů, mohou některé webové stránky fungo
 
 [Více informací o filtrech](https://adguard.com/en/blog/what-are-filters.html)
 
-### Uživatelské skripty
+### Rozšíření
+
+Rozšíření umožňují přidávat uživatelské skripty a uživatelské styly.
+
+![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.jpg)
 
 Uživatelské skripty jsou miniprogramy napsané v jazyce JavaScript, které rozšiřují funkčnost jedné nebo více webových stránek. K instalaci uživatelských skriptů potřebujete speciální správce uživatelských skriptů. AdGuard takovou funkci má a umožňuje přidávat uživatelské skripty pomocí URL nebo ze souboru.
 
-![Userscripts \*mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
+Uživatelské styly jsou podobné uživatelským skriptům, které umožňují měnit vzhled webových stránek v prohlížeči, aniž by se měnil jejich obsah. Fungují tak, že přidávají styly CSS ke stávajícím stylům webových stránek. Pokud například chcete tmavý motiv na webu, který ho nenabízí, můžete k tomu použít uživatelský styl.
+
+Chcete-li přidat uživatelský styl, přejděte do _Nastavení_ → _Filtrování_ → _Rozšíření_→ _Přidat rozšíření_ → _Importovat ze souboru nebo URL_. Hotové uživatelské styly najdete [online](https://userstyles.world/).
+
+Chcete-li vytvořit vlastní styl, klepněte na _Přidat rozšíření_ → _Vytvořit uživatelský styl_.
 
 #### AdGuard Extra
 

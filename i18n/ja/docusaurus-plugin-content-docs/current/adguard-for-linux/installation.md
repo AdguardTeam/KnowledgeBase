@@ -5,88 +5,150 @@ sidebar_position: 2
 
 ## AdGuard for Linux をインストールする方法
 
-AdGuard for Linux  をインストールするには、以下のコマンドを入力してください：
+Open the command line on your computer. On Linux, use the keyboard shortcut _Ctrl+Alt+T_. On Mac, type _Terminal_ in the search field.
 
-【安定版】
+To install AdGuard, choose the version that better suits you (release, beta, or nightly) and enter the respective command.
 
-```
+**Release**:
+
+```sh
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/release/install.sh | sh -s -- -v
 ```
 
-【ベータ版】
+**Beta**:
 
-```
+```sh
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/beta/install.sh | sh -s -- -v
 ```
 
-【Nightly版】
+**Nightly**:
 
-```
+```sh
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/nightly/install.sh | sh -s -- -v
 ```
 
-必要に応じて、管理者パスワードを入力します。
+If required, enter your admin password.
 
-`y` を押すことで `/usr/local/bin` に実行可能ファイルへのリンクを作成し、インストールが完了するまで待ちます。
+Press `y` to create a link in `/usr/local/bin` to the executable and wait until the installation is complete.
 
 :::note
 
-AdGuard の公式バージョンであることを証明するには、`gpg` ツールを使用して署名を検証することができます。 [GitHubで詳細を読む](https://github.com/AdguardTeam/AdGuardCLI?tab=readme-ov-file#verify-releases)
+You can verify the signature to prove it’s an official version of AdGuard by using the `gpg` tool. [Read more on GitHub](https://github.com/AdguardTeam/AdGuardCLI?tab=readme-ov-file#verify-releases)
 
 :::
 
-## ライセンスを有効化する
+## Initial setup
 
-AdGuard for Linuxをご利用いただくには[AdGuardライセンス](https://adguard.com/license.html)が必要です。 まだライセンスをお持ちでない方は、ログインするかアカウントを作成して14日間の無料トライアルをご利用いただけます。 すでにライセンスをお持ちの場合は、ログインすることで有効化してください。
+AdGuard for Linux requires an [AdGuard license](https://adguard.com/license.html). If you don’t have a license yet, you can log in or create an account to get a free 14-day trial. If you already have a license, log in to activate it. To do it, follow this step-by-step guide:
 
-ログインまたはアカウントを登録するには、以下を入力します：
+1. After installation, enter:
 
-```
-adguard-cli activate
-```
+    ```sh
+    adguard-cli activate
+    ```
 
-ライセンスをリセットするには、以下を入力します：
+2. Then select the desired option:
 
-```
-adguard-cli reset-license
-```
+    ![adguard-cli activate \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation1.png)
 
-ライセンス情報を表示するには、以下を入力します：
+3. Once you have a license, follow the provided link to proceed with the activation:
 
-```
-adguard-cli license
-```
+    ![Activate license \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation2.png)
 
-## 初期設定
+4. After activation, you can continue to work with the program:
 
-AdGuardを稼働させるには、初期設定を完了してください。 これには、AdGuard CA 証明書のインストール、必要なフィルターの有効化、プロキシモードの選択が含まれます。
+    ![Successful activation \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation3.png)
 
-設定ウィザードを実行するには、以下を入力します：
+5. You can also reset your license by entering:
 
-```
-adguard-cli configure
-```
+    ```sh
+    adguard-cli reset-license
+    ```
 
-## AdGuard for Linux をアンインストールする方法
+    or  view the license info by entering
 
-AdGuard をアンインストールするには、以下のコマンドを入力します：
+    ```sh
+    adguard-cli license
+    ```
 
-【安定版】
+6. Now you need to set up AdGuard CLI. To run the configuration wizard, enter:
 
-```
+    ```sh
+    adguard-cli configure
+    ```
+
+    ![Setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation4.png)
+
+    The wizard will ask basic questions required for the initial setup.
+
+7. After that, you can start the AdGuard protection by entering
+
+    ```sh
+    adguard-cli start
+    ```
+
+    ![Start protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation5.png)
+
+8. You can check the protection status using:
+
+    ```sh
+    adguard-cli status
+    ```
+
+    and stop it with:
+
+    ```sh
+    adguard-cli stop
+    ```
+
+    ![Stop protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+
+9. To check the current configuration, enter:
+
+    ```sh
+    adguard-cli config show
+    ```
+
+    ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+
+    The path to the configuration file will also be displayed, which you can and should edit directly. It contains descriptions of all additional options.
+
+    As an alternative, you can use the commands:
+
+    ```sh
+    adguard-cli config get
+    ```
+
+    or:
+
+    ```sh
+    adguard-cli config set
+    ```
+
+    They are primarily intended for scripting, though.
+
+For further information on the available commands, check out the section [Settings and protection management](https://adguard.com/kb/adguard-for-linux/settings/).
+
+## Uninstall AdGuard for Linux
+
+To uninstall AdGuard, enter:
+
+Release
+
+```sh
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/release/install.sh | sh -s -- -v -u
 ```
 
-【ベータ版】
+Beta
 
-```
+```sh
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/beta/install.sh | sh -s -- -v -u
 ```
 
-【Nightly版】
+Nightly
 
-```
+```sh
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/nightly/install.sh | sh -s -- -v -u
 ```
 
-必要に応じて、管理者パスワードを入力します。
+If required, enter your admin password.

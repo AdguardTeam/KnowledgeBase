@@ -27,11 +27,11 @@ HTTPS 필터링 작업 방식이 쉬웠다면 HTTPS는 그렇게 안전하지 �
 
 아래 그림은 이 과정을 보여줍니다.
 
-![How HTTPS filtering works](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
+![HTTPS 필터링 작동 방식](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
 ### 내 트래픽이 암호화되고 안전하나요?
 
-물론입니다. 원격 서버와의 연결은 암호화되고 안전하게 유지됩니다. AdGuard, just like a browser, checks the server’s certificate before determining if the connection should be filtered or not.
+물론입니다. 원격 서버와의 연결은 암호화되고 안전하게 유지됩니다. AdGuard는 브라우저와 마찬가지로 연결을 필터링할지 여부를 결정하기 전에 서버의 인증서를 확인합니다.
 
 그러나 HTTPS 필터링에는 단점이 있습니다. HTTPS 필터링 시 브라우저는 실제 인증서 대신 AdGuard에서 발급한 인증서를 봅니다.
 
@@ -51,7 +51,7 @@ EV 인증서는 더 높은 수준의 보안을 의미하며 일반 인증서보�
 
 ### HTTPS 필터링과 관련된 문제
 
-A [2017 study](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-ndss17.pdf) found that 5 to 10% of HTTPS connections were established by HTTPS filtering applications. 이 HTTPS 필터링 애플리케이션 중 대부분 바이러스 백신 소프트웨어입니다. 나쁜 소식은 테스트된 26개의 바이러스 중 24개가 연결 보안 수준을 떨어뜨렸고 3분의 2가 해킹 연결에 취약하다는 것입니다.
+[2017년 연구](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-ndss17.pdf)에 따르면 HTTPS 연결의 5~10%가 HTTPS 필터링을 사용하는 애플리케이션에 의해 이루어집니다. 이 HTTPS 필터링 애플리케이션 중 대부분 바이러스 백신 소프트웨어입니다. 나쁜 소식은 테스트된 26개의 바이러스 중 24개가 연결 보안 수준을 떨어뜨렸고 3분의 2가 해킹 연결에 취약하다는 것입니다.
 
 연구원들의 결론은 인터넷 보안 커뮤니티가 보안 연결을 필터링하는 애플리케이션에 세심한주의를 기울여야 한다는 것입니다. 그리고 그러한 프로그램의 개발자는 필터링 구현의 품질에 가장 진지하게주의를 진지하게 임해야 합니다.
 
@@ -71,7 +71,7 @@ AdGuard는 연구원의 결과에 전적으로 동의합니다. 또한 현재 �
 
 ### HTTPS 품질을 수동으로 확인하는 방법은 무엇인가요?
 
-특정 웹 사이트에서 HTTPS 연결 품질을 확인할 수 있습니다. 이러한 웹 사이트는 브라우저(또는 AdGuard를 사용 경우, 브라우저 + AdGuard)가 일반적인 취약점에 노출되는지 확인합니다. If you plan to use any program that filters HTTPS, not necessarily AdGuard (e.g., an antivirus), we advise that you check the connection quality using these websites.
+특정 웹 사이트에서 HTTPS 연결 품질을 확인할 수 있습니다. 이러한 웹 사이트는 브라우저(또는 AdGuard를 사용 경우, 브라우저 + AdGuard)가 일반적인 취약점에 노출되는지 확인합니다. HTTPS를 필터링하는 프로그램을 사용하려는 경우, AdGuard (예: 바이러스 백신)이 아닐지라도, 다음 웹사이트를 사용하여 연결 품질을 확인하는 것이 좋습니다.
 
 - [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
 - [https://www.howsmyssl.com/](https://www.howsmyssl.com/)

@@ -1,6 +1,6 @@
 ---
 title: So deaktivieren Sie die Auto Blocker-Funktion auf Samsung-Geräten
-sidebar_position: 19
+sidebar_position: 18
 ---
 
 :::info

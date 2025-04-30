@@ -5,11 +5,11 @@ sidebar_position: 1
 
 :::정보
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Android용 AdGuard에 대해 다룹니다. 이용하고자 한다면 [AdGuard 앱을 다운로드](https://agrd.io/download-kb-adblock)해 보세요
 
 :::
 
-Due to built-in statistics processes, high data and/or battery consumption was often attributed to AdGuard by Android 6 and earlier. This was because AdGuard counted all the traffic it filtered from various apps. As a result, AdGuard's share of total data and battery usage was overstated, while other apps were understated.
+내장된 통계 프로세스로 인해 Android 6 및 이전 버전의 AdGuard에서는 높은 데이터 및/또는 배터리 소모가 종종 발생했습니다. This was because AdGuard counted all the traffic it filtered from various apps. As a result, AdGuard's share of total data and battery usage was overstated, while other apps were understated.
 
 With Android 7, however, this scenario has improved. Now the data reflected in Android's built-in data usage statistics is very close to reality, although there are minor discrepancies in the battery usage data.
 
@@ -22,6 +22,12 @@ You can access it by navigating to *Statistics* → *Battery usage*.
 ![배터리 통계 *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
 
 Inside you will find a chart that shows the AdGuard battery resource consumption within the last 24 hours, with an option to get more detailed hour-to-hour data by tapping on the chart. 또한 데이터의 숫자 분석과 간단한 기술 설명도 있습니다.
+
+There are several other parameters below the chart: *CPU foreground*, *CPU background*, *Mobile data usage*, and *Wi-Fi data usage*.
+
+*CPU foreground* and *CPU background* show how much CPU time is used by AdGuard when the app is active or running in the background.
+
+And with *Mobile data usage* and *Wi-Fi data usage*, you can see how much traffic AdGuard consumed when your phone was using mobile Internet or connected to Wi-Fi.
 
 ### AdGuard는 실제로 얼마나 많은 배터리를 소비합니까?
 

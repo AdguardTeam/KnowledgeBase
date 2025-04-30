@@ -11,7 +11,7 @@ sidebar_position: 3
 
 ## 如何设置 2FA
 
-1. Log into your [AdGuard account](https://auth.adguardaccount.com/login.html) and go to the *Settings* tab:
+1. 登录 [AdGuard 账号](https://auth.adguard.com/login.html)并转到「*设置*」标签：
 
  ![AdGuard 账号设置 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 

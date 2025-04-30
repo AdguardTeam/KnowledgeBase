@@ -1,6 +1,6 @@
 ---
 title: Verschieben von CA-Zertifikaten in den Systemspeicher auf gerooteten Geräten
-sidebar_position: 14
+sidebar_position: 13
 ---
 
 :::info

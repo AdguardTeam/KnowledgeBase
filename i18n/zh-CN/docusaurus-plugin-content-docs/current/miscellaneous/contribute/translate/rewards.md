@@ -37,7 +37,7 @@ sidebar_position: 6
 
 > 您好，AdGuard 团队！
 > 
-> 我已经在 Android 版 AdGuard 中翻译了超过 5000 个单词（*您翻译的语言*）。您可以查看附上的统计信息。 As a reward, I’d like to request an AdGuard VPN license and an Ad Blocker license My email is (*your email address*). My Crowdin username is (*your username*).
+> 我已经在 Android 版 AdGuard 中翻译了超过 5000 个单词（*您翻译的语言*）。您可以查看附上的统计信息。 作为回报，我想申请 AdGuard VPN 许可证和一个广告拦截程序许可证。 我的邮箱是：*您的邮箱地址*。 我的 Crowdin 用户名是 (*您的用户名*)。
 
 ## 如何检查翻译进度
 

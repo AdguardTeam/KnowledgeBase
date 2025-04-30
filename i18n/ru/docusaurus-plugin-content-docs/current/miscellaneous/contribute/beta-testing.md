@@ -17,11 +17,11 @@ sidebar_position: 1
 
 Вам также понадобится устройство, на которое вы будете устанавливать приложение, и [ссылка на страницу бета-тестирования](https://adguard.com/beta.html). Там вы найдёте больше информации о том, как присоединиться к нашей программе и тестировать приложения AdGuard для Windows, Mac, Android и iOS.
 
-Если вы хотите пропустить описание и сразу перейти к делу, то вам [сюда](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1–3 working days, and you'll get a reply via email.
+Если вы хотите пропустить описание и сразу перейти к делу, то вам [сюда](https://surveys.adguard.com/beta_testing_program/form.html). Ваша заявка будет рассмотрена в течение 1–3 рабочих дней. Вы получите ответ по почте.
 
 :::note
 
-To get the AdGuard for iOS beta or nightly build, first you have to install [TestFlight](https://apps.apple.com/app/testflight/id899247664) on your iOS device.
+Чтобы получить бета- или nightly-сборку AdGuard для iOS, установите [Testflight](https://apps.apple.com/app/testflight/id899247664) на своё iOS-устройство.
 
 :::
 
@@ -37,10 +37,10 @@ To get the AdGuard for iOS beta or nightly build, first you have to install [Tes
 
 ## Как активировать бета/nightly-ключ в приложении iOS {#ios}
 
-If you have already received a beta or nightly key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Введите учётные данные вашего аккаунта AdGuard. После этого премиум-функции станут доступны автоматически.
+Если вы уже получили бета/nightly-ключ и он указан в вашем аккаунте `adguard.com`, зайдите в приложение и откройте раздел лицензии (Получить премиум). Введите учётные данные вашего аккаунта AdGuard. После этого премиум-функции станут доступны автоматически.
 
 ### Что ещё?
 
-There is not much more to add. Вам не нужно старательно искать ошибки. Вы можете продолжать использовать AdGuard как обычно. Однако, если вы столкнётесь с ошибкой, пожалуйста, сообщите о ней. Мы будем вам очень признательны.
+Вот и всё. Вам не нужно старательно искать ошибки. Вы можете продолжать использовать AdGuard как обычно. Однако, если вы столкнётесь с ошибкой, пожалуйста, сообщите о ней. Мы будем вам очень признательны.
 
-Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta/nightly (in case you missed them) and other important news. Вы можете отписаться в любой момент.
+Время от времени вы будете получать письма, информирующие вас о последних изменениях в бета-/nightly-версии (на случай, если вы их пропустили) и других важных новостях. Вы можете отписаться в любой момент.

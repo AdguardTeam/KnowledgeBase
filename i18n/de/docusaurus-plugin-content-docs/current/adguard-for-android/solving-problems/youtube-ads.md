@@ -1,6 +1,6 @@
 ---
 title: So blockieren Sie Werbung in der YouTube-App
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 :::info

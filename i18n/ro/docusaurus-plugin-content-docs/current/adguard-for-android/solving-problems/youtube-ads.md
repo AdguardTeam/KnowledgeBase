@@ -1,6 +1,6 @@
 ---
 title: Cum să blocați reclamele în aplicația YouTube
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 :::info

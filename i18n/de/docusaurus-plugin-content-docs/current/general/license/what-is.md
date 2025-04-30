@@ -25,7 +25,7 @@ Es gibt auch Lizenzen, die man von anderen Quellen erwerben oder kostenlos erhal
 - **Vertriebshändlerlizenzen** und **Geschenklizenzen** können sowohl zeitlich begrenzt als auch nicht zeitlich begrenzt sein. Lizenzen mit einem Auslaufdatum können nur manuell verlängert werden
     - Einzellizenz — schützt bis zu 3 Geräte
     - Familienlizenz — schützt bis zu 9 Geräte
-- **Die Lizenz für AdGuard Pro für iOS** wird über den App Store erworben und verwaltet und kann nur auf iOS- und iPadOS-Geräten mit der gleichen Apple-ID verwendet werden
+- **AdGuard for iOS** and **AdGuard Pro** licenses are purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
 
 :::tip
 
