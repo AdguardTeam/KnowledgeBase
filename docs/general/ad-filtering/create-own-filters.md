@@ -3510,9 +3510,10 @@ Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3
 :::note
 
 Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`][native-has]
-if they use the `##` marker and if it is possible, i.e. with no other extended selectors inside.
+if they use the `##` rule marker and if it is possible, i.e., there are no other extended CSS selectors inside.
+If it is not supported by the product, ExtendedCss implementation will be used even for rules with the `##` marker.
 
-But not all products support the native implementation of `:has()` yet:
+Currently, not all AdGuard products support the native implementation of `:has()` yet:
 
 - AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **do support** it with [CoreLibs] v1.12 or later.
 - AdGuard for iOS and AdGuard for Safari **do support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 and [Safari browser v16.4][safari-16.4].
