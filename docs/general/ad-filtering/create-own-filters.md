@@ -142,7 +142,7 @@ are limited by what the browsers allow and they only support an old Adblock Plus
 
 Because of the limitations above AdGuard Content Blocker will not be mentioned in the compatibility notes.
 
-### SafariConverterLib
+### SafariConverterLib {#safari-converter-lib}
 
 Safari Converter aims to support AdGuard filtering rules syntax as much as possible, but still there are limitations and shortcomings that are
 hard to overcome.
@@ -151,11 +151,11 @@ hard to overcome.
 
 Safari Converter supports a substantial subset of [basic rules](#basic-rules) and certainly supports the most important types of those rules.
 
-##### Supported with limitations
+##### Supported with limitations {#safari-converter--basic--supported-with-limitations}
 
 - [Regular expression rules](#regexp-support) are limited to the subset of regex that is [supported by Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
 
-- `$domain` - [domain modifier](#domain-modifier) is supported with several limitations.
+- `$domain` - [domain modifier](#domain-modifier) is supported with several limitations:
 
     - It's impossible to mix allowed and disallowed domains (like `$domain=example.org|~sub.example.org`). Please upvote the [feature request](https://bugs.webkit.org/show_bug.cgi?id=226076) to WebKit to lift this limitation.
     - "Any TLD" (i.e. `domain.*`) is not fully supported. In the current implementation the converter just replaces `.*` with top 100 popular TLDs. This implementation will be improved [in the future](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732).
@@ -577,11 +577,8 @@ despite the pattern `||*page` may match specific domains.
 
 In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries are not supported.
 
-:::
-
-:::caution Restrictions
-
-Safari does not support the simultaneous use of allowed and disallowed domains, so rules like `||baddomain.com^$domain=example.org|~foo.example.org` will not work in AdGuard for iOS and AdGuard for Safari.
+AdGuard for iOS and AdGuard for Safari support the `$domain` modifier but have some limitations.
+For more details, see the [SafariConverterLib section](#safari-converter--basic--supported-with-limitations).
 
 :::
 
