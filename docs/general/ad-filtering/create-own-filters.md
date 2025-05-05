@@ -2854,6 +2854,7 @@ http://regexr.com/3cesk
 
 - Rules with the `$replace` modifier can only be used [**in trusted filters**](#trusted-filters).
 - `$replace` rules do not apply if the size of the original response is more than 10 MB.
+  For AdGuard Browser Extension, this limit applies starting from v5.2 or later.
 
 :::
 
