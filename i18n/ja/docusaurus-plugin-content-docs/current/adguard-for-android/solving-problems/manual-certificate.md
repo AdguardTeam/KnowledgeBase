@@ -1,6 +1,6 @@
 ---
 title: Android 11以上での証明書インストール方法
-sidebar_position: 12
+sidebar_position: 11
 ---
 
 :::info

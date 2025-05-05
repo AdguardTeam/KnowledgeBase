@@ -1,6 +1,6 @@
 ---
 title: Installation manuelle du certificat de sécurité dans le navigateur Firefox
-sidebar_position: 11
+sidebar_position: 10
 ---
 
 :::info
@@ -49,33 +49,33 @@ Cette méthode ne fonctionnera que sur les appareils **rootés** .
 
     - Ouvrez l'application **Paramètres** sur votre téléphone ;
     - Accédez à la section **Système** (dernier élément du menu des paramètres). Dans cette section, trouvez le sous-élément **À propos du téléphone** ;
-    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
-    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+    - Cliquez 7 fois sur la ligne **Numéro de version**. Ensuite, vous recevrez une notification indiquant **Vous êtes maintenant un développeur** (Si nécessaire, saisissez un code de déverrouillage pour l'appareil) ;
+    - Ouvrez **Paramètres système** → **Options du développeur** → Faites défiler vers le bas et activez **Débogage USB** → Confirmez que le débogage est activé dans la fenêtre **Autoriser le débogage USB** après avoir lu attentivement l'avertissement.
 
-1. Install the [Firefox](https://www.mozilla.org/en-US/firefox/releases/) browser (release version);
+1. Installez le navigateur [Firefox](https://www.mozilla.org/en-US/firefox/releases/) (version finale) ;
 
-1. Open the **AdGuard settings** (gear icon in the bottom right corner) → **Filtering** → **Network** → **HTTPS filtering** → **Security certificate** → **Instructions for Firefox** → **Install for old versions**;
+1. Ouvrez les **paramètres d'AdGuard** (icône d'engrenage dans le coin inférieur droit) → **Filtrage** → **Réseau** → **Filtrage HTTPS** → **Certificat de sécurité** → **Instructions pour Firefox** → **Installer pour les anciennes versions**;
 
-1. Open the folder `data/data/org.mozilla.firefox/files/mozilla` using `adb shell su` and `cd data/data/...`, then browse to the folder named `xxxxxxx.default` and memorize its name;
+1. Ouvrez le dossier `data/data/org.mozilla.firefox/files/mozilla` en utilisant `adb shell su` et `cd data/data/...`, puis naviguez jusqu'au dossier nommé `xxxxxxx.default` et mémorisez son nom ;
 
-1. In the specified folder we are interested in two files:
+1. Dans le dossier spécifié, nous nous intéressons à deux fichiers :
 
     - `cert9.db`
     - `key4.db`
 
-1. We need to move these files to a folder of the browser where the security certificate issue occurred:
+1. Nous devons déplacer ces fichiers dans un dossier du navigateur où le problème du certificat de sécurité s'est produit :
 
     - `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`.
 
-1. The full command will look like this:
+1. La commande complète se présente comme suit :
 
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
 
-    In case you received the system notification **permission denied**, you should first move the specified files to the permission-free directory. And after that you should move them to the necessary folder in your Firefox browser.
+    Si vous avez reçu la notification du système indiquant que **l'autorisation est refusée**, vous devez d'abord déplacer les fichiers spécifiés vers le répertoire sans autorisation. Ensuite, vous devez les déplacer dans le dossier nécessaire dans votre navigateur Firefox.
 
-    The full command should look something like this:
+    La commande complète doit ressembler à ceci :
 
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxx.default/cert9.db sdcard/Download`

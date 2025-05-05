@@ -1,6 +1,6 @@
 ---
 title: Zertifikatsinstallation auf Geräten mit Android 11+
-sidebar_position: 12
+sidebar_position: 11
 ---
 
 :::info

@@ -55,7 +55,7 @@ Um AdGuard auf einem PC oder Tablet unter Microsoft Windows zu verwenden, müsse
 
 Wenn Sie AdGuard deinstallieren oder neu installieren müssen, gehen Sie wie folgt vor:
 
-- Für Microsoft Windows 10 und 11: Öffnen Sie *Startmenü* durch Klicken auf *Start*, und wählen Sie *Einstellungen*. Klicken Sie in dem sich öffnenden Fenster auf das Symbol *Apps*. Wählen Sie *Apps und Features* aus der Liste auf der linken Seite im Fenster *Apps*. Wählen Sie *AdGuard* aus der Liste Ihrer installierten Apps und klicken Sie auf *Deinstallieren*. Klicken Sie in dem sich öffnenden Dialogfeld zur Bestätigung auf *Deinstallieren*.
+- Für Microsoft Windows 10 und 11: Öffnen Sie *Startmenü* durch Klicken auf *Start* und wählen Sie *Einstellungen*. Klicken Sie in dem sich öffnenden Fenster auf das Symbol *Apps*. Wählen Sie *Apps und Features* aus der Liste auf der linken Seite im Fenster *Apps*. Wählen Sie *AdGuard* aus der Liste Ihrer installierten Apps und klicken Sie auf *Deinstallieren*. Klicken Sie in dem sich öffnenden Dialogfeld zur Bestätigung auf *Deinstallieren*.
 
 ![Deinstallation unter Windows 10 und 11 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/win10-uninstall.png)
 
@@ -69,7 +69,7 @@ Wenn Sie AdGuard deinstallieren oder neu installieren müssen, gehen Sie wie fol
 
 ![Deinstallation unter Windows 7 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/win7-uninstall.png)
 
-### Erweiterte Methode {#advanced}
+### Fortgeschrittene Methode {#advanced}
 
 Falls die reguläre Deinstallation aus irgendeinem Grund nicht funktioniert, können Sie versuchen, eine erweiterte Methode zu verwenden. Zuerst müssen Sie [das von unseren Entwicklern erstellte Deinstallationstool](https://static.adtidy.org/windows/uninstaller/uninstal_utility.zip) herunterladen. Entpacken Sie das Archiv in einen beliebigen Ordner auf Ihrem PC, führen Sie die Datei **Adguard.UninstallUtility.exe** aus und erlauben Sie der App, Änderungen an Ihrem Gerät vorzunehmen. Befolgen Sie anschließend die nachstehenden Anweisungen:
 

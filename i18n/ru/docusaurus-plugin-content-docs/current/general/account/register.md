@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Что такое личный кабинет AdGuard
 
-[AdGuard account](https://adguardaccount.com/) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. Многие продукты AdGuard можно активировать с помощью данных аккаунта AdGuard, при условии, что он содержит действующую лицензию.
+[Личный кабинет AdGuard](https://adguardaccount.com/) — это пользовательский аккаунт, в котором хранится информация о ваших лицензиях и подписках AdGuard, активных устройствах, истории покупок, предпочтительном языке и других настройках. Многие продукты AdGuard можно активировать с помощью данных аккаунта AdGuard, при условии, что он содержит действующую лицензию.
 
 ## Как создать личный кабинет
 
@@ -29,4 +29,4 @@ sidebar_position: 1
 
 ## Как создать личный кабинет через социальную сеть
 
-To create an account via a social network, simply follow the [link](https://auth.adguardaccount.com/login.html) and log in to your account. После регистрации проверьте почту — там будет письмо с подтверждением. Останется только установить пароль. И готово — теперь вам доступны все возможности [личного кабинета AdGuard](https://adguard.com/kb/general/account/features/).
+Чтобы создать личный кабинет через социальную сеть, достаточно перейти [по ссылке](https://auth.adguardaccount.com/login.html) и войти в свой аккаунт. После регистрации проверьте почту — там будет письмо с подтверждением. Останется только установить пароль. И готово — теперь вам доступны все возможности [личного кабинета AdGuard](https://adguard.com/kb/general/account/features/).

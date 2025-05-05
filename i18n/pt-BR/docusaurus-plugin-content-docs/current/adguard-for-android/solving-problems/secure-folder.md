@@ -1,6 +1,6 @@
 ---
 title: Instalação do certificado em uma pasta segura
-sidebar_position: 13
+sidebar_position: 12
 ---
 
 :::info

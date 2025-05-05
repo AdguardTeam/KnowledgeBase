@@ -31,7 +31,7 @@ Le _Niveau de journalisation_ définit les données sur le fonctionnement de l'a
 
 ![Paramètres avancés \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-La section _Paramètres de bas niveau_ est destinée aux utilisateurs experts. [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
+La section _Paramètres de bas niveau_ est destinée aux utilisateurs experts. [En savoir plus sur les paramètres de bas niveau](/adguard-for-android/features/low-level-settings/)
 
 ![Paramètres de bas niveau \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
@@ -59,9 +59,17 @@ Si vous activez trop de filtres, certains sites web peuvent ne pas fonctionner c
 
 ### Scripts utilisateur
 
+Extensions allow you to add userscripts and userstyles.
+
+![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.jpg)
+
 Les scripts utilisateur sont des mini-programmes écrits en JavaScript qui étendent la fonctionnalité d'un ou plusieurs sites web. Pour installer un script utilisateur, vous avez besoin d'un gestionnaire de scripts utilisateur. AdGuard possède cette fonctionnalité et vous permet d'ajouter des scripts utilisateur via une URL ou à partir d'un fichier.
 
-![Scripts utilisateur \*mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
+Userstyles are like userscripts that allow you to change how web pages look in the browser without modifying their content. They work by adding CSS styles to the website’s existing styles. For example, if you want a dark theme on a website that doesn’t offer one, you can use a userstyle to do it.
+
+To add a userstyle, go to _Settings_ → _Filtering_ → _Extensions_→ _Add extension_ → _Import from file or URL_. You can find ready-made user styles [online](https://userstyles.world/).
+
+To create your own style, tap _Add extension_ → _Create userstyle_.
 
 #### AdGuard Extra
 
@@ -100,7 +108,7 @@ Vous pouvez également ajouter des sites que vous considérez nécessaires aux e
 - Exclure certains sites du filtrage HTTPS
 - Filtrer le trafic HTTPS uniquement sur les sites ajoutés aux exclusions
 
-Par défaut, nous ne filtrons pas non plus les sites avec des certificats Extended Validation (EV), comme les sites financiers. Si nécessaire, vous pouvez activer l'option _Filtrer les sites web avec des certificats EV_.
+Par défaut, nous ne filtrons également pas les sites Web dotés de certificats de validation étendue (EV), tels que les sites financiers. Si nécessaire, vous pouvez activer l'option _Filtrer les sites web avec des certificats EV_.
 
 #### Proxy
 

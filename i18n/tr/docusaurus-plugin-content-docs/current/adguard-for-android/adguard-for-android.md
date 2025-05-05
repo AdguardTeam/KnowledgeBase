@@ -9,7 +9,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-## Özellikler
+## Features
 
 Main features and settings available in AdGuard for Android
 

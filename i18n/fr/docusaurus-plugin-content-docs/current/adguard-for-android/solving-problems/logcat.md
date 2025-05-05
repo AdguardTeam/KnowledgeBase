@@ -1,122 +1,122 @@
 ---
-title: How to get system logs
+title: Comment obtenir les journaux système
 sidebar_position: 4
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article concerne AdGuard pour Android, un bloqueur de publicité multifonctionnel qui protège votre appareil au niveau système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ::note
 
-Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Les données et/ou les fichiers fournis dans les journaux sont traités conformément à [la Politique de confidentialité d'AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-Sometimes a regular log may not be sufficient to identify the origin of the problem. In such cases a system log is needed. Below are instructions on how to collect and get it: via Developer options and Logcat.
+Parfois, un journal régulier peut ne pas être suffisant pour identifier l'origine du problème. Dans de tels cas, un journal système est nécessaire. Vous trouverez ci-dessous des instructions sur la façon de le collecter et de l'obtenir : via les options du développeur et Logcat.
 
 :::note
 
-AdGuard s'engage à protéger votre vie privée. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Avant d'envoyer vos journaux à l'équipe d'assistance, veuillez consulter le fichier car il peut contenir des informations supplémentaires que vous ne souhaitez pas partager. S'il contient de telles informations personnelles, nous vous recommandons de les supprimer au préalable.
+AdGuard s'engage à protéger votre vie privée. Nous suivons strictement notre [Politique de confidentialité](https://adguard.com/privacy/android.html) et ne collectons aucune information privée sur les utilisateurs. Avant d'envoyer vos journaux à l'équipe d'assistance, veuillez consulter le fichier car il peut contenir des informations supplémentaires que vous ne souhaitez pas partager. S'il contient de telles informations personnelles, nous vous recommandons de les supprimer au préalable.
 
 :::
 
-## Capture a bug report from a device
+## Saisir un rapport de bogue à partir d'un appareil
 
-To get a bug report directly from your device, do the following:
+Pour obtenir un rapport de bogue directement depuis votre appareil, procédez comme suit :
 
-1. Be sure you have [Developer options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
+1. Assurez-vous que les [options de développement](https://developer.android.com/studio/run/device.html#developer-device-options) sont activées.
 
-1. In **Developer options**, tap **Take bug report**.
+1. Dans **Options du développeur**, appuyez sur **Saisir un rapport de bogue**.
 
-    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
+    ![Rapport de bogue *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-1. Select the type of bug report you want and tap **Report**.
+1. Sélectionnez le type de bogue que vous souhaitez signaler et appuyez sur **Signaler**.
 
     :::note
 
-    After a moment, you will see a notification that the bug report is ready (see Figure 2).
+    Après un moment, vous verrez une notification que le rapport de bogue est prêt (voir la Figure 2).
 
 
 :::
 
-    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
+    ![Rapport de bogue *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
-1. To share the bug report, tap the notification.
+1. Pour partager le rapport de bogue, appuyez sur la notification.
 
-    ![Bug report *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
+    ![Rapport de bogue *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
-1. Send this log to our support team.
+1. Envoyez ce journal à notre équipe d'assistance.
 
     :::note
 
-    Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+    Notre équipe d'assistance traitera votre ticket beaucoup plus rapidement si vous spécifiez le numéro de ticket HelpDesk ou le numéro de problème GitHub dans votre message au support.
 
 
 :::
 
-## Capture a bug report via Logcat
+## Saisir un rapport de bogue via Logcat
 
-On devices with Android 7 and below, it is not possible to send a bug report automatically. Then you can capture it manually via Logcat — a standard Android command-line tool that dumps a log of system messages.
+Sur les appareils équipés d'Android 7 et versions antérieures, il n'est pas possible d'envoyer un rapport de bogue automatiquement. Vous pouvez alors le saisir manuellement via Logcat — un outil en ligne de commande Android standard qui affiche un journal des messages système.
 
-Follow this instruction:
+Suivez cette instruction :
 
-### Part #1: prepare the device
+### Partie #1 : préparez l'appareil
 
-1. Switch device to the developer mode. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
+1. Basculez l'appareil en mode développeur. Pour faire ça : accédez aux **Paramètres** → **À propos** → appuyez sur **Numéro de build** 7 fois.
 
-1. Go to **Developer Options**.
+1. Allez dans les **Options pour développeurs**.
 
-1. Enable **USB debugging**.
+1. Activez le **Débogage USB**.
 
-1. Increase **Logger buffer** sizes to 4 MB per log buffer.
+1. Augmentez la taille du **Tampon de journal** à 4 Mo par tampon de journal.
 
-4 MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
+4 Mo devrait suffire pour stocker les journaux dont nous avons besoin jusqu'à ce que vous puissiez effectuer la deuxième partie (saisir le journal de l'appareil) ;
 
-### Part #2: reproduce the problem
+### Partie #2 : reproduisez le problème
 
-It is important to reproduce the problem after you're done with the first part.
+Il est important de reproduire le problème après avoir terminé la première partie.
 
 1. Reproduisez le problème.
 
-1. Remember/write down the date and time of reproduction and include it in the email to our support later.
+1. N'oubliez pas/notez la date et l'heure de reproduction et incluez-les dans l'e-mail envoyé à notre support ultérieurement.
 
-### Part #3: get the log
+### Partie #3 : saisissez le journal
 
-1. Connect your device to a PC with a USB cable.
+1. Connectez votre appareil à un PC avec un câble USB.
 
-1. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). Choose the appropriate download link for your OS from the Downloads section. Once you tap the link, a ZIP file will be downloaded. You can extract the ADB (Android Debug Bridge) files from the ZIP file and store them wherever you want.
+1. Téléchargez [les outils de plateforme Android SDK](https://developer.android.com/studio/releases/platform-tools#downloads). Choisissez le lien de téléchargement approprié pour votre OS dans la section Téléchargements. Une fois que vous appuyez sur le lien, un fichier ZIP sera téléchargé. Vous pouvez extraire les fichiers ADB (Android Debug Bridge) du fichier ZIP et les stocker où vous le souhaitez.
 
-1. Test whether ADB is working properly: connect your Android device to your computer using a USB cable, open the Command Prompt, PowerShell or Terminal and run the following command:
+1. Testez si ADB fonctionne correctement : connectez votre appareil Android à votre ordinateur à l'aide d'un câble USB, ouvrez l'invite de commandes, PowerShell ou Terminal et exécutez la commande suivante :
 
     `adb devices`
 
-    An example of a successful result:
+    Un exemple de résultat réussi :
 
-    ![Step 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
+    ![Étape 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
 
-1. Then run the following command (insert the relevant path):
+1. Ensuite, exécutez la commande suivante (insérez le chemin pertinent) :
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at <support@adguard.com>.
+    Envoyez par e-mail le fichier `txt` créé avec l'heure quand le problème a été reproduit (à partir de la partie #2) à notre équipe d'assistance à l'adresse <support@adguard.com>.
 
-### Alternative way for ROOT users
+### Méthode alternative pour les utilisateurs ROOT
 
-1. Download and run [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
+1. Téléchargez et exécutez [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
 
-1. Choose **Record** in the menu. Choose a name for a log file or just press **OK**. Now you can press **Home** button, CatLog will continue recording the log in background.
+1. Choisissez **Enregistrement** dans le menu. Choisissez un nom pour un fichier journal ou appuyez simplement sur **OK**. Vous pouvez maintenant appuyer sur le bouton **Accueil**, CatLog continuera à journaliser en arrière-plan.
 
-1. Reproduce the issue.
+1. Reproduisez le problème.
 
-1. Open CatLog and press **Stop record** in the menu.
+1. Ouvrez CatLog et appuyez sur **Arrêter l'enregistrement** dans le menu.
 
-1. Send this log to our support team.
+1. Envoyez ce journal à notre équipe d'assistance.
 
 :::note
 
-Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+Notre équipe d'assistance traitera votre ticket beaucoup plus rapidement si vous spécifiez le numéro de ticket HelpDesk ou le numéro de problème GitHub dans votre message au support.
 
 :::

@@ -1,56 +1,56 @@
 ---
-title: Low-level settings guide
+title: ローレベル設定の使い方ガイド
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事は、システムレベルでデバイスを保護してくれる多機能広告ブロッカー、「AdGuard for Android」についてです。 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
-## How to reach Low-level settings
+## ローレベル設定にアクセスする方法
 
 :::caution
 
-Changing the low-level settings can cause problems with AdGuard’s performance, interrupt your Internet connection, or compromise your security and privacy. Use the low-level features only if you are an experienced user and know what you are doing, or if our support team has asked you to do so.
+ローレベル設定を変更するとAdGuardのパフォーマンス悪化やインターネット接続の切断、もしくはあなたのセキュリティやプライバシーを侵害してしまう可能性があります。 ローレベル設定の機能は、あなたが経験豊富なユーザーであり自分が何をしているかを知っている場合、またはサポートチームから依頼された場合にのみ使用してください。
 
 :::
 
-To access _Low-level settings_, open the AdGuard app and tap the gear icon in the lower-right corner of the screen. Then select _General → Advanced → Low-level settings_.
+「_ローレベル設定_」にアクセスするには、AdGuardアプリを開き、画面の右下隅にある⚙️アイコン（設定）をタップします。 次に、「一般設定」→「詳細設定」→「ローレベル設定」を選択します。
 
 ## ローレベル設定
 
-For AdGuard v4.x for Android we’ve completely redesigned the low-level settings. We have reworked the list of settings and organized them into thematic groups with improved descriptions. We also added input validation and other safety valves.
+AdGuard for Android v4.x では、ローレベルの設定を完全に再設計しました。 設定のリストを再構成し、それぞれのテーマグループにまとめて説明を改善しました。 入力検証やその他の安全弁も追加しました。
 
 ### DNS通信を保護
 
-#### Fallback upstreams
+#### フォールバックアップストリーム
 
-Here you can specify the fallback DNS resolver(s) to use when the configured server is unavailable. Available options:
+ここでは、設定しているサーバーが利用できなかった場合に使用されるフォールバックDNSレゾルバーを指定できます。 使用可能なオプションは以下の通りです：
 
-- _Automatic DNS_: Select this option if you want to use the system DNS or AdGuard DNS.
-- _None_: Select this option if you do not want to have any fallback.
-- _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. These addresses will be used as upstreams.
+- _自動DNS_：システムDNSまたはAdGuard DNSを使用する場合は、このオプションを選択します。
+- _なし_：フォールバックがいらない場合は、このオプションを選択します。
+- _カスタムDNS_：このオプションを選択しますと、プレーンDNSサーバーのIPv4またはIPv6アドレスを1行に1つずつ入力できます。 これらのアドレスはアップストリームとして使用されます。
 
-#### Fallback domains
+#### フォールバックドメイン
 
-Here you can list domains that will be redirected to fallback upstreams, if available. You can enter multiple domains, one per line. You can use limited wildcards.
+ここでは、フォールバックアップストリーム（利用可能なものがある場合）にリダイレクトされるドメインをリストアップできます。 複数のドメインを1行に1つずつ入力できます。 （限定的なワイルドカードも使用できます。）
 
-#### Detect search domains
+#### 検索ドメインを検出する
 
-If this setting is enabled, AdGuard will detect DNS search domains and automatically redirect them to fallback upstreams, if available.
+この設定が有効になっている場合、AdGuardはDNS検索ドメインを検出し、利用可能であれば自動的にフォールバックアップストリームにリダイレクトします。
 
-#### Bootstrap upstreams
+#### Bootstrapアップストリーム
 
-Bootstrap DNS for encrypted DNS upstreams, such as DoH, DoT, and DoQ servers. Available options:
+DoH、DoT、DoQ サーバーなどの暗号化された DNS アップストリーム用のBootstrap DNSです。 使用可能なオプションは以下の通りです：
 
-- _Automatic DNS_: Select this option if you want to use the system DNS or AdGuard DNS. This option is selected by default.
-- _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. These addresses will be used as bootstrap upstreams.
+- _自動DNS_：システムDNSまたはAdGuard DNSを使用する場合は、このオプションを選択します。 このオプションはデフォルトで選択されています。
+- _カスタムDNS_：このオプションを選択しますと、プレーンDNSサーバーのIPv4またはIPv6アドレスを1行に1つずつ入力できます。 これらのアドレスはbootstrapアップストリームとして使用されます。
 
 #### adblock-styleルール用ブロックモード
 
-Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for example, `||example.org^`). Available options:
+ここでは、広告ブロックルールの語法（例えば、`||example.org^`）に基づいて、DNSルールによってブロックされたドメインのレスポンスタイプを指定できます。 使用可能なオプションは以下の通りです：
 
 - _REFUSED_: Respond with REFUSED
 - _NXDOMAIN_: Respond with NXDOMAIN
