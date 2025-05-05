@@ -139,7 +139,7 @@ AdGuard Content Blocker is an extension for Samsung and Yandex browsers that can
 
 Because of the limitations above AdGuard Content Blocker will not be mentioned in the compatibility notes.
 
-### SafariConverterLib
+### SafariConverterLib {#safari-converter-lib}
 
 Safari Converter aims to support AdGuard filtering rules syntax as much as possible, but still there are limitations and shortcomings that are hard to overcome.
 
@@ -147,11 +147,11 @@ Safari Converter aims to support AdGuard filtering rules syntax as much as possi
 
 Safari Converter supports a substantial subset of [basic rules](#basic-rules) and certainly supports the most important types of those rules.
 
-##### Supported with limitations
+##### Supported with limitations {#safari-converter--basic--supported-with-limitations}
 
 - [Regular expression rules](#regexp-support) are limited to the subset of regex that is [supported by Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
 
-- `$domain` - [domain modifier](#domain-modifier) is supported with several limitations.
+- `$domain` - [domain modifier](#domain-modifier) is supported with several limitations:
 
     - It's impossible to mix allowed and disallowed domains (like `$domain=example.org|~sub.example.org`). Please upvote the [feature request](https://bugs.webkit.org/show_bug.cgi?id=226076) to WebKit to lift this limitation.
     - "Any TLD" (i.e. `domain.*`) is not fully supported. In the current implementation the converter just replaces `.*` with top 100 popular TLDs. This implementation will be improved [in the future](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732).
@@ -568,11 +568,7 @@ In the following examples it is implied that requests are sent from `http://exam
 
 In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries are not supported.
 
-:::
-
-:::caution Restrictions
-
-Safari does not support the simultaneous use of allowed and disallowed domains, so rules like `||baddomain.com^$domain=example.org|~foo.example.org` will not work in AdGuard for iOS and AdGuard for Safari.
+AdGuard for iOS and AdGuard for Safari support the `$domain` modifier but have some limitations. For more details, see the [SafariConverterLib section](#safari-converter--basic--supported-with-limitations).
 
 :::
 
@@ -2326,7 +2322,7 @@ Rules with `$redirect-rule` modifier are not supported by [AdGuard Content Block
 
 #### **`$referrerpolicy`** {#referrerpolicy-modifier}
 
-These rules allow overriding of a page's [referrer policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy). Responses to matching requests will have all of their `Referrer-Policy` headers replaced with a single header with the value equal to the matching rule's modifier value. Se la risposta contiene un documento HTML con un tag `<meta name="referrer"…`, l'attributo `content` del tag sarà anch'esso sostituito con il valore del modificatore.
+These rules allow overriding of a page's [referrer policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy). Responses to matching requests will have all of their `Referrer-Policy` headers replaced with a single header with the value equal to the matching rule's modifier value. If the response carries an HTML document with a `<meta name="referrer"...` tag, the `content` attribute of the tag will also be replaced with the modifier value.
 
 An exception rule with a modifier value disables the blocking rule with the same modifier value. An exception rule without a modifier value disables all matched referrer-policy rules.
 
@@ -2728,8 +2724,7 @@ You will need some knowledge of regular expressions to use `$replace` modifier.
 **Features**
 
 - `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc.).
-- `$replace` rules do not apply if the size of the original response is more than 10 MB.
-- `$replace` rules have a higher priority than other basic rules (**including** exception rules). So if a request natches two different rules, one of which has the `$replace` modifier, this rule will be applied.
+- `$replace` rules have a higher priority than other basic rules, **including** exception rules. So if a request matches two different rules, one of which has the `$replace` modifier, this rule will be applied.
 - Document-level exception rules with `$content` or `$document` modifiers do disable `$replace` rules for requests matching them.
 - Other document-level exception rules (`$generichide`, `$elemhide` or `$jsinject` modifiers) are applied alongside `$replace` rules. It means that you can modify the page content with a `$replace` rule and disable cosmetic rules there at the same time.
 
@@ -2783,7 +2778,8 @@ You can see how this rule works here: http://regexr.com/3cesk
 
 :::caution Restrictions
 
-Rules with the `$replace` modifier can only be used [**in trusted filters**](#trusted-filters).
+- Rules with the `$replace` modifier can only be used [**in trusted filters**](#trusted-filters).
+- `$replace` rules do not apply if the size of the original response is more than 10 MB. For AdGuard Browser Extension, this limit applies starting from v5.2 or later.
 
 :::
 
@@ -3388,7 +3384,15 @@ Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3
 
 :::note
 
-Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) if they use `##` marker and if it is possible, i.e. with no other extended selectors inside. To force applying of ExtendedCss rules with `:has()`, use `#?#`/`#$?#` marker explicitly.
+Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`][native-has] if they use the `##` rule marker and if it is possible, i.e., there are no other extended CSS selectors inside. If it is not supported by the product, ExtendedCss implementation will be used even for rules with the `##` marker.
+
+Currently, not all AdGuard products support the native implementation of `:has()` yet:
+
+- AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **do support** it with [CoreLibs][] v1.12 or later.
+- AdGuard for iOS and AdGuard for Safari **do support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 and [Safari browser v16.4][safari-16.4].
+- AdGuard Browser Extension **does not support** it yet, but it is [planned][AdguardBrowserExtension#2587].
+
+To force the ExtendedCss implementation of `:has()` to be used, use the `#?#` or `#$?#` rule markers explicitly, e.g., `example.com#?#p:has(> a)` or `example.com#$?#div:has(> span) { display: none !important; }`.
 
 :::
 
@@ -4004,7 +4008,7 @@ This pseudo-class was basically a shortcut for `:not(:has())`. It was supported 
 
 The way **element hiding** and **CSS rules** are applied is platform-specific.
 
-**In AdGuard for Windows, Mac, and Android**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](#cosmetic-elemhide-rules) and [CSS rules](#cosmetic-css-rules) cannot override inline styles. In such cases, it is recommended to use extended selectors or HTML filtering.
+**In AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](#cosmetic-elemhide-rules) and [CSS rules](#cosmetic-css-rules) cannot override inline styles. In such cases, it is recommended to use extended selectors or HTML filtering.
 
 **In AdGuard Browser Extension**, the so-called "user stylesheets" are used. They have higher priority than even the inline styles.
 
@@ -4016,7 +4020,7 @@ In most cases, the basis and cosmetic rules are enough to filter ads. But someti
 
 :::info Compatibility
 
-HTML filtering rules are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on network level.
+HTML filtering rules are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux, and AdGuard Browser Extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on network level.
 
 :::
 
@@ -4189,7 +4193,7 @@ o
 
 :::info Compatibility
 
-The `:contains()` pseudo-class is supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.13 or later.
+The `:contains()` pseudo-class is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.13 or later.
 
 :::
 
@@ -5020,6 +5024,10 @@ The following scriptlets also may be used for debug purposes:
 [jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#jsinject
 
 [badfilter-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#badfilter
+
+[native-has]: https://developer.mozilla.org/docs/Web/CSS/:has
+[safari-16.4]: https://www.webkit.org/blog/13966/webkit-features-in-safari-16-4/
+[AdguardBrowserExtension#2587]: https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2587
 
 [cl-apps]: #what-product "AdGuard for Windows, Mac, Linux, Android"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"

@@ -110,12 +110,12 @@ Pro konfiguraci AdGuardu pro Linux použijte příkaz `filters`. Dílčí přík
 Ve výchozím nastavení naslouchá proxy na `127.0.0.1` — adrese zpětného síťového rozhraní.
 Existují dva způsoby, jak zajistit, aby proxy naslouchal na jiném rozhraní:
 
-1. Run `adguard-cli config set listen_address <address>` where `<address>` is the address to listen on.
-2. Edit the config file directly:
-    - To determine the location of the config file, run `adguard-cli config show | grep "Config location"`.
-    - Look for the `listen_address` key and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0` or `::`.
+1. Spusťte `adguard-cli config set listen_address <address>`, kde `<address>` je adresa, na které se má naslouchat.
+2. Upravte konfigurační soubor přímo:
+    - Chcete-li zjistit umístění konfiguračního souboru, spusťte `adguard-cli config show | grep "Config location"`.
+    - Vyhledejte klíč `listen_address` a nastavte jeho hodnotu odpovídajícím způsobem. Chcete-li naslouchat na všech dostupných síťových rozhraních, nastavte adresu pro naslouchání na `0.0.0.0` nebo `::`.
 
-If the listen address is set to anything other than `127.0.0.1`, then proxy client authentication is required. AdGuard CLI will not start unless proxy authentication is configured:
+Pokud je adresa pro naslouchání nastavena na cokoli jiného než `127.0.0.1`, je požadováno ověření proxy klienta. AdGuard CLI se nespustí, pokud není nakonfigurováno ověřování pomocí proxy:
 
-- When running `adguard-cli config set listen_address <address>` where `<address>` is not `127.0.0.1`, AdGuard CLI will prompt for a username and password if proxy authentication is not already configured.
-- When editing the config file directly, look for the `listen_auth`key. Set the `enabled` sub-key to `true`, and `username` and `password` to non-empty values.
+- Při spuštění `adguard-cli config set listen_address <address>`, kde `<address>` není `127.0.0.1`, se AdGuard CLI zeptá na uživatelské jméno a heslo, pokud ještě není nakonfigurováno ověřování pomocí proxy.
+- Při přímé úpravě konfiguračního souboru vyhledejte klíč `listen_auth`. Nastavte podklíč `enabled` na hodnotu `true` a `username` a `password` na neprázdné hodnoty.

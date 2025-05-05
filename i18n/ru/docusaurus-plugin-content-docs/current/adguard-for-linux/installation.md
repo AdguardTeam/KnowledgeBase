@@ -109,7 +109,7 @@ AdGuard for Linux requires an [AdGuard license](https://adguard.com/license.html
     adguard-cli config show
     ```
 
-    ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+    ![Текущая настройка \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
     The path to the configuration file will also be displayed, which you can and should edit directly. It contains descriptions of all additional options.
 
