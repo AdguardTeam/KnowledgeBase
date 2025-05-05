@@ -1,6 +1,6 @@
 ---
 title: Problems caused by multiple user profiles
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 :::info

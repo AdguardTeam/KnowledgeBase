@@ -9,32 +9,32 @@ sidebar_position: 1
 
 :::
 
-## Features
+## 機能
 
-Main features and settings available in AdGuard for Windows
+AdGuard for Windows の主な機能と設定についての説明です：
 
-[Features](/adguard-for-windows/features/features.md)
+[機能](/adguard-for-windows/features/features.md)
 
 ## インストール/アンインストール
 
-Installation, removal, and system requirements for AdGuard for Windows
+動作環境と、AdGuard for Windows のインストールおよびアンインストール方法の手順について説明しております：
 
-[Installation](/adguard-for-windows/installation.md)
+[インストール方法](/adguard-for-windows/installation.md)
 
 ## ブラウザアシスタント
 
-An extension that complements the desktop program and allows you to manage filtering from your browser
+直接ブラウザからのフィルタリング管理を可能にすることで、AdGuardデスクトップアプリを補完してくれる拡張機能です。
 
-[Browser Assistant](/adguard-for-windows/browser-assistant.md)
+[ブラウザアシスタント](/adguard-for-windows/browser-assistant.md)
 
 ## 問題解決
 
 既知の問題と考えられる解決策を説明する記事がまとめられています：
 
-[Solving problems](/adguard-for-windows/solving-problems/solving-problems.md)
+[問題解決](/adguard-for-windows/solving-problems/solving-problems.md)
 
 ## 管理者向けドキュメンテーション
 
-Configuration guide for system administrators
+システム管理者向けの設定ガイドです：
 
-[Documentation for admins](/adguard-for-windows/admins-documentation.md)
+[管理者向けドキュメント](/adguard-for-windows/admins-documentation.md)

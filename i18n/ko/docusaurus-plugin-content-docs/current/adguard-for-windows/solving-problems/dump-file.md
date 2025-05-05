@@ -1,6 +1,6 @@
 ---
 title: 덤프 파일을 만드는 방법
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 :::정보

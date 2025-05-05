@@ -27,57 +27,55 @@ sidebar_position: 6
 
 2019年10月 AdGuard 有新版许可证。用户仍然可以选择两个效期，即一年和终身，但是许可证的类型改变了。现在我们有**个人版**（可以用于3台设备）和**家庭版**（可以用于9台设备）。
 
-请注意：**新版的许可证密钥可以用于所有设备上，无论是哪一种桌面端或移动端组合。 比如说，个人版的许可证可以用于三台设备，即 Android、Mac 和 iOS，或是两个 Windows 电脑和一个 Apple 平板电脑上等等。**
+此外，**新版的许可证密钥可以用于任何设备，无论是哪种组合**。 比如说，个人版的许可证可以用于三台设备，即 Android、Mac 和 iOS，或是两个 Windows 电脑和一个 Apple 平板电脑上等等。
 
 ## 旧版许可证现在怎么用？
 
-标准版的许可证自动换成“通用版”，即可以用于所有设备，无论是桌面端还是移动端。
+**标准版的许可证**自动换成**通用版**，即可以用于所有设备，无论是桌面端还是移动端。
 
-移动版的许可证未受改变（设备数量保持不变，依然只能用于手机或平板电脑上）。
+**移动版的许可证**未受改变（设备数量保持不变，依然只能用于手机或平板电脑上）。
 
-高级版的许可证也没改变，依然收到设备数量的限制。 虽然**高级版的许可证显示在用户的个人账号里（包括总计设备数量）**。该许可证现在也可以激活在桌面端+移动端的设备组合。
+**高级版的许可证**也没改变，依然收到设备数量的限制。 虽然**高级版的许可证显示在用户的个人账号里（包括总计设备数量）**。该许可证现在也可以激活在桌面端+移动端的设备组合。
 
 比如说，以下是1+1许可证密钥的例子：
 
-![1+1许可证密钥](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
+![1+1许可证密钥](https://cdn.adtidy.org/blog/new/7rh5nlicense1.png)
 
 *无论设备的总数（2）许可证密钥仅仅可以在1个桌面端和1个移动端激活。*
 > 所有旧版的许可证在 AdGuard 账号里带有「旧版」标记。 当用户续订获省级许可证时，它们自动转换成新版的许可证。 不过，也有一些细微的差别。 让我们看看哪些许可证可以转换成新版，以及如何做到这一点。
 
-## 我有旧版许可证密钥。 我有什么续订/升级选择？
+## 如何续订或升级旧版密钥
 
-You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://adguardaccount.com/main.html):
+用户可以在 [AdGuard 账号](https://adguardaccount.com)或[进阶或升级网页](https://adguard.com/renew.html)中扩展/续订或升级旧版许可证。
 
-![升级](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
-> 请前往「我的许可证」选项卡，检查每个特定密钥有哪些操作可供执行。 下面我们将用具体的例子给您解释。
+要在 AdGuard 账号中扩展/续订或升级旧版许可证，请转到「*许可证*」标签，找到您需要的许可证，并选择其中一个可用选项。
+
+![在您的 AdGuard 账号中续订或升级许可证](https://cdn.adtidy.org/blog/new/rf4zgklicense2.png)
+
+您还可以访问[进阶或升级网页](https://adguard.com/renew.html)，输入您的许可证，然后点击「*应用*」。 在新网页上，选择一个可用选项。
 
 ### 1/2/3台设备的许可证
 
-用于1、2、3台设备的**一年许可证**可以转换成个人或家庭：
+3 台设备的移动年度许可证可转换为个人许可证或升级为家庭许可证：
 
-![升级或续订](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
-> 根据您需要保护的设备数量进行选择。
+![升级 1、2、3 台设备的年度许可证](https://cdn.adtidy.org/blog/new/fh5r7upgrade3.png)
 
-除了续订，您可以转为终身版：
+> 若您持有**3台设备的标准版许可证**，该许可证将自动具备**个人版**的全部功能。 若您续订**3台设备的移动版许可证**，该许可证将可应用于**各类设备**，不再仅限于手机。
 
-![终身](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
+您还可以将许可证升级为终身许可证：
 
-由于技术限制**终身版**的许可证只能转换成家庭版（9台设备）：
+![终身升级](https://cdn.adtidy.org/blog/new/7j4l6gupgrade4.png)
 
-![终身升级](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
+由于技术限制**终身**许可证只能转换成家庭版（9台设备）：
 
 ### 4+台设备的许可证（最多可连接到9台设备）
 
-**一年的**许可证密钥配置仅能转换成家庭版的许可证：
+**年度**许可证适用于4个或更多设备，可以升级到家庭和终身许可证。
 
-![4 台设备的年度许可证](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png)
-
-由于技术限制用于4太或更多设备上的**终身版**许可证无法升级：
-
-![4 台设备的终身许可证](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
+不过，若您已持有**终身版**许可证，由于技术限制将无法进行升级。
 
 ### 9台设备的许可证
 
-高级版的许可证密钥（5+5 和更多）和您在我们帮助下单独购买的10多个设备的定制密钥。
+高级版的许可证密钥（5+5 和更多）和您在我们帮助下单独购买的10多台设备的定制密钥。
 
-这些都是比较特殊的情况，所以如果您想把自己的许可证升级为终身制，请联系我们：partners@adguard.com。 我们将根据您的许可证的具体配置，并提供一个不同的价格。
+这是比较特殊的情况，所以如果您想把自己的许可证升级为终身版，请联系我们：partners@adguard.com。 我们将根据您的许可证的具体配置提供一个不同的价格。

@@ -38,7 +38,7 @@ Faisant face à une traduction qui nécessite l'utilisation de pluriels, vous ne
 
 Voici quelques sources d'informations que vous pouvez utiliser.
 
-[Guide de localisation](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contient une large liste de langues. Le nombre de formes plurielles pour les langues différentes est indiqué de cette façon : `nplurals=2`, `nplurals=4` et ainsi de suite. The numeral after the equals sign `=` indicates the number of plural forms of the respective language.
+[Guide de localisation](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contient une large liste de langues. Le nombre de formes plurielles pour les langues différentes est indiqué de cette façon : `nplurals=2`, `nplurals=4` et ainsi de suite. Le chiffre après le signe Égal `=` indique le nombre de formes plurielles de la langue respective.
 
 En outre, vous pouvez obtenir des informations sur les formes plurielles dans le répertoire [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Les règles plurielles CLDR indiquent une forme de mot supplémentaire pour les nombres décimaux (1.5 ; 2.3 ; 100.1…), mais nous ne les utilisons pas dans les traductions AdGuard.
 
@@ -137,7 +137,7 @@ Ainsi, la traduction de l'anglais vers le serbe devrait être :
 
 Bien qu'il soit évident que les deux derniers modèles ne présentent aucune différence, il est très important de respecter la règle : **Le nombre de modèles doit refléter le nombre de formes plurielles de la langue concernée !**(typiquement pour ce type de chaînes avec des pluriels).
 
-## Short summary {#summary}
+## Résumé bref {#summary}
 
 Lors de la traduction de projets AdGuard, portez une attention particulière aux phrases qui nécessitent l'utilisation de formes plurielles.
 

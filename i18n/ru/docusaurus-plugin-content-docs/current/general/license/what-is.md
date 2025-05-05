@@ -25,7 +25,7 @@ sidebar_position: 1
 - **Дистрибьюторские лицензии** и **подарочные лицензии** могут быть как ограниченными по времени, так и вечными. Лицензии с ограниченным сроком действия можно обновить только вручную
     - Персональная — до 3 устройств
     - Семейная — до 9 устройств
-- Купить и управлять **лицензией AdGuard Pro для iOS** можно через App Store. Её можно использовать только на устройствах iOS и iPadOS с одним и тем же Apple ID
+- **AdGuard for iOS** and **AdGuard Pro** licenses are purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
 
 :::tip
 
