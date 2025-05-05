@@ -23,7 +23,7 @@ sidebar_position: 2
 
 ### 広告ブロッカー
 
-これは AdGuard for Windows のメインモジュールで、アクセスしたウェブサイトやデバイスにインストールされたアプリから広告を削除します。 To filter out advertising and privacy-threatening content such as banners, popups, or trackers AdGuard uses different filters — groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). フィルタとは何か、どのように機能するのかについては、[こちらの記事](/general/ad-filtering/how-ad-blocking-works)をお読みください。
+これは AdGuard for Windows のメインモジュールで、アクセスしたウェブサイトやデバイスにインストールされたアプリから広告を削除します。 AdGuard は、バナー、ポップアップ、トラッカーなどのような、広告やプライバシーを脅かすコンテンツをフィルタリングするために、さまざまなフィルタ（[特別な構文](/general/ad-filtering/create-own-filters)で記述され、同様の目的を持つルールグループ）を使用します。 フィルタとは何か、どのように機能するのかについては、[こちらの記事](/general/ad-filtering/how-ad-blocking-works)をお読みください。
 
 ![広告ブロッカー \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
@@ -54,7 +54,7 @@ sidebar_position: 2
 
 ブラウジング・セキュリティは、悪意のあるウェブサイトやフィッシングサイトからしっかり保護してくれます。 （※AdGuard for Windows はアンチウイルスソフトではありません。 すでに始まっているウイルスのダウンロードを止めることや、すでに存在するウイルスを削除することはできません。） しかし、ドメインが「信頼できないサイト」データベースに追加されたウェブサイトにアクセスしようとしたり、そのようなウェブサイトからファイルをダウンロードしようとしたりすると、警告が表示されます。 このモジュールがどのように機能するかについての詳細は、[こちらの専用記事](/general/browsing-security)をご覧ください。
 
-In this module, you can:
+このモジュールでできること：
 
 - 悪質なウェブサイトやフィッシング詐欺サイトへのリクエストがブロックされた際の通知の受け取りを有効にする
 - サウンド通知を有効にする
@@ -70,26 +70,26 @@ In this module, you can:
 
 ![DNS通信を保護 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
 
-In the DNS protection module of AdGuard for Windows, you can choose DNS servers from known DNS providers, including AdGuard DNS, which blocks ads and trackers, AdGuard DNS Family Protection, which also blocks adult content, or AdGuard DNS Non-filtering, which provides a secure and reliable connection but doesn’t filter anything. You can even add custom DNS servers and rules using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). If necessary, you can add [DNS filters of your choice](https://filterlists.com).
+AdGuard for Windows の「DNS通信を保護」モジュールでは、広告とトラッカーをブロックする「AdGuard DNS」、アダルトコンテンツをブロックする「AdGuard DNS ファミリー保護」、または安全で信頼性の高い接続を提供するが何もフィルタリングしない「AdGuard DNS フィルタリングなし」など、既知のDNSプロバイダからDNSサーバを選択できます。 また、[DNSルール構文](https://adguard-dns.io/kb/general/dns-filtering-syntax/)を使ってカスタムDNSサーバーやカスタムDNSルールを追加することもできます。 また、必要に応じて[お好みのDNSフィルタ](https://filterlists.com)を追加することもできます。
 
-Starting with v7.20, you can also add filters by simply selecting them from a list of pre-built, trusted filters. They are grouped into four categories for your convenience:
+v7.20 以降では、信頼できる組み込みフィルタリストからフィルタを選択するだけで、フィルタを追加することもできます。 より使いやすくなるよう、フィルタは4つのカテゴリにグループ化されています：
 
-- **General**: block ads and trackers
-- **Regional**: block ads and trackers on language-specific websites
-- **Security**: block phishing and unreliable websites
-- **Other**: cover special use cases that don’t fit into the above categories
+- **一般**：広告とトラッカー（個人情報追跡）をブロックします。
+- **地域別**：言語固有のウェブサイトで広告とトラッカーをブロックします。
+- **セキュリティ**：フィッシングサイトや信頼できないウェブサイトをブロックします。
+- **その他**：上記のカテゴリに当てはまらない特別なユースケースをカバーします。
 
 ![DNS filters \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
 
-### Parental Control
+### ペアレンタルコントロール
 
-There are several websites to which access should be restricted from a PC used by children. This task is accomplished by Parental Control.
+子供が使用するパソコンで、アクセスを制限する必要があるウェブサイトは何個もあるでしょう。 この機能をペアレンタルコントロールが果たします。
 
 ![Parental Control \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
-The module checks the contents of web pages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental Control settings are password-protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results.
+このモジュールは、ブラウザで開かれたウェブページの内容をチェックし、子供にとって好ましくない内容（大人向けの画像やテキスト、下品な言葉、暴力、薬物の宣伝など）のものをフィルタリングします。 ペアレンタルコントロールの設定はパスワードで保護されているため、子供が自分で制限をオフにすることはできません。 このモジュールは、不適切なサイトへの誘導をブロックするだけでなく、子供に不適切なリンクを検索結果から削除することもできます。
 
-In the _Parental Control_ module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. You can also check the _Block executable files download_ box to prevent your child from downloading and installing software on the computer. There are two more options in the _Parental Control_ module: you can select a specific Windows user to be protected by _Parental Control_ and set a password to protect AdGuard settings from change.
+ペアレンタルコントロールモジュールでは、「_セーフサーチ_」を有効にし、「_ブラックリスト_」と「_ホワイトリスト_」を管理して、この機能の動作をカスタマイズすることができます。 「実行形式ファイルのダウンロードをブロック」を有効にしますと、お子様のコンピュータへのソフトウェアのダウンロードとインストールを防ぎます。 「_ペアレンタルコントロール_」モジュールにはさらに 2 つのオプションがあります。_ペアレンタルコントロール_で保護対象の特定の Windows ユーザーを指定するオプションと、AdGuard 設定が変更されないようにパスワードを設定するオプションです。
 
 ![Parental Control \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
@@ -97,4 +97,4 @@ In the _Parental Control_ module you can enable the _Safe search_ and manage the
 
 ![Browser Assistant \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
-From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](/adguard-for-windows/browser-assistant.md).
+このタブから、AdGuard ブラウザアシスタントのインストールに簡単に進むことができます。AdGuard ブラウザアシスタントは、ブラウザから直接フィルタリングを管理することを主な機能としています。 [こちらの別の記事](/adguard-for-windows/browser-assistant.md)で、その使い方や、ブラウザにブラウザアシスタントがない場合の対処方法について詳しく説明しました。

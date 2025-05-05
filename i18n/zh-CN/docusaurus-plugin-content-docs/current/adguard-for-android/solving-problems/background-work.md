@@ -1,6 +1,6 @@
 ---
 title: 如何让 AdGuard 保持后台运行
-sidebar_position: 9
+sidebar_position: 8
 ---
 
 :::info

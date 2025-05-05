@@ -1,6 +1,6 @@
 ---
 title: 手动将安全证书安装到 Firefox 浏览器中
-sidebar_position: 11
+sidebar_position: 10
 ---
 
 :::info

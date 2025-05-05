@@ -1,6 +1,6 @@
 ---
 title: Jak nastavit odchozí proxy
-sidebar_position: 8
+sidebar_position: 7
 ---
 
 :::info

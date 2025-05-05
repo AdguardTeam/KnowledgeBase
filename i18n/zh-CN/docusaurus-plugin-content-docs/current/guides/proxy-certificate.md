@@ -19,9 +19,9 @@ sidebar_position: 2
 
 ### Windows 系统 {#windows}
 
-1. Note the IP address of your computer with AdGuard installed.
+1. 记下装有 AdGuard 的计算机的 IP 地址。
 
-1. 请确保 AdGuard 保护已启用。 在 Windows 电脑上转到设置中的「**网络**」，勾选「**将 AdGuard 用作 HTTP 代理**」。 On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
+1. 请确保 AdGuard 保护已启用。 在 Windows 电脑上转到设置中的「**网络**」，勾选「**将 AdGuard 用作 HTTP 代理**」。 Mac 用户，请前往「**设置**」→「**首选项**」→「**网络**」并启用「**HTTP 代理**」。
 
 1. 在装有 AdGuard 的计算机上，通过浏览器打开此链接：[http://local.adguard.org/cert](http://local.adguard.org/cert)
 
@@ -55,15 +55,15 @@ sidebar_position: 2
 
 1. 在「*使用代理服务器*」中，点击「**设置**」。
 
-1. 打开开关。 For **Proxy IP address**, type the IP address of your computer that you noted in step 1. 对于**端口**，输入在桌面 AdGuard 应用程序的网络设置中选择的端口。
+1. 打开开关。 要设置**代理 IP 地址**，请键入您在步骤 1 记下的计算机的 IP 地址。 对于**端口**，输入在桌面 AdGuard 应用程序的网络设置中选择的端口。
 
 1. 单击「**保存**」。
 
 ### Mac 系统 {#mac}
 
-1. Note the IP address of your computer with installed AdGuard.
+1. 记下装有 AdGuard 的计算机的 IP 地址。
 
-1. 请确保 AdGuard 保护已启用。 在 Windows 电脑上转到设置中的「**网络**」，勾选「**AdGuard 用作 HTTP 代理**」。 On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
+1. 请确保 AdGuard 保护已启用。 在 Windows 电脑上转到设置中的「**网络**」，勾选「**AdGuard 用作 HTTP 代理**」。 Mac 用户，请前往「**设置**」→「**首选项**」→「**网络**」并启用「**HTTP 代理**」。
 
 1. 通过浏览器打开此链接：[http://local.adguard.org/cert](http://local.adguard.org/cert)
 
@@ -93,9 +93,9 @@ sidebar_position: 2
 
 ### Android 系统 {#android}
 
-1. Note the IP address of your computer with installed AdGuard.
+1. 记下装有 AdGuard 的计算机的 IP 地址。
 
-1. 请确保 AdGuard 保护已启用。 在 Windows 电脑上转到设置中的「**网络**」，勾选「**将 AdGuard 用作 HTTP 代理**」。 On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
+1. 请确保 AdGuard 保护已启用。 在 Windows 电脑上转到设置中的「**网络**」，勾选「**将 AdGuard 用作 HTTP 代理**」。 Mac 用户，请前往「**设置**」→「**首选项**」→「**网络**」并启用「**HTTP 代理**」。
 
 1. 在装有 AdGuard 的计算机上，通过浏览器访问此链接：[http://local.adguard.org/cert](http://local.adguard.org/cert)。
 
@@ -109,13 +109,13 @@ sidebar_position: 2
 
 1. 打开连接的 Wi-Fi 网络的高级设置。
 
-1. 将「**代理类型**」更改为「**手动**」。 For **Proxy hostname**, enter the noted IP address of your computer you noted in step 1. 对于「**代理端口**」，输入在桌面 AdGuard 应用程序的网络设置中选择的端口。
+1. 将「**代理类型**」更改为「**手动**」。 在「**代理主机名**」请输入在第一步记下的 IP 地址。 对于「**代理端口**」，输入在桌面 AdGuard 应用程序的网络设置中选择的端口。
 
 ### iOS 系统 {#ios}
 
-1. Note the IP address of your computer with installed AdGuard.
+1. 记下装有 AdGuard 的计算机的 IP 地址。
 
-1. 请确保 AdGuard 保护已启用。 在 Windows 电脑上转到设置中的「**网络**」，勾选「**将 AdGuard 用作 HTTP 代理**」。 On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
+1. 请确保 AdGuard 保护已启用。 在 Windows 电脑上转到设置中的「**网络**」，勾选「**将 AdGuard 用作 HTTP 代理**」。 Mac 用户，请前往「**设置**」→「**首选项**」→「**网络**」并启用「**HTTP 代理**」。
 
 1. 在装有 AdGuard 的计算机上，通过浏览器访问此链接：[http://local.adguard.org/cert](http://local.adguard.org/cert)。
 

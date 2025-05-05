@@ -1,60 +1,60 @@
 ---
-title: Low-level settings guide
+title: Guide sur les paramètres de bas niveau
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
+Cet article concerne AdGuard pour Android, un bloqueur de publicité multifonctionnel qui protège votre appareil au niveau système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to reach Low-level settings
+## Comment accéder aux paramètres de bas niveau
 
 :::caution
 
-Changing the low-level settings can cause problems with AdGuard’s performance, interrupt your Internet connection, or compromise your security and privacy. Use the low-level features only if you are an experienced user and know what you are doing, or if our support team has asked you to do so.
+La modification des paramètres de bas niveau peut entraîner des problèmes de performance d'AdGuard, interrompre votre connexion Internet ou compromettre votre sécurité et votre confidentialité. N'utilisez les fonctions de bas niveau que si vous êtes un utilisateur expérimenté et si vous savez ce que vous faites, soit si notre équipe d'assistance vous a demandé de le faire.
 
 :::
 
-To access _Low-level settings_, open the AdGuard app and tap the gear icon in the lower-right corner of the screen. Then select _General → Advanced → Low-level settings_.
+Pour accéder aux _Paramètres de bas niveau_, ouvrez l'application AdGuard et appuyez sur l'icône d'engrenage dans le coin inférieur droit de l'écran. Then select _General → Advanced → Low-level settings_.
 
-## Low-level settings
+## Paramètres de bas niveau
 
-For AdGuard v4.x for Android we’ve completely redesigned the low-level settings. We have reworked the list of settings and organized them into thematic groups with improved descriptions. We also added input validation and other safety valves.
+Pour AdGuard v4.x pour Android, nous avons complètement repensé les paramètres de bas niveau. Nous avons retravaillé la liste des paramètres et les avons organisés en groupes thématiques avec des descriptions améliorées. Nous avons également ajouté une validation de l'input et d'autres dispositifs de sécurité.
 
-### DNS protection
+### Protection DNS
 
-#### Fallback upstreams
+#### Repli en amont
 
-Here you can specify the fallback DNS resolver(s) to use when the configured server is unavailable. Available options:
+Ici, vous pouvez spécifier le ou les résolveurs DNS de traitement de secours à utiliser lorsque le serveur configuré n'est pas disponible. Options disponibles :
 
-- _Automatic DNS_: Select this option if you want to use the system DNS or AdGuard DNS.
+- _DNS automatique_: Sélectionnez cette option si vous souhaitez utiliser le DNS système ou le DNS AdGuard.
 - _None_: Select this option if you do not want to have any fallback.
-- _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. These addresses will be used as upstreams.
+- _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. Ces adresses seront utilisées en amont.
 
-#### Fallback domains
+#### Domaines de secours
 
-Here you can list domains that will be redirected to fallback upstreams, if available. You can enter multiple domains, one per line. You can use limited wildcards.
+Ici, vous pouvez lister les domaines qui seront redirigés vers les serveurs de secours en amont, s'ils sont disponibles. Vous pouvez saisir plusieurs domaines, un par ligne. Vous pouvez utiliser des caractères génériques limités.
 
-#### Detect search domains
+#### Détecter les domaines de recherche
 
-If this setting is enabled, AdGuard will detect DNS search domains and automatically redirect them to fallback upstreams, if available.
+Si ce paramètre est activé, AdGuard détectera les domaines de recherche DNS et les redirigera automatiquement vers les traitements de secours en amont, si disponibles.
 
-#### Bootstrap upstreams
+#### Bootstrap en amont
 
-Bootstrap DNS for encrypted DNS upstreams, such as DoH, DoT, and DoQ servers. Available options:
+Bootstrap DNS pour les DNS chiffrés en amont, tels que les serveurs DoH, DoT et DoQ. Options disponibles :
 
-- _Automatic DNS_: Select this option if you want to use the system DNS or AdGuard DNS. This option is selected by default.
-- _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. These addresses will be used as bootstrap upstreams.
+- _DNS automatique_: Sélectionnez cette option si vous souhaitez utiliser le DNS système ou le DNS AdGuard. Cette option est sélectionnée par défaut.
+- _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. Ces adresses seront utilisées comme adresses d'amorçage en amont.
 
 #### Mode de blocage pour les règles de type adblock
 
-Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for example, `||example.org^`). Available options:
+Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for example, `||example.org^`). Options disponibles :
 
 - _REFUSED_: Respond with REFUSED
 - _NXDOMAIN_: Respond with NXDOMAIN
-- _Custom IP address_: Select this option to respond with a custom IP address. You will have to enter an IPv4 address for blocked A requests and an IPv6 address for blocked AAAA requests.
+- _Custom IP address_: Select this option to respond with a custom IP address. Vous devrez entrer une adresse IPv4 pour les requêtes A bloquées et une adresse IPv6 pour les requêtes AAAA bloquées.
 
 #### Mode de blocage pour les règles d’hôtes
 
@@ -63,26 +63,26 @@ Here you can specify the response type for domains blocked by DNS rules based on
 
 - _REFUSED_: Respond with REFUSED
 - _NXDOMAIN_: Respond with NXDOMAIN
-- _Custom IP address_: Select this option to respond with a custom IP address. You will have to enter an IPv4 address for blocked A requests and an IPv6 address for blocked AAAA requests.
+- _Custom IP address_: Select this option to respond with a custom IP address. Vous devrez entrer une adresse IPv4 pour les requêtes A bloquées et une adresse IPv6 pour les requêtes AAAA bloquées.
 
-#### DNS request timeout
+#### Délai d'attente pour les requêtes DNS
 
-Here you can specify the timeout, in milliseconds, that AdGuard will wait for each DNS request before redirecting it to a fallback DNS resolver. If you don’t fill in this field or enter an invalid value, the value of 5000 ms will be used.
-If you have multiple upstreams, the fallback DNS will only be used after the timeouts of each upstream have expired.
+Ici, vous pouvez spécifier le délai dépassé, en millisecondes, qu'AdGuard attendra pour chaque requête DNS avant de la rediriger vers un résolveur DNS de traitement de secours. Si vous ne remplissez pas ce champ ou si vous saisissez une valeur invalide, la valeur de 5000 ms sera utilisée.
+Si vous avez plusieurs amonts, le DNS de secours ne sera utilisé qu'après l'expiration des délais d'expiration de chaque flux en amont.
 
 #### Réponse TTL bloquée
 
-Here you can set the time to live (TTL) of the record for blocked domains. The default value is 3600 seconds.
+Ici, vous pouvez définir la durée de vie (TTL) de l'enregistrement pour les domaines bloqués. La valeur par défaut est de 3600 secondes.
 
-#### DNS cache size
+#### Taille du cache DNS
 
-Here you can specify the maximum number of cached responses. The default value is 1000.
+Ici, vous pouvez spécifier le nombre maximum de réponses mises en cache. La valeur par défaut est de 1000.
 
-#### ECH blocking
+#### Blocage ECH
 
-If this setting is enabled, AdGuard will block TLS Encrypted Hello (ECH) in DNS responses.
+Si ce paramètre est activé, AdGuard bloquera TLS Encrypted Hello (ECH) dans les réponses DNS.
 
-#### Try HTTP/3 for DNS-over-HTTPS upstreams
+#### Essayer HTTP/3 pour les amonts DNS-over-HTTPS
 
 If this setting is enabled, AdGuard will use HTTP/3 to speed up DNS query resolution for DNS-over-HTTPS upstreams. Otherwise, AdGuard will revert to its default behavior and use HTTP/2 to send all DNS requests for DNS-over-HTTPS.
 
@@ -241,6 +241,6 @@ If this setting is enabled, AdGuard will display the **Developer tools** icon in
 
 **Developer tools** is a specialized section available in AdGuard for Android v4.3 and later, designed for quick navigation and switching between features. It allows you to quickly enable or disable custom filters, access logs, enable various logs, and more.
 
-#### Detect Samsung Pay
+#### Détection de Samsung Pay
 
-If this setting is enabled, AdGuard protection will be paused when you open the Samsung Pay app. Korean users require this feature as they experience [issues with Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) when AdGuard is enabled.
+Si ce paramètre est activé, la protection AdGuard sera mise en pause lorsque vous ouvrirez l'application Samsung Pay. Les utilisateurs coréens nécessitent cette fonctionnalité car ils rencontrent [des problèmes avec Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) lorsque AdGuard est activé.

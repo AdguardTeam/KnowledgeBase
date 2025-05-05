@@ -1,6 +1,6 @@
 ---
 title: So verwenden Sie Samsung Pay mit AdGuard in Südkorea
-sidebar_position: 17
+sidebar_position: 16
 ---
 
 :::info

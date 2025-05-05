@@ -1,6 +1,6 @@
 ---
 title: How to install AdGuard for Android TV
-sidebar_position: 16
+sidebar_position: 15
 ---
 
 :::info
@@ -46,7 +46,7 @@ Done, AdGuard for Android TV is installed.
     - On your Android TV, navigate to Settings.
     - Select _System_ → _About_.
     - Find _Network_ and select _Wi-Fi_ or _Ethernet_, depending on your connection type.
-    - Go to the network section and find _IP address_. Note down this IP address.
+    - Go to the network section and find _IP address_. Annota questo indirizzo IP.
 
 5. Connect to Android TV via ADB:
 
