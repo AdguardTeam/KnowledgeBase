@@ -3376,6 +3376,25 @@ The same can be achieved by adding this rule:
 
 We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
+:::note CSS injection
+
+In AdGuard products which use **CoreLibs, version 1.18 and later**, element hiding rules may also be used to inject CSS, for example:
+
+```
+example.org##body { background-color: green; }
+```
+
+this usage is discouraged in favor of using [CSS rules](#cosmetic-css-rules) (described below), and is only supported for compatibility with filter lists written for other ad blocking software.
+
+Element hiding exceptions (`#@#`) can match such a rule both by its selector part and by the full rule text. For example, the above rule will be disabled by any of the following exception rules:
+
+```
+example.org#@#body
+example.org#@#body { background-color: green; }
+```
+
+:::
+
 ### CSS rules {#cosmetic-css-rules}
 
 Sometimes, simple hiding of an element is not enough to deal with advertising. For example, blocking an advertising element can just break the page layout. In this case AdGuard can use rules that are much more flexible than hiding rules. With these rules you can basically add any CSS styles to the page.
