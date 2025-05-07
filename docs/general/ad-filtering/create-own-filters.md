@@ -3380,7 +3380,7 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 In AdGuard products which use **CoreLibs, version 1.18 and later**, element hiding rules may also be used to inject CSS, for example:
 
-```
+```adblock
 example.org##body { background-color: green; }
 ```
 
@@ -3388,7 +3388,7 @@ this usage is discouraged in favor of using [CSS rules](#cosmetic-css-rules) (de
 
 Element hiding exceptions (`#@#`) can match such a rule both by its selector part and by the full rule text. For example, the above rule will be disabled by any of the following exception rules:
 
-```
+```adblock
 example.org#@#body
 example.org#@#body { background-color: green; }
 ```
