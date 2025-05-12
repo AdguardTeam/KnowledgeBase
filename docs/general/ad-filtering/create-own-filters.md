@@ -758,7 +758,7 @@ You can use a shorter name (alias) instead of using the full modifier name: `$st
 
 Rules with the `$strict-first-party` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.16 or later.
 
-Requests without referrer are matched by rules with `$strict-first-party` in Adguard for Windows, AdGuard for Mac and AdGuard for Android with [CoreLibs] v1.18 or later.
+Requests without a referrer are matched by rules with `$strict-first-party` in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.18 or later.
 
 :::
 
