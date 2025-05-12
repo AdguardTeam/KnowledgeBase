@@ -805,7 +805,7 @@ If there is a `$~third-party` modifier, the rule is only applied to requests tha
 
 **`$~third-party`:**
 
-- `||domain.com$~third-party` — this rule is applied exclusively to `domain.com` and its subdomains. Example of a non third-party request: `http://sub.domain.com/icon.ico`.
+- `||domain.com$~third-party` — this rule applies only to `domain.com` and its subdomains. Example of a non third-party request: `http://sub.domain.com/icon.ico`.
 
 Requests without referrer are also treated as non-third-party requests and the rules with `$~third-party` modifier will be applied to such requests.
 
