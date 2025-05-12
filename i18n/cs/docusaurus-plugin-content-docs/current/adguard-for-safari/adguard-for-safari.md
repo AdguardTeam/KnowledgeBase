@@ -9,7 +9,7 @@ Tento článek je o AdGuardu pro Safari, který chrání pouze váš prohlíže�
 
 :::
 
-## Funkce
+## Features
 
 Hlavní funkce a nastavení dostupné v aplikaci AdGuard pro Safari
 

@@ -23,11 +23,11 @@ sidebar_position: 1
 
 Внутри вы найдёте график, показывающий реальное потребление ресурса батареи AdGuard запоследние 24 часа, с возможностью получить более детальную информацию о почасовом расходе, нажав на график. Кроме того, там также есть числовая разбивка релевантных данных и краткое техническое пояснение.
 
-There are several other parameters below the chart: *CPU foreground*, *CPU background*, *Mobile data usage*, and *Wi-Fi data usage*.
+Под графиком есть ещё несколько параметров: *CPU в активном режиме*, *CPU в фоновом режиме*, *Использование мобильных данных* и *Использование данных Wi-Fi*.
 
-*CPU foreground* and *CPU background* show how much CPU time is used by AdGuard when the app is active or running in the background.
+*CPU в активном режиме* и *CPU в фоновом режиме* показывают, сколько времени CPU использует AdGuard, когда приложение активно или работает в фоновом режиме.
 
-And with *Mobile data usage* and *Wi-Fi data usage*, you can see how much traffic AdGuard consumed when your phone was using mobile Internet or connected to Wi-Fi.
+А в разделах *Использование мобильных данных* и *Использование данных Wi-Fi* вы можете посмотреть, сколько трафика потреблял AdGuard, когда ваш телефон использовал мобильный интернет или подключался к Wi-Fi.
 
 ### Сколько заряда батареи на самом деле потребляет AdGuard?
 
