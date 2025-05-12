@@ -17,11 +17,11 @@ Beta 版和 Nightly 版测试对于改进 AdGuard 服务都很重要。 然而�
 
 用户还需要一台能够安装应用程序，以及设置 [Beta 测试网页的链接](https://adguard.com/beta.html)的设备。 在网页上您可以找到有关如何加入我们的程序以及测试 AdGuard Windows 版、Android 版和 iOS 版的更多信息。
 
-如果您想跳过描述部分，直接进入行动阶段，可以[在这里](https://surveys.adguard.com/beta_testing_program/form.html)申请。 Your application will be reviewed within 1–3 working days, and you'll get a reply via email.
+如果您想跳过描述部分，直接进入行动阶段，可以[在这里](https://surveys.adguard.com/beta_testing_program/form.html)申请。 我们将在 1-3 个工作日内审核申请，通过电子邮件跟您联系。
 
 :::note
 
-To get the AdGuard for iOS beta or nightly build, first you have to install [TestFlight](https://apps.apple.com/app/testflight/id899247664) on your iOS device.
+要获取 iOS 版 AdGuard 的 Beta 版或 Nightly 构建，请首先在 iOS 设备上安装 [TestFlight](https://apps.apple.com/app/testflight/id899247664)。
 
 :::
 
@@ -37,10 +37,10 @@ To get the AdGuard for iOS beta or nightly build, first you have to install [Tes
 
 ## 如何在 iOS 版的应用程序上激活 Beta/Nightly 测试版密钥 {#ios}
 
-If you have already received a beta or nightly key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). 在相应的部分，请输入您的 AdGuard 账号的登录信息。 输入信息后，高级版本的功能将自动可用。
+如果您已经收到 Beta 或 Nightly 测试版的密钥，并且有密钥列出在 `adguard.com` 账号中，请开启应用程序并打开许可证部分（「获取高级版」）。 在相应的部分，请输入您的 AdGuard 账号的登录信息。 输入信息后，高级版本的功能将自动可用。
 
 ### 还有什么？
 
 基本上，我们没有什么要补充的。 测试者不要勉强自己去找错误。 像往常一样，您可以继续享受 AdGuard 使用体验。 然而，如果您遇到错误，请向我们发送报告。 当然，我们非常感激您付出的额外努力。
 
-Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta/nightly (in case you missed them) and other important news. 您可以随时取消订阅。
+有时，您会收到我们的新闻简报，让您了解 Beta/Nightly 测试版的最新改进（以防您错过）和其他重要消息。 您可以随时取消订阅。

@@ -73,7 +73,7 @@ Altrimenti, AdGuard filtrerà tutto il traffico al volo, senza reindirizzamento.
 
 ### Apri la finestra principale all'avvio del sistema
 
-Abilita quest'opzione per far aprire la finestra principale di AdGuard all'avvio del sistema. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in *Settings → General Settings*.
+Abilita quest'opzione per far aprire la finestra principale di AdGuard all'avvio del sistema. Questa impostazione, che non influisce sull'avvio o meno del servizio di filtraggio effettivo, si trova in *Impostazioni → Impostazioni generali*.
 
 ### Abilita il filtraggio all'avvio del sistema
 

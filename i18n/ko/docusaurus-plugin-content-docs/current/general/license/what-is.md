@@ -25,7 +25,7 @@ sidebar_position: 1
 - **판매업체 라이선스** 및 **선물받은 라이선스**는 기간 제한이 있을 수도 없을 수도 있습니다. 만료일이 있는 라이선스는 수동으로만 갱신할 수 있습니다.
     - 개인용 — 최대 3개의 기기
     - 가족용 — 최대 9개의 기기
-- **iOS용 AdGuard Pro 라이선스**는 App Store를 통해 구매 및 관리되며 동일한 Apple ID를 사용하는 iOS 및 iPadOS 기기에서만 사용할 수 있습니다.
+- **AdGuard for iOS** and **AdGuard Pro** licenses are purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
 
 :::tip
 

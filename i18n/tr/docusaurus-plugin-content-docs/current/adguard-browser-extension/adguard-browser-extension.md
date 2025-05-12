@@ -9,7 +9,7 @@ Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakk
 
 :::
 
-## Özellikler
+## Features
 
 Main features and settings available in the AdGuard Browser Extension
 

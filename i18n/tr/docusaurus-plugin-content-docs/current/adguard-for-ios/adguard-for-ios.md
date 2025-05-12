@@ -3,7 +3,7 @@ title: iOS için AdGuard
 sidebar_position: 1
 ---
 
-## Özellikler
+## Features
 
 Main features and settings available in AdGuard for iOS
 

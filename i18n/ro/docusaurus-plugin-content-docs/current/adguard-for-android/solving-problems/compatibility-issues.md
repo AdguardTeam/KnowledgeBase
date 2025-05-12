@@ -1,6 +1,6 @@
 ---
 title: Probleme cunoscute de compatibilitate cu aplicațiile Android
-sidebar_position: 15
+sidebar_position: 14
 ---
 
 :::info

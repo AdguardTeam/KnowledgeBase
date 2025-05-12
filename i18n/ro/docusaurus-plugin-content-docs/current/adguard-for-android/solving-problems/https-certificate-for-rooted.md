@@ -1,6 +1,6 @@
 ---
 title: Mutarea certificatului CA în stocarea sistemului pe dispozitivele cu acces root
-sidebar_position: 14
+sidebar_position: 13
 ---
 
 :::info
