@@ -817,7 +817,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 
 :::info Compatibility
 
-Requests without referrer are matched by rules with `$~third-party` in Adguard for Windows, AdGuard for Mac and AdGuard for Android with [CoreLibs] v1.18 or later.
+Requests without a referrer are matched by rules with `$~third-party` in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.18 or later.
 
 :::
 
