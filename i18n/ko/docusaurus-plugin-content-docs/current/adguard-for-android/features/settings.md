@@ -39,7 +39,7 @@ sidebar_position: 4
 
 이 섹션에서는 HTTPS 필터링 설정, 필터, 유저스크립트를 관리하고 프록시 서버를 설정할 수 있습니다.
 
-![필터링 \*mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
+![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.jpg)
 
 ### 필터
 
@@ -57,102 +57,110 @@ AdGuard는 필터의 규칙을 적용하여 광고, 추적기 및 성가신 광�
 
 [필터에 대해 자세히 알아보기](https://adguard.com/en/blog/what-are-filters.html)
 
-### 유저스크립트
+### 확장 프로그램
 
-유저스크립트는 하나 또는 그 이상의 웹사이트의 기능을 확장하기 위해 JavaScript로 쓰여진 미니 프로그램입니다. 유저스크립트를 설치하려면 특별한 유저스크립트 관리자가 필요합니다. AdGuard에는 이러한 기능이 있으며 URL 또는 파일에서 유저스크립트를 추가할 수 있습니다.
+Extensions allow you to add userscripts and userstyles.
 
-![유저스크립트 \*mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
+![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.jpg)
+
+Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
+
+Userstyles are like userscripts that allow you to change how web pages look in the browser without modifying their content. They work by adding CSS styles to the website’s existing styles. For example, if you want a dark theme on a website that doesn’t offer one, you can use a userstyle to do it.
+
+To add a userstyle, go to _Settings_ → _Filtering_ → _Extensions_→ _Add extension_ → _Import from file or URL_. You can find ready-made user styles [online](https://userstyles.world/).
+
+To create your own style, tap _Add extension_ → _Create userstyle_.
 
 #### AdGuard Extra
 
-AdGuard Extra는 복잡한 광고와 웹사이트에 광고를 다시 삽입하는 메커니즘을 차단하는 유저스크립트입니다.
+AdGuard Extra is a custom userscript that blocks complex ads and mechanisms that reinject ads to websites.
 
-#### AMP 비활성화
+#### Disable AMP
 
-AMP 비활성화는 [가속화된 모바일 페이지](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages)를 비활성화하는 유저스크립트입니다.
+Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) on the Google search results page.
 
 ### 네트워크
 
 #### HTTPS 필터링
 
-대부분의 웹사이트와 앱에서 광고와 추적기를 차단하려면 AdGuard가 HTTPS 트래픽을 필터링해야 합니다. [HTTPS 필터링에 대해 자세히 알아보기](/general/https-filtering/what-is-https-filtering)
+To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
 
-##### 보안 인증서
+##### Security certificates
 
-암호화된 트래픽을 관리하기 위해 AdGuard는 기기에 CA 인증서를 설치합니다. 기기에 CA 인증서를 설치하는 것은 안전합니다. 트래픽은 로컬로 필터링되고 AdGuard는 연결의 보안을 확인합니다.
+To manage encrypted traffic, AdGuard installs its CA certificate on your device. It's safe: the traffic is filtered locally and AdGuard verifies the security of the connection.
 
-Android의 이전 버전에서는 인증서가 자동으로 설치됩니다. Android 11 이상에서는 수동으로 설치해야 합니다. [설치 지침](/adguard-for-android/solving-problems/manual-certificate/)
+On older versions of Android, the certificate is installed automatically. On Android 11 and later, you need to install it manually. [Installation instructions](/adguard-for-android/solving-problems/manual-certificate/)
 
-사용자 저장소에 있는 CA 인증서는 브라우저와 일부 앱에서 HTTPS 트래픽을 필터링하는 데 충분합니다. 그러나 시스템 저장소의 인증서만 신뢰하는 앱도 있습니다. HTTPS 트래픽을 필터링하려면 시스템 저장소에 AdGuard의 CA 인증서를 설치해야 합니다. [지침](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
+The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
-##### HTTPS로 필터링된 앱
+##### HTTPS-filtered apps
 
-이 섹션에서는 AdGuard가 HTTPS 트래픽을 필터링하는 앱 목록을 확인할 수 있습니다. 이 설정은 사용자 저장소와 시스템 저장소에 모두 CA 인증서가 있는 경우에만 모든 앱에 적용할 수 있습니다.
+This section contains the list of apps for which AdGuard filters HTTPS traffic. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
 
-##### HTTPS로 필터링된 웹사이트
+##### HTTPS-filtered websites
 
-이 설정을 사용하면 AdGuard가 HTTPS 트래픽을 필터링해야 하는 웹사이트를 관리할 수 있습니다.
+This setting allows you to manage websites for which AdGuard should filter HTTPS traffic.
 
-HTTPS 필터링을 통해 AdGuard는 요청 및 응답의 콘텐츠를 필터링할 수 있지만, 이 데이터를 수집하거나 저장하지 않습니다. 그러나 보안을 강화하기 위해 [민감한 정보가 포함될 가능성이 있는 웹사이트는 HTTPS 필터링에서 제외합니다](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
+HTTPS filtering allows AdGuard to filter the content of requests and responses, but we never collect or store this data. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
 
-다음 모드 중 하나를 선택하여 원하는 사이트를 예외 목록에 추가할 수도 있습니다.
+You can also add websites that you consider necessary to exclusions by selecting one of the modes:
 
-- 특정 웹사이트를 HTTPS 필터링에서 제외
-- 예외 목록에 추가된 웹사이트에서만 HTTPS 트래픽 필터링
+- Exclude specific websites from HTTPS filtering
+- Filter HTTPS traffic only on the websites added to exclusions
 
-또한 기본적으로 금융 웹사이트와 같이 EV(Extended Validation) 인증서를 사용하는 웹사이트는 필터링하지 않습니다. 필요한 경우 **EV 인증서가 있는 웹사이트를 필터링** 옵션을 활성화할 수 있습니다.
+By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. 필요한 경우, **EV 인증서가 있는 웹사이트를 필터링** 옵션을 활성화할 수 있습니다.
 
-#### 프록시
+#### Proxy
 
-프록시 서버를 통해 모든 기기의 트래픽을 라우팅하도록 AdGuard를 설정할 수 있습니다. [아웃바운드 프록시 설정 방법](/adguard-for-android/solving-problems/outbound-proxy)
+You can set up AdGuard to route all your device's traffic through your proxy server. [How to set up an outbound proxy](/adguard-for-android/solving-problems/outbound-proxy)
 
-이 섹션에서는 VPN 제공업체가 허용하는 경우, 타사 VPN을 AdGuard와 함께 작동하도록 설정할 수 있습니다.
+In this section, you can also set up a third-party VPN to work with AdGuard, if your VPN provider allows it.
 
-**프록시를 통해 작동하는 앱** 아래에서 지정한 프록시를 통해 트래픽을 라우팅할 앱을 선택할 수 있습니다. **AdGuard VPN과의 통합**을 활성화한 경우, 이 설정을 사용하면 AdGuard VPN 터널을 통해 라우팅할 앱을 지정하여 AdGuard VPN의 앱 예외 목록 역할을 합니다.
+Under _Apps operating through proxy_, you can select apps that will route their traffic through your specified proxy. If you have _Integration with AdGuard VPN_ enabled, this setting plays the role of AdGuard VPN's app exclusions: it allows you to specify apps to be routed through the AdGuard VPN tunnel.
 
-#### 라우팅 모드
+#### Routing mode
 
-이 섹션에서는 트래픽 필터링 방법을 선택할 수 있습니다.
+This section allows you to select the traffic filtering method.
 
-- **로컬 VPN**은 로컬에서 생성한 VPN을 통해 트래픽을 필터링합니다. 이것은 가장 안정적인 모드입니다. Android 제한으로 인해 루팅되지 않은 기기에서 사용할 수 있는 유일한 시스템 전체 트래픽 필터링 방법이기도 합니다.
+- _Local VPN_ filters traffic through a locally created VPN. This is the most reliable mode. Due to Android restrictions, it is also the only system-wide traffic filtering method available on non-rooted devices.
 
 :::note
 
-**로컬 VPN** 모드에서는 AdGuard를 다른 VPN과 동시에 사용할 수 없습니다. AdGuard와 함께 다른 VPN을 사용하려면 프록시 모드에서 작동하도록 재설정하고 AdGuard에서 아웃바운드 프록시를 설정해야 합니다. AdGuard VPN의 경우, \*\*[통합 모드](/adguard-for-android/features/integration-with-vpn)\*\*의 도움으로 이 작업이 자동으로 수행됩니다.
+The _Local VPN_ mode doesn't allow AdGuard to be used simultaneously with other VPNs. To use another VPN with AdGuard, you need to reconfigure it to work in proxy mode and set up an outbound proxy in AdGuard. For AdGuard VPN, this is done automatically with the help of the [_Integrated mode_](/adguard-for-android/features/integration-with-vpn).
 
 :::
 
-- _자동 프록시_는 VPN을 사용할 필요가 없는 대체 트래픽 라우팅 방법입니다. 한 가지 중요한 장점은 VPN과 병렬로 실행할 수 있다는 것입니다. 이 모드에는 루트 액세스 권한이 필요합니다.
+- _Automatic proxy_ is an alternative traffic routing method that does not require the use of a VPN. One significant advantage is that it can be run in parallel with a VPN. This mode requires root access.
 
-- **수동 프록시**는 특정 포트에 프록시 서버를 설정하는 것입니다(Wi-Fi 설정에서 구성할 수 있음). 이 모드를 사용하려면 Android 10 이상에서 루트 액세스 권한이 필요합니다.
+- _Manual proxy_ involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
 
 ## 라이선스
 
-이 섹션에서는 라이선스에 대한 정보를 찾고 라이선스를 관리할 수 있습니다.
+In this section, you can find information about your license and manage it:
 
-- AdGuard 라이선스를 구매하여 [정식 버전의 기능](/adguard-for-android/features/free-vs-full)을 활성화하세요.
-- AdGuard 계정에 로그인하거나 라이선스 키를 입력하여 라이선스를 활성화하세요.
-- 아직 7일 체험판을 사용하지 않았다면 가입하여 활성화하세요.
-- 점 3개가 있는 메뉴(⋮)에서 라이선스 상태를 새로고침하세요.
-- AdGuard 계정을 열어 라이선스를 관리하세요.
-- 이 라이선스의 기기 제한에 도달하여 다른 라이선스를 적용하려면 라이선스를 초기화하세요.
+- Buy an AdGuard license to activate [the full version's features](/adguard-for-android/features/free-vs-full)
+- Log in to your AdGuard account or enter the license key to activate your license
+- Sign up to activate your 7-day trial period if you haven't used it yet
+- Refresh the license status from the three-dots menu (⋮)
+- Open the AdGuard account to manage your license there
+- Reset your license — for example, if you've reached device limit for this license and want to apply another one
 
-![라이선스 화면 \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![License screen \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
 ## 고객 지원
 
-이 섹션은 Android용 AdGuard에 대한 질문이나 제안 사항이 있는 경우, 도움이 될 것입니다. 지원팀에 문의하기 전에 **[FAQ](https://adguard.com/support/adguard_for_android.html)** 또는 지식창고를 참조하는 것이 좋습니다.
+Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting _[FAQ](https://adguard.com/support/adguard_for_android.html)_ or this knowledge base before contacting support.
 
-![고객 지원 \*mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
+![Support \*mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
-누락된 광고를 발견하면 **잘못된 차단 신고**를 통해 신고해 주세요.
+If you notice a missed ad, please report it via _Report incorrect blocking_.
 
-예기치 않은 앱 동작이 발생하면 **버그 신고**를 선택합니다. 가능하면 문제를 자세히 설명하고 앱 로그를 추가하세요. [문제를 설명하는 방법](/guides/report-bugs/#how-to-describe-a-problem)
+For unexpected app behavior, select _Report a bug_. If possible, describe your problem in detail and add app logs. [How to describe an issue](/guides/report-bugs/#how-to-describe-a-problem)
 
-기능을 제안하려면 **기능 요청**을 사용하세요.
+For your suggestions, use _Request a feature_.
 
 :::note
 
-GitHub는 버그를 보고하고 새로운 기능을 제안하는 또 다른 방법입니다. [지침 및 리포지토리 링크](/guides/report-bugs/#adguard-for-android)
+GitHub is an alternative way to report bugs and suggest new features. [Instructions and repository links](/guides/report-bugs/#adguard-for-android)
 
 :::

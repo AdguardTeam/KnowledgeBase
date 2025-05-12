@@ -9,7 +9,7 @@ sidebar_position: 3
 
 :::
 
-The Annoyance blocking feature can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Annoyance blocking_.
+Чтобы найти функцию, откройте вкладку _Защита_ (второй слева значок в нижней части экрана) и выберите _Блокировка раздражителей_.
 
 В основе этой функции лежит Фильтр раздражителей, который блокирует всплывающие окна, окна онлайн-помощников, уведомления о куки, предложения скачать мобильное приложение и прочие раздражители, которые не являются рекламой, но могут мешать вам в интернете. [Подробнее о фильтрах раздражителей](/general/ad-filtering/adguard-filters/#adguard-filters)
 

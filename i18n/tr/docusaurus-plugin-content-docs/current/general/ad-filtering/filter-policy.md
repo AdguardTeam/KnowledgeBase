@@ -9,7 +9,7 @@ At AdGuard, we’ve long followed certain principles in making our filters, whic
 
 Bu kriterler tüm filtrelerin kurallarına eşit olarak uygulanır.
 
-- Rules for a specific site will only be added if there is sufficient traffic. Traffic is determined by public statistics (if available) or indirect indicators, such as the number of subscribers on social networks. A site’s traffic is considered sufficient if it reaches 100,000 visits per month. We will consider adding a rule for a site that is not as popular, but the final decision rests with filter developers. Sites with low traffic should still be checked for third-party analytics and advertising networks
+- Rules for a specific site will only be added if there is sufficient traffic. Traffic is determined by public statistics (if available) or indirect indicators, such as the number of subscribers on social networks. A site’s traffic is considered sufficient if it reaches 100,000 visits per month. Çok popüler olmayan bir site için kural eklemeyi düşünebiliriz ancak son karar filtre geliştiricilerine aittir. Sites with low traffic should still be checked for third-party analytics and advertising networks
 - The decision about content farms (websites that produce large amounts of content primarily aimed at achieving high visibility in search results and generating advertising revenue) is made by filter developers depending on the quality of the content
 
 Filtreleme kuralları için kalite gereksinimleri:

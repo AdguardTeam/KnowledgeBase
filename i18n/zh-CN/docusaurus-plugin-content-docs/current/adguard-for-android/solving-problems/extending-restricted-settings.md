@@ -1,6 +1,6 @@
 ---
 title: 扩展受限设置造成的问题
-sidebar_position: 18
+sidebar_position: 17
 ---
 
 :::info
@@ -9,7 +9,7 @@ sidebar_position: 18
 
 :::
 
-为了提高用户隐私保护，Google 在 Android 15 中扩展了限制设置。 现在，更多设置需要额外的权限才能启用包，比如「应用程序使用访问权限」。 由于[防火墙](/adguard-for-android/features/protection/firewall)和[检测 Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) 功能需要启用「应用使用访问权限」设置才能正常工作，因此用户在使用它们时可能会遇到问题。 要解决这些问题，请按照以下步骤操作：
+为了提高用户隐私保护，Google 在 Android 15 中扩展了限制设置。 现在，更多设置需要额外的权限才能启用包，比如「应用程序使用访问权限」。 由于[防火墙](/adguard-for-android/features/protection/firewall)和[检测 Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) 功能需要启用「应用使用访问权限」设置才能正常工作，因此用户在使用它们时可能会遇到问题。 To resolve these issues, please follow the steps below.
 
 :::note
 
@@ -17,20 +17,44 @@ AdGuard 有严格的不记录政策，就是说我们不会收集您的数据或
 
 :::
 
-1. 在 Android 设备上，打开「**设置**」。
-2. 点击「**应用**」。
-3. 点击「**AdGuard**」。
+## Basic instructions
 
-![AdGuard 在应用程序中 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted1.png)
+1. On your Android device, open the **Settings app**.
+2. Tap **Apps**.
+3. Tap **AdGuard**
 
-如您无法找到它，请先点击「**查看所有应用**」或「**应用信息**」。
+![AdGuard in Apps \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted1.png)
 
-1. 点击「**更多**」(⁝) →「允许受限设置」。
+If you can't find it, first tap **See all apps** or **App info**.
 
-![允许受限设置 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted2.png)
+1. Tap **More** (⁝) → _Allow restricted settings_.
 
-按照屏幕上的说明操作。
+![Allow restricted settings \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted2.png)
 
-完成！ 「防火墙」和「检测三星支付」功能可正常工作。
+Follow the on-screen instructions.
 
-![对 AdGuard 允许的限制设置 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted3.png)
+All done! Now the _Firewall_ and _Detect Samsung Pay_ features will work correctly.
+
+![Restricted settings allowed for AdGuard \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted3.png)
+
+## For OneUI 7.0 users
+
+For Samsung devices with OneUI 7.0, the app permission settings follow a different path. Follow these steps to configure app usage access:
+
+1. Open _System settings_ → _Apps_
+
+![Apps settings \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/apps.jpg)
+
+1. Tap the menu icon (⋮) in the top-right corner, then select _Special access_
+
+![Special access \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/three-dots.jpg)
+
+1. Select _Usage data access_
+
+![Special access menu \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/special.jpg)
+
+1. Find and enable _AdGuard_
+
+![Usage data access \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/usage_data.jpg)
+
+All done!

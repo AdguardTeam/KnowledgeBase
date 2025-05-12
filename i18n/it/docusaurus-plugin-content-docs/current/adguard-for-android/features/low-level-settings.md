@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -241,6 +241,6 @@ If this setting is enabled, AdGuard will display the **Developer tools** icon in
 
 **Developer tools** is a specialized section available in AdGuard for Android v4.3 and later, designed for quick navigation and switching between features. It allows you to quickly enable or disable custom filters, access logs, enable various logs, and more.
 
-#### Detect Samsung Pay
+#### Rileva Samsung Pay
 
-If this setting is enabled, AdGuard protection will be paused when you open the Samsung Pay app. Korean users require this feature as they experience [issues with Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) when AdGuard is enabled.
+Se quest'impostazione è abilitata, la protezione di AdGuard sarà interrotta quando apri l'app Samsung Pay. Gli utenti coreani richiedono questa funzione poiché riscontrano [problemi con Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) quando AdGuard è abilitato.

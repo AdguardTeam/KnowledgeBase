@@ -9,20 +9,20 @@ sidebar_position: 1
 
 :::
 
-## Features
+## 機能
 
-Main features and settings available in AdGuard for Mac
+AdGuard for Mac の主な機能と設定についての説明です：
 
-[Features](/adguard-for-mac/features/features.md)
+[機能](/adguard-for-mac/features/features.md)
 
 ## インストール/アンインストール
 
-Installation, removal, and system requirements for AdGuard for Mac
+動作環境と、AdGuard for Mac のインストールおよびアンインストール方法の手順について説明しております：
 
-[Installation](/adguard-for-mac/installation.md)
+[インストール方法](/adguard-for-mac/installation.md)
 
 ### 問題解決
 
 既知の問題と考えられる解決策を説明する記事がまとめられています：
 
-[Solving problems](/adguard-for-mac/solving-problems/solving-problems.md)
+[問題解決](/adguard-for-mac/solving-problems/solving-problems.md)
