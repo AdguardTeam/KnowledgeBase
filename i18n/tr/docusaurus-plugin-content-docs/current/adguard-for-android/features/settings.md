@@ -39,7 +39,7 @@ The _Low-level settings_ section is for expert users. [Read more about low-level
 
 This section allows you to manage HTTPS filtering settings, filters, and userscripts, and set up a proxy server.
 
-![Filtering \*mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
+![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.jpg)
 
 ### Filtreler
 
@@ -57,17 +57,25 @@ If you activate too many filters, some websites may work incorrectly.
 
 [Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
 
-### Kullanıcı Betikleri
+### Uzantılar
 
-Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. Bir kullanıcı betiği yüklemek için özel bir kullanıcı betiği yöneticisine ihtiyacınız vardır. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
+Uzantılar, kullanıcı betikleri ve kullanıcı stilleri eklemenize izin verir.
 
-![Userscripts \*mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
+![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.jpg)
+
+Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
+
+Kullanıcı stilleri, web sayfalarının içeriğini değiştirmeden tarayıcıda nasıl göründüğünü değiştirmenize olanak tanıyan kullanıcı betikleri gibidir. Sitenin mevcut stillerine CSS stilleri ekleyerek çalışırlar. Örneğin, koyu bir tema sunmayan bir sitede koyu bir tema istiyorsanız, bunu yapmak için bir kullanıcı stili kullanabilirsiniz.
+
+Kullanıcı stili eklemek için _Ayarlar_ → _Filtreleme_ → _Uzantılar_→ _Uzantı ekle_ → _Dosyadan veya URL'den içe aktar_ öğesine gidin. [İnternette](https://userstyles.world/) hazır kullanıcı stilleri bulabilirsiniz.
+
+Kendi stilinizi oluşturmak için _Uzantı ekle_ → _Kullanıcı stili oluştur_ öğesine dokunun.
 
 #### AdGuard Extra
 
-AdGuard Extra, karmaşık reklamları ve reklamları sitelere yeniden enjekte eden mekanizmaları engelleyen özel bir kullanıcı betiğidir.
+AdGuard Extra is a custom userscript that blocks complex ads and mechanisms that reinject ads to websites.
 
-#### AMP'yi devre dışı bırak
+#### Disable AMP
 
 Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) on the Google search results page.
 
@@ -77,23 +85,23 @@ Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.
 
 To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
 
-##### Güvenlik sertifikaları
+##### Security certificates
 
-Şifrelenmiş trafiği yönetmek için AdGuard, CA sertifikasını cihazınıza yükler. Güvenlidir: trafik yerel olarak filtrelenir ve AdGuard bağlantının güvenliğini doğrular.
+To manage encrypted traffic, AdGuard installs its CA certificate on your device. It's safe: the traffic is filtered locally and AdGuard verifies the security of the connection.
 
-Android'in eski sürümlerinde sertifika otomatik olarak yüklenir. On Android 11 and later, you need to install it manually. [Installation instructions](/adguard-for-android/solving-problems/manual-certificate/)
+On older versions of Android, the certificate is installed automatically. On Android 11 and later, you need to install it manually. [Installation instructions](/adguard-for-android/solving-problems/manual-certificate/)
 
-The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. Ancak, yalnızca sistem depolamasındaki sertifikalara güvenen uygulamalar vardır. Buradaki HTTPS trafiğini filtrelemek için AdGuard'ın CA sertifikasını sistem depolamasına yüklemeniz gerekir. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
+The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
-##### HTTPS filtrelenen uygulamalar
+##### HTTPS-filtered apps
 
-Bu bölüm, AdGuard'ın HTTPS trafiğini filtrelediği uygulamaların listesini içerir. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
+This section contains the list of apps for which AdGuard filters HTTPS traffic. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
 
-##### HTTPS filtrelenmiş siteler
+##### HTTPS-filtered websites
 
-Bu ayar, AdGuard'ın HTTPS trafiğini filtrelemesi gereken siteleri yönetmenizi sağlar.
+This setting allows you to manage websites for which AdGuard should filter HTTPS traffic.
 
-HTTPS filtreleme, AdGuard'ın isteklerin ve yanıtların içeriğini filtrelemesini sağlar, ancak bu verileri asla toplamaz veya saklamayız. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
+HTTPS filtering allows AdGuard to filter the content of requests and responses, but we never collect or store this data. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
 
 You can also add websites that you consider necessary to exclusions by selecting one of the modes:
 
@@ -110,11 +118,11 @@ In this section, you can also set up a third-party VPN to work with AdGuard, if 
 
 Under _Apps operating through proxy_, you can select apps that will route their traffic through your specified proxy. If you have _Integration with AdGuard VPN_ enabled, this setting plays the role of AdGuard VPN's app exclusions: it allows you to specify apps to be routed through the AdGuard VPN tunnel.
 
-#### Yönlendirme modu
+#### Routing mode
 
-Bu bölüm trafik filtreleme yöntemini seçmenizi sağlar.
+This section allows you to select the traffic filtering method.
 
-- _Local VPN_ filters traffic through a locally created VPN. Bu en güvenilir moddur. Due to Android restrictions, it is also the only system-wide traffic filtering method available on non-rooted devices.
+- _Local VPN_ filters traffic through a locally created VPN. This is the most reliable mode. Due to Android restrictions, it is also the only system-wide traffic filtering method available on non-rooted devices.
 
 :::note
 

@@ -1,6 +1,6 @@
 ---
 title: Cum să configurați proxy-ul de ieșire
-sidebar_position: 8
+sidebar_position: 7
 ---
 
 :::info

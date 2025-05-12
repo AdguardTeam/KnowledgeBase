@@ -9,7 +9,7 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 :::
 
-## Funkce
+## Features
 
 Hlavní funkce a nastavení dostupné v aplikaci AdGuard pro Windows
 

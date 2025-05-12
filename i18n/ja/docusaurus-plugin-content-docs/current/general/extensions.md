@@ -39,7 +39,7 @@ This version of Assistant is legacy and there is no point in using it on new sys
 
 :::
 
-#### AMPを無効化
+#### Disable AMP
 
 Android版AdGuardにのみプリインストールされているスクリプト。 Google 検索結果ページで AMP (Accelerated Mobile Pages) を無効にします。 Learn more about this userscript and how to install it on [GitHub](https://github.com/AdguardTeam/DisableAMP).
 

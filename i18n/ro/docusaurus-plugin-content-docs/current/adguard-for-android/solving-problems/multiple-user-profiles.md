@@ -1,6 +1,6 @@
 ---
 title: Probleme cauzate de mai multe profile de utilizator
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 :::info

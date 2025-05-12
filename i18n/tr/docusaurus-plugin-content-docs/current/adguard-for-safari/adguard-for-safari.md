@@ -9,7 +9,7 @@ Bu makale, yalnızca Safari tarayıcınızı koruyan Safari için AdGuard hakkı
 
 :::
 
-## Özellikler
+## Features
 
 Main features and settings available in AdGuard for Safari
 

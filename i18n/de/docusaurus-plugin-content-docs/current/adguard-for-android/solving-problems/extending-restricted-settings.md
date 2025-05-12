@@ -1,6 +1,6 @@
 ---
 title: Probleme durch erweiterte, eingeschränkte Einstellungen
-sidebar_position: 18
+sidebar_position: 17
 ---
 
 :::info
@@ -9,7 +9,7 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-In dem Bemühen, die Privatsphäre der Nutzer zu verbessern, hat Google die Beschränkungseinstellungen in Android 15 erweitert. Für die Aktivierung weiterer Einstellungen, wie z. B. _Zugang zur Nutzung von Apps_, ist nun eine zusätzliche Berechtigung erforderlich. Da für die Funktionen _[Firewall](/adguard-for-android/features/protection/firewall)_ und _[Samsung Pay erkennen](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea)_ die Einstellung _Zugriff auf App-Nutzung_ aktiviert sein muss, damit sie ordnungsgemäß funktionieren, kann es zu Problemen bei der Verwendung kommen. Um diese Probleme zu beheben, führen Sie bitte die folgenden Schritte aus:
+In dem Bemühen, die Privatsphäre der Nutzer zu verbessern, hat Google die Beschränkungseinstellungen in Android 15 erweitert. Für die Aktivierung weiterer Einstellungen, wie z. B. _Zugang zur Nutzung von Apps_, ist nun eine zusätzliche Berechtigung erforderlich. Da für die Funktionen _[Firewall](/adguard-for-android/features/protection/firewall)_ und _[Samsung Pay erkennen](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea)_ die Einstellung _Zugriff auf App-Nutzung_ aktiviert sein muss, damit sie ordnungsgemäß funktionieren, kann es zu Problemen bei der Verwendung kommen. To resolve these issues, please follow the steps below.
 
 :::note
 
@@ -17,20 +17,44 @@ AdGuard verfolgt eine strikte Politik das nicht protokolliert wird, was bedeutet
 
 :::
 
-1. Öffnen Sie auf Ihrem Android-Gerät die App **Einstellungen**.
-2. Tippen Sie auf **Apps**.
-3. Tippen Sie auf **AdGuard**
+## Basic instructions
+
+1. On your Android device, open the **Settings app**.
+2. Tap **Apps**.
+3. Tap **AdGuard**
 
 ![AdGuard in Apps \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted1.png)
 
-Wenn Sie sie dort nicht finden können, tippen Sie zunächst auf **Alle Apps anzeigen** oder **App-Info**.
+If you can't find it, first tap **See all apps** or **App info**.
 
-1. Tippen Sie auf **Mehr** (⁝) → _Eingeschränkte Einstellungen zulassen_.
+1. Tap **More** (⁝) → _Allow restricted settings_.
 
-![Eingeschränkte Einstellungen zulassen \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted2.png)
+![Allow restricted settings \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted2.png)
 
-Folgen Sie den Anweisungen auf dem Bildschirm.
+Follow the on-screen instructions.
 
-Fertig! Jetzt funktionieren die Funktionen _Firewall_ und _Samsung Pay erkennen_ korrekt.
+All done! Now the _Firewall_ and _Detect Samsung Pay_ features will work correctly.
 
-![Eingeschränkte Einstellungen für AdGuard erlaubt \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted3.png)
+![Restricted settings allowed for AdGuard \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted3.png)
+
+## For OneUI 7.0 users
+
+For Samsung devices with OneUI 7.0, the app permission settings follow a different path. Follow these steps to configure app usage access:
+
+1. Open _System settings_ → _Apps_
+
+![Apps settings \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/apps.jpg)
+
+1. Tap the menu icon (⋮) in the top-right corner, then select _Special access_
+
+![Special access \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/three-dots.jpg)
+
+1. Select _Usage data access_
+
+![Special access menu \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/special.jpg)
+
+1. Find and enable _AdGuard_
+
+![Usage data access \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/usage_data.jpg)
+
+All done!

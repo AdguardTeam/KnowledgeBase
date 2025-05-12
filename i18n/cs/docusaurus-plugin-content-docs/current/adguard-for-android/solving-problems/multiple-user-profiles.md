@@ -1,6 +1,6 @@
 ---
 title: Problémy způsobené více uživatelskými profily
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 :::info

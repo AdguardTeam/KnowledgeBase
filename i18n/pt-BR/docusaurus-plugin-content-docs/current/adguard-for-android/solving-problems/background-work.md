@@ -1,6 +1,6 @@
 ---
 title: Como proteger o AdGuard de ser desativado pelo sistema
-sidebar_position: 9
+sidebar_position: 8
 ---
 
 :::info

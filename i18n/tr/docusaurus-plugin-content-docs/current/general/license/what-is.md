@@ -25,7 +25,7 @@ Kullanıcının başka kaynaklardan satın alabileceği veya ücretsiz edinebile
 - **Distributor licenses** and **gifted licenses** can be both time-limited and non-time limited. Sona erme tarihi olan lisanslar yalnızca elle yenilenebilir
     - Kişisel — 3 cihaza kadar
     - Aile — 9 cihaza kadar
-- **The AdGuard Pro for iOS license** is purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
+- **AdGuard for iOS** and **AdGuard Pro** licenses are purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
 
 :::tip
 

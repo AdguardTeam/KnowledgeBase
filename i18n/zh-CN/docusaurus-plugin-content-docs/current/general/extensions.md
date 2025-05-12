@@ -39,7 +39,7 @@ AdGuard 开发人员创建这些用户脚本，我们可以保证它们有效且
 
 :::
 
-#### 禁用 AMP
+#### Disable AMP
 
 这是一个仅在 Android 版 AdGuard 中预安装的脚本。 它禁用 Google 搜索结果页面上的 AMP（加速移动页面）。 了解更多关于此用户脚本及其安装方法，请访问 [GitHub](https://github.com/AdguardTeam/DisableAMP)。
 
