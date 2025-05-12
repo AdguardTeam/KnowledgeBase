@@ -742,7 +742,7 @@ Rules with the `$popup` modifier are not supported by AdGuard Content Blocker.
 
 Works the same as the [`$~third-party`](#third-party-modifier) modifier, but only treats the request as first-party if the referrer and origin have exactly the same hostname.
 
-Requests without referrer are also treated as first-party requests and the rules with `$strict-first-party` modifier will be applied to such requests.
+Requests without a referrer are also treated as first-party requests, and the rules with the `$strict-first-party` modifier are applied to such requests.
 
 **Examples**
 
