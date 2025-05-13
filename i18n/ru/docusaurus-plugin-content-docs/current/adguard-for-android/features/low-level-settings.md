@@ -13,7 +13,7 @@ sidebar_position: 5
 
 :::caution
 
-Changing the low-level settings can cause problems with AdGuard’s performance, interrupt your Internet connection, or compromise your security and privacy. Use the low-level features only if you are an experienced user and know what you are doing, or if our support team has asked you to do so.
+Изменение <em x-id="3">Низкоуровневых настроек</em> может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. Открывайте этот раздел, только если вы знаете, что делаете, или если вас попросила об этом наша команда поддержки.
 
 :::
 
@@ -21,40 +21,40 @@ To access _Low-level settings_, open the AdGuard app and tap the gear icon in th
 
 ## Низкоуровневые настройки
 
-For AdGuard v4.x for Android we’ve completely redesigned the low-level settings. We have reworked the list of settings and organized them into thematic groups with improved descriptions. We also added input validation and other safety valves.
+For AdGuard v4.x for Android we’ve completely redesigned the low-level settings. Мы внесли изменения в список настроек и разбили их на тематические группы с улучшенными описаниями. Мы также добавили проверку ввода и другие защитные механизмы.
 
 ### DNS-защита
 
 #### Резервные серверы
 
-Here you can specify the fallback DNS resolver(s) to use when the configured server is unavailable. Available options:
+Здесь вы можете указать резервный DNS-резолвер, который будет использоваться, если настроенный сервер недоступен. Доступные варианты:
 
 - _Automatic DNS_: Select this option if you want to use the system DNS or AdGuard DNS.
 - _None_: Select this option if you do not want to have any fallback.
-- _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. These addresses will be used as upstreams.
+- _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. Эти адреса будут использованы как upstream-серверы.
 
 #### Резервные домены
 
-Here you can list domains that will be redirected to fallback upstreams, if available. You can enter multiple domains, one per line. You can use limited wildcards.
+Здесь можно перечислить домены, которые будут перенаправлены на резервные upstream-серверы, если они доступны. Вы можете ввести несколько доменов, по одному в строке. Использование подстановочных знаков ограничено.
 
 #### Обнаруживать search-домены
 
-If this setting is enabled, AdGuard will detect DNS search domains and automatically redirect them to fallback upstreams, if available.
+Если эта настройка включена, AdGuard будет определять search-домены и автоматически перенаправлять их на резервные upstream-серверы.
 
 #### Bootstrap DNS-серверы
 
-Bootstrap DNS for encrypted DNS upstreams, such as DoH, DoT, and DoQ servers. Available options:
+Bootstrap DNS для зашифрованных upstream DNS-серверов, таких как DoH, DoT и DoQ. Доступные варианты:
 
-- _Automatic DNS_: Select this option if you want to use the system DNS or AdGuard DNS. This option is selected by default.
-- _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. These addresses will be used as bootstrap upstreams.
+- _Automatic DNS_: Select this option if you want to use the system DNS or AdGuard DNS. Этот параметр выбран по умолчанию.
+- _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. Эти адреса будут использованы как bootstrap upstream-серверы.
 
 #### Режим блокировки для правил adblock
 
-Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for example, `||example.org^`). Available options:
+Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for example, `||example.org^`). Доступные варианты:
 
 - _REFUSED_: Respond with REFUSED
 - _NXDOMAIN_: Respond with NXDOMAIN
-- _Custom IP address_: Select this option to respond with a custom IP address. You will have to enter an IPv4 address for blocked A requests and an IPv6 address for blocked AAAA requests.
+- _Custom IP address_: Select this option to respond with a custom IP address. Потребуется ввести IPv4-адрес для блокированных A-запросов и IPv6-адрес для блокированных AAAA-запросов.
 
 #### Режим блокировки для правил hosts
 
@@ -63,20 +63,20 @@ Here you can specify the response type for domains blocked by DNS rules based on
 
 - _REFUSED_: Respond with REFUSED
 - _NXDOMAIN_: Respond with NXDOMAIN
-- _Custom IP address_: Select this option to respond with a custom IP address. You will have to enter an IPv4 address for blocked A requests and an IPv6 address for blocked AAAA requests.
+- _Custom IP address_: Select this option to respond with a custom IP address. Потребуется ввести IPv4-адрес для блокированных A-запросов и IPv6-адрес для блокированных AAAA-запросов.
 
 #### Время ожидания DNS-запроса
 
-Here you can specify the timeout, in milliseconds, that AdGuard will wait for each DNS request before redirecting it to a fallback DNS resolver. If you don’t fill in this field or enter an invalid value, the value of 5000 ms will be used.
-If you have multiple upstreams, the fallback DNS will only be used after the timeouts of each upstream have expired.
+Здесь вы можете указать время ожидания в миллисекундах для каждого DNS-запроса. AdGuard будет выдерживать указанный промежуток времени, прежде чем перенаправить запрос на резервный DNS-резолвер. Если вы не заполните это поле или введёте некорректное значение, будет использовано значение 5000 мс.
+Если у вас несколько upstream-серверов, резервный DNS будет использоваться только после окончания времени ожидания для каждого upstream-сервера.
 
 #### TTL заблокированного ответа
 
-Here you can set the time to live (TTL) of the record for blocked domains. The default value is 3600 seconds.
+Здесь вы можете установить время жизни (TTL) записи для заблокированных доменов. Значение по умолчанию — 3600 секунд.
 
 #### Размер кеша DNS
 
-Здесь вы можете указать максимальное количество кешируемых ответов. The default value is 1000.
+Здесь вы можете указать максимальное количество кешируемых ответов. Значение по умолчанию — 1000.
 
 #### Блокировка ECH
 

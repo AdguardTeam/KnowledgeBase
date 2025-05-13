@@ -1,6 +1,6 @@
 ---
 title: 如何在 YouTube 应用中拦截广告
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 :::info

@@ -1,11 +1,11 @@
 ---
 title: Problemi causati da profili utente multipli
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -21,37 +21,37 @@ Per risolvere questo problema, devi disinstallare l'applicazione per tutti gli u
 
 ![Uninstall *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 
-## Problems caused by using a Restricted Mode profile
+## Problemi causati dall'uso di un profilo in Modalità Limitata
 
-The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. If you have such a profile, **AdGuard**, like other applications that use VPN, gets restrictions on selective filtering of VPN traffic. As a result, AdGuard cannot launch protection in a **local VPN mode**. Also, one of the reasons for this situation may be using **Dual App/Dual Messenger profile** on your device. Below are described the recommendations that you can apply when this problem occurs.
+I possessori di telefoni, tablet o TV con sistema operativo Android 7 e successive, potrebbero riscontrare il problema causato dall'uso del **profilo con Modalità Limitata**. Se hai un profilo da tal tipo, **AdGuard**, come altre applicazioni che utilizzano la VPN, riceve limitazioni sul filtraggio selettivo del traffico VPN. Di conseguenza, AdGuard non può avviare la protezione in una **modalità VPN locale**. Inoltre, uno dei motivi di tale situazione potrebbe essere l'uso del **profilo Dual App/Dual Messenger** sul tuo dispositivo. Di seguito, sono descritti i consigli applicabili quando si verifica questo problema.
 
-### Solutions
+### Soluzioni
 
-You have three ways to solve the issue:
+Hai tre modi per risolvere questo problema:
 
-### Option 1: Grant permissions to AdGuard using ADB
+### Opzione 1: Concedere le autorizzazioni ad AdGuard utilizzando ADB
 
 :::note
 
-This approach is available starting from **AdGuard v3.5 nightly 6**. If you're using an older version, you can get the latest update [here](https://adguard.com/adguard-android/overview.html).
+Questo approccio è disponibile a partire da **AdGuard v3.5 nightly 6**. Se stai utilizzando una versione precedente, puoi ottenere [qui](https://adguard.com/adguard-android/overview.html) l'ultimo aggiornamento.
 
 :::
 
 1. Attiva la **modalità sviluppatore** e abilita il **Debug USB**:
 
-    - Open the **Settings** app phone;
+    - Apri l'app **Impostazioni** del dispositivo;
     - Vai alla sezione **Sistema** (ultima voce nel menu delle impostazioni). In questa sezione, trova **Informazioni sul telefono**;
     - Tocca la riga **Numero di build** per 7 volte. Dopodiché, riceverai la notifica "**Sei ora uno sviluppatore**" (Se necessario, inserisci un codice di sblocco per il dispositivo);
     - Apri le **Impostazioni di sistema** → **Opzioni per sviluppatori** → Scorri in basso e abilita **Debug USB** → Conferma che il debug sia abilitato nella finestra **Consenti debug USB**, dopo aver letto attentamente l'avviso.
 
     :::note
 
-    If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
+    In caso di qualsiasi difficoltà o domanda aggiuntiva, puoi trovare [qui](https://developer.android.com/studio/debug/dev-options) le istruzioni complete.
 
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Installa e configura](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; Sulla piattaforma Windows, i proprietari di **Samsung** potrebbero dover installare [questa utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
 
@@ -62,23 +62,23 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. If you're u
 
 1. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
 
-### Option 2: Remove *restricted user account*
+### Opzione 2: Rimuovere il *profilo da utente limitato*
 
-About how to manage user accounts from an Android device you can [find here](https://support.google.com/a/answer/6223444?hl=en).
+Puoi [trovare qui](https://support.google.com/a/answer/6223444?hl=en) le informazioni su come gestire i profili utente da un dispositivo Android.
 
 :::note
 
-In some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual Messenger or Dual App features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
+In alcuni casi gli account utente con restrizioni vengono creati implicitamente e non possono essere rimossi. Ad esempio, quando usi le funzioni Dual Messenger o Dual App nei dispositivi **Samsung** o **LG**. Puoi leggere di seguito come risolvere il problema in questi casi.
 
 :::
 
-### Option 3: Use AdGuard in *Local HTTP proxy mode* (requires root)
+### Opzione 3: Utilizzare AdGuard in *Modalità proxy HTTP Locale* (richiede root)
 
-To enable this mode, open **AdGuard Settings** → **Network** → **Filtering method** → **Local HTTP proxy**
+Per attivare questa modalità, apri le **Impostazioni AdGuard** → **Rete** → **Metodo di filtraggio** → **Proxy HTTP locale**
 
-### LG and Samsung devices
+### Dispositivi LG e Samsung
 
-Owners of **LG** or **Samsung** phones may also encounter a similar issue. It can be caused by using **Dual App/Dual Messenger** function (which automatically creates a restricted profile). To solve this issue, you need to disable this feature.
+I possessori di telefoni **LG** o **Samsung** potrebbero inoltre riscontrare un simile problema. Può essere causato dall'utilizzo della funzione **Dual App/Dual Messenger** (che crea automaticamente un profilo limitato). Per risolvere questo problema, devi disabilitare questa funzionalità.
 
 ### Samsung
 

@@ -25,7 +25,7 @@ Existem também licenças que o usuário pode adquirir de outras fontes ou obter
 - **As licenças para distribuidores** e **licenças de presente** podem ou não ser limitadas por tempo. Licenças com data de validade só podem ser renovadas manualmente
     - Individual: até 3 dispositivos
     - Familiar: até 9 dispositivos
-- **A licença do AdGuard Pro para iOS** é adquirida e gerenciada por meio da App Store e só pode ser usada em dispositivos iOS e iPadOS com o mesmo ID Apple
+- **AdGuard for iOS** and **AdGuard Pro** licenses are purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
 
 :::dica
 

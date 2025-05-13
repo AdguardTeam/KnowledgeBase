@@ -25,7 +25,7 @@ There are also licenses that the user can purchase from other sources or get for
 - **Distributor licenses** and **gifted licenses** can be both time-limited and non-time limited. Licenses with an expiration date can only be renewed manually
     - Personal — up to 3 devices
     - Family — up to 9 devices
-- **The AdGuard Pro for iOS license** is purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
+- **AdGuard for iOS** and **AdGuard Pro** licenses are purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
 
 :::tip
 

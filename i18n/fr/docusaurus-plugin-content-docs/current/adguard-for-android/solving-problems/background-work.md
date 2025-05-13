@@ -1,6 +1,6 @@
 ---
 title: Comment empêcher le système de désactiver AdGuard
-sidebar_position: 9
+sidebar_position: 8
 ---
 
 :::info

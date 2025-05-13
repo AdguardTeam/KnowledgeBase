@@ -1,6 +1,6 @@
 ---
 title: Certificate installation on devices with Android 11+
-sidebar_position: 12
+sidebar_position: 11
 ---
 
 :::info

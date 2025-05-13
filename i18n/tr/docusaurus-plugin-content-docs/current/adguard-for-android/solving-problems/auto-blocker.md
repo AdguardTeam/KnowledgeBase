@@ -1,6 +1,6 @@
 ---
 title: Samsung Otomatik Engelleyici özelliği nasıl devre dışı bırakılır
-sidebar_position: 19
+sidebar_position: 18
 ---
 
 :::info

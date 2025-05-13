@@ -73,7 +73,7 @@ AdGuard に購読 URL (例: `abp:subscribe` など) を自動的に傍受させ�
 
 ### システム起動時にメインウィンドウを開く
 
-このオプションを有効にすると、システムの起動後に AdGuard のメインウィンドウが開きます。 This setting, which doesn't affect whether the actual filtering service is launched or not, is located in *Settings → General Settings*.
+このオプションを有効にすると、システムの起動後に AdGuard のメインウィンドウが開きます。 ※実際のフィルタリングサービスが起動するかどうかには影響しないことにご注意ください。その設定は*「設定」→「一般設定*」にあります。
 
 ### システム起動時にフィルタリングを有効にする
 

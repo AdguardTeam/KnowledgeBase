@@ -1,6 +1,6 @@
 ---
 title: Certificate installation in a Secure folder
-sidebar_position: 13
+sidebar_position: 12
 ---
 
 :::info

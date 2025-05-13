@@ -25,7 +25,7 @@ Existují také licence, které si uživatel může zakoupit z jiných zdrojů n
 - **Distributorské licence** a **Darované licence** mohou být časově omezené i časově neomezené. Licence s datem vypršení platnosti lze obnovit pouze ručně
     - Osobní — až pro 3 zařízení
     - Rodinná — až pro 9 zařízení
-- **Licence AdGuard Pro pro iOS** je zakoupena a spravována prostřednictvím App Store a lze ji používat pouze na zařízeních se systémem iOS a iPadOS se stejným Apple ID
+- **Licence AdGuard Pro pro iOS** a **AdGuard Pro** jsou zakoupeny a spravovány prostřednictvím App Store a lze je používat pouze na zařízeních se systémem iOS a iPadOS se stejným Apple ID
 
 :::tip
 
