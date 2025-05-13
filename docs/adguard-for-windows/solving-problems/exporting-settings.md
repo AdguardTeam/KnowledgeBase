@@ -9,7 +9,9 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 :::
 
-After installing AdGuard v8.0 for Windows, your user settings will be reset. The safest way to keep your settings is to export them before upgrading to version 8. Then, if necessary, you can reinstall version 7 and simply import them back.
+After installing AdGuard v8.0 for Windows, you may find that some changes don’t meet your preferences. If you’re using the nightly build, you might also prefer to return to a stable version.
+
+To ensure your settings are preserved during the whole process, it's recommended to export them before upgrading to v8.0, so, if needed, you can then reinstall version 7 and import back your saved settings.
 
 As an alternative, the following method is also available:
 
@@ -23,4 +25,4 @@ As an alternative, the following method is also available:
    - `agflm_dns.db` and `agflm_standard.db` → `C:\ProgramData\Adguard\FLM`
 7. Launch AdGuard.
 
-All set! Now you can use your custom settings in AdGuard v8.0 for Windows.
+All set!
