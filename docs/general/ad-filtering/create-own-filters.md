@@ -3445,7 +3445,7 @@ example.org##body { background-color: green; }
 abptestpages.org##.testcase-inline-css-ehe {background-color: #c70d2c;}
 ```
 
-This usage is discouraged in favor of using [CSS rules](#cosmetic-css-rules), and is only supported for compatibility with filter lists written for Adblock Plus.
+This usage is discouraged in favor of using [CSS rules](#cosmetic-css-rules) and is only supported for compatibility with filter lists written for Adblock Plus.
 
 Element hiding exceptions (`#@#`) can match such a rule both by its selector part and by the full rule text.
 For example, the rule `example.org##body { background-color: green; }` can be disabled by any of the following exception rules:
