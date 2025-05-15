@@ -3,7 +3,7 @@ title: Einstellungen und Schutzverwaltung
 sidebar_position: 3
 ---
 
-## Available commands
+## Verfügbare Befehle
 
 Um eine Liste aller verfügbaren AdGuard-Befehle zu erhalten, geben Sie ein:
 
@@ -13,7 +13,7 @@ adguard-cli --help-all
 
 ## Schutz aktivieren und deaktivieren
 
-### Enable protection
+### Schutz aktivieren
 
 Um den Schutz zu aktivieren, geben Sie ein:
 
@@ -21,11 +21,11 @@ Um den Schutz zu aktivieren, geben Sie ein:
 adguard-cli start
 ```
 
-This command attempts to configure a redirection to the proxy.
+Dieser Befehl versucht, eine Weiterleitung zum Proxy zu konfigurieren.
 
-![Start protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/start-protection.gif)
+![Schutz starten \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/start-protection.gif)
 
-### Disable protection
+### Schutz deaktivieren
 
 Um den Schutz zu deaktivieren, geben Sie ein:
 
@@ -33,9 +33,9 @@ Um den Schutz zu deaktivieren, geben Sie ein:
 adguard-cli stop
 ```
 
-This command not only stops the proxy but also stops the trafic from redirecting to it.
+Dieser Befehl stoppt nicht nur den Proxy, sondern auch die Weiterleitung des Datenverkehrs zu ihm.
 
-### Check protection status
+### Schutzstatus prüfen
 
 Um den Schutzstatus anzuzeigen, geben Sie ein:
 
@@ -43,9 +43,9 @@ Um den Schutzstatus anzuzeigen, geben Sie ein:
 adguard-cli status
 ```
 
-![Status/Stop protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+![Status/Schutz stoppen \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
 
-## Updates
+## Aktualisierungen
 
 ### Auf Aktualisierungen prüfen
 
@@ -55,7 +55,7 @@ Um auf Aktualisierungen zu prüfen, geben Sie ein:
 adguard-cli check-update
 ```
 
-### Update AdGuard for Linux
+### AdGuard für Linux aktualisieren
 
 Um AdGuard für Linux zu aktualisieren, geben Sie ein:
 
@@ -63,7 +63,7 @@ Um AdGuard für Linux zu aktualisieren, geben Sie ein:
 adguard-cli update
 ```
 
-### Update script output
+### Skriptausgabe aktualisieren
 
 Um die Ausgabe des Aktualisierungsskripts anzuzeigen, geben Sie ein:
 
@@ -77,7 +77,7 @@ Verwenden Sie den Befehl `config`, um AdGuard für Linux zu konfigurieren. Unter
 
 - `show`: Die aktuelle Konfiguration in `proxy.yaml` anzeigen
 
-    ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+    ![Aktuelle Einrichtung \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
 - `set`: Eine Option in `proxy.yaml` konfigurieren
     - `listen_ports.http_proxy`: HTTP-Lauschport
@@ -93,29 +93,29 @@ Verwenden Sie den Befehl `filters`, um AdGuard für Linux zu konfigurieren. Unte
 
     - `--all`: Alle Filter anzeigen
 
-    ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
+    ![Filterliste \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
 - `install`: Einen Filter installieren. Geben Sie die URL des Filters ein, den Sie installieren möchten
 
 - `enable`: Einen Filter aktivieren. Geben Sie den Namen oder die ID des Filters ein
 
-    ![Enable filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+    ![Filter aktivieren \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
 - 'disable': Einen Filter deaktivieren. Geben Sie den Namen oder die ID des Filters ein
 
 - 'update': Filter aktualisieren
 
-## Changing the proxy server listen address in manual proxy mode
+## Lauschadresse des Proxyservers im manuellen Proxymodus ändern
 
-By default, the proxy server listens on `127.0.0.1` — the address of the loopback network interface.
-There are two ways to make the proxy server listen on a different interface:
+Standardmäßig lauscht der Proxyserver auf `127.0.0.1` — die Adresse der Loopback-Netzwerkschnittstelle.
+Es gibt zwei Möglichkeiten, den Proxyserver an einer anderen Schnittstelle lauschen zu lassen:
 
-1. Run `adguard-cli config set listen_address <address>` where `<address>` is the address to listen on.
-2. Edit the config file directly:
-    - To determine the location of the config file, run `adguard-cli config show | grep "Config location"`.
-    - Look for the `listen_address` key and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0` or `::`.
+1. Führen Sie `adguard-cli config set listen_address <address>` aus, wobei `<address>` die Adresse ist, auf die gelauscht werden soll.
+2. Konfigurationsdatei direkt bearbeiten:
+    - Um den Speicherort der Konfigurationsdatei zu ermitteln, führen Sie `adguard-cli config show | grep "Config location"` aus.
+    - Suchen Sie nach dem Schlüssel `listen_address` und setzen Sie dessen Wert entsprechend. Um auf allen verfügbaren Netzwerkschnittstellen zu lauschen, setzen Sie die Listen-Adresse auf `0.0.0.0` oder `::`.
 
-If the listen address is set to anything other than `127.0.0.1`, then proxy client authentication is required. AdGuard CLI will not start unless proxy authentication is configured:
+Wenn die Lauschadresse auf einen anderen Wert als `127.0.0.1` eingestellt ist, ist eine Authentifizierung des Proxy-Clients erforderlich. AdGuard CLI startet nicht, wenn keine Proxy-Authentifizierung konfiguriert ist:
 
-- When running `adguard-cli config set listen_address <address>` where `<address>` is not `127.0.0.1`, AdGuard CLI will prompt for a username and password if proxy authentication is not already configured.
-- When editing the config file directly, look for the `listen_auth`key. Set the `enabled` sub-key to `true`, and `username` and `password` to non-empty values.
+- Wenn Sie `adguard-cli config set listen_address <address>` ausführen, wobei `<address>` nicht `127.0.0.1` ist, wird AdGuard CLI nach einem Benutzernamen und Passwort fragen, wenn die Proxy-Authentifizierung nicht bereits konfiguriert ist.
+- Wenn Sie die Konfigurationsdatei direkt bearbeiten, suchen Sie nach dem Schlüssel `listen_auth`. Setzen Sie den Unterschlüssel `enabled` auf `true` und geben Sie Werte für `username` und `password` ein.

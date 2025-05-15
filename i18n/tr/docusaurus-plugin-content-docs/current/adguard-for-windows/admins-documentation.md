@@ -29,7 +29,7 @@ Otherwise, you can run the MSI on the target machine directly (and silently) wit
 
 If you need to roll out an update, use this command: `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
-:::not
+:::note
 
 Bu komutları yönetici ayrıcalıklarıyla çalıştırmalısınız.
 
@@ -37,7 +37,7 @@ Bu komutları yönetici ayrıcalıklarıyla çalıştırmalısınız.
 
 AdGuard'ı Windows 7 yüklü bir bilgisayara kurmak istiyorsanız, .NET 4 İstemci Profilinin kurulu olduğundan emin olun: https://www.microsoft.com/en-us/download/details.aspx?id=24872
 
-:::not
+:::note
 
 Windows için AdGuard'ı bir MSI dosyasından kurduysanız, AdGuard otomatik olarak güncellenmeyecektir. Elle güncellemelere izin vermek için:
 

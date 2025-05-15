@@ -5,7 +5,7 @@ sidebar_position: 3
 
 Lisansınızı etkinleştirmek için AdGuard ürününüzün *Lisans* bölümüne gidin ve *Giriş yap* alanını veya *Etkinleştir* düğmesini bulun. Giriş yapmak için AdGuard hesabınızın e-posta adresini ve parolasını kullanın. Henüz bir hesabınız yoksa, bir tane oluşturmanız teklif edilecektir.
 
-:::not
+:::note
 
 AdGuard hesabı aracılığıyla bir lisansı etkinleştirmek için en az bir boş alana sahip geçerli bir lisans gereklidir. Lisansınız zaten maksimum sayıda cihazda kullanılıyorsa, [lisansınızı yükseltebilir](../payment-options#upgrade) veya [bir cihazdan diğerine aktarabilirsiniz](../transfer).
 
