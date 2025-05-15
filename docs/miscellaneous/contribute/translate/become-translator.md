@@ -33,7 +33,7 @@ Suggest your version in the text box and save it.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/text-box.png)
 
-If you don’t agree with an existing translation, you can suggest your version. Also, you can upvote and downvote suggestions made by other volunteers by clicking the "plus" and "minus" buttons.
+If you don’t agree with an existing translation, you can suggest your version. You can also upvote and downvote suggestions made by other volunteers by clicking the plus and minus buttons.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/vote.png)
 
