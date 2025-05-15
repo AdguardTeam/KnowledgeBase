@@ -17,7 +17,7 @@ Once you do, go to [our page](https://crowdin.com/profile/adguard/). You will se
 
 :::
 
-Choose a project you want to translate, click *Join* and choose your language.
+Choose a project you’d like to translate, click *Join*, and choose your language.
 
 ![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_kb.png)
 
