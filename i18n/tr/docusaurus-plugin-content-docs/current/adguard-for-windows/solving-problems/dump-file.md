@@ -33,7 +33,7 @@ Kullanıcıların AdGuard'ı kullanırken karşılaşabilecekleri olası sorunla
 
 Döküm dosyasını oluşturduktan sonra lütfen dosya konumuna gidin. Döküm dosyasının oluşturulduktan hemen sonra bulunduğu klasörü açmanız istenecektir. Aksi takdirde, **%tmp%** klasörünün içinde bulunabilecektir. Oluşturulan döküm dosyası (`.DMP`), önceki adımlarda seçtiğiniz işlemin adıyla aynı ada sahiptir. Dosya oldukça büyük olduğundan lütfen desteğe göndermeden önce dosyayı bir arşive sıkıştırın.
 
-:::not
+:::note
 
 AdGuard for Windows has two running processes, `Adguard.exe` and `AdguardSvc.exe`. Therefore, it's necessary to create a separate dump file for each process.
 

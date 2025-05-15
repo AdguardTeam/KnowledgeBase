@@ -9,41 +9,47 @@ Si deseas ayudar a traducir productos, sitios web y Bases de conocimiento de AdG
 
 Una vez lo hayas hecho, entra en [nuestra página](https://crowdin.com/profile/adguard/). Verás proyectos de AdGuard, cada uno con carpetas para diferentes cadenas de productos.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/projects.png)
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_page.png)
 
-Elige tu idioma y verás la lista de carpetas de productos disponibles.
+:::note
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/languages.png)
+*AdGuard Glossary* is only used for storing and managing terms — it doesn’t need to be translated.
 
-Puedes comenzar a traducir literalmente cualquier producto que desees eligiendo la carpeta correspondiente. Tenemos algunas recomendaciones sobre [qué archivos son mejores para comenzar en el proyecto de sitios web de AdGuard](../translation-priority).
+:::
+
+Choose a project you’d like to translate, click *Join*, and choose your language.
+
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_kb.png)
+
+You can start translating literally any product you like by choosing the respective folder. We have some recommendations about [what files are better to start with in AdGuard Websites project](../translation-priority).
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/folders.png)
 
-Filtra frases que aún no están traducidas y comienza tu historial de traducción.
+Filter phrases that are not yet translated and start your translation history.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
-Sugiere tu versión en el cuadro de texto y guárdala.
+Suggest your version in the text box and save it.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/text-box.png)
 
-Si no estás de acuerdo con una traducción existente, puedes sugerir tu versión. Además, puedes votar a favor y en contra las sugerencias hechas por otros voluntarios haciendo clic en los botones "más" y "menos".
+If you don’t agree with an existing translation, you can suggest your version. You can also upvote and downvote suggestions made by other volunteers by clicking the plus and minus buttons.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/vote.png)
 
-Además, existe la oportunidad de abrir las traducciones en un modo de votación si solo deseas calificar las traducciones.
+Besides, there is an opportunity to open translations in a Voting mode if you just want to rate translations.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-Puedes encontrar [consejos útiles sobre la traducción de AdGuard en este artículo](../guidelines). Por favor, échale un vistazo.
+You can find some [helpful tips on translating AdGuard in this article](../guidelines). Please take a look at it.
 
 ### Cómo convertirte en corrector {#proofreaders}
 
-Tenemos revisores (anteriormente conocidos como moderadores) para cada idioma. Y todo traductor activo tiene la opción de convertirse en uno de ellos.
+We have proofreaders (previously known as moderators) for each language. And every active translator has an option to become one.
 
-Entonces, ¿de qué son responsables los correctores?
+So, what are proofreaders responsible for?
 
-**Correctores:**
+**Proofreaders:**
 
 - Aprobar las traducciones de alta calidad y desaprobar las malas;
 
@@ -51,4 +57,4 @@ Entonces, ¿de qué son responsables los correctores?
 
 - Responder a los comentarios relacionados con las traducciones en su idioma.
 
-Cada año, los mejores correctores reciben regalos de AdGuard. Los traductores activos tampoco quedan sin recompensa. Lee más sobre nuestro [Sistema de recompensas](../rewards).
+Every year, the best proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system](../rewards).

@@ -9,41 +9,47 @@ Wenn Sie bei der Übersetzung von AdGuard-Produkten, -Websites und -Wissensdaten
 
 Sobald Sie dies getan haben, gehen Sie zu [unserer Seite](https://crowdin.com/profile/adguard/). Sie werden AdGuard-Projekte sehen, jedes mit Ordnern für verschiedene Produktstrings.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/projects.png)
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_page.png)
 
-Wählen Sie Ihre Sprache und Sie sehen die Liste der verfügbaren Produktordner.
+:::note
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/languages.png)
+*AdGuard Glossary* is only used for storing and managing terms — it doesn’t need to be translated.
 
-Sie können jedes gewünschte Produkt übersetzen, indem Sie den entsprechenden Ordner auswählen. Wir haben einige Empfehlungen darüber, [welche Dateien besser für den Anfang im AdGuard-Websites-Projekt](../translation-priority) geeignet sind.
+:::
+
+Choose a project you’d like to translate, click *Join*, and choose your language.
+
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_kb.png)
+
+You can start translating literally any product you like by choosing the respective folder. We have some recommendations about [what files are better to start with in AdGuard Websites project](../translation-priority).
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/folders.png)
 
-Filtern Sie Sätze, die noch nicht übersetzt sind, und starten Sie Ihren Übersetzungsverlauf.
+Filter phrases that are not yet translated and start your translation history.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
-Schlagen Sie Ihre Version im Textfeld vor und speichern Sie sie.
+Suggest your version in the text box and save it.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/text-box.png)
 
-Wenn Sie mit einer vorhandenen Übersetzung nicht einverstanden sind, können Sie Ihre Version vorschlagen. Außerdem können Sie die Vorschläge anderer Mitwirkender positiv oder negativ bewerten, indem Sie auf die Schaltflächen „Plus“ und „Minus“ klicken.
+If you don’t agree with an existing translation, you can suggest your version. You can also upvote and downvote suggestions made by other volunteers by clicking the plus and minus buttons.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/vote.png)
 
-Es ist auch möglich, Übersetzungen in einem „Voting-Modus“ zu öffnen, wenn Sie nur Übersetzungen bewerten möchten.
+Besides, there is an opportunity to open translations in a Voting mode if you just want to rate translations.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-In diesem Artikel finden Sie [hilfreiche Tipps zur Übersetzung von AdGuard](../guidelines). Bitte lesen Sie diese aufmerksam durch.
+You can find some [helpful tips on translating AdGuard in this article](../guidelines). Please take a look at it.
 
 ### Korrekturleser:in werden {#proofreaders}
 
-Wir haben Korrekturleser:innen (Proofreader) für jede Sprache. Und jeder aktive Mitwirkende hat die Möglichkeit, einer zu werden und zur Qualitätssicherung beizutragen.
+We have proofreaders (previously known as moderators) for each language. And every active translator has an option to become one.
 
-Wofür sind Korrekturleser:innen verantwortlich?
+So, what are proofreaders responsible for?
 
-**Sie:**
+**Proofreaders:**
 
 - genehmigen (approve) qualitativ hochwertige Übersetzungen und lehnen die schlechten ab;
 
@@ -51,4 +57,4 @@ Wofür sind Korrekturleser:innen verantwortlich?
 
 - antworten auf Kommentare zu Übersetzungen in ihrer Sprache.
 
-Jedes Jahr erhalten die besten Korrekturleser:innen Geschenke von AdGuard. Auch aktive Mitwirkende bleiben nicht unbelohnt. Lesen Sie mehr über unser [Belohnungssystem](../rewards).
+Every year, the best proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system](../rewards).

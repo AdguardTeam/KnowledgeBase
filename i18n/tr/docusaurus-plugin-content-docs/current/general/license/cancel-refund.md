@@ -13,7 +13,7 @@ Abonelik, AdGuard hesabınızdan iptal edilebilir. Aboneliğinizi iptal etmek i�
 
  İptal edilen abonelik, sona erme tarihine kadar geçerli olacaktır.
 
-:::not
+:::note
 
 Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
 
