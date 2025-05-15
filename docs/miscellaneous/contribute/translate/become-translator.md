@@ -13,7 +13,7 @@ Once you do, go to [our page](https://crowdin.com/profile/adguard/). You will se
 
 :::note
 
-The *AdGuard Glossary* is  only used for storing and managing terms — it doesn’t need to be translated.
+*AdGuard Glossary* is only used for storing and managing terms — it doesn’t need to be translated.
 
 :::
 
