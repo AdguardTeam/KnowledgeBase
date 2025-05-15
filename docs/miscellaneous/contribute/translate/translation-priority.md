@@ -15,7 +15,7 @@ There are seven AdGuard projects on Crowdin:
 
 The first five are actively translated. *AdGuard Mail Knowledge Base* is not available for translation yet. *AdGuard Glossary* is used solely for storing and managing terminology. If you want to add or edit terms, you can do it directly in the editor workspace.
 
-![Adding terms](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adding_terms.png)
+![Adding terms *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adding_terms.png)
 
 ## Starting with the Applications Project
 
@@ -29,7 +29,7 @@ There are just a couple of things we want to mention:
 
 ## Starting with the Websites Project
 
-The situation is different in the *AdGuard Websites* project. Languages can be added to the site even if a full set of translations is not available. However, this depends on which files have already been translated. That’s why we recommend that you start with the most important files — they are listed below:
+The situation is different in the *AdGuard Websites* project. Languages can be added to the website even if a full set of translations is not available. However, this depends on which files have already been translated. That’s why we recommend that you start with the most important files — they are listed below:
 
 [AdGuard Ad Blocker website](https://crowdin.com/project/adguard-websites/en#/adguard.com)
 
