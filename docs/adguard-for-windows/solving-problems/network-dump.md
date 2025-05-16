@@ -9,7 +9,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 :::
 
-Sometimes, diagnosing network issues requires seeing exactly how your device communicates with the internet. Collecting a network dump allows us to analyze this traffic and find the cause of your problem. In this guide, we will show you how to capture a network dump using Wireshark.
+Sometimes, diagnosing network issues requires seeing exactly how your device communicates with the Internet. Collecting a network dump allows us to analyze this traffic and find the cause of your problem. In this guide, we will show you how to capture a network dump using Wireshark.
 
 ::: note
 
