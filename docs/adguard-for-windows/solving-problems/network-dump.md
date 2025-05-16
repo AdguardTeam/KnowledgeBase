@@ -23,7 +23,7 @@ First, download Wireshark from the [official website](https://www.wireshark.org/
 
 ## 2. Prepare for capture
 
-Before starting, close all unnecessary programs that use the internet. This will help reduce unrelated data in the dump.
+Before starting, close all unnecessary programs that use the Internet. This will help reduce unrelated data in the dump.
 
 ## 3. Capture network traffic
 
