@@ -27,7 +27,7 @@ Before starting, close all unnecessary programs that use the Internet. This will
 
 ## 3. Capture network traffic
 
-Open Wireshark, and you will see a list of network interfaces. Select the one you need — LAN or Ethernet if you use a wired connection, or Wireless if you’re using Wi-Fi.
+Open Wireshark, and you will see a list of network interfaces. Select the one you need: Ethernet if you have a wired connection, or Wireless if you’re using Wi-Fi.
 
 If you’re not sure which interface to choose, pick the one with the most activity in the graph — the higher the graph, the more traffic goes through it.
 
@@ -41,4 +41,4 @@ After reproducing the issue, click the red Stop button at the top to finish the 
 
 ![Capture process *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/capturing_process.png)
 
-To save the data, click Ctrl+S, enter a file name, and choose the .pcapng format. That’s it — your network dump file is ready.
+To save the data, press Ctrl+S, enter a file name, and choose the .pcapng format. That’s it — your network dump file is ready.
