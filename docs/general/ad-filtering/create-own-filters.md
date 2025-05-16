@@ -3437,22 +3437,22 @@ CSS rules may operate differently [depending on the platform](#cosmetic-rules-pr
 
 :::info Adblock Plus compatibility
 
-In AdGuard products that use **CoreLibs version 1.18 or later**, you can also use element hiding rules to inject CSS.
-For example:
+In AdGuard products that use **CoreLibs version 1.18 or later**, you can also use element hiding rules to inject
+a `remove: true` declaration:
 
 ```adblock
-example.org##body { background-color: green; }
-abptestpages.org##.testcase-inline-css-ehe {background-color: #c70d2c;}
+example.org##body { remove: true; }
 ```
 
 This usage is discouraged in favor of using [CSS rules](#cosmetic-css-rules) and is only supported for compatibility with filter lists written for Adblock Plus.
 
-Element hiding exceptions (`#@#`) can match such a rule both by its selector part and by the full rule text.
-For example, the rule `example.org##body { background-color: green; }` can be disabled by any of the following exception rules:
+Element hiding exceptions (`#@#`) are matched by the selector part only, ignoring the declarations block part.
+For example, the above rule can be disabled by any of the following exception rules:
 
 ```adblock
 example.org#@#body
-example.org#@#body { background-color: green; }
+example.org#@#body { remove: true; }
+example.org#@#body{remove:true;}
 ```
 
 :::
