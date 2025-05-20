@@ -1,5 +1,5 @@
 ---
-title: How to revert changes after updating to v8.0
+title: How to switch back to the previous version after updating to v8.0
 sidebar_position: 11
 ---
 
