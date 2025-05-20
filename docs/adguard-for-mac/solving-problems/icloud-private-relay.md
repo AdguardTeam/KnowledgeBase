@@ -30,7 +30,7 @@ As a consequence, AdGuard can't work together with iCloud Private Relay and the 
 
 1. iCloud Private Relay is applied to connections at the library level — before they reach the socket level, where AdGuard operates.
 2. iCloud Private Relay is implemented with HTTP/3 CONNECT proxies.
-3. Since AdGuard does not filter CONNECT HTTP/3 requests yet, it blocks HTTP/3 proxy connections, which results in blocking iCloud Private Relay traffic.
+3. Since AdGuard does not filter CONNECT HTTP/3 requests yet, it attempts to downgrade HTTP/3 proxy connections to HTTP/1.1, which results in blocking iCloud Private Relay traffic.
 4. When you use iCloud Private Relay and switch AdGuard into the "split-tunnel" mode, you can't open websites in Safari.
 5. To work around this issue for Monterey, we apply the "default route" rule. When Private Relay sees that rule, it disables itself automatically.
 So, AdGuard works seamlessly on Monterey, but iCloud Private Relay gets disabled.
