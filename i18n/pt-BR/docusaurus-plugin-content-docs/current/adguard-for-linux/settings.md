@@ -3,7 +3,7 @@ title: Gerenciamento das configurações e da proteção
 sidebar_position: 3
 ---
 
-## Available commands
+## Comandos disponíveis
 
 Para obter uma lista de todos os comandos disponíveis no AdGuard, digite:
 
@@ -13,7 +13,7 @@ adguard-cli --help-all
 
 ## Ativar e desativar a proteção
 
-### Enable protection
+### Ativar proteção
 
 Para ativar a proteção, insira:
 
@@ -21,11 +21,11 @@ Para ativar a proteção, insira:
 adguard-cli start
 ```
 
-This command attempts to configure a redirection to the proxy.
+Este comando tenta configurar um redirecionamento para o proxy.
 
-![Start protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/start-protection.gif)
+![Iniciar proteção \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/start-protection.gif)
 
-### Disable protection
+### Desativar proteção
 
 Para desativar a proteção, digite:
 
@@ -33,9 +33,9 @@ Para desativar a proteção, digite:
 adguard-cli stop
 ```
 
-This command not only stops the proxy but also stops the trafic from redirecting to it.
+Este comando não apenas interrompe o proxy, mas também impede o tráfego de ser redirecionado para ele.
 
-### Check protection status
+### Verificar status da proteção
 
 Para visualizar o status da proteção, digite:
 
@@ -43,9 +43,9 @@ Para visualizar o status da proteção, digite:
 adguard-cli status
 ```
 
-![Status/Stop protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+![Status/Parar proteção \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
 
-## Updates
+## Atualizações
 
 ### Verificar atualizações
 
@@ -55,7 +55,7 @@ Para verificar se há atualizações, digite:
 adguard-cli check-update
 ```
 
-### Update AdGuard for Linux
+### Atualizar o AdGuard para Linux
 
 Para atualizar o AdGuard para Linux, digite:
 
@@ -63,7 +63,7 @@ Para atualizar o AdGuard para Linux, digite:
 adguard-cli update
 ```
 
-### Update script output
+### Atualizar saída do script
 
 Para visualizar o output do script de atualização, digite:
 
@@ -77,7 +77,7 @@ Use o comando `config` para configurar o AdGuard para Linux. Subcomandos:
 
 - `show`: Mostra a configuração atual em `proxy.yaml`
 
-    ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+    ![Configuração atual \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
 - `set`: Configura uma opção em `proxy.yaml`
     - `listen_ports.http_proxy`: Porta de escuta HTTP
@@ -93,29 +93,29 @@ Use o comando `filters` para configurar o AdGuard para Linux. Subcomandos:
 
     - `--all`: Ver todos os filtros
 
-    ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
+    ![Lista de filtros \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
 - `instalar`: Instalar um filtro. Digite a URL da filtragem que você deseja instalar
 
 - `enable`: Ativa um filtro. Digite o nome ou ID do filtro
 
-    ![Enable filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+    ![Ativar filtros \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
 - `disable`: Desabilita um filtro. Digite o nome ou ID do filtro
 
 - `update`: Atualiza os filtros
 
-## Changing the proxy server listen address in manual proxy mode
+## Alterando o endereço de escuta do proxy no modo manual
 
-By default, the proxy server listens on `127.0.0.1` — the address of the loopback network interface.
-There are two ways to make the proxy server listen on a different interface:
+Por padrão, o servidor do proxy escuta em `127.0.0.1` — o endereço da interface de rede de loopback.
+Existem duas maneiras de fazer o proxy ouvir em uma interface diferente:
 
-1. Run `adguard-cli config set listen_address <address>` where `<address>` is the address to listen on.
-2. Edit the config file directly:
-    - To determine the location of the config file, run `adguard-cli config show | grep "Config location"`.
-    - Look for the `listen_address` key and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0` or `::`.
+1. Execute `adguard-cli config set listen_address <endereço>` onde `<endereço>` é o endereço para escutar.
+2. Editar o arquivo de configuração diretamente:
+    - Para determinar a localização do arquivo de configuração, execute `adguard-cli config show | grep "Config location"`.
+    - Procure a chave `listen_address` e defina seu valor adequadamente. Para escutar em todas as interfaces de rede disponíveis, defina o endereço de escuta como `0.0.0.0` ou `::`.
 
-If the listen address is set to anything other than `127.0.0.1`, then proxy client authentication is required. AdGuard CLI will not start unless proxy authentication is configured:
+Se o endereço de escuta estiver definido para qualquer coisa diferente de `127.0.0.1`, então a autenticação do cliente proxy é obrigatória. O AdGuard CLI não será iniciado, a menos que a autenticação do proxy esteja configurada:
 
-- When running `adguard-cli config set listen_address <address>` where `<address>` is not `127.0.0.1`, AdGuard CLI will prompt for a username and password if proxy authentication is not already configured.
-- When editing the config file directly, look for the `listen_auth`key. Set the `enabled` sub-key to `true`, and `username` and `password` to non-empty values.
+- Ao executar `adguard-cli config set listen_address <address>` onde `<address>` não é `127.0.0.1`, o AdGuard CLI solicitará um nome de usuário e uma senha se a autenticação do proxy não estiver configurada.
+- Ao editar o arquivo de configuração diretamente, procure pela chave `listen_auth`. Defina a sub-chave `enabled` como `true`, e `username` e `password` como valores não vazios.

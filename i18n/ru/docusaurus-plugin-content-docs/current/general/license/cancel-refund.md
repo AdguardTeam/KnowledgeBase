@@ -7,7 +7,7 @@ sidebar_position: 5
 
 Подписку можно отменить в личном кабинете AdGuard. Чтобы отменить подписку:
 
- 1. Go to your [AdGuard account](https://adguardaccount.com/).
+ 1. Откройте [личный кабинет AdGuard](https://adguardaccount.com/).
  1. Выберите *Лицензии*.
  1. Нажмите *Отменить подписку* под подпиской, которая вам больше не нужна. ![Отменить](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
 

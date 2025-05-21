@@ -31,7 +31,7 @@ Sorunu çözmek için üç yolunuz var:
 
 ### 1. Seçenek: ADB kullanarak AdGuard'a izinler verme
 
-:::not
+:::note
 
 Bu yaklaşım **AdGuard v3.5 nightly 6** sürümünden itibaren kullanılabilir. Daha eski bir sürüm kullanıyorsanız, en son güncellemeyi [buradan](https://adguard.com/adguard-android/overview.html) edinebilirsiniz.
 
@@ -44,7 +44,7 @@ Bu yaklaşım **AdGuard v3.5 nightly 6** sürümünden itibaren kullanılabilir.
     - **Yapı numarası** satırına 7 kez dokunun. Bundan sonra, artık **Bir geliştirici olduğunuza dair** bir bildirim alırsınız (Gerekirse, cihaz için bir kilit açma kodu girin);
     - **Sistem Ayarları** → **Geliştirici Seçenekleri** öğesini açın → Aşağı kaydırın ve **USB hata ayıklama** öğesini etkinleştirin → Uyarıyı dikkatlice okuduktan sonra **USB hata ayıklamasına izin ver** penceresinde hata ayıklamanın etkinleştirildiğini onaylayın.
 
-    :::not
+    :::note
 
     Herhangi bir zorluk veya ek sorunuz varsa, tam talimatlar [burada](https://developer.android.com/studio/debug/dev-options) bulunabilir.
 
@@ -66,7 +66,7 @@ Bu yaklaşım **AdGuard v3.5 nightly 6** sürümünden itibaren kullanılabilir.
 
 About how to manage user accounts from an Android device you can [find here](https://support.google.com/a/answer/6223444?hl=en).
 
-:::not
+:::note
 
 Bazı durumlarda kısıtlanmış kullanıcı hesapları dolaylı olarak oluşturulur ve kaldırılamaz. For instance, when you use Dual Messenger or Dual App features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
 

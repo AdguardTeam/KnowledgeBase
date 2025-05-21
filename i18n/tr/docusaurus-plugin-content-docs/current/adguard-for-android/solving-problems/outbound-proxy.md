@@ -11,7 +11,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 Below is a list of the most well-known applications that can be configured to work as proxies in AdGuard.
 
-:::not
+:::note
 
 Uygulamanız aşağıda listelenmiyorsa lütfen ayarlardan proxy yapılandırmalarını kontrol edin veya destek ekibiyle iletişime geçin.
 
@@ -117,7 +117,7 @@ Bu makalede, AdGuard ile çalışmak için en popüler proxy'lerden bazıların�
 
 *Here we presume that you have already configured a Shadowsocks server and a client on your device.*
 
-:::not
+:::note
 
 You should remove Shadowsocks app from filtering before setting up the process (**App management** → **Shadowsocks** → **Route traffic through AdGuard**) to avoid infinite loops and drops.
 

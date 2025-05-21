@@ -13,7 +13,7 @@ AdGuard'ın Firefox'ta HTTPS trafiğini başarılı bir şekilde filtrelemesi i�
 
 ### Method 1
 
-:::not
+:::note
 
 Bu yöntem, Android için Firefox'un 90.0 ve üzeri sürümlerinde çalışır.
 
@@ -37,7 +37,7 @@ Firefox'un AdGuard sertifikasına güvenmesini sağlamak için aşağıdakileri 
 
 ### Method 2
 
-:::not
+:::note
 
 Bu yöntem yalnızca **rootlu** cihazlarda çalışır.
 

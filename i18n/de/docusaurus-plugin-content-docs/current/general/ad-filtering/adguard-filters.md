@@ -9,7 +9,7 @@ In diesem Artikel geht es um die Filter, die wir entwickeln und die in AdGuard v
 
 :::
 
-In diesem Artikel geht es um die Filter, die wir für AdGuard und andere Werbeblocker-Software (z. B. uBlock Origin) erstellen. Filters are sets of rules in text format used by AdGuard apps and programs to filter out advertising and privacy-threatening content such as banners, popups, or trackers. Filter enthalten Listen von Regeln, die auf ihrem Zweck basieren. Sprachspezifische Filter enthalten Regeln für entsprechende Sprachsegmente des Internets (z. B. Deutscher Filter). Aufgabenbasierte Filter gruppieren Regeln, die eine bestimmte Aufgabe erfüllen, wie z. B. Social Media-Filter oder Tracking-Schutzfilter. Das Aktivieren oder Deaktivieren eines Filters erleichtert das gleichzeitige Arbeiten mit der gesamten Liste der Regeln.
+In diesem Artikel geht es um die Filter, die wir für AdGuard und andere Werbeblocker-Software (z. B. uBlock Origin) erstellen. Filter sind Regelsätze im Textformat, die von AdGuard-Apps und -Programmen verwendet werden, um Werbung und datenschutzgefährdende Inhalte wie Banner, Pop-ups oder Tracker herauszufiltern. Filter enthalten Listen von Regeln, die auf ihrem Zweck basieren. Sprachspezifische Filter enthalten Regeln für entsprechende Sprachsegmente des Internets (z. B. Deutscher Filter). Aufgabenbasierte Filter gruppieren Regeln, die eine bestimmte Aufgabe erfüllen, wie z. B. Social Media-Filter oder Tracking-Schutzfilter. Das Aktivieren oder Deaktivieren eines Filters erleichtert das gleichzeitige Arbeiten mit der gesamten Liste der Regeln.
 
 ## AdGuard-Filter
 
@@ -20,7 +20,7 @@ In diesem Artikel geht es um die Filter, die wir für AdGuard und andere Werbebl
 - **Belästigungsfilter** sperrt störende Elemente auf Webseiten. [Regeln anzeigen](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt). Enthält die folgenden AdGuard-Filter (sie können alle separat vom Belästigungsfilter aktiviert werden):
 
     - **Cookie-Hinweise-Filter** sperrt Cookie-Hinweise auf Webseiten. [Regeln anzeigen](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_18_Annoyances_Cookies/filter.txt)
-    - **Popups** blocks all kinds of popups that are not necessary for websites' operation. [Regeln anzeigen](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_19_Annoyances_Popups/filter.txt)
+    - **Pop-up-Filter** sperrt alle Arten von Pop-ups, die für den Betrieb von Websites nicht notwendig sind. [Regeln anzeigen](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_19_Annoyances_Popups/filter.txt)
     - **Filter gegen Mobile-App-Banner** sperrt Banner, die für mobile Anwendungen von Websites werben. [Regeln anzeigen](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_20_Annoyances_MobileApp/filter.txt)
     - **Widgets-Filter** sperrt Widgets von Drittanbietern: Online-Assistenten, Live-Support-Chats, usw. [Regeln anzeigen](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_22_Annoyances_Widgets/filter.txt)
     - **Sonstige Belästigungen** sperrt Elemente, die nicht unter die gängigen Kategorien von Belästigungen fallen. [Regeln anzeigen](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_21_Annoyances_Other/filter.txt)

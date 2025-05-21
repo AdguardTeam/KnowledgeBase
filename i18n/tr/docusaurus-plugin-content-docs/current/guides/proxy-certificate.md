@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Masaüstü uygulamalarımız olan Windows için AdGuard ve Mac için AdGuard, diğer cihazlar için proxy olarak kullanılabilir. This means that you can route other devices’ traffic through AdGuard (all traffic or traffic of specific apps and browsers).
 
-:::not
+:::note
 
 Bu cihazların AdGuard kurulu PC veya Mac ile aynı ağda olması gerekir.
 

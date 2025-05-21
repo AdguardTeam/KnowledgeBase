@@ -117,7 +117,7 @@ Besides running the advanced uninstaller in its user-interactive mode, you can a
 
 4. You can also use `/advanced` to force the uninstaller to run in *Advanced mode* and `/settings` to force the uninstaller to remove user settings along with the application.
 
-:::not
+:::note
 
 Başarılı bir kaldırma işlemi için `/console` ve `/adblocker` parametrelerinin kullanılması gereklidir. `/advanced` ve `/settings` parametreleri isteğe bağlıdır.
 
