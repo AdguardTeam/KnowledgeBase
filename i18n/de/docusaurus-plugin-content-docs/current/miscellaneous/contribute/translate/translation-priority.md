@@ -3,16 +3,33 @@ title: Übersetzungspriorität der Crowdin-Dateien
 sidebar_position: 5
 ---
 
-Es gibt fünf große AdGuard-Projekte auf Crowdin — [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge Base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), und [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
+Es gibt sieben AdGuard-Projekte auf Crowdin:
 
-Wir haben keine klaren Richtlinien, mit welchen Dateien oder Produkten des Projekts *AdGuard Applications* Sie beginnen sollen. Wählen Sie einfach ein beliebiges Produkt aus.
+- [AdGuard Applications](https://crowdin.com/project/adguard-applications)
+- [AdGuard Websites](https://crowdin.com/project/adguard-websites)
+- [AdGuard Ad Blocker Knowledge Base](https://crowdin.com/project/adguard-knowledge-base)
+- [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base)
+- [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases)
+- AdGuard Mail Knowledge Base
+- AdGuard Glossary
+
+Die ersten fünf werden aktiv übersetzt. *AdGuard Mail Knowledge Base* ist noch nicht zur Übersetzung verfügbar. *AdGuard Glossary* wird ausschließlich für die Speicherung und Verwaltung der Terminologie verwendet. Wenn Sie Begriffe hinzufügen oder bearbeiten möchten, können Sie dies direkt im Arbeitsbereich des Editors tun.
+
+![Hinzufügen von Begriffen *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adding_terms.png)
+
+## Start mit dem Projekt „Applications“
+
+Es gibt keine strikten Richtlinien, wo man innerhalb des *AdGuard Applications* Projekts beginnen sollte. Wählen Sie einfach ein beliebiges Produkt aus.
 
 Es gibt nur ein paar Dinge, die wir erwähnen möchten:
 
-- Die App steht nur in den Sprachen zur Verfügung, die auf Crowdin vollständig übersetzt wurden;
-- Wir empfehlen, die Beschreibungen für App-Stores an zweiter Stelle zu übersetzen, da die Beschreibungen ohne die Übersetzung der Produkte selbst nicht benötigt werden.
+- Eine App wird erst dann in einer Sprache verfügbar, wenn **alle** Zeichenketten auf Crowdin übersetzt wurden.
+- Übersetzen Sie die Beschreibungen im App Store nach der App selbst. Eine Beschreibung ohne ein übersetztes Produkt ist nicht hilfreich.
+- Einige Dateien und Ordner können veraltet sein — zum Beispiel `adguard-vpn-for-desktop` und `adguard-vpn-for-ios-ARCHIVED`. Diese sollten nicht übersetzt werden.
 
-Anders verhält es sich bei dem Projekt *AdGuard Websites* . Sprachen können der Website auch dann hinzugefügt werden, wenn noch keine vollständigen Übersetzungen vorhanden sind. Dies hängt jedoch davon ab, welche Dateien bereits übersetzt wurden. Deshalb empfehlen wir Ihnen, mit den wichtigsten Dateien zu beginnen – sie sind unten aufgeführt:
+## Start mit dem Projekt „Websites“
+
+Anders verhält es sich bei dem Projekt *AdGuard Websites* . Sprachen können der Website auch dann hinzugefügt werden, wenn noch keine vollständigen Übersetzungen vorliegen. Dies hängt jedoch davon ab, welche Dateien bereits übersetzt wurden. Deshalb empfehlen wir Ihnen, mit den wichtigsten Dateien zu beginnen — sie sind nachfolgend aufgeführt:
 
 [AdGuard Werbeblocker-Website](https://crowdin.com/project/adguard-websites/en#/adguard.com)
 
@@ -30,6 +47,6 @@ Anders verhält es sich bei dem Projekt *AdGuard Websites* . Sprachen können de
 - `critical.resx`
 - `auth.resx`
 
-Das Hinzufügen neuer und das Aktualisieren bestehender Zeichenfolgen in diesen Dateien erfordert besondere Aufmerksamkeit von den Übersetzer:innen und Korrekturleser:innen.
+Das Hinzufügen neuer und das Aktualisieren bestehender Zeichenfolgen in diesen Dateien erfordert besondere Aufmerksamkeit von den Mitwirkenden.
 
-Zusätzlich zu den Websites gibt es im Projekt AdGuard Websites eine Datei zur Übersetzung von [Transaktions-E-Mails](https://crowdin.com/project/adguard-websites/en#/emails). Neu hinzugefügte Zeichenfolgen in dieser Datei haben ebenfalls eine hohe Übersetzungspriorität.
+Zusätzlich zu den Websites gibt es im Projekt *AdGuard Websites* eine Datei zur Übersetzung von [Transaktions-E-Mails](https://crowdin.com/project/adguard-websites/en#/emails). Neu hinzugefügte Zeichenfolgen in dieser Datei haben ebenfalls eine hohe Übersetzungspriorität.

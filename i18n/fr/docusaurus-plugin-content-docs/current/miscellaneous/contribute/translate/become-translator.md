@@ -9,41 +9,47 @@ Si vous souhaitez aider à traduire les produits, les sites web et les Bases de 
 
 Une fois que vous l'avez fait, rendez-vous sur [notre page](https://crowdin.com/profile/adguard/). Vous verrez des projets AdGuard, chacun avec des dossiers pour des différentes chaînes de produits.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/projects.png)
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_page.png)
 
-Choisissez votre langue et vous verrez la liste des dossiers de produits disponibles.
+:::note
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/languages.png)
+*AdGuard Glossary* is only used for storing and managing terms — it doesn’t need to be translated.
 
-Vous pouvez commencer à traduire n'importe quel produit en choisissant le dossier correspondant. Nous avons quelques recommandations sur [les fichiers avec lesquels il vaut mieux commencer dans le projet AdGuard Websites](../translation-priority).
+:::
+
+Choose a project you’d like to translate, click *Join*, and choose your language.
+
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_kb.png)
+
+You can start translating literally any product you like by choosing the respective folder. We have some recommendations about [what files are better to start with in AdGuard Websites project](../translation-priority).
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/folders.png)
 
-Filtrez les phrases qui ne sont pas encore traduites et démarrez votre historique de traduction.
+Filter phrases that are not yet translated and start your translation history.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
-Proposez votre version dans la zone de texte et enregistrez-la.
+Suggest your version in the text box and save it.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/text-box.png)
 
-Si vous n'êtes pas d'accord avec une traduction existante, vous pouvez suggérer votre version. De plus, vous pouvez voter pour et contre les suggestions faites par d'autres volontaires en cliquant sur les boutons "plus" et "moins".
+If you don’t agree with an existing translation, you can suggest your version. You can also upvote and downvote suggestions made by other volunteers by clicking the plus and minus buttons.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/vote.png)
 
-En outre, il est possible d'ouvrir des traductions en mode Vote si vous souhaitez simplement évaluer les traductions.
+Besides, there is an opportunity to open translations in a Voting mode if you just want to rate translations.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-Vous pouvez trouver quelques [conseils utiles sur la traduction d'AdGuard dans cet article](../guidelines). Veuillez y jeter un coup d'œil.
+You can find some [helpful tips on translating AdGuard in this article](../guidelines). Please take a look at it.
 
 ### Comment devenir relecteur {#proofreaders}
 
-Nous avons des relecteurs (anciennement appelés modérateurs) pour chaque langue. Et chaque traducteur actif a la possibilité d'en devenir un.
+We have proofreaders (previously known as moderators) for each language. And every active translator has an option to become one.
 
-Quelles sont donc les responsabilités des relecteurs/correcteurs ?
+So, what are proofreaders responsible for?
 
-**Les relecteurs :**
+**Proofreaders:**
 
 - Approuvent les traductions de qualité et désapprouvent les mauvaises ;
 
@@ -51,4 +57,4 @@ Quelles sont donc les responsabilités des relecteurs/correcteurs ?
 
 - Répondent aux commentaires liés aux traductions dans leur langue.
 
-Chaque année, les meilleurs relecteurs reçoivent des cadeaux d'AdGuard. Les traducteurs actifs ne restent pas non plus sans récompense. En savoir plus sur notre [système de récompense](../rewards).
+Every year, the best proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system](../rewards).

@@ -12,7 +12,7 @@ sidebar_position: 4
 - Нажать *Сбросить лицензию* или *Выйти* в приложении AdGuard
 
 - Удалить устройство в личном кабинете AdGuard:
-    1. Click *AdGuard Ad Blocker* in your [AdGuard account](https://adguardaccount.com/).
+    1. [В личном кабинете](https://adguardaccount.com/) нажмите *Блокировщик AdGuard*.
 
         ![Вкладка «Блокировщик рекламы» *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 

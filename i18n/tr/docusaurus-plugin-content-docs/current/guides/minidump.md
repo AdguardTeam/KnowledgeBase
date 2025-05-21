@@ -49,7 +49,7 @@ Even if you don’t experience any BSoD crash errors, you can still set this opt
 
 Minidump dosyasını başarıyla etkinleştirdiniz. Now it will be created automatically when the system crashes.
 
-:::not
+:::note
 
 By default the minidump file is stored in the **%SystemRoot%\Minidump** folder. You can change the directory location to whatever you like, but please remember that a lot of programs are set to look for this location by default, so we recommend that you do not change the location.
 

@@ -68,7 +68,7 @@ Wählen Sie eine Website aus (**wir verwenden google.com hier nur als Beispiel**
 
 Wenn Sie auf diese Option tippen, wird `google.com` sofort zur Freigabeliste hinzugefügt und von AdGuard nicht mehr gefiltert. Werbung und Tracker werden für diese Website nicht blockiert.
 
-#### Recent activity (websites)
+#### Letzte Aktivitäten (Websites)
 
 Sie werden zur AdGuard-App weitergeleitet, in der Sie detaillierte Informationen zu den letzten 10.000 Anfragen an google.com finden.
 

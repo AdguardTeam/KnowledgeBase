@@ -25,15 +25,15 @@ La API de extensiones de red tiene una configuración similar a VPN con una list
 
 En Monterey, se introdujo iCloud Private Relay. Las funciones de privacidad de la aplicación Mail también utilizan servidores de retransmisión privados.
 
-Como consecuencia, AdGuard no puede funcionar junto con iCloud Private Relay y las funciones de privacidad de la aplicación Mail:
+As a consequence, AdGuard can’t work together with iCloud Private Relay and the Mail app privacy features:
 
 1. iCloud Private Relay se aplica a las conexiones a nivel de biblioteca, antes de que alcancen el nivel de socket, donde opera AdGuard.
-2. iCloud Private Relay utiliza QUIC, que AdGuard no puede filtrar en aplicaciones filtradas porque el filtrado HTTP/3 aún no está disponible.
-3. En consecuencia, AdGuard bloquea QUIC, incluido el tráfico de retransmisión privada de iCloud; de lo contrario, el bloqueo de anuncios es imposible.
-4. Cuando usas iCloud Private Relay y cambias AdGuard al modo de "túnel dividido", no puedes abrir sitios web en Safari.
-5. Para solucionar este problema en Monterey, aplicamos la regla de "ruta predeterminada". Cuando Private Relay ve esa regla, se desactiva automáticamente. Entonces, AdGuard funciona perfectamente en Monterey, pero iCloud Private Relay se desactiva.
+2. iCloud Private Relay is implemented with HTTP/3 CONNECT proxies.
+3. Since AdGuard does not filter CONNECT HTTP/3 requests yet, it attempts to downgrade HTTP/3 proxy connections to HTTP/1.1, which results in blocking iCloud Private Relay traffic.
+4. When you use iCloud Private Relay and switch AdGuard into the Split-Tunnel mode, you can’t open websites in Safari.
+5. To work around this issue for Monterey, we apply the “default route” rule. Cuando Private Relay ve esa regla, se desactiva automáticamente. Entonces, AdGuard funciona perfectamente en Monterey, pero iCloud Private Relay se desactiva.
 
-`network.extension.monterey.force.split.tunnel` restaura el comportamiento de "Big Sur", pero esta opción puede interrumpir el acceso a sitios web debido a (3) y (4). Seguimos buscando una solución a este problema. Una de las opciones es implementar el filtrado HTTP/3.
+The `network.extension.monterey.force.split.tunnel` option restores the “Big Sur” behavior, but this option may break access to websites due to (3) and (4). Seguimos buscando una solución a este problema. One of the options is implementing HTTP/3 proxy filtering.
 
 ## Solución recomendada
 

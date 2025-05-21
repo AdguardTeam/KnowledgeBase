@@ -3,7 +3,7 @@ title: Tracking filter rules statistics
 sidebar_position: 4
 ---
 
-:::not
+:::note
 
 *Reklam filtreleri kullanımına ilişkin istatistikleri gönder* seçeneği varsayılan olarak devre dışıdır. Engelleme filtrelerimizi iyileştirmemize yardımcı olmak için kullanıcı bunu elle etkinleştirmediği sürece hiçbir şey gönderilmeyecektir.
 

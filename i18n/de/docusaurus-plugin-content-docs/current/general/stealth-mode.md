@@ -3,7 +3,7 @@ title: Privatsphäre (Tracking-Schutz)
 sidebar_position: 4
 ---
 
-Viele Websites sammeln Informationen über ihre Besucher, z. B. ihre IP-Adresse, den installierten Browser und das Betriebssystem, die Bildschirmauflösung und sogar die Seite, von der ein Besucher weitergeleitet wurde. Einige Webseiten verwenden Cookies, um Ihren Browser zu kennzeichnen und Ihre persönlichen Einstellungen und Präferenzen zu speichern oder um Sie bei Ihrem nächsten Besuch „wiederzuerkennen”. *Tracking protection* safeguards your personal information from such data- and statistics-gathering systems.
+Viele Websites sammeln Informationen über ihre Besucher, z. B. ihre IP-Adresse, den installierten Browser und das Betriebssystem, die Bildschirmauflösung und sogar die Seite, von der ein Besucher weitergeleitet wurde. Einige Webseiten verwenden Cookies, um Ihren Browser zu kennzeichnen und Ihre persönlichen Einstellungen und Präferenzen zu speichern oder um Sie bei Ihrem nächsten Besuch „wiederzuerkennen”. Der Modus *Privatsphäre* (oder *Tracking-Schutz* in AdGuard für Windows und AdGuard Browsererweiterung) schützt Ihre persönlichen Informationen vor solchen daten- und statistiksammelnden Systemen.
 
 Sie können die Funktionsweise des Stealth-Modus flexibel anpassen: Sie können z. B. verhindern, dass die Website die Suchanfrage erhält, mit der Sie sie im Internet gefunden haben, Sie können sowohl Cookies von Drittanbietern als auch eigene Cookies der Website automatisch löschen, Sie können die gemeinsame Nutzung der Geolokalisierung durch den Browser deaktivieren, die dazu verwendet werden kann, Ihren Aufenthaltsort zu verfolgen, und Sie können Ihre wahre IP-Adresse verbergen oder sie sogar durch eine beliebige ersetzen.
 
@@ -95,7 +95,7 @@ Sie können auch einen beliebigen Wert für Referer festlegen, indem Sie ihn in 
 
 Beachten Sie, dass AdGuard-Anwendungen Browser-zu-Server-Anfragen „abfangen”, um den Datenverkehr filtern zu können. Anfragen an Werbe-, Tracking- und Phishing-Server können verändert werden, bevor sie an den Server gesendet werden, oder ganz gesperrt werden. Gleiches gilt für die Option *Referer vor Dritten verbergen*: AdGuard fängt HTTP(S)-Anfragen ab, insbesondere um den Referer-Header zu entfernen oder zu ändern, wenn diese Option aktiviert ist. Dies geschieht jedoch erst, nachdem diese Anfragen den Browser „verlassen” haben. Das bedeutet, dass Sie, wenn Sie den Referer innerhalb des Browsers überwachen (z. B. mit Hilfe der Developer Tools von Chrome), den ursprünglichen Referer sehen, da die Anfrage AdGuard noch nicht erreicht hat. Sie können Software wie [Fiddler](https://www.telerik.com/fiddler) verwenden, um sicherzustellen, dass der Referer korrekt geändert wird.
 
-Due to the nature of all web browser extensions, AdGuard Browser Extension instead works 'inside' the web browser. Dadurch wird der Referer auf der Stelle geändert, so dass die Entwicklertools den gewünschten Referer für Ihre Anfragen anzeigen.
+Andererseits arbeitet die AdGuard Browsererweiterung aufgrund der Natur aller Browsererweiterungen „innerhalb“ des Browsers. Dadurch wird der Referer auf der Stelle geändert, so dass die Entwicklertools den gewünschten Referer für Ihre Anfragen anzeigen.
 
 ### Browserkennung verbergen {#useragent}
 

@@ -9,13 +9,19 @@ Wenn Sie bei der Übersetzung von AdGuard-Produkten, -Websites und -Wissensdaten
 
 Sobald Sie dies getan haben, gehen Sie zu [unserer Seite](https://crowdin.com/profile/adguard/). Sie werden AdGuard-Projekte sehen, jedes mit Ordnern für verschiedene Produktstrings.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/projects.png)
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_page.png)
 
-Wählen Sie Ihre Sprache und Sie sehen die Liste der verfügbaren Produktordner.
+:::note
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/languages.png)
+*AdGuard Glossary* wird nur zum Speichern und Verwalten von Begriffen verwendet — es muss nicht übersetzt werden.
 
-Sie können jedes gewünschte Produkt übersetzen, indem Sie den entsprechenden Ordner auswählen. Wir haben einige Empfehlungen darüber, [welche Dateien besser für den Anfang im AdGuard-Websites-Projekt](../translation-priority) geeignet sind.
+:::
+
+Wählen Sie ein Projekt, das Sie übersetzen möchten, klicken Sie auf *Join* und wählen Sie Ihre Sprache.
+
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_kb.png)
+
+Sie können jedes gewünschte Produkt übersetzen, indem Sie den entsprechenden Ordner auswählen. Wir haben einige Empfehlungen darüber, [welche Dateien besser für den Anfang im AdGuard Websites-Projekt](../translation-priority) geeignet sind.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/folders.png)
 
@@ -27,7 +33,7 @@ Schlagen Sie Ihre Version im Textfeld vor und speichern Sie sie.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/text-box.png)
 
-Wenn Sie mit einer vorhandenen Übersetzung nicht einverstanden sind, können Sie Ihre Version vorschlagen. Außerdem können Sie die Vorschläge anderer Mitwirkender positiv oder negativ bewerten, indem Sie auf die Schaltflächen „Plus“ und „Minus“ klicken.
+Wenn Sie mit einer vorhandenen Übersetzung nicht zustimmen, können Sie Ihre Version vorschlagen. Sie können auch die Vorschläge anderer Mitwirkender herauf- und herunterstufen, indem Sie auf die Schaltflächen Plus und Minus klicken.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/vote.png)
 
@@ -37,11 +43,11 @@ Es ist auch möglich, Übersetzungen in einem „Voting-Modus“ zu öffnen, wen
 
 In diesem Artikel finden Sie [hilfreiche Tipps zur Übersetzung von AdGuard](../guidelines). Bitte lesen Sie diese aufmerksam durch.
 
-### Korrekturleser:in werden {#proofreaders}
+### Zur Qualitätssicherung beitragen {#proofreaders}
 
 Wir haben Korrekturleser:innen (Proofreader) für jede Sprache. Und jeder aktive Mitwirkende hat die Möglichkeit, einer zu werden und zur Qualitätssicherung beizutragen.
 
-Wofür sind Korrekturleser:innen verantwortlich?
+Wofür sind Proofreader verantwortlich?
 
 **Sie:**
 
@@ -51,4 +57,4 @@ Wofür sind Korrekturleser:innen verantwortlich?
 
 - antworten auf Kommentare zu Übersetzungen in ihrer Sprache.
 
-Jedes Jahr erhalten die besten Korrekturleser:innen Geschenke von AdGuard. Auch aktive Mitwirkende bleiben nicht unbelohnt. Lesen Sie mehr über unser [Belohnungssystem](../rewards).
+Jedes Jahr erhalten die besten Proofreader Geschenke von AdGuard. Auch aktive Mitwirkende bleiben nicht unbelohnt. Lesen Sie mehr über unser [Belohnungssystem](../rewards).
