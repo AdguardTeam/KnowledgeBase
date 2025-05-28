@@ -9,7 +9,7 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
 :::
 
-## Features
+## Funktionen
 
 Die wichtigsten Funktionen und Einstellungen der AdGuard Browsererweiterung
 

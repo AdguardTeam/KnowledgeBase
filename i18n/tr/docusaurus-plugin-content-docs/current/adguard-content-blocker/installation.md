@@ -15,7 +15,7 @@ AdGuard İçerik Engelleyiciyi Google Play'den yüklemek için *AdGuard İçerik
 
 ![Google Play'de İçerik Engelleyici *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market.jpg)
 
-:::not
+:::note
 
 AdGuard İçerik Engelleyici iki tarayıcıda çalışır: [Yandex Browser](https://browser.yandex.com/) ve [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
 

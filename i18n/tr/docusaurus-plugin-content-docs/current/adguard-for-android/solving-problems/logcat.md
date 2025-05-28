@@ -9,7 +9,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-:::not
+:::note
 
 Günlüklerde sağlanan veriler ve/veya dosyalar [AdGuard Gizlilik Politikasına](https://adguard.com/en/privacy.html) uygun olarak işlenir.
 
@@ -17,7 +17,7 @@ Günlüklerde sağlanan veriler ve/veya dosyalar [AdGuard Gizlilik Politikasına
 
 Bazen normal bir günlük, sorunun kaynağını belirlemek için yeterli olmayabilir. In such cases a system log is needed. Aşağıda nasıl toplanacağı ve alınacağı ile ilgili talimatlar bulunmaktadır: Geliştirici seçenekleri ve Logcat aracılığıyla.
 
-:::not
+:::note
 
 AdGuard gizliliğinizi korumaya kararlıdır. [Gizlilik Politikamıza](https://adguard.com/privacy/android.html) kesinlikle uyuyoruz ve kullanıcılar hakkında herhangi bir özel bilgi toplamıyoruz. Günlüklerinizi destek ekibine göndermeden önce, paylaşmak istemediğiniz ek bilgiler içerebileceğinden lütfen dosyayı inceleyin. Bu tür kişisel bilgiler içeriyorsa öncelikle onu silmenizi öneririz.
 
@@ -35,7 +35,7 @@ To get a bug report directly from your device, do the following:
 
 1. Select the type of bug report you want and tap **Report**.
 
-    :::not
+    :::note
 
     After a moment, you will see a notification that the bug report is ready (see Figure 2).
 
@@ -50,7 +50,7 @@ To get a bug report directly from your device, do the following:
 
 1. Send this log to our support team.
 
-    :::not
+    :::note
 
     Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
 
@@ -115,7 +115,7 @@ It is important to reproduce the problem after you're done with the first part.
 
 1. Send this log to our support team.
 
-:::not
+:::note
 
 Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
 
