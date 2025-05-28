@@ -11,7 +11,7 @@ Wir empfehlen die Einrichtung einer Zwei-Faktor-Authentifizierung für Ihr AdGua
 
 ## So richten Sie 2FA ein
 
-1. Log into your [AdGuard account](https://auth.adguardaccount.com/login.html) and go to the *Settings* tab:
+1. Melden Sie sich in Ihrem [AdGuard-Konto](https://auth.adguardaccount.com/login.html) an und öffnen Sie *Einstellungen*:
 
  ![AdGuard-Kontoeinstellungen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
@@ -33,7 +33,7 @@ Nachdem Sie die Zwei-Faktor-Authentifizierung aktiviert haben, können Sie zwisc
 
 :::note
 
-Wenn Sie die Authentifikator-App verwenden, stellen Sie sicher, dass Sie den **Einrichtungsschlüssel** an einem beliebigen Ort speichern. It will be necessary to recover your account in case your mobile phone gets lost or stolen.
+Wenn Sie die Authentifikator-App verwenden, stellen Sie sicher, dass Sie den **Einrichtungsschlüssel** an einem beliebigen Ort speichern. Es ist notwendig, Ihr Konto wiederherzustellen, falls Ihr Mobiltelefon verloren geht oder gestohlen wird.
 
 ![Der Einrichtungsschlüssel in der Authentifikator-App *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
 

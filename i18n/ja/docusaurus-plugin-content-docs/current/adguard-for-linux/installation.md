@@ -27,19 +27,19 @@ curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/beta/install
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/nightly/install.sh | sh -s -- -v
 ```
 
-If required, enter your admin password.
+必要に応じて、管理者パスワードを入力します。
 
-Press `y` to create a link in `/usr/local/bin` to the executable and wait until the installation is complete.
+`y` を押すことで `/usr/local/bin` に実行可能ファイルへのリンクを作成し、インストールが完了するまで待ちます。
 
 :::note
 
-You can verify the signature to prove it’s an official version of AdGuard by using the `gpg` tool. [Read more on GitHub](https://github.com/AdguardTeam/AdGuardCLI?tab=readme-ov-file#verify-releases)
+AdGuard の公式バージョンであることを証明するには、`gpg` ツールを使用して署名を検証することができます。 [GitHubで詳細を読む](https://github.com/AdguardTeam/AdGuardCLI?tab=readme-ov-file#verify-releases)
 
 :::
 
-## Initial setup
+## 初期設定
 
-AdGuard for Linux requires an [AdGuard license](https://adguard.com/license.html). If you don’t have a license yet, you can log in or create an account to get a free 14-day trial. If you already have a license, log in to activate it. To do it, follow this step-by-step guide:
+AdGuard for Linuxをご利用いただくには[AdGuardライセンス](https://adguard.com/license.html)が必要です。 If you don’t have a license yet, you can log in or create an account to get a free 14-day trial. すでにライセンスをお持ちの場合は、ログインすることで有効化してください。 To do it, follow this step-by-step guide:
 
 1. After installation, enter:
 
@@ -71,7 +71,7 @@ AdGuard for Linux requires an [AdGuard license](https://adguard.com/license.html
     adguard-cli license
     ```
 
-6. Now you need to set up AdGuard CLI. To run the configuration wizard, enter:
+6. Now you need to set up AdGuard CLI. 設定ウィザードを実行するには、以下を入力します：
 
     ```sh
     adguard-cli configure
@@ -89,66 +89,66 @@ AdGuard for Linux requires an [AdGuard license](https://adguard.com/license.html
 
     ![Start protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation5.png)
 
-8. You can check the protection status using:
+8. 保護ステータスを表示するには、以下を入力します：
 
     ```sh
     adguard-cli status
     ```
 
-    and stop it with:
+    保護機能を止めるには、以下を入力します：
 
     ```sh
     adguard-cli stop
     ```
 
-    ![Stop protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+    ![保護機能を停止する \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
 
-9. To check the current configuration, enter:
+9. 現在の構成を確認するには、以下のように入力します：
 
     ```sh
     adguard-cli config show
     ```
 
-    ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+    ![現在のセットアップ \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
-    The path to the configuration file will also be displayed, which you can and should edit directly. It contains descriptions of all additional options.
+    構成ファイルへのパスも表示されます。これは直接編集可能で編集すべきです。 すべての追加オプションの説明が含まれています。
 
-    As an alternative, you can use the commands:
+    代替として、以下のコマンドを使用できます：
 
     ```sh
     adguard-cli config get
     ```
 
-    or:
+    もしくは:
 
     ```sh
     adguard-cli config set
     ```
 
-    They are primarily intended for scripting, though.
+    ただし、これらは主にスクリプティングのために設計されています。
 
-For further information on the available commands, check out the section [Settings and protection management](https://adguard.com/kb/adguard-for-linux/settings/).
+利用可能なコマンドに関する詳細情報は、[設定と保護の管理](https://adguard.com/kb/adguard-for-linux/settings/)セクションを確認してください。
 
-## Uninstall AdGuard for Linux
+## AdGuard for Linux をアンインストールする方法
 
-To uninstall AdGuard, enter:
+AdGuard をアンインストールするには、以下のコマンドを入力します：
 
-Release
+【安定版】
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/release/install.sh | sh -s -- -v -u
 ```
 
-Beta
+【ベータ版】
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/beta/install.sh | sh -s -- -v -u
 ```
 
-Nightly
+【Nightly版】
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/nightly/install.sh | sh -s -- -v -u
 ```
 
-If required, enter your admin password.
+必要に応じて、管理者パスワードを入力します。

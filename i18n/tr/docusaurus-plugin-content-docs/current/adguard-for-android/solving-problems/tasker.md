@@ -45,7 +45,7 @@ Here are actions that, when included in the intent, will be understood by AdGuar
 
 `enable:true` veya `enable:false` sırasıyla *FakeDNS'i kullan* ayarını etkinleştirir veya devre dışı bırakır.
 
-:::not
+:::note
 
 When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automatically disabled. DNS istekleri yerel olarak filtrelenmeyecektir.
 
@@ -57,7 +57,7 @@ When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automaticall
 
  `server:adguard dns`, AdGuard DNS sunucusuna geçiş yapar;
 
-:::not
+:::note
 
 Desteklenen sağlayıcı adlarının tam listesini [bilinen DNS sağlayıcı listemizde](https://adguard-dns.io/kb/general/dns-providers/) bulabilirsiniz.
 
@@ -134,7 +134,7 @@ Paket adı: `com.adguard.android`
 
 Class: `com.adguard.android.receiver.AutomationReceiver`
 
-:::not
+:::note
 
 Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. If this function is used, remember to update to the new name.
 
