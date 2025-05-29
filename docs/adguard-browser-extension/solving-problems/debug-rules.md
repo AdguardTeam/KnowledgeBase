@@ -73,7 +73,9 @@ That’s it!
     pnpm dev chrome-mv3
     ```
 
-2. Convert filters to DNR rulesets **automatically**:
+1. **Convert filters to DNR rulesets**
+
+    Option 1: **conversion in watch mode**
 
     To speed up the development of DNR rulesets, use the `@adguard/dnr-rulesets` `watch` command. This command automatically rebuilds rulesets whenever filter files change.
 
@@ -109,9 +111,7 @@ That’s it!
 
     Now, whenever you modify filter files, the DNR rulesets will rebuild automatically, so you won’t have to rebuild the entire extension.
 
-**OR**
-
-2. Convert filters to DNR rulesets **manually**:
+    Option 2: **single run conversion**
 
     If you do not want to use watch mode and only need a single run, you can do it directly via the `@adguard/tsurlfilter` CLI command `convert` — it will convert filters to DNR rulesets:
 
@@ -129,10 +129,10 @@ That’s it!
 
     After the conversion is done, you can manually update the ruleset information in `manifest.json` if needed: enable, add, or remove rulesets as required.
 
-3. Reload the extension in the browser after conversion:
+1. Reload the extension in the browser after conversion:
 
     ![Reload extension](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
 
-4. If you see an exclamation mark, it means the assumed rule (calculated by our tsurlfilter engine using MV2 rules) and the applied rule (converted to a DNR rule) are different. This can indicate a conversion problem.
+1. If you see an exclamation mark, it means the assumed rule (calculated by our tsurlfilter engine using MV2 rules) and the applied rule (converted to a DNR rule) are different. This can indicate a conversion problem.
 
     Otherwise, if the assumed and applied rules are the same, only the applied rule, in both raw text and declarative rule views, will be shown.
