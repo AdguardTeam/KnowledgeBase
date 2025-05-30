@@ -25,7 +25,7 @@ There are just a couple of things we want to mention:
 
 - An app becomes available in a language only after **all** its strings have been translated on Crowdin.
 - Translate app store descriptions after the app itself. A description without a translated product is not useful.
-- Some files and folders may be outdated — for example, `adguard-vpn-for-desktop-ARCHIVED` and `adguard-vpn-for-ios-ARCHIVED`. These should not be translated.
+- Some files and folders may be outdated — for example, `adguard-vpn-for-desktop` and `adguard-vpn-for-ios-ARCHIVED`. These should not be translated.
 
 ## Starting with the Websites Project
 
