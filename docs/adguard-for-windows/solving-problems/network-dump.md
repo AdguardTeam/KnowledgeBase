@@ -23,7 +23,7 @@ First, download Wireshark from the [official website](https://www.wireshark.org/
 
 ## 2. Prepare for capture
 
-Before starting, close all unnecessary programs that use the Internet. This will help reduce unrelated data in the dump.
+Before starting, close all unnecessary programs and browsers, unless they are needed to reproduce the issue. This will help reduce unrelated data in the dump.
 
 ## 3. Capture network traffic
 
@@ -33,7 +33,7 @@ If you’re not sure which interface to choose, pick the one with the most activ
 
 ![Main screen](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/main_screen.png)
 
-Double-click the selected interface to start the capture. Now, reproduce the issue you are experiencing, so the relevant traffic is recorded.
+Double-click the selected interface to start the capture. Now, reproduce the issue you are experiencing, making sure to perform only the necessary actions to trigger the problem and avoid any other processes. This helps isolate the issue and ensures relevant traffic is recorded.
 
 ## 4. Stop capture and save the dump
 
@@ -42,3 +42,5 @@ After reproducing the issue, click the red Stop button at the top to finish the 
 ![Capture process *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/capturing_process.png)
 
 To save the data, press Ctrl+S, enter a file name, and choose the .pcapng format. That’s it — your network dump file is ready.
+
+When sending the dump, please also provide a timeline of events. Describe the main actions you took, such as when you launched the app and the steps that led to the issue, and include the approximate time the problem occurred.
