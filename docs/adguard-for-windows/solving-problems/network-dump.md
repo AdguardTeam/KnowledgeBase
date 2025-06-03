@@ -19,11 +19,11 @@ Data and files provided in dump files are processed in accordance with the [AdGu
 
 ## 1. Install Wireshark
 
-First, download Wireshark from the [official website](https://www.wireshark.org/download.html). Run the installer and follow the instructions. When prompted, install Npcap — this driver is necessary for Wireshark to capture network packets.
+Download Wireshark from the [official website](https://www.wireshark.org/download.html). Run the installer and follow the instructions. When prompted, install Npcap — this driver is necessary for Wireshark to capture network packets.
 
 ## 2. Prepare for capture
 
-Before starting, close all unnecessary programs and browsers, unless they are needed to reproduce the issue. This will help reduce unrelated data in the dump.
+Before starting, **close all unnecessary programs and browser tabs**. This will help reduce unrelated data in the dump.
 
 ## 3. Capture network traffic
 
@@ -43,4 +43,4 @@ After reproducing the issue, click the red Stop button at the top to finish the 
 
 To save the data, press Ctrl+S, enter a file name, and choose the .pcapng format. That’s it — your network dump file is ready.
 
-When sending the dump, please also provide a timeline of events. Describe the main actions you took, such as when you launched the app and the steps that led to the issue, and include the approximate time the problem occurred.
+When sending the dump, please also provide a timeline of events. Describe the main actions you took, such as when you launched the app and the steps that led to the issue, and include the approximate time the issue occurred.
