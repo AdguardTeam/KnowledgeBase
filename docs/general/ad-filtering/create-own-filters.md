@@ -4877,7 +4877,7 @@ The following products will support it in the mentioned versions or later:
 
 - AdGuard for Windows, Mac, and Android with [CoreLibs] v1.13;
 - AdGuard Browser Extension v4.2.208;
-- AdGuard v1.11.16 for Safari.
+- AdGuard for Safari v1.11.16.
 
 :::
 
