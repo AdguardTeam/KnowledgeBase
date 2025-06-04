@@ -9,7 +9,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 :::
 
-The changes in AdGuard v8.0 for Windows are significant, and we hope you love the new version. However, chances are something won’t go the way you expected. Version 8.0 is very different; after all, it’s the first nightly. If you find the v8.0 interface uncomfortable or have encountered too many functionality/stability issues, you can restore the previous version along with its settings.
+The changes in AdGuard for Windows v8.0 are significant, and we hope you love the new version. However, chances are something won’t go the way you expected. Version 8.0 is very different; after all, it’s the first nightly. If you find the v8.0 interface uncomfortable or have encountered too many functionality/stability issues, you can restore the previous version along with its settings.
 
 To ensure your settings are preserved during the whole process, it's recommended to export them before upgrading to v8.0, so, if needed, you can then reinstall version 7 and import back your saved settings.
 
