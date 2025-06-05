@@ -1,5 +1,5 @@
 ---
-title: Özellikler
+title: Features
 sidebar_position: 1
 ---
 
@@ -11,24 +11,24 @@ Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakk
 
 ## Ana menü
 
-The article explains the main functions on the pop-up, such as enabling or disabling ad blocking, accessing settings, managing filters, and viewing protection statistics.
+The main popup from which you can access settings, filtering log and statistics, and report problems
 
 [Ana menü](/adguard-browser-extension/features/main-menu.md)
 
 ## Filtreler
 
-The article describes how AdGuard Browser Extension allows you to customize ad blocking with different filters and custom user rules.
+Filters and user rules to fine-tune ad blocking
 
 [Filtreler](/adguard-browser-extension/features/filters.md)
 
 ## İzleme koruması (Gizlilik Modu)
 
-The article explains how this feature enhances privacy by blocking online trackers, hiding user information, and preventing third-party data collection.
+Settings to block cookies, UTM tags, and online analytics that collect user information
 
 [İzleme koruması (Gizlilik Modu)](/adguard-browser-extension/features/stealth-mode.md)
 
 ## Diğer özellikler ve seçenekler
 
-The article describes additional features and information, such as update notifications, filtering log, statistics on blocked ads and trackers, links to privacy documents, and the repository.
+General and additional settings, links to privacy documents and the repository
 
 [Diğer özellikler ve seçenekler](/adguard-browser-extension/features/other-features.md)

@@ -39,7 +39,7 @@ AdGuard는 유저스크립트 관리자 역할을 수행하여 웹사이트 기�
 
 :::
 
-#### AMP 비활성화
+#### Disable AMP
 
 Android용 AdGuard에만 사전 설치된 스크립트입니다. Google 검색 결과 페이지에서 AMP(가속화된 모바일 페이지)를 비활성화합니다. 이 사용자 스크립트에 대한 자세한 내용과 설치 방법은 [GitHub](https://github.com/AdguardTeam/DisableAMP)에서 확인할 수 있습니다.
 
@@ -363,30 +363,30 @@ CSS 규칙에 익숙하다면 유저스타일을 직접 만들 수도 있습니�
 
 3. 유저스타일을 만들려면 먼저 메타데이터와 함께 제목을 작성합니다.
 
-   ```CSS
-   /* ==UserStyle==
-   @name New userstyle
-   @version 1.0
-   ==/UserStyle== */
-   ```
+ ```CSS
+ /* ==UserStyle==
+ @name New userstyle
+ @version 1.0
+ ==/UserStyle== */
+ ```
 
 4. 메타 데이터 뒤에 CSS 부분을 작성합니다. AdGuard는 (`@-moz-document domain(…), …`)와 일치하는 웹사이트 도메인 이름을 지원합니다. 예를 들어:
 
-   ```CSS
-   body {
-     background: gray;
-     }
-   ```
+ ```CSS
+ body {
+   background: gray;
+   }
+ ```
 
-   또는
+ 또는
 
-   ```CSS
-   @-moz-document domain('example.org'),
-   domain('example.net'),
-   domain('example.com') body {
-     background: gray;
-     }
-   ```
+ ```CSS
+ @-moz-document domain('example.org'),
+ domain('example.net'),
+ domain('example.com') body {
+   background: gray;
+   }
+ ```
 
 5. 완료했으면 **저장 및 닫기**를 누릅니다. 새 유저스타일이 AdGuard에 성공적으로 추가되었습니다.
 

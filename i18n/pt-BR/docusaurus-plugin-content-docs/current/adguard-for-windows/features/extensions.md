@@ -11,7 +11,7 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 O AdGuard pode estender significativamente a funcionalidade do site trabalhando como um [gerenciador de script de usuário](/general/extensions.md). Os usuários do AdGuard podem adicionar seus próprios scripts, bem como gerenciar os existentes.
 
-![Extensões \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![Extensões \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
 **Detectar automaticamente scripts de usuário**
 
@@ -19,7 +19,7 @@ Com esta opção habilitada, o AdGuard definirá automaticamente as consultas do
 
 As seguintes extensões são instaladas com o AdGuard:
 
-![Userscripts pré-instalados \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![Userscripts pré-instalados \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
 **Assistente AdGuard**
 
@@ -33,7 +33,7 @@ O AdGuard Extra é basicamente um miniprograma que altera a forma como as págin
 
 **Bloqueador de pop-ups do AdGuard**
 
-Esta extensão evita que janelas popup sejam abertas quando você visualiza páginas da web. Algumas popups são consideradas úteis: elas podem conter configurações para administração do site ou informações de referência adicionais demonstradas ao clicar em um link. É por isso que você pode desligar o bloqueador, se necessário. Esta extensão também não funciona em sites adicionados à lista de exceções do AdGuard. Ele está desativado por padrão, mas você pode ativá-lo nas configurações do aplicativo. Você encontrará informações mais detalhadas sobre esta extensão em nossa base de conhecimento.
+Esta extensão evita que janelas popup sejam abertas quando você visualiza páginas da web. Algumas popups são consideradas úteis: elas podem conter configurações para administração do site ou informações de referência adicionais demonstradas ao clicar em um link. É por isso que você pode desligar o bloqueador, se necessário. Esta extensão também não funciona em sites adicionados à lista de exceções do AdGuard. Ele está desativado por padrão, mas você pode ativá-lo nas configurações do aplicativo.
 
 **Web of Trust**
 

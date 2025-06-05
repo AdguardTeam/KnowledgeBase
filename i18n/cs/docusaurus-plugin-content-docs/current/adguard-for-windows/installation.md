@@ -11,9 +11,9 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 ## Požadavky na systém
 
-**Operační systém:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
+**Operační systém:** Microsoft Windows 11, 10, 8.1, 8.
 
-**RAM:** alespoň 512 MB.
+**RAM:** alespoň 1 GB.
 
 **Volné místo na disku:** 150 MB.
 
@@ -71,7 +71,7 @@ Pokud potřebujete AdGuard odinstalovat nebo přeinstalovat, postupujte následo
 
 ### Pokročilý způsob {#advanced}
 
-Pokud běžná odinstalace z nějakého důvodu nefunguje, můžete zkusit pokročilou metodu. Nejprve si musíte stáhnout [nástroj pro odinstalaci](https://cdn.adtidy.org/distr/windows/Uninstall_Utility.zip) vytvořený našimi vývojáři. Rozbalte archiv do libovolné složky v počítači, spusťte soubor **Adguard.UninstallUtility.exe** a nechte aplikaci provést změny v zařízení. Poté postupujte podle níže uvedených pokynů:
+Pokud běžná odinstalace z nějakého důvodu nefunguje, můžete zkusit pokročilou metodu. Nejprve si musíte stáhnout [nástroj pro odinstalaci](https://static.adtidy.org/windows/uninstaller/uninstal_utility.zip) vytvořený našimi vývojáři. Rozbalte archiv do libovolné složky v počítači, spusťte soubor **Adguard.UninstallUtility.exe** a nechte aplikaci provést změny v zařízení. Poté postupujte podle níže uvedených pokynů:
 
 - Vyberte *Blokátor reklam AdGuard* a *Standardní* typ odinstalace a poté klikněte na *Odinstalovat*.
 

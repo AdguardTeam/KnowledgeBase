@@ -19,14 +19,14 @@ Prémiový AdGuard pro iOS se od bezplatné verze liší několika funkcemi, vč
 
 1. Modul **Ochrana DNS** šifruje přenosy DNS, čímž zvyšuje soukromí. Funguje ve všech aplikacích a prohlížečích, nejen v Safari, a nabízí širokou ochranu před reklamami a slídiči.
 
-   - **Vlastní DNS servery:** Vyberte si některý z oblíbených DNS serverů z našeho seznamu nebo si přidejte vlastní server.
+    - **Vlastní DNS servery:** Vyberte si některý z oblíbených DNS serverů z našeho seznamu nebo si přidejte vlastní server.
 
-   - **Ochrana rodiny:** Internet není vždy vhodný pro děti. Pomocí AdGuard Premium můžete přejít na poskytovatele DNS, kteří blokují obsah pro dospělé a další nevhodný materiál, aby byly vaše děti na internetu v bezpečí.
+    - **Ochrana rodiny:** Internet není vždy vhodný pro děti. Pomocí AdGuard Premium můžete přejít na poskytovatele DNS, kteří blokují obsah pro dospělé a další nevhodný materiál, aby byly vaše děti na internetu v bezpečí.
 
-   - **Monitorování a flexibilní konfigurace:** Protokol o nedávné aktivitě umožňuje zobrazit všechny požadavky DNS odeslané vaším zařízením a snadno spravovat provoz přidáním webových stránek do seznamu blokovanýchí nebo seznamu povolených pouhým klepnutím.
+    - **Monitorování a flexibilní konfigurace:** Protokol o nedávné aktivitě umožňuje zobrazit všechny požadavky DNS odeslané vaším zařízením a snadno spravovat provoz přidáním webových stránek do seznamu blokovanýchí nebo seznamu povolených pouhým klepnutím.
 
 2. **Pokročilá ochrana** vám umožňuje používat pokročilá pravidla filtrování k blokování složitějších reklam, které by jinak zůstaly nezablokované.
 
-3. **Další možnosti filtrování:** Při zakoupení AdGuard Premium získáte přístup k vlastním filtrům a kategorii bezpečnostních filtrů, kde si můžete vybrat z více než 50 filtrů, včetně filtrů AdGuard a dalších populárních seznamů.
+3. **Další možnosti filtrování:** Při zakoupení AdGuard Premium získáte přístup k vlastním filtrům a kategorii bezpečnostních filtrů.
 
 Přístup k těmto funkcím získáte [zakoupením licence](https://adguard.com/license.html).

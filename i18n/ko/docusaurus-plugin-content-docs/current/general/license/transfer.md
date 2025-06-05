@@ -12,7 +12,7 @@ sidebar_position: 4
 - AdGuard 앱에서 *라이선스 초기화* 또는 *로그아웃*을 클릭합니다.
 
 - AdGuard 계정에서 기기를 제거합니다.
-    1. [AdGard 계정](https://my.adguard.com/)에서 *AdGuard 광고 차단기*를 클릭합니다.
+    1. [AdGard 계정](https://adguardaccount.com/)에서 *AdGuard 광고 차단기*를 클릭합니다.
 
         ![광고 차단기 탭 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 

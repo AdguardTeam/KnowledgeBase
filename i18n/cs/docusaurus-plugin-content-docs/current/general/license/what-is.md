@@ -3,7 +3,7 @@ title: Co je licence AdGuardu?
 sidebar_position: 1
 ---
 
-Licence je povolení používat produkt AdGuard v souladu s [licenční smlouvou s koncovým uživatelem](https://adguard.com/eula.html). Pokud jsou licence vázány na e-mailovou adresu, lze licence AdGuardu nalézt v uživatelském účtu [](https://my.adguard.com/).
+Licence je povolení používat produkt AdGuard v souladu s [licenční smlouvou s koncovým uživatelem](https://adguard.com/eula.html). Pokud jsou licence vázány na e-mailovou adresu, lze licence AdGuardu nalézt v uživatelském účtu [](https://adguardaccount.com/).
 
 ## Jaké typy licencí AdGuardu existují
 
@@ -25,7 +25,7 @@ Existují také licence, které si uživatel může zakoupit z jiných zdrojů n
 - **Distributorské licence** a **Darované licence** mohou být časově omezené i časově neomezené. Licence s datem vypršení platnosti lze obnovit pouze ručně
     - Osobní — až pro 3 zařízení
     - Rodinná — až pro 9 zařízení
-- **Licence AdGuard Pro pro iOS** je zakoupena a spravována prostřednictvím App Store a lze ji používat pouze na zařízeních se systémem iOS a iPadOS se stejným Apple ID
+- **Licence AdGuard Pro pro iOS** a **AdGuard Pro** jsou zakoupeny a spravovány prostřednictvím App Store a lze je používat pouze na zařízeních se systémem iOS a iPadOS se stejným Apple ID
 
 :::tip
 
@@ -35,7 +35,7 @@ Chcete-li rozšířit limit zařízení, můžete provést [upgrade](../payment-
 
 ## Jak používat licenci AdGuardu
 
-Chcete-li licenci používat v zařízení, přihlaste se do aplikace AdGuard pomocí e-mailové adresy přidružené k licenci. Pokud licence ještě nebyla připojena k vaší e-mailové adrese, můžete to provést v [AdGuard účtu](https://my.adguard.com/). Chcete-li tak učinit, otevřete kartu *Licence* a klikněte na *Připojit licenci*.
+Chcete-li licenci používat v zařízení, přihlaste se do aplikace AdGuard pomocí e-mailové adresy přidružené k licenci. Pokud licence ještě nebyla připojena k vaší e-mailové adrese, můžete to provést v [AdGuard účtu](https://adguardaccount.com/). Chcete-li tak učinit, otevřete kartu *Licence* a klikněte na *Připojit licenci*.
 
 Případně můžete v aplikaci AdGuard zadat [licenční klíč](#license-key).
 

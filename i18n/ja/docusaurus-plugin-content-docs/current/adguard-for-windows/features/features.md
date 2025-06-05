@@ -1,5 +1,5 @@
 ---
-title: Features
+title: 機能
 sidebar_position: 1
 ---
 
@@ -11,30 +11,30 @@ sidebar_position: 1
 
 ## ホーム画面
 
-This article outlines everything you see when you open the program, including _Settings_, _Support_, _License_, and _About_. You’ll also find statistics on blocked ads and trackers.
+メイン画面には、_設定_、_サポート_、_ライセンス_、_バージョン情報_、およびブロックされた広告とトラッカーの数（統計）が表示されます。
 
-[Home screen](/adguard-for-windows/features/home-screen/)
+[ホーム画面](/adguard-for-windows/features/home-screen/)
 
 ## 設定
 
-You can customize the program to suit your needs by blocking only what bothers you, using a trusted DNS server, removing third-party cookies, and more.
+テーマと言語設定、広告ブロックのカスタマイズ、DNS通信を保護、ペアレンタルコントロール、拡張機能の管理、上級ユーザー向けの詳細設定などがあります：
 
-[Settings](/adguard-for-windows/features/settings/)
+[設定](/adguard-for-windows/features/settings/)
 
 ## 拡張機能
 
-Here you’ll how to use AdGuard as a userscript manager to extend the functionality of websites. You can add your own scripts as well as manage existing ones.
+ユーザースクリプトやユーザースタイルを追加することで、ウェブサイトの機能を拡張できる機能です：
 
-[Extensions](/adguard-for-windows/features/extensions/)
+[拡張機能](/adguard-for-windows/features/extensions/)
 
 ## ネットワーク
 
-This article describes additional network-related options and proxy settings where you can specify which proxy server AdGuard should use to update filters, download new versions, and so on.
+追加のネットワーク関連オプションとプロキシ設定についての説明です：
 
-[Network](/adguard-for-windows/features/network/)
+[ネットワーク](/adguard-for-windows/features/network/)
 
 ## その他の機能
 
-Here you can find information on how to reach support, manage your license, view details about the current version and privacy policy, check for updates, and explore options available in the tray menu.
+サポート、ライセンス管理、トレイメニューオプション、プログラムバージョンとアップデートなど：
 
-[Other features](/adguard-for-windows/features/others/)
+[その他の機能](/adguard-for-windows/features/others/)

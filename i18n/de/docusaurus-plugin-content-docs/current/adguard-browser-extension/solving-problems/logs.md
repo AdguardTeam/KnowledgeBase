@@ -13,19 +13,19 @@ sidebar_position: 1
 
 3. Aktivieren Sie den _Entwicklermodus_.
 
-   ![Entwicklermodus \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
+    ![Entwicklermodus \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
 
 4. Klicken Sie auf „background.html".
 
-   ![Hintergrund \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
+    ![Hintergrund \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
 
 5. Öffnen Sie den Tab _Konsole_.
 
-   ![Der Tab Konsole \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
+    ![Der Tab Konsole \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
 
 6. Öffnen Sie das Kontextmenü und wählen Sie _Speichern unter …_.
 
-   ![Speichern unter \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
+    ![Speichern unter \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
 
 ### Firefox
 
@@ -35,19 +35,19 @@ sidebar_position: 1
 
 3. Klicken Sie auf _Add-ons debuggen_.
 
-   ![Add-ons debuggen \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+    ![Add-ons debuggen \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
 
 4. Klicken Sie auf _Untersuchen_.
 
-   ![Untersuchen \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
+    ![Untersuchen \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
 
 5. Wechseln Sie zum Tab _Konsole_.
 
-   ![Konsole \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
+    ![Konsole \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
 
 6. Klicken Sie auf _Alle Nachrichten in Datei speichern_.
 
-   ![Speichern \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
+    ![Speichern \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
 
 ## Einreichen der Protokolle
 

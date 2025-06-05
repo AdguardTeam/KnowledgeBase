@@ -1,38 +1,38 @@
 ---
-title: How to collect debug logs
+title: Comment collecter les journaux de débogage
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article concerne AdGuard pour Android, un bloqueur de publicité multifonctionnel qui protège votre appareil au niveau système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Les données et/ou les fichiers fournis dans les journaux sont traités conformément à [la Politique de confidentialité d'AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-In this article, we'll guide you through the process of collecting debug logs, an essential troubleshooting step for solving complex issues that may potentially arise. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
+Dans cet article, nous vous guiderons le long du processus de collecte des journaux de débogage, une étape de dépannage essentielle pour résoudre les problèmes complexes qui peuvent survenir. Les journaux de débogage fournissent un aperçu détaillé du fonctionnement interne d'AdGuard pour Android. Si l'équipe d'assistance AdGuard vous demande de fournir des journaux de débogage, suivez simplement ces instructions.
 
 :::note
 
-AdGuard s'engage à protéger votre vie privée. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Avant d'envoyer vos journaux à l'équipe d'assistance, veuillez consulter le fichier car il peut contenir des informations supplémentaires que vous ne souhaitez pas partager. S'il contient de telles informations personnelles, nous vous recommandons de les supprimer au préalable.
+AdGuard s'engage à protéger votre vie privée. Nous suivons strictement notre [Politique de confidentialité](https://adguard.com/privacy/android.html) et ne collectons aucune information privée sur les utilisateurs. Avant d'envoyer vos journaux à l'équipe d'assistance, veuillez consulter le fichier car il peut contenir des informations supplémentaires que vous ne souhaitez pas partager. S'il contient de telles informations personnelles, nous vous recommandons de les supprimer au préalable.
 
 :::
 
-### Recording debug log
+### Enregistrement du journal de débogage
 
-To collect **debug** log and send it to us, you need to perform following steps:
+Pour collecter le journal de **débogage** et nous l'envoyer, vous devez suivre les étapes suivantes :
 
-1. Go to *Settings* → *General* → *Advanced*.
-1. Tap *Logging level* and set it to *Debug*.
-1. Reproduce the problem and try to remember the exact time it occurred.
-1. Wait a while, then return to *Settings* and choose the *Support* tab. Tap *Report a bug* and complete the required fields. Don't forget to check the *Send app logs and system info* checkbox. Finally tap *Send*.
+1. Allez dans *Paramètres* → *Général* → *Avancé*.
+1. Appuyez sur *Niveau de journalisation* et définissez-le sur *Débogage*.
+1. Reproduisez le problème et essayez de vous souvenir du moment exact où il s’est produit.
+1. Attendez un moment, puis revenez aux *Paramètres* et choisissez l'onglet *Assistance*. Appuyez sur *Signaler un bug* et remplissez les champs obligatoires. N'oubliez pas de cocher la case *Envoyer les journaux de l'application et les informations système*. Et finalement, tapez sur *Envoyer*.
 
-If you're interested in following the resolution of your issue and engaging in a dialogue with the developers, we recommend that you take the following steps after completing the first three:
+Si vous souhaitez suivre la résolution de votre problème et engager un dialogue avec les développeurs, nous vous recommandons de suivre les étapes suivantes après avoir terminé les trois premières :
 
-1. Wait a while, then return to the *Advanced* screen and export logs via *Export logs and system info*. Then report a bug on GitHub by following these [instructions](/guides/report-bugs.md).
-1. After creating an issue on GitHub, send the log file to devteam@adguard.com. Include the time of the bug and attach a link to your issue or its number (it appears as #number next to the title). Alternatively, you can upload the log file to Google Drive and send it to devteam@adguard.com. Add the file link to your GitHub issue
+1. Attendez un moment, puis revenez à l'écran *Avancé* et exportez les journaux via *Exporter les journaux et les informations système*. Signalez ensuite un bug sur GitHub en suivant ces [instructions](/guides/report-bugs.md).
+1. Après avoir créé un problème sur GitHub, envoyez le fichier journal à <devteam@adguard.com>. Indiquez la date du bug et joignez un lien vers votre problème ou son numéro (il apparaît sous la forme #numéro à côté du titre). Vous pouvez également télécharger le fichier journal sur Google Drive et l'envoyer à <devteam@adguard.com>. Ajoutez le lien du fichier à votre problème GitHub

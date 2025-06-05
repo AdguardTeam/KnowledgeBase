@@ -1,6 +1,6 @@
 ---
 title: Assistent
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info
@@ -32,13 +32,13 @@ Beim Öffnen des Assistenten werden zwei Tabs angezeigt: **Apps** und **Websites
 
 Nachdem Sie eine App ausgewählt haben (**Nehmen wir Chrome** als Beispiel), werden mehrere Optionen angezeigt.
 
-![Assistent Chrome-Menü \*mobile\_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Assistent Chrome-Menü \*mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
 #### Letzte Aktivität
 
 Sie werden zur AdGuard-App weitergeleitet, wo Sie detaillierte Informationen zu den letzten 10.000 Anfragen von Chrome sehen.
 
-![Letzte Aktivität der App \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![Letzte Aktivität der App \*mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
 
 #### App-Statistiken
 
@@ -68,11 +68,11 @@ Wählen Sie eine Website aus (**wir verwenden google.com hier nur als Beispiel**
 
 Wenn Sie auf diese Option tippen, wird `google.com` sofort zur Freigabeliste hinzugefügt und von AdGuard nicht mehr gefiltert. Werbung und Tracker werden für diese Website nicht blockiert.
 
-#### Letzte Aktivität
+#### Recent activity (websites)
 
 Sie werden zur AdGuard-App weitergeleitet, in der Sie detaillierte Informationen zu den letzten 10.000 Anfragen an google.com finden.
 
-![letzte Aktivität der Website \*mobile\_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+![letzte Aktivität der Website \*mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
 
 #### Website-Statistiken
 

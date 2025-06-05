@@ -63,7 +63,7 @@ Em dispositivos com Android 7 e anteriores, não é possível enviar um relatór
 
 Siga estas instruções:
 
-**Parte #1: prepare o dispositivo**
+### Parte #1: prepare o dispositivo
 
 1. Mude o dispositivo para o modo de desenvolvedor. Para fazer isso: vá para **Configurações** → **Sobre** → toque em **Número da compilação** 7 vezes.
 
@@ -75,7 +75,7 @@ Siga estas instruções:
 
 4 MB devem ser suficientes para armazenar os logs necessários até que você possa fazer a segunda parte (obter o log do dispositivo);
 
-**Parte #2: reproduza o problema**
+### Parte #2: reproduza o problema
 
 É importante reproduzir o problema depois de concluir a primeira parte.
 
@@ -83,7 +83,7 @@ Siga estas instruções:
 
 1. Lembre-se/anote a data e a hora da reprodução e inclua-a no e-mail enviado ao nosso suporte posteriormente.
 
-**Parte #3: obter o log**
+### Parte #3: obter o registro
 
 1. Conecte seu dispositivo a um PC com um cabo USB.
 
@@ -101,7 +101,7 @@ Siga estas instruções:
 
     `adb logcat -v threadtime -d > C:\Arquivos de programas\plataforma-ferramentas\logs.txt`
 
-    Envie por e-mail o arquivo `txt` criado, bem como o horário em que o problema foi reproduzido (da parte #2) para nossa equipe de suporte em support@adguard.com.
+    Envie por e-mail o arquivo `txt` criado, bem como o horário em que o problema foi reproduzido (da parte #2) para nosso suporte ao cliente em <support@adguard.com>.
 
 ### Maneira alternativa para usuários com ROOT
 
@@ -117,6 +117,6 @@ Siga estas instruções:
 
 :::note
 
-Nossa equipe de suporte processará seu tíquete muito mais rapidamente se você especificar o número do tíquete do HelpDesk ou o número do problema do GitHub na sua mensagem para o suporte.
+Nossa equipe de suporte processará seu bilhete muito mais rapidamente se você especificar o número do bilhete do HelpDesk ou o número do problema do GitHub na sua mensagem para o suporte.
 
 :::

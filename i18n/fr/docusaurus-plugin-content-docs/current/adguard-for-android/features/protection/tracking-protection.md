@@ -1,80 +1,80 @@
 ---
-title: Tracking protection
+title: Protection contre le suivi
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
+Cet article concerne AdGuard pour Android, un bloqueur de publicité multifonctionnel qui protège votre appareil au niveau système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-The Tracking protection module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Tracking protection_.
+Le module de Protection contre le suivi est accessible en appuyant sur l'onglet _Protection_ (deuxième icône en partant de la gauche en bas de l'écran) puis en sélectionnant _Protection contre le suivi_.
 
-_Tracking protection_ (formerly known as _Stealth Mode_) prevents websites from collecting information about you, such as your IP addresses, information about your browser and operating system, screen resolution, and the page you came or were redirected from. It can also block cookies that websites use to mark your browser, save your personal settings and user preferences, or recognize you on your next visit.
+_La protection contre le suivi_ (anciennement connue sous le nom de _Mode furtif_) empêche les sites Web de recueillir des informations vous concernant, telles que vos adresses IP, des informations sur votre navigateur et votre système d'exploitation, la résolution de l'écran et la page à partir de laquelle vous êtes arrivé ou avez été redirigé. Le module peut également bloquer les cookies que les sites Web utilisent pour marquer votre navigateur, enregistrer vos paramètres personnels et préférences d'utilisateur, ou vous reconnaître lors de votre prochaine visite.
 
-![Tracking protection \*mobile\_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
+![Protection contre le suivi \*mobile_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
 
-_Tracking protection_ has three pre-configured levels of privacy protection (_Standard_, _High_, and _Extreme_) and one user-defined level (_Custom_).
+_La protection contre le suivi_ a trois niveaux préconfigurés de protection de la confidentialité (_Standard_, _Élevé_, et _Extrême_) et un niveau défini par l'utilisateur (_Personnalisé_).
 
-Here are the active features of the pre-configured levels:
+Voici les fonctionnalités actives des niveaux préconfigurés :
 
 1. **Standard**
 
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
+    a. _Blocage du suivi_. Cette fonctionnalité utilise le _Filtre AdGuard de protection contre le suivi_ pour vous protéger des compteurs en ligne et des outils analytiques web
 
-   b. _Ask websites not to track you_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+    b. _Demander aux sites web de ne pas vous suivre_. Cette fonctionnalité envoie les signaux du [Contrôle global de la confidentialité](https://globalprivacycontrol.org/) et [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) aux sites Web que vous visitez, demandant aux applications web de désactiver le suivi de votre activité
 
-   c. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending information about its version and modifications to Google domains (including DoubleClick and Google Analytics)
+    c. _Retirer l'en-tête X-Client-Data_. Il interdit à Google Chrome d'envoyer des informations sur sa version et ses modifications aux domaines de Google (y compris DoubleClick et les analytiques de Google)
 
-2. **High**
+2. **Haut**
 
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
+    a. _Blocage du suivi_. Cette fonctionnalité utilise le _Filtre AdGuard de protection contre le suivi_ pour vous protéger des compteurs en ligne et des outils analytiques web
 
-   b. _Remove tracking parameters from URLs_. This feature uses _AdGuard URL Tracking filter_ to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
+    b. _Supprimer les paramètres de suivi des URL_. Cette fonctionnalité utilise le _Filtre AdGuard du suivi des URL_ pour retirer les paramètres de suivi, tels que `utm_*` et `fb_ref`, des URL de page
 
-   c. _Hide your search queries_. This feature hides queries for websites visited from a search engine
+    c. _Masquez vos requêtes de recherche_. Cette fonctionnalité masque les requêtes pour les sites Web visités depuis un moteur de recherche
 
-   d. _Ask websites not to track you_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+    d. _Demander aux sites web de ne pas vous suivre_. Cette fonctionnalité envoie les signaux du [Contrôle global de la confidentialité](https://globalprivacycontrol.org/) et [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) aux sites Web que vous visitez, demandant aux applications web de désactiver le suivi de votre activité
 
-   e. _Self-destruction of third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes
+    e. _Autodéstruction des cookies tiers_. Cette fonctionnalité limite la durée de vie des cookies tiers à 180 minutes
 
-   :::caution
+    :::caution
 
-   This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. To block only tracking cookies, use the _Standard_ protection level.
+    Cette fonctionnalité supprime tous les cookies tiers après leur expiration forcée. Cela inclut vos connexions via des réseaux sociaux ou d'autres services tiers. Vous devrez peut-être vous reconnecter périodiquement à certains sites Web ou rencontrer d'autres problèmes liés aux cookies. Pour bloquer uniquement les cookies de suivi, utilisez le niveau de protection _Standard_.
 
-   :::
+    :::
 
-   f. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
+    f. _Retirer l'en-tête X-Client-Data_. Cette fonctionnalité empêche Google Chrome d'envoyer ses informations de version et de modifications aux domaines Google (y compris DoubleClick et Google Analytics)
 
-3. **Extreme** (formerly known as _Ultimate_)
+3. **Extrême** (anciennement connu sous le nom _Ultimate_)
 
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
+    a. _Blocage du suivi_. Cette fonctionnalité utilise le _Filtre AdGuard de protection contre le suivi_ pour vous protéger des compteurs en ligne et des outils analytiques web
 
-   b. _Remove tracking parameters from URLs_. This feature uses _AdGuard URL Tracking filter_ to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
+    b. _Supprimer les paramètres de suivi des URL_. Cette fonctionnalité utilise le _Filtre AdGuard du suivi des URL_ pour retirer les paramètres de suivi, tels que `utm_*` et `fb_ref`, des URL de page
 
-   c. _Hide your search queries_. This feature hides queries for websites visited from a search engine
+    c. _Masquez vos requêtes de recherche_. Cette fonctionnalité masque les requêtes pour les sites Web visités depuis un moteur de recherche
 
-   d. _Ask websites not to track you_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+    d. _Demander aux sites web de ne pas vous suivre_. Cette fonctionnalité envoie les signaux du [Contrôle global de la confidentialité](https://globalprivacycontrol.org/) et [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) aux sites Web que vous visitez, demandant aux applications web de désactiver le suivi de votre activité
 
-   e. _Self-destruction of third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes
+    e. _Autodéstruction des cookies tiers_. Cette fonctionnalité limite la durée de vie des cookies tiers à 180 minutes
 
-   :::caution
+    :::caution
 
-   This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. To block only tracking cookies, use the _Standard_ protection level.
+    Cette fonctionnalité supprime tous les cookies tiers après leur expiration forcée. Cela inclut vos connexions via des réseaux sociaux ou d'autres services tiers. Vous devrez peut-être vous reconnecter périodiquement à certains sites Web ou rencontrer d'autres problèmes liés aux cookies. Pour bloquer uniquement les cookies de suivi, utilisez le niveau de protection _Standard_.
 
-   :::
+    :::
 
-   f. _Block WebRTC_. This feature blocks WebRTC, a known vulnerability that can leak your real IP address even if you use a proxy or VPN
+    f. _Bloquer WebRTC_. Cette fonctionnalité bloque WebRTC, une vulnérabilité connue qui peut divulguer votre adresse IP réelle même si vous utilisez un proxy ou un VPN
 
-   g. _Block Push API_. This feature prevents your browsers from receiving push messages from servers
+    g. _Bloquer l'API Push_. Cette fonctionnalité empêche vos navigateurs de recevoir des messages push des serveurs
 
-   h. _Block Location API_. This feature prevents browsers from accessing your GPS data and determining your location
+    h. _Bloquer l'API de position_. Cette fonctionnalité empêche les navigateurs d'accéder à vos données GPS et de déterminer votre emplacement
 
-   i. _Hide Referer from third parties_. This feature prevents third parties from knowing which websites you visit. It hides the HTTP header that contains the URL of the initial page and replaces it with a default or custom one that you can set
+    i. _Masquer le référent auprès des tiers_. Cette fonctionnalité empêche les tiers de savoir quels sites Web vous visitez. Il masque l'en-tête HTTP qui contient l'URL de la page initiale et le remplace par une valeur par défaut ou personnalisée que vous pouvez définir
 
-   j. _Hide your User-Agent_. This feature removes identifying information from the User-Agent header, which typically includes the name and version of the browser, the operating system, and language settings
+    j. _Masquer votre agent utilisateur_. Cette fonctionnalité retire les informations d'identification de l'Agent utilisateur de l'en-tête, qui inclut généralement le nom et la version du navigateur, le système d'exploitation et les paramètres de langue
 
-   k. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
+    k. _Retirer l'en-tête X-Client-Data_. Cette fonctionnalité empêche Google Chrome d'envoyer ses informations de version et de modifications aux domaines Google (y compris DoubleClick et Google Analytics)
 
-You can tweak individual settings in _Tracking protection_ and come up with a custom configuration. Every setting has a description that will help you understand its role. [Read more about what the various _Tracking protection_ settings do](/general/stealth-mode) and utilize them cautiously, as some may interfere with the functionality of websites and browser extensions.
+Vous pouvez ajuster des paramètres individuels dans _Protection contre le suivi_ et élaborer une configuration personnalisée. Chaque paramètre possède une description qui vous aidera à comprendre son rôle. [Découvrez-en plus sur les différents paramètres de _Protection contre le pistage_](/general/stealth-mode) et utilisez-les avec prudence, car certains peuvent interférer avec la fonctionnalité des sites Web et des extensions de navigateur.

@@ -1,6 +1,6 @@
 ---
 title: Known compatibility issues with Android apps
-sidebar_position: 16
+sidebar_position: 14
 ---
 
 :::정보

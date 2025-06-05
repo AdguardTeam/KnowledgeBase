@@ -7,7 +7,7 @@ En tu cuenta, puedes administrar tus licencias, dispositivos vinculados a ellas,
 
 ## Administrar la configuración de la cuenta
 
-In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable one-time code login or [two-factor authentication](../2fa), view the data stored about you by AdGuard, and select the language of your account and notifications.
+En la sección *Configuración* de tu cuenta AdGuard, puedes actualizar o restablecer tu contraseña, cambiar tu dirección de correo electrónico, habilitar [la autenticación de dos factores](../2fa), ver los datos almacenados sobre ti por AdGuard y elegir el idioma de tu cuenta personal y de las notificaciones.
 
 En esta sección también puedes gestionar tus preferencias de correo electrónico:
 
@@ -24,10 +24,9 @@ En la sección *Licencias*, puedes administrar tus licencias y los dispositivos 
 
 - vinculada o no vinculada,
 - ampliada,
-- mejorada,
-- cancelada. También puedes actualizar tus datos de pago.
+- mejorada.
 
-Los dispositivos vinculados a tus licencias del bloqueador de anuncios AdGuard se pueden desvincular o cambiar de nombre. Para desvincular dispositivos no utilizados, haz clic en el número de dispositivos vinculados junto a *Dispositivos*, luego selecciona la flecha derecha → *Eliminar*.
+Los dispositivos vinculados a tus licencias del bloqueador de anuncios AdGuard se pueden desvincular o cambiar de nombre. Para desvincular dispositivos no utilizados, haz clic en el número de dispositivos enlazados junto a *Dispositivos*, luego selecciona `>` → *Eliminar*.
 
 ## Ver compras
 

@@ -1,6 +1,6 @@
 ---
 title: Bekannte Kompatibilitätsprobleme mit Android-Anwendungen
-sidebar_position: 16
+sidebar_position: 14
 ---
 
 :::info

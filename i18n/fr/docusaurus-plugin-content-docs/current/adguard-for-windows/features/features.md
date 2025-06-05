@@ -11,30 +11,30 @@ Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonction
 
 ## Écran d'accueil
 
-Cet article décrit tout ce que vous voyez lorsque vous ouvrez le programme, y compris _Paramètres_, _Assistance_, _Licence_ et _À propos_. Vous trouverez également des statistiques sur les publicités bloquées et les traqueurs.
+Sur l'écran principal, vous trouverez _Paramètres_, _Assistance_, _Licence_ et _À propos_, ainsi que des statistiques sur les publicités et les traqueurs bloqués
 
 [Écran d'accueil](/adguard-for-windows/features/home-screen/)
 
 ## Paramètres
 
-Vous pouvez personnaliser le programme pour répondre à vos besoins en bloquant uniquement ce qui vous dérange, en utilisant un serveur DNS de confiance, en supprimant les cookies tiers, et plus encore.
+Paramètres de thème et de langue, personnalisation du blocage des publicités, Protection DNS, contrôles parentaux, gestion des extensions et options avancées pour les utilisateurs experts
 
 [Paramètres](/adguard-for-windows/features/settings/)
 
 ## Extensions
 
-Ici, vous apprendrez comment utiliser AdGuard en tant que gestionnaire de scripts utilisateur pour étendre la fonctionnalité des sites Web. Vous pouvez ajouter des scripts de votre choix et gérer les scripts existants.
+Une fonctionnalité qui vous permet d'étendre la fonctionnalité des sites Web en ajoutant des scripts utilisateur et des styles utilisateur
 
 [Extensions](/adguard-for-windows/features/extensions/)
 
 ## Réseau
 
-Cet article décrit des options supplémentaires liées au réseau et les paramètres de proxy où vous pouvez spécifier quel proxy AdGuard doit utiliser pour mettre à jour le filtrage, télécharger de nouvelles versions, etc.
+Options supplémentaires liées au réseau et paramètres du proxy
 
 [Réseau](/adguard-for-windows/features/network/)
 
 ## Autres fonctions
 
-Ici, vous pouvez trouver des informations sur la façon de contacter l'assistance, de gérer votre licence, de consulter les détails sur la version actuelle et la Politique de confidentialité, de vérifier les mises à jour et d'explorer les options disponibles dans le menu de la barre d'état.
+Assistance, gestion des licences, options de menu de la barre d'état, version du programme et mises à jour
 
 [Autres fonctionnalités](/adguard-for-windows/features/others/)

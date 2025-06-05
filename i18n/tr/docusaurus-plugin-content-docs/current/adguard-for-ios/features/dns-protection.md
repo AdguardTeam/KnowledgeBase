@@ -19,7 +19,7 @@ DNS ayarlarını yönetebilmek için AdGuard uygulamaları yerel bir VPN kurulma
 
 ### DNS implementation {#dns-implementation}
 
-![DNS implementation screen \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_en.jpeg)
+![DNS implementation screen \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_en.jpeg)
 
 This section has two options: AdGuard and Native implementation. Temel olarak, bunlar DNS ayarlamanın iki yöntemidir.
 
@@ -29,7 +29,7 @@ In Native implementation, the DNS is handled by the system and not the app. This
 
 DNS Koruması ekranında göreceğiniz bir sonraki bölüm DNS sunucusudur. It shows the currently selected DNS server and encryption type. Bunlardan herhangi birini değiştirmek için DNS sunucusu ekranına girmek üzere düğmeye dokunun.
 
-![DNS servers \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
+![DNS servers \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
 
 Servers differ by their speed, employed protocol, trustworthiness, logging policy, etc. By default, AdGuard will suggest several DNS servers from among the most popular ones (including AdGuard DNS). Şifreleme türünü değiştirmek (sunucu sahibi tarafından böyle bir seçenek sağlanmışsa) veya sunucunun ana sayfasını görüntülemek için herhangi birine dokunun. We added labels such as `No logging policy`, `Ad blocking`, `Security` to help you make a choice.
 
@@ -51,7 +51,7 @@ Her şeyin doğru ayarlanıp ayarlanmadığını kontrol etmek için [teşhis sa
 
 ### Network settings {#network-settings}
 
-![Ağ ayarları ekranı \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
+![Ağ ayarları ekranı \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
 
 Kullanıcılar, DNS güvenliklerini Ağ ayarları ekranından da yönetebilirler. _Filter mobile data_ and _Filter Wi-Fi_ enable or disable DNS protection for the respective network types. Further down, at _Wi-Fi exceptions_, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
 
@@ -63,7 +63,7 @@ Nasıl erişilir:
 
 _Protection_ (the shield icon in the bottom menu bar) → _DNS protection_ → _DNS filtering_
 
-![DNS filtreleme ekranı \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
+![DNS filtreleme ekranı \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
 #### DNS filters {#dns-filters}
 

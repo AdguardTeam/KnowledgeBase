@@ -11,13 +11,13 @@ sidebar_position: 2
 
 「设置」是最需要关注的部分。 用户可以在此处配置本应用以完全符合您的需求：仅拦截困扰您的广告，使用受信任提供商的 DNS 服务器，移除第三方 Cookie 等等。
 
-![设置 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings.png)
+![设置 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings.png)
 
 ### 常规设置
 
 用户可以在此处设置语言和主题（暗色或亮色），开启 AdGuard 随系统启动运行，静寂自动更新，选择更新通道和过滤器更新检查时间间隔。 如果 Windows 版 AdGuard 无法正常工作，而支持团队要求用户[收集「调试日志」](/adguard-for-windows/solving-problems/adguard-logs.md)，那么「设置」也是要查看的地方。
 
-![高级设置 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
+![高级设置 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
 
 在屏幕的最底部，可以找到「高级设置」。 无意识的更改某些高级设置可能会引起 AdGuard 出现性能问题，中断因特网连接或危及您的安全和隐私。 这就是为什么我们建议用户仅在自己知道在做什么或我们的支持团队要求的情况下才打开此部分。 如您想知道在「高级设置」中可以设置什么，请阅读[专门文章](/adguard-for-windows/solving-problems/low-level-settings.md)。
 
@@ -25,7 +25,7 @@ sidebar_position: 2
 
 此为 Windows 版 AdGuard 的主模块，可从用户访问的网站上和设备上安装的应用内移除广告。 要过来广告和威胁隐私的内容，如横幅，弹窗或跟踪器，AdGuard 使用不同的过滤器：用[特定语法](/general/ad-filtering/create-own-filters)编写的有类似用途的规则组。 要了解什么是过滤器及其工作原理，请阅读[本文](/general/ad-filtering/how-ad-blocking-works)。
 
-![广告拦截器 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
+![广告拦截器 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
 
 在广告拦截器模块中，可以进行以下设置：
 
@@ -44,7 +44,7 @@ sidebar_position: 2
 
 众多网站收集其访问者的信息，如他们的 IP 地址，所用浏览器和操作系统的信息，屏幕分辨率，甚至是用户从何重新定向而至。 某些网站使用 Cookie 标记浏览器并保存个人设置，用户首选项或在用户下次访问时“识别”您。 隐身模式保护个人信息免受如数据/统计收集系统的侵害。
 
-![隐身模式 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/stealth-mode.png)
+![隐身模式 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/stealth-mode.png)
 
 用户可以灵活调整隐身模式的工作方式：例如，可以阻止网站接收您在因特网查找它时所用的搜索请求，自动删除第三方和网站自身的 Cookie，禁用可用于跟踪用户行踪的位置共享。
 
@@ -60,7 +60,7 @@ sidebar_position: 2
 - 激活声音通知，
 - 同意向 AdGuard 服务器提交匿名安全相关信息，以帮助我们保持恶意和钓鱼网站数据库最新状态。
 
-![浏览安全 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
+![浏览安全 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
 
 要了解更多关于「浏览安全」功能的信息，请阅读[此文章](/general/browsing-security)。
 
@@ -68,24 +68,33 @@ sidebar_position: 2
 
 有三个重要原因值得用户探索 DNS 保护设置。 首先，避免受到您 ISP 的跟踪。 每次用户打开网站，例如 google.com，浏览器都会给 DNS 服务器发送请求以获取相应网站的 IP 地址。 通常，DNS 服务器属于您的 ISP，这使他们能够跟踪用户的在线活动。 第二，加密 DNS 流量。 第三，[在 DNS 级别上屏蔽内容](https://adguard-dns.io/kb/general/dns-filtering/)。
 
-![DNS 保护 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
+![DNS 保护 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
 
-在 Windows 版 AdGuard 的 DNS 保护模块内，用户可以从已知的 DNS 提供商内选择 DNS 服务器，包括可以拦截广告和跟踪器的 [AdGuard DNS](https://adguard-dns.io/kb/)，还可拦截成人内容的 AdGuard DNS 家庭保护，或提供安全可靠连接但不过滤任何内容的 AdGuard DNS 无过滤。 用户也可以添加自定义 DNS 服务器。 还可以使用 [DNS 规则语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/)添加自定义规则。 如有必要，用户可以添加[自己选择的 DNS 过滤器](https://filterlists.com)。
+在 AdGuard Windows 版的 DNS 保护模块中，用户可以从知名 DNS 提供商中选择 DNS 服务器，包括可以拦截广告和跟踪器的 AdGuard DNS，还可拦截成人内容的 AdGuard DNS 家庭保护，或提供安全可靠连接但不过滤任何内容的 AdGuard DNS 无过滤。 您也可以使用 [DNS 规则语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/) 添加自定义 DNS 服务器和规则。 如有必要，用户可以添加[自己选择的 DNS 过滤器](https://filterlists.com)。
+
+从 v7.20 版本开始，您还可以通过从预置的可信过滤器列表中选择来轻松添加过滤器。 为了方便用户使用，它们被分为四类：
+
+- **常规**：拦截广告和跟踪器。
+- **区域**：在特定语言的网站上拦截广告和跟踪器。
+- **安全**：屏蔽钓鱼和不可靠的网站。
+- **其他**：涵盖不适合上述类别的特殊用例。
+
+![DNS 过滤 \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
 
 ### 家长控制
 
-有几个网站应该限制儿童使用电脑访问。 此任务由家长控制完成。
+有一些网站不适合儿童访问，建议在儿童使用的电脑上对其进行访问限制。 这项任务由「家长控制」功能完成。
 
-![家长控制 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
+![家长控制 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
 此模块检查浏览器打开的网页内容，过滤儿童不宜的内容：成人图像和文字、粗俗语言、暴力、毒品宣传等。 家长控制设置受密码保护，孩子无法绕过限制。 此模块不仅拦截对不良网站的指向，也可从搜索结果中移除儿童不宜的链接。
 
 在「家长控制」模块，用户可以开启「安全搜索」，管理「黑名单」和「白名单」以自定义此选项的工作方式。 用户也可以选中「阻止下载可执行文件」以防止儿童在计算机上下载和安装软件。 「家长控制」模块有多个选项：用户可以选择「家长控制」保护特定的 Windows 用户，设置密码保护 AdGuard 设置以防更改。
 
-![家长控制 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
+![家长控制 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
 ### 浏览器助手
 
-![浏览器助手 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![浏览器助手 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
 用户可以在此选项页上轻松处理已安装的 AdGuard 浏览器助手，其主功能是从浏览器内直接管理过滤。 我们在[单独的文章](/adguard-for-windows/browser-assistant.md)内解释其工作方式以及如您的浏览器没有浏览器助手要如何处理。

@@ -38,7 +38,7 @@ Quando ti trovi di fronte una traduzione che richiede l'uso dei plurali, potrest
 
 Ecco alcune fonti di informazioni che puoi utilizzare.
 
-La [Guida di Localizzazione](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contiene un ampio elenco di lingue. La quantità di forme plurali per le diverse lingue è mostrato come segue: `nplurals=2`, `nplurals=4` e così via. The numeral after the Equals sign `=` indicates the number of plural forms of the respective language.
+La [Guida di Localizzazione](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contiene un ampio elenco di lingue. La quantità di forme plurali per le diverse lingue è mostrato come segue: `nplurals=2`, `nplurals=4` e così via. Il numero dopo il segno Uguale `=` indica il numero di forme plurali della lingua rispettiva.
 
 Inoltre, puoi ottenere le informazioni sulle forme plurali nella [Repository Locale di Dati Comuni Unicode](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Le Regole Plurali CLDR indicano una forma aggiuntiva della parola per i numeri decimali (1,5; 2,3; 100,1…), ma non le utilizziamo nelle traduzioni di AdGuard.
 
@@ -137,7 +137,7 @@ Pertanto, la traduzione dall'inglese al serbo dovrebbe essere:
 
 Sebbene sia ovvio che gli ultimi due modelli non presentino differenze, è molto importante seguire la regola: **Il numero di modelli dovrebbe riflettere il numero di forme plurali della rispettiva lingua!** (tipicamente, per questo tipo di stringhe contenenti plurali).
 
-## Short summary {#summary}
+## Riepilogo breve {#summary}
 
 Traducendo i progetti di AdGuard, presta particolare attenzione alle frasi che richiedono l'utilizzo di forme plurali.
 

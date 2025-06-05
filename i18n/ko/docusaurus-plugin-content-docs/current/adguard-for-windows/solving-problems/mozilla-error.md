@@ -9,7 +9,7 @@ sidebar_position: 11
 
 :::
 
-[HTTPS 필터링](/general/https-filtering/what-is-https-filtering)이 활성화된 Windows용 AdGuard의 일부 사용자는 google.com 및 youtube.com과 같은 특정 웹사이트를 방문할 수 없습니다. Instead of opening a website, browsers with Strict Certificate Pinning would display a `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE` error.
+[HTTPS 필터링](/general/https-filtering/what-is-https-filtering)이 활성화된 Windows용 AdGuard의 일부 사용자는 google.com 및 youtube.com과 같은 특정 웹사이트를 방문할 수 없습니다. 엄격한 인증서 고정을 사용하는 브라우저는 웹사이트를 여는 대신 `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE` 오류를 표시합니다.
 
 영향을 받는 브라우저 목록은 다음과 같습니다.
 

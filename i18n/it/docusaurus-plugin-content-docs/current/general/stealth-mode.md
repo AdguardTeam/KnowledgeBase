@@ -3,7 +3,7 @@ title: Modalità Invisibilità (Protezione dal tracciamento)
 sidebar_position: 4
 ---
 
-Molti siti web raccolgono informazioni sui propri visitatori, quali il loro indirizzo IP, browser e sistema operativo installati, risoluzione dello schermo e persino la pagina da cui un visitatore è stato reindirizzato. Alcune pagine web utilizzano i cookie per contrassegnare il tuo browser e salvare le tue impostazioni personali e preferenze o per "riconoscerti" alla tua visita successiva. *La modalità invisibile* (o *Protezione dal tracciamento* in AdGuard per Windows e anche nell'estensione del browser AdGuard) protegge le tue informazioni personali da tali sistemi di raccolta dati e statistiche.
+Molti siti web raccolgono informazioni sui propri visitatori, quali il loro indirizzo IP, browser e sistema operativo installati, risoluzione dello schermo e persino la pagina da cui un visitatore è stato reindirizzato. Alcune pagine web utilizzano i cookie per contrassegnare il tuo browser e salvare le tue impostazioni personali e preferenze o per "riconoscerti" alla tua visita successiva. La *Protezione dal tracciamento* protegge le tue informazioni personali da tali sistemi di raccolta dati e statistiche.
 
 Puoi regolare in modo flessibile il funzionamento della Modalità Invisibilità: ad esempio, puoi impedire al sito web di ricevere la richiesta di ricerca che hai utilizzato per trovarlo su Internet, eliminare automaticamente i cookie di terze parti, disattivare la condivisione della posizione del browser, utilizzabile per tracciare la tua posizione e nascondere il tuo vero indirizzo IP o persino sostituirlo con uno arbitrario.
 
@@ -95,7 +95,7 @@ Inoltre, puoi impostare un valore arbitrario per il Referente, inserendolo nel c
 
 Tieni presente che per poter filtrare il traffico, le applicazioni AdGuard "intercettano" le richieste dal browser al server. Le richieste effettuate agli server di annunci, tracciamento e di phishing possono essere modificate prima dell'invio al server o bloccate completamente. Lo stesso valore per l'opzione *Nascondi Referente dalle terze parti*: AdGuard intercetta le richieste HTTP(S), in particolare per rimuovere o modificare l'intestazione del Referente, se quest'opzione è abilitata. Tuttavia, ciò accade solo dopo che queste richieste "lasciano" il browser. Ciò significa che se monitori il Referente nel browser (ad esempio, con l'aiuto degli Strumenti per Sviluppatori di Chrome), vedrai il Referente originale, poiché la richiesta non ha ancora raggiunto AdGuard. Puoi utilizzare software come [Fiddler](https://www.telerik.com/fiddler) per assicurarti che il Referente sia alterato correttamente.
 
-D'altra parte, a causa della natura stessa di tutte le estensioni del browser, l'Estensione Browser AdGuard funziona "all'interno" del browser. Altererà il Referente in quel momento, quindi, gli Strumenti per Sviluppatori mostreranno il Referente desiderato per le tue richieste.
+A causa della natura stessa di tutte le estensioni del browser, l'Estensione Browser AdGuard funziona "all'interno" del browser. Altererà il Referente in quel momento, quindi, gli Strumenti per Sviluppatori mostreranno il Referente desiderato per le tue richieste.
 
 ### Nascondi User Agent {#useragent}
 

@@ -51,7 +51,7 @@ Suchen Sie den Abschnitt **Diese Erweiterungen zulassen** und suchen Sie dann **
 
 ![Wählen Sie "AdGuard" im Abschnitt "Diese Erweiterungen zulassen" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_en.png)
 
-Tippen Sie darauf und legen Sie dann den Schalter um. Auf demselben Bildschirm setzen Sie die Berechtigung *Alle Websites* für AdGuard entweder auf *Zulassen* oder *Fragen*. Wenn Sie *Zulassen* wählen, müssen Sie nicht jedes Mal, wenn Sie eine neue Website besuchen, Ihre Zustimmung geben. Wenn Sie sich nicht sicher sind, wählen Sie *Fragen*, um die Berechtigungen für jeden Website zu erteilen.
+Tap it, then toggle the switch on. Auf demselben Bildschirm setzen Sie die Berechtigung *Alle Websites* für AdGuard entweder auf *Zulassen* oder *Fragen*. Wenn Sie *Zulassen* wählen, müssen Sie nicht jedes Mal, wenn Sie eine neue Website besuchen, Ihre Zustimmung geben. Wenn Sie sich nicht sicher sind, wählen Sie *Fragen*, um die Berechtigungen für jeden Website zu erteilen.
 
 ![Erweiterungseinstellungen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 

@@ -9,50 +9,50 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
 :::
 
-## Funktionen
+## Features
 
-Im Folgenden werden die wichtigsten Funktionen und Einstellungen der AdGuard Browsererweiterung beschrieben.
+Die wichtigsten Funktionen und Einstellungen der AdGuard Browsererweiterung
 
 [Funktionen](/adguard-browser-extension/features)
 
 ## Verfügbarkeit
 
-In diesem Artikel erfahren Sie mehr über die unterstützten Browser und Plattformen, auf denen die Erweiterung installiert werden kann.
+Unterstützte Browser und Plattformen, auf denen die Erweiterung installiert werden kann
 
 [Verfügbarkeit](/adguard-browser-extension/availability)
 
 ## Installation
 
-Der Artikel erklärt, wie Sie die AdGuard Browsererweiterung auf verschiedenen unterstützten Browsern installieren.
+Installation und Entfernung
 
 [Installation](/adguard-browser-extension/installation)
 
 ## Kompatibilität mit der eigenständigen App
 
-Der Artikel erklärt die Kompatibilität der AdGuard Browsererweiterung mit den AdGuard Desktop-Anwendungen.
+Kompatibilität der AdGuard Browsererweiterung mit den AdGuard-Desktop-Apps
 
 [Kompatibilität mit der eigenständigen App](adguard-browser-extension/compatibility)
 
 ## AdGuard Browsererweiterung für Chrome MV3
 
-In diesem Artikel wird die AdGuard-Browsererweiterung für Chrome besprochen, die mit der Manifest V3-API kompatibel ist, und wie sie sich von der auf Manifest V2 basierenden Browsererweiterung unterscheidet.
+Eine separate AdGuard Browsererweiterung, die mit der Manifest V3-API kompatibel ist
 
 [AdGuard Browsererweiterung für Chrome MV3](/adguard-browser-extension/mv3-version/)
 
 ## Browser-geschützte Webseiten
 
-Der Artikel beschreibt, wie die AdGuard-Browsererweiterung geschützte Seiten verwaltet und das Sperren von Werbung auf bestimmten sensiblen Websites einschränkt, um die ordnungsgemäße Funktionalität sicherzustellen.
+Eingeschränkte Domains, deren Inhalt nicht mit Werbeblocker-Erweiterungen geändert werden kann
 
 [Browser-geschützte Seiten](/adguard-browser-extension/protected-pages)
 
 ## Probleme lösen
 
-Dieser Abschnitt enthält Anleitungen zu bekannten Problemen und möglichen Lösungen.
+Bekannte Probleme und mögliche Lösungen
 
 [Probleme lösen](/adguard-browser-extension/solving-problems)
 
 ## Vergleich mit eigenständigen Anwendungen
 
-Der Artikel hebt die Unterschiede zwischen den AdGuard-Erweiterungen und den Desktop-Anwendungen in Bezug auf Funktionalität, Abdeckung und Merkmale hervor.
+Die Unterschiede in der Funktionalität und den Merkmalen zwischen den AdGuard-Erweiterungen und den Desktop-Apps
 
 [Kompatibilität mit der eigenständigen App](/adguard-browser-extension/comparison-standalone)

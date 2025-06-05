@@ -1,6 +1,6 @@
 ---
 title: Cum să configurați proxy-ul de ieșire
-sidebar_position: 8
+sidebar_position: 7
 ---
 
 :::info
@@ -141,7 +141,7 @@ Trebuie să ștergeți aplicația Shadowsocks din filtrare înainte de a configu
 
 *Aici presupunem că sunteți deja client Clash și l-ați instalat pe dispozitivul dvs.*
 
-1. Deschideți Clash și mergeți la **Setări** → **Rețea** → **Direcționați traficul sistemului** și activați comutatorul. Aceasta va seta Clash în modul proxy.
+1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and toggle the switch on. Aceasta va seta Clash în modul proxy.
 
 1. Deschideți AdGuard și mergeți la **Gestionarea aplicațiilor**. Alegeți **Clash pentru Android** și dezactivați **Direcționați traficul prin AdGuard**. Aceasta va elimina buclele de trafic.
 

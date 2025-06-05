@@ -39,7 +39,7 @@ AdGuard может значительно расширять функциона�
 
 :::
 
-#### Отключить AMP
+#### Disable AMP
 
 Скрипт, который предустановлен только в AdGuard для Android. Он отключает AMP (Accelerated Mobile Pages или «ускоренные мобильные страницы») на странице результатов поиска Google. [На GitHub](https://github.com/AdguardTeam/DisableAMP) есть подробности об этом пользовательском скрипте и о том, как его установить.
 
@@ -196,21 +196,21 @@ AdGuard provides an instance of the `PolicyApi` class that allows you to manage 
 
 You can access the instance of this class by using the `ADG_policyApi` variable in your userscript.
 
-##### Properties
+##### Свойства
 
-- `name: string` — a name of the policy (Default is `"AGPolicy"`).
-- `isSupported: boolean` — a flag indicating whether or not the Trusted Types API is supported by the current browser.
+- `name: string` — название политики (по умолчанию `AGPolicy`).
+- `isSupported: boolean` — флаг, указывающий, поддерживается ли API Trusted Types текущим браузером.
 
 ##### Polyfilled methods
 
-- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). If not supported, returns `input: string`.
-- [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). If not supported, returns `input: string`.
-- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). If not supported, returns `input: string`.
-- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). If not supported, returns `null`.
-- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). If not supported, returns `null`.
-- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). If not supported, returns `false`.
-- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). If not supported, returns `false`.
-- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). If not supported, returns `false`.
+- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). Если не поддерживается, возвращает `input: string`.
+- [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). Если не поддерживается, возвращает `input: string`.
+- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). Если не поддерживается, возвращает `input: string`.
+- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). Если не поддерживается, возвращает `null`.
+- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). Если не поддерживается, возвращает `null`.
+- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). Если не поддерживается, возвращает `false`.
+- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). Если не поддерживается, возвращает `false`.
+- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). Если не поддерживается, возвращает `false`.
 
 ##### Additional Types
 
@@ -242,7 +242,7 @@ ADG_TrustedType.HTML // "TrustedHTML"
 type TrustedValue = string | TrustedHTML | TrustedScript | TrustedScriptURL;
 ```
 
-##### Additional methods
+##### Дополнительные методы
 
 ```typescript
 /**
@@ -363,30 +363,30 @@ divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML"
 
 3. Чтобы создать пользовательский стиль, сначала напишите заголовок с метаданными, например:
 
-   ```CSS
-   /* ==UserStyle==
-   @name New userstyle
-   @version 1.0
-   ==/UserStyle== */
-   ```
+ ```CSS
+ /* ==UserStyle==
+ @name New userstyle
+ @version 1.0
+ ==/UserStyle== */
+ ```
 
 4. После метаданных добавьте сам пользовательский стиль на основе CSS. AdGuard поддерживает доменные имена, соответствующие (`@-moz-document domain(…), …`). Например:
 
-   ```CSS
-   body {
-     background: gray;
-     }
-   ```
+ ```CSS
+ body {
+   background: gray;
+   }
+ ```
 
-   Или:
+ Или:
 
-   ```CSS
-   @-moz-document domain('example.org'),
-   domain('example.net'),
-   domain('example.com') body {
-     background: gray;
-     }
-   ```
+ ```CSS
+ @-moz-document domain('example.org'),
+ domain('example.net'),
+ domain('example.com') body {
+   background: gray;
+   }
+ ```
 
 5. Когда закончите, нажмите _Сохранить и закрыть_. Готово, пользовательский стиль добавлен в AdGuard
 

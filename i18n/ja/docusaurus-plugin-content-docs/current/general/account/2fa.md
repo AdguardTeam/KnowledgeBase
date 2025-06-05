@@ -11,40 +11,40 @@ AdGuardアカウントに二要素認証を設定することをお勧めしま�
 
 ## 設定方法
 
-1. Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the *Settings* tab:
+1. [AdGuardアカウント](https://auth.adguardaccount.com/login.html) にログインし、「*設定*」タブに移動します:
 
- ![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
+ ![AdGuard アカウント設定  *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Scroll down to *Two-factor authentication* and enable it:
+1. 下にスクロールし、「*二要素認証*」を有効にします:
 
- ![Two-factor authentication toggle *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
+ ![2要素認証の有効/無効 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. A code will be sent to the email address associated with your AdGuard account. To enable 2FA, enter the code and click *Enable*.
+1. AdGuard アカウントに関連付けられたメールアドレスにコードが送信されます。 2FAを有効にするには、コードを入力し、「*有効にする*」をクリックしてください。
 
- ![The verification code *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
+ ![認証コード *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-After you enable two-factor authentication, you have two options to choose from:
+二要素認証（2FA）を有効にすると、2つのオプションから選択できるようになります：
 
-- *One-time email code*: when you log in, we will ask you to enter the code we sent to your email
+- *ワンタイムコード*: ログイン時に、メールアドレスに送信されたコードの入力を求められます。
 
-- *Code from authenticator app*: when you log in, we will ask for a code from your authenticator app
+- *認証アプリからのコード*: ログイン時、認証アプリからのコードを求められます。
 
-![2FA options *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
+![2段階認証オプション *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 
 :::note
 
-If you use the authenticator app, make sure to save the **setup key** somewhere. It will be necessary to recover your account in case your mobile phone gets lost or stolen.
+認証アプリを使用する場合は、**セットアップキー**をどこかに保存しておいてください。 万が一端末を紛失したり盗まれたりした場合には、アカウントを復帰するために必要です。
 
-![The setup key in the authenticator app *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
+![認証アプリのセットアップキー *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
 
 :::
 
-If everything is done right, you will see this when you log into your account the next time:
+設定が正しく完了していれば、次回アカウントにログインしたときにはこのような画面が表示されます:
 
-![The result *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
+![結果 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
 
 :::note
 
-If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
+※認証エラーが発生した場合は、スマホの時計を確認してください。 時計が同期していないことがエラーの原因である可能性があるため、必要に応じては調整してください。
 
 :::

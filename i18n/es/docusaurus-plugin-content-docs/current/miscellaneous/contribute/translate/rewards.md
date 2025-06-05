@@ -37,7 +37,7 @@ Envía un correo electrónico a nuestro equipo de traductores a [translate@adgua
 
 > ¡Hola equipo de AdGuard!
 > 
-> He traducido más de **5.000** palabras en AdGuard para Android al *tu idioma*. Puedes encontrar mis estadísticas adjuntas. Me gustaría solicitar una licencia de AdGuard VPN y una licencia del bloqueador de anuncios AdGuard para eso. Mi correo electrónico es (*tu dirección de correo electrónico*). Mi nombre de usuario de Crowdin es *tu nombre de usuario*.
+> He traducido más de **5.000** palabras en AdGuard para Android al *tu idioma*. Puedes encontrar mis estadísticas adjuntas. Como recompensa, me gustaría solicitar una licencia de AdGuard VPN y una licencia del bloqueador de anuncios AdGuard Mi correo electrónico es (*tu dirección de correo electrónico*). Mi nombre de usuario de Crowdin es *tu nombre de usuario*.
 
 ## Cómo comprobar el progreso de tu traducción
 

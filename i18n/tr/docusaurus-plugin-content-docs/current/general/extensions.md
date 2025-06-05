@@ -39,7 +39,7 @@ This version of Assistant is legacy and there is no point in using it on new sys
 
 :::
 
-#### AMP'yi devre dışı bırak
+#### Disable AMP
 
 Yalnızca Android için AdGuard'da önceden yüklenmiş olan bir betik. Google arama sonuçları sayfasında AMP'yi (Hızlandırılmış Mobil Sayfalar) devre dışı bırakır. Learn more about this userscript and how to install it on [GitHub](https://github.com/AdguardTeam/DisableAMP).
 
@@ -363,30 +363,30 @@ We don’t support userstyles that contain `@var` or `@advanced` in the metadata
 
 3. To create a userstyle, first write the title with metadata, for example
 
-   ```CSS
-   /* ==UserStyle==
-   @name New userstyle
-   @version 1.0
-   ==/UserStyle== */
-   ```
+ ```CSS
+ /* ==UserStyle==
+ @name New userstyle
+ @version 1.0
+ ==/UserStyle== */
+ ```
 
 4. Write the CSS part after the meta data. AdGuard supports website domain names matching (`@-moz-document domain(…), …`). Örneğin:
 
-   ```CSS
-   body {
-     background: gray;
-     }
-   ```
+ ```CSS
+ body {
+   background: gray;
+   }
+ ```
 
-   Or:
+ Or:
 
-   ```CSS
-   @-moz-document domain('example.org'),
-   domain('example.net'),
-   domain('example.com') body {
-     background: gray;
-     }
-   ```
+ ```CSS
+ @-moz-document domain('example.org'),
+ domain('example.net'),
+ domain('example.com') body {
+   background: gray;
+   }
+ ```
 
 5. Once you’re finished, press _Save and Close_. Your new userstyle has been successfully added to AdGuard
 

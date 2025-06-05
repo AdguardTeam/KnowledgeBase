@@ -11,7 +11,7 @@ Consigliamo di configurare l'autenticazione a due fattori per il tuo profilo di 
 
 ## Come configurarla
 
-1. Accedi all'account [AdGuard](https://auth.adguard.com/login.html) e vai nella scheda *Impostazioni*:
+1. Accedi all'account [AdGuard](https://auth.adguardaccount.com/login.html) e vai nella scheda *Impostazioni*:
 
  ![Impostazioni dell'account AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 

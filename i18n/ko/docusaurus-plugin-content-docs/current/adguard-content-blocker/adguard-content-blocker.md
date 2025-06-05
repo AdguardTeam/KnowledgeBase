@@ -11,8 +11,12 @@ sidebar_position: 1
 
 ## 기능 개요
 
-[Features overview](/adguard-content-blocker/overview.md)
+AdGuard 콘텐츠 차단기에서 사용할 수 있는 주요 기능 및 설정
+
+[기능 개요](/adguard-content-blocker/overview.md)
 
 ## 설치 방법
 
-[Installation](/adguard-content-blocker/installation.md)
+AdGuard 콘텐츠 차단기의 설치, 제거 방법 및 시스템 요구 사항
+
+[설치](/adguard-content-blocker/installation.md)

@@ -21,4 +21,4 @@ Základní ochrana účinně blokuje reklamy na většině webových stránek. C
 
 - Vytvářet uživatelská pravidla – AdGuard je použije na konkrétních webových stránkách. [Naučte se vytvářet vlastní uživatelská pravidla](/general/ad-filtering/create-own-filters)
 
-![Ad blocking \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
+![Ad blocking \*mobile_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)

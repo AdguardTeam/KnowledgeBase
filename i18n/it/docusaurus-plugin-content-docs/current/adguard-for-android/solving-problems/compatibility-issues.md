@@ -1,11 +1,11 @@
 ---
 title: Known compatibility issues with Android apps
-sidebar_position: 16
+sidebar_position: 14
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -18,7 +18,7 @@ If you are using AdGuard in the *Local VPN* filtering mode, you cannot run other
 - Switch to the *Automatic proxy* mode. When you do that, AdGuard will no longer use local VPN and will reconfigure iptables instead
 - Switch to the *Manual proxy* mode. To do this, go to *Settings* → *Filtering* → *Network* → *Routing mode*
 
-:::note Compatibility
+:::note Compatibilità
 
 The *Automatic proxy* mode is only accessible on rooted devices. For *Manual proxy*, rooting is required on devices running on Android 10 or later.
 
@@ -40,7 +40,7 @@ To be able to filter HTTPS traffic, AdGuard requires the user to add a certifica
 
 - To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md/)
 
-:::note Compatibility
+:::note Compatibilità
 
 Requires root access.
 

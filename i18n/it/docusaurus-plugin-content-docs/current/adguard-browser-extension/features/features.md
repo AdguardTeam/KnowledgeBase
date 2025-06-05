@@ -1,34 +1,34 @@
 ---
-title: Funzionalità
+title: Funzioni
 sidebar_position: 1
 ---
 
 :::info
 
-Questo articolo riguarda l'Estensione di browser AdGuard, che protegge solo il tuo browser. Per proteggere l'intero dispositivo, [scarica l'app AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda l'estensione per browser di AdGuard, che protegge solo il tuo browser. Per proteggere l'intero dispositivo, [scarica l'app AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Menu principale
+## Menu' principale
 
-L'articolo spiega le principali funzioni del popup, come abilitare o disabilitare il blocco degli annunci, accedere alle impostazioni, gestire i filtri e visualizzare le statistiche di protezione.
+Il popup principale da cui puoi accedere alle impostazioni, al registro di filtraggio e alle statistiche, e segnalare problemi
 
-[Menu prinicpale](/adguard-browser-extension/features/main-menu.md)
+[Menu' prinicpale](/adguard-browser-extension/features/main-menu.md)
 
 ## Filtri
 
-L'articolo descrive come l'Estensione di browser AdGuard consente di personalizzare il blocco degli annunci con diversi filtri e regole utente personalizzate.
+Filtri e regole utente per ottimizzare il blocco delle inserzioni
 
 [Filtri](/adguard-browser-extension/features/filters.md)
 
 ## Protezione dal tracciamento (Modalità Invisibile)
 
-L'articolo spiega come questa funzione migliora la privacy bloccando i tracker online, nascondendo le informazioni dell'utente e impedendo la raccolta di dati da parte di terze parti.
+Impostazioni per bloccare cookie, tag UTM e le analisi in rete che raccolgono informazioni sugli utenti
 
 [Protezione dal Tracciamento (Modalità Invisibile)](/adguard-browser-extension/features/stealth-mode.md)
 
-## Altre funzionalità e opzioni
+## Altre funzioni e opzioni
 
-L'articolo descrive ulteriori funzionalità e informazioni, come le notifiche di aggiornamento, il registro dei filtri, le statistiche sugli annunci e i tracker bloccati, i link ai documenti sulla privacy e il repository.
+Impostazioni generali e aggiuntive, collegamenti ai documenti sulla riservatezza e al repository
 
-[Altre funzionalità e opzioni(/adguard-browser-extension/features/other-features.md)
+[Altre funzioni e opzioni(/adguard-browser-extension/features/other-features.md)

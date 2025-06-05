@@ -1,6 +1,6 @@
 ---
 title: Certificate installation on devices with Android 11+
-sidebar_position: 12
+sidebar_position: 11
 ---
 
 :::정보
@@ -43,4 +43,4 @@ If you experience issues during the manual certificate installation (for example
 1. Restart AdGuard.
 2. Try to install the correct certificate (AdGuard Personal CA) one more time.
 
-If you still encounter a problem and can't install the certificate, please contact our support team at support@adguard.com.
+If you still encounter a problem and can't install the certificate, please contact our support team at <support@adguard.com>.

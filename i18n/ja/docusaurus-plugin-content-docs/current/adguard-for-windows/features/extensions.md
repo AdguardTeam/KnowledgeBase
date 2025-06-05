@@ -9,9 +9,9 @@ sidebar_position: 3
 
 :::
 
-AdGuard can significantly extend website functionality by working as a [userscript manager](/general/extensions.md). AdGuard users can add their own scripts as well as manage existing ones.
+AdGuard は[ユーザースクリプトマネージャ](/general/extensions.md)として動くことで、ウェブサイトの機能を大幅に拡張することができます。 AdGuard のユーザーは、独自のスクリプトを追加したり、既存のスクリプトを管理したりできます。
 
-![拡張機能画面 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![拡張機能画面 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
 **ユーザースクリプトを自動で検出する**
 
@@ -19,7 +19,7 @@ AdGuard can significantly extend website functionality by working as a [userscri
 
 AdGuard にインストールされている拡張機能は以下の通りです:
 
-![プリインストールされているユーザースクリプト \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![プリインストールされているユーザースクリプト \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
 **AdGuard アシスタント**
 
@@ -33,7 +33,7 @@ AdGuard Extra は、基本的にミニプログラムで、サイトがブロッ
 
 **AdGuard ポップアップブロッカー**
 
-この拡張機能は、ウェブページ閲覧時にポップアップウィンドウが開かないようにしてくれます。 ポップアップの中には、サイト管理のための設定や、リンクをクリックしたときに表示される追加参考情報が含まれているような、役に立つとされるポップアップもたまにあります。 そのため、必要に応じてAdGuard ポップアップブロッカーをオフにすることができます。 また、この拡張機能は、AdGuard の除外リストに追加されたウェブサイトでも機能しません。 デフォルトではオフになっていますが、アプリの設定でオンにすることができます。 この拡張機能についての詳細情報はKnowledge Base（ナレッジベース）をご確認ください。
+この拡張機能は、ウェブページ閲覧時にポップアップウィンドウが開かないようにしてくれます。 ポップアップの中には、サイト管理のための設定や、リンクをクリックしたときに表示される追加参考情報が含まれているような、役に立つとされるポップアップもたまにあります。 そのため、必要に応じてAdGuard ポップアップブロッカーをオフにすることができます。 また、この拡張機能は、AdGuard の除外リストに追加されたウェブサイトでも機能しません。 デフォルトではオフになっていますが、アプリの設定でオンにすることができます。
 
 **Web of Trust**
 

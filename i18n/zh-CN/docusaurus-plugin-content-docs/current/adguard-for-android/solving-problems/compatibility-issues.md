@@ -1,6 +1,6 @@
 ---
 title: Android 应用程序的已知兼容性问题
-sidebar_position: 16
+sidebar_position: 14
 ---
 
 :::info

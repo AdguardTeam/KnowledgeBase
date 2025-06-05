@@ -7,9 +7,9 @@ Cette page décrit les caractéristiques et les détails de la gestion centrale 
 
 ## 1. Téléchargez le MSI {#msi-download}
 
-Téléchargez le [MSI AdGuard x86](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi)
+Téléchargez le [MSI AdGuard x86](https://agrd.io/adguard_setup86_msi)
 
-Téléchargez le [AdGuard MSI x64](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
+Téléchargez le [AdGuard MSI x64](https://agrd.io/adguard_setup64_msi)
 
 ## 2. Configurez les paramètres de votre réseau {#settings-configuring}
 

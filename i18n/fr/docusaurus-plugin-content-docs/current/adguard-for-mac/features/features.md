@@ -11,54 +11,54 @@ Cet article parle de AdGuard pour Mac, un bloqueur d'annonces multifonctionnel q
 
 ## Fenêtre principale
 
-Depuis la fenêtre principale, vous pouvez activer la protection, consulter les statistiques sur les publicités bloquées, les traqueurs et les menaces, et accéder aux paramètres, mises à jour, assistance et à la gestion des licences.
+Écran principal avec des statistiques sur les annonces bloquées et les traqueurs et accès aux paramètres principaux
 
 [Fenêtre principale](/adguard-for-mac/features/main.md)
 
 ## Général
 
-Ici, vous pouvez configurer les paramètres de base tels que _Ne pas bloquer les publicités de recherche et d'auto-promotion_, _Activer les filtres spécifiques à la langue automatiquement_, _Lancer AdGuard à la connexion_, _Masquer l'icône de la barre de menu_, et _Liste d'autorisation_.
+Paramètres de base pour bloquer les publicités de recherche et les publicités auto-promotionnelles sur le site Web, activer les filtres spécifiques à la langue et gérer la _liste d'autorisation_
 
 [Général](/adguard-for-mac/features/general.md)
 
 ## Filtres
 
-Cet article explique comment vous pouvez personnaliser le blocage des publicités en activant des différentes listes de filtres, y compris les filtres spécifiques à la langue, les filtres tiers et les règles utilisateur.
+Les filtres et les règles utilisateur pour personnaliser le blocage d'annonces
 
 [Filtres](/adguard-for-mac/features/filters.md)
 
 ## DNS
 
-Vous trouverez ici les paramètres de protection DNS : fournisseurs disponibles, filtres, fonctions de liste de blocage et de liste d'autorisation.
+Les serveurs DNS et les filtres DNS qui vous permettent de bloquer les publicités, les traqueurs et les sites Web dangereux
 
 [DNS](/adguard-for-mac/features/dns.md)
 
 ## Mode furtif
 
-[Mode furtif](/adguard-for-mac/features/stealth.md)
+Paramètres permettant de bloquer les cookies, les balises UTM et les outils d'analyse en ligne qui collectent des informations sur l'utilisateur
 
-Des informations sur la manière de mettre en place une protection avancée en supprimant les cookies, les balises UTM, les compteurs en ligne et les systèmes d'analyse, et en n'autorisant pas les sites web à collecter votre adresse IP, les paramètres de votre appareil et de votre navigateur, vos requêtes de recherche et vos informations personnelles.
+[Mode furtif](/adguard-for-mac/features/stealth.md)
 
 ## Sécurité
 
-Comprend des paramètres pour vous protéger contre l'hameçonnage et les maliciels. Vous pouvez également aider AdGuard à mettre à jour sa base de données des menaces connues en acceptant d'envoyer des informations anonymes liées à la sécurité.
+Un paramètre qui bloque l'accès aux sites Web malveillants et hameçonneurs et vous protège des menaces en ligne
 
 [Sécurité](/adguard-for-mac/features/security.md)
 
 ## Assistant de navigateur
 
-Informations sur la façon de gérer la protection AdGuard directement depuis le navigateur.
+Une extension qui complète le programme de bureau et vous permet de gérer le filtrage depuis votre navigateur
 
 [Assistant AdGuard](/adguard-for-mac/features/browser-assistant.md)
 
 ## Extensions
 
-Ici, vous apprendrez comment utiliser AdGuard en tant que gestionnaire de scripts utilisateur pour étendre la fonctionnalité des sites Web. Vous pouvez ajouter des scripts de votre choix et gérer les scripts existants.
+Une fonctionnalité qui vous permet d'étendre la fonctionnalité des sites Web en ajoutant des scripts utilisateur et des styles utilisateur
 
 [Extensions](/adguard-for-mac/features/extensions.md)
 
 ## Réseau
 
-Cet article décrit des options supplémentaires liées au réseau et les paramètres de proxy où vous pouvez spécifier quel proxy AdGuard doit utiliser pour mettre à jour le filtrage, télécharger de nouvelles versions, etc.
+Options supplémentaires liées au réseau et paramètres du proxy
 
 [Réseau](/adguard-for-mac/features/network.md)

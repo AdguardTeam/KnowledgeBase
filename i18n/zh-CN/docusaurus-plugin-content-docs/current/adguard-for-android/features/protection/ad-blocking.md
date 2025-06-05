@@ -21,4 +21,4 @@ sidebar_position: 1
 
 - 创建用户规则，AdGuard 将应用它们到指定的网站上。 [了解关于创建自己过滤规则的更多详情](/general/ad-filtering/create-own-filters)
 
-![Ad blocking \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
+![Ad blocking \*mobile_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)

@@ -1,58 +1,64 @@
 ---
-title: Features
+title: Fonctionnalités
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
+Cet article concerne AdGuard pour Android, un bloqueur de publicité multifonctionnel qui protège votre appareil au niveau système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Protection
 
-Info on modules in the Protection tab: Ad blocking, Tracking protection, Annoyance blocking, DNS protection, Firewall, and Browsing security.
+Paramètres disponibles dans l'onglet _Protection_ : _Blocage des publicités_, _Protection contre le suivi_, _Blocage des nuisances_, _Protection DNS_, _Pare-feu_, et _Navigation sécurisée_
 
 [Protection](/adguard-for-android/features/protection/protection.md)
 
-## App management
+## Gestion des applications
 
-AdGuard for Android offers app management features that allow you to control how AdGuard filters traffic for individual apps, providing options to block ads and trackers or disable protection for selected apps altogether.
+Fonctionnalités qui vous permettent de personnaliser le filtrage et le routage du trafic pour chaque application
 
-[App management](/adguard-for-android/features/app-management.md)
+[Gestion des applications](/adguard-for-android/features/app-management.md)
 
-## Statistics
+## Statistiques
 
-Detailed statistics on blocked ads, trackers, and saved traffic that allows us to monitor the app’s performance and protection efficiency over time.
+Statistiques détaillées sur les publicités bloquées, les traqueurs et l'utilisation des données
 
-[Statistics](/adguard-for-android/features/statistics.md)
+[Statistiques](/adguard-for-android/features/statistics.md)
 
 ## Paramètres
 
-Information about customizing settings so you can adjust ad blocking, privacy, and DNS settings to suit your needs.
+Paramètres généraux, avancés et de bas niveau qui vous permettent de sélectionner la langue et le thème, de personnaliser la protection DNS, d'activer le filtrage HTTPS et de gérer les scripts utilisateur
 
-[Settings](/adguard-for-android/features/settings.md)
+[Paramètres](/adguard-for-android/features/settings.md)
+
+## Guide sur les paramètres de bas niveau
+
+Descriptions of the low-level settings available in AdGuard v4.3 for Android and later.
+
+[Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
 
 ## Assistant
 
-Information about a tool that lets you quickly change app or website settings and view statistics without opening the AdGuard interface.
+Un outil qui vous permet de changer rapidement les paramètres d'application ou de site Web et de consulter les Statistiques sans ouvrir l'interface AdGuard
 
 [Assistant](/adguard-for-android/features/assistant.md)
 
-## Free vs. full version
+## Version gratuite vs version complète
 
-Comparison of features between the free and paid versions.
+Une comparaison des fonctionnalités entre la version gratuite et la version payante.
 
-[Free vs. full version](/adguard-for-android/features/free-vs-full.mdx)
+[Version gratuite vs. version complète](/adguard-for-android/features/free-vs-full.mdx)
 
-## Integration with AdGuard VPN
+## Intégration avec AdGuard VPN
 
-Information on how the app integrates with VPN services, allowing you to run both AdGuard and AdGuard VPN at the same time without conflict, ensuring ad blocking and privacy protection along with VPN functionality.
+Mode intégré qui permet au Bloqueur AdGuard et à AdGuard VPN de fonctionner simultanément malgré les limitations du système
 
-[Integration with AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
+[Intégration avec AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
 
-## Rooted devices
+## Appareils rootés
 
-AdGuard for Android on rooted devices offers advanced features like HTTPS filtering without a certificate installation, automatic ad blocking in apps, and deeper system-wide protection.
+Fonctionnalités disponibles dans AdGuard pour Android sur les appareils rootés : filtrage HTTPS dans toutes les applications, modes _Proxy automatique_ et _Proxy manuel_
 
-[Rooted devices](/adguard-for-android/features/rooted.md)
+[Appareils rootés](/adguard-for-android/features/rooted.md)

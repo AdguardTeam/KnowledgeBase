@@ -13,13 +13,13 @@ Există alte opțiuni utile AdGuard care nu ar trebui să treacă neobservate î
 
 ### Support
 
-![Suport \*mobil\_bord](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
+![Suport \*mobil_bord](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
 
 Prin clic pe tabul Suport veți deschide o fereastră de dialog prin care puteți raporta o eroare, trimite o solicitare de funcție sau pur și simplu împărtăși opinia dvs. despre produs.
 
 ### License
 
-![Licență \*mobil\_bord](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![Licență \*mobil_bord](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
 Acest tab conține informații despre licența dumneavoastră. Aici puteți:
 
@@ -28,13 +28,13 @@ Acest tab conține informații despre licența dumneavoastră. Aici puteți:
 
 ### About
 
-![Despre \*mobil\_bord](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![Despre \*mobil_bord](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 
 În plus față de informațiile despre versiunea curentă a programului, acest tab oferă câteva linkuri utile către acordul de licență, politica de confidențialitate, recunoașteri, discuții și paginile istoricului versiunilor.
 
 ### Căutare actualizări
 
-![Căutare actualizări \*mobil\_bord](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![Căutare actualizări \*mobil_bord](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
 
 Pentru a verifica actualizările filtrelor și scripturilor utilizator, faceți clic pe pictograma cu săgeți rotative din colțul din dreapta sus al ecranului principal al aplicației.
 

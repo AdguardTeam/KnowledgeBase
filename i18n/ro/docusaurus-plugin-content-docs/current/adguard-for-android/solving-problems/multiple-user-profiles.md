@@ -1,6 +1,6 @@
 ---
 title: Probleme cauzate de mai multe profile de utilizator
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 :::info
@@ -68,7 +68,7 @@ Despre cum să gestionați conturile de utilizator de pe un dispozitiv Android, 
 
 :::note
 
-În unele cazuri, conturile de utilizator restricționate sunt create implicit și nu pot fi eliminate. De exemplu, când utilizați funcțiile Dual messenger sau Dual app pe dispozitivele **Samsung** sau **LG**. Puteți citi mai jos cum să rezolvați problema în aceste cazuri.
+În unele cazuri, conturile de utilizator restricționate sunt create implicit și nu pot fi eliminate. For instance, when you use Dual Messenger or Dual App features on **Samsung** or **LG** devices. Puteți citi mai jos cum să rezolvați problema în aceste cazuri.
 
 :::
 
@@ -84,8 +84,8 @@ Proprietarii de telefoane **LG** sau **Samsung** s-ar putea confrunta, de asemen
 
 - Deschideți **Setările**;
 - Apăsați **Avansat**;
-- Derulați în jos și apăsați **Dual messenger**;
-- Disable the **Dual messenger** for all apps;
+- Scroll down and press **Dual Messenger**;
+- Disable the **Dual Messenger** for all apps;
 - Blocați dispozitivul timp de 5 minute;
 - Deblocați ecranul și încercați din nou să creați profilul VPN.
 
@@ -93,6 +93,6 @@ Proprietarii de telefoane **LG** sau **Samsung** s-ar putea confrunta, de asemen
 
 - Deschideți **Setările**;
 - Alegeți tab-ul **General**;
-- Derulați în jos și apăsați **Dual app**;
+- Scroll down and press **Dual App**;
 - Ștergeți toate aplicațiile din listă;
 - Reporniți dispozitivul.

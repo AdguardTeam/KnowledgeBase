@@ -9,7 +9,7 @@ At AdGuard, we’ve long followed certain principles in making our filters, whic
 
 Bu kriterler tüm filtrelerin kurallarına eşit olarak uygulanır.
 
-- Rules for a specific site will only be added if there is sufficient traffic. Traffic is determined by public statistics (if available) or indirect indicators, such as the number of subscribers on social networks. A site’s traffic is considered sufficient if it reaches 100,000 visits per month. We will consider adding a rule for a site that is not as popular, but the final decision rests with filter developers. Sites with low traffic should still be checked for third-party analytics and advertising networks
+- Rules for a specific site will only be added if there is sufficient traffic. Traffic is determined by public statistics (if available) or indirect indicators, such as the number of subscribers on social networks. A site’s traffic is considered sufficient if it reaches 100,000 visits per month. Çok popüler olmayan bir site için kural eklemeyi düşünebiliriz ancak son karar filtre geliştiricilerine aittir. Sites with low traffic should still be checked for third-party analytics and advertising networks
 - The decision about content farms (websites that produce large amounts of content primarily aimed at achieving high visibility in search results and generating advertising revenue) is made by filter developers depending on the quality of the content
 
 Filtreleme kuralları için kalite gereksinimleri:
@@ -26,7 +26,7 @@ Filtreleme kuralları için kalite gereksinimleri:
 
 A **filter** (or a **filter list**) is a set of filtering rules designed to filter content and block various types of advertisements and other types of content using ad blockers. Bu filtreler genellikle web tarayıcısı, programlar veya DNS sunucusu düzeyinde çalışır.
 
-**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so called “adblock walls”). Anti-adblocks may be of different types:
+**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so-called “adblock walls”). Anti-adblocks may be of different types:
 
 - Anti-adblock that blocks website content without offering an alternative: to continue using the site, the user must disable the ad blocker on the site
 - “Anti-adblock wall” with alternative options offered, such as purchasing a subscription to continue using the ad blocker
@@ -81,7 +81,7 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 - We do not block ad blocker detection messages that satisfy at least one of the following criteria:
     - They allow the usage of the website and do not overlay the significant amount of content
     - They provide an alternative to disabling an ad blocker given that this alternative does not put the users’ privacy or security at risk
-    - They allow the user to proceed to the website’s content or offer a feasible value exchange that does not put the user’s privacy or security at risk
+    - They allow the user to proceed to the website’s content
     - Some legacy rules may continue to block messages that satisfy one or more of these criteria. If identified, such rules will be handled according to this policy
 - Mining pools are not blocked if they are public and not used solely for malicious purposes
 

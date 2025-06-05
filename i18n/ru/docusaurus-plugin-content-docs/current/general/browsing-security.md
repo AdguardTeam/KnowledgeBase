@@ -21,7 +21,7 @@ AdGuard обеспечивает наилучшую защиту, проверя
 
 ![Предупреждение AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/general/dangerous_website_blocked.png)
 
-### В браузерных расширениях
+### В браузерных расширениях {#extension}
 
 Наши браузерные расширения могут проверять только имена доменов, а не полные URL-адреса. Они также не могут проверять подзапросы. Если страница находится на безопасном домене, но на ней есть потенциально вредоносные элементы, они будут загружены. Расширение не сможет защитить от них. Проверка выполняется асинхронно, то есть одновременно с загрузкой страницы. Это тоже слегка повышает вероятность загрузки вредоносного ПО.
 
@@ -29,27 +29,27 @@ AdGuard обеспечивает наилучшую защиту, проверя
 
 - **Для Windows**: Включите *Защиту от фишинга* в *Настройках*
 
-![Защита от фишинга на Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
+    ![Защита от фишинга на Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
 
 - **Для Mac**: Включите модуль *Безопасность* в *Настройках*
 
-![Безопасность на Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
+    ![Безопасность на Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
 
 - **Для Android**: Включите *Защиту от фишинга* на вкладке *Защита*
 
-![Защита от фишинга на Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
+    ![Защита от фишинга на Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
 
 - **Для iOS**: Хотя отдельный модуль не предусмотрен, вы можете перейти в *Защиту Safari* → *Фильтры* → *Безопасность* и включить доступные фильтры. Кроме того, включите *DNS-защиту* и выберите один из серверов AdGuard DNS
 
-![Безопасность на iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
+    ![Безопасность на iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
 
-- **Для браузерных расширений**: включите *Защиту от фишинговых и вредоносных сайтов* во вкладке *Настройки*. Для усиленной защиты перейдите в *Фильтры* → *Безопасность* и активируйте доступные фильтры
+- **Для браузерных расширений**: включите *Защиту от фишинговых и вредоносных сайтов* во вкладке *Настройки*. Для усиленной защиты перейдите в *Фильтры* → *Безопасность* и активируйте фильтры
 
-![Защита от фишинга и вредоносных программ](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
+    ![Защита от фишинга и вредоносных программ](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
 
 - **Для приватного AdGuard DNS:** Включите защиту от вредоносных программ в *Настройках сервера* в разделе *Безопасность*
 
-![Безопасность в DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
+    ![Безопасность в DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
 
 ## Что мы блокируем
 

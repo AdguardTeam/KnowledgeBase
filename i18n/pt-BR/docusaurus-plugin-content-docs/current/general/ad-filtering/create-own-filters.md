@@ -11,7 +11,7 @@ Neste artigo, explicamos como escrever regras de filtragem personalizadas para u
 
 :::
 
-A filter is a set of filtering rules applied to specific content, such as banners or pop-ups. AdGuard has a list of standard filters created by our team. We constantly improve and update them, striving to meet the needs of most of our users.
+A filter is a set of filtering rules applied to specific content, such as banners or popups. AdGuard has a list of standard filters created by our team. We constantly improve and update them, striving to meet the needs of most of our users.
 
 At the same time, AdGuard allows you to create your own custom filters using the same types of rules that we have in our filters.
 
@@ -65,7 +65,7 @@ By default, such rules do not work for document requests. This means that the `|
 
 - `https://example.org/banner/img`
 
-### Basic rule modifiers {#basic-rule-modifiers}
+### Basic rule modifiers {#basic-rule-modifiers-examples}
 
 Filtering rules support numerous modifiers that allow you to fine-tune the rule behavior. Here is an example of a rule with some simple modifiers.
 
@@ -131,44 +131,44 @@ Some rules can be used only in trusted filters. This category includes:
 
 ### Bloqueador de conteúdo do AdGuard
 
-AdGuard Content Blocker is an extension for Samsung and Yandex browsers that can be installed from Google Play. It is not to be confused with the fully functional AdGuard for Android that can only be downloaded from [our website](https://adguard.com/adguard-android/overview.html). Unfortunately, AdGuard Content Blocker capabilities are limited by what the browsers allow and they only support an old Adblock Plus filters syntax:
+AdGuard Content Blocker is an extension for Samsung and Yandex browsers that can be installed from Google Play. Não deve ser confundido com o AdGuard para Android, que é totalmente funcional e só pode ser baixado a partir do [nosso site](https://adguard.com/adguard-android/overview.html). Infelizmente, as capacidades do Bloqueador de conteúdo AdGuard são limitadas pelas permissões dos navegadores, compatíveis apenas com uma sintaxe antiga de filtros do Adblock Plus:
 
-- Basic blocking rules with the following modifiers: `$domain`, `$third-party`, [content-type modifiers](#content-type-modifiers).
-- Basic exception rules with the following modifiers: `$document`, `$elemhide`.
-- Basic [element hiding rules](#cosmetic-elemhide-rules) with no extended CSS support.
+- Regras básicas de bloqueio com os seguintes modificadores: `$domain`, `$third-party`, [modificadores de tipo de conteúdo](#content-type-modifiers).
+- Regras básicas de exceção com os seguintes modificadores: `$document`, `$elemhide`.
+- Regras básicas de [ocultação de elementos](#cosmetic-elemhide-rules) sem suporte CSS estendido.
 
-Because of the limitations above AdGuard Content Blocker will not be mentioned in the compatibility notes.
+Devido às limitações acima, o Bloqueador de conteúdo AdGuard não será mencionado nas notas de compatibilidade.
 
-### SafariConverterLib
+### SafariConverterLib {#safari-converter-lib}
 
-Safari Converter aims to support AdGuard filtering rules syntax as much as possible, but still there are limitations and shortcomings that are hard to overcome.
+O Safari Converter tem como objetivo suportar a sintaxe das regras de filtragem do AdGuard o máximo possível, mas ainda existem limitações e deficiências difíceis de superar.
 
-#### Basic (network) rules
+#### Regras básicas (de rede)
 
-Safari Converter supports a substantial subset of [basic rules](#basic-rules) and certainly supports the most important types of those rules.
+O conversor Safari suporta um subconjunto substancial de [regras básicas](#basic-rules) e certamente suporta os tipos mais importantes dessas regras.
 
-##### Supported with limitations
+##### Supported with limitations {#safari-converter--basic--supported-with-limitations}
 
-- [Regular expression rules](#regexp-support) are limited to the subset of regex that is [supported by Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
+- [As regras de expressão regular](#regexp-support) são limitadas ao subconjunto de regex que é [compatível com o Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
 
-- `$domain` - [domain modifier](#domain-modifier) is supported with several limitations.
+- `$domain` - [domain modifier](#domain-modifier) is supported with several limitations:
 
-    - It's impossible to mix allowed and disallowed domains (like `$domain=example.org|~sub.example.org`). Please upvote the [feature request](https://bugs.webkit.org/show_bug.cgi?id=226076) to WebKit to lift this limitation.
-    - "Any TLD" (i.e. `domain.*`) is not fully supported. In the current implementation the converter just replaces `.*` with top 100 popular TLDs. This implementation will be improved [in the future](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732).
-    - Using regular expressions in `$domain` is not supported, but it also will be improved [in the future](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732).
+    - É impossível misturar domínios permitidos e não permitidos (como `$domain=example.org|~sub.example.org`). Por favor, dê um upvote para a [solicitação de funcionalidade](https://bugs.webkit.org/show_bug.cgi?id=226076) para que o WebKit remova esta limitação.
+    - "Any TLD" (ou seja, `domain.*`) não é totalmente suportado. Na implementação atual, o conversor simplesmente substitui `.*` pelos 100 TLDs mais populares. Esta implementação será aprimorada [no futuro](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732).
+    - O uso de expressões regulares em `$domain` não é compatível, mas também será melhorado [no futuro](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732).
 
-- `$denyallow` - this modifier is supported via converting `$denyallow` rule to a set of rules (one blocking rule + several unblocking rules).
+- `$denyallow` - este modificador é suportado através da conversão da regra `$denyallow` para um conjunto de regras (uma regra de bloqueio + várias regras de desbloqueio).
 
-  Due to that limitation `$denyallow` is only allowed when the rule also has `$domain` modifier.
+  Devido a essa limitação, `$denyallow` é permitido apenas quando a regra também possui o modificador `$domain`.
 
-    - Generic rule `*$denyallow=x.com,image,domain=a.com` will be converted to:
+    - A regra genérica `*$denyallow=x.com,image,domain=a.com` será convertida para:
 
     ```adblock
     *$image,domain=a.com
     @@||x.com$image,domain=a.com
     ```
 
-    - Rule `/banner.png$image,denyallow=test1.com|test2.com,domain=example.org` will be converted to:
+    - A regra `/banner.png$image,denyallow=test1.com|test2.com,domain=example.org` será convertida para:
 
     ```adblock
     /banner.png$image,domain=example.org
@@ -178,44 +178,44 @@ Safari Converter supports a substantial subset of [basic rules](#basic-rules) an
     @@||test2.com/*/banner.png$image,domain=example.org
     ```
 
-    - Rule without `$domain` is **not supported**: `$denyallow=a.com|b.com`.
+    - A regra sem `$domain` **não é suportada**: `$denyallow=a.com|b.com`.
 
-- `$popup` - popup rules are supported, but they're basically the same as `$document`-blocking rules and will not attempt to close the tab.
+- `$popup` - as regras de popup são compatíveis, mas são basicamente as mesmas que as regras de `$document` de bloqueio e não tentarão fechar a aba.
 
-- Exception rules (`@@`) disable cosmetic filtering on matching domains.
+- As regras de exceção (`@@`) desativam a filtragem cosmética em domínios correspondentes.
 
-  Exception rules in Safari rely on the rule type `ignore-previous-rules` so to make it work we have to order the rules in a specific order. Exception rules without modifiers are placed at the end of the list and therefore they disable not just URL blocking, but cosmetic rules as well.
+  As regras de exceção no Safari dependem do tipo de regra `ignore-previous-rules`, então, para que funcione, precisamos ordenar as regras em uma ordem específica. As regras de exceção sem modificadores são colocadas no final da lista e, portanto, desativam não apenas o bloqueio de URL, mas também as regras cosméticas.
 
-  This limitation may be lifted if [#70](https://github.com/AdguardTeam/SafariConverterLib/issues/70) is implemented.
+  Essa limitação pode ser removida se [#70](https://github.com/AdguardTeam/SafariConverterLib/issues/70) for implementado.
 
-- `$urlblock`, `$genericblock` is basically the same as `$document`, i.e. it disables all kinds of filtering on websites.
+- `$urlblock`, `$genericblock` é basicamente o mesmo que `$document`, ou seja, desativa todos os tipos de filtragem em sites.
 
-  These limitations may be lifted when [#69](https://github.com/AdguardTeam/SafariConverterLib/issues/69) and [#71](https://github.com/AdguardTeam/SafariConverterLib/issues/71) are implemented.
+  Estas limitações podem ser removidas quando [#69](https://github.com/AdguardTeam/SafariConverterLib/issues/69) e [#71](https://github.com/AdguardTeam/SafariConverterLib/issues/71) são implementados.
 
-- `$content` makes no sense in the case of Safari since HTML filtering rules are not supported so it's there for compatibility purposes only. Rules with `$content` modifier are limited to `document` resource type.
+- `$content` não faz sentido no caso do Safari, uma vez que as regras de filtragem HTML não são compatíveis, então está lá apenas por razões de compatibilidade. As regras com `$content` estão limitadas ao tipo de recurso `documento`.
 
-- `$specifichide` is implemented by scanning existing element hiding rules and removing the target domain from their `if-domain` array.
+- `$specifichide` é implementado escaneando as regras de esconder elementos existentes e removendo o domínio alvo de sua matriz `if-domain`.
 
-    - `$specifichide` rules MUST target a domain, i.e. be like this: `||example.org^$specifichide`. Rules with more specific patterns will be discarded, i.e. `||example.org/path$specifichide` will not be supported.
-    - `$specifichide` rules only cover rules that target the same domain as the rule itself, subdomains are ignored. I.e. the rule `@@||example.org^$specifichide` will disable `example.org##.banner`, but will ignore `sub.example.org##.banner`. This limitation may be lifted if [#(72](https://github.com/AdguardTeam/SafariConverterLib/issues/72) is implemented.
+    - As regras de `$specifichide` DEVEM ter como alvo um domínio, ou seja, devem ser assim: `||example.org^$specifichide`. Regras com padrões mais específicos serão descartadas, ou seja, `||example.org/path$specifichide` não será suportado.
+    - `$specifichide` regras cobrem apenas regras que visam o mesmo domínio que a regra em si, subdomínios são ignorados. I.e. a regra `@@||example.org^$specifichide` irá desativar `example.org##.banner`, mas irá ignorar `sub.example.org##.banner`. This limitation may be lifted if [#72](https://github.com/AdguardTeam/SafariConverterLib/issues/72) is implemented.
 
-- `urlblock`, `genericblock`, `generichide`, `elemhide`, `specifichide`, and `jsinject` modifiers can be used only as a single modifier in a rule. This limitation may be lifted in the future: [#73](https://github.com/AdguardTeam/SafariConverterLib/issues/73).
+- Os modificadores `urlblock`, `genericblock`, `generichide`, `elemhide`, `specifichide` e `jsinject` podem ser usados apenas como modificador único em uma regra. Essa limitação pode ser removida no futuro: [#73](https://github.com/AdguardTeam/SafariConverterLib/issues/73).
 
-- `$websocket` (fully supported starting with Safari 15).
+- `$websocket` (suporte total a partir do Safari 15).
 
-- `$ping` (fully supported starting with Safari 14).
+- `$ping` (totalmente suportado a partir do Safari 14).
 
-##### Not supported
+##### Não compatível
 
 - `$app`
 - `$header`
 - `$method`
-- `$strict-first-party` (to be supported in the future: [#64](https://github.com/AdguardTeam/SafariConverterLib/issues/64))
-- `$strict-third-party` (to be supported in the future: [#65](https://github.com/AdguardTeam/SafariConverterLib/issues/65))
-- `$to` (to be supported in the future: [#60](https://github.com/AdguardTeam/SafariConverterLib/issues/60))
+- `$strict-first-party` (a ser compatível no futuro: [#64](https://github.com/AdguardTeam/SafariConverterLib/issues/64))
+- `$strict-third-party` (a ser compatível no futuro: [#65](https://github.com/AdguardTeam/SafariConverterLib/issues/65))
+- `$to` (a ser compatível no futuro: [#60](https://github.com/AdguardTeam/SafariConverterLib/issues/60))
 - `$extension`
 - `$stealth`
-- `$cookie` (partial support in the future: [#54](https://github.com/AdguardTeam/SafariConverterLib/issues/54))
+- `$cookie` (suporte parcial no futuro: [#54](https://github.com/AdguardTeam/SafariConverterLib/issues/54))
 - `$csp`
 - `$hls`
 - `$inline-script`
@@ -232,147 +232,147 @@ Safari Converter supports a substantial subset of [basic rules](#basic-rules) an
 - `$replace`
 - `$urltransform`
 
-#### Cosmetic rules
+#### Cosmetic rules {#cosmetic-rules-safari-limitations}
 
-Safari Converter supports most of the [cosmetic rules](#cosmetic-rules) although only element hiding rules with basic CSS selectors are supported natively via Safari Content Blocking, everything else needs to be interpreted by an additional extension.
+O Safari Converter suporta a maioria das [regras cosméticas](#cosmetic-rules), embora apenas as regras de ocultação de elementos com seletores CSS básicos sejam suportadas nativamente via bloqueio de conteúdo do Safari; tudo o mais precisa ser interpretado por uma extensão adicional.
 
-##### Limitations of cosmetic rules
+##### Limitações das regras de cosméticos
 
-- Specifying domains is subject of the same limitations as the `$domain` modifier of basic rules.
+- Specifying domains is subject to the same limitations as the `$domain` modifier of basic rules.
 
-- [Non-basic rules modifiers](#non-basic-rules-modifiers) are supported with some limitations:
+- [Modificadores de regras não básicas](#non-basic-rules-modifiers) são suportados com algumas limitações:
 
-    - `$domain` - the same limitations as everywhere else.
-    - `$path` - supported, but if you use regular expressions, they will be limited to the subset of regex that is [supported by Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
-    - `$url` - to be supported in the future: [#68](https://github.com/AdguardTeam/SafariConverterLib/issues/68)
+    - `$domain` - as mesmas limitações que em qualquer outro lugar.
+    - `$path` - suportado, mas se você usar expressões regulares, elas serão limitadas ao subconjunto de expressão regular que é [compatível com o Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
+    - `$url` - a ser compatível no futuro: [#68](https://github.com/AdguardTeam/SafariConverterLib/issues/68)
 
-#### Script/scriptlet rules
+#### Regras de script/scriptlet
 
-Safari Converter fully supports both [script rules](#javascript-rules) and [scriptlet rules](#scriptlets). However, these rules can only be interpreted by a separate extension.
+O Safari Converter oferece suporte completo tanto às [regras de script](#javascript-rules) quanto às [regras de scriptlet](#scriptlets). No entanto, essas regras só podem ser interpretadas por uma extensão separada.
 
 :::warning
 
-For scriptlet rules it is **very important** to run them as soon as possible when the page is loaded. The reason for that is that it's important to run earlier than the page scripts do. Unfortunately, with Safari there will always be a slight delay that can decrease the quality of blocking.
+For scriptlet rules, it is **very important** that they are run as early as possible when the page loads. The reason for that is that it's important to run them before the page scripts. Infelizmente, com o Safari sempre haverá um pequeno atraso que pode diminuir a qualidade do bloqueio.
 
 :::
 
-#### HTML filtering rules
+#### HTML filtering rules {#html-filtering-rules-safari-limitations}
 
-[HTML filtering rules](#html-filtering-rules) are **not supported** and will not be supported in the future. Unfortunately, Safari does not provide necessary technical capabilities to implement them.
+[Regras de filtragem HTML](#html-filtering-rules) **não são compatíveis** e não o serão no futuro. Infelizmente, Safari não fornece as capacidades técnicas necessárias para implementá-las.
 
 ## Basic rules
 
-The most simple rules are so-called *Basic rules*. They are used to block requests to specific URLs. Or to unblock it, if there is a special marker "@@" at the beginning of the rule. The basic principle for this type of rules is quite simple: you have to specify the address and additional parameters that limit or expand the rule scope.
+The most simple rules are so-called *Basic rules*. Elas são usadas para bloquear solicitações a URLs específicas. Or to unblock it, if there is a special marker "@@" at the beginning of the rule. The basic principle for this type of rules is quite simple: you have to specify the address and additional parameters that limit or expand the rule scope.
 
 :::note Sub-requests
 
-Basic rules for blocking requests are applied only to **sub-requests**. That means they will not block the loading of the page unless it is explicitly specified with a `$document` modifier.
+Regras básicas para bloquear solicitações são aplicadas somente a **sub-solicitações**. Isso significa que eles não bloquearão o carregamento da página, a menos que seja especificado com um modificador `$document`.
 
 :::
 
-:::note Response status
+:::note Status da resposta
 
-Browser detects a blocked request as completed with an error.
+O navegador detecta uma solicitação bloqueada como concluída com um erro.
 
 :::
 
 :::note Rule length
 
-Rules shorter than 4 characters are considered incorrect and will be ignored.
+Regras mais curtas que 4 caracteres são consideradas incorretas e serão ignoradas.
 
 :::
 
-### Basic rule syntax {#basic-rules-syntax}
+### Sintaxe de regras básica {#basic-rules-syntax}
 
 ```text
       rule = ["@@"] pattern [ "$" modifiers ]
 modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 ```
 
-- **`pattern`** — an address mask. Every request URL is collated to this mask. In the template, you can also use the special characters described [below](#basic-rules-special-characters). Note that AdGuard truncates URLs to a length of 4096 characters in order to speed up matching and avoid issues with ridiculously long URLs.
-- **`@@`** — a marker that is used in rules of exception. To turn off filtering for a request, start your rule with this marker.
-- **`modifiers`** — parameters that "clarify" the basic rule. Some of them limit the rule scope and some can completely change they way it works.
+- **`pattern`** — uma máscara de endereço. Cada URL de solicitação é agrupada a esta máscara. No modelo, você também pode usar os caracteres especiais descritos [abaixo](#basic-rules-special-characters). Observe que o AdGuard corta URLs para um comprimento de 4096 caracteres a fim de acelerar a correspondência e evitar problemas com URLs ridiculamente longas.
+- **`@@`** — a marker that is used in rules of exception. Para desativar a filtragem de uma solicitação, inicie sua regra com este marcador.
+- **`modifiers`** — parâmetros que "esclarecem" a regra básica. Alguns deles limitam o escopo da regra e outros podem mudar completamente a forma como ela funciona.
 
 ### Special characters {#basic-rules-special-characters}
 
-- **`*`** — a wildcard character. It is used to represent any set of characters. This can also be an empty string or a string of any length.
-- **`||`** — an indication to apply the rule to the specified domain and its subdomains. With this character, you do not have to specify a particular protocol and subdomain in address mask. It means that `||` stands for `http://*.`, `https://*.`, `ws://*.`, `wss://*.` at once.
-- **`^`** — a separator character mark. Separator character is any character, but a letter, a digit, or one of the following: `_` `-` `.` `%`. In this example separator characters are shown in bold: `http:`**`//`**`example.com`**`/?`**`t=1`**`&`**`t2=t3`. The end of the address is also accepted as separator.
-- **`|`** — a pointer to the beginning or the end of address. The value depends on the character placement in the mask. For example, a rule `swf|` corresponds to `http://example.com/annoyingflash.swf` , but not to `http://example.com/swf/index.html`. `|http://example.org` corresponds to `http://example.org`, but not to `http://domain.com?url=http://example.org`.
+- **`*`** — um caractere wildcard. It is used to represent any set of characters. Isso também pode ser uma string vazia ou uma string de qualquer tamanho.
+- **`||`** — uma indicação para aplicar a regra ao domínio especificado e seus subdomínios. Com este caractere, você não precisa especificar um protocolo ou subdomínio na máscara de endereço. Isso significa que `||` representa `http://*.`, `https://*.`, `ws://*.`, `wss://*.` ao mesmo tempo.
+- **`^`** — uma marca de caractere separador. O caractere separador pode ser qualquer caractere, mas não uma letra, um dígito ou um dos seguintes: `_` `-` `.` `%`. Neste exemplo, os caracteres separadores estão destacados em negrito: `http:`**`//`**`example.com`**`/?`**`t=1`**`&`**`t2=t3`. The end of the address is also accepted as separator.
+- **`|`** — um ponteiro para o início ou o fim do endereço. O valor depende do posicionamento do caractere na máscara. Por exemplo, uma regra `swf|` corresponde a `http://example.com/annoyingflash.swf`, mas não a `http://example.com/swf/index.html`. `|http://exemplo.org` corresponde a `http://exemplo.org`, mas não a `http://dominio.com?url=http://exemplo.org`.
 
 :::note
 
-`|`, `||`, `^` can only be used with rules that have a URL pattern. For example, `||example.com##.advert` is incorrect and will be ignored by the blocker.
+`|`, `||`, `^` só podem ser usados com regras que tenham um padrão de URL. Por exemplo, `||example.com##.advert` está incorreto e será ignorado pelo bloqueador.
 
 :::
 
 :::note Visual representation
 
-We also recommend to get acquainted with [the Adblock Plus filter cheatsheet](https://adblockplus.org/filter-cheatsheet#blocking), for better understanding of how such rules should be made.
+Recomendamos também que você se familiarize com [o cheatsheet de filtros do Adblock Plus](https://adblockplus.org/filter-cheatsheet#blocking), para uma melhor compreensão de como tais regras devem ser feitas.
 
 :::
 
 ### Regular expressions support {#regexp-support}
 
-If you want even more flexibility in making rules, you can use [Regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) instead of a default simplified mask with special characters.
+Se desejar ainda mais flexibilidade na criação de regras, você pode usar [expressões regulares](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) em vez de uma máscara simplificada padrão com caracteres especiais.
 
 :::caution Performance
 
-Rules with regular expressions work more slowly, therefore it is recommended to avoid them or to limit their scope to specific domains.
+As regras com expressões regulares funcionam mais lentamente, portanto, é recomendado evitá-las ou limitar seu escopo a domínios específicos.
 
 :::
 
-If you want a blocker to determine a regular expression, the `pattern` has to look like this:
+Se você quiser um bloqueador para determinar uma expressão regular, o `pattern` deve ficar assim:
 
 ```text
 pattern = "/" regexp "/"
 ```
 
-For example, `/banner\d+/$third-party` this rule will apply the regular expression `banner\d+` to all third-party requests. Exclusion rule with regular expression looks like this: `@@/banner\d+/`.
+For example, `/banner\d+/$third-party` this rule will apply the regular expression `banner\d+` to all third-party requests. Uma regra de exclusão com expressão regular é assim: `@@/banner\d+/`.
 
 :::info Compatibility
 
-AdGuard Safari and AdGuard for iOS do not fully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
+O AdGuard para Safari e o AdGuard para iOS não suportam completamente expressões regulares por causa das [restrições da API de Bloqueio de Conteúdo](https://webkit.org/blog/3476/content-blockers-first-look/) (procure pela seção "O formato da expressão regular").
 
 :::
 
-### Wildcard support for TLD (top-level domains) {#wildcard-for-tld}
+### Suporte a Wildcard para TLD (domínios de nível superior) {#wildcard-for-tld}
 
-Wildcard characters are supported for TLDs of the domains in patterns of [cosmetic](#cosmetic-rules), [HTML filtering](#html-filtering-rules) and [JavaScript](#javascript-rules) rules.
+Os caracteres wildcard são compatíveis para TLDs dos domínios em padrões de [cosméticos](#cosmetic-rules), [filtragem HTML](#html-filtering-rules) e regras [JavaScript](#javascript-rules).
 
-For cosmetic rules, e.g. `example.*##.banner`, multiple domains are matched due to the part `.*`, i.e. `example.com`, `sub.example.net`, `example.co.uk`, etc.
+Para regras cosméticas, por exemplo, `example.*##.banner`, múltiplos domínios são correspondidos devido à parte `.*`, ou seja, `example.com`, `sub.example.net`, `example.co.uk`, etc.
 
-For basic rules the described logic is applicable only for the domains specified in [`$domain` modifier](#domain-modifier), e.g. `||*/banners/*$image,domain=example.*`.
+Para regras básicas, a lógica descrita é aplicável apenas para os domínios especificados no [modificador `$domain`](#domain-modifier), por exemplo, `||*/banners/*$image,domain=example.*`.
 
 :::info Compatibility
 
-In AdGuard for Windows, Mac, Android, and AdGuard Browser Extension rules with wildcard `.*` match any [public suffix (or eTLD)](https://publicsuffix.org/list/). But for AdGuard for Safari and iOS [the supported list of top-level domains](https://github.com/AdguardTeam/SafariConverterLib/blob/v2.0.31/Sources/ContentBlockerConverter/Compiler/BlockerEntryFactory.swift#L44) is limited due to Safari limitations.
+Nas regras com wildcard do AdGuard para Windows, Android, Mac e da Extensão do AdGuard para navegador `.*` correspondem a qualquer [sufixo público (ou eTLD)](https://publicsuffix.org/list/). Mas para AdGuard para Safari e iOS [a lista suportada de domínios de nível superior](https://github.com/AdguardTeam/SafariConverterLib/blob/v2.0.31/Sources/ContentBlockerConverter/Compiler/BlockerEntryFactory.swift#L44) é limitada devido às limitações do Safari.
 
 :::
 
-Rules with wildcard for TLD are not supported by AdGuard Content Blocker.
+Regras com wildcard para TLD não são compatíveis com o Bloqueador de conteúdo do AdGuard.
 
 ### Basic rule examples
 
-- `||example.com/ads/*` — a simple rule, which corresponds to addresses like `http://example.com/ads/banner.jpg` and even `http://subdomain.example.com/ads/otherbanner.jpg`.
+- `||example.com/ads/*` — uma regra simples, que corresponde a endereços como `http://example.com/ads/banner.jpg` e até `http://subdomain.example.com/ads/otherbanner.jpg`.
 
-- `||example.org^$third-party` — this rule blocks third-party requests to `example.org` and its subdomains.
+- `||example.org^$third-party` — esta regra bloqueia solicitações de terceiros para `example.org` e seus subdomínios.
 
-- `@@||example.com$document` — general exception rule. It completely disables filtering for `example.com` and all subdomains. There is a number of modifiers which can be used in exception rules. For more details, please follow the link [below](#exception-modifiers).
+- `@@||example.com$document` — regra de exceção geral. Desativa completamente a filtragem para `example.com` e todos os subdomínios. Há uma série de modificadores que podem ser usados nas regras de exceção. Para mais detalhes, siga o link [abaixo](#exception-modifiers).
 
 ### Basic rule modifiers
 
 - [Basic modifiers](#basic-rules-basic-modifiers)
-- [Content-type modifiers](#content-type-modifiers)
-- [Exception modifiers](#exception-modifiers)
+- [Modificadores do tipo Conteúdo](#content-type-modifiers)
+- [Modificadores de exceção](#exception-modifiers)
 
 :::note
 
-The features described in this section are intended for experienced users. They extend capabilities of "Basic rules", but in order to use them you need to have a basic understanding of the way your browser works.
+Os recursos descritos nesta seção são destinados a usuários experientes. Eles estendem as capacidades das "Regras básicas", mas para usá-las, você precisa ter um entendimento básico de como seu navegador funciona.
 
 :::
 
-You can change the behavior of a "basic rule" by using additional modifiers. Modifiers should be located in the end of the rule after a `$` sign and be separated by commas.
+Você pode alterar o comportamento de uma "regra básica" adicionando modificadores. Os modificadores devem estar localizados no final da regra após o caractere `$` e ser separados por vírgulas.
 
 Example:
 
@@ -382,11 +382,11 @@ Example:
 
 ### Basic modifiers {#basic-rules-basic-modifiers}
 
-The following modifiers are the most simple and frequently used. Basically, they just limit the scope of rule application.
+Os seguintes modificadores são os mais simples e frequentemente usados. Basicamente, eles apenas limitam o escopo da aplicação das regras.
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products                                |       [CoreLibs apps][cl-apps]        |    [AdGuard for Chromium][ext-chr]     |   [AdGuard for Chrome MV3][ext-mv3]    |     [AdGuard for Firefox][ext-ff]      |      [AdGuard para iOS][ios-app]       |     [AdGuard para Safari][ext-saf]     | [Bloqueador de conteúdo do AdGuard][and-cb] |
+| Modificador \ Produtos                             |  [Aplicativos do CoreLibs][cl-apps]   |    [AdGuard for Chromium][ext-chr]     |   [AdGuard for Chrome MV3][ext-mv3]    |     [AdGuard for Firefox][ext-ff]      |      [AdGuard para iOS][ios-app]       |     [AdGuard para Safari][ext-saf]     | [Bloqueador de conteúdo do AdGuard][and-cb] |
 | --------------------------------------------------- |:-------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:-------------------------------------------:|
 | [$app](#app-modifier)                               |                   ✅                   |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                      ❌                      |
 | [$denyallow](#denyallow-modifier)                   |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                      ❌                      |
@@ -396,8 +396,8 @@ The following modifiers are the most simple and frequently used. Basically, they
 | [$match-case](#match-case-modifier)                 |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                      ✅                      |
 | [$method](#method-modifier)                         |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ❌                    |                   ❌                    |                      ❌                      |
 | [$popup](#popup-modifier)                           | ✅ [*[3]](#popup-modifier-limitations) |                   ✅                    | ✅ [*[3]](#popup-modifier-limitations)  |                   ✅                    | ✅ [*[3]](#popup-modifier-limitations)  | ✅ [*[3]](#popup-modifier-limitations)  |                      ❌                      |
-| [$strict-first-party](#strict-first-party-modifier) |                   ⏳                   |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                      ❌                      |
-| [$strict-third-party](#strict-third-party-modifier) |                   ⏳                   |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                      ❌                      |
+| [$strict-first-party](#strict-first-party-modifier) |                   ✅                   |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                      ❌                      |
+| [$strict-third-party](#strict-third-party-modifier) |                   ✅                   |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                      ❌                      |
 | [$third-party](#third-party-modifier)               |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                      ✅                      |
 | [$to](#to-modifier)                                 |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ❌                    |                   ❌                    |                      ❌                      |
 
@@ -405,49 +405,48 @@ The following modifiers are the most simple and frequently used. Basically, they
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- ⏳ — feature that is planned to be implemented but is not yet available in any product
 - ❌ — not supported
 
 :::
 
 #### **`$app`** {#app-modifier}
 
-This modifier lets you narrow the rule coverage down to a specific application (or a list of applications). This might be not too important on Windows and Mac, but this is very important on mobile devices where some of the filtering rules must be app-specific.
+Este modificador permite que você restrinja a abrangência da regra a um aplicativo específico (ou uma lista de aplicativos). Isso pode não ser tão importante no Windows e no Mac, mas é muito importante em dispositivos móveis onde algumas das regras de filtragem devem ser específicas do aplicativo.
 
-- Android — use the app package name, e.g. `org.example.app`.
-- Windows — use the process name, e.g. `chrome.exe`.
-- Mac — use the bundle ID or the process name, e.g. `com.google.Chrome`.
+- Android — use o nome do pacote do aplicativo, e.g. `org.example.app`.
+- Windows — use o nome do processo, por exemplo, `chrome.exe`.
+- Mac — use o ID do pacote ou o nome do processo, por exemplo, `com.google.Chrome`.
 
-For Mac, you can find out the bundle ID or the process name of the app by viewing the respective request details in the Filtering log.
+Para Mac, você pode descobrir o ID do pacote ou o nome do processo do aplicativo visualizando os detalhes da solicitação no registro de filtragem.
 
 **Examples**
 
-- `||baddomain.com^$app=org.example.app` — a rule to block requests that match the specified mask and are sent from the `org.example.app` Android app.
-- `||baddomain.com^$app=org.example.app1|org.example.app2` — the same rule but it works for both `org.example.app1` and `org.example.app2` apps.
+- `||baddomain.com^$app=org.example.app` — uma regra para bloquear solicitações que correspondem à máscara especificada e são enviadas do aplicativo `org.example.app` para Android.
+- `||baddomain.com^$app=org.example.app1|org.example.app2` — a mesma regra, mas funciona para os aplicativos `org.example.app1` e `org.example.app2`.
 
-If you want the rule not to be applied to certain apps, start the app name with the `~` sign.
+Se você quer que a regra não seja aplicada a certos aplicativos, comece o nome do aplicativo com o sinal `~`.
 
-- `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask and are sent from any app except for the `org.example.app`.
-- `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
+- `||baddomain.com^$app=~org.example.app` — uma regra para bloquear solicitações que correspondem à máscara especificada e são enviadas de qualquer aplicativo, exceto o `org.example.app`.
+- `||baddomain.com^$app=~org.example.app1|~org.example.app2` — o mesmo que acima, mas agora dois aplicativos estão excluídos: `org.example.app1` e `org.example.app2`.
 
 :::caution Restrictions
 
-Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`. Rules with such modifier are considered invalid.
+Os aplicativos no valor do modificador não podem ter um wildcard, por exemplo, `$app=com.*.music`. As regras com tal modificador são consideradas inválidas.
 
 :::
 
 :::info Compatibility
 
-- Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$app` modifier.
+- Apenas o AdGuard para Windows, Android é tecnicamente capaz de usar regras com o modificador `$app`.
 - On Windows the process name is case-insensitive starting with AdGuard for Windows with [CoreLibs][] v1.12 or later.
 
 :::
 
 #### **`$denyallow`** {#denyallow-modifier}
 
-`$denyallow` modifier allows to avoid creating additional rules when it is needed to disable a certain rule for specific domains. `$denyallow` matches only target domains and not referrer domains.
+O modificador `$denyallow` permite evitar a criação de regras adicionais quando é necessário desativar uma determinada regra para domínios específicos. `$denyallow` combina apenas com domínios de destino e não com domínios de referência.
 
-Adding this modifier to a rule is equivalent to excluding the domains by the rule's matching pattern or to adding the corresponding exclusion rules. To add multiple domains to one rule, use the `|` character as a separator.
+Adicionar esse modificador a uma regra é equivalente a excluir os domínios pelo padrão de correspondência da regra ou a adicionar as regras de exclusão correspondentes. Para adicionar vários domínios a uma regra, use o caractere `|` como separador.
 
 **Examples**
 
@@ -463,7 +462,7 @@ is equivalent to this one:
 /^(?!.*(x.com|y.com)).*$/$script,domain=a.com|b.com
 ```
 
-or to the combination of these three:
+ou à combinação desses três:
 
 ```adblock
 *$script,domain=a.com|b.com
@@ -473,27 +472,27 @@ or to the combination of these three:
 
 :::caution Restrictions
 
-- The rule's matching pattern cannot target any specific domains, e.g. it cannot start with `||`.
-- Domains in the modifier value cannot be negated, e.g. `$denyallow=~x.com`, or have a wildcard TLD, e.g. `$denyallow=x.*`, or be a regular expression, e.g. `$denyallow=/\.(com\|org)/`.
-- `$denyallow` cannot be used together with [`$to`](#to-modifier). It can be expressed with inverted `$to`: `$denyallow=a.com|b.com` is equivalent to `$to=~a.com|~b.com`.
+- O padrão de correspondência da regra não pode direcionar a nenhum domínio específico, por exemplo, não pode começar com `||`.
+- Os domínios no valor do modificador não podem ser negados, por exemplo, `$denyallow=~x.com`, ou ter um TLD wildcard, por exemplo, `$denyallow=x.*`, ou ser uma expressão regular, por exemplo, `$denyallow=/\.(com\|org)/`.
+- `$denyallow` não pode ser usado junto com [`$to`](#to-modifier). Pode ser expresso com `$to` invertido: `$denyallow=a.com|b.com` é equivalente a `$to=~a.com|~b.com`.
 
-The rules which violate these restrictions are considered invalid.
+As regras que violam essas restrições são consideradas inválidas.
 
 :::
 
 :::info Compatibility
 
-Rules with `$denyallow` modifier are not supported by AdGuard for iOS, Safari, and AdGuard Content Blocker.
+Regras com o modificador `$denyallow` não são suportadas pelo AdGuard para iOS, Safari e Bloqueador de conteúdo do AdGuard.
 
 :::
 
 #### **`$domain`** {#domain-modifier}
 
-`$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header).
+`$domain` limita o escopo da regra às solicitações feitas **a partir dos** domínios especificados e seus subdomínios (conforme indicado pelo cabeçalho HTTP [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer)).
 
 **Syntax**
 
-The modifier is a list of one or more expressions separated by the `|` symbol, each of which is matched against a domain in a particular way depending on its type (see below).
+O modificador é uma lista de uma ou mais expressões separadas pelo símbolo `|`, cada uma das quais é correspondida a um domínio de uma maneira particular dependendo do seu tipo (veja abaixo).
 
 ```text
 domains = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
@@ -514,18 +513,18 @@ Rules with `$domain` modifier as `regular_domain` are supported by all AdGuard p
 
 **Just `$domain`:**
 
-- `||baddomain.com^$domain=example.org` blocks requests that match the specified mask, and are sent from domain `example.org` or its subdomains.
-- `||baddomain.com^$domain=example.org|example.com` — the same rule, but it works for both `example.org` and `example.com`.
+- `||baddomain.com^$domain=example.org` bloqueia solicitações que correspondem à máscara especificada e são enviadas do domínio `example.org` ou seus subdomínios.
+- `||baddomain.com^$domain=example.org|example.com` — a mesma regra, mas funciona para ambos `example.org` e `example.com`.
 
 If you want the rule not to be applied to certain domains, start a domain name with `~` sign.
 
 **`$domain` and negation `~`:**
 
-- `||baddomain.com^$domain=example.org` blocks requests that match the specified mask and are sent from the `example.org` domain or its subdomains.
-- `||baddomain.com^$domain=example.org|example.com` — the same rule, but it works for both `example.org` and `example.com`.
-- `||baddomain.com^$domain=~example.org` blocks requests matching the pattern sent from any domain except `example.org` and its subdomains.
-- `||baddomain.com^$domain=example.org|~foo.example.org` blocks requests sent from `example.org` and its subdomains, except the subdomain `foo.example.org`.
-- `||baddomain.com^$domain=/(^\|.+\.)example\.(com\|org)\$/` blocks requests sent from `example.org` and `example.com` domains and all their subdomains.
+- `||baddomain.com^$domain=example.org` bloqueia solicitações que correspondem à máscara especificada e são enviadas do domínio `example.org` ou seus subdomínios.
+- `||baddomain.com^$domain=example.org|example.com` — a mesma regra, mas funciona para ambos `example.org` e `example.com`.
+- `||baddomain.com^$domain=~example.org` bloqueia solicitações que correspondem ao padrão enviado de qualquer domínio, exceto `example.org` e seus subdomínios.
+- `||baddomain.com^$domain=example.org|~foo.example.org` bloqueia solicitações enviadas de `example.org` e seus subdomínios, exceto o subdomínio `foo.example.org`.
+- `||baddomain.com^$domain=/(^\|.+\.)example\.(com\|org)\$/` bloqueia solicitações enviadas dos domínios `example.org` e `example.com` e todos os seus subdomínios.
 - `||baddomain.com^$domain=~a.com|~b.*|~/(^\|.+\.)c\.(com\|org)\$/` blocks requests sent from any domains, except `a.com`, `b` with any public suffix (`b.com`, `b.co.uk`, etc.), `c.com`, `c.org`, and their subdomains.
 
 **`$domain` modifier matching target domain:**
@@ -535,7 +534,7 @@ In some cases the `$domain` modifier can match not only the referrer domain, but
 1. The request has the `document` content type
 1. The rule pattern does not match any particular domains
 1. The rule pattern does not contain regular expressions
-1. The `$domain` modifier contains only excluded domains, e.g. `$domain=~example.org|~example.com`
+1. O modificador `$domain` contém apenas domínios excluídos, por exemplo, `$domain=~example.org|~example.com`
 
 The following predicate should be satisfied to perform a target domain matching:
 
@@ -551,17 +550,17 @@ If the referrer matches a rule with `$domain` that explicitly excludes the refer
 
 **Examples**
 
-- `*$cookie,domain=example.org|example.com` will block cookies for all requests to and from `example.org` and `example.com`.
-- `*$document,domain=example.org|example.com` will block all requests to and from `example.org` and `example.com`.
+- `*$cookie,domain=example.org|example.com` bloqueará cookies para todas as solicitações para e de `example.org` e `example.com`.
+- `*$document,domain=example.org|example.com` bloqueará todas as solicitações para e a partir de `example.org` e `example.com`.
 
-In the following examples it is implied that requests are sent from `http://example.org/page` (the referrer) and the target URL is `http://targetdomain.com/page`.
+Nos exemplos a seguir, implica-se que as solicitações são enviadas de `http://example.org/page` (o referenciador) e a URL de destino é `http://targetdomain.com/page`.
 
-- `page$domain=example.org` will be matched, as it matches the referrer domain.
+- `page$domínio=example.org` será combinado, pois corresponde ao domínio do referenciador.
 - `page$domain=targetdomain.com` will be matched, as it matches the target domain and satisfies all requirements mentioned above.
 - `||*page$domain=targetdomain.com` will not be matched, as the pattern `||*page` may match specific domains, e.g. `example.page`.
 - `||*page$domain=targetdomain.com,cookie` will be matched because the rule contains `$cookie` modifier despite the pattern `||*page` may match specific domains.
 - `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
-- `page$domain=targetdomain.com|~example.org` will not be matched because the referrer domain is explicitly excluded.
+- `page$domínio=targetdomain.com|~example.org` não será correspondente porque o domínio de referência foi explicitamente excluído.
 
 ##### `$domain` modifier limitations {#domain-modifier-limitations}
 
@@ -569,17 +568,13 @@ In the following examples it is implied that requests are sent from `http://exam
 
 In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries are not supported.
 
-:::
-
-:::caution Restrictions
-
-Safari does not support the simultaneous use of allowed and disallowed domains, so rules like `||baddomain.com^$domain=example.org|~foo.example.org` will not work in AdGuard for iOS and AdGuard for Safari.
+AdGuard for iOS and AdGuard for Safari support the `$domain` modifier but have some limitations. For more details, see the [SafariConverterLib section](#safari-converter--basic--supported-with-limitations).
 
 :::
 
 :::info Compatibility
 
-Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
 
 In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.12 or later the `$domain` modifier can be alternatively spelled as `$from`.
 
@@ -617,13 +612,14 @@ The modifier part, `":" h_value`, may be omitted. In that case, the modifier mat
 :::caution Restrictions
 
 1. The `$header` modifier can be matched only when headers are received. So if the request is blocked or redirected at an earlier stage, the modifier cannot be applied.
-1. In Adguard Browser Extension, the `$header` modifier is only compatible with [`$csp`](#csp-modifier), [`$removeheader`](#removeheader-modifier), [`$important`](#important-modifier), and [`$badfilter`](#badfilter-modifier).
+
+1. In AdGuard Browser Extension, the `$header` modifier is only compatible with [`$csp`](#csp-modifier), [`$removeheader`](#removeheader-modifier) (response headers only), [`$important`](#important-modifier), [`$badfilter`](#badfilter-modifier), [`$domain`](#domain-modifier), [`$third-party`](#third-party-modifier), [`$match-case`](#match-case-modifier), and [content-type modifiers](#content-type-modifiers) such as [`$script`](#script-modifier) and [`$stylesheet`](#stylesheet-modifier). The rules with other modifiers are considered invalid and will be discarded.
 
 :::
 
 :::info Compatibility
 
-Rules with the `$header` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+Rules with the `$header` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
 
 :::
 
@@ -636,13 +632,13 @@ Go to [rules priorities](#rule-priorities) for more details.
 **Examples**
 
 ```adblock
-! blocking rule will block all requests despite of the exception rule
+! a regra de bloqueio bloqueará todas as solicitações apesar da regra de exceção
 ||example.org^$important
 @@||example.org^
 ```
 
 ```adblock
-! if the exception rule also has `$important` modifier, it will prevail and requests won't be blocked
+! se a regra de exceção também tiver o modificador `$important`, ela prevalecerá e as solicitações não serão bloqueadas
 ||example.org^$important
 @@||example.org^$important
 ```
@@ -682,7 +678,7 @@ Rules with mixed negated and not negated values are considered invalid. So, for 
 
 :::info Compatibility
 
-Rules with `$method` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.12 or later, and AdGuard Browser Extension for Chrome, Firefox, and Edge with [TSUrlFilter][] v2.1.1 or later.
+Rules with `$method` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.12 or later, and AdGuard Browser Extension for Chrome, Firefox, and Edge with [TSUrlFilter][] v2.1.1 or later.
 
 :::
 
@@ -701,7 +697,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 1. The `$popup` modifier works best in AdGuard Browser Extension for Chromium-based browsers and Firefox.
 1. In [AdGuard for Chrome MV3][ext-mv3] rules with the [`$popup`][popup-in-mv3] modifier would not work, so we disable converting them to declarative rules. We will try to use them only in our [TSUrlFilter][] engine and close new tabs programmatically.
 1. In AdGuard for iOS and AdGuard for Safari, `$popup` rules simply block the page right away.
-1. In AdGuard for Windows, AdGuard for Mac, and AdGuard for Android, the `$popup` modifier may not detect a popup in some cases and it will not be blocked. The `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page. Blocking page itself can do some checks and close the window if it is really a popup. Otherwise, page should be loaded. It can be combined with other request type modifiers, such as `$third-party`, `$strict-third-party`, `$strict-first-party`, and `$important`.
+1. In AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux, the `$popup` modifier may not detect a popup in some cases and it will not be blocked. The `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page. Blocking page itself can do some checks and close the window if it is really a popup. Otherwise, page should be loaded. It can be combined with other request type modifiers, such as `$third-party`, `$strict-third-party`, `$strict-first-party`, and `$important`.
 
 :::
 
@@ -727,7 +723,7 @@ You can use a shorter name (alias) instead of using the full modifier name: `$st
 
 :::info Compatibility
 
-Rules with the `$strict-first-party` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.16 or later.
+Rules with the `$strict-first-party` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.16 or later.
 
 :::
 
@@ -747,7 +743,7 @@ You can use a shorter name (alias) instead of using the full modifier name: `$st
 
 :::info Compatibility
 
-Rules with the `$strict-third-party` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.16 or later.
+Rules with the `$strict-third-party` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.16 or later.
 
 :::
 
@@ -759,7 +755,7 @@ A restriction on third-party and custom requests. A third-party request is a req
 
 To be considered as such, a third-party request should meet one of the following conditions:
 
-1. Its referrer is not a subdomain of the target domain or vice versa. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request
+1. Its referrer is not a subdomain of the target domain or vice versa. Por exemplo, uma solicitação para `subdomain.example.org` de `example.org` não é uma solicitação de terceiros
 1. Its `Sec-Fetch-Site` header is set to `cross-site`
 
 :::
@@ -768,7 +764,7 @@ To be considered as such, a third-party request should meet one of the following
 
 **`$third-party`:**
 
-- `||domain.com^$third-party` — this rule applies to all domains, except `domain.com` and its subdomains. An example of a third-party request: `http://example.org/banner.jpg`.
+- `||domain.com^$third-party` — this rule applies to all domains, except `domain.com` and its subdomains. Um exemplo de uma solicitação de terceiros: `http://example.org/banner.jpg`.
 
 If there is a `$~third-party` modifier, the rule is only applied to the requests that are not from third parties. Which means, they have to be sent from the same domain.
 
@@ -784,7 +780,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 
 #### **`$to`** {#to-modifier}
 
-`$to` limits the rule scope to requests made **to** the specified domains and their subdomains. To add multiple domains to one rule, use the `|` character as a separator.
+`$to` limits the rule scope to requests made **to** the specified domains and their subdomains. Para adicionar vários domínios a uma regra, use o caractere `|` como separador.
 
 **Examples**
 
@@ -794,17 +790,17 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 
 :::caution Restrictions
 
-[`$denyallow`](#denyallow-modifier) cannot be used together with `$to`. It can be expressed with inverted `$to`: `$denyallow=a.com|b.com` is equivalent to `$to=~a.com|~b.com`.
+[`$denyallow`](#denyallow-modifier) cannot be used together with `$to`. Pode ser expresso com `$to` invertido: `$denyallow=a.com|b.com` é equivalente a `$to=~a.com|~b.com`.
 
 :::
 
 :::info Compatibility
 
-Rules with the `$to` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.12 or later, and AdGuard Browser Extension with [TSUrlFilter][] v2.1.3 or later.
+Rules with the `$to` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.12 or later, and AdGuard Browser Extension with [TSUrlFilter][] v2.1.3 or later.
 
 :::
 
-### Content-type modifiers {#content-type-modifiers}
+### Modificadores do tipo Conteúdo {#content-type-modifiers}
 
 There is a set of modifiers, which can be used to limit the rule's application area to certain type of content. These modifiers can also be combined to cover, for example, both images and scripts.
 
@@ -816,13 +812,13 @@ There is a big difference in how AdGuard determines the content type on differen
 
 **Examples of content-type modifiers**
 
-- `||example.org^$image` — corresponds to all images from `example.org`.
-- `||example.org^$script,stylesheet` — corresponds to all the scripts and styles from `example.org`.
-- `||example.org^$~image,~script,~stylesheet` — corresponds to all requests to `example.org` except for the images, scripts and styles.
+- `||example.org^$image` — corresponde a todas as imagens de `example.org`.
+- `||example.org^$script,stylesheet` — corresponde a todos os scripts e estilos de `example.org`.
+- `||example.org^$~image,~script,~stylesheet` — corresponde a todas as solicitações para `exemplo.org` exceto para as imagens, scripts e folhas de estilo.
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products                                          |          [CoreLibs apps][cl-apps]           | [AdGuard for Chromium][ext-chr] | [AdGuard for Chrome MV3][ext-mv3] | [AdGuard for Firefox][ext-ff] |        [AdGuard para iOS][ios-app]        |      [AdGuard para Safari][ext-saf]       | [Bloqueador de conteúdo do AdGuard][and-cb] |
+| Modificador \ Produtos                                       |     [Aplicativos do CoreLibs][cl-apps]      | [AdGuard for Chromium][ext-chr] | [AdGuard for Chrome MV3][ext-mv3] | [AdGuard for Firefox][ext-ff] |        [AdGuard para iOS][ios-app]        |      [AdGuard para Safari][ext-saf]       | [Bloqueador de conteúdo do AdGuard][and-cb] |
 | ------------------------------------------------------------- |:-------------------------------------------:|:-------------------------------:|:---------------------------------:|:-----------------------------:|:-----------------------------------------:|:-----------------------------------------:|:-------------------------------------------:|
 | [$document](#document-modifier)                               |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                      ❌                      |
 | [$font](#font-modifier)                                       |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                      ✅                      |
@@ -917,7 +913,7 @@ Rules with `$ping` modifier are not supported by AdGuard for Safari and AdGuard 
 
 #### **`$script`** {#script-modifier}
 
-The rule corresponds to script requests, e.g. javascript, vbscript.
+The rule corresponds to script requests, e.g. JavaScript, VBScript.
 
 #### **`$stylesheet`** {#stylesheet-modifier}
 
@@ -944,7 +940,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$fr
 
 :::
 
-##### `$subdocument` modified limitations {#subdocument-modifier-limitations}
+##### `$subdocument` modifier limitations {#subdocument-modifier-limitations}
 
 :::caution Limitations
 
@@ -978,7 +974,7 @@ For AdGuard for Safari and AdGuard for iOS, it is supported on devices with macO
 
 #### **`$xmlhttprequest`** {#xmlhttprequest-modifier}
 
-The rule applies only to ajax requests (requests sent via javascript object `XMLHttpRequest`).
+The rule applies only to ajax requests (requests sent via the JavaScript object `XMLHttpRequest`).
 
 :::note
 
@@ -1012,8 +1008,8 @@ The rule applies only to WebRTC connections.
 
 **Examples**
 
-- `||example.com^$webrtc,domain=example.org` blocks webRTC connections to `example.com` from `example.org`.
-- `@@*$webrtc,domain=example.org` disables the RTC wrapper for `example.org`.
+- `||example.com^$webrtc,domain=example.org` bloqueia as conexões webRTC para `example.com` a partir de `example.org`.
+- `@@*$webrtc,domain=example.org` desativa o wrapper RTC para `example.org`.
 
 ### Exception rules modifiers {#exception-modifiers}
 
@@ -1027,23 +1023,38 @@ We recommend to get acquainted with [the Adblock Plus filter cheatsheet](https:/
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products                    | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] |    [AdGuard for Chrome MV3][ext-mv3]     | [AdGuard for Firefox][ext-ff] |         [AdGuard para iOS][ios-app]          |        [AdGuard para Safari][ext-saf]        | [Bloqueador de conteúdo do AdGuard][and-cb] |
-| --------------------------------------- |:------------------------:|:-------------------------------:|:----------------------------------------:|:-----------------------------:|:--------------------------------------------:|:--------------------------------------------:|:-------------------------------------------:|
-| [$content](#content-modifier)           |            ✅             |                ❌                |                    ❌                     |               ✅               |                      ❌                       |                      ❌                       |                      ❌                      |
-| [$elemhide](#elemhide-modifier)         |            ✅             |                ✅                |                    ✅                     |               ✅               |                      ✅                       |                      ✅                       |                      ✅                      |
-| [$extension](#extension-modifier)       |            ✅             |                ❌                |                    ❌                     |               ❌               |                      ❌                       |                      ❌                       |                      ❌                      |
-| [$jsinject](#jsinject-modifier)         |            ✅             |                ✅                | ✅ [*[1]](#jsinject-modifier-limitations) |               ✅               |                      ✅                       |                      ✅                       |                      ❌                      |
-| [$stealth](#stealth-modifier)           |            ✅             |                ✅                |                    ❌                     |               ✅               |                      ❌                       |                      ❌                       |                      ❌                      |
-| [$urlblock](#urlblock-modifier)         |            ✅             |                ✅                |                    ❌                     |               ✅               |   ✅ [*[2]](#urlblock-modifier-limitations)   |   ✅ [*[2]](#urlblock-modifier-limitations)   |                      ❌                      |
-| [$genericblock](#genericblock-modifier) |            ✅             |                ✅                |                    ✅                     |               ✅               | ✅ [*[3]](#genericblock-modifier-limitations) | ✅ [*[3]](#genericblock-modifier-limitations) |                      ❌                      |
-| [$generichide](#generichide-modifier)   |            ✅             |                ✅                |                    ✅                     |               ✅               |                      ✅                       |                      ✅                       |                      ✅                      |
-| [$specifichide](#specifichide-modifier) |            ✅             |                ✅                |                    ✅                     |               ✅               |                      ❌                       |                      ❌                       |                      ❌                      |
+| Modificador \ Produtos                 | [Aplicativos do CoreLibs][cl-apps] | [AdGuard for Chromium][ext-chr] |    [AdGuard for Chrome MV3][ext-mv3]     | [AdGuard for Firefox][ext-ff] |         [AdGuard para iOS][ios-app]          |        [AdGuard para Safari][ext-saf]        | [Bloqueador de conteúdo do AdGuard][and-cb] |
+| --------------------------------------- |:----------------------------------:|:-------------------------------:|:----------------------------------------:|:-----------------------------:|:--------------------------------------------:|:--------------------------------------------:|:-------------------------------------------:|
+| [$content](#content-modifier)           |                 ✅                  |                ❌                |                    ❌                     |               ✅               |                      ❌                       |                      ❌                       |                      ❌                      |
+| [$elemhide](#elemhide-modifier)         |                 ✅                  |                ✅                |                    ✅                     |               ✅               |                      ✅                       |                      ✅                       |                      ✅                      |
+| [$extension](#extension-modifier)       |                 ✅                  |                ❌                |                    ❌                     |               ❌               |                      ❌                       |                      ❌                       |                      ❌                      |
+| [$jsinject](#jsinject-modifier)         |                 ✅                  |                ✅                | ✅ [*[1]](#jsinject-modifier-limitations) |               ✅               |                      ✅                       |                      ✅                       |                      ❌                      |
+| [$stealth](#stealth-modifier)           |                 ✅                  |                ✅                |                    ❌                     |               ✅               |                      ❌                       |                      ❌                       |                      ❌                      |
+| [$urlblock](#urlblock-modifier)         |                 ✅                  |                ✅                |                    ❌                     |               ✅               |   ✅ [*[2]](#urlblock-modifier-limitations)   |   ✅ [*[2]](#urlblock-modifier-limitations)   |                      ❌                      |
+| [$genericblock](#genericblock-modifier) |                 ✅                  |                ✅                |                    ✅                     |               ✅               | ✅ [*[3]](#genericblock-modifier-limitations) | ✅ [*[3]](#genericblock-modifier-limitations) |                      ❌                      |
+| [$generichide](#generichide-modifier)   |                 ✅                  |                ✅                |                    ✅                     |               ✅               |                      ✅                       |                      ✅                       |                      ✅                      |
+| [$specifichide](#specifichide-modifier) |                 ✅                  |                ✅                |                    ✅                     |               ✅               |                      ❌                       |                      ❌                       |                      ❌                      |
 
 :::note
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 - ❌ — not supported
+
+:::
+
+:::info
+
+By default, without specifying additional content type modifiers, exception rule modifiers override other basic rules only for main frame document requests (see [`$document`](#document-modifier) for more information about main frame document).
+
+Por exemplo:
+
+- The website `example.com` contains an `iframe` pointing to `example1.com`.
+- The rule `#%#//console.log('test')` is applied.
+
+In this case, the log will appear twice in the console: once for the main frame document and once for `iframe`.
+
+If you add the `@@||example.com^$jsinject` rule, the log will appear only once for `iframe`.
 
 :::
 
@@ -1114,7 +1125,7 @@ $extension="userscript name\, with \"quote\""
 :::info Compatibility
 
 - Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$extension` modifier.
-- Rules with `$extension` modifier with specific userscript name are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.13 or later.
+- Rules with `$extension` modifier with specific userscript name are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.13 or later.
 
 :::
 
@@ -1194,7 +1205,7 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 :::info Compatibility
 
 - Tracking protection (formerly Stealth Mode) is available in AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox and Chromium-based browsers, except AdGuard for Chrome MV3. All other products will ignore the rules with `$stealth` modifier.
-- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
 
 :::
 
@@ -1285,7 +1296,7 @@ Disables all specific element hiding and CSS rules, but not general ones. Has an
 
 **Examples**
 
-- `@@||example.org^$specifichide` disables `example.org##.banner` but not `##.banner`.
+- `@@||example.org^$specifichide` desativar `example.org##.banner`, mas não `##.banner`.
 
 :::note
 
@@ -1311,35 +1322,34 @@ These modifiers are able to completely change the behavior of basic rules.
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products                        |          [CoreLibs apps][cl-apps]           | [AdGuard for Chromium][ext-chr] |      [AdGuard for Chrome MV3][ext-mv3]      |        [AdGuard for Firefox][ext-ff]        | [AdGuard para iOS][ios-app] | [AdGuard para Safari][ext-saf] | [Bloqueador de conteúdo do AdGuard][and-cb] |
-| ------------------------------------------- |:-------------------------------------------:|:-------------------------------:|:-------------------------------------------:|:-------------------------------------------:|:---------------------------:|:------------------------------:|:-------------------------------------------:|
-| [$all](#all-modifier)                       |                      ✅                      |                ✅                |     ✅ [*[1]](#all-modifier-limitations)     |                      ✅                      |              ✅              |               ✅                |                      ❌                      |
-| [$badfilter](#badfilter-modifier)           |                      ✅                      |                ✅                |  ✅ [*[2]](#badfilter-modifier-limitations)  |                      ✅                      |              ✅              |               ✅                |                      ❌                      |
-| [$cookie](#cookie-modifier)                 |                      ✅                      |                ✅                |   ✅ [*[3]](#cookie-modifier-limitations)    |                      ✅                      |              ❌              |               ❌                |                      ❌                      |
-| [$csp](#csp-modifier)                       |                      ✅                      |                ✅                |                      ✅                      |                      ✅                      |              ❌              |               ❌                |                      ❌                      |
-| [$hls](#hls-modifier)                       |                      ✅                      |                ❌                |                      ❌                      |                      ❌                      |              ❌              |               ❌                |                      ❌                      |
-| [$inline-font](#inline-font-modifier)       |                      ✅                      |                ✅                |                      ✅                      |                      ✅                      |              ❌              |               ❌                |                      ❌                      |
-| [$inline-script](#inline-script-modifier)   |                      ✅                      |                ✅                |                      ✅                      |                      ✅                      |              ❌              |               ❌                |                      ❌                      |
-| [$jsonprune](#jsonprune-modifier)           |                      ✅                      |                ❌                |                      ❌                      |                      ❌                      |              ❌              |               ❌                |                      ❌                      |
-| [$xmlprune](#xmlprune-modifier)             |                      ✅                      |                ❌                |                      ❌                      |                      ❌                      |              ❌              |               ❌                |                      ❌                      |
-| [$network](#network-modifier)               |                      ✅                      |                ❌                |                      ❌                      |                      ❌                      |              ❌              |               ❌                |                      ❌                      |
-| [$permissions](#permissions-modifier)       | ✅ [*[4]](#permissions-modifier-limitations) |                ✅                |                      ✅                      | ✅ [*[4]](#permissions-modifier-limitations) |              ❌              |               ❌                |                      ❌                      |
-| [$redirect](#redirect-modifier)             |                      ✅                      |                ✅                |  ✅ [*[5]](#redirect-modifier-limitations)   |                      ✅                      |              ❌              |               ❌                |                      ❌                      |
-| [$redirect-rule](#redirect-rule-modifier)   |                      ✅                      |                ✅                |                      ❌                      |                      ✅                      |              ❌              |               ❌                |                      ❌                      |
-| [$referrerpolicy](#referrerpolicy-modifier) |                      ✅                      |                ❌                |                      ⏳                      |                      ❌                      |              ❌              |               ❌                |                      ❌                      |
-| [$removeheader](#removeheader-modifier)     |                      ✅                      |                ✅                |                      ❌                      |                      ✅                      |              ❌              |               ❌                |                      ❌                      |
-| [$removeparam](#removeparam-modifier)       |                      ✅                      |                ✅                | ✅ [*[6]](#removeparam-modifier-limitations) |                      ✅                      |              ❌              |               ❌                |                      ❌                      |
-| [$replace](#replace-modifier)               |                      ✅                      |                ❌                |                      ❌                      |                      ✅                      |              ❌              |               ❌                |                      ❌                      |
-| [$urltransform](#urltransform-modifier)     |                      ✅                      |                ❌                |                      ❌                      |                      ❌                      |              ❌              |               ❌                |                      ❌                      |
-| [noop](#noop-modifier)                      |                      ✅                      |                ✅                |                      ✅                      |                      ✅                      |              ✅              |               ✅                |                      ❌                      |
-| [$empty 👎](#empty-modifier "deprecated")    |                      ✅                      |                ✅                |                      ✅                      |                      ✅                      |              ❌              |               ❌                |                      ❌                      |
-| [$mp4 👎](#mp4-modifier "deprecated")        |                      ✅                      |                ✅                |                      ✅                      |                      ✅                      |              ❌              |               ❌                |                      ❌                      |
+| Modificador \ Produtos                     |     [Aplicativos do CoreLibs][cl-apps]      |       [AdGuard for Chromium][ext-chr]        |      [AdGuard for Chrome MV3][ext-mv3]       |        [AdGuard for Firefox][ext-ff]         | [AdGuard para iOS][ios-app] | [AdGuard para Safari][ext-saf] | [Bloqueador de conteúdo do AdGuard][and-cb] |
+| ------------------------------------------- |:-------------------------------------------:|:--------------------------------------------:|:--------------------------------------------:|:--------------------------------------------:|:---------------------------:|:------------------------------:|:-------------------------------------------:|
+| [$all](#all-modifier)                       |                      ✅                      |                      ✅                       |     ✅ [*[1]](#all-modifier-limitations)      |                      ✅                       |              ✅              |               ✅                |                      ❌                      |
+| [$badfilter](#badfilter-modifier)           |                      ✅                      |                      ✅                       |  ✅ [*[2]](#badfilter-modifier-limitations)   |                      ✅                       |              ✅              |               ✅                |                      ❌                      |
+| [$cookie](#cookie-modifier)                 |                      ✅                      |                      ✅                       |    ✅ [*[3]](#cookie-modifier-limitations)    |                      ✅                       |              ❌              |               ❌                |                      ❌                      |
+| [$csp](#csp-modifier)                       |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |              ❌              |               ❌                |                      ❌                      |
+| [$hls](#hls-modifier)                       |                      ✅                      |                      ❌                       |                      ❌                       |                      ❌                       |              ❌              |               ❌                |                      ❌                      |
+| [$inline-font](#inline-font-modifier)       |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |              ❌              |               ❌                |                      ❌                      |
+| [$inline-script](#inline-script-modifier)   |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |              ❌              |               ❌                |                      ❌                      |
+| [$jsonprune](#jsonprune-modifier)           |                      ✅                      |                      ❌                       |                      ❌                       |                      ❌                       |              ❌              |               ❌                |                      ❌                      |
+| [$xmlprune](#xmlprune-modifier)             |                      ✅                      |                      ❌                       |                      ❌                       |                      ❌                       |              ❌              |               ❌                |                      ❌                      |
+| [$network](#network-modifier)               |                      ✅                      |                      ❌                       |                      ❌                       |                      ❌                       |              ❌              |               ❌                |                      ❌                      |
+| [$permissions](#permissions-modifier)       | ✅ [*[4]](#permissions-modifier-limitations) |                      ✅                       |                      ✅                       | ✅ [*[4]](#permissions-modifier-limitations)  |              ❌              |               ❌                |                      ❌                      |
+| [$redirect](#redirect-modifier)             |                      ✅                      |                      ✅                       |   ✅ [*[5]](#redirect-modifier-limitations)   |                      ✅                       |              ❌              |               ❌                |                      ❌                      |
+| [$redirect-rule](#redirect-rule-modifier)   |                      ✅                      |                      ✅                       |                      ❌                       |                      ✅                       |              ❌              |               ❌                |                      ❌                      |
+| [$referrerpolicy](#referrerpolicy-modifier) |                      ✅                      |                      ❌                       |                      ❌                       |                      ❌                       |              ❌              |               ❌                |                      ❌                      |
+| [$removeheader](#removeheader-modifier)     |                      ✅                      | ✅ [*[7]](#removeheader-modifier-limitations) | ✅ [*[7]](#removeheader-modifier-limitations) | ✅ [*[7]](#removeheader-modifier-limitations) |              ❌              |               ❌                |                      ❌                      |
+| [$removeparam](#removeparam-modifier)       |                      ✅                      |                      ✅                       | ✅ [*[6]](#removeparam-modifier-limitations)  |                      ✅                       |              ❌              |               ❌                |                      ❌                      |
+| [$replace](#replace-modifier)               |                      ✅                      |                      ❌                       |                      ❌                       |                      ✅                       |              ❌              |               ❌                |                      ❌                      |
+| [$urltransform](#urltransform-modifier)     |                      ✅                      |                      ❌                       |                      ❌                       |                      ❌                       |              ❌              |               ❌                |                      ❌                      |
+| [noop](#noop-modifier)                      |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |              ✅              |               ✅                |                      ❌                      |
+| [$empty 👎](#empty-modifier "deprecated")    |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |              ❌              |               ❌                |                      ❌                      |
+| [$mp4 👎](#mp4-modifier "deprecated")        |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |              ❌              |               ❌                |                      ❌                      |
 
 :::note
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- ⏳ — feature that is planned to be implemented but is not yet available in any product
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 
@@ -1404,7 +1414,7 @@ In that case, the `$badfilter` rule will disable the corresponding rule for doma
 
 :::caution Limitations
 
-In [AdGuard for Chrome MV3][ext-mv3] a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. We cannot calculate it if it is only partially canceled. [Examples](https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#badfilter)
+In [AdGuard for Chrome MV3][ext-mv3] a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. We cannot calculate it if it is only partially canceled. [Examples][badfilter-in-mv3].
 
 :::
 
@@ -1548,7 +1558,7 @@ The characters `/`, `$` and `,` must be escaped with `\` inside `regexp`.
 
 **Exceptions**
 
-Basic URL exceptions shall not disable rules with `$hls` modifier. They can be disabled as described below:
+Basic URL exceptions shall not disable rules with the `$hls` modifier. They can be disabled as described below:
 
 - `@@||example.org^$hls` disables all `$hls` rules for responses from URLs matching `||example.org^`.
 - `@@||example.org^$hls=text` disables all `$hls` rules with the value of the `$hls` modifier equal to `text` for responses from URLs matching `||example.org^`.
@@ -1655,7 +1665,7 @@ preroll.ts
 
 :::info Compatibility
 
-Rules with the `$hls` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.10 or later.
+Rules with the `$hls` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.10 or later.
 
 :::
 
@@ -1900,7 +1910,7 @@ In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.11 or later, JSONPa
 
 :::info Compatibility
 
-Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.10 or later.
+Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.10 or later.
 
 :::
 
@@ -2138,7 +2148,7 @@ When multiple `$xmlprune` rules match the same request, they are applied in lexi
 
 :::info Compatibility
 
-Rules with the `$xmlprune` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.15 or later.
+Rules with the `$xmlprune` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.15 or later.
 
 :::
 
@@ -2236,8 +2246,8 @@ Firefox ignores the `Permissions-Policy` header. For more information, see [this
 
 :::info Compatibility
 
-- Rules with the `$permissions` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
-- Pipe separator `|` instead of escaped comma is supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.14 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+- Rules with the `$permissions` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+- Pipe separator `|` instead of escaped comma is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.14 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
 
 :::
 
@@ -2326,7 +2336,7 @@ If a request matches multiple `$referrerpolicy` rules not disabled by exceptions
 
 :::info Compatibility
 
-Rules with the `$referrerpolicy` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.12 or later.
+Rules with the `$referrerpolicy` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.12 or later.
 
 :::
 
@@ -2373,6 +2383,74 @@ In case of multiple `$removeheader` rules matching a single request, we will app
     ||example.org^$removeheader=location
     @@||example.org/path/$removeheader
     ```
+
+##### `$removeheader` modifier limitations {#removeheader-modifier-limitations}
+
+:::caution Limitations
+
+[AdGuard for Chrome MV3][ext-mv3] has some limitations:
+
+- Negation and allowlist rules are not supported.
+- Group of similar `$removeheader` rules will be combined into one declarative rule. Por exemplo:
+
+    ```bash
+    ||testcases.adguard.com$xmlhttprequest,removeheader=p1case1
+    ||testcases.adguard.com$xmlhttprequest,removeheader=P2Case1
+    $xmlhttprequest,removeheader=p1case2
+    $xmlhttprequest,removeheader=P2case2
+    ```
+
+    é convertido para
+
+    ```bash
+    [
+      {
+        "id": 1,
+        "action": {
+          "type": "modifyHeaders",
+          "responseHeaders": [
+            {
+                "header": "p1case1",
+                "operation": "remove"
+            },
+            {
+                "header": "P2Case1",
+                "operation": "remove"
+            },
+          ]
+        },
+        "condition": {
+          "urlFilter": "||testcases.adguard.com",
+          "resourceTypes": [
+            "xmlhttprequest"
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "action": {
+          "type": "modifyHeaders",
+          "responseHeaders": [
+            {
+                "header": "p1case2",
+                "operation": "remove"
+            },
+            {
+                "header": "P2case2",
+                "operation": "remove"
+            }
+          ]
+        },
+        "condition": {
+          "resourceTypes": [
+            "xmlhttprequest"
+          ]
+        }
+      }
+    ]
+    ```
+
+:::
 
 :::caution Restrictions
 
@@ -2428,7 +2506,7 @@ This type of rules can only be used [**in trusted filters**](#trusted-filters).
     - `transfer-encoding`
     - `upgrade`
 
-1. `$removeheader` rules are only compatible with `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers) such as `$script` and `$stylesheet`. The rules which have any other modifiers are considered invalid and will be discarded.
+1. `$removeheader` rules are only compatible with `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and [content-type modifiers](#content-type-modifiers) such as `$script` and `$stylesheet`. The rules which have any other modifiers are considered invalid and will be discarded.
 
 :::
 
@@ -2631,7 +2709,7 @@ With these rules, specified UTM parameters will be removed from any request save
 
 :::info Compatibility
 
-- Rules with `$removeparam` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.7 or later, and AdGuard Browser Extension v3.6 or later.
+- Rules with `$removeparam` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.7 or later, and AdGuard Browser Extension v3.6 or later.
 - `$removeparam` syntax for regular expressions is supported AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.8 or later, and AdGuard Browser Extension v4.0 or later.
 - `POST` request types are supported only by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSWebExtension][] v0.4.6 or later.
 
@@ -2646,8 +2724,7 @@ You will need some knowledge of regular expressions to use `$replace` modifier.
 **Features**
 
 - `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc.).
-- `$replace` rules do not apply if the size of the original response is more than 10 MB.
-- `$replace` rules have a higher priority than other basic rules (**including** exception rules). So if a request natches two different rules, one of which has the `$replace` modifier, this rule will be applied.
+- `$replace` rules have a higher priority than other basic rules, **including** exception rules. So if a request matches two different rules, one of which has the `$replace` modifier, this rule will be applied.
 - Document-level exception rules with `$content` or `$document` modifiers do disable `$replace` rules for requests matching them.
 - Other document-level exception rules (`$generichide`, `$elemhide` or `$jsinject` modifiers) are applied alongside `$replace` rules. It means that you can modify the page content with a `$replace` rule and disable cosmetic rules there at the same time.
 
@@ -2701,7 +2778,8 @@ You can see how this rule works here: http://regexr.com/3cesk
 
 :::caution Restrictions
 
-Rules with the `$replace` modifier can only be used [**in trusted filters**](#trusted-filters).
+- Rules with the `$replace` modifier can only be used [**in trusted filters**](#trusted-filters).
+- `$replace` rules do not apply if the size of the original response is more than 10 MB. For AdGuard Browser Extension, this limit applies starting from v5.2 or later.
 
 :::
 
@@ -2745,7 +2823,7 @@ In the `$urltransform` value, two characters must be escaped: the comma `,` and 
 
 :::info Compatibility
 
-This section only applies to AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.17 or later.
+This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.17 or later.
 
 :::
 
@@ -2792,6 +2870,28 @@ the request to `https://example.com/firstpath` will be blocked.
 
 `$urltransform` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$urltransform=/X/Y/` for requests to **example.com**, but `@@||example.com^$urlblock` will.
 
+**The rule example for cleaning affiliate links**
+
+Many websites use tracking URLs to monitor clicks before redirecting to the actual destination. These URLs contain marketing parameters and analytics tokens that can be removed to improve privacy.
+
+Below is an example of how to obtain the clean destination link to bypass tracking websites and go directly to the destination.
+
+In our example:
+
+ 1. The initial URL (with click tracking): `https://www.aff.example.com/visit?url=https%3A%2F%2Fwww.somestore.com%2F%26referrer%3Dhttps%3A%2F%2Fwww.aff.example.com%2F%26ref%3Dref-123`
+ 1. Tracking URL after decoding special characters: `https://www.aff.example.com/visit?url=https://www.somestore.com/`
+ 1. The website you want to visit: `https://www.somestore.com`
+
+To clean the URL, we first need to decode special characters (like `%3A` → `:`, `%2F` → `/`, etc.) and extract the real URL from the tracking parameters. We will use the `$urltransform` modifier to do this. The following 4 rules replace URL-encoded symbols with their real characters:
+
+`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3A/:/` `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%2F/\//` `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3F/?/` `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3D/=/` `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%26/&/`
+
+After that, we need to write the rule that will block the tracking website and redirect you directly to the target address (somestore.com):
+
+`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com.*url=([^&]*).*/\$1/`
+
+Tracking links will now be automatically cleaned up, allowing direct navigation to the destination website without tracking.
+
 :::caution Restrictions
 
 Rules with the `$urltransform` modifier can only be used [**in trusted filters**](#trusted-filters).
@@ -2800,7 +2900,7 @@ Rules with the `$urltransform` modifier can only be used [**in trusted filters**
 
 :::info Compatibility
 
-Rules with the `$urltransform` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.15 or later.
+Rules with the `$urltransform` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.15 or later.
 
 :::
 
@@ -2915,7 +3015,7 @@ Modifier aliases (`1p`, `3p`, etc.) are not included in these categories, howeve
 
 When dealing with a negated domain, app, method, or content-type, we add **1 point** for the existence of the modifier itself, regardless of the quantity of negated domains or content-types. This is because the rule's scope is already infinitely broad. Put simply, by prohibiting multiple domains, content-types, methods or apps, the scope of the rule becomes only minimally smaller.
 
-#### Defined content-type modifiers, defined methods, defined headers, $all, $popup, specific exceptions {#priority-category-2}
+#### Modificadores de tipo de conteúdo definidos, métodos definidos, cabeçalhos definidos, $all, $popup, exceções específicas {#priority-category-2}
 
 All valid content types:
 
@@ -2961,7 +3061,7 @@ Or rules with [`$header`](#header-modifier).
 
 The presence of any content-type modifiers adds `(50 + 50 / N)`, where `N` is the number of modifiers present, for example: `||example.com^$image,script` will add `50 + 50 / 2 = 50 + 25 = 75` to the total weight of the rule.
 
-The `$all` also belongs to this category, because it implicitly adds all content type modifiers, e.g., `$document,subdocument,image,script,media,<etc>` + `$popup`.
+The `$all` also belongs to this category, because it implicitly adds all content-type modifiers, e.g., `$document,subdocument,image,script,media,<etc>` + `$popup`.
 
 The `$popup` also belongs to this category, because it implicitly adds the modifier `$document`. Similarly, specific exceptions add `$document,subdocument`.
 
@@ -2969,13 +3069,13 @@ If there is a `$method` modifier in the rule with allowed methods it adds `(50 +
 
 If there is a `$header` modifier in the rule, it adds `50`.
 
-#### `$domain` or `$app` with allowed domains or applications {#priority-category-3}
+#### `$domain` ou `$app` com domínios ou aplicativos permitidos {#priority-category-3}
 
 Specified domains through `$domain` or specified applications through `$app` add `100 + 100 / N`, where `N` is the number of modifier values for example: `||example.com^$domain=example.com|example.org|example.net` will add `100 + 100 / 3 = 134.3 = 135` or `||example.com^$app=org.example.app1|org.example.app2` will add `100 + 100 / 2 = 151` or `||example.com^$domain=example.com,app=org.example.app1|org.example.app2` will add `100 + 100/1` ($domain part) and `100 + 100/2` ($app part), totaling `350`.
 
 Modifier values that are regexps or tld will be interpreted as normal entries of the form `example.com` and counted one by one, for example: `||example.com^$domain=example.*` will add `100 + 100 / 1 = 200` or `||example.com^$domain=example.*|adguard.*` will add `100 + 100 / 2 = 150`.
 
-#### `$redirect` rules {#priority-category-6}
+#### `$redirect` regras {#priority-category-6}
 
 <!-- Please keep them sorted -->
 
@@ -2984,7 +3084,7 @@ Modifier values that are regexps or tld will be interpreted as normal entries of
 
 Each of which adds `10^3` to rule priority.
 
-#### Specific exceptions {#priority-category-4}
+#### Exceções específicas {#priority-category-4}
 
 <!-- Please keep them sorted -->
 
@@ -3003,21 +3103,21 @@ As well as exception with [`$document modifier`](#document-modifier): because it
 
 In addition, each of these exceptions implicitly adds the two allowed content-type modifiers `$document,subdocument`.
 
-#### Allowlist rules {#priority-category-5}
+#### Regras da lista de permissões {#priority-category-5}
 
 Modifier `@@` adds `10^5` to rule priority.
 
-#### `$important` rules {#priority-category-7}
+#### Regras `$important` {#priority-category-7}
 
 Modifier [`$important`](#important-modifier) adds `10^6` to rule priority.
 
 #### Rules for which there is no priority weight {#priority-category-extra}
 
-[Other modifiers](#advanced-capabilities), which are supposed to perform additional post- or pre-processing of requests, do not add anything to the rules priority.
+[Other modifiers](#advanced-capabilities), which are supposed to perform additional post- or pre-processing of requests, do not add anything to the rule priority.
 
 :::note
 
-The [`$replace`](#replace-modifier) modifier takes precedence over all blocking rules of categories 1-3, as well as exception rules from categories 3-5, **except** [`$content`](#content-modifier), because an exception with the `$content` modifier overrides all `$replace` rules.
+The [`$replace`](#replace-modifier) modifier takes precedence over all blocking rules of categories 1–3, as well as exception rules from categories 3–5, **except** [`$content`](#content-modifier), because an exception with the `$content` modifier overrides all `$replace` rules.
 
 :::
 
@@ -3063,14 +3163,14 @@ The [`$replace`](#replace-modifier) modifier takes precedence over all blocking 
 
 However, basic rules may not be enough to block ads. Sometimes you need to hide an element or change part of the HTML code of a web page without breaking anything. The rules described in this section are created specifically for this purpose.
 
-| Categories \ Products                     | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Chrome MV3][ext-mv3] | [AdGuard for Firefox][ext-ff] | [AdGuard para iOS][ios-app] | [AdGuard para Safari][ext-saf] | [Bloqueador de conteúdo do AdGuard][and-cb] |
-| ------------------------------------------ |:------------------------:|:-------------------------------:|:---------------------------------:|:-----------------------------:|:---------------------------:|:------------------------------:|:-------------------------------------------:|
-| [Element hiding](#cosmetic-elemhide-rules) |            ✅             |                ✅                |                 ✅                 |               ✅               |              ✅              |               ✅                |                      ✅                      |
-| [CSS rules](#cosmetic-css-rules)           |            ✅             |                ✅                |                 ✅                 |               ✅               |              ✅              |               ✅                |                      ❌                      |
-| [Extended CSS](#extended-css-selectors)    |            ✅             |                ✅                |                 ✅                 |               ✅               |              ✅              |               ✅                |                      ❌                      |
-| [HTML filtering](#html-filtering-rules)    |            ✅             |                ❌                |                 ❌                 |               ✅               |              ❌              |               ❌                |                      ❌                      |
-| [JavaScript](#javascript-rules)            |            ✅             |                ✅                |                 ✅                 |               ✅               |              ✅              |               ✅                |                      ❌                      |
-| [Scriptlets](#scriptlets)                  |            ✅             |                ✅                |                 ✅                 |               ✅               |              ✅              |               ✅                |                      ❌                      |
+| Categories \ Products                     | [Aplicativos do CoreLibs][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Chrome MV3][ext-mv3] | [AdGuard for Firefox][ext-ff] | [AdGuard para iOS][ios-app] | [AdGuard para Safari][ext-saf] | [Bloqueador de conteúdo do AdGuard][and-cb] |
+| ------------------------------------------ |:----------------------------------:|:-------------------------------:|:---------------------------------:|:-----------------------------:|:---------------------------:|:------------------------------:|:-------------------------------------------:|
+| [Element hiding](#cosmetic-elemhide-rules) |                 ✅                  |                ✅                |                 ✅                 |               ✅               |              ✅              |               ✅                |                      ✅                      |
+| [CSS rules](#cosmetic-css-rules)           |                 ✅                  |                ✅                |                 ✅                 |               ✅               |              ✅              |               ✅                |                      ❌                      |
+| [Extended CSS](#extended-css-selectors)    |                 ✅                  |                ✅                |                 ✅                 |               ✅               |              ✅              |               ✅                |                      ❌                      |
+| [HTML filtering](#html-filtering-rules)    |                 ✅                  |                ❌                |                 ❌                 |               ✅               |              ❌              |               ❌                |                      ❌                      |
+| [JavaScript](#javascript-rules)            |                 ✅                  |                ✅                |                 ✅                 |               ✅               |              ✅              |               ✅                |                      ❌                      |
+| [Scriptlets](#scriptlets)                  |                 ✅                  |                ✅                |                 ✅                 |               ✅               |              ✅              |               ✅                |                      ❌                      |
 
 :::note
 
@@ -3157,7 +3257,7 @@ The same can be achieved by adding this rule:
 
 We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
-### CSS rules {#cosmetic-css-rules}
+### Regras CSS {#cosmetic-css-rules}
 
 Sometimes, simple hiding of an element is not enough to deal with advertising. For example, blocking an advertising element can just break the page layout. In this case AdGuard can use rules that are much more flexible than hiding rules. With these rules you can basically add any CSS styles to the page.
 
@@ -3212,7 +3312,7 @@ CSS rules may operate differently [depending on the platform](#cosmetic-rules-pr
 
 :::
 
-### Extended CSS selectors {#extended-css-selectors}
+### Seletores CSS Estendidos {#extended-css-selectors}
 
 - [Limitações](#extended-css-limitations)
 - [Pseudo-class `:has()`](#extended-css-has)
@@ -3284,7 +3384,15 @@ Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3
 
 :::note
 
-Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) if they use `##` marker and if it is possible, i.e. with no other extended selectors inside. To force applying of ExtendedCss rules with `:has()`, use `#?#`/`#$?#` marker explicitly.
+Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`][native-has] if they use the `##` rule marker and if it is possible, i.e., there are no other extended CSS selectors inside. If it is not supported by the product, ExtendedCss implementation will be used even for rules with the `##` marker.
+
+Currently, not all AdGuard products support the native implementation of `:has()` yet:
+
+- AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **do support** it with [CoreLibs][] v1.12 or later.
+- AdGuard for iOS and AdGuard for Safari **do support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 and [Safari browser v16.4][safari-16.4].
+- AdGuard Browser Extension **does not support** it yet, but it is [planned][AdguardBrowserExtension#2587].
+
+To force the ExtendedCss implementation of `:has()` to be used, use the `#?#` or `#$?#` rule markers explicitly, e.g., `example.com#?#p:has(> a)` or `example.com#$?#div:has(> span) { display: none !important; }`.
 
 :::
 
@@ -3900,9 +4008,9 @@ This pseudo-class was basically a shortcut for `:not(:has())`. It was supported 
 
 The way **element hiding** and **CSS rules** are applied is platform-specific.
 
-**In AdGuard for Windows, Mac, and Android**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](#cosmetic-elemhide-rules) and [CSS rules](#cosmetic-css-rules) cannot override inline styles. In such cases, it is recommended to use extended selectors or HTML filtering.
+**In AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](#cosmetic-elemhide-rules) and [CSS rules](#cosmetic-css-rules) cannot override inline styles. In such cases, it is recommended to use extended selectors or HTML filtering.
 
-**In AdGuard Browser Extension**, the so called "user stylesheets" are used. They have higher priority than even the inline styles.
+**In AdGuard Browser Extension**, the so-called "user stylesheets" are used. They have higher priority than even the inline styles.
 
 **Extended CSS selectors** use JavaScript to work and basically add an inline style themselves, therefore they can override any style.
 
@@ -3912,7 +4020,7 @@ In most cases, the basis and cosmetic rules are enough to filter ads. But someti
 
 :::info Compatibility
 
-HTML filtering rules are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on network level.
+HTML filtering rules are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux, and AdGuard Browser Extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on network level.
 
 :::
 
@@ -3995,7 +4103,7 @@ This special attribute may become unsupported in the future. Prefer using the `:
 
 :::
 
-This special attribute works almost like `tag-content` and allows you to check the innerHTML code of the document. Rule will check if HTML code of the element fits to the [search pattern](https://en.wikipedia.org/wiki/Glob_(programming)).
+This special attribute works almost like `tag-content` and allows you to check the innerHTML code of the document. Rule will check if HTML code of the element fits the [search pattern](https://en.wikipedia.org/wiki/Glob_(programming)).
 
 You must use `""` to escape `"`, for instance: `$$script[wildcard=""banner""]`
 
@@ -4085,7 +4193,7 @@ ou
 
 :::info Compatibility
 
-The `:contains()` pseudo-class is supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.13 or later.
+The `:contains()` pseudo-class is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.13 or later.
 
 :::
 
@@ -4142,7 +4250,7 @@ rule = [domains] "#%#" script
 
 **Exceptions**
 
-Similar to hiding rules, there is a special type of rules that disable the selected javascript rule for particular domains. The syntax is the same, you just have to change `#%#` to `#@%#`.
+Similar to hiding rules, there is a special type of rules that disable the selected JavaScript rule for particular domains. The syntax is the same, you just have to change `#%#` to `#@%#`.
 
 For example, there is a rule in filter:
 
@@ -4176,7 +4284,7 @@ JavaScript rules are not supported by AdGuard Content Blocker.
 
 :::
 
-## Scriptlet rules {#scriptlets}
+## Regras de scriptlets {#scriptlets}
 
 Scriptlet is a JavaScript function that provides extended capabilities for content blocking. These functions can be used in a declarative manner in AdGuard filtering rules.
 
@@ -4193,7 +4301,7 @@ AdGuard supports a lot of different scriptlets. In order to achieve cross-blocke
 ```
 
 - `domains` — optional, a list of domains where the rule should be applied;
-- `name` — required, a name of the scriptlet from AdGuard Scriptlets library;
+- `name` — required, a name of the scriptlet from the AdGuard Scriptlets library;
 - `arguments` — optional, a list of `string` arguments (no other types of arguments are supported).
 
 **Examples**
@@ -4269,7 +4377,7 @@ More information about scriptlets can be found [on GitHub](https://github.com/Ad
 
 Scriptlet rules are not supported by AdGuard Content Blocker.
 
-The full syntax of scriptlet exception rules is supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.16 or later, and AdGuard Browser Extension for Chrome, Firefox, and Edge with [TSUrlFilter][] v3.0 or later. Previous versions only support exception rules that disable specific scriptlets.
+The full syntax of scriptlet exception rules is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.16 or later, and AdGuard Browser Extension for Chrome, Firefox, and Edge with [TSUrlFilter][] v3.0 or later. Previous versions only support exception rules that disable specific scriptlets.
 
 :::
 
@@ -4317,12 +4425,12 @@ For example, `[$domain=example.com,app=test_app]##selector`.
 
 In the modifiers values, the following characters must be escaped: `[`, `]`, `,`, and `\` (unless it is used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like this: `\]`.
 
-| Modifier \ Products                  | [CoreLibs apps][cl-apps] |        [AdGuard for Chromium][ext-chr]        |        [AdGuard for Chrome MV3][ext-mv3]         |         [AdGuard for Firefox][ext-ff]         | [AdGuard para iOS][ios-app] | [AdGuard para Safari][ext-saf] | [Bloqueador de conteúdo do AdGuard][and-cb] |
-| ------------------------------------- |:------------------------:|:---------------------------------------------:|:------------------------------------------------:|:---------------------------------------------:|:---------------------------:|:------------------------------:|:-------------------------------------------:|
-| [$app](#non-basic-app-modifier)       |            ✅             |                       ❌                       |                        ❌                         |                       ❌                       |              ❌              |               ❌                |                      ❌                      |
-| [$domain](#non-basic-domain-modifier) |            ✅             |                       ✅                       | ✅ [*[1]](#non-basic-domain-modifier-limitations) |                       ✅                       |              ✅              |               ✅                |                      ❌                      |
-| [$path](#non-basic-path-modifier)     |            ✅             |                       ✅                       |                        ❌                         |                       ✅                       |              ✅              |               ✅                |                      ❌                      |
-| [$url](#non-basic-url-modifier)       |            ✅             | ✅ [*[2]](#non-basic-url-modifier-limitations) |  ✅ [*[2]](#non-basic-url-modifier-limitations)   | ✅ [*[2]](#non-basic-url-modifier-limitations) |              ❌              |               ❌                |                      ❌                      |
+| Modificador \ Produtos               | [Aplicativos do CoreLibs][cl-apps] |        [AdGuard for Chromium][ext-chr]        |        [AdGuard for Chrome MV3][ext-mv3]         |         [AdGuard for Firefox][ext-ff]         | [AdGuard para iOS][ios-app] | [AdGuard para Safari][ext-saf] | [Bloqueador de conteúdo do AdGuard][and-cb] |
+| ------------------------------------- |:----------------------------------:|:---------------------------------------------:|:------------------------------------------------:|:---------------------------------------------:|:---------------------------:|:------------------------------:|:-------------------------------------------:|
+| [$app](#non-basic-app-modifier)       |                 ✅                  |                       ❌                       |                        ❌                         |                       ❌                       |              ❌              |               ❌                |                      ❌                      |
+| [$domain](#non-basic-domain-modifier) |                 ✅                  |                       ✅                       | ✅ [*[1]](#non-basic-domain-modifier-limitations) |                       ✅                       |              ✅              |               ✅                |                      ❌                      |
+| [$path](#non-basic-path-modifier)     |                 ✅                  |                       ✅                       |                        ❌                         |                       ✅                       |              ✅              |               ✅                |                      ❌                      |
+| [$url](#non-basic-url-modifier)       |                 ✅                  | ✅ [*[2]](#non-basic-url-modifier-limitations) |  ✅ [*[2]](#non-basic-url-modifier-limitations)   | ✅ [*[2]](#non-basic-url-modifier-limitations) |              ❌              |               ❌                |                      ❌                      |
 
 :::note
 
@@ -4345,7 +4453,7 @@ In the modifiers values, the following characters must be escaped: `[`, `]`, `,`
 
 :::info Compatibility
 
-Such rules with `$app` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android.
+Such rules with `$app` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux.
 
 :::
 
@@ -4376,7 +4484,7 @@ Since the non-basic `$domain` works the same as the basic one, it has the same [
 
 :::info Compatibility
 
-Such rules with `$domain` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard Browser Extension for Chrome, for Chrome MV3, Firefox, and Edge.
+Such rules with `$domain` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard Browser Extension for Chrome, Chrome MV3, Firefox, and Edge.
 
 :::
 
@@ -4443,7 +4551,7 @@ In AdGuard Browser Extension, non-basic `$url` modifier is not compatible with d
 
 :::info Compatibility
 
-Rules with the `$url` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+Rules with the `$url` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
 
 :::
 
@@ -4543,6 +4651,7 @@ where:
     - product-specific constants for cases when you need a rule to work (or not work — then `!` should be used before constant) in a specific product only:
         - `adguard_app_windows` — AdGuard for Windows
         - `adguard_app_mac` — AdGuard for Mac
+        - `adguard_app_cli` — AdGuard for Linux
         - `adguard_app_android` — AdGuard for Android
         - `adguard_app_ios` — AdGuard for iOS
         - `adguard_ext_safari` — AdGuard for Safari
@@ -4553,7 +4662,7 @@ where:
         - `adguard_ext_opera` — AdGuard Browser Extension for Opera
         - `adguard_ext_android_cb` — AdGuard Content Blocker for mobile Samsung and Yandex browsers
         - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry][]
-        - `cap_html_filtering` — products that support HTML filtering rules: AdGuard for Windows, AdGuard for Mac, and AdGuard for Android
+        - `cap_html_filtering` — products that support HTML filtering rules: AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux
 - `!#else` — start of the block when conditions are false
 - `rules_list`, `true_conditions_rules_list`, `false_conditions_rules_list` — lists of rules
 - `!#endif` — end of the block
@@ -4718,7 +4827,9 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 - `windows` — AdGuard for Windows — [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
 
-- `mac` — AdGuard for Mac — [https://filters.adtidy.org/mac_v2/filters/2.txt](https://filters.adtidy.org/mac_v2/filters/2.txt)
+- `mac` — AdGuard for Mac — [https://filters.adtidy.org/mac_v3/filters/2.txt](https://filters.adtidy.org/mac_v3/filters/2.txt)
+
+- `cli` — AdGuard for Linux — [https://filters.adtidy.org/cli/filters/2.txt](https://filters.adtidy.org/cli/filters/2.txt)
 
 - `android` — AdGuard for Android — [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
 
@@ -4754,6 +4865,17 @@ Except for AdGuard for Safari, AdGuard Content Blocker, and AdGuard for iOS, thi
 ```adblock
 !+ NOT_PLATFORM(ext_safari, ext_android_cb, ios)
 ||example.org^
+```
+
+#### `NOT_VALIDATE`
+
+This hint is used to skip validation of the rule. It is useful for rules for which support has not yet been added to the filters compiler, or for rules that are incorrectly discarded.
+
+**If you want to add a rule that should not be validated, use the `NOT_VALIDATE` hint:**
+
+```adblock
+!+ NOT_VALIDATE
+||example.org^$newmodifier
 ```
 
 ## How to debug filtering rules
@@ -4871,8 +4993,8 @@ The following scriptlets also may be used for debug purposes:
 
 ### Product shortcuts {#what-product}
 
-1. `CoreLibs apps` — [AdGuard for Windows](/adguard-for-windows/features/home-screen), [AdGuard for Mac](/adguard-for-mac/features/main), and [AdGuard for Android](/adguard-for-android/features/protection/ad-blocking)
-1. `AdGuard for Chromium` — [AdGuard Browser Extension](/adguard-browser-extension/availability) for Chrome and other Chromium-based browsers such as Microsoft Edge, Opera
+1. `CoreLibs apps` — [AdGuard for Windows](/adguard-for-windows/features/home-screen), [AdGuard for Mac](/adguard-for-mac/features/main), [AdGuard for Android](/adguard-for-android/features/protection/ad-blocking), and [AdGuard for Linux](/adguard-for-linux)
+1. `AdGuard for Chromium` — [AdGuard Browser Extension](/adguard-browser-extension/availability) for Chrome and other Chromium-based browsers such as Microsoft Edge and Opera
 1. `AdGuard for Chrome MV3` — [AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version)
 1. `AdGuard for Firefox` — [AdGuard Browser Extension](/adguard-browser-extension/availability) for Firefox
 1. `AdGuard for iOS` — [AdGuard for iOS](/adguard-for-ios/features/safari-protection) and AdGuard Pro for iOS (for mobile Safari browser)
@@ -4893,15 +5015,21 @@ The following scriptlets also may be used for debug purposes:
 
 :::
 
-[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/epic/tswebextension/packages/tsurlfilter/src/rules/declarative-converter#popup
+[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#popup
 
 [Sec-Fetch-Dest header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
 
-[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#jsinject
 
-[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#jsinject
 
-[cl-apps]: #what-product "AdGuard for Windows, Mac, Android"
+[badfilter-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#badfilter
+
+[native-has]: https://developer.mozilla.org/docs/Web/CSS/:has
+[safari-16.4]: https://www.webkit.org/blog/13966/webkit-features-in-safari-16-4/
+[AdguardBrowserExtension#2587]: https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2587
+
+[cl-apps]: #what-product "AdGuard for Windows, Mac, Linux, Android"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
 [ext-mv3]: #what-product "Extensão de navegador AdGuard para Chrome MV3"
 [ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"

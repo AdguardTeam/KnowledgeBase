@@ -61,7 +61,7 @@ A seconda del sistema operativo del dispositivo di cui desideri filtrare il traf
 
 ### Mac {#mac}
 
-1. Nota l'indirizzo IP del tuo computer su cui è installato AdGuard.
+1. Annota l'indirizzo IP del tuo computer su cui è installato AdGuard.
 
 1. Assicurati che la protezione di AdGuard sia abilitata. Su un computer Windows, spunta la casella **Utilizza AdGuard come un proxy HTTP** nella scheda **Rete** delle sue impostazioni. Per Mac, vai in **Impostazioni** → **Preferenze** → **Rete**, e abilita il **proxy HTTP**.
 
@@ -93,7 +93,7 @@ A seconda del sistema operativo del dispositivo di cui desideri filtrare il traf
 
 ### Android {#android}
 
-1. Nota l'indirizzo IP del tuo computer su cui è installato AdGuard.
+1. Annota l'indirizzo IP del tuo computer su cui è installato AdGuard.
 
 1. Assicurati che la protezione di AdGuard sia abilitata. Su un computer Windows, spunta la casella **Utilizza AdGuard come un proxy HTTP** nella scheda **Rete** delle sue impostazioni. Per Mac, vai in **Impostazioni** → **Preferenze** → **Rete**, e abilita il **proxy HTTP**.
 
@@ -113,7 +113,7 @@ A seconda del sistema operativo del dispositivo di cui desideri filtrare il traf
 
 ### iOS {#ios}
 
-1. Annota l'indirizzo IP del tuo dispositivo su cui è installato AdGuard.
+1. Annota l'indirizzo IP del tuo computer su cui è installato AdGuard.
 
 1. Assicurati che la protezione di AdGuard sia abilitata. Su un computer Windows, spunta la casella **Utilizza AdGuard come un proxy HTTP** nella scheda **Rete** delle sue impostazioni. Per Mac, vai in **Impostazioni** → **Preferenze** → **Rete**, e abilita il **proxy HTTP**.
 

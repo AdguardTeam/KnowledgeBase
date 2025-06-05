@@ -1,6 +1,6 @@
 ---
 title: Instalare manuală a certificatului de securitate în browserul Firefox
-sidebar_position: 11
+sidebar_position: 10
 ---
 
 :::info

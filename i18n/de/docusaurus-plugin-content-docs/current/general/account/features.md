@@ -24,10 +24,9 @@ Im Bereich *Lizenzen* können Sie Ihre Lizenzen und die an sie gebundenen Gerät
 
 - angebunden und ungebunden,
 - erneurt,
-- erweitert,
-- abgebrochen. In Ihrem Konto können Sie auch Ihre Zahlungsdaten aktualisieren.
+- upgraded.
 
-Geräte, die an Ihre AdGuard Werbeblocker-Lizenzen gebunden sind, können gelöscht oder umbenannt werden. To unbind unused devices, click the number of bound devices next to *Devices*, then select the right arrow → *Remove*.
+Geräte, die an Ihre AdGuard Werbeblocker-Lizenzen gebunden sind, können gelöscht oder umbenannt werden. To unbind unused devices, click the number of bound devices next to *Devices*, then select `>` → *Remove*.
 
 ## Käufe ansehen
 

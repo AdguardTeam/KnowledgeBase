@@ -9,7 +9,7 @@ sidebar_position: 2
 
 :::
 
-本文介绍的是我们创建用于 AdGuard 和其他广告拦截软件（例如 uBlock Origin）的过滤器。 每个过滤器均代表一组文本格式的规则，AdGuard 应用和程序可使用这些规则来过滤广告和隐私威胁的内容（例如横幅、弹出式窗口、跟踪器等）。 过滤器包含基于其用途的规则列表。 语言过滤器包括互联网的相应语言的规则（例如，中文过滤器）。 基于特定任务的过滤器将完成特定任务的规则分组，例如社交媒体过滤器或跟踪保护过滤器。 启用或禁用过滤器让用户更轻松地同时处理整个规则列表。
+本文介绍的是我们创建用于 AdGuard 和其他广告拦截软件（例如 uBlock Origin）的过滤器。 Filters are sets of rules in text format used by AdGuard apps and programs to filter out advertising and privacy-threatening content such as banners, popups, or trackers. 过滤器包含基于其用途的规则列表。 语言过滤器包括互联网的相应语言的规则（例如，中文过滤器）。 基于特定任务的过滤器将完成特定任务的规则分组，例如社交媒体过滤器或跟踪保护过滤器。 启用或禁用过滤器让用户更轻松地同时处理整个规则列表。
 
 ## AdGuard 过滤器
 
@@ -20,7 +20,7 @@ sidebar_position: 2
 - **恼人广告过滤器**屏蔽网页上的恼人元素。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt)。 包括以下 AdGuard 过滤器（以下过滤器都可以与烦恼过滤器分开启用）：
 
     - **Cookie 通知**在网页上拦截 Cookie 通知。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_18_Annoyances_Cookies/filter.txt)
-    - **弹出窗口**拦截各种对网站运行没有必要的弹窗。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_19_Annoyances_Popups/filter.txt)
+    - **Popups** blocks all kinds of popups that are not necessary for websites' operation. [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_19_Annoyances_Popups/filter.txt)
     - **移动拦截程序横幅广告**阻止宣传网站移动应用的横幅。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_20_Annoyances_MobileApp/filter.txt)
     - **小工具**阻止第三方小工具：在线助手、实时客服支持聊天等 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_22_Annoyances_Widgets/filter.txt)
     - **其他烦恼**阻止不属于流行的烦恼类别的元素。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_21_Annoyances_Other/filter.txt)

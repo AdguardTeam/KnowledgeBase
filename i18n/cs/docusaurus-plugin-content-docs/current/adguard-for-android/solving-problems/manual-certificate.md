@@ -1,6 +1,6 @@
 ---
 title: Instalace certifikátu na zařízeních se systémem Android 11+
-sidebar_position: 12
+sidebar_position: 11
 ---
 
 :::info
@@ -43,4 +43,4 @@ Pokud se během ruční instalace certifikátu vyskytnou problémy (například 
 1. Restartujte AdGuard.
 2. Zkuste nainstalovat správný certifikát (AdGuard Personal CA) ještě jednou.
 
-Pokud přesto narazíte na problém a certifikát se vám nepodaří nainstalovat, kontaktujte náš tým podpory na adrese support@adguard.com.
+Pokud přesto narazíte na problém a certifikát se vám nepodaří nainstalovat, kontaktujte náš tým podpory na adrese <support@adguard.com>.

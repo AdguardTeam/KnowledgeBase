@@ -3,7 +3,7 @@ title: Modo invisível (Proteção contra rastreamento)
 sidebar_position: 4
 ---
 
-Muitos sites coletam informações sobre seus visitantes, como endereço IP, navegador instalado e sistema operacional, resolução de tela e até mesmo a página da qual o visitante foi redirecionado. Algumas páginas web utilizam cookies para marcar o seu navegador e guardar as suas configurações e preferências pessoais, ou para “reconhecê-lo” na sua próxima visita. O *Modo invisível* (ou *Proteção contra rastreamento* no AdGuard para Windows e na Extensão do AdGuard para navegador) protege suas informações pessoais de sistemas que coletam dados e estatísticas.
+Muitos sites coletam informações sobre seus visitantes, como endereço IP, navegador instalado e sistema operacional, resolução de tela e até mesmo a página da qual o visitante foi redirecionado. Algumas páginas web utilizam cookies para marcar o seu navegador e guardar as suas configurações e preferências pessoais, ou para “reconhecê-lo” na sua próxima visita. A *Proteção contra rastreamento* protege suas informações pessoais desses sistemas de coleta de dados e estatísticas.
 
 Você pode ajustar de forma flexível o funcionamento do Modo Sigiloso: por exemplo, você pode proibir o site de receber a solicitação de pesquisa que você usou para encontrá-lo na Internet, excluir automaticamente os cookies de terceiros e do próprio site, desativar o compartilhamento de geolocalização do navegador que pode ser usado para rastrear seu paradeiro e ocultar seu verdadeiro endereço IP ou até mesmo substituí-lo por um aleatório.
 
@@ -95,7 +95,7 @@ Você também pode definir um valor arbitrário para o Referer inserindo-o no ca
 
 Observe que, para poder filtrar o tráfego, os aplicativos AdGuard "interceptam" as solicitações do navegador para o servidor. As solicitações para servidores de anúncios, rastreamento e phishing podem ser alteradas antes de serem enviadas ao servidor ou bloqueadas completamente. O mesmo vale para a opção *Ocultar referenciador de terceiros*: o AdGuard intercepta solicitações HTTP(S), em particular para remover ou alterar o cabeçalho do referenciador se esta opção estiver habilitada. No entanto, isso só acontece depois que essas solicitações "saem" do navegador. Isso significa que, se você monitorar o Referer dentro do navegador (por exemplo, com a ajuda das Ferramentas de Desenvolvedor do Chrome), você verá o Referer original porque a solicitação ainda não chegou ao AdGuard. Você pode usar software como [Fiddler](https://www.telerik.com/fiddler) para garantir que o Referer seja alterado corretamente.
 
-Pelo contrário, devido à natureza de todas as extensões de navegador, a Extensão de navegador AdGuard funciona "dentro" do navegador. Ela alterará o Referer ali mesmo, então as Ferramentas do Desenvolvedor mostrarão o Referer desejado para suas solicitações.
+Devido à natureza de todas as extensões de navegador, a Extensão do AdGuard para navegador funciona "dentro" do navegador. Ela alterará o Referer ali mesmo, então as Ferramentas do Desenvolvedor mostrarão o Referer desejado para suas solicitações.
 
 ### Ocultar User-Agent {#useragent}
 

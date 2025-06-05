@@ -12,7 +12,7 @@ sidebar_position: 4
 - 在 AdGuard 应用程序中单击「*重置许可证*」或「*退出*」。
 
 - 从 AdGuard 账号中删除设备：
-    1. 在 [AdGuard 账号](https://my.adguard.com/)点击「*AdGuard 广告拦截程序*」。
+    1. 在 [AdGuard 账号](https://adguardaccount.com/)点击「*AdGuard 广告拦截程序*」。
 
         ![账号广告拦截程式选项卡 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0_cn.png)
 

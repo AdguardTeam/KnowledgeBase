@@ -1,11 +1,11 @@
 ---
 title: Known compatibility issues with Android apps
-sidebar_position: 16
+sidebar_position: 14
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article concerne AdGuard pour Android, un bloqueur de publicité multifonctionnel qui protège votre appareil au niveau système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -30,7 +30,7 @@ The Private DNS feature was introduced in Android Pie. Before version Q, Private
 
 - To solve the problem with Private DNS, use the `$network` rule
 
-Some device manufacturers keep Private DNS settings hidden and set 'Automatic' mode as a default one. Thus, disabling Private DNS is impossible but we can make the system think that the upstream is not valid by blocking it with a `$network` rule. For instance, if the system uses Google DNS by default, we can add rules `|8.8.4.4^$network` and `|8.8.8.8^$network` to block Google DNS.
+Certains fabricants d'appareils gardent les paramètres DNS privés masqués et définissent le mode 'Automatique' comme mode par défaut. Thus, disabling Private DNS is impossible but we can make the system think that the upstream is not valid by blocking it with a `$network` rule. For instance, if the system uses Google DNS by default, we can add rules `|8.8.4.4^$network` and `|8.8.8.8^$network` to block Google DNS.
 
 ## Unsupported browsers
 

@@ -12,7 +12,7 @@ sidebar_position: 4
 - 【方法①】AdGuard アプリで「*ライセンスをリセット*」または「*ログアウト*」をクリックします。
 
 - 【方法②】お使いのAdGuardアカウントでデバイスを削除します:
-    1. お使いの[AdGuardアカウント](https://my.adguard.com/)→「*AdGuard 広告ブロッカー*」 タブを押します。
+    1. お使いの[AdGuardアカウント](https://adguardaccount.com/)→「*AdGuard 広告ブロッカー*」 タブを押します。
 
         ![AdGuard広告ブロッカータブ *mobile](https://cdn.adtidy.org/blog/new/ynkyjltansfer-ja-1.png)
 

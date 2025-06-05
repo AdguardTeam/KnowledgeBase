@@ -1,46 +1,46 @@
 ---
-title: AdGuard beta/nightly testing
+title: Бета-/nightly-тестирование AdGuard
 sidebar_position: 1
 ---
 
-Для каждой «большой» платформы — Windows, Mac, Android, iOS — существует своя версия AdGuard, и все они регулярно обновляются. This would not be possible without beta and nightly testing and, more importantly, without our testers. Want to become one of them? Here’s how you can do it.
+Для каждой «большой» платформы — Windows, Mac, Android, iOS — существует своя версия AdGuard, и все они регулярно обновляются. Это было бы невозможно без бета- и nightly-тестирования и, что более важно, без тестировщиков. Хотите стать одним из них? Вот как это можно сделать.
 
-### Beta or nightly: what is the difference?
+### Бета- или nightly-версия: в чём разница?
 
-Both beta and nightly testing are important to make AdGuard constantly better. However, they are different, and you can choose the one that suits you more.
+Как бета-, так и nightly-тестирование важны для того, чтобы AdGuard постоянно становился лучше. Но они разные, и вы можете выбрать тот вариант, который вам больше подходит.
 
-The development process follows a progression from nightly to beta and then from beta to the final, stable version — release. It means that you are more likely to find bugs in nightly builds, but you get access to new features faster, almost on a daily basis. Betas are more stable, but you will get updates less often.
+Процесс разработки следует по принципу: от nightly- к бета-версии», а затем от бета-версии к финальной стабильной версии — релизу. Это значит, что вы с большей вероятностью найдёте ошибки в nightly-сборках, но быстрее получите доступ к новым функциям, почти на ежедневной основе. Бета-версии более стабильны, но обновления будут выходить реже.
 
-## How to become a beta or nightly tester {#intro}
+## Как стать бета- или nightly-тестировщиком {#intro}
 
-Our requirements are easy: use AdGuard, upgrade to the beta/nightly version when it becomes available, and report any bugs you notice. You will need a [GitHub](https://github.com/) account to become our tester, so you may want to get that out of the way first.
+Наши требования просты: используйте AdGuard, переходите на бета- или nightly-версию, когда она станет доступной, и сообщайте о замеченных ошибках. Чтобы стать нашим тестировщиком, вам понадобится аккаунт [на GitHub](https://github.com/).
 
-You will also need the device on which you will install the app and [the link to the the beta testing page](https://adguard.com/beta.html). There you will find more information on how to join our program and test AdGuard for Windows, Mac, Android, and iOS.
+Вам также понадобится устройство, на которое вы будете устанавливать приложение, и [ссылка на страницу бета-тестирования](https://adguard.com/beta.html). Там вы найдёте больше информации о том, как присоединиться к нашей программе и тестировать приложения AdGuard для Windows, Mac, Android и iOS.
 
-If you want to skip the description part and get straight to the action, you can apply [here](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1-3 working days, and you'll get a reply via email.
+Если вы хотите пропустить описание и сразу перейти к делу, то вам [сюда](https://surveys.adguard.com/beta_testing_program/form.html). Ваша заявка будет рассмотрена в течение 1–3 рабочих дней. Вы получите ответ по почте.
 
 :::note
 
-To get the AdGuard for iOS beta or nightly build, first you have to install [Testflight](https://apps.apple.com/app/testflight/id899247664) on your iOS device.
+Чтобы получить бета- или nightly-сборку AdGuard для iOS, установите [Testflight](https://apps.apple.com/app/testflight/id899247664) на своё iOS-устройство.
 
 :::
 
 ## Как сообщить об ошибке {#report-a-bug}
 
-If you spotted a bug or just want to share your suggestion, let us know: go to [GitHub](https://github.com/AdguardTeam/), find a suitable repository, create a new issue there, and describe the bug/feature request in detail.
+Если вы заметили ошибку или хотите что-то предложить, расскажите нам об этом: зайдите [на GitHub](https://github.com/AdguardTeam/), найдите подходящий репозиторий, создайте в нём новую задачу и подробно опишите ошибку/запрос.
 
-The above method is the most preferred, but you can use others if necessary:
+Описанный выше метод мы считаем предпочтительным, но при необходимости вы можете использовать и другие:
 
 - Найдите наш аккаунт в любой из удобных для вас социальных сетей, таких как [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/) и др., и напишите нам. Однако это не самый эффективный способ обсуждения технических вопросов.
 
 - Напишите в нашу службу поддержки из вкладки «Поддержка» в приложении или напрямую по адресу [support@adguard.com](mailto:support@adguard.com).
 
-## How to activate a beta/nightly key in the iOS app {#ios}
+## Как активировать бета/nightly-ключ в приложении iOS {#ios}
 
-If you have already received a beta key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Once there, enter the credentials from your AdGuard account. After that, the premium features will become available automatically.
+Если вы уже получили бета/nightly-ключ и он указан в вашем аккаунте `adguard.com`, зайдите в приложение и откройте раздел лицензии (Получить премиум). Введите учётные данные вашего аккаунта AdGuard. После этого премиум-функции станут доступны автоматически.
 
-### What else?
+### Что ещё?
 
-There is not much more to add. You don't have to go out of your way to find bugs. You can continue using AdGuard as usual. However, if you encounter a bug, please report it. Of course, we appreciate any additional effort.
+Вот и всё. Вам не нужно старательно искать ошибки. Вы можете продолжать использовать AdGuard как обычно. Однако, если вы столкнётесь с ошибкой, пожалуйста, сообщите о ней. Мы будем вам очень признательны.
 
-Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta (in case you missed them) and other important news. You can unsubscribe from it at any time.
+Время от времени вы будете получать письма, информирующие вас о последних изменениях в бета-/nightly-версии (на случай, если вы их пропустили) и других важных новостях. Вы можете отписаться в любой момент.

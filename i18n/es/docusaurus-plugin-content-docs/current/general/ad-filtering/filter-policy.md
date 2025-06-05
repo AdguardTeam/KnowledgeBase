@@ -26,7 +26,7 @@ Un **bloqueador de anuncios** es una herramienta de software o hardware diseñad
 
 Un **filtro** (o una **lista de filtros**) es un conjunto de reglas de filtrado diseñadas para filtrar contenido y bloquear varios tipos de anuncios y otros tipos de contenido utilizando bloqueadores de anuncios. Estos filtros generalmente operan en el navegador, en programas o en servidores DNS.
 
-**Anti-adblock** es una tecnología utilizada por sitios web o aplicaciones para detectar el bloqueo de anuncios y reaccionar a ellos de diferentes maneras: rastreándolos, reinyectándolos o alentando a desactivar el bloqueador de anuncios (llamados "anti-adblock walls"). Los anti-adblocks pueden ser de diferentes tipos:
+**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so-called “adblock walls”). Los anti-adblocks pueden ser de diferentes tipos:
 
 - Anti-adblock que bloqueia el contenido del sitio sin ofrecer alternativas: para seguir utilizando el sitio, el usuario debe desactivar el bloqueador de anuncios
 - "Anti-adblock wall" con ofrecimiento de opciones alternativas, como la compra de una suscripción para seguir utilizando el bloqueador de anuncios
@@ -41,14 +41,14 @@ Los filtros de bloqueo de anuncios de AdGuard incluyen:
 - Filtro base AdGuard
 - Filtro de anuncios de AdGuard para dispositivos móviles
 - Filtros regionales divididos por idiomas: chino, holandés, francés, alemán, japonés, ruso, español, portugués, turco y ucraniano
-- AdGuard Quick Fixes filter
+- Filtro AdGuard Quick Fixes
 
 ### La finalidad de estos filtros
 
 - El **Filtro base** fue diseñado para bloquear anuncios en sitios en inglés y aquellos para los cuales no hay un filtro separado. También contiene reglas generales de filtrado que se aplican a todos los sitios, independientemente del idioma
 - El **Filtro de anuncios para dispositivos móviles** bloquea anuncios en versiones móviles de sitios y en teléfonos celulares y tabletas. No hay segmentación basada en el idioma
 - Los **Filtros regionales** siguen la misma política que el **Filtro base**, pero están limitados a sitios en determinados idiomas
-- **Quick Fixes filter** used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension.
+- **Filtro Quick Filters** utilizados para resolver rápidamente problemas críticos de filtrado de contenido en sitios populares sin actualizar la extensión MV3.
 
 El objetivo de los filtros de bloqueo de anuncios es bloquear todos los tipos de publicidad en sitios web, aplicaciones y dispositivos específicos que pueden cargar anuncios de Internet:
 
@@ -64,7 +64,7 @@ El objetivo de los filtros de bloqueo de anuncios es bloquear todos los tipos de
 - Anuncios intersticiales: anuncios a pantalla completa en dispositivos móviles que cubren la interfaz de la aplicación o del navegador
 - Restos de anuncios que ocupan grandes espacios o se destacan en el fondo, atrayendo la atención de los visitantes (excepto los poco perceptibles o imperceptibles)
 - Publicidad anti-adblock: publicidad alternativa que se muestra en el sitio cuando los anuncios en el sitio principal están bloqueados
-- Bait elements that are used by multiple known adblock detection scripts to detect an ad blocker presence for different goals including changing the way ads are shown, fingerprinting, etc.
+- Elementos bait que son usados por múltiples scripts de detección de bloqueadores de anuncios conocidos para detectar la presencia de un bloqueador de anuncios con diferentes objetivos, incluyendo cambiar la forma en que se muestran los anuncios, la huella digital, etc.
 - Publicidad del propio sitio, si ha sido bloqueada por las reglas generales de filtrado (ver *Limitaciones y excepciones*)
 - Scripts anti-adblock que impiden el uso del sitio (ver *Limitaciones y excepciones*)
 - Publicidad inyectada por malware, siempre y cuando se proporcionen detalles sobre su método de carga o pasos de reproducción
@@ -81,7 +81,7 @@ El objetivo de los filtros de bloqueo de anuncios es bloquear todos los tipos de
 - No bloqueamos mensajes de detección de bloqueadores de anuncios que cumplan al menos uno de los siguientes criterios:
     - Permiten el uso del sitio y no se superponen a una cantidad significativa de contenido
     - Proporcionan una alternativa a la desactivación de un bloqueador de anuncios, ya que esta opción no pone en riesgo la privacidad o la seguridad de los usuarios
-    - Permiten el acceso al contenido del sitio o una alternativa viable que no ponga en riesgo la privacidad o seguridad del usuario
+    - They allow the user to proceed to the website’s content
     - Algunas reglas antiguas pueden continuar bloqueando mensajes que cumplan uno o más de estos criterios. Si se identifican, dichas reglas serán reformadas de acuerdo con esta política
 - Los pools de minería no serán bloqueados si son públicos y no son utilizados exclusivamente con fines maliciosos
 
@@ -116,7 +116,7 @@ Lo que bloquean:
 - Cookies de seguimiento
 - Píxeles de seguimiento
 - API de seguimiento de los navegadores
-- Detection of the ad blocker for tracking purposes
+- Detección del bloqueador de anuncios AdGuard para fines de seguimiento
 - Funcionalidad Privacy Sandbox en Google Chrome y sus bifurcaciones utilizadas para el seguimiento (Google Topics API, Protected Audience API)
 
 El **filtro de seguimiento de URL** fue diseñado para eliminar parámetros de seguimiento de direcciones web

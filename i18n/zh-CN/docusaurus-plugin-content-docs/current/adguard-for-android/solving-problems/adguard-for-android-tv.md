@@ -1,6 +1,6 @@
 ---
 title: Android TV 版 AdGuard 安装方式
-sidebar_position: 17
+sidebar_position: 15
 ---
 
 :::info
@@ -43,18 +43,18 @@ sidebar_position: 17
 
 4. 写下 Android TV 的 IP 地址：
 
-   - 在 Android TV 上，进入「设置」。
-   - 选择「系统」→「关于」。
-   - 查找「网络」，然后根据连接类型选择「Wi-Fi」或「以太网」。
-   - 转到网络部分并找到「IP 地址」。 记下该 IP 地址。
+    - 在 Android TV 上，进入「设置」。
+    - 选择「系统」→「关于」。
+    - 查找「网络」，然后根据连接类型选择「Wi-Fi」或「以太网」。
+    - 转到网络部分并找到「IP 地址」。 记下该 IP 地址。
 
 5. 通过 ADB 连接到 Android TV：
 
-   - 打开计算机上的终端或命令提示符。
-   - 输入 `adb connect` 命令和电视机的 IP 地址。
-   - 这将建立连接。
+    - 打开计算机上的终端或命令提示符。
+    - 输入 `adb connect` 命令和电视机的 IP 地址。
+    - 这将建立连接。
 
 6. 通过 ADB 安装 Android TV 版 AdGuard：
 
-   - 在终端中，输入命令 `adb install Downloads/adguard_tv.apk`。 如有必要，请将 `Downloads/adguard_tv.apk` 替换为您的路径。
-   - 等待终端中出现指示应用程序安装成功的消息。
+    - 在终端中，输入命令 `adb install Downloads/adguard_tv.apk`。 如有必要，请将 `Downloads/adguard_tv.apk` 替换为您的路径。
+    - 等待终端中出现指示应用程序安装成功的消息。

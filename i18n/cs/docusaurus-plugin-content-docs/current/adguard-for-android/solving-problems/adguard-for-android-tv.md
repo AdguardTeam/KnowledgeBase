@@ -1,6 +1,6 @@
 ---
 title: Jak nainstalovat AdGuard pro Android TV
-sidebar_position: 17
+sidebar_position: 15
 ---
 
 :::info
@@ -43,18 +43,18 @@ Hotovo, AdGuard pro Android TV je nainstalován.
 
 4. Zapište si IP adresu vaší Android TV:
 
-   - V Android TV přejděte do Nastavení.
-   - Vyberte _System_ → _Informace_.
-   - Vyhledejte _Síť_ a vyberte _Wi-Fi_ nebo _Ethernet_ v závislosti na typu vašeho připojení.
-   - Přejděte do sekce Síť a vyhledejte _IP adresu_. Zapište tuto IP adresu.
+    - V Android TV přejděte do Nastavení.
+    - Vyberte _System_ → _Informace_.
+    - Vyhledejte _Síť_ a vyberte _Wi-Fi_ nebo _Ethernet_ v závislosti na typu vašeho připojení.
+    - Přejděte do sekce Síť a vyhledejte _IP adresu_. Zapište tuto IP adresu.
 
 5. Připojte Android TV skrze ADB:
 
-   - Otevřete Terminál nebo příkazový řádek v PC.
-   - Zadejte příkaz `adb connect` a vložte IP adresu své TV.
-   - Připojení bude navázáno.
+    - Otevřete Terminál nebo příkazový řádek v PC.
+    - Zadejte příkaz `adb connect` a vložte IP adresu své TV.
+    - Připojení bude navázáno.
 
 6. Nainstalujte AdGuard pro Android TV skrze ADB:
 
-   - V Terminálu zadejte příkaz `adb install Downloads/adguard_tv.apk`. V případě potřeby nahraďte `Downloads/adguard_tv.apk` vlastní cestou.
-   - Počkejte, až se v Terminálu zobrazí zpráva o úspěšné instalaci aplikace.
+    - V Terminálu zadejte příkaz `adb install Downloads/adguard_tv.apk`. V případě potřeby nahraďte `Downloads/adguard_tv.apk` vlastní cestou.
+    - Počkejte, až se v Terminálu zobrazí zpráva o úspěšné instalaci aplikace.

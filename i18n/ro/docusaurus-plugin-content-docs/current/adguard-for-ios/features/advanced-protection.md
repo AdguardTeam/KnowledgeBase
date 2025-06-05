@@ -11,7 +11,7 @@ Acest articol se referă la AdGuard pentru iOS, un blocant de reclame multifunc�
 
 În iOS 15, Apple a adăugat suport pentru Extensii Web Safari și am adăugat un nou modul _Protecție avansată_ la AdGuard pentru iOS. It allows AdGuard to apply advanced filtering rules, such as [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets) to deal with even the complex ads, such as YouTube ads.
 
-![Ecran de protecție avansată \*mobil\_bd](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
+![Ecran de protecție avansată \*mobil_bd](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
 
 ### Cum să activați
 
@@ -23,4 +23,4 @@ _Protecția avansată_ funcționează doar pe iOS 15 și versiunile ulterioare. 
 
 :::
 
-![Ecran de protecție pe iOS 14 și versiuni anterioare \*mobil\_bd](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)
+![Ecran de protecție pe iOS 14 și versiuni anterioare \*mobil_bd](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)

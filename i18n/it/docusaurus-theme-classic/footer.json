@@ -64,11 +64,11 @@
     "description": "The label of footer link with label=blog linking to https://adguard.com/blog/index.html"
   },
   "link.item.label.discuss": {
-    "message": "Discussione",
+    "message": "Discuti",
     "description": "The label of footer link with label=discuss linking to https://adguard.com/discuss.html"
   },
   "link.item.label.support_adguard": {
-    "message": "Aiutare AdGuard",
+    "message": "Sostieni AdGuard",
     "description": "The label of footer link with label=support_adguard linking to https://adguard.com/support-adguard.html"
   },
   "link.item.label.for_windows": {
@@ -84,7 +84,7 @@
     "description": "The label of footer link with label=for_android linking to https://adguard.com/adguard-android/overview.html"
   },
   "link.item.label.for_android_tv": {
-    "message": "Per Android TV",
+    "message": "Per TV Android",
     "description": "The label of footer link with label=for_android_tv linking to https://adguard.com/adguard-android-tv/overview.html"
   },
   "link.item.label.for_ios": {
@@ -96,7 +96,7 @@
     "description": "The label of footer link with label=for_browsers linking to https://adguard.com/adguard-browser-extension/overview.html"
   },
   "link.item.label.version_history": {
-    "message": "Cronologia delle versioni",
+    "message": "Cronologia versioni",
     "description": "The label of footer link with label=version_history linking to https://adguard.com/versions.html"
   },
   "link.item.label.faq": {

@@ -1,5 +1,5 @@
 ---
-title: Features
+title: 기능
 sidebar_position: 1
 ---
 
@@ -9,26 +9,26 @@ sidebar_position: 1
 
 :::
 
-## Main menu
+## 메인 메뉴
 
-The article explains the main functions on the pop-up, such as enabling or disabling ad blocking, accessing settings, managing filters, and viewing protection statistics.
+설정, 필터링 로그 및 통계에 액세스하고 문제를 보고할 수 있는 기본 팝업입니다.
 
-[Main menu](/adguard-browser-extension/features/main-menu.md)
+[메인 메뉴](/adguard-browser-extension/features/main-menu.md)
 
 ## 필터
 
-The article describes how AdGuard Browser Extension allows you to customize ad blocking with different filters and custom user rules.
+여기에서 광고 차단을 미세 조정할 수 있는 필터 및 사용자 규칙에 대한 내용을 확인할 수 있습니다.
 
-[Filters](/adguard-browser-extension/features/filters.md)
+[필터](/adguard-browser-extension/features/filters.md)
 
-## Tracking protection (Stealth Mode)
+## 추적 보호(스텔스 모드)
 
-The article explains how this feature enhances privacy by blocking online trackers, hiding user information, and preventing third-party data collection.
+추적 보호에서는 사용자 정보를 수집하는 쿠키, UTM 태그 및 온라인 분석을 차단하는 설정을 찾을 수 있습니다.
 
-[Tracking protection (Stealth Mode)](/adguard-browser-extension/features/stealth-mode.md)
+[추적 보호 (스텔스 모드)](/adguard-browser-extension/features/stealth-mode.md)
 
 ## 기타 기능 및 설정
 
-The article describes additional features and information, such as update notifications, filtering log, statistics on blocked ads and trackers, links to privacy documents, and the repository.
+여기에서 일반 및 추가 설정, 개인정보 보호 문서 링크, 리포지토리를 확인할 수 있습니다.
 
-[Other features and options](/adguard-browser-extension/features/other-features.md)
+[기타 기능 및 옵션](/adguard-browser-extension/features/other-features.md)

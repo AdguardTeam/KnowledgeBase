@@ -1,6 +1,6 @@
 ---
 title: Помощник
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info
@@ -32,13 +32,13 @@ sidebar_position: 5
 
 После выбора приложения (**в качестве примера возьмём Chrome**) появится несколько вариантов действий.
 
-![Помощник: меню для Chrome \*mobile\_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Помощник: меню для Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
 #### Недавняя активность
 
 Вы перейдёте в приложение AdGuard, где увидите подробную информацию о последних 10 тысячах запросов, сделанных Chrome.
 
-![Недавняя активность в приложении \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![Недавняя активность в приложении \*mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
 
 #### Статистика приложения
 
@@ -72,7 +72,7 @@ sidebar_position: 5
 
 Вы перейдёте в приложение AdGuard, где увидите подробную информацию о последних 10 тысячах запросов к google.com.
 
-![Недавняя активность на сайте \*mobile\_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+![Недавняя активность на сайте \*mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
 
 #### Статистика сайта
 

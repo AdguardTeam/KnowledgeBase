@@ -3,7 +3,7 @@ title: Gizlilik Modu (İzleme koruması)
 sidebar_position: 4
 ---
 
-Birçok site ziyaretçileri hakkında IP adresi, yüklü tarayıcı ve işletim sistemi, ekran çözünürlüğü ve hatta bir ziyaretçinin yönlendirildiği sayfa gibi bilgileri toplar. Some web pages use cookies to mark your browser and save your personal settings and preferences, or to "recognize" you upon your next visit. *Gizlilik Modu* (veya Windows için AdGuard ve AdGuard Tarayıcı Uzantısındaki *İzleme koruması*) kişisel bilgilerinizi bu tür veri ve istatistik toplama sistemlerinden korur.
+Birçok site ziyaretçileri hakkında IP adresi, yüklü tarayıcı ve işletim sistemi, ekran çözünürlüğü ve hatta bir ziyaretçinin yönlendirildiği sayfa gibi bilgileri toplar. Some web pages use cookies to mark your browser and save your personal settings and preferences, or to "recognize" you upon your next visit. *Tracking protection* safeguards your personal information from such data- and statistics-gathering systems.
 
 You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website from receiving the search request you used to find it on the Internet, automatically delete both third-party and the website's own cookies, turn off browser geolocation sharing that can be used to track your whereabouts, and hide your true IP address or even replace it with an arbitrary one.
 
@@ -95,7 +95,7 @@ You can also set an arbitrary value for Referer by entering it into the *Custom 
 
 Note that to be able to filter traffic, AdGuard applications 'intercept' browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely. Same goes for the *Hide Referer from third parties* option: AdGuard intercepts HTTP(S) requests, in particular to remove or change the Referer header if this option is enabled. However, it happens only after these requests “leave” the browser. This means that if you monitor Referer inside the browser (for example, with the help of Chrome's Developer Tools), you will see the original Referer because the request hasn't reached AdGuard yet. You can use software like [Fiddler](https://www.telerik.com/fiddler) to make sure that Referer gets altered correctly.
 
-On the other hand, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. It will alter the Referer right then and there, so Developer Tools will show the desired Referer for your requests.
+Due to the nature of all web browser extensions, AdGuard Browser Extension instead works 'inside' the web browser. It will alter the Referer right then and there, so Developer Tools will show the desired Referer for your requests.
 
 ### Hide User-Agent {#useragent}
 

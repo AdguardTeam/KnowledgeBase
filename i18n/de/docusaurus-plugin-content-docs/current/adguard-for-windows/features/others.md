@@ -13,13 +13,13 @@ Es gibt andere nützliche AdGuard-Optionen, die in diesem Artikel nicht unbemerk
 
 ### Support
 
-![Support \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
+![Support \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
 
 Wenn Sie auf den Tab „Support“ klicken, öffnet sich ein Dialogfeld, in dem Sie einen Fehler melden, eine Funktionsanfrage stellen oder einfach Ihre Meinung über das Produkt mitteilen können.
 
 ### Lizenz
 
-![Lizenz \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![Lizenz \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
 Auf diesem Tab finden Sie Informationen zu Ihrer Lizenz. Hier können Sie:
 
@@ -28,13 +28,13 @@ Auf diesem Tab finden Sie Informationen zu Ihrer Lizenz. Hier können Sie:
 
 ### Über uns
 
-![Über \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![Über \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 
 Zusätzlich zu den Informationen über die aktuelle Version des Programms bietet dieser Tab einige nützliche Links zu den Seiten Lizenzvereinbarung, Datenschutzerklärung, Danksagungen, Diskussionen und Versionsverlauf.
 
 ### Auf Aktualisierungen prüfen
 
-![Nach Aktualisierungen suchen \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![Nach Aktualisierungen suchen \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
 
 Um zu prüfen, ob Filter und Benutzerskripte aktualisiert wurden, klicken Sie auf das Symbol mit den rotierenden Pfeilen in der oberen rechten Ecke des Hauptbildschirms der App.
 

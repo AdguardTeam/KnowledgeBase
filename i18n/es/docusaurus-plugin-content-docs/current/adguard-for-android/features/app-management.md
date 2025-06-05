@@ -20,11 +20,11 @@ Al tocar una aplicación, puedes administrar su configuración:
 - Filtrar su tráfico HTTPS (para aplicaciones que no son de navegador, requiere [instalar el certificado CA de AdGuard en el almacén del sistema](/adguard-for-android/solving-problems/https-certificate-for-rooted/), disponible en dispositivos rooteados)
 - Enrútalo a través de tu servidor proxy especificado o AdGuard VPN en el modo de integración
 
-![Gestión de aplicaciones en Chrome \*mobile\_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![Gestión de aplicaciones en Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
 Desde el menú contextual, también puedes acceder a las estadísticas de la aplicación.
 
-![Gestión de aplicaciones en Chrome. Menú contextual \*mobile\_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![Administrador de la Aplicación: menú contextual de Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
 ### Aplicaciones “libres de problemas” y “problemáticas”
 
@@ -32,6 +32,6 @@ La mayoría de las apps funcionan correctamente cuando se filtran. Para dichas a
 
 Algunas aplicaciones, como el Administrador de descargas, la radio y las aplicaciones del sistema con UID 1000 y 1001 (por ejemplo, los servicios de Google Play), son "problemáticas" y pueden funcionar incorrectamente cuando se enrutan a través de AdGuard. Es por eso que es posible que veas la siguiente advertencia al intentar enrutar o filtrar todas las aplicaciones:
 
-![Diálogo de ruta de todas las aplicaciones \*mobile\_border](https://cdn.adtidy.org/blog/new/6du8jiroute_all.png)
+![Diálogo de ruta de todas las aplicaciones \*mobile_border](https://cdn.adtidy.org/blog/new/6du8jiroute_all.png)
 
 Para garantizar el funcionamiento adecuado de todas las aplicaciones instaladas en tu dispositivo, te recomendamos encarecidamente que enrutes sólo aplicaciones que no presenten problemas a través de AdGuard. Puedes ver la lista completa de aplicaciones no recomendadas para filtrar en _Configuración_ → _General_ → _Avanzado_ → _Configuración de bajo nivel_ → _Protección_ → _Aplicaciones excluidas_.

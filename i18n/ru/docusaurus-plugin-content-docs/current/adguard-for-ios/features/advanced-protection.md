@@ -11,7 +11,7 @@ sidebar_position: 3
 
 В iOS 15 Apple добавила поддержку веб-расширений для Safari, а мы добавили в AdGuard для iOS новый модуль _Расширенная защита_. Она позволяет AdGuard применять расширенные правила фильтрации, такие как [правила CSS](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Расширенные селекторы CSS](/general/ad-filtering/create-own-filters#extended-css-selectors) и [скриптлеты](/general/ad-filtering/create-own-filters#scriptlets), чтобы справляться даже со сложной рекламой, такой как реклама на YouTube.
 
-![Экран расширенной защиты \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_ru.jpeg)
+![Экран расширенной защиты \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_ru.jpeg)
 
 ### Как включить
 
@@ -23,4 +23,4 @@ _Расширенная защита_ работает только на iOS 15 
 
 :::
 
-![Экран защиты на iOS 14 и более ранних версиях \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_ru.jpeg)
+![Экран защиты на iOS 14 и более ранних версиях \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_ru.jpeg)

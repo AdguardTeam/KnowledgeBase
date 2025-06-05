@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::
 
-![로우 레벨 설정 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
+![로우 레벨 설정 \*mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
 
 **로우 레벨 설정**을 열려면 **설정** → **일반** → (**고급 모드**가 꺼져 있는 경우 활성화) → **고급 설정** → **로우 레벨 설정**으로 이동합니다.
 

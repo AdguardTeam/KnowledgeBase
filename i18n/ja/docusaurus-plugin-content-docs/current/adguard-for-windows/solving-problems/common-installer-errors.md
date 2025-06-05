@@ -35,13 +35,13 @@ sidebar_position: 6
 
 これはエラー1603のサブカテゴリー的なものであると言えます。 考えられる解決策も似ています:
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- Microsoftインストーラサービスを開始して再登録してください。 これを行うには、多少のステップを踏む必要があります：
 
-    - Press *Win + R* and enter **services.msc**.
-    - Find in the list and double click *Windows Installer*.
-    - Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
-    - Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*.
-    - Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    - *Win + R* を押して、 **services.msc**と入力します。
+    - リストから *Windows インストーラー* を探し、ダブルクリックします。
+    - *サービスステータス* の下の *開始* ボタンを押し、 *OK*を押します。 サービスステータスが**実行中**の場合、まず「*停止*」をクリックし、次に「*開始*」をクリックします。
+    - *Win + R* を押し、 ***msiexec /unregister*** と入力し、 *Enter*キーを押します。
+    - *Win + R* をもう一度押し、 ***msiexec /regserver*** と入力し、 *Enter*キーを押します。
 
 - PC を再起動し、インストールを最初からやり直してください。 場合によっては、それだけで問題が解決する場合もあります。
 
@@ -65,25 +65,25 @@ sidebar_position: 6
 
 - [専用のアンインストールツール](../../installation#advanced)を使用して AdGuard をアンインストールし、その後にインストールを繰り返してください。
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- Microsoftインストーラサービスを開始して再登録してください。 これを行うには、多少のステップを踏む必要があります：
 
-    - Press *Win + R* and enter ***services.msc***.
-    - Find in the list and double click *Windows Installer*.
-    - Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
-    - Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*.
-    - Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    - *Win + R* を押して、 **services.msc** と入力します。
+    - リストから *Windows インストーラー* を探し、ダブルクリックします。
+    - *サービスステータス* の下の *開始* ボタンを押し、 *OK*を押します。 サービスステータスが**実行中**の場合、まず「*停止*」をクリックし、次に「*開始*」をクリックします。
+    - *Win + R* を押し、 ***msiexec /unregister*** と入力し、 *Enter*キーを押します。
+    - *Win + R* をもう一度押し、 ***msiexec /regserver*** と入力し、 *Enter*キーを押します。
 
-- Acquire full permissions on the drive for installation. It is possible that the error 1603 occurs because you don’t have full permissions on the file location. It's also not as easy as some of the other solutions:
+- インストールのためにドライブのフル権限を取得してください。 1603エラーが発生する原因は、ファイルの保存先に対してフルアクセス権限がないことの可能性があります。 結構手間かかりますが、手順は以下のとおりです:
 
-    - Open *File Explorer*, right-click the drive containing the installation location and select *Properties*.
-    - Go to *Security* tab and click *Edit*.
-    - Single-click *SYSTEM* and ensure that the *Allow* box of every item in *Permissions for SYSTEM* is checked (if it is checkable). Do the same check for *Administrators*.
-    - Click *OK* to go back to *Properties* dialog. Then click *Advanced*.
-    - Click *Change Permissions*.
-    - On *Permissions* tab, double-click *Administrators*.
-    - Select *This folder, subfolders and files* for *Applies to* field and check all the available *Basic permissions*. After that, hit *OK*.
-    - Do the same operation above (from item 7) for *SYSTEM*.
-    - Click *OK* all the way out. Try installing AdGuard again.
+    - *ファイルエクスプローラー*を開き、インストール先を含むドライブを右クリックして 「*プロパティ*」を選択します。
+    - *セキュリティ* タブに移動し、 *編集* をクリックします。
+    - *SYSTEM*（システム）を 1 回クリックし、「*SYSTEMのアクセス許可*」にあるすべての項目の *許可* ボックスがオンになっていることを確認します (チェック可能な場合)。 「*管理者*」に対しても同じチェックを入れます。
+    - *OK* をクリックして *プロパティ* に戻ります。 次に「*詳細設定*」をクリックします。
+    - 「*権限の変更*」をクリックします。
+    - *権限* タブで、「*管理者*」をダブルクリックします。
+    - *適用先* フィールドに対して「*このフォルダー、サブフォルダー、およびファイル*」を選択し、*基本権限*のすべてにチェックを入れます。 その後、 *OK* を押します。
+    - *SYSTEM*に対してもステップ7と同じことをします。
+    - *OK* を最後までクリックし続けます。 AdGuard を再度インストールしてみてください。
 
 ### エラー 1618: 他のインストールがすでに進行中です {#error-1618}
 

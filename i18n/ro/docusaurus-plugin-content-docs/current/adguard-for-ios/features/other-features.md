@@ -13,9 +13,9 @@ Deși blocarea conținutului Safari și protecția DNS sunt fără îndoială do
 
 ### **Temă întunecată**
 
-![Light theme \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
+![Light theme \*mobile_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Dark theme \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![Dark theme \*mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
 Situat chiar în partea de sus a ecranului **Setări** → **Modul general**, această setare vă permite să comutați între temele întunecate și luminoase.
 

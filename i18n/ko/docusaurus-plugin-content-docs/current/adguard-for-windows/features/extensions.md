@@ -11,7 +11,7 @@ sidebar_position: 3
 
 AdGuard는 [유저스크립트 관리자](/general/extensions.md)로 작동하여 웹사이트 기능을 크게 확장할 수 있습니다. AdGuard 사용자는 자체 스크립트를 추가할 수 있을 뿐만 아니라 기존 스크립트를 관리할 수도 있습니다.
 
-![확장 프로그램 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![확장 프로그램 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
 **유저스크립트를 자동으로 감지**
 
@@ -19,7 +19,7 @@ AdGuard는 [유저스크립트 관리자](/general/extensions.md)로 작동하�
 
 AdGuard와 함께 설치되는 확장 프로그램은 다음과 같습니다.
 
-![사전 설치된 유저스크립트 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![사전 설치된 유저스크립트 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
 **AdGuard 어시스턴트**
 
@@ -33,7 +33,7 @@ AdGuard Extra는 기본적으로 사이트가 위에서 언급한 방법을 사�
 
 **AdGuard 팝업 차단기**
 
-이 확장 프로그램은 웹페이지를 볼 때 팝업 창이 열리지 않도록 합니다. 일부 팝업에는 사이트 관리를 위한 설정이나 링크 클릭 시 표시되는 추가 참조 정보가 포함될 수 있으므로 유용한 것으로 간주됩니다. 그렇기 때문에 필요한 경우 차단기를 끌 수 있습니다. 이 확장 프로그램은 AdGuard 예외 목록에 추가된 웹사이트에서도 작동하지 않습니다. 기본적으로 꺼져 있지만 애플리케이션 설정에서 켤 수 있습니다. 이 확장 프로그램에 대한 자세한 내용은 지식 창고에서 확인할 수 있습니다.
+이 확장 프로그램은 웹페이지를 볼 때 팝업 창이 열리지 않도록 합니다. 일부 팝업에는 사이트 관리를 위한 설정이나 링크 클릭 시 표시되는 추가 참조 정보가 포함될 수 있으므로 유용한 것으로 간주됩니다. 그렇기 때문에 필요한 경우 차단기를 끌 수 있습니다. 이 확장 프로그램은 AdGuard 예외 목록에 추가된 웹사이트에서도 작동하지 않습니다. 기본적으로 꺼져 있지만 애플리케이션 설정에서 켤 수 있습니다.
 
 **Web of Trust**
 

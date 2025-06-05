@@ -3,7 +3,7 @@ title: 什么是 AdGuard 许可证?
 sidebar_position: 1
 ---
 
-许可证是使用 AdGuard 产品的许可，根据[最终用户许可协议](https://adguard.com/eula.html)提供的。 如果与电子邮件地址绑定，AdGuard 许可证可在用户的 [AdGuard 账号](https://my.adguard.com/)中找到。
+许可证是使用 AdGuard 产品的许可，根据[最终用户许可协议](https://adguard.com/eula.html)提供的。 如果与电子邮件地址绑定，AdGuard 许可证可在用户的 [AdGuard 账号](https://adguardaccount.com/)中找到。
 
 ## AdGuard 许可证的类型
 
@@ -25,7 +25,7 @@ sidebar_position: 1
 - **经销商许可证**和**赠送的许可证**可以是有时间限制的，也可以是无时间限制的。 有过期日期的许可证只能手动更新。
     - 个人（最多支持 3 台设备）
     - 家庭（最多支持 9 台设备）
-- **AdGuard Pro iOS版 许可证**可以通过 App Store 购买和管理，只能在具有相同 Apple ID 的 iOS 和 iPadOS 设备上使用。
+- **AdGuard for iOS** and **AdGuard Pro** licenses are purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
 
 :::tip
 
@@ -35,7 +35,7 @@ sidebar_position: 1
 
 ## 如何使用 AdGuard 许可证
 
-要在设备上使用许可证，请使用与许可证关联的电子邮件地址登录 AdGuard 应用程序。 如果许可证尚未绑定到电子邮件地址，用户可以在 [AdGuard 账号](https://my.adguard.com/)中进行绑定。 请打开「*许可证*」选项卡，然后单击「*绑定许可证*」即可。
+要在设备上使用许可证，请使用与许可证关联的电子邮件地址登录 AdGuard 应用程序。 如果许可证尚未绑定到电子邮件地址，用户可以在 [AdGuard 账号](https://adguardaccount.com/)中进行绑定。 请打开「*许可证*」选项卡，然后单击「*绑定许可证*」即可。
 
 或者，用户也可以在 AdGuard 应用程序中输入[许可证密钥](#license-key)。
 

@@ -15,7 +15,7 @@ Este artículo trata sobre AdGuard para Safari, que protege solo tu navegador Sa
 2. Haz clic en _Safari_ en el menú de la esquina superior izquierda.
 3. Haz clic en _Configuración…_ → _Extensiones_.
 4. Marca _Permitir navegación privada_ para todas las extensiones de AdGuard.
-   ![Navegación privada comprobada](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
+ ![Navegación privada comprobada](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
 
 Si esto no ayuda y los anuncios siguen sin bloquearse, ponte en contacto con nuestro servicio de soporte en support@adguard.com.
 

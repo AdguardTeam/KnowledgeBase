@@ -19,7 +19,7 @@ Para poder administrar la configuración de DNS, las aplicaciones de AdGuard req
 
 ### Implementación de DNS {#dns-implementation}
 
-![Pantalla de implementación de DNS \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_en.jpeg)
+![Pantalla de implementación de DNS \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_en.jpeg)
 
 Esta sección tiene dos opciones: AdGuard e implementación nativa. Básicamente, estos son dos métodos de configuración de DNS.
 
@@ -29,7 +29,7 @@ En la implementación nativa, el DNS es manejado por el sistema y no por la apli
 
 La próxima sección que verás en la pantalla de Protección DNS es servidores DNS. Muestra el servidor DNS actualmente seleccionado y el tipo de cifrado. Para cambiar uno u otro, toca el botón para entrar en la pantalla de servidores DNS.
 
-![Servidores DNS \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
+![Servidores DNS \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
 
 Los servidores difieren por su velocidad, protocolo utilizado, confiabilidad, política de registros, etc. De forma predeterminada, AdGuard sugerirá varios servidores DNS entre los más populares (incluido AdGuard DNS). Toca cualquier opción para cambiar el tipo de cifrado (si tal opción es proporcionada por el propietario de los servidores) o para ver la página de inicio del servidor. Añadimos etiquetas como `Política de no registro`, `Bloqueo de anuncios`, `Seguridad` para ayudarte a tomar una decisión.
 
@@ -51,7 +51,7 @@ Para verificar si todo está configurado correctamente, visita nuestra [página 
 
 ### Configuración de red {#network-settings}
 
-![Pantalla de configuración de red \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
+![Pantalla de configuración de red \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
 
 Los usuarios también pueden gestionar su seguridad DNS en la pantalla de configuración de red. _Filtrar datos móviles_ y _Filtrar Wi-Fi_ habilitan o deshabilitan la protección DNS para los respectivos tipos de red. Más abajo, en _Excepciones de Wi-Fi_, puedes excluir redes Wi-Fi particulares de la protección DNS (por ejemplo, es posible que desees excluir tu red doméstica si utilizas [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
 
@@ -63,7 +63,7 @@ Cómo acceder:
 
 _Protección_ (el icono de escudo en la barra de menú inferior) → _Protección DNS_ → _Filtrado DNS_
 
-![Pantalla de filtrado DNS \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
+![Pantalla de filtrado DNS \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
 #### Filtrado de DNS {#dns-filters}
 

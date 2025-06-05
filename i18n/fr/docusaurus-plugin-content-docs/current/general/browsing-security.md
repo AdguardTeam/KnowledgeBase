@@ -19,41 +19,41 @@ Chaque fois que vous visitez un site web, votre client local échange des inform
 
 AdGuard offre la meilleure protection possible en inspectant à la fois les pages et tous les objets qui y sont chargés. AdGuard vérifie les URL et les noms de domaine à l'aide de préfixes de hachage, et non des URL complètes, de sorte que nos serveurs ne conservent aucune information sur les sites Web que vous visitez et que vos informations personnelles sont totalement sécurisées. Nos serveurs répondent à la requête de l'application avec une liste de toutes les adresses possibles correspondant au préfixe de hachage. Lorsqu'une menace potentielle est détectée grâce à des correspondances de hachage, l'accès à ce site web est immédiatement bloqué.
 
-![AdGuard warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/dangerous_website_blocked.png)
+![Avertissement d'AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/general/dangerous_website_blocked.png)
 
-### Dans les extensions de navigateur
+### Dans les extensions de navigateur {#extension}
 
 Nos extensions de navigateur ne peuvent vérifier que les noms de domaine, pas les URL complètes. Ils ne sont pas non plus en mesure de vérifier les sous-requêtes. Cela signifie que s'il y a des éléments potentiellement malveillants sur la page, ils seront chargés même si la page elle-même provient d'un domaine sûr. L’extension ne pourra pas s’en protéger. Il est également important de noter que la vérification effectuée est asynchrone, c'est-à-dire qu'elle se produit en même temps que le chargement de la page, il est donc possible que des logiciels malveillants soient également chargés.
 
 ## Paramétrage de la protection contre l'hameçonnage et les maliciels dans les produits AdGuard
 
-- **Pour Windows**: Activez le module *Sécurité de navigation* dans le menu *Paramètres*
+- **Pour Windows**: Activez le module *Navigation sécurisée* dans le menu *Paramètres*
 
-![Navigation sécurisée dans Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
+    ![Navigation sécurisée dans Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
 
 - **Pour Mac**: Activez le module *Sécurité* dans *Préférences*
 
-![Sécurité sur Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
+    ![Sécurité sur Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
 
 - **Pour Android**: Activez *Navigation sécurisée* dans l'onglet *Protection*
 
-![Navigation sécurisée sous Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
+    ![Navigation sécurisée sous Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
 
 - **Pour iOS**: Bien qu'il n'y ait pas de module séparé, vous pouvez aller dans *Protection Safari* → *Filtres* → *Sécurité* et activer les filtres disponibles. En outre, activez la *Protection DNS* et sélectionnez l'un des serveurs DNS AdGuard
 
-![Sécurité sous iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
+    ![Sécurité sous iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
 
-- **Pour les extensions de navigateur** : Activez la *protection contre l'hameçonnage et les maliciels* dans l'onglet *Paramètres*. Pour une protection renforcée, accédez à *Filtres* → *Sécurité* et activez les filtres disponibles
+- **Pour les extensions de navigateur** : Activez la *Protection contre l'hameçonnage et les maliciels* dans l'onglet *Paramètres*. Pour une protection renforcée, accédez à *Filtres* → *Sécurité* et activez les filtres
 
-![Protection contre les maliciels et l'hameçonnage](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
+    ![Protection contre les maliciels et l'hameçonnage](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
 
 - **Pour le DNS AdGuard privé :** Activez la protection contre les logiciels malveillants dans *Paramètres du serveur* sous *Sécurité*
 
-![Sécurité dans DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
+    ![Sécurité dans DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
 
 ## Ce que nous bloquons
 
-Nous maintenons deux filtres principaux : un qui protège contre l'hameçonnage et les sites web frauduleux qui tentent de voler les informations d'identification des utilisateurs, et un autre qui bloque l'accès aux sites web connus pour distribuer des maliciels, ce qui pourrait entraîner une perte de données, des fuites d'informations ou des dommages à votre appareil. Ces filtres vous protègent également des sites web des escrocs proposant des stratagèmes frauduleux. Pour des informations plus détaillées, voir l'[article de Wikipédia](https://en.wikipedia.org/wiki/Phishing).
+Nous maintenons deux filtres principaux : un qui protège contre l'hameçonnage et les sites web frauduleux qui tentent de voler les informations d'identification des utilisateurs, et un autre qui bloque l'accès aux sites web connus pour distribuer des maliciels, ce qui pourrait entraîner une perte de données, des fuites d'informations ou des dommages à votre appareil. Ces filtres vous protègent également des sites web des escrocs proposant des stratagèmes frauduleux. Pour des informations plus détaillées, consultez l'[article de Wikipédia](https://en.wikipedia.org/wiki/Phishing).
 
 ## Entretien de nos filtres
 

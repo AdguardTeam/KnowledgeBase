@@ -11,7 +11,7 @@ Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonction
 
 AdGuard peut accroître considérablement les fonctionnalités des sites Web en agissant comme un [gestionnaire de scripts utilisateur](/general/extensions.md). Les utilisateurs d'AdGuard peuvent ajouter leurs propres scripts ainsi que gérer les scripts existants.
 
-![Extensions \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
 **Détecter automatiquement les scripts utilisateur**
 
@@ -19,7 +19,7 @@ Si cette option est activée, AdGuard définira automatiquement les requêtes du
 
 Les extensions suivantes sont installées avec AdGuard :
 
-![Scripts utilisateur préinstallés \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![Scripts utilisateur préinstallés \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
 **Assistant AdGuard**
 
@@ -33,7 +33,7 @@ AdGuard Extra est essentiellement un miniprogramme qui modifie le fonctionnement
 
 **Bloqueur AdGuard de fenêtres pop-up**
 
-Cette extension empêche l'ouverture de fenêtres pop-up lorsque vous consultez des pages web. Certaines fenêtres pop-up sont considérées comme utiles — elles peuvent contenir des paramètres pour l'administration du site ou des informations de référence supplémentaires affichées lorsque l'on clique sur un lien. C'est pourquoi vous pouvez désactiver le Bloqueur si nécessaire. Cette extension ne fonctionne pas non plus sur les sites web ajoutés à la liste d'exceptions d'AdGuard. Elle est désactivée par défaut, mais vous pouvez l'activer dans les paramètres de l'application. Vous trouverez des informations plus détaillées sur cette extension dans notre Base de connaissances.
+Cette extension empêche l'ouverture de fenêtres pop-up lorsque vous consultez des pages web. Certaines fenêtres pop-up sont considérées comme utiles — elles peuvent contenir des paramètres pour l'administration du site ou des informations de référence supplémentaires affichées lorsque l'on clique sur un lien. C'est pourquoi vous pouvez désactiver le Bloqueur si nécessaire. Cette extension ne fonctionne pas non plus sur les sites web ajoutés à la liste d'exceptions d'AdGuard. Elle est désactivée par défaut, mais vous pouvez l'activer dans les paramètres de l'application.
 
 **Web of Trust**
 

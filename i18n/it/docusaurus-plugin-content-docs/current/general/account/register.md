@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Cos'è un profilo di AdGuard
 
-Il [profilo di AdGuard](https://my.adguard.com/) è un profilo utente che memorizza le informazioni sui tuoi abbonamenti e licenze di AdGuard, dispositivi attivi, lo storico dei tuoi acquisti, la lingua preferita e altre preferenze. Molti prodotti di AdGuard offrono un'opzione per attivarli inserendo le credenziali per il tuo profilo di AdGuard, ammesso che contenga una licenza valida.
+Il [profilo di AdGuard](https://adguardaccount.com/) è un profilo utente che memorizza le informazioni sui tuoi abbonamenti e licenze di AdGuard, dispositivi attivi, lo storico dei tuoi acquisti, la lingua preferita e altre preferenze. Molti prodotti di AdGuard offrono un'opzione per attivarli inserendo le credenziali per il tuo profilo di AdGuard, ammesso che contenga una licenza valida.
 
 ## Come creare un profilo
 
@@ -29,4 +29,4 @@ Dopo aver registrato il tuo account, puoi usare l'opzione *Codice una tantum* pe
 
 ## Come creare un account tramite un social network
 
-Per creare un account tramite un social network, segui semplicemente [ il collegamento](https://auth.adguard.com/login.html) e accedi al tuo account. Una volta registrato, controlla la tua casella di posta: riceverai un'e-mail di conferma. Imposta una password e tutto è fatto! Ora puoi utilizzare tutte le [funzionalità dell'account AdGuard](https://adguard.com/kb/general/account/features/).
+Per creare un account tramite un social network, segui semplicemente [il collegamento](https://auth.adguardaccount.com/login.html) e accedi al tuo account. Una volta registrato, controlla la tua casella di posta: riceverai un'e-mail di conferma. Imposta una password e tutto è fatto! Ora puoi utilizzare tutte le [funzionalità dell'account AdGuard](https://adguard.com/kb/general/account/features/).

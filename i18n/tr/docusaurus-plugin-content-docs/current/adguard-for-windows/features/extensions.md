@@ -11,7 +11,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 AdGuard can significantly extend website functionality by working as a [userscript manager](/general/extensions.md). AdGuard users can add their own scripts as well as manage existing ones.
 
-![Extensions \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
 **Automatically detect userscripts**
 
@@ -19,7 +19,7 @@ Bu seçenek etkinleştirildiğinde, AdGuard tarayıcı sorgularını otomatik ol
 
 Aşağıdaki uzantılar AdGuard ile birlikte yüklenir:
 
-![Preinstalled userscripts \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![Preinstalled userscripts \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
 **AdGuard Asistanı**
 
@@ -33,7 +33,7 @@ AdGuard Extra is essentially a miniprogram that changes the way pages work in su
 
 **AdGuard Açılır Pencere Engelleyici**
 
-Bu uzantı, web sayfalarını görüntülediğinizde açılır pencerelerin açılmasını engeller. Bazı açılır pencereler yararlı kabul edilir — site yönetimi için ayarlar veya bir bağlantıya tıklandığında gösterilen ek referans bilgileri içerebilirler. Bu nedenle gerekirse Engelleyiciyi kapatabilirsiniz. Bu uzantı, AdGuard istisnalar listesine eklenen sitelerde de çalışmaz. Varsayılan olarak kapalıdır, ancak uygulama ayarlarından açabilirsiniz. You will find more detailed information about this extension in our Knowledge Base.
+Bu uzantı, web sayfalarını görüntülediğinizde açılır pencerelerin açılmasını engeller. Some popups are considered useful — they may contain settings for site administering or additional reference information demonstrated upon clicking a link. Bu nedenle gerekirse Engelleyiciyi kapatabilirsiniz. Bu uzantı, AdGuard istisnalar listesine eklenen sitelerde de çalışmaz. Varsayılan olarak kapalıdır, ancak uygulama ayarlarından açabilirsiniz.
 
 **Web of Trust**
 

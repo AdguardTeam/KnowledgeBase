@@ -1,6 +1,6 @@
 ---
 title: Birden çok kullanıcı profilinden kaynaklanan sorunlar
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 :::info
@@ -68,7 +68,7 @@ About how to manage user accounts from an Android device you can [find here](htt
 
 :::not
 
-Bazı durumlarda kısıtlanmış kullanıcı hesapları dolaylı olarak oluşturulur ve kaldırılamaz. For instance, when you use Dual messenger or Dual app features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
+Bazı durumlarda kısıtlanmış kullanıcı hesapları dolaylı olarak oluşturulur ve kaldırılamaz. For instance, when you use Dual Messenger or Dual App features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
 
 :::
 
@@ -84,8 +84,8 @@ Owners of **LG** or **Samsung** phones may also encounter a similar issue. **Dua
 
 - Open **Settings**;
 - **Gelişmiş** öğesine basın;
-- Scroll down and press **Dual messenger**;
-- Disable the **Dual messenger** for all apps;
+- Scroll down and press **Dual Messenger**;
+- Disable the **Dual Messenger** for all apps;
 - Cihazı 5 dakika kilitleyin;
 - Ekranın kilidini açın ve VPN profilini yeniden oluşturmayı deneyin.
 
@@ -93,6 +93,6 @@ Owners of **LG** or **Samsung** phones may also encounter a similar issue. **Dua
 
 - Open **Settings**;
 - **Genel** sekmesini seçin;
-- Scroll down and press **Dual app**;
+- Scroll down and press **Dual App**;
 - Tüm uygulamaları listeden kaldırın;
 - Cihazınızı yeniden başlatın.

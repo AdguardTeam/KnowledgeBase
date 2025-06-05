@@ -11,30 +11,30 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 ## Tela inicial
 
-Este artigo descreve tudo o que você vê quando abre o aplicativo, incluindo _Configurações_, _Suporte_, _Licença_ e _Sobre_. Você também encontrará estatísticas sobre anúncios bloqueados e rastreadores.
+Na tela principal, você encontrará _Configurações_, _Suporte_, _Licença_ e _Sobre_, além de estatísticas sobre anúncios bloqueados e rastreadores
 
 [Tela inicial](/adguard-for-windows/features/home-screen/)
 
 ## Configurações
 
-Você pode personalizar o aplicativo para atender às suas necessidades bloqueando apenas o que te incomoda, usando um servidor DNS confiável, excluindo cookies de terceiros e muito mais.
+Configurações de tema e idioma, personalização do bloqueio de anúncios, Proteção de DNS, controles parentais, gerenciamento de extensões e opções avançadas para usuários experientes
 
 [Configurações](/adguard-for-windows/features/settings/)
 
 ## Extensões
 
-Aqui você aprenderá como usar o AdGuard como um gerenciador de scripts de usuário para estender a funcionalidade dos sites. Você pode adicionar seus próprios scripts e gerenciar os existentes.
+Um recurso que permite ampliar a funcionalidade dos sites adicionando scripts e estilos de usuário
 
 [Extensões](/adguard-for-windows/features/extensions/)
 
 ## Rede
 
-Este artigo descreve opções adicionais relacionadas à rede e configurações de proxy onde você pode especificar qual servidor proxy o AdGuard deve usar para atualizar filtros, baixar novas versões e assim por diante.
+Opções adicionais relacionadas à rede e configurações de proxy
 
 [Rede](/adguard-for-windows/features/network/)
 
 ## Outros recursos
 
-Aqui você pode encontrar informações sobre como entrar em contato com o suporte, gerenciar sua licença, visualizar detalhes sobre a versão atual e a Política de privacidade, verificar atualizações e explorar opções disponíveis no menu de bandeja.
+Suporte, gerenciamento de licença, opções do menu de bandeja, versão do programa e atualizações
 
 [Outros recursos](/adguard-for-windows/features/others/)

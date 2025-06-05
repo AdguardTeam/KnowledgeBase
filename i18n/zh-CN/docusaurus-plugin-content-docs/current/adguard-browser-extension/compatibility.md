@@ -17,7 +17,7 @@ sidebar_position: 4
 
 ## AdGuard 浏览器助手
 
-![AdGuard 浏览器助手 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
+![AdGuard 浏览器助手 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 
 AdGuard 浏览器助手是一款浏览器扩展，其工作方式和样式与 AdGuard 浏览器扩展一样，但它更轻量，并且不会干扰桌面应用程序。 用户可以[阅读有关适用于 Windows 的浏览器助手的更多信息](/adguard-for-windows/browser-assistant)或[Mac](/adguard-for-mac/features/browser-assistant)，或[在我们的网站下载助手](https://adguard.com/adguard-assistant/overview.html)。
 

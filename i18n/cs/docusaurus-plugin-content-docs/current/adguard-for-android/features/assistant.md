@@ -1,6 +1,6 @@
 ---
 title: Assistant
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info
@@ -32,13 +32,13 @@ Když otevřete Asistenta, uvidíte dvě karty: **Aplikace** a **webové stránk
 
 Po výběru aplikace (**např. Chrome**), získáte několik možností, co můžete dělat.
 
-![Assistant Chrome menu \*mobile\_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Assistant Chrome menu \*mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
 #### Nedávná aktivita
 
 Budete přesměrováni do aplikace AdGuard, kde se zobrazí podrobné informace o posledních 10000 požadavcích provedených prohlížečem Chrome.
 
-![App recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![App recent activity \*mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
 
 #### Statistiky aplikace
 
@@ -72,7 +72,7 @@ Klepnutím na tuto možnost se stránka `google.com` okamžitě přidá do sezna
 
 Budete přesměrováni do aplikace AdGuard, kde se zobrazí podrobné informace o posledních 10000 požadavcích na stránku google.com.
 
-![website recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+![website recent activity \*mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
 
 #### Statistiky webových stránek
 

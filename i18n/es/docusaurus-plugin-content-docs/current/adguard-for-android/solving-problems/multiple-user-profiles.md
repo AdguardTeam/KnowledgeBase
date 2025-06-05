@@ -1,6 +1,6 @@
 ---
 title: Problemas causados por múltiples perfiles de usuario
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 :::info
@@ -68,7 +68,7 @@ Sobre cómo gestionar cuentas de usuario desde un dispositivo [Android](https://
 
 :::note
 
-En algunos casos, se crean cuentas de usuario restringidas de forma implícita y no se pueden eliminar. Por ejemplo, cuando utilizas las funciones de mensajería dual o de aplicación dual en dispositivos **Samsung** o **LG**. A continuación, puedes leer cómo solucionar el problema en estos casos.
+En algunos casos, se crean cuentas de usuario restringidas de forma implícita y no se pueden eliminar. Por ejemplo, cuando se utilizan las funciones Dual Messenger o Dual App en los dispositivos **Samsung** o **LG**. A continuación, puedes leer cómo solucionar el problema en estos casos.
 
 :::
 
@@ -85,7 +85,7 @@ Los propietarios de los teléfonos **LG** o **Samsung** también pueden encontra
 - Abre **Configuración**;
 - Presiona **Avanzado**;
 - Desplázate hacia abajo y pulsa **Dual messenger**;
-- Desactivar el **Dual messenger** para todas las aplicaciones;
+- Desactiva **Dual messenger** para todas las aplicaciones;
 - Bloquea el dispositivo durante 5 minutos;
 - Desbloquea la pantalla y vuelve a intentar crear el perfil VPN.
 

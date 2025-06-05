@@ -15,11 +15,11 @@ Tab-ul _Setări_ poate fi accesat atingând pictograma din dreapta jos a ecranul
 
 Această secțiune te ajută să gestionezi aspectul și comportamentul aplicației: poți seta tema de culoare și limba, gestiona notificările și multe altele. Dacă dorești să ajuți echipa AdGuard să detecteze căderile aplicației și să cerceteze utilizabilitatea, poți activa _Raportarea automată a căderilor_ și _Trimiterea datelor tehnice și de interacțiune_.
 
-![General \*mobile\_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
+![General \*mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
 
 Sub _Actualizările aplicației și filtrului_, poți configura actualizările automate ale filtrului și selecta un canal de actualizare a aplicației. Choose _Release_ for more stability and _Beta_ or _Nightly_ for early access to new features.
 
-![Updates \*mobile\_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
+![Updates \*mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
 
 ### Setări avansate
 
@@ -29,23 +29,23 @@ _Watchdog_ ajută la protejarea AdGuard de a fi dezactivat de sistem ([citește 
 
 _Nivelul de jurnalizare_ definește ce date despre funcționarea aplicației ar trebui să fie înregistrate. Implicit, aplicația colectează date despre evenimentele sale. Nivelul _Debug_ înregistrează mai multe evenimente - activează-l dacă echipa AdGuard te solicită pentru a-i ajuta să obțină o mai bună înțelegere a problemei. [Read more about collecting and sending logs](/adguard-for-android/solving-problems/log/)
 
-![Advanced \*mobile\_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
+![Advanced \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-Secțiunea _Setări de nivel scăzut_ este pentru utilizatorii avansați. [Citește mai multe despre setările de nivel scăzut](/adguard-for-android/solving-problems/low-level-settings/)
+Secțiunea _Setări de nivel scăzut_ este pentru utilizatorii avansați. [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
 
-![Low-level settings \*mobile\_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
+![Low-level settings \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
 ## Filtrarea
 
 Această secțiune îți permite să gestionezi setările de filtrare HTTPS, filtrele și script-urile de utilizator, și să configurezi un server proxy.
 
-![Filtering \*mobile\_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
+![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.jpg)
 
 ### Filtre
 
 AdGuard blochează reclame, trackere și neplăceri prin aplicarea regulilor din filtrele sale. Cele mai multe caracteristici din secțiunea _Protecție_ sunt alimentate de [filtrele AdGuard](/general/ad-filtering/adguard-filters/#adguard-filters). Dacă activezi _Protecția de bază_, aceasta va activa automat filtrul de bază AdGuard și filtrul de reclame mobile AdGuard. Și invers: dacă dezactivezi ambele filtre, _Protecția de bază_ va fi de asemenea dezactivată.
 
-![Filters \*mobile\_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
+![Filters \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
 Filtrele activate implicit sunt suficiente pentru funcționarea normală a AdGuard. Cu toate acestea, dacă dorești să personalizezi blocarea reclamelor, poți folosi alte filtre AdGuard sau filtre terță parte. Pentru a face acest lucru, selectează o categorie și activează filtrele pe care le dorești. Pentru a adăuga un filtru personalizat, atingeti _Filtre personalizate_ → _Adăugați filtru personalizat_ și introduceți URL-ul sau calea către fișier.
 
@@ -57,93 +57,101 @@ Dacă activezi prea multe filtre, unele site-uri pot funcționa incorect.
 
 [Citește mai multe despre filtre](https://adguard.com/en/blog/what-are-filters.html)
 
-### Userscripts
+### Extensii
 
-Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. Pentru a instala scripturi de utilizator, ai nevoie de un manager special de scripturi de utilizator. AdGuard are o astfel de funcționalitate și îți permite să adaugi scripturi de utilizator prin URL sau din fișier.
+Extensions allow you to add userscripts and userstyles.
 
-![Userscripts \*mobile\_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
+![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.jpg)
+
+Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
+
+Userstyles are like userscripts that allow you to change how web pages look in the browser without modifying their content. They work by adding CSS styles to the website’s existing styles. For example, if you want a dark theme on a website that doesn’t offer one, you can use a userstyle to do it.
+
+To add a userstyle, go to _Settings_ → _Filtering_ → _Extensions_→ _Add extension_ → _Import from file or URL_. You can find ready-made user styles [online](https://userstyles.world/).
+
+To create your own style, tap _Add extension_ → _Create userstyle_.
 
 #### AdGuard Extra
 
-AdGuard Extra este un script de utilizator personalizat care blochează reclame complexe și mecanisme care reinjectează reclame pe site-uri web.
+AdGuard Extra is a custom userscript that blocks complex ads and mechanisms that reinject ads to websites.
 
-#### Dezactivare AMP
+#### Disable AMP
 
-Dezactivarea AMP este un script de utilizator care dezactivează [Pagini accelerate pentru mobile](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) pe pagina de rezultate Google.
+Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) on the Google search results page.
 
 ### Rețea
 
 #### HTTPS filtering
 
-Pentru a bloca reclame și trackere pe cele mai multe site-uri și în cele mai multe aplicații, AdGuard trebuie să filtreze traficul lor HTTPS. [Citește mai multe despre filtrarea HTTPS](/general/https-filtering/what-is-https-filtering)
+To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
 
-##### Certificate de securitate
+##### Security certificates
 
-Pentru a gestiona traficul criptat, AdGuard instalează certificatul său CA pe dispozitivul tău. Este sigur: traficul este filtrat local și AdGuard verifică securitatea conexiunii.
+To manage encrypted traffic, AdGuard installs its CA certificate on your device. It's safe: the traffic is filtered locally and AdGuard verifies the security of the connection.
 
-Pe versiunile mai vechi de Android, certificatul este instalat automat. Pe Android 11 și versiuni ulterioare, trebuie să-l instalezi manual. [Instrucțiuni de instalare](/adguard-for-android/solving-problems/manual-certificate/)
+On older versions of Android, the certificate is installed automatically. On Android 11 and later, you need to install it manually. [Installation instructions](/adguard-for-android/solving-problems/manual-certificate/)
 
-Certificatul CA din stocarea utilizatorului este suficient pentru a filtra traficul HTTPS în browsere și în unele aplicații. Cu toate acestea, există aplicații care au încredere doar în certificatele din stocarea de sistem. Pentru a filtra traficul HTTPS acolo, trebuie să instalezi certificatul CA al AdGuard în stocarea de sistem. [Instrucțiuni](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
+The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
-##### Aplicații filtrate HTTPS
+##### HTTPS-filtered apps
 
-Această secțiune conține lista aplicațiilor pentru care AdGuard filtrează traficul HTTPS. Te rugăm să reții că setarea poate fi aplicată pentru toate aplicațiile doar dacă ai certificate CA atât în stocarea utilizatorului, cât și în stocarea de sistem.
+This section contains the list of apps for which AdGuard filters HTTPS traffic. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
 
-##### Site-uri web filtrate HTTPS
+##### HTTPS-filtered websites
 
-Această setare îți permite să gestionezi site-urile pentru care AdGuard ar trebui să filtreze traficul HTTPS.
+This setting allows you to manage websites for which AdGuard should filter HTTPS traffic.
 
-Filtrarea HTTPS permite AdGuard să filtreze conținutul cererilor și răspunsurilor, dar noi nu colectăm sau stocăm niciodată aceste date. Cu toate acestea, pentru a spori securitatea, [excludem site-urile care conțin informații sensibile din filtrarea HTTPS](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
+HTTPS filtering allows AdGuard to filter the content of requests and responses, but we never collect or store this data. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
 
-Poți adăuga de asemenea site-uri pe care le consideri necesare excluderilor prin selectarea uneia dintre moduri:
+You can also add websites that you consider necessary to exclusions by selecting one of the modes:
 
-- Excluderea anumitor site-uri din filtrarea HTTPS
-- Filtrarea traficului HTTPS doar pe site-urile adăugate la excluderi
+- Exclude specific websites from HTTPS filtering
+- Filter HTTPS traffic only on the websites added to exclusions
 
-Implicit, nu filtrăm de asemenea site-uri cu certificate de validare extinsă (EV), cum ar fi site-urile financiare. Dacă este necesar, puteți activa opțiunea _Filtrați site-urile web cu certificate EV_.
+By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. Dacă este necesar, puteți activa opțiunea _Filtrați site-urile web cu certificate EV_.
 
 #### Proxy
 
-Poți configura AdGuard să direcționeze tot traficul dispozitivului tău printr-un server proxy. [Cum să configurezi un proxy extern](/adguard-for-android/solving-problems/outbound-proxy)
+You can set up AdGuard to route all your device's traffic through your proxy server. [How to set up an outbound proxy](/adguard-for-android/solving-problems/outbound-proxy)
 
 In this section, you can also set up a third-party VPN to work with AdGuard, if your VPN provider allows it.
 
-Sub _Aplicații care funcționează prin proxy_, poți selecta aplicații care își vor direcționa traficul prin proxy-ul tău specificat. Dacă ai activat _Integrarea cu AdGuard VPN_, această setare joacă rolul de excluderi ale aplicațiilor pentru AdGuard VPN: îți permite să specifici aplicații care să fie dirijate prin tunelul VPN AdGuard.
+Under _Apps operating through proxy_, you can select apps that will route their traffic through your specified proxy. If you have _Integration with AdGuard VPN_ enabled, this setting plays the role of AdGuard VPN's app exclusions: it allows you to specify apps to be routed through the AdGuard VPN tunnel.
 
-#### Mod de rutare
+#### Routing mode
 
-Această secțiune îți permite să selectezi metoda de filtrare a traficului.
+This section allows you to select the traffic filtering method.
 
-- _VPN local_ filtrează traficul printr-un VPN creat local. Acesta este cel mai fiabil mod. Din cauza restricțiilor Android, este de asemenea singura metodă de filtrare a traficului la nivel de sistem disponibilă pe dispozitivele ne-rădăcinate.
+- _Local VPN_ filters traffic through a locally created VPN. This is the most reliable mode. Due to Android restrictions, it is also the only system-wide traffic filtering method available on non-rooted devices.
 
 :::note
 
-Modul _VPN local_ nu permite utilizarea AdGuard simultan cu alte VPN-uri. Pentru a folosi un alt VPN cu AdGuard, trebuie să-l reconfigurezi pentru a funcționa în modul proxy și să configurezi un proxy extern în AdGuard. Pentru AdGuard VPN, acest lucru se face automat cu ajutorul [_Modului integrat_](/adguard-for-android/features/integration-with-vpn).
+The _Local VPN_ mode doesn't allow AdGuard to be used simultaneously with other VPNs. To use another VPN with AdGuard, you need to reconfigure it to work in proxy mode and set up an outbound proxy in AdGuard. For AdGuard VPN, this is done automatically with the help of the [_Integrated mode_](/adguard-for-android/features/integration-with-vpn).
 
 :::
 
-- _Proxy automat_ este o metodă alternativă de rutare a traficului care nu necesită utilizarea unui VPN. Un avantaj semnificativ este că poate fi rulat în paralel cu un VPN. Acest mod necesită acces root.
+- _Automatic proxy_ is an alternative traffic routing method that does not require the use of a VPN. One significant advantage is that it can be run in parallel with a VPN. This mode requires root access.
 
-- _Proxy manual_ implică configurarea unui server proxy pe un port specific, care poate fi apoi configurat în setările Wi-Fi. Acest mod necesită acces root pentru Android 10 și versiuni superioare.
+- _Manual proxy_ involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
 
 ## License
 
-În această secțiune, poți găsi informații despre licența ta și să o gestionezi:
+In this section, you can find information about your license and manage it:
 
-- Cumpără o licență AdGuard pentru a activa [caracteristicile versiunii complete](/adguard-for-android/features/free-vs-full)
-- Conectează-te la contul tău AdGuard sau introdu cheia de licență pentru a activa licența ta
-- Înscrie-te pentru a activa perioada ta de probă de 7 zile dacă nu ai folosit-o încă
+- Buy an AdGuard license to activate [the full version's features](/adguard-for-android/features/free-vs-full)
+- Log in to your AdGuard account or enter the license key to activate your license
+- Sign up to activate your 7-day trial period if you haven't used it yet
 - Refresh the license status from the three-dots menu (⋮)
-- Deschide contul AdGuard pentru a-ți gestiona licența acolo
+- Open the AdGuard account to manage your license there
 - Reset your license — for example, if you've reached device limit for this license and want to apply another one
 
-![License screen \*mobile\_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![License screen \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
 ## Support
 
 Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting _[FAQ](https://adguard.com/support/adguard_for_android.html)_ or this knowledge base before contacting support.
 
-![Support \*mobile\_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
+![Support \*mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
 If you notice a missed ad, please report it via _Report incorrect blocking_.
 

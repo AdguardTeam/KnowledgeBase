@@ -11,7 +11,7 @@ Acest articol se referă la AdGuard pentru Android, un blocant de reclame multif
 
 The _Statistics_ module can be accessed by tapping the _Statistics_ tab (fourth icon from the left at the bottom of the screen). Această caracteristică îți oferă o imagine completă a ceea ce se întâmplă cu traficul de pe dispozitivul tău: câte solicitări sunt trimise și către ce companii, cât de multe date sunt încărcate și descărcate, ce solicitări sunt blocate și multe altele. Poți alege să afisezi statisticile pentru perioada de timp selectată: 24 de ore, 7 zile, 30 de zile, sau tot timpul.
 
-![Statistici \*mobile\_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
+![Statistici \*mobile_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
 
 Statisticile sunt categorisite în diferite secțiuni.
 
@@ -33,7 +33,7 @@ Această secțiune afișează statisticile pentru toate aplicațiile instalate p
 
 Atinge _Vizualizează toate aplicațiile_ pentru a extinde lista aplicațiilor tale, sortate după numărul de reclame, trackere sau solicitări.
 
-![Lista aplicațiilor \*mobile\_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
+![Lista aplicațiilor \*mobile_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
 
 Dacă atingi o aplicație, poți vedea toate statisticile sale: solicitările pe care le trimite și domeniile și companiile către care se îndreaptă.
 

@@ -13,13 +13,13 @@ sidebar_position: 5
 
 ### 支持
 
-![支持 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
+![支持 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
 
 用户可以点击「支持」标签以打开可报告错误，提交功能请求，分享对本产品的意见的对话框。
 
 ### 许可证
 
-![许可证 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![许可证 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
 此标签包含关于许可证的信息。 用户可以查看以下信息：
 
@@ -28,13 +28,13 @@ sidebar_position: 5
 
 ### 关于
 
-![关于 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![关于 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 
 此标签页显示有本程序的当前版本信息，许可协议/隐私策略/知识库/讨论/版本历史链接。
 
 ### 检查更新
 
-![更新检查 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![更新检查 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
 
 用户可以点击主界面右上角的旋转箭头图标以检查过滤器和用户脚本更新。
 

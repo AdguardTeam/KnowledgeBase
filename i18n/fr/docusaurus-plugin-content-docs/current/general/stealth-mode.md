@@ -3,7 +3,7 @@ title: Mode furtif (Protection contre le suivi)
 sidebar_position: 4
 ---
 
-De nombreux sites web recueillent des informations sur leurs visiteurs, telles que leur adresse IP, le navigateur et le système d'exploitation installés, la résolution de l'écran et même la page à partir de laquelle le visiteur a été redirigé. Certaines pages web utilisent des cookies pour marquer votre navigateur et enregistrer vos paramètres personnels et vos préférences, ou pour vous "reconnaître" lors de votre prochaine visite. *Le mode furtif* (ou *La protection contre le suivi* dans AdGuard pour Windows et l'extension de navigateur AdGuard) protège vos informations personnelles contre ces systèmes de collecte de données et de statistiques.
+De nombreux sites web recueillent des informations sur leurs visiteurs, telles que leur adresse IP, le navigateur et le système d'exploitation installés, la résolution de l'écran et même la page à partir de laquelle le visiteur a été redirigé. Certaines pages web utilisent des cookies pour marquer votre navigateur et enregistrer vos paramètres personnels et vos préférences, ou pour vous "reconnaître" lors de votre prochaine visite. *La Protection contre le suivi* protège vos informations personnelles contre ces systèmes de collecte de données et de statistiques.
 
 Vous pouvez adapter le fonctionnement du mode furtif de manière flexible : par exemple, vous pouvez interdire au site web de recevoir la requête de recherche que vous avez utilisée pour le trouver sur Internet, supprimer automatiquement les cookies de tiers et ceux du site web, désactiver le partage de la géolocalisation du navigateur qui peut être utilisé pour suivre vos déplacements, et masquer votre véritable adresse IP ou même la remplacer par une adresse arbitraire.
 
@@ -95,7 +95,7 @@ Vous pouvez également définir une valeur arbitraire pour le référent en la s
 
 Notez que pour pouvoir filtrer le trafic, les applications AdGuard "interceptent" les requêtes navigateur-serveur. Les requêtes adressées aux serveurs de publicité, de suivi et d'hameçonnage peuvent être modifiées avant d'être envoyées au serveur ou bloquées complètement. Idem pour l'option *Masquer le référent aux tiers* : AdGuard intercepte les requêtes HTTP(S), notamment pour supprimer ou modifier l'en-tête référent si cette option est activée. Toutefois, cela ne se produit qu'une fois que ces requêtes "quittent" le navigateur. Cela signifie que si vous surveillez le référent dans le navigateur (par exemple, avec l'aide des outils de développement de Chrome), vous verrez le référent d'origine car la requête n'a pas encore atteint AdGuard. Vous pouvez utiliser des logiciels tels que [Fiddler](https://www.telerik.com/fiddler) pour vous assurer que le référent est modifié correctement.
 
-En revanche, l'Extension AdGuard fonctionne "à l'intérieur" du navigateur, comme le font toutes les extensions. Elle modifiera le référent à ce moment précis, de sorte que les outils de développeur afficheront le référent souhaité pour vos demandes.
+À cause de la nature de toutes les extensions de navigateur, l'Extension de navigateur AdGuard fonctionne "à l'intérieur" du navigateur. Elle modifiera le référent à ce moment précis, de sorte que les outils de développeur afficheront le référent souhaité pour vos demandes.
 
 ### Masquer l'Agent utilisateur {#useragent}
 

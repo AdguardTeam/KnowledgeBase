@@ -39,7 +39,7 @@ Această versiune a Asistentului este veche și nu are sens să o folosiți pe s
 
 :::
 
-#### Dezactivare AMP
+#### Disable AMP
 
 Un script care este preinstalat numai în AdGuard pentru Android. Acesta dezactivează AMP (Pagini Mobile Accelerate) pe pagina de rezultate ale căutării Google. Aflați mai multe despre acest userscript și cum să-l instalați pe [GitHub](https://github.com/AdguardTeam/DisableAMP).
 
@@ -363,30 +363,30 @@ We don’t support userstyles that contain `@var` or `@advanced` in the metadata
 
 3. To create a userstyle, first write the title with metadata, for example
 
-   ```CSS
-   /* ==UserStyle==
-   @name New userstyle
-   @version 1.0
-   ==/UserStyle== */
-   ```
+ ```CSS
+ /* ==UserStyle==
+ @name New userstyle
+ @version 1.0
+ ==/UserStyle== */
+ ```
 
 4. Write the CSS part after the meta data. AdGuard supports website domain names matching (`@-moz-document domain(…), …`). De exemplu:
 
-   ```CSS
-   body {
-     background: gray;
-     }
-   ```
+ ```CSS
+ body {
+   background: gray;
+   }
+ ```
 
-   Or:
+ Or:
 
-   ```CSS
-   @-moz-document domain('example.org'),
-   domain('example.net'),
-   domain('example.com') body {
-     background: gray;
-     }
-   ```
+ ```CSS
+ @-moz-document domain('example.org'),
+ domain('example.net'),
+ domain('example.com') body {
+   background: gray;
+   }
+ ```
 
 5. Once you’re finished, press _Save and Close_. Your new userstyle has been successfully added to AdGuard
 

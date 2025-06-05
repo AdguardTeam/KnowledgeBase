@@ -3,7 +3,7 @@ title: Что такое лицензия AdGuard?
 sidebar_position: 1
 ---
 
-Лицензия — это разрешение на использование продукта AdGuard, предоставляемое в соответствии [с Лицензионным соглашением](https://adguard.com/eula.html). Если лицензия AdGuard привязана к электронной почте, её можно найти [в личном кабинете AdGuard](https://my.adguard.com/).
+Лицензия — это разрешение на использование продукта AdGuard, предоставляемое в соответствии [с Лицензионным соглашением](https://adguard.com/eula.html). If bound to an email address, AdGuard licenses can be found in the user's [AdGuard account](https://adguardaccount.com/).
 
 ## Какие типы лицензий AdGuard существуют
 
@@ -25,7 +25,7 @@ sidebar_position: 1
 - **Дистрибьюторские лицензии** и **подарочные лицензии** могут быть как ограниченными по времени, так и вечными. Лицензии с ограниченным сроком действия можно обновить только вручную
     - Персональная — до 3 устройств
     - Семейная — до 9 устройств
-- Купить и управлять **лицензией AdGuard Pro для iOS** можно через App Store. Её можно использовать только на устройствах iOS и iPadOS с одним и тем же Apple ID
+- **AdGuard for iOS** and **AdGuard Pro** licenses are purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
 
 :::tip
 
@@ -35,7 +35,7 @@ sidebar_position: 1
 
 ## Как использовать лицензию AdGuard
 
-Чтобы использовать лицензию на устройстве, войдите в приложение AdGuard через почту, связанную с лицензией. Если вы ещё не привязывали лицензию к почте, это можно сделать [в личном кабинете AdGuard](https://my.adguard.com/). Для этого откройте вкладку *Лицензии* и нажмите *Привязать лицензию*.
+Чтобы использовать лицензию на устройстве, войдите в приложение AdGuard через почту, связанную с лицензией. If the license hasn't been bound to your email address yet, you can do it in your [AdGuard account](https://adguardaccount.com/). Для этого откройте вкладку *Лицензии* и нажмите *Привязать лицензию*.
 
 Вы также можете ввести [лицензионный ключ](#license-key) сразу в приложении AdGuard.
 

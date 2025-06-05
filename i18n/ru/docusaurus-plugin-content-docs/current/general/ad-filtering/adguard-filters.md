@@ -9,7 +9,7 @@ sidebar_position: 2
 
 :::
 
-Эта статья посвящена фильтрам, которые мы создаём для использования в AdGuard и в других блокировщиках рекламы (например, uBlock Origin). Фильтры — это наборы правил в текстовом формате, опираясь на которые, приложения и программы AdGuard фильтруют рекламу и контент, угрожающий вашей конфиденциальности, такой как баннеры, всплывающие окна или трекеры. Обычно фильтр состоит из правил с похожим назначением. Например, правила, нацеленные на конкретный сегмент интернета (Немецкий фильтр, Русский фильтр и т. д.). либо служащие определённой цели (Фильтр счётчиков и систем аналитики, Фильтр виджетов социальных сетей и т. д.), объединяются в один фильтр. Соответственно, их можно включать и выключать как единое целое.
+Эта статья посвящена фильтрам, которые мы создаём для использования в AdGuard и в других блокировщиках рекламы (например, uBlock Origin). Filters are sets of rules in text format used by AdGuard apps and programs to filter out advertising and privacy-threatening content such as banners, popups, or trackers. Обычно фильтр состоит из правил с похожим назначением. Например, правила, нацеленные на конкретный сегмент интернета (Немецкий фильтр, Русский фильтр и т. д.). либо служащие определённой цели (Фильтр счётчиков и систем аналитики, Фильтр виджетов социальных сетей и т. д.), объединяются в один фильтр. Соответственно, их можно включать и выключать как единое целое.
 
 ## Фильтры AdGuard
 
@@ -20,7 +20,7 @@ sidebar_position: 2
 - **Фильтр раздражителей** блокирует раздражающие элементы на сайтах. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt). Включает следующие фильтры AdGuard (все их можно включить отдельно от Фильтра раздражителей):
 
     - **Фильтр cookie-уведомлений** блокирует уведомления о cookie-файлах на веб-страницах. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_18_Annoyances_Cookies/filter.txt)
-    - **Фильтр всплывающих окон** блокирует всплывающие окна, не имеющие отношения к функциональности сайта. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_19_Annoyances_Popups/filter.txt)
+    - **Popups** blocks all kinds of popups that are not necessary for websites' operation. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_19_Annoyances_Popups/filter.txt)
     - **Фильтр баннеров мобильных приложений** блокирует баннеры, рекламирующие мобильные приложения сайтов. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_20_Annoyances_MobileApp/filter.txt)
     - **Фильтр виджетов** блокирует виджеты онлайн-ассистентов, чатов службы поддержки и т. п. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_22_Annoyances_Widgets/filter.txt)
     - **Фильтр других раздражителей** блокирует элементы на веб-страницах, не включённые в популярные категории раздражителей. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_21_Annoyances_Other/filter.txt)

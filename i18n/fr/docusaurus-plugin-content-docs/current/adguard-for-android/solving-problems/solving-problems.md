@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
+Cet article concerne AdGuard pour Android, un bloqueur de publicité multifonctionnel qui protège votre appareil au niveau système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -16,7 +16,6 @@ Voici quelques problèmes auxquels vous pourriez faire face ainsi que des soluti
 - [How to automate AdGuard for Android](/adguard-for-android/solving-problems/tasker.md)
 - [How to get system logs](/adguard-for-android/solving-problems/logcat.md)
 - [How to generate HAR files](/adguard-for-android/solving-problems/har.md)
-- [Low-level settings guide](/adguard-for-android/solving-problems/low-level-settings.md)
 - [How to block ads in the YouTube app](adguard-for-android/solving-problems/youtube-ads.md)
 - [How to set up outbound proxy](/adguard-for-android/solving-problems/outbound-proxy.md)
 - [How to protect AdGuard from being disabled by the system](/adguard-for-android/solving-problems/background-work.md)

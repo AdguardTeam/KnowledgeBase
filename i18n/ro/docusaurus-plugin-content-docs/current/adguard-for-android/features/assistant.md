@@ -1,6 +1,6 @@
 ---
 title: Asistent
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info
@@ -32,13 +32,13 @@ Când deschideți Asistentul, veți vedea două file: **Aplicații** și **Site-
 
 După ce selectați o aplicație (**să luăm Chrome ca exemplu**), veți obține câteva opțiuni de ceea ce puteți face.
 
-![Meniul Asistent Chrome \*mobile\_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Meniul Asistent Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
 #### Activitate recentă
 
 Veți fi dus la aplicația AdGuard, unde veți vedea informații detaliate despre ultimele solicitări făcute de Chrome.
 
-![Activitate recentă aplicație \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![Activitate recentă aplicație \*mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
 
 #### Statisticile aplicației
 
@@ -72,7 +72,7 @@ Atingerea acestei opțiuni va adăuga instantaneu `google.com` în lista de auto
 
 Veți fi dus la aplicația AdGuard, unde veți vedea informații detaliate despre ultimele solicitări către google.com.
 
-![activitate recentă site \*mobile\_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+![activitate recentă site \*mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
 
 #### Statistici site
 

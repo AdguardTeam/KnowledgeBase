@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -29,10 +29,10 @@ To collect **debug** log and send it to us, you need to perform following steps:
 
 1. Go to *Settings* → *General* → *Advanced*.
 1. Tap *Logging level* and set it to *Debug*.
-1. Reproduce the problem and try to remember the exact time it occurred.
+1. Riproduci il problema e cerca di ricordare l'ora esatta in cui si è verificato.
 1. Wait a while, then return to *Settings* and choose the *Support* tab. Tap *Report a bug* and complete the required fields. Don't forget to check the *Send app logs and system info* checkbox. Finally tap *Send*.
 
 If you're interested in following the resolution of your issue and engaging in a dialogue with the developers, we recommend that you take the following steps after completing the first three:
 
 1. Wait a while, then return to the *Advanced* screen and export logs via *Export logs and system info*. Then report a bug on GitHub by following these [instructions](/guides/report-bugs.md).
-1. After creating an issue on GitHub, send the log file to devteam@adguard.com. Includi l'ora del bug e allega un link al tuo problema o il suo numero (appare come #numero accanto al titolo). In alternativa, puoi caricare il file di registro su Google Drive e inviarlo a devteam@adguard.com. Add the file link to your GitHub issue
+1. After creating an issue on GitHub, send the log file to <devteam@adguard.com>. Includi l'ora del bug e allega un link al tuo problema o il suo numero (appare come #numero accanto al titolo). Alternatively, you can upload the log file to Google Drive and send it to <devteam@adguard.com>. Add the file link to your GitHub issue

@@ -1,6 +1,6 @@
 ---
 title: How to set up outbound proxy
-sidebar_position: 8
+sidebar_position: 7
 ---
 
 :::info
@@ -141,7 +141,7 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 *Here we presume that you are already a Clash client and have it installed on your device.*
 
-1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and toggle the switch. This will set Clash to proxy mode.
+1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and toggle the switch on. This will set Clash to proxy mode.
 
 1. Open AdGuard and go to **App management**. Choose **Clash For Android** and disable **Route traffic through AdGuard**. This will eliminate traffic looping.
 

@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 AdGuard kann die Funktionalität einer Website erheblich erweitern, indem er als [Userskript-Verwaltung](/general/extensions.md) fungiert. Sie können auch Ihre eigenen Skripte hinzufügen und bestehende Skripte verwalten.
 
-![Erweiterungen \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![Erweiterungen \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
 **Benutzerskripte automatisch erkennen**
 
@@ -19,7 +19,7 @@ Wenn diese Option aktiviert ist, definiert AdGuard automatisch Browser-Anfragen 
 
 Die folgenden Erweiterungen werden mit AdGuard installiert:
 
-![Vorinstallierte Benutzerskripte \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![Vorinstallierte Benutzerskripte \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
 **AdGuard-Assistent**
 
@@ -33,7 +33,7 @@ AdGuard Extra ist im Wesentlichen ein Miniprogramm, das die Funktionsweise von S
 
 **AdGuard Pop-up-Blocker**
 
-Diese Erweiterung verhindert das Öffnen von Pop-up-Fenstern, wenn Sie Webseiten aufrufen. Einige Pop-ups werden als nützlich erachtet — sie können Einstellungen für die Verwaltung der Website oder zusätzliche Referenzinformationen enthalten, die beim Anklicken eines Links angezeigt werden. Aus diesem Grund können Sie den Blocker bei Bedarf ausschalten. Diese Erweiterung funktioniert auch nicht auf Websites, die in der AdGuard-Ausnahmeliste aufgeführt sind. Sie ist standardmäßig ausgeschaltet, kann aber in den Einstellungen aktiviert werden. Ausführlichere Informationen über diese Erweiterung finden Sie in unserer Wissensdatenbank.
+Diese Erweiterung verhindert das Öffnen von Pop-up-Fenstern, wenn Sie Webseiten aufrufen. Einige Pop-ups werden als nützlich erachtet — sie können Einstellungen für die Verwaltung der Website oder zusätzliche Referenzinformationen enthalten, die beim Anklicken eines Links angezeigt werden. Aus diesem Grund können Sie den Blocker bei Bedarf ausschalten. Diese Erweiterung funktioniert auch nicht auf Websites, die in der AdGuard-Ausnahmeliste aufgeführt sind. Sie ist standardmäßig ausgeschaltet, kann aber in den Einstellungen aktiviert werden.
 
 **Web of Trust**
 

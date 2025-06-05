@@ -11,7 +11,7 @@ sidebar_position: 3
 
 AdGuard 可作为[用户脚本管理器](/general/extensions.md)以显著扩展网站功能。 AdGuard 用户可以添加自己的脚本，也可以管理现有脚本。
 
-![扩展 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![扩展 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
 **自动检测用户脚本**
 
@@ -19,7 +19,7 @@ AdGuard 可作为[用户脚本管理器](/general/extensions.md)以显著扩展�
 
 以下扩展是随 AdGuard 一起安装的：
 
-![预装用户脚本 \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![预装用户脚本 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
 **AdGuard 助手**
 
@@ -33,7 +33,7 @@ AdGuard Extra 是一个改变页面工作方式的小程序。它改变页面的
 
 **AdGuard 弹窗拦截器**
 
-用户在查看网页时此扩展防止弹出窗口被打开。 一些弹窗被认为是有用的，它们可能包含网站管理设置或点击链接时显示附加参考信息。 这就是用户可按需关闭拦截器的原因。 此扩展程序也不适用于那些已添加到 AdGuard 排除项列表的网站。 默认情况下其是关闭的，但用户可以在应用程序设置内打开它。 用户可以在我们的知识库内找到更多关于此扩展到信息。
+用户在查看网页时此扩展防止弹出窗口被打开。 一些弹窗被认为是有用的，它们可能包含网站管理设置或点击链接时显示附加参考信息。 这就是用户可按需关闭拦截器的原因。 此扩展程序也不适用于那些已添加到 AdGuard 排除项列表的网站。 默认情况下其是关闭的，但用户可以在应用程序设置内打开它。
 
 **Web of Trust**（信任网站）
 

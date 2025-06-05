@@ -3,13 +3,13 @@ title: Comment hiérarchiser les traductions des fichiers Crowdin
 sidebar_position: 5
 ---
 
-There are five major AdGuard projects on Crowdin — [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge Base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), and [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
+Il existe cinq projets majeurs d'AdGuard sur Crowdin — [Applications AdGuard](https://crowdin.com/project/adguard-applications), [Sites Web AdGuard](https://crowdin.com/project/adguard-websites), [Base de connaissances du Bloqueur AdGuard](https://crowdin.com/project/adguard-knowledge-base), [Base de connaissances d'AdGuard VPN](https://crowdin.com/project/adguard-vpn-knowledge-base), et [Base de connaissances d'AdGuard DNS](https://crowdin.com/project/adguard-knowledge-bases).
 
 Nous n'avons pas de directives claires sur les fichiers ou les produits avec lesquels commencer travailler sur le projet *AdGuard Applications*. Choisissez simplement n'importe quel produit que vous préférez.
 
 Il y a juste deux ou trois choses que nous voulons mentionner :
 
-- The app is only available to users in those languages for which all translations have been completed on Crowdin;
+- L'application n'est disponible que pour les utilisateurs dans les langues pour lesquelles toutes les traductions ont été complétées sur Crowdin ;
 - Nous vous recommandons de traduire les descriptions des magasins d'applications en deuxième lieu, car sans la traduction des produits eux-mêmes, les descriptions ne seront pas nécessaires.
 
 La situation est différente dans le projet *AdGuard Websites*. Des langues peuvent être ajoutées au site même si un ensemble complet de traductions n'est pas disponible. Toutefois, cela dépend des fichiers qui ont déjà été traduits. C'est pourquoi nous vous recommandons de commencer par les fichiers les plus importants — ils sont répertoriés ci-dessous :

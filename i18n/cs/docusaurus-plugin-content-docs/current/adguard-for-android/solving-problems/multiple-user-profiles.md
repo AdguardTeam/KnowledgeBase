@@ -1,6 +1,6 @@
 ---
 title: Problémy způsobené více uživatelskými profily
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 :::info
@@ -85,7 +85,7 @@ S podobným problémem se mohou setkat také majitelé telefonů **LG** nebo **S
 - Otevřete **Nastavení**;
 - Stiskněte **Pokročilé**;
 - Přejeďte dolů a stiskněte **Duální Messenger**;
-- Zakažte **Duální messenger** pro všechny aplikace;
+- Zakažte **Duální Messenger** pro všechny aplikace;
 - Uzamkněte zařízení na 5 minut;
 - Odemkněte obrazovku a zkuste profil VPN vytvořit znovu.
 

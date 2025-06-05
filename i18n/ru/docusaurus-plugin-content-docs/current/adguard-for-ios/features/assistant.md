@@ -11,7 +11,7 @@ sidebar_position: 5
 
 ### Помощник {#assistant}
 
-![Помощник Safari \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_ru.jpeg)
+![Помощник Safari \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_ru.jpeg)
 
 Помощник — это инструмент, который помогает вам управлять фильтрацией прямо из Safari, не возвращаясь в приложение.
 

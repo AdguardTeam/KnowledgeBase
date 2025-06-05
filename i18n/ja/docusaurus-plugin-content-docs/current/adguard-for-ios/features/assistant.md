@@ -11,7 +11,7 @@ sidebar_position: 5
 
 ### アシスタント {#assistant}
 
-![Safari Assistant \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
+![Safari Assistant \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
 
 アシスタントは、AdGuardアプリを開くことなく、直接Safariブラウザからフィルタリングを管理できるツールです。
 

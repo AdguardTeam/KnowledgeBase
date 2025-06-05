@@ -61,7 +61,7 @@ Selon le système d'exploitation de l'appareil dont vous souhaitez filtrer le tr
 
 ### Mac {#mac}
 
-1. Notez l'adresse IP de votre ordinateur de bureau sur lequel AdGuard est installé.
+1. Notez l'adresse IP de votre ordinateur de bureau où AdGuard est installé.
 
 1. Assurez-vous que la protection AdGuard est activée. Sur un ordinateur Windows, cochez la case **Utiliser AdGuard comme proxy HTTP** dans l'onglet **Réseau** de ses paramètres. Pour Mac, allez dans **Réglages** → **Préférences** → **Réseau** et activez le **Proxy HTTP**.
 
@@ -93,7 +93,7 @@ Selon le système d'exploitation de l'appareil dont vous souhaitez filtrer le tr
 
 ### Android {#android}
 
-1. Notez l'adresse IP de votre ordinateur de bureau sur lequel AdGuard est installé.
+1. Notez l'adresse IP de votre ordinateur de bureau où AdGuard est installé.
 
 1. Assurez-vous que la protection AdGuard est activée. Sur un ordinateur Windows, cochez la case **Utiliser AdGuard comme proxy HTTP** dans l'onglet **Réseau** de ses paramètres. Pour Mac, allez dans **Réglages** → **Préférences** → **Réseau** et activez le **Proxy HTTP**.
 
@@ -113,7 +113,7 @@ Selon le système d'exploitation de l'appareil dont vous souhaitez filtrer le tr
 
 ### iOS {#ios}
 
-1. Notez l'adresse IP de votre ordinateur de bureau sur lequel AdGuard est installé.
+1. Notez l'adresse IP de votre ordinateur de bureau où AdGuard est installé.
 
 1. Assurez-vous que la protection AdGuard est activée. Sur un ordinateur Windows, cochez la case **Utiliser AdGuard comme proxy HTTP** dans l'onglet **Réseau** de ses paramètres. Pour Mac, allez dans **Réglages** → **Préférences** → **Réseau** et activez le **Proxy HTTP**.
 

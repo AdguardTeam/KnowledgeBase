@@ -24,10 +24,9 @@ Le [licenze di AdGuard](../../license/what-is) possono essere:
 
 - collegate e scollegate,
 - estese,
-- aggiornate,
-- annullate. Inoltre, puoi aggiornare i tuoi dettagli di pagamento.
+- aggiornate.
 
-I dispositivi collegati alle tue licenze di AdGuard Ad Blocker sono collegabili o scollegabili. Per dissociare i dispositivi non utilizzati, fai clic sul numero di dispositivi legati accanto a *Dispositivi*, quindi seleziona la freccia destra → *Elimina*.
+I dispositivi collegati alle tue licenze di AdGuard Ad Blocker sono collegabili o scollegabili. Per dissociare i dispositivi non utilizzati, fai clic sul numero di dispositivi legati accanto a *Dispositivi*, quindi seleziona `>` → *Elimina*.
 
 ## Visualizza gli acquisti
 

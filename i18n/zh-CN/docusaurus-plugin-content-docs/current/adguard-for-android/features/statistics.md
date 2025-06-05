@@ -11,7 +11,7 @@ sidebar_position: 3
 
 点击「统计」标签（屏幕底部从左数起的第四个图标）可以访问「统计」模块。 此功能可让用户全面了解设备上流量的情况：发送多少请求，发送给哪些公司，上传和下载多少数据，拦截哪些请求等信息。 您可选择显示所选时间段的统计数据：24小时、7天、30天或所有时间。
 
-![Statistics \*mobile\_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
+![Statistics \*mobile_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
 
 统计数据是分类到不同的部分中。
 
@@ -33,7 +33,7 @@ sidebar_position: 3
 
 点击「查看所有应用程序」以展开设备上已安装的应用列表，可按广告、跟踪器或请求排序。
 
-![List of apps \*mobile\_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
+![List of apps \*mobile_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
 
 点击应用后，您将看到其完整的统计信息：包括发送的请求，联系域名和公司。
 

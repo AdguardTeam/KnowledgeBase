@@ -21,7 +21,7 @@ Dependendo do sistema operacional do dispositivo cujo tráfego você deseja filt
 
 1. Anote o endereço IP do seu computador com o AdGuard instalado.
 
-1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. Para Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
+1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. No Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
 
 1. No mesmo computador com o AdGuard, siga este link: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -55,15 +55,15 @@ Dependendo do sistema operacional do dispositivo cujo tráfego você deseja filt
 
 1. Clique em **Configurar** na guia *Usar um servidor proxy*.
 
-1. Ative esta opção. Para **Endereço IP do proxy**, digite o endereço IP do seu computador que você anotou na etapa 1. Para **Port**, insira a porta escolhida nas configurações de rede do aplicativo AdGuard para desktop.
+1. Ative esta opção. Para **Endereço IP do proxy**, digite o endereço de IP do seu computador, anotado na etapa 1. Para **Port**, insira a porta escolhida nas configurações de rede do aplicativo AdGuard para desktop.
 
 1. Clique em **Salvar**.
 
 ### Mac {#mac}
 
-1. Anote o endereço IP do seu computador desktop com o AdGuard instalado.
+1. Anote o endereço IP do seu computador com o AdGuard instalado.
 
-1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. Para Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
+1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. No Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
 
 1. Siga este link usando um navegador da web: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -93,9 +93,9 @@ Dependendo do sistema operacional do dispositivo cujo tráfego você deseja filt
 
 ### Android {#android}
 
-1. Anote o endereço IP do seu computador desktop com o AdGuard instalado.
+1. Anote o endereço IP do seu computador com o AdGuard instalado.
 
-1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. Para Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
+1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. No Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
 
 1. No computador com AdGuard, siga este link usando um navegador: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -113,9 +113,9 @@ Dependendo do sistema operacional do dispositivo cujo tráfego você deseja filt
 
 ### iOS {#ios}
 
-1. Anote o endereço IP do seu computador desktop com o AdGuard instalado.
+1. Anote o endereço IP do seu computador com o AdGuard instalado.
 
-1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. Para Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
+1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. No Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
 
 1. No computador com AdGuard, siga este link usando um navegador: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 

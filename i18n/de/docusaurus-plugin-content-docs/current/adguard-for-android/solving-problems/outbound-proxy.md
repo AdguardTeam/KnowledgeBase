@@ -1,6 +1,6 @@
 ---
 title: Einrichten eines ausgehenden Proxys
-sidebar_position: 8
+sidebar_position: 7
 ---
 
 :::info
@@ -141,7 +141,7 @@ Sie sollten die Shadowsocks-App aus der Filterung entfernen, bevor Sie den Proze
 
 *Wir gehen davon aus, dass Sie Clash bereits auf Ihrem Gerät installiert haben.*
 
-1. Öffnen Sie Clash und gehen Sie zu **Einstellungen** → **Netzwerk** → **Systemverkehr leiten** und schalten Sie den Schalter um. Dadurch wird Clash in den Proxy-Modus versetzt.
+1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and toggle the switch on. Dadurch wird Clash in den Proxy-Modus versetzt.
 
 1. Öffnen Sie AdGuard und wechseln Sie zu **App-Verwaltung**. Wählen Sie **Clash For Android** und deaktivieren Sie **Datenverkehr durch AdGuard leiten**. Dadurch werden Endlosschleifen im Datenverkehr vermieden.
 

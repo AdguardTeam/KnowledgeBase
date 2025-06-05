@@ -11,9 +11,9 @@ Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multif
 
 ## Cerințele Sistemului
 
-**Operating system:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
+**Operating system:** Microsoft Windows 11, 10, 8.1, 8.
 
-**RAM:** cel puțin 512 MB.
+**RAM:** at least 1 GB.
 
 **Spațiu liber pe disc:** 150 Mbytes.
 
@@ -71,7 +71,7 @@ Dacă trebuie să dezinstalați sau să reinstalați AdGuard, faceți următoare
 
 ### Metoda avansată {#advanced}
 
-În cazul în care dezinstalarea obișnuită nu funcționează din anumite motive, puteți încerca să folosiți o metodă avansată. În primul rând, trebuie să [descărcați instrumentul de dezinstalare](https://cdn.adtidy.org/distr/windows/Uninstall_Utility.zip) creat de dezvoltatorii noștri. Extrageți arhiva în orice folder de pe PC-ul dvs. și rulați fișierul **Adguard.UninstallUtility.exe**, și permiteți aplicației să efectueze modificări pe dispozitivul dumneavoastră. Apoi urmați instrucțiunile de mai jos:
+În cazul în care dezinstalarea obișnuită nu funcționează din anumite motive, puteți încerca să folosiți o metodă avansată. First of all, you need to [download the uninstaller tool](https://static.adtidy.org/windows/uninstaller/uninstal_utility.zip) created by our developers. Extrageți arhiva în orice folder de pe PC-ul dvs. și rulați fișierul **Adguard.UninstallUtility.exe**, și permiteți aplicației să efectueze modificări pe dispozitivul dumneavoastră. Apoi urmați instrucțiunile de mai jos:
 
 - Select *AdGuard Ad Blocker* and *Standard* uninstall type, then click *Uninstall*.
 

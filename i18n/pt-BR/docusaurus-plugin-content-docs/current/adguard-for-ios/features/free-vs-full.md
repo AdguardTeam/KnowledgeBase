@@ -19,14 +19,14 @@ O AdGuard para iOS premium possui várias diferenças em relação à versão gr
 
 1. O **módulo de Proteção de DNS** criptografa seu tráfego de DNS para aumentar a privacidade. Funciona em todos os aplicativos e navegadores, não apenas no Safari, oferecendo ampla proteção contra anúncios e rastreadores.
 
-   - **Servidores DNS personalizados:** Escolha um dos servidores DNS populares da nossa lista ou adicione seu próprio servidor personalizado.
+    - **Servidores DNS personalizados:** Escolha um dos servidores DNS populares da nossa lista ou adicione seu próprio servidor personalizado.
 
-   - **Proteção famíliar:** A Internet nem sempre é adequada para crianças. Com o AdGuard Premium, você pode alternar para provedores DNS que bloqueiam conteúdo adulto e outro material inadequado para manter seus filhos seguros online.
+    - **Proteção famíliar:** A Internet nem sempre é adequada para crianças. Com o AdGuard Premium, você pode alternar para provedores DNS que bloqueiam conteúdo adulto e outro material inadequado para manter seus filhos seguros online.
 
-   - **Monitoramento e configuração flexível:** O registro de atividade recente permite que você veja todas as solicitações de DNS enviadas pelo seu dispositivo e gerencie seu tráfego facilmente, adicionando sites à lista de bloqueio ou à lista de perrmissões com apenas um toque.
+    - **Monitoramento e configuração flexível:** O registro de atividade recente permite que você veja todas as solicitações de DNS enviadas pelo seu dispositivo e gerencie seu tráfego facilmente, adicionando sites à lista de bloqueio ou à lista de perrmissões com apenas um toque.
 
 2. A **Proteção avançada** permite que você use regras de filtragem avançadas para bloquear anúncios mais complexos que seriam deixados desbloqueados de outra forma.
 
-3. **Mais opções de filtragem:** Ao comprar o AdGuard Premium, você tem acesso a filtros personalizados e uma categoria de filtros de segurança, onde pode escolher entre mais de 50 filtros, incluindo os do AdGuard e de outras listas populares.
+3. **Mais opções de filtragem:** Ao comprar o AdGuard Premium, você tem acesso a filtros personalizados e de segurança.
 
 Você pode obter acesso a esses recursos [comprando uma licença](https://adguard.com/license.html).

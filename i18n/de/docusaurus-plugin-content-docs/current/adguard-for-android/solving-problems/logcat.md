@@ -63,7 +63,7 @@ Auf Geräten mit Android 7 und darunter ist es nicht möglich, einen Fehlerberic
 
 Befolgen Sie diese Anweisungen:
 
-**Teil 1: Gerät vorbereiten**
+### Part #1: prepare the device
 
 1. Schalten Sie das Gerät in den Entwicklermodus. Öffnen Sie dazu **Einstellungen** → **Über** → und tippen Sie 7-mal auf **Build-Nummer**.
 
@@ -73,17 +73,17 @@ Befolgen Sie diese Anweisungen:
 
 1. Erhöhen Sie die Größe der **Protokollpuffer** auf 4 MB pro Protokollpuffer.
 
-4 MB sollten ausreichen, um die benötigten Protokolle zu speichern, bis Sie in der Lage sind, den zweiten Teil zu erledigen (das Protokoll vom Gerät abzurufen);
+4 MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
 
-**Teil 2: Problem reproduzieren**
+### Part #2: reproduce the problem
 
-Es ist wichtig, das Problem zu reproduzieren, nachdem der erste Teil abgeschlossen ist.
+It is important to reproduce the problem after you're done with the first part.
 
 1. Reproduzieren Sie das Problem.
 
 1. Notieren Sie sich das Datum und die Uhrzeit der Reproduktion und fügen Sie es später in die E-Mail an unseren Support ein.
 
-**Teil #3: Protokoll abrufen**
+### Part #3: get the log
 
 1. Schließen Sie Ihr Gerät mit einem USB-Kabel an einen PC an.
 
@@ -101,9 +101,9 @@ Es ist wichtig, das Problem zu reproduzieren, nachdem der erste Teil abgeschloss
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-    Senden Sie die erstellte `txt`-Datei sowie die Zeit, zu der das Problem reproduziert wurde (aus Teil 2), per E-Mail an unser Support-Team unter support@adguard.com.
+    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at <support@adguard.com>.
 
-### Alternative Möglichkeit für gerootete Geräte
+### Alternative way for ROOT users
 
 1. Laden Sie [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog) herunter und führen Sie es aus.
 

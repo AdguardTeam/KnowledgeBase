@@ -21,6 +21,7 @@ AdGuard, sitelerdeki reklamları, izleyicileri ve can sıkıcı öğeleri engell
 - AdGuard Gizlilik
 - AdGuard Sosyal
 - AdGuard Güvenlik
+- AdGuard Özel
 - AdGuard Diğerleri
 
 Her içerik engelleme uzantısı, 150.000 adede kadar etkin filtreleme kuralı içerebilir. Çoğu filtre grubundaki kural sayısı 150.000'i geçmez. Ancak çok fazla dile özgü veya özel filtre etkinleştirirseniz sınırı aşabilirsiniz. Bu gibi durumlarda, sınırı aşan rastgele kurallar otomatik olarak devre dışı bırakılır ve bu da yanlış engellemeye yol açabilir. **Yalnızca ihtiyacınız olan filtreleri etkinleştirmenizi önemle tavsiye ederiz**.

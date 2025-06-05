@@ -3,7 +3,7 @@ title: AdGuard 라이선스란 무엇인가요?
 sidebar_position: 1
 ---
 
-라이선스란 AdGuard 제품을 사용하기 위한 권한으로써, [최종 사용자 라이선스 계약](https://adguard.com/eula.html)에 따라 제공됩니다. 이메일 주소에 등록한 경우 AdGuard 라이선스는 사용자의 [AdGuard 계정](https://my.adguard.com/)에서 확인할 수 있습니다.
+라이선스란 AdGuard 제품을 사용하기 위한 권한으로써, [최종 사용자 라이선스 계약](https://adguard.com/eula.html)에 따라 제공됩니다. 이메일 주소에 등록한 경우, AdGuard 라이선스는 사용자의 [AdGuard 계정](https://adguardaccount.com/)에서 확인할 수 있습니다.
 
 ## 존재하는 AdGuard 라이선스 유형
 
@@ -25,7 +25,7 @@ sidebar_position: 1
 - **판매업체 라이선스** 및 **선물받은 라이선스**는 기간 제한이 있을 수도 없을 수도 있습니다. 만료일이 있는 라이선스는 수동으로만 갱신할 수 있습니다.
     - 개인용 — 최대 3개의 기기
     - 가족용 — 최대 9개의 기기
-- **iOS용 AdGuard Pro 라이선스**는 App Store를 통해 구매 및 관리되며 동일한 Apple ID를 사용하는 iOS 및 iPadOS 기기에서만 사용할 수 있습니다.
+- **AdGuard for iOS** and **AdGuard Pro** licenses are purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
 
 :::tip
 
@@ -35,7 +35,7 @@ sidebar_position: 1
 
 ## AdGuard 라이선스 사용 방법
 
-기기에서 라이선스를 이용하려면 라이선스와 연결된 이메일 주소를 사용하여 AdGuard 앱에 로그인하세요. 라이선스가 아직 이메일 주소에 연결되지 않은 경우, [AdGuard 계정](https://my.adguard.com/)에서 연결할 수 있습니다. 라이선스를 이메일 주소에 연결하려면 *라이선스* 탭을 열고 *라이선스 추가*를 클릭합니다.
+기기에서 라이선스를 이용하려면 라이선스와 연결된 이메일 주소를 사용하여 AdGuard 앱에 로그인하세요. 라이선스가 아직 이메일 주소에 연결되지 않은 경우, [AdGuard 계정](https://adguardaccount.com/)에서 연결할 수 있습니다. 라이선스를 이메일 주소에 연결하려면 *라이선스* 탭을 열고 *라이선스 추가*를 클릭합니다.
 
 또는 AdGuard 앱에 [라이선스 키](#license-key)를 입력할 수 있습니다.
 

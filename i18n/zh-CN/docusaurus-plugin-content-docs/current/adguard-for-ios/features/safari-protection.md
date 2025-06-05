@@ -15,7 +15,7 @@ sidebar_position: 1
 
 所有内容拦截器、它们的状态、它们当前包含的主题过滤器以及使用的过滤规则总数都可以在相应屏幕上的「高级设置」（点击右下角的齿轮图标 →「常规」→「高级设置」→「内容拦截器」）。
 
-![内容拦截器 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
+![内容拦截器 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
 
 :::tip
 
@@ -29,7 +29,7 @@ sidebar_position: 1
 
 所有过滤器均按主题类别分组。 要查看这些类别的完整列表（不要与内容拦截器混淆），请通过点击盾牌图标打开「保护」部分，然后转到「Safari 保护」→「过滤器」。
 
-![过滤器类型 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
+![过滤器类型 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
 
 共有 8 个类别，每个类别都包含多个过滤器，这些过滤器都有一个共同的目的，即阻止广告、社交媒体小工具、Cookie 通知、保护用户免受在线诈骗。 要确定哪些筛选器适合您的需要，请阅读它们的说明，并根据标签进行导航 (`ads`、`privacy`、`recommended` 等等)。
 
@@ -47,7 +47,7 @@ sidebar_position: 1
 
 了解关于[创建自己过滤规则的更多详情](/general/ad-filtering/create-own-filters)。 但请注意，其中许多功能无法在 iOS 上的 Safari 中运行。
 
-![用户规则 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
+![用户规则 \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
 ### 白名单 {#allowlist}
 

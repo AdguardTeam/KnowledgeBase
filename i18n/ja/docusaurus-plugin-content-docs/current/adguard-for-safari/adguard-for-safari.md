@@ -9,26 +9,26 @@ sidebar_position: 2
 
 :::
 
-## Features
+## 機能
 
-Here are outlined the main features and settings available in AdGuard for Safari.
+AdGuard for Safari の主な機能と設定についての説明です：
 
-[Features](/adguard-for-safari/features/features.md)
+[機能](/adguard-for-safari/features/features.md)
 
 ## インストール/アンインストール
 
-Here, you’ll find the system requirements along with instructions on how to install and uninstall AdGuard for Safari.
+動作環境と、AdGuard for Safari のインストールおよびアンインストール方法の手順について説明しております：
 
-[Installation](/adguard-for-safari/installation.md)
+[インストール方法](/adguard-for-safari/installation.md)
 
 ## Safari拡張機能
 
-The article provides an overview of extensions in AdGuard for Safari, how they work, installation instructions, and key features of the extensions.
+Safariウェブブラウザに機能を追加してくれる拡張機能です：
 
-[Safari extensions](/adguard-for-safari/extensions.md)
+[Safari拡張機能](/adguard-for-safari/extensions.md)
 
 ## 問題解決
 
-This section includes various articles addressing known issues and possible solutions.
+既知の問題と考えられる解決策を説明する記事がまとめられています：
 
-[Solving problems](/adguard-for-safari/solving-problems/solving-problems.md)
+[問題解決](/adguard-for-safari/solving-problems/solving-problems.md)

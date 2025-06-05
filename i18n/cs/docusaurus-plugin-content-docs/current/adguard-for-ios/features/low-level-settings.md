@@ -9,7 +9,7 @@ Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který
 
 :::
 
-![Low-level settings \*mobile\_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
+![Low-level settings \*mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
 
 Chcete-li otevřít _Nízkoúrovňová nastavení_, přejděte do _Nastavení_ → _Obecné_ → (Aktivujte _Pokročilý režim_, pokud je vypnutý) → _Pokročilá nastavení_ → _Nízkoúrovňová nastavení_.
 

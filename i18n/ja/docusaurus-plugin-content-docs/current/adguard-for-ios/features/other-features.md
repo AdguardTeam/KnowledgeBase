@@ -13,9 +13,9 @@ SafariコンテンツブロックとDNS通信の保護が、AdGuard/AdGuard Pro�
 
 ### **ダークテーマ**
 
-![Light theme \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
+![Light theme \*mobile_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Dark theme \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![Dark theme \*mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
 **設定**⚙️ → **一般設定** 画面の一番上にあるこの設定を使用すると、ダークテーマとライ テーマを切り替えることができます。
 

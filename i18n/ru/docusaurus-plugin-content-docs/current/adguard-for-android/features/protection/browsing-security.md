@@ -13,11 +13,11 @@ sidebar_position: 6
 
 Защита от фишинга предупреждает вас, если вы переходите на фишинговый или опасный сайт. Она также сообщает о потенциально вредоносном ПО.
 
-![Защита от фишинга \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
+![Защита от фишинга \*mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
 Если вы наткнётесь на опасный сайт, Защита от фишинга покажет вам такое предупреждение:
 
-![Предупреждение об опасном сайте \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
+![Предупреждение об опасном сайте \*mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
 :::warning
 

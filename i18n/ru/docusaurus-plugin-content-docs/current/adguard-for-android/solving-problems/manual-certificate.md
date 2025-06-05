@@ -1,6 +1,6 @@
 ---
 title: Установка сертификата на устройствах с Android 11+
-sidebar_position: 12
+sidebar_position: 11
 ---
 
 :::info
@@ -43,4 +43,4 @@ sidebar_position: 12
 1. Перезапустите AdGuard.
 2. Попробуйте ещё раз установить правильный сертификат (AdGuard Personal CA).
 
-Если вы по-прежнему сталкиваетесь с проблемой и не можете установить сертификат, напишите нашей команде поддержки по адресу support@adguard.com.
+If you still encounter a problem and can't install the certificate, please contact our support team at <support@adguard.com>.

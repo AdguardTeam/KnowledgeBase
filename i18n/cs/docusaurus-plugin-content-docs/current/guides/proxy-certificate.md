@@ -21,7 +21,7 @@ V závislosti na operačním systému zařízení, jehož přenosy chcete filtro
 
 1. Poznamenejte si IP adresu vašeho PC s nainstalovaným AdGuardem.
 
-1. Zkontrolujte, zda je ochrana AdGuard zapnuta. V počítači s Windows zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení. V případě Macu přejděte do **Nastavení** → **Předvolby** → **Síť** a povolte **HTTP proxy**.
+1. Zkontrolujte, zda je ochrana AdGuard zapnuta. V počítači s Windows zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení. V Macu přejděte do **Nastavení** → **Předvolby** → **Síť** a povolte **HTTP proxy**.
 
 1. Na stejném počítači s AdGuardem použijte tento odkaz: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -63,7 +63,7 @@ V závislosti na operačním systému zařízení, jehož přenosy chcete filtro
 
 1. Poznamenejte si IP adresu vašeho PC s nainstalovaným AdGuardem.
 
-1. Zkontrolujte, zda je ochrana AdGuard zapnuta. V počítači s Windows zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení. V případě Macu přejděte do **Nastavení** → **Předvolby** → **Síť** a povolte **HTTP proxy**.
+1. Zkontrolujte, zda je ochrana AdGuard zapnuta. V počítači s Windows zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení. V Macu přejděte do **Nastavení** → **Předvolby** → **Síť** a povolte **HTTP proxy**.
 
 1. Pomocí webového prohlížeče následujte tento odkaz: http: [//local.adguard.org/cert.](http://local.adguard.org/cert).
 
@@ -95,7 +95,7 @@ V závislosti na operačním systému zařízení, jehož přenosy chcete filtro
 
 1. Poznamenejte si IP adresu vašeho PC s nainstalovaným AdGuardem.
 
-1. Zkontrolujte, zda je ochrana AdGuard zapnuta. V počítači s Windows zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení. V případě Macu přejděte do **Nastavení** → **Předvolby** → **Síť** a povolte **HTTP proxy**.
+1. Zkontrolujte, zda je ochrana AdGuard zapnuta. V počítači s Windows zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení. V Macu přejděte do **Nastavení** → **Předvolby** → **Síť** a povolte **HTTP proxy**.
 
 1. Na stejném počítači s AdGuardem použijte tento odkaz pomocí libovolného prohlížeče: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -115,7 +115,7 @@ V závislosti na operačním systému zařízení, jehož přenosy chcete filtro
 
 1. Poznamenejte si IP adresu vašeho PC s nainstalovaným AdGuardem.
 
-1. Zkontrolujte, zda je ochrana AdGuard zapnuta. V počítači s Windows zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení. V případě Macu přejděte do **Nastavení** → **Předvolby** → **Síť** a povolte **HTTP proxy**.
+1. Zkontrolujte, zda je ochrana AdGuard zapnuta. V počítači s Windows zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení. V Macu přejděte do **Nastavení** → **Předvolby** → **Síť** a povolte **HTTP proxy**.
 
 1. Na stejném počítači s AdGuardem použijte tento odkaz pomocí libovolného prohlížeče: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
