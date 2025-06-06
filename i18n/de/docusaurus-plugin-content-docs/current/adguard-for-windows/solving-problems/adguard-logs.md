@@ -57,7 +57,7 @@ Manchmal bittet das Support-Team Sie, *Ablaufverfolgungsprotokollen* zu senden. 
 
 1. Öffnen Sie die Eingabeaufforderung (geben Sie `cmd` in der Startleiste ein).
 
-1. Starten Sie die App mit dem Befehl `C:\"Program Files"\Adguard\Adguard.exe /trace` unabhängig von der Windows-Bitrate, wenn Sie AdGuard v7.16 für Windows oder höher installiert haben.
+1. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard for Windows v7.16 or later.
 
 Wenn Sie eine ältere Version von AdGuard für Windows haben, führen Sie die Anwendung mit dem Befehl C:\"Program Files (x86)"\Adguard\Adguard.exe /trace aus, wenn Sie ein 64-Bit-Windows verwenden, und C:\"Program Files"\Adguard\Adguard.exe /trace, wenn Sie ein 32-Bit-Windows verwenden.
 

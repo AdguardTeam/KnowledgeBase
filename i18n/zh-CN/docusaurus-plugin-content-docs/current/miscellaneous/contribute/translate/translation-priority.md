@@ -3,33 +3,50 @@ title: AdGuard Crowdin：翻译文件的优先级
 sidebar_position: 5
 ---
 
-Crowdin 上有五个主要的 AdGuard 项目，包括 [AdGuard Applications（AdGuard 应用程序）](https://crowdin.com/project/adguard-applications)、 [AdGuard Websites（AdGuard 网站）](https://crowdin.com/project/adguard-websites)、 [AdGuard Ad Blocker Knowledge Base（AdGuard 广告拦截程序知识库）](https://crowdin.com/project/adguard-knowledge-base)、 [AdGuard VPN Knowledge Base（AdGuard VPN 知识库）](https://crowdin.com/project/adguard-vpn-knowledge-base)和 [AdGuard DNS Knowledge Base（AdGuard DNS 知识库）](https://crowdin.com/project/adguard-knowledge-bases)。
+There are seven AdGuard projects on Crowdin:
 
-我们没有明确的用户该从哪一个文件或软件开始翻译 *AdGuard Applications* 项目的要求。 用户可以选择最喜欢的文件或软件即可。
+- [AdGuard Applications](https://crowdin.com/project/adguard-applications)
+- [AdGuard Websites](https://crowdin.com/project/adguard-websites)
+- [AdGuard Ad Blocker Knowledge Base](https://crowdin.com/project/adguard-knowledge-base)
+- [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base)
+- [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases)
+- AdGuard Mail Knowledge Base
+- AdGuard Glossary
 
-我们只想强调几个要点：
+The first five are actively translated. *AdGuard Mail Knowledge Base* is not available for translation yet. *AdGuard Glossary* is used solely for storing and managing terminology. If you want to add or edit terms, you can do it directly in the editor workspace.
 
-- 该应用程序仅适用于 Crowdin 上已完成所有翻译的语言；
-- 我们建议译员在翻译软件内容后才翻译应用商店上的描述，因为没有软件的翻译，应用商店上的说明就没有必要了。
+![Adding terms *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adding_terms.png)
 
-在 *AdGuard Websites* 项目里情况有所不同。 即使没有 100% 的翻译，我们也可以添加网站的新语言版本。 但是，这取决于已经翻译的文件。 这就是我们建议您从最重要的文件开始翻译。下面是文件排序（重要的文件排在前面，次要的文件排在后面）：
+## Starting with the Applications Project
 
-[AdGuard 广告拦截程序的网站](https://crowdin.com/project/adguard-websites/en#/adguard.com)
+There are no strict guidelines on where to begin within the *AdGuard Applications* project. Just choose any product you like.
+
+There are just a couple of things we want to mention:
+
+- An app becomes available in a language only after **all** its strings have been translated on Crowdin.
+- Translate app store descriptions after the app itself. A description without a translated product is not useful.
+- Some files and folders may be outdated — for example, `adguard-vpn-for-desktop` and `adguard-vpn-for-ios-ARCHIVED`. These should not be translated.
+
+## Starting with the Websites Project
+
+The situation is different in the *AdGuard Websites* project. Languages can be added to the website even if a full set of translations is not available. However, this depends on which files have already been translated. That’s why we recommend that you start with the most important files — they are listed below:
+
+[AdGuard Ad Blocker website](https://crowdin.com/project/adguard-websites/en#/adguard.com)
 
 - `critical.resx`
 - `auth.resx`
 - `welcome.resx`
 
-[AdGuard VPN 网站](https://crowdin.com/project/adguard-websites/en#/adguard-vpn.com)
+[AdGuard VPN website](https://crowdin.com/project/adguard-websites/en#/adguard-vpn.com)
 
 - `critical.resx`
 - `auth.resx`
 
-[AdGuard DNS 网站](https://crowdin.com/project/adguard-websites/en#/adguard-dns.com)
+[AdGuard DNS website](https://crowdin.com/project/adguard-websites/en#/adguard-dns.com)
 
 - `critical.resx`
 - `auth.resx`
 
-除更新这些文件的现有字符串外，添加的新字符串也需要工程翻译者和审核员特别注意。
+Adding new strings as well as updating existing ones in these files requires special attention from the project translators and proofreaders.
 
-除了网站之外，AdGuard 网站项目中还有一个用于翻译[交易型电子邮件（transactional emails）](https://crowdin.com/project/adguard-websites/en#/emails)的文件。 此文件新添加的字符串也要优先翻译。
+In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/en#/emails) in the *AdGuard Websites* project. Newly added strings in this file also have a high translation priority.

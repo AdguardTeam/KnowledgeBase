@@ -75,7 +75,7 @@ To create your own style, tap _Add extension_ → _Create userstyle_.
 
 AdGuard Extra is a custom userscript that blocks complex ads and mechanisms that reinject ads to websites.
 
-#### Disable AMP
+#### AMP deaktivieren
 
 Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) on the Google search results page.
 
