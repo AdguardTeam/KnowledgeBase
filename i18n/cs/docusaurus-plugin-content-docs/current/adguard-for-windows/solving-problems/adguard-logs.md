@@ -57,7 +57,7 @@ Někdy vás členové týmu podpory mohou požádat o zaslání *záznamů traso
 
 1. Otevřete konzoli (na úvodním panelu zadejte `cmd`).
 
-1. Spusťte aplikaci příkazem `C:\"Program Files"\Adguard\Adguard.exe /trace` bez ohledu na bitovou verzi Windows, pokud jste nainstalovali AdGuard v7.16 pro Windows nebo novější.
+1. Spusťte aplikaci příkazem `C:\"Program Files"\Adguard\Adguard.exe /trace` bez ohledu na bitovou verzi Windows, pokud jste nainstalovali AdGuard pro Windows v7.16 nebo novější.
 
 Pokud máte starší verzi AdGuard pro Windows, spusťte aplikaci příkazem C:\"Program Files (x86)"\Adguard\Adguard.exe /trace, pokud používáte 64bitový systém Windows a C:\"Program Files"\Adguard\Adguard.exe /trace, pokud používáte 32bitový systém.
 

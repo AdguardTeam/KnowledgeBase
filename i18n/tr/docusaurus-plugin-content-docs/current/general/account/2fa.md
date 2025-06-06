@@ -31,7 +31,7 @@ AdGuard hesabınız için iki faktörlü kimlik doğrulamayı ayarlamanızı ön
 
 ![2FA options *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 
-:::not
+:::note
 
 Eğer kimlik doğrulama uygulamasını kullanıyorsanız **kurulum anahtarını** bir yere kaydettiğinizden emin olun. Cep telefonunuzun kaybolması veya çalınması durumunda hesabınızı kurtarmanız gerekecektir.
 
@@ -43,7 +43,7 @@ If everything is done right, you will see this when you log into your account th
 
 ![Sonuç *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
 
-:::not
+:::note
 
 Kimlik doğrulama hatası alırsanız telefonunuzun saatini kontrol edin. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
 

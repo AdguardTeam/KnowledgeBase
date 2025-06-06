@@ -57,7 +57,7 @@ AdGuard는 사용자의 개인정보를 보호하기 위해 최선을 다하고 
 
 1. 콘솔을 엽니다(시작 패널에 `cmd` 입력).
 
-1. Windows용 AdGuard v7.16 이상을 설치한 경우 Windows 버전에 관계없이 `C:\"Program Files"\Adguard\Adguard.exe /trace` 명령으로 애플리케이션을 실행합니다.
+1. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard for Windows v7.16 or later.
 
 Windows용 AdGuard의 이전 버전을 사용하는 경우 64비트 Windows를 사용하는 경우 C:\"Program Files (x86)"\Adguard\Adguard.exe /trace 명령으로 애플리케이션을 실행하고, 32비트를 사용하는 경우 C:\"Program Files"\Adguard\Adguard.exe /trace 명령으로 애플리케이션을 실행합니다.
 

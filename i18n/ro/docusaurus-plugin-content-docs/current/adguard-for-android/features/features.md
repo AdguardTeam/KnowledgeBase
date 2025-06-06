@@ -35,7 +35,7 @@ General, advanced, and low-level settings that let you select the language and t
 
 ## Ghid pentru setările la nivel scăzut
 
-Descriptions of the low-level settings available in AdGuard v4.3 for Android and later.
+Descriptions of the low-level settings available in AdGuard for Android v4.3 and later.
 
 [Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
 

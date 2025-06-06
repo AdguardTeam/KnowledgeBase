@@ -21,7 +21,7 @@ Para acessar _Configurações de baixo nível_, abra o aplicativo AdGuard e toqu
 
 ## Configurações de baixo nível
 
-Para o AdGuard v4.x para Android, redesenhamos completamente as configurações de baixo nível. Refizemos a lista de configurações e as reorganizamos em grupos temáticos com descrições aprimoradas. Também adicionamos validação de entrada e outras válvulas de segurança.
+For AdGuard for Android v4.x we’ve completely redesigned the low-level settings. Refizemos a lista de configurações e as reorganizamos em grupos temáticos com descrições aprimoradas. Também adicionamos validação de entrada e outras válvulas de segurança.
 
 ### Proteção DNS
 

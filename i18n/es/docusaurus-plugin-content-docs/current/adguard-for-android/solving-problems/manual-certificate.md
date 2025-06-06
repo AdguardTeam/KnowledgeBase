@@ -1,6 +1,6 @@
 ---
 title: Instalación de certificados en dispositivos con Android 11+
-sidebar_position: 11
+sidebar_position: 12
 ---
 
 :::info

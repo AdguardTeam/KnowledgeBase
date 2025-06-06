@@ -329,7 +329,7 @@ AdGuard에는 유저스타일을 업로드하거나 직접 만들 수 있는 옵
 
 :::info 지원되는 앱
 
-현재 두 가지 AdGuard 앱으로 유저스타일을 생성하고 관리할 수 있습니다: Windows용 AdGuard(v7.19 이상) 및 Mac용 AdGuard(v2.16 이상). 또한, 이 새로운 기능을 Android용 AdGuard v4.8에 곧 구현할 계획입니다.
+현재 두 가지 AdGuard 앱으로 유저스타일을 생성하고 관리할 수 있습니다: Windows용 AdGuard(v7.19 이상) 및 Mac용 AdGuard(v2.16 이상). We also plan to implement this new feature in AdGuard for Android v4.8 in the nearest future.
 
 :::
 

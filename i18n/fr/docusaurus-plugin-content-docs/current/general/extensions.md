@@ -329,7 +329,7 @@ AdGuard vous offre la possibilité de téléverser ou de créer des styles d'uti
 
 :::info Apps prises en charge
 
-Actuellement, deux applications AdGuard vous permettent de créer et de gérer des styles d'utilisateur : AdGuard pour Windows (v7.19 ou version ultérieure) et AdGuard pour Mac (v2.16 ou version ultérieure). Nous prévoyons également de mettre en œuvre cette nouvelle fonctionnalité dans AdGuard v4.8 pour Android prochainement.
+Actuellement, deux applications AdGuard vous permettent de créer et de gérer des styles d'utilisateur : AdGuard pour Windows (v7.19 ou version ultérieure) et AdGuard pour Mac (v2.16 ou version ultérieure). We also plan to implement this new feature in AdGuard for Android v4.8 in the nearest future.
 
 :::
 

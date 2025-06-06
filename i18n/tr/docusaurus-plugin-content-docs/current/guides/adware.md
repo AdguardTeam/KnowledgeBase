@@ -3,7 +3,7 @@ title: Reklam yazılımı ve virüsler
 sidebar_position: 6
 ---
 
-:::not
+:::note
 
 AdGuard bir antivirüs programı değildir. Kötü amaçlı yazılım veya kimlik avı sitesini ziyaret edeceğinizde sizi uyarabilir, ancak **cihazınızdan virüsleri kaldırmaz.**
 

@@ -329,7 +329,7 @@ AdGuard má možnost nahrát nebo vytvořit vlastní uživatelské styly. Jedná
 
 :::info Podporované aplikace
 
-V současné době umožňují vytvářet a spravovat uživatelské styly dvě aplikace AdGuard: AdGuard pro Windows (verze 7.19 nebo novější) a AdGuard pro macOS (verze 2.16 nebo novější). Tuto novou funkci plánujeme v nejbližší době implementovat také do AdGuardu v4.8 pro Android.
+V současné době umožňují vytvářet a spravovat uživatelské styly dvě aplikace AdGuard: AdGuard pro Windows (verze 7.19 nebo novější) a AdGuard pro macOS (verze 2.16 nebo novější). Tuto novou funkci plánujeme v nejbližší době implementovat také do AdGuardu pro Android v4.8.
 
 :::
 

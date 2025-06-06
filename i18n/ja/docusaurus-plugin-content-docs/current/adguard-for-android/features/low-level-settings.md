@@ -21,7 +21,7 @@ sidebar_position: 5
 
 ## ローレベル設定
 
-AdGuard for Android v4.x では、ローレベルの設定を完全に再設計しました。 設定のリストを再構成し、それぞれのテーマグループにまとめて説明を改善しました。 入力検証やその他の安全弁も追加しました。
+For AdGuard for Android v4.x we’ve completely redesigned the low-level settings. 設定のリストを再構成し、それぞれのテーマグループにまとめて説明を改善しました。 入力検証やその他の安全弁も追加しました。
 
 ### DNS通信を保護
 

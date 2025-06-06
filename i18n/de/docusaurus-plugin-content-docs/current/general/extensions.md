@@ -39,7 +39,7 @@ Diese Version des Assistenten ist veraltet und es ergibt keinen Sinn, sie auf ne
 
 :::
 
-#### Disable AMP
+#### AMP deaktivieren
 
 Ein Skript, das nur in AdGuard für Android vorinstalliert ist. Es deaktiviert AMP (Accelerated Mobile Pages) auf der Google-Suchergebnisseite. Erfahren Sie mehr auf [GitHub](https://github.com/AdguardTeam/DisableAMP) über dieses Benutzerskript und wie man es installiert.
 
@@ -246,16 +246,16 @@ type TrustedValue = string | TrustedHTML | TrustedScript | TrustedScriptURL;
 
 ```typescript
 /**
- * Creates a Trusted Type depending on `type`:
+ * Erzeugt einen vertrauenswürdigen Typ in Abhängigkeit von `type':
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - or returns `value` if none of them is applicable.
+ * - oder gibt `value` zurück, wenn keiner von ihnen zutrifft.
  *
  * @param type          Trusted Type.
- * @param value         Value from which a Trusted Type is created.
- * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
- * @returns             Created value.
+ * @param value         Wert, aus dem ein vertrauenswürdiger Typ erstellt wird.
+ * @param createArgs    Zusätzliche Argumente, die an die durch `TrustedTypePolicy` dargestellte Funktion zu übergeben sind.
+ * @returns             Erstellter Wert.
  */
 function create(
     type: TrustedType,
@@ -264,23 +264,23 @@ function create(
 ): TrustedValue
 
 
-// Example: Creates TrustedHTML
+// Beispiel: Erzeugt TrustedHTML
 const trustedHTML = ADG_policyApi.create(ADG_TrustedType.HTML, '<div></div>');
 
 /**
- * Converts `value` of `attribute` into one of the Trusted Types:
+ * Konvertiert `value` von `attribute` in einen der vertrauenswürdigen Typen:
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - or returns `value` if none of them is applicable.
+ * - oder gibt `value` zurück, wenn keiner von ihnen zutrifft.
  *
- * @param tagName       Name of an HTML tag.
- * @param attribute     Attribute.
- * @param value         Value of an attribute to be converted.
- * @param elementNS     Element namespace. If empty, defaults to the HTML namespace.
- * @param attrNS        Attribute namespace. If empty, defaults to null.
- * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
- * @returns             Converted value.
+ * @param tagName       Name eines HTML-Tags.
+ * @param attribute     Attribut.
+ * @param value         Wert eines zu konvertierenden Attributs.
+ * @param elementNS     Namespace des Elements. Wenn leer, wird standardmäßig der HTML-Namensraum verwendet.
+ * @param attrNS        Namespace des Attributs. Falls leer, ist der Standardwert „Null“.
+ * @param createArgs    Zusätzliche Argumente, die an die durch `TrustedTypePolicy` dargestellte Funktion zu übergeben sind.
+ * @returns             Umgewandelter Wert.
  */
 function convertAttributeToTrusted(
     tagName: string,
@@ -291,23 +291,23 @@ function convertAttributeToTrusted(
     ...createArgs: unknown[]
 ): TrustedValue
 
-// Example: Converts to TrustedScriptURL
+// Beispiel: Konvertierung in TrustedScriptURL
 const trustedScriptURL = ADG_policyApi.convertAttributeToTrusted("script", "src", 'SOME_URL');
 scriptElement.setAttribute("src", trustedScriptURL);
 
 /**
- * Converts `value` of `property` into one of the Trusted Types:
+ * Konvertiert `value` von `property` in einen der vertrauenswürdigen Typen:
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - or returns `value` if none of them is applicable.
+ * - oder gibt `value` zurück, wenn keiner von ihnen zutrifft.
  *
  * @param tagName       Name of an HTML tag.
- * @param property      Property.
- * @param value         Value of a property to be converted.
- * @param elementNS     Element namespace. If empty, defaults to the HTML namespace.
- * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
- * @returns             Converted value.
+ * @param property      Eigenschaft.
+ * @param value         Wert einer umzuwandelnden Eigenschaft.
+ * @param elementNS     Namespace des Elements. Wenn leer, wird standardmäßig der HTML-Namensraum verwendet.
+ * @param createArgs    Zusätzliche Argumente, die an die durch `TrustedTypePolicy` dargestellte Funktion zu übergeben sind.
+ * @returns             Umgewandelter Wert.
  */
 function convertPropertyToTrusted(
     tagName: string,
@@ -317,7 +317,7 @@ function convertPropertyToTrusted(
     ...createArgs: unknown[]
 ): TrustedValue
 
-// Example: Converts to TrustedHTML
+// Beispiel: Umwandlung in TrustedHTML
 divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML", "<div></div>");
 ```
 
@@ -329,7 +329,7 @@ AdGuard bietet die Möglichkeit, eigene Benutzerstile hochzuladen oder zu erstel
 
 :::info Unterstützte Apps
 
-Derzeit gibt es zwei AdGuard-Anwendungen, mit denen Sie Benutzerstile erstellen und verwalten können: AdGuard für Windows (v7.19 oder höher) und AdGuard für Mac (v2.16 oder höher). Es ist zudem geplant, diese neue Funktion in AdGuard v4.8 für Android in naher Zukunft zu implementieren.
+Derzeit gibt es zwei AdGuard-Anwendungen, mit denen Sie Benutzerstile erstellen und verwalten können: AdGuard für Windows (v7.19 oder höher) und AdGuard für Mac (v2.16 oder höher). We also plan to implement this new feature in AdGuard for Android v4.8 in the nearest future.
 
 :::
 

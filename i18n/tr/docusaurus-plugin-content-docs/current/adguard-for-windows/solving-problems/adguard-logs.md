@@ -9,7 +9,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-:::not
+:::note
 
 Günlüklerde sağlanan veriler ve/veya dosyalar [AdGuard Gizlilik Politikasına](https://adguard.com/en/privacy.html) uygun olarak işlenir.
 
@@ -17,7 +17,7 @@ Günlüklerde sağlanan veriler ve/veya dosyalar [AdGuard Gizlilik Politikasına
 
 Ortaya çıkabilecek farklı sorunları analiz etmek ve teşhis etmek için AdGuard destek hizmetinin AdGuard günlük dosyalarına ihtiyacı olabilir. These files contain records about errors and other events that occur with the software. Below is the brief instruction describing the way to get the log files and send them to the support service if necessary.
 
-:::not
+:::note
 
 AdGuard gizliliğinizi korumaya kararlıdır. [Gizlilik Politikamıza](https://adguard.com/privacy/windows.html) kesinlikle uyuyoruz ve kullanıcılar hakkında herhangi bir özel bilgi toplamıyoruz. Günlüklerinizi destek ekibine göndermeden önce, paylaşmak istemediğiniz ek bilgiler içerebileceğinden lütfen dosyayı inceleyin. Bu tür kişisel bilgiler içeriyorsa öncelikle onu silmenizi öneririz.
 
@@ -57,7 +57,7 @@ Sometimes support team members may ask you to send *trace* logs. Daha sonra aşa
 
 1. Konsolu açın (başlat paneline `cmd` yazın).
 
-1. Windows için AdGuard v7.16 veya sonraki bir sürümünü kurduysanız, uygulamayı `C:\"Program Files"\Adguard\Adguard.exe /trace` komutuyla Windows bitliğine bakmaksızın çalıştırın.
+1. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard for Windows v7.16 or later.
 
 Windows için AdGuard'ın eski bir sürümüne sahipseniz, 64 bit Windows kullanıyorsanız uygulamayı C:\"Program Files (x86)"\Adguard\Adguard.exe /trace ve 32 bit kullanıyorsanız C:\"Program Files"\Adguard\Adguard.exe /trace komutuyla çalıştırın.
 

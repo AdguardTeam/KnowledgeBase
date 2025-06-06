@@ -329,7 +329,7 @@ AdGuard are opțiunea de a încărca sau crea propriile stiluri de utilizator. A
 
 :::info Aplicații suportate
 
-În prezent, două aplicații AdGuard vă permit să creați și să gestionați stiluri de utilizator: AdGuard pentru Windows (v7.19 sau mai recent) și AdGuard pentru Mac (v2.16 sau mai recent). De asemenea, planificăm să implementăm această nouă caracteristică în AdGuard v4.8 pentru Android în viitorul apropiat.
+În prezent, două aplicații AdGuard vă permit să creați și să gestionați stiluri de utilizator: AdGuard pentru Windows (v7.19 sau mai recent) și AdGuard pentru Mac (v2.16 sau mai recent). We also plan to implement this new feature in AdGuard for Android v4.8 in the nearest future.
 
 :::
 

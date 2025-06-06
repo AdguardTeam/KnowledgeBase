@@ -21,7 +21,7 @@ Chcete-li přejít na _Nízkoúrovňová nastavení_, otevřete aplikaci AdGuard
 
 ## Nízkoúrovňová nastavení
 
-Ve verzi AdGuard v4.x pro Android jsme zcela přepracovali nízkoúrovňová nastavení. Přepracovali jsme seznam prostředí a uspořádali je do tematických skupin s vylepšenými popisy. Přidali jsme také ověřování vstupů a další bezpečnostní prvky.
+Ve verzi AdGuard pro Android v4.x jsme zcela přepracovali nízkoúrovňová nastavení. Přepracovali jsme seznam prostředí a uspořádali je do tematických skupin s vylepšenými popisy. Přidali jsme také ověřování vstupů a další bezpečnostní prvky.
 
 ### DNS ochrana
 
