@@ -25,7 +25,7 @@ Esistono anche licenze che l'utente può acquistare da altre fonti o ottenere gr
 - **Le licenze distributore** e **le licenze regalate** possono essere sia limitate nel tempo che non limitate nel tempo. Le licenze con data di scadenza possono essere rinnovate solo manualmente
     - Personale — fino a 3 dispositivi
     - Famiglia — fino a 9 dispositivi
-- **AdGuard for iOS** and **AdGuard Pro** licenses are purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
+- Le licenze di **AdGuard per iOS** e **AdGuard Pro** vengono acquistate e gestite tramite App Store e possono essere utilizzate solo su dispositivi iOS e iPadOS con lo stesso ID Apple
 
 :::tip
 

@@ -28,12 +28,12 @@ V systému Monterey byl představen iCloud Private Relay. Funkce ochrany osobní
 V důsledku toho, nemůže AdGuard spolupracovat s funkcemi soukromí iCloud Private Relay a aplikací Mail:
 
 1. iCloud Private Relay se použije pro připojení na úrovni knihovny — předtím, než se dostanou na úroveň, kde funguje AdGuard.
-2. iCloud Private Relay používá QUIC, který AdGuard nemůže ve filtrovaných aplikacích filtrovat, protože filtrování HTTP/3 ještě není k dispozici.
-3. V důsledku toho, AdGuard blokuje QUIC, včetně provozu iCloud Private Relay — jinak je blokování reklam nemožné.
-4. Když používáte iCloud Private Relay a přepnete AdGuard do režimu "dělený tunel", nemůžete v Safari otevírat webové stránky.
-5. Abychom tento problém pro Monterey obešli, použijeme pravidlo "výchozí směrování". Když iCloud Private Relay uvidí toto pravidlo, automaticky se deaktivuje. AdGuard tedy v Monterey funguje bez problémů, ale iCloud Private Relay je vypnuto.
+2. iCloud Private Relay je implementována pomocí proxy HTTP/3 CONNECT.
+3. Protože AdGuard zatím nefiltruje požadavky CONNECT HTTP/3, pokouší se ponížit proxy připojení HTTP/3 na HTTP/1.1, což vede k zablokování provozu iCloud Private Relay.
+4. Když používáte iCloud Private Relay a přepnete AdGuard do režimu Dělený tunel, nemůžete v Safari otevírat webové stránky.
+5. Abychom tento problém pro Monterey obešli, použijeme pravidlo výchozí směrování. Když iCloud Private Relay uvidí toto pravidlo, automaticky se deaktivuje. AdGuard tedy v Monterey funguje bez problémů, ale iCloud Private Relay je vypnuto.
 
-`network.extension.monterey.force.split.tunnel` obnoví chování "Big Sur", ale tato možnost může přerušit přístup k webům kvůli (3) a (4). Stále hledáme řešení tohoto problému. Jednou z možností je implementace filtrování HTTP/3.
+Možnost `network.extension.monterey.force.split.tunnel` obnoví chování "Big Sur", ale tato možnost může přerušit přístup k webům kvůli (3) a (4). Stále hledáme řešení tohoto problému. Jednou z možností je implementace filtrování proxy HTTP/3.
 
 ## Doporučené řešení
 

@@ -1,16 +1,16 @@
 ---
-title: AdGuard VPN CLI interaction
+title: AdGuard VPN for Linux との併用
 sidebar_position: 5
 ---
 
-## AdGuard VPN CLI interaction
+## AdGuard VPN for Linux との併用
 
-Using AdGuard CLI in **automatic proxy mode** together with AdGuard VPN CLI in **tunnel mode** is impossible due to a routing loop: AdGuard VPN CLI's traffic currently can not be excluded from being transparently proxied by AdGuard CLI, and AdGuard CLI's traffic must go through the AdGuard VPN CLI's tunnel.
+AdGuard VPN ofr Linux を**トンネルモード**で使用し、AdGuard CLIを**自動プロキシモード**で使用することは、ルーティングループのため不可能です。AdGuard VPN for Linux のトラフィックは現在、AdGuard for Linux によって自動的にプロキシされることを除外できず、AdGuard for Linux のトラフィックは AdGuard VPN for Linux のトンネルを通過する必要があります。
 
-These are the two possible solutions:
+考えられる解決策は2つです：
 
-- Switch AdGuard CLI to **manual proxy mode**.
-    - In this case, AdGuard VPN CLI can be used in **tunnel mode**, but apps for which ad blocking is desired must be manually configured to use the AdGuard CLI's proxy.
-- Switch AdGuard VPN CLI to **SOCKS5 mode**, and configure AdGuard CLI with an outbound proxy pointing to the SOCKS5 interface of AdGuard VPN CLI. In this case, it's important to keep in mind that:
-    - For an app's traffic to go through the VPN tunnel it must either have its traffic transparently proxied by AdGuard CLI (which is the case for all apps by default), or manually configured to use AdGuard VPN CLI's SOCKS5 interface.
-    - In order to avoid a routing loop, the `skip_outbound_proxy` option must be enabled for AdGuard VPN CLI in AdGuard CLI's apps configuration section. By default, `skip_outbound_proxy` is enabled for all apps with `vpn` in their name, including AdGuard VPN CLI.
+- AdGuard for Linux を**手動プロキシモード**に切り替える
+    - この場合、AdGuard VPN for Linux は**トンネルモード**で使用できますが、広告ブロックが必要なアプリに関しては、AdGuard for Linux のプロキシを使用するようにそれぞれ手動で設定する必要があります。
+- AdGuard VPN for Linux を**SOCKS5モード**に切り替え、AdGuard VPN for Linux のSOCKS5インターフェイスを指す送信プロキシでAdGuard for Linuxを構成します。 この場合、以下の点に留意することが重要です：
+    - アプリのトラフィックがVPNトンネルを通過するには、そのトラフィックがAdGuard for Linuxによって透過的にプロキシされるか（デフォルトではすべてのアプリでそうなっています）、AdGuard VPN for LinuxのSOCKS5インターフェイスを使用するように手動で設定する必要があります。
+    - ルーティングループを避けるには、AdGuard VPN for Linux のアプリ設定セクションで、`skip_outbound_proxy` オプションを有効にする必要があります。 デフォルトでは、`skip_outbound_proxy`は、名前に`vpn`が含まれるすべてのアプリ（AdGuard VPN for Linux を含む）で有効です。

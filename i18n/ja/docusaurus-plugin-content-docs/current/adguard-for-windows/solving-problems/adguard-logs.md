@@ -57,7 +57,7 @@ AdGuard は、お客様のプライバシーを保護することに強くコミ
 
 1. コンソールを開きます (スタートパネルに `cmd` と入力します)。
 
-1. AdGuard for Windows v7.16以降をインストールしている場合は、Windows のビット数に関係なく、コマンド `C:\"Program Files"\Adguard\Adguard.exe /trace` でAdGuardアプリを実行します。
+1. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard for Windows v7.16 or later.
 
 Windows 用 AdGuard のより古いバージョンをお持ちの場合は、64 ビット Windows を使用している場合は C:\"Program Files (x86)"\Adguard\Adguard.exe /trace コマンドでAdGuardアプリを実行し、32 ビットを使用している場合は C:\"Program Files"\Adguard\Adguard.exe /trace コマンドでAdGuardアプリを実行します。
 

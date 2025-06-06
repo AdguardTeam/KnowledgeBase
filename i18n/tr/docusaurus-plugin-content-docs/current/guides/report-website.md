@@ -16,7 +16,7 @@ Karşılaştığınız reklam örneklerini içeren bir form doldurarak bize yard
 
 ## Report a website {#report}
 
-:::not
+:::note
 
 Uygulama veya AdGuard Tarayıcı Asistanı aracılığıyla bir şikayet gönderdiğinizde, tüm bilgiler otomatik olarak önceden doldurulur. Ekran görüntüleri hariç, bunları kendiniz hazırlamanız ve eklemeniz gerekir. [doğrudan bağlantı](https://reports.adguard.com/new_issue.html)kullanıyorsanız, verileri elle girmeniz gerekir.
 
@@ -72,7 +72,7 @@ Bir reklamın yeniden eklendiğini veya bir sitenin hatalı görüntülendiğini
 
 ## Formu doldurma {#form}
 
-:::not
+:::note
 
 When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Ekran görüntüleri hariç, bunları kendiniz hazırlamanız ve eklemeniz gerekir. [doğrudan bağlantı](https://reports.adguard.com/new_issue.html)kullanıyorsanız, verileri elle girmeniz gerekir.
 

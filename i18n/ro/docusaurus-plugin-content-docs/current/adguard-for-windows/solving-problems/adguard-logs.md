@@ -57,7 +57,7 @@ Uneori, membrii echipei de suport pot să vă întrebe să trimiteți *jurnale d
 
 1. Deschideți consola (tastați `cmd` în panoul de start).
 
-1. Rulați aplicația cu comanda `C:\"Program Files"\Adguard\Adguard.exe /trace` indiferent de arhitectura Windows dacă ați instalat AdGuard v7.16 pentru Windows sau mai recent.
+1. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard for Windows v7.16 or later.
 
 If you have an older version of AdGuard for Windows, run the application with the command C:\"Program Files (x86)"\Adguard\Adguard.exe /trace if you are using 64-bit Windows, and C:\"Program Files"\Adguard\Adguard.exe /trace if you are using 32-bit.
 

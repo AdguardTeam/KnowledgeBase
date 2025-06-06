@@ -13,7 +13,7 @@ AdGuard CLI라고도 하는 Linux용 AdGuard는 명령줄 광고 차단기입니
 
 Linux에서는 `Ctrl+Alt+T`를 누릅니다. Mac에서 검색 필드에 `Terminal`을 입력합니다.
 
-To view all available commands, enter:
+사용 가능한 모든 명령을 보려면 다음을 입력합니다.
 
 ```
 adguard-cli --help-all
