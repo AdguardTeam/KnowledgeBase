@@ -13,7 +13,7 @@ These instructions are also meant for problematic cases where you want to modify
 
 1. **Node:** [Install Node.js](https://nodejs.org/en/download/package-manager)
 
-1. **Yarn:** [Install Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
+1. **pnpm:** [Install pnpm](https://pnpm.io/installation)
 
 ## How to clone extension
 
@@ -29,30 +29,18 @@ These instructions are also meant for problematic cases where you want to modify
     cd AdguardBrowserExtension
     ```
 
-1. Switch to the `v5.0` branch:
-
-    ```bash
-    git checkout v5.0
-    ```
-
 1. Install dependencies:
 
     ```bash
-    yarn install
+    pnpm install
     ```
 
 ## How to build extension
 
-1. Switch to the `v5.0` branch:
-
-    ```bash
-    git checkout v5.0
-    ```
-
 1. Run the following command in the terminal:
 
     ```bash
-    yarn dev chrome-mv3
+    pnpm dev chrome-mv3
     ```
 
 1. The built extension will be located in the directory:
@@ -79,20 +67,72 @@ That’s it!
 
 ## How to debug rules
 
-1. Find and modify the rule you need in the `./Extension/filters/chromium-mv3` directory in the `.txt` files.
+1. First, build the extension (skip this step if you already did so in the *How to build extension* section):
 
-1. Convert the rules from txt to declarative form:
-
-    ```bash
-    yarn convert-declarative
+    ```shell
+    pnpm dev chrome-mv3
     ```
 
-1. Build the extension again:
+1. **Convert filters to DNR rulesets**
 
-    ```bash
-    yarn dev chrome-mv3
+    Option 1: **conversion in watch mode**
+
+    To speed up the development of DNR rulesets, use the `@adguard/dnr-rulesets` `watch` command. This command automatically rebuilds rulesets whenever filter files change.
+
+    Start watch mode with all required filters:
+
+    ```shell
+    pnpm exec dnr-rulesets watch \
+        # Enable extended logging about rulesets
+        --debug \
+        # Enable rulesets with IDs 1 and 2
+        --enable=1,2 \
+        # Download filters from the server on the first run
+        --load \
+        # Path to the extension manifest
+        ./build/dev/chrome-mv3/manifest.json \
+        # Path to web-accessible-resources directory (needed for $redirect rules)
+        ./Extension/web-accessible-resources
     ```
 
-1. Reload the extension in the browser:
+    The `--load` flag will download all filters from the server on the first run. For subsequent runs, you can omit this flag to use existing filters:
+
+    ```shell
+    pnpm exec dnr-rulesets watch \
+        # Enable extended logging about rulesets
+        --debug \
+        # Enable rulesets with IDs 1 and 2
+        --enable=1,2 \
+        # Path to the extension manifest
+        ./build/dev/chrome-mv3/manifest.json \
+        # Path to web-accessible-resources directory (needs for $redirect rules)
+        ./Extension/web-accessible-resources
+    ```
+
+    Now, whenever you modify filter files, the DNR rulesets will rebuild automatically, so you won’t have to rebuild the entire extension.
+
+    Option 2: **single run conversion**
+
+    If you do not want to use watch mode and only need a single run, you can do it directly via the `@adguard/tsurlfilter` CLI command `convert` — it will convert filters to DNR rulesets:
+
+    ```shell
+    pnpm exec tsurlfilter convert \
+        # Enable extended logging about rulesets
+        --debug \
+        # Path to the directory with raw txt filters
+        ./build/dev/chrome-mv3/filters \
+        # Path to web-accessible-resources directory (needed for $redirect rules)
+        ./Extension/web-accessible-resources \
+        # Destination path for converted DNR rulesets
+        ./build/dev/chrome-mv3/filters/declarative
+    ```
+
+    After the conversion is done, you can manually update the ruleset information in `manifest.json` if needed: enable, add, or remove rulesets as required.
+
+1. Reload the extension in the browser after conversion:
 
     ![Reload extension](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
+
+1. If you see an exclamation mark, it means the assumed rule (calculated by our tsurlfilter engine using MV2 rules) and the applied rule (converted to a DNR rule) are different. This can indicate a conversion problem.
+
+    Otherwise, if the assumed and applied rules are the same, only the applied rule, in both raw text and declarative rule views, will be shown.
