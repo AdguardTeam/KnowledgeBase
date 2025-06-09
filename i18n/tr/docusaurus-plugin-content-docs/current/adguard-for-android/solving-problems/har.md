@@ -9,7 +9,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-:::not
+:::note
 
 HAR dosyaları [AdGuard Gizlilik Politikasına](https://adguard.com/en/privacy.html) uygun olarak işlenir.
 
@@ -33,7 +33,7 @@ Sometimes we need to analyze it to block specific ads that are difficult to repr
 
 **Send the generated file with the logs to the AdGuard support service.**
 
-:::not
+:::note
 
 Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message.
 

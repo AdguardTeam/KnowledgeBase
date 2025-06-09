@@ -9,41 +9,47 @@ sidebar_position: 2
 
 成功登录后，请前往[我们的网页](https://crowdin.com/profile/adguard/)。 您将会看到几个 AdGuard 项目，每一个都包括不同产品字串的文件。
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/projects.png)
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_page.png)
 
-选择您的语言后，您将会看到可选的产品文件的列表。
+:::note
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/languages.png)
+*AdGuard Glossary* is only used for storing and managing terms — it doesn’t need to be translated.
 
-选择相应的文件，您就可以开始翻译任何您喜欢的产品了。 我们有一些关于 [AdGuard 网站项目](../translation-priority)中哪些文件更好开始的建议。
+:::
+
+Choose a project you’d like to translate, click *Join*, and choose your language.
+
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_kb.png)
+
+You can start translating literally any product you like by choosing the respective folder. We have some recommendations about [what files are better to start with in AdGuard Websites project](../translation-priority).
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/folders.png)
 
-筛选还未翻译的短语，并开始将自己融入到翻译历史之中。
+Filter phrases that are not yet translated and start your translation history.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
-在文字框中输入您的翻译并点击「Save」（保存）。
+Suggest your version in the text box and save it.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/text-box.png)
 
-如您对现存的翻译有异议，您还是可以推荐您自己的翻译。 此外，通过点击「➕」和「➖」按钮您还可以评价其他志愿者的翻译内容。
+If you don’t agree with an existing translation, you can suggest your version. You can also upvote and downvote suggestions made by other volunteers by clicking the plus and minus buttons.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/vote.png)
 
-如果您只想对翻译进行评分，还可以在「Voting mode」（投票模式）下打开翻译。
+Besides, there is an opportunity to open translations in a Voting mode if you just want to rate translations.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-您可以[在本文中找到一些关于 AdGuard 翻译](../guidelines)的有用提示。 请看一下。
+You can find some [helpful tips on translating AdGuard in this article](../guidelines). Please take a look at it.
 
 ### 如何成为审核员 {#proofreaders}
 
-每一个语言都有审核员（Proofreaders），之前叫版主（Moderator）。 每个活跃的翻译人员都可以成为一名审核员。
+We have proofreaders (previously known as moderators) for each language. And every active translator has an option to become one.
 
-TA 们负责什么？
+So, what are proofreaders responsible for?
 
-**审核员：**
+**Proofreaders:**
 
 - 审核并留下高质量的翻译，拒绝不好的翻译；
 
@@ -51,4 +57,4 @@ TA 们负责什么？
 
 - 参加注释中的讨论。
 
-每年最优秀的审核员都收到 AdGuard 的礼物。 积极的翻译者也不会没有回报。 阅读更多关于我们的[奖励机制](../rewards)。
+Every year, the best proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system](../rewards).

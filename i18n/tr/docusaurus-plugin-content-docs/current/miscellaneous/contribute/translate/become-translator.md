@@ -9,11 +9,17 @@ If you want to help translate AdGuard products, websites, and Knowledge Bases, g
 
 Once you do, go to [our page](https://crowdin.com/profile/adguard/). You will see AdGuard projects, each with folders for different product strings.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/projects.png)
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_page.png)
 
-Choose your language and you will see the list of available product folders.
+:::note
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/languages.png)
+*AdGuard Glossary*, yalnızca terimleri depolamak ve yönetmek için kullanılır — çevrilmesine gerek yoktur.
+
+:::
+
+Çevirmek istediğiniz projeyi seçin, *Katıl* öğesine tıklayın ve dilinizi seçin.
+
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_kb.png)
 
 You can start translating literally any product you like by choosing the respective folder. We have some recommendations about [what files are better to start with in AdGuard Websites project](../translation-priority).
 
@@ -27,7 +33,7 @@ Suggest your version in the text box and save it.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/text-box.png)
 
-If you don't agree with an existing translation, you can suggest your version. Also, you can upvote and downvote suggestions made by other volunteers by clicking the "plus" and "minus" buttons.
+If you don’t agree with an existing translation, you can suggest your version. You can also upvote and downvote suggestions made by other volunteers by clicking the plus and minus buttons.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/vote.png)
 
@@ -35,7 +41,7 @@ Besides, there is an opportunity to open translations in a Voting mode if you ju
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-You can find some [helpful tips on translating AdGuard in this article](../guidelines). Lütfen bir göz atın.
+You can find some [helpful tips on translating AdGuard in this article](../guidelines). Please take a look at it.
 
 ### Nasıl düzeltmen olunur {#proofreaders}
 
@@ -51,4 +57,4 @@ So, what are proofreaders responsible for?
 
 - Respond to comments related to translations in their language.
 
-Her yıl, en iyi düzeltmenler AdGuard'dan hediyeler alır. Aktif çevirmenler de ödülsüz kalmıyor. Read more about our [reward system](../rewards).
+Every year, the best proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system](../rewards).

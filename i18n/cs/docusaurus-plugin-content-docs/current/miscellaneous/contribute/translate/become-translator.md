@@ -9,11 +9,17 @@ Pokud chcete pomáhat překládat produkty, webové stránky a znalostní datab�
 
 Jakmile tak učiníte, přejděte na [naši stránku](https://crowdin.com/profile/adguard/). Zobrazí se projekty AdGuardu se složkami pro různé produktové řetězce.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/projects.png)
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_page.png)
 
-Zvolte jazyk a zobrazí se seznam dostupných složek produktů.
+:::note
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/languages.png)
+*AdGuard Glossary* slouží pouze k ukládání a správě terminologie — není třeba jej překládat.
+
+:::
+
+Vyberte projekt, který chcete přelkládat, klikněte na tlačítko *Join* a vyberte jazyk.
+
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_kb.png)
 
 Výběrem příslušné složky můžete začít překládat doslova libovolný produkt. Máme několik doporučení, s jakými [soubory je lepší začít v projektu AdGuard Websites](../translation-priority).
 

@@ -29,7 +29,7 @@ Bu işe yaramazsa, AdGuard sertifikasını FireFox depolamasına elle eklemek i�
 
 1. [http://local.adguard.org/cert](http://local.adguard.org/cert) adresine gidin ve *İndir* düğmesine tıklayın. Tarayıcı **cert.cer** dosyasını indirmeye başlamalıdır.
 
-    :::not
+    :::note
 
     İndirme sayfasını AdGuard uygulaması üzerinden *Ayarlar → Ağ → HTTPS filtreleme* öğesindeki bağlantıya tıklayarak da açabilirsiniz.
 
