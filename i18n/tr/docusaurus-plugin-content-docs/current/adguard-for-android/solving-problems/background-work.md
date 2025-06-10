@@ -287,7 +287,7 @@ This feature may or may not be available for all devices or may be labeled diffe
 
 ### EMUI 9+ devices and PowerGenie
 
-:::not
+:::note
 
 On phones with EMUI 9+ (Android P+) there is a task killer app called PowerGenie which forces to quit all apps not whitelisted by Huawei and does not give users any configuration options. Nasıl kaldırılacağını aşağıda görebilirsiniz.
 
@@ -416,7 +416,7 @@ On these devices there is a task killer called **DuraSpeed** that terminates all
 
     ![Nokia tasker *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/nokia_tasker.png)
 
-    :::not
+    :::note
 
     You need both **Global** and **System** type settings. The screenshot shows only Global as an example.
 

@@ -57,7 +57,7 @@ Talvolta, i membri del team di supporto potrebbero chiederti di inviare i regist
 
 1. Apri la console (digita `cmd` nel pannello Start).
 
-1. Esegui l'applicazione con il comando `C:\"Program Files"\Adguard\Adguard.exe /trace`, indipendentemente dal numero di bit di Windows, se hai installato AdGuard v7.16 per Windows, o successive.
+1. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard for Windows v7.16 or later.
 
 Se possiedi una versione precedente di AdGuard per Windows, esegui l'applicazione con il comando C:\"Program Files (x86)"\Adguard\Adguard.exe /trace se stai utilizzando Windows a 64-bit, e "Program Files"\Adguard\Adguard.exe /trace se stai utilizzando Windows a 32-bit.
 

@@ -35,7 +35,7 @@ sidebar_position: 1
 
 ## 低级设置
 
-有关 Android 版 AdGuard v4.3 及更高版本中可用的低级设置描述。
+Descriptions of the low-level settings available in AdGuard for Android v4.3 and later.
 
 [低级设置指南](/adguard-for-android/features/low-level-settings.md)
 

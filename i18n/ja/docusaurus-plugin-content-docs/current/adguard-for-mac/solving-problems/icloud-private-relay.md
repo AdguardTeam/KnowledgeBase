@@ -25,15 +25,15 @@ AdGuard for Macvは、ネットワーク拡張APIに基づくmacOS内蔵のソ�
 
 Monterey では、iCloud プライベートリレーが登場しました。 「メール」アプリのプライバシー機能でもプライベートリレー サーバーが使用されます。
 
-その結果、AdGuard は iCloud プライベートリレーやメールアプリのプライバシー機能と連携できなくなっています。
+As a consequence, AdGuard can’t work together with iCloud Private Relay and the Mail app privacy features:
 
 1. iCloud プライベートリレーは、ライブラリレベル（AdGuard が動作するソケットレベルに到達する前）で接続に適用されます。
-2. iCloud プライベートリレーは QUIC を使用しますが、HTTP/3 フィルタリングはまだ利用できないため、AdGuard はフィルタリング対象アプリでQUICをフィルタリングできません。
-3. その結果、AdGuard は iCloud プライベートリレー トラフィックを含む QUIC をブロックしてしまいます。そうしないと、広告をブロックすることは不可能になるからです。
-4. iCloud プライベートリレーを使用し、AdGuard を「split-tunnel」モードに切り替えると、Safari で Web サイトを開くことができなくなります。
-5. Monterey でこの問題を回避するには、「デフォルトルート」ルールを適用しております。 プライベートリレーはそのルールを検出すると、自動的に無効になります。 つまり、AdGuard は Monterey 上でシームレスに動作しますが、その場合、iCloud プライベート リレーは無効になります。
+2. iCloud Private Relay is implemented with HTTP/3 CONNECT proxies.
+3. Since AdGuard does not filter CONNECT HTTP/3 requests yet, it attempts to downgrade HTTP/3 proxy connections to HTTP/1.1, which results in blocking iCloud Private Relay traffic.
+4. When you use iCloud Private Relay and switch AdGuard into the Split-Tunnel mode, you can’t open websites in Safari.
+5. To work around this issue for Monterey, we apply the “default route” rule. プライベートリレーはそのルールを検出すると、自動的に無効になります。 つまり、AdGuard は Monterey 上でシームレスに動作しますが、その場合、iCloud プライベート リレーは無効になります。
 
-`network.extension.monterey.force.split.tunnel` は「Big Sur」並みの動作を復元しますが、上記の (3) と (4) を理由 Web サイトへのアクセスが切断される可能性があります。 私たちはこの問題の解決策を探し続けています。 考えられるオプションのひとつは、HTTP/3フィルタリングの実装です。
+The `network.extension.monterey.force.split.tunnel` option restores the “Big Sur” behavior, but this option may break access to websites due to (3) and (4). 私たちはこの問題の解決策を探し続けています。 One of the options is implementing HTTP/3 proxy filtering.
 
 ## おすすめの解決策
 
