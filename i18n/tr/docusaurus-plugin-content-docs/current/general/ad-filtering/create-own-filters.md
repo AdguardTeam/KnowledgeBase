@@ -4023,7 +4023,7 @@ In most cases, the basis and cosmetic rules are enough to filter ads. But someti
 
 HTML filtering rules are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux, and AdGuard Browser Extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on network level.
 
-The syntax with an optional `value` in the attributes is supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with CoreLibs v1.18 or later. It is also supported by AdGuard Browser Extension v5.2 or later. For the other products and previous versions `value` must **always** be specified. Otherwise, the rule will be treated as incorrect and ignored.
+The syntax with an optional `value` in the attributes is supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with CoreLibs v1.18 or later. It is also supported by AdGuard Browser Extension v5.2 or later. For the other products and previous versions `value` must **always** be specified. Aksi takdirde, kural yanlış olarak değerlendirilir ve yok sayılır.
 
 :::
 
@@ -4073,7 +4073,7 @@ If the value of the attribute is omitted in the rule, then the element will be r
 example.org$$div[some_attribute]
 ```
 
-This rule removes all `div` elements with the attribute `some_attribute` on `example.org` and all its subdomains. So, the both `div` elements from the example above will be removed.
+This rule removes all `div` elements with the attribute `some_attribute` on `example.org` and all its subdomains. Yani yukarıdaki örnekteki `div` elemanlarının ikisi de kaldırılacaktır.
 
 ### Special attributes
 

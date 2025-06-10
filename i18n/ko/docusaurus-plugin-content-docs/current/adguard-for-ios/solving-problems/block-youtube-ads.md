@@ -17,18 +17,12 @@ sidebar_position: 4
 1. 동영상을 선택하고 *공유*를 누르세요.
 1. *더보기*를 누르고 *YouTube 광고 차단(AdGuard 제공)*을 선택하세요.
 
-이제 동영상은 AdGuard의 광고 없는 플레이어에서 열립니다.
+The video now opens in AdGuard’s ad-free player.
 
 ## Safari에서 YouTube 광고를 차단하는 방법
 
-:::tip
+1. Go to *Safari* → *Extensions* → *AdGuard*.
+1. Make sure *Allow Extension* is enabled. On the same screen, set the *All Websites* permission for AdGuard to *Allow*. ![Extension permissions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/extensions_allow.jpg)
+1. Open AdGuard, tap the shield icon, and enable *Advanced protection*.
 
-AdGuard에 모든 웹사이트에 대한 접근 권한을 부여했는지 확인하세요. Safari → 확장 프로그램 → AdGuard에서 확인할 수 있습니다. 그런 다음 AdGuard를 열고 *고급 보호*를 활성화하세요.
-
-:::
-
-1. Safari에서 youtube.com을 열기
-1. 동영상을 선택하고 *공유*를 누르세요.
-1. *YouTube 광고 차단(AdGuard 제공)*을 누르세세요.
-
-이제 동영상은 AdGuard의 광고 없는 플레이어에서 열립니다.
+You can now watch YouTube videos in Safari without ads.

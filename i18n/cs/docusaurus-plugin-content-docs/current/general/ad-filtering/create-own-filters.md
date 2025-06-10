@@ -4023,7 +4023,7 @@ Ve většině případů stačí k filtrování reklam základní a kosmetická 
 
 Pravidla filtrování HTML podporuje AdGuard pro Windows, AdGuard pro Mac, AdGuard pro Android, AdGuard pro Linux a rozšíření prohlížeče AdGuard pro Firefox. Taková pravidla v rozšířeních pro jiné prohlížeče nefungují, protože nemohou měnit obsah na úrovni sítě.
 
-The syntax with an optional `value` in the attributes is supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with CoreLibs v1.18 or later. It is also supported by AdGuard Browser Extension v5.2 or later. For the other products and previous versions `value` must **always** be specified. Otherwise, the rule will be treated as incorrect and ignored.
+Syntaxi s volitelnou hodnotou `value` v atributech podporuje AdGuard pro Windows, AdGuard pro Mac a AdGuard pro Android s knihovnou CoreLibs v1.18 nebo novější. Podporuje ji také rozšíření Rozšíření prohlížeče AdGuard v5.2 nebo novější. U ostatních produktů a předchozích verzí musí být **vždy** uvedena hodnota `value`. V opačném případě bude pravidlo považováno za nesprávné a bude ignorováno.
 
 :::
 
@@ -4041,28 +4041,28 @@ pseudoClasses = pseudoClass *pseudoClass
 
 - **`tagName`** — název prvku s malými písmeny, např. `div` nebo `script`.
 - **`domains`** — omezení domény pro dané pravidlo. Stejné zásady jako v [syntaxi pravidel pro skrývání prvků](#cosmetic-elemhide-rules).
-- **`attributes`** — seznam atributů, které limitují výběr prvků. `name` — required, attribute name; `value` — optional (may not be specified), substring that is contained in attribute value.
+- **`attributes`** — seznam atributů, které limitují výběr prvků. `name` — povinný údaj, název atributu; `value` — nepovinný údaj (nemusí být uveden), podřetězec, který je obsažen v hodnotě atributu.
 - **`pseudoName`** — název pseudotřídy.
 - **`pseudoArgs`** — argumenty pseudotřídy typu funkce.
 - **`combinator`** — operátor, který funguje podobně jako podřízený kombinátor [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator): to znamená, že `selector` napravo od `combinator` bude odpovídat pouze prvku, jehož přímý původce odpovídá `selector` vlevo z `combinator`.
 
 ### Příklady
 
-**HTML code:**
+**Kód HTML:**
 
 ```html
 <script data-src="/banner.js"></script>
 ```
 
-**Rule:**
+**Pravidlo:**
 
 ```adblock
 example.org$$script[data-src="banner"]
 ```
 
-This rule removes all `script` elements with the attribute `data-src` containing the substring `banner`. The rule applies only to `example.org` and all its subdomains.
+Toto pravidlo odstraní všechny prvky `script` s atributem `data-src` obsahujícím podřetězec `banner`. Pravidlo platí pouze pro `example.org` a všechny její subdomény.
 
-If the value of the attribute is omitted in the rule, then the element will be removed if it contains the specified attribute, regardless of its value. This is also the way to remove the elements whose attributes don't have any value at all.
+Pokud je hodnota atributu v pravidle vynechána, bude prvek odstraněn, pokud obsahuje zadaný atribut bez ohledu na jeho hodnotu. Tímto způsobem lze také odstranit prvky, jejichž atributy nemají vůbec žádnou hodnotu.
 
 ```html
 <div some_attribute="some_value"></div>
@@ -4073,25 +4073,25 @@ If the value of the attribute is omitted in the rule, then the element will be r
 example.org$$div[some_attribute]
 ```
 
-This rule removes all `div` elements with the attribute `some_attribute` on `example.org` and all its subdomains. So, the both `div` elements from the example above will be removed.
+Toto pravidlo odstraní všechny prvky `div` s atributem `some_attribute` na `example.org` a všech jejích subdoménách. Oba prvky `div` z výše uvedeného příkladu budou odstraněny.
 
 ### Speciální atributy
 
-In addition to usual attributes, which value is every element checked for, there is a set of special attributes that change the way a rule works. Below there is a list of these attributes:
+Kromě obvyklých atributů, jejichž hodnotu kontroluje každý prvek, existuje sada speciálních atributů, které mění způsob fungování pravidla. Níže je uveden seznam těchto atributů:
 
 #### `tag-content`
 
 :::caution Upozornění na vyřazení
 
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
+Tento speciální atribut může být v budoucnu nepodporován. Raději použijte pseudo-třídu `:contains()`, pokud je k dispozici.
 
 :::
 
-This is the most frequently used special attribute. It limits selection with those elements whose innerHTML code contains the specified substring.
+Jedná se o nejčastěji používaný speciální atribut. Omezí výběr na ty prvky, jejichž kód innerHTML obsahuje zadaný podřetězec.
 
-You must use `""` to escape `"`, for instance: `$$script[tag-content="alert(""this is ad"")"]`
+Musíte použít `""` k uvození `"`>, např.: `$$script[tag-content="alert(""this is ad"")"]`
 
-For example, take a look at this HTML code:
+Podívejte se například na tento HTML kód:
 
 ```html
 <script type="text/javascript">
@@ -4099,7 +4099,7 @@ For example, take a look at this HTML code:
 </script>
 ```
 
-Following rule will delete all `script` elements with a `banner` substring in their code:
+Následující pravidlo smaže všechny prvky `script` s podřetězcem `banner` v jejich kódu:
 
 ```adblock
 $$script[tag-content="banner"]
@@ -4107,7 +4107,7 @@ $$script[tag-content="banner"]
 
 :::caution Omezení
 
-The `tag-content` special attribute must not appear in a selector to the left of a `>` combinator.
+Speciální atribut `tag-content` se nesmí objevit v selektoru nalevo od kombinátoru `>`.
 
 :::
 
@@ -4115,21 +4115,21 @@ The `tag-content` special attribute must not appear in a selector to the left of
 
 :::caution Upozornění na vyřazení
 
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
+Tento speciální atribut může být v budoucnu nepodporován. Raději použijte pseudo-třídu `:contains()`, pokud je k dispozici.
 
 :::
 
-This special attribute works almost like `tag-content` and allows you to check the innerHTML code of the document. Rule will check if HTML code of the element fits the [search pattern](https://en.wikipedia.org/wiki/Glob_(programming)).
+Tento speciální atribut funguje téměř jako `tag-content` a umožňuje kontrolovat kód dokumentu innerHTML. Pravidlo zkontroluje, zda kód HTML prvku odpovídá [vyhledávacímu vzoru](https://en.wikipedia.org/wiki/Glob_(programming)).
 
-You must use `""` to escape `"`, for instance: `$$script[wildcard=""banner""]`
+Musíte použít `""` k uvození `"`>, např.: `$$script[wildcard=""banner""]`
 
-For example: `$$script[wildcard="*banner*text*"]`
+Např.: `$$script[wildcard="*banner*text*"]`
 
-It checks if the element code contains the two consecutive substrings `banner` and `text`.
+Kontroluje, zda prvek code obsahuje dva po sobě jdoucí podřetězce `banner` a `text`.
 
 :::caution Omezení
 
-The `wildcard` special attribute must not appear in a selector to the left of a `>` combinator.
+Speciální atribut `wildcard` se nesmí objevit v selektoru nalevo od kombinátoru `>`.
 
 :::
 
@@ -4137,15 +4137,15 @@ The `wildcard` special attribute must not appear in a selector to the left of a 
 
 :::caution Upozornění na vyřazení
 
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
+Tento speciální atribut může být v budoucnu nepodporován. Raději použijte pseudotřídu `:contains()` s regulárním výrazem, pokud je k dispozici.
 
 :::
 
-Specifies the maximum length for content of HTML element. If this parameter is set and the content length exceeds the value, a rule does not apply to the element.
+Určuje maximální délku obsahu prvku HTML. Pokud je tento parametr nastaven a délka obsahu přesahuje tuto hodnotu, pravidlo se na prvek nevztahuje.
 
-**Default value**
+**Výchozí hodnota**
 
-If this parameter is not specified, the `max-length` is considered to be 8192.
+Pokud tento parametr není zadán, považuje se `max-lenght` za 8192.
 
 Např:
 
@@ -4153,11 +4153,11 @@ Např:
 $$div[tag-content="banner"][max-length="400"]
 ```
 
-This rule will remove all the `div` elements, whose code contains the substring `banner` and the length of which does not exceed `400` characters.
+Toto pravidlo odstraní všechny prvky `div`, jejichž kód obsahuje podřetězec `banner` a jejichž délka nepřesahuje `400` znaků.
 
 :::caution Omezení
 
-The `max-length` special attribute must not appear in a selector to the left of a `>` combinator.
+Speciální atribut `max-length` se nesmí objevit v selektoru nalevo od kombinátoru `>`.
 
 :::
 
@@ -4165,11 +4165,11 @@ The `max-length` special attribute must not appear in a selector to the left of 
 
 :::caution Upozornění na vyřazení
 
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
+Tento speciální atribut může být v budoucnu nepodporován. Raději použijte pseudotřídu `:contains()` s regulárním výrazem, pokud je k dispozici.
 
 :::
 
-Specifies the minimum length for content of HTML element. If this parameter is set and the content length is less than preset value, a rule does not apply to the element.
+Určuje minimální délku obsahu prvku HTML. Pokud je tento parametr nastaven a délka obsahu je menší než nastavená hodnota, pravidlo se na prvek nevztahuje.
 
 Např:
 
@@ -4177,11 +4177,11 @@ Např:
 $$div[tag-content="banner"][min-length="400"]
 ```
 
-This rule will remove all the `div` elements, whose code contains the substring `banner` and the length of which exceeds `400` characters.
+Toto pravidlo odstraní všechny prvky `div`, jejichž kód obsahuje podřetězec `banner` a jejichž délka přesahuje `400` znaků.
 
 :::caution Omezení
 
-The `min-length` special attribute must not appear in a selector to the left of a `>` combinator.
+Speciální atribut `min-length` se nesmí objevit v selektoru nalevo od kombinátoru `>`.
 
 :::
 
@@ -4201,29 +4201,29 @@ nebo
 :contains(/reg(ular )?ex(pression)?/)
 ```
 
-:::note Compatibility
+:::note Kompatibilita
 
-`:-abp-contains()` and `:has-text()` are synonyms for `:contains()`.
+`:-abp-contains()` a `:has-text()` jsou synonyma pro `:contains()`.
 
 :::
 
 :::info Kompatibilita
 
-The `:contains()` pseudo-class is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.13 or later.
+Pseudotřída `:contains()` je podporována aplikacemi AdGuard pro Windows, AdGuard pro Mac, AdGuard pro Android a AdGuard pro Linux s [knihovnou CoreLibs][] v1.13 nebo novější.
 
 :::
 
-Requires that the inner HTML of the element contains the specified text or matches the specified regular expression.
+Vyžaduje, aby vnitřní HTML prvku obsahovalo zadaný text nebo odpovídalo zadanému regulárnímu výrazu.
 
 :::caution Omezení
 
-A `:contains()` pseudo-class must not appear in a selector to the left of a `>` combinator.
+Pseudotřída `:contains()` se nesmí objevit v selektoru nalevo od kombinátoru `>`.
 
 :::
 
 ### Výjimky
 
-Similar to hiding rules, there is a special type of rules that disable the selected HTML filtering rule for particular domains. The syntax is the same, you just have to change `$$` to `$@$`.
+Podobně jako u pravidel skrývání existuje speciální typ pravidel, který zakáže vybrané pravidlo filtrování HTML pro určité domény. Syntaxe je stejná, jen je třeba změnit `$$` na `$@$`.
 
 Ve filtru je např. pravidlo:
 
@@ -4247,9 +4247,9 @@ Tento druh výjimek doporučujeme používat pouze v případě, že není možn
 
 ## Pravidla JavaScript {#javascript-rules}
 
-AdGuard supports a special type of rules that allows you to inject any JavaScript code to websites pages.
+AdGuard podporuje speciální typ pravidel, která umožňují vložit na webové stránky libovolný kód JavaScript.
 
-We **strongly recommend** using [scriptlets](#scriptlets) instead of JavaScript rules whenever possible. JS rules are supposed to help with debugging, but as a long-time solution a scriptlet rule should be used.
+**Důrazně doporučujeme** používat [skriptlety](#scriptlets) namísto pravidel JavaScript, kdykoli je to možné. Pravidla JS mají pomoci s laděním, ale jako dlouhodobé řešení by se mělo používat pravidlo skriptlet.
 
 **Syntaxe**
 
@@ -4266,7 +4266,7 @@ rule = [domains] "#%#" script
 
 **Výjimky**
 
-Similar to hiding rules, there is a special type of rules that disable the selected JavaScript rule for particular domains. The syntax is the same, you just have to change `#%#` to `#@%#`.
+Podobně jako u pravidel skrývání existuje speciální typ pravidel, který zakáže vybrané pravidlo JavaScript pro určité domény. Syntaxe je stejná, jen je třeba změnit `#%#` na `#@%#`.
 
 Ve filtru je např. pravidlo:
 
@@ -4290,27 +4290,27 @@ Tento druh výjimek doporučujeme používat pouze v případě, že není možn
 
 :::caution Omezení
 
-JavaScript rules can only be used [**in trusted filters**](#trusted-filters).
+Typ pravidel JavaScript lze použít pouze [**v důvěryhodných filtrech**](#trusted-filters).
 
 :::
 
 :::info Kompatibilita
 
-JavaScript rules are not supported by AdGuard Content Blocker.
+Pravidla JavaScript nejsou Blokátorem obsahu AdGuard podporována.
 
 :::
 
 ## Pravidla skriptlet {#scriptlets}
 
-Scriptlet is a JavaScript function that provides extended capabilities for content blocking. These functions can be used in a declarative manner in AdGuard filtering rules.
+Skriptlet je funkce JavaScript, která poskytuje rozšířené možnosti pro blokování obsahu. Tyto funkce lze v AdGuard pravidlech filtrování používat deklarativním způsobem.
 
 :::note
 
-AdGuard supports a lot of different scriptlets. In order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
+AdGuard podporuje mnoho různých skriptletů. Abychom dosáhli kompatibility mezi blokátory, podporujeme také syntaxi uBO a ABP.
 
 :::
 
-**Blocking rules syntax**
+**Syntaxe pravidel blokování**
 
 ```text
 [domains]#%#//scriptlet(name[, arguments])
@@ -4334,9 +4334,9 @@ AdGuard supports a lot of different scriptlets. In order to achieve cross-blocke
     example.org#%#//scriptlet('remove-class', 'branding', 'div[class^="inner"]')
     ```
 
-**Exception rules syntax**
+**Syntaxe pravidel pro výjimky**
 
-Exception rules can disable some scriptlets on particular domains. The syntax for exception scriptlet rules is similar to normal scriptlet rules but uses `#@%#` instead of `#%#`:
+Pravidla výjimek mohou zakázat některé skriptlety v určitých doménách. Syntaxe pravidel skriptletů pro výjimky je podobná jako u běžných pravidel skriptletů, ale místo `#%#` se používá `#@%#`:
 
 ```text
 [domains]#@%#//scriptlet([name[, arguments]])
@@ -4385,49 +4385,49 @@ Exception rules can disable some scriptlets on particular domains. The syntax fo
     example.com#@%#//scriptlet()
     ```
 
-Learn more about [how to debug scriptlets](#debug-scriptlets).
+Další informace o [ladění skriptletů](#debug-scriptlets).
 
-More information about scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
+Další informace o skriptletech najdete [na GitHubu](https://github.com/AdguardTeam/Scriptlets#scriptlets).
 
 :::info Kompatibilita
 
-Scriptlet rules are not supported by AdGuard Content Blocker.
+Skriplety nejsou Blokátorem obsahu AdGuard podporovány.
 
-The full syntax of scriptlet exception rules is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.16 or later, and AdGuard Browser Extension for Chrome, Firefox, and Edge with [TSUrlFilter][] v3.0 or later. Previous versions only support exception rules that disable specific scriptlets.
+Úplná syntaxe pravidel pro výjimky skriptletů je podporována AdGuardem pro Windows, AdGuardem pro Mac, AdGuardem pro Android a AdGuardem pro Linux s [CoreLibs][] v1.16 nebo novějšími a rozšířením prohlížeče AdGuard pro Chrome, Firefox a Edge s [TSUrlFilter][] v3.0 nebo novějším. Předchozí verze podporují pouze pravidla výjimek, která zakazují konkrétní skriptlety.
 
 :::
 
 ### Důvěryhodné skriptlety {#trusted-scriptlets}
 
-Trusted scriptlets are [scriptlets](#scriptlets) with extended functionality. It means the same syntax and restrictions. Trusted scriptlet names are prefixed with `trusted-`, e.g. `trusted-set-cookie`, to be easily distinguished from common scriptlets.
+Důvěryhodné skriptlety jsou skriptlety [](#scriptlets) s rozšířenou funkčností. Znamená to stejnou syntaxi a omezení. Názvy důvěryhodných skriptletů mají předponu `trusted-`, např. `trusted-set-cookie`, aby je bylo možné snadno odlišit od běžných skriptletů.
 
 :::note
 
-Trusted scriptlets are not compatible with other ad blockers except AdGuard.
+Důvěryhodné skriptlety nejsou kompatibilní s jinými blokátory reklam kromě AdGuardu.
 
 :::
 
 :::caution Omezení
 
-Trusted scriptlets rules can only be used [**in trusted filters**](#trusted-filters).
+Důvěryhodné skriplety lze použít pouze [**v důvěryhodných filtrech**](#trusted-filters).
 
 :::
 
 :::info Kompatibilita
 
-Trusted scriptlets rules are not supported by AdGuard Content Blocker.
+Důvěryhodné skriplety nejsou Blokátorem obsahu AdGuard podporovány.
 
 :::
 
-Learn more about [how to debug scriptlets](#debug-scriptlets).
+Další informace o [ladění skriptletů](#debug-scriptlets).
 
-More information about trusted scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#trusted-scriptlets).
+Další informace o důvěryhodných skriptletech najdete na [GitHubu](https://github.com/AdguardTeam/Scriptlets#trusted-scriptlets).
 
 ## Modifikátory pro ostatní typ pravidel {#non-basic-rules-modifiers}
 
-Each rule can be modified using the modifiers described in the following paragraphs.
+Každé pravidlo lze upravit pomocí modifikátorů popsaných v následujících odstavcích.
 
-**Syntax** {#non-basic-rules-modifiers-syntax}
+**Syntaxe** {#non-basic-rules-modifiers-syntax}
 
 ```text
 rule = "[$" modifiers "]" [rule text]
@@ -4437,9 +4437,9 @@ modifiers = modifier0[, modifier1[, ...[, modifierN]]]
 - **`modifier`** — sada modifikátorů popsaných níže.
 - **`rule text`** — pravidlo, které je třeba změnit.
 
-For example, `[$domain=example.com,app=test_app]##selector`.
+Např.: `[$domain=example.com,app=test_app]##selector`.
 
-In the modifiers values, the following characters must be escaped: `[`, `]`, `,`, and `\` (unless it is used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like this: `\]`.
+V modifikátorech musí být uvozeny hodnoty následujících znaků: `[`, `]`, `,`a `\` (pokud se pro uvození nepoužívá). K uvození použijte `\`. Např. uvozená závorka vypadá takto: `\]`.
 
 | Modifikátor \ Produkty               | [Aplikace CoreLibs][cl-apps] |        [AdGuard pro Chromium][ext-chr]        |        [AdGuard pro Chrome MV3][ext-mv3]         |         [AdGuard pro Firefox][ext-ff]         | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
 | ------------------------------------- |:----------------------------:|:---------------------------------------------:|:------------------------------------------------:|:---------------------------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
@@ -4458,7 +4458,7 @@ In the modifiers values, the following characters must be escaped: `[`, `]`, `,`
 
 ### **`$app`** {#non-basic-app-modifier}
 
-`$app` modifier lets you narrow the rule coverage down to a specific application or a list of applications. The modifier's behavior and syntax perfectly match the corresponding [basic rules `$app` modifier](#app-modifier).
+Modifikátor `$app` umožňuje zúžit pokrytí pravidla na konkrétní aplikaci, nebo seznam aplikací. Chování a syntaxe modifikátoru dokonale odpovídají příslušným [základním pravidlům modifikátoru `$app`](#app-modifier).
 
 **Příklady**
 
@@ -4469,13 +4469,13 @@ In the modifiers values, the following characters must be escaped: `[`, `]`, `,`
 
 :::info Kompatibilita
 
-Such rules with `$app` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux.
+Taková pravidla s modifikátorem `$app` podporuje AdGuard pro Windows, Mac, Android a Linux.
 
 :::
 
 ### **`$domain`** {#non-basic-domain-modifier}
 
-`$domain` modifier limits the rule application area to a list of domains and their subdomains. The modifier's behavior and syntax perfectly match the corresponding [basic rules `$domain` modifier](#domain-modifier).
+Modifikátor `$domain` omezuje oblast použití pravidla na seznam domén a jejich subdomén. Chování a syntaxe modifikátoru dokonale odpovídají příslušným [základním pravidlům modifikátoru `$domain`](#domain-modifier).
 
 **Příklady**
 
@@ -4483,30 +4483,30 @@ Such rules with `$app` modifier are supported by AdGuard for Windows, AdGuard fo
 - `[$domain=example.com|example.org]###adblock` — skryje prvek s atributem `id`, který se rovná `adblock` na `example.com`, `example.org` a všech subdoménách.
 - `[$domain=~example.com]##.textad` — toto pravidlo skryje prvek `div` se třídou `textad` na všech doménách kromě `example.com` a jejích subdomén.
 
-There are 2 ways to specify domain restrictions for non-basic rules:
+Existují 2 způsoby, jak určit omezení domény pro ostatní pravidla:
 
 1. "klasický" způsob je zadat domény před masku pravidla a atributy: `example.com##.textad`;
 2. přístup modifikátoru spočívá v určení domén pomocí modifikátoru `$domain`: `[$domain=example.com]##.textad`.
 
-But rules with mixed style domains restriction are considered invalid. So, for example, the rule `[$domain=example.org]example.com##.textad` will be ignored.
+Pravidla s omezením domén smíšeného stylu jsou však považována za neplatná. Takže např. pravidlo `[$domain=example.org]example.com##.textad` bude zamítnuto.
 
 ### Nezákladní omezení modifikátoru `$domain` {#non-basic-domain-modifier-limitations}
 
 :::caution Omezení
 
-Since the non-basic `$domain` works the same as the basic one, it has the same [limitations](#domain-modifier-limitations).
+Vzhledem k tomu, že nezákladní modifikátor `$domain` funguje stejně jako základní, má stejná [omezení](#domain-modifier-limitations).
 
 :::
 
 :::info Kompatibilita
 
-Such rules with `$domain` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard Browser Extension for Chrome, Chrome MV3, Firefox, and Edge.
+Pravidla s modifikátorem `$domain` podporuje AdGuard pro Windows, AdGuard pro macOS, AdGuard pro Android, Rozšíření prohlížeče AdGuard pro Chrome, Chrome MV3, Firefox a Edge.
 
 :::
 
 ### **`$path`** {#non-basic-path-modifier}
 
-`$path` modifier limits the rule application area to specific locations or pages on websites.
+Modifikátor `$path` omezuje oblast použití pravidel na konkrétní umístění nebo stránky na webových stránkách.
 
 **Syntaxe**
 
@@ -4514,13 +4514,13 @@ Such rules with `$domain` modifier are supported by AdGuard for Windows, AdGuard
 $path ["=" pattern]
 ```
 
-`pattern` — optional, a path mask to which the rule is restricted. Its syntax and behavior are pretty much the same as with the [pattern for basic rules](#basic-rules-syntax). You can also use [special characters](#basic-rules-special-characters), except for `||`, which does not make any sense in this case (see examples below).
+`pattern` — volitelný, maska cesty, na kterou je pravidlo omezeno. Jeho syntaxe a chování jsou v podstatě stejné jako u [vzoru pro základní pravidla](#basic-rules-syntax). Můžete také použít [speciální znaky](#basic-rules-special-characters) s výjimkou `||`, což v tomto případě nemá smysl (viz příklady níže).
 
-If `pattern` is not set for `$path`, rule will apply only on the main page of website.
+Pokud není nastaven `pattern` pro `$path`, pravidlo bude platit pouze na hlavní stránce webu.
 
-`$path` modifier matches the query string as well.
+Modifikátor `$path` odpovídá i řetězci dotazu.
 
-`$path` modifier supports regular expressions in [the same way](#regexp-support) basic rules do.
+Modifikátor `$path` podporuje regulární výrazy [stejným způsobem](#regexp-support) jako základní pravidla.
 
 **Příklady**
 
@@ -4535,13 +4535,13 @@ If `pattern` is not set for `$path`, rule will apply only on the main page of we
 
 :::info Kompatibilita
 
-Rules with `$path` modifier are not supported by AdGuard Content Blocker.
+Pravidla s modifikátorem `$path` nejsou Blokátorem obsahu AdGuard podporována.
 
 :::
 
 ### **`$url`** {#non-basic-url-modifier}
 
-`$url` modifier limits the rule application area to URLs matching the specified mask.
+Modifikátor `$url` omezuje oblast použití pravidla na adresy URL odpovídající zadané masce.
 
 **Syntaxe**
 
@@ -4549,7 +4549,7 @@ Rules with `$path` modifier are not supported by AdGuard Content Blocker.
 url = pattern
 ```
 
-where `pattern` is pretty much the same as [`pattern` of the basic rules](#basic-rules-syntax) assuming that [some characters](#non-basic-rules-modifiers-syntax) must be escaped. The [special characters](#basic-rules-special-characters) and [regular expressions](#regexp-support) are supported as well.
+kde `pattern` je v podstatě stejný jako [`pattern` základních pravidel](#basic-rules-syntax) za předpokladu, že [některé znaky](#non-basic-rules-modifiers-syntax) musí být uvozeny. Podporovány jsou také [speciální znaky](#basic-rules-special-characters) a [regulární výrazy](#regexp-support).
 
 **Příklady**
 
@@ -4561,23 +4561,23 @@ where `pattern` is pretty much the same as [`pattern` of the basic rules](#basic
 
 :::caution Omezení
 
-In AdGuard Browser Extension, non-basic `$url` modifier is not compatible with domain-specific rules and other non-basic modifiers — [`$domain`](#non-basic-domain-modifier) and [`$path`](#non-basic-path-modifier). For example, the rule `[$url=/category/*]example.com###textad` will not be applied.
+V rozšíření prohlížeče AdGuard, nezákladní `$url` modifikátor není kompatibilní s pravidly specifickými pro doménu a dalšími nezákladními modifikátory — [`$domain`](#non-basic-domain-modifier) a [`$path`](#non-basic-path-modifier). Např. pravidlo `[$url=/category/*]example.com###textad` nebude použito.
 
 :::
 
 :::info Kompatibilita
 
-Rules with the `$url` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+Pravidla s modifikátorem `$url` jsou podporována AdGuardem pro Windows, AdGuardem pro Mac, AdGuardem pro Android a AdGuardem pro Linux s [CoreLibs][] v1.11 nebo novějším a rozšířením prohlížeče AdGuard s [TSUrlFilter][] v3.0.0 nebo novějším.
 
 :::
 
 ## Informace pro správce filtrů
 
-If you maintain a third-party filter that is known to AdGuard, you might be interested in the information presented in this section. Please note that hints will be applied to registered filters only. The filter is considered to be registered and known by AdGuard, if it is present in the [known filters index](https://filters.adtidy.org/extension/chromium/filters.json). If you want your filter to be registered, please file an issue to [AdguardFilters repo](https://github.com/AdguardTeam/AdguardFilters).
+Pokud spravujete filtr třetí strany, který je AdGuardu znám, mohly by vás zajímat informace uvedené v této části. Upozorňujeme, že nápovědy se použijí pouze na registrované filtry. Filtr je považován za registrovaný a známý pro AdGuard, pokud je přítomen v [indexu známých filtrů](https://filters.adtidy.org/extension/chromium/filters.json). Pokud chcete, aby byl váš filtr zaregistrován, odešlete žádost do [repozitáře AdguardFilters](https://github.com/AdguardTeam/AdguardFilters).
 
 ### Direktivy preprocesoru
 
-We provide preprocessor directives that can be used by filter maintainers to improve compatibility with different ad blockers and provide:
+Poskytujeme preprocesorové direktivy, které mohou být použity správci filtrů pro zlepšení kompatibility s různými blokátory reklam a poskytujeme:
 
 - [zahrnutý soubor](#include-directive)
 - [použití pravidel podmíněně podle typu blokátoru reklam](#conditions-directive)
@@ -4585,15 +4585,15 @@ We provide preprocessor directives that can be used by filter maintainers to imp
 
 :::note
 
-Any mistake in a preprocessor directive will lead to AdGuard failing the filter update in the same way as if the filter URL was unavailable.
+Jakákoli chyba v direktivě preprocesoru povede k tomu, že AdGuard selže při aktualizaci filtru stejným způsobem, jako kdyby adresa URL filtru byla nedostupná.
 
-Preprocessor directives can be used in the user rules or in the custom filters.
+Direktivy preprocesoru lze použít v uživatelských pravidlech nebo ve vlastních filtrech.
 
 :::
 
 #### Zahrnutý soubor {#include-directive}
 
-The `!#include` directive allows to include contents of a specified file into the filter. It supports only files from the same origin to make sure that the filter maintainer is in control of the specified file. The included file can also contain pre-directives (even other `!#include` directives). Ad blockers should consider the case of recursive `!#include` and implement a protection mechanism.
+Direktiva `!#include` umožňuje zahrnout do filtru obsah zadaného souboru. Podporuje pouze soubory ze stejného původu, aby bylo zajištěno, že správce filtru má kontrolu nad zadaným souborem. Zahrnutý soubor může také obsahovat pre-direktivy (i další `!#include` direktivy). Blokátory reklam by měly zvážit případ rekurzivního `!#include` a implementovat ochranný mechanismus.
 
 **Syntaxe**
 
@@ -4601,17 +4601,17 @@ The `!#include` directive allows to include contents of a specified file into th
 !#include file_path
 ```
 
-where `file_path` is a same origin absolute or relative file path to be included.
+kde `file_path` je absolutní nebo relativní cesta k souboru stejného původu, který má být zahrnut.
 
-The files must originate from the same domain, but may be located in a different folder.
+Soubory musí pocházet ze stejné domény, ale mohou být umístěny v jiné složce.
 
-If included file is not found or unavailable, the whole filter update should fail.
+Pokud obsažený soubor není nalezen nebo není k dispozici, celá aktualizace filtru by měla selhat.
 
-Same-origin limitation should be disabled for local custom filters.
+Omezení stejného původu by mělo být pro místní vlastní filtry zakázáno.
 
 **Příklady**
 
-Filter URL: `https://example.org/path/filter.txt`
+URL filtru: `https://example.org/path/filter.txt`
 
 ```adblock
 ! Valid (same origin):
@@ -4627,9 +4627,9 @@ Filter URL: `https://example.org/path/filter.txt`
 
 #### Podmínky {#conditions-directive}
 
-Filter maintainers can use conditions to supply different rules depending on the ad blocker type. A conditional directive beginning with an `!#if` directive must explicitly be terminated with an `!#endif` directive. Conditions support all basic logical operators.
+Správci filtrů mohou pomocí podmínek zadávat různá pravidla v závislosti na typu blokátoru reklam. Podmíněná direktiva začínající direktivou `!#if` musí být explicitně ukončena direktivou `!#endif`. Podmínky podporují všechny základní logické operátory.
 
-There are two possible scenarios:
+Existují dva možné scénáře:
 
 1. Pokud blokátor reklamy narazí na direktivu `!#if` a ne `!#else`, zkompiluje kód mezi direktivami `!#if` a `!#endif` pouze v případě, že je zadaná podmínka pravdivá.
 
@@ -4637,7 +4637,7 @@ There are two possible scenarios:
 
 :::note
 
-Whitespaces matter. `!#if` is a valid directive, while `!# if` is not.
+Na mezerách záleží. `!#if` je platná direktiva, zatímco `!# if` není.
 
 :::
 
@@ -4686,7 +4686,7 @@ kde:
 **Příklady**
 
 ```adblock
-! for all AdGuard products except AdGuard for Safari
+! pro všechny produkty AdGuardu kromě AdGuardu pro Safari
 !#if (adguard && !adguard_ext_safari)
 ||example.org^$third-party
 domain.com##div.ad
@@ -4694,7 +4694,7 @@ domain.com##div.ad
 ```
 
 ```adblock
-! directives even can be combined
+! direktivy lze dokonce kombinovat
 !#if (adguard_app_android)
 !#include /androidspecific.txt
 !#endif
@@ -4702,20 +4702,20 @@ domain.com##div.ad
 
 ```adblock
 !#if (adguard && !adguard_ext_safari)
-! for all AdGuard products except AdGuard for Safari
+! pro všechny produkty AdGuardu kromě AdGuardu pro Safari
 ||example.org^$third-party
 domain.com##div.ad
 !#else
-! for AdGuard for Safari only
-||subdomain.example.org^$third-party
+! pouze pro AdGuard pro Safari
+||subdomena.example.org^$third-party
 !#endif
 ```
 
 :::info Kompatibilita
 
-The `!#else` directive is supported by the [FiltersDownloader][gh-filters-downloader] v1.1.20 or later.
+Direktiva `!#else` je podporována nástrojem [FiltersDownloader][gh-filters-downloader] v1.1.20 nebo novějším.
 
-It is already supported for filter lists compiled by the [FiltersRegistry][], but it still may not be supported by AdGuard products when adding a filter list with `!#else` as a custom one. The following products will support it in the mentioned versions or later:
+Je již podporována pro seznamy filtrů sestavené pomocí [FiltersRegistry][], ale stále nemusí být podporována produkty AdGuardu při přidání seznamu filtrů s `!#else` jako vlastních. Následující produkty ji budou podporovat ve zmíněných nebo novějších verzích:
 
 - AdGuard pro Windows, Mac a Android s [CoreLibs][] v1.13;
 - Rozšíření prohlížeče AdGuard v4.2.208;
@@ -4725,9 +4725,9 @@ It is already supported for filter lists compiled by the [FiltersRegistry][], bu
 
 #### Afinita Safari {#safari-affinity-directive}
 
-Safari's limit for each content blocker is 150,000 active rules. But in AdGuard for Safari and AdGuard for iOS, we've split the rules into 6 content blockers, thus increasing the rule limit to 900,000.
+Limit Safari pro každý blokátor obsahu je 150000 aktivních pravidel. V aplikacích AdGuard pro Safari a AdGuard pro iOS jsme však pravidla rozdělili do 6 blokátorů obsahu, čímž jsme zvýšili limit pravidel na 900000.
 
-Here is the composition of each content blocker:
+Zde je složení jednotlivých blokátorů obsahu:
 
 - AdGuard General — Blokování reklam, jazykově specifické filtry
 - AdGuard Privacy — Soukromí
@@ -4736,11 +4736,11 @@ Here is the composition of each content blocker:
 - AdGuard Other — Jiné
 - AdGuard Custom — Vlastní
 
-User rules and allowlist are added to every content blocker.
+Uživatelská pravidla a Seznam povolených jsou přidány do každého blokátoru obsahu.
 
 :::caution
 
-The main disadvantage of using multiple content blockers is that rules from different blockers are applied independently. Blocking rules are not affected by this, but unblocking rules may cause problems. If a blocking rule is in one content blocker and an exception is in another, the exception will not work. Filter maintainers use `!#safari_cb_affinity` to define Safari content blocker affinity for the rules inside of the directive block.
+Hlavní nevýhodou používání více blokátorů obsahu je, že pravidla různých blokátorů se uplatňují nezávisle. Na pravidla blokování to nemá vliv, ale pro pravidla odblokování mohou způsobit problémy. Pokud je pravidlo blokování v jednom blokátoru obsahu a výjimka v jiném, výjimka nebude fungovat. Správci filtrů používají `!#safari_cb_affinity` k definování afinity blokátorů obsahu Safari pro pravidla uvnitř blokování direktiv.
 
 :::
 
@@ -4769,14 +4769,14 @@ kde:
 **Příklady**
 
 ```adblock
-! to unhide specific element which is hidden by AdGuard Base filter:
-!#safari_cb_affinity(general)
+! pro zobrazení konkrétního prvku, který je skryt základním filtrem AdGuardu:
+!#safari_cb_affinity(Obecné)
 example.org#@#.adBanner
 !#safari_cb_affinity
 ```
 
 ```adblock
-! to allowlist basic rule from AdGuard Tracking Protection filter:
+! pro seznam povolených základních pravidel z filtru AdGuard Tracking Protection:
 !#safari_cb_affinity(privacy)
 @@||example.org^
 !#safari_cb_affinity
@@ -4784,7 +4784,7 @@ example.org#@#.adBanner
 
 ### Nápovědy
 
-"Hint" is a special comment, instruction to the filters compiler used on the server side (see [FiltersRegistry][]).
+"Hint" je speciální komentář, instrukce pro kompilátor filtrů používaný na straně serveru (viz [FiltersRegistry][]).
 
 **Syntaxe**
 
@@ -4792,13 +4792,13 @@ example.org#@#.adBanner
 !+ HINT_NAME1(PARAMS) HINT_NAME2(PARAMS)
 ```
 
-Multiple hints can be applied.
+Lze použít více nápověd.
 
 #### Nápověda `NOT_OPTIMIZED`
 
-For each filter, AdGuard compiles two versions: full and optimized. Optimized version is much more lightweight and does not contain rules which are not used at all or used rarely.
+Pro každý filtr sestavuje AdGuard dvě verze: plnou a optimalizovanou. Optimalizovaná verze je mnohem jednodušší a neobsahuje pravidla, která se nepoužívají vůbec nebo jen zřídka.
 
-Rules usage frequency comes from the collected [filter rules statistics](../tracking-filter-statistics). But filters optimization is based on more than that — some filters have specific configuration. This is how it looks like for Base filter:
+Frekvence používání pravidel vychází ze shromážděných statistik [pravidel filtrování](../tracking-filter-statistics). Optimalizace filtrů je však založena na více než na tom — některé filtry mají specifickou konfiguraci. Takto to vypadá pro Základní filtr:
 
 ```text
 "filter": AdGuard Base filter,
@@ -4816,21 +4816,21 @@ kde:
 - **maxPercent** — horní mez hodnoty `percent` value
 - **strict** — pokud je `percent < minPercent` NEBO `percent > maxPercent` a je zapnutý přísný režim, pak by kompilace filtru měla selhat, jinak je nutné použít původní pravidla
 
-In other words, `percent` is the "compression level". For instance, for the Base filter it is configured to 40%. It means that optimization algorithm should strip 60% of rules.
+Jinými slovy, `percent` je "úroveň komprese". Například pro Základní filtr je nastavena na 40 %. To znamená, že optimalizační algoritmus by měl odstranit 60 % pravidel.
 
-Eventually, here are the two versions of the Base filter for AdGuard Browser Extension:
+Nakonec zde jsou dvě verze základního filtru pro Rozšíření prohlížeče AdGuard:
 
 - úplná: https://filters.adtidy.org/extension/chromium/filters/2.txt
 - optimalizovaná: https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt
 
-**If you want to add a rule which should not be removed at optimization use the `NOT_OPTIMIZED` hint:**
+**Pokud chcete přidat pravidlo, které by nemělo být při optimalizaci odstraněno, použijte nápovědu `NOT_OPTIMIZED`:**
 
 ```adblock
 !+ NOT_OPTIMIZED
 ||example.org^
 ```
 
-**And this rule will not be optimized only for AdGuard for Android:**
+**Toto pravidlo nebude optimalizováno pouze pro AdGuard pro Android:**
 
 ```adblock
 !+ NOT_OPTIMIZED PLATFORM(android)
@@ -4839,7 +4839,7 @@ Eventually, here are the two versions of the Base filter for AdGuard Browser Ext
 
 #### Nápověda `PLATFORM` a `NOT_PLATFORM`
 
-Used to specify the platforms to apply the rules. List of existing platforms and links to Base filter, for example, for each of them:
+Slouží k zadání platforem pro použití pravidel. Seznam existujících platforem a odkazy např. na Základní filtr:
 
 - `windows` — AdGuard pro Windows — [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
 
@@ -4869,14 +4869,14 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 **Příklady**
 
-This rule will be available only in AdGuard for Windows, Mac, Android:
+Toto pravidlo bude dostupné pouze v AdGuardu pro Windows, Mac a Android:
 
 ```adblock
 !+ PLATFORM(windows,mac,android)
 ||example.org^
 ```
 
-Except for AdGuard for Safari, AdGuard Content Blocker, and AdGuard for iOS, this rule is available on all platforms:
+S výjimkou AdGuardu pro Safari, Blokátoru obsahu AdGuard a AdGuardu pro iOS je toto pravidlo k dispozici na všech platformách:
 
 ```adblock
 !+ NOT_PLATFORM(ext_safari, ext_android_cb, ios)
@@ -4885,9 +4885,9 @@ Except for AdGuard for Safari, AdGuard Content Blocker, and AdGuard for iOS, thi
 
 #### `NOT_VALIDATE`
 
-This hint is used to skip validation of the rule. It is useful for rules for which support has not yet been added to the filters compiler, or for rules that are incorrectly discarded.
+Tato nápověda slouží k přeskočení validace pravidla. Je to užitečné pro pravidla, pro která dosud nebyla do překladače filtrů přidána podpora, nebo pro pravidla, která jsou nesprávně vyřazena.
 
-**If you want to add a rule that should not be validated, use the `NOT_VALIDATE` hint:**
+**Pokud chcete přidat pravidlo, které by nemělo být validováno, použijte nápovědu `NOT_VALIDATE`:**
 
 ```adblock
 !+ NOT_VALIDATE
@@ -4896,13 +4896,13 @@ This hint is used to skip validation of the rule. It is useful for rules for whi
 
 ## Jak ladit pravidla filtrování
 
-It may be possible to create simple filtering rules "in your head" but for anything even slightly more complicated you will need additional tools to debug and iterate them. There are tools to assist you with that. You can use DevTools in Chrome and its analogs in other browsers but most AdGuard products provide another one — Filtering log.
+Jednoduchá pravidla filtrování je možné vytvořit "v hlavě", ale pro cokoli alespoň trochu složitějšího budete potřebovat další nástroje pro jejich ladění a iteraci. Existují nástroje, které vám s tím pomohou. V prohlížeči Chrome a jeho analogiích v ostatních prohlížečích můžete použít nástroj DevTools, ale většina produktů AdGuardu nabízí ještě jeden — Záznam filtrování.
 
 ### Záznam filtrování
 
-Filtering log is an advanced tool that will be helpful mostly to filter developers. It lists all web requests that pass through AdGuard, gives you exhaustive information on each of them, offers multiple sorting options, and has other useful features.
+Záznam filtrování je pokročilý nástroj, který bude užitečný především pro vývojáře filtrů. Obsahuje seznam všech webových požadavků, které procházejí skrze AdGuard, poskytuje vyčerpávající informace o každém z nich, nabízí několik možností třídění a další užitečné funkce.
 
-Depending on which AdGuard product you are using, Filtering log can be located in different places.
+V závislosti na tom, který AdGuard produkt používáte, se protokol filtrování může nacházet na různých místech.
 
 - V **AdGuardu pro Windows** jej najdete na kartě *Blokátor reklam* nebo prostřednictvím nabídky na hlavním panelu
 - V **AdGuardu pro Mac** je pod *Nastavení → Pokročilé → Záznam filtrování*
@@ -4911,17 +4911,17 @@ Depending on which AdGuard product you are using, Filtering log can be located i
 
 :::note
 
-In **AdGuard for iOS** and **AdGuard for Safari**, Filtering log does not exist because of the way content blockers are implemented in Safari. AdGuard does not see the web requests and therefore cannot display them.
+V **AdGuardu pro iOS** a **AdGuardu pro Safari** Záznam filtrování neexistuje kvůli způsobu, jakým jsou v Safari implementovány blokátory obsahu. AdGuard tyto webové požadavky nevidí, a proto je nemůže zobrazit.
 
 :::
 
 ### Režim ladění selektorů {#selectors-debug-mode}
 
-Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with JavaScript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the debugging mode either for a single selector or for all selectors, depending on the `debug` value.
+Někdy můžete potřebovat zkontrolovat výkonnost daného selektoru nebo souboru stylů. Abyste to mohli provést bez přímé interakce s JavaScript, můžete použít speciální vlastnost stylu `debug`. Když `ExtendedCss` splňuje tuto vlastnost, povolí režim ladění buď pro jeden selektor, nebo pro všechny selektory v závislosti na hodnotě `debug`.
 
-Open the browser console while on a web page to see the timing statistics for selector(s) that were applied there. Debugging mode displays the following stats as object where each of the debugged selectors are keys, and value is an object with such properties:
+Otevřete konzolu prohlížeče na webové stránce a zobrazte statistiky časování pro selektor(y), které zde byly použity. Režim ladění zobrazí následující statistiky jako objekt, kde každý z laděných selektorů je klíč a hodnota je objekt s těmito vlastnostmi:
 
-**Always printed:**
+**Vždy vytištěno:**
 
 - `selectorParsed` — text parsovaného selektoru se může lišit od vstupního textu
 - `timings` — seznam uzlů DOM odpovídajících selektoru
@@ -4931,44 +4931,44 @@ Open the browser console while on a web page to see the timing statistics for se
     - `standardDeviation` — standardní odchylka
     - `timingsSum` — celkový čas potřebný k použití selektoru na stránce ve všech instancích
 
-**Printed only for remove pseudos:**
+**Vytištěno pouze pro odstranění pseudonymů:**
 
 - `removed` — příznak signalizující, zda byly prvky odstraněny
 
-**Printed if elements are not removed:**
+**Vytištěno, pokud prvky nejsou odstraněny:**
 
 - `matchedElements` — seznam uzlů DOM odpovídajících selektoru
 - `styleApplied` — parsovaná deklarace stylu pravidla související se selektorem
 
 **Příklady**
 
-**Debugging a single selector:**
+**Ladění jednoho selektoru:**
 
-When the value of the `debug` property is `true`, only information about this selector will be shown in the browser console.
+Pokud je hodnota vlastnosti `debug` `true`, zobrazí se v konzole prohlížeče pouze informace o tomto selektoru.
 
 ```adblock
 #$?#.banner { display: none; debug: true; }
 ```
 
-**Enabling global debug:**
+**Povolení globálního ladění:**
 
-When the value of the `debug` property is `global`, the console will display information about all extended CSS selectors that have matches on the current page, for all the rules from any of the enabled filters.
+Pokud je hodnota vlastnosti `debug` `global`, konzola zobrazí informace o všech rozšířených selektorech CSS, které mají na aktuální stránce shodu pro všechna pravidla z libovolného povoleného filtru.
 
 ```adblock
 #$?#.banner { display: none; debug: global; }
 ```
 
-**Testing extended selectors without AdGuard**
+**Testování rozšířených selektorů bez AdGuardu**
 
-ExtendedCss can be executed on any page without using any AdGuard product. In order to do that you should copy and execute the following code in a browser console:
+ExtendedCss lze spustit na libovolné stránce bez použití AdGuard produktu. Za tímto účelem byste měli zkopírovat a spustit následující kód v konzoli prohlížeče:
 
 ```js
 !function(e,t,d){C=e.createElement(t),C.src=d,C.onload=function(){alert("ExtendedCss loaded successfully")},s=e.getElementsByTagName(t)[0],s?s.parentNode.insertBefore(C,s):(h=e.getElementsByTagName("head")[0],h.appendChild(C))}(document,"script","https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js");
 ```
 
-Alternatively, install the [ExtendedCssDebugger userscript](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
+Případně nainstalujte [uživatelský skript ExtendedCssDebugger](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
 
-Now you can now use the `ExtendedCss` from global scope, and run its method [`query()`](https://github.com/AdguardTeam/ExtendedCss#extended-css-query) as `Document.querySelectorAll()`.
+Nyní můžete použít `ExtendedCss` z globálního rozsahu a spustit jeho metodu [`query()`](https://github.com/AdguardTeam/ExtendedCss#extended-css-query) jako `Document.querySelectorAll()`.
 
 **Příklady**
 
@@ -4981,9 +4981,9 @@ ExtendedCss.query(selector);
 
 ### Ladění skriptletů {#debug-scriptlets}
 
-If you are using AdGuard Browser Extension and want to debug a [scriptlet](#scriptlets) or a [trusted scriptlet](#trusted-scriptlets) rule, you can get additional information by opening the Filtering log. In that case, scriptlets will switch to debug mode and there will be more information in the browser console.
+Pokud používáte Rozšíření prohlížeče AdGuard a chcete vyladit pravidlo [skriptlet](#scriptlets) nebo [důvěryhodný skriptlet](#trusted-scriptlets), můžete získat další informace otevřením protokolu filtrování. V takovém případě se skriptlety přepnou do režimu ladění a v konzoli prohlížeče se zobrazí více informací.
 
-The following scriptlets are especially developed for debug purposes:
+Následující skriptlety jsou speciálně vyvinuty zejména pro účely ladění:
 
 - [`debug-current-inline-script`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-current-inline-script)
 - [`debug-on-property-read`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-on-property-read)
@@ -4993,7 +4993,7 @@ The following scriptlets are especially developed for debug purposes:
 - [`log-eval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-eval)
 - [`log`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log)
 
-The following scriptlets also may be used for debug purposes:
+Následující skriptlety lze také použít pro účely ladění:
 
 - [`json-prune`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#json-prune)
 - [`prevent-fetch`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-fetch)
