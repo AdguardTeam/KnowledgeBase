@@ -57,7 +57,7 @@ O AdGuard tem o compromisso de proteger sua privacidade. Seguimos rigorosamente 
 
 1. Abra o console (digite cmd no painel de início).
 
-1. Execute o aplicativo com o comando `C:\"Program Files"\Adguard\Adguard.exe /trace` independentemente da quantidade de bits do Windows, se você instalou o AdGuard v7.16 para Windows ou posterior.
+1. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard for Windows v7.16 or later.
 
 Se você tiver uma versão mais antiga do AdGuard para Windows, execute o aplicativo com o comando C:\"Arquivos de Programas (x86)"\Adguard\Adguard.exe /trace se estiver usando o Windows de 64 bits e C:\"Program Arquivos"\Adguard\Adguard.exe /trace se você estiver usando 32 bits.
 

@@ -35,7 +35,7 @@ Paramètres généraux, avancés et de bas niveau qui vous permettent de sélect
 
 ## Guide sur les paramètres de bas niveau
 
-Descriptions of the low-level settings available in AdGuard v4.3 for Android and later.
+Descriptions of the low-level settings available in AdGuard for Android v4.3 and later.
 
 [Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
 

@@ -329,7 +329,7 @@ AdGuard tiene la opción de cargar o crear tus propios userstyles. Esta es una c
 
 :::info Aplicaciones compatibles
 
-Actualmente, dos apps de AdGuard permiten crear y administrar userstyles: AdGuard para Windows (v7.19 o posterior) y AdGuard para macOS (v2.16 o posterior). También planeamos implementar esta nueva característica en AdGuard v4.8 para Android en un futuro cercano.
+Actualmente, dos apps de AdGuard permiten crear y administrar userstyles: AdGuard para Windows (v7.19 o posterior) y AdGuard para macOS (v2.16 o posterior). We also plan to implement this new feature in AdGuard for Android v4.8 in the nearest future.
 
 :::
 

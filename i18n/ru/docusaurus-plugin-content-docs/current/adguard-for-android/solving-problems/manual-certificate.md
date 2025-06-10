@@ -43,4 +43,4 @@ sidebar_position: 11
 1. Перезапустите AdGuard.
 2. Попробуйте ещё раз установить правильный сертификат (AdGuard Personal CA).
 
-If you still encounter a problem and can't install the certificate, please contact our support team at <support@adguard.com>.
+Если проблему не удаётся решить и вы по-прежнему не можете установить сертификат, напишите нашей команде поддержки по адресу <support@adguard.com>.

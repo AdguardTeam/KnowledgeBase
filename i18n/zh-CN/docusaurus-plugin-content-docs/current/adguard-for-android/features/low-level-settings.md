@@ -21,7 +21,7 @@ sidebar_position: 5
 
 ## 低级设置
 
-在 Android 版 AdGuard v4.x 版本中，我们重新设计了低级设置。 我们重新整理了设置列表，将它们按主题分组，并优化了设置描述。 我们还添加了输入验证和其他安全措施。
+For AdGuard for Android v4.x we’ve completely redesigned the low-level settings. 我们重新整理了设置列表，将它们按主题分组，并优化了设置描述。 我们还添加了输入验证和其他安全措施。
 
 ### DNS 保护功能
 
