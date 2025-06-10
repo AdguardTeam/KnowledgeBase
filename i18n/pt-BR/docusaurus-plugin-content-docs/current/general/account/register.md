@@ -21,7 +21,7 @@ Uma conta também pode ser criada diretamente em um dos aplicativos do AdGuard. 
 
 Depois que a conta for criada, ative-a seguindo o link no e-mail de ativação.
 
-:::tip
+:::dica
 
 Após registrar sua conta, você pode usar a opção de *Código único* para fazer login no aplicativo. Digite seu endereço de e-mail e escolha inserir sua senha ou o código enviado para seu endereço de e-mail.
 

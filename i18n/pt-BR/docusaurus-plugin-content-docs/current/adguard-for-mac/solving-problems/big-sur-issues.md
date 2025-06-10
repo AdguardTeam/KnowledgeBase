@@ -119,7 +119,7 @@ Em primeiro lugar, você precisa de um servidor funcional para o seu proxy. Prov
 }
 ```
 
-:::tip
+:::dica
 
 Mais informações sobre como começar podem ser encontradas no site [Shadowsocks](https://shadowsocks.org/guide/what-is-shadowsocks.html).
 

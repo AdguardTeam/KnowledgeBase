@@ -17,18 +17,12 @@ Este artículo trata sobre AdGuard para iOS, un bloqueador de anuncios multifunc
 1. Elige un vídeo y toca *Compartir*.
 1. Toca *Más*, luego selecciona *Bloquear anuncios de YouTube (por AdGuard)*.
 
-El vídeo ahora se abre en el reproductor sin anuncios de AdGuard.
+The video now opens in AdGuard’s ad-free player.
 
 ## Cómo bloquear anuncios en YouTube en Safari
 
-:::tip
+1. Go to *Safari* → *Extensions* → *AdGuard*.
+1. Make sure *Allow Extension* is enabled. On the same screen, set the *All Websites* permission for AdGuard to *Allow*. ![Extension permissions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/extensions_allow.jpg)
+1. Open AdGuard, tap the shield icon, and enable *Advanced protection*.
 
-Asegúrate de haber dado acceso a AdGuard a todos los sitios web. Puedes comprobarlo en Safari → Extensiones → AdGuard. A continuación, abre AdGuard y activa la *protección avanzada*.
-
-:::
-
-1. Abre youtube.com en Safari.
-1. Elige un vídeo y pulsa *Compartir*.
-1. Toca *Bloquear anuncios de YouTube (por AdGuard)*.
-
-El vídeo ahora se abre en el reproductor sin anuncios de AdGuard.
+You can now watch YouTube videos in Safari without ads.
