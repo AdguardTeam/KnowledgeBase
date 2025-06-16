@@ -49,6 +49,6 @@ Starting with Android 15, users will also see a warning notification after insta
 
 Despite these warnings, your traffic remains secure. Your connection to remote servers stays encrypted. What AdGuard does is simply verify the server’s certificate before deciding whether to filter the connection — similar to how a browser works.
 
-If you'd like to learn more about HTTPS filtering and how the certificate works, we explain everything in [this article](https://adguard.com/kb/general/https-filtering/what-is-https-filtering/). 
+If you'd like to learn more about HTTPS filtering and how the certificate works, we explain everything in [this article](/general/https-filtering/what-is-https-filtering.md). 
 
 If you still encounter a problem and can't install the certificate, please contact our support team at <support@adguard.com>.

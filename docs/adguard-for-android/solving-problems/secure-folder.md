@@ -17,7 +17,7 @@ If you install AdGuard to [the *Secure folder* on your Android](https://www.sams
 1. After the *Installation instructions* popup appears, **DO NOT** tap **Open Settings**.
 1. Minimize the app and go to the *Secure folder*.
 1. Tap the three-dot menu and go to **Settings** → **Other security settings**.
-1. Tap → **Install from device storage** → **CA certificate** → **Install anyway**
+1. Tap **Install from device storage** → **CA certificate** → **Install anyway**.
 1. Confirm installation with your graphic key/password/fingerprint.
 1. Find and select the previously saved certificate, then tap **Done**.
 1. Return to the AdGuard app and navigate back to the main screen.
