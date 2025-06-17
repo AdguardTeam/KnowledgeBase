@@ -15,9 +15,9 @@ Normally browsers trust the AdGuard certificate once it's added to the system ce
 
 Here are some common issues:
 
-* [*Potential Security Risk* error in Firefox-based browsers](#potential-security-risk-error-in-firefox-based-browsers)
-* [Yandex.Browser certificate warning](#yandexbrowser-certificate-warning)
-* [Non-official add-ons don’t update in Firefox-based browsers](#non-official-add-ons-dont-update-in-firefox-based-browsers)
+- [*Potential Security Risk* error in Firefox-based browsers](#potential-security-risk-error-in-firefox-based-browsers)
+- [Yandex.Browser certificate warning](#yandexbrowser-certificate-warning)
+- [Non-official add-ons don’t update in Firefox-based browsers](#non-official-add-ons-dont-update-in-firefox-based-browsers)
 
 ## *Potential Security Risk* error in Firefox-based browsers
 
