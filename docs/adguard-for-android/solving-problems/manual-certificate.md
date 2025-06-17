@@ -9,7 +9,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install its certificate into your device's user storage. On older versions of the Android OS this was done automatically, but on Android 11 and later users have to install it manually.
+To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install its certificate into your device’s user storage. On older versions of the Android OS this was done automatically, but on Android 11 and later users have to install it manually.
 
 ![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
 
@@ -17,10 +17,10 @@ Follow these steps to install the AdGuard certificate:
 
 1. Open the app. On the *Home* screen, tap *HTTPS filtering is off*.
 
-1. Then you'll be presented with three screens that explain:
+1. Then you’ll be presented with three screens that explain that:
     - HTTPS filtering is critical for ad blocking
     - AdGuard’s HTTPS filtering is safe
-    - AdGuard certificate
+    - Installing AdGuard’s certificate is necessary for its proper work
 
     Consecutively tap *Continue* → *Next* → *Save certificate*.
 
@@ -28,13 +28,13 @@ Follow these steps to install the AdGuard certificate:
 
 1. After saving, tap *Open Settings*.
 
-1. Open *Settings* and, in the search bar, type *CA Certificate*. Tap the respective option.
+1. Open *Settings* and type *CA Certificate* in the search bar. Tap the respective option.
 
 1. You might see a warning. If so, tap *Install anyway* and enter your PIN if necessary.
 
 1. Select the AdGuard certificate file. Its name should look like *adguard_1342_020322.crt*.
 
-You're all set! Once the certificate is installed successfully, you've enabled HTTPS filtering.
+You’re all set! Once the certificate is installed successfully, you’ve enabled HTTPS filtering.
 
 If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
 
@@ -43,12 +43,12 @@ If you experience issues during the manual certificate installation (for example
 
 ## Security warnings
 
-In earlier versions of Android, the quick settings panel displayed the message Network may be monitored.
+In earlier versions of Android, the quick settings panel displayed the message “Network may be monitored.”
 
-Starting with Android 15, users will also see a warning notification after installing a certificate and after each device restart: Certificate authorities installed by an unknown third party. This means the system has detected third-party certificates in the User certificate store. Tapping on the notification opens a window with more detailed information.
+Starting with Android 15, users will see a warning notification after installing a certificate and after restarting the device: “Certificate authorities installed by an unknown third party.” This means that the system has detected third-party certificates in the user certificate store. Tapping on the notification opens a window with more detailed information.
 
 Despite these warnings, your traffic remains secure. Your connection to remote servers stays encrypted. What AdGuard does is simply verify the server’s certificate before deciding whether to filter the connection — similar to how a browser works.
 
-If you'd like to learn more about HTTPS filtering and how the certificate works, we explain everything in [this article](/general/https-filtering/what-is-https-filtering.md).
+[Learn more about HTTPS filtering and how the certificate works](/general/https-filtering/what-is-https-filtering.md).
 
-If you still encounter a problem and can't install the certificate, please contact our support team at <support@adguard.com>.
+If you still encounter a problem and can’t install the certificate, please contact our support team at <support@adguard.com>.
