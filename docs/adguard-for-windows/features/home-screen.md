@@ -9,8 +9,18 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 :::
 
-AdGuard for Windows is an easy-to-use tool that blocks annoying banners, popups, video ads, and trackers. But that's not all: it helps you save traffic, load web pages faster, and protect your computer from undesirable and potentially malicious websites. AdGuard also protects you from phishing websites and keeps your kids away from inappropriate content.
+AdGuard for Windows is an easy-to-use tool that blocks annoying banners, pop-ups, video ads, and trackers. But that’s not all: it helps save bandwidth, load web pages faster, and protect your computer from undesirable and potentially malicious websites. AdGuard also shields you from phishing sites and keeps inappropriate content away from kids.
 
-![Main screen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/home-screen.png)
+![Home screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/homescreen_en.png)
 
-Once you start AdGuard for Windows, you will see the main screen of the app. Its most noticeable detail is the *enable/disable protection* button. Also, on this screen you can monitor blocked ads, trackers and threats statistics, find out the current version of the app or update it. Furthermore, there are four tabs in the upper right corner: *Settings*, *Support*, *License*, and *About*. Each of these is worth talking about separately.
+When you launch AdGuard for Windows, the main screen will appear.
+
+At the front, you’ll find icons for quickly turning on or off *Ad blocking*, *Tracking protection*, *Annoyance blocking*, *DNS protection*, *AdGuard VPN integration*, so you can easily manage these features without diving into the settings.
+
+If you want to access more advanced settings, you can use the icons on the left: *Protection*, *Statistics*, *App management*, *Settings* and *Updates*. Each section is covered in more detail in its own article:
+
+- Protection
+- Statistics
+- App management
+- Settings
+- Updates
