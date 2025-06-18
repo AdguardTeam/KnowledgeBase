@@ -17,7 +17,9 @@ When you launch AdGuard for Windows, the main screen will appear.
 
 At the front, you’ll find icons for quickly turning on or off *Ad blocking*, *Tracking protection*, *Annoyance blocking*, *DNS protection*, *AdGuard VPN integration*, so you can easily manage these features without diving into the settings.
 
-If you want to access more advanced settings, you can use the icons on the left: *Protection*, *Statistics*, *App management*, *Settings* and *Updates*. Each section is covered in more detail in its own article:
+To access more advanced settings, use the icons in the left menu: *Protection*, *Statistics*, *App management*, *Settings* and *Updates*. Click the arrow at the bottom to expand the menu or keep it hidden.
+
+Each section is covered in more detail in its own article:
 
 - Protection
 - Statistics
