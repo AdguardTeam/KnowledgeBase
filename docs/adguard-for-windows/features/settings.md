@@ -21,13 +21,13 @@ Here you can set the language and theme (Dark or Light), enable AdGuard launchin
 
 At the very bottom of the screen you will find *Advanced Settings*. Changing some of them mindlessly may potentially cause problems with AdGuard's performance, break the Internet connection or compromise your security and privacy. That's why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in *Advanced Settings* read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
 
-### Ad Blocking
+### Ad blocking
 
 This is the main module of AdGuard for Windows that removes ads from the websites you visit and from the apps installed on your device. To filter out advertising and privacy-threatening content such as banners, popups, or trackers AdGuard uses different filters — groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). To understand what filters are and how they work read [this article](/general/ad-filtering/how-ad-blocking-works).
 
-![Ad Blocking *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/ad_blocking.png)
+![Ad blocking *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/ad_blocking.png)
 
-In the Ad Blocking module you can:
+In the Ad blocking module you can:
 
 - enable automatic activation of language-specific filters,
 - disable [search ads and self-promotion](/general/ad-filtering/search-ads) blocking,
