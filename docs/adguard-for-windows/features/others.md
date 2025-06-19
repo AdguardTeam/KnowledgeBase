@@ -28,7 +28,7 @@ This tab contains information about your license. Here you can:
 
 ### About
 
-![About *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/updates.png)
+![About *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/about.png)
 
 In addition to information about the current version of the program, this tab provides some useful links to License agreement, Privacy policy, Acknowledgements, Discussions, and Version history pages.
 
