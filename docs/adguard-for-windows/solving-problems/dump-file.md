@@ -11,7 +11,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 :::note
 
-Data and files provided in dump files are processed in accordance with [the AdGuard Privacy policy](https://adguard.com/en/privacy.html).
+Data and files provided in dump files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
 
 :::
 
