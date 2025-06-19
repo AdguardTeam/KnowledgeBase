@@ -25,7 +25,7 @@ At the very bottom of the screen you will find *Advanced Settings*. Changing som
 
 This is the main module of AdGuard for Windows that removes ads from the websites you visit and from the apps installed on your device. To filter out advertising and privacy-threatening content such as banners, popups, or trackers AdGuard uses different filters — groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). To understand what filters are and how they work read [this article](/general/ad-filtering/how-ad-blocking-works).
 
-![Ad Blocking *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings/ad_blocking.png)
+![Ad Blocking *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/ad_blocking.png)
 
 In the Ad Blocking module you can:
 
@@ -60,7 +60,7 @@ In this module, you can:
 - activate sound notifications,
 - agree to submit anonymous security-related info to the AdGuard server to help us keep the malicious and phishing websites database up to date.
 
-![Browsing security *border](https://cdn.adtidy.org/content/kb/ad_blocker/settings/browsing_security.png)
+![Browsing security *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/browsing_security.png)
 
 In case you want to learn more about Browsing security, read [this article](/general/browsing-security).
 
