@@ -34,7 +34,7 @@ In addition to information about the current version of the program, this tab pr
 
 ### Check for updates
 
-![Check for updates *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![Check for updates *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/updates.png)
 
 To check for filters and userscripts updates, click the rotating arrows icon in the upper right corner of the app's main screen.
 
