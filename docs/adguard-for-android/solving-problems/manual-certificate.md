@@ -17,12 +17,7 @@ Follow these steps to install the AdGuard certificate:
 
 1. Open the app. On the *Home* screen, tap *HTTPS filtering is off*.
 
-1. Then you’ll be presented with three screens that explain that:
-    - HTTPS filtering is critical for ad blocking
-    - AdGuard’s HTTPS filtering is safe
-    - Installing AdGuard’s certificate is necessary for its proper work
-
-    Consecutively tap *Continue* → *Next* → *Save certificate*.
+1. Then you’ll be presented with the "AdGuard certificate" screen. Consecutively, tap *Continue* → *Next* → *Save certificate*.
 
 1. Tap *Save* at the bottom of the opened *Download* folder.
 
@@ -43,7 +38,7 @@ If you experience issues during the manual certificate installation (for example
 
 ## Security warnings
 
-In earlier versions of Android, the quick settings panel displayed the message “Network may be monitored.” Tapping it will open a window with detailed information. 
+In earlier versions of Android, the quick settings panel displayed the message “Network may be monitored.” Tapping it will open a window with detailed information.
 
 Starting with Android 15, in addition to “Network may be monitored”, users will see a warning notification after installing a certificate and after restarting the device: “Certificate authorities installed by an unknown third party.” This means that the system has detected third-party certificates in the user certificate store. Tapping the notification opens a list of certificates in the user certificate store.
 
