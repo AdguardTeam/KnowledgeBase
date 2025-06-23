@@ -5,40 +5,34 @@ sidebar_position: 8
 
 :::info
 
-本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
 :::note
 
-转储文件中提供的数据和/或文件将根据 [AdGuard 隐私政策](https://adguard.com/en/privacy.html) 处理。
+Data and files provided in dump files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
 
 :::
 
-要诊断用户在使用 AdGuard 期间可能遇到的潜在问题，支持团队需要进程 Dump 文件（转储文件）。 转储文件帮助开发者展现应用程序在某个周期内执行的进程。 用户可以按以下所述方式收集电脑上的转储文件。
+If you experience an issue while using AdGuard, the support team may ask you to provide a dump file. This file helps developers see what processes were running in the app at the time and identify the cause of the problem.
 
-1. 按按键组合「**Ctrl + Shift + Esc**」点击「**任务管理器**」
+Follow these steps to create a dump file:
 
-1. 在顶部的菜单内选择「**详细信息**」
+1. Press *Ctrl + Shift + Esc* to open *Task Manager*.
 
-    ![任务管理器详细信息](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/details_en.png)
+1. In the left sidebar, click *Details*. ![Task Manager details *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/task_manager_en.png)
+1. Right-click the process you want to create a dump file for. In the drop-down menu, click *Create memory dump file*. ![Create dump file *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/create_dump_en.png)
+1. Once the dump file is created, you’ll be prompted to open the folder where it’s saved. If not, you can find it in the **%tmp%** folder. ![Open file location *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/open_file_location_en.png)
 
-1. 右击您要为之创建转储文件的进程（如，支持团队可能会要求您为 `AdGuard.exe` 创建转储文件）
-
-1. 在下拉菜单内选择「**创建转储文件**」
-
-1. 转储文件创建成功！
-
-    ![创建转储文件](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/create_dump_file_en.png)
-
-创建转储文件后，请导航至文件所在。 转储文件创建完成后会提示用户打开其所在文件夹。 如没有，您可以在 **%tmp%** 文件夹内找到它。 创建的转储文件（`.DMP`）其名称与您在先前步骤所选的进程名称相同。 文件体积相当大，所以请在将其发送给我们的支持团队前先压缩它。
+The created dump file (`.DMP`) will have the same name as the process you selected.
 
 :::note
 
-Windows 版 AdGuard 有两个运行中的进程（`Adguard.exe` 和 `AdguardSvc.exe`）。 因此，有必要为每个进程创建一个单独的转储文件。
+AdGuard for Windows runs two processes: `Adguard.exe` and `AdguardSvc.exe`. You’ll need to create a separate dump file for each one.
 
 :::
 
-![AdGuard 进程](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
+![Two processes *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/two_processes_en.png)
 
-当您发送转储文件给我们的支持团队时，也请附上 AdGuard 程序日志以便我们更好的解决问题。 您可以[在此](../adguard-logs)检查收集日志文件的指示说明。
+Since dump files can be large, please compress them into an archive before sending them to support. Also, include the AdGuard logs to help us diagnose the issue more effectively. [Instructions for collecting logs](../adguard-logs).

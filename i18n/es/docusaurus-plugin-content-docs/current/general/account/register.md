@@ -21,7 +21,7 @@ También se puede crear una cuenta directamente en una aplicación AdGuard. Puls
 
 Una vez creada la cuenta, actívala siguiendo el enlace en el correo de activación.
 
-:::tip
+:::consejo
 
 Después de haber registrado tu cuenta, puedes usar la opción de *código único* para iniciar sesión en la app. Ingresa tu dirección de correo electrónico y elige ingresar tu contraseña o el código enviado a tu dirección de correo electrónico.
 

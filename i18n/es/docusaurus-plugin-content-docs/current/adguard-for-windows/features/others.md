@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. Para ver cómo funciona, [descarga la app de AdGuard](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
@@ -13,13 +13,13 @@ Hay otras opciones útiles de AdGuard que no deberían pasar desapercibidas en e
 
 ### Asistencia técnica
 
-![Soporte \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
+![Support \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/support.png)
 
-Al hacer clic en la pestaña Soporte, abrirá un cuadro de diálogo a través del cual podrás informar un error, enviar una solicitud de función o simplemente compartir tu opinión sobre el producto.
+By clicking the _Support_ tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
 
 ### Licencia
 
-![Licencia \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![License \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/license.png)
 
 Esta pestaña contiene información sobre tu licencia. Aquí puedes:
 
@@ -28,13 +28,13 @@ Esta pestaña contiene información sobre tu licencia. Aquí puedes:
 
 ### Acerca de
 
-![Acerca de \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![About \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/about.png)
 
-Además de información sobre la versión actual del programa, esta pestaña proporciona algunos enlaces útiles a las páginas del acuerdo de licencia, la política de privacidad, los agradecimientos, los debates y el historial de versiones.
+In addition to information about the current version of the program, this tab provides some useful links to License agreement, Privacy policy, Acknowledgements, Discussions, and Version history pages.
 
 ### Buscar actualizaciones
 
-![Buscar actualizaciones \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![Check for updates \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/updates.png)
 
 Para buscar filtros y actualizaciones de scripts de usuario, haz clic en el ícono de flechas giratorias en la esquina superior derecha de la pantalla principal de la aplicación.
 

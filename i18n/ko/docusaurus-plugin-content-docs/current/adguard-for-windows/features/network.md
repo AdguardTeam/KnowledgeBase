@@ -11,7 +11,7 @@ sidebar_position: 4
 
 네트워크\* 모듈은 네트워크 필터링 전용 모듈로, 여기에서 네트워크 관련 추가 옵션을 찾을 수 있습니다. 이 중 두 가지(**트래픽 필터링 활성화** 및 **HTTPS 프로토콜 필터링**)는 기본적으로 활성화되어 있습니다. 이는 웹 공간을 더 잘 필터링하기 위한 중요한 추가 예방 조치입니다. 대부분의 웹 사이트와 광고 네트워크는 현재 HTTPS를 사용하고 있습니다. youtube.com, facebook.com, x.com과 같은 많은 웹사이트에서 HTTPS 필터링 없이는 광고를 제거하는 것이 불가능합니다. 따라서 **HTTPS 프로토콜 필터링** 기능을 사용하도록 설정하는 것이 좋습니다.
 
-![네트워크 설정 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
+![Network Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/network/network_settings.png)
 
 이 모듈에서 **AdGuard를 HTTP 프록시로 사용** 확인란을 선택하면 AdGuard를 통과하는 모든 트래픽을 필터링하는 일반 HTTP 프록시로 사용할 수 있습니다. **EV 인증서가 있는 웹사이트를 필터링** 기능을 활성화할 수도 있습니다. EV(Extended Validation) SSL 인증서는 더 강력한 안전 보장을 제공하며, 해당 웹사이트 소유자는 EV 가이드라인에 정의된 철저하고 전 세계적으로 표준화된 신원 확인 프로세스를 통과해야 합니다. 그렇기 때문에 일부 사용자는 이러한 인증서가 있는 사이트를 신뢰하고 필터링하지 않기로 선택합니다.
 

@@ -5,40 +5,34 @@ sidebar_position: 8
 
 :::info
 
-Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multifuncțional care protejează dispozitivul dumneavoastră la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multifuncțional care protejează dispozitivul dumneavoastră la nivel de sistem. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
 :::note
 
-Datele și/sau fișierele furnizate în fișierele de dump sunt procesate în conformitate cu [Politica de confidențialitate AdGuard](https://adguard.com/en/privacy.html).
+Data and files provided in dump files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
 
 :::
 
-Pentru a diagnostica motivele pentru problemele potențiale pe care utilizatorii le-ar putea întâlni în timp ce folosesc AdGuard, echipa de asistență ar putea avea nevoie de fișierul de dump al procesului. Fișierul de dump ajută dezvoltatorii să vadă procesele care au fost executate în aplicație pe o anumită perioadă de timp. Mai jos puteți verifica instrucțiunile de colectare a fișierului de dump pe PC-ul dvs.
+If you experience an issue while using AdGuard, the support team may ask you to provide a dump file. This file helps developers see what processes were running in the app at the time and identify the cause of the problem.
 
-1. Press **Ctrl + Shift + Esc** and click **Task Manager**
+Follow these steps to create a dump file:
 
-1. În bara de meniu de sus, selectați **Detalii**
+1. Press *Ctrl + Shift + Esc* to open *Task Manager*.
 
-    ![Detalii despre Task Manager](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/details_en.png)
+1. In the left sidebar, click *Details*. ![Task Manager details *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/task_manager_en.png)
+1. Right-click the process you want to create a dump file for. In the drop-down menu, click *Create memory dump file*. ![Create dump file *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/create_dump_en.png)
+1. Once the dump file is created, you’ll be prompted to open the folder where it’s saved. If not, you can find it in the **%tmp%** folder. ![Open file location *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/open_file_location_en.png)
 
-1. Faceți clic dreapta pe procesul pentru care doriți să creați fișierul de dump (de exemplu, echipa de asistență vă poate cere să creați un dump pentru `Adguard.exe`)
-
-1. În meniul derulant, faceți clic pe **Creează fișier de dump**
-
-1. Fișierul a fost creat cu succes!
-
-    ![Creează fișier de dump](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/create_dump_file_en.png)
-
-După ce ați creat fișierul de dump, vă rugăm să navigați la locația fișierului. Ar trebui să fiți solicitat să deschideți folderul care conține fișierul de dump imediat după crearea sa. Altfel, veți putea să-l găsiți în folderul **%tmp%**. Fișierul de dump creat (`.DMP`) are același nume ca numele procesului pe care l-ați ales în pașii anteriori. Fișierul este destul de mare, așa că vă rugăm să-l comprimați într-o arhivă înainte de a-l trimite la suport.
+The created dump file (`.DMP`) will have the same name as the process you selected.
 
 :::note
 
-AdGuard pentru Windows are două procese în execuție, `Adguard.exe` și `AdguardSvc.exe`. Prin urmare, este necesar să creați un fișier de dump separat pentru fiecare proces.
+AdGuard for Windows runs two processes: `Adguard.exe` and `AdguardSvc.exe`. You’ll need to create a separate dump file for each one.
 
 :::
 
-![Procese AdGuard](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
+![Two processes *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/two_processes_en.png)
 
-Când trimiteți fișierele de dump echipei de asistență, vă rugăm să atașați și jurnalele aplicației AdGuard pentru a avea o șansă mai bună de a rezolva problema. [Aici](../adguard-logs) puteți verifica instrucțiunile despre cum să obțineți fișierul jurnal.
+Since dump files can be large, please compress them into an archive before sending them to support. Also, include the AdGuard logs to help us diagnose the issue more effectively. [Instructions for collecting logs](../adguard-logs).

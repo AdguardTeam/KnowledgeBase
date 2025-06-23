@@ -11,13 +11,13 @@ Acest articol se referă la AdGuard pentru Android, un blocant de reclame multif
 
 The _Protection_ tab includes the following features or settings. You’ll find a detailed article for each of them in this Knowledge Base.
 
-## Blocarea reclamelor
+## Ad blocking
 
 Settings to block ads in browsers and apps
 
 [Blocarea reclamelor](/adguard-for-android/features/protection/ad-blocking.md)
 
-## Protecție de urmărire
+## Tracking protection
 
 Settings that allow you to block tracking tools that collect user information
 

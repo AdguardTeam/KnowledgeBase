@@ -21,7 +21,7 @@ Installation, removal, and system requirements for AdGuard for Android
 
 [Installation](/adguard-for-android/installation.md)
 
-## Solving problems
+## Problémák megoldása
 
 Known issues and possible solutions
 

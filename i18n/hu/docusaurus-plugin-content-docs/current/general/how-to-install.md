@@ -17,4 +17,4 @@ Depending on which AdGuard app or browser extension you want to install, follow 
 
 [AdGuard for Safari](/adguard-for-safari/installation)
 
-[AdGuard Content Blocker](/adguard-content-blocker/installation)
+[AdGuard Tartalomblokkoló](/adguard-content-blocker/installation)
