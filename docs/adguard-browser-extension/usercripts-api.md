@@ -9,7 +9,7 @@ This article is about AdGuard Browser Extension, which safeguards only your brow
 
 :::
 
-When adding a custom flter or a user rule, you will encounter a notification message asking you to turn on the developer mode to use these features on the extension: 
+When adding a custom flter or a user rule, you will encounter a notification message asking you to turn on the developer mode to use these features on the extension:
 
 ![Notifcation *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/dev-mode-ext.png)
 
