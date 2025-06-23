@@ -11,13 +11,13 @@ sidebar_position: 1
 
 The _Protection_ tab includes the following features or settings. You’ll find a detailed article for each of them in this Knowledge Base.
 
-## 광고 차단
+## Ad blocking
 
 Settings to block ads in browsers and apps
 
 [광고 차단](/adguard-for-android/features/protection/ad-blocking.md)
 
-## 추적 보호
+## Tracking protection
 
 Settings that allow you to block tracking tools that collect user information
 

@@ -5,40 +5,34 @@ sidebar_position: 8
 
 :::info
 
-Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment cela fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
 :::note
 
-Les données et/ou les fichiers fournis dans les fichiers de vidage sont traités conformément à [la Politique de confidentialité d'AdGuard](https://adguard.com/en/privacy.html).
+Data and files provided in dump files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
 
 :::
 
-Pour diagnostiquer les raisons des problèmes potentiels que les utilisateurs pourraient rencontrer en utilisant AdGuard, l'équipe d'assistance pourrait avoir besoin du fichier de vidage du processus. Ce fichier de vidage aide les développeurs à voir les processus qui ont été exécutés dans l'application pendant une période donnée. Ci-dessous, vous pouvez consulter les instructions sur la façon de collecter le fichier de vidage sur votre PC.
+If you experience an issue while using AdGuard, the support team may ask you to provide a dump file. This file helps developers see what processes were running in the app at the time and identify the cause of the problem.
 
-1. Appuyez sur **Ctrl + Shift + Esc** et cliquez sur **Gestionnaire des tâches.**
+Follow these steps to create a dump file:
 
-1. Dans la barre de menu supérieure, sélectionnez **Détails**
+1. Press *Ctrl + Shift + Esc* to open *Task Manager*.
 
-    ![Détails du gestionnaire de tâches](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/details_en.png)
+1. In the left sidebar, click *Details*. ![Task Manager details *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/task_manager_en.png)
+1. Right-click the process you want to create a dump file for. In the drop-down menu, click *Create memory dump file*. ![Create dump file *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/create_dump_en.png)
+1. Once the dump file is created, you’ll be prompted to open the folder where it’s saved. If not, you can find it in the **%tmp%** folder. ![Open file location *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/open_file_location_en.png)
 
-1. Cliquez avec le bouton droit sur le processus pour lequel vous souhaitez créer le fichier de vidage (par exemple, l'équipe d'assistance peut vous demander de créer un vidage pour `Adguard.exe`)
-
-1. Dans le menu déroulant, cliquez sur **Créer un fichier de vidage**
-
-1. Le fichier a été créé !
-
-    ![Créer un fichier de vidage](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/create_dump_file_en.png)
-
-Après avoir créé le fichier de vidage, veuillez naviguer vers l'emplacement du fichier. Vous devriez être invité à ouvrir le dossier contenant le fichier de vidage juste après sa création. Sinon, vous pourrez le trouver dans le dossier **%tmp%**. Le fichier de vidage créé (`.DMP`) a le même nom que le nom du processus que vous avez choisi dans les étapes précédentes. Le fichier est assez volumineux, donc veuillez le compresser en une archive avant de l'envoyer à l'assistance.
+The created dump file (`.DMP`) will have the same name as the process you selected.
 
 :::note
 
-AdGuard pour Windows a deux processus en cours d'exécution, `Adguard.exe` et `AdguardSvc.exe`. Il est donc nécessaire de créer un fichier de vidage séparé pour chaque processus.
+AdGuard for Windows runs two processes: `Adguard.exe` and `AdguardSvc.exe`. You’ll need to create a separate dump file for each one.
 
 :::
 
-![Processus AdGuard](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
+![Two processes *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/two_processes_en.png)
 
-Lorsque vous envoyez les fichiers de vidage à l'équipe d'assistance, veuillez également joindre les journaux de l'application AdGuard afin que nous ayons une meilleure chance de résoudre le problème. [Ici](../adguard-logs), vous pouvez consulter les instructions sur comment obtenir le fichier des journaux.
+Since dump files can be large, please compress them into an archive before sending them to support. Also, include the AdGuard logs to help us diagnose the issue more effectively. [Instructions for collecting logs](../adguard-logs).

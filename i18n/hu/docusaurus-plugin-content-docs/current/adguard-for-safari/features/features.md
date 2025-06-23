@@ -3,7 +3,7 @@ title: Features
 sidebar_position: 1
 ---
 
-## General
+## Általános
 
 Basic features, including notifications, update intervals, and logging level
 
@@ -15,7 +15,7 @@ Different filters that allow you to customize ad blocking
 
 [Filters](/adguard-for-safari/features/filters.md)
 
-## Content Blockers
+## Tartalomblokkolók
 
 Six thematic content blockers that conform to Apple’s restrictions
 
@@ -27,7 +27,7 @@ Custom filtering rules to fine-tune ad blocking
 
 [User rules](/adguard-for-safari/features/rules.md)
 
-## About
+## Névjegy
 
 A section with links to privacy documents, GitHub repository, and version history
 

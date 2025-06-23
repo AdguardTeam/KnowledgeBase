@@ -21,7 +21,7 @@ A web extension that extends the functionality of AdGuard for iOS and allows you
 
 [Safari Web extension](/adguard-for-ios/web-extension.md)
 
-## Solving problems
+## Problémák megoldása
 
 Known issues and possible solutions
 

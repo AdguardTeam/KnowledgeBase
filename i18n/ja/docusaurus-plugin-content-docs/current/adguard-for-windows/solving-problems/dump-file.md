@@ -5,40 +5,34 @@ sidebar_position: 8
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際にどのように動作するかを確認するには、[AdGuard アプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
 :::note
 
-※ダンプファイルで提供されたデータおよびファイルは、[AdGuardのプライバシーポリシーに従って](https://adguard.com/en/privacy.html)処理されます。
+Data and files provided in dump files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
 
 :::
 
-AdGuardの使用中にユーザーが遭遇する可能性のある問題の原因を診断するために、サポートチームはプロセスのダンプファイルを必要とする場合があります。 ダンプファイルは、開発者が特定の期間内に、アプリで実行されたプロセスを確認するのに役立ちます。 以下では、パソコンでダンプファイルの収集方法について説明します。
+If you experience an issue while using AdGuard, the support team may ask you to provide a dump file. This file helps developers see what processes were running in the app at the time and identify the cause of the problem.
 
-1. **Ctrl + Shift + Esc** キーを押し、**タスクマネージャー**をクリックします。
+Follow these steps to create a dump file:
 
-1. 上部メニューバーで「**詳細**」を選択します。
+1. Press *Ctrl + Shift + Esc* to open *Task Manager*.
 
-    ![タスクマネージャーの詳細](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/details_en.png)
+1. In the left sidebar, click *Details*. ![Task Manager details *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/task_manager_en.png)
+1. Right-click the process you want to create a dump file for. In the drop-down menu, click *Create memory dump file*. ![Create dump file *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/create_dump_en.png)
+1. Once the dump file is created, you’ll be prompted to open the folder where it’s saved. If not, you can find it in the **%tmp%** folder. ![Open file location *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/open_file_location_en.png)
 
-1. ダンプファイル作成したいプロセスを右クリックします (たとえば、サポートチームから `Adguard.exe` のダンプを作成するように指示される場合があります)。
-
-1. ドロップダウンメニューで、 「**ダンプファイルの作成**」をクリックします。
-
-1. ダンプファイルの作成完了です。
-
-    ![ダンプファイルの作成](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/create_dump_file_en.png)
-
-ダンプファイルを作成したら、ファイルの場所に移動してください。 ダンプファイルを作成した直後に、そのファイルを含むフォルダを開くよう通知が表示されるはずです。 それ以外の場合は、 ファイルは **%tmp%** フォルダ内で見つけることができます。 作成されたダンプファイル（`.DMP`）は、前のステップで選択したプロセス名と同じ名前です。 ファイルはかなり大きいので、サポートに送る前にアーカイブに圧縮してください。
+The created dump file (`.DMP`) will have the same name as the process you selected.
 
 :::note
 
-AdGuard for Windows には、 `Adguard.exe` と `AdguardSvc.exe` の 2 つの実行プロセスがあります。 したがって、プロセスごとに個別のダンプファイルを作成する必要があります。
+AdGuard for Windows runs two processes: `Adguard.exe` and `AdguardSvc.exe`. You’ll need to create a separate dump file for each one.
 
 :::
 
-![AdGuardプロセス](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
+![Two processes *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/two_processes_en.png)
 
-ダンプファイルをサポートチームにお送りいただく際には、AdGuardアプリのログも添付してください。 ログファイルを取得する手順は[こちら](../adguard-logs)で確認できます。
+Since dump files can be large, please compress them into an archive before sending them to support. Also, include the AdGuard logs to help us diagnose the issue more effectively. [Instructions for collecting logs](../adguard-logs).

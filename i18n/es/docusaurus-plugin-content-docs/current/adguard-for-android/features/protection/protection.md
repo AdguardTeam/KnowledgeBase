@@ -11,13 +11,13 @@ Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multi
 
 La pestaña _Protección_ incluye las siguientes características o configuraciones. Encontrarás un artículo detallado para cada uno de ellos en nuestra Base de Conocimientos.
 
-## Bloqueo de anuncios
+## Ad blocking
 
 Configuración para bloquear anuncios en navegadores y apps
 
 [Bloqueo de anuncios](/adguard-for-android/features/protection/ad-blocking.md)
 
-## Protección de rastreo
+## Tracking protection
 
 Configuraciones que permiten bloquear herramientas de seguimiento que recopilan información del usuario
 

@@ -11,13 +11,13 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 Karta _Ochrana_ obsahuje následující funkce nebo nastavení. Podrobný článek ke každému z nich najdete v této databázi znalostí.
 
-## Blokování reklam
+## Ad blocking
 
 Nastavení blokování reklam v prohlížečích a aplikacích
 
 [Blokování reklam](/adguard-for-android/features/protection/ad-blocking.md)
 
-## Ochrana před sledováním
+## Tracking protection
 
 Nastavení umožňující blokovat sledovací prvky, které shromažďují informace o uživateli
 
