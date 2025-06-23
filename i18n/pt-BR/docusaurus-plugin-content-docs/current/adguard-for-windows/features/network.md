@@ -11,7 +11,7 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 O módulo _Rede_ é dedicado à filtragem de rede, e aqui você encontrará opções adicionais relacionadas à rede. Dois deles estão habilitados por padrão: _Habilitar filtragem de tráfego_ e _Filtrar HTTPS_. Estas são precauções extras importantes para filtrar melhor o seu espaço web. A maioria dos sites agora usa HTTPS, e o mesmo se aplica à publicidade. Em muitos sites, como youtube.com, facebook.com e x.com, é impossível excluir anúncios sem Filtragem HTTPS. Portanto, mantenha o recurso _Filtrar HTTPS_ ativado, a menos que você tenha um bom motivo para não fazê-lo.
 
-![Configurações de rede \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
+![Network Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/network/network_settings.png)
 
 Neste módulo você pode selecionar a caixa de verificação _Usar AdGuard como proxy HTTP_ para usar o AdGuard como um proxy HTTP regular que filtrará todo o tráfego que passa por ele. Você também pode ativar o recurso _Filtrar sites com certificados EV_. Os certificados SSL de validação estendida (EV) oferecem uma garantia de segurança mais forte; os proprietários de tais sites devem passar por um processo de verificação de identidade completo e padronizado globalmente, definido pelas diretrizes de EV. É por isso que alguns usuários confiam em sites com esses certificados e preferem não filtrá-los.
 

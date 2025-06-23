@@ -116,7 +116,7 @@ If this setting is enabled, AdGuard will log all filtered HTTP requests in HAR 1
 
 This setting may slow down your device. Use it for debugging purposes only.
 
-### HTTPS filtering
+### HTTPS szűrés
 
 #### Encrypted Client Hello
 
@@ -233,7 +233,7 @@ If this setting is enabled, AdGuard will exclude LAN connections from filtering 
 
 Here you can enter the IP address that will be used to create a TUN interface. The default value is `2001:db8:ad:0:ff::`.
 
-### Miscellaneous
+### Vegyes
 
 #### Show Developer tools on the main screen
 

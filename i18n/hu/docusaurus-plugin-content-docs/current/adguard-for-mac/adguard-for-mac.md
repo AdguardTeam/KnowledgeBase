@@ -21,7 +21,7 @@ Installation, removal, and system requirements for AdGuard for Mac
 
 [Installation](/adguard-for-mac/installation.md)
 
-### Solving problems
+### Problémák megoldása
 
 Known issues and possible solutions
 
