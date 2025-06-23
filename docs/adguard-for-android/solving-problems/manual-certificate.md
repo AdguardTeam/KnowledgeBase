@@ -17,7 +17,7 @@ Follow these steps to install the AdGuard certificate:
 
 1. Open the app. On the *Home* screen, tap *HTTPS filtering is off*.
 
-1. Then you’ll be presented with the "AdGuard certificate" screen. Consecutively, tap *Continue* → *Next* → *Save certificate*.
+1. Then you’ll be presented with the *AdGuard certificate* screen. Consecutively, tap *Continue* → *Next* → *Save certificate*.
 
 1. Tap *Save* at the bottom of the opened *Download* folder.
 
