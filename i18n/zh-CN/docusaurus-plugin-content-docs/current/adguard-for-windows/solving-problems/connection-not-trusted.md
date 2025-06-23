@@ -13,6 +13,12 @@ sidebar_position: 2
 
 通常，一旦 AdGuard 证书在安装过程期间添加到系统证书存储区，浏览器就会信任它。 但在某些情况下这还不够，您可能会看到警告或错误。 这经常发生在基于 Firefox 的浏览器（如 Mozilla Firefox，PaleMoon，Waterfox 等）或 Yandex.Browser 的身上。
 
+Here are some common issues:
+
+- [Firefox 的浏览器中的「*潜在的安全风险*」错误](#potential-security-risk-error-in-firefox-based-browsers)
+- [Yandex.Browser 证书警告](#yandexbrowser-certificate-warning)
+- [Non-official add-ons don’t update in Firefox-based browsers](#non-official-add-ons-dont-update-in-firefox-based-browsers)
+
 ## Firefox 的浏览器中的「*潜在的安全风险*」错误
 
 ![安全风险错误](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
@@ -77,3 +83,15 @@ AdGuard 和 Yandex 都非常重视用户在因特网上的安全。 Yandex 当�
 最简单的方式就是点击「**转到网站**」按钮。 这将告知 Yandex.Browser 记忆 AdGuard 证书为受信任的证书，至少在一段时间内如此。 通常，用户不会再看到此讯息，但无论出于何种原因，警告偶尔出现也并非不可能。 在此种情况下，只需再次点击相同的按钮 *（请确保它是 AdGuard 的证书！）*。
 
 在 AdGuard 内禁用 HTTPS 过滤也会阻止 Yandex.Browser 再次显示此信息，但其代价很大：所有通过 HTTPS 加载的广告（包括 **Yandex 的广告**）都会显示，如 YouTube，Facebook，Instagram 等等。 如您要保持较高的广告拦截质量，我们强烈建议您不要如此做。
+
+## Non-official add-ons don’t update in Firefox-based browsers
+
+If you use Firefox-based browsers and have add-ons that aren’t from Mozilla’s official catalog — and HTTPS filtering is enabled in AdGuard — those add-ons won’t be able to update. Here’s why.
+
+To update add-ons, Firefox checks whether the connection to the update server is secured with a certificate issued by a trusted certificate authority (CA). Firefox-based browsers only trust certificates from CAs included in Mozilla’s built-in list — it’s a security measure to block potentially unsafe updates.
+
+AdGuard’s certificate, although secure, isn’t on that list. That is why Mozilla domains are excluded from HTTPS filtering in AdGuard.
+
+However, non-official add-ons use third-party servers for updates, and those are not excluded from HTTPS filtering by default. So when Firefox checks the connection, it sees AdGuard’s certificate instead of the original one — and blocks the update.
+
+If you need to check for updates for such add-ons, consider temporarily disabling AdGuard.

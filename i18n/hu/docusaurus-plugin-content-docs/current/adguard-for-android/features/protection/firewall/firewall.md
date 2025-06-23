@@ -1,5 +1,5 @@
 ---
-title: Firewall
+title: Tűzfal
 sidebar_position: 1
 ---
 

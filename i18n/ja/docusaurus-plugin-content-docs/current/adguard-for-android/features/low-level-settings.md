@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-この記事は、システムレベルでデバイスを保護してくれる多機能広告ブロッカー、「AdGuard for Android」についてです。 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事は、システムレベルでデバイスを保護してくれる多機能広告ブロッカー、「AdGuard for Android」についてです。 実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 

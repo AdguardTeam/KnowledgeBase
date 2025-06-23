@@ -363,30 +363,30 @@ AdGuard 提供上传或创建自定义用户样式的选项。 这是一项高�
 
 3. 要创建用户样式，请先写下带有元数据的标题，例如：
 
- ```CSS
- /* ==UserStyle==
- @name New userstyle
- @version 1.0
- ==/UserStyle== */
- ```
+    ```CSS
+    /* ==UserStyle==
+    @name New userstyle
+    @version 1.0
+    ==/UserStyle== */
+    ```
 
 4. 在元数据之后编写 CSS 部分。 AdGuard 支持网站域名匹配 (`@-moz-document domain(…), …`)。 例如：
 
- ```CSS
- body {
-   background: gray;
-   }
- ```
+    ```CSS
+    body {
+      background: gray;
+      }
+    ```
 
- 或者：
+    或者：
 
- ```CSS
- @-moz-document domain('example.org'),
- domain('example.net'),
- domain('example.com') body {
-   background: gray;
-   }
- ```
+    ```CSS
+    @-moz-document domain('example.org'),
+    domain('example.net'),
+    domain('example.com') body {
+      background: gray;
+      }
+    ```
 
 5. 完成后，请按「_保存并关闭_」。 您的新用户样式已成功添加到 AdGuard。
 

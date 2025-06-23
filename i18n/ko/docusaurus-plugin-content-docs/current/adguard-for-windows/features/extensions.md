@@ -11,7 +11,7 @@ sidebar_position: 3
 
 AdGuard는 [유저스크립트 관리자](/general/extensions.md)로 작동하여 웹사이트 기능을 크게 확장할 수 있습니다. AdGuard 사용자는 자체 스크립트를 추가할 수 있을 뿐만 아니라 기존 스크립트를 관리할 수도 있습니다.
 
-![확장 프로그램 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![Extensions \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/extensions/extensions.png)
 
 **유저스크립트를 자동으로 감지**
 
@@ -19,7 +19,7 @@ AdGuard는 [유저스크립트 관리자](/general/extensions.md)로 작동하�
 
 AdGuard와 함께 설치되는 확장 프로그램은 다음과 같습니다.
 
-![사전 설치된 유저스크립트 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![Preinstalled userscripts \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/extensions/extensions_enabled.png)
 
 **AdGuard 어시스턴트**
 

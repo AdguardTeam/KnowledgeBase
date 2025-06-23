@@ -27,7 +27,7 @@ Extensions that add functionality to the Safari web browser
 
 [Safari extensions](/adguard-for-safari/extensions.md)
 
-## Solving problems
+## Problémák megoldása
 
 Known issues and possible solutions
 
