@@ -21,14 +21,8 @@ Video se nyní otevře v přehrávači AdGuard bez reklam.
 
 ## Jak blokovat reklamy YouTube v Safari
 
-:::tip
+1. Přejděte do *Safari* → *Rozšíření* → *AdGuard*.
+1. Ujistěte se, že je zapnuta možnost *Povolit rozšíření*. Na stejné obrazovce nastavte oprávnění *Všechny webové stránky* pro AdGuard na *Povolit*. ![Extension permissions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/extensions_allow.jpg)
+1. Otevřete AdGuard, klepněte na ikonu štítu a povolte *pokročilou ochranu*.
 
-Ujistěte se, že jste povolili AdGuardu přístup ke všem webovým stránkám. Můžete si to ověřit v Safari → Rozšíření → AdGuard. Poté otevřete AdGuard a povolte *Pokročilou ochranu*.
-
-:::
-
-1. Otevřete stránku youtube.com v Safari.
-1. Vyberte video a klepněte na *Sdílet*.
-1. Klepněte na *Blokovat reklamy YouTube (pomocí AdGuardu)*.
-
-Video se nyní otevře v přehrávači AdGuard bez reklam.
+Videa YouTube můžete nyní v Safari sledovat bez reklam.

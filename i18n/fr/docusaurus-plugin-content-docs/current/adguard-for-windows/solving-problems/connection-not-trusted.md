@@ -13,6 +13,12 @@ Pour pouvoir filtrer le trafic HTTPS et bloquer efficacement les publicités et 
 
 Normalement, les navigateurs font confiance au certificat AdGuard une fois qu'il est ajouté au stockage des certificats du système pendant le processus d'installation. Mais dans certains cas, cela n'est pas suffisant et vous pouvez rencontrer des avertissements ou des erreurs. Cela se produit le plus souvent dans les navigateurs basés sur Firefox comme Mozilla Firefox, PaleMoon, Waterfox, etc., ou dans Yandex.Browser.
 
+Here are some common issues:
+
+- [Erreur de *Risque de sécurité potentiel* dans les navigateurs basés sur Firefox](#potential-security-risk-error-in-firefox-based-browsers)
+- [Avertissement de certificat de Yandex.Browser](#yandexbrowser-certificate-warning)
+- [Non-official add-ons don’t update in Firefox-based browsers](#non-official-add-ons-dont-update-in-firefox-based-browsers)
+
 ## Erreur de *Risque de sécurité potentiel* dans les navigateurs basés sur Firefox
 
 ![Erreur de risque de sécurité](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
@@ -77,3 +83,15 @@ Cependant, AdGuard ajoute également son certificat à ceux de confiance. Cela m
 La manière la plus simple est de cliquer sur le bouton **Aller au site**. Cela indiquera à Yandex.Browser de se souvenir du certificat AdGuard en tant que certificat de confiance, au moins pour un certain temps. Normalement, vous ne devriez plus voir ce message, mais il n'est pas impossible qu'il apparaisse occasionnellement, pour quelque raison que ce soit. Dans de tels cas, appuyez simplement à nouveau sur le même bouton *(assurez-vous qu'il s'agit du certificat d'AdGuard !)*.
 
 Désactiver le filtrage HTTPS dans AdGuard empêchera également Yandex.Browser d'afficher ce message à nouveau, mais cela a un prix : toutes les publicités chargées par HTTPS (y compris les **publicités propres à Yandex**) s'afficheront — sur des sites Web tels que YouTube, Facebook, Instagram, et bien d'autres. Nous déconseillons fortement cela si vous souhaitez maintenir la qualité du blocage de publicité élevée.
+
+## Non-official add-ons don’t update in Firefox-based browsers
+
+If you use Firefox-based browsers and have add-ons that aren’t from Mozilla’s official catalog — and HTTPS filtering is enabled in AdGuard — those add-ons won’t be able to update. Here’s why.
+
+To update add-ons, Firefox checks whether the connection to the update server is secured with a certificate issued by a trusted certificate authority (CA). Firefox-based browsers only trust certificates from CAs included in Mozilla’s built-in list — it’s a security measure to block potentially unsafe updates.
+
+AdGuard’s certificate, although secure, isn’t on that list. That is why Mozilla domains are excluded from HTTPS filtering in AdGuard.
+
+However, non-official add-ons use third-party servers for updates, and those are not excluded from HTTPS filtering by default. So when Firefox checks the connection, it sees AdGuard’s certificate instead of the original one — and blocks the update.
+
+If you need to check for updates for such add-ons, consider temporarily disabling AdGuard.

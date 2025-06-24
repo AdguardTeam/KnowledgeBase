@@ -15,7 +15,7 @@ Main screen with statistics on blocked ads and trackers and access to main setti
 
 [Main window](/adguard-for-mac/features/main.md)
 
-## General
+## Általános
 
 Basic settings to block search ads and website self-promotional ads, enable language-specific filters, and manage _Allowlist_
 

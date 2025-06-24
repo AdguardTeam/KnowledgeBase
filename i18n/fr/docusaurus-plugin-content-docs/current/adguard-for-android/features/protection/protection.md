@@ -11,13 +11,13 @@ Cet article concerne AdGuard pour Android, un bloqueur de publicité multifoncti
 
 L'onglet _Protection_ inclut les fonctionnalités ou paramètres suivants. Vous trouverez un article détaillé pour chacun d'eux dans cette Base de connaissances.
 
-## Blocage des publicités
+## Ad blocking
 
 Paramètres pour bloquer les publicités dans les navigateurs et les applications
 
 [Blocage des publicités](/adguard-for-android/features/protection/ad-blocking.md)
 
-## Protection contre le suivi
+## Tracking protection
 
 Paramètres qui autorisent à bloquer les outils de suivi qui collectent les informations des utilisateurs
 

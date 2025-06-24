@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
@@ -13,13 +13,13 @@ Existují i další užitečné možnosti AdGuardu, které by v tomto článku n
 
 ### Podpora
 
-![Support \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
+![Support \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/support.png)
 
-Kliknutím na kartu Podpora otevřete dialogové okno, ve kterém můžete nahlásit chybu, odeslat požadavek na funkci nebo se jednoduše podělit o svůj názor na produkt.
+By clicking the _Support_ tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
 
 ### Licence
 
-![License \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![License \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/license.png)
 
 Tato karta obsahuje informace o vaší licenci. Zde můžete:
 
@@ -28,13 +28,13 @@ Tato karta obsahuje informace o vaší licenci. Zde můžete:
 
 ### Informace
 
-![About \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![About \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/about.png)
 
-Kromě informací o aktuální verzi programu jsou na této kartě k dispozici užitečné odkazy na Licenční smlouvu, Zásady ochrany osobních údajů, Poděkování, Diskuzi a Historii verzí.
+In addition to information about the current version of the program, this tab provides some useful links to License agreement, Privacy policy, Acknowledgements, Discussions, and Version history pages.
 
 ### Zkontrolovat aktualizace
 
-![Check for updates \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![Check for updates \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/updates.png)
 
 Chcete-li zkontrolovat aktualizace filtrů a uživatelských skriptů, klikněte na ikonu rotujících šipek v pravém horním rohu domovské stránky programu.
 

@@ -5,29 +5,29 @@ sidebar_position: 2
 
 :::info
 
-본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 이용하고자 한다면 [AdGuard 앱을 다운로드](https://agrd.io/download-kb-adblock)해 보세요.
+본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
 **설정**은 가장 중요한 섹션입니다. 여기에서 특정 항목 또는 사이트 차단, 신뢰할 수 있는 제공업체의 DNS 서버 사용, 타사 쿠키 삭제 등 요구사항에 따라 앱을 설정할 수 있습니다.
 
-![설정 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings.png)
+![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/general_settings.png)
 
 ### 일반 설정
 
 여기에서 언어와 테마(다크 테마 또는 라이트 테마)를 설정하고, 시스템 시작 시 AdGuard를 실행하고 자동 업데이트를 무음으로 설정할 수 있습니다. 업데이트 채널과 업데이트 확인 간격 필터를 선택할 수도 있습니다. 또한 Windows용 AdGuard가 제대로 작동하지 않아 지원팀에서 [**디버그 로그 수집**](/adguard-for-windows/solving-problems/adguard-logs.md)을 요청하는 경우 설정으로 이동합니다.
 
-![고급 설정 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
+![Advanced Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/advanced_settings.png)
 
-화면 맨 아래에는 **고급 설정**이 있습니다. 이 중 일부를 변경하면 AdGuard에 문제가 발생하거나 인터넷 연결이 중단되거나 보안 및 개인정보가 손상될 수 있습니다. 따라서 이 섹션은 자신이 무엇을 하고 있는지 확실하거나 지원팀에서 문의한 경우에만 여는 것이 좋습니다. **고급 설정**에서 설정할 수 있는 항목이 무엇인지 알고 싶으시면 [전용 문서](/adguard-for-windows/solving-problems/low-level-settings.md)를 참조하세요.
+화면 맨 아래에는 **고급 설정**이 있습니다. Changing some of them mindlessly may potentially cause problems with AdGuard’s performance, break the Internet connection or compromise your security and privacy. That’s why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in _Advanced Settings_, read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
 
-### 광고 차단기
+### Ad blocking
 
 광고 차단기는 사용자가 방문하는 웹사이트와 앱에서 광고를 제거하는 Windows용 AdGuard의 메인 모듈입니다. 배너, 팝업 또는 추적기와 같은 광고 및 개인정보를 위협하는 콘텐츠를 필터링하기 위해 AdGuard는 다양한 필터([특수 구문](/general/ad-filtering/create-own-filters)으로 작성된 유사한 목적을 가진 규칙 그룹)를 사용합니다. 필터가 무엇인지, 어떻게 작동하는지 이해하려면 [이글](/general/ad-filtering/how-ad-blocking-works)을 참조하세요.
 
-![광고 차단기 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
+![Ad blocking \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/ad_blocking.png)
 
-광고 차단기 모듈에서는 다음을 수행할 수 있습니다.
+In the Ad blocking module you can:
 
 - 언어별 필터를 자동으로 활성화할 수 있습니다.
 - [검색 광고 및 셀프 홍보](/general/ad-filtering/search-ads) 차단을 비활성화합니다.
@@ -40,11 +40,11 @@ sidebar_position: 2
 
 자신만의 규칙을 수동으로 작성하기 전에 자세한 [구문 가이드](/general/ad-filtering/create-own-filters)를 읽어보세요.
 
-### 스텔스 모드
+### Tracking protection
 
-많은 웹사이트는 IP 주소, 설치된 브라우저 및 운영 체제 정보, 화면 해상도, 심지어 사용자가 방문했거나 리디렉션된 페이지 등 방문자에 대한 정보를 수집합니다. 일부 웹페이지에서는 쿠키를 사용하여 브라우저를 표시하고 개인 설정, 사용자 환경설정을 저장하거나 다음 방문 시 사용자를 '인식'합니다. 스텔스 모드는 이러한 데이터 및 통계 수집 시스템으로부터 개인 정보를 보호합니다.
+많은 웹사이트는 IP 주소, 설치된 브라우저 및 운영 체제 정보, 화면 해상도, 심지어 사용자가 방문했거나 리디렉션된 페이지 등 방문자에 대한 정보를 수집합니다. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or “recognize” you upon your next visit. _Tracking protection_ safeguards your personal information from such data and statistics gathering systems.
 
-![스텔스 모드 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/stealth-mode.png)
+![Tracking protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection.png)
 
 스텔스 모드의 작업을 유연하게 조정할 수 있습니다. 예를 들어, 인터넷에서 웹사이트를 찾을 때 사용한 검색 요청을 해당 웹사이트가 수신하지 못하도록 하거나, 타사 쿠키와 웹사이트 자체 쿠키를 자동으로 삭제하거나, 내 위치를 추적하는 데 사용할 수 있는 브라우저의 위치 공유를 비활성화할 수 있습니다.
 
@@ -52,7 +52,7 @@ sidebar_position: 2
 
 ### 브라우징 보안
 
-브라우징 보안은 악성 및 피싱 웹사이트에 대한 강력한 보호 기능을 제공합니다. 아니요, Windows용 AdGuard는 바이러스 백신이 아닙니다. 바이러스가 이미 시작된 경우 다운로드를 중지하거나 이미 존재하는 바이러스를 삭제하지 않습니다. 하지만 '신뢰할 수 없는 사이트' 데이터베이스에 추가된 도메인이 있는 웹사이트로 이동하거나 해당 웹사이트에서 파일을 다운로드하려고 하면 경고 메시지가 표시됩니다. 이 모듈의 작동 방식에 대한 자세한 내용은 [이 글](/general/browsing-security)에서 확인할 수 있습니다.
+브라우징 보안은 악성 및 피싱 웹사이트에 대한 강력한 보호 기능을 제공합니다. 아니요, Windows용 AdGuard는 바이러스 백신이 아닙니다. It will neither stop the download of a virus when it’s already started, nor delete the already existing ones. But it will warn you if you’re about to proceed to a website whose domain has been added to our “untrusted sites” database, or to download a file from such website. 이 모듈의 작동 방식에 대한 자세한 내용은 [이 글](/general/browsing-security)에서 확인할 수 있습니다.
 
 이 모듈에서는 다음을 수행할 수 있습니다.
 
@@ -60,7 +60,7 @@ sidebar_position: 2
 - 소리 알림을 활성화합니다.
 - 악성 및 피싱 웹사이트 데이터베이스를 최신 상태로 유지하는 데 도움이 되도록 익명의 보안 관련 정보를 AdGuard 서버에 제출하는 데 동의합니다.
 
-![브라우징 보안 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
+![Browsing security \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/browsing_security.png)
 
 브라우징 보안에 대해 자세히 알아보려면 [이글](/general/browsing-security)을 참조하세요.
 
@@ -68,7 +68,7 @@ sidebar_position: 2
 
 DNS 보호 설정을 살펴봐야 하는 세 가지 중요한 이유가 있습니다. 첫째, ISP의 추적을 피하기 위해서입니다. 예를 들어 'google.com'과 같은 웹사이트를 열 때마다 브라우저는 DNS 서버에 요청을 보내 해당 웹사이트의 IP 주소를 얻습니다. 일반적으로 DNS 서버는 ISP에 속해 사용자의 온라인 활동을 추적할 수 있습니다. 둘째, DNS 트래픽을 암호화하기 위해서입니다. 세 번째는 [DNS 수준에서 콘텐츠를 차단](https://adguard-dns.io/kb/general/dns-filtering/)하는 것입니다.
 
-![DNS 보호 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
+![DNS Protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/dns_protection.png)
 
 Windows용 AdGuard의 DNS 보호 모듈에서 광고 및 추적기를 차단하는 AdGuard DNS, 성인 콘텐츠도 차단하는 AdGuard DNS 가족 보호 또는 안전하고 안정적인 연결을 제공하지만 아무것도 필터링하지 않는 AdGuard DNS 비필터링 등 알려진 DNS 제공업체의 DNS 서버를 선택할 수 있습니다. [DNS 규칙 구문](https://adguard-dns.io/kb/general/dns-filtering-syntax/)을 사용하여 사용자 정의 DNS 서버와 규칙을 추가할 수도 있습니다. 필요한 경우 [원하는 DNS 필터](https://filterlists.com)를 추가할 수 있습니다.
 
@@ -83,18 +83,16 @@ v7.20부터는 미리 구축된 신뢰할 수 있는 필터 목록에서 필터�
 
 ### 자녀 보호
 
-자녀가 사용하는 컴퓨터에서 액세스하지 못하도록 제한해야 하는 사이트가 몇 가지 있습니다. 이 작업은 자녀 보호 기능을 통해 수행됩니다.
+자녀가 사용하는 컴퓨터에서 액세스하지 못하도록 제한해야 하는 사이트가 몇 가지 있습니다. This task is accomplished by _Parental Control_.
 
-![자녀 보호 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
+![Parental Control \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/parental_control.png)
 
 이 모듈은 브라우저에서 열린 웹페이지의 콘텐츠를 확인하고 성인용 이미지 및 텍스트, 거친 언어, 폭력, 마약 선전 등 어린이에게 바람직하지 않은 콘텐츠가 포함된 웹페이지를 필터링합니다. 자녀 보호 설정은 자녀가 제한을 우회할 수 없도록 비밀번호로 보호됩니다. 이 모듈은 원치 않는 사이트로 연결되는 경로를 차단할 뿐만 아니라 검색 결과에서 어린이에게 부적절한 링크를 삭제할 수도 있습니다.
 
 **자녀 보호** 모듈에서 **안전 검색**을 활성화하고 **차단 목록** 및 **허용 목록**을 관리하여 이 옵션의 작동 방식을 사용자 지정할 수 있습니다. 자녀가 컴퓨터에 소프트웨어를 다운로드하고 설치하지 못하도록 **실행 파일 다운로드 차단** 확인란을 선택할 수도 있습니다. **자녀 보호** 모듈에서 **자녀 보호 기능**으로 보호할 특정 Windows 사용자를 선택하고 AdGuard 설정을 변경하지 못하도록 보호할 암호를 설정할 수 있습니다.
 
-![자녀 보호 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
-
 ### 브라우저 어시스턴트
 
-![브라우저 어시스턴트 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Browser Assistant \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/browser_assistant.png)
 
-이 탭에서 브라우저에서 직접 필터링을 관리하는 주요 기능인 AdGuard 브라우저 어시스턴트 설치를 쉽게 진행할 수 있습니다. 사용 중인 브라우저에 브라우저 어시스턴트가 없는 경우, 어떻게 해야 하는지 [별도 문서](/adguard-for-windows/browser-assistant.md)에서 자세히 설명했습니다.
+From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](/adguard-for-windows/browser-assistant.md).

@@ -1,5 +1,5 @@
 ---
-title: Solving problems
+title: Problémák megoldása
 sidebar_position: 1
 ---
 

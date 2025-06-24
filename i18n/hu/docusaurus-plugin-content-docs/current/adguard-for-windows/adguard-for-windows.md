@@ -27,7 +27,7 @@ An extension that complements the desktop program and allows you to manage filte
 
 [Browser Assistant](/adguard-for-windows/browser-assistant.md)
 
-## Solving problems
+## Problémák megoldása
 
 Known issues and possible solutions
 

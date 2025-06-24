@@ -45,7 +45,7 @@ Restricted domains whose content can’t be modified with ad blocking extensions
 
 [Browser-protected pages](/adguard-browser-extension/protected-pages)
 
-## Solving problems
+## Problémák megoldása
 
 Known issues and possible solutions
 

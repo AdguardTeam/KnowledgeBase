@@ -11,13 +11,13 @@ sidebar_position: 1
 
 「保护」标签包含以下功能或设置。 您可以在本知识库中找到详细文章。
 
-## 广告拦截
+## Ad blocking
 
 在浏览器和应用中拦截广告的设置。
 
 [广告拦截](/adguard-for-android/features/protection/ad-blocking.md)
 
-## 跟踪保护
+## Tracking protection
 
 阻止收集用户信息的跟踪工具设置。
 

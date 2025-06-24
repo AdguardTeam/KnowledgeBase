@@ -31,6 +31,6 @@ Allerdings kann **eine Erweiterung bis zu 150.000 Regeln** enthalten. Wenn Sie d
 1. Öffnen Sie AdGuard für Safari.
 2. Blättern Sie nach unten und klicken Sie auf _Inhaltsblocker_.
 3. Unter jedem Inhaltsblocker können Sie die aktivierten Filter und die Anzahl der aktiven Regeln sehen.
- ![Inhaltsblocker](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
+    ![Inhaltsblocker](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
 
 Wenn mehr als 150.000 Regeln in einem Inhaltsblocker aktiviert sind, müssen Sie möglicherweise einige Filter oder Benutzerregeln deaktivieren. Öffnen Sie den Abschnitt _Filter_, wählen Sie die problematische Kategorie aus und deaktivieren Sie die Filter oder Benutzerregeln, die Sie nicht benötigen.

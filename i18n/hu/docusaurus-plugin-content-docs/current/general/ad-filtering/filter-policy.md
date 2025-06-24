@@ -1,5 +1,5 @@
 ---
-title: AdGuard filter policy
+title: AdGuard szűrőszabályzat
 sidebar_position: 6
 ---
 
@@ -26,7 +26,7 @@ Az **Ad blocker** egy szoftver- vagy hardvereszköz, amelyet a weboldalakon megj
 
 A **szűrő** (vagy egy **szűrőlista**) olyan szűrési szabályok halmaza, amelyek célja a tartalom szűrése, valamint a különféle típusú hirdetések és más típusú tartalmak blokkolása. hirdetésblokkolók. Ezek a szűrők általában a webböngésző, a programok vagy a DNS-kiszolgáló szintjén működnek.
 
-**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so-called “adblock walls”). A blokkolásgátlók különböző típusúak lehetnek:
+Az **Anti-adblock** egy olyan technológia, amelyet webhelyek vagy alkalmazások használnak, hogy észleljék a hirdetésblokkolást, és különböző módon reagáljanak rá: nyomon követve, újra beszúrva a hirdetéseket, ösztönözve a hirdetésblokkolók (úgynevezett „hirdetésblokkoló falak”) letiltására. ”). A blokkolásgátlók különböző típusúak lehetnek:
 
 - Anti-hirdetésszűrő, ami blokkolja a weboldal tartalmát anélkül, hogy alternatívát kínálna: ahhoz, hogy továbbra is használja az oldalt, a felhasználónak ki kell kapcsolnia a hirdetésszűrőt az oldalon
 - „Reklámblokkoló fal” alternatív lehetőségekkel, például előfizetés vásárlásával a hirdetésblokkoló használatának folytatásához
@@ -41,14 +41,14 @@ Az AdGuard hirdetésblokkoló szűrői a következők:
 - AdGuard Alap szűrő
 - AdGuard Mobile App Banners szűrő
 - Regionális szűrők nyelvi elvek szerint - kínai, holland, francia, német, japán, orosz, spanyol/portugál, török, német, ukrán és orosz
-- AdGuard Quick Fixes filter
+- AdGuard gyorsjavítások szűrő
 
 ### Ezeknek a szűrőknek a célja
 
 - A **Az** alapszűrő célja, hogy blokkolja a hirdetéseket az angol nyelvű webhelyeken és azokon, amelyekhez nincs külön szűrő. Általános szűrési szabályokat is tartalmaz, amelyek nyelvtől függetlenül minden webhelyre vonatkoznak
 - A **mobilhirdetések szűrője** blokkolja a hirdetéseket a weboldalak mobilverzióiban és a mobilalkalmazásokban. Nincs nyelvi szegmentálás
 - **A** regionális szűrők ugyanazt az irányelvet követik, mint a **Alapszűrő**, de bizonyos nyelvű webhelyekre korlátozva
-- **Quick Fixes filter** used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension.
+- A **Gyorsjavítás szűrő** a kritikus tartalomszűrési problémák gyors megoldására szolgál népszerű weboldalakon, anélkül, hogy frissíteni kellene az MV3 kiegészítőt.
 
 A hirdetésblokkoló szűrők célja, hogy blokkoljanak mindenféle hirdetést olyan webhelyeken, alkalmazásokban és bizonyos eszközökön, amelyek hirdetéseket tölthetnek be az internetről:
 
@@ -81,7 +81,7 @@ A hirdetésblokkoló szűrők célja, hogy blokkoljanak mindenféle hirdetést o
 - Nem blokkoljuk azokat a hirdetésblokkoló-észlelő üzeneteket, amelyek megfelelnek a következő feltételek legalább egyikének:
     - Lehetővé teszik a webhely használatát, és nem takarják el a jelentős mennyiségű tartalommal
     - Alternatív megoldást kínálnak a hirdetésblokkoló letiltására, mivel ez az alternatíva nem veszélyezteti a felhasználók magánéletét vagy biztonságát
-    - They allow the user to proceed to the website’s content
+    - Lehetővé teszik a felhasználó számára, hogy továbblépjen a weboldal tartalmára
     - Előfordulhat, hogy egyes örökölt szabályok továbbra is blokkolják azokat az üzeneteket, amelyek megfelelnek egy vagy több kritériumnak. Ha azonosítják, az ilyen szabályokat a jelen szabályzat szerint kezeljük
 - A bányászati poolok nem kerülnek blokkolásra, ha nyilvánosak és nem kizárólag rosszindulatú célokra használják őket
 
