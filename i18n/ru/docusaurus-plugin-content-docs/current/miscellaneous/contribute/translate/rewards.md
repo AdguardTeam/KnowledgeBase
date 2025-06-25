@@ -55,6 +55,6 @@ sidebar_position: 6
 
 ## Подарки для самых активных
 
-Самым активным мы каждый год отправляем мерч AdGuard и упоминаем их в нашем [блоге](https://adguard.com/ru/blog/best-contributors-2023.html).
+To the best contributors, every year we send gifts with the AdGuard merch and give a shout out on our [blog](https://adguard.com/en/blog/best-contributors-2024.html).
 
 ![Мерч AdGuard *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

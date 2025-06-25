@@ -55,6 +55,6 @@ Vă rugăm să rețineți că corectorii nu primesc licențe sau beneficii supli
 
 ## Cadouri pentru contribuitorii activi
 
-Pentru cei mai buni contribuitori, în fiecare an trimitem cadouri cu produse AdGuard și dăm un shout out pe [blogul nostru](https://adguard.com/en/blog/best-contributors-2023.html).
+To the best contributors, every year we send gifts with the AdGuard merch and give a shout out on our [blog](https://adguard.com/en/blog/best-contributors-2024.html).
 
 ![Produse AdGuard *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

@@ -55,6 +55,6 @@ Si prega di notare che i correttori di bozze non ricevono licenze o vantaggi agg
 
 ## Regali per i collaboratori attivi
 
-Ai migliori contributori, ogni anno inviamo regali con il merchandising di AdGuard e diamo visibilità nel nostro [blog](https://adguard.com/en/blog/best-contributors-2023.html).
+To the best contributors, every year we send gifts with the AdGuard merch and give a shout out on our [blog](https://adguard.com/en/blog/best-contributors-2024.html).
 
 ![Merchandising AdGuard *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

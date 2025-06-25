@@ -55,6 +55,6 @@ Ten en cuenta que los correctores no reciben licencias o beneficios adicionales 
 
 ## Regalos para contribuyentes activos
 
-A los mejores contribuyentes, cada año enviamos regalos con la mercancía de AdGuard y hacemos un reconocimiento en nuestro [blog](https://adguard.com/en/blog/best-contributors-2023.html).
+To the best contributors, every year we send gifts with the AdGuard merch and give a shout out on our [blog](https://adguard.com/en/blog/best-contributors-2024.html).
 
 ![Mérch de AdGuard *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

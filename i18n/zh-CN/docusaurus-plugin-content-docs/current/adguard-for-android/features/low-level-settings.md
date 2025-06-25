@@ -204,10 +204,6 @@ For AdGuard for Android v4.x we’ve completely redesigned the low-level setting
 
 用户可以在此处设置 VPN 接口的最大传输单元 （MTU）。 这是您本地 VPN 中使用的数据包的最大大小。 推荐范围是 1500–1900.
 
-#### 自动恢复 VPN 连接
-
-如果启用，AdGuard 的本地 VPN 将在因网络缺失、系留或低功耗模式而关闭后自动重新启用。
-
 #### 数据包捕获（PCAP）
 
 此设置启用 TUN 接口的日志记录。 启用时，AdGuard 会在应用程序缓存目录中创建一个文件 `timestamp.pcap`，例如 1682599851461.pcap。 该文件列出通过 VPN 传输的所有网络数据包，可以使用 Wireshark 工具进行分析。
