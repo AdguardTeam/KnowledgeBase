@@ -55,6 +55,6 @@ Düzeltmenlerin, daha fazla kişinin kendi dillerinde AdGuard ürünlerine eriş
 
 ## Aktif katkıda bulunanlar için hediyeler
 
-En iyi katkıda bulunanlara, her yıl AdGuard ürünlerinden oluşan hediyeler gönderir ve [blogumuzda](https://adguard.com/en/blog/best-contributors-2023.html) onları öne çıkarırız.
+To the best contributors, every year we send gifts with the AdGuard merch and give a shout out on our [blog](https://adguard.com/en/blog/best-contributors-2024.html).
 
 ![AdGuard ürünleri *kenar](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

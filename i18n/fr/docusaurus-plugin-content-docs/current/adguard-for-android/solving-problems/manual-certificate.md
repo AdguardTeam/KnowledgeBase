@@ -9,38 +9,46 @@ Cet article concerne AdGuard pour Android, un bloqueur de publicité multifoncti
 
 :::
 
-Pour pouvoir [filtrer le trafic HTTPS](/general/https-filtering/what-is-https-filtering.md) (ce qui est extrêmement important car la plupart des publicités utilisent HTTPS), AdGuard doit installer son certificat dans le stockage utilisateur de votre appareil. Sur les anciennes versions d'Android, cela se faisait automatiquement, mais sur Android 11 et les versions ultérieures, les utilisateurs doivent l'installer manuellement.
+To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install its certificate into your device’s user storage. Sur les anciennes versions d'Android, cela se faisait automatiquement, mais sur Android 11 et les versions ultérieures, les utilisateurs doivent l'installer manuellement.
 
 ![Certificat *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
 
 Suivez ces étapes pour installer le certificat AdGuard:
 
-1. Lorsque vous voyez la notification *Filtrage HTTPS désactivé*, appuyez sur *Activer*.
+1. Open the app. On the *Home* screen, tap *HTTPS filtering is off*.
 
-1. Ensuite, vous verrez trois écrans qui expliquent :
-    - Pourquoi filtrer le trafic HTTPS
-    - La sécurité de ce processus de filtrage
-    - La nécessité du certificat AdGuard
+1. Then you’ll be presented with three screens:
+    - HTTPS filtering is critical for ad blocking
+    - AdGuard’s HTTPS filtering is safe
+    - AdGuard certificate
 
-    Consecutively tap *Next* → *Next* → *Save certificate*.
+    Consecutively, tap *Continue* → *Next* → *Save certificate*.
 
 1. Tap *Save* at the bottom of the opened *Download* folder.
 
 1. After saving, tap *Open Settings*.
 
-1. Tap *More security settings* → *Encryption & credentials* → *Install a certificate* → *CA certificate*.
+1. Open *Settings* and type *CA Certificate* in the search bar. Tap the respective option.
 
 1. You might see a warning. If so, tap *Install anyway* and enter your PIN if necessary.
 
 1. Select the AdGuard certificate file. Its name should look like *adguard_1342_020322.crt*.
 
-You're all set! Once the certificate is installed successfully, you've enabled HTTPS filtering.
-
-Veuillez noter que les étapes fournies sont basées sur le smartphone Google Pixel 7. If you're using a different Android device, the exact menu names or options might vary. For easier navigation consider searching for a certificate by entering “certificate” or “credentials” in the settings search bar.
+You’re all set! Once the certificate is installed successfully, you’ve enabled HTTPS filtering.
 
 If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
 
 1. Redémarrez AdGuard.
 2. Essayez d'installer le certificat correct (AdGuard Personal CA) une fois de plus.
 
-Si vous rencontrez toujours un problème et ne pouvez pas installer le certificat, veuillez contacter notre Équipe d'assistance à l'adresse <support@adguard.com>.
+## Security warnings
+
+In earlier versions of Android, the quick settings panel displayed the message “Network may be monitored.” Tapping it will open a window with detailed information.
+
+Starting with Android 15, in addition to “Network may be monitored”, users will see a warning notification after installing a certificate and after restarting the device: “Certificate authorities installed by an unknown third party.” This means that the system has detected third-party certificates in the user certificate store. Tapping the notification opens a list of certificates in the user certificate store.
+
+Despite these warnings, your traffic remains secure. Your connection to remote servers stays encrypted. What AdGuard does is simply verify the server’s certificate before deciding whether to filter the connection — similar to how a browser works.
+
+[Learn more about HTTPS filtering and how the certificate works](/general/https-filtering/what-is-https-filtering.md).
+
+If you still encounter a problem and can’t install the certificate, please contact our support team at <support@adguard.com>.

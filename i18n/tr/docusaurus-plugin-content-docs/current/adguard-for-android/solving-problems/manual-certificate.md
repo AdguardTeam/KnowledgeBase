@@ -9,38 +9,46 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install its certificate into your device's user storage. On older versions of the Android OS this was done automatically, but on Android 11 and later users have to install it manually.
+To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install its certificate into your device’s user storage. On older versions of the Android OS this was done automatically, but on Android 11 and later users have to install it manually.
 
 ![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
 
 Follow these steps to install the AdGuard certificate:
 
-1. When you see the *HTTPS filtering is off* notification, tap *Enable*.
+1. Uygulamayı açın. *Ana sayfa* ekranında, *HTTPS filtreleme kapalı* öğesine dokunun.
 
-1. Daha sonra size aşağıdakileri açıklayan üç ekran sunulacaktır:
-    - HTTPS trafiği neden filtrelenir
-    - Bu filtreleme işleminin güvenliği
-    - The necessity of the AdGuard certificate
+1. Then you’ll be presented with three screens:
+    - HTTPS filtering is critical for ad blocking
+    - AdGuard’s HTTPS filtering is safe
+    - AdGuard certificate
 
-    Consecutively tap *Next* → *Next* → *Save certificate*.
+    Consecutively, tap *Continue* → *Next* → *Save certificate*.
 
 1. Tap *Save* at the bottom of the opened *Download* folder.
 
 1. Kaydettikten sonra *Ayarları aç* öğesine dokunun.
 
-1. Tap *More security settings* → *Encryption & credentials* → *Install a certificate* → *CA certificate*.
+1. Open *Settings* and type *CA Certificate* in the search bar. İlgili seçeneğe dokunun.
 
 1. Bir uyarı görebilirsiniz. Öyleyse, *Yine de yükle* öğesine dokunun ve gerekirse PIN kodunuzu girin.
 
 1. AdGuard sertifika dosyasını seçin. Adı *adguard_1342_020322.crt* gibi görünmelidir.
 
-Hepsi hazır! Once the certificate is installed successfully, you've enabled HTTPS filtering.
-
-Lütfen sağlanan adımların Google Pixel 7 akıllı telefonunu temel aldığını unutmayın. If you're using a different Android device, the exact menu names or options might vary. For easier navigation consider searching for a certificate by entering “certificate” or “credentials” in the settings search bar.
+You’re all set! Once the certificate is installed successfully, you’ve enabled HTTPS filtering.
 
 If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
 
 1. AdGuard'ı yeniden başlatın.
 2. Doğru sertifikayı (AdGuard Personal CA) bir kez daha yüklemeyi deneyin.
 
-If you still encounter a problem and can't install the certificate, please contact our support team at <support@adguard.com>.
+## Güvenlik uyarıları
+
+Android'in önceki sürümlerinde hızlı ayarlar panelinde "Ağ izlenebilir" mesajı görüntüleniyordu. Üzerine dokunduğunuzda detaylı bilgilerin yer aldığı bir pencere açılır.
+
+Starting with Android 15, in addition to “Network may be monitored”, users will see a warning notification after installing a certificate and after restarting the device: “Certificate authorities installed by an unknown third party.” Bu, sistemin kullanıcı sertifika depokanasubda üçüncü taraf sertifikaları tespit ettiği anlamına gelir. Bildirime dokunulduğunda kullanıcı sertifika depolamasındaki sertifikaların bir listesi açılır.
+
+Bu uyarılara rağmen trafiğiniz güvende kalır. Uzak sunuculara olan bağlantınız şifrelenmiş olarak kalır. AdGuard'ın yaptığı şey, bağlantıyı filtreleyip filtrelememeye karar vermeden önce sunucunun sertifikasını doğrulamaktır — tıpkı bir tarayıcının çalışma şekline benzer.
+
+[HTTPS filtrelemesi ve sertifikanın nasıl çalıştığı hakkında daha fazla bilgi edinin](/general/https-filtering/what-is-https-filtering.md).
+
+Hâlâ bir sorunla karşılaşıyorsanız ve sertifikayı yükleyemiyorsanız lütfen <support@adguard.com> adresinden destek ekibimizle iletişime geçin.

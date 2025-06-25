@@ -55,6 +55,6 @@ sidebar_position: 6
 
 ## 활동적인 기여자를 위한 선물
 
-매년 최고의 기여자들에게 AdGuard 관련 상품을 선물로 보내고, [블로그](https://adguard.com/en/blog/best-contributors-2023.html)에 소개합니다.
+To the best contributors, every year we send gifts with the AdGuard merch and give a shout out on our [blog](https://adguard.com/en/blog/best-contributors-2024.html).
 
 ![AdGuard 상품 *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)
