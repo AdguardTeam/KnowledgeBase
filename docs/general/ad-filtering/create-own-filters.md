@@ -435,10 +435,20 @@ If you want the rule not to be applied to certain apps, start the app name with 
 - `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask and are sent from any app except for the `org.example.app`.
 - `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
+You can use regular expressions in the $app modifier by enclosing them in forward slashes /.../. This allows for more flexible matching — for example, targeting a group of apps from the same publisher or matching complex patterns.
+
+- `||baddomain.com^$app=/org\.example\.[a-z0-9_]+/` — applies to all apps whose package name starts with `org.example`. (e.g. `org.example.app1`, `org.example.utility`, etc.).
+- `||baddomain.com^$app=/^org\.example\.app$|^org\.example\.[ab].*/` — applies to `org.example.app` and to any app whose package starts with `org.example.a` or `org.example.b`.
+
+You can mix plain values, negations, and regular expressions:
+
+- `||baddomain.com^$app=org.example.app|/org\.example\..*/|~org.example.excluded` — applies to `org.example.app`, to any other `org.example.*`, except for `org.example.excluded`.
+
 :::caution Restrictions
 
 Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`.
 Rules with such modifier are considered invalid.
+Use regular expressions instead: `$app=/com\..*\.music/`.
 
 :::
 
