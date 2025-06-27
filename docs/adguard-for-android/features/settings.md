@@ -131,7 +131,7 @@ The *Local VPN* mode doesn't allow AdGuard to be used simultaneously with other 
 :::
 
 - *Automatic proxy* is an alternative traffic routing method that does not require the use of a VPN. One significant advantage is that it can be run in parallel with a VPN. This mode requires root access.
- 
+
 :::note
 
 Please note that DNS filtering will still be active in *Automatic proxy* mode, and your device might not be able to selectively filter out DNS requests from specific apps. If we compare the situation to VPN mode, apps there are excluded from the local VPN by system means, therefore the system resolver "sees" which apps are included in the VPN and which are not, and either allows them into the local VPN or lets them bypass it. On the other hand, DNS requests come from the system resolver, not from the application. In *Automatic proxy* routing mode, it is only possible to exclude traffic from applications, not their DNS queries — because they are seen by AdGuard as queries from the system.
