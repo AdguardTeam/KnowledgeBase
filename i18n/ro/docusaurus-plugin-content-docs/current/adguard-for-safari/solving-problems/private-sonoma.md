@@ -15,7 +15,7 @@ Acest articol se referă la AdGuard pentru Safari, care protejează doar browser
 2. Faceți clic pe _Safari_ în meniul din colțul din stânga sus.
 3. Faceți clic pe _Setări…_ → _Extensii_.
 4. Check _Allow in Private Browsing_ for all AdGuard extensions.
- ![Verificat navigarea privată](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
+    ![Verificat navigarea privată](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
 
 Dacă aceasta nu ajută și reclamele continuă să nu fie blocate, vă rugăm să contactați suportul nostru la support@adguard.com.
 

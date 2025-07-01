@@ -363,30 +363,30 @@ divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML"
 
 3. Чтобы создать пользовательский стиль, сначала напишите заголовок с метаданными, например:
 
- ```CSS
- /* ==UserStyle==
- @name New userstyle
- @version 1.0
- ==/UserStyle== */
- ```
+    ```CSS
+    /* ==UserStyle==
+    @name New userstyle
+    @version 1.0
+    ==/UserStyle== */
+    ```
 
 4. После метаданных добавьте сам пользовательский стиль на основе CSS. AdGuard поддерживает доменные имена, соответствующие (`@-moz-document domain(…), …`). Например:
 
- ```CSS
- body {
-   background: gray;
-   }
- ```
+    ```CSS
+    body {
+      background: gray;
+      }
+    ```
 
- Или:
+    Или:
 
- ```CSS
- @-moz-document domain('example.org'),
- domain('example.net'),
- domain('example.com') body {
-   background: gray;
-   }
- ```
+    ```CSS
+    @-moz-document domain('example.org'),
+    domain('example.net'),
+    domain('example.com') body {
+      background: gray;
+      }
+    ```
 
 5. Когда закончите, нажмите _Сохранить и закрыть_. Готово, пользовательский стиль добавлен в AdGuard
 

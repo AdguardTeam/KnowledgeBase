@@ -15,7 +15,7 @@ Tento článek je o AdGuardu pro Safari, který chrání pouze váš prohlíže�
 2. Klikněte na _Safari_ v nabídce v levém horním rohu.
 3. Klikněte na _Nastavení…_ → _Rozšíření_.
 4. Zaškrtněte políčko _Povolit při soukromém prohlížení_ pro všechna rozšíření AdGuardu.
- ![Checked private browsing](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
+    ![Checked private browsing](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
 
 Pokud to nepomůže a reklamy stále nejsou blokovány, kontaktujte naši podporu support@adguard.com.
 

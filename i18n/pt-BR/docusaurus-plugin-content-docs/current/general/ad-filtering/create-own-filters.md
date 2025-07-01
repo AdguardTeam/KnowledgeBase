@@ -1563,7 +1563,7 @@ Basic URL exceptions shall not disable rules with the `$hls` modifier. They can 
 - `@@||example.org^$hls` disables all `$hls` rules for responses from URLs matching `||example.org^`.
 - `@@||example.org^$hls=text` disables all `$hls` rules with the value of the `$hls` modifier equal to `text` for responses from URLs matching `||example.org^`.
 
-:::tip
+:::dica
 
 `$hls` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
 

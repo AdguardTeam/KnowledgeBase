@@ -15,7 +15,7 @@ sidebar_position: 5
 2. 左上のメニューで「_Safari_」をクリックします。
 3. 「_環境設定…_」→「_拡張機能_」をクリックします。
 4. すべてのAdGuard拡張機能の、「プライベートブラウジングで許可する」チェックボックスにチェックを入れます。
- ![チェック入りプライベートブラウジング許可設定](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
+    ![チェック入りプライベートブラウジング許可設定](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
 
 それでも広告がブロックされない場合は、support@adguard.com （日本語対応）までお問い合わせください。
 

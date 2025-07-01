@@ -5,13 +5,13 @@ sidebar_position: 4
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
 この「ネットワーク」モジュールはネットワークフィルタリング専用のもので、ネットワーク関連の追加オプションがあります。 このうち、「トラフィックフィルタリングを有効にする」と「HTTPS をフィルタリングする」は、デフォルトで有効になっています。 これらは、あなたのウェブスペースをより良くフィルタリングするための重要な追加予防措置です。 現在、ほとんどのウェブサイトがHTTPSを使用しており、広告も同様です。 youtube.com、facebook.com、x.comなど多くのウェブサイトでは、HTTPSフィルタリングなしでは広告を削除することができません。 そのため、特別な理由がない限り、「HTTPSをフィルタリングする」機能は有効にしておいてください。
 
-![Network Settings \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
+![Network Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/network/network_settings.png)
 
 このモジュールでは、「HTTPプロキシとしてAdGuardを使用する」チェックボックスをオンにすると、AdGuardを通常のHTTPプロキシとして使用し、通過するすべてのトラフィックをフィルタリングできます。 「EV証明書を持つウェブサイトをフィルタリング」オプションを有効にすることもできます。 EV (Extended Validation) SSL証明書は、ウェブサイトの所有者がEVガイドラインで定義されている国際標準化された徹底的な身元確認プロセスに合格したことを保証します。 これは、このような証明書を持つウェブサイトを信頼してフィルタリングをしないようなユーザーがいる理由でもあります。
 
