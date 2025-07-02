@@ -40,3 +40,25 @@ AdGuard for Windows runs two processes: `Adguard.exe` and `AdguardSvc.exe`. Youâ
 
 Since dump files can be large, please compress them into an archive before sending them to support. Also, include the AdGuard logs to help us diagnose the issue more effectively.
 [Instructions for collecting logs](../adguard-logs).
+
+## Collecting wfpdiag.cab file
+
+Our support team may request a wfpdiag.cab file (along with a minidump file) to further analyze system logs and diagnose issues. To collect a wfpdiag.cab file please follow the steps:
+
+1. Enable AdGuard protection.
+
+1. Click *Start* and type `cmd` to open Command promt
+
+1. Righ-click Command promp and choose *Run as administrator*
+
+    :::note
+
+    A wfpdiag.cab file is created in your current directory. You can change the location by typing `cd <folder_name>`.
+
+    :::
+
+1. Enter the command to start logging: `netsh wfp capture start`
+
+1. Reproduce the issue you encountered while using AdGuard
+
+1. Enter the command to stop logging: `netsh wfp capture stop`
