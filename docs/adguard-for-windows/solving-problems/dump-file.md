@@ -57,7 +57,7 @@ Our support team may request a wfpdiag.cab file, along with a minidump file, to 
 
     :::
 
-1. Enter the command to start logging: `netsh wfp capture start`
+1. To start logging, enter the following command: `netsh wfp capture start`
 
 1. Visit any website to route traffic through AdGuard and log the filtering process
 
