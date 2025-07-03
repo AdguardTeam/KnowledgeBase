@@ -56,13 +56,13 @@ By default the minidump file is stored in the **%SystemRoot%\Minidump** folder. 
 
 ## Collecting wfpdiag.cab file
 
-Our support team may request a wfpdiag.cab file (along with a minidump file) to further analyze system logs and diagnose issues. To collect a wfpdiag.cab file please follow the steps:
+Our support team may request a wfpdiag.cab file, along with a minidump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
 
 1. Enable AdGuard protection.
 
-1. Click *Start* and type `cmd` to open Command promt
+1. Click *Start* and type `cmd` to open Command Prompt
 
-1. Righ-click Command promp and choose *Run as administrator*
+1. Right-click Command Prompt and choose *Run as administrator*
 
     :::note
 
@@ -70,8 +70,8 @@ Our support team may request a wfpdiag.cab file (along with a minidump file) to 
 
     :::
 
-1. Enter the command to start logging: `netsh wfp capture start`
+1. To start logging, enter the following command: `netsh wfp capture start`
 
 1. Visit any website to route traffic through AdGuard and log the filtering process
 
-1. Enter the command to stop logging: `netsh wfp capture stop`
+1. To stop logging, enter `netsh wfp capture stop`
