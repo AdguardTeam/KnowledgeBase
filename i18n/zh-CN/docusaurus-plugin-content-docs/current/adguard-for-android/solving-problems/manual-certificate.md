@@ -9,38 +9,46 @@ sidebar_position: 11
 
 :::
 
-为了能够[过滤 HTTPS 流量](/general/https-filtering/what-is-https-filtering.md)（这点很重要，因为大多数广告都使用 HTTPS），AdGuard 需要在设备的用户存储空间中安装证书。 旧版本的 Android 操作系统可以自动完成，但在 Android 11 及更高版本上，用户必须手动安装。
+To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install its certificate into your device’s user storage. 旧版本的 Android 操作系统可以自动完成，但在 Android 11 及更高版本上，用户必须手动安装。
 
 ![证书 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
 
 请按照以下步骤安装 AdGuard 证书：
 
-1. 当您看到「*HTTPS 过滤已关闭*」的通知时，点击「*启用*」。
+1. Open the app. On the *Home* screen, tap *HTTPS filtering is off*.
 
-1. 然后您将看到三个画面，它们分别解释了：
-    - 为什么要过滤 HTTPS 流量
-    - 过滤过程的安全性
-    - AdGuard 证书的必要性
+1. Then you’ll be presented with three screens:
+    - HTTPS filtering is critical for ad blocking
+    - AdGuard’s HTTPS filtering is safe
+    - AdGuard certificate
 
-    连续点击「*下一步*」→「*下一步*」→「*保存证书*」。
+    Consecutively, tap *Continue* → *Next* → *Save certificate*.
 
 1. 在打开的「*下载*」文件夹底部点击「*保存*」。
 
 1. 保存后，点击「*打开设置*」。
 
-1. 点击「*更多安全设置*」→「*加密和凭据*」→「*安装证书*」→「*CA 证书*」。
+1. Open *Settings* and type *CA Certificate* in the search bar. Tap the respective option.
 
 1. 您可能会看到一条警告。 如果有的话，请点击「*仍然安装*」并输入您的 PIN 码（如有必要）。
 
 1. 选择 AdGuard 证书文件。 它的名称应该类似于「*adguard_1342_020322.crt*」。
 
-一切就绪！ 证书安装成功后，您就启用了 HTTPS 过滤。
+You’re all set! Once the certificate is installed successfully, you’ve enabled HTTPS filtering.
 
-请注意，以上提供的步骤基于 Google Pixel 7 智能手机。 如果您使用不同的 Android 设备，具体的菜单名称或选项可能会有所不同。 为方便导航，可考虑在设置搜索栏中输入「证书」或「凭证」搜索证书。
-
-如您在手动安装证书期间遇到问题（例如，应用持续忽略已安装证书），可以尝试以下解决方案。
+If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
 
 1. 重启 AdGuard。
 2. 再次尝试安装正确的证书（AdGuard Personal CA）。
 
-如问题仍然存在使您无法安装证书，请联系我们的客户支持团队 <support@adguard.com>。
+## Security warnings
+
+In earlier versions of Android, the quick settings panel displayed the message “Network may be monitored.” Tapping it will open a window with detailed information.
+
+Starting with Android 15, in addition to “Network may be monitored”, users will see a warning notification after installing a certificate and after restarting the device: “Certificate authorities installed by an unknown third party.” This means that the system has detected third-party certificates in the user certificate store. Tapping the notification opens a list of certificates in the user certificate store.
+
+Despite these warnings, your traffic remains secure. Your connection to remote servers stays encrypted. What AdGuard does is simply verify the server’s certificate before deciding whether to filter the connection — similar to how a browser works.
+
+[Learn more about HTTPS filtering and how the certificate works](/general/https-filtering/what-is-https-filtering.md).
+
+If you still encounter a problem and can’t install the certificate, please contact our support team at <support@adguard.com>.
