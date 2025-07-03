@@ -425,6 +425,19 @@ This modifier lets you narrow the rule coverage down to a specific application (
 
 For Mac, you can find out the bundle ID or the process name of the app by viewing the respective request details in the Filtering log.
 
+**Syntax**
+
+The modifier is a list of one or more expressions separated by the `|` symbol, each of which is matched against a application in a particular way depending on its type (see below).
+
+```text
+applications = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
+entry_i = ( regular_app / any_tld_app / regexp )
+```
+
+- **`regular_app`** — a regular application name (`example.app`). Corresponds the specified application and its subapplications. It is matched lexicographically.
+- **`any_tld_app`** — a application name ending with a wildcard character as a [public suffix](https://publicsuffix.org/learn/), e.g. for `example.*` it is `app` in `example.app`. Corresponds to the specified application and its subapplications with any public suffix. It is matched lexicographically.
+- **`regexp`** — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$`, `,`, and `|` must be escaped with `\`.
+
 **Examples**
 
 - `||baddomain.com^$app=org.example.app` — a rule to block requests that match the specified mask and are sent from the `org.example.app` Android app.
@@ -438,17 +451,17 @@ If you want the rule not to be applied to certain apps, start the app name with 
 You can use regular expressions in the `$app` modifier by enclosing them in forward slashes `/.../`. This allows for more flexible matching — for example, targeting a group of apps from the same publisher or matching complex patterns.
 
 - `||baddomain.com^$app=/org\.example\.[a-z0-9_]+/` — applies to all apps whose package name starts with `org.example` (e.g. `org.example.app1`, `org.example.utility`, etc.).
-- `||baddomain.com^$app=/^org\.example\.app$|^org\.example\.[ab].*/` — applies to `org.example.app` and to any app whose package starts with `org.example.a` or `org.example.b`.
+- `||baddomain.com^$app=/^org\.example\.app\$\|^org\.example\.[ab].*/` — applies to `org.example.app` and to any app whose package starts with `org.example.a` or `org.example.b`.
 
-The `$app` modifier supports combining plain app names, negated app names, and regular expressions in the same rule.
+The `$app` modifier supports combining plain app names and regular expressions in the same rule, but it does not allow combining negated and non-negated expressions together.
 
-- `||baddomain.com^$app=org.example.app|~org.example.excluded|/org\.example\.[a-z]+/` — applies to `org.example.app`, to all matching `org.example.[a-z]+` apps, and excludes `org.example.excluded`.
+- `||baddomain.com^$app=org.example.app|/org\.example\.[a-z]+/` — applies to `org.example.app` and all matching `org.example.[a-z]+` apps.
 
 :::caution Restrictions
 
-Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`.
-Rules with such modifier are considered invalid.
-Use regular expressions instead: `$app=/com\..*\.music/`.
+- Apps in the modifier value cannot include a wildcard like `*`, e.g. `$app=com.*.music`.  
+  Use a regular expression instead: `$app=/com\..*\.music/`
+- You cannot combine negated (`~`) and non-negated expressions in the same `$app` modifier — this would be ambiguous.
 
 :::
 
@@ -456,6 +469,7 @@ Use regular expressions instead: `$app=/com\..*\.music/`.
 
 - Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$app` modifier.
 - On Windows the process name is case-insensitive starting with AdGuard for Windows with [CoreLibs] v1.12 or later.
+- Support for regular expressions and combined formats in `$app` is available starting from CoreLibs v1.19 or later.
 
 :::
 
