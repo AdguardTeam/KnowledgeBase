@@ -27,7 +27,7 @@ To install AdGuard on a Windows PC or tablet, follow these steps:
 
    ![Download AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/website_en.png)
 
-2. Once the download is complete, open the file *adguardInstaller.exe*.
+2. Po dokončení stahování otevřete soubor *adguardInstaller.exe*.
 
    ![Downloaded file](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/download_en.png)
 
@@ -35,7 +35,7 @@ To install AdGuard on a Windows PC or tablet, follow these steps:
 
    ![Allow changes *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/allow-changes.png)
 
-4. Choose the folder where you want AdGuard to be installed.
+4. Vyberte složku, do které chcete AdGuard nainstalovat.
 
    ![Choose folder *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer1_en.png)
 

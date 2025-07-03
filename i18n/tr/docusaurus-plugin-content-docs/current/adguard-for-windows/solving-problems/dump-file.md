@@ -21,9 +21,9 @@ Follow these steps to create a dump file:
 
 1. Press *Ctrl + Shift + Esc* to open *Task Manager*.
 
-1. Sol kenar çubuğunda *Ayrıntılar* öğesine tıklayın. ![Görev Yöneticisi ayrıntıları *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/task_manager_en.png)
-1. Döküm dosyası oluşturmak istediğiniz işleme sağ tıklayın. Açılır menüde *Bellek yedekleme dosyası oluştur* öğesine tıklayın. ![Döküm dosyası oluştur *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/create_dump_en.png)
-1. Döküm dosyası oluşturulduktan sonra, kaydedildiği klasörü açmanız istenecektir. İstenmezse, **%tmp%** klasöründe bulabilirsiniz. ![Dosya konumunu aç *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/open_file_location_en.png)
+1. In the left sidebar, click *Details*. ![Task Manager details *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/task_manager_en.png)
+1. Right-click the process you want to create a dump file for. In the drop-down menu, click *Create memory dump file*. ![Create dump file *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/create_dump_en.png)
+1. Once the dump file is created, you’ll be prompted to open the folder where it’s saved. If not, you can find it in the **%tmp%** folder. ![Open file location *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/open_file_location_en.png)
 
 Oluşturulan döküm dosyası (`.DMP`) seçtiğiniz işlemle aynı ada sahip olur.
 
@@ -36,3 +36,26 @@ Windows için AdGuard iki işlem çalıştırır: `Adguard.exe` ve `AdguardSvc.e
 ![İki işlem *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/two_processes_en.png)
 
 Döküm dosyaları büyük olabileceğinden, lütfen bunları desteğe göndermeden önce bir arşive sıkıştırın. Ayrıca, sorunu daha etkili bir şekilde teşhis etmemize yardımcı olması için AdGuard günlüklerini de ekleyin. [Günlükleri toplamak için talimatlar](../adguard-logs).
+
+## Collecting wfpdiag.cab file
+
+Our support team may request a wfpdiag.cab file, along with a minidump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
+
+1. Enable AdGuard protection.
+
+1. Click *Start* and type `cmd` to open Command Prompt
+
+1. Right-click Command Prompt and choose *Run as administrator*
+
+    :::note
+
+    A wfpdiag.cab file is created in your current directory. You can change the location by typing `cd <folder_name>`.
+
+
+:::
+
+1. To start logging, enter the following command: `netsh wfp capture start`
+
+1. Visit any website to route traffic through AdGuard and log the filtering process
+
+1. To stop logging, enter `netsh wfp capture stop`

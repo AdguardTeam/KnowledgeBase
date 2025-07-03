@@ -55,6 +55,6 @@ sidebar_position: 6
 
 ## 给活跃贡献者的礼物
 
-每年，我们会为最优秀的贡献者送上 AdGuard 的周边礼物，并在我们的[博客](https://adguard.com/en/blog/best-contributors-2023.html)上公开致谢。
+To the best contributors, every year we send gifts with the AdGuard merch and give a shout out on our [blog](https://adguard.com/en/blog/best-contributors-2024.html).
 
 ![AdGuard 商品 *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)
