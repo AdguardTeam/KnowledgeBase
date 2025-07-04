@@ -55,7 +55,7 @@ By default the minidump file is stored in the **%SystemRoot%\Minidump** folder. 
 
 :::
 
-## Collecting wfpdiag.cab file
+## wfpdiag.cab dosyası toplama
 
 Our support team may request a wfpdiag.cab file, along with a minidump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
 
