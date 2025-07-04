@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 Ve verzi 4.7, AdGuard pro Android představil soukromý prohlížeč v aplikaci. Můžete se k němu dostat z hlavní obrazovky klepnutím na tlačítko _Soukromý prohlížeč_ nebo z karty _Ochrana_, kde najdete některé možnosti přizpůsobení.
 
-![Private browser](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
+![Private browser \*mobile](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
 
 Zde se dozvíte, co můžete nastavit:
 
