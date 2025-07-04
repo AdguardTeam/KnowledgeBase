@@ -11,7 +11,7 @@ sidebar_position: 7
 
 4.7 버전에서 Android용 AdGuard는 인앱 비공개 브라우저를 도입했습니다. 메인 화면에서 **비공개 브라우저** 버튼을 탭하거나 몇 가지 사용자 지정 옵션을 찾을 수 있는 **보호** 탭에서 액세스할 수 있습니다.
 
-![비공개 브라우저](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
+![Private browser \*mobile](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
 
 설정할 수 있는 항목은 다음과 같습니다.
 

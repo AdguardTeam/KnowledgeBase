@@ -11,7 +11,7 @@ sidebar_position: 7
 
 在 v4.7 中，Android 版 AdGuard 引入了应用内私密浏览器。 用户可以点击「_私密浏览器_」或通过「_保护_」标签中访问私密浏览器的设置（可以设置自定义选项）。
 
-![私密浏览器](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
+![Private browser \*mobile](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
 
 设置说明如下：
 
