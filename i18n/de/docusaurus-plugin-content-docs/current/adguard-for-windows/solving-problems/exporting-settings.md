@@ -9,7 +9,7 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 :::
 
-The changes in AdGuard for Windows v8.0 are significant, and we hope you love the new version. Allerdings besteht die Möglichkeit, dass etwas nicht so läuft, wie Sie es erwartet haben. Version 8.0 ist ganz anders, schließlich ist sie nur die erste „Nightly“-Version. Wenn Ihnen die Benutzeroberfläche von Version 8.0 nicht gefällt oder es zu viele Probleme mit Funktionen oder Stabilität gibt, können Sie die vorherige Version mit den alten Einstellungen wiederherstellen.
+Die Änderungen in AdGuard für Windows v8.0 sind umfangreich, und wir hoffen, dass Ihnen die neue Version gefällt. Allerdings besteht die Möglichkeit, dass etwas nicht so läuft, wie Sie es erwartet haben. Version 8.0 ist ganz anders, schließlich ist sie nur die erste „Nightly“-Version. Wenn Ihnen die Benutzeroberfläche von Version 8.0 nicht gefällt oder es zu viele Probleme mit Funktionen oder Stabilität gibt, können Sie die vorherige Version mit den alten Einstellungen wiederherstellen.
 
 Damit Ihre Einstellungen nicht verloren gehen, sollten Sie sie vor dem Wechsel auf Version 8.0 exportieren. So können Sie bei Bedarf Version 7 neu installieren und Ihre Einstellungen wieder importieren.
 

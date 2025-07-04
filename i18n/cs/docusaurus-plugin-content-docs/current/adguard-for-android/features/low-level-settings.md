@@ -204,10 +204,6 @@ Zde můžete nastavit dobu prodlevy v milisekundách, než AdGuard znovu naplán
 
 Zde můžete nastavit maximální přenosovou jednotku (MTU) rozhraní VPN. Jedná se o maximální velikost datového paketu používaného v místní síti VPN. Doporučený rozsah je 1500 –1900 bajtů.
 
-#### Automatické obnovení VPN
-
-Pokud je toto nastavení povoleno, lokální VPN AdGuardu se po vypnutí z důvodu nepřítomnosti sítě, tetheringu nebo režimu s nízkou spotřebou energie automaticky znovu zapne.
-
 #### Zachycování paketů (PCAP)
 
 Toto nastavení povoluje protokolování rozhraní TUN. Je-li tato funkce povolena, vytvoří AdGuard v adresáři mezipaměti aplikace soubor `timestamp.pcap`, například 1682599851461.pcap. Tento soubor obsahuje seznam všech síťových paketů přenášených prostřednictvím sítě VPN a lze jej analyzovat pomocí nástroje Wireshark.

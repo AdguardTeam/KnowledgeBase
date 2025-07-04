@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 Někdy je při diagnostice síťových problémů nutné zjistit, jak přesně zařízení komunikuje s Internetem. Shromáždění výpisu sítě nám umožní analyzovat tento provoz a zjistit příčinu problému. V tomto návodu vám ukážeme, jak zachytit výpis sítě pomocí Wireshark.
 
-::: note
+:::note
 
 Údaje a soubory poskytnuté v souborech dump jsou zpracovávány v souladu se [Zásadami ochrany osobních údajů AdGuardu](https://adguard.com/privacy.html).
 

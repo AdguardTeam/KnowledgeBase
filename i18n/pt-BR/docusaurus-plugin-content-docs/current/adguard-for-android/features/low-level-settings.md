@@ -205,10 +205,6 @@ Aqui você pode definir o atraso em milissegundos antes que o AdGuard reprograme
 
 Aqui você pode definir a unidade máxima de transmissão (MTU) da interface VPN. Este é o tamanho máximo do pacote de dados usado na sua VPN local. O intervalo recomendado é de 1500 a 1900 bytes.
 
-#### Restaurar VPN automaticamente
-
-Se esta configuração estiver ativada, a VPN local do AdGuard será reativada automaticamente após ser desligada devido à ausência de rede, tethering ou modo de baixo consumo de energia.
-
 #### Captura de pacotes (PCAP)
 
 Essa configuração ativa o registro de interfaces TUN. Quando ativado, o AdGuard cria um arquivo `timestamp.pcap`, como 1682599851461.pcap, no diretório de cache do aplicativo. Este arquivo lista todos os pacotes de rede transmitidos pela VPN e pode ser analisado usando a ferramenta Wireshark.

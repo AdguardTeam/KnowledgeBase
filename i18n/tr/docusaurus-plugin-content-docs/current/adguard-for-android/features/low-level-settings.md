@@ -205,10 +205,6 @@ Here you can set the delay in milliseconds before AdGuard reschedules the restor
 
 Burada VPN arayüzünün maksimum iletim birimini (MTU) ayarlayabilirsiniz. Bu, yerel VPN'inizde kullanılan veri paketinin maksimum boyutudur. Önerilen aralık 1500-1900 bayttır.
 
-#### Restore VPN automatically
-
-Bu ayar etkinleştirilirse, AdGuard'ın yerel VPN'i ağ yokluğu, tethering veya düşük güç modu nedeniyle kapatıldıktan sonra otomatik olarak yeniden etkinleştirilir.
-
 #### Paket yakalama (PCAP)
 
 Bu ayar TUN arayüzlerinin günlüğe kaydedilmesini sağlar. When enabled, AdGuard creates a file `timestamp.pcap`, such as  1682599851461.pcap, in the app cache directory. This file lists all network packets transmitted through the VPN and can be analyzed using the Wireshark tool.

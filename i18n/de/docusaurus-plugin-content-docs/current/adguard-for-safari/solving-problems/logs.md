@@ -27,4 +27,4 @@ AdGuard ist dem Schutz Ihrer Privatsphäre verpflichtet. Wir halten uns strikt a
 
 1. Öffnen Sie das [GitHub Repository von AdGuard for Safari](https://github.com/AdguardTeam/AdGuardForSafari/issues) und klicken Sie auf _New issue_.
 2. Senden Sie die Protokolldatei an devteam@adguard.com. Geben Sie die Uhrzeit des Fehlers an und fügen Sie einen Link zu Ihrem Problem oder dessen Nummer hinzu (sie wird neben dem Titel als #Nummer angezeigt).
- Alternativ können Sie die Protokolldatei auch auf Google Drive hochladen und an devteam@adguard.com senden. Fügen Sie den Dateilink zu Ihrem GitHub-Problem hinzu.
+    Alternativ können Sie die Protokolldatei auch auf Google Drive hochladen und an devteam@adguard.com senden. Fügen Sie den Dateilink zu Ihrem GitHub-Problem hinzu.

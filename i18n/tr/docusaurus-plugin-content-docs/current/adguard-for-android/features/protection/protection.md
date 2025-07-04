@@ -11,13 +11,13 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 _Koruma_ sekmesi aşağıdaki özellikleri veya ayarları içerir. Her biri hakkında detaylı bilgiyi bu Bilgi Tabanında bulabilirsiniz.
 
-## Reklam engelleme
+## Ad blocking
 
 Settings to block ads in browsers and apps
 
 [Reklam engelleme](/adguard-for-android/features/protection/ad-blocking.md)
 
-## İzleme koruması
+## Tracking protection
 
 Settings that allow you to block tracking tools that collect user information
 

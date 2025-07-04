@@ -35,7 +35,7 @@ DNS servers and DNS filters that let you block ads, trackers, and dangerous webs
 
 [DNS protection](/adguard-for-android/features/protection/dns-protection.md)
 
-## Firewall
+## Tűzfal
 
 A feature that allows you to control Internet access for individual apps
 

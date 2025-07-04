@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
@@ -13,13 +13,13 @@ AdGuard のその他の便利なオプションを紹介いたします。
 
 ### サポート
 
-![サポート \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
+![Support \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/support.png)
 
-「サポート」タブをクリックすると、ダイアログボックスが表示され、バグを報告したり、新機能を提案したり、製品に関するご意見を共有したりすることができます。
+By clicking the _Support_ tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
 
 ### ライセンス
 
-![ライセンス \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![License \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/license.png)
 
 このタブには、ライセンスに関する情報が表示されています。 ここでできること:
 
@@ -28,13 +28,13 @@ AdGuard のその他の便利なオプションを紹介いたします。
 
 ### AdGuardについて
 
-![AdGuardについて \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![About \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/about.png)
 
-このタブには、プログラムの現在のバージョンに関する情報に加え、ライセンス契約、プライバシーポリシー、謝辞、ディスカッション、バージョン履歴ページへの便利なリンクが用載っています。
+In addition to information about the current version of the program, this tab provides some useful links to License agreement, Privacy policy, Acknowledgements, Discussions, and Version history pages.
 
 ### フィルタ更新を確認する
 
-![フィルタ更新を確認する \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![Check for updates \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/updates.png)
 
 フィルタやユーザースクリプトの更新があるかどうかを確認するには、アプリのメイン画面の右上にある回転する🔄のアイコンをクリックします。
 

@@ -20,7 +20,7 @@ sidebar_position: 6
 1. 重新启动 Mac。
 1. 关闭 AdGuard 应用程序，打开**终端**并键入 `systemextensionsctl reset`。
 1. 重新启动 Mac 并进入恢复模式。
-1. 启动 SIP（从**实用工具**菜单启动**终端**，输入 `csrutil disable`）。
+1. 启动 SIP（从**实用工具**菜单启动**终端**，输入 `csrutil enable`）。
 1. 启动 AdGuard 应用程序并启用保护。
 
 ## 在 macOS 10 上无法启动 AdGuard 应用程序的问题

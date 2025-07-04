@@ -27,4 +27,4 @@ AdGuard se angajează să protejeze intimitatea dumneavoastră. Urmăm cu strict
 
 1. Deschideți [repo-ul AdGuard pentru Safari pe GitHub](https://github.com/AdguardTeam/AdGuardForSafari/issues) și faceți clic pe _Problemă nouă_.
 2. Trimiteți fișierul jurnal la devteam@adguard.com. Include ora erorii și atașează un link la problema ta sau numărul acesteia (apare ca #number lângă titlu).
- Alternativ, poți încărca fișierul jurnal pe Google Drive și trimite-l la devteam@adguard.com. Adăugați linkul către fișier în problema dumneavoastră de pe GitHub.
+    Alternativ, poți încărca fișierul jurnal pe Google Drive și trimite-l la devteam@adguard.com. Adăugați linkul către fișier în problema dumneavoastră de pe GitHub.

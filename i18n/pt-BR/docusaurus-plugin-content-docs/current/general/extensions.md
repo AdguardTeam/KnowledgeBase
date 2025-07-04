@@ -363,30 +363,30 @@ Nós não somos compatíveis com userstyles que contenham `@var` ou `@advanced` 
 
 3. Para criar um estilo de usuário, primeiro escreva o título com metadados, por exemplo
 
- ```CSS
- /* ==UserStyle==
- @name New userstyle
- @version 1.0
- ==/UserStyle== */
- ```
+    ```CSS
+    /* ==UserStyle==
+    @name New userstyle
+    @version 1.0
+    ==/UserStyle== */
+    ```
 
 4. Escreva a parte CSS depois dos metadados. O AdGuard oferece compatibilidade com nomes de domínio de site correspondentes (`@-moz-document domain(…), …`). Por exemplo:
 
- ```CSS
- body {
-   background: gray;
-   }
- ```
+    ```CSS
+    body {
+      background: gray;
+      }
+    ```
 
- Ou:
+    Ou:
 
- ```CSS
- @-moz-document domain('example.org'),
- domain('example.net'),
- domain('example.com') body {
-   background: gray;
-   }
- ```
+    ```CSS
+    @-moz-document domain('example.org'),
+    domain('example.net'),
+    domain('example.com') body {
+      background: gray;
+      }
+    ```
 
 5. Quando terminar, pressione _Salvar e Fechar_. Seu novo userstyle foi adicionado com sucesso ao AdGuard
 
