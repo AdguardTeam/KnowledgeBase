@@ -15,11 +15,11 @@ AdGuard가 Firefox에서 HTTPS 트래픽을 성공적으로 필터링하기 위�
 
 :::note
 
-이 방법은 Firefox Nightly 90.0a1 이상 버전에서만 사용될 수 있습니다. Firefox의 베타 및 일반 버전이 v90에 도달하면 이 방법을 해당 버전에도 적용할 수 있습니다.
+이 방법은 Firefox 90.0 이상 버전에서만 사용될 수 있습니다.
 
 :::
 
-Firefox Nightly가 AdGuard 인증서를 신뢰하도록 하려면 다음 단계를 따르십시오.
+Firefox가 AdGuard 인증서를 신뢰하도록 하려면 다음 단계를 따르십시오.
 
 1. Run the browser.
 
