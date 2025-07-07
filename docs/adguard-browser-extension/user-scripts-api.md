@@ -11,7 +11,7 @@ This article is about AdGuard Browser Extension, which safeguards only your brow
 
 When adding a custom filter or user rule, a notification will appear asking you to enable developer mode to use these features in the extension:
 
-![Notification *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/dev-mode-ext.png)
+![Notification *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/notification-allow-user-scripts.jpg)
 
 This is because, starting with version 5.2, AdGuard Browser Extension uses the User Scripts API . In other words, the extension now uses script-based rules.
 
@@ -21,6 +21,18 @@ The User Scripts API is a set of browser-provided functions and capabilities tha
 
 With the shift to Chrome’s Manifest V3, many older methods of injecting scripts are limited or delayed. However, there is an exception for the User Scripts API.
 
-## What happens when you enable the Developer mode
+## How to enable the Developer mode
 
-You must either enable Developer mode (for Chrome versions prior to 138) or the *Allow User Scripts* toggle (for Chrome version 138 and later). Doing so gives the extension a reliable and secure method of injecting scripts into web pages at the optimal time. This allows you to use custom filters and JavaScript rules in *User Rules*.
+To use custom filters and JavaScript rules in the tab *User Rules*, you have to set up your browser first. This will give the extension a reliable and secure method of injecting scripts into web pages at the optimal time. To do so, follow the instruction below, depending on your Chrome version.
+
+### For Chrome versions prior to 138
+
+You must enable the Developer mode for extensions. To do it, open the Chrome menu by clicking the three dots in the upper-right corner, go to *Extensions* ⭢ *Manage Exetensions*. Toggle the "Developer mode" switch in the upper-right corner:
+
+![Manage Extensions *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer-mode-enable.jpg)
+
+### For Chrome version 138 and later
+
+You must enable the *Allow User Scripts* toggle. To do it, open the Chrome menu by clicking the three dots in the upper-right corner, go to *Extensions* ⭢ *Manage Exetensions*. Toggle the *Allow User Scripts* switch.
+
+![Manage Extensions *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow-user-scripts-ext.jpg)
