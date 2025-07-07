@@ -13,11 +13,11 @@ When adding a custom filter or user rule, a notification will appear asking you 
 
 ![Notification *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/notification-allow-user-scripts.jpg)
 
-This is because, starting with version 5.2, AdGuard Browser Extension uses the User Scripts API . In other words, the extension now uses script-based rules.
+This is because, starting with version 5.2, AdGuard Browser Extension uses the User Scripts API. This new API is required by Chrome to follow the best practices for user safety.
 
 ## What is the User Scripts API?
 
-The User Scripts API is a set of browser-provided functions and capabilities that allow extensions to run custom JavaScript scripts on web pages. These are often used to modify or enhance websites in ways that aren’t originally provided by the website itself.
+The User Scripts API is a tool that allows extensions to run customized JavaScript scripts on webpages. These are often used to modify or enhance websites in ways that aren’t originally provided by the website itself.
 
 With the shift to Chrome’s Manifest V3, many older methods of injecting scripts are limited or delayed. However, there is an exception for the User Scripts API.
 
@@ -29,10 +29,10 @@ To use custom filters and JavaScript rules in the tab *User Rules*, you have to 
 
 You must enable the Developer mode for extensions. To do it, open the Chrome menu by clicking the three dots in the upper-right corner, go to *Extensions* ⭢ *Manage Exetensions*. Toggle the "Developer mode" switch in the upper-right corner:
 
-![Manage Extensions *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer-mode-enable.jpg)
+![Manage Extensions *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer-mode-enable1.jpg)
 
 ### For Chrome version 138 and later
 
 You must enable the *Allow User Scripts* toggle. To do it, open the Chrome menu by clicking the three dots in the upper-right corner, go to *Extensions* ⭢ *Manage Exetensions*. Toggle the *Allow User Scripts* switch.
 
-![Manage Extensions *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow-user-scripts-ext.jpg)
+![Manage Extensions *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow-user-scripts1.jpg)
