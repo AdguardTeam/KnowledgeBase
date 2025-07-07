@@ -5,29 +5,29 @@ sidebar_position: 2
 
 :::info
 
-Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
 _Impostazioni_ è la sezione che richiede maggiore attenzione. Qui, puoi configurare l'app così che soddisfi pienamente le tue esigenze: blocchi soltanto ciò che ti infastidisce, utilizzi il server DNS del fornitore di fiducia, rimuova i cookie di terze parti e così via.
 
-![Impostazioni \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings.png)
+![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/general_settings.png)
 
 ### Impostazioni generali
 
 Qui, puoi impostare la lingua e il tema (Scuro o Chiaro), abilitare l'avvio di AdGuard all'avvio del sistema e silenziare gli aggiornamenti automatici, scegliere il canale d'aggiornamento e filtrare l'intervallo di controllo per gli aggiornamenti. Inoltre, Impostazioni è il posto in cui andare se AdGuard per Windows non funziona correttamente e se il team di supporto ti ha richiesto di [raccogliere i _Registri di debug_](/adguard-for-windows/solving-problems/adguard-logs.md).
 
-![Impostazioni Avanzate \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
+![Advanced Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/advanced_settings.png)
 
-In fondo alla schermata, troverai le _Impostazioni Avanzate_. Modificarne alcune in modo irragionevole, potrebbe causare problemi con le prestazioni di AdGuard, interrompere la connessione a Internet o compromettere la tua sicurezza e privacy. Ecco perché ti suggeriamo di aprire questa sezione soltanto se sai ciò che stai facendo o se il nostro team di supporto ti ha chiesto di farlo. Se desideri scoprire cosa è possibile configurare nelle _Impostazioni Avanzate_, leggi l'[articolo dedicato](/adguard-for-windows/solving-problems/low-level-settings.md).
+In fondo alla schermata, troverai le _Impostazioni Avanzate_. Changing some of them mindlessly may potentially cause problems with AdGuard’s performance, break the Internet connection or compromise your security and privacy. That’s why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in _Advanced Settings_, read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
 
-### Blocco degli Annunci
+### Ad blocking
 
 Questo è il modulo principale di AdGuard per Windows che rimuove gli annunci dai siti web che visiti e dalle app installate sul tuo dispositivo. Per filtrare i contenuti inserzionistici e che minacciano la privacy, quali banner, popup, o tracciatori, AdGuard utilizza filtri differenti: gruppi di regole con uno scopo simile, scritte con una [sintassi speciale](/general/ad-filtering/create-own-filters). Per comprendere cosa sono i filtri e come funzionano, leggi [questo articolo](/general/ad-filtering/how-ad-blocking-works).
 
-![Blocco inserzioni \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
+![Ad blocking \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/ad_blocking.png)
 
-Nel modulo Blocco Annunci puoi:
+In the Ad blocking module you can:
 
 - abilitare l'attivazione automatica dei filtri specifici per lingua,
 - disabilitare il blocco [degli annunci di ricerca e dell'auto-promozione](/general/ad-filtering/search-ads) blocking,
@@ -40,11 +40,11 @@ Nel modulo Blocco Annunci puoi:
 
 Prima d'iniziare a scrivere manualmente le tue regole, leggi la nostra dettagliata [guida alla sintassi](/general/ad-filtering/create-own-filters).
 
-### Modalità Invisibilità
+### Tracking protection
 
-Molti siti web raccolgono informazioni sui propri visitatori, quali i loro indirizzi IP, informazioni sul browser e il sistema operativo installato, risoluzione dello schermo e persino la pagina da cui l'utente proviene o è stato reindirizzato. Alcune pagine web utilizzano i cookie per contrassegnare il browser e salvare le tue impostazioni personali, le preferenze dell'utente o per "riconoscerti" alla tua visita successiva. La Modalità Stealth salvaguarda le tue informazioni personali da tali sistemi di raccolta di dati e statistiche.
+Molti siti web raccolgono informazioni sui propri visitatori, quali i loro indirizzi IP, informazioni sul browser e il sistema operativo installato, risoluzione dello schermo e persino la pagina da cui l'utente proviene o è stato reindirizzato. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or “recognize” you upon your next visit. _Tracking protection_ safeguards your personal information from such data and statistics gathering systems.
 
-![Modalità Stealth \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/stealth-mode.png)
+![Tracking protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection.png)
 
 Puoi regolare in modo flessibile il funzionamento della Modalità Stealth: ad esempio, puoi impedire al sito web di ricevere la richiesta di ricerca che hai utilizzato per trovarlo su Internet, eliminare automaticamente i cookie di terze parti e del sito web e disabilitare la condivisione della posizione sul tuo browser, utilizzabile per tracciare la tua posizione.
 
@@ -52,7 +52,7 @@ Per imparare tutto sulla Modalità Stealth e sulle sue tante opzioni, [leggi que
 
 ### Sicurezza di navigazione
 
-La Sicurezza di navigazione offre una forte protezione dai siti web dannosi e di phishing. No, AdGuard per Windows non è un antivirus. Non interromperà il download di un virus quando è già avviato, né eliminerà quelli già esistenti. Ma ti avviserà se stai per procedere a un sito web il cui dominio è stato aggiunto al nostro database dei "siti non attendibili" o se stai per scaricare un file da tale sito web. Puoi trovare ulteriori informazioni sul funzionamento di questo modulo nell'[articolo dedicato](/general/browsing-security).
+La Sicurezza di navigazione offre una forte protezione dai siti web dannosi e di phishing. No, AdGuard per Windows non è un antivirus. It will neither stop the download of a virus when it’s already started, nor delete the already existing ones. But it will warn you if you’re about to proceed to a website whose domain has been added to our “untrusted sites” database, or to download a file from such website. Puoi trovare ulteriori informazioni sul funzionamento di questo modulo nell'[articolo dedicato](/general/browsing-security).
 
 In questo modulo, puoi:
 
@@ -60,7 +60,7 @@ In questo modulo, puoi:
 - attivare le notifiche sonore,
 - acconsentire all'invio di informazioni anonime correlate alla sicurezza al server di AdGuard, per aiutarci a mantenere aggiornato il database dei siti web dannosi e di phishing.
 
-![Sicurezza di navigazione \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
+![Browsing security \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/browsing_security.png)
 
 Nel caso in cui tu desideri scoprire di più sulla Sicurezza di navigazione, leggi [questo articolo](/general/browsing-security/).
 
@@ -68,7 +68,7 @@ Nel caso in cui tu desideri scoprire di più sulla Sicurezza di navigazione, leg
 
 Esistono tre motivi significativi per cui potresti voler esplorare le impostazioni di Protezione DNS. Primo, per evitare di essere tracciato dal tuo ISP. Ogni volta che apri un sito web, ad esempio 'google.com', il tuo browser invia una richiesta a un server DNS per ottenere in cambio l'indirizzo IP del sito web. Solitamente, il server DNS appartiene al tuo ISP, che gli consente di tracciare la tua attività online. Secondo, per crittografare il tuo traffico DNS. E il terzo è [bloccare contenuti al livello del DNS](https://adguard-dns.io/kb/general/dns-filtering/).
 
-![Protezione DNS \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
+![DNS Protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/dns_protection.png)
 
 Nel modulo di Protezione DNS di AdGuard per Windows, puoi selezionare i server DNS dai fornitori noti, incluso AdGuard DNS che blocca inserzioni e tracciatori, AdGuard DNS Protezione Famiglie, che blocca anche i contenuti per adulti, o AdGuard DNS Senza filtraggio, che fornisce una connessione sicura e affidabile, ma non filtra tutto. Puoi anche aggiungere server DNS e regole personali utilizzando la [sintassi delle regole DNS](https://adguard-dns.io/kb/general/dns-filtering-syntax/). E, se necessario, puoi aggiungere dei [filtri DNS di tua scelta](https://filterlists.com).
 
@@ -83,18 +83,16 @@ A partire dalla v7.20, puoi anche aggiungere filtri semplicemente selezionandoli
 
 ### Controllo Parentale
 
-Esistono numerosi siti web a cui dovrebbe essere limitato l'accesso da un PC utilizzato da bambini. Questo compito è svolto dal Controllo Parentale.
+Esistono numerosi siti web a cui dovrebbe essere limitato l'accesso da un PC utilizzato da bambini. This task is accomplished by _Parental Control_.
 
-![Controllo Parentale \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
+![Parental Control \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/parental_control.png)
 
 Il modulo controlla i contenuti delle pagine web aperte nel browser e filtra quelle con contenuti indesiderabili per i bambini: immagini e testi per adulti, linguaggio volgare, violenza, sostanze stupefacenti, etc. Le impostazioni del Controllo Parentale sono protette da password, così che i bambini non possano aggirare le limitazioni. Questo modulo non blocca soltanto le indicazioni ai siti indesiderati, ma può anche eliminare i collegamenti inappropriati per i bambini, dai risultati di ricerca.
 
 Nel modulo _Controllo Parentale_, puoi abilitare la _Ricerca sicura_ e gestire l'_elenco di blocco_ e l'_elenco consentiti_ per personalizzare il funzionamento d quest'opzione. Inoltre, puoi anche spuntare la casella _Blocca download file eseguibili_ per impedire ai tuoi figli di scaricare e installare software sul computer. Esistono ancora altre due opzioni nel modulo _Controllo Parentale_: puoi selezionare un utente di Windows specifico da proteggere con il _Controllo Parentale_ e impostare una password per proteggere le impostazioni di AdGuard dalla modifica.
 
-![Controllo Parentale \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
-
 ### Browser Assistant
 
-![Browser Assistant \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Browser Assistant \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/browser_assistant.png)
 
-Da questa scheda, puoi facilmente procedere all'installazione di AdGuard Browser Assistant, la cui funzionalità principale è gestire il filtraggio direttamente dal browser. Abbiamo spiegato di più sul funzionamento e sul da farsi se non è presente alcun Browser Assistant per il tuo browser, in un [articolo separato](/adguard-for-windows/browser-assistant.md).
+From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](/adguard-for-windows/browser-assistant.md).

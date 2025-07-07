@@ -31,6 +31,6 @@ AdGuard for Safari には6つのコンテンツブロッカーがあります:
 1. AdGuard for Safari アプリを開きます。
 2. 下にスクロールし、「_コンテンツブロッカー_」をクリックします。
 3. 各コンテンツブロッカーの下には、有効なフィルタの数と有効なルールの数が表示されます。
- ![コンテンツ ブロッカー](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
+    ![コンテンツ ブロッカー](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
 
 いずれかのコンテンツブロッカーで150,000以上のルールが有効になっている場合、一部のフィルタまたはユーザールールを無効にする必要があります。 「_フィルタ_」タブに移動し、問題のあるフィルタカテゴリーを選択し、不要なフィルターやユーザールールを無効にしてください。

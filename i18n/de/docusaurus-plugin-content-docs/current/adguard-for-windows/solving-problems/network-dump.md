@@ -1,5 +1,5 @@
 ---
-title: How to collect network dump with WireShark
+title: So erfassen Sie Netzwerk-Dumps mit WireShark
 sidebar_position: 12
 ---
 
@@ -9,38 +9,38 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 :::
 
-Sometimes, diagnosing network issues requires seeing exactly how your device communicates with the Internet. Collecting a network dump allows us to analyze this traffic and find the cause of your problem. In this guide, we will show you how to capture a network dump using Wireshark.
+Um Netzwerkprobleme zu diagnostizieren, muss man mitunter genau prüfen, wie Ihr Gerät mit dem Internet kommuniziert. Das Erfassen eines Netzwerk-Dumps ermöglicht es uns, diesen Datenverkehr zu analysieren und die Ursache für Ihr Problem zu finden. In dieser Anleitung wird gezeigt, wie Sie mit Wireshark einen Netzwerk-Dump erfassen können.
 
-::: note
+:::note
 
-Data and files provided in dump files are processed in accordance with the [AdGuard Privacy policy](https://adguard.com/privacy.html).
+Daten und Dateien, die in Dump-Dateien bereitgestellt werden, werden gemäß der [Datenschutzerklärung von AdGuard] (https://adguard.com/privacy.html) verarbeitet.
 
 :::
 
-## 1. Install Wireshark
+## 1. Wireshark installieren
 
-Download Wireshark from the [official website](https://www.wireshark.org/download.html). Run the installer and follow the instructions. When prompted, install Npcap — this driver is necessary for Wireshark to capture network packets.
+Laden Sie Wireshark von der [offiziellen Website](https://www.wireshark.org/download.html) herunter. Führen Sie das Installationsprogramm aus und folgen Sie den Anweisungen. Wenn Sie dazu aufgefordert werden, installieren Sie Npcap (Dieser Treiber ist notwendig, damit Wireshark Netzwerkpakete erfassen kann).
 
-## 2. Prepare for capture
+## 2. Erfassung vorbereiten
 
-Before starting, **close all unnecessary programs and browser tabs**. This will help reduce unrelated data in the dump.
+Schließen Sie vor dem Start **alle unnötigen Programme und Browser-Tabs**. Dadurch wird die Anzahl der nicht zugehörigen Daten im Dump reduziert.
 
-## 3. Capture network traffic
+## 3. Netzwerkverkehr aufzeichnen
 
-Open Wireshark, and you will see a list of network interfaces. Select the one you need: Ethernet if you have a wired connection, or Wireless if you’re using Wi-Fi.
+Öffnen Sie Wireshark, und es wird eine Liste der Netzwerkschnittstellen angezeigt. Wählen Sie die gewünschte Option: Ethernet, wenn Sie eine kabelgebundene Verbindung nutzen, oder Wireless, wenn Sie über eine WLAN-Verbindung verbunden sind.
 
-If you’re not sure which interface to choose, pick the one with the most activity in the graph — the higher the graph, the more traffic goes through it.
+Wenn Sie sich nicht sicher sind, welche Schnittstelle Sie wählen sollen, wählen Sie diejenige mit der höchsten Aktivität im Diagramm (je höher das Diagramm, desto mehr Datenverkehr fließt durch sie).
 
-![Main screen](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/main_screen.png)
+![Hauptbildschirm](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/main_screen.png)
 
-Double-click the selected interface to start the capture. Now, reproduce the issue you are experiencing, making sure to perform only the necessary actions to trigger the problem and avoid any other processes. This helps isolate the issue and ensures relevant traffic is recorded.
+Doppelklicken Sie auf die ausgewählte Schnittstelle, um die Erfassung zu starten. Reproduzieren Sie nun das Problem, das bei Ihnen auftritt, und stellen Sie sicher, dass Sie nur die notwendigen Aktionen durchführen, um das Problem auszulösen und alle anderen Prozesse zu vermeiden. Dies hilft, das Problem einzugrenzen und stellt sicher, dass nur der relevante Datenverkehr aufgezeichnet wird.
 
-## 4. Stop capture and save the dump
+## 4. Erfassung beenden und Aufzeichnung speichern
 
-After reproducing the issue, click the red Stop button at the top to finish the capture.
+Nachdem Sie das Problem reproduziert haben, klicken Sie oben auf die rote Schaltfläche „Stopp“, um die Erfassung zu beenden.
 
-![Capture process \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/capturing_process.png)
+![Erfassungsprozess \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/capturing_process.png)
 
-To save the data, press Ctrl+S, enter a file name, and choose the .pcapng format. That’s it — your network dump file is ready.
+Um die Daten zu speichern, drücken Sie Strg+S, vergeben einen Dateinamen und wählen das Format .pcapng. Das war's – Ihre Netzwerk-Dump-Datei ist erstellt.
 
-When sending the dump, please also provide a timeline of events. Describe the main actions you took, such as when you launched the app and the steps that led to the issue, and include the approximate time the issue occurred.
+Wenn Sie den Dump senden, geben Sie bitte auch eine Zeitleiste der Ereignisse an. Beschreiben Sie die wichtigsten Maßnahmen, die Sie ergriffen haben, z. B. wann Sie die Anwendung gestartet haben und welche Schritte zu dem Problem geführt haben, und geben Sie die ungefähre Uhrzeit an, zu der das Problem aufgetreten ist.

@@ -9,16 +9,16 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-If you install AdGuard to [the *Secure folder* on your Android](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) (this applies mainly to Samsung devices), you may face some difficulties when installing the HTTPS certificate. Mesele şu ki, *Secure klasörü* sertifikaların depolandığı kendi alanına sahiptir. However, if you do everything according to the regular certificate installation instructions ([described here](/adguard-for-android/features/settings#https-filtering)), the certificate will be installed into the main memory and will play no role for your ad blocker in the *Secure folder*. Bu sorunu çözmek ve Android için AdGuard sertifikasını *Secure klasörünün* depolama alanına yüklemek için lütfen aşağıdaki talimatları izleyin:
+If you install AdGuard [in the *Secure folder*](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) on your Android device (this mainly applies to Samsung devices), you may have difficulty installing the HTTPS certificate. The *Secure folder* has its own storage space for certificates. However, if you follow the [regular certificate installation instructions](/adguard-for-android/features/settings#https-filtering), the certificate will be installed in the main memory and will not affect your ad blocker in the *Secure folder*. To install the certificate for AdGuard for Android in the *Secure folder’s* storage, follow these instructions instead:
 
-1. Uygulamayı yükledikten ve yerel VPN'i bağladıktan sonra, *HTTPS filtreleme kapalı* mesajının yanındaki **ETKİNLEŞTİR** öğesine dokunun.
-1. **Sonraki** → **Sonraki** → **Şimdi kaydet** → **Sertifikayı kaydet** öğesine dokunun.
+1. After installing the app and connecting the local VPN, tap *HTTPS filtering is off* on the main screen.
+1. Tap **Continue** → **Next** → **Save certificate**.
 1. Sertifikayı kaydedin (bu aşamada, daha sonra bulmayı kolaylaştırmak için yeniden adlandırabilirsiniz, ki bunu yapmanız gerekir).
 1. *Yükleme talimatları* açılır penceresi göründükten sonra, **Ayarları Aç** öğesine **DOKUNMAYIN**.
 1. Uygulamayı simge durumuna küçültün ve *Secure klasörüne* gidin.
-1. Üç noktalı menüye dokunun ve **Ayarlar** → **Diğer güvenlik ayarları** öğesine gidin.
-1. **Güvenlik sertifikaları** → **Cihaz depolama alanından yükle** → **CA sertifikası** → **Yine de yükle** öğesine dokunun
+1. Tap the three-dot menu and go to **Settings** → **Other security settings**.
+1. Tap **Install from device storage** → **CA certificate** → **Install anyway**.
 1. Yüklemeyi grafik anahtarınız/parolanız/parmak izinizle onaylayın.
 1. Önceden kaydedilmiş sertifikayı bulup seçin ve ardından **Bitti** öğesine dokunun.
-1. AdGuard uygulamasına geri dönün ve ana ekrana gidin. *HTTPS filtreleme kapalı* mesajından kurtulmak için uygulamayı kaydırmanız ve yeniden başlatmanız gerekebilir.
+1. AdGuard uygulamasına geri dönün ve ana ekrana gidin.
 1. Tamamlandı! The certificate has been installed.

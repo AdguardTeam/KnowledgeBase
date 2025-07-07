@@ -27,4 +27,4 @@ AdGuard s'engage à protéger votre vie privée. Nous suivons strictement notre 
 
 1. Ouvrez le [dépôt GitHub AdGuard pour Safari](https://github.com/AdguardTeam/AdGuardForSafari/issues) et cliquez sur _Nouveau problème_.
 2. Envoyez le fichier journal à devteam@adguard.com. Indiquez la date du bogue et joignez un lien vers votre problème ou son numéro (il apparaît sous la forme #numéro à côté du titre).
- Vous pouvez également télécharger le fichier journal sur Google Drive et l'envoyer à devteam@adguard.com. Ajoutez le lien du fichier à votre problème GitHub.
+    Vous pouvez également télécharger le fichier journal sur Google Drive et l'envoyer à devteam@adguard.com. Ajoutez le lien du fichier à votre problème GitHub.
