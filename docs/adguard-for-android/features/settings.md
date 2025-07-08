@@ -134,7 +134,7 @@ The *Local VPN* mode doesn't allow AdGuard to be used simultaneously with other 
 
 :::note
 
-Please note that DNS filtering will still be active in *Automatic proxy* mode, and your device might not be able to selectively filter out DNS requests from specific apps. If we compare the situation to VPN mode, apps there are excluded from the local VPN by system means, therefore the system resolver "sees" which apps are included in the VPN and which are not, and either allows them into the local VPN or lets them bypass it. On the other hand, DNS requests come from the system resolver, not from the application. In *Automatic proxy* routing mode, it is only possible to exclude traffic from applications, not their DNS queries — because they are seen by AdGuard as queries from the system.
+Please note that DNS filtering will still be active in *Automatic proxy* routing mode, and your device may not be able to filter DNS requests from specific apps. In *VPN* routing mode, apps are excluded from the local VPN by system means. Therefore, the system resolver sees which apps are included in the VPN and which are not. It either allows them into the local VPN or lets them bypass it. However, DNS requests come from the system resolver, not the application. In *Automatic proxy* mode, it is only possible to exclude traffic from applications, not their DNS queries, because AdGuard sees them as system queries.
 
 :::
 
