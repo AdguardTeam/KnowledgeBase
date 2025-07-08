@@ -20,23 +20,23 @@ A opção para criar um arquivo minidump está desativada por padrão, portanto,
 
 Mesmo que você não encontre nenhum erro de travamento BSoD, você ainda pode comfigurar esta opção. Esta é uma recomendação geral, não necessariamente relacionada aos produtos AdGuard. Siga as instruções abaixo para criar o arquivo minidump automaticamente.
 
- 1. Digite *sysdm.cpl* na barra de pesquisa do Windows e clique em **Abrir**. A janela **Menu de propriedades do sistema** do Painel de Controle aparecerá na tela.
+ 1. Type *sysdm.cpl* in the Windows search bar and click **Open**. The **System Properties Control Panel Menu** window will appear on the screen.
 
     :::dica
 
-    Como alternativa, clique em **Configurações** → **Sistema** → **Sobre** → **Configurações avançadas do sistema**.
+    Alternatively, click **Settings** → **System** → **About** → **Advanced system settings**.
 
 
 :::
 
-    ![Propriedades do sistema *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
+    ![System Properties *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
 
- 1. Vá para a aba **Avançado**.
- 1. Na seção **Inicialização e Recuperação**, clique em **Configurações**.
+ 1. Go to the **Advanced** tab.
+ 1. In the **Startup and Recovery** section, click **Settings**.
 
-    ![Inicialização e recuperação *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
+    ![Startup and Recovery *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
 
- 1. Habilite as três opções a seguir:
+ 1. Enable the following three options:
 
     - Gravar um evento no registro do sistema
     - Reiniciar automaticamente
@@ -54,3 +54,26 @@ Você ativou o arquivo minidump com sucesso. Agora, se o sistema travar, ele ser
 Por padrão, o arquivo minidump é armazenado na pasta **%SystemRoot%\Minidump**. Você pode alterar o local para o diretório que quiser, mas lembre-se de que muitos programas estão configurados para procurar esse local por padrão, portanto, recomendamos que você não altere o local.
 
 :::
+
+## Collecting wfpdiag.cab file
+
+Our support team may request a wfpdiag.cab file, along with a minidump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
+
+1. Ative a proteção do AdGuard.
+
+1. Click *Start* and type `cmd` to open Command Prompt
+
+1. Right-click Command Prompt and choose *Run as administrator*
+
+    :::note
+
+    A wfpdiag.cab file is created in your current directory. You can change the location by typing `cd <folder_name>`.
+
+
+:::
+
+1. To start logging, enter the following command: `netsh wfp capture start`
+
+1. Visit any website to route traffic through AdGuard and log the filtering process
+
+1. To stop logging, enter `netsh wfp capture stop`

@@ -55,6 +55,6 @@ Veuillez noter que les relecteurs ne reçoivent pas de licences ou d'avantages s
 
 ## Cadeaux pour les contributeurs actifs
 
-Chaque année nous envoyons des cadeaux avec des articles de la marque AdGuard à nos meilleurs contributeurs, et nous leur adressons un remerciement sur notre [blog](https://adguard.com/en/blog/best-contributors-2023.html).
+To the best contributors, every year we send gifts with the AdGuard merch and give a shout out on our [blog](https://adguard.com/en/blog/best-contributors-2024.html).
 
 ![Articles de marque AdGuard *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)
