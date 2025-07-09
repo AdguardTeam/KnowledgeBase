@@ -13,7 +13,7 @@ When adding a custom filter or user rule, a notification will appear asking you 
 
 ![Notification *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/notification-allow-user-scripts.jpg)
 
-This is because, starting with version 5.2, AdGuard Browser Extension uses the User Scripts API. This new API is required by Chrome to follow the best practices for user safety.
+Starting with version 5.2, AdGuard Browser Extension uses the User Scripts API. Chrome requires this new API to follow best practices for user safety.
 
 ## What is the User Scripts API?
 
