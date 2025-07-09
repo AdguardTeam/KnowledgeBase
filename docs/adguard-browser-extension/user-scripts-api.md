@@ -23,7 +23,7 @@ With the shift to Chrome’s Manifest V3, many older methods of injecting script
 
 ## How to enable the Developer mode
 
-To use custom filters and JavaScript rules in the tab *User Rules*, you have to set up your browser first. This will give the extension a reliable and secure method of injecting scripts into web pages at the optimal time. To do so, follow the instruction below, depending on your Chrome version.
+To use custom filters and JavaScript rules in the *User Rules* tab, you must set up your browser first. This will give the extension a reliable and secure method of injecting scripts into webpages at the optimal time. Follow the instructions below depending on your Chrome version.
 
 ### For Chrome versions prior to 138
 
