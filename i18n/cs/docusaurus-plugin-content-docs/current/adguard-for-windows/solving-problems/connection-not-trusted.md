@@ -13,11 +13,11 @@ Aby mohl AdGuard filtrovat provoz HTTPS a účinně blokovat reklamy a slídiče
 
 Prohlížeče obvykle důvěřují AdGuard certifikátu, jakmile je přidán do systémového úložiště certifikátů během procesu instalace. V některých případech to však nestačí a můžete narazit na varování nebo chyby. Nejčastěji se to stává v prohlížečích založených na Firefoxu, jako jsou Mozilla Firefox, PaleMoon, Waterfox atd., nebo v prohlížeči Yandex.Browser.
 
-Here are some common issues:
+Zde jsou některé běžné problémy:
 
 - [*Potenciální chyba bezpečnostního rizika* v prohlížečích založených na Firefoxu](#potential-security-risk-error-in-firefox-based-browsers)
 - [Upozornění na certifikát Yandex.Browser](#yandexbrowser-certificate-warning)
-- [Non-official add-ons don’t update in Firefox-based browsers](#non-official-add-ons-dont-update-in-firefox-based-browsers)
+- [V prohlížečích Firefox se neaktualizují neoficiální doplňky](#non-official-add-ons-dont-update-in-firefox-based-browsers)
 
 ## *Potenciální chyba bezpečnostního rizika* v prohlížečích založených na Firefoxu
 
@@ -84,14 +84,14 @@ Nejjednodušší způsob je kliknout na tlačítko **Přejít na web**. Tím ře
 
 Vypnutím HTTPS filtrování v AdGuardu také zabráníte tomu, aby prohlížeč Yandex.Browser tuto zprávu znovu zobrazoval, ale má to velkou nevýhodu: zobrazí se všechny reklamy, které se načítají pomocí HTTPS (včetně **vlastních reklam společnosti Yandex**) — např. na webových stránkách YouTube, Facebook, Instagram a mnoha dalších. Pokud chcete zachovat vysokou kvalitu blokování reklam, důrazně vám to nedoporučujeme.
 
-## Non-official add-ons don’t update in Firefox-based browsers
+## V prohlížečích Firefox se neaktualizují neoficiální doplňky
 
-If you use Firefox-based browsers and have add-ons that aren’t from Mozilla’s official catalog — and HTTPS filtering is enabled in AdGuard — those add-ons won’t be able to update. Here’s why.
+Pokud používáte prohlížeče Firefox a máte doplňky, které nejsou z oficiálního katalogu Mozilly — a v AdGuardu je povoleno filtrování HTTPS — tyto doplňky nebude možné aktualizovat. Zde je důvod.
 
-To update add-ons, Firefox checks whether the connection to the update server is secured with a certificate issued by a trusted certificate authority (CA). Firefox-based browsers only trust certificates from CAs included in Mozilla’s built-in list — it’s a security measure to block potentially unsafe updates.
+Při aktualizaci doplňků Firefox kontroluje, zda je připojení k aktualizačnímu serveru zabezpečeno certifikátem vydaným důvěryhodnou certifikační autoritou. Prohlížeče založené na prohlížeči Firefox důvěřují pouze certifikátům certifikačních autorit zařazených do integrovaného seznamu Mozilly — jedná se o bezpečnostní opatření k blokování potenciálně nebezpečných aktualizací.
 
-AdGuard’s certificate, although secure, isn’t on that list. That is why Mozilla domains are excluded from HTTPS filtering in AdGuard.
+Certifikát AdGuardu, ačkoliv je zabezpečený, není na tomto seznamu. Proto jsou domény Mozilla z filtrování HTTPS v AdGuardu vyloučeny.
 
-However, non-official add-ons use third-party servers for updates, and those are not excluded from HTTPS filtering by default. So when Firefox checks the connection, it sees AdGuard’s certificate instead of the original one — and blocks the update.
+Neoficiální doplňky však používají pro aktualizace servery třetích stran a ty nejsou ve výchozím nastavení z filtrování HTTPS vyloučeny. Když tedy Firefox kontroluje připojení, vidí místo původního certifikátu certifikát AdGuard — a aktualizaci zablokuje.
 
-If you need to check for updates for such add-ons, consider temporarily disabling AdGuard.
+Pokud potřebujete zkontrolovat aktualizace takových doplňků, zvažte dočasné vypnutí AdGuardu.
