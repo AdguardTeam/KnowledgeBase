@@ -27,7 +27,7 @@ To use custom filters and JavaScript rules in the *User Rules* tab, you must set
 
 ### For Chrome versions prior to 138
 
-You must enable the Developer mode for extensions. To do it, open the Chrome menu by clicking the three dots in the upper-right corner, go to *Extensions* ⭢ *Manage Exetensions*. Toggle the "Developer mode" switch in the upper-right corner:
+You must enable Developer mode for extensions. To do so, open the Chrome menu by clicking the three dots in the upper-right corner, go to *Extensions* ⭢ *Manage extensions*, and toggle the *Developer mode* switch.
 
 ![Manage Extensions *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer-mode-enable1.jpg)
 
