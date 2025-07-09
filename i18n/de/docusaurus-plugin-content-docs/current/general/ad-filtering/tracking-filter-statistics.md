@@ -13,7 +13,7 @@ Die Option *Bei Verbesserung der AdGuard-Filter helfen* ist standardmäßig deak
 
 Definieren wir zunächst, was Werbefilter sind. Dank dieser Filter entfernt AdGuard Werbung von Websites. Sie werden manuell auf der Grundlage Ihrer Beschwerden über Werbung auf Websites zusammengestellt. Werbefilter sind ein wesentliches Element von AdGuard — ihre Qualität bestimmt die Gesamtqualität der von AdGuard gesperrten Werbung.
 
-Allerdings gibt es auch eine Kehrseite. Im Laufe der Jahre sind mehr und mehr Werbefilter aufgetaucht. Und je mehr Werbefilter vorhanden sind, desto mehr Arbeitsspeicher verbraucht AdGuard und verlangsamt damit das Aufbereiten von Webseiten. Gleichzeitig beginnen einige der Filter zu verfallen und werden allmählich zu einem Ballast, der keinen Nutzen hat, nur Speicher verbraucht und das Programm verlangsamt.
+Allerdings gibt es auch eine Kehrseite. Over the years, more and more ad filters have appeared. The more ad filters there are, the more memory AdGuard consumes, thus slowing down the rendering of webpages. At the same time, some filters expire and gradually become useless, consuming memory and slowing down the program.
 
 ### Warum werden Statistiken benötigt?
 

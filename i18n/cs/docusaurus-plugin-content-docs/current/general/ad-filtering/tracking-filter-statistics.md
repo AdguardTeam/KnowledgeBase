@@ -13,7 +13,7 @@ Možnost *Odesílat statistiky o použití filtrů reklam* je ve výchozím nast
 
 Nejprve si definujme, co jsou to filtry reklam. Díky těmto filtrům AdGuard odstraňuje reklamy z webových stránek. Jsou sestavovány ručně na základě vašich stížností na reklamy na webových stránkách. Filtry reklam jsou základním prvkem AdGuardu – jejich kvalita určuje celkovou kvalitu blokování reklam AdGuardem.
 
-Má to však i svou nevýhodu. V průběhu let se objevuje stále více filtrů reklam. Čím více je filtrů reklam, tím více paměti AdGuard spotřebovává a tím zpomaluje vykreslování webových stránek. Zároveň některé filtry začnou dosluhovat a postupně se stávají nefunkční. Nemají využití, pouze spotřebovávají paměť a zpomalují program.
+Má to však i svou nevýhodu. Over the years, more and more ad filters have appeared. The more ad filters there are, the more memory AdGuard consumes, thus slowing down the rendering of webpages. At the same time, some filters expire and gradually become useless, consuming memory and slowing down the program.
 
 ### Proč potřebujeme statistiky?
 

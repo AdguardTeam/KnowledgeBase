@@ -13,7 +13,7 @@ sidebar_position: 4
 
 Reklam filtrelerinin ne olduğunu tanımlayarak başlayalım. Bu filtreler sayesinde AdGuard sitelerdeki reklamları kaldırır. Sitelerdeki reklamlarla ilgili şikayetlerinize göre elle derlenirler. Reklam filtreleri AdGuard'ın önemli bir unsurudur — kaliteleri AdGuard reklam engellemenin genel kalitesini belirler.
 
-Ancak bir dezavantajı vardır. Yıllar geçtikçe giderek daha fazla reklam filtresi ortaya çıkıyor. Ve ne kadar çok reklam filtresi varsa, AdGuard o kadar çok bellek tüketir, dolayısıyla web sayfalarının oluşturulması yavaşlar. Aynı zamanda, bazı filtrelerin süresi sona ermeye ve yavaş yavaş faydası olmayan, yalnızca hafıza tüketen ve programı yavaşlatan bir yük hâline gelir.
+Ancak bir dezavantajı vardır. Over the years, more and more ad filters have appeared. The more ad filters there are, the more memory AdGuard consumes, thus slowing down the rendering of webpages. At the same time, some filters expire and gradually become useless, consuming memory and slowing down the program.
 
 ### Why do we need statistics?
 
