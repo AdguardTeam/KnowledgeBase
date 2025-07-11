@@ -11,7 +11,7 @@ Este artigo é sobre o AdGuard para Android, um bloqueador de anúncios multifun
 
 Na v4.7, o AdGuard para Android introduziu um navegador privado no aplicativo. Você pode acessá-lo a partir da tela principal tocando no botão _Navegador privado_ ou na aba _Proteção_, onde você pode encontrar algumas opções de personalização.
 
-![Navegador privado](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
+![Private browser \*mobile](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
 
 Veja o que você pode configurar:
 
