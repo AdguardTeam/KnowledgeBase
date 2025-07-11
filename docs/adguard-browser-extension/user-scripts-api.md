@@ -21,6 +21,8 @@ The User Scripts API is a tool that allows extensions to run customized JavaScri
 
 With the shift to Chrome’s Manifest V3, many older methods of injecting scripts are limited or delayed. However, there is an exception for the User Scripts API.
 
+Learn more about the impacts of the MV3 policies in our [blog post](https://adguard.com/en/blog/review-issues-in-chrome-web-store.html).
+
 ## How to enable the Developer mode
 
 To use custom filters and JavaScript rules in the *User Rules* tab, you must set up your browser first. This will give the extension a reliable and secure method of injecting scripts into webpages at the optimal time. Follow the instructions below depending on your Chrome version.
