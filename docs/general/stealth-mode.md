@@ -3,7 +3,7 @@ title: Tracking protection (formerly Stealth Mode)
 sidebar_position: 4
 ---
 
-Many websites gather information about their visitors, including their IP address, installed browser and operating system, screen resolution, and even the page from which they were redirected. Some web pages use cookies to mark your browser and save your settings and preferences, or to "recognize" you upon your next visit. **Tracking protection** safeguards your personal information from such data- and statistics-gathering systems.
+Many websites gather information about their visitors, including their IP address, installed browser and operating system, screen resolution, and even the page from which they were redirected. Some web pages use cookies to mark your browser and save your settings and preferences, or to “recognize” you upon your next visit. **Tracking protection** safeguards your personal information from such data- and statistics-gathering systems.
 
 You can adjust the tracking protection settings as needed. For example, you can prevent websites from receiving search engine requests that led you to them. You can automatically delete third-party and first-party cookies. You can also turn off browser geolocation sharing, which can be used to track your location. You can hide your true IP address or replace it with an arbitrary one.
 
