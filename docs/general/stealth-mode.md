@@ -133,7 +133,7 @@ Enabling this option can disrupt the work of certain browser applications, such 
 
 This feature blocks push notifications from websites.
 
-The Push API enables servers to send messages to web applications regardless of the activity status of your browser. This means that you can see notifications from various websites even when your browser is minimized or closed. Enable this option to block the browser's Push API completely.
+The Push API enables servers to send messages to web applications regardless of the activity status of your browser. This means that you can see notifications from various websites even when your browser is minimized or closed. Enable this option to block the browser’s Push API completely.
 
 ### Block Location API {#location}
 
