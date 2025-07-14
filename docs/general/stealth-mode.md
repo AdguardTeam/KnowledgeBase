@@ -19,15 +19,15 @@ Some features are only available for certain products because of limitations fro
 
 ### Block trackers {#blocktrackers}
 
-This feature blocks trackers and web analytics using AdGuard Tracking Protection filter.
+This feature blocks trackers and web analytics using the AdGuard Tracking Protection filter.
 
 ### Remove tracking parameters from URLs {#removetracking}
 
-If you enable this feature, AdGuard will use the AdGuard URL Tracking filter to remove tracking parameters like `utm_*` and `fb_ref` from page URLs.
+If you enable this feature, AdGuard will use its AdGuard URL Tracking filter to remove tracking parameters like `utm_*` and `fb_ref` from page URLs.
 
 ### Hide search queries {#searchqueries}
 
-This feature hides your searches from websites that you visit via search engine results. For example, when you are sent to a website through a search engine like Google or Yahoo, this feature hides the search query you used to find that website.
+This feature hides your search query from websites that you visit via search engine results. For example, when you open a website through a search engine like Google or Yahoo, this feature hides the search query you used to find that website.
 
 ### Ask websites not to track me {#donottrack}
 
@@ -39,7 +39,7 @@ This feature displays other privacy filters enabled in **Filters**.
 
 :::note
 
-Available in: AdGuard for Android and AdGuard for Windows.
+Available in AdGuard for Android and AdGuard for Windows.
 
 :::
 
@@ -49,9 +49,9 @@ Available in: AdGuard for Android and AdGuard for Windows.
 
 This feature prevents advertisers from tracking your behavior across multiple pages by limiting the lifetime of third-party cookies.
 
-Websites use cookies to store your information and preferences, such as the language you selected, your location, or the list of items in your shopping cart. When you return to a website, your browser sends the website your cookies belonging to the website, allowing it to "remember" your data.
+Websites use cookies to store your information and preferences, such as the language you selected, your location, or the list of items in your shopping cart. When you return to a website, your browser sends the website your cookies belonging to the website, allowing it to “remember” your data.
 
-Third-party cookies are those implemented by a website that is different from the one you are currently browsing. For example, cnn.com may have a Facebook "Like" widget on its homepage. This widget implements a cookie that Facebook may read later. Some advertisers use such cookies to track what other sites you visit where their ads are placed.
+Third-party cookies are implemented by a website other than the one you are currently browsing. For example, cnn.com may have a Facebook “Like” widget on its homepage. This widget installs a cookie that Facebook can read later. Some advertisers use such cookies to track what other websites you visit that have their ads.
 
 Set a time period (in minutes) after which all third-party cookies will be deleted. To block these cookies, set their lifetime to 0.
 
@@ -63,7 +63,7 @@ This setting deletes all third-party cookies, including the information of your 
 
 :::note
 
-Available in: AdGuard for Android, AdGuard for Windows, AdGuard for Mac, and AdGuard Browser Extension (MV2-based browsers).
+Available in AdGuard for Android, AdGuard for Windows, AdGuard for Mac, and AdGuard Browser Extension (MV2-based browsers).
 
 :::
 
@@ -81,7 +81,7 @@ We do not recommend enabling this option as it may severely interfere with the w
 
 :::note
 
-Available in: AdGuard for Android, AdGuard for Windows, AdGuard for Mac, and AdGuard Browser Extension (MV2-based browsers).
+Available in AdGuard for Android, AdGuard for Windows, AdGuard for Mac, and AdGuard Browser Extension (MV2-based browsers).
 
 :::
 
@@ -93,7 +93,7 @@ When a browser addresses a page, the server assigns an ETag to that page. This E
 
 :::note
 
-Available in: AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
 
 :::
 
@@ -101,11 +101,11 @@ Available in: AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
 
 This feature disables cached authorization data that can be used for tracking. May interfere with the functionality of some browser extensions and websites.
 
-The "Authorization" header value is cached by the browser and sent alongside every request to that domain. This means it can be used for tracking purposes, just like cookies.
+The “Authorization” header value is cached by the browser and sent alongside every request to that domain. This means it can be used for tracking purposes, just like cookies.
 
 :::note
 
-Available in: AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
 
 :::
 
@@ -113,7 +113,7 @@ Available in: AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
 
 :::note
 
-Only the **Block WebRTC** feature is available for AdGuard browser extensions. You can find it in the **Miscellaneous** section.
+Only the **Block WebRTC** feature is available for AdGuard Browser Extension. You can find it in the **Miscellaneous** section.
 
 :::
 
@@ -125,7 +125,7 @@ WebRTC (Web Real-Time Communication) is a technology that enables direct streami
 
 :::caution
 
-Enabling this option can disrupt the work of certain browser applications, such as messengers, streaming platforms, chats, cinemas, or games.
+Enabling this option can disrupt the work of certain browser applications, such as messengers, streaming platforms, chats, or games.
 
 :::
 
@@ -151,7 +151,7 @@ The Flash Player plugin has become increasingly vulnerable to such online threat
 
 This feature disables Java plugins on websites and web services because the API has serious security issues. Does not disable JavaScript.
 
-Some websites and web services still use the old technology to support Java plugins. The Java plugin API, which is the basis of Java plugins, has serious security flaws. For security purposes, you can disable such plugins. Nevertheless, even if you decide to use the "Block Java" option, JavaScript will still be enabled.
+Some websites and web services still use the old technology to support Java plugins. The Java plugin API, which is the basis of Java plugins, has serious security flaws. For security purposes, you can disable such plugins. Nevertheless, even if you decide to use the “Block Java” option, JavaScript will still be enabled.
 
 ## Windows tracking {#windowstracking}
 
@@ -195,13 +195,13 @@ Due to the nature of all web browser extensions, AdGuard Browser Extension inste
 
 This feature removes identifying information from the User-Agent header.
 
-When you visit a website, your browser sends its information to the server. It looks like a text line that is part of an HTTP request that begins with "User-Agent:". It usually includes the name and version of the browser, the operating system, and language settings. We cut User-Agent from identifying information so that advertisers cannot obtain it.
+When you visit a website, your browser sends its information to the server. It looks like a text line that is part of an HTTP request that begins with “User-Agent:”. It usually includes the name and version of the browser, the operating system, and language settings. We cut User-Agent from identifying information so that advertisers cannot obtain it.
 
 You can also set an arbitrary value for User-Agent by entering it into the Custom User-Agent field. To use default User-Agent, leave the field blank.
 
 :::note
 
-Available in: AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
 
 :::
 
@@ -215,7 +215,7 @@ You can set an arbitrary IP address, which you would like others to perceive as 
 
 :::note
 
-Available in: AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
 
 :::
 
@@ -225,13 +225,13 @@ This feature blocks Google Chrome from sending its version and modifications inf
 
 :::note
 
-Available in: AdGuard for Android, AdGuard for Windows, AdGuard for Mac, and AdGuard Browser Extension (Chromium-based browsers).
+Available in AdGuard for Android, AdGuard for Windows, AdGuard for Mac, and AdGuard Browser Extension (Chromium-based browsers).
 
 :::
 
 ### Protect against DPI {#dpi}
 
-This feature modifies your outgoing traffic so that your ISP’s Deep Packet Inspection systems can’t detect the websites you visit. Can’t guarantee complete protection against all DPI systems
+This feature modifies your outgoing traffic so that your ISP’s Deep Packet Inspection systems can’t detect the websites you visit. Can’t guarantee complete protection against all DPI systems.
 
 The Deep Packet Inspection is a system of deep analysis and filtering of traffic by packet content, as well as the accumulation of statistical data. Using this technology, ISPs have the ability to control the passing traffic and limit access to content for their clients.
 
@@ -239,7 +239,7 @@ AdGuard can modify outgoing packet data so that the client does not fall under t
 
 :::note
 
-Available in: AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
 
 :::
 
