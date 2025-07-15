@@ -165,6 +165,10 @@ These features are only available in AdGuard for Windows.
 
 This feature disables sending technical data about your system and app usage.
 
+### Disable Windows Recall {#windowsrecall}
+
+This feature prevents Windows from taking and analyzing screenshots of your desktop activity.
+
 ### Turn off Advertising ID {#advertisingid}
 
 This feature disables Advertising ID to block tracking of your app usage.
