@@ -15,7 +15,7 @@ Aby bylo možné [filtrovat provoz HTTPS](/general/https-filtering/what-is-https
 
 Certifikát AdGuardu nainstalujete podle následujících kroků:
 
-1. Open the app. On the *Home* screen, tap *HTTPS filtering is off*.
+1. Otevřete aplikaci. Na obrazovce *Domů* klepněte na *HTTPS filtrování je vypnuto*.
 
 1. Poté se zobrazí tři obrazovky:
     - HTTPS filtrování je klíčové pro blokování reklam
@@ -28,7 +28,7 @@ Certifikát AdGuardu nainstalujete podle následujících kroků:
 
 1. Po uložení klepněte na *Otevřít nastavení*.
 
-1. Open *Settings* and type *CA Certificate* in the search bar. Tap the respective option.
+1. Otevřete *Nastavení* a do vyhledávacího pole napište *Certifikát CA*. Klepněte na příslušnou možnost.
 
 1. Může se zobrazit varování. Pokud ano, klepněte na *Přesto nainstalovat* a v případě potřeby zadejte kód PIN.
 
@@ -41,14 +41,14 @@ Pokud se během ruční instalace certifikátu vyskytnou problémy (například 
 1. Restartujte AdGuard.
 2. Zkuste nainstalovat správný certifikát (AdGuard Personal CA) ještě jednou.
 
-## Security warnings
+## Bezpečnostní varování
 
-In earlier versions of Android, the quick settings panel displayed the message “Network may be monitored.” Tapping it will open a window with detailed information.
+V dřívějších verzích systému Android se na panelu rychlého nastavení zobrazovala zpráva "Síť může být monitorována". Klepnutím na ni se otevře okno s podrobnými informacemi.
 
-Starting with Android 15, in addition to “Network may be monitored”, users will see a warning notification after installing a certificate and after restarting the device: “Certificate authorities installed by an unknown third party.” This means that the system has detected third-party certificates in the user certificate store. Tapping the notification opens a list of certificates in the user certificate store.
+Počínaje systémem Android 15 se uživatelům po instalaci certifikátu a po restartování zařízení zobrazí kromě nápisu "Síť může být monitorována" také varovné oznámení: "Certifikační autority nainstalované neznámou třetí stranou". To znamená, že systém zjistil v úložišti certifikátů uživatele certifikáty třetích stran. Klepnutím na oznámení otevřete seznam certifikátů v úložišti certifikátů uživatele.
 
-Despite these warnings, your traffic remains secure. Your connection to remote servers stays encrypted. What AdGuard does is simply verify the server’s certificate before deciding whether to filter the connection — similar to how a browser works.
+Navzdory těmto varováním zůstává váš provoz bezpečný. Vaše připojení ke vzdáleným serverům zůstává šifrované. AdGuard jednoduše ověří certifikát serveru a teprve poté rozhodne, zda má připojení filtrovat — podobně jako to dělá prohlížeč.
 
-[Learn more about HTTPS filtering and how the certificate works](/general/https-filtering/what-is-https-filtering.md).
+[Další informace o filtrování HTTPS a fungování certifikátu](/general/https-filtering/what-is-https-filtering.md).
 
-If you still encounter a problem and can’t install the certificate, please contact our support team at <support@adguard.com>.
+Pokud přesto narazíte na problém a certifikát se vám nepodaří nainstalovat, kontaktujte náš tým podpory na adrese <support@adguard.com>.
