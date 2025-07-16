@@ -192,16 +192,16 @@ AdGuard поддерживает как старые функции GM\_, так
 
 #### Trusted Types API
 
-AdGuard provides an instance of the `PolicyApi` class that allows you to manage Trusted Types in your userscripts.
+AdGuard предоставляет экземпляр класса `PolicyApi`, который позволяет управлять Trusted Types в ваших пользовательских скриптах.
 
-You can access the instance of this class by using the `ADG_policyApi` variable in your userscript.
+Вы можете получить доступ к экземпляру этого класса, используя переменную `ADG_policyApi` в пользовательском скрипте.
 
 ##### Свойства
 
 - `name: string` — название политики (по умолчанию `AGPolicy`).
 - `isSupported: boolean` — флаг, указывающий, поддерживается ли API Trusted Types текущим браузером.
 
-##### Polyfilled methods
+##### Методы с полифилом
 
 - [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). Если не поддерживается, возвращает `input: string`.
 - [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). Если не поддерживается, возвращает `input: string`.
@@ -212,12 +212,12 @@ You can access the instance of this class by using the `ADG_policyApi` variable 
 - [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). Если не поддерживается, возвращает `false`.
 - [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). Если не поддерживается, возвращает `false`.
 
-##### Additional Types
+##### Дополнительные типы
 
 ```typescript
 /**
- * Enum representation of the return values of the `getAttributeType` and
- * `getPropertyType` methods of the native Trusted Types API.
+ * Перечисление, представляющее возвращаемые значения методов `getAttributeType` и
+ * `getPropertyType` нативного API Trusted Types.
  *
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType}
@@ -228,12 +228,12 @@ enum TrustedType {
     ScriptURL = 'TrustedScriptURL',
 }
 
-// You can access it like that inside of userscript
+// Вы можете получить доступ к нему следующим образом внутри пользовательского скрипта
 ADG_TrustedType.HTML // "TrustedHTML"
 
 /**
- * Isomorphic trusted value type. If a browser supports the Trusted Types API, it will be one of the enum Trusted Types
- * (`TrustedHTML`, `TrustedScript` or `TrustedScriptURL`); otherwise, it will be regular `string`.
+ * Изоморфный тип доверенного значения. Если браузер поддерживает API Trusted Types, это будет один из перечисленных Trusted Types
+ * (`TrustedHTML`, `TrustedScript` или `TrustedScriptURL`); в противном случае это будет обычная строка `string`.
  *
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedHTML}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedScript}
@@ -246,16 +246,16 @@ type TrustedValue = string | TrustedHTML | TrustedScript | TrustedScriptURL;
 
 ```typescript
 /**
- * Creates a Trusted Type depending on `type`:
+ * Создаёт доверенный тип в зависимости от `type`:
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - or returns `value` if none of them is applicable.
+ * - или возвращает `value`, если ни один из них не подходит.
  *
- * @param type          Trusted Type.
- * @param value         Value from which a Trusted Type is created.
- * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
- * @returns             Created value.
+ * @param type          Доверенный тип.
+ * @param value         Значение, из которого создаётся доверенный тип.
+ * @param createArgs    Дополнительные аргументы, передаваемые в функцию, представленную `TrustedTypePolicy`.
+ * @returns             Созданное значение.
  */
 function create(
     type: TrustedType,
@@ -264,23 +264,23 @@ function create(
 ): TrustedValue
 
 
-// Example: Creates TrustedHTML
+// Пример: Создаёт TrustedHTML
 const trustedHTML = ADG_policyApi.create(ADG_TrustedType.HTML, '<div></div>');
 
 /**
- * Converts `value` of `attribute` into one of the Trusted Types:
+ * Конвертирует `value` атрибута `attribute` в один из доверенных типов:
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - or returns `value` if none of them is applicable.
+ * - или возвращает `value`, если ни один из них не подходит.
  *
- * @param tagName       Name of an HTML tag.
- * @param attribute     Attribute.
- * @param value         Value of an attribute to be converted.
- * @param elementNS     Element namespace. If empty, defaults to the HTML namespace.
- * @param attrNS        Attribute namespace. If empty, defaults to null.
- * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
- * @returns             Converted value.
+ * @param tagName       Имя HTML-тега.
+ * @param attribute     Атрибут.
+ * @param value         Значение атрибута для конвертирования.
+ * @param elementNS     Пространство имён элемента. Если не указано, по умолчанию используется пространство имён HTML.
+ * @param attrNS        Пространство имён атрибута. Если не указано, по умолчанию null.
+ * @param createArgs    Дополнительные аргументы, передаваемые в функцию, представленную `TrustedTypePolicy`.
+ * @returns             Конвертированное значение.
  */
 function convertAttributeToTrusted(
     tagName: string,
@@ -291,23 +291,23 @@ function convertAttributeToTrusted(
     ...createArgs: unknown[]
 ): TrustedValue
 
-// Example: Converts to TrustedScriptURL
+// Пример: Конвертирует в TrustedScriptURL
 const trustedScriptURL = ADG_policyApi.convertAttributeToTrusted("script", "src", 'SOME_URL');
 scriptElement.setAttribute("src", trustedScriptURL);
 
 /**
- * Converts `value` of `property` into one of the Trusted Types:
+ * Конвертирует `value` свойства `property` в один из доверенных типов:
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - or returns `value` if none of them is applicable.
+ * - или возвращает `value`, если ни один из них не подходит.
  *
- * @param tagName       Name of an HTML tag.
- * @param property      Property.
- * @param value         Value of a property to be converted.
- * @param elementNS     Element namespace. If empty, defaults to the HTML namespace.
- * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
- * @returns             Converted value.
+ * @param tagName       Имя HTML-тега.
+ * @param property      Свойство.
+ * @param value         Значение свойства для конвертирования.
+ * @param elementNS     Пространство имён элемента. Если не указано, по умолчанию используется пространство имён HTML.
+ * @param createArgs    Дополнительные аргументы, передаваемые в функцию, представленную `TrustedTypePolicy`.
+ * @returns             Конвертированное значение.
  */
 function convertPropertyToTrusted(
     tagName: string,
@@ -317,7 +317,7 @@ function convertPropertyToTrusted(
     ...createArgs: unknown[]
 ): TrustedValue
 
-// Example: Converts to TrustedHTML
+// Пример: Конвертирует в TrustedHTML
 divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML", "<div></div>");
 ```
 
@@ -329,7 +329,7 @@ divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML"
 
 :::info Поддерживаемые приложения
 
-Сейчас создавать и управлять пользовательскими стилями можно в двух приложениях AdGuard: AdGuard для Windows (версии 7.19 или выше) и AdGuard для Mac (версии 2.16 или выше). We also plan to implement this new feature in AdGuard for Android v4.8 in the nearest future.
+Сейчас создавать и управлять пользовательскими стилями можно в двух приложениях AdGuard: AdGuard для Windows (версии 7.19 или выше) и AdGuard для Mac (версии 2.16 или выше). Мы также планируем добавить эту функцию в AdGuard 4.8 для Android в ближайшем будущем.
 
 :::
 

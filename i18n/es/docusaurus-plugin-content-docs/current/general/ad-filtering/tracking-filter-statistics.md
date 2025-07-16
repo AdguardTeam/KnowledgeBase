@@ -13,7 +13,7 @@ The *Send statistics for ad filters usage* option is disabled by default. Nothin
 
 Let's start by defining what ad filters are. Thanks to these filters, AdGuard removes ads from websites. They are manually compiled based on your complaints about ads on websites. Ad filters are an essential element of AdGuard — their quality determines the overall quality of AdGuard ad blocking.
 
-However, there is a downside. Over the years, more and more ad filters have been appearing. And the more ad filters are there, the more memory AdGuard consumes, thus slowing down the rendering of web pages. Al mismo tiempo, algunos de los filtros comienzan a expirar, convirtiéndose gradualmente en un peso muerto que no tiene utilidad, solo consume memoria y ralentiza la app.
+However, there is a downside. Over the years, more and more ad filters have appeared. The more ad filters there are, the more memory AdGuard consumes, thus slowing down the rendering of webpages. At the same time, some filters expire and gradually become useless, consuming memory and slowing down the program.
 
 ### ¿Por qué necesitamos estadísticas?
 

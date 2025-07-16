@@ -39,7 +39,7 @@ Chcete-li nainstalovat AdGuard do počítače nebo tabletu se systémem Windows,
 
    ![Choose folder *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer1_en.png)
 
-   If you want to select a different location, click *Browse*, choose the folder, and click *OK*. You can also create a new folder by clicking *Make New Folder* and naming it. If you’d like a desktop shortcut, check the box *Create a desktop shortcut*. Then click *Install* to start the installation.
+   Pokud chcete vybrat jiné umístění, klikněte na *Procházet*, vyberte složku a klikněte na *OK*. Novou složku můžete vytvořit také kliknutím na *Vytvořit novou složku* a pojmenovat ji. Chcete-li vytvořit pro AdGuard zástupce na ploše, zaškrtněte políčko *Vytvořit zástupce na ploše*. Stiskněte *Instalovat* a pokračujte v instalaci.
 
    ![Start installation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer2_en.png)
 
@@ -47,11 +47,11 @@ Chcete-li nainstalovat AdGuard do počítače nebo tabletu se systémem Windows,
 
    ![Complete installation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer3_en.png)
 
-   Gratulujeme! AdGuard has been successfully installed. You’ll be prompted to set up protection according to your preferences.
+   Gratulujeme! AdGuard byl úspěšně nainstalován. Budete vyzváni k nastavení ochrany podle svých preferencí.
 
    ![Setting up protection *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/setting_up_protection_en.png)
 
-   After that, the main window will open, where you can adjust the app’s settings.
+   Poté se otevře hlavní okno, kde můžete upravit nastavení aplikace.
 
 ## Jak odnstalovat AdGuard pro Windows {#uninstall}
 
@@ -59,55 +59,55 @@ Chcete-li nainstalovat AdGuard do počítače nebo tabletu se systémem Windows,
 
 Pokud potřebujete AdGuard odinstalovat nebo přeinstalovat, postupujte následovně:
 
-- For Microsoft Windows 10 & 11: Open the *Start Menu* by clicking *Start*, then select *Settings*. In the window that opens, click  *Apps* → *Installed apps*. Select *AdGuard* from the list of your installed apps, click the three-dot menu, and select *Uninstall*.
+- Pro Microsoft Windows 10 a 11: Otevřete *nabídku Start* kliknutím na *Start* a poté vyberte *Nastavení*. V otevřeném okně klikněte na *Aplikace* → *Nanstalované aplikace*. V seznamu nainstalovaných aplikací vyberte *AdGuard*, klikněte na nabídku se třemi tečkami a vyberte *Odinstalovat*.
 
    ![Windows 10 & 11 uninstallation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/win11_uninstall_adguard.png)
 
-- For Microsoft Windows 8: Right-click the *empty space* in the lower left corner of the task bar and select *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
+- Pro Microsoft Windows 8: Klikněte pravým tlačítkem myši na *prázdné místo* v levém dolním rohu hlavního panelu a vyberte *Ovládací panely*. Klikněte na *Odinstalovat program* v části *Programy*, poté vyberte *AdGuard* ze seznamu nainstalovaných aplikací a stiskněte tlačítko *Odinstalovat*. Potvrďte akci kliknutím na *Odinstalovat AdGuard* v okně, které se otevře.
 
-- For Microsoft Windows 8.1: Right-click the *Start button* and select *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
+- Pro Microsoft Windows 8.1: Klikněte pravým tlačítkem myši na tlačítko *Start* a vyberte *Ovládací panely*. Klikněte na *Odinstalovat program* v části *Programy*, poté vyberte *AdGuard* ze seznamu nainstalovaných aplikací a stiskněte tlačítko *Odinstalovat*. Potvrďte akci kliknutím na *Odinstalovat AdGuard* v okně, které se otevře.
 
-- For Microsoft Windows 7: Open *Start Menu*. In the search box, type *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
+- Pro Microsoft Windows 7: Otevřete *Nabídku Start*. Do vyhledávacího pole zadejte *Ovládací panel*. Klikněte na *Odinstalovat program* v části *Programy*, poté vyberte *AdGuard* ze seznamu nainstalovaných aplikací a stiskněte tlačítko *Odinstalovat*. Potvrďte akci kliknutím na *Odinstalovat AdGuard* v okně, které se otevře.
 
 ### Pokročilý způsob {#advanced}
 
-In case regular uninstall doesn't work for any reason, you can try to use an advanced method. First of all, you need to [download the uninstaller tool](https://static.adtidy.org/windows/uninstaller/uninstal_utility.zip) created by our developers. Extract the archive to any folder on your PC and run the **Adguard.UninstallUtility.exe** file, and allow the app to make changes to your device. Then follow the instruction below:
+Pokud běžná odinstalace z nějakého důvodu nefunguje, můžete zkusit pokročilou metodu. Nejprve si musíte stáhnout [nástroj pro odinstalaci](https://static.adtidy.org/windows/uninstaller/uninstal_utility.zip) vytvořený našimi vývojáři. Rozbalte archiv do libovolné složky v počítači, spusťte soubor **Adguard.UninstallUtility.exe** a nechte aplikaci provést změny v zařízení. Poté postupujte podle níže uvedených pokynů:
 
-- Select *AdGuard Ad Blocker* and *Standard* uninstall type, then click *Uninstall*.
+- Vyberte *Blokátor reklam AdGuard* a *Standardní* typ odinstalace a poté klikněte na *Odinstalovat*.
 
    ![Standard uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard.jpg)
 
-- Click *OK* once the warning window pops up:
+- Po zobrazení varovného okna klikněte na *OK*:
 
    ![Standard uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
+- Počkejte na dokončení odinstalace — zobrazí se fráze **Odinstalace dokončena** a výzva k restartování počítače:
 
    ![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard_complete.jpg)
 
 :::caution
 
-Follow the next steps only if performing the first two steps wasn’t enough for some reason. We strongly suggest contacting our support before using steps 3-4 of advanced uninstall instruction.
+Další kroky proveďte pouze v případě, že provedení prvních dvou kroků z nějakého důvodu nestačilo. Důrazně doporučujeme kontaktovat náš tým podpory před použitím kroků 3-4 pokročilého pokynu k odinstalaci.
 
 :::
 
-- Select *AdGuard Ad Blocker* and *Extended* uninstall type, then click *Uninstall*. Click *Yes, continue* in the window prompt.
+- Vyberte *Blokátor reklam AdGuard* a *Rozšířený* typ odinstalace a poté klikněte na *Odinstalovat*. Ve okně výzvy klikněte na *Ano, pokračovat*.
 
    ![Extended uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
 
-- Click *OK* once the warning window pops up:
+- Po zobrazení varovného okna klikněte na *OK*:
 
    ![Extended uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
+- Počkejte na dokončení odinstalace — zobrazí se fráze **Odinstalace dokončena** a výzva k restartování počítače:
 
    ![Extended uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
 
-AdGuard is successfully uninstalled!
+AdGuard byl úspěšně odinstalován!
 
 #### Spuštění odinstalačního programu v konzolovém režimu
 
-Besides running the advanced uninstaller in its user-interactive mode, you can also use command-line arguments to uninstall AdGuard for Windows. To do this, follow the instructions below:
+Kromě spuštění pokročilého odinstalátoru v uživatelsky interaktivním režimu můžete k odinstalaci AdGuard pro Windows použít také argumenty příkazového řádku. Postupujte podle následujících pokynů:
 
 1. Otevřete příkazový řádek zadáním příkazu *cmd* v nabídce Start.
 2. Chcete-li odinstalátor spustit v konzolovém režimu bez interaktivního uživatelského rozhraní, použijte příkaz `/console`. Všechny níže uvedené parametry příkazového řádku budou ignorovány, pokud není aktivován režim `/console`.
@@ -119,6 +119,6 @@ Besides running the advanced uninstaller in its user-interactive mode, you can a
 
 :::note
 
-The use of the parameters `/console` and `/adblocker` is necessary for a successful uninstall. The parameters `/advanced` and `/settings` are optional.
+Pro úspěšné odinstalování je nutné použít parametry `/console` a `/adblocker`. Parametry `/advanced` a `/settings` jsou volitelné.
 
 :::
