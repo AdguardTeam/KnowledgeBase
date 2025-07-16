@@ -132,6 +132,12 @@ Le mode _VPN local_ ne permet pas d'utiliser AdGuard simultanément avec d'autre
 
 - _Le proxy automatique_ est une méthode alternative de routage du trafic qui ne nécessite pas l'utilisation d'un VPN. L’un des avantages majeurs est qu’il peut être exécuté en parallèle avec un VPN. Ce mode nécessite un accès root.
 
+:::note
+
+Please note that DNS filtering will still be active in _Automatic proxy_ routing mode, and your device may not be able to filter DNS requests from specific apps. In _VPN_ routing mode, apps are excluded from the local VPN by system means. Therefore, the system resolver sees which apps are included in the VPN and which are not. It either allows them into the local VPN or lets them bypass it. However, DNS requests come from the system resolver, not the application. In _Automatic proxy_ mode, it is only possible to exclude traffic from applications, not their DNS queries, because AdGuard sees them as system queries.
+
+:::
+
 - _Le proxy manuel_ implique la configuration d'un serveur proxy sur un port spécifique, qui peut ensuite être configuré dans les paramètres Wi-Fi. Ce mode nécessite un accès root pour Android 10 et versions ultérieures.
 
 ## Licence
