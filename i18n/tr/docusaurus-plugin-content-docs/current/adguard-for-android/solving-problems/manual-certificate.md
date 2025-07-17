@@ -11,7 +11,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install its certificate into your device’s user storage. On older versions of the Android OS this was done automatically, but on Android 11 and later users have to install it manually.
 
-![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
+![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/screenCA.gif)
 
 Follow these steps to install the AdGuard certificate:
 
@@ -22,24 +22,24 @@ Follow these steps to install the AdGuard certificate:
     - AdGuard’s HTTPS filtering is safe
     - AdGuard certificate
 
-    Consecutively, tap *Continue* → *Next* → *Save certificate*.
+1. Consecutively, tap *Continue* → *Next* → *Save certificate*.
 
 1. Tap *Save* at the bottom of the opened *Download* folder.
 
-1. Kaydettikten sonra *Ayarları aç* öğesine dokunun.
+1. After saving, copy the text from the *CA Certificate* field and tap *Open Settings*.
 
-1. Open *Settings* and type *CA Certificate* in the search bar. İlgili seçeneğe dokunun.
+1. Open *Settings* and either paste or type *CA Certificate* in the search bar. Tap the respective option.
 
-1. Bir uyarı görebilirsiniz. Öyleyse, *Yine de yükle* öğesine dokunun ve gerekirse PIN kodunuzu girin.
+1. You might see a warning. If so, tap *Install anyway* and enter your PIN if necessary.
 
-1. AdGuard sertifika dosyasını seçin. Adı *adguard_1342_020322.crt* gibi görünmelidir.
+1. Select the AdGuard certificate file. Its name should look like *adguard_1342_020322.crt*.
 
 You’re all set! Once the certificate is installed successfully, you’ve enabled HTTPS filtering.
 
 If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
 
 1. AdGuard'ı yeniden başlatın.
-2. Doğru sertifikayı (AdGuard Personal CA) bir kez daha yüklemeyi deneyin.
+1. Doğru sertifikayı (AdGuard Personal CA) bir kez daha yüklemeyi deneyin.
 
 ## Güvenlik uyarıları
 

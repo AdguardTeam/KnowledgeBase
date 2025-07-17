@@ -35,6 +35,6 @@ Pro rozšíření je nutné povolit režim pro vývojáře. Chcete-li tak učini
 
 ### Pro verze prohlížeče Chrome 138 a novější
 
-Je třeba přepnot přepínač _Povolit uživatelské skripty_. Chcete-li tak učinit, otevřete nabídku Chrome kliknutím na tři tečky v pravém horním rohu, přejděte na _Rozšíření_ ⭢ _Správa rozšíření_ a přepněte přepínač _Povolit uživatelské skripty_.
+Je třeba přepnot přepínač _Povolit uživatelské skripty_. To do so, open the Chrome menu by clicking the three dots in the upper-right corner, go to _Extensions_ ⭢ _Manage extensions_, go to AdGuard Browser Extension’s _Details_, and toggle the _Allow user scripts_ switch.
 
 ![Manage Extensions \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow-user-scripts1.jpg)

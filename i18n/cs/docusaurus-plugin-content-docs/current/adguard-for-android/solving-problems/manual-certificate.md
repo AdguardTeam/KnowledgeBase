@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 Aby bylo možné [filtrovat provoz HTTPS](/general/https-filtering/what-is-https-filtering.md) (což je velmi důležité, protože většina reklam používá HTTPS), musí AdGuard nainstalovat certifikát do uživatelského úložiště vašeho zařízení. Ve starších verzích operačního systému Android se to provádělo automaticky, ale v Androidu 11 a novějších verzích jej uživatelé musí nainstalovat ručně.
 
-![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
+![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/screenCA.gif)
 
 Certifikát AdGuardu nainstalujete podle následujících kroků:
 
@@ -20,26 +20,26 @@ Certifikát AdGuardu nainstalujete podle následujících kroků:
 1. Poté se zobrazí tři obrazovky:
     - HTTPS filtrování je klíčové pro blokování reklam
     - Filtrování HTTPS AdGuardu je bezpečné
-    - AdGuard certifikát
+    - AdGuard certificate
 
-    Postupně klepněte na *Pokračovat* → *Další* → *Uložit certifikát*.
+1. Consecutively, tap *Continue* → *Next* → *Save certificate*.
 
-1. Klepněte na *Uložit* v dolní části otevřené složky *Stáhnout*.
+1. Tap *Save* at the bottom of the opened *Download* folder.
 
-1. Po uložení klepněte na *Otevřít nastavení*.
+1. After saving, copy the text from the *CA Certificate* field and tap *Open Settings*.
 
-1. Otevřete *Nastavení* a do vyhledávacího pole napište *Certifikát CA*. Klepněte na příslušnou možnost.
+1. Open *Settings* and either paste or type *CA Certificate* in the search bar. Tap the respective option.
 
-1. Může se zobrazit varování. Pokud ano, klepněte na *Přesto nainstalovat* a v případě potřeby zadejte kód PIN.
+1. You might see a warning. If so, tap *Install anyway* and enter your PIN if necessary.
 
-1. Vyberte soubor AdGuard certifikátu. Jeho název by měl vypadat takto: *adguard_1342_020322.crt*.
+1. Select the AdGuard certificate file. Its name should look like *adguard_1342_020322.crt*.
 
 Vše je nastaveno! Jakmile je certifikát úspěšně nainstalován, zapnuli jste HTTPS filtrování.
 
 Pokud se během ruční instalace certifikátu vyskytnou problémy (například jste certifikát nainstalovali, ale aplikace jej stále ignoruje), můžete použít jedno z níže uvedených řešení.
 
 1. Restartujte AdGuard.
-2. Zkuste nainstalovat správný certifikát (AdGuard Personal CA) ještě jednou.
+1. Zkuste nainstalovat správný certifikát (AdGuard Personal CA) ještě jednou.
 
 ## Bezpečnostní varování
 

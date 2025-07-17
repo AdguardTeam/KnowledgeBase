@@ -27,7 +27,7 @@ Při vytváření výpisu postupujte podle následujících kroků:
 
 Vytvořený soubor výpisu (`.DMP`) bude mít stejný název jako proces, který jste vybrali.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 AdGuard pro Windows spouští dva procesy `Adguard.exe` a `AdguardSvc.exe`. Pro každý z nich je třeba vytvořit samostatný soubor výpisu.
 
@@ -47,7 +47,7 @@ Náš tým podpory si může vyžádat soubor wfpdiag.cab spolu se souborem mini
 
 1. Klikněte pravým tlačítkem myši na příkazový řádek a vyberte možnost *Spustit jako správce*
 
-    :::note
+    Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
     V aktuálním adresáři se vytvoří soubor wfpdiag.cab. Umístění můžete změnit zadáním `cd<folder_name>`.
 
