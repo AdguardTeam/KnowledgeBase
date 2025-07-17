@@ -35,6 +35,6 @@ You must enable Developer mode for extensions. To do so, open the Chrome menu by
 
 ### For Chrome version 138 and later
 
-You must enable the *Allow user scripts* toggle. To do so, open the Chrome menu by clicking the three dots in the upper-right corner, go to *Extensions* ⭢ *Manage extensions*, and toggle the *Allow user scripts* switch.
+You must enable the *Allow user scripts* toggle. To do so, open the Chrome menu by clicking the three dots in the upper-right corner, go to *Extensions* ⭢ *Manage extensions*, go to AdGuard Browser Extension’s *Details*, and toggle the *Allow user scripts* switch.
 
 ![Manage Extensions *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow-user-scripts1.jpg)
