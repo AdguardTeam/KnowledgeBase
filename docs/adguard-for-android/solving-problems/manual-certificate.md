@@ -26,7 +26,7 @@ Follow these steps to install the AdGuard certificate:
 
 1. Tap *Save* at the bottom of the opened *Download* folder.
 
-1. After saving, copy the text from the field (it usually says "CA Certificate") and tap Open Settings.
+1. After saving, copy the text from the *CA Certificate* field and tap *Open Settings*.
 
 1. Open *Settings* and either paste or type *CA Certificate* in the search bar. Tap the respective option.
 
