@@ -38,8 +38,8 @@ You’re all set! Once the certificate is installed successfully, you’ve enabl
 
 If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
 
-- Restart AdGuard.
-- Try to install the correct certificate (AdGuard Personal CA) one more time.
+1. Restart AdGuard.
+1. Try to install the correct certificate (AdGuard Personal CA) one more time.
 
 ## Security warnings
 
