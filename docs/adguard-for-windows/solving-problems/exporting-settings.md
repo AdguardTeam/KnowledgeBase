@@ -18,7 +18,7 @@ As an alternative, the following method is also available:
 1. After upgrading to version 8, open the folder `C:\ProgramData\Adguard\Backups` and find a ZIP file with a name similar to `adguard_settings_7.21.5008.0-08-04-2025-13_42_15.276.zip`.
 2. Copy this zip file somewhere outside of `C:\ProgramData\Adguard`, for example, to the desktop (this is important because it will be deleted in the next step).
 3. Uninstall version 8.0 with the **setting removal** option on.
-4. Install the version 7 build that was installed before the update.
+4. Install the version 7 build that was installed before the update. You can find links to release, beta, and nightly channels [on GitHub](https://github.com/AdguardTeam/AdguardForWindows/releases).
 5. Exit version 7 from the system tray to stop the filtering.
 6. Extract the contents of the ZIP file from the first step and replace the following files:
    - `adguard.db` → `C:\ProgramData\Adguard`
