@@ -55,7 +55,7 @@ In the **ALLOW THESE EXTENSIONS** section find **AdGuard** among the available e
 
 ![Select "AdGuard" *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/select-ag.jpg)
 
-Tap it, then toggle the *Allow Extension* switch on. 
+Tap it, then toggle the *Allow Extension* switch on.
 
 Lower on the same screen, make sure *All Websites* is set *Allow* or *Ask*. If you choose *Allow*, you won't have to give permission every time you visit a new website. If you are unsure, choose *Ask* to grant permissions on a per-site basis.
 
