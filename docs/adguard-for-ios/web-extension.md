@@ -63,7 +63,7 @@ Lower on the same screen, make sure *All Websites* is set *Allow* or *Ask*. If y
 
 ### In Safari
 
-To enable the AdGuard extension right from the Safari browser, tap the icon on the left of URL field:
+To enable the AdGuard extension right from the Safari browser, tap the icon on the left side of the URL field:
 
 ![In Safari tap icon on the left of URL field *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-1.jpg)
 
