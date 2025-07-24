@@ -43,17 +43,17 @@ The Web extension is not a standalone tool and requires AdGuard for iOS. If you 
 
 Once done, open the *Settings* app and scroll down to *Apps*.
 
-![Select "Apps" *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/apps.jpg)
+![Select Apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/apps.jpg)
 
 Then, open *Safari* → *Extensions*.
 
-![Select "Safari" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings1_en.png)
+![Select Safari *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings1_en.png)
 
-![Select "Extensions" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings2_en.png)
+![Select Extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings2_en.png)
 
 In the **ALLOW THESE EXTENSIONS** section find **AdGuard** among the available extensions.
 
-![Select "AdGuard" *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/select-ag.jpg)
+![Select AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/select-ag.jpg)
 
 Tap it, then toggle the *Allow Extension* switch on.
 
@@ -65,7 +65,7 @@ Lower on the same screen, make sure *All Websites* is set *Allow* or *Ask*. If y
 
 To enable the AdGuard extension right from the Safari browser, tap the icon on the left of URL field:
 
-![In Safari tap aA icon *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-1.jpg)
+![In Safari tap icon on the left of URL field *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-1.jpg)
 
 Then, tap *Manage Extensions*.
 
