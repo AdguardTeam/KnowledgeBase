@@ -15,7 +15,7 @@ Co je příčinou tohoto problému? Někdy Samsung Pay nefunguje na zařízeníc
 
 V důsledku toho museli uživatelé při platbách pomocí Samsung Pay vypnout AdGuard. Tomu se lze vyhnout pomocí funkce *Detekce Samsung Pay*. Když je tato možnost povolena, aplikace AdGuard se pozastaví, kdykoli uživatel otevře aplikaci Samsung Pay a obnoví se po jejím zavření.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 Tato funkce bude fungovat pouze v případě, že je v nastavení AdGuardu zvolen režim filtrování lokální VPN. Pokud používáte jiný režim, Samsung Pay bude fungovat bez přerušení.
 

@@ -49,7 +49,7 @@ I když nedochází k chybám při pádu BSoD, můžete tuto možnost nastavit �
 
 Úspěšně jste povolili vytvoření souboru minidump. Nyní se automaticky vytvoří při pádu systému.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 Ve výchozím nastavení je soubor minidump uložen ve složce **%SystemRoot%\Minidump**. Umístění adresáře můžete změnit na libovolné, ale nezapomeňte, že mnoho programů je nastaveno tak, aby toto umístění hledaly ve výchozím nastavení, proto doporučujeme umístění neměnit.
 
@@ -65,7 +65,7 @@ Náš tým podpory si může vyžádat soubor wfpdiag.cab spolu se souborem mini
 
 1. Klikněte pravým tlačítkem myši na příkazový řádek a vyberte možnost *Spustit jako správce*
 
-    :::note
+    Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
     V aktuálním adresáři se vytvoří soubor wfpdiag.cab. Umístění můžete změnit zadáním `cd<folder_name>`.
 
