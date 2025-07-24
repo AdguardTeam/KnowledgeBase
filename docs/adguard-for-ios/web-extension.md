@@ -59,7 +59,7 @@ Tap it, then toggle the *Allow Extension* switch on.
 
 Lower on the same screen, make sure *All Websites* is set *Allow* or *Ask*. If you choose *Allow*, you won't have to give permission every time you visit a new website. If you are unsure, choose *Ask* to grant permissions on a per-site basis.
 
-![AdGuard extension in the Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ag-webext-in-settings.png)
+![AdGuard extension in Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ag-webext-in-settings.png)
 
 ### In Safari
 
@@ -71,11 +71,11 @@ Then, tap *Manage Extensions*.
 
 ![Extensions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-2.jpg)
 
-In the opened window turn the AdGuard switches on. (The top one is AdGuard Web extension, other six are content blockers needed for filtering.)
+In the opened window, turn on the AdGuard switches. The top one is the AdGuard Web extension; the other six are content blockers needed for filtering.
 
 ![Extensions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-3.jpg)
 
-You should now be able to see AdGuard among the available extensions. To enable **Advanced protection**: open AdGuard extension, then tap the yellow **i** icon, press *Enable* button and confirm the action.
+You should now be able to see AdGuard among the available extensions. To enable **Advanced protection**, open AdGuard extension, tap the yellow **i** icon, press *Enable*, and confirm the action.
 
 :::note
 
