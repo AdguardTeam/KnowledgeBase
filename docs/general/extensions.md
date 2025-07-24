@@ -147,6 +147,7 @@ All listed old Greasemonkey functions are deprecated but still supported.
 - [`GM_addStyle`](https://www.tampermonkey.net/documentation.php#api:GM_addStyle)
 - [`GM_log`](https://www.tampermonkey.net/documentation.php#api:GM_log)
 - [`GM.addElement`, `GM_addElement`](https://www.tampermonkey.net/documentation.php#api:GM_addElement)
+- [`window.onurlchange`](https://www.tampermonkey.net/documentation.php#api:window.onurlchange)
 
 You can find more information about Greasemonkey API in [its manual](https://wiki.greasespot.net/Greasemonkey_Manual:API).
 
@@ -183,6 +184,7 @@ You can find more information about Greasemonkey API in [its manual](https://wik
 // @grant           GM_openInTab
 // @grant           GM_registerMenuCommand
 // @grant           GM_addElement
+// @grant           window.onurlchange
 // @run-at          document-start
 // ==/UserScript==
 !function(){(
@@ -319,6 +321,61 @@ function convertPropertyToTrusted(
 
 // Example: Converts to TrustedHTML
 divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML", "<div></div>");
+```
+
+#### Matching SPA sites
+
+Available from `CoreLibs v1.19`.
+
+Many modern websites (e.g. YouTube) utilize [Single Page Application (SPA)](https://en.wikipedia.org/wiki/Single-page_application) capabilities, which differs from the traditional web application with fact that the page is not reloaded when navigation happens. Instead, the content is dynamically updated using JavaScript, which allows for a smoother user experience.
+
+In such websites userscript is invoked only once, when `@match` or `@include` directives are matched (if not `@exclude`). Due to the nature of SPAs, the userscript can not be re-invoked on subsequent page changes, because global context of JS is the same. To tackle such cases, userscripts can use `@grant window.onurlchange`:
+
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @grant window.onurlchange
+// @run-at document-start
+// ==/UserScript==
+
+// via window.onurlchange
+window.onurlchange = (event) => {
+    console.log('URL changed to:', event.url);
+};
+
+// via window.addEventListener('urlchange')
+window.addEventListener('urlchange', (event) => {
+    console.log('URL changed to:', event.url);
+});
+```
+
+This will allow userscripts to listen for URL changes and handle them accordingly.
+
+Note: `urlchange` event is not triggered for fragment changes (e.g. `https://example.org#hash1` -> `https://example.org#hash2`), only for full URL changes (e.g. path or query changes).
+
+If website uses hash routing, userscripts can use DOM native [`hashchange`](https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event) event:
+
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @run-at document-start
+// ==/UserScript==
+
+// via window.onhashchange
+window.onhashchange = (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+};
+
+// via window.addEventListener('hashchange')
+window.addEventListener('hashchange', (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+});
 ```
 
 ## Userstyles
