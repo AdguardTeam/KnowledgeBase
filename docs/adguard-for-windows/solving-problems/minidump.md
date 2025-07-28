@@ -27,7 +27,7 @@ If you can’t find these files, your system may not be configured to create min
 
 ## Configure minidump settings
 
-If minidumps are not created automatically, follow these steps to enable Small memory dump:
+If minidumps are not created automatically, follow these steps to enable *Small Memory Dump*:
 
 1. Press the *Windows key + R* to open the *Run* dialog
 
