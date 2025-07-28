@@ -358,9 +358,10 @@ This will allow userscripts to listen for URL changes and handle them accordingl
 
 The `urlchange` event is only triggered for full URL changes, such as a change in the path or query, but not for fragment (hash) changes.
 Examples:
+
 - Navigation from `https://example.com/page1` to `https://example.com/page2` will trigger the event.
 - Navigation from `https://example.com/page1?query=1` to `https://example.com/page1?query=2` will trigger the event.
-- Navigation from `https://example.com/page1#section1` to `https://example.com/page1#section2` will NOT trigger the event.
+- Navigation from `https://example.com/page1#section1` to `https://example.com/page1#section2` will **NOT** trigger the event.
 
 :::
 
