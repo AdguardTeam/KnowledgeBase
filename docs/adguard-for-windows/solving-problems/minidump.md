@@ -57,7 +57,7 @@ Our support team may request a wfpdiag.cab file, along with a minidump file, to 
 
 1. Enable AdGuard protection.
 
-1. Click *Start* and type `cmd` to open Command Prompt
+1. Click *Start* and type `cmd` to open *Command Prompt*.
 
 1. Right-click Command Prompt and choose *Run as administrator*
 
