@@ -43,7 +43,7 @@ Since dump files can be large, please compress them into an archive before sendi
 
 ## Collecting wfpdiag.cab file
 
-Our support team may request a wfpdiag.cab file, along with a minidump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
+Our support team may request a wfpdiag.cab file, along with a dump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
 
 1. Enable AdGuard protection.
 
