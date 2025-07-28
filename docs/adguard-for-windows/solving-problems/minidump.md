@@ -39,7 +39,7 @@ If minidumps are not created automatically, follow these steps to enable *Small 
 
     ![Advanced tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/advanced_tab.png)
 
-1. Here you’ll find an option called *Write debugging information*. Make sure it’s set to *Small memory dump (256 KB)* and verify the path shows `%SystemRoot%\Minidump`. These settings ensure Windows will create the minidump files we need when a BSOD occurs
+1. Here you’ll find an option called *Write debugging information*. Make sure it’s set to *Small Memory Dump (256 KB)* and that the path shows `%SystemRoot%\Minidump`. These settings will ensure that Windows creates the minidump files we need when a BSOD occurs.
 
     ![Small memory dump *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/systemroot.png)
 
