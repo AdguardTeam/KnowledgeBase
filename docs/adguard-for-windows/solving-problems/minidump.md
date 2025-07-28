@@ -29,13 +29,13 @@ If you can’t find these files, your system may not be configured to create min
 
 If minidumps are not created automatically, follow these steps to enable *Small Memory Dump*:
 
-1. Press the *Windows key + R* to open the *Run* dialog
+1. Press the *Windows key + R* to open the *Run* dialog.
 
-1. Type `sysdm.cpl` and click *Enter*. This will open the *System properties* window
+1. Type `sysdm.cpl` and click *Enter*. This will open the *System properties* window.
 
     ![Open system properties *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/sysdm.png)
 
-1. Navigate to *Advanced* tab → *Startup and Recovery* → *Settings*
+1. Navigate to *Advanced* tab → *Startup and Recovery* → *Settings*.
 
     ![Advanced tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/advanced_tab.png)
 
@@ -43,7 +43,7 @@ If minidumps are not created automatically, follow these steps to enable *Small 
 
     ![Small memory dump *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/systemroot.png)
 
-1. Click *OK* to save changes
+1. Click *OK* to save changes.
 
 ## After a crash occurs
 
@@ -67,8 +67,8 @@ Our support team may request a wfpdiag.cab file, along with a minidump file, to 
 
     :::
 
-1. To start logging, enter the following command: `netsh wfp capture start`
+1. To start logging, enter the following command: `netsh wfp capture start`.
 
-1. Visit any website to route traffic through AdGuard and log the filtering process
+1. Visit any website to route traffic through AdGuard and log the filtering process.
 
-1. To stop logging, enter `netsh wfp capture stop`
+1. To stop logging, enter `netsh wfp capture stop`.
