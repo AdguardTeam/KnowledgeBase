@@ -51,7 +51,7 @@ After experiencing a BSOD and restarting your computer, you can find the generat
 
 If you configured minidump settings after the crash occurred, you'll need to reproduce the issue to generate a new minidump file.
 
-## Collecting wfpdiag.cab file
+## Collecting `wfpdiag.cab` file
 
 Our support team may request a wfpdiag.cab file, along with a minidump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
 

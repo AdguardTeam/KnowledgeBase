@@ -41,9 +41,9 @@ AdGuard for Windows runs two processes: `Adguard.exe` and `AdguardSvc.exe`. Youâ
 Since dump files can be large, please compress them into an archive before sending them to support. Also, include the AdGuard logs to help us diagnose the issue more effectively.
 [Instructions for collecting logs](../adguard-logs).
 
-## Collecting wfpdiag.cab file
+## Collecting `wfpdiag.cab` file
 
-Our support team may request a wfpdiag.cab file, along with a dump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
+Our support team may request a wfpdiag.cab file, along with a minidump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
 
 1. Enable AdGuard protection.
 
