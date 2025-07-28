@@ -21,6 +21,8 @@ Blue Screen of Death (BSOD) errors may occasionally occur while using AdGuard. W
 
 To collect minidump files, you’ll need administrator access on your computer. By default, Windows tores these files in the `C:\Windows\Minidump\` folder. The files you’re looking for will be named either `MEMORY.DMP` or follow the pattern `Mini(ddmmmyy-xxx).dmp` where the letters and numbers represent dates and sequence numbers.
 
+![Minidump file *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/minidump.png)
+
 If you can't find these files, your system may not be configured to create minidumps automatically.
 
 ## Configure minidump settings
@@ -31,9 +33,15 @@ If minidumps are not created automatically, follow these steps to enable Small m
 
 1. Type `sysdm.cpl` and click *Enter*. This will open the *System properties* window
 
+    ![Open system properties *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/sysdm.png)
+
 1. Navigate to *Advanced* tab → *Startup and Recovery* → *Settings*
 
+    ![Advanced tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/advanced_tab.png)
+
 1. Here you’ll find an option called *Write debugging information*. Make sure it’s set to *Small memory dump (256 KB)* and verify the path shows `%SystemRoot%\Minidump`. These settings ensure Windows will create the minidump files we need when a BSOD occurs
+
+    ![Small memory dump *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/systemroot.png)
 
 1. Click *OK* to save changes
 
