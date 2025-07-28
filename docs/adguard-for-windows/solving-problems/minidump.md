@@ -47,7 +47,7 @@ If minidumps are not created automatically, follow these steps to enable *Small 
 
 ## After a crash occurs
 
-After experiencing a BSOD and restarting your computer, you can find the generated minidump files in the `C:\Windows\Minidump\` folder. It’s helpful to sort the files by date modified so you can easily find the most recent one corresponding to your crash.
+After experiencing a BSOD and restarting your computer, you can find the generated minidump files in the `C:\Windows\Minidump\` folder. Sorting the files by date modified makes it easy to find the most recent one corresponding to your crash.
 
 If you configured minidump settings after the crash occurred, you'll need to reproduce the issue to generate a new minidump file.
 
