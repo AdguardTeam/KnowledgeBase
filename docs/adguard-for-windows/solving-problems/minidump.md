@@ -23,7 +23,7 @@ To collect minidump files, you’ll need administrator access on your computer. 
 
 ![Minidump file *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/minidump.png)
 
-If you can't find these files, your system may not be configured to create minidumps automatically.
+If you can’t find these files, your system may not be configured to create minidumps automatically.
 
 ## Configure minidump settings
 
