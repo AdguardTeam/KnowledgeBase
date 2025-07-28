@@ -327,9 +327,9 @@ divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML"
 
 Available from `CoreLibs v1.19`.
 
-Many modern websites (e.g. YouTube) utilize [Single Page Application (SPA)](https://en.wikipedia.org/wiki/Single-page_application) capabilities, which differs from traditional web applications in that the page is not reloaded when navigating between pages. Instead, the content is dynamically updated using JavaScript, which allows for a smoother user experience.
+Many modern websites, such as YouTube, utilize [Single Page Application (SPA)](https://en.wikipedia.org/wiki/Single-page_application) capabilities. Unlike traditional web applications, the page does not reload when navigating between pages. Instead, the content is updated dynamically using JavaScript, allowing for a smoother user experience.
 
-In such websites userscript is invoked only once, when `@match` or `@include` directives are matched (if not `@exclude`). Due to the nature of SPAs, the userscript cannot be re-invoked on subsequent page changes, because the global JavaScript context remains the same. To tackle such cases, userscripts can use `@grant window.onurlchange`:
+On such websites, a userscript is invoked only once when the `@match` or `@include` directives are matched (unless `@exclude` is used). Due to the nature of SPAs, the userscript cannot be re-invoked on subsequent page changes because the global JavaScript context remains the same. To address this issue, userscripts can use the `@grant window.onurlchange` directive.
 
 ```javascript
 // ==UserScript==
@@ -356,17 +356,17 @@ This will allow userscripts to listen for URL changes and handle them accordingl
 
 :::note
 
-The `urlchange` event is not triggered for fragment changes (e.g. `https://example.org#hash1` -> `https://example.org#hash2`), only for full URL changes (e.g. path or query changes).
+The `urlchange` event is only triggered for full URL changes, such as a change in the path or query, not for fragment changes, such as changing from `https://example.org#hash1` to `https://example.org#hash2`.
 
 :::
 
 :::note
 
-`window.onurlchange` or `window.addEventListener('urlchange', ...)` is a non-standard API, to use it you need to explicitly grant it in your userscript with `@grant window.onurlchange`.
+The `window.onurlchange` and `window.addEventListener('urlchange', ...)` APIs are non-standard. To use them, you must explicitly grant them in your userscript with `@grant window.onurlchange`.
 
 :::
 
-If website uses hash routing, userscripts can use DOM native [`hashchange`](https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event) event:
+If a website uses hash routing, userscripts can use the native DOM [`hashchange` event](https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event):
 
 ```javascript
 // ==UserScript==
