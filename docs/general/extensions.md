@@ -325,7 +325,11 @@ divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML"
 
 #### Matching SPA sites
 
-Available from `CoreLibs v1.19`.
+:::info Compatibility
+
+This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.19 or later.
+
+:::
 
 Many modern websites, such as YouTube, utilize [Single Page Application (SPA)](https://en.wikipedia.org/wiki/Single-page_application) capabilities. Unlike traditional web applications, the page does not reload when navigating between pages. Instead, the content is updated dynamically using JavaScript, allowing for a smoother user experience.
 
@@ -481,3 +485,5 @@ We don’t support userstyles that contain `@var` or `@advanced` in the metadata
     }
 }
 ```
+
+[CoreLibs]: https://github.com/AdguardTeam/CoreLibs
