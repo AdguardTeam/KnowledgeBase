@@ -13,7 +13,7 @@ Para que o AdGuard filtre com êxito o tráfego HTTPS no Firefox, o navegador pr
 
 ### Método 1
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Este método funciona no Firefox para Android versão 90.0 e posteriores.
 
@@ -37,7 +37,7 @@ Para fazer com que o Firefox confie no certificado do AdGuard, faça o seguinte:
 
 ### Método 2
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Este método só funcionará em dispositivos com ** root **.
 

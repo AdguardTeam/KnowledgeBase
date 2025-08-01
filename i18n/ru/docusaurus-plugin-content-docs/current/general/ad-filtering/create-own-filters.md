@@ -570,6 +570,8 @@ entry_i = ( regular_domain / any_tld_domain / regexp )
 
 AdGuard для iOS и AdGuard для Safari поддерживают модификатор `$domain`, но имеют некоторые ограничения. Подробнее об этом написано в разделе [SafariConverterLib](#safari-converter--basic--supported-with-limitations).
 
+Rules with `regexp` in the `$domain` modifier are not supported by AdGuard for Safari and AdGuard for iOS.
+
 :::
 
 :::info Совместимость

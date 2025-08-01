@@ -11,7 +11,7 @@ sidebar_position: 11
 
 Чтобы [фильтровать HTTPS-трафик](/general/https-filtering/what-is-https-filtering.md) (что крайне важно, поскольку большая часть рекламы передаётся по протоколу HTTPS), AdGuard необходимо установить сертификат в пользовательское хранилище устройства. На старых версиях Android это происходило автоматически, но на Android 11 и выше приходится устанавливать его вручную.
 
-![Сертификат *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
+![Сертификат *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/screenCA.gif)
 
 Как установить сертификат AdGuard:
 
@@ -20,26 +20,26 @@ sidebar_position: 11
 1. Появятся три экрана:
     - Зачем фильтровать HTTPS-трафик?
     - HTTPS-фильтрация — это безопасно
-    - Сертификат AdGuard
+    - AdGuard certificate
 
-    Нажмите *Далее* → *Далее* → *Сохранить сертификат*.
+1. Consecutively, tap *Continue* → *Next* → *Save certificate*.
 
-1. Нажмите *Сохранить* в нижней части открывшейся папки *Загрузки*.
+1. Tap *Save* at the bottom of the opened *Download* folder.
 
-1. После сохранения нажмите *Открыть настройки*.
+1. After saving, copy the text from the *CA Certificate* field and tap *Open Settings*.
 
-1. Откройте *Настройки* и введите *Сертификат* (возможно, Сертификат центра сертификации (ЦС) или Сертификат CA) в строке поиска. Нажмите соответствующий вариант.
+1. Open *Settings* and either paste or type *CA Certificate* in the search bar. Tap the respective option.
 
-1. Вы можете увидеть предупреждение. В таком случае нажмите *Всё равно установить* и при необходимости введите свой PIN-код.
+1. You might see a warning. If so, tap *Install anyway* and enter your PIN if necessary.
 
-1. Выберите файл сертификата AdGuard. Его название должно выглядеть так: *adguard_1342_020322.crt*.
+1. Select the AdGuard certificate file. Its name should look like *adguard_1342_020322.crt*.
 
 Всё готово! Когда сертификат будет установлен, HTTPS-фильтрация включится автоматически.
 
 Если у вас возникли проблемы при ручной установке сертификата (например, вы установили сертификат, но приложение продолжает его игнорировать), вы можете воспользоваться одним из решений ниже.
 
 1. Перезапустите AdGuard.
-2. Попробуйте ещё раз установить правильный сертификат (AdGuard Personal CA).
+1. Попробуйте ещё раз установить правильный сертификат (AdGuard Personal CA).
 
 ## Предупреждения системы безопасности
 
