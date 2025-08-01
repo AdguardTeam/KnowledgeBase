@@ -1,6 +1,6 @@
 ---
 title: So beheben Sie den Fehler `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE`
-sidebar_position: 11
+sidebar_position: 12
 ---
 
 :::info

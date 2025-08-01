@@ -17,7 +17,7 @@ Existem duas opções para ativar recursos premium no aplicativo AdGuard para iO
 
 Como alternativa, você pode simplesmente inserir uma chave de licença válida no campo de e-mail, deixando o campo de senha em branco para ativar os recursos Premium.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 O AdGuard Pro para iOS (nosso outro aplicativo para iOS) só pode ser adquirido na [App Store](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264).
 

@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 Aby bylo možné [filtrovat provoz HTTPS](/general/https-filtering/what-is-https-filtering.md) (což je velmi důležité, protože většina reklam používá HTTPS), musí AdGuard nainstalovat certifikát do uživatelského úložiště vašeho zařízení. Ve starších verzích operačního systému Android se to provádělo automaticky, ale v Androidu 11 a novějších verzích jej uživatelé musí nainstalovat ručně.
 
-![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
+![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/screenCA.gif)
 
 Certifikát AdGuardu nainstalujete podle následujících kroků:
 
@@ -22,13 +22,13 @@ Certifikát AdGuardu nainstalujete podle následujících kroků:
     - Filtrování HTTPS AdGuardu je bezpečné
     - AdGuard certifikát
 
-    Postupně klepněte na *Pokračovat* → *Další* → *Uložit certifikát*.
+1. Postupně klepněte na *Pokračovat* → *Další* → *Uložit certifikát*.
 
 1. Klepněte na *Uložit* v dolní části otevřené složky *Stáhnout*.
 
-1. Po uložení klepněte na *Otevřít nastavení*.
+1. Po uložení zkopírujte text z pole *Certifikát CA* a klepněte na možnost *Otevřít nastavení*.
 
-1. Otevřete *Nastavení* a do vyhledávacího pole napište *Certifikát CA*. Klepněte na příslušnou možnost.
+1. Otevřete *Nastavení* a do vyhledávacího pole vložte *Certifikát CA*. Klepněte na příslušnou možnost.
 
 1. Může se zobrazit varování. Pokud ano, klepněte na *Přesto nainstalovat* a v případě potřeby zadejte kód PIN.
 
@@ -39,7 +39,7 @@ Vše je nastaveno! Jakmile je certifikát úspěšně nainstalován, zapnuli jst
 Pokud se během ruční instalace certifikátu vyskytnou problémy (například jste certifikát nainstalovali, ale aplikace jej stále ignoruje), můžete použít jedno z níže uvedených řešení.
 
 1. Restartujte AdGuard.
-2. Zkuste nainstalovat správný certifikát (AdGuard Personal CA) ještě jednou.
+1. Zkuste nainstalovat správný certifikát (AdGuard Personal CA) ještě jednou.
 
 ## Bezpečnostní varování
 
