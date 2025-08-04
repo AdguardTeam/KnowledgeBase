@@ -431,11 +431,11 @@ The modifier is a list of one or more expressions separated by the `|` symbol, e
 
 ```text
 applications = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
-entry_i = ( regular_app / any_tld_app / regexp )
+entry_i = ( regular_app / wildcard_app / regexp )
 ```
 
 - **`regular_app`** — a regular application name (`example.app`). Corresponds the specified application and its subapplications. It is matched lexicographically.
-- **`any_tld_app`** — a application name ending with a wildcard character as a [public suffix](https://publicsuffix.org/learn/), e.g. for `example.*` it is `app` in `example.app`. Corresponds to the specified application and its subapplications with any public suffix. It is matched lexicographically.
+- **`wildcard_app`** — an application name ending with a wildcard character `*`, such as `org.example.*` or `com.ad*`. It matches all applications whose names start with the specified prefix. Matching is done lexicographically.
 - **`regexp`** — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$`, `,`, and `|` must be escaped with `\`.
 
 **Examples**
@@ -448,18 +448,22 @@ If you want the rule not to be applied to certain apps, start the app name with 
 - `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask and are sent from any app except for the `org.example.app`.
 - `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
+You can use wildcards in the $app modifier:
+
+- `||baddomain.com^$app=org.example.*` — applies to all apps whose package names start with `org.example.`
+
 You can use regular expressions in the `$app` modifier by enclosing them in forward slashes `/.../`. This allows for more flexible matching — for example, targeting a group of apps from the same publisher or matching complex patterns.
 
 - `||baddomain.com^$app=/org\.example\.[a-z0-9_]+/` — applies to all apps whose package name starts with `org.example` (e.g. `org.example.app1`, `org.example.utility`, etc.).
 - `||baddomain.com^$app=/^org\.example\.app\$\|^org\.example\.[ab].*/` — applies to `org.example.app` and to any app whose package starts with `org.example.a` or `org.example.b`.
 
-The `$app` modifier supports combining plain app names and regular expressions in the same rule, but it does not allow combining negated and non-negated expressions together.
+The `$app` modifier supports combining all three types of entries — plain names, wildcards, and regular expressions — within the same rule, but it does not allow combining negated and non-negated expressions together.
 
-- `||baddomain.com^$app=org.example.app|/org\.example\.[a-z]+/` — applies to `org.example.app` and all matching `org.example.[a-z]+` apps.
+- `||example.com^$app=org.example.app|org.example.*|/org\.example\.[a-z]+/` — applies to `org.example.app`, all matching `org.example.*` and all matching `org.example.[a-z]+` apps.
 
 :::caution Restrictions
 
-- Apps in the modifier value cannot include a wildcard like `*`, e.g. `$app=com.*.music`.  
+- Apps in the modifier value cannot include a wildcard inside the string , e.g. `$app=com.*.music`.  
   Use a regular expression instead: `$app=/com\..*\.music/`
 - You cannot combine negated (`~`) and non-negated expressions in the same `$app` modifier — this would be ambiguous.
 
@@ -1961,7 +1965,7 @@ In AdGuard for Windows, Mac and Android with [CoreLibs] v1.11 or later, JSONPath
 {
     "elems": [
         {
-            "a": {"b": {"c": 123}},
+            "a": {"b": {"c": 123}}
         },
         {
             "a": {"b": {"c": "abc"}}
