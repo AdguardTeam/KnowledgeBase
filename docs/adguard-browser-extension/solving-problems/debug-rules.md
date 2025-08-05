@@ -42,13 +42,13 @@ Additionally, you can edit filters and rebuild DNR rulesets without rebuilding t
 1. Run the following command in the terminal:
 
     ```bash
-    pnpm dev chrome-mv3
+    pnpm dev chrome-mv3 # OR: opera-mv3
     ```
 
 1. The built extension will be located in the directory:
 
     ```bash
-    ./build/dev/chrome-mv3
+    ./build/dev/chrome-mv3 # OR: opera-mv3
     ```
 
 ## How to install unpacked in the browser
@@ -76,14 +76,17 @@ You can debug and update DNR rulesets without rebuilding the entire extension. T
 1. **Build the extension** (if not done yet):
     ```shell
     pnpm install
-    pnpm dev chrome-mv3
+    pnpm dev chrome-mv3 # OR: opera-mv3
     ```
 
 1. **Start watching for filter changes:**
     ```shell
-    pnpm debug-filters:watch
+    pnpm debug-filters watch
     ```
-    - This will extract text filters to `./build/dev/chrome-mv3/filters` and watch for changes.
+    - This command has `-b, --browser <browser>` option to specify the browser target.
+      Available browsers: `chrome-mv3`, `opera-mv3`.
+      Default: `chrome-mv3`.
+    - This will extract text filters to `./build/dev/<browser>/filters` and watch for changes.
     - When you edit and save any filter file, DNR rulesets will be rebuilt automatically.
 
 1. **Reload the extension in your browser** to apply new rulesets.
@@ -93,28 +96,37 @@ You can debug and update DNR rulesets without rebuilding the entire extension. T
 1. **Build the extension** (if not done yet):
     ```shell
     pnpm install
-    pnpm dev chrome-mv3
+    pnpm dev chrome-mv3 # OR: opera-mv3
     ```
 
 1. **Extract text filters:**
     ```shell
-    pnpm debug-filters:extract
+    pnpm debug-filters extract
     ```
+    - This command has `-b, --browser <browser>` option to specify the browser target.
+      Available browsers: `chrome-mv3`, `opera-mv3`.
+      Default: `chrome-mv3`.
 
-1. **Edit the text filters** in `./build/dev/chrome-mv3/filters` as needed.
+1. **Edit the text filters** in `./build/dev/<browser>/filters` as needed.
 
 1. **Convert filters to DNR rulesets:**
     ```shell
-    pnpm debug-filters:convert
+    pnpm debug-filters convert
     ```
+    - This command has `-b, --browser <browser>` option to specify the browser target.
+      Available browsers: `chrome-mv3`, `opera-mv3`.
+      Default: `chrome-mv3`.
 
 1. **Reload the extension in your browser** to apply new rulesets.
 
 **Tip:**
 - To download the latest available text filters, run:
     ```shell
-    pnpm debug-filters:load
+    pnpm debug-filters load
     ```
+    - This command has `-b, --browser <browser>` option to specify the browser target.
+      Available browsers: `chrome-mv3`, `opera-mv3`.
+      Default: `chrome-mv3`.
 
 If you see an exclamation mark in the filtering log, it means the assumed rule (calculated by the engine) and the applied rule (converted to DNR) are different. Otherwise, only the applied rule (in DNR and text ways) will be shown.
 
