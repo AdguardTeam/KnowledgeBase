@@ -20,23 +20,23 @@ Možnost vytvoření souboru minidump je ve výchozím nastavení zakázána, ta
 
 I když nedochází k chybám při pádu BSoD, můžete tuto možnost nastavit — jedná se o obecné doporučení, které se nemusí nutně týkat produktů AdGuard. Pro automatické vytvoření souboru minidump postupujte podle níže uvedených pokynů.
 
- 1. Type *sysdm.cpl* in the Windows search bar and click **Open**. The **System Properties Control Panel Menu** window will appear on the screen.
+ 1. Do vyhledávacího pole Windows napište *sysdm.cpl* a klikněte na **Otevřít**. Na obrazovce se zobrazí okno **Vlastnosti systému**.
 
     :::tip
 
-    Alternatively, click **Settings** → **System** → **About** → **Advanced system settings**.
+    Případně klikněte na **Nastavení** → **Systém** → **Informace** → **Pokročilá nastavení systému**.
 
 
 :::
 
     ![System Properties *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
 
- 1. Go to the **Advanced** tab.
- 1. In the **Startup and Recovery** section, click **Settings**.
+ 1. Přejděte na kartu **Upřesnit**.
+ 1. V části **Spouštění a zotavení systému** klikněte na **Nastavení**.
 
     ![Startup and Recovery *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
 
- 1. Enable the following three options:
+ 1. Povolte následující tři možnosti:
 
     - Zapsat událost do systémového protokolu
     - Automaticky restartovat
@@ -55,25 +55,25 @@ Ve výchozím nastavení je soubor minidump uložen ve složce **%SystemRoot%\Mi
 
 :::
 
-## Collecting wfpdiag.cab file
+## Shromažďování souboru wfpdiag.cab
 
-Our support team may request a wfpdiag.cab file, along with a minidump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
+Náš tým podpory si může vyžádat soubor wfpdiag.cab spolu se souborem minidump, aby mohl důkladněji analyzovat systémové protokoly a diagnostikovat problémy. Chcete-li soubor shromáždit, postupujte podle následujících kroků:
 
 1. Zapněte AdGuard ochranu.
 
-1. Click *Start* and type `cmd` to open Command Prompt
+1. Klikněte na *Start* a napište `cmd` pro otevření příkazového řádku
 
-1. Right-click Command Prompt and choose *Run as administrator*
+1. Klikněte pravým tlačítkem myši na příkazový řádek a vyberte možnost *Spustit jako správce*
 
     :::note
 
-    A wfpdiag.cab file is created in your current directory. You can change the location by typing `cd <folder_name>`.
+    V aktuálním adresáři se vytvoří soubor wfpdiag.cab. Umístění můžete změnit zadáním `cd<folder_name>`.
 
 
 :::
 
-1. To start logging, enter the following command: `netsh wfp capture start`
+1. Chcete-li spustit protokolování, zadejte následující příkaz: `netsh wfp capture start`
 
-1. Visit any website to route traffic through AdGuard and log the filtering process
+1. Navštivte libovolnou webovou stránku, abyste přesměrovali provoz skrze AdGuard a zaznamenali proces filtrování
 
-1. To stop logging, enter `netsh wfp capture stop`
+1. Chcete-li zastavit protokolování, zadejte `netsh wfp capture stop`

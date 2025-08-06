@@ -132,6 +132,12 @@ HTTPS-фильтрация позволяет AdGuard фильтровать с�
 
 - _Автоматический прокси_ — альтернативный метод маршрутизации трафика, не требующий использования VPN. Одним из его существенных преимуществ является то, что его можно запускать параллельно с VPN. Этот режим требует root-доступа.
 
+:::note
+
+Please note that DNS filtering will still be active in _Automatic proxy_ routing mode, and your device may not be able to filter DNS requests from specific apps. In _VPN_ routing mode, apps are excluded from the local VPN by system means. Therefore, the system resolver sees which apps are included in the VPN and which are not. It either allows them into the local VPN or lets them bypass it. However, DNS requests come from the system resolver, not the application. In _Automatic proxy_ mode, it is only possible to exclude traffic from applications, not their DNS queries, because AdGuard sees them as system queries.
+
+:::
+
 - В режиме _Ручной прокси_ настраивается порт для прокси, который затем нужно указать в настройках Wi-Fi. Для этого режима требуется root-доступ на Android 10 и выше.
 
 ## Лицензия
