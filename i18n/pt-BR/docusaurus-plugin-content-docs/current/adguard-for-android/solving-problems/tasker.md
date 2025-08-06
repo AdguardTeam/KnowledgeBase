@@ -45,7 +45,7 @@ Aqui estão as ações que, quando incluídas na intenção, serão compreendida
 
 `enable:true` ou `enable:false` ativa ou desativa a configuração *Usar FakeDNS*, respectivamente.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Quando a configuração *Usar FakeDNS* estiver ativada, *Proteção DNS* será desatiavda automaticamente. As solicitações de DNS não serão filtradas localmente.
 
@@ -57,7 +57,7 @@ Quando a configuração *Usar FakeDNS* estiver ativada, *Proteção DNS* será d
 
  `server:adguard dns` alterna para o servidor DNS do AdGuard;
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 A lista completa de nomes de provedores compatíveis pode ser encontrada em nossa lista de [provedores DNS conhecidos](https://adguard-dns.io/kb/general/dns-providers/).
 
@@ -134,7 +134,7 @@ Nome do pacote: `com.adguard.android`
 
 Classe: `com.adguard.android.receiver.AutomationReceiver`
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Antes da v4.0, a classe era chamada `com.adguard.android.receivers.AutomationReceiver`, mas depois mudamos seu nome para `com.adguard.android.receiver.AutomationReceiver`. Se esta função for usada, lembre-se de atualizar para o novo nome.
 

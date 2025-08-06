@@ -35,7 +35,7 @@ Chcete-li rozšířit limit zařízení, můžete provést [upgrade](../payment-
 
 ## Jak používat licenci AdGuardu
 
-Chcete-li licenci používat v zařízení, přihlaste se do aplikace AdGuard pomocí e-mailové adresy přidružené k licenci. Pokud licence ještě nebyla připojena k vaší e-mailové adrese, můžete to provést v [AdGuard účtu](https://adguardaccount.com/). Chcete-li tak učinit, otevřete kartu *Licence* a klikněte na *Připojit licenci*.
+Chcete-li licenci používat v zařízení, přihlaste se do aplikace AdGuard pomocí e-mailové adresy přidružené k licenci. Pokud licence ještě nebyla připojena k vaší e-mailové adrese, můžete to provést v [AdGuard účtu](https://adguardaccount.com/). Chcete-li tak učinit, otevřete kartu *Licence* a klikněte na *Připojit licenci*. Usually, licenses are activated immediately, but sometimes activation may take up to five minutes.
 
 Případně můžete v aplikaci AdGuard zadat [licenční klíč](#license-key).
 

@@ -79,7 +79,7 @@ Ative esta opção para abrir a janela principal do AdGuard depois que o sistema
 
 A partir da v7.12, por padrão, o serviço do AdGuard não filtra o tráfego após a inicialização do sistema operacional se a opção Iniciar o AdGuard na inicialização do sistema estiver desativada. Em outras palavras, o serviço do AdGuard é iniciado no modo “ocioso”. Ative esta opção para filtrar o tráfego do AdGuard mesmo que o aplicativo não seja iniciado.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Antes da v7.12, o serviço AdGuard iniciava no modo de filtragem por padrão (mesmo se *Iniciar o AdGuard na inicialização do sistema* estivesse desativado). Se você estava satisfeito com o funcionamento antigo, ative esta opção.
 
@@ -137,7 +137,7 @@ Envia periodicamente pacotes TCP por conexão ociosa para garantir que esteja at
 
 Aqui você pode especificar um período de tempo ocioso, em segundos, antes de enviar um teste keepalive. Se 0 for especificado, o valor selecionado pelo sistema será utilizado.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Esta configuração só funciona quando a opção *Ativar TCP keepalive* está ativada.
 
@@ -147,7 +147,7 @@ Esta configuração só funciona quando a opção *Ativar TCP keepalive* está a
 
 Aqui você pode especificar o tempo em segundos antes de enviar outro teste de manutenção de atividade para um par que não responde. Se 0 for especificado, o valor selecionado pelo sistema será utilizado.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Esta configuração só funciona quando a opção *Ativar TCP keepalive* está ativada.
 

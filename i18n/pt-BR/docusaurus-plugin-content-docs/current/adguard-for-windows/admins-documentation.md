@@ -29,7 +29,7 @@ Caso contrário, você pode executar o MSI na máquina de destino diretamente (e
 
 Se você precisar implementar uma atualização, use este comando: `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Você deve executar esses comandos com privilégios de administrador.
 
@@ -37,7 +37,7 @@ Você deve executar esses comandos com privilégios de administrador.
 
 Se você quiser instalar o AdGuard em um computador com Windows 7, certifique-se de que o .NET 4 Client Profile esteja instalado: https://www.microsoft.com/es/download/details.aspx?id=24872
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Se você instalou o AdGuard para Windows a partir de um arquivo MSI, o AdGuard não será atualizado automaticamente. Para permitir atualizações manuais:
 

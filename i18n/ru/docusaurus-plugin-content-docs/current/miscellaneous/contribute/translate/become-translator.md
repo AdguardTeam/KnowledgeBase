@@ -47,9 +47,9 @@ You can find some [helpful tips on translating AdGuard in this article](../guide
 
 We have proofreaders (previously known as moderators) for each language. And every active translator has an option to become one.
 
-So, what are proofreaders responsible for?
+Что обычно делают пруфридеры?
 
-**Proofreaders:**
+**Пруфридеры:**
 
 - Одобряют качественные переводы и исправляют/отклоняют некорректные;
 
@@ -57,4 +57,4 @@ So, what are proofreaders responsible for?
 
 - Отвечают на комментарии, относящиеся к переводам на их язык.
 
-Every year, the best proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system](../rewards).
+Каждый год лучшие пруфридеры получают подарки от AdGuard. Активные переводчики тоже не остаются без награды. Узнайте больше о нашей [системе вознаграждения](../rewards).
