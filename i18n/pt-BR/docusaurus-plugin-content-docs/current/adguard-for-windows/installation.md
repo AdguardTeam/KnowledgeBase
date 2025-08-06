@@ -117,7 +117,7 @@ Besides running the advanced uninstaller in its user-interactive mode, you can a
 
 4. Você também pode usar `/advanced` para forçar o desinstalador a rodar em *modo Avançado* e `/settings` para forçar o desinstalador a Excluir as configurações do usuário junto com o aplicativo.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 The use of the parameters `/console` and `/adblocker` is necessary for a successful uninstall. The parameters `/advanced` and `/settings` are optional.
 

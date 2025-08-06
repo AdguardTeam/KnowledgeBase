@@ -287,7 +287,7 @@ Este recurso pode ou não estar disponível para todos os dispositivos ou pode s
 
 ### Dispositivos EMUI 9+ e PowerGenie
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Em telefones com EMUI 9+ (Android P+), há um aplicativo eliminador de tarefas chamado PowerGenie que força o encerramento de todos os aplicativos não permitidos pela Huawei e não oferece aos usuários nenhuma opção de configuração. Veja abaixo como desinstalá-lo.
 
@@ -416,7 +416,7 @@ Nesses dispositivos, há um eliminador de tarefas chamado **DuraSpeed** que ence
 
     ![Nokia tasker *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/nokia_tasker.png)
 
-    :::note
+    Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
     Você precisa das configurações do tipo **Global** e **Sistema**. A captura de tela mostra apenas a configuração Global como exemplo.
 

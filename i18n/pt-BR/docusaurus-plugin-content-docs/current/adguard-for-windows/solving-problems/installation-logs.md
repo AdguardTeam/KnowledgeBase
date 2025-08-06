@@ -9,7 +9,7 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 :::
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Os dados e/ou arquivos fornecidos nos registros do sistema são processados de acordo com [a Política de Privacidade do AdGuard](https://adguard.com/en/privacy.html).
 
