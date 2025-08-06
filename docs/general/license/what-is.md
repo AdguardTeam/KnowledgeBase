@@ -35,7 +35,7 @@ To extend the device limit, you can [upgrade](../payment-options/#upgrade) your 
 
 ## How to use the AdGuard license
 
-To use your license on a device, log in to your AdGuard app using the email address associated with the license. If the license hasn't been bound to your email address yet, you can do it in your [AdGuard account](https://adguardaccount.com/). To do so, open the *Licenses* tab and click *Bind license*. Usually the licenses are activated immediately, but sometimes activation might take up to 5 minutes.
+To use your license on a device, log in to your AdGuard app using the email address associated with the license. If the license hasn't been bound to your email address yet, you can do it in your [AdGuard account](https://adguardaccount.com/). To do so, open the *Licenses* tab and click *Bind license*. Usually, licenses are activated immediately, but sometimes activation may take up to five minutes.
 
 Alternatively, you can enter your [license key](#license-key) in your AdGuard app.
 
