@@ -21,9 +21,9 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 ## AdGuard kurulumu
 
-To install AdGuard on a Windows PC or tablet, follow these steps:
+AdGuard'ı bir Windows PC veya tablete kurmak için şu adımları izleyin:
 
-1. Go to the [AdGuard website](http://adguard.com) and click *Download*. You can also get the installation program from the [download page](https://adguard.com/download.html?auto=1) — the download will start automatically.
+1. [AdGuard sitesine](http://adguard.com) gidin ve *İndir* öğesine tıklayın. Kurulum programını [indirme sayfasından](https://adguard.com/download.html?auto=1) da edinebilirsiniz — indirme otomatik olarak başlar.
 
    ![Download AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/website_en.png)
 
@@ -49,9 +49,9 @@ To install AdGuard on a Windows PC or tablet, follow these steps:
 
    Tebrikler! AdGuard has been successfully installed. You’ll be prompted to set up protection according to your preferences.
 
-   ![Setting up protection *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/setting_up_protection_en.png)
+   ![Koruma ayarlanıyor *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/setting_up_protection_en.png)
 
-   After that, the main window will open, where you can adjust the app’s settings.
+   Bundan sonra, uygulamanın ayarlarını yapabileceğiniz ana pencere açılır.
 
 ## Windows için AdGuard nasıl kaldırılır {#uninstall}
 
@@ -59,7 +59,7 @@ To install AdGuard on a Windows PC or tablet, follow these steps:
 
 AdGuard'ı kaldırmanız veya yeniden kurmanız gerekirse aşağıdakileri yapın:
 
-- For Microsoft Windows 10 & 11: Open the *Start Menu* by clicking *Start*, then select *Settings*. In the window that opens, click  *Apps* → *Installed apps*. Select *AdGuard* from the list of your installed apps, click the three-dot menu, and select *Uninstall*.
+- Microsoft Windows 10 & 11 için: *Başlat* öğesine tıklayarak *Başlat Menüsünü* açın, ardından *Ayarlar* öğesini seçin. Açılan pencerede *Uygulamalar* → *Yüklü uygulamalar* öğesine tıklayın. Select *AdGuard* from the list of your installed apps, click the three-dot menu, and select *Uninstall*.
 
    ![Windows 10 & 11 uninstallation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/win11_uninstall_adguard.png)
 
