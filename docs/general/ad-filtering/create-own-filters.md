@@ -463,7 +463,7 @@ The `$app` modifier supports combining all three types of entries — plain name
 
 :::caution Restrictions
 
-- Apps in the modifier value cannot include a wildcard inside the string , e.g. `$app=com.*.music`.  
+- Apps in the modifier value cannot include a wildcard inside the string , e.g. `$app=com.*.music`.
   Use a regular expression instead: `$app=/com\..*\.music/`
 - You cannot combine negated (`~`) and non-negated expressions in the same `$app` modifier — this would be ambiguous.
 
