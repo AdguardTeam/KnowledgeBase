@@ -54,3 +54,26 @@ I když nedochází k chybám při pádu BSoD, můžete tuto možnost nastavit �
 Ve výchozím nastavení je soubor minidump uložen ve složce **%SystemRoot%\Minidump**. Umístění adresáře můžete změnit na libovolné, ale nezapomeňte, že mnoho programů je nastaveno tak, aby toto umístění hledaly ve výchozím nastavení, proto doporučujeme umístění neměnit.
 
 :::
+
+## Shromažďování souboru wfpdiag.cab
+
+Náš tým podpory si může vyžádat soubor wfpdiag.cab spolu se souborem minidump, aby mohl důkladněji analyzovat systémové protokoly a diagnostikovat problémy. Chcete-li soubor shromáždit, postupujte podle následujících kroků:
+
+1. Zapněte AdGuard ochranu.
+
+1. Klikněte na *Start* a napište `cmd` pro otevření příkazového řádku
+
+1. Klikněte pravým tlačítkem myši na příkazový řádek a vyberte možnost *Spustit jako správce*
+
+    :::note
+
+    V aktuálním adresáři se vytvoří soubor wfpdiag.cab. Umístění můžete změnit zadáním `cd<folder_name>`.
+
+
+:::
+
+1. Chcete-li spustit protokolování, zadejte následující příkaz: `netsh wfp capture start`
+
+1. Navštivte libovolnou webovou stránku, abyste přesměrovali provoz skrze AdGuard a zaznamenali proces filtrování
+
+1. Chcete-li zastavit protokolování, zadejte `netsh wfp capture stop`

@@ -153,7 +153,7 @@ Ce paramètre ne fonctionne que lorsque l'option *Activer TCP keepalive* est act
 
 :::
 
-### Bloquer Java
+### Block Java
 
 Certains sites Web et services Web prennent toujours en charge les plug-ins Java. L'API qui sert de base aux plug-ins Java présente de graves vulnérabilités de sécurité. Vous pouvez désactiver ces plug-ins pour des raisons de sécurité. Néanmoins, même si vous décidez d'utiliser l'option *Bloquer Java* , JavaScript sera toujours activé.
 

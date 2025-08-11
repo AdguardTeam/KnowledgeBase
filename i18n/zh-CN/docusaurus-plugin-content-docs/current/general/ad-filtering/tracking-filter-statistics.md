@@ -13,7 +13,7 @@ sidebar_position: 4
 
 让我们先从广告过滤器的定义开始。 有了广告过滤器的帮助，AdGuard 才能移除网站上的广告。 它们是基于用户对网站广告的投诉而手动编译的。 广告过滤器是 AdGuard 的重要元素，它们的品质确定 AdGuard 拦截广告的整体效果。
 
-然而，有个缺点。 多年来，广告过滤器的数量越来越多。 而且广告过滤器越多，AdGuard 占用的内存也就越多，从而降低网页的渲染速度。 同时，一些过滤器慢慢过期，逐渐成为无用的累赘，只会占据内存，并降低程序的运行速度。
+然而，有个缺点。 Over the years, more and more ad filters have appeared. The more ad filters there are, the more memory AdGuard consumes, thus slowing down the rendering of webpages. At the same time, some filters expire and gradually become useless, consuming memory and slowing down the program.
 
 ### 为什么统计数据很重要？
 
