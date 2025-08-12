@@ -536,7 +536,7 @@ If you want the rule not to be applied to certain domains, start a domain name w
 
 **`$domain` modifier matching target domain:**
 
-In some cases the `$domain` modifier can match not only the referrer domain, but also the target domain. 
+In some cases the `$domain` modifier can match not only the referrer domain, but also the target domain.
 
 This happens when the rule has one of the following modifiers: [`$cookie`](#cookie-modifier), [`$csp`](#csp-modifier), [`$permissions`](#permissions-modifier), [`$removeparam`](#removeparam-modifier).
 
