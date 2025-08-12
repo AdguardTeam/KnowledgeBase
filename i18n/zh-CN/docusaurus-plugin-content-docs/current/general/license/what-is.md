@@ -35,7 +35,7 @@ sidebar_position: 1
 
 ## 如何使用 AdGuard 许可证
 
-要在设备上使用许可证，请使用与许可证关联的电子邮件地址登录 AdGuard 应用程序。 如果许可证尚未绑定到电子邮件地址，用户可以在 [AdGuard 账号](https://adguardaccount.com/)中进行绑定。 请打开「*许可证*」选项卡，然后单击「*绑定许可证*」即可。
+要在设备上使用许可证，请使用与许可证关联的电子邮件地址登录 AdGuard 应用程序。 如果许可证尚未绑定到电子邮件地址，用户可以在 [AdGuard 账号](https://adguardaccount.com/)中进行绑定。 请打开「*许可证*」选项卡，然后单击「*绑定许可证*」即可。 Usually, licenses are activated immediately, but sometimes activation may take up to five minutes.
 
 或者，用户也可以在 AdGuard 应用程序中输入[许可证密钥](#license-key)。
 

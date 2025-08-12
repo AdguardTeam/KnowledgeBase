@@ -13,11 +13,11 @@ sidebar_position: 2
 
 Обычно браузеры доверяют сертификату AdGuard после его добавления в системное хранилище сертификатов в процессе установки. Но в некоторых случаях этого недостаточно, и вы можете столкнуться с предупреждениями или ошибками. Чаще всего это происходит в браузерах на базе Firefox, таких как Mozilla Firefox, PaleMoon, Waterfox и т. д., или в Яндекс Браузере.
 
-Here are some common issues:
+Вот некоторые распространённые проблемы:
 
 - [*Потенциальная угроза безопасности* в браузерах на базе Firefox](#potential-security-risk-error-in-firefox-based-browsers)
 - [Предупреждение Яндекс Браузера](#yandexbrowser-certificate-warning)
-- [Non-official add-ons don’t update in Firefox-based browsers](#non-official-add-ons-dont-update-in-firefox-based-browsers)
+- [Неофициальные расширения не обновляются в браузерах на базе Firefox](#non-official-add-ons-dont-update-in-firefox-based-browsers)
 
 ## *Потенциальная угроза безопасности* в браузерах на базе Firefox
 
@@ -84,14 +84,14 @@ Here are some common issues:
 
 Отключение HTTPS-фильтрации в AdGuard также предотвратит повторное отображение этого сообщения в Яндекс Браузере. Однако это приведёт к тому, что вы будете видеть рекламу, загружаемую по HTTPS (в том числе **собственную рекламу Яндекса**) на таких сайтах, как YouTube, Facebook, Instagram и многие другие. Мы настоятельно не рекомендуем делать это, если вы хотите сохранить высокое качество блокировки рекламы.
 
-## Non-official add-ons don’t update in Firefox-based browsers
+## Неофициальные расширения не обновляются в браузерах на базе Firefox
 
-If you use Firefox-based browsers and have add-ons that aren’t from Mozilla’s official catalog — and HTTPS filtering is enabled in AdGuard — those add-ons won’t be able to update. Here’s why.
+В браузерах на базе Firefox при включённой HTTPS-фильтрации в AdGuard расширения не из официального каталога Mozilla не могут обновляться. И вот почему.
 
-To update add-ons, Firefox checks whether the connection to the update server is secured with a certificate issued by a trusted certificate authority (CA). Firefox-based browsers only trust certificates from CAs included in Mozilla’s built-in list — it’s a security measure to block potentially unsafe updates.
+Чтобы обновить расширения, Firefox проверяет, защищено ли соединение с сервером обновлений сертификатом, выданным доверенным центром сертификации (CA). Браузеры на базе Firefox доверяют сертификатам только от удостоверяющих центров, включённых во встроенный список Mozilla — это мера безопасности для блокирования потенциально небезопасных обновлений.
 
-AdGuard’s certificate, although secure, isn’t on that list. That is why Mozilla domains are excluded from HTTPS filtering in AdGuard.
+Сертификат AdGuard, несмотря на то что он безопасный, отсутствует в этом списке. Вот почему домены Mozilla исключены из HTTPS-фильтрации в AdGuard.
 
-However, non-official add-ons use third-party servers for updates, and those are not excluded from HTTPS filtering by default. So when Firefox checks the connection, it sees AdGuard’s certificate instead of the original one — and blocks the update.
+Однако неофициальные расширения используют сторонние серверы для обновлений, и они не исключены из HTTPS-фильтрации по умолчанию. Поэтому, когда Firefox проверяет соединение, он видит сертификат AdGuard вместо оригинального — и блокирует обновление.
 
-If you need to check for updates for such add-ons, consider temporarily disabling AdGuard.
+Если вам нужно проверить наличие обновлений для таких расширений, рассмотрите возможность временно отключить AdGuard.

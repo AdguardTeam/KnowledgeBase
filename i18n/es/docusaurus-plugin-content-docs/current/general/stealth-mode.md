@@ -1,169 +1,173 @@
 ---
-title: Tracking protection (formerly Stealth Mode)
+title: Protección de seguimiento (anteriormente Modo sigiloso)
 sidebar_position: 4
 ---
 
-Many websites gather information about their visitors, including their IP address, installed browser and operating system, screen resolution, and even the page from which they were redirected. Some web pages use cookies to mark your browser and save your settings and preferences, or to “recognize” you upon your next visit. **Tracking protection** safeguards your personal information from such data- and statistics-gathering systems.
+Muchos sitios web recopilan información sobre sus visitantes, como su dirección IP, navegador y sistema operativo instalados, resolución de pantalla e incluso la página desde la que se redirige al visitante. Algunas páginas web utilizan cookies para marcar tu navegador y guardar tus configuraciones y preferencias personales, o para "reconocerte" en tu próxima visita. *Protección de seguimiento* protege tu información personal de sistemas de recopilación de datos y estadísticas.
 
-You can adjust the tracking protection settings as needed. For example, you can prevent websites from receiving search engine requests that led you to them. You can automatically delete third-party and first-party cookies. You can also turn off browser geolocation sharing, which can be used to track your location. You can hide your true IP address or replace it with an arbitrary one.
+Puedes ajustar la configuración de protección contra seguimiento según sea necesario. Por ejemplo, puedes evitar que los sitios web reciban las consultas de motores de búsqueda que te llevaron a ellos. Puedes eliminar automáticamente las cookies propias y de terceros. También puedes desactivar la compartición de geolocalización del navegador, que puede ser utilizada para rastrear tu ubicación. Puedes ocultar tu verdadera dirección IP o reemplazarla por una arbitraria.
 
-Below, we will list and describe the main features that you can control in the **Tracking protection** settings. The features are organized into the following sections: **General**, **Tracking methods**, **Browser API**,  **Windows tracking**, and **Miscellaneous**.
+A continuación, enumeraremos y describiremos las principales funciones y opciones que puedes controlar en la configuración del **Modo sigiloso**. Se dividen en cuatro grupos: **General**, **Métodos de seguimiento**, **API del navegador** **Rastreamento do Windows** y **Varios**.
 
 :::note
 
-Some features are only available for certain products because of limitations from the operating system or browser.
+Es posible que algunas opciones no estén disponibles según el producto en particular debido al sistema operativo o del navegador.
 
 :::
 
 ## General {#general}
 
-### Block trackers {#blocktrackers}
+### Bloquear rastreadores {#blocktrackers}
 
-This feature blocks trackers and web analytics using the AdGuard Tracking Protection filter.
+Esta función bloquea los rastreadores y analíticas web mediante el filtro de protección contra seguimiento de AdGuard.
 
-### Remove tracking parameters from URLs {#removetracking}
+### Eliminar parámetros de seguimiento de las URL {#removetracking}
 
-If you enable this feature, AdGuard will use its AdGuard URL Tracking filter to remove tracking parameters like `utm_*` and `fb_ref` from page URLs.
+Si habilitas esta función, AdGuard usará su filtro contra seguimiento de URL para quitar parámetros de seguimiento como `utm_*` y `fb_ref` de las URL de las páginas.
 
-### Hide search queries {#searchqueries}
+### Ocultar consultas de búsqueda {#searchqueries}
 
-This feature hides your search query from websites that you visit via search engine results. For example, when you open a website through a search engine like Google or Yahoo, this feature hides the search query you used to find that website.
+Esta función oculta tus consultas de búsqueda en los sitios web que visitas a través de los resultados de los motores de búsqueda. Por ejemplo, cuando abres un sitio web a través de un motor de búsqueda como Google o Yahoo, esta función oculta la consulta de búsqueda que usaste para encontrar ese sitio web.
 
-### Ask websites not to track me {#donottrack}
+### Pedir a los sitios web que no me rastreen {#donottrack}
 
-Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit.
+Envía las señales [Control de privacidad global](https://globalprivacycontrol.org/#gpc-spec) y [No rastrear](https://en.wikipedia.org/wiki/Do_Not_Track) a los sitios web que visitas.
 
-### Other privacy filters {#otherprivacyfilters}
+### Otros filtros de privacidad {#otherprivacyfilters}
 
-This feature displays other privacy filters enabled in **Filters**.
+Esta función muestra otros filtros de privacidad habilitados en **Filtros**.
 
 :::note
 
-Available in AdGuard for Android and AdGuard for Windows.
+Disponible en AdGuard para Android y AdGuard para Windows.
 
 :::
 
-## Tracking methods {#tracking-methods}
+## Métodos de seguimiento {#tracking-methods}
 
-### Delete third-party cookies {#3p-cookie}
+### Eliminar cookies de terceros {#3p-cookie}
 
-This feature prevents advertisers from tracking your behavior across multiple pages by limiting the lifetime of third-party cookies.
+Esta función evita que los anunciantes rastreen su comportamiento en varias páginas limitando la vida útil de las cookies de terceros.
 
-Websites use cookies to store your information and preferences, such as the language you selected, your location, or the list of items in your shopping cart. Pon el temporizador en 0 para bloquearlos por completo.
+Los sitios web utilizan cookies para almacenar tu información y preferencias, como el idioma que seleccionaste, tu ubicación o la lista de artículos en tu carrito de compras. Pon el temporizador en 0 para bloquearlos por completo.
 
-Third-party cookies are implemented by a website other than the one you are currently browsing. For example, cnn.com may have a Facebook “Like” widget on its homepage. This widget installs a cookie that Facebook can read later. Some advertisers use such cookies to track what other websites you visit that have their ads.
+Las cookies de terceros son implementadas por un sitio web diferente al que estás navegando actualmente. Por ejemplo, cnn.com puede tener un widget de "Me gusta" de Facebook en su página de inicio. Este widget instala una cookie que Facebook puede leer más tarde. Algunos anunciantes utilizan este tipo de cookie para rastrear qué otros sitios web que visitas tienen sus anuncios.
 
-Set a time period (in minutes) after which all third-party cookies will be deleted. To block these cookies, set their lifetime to 0.
+Establece un período de tiempo (en minutos) después del cual se eliminarán todas las cookies de terceros. Para bloquear estas cookies, configura su duración en 0.
 
 :::caution
 
-This setting deletes all third-party cookies, including the information of your logins through social networks or other third-party services. You may have to periodically re-log in to some websites and face other cookie-related issues. To block only tracking cookies, use [*AdGuard Tracking Protection filter*](/general/ad-filtering/filter-policy/#tracking-protection-filter).
+Esta configuración elimina todas las cookies de terceros, incluida la información de tus inicios de sesión a través de redes sociales u otros servicios de terceros. Es posible que tengas que volver a iniciar sesión periódicamente en algunos sitios web y que se enfrente a otros problemas relacionados con las cookies. Para bloquear solo las cookies de seguimiento, utiliza [*Filtro de protección de seguimiento de AdGuard*](/general/ad-filtering/filter-policy/#tracking-protection-filter).
 
 :::
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, AdGuard for Mac, and AdGuard Browser Extension (MV2-based browsers).
+Disponible en AdGuard para Android, AdGuard para Windows, AdGuard para macOS y la Extensión de navegador AdGuard (navegadores basados en MV2).
 
 :::
 
-### Delete first-party cookies (not recommended) {#1p-cookie}
+### Eliminar las cookies de origen (no recomendado) {#1p-cookie}
 
-This feature prevents websites from remembering your details, such as your login credentials and language preferences, by limiting the lifetime of first-party cookies.
+Esta función evita que los sitios web recuerden tus datos, como tus credenciales de inicio de sesión y preferencias de idioma, limitando el tiempo de vida de las cookies del dominio de la petición.
 
-Set a time period (in minutes) after which all cookies will be deleted. To block these cookies, set their lifetime to 0.
+Establece un período de tiempo (en minutos) después del cual se eliminarán todas las cookies. Para bloquear estas cookies, configura su duración en 0.
 
 :::caution
 
-We do not recommend enabling this option as it may severely interfere with the work of certain websites. If you block these cookies, some websites may break or stop working.
+No recomendamos habilitar esta opción ya que puede interferir gravemente con el trabajo de ciertos sitios web. Si bloqueas estas cookies, algunos sitios web pueden dejar de funcionar.
 
 :::
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, AdGuard for Mac, and AdGuard Browser Extension (MV2-based browsers).
+Disponible en AdGuard para Android, AdGuard para Windows, AdGuard para macOS y la Extensión de navegador AdGuard (navegadores basados en MV2).
 
 :::
 
-### Block ETag and If-None-Match headers {#3p-cache}
+### Bloquear las cabeceras ETag e If-None-Match {#3p-cache}
 
-This feature removes the ETag and If-None-Match headers from requests and responses to prevent tracking by them.
+Esta función quita los encabezados ETag e If-None-Match de las peticiones y respuestas para evitar seguimiento a través de ellos.
 
-When a browser addresses a page, the server assigns an ETag to that page. This ETag is used by the browser to cache the page's contents. Upon subsequent requests, the browser sends the ETag to the corresponding server, thus letting the server learn the visitor’s identity. As long as the site's files are cached, the ETag is sent every time your browser addresses this site. If the site has embedded content from another server (such as an image or iframe), that server can track your activities without your knowledge.
+Cuando un navegador accede a una página, el servidor asigna una ETag a esa página. El navegador utiliza esta ETag para almacenar en caché el contenido de la página. Tras solicitudes posteriores, el navegador envía la ETag al servidor correspondiente, permitiendo así que el servidor conozca la identidad del visitante. Siempre que los archivos del sitio estén almacenados en caché, la ETag se envía cada vez que tu navegador accede a este sitio. Si el sitio tiene contenido incrustado de otro servidor (como una imagen o un iframe), ese servidor puede rastrear tus actividades sin tu conocimiento.
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+Disponible en AdGuard para Android, AdGuard para Windows y AdGuard para Mac.
 
 :::
 
-### Block third-party Authorization header {#3p-auth}
+### Bloquear encabezado de autorización de terceros {#3p-auth}
 
-This feature disables cached authorization data that can be used for tracking. May interfere with the functionality of some browser extensions and websites.
+Esta función deshabilita los datos de autorización almacenados en caché que se pueden utilizar con fines de seguimiento. Puede interferir con la funcionalidad de algunas extensiones de navegador y sitios web.
 
-The “Authorization” header value is cached by the browser and sent alongside every request to that domain. This means it can be used for tracking purposes, just like cookies.
+El valor del encabezado "Autorización" es almacenado en cache por el navegador y se envía junto con cada Petición a ese dominio. Esto significa que se puede utilizar con fines de seguimiento, al igual que las cookies.
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+Disponible en AdGuard para Android, AdGuard para Windows y AdGuard para Mac.
 
 :::
 
-## Browser API {#browser-api}
+## API del navegador {#browser-api}
 
 :::note
 
-Only the **Block WebRTC** feature is available for AdGuard Browser Extension. You can find it in the **Miscellaneous** section.
+Solo la función **Bloquear WebRTC** está disponible para la Extensión de navegador de AdGuard. Puedes encontrarlo en la sección **Varios**.
 
 :::
 
-### Block WebRTC {#webrtc}
+### Bloquear WebRTC {#webrtc}
 
-This feature blocks WebRTC that can leak your real IP address even if you use a proxy or VPN.
+Esta función bloquea WebRTC, que puede filtrar tu dirección IP real incluso si utilizas un proxy o VPN (PREFERRED).
 
-WebRTC (Web Real-Time Communication) is a technology that enables direct streaming of data between browsers and apps. However, it can let others know your true IP address, even when using a proxy or VPN.
+WebRTC (Web Real-Time Communication) es una tecnología que permite la transmisión directa de datos entre navegadores y aplicaciones. Sin embargo, puede permitir que otros sepan tu verdadera dirección IP, incluso cuando usas un proxy o VPN.
 
 :::caution
 
-Enabling this option can disrupt the work of certain browser applications, such as messengers, streaming platforms, chats, or games.
+Habilitar esta opción puede interrumpir el funcionamiento de determinadas aplicaciones del navegador, como mensajeros, plataformas de streaming, chats o juegos.
 
 :::
 
-### Block Push API {#push}
+### Bloquear API Push {#push}
 
-This feature blocks push notifications from websites.
+Esta función bloquea las notificaciones push de los sitios web.
 
-The Push API enables servers to send messages to web applications regardless of the activity status of your browser. This means that you can see notifications from various websites even when your browser is minimized or closed. Enable this option to block the browser’s Push API completely.
+Push API permite a los servidores enviar mensajes a aplicaciones web independientemente del estado de actividad de tu navegador. Esto significa que puedes ver notificaciones de varios sitios web incluso cuando tu navegador está minimizado o cerrado. Habilita esta opción para bloquear completamente la Push API del navegador.
 
-### Block Location API {#location}
+### Bloquear API de ubicación {#location}
 
-This feature prevents websites from detecting your location.
+Esta función evita que los sitios web detecten tu ubicación.
 
-Enabling this option prevents your browser from sending GPS data that could be used to determine your location, modify your search results, or otherwise influence your web experience.
+Habilitar esta opción evitará que el navegador envíe datos de GPS que podrían usarse para determinar tu ubicación, modificar tus resultados de búsqueda o influir de otra manera en tu experiencia web.
 
-### Block Flash {#flash}
+### Bloquear Flash {#flash}
 
-This feature increases protection and speeds up website loading by blocking Flash Player support in browsers.
+Esta función incrementa la protección y la velocidad de carga del sitio web bloqueando el soporte de Flash Player en los navegadores.
 
-The Flash Player plugin has become increasingly vulnerable to such online threats as viruses and hackers; it may also significantly increase website load times. Turning this setting on makes AdGuard block browsers' ability to detect components (such as plugins and ActiveXObject objects) that allow Flash to display content. This effectively means that browsers are unable to support Flash.
+El complemento Flash Player se ha vuelto cada vez más vulnerable a amenazas en línea como virus y hackers; también puede aumentar significativamente los tiempos de carga del sitio web. Al activar esta configuración, AdGuard bloquea la capacidad de los navegadores para detectar componentes (como complementos y objetos ActiveXObject) que permiten que Flash muestre contenido. En la práctica, esto significa que los navegadores no son compatibles con Flash.
 
-### Block Java {#java}
+### Bloquear Java {#java}
 
-This feature disables Java plugins on websites and web services because the API has serious security issues. Does not disable JavaScript.
+Esta función deshabilita los complementos de Java en sitios web y servicios web porque la API tiene graves problemas de seguridad. No deshabilita JavaScript.
 
-Some websites and web services still use the old technology to support Java plugins. The Java plugin API, which is the basis of Java plugins, has serious security flaws. For security purposes, you can disable such plugins. Nevertheless, even if you decide to use the “Block Java” option, JavaScript will still be enabled.
+Algunos sitios web y servicios web todavía utilizan la tecnología antigua para admitir complementos de Java. La API del complemento de Java, que es la base de los complementos de Java, tiene graves fallas de seguridad. Por motivos de seguridad, puedes desactivar los dichos complementos. Sin embargo, incluso si decides utilizar la opción "Bloquear Java", JavaScript seguirá habilitado.
 
-## Windows tracking {#windowstracking}
+## Seguimiento de Windows {#windowstracking}
 
 :::note
 
-These features are only available in AdGuard for Windows.
+Estas funciones solo están disponibles en AdGuard para Windows.
 
 :::
 
-### Disable Windows telemetry {#windowstelemetry}
+### Deshabilitar telemetría de Windows {#windowstelemetry}
 
 This feature disables sending technical data about your system and app usage.
+
+### Disable Windows Recall {#windowsrecall}
+
+This feature prevents Windows from taking and analyzing screenshots of your desktop activity.
 
 ### Turn off Advertising ID {#advertisingid}
 
@@ -171,80 +175,80 @@ This feature disables Advertising ID to block tracking of your app usage.
 
 ### Disable automatic reporting by Microsoft Defender {#windowsautoreport}
 
-This feature blocks automatic reporting and sampling of suspected malware.
+Esta función bloquea la notificación automática y el muestreo de malware sospechoso.
 
-### Disable WAP Push message routing service {#wappushrouting}
+### Deshabilitar el servicio de enrutamiento de mensajes WAP Push {#wappushrouting}
 
-This feature disables data collection about Windows component problems.
+Esta función deshabilita la recopilación de datos sobre problemas de los componente de Windows.
 
 ## Misceláneo {#miscellaneous}
 
-### Hide Referer from third parties {#referer}
+### Ocultar Referer de terceros {#referer}
 
-This feature prevents third parties from knowing what websites you visit.
+Esta función evita que terceros sepan qué sitios web visitas.
 
-Referer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referer saves the URL of the initial page. The server that hosts the destination web page often has software that parses Referer and extracts various pieces of information from it. Enabling the *Hide Referer from third parties* setting hides the current website from third-party websites by altering the HTTP header.
+Referer es un encabezado HTTP utilizado en solicitudes de navegador a servidor. Contiene la URL del origen de la petición. Cuando navegas de una página a otra, el Referer guarda la URL de la página inicial. El servidor que aloja la página web de destino suele tener un software que analiza Referer y extrae diversos datos de él. Al habilitar la opción *Ocultar Referer de terceros*, se oculta el sitio web actual de sitios web de terceros alterando el encabezado HTTP.
 
-You can also set an arbitrary value for Referer by entering it into the *Custom Referer* field. To use default Referer, leave the field blank.
+También puedes establecer un valor arbitrario para Referer ingresándolo en el campo *Referer personalizado*. Para utilizar el Referer predeterminado, deja el campo en blanco.
 
-Note that to be able to filter traffic, AdGuard applications 'intercept' browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely. Same goes for the *Hide Referer from third parties* option: AdGuard intercepts HTTP(S) requests, in particular to remove or change the Referer header if this option is enabled. However, it happens only after these requests “leave” the browser. This means that if you monitor Referer inside the browser (for example, with the help of Chrome's Developer Tools), you will see the original Referer because the request hasn't reached AdGuard yet. You can use software like [Fiddler](https://www.telerik.com/fiddler) to make sure that Referer gets altered correctly.
+Ten en cuenta que para poder filtrar el tráfico, las aplicaciones AdGuard "interceptan" las solicitudes del navegador al servidor. Las solicitudes a servidores de publicidad, seguimiento y phishing pueden modificarse antes de enviarlas al servidor o bloquearse por completo. Lo mismo ocurre con la opción *Ocultar Referer de terceros*: AdGuard intercepta solicitudes HTTP(S), en particular para eliminar o cambiar el encabezado Referer si esta opción está habilitada. Sin embargo, esto ocurre sólo después de que estas solicitudes “abandonan” el navegador. Esto significa que, si monitoreas el Referer dentro del navegador (por ejemplo, con la ayuda de las herramientas de desarrollo de Chrome), verás el Referer original porque la solicitud aún no ha llegado a AdGuard. Puedes utilizar software como [Fiddler](https://www.telerik.com/fiddler) para asegurarte de que Referer se modifique correctamente.
 
-Due to the nature of all web browser extensions, AdGuard Browser Extension instead works 'inside' the web browser. It will alter the Referer right then and there, so Developer Tools will show the desired Referer for your requests.
+Por el contrario, debido a la naturaleza de todas las extensiones de navegador, la extensión de navegador de AdGuard funciona "dentro" del navegador. Modificará el Referer en ese mismo momento, por lo que Developer Tools mostrará el Referer deseado para tus peticiones.
 
-### Hide User-Agent {#useragent}
+### Ocultar User-Agent {#useragent}
 
-This feature removes identifying information from the User-Agent header.
+Esta función elimina la información de identificación del encabezado User-Agent.
 
-When you visit a website, your browser sends its information to the server. It looks like a text line that is part of an HTTP request that begins with “User-Agent:”. It usually includes the name and version of the browser, the operating system, and language settings. We cut User-Agent from identifying information so that advertisers cannot obtain it.
+Cuando visitas un sitio web, tu navegador envía tu información al servidor. Parece una línea de texto que forma parte de una petición HTTP que comienza con "User-Agent:”. Generalmente incluye el nombre y la versión del navegador, el sistema operativo y la configuración de idioma. Eliminamos la información de identificación del User-Agent para que los anunciantes no puedan obtenerla.
 
-You can also set an arbitrary value for User-Agent by entering it into the Custom User-Agent field. To use default User-Agent, leave the field blank.
+También puedes establecer un valor arbitrario para el User-Agent ingresándolo en el campo User-Agent personalizado. Para utilizar el User-Agent predeterminado, deja el campo en blanco.
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+Disponible en AdGuard para Android, AdGuard para Windows y AdGuard para Mac.
 
 :::
 
-### Mask IP address {#ip}
+### Enmascarar dirección IP {#ip}
 
-This feature tricks websites into believing you are a proxy with the IP address you specify.
+Esta función engaña a los sitios web para que crean que eres un proxy con la dirección IP que especifiques.
 
-Tracking protection cannot hide your IP address. However, we can conceal it so that websites you visit will think you are a proxy. Sometimes this helps, and websites ignore your true IP address.
+La protección de seguimiento no puede ocultar tu dirección IP. Sin embargo, podemos ocultarlo para que los sitios web que visite piensen que eres un proxy. A veces esto ayuda y los sitios web ignoran tu verdadera dirección IP.
 
-You can set an arbitrary IP address, which you would like others to perceive as yours, by simply entering it into the corresponding field. To use the default IP address, leave the field blank.
+Puedes establecer una dirección IP arbitraria, que te gustaría que otros perciban como tuya, simplemente introduciéndola en el campo correspondiente. Para utilizar la dirección IP predeterminada, deja el campo en blanco.
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+Disponible en AdGuard para Android, AdGuard para Windows y AdGuard para Mac.
 
 :::
 
-### Remove X-Client-Data header {#xclientdata}
+### Eliminar encabezado X-Client-Data {#xclientdata}
 
-This feature blocks Google Chrome from sending its version and modifications information to Google domains (including Double Click and Google Analytics).
+Esta función evita que Google Chrome envíe información sobre su versión y modificaciones a los dominios de Google (incluidos Double Click y Google Analytics).
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, AdGuard for Mac, and AdGuard Browser Extension (Chromium-based browsers).
+Disponible en AdGuard para Android, AdGuard para Windows, AdGuard para macOS y la Extensión de navegador de AdGuard (navegadores basados en Chromium).
 
 :::
 
-### Protect against DPI {#dpi}
+### Proteger contra DPI {#dpi}
 
-This feature modifies your outgoing traffic so that your ISP’s Deep Packet Inspection systems can’t detect the websites you visit. Can’t guarantee complete protection against all DPI systems.
+Esta función modifica tu tráfico saliente para que los sistemas de Inspección profunda de paquetes de tu Proveedor de Servicios de Internet no puedan detectar los sitios web que visitas. No se puede garantizar una protección completa contra todos los sistemas de Inspección profunda de paquetes.
 
-The Deep Packet Inspection is a system of deep analysis and filtering of traffic by packet content, as well as the accumulation of statistical data. Using this technology, ISPs have the ability to control the passing traffic and limit access to content for their clients.
+Deep Packet Inspection es un sistema de análisis profundo y filtrado de tráfico por contenido de paquetes, así como de acumulación de datos estadísticos. Al utilizar esta tecnología, los ISP tienen la capacidad de controlar el tráfico que pasa por ello y limitar el acceso al contenido para sus clientes.
 
-AdGuard can modify outgoing packet data so that the client does not fall under the DPI blocking criteria. This means that by enabling this option, users can get access to the content they want. Not all DPI systems can be bypassed at this time, but we are constantly working to improve this.
+AdGuard puede modificar los datos de los paquetes salientes para que el cliente no entre en los criterios de bloqueo de DPI. Esto significa que, al habilitar esta opción, los usuarios pueden acceder al contenido que desean. No todos los sistemas DPI se pueden omitir en este momento, pero trabajamos constantemente para mejorarlo.
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+Disponible en AdGuard para Android, AdGuard para Windows y AdGuard para Mac.
 
 :::
 
 :::caution
 
-If this feature is enabled in AdGuard for Windows, it may interfere with ESET antivirus. Anti-DPI will prevent ESET from filtering traffic, leaving blacklisted and malicious websites unblocked.
+Si esta función está habilitada en AdGuard para Windows, puede interferir con el antivirus ESET. Anti-DPI evitará que ESET filtre el tráfico, dejando los sitios web maliciosos y de la lista negra desbloqueados.
 
 :::

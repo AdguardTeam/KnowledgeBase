@@ -31,7 +31,7 @@ Após ativar a autenticação de dois fatores, você tem duas opções:
 
 ![Opções de 2FA *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Se você usar o aplicativo autenticador, certifique-se de salvar a **chave de configuração** em algum lugar. Ela será necessária para recuperar sua conta caso seu celular seja perdido ou roubado.
 
@@ -43,7 +43,7 @@ Se tudo for feito corretamente, você verá o seguinte na próxima vez que fizer
 
 ![O resultado *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Se você receber um erro de autenticação, verifique o relógio do seu telefone. Ajuste-o se necessário, pois um relógio não sincronizado pode ser a causa do erro.
 

@@ -3,7 +3,7 @@ title: Adware & vírus
 sidebar_position: 6
 ---
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 O AdGuard não é um programa antivírus. Ele pode avisá-lo quando você visitar um site de malware ou phishing, mas **não remove vírus do seu dispositivo.**
 

@@ -9,7 +9,7 @@ Este artigo é sobre o AdGuard para Android, um bloqueador de anúncios multifun
 
 :::
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Os dados e/ou arquivos fornecidos nos logs são processados de acordo com [a Política de Privacidade do AdGuard](https://adguard.com/en/privacy.html).
 
@@ -17,7 +17,7 @@ Os dados e/ou arquivos fornecidos nos logs são processados de acordo com [a Pol
 
 Neste artigo, vamos guiá-lo pelo processo de coleta de logs de depuração, uma etapa de solução de problemas essencial para solucionar problemas complexos que podem surgir. Os logs de depuração fornecem informações detalhadas sobre o funcionamento interno do AdGuard para Android. Se a equipe de suporte do AdGuard solicitar que você forneça logs de depuração, basta seguir estas instruções.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 O AdGuard tem o compromisso de proteger sua privacidade. Seguimos rigorosamente nossa [Política de Privacidade](https://adguard.com/privacy/android.html) e não coletamos nenhuma informação privada sobre os usuários. Antes de enviar seus registros para a equipe de suporte, revise o arquivo, pois ele pode conter informações adicionais que você não deseja compartilhar. Se contiver tais informações pessoais, recomendamos que você as exclua primeiro.
 

@@ -1,6 +1,6 @@
 ---
 title: Windows 版 AdGuard 已知问题
-sidebar_position: 10
+sidebar_position: 11
 ---
 
 :::info
