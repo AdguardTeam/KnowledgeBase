@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
+В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
@@ -15,7 +15,7 @@ sidebar_position: 5
 
 ![Support \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/support.png)
 
-By clicking the _Support_ tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
+Нажав на вкладку _Поддержка_, вы откроете диалоговое окно, в котором можете сообщить об ошибке, отправить запрос на добавление функции или просто поделиться своим мнением о продукте.
 
 ### Лицензия
 

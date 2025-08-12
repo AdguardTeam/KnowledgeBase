@@ -31,6 +31,6 @@ However, **an extension can contain up to 150,000 rules**. If you exceed this li
 1. Open AdGuard for Safari app.
 2. Scroll down and click _Content blockers_.
 3. Below each content blocker, you can see the enabled filters and the number of active rules.
-   ![Content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
+    ![Content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
 
 If more than 150,000 rules are enabled in a content blocker, you may need to disable some filters or user rules from it. Go to _Filters_, select the problematic category, and disable the filters or user rules you don’t need.

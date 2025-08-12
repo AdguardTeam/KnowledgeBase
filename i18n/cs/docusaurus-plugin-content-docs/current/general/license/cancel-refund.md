@@ -13,7 +13,7 @@ Předplatné lze zrušit ve vašem AdGuard účtu. Pro zrušení předplatného:
 
  Zrušené předplatné bude platné do data vypršení jeho platnosti.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 Předplatné zakoupené v App Store lze spravovat v účtu App Store nebo v nastavení zařízení.
 

@@ -9,7 +9,7 @@ Este artigo é sobre o AdGuard para Android, um bloqueador de anúncios multifun
 
 :::
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Os arquivos HAR são processados de acordo com [a Política de Privacidade do AdGuard](https://adguard.com/en/privacy.html).
 
@@ -33,7 +33,7 @@ O formato HAR (arquivo HTTP) é um arquivo compactado em JSON para registrar a i
 
 **Envie o arquivo gerado com os logs para o serviço de suporte do AdGuard.**
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Nossa equipe de suporte processará seu tíquete muito mais rápido se você especificar o número do tíquete do HelpDesk ou o número do problema do GitHub em sua mensagem.
 
