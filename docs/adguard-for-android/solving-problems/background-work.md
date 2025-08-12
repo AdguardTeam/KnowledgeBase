@@ -215,6 +215,20 @@ On Android 11, Samsung will prevent apps (including AdGuard) from working in bac
 
     Open phone **Settings** → **Battery** → **Background usage limits** → Disable **Put unused apps to sleep**
 
+If you're still experiencing issues, try these additional battery optimization adjustments:
+
+ 1. Navigate to **Settings** → **Apps** → **AdGuard** → **Battery** and turn on the **Optimised** option
+
+ ![Optimised settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/app__battery_optimised_mode.png)
+
+ 1. Go to **Settings** → **Battery** → **Background usage limits** → **Never auto sleeping apps**
+
+ ![Never auto sleeping apps settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/background_usage_limits.png)
+
+ 1. Choose AdGuard from the list of applications. If you don't see it, return to step 1 and confurm that *Optimized* battery mode is active.
+
+ ![Choose the application *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/never_auto_sleeping_apps.png)
+
 ### Android 9 & 10
 
 - Go to **Phone settings** → **Device care** → Tap on the **Battery** item → (⁝) **3-dot menu** → **Settings** and uncheck **Put unused apps to sleep** and **Auto-disable unused apps**.
