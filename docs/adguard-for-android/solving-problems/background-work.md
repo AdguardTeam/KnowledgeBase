@@ -225,7 +225,7 @@ If you're still experiencing issues, try these additional battery optimization a
 
  ![Never auto sleeping apps settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/background_usage_limits.png)
 
- 1. Choose AdGuard from the list of applications. If you don't see it, return to step 1 and confurm that *Optimized* battery mode is active.
+ 1. Choose AdGuard from the list of applications. If you don't see it, return to step 1 and confurm that *Optimized* battery mode is active
 
  ![Choose the application *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/never_auto_sleeping_apps.png)
 
