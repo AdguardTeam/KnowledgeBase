@@ -18,7 +18,7 @@ On the device that you want to unbind, open the AdGuard app and click *Reset lic
 As an alternative, you can remove the device in your AdGuard account:
 
 1. Log in to your [AdGuard account](https://adguardaccount.com/).
-    
+
 1. Open *AdGuard Ad Blocker* tab.
 
     ![Account Ad Blocker tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
@@ -28,7 +28,7 @@ As an alternative, you can remove the device in your AdGuard account:
     ![Select device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
 
 1. Click *Remove*.
-    
+
     ![Click Remove *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
 
 After you have unbound the number of devices you need, you will be able log in on new devices. The license will become bound to them.
