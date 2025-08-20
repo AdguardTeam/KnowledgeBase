@@ -35,6 +35,6 @@ Uzantılar için Geliştirici modunu etkinleştirmeniz gerekir. Bunu yapmak içi
 
 ### Chrome sürüm 138 ve sonrası için
 
-_Kullanıcı komut dosyalarına izin ver_ düğmesini etkinleştirmelisiniz. Bunu yapmak için sağ üst köşedeki üç noktaya tıklayarak Chrome menüsünü açın, _Uzantılar_ ⭢ _Uzantıları yönet_ öğesine gidin ve _Kullanıcı komut dosyalarına izin ver_ düğmesini açın.
+_Kullanıcı komut dosyalarına izin ver_ düğmesini etkinleştirmelisiniz. To do so, open the Chrome menu by clicking the three dots in the upper-right corner, go to _Extensions_ ⭢ _Manage extensions_, go to AdGuard Browser Extension’s _Details_, and toggle the _Allow user scripts_ switch.
 
 ![Uzantıları yönet \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow-user-scripts1.jpg)

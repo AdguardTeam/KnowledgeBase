@@ -11,7 +11,7 @@ Este artigo é sobre o AdGuard para Android, um bloqueador de anúncios multifun
 
 Abaixo está uma lista dos aplicativos mais conhecidos que podem ser configurados para funcionar como proxies no AdGuard.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Se o seu aplicativo não estiver listado abaixo, verifique as configurações de proxy nas configurações ou entre em contato com a equipe de suporte.
 
@@ -117,7 +117,7 @@ Neste artigo, damos exemplos de como configurar alguns dos proxies mais populare
 
 *Aqui presumimos que você já configurou um servidor Shadowsocks e um cliente no seu dispositivo.*
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Você deve remover o aplicativo Shadowsocks da filtragem antes de configurar o processo (**Gerenciamento de aplicativos** →**Shadowsocks** → **Rotear tráfego pelo AdGuard**) para evitar loops e quedas infinitos.
 

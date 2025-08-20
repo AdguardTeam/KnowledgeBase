@@ -9,22 +9,29 @@ Der Lizenzschlüssel kann auf einer [begrenzten Anzahl von Geräten](../what-is)
 
 ### So lösen Sie die Verknüpfung
 
-- Klicken Sie auf *Lizenz zurücksetzen* oder *Abmelden* in einer AdGuard-App
+#### Methode 1
 
-- Entfernen Sie das Gerät aus Ihrem AdGuard-Konto:
-    1. Klicken Sie auf *AdGuard Werbeblocker* in Ihrem [AdGuard-Konto](https://adguardaccount.com/).
+On the device that you want to unbind, open the AdGuard app and click *Reset license* or *Log out*.
 
-        ![Tab Werbeblocker-Konto *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
+#### Methode 2
 
-    1. Klicken Sie auf das Gerät, dessen Verknüpfung Sie aufheben möchten.
+As an alternative, you can remove the device in your AdGuard account:
 
-        ![Gerät auswählen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+1. Log in to your [AdGuard account](https://adguardaccount.com/).
 
-    1. Klicken Sie auf *Entfernen*.
+1. Open *AdGuard Ad Blocker* tab.
 
-        ![Klicken Sie auf Entfernen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+    ![Tab Werbeblocker-Konto *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 
-Nachdem Sie die benötigte Anzahl von Geräten freigegeben haben, können Sie sich mit den neuen Geräten bei Ihrem AdGuard-Konto anmelden. Die Lizenz wird an diese verknüpft sein.
+1. Klicken Sie auf das Gerät, dessen Verknüpfung Sie aufheben möchten.
+
+    ![Gerät auswählen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+
+1. Klicken Sie auf *Entfernen*.
+
+    ![Klicken Sie auf Entfernen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+
+After you have unbound the number of devices you need, you will be able log in on new devices. The license will become bound to them.
 
 ## So übertragen Sie eine Lizenz auf ein anderes AdGuard-Konto{#transferaccount}
 

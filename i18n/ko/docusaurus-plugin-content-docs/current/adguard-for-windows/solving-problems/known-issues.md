@@ -1,6 +1,6 @@
 ---
 title: Windows용 AdGuard의 알려진 문제
-sidebar_position: 10
+sidebar_position: 11
 ---
 
 :::정보

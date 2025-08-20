@@ -9,22 +9,29 @@ sidebar_position: 4
 
 ### Как отвязать устройство
 
-- Нажать *Сбросить лицензию* или *Выйти* в приложении AdGuard
+#### Метод 1
 
-- Удалить устройство в личном кабинете AdGuard:
-    1. [В личном кабинете](https://adguardaccount.com/) нажмите *Блокировщик AdGuard*.
+On the device that you want to unbind, open the AdGuard app and click *Reset license* or *Log out*.
 
-        ![Вкладка «Блокировщик рекламы» *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
+#### Метод 2
 
-    1. Нажмите на устройство, которое хотите отвязать.
+As an alternative, you can remove the device in your AdGuard account:
 
-        ![Выберите устройство *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+1. Log in to your [AdGuard account](https://adguardaccount.com/).
 
-    1. Нажмите *Удалить*.
+1. Open *AdGuard Ad Blocker* tab.
 
-        ![Нажмите «Удалить» *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+    ![Вкладка «Блокировщик рекламы» *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 
-После того как вы отвяжете необходимое количество устройств, вы можете войти в свой аккаунт AdGuard на новых устройствах. Лицензия будет привязана к ним.
+1. Нажмите на устройство, которое хотите отвязать.
+
+    ![Выберите устройство *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+
+1. Нажмите *Удалить*.
+
+    ![Нажмите «Удалить» *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+
+After you have unbound the number of devices you need, you will be able log in on new devices. The license will become bound to them.
 
 ## Как перенести лицензию на другой аккаунт AdGuard
 

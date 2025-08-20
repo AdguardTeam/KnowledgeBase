@@ -9,22 +9,29 @@ La clave de licencia se puede activar en un [número limitado de dispositivos](.
 
 ### Cómo desvincular un dispositivo
 
-- Haz clic en *Restablecer licencia* o *Cerrar sesión* en una aplicación AdGuard
+#### Método 1
 
-- Elimina el dispositivo de tu cuenta de AdGuard:
-    1. Haz clic en *bloqueador de anuncios AdGuard* en tu [cuenta de AdGuard](https://adguardaccount.com/).
+On the device that you want to unbind, open the AdGuard app and click *Reset license* or *Log out*.
 
-        ![Pestaña cuenta del bloqueador de anuncios *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
+#### Método 2
 
-    1. Haz clic en el dispositivo que deseas desvincular.
+As an alternative, you can remove the device in your AdGuard account:
 
-        ![Selecciona el dispositivo *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+1. Log in to your [AdGuard account](https://adguardaccount.com/).
 
-    1. Haz clic en *Eliminar*.
+1. Open *AdGuard Ad Blocker* tab.
 
-        ![Haz clic en Eliminar *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+    ![Pestaña cuenta del bloqueador de anuncios *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 
-Una vez que hayas desvinculado la cantidad de dispositivos que necesitas, puedes iniciar sesión en tu cuenta de AdGuard en nuevos dispositivos. La licencia estará vinculada a ellos.
+1. Haz clic en el dispositivo que deseas desvincular.
+
+    ![Selecciona el dispositivo *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+
+1. Haz clic en *Eliminar*.
+
+    ![Haz clic en Eliminar *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+
+After you have unbound the number of devices you need, you will be able log in on new devices. The license will become bound to them.
 
 ## Cómo transferir una licencia a otra cuenta de AdGuard{#transferaccount}
 

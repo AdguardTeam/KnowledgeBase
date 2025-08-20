@@ -9,22 +9,29 @@ Licenční klíč lze aktivovat na [omezený počet zařízení](../what-is). Po
 
 ### Jak odpojit zařízení
 
-- Klikněte na *Obnovit licenci* nebo *Odhlásit se* v aplikaci AdGuard
+#### Metoda 1
 
-- Odeberte zařízení z AdGuard účtu:
-    1. Klikněte na *Blokátor reklam AdGuard* ve svém [AdGuard účtu](https://adguardaccount.com/).
+On the device that you want to unbind, open the AdGuard app and click *Reset license* or *Log out*.
 
-        ![Account Ad Blocker tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
+#### Metoda 2
 
-    1. Klikněte na zařízení, které chcete odpojit.
+As an alternative, you can remove the device in your AdGuard account:
 
-        ![Select device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+1. Log in to your [AdGuard account](https://adguardaccount.com/).
 
-    1. Klikněte na *Odebrat*.
+1. Open *AdGuard Ad Blocker* tab.
 
-        ![Click Remove *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+    ![Account Ad Blocker tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 
-Poté, co zrušíte připojení na potřebný počet zařízení, můžete se přihlásit k AdGuard účtu na nových zařízeních. Licence na ně bude navázána.
+1. Klikněte na zařízení, které chcete odpojit.
+
+    ![Select device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+
+1. Klikněte na *Odebrat*.
+
+    ![Click Remove *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+
+After you have unbound the number of devices you need, you will be able log in on new devices. The license will become bound to them.
 
 ## Jak přenést licenci do jiného AdGuard účtu{#transferaccount}
 

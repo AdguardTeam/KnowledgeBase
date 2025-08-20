@@ -35,7 +35,7 @@ sidebar_position: 1
 
 ## AdGuard 라이선스 사용 방법
 
-기기에서 라이선스를 이용하려면 라이선스와 연결된 이메일 주소를 사용하여 AdGuard 앱에 로그인하세요. 라이선스가 아직 이메일 주소에 연결되지 않은 경우, [AdGuard 계정](https://adguardaccount.com/)에서 연결할 수 있습니다. 라이선스를 이메일 주소에 연결하려면 *라이선스* 탭을 열고 *라이선스 추가*를 클릭합니다.
+기기에서 라이선스를 이용하려면 라이선스와 연결된 이메일 주소를 사용하여 AdGuard 앱에 로그인하세요. 라이선스가 아직 이메일 주소에 연결되지 않은 경우, [AdGuard 계정](https://adguardaccount.com/)에서 연결할 수 있습니다. 라이선스를 이메일 주소에 연결하려면 *라이선스* 탭을 열고 *라이선스 추가*를 클릭합니다. Usually, licenses are activated immediately, but sometimes activation may take up to five minutes.
 
 또는 AdGuard 앱에 [라이선스 키](#license-key)를 입력할 수 있습니다.
 

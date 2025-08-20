@@ -13,43 +13,43 @@ sidebar_position: 2
 
 :::note
 
-*AdGuard Glossary* is only used for storing and managing terms — it doesn’t need to be translated.
+*Глоссарий AdGuard* используется только для хранения и управления терминами — его не нужно переводить.
 
 :::
 
-Choose a project you’d like to translate, click *Join*, and choose your language.
+Выберите проект, который вы хотите перевести, нажмите *Присоединиться* и выберите язык.
 
 ![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_kb.png)
 
-You can start translating literally any product you like by choosing the respective folder. We have some recommendations about [what files are better to start with in AdGuard Websites project](../translation-priority).
+Вы можете начать переводить любой понравившийся вам продукт, выбрав соответствующую папку. У нас есть несколько рекомендаций о том, [с каких файлов лучше начинать работу в проекте AdGuard Websites](../translation-priority).
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/folders.png)
 
-Filter phrases that are not yet translated and start your translation history.
+Отфильтруйте фразы, которые ещё не переведены, и начните свою историю переводов.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
-Suggest your version in the text box and save it.
+Предлагайте свои варианты в текстовом поле и сохраняйте их.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/text-box.png)
 
-If you don’t agree with an existing translation, you can suggest your version. You can also upvote and downvote suggestions made by other volunteers by clicking the plus and minus buttons.
+Если вы не согласны с существующим переводом, вы можете предложить свой вариант. Кроме того, вы можете голосовать за и против предложений, сделанных другими волонтёрами, нажимая кнопки «плюс» и «минус».
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/vote.png)
 
-Besides, there is an opportunity to open translations in a Voting mode if you just want to rate translations.
+Также вы можете открывать переводы в режиме голосования, если вы хотите просто оценивать переводы.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-You can find some [helpful tips on translating AdGuard in this article](../guidelines). Please take a look at it.
+Мы собрали для вас [самые полезные советы и рекомендации в одной статье](../guidelines). Пожалуйста, ознакомьтесь с ней.
 
 ### Как стать пруфридером {#proofreaders}
 
-We have proofreaders (previously known as moderators) for each language. And every active translator has an option to become one.
+Мы выбираем пруфридеров (модераторов) для каждого языка. Каждый активный переводчик имеет шанс им стать.
 
-So, what are proofreaders responsible for?
+Что обычно делают пруфридеры?
 
-**Proofreaders:**
+**Пруфридеры:**
 
 - Одобряют качественные переводы и исправляют/отклоняют некорректные;
 
@@ -57,4 +57,4 @@ So, what are proofreaders responsible for?
 
 - Отвечают на комментарии, относящиеся к переводам на их язык.
 
-Every year, the best proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system](../rewards).
+Каждый год лучшие пруфридеры получают подарки от AdGuard. Активные переводчики тоже не остаются без награды. Узнайте больше о нашей [системе вознаграждения](../rewards).

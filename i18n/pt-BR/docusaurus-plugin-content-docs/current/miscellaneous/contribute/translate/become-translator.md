@@ -11,7 +11,7 @@ Depois de fazer isso, vá para [nossa página](https://crowdin.com/profile/adgua
 
 ![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_page.png)
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 *AdGuard Glossary* is only used for storing and managing terms — it doesn’t need to be translated.
 

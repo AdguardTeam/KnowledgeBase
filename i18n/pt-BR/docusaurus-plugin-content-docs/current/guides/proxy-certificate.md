@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Nossos aplicativos de desktop, AdGuard para Windows e AdGuard para Mac, podem ser usados como proxy para outros dispositivos. Isso significa que você pode rotear o tráfego de outros dispositivos através do AdGuard (todo o tráfego ou tráfego de aplicativos e navegadores específicos).
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Esses dispositivos devem estar na mesma rede que o PC ou Mac com o AdGuard.
 

@@ -5,36 +5,36 @@ sidebar_position: 8
 
 :::info
 
-Эта статья о Браузерном расширении AdGuard, которое защищает только ваш браузер. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true).
+Эта статья о Браузерном расширении AdGuard, которое защищает только ваш браузер. [Скачайте приложение AdGuard](https://adguard.com/download.html?auto=true), чтобы защитить своё устройство.
 
 :::
 
-When adding a custom filter or user rule, a notification will appear asking you to enable the Developer mode to use these features in the extension.
+При добавлении пользовательского фильтра или правила появится уведомление с просьбой включить режим разработчика, чтобы использовать эти функции в расширении.
 
-![Notification \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/notification-allow-user-scripts.jpg)
+![Уведомление \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/notification-allow-user-scripts.jpg)
 
-Starting with version 5.2, AdGuard Browser Extension uses the User Scripts API. Chrome requires this new API to follow best practices for user safety.
+Начиная с версии 5.2, Браузерное расширение AdGuard использует User Scripts API. Chrome требует этот новый API для соблюдения передовых практик безопасности пользователя.
 
-## What is the User Scripts API?
+## Что такое API пользовательских скриптов?
 
-The User Scripts API is a tool that allows extensions to run customized JavaScript scripts on webpages. These are often used to modify or enhance websites in ways that aren’t originally provided by the website itself.
+User Scripts API — это инструмент, позволяющий расширениям запускать на веб-страницах пользовательские сценарии JavaScript. Они часто используются для изменения или улучшения сайтов способами, которые изначально не предусмотрены самим сайтом.
 
-With the shift to Chrome’s Manifest V3, many older methods of injecting scripts are limited or delayed. However, there is an exception for the User Scripts API.
+С переходом на Manifest V3 от Chrome многие старые методы внедрения скриптов стали ограниченными или отсроченными. Однако для User Scripts API сделали исключение.
 
-Learn more about the impacts of the MV3 policies in our [blog post](https://adguard.com/en/blog/review-issues-in-chrome-web-store.html).
+Подробнее о влиянии политики MV3 читайте в нашем [блоге] (https://adguard.com/ru/blog/review-issues-in-chrome-web-store.html).
 
-## How to enable the Developer mode
+## Как включить режим разработчика
 
-To use custom filters and JavaScript rules in the _User Rules_ tab, you must set up your browser first. This will give the extension a reliable and secure method of injecting scripts into webpages at the optimal time. Follow the instructions below depending on your Chrome version.
+Чтобы использовать пользовательские фильтры и правила JavaScript во вкладке _Пользовательские правила_, необходимо предварительно настроить ваш браузер. Это обеспечит расширению надёжный и безопасный способ внедрения скриптов в веб-страницы в оптимальное время. Следуйте инструкции ниже в зависимости от вашей версии Chrome.
 
-### For Chrome versions prior to 138
+### Для версий Chrome до 138
 
-You must enable Developer mode for extensions. To do so, open the Chrome menu by clicking the three dots in the upper-right corner, go to _Extensions_ ⭢ _Manage extensions_, and toggle the _Developer mode_ switch.
+Вы должны включить режим разработчика для расширений. Для этого откройте меню Chrome, нажав на три точки в правом верхнем углу, перейдите в _Расширения_ ⭢ _Управлять расширениями_ и передвиньте переключатель _Режим разработчика_.
 
-![Manage Extensions \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer-mode-enable1.jpg)
+![Управление расширениями \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer-mode-enable1.jpg)
 
-### For Chrome version 138 and later
+### Для Chrome версии 138 и выше
 
-You must enable the _Allow user scripts_ toggle. To do so, open the Chrome menu by clicking the three dots in the upper-right corner, go to _Extensions_ ⭢ _Manage extensions_, and toggle the _Allow user scripts_ switch.
+Необходимо включить переключатель _Разрешить пользовательские скрипты_. Для этого откройте меню Chrome, нажав на три точки в правом верхнем углу, перейдите в _Расширения_ ⭢ _Управлять расширениями_, затем откройте _Сведения_ о Браузерном расширении AdGuard и нажмите на переключатель _Разрешить пользовательские скрипты_.
 
-![Manage Extensions \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow-user-scripts1.jpg)
+![Управление расширениями \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow-user-scripts1.jpg)

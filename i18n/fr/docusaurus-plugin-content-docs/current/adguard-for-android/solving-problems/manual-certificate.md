@@ -11,7 +11,7 @@ Cet article concerne AdGuard pour Android, un bloqueur de publicité multifoncti
 
 To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install its certificate into your device’s user storage. Sur les anciennes versions d'Android, cela se faisait automatiquement, mais sur Android 11 et les versions ultérieures, les utilisateurs doivent l'installer manuellement.
 
-![Certificat *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
+![Certificat *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/screenCA.gif)
 
 Suivez ces étapes pour installer le certificat AdGuard:
 
@@ -22,13 +22,13 @@ Suivez ces étapes pour installer le certificat AdGuard:
     - AdGuard’s HTTPS filtering is safe
     - AdGuard certificate
 
-    Consecutively, tap *Continue* → *Next* → *Save certificate*.
+1. Consecutively, tap *Continue* → *Next* → *Save certificate*.
 
 1. Tap *Save* at the bottom of the opened *Download* folder.
 
-1. After saving, tap *Open Settings*.
+1. After saving, copy the text from the *CA Certificate* field and tap *Open Settings*.
 
-1. Open *Settings* and type *CA Certificate* in the search bar. Tap the respective option.
+1. Open *Settings* and either paste or type *CA Certificate* in the search bar. Tap the respective option.
 
 1. You might see a warning. If so, tap *Install anyway* and enter your PIN if necessary.
 
@@ -39,7 +39,7 @@ You’re all set! Once the certificate is installed successfully, you’ve enabl
 If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
 
 1. Redémarrez AdGuard.
-2. Essayez d'installer le certificat correct (AdGuard Personal CA) une fois de plus.
+1. Essayez d'installer le certificat correct (AdGuard Personal CA) une fois de plus.
 
 ## Security warnings
 

@@ -9,22 +9,29 @@ sidebar_position: 4
 
 ### 如何解绑设备绑定
 
-- 在 AdGuard 应用程序中单击「*重置许可证*」或「*退出*」。
+#### 方法 1
 
-- 从 AdGuard 账号中删除设备：
-    1. 在 [AdGuard 账号](https://adguardaccount.com/)点击「*AdGuard 广告拦截程序*」。
+On the device that you want to unbind, open the AdGuard app and click *Reset license* or *Log out*.
 
-        ![账号广告拦截程式选项卡 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0_cn.png)
+#### 方法 2
 
-    1. 单击要解除绑定的设备。
+As an alternative, you can remove the device in your AdGuard account:
 
-        ![选择设备 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1_cn.png)
+1. Log in to your [AdGuard account](https://adguardaccount.com/).
 
-    1. 单击「*删除*」。
+1. Open *AdGuard Ad Blocker* tab.
 
-        ![单击删除 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2_cn.png)
+    ![账号广告拦截程式选项卡 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0_cn.png)
 
-在解绑所需要的设备数量后，用户可以在新设备上登录 AdGuard 账号。 许可证就会绑定到用户登录的新设备。
+1. 单击要解除绑定的设备。
+
+    ![选择设备 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1_cn.png)
+
+1. 单击「*删除*」。
+
+    ![单击删除 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2_cn.png)
+
+After you have unbound the number of devices you need, you will be able log in on new devices. The license will become bound to them.
 
 ## 如何将许可证转移到另一个 AdGuard 账号{#transferaccount}
 

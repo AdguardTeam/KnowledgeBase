@@ -9,22 +9,29 @@ A chave de licença pode ser ativada em um número [limitado de dispositivos](..
 
 ### Como desvincular um dispositivo
 
-- Clique em *Redefinir licença* ou *Sair* em um aplicativo AdGuard
+#### Método 1
 
-- Remova o dispositivo da sua conta AdGuard:
-    1. Clique em *bloqueador de anúncios AdGuard* em sua [conta AdGuard](https://adguardaccount.com/).
+On the device that you want to unbind, open the AdGuard app and click *Reset license* or *Log out*.
 
-        ![Aba conta do bloqueador de anúncios *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
+#### Método 2
 
-    1. Clique no dispositivo que você deseja desvincular.
+As an alternative, you can remove the device in your AdGuard account:
 
-        ![Selecione o dispositivo *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+1. Log in to your [AdGuard account](https://adguardaccount.com/).
 
-    1. Clique em *Remover*.
+1. Open *AdGuard Ad Blocker* tab.
 
-        ![Clique em Remover *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+    ![Aba conta do bloqueador de anúncios *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 
-Depois de habilitar o número de dispositivos necessários, você pode fazer login na sua conta do AdGuard em novos dispositivos. A licença estará vinculada a eles.
+1. Clique no dispositivo que você deseja desvincular.
+
+    ![Selecione o dispositivo *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+
+1. Clique em *Remover*.
+
+    ![Clique em Remover *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+
+After you have unbound the number of devices you need, you will be able log in on new devices. The license will become bound to them.
 
 ## Como transferir uma licença para outra conta AdGuard{#transferaccount}
 
