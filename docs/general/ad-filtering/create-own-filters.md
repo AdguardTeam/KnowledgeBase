@@ -427,16 +427,16 @@ For Mac, you can find out the bundle ID or the process name of the app by viewin
 
 **Syntax**
 
-The modifier is a list of one or more expressions separated by the `|` symbol, each of which is matched against a application in a particular way depending on its type (see below).
+The modifier is a list of one or more expressions, each of which is matched against an application in a particular way depending on its type. These expressions are separated by the `|` symbol.
 
 ```text
 applications = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
 entry_i = ( regular_app / wildcard_app / regexp )
 ```
 
-- **`regular_app`** — a regular application name (`example.app`). Corresponds the specified application and its subapplications. It is matched lexicographically.
+- **`regular_app`** — a regular application name (`example.app`). It corresponds to the specified application and is matched lexicographically.
 - **`wildcard_app`** — an application name ending with a wildcard character `*`, such as `org.example.*` or `com.ad*`. It matches all applications whose names start with the specified prefix. Matching is done lexicographically.
-- **`regexp`** — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$`, `,`, and `|` must be escaped with `\`.
+- **`regexp`** — a regular expression that starts and ends with `/`. It works the same way as the basic URL rules, but the characters `/`, `$`, `,`, and `|` must be escaped with `\`.
 
 **Examples**
 
@@ -448,7 +448,7 @@ If you want the rule not to be applied to certain apps, start the app name with 
 - `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask and are sent from any app except for the `org.example.app`.
 - `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
-You can use wildcards in the $app modifier:
+You can use wildcards in the `$app` modifier:
 
 - `||baddomain.com^$app=org.example.*` — applies to all apps whose package names start with `org.example.`
 
@@ -459,12 +459,12 @@ You can use regular expressions in the `$app` modifier by enclosing them in forw
 
 The `$app` modifier supports combining all three types of entries — plain names, wildcards, and regular expressions — within the same rule, but it does not allow combining negated and non-negated expressions together.
 
-- `||example.com^$app=org.example.app|org.example.*|/org\.example\.[a-z]+/` — applies to `org.example.app`, all matching `org.example.*` and all matching `org.example.[a-z]+` apps.
+- `||example.com^$app=org.example.app|org.example.*|/org\.example\.[a-z]+/` — applies to `org.example.app`, all matching `org.example.*` and `org.example.[a-z]+` apps.
 
 :::caution Restrictions
 
 - Apps in the modifier value cannot include a wildcard inside the string , e.g. `$app=com.*.music`.
-  Use a regular expression instead: `$app=/com\..*\.music/`
+  Use a regular expression instead: `$app=/com\..*\.music/`.
 - You cannot combine negated (`~`) and non-negated expressions in the same `$app` modifier — this would be ambiguous.
 
 :::
@@ -473,7 +473,7 @@ The `$app` modifier supports combining all three types of entries — plain name
 
 - Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$app` modifier.
 - On Windows the process name is case-insensitive starting with AdGuard for Windows with [CoreLibs] v1.12 or later.
-- Support for regular expressions and combined formats in `$app` is available starting from CoreLibs v1.19 or later.
+- Support for regular expressions and for combining different types of entries (plain names, wildcards, and regular expressions) in the `$app` modifier is available starting from CoreLibs v1.19 or later.
 
 :::
 
