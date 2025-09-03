@@ -61,7 +61,7 @@ Done, AdGuard for Android TV is installed.
 
 ## Installing AdGuard for Android TV via atvTools
 
-**Important:** Your smartphone and TV with Android TV must be on the same local network.
+**Important:** Your smartphone and TV with Android TV (TV box) must be on the same local network.
 
 1. Install the [atvTools](https://play.google.com/store/apps/details?id=dev.vodik7.atvtools&hl=ru) app on your Android smartphone
 
