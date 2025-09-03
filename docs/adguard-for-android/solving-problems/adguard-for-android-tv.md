@@ -79,7 +79,7 @@ Done, AdGuard for Android TV is installed.
 
 1. Find the desired **Android TV** device in the list and click it
 
-1. Allow the connection on the TV (TV box)
+1. Allow the connection on the TV
 
 1. Download the [AdGuard for Android TV](https://agrd.io/tvapk) installer to your smartphone as an **APK** file
 
