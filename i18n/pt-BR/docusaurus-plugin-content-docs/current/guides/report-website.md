@@ -16,7 +16,7 @@ Você pode nos ajudar preenchendo um formulário com exemplos de anúncios que v
 
 ## Reportar um site {#report}
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Quando você envia uma reclamação por meio do aplicativo ou do AdGuard Browser Assistant, todas as informações são pré-preenchidas automaticamente. Com exceção das capturas de tela, você mesmo terá que criá-las e anexá-las. Se você estiver usando um link direto [](https://reports.adguard.com/new_issue.html), precisará inserir os dados manualmente.
 
@@ -72,7 +72,7 @@ Para denunciar a reinserção de um anúncio ou exibição incorreta de um site,
 
 ## Preenchendo o formulário {#form}
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Quando você envia uma reclamação pelo aplicativo ou pelo AdGuard Assistant, todas as informações são preenchidas automaticamente. Com exceção das capturas de tela, você mesmo terá que criá-las e anexá-las. Se você estiver usando um link direto [](https://reports.adguard.com/new_issue.html), precisará inserir os dados manualmente.
 

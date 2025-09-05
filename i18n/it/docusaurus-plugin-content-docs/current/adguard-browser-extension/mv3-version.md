@@ -21,19 +21,19 @@ La vecchia estensione beta verrà rinominata [**AdGuard Ad Blocker MV2**](https:
 
 - **Registro di filtraggio**
 
-    ! [Registro di filtraggio \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+  ! [Registro di filtraggio \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-    A causa delle restrizioni DNR, non possiamo mostrare esattamente quale regola ha funzionato, ma forniremo una "regola presunta che è stata attivata" in base al nostro motore. Per informazioni più precise, dovrai installare tu stesso la versione "scompattata" dell'estensione nel tuo browser. Troverai istruzioni dettagliate su come farlo in un [articolo separato](/adguard-browser-extension/solving-problems/debug-rules/).
+  A causa delle restrizioni DNR, non possiamo mostrare esattamente quale regola ha funzionato, ma forniremo una "regola presunta che è stata attivata" in base al nostro motore. Per informazioni più precise, dovrai installare tu stesso la versione "scompattata" dell'estensione nel tuo browser. Troverai istruzioni dettagliate su come farlo in un [articolo separato](/adguard-browser-extension/solving-problems/debug-rules/).
 
 - _Protezione dal tracciamento_ (precedentemente nota come _Modalità invisibile_)
 
-    ![Protezione dal tracciamento \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+  ![Protezione dal tracciamento \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
 
-    Non sono presenti sezioni _Cookie_, così come _Autodistruzione dei cookie proprietari_ e _Autodistruzione dei cookie di terze parti_, poiché non possiamo impostare il TTL dei cookie utilizzando regole dichiarative.
+  Non sono presenti sezioni _Cookie_, così come _Autodistruzione dei cookie proprietari_ e _Autodistruzione dei cookie di terze parti_, poiché non possiamo impostare il TTL dei cookie utilizzando regole dichiarative.
 
 - La _protezione da phishing e malware_ non è più disponibile nelle impostazioni generali. Per proteggerti da siti web dannosi e truffe, attiva i filtri _Sicurezza_ appropriati nella scheda _Filtri_.
 
-    ![Sicurezza \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![Sicurezza \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## Limitazioni
 

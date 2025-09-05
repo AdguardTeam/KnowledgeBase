@@ -31,6 +31,6 @@ Safari용 AdGuard에는 6가지 콘텐츠 차단기가 있습니다.
 1. Safari용 AdGuard 앱을 엽니다.
 2. 아래로 스크롤하여 **콘텐츠 차단기**를 클릭합니다.
 3. 각 콘텐츠 차단기 아래에서 활성화된 필터와 활성 규칙 수를 확인할 수 있습니다.
-    ![콘텐츠 차단기](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
+   ![콘텐츠 차단기](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
 
 콘텐츠 차단기에서 150,000개 이상의 규칙이 활성화되어 있는 경우, 일부 필터 또는 사용자 규칙을 비활성화해야 할 수 있습니다. **필터**로 이동하여 문제가 있는 카테고리를 선택한 다음 필요하지 않은 필터나 사용자 규칙을 비활성화하세요.

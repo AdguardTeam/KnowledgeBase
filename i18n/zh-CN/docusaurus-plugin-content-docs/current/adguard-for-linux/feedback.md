@@ -20,18 +20,18 @@ sidebar_position: 4
 
 1. 启用调试日志：
 
-    `adguard-cli config set log_level debug`
+   `adguard-cli config set log_level debug`
 
 2. 重现问题并尝试记住问题发生的确切时间。
 
 3. 稍等片刻，然后导出日志：
 
-    `adguard-cli export-logs`
+   `adguard-cli export-logs`
 
-    默认情况下，存档日志文件将下载到应用程序文件夹，日志路径将写入控制台。
+   默认情况下，存档日志文件将下载到应用程序文件夹，日志路径将写入控制台。
 
 4. 将日志文件发送到 <devteam@adguard.com>。 请指定错误的时间，并附上您的 GitHub 问题或其编号的链接 (它显示为标题旁边的 #number) 。 或者，您可以将日志文件上传到 Google Drive 并与 <devteam@adguard.com> 共享它。 将文件链接附加到您创建的 GitHub 问题。
 
 5. 将日志记录模式切换回默认（`info`）：
 
-    `adguard-cli config set log_level info`
+   `adguard-cli config set log_level info`

@@ -29,15 +29,15 @@ En esta sección, puedes controlar el acceso a Internet para aplicaciones espec�
 
 1. Abre _Reglas de firewall personalizadas_. En _Aplicaciones con reglas personalizadas_, toca _Agregar aplicación_.
 
-    ![Reglas de firewall personalizadas \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+   ![Reglas de firewall personalizadas \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
 2. Selecciona la aplicación para la que deseas establecer reglas individuales.
 
-    ![Agregar una aplicación a las reglas de firewall personalizadas \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+   ![Agregar una aplicación a las reglas de firewall personalizadas \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
 3. En _Reglas personalizadas disponibles_, selecciona las que deseas configurar y toca el ícono “+”. Las reglas ahora aparecerán en _Reglas personalizadas aplicadas_.
 
-    ![Regla agregada \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+   ![Regla agregada \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
 4. Si necesitas bloquear un tipo específico de conexión, mueve el interruptor hacia la izquierda. Si deseas permitirlo, deja el interruptor habilitado. **Las reglas personalizadas anulan las globales**: cualquier cambio que realices en las _Reglas globales de firewall_ no afectará a esta aplicación.
 

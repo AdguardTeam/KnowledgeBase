@@ -173,113 +173,119 @@ Asus 设备后台工作的潜在问题主要来自「Power Master」这一优化
 
 ## Samsung
 
-在许多 Samsung 设备上，任何 3 天未使用的应用程序将无法从后台启动。 您应该尽可能关闭「**自适应电池**」和「**睡眠应用程序**」选项，以防止出现这种情况。 请注意，在更新应用程序或操作系统后，这些设置一般会恢复为默认值，需要您重新关闭。
+On many Samsung devices, apps that have been unused for three days will not be able to start from the background. To prevent this, you should turn off the **Adaptive Battery** and **Put apps to sleep** options wherever possible. Note that after an app or OS update, these settings often revert to their default values and must be turned off again.
 
 ### Android 11+
 
-在 Android 11 上，三星会默认阻止应用程序（包括 AdGuard）在后台运行，除非您将应用排除在电池优化之外。 为了确保 AdGuard 不会在后台被中断：
+On Android 11, Samsung prevents apps (including AdGuard) from working in the background by default, unless you exclude them from battery optimizations. To ensure that AdGuard will not be terminated in the background:
 
-1. 在最近任务中锁定 AdGuard
+1. Lock AdGuard in **Recent apps**: open **Recent apps**, find AdGuard, and long-press the AdGuard app icon.
 
-    - 打开「**最近的应用程序**」。
-    - 找到 AdGuard。
-    - 长按 AdGuard 应用程序的图标。
+1. To keep AdGuard working properly:
 
-1. 要保持 AdGuard 正常工作：
-
-    打开「**设置**」→「**应用程序**」→「**AdGuard**」→「**电池**」→「**耗电优化**」
+    Go to **Settings** → **Apps** → **AdGuard** → **Battery** → **Optimize battery usage**
 
     ![Samsung](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsung-a11-optimize.png)
 
-    在下拉菜单中，选择「**全部**」。 然后在列表中找到 AdGuard，并将其状态设置为「**不优化**」（在某些机型上，可能需要关闭开关）。
+    In the drop-down menu, select **All**. Then find AdGuard on the list and set the state for it to **Don’t optimize** (on some models, there may be a switch that you need to toggle off).
 
     ![Samsung](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsung-a11-optimize-2.png)
 
-    在某些设备上，相关设置的名称和位置可能会不同。 可能的路径包括：
+    On some devices, the relevant setting may be named differently and be located in other places. Among the possible paths is **Settings** → **Apps** → (⁝) menu → **Special access** → **Optimize battery usage**. Find AdGuard on the list and uncheck it.
 
-    「**设置**」→「**应用程序**」→ 菜单（⁝）→「**特殊访问**」→「**耗电优化**」→ 在列表中找到 AdGuard 并取消选中。
+1. Disable automatic optimization:
 
-1. 禁用自动优化。 具体操作：
+    Open **Battery** → (⁝) menu → **Automation** and toggle off all the settings there.
 
-    打开「**电池**」→ 菜单（⁝） → 选择「**自动**」→ 关闭此处所有设置。
+    Again, the exact path may differ. For example, on some devices you should go to phone **Settings** → **Device care** → (⁝) menu → **Advanced** and isable **Auto optimization** and **Optimize settings**.
 
-    同样，具体路径可能会有所不同，例如，在某些设备上，您应该转到：
+1. If your phone has this option, disable **Adaptive battery**:
 
-    手机「**设置**」→「**设备维护**」→ 点击菜单（⁝）→「**高级**」→「**禁用自动优化**」和「**优化设置**」。
+    Open phone **Settings** → **Battery** → **More battery settings** and toggle off **Adaptive battery**
 
-1. 如果您的手机有的话，请禁用自适应电池：
+1. Disable **Sleeping apps** (the exact name of this setting and the path to it may vary depending on the device):
 
-    打开手机「**设置**」→「**电池**」→「**更多电池设置**」→ 关闭「**自适应电池**」。
+    Open phone **Settings** → **Battery** → **Background usage limits** and disable **Put unused apps to sleep**
 
-1. 禁用睡眠应用程序（此设置的具体名称及路径可能因设备而异）：
+If you’re still experiencing issues, try these additional battery optimization adjustments:
 
-    打开手机「**设置**」→「**电池**」→「**后台使用限制**」→ 禁用「**睡眠未使用的应用**」。
+ 1. Navigate to **Settings** → **Apps** → **AdGuard** → **Battery** and turn on the **Optimised** option:
+
+    ![Optimised settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/app__battery_optimised_mode.png)
+
+ 1. Go to **Settings** → **Battery** → **Background usage limits** → **Never auto sleeping apps**:
+
+    ![Never auto sleeping apps settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/background_usage_limits.png)
+
+ 1. Choose AdGuard from the list of apps. If you don’t see it, return to step 1 and make sure that the *Optimized* battery mode is active:
+
+    ![Choose the app *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/never_auto_sleeping_apps.png)
 
 ### Android 9 或 10
 
-- 打开「**手机设置**」→「**设备维护**」→ 点击「**电池**」条目→ 点击**菜单**（⁝）→「**设置**」并取消选择「**睡眠未使用应用**」和「**自动停用未使用应用**」。
+- Go to **Phone settings** → **Device care**, tap the **Battery** item, go to (⁝) **3-dot menu** → **Settings**, and uncheck **Put unused apps to sleep** and **Auto-disable unused apps**.
 
-- 打开「**手机设置**」→「**应用程序**」→ 点击「**Android 睡眠伴侣**」条目→「**电池**」→ 将 AdGuard 的「**后台限制**」设置为「**应用可在后台耗电**」。
+- In **Phone settings** → **Apps** → **Sleep as Android** → **Battery**, check that **Background restriction** is set to **App can use battery in background** for AdGuard.
 
-- 从睡眠应用程序中删除 AdGuard。 具体操作：
+- Remove AdGuard from **Sleeping apps**:
 
-    1. 前往「**手机设置**」→「**设备维护**」
+    1. Go to **Phone settings** → **Device care**:
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung1en.png)
 
-    1. 点击「**电池**」
+    1. Tap **Battery**:
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung2en.png)
 
-    1. 点击**菜单**（⁝）→「**设置**」
+    1. Tap the **3-dot menu** → **Settings**:
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung3en.png)
 
-    1. 点击「**睡眠应用程序**」
+    1. Tap **Sleeping apps**:
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung45en.png)
 
-    1. 使用垃圾桶图标**唤醒** AdGuard
+    1. Wake up AdGuard using the trash can icon:
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung6en.png)
 
 ### 更早版本的 Samsung 手机
 
-对于早期的 Samsung 设备，没有很大必要设置后台操作，但如果您的 AdGuard 应用程序在一段时间后被关闭或从最近的任务中消失，请执行以下操作：
+For early Samsung devices, there is no huge need for setting up the background operation, but if in your case the AdGuard app is getting closed or disappears from the recent tasks after a while, do the following:
 
-- 点击「**最近任务**」按钮，点击「**其他设置**」图标。 如图所示：
+- Tap the **Recent tasks** button, tap the **Additional settings** icon. 如图所示：
 
- ![Samsung 设置 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_1.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_1.png)
 
-- 点击「**锁定应用**」：
+- Tap **Lock Apps**:
 
- ![Samsung 设置 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_2.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_2.png)
 
-- 点击锁定图标
+- Tap the lock icon:
 
- ![Samsung 设置 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_3.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_3.png)
 
 ## 华为
 
-在非标准后台进程限制方面，华为及其定制安卓系统 **EMUI** 属于市场上最难处理的。 在默认设置下，几乎所有在后台运行的应用程序都会遇到问题并最终崩溃。
+Huawei and their Android customization **EMUI** belongs to the most troublesome on the market with respect to non-standard background process limitations. On default settings, virtually all apps that work in background will face problems and ultimately break.
 
 ### 在某些 EMUI 8、9 和 10 设备（华为 P20、华为 P20 Lite、华为 Mate 10…）上启动应用。
 
-此功能可能不适用于所有设备，或者路径可能不同。
+This feature may or may not be available for all devices or may be labeled differently.
 
-1. 打开手机「**设置**」→「**电池**」→「**应用启动管理**」。
+1. Go to phone **Settings** → **Battery** → **App launch**:
 
     ![华为 *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei1en.png)
 
-1. 关闭「**全部自动管理**」
+1. Turn off **Manage all automatically**:
 
     ![华为 *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei2en.png)
 
-1. 将 AdGuard 设置为「**手动管理**」并开启所有开关。
+1. Set AdGuard to **Manage manually** and enable all toggles:
 
     ![华为 *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei3en.png)
 
-1. 禁用「**启动管理器**」，它会防止应用程序在手机启动后自动运行。
+1. Disable **Startup manager** that prevents apps from running automatically after the phone starts up:
 
     打开「**设置**」→「**全部**」→「**启动管理器**」→ 关闭 AdGuard 的开关
 
@@ -289,33 +295,33 @@ Asus 设备后台工作的潜在问题主要来自「Power Master」这一优化
 
 :::note
 
-在搭载 EMUI 9+（Android P+）的手机上，有一个叫省电精灵的任务杀手应用，它会强制退出所有不在华为白名单上的的应用，并且未向用户提供任何配置选项。 请参阅下面的卸载方法。
+On phones with EMUI 9+ (Android P+) there is a task killer app called PowerGenie which forces to quit all apps not whitelisted by Huawei and does not give users any configuration options. See below how to uninstall it.
 
 :::
 
-华为设备在破坏应用程序方面上极具创造力。 除了下文介绍的所有非标准电源管理措施外，他们还在 Android Pie 的 EMUI 9 中直接引入了一个任务杀手应用。
+Huawei is extremely inventive in breaking apps on their devices. In addition to all the non-standard power management measures described below, they introduced a task killer app built right into EMUI 9 on Android Pie.
 
-它叫「**省电精灵**」，可以杀死所有不在其白名单上的应用程序。 用户还不能在预置的白名单上添加自定义应用程序。 这意味着除了卸载省电精灵之外，没有其他方法可以在华为设备上实现应用的正确程序功能。
+It is called **PowerGenie** and it kills all apps that are not on its whitelist. You cannot add custom apps on their pre-defined whitelist. This means there is no other way to achieve proper app functionality on Huawei than uninstalling PowerGenie.
 
-很不幸，它是一个系统应用程序，只能使用 ADB（Android 调试桥）才能完全卸载。
+Unfortunately, this is a system app that can only be fully uninstalled using ADB (Android Debug Bridge).
 
-:::note 来源
+:::note Source
 
-[XDA 论坛](https://forum.xda-developers.com/mate-20-pro/themes/remove-powergenie-to-allow-background-t3890409).
+[XDA forum](https://forum.xda-developers.com/mate-20-pro/themes/remove-powergenie-to-allow-background-t3890409).
 
 :::
 
-**用户需要执行以下操作**：
+**You need to**:
 
-这一点尚未得到证实，但您也许可以直接在**手机设置** →「**应用**」中禁用省电精灵。 如果您的设备设置中有此项设置，您可以跳过以下步骤。 但是，每次重新启动设备时用户都需要重新禁用应用程序。 如果没有此项设置，请按照此说明操作：
+It is not confirmed, but it might be possible to just disable PowerGenie in **Phone settings** → **Apps**. If this setting is present in your device's settings, you may skip the following steps. However, it would need to be re-applied every time you reboot your device. If there is no such setting, follow this instruction:
 
-1. 在计算机上[安装 ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/)；
+1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer.
 
-1. 用数据线连接手机；
+1. Connect your phone with a data cable.
 
 1. 启用[开发人员选项](https://developer.android.com/studio/debug/dev-options.html)；
 
-1. 在手机的开发人员选项中启用「**USB 调试**」；
+1. Enable **USB debugging** within Developer options on your phone.
 
 1. 在计算机上运行以下命令：
 
@@ -323,69 +329,69 @@ Asus 设备后台工作的潜在问题主要来自「Power Master」这一优化
 
 `adb shell pm uninstall -k --user 0 com.huawei.android.hwaps`
 
-如果 AdGuard 仍在被系统杀，请再尝试运行以下命令：
+If AdGuard keeps getting killed, also try running:
 
 `adb shell pm stopservice hwPfwService`
 
 ### EMUI 6+ 设备（以及部分 EMUI 5 设备）
 
-- **手机设置** →「**高级设置**」→「**电源管理**」→ 将「**电源计划**」改为「**性能**」；
-- **手机设置** →「**高级设置**」→「**电源管理**」→「**受保护应用**」→ 将 AdGuard 设置为「**受保护**」；
-- **手机设置** →「**应用**」→「**我的应用**」→「**电池**」→ 「**耗电提示**」设置为`[取消选中]`，「**熄屏后继续运行**」设置为 `[选中]`；
-- **手机设置** →「**应用**」→「**高级**」（位于底部）→「**忽略优化**」→ 点击「已允许」→「**所有应用**」→ 在列表中找到 AdGuard 并设置为「**允许**」。
+- **Phone settings** → **Advanced Settings** → **Battery manager** → **Power plan** set to **Performance**;
+- **Phone Settings** → **Advanced Settings** → **Battery Manager** → **Protected apps** — set AdGuard as **Protected**;
+- **Phone Settings** → **Apps** → **Your app** → **Battery** → **Power-intensive prompt** `[uncheck]` and **Keep running after screen off** `[check]`;
+- **Phone settings** → **Apps** → **Advanced (At the bottom)** → **Ignore optimizations** → Press Allowed → **All apps** → Find AdGuard on the list and set to **Allow**.
 
 #### Huawei P9 Plus
 
-打开设备「设置」→「**应用程序**」→「**设置**」→「**特殊访问权限**」→ 选择「**忽略电池优化**」→ 将 AdGuard 设置为「**允许**」。
+Open device settings → **Apps** → **Settings** → **Special access** → choose **Ignore battery optimization** → select **Allow** for AdGuard.
 
 ### Huawei P20、Huawei Honor 9 Lite、Huawei Mate 9 Pro
 
-打开设备「设置」→「**电池**」→「**应用启动管理**」→将 AdGuard 设为「**手动管理**」并确保开启每个选项。
+Open device settings → **Battery** → **App launch** → set AdGuard to **Manage manually** and make sure everything is turned on.
 
 ### Huawei P20、Huawei P20 Lite、Huawei Mate 10
 
-手机「**设置**」→「**电池**」→「**应用启动管理**」→将 AdGuard 设为「**手动管理**」并确保开启每个选项。 此外，为了确保后台进程的可靠性，您可能需要按上文所述卸载省电精灵。
+**Phone settings** → **Battery** → **App launch** → set AdGuard to **Manage manually** and make sure everything is turned on. Also for reliable background processes you may need to uninstall PowerGenie as described above.
 
 ### 早期华为
 
-旧的华为设备最容易设置，只需两步操作即可将 AdGuard 锁定在后台，这样就可以免于被省电计划或后台杀手终止进程。
+Old Huawei devices are the easiest to set up, it is enough to perform two simple steps to lock AdGuard in the background so it won't be terminated by battery saving or background killer process.
 
-- 点击「**最近任务**」按钮。
+- Tap the **Recent tasks** button:
 
-    ![华为最近使用应用 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
+    ![Huawei recent apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
 
-- 点击锁定图标：
+- Tap the lock icon:
 
-    ![华为锁 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
+    ![Huawei lock *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
 
-此外，为了更有效地设置 AdGuard 的后台工作，用户要打开设备设置并执行以下操作：
+Besides, to set up the background work of AdGuard more effectively, you should open device settings and do the following:
 
-- 打开「**设置**」→「**电源管理**」→ 将「**电源计划**」调至「**性能**」；
-- 然后在「**电源管理**」中选择「**受保护应用**」，并检查 AdGuard 是否受保护；
-- 在设置中点开「**应用**」然后点击「AdGuard」→ 选择「**电池**」→ 启用「**耗电提示**」和「**熄屏后继续运行**」；
-- 然后在「**应用程序**」中打开「**设置**」（位于底部）→「**特殊访问**」→ 选择「**忽略电池优化**」→ 点击「**允许**」→「**所有应用**」→ 在列表中找到 AdGuard 并设置为「**拒绝**」。
+- Go to **Settings** → open **Battery Manager** → set **Power plan** to **Performance**;
+- Then choose **Protected apps** in the **Battery Manager** and check if AdGuard is Protected;
+- Go to **Apps** in the main settings and tap AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**;
+- Then in the **Apps** section open **Settings** (at the bottom) → **Special access** → choose **Ignore battery optimization** → press **Allowed** → **All apps** → find AdGuard on the list and set it to **Deny**.
 
 ## 魅族
 
-在后台进程限制方面，魅族的做法与华为和小米几乎相同。 因此，您可以通过调整以下设置来避免 AdGuard 和其他应用程序的后台工作被禁用：
+Meizu has almost the same approach to the background process limitations as Huawei and Xiaomi. So you can avoid disabling the background work of AdGuard and any other app by adjusting the following settings:
 
-- 打开「**高级设置**」→ 选择「**电源管理**」→ 将「**电源计划**」调至「**性能**」；
-- 然后在「**电源管理**」中选择「**受保护应用**」，并检查 AdGuard 是否受保护；
-- 打开「**应用**」然后点击「AdGuard」→ 选择「**电池**」→ 启用「**耗电提示**」和「**熄屏后继续运行**」。
+- Go to **Advanced Settings** → open **Battery Manager** → set **Power plan** to **Performance**;
+- Then choose **Protected apps** in the **Battery Manager** and check if AdGuard is Protected;
+- Go to **Apps** section and tap AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**.
 
 ## Nokia
 
-搭载 Android 9+ 的诺基亚设备禁用了 **Evenwell Power saver**，这就是杀死后台进程的罪魁祸首。 如果 AdGuard 在 Nokia 手机上仍然被杀后台，请查看[旧指令](https://dontkillmyapp.com/hmd-global)。
+Nokia devices running Android 9+ have **The Evenwell Power saver** disabled, which was the main culprit for killing background processes. If AdGuard still gets killed on your Nokia phone, check out the [legacy instruction](https://dontkillmyapp.com/hmd-global).
 
 ### Nokia 1（Android Go）
 
-1. 在计算机上[安装 ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/)；
+1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
 
-1. 用数据线连接手机；
+1. Connect your phone with a data cable;
 
 1. 启用[开发人员选项](https://developer.android.com/studio/debug/dev-options.html)；
 
-1. 在手机的开发人员选项中启用「**USB 调试**」；
+1. Enable **USB debugging** within Developer options on your phone;
 
 1. 通过以下 ADB 命令卸载 **com.evenwell.emm** 软件包：
 
@@ -393,15 +399,15 @@ Asus 设备后台工作的潜在问题主要来自「Power Master」这一优化
 
 ### Nokia 3.1 和 5.1
 
-这些设备上有一个叫 ** DuraSpeed ** 的任务杀手，它会终止所有后台应用程序。 它无法通过常规方式卸载或禁用。 这些操作需要 ADB，即便如此，禁用后 DuraSpeed 也会在重启时再次启用。 您需要使用像 [MacroDroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid) 这样的任务管理器来自动禁用 DuraSpeed。
+On these devices there is a task killer called **DuraSpeed** that terminates all background apps. It can't be uninstalled or disabled by regular means. These actions require ADB, and even then, when disabled, DuraSpeed will re-enable itself on reboot. You need a tasker app like [MacroDroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid) for automatic DuraSpeed's disabling.
 
-1. 在计算机上[安装 ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/)；
+1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
 
-1. 用数据线连接手机；
+1. Connect your phone with a data cable;
 
 1. 启用[开发人员选项](https://developer.android.com/studio/debug/dev-options.html)；
 
-1. 在手机的开发人员选项中启用「**USB 调试**」；
+1. Enable **USB debugging** within Developer options on your phone;
 
 1. 输入以下命令，授予 MacroDroid（或您选择的自动化应用程序）写入全局设置存储的能力：
 
@@ -409,39 +415,39 @@ Asus 设备后台工作的潜在问题主要来自「Power Master」这一优化
 
 1. 创建一个在**设备启动**时触发的任务，执行以下操作：
 
-    - 系统设置：类型为 **Global**（全局），名称为 `setting.duraspeed.enabled`，值为 **-1**
-    - 系统设置：类型为 **System**（系统），名称为 `setting.duraspeed.enabled`，值为 **-1**
-    - 系统设置：类型为 **Global**（全局），名称为 `setting.duraspeed.enabled`，值为 **0**
-    - 系统设置：类型为 **System**（系统），名称为 `setting.duraspeed.enabled`，值为 **0**
+    - System Setting: type **Global**, name `setting.duraspeed.enabled`, value **-1**
+    - System Setting: type **System**, name `setting.duraspeed.enabled`, value **-1**
+    - System Setting: type **Global**, name `setting.duraspeed.enabled`, value **0**
+    - System Setting: type **System**, name `setting.duraspeed.enabled`, value **0**
 
-    ![Nokia Tasker *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/nokia_tasker.png)
+    ![Nokia tasker *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/nokia_tasker.png)
 
     :::note
 
-    您需要**全局**和**系统**两种类型设置。 截图仅以全局为例。
+    You need both **Global** and **System** type settings. The screenshot shows only Global as an example.
 
 
 :::
 
 ### 其他 Nokia 机型
 
-- 打开手机「**设置**」→「**应用**」→「**查看所有应用**」。
+- Go to phone **Settings** → **Apps** → **See all apps**.
 
-- 点击右上角菜单 →「**显示系统应用**」。
+- Tap on the right top corner menu → **Show system**.
 
-在列表中找到「**Power saver 应用**」，选择后并点击「**强制关闭**」。 它会停止一段时间，但某个时候还会重新启动。
+Find **Power saver app** on the list, select it and tap **Force close**. It will remain stopped for a while but will restart at some point.
 
-从现在开始，AdGuard 应该能正常工作并使用标准 Android 电池优化，直到 Power Saver 重新启动。
+From now on, AdGuard should work normally and use the standard Android battery optimizations until Power Saver restarts.
 
-对于更精通技术的用户来说，还有一种一劳永逸的解决方案：
+An alternative, more permanent solution for more tech-savvy users:
 
-1. 在计算机上[安装 ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/)；
+1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
 
-1. 用数据线连接手机；
+1. Connect your phone with a data cable;
 
 1. 启用[开发人员选项](https://developer.android.com/studio/debug/dev-options.html)；
 
-1. 在手机的开发人员选项中启用「**USB 调试**」；
+1. Enable **USB debugging** within Developer options on your phone;
 
 1. 通过以下 ADB 命令卸载 **com.evenwell.powersaving.g3** 软件包：
 
@@ -449,139 +455,139 @@ Asus 设备后台工作的潜在问题主要来自「Power Master」这一优化
 
 ## OPPO
 
-有时在您关闭屏幕时，后台服务会被终止（包括辅助服务，需要重新启用）。 目前，解决这一问题的办法是：
+Sometimes background services are being killed (including accessibility services, which then need re-enabling) when you turn the screen off. So far, a workaround for this is:
 
-打开**安全中心** → 点击「**隐私权限**」→「**启动管理器**」并允许 AdGuard 在后台运行。
+Go to **Security Centre** → tap **Privacy Permissions** → **Startup manager** and allow AdGuard app to run in background.
 
-其他解决方案：
+Other solutions:
 
-- 将 AdGuard 固定到最近使用的应用中
-- 在安全应用程序的「启动管理器」和「浮动应用列表」（com.coloros.safecenter / com.coloros.safecenter.permission.Permission）中启用 AdGuard
-- 关闭电池优化
+- Pin AdGuard to the recent apps screen
+- Enable AdGuard in the app list inside the security app’s “startup manager” and “floating app list” (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
+- Turn off battery optimizations
 
 ## 一加
 
-搭载 OxygenOS 的设备问题最多，其中包括操作系统特有的缓存清理和可用 RAM，以及操作系统优化。 此外，如果您一段时间不使用，OxygenOS 会中断 AdGuard 的工作。 要避免这些不必要的后果，请按以下步骤操作。
+Devices with OxygenOS on board are the most problematic, with its OS-specific cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the AdGuard's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps.
 
 ### 锁定应用程序
 
-- 打开「**设置**」
+- Go to **Settings**
 
-- 「**电池**」→「**电池优化**」
+- **Battery** → **Battery optimization**
 
-- 找到 AdGuard
+- Find AdGuard
 
-- 点击并选择「**不优化**」选项
+- Tap on it and select **Don't optimize** option
 
-- 点击「**完成**」保存设置
+- Tap **Done** to save
 
-- 打开最近应用菜单（如截图所示）：
+- Open recent apps menu (as showed on this screenshot):
 
-    ![一加锁 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/onepluslock.png)
+    ![Onepluslock *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/onepluslock.png)
 
-- 锁定 AdGuard 应用程序：
+- Lock AdGuard app:
 
-    ![一加点 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
+    ![Oneplusdots *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
 
 :::caution
 
-在某些一加手机种，还有个叫应用自启动和深度优化的功能，这个功能很大程度上会防止应用在后台运行。 请为 AdGuard 禁用它。
+On some OnePlus phones there is also a thing called App Auto-Launch and Deep Optimization which essentially prevents apps from working in the background. Please disable it for AdGuard.
 
 :::
 
 ### 电池优化
 
-- 打开设备设置 →「**电池**」→「**电池优化**」→ 切换到「**所有应用程序**」列表（顶部菜单）→ 选择 AdGuard → 启动「**不优化**」。
+- Open device settings → **Battery** → **Battery optimization** → switch to the **All apps** list (top menu) → choose AdGuard → activate **Don’t optimize**
 
-- 打开设备设置 →「**电池**」→「**电池优化**」→ 三点菜单（⁝）→「**高级优化**」→ 禁用深度优化
+- Open device settings → **Battery** → **Battery Optimization** → (⁝) three-dot menu → **Advanced Optimization** → Disable Deep Optimization
 
 ### 应用自启动
 
-应用自启动（在某些一加手机中）会从本质上阻止应用程序在后台运行。 请为 AdGuard 禁用它。
+App Auto-Launch (on some OnePlus phones) essentially prevents apps from working in the background. Please disable it for AdGuard.
 
 ### 增强/高级优化
 
-对于一加 6 及以上版本：
+For OnePlus 6 and above:
 
-- 打开「**系统设置**」→「**电池**」→「**电池优化**」→ 三点菜单（⁝）→「**高级优化**」
-- 禁用「**深度优化**」/「**自适应电池**」
-- 禁用「**睡眠待机优化**」。 一加会尝试了解睡眠时间，然后在这些时间里关闭手机的网络连接。 此设置会阻止推送通知。
+- Open **System settings** → **Battery** → **Battery optimization** → (⁝) three-dot menu → **Advanced optimization**
+- Disable **Deep optimization** / **Adaptive Battery**
+- Disble **Sleep standby optimization**. OnePlus tries to learn when you are usually asleep, and in those times it will then disable the phone’s network connections. This setting will prevent push notifications from being delivered.
 
-对于一加 6 以下：
+For OnePlus below 6:
 
-- 「**系统设置**」→「**电池**」→「**电池优化**」→ 三点菜单（⁝）→ 关闭「**高级优化**」。
+- Turn off **System settings** → **Battery** → **Battery optimization** → (⁝) three-dot menu → **Enhanced optimization**.
 
 ### 最近应用的清除行为
 
-通常情况下，当用户扫走一个应用程序时，它不会关闭。 然而在一加上，可能是另一种情况。 最近应用清除行为管理器可能设置为划走关闭应用程序就会杀死后台。 要将其调回「正常」模式：
+Normally when you swipe an app away, it won’t close. On OnePlus this may however work in a different way. Recent app clear behaviour manager might be set up in a way that swiping the app to close will kill it. To return it to the “normal” mode:
 
-打开「**设置**」→「**高级设置**」→「**最近应用管理**」→ 切换至「**正常清除**」。
+Go to **Settings** → **Advanced** → **Recent app management** → Switch to **Normal clear**
 
 ## Sony
 
-Sony 是第一家引入非标准后台进程优化的移动操作系统开发商。 它被称为「**Stamina mode**」，启用后会立即中断所有后台进程。 解决方法：
+Sony was the first mobile OS developer to introduce non-standard background process optimization. It is called **Stamina mode** and it instantly breaks all background processes if enabled. To solve this:
 
-打开「**设置**」→「**电池**」→ 禁用「**Stamina mode**」（耐用模式）
+Go to **Settings** → **Battery** → Disable **STAMINA mode**
 
-![Sony Stamina 模式 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/sony_stamina.png)
+![Sony Stamina mode *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/sony_stamina.png)
 
-在 Android 11+ 中，用户还应该禁用和 STAMINA 模式同屏的「**自适应电池**」设置。
+On Android 11+, on the same screen with STAMINA mode, there is a setting called **Adaptive battery**, you should disable it too.
 
-您还需要将 AdGuard 从省电功能中排除：
+You also need to be set AdGuard as Excepted from Power-saving feature:
 
-「**系统设置**」→「**应用程序和通知**」→「**高级**」→「**特殊应用程序访问权限**」→「**省电功能**」→ 将 AdGuard 切换到「**除外**」。
+**System settings** → **Apps & Notifications** → **Advanced** → **Special app access** → **Power saving feature** → Switch AdGuard to **Excepted**
 
 ## WIKO
 
-WIKO 设备在非标准后台进程优化方面存在问题。 要让 AdGuard 在后台运作，请执行以下操作：
+Wiko devices are problematic in terms of non-standard background process optimizations. To let AdGuard work in background, do the following:
 
-- 打开「**手机助手**」→「**电池**」→ 关闭「**Eco 模式**」
-- 返回并进入「**手动模式**」
-- 点击右上角的**齿轮**图标 →「**后台应用白名单**」→ 选择「**AdGuard**」
+- Go to **Phone Assistant** → **Battery** → turn off **Eco Mode**
+- Go back and go to **Manual mode**
+- Tap on the **Gear** icon on top right → **Background apps whitelist** → Select **AdGuard**
 
 ## 基于 Android 设备： Pixel /Nexus /Nubia /Essential
 
-Android 原生操作系统通常不会干预在后台运行的应用程序，但如果您遇到任何问题，需要打开「**始终在线 VPN**」模式。
+Android stock OS normally does not conflict with apps working in the background, but if you are facing any issues you will need to switch on the **Always-on VPN** mode.
 
-- 前往「**设置**」→「**网络和互联网**」
+- Go to **Settings** → **Network and Internet**
 
     ![Stocknetwork *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stocknetwork.png)
 
-- 点击「**VPN**」并选择「**AdGuard**」
+- Tap **VPN** and choose **AdGuard**
 
-    ![Stockvpn *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stocknetwork.png)
+    ![Stockvpn *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockvpn.png)
 
-- 设置「**始终在线 VPN**」模式
+- Set up **Always-on VPN** mode
 
     ![Stockadguard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)
 
 ## Realme
 
-在 Realme UI 4.0 上，有三个关键配置以确保 AdGuard 在后台正常工作。
+On devices running Realme UI 4.0, there are three key configurations to ensure that AdGuard works properly in the background.
 
 1. 设置 AdGuard 软件：
 
-    - 长按 AdGuard 图标
-    - 从弹出的菜单中，选择「**应用程序信息**」
-    - 转到「**电池使用情况**」并启用所有选项：
-        - 允许应用在后台运行
-        - 允许应用在前台运行
-        - 允许自动启动
-    - 在「**应用程序信息**」部分，向下滚动并关闭「**暂停闲置应用的活动**」选项
+    - Long press the AdGuard icon
+    - From the menu that appears, select **App info**
+    - Go to **Battery usage** and enable all options:
+        - Allow background activity
+        - Allow foreground activity
+        - Allow auto launch
+    - In the **App info** section, scroll down and turn off the option **Pause app activity if unused**
 
-    ![始终启用 VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
 
 1. 设置电池：
 
-    - 转到 **「设置」→「电池」→「更多设置」→「优化电池使用」**
-    - 在列表中找到 AdGuard 并启用「**不优化**」
-    - 在「**其他设置**」中，检查「**应用速冻**」部分，禁用它以使用 AdGuard
+    - Go to **Settings → Battery → More settings → Optimize battery use**
+    - Find AdGuard in the list and enable **Don't optimize**
+    - In **Other settings**, check the **App Quick Freeze** section and disable it for AdGuard
 
-    ![始终启用 VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
 
 1. 为 AdGuard 启用「*始终启用 VPN*」：
 
-    - 前往**「设置」→「连接与分享」→「VPN」**
-    - 找到 **AdGuard** 并启用「**始终启用 VPN**」选项
+    - Go to **Settings → Connection & sharing → VPN**
+    - Find **AdGuard** and enable the **Always-on VPN** option
 
-    ![始终启用 VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)
+    ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)

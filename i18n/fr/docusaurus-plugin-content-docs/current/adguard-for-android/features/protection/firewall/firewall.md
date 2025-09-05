@@ -29,15 +29,15 @@ Dans cette section, vous pouvez contrôler l'accès à Internet pour des applica
 
 1. Ouvrez les _Règles de pare-feu personnalisées_. Sous _Applications avec règles personnalisées_, appuyez sur _Ajouter l'application_.
 
-    ![Règles personnalisées de pare-feu \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+   ![Règles personnalisées de pare-feu \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
 2. Sélectionnez l'application pour laquelle vous souhaitez définir des règles individuelles.
 
-    ![Ajout d'une app aux Règles personnalisées de pare-feu \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+   ![Ajout d'une app aux Règles personnalisées de pare-feu \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
 3. Dans _Règles personnalisées disponibles_, sélectionnez celles que vous souhaitez configurer et appuyez sur l'icône “+”. Les règles apparaîtront maintenant dans _Règles personnalisées appliquées_.
 
-    ![Règle ajoutée \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+   ![Règle ajoutée \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
 4. Si vous avez besoin de bloquer un type de connexion spécifique, basculez le commutateur vers la gauche. Si vous voulez l'autoriser, laissez le commutateur activé. **Les règles personnalisées remplacent les règles globales** : tout changement dans les _Règles globales de pare-feu_ n'affectera pas cette application.
 

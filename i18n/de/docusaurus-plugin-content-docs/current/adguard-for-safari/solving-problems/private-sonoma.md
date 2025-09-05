@@ -15,7 +15,7 @@ In diesem Artikel geht es um AdGuard für Safari, der nur Ihren Safari-Browser s
 2. Klicken Sie auf _Safari_ in der linken oberen Ecke des Menüs.
 3. Klicken Sie auf _Einstellungen…_ → _Erweiterungen_.
 4. Aktivieren Sie das Kontrollkästchen _Im privaten Surfen zulassen_ für alle AdGuard-Erweiterungen.
-    ![Privates Surfen ausgewählt](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
+   ![Privates Surfen ausgewählt](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
 
 Wenn dies nicht hilft und die Werbung immer noch nicht blockiert wird, wenden Sie sich bitte an unseren Support unter support@adguard.com.
 

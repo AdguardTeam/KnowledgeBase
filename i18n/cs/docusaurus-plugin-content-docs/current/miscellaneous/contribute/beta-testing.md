@@ -17,7 +17,7 @@ Naše požadavky jsou jednoduché: používejte AdGuard, přejděte na beta/nigh
 
 Budete také potřebovat zařízení, na které budete aplikaci instalovat a [odkaz na stránku beta testování](https://adguard.com/beta.html). Tam najdete další informace o tom, jak se zapojit do našeho programu a otestovat AdGuard pro Windows, Mac, Android a iOS.
 
-Pokud chcete přeskočit část s popisem a přejít rovnou k akci, můžete se přihlásit [zde](https://surveys.adguard.com/beta_testing_program/form.html). Vaše žádost bude zkontrolována během 1–3 pracovních dnů a odpověď obdržíte e-mailem.
+If you would like to become a tester, please [fill out the form](https://surveys.adguard.com/beta_testing_program/form.html) to submit your application. If it is approved, you will receive a response via email within a few days.
 
 :::note
 

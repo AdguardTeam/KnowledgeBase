@@ -9,22 +9,29 @@ Codul de licență poate fi activat pe un [număr limitat de dispozitive](../wha
 
 ### How to unbind a device
 
-- Faceți clic pe *Resetați licența* sau *Deconectare* în aplicația AdGuard
+#### Metodă 1
 
-- Ștergeți dispozitivul din contul dvs. AdGuard:
-    1. Click *AdGuard Ad Blocker* in your [AdGuard account](https://adguardaccount.com/).
+On the device that you want to unbind, open the AdGuard app and click *Reset license* or *Log out*.
 
-        ![Tab-ul Blocant de reclame AdGuard *mobil](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
+#### Metodă 2
 
-    1. Faceți clic pe dispozitivul pe care doriți să-l deconectați.
+As an alternative, you can remove the device in your AdGuard account:
 
-        ![Select device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+1. Log in to your [AdGuard account](https://adguardaccount.com/).
 
-    1. Faceți clic pe *Ștergeți*.
+1. Open *AdGuard Ad Blocker* tab.
 
-        ![Faceți clic pe Ștergeți *mobil](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+    ![Tab-ul Blocant de reclame AdGuard *mobil](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 
-După ce ați deconectat numărul de dispozitive de care aveți nevoie, vă puteți conecta la contul dvs. AdGuard pe dispozitive noi. The license will be bound to them.
+1. Faceți clic pe dispozitivul pe care doriți să-l deconectați.
+
+    ![Select device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+
+1. Faceți clic pe *Ștergeți*.
+
+    ![Faceți clic pe Ștergeți *mobil](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+
+After you have unbound the number of devices you need, you will be able log in on new devices. The license will become bound to them.
 
 ## Cum să transferați o licență pe un alt cont AdGuard{#transferaccount}
 

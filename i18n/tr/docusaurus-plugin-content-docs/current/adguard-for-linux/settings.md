@@ -77,11 +77,11 @@ Linux için AdGuard'ı yapılandırmak için `config` komutunu kullanın. Alt ko
 
 - `show`: Show the current configuration in `proxy.yaml`
 
-    ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
 - `set`: Configure an option in `proxy.yaml`
-    - `listen_ports.http_proxy`: HTTP listening port
-    - `proxy_mode`: Proxy mode (`manual` or `auto`)
+  - `listen_ports.http_proxy`: HTTP listening port
+  - `proxy_mode`: Proxy mode (`manual` or `auto`)
 
 - `get`: Get the current status of the above options
 
@@ -91,15 +91,15 @@ Use the `filters` command to configure AdGuard for Linux. Alt komutlar:
 
 - `list`: List installed filters
 
-    - `--all`: View all filters
+  - `--all`: View all filters
 
-    ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
+  ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
 - `install`: Install a filter. Yüklemek istediğiniz filtrenin URL'sini girin
 
 - `enable`: Enable a filter. Filtrenin adını veya kimliğini girin
 
-    ![Enable filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+  ![Enable filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
 - `disable`: Disable a filter. Filtrenin adını veya kimliğini girin
 
@@ -112,8 +112,8 @@ There are two ways to make the proxy server listen on a different interface:
 
 1. Run `adguard-cli config set listen_address <address>` where `<address>` is the address to listen on.
 2. Yapılandırma dosyasını doğrudan düzenleyin:
-    - Yapılandırma dosyasının konumunu belirlemek için `adguard-cli config show | grep "Config location"` komutunu çalıştırın.
-    - Look for the `listen_address` key and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0` or `::`.
+   - Yapılandırma dosyasının konumunu belirlemek için `adguard-cli config show | grep "Config location"` komutunu çalıştırın.
+   - Look for the `listen_address` key and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0` or `::`.
 
 If the listen address is set to anything other than `127.0.0.1`, then proxy client authentication is required. AdGuard CLI will not start unless proxy authentication is configured:
 
