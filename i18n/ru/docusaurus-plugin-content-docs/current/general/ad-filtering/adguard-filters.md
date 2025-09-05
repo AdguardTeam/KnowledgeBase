@@ -38,7 +38,6 @@ sidebar_position: 2
 - **Экспериментальный фильтр** предназначен для проверки некоторых новых правил фильтрации, которые потенциально могут вызывать конфликты или ломать работу сайтов. В случае успешной проверки правила из этого фильтра добавляются в основные фильтры. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_5_Experimental/filter.txt)
 - **Фильтр мобильной рекламы** блокирует рекламу на мобильных устройствах. Содержит все известные нам рекламные сети. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt)
 - **DNS-фильтр** составлен из нескольких фильтров (Базовый фильтр AdGuard, Фильтр социальных сетей, Фильтр счётчиков и систем аналитики, Фильтр мобильной рекламы, EasyList и EasyPrivacy) и специально упрощён для лучшей совместимости с блокировкой рекламы на DNS-уровне. Этот фильтр используется серверами [AdGuard DNS](https://adguard-dns.io/kb) для блокировки рекламы и трекинга. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt)
-- **Фильтр быстрых исправлений** используется для быстрого устранения критических проблем фильтрации контента на популярных сайтах без обновления MV3-расширения. [Посмотреть правила](https://filters.adtidy.org/extension/chromium-mv3/filters/24.txt)
 
 ## Политика фильтров AdGuard
 
