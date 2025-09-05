@@ -147,6 +147,7 @@ AdGuard поддерживает как старые функции GM\_, так
 - [`GM_addStyle`](https://www.tampermonkey.net/documentation.php#api:GM_addStyle)
 - [`GM_log`](https://www.tampermonkey.net/documentation.php#api:GM_log)
 - [`GM.addElement`, `GM_addElement`](https://www.tampermonkey.net/documentation.php#api:GM_addElement)
+- [`window.onurlchange`](https://www.tampermonkey.net/documentation.php#api:window.onurlchange)
 
 Подробную информацию об API Greasemonkey можно найти в [руководстве](https://wiki.greasespot.net/Greasemonkey_Manual:API).
 
@@ -321,6 +322,80 @@ function convertPropertyToTrusted(
 divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML", "<div></div>");
 ```
 
+#### Взаимодействие со SPA-сайтами
+
+:::info Совместимость
+
+Этот раздел относится только к AdGuard для Windows, AdGuard для Mac, AdGuard для Android и AdGuard для Linux с [CoreLibs] версии 1.19 или более поздней.
+
+:::
+
+Многие современные сайты, такие как YouTube, используют возможности [одностраничных приложений (Single Page Application, SPA)](https://en.wikipedia.org/wiki/Single-page_application). В отличие от традиционных веб-приложений, такая страница не перезагружается при переходе между страницами. Вместо этого содержимое обновляется динамически с помощью JavaScript, что обеспечивает более плавное взаимодействие с пользователем.
+
+На подобных сайтах пользовательскитй скрипт запускается только один раз, когда директивы `@match` или `@include` совпадают (если только не совпала директива `@exclude`). Из-за особенностей одностраничных приложений (SPA) скрипт не может быть повторно вызван при последующих изменениях страницы, так как глобальный контекст JavaScript остаётся неизменным. Чтобы решить эту проблему, пользовательские скрипты могут использовать директиву `@grant window.onurlchange`.
+
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @grant window.onurlchange
+// @run-at document-start
+// ==/UserScript==
+
+// via window.onurlchange
+window.onurlchange = (event) => {
+    console.log('URL changed to:', event.url);
+};
+
+// via window.addEventListener('urlchange')
+window.addEventListener('urlchange', (event) => {
+    console.log('URL changed to:', event.url);
+});
+```
+
+Это позволит пользовательским скриптам отслеживать изменения URL и соответствующим образом их обрабатывать.
+
+:::note
+
+Событие `urlchange` срабатывает только при полном изменении URL, например, при изменении пути или запроса, но не при изменении фрагмента (хеша).
+Примеры:
+
+- Переход с `https://example.com/page1` на `https://example.com/page2` вызовет событие.
+- Переход с `https://example.com/page1?query=1` на `https://example.com/page1?query=2` вызовет событие.
+- Переход с `https://example.com/page1#section1` на `https://example.com/page1#section2` **НЕ** вызовет событие.
+
+:::
+
+:::note
+
+API `window.onurlchange` и `window.addEventListener(\'urlchange\', ...)` являются нестандартными. Чтобы использовать их, вы должны явно предоставить разрешение в вашем польщовательском скрипте с помощью `@grant window.onurlchange`.
+
+:::
+
+Если сайт использует хеш-маршрутизацию, пользовательские скрипты могут использовать нативное DOM-событие [`hashchange`](https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event):
+
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @run-at document-start
+// ==/UserScript==
+
+// via window.onhashchange
+window.onhashchange = (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+};
+
+// via window.addEventListener('hashchange')
+window.addEventListener('hashchange', (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+});
+```
+
 ## Пользовательские стили
 
 Пользовательские стили позволяют изменять внешний вид популярных сайтов.
@@ -363,30 +438,30 @@ divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML"
 
 3. Чтобы создать пользовательский стиль, сначала напишите заголовок с метаданными, например:
 
-    ```CSS
-    /* ==UserStyle==
-    @name New userstyle
-    @version 1.0
-    ==/UserStyle== */
-    ```
+   ```CSS
+   /* ==UserStyle==
+   @name New userstyle
+   @version 1.0
+   ==/UserStyle== */
+   ```
 
 4. После метаданных добавьте сам пользовательский стиль на основе CSS. AdGuard поддерживает доменные имена, соответствующие (`@-moz-document domain(…), …`). Например:
 
-    ```CSS
-    body {
-      background: gray;
-      }
-    ```
+   ```CSS
+   body {
+     background: gray;
+     }
+   ```
 
-    Или:
+   Или:
 
-    ```CSS
-    @-moz-document domain('example.org'),
-    domain('example.net'),
-    domain('example.com') body {
-      background: gray;
-      }
-    ```
+   ```CSS
+   @-moz-document domain('example.org'),
+   domain('example.net'),
+   domain('example.com') body {
+     background: gray;
+     }
+   ```
 
 5. Когда закончите, нажмите _Сохранить и закрыть_. Готово, пользовательский стиль добавлен в AdGuard
 
@@ -409,3 +484,5 @@ divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML"
     }
 }
 ```
+
+[CoreLibs]: https://github.com/AdguardTeam/CoreLibs

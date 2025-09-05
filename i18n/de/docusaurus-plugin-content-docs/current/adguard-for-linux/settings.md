@@ -77,11 +77,11 @@ Verwenden Sie den Befehl `config`, um AdGuard für Linux zu konfigurieren. Unter
 
 - `show`: Die aktuelle Konfiguration in `proxy.yaml` anzeigen
 
-    ![Aktuelle Einrichtung \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![Aktuelle Einrichtung \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
 - `set`: Eine Option in `proxy.yaml` konfigurieren
-    - `listen_ports.http_proxy`: HTTP-Lauschport
-    - `proxy_mode`: Proxy-Modus (`manual` oder `auto`)
+  - `listen_ports.http_proxy`: HTTP-Lauschport
+  - `proxy_mode`: Proxy-Modus (`manual` oder `auto`)
 
 - `get`: Den aktuellen Status der oben genannten Optionen abrufen
 
@@ -91,15 +91,15 @@ Verwenden Sie den Befehl `filters`, um AdGuard für Linux zu konfigurieren. Unte
 
 - `list`: Liste der installierten Filter
 
-    - `--all`: Alle Filter anzeigen
+  - `--all`: Alle Filter anzeigen
 
-    ![Filterliste \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
+  ![Filterliste \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
 - `install`: Einen Filter installieren. Geben Sie die URL des Filters ein, den Sie installieren möchten
 
 - `enable`: Einen Filter aktivieren. Geben Sie den Namen oder die ID des Filters ein
 
-    ![Filter aktivieren \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+  ![Filter aktivieren \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
 - 'disable': Einen Filter deaktivieren. Geben Sie den Namen oder die ID des Filters ein
 
@@ -112,8 +112,8 @@ Es gibt zwei Möglichkeiten, den Proxyserver an einer anderen Schnittstelle laus
 
 1. Führen Sie `adguard-cli config set listen_address <address>` aus, wobei `<address>` die Adresse ist, auf die gelauscht werden soll.
 2. Konfigurationsdatei direkt bearbeiten:
-    - Um den Speicherort der Konfigurationsdatei zu ermitteln, führen Sie `adguard-cli config show | grep "Config location"` aus.
-    - Suchen Sie nach dem Schlüssel `listen_address` und setzen Sie dessen Wert entsprechend. Um auf allen verfügbaren Netzwerkschnittstellen zu lauschen, setzen Sie die Listen-Adresse auf `0.0.0.0` oder `::`.
+   - Um den Speicherort der Konfigurationsdatei zu ermitteln, führen Sie `adguard-cli config show | grep "Config location"` aus.
+   - Suchen Sie nach dem Schlüssel `listen_address` und setzen Sie dessen Wert entsprechend. Um auf allen verfügbaren Netzwerkschnittstellen zu lauschen, setzen Sie die Listen-Adresse auf `0.0.0.0` oder `::`.
 
 Wenn die Lauschadresse auf einen anderen Wert als `127.0.0.1` eingestellt ist, ist eine Authentifizierung des Proxy-Clients erforderlich. AdGuard CLI startet nicht, wenn keine Proxy-Authentifizierung konfiguriert ist:
 

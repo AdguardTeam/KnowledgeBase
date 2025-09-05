@@ -49,7 +49,7 @@ Mesmo que você não encontre nenhum erro de travamento BSoD, você ainda pode c
 
 Você ativou o arquivo minidump com sucesso. Agora, se o sistema travar, ele será criado automaticamente.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Por padrão, o arquivo minidump é armazenado na pasta **%SystemRoot%\Minidump**. Você pode alterar o local para o diretório que quiser, mas lembre-se de que muitos programas estão configurados para procurar esse local por padrão, portanto, recomendamos que você não altere o local.
 
@@ -65,7 +65,7 @@ Our support team may request a wfpdiag.cab file, along with a minidump file, to 
 
 1. Right-click Command Prompt and choose *Run as administrator*
 
-    :::note
+    Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
     A wfpdiag.cab file is created in your current directory. You can change the location by typing `cd <folder_name>`.
 

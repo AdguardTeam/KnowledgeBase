@@ -17,7 +17,7 @@ Beta 版和 Nightly 版测试对于改进 AdGuard 服务都很重要。 然而�
 
 用户还需要一台能够安装应用程序，以及设置 [Beta 测试网页的链接](https://adguard.com/beta.html)的设备。 在网页上您可以找到有关如何加入我们的程序以及测试 AdGuard Windows 版、Android 版和 iOS 版的更多信息。
 
-如果您想跳过描述部分，直接进入行动阶段，可以[在这里](https://surveys.adguard.com/beta_testing_program/form.html)申请。 我们将在 1-3 个工作日内审核申请，通过电子邮件跟您联系。
+If you would like to become a tester, please [fill out the form](https://surveys.adguard.com/beta_testing_program/form.html) to submit your application. If it is approved, you will receive a response via email within a few days.
 
 :::note
 

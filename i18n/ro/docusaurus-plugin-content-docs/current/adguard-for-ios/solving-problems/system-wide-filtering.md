@@ -5,49 +5,40 @@ sidebar_position: 2
 
 :::info
 
-Acest articol se referă la AdGuard pentru iOS, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru iOS, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. To see how it works firsthand, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
 ## Despre filtrarea la nivel de sistem
 
-System-wide filtering means blocking ads and trackers beyond the Safari browser, i.e. in other apps and browsers. Acest articol vă va spune cum să o activați pe dispozitivul dvs. iOS.
+System-wide filtering lets you block ads and trackers not just in Safari, but across other apps and browsers on your iOS device. iOS is a fairly closed operating system, and Apple provides limited options for blocking ads outside Safari. The only way to block ads and trackers system-wide is through [DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/). This article explains how to enable it.
 
-Pe iOS, singura cale de a bloca reclamele și trackerele la nivel de sistem este să folosiți [filtrarea DNS](https://adguard-dns.io/kb/general/dns-filtering/).
+![How DNS filtering works](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 
-Mai întâi, trebuie să activați protecția DNS. Pentru a face acest lucru:
+The first thing you need to do is enable DNS protection:
 
-1. Deschideți *AdGuard pentru iOS*.
-2. Apăsați pe iconița *Protecție* (a doua iconiță din bara de meniu de jos).
-3. Activați comutatorul de *Protecție DNS*.
+1. Open *AdGuard*.
+2. Tap the *Protection* icon (shield icon in the bottom menu bar).
+3. Turn on *DNS protection*.
 
-![DNS protection screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_dns_protection.PNG)
+![DNS protection screen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/dns_protection.png)
 
-Acum, dacă scopul dvs. este să blocați reclamele și trackerele la nivel de sistem, aveți trei opțiuni:
+Once DNS protection is on, you have three options:
 
- 1. Utilizați filtrul DNS AdGuard (*Protecție* (iconița scut în meniul de jos) → *Protecția DNS* → *filtrarea DNS* → *filtre DNS* → *filtrul DNS AdGuard*).
- 2. Utilizați serverul DNS AdGuard (*Protecție* (iconița scut în meniul de jos) → *Protecția DNS* → *server DNS* → *AdGuard DNS*) sau un alt server DNS de blocare care vă place.
- 3. Add a custom DNS filter/hosts file to your liking.
+- **Use AdGuard DNS filter.** To enable it, go to *Protection* → *DNS protection* → *DNS filtering* → *DNS filters* → *AdGuard DNS filter*. With this option, you’re not tied to a specific blocking server — the filter does all the blocking.
+- **Use a blocking DNS server.** Go to *Protection* → *DNS protection* → *DNS server* and select *AdGuard DNS* or another blocking server to your liking.
+- **Add a custom DNS filter or hosts file.** You can add multiple DNS filters and hosts files. Be aware that using too many may slow down AdGuard.
 
-Prima și a treia opțiune au mai multe avantaje:
+## How to add custom DNS filter and hosts file
 
-- Puteți utiliza orice server DNS la discreția dvs. și nu sunteți legat de un server de blocare specific, deoarece filtrul se ocupă de blocare.
-- Puteți adăuga mai multe filtre DNS și/sau fișiere hosts (deși utilizarea prea multora ar putea încetini AdGuard).
+For example, let’s add the [OISD Blocklist Big](https://oisd.nl/).
 
-![Cum funcționează filtrarea DNS](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
-
-## Cum să adăugați un filtru/fișier hosts DNS personalizat
-
-Puteți adăuga orice filtru DNS sau fișier hosts care vă place.
-
-Ca exemplu, să adăugăm [OISD Blocklist Big](https://oisd.nl/).
-
-1. Copiați acest link: `https://big.oisd.nl` (este un link pentru filtrul OISD Blocklist Big)
-2. Open *Protection* (the shield icon in the bottom menu) → *DNS protection* → *DNS filtering* → *DNS filters*.
-3. Apăsați *Adăugați un filtru*.
+1. Copy the OISD Blocklist Big link: `https://big.oisd.nl`
+2. Open *Protection*  → *DNS protection* → *DNS filtering* → *DNS filters*.
+3. Tap *Add a filter*.
 4. Paste the link into the filter URL field.
-5. Apăsați *Următorul* → *Adăugați*.
+5. Tap *Next* → *Add*.
 
-![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/blog/new/ot4okIMGD236EB8905471.jpeg)
+![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/adding_dns_filter.png)
 
-Adăugați orice număr de alte filtre DNS în același mod, lipind un URL diferit la pasul 4. Puteți găsi diverse filtre și linkuri către ele [aici](https://filterlists.com).
+Add any number of DNS filters by repeating step 4 with a different URL. You can find various filter lists and their links at [filterlists.com](https://filterlists.com).

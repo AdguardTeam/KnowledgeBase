@@ -20,18 +20,18 @@ Wenn Sie die Implementierung einer neuen Funktion oder eines Bugfixes unterstüt
 
 1. Aktivieren Sie die Fehlersuche-Protokollierung:
 
-    `adguard-cli config set log_level debug`
+   `adguard-cli config set log_level debug`
 
 2. Reproduzieren Sie das Problem und versuchen Sie, sich an den genauen Zeitpunkt des Auftretens zu erinnern.
 
 3. Warten Sie eine Weile und exportieren Sie anschließend die Protokolle:
 
-    `adguard-cli export-logs`
+   `adguard-cli export-logs`
 
-    Die archivierte Protokolldatei wird standardmäßig in den Anwendungsordner heruntergeladen, und der Pfad zu den Protokollen wird in die Konsole geschrieben.
+   Die archivierte Protokolldatei wird standardmäßig in den Anwendungsordner heruntergeladen, und der Pfad zu den Protokollen wird in die Konsole geschrieben.
 
 4. Senden Sie die Protokolldatei an <devteam@adguard.com>. Geben Sie den Zeitpunkt des Fehlers an und fügen Sie einen Link zu Ihrem GitHub-Problem oder dessen Nummer hinzu (sie erscheint als #Nummer neben dem Titel). Alternativ können Sie die Protokolldatei auf Google Drive hochladen und sie mit <devteam@adguard.com> teilen. Hängen Sie den Dateilink an Ihr GitHub-Problem an.
 
 5. Wechseln Sie den Protokollierungsmodus zurück auf `info`:
 
-    `adguard-cli config set log_level info`
+   `adguard-cli config set log_level info`

@@ -5,20 +5,20 @@ sidebar_position: 1
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for iOS」について書いています。 実際にどのように動作するかを確認するには、[AdGuard アプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for iOS」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
-AdGuard for iOS アプリのプレミアム機能を有効にするには、2つの方法があります:
+There are two ways to activate Premium features in the AdGuard for iOS app:
 
-1. [App Store経由のサブスクリプションを購入する]　 ① AdGuardアプリを開いて、「**プレミアム版でパワーアップ**」をタップします。 ② プランを選んで、「無料お試しスタート」をタップして、Apple IDパスワードを入力して購入を確認します。 3. これで、プレミアム機能をご利用いただけます。
+1. **Purchase a subscription.** Just tap the **Get Premium** plaque anywhere in the app and follow the on-screen instructions. Enter your Apple Account password and confirm the purchase. You can choose a monthly, yearly, or lifetime subscription.
 
-2. [AdGuardライセンスを使用する（[AdGuard公式ホームページ](https://adguard.com/license.html)で購入できます。）]　 ①AdGuardアプリでメイン画面右下の⚙アイコンをタップ→「AdGuardについて」→「*ライセンス*」→画面右上の「**ログイン**」をタップします。 ②AdGuardアカウントのメールアドレスとパスワードを入力してログインします。 ③これで、アカウントにあるライセンスが認証され、AdGuardプレミアム機能が有効になります。
+2. **Use an AdGuard license.** You can buy one on the [AdGuard website](https://adguard.com/license.html). To activate it, open your AdGuard app, tap *Settings → License → Log in* and enter the same email address you used for purchase or your license key. If you have a valid license key in your account, the app will detect it automatically and activate Premium.
 
-または、ログイン画面でライセンスキーをメールアドレス欄に直接入力することで、プレミアム機能を有効化することもできます。
+Alternatively, to activate Premium features, you can enter a valid license key in the email field and leave the password field blank.
 
 :::note
 
-iOS用AdGuard Pro（AdGuardのもう一つのiOS用アプリ）は、[App Storeからのみ](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264)購入できます。（※機能は「AdGuard」アプリのプレミアム版と全く同じです。）
+AdGuard Pro for iOS is our other iOS app. It can only be purchased from the [App Store](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264).
 
 :::

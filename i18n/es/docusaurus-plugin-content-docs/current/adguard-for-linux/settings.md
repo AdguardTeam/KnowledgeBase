@@ -77,11 +77,11 @@ Usa el comando `config` para configurar AdGuard para Linux. Subcomandos:
 
 - `show`: Muestra la configuración actual en `proxy.yaml`
 
-    ![Configuración actual \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![Configuración actual \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
 - `set`: Configurar una opción en `proxy.yaml`
-    - `listen_ports.http_proxy`: puerto HTTP de escucha
-    - `proxy_mode`: Modo proxy (`manual` u `auto`)
+  - `listen_ports.http_proxy`: puerto HTTP de escucha
+  - `proxy_mode`: Modo proxy (`manual` u `auto`)
 
 - `get`: Obtener el estado actual de las opciones anteriores
 
@@ -91,15 +91,15 @@ Usa el comando `filters` para configurar AdGuard para Linux. Subcomandos:
 
 - `list`: Listar filtros instalados
 
-    - `--all`: Ver todos los filtrados
+  - `--all`: Ver todos los filtrados
 
-    ![Lista de filtros \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
+  ![Lista de filtros \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
 - `install`: Instalar un filtro. Ingrese la URL del filtrado que deseas instalar
 
 - `enable`: Habilitar un filtro. Introduce el nombre o ID del filtro
 
-    ![Habilitar filtros \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+  ![Habilitar filtros \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
 - `disable`: Deshabilitar un filtro. Introduce el nombre o ID del filtro
 
@@ -112,8 +112,8 @@ Hay dos formas de hacer que el proxy escuche en una interfaz diferente:
 
 1. Ejecuta `adguard-cli config set listen_address <dirección>` donde `<dirección>` es la dirección a la que escuchar.
 2. Edita el archivo de configuración directamente:
-    - Para determinar la ubicación del archivo de configuración, ejecuta `adguard-cli config show | grep "Config location"`.
-    - Busca la clave `listen_address` y establece su valor en consecuencia. Para escuchar en todas las interfaces de red disponibles, establece la dirección de escucha en `0.0.0.0` o `::`.
+   - Para determinar la ubicación del archivo de configuración, ejecuta `adguard-cli config show | grep "Config location"`.
+   - Busca la clave `listen_address` y establece su valor en consecuencia. Para escuchar en todas las interfaces de red disponibles, establece la dirección de escucha en `0.0.0.0` o `::`.
 
 Si la dirección de escucha está configurada en algo diferente a `127.0.0.1`, se requiere la autenticación del cliente proxy. AdGuard CLI no se iniciará a menos que se configure la autenticación del proxy:
 

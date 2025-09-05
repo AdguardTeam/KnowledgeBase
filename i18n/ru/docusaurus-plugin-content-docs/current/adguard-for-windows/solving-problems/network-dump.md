@@ -1,6 +1,6 @@
 ---
-title: How to collect network dump with WireShark
-sidebar_position: 12
+title: Как собрать дамп сети с помощью WireShark
+sidebar_position: 13
 ---
 
 :::info
@@ -9,38 +9,38 @@ sidebar_position: 12
 
 :::
 
-Sometimes, diagnosing network issues requires seeing exactly how your device communicates with the Internet. Collecting a network dump allows us to analyze this traffic and find the cause of your problem. In this guide, we will show you how to capture a network dump using Wireshark.
+Иногда для диагностики сетевых проблем требуется увидеть, как именно ваше устройство взаимодействует с интернетом. Сбор дампа сети позволяет нам проанализировать этот трафик и найти причину проблемы. В этом руководстве мы покажем, как собрать сетевой дамп с помощью Wireshark.
 
 :::note
 
-Data and files provided in dump files are processed in accordance with the [AdGuard Privacy policy](https://adguard.com/privacy.html).
+Данные и файлы, предоставленные в файлах дампа, обрабатываются в соответствии с [Политикой конфиденциальности AdGuard] (https://adguard.com/privacy.html).
 
 :::
 
-## 1. Install Wireshark
+## 1. Установка Wireshark
 
-Download Wireshark from the [official website](https://www.wireshark.org/download.html). Run the installer and follow the instructions. When prompted, install Npcap — this driver is necessary for Wireshark to capture network packets.
+Скачайте Wireshark с [официального сайта](https://www.wireshark.org/download.html). Запустите программу установки и следуйте инструкциям. Когда появится соответствующий запрос, установите Npcap — драйвер, необходимый Wireshark для захвата сетевых пакетов.
 
-## 2. Prepare for capture
+## 2. Подготовка к захвату
 
-Before starting, **close all unnecessary programs and browser tabs**. This will help reduce unrelated data in the dump.
+Перед началом **закройте все ненужные программы и вкладки браузера**. Это поможет сократить объём ненужных данных в дампе.
 
-## 3. Capture network traffic
+## 3. Захват сетевого трафика
 
-Open Wireshark, and you will see a list of network interfaces. Select the one you need: Ethernet if you have a wired connection, or Wireless if you’re using Wi-Fi.
+Откройте Wireshark, чтобы увидеть список сетевых интерфейсов. Выберите нужный вам вариант: Ethernet, если у вас проводное подключение, или Wireless, если вы используете Wi-Fi.
 
-If you’re not sure which interface to choose, pick the one with the most activity in the graph — the higher the graph, the more traffic goes through it.
+Если вы не уверены, какой интерфейс выбрать, выберите тот, у которого на графике самая высокая активность — чем выше график, тем больше трафика через него проходит.
 
-![Main screen](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/main_screen.png)
+![Главный экран](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/main_screen.png)
 
-Double-click the selected interface to start the capture. Now, reproduce the issue you are experiencing, making sure to perform only the necessary actions to trigger the problem and avoid any other processes. This helps isolate the issue and ensures relevant traffic is recorded.
+Дважды щёлкните выбранный интерфейс, чтобы начать захват. Теперь воспроизведите проблему, с которой вы столкнулись, совершая только необходимые действия для её активации и избегая любых других процессов. Это поможет изолировать проблему и обеспечить учёт соответствующего трафика.
 
-## 4. Stop capture and save the dump
+## 4. Остановка захвата и сохранение дампа
 
-After reproducing the issue, click the red Stop button at the top to finish the capture.
+После воспроизведения проблемы нажмите красную кнопку «Стоп» вверху, чтобы завершить захват.
 
-![Capture process \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/capturing_process.png)
+![Захват процесса \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/capturing_process.png)
 
-To save the data, press Ctrl+S, enter a file name, and choose the .pcapng format. That’s it — your network dump file is ready.
+Чтобы сохранить данные, нажмите Ctrl+S, введите имя файла и выберите формат .pcapng. Вот и всё — файл сетевого дампа готов.
 
-When sending the dump, please also provide a timeline of events. Describe the main actions you took, such as when you launched the app and the steps that led to the issue, and include the approximate time the issue occurred.
+При отправке дампа, пожалуйста, также укажите хронологию событий. Опишите основные предпринятые вами действия, например, когда вы запустили приложение, и шаги, которые привели к проблеме, а также укажите приблизительное время возникновения проблемы.

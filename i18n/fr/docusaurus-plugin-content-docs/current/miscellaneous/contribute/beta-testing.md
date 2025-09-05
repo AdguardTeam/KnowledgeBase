@@ -17,7 +17,7 @@ Nos exigences sont simples : utilisez AdGuard, passez à la version bêta/nightl
 
 Vous aurez également besoin de l'appareil sur lequel vous allez installer l'application et [le lien vers la page de test bêta](https://adguard.com/beta.html). Vous y trouverez plus d'informations sur la manière de rejoindre notre programme et de tester AdGuard pour Windows, iOS et Android.
 
-Si vous souhaitez sauter la partie description et passer directement à l'action, vous pouvez vous inscrire [ici](https://surveys.adguard.com/beta_testing_program/form.html). Votre candidature sera examinée dans un délai de 1 à 3 jours ouvrables et vous recevrez une réponse par e-mail.
+If you would like to become a tester, please [fill out the form](https://surveys.adguard.com/beta_testing_program/form.html) to submit your application. If it is approved, you will receive a response via email within a few days.
 
 :::note
 

@@ -147,6 +147,7 @@ AdGuard 同时支持旧的 GM\_ 函数和使用 GM 对象的新 GM4 API。
 - [`GM_addStyle`](https://www.tampermonkey.net/documentation.php#api:GM_addStyle)
 - [`GM_log`](https://www.tampermonkey.net/documentation.php#api:GM_log)
 - [`GM.addElement`, `GM_addElement`](https://www.tampermonkey.net/documentation.php#api:GM_addElement)
+- [`window.onurlchange`](https://www.tampermonkey.net/documentation.php#api:window.onurlchange)
 
 您可以在[手册](https://wiki.greasespot.net/Greasemonkey_Manual:API)中找到有关 Greasemonkey API 的更多信息。
 
@@ -183,6 +184,7 @@ AdGuard 同时支持旧的 GM\_ 函数和使用 GM 对象的新 GM4 API。
 // @grant           GM_openInTab
 // @grant           GM_registerMenuCommand
 // @grant           GM_addElement
+// @grant           window.onurlchange
 // @run-at          document-start
 // ==/UserScript==
 !function(){(
@@ -321,74 +323,148 @@ function convertPropertyToTrusted(
 divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML", "<div></div>");
 ```
 
-## 用户样式
+#### Matching SPA sites
 
-用户样式允许用户更改流行网站的外观。
+:::info 兼容性
 
-AdGuard 提供上传或创建自定义用户样式的选项。 这是一项高级功能，因此用户需要具备一些 HTML 和 CSS 的知识。
-
-:::info 支持的应用
-
-目前，有两款 AdGuard 应用程序允许用户创建和管理用户样式：AdGuard Windows 版（v7.19 或更高版本）和 AdGuard Mac 版（v2.16 或更高版本）。 We also plan to implement this new feature in AdGuard for Android v4.8 in the nearest future.
+This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.19 or later.
 
 :::
 
-这是一项实验性功能，因此如果您在添加或创建用户样式时遇到任何问题，请联系我们的支持团队：<support@adguard.com>。
+Many modern websites, such as YouTube, utilize [Single Page Application (SPA)](https://en.wikipedia.org/wiki/Single-page_application) capabilities. Unlike traditional web applications, the page does not reload when navigating between pages. Instead, the content is updated dynamically using JavaScript, allowing for a smoother user experience.
 
-### 如何在 AdGuard 中设置用户样式
+On such websites, a userscript is invoked only once when the `@match` or `@include` directives are matched (unless `@exclude` is matched). Due to the nature of SPAs, the userscript cannot be re-invoked on subsequent page changes because the global JavaScript context remains the same. To address this issue, userscripts can use the `@grant window.onurlchange` directive.
 
-用户可以从各种网站下载用户样式。 最受欢迎的用户样式网站之一是 [https://userstyles.world/](https://userstyles.world/explore)，我们将以它为例，说明如何在 AdGuard 中设置用户样式。
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @grant window.onurlchange
+// @run-at document-start
+// ==/UserScript==
 
-1. 点击上面的链接并选择您喜欢的用户样式。
+// via window.onurlchange
+window.onurlchange = (event) => {
+    console.log('URL changed to:', event.url);
+};
 
-2. 点击「_复制_」旁边的用户样式地址。
+// via window.addEventListener('urlchange')
+window.addEventListener('urlchange', (event) => {
+    console.log('URL changed to:', event.url);
+});
+```
 
-3. 打开 AdGuard 设置 →「_扩展_」
-
-4. 按下 [+] 按钮并粘贴用户样式链接。
-
-5. 完成！
-
-如果您熟悉 CSS 规则，可以自己创建用户样式。
+This will allow userscripts to listen for URL changes and handle them accordingly.
 
 :::note
 
-我们不支持包含 `@var` 或 `@advanced` 的用户样式的元数据。 AdGuard 也不支持没有 `default` 值的 `@preprocessor`。
+The `urlchange` event is only triggered for full URL changes, such as a change in the path or query, but not for fragment (hash) changes.
+Examples:
+
+- Navigation from `https://example.com/page1` to `https://example.com/page2` will trigger the event.
+- Navigation from `https://example.com/page1?query=1` to `https://example.com/page1?query=2` will trigger the event.
+- Navigation from `https://example.com/page1#section1` to `https://example.com/page1#section2` will **NOT** trigger the event.
 
 :::
 
-1. 打开 AdGuard 设置 →「_扩展_」
+:::note
 
-2. 按下 [+] 按钮并选择「_创建用户样式_」选项。 您的屏幕上将出现一个新窗口。
+The `window.onurlchange` and `window.addEventListener('urlchange', ...)` APIs are non-standard. To use them, you must explicitly grant them in your userscript with `@grant window.onurlchange`.
 
-3. 要创建用户样式，请先写下带有元数据的标题，例如：
+:::
 
-    ```CSS
-    /* ==UserStyle==
-    @name New userstyle
-    @version 1.0
-    ==/UserStyle== */
-    ```
+If a website uses hash routing, userscripts can use the native DOM [`hashchange` event](https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event):
 
-4. 在元数据之后编写 CSS 部分。 AdGuard 支持网站域名匹配 (`@-moz-document domain(…), …`)。 例如：
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @run-at document-start
+// ==/UserScript==
 
-    ```CSS
-    body {
-      background: gray;
-      }
-    ```
+// via window.onhashchange
+window.onhashchange = (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+};
 
-    或者：
+// via window.addEventListener('hashchange')
+window.addEventListener('hashchange', (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+});
+```
 
-    ```CSS
-    @-moz-document domain('example.org'),
-    domain('example.net'),
-    domain('example.com') body {
-      background: gray;
-      }
-    ```
+## Userstyles
 
-5. 完成后，请按「_保存并关闭_」。 您的新用户样式已成功添加到 AdGuard。
+Userstyles allow users to change the appearance of popular websites.
+
+AdGuard has the option to upload or create your own userstyles. This is an advanced feature, so you will need some knowledge of HTML and CSS.
+
+:::info 支持的应用
+
+Currently, two AdGuard apps allow you to create and manage userstyles: AdGuard for Windows (v7.19 or later) and AdGuard for Mac (v2.16 or later). We also plan to implement this new feature in AdGuard for Android v4.8 in the nearest future.
+
+:::
+
+This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at <support@adguard.com>.
+
+### How to set up a userstyle in AdGuard
+
+You can download userstyles from various websites. One of the most popular userstyle websites is [https://userstyles.world/](https://userstyles.world/explore), which we will use as an example for the following instructions on how to set up the userstyle in AdGuard.
+
+1. Follow the link above and choose the userstyle you like
+
+2. Click _Copy_ next to the userstyle address
+
+3. Open AdGuard settings → _Extensions_
+
+4. Press the [+] button and paste the userstyle link
+
+5. 完成！
+
+If you’re familiar with CSS rules, you can also create userstyles yourself.
+
+:::note
+
+We don’t support userstyles that contain `@var` or `@advanced` in the metadata. AdGuard also doesn’t support `@preprocessor` without the `default` value.
+
+:::
+
+1. Open AdGuard settings → _Extensions_
+
+2. Press the [+] button and choose the _Create userstyle_ option. A new window will appear on your screen
+
+3. To create a userstyle, first write the title with metadata, for example
+
+   ```CSS
+   /* ==UserStyle==
+   @name New userstyle
+   @version 1.0
+   ==/UserStyle== */
+   ```
+
+4. Write the CSS part after the meta data. AdGuard supports website domain names matching (`@-moz-document domain(…), …`). 例如：
+
+   ```CSS
+   body {
+     background: gray;
+     }
+   ```
+
+   Or:
+
+   ```CSS
+   @-moz-document domain('example.org'),
+   domain('example.net'),
+   domain('example.com') body {
+     background: gray;
+     }
+   ```
+
+5. Once you’re finished, press _Save and Close_. Your new userstyle has been successfully added to AdGuard
 
 ### 示例
 
@@ -409,3 +485,5 @@ AdGuard 提供上传或创建自定义用户样式的选项。 这是一项高�
     }
 }
 ```
+
+[CoreLibs]: https://github.com/AdguardTeam/CoreLibs

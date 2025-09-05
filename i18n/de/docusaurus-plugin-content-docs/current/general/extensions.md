@@ -147,6 +147,7 @@ Alle aufgeführten früheren Greasemonkey-Funktionen sind veraltet, werden aber 
 - [`GM_addStyle`](https://www.tampermonkey.net/documentation.php#api:GM_addStyle)
 - [`GM_log`](https://www.tampermonkey.net/documentation.php#api:GM_log)
 - [`GM.addElement`, `GM_addElement`](https://www.tampermonkey.net/documentation.php#api:GM_addElement)
+- [`window.onurlchange`](https://www.tampermonkey.net/documentation.php#api:window.onurlchange)
 
 Weitere Informationen zur Greasemonkey-API finden Sie im [Handbuch] (https://wiki.greasespot.net/Greasemonkey_Manual:API).
 
@@ -154,10 +155,10 @@ Weitere Informationen zur Greasemonkey-API finden Sie im [Handbuch] (https://wik
 
 ```javascript
 // ==UserScript==
-// @name            Name, der dem Benutzer angezeigt wird, wenn das Gebietsschema „Englisch“ oder „Unbekannt“ ist
-// @name:ru         Name, wie er dem Benutzer angezeigt wird, wenn das Gebietsschema „Russisch” ist
-// @description     Beschreibung, die dem Benutzer angezeigt wird, wenn das Gebietsschema „Englisch“ oder „Unbekannt“ ist
-// @description:ru  Beschreibung, wie sie dem Benutzer angezeigt wird, wenn das Gebietsschema „Russisch“ ist
+// @name            Name as shown to the user when locale is english or unknown
+// @name:ru         Name as shown to the user when locale is russian
+// @description     Description as shown to the user when locale is english or unknown
+// @description:ru  Description as shown to the user when locale is russian
 // @icon            https://myhomepage.com/myuserscript.png
 // @version         1.0.0.0
 // @downloadURL     https://dl.myhomepage.org/myuserscript.user.js
@@ -183,6 +184,7 @@ Weitere Informationen zur Greasemonkey-API finden Sie im [Handbuch] (https://wik
 // @grant           GM_openInTab
 // @grant           GM_registerMenuCommand
 // @grant           GM_addElement
+// @grant           window.onurlchange
 // @run-at          document-start
 // ==/UserScript==
 !function(){(
@@ -321,74 +323,148 @@ function convertPropertyToTrusted(
 divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML", "<div></div>");
 ```
 
-## Benutzerstile (Userstyles)
+#### Matching SPA sites
 
-Mit Benutzerstilen kann man das Aussehen beliebter Websites ändern.
+:::info Kompatibilität
 
-AdGuard bietet die Möglichkeit, eigene Benutzerstile hochzuladen oder zu erstellen. Da es sich hierbei um eine technisch anspruchsvolle Funktion handelt, benötigen Sie einige Kenntnisse in HTML und CSS.
-
-:::info Unterstützte Apps
-
-Derzeit gibt es zwei AdGuard-Anwendungen, mit denen Sie Benutzerstile erstellen und verwalten können: AdGuard für Windows (v7.19 oder höher) und AdGuard für Mac (v2.16 oder höher). Es ist zudem geplant, diese neue Funktion in AdGuard für Android v4.8 in naher Zukunft zu implementieren.
+This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.19 or later.
 
 :::
 
-Es handelt sich hierbei um eine experimentelle Funktion. Wenn Sie also beim Hinzufügen oder Erstellen eines Benutzerstils auf Probleme stoßen, wenden Sie sich bitte an unser Support-Team unter <support@adguard.com>.
+Many modern websites, such as YouTube, utilize [Single Page Application (SPA)](https://en.wikipedia.org/wiki/Single-page_application) capabilities. Unlike traditional web applications, the page does not reload when navigating between pages. Instead, the content is updated dynamically using JavaScript, allowing for a smoother user experience.
 
-### So richten Sie einen Benutzerstil in AdGuard ein
+On such websites, a userscript is invoked only once when the `@match` or `@include` directives are matched (unless `@exclude` is matched). Due to the nature of SPAs, the userscript cannot be re-invoked on subsequent page changes because the global JavaScript context remains the same. To address this issue, userscripts can use the `@grant window.onurlchange` directive.
 
-Sie können Benutzerstile von verschiedenen Websites herunterladen. Eine der populärsten Benutzerstil-Webseiten ist [https://userstyles.world/](https://userstyles.world/explore), die hier als Beispiel für die folgende Anleitung zur Einrichtung des Benutzerstils in AdGuard verwendet wird.
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @grant window.onurlchange
+// @run-at document-start
+// ==/UserScript==
 
-1. Folgen Sie dem obigen Link und wählen Sie den gewünschten Benutzerstil
+// via window.onurlchange
+window.onurlchange = (event) => {
+    console.log('URL changed to:', event.url);
+};
 
-2. Klicken Sie auf _Kopieren_ neben der Adresse des Benutzerstils
+// via window.addEventListener('urlchange')
+window.addEventListener('urlchange', (event) => {
+    console.log('URL changed to:', event.url);
+});
+```
 
-3. Öffnen Sie die Einstellungen von AdGuard ➜ _Erweiterungen_
-
-4. Drücken Sie auf die Schaltfläche [+] und fügen Sie den Benutzerstil-Link ein
-
-5. Fertig!
-
-Wenn Sie mit den CSS-Regeln vertraut sind, können Sie auch selbst Benutzerstile erstellen.
+This will allow userscripts to listen for URL changes and handle them accordingly.
 
 :::note
 
-Es werden keine Benutzerstile unterstützt, die `@var` oder `@advanced` in den Metadaten enthalten. AdGuard unterstützt auch nicht `@preprocessor` ohne den `default`-Wert.
+The `urlchange` event is only triggered for full URL changes, such as a change in the path or query, but not for fragment (hash) changes.
+Examples:
+
+- Navigation from `https://example.com/page1` to `https://example.com/page2` will trigger the event.
+- Navigation from `https://example.com/page1?query=1` to `https://example.com/page1?query=2` will trigger the event.
+- Navigation from `https://example.com/page1#section1` to `https://example.com/page1#section2` will **NOT** trigger the event.
 
 :::
 
-1. Öffnen Sie die Einstellungen von AdGuard ➜ _Erweiterungen_
+:::note
 
-2. Drücken Sie auf die Schaltfläche [+] und wählen Sie die Option _Benutzerstil erstellen_. Es wird ein neues Fenster auf Ihrem Bildschirm angezeigt
+The `window.onurlchange` and `window.addEventListener('urlchange', ...)` APIs are non-standard. To use them, you must explicitly grant them in your userscript with `@grant window.onurlchange`.
 
-3. Um einen Benutzerstil zu erstellen, schreiben Sie zunächst den Titel mit Metadaten, zum Beispiel
+:::
 
-    ```CSS
-    /* ==UserStyle==
-    @name New userstyle
-    @version 1.0
-    ==/UserStyle== */
-    ```
+If a website uses hash routing, userscripts can use the native DOM [`hashchange` event](https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event):
 
-4. Schreiben Sie den CSS-Teil nach den Metadaten. AdGuard unterstützt den Abgleich von Website-Domainnamen (`@-moz-document domain(…), …`). Zum Beispiel:
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @run-at document-start
+// ==/UserScript==
 
-    ```CSS
-    body {
-      background: gray;
-      }
-    ```
+// via window.onhashchange
+window.onhashchange = (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+};
 
-    oder:
+// via window.addEventListener('hashchange')
+window.addEventListener('hashchange', (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+});
+```
 
-    ```CSS
-    @-moz-document domain('example.org'),
-    domain('example.net'),
-    domain('example.com') body {
-      background: gray;
-      }
-    ```
+## Userstyles
 
-5. Wenn Sie fertig sind, drücken Sie _Speichern und schließen_. Ihr neuer Benutzerstil wurde erfolgreich zu AdGuard hinzugefügt
+Userstyles allow users to change the appearance of popular websites.
+
+AdGuard has the option to upload or create your own userstyles. This is an advanced feature, so you will need some knowledge of HTML and CSS.
+
+:::info Unterstützte Apps
+
+Currently, two AdGuard apps allow you to create and manage userstyles: AdGuard for Windows (v7.19 or later) and AdGuard for Mac (v2.16 or later). We also plan to implement this new feature in AdGuard for Android v4.8 in the nearest future.
+
+:::
+
+This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at <support@adguard.com>.
+
+### How to set up a userstyle in AdGuard
+
+You can download userstyles from various websites. One of the most popular userstyle websites is [https://userstyles.world/](https://userstyles.world/explore), which we will use as an example for the following instructions on how to set up the userstyle in AdGuard.
+
+1. Follow the link above and choose the userstyle you like
+
+2. Click _Copy_ next to the userstyle address
+
+3. Open AdGuard settings → _Extensions_
+
+4. Press the [+] button and paste the userstyle link
+
+5. Fertig!
+
+If you’re familiar with CSS rules, you can also create userstyles yourself.
+
+:::note
+
+We don’t support userstyles that contain `@var` or `@advanced` in the metadata. AdGuard also doesn’t support `@preprocessor` without the `default` value.
+
+:::
+
+1. Open AdGuard settings → _Extensions_
+
+2. Press the [+] button and choose the _Create userstyle_ option. A new window will appear on your screen
+
+3. To create a userstyle, first write the title with metadata, for example
+
+   ```CSS
+   /* ==UserStyle==
+   @name New userstyle
+   @version 1.0
+   ==/UserStyle== */
+   ```
+
+4. Write the CSS part after the meta data. AdGuard supports website domain names matching (`@-moz-document domain(…), …`). Zum Beispiel:
+
+   ```CSS
+   body {
+     background: gray;
+     }
+   ```
+
+   Or:
+
+   ```CSS
+   @-moz-document domain('example.org'),
+   domain('example.net'),
+   domain('example.com') body {
+     background: gray;
+     }
+   ```
+
+5. Once you’re finished, press _Save and Close_. Your new userstyle has been successfully added to AdGuard
 
 ### Beispiel
 
@@ -409,3 +485,5 @@ Es werden keine Benutzerstile unterstützt, die `@var` oder `@advanced` in den M
     }
 }
 ```
+
+[CoreLibs]: https://github.com/AdguardTeam/CoreLibs

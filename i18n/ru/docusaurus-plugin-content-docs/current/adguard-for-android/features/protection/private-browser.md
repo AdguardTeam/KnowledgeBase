@@ -11,7 +11,7 @@ sidebar_position: 7
 
 В версии 4.7 AdGuard для Android появился встроенный в приложение приватный браузер. Доступ к нему можно получить с главного экрана, нажав кнопку _Приватный браузер_, или со вкладки _Защита_, где вы найдёте некоторые параметры настройки.
 
-![Private browser \*mobile](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
+![Приватный браузер](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_ru.png)
 
 Вот что вы можете настроить:
 

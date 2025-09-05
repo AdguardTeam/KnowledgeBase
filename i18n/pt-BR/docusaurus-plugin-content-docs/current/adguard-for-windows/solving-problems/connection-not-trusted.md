@@ -35,7 +35,7 @@ Se isso não ajudar, siga as instruções para adicionar manualmente o certifica
 
 1. Vá para [http://local.adguard.org/cert](http://local.adguard.org/cert) e clique no ícone *Baixar*. O navegador deve começar a baixar o arquivo **cert.cer**.
 
-    :::note
+    Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
     Você também pode abrir a página de download clicando no link através do aplicativo AdGuard em *Configurações → Rede → Filtragem HTTPS*.
 

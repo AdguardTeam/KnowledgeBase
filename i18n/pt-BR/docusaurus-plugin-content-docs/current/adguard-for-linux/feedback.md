@@ -20,18 +20,18 @@ Se você deseja oferecer suporte à implementação de um novo recurso ou corre�
 
 1. Ative o registro de depuração:
 
-    `adguard-cli config set log_level debug`
+   `adguard-cli config set log_level debug`
 
 2. Reproduza o problema e tente se lembrar da hora exata em que ocorreu.
 
 3. Espere um momento, depois exporte os registros:
 
-    `adguard-cli export-logs`
+   `adguard-cli export-logs`
 
-    O arquivo de registro arquivado será baixado para a pasta do aplicativo por padrão, e o caminho para os registros será mostrado no console.
+   O arquivo de registro arquivado será baixado para a pasta do aplicativo por padrão, e o caminho para os registros será mostrado no console.
 
 4. Envie o arquivo de registro para <devteam@adguard.com>. Especifique a hora do erro e anexe um link ao seu GitHub ou seu número (ele aparece como #número ao lado do título). Como alternativa, você pode fazer upload do registro do arquivo para o Google Drive e compartilhá-lo com <devteam@adguard.com>. Anexe o link do arquivo ao seu problema do GitHub.
 
 5. Alterne o nível de registro de volta para `info`:
 
-    `adguard-cli config set log_level info`
+   `adguard-cli config set log_level info`

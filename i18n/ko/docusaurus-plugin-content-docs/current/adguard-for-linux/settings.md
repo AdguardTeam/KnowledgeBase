@@ -77,11 +77,11 @@ adguard-cli update -v
 
 - `show`: `proxy.yaml`의 현재 설정 표시
 
-    ![현재 설정 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![현재 설정 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
 - `set`: `proxy.yaml`에서 옵션 설정
-    - `listen_ports.http_proxy`: HTTP 수신 포트
-    - `proxy_mode`: 프록시 모드(`manual` 또는 `auto`)
+  - `listen_ports.http_proxy`: HTTP 수신 포트
+  - `proxy_mode`: 프록시 모드(`manual` 또는 `auto`)
 
 - `get`: 위 옵션의 현재 상태 확인
 
@@ -91,15 +91,15 @@ adguard-cli update -v
 
 - `list`: 설치된 필터 목록
 
-    - `--all`: 모든 필터 보기
+  - `--all`: 모든 필터 보기
 
-    ![필터 목록 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
+  ![필터 목록 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
 - `install`: 필터 설치 설치하려는 필터의 URL을 입력합니다.
 
 - `enable`: 필터 활성화 필터의 이름이나 ID를 입력합니다.
 
-    ![필터 활성화 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+  ![필터 활성화 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
 - `disable`: 필터 비활성화 필터의 이름이나 ID를 입력합니다.
 
@@ -112,8 +112,8 @@ adguard-cli update -v
 
 1. `adguard-cli config set listen_address <address>` 명령어를 실행하세요. 여기서 `<address>`는 감시할 주소입니다.
 2. 구성 파일을 직접 편집합니다.
-    - 구성 파일의 위치를 확인하려면 `adguard-cli config show | grep "Config location"`를 실행합니다.
-    - `listen_address` 키를 찾아서 그에 맞는 값을 설정합니다. 사용 가능한 모든 네트워크 인터페이스에서 수신하려면 수신 주소를 `0.0.0.0` 또는 `::`으로 설정합니다.
+   - 구성 파일의 위치를 확인하려면 `adguard-cli config show | grep "Config location"`를 실행합니다.
+   - `listen_address` 키를 찾아서 그에 맞는 값을 설정합니다. 사용 가능한 모든 네트워크 인터페이스에서 수신하려면 수신 주소를 `0.0.0.0` 또는 `::`으로 설정합니다.
 
 수신 주소가 `127.0.0.1`이 아닌 다른 주소로 설정된 경우 프록시 클라이언트 인증이 필요합니다. 프록시 인증이 구성되지 않으면 AdGuard CLI가 시작되지 않습니다.
 

@@ -9,22 +9,29 @@ sidebar_position: 4
 
 ### 기기 연결을 해제하는 방법
 
-- AdGuard 앱에서 *라이선스 초기화* 또는 *로그아웃*을 클릭합니다.
+#### Method 1
 
-- AdGuard 계정에서 기기를 제거합니다.
-    1. [AdGard 계정](https://adguardaccount.com/)에서 *AdGuard 광고 차단기*를 클릭합니다.
+On the device that you want to unbind, open the AdGuard app and click *Reset license* or *Log out*.
 
-        ![광고 차단기 탭 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
+#### Method 2
 
-    1. 연결을 해제하려는 기기를 클릭합니다.
+As an alternative, you can remove the device in your AdGuard account:
 
-        ![기기 선택 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+1. Log in to your [AdGuard account](https://adguardaccount.com/).
 
-    1. *제거*를 클릭합니다.
+1. Open *AdGuard Ad Blocker* tab.
 
-        ![삭제를 클릭 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+    ![광고 차단기 탭 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 
-필요한 수의 기기를 삭제한 후, 새 기기에서 AdGuard 계정에 로그인할 수 있습니다. 라이선스가 새 기기에 추가됩니다.
+1. 연결을 해제하려는 기기를 클릭합니다.
+
+    ![기기 선택 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+
+1. *제거*를 클릭합니다.
+
+    ![삭제를 클릭 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+
+After you have unbound the number of devices you need, you will be able log in on new devices. The license will become bound to them.
 
 ## 다른 AdGuard 계정으로 라이선스를 이전하는 방법{#transferaccount}
 
