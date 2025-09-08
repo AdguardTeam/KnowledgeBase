@@ -11,7 +11,7 @@ Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multi
 
 To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install its certificate into your device’s user storage. En versiones anteriores del sistema operativo Android, esto se hacía automáticamente, pero en Android 11 y versiones posteriores los usuarios deben instalarlo manualmente.
 
-![Certificado *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
+![Certificado *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/screenCA.gif)
 
 Sigue estos pasos para instalar el certificado AdGuard:
 
@@ -22,24 +22,24 @@ Sigue estos pasos para instalar el certificado AdGuard:
     - AdGuard’s HTTPS filtering is safe
     - AdGuard certificate
 
-    Consecutively, tap *Continue* → *Next* → *Save certificate*.
+1. Consecutively, tap *Continue* → *Next* → *Save certificate*.
 
-1. Toca *Guardar* en la parte inferior de la carpeta *Descargar* abierta.
+1. Tap *Save* at the bottom of the opened *Download* folder.
 
-1. Después de guardar, toca *Abrir Configuración*.
+1. After saving, copy the text from the *CA Certificate* field and tap *Open Settings*.
 
-1. Open *Settings* and type *CA Certificate* in the search bar. Tap the respective option.
+1. Open *Settings* and either paste or type *CA Certificate* in the search bar. Tap the respective option.
 
-1. Es posible que veas una advertencia. Si es así, toca *Instalar de todos modos* e ingresa tu PIN si es necesario.
+1. You might see a warning. If so, tap *Install anyway* and enter your PIN if necessary.
 
-1. Selecciona el archivo de certificado AdGuard. Su nombre debería verse así: *adguard_1342_020322.crt*.
+1. Select the AdGuard certificate file. Its name should look like *adguard_1342_020322.crt*.
 
 You’re all set! Once the certificate is installed successfully, you’ve enabled HTTPS filtering.
 
 If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
 
 1. Reinicia AdGuard.
-2. Intenta instalar el certificado correcto (AdGuard Personal CA) una vez más.
+1. Intenta instalar el certificado correcto (AdGuard Personal CA) una vez más.
 
 ## Security warnings
 

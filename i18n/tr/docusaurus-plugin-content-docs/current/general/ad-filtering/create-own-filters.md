@@ -570,6 +570,8 @@ In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries are 
 
 AdGuard for iOS and AdGuard for Safari support the `$domain` modifier but have some limitations. Daha fazla ayrıntı için [SafariConverterLib bölümüne](#safari-converter--basic--supported-with-limitations) bakın.
 
+Rules with `regexp` in the `$domain` modifier are not supported by AdGuard for Safari and AdGuard for iOS.
+
 :::
 
 :::info Uyumluluk

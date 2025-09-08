@@ -35,7 +35,7 @@ Um die Gerätebeschränkung aufzuweiten, können Sie Ihre [Lizenz erweitern](../
 
 ## So verwenden Sie die AdGuard-Lizenz
 
-Zuerst melden Sie sich bei Ihrer AdGuard-App mit jener E-Mail-Adresse an, die mit der Lizenz verknüpft ist. Wenn die Lizenz noch nicht an Ihre E-Mail-Adresse gebunden wurde, können Sie dies in Ihrem [AdGuard-Konto](https://adguardaccount.com/) tun. Öffnen Sie dazu den Tab *Lizenzen* und klicken Sie auf *Lizenz verknüpfen*.
+Zuerst melden Sie sich bei Ihrer AdGuard-App mit jener E-Mail-Adresse an, die mit der Lizenz verknüpft ist. Wenn die Lizenz noch nicht an Ihre E-Mail-Adresse gebunden wurde, können Sie dies in Ihrem [AdGuard-Konto](https://adguardaccount.com/) tun. Öffnen Sie dazu den Tab *Lizenzen* und klicken Sie auf *Lizenz verknüpfen*. Usually, licenses are activated immediately, but sometimes activation may take up to five minutes.
 
 Alternativ können Sie Ihren [Lizenzschlüssel](#license-key) in Ihrer AdGuard-App eingeben.
 

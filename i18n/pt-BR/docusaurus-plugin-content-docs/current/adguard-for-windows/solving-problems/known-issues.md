@@ -1,6 +1,6 @@
 ---
 title: Problemas conhecidos do AdGuard para Windows
-sidebar_position: 10
+sidebar_position: 11
 ---
 
 :::info
