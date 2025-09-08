@@ -117,7 +117,7 @@ V tomto článku uvádíme příklady nastavení některých nejoblíbenějšíc
 
 *Zde předpokládáme, že jste již nakonfigurovali server Shadowsocks a klienta ve svém zařízení.*
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 Před nastavením procesu byste měli odstranit aplikaci Shadowsocks z filtrování (**Správa aplikací** → **Shadowsocks** → **Směrovat provoz skrze AdGuard**), abyste se vyhnuli nekonečným smyčkám a pádům.
 

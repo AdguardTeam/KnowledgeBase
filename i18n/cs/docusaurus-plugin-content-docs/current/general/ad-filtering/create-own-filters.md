@@ -570,6 +570,8 @@ V [AdGuardu pro Chrome MV3][ext-mv3] nejsou podporovány domény s `regexp` a `a
 
 AdGuard pro iOS a AdGuard pro Safari podporují modifikátor `$domain`, ale má některá omezení. Pro více informací navštivte [sekci SafariConverterLib](#safari-converter--basic--supported-with-limitations).
 
+Pravidla s modifikátorem `regexp` v `$domain` nejsou podporována AdGuardem pro iOS a Safari.
+
 :::
 
 :::info Kompatibilita

@@ -300,7 +300,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 - **`^`** — uma marca de caractere separador. O caractere separador pode ser qualquer caractere, mas não uma letra, um dígito ou um dos seguintes: `_` `-` `.` `%`. Neste exemplo, os caracteres separadores estão destacados em negrito: `http:`**`//`**`example.com`**`/?`**`t=1`**`&`**`t2=t3`. The end of the address is also accepted as separator.
 - **`|`** — um ponteiro para o início ou o fim do endereço. O valor depende do posicionamento do caractere na máscara. Por exemplo, uma regra `swf|` corresponde a `http://example.com/annoyingflash.swf`, mas não a `http://example.com/swf/index.html`. `|http://exemplo.org` corresponde a `http://exemplo.org`, mas não a `http://dominio.com?url=http://exemplo.org`.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 `|`, `||`, `^` só podem ser usados com regras que tenham um padrão de URL. Por exemplo, `||example.com##.advert` está incorreto e será ignorado pelo bloqueador.
 
@@ -366,7 +366,7 @@ Regras com wildcard para TLD não são compatíveis com o Bloqueador de conteúd
 - [Modificadores do tipo Conteúdo](#content-type-modifiers)
 - [Modificadores de exceção](#exception-modifiers)
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Os recursos descritos nesta seção são destinados a usuários experientes. Eles estendem as capacidades das "Regras básicas", mas para usá-las, você precisa ter um entendimento básico de como seu navegador funciona.
 
@@ -401,7 +401,7 @@ Os seguintes modificadores são os mais simples e frequentemente usados. Basicam
 | [$third-party](#third-party-modifier)               |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                      ✅                      |
 | [$to](#to-modifier)                                 |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ❌                    |                   ❌                    |                      ❌                      |
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
@@ -570,6 +570,8 @@ In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries are 
 
 AdGuard for iOS and AdGuard for Safari support the `$domain` modifier but have some limitations. For more details, see the [SafariConverterLib section](#safari-converter--basic--supported-with-limitations).
 
+Rules with `regexp` in the `$domain` modifier are not supported by AdGuard for Safari and AdGuard for iOS.
+
 :::
 
 :::info Compatibility
@@ -715,7 +717,7 @@ Works the same as the [`$~third-party`](#third-party-modifier) modifier, but onl
 
 - domain.com$strict-first-party' — this rule applies only to `domain.com`. For example, a request from `domain.com` to `http://domain.com/icon.ico` is a first-party request. A request from `sub.domain.com` to `http://domain.com/icon.ico` is treated as a third-party one (as opposed to the `$~third-party` modifier).
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 You can use a shorter name (alias) instead of using the full modifier name: `$strict1p`.
 
@@ -735,7 +737,7 @@ Works the same as the [`$third-party`](#third-party-modifier) modifier but also 
 
 - `||domain.com^$strict-third-party` — this rule applies to all domains except `domain.com`. An example of a third-party request: `http://sub.domain.com/banner.jpg` (as opposed to the `$third-party` modifier).
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 You can use a shorter name (alias) instead of using the full modifier name: `$strict3p`.
 
@@ -751,7 +753,7 @@ Rules with the `$strict-third-party` modifier are supported by AdGuard for Windo
 
 A restriction on third-party and custom requests. A third-party request is a request from an external domain. For example, a request to `example.org` from `domain.com` is a third-party request.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 To be considered as such, a third-party request should meet one of the following conditions:
 
@@ -772,7 +774,7 @@ If there is a `$~third-party` modifier, the rule is only applied to the requests
 
 - `||domain.com$~third-party` — this rule is applied exclusively to `domain.com`. Example of a non third-party request: `http://domain.com/icon.ico`.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 You may use a shorter name (alias) instead of using the full modifier name: `$3p`.
 
@@ -835,7 +837,7 @@ There is a big difference in how AdGuard determines the content type on differen
 | [$webrtc 🚫](#webrtc-modifier "removed")                       |                      ❌                      |                ❌                |                 ❌                 |               ❌               |                     ❌                     |                     ❌                     |                      ❌                      |
 | [$object-subrequest 🚫](#object-subrequest-modifier "removed") |                      ❌                      |                ❌                |                 ❌                 |               ❌               |                     ❌                     |                     ❌                     |                      ❌                      |
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
@@ -861,7 +863,7 @@ If this modifier is used with an exclusion rule (`@@`), it completely disables b
 - `||example.com^$document,removeparam=test` removes `test` query parameter from HTML document request to `example.com`.
 - `||example.com^$document,replace=/test1/test2/` replaces `test1` with `test2` in HTML document request to `example.com`.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 You may use a shorter name (alias) instead of using the full modifier name: `$doc`.
 
@@ -919,7 +921,7 @@ The rule corresponds to script requests, e.g. JavaScript, VBScript.
 
 The rule corresponds to CSS files requests.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 You may use a shorter name (alias) instead of using the full modifier name: `$css`.
 
@@ -934,7 +936,7 @@ The rule corresponds to requests for built-in pages — HTML tags `frame` and `i
 - `||example.com^$subdocument` blocks built-in page requests (`frame` and `iframe`) to `example.com` and all its subdomains anywhere.
 - `||example.com^$subdocument,domain=domain.com` blocks built-in page requests (`frame` и `iframe`) to `example.com` (and its subdomains) from `domain.com` and all its subdomains.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 You may use a shorter name (alias) instead of using the full modifier name: `$frame`.
 
@@ -976,7 +978,7 @@ For AdGuard for Safari and AdGuard for iOS, it is supported on devices with macO
 
 The rule applies only to ajax requests (requests sent via the JavaScript object `XMLHttpRequest`).
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 You may use a shorter name (alias) instead of using the full modifier name: `$xhr`.
 
@@ -1035,7 +1037,7 @@ We recommend to get acquainted with [the Adblock Plus filter cheatsheet](https:/
 | [$generichide](#generichide-modifier)   |                 ✅                  |                ✅                |                    ✅                     |               ✅               |                      ✅                       |                      ✅                       |                      ✅                      |
 | [$specifichide](#specifichide-modifier) |                 ✅                  |                ✅                |                    ✅                     |               ✅               |                      ❌                       |                      ❌                       |                      ❌                      |
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
@@ -1074,7 +1076,7 @@ Disables any [cosmetic rules](#cosmetic-rules) on the pages matching the rule.
 
 - `@@||example.com^$elemhide` disables all cosmetic rules on pages at `example.com` and all subdomains.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 You may use a shorter name (alias) instead of using the full modifier name: `$ehide`.
 
@@ -1100,7 +1102,7 @@ You can also exclude a userscript by adding a `~` character before it. In this c
 $extension=~"userscript name"
 ```
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 When excluding a userscript, you must place `~` outside the quotes.
 
@@ -1188,7 +1190,7 @@ The list of the available modifier options:
 - `@@||domain.com^$script,stealth,domain=example.com` disables Tracking protection only for script requests to `domain.com` (and its subdomains) on `example.com` and all its subdomains.
 - `@@||example.com^$stealth=3p-cookie|dpi` disables blocking third-party cookies and DPI fooling measures for `example.com`.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Blocking cookies and removing tracking parameters is achieved by using rules with the [`$cookie`](#cookie-modifier), [`$urltransform`](#urltransform-modifier) and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules that contain only the `$stealth` modifier will not do these things. If you want to completely disable all Tracking protection features for a given domain, you must include all three modifiers: `@@||example.org^$stealth,removeparam,cookie`.
 
@@ -1284,7 +1286,7 @@ Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond 
 
 - `@@||example.com^$generichide` disables generic cosmetic rules on any pages at `example.com` and its subdomains.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 You may use a shorter name (alias) instead of using the full modifier name: `$ghide`.
 
@@ -1298,13 +1300,13 @@ Disables all specific element hiding and CSS rules, but not general ones. Has an
 
 - `@@||example.org^$specifichide` desativar `example.org##.banner`, mas não `##.banner`.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 You may use a shorter name (alias) instead of using the full modifier name: `$shide`.
 
 :::
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 All cosmetic rules — not just specific ones — can be disabled by [`$elemhide` modifier](#elemhide-modifier).
 
@@ -1346,7 +1348,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$empty 👎](#empty-modifier "deprecated")    |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |              ❌              |               ❌                |                      ❌                      |
 | [$mp4 👎](#mp4-modifier "deprecated")        |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |              ❌              |               ❌                |                      ❌                      |
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
@@ -1541,7 +1543,7 @@ Rules with `$csp` modifier are not supported by AdGuard Content Blocker, AdGuard
 
 `$hls` rules modify the response of a matching request. They are intended as a convenient way to remove segments from [HLS playlists (RFC 8216)](https://datatracker.ietf.org/doc/html/rfc8216).
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 The word "segment" in this document means either a "Media Segment" or a "playlist" as part of a "Master Playlist": `$hls` rules do not distinguish between a "Master Playlist" and a "Media Playlist".
 
@@ -1569,7 +1571,7 @@ Basic URL exceptions shall not disable rules with the `$hls` modifier. They can 
 
 :::
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 When multiple `$hls` rules match the same request, their effect is cumulative.
 
@@ -1724,7 +1726,7 @@ Basic URL exceptions shall not disable rules with the `$jsonprune` modifier. The
 
 `$jsonprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 When multiple `$jsonprune` rules match the same request, they are sorted in lexicographical order, the first rule is applied to the original response, and each of the remaining rules is applied to the result of applying the previous one.
 
@@ -1933,7 +1935,7 @@ Basic URL exceptions shall not disable rules with the `$xmlprune` modifier. They
 
 `$xmlprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 When multiple `$xmlprune` rules match the same request, they are applied in lexicographical order.
 
@@ -2216,13 +2218,13 @@ The list of available directives is available [here](https://developer.mozilla.o
 - `$domain=example.org|example.com,permissions=storage-access=()|camera=()` does the same — a `|` can be used to separate the features instead of an escaped comma.
 - `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$permission` rules on all the pages matching the rule pattern.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 `$permissions` rules only take effect for main frame and sub frame requests. This means they are applied when a page is loaded or when an iframe is loaded.
 
 :::
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 If there are multiple `$permissions` rules that match the same request, multiple `Permissions-Policy` headers will be added to the response for each rule with their `$permissions` value. So if you have two rules: `||example.org^$permissions=autoplay=()` and `||example.org^$permissions=geolocation=()\,camera=()` that match the same request, the response will contain two `Permissions-Policy` headers: `autoplay=()` and `geolocation=()\,camera=()`.
 
@@ -2366,7 +2368,7 @@ Use `@@` to negate `$removeheader`:
 
 `$removeheader` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers will not do that. For example, `@@||example.com^` will not disable `$removeheader=p` for requests to `example.com`, but `@@||example.com^$urlblock` will.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 In case of multiple `$removeheader` rules matching a single request, we will apply each of them one by one.
 
@@ -2518,7 +2520,7 @@ Rules with `$removeheader` modifier are supported by AdGuard for Windows, AdGuar
 
 #### **`$removeparam`** {#removeparam-modifier}
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 `$queryprune` is an alias of `$removeparam`. Since `$queryprune` is deprecated, avoid using it and use `$removeparam` instead.
 
@@ -2544,7 +2546,7 @@ Special characters should be URL-encoded in a rule to correctly match the URL te
 
 For example, to remove `?$param=true`, you should use the `$removeparam=%24param` rule.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Spaces and commas should also be URL-encoded, otherwise the rule won't match the URL. However, `.`, `-`, `_`, and `~` should be used as they are, since they are not marked as reserved characters in URL encoding.
 
@@ -2552,7 +2554,7 @@ Spaces and commas should also be URL-encoded, otherwise the rule won't match the
 
 Remember to escape special characters like `.` in the regular expressions. Use the `\` character to do this. For example, an escaped dot should look like this: `\.`.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Regexp-type rules apply to both the name and value of the parameter. To minimize errors, it is safer to start each regexp with `/^`, unless you are specifically targeting parameter values.
 
@@ -2571,7 +2573,7 @@ Use `~` to apply inversion:
 - `$removeparam=~param` — removes all query parameters with the name different from `param`.
 - `$removeparam=~/regexp/` — removes all query parameters that do not match the `regexp` regular expression.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 If `~` does not appear at the beginning of the rule, it is treated as a symbol in the text.
 
@@ -2993,7 +2995,7 @@ The base priority of any rule is 1. If the calculated priority is a floating-poi
 
 :::
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Modifier aliases (`1p`, `3p`, etc.) are not included in these categories, however, they are utilized within the engine to compute the rule priority.
 
@@ -3116,7 +3118,7 @@ Modifier [`$important`](#important-modifier) adds `10^6` to rule priority.
 
 [Other modifiers](#advanced-capabilities), which are supposed to perform additional post- or pre-processing of requests, do not add anything to the rule priority.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 The [`$replace`](#replace-modifier) modifier takes precedence over all blocking rules of categories 1–3, as well as exception rules from categories 3–5, **except** [`$content`](#content-modifier), because an exception with the `$content` modifier overrides all `$replace` rules.
 
@@ -3173,7 +3175,7 @@ However, basic rules may not be enough to block ads. Sometimes you need to hide 
 | [JavaScript](#javascript-rules)            |                 ✅                  |                ✅                |                 ✅                 |               ✅               |              ✅              |               ✅                |                      ❌                      |
 | [Scriptlets](#scriptlets)                  |                 ✅                  |                ✅                |                 ✅                 |               ✅               |              ✅              |               ✅                |                      ❌                      |
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 - ✅ — fully supported
 - ❌ — not supported
@@ -3212,7 +3214,7 @@ If you want the rule not to be applied to certain domains, start a domain name w
 
 You can use both approaches in a single rule. For example, `example.org,~subdomain.example.org##domain` will work for `example.org` and all subdomains, **except `subdomain.example.org`**.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Element hiding rules are not dependent on each other. If there is a rule `example.org##selector` in the filter and you add `~example.org##selector` both rules will be applied independently.
 
@@ -3365,7 +3367,7 @@ You can apply standard CSS selectors using the ExtendedCss library by using the 
 
 Learn more about [how to debug extended selectors](#selectors-debugging-mode).
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Some pseudo-classes do not require selector before it. Still adding the [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` makes an extended selector easier to read, even though it has no effect on the matching behavior. So selector `#block :has(> .inner)` works exactly like `#block *:has(> .inner)`, but the second one is more obvious.
 
@@ -3383,7 +3385,7 @@ Pseudo-class names are case-insensitive, e.g. `:HAS()` works as `:has()`. Still 
 
 Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3.org/TR/selectors-4/#relational). Unfortunately, [it is not yet supported](https://caniuse.com/css-has) by all popular browsers.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`][native-has] if they use the `##` rule marker and if it is possible, i.e., there are no other extended CSS selectors inside. If it is not supported by the product, ExtendedCss implementation will be used even for rules with the `##` marker.
 
@@ -3494,7 +3496,7 @@ Native implementation does not allow any usage of `:scope` inside the `:has()` a
 
 The `:contains()` pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Regexp flags are supported.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 The `:contains()` pseudo-class uses the `textContent` element property for matching, not the `innerHTML`.
 
@@ -3537,7 +3539,7 @@ div:contains(/as .*banner/)
 div:contains(/it .*banner/gi)
 ```
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Only the `div` with `id=match` is selected because the next element does not contain any text, and `banner` is a part of code, not a text.
 
@@ -3690,7 +3692,7 @@ The `:matches-property()` pseudo-class allows selecting an element by matching i
 
 For **regexp** patterns `"` and `\` must be escaped, e.g. `div:matches-property(prop=/[\\w]{4}/)`.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Regexp patterns are supported in `name` for any property in chain, e.g. `prop./^unit[\\d]{4}$/.type`.
 
@@ -3907,7 +3909,7 @@ div:contains(advertisement) { remove: true; }
 div[class]:has(> a > img) { remove: true; }
 ```
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Rules with the `remove` pseudo-property must use `#$?#` marker: `$` for CSS-style rule syntax, `?` for ExtendedCss syntax.
 
@@ -4304,7 +4306,7 @@ JavaScript rules are not supported by AdGuard Content Blocker.
 
 Scriptlet is a JavaScript function that provides extended capabilities for content blocking. These functions can be used in a declarative manner in AdGuard filtering rules.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 AdGuard supports a lot of different scriptlets. In order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
 
@@ -4401,7 +4403,7 @@ The full syntax of scriptlet exception rules is supported by AdGuard for Windows
 
 Trusted scriptlets are [scriptlets](#scriptlets) with extended functionality. It means the same syntax and restrictions. Trusted scriptlet names are prefixed with `trusted-`, e.g. `trusted-set-cookie`, to be easily distinguished from common scriptlets.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Trusted scriptlets are not compatible with other ad blockers except AdGuard.
 
@@ -4448,7 +4450,7 @@ In the modifiers values, the following characters must be escaped: `[`, `]`, `,`
 | [$path](#non-basic-path-modifier)     |                 ✅                  |                       ✅                       |                        ❌                         |                       ✅                       |              ✅              |               ✅                |                      ❌                      |
 | [$url](#non-basic-url-modifier)       |                 ✅                  | ✅ [*[2]](#non-basic-url-modifier-limitations) |  ✅ [*[2]](#non-basic-url-modifier-limitations)   | ✅ [*[2]](#non-basic-url-modifier-limitations) |              ❌              |               ❌                |                      ❌                      |
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
@@ -4583,7 +4585,7 @@ We provide preprocessor directives that can be used by filter maintainers to imp
 - [applying rules conditionally by ad blocker type](#conditions-directive)
 - [content blocker specifying for rules applying in Safari](#safari-affinity-directive)
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Any mistake in a preprocessor directive will lead to AdGuard failing the filter update in the same way as if the filter URL was unavailable.
 
@@ -4635,7 +4637,7 @@ There are two possible scenarios:
 
 1. If there is an `!#else` directive, the code between `!#if` and `!#else` will be compiled if the condition is true; otherwise, the code between `!#else` and `!#endif` will be compiled.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Whitespaces matter. `!#if` is a valid directive, while `!# if` is not.
 
@@ -4909,7 +4911,7 @@ Depending on which AdGuard product you are using, Filtering log can be located i
 - In **AdGuard for Android**, you can find it under *Statistics → Recent activity*. *Recent activity* can also be accessed from the *Assistant*
 - In **AdGuard Browser Extension**, it is accessible from the *Miscellaneous* settings tab or by right-clicking the extension icon. Only Chromium- and Firefox-based web browsers show applied **element hiding rules** (including CSS, ExtCSS) and **JS rules and scriptlets** in their Filtering logs
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 In **AdGuard for iOS** and **AdGuard for Safari**, Filtering log does not exist because of the way content blockers are implemented in Safari. AdGuard does not see the web requests and therefore cannot display them.
 
@@ -5019,7 +5021,7 @@ The following scriptlets also may be used for debug purposes:
 
 ### Compatibility shortcuts {#what-compatibility}
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details

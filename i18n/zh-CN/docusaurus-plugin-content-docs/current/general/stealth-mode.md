@@ -1,250 +1,254 @@
 ---
-title: Tracking protection (formerly Stealth Mode)
+title: 跟踪保护（原称隐身模式）
 sidebar_position: 4
 ---
 
-Many websites gather information about their visitors, including their IP address, installed browser and operating system, screen resolution, and even the page from which they were redirected. Some web pages use cookies to mark your browser and save your settings and preferences, or to “recognize” you upon your next visit. **Tracking protection** safeguards your personal information from such data- and statistics-gathering systems.
+众多网站收集其访问者的信息，例如 IP 地址，安装的浏览器及操作系统，屏幕分辨率，甚至是重新定向访问者的页面。 有些网页使用 Cookie 以标记用户的浏览器并保存设置及首选项，或在用户下次访问时进行身份识别。 **跟踪保护**可以保护个人信息免受此类数据和统计收集系统的侵害。
 
-You can adjust the tracking protection settings as needed. For example, you can prevent websites from receiving search engine requests that led you to them. You can automatically delete third-party and first-party cookies. You can also turn off browser geolocation sharing, which can be used to track your location. You can hide your true IP address or replace it with an arbitrary one.
+用户可以按需调整跟踪防护设置。 例如，您可以阻止网站接收引导您访问的搜索引擎查询记录， 可以自动删除第三方和第一方 Cookie， 还可以关闭可能被用于追踪位置的浏览器地理位置共享功能。 此外，用户还能隐藏真实 IP 地址或将其替换为随机 IP。
 
-Below, we will list and describe the main features that you can control in the **Tracking protection** settings. The features are organized into the following sections: **General**, **Tracking methods**, **Browser API**,  **Windows tracking**, and **Miscellaneous**.
+以下我们详述控制**跟踪保护**设置的功能。 功能分为四组，包括**常规**、**跟踪方式**、**浏览器 API** 和**其他**。
 
 :::note
 
-Some features are only available for certain products because of limitations from the operating system or browser.
+由于操作系统或浏览器的限制，部分产品的某些功能可能不可用。
 
 :::
 
 ## 常规 {#general}
 
-### Block trackers {#blocktrackers}
+### 拦截跟踪器 {#blocktrackers}
 
-This feature blocks trackers and web analytics using the AdGuard Tracking Protection filter.
+该功能通过 AdGuard 跟踪防护过滤器来拦截追踪器和网站分析工具。
 
-### Remove tracking parameters from URLs {#removetracking}
+### 从 URL 中删除跟踪参数 {#removetracking}
 
-If you enable this feature, AdGuard will use its AdGuard URL Tracking filter to remove tracking parameters like `utm_*` and `fb_ref` from page URLs.
+启用此功能后，AdGuard 将使用「AdGuard URL 跟踪」过滤器移除网页 URL 中的跟踪参数，例如 `utm_*` 和 `fb_ref`。
 
-### Hide search queries {#searchqueries}
+### 隐藏搜索查询 {#searchqueries}
 
-This feature hides your search query from websites that you visit via search engine results. For example, when you open a website through a search engine like Google or Yahoo, this feature hides the search query you used to find that website.
+该功能可以隐藏用户通过搜索引擎结果访问网站时的搜索查询内容。 例如，当您通过 Google 或 Yahoo 等搜索引擎打开某个网站时，此功能将隐藏您用于查找该网站的搜索关键词。
 
-### Ask websites not to track me {#donottrack}
+### 要求网站不跟踪 {#donottrack}
 
-Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit.
+向您访问的网站发送 [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) 和 [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) 信号.
 
-### Other privacy filters {#otherprivacyfilters}
+### 其他隐私过滤器 {#otherprivacyfilters}
 
-This feature displays other privacy filters enabled in **Filters**.
+此功能可以显示已在「**过滤器**」中启用的其他隐私保护过滤器。
 
 :::note
 
-Available in AdGuard for Android and AdGuard for Windows.
+适用于 AdGuard Android 版和 Windows 版。
 
 :::
 
-## Tracking methods {#tracking-methods}
+## 跟踪方式 {#tracking-methods}
 
-### Delete third-party cookies {#3p-cookie}
+### 删除第三方 Cookie {#3p-cookie}
 
-This feature prevents advertisers from tracking your behavior across multiple pages by limiting the lifetime of third-party cookies.
+该功能通过限制第三方 Cookie 的生命周期，防止广告商跨页面追踪您的浏览行为。
 
-Websites use cookies to store your information and preferences, such as the language you selected, your location, or the list of items in your shopping cart. When you return to a website, your browser sends the website your cookies belonging to the website, allowing it to “remember” your data.
+网站使用 Cookie 存储用户的信息和首选项，如所选语言，位置或购物车上的列表。 当您再次访问某个网站时，浏览器会向该网站发送属于该网站的 Cookie，使其能够“记住”您的数据。
 
-Third-party cookies are implemented by a website other than the one you are currently browsing. For example, cnn.com may have a Facebook “Like” widget on its homepage. This widget installs a cookie that Facebook can read later. Some advertisers use such cookies to track what other websites you visit that have their ads.
+第三方 Cookie 是由非当前浏览网站所设置的 Cookie。 例如，cnn.com 首页可能包含 Facebook 的「点赞」组件。 该组件会植入一个可被 Facebook 后续读取的 Cookie。 部分广告商利用此类 Cookie 追踪用户访问过的其他含其广告的网站。
 
-Set a time period (in minutes) after which all third-party cookies will be deleted. To block these cookies, set their lifetime to 0.
+您可以设置时间期限（以分钟为单位），到期后所有第三方 Cookie 将被自动删除。 如需彻底阻止此类 Cookie，请将其生命周期设置为 0。
 
 :::caution
 
-This setting deletes all third-party cookies, including the information of your logins through social networks or other third-party services. You may have to periodically re-log in to some websites and face other cookie-related issues. To block only tracking cookies, use [*AdGuard Tracking Protection filter*](/general/ad-filtering/filter-policy/#tracking-protection-filter).
+此设置会删除所有第三方 Cookie，包括用户通过社交网络或其他第三方服务登录的信息。 您可能需要定期重新登录一些网站并面临其他与 Cookie 相关的问题。 要仅阻止跟踪 Cookie，请使用「[*AdGuard 跟踪保护过滤器*](/general/ad-filtering/filter-policy/#tracking-protection-filter)」。
 
 :::
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, AdGuard for Mac, and AdGuard Browser Extension (MV2-based browsers).
+适用于 Android 版和 Windows 版 AdGuard、适用于 macOS 版 AdGuard 以及 AdGuard 浏览器扩展（基于 MV2 的浏览器）。
 
 :::
 
-### Delete first-party cookies (not recommended) {#1p-cookie}
+### 删除第一方 Cookie（不推荐） {#1p-cookie}
 
-This feature prevents websites from remembering your details, such as your login credentials and language preferences, by limiting the lifetime of first-party cookies.
+该功能通过限制第一方 Cookie 的生命周期，防止网站记住您的个人数据（包括登录凭据和语言偏好设置）。
 
-Set a time period (in minutes) after which all cookies will be deleted. To block these cookies, set their lifetime to 0.
+您可以设置时间期限（以分钟为单位），到期后所有 Cookie 将被自动删除。 如需彻底阻止此类 Cookie，请将其生命周期设置为 0。
 
 :::caution
 
-We do not recommend enabling this option as it may severely interfere with the work of certain websites. If you block these cookies, some websites may break or stop working.
+我们不推荐您开启此项，因为它可能会严重干扰某些网站的工作。 如果拦截这些 Cookie，某些网站可能会崩溃或停止运行。
 
 :::
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, AdGuard for Mac, and AdGuard Browser Extension (MV2-based browsers).
+适用于 Android 版和 Windows 版 AdGuard、适用于 macOS 版 AdGuard 以及 AdGuard 浏览器扩展（基于 MV2 的浏览器）。
 
 :::
 
-### Block ETag and If-None-Match headers {#3p-cache}
+### 拦截 ETag 和 If-None-Match 标头 {#3p-cache}
 
-This feature removes the ETag and If-None-Match headers from requests and responses to prevent tracking by them.
+该功能从请求和响应中删除 ETag 和 If-None-Match 标头以防止被它们跟踪。
 
-When a browser addresses a page, the server assigns an ETag to that page. This ETag is used by the browser to cache the page's contents. Upon subsequent requests, the browser sends the ETag to the corresponding server, thus letting the server learn the visitor’s identity. As long as the site's files are cached, the ETag is sent every time your browser addresses this site. If the site has embedded content from another server (such as an image or iframe), that server can track your activities without your knowledge.
+当浏览器寻址某个网页时，服务器会指派 ETag 给相应的网页。 此 ETag 是用于浏览器缓存网页内容。 在进行后续的请求时，浏览器会发送 ETag 给相应的服务器，从而让服务器知晓访问者的身份。 只要网站文件处于缓存状态，浏览器每次访问此网站时都会发送 ETag。 如此网站内嵌其它服务器的内容（如图像或 iframe），则服务器可在您不知情的情况下跟踪您的活动。
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+适用于 Android 版和 Windows 版 AdGuard，以及适用于 macOS 版 AdGuard。
 
 :::
 
-### Block third-party Authorization header {#3p-auth}
+### 拦截第三方 Authorization 标头 {#3p-auth}
 
-This feature disables cached authorization data that can be used for tracking. May interfere with the functionality of some browser extensions and websites.
+该功能会禁用可能被用于追踪的缓存授权数据。 注意：启用此功能可能会影响部分浏览器扩展和网站的正常使用。
 
-The “Authorization” header value is cached by the browser and sent alongside every request to that domain. This means it can be used for tracking purposes, just like cookies.
+浏览器会缓存「Authorization」标头值，并在每次向该域名发送请求时附带此信息。 这意味着它可能像 Cookie 一样被用于追踪目的。
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+适用于 Android 版和 Windows 版 AdGuard，以及适用于 macOS 版 AdGuard。
 
 :::
 
-## Browser API {#browser-api}
+## 浏览器 API {#browser-api}
 
 :::note
 
-Only the **Block WebRTC** feature is available for AdGuard Browser Extension. You can find it in the **Miscellaneous** section.
+AdGuard 浏览器扩展目前仅提供「**拦截 WebRTC**」功能。 您可以在「**其他**」中找到该选项。
 
 :::
 
-### Block WebRTC {#webrtc}
+### 拦截 WebRTC {#webrtc}
 
-This feature blocks WebRTC that can leak your real IP address even if you use a proxy or VPN.
+该功能可以拦截可能导致真实 IP 地址泄露的 WebRTC 通信，即使您使用代理或 VPN 也不例外。
 
-WebRTC (Web Real-Time Communication) is a technology that enables direct streaming of data between browsers and apps. However, it can let others know your true IP address, even when using a proxy or VPN.
+WebRTC（网页实时通信）是一项支持浏览器与应用程序间直接数据流传输的技术。 不过，该技术可能暴露用户的真实 IP 地址，即便在使用代理或 VPN 的情况下亦然。
 
 :::caution
 
-Enabling this option can disrupt the work of certain browser applications, such as messengers, streaming platforms, chats, or games.
+启用此选项可能会影响部分浏览器应用程序的正常运行，例如即时通讯软件、流媒体平台、在线聊天室或网页游戏。
 
 :::
 
-### Block Push API {#push}
+### 拦截 Push API {#push}
 
-This feature blocks push notifications from websites.
+此功能拦截来自网站的推送通知。
 
-The Push API enables servers to send messages to web applications regardless of the activity status of your browser. This means that you can see notifications from various websites even when your browser is minimized or closed. Enable this option to block the browser’s Push API completely.
+Push API 允许服务器向网络应用推送消息，无论您的浏览器是否处于活动状态。 这意味着即使浏览器处于最小化或关闭状态，您仍可能收到各类网站的通知。 启用此选项可以彻底屏蔽浏览器的 Push API 功能。
 
-### Block Location API {#location}
+### 拦截 Location API {#location}
 
-This feature prevents websites from detecting your location.
+该功能可以阻止网站检测用户的地理位置。
 
-Enabling this option prevents your browser from sending GPS data that could be used to determine your location, modify your search results, or otherwise influence your web experience.
+启用此选项将防止浏览器发送可能被用于确定个人的位置、修改搜索结果或以其他方式影响网络浏览体验的 GPS 数据。
 
-### Block Flash {#flash}
+### 拦截 Flash {#flash}
 
-This feature increases protection and speeds up website loading by blocking Flash Player support in browsers.
+该功能拦截浏览器中的 Flash Player 支持以增强保护并加快网站加载速度。
 
-The Flash Player plugin has become increasingly vulnerable to such online threats as viruses and hackers; it may also significantly increase website load times. Turning this setting on makes AdGuard block browsers' ability to detect components (such as plugins and ActiveXObject objects) that allow Flash to display content. This effectively means that browsers are unable to support Flash.
+Flash Player 插件已日益容易遭受病毒和黑客等网络威胁的攻击，同时可能显著增加网站加载时间。 启用此设置后，AdGuard 将阻止浏览器检测支持 Flash 内容显示的组件（例如插件和 ActiveXObject 对象）。 这实际上意味着浏览器将无法支持 Flash。
 
-### Block Java {#java}
+### 拦截 Java {#java}
 
-This feature disables Java plugins on websites and web services because the API has serious security issues. Does not disable JavaScript.
+该功能会禁用网站及网络服务中的 Java 插件，因为该 API 存在严重安全隐患。 此操作不会禁用 JavaScript。
 
-Some websites and web services still use the old technology to support Java plugins. The Java plugin API, which is the basis of Java plugins, has serious security flaws. For security purposes, you can disable such plugins. Nevertheless, even if you decide to use the “Block Java” option, JavaScript will still be enabled.
+有些网站和 Web 服务仍然使用旧技术支持 Java 插件。 Java 插件 API 是 Java 插件的基础，存在严重的安全漏洞。 为安全起见，用户可以禁用此类插件。 不过，即便您选择启用「拦截 Java」选项，JavaScript 功能仍将保持启用状态。
 
-## Windows tracking {#windowstracking}
+## Windows 跟踪 {#windowstracking}
 
 :::note
 
-These features are only available in AdGuard for Windows.
+这些功能仅在 Windows 版 AdGuard 中可用。
 
 :::
 
-### Disable Windows telemetry {#windowstelemetry}
+### 禁用 Windows 遥测 {#windowstelemetry}
 
-This feature disables sending technical data about your system and app usage.
+此功能将禁止发送有关您系统及应用使用情况的技术数据。
 
-### Turn off Advertising ID {#advertisingid}
+### 禁用 Windows Recall {#windowsrecall}
 
-This feature disables Advertising ID to block tracking of your app usage.
+此功能阻止 Windows 对桌面活动进行截图分析。
 
-### Disable automatic reporting by Microsoft Defender {#windowsautoreport}
+### 关闭广告 ID {#advertisingid}
 
-This feature blocks automatic reporting and sampling of suspected malware.
+此功能通过禁用广告 ID 来阻止对您应用使用情况的追踪。
 
-### Disable WAP Push message routing service {#wappushrouting}
+### 禁用 Microsoft Defender 自动报告 {#windowsautoreport}
 
-This feature disables data collection about Windows component problems.
+此功能将拦截可疑软件的自动报告及采样行为。
+
+### 禁用 WAP 推送消息路由服务 {#wappushrouting}
+
+此功能将停止收集有关 Windows 组件问题的数据。
 
 ## 其它 {#miscellaneous}
 
-### Hide Referer from third parties {#referer}
+### 隐藏第三方 Referer {#referer}
 
-This feature prevents third parties from knowing what websites you visit.
+此功能防止第三方知道用户访问的网站。
 
-Referer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referer saves the URL of the initial page. The server that hosts the destination web page often has software that parses Referer and extracts various pieces of information from it. Enabling the *Hide Referer from third parties* setting hides the current website from third-party websites by altering the HTTP header.
+Referrer 是浏览器发送请求到服务器时所用的 HTTP 头部。 其包含请求源的 URL。 当您在各网页间导航时，Referer 会保存初始页的 URL。 托管目标网页的服务器通常具备解析 Referer 的软件，并从中提取各种信息。 启用「*隐藏第三方 Referer*」设置后，将通过修改 HTTP 标头的方式，向第三方网站隐藏您当前访问的网站信息。
 
-You can also set an arbitrary value for Referer by entering it into the *Custom Referer* field. To use default Referer, leave the field blank.
+您也可以在「*自定义 Referer*」字段输入任意值以设置 Referer。 要使用默认 Referer，置空此字段即可。
 
-Note that to be able to filter traffic, AdGuard applications 'intercept' browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely. Same goes for the *Hide Referer from third parties* option: AdGuard intercepts HTTP(S) requests, in particular to remove or change the Referer header if this option is enabled. However, it happens only after these requests “leave” the browser. This means that if you monitor Referer inside the browser (for example, with the help of Chrome's Developer Tools), you will see the original Referer because the request hasn't reached AdGuard yet. You can use software like [Fiddler](https://www.telerik.com/fiddler) to make sure that Referer gets altered correctly.
+需要注意的是，为了实现流量过滤功能，AdGuard 应用程序会拦截浏览器与服务器之间的通信请求。 向广告、追踪及钓鱼服务器的请求可能会在发送至目标服务器前被修改，或遭到完全拦截。 「*隐藏第三方 Referer*」也是如此：AdGuard 拦截 HTTP(S) 请求，在启用该选项后软件删除或更改 Referer 标头。 不过，只有在这些请求“离开”浏览器后软件才开始拦截。 这意味着如果您在浏览器内部监控 Referer（例如使用 Chrome 开发者工具），您看到的仍是原始 Referer 值，因为该请求尚未经过 AdGuard 处理。 您可以使用 [Fiddler](https://www.telerik.com/fiddler) 等软件来确保 Referer 被正确更改。
 
-Due to the nature of all web browser extensions, AdGuard Browser Extension instead works 'inside' the web browser. It will alter the Referer right then and there, so Developer Tools will show the desired Referer for your requests.
+由于所有浏览器扩展的性质，AdGuard 浏览器扩展在浏览器内部运行。 AdGuard 会在请求发出的瞬间立即修改 Referer 值，因此开发者工具将显示您期望的 Referer 请求头信息。
 
-### Hide User-Agent {#useragent}
+### 隐藏 User-Agent {#useragent}
 
-This feature removes identifying information from the User-Agent header.
+该功能移除 User-Agent 头部的识别信息。
 
-When you visit a website, your browser sends its information to the server. It looks like a text line that is part of an HTTP request that begins with “User-Agent:”. It usually includes the name and version of the browser, the operating system, and language settings. We cut User-Agent from identifying information so that advertisers cannot obtain it.
+当您访问网站时，浏览器会发送其信息给服务器。 其如一行文本，是以「User-Agent:」为开头作为 HTTP 请求的一部分。 其通常包括浏览器的名称和版本，以及操作系统和语言设置。 我们会从识别信息中移除 User-Agent 字段，以防止广告商获取该数据。
 
-You can also set an arbitrary value for User-Agent by entering it into the Custom User-Agent field. To use default User-Agent, leave the field blank.
+用户还可以通过在「自定义 User-Agent」字段中输入任意值来设定特定的 User-Agent 信息。 要使用默认 User-Agent，置空此字段即可。
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+适用于 Android 版和 Windows 版 AdGuard，以及适用于 macOS 版 AdGuard。
 
 :::
 
-### Mask IP address {#ip}
+### 隐藏 IP 地址 {#ip}
 
-This feature tricks websites into believing you are a proxy with the IP address you specify.
+该功能会诱使网站误认为您是通过指定 IP 地址访问的代理服务器。
 
-Tracking protection cannot hide your IP address. However, we can conceal it so that websites you visit will think you are a proxy. Sometimes this helps, and websites ignore your true IP address.
+跟踪保护无法隐藏您的 IP 地址。 不过，该设置可以帮用户伪装地址，让您访问的网站认为您是一个代理。 有时这会有帮助，网站将忽略用户的真实 IP 地址。
 
-You can set an arbitrary IP address, which you would like others to perceive as yours, by simply entering it into the corresponding field. To use the default IP address, leave the field blank.
+用户只需在相应字段中输入任意 IP 地址，即可让他人将该地址识别为您的真实 IP。 要使用默认 IP 地址，置空此字段即可。
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+适用于 Android 版和 Windows 版 AdGuard，以及适用于 macOS 版 AdGuard。
 
 :::
 
-### Remove X-Client-Data header {#xclientdata}
+### 删除 X-Client-Data 标头 {#xclientdata}
 
-This feature blocks Google Chrome from sending its version and modifications information to Google domains (including Double Click and Google Analytics).
+该功能会阻止 Google Chrome 浏览器向 Google 域名（包括 DoubleClick 和 Google Analytics）发送其版本及修改信息。
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, AdGuard for Mac, and AdGuard Browser Extension (Chromium-based browsers).
+适用于 Android 版和 Windows 版 AdGuard、适用于 macOS 版 AdGuard 以及 AdGuard 浏览器扩展（基于 Chromium 的浏览器）。
 
 :::
 
-### Protect against DPI {#dpi}
+### 保护免受 DPI 影响 {#dpi}
 
-This feature modifies your outgoing traffic so that your ISP’s Deep Packet Inspection systems can’t detect the websites you visit. Can’t guarantee complete protection against all DPI systems.
+该功能会对您的出站流量进行修改，使互联网服务提供商（ISP）的深度数据包检测（DPI）系统无法识别您访问的网站。 但请注意，我们无法保证对所有 DPI 系统都能提供完全防护。
 
-The Deep Packet Inspection is a system of deep analysis and filtering of traffic by packet content, as well as the accumulation of statistical data. Using this technology, ISPs have the ability to control the passing traffic and limit access to content for their clients.
+深度数据包检测（英语：Deep Packet Inspection，缩写成 DPI）是一种按数据包内容对流量进行深度分析和过滤以及统计数据积累的系统。 利用这项技术，互联网服务提供商能够控制流量传输及限制客户访问内容。
 
-AdGuard can modify outgoing packet data so that the client does not fall under the DPI blocking criteria. This means that by enabling this option, users can get access to the content they want. Not all DPI systems can be bypassed at this time, but we are constantly working to improve this.
+AdGuard 可以修改传出数据包，使客户端不受 DPI 拦截标准限制。 这意味着通过启用此选项，用户可以访问他们想要的内容。 目前还不能绕过所有 DPI 系统，但我们不断努力改进。
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+适用于 Android 版和 Windows 版 AdGuard，以及适用于 macOS 版 AdGuard。
 
 :::
 
 :::caution
 
-If this feature is enabled in AdGuard for Windows, it may interfere with ESET antivirus. Anti-DPI will prevent ESET from filtering traffic, leaving blacklisted and malicious websites unblocked.
+如果在 Windows 版 AdGuard 中启用此功能，可能会干扰 ESET 防病毒软件。 Anti-DPI 将阻止 ESET 过滤流量，从而使黑名单和恶意网站不受阻止。
 
 :::

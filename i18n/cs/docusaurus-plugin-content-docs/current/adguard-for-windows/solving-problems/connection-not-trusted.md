@@ -35,7 +35,7 @@ Pokud to nepomůže, postupujte podle pokynů pro ruční přidání AdGuard cer
 
 1. Přejděte na [http://local.adguard.org/cert](http://local.adguard.org/cert) a klikněte na tlačítko *Stáhnout*. Prohlížeč by měl začít stahovat soubor **cert.cer**.
 
-    :::note
+    Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
     Stránku pro stažení můžete otevřít také kliknutím na odkaz prostřednictvím aplikace AdGuard v *Nastavení → Síť → HTTPS filtrování*.
 

@@ -37,7 +37,7 @@ Windows için AdGuard iki işlem çalıştırır: `Adguard.exe` ve `AdguardSvc.e
 
 Döküm dosyaları büyük olabileceğinden, lütfen bunları desteğe göndermeden önce bir arşive sıkıştırın. Ayrıca, sorunu daha etkili bir şekilde teşhis etmemize yardımcı olması için AdGuard günlüklerini de ekleyin. [Günlükleri toplamak için talimatlar](../adguard-logs).
 
-## wfpdiag.cab dosyası toplama
+## Collecting `wfpdiag.cab` file
 
 Our support team may request a wfpdiag.cab file, along with a minidump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
 

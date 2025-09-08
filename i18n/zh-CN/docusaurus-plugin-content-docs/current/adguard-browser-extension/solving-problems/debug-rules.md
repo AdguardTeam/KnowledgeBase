@@ -19,61 +19,61 @@ sidebar_position: 2
 
 1. 克隆存储库：
 
-    ```bash
-    git clone git@github.com:AdguardTeam/AdguardBrowserExtension.git
-    ```
+   ```bash
+   git clone git@github.com:AdguardTeam/AdguardBrowserExtension.git
+   ```
 
 2. 转到目录：
 
-    ```bash
-    cd AdguardBrowserExtension
-    ```
+   ```bash
+   cd AdguardBrowserExtension
+   ```
 
 3. 切换到 `v5.0` 分支：
 
-    ```bash
-    git checkout v5.0
-    ```
+   ```bash
+   git checkout v5.0
+   ```
 
 4. 安装依赖项：
 
-    ```bash
-    yarn install
-    ```
+   ```bash
+   yarn install
+   ```
 
 ## 建构扩展的方式
 
 1. 切换到 `v5.0` 分支：
 
-    ```bash
-    git checkout v5.0
-    ```
+   ```bash
+   git checkout v5.0
+   ```
 
 2. 在终端中运行以下命令：
 
-    ```bash
-    yarn dev chrome-mv3
-    ```
+   ```bash
+   yarn dev chrome-mv3
+   ```
 
 3. 构建的扩展将放置在以下目录中：
 
-    ```bash
-    ./build/dev/chrome-mv3
-    ```
+   ```bash
+   ./build/dev/chrome-mv3
+   ```
 
 ## 在浏览器中安装解压包
 
 1. 开启「开发者模式」：
 
-    ![开发者模式](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
+   ![开发者模式](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
 
 2. 单击「加载已解压的扩展程序」：
 
-    ![加载已解压的扩展程序](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+   ![加载已解压的扩展程序](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
 3. 选择扩展目录并点击「选择」：
 
-    ![选择](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
+   ![选择](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
 
 完成！
 
@@ -83,16 +83,16 @@ sidebar_position: 2
 
 2. 将规则从 TXT 格式转换为声明形式：
 
-    ```bash
-    yarn convert-declarative
-    ```
+   ```bash
+   yarn convert-declarative
+   ```
 
 3. 再次构建扩展：
 
-    ```bash
-    yarn dev chrome-mv3
-    ```
+   ```bash
+   yarn dev chrome-mv3
+   ```
 
 4. 在浏览器中重新加载扩展：
 
-    ![加载扩展](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
+   ![加载扩展](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
