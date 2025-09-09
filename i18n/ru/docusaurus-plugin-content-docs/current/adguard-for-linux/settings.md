@@ -77,11 +77,11 @@ adguard-cli update -v
 
 - `show`: показать текущую конфигурацию в `proxy.yaml`
 
-    ![Текущая настройка \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![Текущая настройка \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
 - `set`: настроить параметр в `proxy.yaml`
-    - `listen_ports.http_proxy`: порт прослушивания HTTP
-    - `proxy_mode`: режим прокси-сервера (`manual` или `auto`)
+  - `listen_ports.http_proxy`: порт прослушивания HTTP
+  - `proxy_mode`: режим прокси-сервера (`manual` или `auto`)
 
 - `get`: получить текущий статус указанных выше опций
 
@@ -91,15 +91,15 @@ adguard-cli update -v
 
 - `list`: список установленных фильтров
 
-    - `--all`: просмотреть все фильтры
+  - `--all`: просмотреть все фильтры
 
-    ![Список фильтров \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
+  ![Список фильтров \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
 - `install`: установить фильтр. Введите URL-адрес фильтра, который хотите установить
 
 - `enable`: включить фильтр. Введите имя или ID фильтра
 
-    ![Включить фильтры \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+  ![Включить фильтры \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
 - `disable`: отключить фильтр. Введите имя или ID фильтра
 
@@ -112,8 +112,8 @@ adguard-cli update -v
 
 1. Выполните команду `adguard-cli config set listen_address <address>`, где `<address>` — адрес для прослушивания.
 2. Отредактируйте файл конфигурации напрямую:
-    - Чтобы определить местоположение файла конфигурации, выполните команду `adguard-cli config show | grep "Config location"`.
-    - Найдите ключ `listen_address` и установите его значение соответствующим образом. Чтобы прослушивать все доступные сетевые интерфейсы, установите значение `0.0.0.0` или `::` для адреса прослушивания.
+   - Чтобы определить местоположение файла конфигурации, выполните команду `adguard-cli config show | grep "Config location"`.
+   - Найдите ключ `listen_address` и установите его значение соответствующим образом. Чтобы прослушивать все доступные сетевые интерфейсы, установите значение `0.0.0.0` или `::` для адреса прослушивания.
 
 Если в качестве адреса прослушивания задано значение, отличное от `127.0.0.1`, — требуется аутентификация прокси-клиента. AdGuard CLI не запустится, если не настроена аутентификация прокси:
 

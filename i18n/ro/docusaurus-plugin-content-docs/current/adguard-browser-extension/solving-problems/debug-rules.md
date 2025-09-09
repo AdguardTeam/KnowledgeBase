@@ -19,61 +19,61 @@ Aceste instrucțiuni sunt, de asemenea, destinate cazurilor problematice în car
 
 1. Clonați repozitoriul:
 
-    ```bash
-    git clone git@github.com:AdguardTeam/AdguardBrowserExtension.git
-    ```
+   ```bash
+   git clone git@github.com:AdguardTeam/AdguardBrowserExtension.git
+   ```
 
 2. Navigați la director:
 
-    ```bash
-    cd AdguardBrowserExtension
-    ```
+   ```bash
+   cd AdguardBrowserExtension
+   ```
 
 3. Comutați pe ramura `v5.0`:
 
-    ```bash
-    git checkout v5.0
-    ```
+   ```bash
+   git checkout v5.0
+   ```
 
 4. Instalați dependențele:
 
-    ```bash
-    yarn install
-    ```
+   ```bash
+   yarn install
+   ```
 
 ## Cum să construiți extensia
 
 1. Comutați pe ramura `v5.0`:
 
-    ```bash
-    git checkout v5.0
-    ```
+   ```bash
+   git checkout v5.0
+   ```
 
 2. Rulați următoarea comandă în terminal:
 
-    ```bash
-    yarn dev chrome-mv3
-    ```
+   ```bash
+   yarn dev chrome-mv3
+   ```
 
 3. Extensia construită va fi localizată în directorul:
 
-    ```bash
-    ./build/dev/chrome-mv3
-    ```
+   ```bash
+   ./build/dev/chrome-mv3
+   ```
 
 ## Cum să instalați nepachetat în browser
 
 1. Activați modul pentru dezvoltatori:
 
-    ![Mod pentru dezvoltatori](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
+   ![Mod pentru dezvoltatori](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
 
 2. Faceți clic pe _Încărcați nepachetat_:
 
-    ![Load unpacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+   ![Load unpacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
 3. Selectați directorul extensiei și faceți clic pe `Selectați`:
 
-    ![Selectați](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
+   ![Selectați](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
 
 Asta e tot!
 
@@ -83,16 +83,16 @@ Asta e tot!
 
 2. Convertiți regulile din txt în formă declarativă:
 
-    ```bash
-    yarn convert-declarative
-    ```
+   ```bash
+   yarn convert-declarative
+   ```
 
 3. Construiți din nou extensia:
 
-    ```bash
-    yarn dev chrome-mv3
-    ```
+   ```bash
+   yarn dev chrome-mv3
+   ```
 
 4. Reîncărcați extensia în browser:
 
-    ![Reîncărcați extensia](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
+   ![Reîncărcați extensia](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)

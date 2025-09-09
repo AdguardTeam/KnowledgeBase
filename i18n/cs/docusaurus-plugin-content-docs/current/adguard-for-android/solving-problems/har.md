@@ -33,7 +33,7 @@ Někdy musíme analyzovat, abychom zablokovali konkrétní reklamy, které je z 
 
 **Vygenerovaný soubor s protokoly odešlete službě podpory AdGuard.**
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uvedete číslo HelpDesk nebo číslo problému GitHub.
 

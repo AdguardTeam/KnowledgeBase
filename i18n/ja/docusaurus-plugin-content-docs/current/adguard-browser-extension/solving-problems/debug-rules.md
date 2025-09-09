@@ -19,61 +19,61 @@ sidebar_position: 2
 
 1. リポジトリをクローンします:
 
-    ```bash
-    git clone git@github.com:AdguardTeam/AdguardBrowserExtension.git
-    ```
+   ```bash
+   git clone git@github.com:AdguardTeam/AdguardBrowserExtension.git
+   ```
 
 2. ディレクトリに移動します:
 
-    ```bash
-    cd AdguardBrowserExtension
-    ```
+   ```bash
+   cd AdguardBrowserExtension
+   ```
 
 3. `v5.0` ブランチに切り替えます:
 
-    ```bash
-    git checkout v5.0
-    ```
+   ```bash
+   git checkout v5.0
+   ```
 
 4. 依存関係をインストールします:
 
-    ```bash
-    yarn install
-    ```
+   ```bash
+   yarn install
+   ```
 
 ## 拡張機能のビルド方法
 
 1. `v5.0` ブランチに切り替えます:
 
-    ```bash
-    git checkout v5.0
-    ```
+   ```bash
+   git checkout v5.0
+   ```
 
 2. ターミナルで次のコマンドを実行します:
 
-    ```bash
-    yarn dev chrome-mv3
-    ```
+   ```bash
+   yarn dev chrome-mv3
+   ```
 
 3. ビルドされた拡張機能は次のディレクトリに配置されます:
 
-    ```bash
-    ./build/dev/chrome-mv3
-    ```
+   ```bash
+   ./build/dev/chrome-mv3
+   ```
 
 ## ブラウザに解凍版をインストールする方法
 
 1. 開発者モードをオンにします:
 
-    ![Developer mode](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
+   ![Developer mode](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
 
 2. 「_解凍して読み込む_」をクリックします:
 
-    ![Load unpacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+   ![Load unpacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
 3. 拡張機能ディレクトリを選択し、「選択」をクリックします:
 
-    ![Select](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
+   ![Select](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
 
 これで完了です。
 
@@ -83,16 +83,16 @@ sidebar_position: 2
 
 2. ルールを txt から宣言形式に変換します:
 
-    ```bash
-    yarn convert-declarative
-    ```
+   ```bash
+   yarn convert-declarative
+   ```
 
 3. 拡張機能を再度ビルドします:
 
-    ```bash
-    yarn dev chrome-mv3
-    ```
+   ```bash
+   yarn dev chrome-mv3
+   ```
 
 4. ブラウザで拡張機能を再読み込みします:
 
-    ![Reload extension](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
+   ![Reload extension](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)

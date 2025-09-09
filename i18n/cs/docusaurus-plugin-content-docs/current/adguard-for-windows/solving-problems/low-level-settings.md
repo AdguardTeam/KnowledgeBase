@@ -137,7 +137,7 @@ Pravidelné odesílání paketů TCP přes neaktivní připojení, aby se zajist
 
 Zde můžete zadat dobu nečinnosti v sekundách před odesláním udržovací sondy. Pokud je zadána 0, použije se hodnota vybraná systémem.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 Toto nastavení funguje pouze v případě, že je povolena možnost *Povolit udržování TCP*.
 
@@ -147,7 +147,7 @@ Toto nastavení funguje pouze v případě, že je povolena možnost *Povolit ud
 
 Zde můžete zadat dobu v sekundách před odesláním další udržovací sondy neodpovídajícímu partnerovi. Pokud je zadána 0, použije se hodnota vybraná systémem.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 Toto nastavení funguje pouze v případě, že je povolena možnost *Povolit udržování TCP*.
 

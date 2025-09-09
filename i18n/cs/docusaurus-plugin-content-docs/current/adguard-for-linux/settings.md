@@ -77,11 +77,11 @@ Pro konfiguraci AdGuardu pro Linux použijte příkaz `config`. Dílčí příka
 
 - `show`: Zobrazení aktuální konfigurace v souboru `proxy.yaml`
 
-    ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
 - `set`: Konfigurace volby v souboru `proxy.yaml`
-    - `listen_ports.http_proxy`: Naslouchací port HTTP
-    - `proxy_mode`: Režim proxy (`manuální` nebo `automatický`)
+  - `listen_ports.http_proxy`: Naslouchací port HTTP
+  - `proxy_mode`: Režim proxy (`manuální` nebo `automatický`)
 
 - `get`: Zjištění aktuálního stavu výše uvedených možností
 
@@ -91,15 +91,15 @@ Pro konfiguraci AdGuardu pro Linux použijte příkaz `filters`. Dílčí přík
 
 - `list`: Seznam nainstalovaných filtrů
 
-    - `--all`: Zobrazení všech filtrů
+  - `--all`: Zobrazení všech filtrů
 
-    ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
+  ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
 - `install`: Instalace filtru. Zadejte adresu URL filtru, který chcete nainstalovat
 
 - `enable`: Povolení filtru. Zadejte název nebo ID filtru
 
-    ![Enable filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+  ![Enable filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
 - `disable`: Zakázání filtrování. Zadejte název nebo ID filtru
 
@@ -112,8 +112,8 @@ Existují dva způsoby, jak zajistit, aby proxy naslouchal na jiném rozhraní:
 
 1. Spusťte `adguard-cli config set listen_address <address>`, kde `<address>` je adresa, na které se má naslouchat.
 2. Upravte konfigurační soubor přímo:
-    - Chcete-li zjistit umístění konfiguračního souboru, spusťte `adguard-cli config show | grep "Config location"`.
-    - Vyhledejte klíč `listen_address` a nastavte jeho hodnotu odpovídajícím způsobem. Chcete-li naslouchat na všech dostupných síťových rozhraních, nastavte adresu pro naslouchání na `0.0.0.0` nebo `::`.
+   - Chcete-li zjistit umístění konfiguračního souboru, spusťte `adguard-cli config show | grep "Config location"`.
+   - Vyhledejte klíč `listen_address` a nastavte jeho hodnotu odpovídajícím způsobem. Chcete-li naslouchat na všech dostupných síťových rozhraních, nastavte adresu pro naslouchání na `0.0.0.0` nebo `::`.
 
 Pokud je adresa pro naslouchání nastavena na cokoli jiného než `127.0.0.1`, je požadováno ověření proxy klienta. AdGuard CLI se nespustí, pokud není nakonfigurováno ověřování pomocí proxy:
 

@@ -31,7 +31,7 @@ Você tem três maneiras de resolver o problema:
 
 ### Opção 1: Conceder permissões ao AdGuard usando o ADB
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Esta abordagem está disponível a partir de **AdGuard v3.5 nightly 6**. Se estiver usando uma versão mais antiga, você pode obter a atualização mais recente [aqui](https://adguard.com/adguard-android/overview.html).
 
@@ -44,7 +44,7 @@ Esta abordagem está disponível a partir de **AdGuard v3.5 nightly 6**. Se esti
     - Toque na linha **Número de build** 7 vezes. Depois disso, você receberá uma notificação de que **Você agora é um desenvolvedor** (Se necessário, insira um código de desbloqueio para o dispositivo);
     - Abra **Configurações do sistema** → **Opções do desenvolvedor** → Role para baixo e ative **Depuração USB** → Confirme se a depuração está ativada na janela **Permitir depuração USB** depois de ler o aviso com atenção.
 
-    :::note
+    Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
     Se você tiver alguma dificuldade ou dúvida adicional, instruções completas podem ser encontradas [aqui](https://developer.android.com/studio/debug/dev-options).
 
@@ -66,7 +66,7 @@ Esta abordagem está disponível a partir de **AdGuard v3.5 nightly 6**. Se esti
 
 Para saber como gerenciar contas de usuário em um dispositivo Android, clique [aqui](https://support.google.com/a/answer/6223444?hl=en).
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Em alguns casos, contas de usuários restritas são criadas implicitamente e não podem ser removidas. Por exemplo, quando você usa os recursos Dual Messenger ou Dual App em dispositivos **Samsung** ou **LG**. Você pode ler abaixo como corrigir o problema nesses casos.
 

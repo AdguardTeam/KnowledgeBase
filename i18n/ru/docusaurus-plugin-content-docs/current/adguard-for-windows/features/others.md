@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
+В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
@@ -13,13 +13,13 @@ sidebar_position: 5
 
 ### Поддержка
 
-![Support \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/support.png)
+![Поддержка \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/support.png)
 
-By clicking the _Support_ tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
+Нажав на вкладку _Поддержка_, вы откроете диалоговое окно, в котором можете сообщить об ошибке, отправить запрос на добавление функции или просто поделиться своим мнением о продукте.
 
 ### Лицензия
 
-![License \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/license.png)
+![Лицензия \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/license.png)
 
 Эта вкладка содержит информацию о лицензии. Здесь вы можете:
 
@@ -28,13 +28,13 @@ By clicking the _Support_ tab you will open a dialog box through which you can r
 
 ### О компании
 
-![About \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/about.png)
+![О программе \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/about.png)
 
-In addition to information about the current version of the program, this tab provides some useful links to License agreement, Privacy policy, Acknowledgements, Discussions, and Version history pages.
+В дополнение к информации о текущей версии программы, эта вкладка содержит несколько полезных ссылок на страницы Лицензионного соглашения, Политики конфиденциальности, Благодарностей, Обсуждений и Истории версий.
 
 ### Проверить обновления
 
-![Check for updates \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/updates.png)
+![Проверка обновлений \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/updates.png)
 
 Чтобы проверить наличие обновлений фильтров и пользовательских скриптов, нажмите на значок вращающихся стрелок в правом верхнем углу главного экрана приложения.
 
