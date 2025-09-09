@@ -71,7 +71,6 @@ If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addi
 - Firefox-based browsers behave the same by default, but you can enable the option `network.http.http3.disable_when_third_party_roots_found` in `about:config` to allow user certificates for HTTP/3.
 - Safari supports HTTP/3 filtering without additional configuration.
 
-
 ### Use redirect driver mode
 
 If this option is enabled, AdGuard intercepts all the traffic and redirects it to the local proxy server for further filtering.
