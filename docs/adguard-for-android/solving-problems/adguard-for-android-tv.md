@@ -75,7 +75,7 @@ Done, AdGuard for Android TV is installed.
 
          `Settings` → `Device settings` → `For developers` → Go to the `Debugging` section → Enable `USB debugging` and allow it to be enabled
 
-1. Launch **atvTools**
+1. Launch **atvTools** on your smartphone
 
 1. Find the desired **Android TV** device in the list and click it
 
