@@ -77,11 +77,11 @@ adguard-cli update -v
 
 - `show`：显示 `proxy.yaml` 中的当前配置
 
-    ![当前设置 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![当前设置 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
 - `set`：在 `proxy.yaml` 中配置选项
-    - `listen_ports.http_proxy`：HTTP 协议监听端口
-    - `proxy_mode`：代理模式（`manual` 或 `auto`)
+  - `listen_ports.http_proxy`：HTTP 协议监听端口
+  - `proxy_mode`：代理模式（`manual` 或 `auto`)
 
 - `get`：获取上述选项的当前状态
 
@@ -91,15 +91,15 @@ adguard-cli update -v
 
 - `list`：列出已安装的过滤器
 
-    - `--all`：查看所有过滤器
+  - `--all`：查看所有过滤器
 
-    ![过滤列表 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
+  ![过滤列表 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
 - `install`：安装过滤器。 请输入您要安装的过滤器 URL
 
 - `enable`：启用过滤器。 输入过滤器的名称或 ID
 
-    ![启用过滤器 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+  ![启用过滤器 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
 - `disable`：禁用过滤器。 输入过滤器的名称或 ID
 
@@ -112,8 +112,8 @@ adguard-cli update -v
 
 1. 运行 `adguard-cli config set listen_address <address>`，其中`<address>` 是要监听的地址。
 2. 编辑配置文件：
-    - 要确定配置文件的位置，请运行 `adguard-cli config show | grep "Config location"`。
-    - 查找 `listen_address` 键并相应设置其值。 要在所有可用网络接口上监听，请将监听地址设置为 `0.0.0.0` 或 `::`。
+   - 要确定配置文件的位置，请运行 `adguard-cli config show | grep "Config location"`。
+   - 查找 `listen_address` 键并相应设置其值。 要在所有可用网络接口上监听，请将监听地址设置为 `0.0.0.0` 或 `::`。
 
 若监听地址设置为除 `127.0.0.1` 之外的任何值，则需启用代理客户端认证。 AdGuard CLI 不会启动，除非配置代理认证：
 

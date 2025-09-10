@@ -17,9 +17,9 @@ Nossos requisitos são simples: use o AdGuard, atualize para a versão beta/nigh
 
 Você também precisará do dispositivo no qual instalará o aplicativo e [o link para a página de testes beta](https://adguard.com/beta.html). Lá você encontrará mais informações sobre como se juntar ao nosso programa e testar o AdGuard para Windows, iOS e Android.
 
-Se quiser pular a parte da descrição e ir direto para a ação, você pode se inscrever [aqui](https://surveys.adguard.com/beta_testing_program/form.html). Sua inscrição será analisada dentro de 1 a 3 dias úteis e você receberá uma resposta por e-mail.
+If you would like to become a tester, please [fill out the form](https://surveys.adguard.com/beta_testing_program/form.html) to submit your application. If it is approved, you will receive a response via email within a few days.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Para obter a versão beta ou a compilação noturna do AdGuard para iOS, primeiro você precisa instalar o [TestFlight](https://apps.apple.com/app/testflight/id899247664) no seu dispositivo iOS.
 

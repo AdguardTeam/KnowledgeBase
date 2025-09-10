@@ -5,49 +5,40 @@ sidebar_position: 2
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan iOS için AdGuard'ı ele alır. Nasıl çalıştığını ilk elden görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan iOS için AdGuard'ı ele alır. To see how it works firsthand, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
 ## Sistem genelinde filtreleme hakkında
 
-System-wide filtering means blocking ads and trackers beyond the Safari browser, i.e. in other apps and browsers. This article will tell you how to enable it on your iOS device.
-
-On iOS, the only way to block ads and trackers system-wide is to use [DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/).
-
-First, you have to enable DNS protection. Bunu yapmak için:
-
-1. Open *AdGuard for iOS*.
-2. Tap *Protection* icon (the second icon in the bottom menu bar).
-3. Turn *DNS protection* switch on.
-
-![DNS protection screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_dns_protection.PNG)
-
-Now, if your purpose is to block ads and trackers system-wide, you have three options:
-
- 1. Use AdGuard DNS filter (*Protection* (the shield icon in the bottom menu) → *DNS protection* → *DNS filtering* → *DNS filters* → *AdGuard DNS filter*).
- 2. Use AdGuard DNS server (*Protection* (the shield icon in the bottom menu) → *DNS protection* → *DNS server* → *AdGuard DNS*) or another blocking DNS server to your liking.
- 3. Add a custom DNS filter/hosts file to your liking.
-
-The first and third option have several advantages:
-
-- You can use any DNS server at your discretion and you are not tied up to a specific blocking server, because the filter does the blocking.
-- You can add multiple DNS filters and/or hosts files (although using too many might slow down AdGuard).
+System-wide filtering lets you block ads and trackers not just in Safari, but across other apps and browsers on your iOS device. iOS is a fairly closed operating system, and Apple provides limited options for blocking ads outside Safari. Reklamları ve izleyicileri sistem genelinde engellemenin tek yolu [DNS filtrelemesidir](https://adguard-dns.io/kb/general/dns-filtering/). This article explains how to enable it.
 
 ![How DNS filtering works](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 
-## How to add custom DNS filter/hosts file
+Yapmanız gereken ilk şey DNS korumasını etkinleştirmektir:
 
-You can add any DNS filter or hosts file you like.
+1. Open *AdGuard*.
+2. Tap the *Protection* icon (shield icon in the bottom menu bar).
+3. Turn on *DNS protection*.
 
-For the sake of the example, let's add [OISD Blocklist Big](https://oisd.nl/).
+![DNS protection screen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/dns_protection.png)
 
-1. Copy this link: `https://big.oisd.nl` (it's a link for OISD Blocklist Big filter)
-2. *Koruma* (alt menüdeki kalkan simgesi) → *DNS koruması* → *DNS filtreleme* → *DNS filtreleri* öğesini açın.
-3. *Filtre ekle* öğesine dokunun.
-4. Bağlantıyı filtre URL alanına yapıştırın.
-5. *Sonraki* → *Ekle* öğesine dokunun.
+Once DNS protection is on, you have three options:
 
-![DNS filtre ekranı ekleme *mobile_border](https://cdn.adtidy.org/blog/new/ot4okIMGD236EB8905471.jpeg)
+- **Use AdGuard DNS filter.** To enable it, go to *Protection* → *DNS protection* → *DNS filtering* → *DNS filters* → *AdGuard DNS filter*. Bu seçenekle, belirli bir engelleme sunucusuna bağlı kalmazsınız — tüm engellemeyi filtre yapar.
+- **Use a blocking DNS server.** Go to *Protection* → *DNS protection* → *DNS server* and select *AdGuard DNS* or another blocking server to your liking.
+- **Add a custom DNS filter or hosts file.** You can add multiple DNS filters and hosts files. Be aware that using too many may slow down AdGuard.
 
-4. adımda farklı bir URL yapıştırarak istediğiniz sayıda diğer DNS filtresini aynı şekilde ekleyin. Çeşitli filtreleri ve bunların bağlantılarını [burada](https://filterlists.com) bulabilirsiniz.
+## How to add custom DNS filter and hosts file
+
+For example, let’s add the [OISD Blocklist Big](https://oisd.nl/).
+
+1. Copy the OISD Blocklist Big link: `https://big.oisd.nl`
+2. Open *Protection*  → *DNS protection* → *DNS filtering* → *DNS filters*.
+3. Tap *Add a filter*.
+4. Paste the link into the filter URL field.
+5. Tap *Next* → *Add*.
+
+![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/adding_dns_filter.png)
+
+4. adımı farklı bir URL ile tekrarlayarak istediğiniz sayıda DNS filtresi ekleyebilirsiniz. [filterlists.com](https://filterlists.com) adresinde çeşitli filtre listelerini ve bağlantılarını bulabilirsiniz.

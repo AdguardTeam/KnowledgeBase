@@ -21,19 +21,19 @@ Die alte Beta-Erweiterung wird in [**AdGuard Werbeblocker MV2**](https://chromew
 
 - **Filter-Protokoll**
 
-    ![Filter-Protokoll \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+  ![Filter-Protokoll \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-    Aufgrund von DNR-Beschränkungen können wir nicht genau angeben, welche Regel funktioniert hat, aber wir werden eine „mutmaßliche Regel, die ausgelöst wurde“ auf der Grundlage unserer Engine angeben. Um genaue Informationen zu erhalten, müssen Sie die „entpackte" Form der Erweiterung selbst in Ihrem Browser installieren. Eine ausführliche Anleitung dazu finden Sie in einem [separaten Artikel](/adguard-browser-extension/solving-problems/debug-rules/).
+  Aufgrund von DNR-Beschränkungen können wir nicht genau angeben, welche Regel funktioniert hat, aber wir werden eine „mutmaßliche Regel, die ausgelöst wurde“ auf der Grundlage unserer Engine angeben. Um genaue Informationen zu erhalten, müssen Sie die „entpackte" Form der Erweiterung selbst in Ihrem Browser installieren. Eine ausführliche Anleitung dazu finden Sie in einem [separaten Artikel](/adguard-browser-extension/solving-problems/debug-rules/).
 
 - _Tracking-Schutz_ (früher bekannt als _Privatsphären-Modus_)
 
-    ![Tracking-Schutz \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+  ![Tracking-Schutz \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
 
-    Es gibt keinen Abschnitt _Cookies_ sowie _Selbstzerstörung von Erstanbieter-Cookies_ und _Selbstzerstörung von Drittanbieter-Cookies_, da wir die TTL von Cookies nicht mit deklarativen Regeln festlegen können.
+  Es gibt keinen Abschnitt _Cookies_ sowie _Selbstzerstörung von Erstanbieter-Cookies_ und _Selbstzerstörung von Drittanbieter-Cookies_, da wir die TTL von Cookies nicht mit deklarativen Regeln festlegen können.
 
 - Der _Schutz vor Phishing und Malware_ ist in den allgemeinen Einstellungen nicht mehr verfügbar. Um sich vor bösartigen Websites und Betrügereien zu schützen, aktivieren Sie die entsprechenden _Sicherheitsfilter_ im Tab _Filter_.
 
-    ![Sicherheit \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![Sicherheit \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## Beschränkungen
 

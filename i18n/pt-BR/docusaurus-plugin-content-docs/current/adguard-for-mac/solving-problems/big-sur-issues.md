@@ -85,7 +85,7 @@ No entanto, desativar o monitoramento de conexão no Little Snitch não resolve 
 
 ### Compatibilidade com proxies locais
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Agora o AdGuard pode filtrar proxies locais (em sua maioria) sem problemas. Se você encontrar algum problema nas versões 11.1+ do sistema operacional ou se estiver usando o Big Sur 11.0, remova o proxy local das configurações do sistema e configure um proxy upstream no AdGuard seguindo as instruções abaixo.
 
@@ -164,7 +164,7 @@ Se você enfrentar problemas em Big Sur ou Monterey que não podem ser resolvido
 
 Agora o AdGuard adicionou automaticamente um arquivo **.pac** às configurações de rede do seu Mac, para que o sistema considere o AdGuard um proxy e tente enviar todo o tráfego através do AdGuard.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Alguns aplicativos podem ignorar esta configuração do sistema e seu tráfego não será filtrado.
 

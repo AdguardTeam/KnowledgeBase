@@ -17,7 +17,7 @@ Si el filtrado no se detiene al desactivar AdGuard para Safari, puede deberse a 
 2. Haz clic en _Safari_ en el menú de la esquina superior izquierda.
 3. Haz clic en _Configuración…_ → _Extensiones_.
 4. Desactiva las casillas de verificación de las extensiones de AdGuard: _Personalizado_, _General_, _Otro_, _Privacidad_, _Seguridad_, _Social_, _AdGuard para Safari_ y _AdGuard Assistant_.
-    ![Bloqueadores de contenido no seleccionados](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
+   ![Bloqueadores de contenido no seleccionados](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
 5. Reinicia Safari.
 6. Vuelve a _Configuración..._ → _Extensiones_ y activa las extensiones de bloqueo de contenido de nuevo.
 

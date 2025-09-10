@@ -77,11 +77,11 @@ AdGuard for Linuxを設定するには、`config` コマンドを使用します
 
 - `show`: `proxy.yaml` の現在の構成を表示する
 
-    ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
 - `set`: `proxy.yaml` でオプションを設定する
-    - `listen_ports.http_proxy`: HTTP listening port
-    - `proxy_mode`: プロキシモード（`manual`または`auto`）
+  - `listen_ports.http_proxy`: HTTP listening port
+  - `proxy_mode`: プロキシモード（`manual`または`auto`）
 
 - `get`: 上記オプションの現在の状態を取得する
 
@@ -91,15 +91,15 @@ AdGuard for Linuxを設定するには、`filters` コマンドを使用しま�
 
 - `list`: インストールされているフィルタ一覧を表示する
 
-    - `--all`: すべてのフィルタを表示
+  - `--all`: すべてのフィルタを表示
 
-    ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
+  ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
 - `install`: フィルタをインストールする （インストールしたいフィルタのURLを入力してください。）
 
 - `enable`: フィルタを有効にする （フィルタの名前またはIDを入力してください。）
 
-    ![Enable filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+  ![Enable filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
 - `disable`: フィルタを無効にする （フィルタの名前またはIDを入力してください。）
 
@@ -112,8 +112,8 @@ There are two ways to make the proxy server listen on a different interface:
 
 1. Run `adguard-cli config set listen_address <address>` where `<address>` is the address to listen on.
 2. Edit the config file directly:
-    - To determine the location of the config file, run `adguard-cli config show | grep "Config location"`.
-    - Look for the `listen_address` key and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0` or `::`.
+   - To determine the location of the config file, run `adguard-cli config show | grep "Config location"`.
+   - Look for the `listen_address` key and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0` or `::`.
 
 If the listen address is set to anything other than `127.0.0.1`, then proxy client authentication is required. AdGuard CLI will not start unless proxy authentication is configured:
 

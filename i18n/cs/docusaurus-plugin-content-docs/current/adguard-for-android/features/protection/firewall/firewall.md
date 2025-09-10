@@ -29,15 +29,15 @@ V této části můžete řídit přístup k internetu pro konkrétní aplikace 
 
 1. Otevřete _Vlastní pravidla brány firewall_. V části _Aplikace s vlastními pravidly_ klepněte na _Přidat aplikaci_.
 
-    ![Custom firewall rules \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+   ![Custom firewall rules \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
 2. Vyberte aplikaci, pro kterou chcete nastavit jednotlivá pravidla.
 
-    ![Adding an app to Custom firewall rules \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+   ![Adding an app to Custom firewall rules \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
 3. V části _Dostupná vlastní pravidla_ vyberte ta, která chcete nakonfigurovat a klepněte na ikonu “+”. Pravidla se nyní objeví části _Použitá vlastní pravidla_.
 
-    ![Added rule \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+   ![Added rule \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
 4. Pokud potřebujete zablokovat určitý typ připojení, přepněte přepínač doleva. Pokud to chcete povolit, ponechte přepínač zapnutý. **Vlastní pravidla jsou nadřazena globálním pravidlům**: jakékoli změny provedené v části _Globální pravidla_ brány firewall nebudou mít na tuto aplikaci vliv.
 
