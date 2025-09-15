@@ -545,7 +545,7 @@ For these modifiers, if the referrer matches a rule with `$domain` that explicit
 **Examples**
 
 - `*$cookie,domain=example.org|example.com` will block cookies for all requests to and from `example.org` and `example.com`.
-- `*$document,domain=example.org|example.com` will block requests only from `example.org` and `example.com` but not to them.
+- `*$document,domain=example.org|example.com` will block requests only from `example.org` and `example.com`, but not to them.
 
 In the following examples it is implied that requests are sent from `http://example.org/page` (the referrer) and the target URL is `http://targetdomain.com/page`.
 
