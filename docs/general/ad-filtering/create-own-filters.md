@@ -540,7 +540,7 @@ In some cases the `$domain` modifier can match not only the referrer domain, but
 
 This happens when the rule has one of the following modifiers: [`$cookie`](#cookie-modifier), [`$csp`](#csp-modifier), [`$permissions`](#permissions-modifier), [`$removeparam`](#removeparam-modifier).
 
-For these modifiers, if the referrer matches a rule with `$domain` that explicitly excludes the referrer domain, then the rule will not be applied even if the target domain also matches the rule.
+These modifiers will not be applied if the referrer matches a rule with `$domain` that explicitly excludes the referrer domain, even if the target domain also matches the rule.
 
 **Examples**
 
@@ -550,7 +550,7 @@ For these modifiers, if the referrer matches a rule with `$domain` that explicit
 In the following examples it is implied that requests are sent from `http://example.org/page` (the referrer) and the target URL is `http://targetdomain.com/page`.
 
 - `page$domain=example.org` will be matched, as it matches the referrer domain.
-- `page$domain=targetdomain.com` will not be matched, as it does not match referrer domain.
+- `page$domain=targetdomain.com` will not be matched because it does not match the referrer domain.
 - `||*page$domain=targetdomain.com,cookie` will be matched because the rule contains `$cookie` modifier
 despite the pattern `||*page` may match specific domains.
 - `page$domain=targetdomain.com|~example.org,cookie` will not be matched because the referrer domain is explicitly excluded.
