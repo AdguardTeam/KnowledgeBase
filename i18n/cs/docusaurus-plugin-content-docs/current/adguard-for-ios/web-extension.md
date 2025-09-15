@@ -17,7 +17,7 @@ Webové rozšíření pro Safari od AdGuardu doplňuje AdGuard tím, že mu umo�
 
 Kromě toho lze Webové rozšíření pro Safari od AdGuardu použít k rychlé správě AdGuardu pro iOS přímo z prohlížeče. Klepněte na *Rozšíření* – je to tlačítko s ikonou skládačky, v závislosti na typu vašeho zařízení může být umístěno vlevo nebo vpravo od adresního řádku. Vyhledejte **AdGuard** v seznamu a klepněte na něj.
 
-![Web extension menu *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/ext_adguard_en.png?1)
+![Web extension menu *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/open-safari-assistant.jpg)
 
 > Na iPadech je webové rozšíření pro Safari od AdGuardu dostupné přímo klepnutím na ikonu AdGuardu v adresním řádku prohlížeče.
 
@@ -41,35 +41,41 @@ Webové rozšíření pro Safari od AdGuardu vyžaduje ke své činnosti příst
 
 Webové rozšíření není samostatný nástroj a vyžaduje AdGuard pro iOS. Pokud na svém zařízení nemáte nainstalovaný AdGuard pro iOS, [nejprve](../installation) jej nainstalujte a dokončete proces registrace, abyste jej připravili k práci.
 
-Po dokončení otevřete *Nastavení → Safari → Rozšíření*.
+Po dokončení otevřete *Nastavení* a přejděte dolů na položku *Aplikace*.
 
-![Select "Safari" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings1_en.png)
+![Select Apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/apps.jpg)
 
-![Select "Extensions" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings2_en.png)
+Poté otevřete *Safari* → *Rozšíření*.
 
-Vyhledejte sekci **POVOLIT TATO ROZŠÍŘENÍ** a poté mezi dostupnými rozšířeními vyhledejte **AdGuard**.
+![Select Safari *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings1_en.png)
 
-![Select "AdGuard" in ALLOW THESE EXTENSIONS section *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_en.png)
+![Select Extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings2_en.png)
 
-Klepněte na něj a zapněte přepínač. Na stejné obrazovce nastavte oprávnění *Všechny webové stránky* pro AdGuard na *Povolit* nebo *Zeptat se*. Pokud zvolíte *Povolit*, nebudete muset udělovat oprávnění při každé návštěvě nové webové stránky. Pokud si nejste jisti, zvolte *Zeptat se* k udělení oprávnění pro jednotlivé stránky.
+V sekci **POVOLIT TATO ROZŠÍŘENÍ** mezi dostupnými rozšířeními vyhledejte **AdGuard**.
 
-![Extension settings *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
+![Select AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/select-ag.jpg)
+
+Klepněte na něj a přepněte přepínač *Povolit rozšíření*.
+
+V nižší části téže obrazovky zkontrolujte, zda je u položky *Všechny webové stránky* nastaveno *Povolit* nebo *Zeptat se*. Pokud zvolíte *Povolit*, nebudete muset udělovat oprávnění při každé návštěvě nové webové stránky. Pokud si nejste jisti, zvolte *Zeptat se* k udělení oprávnění pro jednotlivé stránky.
+
+![AdGuard extension in Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ag-webext-in-settings.png)
 
 ### V Safari
 
-Rozšíření AdGuard můžete povolit také v prohlížeči Safari. Klepněte na *Rozšíření* (pokud jej nevidíte vedle adresního řádku, klepněte na ikonu `aA`).
+Chcete-li rozšíření AdGuard povolit přímo v prohlížeči Safari, klepněte na ikonu na levé straně pole URL:
 
-![In Safari tap aA icon *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari1_en.png)
+![In Safari tap icon on the left of URL field *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-1.jpg)
 
-Poté vyhledejte v seznamu možnost *Spravovat rozšíření* a klepněte na ni. V otevřeném okně zapněte přepínač vedle **AdGuardu**.
+Poté klepněte na *Spravovat rozšíření*.
 
-![Extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari2_en.png)
+![Extensions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-2.jpg)
 
-![Extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari3_en.png)
+V otevřeném okně zapněte přepínače AdGuard. První z nich je webové rozšíření AdGuard, dalších šest jsou blokátory obsahu potřebné pro filtrování.
 
-Pokud použijete tuto metodu, možná budete muset přejít do nastavení Safari a udělit rozšíření AdGuardu potřebná oprávnění.
+![Extensions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-3.jpg)
 
-Mezi dostupnými rozšířeními byste nyní měli vidět AdGuard. Klepněte na něj a poté klepněte na žlutou ikonu **i**. Zapněte **Pokročilou ochranu** klepnutím na tlačítko *Zapnout* a potvrďte akci.
+Mezi dostupnými rozšířeními byste nyní měli vidět AdGuard. Chcete-li povolit **pokročilou ochranu**, otevřete rozšíření AdGuard, klepněte na žlutou ikonu **i**, stiskněte *Povolit* a akci potvrďte.
 
 :::note
 

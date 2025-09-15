@@ -35,7 +35,7 @@ Per estendere il limite di dispositivi, puoi [aggiornare](../payment-options/#up
 
 ## Come utilizzare la licenza AdGuard
 
-Per utilizzare la tua licenza su un dispositivo, accedi alla tua app AdGuard utilizzando l'indirizzo email associato alla licenza. Se la licenza non è stata ancora associata al tuo indirizzo email, puoi farlo nel tuo [account AdGuard](https://adguardaccount.com/). A tal fine, aprire la scheda *Licenze* e fare clic su *Legare la licenza*.
+Per utilizzare la tua licenza su un dispositivo, accedi alla tua app AdGuard utilizzando l'indirizzo email associato alla licenza. Se la licenza non è stata ancora associata al tuo indirizzo email, puoi farlo nel tuo [account AdGuard](https://adguardaccount.com/). A tal fine, aprire la scheda *Licenze* e fare clic su *Legare la licenza*. Usually, licenses are activated immediately, but sometimes activation may take up to five minutes.
 
 In alternativa, puoi inserire la tua [chiave di licenza](#license-key) nella tua app AdGuard.
 

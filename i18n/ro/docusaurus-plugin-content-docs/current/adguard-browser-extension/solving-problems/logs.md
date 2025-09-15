@@ -13,19 +13,19 @@ sidebar_position: 1
 
 3. Activați _Mod pentru dezvoltatori_.
 
-    ![Developer mode \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
+   ![Developer mode \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
 
 4. Da-ți clic pe `background.html`.
 
-    ![Fundal \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
+   ![Fundal \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
 
 5. Deschideți fila _Consolă_.
 
-    ![Fila consolă \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
+   ![Fila consolă \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
 
 6. Deschideți meniul contextual și selectați _Salvare ca..._.
 
-    ![Salvează ca \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
+   ![Salvează ca \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
 
 ### Firefox
 
@@ -35,19 +35,19 @@ sidebar_position: 1
 
 3. Faceți clic pe _Depanează suplimente_.
 
-    ![Depanează suplimente \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+   ![Depanează suplimente \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
 
 4. Faceți clic pe _Inspectează_.
 
-    ![Inspectează \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
+   ![Inspectează \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
 
 5. Deschideți fila _Consolă_.
 
-    ![Consolă \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
+   ![Consolă \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
 
 6. Click _Save all Messages to File_.
 
-    ![Salvați \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
+   ![Salvați \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
 
 ## Trimiterea jurnalelor
 

@@ -17,7 +17,7 @@ Wenn das Filtern nicht eingestellt wird, wenn der AdGuard für Safari deaktivier
 2. Klicken Sie auf _Safari_ in der linken oberen Ecke des Menüs.
 3. Klicken Sie auf _Einstellungen…_ → _Erweiterungen_.
 4. Deaktivieren Sie die Kontrollkästchen für die Erweiterungen von AdGuard: _Benutzerdefiniert_, _Allgemein_, _Sonstiges_, _Datenschutz_, _Sicherheit_, _Soziales_, _AdGuard für Safari_ und _AdGuard Assistent_.
-    ![unausgewählte Inhaltsblocker](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
+   ![unausgewählte Inhaltsblocker](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
 5. Starten Sie Safari neu.
 6. Kehren Sie zu _Einstellungen..._ → _Erweiterungen_ zurück und aktivieren Sie die Erweiterungen zum Sperren von Inhalten wieder.
 
