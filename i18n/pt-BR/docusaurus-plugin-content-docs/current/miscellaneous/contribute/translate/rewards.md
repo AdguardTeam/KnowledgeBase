@@ -55,6 +55,6 @@ Por favor, note que os revisores não recebem licenças ou benefícios extras al
 
 ## Presentes para colaboradores ativos
 
-Para os melhores colaboradores, todo ano enviamos presentes com os produtos da AdGuard e fazemos uma menção no nosso [blog](https://adguard.com/en/blog/best-contributors-2023.html).
+To the best contributors, every year we send gifts with the AdGuard merch and give a shout out on our [blog](https://adguard.com/en/blog/best-contributors-2024.html).
 
 ![AdGuard merch *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

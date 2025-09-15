@@ -11,36 +11,44 @@ sidebar_position: 11
 
 为了能够[过滤 HTTPS 流量](/general/https-filtering/what-is-https-filtering.md)（这点很重要，因为大多数广告都使用 HTTPS），AdGuard 需要在设备的用户存储空间中安装证书。 旧版本的 Android 操作系统可以自动完成，但在 Android 11 及更高版本上，用户必须手动安装。
 
-![证书 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
+![证书 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/screenCA.gif)
 
 请按照以下步骤安装 AdGuard 证书：
 
-1. 当您看到「*HTTPS 过滤已关闭*」的通知时，点击「*启用*」。
+1. 打开应用程序。 在 *主页* 屏上，点击「*HTTPS 过滤已关闭*」。
 
-1. 然后您将看到三个画面，它们分别解释了：
-    - 为什么要过滤 HTTPS 流量
-    - 过滤过程的安全性
-    - AdGuard 证书的必要性
+1. 然后您将看到三个画面：
+    - HTTPS 过滤对广告拦截至关重要
+    - AdGuard 的 HTTPS 过滤是安全的
+    - AdGuard certificate
 
-    连续点击「*下一步*」→「*下一步*」→「*保存证书*」。
+1. Consecutively, tap *Continue* → *Next* → *Save certificate*.
 
-1. 在打开的「*下载*」文件夹底部点击「*保存*」。
+1. Tap *Save* at the bottom of the opened *Download* folder.
 
-1. 保存后，点击「*打开设置*」。
+1. After saving, copy the text from the *CA Certificate* field and tap *Open Settings*.
 
-1. 点击「*更多安全设置*」→「*加密和凭据*」→「*安装证书*」→「*CA 证书*」。
+1. Open *Settings* and either paste or type *CA Certificate* in the search bar. Tap the respective option.
 
-1. 您可能会看到一条警告。 如果有的话，请点击「*仍然安装*」并输入您的 PIN 码（如有必要）。
+1. You might see a warning. If so, tap *Install anyway* and enter your PIN if necessary.
 
-1. 选择 AdGuard 证书文件。 它的名称应该类似于「*adguard_1342_020322.crt*」。
+1. Select the AdGuard certificate file. Its name should look like *adguard_1342_020322.crt*.
 
-一切就绪！ 证书安装成功后，您就启用了 HTTPS 过滤。
+完成！ 证书安装成功后，即可启用 HTTPS 过滤。
 
-请注意，以上提供的步骤基于 Google Pixel 7 智能手机。 如果您使用不同的 Android 设备，具体的菜单名称或选项可能会有所不同。 为方便导航，可考虑在设置搜索栏中输入「证书」或「凭证」搜索证书。
-
-如您在手动安装证书期间遇到问题（例如，应用持续忽略已安装证书），可以尝试以下解决方案。
+如果在手动安装证书过程中遇到问题（例如：已安装证书但应用仍无法识别），可参考以下任一解决方案：
 
 1. 重启 AdGuard。
-2. 再次尝试安装正确的证书（AdGuard Personal CA）。
+1. 再次尝试安装正确的证书（AdGuard Personal CA）。
+
+## 安全警告
+
+在早期 Android 版本中，快速设置面板会显示「网络可能受到监控」提示。 点击该提示将打开包含详细信息的窗口。
+
+从 Android 15 开始，除「网络可能受到监控」外，用户在安装证书及设备重启后还将看到警告通知：「由未知第三方安装的证书颁发机构」。 这表示系统已在用户证书存储区检测到第三方证书。 点击通知会打开用户证书存储中的证书列表。
+
+尽管存在这些警告，您的流量依然安全。 与远程服务器的连接始终保持加密状态。 AdGuard 仅会在决定是否过滤连接前验证服务器证书，其工作原理与浏览器类似。
+
+[了解有关 HTTPS 过滤以及证书如何工作的更多信息](/general/https-filtering/what-is-https-filtering.md)。
 
 如问题仍然存在使您无法安装证书，请联系我们的客户支持团队 <support@adguard.com>。

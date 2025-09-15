@@ -1,5 +1,5 @@
 ---
-title: AdGuard Content Blocker
+title: AdGuard Tartalomblokkoló
 sidebar_position: 1
 ---
 

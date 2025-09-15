@@ -21,7 +21,7 @@ To access _Low-level settings_, open the AdGuard app and tap the gear icon in th
 
 ## Low-level settings
 
-For AdGuard v4.x for Android we’ve completely redesigned the low-level settings. We have reworked the list of settings and organized them into thematic groups with improved descriptions. We also added input validation and other safety valves.
+For AdGuard for Android v4.x we’ve completely redesigned the low-level settings. We have reworked the list of settings and organized them into thematic groups with improved descriptions. We also added input validation and other safety valves.
 
 ### DNS protection
 
@@ -116,7 +116,7 @@ If this setting is enabled, AdGuard will log all filtered HTTP requests in HAR 1
 
 This setting may slow down your device. Use it for debugging purposes only.
 
-### HTTPS filtering
+### HTTPS szűrés
 
 #### Encrypted Client Hello
 
@@ -205,10 +205,6 @@ Here you can set the delay in milliseconds before AdGuard reschedules the restor
 
 Here you can set the maximum transmission unit (MTU) of the VPN interface. This is the maximum size of the data packet used in your local VPN. The recommended range is 1500-1900 bytes.
 
-#### Restore VPN automatically
-
-If this setting is enabled, AdGuard’s local VPN will be automatically re-enabled after being turned off due to network absence, tethering, or low-power mode.
-
 #### Packet capture (PCAP)
 
 This setting enables logging of TUN interfaces. When enabled, AdGuard creates a file `timestamp.pcap`, such as  1682599851461.pcap, in the app cache directory. This file lists all network packets transmitted through the VPN and can be analyzed using the Wireshark tool.
@@ -233,7 +229,7 @@ If this setting is enabled, AdGuard will exclude LAN connections from filtering 
 
 Here you can enter the IP address that will be used to create a TUN interface. The default value is `2001:db8:ad:0:ff::`.
 
-### Miscellaneous
+### Vegyes
 
 #### Show Developer tools on the main screen
 

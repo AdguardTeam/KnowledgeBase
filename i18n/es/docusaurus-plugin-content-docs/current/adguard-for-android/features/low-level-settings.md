@@ -21,7 +21,7 @@ To access _Low-level settings_, open the AdGuard app and tap the gear icon in th
 
 ## Configuración de bajo nivel
 
-Para AdGuard v4.x para Android hemos rediseñado completamente las configuraciones de bajo nivel. We have reworked the list of settings and organized them into thematic groups with improved descriptions. We also added input validation and other safety valves.
+For AdGuard for Android v4.x we’ve completely redesigned the low-level settings. We have reworked the list of settings and organized them into thematic groups with improved descriptions. We also added input validation and other safety valves.
 
 ### Protección DNS
 
@@ -204,10 +204,6 @@ Here you can set the delay in milliseconds before AdGuard reschedules the restor
 #### MTU
 
 Here you can set the maximum transmission unit (MTU) of the VPN interface. This is the maximum size of the data packet used in your local VPN. The recommended range is 1500-1900 bytes.
-
-#### Restore VPN automatically
-
-If this setting is enabled, AdGuard’s local VPN will be automatically re-enabled after being turned off due to network absence, tethering, or low-power mode.
 
 #### Packet capture (PCAP)
 

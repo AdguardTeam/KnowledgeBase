@@ -3,7 +3,7 @@ title: 설정 및 보호 관리
 sidebar_position: 3
 ---
 
-## Available commands
+## 사용 가능한 명령
 
 사용 가능한 모든 AdGuard 명령 목록을 보려면 다음을 입력합니다.
 
@@ -13,7 +13,7 @@ adguard-cli --help-all
 
 ## 보호 활성화 및 비활성화
 
-### Enable protection
+### 보호 사용
 
 보호를 활성화하려면 다음을 입력합니다.
 
@@ -21,11 +21,11 @@ adguard-cli --help-all
 adguard-cli start
 ```
 
-This command attempts to configure a redirection to the proxy.
+이 명령은 프록시로의 리디렉션을 구성하려고 시도합니다.
 
-![Start protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/start-protection.gif)
+![보호 시작 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/start-protection.gif)
 
-### Disable protection
+### 보호 비활성화
 
 보호를 비활성화하려면 다음을 입력하세요.
 
@@ -33,9 +33,9 @@ This command attempts to configure a redirection to the proxy.
 adguard-cli stop
 ```
 
-This command not only stops the proxy but also stops the trafic from redirecting to it.
+이 명령은 프록시를 중지할 뿐만 아니라 트래픽이 프록시로 리디렉션되는 것도 중지합니다.
 
-### Check protection status
+### 보호 상태 확인
 
 보호 상태를 보려면 다음을 입력합니다.
 
@@ -43,9 +43,9 @@ This command not only stops the proxy but also stops the trafic from redirecting
 adguard-cli status
 ```
 
-![Status/Stop protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+![상태/보호 중지 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
 
-## Updates
+## 업데이트
 
 ### 업데이트 확인
 
@@ -55,7 +55,7 @@ adguard-cli status
 adguard-cli check-update
 ```
 
-### Update AdGuard for Linux
+### Linux용 AdGuard 업데이트
 
 Linux용 AdGuard를 업데이트하려면 다음을 입력합니다.
 
@@ -63,7 +63,7 @@ Linux용 AdGuard를 업데이트하려면 다음을 입력합니다.
 adguard-cli update
 ```
 
-### Update script output
+### 스크립트 출력 업데이트
 
 업데이트 스크립트 출력을 보려면 다음을 입력합니다.
 
@@ -77,11 +77,11 @@ adguard-cli update -v
 
 - `show`: `proxy.yaml`의 현재 설정 표시
 
-    ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![현재 설정 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
 - `set`: `proxy.yaml`에서 옵션 설정
-    - `listen_ports.http_proxy`: HTTP 수신 포트
-    - `proxy_mode`: 프록시 모드(`manual` 또는 `auto`)
+  - `listen_ports.http_proxy`: HTTP 수신 포트
+  - `proxy_mode`: 프록시 모드(`manual` 또는 `auto`)
 
 - `get`: 위 옵션의 현재 상태 확인
 
@@ -91,31 +91,31 @@ adguard-cli update -v
 
 - `list`: 설치된 필터 목록
 
-    - `--all`: 모든 필터 보기
+  - `--all`: 모든 필터 보기
 
-    ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
+  ![필터 목록 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
 - `install`: 필터 설치 설치하려는 필터의 URL을 입력합니다.
 
 - `enable`: 필터 활성화 필터의 이름이나 ID를 입력합니다.
 
-    ![Enable filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+  ![필터 활성화 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
 - `disable`: 필터 비활성화 필터의 이름이나 ID를 입력합니다.
 
 - `update`: 필터 업데이트
 
-## Changing the proxy server listen address in manual proxy mode
+## 수동 프록시 모드에서 프록시 서버 수신 주소 변경
 
-By default, the proxy server listens on `127.0.0.1` — the address of the loopback network interface.
-There are two ways to make the proxy server listen on a different interface:
+기본적으로 프록시 서버는 `127.0.0.1`(루프백 네트워크 인터페이스 주소)를 감시합니다.
+프록시 서버가 다른 인터페이스를 감시하도록 설정할 수 있습니다. 두 가지 방법이 있습니다.
 
-1. Run `adguard-cli config set listen_address <address>` where `<address>` is the address to listen on.
-2. Edit the config file directly:
-    - To determine the location of the config file, run `adguard-cli config show | grep "Config location"`.
-    - Look for the `listen_address` key and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0` or `::`.
+1. `adguard-cli config set listen_address <address>` 명령어를 실행하세요. 여기서 `<address>`는 감시할 주소입니다.
+2. 구성 파일을 직접 편집합니다.
+   - 구성 파일의 위치를 확인하려면 `adguard-cli config show | grep "Config location"`를 실행합니다.
+   - `listen_address` 키를 찾아서 그에 맞는 값을 설정합니다. 사용 가능한 모든 네트워크 인터페이스에서 수신하려면 수신 주소를 `0.0.0.0` 또는 `::`으로 설정합니다.
 
-If the listen address is set to anything other than `127.0.0.1`, then proxy client authentication is required. AdGuard CLI will not start unless proxy authentication is configured:
+수신 주소가 `127.0.0.1`이 아닌 다른 주소로 설정된 경우 프록시 클라이언트 인증이 필요합니다. 프록시 인증이 구성되지 않으면 AdGuard CLI가 시작되지 않습니다.
 
-- When running `adguard-cli config set listen_address <address>` where `<address>` is not `127.0.0.1`, AdGuard CLI will prompt for a username and password if proxy authentication is not already configured.
-- When editing the config file directly, look for the `listen_auth`key. Set the `enabled` sub-key to `true`, and `username` and `password` to non-empty values.
+- `adguard-cli config set listen_address <address>`를 실행할 때 `<address>`가 127.0.0.1이 아닌 경우, AdGuard CLI는 프로xy 인증이 아직 설정되지 않았다면 사용자 이름과 비밀번호를 요청합니다.
+- 구성 파일을 직접 편집할 때는 `listen_auth` 키를 찾습니다. `enabled` 하위 키를 `true`로 설정하고, `username`과 `password`를 비어 있지 않은 값으로 설정합니다.

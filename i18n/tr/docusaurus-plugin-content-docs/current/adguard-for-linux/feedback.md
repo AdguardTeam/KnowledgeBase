@@ -20,18 +20,18 @@ If you want to support the implementation of a new feature or bugfix, you can vo
 
 1. Hata ayıklama günlüğünü etkinleştir:
 
-    `adguard-cli config set log_level debug`
+   `adguard-cli config set log_level debug`
 
 2. Sorunu yeniden oluşturun ve tam olarak ne zaman oluştuğunu hatırlamaya çalışın.
 
 3. Bir süre bekleyin, ardından günlükleri dışarı aktarın:
 
-    `adguard-cli export-logs`
+   `adguard-cli export-logs`
 
-    Arşivlenen günlük dosyası varsayılan olarak uygulama klasörüne indirilecek ve günlüklerin yolu konsola yazılacaktır.
+   Arşivlenen günlük dosyası varsayılan olarak uygulama klasörüne indirilecek ve günlüklerin yolu konsola yazılacaktır.
 
 4. Günlük dosyasını <devteam@adguard.com> adresine gönderin. Hatanın zamanını belirtin ve GitHub sorununuza veya numarasına bir bağlantı ekleyin (başlığın yanında #sayı olarak görünür). Alternatif olarak, günlük dosyasını Google Drive'a yükleyebilir ve <devteam@adguard.com> ile paylaşabilirsiniz. Attach the file link to your GitHub issue.
 
 5. Switch the logging mode back to `info`:
 
-    `adguard-cli config set log_level info`
+   `adguard-cli config set log_level info`

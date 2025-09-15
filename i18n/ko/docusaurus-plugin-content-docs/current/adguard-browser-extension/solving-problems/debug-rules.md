@@ -19,61 +19,61 @@ sidebar_position: 2
 
 1. 레포지터리를 복제합니다:
 
-    ```bash
-    git clone git@github.com:AdguardTeam/AdguardBrowserExtension.git
-    ```
+   ```bash
+   git clone git@github.com:AdguardTeam/AdguardBrowserExtension.git
+   ```
 
 2. 디렉토리로 이동합니다:
 
-    ```bash
-    cd AdguardBrowserExtension
-    ```
+   ```bash
+   cd AdguardBrowserExtension
+   ```
 
 3. `v5.0` 브랜치로 전환합니다:
 
-    ```bash
-    git checkout v5.0
-    ```
+   ```bash
+   git checkout v5.0
+   ```
 
 4. 종속성 설치:
 
-    ```bash
-    yarn install
-    ```
+   ```bash
+   yarn install
+   ```
 
 ## 확장 프로그램을 빌드하는 방법
 
 1. `v5.0` 브랜치로 전환합니다:
 
-    ```bash
-    git checkout v5.0
-    ```
+   ```bash
+   git checkout v5.0
+   ```
 
 2. 터미널에서 다음 명령을 실행하세요:
 
-    ```bash
-    yarn dev chrome-mv3
-    ```
+   ```bash
+   yarn dev chrome-mv3
+   ```
 
 3. 빌드된 확장 프로그램은 다음 디렉토리에 있습니다:
 
-    ```bash
-    ./build/dev/chrome-mv3
-    ```
+   ```bash
+   ./build/dev/chrome-mv3
+   ```
 
 ## 브라우저에서 압축 해제된 버전을 설치하는 방법
 
 1. 개발자 모드를 켜세요:
 
-    ![개발자 모드](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
+   ![개발자 모드](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
 
 2. \*\*압축해제된 확장 프로그램을 로드합니다.\*\*를 클릭하세요:
 
-    ![Load unpacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+   ![Load unpacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
 3. 확장 프로그램 디렉토리를 선택하고 **선택**을 클릭합니다:
 
-    ![선택](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
+   ![선택](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
 
 다 되었습니다!
 
@@ -83,16 +83,16 @@ sidebar_position: 2
 
 2. txt에서 규칙을 선언적 형식으로 변경합니다:
 
-    ```bash
-    yarn convert-declarative
-    ```
+   ```bash
+   yarn convert-declarative
+   ```
 
 3. 확장프로그램을 다시 빌드하세요:
 
-    ```bash
-    yarn dev chrome-mv3
-    ```
+   ```bash
+   yarn dev chrome-mv3
+   ```
 
 4. 브라우저에서 확장프로그램을 다시 불러오세요:
 
-    ![확장 프로그램 다시 로드](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
+   ![확장 프로그램 다시 로드](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)

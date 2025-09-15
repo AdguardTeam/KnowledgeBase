@@ -21,7 +21,7 @@ To access _Low-level settings_, open the AdGuard app and tap the gear icon in th
 
 ## Low-level settings
 
-For AdGuard v4.x for Android we’ve completely redesigned the low-level settings. We have reworked the list of settings and organized them into thematic groups with improved descriptions. We also added input validation and other safety valves.
+For AdGuard for Android v4.x we’ve completely redesigned the low-level settings. We have reworked the list of settings and organized them into thematic groups with improved descriptions. We also added input validation and other safety valves.
 
 ### DNS koruması
 
@@ -204,10 +204,6 @@ Here you can set the delay in milliseconds before AdGuard reschedules the restor
 #### MTU
 
 Burada VPN arayüzünün maksimum iletim birimini (MTU) ayarlayabilirsiniz. Bu, yerel VPN'inizde kullanılan veri paketinin maksimum boyutudur. Önerilen aralık 1500-1900 bayttır.
-
-#### Restore VPN automatically
-
-Bu ayar etkinleştirilirse, AdGuard'ın yerel VPN'i ağ yokluğu, tethering veya düşük güç modu nedeniyle kapatıldıktan sonra otomatik olarak yeniden etkinleştirilir.
 
 #### Paket yakalama (PCAP)
 

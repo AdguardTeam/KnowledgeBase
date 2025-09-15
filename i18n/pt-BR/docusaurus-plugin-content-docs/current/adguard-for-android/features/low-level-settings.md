@@ -21,7 +21,7 @@ Para acessar _Configurações de baixo nível_, abra o aplicativo AdGuard e toqu
 
 ## Configurações de baixo nível
 
-Para o AdGuard v4.x para Android, redesenhamos completamente as configurações de baixo nível. Refizemos a lista de configurações e as reorganizamos em grupos temáticos com descrições aprimoradas. Também adicionamos validação de entrada e outras válvulas de segurança.
+For AdGuard for Android v4.x we’ve completely redesigned the low-level settings. Refizemos a lista de configurações e as reorganizamos em grupos temáticos com descrições aprimoradas. Também adicionamos validação de entrada e outras válvulas de segurança.
 
 ### Proteção DNS
 
@@ -204,10 +204,6 @@ Aqui você pode definir o atraso em milissegundos antes que o AdGuard reprograme
 #### MTU
 
 Aqui você pode definir a unidade máxima de transmissão (MTU) da interface VPN. Este é o tamanho máximo do pacote de dados usado na sua VPN local. O intervalo recomendado é de 1500 a 1900 bytes.
-
-#### Restaurar VPN automaticamente
-
-Se esta configuração estiver ativada, a VPN local do AdGuard será reativada automaticamente após ser desligada devido à ausência de rede, tethering ou modo de baixo consumo de energia.
 
 #### Captura de pacotes (PCAP)
 

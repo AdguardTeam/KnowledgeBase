@@ -11,7 +11,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 The _Settings_ tab can be accessed by tapping the right-most icon at the bottom of the screen. This section contains various settings, information about your app, license & subscription, and various support resources.
 
-## General
+## Általános
 
 This section helps you manage the appearance and behavior of the app: you can set the color theme and language, manage notifications, and more. If you want to help the AdGuard team detect app crashes and research usability, you can enable _Auto-report crashes_ and _Send technical and interaction data_.
 
@@ -81,7 +81,7 @@ Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.
 
 ### Network
 
-#### HTTPS filtering
+#### HTTPS szűrés
 
 To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
 
@@ -132,9 +132,15 @@ The _Local VPN_ mode doesn't allow AdGuard to be used simultaneously with other 
 
 - _Automatic proxy_ is an alternative traffic routing method that does not require the use of a VPN. One significant advantage is that it can be run in parallel with a VPN. This mode requires root access.
 
+:::note
+
+Please note that DNS filtering will still be active in _Automatic proxy_ routing mode, and your device may not be able to filter DNS requests from specific apps. In _VPN_ routing mode, apps are excluded from the local VPN by system means. Therefore, the system resolver sees which apps are included in the VPN and which are not. It either allows them into the local VPN or lets them bypass it. However, DNS requests come from the system resolver, not the application. In _Automatic proxy_ mode, it is only possible to exclude traffic from applications, not their DNS queries, because AdGuard sees them as system queries.
+
+:::
+
 - _Manual proxy_ involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
 
-## License
+## Licenc
 
 In this section, you can find information about your license and manage it:
 
@@ -147,7 +153,7 @@ In this section, you can find information about your license and manage it:
 
 ![License screen \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
-## Support
+## Támogatás
 
 Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting _[FAQ](https://adguard.com/support/adguard_for_android.html)_ or this knowledge base before contacting support.
 

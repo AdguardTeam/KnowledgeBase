@@ -31,6 +31,6 @@ Ancak, **bir uzantı 150.000'e kadar kural içerebilir**. If you exceed this lim
 1. Safari için AdGuard uygulamasını açın.
 2. Scroll down and click _Content blockers_.
 3. Below each content blocker, you can see the enabled filters and the number of active rules.
- ![Content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
+   ![Content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
 
 If more than 150,000 rules are enabled in a content blocker, you may need to disable some filters or user rules from it. Go to _Filters_, select the problematic category, and disable the filters or user rules you don’t need.

@@ -31,6 +31,6 @@ Sin embargo, **una extensión puede contener hasta 150.000 reglas**. Si excedes 
 1. Abre la aplicación AdGuard para Safari.
 2. Desplázate hacia abajo y haz clic en _Bloqueadores de contenido_.
 3. Debajo de cada bloqueador de contenido, puedes ver los filtros habilitados y la cantidad de reglas activas.
- ![Bloqueadores de contenido](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
+   ![Bloqueadores de contenido](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
 
 Si se activan más de 150.000 reglas en un bloqueador de contenidos, es posible que tengas que desactivar algunos filtros o reglas de usuario. Ve a _Filtros_, selecciona la categoría problemática y desactiva los filtros o reglas de usuario que no necesites.

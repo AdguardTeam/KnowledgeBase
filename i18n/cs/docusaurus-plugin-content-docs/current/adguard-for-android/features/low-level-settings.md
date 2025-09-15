@@ -21,7 +21,7 @@ Chcete-li přejít na _Nízkoúrovňová nastavení_, otevřete aplikaci AdGuard
 
 ## Nízkoúrovňová nastavení
 
-Ve verzi AdGuard v4.x pro Android jsme zcela přepracovali nízkoúrovňová nastavení. Přepracovali jsme seznam prostředí a uspořádali je do tematických skupin s vylepšenými popisy. Přidali jsme také ověřování vstupů a další bezpečnostní prvky.
+Ve verzi AdGuard pro Android v4.x jsme zcela přepracovali nízkoúrovňová nastavení. Přepracovali jsme seznam prostředí a uspořádali je do tematických skupin s vylepšenými popisy. Přidali jsme také ověřování vstupů a další bezpečnostní prvky.
 
 ### DNS ochrana
 
@@ -203,10 +203,6 @@ Zde můžete nastavit dobu prodlevy v milisekundách, než AdGuard znovu naplán
 #### MTU
 
 Zde můžete nastavit maximální přenosovou jednotku (MTU) rozhraní VPN. Jedná se o maximální velikost datového paketu používaného v místní síti VPN. Doporučený rozsah je 1500 –1900 bajtů.
-
-#### Automatické obnovení VPN
-
-Pokud je toto nastavení povoleno, lokální VPN AdGuardu se po vypnutí z důvodu nepřítomnosti sítě, tetheringu nebo režimu s nízkou spotřebou energie automaticky znovu zapne.
 
 #### Zachycování paketů (PCAP)
 

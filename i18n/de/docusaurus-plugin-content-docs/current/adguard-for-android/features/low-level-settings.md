@@ -13,15 +13,15 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::caution
 
-Changing the low-level settings can cause problems with AdGuard’s performance, interrupt your Internet connection, or compromise your security and privacy. Use the low-level features only if you are an experienced user and know what you are doing, or if our support team has asked you to do so.
+Das Ändern von <em x-id="3">Low-Level-Einstellungen</em> kann Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. Dieser Bereich sollte nur geöffnet werden, wenn Sie wissen, was Sie tun, oder wenn Sie von unserem Support-Team dazu aufgefordert wurden.
 
 :::
 
-To access _Low-level settings_, open the AdGuard app and tap the gear icon in the lower-right corner of the screen. Then select _General → Advanced → Low-level settings_.
+Um auf die _Low-Level-Einstellungen_ zuzugreifen, öffnen Sie die AdGuard App und tippen Sie auf das Zahnradsymbol in der unteren rechten Ecke des Bildschirms. Wählen Sie dann _Allgemein ➜ Erweitert ➜ Low-Level-Einstellungen_.
 
 ## Low-Level-Einstellungen
 
-For AdGuard v4.x for Android we’ve completely redesigned the low-level settings. We have reworked the list of settings and organized them into thematic groups with improved descriptions. We also added input validation and other safety valves.
+Für AdGuard für Android v4.x wurden die Low-Level-Einstellungen vollständig überarbeitet. Die Liste der Einstellungen wurde überarbeitet und in thematische Gruppen mit verbesserten Beschreibungen eingeteilt. Außerdem wurden die Eingabevalidierung und andere Sicherheitsmechanismen hinzugefügt.
 
 ### DNS-Schutz
 
@@ -204,10 +204,6 @@ Here you can set the delay in milliseconds before AdGuard reschedules the restor
 #### MTU
 
 Here you can set the maximum transmission unit (MTU) of the VPN interface. This is the maximum size of the data packet used in your local VPN. The recommended range is 1500-1900 bytes.
-
-#### Restore VPN automatically
-
-If this setting is enabled, AdGuard’s local VPN will be automatically re-enabled after being turned off due to network absence, tethering, or low-power mode.
 
 #### Packet capture (PCAP)
 

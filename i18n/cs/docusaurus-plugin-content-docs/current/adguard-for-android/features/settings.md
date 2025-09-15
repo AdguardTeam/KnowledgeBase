@@ -132,6 +132,12 @@ Režim _Lokální VPN_ neumožňuje používat AdGuard současně s jinými VPN.
 
 - _Automatický proxy_ je alternativní metoda směrování provozu, která nevyžaduje použití VPN. Významnou výhodou je, že jej lze provozovat souběžně s VPN. Tento režim vyžaduje přístup root.
 
+:::note
+
+Upozorňujeme, že filtrování DNS bude aktivní i v režimu _Automatického proxy serveru_ a zařízení nemusí být schopno filtrovat požadavky DNS z konkrétních aplikací. V režimu směrování _VPN_ jsou aplikace z lokální VPN vyloučeny systémovými prostředky. Řešitel systému proto vidí, které aplikace jsou součástí VPN a které ne. Buď je pustí do lokální VPN, nebo jim umožní ji obejít. Požadavky DNS však přicházejí ze systémového řešitele, nikoli z aplikace. V režimu _Automatický proxy server_ je možné vyloučit pouze provoz z aplikací, nikoli jejich dotazy DNS, protože AdGuard je považuje za systémové dotazy.
+
+:::
+
 - _Manuální proxy_ zahrnuje nastavení proxy na konkrétním portu, který lze poté nakonfigurovat v nastavení Wi-Fi. Tento režim vyžaduje přístup root pro Android 10 a vyšší.
 
 ## Licence

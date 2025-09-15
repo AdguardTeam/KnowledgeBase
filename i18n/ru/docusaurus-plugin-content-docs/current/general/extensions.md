@@ -39,7 +39,7 @@ AdGuard может значительно расширять функциона�
 
 :::
 
-#### Disable AMP
+#### Отключить AMP
 
 Скрипт, который предустановлен только в AdGuard для Android. Он отключает AMP (Accelerated Mobile Pages или «ускоренные мобильные страницы») на странице результатов поиска Google. [На GitHub](https://github.com/AdguardTeam/DisableAMP) есть подробности об этом пользовательском скрипте и о том, как его установить.
 
@@ -147,6 +147,7 @@ AdGuard поддерживает как старые функции GM\_, так
 - [`GM_addStyle`](https://www.tampermonkey.net/documentation.php#api:GM_addStyle)
 - [`GM_log`](https://www.tampermonkey.net/documentation.php#api:GM_log)
 - [`GM.addElement`, `GM_addElement`](https://www.tampermonkey.net/documentation.php#api:GM_addElement)
+- [`window.onurlchange`](https://www.tampermonkey.net/documentation.php#api:window.onurlchange)
 
 Подробную информацию об API Greasemonkey можно найти в [руководстве](https://wiki.greasespot.net/Greasemonkey_Manual:API).
 
@@ -192,16 +193,16 @@ AdGuard поддерживает как старые функции GM\_, так
 
 #### Trusted Types API
 
-AdGuard provides an instance of the `PolicyApi` class that allows you to manage Trusted Types in your userscripts.
+AdGuard предоставляет экземпляр класса `PolicyApi`, который позволяет управлять Trusted Types в ваших пользовательских скриптах.
 
-You can access the instance of this class by using the `ADG_policyApi` variable in your userscript.
+Вы можете получить доступ к экземпляру этого класса, используя переменную `ADG_policyApi` в пользовательском скрипте.
 
 ##### Свойства
 
 - `name: string` — название политики (по умолчанию `AGPolicy`).
 - `isSupported: boolean` — флаг, указывающий, поддерживается ли API Trusted Types текущим браузером.
 
-##### Polyfilled methods
+##### Методы с полифилом
 
 - [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). Если не поддерживается, возвращает `input: string`.
 - [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). Если не поддерживается, возвращает `input: string`.
@@ -212,12 +213,12 @@ You can access the instance of this class by using the `ADG_policyApi` variable 
 - [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). Если не поддерживается, возвращает `false`.
 - [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). Если не поддерживается, возвращает `false`.
 
-##### Additional Types
+##### Дополнительные типы
 
 ```typescript
 /**
- * Enum representation of the return values of the `getAttributeType` and
- * `getPropertyType` methods of the native Trusted Types API.
+ * Перечисление, представляющее возвращаемые значения методов `getAttributeType` и
+ * `getPropertyType` нативного API Trusted Types.
  *
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType}
@@ -228,12 +229,12 @@ enum TrustedType {
     ScriptURL = 'TrustedScriptURL',
 }
 
-// You can access it like that inside of userscript
+// Вы можете получить доступ к нему следующим образом внутри пользовательского скрипта
 ADG_TrustedType.HTML // "TrustedHTML"
 
 /**
- * Isomorphic trusted value type. If a browser supports the Trusted Types API, it will be one of the enum Trusted Types
- * (`TrustedHTML`, `TrustedScript` or `TrustedScriptURL`); otherwise, it will be regular `string`.
+ * Изоморфный тип доверенного значения. Если браузер поддерживает API Trusted Types, это будет один из перечисленных Trusted Types
+ * (`TrustedHTML`, `TrustedScript` или `TrustedScriptURL`); в противном случае это будет обычная строка `string`.
  *
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedHTML}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedScript}
@@ -246,16 +247,16 @@ type TrustedValue = string | TrustedHTML | TrustedScript | TrustedScriptURL;
 
 ```typescript
 /**
- * Creates a Trusted Type depending on `type`:
+ * Создаёт доверенный тип в зависимости от `type`:
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - or returns `value` if none of them is applicable.
+ * - или возвращает `value`, если ни один из них не подходит.
  *
- * @param type          Trusted Type.
- * @param value         Value from which a Trusted Type is created.
- * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
- * @returns             Created value.
+ * @param type          Доверенный тип.
+ * @param value         Значение, из которого создаётся доверенный тип.
+ * @param createArgs    Дополнительные аргументы, передаваемые в функцию, представленную `TrustedTypePolicy`.
+ * @returns             Созданное значение.
  */
 function create(
     type: TrustedType,
@@ -264,23 +265,23 @@ function create(
 ): TrustedValue
 
 
-// Example: Creates TrustedHTML
+// Пример: Создаёт TrustedHTML
 const trustedHTML = ADG_policyApi.create(ADG_TrustedType.HTML, '<div></div>');
 
 /**
- * Converts `value` of `attribute` into one of the Trusted Types:
+ * Конвертирует `value` атрибута `attribute` в один из доверенных типов:
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - or returns `value` if none of them is applicable.
+ * - или возвращает `value`, если ни один из них не подходит.
  *
- * @param tagName       Name of an HTML tag.
- * @param attribute     Attribute.
- * @param value         Value of an attribute to be converted.
- * @param elementNS     Element namespace. If empty, defaults to the HTML namespace.
- * @param attrNS        Attribute namespace. If empty, defaults to null.
- * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
- * @returns             Converted value.
+ * @param tagName       Имя HTML-тега.
+ * @param attribute     Атрибут.
+ * @param value         Значение атрибута для конвертирования.
+ * @param elementNS     Пространство имён элемента. Если не указано, по умолчанию используется пространство имён HTML.
+ * @param attrNS        Пространство имён атрибута. Если не указано, по умолчанию null.
+ * @param createArgs    Дополнительные аргументы, передаваемые в функцию, представленную `TrustedTypePolicy`.
+ * @returns             Конвертированное значение.
  */
 function convertAttributeToTrusted(
     tagName: string,
@@ -291,23 +292,23 @@ function convertAttributeToTrusted(
     ...createArgs: unknown[]
 ): TrustedValue
 
-// Example: Converts to TrustedScriptURL
+// Пример: Конвертирует в TrustedScriptURL
 const trustedScriptURL = ADG_policyApi.convertAttributeToTrusted("script", "src", 'SOME_URL');
 scriptElement.setAttribute("src", trustedScriptURL);
 
 /**
- * Converts `value` of `property` into one of the Trusted Types:
+ * Конвертирует `value` свойства `property` в один из доверенных типов:
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - or returns `value` if none of them is applicable.
+ * - или возвращает `value`, если ни один из них не подходит.
  *
- * @param tagName       Name of an HTML tag.
- * @param property      Property.
- * @param value         Value of a property to be converted.
- * @param elementNS     Element namespace. If empty, defaults to the HTML namespace.
- * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
- * @returns             Converted value.
+ * @param tagName       Имя HTML-тега.
+ * @param property      Свойство.
+ * @param value         Значение свойства для конвертирования.
+ * @param elementNS     Пространство имён элемента. Если не указано, по умолчанию используется пространство имён HTML.
+ * @param createArgs    Дополнительные аргументы, передаваемые в функцию, представленную `TrustedTypePolicy`.
+ * @returns             Конвертированное значение.
  */
 function convertPropertyToTrusted(
     tagName: string,
@@ -317,8 +318,82 @@ function convertPropertyToTrusted(
     ...createArgs: unknown[]
 ): TrustedValue
 
-// Example: Converts to TrustedHTML
+// Пример: Конвертирует в TrustedHTML
 divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML", "<div></div>");
+```
+
+#### Взаимодействие со SPA-сайтами
+
+:::info Совместимость
+
+Этот раздел относится только к AdGuard для Windows, AdGuard для Mac, AdGuard для Android и AdGuard для Linux с [CoreLibs] версии 1.19 или более поздней.
+
+:::
+
+Многие современные сайты, такие как YouTube, используют возможности [одностраничных приложений (Single Page Application, SPA)](https://en.wikipedia.org/wiki/Single-page_application). В отличие от традиционных веб-приложений, такая страница не перезагружается при переходе между страницами. Вместо этого содержимое обновляется динамически с помощью JavaScript, что обеспечивает более плавное взаимодействие с пользователем.
+
+На подобных сайтах пользовательскитй скрипт запускается только один раз, когда директивы `@match` или `@include` совпадают (если только не совпала директива `@exclude`). Из-за особенностей одностраничных приложений (SPA) скрипт не может быть повторно вызван при последующих изменениях страницы, так как глобальный контекст JavaScript остаётся неизменным. Чтобы решить эту проблему, пользовательские скрипты могут использовать директиву `@grant window.onurlchange`.
+
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @grant window.onurlchange
+// @run-at document-start
+// ==/UserScript==
+
+// via window.onurlchange
+window.onurlchange = (event) => {
+    console.log('URL changed to:', event.url);
+};
+
+// via window.addEventListener('urlchange')
+window.addEventListener('urlchange', (event) => {
+    console.log('URL changed to:', event.url);
+});
+```
+
+Это позволит пользовательским скриптам отслеживать изменения URL и соответствующим образом их обрабатывать.
+
+:::note
+
+Событие `urlchange` срабатывает только при полном изменении URL, например, при изменении пути или запроса, но не при изменении фрагмента (хеша).
+Примеры:
+
+- Переход с `https://example.com/page1` на `https://example.com/page2` вызовет событие.
+- Переход с `https://example.com/page1?query=1` на `https://example.com/page1?query=2` вызовет событие.
+- Переход с `https://example.com/page1#section1` на `https://example.com/page1#section2` **НЕ** вызовет событие.
+
+:::
+
+:::note
+
+API `window.onurlchange` и `window.addEventListener(\'urlchange\', ...)` являются нестандартными. Чтобы использовать их, вы должны явно предоставить разрешение в вашем польщовательском скрипте с помощью `@grant window.onurlchange`.
+
+:::
+
+Если сайт использует хеш-маршрутизацию, пользовательские скрипты могут использовать нативное DOM-событие [`hashchange`](https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event):
+
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @run-at document-start
+// ==/UserScript==
+
+// via window.onhashchange
+window.onhashchange = (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+};
+
+// via window.addEventListener('hashchange')
+window.addEventListener('hashchange', (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+});
 ```
 
 ## Пользовательские стили
@@ -329,7 +404,7 @@ divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML"
 
 :::info Поддерживаемые приложения
 
-Сейчас создавать и управлять пользовательскими стилями можно в двух приложениях AdGuard: AdGuard для Windows (версии 7.19 или выше) и AdGuard для Mac (версии 2.16 или выше). Мы также планируем добавить эту функцию в AdGuard 4.8 для Android.
+Сейчас создавать и управлять пользовательскими стилями можно в двух приложениях AdGuard: AdGuard для Windows (версии 7.19 или выше) и AdGuard для Mac (версии 2.16 или выше). Мы также планируем добавить эту функцию в AdGuard 4.8 для Android в ближайшем будущем.
 
 :::
 
@@ -363,30 +438,30 @@ divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML"
 
 3. Чтобы создать пользовательский стиль, сначала напишите заголовок с метаданными, например:
 
- ```CSS
- /* ==UserStyle==
- @name New userstyle
- @version 1.0
- ==/UserStyle== */
- ```
+   ```CSS
+   /* ==UserStyle==
+   @name New userstyle
+   @version 1.0
+   ==/UserStyle== */
+   ```
 
 4. После метаданных добавьте сам пользовательский стиль на основе CSS. AdGuard поддерживает доменные имена, соответствующие (`@-moz-document domain(…), …`). Например:
 
- ```CSS
- body {
-   background: gray;
-   }
- ```
+   ```CSS
+   body {
+     background: gray;
+     }
+   ```
 
- Или:
+   Или:
 
- ```CSS
- @-moz-document domain('example.org'),
- domain('example.net'),
- domain('example.com') body {
-   background: gray;
-   }
- ```
+   ```CSS
+   @-moz-document domain('example.org'),
+   domain('example.net'),
+   domain('example.com') body {
+     background: gray;
+     }
+   ```
 
 5. Когда закончите, нажмите _Сохранить и закрыть_. Готово, пользовательский стиль добавлен в AdGuard
 
@@ -409,3 +484,5 @@ divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML"
     }
 }
 ```
+
+[CoreLibs]: https://github.com/AdguardTeam/CoreLibs

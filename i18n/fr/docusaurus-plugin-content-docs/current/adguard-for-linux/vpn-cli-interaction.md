@@ -1,16 +1,16 @@
 ---
-title: AdGuard VPN CLI interaction
+title: L'interaction de CLI avec AdGuard VPN
 sidebar_position: 5
 ---
 
-## AdGuard VPN CLI interaction
+## L'interaction de CLI avec AdGuard VPN
 
-Using AdGuard CLI in **automatic proxy mode** together with AdGuard VPN CLI in **tunnel mode** is impossible due to a routing loop: AdGuard VPN CLI's traffic currently can not be excluded from being transparently proxied by AdGuard CLI, and AdGuard CLI's traffic must go through the AdGuard VPN CLI's tunnel.
+L'utilisation d'AdGuard CLI en **mode proxy automatique** avec AdGuard VPN CLI en **mode tunnel** est impossible à cause d'une boucle de routage : le trafic d'AdGuard VPN CLI ne peut actuellement pas être exclu de l'acheminement transparent par AdGuard CLI, et le trafic d'AdGuard CLI doit passer par le tunnel d'AdGuard VPN CLI.
 
-These are the two possible solutions:
+Voici les deux solutions possibles :
 
-- Switch AdGuard CLI to **manual proxy mode**.
-    - In this case, AdGuard VPN CLI can be used in **tunnel mode**, but apps for which ad blocking is desired must be manually configured to use the AdGuard CLI's proxy.
-- Switch AdGuard VPN CLI to **SOCKS5 mode**, and configure AdGuard CLI with an outbound proxy pointing to the SOCKS5 interface of AdGuard VPN CLI. In this case, it's important to keep in mind that:
-    - For an app's traffic to go through the VPN tunnel it must either have its traffic transparently proxied by AdGuard CLI (which is the case for all apps by default), or manually configured to use AdGuard VPN CLI's SOCKS5 interface.
-    - In order to avoid a routing loop, the `skip_outbound_proxy` option must be enabled for AdGuard VPN CLI in AdGuard CLI's apps configuration section. By default, `skip_outbound_proxy` is enabled for all apps with `vpn` in their name, including AdGuard VPN CLI.
+- Basculez AdGuard CLI en **mode proxy manuel**.
+  - Dans ce cas, AdGuard VPN CLI peut être utilisé en **mode tunnel**, mais les applications pour lesquelles le blocage de publicités est souhaité doivent être configurées manuellement pour utiliser le proxy de AdGuard CLI.
+- Basculez AdGuard VPN CLI en **mode SOCKS5** et configurez AdGuard VPN CLI avec un proxy sortant pointant vers l'interface SOCKS5 d'AdGuard VPN CLI. Dans ce cas-là, il faut garder à l'esprit que :
+  - Pour que le trafic d’une application passe par le tunnel VPN, son trafic doit être transmis de manière transparente par l’interface de ligne de commande AdGuard (ce qui est le cas pour toutes les applications par défaut), ou configuré manuellement pour utiliser l’interface SOCKS5 de AdGuard VPN CLI.
+  - Afin d'éviter une boucle de routage, l'option `skip_outbound_proxy` doit être activée pour AdGuard VPN CLI dans la section de configuration des applications d'AdGuard CLI. Par défaut, `skip_outbound_proxy` est activée pour toutes les apps contenant `vpn` dans leur nom, y compris AdGuard VPN CLI.

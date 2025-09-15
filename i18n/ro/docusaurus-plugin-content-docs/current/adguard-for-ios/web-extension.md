@@ -17,7 +17,7 @@ AdGuard's Safari Web extension compliments AdGuard by giving it the ability to e
 
 În plus, extensia Web Safari AdGuard poate fi utilizată pentru a gestiona rapid AdGuard pentru iOS direct din browser. Apăsați pe butonul *Extensii* — este cel cu un icon de puzzle; în funcție de tipul dispozitivului, poate fi localizat în stânga sau în dreapta barei de adrese. Găsiți **AdGuard** în listă și apăsați pe el.
 
-![Meniul extensiei *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/ext_adguard_en.png?1)
+![Meniul extensiei *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/open-safari-assistant.jpg)
 
 > Pe iPad-uri, extensia Web Safari AdGuard poate fi accesată direct apăsând pe iconița AdGuard din bara de adrese a browserului.
 
@@ -41,42 +41,48 @@ Extensia AdGuard Web Safari necesită acces la conținutul paginilor web pentru 
 
 Extensia Web nu este un instrument autonom și necesită AdGuard pentru iOS. Dacă nu aveți AdGuard pentru iOS instalat pe dispozitivul dvs., vă rugăm să [îl instalați mai întâi](../installation) și să completați procesul de introducere pentru a-l pregăti pentru utilizare.
 
-Odată ce ați terminat, deschideți *Setări → Safari → Extensii*.
+Once done, open the *Settings* app and scroll down to *Apps*.
 
-![Selectați "Safari" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings1_en.png)
+![Select Apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/apps.jpg)
 
-![Selectați "Extensii" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings2_en.png)
+Then, open *Safari* → *Extensions*.
 
-Găsiți secțiunea **PERMITEȚI ACESTE EXTENSII** și apoi găsiți **AdGuard** printre extensiile disponibile.
+![Select Safari *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings1_en.png)
 
-![Selectați "AdGuard" în secțiunea PERMITEȚI ACESTE EXTENSII *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_en.png)
+![Select Extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings2_en.png)
 
-Tap it, then toggle the switch on. Pe aceeași pagină, setați permisiunea *Toate site-urile* pentru AdGuard fie pe *Permite*, fie pe *Întreabă*. Dacă alegeți *Permite*, nu va trebui să oferiți permisiunea de fiecare dată când vizitați un site nou. Dacă nu sunteți sigur, alegeți *Întreabă* pentru a oferi permisiuni pe bază de site.
+In the **ALLOW THESE EXTENSIONS** section find **AdGuard** among the available extensions.
 
-![Setările extensiei *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
+![Select AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/select-ag.jpg)
+
+Tap it, then toggle the *Allow Extension* switch on.
+
+Lower on the same screen, make sure *All Websites* is set *Allow* or *Ask*. If you choose *Allow*, you won't have to give permission every time you visit a new website. If you are unsure, choose *Ask* to grant permissions on a per-site basis.
+
+![AdGuard extension in Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ag-webext-in-settings.png)
 
 ### În Safari
 
-De asemenea, puteți activa extensia AdGuard din browserul Safari. Pentru a face acest lucru, apăsați *Extensii* (dacă nu o vedeți lângă bara de adrese, apăsați pe iconița `aA`).
+To enable the AdGuard extension right from the Safari browser, tap the icon on the left side of the URL field:
 
-![În Safari, apăsați pe iconița aA *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari1_en.png)
+![In Safari tap icon on the left of URL field *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-1.jpg)
 
-Apoi găsiți opțiunea *Gestionați extensiile* în listă și apăsați pe ea. În fereastra deschisă, activați comutatorul de lângă **AdGuard**.
+Then, tap *Manage Extensions*.
 
-![Extensii *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari2_en.png)
+![Extensions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-2.jpg)
 
-![Extensii *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari3_en.png)
+In the opened window, turn on the AdGuard switches. The top one is the AdGuard Web extension; the other six are content blockers needed for filtering.
 
-Dacă folosiți această metodă, s-ar putea să trebuiască să mergeți la setările Safari pentru a oferi extensiei AdGuard permisiunile necesare.
+![Extensions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-3.jpg)
 
-Acum ar trebui să puteți vedea AdGuard printre extensiile disponibile. Apăsați pe aceasta și apoi pe iconița galbenă **i**. Activați **Protecția avansată** apăsând butonul *Activați* și confirmând acțiunea.
+You should now be able to see AdGuard among the available extensions. To enable **Advanced protection**, open AdGuard extension, tap the yellow **i** icon, press *Enable*, and confirm the action.
 
 :::note
 
-Dacă folosiți AdGuard pentru iOS fără un abonament Premium, nu veți putea activa **Protecția avansată**.
+If you use AdGuard for iOS without Premium subscription, you won't be able to enable **Advanced protection**.
 
 :::
 
-Alternativ, puteți activa **Protecția avansată** direct din aplicație, în fila **Protecție** (a doua de la stânga în rândul de iconițe de jos).
+Alternatively, you can enable **Advanced protection** directly from the app, in the **Protection** tab (second from the left in the bottom icon row).
 
-Extensia AdGuard Web Safari funcționează doar pe versiunile iOS 15 și ulterioare.
+AdGuard's Safari Web extension only works on iOS versions 15 and later.

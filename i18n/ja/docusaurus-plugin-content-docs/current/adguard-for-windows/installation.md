@@ -21,33 +21,37 @@ sidebar_position: 2
 
 ## AdGuard for Windows インストール方法
 
-Microsoft Windowsを搭載したPCやタブレットでAdGuardを使用するには、インストールパッケージをダウンロードして、インストールプログラムを起動する必要があります。 以下の操作を行ってください:
+To install AdGuard on a Windows PC or tablet, follow these steps:
 
-1. [AdGuard ホームページ](http://adguard.com)にアクセスし、[*ダウンロード*](https://adguard.com/download.html?auto=1)をクリックします。
+1. Go to the [AdGuard website](http://adguard.com) and click *Download*. You can also get the installation program from the [download page](https://adguard.com/download.html?auto=1) — the download will start automatically.
 
-   ![AdGuardをダウンロード](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
+   ![Download AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/website_en.png)
 
-2. ダウンロードが完了しましたら、ダウンロードバーにある「*開く*」ボタンを押すか、「*adguardInstaller.exe*」というファイルを押してください。
+2. Once the download is complete, open the file *adguardInstaller.exe*.
 
-   ![「実行」を押す](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/click-download.png)
+   ![Downloaded file](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/download_en.png)
 
-3. ユーザーアカウント制御のダイアログボックスが表示され、アプリがPCに変更を加えることを許可するよう求められた場合は、 「*はい*」をクリックしてください。
+3. You’ll see a User Account Control prompt asking if you want to allow the app to make changes to your PC. 「*はい*」をクリックしてください。
 
    ![変更を許可 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/allow-changes.png)
 
-4. 次に、PC上でAdGuardのインストール先を選びます。
+4. Choose the folder where you want AdGuard to be installed.
 
-   ![フォルダを選択 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/install-wizard.png)
+   ![フォルダを選択 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer1_en.png)
 
-   デフォルトのインストール先を変更したい場合は、「*参照*」を押して、「*フォルダを参照*」ウィンドウでAdGuardをインストールするフォルダを選択し、「*OK*」をクリックして選択を確定してください。 また、「*新規フォルダを作成*」をクリックしてフォルダ名を入力することで、AdGuardを新しいフォルダにインストールすることもできます。 AdGuardのデスクトップショートカットを作成するには、「*デスクトップにショートカットを作成*」にチェックを入れます。 「*インストール*」を押して、インストールを続行します。
+   If you want to select a different location, click *Browse*, choose the folder, and click *OK*. You can also create a new folder by clicking *Make New Folder* and naming it. If you’d like a desktop shortcut, check the box *Create a desktop shortcut*. Then click *Install* to start the installation.
 
-   ![インストール開始 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/start-install.png)
+   ![インストール開始 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer2_en.png)
 
 5. インストールが完了しましたら、「*終了*」を押します。
 
-   ![インストール完了 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/finish-install.png)
+   ![インストール完了 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer3_en.png)
 
-   お試し版開始 お使いのコンピュータへのAdGuardインストールは完了です。 画面には、アプリの設定を変更できるメインウィンドウが表示されます。
+   お試し版開始 AdGuard has been successfully installed. You’ll be prompted to set up protection according to your preferences.
+
+   ![Setting up protection *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/setting_up_protection_en.png)
+
+   After that, the main window will open, where you can adjust the app’s settings.
 
 ## AdGuard for Windows をアンインストールする方法 {#uninstall}
 
@@ -55,59 +59,55 @@ Microsoft Windowsを搭載したPCやタブレットでAdGuardを使用するに
 
 AdGuardをアンインストールまたは再インストールする必要がある場合は、以下の操作を行ってください。
 
-- 【Microsoft Windows 10・11 の場合】 「*スタート*」をクリックして*スタートメニュー*を開き、「*設定*」を選択します。 開いたウィンドウで*アプリ*アイコンをクリックします。 *アプリ*ウィンドウの左側のリストから、「*アプリと機能*」を選択します。 「*AdGuard*」をリストから選択し、「*アンインストール*」をクリックします。 開いたダイアログボックスで「*アンインストール*」をクリックして確認します。
+- For Microsoft Windows 10 & 11: Open the *Start Menu* by clicking *Start*, then select *Settings*. In the window that opens, click  *Apps* → *Installed apps*. Select *AdGuard* from the list of your installed apps, click the three-dot menu, and select *Uninstall*.
 
-![Windows 10 と 11 でのアンインストール *border](https://cdn.adguard.com/public/Adguard/kb/installation/Win/ja/W7-ja.png)
+   ![Windows 10 & 11 uninstallation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/win11_uninstall_adguard.png)
 
-- 【Microsoft Windows 8の場合】 タスクバーの左下にある*空のスペース*を右クリックし、*コントロールパネル*を選択します。 *プログラム*セクションで*プログラムのアンインストール*をクリックし、インストールされているアプリのリストから*AdGuard*を選択して、リストの真上にある*アンインストール*ボタンを押します。 開いたウィンドウで「*AdGuardのアンインストール*」をクリックして動作を確認します。
+- For Microsoft Windows 8: Right-click the *empty space* in the lower left corner of the task bar and select *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
 
-![Windows 8 でのアンインストール](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/win8-uninstall.png)
+- For Microsoft Windows 8.1: Right-click the *Start button* and select *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
 
-- 【Microsoft Windows 8.1の場合】 *スタートボタン*を右クリックし、*コントロールパネル*を選択します。 *プログラム*セクションで*プログラムのアンインストール*をクリックし、インストールされているアプリのリストから*AdGuard*を選択して、リストの真上にある*アンインストール*ボタンを押します。 開いたウィンドウで「*AdGuardのアンインストール*」をクリックして動作を確認します。
-
-- 【Microsoft Windows 7の場合】 *スタートメニュー*を開きます。 検索ボックスに「*コントロールパネル*」と入力します。 *プログラム*セクションで*プログラムのアンインストール*をクリックし、インストールされているアプリのリストから*AdGuard*を選択して、リストの真上にある*アンインストール*ボタンを押します。 開いたウィンドウで「*AdGuardのアンインストール*」をクリックして動作を確認します。
-
-![Windows 7 でのアンインストール *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/win7-uninstall.png)
+- For Microsoft Windows 7: Open *Start Menu*. In the search box, type *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
 
 ### アドバンスド方法 {#advanced}
 
-何らかの理由で通常のアンインストールがうまくいかない場合は、アドバンスド方法を試してみてください。 まず、AdGuardのエンジニアが作成した[アンインストーラーツールをダウンロード](https://static.adtidy.org/windows/uninstaller/uninstal_utility.zip)する必要があります。 アーカイブをお使いのPCの任意のフォルダに解凍し、「**Adguard_Uninstall_Utility.exe**」ファイルを実行して、パソコンに変化を与えることを許可してください。 その後、以下の手順に行なってください:
+In case regular uninstall doesn't work for any reason, you can try to use an advanced method. First of all, you need to [download the uninstaller tool](https://static.adtidy.org/windows/uninstaller/uninstal_utility.zip) created by our developers. Extract the archive to any folder on your PC and run the **Adguard.UninstallUtility.exe** file, and allow the app to make changes to your device. Then follow the instruction below:
 
-- *AdGuard Ad Blocker*と *Standard*uninstall type を選択し、*Uninstall* をクリックします。
+- Select *AdGuard Ad Blocker* and *Standard* uninstall type, then click *Uninstall*.
 
-![通常のアンインストール *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard.jpg)
+   ![Standard uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard.jpg)
 
-- 警告ウィンドウが表示されたら、 *OK* をクリックします。
+- Click *OK* once the warning window pops up:
 
-![通常のアンインストール *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
+   ![Standard uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- アンインストールが完了するまで待ちます。 **Uninstall complete**（アンインストールが完了しました）と表示され、コンピュータを再起動するよう促されます:
+- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
 
-![アンインストール完了 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard_complete.jpg)
+   ![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard_complete.jpg)
 
 :::caution
 
-【注意】 最初の2つのステップを実行しても十分ではなかった場合にのみ、ステップ3と4を行なってください。 高度なアンインストール手順のステップ3～4を使用する前に、AdGuardサポートに連絡することを強くお勧めします。
+Follow the next steps only if performing the first two steps wasn’t enough for some reason. We strongly suggest contacting our support before using steps 3-4 of advanced uninstall instruction.
 
 :::
 
-- *AdGuard Ad Blocker* と *Extended* uninstall type を選択し、*Uninstall* をクリックします。 ウィンドウのプロンプトで *Yes, continue* をクリックします。
+- Select *AdGuard Ad Blocker* and *Extended* uninstall type, then click *Uninstall*. Click *Yes, continue* in the window prompt.
 
-![拡張アンインストール *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
+   ![Extended uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
 
-- 警告ウィンドウが表示されたら、 *OK* をクリックします。
+- Click *OK* once the warning window pops up:
 
-![拡張アンインストール警告 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
+   ![Extended uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- アンインストールが完了するまで待ちます。 **Uninstall complete**（アンインストールが完了しました）と表示され、コンピュータを再起動するよう促されます:
+- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
 
-![拡張アンインストール完了 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
+   ![Extended uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
 
-AdGuardのアンインストール完了です！
+AdGuard is successfully uninstalled!
 
 #### コンソールモードでアンインストーラを実行する
 
-高度なアンインストーラをユーザー対話モードで実行する以外に、コマンドライン引数を使用して AdGuard for Windows をアンインストールすることもできます。 それを行うには、以下の手順を行なってください:
+Besides running the advanced uninstaller in its user-interactive mode, you can also use command-line arguments to uninstall AdGuard for Windows. To do this, follow the instructions below:
 
 1. スタート メニューから「*cmd*」と入力してコマンドプロンプトを開きます。
 2. `/console` を使用して対話型UIなしでコンソールモードでアンインストーラーを実行します。 ※`/console` モードが有効化されていない場合、以下のすべてのコマンドラインパラメーターは無視されます。
@@ -119,6 +119,6 @@ AdGuardのアンインストール完了です！
 
 :::note
 
-アンインストールを成功させるには、パラメータ `/console` と `/adblocker` を使用する必要があります。 パラメータ `/advanced` と `/settings` は任意オプションです。
+The use of the parameters `/console` and `/adblocker` is necessary for a successful uninstall. The parameters `/advanced` and `/settings` are optional.
 
 :::

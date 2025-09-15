@@ -27,7 +27,7 @@ Safari için AdGuard, App Store'da sunulan ücretsiz bir uygulamadır. Cihazın�
 
     ![Bildirim: Bazı uzantılar devre dışı bırakıldı](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
 
-    :::not
+    :::note
 
     Safari için AdGuard'ın düzgün çalışması için tüm uzantılar gerekli değildir. Örneğin, *Simge* uzantısını kontrol etmek, arama çubuğunun yanındaki simgeyi etkinleştirir. However, we recommend enabling all of them.
 

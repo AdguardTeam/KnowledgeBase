@@ -9,17 +9,23 @@ sidebar_position: 2
 
 После этого перейдите на [страницу AdGuard](https://crowdin.com/profile/adguard/). Вы увидите проекты, в каждом из которых находятся папки и файлы со строками для различных продуктов.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/projects.png)
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_page.png)
 
-Выберите свой язык, и вы увидите список доступных папок с продуктами.
+:::note
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/languages.png)
+*Глоссарий AdGuard* используется только для хранения и управления терминами — его не нужно переводить.
 
-Вы можете начать переводить любой понравившийся вам продукт. У нас есть несколько рекомендаций о том, [с каких файлов лучше начинать работу в проекте AdGuard Websites](../translation-priority).
+:::
+
+Выберите проект, который вы хотите перевести, нажмите *Присоединиться* и выберите язык.
+
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_kb.png)
+
+Вы можете начать переводить любой понравившийся вам продукт, выбрав соответствующую папку. У нас есть несколько рекомендаций о том, [с каких файлов лучше начинать работу в проекте AdGuard Websites](../translation-priority).
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/folders.png)
 
-Отфильтруйте фразы, которые еще не переведены, и начните свою историю переводов.
+Отфильтруйте фразы, которые ещё не переведены, и начните свою историю переводов.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
@@ -27,7 +33,7 @@ sidebar_position: 2
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/text-box.png)
 
-Если вы не согласны с существующим переводом, вы можете предложить свой вариант. Кроме того, вы можете голосовать за и против предложений, сделанных другими волонтерами, нажимая кнопки «плюс» и «минус».
+Если вы не согласны с существующим переводом, вы можете предложить свой вариант. Кроме того, вы можете голосовать за и против предложений, сделанных другими волонтёрами, нажимая кнопки «плюс» и «минус».
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/vote.png)
 

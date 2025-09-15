@@ -9,7 +9,7 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 :::
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 Údaje a/nebo soubory poskytnuté v protokolech jsou zpracovávány v souladu se [Zásadami ochrany osobních údajů AdGuardu](https://adguard.com/en/privacy.html).
 
@@ -17,7 +17,7 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 K analýze a diagnostice různých problémů, které mohou potenciálně nastat, může služba podpory AdGuard potřebovat soubory záznamů AdGuardu. Tyto soubory obsahují záznamy o chybách a dalších událostech, ke kterým došlo v softwaru. Níže je uveden stručný návod popisující způsoby, jak získat soubory záznamů a v případě potřeby je odeslat službě podpory.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 AdGuard se zavazuje chránit vaše soukromí. Přísně dodržujeme naše [Zásady ochrany osobních údajů](https://adguard.com/privacy/windows.html) a neshromažďujeme žádné soukromé informace o uživatelích. Před odesláním protokolů týmu podpory si soubor prohlédněte, protože může obsahovat další informace, které nechcete sdílet. Pokud takové osobní údaje obsahuje, doporučujeme je nejprve smazat.
 
@@ -57,7 +57,7 @@ Někdy vás členové týmu podpory mohou požádat o zaslání *záznamů traso
 
 1. Otevřete konzoli (na úvodním panelu zadejte `cmd`).
 
-1. Spusťte aplikaci příkazem `C:\"Program Files"\Adguard\Adguard.exe /trace` bez ohledu na bitovou verzi Windows, pokud jste nainstalovali AdGuard v7.16 pro Windows nebo novější.
+1. Spusťte aplikaci příkazem `C:\"Program Files"\Adguard\Adguard.exe /trace` bez ohledu na bitovou verzi Windows, pokud jste nainstalovali AdGuard pro Windows v7.16 nebo novější.
 
 Pokud máte starší verzi AdGuard pro Windows, spusťte aplikaci příkazem C:\"Program Files (x86)"\Adguard\Adguard.exe /trace, pokud používáte 64bitový systém Windows a C:\"Program Files"\Adguard\Adguard.exe /trace, pokud používáte 32bitový systém.
 

@@ -9,22 +9,29 @@ The license key can be activated on a [limited number of devices](../what-is). A
 
 ### Cihaz nasıl kaldırılır
 
-- Click *Reset license* or *Log out* in an AdGuard app
+#### Method 1
 
-- Remove the device from your AdGuard account:
-    1. Click *AdGuard Ad Blocker* in your [AdGuard account](https://adguardaccount.com/).
+On the device that you want to unbind, open the AdGuard app and click *Reset license* or *Log out*.
 
-        ![Account Ad Blocker tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
+#### Method 2
 
-    1. Click the device you want to unbind.
+As an alternative, you can remove the device in your AdGuard account:
 
-        ![Select device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+1. [AdGuard hesabınıza](https://adguardaccount.com/) giriş yapın.
 
-    1. Click *Remove*.
+1. *AdGuard Reklam Engelleyici* sekmesini açın.
 
-        ![Click Remove *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+    ![Account Ad Blocker tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 
-İhtiyacınız olan sayıda cihazı kaldırdıktan sonra, yeni cihazlarda AdGuard hesabınıza giriş yapabilirsiniz. Lisans onlara bağlı olacaktır.
+1. Click the device you want to unbind.
+
+    ![Select device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+
+1. Click *Remove*.
+
+    ![Click Remove *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+
+After you have unbound the number of devices you need, you will be able log in on new devices. The license will become bound to them.
 
 ## Lisans başka bir AdGuard hesabına nasıl aktarılır{#transferaccount}
 

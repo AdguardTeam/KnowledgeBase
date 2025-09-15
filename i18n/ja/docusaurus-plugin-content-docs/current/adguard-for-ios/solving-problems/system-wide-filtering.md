@@ -5,49 +5,40 @@ sidebar_position: 2
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for iOS」について書いています。 実際にどのように動作するかを確認するには、[AdGuard アプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for iOS」について書いています。 To see how it works firsthand, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
 ## システムワイドブロックについて
 
-iOSでのシステムワイドブロックとは、Safariブラウザ以外、つまり他のアプリやブラウザで、ネットワークレベルで広告やトラッカー（個人情報追跡ソフト）をブロックすることです。 他社広告ブロッカーのほとんどはシステムワイドブロックをできませんが、AdGuardはできます。ただし、少し設定が必要であり、本記事では、お使いのiOSデバイスでこの機能を設定する方法をご紹介します。
+System-wide filtering lets you block ads and trackers not just in Safari, but across other apps and browsers on your iOS device. iOS is a fairly closed operating system, and Apple provides limited options for blocking ads outside Safari. The only way to block ads and trackers system-wide is through [DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/). This article explains how to enable it.
 
-iOSでは、広告やトラッカーをシステム全体でブロックする唯一の方法は、[DNSフィルタリング](https://adguard-dns.io/kb/general/dns-filtering/)を使用することです。
+![How DNS filtering works](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 
-まず、「DNS通信を保護」を有効にする必要があります。 その方法は以下の通りです:
+The first thing you need to do is enable DNS protection:
 
-1. *AdGuard for iOS* アプリを開きます。
-2. *AdGuardによる保護*アイコン（下部メニューバーの2番目の盾アイコン）をタップします。
-3. 「*DNS通信を保護*」のスイッチをオンにします。
+1. Open *AdGuard*.
+2. Tap the *Protection* icon (shield icon in the bottom menu bar).
+3. Turn on *DNS protection*.
 
-![DNS通信を保護画面 *mobile_border](https://cdn.adguard.com/public/Adguard/Blog/ios_dns_protection_ja.PNG)
+![DNS通信を保護画面 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/dns_protection.png)
 
-AdGuardを使ってシステムワイドブロックを行うには3つの方法があります:
+Once DNS protection is on, you have three options:
 
- 1. AdGuard DNS フィルタを使用する（<*AdGuardによる保護*アイコン（下部メニューバーの2番目の盾アイコン）） → *DNS通信を保護* → *DNSフィルタリング* → *DNSフィルタ* → *AdGuard DNS フィルタ*）
- 2. AdGuard DNS サーバー（<*AdGuardによる保護*アイコン（下部メニューバーの2番目の盾アイコン）） → *DNS通信を保護* → *DNSサーバー* → *AdGuard DNS*）を使用するか、その他の任意のDNSサーバーを使用する
- 3. お好みのカスタムDNSフィルターやhostsファイルを追加する
+- **Use AdGuard DNS filter.** To enable it, go to *Protection* → *DNS protection* → *DNS filtering* → *DNS filters* → *AdGuard DNS filter*. With this option, you’re not tied to a specific blocking server — the filter does all the blocking.
+- **Use a blocking DNS server.** Go to *Protection* → *DNS protection* → *DNS server* and select *AdGuard DNS* or another blocking server to your liking.
+- **Add a custom DNS filter or hosts file.** You can add multiple DNS filters and hosts files. Be aware that using too many may slow down AdGuard.
 
-第1と第3の方法の利点は以下のとおりです:
+## How to add custom DNS filter and hosts file
 
-- DNSフィルタが広告ブロックしてくれるので、DNSサーバーは任意のものにすることが可能
-- 複数のDNSフィルタおよびhostsファイルを追加することが可能（ただし、多すぎるとAdGuardの動作が遅くなる可能性がありますので、数にはご注意ください。）
+For example, let’s add the [OISD Blocklist Big](https://oisd.nl/).
 
-![DNSフィルタリングの仕組み](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_ja.png)
+1. Copy the OISD Blocklist Big link: `https://big.oisd.nl`
+2. Open *Protection*  → *DNS protection* → *DNS filtering* → *DNS filters*.
+3. Tap *Add a filter*.
+4. Paste the link into the filter URL field.
+5. Tap *Next* → *Add*.
 
-## カスタムDNSフィルタやhostsファイルを追加する方法
+![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/adding_dns_filter.png)
 
-好きなDNSフィルタやhostsファイルをなんでも追加できます。
-
-例として、[OISD Blocklist Big](https://oisd.nl/) を追加してみましょう。
-
-1. このリンクをコピーします: `https://big.oisd.nl` ( OISD Blocklist Big フィルタのリンクです)
-2. AdGuardアプリ→ *AdGuardによる保護*アイコン（下部メニューバーの2番目の盾アイコン）） → *DNS通信を保護* → *DNSフィルタリング* → *DNSフィルタ*
-3. 「*フィルターを追加する*」をタップします。
-4. フィルタURL欄にリンクを貼り付けます。
-5. *次へ* → *追加* をタップします。
-
-![DNSフィルタ追加画面 *mobile_border](https://cdn.adtidy.org/blog/new/ot4okIMGD236EB8905471.jpeg)
-
-完了です。ステップ4で別のDNSフィルタのURLをコピーして貼り付けることで、DNSフィルタをいくつでも追加できます。 様々なフィルターやそのリンクは[こちら](https://filterlists.com)で確認することができます。
+Add any number of DNS filters by repeating step 4 with a different URL. You can find various filter lists and their links at [filterlists.com](https://filterlists.com).

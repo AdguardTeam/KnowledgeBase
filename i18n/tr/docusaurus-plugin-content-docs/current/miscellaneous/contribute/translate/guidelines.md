@@ -17,7 +17,7 @@ Choose any of available product folders and select a file — now you can start 
 
 ![Dosyalar *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
 
-:::not
+:::note
 
 Ayrıca sayfanın sağ üst köşesinde bulunan *Ayarlar* simgesine tıklayarak Crowdin arayüz dilini değiştirebilirsiniz. Açılan pencerede *Kullanıcı arayüz dili* sekmesine gidin. Açın, bir dil seçin ve **Değiştir** öğesine tıklayın.
 

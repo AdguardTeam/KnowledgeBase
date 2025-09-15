@@ -15,7 +15,7 @@ Bu makale, yalnızca Safari tarayıcınızı koruyan Safari için AdGuard hakkı
 2. Sol üst köşedeki menüden _Safari_ öğesine tıklayın.
 3. _Ayarlar…_ → _Uzantılar_ öğesine tıklayın.
 4. Tüm AdGuard uzantıları için _Özel Gözatma'da İzin Ver_ öğesini işaretleyin.
- ![Özel gözatma kontrol edildi](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
+   ![Özel gözatma kontrol edildi](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
 
 Bu işe yaramazsa ve reklamlar hala engellenmiyorsa, lütfen support@adguard.com adresinden destek ekibimizle iletişime geçin.
 
