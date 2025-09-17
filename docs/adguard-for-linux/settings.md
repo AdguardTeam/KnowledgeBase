@@ -166,7 +166,8 @@ Disable certificate verification for HTTPS proxies:
 adguard-cli config set outbound_proxy.trust_any_certificate true
 ```
 
-Enable SOCKS5 proxy for UDP traffic (note: 
+Enable SOCKS5 proxy for UDP traffic:
+
 ```sh
 adguard-cli config set outbound_proxy.udp_through_socks5_enabled true
 ```
@@ -176,7 +177,6 @@ adguard-cli config set outbound_proxy.udp_through_socks5_enabled true
 If your SOCKS5 proxy does not support UDP, connections may fail.
 
 :::
-
 
 ### Checking the current configuration
 
