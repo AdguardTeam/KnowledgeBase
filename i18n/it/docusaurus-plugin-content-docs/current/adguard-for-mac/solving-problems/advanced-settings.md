@@ -81,6 +81,12 @@ Verifica l'autenticità di tutti i certificati per il dominio in base alla Polit
 
 Impostandolo a `true`, consenti ad AdGuard di filtrare il traffico inviato via HTTP/3, l'ultima versione del protocollo HTTP, basata su QUIC.
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 #### `network.filtering.localnetwork`
 
 Impostando `true`, abiliti il filtraggio della rete locale.
