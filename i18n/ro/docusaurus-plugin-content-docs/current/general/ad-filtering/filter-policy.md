@@ -41,14 +41,12 @@ Filtrele de blocare a reclamelor AdGuard includ:
 - Filtru de bază AdGuard
 - AdGuard Mobile Ads filter
 - Filtre regionale împărțite pe principiu de limbă — chineză, olandeză, franceză, germană, japoneză, rusă, spaniolă/portugheză, turcă și ucraineană
-- AdGuard Quick Fixes filter
 
 ### Scopul acestor filtre
 
 - **Filtrul de bază** este conceput pentru a bloca reclamele pe site-uri în limba engleză și pe cele pentru care nu există un filtru separat. It also contains general filtering rules that apply to all sites regardless of language
 - **Mobile Ads filter** blocks advertisements on mobile versions of websites and within mobile apps. There is no segmentation based on language
 - **Regional filters** follow the same policy as the **Base filter**, but limited to websites in certain languages
-- **Quick Fixes filter** used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension.
 
 Obiectivul filtrelor de blocare a reclamelor este de a bloca toate tipurile de publicitate pe site-uri, aplicații și anumite dispozitive care pot încărca reclame de pe Internet:
 

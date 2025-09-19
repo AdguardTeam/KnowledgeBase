@@ -11,15 +11,15 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 _Configurações_ é a seção que requer mais atenção. É aqui que você pode configurar o aplicativo para que atenda plenamente às suas necessidades: bloqueia apenas o que incomoda, usa o servidor DNS do provedor confiável, remove cookies de terceiros e assim por diante.
 
+### General settings
+
+Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect _Debug logs_](/adguard-for-windows/solving-problems/adguard-logs.md).
+
 ![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/general_settings.png)
 
-### Configurações gerais
-
-Aqui você pode definir o idioma e o tema (escuro ou claro), ativar o lançamento do AdGuard na inicialização do sistema e atualizações automáticas silenciosas, escolher o canal de atualização e filtrar o intervalo de verificação de atualização. Além disso, você pode recorrer às configurações se o AdGuard para Windows não estiver funcionando corretamente e o Suporte ao cliente solicitar que você [colete _Logs de depuração_](/adguard-for-windows/solving-problems/adguard-logs.md).
+At the very bottom of the screen you will find _Advanced Settings_. Changing some of them mindlessly may potentially cause problems with AdGuard’s performance, break the Internet connection or compromise your security and privacy. That’s why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in _Advanced Settings_, read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
 
 ![Advanced Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/advanced_settings.png)
-
-Na parte inferior da tela, você encontrará as _Configurações avançadas_. Changing some of them mindlessly may potentially cause problems with AdGuard’s performance, break the Internet connection or compromise your security and privacy. That’s why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in _Advanced Settings_, read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
 
 ### Ad blocking
 
@@ -46,9 +46,9 @@ Muitos sites coletam informações sobre seus visitantes, como endereços IP, in
 
 ![Tracking protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection.png)
 
-Você pode ajustar de forma flexível o funcionamento do Modo Sigiloso: por exemplo, você pode proibir o site de receber a solicitação de pesquisa que você usou para encontrá-lo na Internet, excluir automaticamente os cookies de terceiros e do próprio site e desativar o compartilhamento de localização no seu navegador, que pode ser usado para rastrear sua localização real.
+You can flexibly adjust the work of _Tracking protection_: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and disable location sharing in your browser that can be used to track your whereabouts.
 
-Para saber tudo sobre o Modo Sigiloso e suas diversas opções, [leia este artigo](/general/stealth-mode).
+To learn everything about _Tracking protection_ and its many options, [read this article](/general/stealth-mode).
 
 ### Segurança da navegação
 
@@ -81,15 +81,15 @@ A partir da versão 7.20, você também pode adicionar filtros selecionando-os a
 
 ![Servidores DNS \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
 
-### Controle parental
+### Parental control
 
-Existem vários sites aos quais o acesso deve ser restringido a partir de um PC utilizado por crianças. This task is accomplished by _Parental Control_.
+Existem vários sites aos quais o acesso deve ser restringido a partir de um PC utilizado por crianças. This task is accomplished by _Parental control_.
 
-![Parental Control \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/parental_control.png)
+![Parental control \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/parental_control.png)
 
-O módulo verifica o conteúdo das páginas web abertas no navegador e filtra aquelas com conteúdo indesejável para crianças: imagens e textos para adultos, linguagem grosseira, violência, propaganda de drogas, etc. As configurações do Controle Parental são protegidas por senha para que a criança não consiga contornar as restrições. Este módulo não apenas bloqueia direções para sites indesejáveis, mas também pode excluir links inadequados para crianças dos resultados da pesquisa.
+O módulo verifica o conteúdo das páginas web abertas no navegador e filtra aquelas com conteúdo indesejável para crianças: imagens e textos para adultos, linguagem grosseira, violência, propaganda de drogas, etc. Parental control settings are password-protected so that the child is not able to go round the restrictions. Este módulo não apenas bloqueia direções para sites indesejáveis, mas também pode excluir links inadequados para crianças dos resultados da pesquisa.
 
-No módulo _Controle parental_ você pode ativar a _Pesquisa segura_ e gerenciar a _lista de bloqueio_ e a _lista de permissões_ para personalizar o funcionamento desta opção. Você também pode marcar a caixa _Bloquear download de arquivos executáveis_ para evitar que seu filho baixe e instale software no computador. Existem mais duas opções no módulo _Controle Parental_: você pode selecionar um usuário específico do Windows para ser protegido pelo _Controle Parental_ e definir uma senha para proteger as configurações do AdGuard contra alterações.
+In the _Parental control_ module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. Você também pode marcar a caixa _Bloquear download de arquivos executáveis_ para evitar que seu filho baixe e instale software no computador. There are two more options in the _Parental control_ module: you can select a specific Windows user to be protected by _Parental control_ and set a password to protect AdGuard settings from change.
 
 ### Assistente de navegador
 

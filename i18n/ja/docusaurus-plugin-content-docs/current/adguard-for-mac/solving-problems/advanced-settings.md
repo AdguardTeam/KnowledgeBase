@@ -81,6 +81,12 @@ Chrome Certificate Transparency Policy（証明書透過性ポリシー）に基
 
 `true` を設定すると、AdGuardがHTTP/3（QUICに基づくHTTPプロトコルの最新バージョン）経由で送信されるトラフィックをフィルタリングできるようになります。
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 #### `network.filtering.localnetwork`
 
 `true` を設定すると、ローカル ネットワークフィルタリングが有効になります。

@@ -81,6 +81,12 @@ sidebar_position: 9
 
 如果设置为 `true`，允许 AdGuard 过滤通过 HTTP/3 发送的流量，HTTP/3 是基于 QUIC 的 HTTP 协议的最新版本。
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 #### `network.filtering.localnetwork`
 
 设置为 `true` 即可启用本地网络过滤。
