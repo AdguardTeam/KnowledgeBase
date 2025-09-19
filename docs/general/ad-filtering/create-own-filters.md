@@ -1406,6 +1406,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$removeparam](#removeparam-modifier) | ✅ | ✅ | ✅ [*[6]](#removeparam-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
 | [$replace](#replace-modifier) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
 | [$urltransform](#urltransform-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$reason](#reason-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [noop](#noop-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$empty 👎](#empty-modifier "deprecated") | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$mp4 👎](#mp4-modifier "deprecated") | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
@@ -2997,6 +2998,24 @@ Rules with the `$urltransform` modifier can only be used [**in trusted filters**
 :::info Compatibility
 
 Rules with the `$urltransform` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.15 or later.
+
+:::
+
+#### **`$reason`** {#reason-modifier}
+
+`$reason` modifier allows you to add a custom explanation message that will be displayed on the blocking page when a request is blocked by this rule.
+This modifier works only with `$document` content-type modifier.
+
+**Examples**
+
+```adblock
+||example.com^$document,reason="Tracker"
+||example.com^$document,reason="Malicious site blocked by security filter"
+```
+
+:::info Compatibility
+
+Rules with `$reason` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.20 or later and not supported by AdGuard Content Blocker.
 
 :::
 
