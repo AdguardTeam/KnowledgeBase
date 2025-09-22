@@ -1,46 +1,46 @@
 ---
-title: AdGuard beta/nightly testing
+title: AdGuard testen (Beta/Nightly)
 sidebar_position: 1
 ---
 
-AdGuard-App gibt es für praktisch jede große Plattform, und wir veröffentlichen regelmäßig Updates für alle. This would not be possible without beta and nightly testing and, more importantly, without our testers. Möchten Sie einer werden? Here’s how you can do it.
+AdGuard-App gibt es für praktisch jede große Plattform, und wir veröffentlichen regelmäßig Updates für alle. Ohne Betatests und vor allem Betatester wäre dies nicht möglich. Möchten Sie einer werden? So können Sie es tun:
 
 ### Beta oder Nightly: Was ist der Unterschied?
 
-Both beta and nightly testing are important to make AdGuard constantly better. However, they are different, and you can choose the one that suits you more.
+Sowohl Beta- als auch das Testen der Nightlys sind wichtig, um AdGuard ständig zu verbessern. Sie unterscheiden sich jedoch, und Sie können diejenige wählen, die Ihnen am meisten zusagt.
 
-The development process follows a progression from nightly to beta and then from beta to the final, stable version — release. It means that you are more likely to find bugs in nightly builds, but you get access to new features faster, almost on a daily basis. Betas are more stable, but you will get updates less often.
+Der Entwicklungsprozess verläuft von der Nightly-Version zur Beta und dann von der Beta zur endgültigen, stabilen Version — der Release. Das bedeutet, dass es wahrscheinlicher ist, dass Sie in nächtlichen Builds Fehler finden, aber Sie erhalten schneller Zugang zu neuen Funktionen, fast täglich. Betas sind stabiler, aber Sie erhalten seltener Aktualisierungen.
 
-## How to become a beta or nightly tester {#intro}
+## Wie man Beta- oder Nightly-Tester wird {#intro}
 
 Unsere Anforderungen sind einfach: Verwenden Sie AdGuard, aktualisieren Sie auf die Beta-/Nightly-Version, sobald diese verfügbar ist, und melden Sie alle Fehler, die Sie bemerken. Sie benötigen ein Konto bei [GitHub](https://github.com/), um unser Tester zu werden, also sollten Sie dies zuerst erledigen.
 
-You will also need the device on which you will install the app and [the link to the the beta testing page](https://adguard.com/beta.html). There you will find more information on how to join our program and test AdGuard for Windows, Mac, Android, and iOS.
+Sie benötigen außerdem das Gerät, auf dem Sie die App installieren wollen, und [den Link zur Beta-Test-Seite](https://adguard.com/beta.html). Dort finden Sie weitere Informationen darüber, wie Sie an unserem Programm teilnehmen und AdGuard für Windows, Mac, Android und iOS testen können.
 
-If you want to skip the description part and get straight to the action, you can apply [here](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1–3 working days, and you'll get a reply via email.
+Wenn Sie Tester werden möchten, [füllen Sie das Formular aus](https://surveys.adguard.com/beta_testing_program/form.html), um Ihre Bewerbung zu senden. Wenn die Bewerbung genehmigt wird, erhalten Sie innerhalb weniger Tage eine Antwort per E-Mail.
 
 :::note
 
-To get the AdGuard for iOS beta or nightly build, first you have to install [TestFlight](https://apps.apple.com/app/testflight/id899247664) on your iOS device.
+Um AdGuard für iOS Beta oder Nightly-Build zu erhalten, müssen Sie zuerst [Testflight](https://apps.apple.com/app/testflight/id899247664) auf Ihrem iOS-Gerät installieren.
 
 :::
 
 ## Fehler melden {#report-a-bug}
 
-If you spotted a bug or just want to share your suggestion, let us know: go to [GitHub](https://github.com/AdguardTeam/), find a suitable repository, create a new issue there, and describe the bug/feature request in detail.
+Wenn Sie einen Fehler entdeckt haben oder einfach nur einen Vorschlag machen wollen, lassen Sie es uns wissen: Gehen Sie zu [GitHub](https://github.com/AdguardTeam/), finden Sie ein passendes Repository, erstellen Sie dort einen neuen Eintrag und beschreiben Sie den Fehler/Funktionswunsch im Detail.
 
-The above method is the most preferred, but you can use others if necessary:
+Die oben beschriebene Methode ist die bevorzugte, aber Sie können bei Bedarf auch andere Methoden anwenden:
 
 - Finden Sie uns auf verschiedenen Social-Media-Plattformen wie [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), usw. Dies ist jedoch nicht der bequemste Weg, um technische Fragen zu diskutieren.
 
 - Senden Sie eine E-Mail an unser Support-Team über die Registerkarte „Support“ in der App oder schreiben Sie direkt an [support@adguard.com](mailto:support@adguard.com).
 
-## How to activate a beta/nightly key in the iOS app {#ios}
+## Beta-Schlüssel in der iOS-App aktivieren {#ios}
 
-If you have already received a beta or nightly key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Once there, enter the credentials from your AdGuard account. After that, the premium features will become available automatically.
+Wenn Sie bereits einen Beta-Schlüssel erhalten haben und dieser in Ihrem `adguard.com` Konto aufgeführt ist, gehen Sie zur App und öffnen Sie den Lizenzbereich (Get Premium). Geben Sie dort die Anmeldeinformationen Ihres AdGuard-Kontos ein. Danach werden die Premium-Funktionen automatisch verfügbar.
 
 ### Was sonst?
 
 Es gibt nicht viel mehr hinzuzufügen. Sie müssen sich nicht die Mühe machen, Fehler zu finden. Sie können AdGuard wie gewohnt weiter verwenden. Wenn Sie jedoch auf einen Fehler stoßen, melden Sie ihn bitte. Natürlich sind wir für jede zusätzliche Unterstützung dankbar.
 
-Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta/nightly (in case you missed them) and other important news. Sie können sich jederzeit wieder abmelden.
+Gelegentlich erhalten Sie unsere Newsletter, die Sie über die neuesten Änderungen in der Beta (falls Sie sie verpasst haben) und andere wichtige Neuigkeiten auf dem Laufenden halten. Sie können sich jederzeit wieder abmelden.

@@ -11,7 +11,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 _Ağ_ modülü ağ filtrelemeye ayrılmıştır ve burada ağla ilgili ek seçenekler bulacaksınız. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS_. Bunlar, web alanınızı daha iyi filtrelemek için önemli olağanüstü önlemlerdir. Çoğu site artık HTTPS kullanıyor ve aynı durum reklamcılık için de geçerli. Youtube.com, facebook.com ve x.com gibi birçok siteden HTTPS filtreleme olmadan reklamları kaldırmak imkansızdır. So keep the _Filter HTTPS_ feature enabled unless you have a strong reason not to.
 
-![Ağ ayarları \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
+![Network Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/network/network_settings.png)
 
 In this module you can select the checkbox _Use AdGuard as an HTTP proxy_ to use AdGuard as a regular HTTP proxy which will filter all traffic passing through it. Ayrıca _EV sertifikalarına sahip siteleri filtrele_ özelliğini de etkinleştirebilirsiniz. Genişletilmiş Doğrulama (EV) SSL Sertifikaları daha güçlü bir güvenlik garantisi sunar; bu tür sitelerin sahipleri EV yönergeleri tarafından tanımlanan kapsamlı ve küresel olarak standartlaştırılmış bir kimlik doğrulama sürecinden geçmek zorundadır. Bazı kullanıcıların bu tür sertifikalara sahip sitelere güvenmelerinin ve bunları filtrelememeyi tercih etmelerinin nedeni budur.
 

@@ -17,7 +17,7 @@ sidebar_position: 1
 
 Вам также понадобится устройство, на которое вы будете устанавливать приложение, и [ссылка на страницу бета-тестирования](https://adguard.com/beta.html). Там вы найдёте больше информации о том, как присоединиться к нашей программе и тестировать приложения AdGuard для Windows, Mac, Android и iOS.
 
-Если вы хотите пропустить описание и сразу перейти к делу, то вам [сюда](https://surveys.adguard.com/beta_testing_program/form.html). Ваша заявка будет рассмотрена в течение 1–3 рабочих дней. Вы получите ответ по почте.
+If you would like to become a tester, please [fill out the form](https://surveys.adguard.com/beta_testing_program/form.html) to submit your application. If it is approved, you will receive a response via email within a few days.
 
 :::note
 

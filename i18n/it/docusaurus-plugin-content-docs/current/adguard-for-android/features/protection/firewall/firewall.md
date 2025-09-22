@@ -29,15 +29,15 @@ In questa sezione, puoi controllare l'accesso a Internet per app specifiche — 
 
 1. Apri _Regole firewall personalizzate_. Sotto _App con regole personalizzate_, tocca _Aggiungi app_.
 
-    ![Regole firewall personalizzate \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+   ![Regole firewall personalizzate \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
 2. Seleziona l'app per cui desideri impostare delle regole individuali.
 
-    ![Aggiunta di un'app alle regole firewall personalizzate \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+   ![Aggiunta di un'app alle regole firewall personalizzate \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
 3. In _Regole personalizzate disponibili_, seleziona quelle che desideri configurare e tocca l'icona "+". Le regole ora appariranno in _Regole personalizzate applicate_.
 
-    ![Regola aggiunta \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+   ![Regola aggiunta \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
 4. Se devi bloccare un tipo specifico di connessione, sposta l'interruttore a sinistra. Se desideri consentirlo, lascia abilitato l'interruttore. **Le regole personalizzate sovrascrivono quelle globali**: qualsiasi modifica tu apporti nelle _Regole globali del firewall_ non influirà su quest'app.
 

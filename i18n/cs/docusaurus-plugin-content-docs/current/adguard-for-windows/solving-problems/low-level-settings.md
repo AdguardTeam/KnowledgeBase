@@ -65,6 +65,12 @@ Tuto funkci povolte, pokud chcete, aby AdGuard automaticky zachycoval adresy URL
 
 Pokud je tato možnost povolena, bude AdGuard filtrovat kromě jiných typů požadavků také požadavky odeslané skrze HTTP/3.
 
+**Omezení**:
+
+- Prohlížeče založené na Chrome nepřijímají uživatelské certifikáty, proto v nich není podporováno filtrování HTTP/3.
+- Prohlížeče založené na Firefoxu se ve výchozím nastavení chovají podobně, ale můžete nastavit možnost `network.http.http3.disable_when_third_party_roots_found` v `about:config` na `false`, aby byly povoleny uživatelské certifikáty pro HTTP/3.
+- Safari podporuje filtrování HTTP/3 bez další konfigurace.
+
 ### Použít režim přesměrování ovladače
 
 Pokud je tato možnost povolena, AdGuard zachytí veškerý provoz a přesměruje jej na místní proxy pro další filtrování.
@@ -137,7 +143,7 @@ Pravidelné odesílání paketů TCP přes neaktivní připojení, aby se zajist
 
 Zde můžete zadat dobu nečinnosti v sekundách před odesláním udržovací sondy. Pokud je zadána 0, použije se hodnota vybraná systémem.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 Toto nastavení funguje pouze v případě, že je povolena možnost *Povolit udržování TCP*.
 
@@ -147,7 +153,7 @@ Toto nastavení funguje pouze v případě, že je povolena možnost *Povolit ud
 
 Zde můžete zadat dobu v sekundách před odesláním další udržovací sondy neodpovídajícímu partnerovi. Pokud je zadána 0, použije se hodnota vybraná systémem.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 Toto nastavení funguje pouze v případě, že je povolena možnost *Povolit udržování TCP*.
 

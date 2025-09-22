@@ -35,7 +35,7 @@ sidebar_position: 1
 
 ## AdGuard ライセンスの使用方法
 
-ライセンスをデバイスで使用するには、ライセンスに関連付けられているメールアドレスを使用して AdGuard アプリにログインします。 ライセンスがまだメールアドレスにバインド（紐付け）されていない場合は、[AdGuardアカウント](https://adguardaccount.com/)でバインドできます。 これを行うには、AdGuardアカウントで「*ライセンス*」画面を開き、「*ライセンスを紐付けする*」をクリックします。
+ライセンスをデバイスで使用するには、ライセンスに関連付けられているメールアドレスを使用して AdGuard アプリにログインします。 ライセンスがまだメールアドレスにバインド（紐付け）されていない場合は、[AdGuardアカウント](https://adguardaccount.com/)でバインドできます。 これを行うには、AdGuardアカウントで「*ライセンス*」画面を開き、「*ライセンスを紐付けする*」をクリックします。 Usually, licenses are activated immediately, but sometimes activation may take up to five minutes.
 
 または、AdGuard アプリに[ライセンスキー](#license-key)を直接入力するというライセンス使用方法もあります。
 

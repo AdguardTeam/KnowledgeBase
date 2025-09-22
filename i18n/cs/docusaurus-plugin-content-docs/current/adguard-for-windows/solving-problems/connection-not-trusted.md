@@ -13,6 +13,12 @@ Aby mohl AdGuard filtrovat provoz HTTPS a účinně blokovat reklamy a slídiče
 
 Prohlížeče obvykle důvěřují AdGuard certifikátu, jakmile je přidán do systémového úložiště certifikátů během procesu instalace. V některých případech to však nestačí a můžete narazit na varování nebo chyby. Nejčastěji se to stává v prohlížečích založených na Firefoxu, jako jsou Mozilla Firefox, PaleMoon, Waterfox atd., nebo v prohlížeči Yandex.Browser.
 
+Zde jsou některé běžné problémy:
+
+- [*Potenciální chyba bezpečnostního rizika* v prohlížečích založených na Firefoxu](#potential-security-risk-error-in-firefox-based-browsers)
+- [Upozornění na certifikát Yandex.Browser](#yandexbrowser-certificate-warning)
+- [V prohlížečích Firefox se neaktualizují neoficiální doplňky](#non-official-add-ons-dont-update-in-firefox-based-browsers)
+
 ## *Potenciální chyba bezpečnostního rizika* v prohlížečích založených na Firefoxu
 
 ![Security risk error](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
@@ -29,7 +35,7 @@ Pokud to nepomůže, postupujte podle pokynů pro ruční přidání AdGuard cer
 
 1. Přejděte na [http://local.adguard.org/cert](http://local.adguard.org/cert) a klikněte na tlačítko *Stáhnout*. Prohlížeč by měl začít stahovat soubor **cert.cer**.
 
-    :::note
+    Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
     Stránku pro stažení můžete otevřít také kliknutím na odkaz prostřednictvím aplikace AdGuard v *Nastavení → Síť → HTTPS filtrování*.
 
@@ -77,3 +83,15 @@ AdGuard však mezi důvěryhodné certifikáty přidává také svůj certifiká
 Nejjednodušší způsob je kliknout na tlačítko **Přejít na web**. Tím řeknete prohlížeči Yandex.Browser, aby si certifikát AdGuardu alespoň na chvíli zapamatoval jako důvěryhodný. Obvykle se tato zpráva již nezobrazuje, ale není vyloučeno, že se občas z nějakých důvodů objeví. V takových případech stačí znovu stisknout stejné tlačítko *(ujistěte se, že se jedná o certifikát AdGuardu!)*.
 
 Vypnutím HTTPS filtrování v AdGuardu také zabráníte tomu, aby prohlížeč Yandex.Browser tuto zprávu znovu zobrazoval, ale má to velkou nevýhodu: zobrazí se všechny reklamy, které se načítají pomocí HTTPS (včetně **vlastních reklam společnosti Yandex**) — např. na webových stránkách YouTube, Facebook, Instagram a mnoha dalších. Pokud chcete zachovat vysokou kvalitu blokování reklam, důrazně vám to nedoporučujeme.
+
+## V prohlížečích Firefox se neaktualizují neoficiální doplňky
+
+Pokud používáte prohlížeče Firefox a máte doplňky, které nejsou z oficiálního katalogu Mozilly — a v AdGuardu je povoleno filtrování HTTPS — tyto doplňky nebude možné aktualizovat. Zde je důvod.
+
+Při aktualizaci doplňků Firefox kontroluje, zda je připojení k aktualizačnímu serveru zabezpečeno certifikátem vydaným důvěryhodnou certifikační autoritou. Prohlížeče založené na prohlížeči Firefox důvěřují pouze certifikátům certifikačních autorit zařazených do integrovaného seznamu Mozilly — jedná se o bezpečnostní opatření k blokování potenciálně nebezpečných aktualizací.
+
+Certifikát AdGuardu, ačkoliv je zabezpečený, není na tomto seznamu. Proto jsou domény Mozilla z filtrování HTTPS v AdGuardu vyloučeny.
+
+Neoficiální doplňky však používají pro aktualizace servery třetích stran a ty nejsou ve výchozím nastavení z filtrování HTTPS vyloučeny. Když tedy Firefox kontroluje připojení, vidí místo původního certifikátu certifikát AdGuard — a aktualizaci zablokuje.
+
+Pokud potřebujete zkontrolovat aktualizace takových doplňků, zvažte dočasné vypnutí AdGuardu.

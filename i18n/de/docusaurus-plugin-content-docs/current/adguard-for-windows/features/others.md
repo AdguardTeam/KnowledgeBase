@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
+Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock).
 
 :::
 
@@ -13,13 +13,13 @@ Es gibt andere nützliche AdGuard-Optionen, die in diesem Artikel nicht unbemerk
 
 ### Support
 
-![Support \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
+![Support \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/support.png)
 
-Wenn Sie auf den Tab „Support“ klicken, öffnet sich ein Dialogfeld, in dem Sie einen Fehler melden, eine Funktionsanfrage stellen oder einfach Ihre Meinung über das Produkt mitteilen können.
+Wenn Sie auf den Tab _Support_ klicken, öffnet sich ein Dialogfeld, in dem Sie einen Fehler melden, eine Funktionsanfrage stellen oder einfach Ihre Meinung über das Produkt mitteilen können.
 
 ### Lizenz
 
-![Lizenz \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![Lizenz \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/license.png)
 
 Auf diesem Tab finden Sie Informationen zu Ihrer Lizenz. Hier können Sie:
 
@@ -28,13 +28,13 @@ Auf diesem Tab finden Sie Informationen zu Ihrer Lizenz. Hier können Sie:
 
 ### Über uns
 
-![Über \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+! [Über die App\*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/about.png)
 
 Zusätzlich zu den Informationen über die aktuelle Version des Programms bietet dieser Tab einige nützliche Links zu den Seiten Lizenzvereinbarung, Datenschutzerklärung, Danksagungen, Diskussionen und Versionsverlauf.
 
 ### Auf Aktualisierungen prüfen
 
-![Nach Aktualisierungen suchen \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![Nach Updates suchen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/updates.png)
 
 Um zu prüfen, ob Filter und Benutzerskripte aktualisiert wurden, klicken Sie auf das Symbol mit den rotierenden Pfeilen in der oberen rechten Ecke des Hauptbildschirms der App.
 

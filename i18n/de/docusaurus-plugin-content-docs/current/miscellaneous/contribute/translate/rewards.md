@@ -37,7 +37,7 @@ Senden Sie einfach eine E-Mail an unser Übersetzerteam unter [translate@adguard
 
 > Hi AdGuard team!
 > 
-> I’ve translated more than 5,000 words in AdGuard for Android in (*your language*) — you can find my stats attached. As a reward, I’d like to request an AdGuard VPN license and an Ad Blocker license My email is (*your email address*). My Crowdin username is (*your username*).
+> I’ve translated more than 5,000 words in AdGuard for Android in (*your language*) — you can find my stats attached. I would like to request an AdGuard VPN license and an Ad Blocker license for that. My Crowdin username is (*your username*).
 
 ## So überprüfen Sie Ihren Übersetzungsfortschritt
 
@@ -47,7 +47,7 @@ Senden Sie einfach eine E-Mail an unser Übersetzerteam unter [translate@adguard
 
 Sie können die Anzahl der in verschiedenen Projekten übersetzten Wörter zusammenzählen, um eine Lizenz zu erhalten.
 
-## Korrekturleser:in werden
+## Zur Qualitätssicherung beitragen
 
 Wer aktiv und regelmäßig übersetzt, kann künftig für den Korrekturleserstatus in Betracht gezogen werden. Dafür muss man über einen Zeitraum von mehreren Monaten konstant hochwertige Übersetzungen geliefert haben.
 
@@ -55,6 +55,6 @@ Bitte beachten Sie, dass Sie mit diesem Status keine zusätzlichen Lizenzen oder
 
 ## Geschenke für aktive Mitwirkende
 
-Jedes Jahr senden wir den besten Mitwirkenden Geschenke mit dem AdGuard-Merch und würdigen sie in unserem [Blog](https://adguard.com/en/blog/best-contributors-2023.html).
+Jedes Jahr senden wir den besten Mitwirkenden Geschenke mit dem AdGuard-Merch und würdigen sie in unserem [Blog](https://adguard.com/en/blog/best-contributors-2024.html).
 
 ![AdGuard Merch *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

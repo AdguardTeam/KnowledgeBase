@@ -21,19 +21,19 @@ Eski beta uzantısı [**AdGuard Reklam Engelleyici MV2**](https://chromewebstore
 
 - **Filtreleme günlüğü**
 
-    ![Filtreleme günlüğü \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+  ![Filtreleme günlüğü \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-    Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. Kesin bilgi için, uzantının "Paketlenmemiş öğe" hâlini tarayıcınıza kendiniz yüklemeniz gerekir. Bunu nasıl yapacağınıza dair ayrıntılı talimatları [ayrı bir makalede]](/adguard-browser-extension/solving-problems/debug-rules/) bulabilirsiniz.
+  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. Kesin bilgi için, uzantının "Paketlenmemiş öğe" hâlini tarayıcınıza kendiniz yüklemeniz gerekir. Bunu nasıl yapacağınıza dair ayrıntılı talimatları [ayrı bir makalede]](/adguard-browser-extension/solving-problems/debug-rules/) bulabilirsiniz.
 
 - _İzleme koruması_ (eski adıyla _Gizlilik modu_)
 
-    ![İzleme koruması \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+  ![İzleme koruması \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
 
-    There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
+  There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
 
 - _Phishing & malware protection_ is no longer available in the general settings. Kendinizi kötü amaçlı sitelerden ve dolandırıcılıklardan korumak için _Filtreler_ sekmesinde uygun _Güvenlik_ filtrelerini etkinleştirin.
 
-    ![Güvenlik \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![Güvenlik \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## Limitations
 
@@ -55,7 +55,7 @@ The maximum number of simultaneously enabled filters is **50**.
 
 **Dynamic rules:** a strict cap of **5,000** rules is imposed, which includes a maximum of 1,000 regex rules.
 
-Bu limit aşılırsa, yalnızca **5,000 dönüştürülmüş kural** aşağıdaki sırayla uygulanacaktır: önce İzin listesi, ardından Kullanıcı kuralları, Özel filtreler ve nihayet — Hızlı Çözümler filtresi.
+If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules and finally Custom filters.
 
 > **Converted rules** are rules that have been transformed
 > to [DNR format] using the [declarative converter][github-declarative-converter].

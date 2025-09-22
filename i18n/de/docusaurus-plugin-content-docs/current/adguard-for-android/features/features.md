@@ -1,5 +1,5 @@
 ---
-title: Features
+title: Funktionen
 sidebar_position: 1
 ---
 
@@ -35,9 +35,9 @@ Allgemeine, erweiterte und Low-Level-Einstellungen, mit denen Sie die Sprache un
 
 ## Low-Level-Einstellungen
 
-Descriptions of the low-level settings available in AdGuard v4.3 for Android and later.
+Beschreibungen der Low-Level-Einstellungen, die in AdGuard für Android v4.3 und höher verfügbar sind.
 
-[Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
+[Leitfaden für Low-Level-Einstellungen](/adguard-for-android/features/low-level-settings.md)
 
 ## Assistent
 

@@ -5,12 +5,12 @@ sidebar_position: 1
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
 AdGuard for Windows は、迷惑なバナー、ポップアップ、ビデオ広告、トラッカーをブロックする使いやすいツールです。 しかし、それだけではありません。データ通信量を節約し、Web ページの読み込みを高速化し、望ましくない、または悪意のある可能性のある Web サイトからコンピューターを保護してくれます。 また、AdGuard はフィッシング Web サイトからユーザーを保護し、お子様を不適切なコンテンツから守ります。
 
-![メインメニュー \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/home-screen.png)
+![Main screen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/main_screen_en.png)
 
 AdGuard for Windows を起動すると、アプリのホーム画面が表示されます。 最も目立つ点は、保護を有効/無効にするボタンです。 また、この画面では、ブロックされた広告、トラッカー、脅威の数を確認したり、アプリの現在のバージョンを確認したり、アプリを更新したりすることもできます。 さらに、右上隅には「_設定_」「_サポート_」「_ライセンス_」「_バージョン情報_」の4つのタブがあります。 これらについてはそれぞれ個別に、専用記事で紹介しております。

@@ -65,6 +65,12 @@ Ative este recurso se você quiser que o AdGuard intercepte automaticamente URLs
 
 Se esta opção estiver ativada, o AdGuard filtrará as solicitações enviadas por HTTP/3, além de outros tipos de solicitação.
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 ### Usar modo de redirecionamento de driver
 
 Se esta opção estiver ativada, o AdGuard intercepta todo o tráfego e o redireciona para o servidor proxy local para posterior filtragem.
@@ -79,7 +85,7 @@ Ative esta opção para abrir a janela principal do AdGuard depois que o sistema
 
 A partir da v7.12, por padrão, o serviço do AdGuard não filtra o tráfego após a inicialização do sistema operacional se a opção Iniciar o AdGuard na inicialização do sistema estiver desativada. Em outras palavras, o serviço do AdGuard é iniciado no modo “ocioso”. Ative esta opção para filtrar o tráfego do AdGuard mesmo que o aplicativo não seja iniciado.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Antes da v7.12, o serviço AdGuard iniciava no modo de filtragem por padrão (mesmo se *Iniciar o AdGuard na inicialização do sistema* estivesse desativado). Se você estava satisfeito com o funcionamento antigo, ative esta opção.
 
@@ -137,7 +143,7 @@ Envia periodicamente pacotes TCP por conexão ociosa para garantir que esteja at
 
 Aqui você pode especificar um período de tempo ocioso, em segundos, antes de enviar um teste keepalive. Se 0 for especificado, o valor selecionado pelo sistema será utilizado.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Esta configuração só funciona quando a opção *Ativar TCP keepalive* está ativada.
 
@@ -147,7 +153,7 @@ Esta configuração só funciona quando a opção *Ativar TCP keepalive* está a
 
 Aqui você pode especificar o tempo em segundos antes de enviar outro teste de manutenção de atividade para um par que não responde. Se 0 for especificado, o valor selecionado pelo sistema será utilizado.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Esta configuração só funciona quando a opção *Ativar TCP keepalive* está ativada.
 

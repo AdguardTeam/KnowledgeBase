@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-この記事は、システムレベルでデバイスを保護してくれる多機能広告ブロッカー、「AdGuard for Android」についてです。 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事は、システムレベルでデバイスを保護してくれる多機能広告ブロッカー、「AdGuard for Android」についてです。 実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
@@ -21,7 +21,7 @@ sidebar_position: 5
 
 ## ローレベル設定
 
-AdGuard for Android v4.x では、ローレベルの設定を完全に再設計しました。 設定のリストを再構成し、それぞれのテーマグループにまとめて説明を改善しました。 入力検証やその他の安全弁も追加しました。
+For AdGuard for Android v4.x we’ve completely redesigned the low-level settings. 設定のリストを再構成し、それぞれのテーマグループにまとめて説明を改善しました。 入力検証やその他の安全弁も追加しました。
 
 ### DNS通信を保護
 
@@ -138,6 +138,12 @@ If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in add
 
 **About HTTP/3**: This is the latest version of the HTTP protocol, based on QUIC.
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 ### アウトバウンドプロキシ
 
 #### Show the Filter DNS requests setting
@@ -204,10 +210,6 @@ Here you can set the delay in milliseconds before AdGuard reschedules the restor
 #### MTU
 
 Here you can set the maximum transmission unit (MTU) of the VPN interface. This is the maximum size of the data packet used in your local VPN. The recommended range is 1500-1900 bytes.
-
-#### Restore VPN automatically
-
-If this setting is enabled, AdGuard’s local VPN will be automatically re-enabled after being turned off due to network absence, tethering, or low-power mode.
 
 #### Packet capture (PCAP)
 

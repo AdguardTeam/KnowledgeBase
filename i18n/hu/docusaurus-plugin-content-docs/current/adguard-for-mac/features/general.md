@@ -1,5 +1,5 @@
 ---
-title: General
+title: Általános
 sidebar_position: 3
 ---
 
@@ -15,7 +15,7 @@ To configure AdGuard for Mac, click the gear icon in the upper right corner of t
 
 ![Main window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
 
-## General
+## Általános
 
 ![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
 

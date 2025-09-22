@@ -43,18 +43,46 @@ sidebar_position: 15
 
 4. 写下 Android TV 的 IP 地址：
 
-    - 在 Android TV 上，进入「设置」。
-    - 选择「系统」→「关于」。
-    - 查找「网络」，然后根据连接类型选择「Wi-Fi」或「以太网」。
-    - 转到网络部分并找到「IP 地址」。 记下该 IP 地址。
+   - 在 Android TV 上，进入「设置」。
+   - 选择「系统」→「关于」。
+   - 查找「网络」，然后根据连接类型选择「Wi-Fi」或「以太网」。
+   - 转到网络部分并找到「IP 地址」。 记下该 IP 地址。
 
 5. 通过 ADB 连接到 Android TV：
 
-    - 打开计算机上的终端或命令提示符。
-    - 输入 `adb connect` 命令和电视机的 IP 地址。
-    - 这将建立连接。
+   - 打开计算机上的终端或命令提示符。
+   - 输入 `adb connect` 命令和电视机的 IP 地址。
+   - 这将建立连接。
 
 6. 通过 ADB 安装 Android TV 版 AdGuard：
 
-    - 在终端中，输入命令 `adb install Downloads/adguard_tv.apk`。 如有必要，请将 `Downloads/adguard_tv.apk` 替换为您的路径。
-    - 等待终端中出现指示应用程序安装成功的消息。
+   - 在终端中，输入命令 `adb install Downloads/adguard_tv.apk`。 如有必要，请将 `Downloads/adguard_tv.apk` 替换为您的路径。
+   - 等待终端中出现指示应用程序安装成功的消息。
+
+## Installing AdGuard for Android TV via atvTools
+
+**Important:** Your smartphone and TV with Android TV (TV box) must be on the same local network.
+
+1. Install the [atvTools](https://play.google.com/store/apps/details?id=dev.vodik7.atvtools) app on your Android smartphone
+
+2. Connect **atvTools** to **Android TV**
+
+   1. Enable developer mode on your Android TV device
+
+      `Settings` → `Device settings` → `About device` → Tap `Android TV build` until you see a message confirming that you have successfully obtained developer status
+
+   2. Enable USB debugging on your Android TV device
+
+      Go to `Settings` → `Device settings` → `For developers` → `Debugging`, allow and enable `USB debugging`
+
+3. Launch **atvTools** on your smartphone
+
+4. Find the desired **Android TV** device in the list and click it
+
+5. Allow the connection on the TV
+
+6. Download the [AdGuard for Android TV](https://agrd.io/tvapk) installer to your smartphone as an **APK** file
+
+7. In **atvTools**, click **Install** on the main screen and wait (less than a minute) until the **AdGuard for Android TV** icon appears in the list of applications
+
+![Main screen \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/android-tv/main-screen.png)

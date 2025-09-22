@@ -39,7 +39,7 @@ Diese Version des Assistenten ist veraltet und es ergibt keinen Sinn, sie auf ne
 
 :::
 
-#### Disable AMP
+#### AMP deaktivieren
 
 Ein Skript, das nur in AdGuard für Android vorinstalliert ist. Es deaktiviert AMP (Accelerated Mobile Pages) auf der Google-Suchergebnisseite. Erfahren Sie mehr auf [GitHub](https://github.com/AdguardTeam/DisableAMP) über dieses Benutzerskript und wie man es installiert.
 
@@ -147,6 +147,7 @@ Alle aufgeführten früheren Greasemonkey-Funktionen sind veraltet, werden aber 
 - [`GM_addStyle`](https://www.tampermonkey.net/documentation.php#api:GM_addStyle)
 - [`GM_log`](https://www.tampermonkey.net/documentation.php#api:GM_log)
 - [`GM.addElement`, `GM_addElement`](https://www.tampermonkey.net/documentation.php#api:GM_addElement)
+- [`window.onurlchange`](https://www.tampermonkey.net/documentation.php#api:window.onurlchange)
 
 Weitere Informationen zur Greasemonkey-API finden Sie im [Handbuch] (https://wiki.greasespot.net/Greasemonkey_Manual:API).
 
@@ -246,16 +247,16 @@ type TrustedValue = string | TrustedHTML | TrustedScript | TrustedScriptURL;
 
 ```typescript
 /**
- * Creates a Trusted Type depending on `type`:
+ * Erzeugt einen vertrauenswürdigen Typ in Abhängigkeit von `type':
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - or returns `value` if none of them is applicable.
+ * - oder gibt `value` zurück, wenn keiner von ihnen zutrifft.
  *
  * @param type          Trusted Type.
- * @param value         Value from which a Trusted Type is created.
- * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
- * @returns             Created value.
+ * @param value         Wert, aus dem ein vertrauenswürdiger Typ erstellt wird.
+ * @param createArgs    Zusätzliche Argumente, die an die durch `TrustedTypePolicy` dargestellte Funktion zu übergeben sind.
+ * @returns             Erstellter Wert.
  */
 function create(
     type: TrustedType,
@@ -264,23 +265,23 @@ function create(
 ): TrustedValue
 
 
-// Example: Creates TrustedHTML
+// Beispiel: Erzeugt TrustedHTML
 const trustedHTML = ADG_policyApi.create(ADG_TrustedType.HTML, '<div></div>');
 
 /**
- * Converts `value` of `attribute` into one of the Trusted Types:
+ * Konvertiert `value` von `attribute` in einen der vertrauenswürdigen Typen:
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - or returns `value` if none of them is applicable.
+ * - oder gibt `value` zurück, wenn keiner von ihnen zutrifft.
  *
- * @param tagName       Name of an HTML tag.
- * @param attribute     Attribute.
- * @param value         Value of an attribute to be converted.
- * @param elementNS     Element namespace. If empty, defaults to the HTML namespace.
- * @param attrNS        Attribute namespace. If empty, defaults to null.
- * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
- * @returns             Converted value.
+ * @param tagName       Name eines HTML-Tags.
+ * @param attribute     Attribut.
+ * @param value         Wert eines zu konvertierenden Attributs.
+ * @param elementNS     Namespace des Elements. Wenn leer, wird standardmäßig der HTML-Namensraum verwendet.
+ * @param attrNS        Namespace des Attributs. Falls leer, ist der Standardwert „Null“.
+ * @param createArgs    Zusätzliche Argumente, die an die durch `TrustedTypePolicy` dargestellte Funktion zu übergeben sind.
+ * @returns             Umgewandelter Wert.
  */
 function convertAttributeToTrusted(
     tagName: string,
@@ -291,23 +292,23 @@ function convertAttributeToTrusted(
     ...createArgs: unknown[]
 ): TrustedValue
 
-// Example: Converts to TrustedScriptURL
+// Beispiel: Konvertierung in TrustedScriptURL
 const trustedScriptURL = ADG_policyApi.convertAttributeToTrusted("script", "src", 'SOME_URL');
 scriptElement.setAttribute("src", trustedScriptURL);
 
 /**
- * Converts `value` of `property` into one of the Trusted Types:
+ * Konvertiert `value` von `property` in einen der vertrauenswürdigen Typen:
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - or returns `value` if none of them is applicable.
+ * - oder gibt `value` zurück, wenn keiner von ihnen zutrifft.
  *
  * @param tagName       Name of an HTML tag.
- * @param property      Property.
- * @param value         Value of a property to be converted.
- * @param elementNS     Element namespace. If empty, defaults to the HTML namespace.
- * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
- * @returns             Converted value.
+ * @param property      Eigenschaft.
+ * @param value         Wert einer umzuwandelnden Eigenschaft.
+ * @param elementNS     Namespace des Elements. Wenn leer, wird standardmäßig der HTML-Namensraum verwendet.
+ * @param createArgs    Zusätzliche Argumente, die an die durch `TrustedTypePolicy` dargestellte Funktion zu übergeben sind.
+ * @returns             Umgewandelter Wert.
  */
 function convertPropertyToTrusted(
     tagName: string,
@@ -317,8 +318,82 @@ function convertPropertyToTrusted(
     ...createArgs: unknown[]
 ): TrustedValue
 
-// Example: Converts to TrustedHTML
+// Beispiel: Umwandlung in TrustedHTML
 divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML", "<div></div>");
+```
+
+#### Matching SPA sites
+
+:::info Kompatibilität
+
+Dieser Abschnitt gilt nur für AdGuard für Windows, AdGuard für Mac, AdGuard für Android und AdGuard für Linux mit [CoreLibs] v1.19 oder höher.
+
+:::
+
+Viele moderne Websites, wie beispielsweise YouTube, nutzen die Funktionen von [Single-Page-Webanwendung (SPA)](https://de.wikipedia.org/wiki/Single-Page-Webanwendung). Im Gegensatz zu herkömmlichen Webanwendungen wird die Seite beim Wechsel zwischen den Seiten nicht neu geladen. Stattdessen wird der Inhalt dynamisch mit JavaScript aktualisiert, was eine flüssigere Benutzererfahrung ermöglicht.
+
+Auf solchen Websites wird ein Benutzerskript nur einmal aufgerufen, wenn die Anweisungen `@match` oder `@include` übereinstimmen (es sei denn, `@exclude` stimmt überein). Aufgrund der Besonderheiten von SPAs kann das Benutzerskript bei nachfolgenden Seitenwechseln nicht erneut aufgerufen werden, da der globale JavaScript-Kontext unverändert bleibt. Um dieses Problem zu beheben, können Benutzerskripte die Anweisung `@grant window.onurlchange` verwenden.
+
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @grant window.onurlchange
+// @run-at document-start
+// ==/UserScript==
+
+// via window.onurlchange
+window.onurlchange = (event) => {
+    console.log('URL changed to:', event.url);
+};
+
+// via window.addEventListener('urlchange')
+window.addEventListener('urlchange', (event) => {
+    console.log('URL changed to:', event.url);
+});
+```
+
+Dadurch können Benutzerskripte auf URL-Änderungen reagieren und diese entsprechend verarbeiten.
+
+:::note
+
+Das Ereignis `urlchange` wird nur bei vollständigen URL-Änderungen ausgelöst, z. B. bei einer Änderung des Pfads oder der Abfrage, jedoch nicht bei Änderungen des Fragments (Hash).
+Beispiele:
+
+- Das Navigieren von `https://example.com/page1` zu `https://example.com/page2` löst das Ereignis aus.
+- Die Navigation von `https://example.com/page1?query=1` zu `https://example.com/page1?query=2` löst das Ereignis aus.
+- Die Navigation von `https://example.com/page1#section1` zu `https://example.com/page1#section2` löst das Ereignis **NICHT** aus.
+
+:::
+
+:::note
+
+Die APIs `window.onurlchange` und `window.addEventListener(‚urlchange‘, ...)` sind nicht standardisiert. Um sie zu verwenden, müssen Sie sie in Ihrem Benutzerskript explizit mit `@grant window.onurlchange` gewähren.
+
+:::
+
+Wenn eine Website Hash-Routing verwendet, können Benutzerskripte das native DOM-Ereignis [`hashchange`](https://developer.mozilla.org/de/docs/Web/API/Window/hashchange_event) verwenden:
+
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @run-at document-start
+// ==/UserScript==
+
+// via window.onhashchange
+window.onhashchange = (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+};
+
+// via window.addEventListener('hashchange')
+window.addEventListener('hashchange', (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+});
 ```
 
 ## Benutzerstile (Userstyles)
@@ -329,7 +404,7 @@ AdGuard bietet die Möglichkeit, eigene Benutzerstile hochzuladen oder zu erstel
 
 :::info Unterstützte Apps
 
-Derzeit gibt es zwei AdGuard-Anwendungen, mit denen Sie Benutzerstile erstellen und verwalten können: AdGuard für Windows (v7.19 oder höher) und AdGuard für Mac (v2.16 oder höher). Es ist zudem geplant, diese neue Funktion in AdGuard v4.8 für Android in naher Zukunft zu implementieren.
+Derzeit gibt es zwei AdGuard-Anwendungen, mit denen Sie Benutzerstile erstellen und verwalten können: AdGuard für Windows (v7.19 oder höher) und AdGuard für Mac (v2.16 oder höher). Es ist zudem geplant, diese neue Funktion in AdGuard für Android v4.8 in naher Zukunft zu implementieren.
 
 :::
 
@@ -337,13 +412,13 @@ Es handelt sich hierbei um eine experimentelle Funktion. Wenn Sie also beim Hinz
 
 ### So richten Sie einen Benutzerstil in AdGuard ein
 
-Sie können Benutzerstile von verschiedenen Websites herunterladen. Eine der populärsten Benutzerstil-Webseiten ist [https://userstyles.world/](https://userstyles.world/explore), die hier als Beispiel für die folgende Anleitung zur Einrichtung des Benutzerstils in AdGuard verwendet wird.
+Sie können Benutzerstile von verschiedenen Websites herunterladen. Eine der populärsten Benutzerstil-Websites ist [https://userstyles.world/](https://userstyles.world/explore), die hier als Beispiel für die folgenden anweisungen zur Einstellungen des Benutzerstils in AdGuard verwendet wird.
 
 1. Folgen Sie dem obigen Link und wählen Sie den gewünschten Benutzerstil
 
 2. Klicken Sie auf _Kopieren_ neben der Adresse des Benutzerstils
 
-3. Öffnen Sie die Einstellungen von AdGuard ➜ _Erweiterungen_
+3. Öffnen Sie die AdGuard-Einstellungen → _Erweiterungen_
 
 4. Drücken Sie auf die Schaltfläche [+] und fügen Sie den Benutzerstil-Link ein
 
@@ -357,36 +432,36 @@ Es werden keine Benutzerstile unterstützt, die `@var` oder `@advanced` in den M
 
 :::
 
-1. Öffnen Sie die Einstellungen von AdGuard ➜ _Erweiterungen_
+1. Öffnen Sie die AdGuard-Einstellungen → _Erweiterungen_
 
 2. Drücken Sie auf die Schaltfläche [+] und wählen Sie die Option _Benutzerstil erstellen_. Es wird ein neues Fenster auf Ihrem Bildschirm angezeigt
 
 3. Um einen Benutzerstil zu erstellen, schreiben Sie zunächst den Titel mit Metadaten, zum Beispiel
 
- ```CSS
- /* ==UserStyle==
- @name New userstyle
- @version 1.0
- ==/UserStyle== */
- ```
+   ```CSS
+   /* ==UserStyle==
+   @name New userstyle
+   @version 1.0
+   ==/UserStyle== */
+   ```
 
 4. Schreiben Sie den CSS-Teil nach den Metadaten. AdGuard unterstützt den Abgleich von Website-Domainnamen (`@-moz-document domain(…), …`). Zum Beispiel:
 
- ```CSS
- body {
-   background: gray;
-   }
- ```
+   ```CSS
+   body {
+     background: gray;
+     }
+   ```
 
- oder:
+   oder:
 
- ```CSS
- @-moz-document domain('example.org'),
- domain('example.net'),
- domain('example.com') body {
-   background: gray;
-   }
- ```
+   ```CSS
+   @-moz-document domain('example.org'),
+   domain('example.net'),
+   domain('example.com') body {
+     background: gray;
+     }
+   ```
 
 5. Wenn Sie fertig sind, drücken Sie _Speichern und schließen_. Ihr neuer Benutzerstil wurde erfolgreich zu AdGuard hinzugefügt
 
@@ -409,3 +484,5 @@ Es werden keine Benutzerstile unterstützt, die `@var` oder `@advanced` in den M
     }
 }
 ```
+
+[CoreLibs]: https://github.com/AdguardTeam/CoreLibs

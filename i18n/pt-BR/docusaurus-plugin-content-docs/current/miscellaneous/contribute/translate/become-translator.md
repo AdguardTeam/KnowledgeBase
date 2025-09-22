@@ -9,41 +9,47 @@ Se você quiser ajudar a traduzir produtos AdGuard, sites e as Bases de conhecim
 
 Depois de fazer isso, vá para [nossa página](https://crowdin.com/profile/adguard/). Você verá projetos do AdGuard, cada um com pastas de diferentes produtos.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/projects.png)
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_page.png)
 
-Escolha seu idioma e você verá a lista de pastas de produtos disponíveis.
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/languages.png)
+*AdGuard Glossary* is only used for storing and managing terms — it doesn’t need to be translated.
 
-Você pode começar a traduzir literalmente qualquer produto que desejar, escolhendo a respectiva pasta. Temos algumas recomendações sobre [os melhores arquivos para começar no projeto AdGuard Websites](../translation-priority).
+:::
+
+Choose a project you’d like to translate, click *Join*, and choose your language.
+
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_kb.png)
+
+You can start translating literally any product you like by choosing the respective folder. We have some recommendations about [what files are better to start with in AdGuard Websites project](../translation-priority).
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/folders.png)
 
-Filtre as frases que ainda não foram traduzidas e inicie seu histórico de traduções.
+Filter phrases that are not yet translated and start your translation history.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
-Sugira sua versão na caixa de texto e salve-a.
+Suggest your version in the text box and save it.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/text-box.png)
 
-Se você não concorda com uma tradução existente, pode sugerir sua versão. Além disso, você pode votar nas sugestões feitas por outros voluntários clicando nos botões "mais" e "menos".
+If you don’t agree with an existing translation, you can suggest your version. You can also upvote and downvote suggestions made by other volunteers by clicking the plus and minus buttons.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/vote.png)
 
-Além disso, existe a oportunidade de abrir as traduções no modo de votação se você quiser apenas avaliar as traduções.
+Besides, there is an opportunity to open translations in a Voting mode if you just want to rate translations.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-Você pode encontrar algumas dicas [sobre como traduzir o AdGuard neste artigo](../guidelines). Por favor, dê uma olhada.
+You can find some [helpful tips on translating AdGuard in this article](../guidelines). Please take a look at it.
 
 ### Como se tornar um revisor {#proofreaders}
 
-Temos revisores (anteriormente conhecidos como moderadores) para cada idioma. E todo tradutor ativo tem a opção de se tornar um deles.
+We have proofreaders (previously known as moderators) for each language. And every active translator has an option to become one.
 
-Então, quais são as responsabilidades dos revisores?
+So, what are proofreaders responsible for?
 
-**Revisores:**
+**Proofreaders:**
 
 - Aprovar traduções de alta qualidade e reprovar as ruins;
 
@@ -51,4 +57,4 @@ Então, quais são as responsabilidades dos revisores?
 
 - Responder a comentários relacionados com traduções na sua língua.
 
-Todos os anos, os melhores revisores recebem brindes do AdGuard. Tradutores ativos também não ficam sem recompensa. Leia mais sobre nosso [](../sistema de recompensas).
+Every year, the best proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system](../rewards).

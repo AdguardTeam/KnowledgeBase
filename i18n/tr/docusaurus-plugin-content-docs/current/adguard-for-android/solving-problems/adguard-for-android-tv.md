@@ -43,18 +43,46 @@ Done, AdGuard for Android TV is installed.
 
 4. Android TV'nizin IP adresini yazın:
 
-    - On your Android TV, navigate to Settings.
-    - Select _System_ → _About_.
-    - Find _Network_ and select _Wi-Fi_ or _Ethernet_, depending on your connection type.
-    - Go to the network section and find _IP address_. Bu IP adresini not edin.
+   - On your Android TV, navigate to Settings.
+   - Select _System_ → _About_.
+   - Find _Network_ and select _Wi-Fi_ or _Ethernet_, depending on your connection type.
+   - Go to the network section and find _IP address_. Bu IP adresini not edin.
 
 5. Connect to Android TV via ADB:
 
-    - Open the terminal or command prompt on your computer.
-    - Enter the command `adb connect` and paste the IP address of your TV.
-    - Bağlantı kurulacaktır.
+   - Open the terminal or command prompt on your computer.
+   - Enter the command `adb connect` and paste the IP address of your TV.
+   - Bağlantı kurulacaktır.
 
 6. Install AdGuard for Android TV via ADB:
 
-    - In the terminal, enter the command `adb install Downloads/adguard_tv.apk`. If necessary, replace `Downloads/adguard_tv.apk` with your path.
-    - Wait for a message in the terminal indicating the successful installation of the app.
+   - In the terminal, enter the command `adb install Downloads/adguard_tv.apk`. If necessary, replace `Downloads/adguard_tv.apk` with your path.
+   - Wait for a message in the terminal indicating the successful installation of the app.
+
+## Android TV için AdGuard'ı atvTools aracılığıyla yükleme
+
+**Önemli:** Akıllı telefonunuz ve Android TV (TV kutusu) yüklü televizyonunuz aynı yerel ağda olmalıdır.
+
+1. Android akıllı telefonunuza [atvTools](https://play.google.com/store/apps/details?id=dev.vodik7.atvtools) uygulamasını yükleyin
+
+2. **atvTools'u** **Android TV'ye** bağlayın
+
+   1. Android TV cihazınızda geliştirici modunu etkinleştirin
+
+      `Ayarlar` → `Cihaz ayarları` → `Cihaz hakkında` → Geliştirici durumunu başarıyla aldığınızı onaylayan bir mesaj görene kadar `Android TV yapısı` öğesine dokunun
+
+   2. Android TV cihazınızda USB hata ayıklamayı etkinleştirin
+
+      `Ayarlar` → `Cihaz ayarları` → `Geliştiriciler için` → `Hata ayıklama` öğesine gidin, `USB hata ayıklama` öğesine izin verin ve etkinleştirin
+
+3. Akıllı telefonunuzda **atvTools'u** başlatın
+
+4. Listeden istediğiniz **Android TV** cihazını bulun ve tıklayın
+
+5. TV'de bağlantıya izin verin
+
+6. Download the [AdGuard for Android TV](https://agrd.io/tvapk) installer to your smartphone as an **APK** file
+
+7. In **atvTools**, click **Install** on the main screen and wait (less than a minute) until the **AdGuard for Android TV** icon appears in the list of applications
+
+![Ana ekran \*mobil](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/android-tv/main-screen.png)

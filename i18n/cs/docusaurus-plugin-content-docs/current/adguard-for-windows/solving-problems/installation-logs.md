@@ -9,7 +9,7 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 :::
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 Údaje a/nebo soubory poskytnuté v systémových protokolech jsou zpracovávány v souladu se [Zásadami ochrany osobních údajů AdGuardu](https://adguard.com/en/privacy.html).
 

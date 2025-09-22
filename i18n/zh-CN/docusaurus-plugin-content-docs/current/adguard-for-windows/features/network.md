@@ -11,7 +11,7 @@ sidebar_position: 4
 
 「_网络_」模块专用于网络过滤，用户可以找到其他与网络相关的选项。 其中两项默认启动：「开启流量过滤」和「过滤 HTTPS」。 这都是重要的额外预防措施，可以更好地过滤网络空间。 当前大部分网站使用 HTTPS，广告亦是如此。 在许多网站上，例如 youtube.com、facebook.com 和 x.com，如果没有 HTTPS 过滤就无法删除广告。 因此除非用户有充分的理由不开启它，否则请保持开启「过滤 HTTPS」功能。
 
-![网络设置 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
+![Network Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/network/network_settings.png)
 
 用户也可选中此模块内的复选框「AdGuard 用作 HTTP 代理」以将 AdGuard 用作常规的 HTTP 代理过滤经由它的所有流量。 用户还可以开启「用 EV 证书过滤网站」功能。 扩展验证（EV）SSL 证书提供更强大的安全保障；此类网站的所有者必须通过 EV 指南定义的彻底的全球标准化身份验证过程。 这就是一些用户信任具有此类证书的网站并且不愿过滤它们的原因。
 

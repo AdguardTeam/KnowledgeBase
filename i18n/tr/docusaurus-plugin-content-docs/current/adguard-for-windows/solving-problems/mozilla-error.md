@@ -1,6 +1,6 @@
 ---
 title: "`MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE` hatası nasıl düzeltilir"
-sidebar_position: 11
+sidebar_position: 12
 ---
 
 :::info

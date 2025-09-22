@@ -11,7 +11,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 AdGuard can significantly extend website functionality by working as a [userscript manager](/general/extensions.md). AdGuard users can add their own scripts as well as manage existing ones.
 
-![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![Extensions \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/extensions/extensions.png)
 
 **Automatically detect userscripts**
 
@@ -19,7 +19,7 @@ Bu seçenek etkinleştirildiğinde, AdGuard tarayıcı sorgularını otomatik ol
 
 Aşağıdaki uzantılar AdGuard ile birlikte yüklenir:
 
-![Preinstalled userscripts \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![Preinstalled userscripts \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/extensions/extensions_enabled.png)
 
 **AdGuard Asistanı**
 

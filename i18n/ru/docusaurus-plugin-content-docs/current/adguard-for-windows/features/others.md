@@ -13,13 +13,13 @@ sidebar_position: 5
 
 ### Поддержка
 
-![Поддержка \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
+![Поддержка \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/support.png)
 
-Нажав на вкладку «Поддержка», вы откроете диалоговое окно, в котором можете сообщить об ошибке, отправить запрос на добавление функции или просто поделиться своим мнением о продукте.
+Нажав на вкладку _Поддержка_, вы откроете диалоговое окно, в котором можете сообщить об ошибке, отправить запрос на добавление функции или просто поделиться своим мнением о продукте.
 
 ### Лицензия
 
-![Лицензия \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![Лицензия \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/license.png)
 
 Эта вкладка содержит информацию о лицензии. Здесь вы можете:
 
@@ -28,13 +28,13 @@ sidebar_position: 5
 
 ### О компании
 
-![О программе \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![О программе \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/about.png)
 
 В дополнение к информации о текущей версии программы, эта вкладка содержит несколько полезных ссылок на страницы Лицензионного соглашения, Политики конфиденциальности, Благодарностей, Обсуждений и Истории версий.
 
 ### Проверить обновления
 
-![Проверка обновлений \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![Проверка обновлений \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/updates.png)
 
 Чтобы проверить наличие обновлений фильтров и пользовательских скриптов, нажмите на значок вращающихся стрелок в правом верхнем углу главного экрана приложения.
 

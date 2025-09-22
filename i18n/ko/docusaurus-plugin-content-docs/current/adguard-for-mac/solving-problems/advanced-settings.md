@@ -81,6 +81,12 @@ Chrome 인증서 투명성 정책에 따라 도메인의 모든 인증서를 확
 
 `true`로 설정하면 AdGuard가 QUIC 기반의 최신 버전의 HTTP 프로토콜인 HTTP/3을 통해 전송되는 트래픽을 필터링할 수 있습니다.
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 #### `network.filtering.localnetwork`
 
 `true`로 설정하면 로컬 네트워크 필터링이 활성화됩니다.
