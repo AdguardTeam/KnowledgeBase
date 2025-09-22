@@ -65,6 +65,12 @@ AdGuard'ın filtre aboneliği URL'lerini (ör. `abp:subscribe` ve benzeri) otoma
 
 Bu ayar etkinleştirilirse, AdGuard diğer istek türlerinin yanı sıra HTTP/3 üzerinden gönderilen istekleri de filtreler.
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 ### Yönlendirme sürücü modunu kullan
 
 Bu seçenek etkinleştirilirse AdGuard tüm trafiği keser ve daha fazla filtreleme için yerel proxy sunucusuna yönlendirir.

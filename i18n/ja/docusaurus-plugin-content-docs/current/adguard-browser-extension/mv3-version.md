@@ -55,7 +55,7 @@ Manifest V3 では、拡張子ごとに静的ルールと正規表現ルール�
 
 **動的ルール:** ルールの厳密な上限は**5,000**で、これには最大1,000個の正規表現ルールが含まれます。
 
-この制限を超えた場合、**5,000の変換されたルール**のみが次の順序で適用されます：最初にホワイトリスト、次にユーザールール、カスタムフィルタ、最後に臨時修正フィルタ。
+If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules and finally Custom filters.
 
 > **変換されたルール**は、[宣言的コンバータ][github-declarative-converter]を使って
 > \[DNR形式]に変換されたルールです。

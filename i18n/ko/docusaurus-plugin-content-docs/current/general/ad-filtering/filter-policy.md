@@ -41,14 +41,12 @@ AdGuard 광고 차단 필터에는 다음이 포함됩니다.
 - AdGuard 베이스 필터
 - AdGuard 모바일 광고 필터
 - 언어 원칙에 따라 구분된 지역 필터: 중국어, 네덜란드어, 프랑스어, 독일어, 일본어, 러시아어, 스페인어/포르투갈어, 터키어, 우크라이나어
-- AdGuard Quick Fixes filter
 
 ### 이러한 필터의 목적
 
 - **베이스 필터**는 영어 웹사이트 및 별도의 필터가 없는 웹사이트의 광고를 차단하도록 설계되었습니다. 또한 언어에 관계없이 모든 사이트에 적용되는 일반 필터링 규칙이 포함되어 있습니다.
 - **Mobile Ads filter** blocks advertisements on mobile versions of websites and within mobile apps. 언어에 따른 세분화가 없습니다.
 - **지역 필터**는 **베이스 필터**와 동일한 정책을 따르지만 특정 언어의 웹사이트로 제한됩니다.
-- **Quick Fixes filter** used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension.
 
 광고 차단 필터의 목표는 인터넷에서 광고를 로드할 수 있는 웹사이트, 애플리케이션 및 특정 디바이스에서 모든 유형의 광고를 차단하는 것입니다.
 

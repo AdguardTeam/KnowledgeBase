@@ -55,7 +55,7 @@ Numărul maxim de filtre activate simultan este **50**.
 
 **Regulile dinamice:** o limită strictă de **5.000** reguli este impusă, care include un maxim de 1.000 de reguli regex.
 
-Dacă această limită este depășită, vor fi aplicate doar **5.000 de reguli convertite** în următoarea ordine: mai întâi Allowlist, apoi Reguli utilizator, filtre personalizate și, în final — filtre Quick Fixes.
+If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules and finally Custom filters.
 
 > **Reguli convertite** sunt reguli care au fost transformate
 > din \[format DNR] folosind [convertorul declarativ][github-declarative-converter].
