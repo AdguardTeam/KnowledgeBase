@@ -57,7 +57,7 @@ O código-fonte está [disponível no GitHub](https://github.com/Rob--W/dont-tra
 
 #### tinyShield
 
-Um userscripts para pessoas que visitam sites coreanos e alguns sites internacionais. O userscript do tinyShield bloqueia anúncios do Ad-Shield e anti-adblocks. Este userscript pode ser instalado em aplicativos baseados no CoreLibs do AdGuard, Violentmonkey, Tampermonkey e [quoid/userscripts](https://github.com/quoid/userscripts). Saiba mais sobre o tinyShield e como instalá-lo no [GitHub](https://github.com/List-KR/tinyShield).
+Um userscripts para pessoas que visitam sites coreanos e alguns sites internacionais. O userscript do tinyShield bloqueia anúncios do Ad-Shield e anti-adblocks. Este userscript pode ser instalado em aplicativos baseados no CoreLibs do AdGuard, Violentmonkey, Tampermonkey e [quoid/userscripts](https://github.com/quoid/userscripts). Saiba mais sobre o tinyShield e como instalá-lo no [GitHub](https://github.com/FilteringDev/tinyShield).
 
 ### Onde obter mais userscripts?{#more-userscripts}
 
