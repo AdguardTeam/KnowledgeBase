@@ -57,23 +57,23 @@ Standardmäßig wird die Minidump-Datei im Ordner **%SystemRoot%\Minidump** gesp
 
 ## Collecting wfpdiag.cab file
 
-Our support team may request a wfpdiag.cab file, along with a minidump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
+Unser Support-Team kann eine wfpdiag.cab-Datei zusammen mit einer Minidump-Datei anfordern, um die Systemprotokolle genauer analysieren und Probleme diagnostizieren zu können. Um die Datei zu erfassen, gehen Sie bitte wie folgt vor:
 
 1. Aktivieren Sie den AdGuard-Schutz.
 
-1. Click *Start* and type `cmd` to open Command Prompt
+1. Klicken Sie auf *Start* und geben Sie den Befehl `cmd` ein, um die Eingabeaufforderung zu öffnen
 
-1. Right-click Command Prompt and choose *Run as administrator*
+1. Klicken Sie mit der rechten Maustaste auf Eingabeaufforderung und wählen Sie *Als Administrator ausführen*
 
     :::note
 
-    A wfpdiag.cab file is created in your current directory. You can change the location by typing `cd <folder_name>`.
+    Es wird eine Datei „wfpdiag.cab“ in Ihrem aktuellen Verzeichnis erstellt. Sie können den Speicherort ändern, indem Sie `cd <folder_name>` eingeben.
 
 
 :::
 
-1. To start logging, enter the following command: `netsh wfp capture start`
+1. Um die Protokollierung zu starten, geben Sie den folgenden Befehl ein: `netsh wfp capture start`
 
-1. Visit any website to route traffic through AdGuard and log the filtering process
+1. Besuchen Sie eine beliebige Website, um den Datenverkehr durch AdGuard zu leiten und den Filterungsprozess zu protokollieren
 
-1. To stop logging, enter `netsh wfp capture stop`
+1. Um die Protokollierung zu beenden, geben Sie `netsh wfp capture stop` ein

@@ -5,40 +5,40 @@ sidebar_position: 2
 
 :::info
 
-Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works firsthand, [download the AdGuard app](https://agrd.io/download-kb-adblock).
+Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um die Funktionsweise aus erster Hand zu erfahren, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Über die systemweite Filterung
 
-System-wide filtering lets you block ads and trackers not just in Safari, but across other apps and browsers on your iOS device. iOS is a fairly closed operating system, and Apple provides limited options for blocking ads outside Safari. The only way to block ads and trackers system-wide is through [DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/). This article explains how to enable it.
+Systemweites Filtering ermöglicht es Ihnen, Werbung und Tracker nicht nur in Safari, sondern auch in anderen Apps und Browsern auf Ihrem iOS-Gerät zu blockieren. iOS ist ein ziemlich geschlossenes Betriebssystem, und Apple bietet nur begrenzte Möglichkeiten zum Blockieren von Werbung außerhalb von Safari. Die einzige Möglichkeit, Werbung und Tracker systemweit zu blockieren, ist über [DNS-Filterung](https://adguard-dns.io/kb/general/dns-filtering/). In diesem Artikel wird erklärt, wie Sie diese Funktion aktivieren können.
 
-![How DNS filtering works](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
+![So funktioniert DNS-Filterung](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 
-The first thing you need to do is enable DNS protection:
+Als erstes muss der DNS-Schutz aktiviert werden:
 
-1. Open *AdGuard*.
-2. Tap the *Protection* icon (shield icon in the bottom menu bar).
-3. Turn on *DNS protection*.
+1. Öffnen Sie *AdGuard*.
+2. Tippen Sie auf das Symbol *Schutz* (Schildsymbol in der unteren Menüleiste).
+3. Schalten Sie *DNS-Schutz* ein.
 
 ![DNS-Schutzbildschirm *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/dns_protection.png)
 
-Once DNS protection is on, you have three options:
+Sobald der DNS-Schutz aktiviert ist, haben Sie drei Optionen:
 
-- **Use AdGuard DNS filter.** To enable it, go to *Protection* → *DNS protection* → *DNS filtering* → *DNS filters* → *AdGuard DNS filter*. With this option, you’re not tied to a specific blocking server — the filter does all the blocking.
-- **Use a blocking DNS server.** Go to *Protection* → *DNS protection* → *DNS server* and select *AdGuard DNS* or another blocking server to your liking.
-- **Add a custom DNS filter or hosts file.** You can add multiple DNS filters and hosts files. Be aware that using too many may slow down AdGuard.
+- **AdGuard DNS-Filter verwenden.** Um ihn zu aktivieren, gehen Sie zu *Schutz* → *DNS-Schutz* → *DNS-Filterung* → *DNS-Filter* → *AdGuard DNS-Filter*. Mit dieser Option sind Sie nicht an einen bestimmten Server gebunden — der Filter führt die gesamte Blockierung durch.
+- **Einen blockierenden DNS-Server verwenden.** Gehen Sie zu *Schutz* → *DNS-Schutz* → *DNS-Server* und wählen Sie *AdGuard DNS* oder einen anderen Blockierungsserver nach Ihrem Geschmack.
+- **Einen benutzerdefinierten DNS-Filter oder eine Hosts-Datei hinzufugen.** Es können mehrere DNS-Filter und Hosts-Dateien hinzugefügt werden. Beachten Sie, dass die Verwendung von zu vielen Filtern AdGuard verlangsamen kann.
 
-## How to add custom DNS filter and hosts file
+## Hinzufügen von benutzerdefinierten DNS-Filtern und Hosts-Dateien
 
-For example, let’s add the [OISD Blocklist Big](https://oisd.nl/).
+Fügen wir zum Beispiel die [OISD-Blockliste Big](https://oisd.nl/) hinzu.
 
-1. Copy the OISD Blocklist Big link: `https://big.oisd.nl`
-2. Open *Protection*  → *DNS protection* → *DNS filtering* → *DNS filters*.
-3. Tap *Add a filter*.
-4. Paste the link into the filter URL field.
-5. Tap *Next* → *Add*.
+1. Kopieren Sie den Link für OISD Blocklist Big: `https://big.oisd.nl`
+2. Öffnen Sie *Schutz*  → *DNS-Schutz* → *DNS-Filterung* → *DNS-Filter*.
+3. Tippen Sie auf *Filter hinzufügen*.
+4. Fügen Sie den Link in das URL-Feld des Filters ein.
+5. Tippen Sie auf *Weiter* → *Hinzufügen*.
 
-![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/adding_dns_filter.png)
+![Hinzufügen eines DNS-Filters *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/adding_dns_filter.png)
 
-Add any number of DNS filters by repeating step 4 with a different URL. You can find various filter lists and their links at [filterlists.com](https://filterlists.com).
+Fügen Sie beliebig viele DNS-Filter hinzu, indem Sie Schritt 4 mit einer anderen URL wiederholen. Verschiedene Filterlisten und deren Links finden Sie unter [filterlists.com](https://filterlists.com).

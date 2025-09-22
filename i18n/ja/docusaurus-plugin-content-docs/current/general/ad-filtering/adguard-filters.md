@@ -38,7 +38,6 @@ sidebar_position: 2
 - **実験的フィルタ**は、潜在的に競合を引き起こし、ウェブサイトの作業を混乱させる可能性のある新しいフィルタリングルールをテストするために使用されています。 これらのルールが問題なく動けば、メインフィルタに追加されます。 [含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_5_Experimental/filter.txt)
 - **AdGuard モバイル広告フィルタ**は、モバイルデバイス上の広告をブロックします。 すべての既知のモバイル広告ネットワークが含まれています。 [含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt)
 - **AdGuard DNSフィルタ**は、数フィルタ（AdGuardベースフィルタ、SNS用フィルタ、スパイウェアフィルタ、モバイル広告フィルタ、EasyList、EasyPrivacy）で構成され、DNSレベルの広告ブロックとの互換性が向上するように簡素化されたフィルタです。 このフィルタは[AdGuard DNS](https://adguard-dns.io/kb)サーバーでも使用され、広告やトラッキングをブロックします。 [含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt)
-- **AdGuard 臨時修正フィルタ**は、MV3対応版 AdGuard ブラウザ拡張機能をアップデートする必要なく、人気Webサイトでのコンテンツフィルタリング問題をすばやく解決するためのフィルタです。 [含まれているルールを見る](https://filters.adtidy.org/extension/chromium-mv3/filters/24.txt)
 
 ## AdGuard フィルタポリシー
 
