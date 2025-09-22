@@ -29,15 +29,15 @@ In diesem Abschnitt können Sie den Internetzugang für bestimmte Apps steuern. 
 
 1. Öffnen Sie _Benutzerdefinierte Firewall-Regeln_. Tippen Sie unter _Apps mit benutzerdefinierten Regeln_ auf _App hinzufügen_.
 
-    ![Benutzerdefinierte Firewall-Regeln \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+   ![Benutzerdefinierte Firewall-Regeln \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
 2. Wählen Sie die App aus, für die Sie individuelle Regeln festlegen möchten.
 
-    ![Hinzufügen einer App zu benutzerdefinierten Firewall-Regeln \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+   ![Hinzufügen einer App zu benutzerdefinierten Firewall-Regeln \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
 3. Wählen Sie unter _Verfügbare benutzerdefinierte Regeln_ die Regeln aus, die Sie konfigurieren möchten, und tippen Sie auf das Symbol „+“. Die Regeln werden nun unter _Angewandte benutzerdefinierte Regeln_ angezeigt.
 
-    ![Hinzugefügte Regel \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+   ![Hinzugefügte Regel \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
 4. Um einen bestimmten Verbindungstyp zu sperren, schieben Sie den Schalter nach links. Wenn Sie die Verbindung zulassen möchten, dann lassen Sie den Schalter eingeschaltet. **Benutzerdefinierte Regeln haben Vorrang vor globalen Regeln**: Alle Änderungen, die Sie in den _Globalen Firewall-Regeln_ vornehmen, haben keine Auswirkungen auf diese App.
 

@@ -147,6 +147,7 @@ Všechny uvedené staré funkce Greasemonkey jsou zastaralé, ale stále podporo
 - [`GM_addStyle`](https://www.tampermonkey.net/documentation.php#api:GM_addStyle)
 - [`GM_log`](https://www.tampermonkey.net/documentation.php#api:GM_log)
 - [`GM.addElement`, `GM_addElement`](https://www.tampermonkey.net/documentation.php#api:GM_addElement)
+- [`window.onurlchange`](https://www.tampermonkey.net/documentation.php#api:window.onurlchange)
 
 Další informace o Greasemonkey API najdete v [jeho příručce](https://wiki.greasespot.net/Greasemonkey_Manual:API).
 
@@ -183,6 +184,7 @@ Další informace o Greasemonkey API najdete v [jeho příručce](https://wiki.g
 // @grant           GM_openInTab
 // @grant           GM_registerMenuCommand
 // @grant           GM_addElement
+// @grant           window.onurlchange
 // @run-at          document-start
 // ==/UserScript==
 !function(){(
@@ -321,6 +323,80 @@ function convertPropertyToTrusted(
 divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML", "<div></div>");
 ```
 
+#### Shodné stránky SPA
+
+:::info Kompatibilita
+
+Tato část platí pouze pro AdGuard pro Windows, AdGuard pro Mac, AdGuard pro Android a Adguardem pro Linux s [CoreLibs] v1.19 nebo novější.
+
+:::
+
+Mnoho moderních webových stránek, například YouTube, využívá možnosti [Single Page Application (SPA)](https://en.wikipedia.org/wiki/Single-page_application). Na rozdíl od tradičních webových aplikací se stránka při přecházení mezi stránkami znovu nenačítá. Místo toho se obsah aktualizuje dynamicky pomocí JavaScriptu, což umožňuje plynulejší uživatelské prostředí.
+
+Na takových webových stránkách je uživatelský skript vyvolán pouze jednou, když jsou splněny direktivy `@match` nebo `@include` (pokud není splněna direktiva `@exclude`). Vzhledem k povaze SPA nelze uživatelský skript znovu vyvolat při následných změnách stránky, protože globální kontext JavaScriptu zůstává stejný. Pro řešení tohoto problému mohou uživatelské skripty použít direktivu `@grant window.onurlchange`.
+
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @grant window.onurlchange
+// @run-at document-start
+// ==/UserScript==
+
+// via window.onurlchange
+window.onurlchange = (event) => {
+    console.log('URL changed to:', event.url);
+};
+
+// via window.addEventListener('urlchange')
+window.addEventListener('urlchange', (event) => {
+    console.log('URL changed to:', event.url);
+});
+```
+
+To umožní uživatelským skriptům naslouchat změnám adresy URL a podle toho je zpracovávat.
+
+:::note
+
+Událost `urlchange` se spouští pouze při úplných změnách adresy URL, například při změně cesty nebo dotazu, nikoli však při změnách fragmentů (hash).
+Příklady:
+
+- Navigace z `https://example.com/page1` na `https://example.com/page2` vyvolá událost.
+- Navigace z `https://example.com/page1?query=1` na `https://example.com/page1?query=2` vyvolá událost.
+- Navigace z `https://example.com/page1#section1` na `https://example.com/page1#section2` NEVYVOLÁ událost.
+
+:::
+
+:::note
+
+API `window.onurlchange` a `window.addEventListener('urlchange', ...)` jsou nestandardní. Chcete-li je použít, musíte je explicitně přidělit ve svém uživatelském skriptu pomocí příkazu `@grant window.onurlchange`.
+
+:::
+
+Pokud webová stránka používá směrování hash, mohou uživatelské skripty používat nativní událost DOM [`hashchange`](https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event):
+
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @run-at document-start
+// ==/UserScript==
+
+// via window.onhashchange
+window.onhashchange = (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+};
+
+// via window.addEventListener('hashchange')
+window.addEventListener('hashchange', (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+});
+```
+
 ## Uživatelské styly
 
 Uživatelské styly umožňují uživatelům změnit vzhled oblíbených webových stránek.
@@ -329,7 +405,7 @@ AdGuard má možnost nahrát nebo vytvořit vlastní uživatelské styly. Jedná
 
 :::info Podporované aplikace
 
-V současné době umožňují vytvářet a spravovat uživatelské styly dvě aplikace AdGuard: AdGuard pro Windows (verze 7.19 nebo novější) a AdGuard pro macOS (verze 2.16 nebo novější). Tuto novou funkci plánujeme v nejbližší době implementovat také do AdGuardu v4.8 pro Android.
+V současné době umožňují vytvářet a spravovat uživatelské styly dvě aplikace AdGuard: AdGuard pro Windows (verze 7.19 nebo novější) a AdGuard pro macOS (verze 2.16 nebo novější). Tuto novou funkci plánujeme v nejbližší době implementovat také do AdGuardu pro Android v4.8.
 
 :::
 
@@ -363,30 +439,30 @@ Nepodporujeme uživatelské styly, které v metadatech obsahují `@var` nebo `@a
 
 3. Chcete-li vytvořit uživatelský styl, napište nejprve název s metadaty, např.
 
- ```CSS
- /* ==UserStyle==
- @name New userstyle
- @version 1.0
- ==/UserStyle== */
- ```
+   ```CSS
+   /* ==UserStyle==
+   @name New userstyle
+   @version 1.0
+   ==/UserStyle== */
+   ```
 
-4. Část CSS zapište až za metadata. AdGuard podporuje porovnávání názvů domén webových stránek (`@-moz-document domain(...), ...`). Např:
+4. Část CSS zapište až za metadata. AdGuard podporuje porovnávání názvů domén webových stránek (`@-moz-document domain(…), …`). Např:
 
- ```CSS
- body {
-   background: gray;
-   }
- ```
+   ```CSS
+   body {
+     background: gray;
+     }
+   ```
 
- nebo:
+   nebo:
 
- ```CSS
- @-moz-document domain('example.org'),
- domain('example.net'),
- domain('example.com') body {
-   background: gray;
-   }
- ```
+   ```CSS
+   @-moz-document domain('example.org'),
+   domain('example.net'),
+   domain('example.com') body {
+     background: gray;
+     }
+   ```
 
 5. Po dokončení stiskněte tlačítko _Uložit a zavřít_. Váš nový uživatelský styl byl úspěšně přidán do AdGuardu
 
@@ -409,3 +485,5 @@ Nepodporujeme uživatelské styly, které v metadatech obsahují `@var` nebo `@a
     }
 }
 ```
+
+[CoreLibs]: https://github.com/AdguardTeam/CoreLibs

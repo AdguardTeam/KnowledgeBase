@@ -26,7 +26,7 @@ Qualitätsanforderungen für Filterregeln:
 
 Ein **Filter** (oder eine **Filterliste**) ist ein Satz von Filterregeln, der dazu dient, Inhalte zu filtern und verschiedene Arten von Werbung zu blockieren. Diese Filter arbeiten normalerweise auf der Ebene des Webbrowsers, der Programme oder des DNS-Servers.
 
-**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so-called “adblock walls”). Es gibt verschiedene Arten von Anti-Adblocks:
+**Anti-Adblock** ist eine Technologie, die von Websites oder Apps eingesetzt wird, um das Blockieren von Werbung zu erkennen und auf verschiedene Weise darauf zu reagieren: Nachverfolgung, Wiedereinblendung der Werbung, Aufforderung zur Deaktivierung des Werbeblockers (sog. „Adblock-Walls“). Es gibt verschiedene Arten von Anti-Adblocks:
 
 - Anti-Adblock, der den Inhalt der Website blockiert, ohne eine Alternative anzubieten: Um die Website weiter nutzen zu können, muss der Werbeblocker auf der Website deaktiviert werden
 - „Anti-Adblock-Wall“ mit alternativen Optionen, wie z. B. dem Kauf eines Abonnements, um den Werbeblocker weiterhin nutzen zu können
@@ -41,14 +41,12 @@ AdGuard-Filter zum Blockieren von Werbung umfassen:
 - AdGuard Basisfilter
 - AdGuard-Filter gegen mobile Werbung
 - Regionale Filter nach Sprachprinzip — Chinesisch, Niederländisch, Französisch, Deutsch, Japanisch, Russisch, Spanisch/Portugiesisch, Türkisch, und Ukrainisch
-- AdGuard Quick Fixes-Filter
 
 ### Der Zweck dieser Filter
 
 - **Der Basisfilter** blockiert Werbung auf englischsprachigen Websites und solchen, für die es keinen eigenen Filter gibt. Er enthält auch allgemeine Filterregeln, die für alle Websites unabhängig von der Sprache gelten
 - **Filter gegen mobile Werbung** blockiert Werbung auf mobilen Versionen von Websites und in mobilen Apps. Es gibt keine Unterteilung nach Sprachen
 - **Sprachspezifische Filter** folgen der gleichen Politik wie der **Basisfilter**, sind aber auf Websites in bestimmten Sprachen beschränkt
-- **Quick-Fixes-Filter** zur schnellen Behebung kritischer Probleme bei der Filterung von Inhalten auf beliebten Websites ohne Aktualisierung der MV3-Erweiterung.
 
 Das Ziel von Werbeblockern ist es, alle Arten von Werbung auf Websites, in Apps und auf bestimmten Geräten, die Werbung aus dem Internet laden können, zu blockieren:
 
@@ -81,7 +79,7 @@ Das Ziel von Werbeblockern ist es, alle Arten von Werbung auf Websites, in Apps 
 - Es werden keine Werbeblocker-Erkennungsmeldungen blockiert, die mindestens eines der folgenden Kriterien erfüllen:
     - Sie ermöglichen die Nutzung der Website und überlagern nicht die große Menge an Inhalten
     - Sie bieten eine Alternative zum Deaktivieren eines Werbeblockers, da diese Alternative weder die Privatsphäre noch die Sicherheit der Nutzer:innen gefährdet
-    - They allow the user to proceed to the website’s content
+    - Sie ermöglichen den Zugang zum Inhalt der Website
     - Einige ältere Regeln können weiterhin Meldungen blockieren, die eines oder mehrere dieser Kriterien erfüllen. Wenn solche Regeln identifiziert werden, werden sie gemäß dieser Richtlinie behandelt
 - Mining-Pools werden nicht blockiert, wenn sie öffentlich sind und nicht ausschließlich zu böswilligen Zwecken genutzt werden
 

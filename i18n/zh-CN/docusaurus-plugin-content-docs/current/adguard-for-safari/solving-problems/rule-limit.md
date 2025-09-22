@@ -31,6 +31,6 @@ Safari 版 AdGuard 有六种内容拦截器，包括
 1. 开启 AdGuard Safari 版。
 2. 向下滚动并点击「_内容拦截器_」。
 3. 在每个内容拦截器下方，用户将看到已启用的过滤器和活动规则的数量。
- ![Content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
+   ![Content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
 
 如果内容拦截器中启用的规则数量超过 150,000 个，则可能需要禁用其中的某些过滤器或用户规则。 请转到「_过滤器_」，选择有问题的过滤器类别，禁用不需要的过滤器或用户规则。

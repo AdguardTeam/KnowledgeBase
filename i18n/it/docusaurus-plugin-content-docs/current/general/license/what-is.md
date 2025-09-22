@@ -25,7 +25,7 @@ Esistono anche licenze che l'utente può acquistare da altre fonti o ottenere gr
 - **Le licenze distributore** e **le licenze regalate** possono essere sia limitate nel tempo che non limitate nel tempo. Le licenze con data di scadenza possono essere rinnovate solo manualmente
     - Personale — fino a 3 dispositivi
     - Famiglia — fino a 9 dispositivi
-- **AdGuard for iOS** and **AdGuard Pro** licenses are purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
+- Le licenze di **AdGuard per iOS** e **AdGuard Pro** vengono acquistate e gestite tramite App Store e possono essere utilizzate solo su dispositivi iOS e iPadOS con lo stesso ID Apple
 
 :::tip
 
@@ -35,7 +35,7 @@ Per estendere il limite di dispositivi, puoi [aggiornare](../payment-options/#up
 
 ## Come utilizzare la licenza AdGuard
 
-Per utilizzare la tua licenza su un dispositivo, accedi alla tua app AdGuard utilizzando l'indirizzo email associato alla licenza. Se la licenza non è stata ancora associata al tuo indirizzo email, puoi farlo nel tuo [account AdGuard](https://adguardaccount.com/). A tal fine, aprire la scheda *Licenze* e fare clic su *Legare la licenza*.
+Per utilizzare la tua licenza su un dispositivo, accedi alla tua app AdGuard utilizzando l'indirizzo email associato alla licenza. Se la licenza non è stata ancora associata al tuo indirizzo email, puoi farlo nel tuo [account AdGuard](https://adguardaccount.com/). A tal fine, aprire la scheda *Licenze* e fare clic su *Legare la licenza*. Usually, licenses are activated immediately, but sometimes activation may take up to five minutes.
 
 In alternativa, puoi inserire la tua [chiave di licenza](#license-key) nella tua app AdGuard.
 

@@ -419,6 +419,19 @@ Mit diesem Modifikator können Sie die Regelabdeckung auf eine bestimmte Anwendu
 
 Für Mac können Sie die Bundle-ID oder den Prozessnamen der Anwendung herausfinden, indem Sie die entsprechenden Anfragedetails im Filterprotokoll anzeigen.
 
+**Syntax**
+
+The modifier is a list of one or more expressions, each of which is matched against an application in a particular way depending on its type. These expressions are separated by the `|` symbol.
+
+```text
+applications = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
+entry_i = ( regular_app / wildcard_app / regexp )
+```
+
+- **`regular_app`** — a regular application name (`example.app`). It corresponds to the specified application and is matched lexicographically.
+- **`wildcard_app`** — an application name ending with a wildcard character `*`, such as `org.example.*` or `com.ad*`. It matches all applications whose names start with the specified prefix. Matching is done lexicographically.
+- **`regexp`** — a regular expression that starts and ends with `/`. It works the same way as the basic URL rules, but the characters `/`, `$`, `,`, and `|` must be escaped with `\`.
+
 **Beispiele**
 
 - `||baddomain.com^$app=org.example.app` — a rule to block requests that match the specified mask and are sent from the `org.example.app` Android app.
@@ -429,9 +442,23 @@ If you want the rule not to be applied to certain apps, start the app name with 
 - `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask and are sent from any app except for the `org.example.app`.
 - `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
+You can use wildcards in the `$app` modifier:
+
+- `||baddomain.com^$app=org.example.*` — applies to all apps whose package names start with `org.example.`
+
+You can use regular expressions in the `$app` modifier by enclosing them in forward slashes `/.../`. This allows for more flexible matching — for example, targeting a group of apps from the same publisher or matching complex patterns.
+
+- `||baddomain.com^$app=/org\.example\.[a-z0-9_]+/` — applies to all apps whose package name starts with `org.example` (e.g. `org.example.app1`, `org.example.utility`, etc.).
+- `||baddomain.com^$app=/^org\.example\.app\$\|^org\.example\.[ab].*/` — applies to `org.example.app` and to any app whose package starts with `org.example.a` or `org.example.b`.
+
+The `$app` modifier supports combining all three types of entries — plain names, wildcards, and regular expressions — within the same rule, but it does not allow combining negated and non-negated expressions together.
+
+- `||example.com^$app=org.example.app|org.example.*|/org\.example\.[a-z]+/` — applies to `org.example.app`, all matching `org.example.*` and `org.example.[a-z]+` apps.
+
 :::caution Einschränkungen
 
-Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`. Regeln mit einem solchen Modifikator gelten als ungültig.
+- Apps in the modifier value cannot include a wildcard inside the string , e.g. `$app=com.*.music`. Use a regular expression instead: `$app=/com\..*\.music/`.
+- You cannot combine negated (`~`) and non-negated expressions in the same `$app` modifier — this would be ambiguous.
 
 :::
 
@@ -439,6 +466,7 @@ Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`. Rege
 
 - Nur AdGuard für Windows, Mac und Android ist technisch in der Lage, Regeln mit dem Modifikator `$app` zu verwenden.
 - On Windows the process name is case-insensitive starting with AdGuard for Windows with [CoreLibs][] v1.12 or later.
+- Support for regular expressions and for combining different types of entries (plain names, wildcards, and regular expressions) in the `$app` modifier is available starting from CoreLibs v1.19 or later.
 
 :::
 
@@ -529,46 +557,33 @@ Wenn Sie möchten, dass die Regel nicht auf bestimmte Domains angewendet wird, b
 
 **`$domain`-Modifikator, der der Zieldomain entspricht:**
 
-In einigen Fällen kann der Modifikator `$domain` nicht nur mit der Referrer-Domain, sondern auch mit der Zieldomain übereinstimmen. Dies ist der Fall, wenn alle folgenden Bedingungen erfüllt sind:
+In some cases the `$domain` modifier can match not only the referrer domain, but also the target domain.
 
-1. Die Anfrage hat den Inhaltstyp `document`
-1. Das Regelmuster stimmt mit keiner bestimmten Domain überein
-1. Das Regelmuster enthält keine regulären Ausdrücke
-1. Der Modifikator `$domain` enthält nur ausgeschlossene Domains, z. B. `$domain=~example.org|~example.com`
+This happens when the rule has one of the following modifiers: [`$cookie`](#cookie-modifier), [`$csp`](#csp-modifier), [`$permissions`](#permissions-modifier), [`$removeparam`](#removeparam-modifier).
 
-The following predicate should be satisfied to perform a target domain matching:
-
-```text
-1 UND ((2 UND 3) ODER 4)
-```
-
-That is, if the modifier `$domain` contains only excluded domains, then the rule does not need to meet the second and third conditions to match the target domain against the modifier `$domain`.
-
-If some of the conditions above are not met but the rule contains [`$cookie`](#cookie-modifier) or [`$csp`](#csp-modifier) modifier, the target domain will still be matched.
-
-If the referrer matches a rule with `$domain` that explicitly excludes the referrer domain, then the rule will not be applied even if the target domain also matches the rule. Dies betrifft auch Regeln mit den Modifikatoren [`$cookie`](#cookie-modifier) und [`$csp`](#csp-modifier).
+These modifiers will not be applied if the referrer matches a rule with `$domain` that explicitly excludes the referrer domain, even if the target domain also matches the rule.
 
 **Beispiele**
 
 - `*$cookie,domain=example.org|example.com` blockiert Cookies für alle Anfragen an und von `example.org` und `example.com`.
-- `*$document,domain=example.org|example.com` blockiert alle Anfragen an und von `example.org` und `example.com`.
+- `*$document,domain=example.org|example.com` will block requests only from `example.org` and `example.com`, but not to them.
 
-In den folgenden Beispielen wird davon ausgegangen, dass die Anfragen von `http://example.org/page` (dem Referrer) gesendet werden und die Ziel-URL `http://targetdomain.com/page` lautet.
+In the following examples it is implied that requests are sent from `http://example.org/page` (the referrer) and the target URL is `http://targetdomain.com/page`.
 
 - `page$domain=example.org` will be matched, as it matches the referrer domain.
-- `page$domain=targetdomain.com` will be matched, as it matches the target domain and satisfies all requirements mentioned above.
-- `||*page$domain=targetdomain.com` will not be matched, as the pattern `||*page` may match specific domains, e.g. `example.page`.
+- `page$domain=targetdomain.com` will not be matched because it does not match the referrer domain.
 - `||*page$domain=targetdomain.com,cookie` will be matched because the rule contains `$cookie` modifier despite the pattern `||*page` may match specific domains.
-- `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
-- `Seite$domain=targetdomain.com|~example.org` wird nicht abgeglichen, da die Referrer-Domain explizit ausgeschlossen ist.
+- `page$domain=targetdomain.com|~example.org,cookie` will not be matched because the referrer domain is explicitly excluded.
 
 ##### Einschränkungen des Modifikators `$domain` {#domain-modifier-limitations}
 
-:::caution Beschränkungen
+:::caution Limitations
 
 In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries are not supported.
 
 AdGuard for iOS and AdGuard for Safari support the `$domain` modifier but have some limitations. For more details, see the [SafariConverterLib section](#safari-converter--basic--supported-with-limitations).
+
+Rules with `regexp` in the `$domain` modifier are not supported by AdGuard for Safari and AdGuard for iOS.
 
 :::
 
@@ -692,12 +707,12 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 ##### `$popup` modifier limitations {#popup-modifier-limitations}
 
-:::caution Beschränkungen
+:::caution Limitations
 
-1. Der Modifikator `$popup` funktioniert am besten in der AdGuard Browsererweiterung für Chromium-basierte Browser und Firefox.
+1. The `$popup` modifier works best in AdGuard Browser Extension for Chromium-based browsers and Firefox.
 1. In [AdGuard for Chrome MV3][ext-mv3] rules with the [`$popup`][popup-in-mv3] modifier would not work, so we disable converting them to declarative rules. We will try to use them only in our [TSUrlFilter][] engine and close new tabs programmatically.
-1. In AdGuard für iOS und AdGuard für Safari blockieren `$popup`-Regeln die Seite einfach sofort.
-1. In AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux, the `$popup` modifier may not detect a popup in some cases and it will not be blocked. The `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page. Die blockierende Seite selbst kann einige Prüfungen durchführen und das Fenster schließen, wenn es sich wirklich um ein Pop-up-Fenster handelt. Andernfalls sollte die Seite geladen werden. It can be combined with other request type modifiers, such as `$third-party`, `$strict-third-party`, `$strict-first-party`, and `$important`.
+1. In AdGuard for iOS and AdGuard for Safari, `$popup` rules simply block the page right away.
+1. In AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux, the `$popup` modifier may not detect a popup in some cases and it will not be blocked. The `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page. Blocking page itself can do some checks and close the window if it is really a popup. Otherwise, page should be loaded. It can be combined with other request type modifiers, such as `$third-party`, `$strict-third-party`, `$strict-first-party`, and `$important`.
 
 :::
 
@@ -755,7 +770,7 @@ A restriction on third-party and custom requests. A third-party request is a req
 
 To be considered as such, a third-party request should meet one of the following conditions:
 
-1. Sein Referrer ist keine Subdomain der Zieldomain oder umgekehrt. Beispielsweise ist eine Anfrage an `subdomain.example.org` von `example.org` eine Anfrage eines Drittanbieters
+1. Its referrer is not a subdomain of the target domain or vice versa. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request
 1. Its `Sec-Fetch-Site` header is set to `cross-site`
 
 :::
@@ -899,7 +914,7 @@ The rule corresponds to requests caused by either `navigator.sendBeacon()` or th
 
 ##### `$ping` modifier limitations {#ping-modifier-limitations}
 
-:::caution Beschränkungen
+:::caution Limitations
 
 AdGuard for Windows, Mac, and Android often cannot accurately detect `navigator.sendBeacon()`. Using `$ping` is not recommended in the filter lists that are supposed to be used by CoreLibs-based AdGuard products.
 
@@ -942,7 +957,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$fr
 
 ##### `$subdocument` modifier limitations {#subdocument-modifier-limitations}
 
-:::caution Beschränkungen
+:::caution Limitations
 
 In AdGuard for Windows, Mac, and Android subdocuments are being detected by the [Sec-Fetch-Dest header][] if it is present. Otherwise, some main pages may be treated as subdocuments.
 
@@ -960,7 +975,7 @@ The rule applies only to WebSocket connections.
 
 ##### Einschränkungen des Modifikators `$websocket` {#websocket-modifier-limitations}
 
-:::caution Beschränkungen
+:::caution Limitations
 
 For AdGuard for Safari and AdGuard for iOS, it is supported on devices with macOS Monterey (version 12) and iOS 16 or higher respectively.
 
@@ -1219,7 +1234,7 @@ Disables blocking of all requests sent from the pages matching the rule and disa
 
 ##### `$urlblock` modifier limitations {#urlblock-modifier-limitations}
 
-:::caution Beschränkungen
+:::caution Limitations
 
 In AdGuard for iOS and AdGuard for Safari, rules with `$urlblock` work as [$document exclusion](#document-modifier) — unblock everything.
 
@@ -1244,7 +1259,7 @@ For example, these rules are generic:
 *#@#.adsblock
 ~domain.com###banner
 ||domain.com^
-||domain.com^$domain=~example .com
+||domain.com^$domain=~example.com
 ```
 
 And these are not:
@@ -1264,7 +1279,7 @@ Disables generic basic rules on pages that correspond to exception rule.
 
 ##### `$genericblock` modifier limitations {#genericblock-modifier-limitations}
 
-:::caution Beschränkungen
+:::caution Limitations
 
 In AdGuard for iOS and AdGuard for Safari, rules with `$genericblock` work as [$document exclusion](#document-modifier) — unblock everything.
 
@@ -1371,7 +1386,7 @@ This modifier cannot be used as an exception with the `@@` mark.
 
 ##### Einschränkungen des Modifikators `$all` {#all-modifier-limitations}
 
-:::caution Beschränkungen
+:::caution Limitations
 
 Since `$popup` is a part if `$all`, the `$all` modifier is not supported by AdGuard for Chrome MV3 because of [`$popup` modifier limitations](#popup-modifier-limitations).
 
@@ -1412,7 +1427,7 @@ In that case, the `$badfilter` rule will disable the corresponding rule for doma
 
 ##### Einschränkungen des Modifikators `$badfilter` {#badfilter-modifier-limitations}
 
-:::caution Beschränkungen
+:::caution Limitations
 
 In [AdGuard for Chrome MV3][ext-mv3] a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. We cannot calculate it if it is only partially canceled. [Examples][badfilter-in-mv3].
 
@@ -1475,7 +1490,7 @@ There are two methods to deactivate `$cookie` rules: the primary method involves
 
 ##### `$cookie` modifier limitations {#cookie-modifier-limitations}
 
-:::caution Beschränkungen
+:::caution Limitations
 
 In [AdGuard for Chrome MV3][ext-mv3] we delete cookies in 2 ways: from `content-script` side (to which we have access) and from `onBeforeSendHeaders` listener. Since `onBeforeSendHeaders` and other listeners are no longer blocking, we are not able to delete them in all cases. You can check if a rule works with [this test](https://testcases.agrd.dev/Filters/cookie-rules/test-cookie-rules).
 
@@ -1585,16 +1600,16 @@ When multiple `$hls` rules match the same request, their effect is cumulative.
 
 A quick summary of the [specification](https://datatracker.ietf.org/doc/html/rfc8216):
 
-1. Eine HLS-Playlist ist eine Sammlung von Textzeilen
-1. Eine Zeile kann leer sein, ein Kommentar (beginnt mit `#`), ein Tag (beginnt ebenfalls mit `#`, kann nur anhand des Namens erkannt werden) oder eine URL
-1. Eine URL-Zeile wird als „Segment“ bezeichnet
-1. Tags können auf ein einzelnes Segment angewendet werden, d.h. die erste URL-Zeile nach dem Tag, auf alle Segmente, die dem Tag folgen, und bis zum Tag mit demselben Namen, oder auf die gesamte Playlist
+1. An HLS playlist is a collection of text lines
+1. A line may be empty, a comment (starts with `#`), a tag (also starts with `#`, can only be recognized by name) or a URL
+1. A URL line is called a "segment"
+1. Tags may apply to a single segment, i.e. the first URL line after the tag, to all segments following the tag and until the tag with the same name, or to the whole playlist
 
 Some points specific to the operation of `$hls` rules:
 
-1. Wenn ein Segment entfernt wird, werden auch alle Tags entfernt, die nur für dieses Segment gelten
-1. Wenn es einen Tag gibt, der auf mehrere Segmente angewendet wird, und alle diese Segmente entfernt werden, wird auch der Tag entfernt
-1. Da es keine Möglichkeit gibt, verschiedene Arten von Tags syntaktisch zu erkennen, erkennen wir alle die durch das RFC spezifizierten Tags, plus einige nicht-standardisierte Tags, die wir im Feld gesehen haben. Any lines starting with `#` and not recognized as a tag are passed through without modification, and are not matched against the rules
+1. When a segment is removed, all of the tags that apply only to that segment are also removed
+1. When there is a tag that applies to multiple segments, and all of those segments are removed, the tag is also removed
+1. Since there is no way to recognize different kinds of tags by syntax, we recognize all of the tags specified by the RFC, plus some non-standard tags that we have seen in the field. Any lines starting with `#` and not recognized as a tag are passed through without modification, and are not matched against the rules
 1. Tags will not be matched if they apply to the entire playlist, and `$hls` rules cannot be used to remove them, as these rule types are intended for segment removals. If you know what you are doing, you can use `$replace` rules to remove or rewrite just a single tag from the playlist
 
 **An example of a transformation done by the rules:**
@@ -1699,15 +1714,15 @@ Due to the way rule parsing works, the characters `$` and `,` must be escaped wi
 
 The modified JSONPath syntax has the following differences from the original:
 
-1. Skriptausdrücke werden nicht unterstützt
-1. Die unterstützten Filterausdrücke sind:
-    - `?(hat <key>)` — wahr, wenn das aktuelle Objekt den angegebenen Schlüssel hat
-    - `?(key-eq <key> <value>)` — wahr, wenn das aktuelle Objekt den angegebenen Schlüssel hat und dessen Wert dem angegebenen Wert entspricht
-    - `?(key-substr <key> <value>)` — wahr, wenn der angegebene Wert eine Teilzeichenfolge des Werts des angegebenen Schlüssels des aktuellen Objekts ist
-1. Leerzeichen außerhalb von Zeichenfolgen in doppelten oder einfachen Anführungszeichen haben keine Bedeutung
-1. Sowohl doppelt als auch einfach zitierte Zeichenfolgen können verwendet werden
-1. Ausdrücke, die mit `..` enden, werden nicht unterstützt
-1. Mehrere Array-Slices können in eckigen Klammern angegeben werden
+1. Script expressions are not supported
+1. The supported filter expressions are:
+    - `?(has <key>)` — true if the current object has the specified key
+    - `?(key-eq <key> <value>)` — true if the current object has the specified key, and its value is equal to the specified value
+    - `?(key-substr <key> <value>)` — true if the specified value is a substring of the value of the specified key of the current object
+1. Whitespace outside of double- or single-quoted strings has no meaning
+1. Both double- and single-quoted strings can be used
+1. Expressions ending with `..` are not supported
+1. Multiple array slices can be specified in square brackets
 
 There are various online tools that make working with JSONPath expressions more convenient:
 
@@ -1876,6 +1891,9 @@ In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.11 or later, JSONPa
     "elems": [
         {
             "a": {"b": {"c": 123}}
+        },
+        {
+            "a": {"b": {"c": "abc"}}
         }
     ]
 }
@@ -1949,21 +1967,21 @@ When multiple `$xmlprune` rules match the same request, they are applied in lexi
 <bookstore>
 
   <book category="cooking">
-    <title lang="de">Jeden Tag Italienisch</title>
+    <title lang="en">Everyday Italian</title>
     <author>Giada De Laurentiis</author>
     <year>2005</year>
     <price>30.00</price>
   </book>
 
   <book category="children">
-    <title lang="de">Harry Potter</title>
+    <title lang="en">Harry Potter</title>
     <author>J K. Rowling</author>
     <year>2005</year>
     <price>29.99</price>
   </book>
 
   <book category="web">
-    <title lang="de">XQuery Kick Start</title>
+    <title lang="en">XQuery Kick Start</title>
     <author>James McGovern</author>
     <author>Per Bothner</author>
     <author>Kurt Cagle</author>
@@ -1974,7 +1992,7 @@ When multiple `$xmlprune` rules match the same request, they are applied in lexi
   </book>
 
   <book category="web">
-    <title lang="de">XML Lernen</title>
+    <title lang="en">Learning XML</title>
     <author>Erik T. Ray</author>
     <year>2003</year>
     <price>39.95</price>
@@ -2027,21 +2045,21 @@ When multiple `$xmlprune` rules match the same request, they are applied in lexi
 <bookstore>
 
   <book category="cooking">
-    <title lang="de">Jeden Tag Italienisch</title>
+    <title lang="en">Everyday Italian</title>
     <author>Giada De Laurentiis</author>
     <year>2005</year>
     <price>30.00</price>
   </book>
 
   <book category="children">
-    <title lang="de">Harry Potter</title>
+    <title lang="en">Harry Potter</title>
     <author>J K. Rowling</author>
     <year>2005</year>
     <price>29.99</price>
   </book>
 
   <book category="web">
-    <title lang="de">XQuery Kick Start</title>
+    <title lang="en">XQuery Kick Start</title>
     <author>James McGovern</author>
     <author>Per Bothner</author>
     <author>Kurt Cagle</author>
@@ -2052,7 +2070,7 @@ When multiple `$xmlprune` rules match the same request, they are applied in lexi
   </book>
 
   <book category="web">
-    <title lang="de">XML Lernen</title>
+    <title lang="en">Learning XML</title>
     <author>Erik T. Ray</author>
     <year>2003</year>
     <price>39.95</price>
@@ -2154,7 +2172,7 @@ Rules with the `$xmlprune` modifier are supported by AdGuard for Windows, AdGuar
 This is basically a Firewall-like rule allowing to fully block or unblock access to a specified remote address.
 
 1. `$network` rules match **IP addresses only**! You cannot use them to block or unblock access to a domain.
-2. Um eine IPv6-Adresse zu erfassen, müssen Sie die komprimierte Syntax verwenden, z.B. verwenden Sie `[2001:4860:4860::8888]$network` anstelle von `[2001:4860:4860:0:0:0:0:8888]$network`.
+2. To match an IPv6 address, you have to use the collapsed syntax, e.g. use `[2001:4860:4860::8888]$network` instead of `[2001:4860:4860:0:0:0:0:8888]$network`.
 3. An allowlist `$network` rule makes AdGuard bypass data to the matching endpoint, hence there will be no further filtering at all.
 4. If the IP part starts and ends with `/` character, it is treated as a regular expression.
 
@@ -2227,7 +2245,7 @@ If there are multiple `$permissions` rules that match the same request, multiple
 
 ##### `$permissions` modifier limitations {#permissions-modifier-limitations}
 
-:::caution Beschränkungen
+:::caution Limitations
 
 Firefox ignores the `Permissions-Policy` header. For more information, see [this issue](https://bugzilla.mozilla.org/show_bug.cgi?id=1694922).
 
@@ -2236,7 +2254,7 @@ Firefox ignores the `Permissions-Policy` header. For more information, see [this
 :::caution Einschränkungen
 
 1. Characters forbidden in the `$permissions` value: `$`.
-2. `$permissions` ist kompatibel mit einer begrenzten Anzahl von Modifikatoren: `$domain`, `$important`, `$subdocument` und [Inhaltstyp-Modifikatoren](#content-type-modifiers).
+2. `$permissions` is compatible with a limited set of modifiers: `$domain`, `$important`, `$subdocument`, and [content-type modifiers](#content-type-modifiers).
 3. `$permissions` rules that do not have any [content-type modifiers](#content-type-modifiers) will match only requests where content type is `document`.
 
 :::
@@ -2281,7 +2299,7 @@ Go to [rules priorities](#rule-priorities) for more details.
 
 ##### `$redirect` modifier limitations {#redirect-modifier-limitations}
 
-:::caution Beschränkungen
+:::caution Limitations
 
 In [AdGuard for Chrome MV3][ext-mv3] allowlist rules with `$redirect` are not supported.
 
@@ -2383,7 +2401,7 @@ In case of multiple `$removeheader` rules matching a single request, we will app
 
 ##### `$removeheader` modifier limitations {#removeheader-modifier-limitations}
 
-:::caution Beschränkungen
+:::caution Limitations
 
 [AdGuard for Chrome MV3][ext-mv3] has some limitations:
 
@@ -2628,7 +2646,7 @@ With these rules, specified UTM parameters will be removed from any request save
 
 ##### `$removeparam` modifier limitations {#removeparam-modifier-limitations}
 
-:::caution Beschränkungen
+:::caution Limitations
 
 [AdGuard for Chrome MV3][ext-mv3] has some limitations:
 
@@ -2718,9 +2736,10 @@ This modifier completely changes the rule behavior. If it is applied, the rule w
 
 You will need some knowledge of regular expressions to use `$replace` modifier.
 
-**Features**
+**Funktionen**
 
 - `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc.).
+- `$replace` rules do not apply if the size of the original response is more than 10 MB.
 - `$replace` rules have a higher priority than other basic rules, **including** exception rules. So if a request matches two different rules, one of which has the `$replace` modifier, this rule will be applied.
 - Document-level exception rules with `$content` or `$document` modifiers do disable `$replace` rules for requests matching them.
 - Other document-level exception rules (`$generichide`, `$elemhide` or `$jsinject` modifiers) are applied alongside `$replace` rules. It means that you can modify the page content with a `$replace` rule and disable cosmetic rules there at the same time.
@@ -2790,7 +2809,7 @@ Rules with `$replace` modifier are supported by AdGuard for Windows, AdGuard for
 
 The `$urltransform` rules allow you to modify the request URL by replacing text matched by a regular expression.
 
-**Features**
+**Funktionen**
 
 - `$urltransform` rules normally only apply to the path and query parts of the URL, see below for one exception.
 - `$urltransform` will not be applied if the original URL is blocked by other rules.
@@ -4019,6 +4038,8 @@ In most cases, the basis and cosmetic rules are enough to filter ads. But someti
 
 HTML filtering rules are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux, and AdGuard Browser Extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on network level.
 
+The syntax with an optional `value` in the attributes is supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with CoreLibs v1.18 or later. It is also supported by AdGuard Browser Extension v5.2 or later. For the other products and previous versions `value` must **always** be specified. Otherwise, the rule will be treated as incorrect and ignored.
+
 :::
 
 ### Syntax
@@ -4028,14 +4049,14 @@ HTML filtering rules are supported by AdGuard for Windows, AdGuard for Mac, AdGu
    combinator = ">"
          rule = [domains] "$$" selector *(combinator selector)
       domains = [domain0, domain1[, ...[, domainN]]]
-   attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = valueN "]"
+   attributes = "[" name0[ = value0] "]" "[" name1[ = value2] "]" ... "[" nameN[ = valueN] "]"
 pseudoClasses = pseudoClass *pseudoClass
   pseudoClass = ":" pseudoName [ "(" pseudoArgs ")" ]
 ```
 
 - **`tagName`** — name of the element in lower case, for example, `div` or `script`.
 - **`domains`** — domain restriction for the rule. Same principles as in [element hiding rule syntax](#cosmetic-elemhide-rules).
-- **`attributes`** — a list of attributes that limit the selection of elements. `name` — attribute name, `value` — substring, that is contained in attribute value.
+- **`attributes`** — a list of attributes that limit the selection of elements. `name` — required, attribute name; `value` — optional (may not be specified), substring that is contained in attribute value.
 - **`pseudoName`** — the name of a pseudo-class.
 - **`pseudoArgs`** — the arguments of a function-style pseudo-class.
 - **`combinator`** — an operator that works similarly to the [CSS child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator): that is, the `selector` on the right of the `combinator` will only match an element whose direct parent matches the `selector` on the left of the `combinator`.
@@ -4055,6 +4076,19 @@ example.org$$script[data-src="banner"]
 ```
 
 This rule removes all `script` elements with the attribute `data-src` containing the substring `banner`. The rule applies only to `example.org` and all its subdomains.
+
+If the value of the attribute is omitted in the rule, then the element will be removed if it contains the specified attribute, regardless of its value. This is also the way to remove the elements whose attributes don't have any value at all.
+
+```html
+<div some_attribute="some_value"></div>
+<div some_attribute></div>
+```
+
+```adblock
+example.org$$div[some_attribute]
+```
+
+This rule removes all `div` elements with the attribute `some_attribute` on `example.org` and all its subdomains. So, the both `div` elements from the example above will be removed.
 
 ### Besondere Attribute
 
@@ -4086,7 +4120,7 @@ Following rule will delete all `script` elements with a `banner` substring in th
 $$script[tag-content="banner"]
 ```
 
-:::caution Beschränkungen
+:::caution Limitations
 
 The `tag-content` special attribute must not appear in a selector to the left of a `>` combinator.
 
@@ -4108,7 +4142,7 @@ For example: `$$script[wildcard="*banner*text*"]`
 
 It checks if the element code contains the two consecutive substrings `banner` and `text`.
 
-:::caution Beschränkungen
+:::caution Limitations
 
 The `wildcard` special attribute must not appear in a selector to the left of a `>` combinator.
 
@@ -4136,7 +4170,7 @@ $$div[tag-content="banner"][max-length="400"]
 
 This rule will remove all the `div` elements, whose code contains the substring `banner` and the length of which does not exceed `400` characters.
 
-:::caution Beschränkungen
+:::caution Limitations
 
 The `max-length` special attribute must not appear in a selector to the left of a `>` combinator.
 
@@ -4160,7 +4194,7 @@ $$div[tag-content="banner"][min-length="400"]
 
 This rule will remove all the `div` elements, whose code contains the substring `banner` and the length of which exceeds `400` characters.
 
-:::caution Beschränkungen
+:::caution Limitations
 
 The `min-length` special attribute must not appear in a selector to the left of a `>` combinator.
 
@@ -4196,7 +4230,7 @@ The `:contains()` pseudo-class is supported by AdGuard for Windows, AdGuard for 
 
 Requires that the inner HTML of the element contains the specified text or matches the specified regular expression.
 
-:::caution Beschränkungen
+:::caution Limitations
 
 A `:contains()` pseudo-class must not appear in a selector to the left of a `>` combinator.
 
@@ -4473,7 +4507,7 @@ But rules with mixed style domains restriction are considered invalid. So, for e
 
 ### Non-basic `$domain` modifier limitations {#non-basic-domain-modifier-limitations}
 
-:::caution Beschränkungen
+:::caution Limitations
 
 Since the non-basic `$domain` works the same as the basic one, it has the same [limitations](#domain-modifier-limitations).
 
@@ -4540,7 +4574,7 @@ where `pattern` is pretty much the same as [`pattern` of the basic rules](#basic
 
 #### `$url` modifier limitations {#non-basic-url-modifier-limitations}
 
-:::caution Beschränkungen
+:::caution Limitations
 
 In AdGuard Browser Extension, non-basic `$url` modifier is not compatible with domain-specific rules and other non-basic modifiers — [`$domain`](#non-basic-domain-modifier) and [`$path`](#non-basic-path-modifier). For example, the rule `[$url=/category/*]example.com###textad` will not be applied.
 
@@ -4700,7 +4734,7 @@ It is already supported for filter lists compiled by the [FiltersRegistry][], bu
 
 - AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.13;
 - AdGuard Browser Extension v4.2.208;
-- AdGuard v1.11.16 for Safari.
+- AdGuard for Safari v1.11.16.
 
 :::
 

@@ -132,6 +132,12 @@ The _Local VPN_ mode doesn't allow AdGuard to be used simultaneously with other 
 
 - _Automatic proxy_ is an alternative traffic routing method that does not require the use of a VPN. One significant advantage is that it can be run in parallel with a VPN. This mode requires root access.
 
+:::note
+
+Please note that DNS filtering will still be active in _Automatic proxy_ routing mode, and your device may not be able to filter DNS requests from specific apps. In _VPN_ routing mode, apps are excluded from the local VPN by system means. Therefore, the system resolver sees which apps are included in the VPN and which are not. It either allows them into the local VPN or lets them bypass it. However, DNS requests come from the system resolver, not the application. In _Automatic proxy_ mode, it is only possible to exclude traffic from applications, not their DNS queries, because AdGuard sees them as system queries.
+
+:::
+
 - _Manual proxy_ involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
 
 ## Lisans
@@ -139,13 +145,13 @@ The _Local VPN_ mode doesn't allow AdGuard to be used simultaneously with other 
 In this section, you can find information about your license and manage it:
 
 - Buy an AdGuard license to activate [the full version's features](/adguard-for-android/features/free-vs-full)
-- Log in to your AdGuard account or enter the license key to activate your license
-- Sign up to activate your 7-day trial period if you haven't used it yet
+- Log in to your AdGuard account or enter the activation code to activate your license
+- 14 günlük deneme sürenizi etkinleştirmek için kaydolun. Etkinleştirme kodu farklı cihazlarda ve platformlarda kullanılabilir
 - Refresh the license status from the three-dots menu (⋮)
 - Open the AdGuard account to manage your license there
 - Reset your license — for example, if you've reached device limit for this license and want to apply another one
 
-![License screen \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![License screen \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/android/settings/licensetab.png)
 
 ## Destek
 

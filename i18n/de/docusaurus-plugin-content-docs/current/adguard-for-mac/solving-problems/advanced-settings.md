@@ -81,6 +81,12 @@ Verwendet einen lokalen DNS-Proxy für die Suche nach Konfigurationen in den ECH
 
 Mit der Einstellung `true` erlauben Sie AdGuard, Datenverkehr zu filtern, der über HTTP/3, die neueste Version des auf QUIC-basierenden HTTP-Protokolls, gesendet wird.
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 #### `network.filtering.localnetwork`
 
 Indem Sie `true` setzen, aktivieren Sie die lokale Netzwerkfilterung.

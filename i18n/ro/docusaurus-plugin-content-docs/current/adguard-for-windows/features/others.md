@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multifuncțional care protejează dispozitivul dumneavoastră la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multifuncțional care protejează dispozitivul dumneavoastră la nivel de sistem. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
@@ -13,13 +13,13 @@ Există alte opțiuni utile AdGuard care nu ar trebui să treacă neobservate î
 
 ### Support
 
-![Suport \*mobil_bord](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
+![Support \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/support.png)
 
-Prin clic pe tabul Suport veți deschide o fereastră de dialog prin care puteți raporta o eroare, trimite o solicitare de funcție sau pur și simplu împărtăși opinia dvs. despre produs.
+By clicking the _Support_ tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
 
 ### License
 
-![Licență \*mobil_bord](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![License \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/license.png)
 
 Acest tab conține informații despre licența dumneavoastră. Aici puteți:
 
@@ -28,13 +28,13 @@ Acest tab conține informații despre licența dumneavoastră. Aici puteți:
 
 ### About
 
-![Despre \*mobil_bord](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![About \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/about.png)
 
-În plus față de informațiile despre versiunea curentă a programului, acest tab oferă câteva linkuri utile către acordul de licență, politica de confidențialitate, recunoașteri, discuții și paginile istoricului versiunilor.
+In addition to information about the current version of the program, this tab provides some useful links to License agreement, Privacy policy, Acknowledgements, Discussions, and Version history pages.
 
 ### Căutare actualizări
 
-![Căutare actualizări \*mobil_bord](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![Check for updates \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/updates.png)
 
 Pentru a verifica actualizările filtrelor și scripturilor utilizator, faceți clic pe pictograma cu săgeți rotative din colțul din dreapta sus al ecranului principal al aplicației.
 

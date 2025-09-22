@@ -55,6 +55,6 @@ Vezměte prosím na vědomí, že korektoři nezískávají žádné další lic
 
 ## Dárky pro aktivní přispěvatele
 
-Nejlepším přispěvatelům každoročně posíláme dárky s propagačním materiálem AdGuard a děkujeme jim na našem [blogu](https://adguard.com/en/blog/best-contributors-2023.html).
+Nejlepším přispěvatelům každoročně posíláme dárky s propagačním materiálem AdGuard a děkujeme jim na našem [blogu](https://adguard.com/en/blog/best-contributors-2024.html).
 
 ![AdGuard merch *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

@@ -9,7 +9,7 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 :::
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Os dados e/ou arquivos fornecidos nos logs são processados de acordo com [a Política de Privacidade do AdGuard](https://adguard.com/en/privacy.html).
 
@@ -17,7 +17,7 @@ Os dados e/ou arquivos fornecidos nos logs são processados de acordo com [a Pol
 
 Para analisar e diagnosticar diferentes problemas que possam surgir, o serviço de suporte AdGuard pode precisar de arquivos de log. Esses arquivos contêm registros sobre erros e outros eventos que ocorrem com o software. Há uma breve instrução abaixo que descreve a forma de obter os arquivos de log e enviá-los ao serviço de suporte, se necessário.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 O AdGuard tem o compromisso de proteger sua privacidade. Seguimos rigorosamente nossa [Política de Privacidade](https://adguard.com/privacy/windows.html) e não coletamos nenhuma informação privada sobre os usuários. Antes de enviar seus registros para a equipe de suporte, revise o arquivo, pois ele pode conter informações adicionais que você não deseja compartilhar. Se contiver tais informações pessoais, recomendamos que você as exclua primeiro.
 
@@ -57,7 +57,7 @@ O AdGuard tem o compromisso de proteger sua privacidade. Seguimos rigorosamente 
 
 1. Abra o console (digite cmd no painel de início).
 
-1. Execute o aplicativo com o comando `C:\"Program Files"\Adguard\Adguard.exe /trace` independentemente da quantidade de bits do Windows, se você instalou o AdGuard v7.16 para Windows ou posterior.
+1. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard for Windows v7.16 or later.
 
 Se você tiver uma versão mais antiga do AdGuard para Windows, execute o aplicativo com o comando C:\"Arquivos de Programas (x86)"\Adguard\Adguard.exe /trace se estiver usando o Windows de 64 bits e C:\"Program Arquivos"\Adguard\Adguard.exe /trace se você estiver usando 32 bits.
 

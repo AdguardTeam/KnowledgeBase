@@ -5,17 +5,17 @@ sidebar_position: 2
 
 ## Установка AdGuard для Linux
 
-Open the command line on your computer. On Linux, use the keyboard shortcut _Ctrl+Alt+T_. On Mac, type _Terminal_ in the search field.
+Откройте командную строку на компьютере. На Linux используйте комбинацию клавиш _Ctrl+Alt+T_. На Mac введите _Терминал_ в поле поиска.
 
-To install AdGuard, choose the version that better suits you (release, beta, or nightly) and enter the respective command.
+Для установки выберите наиболее подходящую вам версию AdGuard — релиз, бета или nightly — и введите соответствующую команду.
 
-**Release**:
+**Релиз**:
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/release/install.sh | sh -s -- -v
 ```
 
-**Beta**:
+**Бета**:
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/beta/install.sh | sh -s -- -v
@@ -27,119 +27,119 @@ curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/beta/install
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/nightly/install.sh | sh -s -- -v
 ```
 
-If required, enter your admin password.
+При необходимости введите пароль администратора.
 
-Press `y` to create a link in `/usr/local/bin` to the executable and wait until the installation is complete.
+Нажмите `y`, чтобы создать ссылку в `/usr/local/bin` на исполняемый файл, и дождитесь завершения установки.
 
 :::note
 
-You can verify the signature to prove it’s an official version of AdGuard by using the `gpg` tool. [Read more on GitHub](https://github.com/AdguardTeam/AdGuardCLI?tab=readme-ov-file#verify-releases)
+Вы можете проверить подпись и убедиться, что это официальная версия AdGuard, используя инструмент `gpg`. [Подробнее на GitHub](https://github.com/AdguardTeam/AdGuardCLI?tab=readme-ov-file#verify-releases)
 
 :::
 
-## Initial setup
+## Первичная настройка
 
-AdGuard for Linux requires an [AdGuard license](https://adguard.com/license.html). If you don’t have a license yet, you can log in or create an account to get a free 14-day trial. If you already have a license, log in to activate it. To do it, follow this step-by-step guide:
+Для AdGuard для Linux нужна [лицензия AdGuard](https://adguard.com/license.html). Если у вас ещё нет лицензии, вы можете войти или создать аккаунт, чтобы получить бесплатную 14-дневную пробную версию. Если у вас уже есть лицензия, войдите, чтобы активировать её. Для этого следуйте этой пошаговой инструкции:
 
-1. After installation, enter:
+1. После установки введите:
 
-    ```sh
-    adguard-cli activate
-    ```
+   ```sh
+   adguard-cli activate
+   ```
 
-2. Then select the desired option:
+2. Затем выберите нужную опцию:
 
-    ![adguard-cli activate \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation1.png)
+   ![adguard-cli activate \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation1.png)
 
-3. Once you have a license, follow the provided link to proceed with the activation:
+3. Перейдите по ссылке, чтобы активировать лицензию:
 
-    ![Activate license \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation2.png)
+   ![Активировать лицензию \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation2.png)
 
-4. After activation, you can continue to work with the program:
+4. После активации вы можете продолжить пользоваться программой:
 
-    ![Successful activation \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation3.png)
+   ![Успешная активация \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation3.png)
 
-5. You can also reset your license by entering:
+5. Вы также можете сбросить лицензию, введя:
 
-    ```sh
-    adguard-cli reset-license
-    ```
+   ```sh
+   adguard-cli reset-license
+   ```
 
-    or  view the license info by entering
+   или просмотреть информацию о лицензии, введя
 
-    ```sh
-    adguard-cli license
-    ```
+   ```sh
+   adguard-cli license
+   ```
 
-6. Now you need to set up AdGuard CLI. To run the configuration wizard, enter:
+6. Теперь нужно настроить AdGuard CLI. Для запуска мастера настройки введите:
 
-    ```sh
-    adguard-cli configure
-    ```
+   ```sh
+   adguard-cli configure
+   ```
 
-    ![Setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation4.png)
+   ![Установка \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation4.png)
 
-    The wizard will ask basic questions required for the initial setup.
+   Мастер задаст основные вопросы, необходимые для первоначальной настройки.
 
-7. After that, you can start the AdGuard protection by entering
+7. После этого вы можете запустить защиту AdGuard, введя
 
-    ```sh
-    adguard-cli start
-    ```
+   ```sh
+   adguard-cli start
+   ```
 
-    ![Start protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation5.png)
+   ![Включить защиту \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation5.png)
 
-8. You can check the protection status using:
+8. Вы можете проверить статус защиты, используя:
 
-    ```sh
-    adguard-cli status
-    ```
+   ```sh
+   adguard-cli status
+   ```
 
-    and stop it with:
+   и остановить её с помощью:
 
-    ```sh
-    adguard-cli stop
-    ```
+   ```sh
+   adguard-cli stop
+   ```
 
-    ![Stop protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+   ![Остановить защиту \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
 
-9. To check the current configuration, enter:
+9. Чтобы просмотреть текущую конфигурацию, введите:
 
-    ```sh
-    adguard-cli config show
-    ```
+   ```sh
+   adguard-cli config show
+   ```
 
-    ![Текущая настройка \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+   ![Текущая настройка \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
-    The path to the configuration file will also be displayed, which you can and should edit directly. It contains descriptions of all additional options.
+   Также будет показан путь к файлу конфигурации, который можно и нужно редактировать напрямую. В нём содержатся описания всех дополнительных опций.
 
-    As an alternative, you can use the commands:
+   Или вы можете использовать команды:
 
-    ```sh
-    adguard-cli config get
-    ```
+   ```sh
+   adguard-cli config get
+   ```
 
-    or:
+   или:
 
-    ```sh
-    adguard-cli config set
-    ```
+   ```sh
+   adguard-cli config set
+   ```
 
-    They are primarily intended for scripting, though.
+   Однако в первую очередь они предназначены для написания скриптов.
 
-For further information on the available commands, check out the section [Settings and protection management](https://adguard.com/kb/adguard-for-linux/settings/).
+Чтобы сбросить лицензию, введите:
 
-## Uninstall AdGuard for Linux
+## Удаление AdGuard для Linux
 
-To uninstall AdGuard, enter:
+Чтобы удалить AdGuard, введите:
 
-Release
+Релиз
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/release/install.sh | sh -s -- -v -u
 ```
 
-Beta
+Бета
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/beta/install.sh | sh -s -- -v -u
@@ -151,4 +151,4 @@ Nightly
 curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/nightly/install.sh | sh -s -- -v -u
 ```
 
-If required, enter your admin password.
+При необходимости введите пароль администратора.

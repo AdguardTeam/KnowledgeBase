@@ -27,7 +27,7 @@ AdGuard para Safari é um aplicativo gratuito disponível na App Store. Para ins
 
     ![Notificação: algumas extensões estão desativadas](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
 
-    :::note
+    Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
     Nem todas as extensões são necessárias para que o AdGuard para Safari funcione corretamente. Por exemplo, marcar a extensão *Ícone* ativa o ícone próximo à barra de pesquisa. No entanto, recomendamos ativar todas elas.
 

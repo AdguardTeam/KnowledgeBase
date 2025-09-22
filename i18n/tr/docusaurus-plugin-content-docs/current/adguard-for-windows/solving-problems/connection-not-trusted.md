@@ -13,6 +13,12 @@ HTTPS trafiğini filtreleyebilmek, reklamları ve izleyicileri etkili bir şekil
 
 Normalde tarayıcılar, kurulum işlemi sırasında sistem sertifika depolama alanına eklendiğinde AdGuard sertifikasına güvenir. Ancak bazı durumlarda bu yeterli olmaz ve uyarı veya hatalarla karşılaşabilirsiniz. Bu durum çoğunlukla Mozilla Firefox, PaleMoon, Waterfox, vb. gibi Firefox tabanlı tarayıcılarda veya Yandex.Browser'da meydana gelir.
 
+İşte bazı yaygın sorunlar:
+
+- [*Potential Security Risk* error in Firefox-based browsers](#potential-security-risk-error-in-firefox-based-browsers)
+- [Yandex.Browser sertifika uyarısı](#yandexbrowser-certificate-warning)
+- [Resmi olmayan uzantılar Firefox tabanlı tarayıcılarda güncellenmiyor](#non-official-add-ons-dont-update-in-firefox-based-browsers)
+
 ## *Potential Security Risk* error in Firefox-based browsers
 
 ![Güvenlik riski hatası](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
@@ -29,7 +35,7 @@ Bu işe yaramazsa, AdGuard sertifikasını FireFox depolamasına elle eklemek i�
 
 1. [http://local.adguard.org/cert](http://local.adguard.org/cert) adresine gidin ve *İndir* düğmesine tıklayın. Tarayıcı **cert.cer** dosyasını indirmeye başlamalıdır.
 
-    :::not
+    :::note
 
     İndirme sayfasını AdGuard uygulaması üzerinden *Ayarlar → Ağ → HTTPS filtreleme* öğesindeki bağlantıya tıklayarak da açabilirsiniz.
 
@@ -77,3 +83,15 @@ Ancak AdGuard, sertifikasını da güvenilir olanların arasına ekler. Bu karş
 En kolay yol, **Siteye git** düğmesine tıklamaktır. Bu, Yandex.Browser'a AdGuard sertifikasını en azından bir süreliğine güvenilir sertifika olarak hatırlamasını söyler. Normalde bu mesajı artık görmeniz gerekmez, ancak herhangi bir nedenle ara sıra görünmesi olasılık dışı değildir. Bu gibi durumlarda aynı düğmeye tekrar basmanız yeterlidir *(AdGuard sertifikası olduğundan emin olun!)*.
 
 AdGuard'da HTTPS filtrelemesini devre dışı bırakmak Yandex.Browser'ın bu mesajı tekrar göstermesini de engeller, ancak bunun büyük bir bedeli vardır: HTTPS ile yüklenen tüm reklamlar (**Yandex'in kendi reklamları** dahil) YouTube, Facebook, Instagram ve daha birçok sitede görünür. Reklam engelleme kalitesini yüksek tutmak istiyorsanız kesinlikle bunu yapmamanızı öneririz.
+
+## Resmi olmayan uzantılar Firefox tabanlı tarayıcılarda güncellenmiyor
+
+Firefox tabanlı tarayıcılar kullanıyorsanız ve Mozilla'nın resmi kataloğundan olmayan eklentileriniz varsa — ve AdGuard'da HTTPS filtreleme etkinse — bu uzantılar güncellenemeyecektir. İşte nedeni.
+
+Uzantıları güncellemek için Firefox, güncelleme sunucusuna olan bağlantının güvenilir bir sertifika yetkilisi (CA) tarafından verilen bir sertifikayla güvenli olup olmadığını kontrol eder. Firefox tabanlı tarayıcılar yalnızca Mozilla'nın yerleşik listesinde yer alan sertifika yetkililerinden gelen sertifikalara güvenir — bu, potansiyel olarak güvenli olmayan güncellemeleri engellemek için alınan bir güvenlik önlemidir.
+
+AdGuard'ın sertifikası güvenli olmasına rağmen bu listede yer almıyor. Bu nedenle Mozilla alan adları AdGuard'da HTTPS filtrelemeden hariç tutulur.
+
+Ancak resmi olmayan uzantılar güncellemeler için üçüncü taraf sunucularını kullanır ve bunlar varsayılan olarak HTTPS filtrelemesinin dışında değildir. Yani Firefox bağlantıyı kontrol ettiğinde orijinal sertifika yerine AdGuard'ın sertifikasını görüyor — ve güncellemeyi engelliyor.
+
+Bu tür uzantılar için güncellemeleri denetlemeniz gerekiyorsa, AdGuard'ı geçici olarak devre dışı bırakmayı düşünün.

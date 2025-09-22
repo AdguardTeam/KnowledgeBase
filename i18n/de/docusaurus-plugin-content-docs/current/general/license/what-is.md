@@ -3,7 +3,7 @@ title: Was ist eine AdGuard-Lizenz?
 sidebar_position: 1
 ---
 
-Eine Lizenz ist eine Erlaubnis zur Nutzung des AdGuard-Produkts, die in Übereinstimmung mit dem [Endbenutzer-Lizenzvertrag](https://adguard.com/eula.html) erteilt wird. If bound to an email address, AdGuard licenses can be found in the user's [AdGuard account](https://adguardaccount.com/).
+Eine Lizenz ist eine Erlaubnis zur Nutzung des AdGuard-Produkts, die in Übereinstimmung mit dem [Endbenutzer-Lizenzvertrag](https://adguard.com/eula.html) erteilt wird. Wenn sie an eine E-Mail-Adresse gebunden sind, können die AdGuard-Lizenzen im [AdGuard-Konto](https://adguardaccount.com/) gefunden werden.
 
 ## Welche Arten von AdGuard-Lizenzen gibt es?
 
@@ -25,7 +25,7 @@ Es gibt auch Lizenzen, die man von anderen Quellen erwerben oder kostenlos erhal
 - **Vertriebshändlerlizenzen** und **Geschenklizenzen** können sowohl zeitlich begrenzt als auch nicht zeitlich begrenzt sein. Lizenzen mit einem Auslaufdatum können nur manuell verlängert werden
     - Einzellizenz — schützt bis zu 3 Geräte
     - Familienlizenz — schützt bis zu 9 Geräte
-- **AdGuard for iOS** and **AdGuard Pro** licenses are purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
+- Lizenzen für **AdGuard für iOS** und **AdGuard Pro** werden über den App Store erworben und verwaltet und können nur auf iOS- und iPadOS-Geräten mit der gleichen Apple-ID verwendet werden
 
 :::tip
 
@@ -35,7 +35,7 @@ Um die Gerätebeschränkung aufzuweiten, können Sie Ihre [Lizenz erweitern](../
 
 ## So verwenden Sie die AdGuard-Lizenz
 
-Zuerst melden Sie sich bei Ihrer AdGuard-App mit jener E-Mail-Adresse an, die mit der Lizenz verknüpft ist. If the license hasn't been bound to your email address yet, you can do it in your [AdGuard account](https://adguardaccount.com/). Öffnen Sie dazu den Tab *Lizenzen* und klicken Sie auf *Lizenz verknüpfen*.
+Zuerst melden Sie sich bei Ihrer AdGuard-App mit jener E-Mail-Adresse an, die mit der Lizenz verknüpft ist. Wenn die Lizenz noch nicht an Ihre E-Mail-Adresse gebunden wurde, können Sie dies in Ihrem [AdGuard-Konto](https://adguardaccount.com/) tun. Öffnen Sie dazu den Tab *Lizenzen* und klicken Sie auf *Lizenz verknüpfen*. Usually, licenses are activated immediately, but sometimes activation may take up to five minutes.
 
 Alternativ können Sie Ihren [Lizenzschlüssel](#license-key) in Ihrer AdGuard-App eingeben.
 

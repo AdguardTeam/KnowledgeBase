@@ -9,7 +9,7 @@ This article is about AdGuard for Mac, a multifunctional ad blocker that protect
 
 :::
 
-## General
+## Általános
 
 ![Network](https://cdn.adtidy.org/content/kb/ad_blocker/mac/network.png)
 

@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
@@ -13,13 +13,13 @@ There are other useful AdGuard options that shouldn't go unnoticed in this artic
 
 ### Destek
 
-![Support \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
+![Support \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/support.png)
 
-Destek sekmesine tıkladığınızda, bir hatayı bildirebileceğiniz, bir özellik talebi gönderebileceğiniz veya sadece ürün hakkındaki görüşlerinizi paylaşabileceğiniz bir uyarı kutusu açılır.
+By clicking the _Support_ tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
 
 ### Lisans
 
-![License \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![License \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/license.png)
 
 Bu sekme lisansınızla ilgili bilgileri içerir. Burada şunları yapabilirsiniz:
 
@@ -28,13 +28,13 @@ Bu sekme lisansınızla ilgili bilgileri içerir. Burada şunları yapabilirsini
 
 ### Hakkında
 
-![About \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![About \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/about.png)
 
-Bu sekme, programın geçerli sürümü hakkındaki bilgilere ek olarak Lisans sözleşmesi, Gizlilik politikası, Katkıda Bulunanlar, Tartışmalar ve Sürüm geçmişi sayfalarına bazı yararlı bağlantılar sağlar.
+In addition to information about the current version of the program, this tab provides some useful links to License agreement, Privacy policy, Acknowledgements, Discussions, and Version history pages.
 
 ### Güncellemeleri denetleyin
 
-![Check for updates \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![Check for updates \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/updates.png)
 
 Filtre ve kullanıcı betikleri güncellemelerini denetlemek için uygulamanın ana ekranının sağ üst köşesindeki dönen ok simgesine tıklayın.
 

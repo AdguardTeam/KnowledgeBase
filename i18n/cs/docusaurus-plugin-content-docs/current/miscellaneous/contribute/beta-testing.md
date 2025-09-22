@@ -1,5 +1,5 @@
 ---
-title: Testovací beta/nightly program AdGuard
+title: Testování AdGuardu beta/nightly
 sidebar_position: 1
 ---
 
@@ -17,7 +17,7 @@ Naše požadavky jsou jednoduché: používejte AdGuard, přejděte na beta/nigh
 
 Budete také potřebovat zařízení, na které budete aplikaci instalovat a [odkaz na stránku beta testování](https://adguard.com/beta.html). Tam najdete další informace o tom, jak se zapojit do našeho programu a otestovat AdGuard pro Windows, Mac, Android a iOS.
 
-Pokud chcete přeskočit část s popisem a přejít rovnou k akci, můžete se přihlásit [zde](https://surveys.adguard.com/beta_testing_program/form.html). Vaše žádost bude zkontrolována během 1–3 pracovních dnů a odpověď obdržíte e-mailem.
+Pokud se chcete stát testerem, vyplňte prosím [formulář](https://surveys.adguard.com/beta_testing_program/form.html) a odešlete svou přihlášku. Pokud bude žádost schválena, obdržíte během několika dní odpověď e-mailem.
 
 :::note
 

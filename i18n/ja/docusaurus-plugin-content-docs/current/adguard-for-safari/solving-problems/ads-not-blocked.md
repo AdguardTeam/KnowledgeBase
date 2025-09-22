@@ -17,7 +17,7 @@ AdGuard for Safari と適切なフィルタが有効になっていても、フ�
 2. 左上のメニューで「_Safari_」をクリックします。
 3. 「_環境設定…_」→「_拡張機能_」をクリックします。
 4. これらの AdGuard 拡張機能チェックボックスをオフにします： [_カスタム_]、[_一般_]、[_その他_]、[_プライバシー_]、[_セキュリティ_]、[_ソーシャル_]、[_AdGuard for Safari_]、[_AdGuard アシスタント_]
- ![チェックを外したコンテンツブロッカー](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
+   ![チェックを外したコンテンツブロッカー](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
 5. Safari を再起動します。
 6. Safari→「_環境設定..._」→「_拡張機能_」に戻り、AdGuardのコンテンツブロッカー拡張機能６つを再度有効にします。
 7. AdGuard for Safari アプリを開きます。

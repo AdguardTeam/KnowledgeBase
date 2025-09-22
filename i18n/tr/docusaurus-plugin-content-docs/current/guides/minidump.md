@@ -31,7 +31,7 @@ Even if you don’t experience any BSoD crash errors, you can still set this opt
 
     ![System Properties *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
 
- 1. **Gelişmiş** sekmesine gidin.
+ 1. Go to the **Advanced** tab.
  1. In the **Startup and Recovery** section, click **Settings**.
 
     ![Startup and Recovery *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
@@ -49,8 +49,31 @@ Even if you don’t experience any BSoD crash errors, you can still set this opt
 
 Minidump dosyasını başarıyla etkinleştirdiniz. Now it will be created automatically when the system crashes.
 
-:::not
+:::note
 
 By default the minidump file is stored in the **%SystemRoot%\Minidump** folder. You can change the directory location to whatever you like, but please remember that a lot of programs are set to look for this location by default, so we recommend that you do not change the location.
 
 :::
+
+## wfpdiag.cab dosyası toplama
+
+Our support team may request a wfpdiag.cab file, along with a minidump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
+
+1. Enable AdGuard protection.
+
+1. Click *Start* and type `cmd` to open Command Prompt
+
+1. Right-click Command Prompt and choose *Run as administrator*
+
+    :::note
+
+    A wfpdiag.cab file is created in your current directory. You can change the location by typing `cd <folder_name>`.
+
+
+:::
+
+1. To start logging, enter the following command: `netsh wfp capture start`
+
+1. Visit any website to route traffic through AdGuard and log the filtering process
+
+1. To stop logging, enter `netsh wfp capture stop`

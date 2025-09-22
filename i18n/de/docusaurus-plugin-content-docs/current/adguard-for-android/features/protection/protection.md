@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 Der Tab _Schutz_ umfasst die folgenden Funktionen oder Einstellungen. In dieser Wissensdatenbank finden Sie einen ausführlichen Artikel zu jedem dieser Themen.
 
-## Werbeblockierung
+## Werbeblocker
 
 Einstellungen zum Blockieren von Werbung in Browsern und Apps
 

@@ -15,7 +15,7 @@ Bu soruna ne sebep oluyor? Bazen Samsung Pay, VPN hizmetlerinin çalıştığı 
 
 Sonuç olarak, kullanıcılar Samsung Pay ile ödeme yaparken AdGuard'ı devre dışı bırakmak zorunda kaldılar. *Samsung Pay'i tespit et* özelliğiyle bu durumun önüne geçilebilir. Bu seçenek etkinleştirildiğinde, kullanıcı Samsung Pay uygulamasını her açtığında AdGuard uygulaması duraklatılır ve uygulama kapatıldığında kaldığı yerden devam eder.
 
-:::not
+:::note
 
 This feature will work only if the Local VPN filtering mode is chosen in AdGuard settings. Başka bir mod kullanılıyorsa, Samsung Pay herhangi bir kesinti olmadan çalışır.
 
