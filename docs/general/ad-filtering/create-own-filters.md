@@ -3022,11 +3022,29 @@ Rules with the `$urltransform` modifier are supported by AdGuard for Windows, Ad
 `$reason` modifier allows you to add a custom explanation message that will be displayed on the blocking page when a request is blocked by this rule.
 This modifier works only with `$document` content-type modifier.
 
+**Character limitations and escaping requirements:**
+
+- There is no maximum length limit for the reason text
+- All characters are allowed in the reason text
+- Special characters (such as quotes, commas, and backslashes) should be properly escaped using backslash `\`
+
+**Predefined localizable tokens:**
+
+Instead of custom text, you can use predefined tokens that will be automatically localized:
+
+- `malicious` — for malicious content
+- `tracker` — for tracking content  
+- `disreputable` — for disreputable content
+
 **Examples**
 
 ```adblock
 ||example.com^$document,reason="Tracker"
 ||example.com^$document,reason="Malicious site blocked by security filter"
+||ads.example.com^$document,reason="This site contains tracking scripts"
+||malware.example.com^$document,reason="Site blocked: \"Known malware distributor\""
+||tracking.example.com^$document,reason=disreputable
+||analytics.example.com^$document,reason=tracker
 ```
 
 :::info Compatibility
