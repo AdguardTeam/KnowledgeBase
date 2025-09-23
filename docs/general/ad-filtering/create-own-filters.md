@@ -3033,7 +3033,7 @@ This modifier works only with `$document` content-type modifier.
 Instead of custom text, you can use predefined tokens that will be automatically localized:
 
 - `malicious` — for malicious content
-- `tracker` — for tracking content  
+- `tracker` — for tracking content
 - `disreputable` — for disreputable content
 
 **Examples**
