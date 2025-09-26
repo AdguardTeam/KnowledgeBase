@@ -11,6 +11,6 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 AdGuard pro Windows je snadno použitelný nástroj, který blokuje otravné bannery, vyskakovací okna, videoreklamy a slídiče. To ale není vše: pomáhá šetřit data, rychleji načítat webové stránky a chránit počítač před nežádoucím a potenciálně škodlivými weby. AdGuard vás také chrání před krádeží identity a chrání vaše děti před nevhodným obsahem.
 
-![Main screen \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/home-screen.png)
+![Main screen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/main_screen_en.png)
 
 Po spuštění AdGuardu pro Windows se zobrazí domovská obrazovka aplikace. Nejvýraznějším detailem je tlačítko _zapnutí/vypnutí ochrany_. Na této obrazovce můžete také sledovat statistiky blokovaných reklam, slídičů a hrozeb, zjistit aktuální verzi aplikace nebo ji aktualizovat. Dále jsou v pravém horním rohu čtyři karty: _Nastavení_, _Podpora_, _Licence_ a _O programu_. O každé z nich stojí za to mluvit zvlášť.

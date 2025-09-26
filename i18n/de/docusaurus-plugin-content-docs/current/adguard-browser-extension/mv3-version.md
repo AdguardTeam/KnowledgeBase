@@ -55,7 +55,7 @@ Die maximale Anzahl der gleichzeitig aktivierten Filter beträgt **50**.
 
 **Dynamische Regeln:** Es gilt eine strikte Obergrenze von **5.000** Regeln, darunter maximal 1.000 Regex-Regeln.
 
-Wenn diese Grenze überschritten wird, werden nur **5.000 umgewandelte Regeln** in der folgenden Reihenfolge angewendet: zuerst Freigabeliste, dann Benutzerregeln, benutzerdefinierte Filter und schließlich der Filter Quick Fixes.
+Wenn diese Grenze überschritten wird, werden nur **5.000 umgewandelte Regeln** in der folgenden Reihenfolge angewendet: zuerst Freigabeliste, dann Benutzerregeln und schließlich benutzerdefinierte Filter.
 
 > **Konvertierte Regeln** sind Regeln, die mit dem [deklarativen Konverter][github-declarative-converter] in das \[DNR-Format] umgewandelt wurden.
 > Während dieses Umwandlungsprozesses können einige Regeln andere überschreiben (`$badfilter`), einige können kombiniert werden (`$removeparam`), was zu einer Liste von Regeln mit einer etwas anderen Reihenfolge führt.

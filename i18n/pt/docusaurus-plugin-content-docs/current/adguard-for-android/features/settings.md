@@ -145,13 +145,13 @@ Please note that DNS filtering will still be active in _Automatic proxy_ routing
 In this section, you can find information about your license and manage it:
 
 - Buy an AdGuard license to activate [the full version's features](/adguard-for-android/features/free-vs-full)
-- Log in to your AdGuard account or enter the license key to activate your license
-- Sign up to activate your 7-day trial period if you haven't used it yet
+- Log in to your AdGuard account or enter the activation code to activate your license
+- Sign up to activate your 14-day trial period. The activation code can be used on different devices and platforms
 - Refresh the license status from the three-dots menu (⋮)
 - Open the AdGuard account to manage your license there
 - Reset your license — for example, if you've reached device limit for this license and want to apply another one
 
-![License screen \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![License screen \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/android/settings/licensetab.png)
 
 ## Assistência
 

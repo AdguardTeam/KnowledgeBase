@@ -41,14 +41,12 @@ AdGuard reklam engelleme filtreleri şunları içerir:
 - AdGuard Temel filtresi
 - AdGuard Mobil Reklam filtresi
 - Dil ilkesine göre ayrılmış bölgesel filtreler — Çince, Felemenkçe, Fransızca, Almanca, Japonca, Rusça, İspanyolca/Portekizce, Türkçe ve Ukraynaca
-- AdGuard Hızlı Çözümler filtresi
 
 ### Bu filtrelerin amacı
 
 - **Base filter** is designed to block ads on English-language websites and those for which there is no separate filter. Ayrıca, dilden bağımsız olarak tüm siteler için geçerli olan genel filtreleme kuralları da içerir
 - **Mobile Ads filter** blocks advertisements on mobile versions of websites and within mobile apps. Dile dayalı bir sınıflandırma yoktur
 - **Regional filters** follow the same policy as the **Base filter**, but limited to websites in certain languages
-- **Hızlı Çözümler filtresi**, MV3 uzantısını güncellemeden popüler sitelerdeki kritik içerik filtreleme sorunlarını hızlı bir şekilde çözmek için kullanılır.
 
 The goal of ad-blocking filters is to block all types of advertising on websites, applications, and certain devices that can load ads from the Internet:
 

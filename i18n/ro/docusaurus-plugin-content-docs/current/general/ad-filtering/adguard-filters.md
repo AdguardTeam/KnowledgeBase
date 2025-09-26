@@ -38,7 +38,6 @@ Acest articol se referă la filtrele pe care le creăm pentru a fi utilizate în
 - **Filtrul experimental** servește pentru a testa unele reguli noi de filtrare care pot provoca conflicte și probleme de funcționare a site-urilor. În cazul în care aceste reguli funcționează fără probleme, ele sunt adăugate la filtrele principale. [Vizualizați regulile](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_5_Experimental/filter.txt)
 - **Filtrul pentru reclame mobile** blochează reclamele pe dispozitive mobile. Conține toate rețelele mobile de reclame cunoscute. [Vizualizați regulile](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt)
 - **Filtru DNS** — compus din mai multe alte filtre (filtrul de bază AdGuard, filtru Social Media, filtru de Protecție împotriva urmăririi, filtru de reclame mobile, EasyList și EasyPrivacy) și simplificat special pentru a fi mai bine compatibil cu blocarea de reclame la nivel DNS. Acest filtru este utilizat de serverele [AdGuard DNS](https://adguard-dns.io/kb) pentru a bloca reclamele și urmărirea. [Vizualizați regulile](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt)
-- **Quick Fixes filter** — used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension. [Vizualizați regulile](https://filters.adtidy.org/extension/chromium-mv3/filters/24.txt)
 
 ## Politica filtrelor AdGuard
 

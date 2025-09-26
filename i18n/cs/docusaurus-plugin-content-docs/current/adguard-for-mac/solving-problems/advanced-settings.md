@@ -81,6 +81,12 @@ Ověřuje pravost všech certifikátů pro doménu na základě zásad transpare
 
 Nastavením `true` umožníte AdGuardu filtrovat provoz odeslaný skrze HTTP/3, nejnovější verzi protokolu HTTP založeného na QUIC.
 
+**Omezení**:
+
+- Prohlížeče založené na Chrome nepřijímají uživatelské certifikáty, proto v nich není podporováno filtrování HTTP/3.
+- Prohlížeče založené na Firefoxu se ve výchozím nastavení chovají podobně, ale můžete nastavit možnost `network.http.http3.disable_when_third_party_roots_found` v `about:config` na `false`, aby byly povoleny uživatelské certifikáty pro HTTP/3.
+- Safari podporuje filtrování HTTP/3 bez další konfigurace.
+
 #### `network.filtering.localnetwork`
 
 Nastavením `true` povolíte filtrování lokální sítě.

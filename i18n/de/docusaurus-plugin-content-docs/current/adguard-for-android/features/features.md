@@ -35,7 +35,7 @@ Allgemeine, erweiterte und Low-Level-Einstellungen, mit denen Sie die Sprache un
 
 ## Low-Level-Einstellungen
 
-Descriptions of the low-level settings available in AdGuard for Android v4.3 and later.
+Beschreibungen der Low-Level-Einstellungen, die in AdGuard für Android v4.3 und höher verfügbar sind.
 
 [Leitfaden für Low-Level-Einstellungen](/adguard-for-android/features/low-level-settings.md)
 

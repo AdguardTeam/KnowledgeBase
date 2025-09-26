@@ -419,6 +419,19 @@ Este modificador permite que você restrinja a abrangência da regra a um aplica
 
 Para Mac, você pode descobrir o ID do pacote ou o nome do processo do aplicativo visualizando os detalhes da solicitação no registro de filtragem.
 
+**Syntax**
+
+The modifier is a list of one or more expressions, each of which is matched against an application in a particular way depending on its type. These expressions are separated by the `|` symbol.
+
+```text
+applications = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
+entry_i = ( regular_app / wildcard_app / regexp )
+```
+
+- **`regular_app`** — a regular application name (`example.app`). It corresponds to the specified application and is matched lexicographically.
+- **`wildcard_app`** — an application name ending with a wildcard character `*`, such as `org.example.*` or `com.ad*`. It matches all applications whose names start with the specified prefix. Matching is done lexicographically.
+- **`regexp`** — a regular expression that starts and ends with `/`. It works the same way as the basic URL rules, but the characters `/`, `$`, `,`, and `|` must be escaped with `\`.
+
 **Examples**
 
 - `||baddomain.com^$app=org.example.app` — uma regra para bloquear solicitações que correspondem à máscara especificada e são enviadas do aplicativo `org.example.app` para Android.
@@ -429,9 +442,23 @@ Se você quer que a regra não seja aplicada a certos aplicativos, comece o nome
 - `||baddomain.com^$app=~org.example.app` — uma regra para bloquear solicitações que correspondem à máscara especificada e são enviadas de qualquer aplicativo, exceto o `org.example.app`.
 - `||baddomain.com^$app=~org.example.app1|~org.example.app2` — o mesmo que acima, mas agora dois aplicativos estão excluídos: `org.example.app1` e `org.example.app2`.
 
+You can use wildcards in the `$app` modifier:
+
+- `||baddomain.com^$app=org.example.*` — applies to all apps whose package names start with `org.example.`
+
+You can use regular expressions in the `$app` modifier by enclosing them in forward slashes `/.../`. This allows for more flexible matching — for example, targeting a group of apps from the same publisher or matching complex patterns.
+
+- `||baddomain.com^$app=/org\.example\.[a-z0-9_]+/` — applies to all apps whose package name starts with `org.example` (e.g. `org.example.app1`, `org.example.utility`, etc.).
+- `||baddomain.com^$app=/^org\.example\.app\$\|^org\.example\.[ab].*/` — applies to `org.example.app` and to any app whose package starts with `org.example.a` or `org.example.b`.
+
+The `$app` modifier supports combining all three types of entries — plain names, wildcards, and regular expressions — within the same rule, but it does not allow combining negated and non-negated expressions together.
+
+- `||example.com^$app=org.example.app|org.example.*|/org\.example\.[a-z]+/` — applies to `org.example.app`, all matching `org.example.*` and `org.example.[a-z]+` apps.
+
 :::caution Restrictions
 
-Os aplicativos no valor do modificador não podem ter um wildcard, por exemplo, `$app=com.*.music`. As regras com tal modificador são consideradas inválidas.
+- Apps in the modifier value cannot include a wildcard inside the string , e.g. `$app=com.*.music`. Use a regular expression instead: `$app=/com\..*\.music/`.
+- You cannot combine negated (`~`) and non-negated expressions in the same `$app` modifier — this would be ambiguous.
 
 :::
 
@@ -439,6 +466,7 @@ Os aplicativos no valor do modificador não podem ter um wildcard, por exemplo, 
 
 - Apenas o AdGuard para Windows, Android é tecnicamente capaz de usar regras com o modificador `$app`.
 - On Windows the process name is case-insensitive starting with AdGuard for Windows with [CoreLibs][] v1.12 or later.
+- Support for regular expressions and for combining different types of entries (plain names, wildcards, and regular expressions) in the `$app` modifier is available starting from CoreLibs v1.19 or later.
 
 :::
 
@@ -529,38 +557,23 @@ If you want the rule not to be applied to certain domains, start a domain name w
 
 **`$domain` modifier matching target domain:**
 
-In some cases the `$domain` modifier can match not only the referrer domain, but also the target domain. This happens when all the following conditions are met:
+In some cases the `$domain` modifier can match not only the referrer domain, but also the target domain.
 
-1. The request has the `document` content type
-1. The rule pattern does not match any particular domains
-1. The rule pattern does not contain regular expressions
-1. O modificador `$domain` contém apenas domínios excluídos, por exemplo, `$domain=~example.org|~example.com`
+This happens when the rule has one of the following modifiers: [`$cookie`](#cookie-modifier), [`$csp`](#csp-modifier), [`$permissions`](#permissions-modifier), [`$removeparam`](#removeparam-modifier).
 
-The following predicate should be satisfied to perform a target domain matching:
-
-```text
-1 AND ((2 AND 3) OR 4)
-```
-
-That is, if the modifier `$domain` contains only excluded domains, then the rule does not need to meet the second and third conditions to match the target domain against the modifier `$domain`.
-
-If some of the conditions above are not met but the rule contains [`$cookie`](#cookie-modifier) or [`$csp`](#csp-modifier) modifier, the target domain will still be matched.
-
-If the referrer matches a rule with `$domain` that explicitly excludes the referrer domain, then the rule will not be applied even if the target domain also matches the rule. This affects rules with [`$cookie`](#cookie-modifier) and [`$csp`](#csp-modifier) modifiers, too.
+These modifiers will not be applied if the referrer matches a rule with `$domain` that explicitly excludes the referrer domain, even if the target domain also matches the rule.
 
 **Examples**
 
 - `*$cookie,domain=example.org|example.com` bloqueará cookies para todas as solicitações para e de `example.org` e `example.com`.
-- `*$document,domain=example.org|example.com` bloqueará todas as solicitações para e a partir de `example.org` e `example.com`.
+- `*$document,domain=example.org|example.com` will block requests only from `example.org` and `example.com`, but not to them.
 
-Nos exemplos a seguir, implica-se que as solicitações são enviadas de `http://example.org/page` (o referenciador) e a URL de destino é `http://targetdomain.com/page`.
+In the following examples it is implied that requests are sent from `http://example.org/page` (the referrer) and the target URL is `http://targetdomain.com/page`.
 
 - `page$domínio=example.org` será combinado, pois corresponde ao domínio do referenciador.
-- `page$domain=targetdomain.com` will be matched, as it matches the target domain and satisfies all requirements mentioned above.
-- `||*page$domain=targetdomain.com` will not be matched, as the pattern `||*page` may match specific domains, e.g. `example.page`.
+- `page$domain=targetdomain.com` will not be matched because it does not match the referrer domain.
 - `||*page$domain=targetdomain.com,cookie` will be matched because the rule contains `$cookie` modifier despite the pattern `||*page` may match specific domains.
-- `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
-- `page$domínio=targetdomain.com|~example.org` não será correspondente porque o domínio de referência foi explicitamente excluído.
+- `page$domain=targetdomain.com|~example.org,cookie` will not be matched because the referrer domain is explicitly excluded.
 
 ##### `$domain` modifier limitations {#domain-modifier-limitations}
 
@@ -634,13 +647,13 @@ Go to [rules priorities](#rule-priorities) for more details.
 **Examples**
 
 ```adblock
-! a regra de bloqueio bloqueará todas as solicitações apesar da regra de exceção
+! blocking rule will block all requests despite of the exception rule
 ||example.org^$important
 @@||example.org^
 ```
 
 ```adblock
-! se a regra de exceção também tiver o modificador `$important`, ela prevalecerá e as solicitações não serão bloqueadas
+! if the exception rule also has `$important` modifier, it will prevail and requests won't be blocked
 ||example.org^$important
 @@||example.org^$important
 ```
@@ -757,7 +770,7 @@ Proíbe o Google Chrome de enviar sua versão e informações de modificação c
 
 To be considered as such, a third-party request should meet one of the following conditions:
 
-1. Its referrer is not a subdomain of the target domain or vice versa. Por exemplo, uma solicitação para `subdomain.example.org` de `example.org` não é uma solicitação de terceiros
+1. Its referrer is not a subdomain of the target domain or vice versa. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request
 1. Its `Sec-Fetch-Site` header is set to `cross-site`
 
 :::
@@ -1877,7 +1890,7 @@ In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.11 or later, JSONPa
 {
     "elems": [
         {
-            "a": {"b": {"c": 123}},
+            "a": {"b": {"c": 123}}
         },
         {
             "a": {"b": {"c": "abc"}}

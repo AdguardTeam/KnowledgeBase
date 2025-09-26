@@ -11,15 +11,15 @@ sidebar_position: 2
 
 「設定」は最も注意する価値のあるセクションです。 ここでは、アプリをご自身のニーズに合わせて設定することができます。気になるものだけをブロックし、信頼できるプロバイダのDNSサーバーを使用し、サードパーティCookieの削除を有効にすることなどができます。
 
+### General settings
+
+Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect _Debug logs_](/adguard-for-windows/solving-problems/adguard-logs.md).
+
 ![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/general_settings.png)
 
-### 一般設定
-
-ここでは、言語とカラーテーマ（ダーク・ライト）の設定、システム起動時のAdGuardの起動と自動アップデートの有効化、アップデートチャネルの選択、フィルタ更新チェック間隔の指定などを行うことができます。 また、AdGuard for Windows が正常に動作せず、サポートチームから[「デバッグログ」を収集する](/adguard-for-windows/solving-problems/adguard-logs.md)ように依頼された場合も、「設定」が役に立ちます。
+At the very bottom of the screen you will find _Advanced Settings_. Changing some of them mindlessly may potentially cause problems with AdGuard’s performance, break the Internet connection or compromise your security and privacy. That’s why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in _Advanced Settings_, read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
 
 ![Advanced Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/advanced_settings.png)
-
-画面の一番下に「高度な設定」があります。 Changing some of them mindlessly may potentially cause problems with AdGuard’s performance, break the Internet connection or compromise your security and privacy. That’s why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in _Advanced Settings_, read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
 
 ### Ad blocking
 
@@ -46,9 +46,9 @@ In the Ad blocking module you can:
 
 ![Tracking protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection.png)
 
-トラッキング防止の機能を柔軟に微調整することができます。例えば、インターネット上でウェブサイトを見つけるために使用した検索要求の受信を禁止したり、サードパーティとウェブサイト独自のCookieの両方を自動的に削除したり、居場所を追跡するために使用できるブラウザの位置情報共有を無効にしたりすることができます。
+You can flexibly adjust the work of _Tracking protection_: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and disable location sharing in your browser that can be used to track your whereabouts.
 
-トラッキング防止とその多くのオプションについて知るには、[こちらの記事](/general/stealth-mode)をお読みください。
+To learn everything about _Tracking protection_ and its many options, [read this article](/general/stealth-mode).
 
 ### ブラウジング・セキュリティ
 
@@ -81,15 +81,15 @@ v7.20 以降では、信頼できる組み込みフィルタリストからフ�
 
 ![DNS filters \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
 
-### ペアレンタルコントロール
+### Parental control
 
-子供が使用するパソコンで、アクセスを制限する必要があるウェブサイトは何個もあるでしょう。 This task is accomplished by _Parental Control_.
+子供が使用するパソコンで、アクセスを制限する必要があるウェブサイトは何個もあるでしょう。 This task is accomplished by _Parental control_.
 
-![Parental Control \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/parental_control.png)
+![Parental control \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/parental_control.png)
 
-このモジュールは、ブラウザで開かれたウェブページの内容をチェックし、子供にとって好ましくない内容（大人向けの画像やテキスト、下品な言葉、暴力、薬物の宣伝など）のものをフィルタリングします。 ペアレンタルコントロールの設定はパスワードで保護されているため、子供が自分で制限をオフにすることはできません。 このモジュールは、不適切なサイトへの誘導をブロックするだけでなく、子供に不適切なリンクを検索結果から削除することもできます。
+このモジュールは、ブラウザで開かれたウェブページの内容をチェックし、子供にとって好ましくない内容（大人向けの画像やテキスト、下品な言葉、暴力、薬物の宣伝など）のものをフィルタリングします。 Parental control settings are password-protected so that the child is not able to go round the restrictions. このモジュールは、不適切なサイトへの誘導をブロックするだけでなく、子供に不適切なリンクを検索結果から削除することもできます。
 
-ペアレンタルコントロールモジュールでは、「_セーフサーチ_」を有効にし、「_ブラックリスト_」と「_ホワイトリスト_」を管理して、この機能の動作をカスタマイズすることができます。 「実行形式ファイルのダウンロードをブロック」を有効にしますと、お子様のコンピュータへのソフトウェアのダウンロードとインストールを防ぎます。 「_ペアレンタルコントロール_」モジュールにはさらに 2 つのオプションがあります。_ペアレンタルコントロール_で保護対象の特定の Windows ユーザーを指定するオプションと、AdGuard 設定が変更されないようにパスワードを設定するオプションです。
+In the _Parental control_ module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. 「実行形式ファイルのダウンロードをブロック」を有効にしますと、お子様のコンピュータへのソフトウェアのダウンロードとインストールを防ぎます。 There are two more options in the _Parental control_ module: you can select a specific Windows user to be protected by _Parental control_ and set a password to protect AdGuard settings from change.
 
 ### ブラウザアシスタント
 
