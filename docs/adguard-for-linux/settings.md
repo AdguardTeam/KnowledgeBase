@@ -136,7 +136,7 @@ Supported modes are HTTP, HTTPS, SOCKS4, SOCKS5.
 
 :::
 
-You can also quickly enable, disable `outbound_proxy`:
+You can also quickly enable or disable `outbound_proxy`:
 
 ```sh
 adguard-cli config set outbound_proxy false
