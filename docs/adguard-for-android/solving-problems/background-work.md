@@ -605,7 +605,7 @@ On Motorola devices, there are four key configurations to ensure that AdGuard wo
    - Tap the option with the toggle
    - Set battery usage to **Unrestricted**
 
-2. Remove background activity restrictions:
+1. Remove background activity restrictions:
 
    - Go to **Settings**
    - Scroll down and tap **Apps & notifications**
@@ -613,12 +613,12 @@ On Motorola devices, there are four key configurations to ensure that AdGuard wo
    - Tap **Background restriction** or **Background limits**
    - If it says **Background activity restricted**, tap it and then tap **Remove**
 
-3. Manage background apps:
+1. Manage background apps:
 
    - Go to **Settings**, then type **Managing background apps** in the search bar
    - Find **AdGuard** and enable the toggle to allow the app to run in the background
 
-4. Disable Adaptive Battery:
+1. Disable Adaptive Battery:
 
    - Go to **Settings → Battery**
    - Turn off the **Adaptive Battery** option
