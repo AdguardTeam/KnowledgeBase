@@ -137,6 +137,12 @@ For AdGuard for Android v4.x we’ve completely redesigned the low-level setting
 
 **关于 HTTP/3**：这是基于 QUIC 的 HTTP 协议的最新版本。
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 ### 出站代理
 
 #### 显示「过滤 DNS 请求」设置

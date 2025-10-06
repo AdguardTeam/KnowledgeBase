@@ -1,5 +1,5 @@
 ---
-title: AdGuard Beta Testing
+title: AdGuard testen (Beta/Nightly)
 sidebar_position: 1
 ---
 
@@ -17,7 +17,7 @@ Unsere Anforderungen sind einfach: Verwenden Sie AdGuard, aktualisieren Sie auf 
 
 Sie benötigen außerdem das Gerät, auf dem Sie die App installieren wollen, und [den Link zur Beta-Test-Seite](https://adguard.com/beta.html). Dort finden Sie weitere Informationen darüber, wie Sie an unserem Programm teilnehmen und AdGuard für Windows, Mac, Android und iOS testen können.
 
-If you would like to become a tester, please [fill out the form](https://surveys.adguard.com/beta_testing_program/form.html) to submit your application. If it is approved, you will receive a response via email within a few days.
+Wenn Sie Tester werden möchten, [füllen Sie das Formular aus](https://surveys.adguard.com/beta_testing_program/form.html), um Ihre Bewerbung zu senden. Wenn die Bewerbung genehmigt wird, erhalten Sie innerhalb weniger Tage eine Antwort per E-Mail.
 
 :::note
 

@@ -11,15 +11,15 @@ sidebar_position: 2
 
 **설정**은 가장 중요한 섹션입니다. 여기에서 특정 항목 또는 사이트 차단, 신뢰할 수 있는 제공업체의 DNS 서버 사용, 타사 쿠키 삭제 등 요구사항에 따라 앱을 설정할 수 있습니다.
 
+### General settings
+
+Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect _Debug logs_](/adguard-for-windows/solving-problems/adguard-logs.md).
+
 ![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/general_settings.png)
 
-### 일반 설정
-
-여기에서 언어와 테마(다크 테마 또는 라이트 테마)를 설정하고, 시스템 시작 시 AdGuard를 실행하고 자동 업데이트를 무음으로 설정할 수 있습니다. 업데이트 채널과 업데이트 확인 간격 필터를 선택할 수도 있습니다. 또한 Windows용 AdGuard가 제대로 작동하지 않아 지원팀에서 [**디버그 로그 수집**](/adguard-for-windows/solving-problems/adguard-logs.md)을 요청하는 경우 설정으로 이동합니다.
+At the very bottom of the screen you will find _Advanced Settings_. Changing some of them mindlessly may potentially cause problems with AdGuard’s performance, break the Internet connection or compromise your security and privacy. That’s why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in _Advanced Settings_, read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
 
 ![Advanced Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/advanced_settings.png)
-
-화면 맨 아래에는 **고급 설정**이 있습니다. Changing some of them mindlessly may potentially cause problems with AdGuard’s performance, break the Internet connection or compromise your security and privacy. That’s why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in _Advanced Settings_, read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
 
 ### Ad blocking
 
@@ -46,9 +46,9 @@ In the Ad blocking module you can:
 
 ![Tracking protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection.png)
 
-스텔스 모드의 작업을 유연하게 조정할 수 있습니다. 예를 들어, 인터넷에서 웹사이트를 찾을 때 사용한 검색 요청을 해당 웹사이트가 수신하지 못하도록 하거나, 타사 쿠키와 웹사이트 자체 쿠키를 자동으로 삭제하거나, 내 위치를 추적하는 데 사용할 수 있는 브라우저의 위치 공유를 비활성화할 수 있습니다.
+You can flexibly adjust the work of _Tracking protection_: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and disable location sharing in your browser that can be used to track your whereabouts.
 
-스텔스 모드에 대해 자세히 알아보려면 [이 글](/general/stealth-mode)을 참조하세요.
+To learn everything about _Tracking protection_ and its many options, [read this article](/general/stealth-mode).
 
 ### 브라우징 보안
 
@@ -81,15 +81,15 @@ v7.20부터는 미리 구축된 신뢰할 수 있는 필터 목록에서 필터�
 
 ![DNS 필터링 \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
 
-### 자녀 보호
+### Parental control
 
-자녀가 사용하는 컴퓨터에서 액세스하지 못하도록 제한해야 하는 사이트가 몇 가지 있습니다. This task is accomplished by _Parental Control_.
+자녀가 사용하는 컴퓨터에서 액세스하지 못하도록 제한해야 하는 사이트가 몇 가지 있습니다. This task is accomplished by _Parental control_.
 
-![Parental Control \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/parental_control.png)
+![Parental control \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/parental_control.png)
 
-이 모듈은 브라우저에서 열린 웹페이지의 콘텐츠를 확인하고 성인용 이미지 및 텍스트, 거친 언어, 폭력, 마약 선전 등 어린이에게 바람직하지 않은 콘텐츠가 포함된 웹페이지를 필터링합니다. 자녀 보호 설정은 자녀가 제한을 우회할 수 없도록 비밀번호로 보호됩니다. 이 모듈은 원치 않는 사이트로 연결되는 경로를 차단할 뿐만 아니라 검색 결과에서 어린이에게 부적절한 링크를 삭제할 수도 있습니다.
+이 모듈은 브라우저에서 열린 웹페이지의 콘텐츠를 확인하고 성인용 이미지 및 텍스트, 거친 언어, 폭력, 마약 선전 등 어린이에게 바람직하지 않은 콘텐츠가 포함된 웹페이지를 필터링합니다. Parental control settings are password-protected so that the child is not able to go round the restrictions. 이 모듈은 원치 않는 사이트로 연결되는 경로를 차단할 뿐만 아니라 검색 결과에서 어린이에게 부적절한 링크를 삭제할 수도 있습니다.
 
-**자녀 보호** 모듈에서 **안전 검색**을 활성화하고 **차단 목록** 및 **허용 목록**을 관리하여 이 옵션의 작동 방식을 사용자 지정할 수 있습니다. 자녀가 컴퓨터에 소프트웨어를 다운로드하고 설치하지 못하도록 **실행 파일 다운로드 차단** 확인란을 선택할 수도 있습니다. **자녀 보호** 모듈에서 **자녀 보호 기능**으로 보호할 특정 Windows 사용자를 선택하고 AdGuard 설정을 변경하지 못하도록 보호할 암호를 설정할 수 있습니다.
+In the _Parental control_ module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. 자녀가 컴퓨터에 소프트웨어를 다운로드하고 설치하지 못하도록 **실행 파일 다운로드 차단** 확인란을 선택할 수도 있습니다. There are two more options in the _Parental control_ module: you can select a specific Windows user to be protected by _Parental control_ and set a password to protect AdGuard settings from change.
 
 ### 브라우저 어시스턴트
 

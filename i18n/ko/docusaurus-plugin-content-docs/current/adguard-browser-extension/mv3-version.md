@@ -55,7 +55,7 @@ AdGuard MV3 확장 프로그램은 광고와 추적기를 효과적으로 차단
 
 **동적 규칙:** 최대 1,000개의 정규식 규칙을 포함한 **5,000** 규칙의 엄격한 한도가 적용됩니다.
 
-If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules, Custom filters, and finally — Quick Fixes filter.
+If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules and finally Custom filters.
 
 > **변환된 규칙**은 [선언적 변환기][github-declarative-converter]를 이용해 \[DNR 형식]으로 변환된 규칙입니다.
 > 변환 과정에서 일부 규칙들은 다른 규칙의 (`$badfilter`)를 덮어쓸 수도 있고, (`$removeparam`)와 결합될 수도 있는데, 그 결과 순서가 약간 다른 규칙 목록이 생성됩니다.
