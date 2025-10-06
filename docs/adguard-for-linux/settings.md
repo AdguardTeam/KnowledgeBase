@@ -132,11 +132,11 @@ adguard-cli config set outbound_proxy https://user:pass@host:port
 
 :::info
 
-Supported modes are HTTP, HTTPS, SOCKS4, SOCKS5.
+Supported modes are HTTP, HTTPS, SOCKS4, and SOCKS5.
 
 :::
 
-You can also quickly enable, disable `outbound_proxy`:
+You can also quickly enable or disable `outbound_proxy`:
 
 ```sh
 adguard-cli config set outbound_proxy false
@@ -172,7 +172,7 @@ Enable SOCKS5 proxy for UDP traffic:
 adguard-cli config set outbound_proxy.udp_through_socks5_enabled true
 ```
 
-:::info NOTE
+:::note
 
 If your SOCKS5 proxy does not support UDP, connections may fail.
 
@@ -180,7 +180,7 @@ If your SOCKS5 proxy does not support UDP, connections may fail.
 
 ### Checking the current configuration
 
-To view the current outbound_proxy configuration, enter:
+To view the current `outbound_proxy` configuration, enter:
 
 ```sh
 adguard-cli config show outbound_proxy
@@ -188,6 +188,6 @@ adguard-cli config show outbound_proxy
 
 :::info Compatibility
 
-Configuring outbound_proxy via URL is available starting from version 1.1.26 nightly and stable release 1.1.
+Configuring `outbound_proxy` via URL is available starting from AdGuard for Linux v1.1.26 nightly and v1.1 stable release.
 
 :::
