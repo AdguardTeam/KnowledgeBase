@@ -137,10 +137,10 @@ Pokud je toto nastavení povoleno, bude AdGuard filtrovat kromě jiných typů p
 
 **O HTTP/3**: Jedná se o nejnovější verzi protokolu HTTP založenou na protokolu QUIC.
 
-**Limitations**:
+**Omezení**:
 
 - Prohlížeče založené na Chrome nepřijímají uživatelské certifikáty, proto v nich není podporováno filtrování HTTP/3.
-- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Prohlížeče založené na Firefoxu se ve výchozím nastavení chovají podobně, ale můžete nastavit možnost `network.http.http3.disable_when_third_party_roots_found` v `about:config` na `false`, aby byly povoleny uživatelské certifikáty pro HTTP/3.
 - Safari podporuje filtrování HTTP/3 bez další konfigurace.
 
 ### Odchozí proxy
