@@ -21,60 +21,60 @@ Zde jsou uvedeny aktivní funkce předkonfigurovaných úrovní:
 
 1. **Standardní**
 
-    a. _Blokovat slídiče_. Tato funkce používá filtr _AdGuard ochrana před sledováním_, který vás chrání před online čítači a nástroji webové analýzy
+   a. _Blokovat slídiče_. Tato funkce používá filtr _AdGuard ochrana před sledováním_, který vás chrání před online čítači a nástroji webové analýzy
 
-    b. _Požádat webové stránky, aby vás nesledovaly_. Tato funkce odesílá na navštívené webové stránky signály [Global Privacy Control](https://globalprivacycontrol.org/) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a žádá webové aplikace, aby zakázaly sledování vaší činnosti
+   b. _Požádat webové stránky, aby vás nesledovaly_. Tato funkce odesílá na navštívené webové stránky signály [Global Privacy Control](https://globalprivacycontrol.org/) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a žádá webové aplikace, aby zakázaly sledování vaší činnosti
 
-    c. _Odstranit X-Client-Data hlavičku_. Tato funkce zabraňuje tomu, aby prohlížeč Google Chrome odesílal informace o své verzi a úpravách do domén společnosti Google (včetně služeb DoubleClick a Google Analytics)
+   c. _Odstranit X-Client-Data hlavičku_. Tato funkce zabraňuje tomu, aby prohlížeč Google Chrome odesílal informace o své verzi a úpravách do domén společnosti Google (včetně služeb DoubleClick a Google Analytics)
 
 2. **Vysoká**
 
-    a. _Blokovat slídiče_. Tato funkce používá filtr _AdGuard ochrana před sledováním_, který vás chrání před online čítači a nástroji webové analýzy
+   a. _Blokovat slídiče_. Tato funkce používá filtr _AdGuard ochrana před sledováním_, který vás chrání před online čítači a nástroji webové analýzy
 
-    b. _Odebrat sledovací parametry z URL_. Tato funkce používá _AdGuard filtr sledování URL_ k odstranění parametrů sledování, jako je `utm_*` a `fb_ref` z adresy URL
+   b. _Odebrat sledovací parametry z URL_. Tato funkce používá _AdGuard filtr sledování URL_ k odstranění parametrů sledování, jako je `utm_*` a `fb_ref` z adresy URL
 
-    c. _Skrýt vyhledávací dotazy_. Tato funkce skrývá dotazy na webové stránky navštívené z vyhledávače
+   c. _Skrýt vyhledávací dotazy_. Tato funkce skrývá dotazy na webové stránky navštívené z vyhledávače
 
-    d. _Požádat webové stránky, aby vás nesledovaly_. Tato funkce odesílá na navštívené webové stránky signály [Global Privacy Control](https://globalprivacycontrol.org/) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a žádá webové aplikace, aby zakázaly sledování vaší činnosti
+   d. _Požádat webové stránky, aby vás nesledovaly_. Tato funkce odesílá na navštívené webové stránky signály [Global Privacy Control](https://globalprivacycontrol.org/) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a žádá webové aplikace, aby zakázaly sledování vaší činnosti
 
-    e. _Automatické odstranění cookies třetích stran_. Tato funkce omezuje životnost TTL cookies třetích stran na 180 minut
+   e. _Automatické odstranění cookies třetích stran_. Tato funkce omezuje životnost TTL cookies třetích stran na 180 minut
 
-    :::caution
+   :::caution
 
-    Tato funkce vymaže všechny soubory cookies třetích stran po jejich nuceném vypršení platnosti. To se týká i vašich přihlášení prostřednictvím sociálních sítí nebo jiných služeb třetích stran. Možná se budete muset na některé webové stránky pravidelně znovu přihlašovat nebo se vyskytnou jiné problémy související se soubory cookies. Chcete-li blokovat pouze sledovací soubory cookies, použijte úroveň ochrany _Standardní_.
+   Tato funkce vymaže všechny soubory cookies třetích stran po jejich nuceném vypršení platnosti. To se týká i vašich přihlášení prostřednictvím sociálních sítí nebo jiných služeb třetích stran. Možná se budete muset na některé webové stránky pravidelně znovu přihlašovat nebo se vyskytnou jiné problémy související se soubory cookies. Chcete-li blokovat pouze sledovací soubory cookies, použijte úroveň ochrany _Standardní_.
 
-    :::
+   :::
 
-    f. _Odstranit X-Client-Data hlavičku_. Tato funkce zabraňuje tomu, aby prohlížeč Google Chrome odesílal informace o své verzi a úpravách do domén společnosti Google (včetně služeb DoubleClick a Google Analytics)
+   f. _Odstranit X-Client-Data hlavičku_. Tato funkce zabraňuje tomu, aby prohlížeč Google Chrome odesílal informace o své verzi a úpravách do domén společnosti Google (včetně služeb DoubleClick a Google Analytics)
 
 3. \*_Extrémní_ (dříve známá jako _Ultimátní_)
 
-    a. _Blokovat slídiče_. Tato funkce používá filtr _AdGuard ochrana před sledováním_, který vás chrání před online čítači a nástroji webové analýzy
+   a. _Blokovat slídiče_. Tato funkce používá filtr _AdGuard ochrana před sledováním_, který vás chrání před online čítači a nástroji webové analýzy
 
-    b. _Odebrat sledovací parametry z URL_. Tato funkce používá _AdGuard filtr sledování URL_ k odstranění parametrů sledování, jako je `utm_*` a `fb_ref` z adresy URL
+   b. _Odebrat sledovací parametry z URL_. Tato funkce používá _AdGuard filtr sledování URL_ k odstranění parametrů sledování, jako je `utm_*` a `fb_ref` z adresy URL
 
-    c. _Skrýt vyhledávací dotazy_. Tato funkce skrývá dotazy na webové stránky navštívené z vyhledávače
+   c. _Skrýt vyhledávací dotazy_. Tato funkce skrývá dotazy na webové stránky navštívené z vyhledávače
 
-    d. _Požádat webové stránky, aby vás nesledovaly_. Tato funkce odesílá na navštívené webové stránky signály [Global Privacy Control](https://globalprivacycontrol.org/) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a žádá webové aplikace, aby zakázaly sledování vaší činnosti
+   d. _Požádat webové stránky, aby vás nesledovaly_. Tato funkce odesílá na navštívené webové stránky signály [Global Privacy Control](https://globalprivacycontrol.org/) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a žádá webové aplikace, aby zakázaly sledování vaší činnosti
 
-    e. _Automatické odstranění cookies třetích stran_. Tato funkce omezuje životnost TTL cookies třetích stran na 180 minut
+   e. _Automatické odstranění cookies třetích stran_. Tato funkce omezuje životnost TTL cookies třetích stran na 180 minut
 
-    :::caution
+   :::caution
 
-    Tato funkce vymaže všechny soubory cookies třetích stran po jejich nuceném vypršení platnosti. To se týká i vašich přihlášení prostřednictvím sociálních sítí nebo jiných služeb třetích stran. Možná se budete muset na některé webové stránky pravidelně znovu přihlašovat nebo se vyskytnou jiné problémy související se soubory cookies. Chcete-li blokovat pouze sledovací soubory cookies, použijte úroveň ochrany _Standardní_.
+   Tato funkce vymaže všechny soubory cookies třetích stran po jejich nuceném vypršení platnosti. To se týká i vašich přihlášení prostřednictvím sociálních sítí nebo jiných služeb třetích stran. Možná se budete muset na některé webové stránky pravidelně znovu přihlašovat nebo se vyskytnou jiné problémy související se soubory cookies. Chcete-li blokovat pouze sledovací soubory cookies, použijte úroveň ochrany _Standardní_.
 
-    :::
+   :::
 
-    f. _Blokovat WebRTC_. Tato funkce blokuje WebRTC, známou zranitelnost, která může prozradit vaši skutečnou IP adresu, i když používáte proxy server nebo VPN
+   f. _Blokovat WebRTC_. Tato funkce blokuje WebRTC, známou zranitelnost, která může prozradit vaši skutečnou IP adresu, i když používáte proxy server nebo VPN
 
-    g. _Blokovat Push API_. Tato funkce zabraňuje prohlížečům přijímat push zprávy ze serverů
+   g. _Blokovat Push API_. Tato funkce zabraňuje prohlížečům přijímat push zprávy ze serverů
 
-    h. _Blokovat lokalizační API_. Tato funkce zabrání prohlížečům v přístupu k vašim GPS datům a určení vaší polohy
+   h. _Blokovat lokalizační API_. Tato funkce zabrání prohlížečům v přístupu k vašim GPS datům a určení vaší polohy
 
-    i. _Skrýt třetím stranám referenční ID_. Tato funkce zabraňuje třetím stranám rozpoznat, které weby jste navštívili. Skrývá záhlaví HTTP, které obsahuje URL adresu úvodní stránky a změní ji na výchozí nebo vlastní, kterou můžete nastavit
+   i. _Skrýt třetím stranám referenční ID_. Tato funkce zabraňuje třetím stranám rozpoznat, které weby jste navštívili. Skrývá záhlaví HTTP, které obsahuje URL adresu úvodní stránky a změní ji na výchozí nebo vlastní, kterou můžete nastavit
 
-    j. _Skrýt identifikaci vašeho prohlížeče_. Tato funkce odstraňuje identifikační informace ze záhlaví identifikátora prohlížeče, které obvykle obsahuje název a verzi prohlížeče, operačního systému a nastavení jazyka
+   j. _Skrýt identifikaci vašeho prohlížeče_. Tato funkce odstraňuje identifikační informace ze záhlaví identifikátora prohlížeče, které obvykle obsahuje název a verzi prohlížeče, operačního systému a nastavení jazyka
 
-    k. _Odstranit X-Client-Data hlavičku_. Tato funkce zabraňuje tomu, aby prohlížeč Google Chrome odesílal informace o své verzi a úpravách do domén společnosti Google (včetně služeb DoubleClick a Google Analytics)
+   k. _Odstranit X-Client-Data hlavičku_. Tato funkce zabraňuje tomu, aby prohlížeč Google Chrome odesílal informace o své verzi a úpravách do domén společnosti Google (včetně služeb DoubleClick a Google Analytics)
 
 Jednotlivá nastavení můžete upravit v části _Ochrana před sledováním_ a vytvořit si vlastní konfiguraci. Každé nastavení má popis, který vám pomůže pochopit jeho roli. [Další informace o tom, co dělají různá nastavení _Ochrany před sledováním_](/general/stealth-mode). Přistupujte k nim opatrně, protože některá mohou narušovat funkčnost webových stránek a rozšíření prohlížeče.

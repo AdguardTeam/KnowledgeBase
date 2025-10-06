@@ -21,19 +21,19 @@ AdGuard ブラウザ拡張機能MV3対応版は、SNSウィジェット、バナ
 
 - **フィルタリングログ**
 
-    ![Filtering log \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+  ![Filtering log \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-    DNRの制限により、どのルールが機能したかを正確に示すことはできませんが、AdGuardのエンジンに基づいて「発動したと想定されるルール」を表示します。 正確な情報を確認されたい場合は、ご自身でブラウザにAdGuardブラウザ拡張機能の「解凍」版をインストールする必要があります。 これを行う方法の詳細な手順については、[別の記事](/adguard-browser-extension/solving-problems/debug-rules/)を参照してください。
+  DNRの制限により、どのルールが機能したかを正確に示すことはできませんが、AdGuardのエンジンに基づいて「発動したと想定されるルール」を表示します。 正確な情報を確認されたい場合は、ご自身でブラウザにAdGuardブラウザ拡張機能の「解凍」版をインストールする必要があります。 これを行う方法の詳細な手順については、[別の記事](/adguard-browser-extension/solving-problems/debug-rules/)を参照してください。
 
 - _トラッキング防止_（旧称：_ステルスモード_）
 
-    ![Tracking protection \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+  ![Tracking protection \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
 
-    宣言型ルールを使用して Cookie の TTL を設定できないため、_Cookie_ セクション、_ファーストパーティ Cookie の自己破壊_、_サードパーティ Cookie の自己破壊_ セクションはありません。
+  宣言型ルールを使用して Cookie の TTL を設定できないため、_Cookie_ セクション、_ファーストパーティ Cookie の自己破壊_、_サードパーティ Cookie の自己破壊_ セクションはありません。
 
 - 「_フィッシング＆マルウェア保護_」は、一般設定では利用できなくなりました。 悪質なウェブサイトや詐欺から身を守るには、_フィルタ_タブで適切な「_セキュリティ_」フィルタを有効にしてください。
 
-    ![Security \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![Security \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## 制限
 
@@ -55,7 +55,7 @@ Manifest V3 では、拡張子ごとに静的ルールと正規表現ルール�
 
 **動的ルール:** ルールの厳密な上限は**5,000**で、これには最大1,000個の正規表現ルールが含まれます。
 
-この制限を超えた場合、**5,000の変換されたルール**のみが次の順序で適用されます：最初にホワイトリスト、次にユーザールール、カスタムフィルタ、最後に臨時修正フィルタ。
+If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules and finally Custom filters.
 
 > **変換されたルール**は、[宣言的コンバータ][github-declarative-converter]を使って
 > \[DNR形式]に変換されたルールです。

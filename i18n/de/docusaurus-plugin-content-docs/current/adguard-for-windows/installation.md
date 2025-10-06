@@ -21,25 +21,25 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 ## AdGuard installieren
 
-To install AdGuard on a Windows PC or tablet, follow these steps:
+Um AdGuard auf einem PC oder Tablet zu installieren, gehen Sie wie folgt vor:
 
-1. Go to the [AdGuard website](http://adguard.com) and click *Download*. You can also get the installation program from the [download page](https://adguard.com/download.html?auto=1) — the download will start automatically.
+1. Öffnen Sie die [AdGuard-Website](http://adguard.com) und klicken Sie auf *Herunterladen*. Sie können das Installationsprogramm auch von der [Download-Seite](https://adguard.com/download.html?auto=1) herunterladen. Der Download startet daraufhin automatisch.
 
-   ![Download AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/website_en.png)
+   ![AdGuard herunterladen *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/website_en.png)
 
-2. Once the download is complete, open the file *adguardInstaller.exe*.
+2. Sobald der Download abgeschlossen ist, öffnen Sie die Datei *adguardInstaller.exe*.
 
-   ![Downloaded file](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/download_en.png)
+   ![Heruntergeladene Datei](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/download_en.png)
 
-3. You’ll see a User Account Control prompt asking if you want to allow the app to make changes to your PC. Klicken Sie auf *Ja*.
+3. Es wird das Dialogfeld der Benutzerkontensteuerung angezeigt, in dem Sie aufgefordert werden, der App zu erlauben, Änderungen an Ihrem PC vorzunehmen. Klicken Sie auf *Ja*.
 
    ![Änderungen zulassen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/allow-changes.png)
 
-4. Choose the folder where you want AdGuard to be installed.
+4. Wählen Sie den Ordner, in dem AdGuard installiert werden soll.
 
    ![Ordner wählen *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer1_en.png)
 
-   If you want to select a different location, click *Browse*, choose the folder, and click *OK*. You can also create a new folder by clicking *Make New Folder* and naming it. If you’d like a desktop shortcut, check the box *Create a desktop shortcut*. Then click *Install* to start the installation.
+   Wenn Sie einen anderen Speicherort auswählen möchten, klicken Sie auf *Durchsuchen*, wählen Sie den Ordner aus und klicken Sie auf *OK*. Sie können AdGuard auch in einem neuen Ordner installieren, indem Sie auf *Neuen Ordner erstellen* klicken und den Namen eingeben. Um eine Desktop-Verknüpfung für AdGuard zu erstellen, markieren Sie das Feld *Desktop-Verknüpfung erstellen*. Klicken Sie auf *Installieren*, um mit der Installation fortzufahren.
 
    ![Installation starten *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer2_en.png)
 
@@ -47,67 +47,67 @@ To install AdGuard on a Windows PC or tablet, follow these steps:
 
    ![Installation abschließen *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer3_en.png)
 
-   Glückwunsch! AdGuard has been successfully installed. You’ll be prompted to set up protection according to your preferences.
+   Glückwunsch! Sie haben AdGuard erfolgreich auf Ihrem Computer installiert. Sie werden dann aufgefordert, den Schutz nach Ihren Wünschen einzurichten.
 
-   ![Setting up protection *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/setting_up_protection_en.png)
+   ![Schutz einrichten *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/setting_up_protection_en.png)
 
-   After that, the main window will open, where you can adjust the app’s settings.
+   Daraufhin öffnet sich das Hauptfenster, in dem Sie die Einstellungen der App festlegen können.
 
 ## So kann AdGuard für Windows deinstalliert werden {#uninstall}
 
-### Standardmodus
+### Reguläre Methode
 
 Wenn Sie AdGuard deinstallieren oder neu installieren müssen, gehen Sie wie folgt vor:
 
-- For Microsoft Windows 10 & 11: Open the *Start Menu* by clicking *Start*, then select *Settings*. In the window that opens, click  *Apps* → *Installed apps*. Select *AdGuard* from the list of your installed apps, click the three-dot menu, and select *Uninstall*.
+- Für Microsoft Windows 10 und 11: Öffnen Sie das *Startmenü*, indem Sie auf *Start* klicken, und wählen Sie dann *Einstellungen*. Klicken Sie im sich öffnenden Fenster auf *Apps* → *Installierte Apps*. Wählen Sie *AdGuard* aus der Liste Ihrer installierten Apps, klicken Sie auf das Drei-Punkte-Menü und wählen Sie *Deinstallieren*.
 
-   ![Windows 10 & 11 uninstallation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/win11_uninstall_adguard.png)
+   ![Deinstallation unter Windows 10 und 11 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/win11_uninstall_adguard.png)
 
-- For Microsoft Windows 8: Right-click the *empty space* in the lower left corner of the task bar and select *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
+- Für Microsoft Windows 8: Klicken Sie mit der rechten Maustaste auf die *leere Stelle* in der unteren linken Ecke der Taskleiste und wählen Sie *Systemsteuerung*. Klicken Sie auf *Programm deinstallieren* im Bereich *Programme*, wählen Sie dann *AdGuard* aus der Liste der installierten Apps aus und klicken Sie auf die Schaltfläche *Deinstallieren*, die sich direkt über der Liste befindet. Bestätigen Sie die Aktion, indem Sie in dem sich öffnenden Fenster auf *AdGuard deinstallieren* klicken.
 
-- For Microsoft Windows 8.1: Right-click the *Start button* and select *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
+- Für Microsoft Windows 8.1: Klicken Sie mit der rechten Maustaste auf die Schaltfläche *Start* und wählen Sie *Systemsteuerung*. Klicken Sie auf *Programm deinstallieren* im Bereich *Programme*, wählen Sie dann *AdGuard* aus der Liste der installierten Apps aus und klicken Sie auf die Schaltfläche *Deinstallieren*, die sich direkt über der Liste befindet. Bestätigen Sie die Aktion, indem Sie in dem sich öffnenden Fenster auf *AdGuard deinstallieren* klicken.
 
-- For Microsoft Windows 7: Open *Start Menu*. In the search box, type *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
+- Für Microsoft Windows 7: Öffnen Sie das *Startmenü*. Geben Sie in das Suchfeld *Systemsteuerung* ein. Klicken Sie auf *Programm deinstallieren* im Bereich *Programme*, wählen Sie dann *AdGuard* aus der Liste der installierten Apps aus und klicken Sie auf die Schaltfläche *Deinstallieren*, die sich direkt über der Liste befindet. Bestätigen Sie die Aktion, indem Sie in dem sich öffnenden Fenster auf *AdGuard deinstallieren* klicken.
 
 ### Fortgeschrittene Methode {#advanced}
 
-In case regular uninstall doesn't work for any reason, you can try to use an advanced method. First of all, you need to [download the uninstaller tool](https://static.adtidy.org/windows/uninstaller/uninstal_utility.zip) created by our developers. Extract the archive to any folder on your PC and run the **Adguard.UninstallUtility.exe** file, and allow the app to make changes to your device. Then follow the instruction below:
+Falls die reguläre Deinstallation aus irgendeinem Grund nicht funktioniert, können Sie versuchen, eine erweiterte Methode zu verwenden. Zuerst müssen Sie [das von unseren Entwicklern erstellte Deinstallationstool](https://static.adtidy.org/windows/uninstaller/uninstal_utility.zip) herunterladen. Entpacken Sie das Archiv in einen beliebigen Ordner auf Ihrem PC, führen Sie die Datei **Adguard.UninstallUtility.exe** aus und erlauben Sie der App, Änderungen an Ihrem Gerät vorzunehmen. Befolgen Sie anschließend die nachstehenden Anweisungen:
 
-- Select *AdGuard Ad Blocker* and *Standard* uninstall type, then click *Uninstall*.
+- Wählen Sie *AdGuard Werbeblocker* und *Standard-Deinstallationstyp* und klicken Sie dann auf *Deinstallieren*.
 
-   ![Standard uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard.jpg)
+   ![Standard-Deinstallation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard.jpg)
 
-- Click *OK* once the warning window pops up:
+- Klicken Sie auf *OK*, sobald das Warnfenster angezeigt wird:
 
-   ![Standard uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
+   ![Standard-Deinstallationshinweis *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
+- Warten Sie, bis die Deinstallation abgeschlossen ist — es wird die Meldung **Deinstallation abgeschlossen** und eine Aufforderung zum Neustart des Computers angezeigt:
 
-   ![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard_complete.jpg)
+   ![Deinstallation abgeschlossen *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard_complete.jpg)
 
 :::caution
 
-Follow the next steps only if performing the first two steps wasn’t enough for some reason. We strongly suggest contacting our support before using steps 3-4 of advanced uninstall instruction.
+Führen Sie die nächsten Schritte nur aus, wenn die ersten beiden Schritte aus irgendeinem Grund nicht ausreichend waren. Wir empfehlen dringend, unseren Support zu kontaktieren, bevor Sie die Schritte 3-4 der erweiterten Deinstallationsanweisung ausführen.
 
 :::
 
-- Select *AdGuard Ad Blocker* and *Extended* uninstall type, then click *Uninstall*. Click *Yes, continue* in the window prompt.
+- Wählen Sie *AdGuard Werbeblocker* und *Erweitert* als Deinstallationstyp und klicken Sie dann auf *Deinstallieren*. Klicken Sie in der Eingabeaufforderung auf *Ja, weiter*.
 
-   ![Extended uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
+   ![Erweiterte Deinstallation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
 
-- Click *OK* once the warning window pops up:
+- Klicken Sie auf *OK*, sobald das Warnfenster angezeigt wird:
 
-   ![Extended uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
+   ![Erweiterter Deinstallationshinweis *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
+- Warten Sie, bis die Deinstallation abgeschlossen ist — es wird die Meldung **Deinstallation abgeschlossen** und eine Aufforderung zum Neustart des Computers angezeigt:
 
-   ![Extended uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
+   ![Erweiterte Deinstallation abgeschlossen *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
 
-AdGuard is successfully uninstalled!
+AdGuard wurde erfolgreich deinstalliert!
 
 #### Deinstallationsprogramm im Konsolenmodus ausführen
 
-Besides running the advanced uninstaller in its user-interactive mode, you can also use command-line arguments to uninstall AdGuard for Windows. To do this, follow the instructions below:
+Neben der Ausführung des erweiterten Deinstallationsprogramms im benutzerinteraktiven Modus können Sie auch Befehlszeilenargumente verwenden, um AdGuard für Windows zu deinstallieren. Folgen Sie dazu den nachstehenden Anweisungen:
 
 1. Öffnen Sie die Eingabeaufforderung durch Eingabe von *cmd* im Startmenü.
 2. Verwenden Sie `/console`, um das Deinstallationsprogramm im Konsolenmodus auszuführen, ohne die interaktive Benutzeroberfläche. Alle nachstehenden Befehlszeilenparameter werden ignoriert, wenn der Modus `/console` nicht aktiviert ist.
@@ -119,6 +119,6 @@ Besides running the advanced uninstaller in its user-interactive mode, you can a
 
 :::note
 
-The use of the parameters `/console` and `/adblocker` is necessary for a successful uninstall. The parameters `/advanced` and `/settings` are optional.
+Die Verwendung der Parameter `/console` und `/adblocker` ist für eine erfolgreiche Deinstallation notwendig. Die Parameter `/advanced` und `/settings` sind optional.
 
 :::

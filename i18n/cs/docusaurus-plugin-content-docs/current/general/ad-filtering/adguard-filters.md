@@ -38,7 +38,6 @@ Tento článek je o filtrech, které vytváříme pro použití v AdGuardu a jin
 - **Experimentální filtr** slouží k testování některých nových pravidel filtrování, která mohou potenciálně způsobovat konflikty a narušovat práci webových stránek. Pokud tato pravidla fungují bez problémů, přidají se do hlavních filtrů. [Zobrazit pravidla](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_5_Experimental/filter.txt)
 - **Filtr mobilních reklam** blokuje reklamy v mobilních zařízeních. Obsahuje všechny známé sítě mobilní reklamy. [Zobrazit pravidla](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt)
 - **DNS filtr** — (Základní filtrAdGuard, Filtr sociálních médií, Filtr ochrany sledování, Filtr mobilních reklam, EasyList a EasyPrivacy), který je zjednodušený pro lepší kompatibilitu s blokováním reklamy na úrovni DNS. Tento filtr používá servery [AdGuard DNS](https://adguard-dns.io/kb) k blokování reklam a sledování. [Zobrazit pravidla](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt)
-- **Filtr rychlých oprav** — slouží k rychlému řešení kritických problémů s filtrováním obsahu na oblíbených webech bez aktualizace rozšíření MV3. [Zobrazit pravidla](https://filters.adtidy.org/extension/chromium-mv3/filters/24.txt)
 
 ## Zásady AdGuard filtrů
 

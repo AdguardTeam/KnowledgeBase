@@ -11,7 +11,7 @@ Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunziona
 
 To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install its certificate into your device’s user storage. On older versions of the Android OS this was done automatically, but on Android 11 and later users have to install it manually.
 
-![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
+![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/screenCA.gif)
 
 Follow these steps to install the AdGuard certificate:
 
@@ -22,13 +22,13 @@ Follow these steps to install the AdGuard certificate:
     - AdGuard’s HTTPS filtering is safe
     - AdGuard certificate
 
-    Consecutively, tap *Continue* → *Next* → *Save certificate*.
+1. Consecutively, tap *Continue* → *Next* → *Save certificate*.
 
 1. Tap *Save* at the bottom of the opened *Download* folder.
 
-1. After saving, tap *Open Settings*.
+1. After saving, copy the text from the *CA Certificate* field and tap *Open Settings*.
 
-1. Open *Settings* and type *CA Certificate* in the search bar. Tap the respective option.
+1. Open *Settings* and either paste or type *CA Certificate* in the search bar. Tap the respective option.
 
 1. You might see a warning. If so, tap *Install anyway* and enter your PIN if necessary.
 
@@ -39,7 +39,7 @@ You’re all set! Once the certificate is installed successfully, you’ve enabl
 If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
 
 1. Restart AdGuard.
-2. Try to install the correct certificate (AdGuard Personal CA) one more time.
+1. Try to install the correct certificate (AdGuard Personal CA) one more time.
 
 ## Security warnings
 

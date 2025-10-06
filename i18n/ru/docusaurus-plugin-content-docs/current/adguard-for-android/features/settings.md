@@ -134,7 +134,7 @@ HTTPS-фильтрация позволяет AdGuard фильтровать с�
 
 :::note
 
-Please note that DNS filtering will still be active in _Automatic proxy_ routing mode, and your device may not be able to filter DNS requests from specific apps. In _VPN_ routing mode, apps are excluded from the local VPN by system means. Therefore, the system resolver sees which apps are included in the VPN and which are not. It either allows them into the local VPN or lets them bypass it. However, DNS requests come from the system resolver, not the application. In _Automatic proxy_ mode, it is only possible to exclude traffic from applications, not their DNS queries, because AdGuard sees them as system queries.
+Обратите внимание, что в режиме маршрутизации _Автоматический прокси_ DNS-фильтрация будет активна, и ваше устройство возможно не сможет фильтровать DNS-запросы от определённых приложений. В режиме маршрутизации _VPN_ приложения исключаются из локального VPN средствами системы. Таким образом, системный DNS-резолвер видит, какие приложения включены в VPN, а какие — нет. Это либо разрешает им доступ к локальному VPN, либо позволяет обходить его. Однако DNS-запросы поступают от системного DNS-резолвера, а не от приложения. В режиме _Автоматический прокси_ можно исключить только трафик приложений, но не их DNS-запросы, потому что AdGuard видит их как системные запросы.
 
 :::
 
@@ -145,13 +145,13 @@ Please note that DNS filtering will still be active in _Automatic proxy_ routing
 В этом разделе вы можете узнать больше о лицензии и управлять ей:
 
 - Купить лицензию AdGuard, чтобы активировать [функции полной версии](/adguard-for-android/features/free-vs-full)
-- Войти в аккаунт AdGuard или ввести код активации лицензии
-- Зарегистрироваться для активации 7-дневного пробного периода, если вы ещё не воспользовались им
+- Log in to your AdGuard account or enter the activation code to activate your license
+- Sign up to activate your 14-day trial period. The activation code can be used on different devices and platforms
 - Обновить статус лицензии в меню с тремя точками (⋮)
 - Открыть личный кабинет AdGuard, чтобы управлять лицензией
 - Сбросить лицензию — например, если вы достигли лимита устройств для неё и хотите применить другую
 
-![Экран лицензии \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![License screen \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/android/settings/licensetab.png)
 
 ## Поддержка
 

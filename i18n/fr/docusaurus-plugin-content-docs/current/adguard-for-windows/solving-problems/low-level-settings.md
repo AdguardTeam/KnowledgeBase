@@ -65,6 +65,12 @@ Activez cette fonctionnalité si vous souhaitez qu'AdGuard intercepte automatiqu
 
 Si cette option est activée, AdGuard filtrera les requêtes envoyées sur HTTP/3 en plus d'autres types de requêtes.
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 ### Utiliser le mode pilote de redirection
 
 Si cette option est activée, AdGuard intercepte tout le trafic et le redirige vers le proxy local pour un filtrage ultérieur.
@@ -153,7 +159,7 @@ Ce paramètre ne fonctionne que lorsque l'option *Activer TCP keepalive* est act
 
 :::
 
-### Block Java
+### Bloquer Java
 
 Certains sites Web et services Web prennent toujours en charge les plug-ins Java. L'API qui sert de base aux plug-ins Java présente de graves vulnérabilités de sécurité. Vous pouvez désactiver ces plug-ins pour des raisons de sécurité. Néanmoins, même si vous décidez d'utiliser l'option *Bloquer Java* , JavaScript sera toujours activé.
 

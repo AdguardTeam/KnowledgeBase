@@ -65,6 +65,12 @@ sidebar_position: 7
 
 Если эта настройка включена, AdGuard будет фильтровать запросы, отправленные по протоколу HTTP/3, в дополнение к другим типам запросов.
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 ### Использовать драйвер в режиме перенаправления
 
 Если эта опция включена, AdGuard перехватывает весь трафик и перенаправляет его на локальный прокси-сервер для дальнейшей фильтрации.
@@ -153,7 +159,7 @@ Host: example.org`
 
 :::
 
-### Block Java
+### Блокировать Java
 
 Некоторые сайты и веб-сервисы до сих пор используют устаревшие технологии поддержки Java-плагинов. API-интерфейс, лежащий в основе Java-плагинов, небезопасен. Вы можете отключить такие плагины в целях безопасности. Тем не менее, даже если вы решите использовать опцию *Блокировать Java*, JavaScript будет по-прежнему включён.
 

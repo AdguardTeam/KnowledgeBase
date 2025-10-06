@@ -147,6 +147,7 @@ Alle aufgeführten früheren Greasemonkey-Funktionen sind veraltet, werden aber 
 - [`GM_addStyle`](https://www.tampermonkey.net/documentation.php#api:GM_addStyle)
 - [`GM_log`](https://www.tampermonkey.net/documentation.php#api:GM_log)
 - [`GM.addElement`, `GM_addElement`](https://www.tampermonkey.net/documentation.php#api:GM_addElement)
+- [`window.onurlchange`](https://www.tampermonkey.net/documentation.php#api:window.onurlchange)
 
 Weitere Informationen zur Greasemonkey-API finden Sie im [Handbuch] (https://wiki.greasespot.net/Greasemonkey_Manual:API).
 
@@ -321,6 +322,80 @@ function convertPropertyToTrusted(
 divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML", "<div></div>");
 ```
 
+#### Matching SPA sites
+
+:::info Kompatibilität
+
+Dieser Abschnitt gilt nur für AdGuard für Windows, AdGuard für Mac, AdGuard für Android und AdGuard für Linux mit [CoreLibs] v1.19 oder höher.
+
+:::
+
+Viele moderne Websites, wie beispielsweise YouTube, nutzen die Funktionen von [Single-Page-Webanwendung (SPA)](https://de.wikipedia.org/wiki/Single-Page-Webanwendung). Im Gegensatz zu herkömmlichen Webanwendungen wird die Seite beim Wechsel zwischen den Seiten nicht neu geladen. Stattdessen wird der Inhalt dynamisch mit JavaScript aktualisiert, was eine flüssigere Benutzererfahrung ermöglicht.
+
+Auf solchen Websites wird ein Benutzerskript nur einmal aufgerufen, wenn die Anweisungen `@match` oder `@include` übereinstimmen (es sei denn, `@exclude` stimmt überein). Aufgrund der Besonderheiten von SPAs kann das Benutzerskript bei nachfolgenden Seitenwechseln nicht erneut aufgerufen werden, da der globale JavaScript-Kontext unverändert bleibt. Um dieses Problem zu beheben, können Benutzerskripte die Anweisung `@grant window.onurlchange` verwenden.
+
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @grant window.onurlchange
+// @run-at document-start
+// ==/UserScript==
+
+// via window.onurlchange
+window.onurlchange = (event) => {
+    console.log('URL changed to:', event.url);
+};
+
+// via window.addEventListener('urlchange')
+window.addEventListener('urlchange', (event) => {
+    console.log('URL changed to:', event.url);
+});
+```
+
+Dadurch können Benutzerskripte auf URL-Änderungen reagieren und diese entsprechend verarbeiten.
+
+:::note
+
+Das Ereignis `urlchange` wird nur bei vollständigen URL-Änderungen ausgelöst, z. B. bei einer Änderung des Pfads oder der Abfrage, jedoch nicht bei Änderungen des Fragments (Hash).
+Beispiele:
+
+- Das Navigieren von `https://example.com/page1` zu `https://example.com/page2` löst das Ereignis aus.
+- Die Navigation von `https://example.com/page1?query=1` zu `https://example.com/page1?query=2` löst das Ereignis aus.
+- Die Navigation von `https://example.com/page1#section1` zu `https://example.com/page1#section2` löst das Ereignis **NICHT** aus.
+
+:::
+
+:::note
+
+Die APIs `window.onurlchange` und `window.addEventListener(‚urlchange‘, ...)` sind nicht standardisiert. Um sie zu verwenden, müssen Sie sie in Ihrem Benutzerskript explizit mit `@grant window.onurlchange` gewähren.
+
+:::
+
+Wenn eine Website Hash-Routing verwendet, können Benutzerskripte das native DOM-Ereignis [`hashchange`](https://developer.mozilla.org/de/docs/Web/API/Window/hashchange_event) verwenden:
+
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @run-at document-start
+// ==/UserScript==
+
+// via window.onhashchange
+window.onhashchange = (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+};
+
+// via window.addEventListener('hashchange')
+window.addEventListener('hashchange', (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+});
+```
+
 ## Benutzerstile (Userstyles)
 
 Mit Benutzerstilen kann man das Aussehen beliebter Websites ändern.
@@ -337,13 +412,13 @@ Es handelt sich hierbei um eine experimentelle Funktion. Wenn Sie also beim Hinz
 
 ### So richten Sie einen Benutzerstil in AdGuard ein
 
-Sie können Benutzerstile von verschiedenen Websites herunterladen. Eine der populärsten Benutzerstil-Webseiten ist [https://userstyles.world/](https://userstyles.world/explore), die hier als Beispiel für die folgende Anleitung zur Einrichtung des Benutzerstils in AdGuard verwendet wird.
+Sie können Benutzerstile von verschiedenen Websites herunterladen. Eine der populärsten Benutzerstil-Websites ist [https://userstyles.world/](https://userstyles.world/explore), die hier als Beispiel für die folgenden anweisungen zur Einstellungen des Benutzerstils in AdGuard verwendet wird.
 
 1. Folgen Sie dem obigen Link und wählen Sie den gewünschten Benutzerstil
 
 2. Klicken Sie auf _Kopieren_ neben der Adresse des Benutzerstils
 
-3. Öffnen Sie die Einstellungen von AdGuard ➜ _Erweiterungen_
+3. Öffnen Sie die AdGuard-Einstellungen → _Erweiterungen_
 
 4. Drücken Sie auf die Schaltfläche [+] und fügen Sie den Benutzerstil-Link ein
 
@@ -357,36 +432,36 @@ Es werden keine Benutzerstile unterstützt, die `@var` oder `@advanced` in den M
 
 :::
 
-1. Öffnen Sie die Einstellungen von AdGuard ➜ _Erweiterungen_
+1. Öffnen Sie die AdGuard-Einstellungen → _Erweiterungen_
 
 2. Drücken Sie auf die Schaltfläche [+] und wählen Sie die Option _Benutzerstil erstellen_. Es wird ein neues Fenster auf Ihrem Bildschirm angezeigt
 
 3. Um einen Benutzerstil zu erstellen, schreiben Sie zunächst den Titel mit Metadaten, zum Beispiel
 
-    ```CSS
-    /* ==UserStyle==
-    @name New userstyle
-    @version 1.0
-    ==/UserStyle== */
-    ```
+   ```CSS
+   /* ==UserStyle==
+   @name New userstyle
+   @version 1.0
+   ==/UserStyle== */
+   ```
 
 4. Schreiben Sie den CSS-Teil nach den Metadaten. AdGuard unterstützt den Abgleich von Website-Domainnamen (`@-moz-document domain(…), …`). Zum Beispiel:
 
-    ```CSS
-    body {
-      background: gray;
-      }
-    ```
+   ```CSS
+   body {
+     background: gray;
+     }
+   ```
 
-    oder:
+   oder:
 
-    ```CSS
-    @-moz-document domain('example.org'),
-    domain('example.net'),
-    domain('example.com') body {
-      background: gray;
-      }
-    ```
+   ```CSS
+   @-moz-document domain('example.org'),
+   domain('example.net'),
+   domain('example.com') body {
+     background: gray;
+     }
+   ```
 
 5. Wenn Sie fertig sind, drücken Sie _Speichern und schließen_. Ihr neuer Benutzerstil wurde erfolgreich zu AdGuard hinzugefügt
 
@@ -409,3 +484,5 @@ Es werden keine Benutzerstile unterstützt, die `@var` oder `@advanced` in den M
     }
 }
 ```
+
+[CoreLibs]: https://github.com/AdguardTeam/CoreLibs

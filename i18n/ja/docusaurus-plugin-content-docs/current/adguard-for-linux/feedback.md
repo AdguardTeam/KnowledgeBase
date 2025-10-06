@@ -20,18 +20,18 @@ AdGuard for Linux にバグを発見した場合、または新機能を提案�
 
 1. デバッグログを有効にします:
 
-    `adguard-cli config set log_level debug`
+   `adguard-cli config set log_level debug`
 
 2. 問題を再現し、問題が発生した正確な時刻をメモしておいてください。
 
 3. 少し待ってからログをエクスポートします:
 
-    `adguard-cli export-logs`
+   `adguard-cli export-logs`
 
-    そうしますと、アーカイブされたログファイルは、デフォルトでアプリケーションフォルダにダウンロードされ、ログへのパスがコンソールに書き込まれます。
+   そうしますと、アーカイブされたログファイルは、デフォルトでアプリケーションフォルダにダウンロードされ、ログへのパスがコンソールに書き込まれます。
 
 4. ログファイルを <devteam@adguard.com> に送信します。 メールにバグの発生時刻とissueへのリンクまたはissue番号（番号はissueタイトルの横に「#○○」として表示されます）を記載してください。 もう一つの方法として、ログファイルを Google ドライブにアップロードして、<devteam@adguard.com> にリンクを送りください。 GitHubのissueにもファイルへのリンクを追加してください。
 
 5. ログ記録モードを `info` に戻します:
 
-    `adguard-cli config set log_level info`
+   `adguard-cli config set log_level info`
