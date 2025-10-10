@@ -175,7 +175,7 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 1. Tap **Save and select**.
 
-1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+1. Enable the main proxy switch and AdGuard protection to route your device’s traffic through the proxy.
    
 ## Limitations
 
