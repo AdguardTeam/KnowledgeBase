@@ -7,13 +7,15 @@ In [AdGuard for Chrome MV3](/adguard-browser-extension/mv3-version), the Filteri
 
 These instructions are also meant for problematic cases where you want to modify the rules that are bundled with the extension statically. In most cases, using *User rules* in the extension should be sufficient.
 
+Additionally, you can edit filters and rebuild DNR rulesets without rebuilding the entire extension, which may be useful for debugging purposes.
+
 ## Prerequisites
 
 1. **Git:** [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 1. **Node:** [Install Node.js](https://nodejs.org/en/download/package-manager)
 
-1. **Yarn:** [Install Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
+1. **pnpm:** [Install pnpm](https://pnpm.io/installation)
 
 ## How to clone extension
 
@@ -29,36 +31,24 @@ These instructions are also meant for problematic cases where you want to modify
     cd AdguardBrowserExtension
     ```
 
-1. Switch to the `v5.0` branch:
-
-    ```bash
-    git checkout v5.0
-    ```
-
 1. Install dependencies:
 
     ```bash
-    yarn install
+    pnpm install
     ```
 
 ## How to build extension
 
-1. Switch to the `v5.0` branch:
-
-    ```bash
-    git checkout v5.0
-    ```
-
 1. Run the following command in the terminal:
 
     ```bash
-    yarn dev chrome-mv3
+    pnpm dev chrome-mv3 # OR: opera-mv3
     ```
 
 1. The built extension will be located in the directory:
 
     ```bash
-    ./build/dev/chrome-mv3
+    ./build/dev/chrome-mv3 # OR: opera-mv3
     ```
 
 ## How to install unpacked in the browser
@@ -77,22 +67,67 @@ These instructions are also meant for problematic cases where you want to modify
 
 That’s it!
 
-## How to debug rules
+##### How to debug rules
 
-1. Find and modify the rule you need in the `./Extension/filters/chromium-mv3` directory in the `.txt` files.
+You can debug and update DNR rulesets without rebuilding the entire extension. There are two main workflows:
 
-1. Convert the rules from txt to declarative form:
+**A. Automatic (recommended for most cases):**
 
-    ```bash
-    yarn convert-declarative
+1. **Build the extension** (if not done yet):
+    ```shell
+    pnpm install
+    pnpm dev chrome-mv3 # OR: opera-mv3
     ```
 
-1. Build the extension again:
+1. **Start watching for filter changes:**
+    ```shell
+    pnpm debug-filters watch
+    ```
+    - This command has `-b, --browser <browser>` option to specify the browser target.
+      Available browsers: `chrome-mv3`, `opera-mv3`.
+      Default: `chrome-mv3`.
+    - This will extract text filters to `./build/dev/<browser>/filters` and watch for changes.
+    - When you edit and save any filter file, DNR rulesets will be rebuilt automatically.
 
-    ```bash
-    yarn dev chrome-mv3
+1. **Reload the extension in your browser** to apply new rulesets.
+
+**B. Manual (for advanced/manual control):**
+
+1. **Build the extension** (if not done yet):
+    ```shell
+    pnpm install
+    pnpm dev chrome-mv3 # OR: opera-mv3
     ```
 
-1. Reload the extension in the browser:
+1. **Extract text filters:**
+    ```shell
+    pnpm debug-filters extract
+    ```
+    - This command has `-b, --browser <browser>` option to specify the browser target.
+      Available browsers: `chrome-mv3`, `opera-mv3`.
+      Default: `chrome-mv3`.
 
-    ![Reload extension](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
+1. **Edit the text filters** in `./build/dev/<browser>/filters` as needed.
+
+1. **Convert filters to DNR rulesets:**
+    ```shell
+    pnpm debug-filters convert
+    ```
+    - This command has `-b, --browser <browser>` option to specify the browser target.
+      Available browsers: `chrome-mv3`, `opera-mv3`.
+      Default: `chrome-mv3`.
+
+1. **Reload the extension in your browser** to apply new rulesets.
+
+**Tip:**
+- To download the latest available text filters, run:
+    ```shell
+    pnpm debug-filters load
+    ```
+    - This command has `-b, --browser <browser>` option to specify the browser target.
+      Available browsers: `chrome-mv3`, `opera-mv3`.
+      Default: `chrome-mv3`.
+
+If you see an exclamation mark in the filtering log, it means the assumed rule (calculated by the engine) and the applied rule (converted to DNR) are different. Otherwise, only the applied rule (in DNR and text ways) will be shown.
+
+##### <a name="dev-technical-info-about-debug-commands"></a> Technical information about commands
