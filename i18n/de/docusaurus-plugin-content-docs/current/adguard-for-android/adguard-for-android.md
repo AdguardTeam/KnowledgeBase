@@ -9,7 +9,7 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-## Funktionen
+## Features
 
 Die wichtigsten Funktionen und Einstellungen von AdGuard für Android
 

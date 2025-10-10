@@ -49,15 +49,15 @@ AdGuard pro Linux vyžaduje [licenci AdGuardu](https://adguard.com/license.html)
 
 2. Poté vyberte požadovanou možnost:
 
-   ![adguard-cli activate \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation1.png)
+   ![adguard-cli activate \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/1activate.png)
 
 3. Po získání licence pokračujte v aktivaci pomocí poskytnutého odkazu:
 
-   ![Activate license \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation2.png)
+   ![Activate license \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/2activate_link.png)
 
 4. Po aktivaci můžete s programem dále pracovat:
 
-   ![Successful activation \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation3.png)
+   ![Successful activation \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/3activate_success.png)
 
 5. Licenci můžete obnovit také zadáním:
 
@@ -77,7 +77,7 @@ AdGuard pro Linux vyžaduje [licenci AdGuardu](https://adguard.com/license.html)
    adguard-cli configure
    ```
 
-   ![Setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation4.png)
+   ![Setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/4configure.png)
 
    Průvodce se zeptá na základní otázky potřebné pro počáteční nastavení.
 
@@ -87,7 +87,7 @@ AdGuard pro Linux vyžaduje [licenci AdGuardu](https://adguard.com/license.html)
    adguard-cli start
    ```
 
-   ![Start protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation5.png)
+   ![Start protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/5start.png)
 
 8. Stav ochrany můžete zkontrolovat pomocí:
 
@@ -101,7 +101,7 @@ AdGuard pro Linux vyžaduje [licenci AdGuardu](https://adguard.com/license.html)
    adguard-cli stop
    ```
 
-   ![Stop protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+   ![Stop protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/6status-stop.png)
 
 9. Chcete-li zkontrolovat aktuální konfiguraci, zadejte:
 
@@ -109,7 +109,7 @@ AdGuard pro Linux vyžaduje [licenci AdGuardu](https://adguard.com/license.html)
    adguard-cli config show
    ```
 
-   ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+   ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/7config_show.png)
 
    Zobrazí se také cesta ke konfiguračnímu souboru, který můžete a měli byste přímo upravit. Obsahuje popisy všech dalších možností.
 

@@ -140,9 +140,9 @@ If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in add
 
 **Limitations**:
 
-- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Chromebasierte Browser akzeptieren keine Benutzerzertifikate, daher wird HTTP/3-Filterung in ihnen nicht unterstützt.
 - Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
-- Safari supports HTTP/3 filtering without additional configuration.
+- Safari unterstützt HTTP/3-Filterung ohne zusätzliche Konfiguration.
 
 ### Outbound-Proxy
 
