@@ -49,15 +49,15 @@ Linux용 AdGuard에는 [AdGuard 라이선스](https://adguard.com/license.html)�
 
 2. 그런 다음 원하는 옵션을 선택합니다.
 
-   ![adguard-cli 활성화 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation1.png)
+   ![adguard-cli activate \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/1activate.png)
 
 3. 링크를 클릭하여 라이선스를 활성화합니다.
 
-   ![라이선스 활성화 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation2.png)
+   ![Activate license \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/2activate_link.png)
 
 4. 활성화 후에는 프로그램을 계속 사용할 수 있습니다.
 
-   ![성공적인 활성화 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation3.png)
+   ![Successful activation \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/3activate_success.png)
 
 5. 입력하여 라이선스를 초기화할 수도 있습니다.
 
@@ -77,7 +77,7 @@ Linux용 AdGuard에는 [AdGuard 라이선스](https://adguard.com/license.html)�
    adguard-cli configure
    ```
 
-   ![설정 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation4.png)
+   ![Setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/4configure.png)
 
    마법사는 초기 설정에 필요한 기본적인 질문을 합니다.
 
@@ -87,7 +87,7 @@ Linux용 AdGuard에는 [AdGuard 라이선스](https://adguard.com/license.html)�
    adguard-cli start
    ```
 
-   ![보호 시작 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation5.png)
+   ![Start protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/5start.png)
 
 8. 다음을 사용하여 보호 상태를 확인할 수 있습니다.
 
@@ -101,7 +101,7 @@ Linux용 AdGuard에는 [AdGuard 라이선스](https://adguard.com/license.html)�
    adguard-cli stop
    ```
 
-   ![중지 보호 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+   ![Stop protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/6status-stop.png)
 
 9. 현재 구성을 확인하려면 다음을 입력합니다.
 
@@ -109,7 +109,7 @@ Linux용 AdGuard에는 [AdGuard 라이선스](https://adguard.com/license.html)�
    adguard-cli config show
    ```
 
-   ![현재 설정 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+   ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/7config_show.png)
 
    구성 파일의 경로도 표시되며, 직접 편집할 수 있습니다. 여기에는 모든 추가 옵션에 대한 설명이 포함되어 있습니다.
 

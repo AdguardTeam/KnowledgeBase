@@ -145,8 +145,8 @@ Upozorňujeme, že filtrování DNS bude aktivní i v režimu _Automatického pr
 V této sekci najdete informace o své licenci a můžete provádět následující:
 
 - Zakoupit licenci AdGuardu pro aktivaci [funkcí plné verze](/adguard-for-android/features/free-vs-full)
-- Log in to your AdGuard account or enter the activation code to activate your license
-- Sign up to activate your 14-day trial period. The activation code can be used on different devices and platforms
+- Přihlásit se ke svému AdGuard účtu nebo zadat licenční klíč pro aktivaci licence
+- Zaregistrujte se a aktivujte si 14denní zkušební období. Aktivační kód lze použít na různých zařízeních a platformách
 - Obnovit stav licence z nabídky se třemi tečkami (⋮)
 - Otevřít AdGuard účet a spravovat v něm své licence
 - Resetovat licenci — například pokud jste dosáhli limitu zařízení pro tuto licenci a chcete použít jinou
