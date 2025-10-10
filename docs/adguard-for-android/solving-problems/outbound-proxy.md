@@ -157,7 +157,7 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 ### How to use AdGuard with WG Tunnel
 
-*The proxy mode was added in version 4.0. Here we presume that you already have WG Tunnel installed on your device, and the Wireguard configuration is already added and tested.*
+*The proxy mode was added in version 4.0. We presume that you already have WG Tunnel installed on your device and have added the WireGuard configuration.*
 
 1. Open WG Tunnel and go to **Settings** (the cog wheel at the bottom) → **App Mode** → **Proxy (experimental)**. This will set WG Tunnel to proxy mode.
 
