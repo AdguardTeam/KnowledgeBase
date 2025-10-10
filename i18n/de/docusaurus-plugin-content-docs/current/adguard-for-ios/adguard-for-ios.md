@@ -3,7 +3,7 @@ title: AdGuard für iOS
 sidebar_position: 1
 ---
 
-## Funktionen
+## Features
 
 Die wichtigsten Funktionen und Einstellungen von AdGuard für iOS
 

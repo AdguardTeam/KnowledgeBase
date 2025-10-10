@@ -591,3 +591,33 @@ Android на заводской прошивке, как правило, не к
     - Найдите **AdGuard** и включите опцию **Постоянное VPN-соединение**
 
     ![Постоянное VPN-соединение *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)
+
+## Motorola
+
+On Motorola devices, there are four key configurations to ensure that AdGuard works properly in the background.
+
+1. Allow background usage:
+
+   - Go to **Settings → Apps** and find **AdGuard**
+   - Open **App battery usage**
+   - Enable **Allow background battery usage**
+   - Tap the option with the toggle
+   - Set battery usage to **Unrestricted**
+
+1. Remove background activity restrictions:
+
+   - Откройте **Настройки**
+   - Scroll down and tap **Apps & notifications**
+   - Find **AdGuard** and open **Advanced → Battery**
+   - Tap **Background restriction** or **Background limits**
+   - If it says **Background activity restricted**, tap it and then tap **Remove**
+
+1. Manage background apps:
+
+   - Go to **Settings**, then type **Managing background apps** in the search bar
+   - Find **AdGuard** and enable the toggle to allow the app to run in the background
+
+1. Disable Adaptive Battery:
+
+   - Go to **Settings → Battery**
+   - Turn off the **Adaptive Battery** option
