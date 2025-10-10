@@ -57,7 +57,7 @@ Android용 AdGuard에만 사전 설치된 스크립트입니다. Google 검색 �
 
 #### tinyShield
 
-한국어 웹사이트 및 일부 해외 웹사이트 방문자를 위한 유저스크립트입니다. tinyShield 사용자 스크립트는 Ad-Shield 광고와 안티블록을 차단합니다. 이 유저스크립트는 AdGuard CoreLibs 기반 앱, Violentmonkey, Tampermonkey, [quoid/userscripts](https://github.com/quoid/userscripts)에 설치할 수 있습니다. tinyShield에 대한 자세한 내용과 설치 방법은 [GitHub](https://github.com/List-KR/tinyShield)에서 확인할 수 있습니다.
+한국어 웹사이트 및 일부 해외 웹사이트 방문자를 위한 유저스크립트입니다. tinyShield 사용자 스크립트는 Ad-Shield 광고와 안티블록을 차단합니다. 이 유저스크립트는 AdGuard CoreLibs 기반 앱, Violentmonkey, Tampermonkey, [quoid/userscripts](https://github.com/quoid/userscripts)에 설치할 수 있습니다. tinyShield에 대한 자세한 내용과 설치 방법은 [GitHub](https://github.com/FilteringDev/tinyShield)에서 확인할 수 있습니다.
 
 ### 더 많은 유저스크립트는 어디서 구할 수 있나요?{#more-userscripts}
 
