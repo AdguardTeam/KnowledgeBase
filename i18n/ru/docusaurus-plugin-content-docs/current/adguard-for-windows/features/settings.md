@@ -11,15 +11,15 @@ sidebar_position: 2
 
 Раздел _Настройки_ требует наибольшего внимания. Здесь вы можете настроить приложение в соответствии с вашими требованиями: блокировать определённые элементы или сайты, использовать DNS-сервер доверенного провайдера, удалять сторонние куки и так далее.
 
-![Настройки \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings.png)
+### General settings
 
-### Основные настройки
+Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect _Debug logs_](/adguard-for-windows/solving-problems/adguard-logs.md).
 
-Здесь вы можете настроить язык и тему (Тёмная или Светлая), включение AdGuard при запуске системы и бесшумные автоматические обновления, выбрать канал обновления и установить интервал проверки обновлений. Если AdGuard для Windows работает некорректно и поддержка попросила вас [собрать логи](/adguard-for-windows/solving-problems/adguard-logs.md), вам тоже следует перейти в _Настройки_.
+![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/general_settings.png)
 
-![Расширенные настройки \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
+At the very bottom of the screen you will find _Advanced Settings_. Changing some of them mindlessly may potentially cause problems with AdGuard’s performance, break the Internet connection or compromise your security and privacy. That’s why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in _Advanced Settings_, read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
 
-В самом низу экрана вы найдёте _Расширенные настройки_. Изменение некоторых из них может потенциально вызвать проблемы с работой AdGuard, нарушить интернет-соединение или поставить под угрозу вашу безопасность и конфиденциальность. Заходите в этот раздел, только если вы уверены в своих действиях, или наша команда поддержки попросила вас об этом. [В отдельной статье](/adguard-for-windows/solving-problems/low-level-settings.md) рассказали, что находится в _Расширенных настройках_.
+![Advanced Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/advanced_settings.png)
 
 ### Блокировка рекламы
 
@@ -46,9 +46,9 @@ sidebar_position: 2
 
 ![Защита от трекинга \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/stealth-mode.png)
 
-Работа этого модуля гибко настраивается: например, вы можете запретить сайту узнавать, что вы искали в поисковой системе, прежде чем попасть на этот сайт. Вы также можете автоматически удалять cookie, как принадлежащие сайту, так и сторонние, и отключить определение местоположения в браузере — оно может использоваться для отслеживания ваших перемещений.
+You can flexibly adjust the work of _Tracking protection_: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and disable location sharing in your browser that can be used to track your whereabouts.
 
-[Больше о Защите от трекинга](/general/stealth-mode)
+To learn everything about _Tracking protection_ and its many options, [read this article](/general/stealth-mode).
 
 ### Защита от фишинга
 
@@ -81,15 +81,15 @@ sidebar_position: 2
 
 ![DNS-фильтры \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
 
-### Родительский контроль
+### Parental control
 
-Бывают сайты, доступ к которым стоит ограничивать, если компьютером пользуются дети. Эту задачу выполняет _Родительский контроль_.
+Бывают сайты, доступ к которым стоит ограничивать, если компьютером пользуются дети. This task is accomplished by _Parental control_.
 
-![Родительский контроль \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
+![Parental control \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/parental_control.png)
 
-Модуль проверяет содержимое веб-страниц, открытых в браузере, и отфильтровывает страницы с нежелательным для детей контентом: изображения и тексты для взрослых, ненормативная лексика, насилие, пропаганда наркотиков и т. д. Настройки Родительского контроля защищены паролем, чтобы ребёнок не смог обойти ограничения. Этот модуль не только блокирует доступ к нежелательным сайтам, но и удаляет неподходящие для детей ссылки из результатов поиска.
+Модуль проверяет содержимое веб-страниц, открытых в браузере, и отфильтровывает страницы с нежелательным для детей контентом: изображения и тексты для взрослых, ненормативная лексика, насилие, пропаганда наркотиков и т. д. Parental control settings are password-protected so that the child is not able to go round the restrictions. Этот модуль не только блокирует доступ к нежелательным сайтам, но и удаляет неподходящие для детей ссылки из результатов поиска.
 
-В модуле _Родительский контроль_ вы можете включить _Безопасный поиск_, а также указать, на какие сайты _Родительский контроль_ должен распространяться. Вы также можете включить функцию _Запретить загрузку программ_, чтобы ваш ребёнок не мог загружать и устанавливать программное обеспечение на компьютер. В модуле _Родительский контроль_ есть ещё две опции: вы можете выбрать конкретного пользователя Windows для защиты с помощью _Родительского контроля_ и установить пароль для защиты настроек AdGuard от изменений.
+In the _Parental control_ module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. Вы также можете включить функцию _Запретить загрузку программ_, чтобы ваш ребёнок не мог загружать и устанавливать программное обеспечение на компьютер. There are two more options in the _Parental control_ module: you can select a specific Windows user to be protected by _Parental control_ and set a password to protect AdGuard settings from change.
 
 ### Браузерный помощник
 

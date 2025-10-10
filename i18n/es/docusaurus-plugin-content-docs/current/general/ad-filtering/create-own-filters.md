@@ -419,6 +419,19 @@ Este modificador te permite restringir la cobertura de la regla a una aplicació
 
 For Mac, you can find out the bundle ID or the process name of the app by viewing the respective request details in the Filtering log.
 
+**Sintaxis**
+
+The modifier is a list of one or more expressions, each of which is matched against an application in a particular way depending on its type. These expressions are separated by the `|` symbol.
+
+```text
+applications = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
+entry_i = ( regular_app / wildcard_app / regexp )
+```
+
+- **`regular_app`** — a regular application name (`example.app`). It corresponds to the specified application and is matched lexicographically.
+- **`wildcard_app`** — an application name ending with a wildcard character `*`, such as `org.example.*` or `com.ad*`. It matches all applications whose names start with the specified prefix. Matching is done lexicographically.
+- **`regexp`** — a regular expression that starts and ends with `/`. It works the same way as the basic URL rules, but the characters `/`, `$`, `,`, and `|` must be escaped with `\`.
+
 **Examples**
 
 - `||baddomain.com^$app=org.example.app` — a rule to block requests that match the specified mask and are sent from the `org.example.app` Android app.
@@ -429,9 +442,23 @@ If you want the rule not to be applied to certain apps, start the app name with 
 - `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask and are sent from any app except for the `org.example.app`.
 - `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
+You can use wildcards in the `$app` modifier:
+
+- `||baddomain.com^$app=org.example.*` — applies to all apps whose package names start with `org.example.`
+
+You can use regular expressions in the `$app` modifier by enclosing them in forward slashes `/.../`. This allows for more flexible matching — for example, targeting a group of apps from the same publisher or matching complex patterns.
+
+- `||baddomain.com^$app=/org\.example\.[a-z0-9_]+/` — applies to all apps whose package name starts with `org.example` (e.g. `org.example.app1`, `org.example.utility`, etc.).
+- `||baddomain.com^$app=/^org\.example\.app\$\|^org\.example\.[ab].*/` — applies to `org.example.app` and to any app whose package starts with `org.example.a` or `org.example.b`.
+
+The `$app` modifier supports combining all three types of entries — plain names, wildcards, and regular expressions — within the same rule, but it does not allow combining negated and non-negated expressions together.
+
+- `||example.com^$app=org.example.app|org.example.*|/org\.example\.[a-z]+/` — applies to `org.example.app`, all matching `org.example.*` and `org.example.[a-z]+` apps.
+
 :::caution Restricciones
 
-Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`. Rules with such modifier are considered invalid.
+- Apps in the modifier value cannot include a wildcard inside the string , e.g. `$app=com.*.music`. Use a regular expression instead: `$app=/com\..*\.music/`.
+- You cannot combine negated (`~`) and non-negated expressions in the same `$app` modifier — this would be ambiguous.
 
 :::
 
@@ -439,6 +466,7 @@ Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`. Rule
 
 - Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$app` modifier.
 - On Windows the process name is case-insensitive starting with AdGuard for Windows with [CoreLibs][] v1.12 or later.
+- Support for regular expressions and for combining different types of entries (plain names, wildcards, and regular expressions) in the `$app` modifier is available starting from CoreLibs v1.19 or later.
 
 :::
 
@@ -490,7 +518,7 @@ Las reglas con el modificador `$denyallow` no son compatibles con AdGuard para i
 
 `$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header).
 
-**Sintaxis**
+**Syntax**
 
 El modificador es una lista de una o más expresiones separadas por el símbolo `|`, cada una de las cuales se empareja con un dominio de una manera particular dependiendo de su tipo (ver más abajo).
 
@@ -529,38 +557,23 @@ If you want the rule not to be applied to certain domains, start a domain name w
 
 **`$domain` modifier matching target domain:**
 
-In some cases the `$domain` modifier can match not only the referrer domain, but also the target domain. This happens when all the following conditions are met:
+In some cases the `$domain` modifier can match not only the referrer domain, but also the target domain.
 
-1. The request has the `document` content type
-1. The rule pattern does not match any particular domains
-1. The rule pattern does not contain regular expressions
-1. El modificador `$domain` contiene solo dominios excluidos, p. ej. `$domain=~example.org|~example.com`
+This happens when the rule has one of the following modifiers: [`$cookie`](#cookie-modifier), [`$csp`](#csp-modifier), [`$permissions`](#permissions-modifier), [`$removeparam`](#removeparam-modifier).
 
-The following predicate should be satisfied to perform a target domain matching:
-
-```text
-1 AND ((2 AND 3) OR 4)
-```
-
-That is, if the modifier `$domain` contains only excluded domains, then the rule does not need to meet the second and third conditions to match the target domain against the modifier `$domain`.
-
-If some of the conditions above are not met but the rule contains [`$cookie`](#cookie-modifier) or [`$csp`](#csp-modifier) modifier, the target domain will still be matched.
-
-If the referrer matches a rule with `$domain` that explicitly excludes the referrer domain, then the rule will not be applied even if the target domain also matches the rule. This affects rules with [`$cookie`](#cookie-modifier) and [`$csp`](#csp-modifier) modifiers, too.
+These modifiers will not be applied if the referrer matches a rule with `$domain` that explicitly excludes the referrer domain, even if the target domain also matches the rule.
 
 **Examples**
 
 - `*$cookie,domain=example.org|example.com` will block cookies for all requests to and from `example.org` and `example.com`.
-- `*$document,domain=example.org|example.com` will block all requests to and from `example.org` and `example.com`.
+- `*$document,domain=example.org|example.com` will block requests only from `example.org` and `example.com`, but not to them.
 
 In the following examples it is implied that requests are sent from `http://example.org/page` (the referrer) and the target URL is `http://targetdomain.com/page`.
 
 - `page$domain=example.org` will be matched, as it matches the referrer domain.
-- `page$domain=targetdomain.com` will be matched, as it matches the target domain and satisfies all requirements mentioned above.
-- `||*page$domain=targetdomain.com` will not be matched, as the pattern `||*page` may match specific domains, e.g. `example.page`.
+- `page$domain=targetdomain.com` will not be matched because it does not match the referrer domain.
 - `||*page$domain=targetdomain.com,cookie` will be matched because the rule contains `$cookie` modifier despite the pattern `||*page` may match specific domains.
-- `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
-- `page$domain=targetdomain.com|~example.org` will not be matched because the referrer domain is explicitly excluded.
+- `page$domain=targetdomain.com|~example.org,cookie` will not be matched because the referrer domain is explicitly excluded.
 
 ##### `$domain` modifier limitations {#domain-modifier-limitations}
 
@@ -569,6 +582,8 @@ In the following examples it is implied that requests are sent from `http://exam
 In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries are not supported.
 
 AdGuard for iOS and AdGuard for Safari support the `$domain` modifier but have some limitations. For more details, see the [SafariConverterLib section](#safari-converter--basic--supported-with-limitations).
+
+Rules with `regexp` in the `$domain` modifier are not supported by AdGuard for Safari and AdGuard for iOS.
 
 :::
 
@@ -711,6 +726,8 @@ Rules with the `$popup` modifier are not supported by AdGuard Content Blocker.
 
 Works the same as the [`$~third-party`](#third-party-modifier) modifier, but only treats the request as first-party if the referrer and origin have exactly the same hostname.
 
+Requests without a referrer are also treated as first-party requests, and the rules with the `$strict-first-party` modifier are applied to such requests.
+
 **Examples**
 
 - domain.com$strict-first-party' — this rule applies only to `domain.com`. For example, a request from `domain.com` to `http://domain.com/icon.ico` is a first-party request. A request from `sub.domain.com` to `http://domain.com/icon.ico` is treated as a third-party one (as opposed to the `$~third-party` modifier).
@@ -724,6 +741,8 @@ You can use a shorter name (alias) instead of using the full modifier name: `$st
 :::info Compatibility
 
 Rules with the `$strict-first-party` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.16 or later.
+
+Requests without a referrer are matched by rules with `$strict-first-party` in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.18 or later.
 
 :::
 
@@ -764,17 +783,25 @@ To be considered as such, a third-party request should meet one of the following
 
 **`$third-party`:**
 
-- `||domain.com^$third-party` — this rule applies to all domains, except `domain.com` and its subdomains. An example of a third-party request: `http://example.org/banner.jpg`.
+- `||domain.com^$third-party` — this rule applies to all domains except `domain.com` and its subdomains. The rule is never applied if there is no referrer. An example of a third-party request: `http://example.org/banner.jpg`.
 
-If there is a `$~third-party` modifier, the rule is only applied to the requests that are not from third parties. Which means, they have to be sent from the same domain.
+If there is a `$~third-party` modifier, the rule is only applied to requests that are not from third parties. Which means they have to be sent from the same domain or shouldn't have a referrer at all.
 
 **`$~third-party`:**
 
-- `||domain.com$~third-party` — this rule is applied exclusively to `domain.com`. Example of a non third-party request: `http://domain.com/icon.ico`.
+- `||domain.com$~third-party` — this rule applies only to `domain.com` and its subdomains. Example of a non third-party request: `http://sub.domain.com/icon.ico`.
+
+Requests without a referrer are also treated as non third-party requests and the rules with the `$~third-party` modifier are applied to such requests.
 
 :::note
 
 You may use a shorter name (alias) instead of using the full modifier name: `$3p`.
+
+:::
+
+:::info Compatibility
+
+Requests without a referrer are matched by rules with `$~third-party` in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.18 or later.
 
 :::
 
@@ -1875,7 +1902,7 @@ In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.11 or later, JSONPa
 {
     "elems": [
         {
-            "a": {"b": {"c": 123}},
+            "a": {"b": {"c": 123}}
         },
         {
             "a": {"b": {"c": "abc"}}
@@ -3310,6 +3337,26 @@ Styles that lead to loading any resource are forbidden. Basically, it means that
 CSS rules are not supported by AdGuard Content Blocker.
 
 CSS rules may operate differently [depending on the platform](#cosmetic-rules-priority).
+
+:::
+
+:::info Adblock Plus compatibility
+
+In AdGuard products that use **CoreLibs version 1.18 or later**, you can also use element hiding rules to inject a `remove: true` declaration:
+
+```adblock
+example.org##body { remove: true; }
+```
+
+This usage is discouraged in favor of using [CSS rules](#cosmetic-css-rules) and is only supported for compatibility with filter lists written for Adblock Plus.
+
+Element hiding exceptions (`#@#`) are matched by the selector part only, ignoring the declarations block part. For example, the above rule can be disabled by any of the following exception rules:
+
+```adblock
+example.org#@#body
+example.org#@#body { remove: true; }
+example.org#@#body{remove:true;}
+```
 
 :::
 

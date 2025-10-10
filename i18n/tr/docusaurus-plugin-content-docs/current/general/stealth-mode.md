@@ -5,7 +5,7 @@ sidebar_position: 4
 
 Many websites gather information about their visitors, including their IP address, installed browser and operating system, screen resolution, and even the page from which they were redirected. Some web pages use cookies to mark your browser and save your settings and preferences, or to “recognize” you upon your next visit. **Tracking protection** safeguards your personal information from such data- and statistics-gathering systems.
 
-İzleme koruması ayarlarını ihtiyacınıza göre düzenleyebilirsiniz. For example, you can prevent websites from receiving search engine requests that led you to them. You can automatically delete third-party and first-party cookies. You can also turn off browser geolocation sharing, which can be used to track your location. You can hide your true IP address or replace it with an arbitrary one.
+İzleme koruması ayarlarını ihtiyacınıza göre düzenleyebilirsiniz. For example, you can prevent websites from receiving search engine queries that led you to them. You can automatically delete third-party and first-party cookies. You can also turn off browser geolocation sharing, which can be used to track your location. You can hide your true IP address or replace it with an arbitrary one.
 
 Below, we will list and describe the main features that you can control in the **Tracking protection** settings. The features are organized into the following sections: **General**, **Tracking methods**, **Browser API**,  **Windows tracking**, and **Miscellaneous**.
 
@@ -27,7 +27,7 @@ If you enable this feature, AdGuard will use its AdGuard URL Tracking filter to 
 
 ### Hide search queries {#searchqueries}
 
-This feature hides your search query from websites that you visit via search engine results. For example, when you open a website through a search engine like Google or Yahoo, this feature hides the search query you used to find that website.
+This feature hides your search queries from websites that you visit via search engine results. For example, when you open a website through a search engine like Google or Yahoo, this feature hides the search query you used to find that website.
 
 ### Ask websites not to track me {#donottrack}
 
@@ -165,6 +165,10 @@ These features are only available in AdGuard for Windows.
 
 This feature disables sending technical data about your system and app usage.
 
+### Windows Recall'u devre dışı bırakma {#windowsrecall}
+
+Bu özellik, Windows'un masaüstü etkinliğinizin ekran görüntüsünü almasını ve analiz etmesini önler.
+
 ### Turn off Advertising ID {#advertisingid}
 
 This feature disables Advertising ID to block tracking of your app usage.
@@ -201,7 +205,7 @@ You can also set an arbitrary value for User-Agent by entering it into the Custo
 
 :::note
 
-Android için AdGuard, Windows için AdGuard ve Mac için AdGuard'da mevcuttur.
+Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
 
 :::
 
@@ -215,7 +219,7 @@ You can set an arbitrary IP address, which you would like others to perceive as 
 
 :::note
 
-Android için AdGuard, Windows için AdGuard ve Mac için AdGuard'da mevcuttur.
+Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
 
 :::
 
@@ -239,7 +243,7 @@ AdGuard can modify outgoing packet data so that the client does not fall under t
 
 :::note
 
-Android için AdGuard, Windows için AdGuard ve Mac için AdGuard'da mevcuttur.
+Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
 
 :::
 

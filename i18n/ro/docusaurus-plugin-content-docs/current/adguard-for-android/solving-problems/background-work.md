@@ -173,17 +173,13 @@ Pentru a configura lucrul în fundal al AdGuard pe dispozitivele Xiaomi, trebuie
 
 ## Samsung
 
-Pe multe dispozitive Samsung, orice aplicație care nu este utilizată timp de 3 zile nu va putea să pornească din fundal. You should turn off **Adaptive battery** and **Put apps to sleep** options wherever possible to prevent that. Note that after an app or OS update, these settings often revert to their default values and will need to be turned off again.
+On many Samsung devices, apps that have been unused for three days will not be able to start from the background. To prevent this, you should turn off the **Adaptive Battery** and **Put apps to sleep** options wherever possible. Note that after an app or OS update, these settings often revert to their default values and must be turned off again.
 
 ### Android 11+
 
-On Android 11, Samsung will prevent apps (including AdGuard) from working in background by default unless you exclude them from battery optimizations. To make sure AdGuard will not get killed in the background:
+On Android 11, Samsung prevents apps (including AdGuard) from working in the background by default, unless you exclude them from battery optimizations. To ensure that AdGuard will not be terminated in the background:
 
-1. Lock AdGuard in Recent
-
-    - Open **Recent apps**.
-    - Find AdGuard.
-    - Long-press the icon of the AdGuard app.
+1. Lock AdGuard in **Recent apps**: open **Recent apps**, find AdGuard, and long-press the AdGuard app icon.
 
 1. To keep AdGuard working properly:
 
@@ -195,51 +191,61 @@ On Android 11, Samsung will prevent apps (including AdGuard) from working in bac
 
     ![Samsung](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsung-a11-optimize-2.png)
 
-    On some devices, the relevant setting may be named differently and be located in other places. Among the possible paths is:
+    On some devices, the relevant setting may be named differently and be located in other places. Among the possible paths is **Settings** → **Apps** → (⁝) menu → **Special access** → **Optimize battery usage**. Find AdGuard on the list and uncheck it.
 
-    **Settings** → **Apps** → (⁝) menu → **Special Access** → **Optimize battery usage** → Find AdGuard on the list and uncheck it
+1. Disable automatic optimization:
 
-1. Disable automatic optimization. Pentru a face acest lucru:
+    Open **Battery** → (⁝) menu → **Automation** and toggle off all the settings there.
 
-    Open **Battery** → (⁝) menu → Choose **Automation** → Toggle off all of the settings there
+    Again, the exact path may differ. For example, on some devices you should go to phone **Settings** → **Device care** → (⁝) menu → **Advanced** and isable **Auto optimization** and **Optimize settings**.
 
-    Again, the exact path may differ, for example on some devices you should go to:
+1. If your phone has this option, disable **Adaptive battery**:
 
-    Phone **Settings** → **Device care** → Tap the (⁝) 3-dot menu → **Advanced** → Disable **Auto optimization** and **Optimize settings**
+    Open phone **Settings** → **Battery** → **More battery settings** and toggle off **Adaptive battery**
 
-1. If your phone has it, disable Adaptive battery:
+1. Disable **Sleeping apps** (the exact name of this setting and the path to it may vary depending on the device):
 
-    Open phone **Settings** → **Battery** → **More battery settings** → Toggle off **Adaptive battery**
+    Open phone **Settings** → **Battery** → **Background usage limits** and disable **Put unused apps to sleep**
 
-1. Disable Sleeping apps (the exact name of this setting and the path to it may vary depending on the device):
+If you’re still experiencing issues, try these additional battery optimization adjustments:
 
-    Open phone **Settings** → **Battery** → **Background usage limits** → Disable **Put unused apps to sleep**
+ 1. Navigate to **Settings** → **Apps** → **AdGuard** → **Battery** and turn on the **Optimised** option:
+
+    ![Optimised settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/app__battery_optimised_mode.png)
+
+ 1. Go to **Settings** → **Battery** → **Background usage limits** → **Never auto sleeping apps**:
+
+    ![Never auto sleeping apps settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/background_usage_limits.png)
+
+ 1. Choose AdGuard from the list of apps. If you don’t see it, return to step 1 and make sure that the *Optimized* battery mode is active:
+
+    ![Choose the app *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/never_auto_sleeping_apps.png)
 
 ### Android 9 & 10
 
-- Go to **Phone settings** → **Device care** → Tap on the **Battery** item → (⁝) **3-dot menu** → **Settings** and uncheck **Put unused apps to sleep** and **Auto-disable unused apps**.
+- Go to **Phone settings** → **Device care**, tap the **Battery** item, go to (⁝) **3-dot menu** → **Settings**, and uncheck **Put unused apps to sleep** and **Auto-disable unused apps**.
 
-- Check that **Phone settings** → **Apps** → **Sleep as Android** → **Battery** → **Background restriction** is set to **App can use battery in background** for AdGuard.
+- In **Phone settings** → **Apps** → **Sleep as Android** → **Battery**, check that **Background restriction** is set to **App can use battery in background** for AdGuard.
 
-- Remove AdGuard from Sleeping apps. To do that:
+- Remove AdGuard from **Sleeping apps**:
 
-    1. Go to **Phone settings** → **Device care**
+    1. Go to **Phone settings** → **Device care**:
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung1en.png)
 
-    1. Tap **Battery**
+    1. Tap **Battery**:
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung2en.png)
 
-    1. Tap the **3-dot menu** → **Settings**
+    1. Tap the **3-dot menu** → **Settings**:
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung3en.png)
 
-    1. Tap **Sleeping apps**
+    1. Tap **Sleeping apps**:
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung45en.png)
 
-    1. **Wake up** AdGuard using the trashcan icon
+    1. Wake up AdGuard using the trash can icon:
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung6en.png)
 
@@ -255,7 +261,7 @@ For early Samsung devices, there is no huge need for setting up the background o
 
  ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_2.png)
 
-- Tap on the lock icon
+- Tap the lock icon:
 
  ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_3.png)
 
@@ -267,19 +273,19 @@ Huawei and their Android customization **EMUI** belongs to the most troublesome 
 
 This feature may or may not be available for all devices or may be labeled differently.
 
-1. Go to phone **Settings** → **Battery** → **App launch**
+1. Go to phone **Settings** → **Battery** → **App launch**:
 
     ![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei1en.png)
 
-1. Turn off **Manage all automatically**
+1. Turn off **Manage all automatically**:
 
     ![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei2en.png)
 
-1. Set AdGuard to **Manage manually** and enable all toggles.
+1. Set AdGuard to **Manage manually** and enable all toggles:
 
     ![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei3en.png)
 
-1. Disable **Startup manager** that prevents apps from running automatically after the phone starts up.
+1. Disable **Startup manager** that prevents apps from running automatically after the phone starts up:
 
     Go to **Settings** → **All** → **Startup manager** → Toggle AdGuard off
 
@@ -309,13 +315,13 @@ Unfortunately, this is a system app that can only be fully uninstalled using ADB
 
 It is not confirmed, but it might be possible to just disable PowerGenie in **Phone settings** → **Apps**. If this setting is present in your device's settings, you may skip the following steps. However, it would need to be re-applied every time you reboot your device. If there is no such setting, follow this instruction:
 
-1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer.
 
-1. Connect your phone with a data cable;
+1. Connect your phone with a data cable.
 
 1. Enable [Developer options](https://developer.android.com/studio/debug/dev-options.html);
 
-1. Enable **USB debugging** within Developer options on your phone;
+1. Enable **USB debugging** within Developer options on your phone.
 
 1. Run the following commands on your computer:
 
@@ -323,7 +329,7 @@ It is not confirmed, but it might be possible to just disable PowerGenie in **Ph
 
 `adb shell pm uninstall -k --user 0 com.huawei.android.hwaps`
 
-If AdGuard keeps getting killed, also try running
+If AdGuard keeps getting killed, also try running:
 
 `adb shell pm stopservice hwPfwService`
 
@@ -354,7 +360,7 @@ Old Huawei devices are the easiest to set up, it is enough to perform two simple
 
     ![Huawei recent apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
 
-- Tap on the lock icon:
+- Tap the lock icon:
 
     ![Huawei lock *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
 
@@ -585,3 +591,33 @@ On devices running Realme UI 4.0, there are three key configurations to ensure t
     - Find **AdGuard** and enable the **Always-on VPN** option
 
     ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)
+
+## Motorola
+
+On Motorola devices, there are four key configurations to ensure that AdGuard works properly in the background.
+
+1. Allow background usage:
+
+   - Go to **Settings → Apps** and find **AdGuard**
+   - Open **App battery usage**
+   - Enable **Allow background battery usage**
+   - Tap the option with the toggle
+   - Set battery usage to **Unrestricted**
+
+1. Remove background activity restrictions:
+
+   - Go to **Settings**
+   - Scroll down and tap **Apps & notifications**
+   - Find **AdGuard** and open **Advanced → Battery**
+   - Tap **Background restriction** or **Background limits**
+   - If it says **Background activity restricted**, tap it and then tap **Remove**
+
+1. Manage background apps:
+
+   - Go to **Settings**, then type **Managing background apps** in the search bar
+   - Find **AdGuard** and enable the toggle to allow the app to run in the background
+
+1. Disable Adaptive Battery:
+
+   - Go to **Settings → Battery**
+   - Turn off the **Adaptive Battery** option

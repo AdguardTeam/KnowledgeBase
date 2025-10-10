@@ -134,7 +134,7 @@ Režim _Lokální VPN_ neumožňuje používat AdGuard současně s jinými VPN.
 
 :::note
 
-Please note that DNS filtering will still be active in _Automatic proxy_ routing mode, and your device may not be able to filter DNS requests from specific apps. In _VPN_ routing mode, apps are excluded from the local VPN by system means. Therefore, the system resolver sees which apps are included in the VPN and which are not. It either allows them into the local VPN or lets them bypass it. However, DNS requests come from the system resolver, not the application. In _Automatic proxy_ mode, it is only possible to exclude traffic from applications, not their DNS queries, because AdGuard sees them as system queries.
+Upozorňujeme, že filtrování DNS bude aktivní i v režimu _Automatického proxy serveru_ a zařízení nemusí být schopno filtrovat požadavky DNS z konkrétních aplikací. V režimu směrování _VPN_ jsou aplikace z lokální VPN vyloučeny systémovými prostředky. Řešitel systému proto vidí, které aplikace jsou součástí VPN a které ne. Buď je pustí do lokální VPN, nebo jim umožní ji obejít. Požadavky DNS však přicházejí ze systémového řešitele, nikoli z aplikace. V režimu _Automatický proxy server_ je možné vyloučit pouze provoz z aplikací, nikoli jejich dotazy DNS, protože AdGuard je považuje za systémové dotazy.
 
 :::
 
@@ -146,12 +146,12 @@ V této sekci najdete informace o své licenci a můžete provádět následují
 
 - Zakoupit licenci AdGuardu pro aktivaci [funkcí plné verze](/adguard-for-android/features/free-vs-full)
 - Přihlásit se ke svému AdGuard účtu nebo zadat licenční klíč pro aktivaci licence
-- Zaregistrovat se a aktivovat si 7denní zkušební dobu, pokud jste ji ještě nevyužili
+- Zaregistrujte se a aktivujte si 14denní zkušební období. Aktivační kód lze použít na různých zařízeních a platformách
 - Obnovit stav licence z nabídky se třemi tečkami (⋮)
 - Otevřít AdGuard účet a spravovat v něm své licence
 - Resetovat licenci — například pokud jste dosáhli limitu zařízení pro tuto licenci a chcete použít jinou
 
-![License screen \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![License screen \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/android/settings/licensetab.png)
 
 ## Podpora
 

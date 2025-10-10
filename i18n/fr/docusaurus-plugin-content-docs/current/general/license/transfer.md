@@ -9,22 +9,29 @@ La clef de licence peut être activée sur un [nombre limité d'appareils](../wh
 
 ### Comment délier un appareil
 
-- Cliquez sur *Réinitialiser la licence* ou *Déconnexion* dans une application AdGuard
+#### Méthode 1
 
-- Supprimez l'appareil de votre compte AdGuard :
-    1. Cliquez sur le *Bloqueur AdGuard* dans votre [compte AdGuard](https://adguardaccount.com/).
+Sur l'appareil que vous souhaitez dissocier, ouvrez l'app AdGuard et cliquez sur *Réinitialiser la licence* ou *Se déconnecter*.
 
-        ![Onglet du compte du Bloqueur *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
+#### Méthode 2
 
-    1. Cliquez sur l'appareil que vous souhaitez délier.
+Vous pouvez également supprimer l'appareil dans votre compte AdGuard :
 
-        ![Sélectionnez un appareil *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+1. Accédez à votre [compte AdGuard](https://adguardaccount.com/).
 
-    1. Cliquez sur *Supprimer*.
+1. Ouvrez l'onglet *Bloqueur AdGuard* .
 
-        ![Cliquez sur Supprimer *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+    ![Onglet du compte du Bloqueur *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 
-Après avoir dissocié le nombre d'appareils dont vous avez besoin, vous pouvez vous connecter à votre compte AdGuard sur de nouveaux appareils. La licence y sera liée.
+1. Cliquez sur l'appareil que vous souhaitez délier.
+
+    ![Sélectionnez un appareil *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+
+1. Cliquez sur *Supprimer*.
+
+    ![Cliquez sur Supprimer *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+
+Après avoir dissocié le nombre d'appareils dont vous avez besoin, vous pourrez vous identifier sur de nouveaux appareils. La licence leur sera alors liée.
 
 ## Comment transférer une licence vers un autre compte AdGuard{#transferaccount}
 

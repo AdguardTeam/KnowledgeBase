@@ -11,13 +11,13 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 Der Tab _Schutz_ umfasst die folgenden Funktionen oder Einstellungen. In dieser Wissensdatenbank finden Sie einen ausführlichen Artikel zu jedem dieser Themen.
 
-## Ad blocking
+## Werbeblocker
 
 Einstellungen zum Blockieren von Werbung in Browsern und Apps
 
 [Sperren von Werbung](/adguard-for-android/features/protection/ad-blocking.md)
 
-## Tracking protection
+## Tracking-Schutz
 
 Einstellungen, mit denen Sie Tracking-Tools blockieren können, die Nutzerdaten sammeln
 

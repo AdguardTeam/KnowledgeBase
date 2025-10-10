@@ -41,14 +41,12 @@ Os filtros de bloqueio de anúncios AdGuard incluem:
 - Filtro base do AdGuard
 - Filtro de anúncios para dispositivos móveis do AdGuard
 - Filtros regionais divididos por idiomas: chinês, holandês, francês, alemão, japonês, russo, espanhol, português, turco e ucraniano
-- AdGuard Quick Fixes filter
 
 ### O propósito desses filtros
 
 - O **Filtro base** foi projetado para bloquear anúncios em sites em inglês e aqueles para os quais não há filtro separado. Ele também contém regras gerais de filtragem que se aplicam a todos os sites, independentemente do idioma
 - O **Filtro de anúncios para dispositivos móveis** bloqueia anúncios em versões móveis de sites e em celulares e tablets. Não há segmentação com base no idioma
 - Os **Filtros regionais** seguem a mesma política do **Filtro base**, mas são limitados a sites em determinados idiomas
-- **Quick Fixes filter** used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension.
 
 O objetivo dos filtros de bloqueio de anúncios é bloquear todos os tipos de publicidade em sites, aplicativos e determinados dispositivos que podem carregar anúncios da Internet:
 

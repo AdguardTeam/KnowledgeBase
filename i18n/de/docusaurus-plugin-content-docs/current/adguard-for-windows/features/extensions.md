@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 AdGuard kann die Funktionalität einer Website erheblich erweitern, indem er als [Userskript-Verwaltung](/general/extensions.md) fungiert. Sie können auch Ihre eigenen Skripte hinzufügen und bestehende Skripte verwalten.
 
-![Extensions \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/extensions/extensions.png)
+![Erweiterungen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/extensions/extensions.png)
 
 **Benutzerskripte automatisch erkennen**
 
@@ -19,7 +19,7 @@ Wenn diese Option aktiviert ist, definiert AdGuard automatisch Browser-Anfragen 
 
 Die folgenden Erweiterungen werden mit AdGuard installiert:
 
-![Preinstalled userscripts \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/extensions/extensions_enabled.png)
+![Vorinstallierte Benutzerskripte \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/extensions/extensions_enabled.png)
 
 **AdGuard-Assistent**
 

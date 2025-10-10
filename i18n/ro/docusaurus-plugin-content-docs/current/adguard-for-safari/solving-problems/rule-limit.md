@@ -31,6 +31,6 @@ Cu toate acestea, **o extensie poate conține până la 150.000 de reguli**. Dac
 1. Deschide aplicația AdGuard pentru Safari.
 2. Derulează în jos și apasă _Blocante de conținut_.
 3. Sub fiecare blocant de conținut, poți vedea filtrele activate și numărul de reguli active.
-    ![Blocante de conținut](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
+   ![Blocante de conținut](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
 
 Dacă mai mult de 150.000 de reguli sunt activate într-un blocant de conținut, poate fi necesar să dezactivezi unele filtre sau reguli utilizator din acesta. Mergi la _Filtre_, selectează categoria problematică și dezactivează filtrele sau regulile utilizator de care nu ai nevoie.

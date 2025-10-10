@@ -65,6 +65,12 @@ Aktivieren Sie diese Funktion, wenn Sie möchten, dass AdGuard automatisch Filte
 
 Ist diese Option aktiviert, filtert AdGuard zusätzlich zu den anderen Anfragetypen auch Anfragen, die über HTTP/3 gesendet werden.
 
+**Einschränkungen**:
+
+- Chromebasierte Browser akzeptieren keine Benutzerzertifikate, daher wird HTTP/3-Filterung in ihnen nicht unterstützt.
+- Firefox-basierte Browser verhalten sich standardmäßig ähnlich, aber Sie können die Option `network.http.http3.disable_when_third_party_roots_found` in `about:config` auf `false` setzen, um Benutzerzertifikate für HTTP/3 zuzulassen.
+- Safari unterstützt HTTP/3-Filterung ohne zusätzliche Konfiguration.
+
 ### Umleitungstreiber-Modus verwenden
 
 Wenn diese Option aktiviert ist, fängt AdGuard den gesamten Datenverkehr ab und leitet ihn zur weiteren Filterung an den lokalen Proxy-Server weiter.

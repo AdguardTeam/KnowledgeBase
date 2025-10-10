@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 Das Modul _Netzwerk_ ist der Netzwerkfilterung gewidmet, und hier finden Sie zusätzliche netzwerkbezogene Optionen. Zwei davon sind standardmäßig aktiviert: _Datenverkehrsfilterung aktivieren_ und _HTTPS filtern_. Dies sind wichtige zusätzliche Vorsichtsmaßnahmen, um Ihren Webspace besser zu filtern. Die meisten Websites verwenden jetzt HTTPS, und dies gilt auch für die Werbung. Von vielen Websites, wie youtube.com, facebook.com und x.com, ist es unmöglich, Werbung ohne HTTPS-Filterung zu entfernen. Lassen Sie also die Funktion _HTTPS filtern_ aktiviert, es sei denn, Sie haben einen triftigen Grund, dies nicht zu tun.
 
-![Network Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/network/network_settings.png)
+![Netzwerkeinstellungen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 
 In diesem Modul können Sie das Kontrollkästchen _AdGuard als HTTP-Proxy verwenden_ aktivieren, um AdGuard als regulären HTTP-Proxy zu verwenden, der den gesamten Datenverkehr filtert, der ihn durchläuft. Sie können auch die Funktion _Websites mit EV-Zertifikaten filtern_ aktivieren. Extended Validation (EV) SSL-Zertifikate bieten eine stärkere Sicherheitsgarantie; die Inhaber solcher Websites müssen ein gründliches und weltweit standardisiertes Identitätsprüfungsverfahren durchlaufen, das durch EV-Richtlinien definiert ist. Daher werden Websites mit solchen Zertifikaten vertraut und nicht gefiltert.
 

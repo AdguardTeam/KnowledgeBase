@@ -38,7 +38,6 @@ In diesem Artikel geht es um die Filter, die wir für AdGuard und andere Werbebl
 - **Experimenteller Filter** dient dazu, einige neue Filterregeln zu testen, die möglicherweise Konflikte verursachen und die Funktionalität von Websites beeinträchtigen können. Wenn diese Regeln ohne Probleme funktionieren, werden sie zu den Hauptfiltern hinzugefügt. [Regeln anzeigen](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_5_Experimental/filter.txt)
 - **Filter gegen mobile Werbung** sperrt Werbung auf mobilen Geräten. Enthält alle bekannten mobilen Werbenetzwerke. [Regeln anzeigen](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt)
 - **DNS-Filter** — setzt sich aus mehreren anderen Filtern zusammen (AdGuard Basisfilter, Social-Media-Filter, Spyware Filter, Filter gegen mobile Werbung, EasyList und EasyPrivacy) und wurde speziell vereinfacht, um besser mit dem Sperren von Werbung auf DNS-Ebene kompatibel zu sein. Dieser Filter wird von [AdGuard DNS](https://adguard-dns.io/kb)-Servern verwendet, um Werbung und Tracking zu sperren. [Regeln anzeigen](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt)
-- **Quick Fixes-Filter** wird verwendet, um schnell kritische Probleme bei der Filterung von Inhalten auf beliebten Websites zu beheben, ohne die MV3-Erweiterung zu aktualisieren. [Regeln anzeigen](https://filters.adtidy.org/extension/chromium-mv3/filters/24.txt)
 
 ## AdGuard-Filterrichtlinie
 

@@ -21,19 +21,19 @@ La antigua extensión beta cambiará de nombre a [**Bloqueador AdGuard MV2**](ht
 
 - **Registro de filtrado**
 
-    ![Registro de filtrado \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+  ![Registro de filtrado \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-    Debido a las restricciones del DNR, no podemos mostrar exactamente qué regla funcionó, pero proporcionaremos una “regla asumida que se activó” según nuestro motor. Para obtener información precisa, deberás instalar la forma “descomprimida” de la extensión en tu navegador. Encontrarás instrucciones detalladas sobre cómo hacer esto en un [artículo separado](/adguard-browser-extension/solving-problems/debug-rules/).
+  Debido a las restricciones del DNR, no podemos mostrar exactamente qué regla funcionó, pero proporcionaremos una “regla asumida que se activó” según nuestro motor. Para obtener información precisa, deberás instalar la forma “descomprimida” de la extensión en tu navegador. Encontrarás instrucciones detalladas sobre cómo hacer esto en un [artículo separado](/adguard-browser-extension/solving-problems/debug-rules/).
 
 - _Protección de seguimiento_ (antes conocida como _Modo oculto_)
 
-    ![Protección contra el seguimiento \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+  ![Protección contra el seguimiento \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
 
-    No hay una sección de _Cookies_, junto con _Autodestrucción de cookies propias_ y _Autodestrucción de cookies de terceros_, ya que no podemos establecer el TTL de las cookies mediante reglas declarativas.
+  No hay una sección de _Cookies_, junto con _Autodestrucción de cookies propias_ y _Autodestrucción de cookies de terceros_, ya que no podemos establecer el TTL de las cookies mediante reglas declarativas.
 
 - La _Protección contra phishing y malware_ ya no está disponible en la configuración general. Para protegerte de sitios web maliciosos y estafas, habilita los filtros de _Seguridad_ adecuados en la pestaña _Filtros_.
 
-    ![Seguridad \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![Seguridad \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## Limitaciones
 
@@ -55,7 +55,7 @@ El número máximo de filtros habilitados simultáneamente es **50**.
 
 **Reglas dinámicas:** se impone un límite estricto de **5 000** reglas, que incluye un máximo de 1 000 reglas de expresiones regulares.
 
-Si se supera este límite, sólo se aplicarán **5.000 reglas convertidas** en el siguiente orden: primero Allowlist, luego Reglas del usuario, filtros personalizados y, por último, el filtro Quick Fixes.
+If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules and finally Custom filters.
 
 > **Las reglas convertidas** son reglas que se han transformado
 > a \[formato DNR] usando el [convertidor declarativo][github-declarative-converter].

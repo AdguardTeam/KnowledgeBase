@@ -43,89 +43,89 @@ curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/nightly/inst
 
 1. После установки введите:
 
-    ```sh
-    adguard-cli activate
-    ```
+   ```sh
+   adguard-cli activate
+   ```
 
 2. Затем выберите нужную опцию:
 
-    ![adguard-cli activate \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation1.png)
+   ![adguard-cli activate \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/1activate.png)
 
 3. Перейдите по ссылке, чтобы активировать лицензию:
 
-    ![Активировать лицензию \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation2.png)
+   ![Activate license \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/2activate_link.png)
 
 4. После активации вы можете продолжить пользоваться программой:
 
-    ![Успешная активация \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation3.png)
+   ![Successful activation \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/3activate_success.png)
 
 5. Вы также можете сбросить лицензию, введя:
 
-    ```sh
-    adguard-cli reset-license
-    ```
+   ```sh
+   adguard-cli reset-license
+   ```
 
-    или просмотреть информацию о лицензии, введя
+   или просмотреть информацию о лицензии, введя
 
-    ```sh
-    adguard-cli license
-    ```
+   ```sh
+   adguard-cli license
+   ```
 
 6. Теперь нужно настроить AdGuard CLI. Для запуска мастера настройки введите:
 
-    ```sh
-    adguard-cli configure
-    ```
+   ```sh
+   adguard-cli configure
+   ```
 
-    ![Установка \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation4.png)
+   ![Setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/4configure.png)
 
-    Мастер задаст основные вопросы, необходимые для первоначальной настройки.
+   Мастер задаст основные вопросы, необходимые для первоначальной настройки.
 
 7. После этого вы можете запустить защиту AdGuard, введя
 
-    ```sh
-    adguard-cli start
-    ```
+   ```sh
+   adguard-cli start
+   ```
 
-    ![Включить защиту \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation5.png)
+   ![Start protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/5start.png)
 
 8. Вы можете проверить статус защиты, используя:
 
-    ```sh
-    adguard-cli status
-    ```
+   ```sh
+   adguard-cli status
+   ```
 
-    и остановить её с помощью:
+   и остановить её с помощью:
 
-    ```sh
-    adguard-cli stop
-    ```
+   ```sh
+   adguard-cli stop
+   ```
 
-    ![Остановить защиту \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+   ![Stop protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/6status-stop.png)
 
 9. Чтобы просмотреть текущую конфигурацию, введите:
 
-    ```sh
-    adguard-cli config show
-    ```
+   ```sh
+   adguard-cli config show
+   ```
 
-    ![Текущая настройка \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+   ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/7config_show.png)
 
-    Также будет показан путь к файлу конфигурации, который можно и нужно редактировать напрямую. В нём содержатся описания всех дополнительных опций.
+   Также будет показан путь к файлу конфигурации, который можно и нужно редактировать напрямую. В нём содержатся описания всех дополнительных опций.
 
-    Или вы можете использовать команды:
+   Или вы можете использовать команды:
 
-    ```sh
-    adguard-cli config get
-    ```
+   ```sh
+   adguard-cli config get
+   ```
 
-    или:
+   или:
 
-    ```sh
-    adguard-cli config set
-    ```
+   ```sh
+   adguard-cli config set
+   ```
 
-    Однако в первую очередь они предназначены для написания скриптов.
+   Однако в первую очередь они предназначены для написания скриптов.
 
 Чтобы сбросить лицензию, введите:
 

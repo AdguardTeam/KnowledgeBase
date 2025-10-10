@@ -17,7 +17,7 @@ sidebar_position: 3
 
 Помимо этого, веб-расширение AdGuard для Safari можно использовать, чтобы управлять приложением AdGuard для iOS прямо из браузера. Нажмите на кнопку *Расширения* — это иконка с пазлом, которая может быть расположена левее или правее адресной строки, в зависимости от типа вашего устройства. Найдите в списке расширений **AdGuard** и нажмите на него.
 
-![Меню веб-расширения *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/ext_adguard_ru.png)
+![Меню веб-расширения *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/open-safari-assistant.jpg)
 
 > На устройствах iPad веб-расширение AdGuard для Safari доступно напрямую — просто нажмите на иконку AdGuard в адресной строке браузера.
 
@@ -41,35 +41,41 @@ sidebar_position: 3
 
 Веб-расширение не является самостоятельным инструментом и требует наличия AdGuard для iOS. Если на вашем устройстве не установлен AdGuard для iOS, пожалуйста, сначала [установите его](../installation) и выполните первый запуск приложения, чтобы подготовить его к работе.
 
-После того, как вы выполнили эти действия, откройте раздел *Настройки → Safari → Расширения*.
+После этого откройте приложение *Настройки* и прокрутите вниз до *Приложений*.
 
-![Выберите "Safari" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings1_ru.png)
+![Выберите Приложения *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/apps.jpg)
 
-![Выберите "Расширения" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings2_ru.png)
+Затем откройте *Safari* → *Расширения*.
 
-Найдите раздел **Разрешить эти расширения** и выберите **AdGuard** среди доступных расширений. Нажмите на него и включите переключатель.
+![Выберите Safari *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings1_en.png)
 
-![Выберите "AdGuard" в разделе РАЗРЕШИТЬ ЭТИ РАСШИРЕНИЯ *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_ru.png)
+![Выберите Расширения *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings2_en.png)
 
-Коснитесь его, затем включите переключатель. На том же экране установите разрешение *Все сайты* для AdGuard на *Разрешить* или *Спрашивать*. Если вы выберете *Разрешить*, вам не придётся давать разрешение каждый раз, когда вы посещаете новый сайт. Если вы не уверены, выберите *Спрашивать*, чтобы выдавать разрешения для каждого сайта.
+Найдите раздел **Разрешить эти расширения** и выберите **AdGuard** среди доступных расширений.
 
-![Настройки расширения *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_ru.png)
+![Выберите AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/select-ag.jpg)
+
+Нажмите на него и включите *Разрешить расширение*.
+
+Ниже на том же экране убедитесь, что значение *Разрешить* или *Спрашивать* установлено для *всех сайтов*. Если вы выберете *Разрешить*, вам не придётся давать разрешение каждый раз, когда вы посещаете новый сайт. Если вы не уверены, выберите *Спрашивать*, чтобы выдавать разрешения для каждого сайта.
+
+![Расширение AdGuard в Настройках *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ag-webext-in-settings.png)
 
 ### В Safari
 
-Вы также можете включить расширение AdGuard в браузере Safari. Для этого нажмите *Расширения* (если этого раздела нет рядом с адресной строкой, нажмите на иконку `aA`).
+Чтобы включить расширение AdGuard прямо из браузера Safari, нажмите на иконку слева от поля URL:
 
-![В Safari коснитесь значка aA * mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari1_ru.png)
+![В Safari нажмите на иконку слева от поля URL *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari3_ru.png)
 
-Затем найдите опцию *Управлять расширениями* и выберите её. В открывшемся окне активируйте переключатель **AdGuard**.
+Затем нажмите *Управление расширениями*.
 
-![Расширения *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari2_ru.png)
+![Расширения *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-2.jpg)
 
-![Расширения *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari3_ru.png)
+В открывшемся окне включите переключатели AdGuard. Верхний — это веб-расширение AdGuard, а остальные шесть — блокировщики контента, необходимые для фильтрации.
 
-Если вы используете этот метод, вам всё равно может потребоваться открыть настройки Safari, чтобы выдать расширению AdGuard необходимые разрешения.
+![Расширения *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-3.jpg)
 
-Теперь AdGuard должен появиться среди доступных расширений в Safari. Нажмите на него, а затем на жёлтую иконку с символом **i**. Включите **Расширенную защиту**, нажав кнопку *Включить* и подтвердив действие.
+Теперь AdGuard должен появиться среди доступных расширений в Safari. Чтобы включить **Расширенную защиту**, откройте расширение AdGuard, нажмите на жёлтую иконку **i**, нажмите *Включить* и подтвердите действие.
 
 :::note
 

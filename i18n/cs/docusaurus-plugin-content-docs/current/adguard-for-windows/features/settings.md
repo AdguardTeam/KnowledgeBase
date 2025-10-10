@@ -11,15 +11,15 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 _Nastavení_ je část, která vyžaduje největší pozornost. Zde můžete program nakonfigurovat tak, aby plně vyhovoval vašim požadavkům: blokujte pouze to, co vám vadí, používejte DNS server důvěryhodného poskytovatele, odstraňujte soubory cookies třetích stran atd.
 
-![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/general_settings.png)
-
 ### Obecná nastavení
 
 Zde můžete nastavit jazyk a motiv (tmavý nebo světlý), povolit spouštění AdGuardu při startu systému a tiché automatické aktualizace, vybrat aktualizační kanál a interval kontroly aktualizací filtrů. Pokud AdGuard pro Windows nefunguje správně a tým podpory vás požádal, abyste [shromáždili _Protokoly ladění_](/adguard-for-windows/solving-problems/adguard-logs.md), přejděte do Nastavení.
 
-![Advanced Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/advanced_settings.png)
+![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/general_settings.png)
 
 Úplně dole na obrazovce najdete _Pokročilá nastavení_. Bezmyšlenkovitá změna některých z nich může potenciálně způsobit problémy s výkonem AdGuardu, přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto část byste měli otevřít pouze v případě, že jste si jisti tím, co děláte, nebo pokud se vás na to zeptal náš tým podpory. Pokud chcete vědět, co lze nastavit v _Pokročilém nastavení_, přečtěte si [specializovaný článek](/adguard-for-windows/solving-problems/low-level-settings.md).
+
+![Advanced Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/advanced_settings.png)
 
 ### Blokování reklam
 
@@ -46,9 +46,9 @@ Mnoho webových stránek shromažďuje informace o svých návštěvnících, na
 
 ![Tracking protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection.png)
 
-Práci v Režimu utajení můžete flexibilně nastavit: můžete například zakázat, aby webová stránka obdržela požadavek na vyhledávání, který jste použili k jejímu nalezení na internetu, automaticky vymazat soubory cookies třetích stran i vlastní soubory cookies webové stránky a zakázat sdílení polohy ve vašem prohlížeči, které lze použít ke sledování vaší polohy.
+Práci v _Ochraně před sledováním_ můžete flexibilně nastavit: můžete například zakázat, aby webová stránka obdržela požadavek na vyhledávání, který jste použili k jejímu nalezení na internetu, automaticky vymazat soubory cookies třetích stran i vlastní soubory cookies webové stránky a zakázat sdílení polohy ve vašem prohlížeči, které lze použít ke sledování vaší polohy.
 
-Chcete-li se dozvědět vše o Režimu utajení a jeho mnoha možnostech, přečtěte si [tento článek](/general/stealth-mode).
+Chcete-li se dozvědět vše o _Ochraně před sledováním_ a mnoha možnostech, přečtěte si [tento článek](/general/stealth-mode).
 
 ### Bezpečné prohlížení
 
@@ -85,7 +85,7 @@ Od verze 7.20 můžete také přidávat filtry jednoduchým výběrem ze seznamu
 
 Existuje několik webových stránek, ke kterým by měl být omezen přístup z PC používaného dětmi. Tento úkol zajišťuje _Rodičovská ochrana_.
 
-![Parental Control \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/parental_control.png)
+![Parental control \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/parental_control.png)
 
 Modul kontroluje obsah webových stránek otevřených v prohlížeči a filtruje ty, jejichž obsah je pro děti nežádoucí: obrázky a texty pro dospělé, hrubý jazyk, násilí, propagace drog atd. Nastavení Rodičovské ochrany jsou zabezpečena heslem, takže dítě nemůže obejít omezení. Tento modul nejenže blokuje vstup na nežádoucí stránky, ale také dokáže z výsledků vyhledávání odstranit odkazy, které jsou nevhodné pro děti.
 
