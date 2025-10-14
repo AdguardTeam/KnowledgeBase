@@ -3495,6 +3495,7 @@ domain.com/path##selector
 ```
 
 This is equivalent to:
+
 ```text
 [$path=/path]domain.com##selector
 ```
@@ -3502,17 +3503,19 @@ This is equivalent to:
 **Examples**
 
 - `example.org/checkout##.promo-banner` — hides `.promo-banner` elements only on checkout pages
-- `news.site.com/article##.sidebar-ad` — hides sidebar ads only on article pages  
+- `news.site.com/article##.sidebar-ad` — hides sidebar ads only on article pages
 - `shop.com/product,~shop.com/product/reviews##.upsell` — hides upsell blocks on product pages but not on review pages
 
 **Multiple domains**
 
 Path-in-domain syntax works with multiple domains:
+
 - `domain1.com,example.org/path##.banner` — applies to all pages on `domain1.com` and only `/path` pages on `example.org`
 
 **Regex domains**
 
 Path-in-domain syntax is also supported for regex domains:
+
 - `/example\.org\/article\d+/##.ad` — hides ads on article pages with numeric IDs
 
 **All cosmetic rule types**
@@ -4785,6 +4788,7 @@ Such rules with `$domain` modifier are supported by AdGuard for Windows, AdGuard
 :::tip Alternative syntax
 
 For cosmetic rules, you can use a simplified [path-in-domain syntax](#cosmetic-path-in-domain) instead of the `$path` modifier:
+
 - `example.org/path##.banner` instead of `[$path=/path]example.org##.banner`
 
 :::
