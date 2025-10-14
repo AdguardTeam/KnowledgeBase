@@ -3312,6 +3312,7 @@ The rules described in this section are created specifically for this purpose.
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [Element hiding](#cosmetic-elemhide-rules) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [CSS rules](#cosmetic-css-rules) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [Path-in-domain syntax](#cosmetic-path-in-domain) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [Extended CSS](#extended-css-selectors) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [HTML filtering](#html-filtering-rules) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
 | [JavaScript](#javascript-rules) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
@@ -3480,6 +3481,70 @@ example.org#@#body
 example.org#@#body { remove: true; }
 example.org#@#body{remove:true;}
 ```
+
+:::
+
+### Path-in-domain syntax {#cosmetic-path-in-domain}
+
+AdGuard supports a simplified syntax for cosmetic rules that need to be applied only on specific paths of a website. Instead of using the `$path` modifier, you can specify the path directly in the domain part of the rule.
+
+**Syntax**
+
+```text
+domain.com/path##selector
+```
+
+This is equivalent to:
+```text
+[$path=/path]domain.com##selector
+```
+
+**Examples**
+
+- `example.org/checkout##.promo-banner` — hides `.promo-banner` elements only on checkout pages
+- `news.site.com/article##.sidebar-ad` — hides sidebar ads only on article pages  
+- `shop.com/product,~shop.com/product/reviews##.upsell` — hides upsell blocks on product pages but not on review pages
+
+**Multiple domains**
+
+Path-in-domain syntax works with multiple domains:
+- `domain1.com,example.org/path##.banner` — applies to all pages on `domain1.com` and only `/path` pages on `example.org`
+
+**Regex domains**
+
+Path-in-domain syntax is also supported for regex domains:
+- `/example\.org\/article\d+/##.ad` — hides ads on article pages with numeric IDs
+
+**All cosmetic rule types**
+
+Path-in-domain syntax works with all types of cosmetic rules:
+
+```adblock
+! Element hiding
+example.org/path##.banner
+
+! Element hiding exception  
+example.org/path#@#.banner
+
+! CSS injection
+example.org/path#$#.banner { display: block !important; }
+
+! HTML filtering
+example.org/path$$script[src*="ads"]
+
+! HTML filtering exception
+example.org/path$@$script[src*="ads"]
+
+! JavaScript rules
+example.org/path#%#//scriptlet('abort-on-property-read', 'ads')
+
+! JavaScript exception
+example.org/path#@%#//scriptlet('abort-on-property-read', 'ads')
+```
+
+:::info Compatibility
+
+Path-in-domain syntax has been introduced in [CoreLibs] v1.21.
 
 :::
 
@@ -4716,6 +4781,13 @@ Such rules with `$domain` modifier are supported by AdGuard for Windows, AdGuard
 ### **`$path`** {#non-basic-path-modifier}
 
 `$path` modifier limits the rule application area to specific locations or pages on websites.
+
+:::tip Alternative syntax
+
+For cosmetic rules, you can use a simplified [path-in-domain syntax](#cosmetic-path-in-domain) instead of the `$path` modifier:
+- `example.org/path##.banner` instead of `[$path=/path]example.org##.banner`
+
+:::
 
 **Syntax**
 
