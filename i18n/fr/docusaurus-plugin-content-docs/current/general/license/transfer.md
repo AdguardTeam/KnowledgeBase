@@ -11,15 +11,15 @@ La clef de licence peut être activée sur un [nombre limité d'appareils](../wh
 
 #### Méthode 1
 
-On the device that you want to unbind, open the AdGuard app and click *Reset license* or *Log out*.
+Sur l'appareil que vous souhaitez dissocier, ouvrez l'app AdGuard et cliquez sur *Réinitialiser la licence* ou *Se déconnecter*.
 
 #### Méthode 2
 
-As an alternative, you can remove the device in your AdGuard account:
+Vous pouvez également supprimer l'appareil dans votre compte AdGuard :
 
-1. Log in to your [AdGuard account](https://adguardaccount.com/).
+1. Accédez à votre [compte AdGuard](https://adguardaccount.com/).
 
-1. Open *AdGuard Ad Blocker* tab.
+1. Ouvrez l'onglet *Bloqueur AdGuard* .
 
     ![Onglet du compte du Bloqueur *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 
@@ -31,7 +31,7 @@ As an alternative, you can remove the device in your AdGuard account:
 
     ![Cliquez sur Supprimer *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
 
-After you have unbound the number of devices you need, you will be able log in on new devices. The license will become bound to them.
+Après avoir dissocié le nombre d'appareils dont vous avez besoin, vous pourrez vous identifier sur de nouveaux appareils. La licence leur sera alors liée.
 
 ## Comment transférer une licence vers un autre compte AdGuard{#transferaccount}
 
