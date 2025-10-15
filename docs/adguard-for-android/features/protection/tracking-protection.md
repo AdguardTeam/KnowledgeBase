@@ -9,13 +9,13 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-The Tracking protection module can be accessed by tapping the *Protection* tab (second-left icon at the bottom of the screen) and then selecting *Tracking protection*.
+To access the Tracking protection module, tap the *Protection* tab (the second icon from the bottom of the screen) and then select *Tracking protection*.
 
-*Tracking protection* (formerly known as *Stealth Mode*) prevents websites from collecting information about you, such as your IP addresses, information about your browser and operating system, screen resolution, and the page you came or were redirected from. It can also block cookies that websites use to mark your browser, save your personal settings and user preferences, or recognize you on your next visit.
+*Tracking protection* (formerly *Stealth Mode*) prevents websites from collecting information about you, such as your IP address, information about your browser and operating system, screen resolution, and the page you came or were redirected from. It can also block cookies that websites use to mark your browser, save your personal settings and user preferences, or recognize you on your next visit.
 
 ![Tracking protection *mobile_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
 
-*Tracking protection* has three pre-configured levels of privacy protection (*Standard*, *High*, and *Extreme*) and one user-defined level (*Custom*).
+*Tracking protection* has three pre-configured privacy protection levels (*Standard*, *High*, and *Extreme*) and one user-defined level (*Custom*).
 
 Here are the active features of the pre-configured levels:
 
@@ -23,7 +23,7 @@ Here are the active features of the pre-configured levels:
 
     a. *Block trackers*. This feature uses *AdGuard Tracking Protection filter* to protect you from online counters and web analytics tools
 
-    b. *Ask websites not to track you*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+    b. *Ask websites not to track me*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
 
     c. *Remove X-Client-Data header*. This feature prevents Google Chrome from sending information about its version and modifications to Google domains (including DoubleClick and Google Analytics)
 
@@ -33,11 +33,11 @@ Here are the active features of the pre-configured levels:
 
     b. *Remove tracking parameters from URLs*. This feature uses *AdGuard URL Tracking filter* to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
 
-    c. *Hide your search queries*. This feature hides queries for websites visited from a search engine
+    c. *Hide search queries*. This feature hides your searches from websites visited through search engine results
 
-    d. *Ask websites not to track you*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+    d. *Ask websites not to track me*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
 
-    e. *Self-destruction of third-party cookies*. This feature limits the lifetime of third-party cookies to 180 minutes
+    e. *Delete third-party cookies*. This feature limits the lifetime of third-party cookies to 180 minutes and prevents advertisers from tracking your behavior across multiple pages
 
     :::caution
 
@@ -53,11 +53,11 @@ Here are the active features of the pre-configured levels:
 
     b. *Remove tracking parameters from URLs*. This feature uses *AdGuard URL Tracking filter* to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
 
-    c. *Hide your search queries*. This feature hides queries for websites visited from a search engine
+    c. *Hide search queries*. This feature hides your searches from websites visited through search engine results
 
-    d. *Ask websites not to track you*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+    d. *Ask websites not to track me*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
 
-    e. *Self-destruction of third-party cookies*. This feature limits the lifetime of third-party cookies to 180 minutes
+    e. *Delete third-party cookies*. This feature limits the lifetime of third-party cookies to 180 minutes and prevents advertisers from tracking your behavior across multiple pages
 
     :::caution
 
@@ -65,16 +65,16 @@ Here are the active features of the pre-configured levels:
 
     :::
 
-    f. *Block WebRTC*. This feature blocks WebRTC, a known vulnerability that can leak your real IP address even if you use a proxy or VPN
+    f. *Block WebRTC*. This feature blocks WebRTC that can leak your real IP address even if you use a proxy or VPN. Some messengers, streaming platforms, or games may stop working properly
 
-    g. *Block Push API*. This feature prevents your browsers from receiving push messages from servers
+    g. *Block Push API*. This feature blocks push notifications from websites
 
     h. *Block Location API*. This feature prevents browsers from accessing your GPS data and determining your location
 
     i. *Hide Referer from third parties*. This feature prevents third parties from knowing which websites you visit. It hides the HTTP header that contains the URL of the initial page and replaces it with a default or custom one that you can set
 
-    j. *Hide your User-Agent*. This feature removes identifying information from the User-Agent header, which typically includes the name and version of the browser, the operating system, and language settings
+    j. *Hide User-Agent*. This feature removes identifying information from the User-Agent header, which typically includes the name and version of the browser, the operating system, and language settings
 
     k. *Remove X-Client-Data header*. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
 
-You can tweak individual settings in *Tracking protection* and come up with a custom configuration. Every setting has a description that will help you understand its role. [Read more about what the various *Tracking protection* settings do](/general/stealth-mode) and utilize them cautiously, as some may interfere with the functionality of websites and browser extensions.
+You can tweak individual settings in *Tracking protection* to create a custom configuration. Each setting has a description to help you understand its purpose. [Read more about various *Tracking protection* settings](/general/stealth-mode) and use them cautiously, as some may interfere with the functionality of websites and browser extensions.
