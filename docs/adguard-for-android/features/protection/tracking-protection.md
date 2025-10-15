@@ -13,7 +13,7 @@ To access the Tracking protection module, tap the *Protection* tab (the second i
 
 *Tracking protection* (formerly *Stealth Mode*) prevents websites from collecting information about you, such as your IP address, information about your browser and operating system, screen resolution, and the page you came or were redirected from. It can also block cookies that websites use to mark your browser, save your personal settings and user preferences, or recognize you on your next visit.
 
-![Tracking protection *mobile_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
+![Tracking protection *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/tracking_protection.png)
 
 *Tracking protection* has three pre-configured privacy protection levels (*Standard*, *High*, and *Extreme*) and one user-defined level (*Custom*).
 
