@@ -3019,14 +3019,14 @@ Rules with the `$urltransform` modifier are supported by AdGuard for Windows, Ad
 
 #### **`$reason`** {#reason-modifier}
 
-`$reason` modifier allows you to add a custom explanation message that will be displayed on the blocking page when a request is blocked by this rule.
-This modifier works only with `$document` content-type modifier.
+The `$reason` modifier allows you to add a custom explanation message that will be displayed on the blocking page when a request is blocked by this rule.
+This modifier only works with the `$document` content-type modifier.
 
 **Character limitations and escaping requirements:**
 
 - There is no maximum length limit for the reason text
 - All characters are allowed in the reason text
-- Special characters (such as quotes, commas, and backslashes) should be properly escaped using backslash `\`
+- Special characters (such as quotes, commas, and backslashes) must be properly escaped using the backslash (`\`)
 
 **Predefined localizable tokens:**
 
@@ -3049,7 +3049,7 @@ Instead of custom text, you can use predefined tokens that will be automatically
 
 :::info Compatibility
 
-Rules with `$reason` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.20 or later and not supported by AdGuard Content Blocker.
+AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with CoreLibs v1.20 or later support rules with the `$reason` modifier. AdGuard Content Blocker does not support these rules.
 
 :::
 
