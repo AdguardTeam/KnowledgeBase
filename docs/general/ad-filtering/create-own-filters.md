@@ -2933,7 +2933,7 @@ In the `$urltransform` value, two characters must be escaped: the comma `,` and 
 
 :::info Compatibility
 
-AdGuard products which use a version of [CoreLibs] older than 1.20 only support a single
+AdGuard products that use a [CoreLibs] version older than 1.20 only support a single
 `substitute` transformation for the value of the `$urltransform` modifier.
 
 :::
