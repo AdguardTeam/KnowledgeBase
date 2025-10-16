@@ -57,7 +57,7 @@ Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me
 
 #### SponsorBlock
 
-From v7.22, AdGuard for Windows is capable of running scripts in SPA websites, such as YouTube. This enhancement also allows us to confidently recommend the SponsorBlock userscript. 
+From v7.22, AdGuard for Windows is capable of running scripts in SPA websites, such as YouTube. This enhancement also allows us to confidently recommend the SponsorBlock userscript.
 
 SponsorBlock skips sponsored segments in YouTube videos. It saves time by jumping straight to the main content and removes interruptions from ads and self-promotions.
 
