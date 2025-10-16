@@ -2925,7 +2925,7 @@ decode = "b64" | "pct"
 - **`substitute`** is similar to replacement with regular expressions [in Perl](https://perldoc.perl.org/perlrequick.html#Search-and-replace).
     - **`regexp`** — a regular expression.
     - **`replacement`** — a string that replaces whatever is matched by `regexp`. `$1`, `$2`, etc. in the replacement string are replaced with the contents of the corresponding capture group.
-    - **`modifiers`** — regular expression flags, e.g. `i` for case-insensitive search.
+    - **`modifiers`** — regular expression flags, e.g., `i` for case-insensitive search.
 - **`b64`** — decodes a [Base64-encoded](https://datatracker.ietf.org/doc/html/rfc4648) string, both the default and the URL-safe alphabets are supported.
 - **`pct`** — decodes a [percent-encoded](https://datatracker.ietf.org/doc/html/rfc3986#section-2.1) string.
 
