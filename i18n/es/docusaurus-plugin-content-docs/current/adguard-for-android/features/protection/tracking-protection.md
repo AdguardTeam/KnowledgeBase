@@ -9,13 +9,13 @@ Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multi
 
 :::
 
-Se puede acceder al módulo de protección de seguimiento tocando la pestaña _Protección_ (segundo icono a la izquierda en la parte inferior de la pantalla) y luego seleccionando _Protección de seguimiento_.
+To access the Tracking protection module, tap the _Protection_ tab (the second icon from the bottom of the screen) and then select _Tracking protection_.
 
-La _Protección de seguimiento_ (anteriormente conocida como _Modo oculto_) evita que los sitios web recopilen información sobre ti, como tus direcciones IP, información sobre tu navegador y sistema operativo, resolución de pantalla y la página a la que llegaste o desde la que fuiste redirigido. También puedes bloquear las cookies que los sitios web utilizan para marcar tu navegador, guardar tu configuración personal y preferencias de usuario, o reconocerlo en tu próxima visita.
+_Tracking protection_ (formerly _Stealth Mode_) prevents websites from collecting information about you, such as your IP address, information about your browser and operating system, screen resolution, and the page you came or were redirected from. También puedes bloquear las cookies que los sitios web utilizan para marcar tu navegador, guardar tu configuración personal y preferencias de usuario, o reconocerlo en tu próxima visita.
 
-![Protección de seguimiento \*mobile_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
+![Tracking protection \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/tracking_protection.png)
 
-La _Protección de seguimiento_ tiene tres niveles preconfigurados de protección de privacidad (_Estándar_, _Alto_ y _Extremo_) y un nivel definido por el usuario (_Personalizado_).
+_Tracking protection_ has three pre-configured privacy protection levels (_Standard_, _High_, and _Extreme_) and one user-defined level (_Custom_).
 
 Estas son las características activas de los niveles preconfigurados:
 
@@ -23,7 +23,7 @@ Estas son las características activas de los niveles preconfigurados:
 
    a. _Bloquear rastreadores_. Esta función utiliza el _filtro de protección de seguimiento de AdGuard_ para protegerlo de contadores en línea y herramientas de análisis web
 
-   b. _Pedir a los sitios web que no te rastreen_. Esta función envía las señales [Global Privacy Control](https://globalprivacycontrol.org/) y [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a los sitios web que visitas, pidiendo a las aplicaciones web que desactiven el seguimiento de tu actividad
+   b. _Ask websites not to track me_. Esta función envía las señales [Global Privacy Control](https://globalprivacycontrol.org/) y [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a los sitios web que visitas, pidiendo a las aplicaciones web que desactiven el seguimiento de tu actividad
 
    c. _Eliminar encabezado X-Client-Data_. Esta función evita que Google Chrome envíe información sobre su versión y modificaciones a los dominios de Google (incluidos DoubleClick y Google Analytics)
 
@@ -33,11 +33,11 @@ Estas son las características activas de los niveles preconfigurados:
 
    b. _Eliminar parámetros de seguimiento de las URL_. Esta función utiliza el _filtro de seguimiento de URL de AdGuard_ para eliminar parámetros de seguimiento, como `utm_*` y `fb_ref`, de las URL de las páginas
 
-   c. _Ocultar tus consultas de búsqueda_. Esta función oculta consultas de sitios web visitados desde un motor de búsqueda
+   c. _Hide search queries_. This feature hides your searches from websites visited through search engine results
 
-   d. _Pedir a los sitios web que no te rastreen_. Esta función envía las señales [Global Privacy Control](https://globalprivacycontrol.org/) y [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a los sitios web que visitas, pidiendo a las aplicaciones web que desactiven el seguimiento de tu actividad
+   d. _Ask websites not to track me_. Esta función envía las señales [Global Privacy Control](https://globalprivacycontrol.org/) y [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a los sitios web que visitas, pidiendo a las aplicaciones web que desactiven el seguimiento de tu actividad
 
-   e. _Autodestrucción de cookies de terceros_. Esta función limita la vida útil de las cookies de terceros a 180 minutos
+   e. _Delete third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes and prevents advertisers from tracking your behavior across multiple pages
 
    :::caution
 
@@ -53,11 +53,11 @@ Estas son las características activas de los niveles preconfigurados:
 
    b. _Eliminar parámetros de seguimiento de las URL_. Esta función utiliza el _filtro de seguimiento de URL de AdGuard_ para eliminar parámetros de seguimiento, como `utm_*` y `fb_ref`, de las URL de las páginas
 
-   c. _Ocultar tus consultas de búsqueda_. Esta función oculta consultas de sitios web visitados desde un motor de búsqueda
+   c. _Hide search queries_. This feature hides your searches from websites visited through search engine results
 
-   d. _Pedir a los sitios web que no te rastreen_. Esta función envía las señales [Global Privacy Control](https://globalprivacycontrol.org/) y [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a los sitios web que visitas, pidiendo a las aplicaciones web que desactiven el seguimiento de tu actividad
+   d. _Ask websites not to track me_. Esta función envía las señales [Global Privacy Control](https://globalprivacycontrol.org/) y [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a los sitios web que visitas, pidiendo a las aplicaciones web que desactiven el seguimiento de tu actividad
 
-   e. _Autodestrucción de cookies de terceros_. Esta función limita la vida útil de las cookies de terceros a 180 minutos
+   e. _Delete third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes and prevents advertisers from tracking your behavior across multiple pages
 
    :::caution
 
@@ -65,16 +65,16 @@ Estas son las características activas de los niveles preconfigurados:
 
    :::
 
-   f. _Bloquear WebRTC_. Esta función bloquea WebRTC, una vulnerabilidad conocida que puede filtrar tu dirección IP real incluso si utilizas un proxy o VPN
+   f. _Bloquear WebRTC_. This feature blocks WebRTC that can leak your real IP address even if you use a proxy or VPN. Some messengers, streaming platforms, or games may stop working properly
 
-   g. _Bloquear API Push_. Esta función evita que tus navegadores reciban mensajes push de los servidores
+   g. _Bloquear API Push_. This feature blocks push notifications from websites
 
    h. _Bloquear API de ubicación_. Esta función evita que los navegadores accedan a tus datos de GPS y determinen tu ubicación
 
    i. _Ocultar Referer de terceros_. Esta función evita que terceros sepan qué sitios web visitas. Oculta el encabezado HTTP que contiene la URL de la página inicial y lo reemplaza por uno predeterminado o personalizado que puedes configurar
 
-   j. _Ocultar tu agente de usuario_. Esta función elimina la información de identificación del encabezado User-Agent, que normalmente incluye el nombre y la versión del navegador, el sistema operativo y la configuración de idioma
+   j. _Hide User-Agent_. Esta función elimina la información de identificación del encabezado User-Agent, que normalmente incluye el nombre y la versión del navegador, el sistema operativo y la configuración de idioma
 
    k. _Eliminar encabezado X-Client-Data_. Esta función evita que Google Chrome envíe información sobre su versión y modificaciones a los dominios de Google (incluidos DoubleClick y Google Analytics)
 
-Puedes modificar configuraciones individuales en _Protección de seguimiento_ y crear una configuración personalizada. Cada configuración tiene una descripción que te ayudará a comprender su función. [Obtén más información sobre lo que hacen las distintas configuraciones de _Protección contra el rastreo_](/general/stealth-mode) y utilízalas con precaución, ya que algunas pueden interferir con la funcionalidad de los sitios web y las extensiones del navegador.
+You can tweak individual settings in _Tracking protection_ to create a custom configuration. Each setting has a description to help you understand its purpose. [Read more about various _Tracking protection_ settings](/general/stealth-mode) and use them cautiously, as some may interfere with the functionality of websites and browser extensions.
