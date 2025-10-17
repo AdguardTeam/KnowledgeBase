@@ -9,8 +9,8 @@ sidebar_position: 6
 
 :::
 
-## 고급 개인정보 보호
+## Tracking protection
 
-![스텔스 모드](https://cdn.adtidy.org/content/kb/ad_blocker/mac/stealth.png)
+![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tracking_protection.png)
 
-**고급 개인정보 보호**는 쿠키, UTM 태그, 온라인 카운터 및 분석 시스템을 삭제하여 사용자의 개인정보를 보호합니다. 이 기능을 사용하면 웹사이트가 IP 주소, 디바이스 및 브라우저 매개변수, 검색어, 개인 정보를 수집하지 못하도록 합니다. [스텔스 모드 설정에 대해 자세히 알아보기](/general/stealth-mode)
+_Tracking protection_ (formerly Stealth Mode) safeguards your privacy by deleting cookies, UTM tags, online counters, and analytics systems. It prevents websites from collecting your IP address, device and browser parameters, search queries, and personal information. [Learn more about Tracking protection settings](/general/stealth-mode)

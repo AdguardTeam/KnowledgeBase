@@ -9,8 +9,8 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 :::
 
-## Pokročilá ochrana soukromí
+## Ochrana před sledováním
 
-![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/stealth.png)
+![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tracking_protection.png)
 
-_Pokročilá ochrana soukromí_ chrání vaše soukromí odstraněním souborů cookies, značek UTM, online čítačů a analytických systémů. Nedovoluje webovým stránkám shromažďovat vaši IP adresu, parametry zařízení a prohlížeče, vyhledávací dotazy a osobní údaje. [Další informace o nastavení Režimu utajení](/general/stealth-mode)
+_Ochrana před sledováním_ (dříve Režim utajení) chrání vaše soukromí odstraněním cookies, značek UTM, online čítačů a analytických systémů. Zabraňuje webovým stránkám sledovat vaši IP adresu, parametry zařízení a prohlížeče, vyhledávací dotazy a osobní údaje. [Další informace o nastavení ochrany před sledováním](/general/stealth-mode)

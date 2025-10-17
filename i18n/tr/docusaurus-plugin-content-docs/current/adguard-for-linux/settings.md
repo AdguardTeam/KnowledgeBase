@@ -119,3 +119,79 @@ If the listen address is set to anything other than `127.0.0.1`, then proxy clie
 
 - When running `adguard-cli config set listen_address <address>` where `<address>` is not `127.0.0.1`, AdGuard CLI will prompt for a username and password if proxy authentication is not already configured.
 - When editing the config file directly, look for the `listen_auth`key. Set the `enabled` sub-key to `true`, and `username` and `password` to non-empty values.
+
+## Giden proxy'yi yapılandırma
+
+You can configure `outbound_proxy` if you want AdGuard CLI to work through another proxy server.
+
+There are two ways to configure it:
+
+### 1. Configure via URL (recommended)
+
+Instead of setting each option step by step, you can set all parameters in a single line using a URL:
+
+```sh
+adguard-cli config set outbound_proxy https://user:pass@host:port
+```
+
+:::info
+
+Desteklenen modlar HTTP, HTTPS, SOCKS4 ve SOCKS5'tir.
+
+:::
+
+You can also quickly enable or disable `outbound_proxy`:
+
+```sh
+adguard-cli config set outbound_proxy false
+```
+
+Veya ayarları hızlıca temizleyin:
+
+```sh
+adguard-cli config set outbound_proxy ""
+```
+
+### 2. Bireysel parametreleri yapılandırma
+
+The ability to adjust specific parameters is also available:
+
+```sh
+adguard-cli config set outbound_proxy.enabled true
+adguard-cli config set outbound_proxy.host localhost
+adguard-cli config set outbound_proxy.port 3128
+adguard-cli config set outbound_proxy.username user
+adguard-cli config set outbound_proxy.password pass
+```
+
+HTTPS proxy'leri için sertifika doğrulamayı devre dışı bırakın:
+
+```sh
+adguard-cli config set outbound_proxy.trust_any_certificate true
+```
+
+UDP trafiği için SOCKS5 proxy'sini etkinleştirin:
+
+```sh
+adguard-cli config set outbound_proxy.udp_through_socks5_enabled true
+```
+
+:::note
+
+SOCKS5 proxy'niz UDP'yi desteklemiyorsa, bağlantılar başarısız olabilir.
+
+:::
+
+### Checking the current configuration
+
+To view the current `outbound_proxy` configuration, enter:
+
+```sh
+adguard-cli config show outbound_proxy
+```
+
+:::info Uyumluluk
+
+Configuring `outbound_proxy` via URL is available starting from AdGuard for Linux v1.1.26 nightly and v1.1 stable release.
+
+:::

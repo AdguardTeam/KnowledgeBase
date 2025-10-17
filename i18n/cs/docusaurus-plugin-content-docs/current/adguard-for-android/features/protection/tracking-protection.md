@@ -9,13 +9,13 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-Modul Ochrana před sledováním lze otevřít klepnutím na kartu _Ochrana_ (druhá ikona vlevo dole na obrazovce) a výběrem možnosti _Ochrana před sledováním_.
+To access the Tracking protection module, tap the _Protection_ tab (the second icon from the bottom of the screen) and then select _Tracking protection_.
 
-_Ochrana před sledováním_ (dříve známá jako _Režim utajení_) zabraňuje webovým stránkám shromažďovat informace o vás, jako jsou vaše IP adresy, informace o vašem prohlížeči a operačním systému, rozlišení obrazovky a stránce, na kterou jste přišli nebo ze které jste byli přesměrováni. Může také blokovat cookies, které webové stránky používají k označení prohlížeče a uložení vašich osobních nastavení, uživatelských preferencí nebo k rozpoznání při další návštěvě.
+_Tracking protection_ (formerly _Stealth Mode_) prevents websites from collecting information about you, such as your IP address, information about your browser and operating system, screen resolution, and the page you came or were redirected from. Může také blokovat cookies, které webové stránky používají k označení prohlížeče a uložení vašich osobních nastavení, uživatelských preferencí nebo k rozpoznání při další návštěvě.
 
-![Tracking protection \*mobile_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
+![Tracking protection \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/tracking_protection.png)
 
-_Ochrana před sledováním_ má tři předkonfigurované úrovně ochrany soukromí (_Standardní_, _Vysoká_ a _Extrémní_) a jednu úroveň definovanou uživatelem (_Vlastní_).
+_Tracking protection_ has three pre-configured privacy protection levels (_Standard_, _High_, and _Extreme_) and one user-defined level (_Custom_).
 
 Zde jsou uvedeny aktivní funkce předkonfigurovaných úrovní:
 
@@ -23,7 +23,7 @@ Zde jsou uvedeny aktivní funkce předkonfigurovaných úrovní:
 
    a. _Blokovat slídiče_. Tato funkce používá filtr _AdGuard ochrana před sledováním_, který vás chrání před online čítači a nástroji webové analýzy
 
-   b. _Požádat webové stránky, aby vás nesledovaly_. Tato funkce odesílá na navštívené webové stránky signály [Global Privacy Control](https://globalprivacycontrol.org/) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a žádá webové aplikace, aby zakázaly sledování vaší činnosti
+   b. _Ask websites not to track me_. Tato funkce odesílá na navštívené webové stránky signály [Global Privacy Control](https://globalprivacycontrol.org/) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a žádá webové aplikace, aby zakázaly sledování vaší činnosti
 
    c. _Odstranit X-Client-Data hlavičku_. Tato funkce zabraňuje tomu, aby prohlížeč Google Chrome odesílal informace o své verzi a úpravách do domén společnosti Google (včetně služeb DoubleClick a Google Analytics)
 
@@ -33,11 +33,11 @@ Zde jsou uvedeny aktivní funkce předkonfigurovaných úrovní:
 
    b. _Odebrat sledovací parametry z URL_. Tato funkce používá _AdGuard filtr sledování URL_ k odstranění parametrů sledování, jako je `utm_*` a `fb_ref` z adresy URL
 
-   c. _Skrýt vyhledávací dotazy_. Tato funkce skrývá dotazy na webové stránky navštívené z vyhledávače
+   c. _Hide search queries_. This feature hides your searches from websites visited through search engine results
 
-   d. _Požádat webové stránky, aby vás nesledovaly_. Tato funkce odesílá na navštívené webové stránky signály [Global Privacy Control](https://globalprivacycontrol.org/) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a žádá webové aplikace, aby zakázaly sledování vaší činnosti
+   d. _Ask websites not to track me_. Tato funkce odesílá na navštívené webové stránky signály [Global Privacy Control](https://globalprivacycontrol.org/) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a žádá webové aplikace, aby zakázaly sledování vaší činnosti
 
-   e. _Automatické odstranění cookies třetích stran_. Tato funkce omezuje životnost TTL cookies třetích stran na 180 minut
+   e. _Delete third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes and prevents advertisers from tracking your behavior across multiple pages
 
    :::caution
 
@@ -53,11 +53,11 @@ Zde jsou uvedeny aktivní funkce předkonfigurovaných úrovní:
 
    b. _Odebrat sledovací parametry z URL_. Tato funkce používá _AdGuard filtr sledování URL_ k odstranění parametrů sledování, jako je `utm_*` a `fb_ref` z adresy URL
 
-   c. _Skrýt vyhledávací dotazy_. Tato funkce skrývá dotazy na webové stránky navštívené z vyhledávače
+   c. _Hide search queries_. This feature hides your searches from websites visited through search engine results
 
-   d. _Požádat webové stránky, aby vás nesledovaly_. Tato funkce odesílá na navštívené webové stránky signály [Global Privacy Control](https://globalprivacycontrol.org/) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a žádá webové aplikace, aby zakázaly sledování vaší činnosti
+   d. _Ask websites not to track me_. Tato funkce odesílá na navštívené webové stránky signály [Global Privacy Control](https://globalprivacycontrol.org/) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a žádá webové aplikace, aby zakázaly sledování vaší činnosti
 
-   e. _Automatické odstranění cookies třetích stran_. Tato funkce omezuje životnost TTL cookies třetích stran na 180 minut
+   e. _Delete third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes and prevents advertisers from tracking your behavior across multiple pages
 
    :::caution
 
@@ -65,16 +65,16 @@ Zde jsou uvedeny aktivní funkce předkonfigurovaných úrovní:
 
    :::
 
-   f. _Blokovat WebRTC_. Tato funkce blokuje WebRTC, známou zranitelnost, která může prozradit vaši skutečnou IP adresu, i když používáte proxy server nebo VPN
+   f. _Blokovat WebRTC_. This feature blocks WebRTC that can leak your real IP address even if you use a proxy or VPN. Some messengers, streaming platforms, or games may stop working properly
 
-   g. _Blokovat Push API_. Tato funkce zabraňuje prohlížečům přijímat push zprávy ze serverů
+   g. _Blokovat Push API_. This feature blocks push notifications from websites
 
    h. _Blokovat lokalizační API_. Tato funkce zabrání prohlížečům v přístupu k vašim GPS datům a určení vaší polohy
 
    i. _Skrýt třetím stranám referenční ID_. Tato funkce zabraňuje třetím stranám rozpoznat, které weby jste navštívili. Skrývá záhlaví HTTP, které obsahuje URL adresu úvodní stránky a změní ji na výchozí nebo vlastní, kterou můžete nastavit
 
-   j. _Skrýt identifikaci vašeho prohlížeče_. Tato funkce odstraňuje identifikační informace ze záhlaví identifikátora prohlížeče, které obvykle obsahuje název a verzi prohlížeče, operačního systému a nastavení jazyka
+   j. _Hide User-Agent_. Tato funkce odstraňuje identifikační informace ze záhlaví identifikátora prohlížeče, které obvykle obsahuje název a verzi prohlížeče, operačního systému a nastavení jazyka
 
    k. _Odstranit X-Client-Data hlavičku_. Tato funkce zabraňuje tomu, aby prohlížeč Google Chrome odesílal informace o své verzi a úpravách do domén společnosti Google (včetně služeb DoubleClick a Google Analytics)
 
-Jednotlivá nastavení můžete upravit v části _Ochrana před sledováním_ a vytvořit si vlastní konfiguraci. Každé nastavení má popis, který vám pomůže pochopit jeho roli. [Další informace o tom, co dělají různá nastavení _Ochrany před sledováním_](/general/stealth-mode). Přistupujte k nim opatrně, protože některá mohou narušovat funkčnost webových stránek a rozšíření prohlížeče.
+You can tweak individual settings in _Tracking protection_ to create a custom configuration. Each setting has a description to help you understand its purpose. [Read more about various _Tracking protection_ settings](/general/stealth-mode) and use them cautiously, as some may interfere with the functionality of websites and browser extensions.
