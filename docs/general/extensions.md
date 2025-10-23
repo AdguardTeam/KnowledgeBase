@@ -59,7 +59,7 @@ Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me
 
 SponsorBlock skips sponsored segments in YouTube videos. It saves time by jumping straight to the main content and removes interruptions from ads and self-promotions.
 
-:::warning
+:::info
 
 This userscript runs exclusively on our desktop applications, AdGuard for Windows and AdGuard for Mac.
 
