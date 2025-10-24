@@ -57,7 +57,7 @@ Su código fuente está [disponible en GitHub](https://github.com/Rob--W/dont-tr
 
 #### tinyShield
 
-Un script de usuario para personas que visitan sitios web coreanos y algunos sitios web internacionales. El script de usuario de tinyShield bloquea los anuncios de Ad-Shield y los antibloqueos de anuncios. Este script de usuario se puede instalar en aplicaciones basadas en AdGuard CoreLibs, Violentmonkey, Tampermonkey y [quoid/userscripts](https://github.com/quoid/userscripts). Obtén más información sobre tinyShield y cómo instalarlo en [GitHub](https://github.com/List-KR/tinyShield).
+Un script de usuario para personas que visitan sitios web coreanos y algunos sitios web internacionales. El script de usuario de tinyShield bloquea los anuncios de Ad-Shield y los antibloqueos de anuncios. Este script de usuario se puede instalar en aplicaciones basadas en AdGuard CoreLibs, Violentmonkey, Tampermonkey y [quoid/userscripts](https://github.com/quoid/userscripts). Obtén más información sobre tinyShield y cómo instalarlo en [GitHub](https://github.com/FilteringDev/tinyShield).
 
 ### ¿Dónde conseguir más scripts de usuario?{#more-userscripts}
 
