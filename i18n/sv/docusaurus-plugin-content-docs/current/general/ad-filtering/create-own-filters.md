@@ -103,7 +103,7 @@ Blocking rules with [`$important`](#important-modifier) modifier can override ex
 
 ![Cosmetic rule](https://cdn.adtidy.org/content/kb/ad_blocker/general/5_cosmetic_rules.svg)
 
-Cosmetic rules are based on using a special language named CSS, which every browser understands. Basically, it adds a new CSS style to the website which purpose is to hide particular elements. You can learn more about CSS in general [here](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
+Cosmetic rules are based on using a special language named CSS, which every browser understands. Basically, it adds a new CSS style to the website which purpose is to hide particular elements. You can [learn more about CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors) in general.
 
 AdGuard [extends CSS](#extended-css-selectors) and lets filters developers handle much more complicated cases. However, to use these extended rules, you need to be fluent in regular CSS.
 
@@ -2230,7 +2230,7 @@ For the requests matching a `$permissions` rule, AdGuard strengthens response's 
 1. A comma that separates multiple features **MUST** be escaped — see examples below.
 2. A pipe character (`|`) can be used instead of a comma to separate features.
 
-The list of available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
+Available directives are listed in the [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives) article.
 
 `$permissions` value can be empty in the case of exception rules — see examples below.
 
@@ -4122,7 +4122,7 @@ example.org$$div[some_attribute]
 
 This rule removes all `div` elements with the attribute `some_attribute` on `example.org` and all its subdomains. So, the both `div` elements from the example above will be removed.
 
-### Special attributes
+### Special attributes {#html-filtering-rules--special-attributes}
 
 In addition to usual attributes, which value is every element checked for, there is a set of special attributes that change the way a rule works. Below there is a list of these attributes:
 
@@ -4232,9 +4232,9 @@ The `min-length` special attribute must not appear in a selector to the left of 
 
 :::
 
-### Pseudo-classes
+### Pseudo-classes {#html-filtering-rules--pseudo-classes}
 
-#### `:contains()`
+#### `:contains()` {#html-filtering-rules--contains}
 
 ##### Syntax
 
@@ -4474,7 +4474,7 @@ More information about trusted scriptlets can be found [on GitHub](https://githu
 
 Each rule can be modified using the modifiers described in the following paragraphs.
 
-**Syntax** {#non-basic-rules-modifiers-syntax}
+**Syntax**
 
 ```text
 rule = "[$" modifiers "]" [rule text]
