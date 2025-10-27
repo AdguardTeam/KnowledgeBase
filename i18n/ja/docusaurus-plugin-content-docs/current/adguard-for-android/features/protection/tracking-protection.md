@@ -9,13 +9,13 @@ sidebar_position: 2
 
 :::
 
-この機能は、「AdGuardによる保護」タブ（画面下部の左から2番目の盾アイコン）をタップ → 「トラッキング防止」にあります。
+To access the Tracking protection module, tap the _Protection_ tab (the second icon from the bottom of the screen) and then select _Tracking protection_.
 
-「トラッキング防止」（旧名：「ステルスモード」）機能は、ウェブサイトがあなたに関する情報（IPアドレス、ブラウザやオペレーティングシステムに関する情報、画面の解像度、ユーザーが訪問した、またはリダイレクトされたページなど）を収集することを防ぎます。 また、Cookie（クッキー）をブロックすることもできます。Cookie（クッキー）を使って、ウェブサイトはあなたのブラウザをマークしたり、個人設定やユーザー設定を保存したり、次回訪問時にあなたを識別したりします。
+_Tracking protection_ (formerly _Stealth Mode_) prevents websites from collecting information about you, such as your IP address, information about your browser and operating system, screen resolution, and the page you came or were redirected from. また、Cookie（クッキー）をブロックすることもできます。Cookie（クッキー）を使って、ウェブサイトはあなたのブラウザをマークしたり、個人設定やユーザー設定を保存したり、次回訪問時にあなたを識別したりします。
 
-![トラッキング防止 \*mobile_border](https://cdn.adtidy.org/blog/new/3hwc7fScreenshot_20230621-163706_AdGuard.jpg)
+![Tracking protection \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/tracking_protection.png)
 
-「トラッキング防止」には、3つのプライバシー保護レベル（「スタンダード」「高め」「厳格」）と、ユーザーによって設定されるレベル（「カスタム」）が1つあります。
+_Tracking protection_ has three pre-configured privacy protection levels (_Standard_, _High_, and _Extreme_) and one user-defined level (_Custom_).
 
 各既定レベルの内容は以下の通りです:
 
@@ -23,7 +23,7 @@ sidebar_position: 2
 
    ① _トラッカー（個人情報追跡）をブロックする_ この機能は、「AdGuard 追跡防止フィルタ」を使用して、オンラインカウンターやウェブ解析ツールからあなたを保護します。
 
-   ② _ウェブサイトに追跡しないよう要求する_ この機能は、[Global Privacy Control](https://globalprivacycontrol.org/)および[Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track)シグナルをあなたが訪問するウェブサイトに送信し、あなたの行動の追跡を無効にするようウェブアプリに要求します。
+   ② _Ask websites not to track me_. この機能は、[Global Privacy Control](https://globalprivacycontrol.org/)および[Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track)シグナルをあなたが訪問するウェブサイトに送信し、あなたの行動の追跡を無効にするようウェブアプリに要求します。
 
    ③ _X-Client-Dataヘッダーを削除する_ この機能により、Google Chromeのバージョンや変更に関する情報がGoogleドメイン（DoubleClickやGoogle Analyticsを含む）に送信されるのを防ぎます。
 
@@ -33,11 +33,11 @@ sidebar_position: 2
 
    ② _URLからトラッキングパラメータを削除する_ この機能は、「AdGuard URL追跡フィルタ」を使用して、ページURLから `utm_*` や `fb_ref` などといったトラッキングパラメータを削除します。
 
-   ③ _自分の検索クエリを隠す_ 訪問したウェブサイトに対するクエリを検索エンジンから隠します。
+   ③ _Hide search queries_. This feature hides your searches from websites visited through search engine results
 
-   ④ _ウェブサイトに追跡しないよう要求する_ この機能は、[Global Privacy Control](https://globalprivacycontrol.org/)および[Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track)シグナルをあなたが訪問するウェブサイトに送信し、あなたの行動の追跡を無効にするようウェブアプリに要求します。
+   ④ _Ask websites not to track me_. この機能は、[Global Privacy Control](https://globalprivacycontrol.org/)および[Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track)シグナルをあなたが訪問するウェブサイトに送信し、あなたの行動の追跡を無効にするようウェブアプリに要求します。
 
-   ⑤ _サードパーティCookieの自動削除_ この機能はサードパーティCookieの有効期間を180分に制限します。
+   ⑤ _Delete third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes and prevents advertisers from tracking your behavior across multiple pages
 
    :::caution
 
@@ -53,11 +53,11 @@ sidebar_position: 2
 
    ② _URLからトラッキングパラメータを削除する_ この機能は、「AdGuard URL追跡フィルタ」を使用して、ページURLから `utm_*` や `fb_ref` などといったトラッキングパラメータを削除します。
 
-   ③ _自分の検索クエリを隠す_ 訪問したウェブサイトに対するクエリを検索エンジンから隠します。
+   ③ _Hide search queries_. This feature hides your searches from websites visited through search engine results
 
-   ④ _ウェブサイトに追跡しないよう要求する_ この機能は、[Global Privacy Control](https://globalprivacycontrol.org/)および[Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track)シグナルをあなたが訪問するウェブサイトに送信し、あなたの行動の追跡を無効にするようウェブアプリに要求します。
+   ④ _Ask websites not to track me_. この機能は、[Global Privacy Control](https://globalprivacycontrol.org/)および[Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track)シグナルをあなたが訪問するウェブサイトに送信し、あなたの行動の追跡を無効にするようウェブアプリに要求します。
 
-   ⑤ _サードパーティCookieの自動削除_ この機能はサードパーティCookieの有効期間を180分に制限します。
+   ⑤ _Delete third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes and prevents advertisers from tracking your behavior across multiple pages
 
    :::caution
 
@@ -65,16 +65,16 @@ sidebar_position: 2
 
    :::
 
-   ⑤ _WebRTCをブロックする_ この機能は、WebRTCをブロックします（WebRTCは、プロキシやVPNを使用しても実際のIPアドレスを漏らす可能性のある脆弱性です）。
+   ⑤ _WebRTCをブロックする_ This feature blocks WebRTC that can leak your real IP address even if you use a proxy or VPN. Some messengers, streaming platforms, or games may stop working properly
 
-   ⑥ _プッシュAPIをブロックする_ この機能は、ブラウザがサーバーからのプッシュメッセージを受信しないようにします。
+   ⑥ _プッシュAPIをブロックする_ This feature blocks push notifications from websites
 
    ⑦ _位置情報APIをブロックする_ この機能は、ブラウザがあなたのGPSデータにアクセスしてあなたの位置を特定することを防ぎます。
 
    ⑧ _サードパーティからリファラを隠す_ どのウェブサイトを訪問したりしているのかをサードパーティに知られないようにします。 本来のページのURLを含むHTTPヘッダーを非表示にし、デフォルトヘッダーまたはカスタムヘッダーに置き換えます。（カスタムヘッダーは自分で設定できます）
 
-   ⑨ _ユーザエージェントを隠す_ この機能は、から識別情報を削除します。User-Agentヘッダーには通常、ブラウザの名前やバージョン、オペレーティングシステム、言語設定などという情報が含まれています。
+   ⑨ _Hide User-Agent_. この機能は、から識別情報を削除します。User-Agentヘッダーには通常、ブラウザの名前やバージョン、オペレーティングシステム、言語設定などという情報が含まれています。
 
    ⑩ _X-Client-Dataヘッダーを削除する_ この機能により、Google Chromeのバージョンや変更に関する情報がGoogleドメイン（DoubleClickやGoogle Analyticsを含む）に送信されるのを防ぎます。
 
-「トラッキング防止」で個々の設定を微調整し、カスタム設定にしたりすることもできます。 各設定には、その役割を理解するのに役立つ説明がついています。 [Read more about what the various _Tracking protection_ settings do](/general/stealth-mode) and utilize them cautiously, as some may interfere with the functionality of websites and browser extensions.
+You can tweak individual settings in _Tracking protection_ to create a custom configuration. Each setting has a description to help you understand its purpose. [Read more about various _Tracking protection_ settings](/general/stealth-mode) and use them cautiously, as some may interfere with the functionality of websites and browser extensions.
