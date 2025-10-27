@@ -16,20 +16,20 @@ Several key files are located in this folder:
 
 1. `browsers.yaml` — a list of browsers (Safari, Chrome, Firefox, etc.). Here you can enable or disable HTTPS filtering for individual browsers, or completely exclude them from filtering.
 
-Example `browsers.yaml` (for macOS):
+**Example browsers.yaml (for Linux)**:
 
 ```sh
-- name: com.apple.Safari
+- name: firefox
   action: default
-- name: com.google.Chrome
+- name: chrome
   action: default
-- name: org.mozilla.firefox
+- name: chromium
   action: default
-- name: com.brave.Browser
+- name: brave
   action: default
 ```
 
-**Example browsers.yaml (for macOS)**:
+**Example `browsers.yaml` (for macOS)**:
 
 ```sh
 - name: com.apple.Safari
@@ -45,14 +45,14 @@ Example `browsers.yaml` (for macOS):
 If you want to:
 
 - disable HTTPS filtering — replace `default` with `bypass_https`
-- completely exclude the app from filtering — replace `default with`bypass`
+- completely exclude the app from filtering — replace `default` with `bypass`
 
 1. `proxy.yaml` — the main configuration file. It has an apps section where exclusions for any other apps are set.
 
 **Example `proxy.yaml`**:
 
 ```sh
- - include-list: browsers.yaml
+  - include-list: browsers.yaml
   - name: '*vpn*'
     action: 'bypass'          
     skip_outbound_proxy: true
@@ -60,7 +60,7 @@ If you want to:
     action: 'bypass_https'   
 ```
 
-**Important**: On **Linux**, specify the app name (Chrome, Firefox, etc.). On **macOS**, specify the bundle ID, e.g., `com.google.Chrome`, `org.mozilla.firefox`.
+**Important**: On **Linux**, specify the executable name (`chrome`, `firefox`, etc.). On **macOS**, specify the bundle ID, e.g., `com.google.Chrome`, `org.mozilla.firefox`.
 
 ## How to add custom filters
 
