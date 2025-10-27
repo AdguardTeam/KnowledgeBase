@@ -103,7 +103,7 @@ Pravidla blokování s modifikátorem [`$important`](#important-modifier) mohou 
 
 ![Cosmetic rule](https://cdn.adtidy.org/content/kb/ad_blocker/general/5_cosmetic_rules.svg)
 
-Kosmetická pravidla jsou založena na použití speciálního jazyka CSS, kterému rozumí každý prohlížeč. V podstatě přidává na webové stránky nový styl CSS, jehož účelem je skrýt určité prvky. Více o CSS obecně se můžete dozvědět [zde](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
+Kosmetická pravidla jsou založena na použití speciálního jazyka CSS, kterému rozumí každý prohlížeč. V podstatě přidává na webové stránky nový styl CSS, jehož účelem je skrýt určité prvky. You can [learn more about CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors) in general.
 
 AdGuard [rozšiřuje CSS](#extended-css-selectors) a umožňuje tak vývojářům filtrů řešit mnohem složitější případy. Abyste však mohli tato rozšířená pravidla používat, musíte ovládat běžný jazyk CSS.
 
@@ -2230,7 +2230,7 @@ Hodnota syntaxe `$permissions` je shodná se [syntaxí](https://developer.mozill
 1. Čárka, která odděluje více prvků **MUSÍ být uvozena** – viz příklady níže.
 2. Místo čárky lze pro oddělení funkcí použít znak `(|)`.
 
-Seznam dostupných direktiv je k dispozici [zde](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
+Available directives are listed in the [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives) article.
 
 Hodnota `$permissions` může být v případě pravidel pro výjimky prázdná — viz příklady níže.
 
@@ -4122,7 +4122,7 @@ example.org$$div[some_attribute]
 
 Toto pravidlo odstraní všechny prvky `div` s atributem `some_attribute` na `example.org` a všech jejích subdoménách. Oba prvky `div` z výše uvedeného příkladu budou odstraněny.
 
-### Speciální atributy
+### Special attributes {#html-filtering-rules--special-attributes}
 
 Kromě obvyklých atributů, jejichž hodnotu kontroluje každý prvek, existuje sada speciálních atributů, které mění způsob fungování pravidla. Níže je uveden seznam těchto atributů:
 
@@ -4232,9 +4232,9 @@ Speciální atribut `min-length` se nesmí objevit v selektoru nalevo od kombin�
 
 :::
 
-### Pseudotřídy
+### Pseudo-classes {#html-filtering-rules--pseudo-classes}
 
-#### `:contains()`
+#### `:contains()` {#html-filtering-rules--contains}
 
 ##### Syntaxe
 
@@ -4474,7 +4474,7 @@ Další informace o důvěryhodných skriptletech najdete na [GitHubu](https://g
 
 Každé pravidlo lze upravit pomocí modifikátorů popsaných v následujících odstavcích.
 
-**Syntaxe** {#non-basic-rules-modifiers-syntax}
+**Syntaxe**
 
 ```text
 rule = "[$" modifiers "]" [rule text]

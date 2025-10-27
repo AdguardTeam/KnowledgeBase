@@ -9,8 +9,8 @@ Dieser Artikel behandelt AdGuard für Mac, einem multifunktionalen Werbeblocker,
 
 :::
 
-## Erweiterter Datenschutz
+## Tracking-Schutz
 
-![Privatsspäre](https://cdn.adtidy.org/content/kb/ad_blocker/mac/stealth.png)
+![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tracking_protection.png)
 
-_Erweiterter Datenschutz_ schützt Ihre Privatsphäre durch das Löschen von Cookies, UTM-Parametern, Online-Zählern und Analysesystemen. Es verhindert, dass Websites Ihre IP-Adresse, Geräte- und Browserparameter, Suchanfragen und persönliche Informationen sammeln. [Weitere Informationen zu den Einstellungen des Privatsspährenmodus](/general/stealth-mode)
+_Tracking protection_ (formerly Stealth Mode) safeguards your privacy by deleting cookies, UTM tags, online counters, and analytics systems. It prevents websites from collecting your IP address, device and browser parameters, search queries, and personal information. [Learn more about Tracking protection settings](/general/stealth-mode)
