@@ -61,7 +61,7 @@ Several key files are located in this folder:
 
 ## How to add custom filters
 
-The working directory contains the `user.txt` file — you can add your own blocking or allowing rules for websites here. If you have your own list of rules in `.txt` format, connect it via `proxy.yaml`:
+The working directory contains the `user.txt` file, where you can add your own blocking or allowing rules for websites. If you have your own list of rules in `.txt` format, connect it via `proxy.yaml`:
 
 ```sh
 filters:
