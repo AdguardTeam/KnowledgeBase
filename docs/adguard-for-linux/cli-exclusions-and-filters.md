@@ -42,7 +42,7 @@ Several key files are located in this folder:
   action: default
 ```
 
-If you want to:
+ To disable HTTPS filtering, replace `default` with `bypass_https`. To completely exclude the app from filtering, replace `default` with `bypass`.
 
 - disable HTTPS filtering — replace `default` with `bypass_https`
 - completely exclude the app from filtering — replace `default` with `bypass`
