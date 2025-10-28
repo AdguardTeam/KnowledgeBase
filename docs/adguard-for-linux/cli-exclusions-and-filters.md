@@ -42,10 +42,7 @@ Several key files are located in this folder:
   action: default
 ```
 
-If you want to:
-
-- disable HTTPS filtering — replace `default` with `bypass_https`
-- completely exclude the app from filtering — replace `default` with `bypass`
+ To disable HTTPS filtering, replace `default` with `bypass_https`. To completely exclude the app from filtering, replace `default` with `bypass`.
 
 1. `proxy.yaml` — the main configuration file. It has an apps section where exclusions for any other apps are set.
 
@@ -66,7 +63,7 @@ On **Linux**, specify the executable name (`chrome`, `firefox`, etc.). On **macO
 
 ## How to add custom filters
 
-The working directory contains the `user.txt` file — you can add your own blocking or allowing rules for websites here. If you have your own list of rules in `.txt` format, connect it via `proxy.yaml`:
+The working directory contains the `user.txt` file, where you can add your own blocking or allowing rules for websites. If you have your own list of rules in `.txt` format, connect it via `proxy.yaml`:
 
 ```sh
 filters:
