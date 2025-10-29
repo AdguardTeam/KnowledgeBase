@@ -42,7 +42,7 @@ Several key files are located in this folder:
   action: default
 ```
 
- To disable HTTPS filtering, replace `default` with `bypass_https`. To completely exclude the app from filtering, replace `default` with `bypass`.
+To disable HTTPS filtering, replace `default` with `bypass_https`. To completely exclude the app from filtering, replace `default` with `bypass`.
 
 1. `proxy.yaml` — the main configuration file. It has an apps section where exclusions for any other apps are set.
 
