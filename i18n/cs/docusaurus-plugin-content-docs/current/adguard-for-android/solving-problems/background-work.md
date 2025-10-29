@@ -594,30 +594,30 @@ Na zařízeních s uživatelským rozhraním Realme UI 4.0 existují tři klíč
 
 ## Motorola
 
-On Motorola devices, there are four key configurations to ensure that AdGuard works properly in the background.
+Na zařízeních Motorola existují čtyři klíčové konfigurace, které zajistí správnou funkci AdGuardu na pozadí.
 
-1. Allow background usage:
+1. Povolit využití na pozadí:
 
-   - Go to **Settings → Apps** and find **AdGuard**
-   - Open **App battery usage**
-   - Enable **Allow background battery usage**
-   - Tap the option with the toggle
-   - Set battery usage to **Unrestricted**
+   - Přejděte do **Nastavení → Aplikace** a vyhledejte **AdGuard**
+   - Otevřete **Využití baterie aplikacemi**
+   - Povolte **Povolit využití baterie na pozadí**
+   - Klepněte na možnost s přepínačem
+   - Nastavte využití baterie na **Neomezeno**
 
-1. Remove background activity restrictions:
+1. Odebrat omezení aktivity na pozadí:
 
-   - Přejděte na **Nastavení**
-   - Scroll down and tap **Apps & notifications**
-   - Find **AdGuard** and open **Advanced → Battery**
-   - Tap **Background restriction** or **Background limits**
-   - If it says **Background activity restricted**, tap it and then tap **Remove**
+   - Přejděte do **Nastavení**
+   - Přejděte dolů a klepněte na **Aplikace a oznámení**
+   - Vyhledejte **AdGuard** a otevřete **Pokročilé → Baterie**
+   - Klepněte na **Omezení na pozadí** nebo **Limity na pozadí**
+   - Pokud se zobrazí **Aktivita na pozadí je omezena**, klepněte na ni a poté klepněte na **Odebrat**
 
-1. Manage background apps:
+1. Spravovat aplikace na pozadí:
 
-   - Go to **Settings**, then type **Managing background apps** in the search bar
-   - Find **AdGuard** and enable the toggle to allow the app to run in the background
+   - Přejděte do **Nastavení** a poté do vyhledávacího pole napište **Spravovat aplikace na pozadí**
+   - Vyhledejte **AdGuard** a přepněte přepínač, abyste povolili aplikaci běžet na pozadí
 
-1. Disable Adaptive Battery:
+1. Zakázat adaptivní baterii:
 
-   - Go to **Settings → Battery**
-   - Turn off the **Adaptive Battery** option
+   - Přejděte do **Nastavení → Baterie**
+   - Vypněte možnost **Adaptivní baterie**
