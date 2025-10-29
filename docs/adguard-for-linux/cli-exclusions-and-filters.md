@@ -58,7 +58,9 @@ To disable HTTPS filtering, replace `default` with `bypass_https`. To completely
 ```
 
 :::note
+
 On **Linux**, specify the executable name (`chrome`, `firefox`, etc.). On **macOS**, specify the bundle ID, e.g., `com.google.Chrome`, `org.mozilla.firefox`.
+
 :::
 
 ## How to add custom filters
