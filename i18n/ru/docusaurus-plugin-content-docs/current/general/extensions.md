@@ -55,6 +55,24 @@ AdGuard может значительно расширять функциона�
 
 Его исходный код [доступен на GitHub](https://github.com/Rob--W/dont-track-me-google). Этот пользовательский скрипт можно скачать [с сайта GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) и установить с помощью любого приложения AdGuard на основе CoreLibs (AdGuard для Windows, AdGuard для Mac и AdGuard для Android).
 
+#### SponsorBlock
+
+SponsorBlock skips sponsored segments in YouTube videos. It saves time by jumping straight to the main content and removes interruptions from ads and self-promotions.
+
+:::info
+
+This userscript runs exclusively on our desktop applications, AdGuard for Windows and AdGuard for Mac.
+
+:::
+
+To try it out:
+
+1. Go to [https://mchangrh.github.io/sb.js/](https://mchangrh.github.io/sb.js/).
+2. Click **Generate link**.
+3. Copy the link that appears.
+4. Open AdGuard and go to **Extensions → Add extension → Import from file or URL**.
+5. Paste the copied link and confirm.
+
 #### tinyShield
 
 Пользовательский скрипт для тех, кто посещает корейские и некоторые международные сайты. Скрипт блокирует рекламу Ad-Shield и программы, обходящие блокировщики рекламы. Этот пользовательский скрипт можно установить с помощью приложений AdGuard на основе CoreLibs, а также с помощью Violentmonkey, Tampermonkey и [quoid/userscripts](https://github.com/quoid/userscripts). [На GitHub](https://github.com/List-KR/tinyShield) есть подробности об этом пользовательском скрипте и о том, как его установить.
