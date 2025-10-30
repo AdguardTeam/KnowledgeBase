@@ -1,22 +1,22 @@
 ---
-title: How to set app exclusions and custom filters
+title: Jak nastavit výjimky aplikací a vlastní filtry
 sidebar_position: 5
 ---
 
-In AdGuard CLI, it’s not possible to import app exclusions from other versions of the program. You can, however, manually create the required exclusions and filters by editing several configuration files in the app’s working directory.
+V AdGuard CLI není možné importovat výjimky aplikací z jiných verzí programu. Můžete však ručně vytvořit požadované výjimky a filtry úpravou několika konfiguračních souborů v pracovním adresáři aplikace.
 
-## How to add exclusions
+## Jak přidat výjimky
 
-AdGuard CLI working directory:
+Pracovní adresář AdGuard CLI:
 
 - Linux: `~/.local/share/adguard-cli/`
 - macOS: `~/Library/Application Support/adguard-cli/`
 
-Several key files are located in this folder:
+V této složce se nachází několik klíčových souborů:
 
-1. `browsers.yaml` — a list of browsers (Safari, Chrome, Firefox, etc.). Here you can enable or disable HTTPS filtering for individual browsers, or completely exclude them from filtering.
+1. `browsers.yaml` — seznam prohlížečů (Safari, Chrome, Firefox atd.). Zde můžete povolit nebo zakázat HTTPS filtrování pro jednotlivé prohlížeče nebo je zcela vyloučit z filtrování.
 
-**Example browsers.yaml (for Linux)**:
+**Příklad browsers.yaml (pro Linux)**:
 
 ```sh
 - name: firefox
@@ -29,7 +29,7 @@ Several key files are located in this folder:
   action: default
 ```
 
-**Example `browsers.yaml` (for macOS)**:
+**Příklad `browsers.yaml` (pro macOS)**:
 
 ```sh
 - name: com.apple.Safari
@@ -42,11 +42,11 @@ Several key files are located in this folder:
   action: default
 ```
 
-To disable HTTPS filtering, replace `default` with `bypass_https`. To completely exclude the app from filtering, replace `default` with `bypass`.
+Chcete-li HTTPS filtrování zakázat, nahraďte `default` za `bypass_https`. Chcete-li aplikaci zcela vyloučit z filtrování, nahraďte `default` za `bypass`.
 
-1. `proxy.yaml` — the main configuration file. It has an apps section where exclusions for any other apps are set.
+1. `proxy.yaml` — hlavní konfigurační soubor. Obsahuje sekci aplikací, kde jsou nastaveny výjimky pro všechny ostatní aplikace.
 
-**Example `proxy.yaml`**:
+**Příklad `proxy.yaml`**:
 
 ```sh
   - include-list: browsers.yaml
@@ -59,13 +59,13 @@ To disable HTTPS filtering, replace `default` with `bypass_https`. To completely
 
 :::note
 
-On **Linux**, specify the executable name (`chrome`, `firefox`, etc.). On **macOS**, specify the bundle ID, e.g., `com.google.Chrome`, `org.mozilla.firefox`.
+V systému **Linux** zadejte název spustitelného souboru (`chrome`, `firefox` atd.). V systému **macOS** zadejte ID balíčku, např. `com.google.Chrome`, `org.mozilla.firefox`.
 
 :::
 
-## How to add custom filters
+## Jak přidat vlastní filtry
 
-The working directory contains the `user.txt` file, where you can add your own blocking or allowing rules for websites. If you have your own list of rules in `.txt` format, connect it via `proxy.yaml`:
+Pracovní adresář obsahuje soubor `user.txt`, do kterého můžete přidat vlastní pravidla pro blokování nebo povolení webových stránek. Pokud máte vlastní seznam pravidel ve formátu `.txt`, připojte jej skrze `proxy.yaml`:
 
 ```sh
 filters:

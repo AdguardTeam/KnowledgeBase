@@ -1,11 +1,11 @@
 ---
-title: How to set app exclusions and custom filters
+title: Uygulama istisnaları ve özel filtreler nasıl ayarlanır
 sidebar_position: 5
 ---
 
 In AdGuard CLI, it’s not possible to import app exclusions from other versions of the program. You can, however, manually create the required exclusions and filters by editing several configuration files in the app’s working directory.
 
-## How to add exclusions
+## İstisnalar nasıl eklenir
 
 AdGuard CLI working directory:
 
@@ -14,9 +14,9 @@ AdGuard CLI working directory:
 
 Several key files are located in this folder:
 
-1. `browsers.yaml` — a list of browsers (Safari, Chrome, Firefox, etc.). Here you can enable or disable HTTPS filtering for individual browsers, or completely exclude them from filtering.
+1. `browsers.yaml` — tarayıcıların bir listesi (Safari, Chrome, Firefox, vb.). Here you can enable or disable HTTPS filtering for individual browsers, or completely exclude them from filtering.
 
-**Example browsers.yaml (for Linux)**:
+**Örnek browsers.yaml (Linux için)**:
 
 ```sh
 - name: firefox
@@ -29,7 +29,7 @@ Several key files are located in this folder:
   action: default
 ```
 
-**Example `browsers.yaml` (for macOS)**:
+**Örnek `browsers.yaml` (macOS için)**:
 
 ```sh
 - name: com.apple.Safari
@@ -44,9 +44,9 @@ Several key files are located in this folder:
 
 To disable HTTPS filtering, replace `default` with `bypass_https`. To completely exclude the app from filtering, replace `default` with `bypass`.
 
-1. `proxy.yaml` — the main configuration file. It has an apps section where exclusions for any other apps are set.
+1. `proxy.yaml` — the main configuration file. Diğer uygulamalar için istisnaların ayarlandığı bir uygulamalar bölümü vardır.
 
-**Example `proxy.yaml`**:
+**Örnek `proxy.yaml`**:
 
 ```sh
   - include-list: browsers.yaml
@@ -63,7 +63,7 @@ On **Linux**, specify the executable name (`chrome`, `firefox`, etc.). On **macO
 
 :::
 
-## How to add custom filters
+## Özel filtreler nasıl eklenir
 
 The working directory contains the `user.txt` file, where you can add your own blocking or allowing rules for websites. If you have your own list of rules in `.txt` format, connect it via `proxy.yaml`:
 
