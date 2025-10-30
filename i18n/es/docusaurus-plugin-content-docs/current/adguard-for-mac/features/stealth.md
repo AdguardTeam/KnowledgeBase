@@ -9,8 +9,8 @@ Este artículo trata sobre AdGuard para Mac, un bloqueador de anuncios multifunc
 
 :::
 
-## Protección de privacidad avanzada
+## Tracking protection
 
-![Modo sigiloso](https://cdn.adtidy.org/content/kb/ad_blocker/mac/stealth.png)
+![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tracking_protection.png)
 
-La _Protección de privacidad avanzada_ protege tu privacidad eliminando cookies, etiquetas UTM, contadores en línea y sistemas de análisis. No permite que los sitios web recopilen tu dirección IP, parámetros de dispositivo y navegador, consultas de búsqueda e información personal. [Más información sobre la configuración del modo oculto](/general/stealth-mode)
+_Tracking protection_ (formerly Stealth Mode) safeguards your privacy by deleting cookies, UTM tags, online counters, and analytics systems. It prevents websites from collecting your IP address, device and browser parameters, search queries, and personal information. [Learn more about Tracking protection settings](/general/stealth-mode)

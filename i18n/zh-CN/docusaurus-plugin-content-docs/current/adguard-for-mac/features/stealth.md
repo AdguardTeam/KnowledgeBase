@@ -9,8 +9,8 @@ sidebar_position: 6
 
 :::
 
-## 高级隐私保护
+## Tracking protection
 
-![隐身模式](https://cdn.adtidy.org/content/kb/ad_blocker/mac/stealth.png)
+![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tracking_protection.png)
 
-「高级隐私保护」通过删除 Cookie、UTM 标签、在线计数器和分析系统来保护个人隐私。 它不让网站收集 IP 地址、设备和浏览器参数、搜索查询及其他个人信息。 [了解更多关于隐身模式的设置](/general/stealth-mode)。
+_Tracking protection_ (formerly Stealth Mode) safeguards your privacy by deleting cookies, UTM tags, online counters, and analytics systems. It prevents websites from collecting your IP address, device and browser parameters, search queries, and personal information. [Learn more about Tracking protection settings](/general/stealth-mode)
