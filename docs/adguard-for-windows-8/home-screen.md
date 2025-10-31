@@ -25,10 +25,10 @@ Finally, the *Settings* tab contains your license details, general preferences l
 
 Each of these is worth talking about separately.
 
-[Protection](adguard-for-windows-8/protection/)
+[Protection](protection/)
 
-[Statistics](adguard-for-windows-8/statistics/)
+[Statistics](statistics/)
 
-[App management](adguard-for-windows-8/app-management/)
+[App management](app-management/)
 
-[Settings](adguard-for-windows-8/settings/)
+[Settings](settings/)
