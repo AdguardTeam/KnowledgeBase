@@ -24,11 +24,3 @@ In *Statistics* you can see how many ads, trackers, and threats have been blocke
 Finally, the *Settings* tab contains your license details, general preferences like language and theme, and additional network or advanced settings for experienced users.
 
 Each of these is worth talking about separately.
-
-[Protection](protection/)
-
-[Statistics](statistics/)
-
-[App management](app-management/)
-
-[Settings](settings/)
