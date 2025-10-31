@@ -11,8 +11,6 @@ This is a beta release and still under development. If you’d like to try it, d
 
 :::
 
-![License *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/)
-
 The *License* tab provides details about your current license. Here you can:
 
 - view the license type, the number of devices available for simultaneous connection to AdGuard, and the activation code;
