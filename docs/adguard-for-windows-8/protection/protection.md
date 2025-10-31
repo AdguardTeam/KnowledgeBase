@@ -15,14 +15,14 @@ This is a beta release and still under development. If you’d like to try it, d
 
 The *Protection* tab contains all key security and filtering settings. Here you can manage ad blocking, tracking protection, annoyance blocking, DNS filtering, browsing security, parental control, and manage userscripts. You can also manage the AdGuard Assistant browser extension here. Each of these sections is described in a separate article.
 
-[Ad blocking](/adguard-for-windows-8/protection/ad-blocking/)
+[Ad blocking](/ad-blocking/)
 
-[Tracking protection](/adguard-for-windows-8/protection/tracking-protection/)
+[Tracking protection](/tracking-protection/)
 
-[Annoyance blocking](/adguard-for-windows-8/protection/annoyance-blocking/)
+[Annoyance blocking](/annoyance-blocking/)
 
-[DNS protection](/adguard-for-windows-8/protection/dns-protection/)
+[DNS protection](/dns-protection/)
 
-[Browsing security](/adguard-for-windows-8/protection/browsing-security/)
+[Browsing security](/browsing-security/)
 
-[Parental control](/adguard-for-windows-8/protection/parental-control/)
+[Parental control](/parental-control/)
