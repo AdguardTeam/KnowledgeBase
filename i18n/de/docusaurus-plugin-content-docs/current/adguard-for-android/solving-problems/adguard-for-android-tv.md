@@ -33,7 +33,7 @@ Fertig, AdGuard für Android TV ist installiert.
 - Klicken Sie auf das AdGuard-Symbol, um die App zu starten.
 - Folgen Sie den Anweisungen auf dem Bildschirm, um die Einrichtung abzuschließen.
 
-## Installation von AdGuard für Android TV über ADB
+## AdGuard für Android TV über ADB installieren
 
 1. Stellen Sie sicher, dass die Android Debug Bridge (ADB) auf Ihrem Computer installiert ist. Wenn nicht, können Sie die Anweisungen auf XDA Developers befolgen: [ADB-Installationsanleitung](https://www.xda-developers.com/install-adb-windows-macos-linux).
 
@@ -58,3 +58,31 @@ Fertig, AdGuard für Android TV ist installiert.
 
    - Geben Sie im Terminal den Befehl `adb install Downloads/adguard_tv.apk` ein. Ersetzen Sie gegebenenfalls `Downloads/adguard_tv.apk` durch Ihren Pfad.
    - Warten Sie auf eine Meldung im Terminal, die die erfolgreiche Installation der App anzeigt.
+
+## Installing AdGuard for Android TV via atvTools
+
+**Important:** Your smartphone and TV with Android TV (TV box) must be on the same local network.
+
+1. Install the [atvTools](https://play.google.com/store/apps/details?id=dev.vodik7.atvtools) app on your Android smartphone
+
+2. Connect **atvTools** to **Android TV**
+
+   1. Enable developer mode on your Android TV device
+
+      `Settings` → `Device settings` → `About device` → Tap `Android TV build` until you see a message confirming that you have successfully obtained developer status
+
+   2. Enable USB debugging on your Android TV device
+
+      Go to `Settings` → `Device settings` → `For developers` → `Debugging`, allow and enable `USB debugging`
+
+3. Launch **atvTools** on your smartphone
+
+4. Find the desired **Android TV** device in the list and click it
+
+5. Allow the connection on the TV
+
+6. Download the [AdGuard for Android TV](https://agrd.io/tvapk) installer to your smartphone as an **APK** file
+
+7. In **atvTools**, click **Install** on the main screen and wait (less than a minute) until the **AdGuard for Android TV** icon appears in the list of applications
+
+![Main screen \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/android-tv/main-screen.png)

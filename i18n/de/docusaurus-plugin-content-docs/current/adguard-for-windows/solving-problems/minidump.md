@@ -1,74 +1,74 @@
 ---
-title: How to collect BSOD minidump
+title: So sammeln Sie einen BSOD-Minidump
 sidebar_position: 9
 ---
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
+Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock).
 
 :::
 
 :::note
 
-Data and files provided in minidump files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Daten und Dateien, die in Minidump-Dateien bereitgestellt werden, werden in Übereinstimmung mit [der AdGuard-Datenschutzerklärung](https://adguard.com/en/privacy.html) verarbeitet.
 
 :::
 
-Blue Screen of Death (BSOD) errors may occasionally occur while using AdGuard. When this happens, our support team may request a minidump file to help diagnose the issue. These files contain technical crash data that helps us identify and resolve the problem.
+Bei der Verwendung von AdGuard können gelegentlich „Blue Screen of Death“-Fehler (BSOD) auftreten. In diesem Fall kann unser Support-Team eine Minidump-Datei anfordern, um bei der Diagnose des Problems zu unterstützen. Diese Dateien enthalten technische Absturzdaten, die uns helfen, das Problem zu identifizieren und beheben zu können.
 
-## Checking for the existing minidump
+## Prüfung auf vorhandenen Minidump
 
-To collect minidump files, you’ll need administrator access on your computer. By default, Windows stores these files in the `C:\Windows\Minidump\` folder. The files you’re looking for will be named either `MEMORY.DMP` or follow the pattern `Mini(ddmmmyy-xxx).dmp` where the letters and numbers represent dates and sequence numbers.
+Um Minidump-Dateien sammeln zu können, werden Administratorrechte auf Ihrem Computer benötigt. Windows speichert diese Dateien standardmäßig im Ordner `C:\Windows\Minidump\`. Die Dateien, nach denen Sie suchen, tragen entweder den Namen `MEMORY.DMP` oder folgen dem Muster `Mini(ddmmmyy-xxx).dmp`, wobei die Buchstaben und Zahlen für das Datum und die laufende Nummer stehen.
 
-![Minidump file](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/minidump.png)
+![Minidump-Datei](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/minidump.png)
 
-If you can’t find these files, your system may not be configured to create minidumps automatically.
+Wenn Sie diese Dateien nicht finden können, ist Ihr System möglicherweise nicht für das automatische Erstellen von Minidumps konfiguriert.
 
-## Configure minidump settings
+## Minidump-Einstellungen konfigurieren
 
-If minidumps are not created automatically, follow these steps to enable _Small Memory Dump_:
+Wenn Minidumps nicht automatisch erstellt werden, gehen Sie wie folgt vor, um _Small Memory Dump_ zu aktivieren:
 
-1. Press the _Windows key + R_ to open the _Run_ dialog.
+1. Drücken Sie gleichzeitig die _Windows-Taste + R_, um das Dialogfeld _Ausführen_ zu öffnen.
 
-2. Type `sysdm.cpl` and click _Enter_. This will open the _System properties_ window.
+2. Geben Sie `sysdm.cpl` ein und klicken Sie auf _OK_. Dadurch wird das Fenster _Systemeigenschaften_ geöffnet.
 
-   ![Open system properties \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/sysdm.png)
+   ![Systemeigenschaften öffnen \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/sysdm.png)
 
-3. Navigate to _Advanced_ tab → _Startup and Recovery_ → _Settings_.
+3. Wechseln Sie zum Tab _Erweitert_ → _Start und Wiederherstellung_ → _Einstellungen_.
 
-   ![Advanced tab \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/advanced_tab.png)
+   ![Tab Erweitert \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/advanced_tab.png)
 
-4. Here you’ll find an option called _Write debugging information_. Make sure it’s set to _Small Memory Dump (256 KB)_ and that the path shows `%SystemRoot%\Minidump`. These settings will ensure that Windows creates the minidump files we need when a BSOD occurs.
+4. Hier finden Sie eine Option namens _Debuginformationen speichern_. Stellen Sie sicher, dass er auf _Small Memory Dump (256 KB)_ festgelegt ist und dass der Pfad `%SystemRoot%\Minidump` lautet. Diese Einstellungen stellen sicher, dass Windows die Minidump-Dateien erstellt, die wir benötigen, wenn ein BSOD auftritt.
 
-   ![Small memory dump \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/systemroot.png)
+   ![Minidump-Datei \*mobilgeräte](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/systemroot.png)
 
-5. Click _OK_ to save changes.
+5. Klicken Sie auf _OK_, um die Änderungen zu speichern.
 
-## After a crash occurs
+## Nach einem Absturz
 
-After experiencing a BSOD and restarting your computer, you can find the generated minidump files in the `C:\Windows\Minidump\` folder. Sorting the files by date modified makes it easy to find the most recent one corresponding to your crash.
+Nachdem ein BSOD aufgetreten ist und Sie Ihren Computer neu gestartet haben, finden Sie die erzeugten Minidump-Dateien im Ordner `C:\Windows\Minidump\`. Durch Sortieren der Dateien nach Änderungsdatum können Sie leicht die aktuellste Datei finden, die Ihrem Absturz entspricht.
 
-If you configured minidump settings after the crash occurred, you'll need to reproduce the issue to generate a new minidump file.
+Wenn Sie die Minidump-Einstellungen nach dem Auftreten des Absturzes konfiguriert haben, müssen Sie das Problem reproduzieren, um eine neue Minidump-Datei zu erstellen.
 
-## Collecting `wfpdiag.cab` file
+## Erfassen der Datei `wfpdiag.cab`
 
-Our support team may request a wfpdiag.cab file, along with a minidump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
+Unser Support-Team kann eine wfpdiag.cab-Datei zusammen mit einer Minidump-Datei anfordern, um die Systemprotokolle genauer analysieren und Probleme diagnostizieren zu können. Um die Datei zu erfassen, gehen Sie bitte wie folgt vor:
 
 1. Aktivieren Sie den AdGuard-Schutz.
 
-2. Click _Start_ and type `cmd` to open _Command Prompt_.
+2. Klicken Sie auf _Start_ und geben Sie `cmd` ein, um die _Eingabeaufforderung_ zu öffnen.
 
-3. Right-click _Command Prompt_ and choose _Run as administrator_.
+3. Klicken Sie mit der rechten Maustaste auf _Eingabeaufforderung_ und wählen Sie _Als Administrator ausführen_.
 
    :::note
 
-   A wfpdiag.cab file is created in your current directory. You can change the location by typing `cd <folder_name>`.
+   Es wird eine Datei „wfpdiag.cab“ in Ihrem aktuellen Verzeichnis erstellt. Sie können den Speicherort ändern, indem Sie `cd <folder_name>` eingeben.
 
    :::
 
-4. To start logging, enter the following command: `netsh wfp capture start`.
+4. Um die Protokollierung zu starten, geben Sie den folgenden Befehl ein: `netsh wfp capture start`.
 
-5. Visit any website to route traffic through AdGuard and log the filtering process.
+5. Besuchen Sie eine beliebige Website, um den Datenverkehr durch AdGuard zu leiten und den Filterungsprozess zu protokollieren.
 
-6. To stop logging, enter `netsh wfp capture stop`.
+6. Um die Protokollierung zu beenden, geben Sie `netsh wfp capture stop` ein.

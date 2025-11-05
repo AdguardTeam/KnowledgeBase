@@ -591,3 +591,33 @@ Na zařízeních s uživatelským rozhraním Realme UI 4.0 existují tři klíč
     - Vyhledejte **AdGuard** a povolte možnost **Always-on VPN**
 
     ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)
+
+## Motorola
+
+Na zařízeních Motorola existují čtyři klíčové konfigurace, které zajistí správnou funkci AdGuardu na pozadí.
+
+1. Povolit využití na pozadí:
+
+   - Přejděte do **Nastavení → Aplikace** a vyhledejte **AdGuard**
+   - Otevřete **Využití baterie aplikacemi**
+   - Povolte **Povolit využití baterie na pozadí**
+   - Klepněte na možnost s přepínačem
+   - Nastavte využití baterie na **Neomezeno**
+
+1. Odebrat omezení aktivity na pozadí:
+
+   - Přejděte do **Nastavení**
+   - Přejděte dolů a klepněte na **Aplikace a oznámení**
+   - Vyhledejte **AdGuard** a otevřete **Pokročilé → Baterie**
+   - Klepněte na **Omezení na pozadí** nebo **Limity na pozadí**
+   - Pokud se zobrazí **Aktivita na pozadí je omezena**, klepněte na ni a poté klepněte na **Odebrat**
+
+1. Spravovat aplikace na pozadí:
+
+   - Přejděte do **Nastavení** a poté do vyhledávacího pole napište **Spravovat aplikace na pozadí**
+   - Vyhledejte **AdGuard** a přepněte přepínač, abyste povolili aplikaci běžet na pozadí
+
+1. Zakázat adaptivní baterii:
+
+   - Přejděte do **Nastavení → Baterie**
+   - Vypněte možnost **Adaptivní baterie**

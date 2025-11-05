@@ -79,7 +79,7 @@ Tuto možnost nedoporučujeme povolovat, protože může vážně narušit prác
 
 :::
 
-Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
+:::note
 
 K dispozici v AdGuard pro Android, AdGuard pro Windows, AdGuard pro Mac a Rozšíření prohlížeče AdGuard (prohlížeče založené na MV2).
 
@@ -89,7 +89,7 @@ K dispozici v AdGuard pro Android, AdGuard pro Windows, AdGuard pro Mac a Rozš�
 
 Tato funkce odstraňuje hlavičky ETag a If-None-Match z požadavků a odpovědí, aby se zabránilo jejich sledování.
 
-Když prohlížeč osloví stránku, server jí přiřadí značku ETag. Tato značka ETag používá prohlížeč k ukládání obsahu stránky do mezipaměti. Při dalších požadavcích prohlížeč odešle ETag příslušnému serveru, čímž mu umožní zjistit identitu návštěvníka. Dokud jsou soubory webu uloženy v mezipaměti, je značka ETag odesílána pokaždé, když se váš prohlížeč obrátí na tento web. Pokud je na webu vložen obsah z jiného serveru (například obrázek nebo iframe), může tento server sledovat vaše aktivity bez vašeho vědomí.
+Když prohlížeč osloví stránku, server jí přiřadí značku ETag. Tato značka ETag používá prohlížeč k ukládání obsahu stránky do mezipaměti. Při dalších požadavcích odešle prohlížeč příslušnému serveru značku ETag, čímž umožní serveru zjistit identitu návštěvníka. Dokud jsou soubory webu uloženy v mezipaměti, je značka ETag odesílána pokaždé, když se váš prohlížeč obrátí na tento web. Pokud je na webu vložen obsah z jiného serveru (například obrázek nebo iframe), může tento server sledovat vaše aktivity bez vašeho vědomí.
 
 Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 

@@ -419,6 +419,19 @@ Tento modifikátor umožňuje zúžit pokrytí pravidla na konkrétní aplikaci 
 
 V případě počítače Mac můžete ID svazku nebo název procesu aplikace zjistit zobrazením příslušných podrobností o požadavku v záznamu filtrování.
 
+**Syntaxe**
+
+Modifikátor je seznam jednoho nebo více výrazů, z nichž každý je porovnáván s aplikací určitým způsobem v závislosti na svém typu. Tyto výrazy jsou odděleny symbolem `|`.
+
+```text
+applications = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
+entry_i = ( regular_app / wildcard_app / regexp )
+```
+
+- **`regular_app`** — regulární název aplikace (`example.app`). Odpovídá zadané aplikaci a je přiřazen lexikograficky.
+- **`wildcard_app`** — název aplikace končící zástupným znakem `*`, např. `org.example.*` nebo `com.ad*`. Odpovídá všem aplikacím, jejichž názvy začínají zadanou předponou. Porovnání se provádí lexikograficky.
+- **`regexp`** — regulární výraz, který začíná a končí znakem `/`. Funguje stejně jako v základních pravidlech URL, ale znaky `/`, `$`, `,` a `|` musí být uvozeny pomocí `\`.
+
 **Příklady**
 
 - `||baddomain.com^$app=org.example.app` — pravidlo pro blokování požadavků, které odpovídají zadané masce a jsou odeslány z Android aplikace `org.example.app`.
@@ -429,9 +442,23 @@ Pokud chcete, aby se pravidlo nevztahovalo na určité aplikace, začněte náze
 - `||baddomain.com^$app=~org.example.app` — pravidlo pro blokování požadavků, které odpovídají zadané masce a jsou odeslány z jakékoli aplikace kromě `org.example.app`.
 - `||baddomain.com^$app=~org.example.app1|~org.example.app2` — stejně jako výše, ale nyní jsou vyloučeny dvě aplikace: `org.example.app1` a `org.example.app2`.
 
+Zástupné znaky můžete použít v modifikátoru `$app`:
+
+- `||baddomain.com^$app=org.example.*` — použije se pro všechny aplikace, jejichž názvy balíčků začínají na `org.example.`
+
+V modifikátoru `$app` můžete použít regulární výrazy, které uzavřete do lomítek `/.../`. To umožňuje flexibilnější párování — například cílení na skupinu aplikací od stejného vydavatele nebo párování složitých vzorů.
+
+- `||baddomain.com^$app=/org\.example\.[a-z0-9_]+/` — platí pro všechny aplikace, jejichž název balíčku začíná `org.example` (např. `org.example.app1`, `org.example.utility` atd.).
+- `||baddomain.com^$app=/^org\.example\.app\$\|^org\.example\.[ab].*/` — platí pro `org.example.app` a pro všechny aplikace, jejichž balíček začíná `org.example.a` nebo `org.example.b`.
+
+Modifikátor `$app` podporuje kombinování všech tří typů záznamů — prostých názvů, zástupných znaků a regulárních výrazů — v rámci stejného pravidla, ale neumožňuje kombinovat negované a nenegované výrazy dohromady.
+
+- `||example.com^$app=org.example.app|org.example.*|/org\.example\.[a-z]+/` — platí pro `org.example.app`, všechny odpovídající aplikace `org.example.*` a `org.example.[a-z]+`.
+
 :::caution Omezení
 
-Aplikace v hodnotě modifikátoru nemohou mít zástupný znak, např. `$app=com.*.music`. Pravidla s takovým modifikátorem jsou považována za neplatná.
+- Aplikace v hodnotě modifikátoru nemohou obsahovat zástupný znak uvnitř řetězce, např. `$app=com.*.music`. Použijte místo toho regulární výraz: `$app=/com\..*\.music/`.
+- Nelze kombinovat negované (`~`) a nenegované výrazy ve stejném modifikátoru `$app` — bylo by to nejednoznačné.
 
 :::
 
@@ -439,6 +466,7 @@ Aplikace v hodnotě modifikátoru nemohou mít zástupný znak, např. `$app=com
 
 - Pouze AdGuard pro Windows, Mac a Android jsou technicky schopné používat pravidla s modifikátorem `$app`.
 - V systému Windows se v názvu procesu nerozlišují velká a malá písmena, počínaje AdGuard pro Windows s [CoreLibs][] v1.12 nebo novější.
+- Podpora regulárních výrazů a kombinování různých typů záznamů (prosté názvy, zástupné znaky a regulární výrazy) v modifikátoru `$app` je k dispozici od verze CoreLibs v1.19 nebo novější.
 
 :::
 
@@ -529,38 +557,23 @@ Pokud chcete, aby se pravidlo nevztahovalo na určité domény, začněte název
 
 **`$domain` modifikátor odpovídající cílové doméně:**
 
-V některých případech může modifikátor `$domain` odpovídat nejen doméně odkazovače, ale také cílové doméně. K tomu dojde, pokud jsou splněny všechny následující podmínky:
+V některých případech může modifikátor `$domain` odpovídat nejen doméně odkazovače, ale také cílové doméně.
 
-1. Požadavek má typ obsahu `document`
-1. Vzor pravidla neodpovídá žádné konkrétní doméně
-1. Vzor pravidla neobsahuje regulární výrazy
-1. Modifikátor `$domain` obsahuje pouze domény ve výjimkách, např. `$domain=~example.org|~example.com`
+K tomu dochází, když pravidlo obsahuje jeden z následujících modifikátorů: [`$cookie`](#cookie-modifier), [`$csp`](#csp-modifier), [`$permissions`](#permissions-modifier), [`$removeparam`](#removeparam-modifier).
 
-Následující predikát by měl být splněn, aby bylo možné provést porovnání cílové domény:
-
-```text
-1 AND ((2 AND 3) OR 4)
-```
-
-To znamená, že pokud modifikátor `$domain` obsahuje pouze domény ve výjimkách, pak pravidlo nemusí splňovat druhou a třetí podmínku, aby se cílová doména shodovala s modifikátorem `$domain`.
-
-Pokud některé z výše uvedených podmínek nejsou splněny, ale pravidlo obsahuje modifikátor [`$cookie`](#cookie-modifier) nebo [`$csp`](#csp-modifier), cílová doména bude přesto přiřazena.
-
-Pokud odkazující doména odpovídá pravidlu s `$domain`, které výslovně vylučuje doménu odkazujícího serveru, pravidlo se nepoužije, i když cílová doména také odpovídá pravidlu. To má vliv i na pravidla s modifikátory [`$cookie`](#cookie-modifier) a [`$csp`](#csp-modifier).
+Tyto modifikátory nebudou použity, pokud odkazující doména odpovídá pravidlu s `$domain`, které výslovně vylučuje odkazující doménu, i když cílová doména také odpovídá pravidlu.
 
 **Příklady**
 
 - `*$cookie,domain=example.org|example.com` zablokuje soubory cookie pro všechny požadavky do a z domény `example.org` a `example.com`.
-- `*$document,domain=example.org|example.com` zablokuje všechny požadavky do a z domény `example.org` a `example.com`.
+- `*$document,domain=example.org|example.com` zablokuje pouze požadavky z `example.org` a `example.com`, ale ne požadavky směřující na tyto domény.
 
 V následujících příkladech se předpokládá, že požadavky jsou odesílány z adresy `http://example.org/page` (odkazující adresa), cílová adresa URL je `http://targetdomain.com/page`.
 
 - `page$domain=example.org` bude přiřazena, protože odpovídá doméně odkazu.
-- `page$domain=targetdomain.com` bude přiřazena, protože odpovídá cílové doméně a splňuje všechny výše uvedené požadavky.
-- `||*page$domain=targetdomain.com` nebude přiřazena, protože vzor `||*page` odpovídá konkrétním doménám, např. `example.page`.
-- `||*page$domain=targetdomain.com,cookie` bude přiřazena, protože pravidlo obsahuje modifikátor `$cookie`, přestože vzor `||*page` může odpovídat konkrétním doménám.
-- `/banner\d+/$domain=targetdomain.com` nebude přiřazena, protože obsahuje regulární výraz.
-- `page$domain=targetdomain.com|~example.org` nebude přiřazena, protože doména odkazu je výslovně vyloučena.
+- `page$domain=targetdomain.com` nebude odpovídat, protože neodpovídá doméně odkazujícího webu.
+- `||*page$domain=targetdomain.com,cookie` bude odpovídat, protože pravidlo obsahuje modifikátor `$cookie`, i když vzor `||*page` může odpovídat konkrétním doménám.
+- `page$domain=targetdomain.com|~example.org,cookie` nebude přiřazena, protože doména odkazu je výslovně vyloučena.
 
 ##### omezení modifikátoru `$domain` {#domain-modifier-limitations}
 
@@ -613,7 +626,7 @@ kde:
 
 :::caution Omezení
 
-1. Modifikátor `$header` lze použít pouze při příjmu záhlaví. Pokud je tedy požadavek zablokován nebo přesměrován v dřívější fázi, nelze modifikátor použít.
+1. Modifikátor `$header` lze porovnat pouze v případě, že jsou přijata záhlaví. Pokud je tedy požadavek zablokován nebo přesměrován v dřívější fázi, nelze modifikátor použít.
 
 1. V Rozšíření prohlížeče AdGuard je modifikátor `$header` kompatibilní poze s [`$csp`](#csp-modifier), [`$removeheader`](#removeheader-modifier) (pouze hlavičky odpovědí), [`$important`](#important-modifier), [`$badfilter`](#badfilter-modifier), [`$domain`](#domain-modifier), [`$third-party`](#third-party-modifier), [`$match-case`](#match-case-modifier) s [content-type modifiers](#content-type-modifiers) jako [`$script`](#script-modifier) a [`$stylesheet`](#stylesheet-modifier). Pravidla s jinými modifikátory jsou považována za neplatná a budou vyřazena.
 
@@ -713,6 +726,8 @@ Pravidla s modifikátorem `$popup` nejsou Blokátorem obsahu AdGuard podporován
 
 Funguje stejně jako modifikátor [`$~third-party`](#third-party-modifier), ale zachází s požadavkem jako s vlastním, pokud má odkazovač a původ naprosto stejný název hostitele.
 
+Požadavky bez odkazovače jsou také považovány za vlastní požadavky a na tyto požadavky se vztahují pravidla s modifikátorem `$strict-first-party`.
+
 **Příklady**
 
 - domain.com$strict-first-party' – toto pravidlo platí pouze pro `domena.com`. Např. požadavek z `domain.com` na `http://domain.com/icon.ico` je požadavek vlastní. Požadavek z `sub.domain.com` na `http://domain.com/icon.ico` je považován za požadavek třetí strany (na rozdíl od modifikátoru `$~third-party`).
@@ -727,6 +742,8 @@ Místo plného názvu modifikátoru můžete použít kratší název (alias): `
 
 Pravidla s modifikátorem `$strict-first-party` jsou podporována AdGuardem pro Windows, Mac, Android a Linux s [CoreLibs][] v1.16 nebo novější.
 
+Požadavky bez odkazovače jsou porovnávány podle pravidel s `$strict-first-party` v AdGuardu pro Windows, AdGuardu pro Mac a AdGuardu pro Android s [CoreLibs][] v1.18 nebo novější.
+
 :::
 
 #### **`$strict-third-party`** {#strict-third-party-modifier}
@@ -737,7 +754,7 @@ Funguje stejně jako modifikátor [`$third-party`](#third-party-modifier), ale z
 
 - `||domain.com^$strict-thirdparty` — toto pravidlo bude použito na všechny domény, kromě `domain.com`. Příklad požadavku třetí strany: `http://sub.domain.com/banner.jpg` (na rozdíl od modifikátoru `$third-party`).
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 Místo plného názvu modifikátoru můžete použít kratší název (alias): `$strict3p`.
 
@@ -766,17 +783,25 @@ Aby mohla být žádost třetí strany považována za takovou, měla by splňov
 
 **`$third-party`:**
 
-- `||domain.com^$third-party` — toto pravidlo bude použito na všechny domény, kromě `domain.com` a její subdomény. Příklad požadavku třetí strany: `http://example.org/banner.jpg`.
+- `||domain.com^$third-party` — toto pravidlo bude použito na všechny domény, kromě `domain.com` a její subdomény. Pravidlo se nikdy neuplatní, pokud neexistuje žádný odkazovač. Příklad požadavku třetí strany: `http://example.org/banner.jpg`.
 
-Pokud existuje modifikátor `$third-party`, pravidlo se použije pouze na požadavky, které nejsou od třetích stran. To znamená, že musí být odeslány ze stejné domény.
+Pokud existuje modifikátor `$third-party`, pravidlo se použije pouze na požadavky, které nejsou od třetích stran. To znamená, že musí být odeslány ze stejné domény nebo by neměly mít vůbec žádný odkazovač.
 
 **`$~third-party`:**
 
-- `||domain.com$~third-party` — toto pravidlo se vztahuje výhradně na `domain.com`. Příklad požadavku která není podán třetí stranou: `http://domain.com/icon.ico`.
+- `||domain.com$~third-party` — toto pravidlo se vztahuje výhradně na `domain.com`. Příklad požadavku která není podán třetí stranou: `http://sub.domain.com/icon.ico`.
+
+Požadavky bez odkazovače jsou rovněž považovány za požadavky, které nejsou požadavky třetích stran, a jsou na ně aplikována pravidla s modifikátorem `$~third-party`.
 
 :::note
 
 Místo plného názvu modifikátoru můžete použít kratší název (alias): `$3p`.
+
+:::
+
+:::info Kompatibilita
+
+Požadavky bez odkazovače jsou porovnávány podle pravidel s `$~third-party` v AdGuardu pro Windows, AdGuardu pro Mac a AdGuardu pro Android s [CoreLibs][] v1.18 nebo novější.
 
 :::
 
@@ -808,7 +833,7 @@ Existuje sada modifikátorů, které lze použít k omezení oblasti použití p
 
 :::info Kompatibilita
 
-V tom, jak AdGuard určuje typ obsahu na různých platformách, je velký rozdíl. U Rozšíření prohlížeče AdGuard je typ obsahu pro každý požadavek poskytován prohlížečem. AdGuard pro Windows, Mac a Android používají následující metodu: nejprve se aplikace pokusí určit typ požadavku podle záhlaví požadavku `Sec-Fetch-Dest` nebo podle přípony názvu souboru. Pokud není požadavek v této fázi zablokován, určí se typ pomocí záhlaví `Content-Type` na začátku odpovědi serveru.
+V tom, jak AdGuard určuje typ obsahu na různých platformách, existuje velký rozdíl. U Rozšíření prohlížeče AdGuard je typ obsahu pro každý požadavek poskytován prohlížečem. AdGuard pro Windows, Mac a Android používají následující metodu: nejprve se aplikace pokusí určit typ požadavku podle záhlaví požadavku `Sec-Fetch-Dest` nebo podle přípony názvu souboru. Pokud není požadavek v této fázi zablokován, určí se typ pomocí záhlaví `Content-Type` na začátku odpovědi serveru.
 
 :::
 
@@ -1037,7 +1062,7 @@ Doporučujeme také seznámit se s [přehledem filtrů Adblock Plus](https://adb
 | [$generichide](#generichide-modifier)   |              ✅               |                ✅                |                    ✅                     |               ✅               |                      ✅                       |                      ✅                       |                 ✅                 |
 | [$specifichide](#specifichide-modifier) |              ✅               |                ✅                |                    ✅                     |               ✅               |                      ❌                       |                      ❌                       |                 ❌                 |
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 - ✅ — plně podporováno
 - ✅ * — podporováno, ale spolehlivost se může lišit nebo se mohou vyskytnout omezení; více informací naleznete v popisu modifikátoru
@@ -1306,7 +1331,7 @@ Místo plného názvu modifikátoru můžete použít kratší název (alias): `
 
 :::
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 Všechna kosmetická pravidla — nejen ta specifická — lze zakázat pomocí modifikátoru [`$elemhide`](#elemhide-modifier).
 
@@ -1877,7 +1902,7 @@ V AdGuardu pro Windows, Mac a Android s [CoreLibs][] v1.11 nebo novější, lze 
 {
     "elems": [
         {
-            "a": {"b": {"c": 123}},
+            "a": {"b": {"c": 123}}
         },
         {
             "a": {"b": {"c": "abc"}}
@@ -2205,7 +2230,7 @@ Hodnota syntaxe `$permissions` je shodná se [syntaxí](https://developer.mozill
 1. Čárka, která odděluje více prvků **MUSÍ být uvozena** – viz příklady níže.
 2. Místo čárky lze pro oddělení funkcí použít znak `(|)`.
 
-Seznam dostupných direktiv je k dispozici [zde](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
+Seznam dostupných direktiv je k dispozici v [Zásadách oprávnění](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
 
 Hodnota `$permissions` může být v případě pravidel pro výjimky prázdná — viz příklady níže.
 
@@ -2346,7 +2371,7 @@ Pravidla s modifikátorem `$referrerpolicy` jsou podporována AdGuardem pro Wind
 
 Pravidla s modifikátorem `$removeheader` jsou určena k odstranění záhlaví z požadavků a odpovědí HTTP. Původní motivací pro tento typ pravidla je možnost zbavit se záhlaví `Refresh`, které se často používá k přesměrování uživatelů na nežádoucí místo. To však není jediný případ, kdy může být tento modifikátor užitečný.
 
-Stejně jako `$csp`, `$redirect`, `$removeparam` a `$cookie` i tento modifikátor existuje samostatně, pravidla s ním nezávisí na běžných základních pravidlech, tj. pravidelná výjimka nebo pravidla blokování jej neovlivní. Ve výchozím nastavení ovlivňuje pouze záhlavíodpovědí. Můžete jej však také změnit tak, aby odstraňoval hlavičky z požadavků HTTP.
+Stejně jako `$csp`, `$redirect`, `$removeparam` a `$cookie` i tento modifikátor existuje samostatně, pravidla s ním nezávisí na běžných základních pravidlech, tj. pravidelná výjimka nebo pravidla blokování jej neovlivní. Ve výchozím nastavení ovlivňuje pouze záhlaví odpovědí. Můžete jej však také změnit tak, aby odstraňoval hlavičky z požadavků HTTP.
 
 **Syntaxe**
 
@@ -2546,7 +2571,7 @@ Speciální znaky by měly být v pravidle URL zakódovány, aby správně odpov
 
 Například, pro odstranění `?$param=true` byste měli použít pravidlo `$removeparam=%24param`.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 Mezery a čárky by měly být také zakódovány v adrese URL, jinak pravidlo nebude odpovídat adrese URL. Nicméně, znaky `.`, `-`, `_` a `~` by měly být používány tak, jak jsou, protože nejsou označeny jako rezervované znaky v kódování URL.
 
@@ -2573,7 +2598,7 @@ Pro použití inverze použijte `~`:
 - `$removeparam=~param` — odstraní všechny parametry dotazu s názvem odlišným od `param`.
 - `$removeparam=~/regexp/` — odstraní všechny parametry dotazu, které neodpovídají regulárnímu výrazu `regexp`.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 Pokud se `~` neobjeví na začátku pravidla, považuje se za symbol v textu.
 
@@ -2970,7 +2995,7 @@ Každé pravidlo má svou vlastní prioritu, což je nutné v případě, že po
 
 :::note Kolize
 
-Pokud stejnému požadavku odpovídají dvě pravidla se stejnou prioritou, implementace filtru určí, které z nich bude vybráno.
+Pokud stejnému požadavku odpovídají dvě pravidla se stejnou prioritou, implementace filtrovacího modulu určí, které z nich bude vybráno.
 
 :::
 
@@ -3120,7 +3145,7 @@ Modifikátor [`$important`](#important-modifier) přidává `10^6` k prioritě p
 
 :::note
 
-Modifikátor [`$replace`](#replace-modifier) má přednost před všemi pravidly blokování kategorií 1–3, stejně jako před pravidly výjimek z kategorií 3–5, **kromě** [`$content`](#content-modifier), protože výjimka s modifikátorem `$content` má přednost před všemi pravidly `$replace`.
+Modifikátor [`$replace`](#replace-modifier) má přednost před všemi pravidly blokování kategorií 1-3, stejně jako před pravidly výjimek z kategorií 3-5, **kromě** [`$content`](#content-modifier), protože výjimka s modifikátorem `$content` má přednost před všemi pravidly `$replace`.
 
 :::
 
@@ -3312,6 +3337,26 @@ Styly, které vedou k načtení jakéhokoli zdroje, jsou zakázány. V podstatě
 Pravidla CSS nejsou Blokátorem obsahu AdGuard podporována.
 
 Pravidla CSS mohou fungovat odlišně [v závislosti na platformě](#cosmetic-rules-priority).
+
+:::
+
+:::info Kompatibilita s Adblock Plus
+
+V produktech AdGuardu, které používají **CoreLibs verze 1.18 nebo novější**, můžete také použít pravidla pro skrytí prvků k vložení deklarace `remove: true`:
+
+```adblock
+example.org##body { remove: true; }
+```
+
+Toto použití se nedoporučuje, protože je lepší používat [pravidla CSS](#cosmetic-css-rules), a je podporováno pouze z důvodu kompatibility se seznamy filtrů napsanými pro Adblock Plus.
+
+Výjimky skrytí prvků (`#@#`) jsou porovnávány pouze podle části selektoru, přičemž část bloku deklarací je ignorována. Například výše uvedené pravidlo lze deaktivovat pomocí kterékoli z následujících výjimek:
+
+```adblock
+example.org#@#body
+example.org#@#body { remove: true; }
+example.org#@#body{remove:true;}
+```
 
 :::
 
@@ -4077,7 +4122,7 @@ example.org$$div[some_attribute]
 
 Toto pravidlo odstraní všechny prvky `div` s atributem `some_attribute` na `example.org` a všech jejích subdoménách. Oba prvky `div` z výše uvedeného příkladu budou odstraněny.
 
-### Speciální atributy
+### Speciální atributy {#html-filtering-rules--special-attributes}
 
 Kromě obvyklých atributů, jejichž hodnotu kontroluje každý prvek, existuje sada speciálních atributů, které mění způsob fungování pravidla. Níže je uveden seznam těchto atributů:
 
@@ -4187,9 +4232,9 @@ Speciální atribut `min-length` se nesmí objevit v selektoru nalevo od kombin�
 
 :::
 
-### Pseudotřídy
+### Pseudotřídy {#html-filtering-rules--pseudo-classes}
 
-#### `:contains()`
+#### `:contains()` {#html-filtering-rules--contains}
 
 ##### Syntaxe
 
@@ -4429,7 +4474,7 @@ Další informace o důvěryhodných skriptletech najdete na [GitHubu](https://g
 
 Každé pravidlo lze upravit pomocí modifikátorů popsaných v následujících odstavcích.
 
-**Syntaxe** {#non-basic-rules-modifiers-syntax}
+**Syntaxe**
 
 ```text
 rule = "[$" modifiers "]" [rule text]
@@ -4715,7 +4760,7 @@ domain.com##div.ad
 
 :::info Kompatibilita
 
-Direktiva `!#else` je podporována nástrojem [FiltersDownloader][gh-filters-downloader] v1.1.20 nebo novějším.
+Direktivu `!#else` podporuje [FiltersDownloader][gh-filters-downloader] v1.1.20 nebo novější.
 
 Je již podporována pro seznamy filtrů sestavené pomocí [FiltersRegistry][], ale stále nemusí být podporována produkty AdGuardu při přidání seznamu filtrů s `!#else` jako vlastních. Následující produkty ji budou podporovat ve zmíněných nebo novějších verzích:
 
@@ -5011,7 +5056,7 @@ Následující skriptlety lze také použít pro účely ladění:
 
 ### Zkratky produktů {#what-product}
 
-1. `aplikace CoreLibs` — [AdGuard pro Windows](/adguard-for-windows/features/home-screen), [AdGuard pro Mac](/adguard-for-mac/features/main), [AdGuard pro Android](/adguard-for-android/features/protection/ad-blocking) a [AdGuard pro Linux](/adguard-for-linux)
+1. `Aplikace CoreLibs` — [AdGuard pro Windows](/adguard-for-windows/features/home-screen), [AdGuard pro Mac](/adguard-for-mac/features/main), [AdGuard pro Android](/adguard-for-android/features/protection/ad-blocking) a [AdGuard pro Linux](/adguard-for-linux)
 1. `AdGuard pro Chromium` — [Rozšíření prohlížeče AdGuard](/adguard-browser-extension/availability) pro Chrome a další prohlížeče založené na Chromium, např. nový Microsoft Edge a Opera
 1. `Adguard pro Chrome MV3` — [Rozšíření prohlížeče AdGuard pro Chrome MV3](/adguard-browser-extension/mv3-version)
 1. `Adguard pro Firefox` — [Rozšíření prohlížeče AdGuard](/adguard-browser-extension/availability) pro Firefox

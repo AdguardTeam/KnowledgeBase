@@ -49,15 +49,15 @@ AdGuard for Linuxをご利用いただくには[AdGuardライセンス](https://
 
 2. Then select the desired option:
 
-   ![adguard-cli activate \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation1.png)
+   ![adguard-cli activate \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/1activate.png)
 
 3. Once you have a license, follow the provided link to proceed with the activation:
 
-   ![Activate license \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation2.png)
+   ![Activate license \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/2activate_link.png)
 
 4. After activation, you can continue to work with the program:
 
-   ![Successful activation \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation3.png)
+   ![Successful activation \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/3activate_success.png)
 
 5. You can also reset your license by entering:
 
@@ -77,7 +77,7 @@ AdGuard for Linuxをご利用いただくには[AdGuardライセンス](https://
    adguard-cli configure
    ```
 
-   ![Setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation4.png)
+   ![Setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/4configure.png)
 
    The wizard will ask basic questions required for the initial setup.
 
@@ -87,7 +87,7 @@ AdGuard for Linuxをご利用いただくには[AdGuardライセンス](https://
    adguard-cli start
    ```
 
-   ![Start protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation5.png)
+   ![Start protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/5start.png)
 
 8. 保護ステータスを表示するには、以下を入力します：
 
@@ -101,7 +101,7 @@ AdGuard for Linuxをご利用いただくには[AdGuardライセンス](https://
    adguard-cli stop
    ```
 
-   ![保護機能を停止する \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+   ![Stop protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/6status-stop.png)
 
 9. 現在の構成を確認するには、以下のように入力します：
 
@@ -109,7 +109,7 @@ AdGuard for Linuxをご利用いただくには[AdGuardライセンス](https://
    adguard-cli config show
    ```
 
-   ![現在のセットアップ \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+   ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/7config_show.png)
 
    構成ファイルへのパスも表示されます。これは直接編集可能で編集すべきです。 すべての追加オプションの説明が含まれています。
 

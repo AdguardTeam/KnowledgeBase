@@ -146,12 +146,12 @@ V této sekci najdete informace o své licenci a můžete provádět následují
 
 - Zakoupit licenci AdGuardu pro aktivaci [funkcí plné verze](/adguard-for-android/features/free-vs-full)
 - Přihlásit se ke svému AdGuard účtu nebo zadat licenční klíč pro aktivaci licence
-- Zaregistrovat se a aktivovat si 7denní zkušební dobu, pokud jste ji ještě nevyužili
+- Zaregistrujte se a aktivujte si 14denní zkušební období. Aktivační kód lze použít na různých zařízeních a platformách
 - Obnovit stav licence z nabídky se třemi tečkami (⋮)
 - Otevřít AdGuard účet a spravovat v něm své licence
 - Resetovat licenci — například pokud jste dosáhli limitu zařízení pro tuto licenci a chcete použít jinou
 
-![License screen \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![License screen \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/android/settings/licensetab.png)
 
 ## Podpora
 
