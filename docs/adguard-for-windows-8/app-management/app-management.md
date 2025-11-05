@@ -15,7 +15,7 @@ In the *App management* section, you can manage routing and filtering settings f
 
 Once AdGuard detects that an app has gone online, it is automatically added to *App management*, and its traffic is routed through AdGuard.
 
-Filtering also works by default — AdGuard filters all traffic, and you can choose what to exclude from filtering.
+By default, AdGuard filters all traffic, but you can choose what to exclude.
 
 AdGuard also filters HTTPS traffic, as most websites today use HTTPS. This is especially important for blocking ads on sites like youtube.com, facebook.com, and x.com, where it is impossible to remove ads without HTTPS filtering.
 
