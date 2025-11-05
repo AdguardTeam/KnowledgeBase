@@ -23,6 +23,6 @@ Here you can:
 - enable automatic activation of language-specific filters
 - manage User rules.
 
-You can also open the *Filtering log* to view all requests made by browsers and apps on your computer. From there, it’s easy to block or unblock any request by creating a custom rule. In the *Filter editor* you can create, add, and import your own rules and filters.
+You can also open the *Filtering log* to view all requests made by browsers and apps on your computer. From there, it’s easy to block or unblock any request by creating a custom rule. In the *Filter editor*, you can create, add, and import your own rules and filters.
 
 ![Filtering log and Filter editor *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/filtering_log_menu.png)
