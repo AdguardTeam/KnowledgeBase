@@ -17,7 +17,7 @@ Right above the switch are the icons for *Ad blocking*, *Tracking protection*, *
 
 If you want to fine-tune the app, open the menu on the left. To set up ad blocking and security features manually, go to the *Protection* tab.
 
-In *Statistics* you can see how many ads, trackers, and threats have been blocked.
+In *Statistics*, you can see how many ads, trackers, and threats have been blocked.
 
 *App management* gives you control over filtering and routing for installed apps.
 
