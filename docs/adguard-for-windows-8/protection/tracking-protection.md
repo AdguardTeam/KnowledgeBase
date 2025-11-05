@@ -43,7 +43,7 @@ Blocks trackers and web analytics using AdGuard Tracking Protection filter.
 
 ### Remove tracking parameters from URLs
 
-Strips tracking parameters such as utm_* and fb_ref from pages’ URLs using the AdGuard URL Tracking filter.
+Strips tracking parameters such as `utm_*` and `fb_ref` from pages’ URLs using *AdGuard URL Tracking filter*.
 
 ### Hide your search queries
 
