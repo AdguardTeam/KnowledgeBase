@@ -43,7 +43,7 @@ You can use one of these public servers, add your own custom DNS server, or pick
 
 ## Add DNS filters and rules
 
-To fine-tune protection, you can create your own DNS filters using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). You can also import ready-made  [DNS filters](https://filterlists.com).
+To fine-tune protection, you can create your own DNS filters using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/) or import ready-made [DNS filters](https://filterlists.com).
 
 In addition, you can create custom DNS rules to block, unblock, or redirect domains as needed. Use our built-in rule constructor.
 
