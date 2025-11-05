@@ -11,7 +11,7 @@ This is a beta release and still under development. If you’d like to try it, d
 
 :::
 
-Annoyance filters are designed to improve the usability of websites by blocking elements on pages that are not advertisements but distract from and interfere with site interaction or content consumption — such as various modal windows and interactive forms, cookie consent notifications and requests, mobile app banners, and various widgets.
+Annoyance filters are designed to improve website usability by blocking non-advertisement elements that distract from or interfere with site interaction or content consumption. These elements include modal windows, interactive forms, cookie consent notifications and requests, mobile app banners, and various widgets.
 
 This filter may contain rules that are not suitable for all users. Sometimes it is recommended to disable this filter. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
 
