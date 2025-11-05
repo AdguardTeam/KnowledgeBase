@@ -27,7 +27,7 @@ All statistics are stored locally on your device. We only calculate how much dat
 
 This section displays stats for all apps installed on your device. You can sort apps by the number of blocked ads or trackers or by the number of sent requests.
 
-If you tap an app, you can see its full stats: the requests it sends and the domains and companies it reaches out to.
+If you click an app, you can see its full stats: the requests it sends and the domains and companies it reaches out to.
 
 ![App stats *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/statistics/app_stats.png)
 
