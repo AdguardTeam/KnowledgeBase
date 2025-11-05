@@ -15,7 +15,7 @@ AdGuard for Windows is an easy-to-use tool that blocks annoying banners, popups,
 
 ## [Home screen](/adguard-for-windows-8/home-screen/)
 
-A toggle to enable or disable AdGuard protection, along with icons for activating Ad blocking, Tracking protection, DNS protection, and Annoyance blocking. Settings can be accessed through the left-side menu.
+A toggle to enable or disable AdGuard protection, along with icons for activating *Ad blocking*, *Tracking protection*, *DNS protection*, and *Annoyance blocking*. Settings can be accessed through the left-side menu.
 
 ## [Protection](/adguard-for-windows-8/protection/)
 
