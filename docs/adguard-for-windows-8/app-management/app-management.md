@@ -13,7 +13,7 @@ This is a beta release and still under development. If you’d like to try it, d
 
 In the *App management* section, you can manage routing and filtering settings for all apps installed on your device.
 
-Once AdGuard detects that an app has gone online, it is automatically added to App Management, and its traffic is routed through AdGuard.
+Once AdGuard detects that an app has gone online, it is automatically added to *App management*, and its traffic is routed through AdGuard.
 
 Filtering also works by default — AdGuard filters all traffic, and you can choose what to exclude from filtering.
 
