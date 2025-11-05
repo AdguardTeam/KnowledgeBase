@@ -11,7 +11,7 @@ This is a beta release and still under development. If you’d like to try it, d
 
 :::
 
-The *Ad blocking* section is responsible for removing ads from the websites you visit and from the apps installed on your device. To filter banners, pop-ups, trackers, and other intrusive elements, AdGuard relies on filters — sets of rules written in a [special syntax](/general/ad-filtering/create-own-filters). If you’d like to learn more about how they work, read our [article about filters](/general/ad-filtering/how-ad-blocking-works).
+The *Ad blocking* section is responsible for removing ads from the websites you visit and from the apps installed on your device. To filter banners, popups, trackers, and other intrusive elements, AdGuard relies on filters — sets of rules written in a [special syntax](/general/ad-filtering/create-own-filters). If you’d like to learn more about how they work, read our [article about filters](/general/ad-filtering/how-ad-blocking-works).
 
 ![Ad blocking *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/ad_blocking_new.png)
 
