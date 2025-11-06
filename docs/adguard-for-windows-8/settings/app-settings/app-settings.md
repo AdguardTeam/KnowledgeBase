@@ -11,7 +11,7 @@ This is a beta release and still under development. If you’d like to try it, d
 
 :::
 
-![App settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/app_settings_1.png)
+![App settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/general_settings.png)
 
 Here you can adjust the main app settings: choose between light and dark themes, set the app language, enable AdGuard to launch at system startup, and allow silent automatic updates. It’s also possible to select the update channel and specify how often AdGuard checks for filter updates.
 
