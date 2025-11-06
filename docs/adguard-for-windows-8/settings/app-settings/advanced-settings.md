@@ -1,13 +1,13 @@
 ---
 title: Advanced settings
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 :::info
 
 This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level.
 
-This is a beta version that is still under development. If you’d like to try it, download the [beta version of AdGuard for Windows v8](https://agrd.io/adguard_for_windows_8_beta).
+This is a beta release and still under development. If you’d like to try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
 
 :::
 
@@ -35,7 +35,7 @@ When enabled, AdGuard will automatically detect filter subscription links (like 
 
 With this option enabled, AdGuard reroutes all your traffic to a local proxy server for filtering.
 
-If it’s turned off, AdGuard filters traffic directly — without redirecting it. In this mode, Windows sees AdGuard as the only app connecting to the internet, since all other apps go through it. This can slightly improve performance but may reduce the effectiveness of the system firewall.
+If it’s turned off, AdGuard filters traffic directly — without redirecting it. In this mode, Windows sees AdGuard as the only app connecting to the Internet, since all other apps go through it. This can slightly improve performance but may reduce the effectiveness of the system firewall.
 
 ## Open AdGuard at system start-up
 
@@ -103,4 +103,4 @@ But if needed, you can specify different IP addresses here — they’ll be trie
 
 ## DNS exclusions
 
-Domains listed here bypass AdGuard’s DNS server. Their requests go through the system’s default resolver, and AdGuard does not apply any blocking rules to them.
+Domains listed here bypass AdGuard DNS servers. Their requests go through the system’s default resolver, and AdGuard does not apply any blocking rules to them.
