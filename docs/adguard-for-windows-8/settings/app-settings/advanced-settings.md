@@ -77,7 +77,7 @@ Choose how AdGuard responds when a domain is blocked by a DNS rule based on the 
 
 ### Custom IPv4 address
 
-If Custom IP address is selected in *Blocking mode for DNS rules*, this IP address will be returned in response to blocked A requests. If none are specified, AdGuard will reply with the default REFUSED error.
+If *Custom IP address* is selected in *Blocking mode for DNS rules*, this IP address will be returned in response to blocked A requests. If none are specified, AdGuard will reply with the default REFUSED error.
 
 ### Custom IPv6 address
 
