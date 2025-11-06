@@ -11,11 +11,11 @@ This is a beta version that is still under development. If you’d like to try i
 
 :::
 
-The *Advanced settings* section contains options that go beyond what most users usually need. AdGuard for Windows AdGuard works perfectly out of the box, but these settings can be useful in special cases or for troubleshooting.
+The *Advanced settings* section contains options that go beyond what most users usually need. AdGuard for Windows works perfectly out of the box, but these settings can be useful in special cases or for troubleshooting.
 
 :::caution
 
-Changing advanced settings without understanding them may cause performance issues, break your internet connection, or affect your security and privacy. Only modify them if you know what you’re doing or if instructed by our support team.
+Changing advanced settings without understanding them may cause performance issues, break your Internet connection, or affect your security and privacy. Only modify them if you know what you’re doing or if instructed by our support team.
 
 :::
 
@@ -35,7 +35,7 @@ When enabled, AdGuard will automatically detect filter subscription links (like 
 
 With this option enabled, AdGuard reroutes all your traffic to a local proxy server for filtering.
 
-If it's turned off, AdGuard filters traffic directly — without redirecting it. In this mode, Windows sees AdGuard as the only app connecting to the internet, since all other apps go through it. This can slightly improve performance but may reduce the effectiveness of the system firewall.
+If it’s turned off, AdGuard filters traffic directly — without redirecting it. In this mode, Windows sees AdGuard as the only app connecting to the internet, since all other apps go through it. This can slightly improve performance but may reduce the effectiveness of the system firewall.
 
 ## Open AdGuard at system start-up
 
@@ -69,7 +69,7 @@ Using the *Block Java* option does not affect JavaScript — it will remain enab
 
 ## Blocking mode for DNS rules
 
-Choose how AdGuard responds when a domain is blocked by a DNS rule based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
+Choose how AdGuard responds when a domain is blocked by a DNS rule based on the [hosts-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
 - Return a “REFUSED” error
 - Return a “NXDOMAIN” error
@@ -81,7 +81,7 @@ If Custom IP address is selected in *Blocking mode for DNS rules*, this IP addre
 
 ### Custom IPv6 address
 
-If Custom IP address is selected in *Blocking mode for DNS rules*, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "REFUSED" error.
+If *Custom IP address* is selected in *Blocking mode for DNS rules*, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default REFUSED error.
 
 ## Fallback servers
 
@@ -97,9 +97,9 @@ Specify how long (in milliseconds) AdGuard should wait for a DNS response before
 
 ## Custom bootstrap addresses
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in DNS protection. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in DNS protection. Such a “middle ground” is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
-But if needed, you can specify different IP addresses here — they’ll be tried in order from top to bottom. If none work, or nothing is entered, AdGuard will fall back to system defaults.
+But if needed, you can specify different IP addresses here — they’ll be tried in the order from top to bottom. If none work or nothing is entered, AdGuard will fall back to system defaults.
 
 ## DNS exclusions
 

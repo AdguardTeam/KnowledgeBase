@@ -5,9 +5,9 @@ sidebar_position: 2
 
 :::info
 
-This article describes the beta version of AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level.
+This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level.
 
-This is a beta release and still under development. If you’d like to try it, download the [beta version of AdGuard for Windows v8](https://agrd.io/adguard_for_windows_8_beta).
+This is a beta version that is still under development. If you’d like to try it, download the [beta version of AdGuard for Windows v8](https://agrd.io/adguard_for_windows_8_beta).
 
 :::
 
@@ -39,7 +39,7 @@ For maximum flexibility, select *Custom* and adjust everything manually. The set
 
 ### Block trackers
 
-Blocks trackers and web analytics using AdGuard Tracking Protection filter.
+Blocks trackers and web analytics using *AdGuard Tracking Protection filter*.
 
 ### Remove tracking parameters from URLs
 
@@ -59,9 +59,9 @@ Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) a
 
 ### Self-destruction of third-party cookies
 
-Websites use cookies to store your preferences — for example, the language you chose, your location, or the items in your shopping cart. When you return, the browser sends these cookies back so the site can “remember” you.
+Websites use cookies to store your preferences — for example, the language you chose, your location, or the items in your shopping cart. When you return, the browser sends these cookies back so the site can recognize you.
 
-Third-party cookies work the same way, but they are created by domains other than the one you’re visiting. For instance, cnn.com may include a Facebook “Like” widget that sets a cookie later read by Facebook. Advertisers often use such cookies to track which other sites you visit.
+Third-party cookies work the same way, but they are created by domains other than the one you’re visiting. For instance, cnn.com may include a Facebook *Like* widget that sets a cookie later read by Facebook. Advertisers often use such cookies to track which other sites you visit.
 
 With this option, you can set a time limit (in minutes) after which all third-party cookies will be deleted. If you set the timer to 0, such cookies will be blocked completely.
 
@@ -91,7 +91,7 @@ When a browser addresses a page, the server assigns it an ETag — a unique iden
 
 Disables cached authorization data that can be used for tracking purposes. May interfere with the functionality of some browser extensions and websites.
 
-The Authorization header value is cached by the browser and automatically sent with every request to the same domain. Because it accompanies each request, it can be used to identify and track you in much the same way as cookies.
+The Authorization header value is cached by the browser and automatically sent with every request to the same domain. Since it accompanies each request, it can be used to identify and track you similarly to how cookies do.
 
 ## Browser API
 
@@ -101,7 +101,7 @@ The Authorization header value is cached by the browser and automatically sent w
 
 Blocks WebRTC, a known vulnerability that can leak your real IP address even if you use a proxy or VPN.
 
-WebRTC (Web Real-Time Communication) is a technology that allows direct streaming of data between browsers and apps. It can let others know your true IP address, even if you use a proxy or VPN. Enabling this option can disrupt the work of certain browser applications, such as messengers, chats, cinemas, or games.
+WebRTC (Web Real-Time Communication) is a technology that allows direct data streaming between browsers and apps. It can reveal your true IP address, even if you use a proxy or VPN. Enabling this option may disrupt certain browser applications, such as messengers, chats, cinemas, or games.
 
 ### Block Push API
 
@@ -143,11 +143,11 @@ Disables data collection about Windows component problems
 
 Referer is an HTTP header included in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referer saves the URL of the initial page. The server that hosts the destination web page often has software that parses Referer and extracts various pieces of information from it.
 
-Enabling the *Hide Referer from third-parties* option option prevents third-party websites from seeing this information by altering or removing the header.
+Enabling the *Hide Referer from third-parties* option prevents third-party websites from seeing this information by altering or removing the header.
 
 You can also enter a custom value in the *Custom Referer* field. To use default Referer, leave the field blank.
 
-Note that to be able to filter traffic, AdGuard applications 'intercept' browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely.
+Note that to be able to filter traffic, AdGuard applications intercept browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely.
 
 Same goes for the *Hide Referer from third parties* option: To filter traffic, AdGuard intercepts HTTP(S) requests and may alter or block them before they reach the server. The change happens only after the request leaves your browser. For this reason, if you check headers inside the browser (for example with Chrome Developer Tools), you will still see the original Referer. To confirm that it has been modified, you can use external tools such as Fiddler.
 

@@ -11,4 +11,4 @@ This is a beta version that is still under development. If you’d like to try i
 
 :::
 
-In addition to information about the current version of the program and used libraries, this screen provides some useful links to License agreement, Privacy policy, Acknowledgements, Version history, and our website.
+In addition to information about the current version of the program and used libraries, this screen provides some useful links to License agreement, Privacy policy, Acknowledgements, Version history, and the main page of our website.
