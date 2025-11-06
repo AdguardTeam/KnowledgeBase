@@ -11,7 +11,7 @@ This is a beta release and still under development. If you’d like to try it, d
 
 :::
 
-Many websites collect details about their visitors: IP addresses, browser and OS information, screen resolution, even the page you came from. Cookies can also be used to mark your browser, remember your settings, or identify you on your next visit. Tracking protection prevents such systems from gathering your personal data. More about you can learn in a [designated article about Tracking protection in AdGuard](https://adguard.com/kb/general/stealth-mode/)
+Many websites collect data about their visitors, including IP addresses, browser and OS information, screen resolution, and even the page you came from. Cookies can be used to identify your browser, remember your preferences, or recognize you when you return. Tracking protection prevents such systems from collecting your personal data. Learn more in our [article about Tracking protection in AdGuard](https://adguard.com/kb/general/stealth-mode/)
 
 ![Tracking protection *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
 
@@ -23,15 +23,15 @@ If you don’t want to spend time adjusting filters manually, you can simply pic
 
 For maximum flexibility, select *Custom* and adjust everything manually. The settings there are divided into five categories:
 
-[General settings](#general-settings)
+- [General settings](#general-settings)
 
-[Tracking methods](#tracking-methods)
+- [Tracking methods](#tracking-methods)
 
-[Browser API](#browser-api)
+- [Browser API](#browser-api)
 
-[Windows tracking](#windows-tracking)
+- [Windows tracking](#windows-tracking)
 
-[Miscellaneous](#miscellaneous)
+- [Miscellaneous](#miscellaneous)
 
 ## General settings
 

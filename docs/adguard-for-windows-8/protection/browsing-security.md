@@ -11,7 +11,7 @@ This is a beta release and still under development. If you’d like to try it, d
 
 :::
 
-The *Browsing security* offers strong protection against harmful websites and phishing attempts.
+*Browsing security* offers strong protection against harmful websites and phishing attempts.
 
 While AdGuard for Windows is not an antivirus, it does provide essential security by warning you before visiting untrusted sites or downloading potentially dangerous files.
 

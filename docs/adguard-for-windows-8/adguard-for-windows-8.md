@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-This article describes the beta version of AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level.
+This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level.
 
 This is a beta version that is still under development. If you’d like to try it, download the [beta version of AdGuard for Windows v8](https://agrd.io/adguard_for_windows_8_beta).
 
@@ -19,15 +19,15 @@ A toggle to enable or disable AdGuard protection, along with icons for activatin
 
 ## [Protection](/adguard-for-windows-8/protection/)
 
-Settings to configure Ad blocking, Tracking protection, DNS protection, Annoyances blocking, phishing protection, Parental control, and user scripts
+Settings to configure *Ad blocking*, *Tracking protection*, *DNS protection*, *Annoyances blocking*, *Browsing security*, *Parental control*, and *Extensions*.
 
 ## [Statistics](/adguard-for-windows-8/statistics/)
 
-Detailed information about blocked ads, trackers, and data usage
+Detailed information about blocked ads, trackers, and data usage.
 
 ## [App management](/adguard-for-windows-8/app-management/)
 
-Settings to customize traffic filtering and routing for each app and browser
+Settings to customize traffic filtering and routing for each app and browser.
 
 ## [Settings](/adguard-for-windows-8/settings/)
 

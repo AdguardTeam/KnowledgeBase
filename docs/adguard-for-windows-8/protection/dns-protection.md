@@ -39,7 +39,7 @@ You can select from multiple trusted DNS providers. AdGuard itself offers severa
 
 - AdGuard DNS Non-filtering — provides a secure and reliable connection without any filtering.
 
-You can use one of these public servers, add your own custom DNS server, or pick another trusted option from our [list of trusted DNS providers](https://adguard-dns.io/kb/general/dns-providers/).
+You can use one of our public servers, add your own custom DNS server, or pick another trusted option from our [list of trusted DNS providers](https://adguard-dns.io/kb/general/dns-providers/).
 
 ## Add DNS filters and rules
 
