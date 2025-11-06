@@ -155,7 +155,7 @@ Same goes for the *Hide Referer from third parties* option: To filter traffic, A
 
 When you visit a website, your browser sends a header called User-Agent as part of the HTTP request. It looks like a text line that begins with “User-Agent:”. This line usually contains details such as the browser name and version, operating system, and language settings.
 
-By enabling this option, AdGuard removes identifying information from the User-Agent so advertisers and trackers cannot use it to profile you. If you prefer, you can enter a custom value in the Custom User-Agent field. To keep the default value, simply leave the field blank.
+By enabling this option, AdGuard removes identifying information from the User-Agent so advertisers and trackers cannot use it to profile you. If you prefer, you can enter a custom value in the *Custom User-Agent* field. To keep the default value, simply leave the field blank.
 
 ### Mask your IP address
 
