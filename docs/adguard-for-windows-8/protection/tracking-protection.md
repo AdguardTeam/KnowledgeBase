@@ -179,6 +179,6 @@ The *Protect from DPI* feature is already implemented in AdGuard for Windows, Ad
 
 :::caution
 
-If this feature is enabled in AdGuard for Windows, it may interfere with ESET antivirus. In this case, ESET will not be able to filter traffic, leaving some malicious or blocked websites accessible.
+If this feature is enabled in AdGuard for Windows, it may interfere with the ESET antivirus. In this case, ESET will not be able to filter traffic, leaving some malicious or blocked websites accessible.
 
 :::
