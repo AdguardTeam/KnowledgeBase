@@ -1,5 +1,5 @@
 ---
-title: Parental control
+title: Extensions
 sidebar_position: 7
 ---
 
@@ -13,7 +13,7 @@ This is a beta release and still under development. If you’d like to try it, d
 
 AdGuard can extend website functionality by acting as a [userscript manager](/general/extensions.md). This allows you to add your own scripts as well as manage existing ones.
 
-![Extensions *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
+![Extensions *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/all_extensions.png)
 
 ## Automatically detect userscripts
 
