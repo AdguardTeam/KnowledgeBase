@@ -237,4 +237,3 @@ The `-i` or `--input` flag is required and specifies the path to the settings ar
 The export/import functionality allows you to backup your AdGuard CLI configuration and restore it on the same or different system. This includes filters, proxy settings, and other configuration options.
 
 :::
->>>>>>> Stashed changes
