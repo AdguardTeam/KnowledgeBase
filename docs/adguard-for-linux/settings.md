@@ -202,6 +202,8 @@ Configuring `outbound_proxy` via URL is available starting from AdGuard for Linu
 
 ## Export and import settings
 
+The export/import functionality allows you to backup your AdGuard CLI configuration and restore it on the same or different system. This includes filters, proxy settings, and other configuration options.
+
 ### Export settings
 
 To export current AdGuard CLI settings to a ZIP archive, use:
@@ -231,9 +233,3 @@ adguard-cli import-settings -i "/path/to/settings.zip"
 ```
 
 The `-i` or `--input` flag is required and specifies the path to the settings archive to import.
-
-:::note
-
-The export/import functionality allows you to backup your AdGuard CLI configuration and restore it on the same or different system. This includes filters, proxy settings, and other configuration options.
-
-:::
