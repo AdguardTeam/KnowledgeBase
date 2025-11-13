@@ -620,5 +620,14 @@ On Motorola devices, there are four key configurations to ensure that AdGuard wo
 
 1. Disable Adaptive Battery:
 
-   - Go to **Settings → Battery**
-   - Turn off the **Adaptive Battery** option
+   - Stop AdGuard protection and and fully close the AdGuard app
+   - Go to **Settings → Apps → App battery usage** and find AdGuard
+   - Enable the **Allow background usage** option
+   - Go to **Settings → Battery → Background app use**
+   - Enable the **Manage background apps** option
+   - In the resulting menu, select the **Apps** tab
+   - Find **AdGuard** in the list and tap it
+   - In the **Optimize battery use** dialog, select **Always allow**
+
+    ![Always allow *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/motorolla-background-app-use.png)
+    
