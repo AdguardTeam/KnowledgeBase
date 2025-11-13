@@ -625,5 +625,3 @@ On Motorola devices, there are four key configurations to ensure that AdGuard wo
 
    - Go to **Settings → Battery**
    - Turn off the **Adaptive Battery** option
-
-    
