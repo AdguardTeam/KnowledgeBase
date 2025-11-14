@@ -622,3 +622,12 @@ On Motorola devices, there are four key configurations to ensure that AdGuard wo
 
    - Go to **Settings → Battery**
    - Turn off the **Adaptive Battery** option
+
+## ZTE
+
+ZTE devices functioning under the MyOS operating system have an aggressive approach to background processes. Follow these steps to prevent AdGuard from being closed automatically by AI control:
+
+- Go to **Settings → Battery → App Management**
+- Turn off **AI Control**
+- Select **Manual Management**
+- Find **AdGuard** in the list and set **Background Work** to **Allow**
