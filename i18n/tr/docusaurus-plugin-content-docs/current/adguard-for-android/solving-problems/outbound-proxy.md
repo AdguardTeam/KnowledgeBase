@@ -155,6 +155,28 @@ You should remove Shadowsocks app from filtering before setting up the process (
     | Proxy ana makine       | *127.0.0.1* |
     | Proxy bağlantı noktası | *7891*      |
 
+### WG Tunnel ile AdGuard nasıl kullanılır
+
+*The proxy mode was added in version 4.0. Cihazınızda zaten WG Tunnel yüklü olduğunu ve WireGuard yapılandırmasını eklediğinizi varsayıyoruz.*
+
+1. WG Tunnel'ı açın ve **Ayarlar** (alttaki dişli çark) → **Uygulama Modu** → **Proxy (deneysel)** öğesine gidin. Bu, WG Tunnel'ı proxy moduna ayarlar.
+
+1. Adguard'ı açın ve **Uygulama yönetimi** öğesine gidin. **WG Tunnel** öğesini seçin ve **Trafiği AdGuard üzerinden yönlendir** öğesini devre dışı bırakın. Bu, trafik döngüsünü ortadan kaldırır.
+
+1. Then go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
+
+1. **Proxy sunucusu ekle** öğesine dokunun ve alanları doldurun:
+
+    | Alan                   | Değer       |
+    | ---------------------- | ----------- |
+    | Proxy türü             | *SOCKS5*    |
+    | Proxy ana makine       | *127.0.0.1* |
+    | Proxy bağlantı noktası | *25344*     |
+
+1. **Kaydet ve seç** öğesine dokunun.
+
+1. Enable the main proxy switch and AdGuard protection to route your device’s traffic through the proxy.
+
 ## Limitations
 
 However, at least one factor may prevent certain traffic from being routed through the outbound proxy, even after configuring the AdGuard proxy settings. That would be if the app itself isn't configured to send its traffic through AdGuard. Bunu yapmak için **Uygulama yönetimi** öğesine ilerlemeniz, uygulamayı seçmeniz ve **Trafiği AdGuard üzerinden yönlendir** öğesini açmanız gerekir.

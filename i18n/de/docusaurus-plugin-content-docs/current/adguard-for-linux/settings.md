@@ -182,6 +182,14 @@ If your SOCKS5 proxy does not support UDP, connections may fail.
 
 :::
 
+## Per-app AdGuard CLI configuration
+
+Users often need to enable filtering manually for certain browsers. AdGuard for Linux supports **per-app configuration**, allowing you to apply settings or rules individually to each application instead of system-wide.
+
+For details, refer to the `apps` section in `proxy.yaml`.
+
+A set of pre-configured entries for popular web browsers is included by default in `browsers.yaml`.
+
 ### Checking the current configuration
 
 To view the current `outbound_proxy` configuration, enter:

@@ -182,6 +182,14 @@ SOCKS5 proxy'niz UDP'yi desteklemiyorsa, bağlantılar başarısız olabilir.
 
 :::
 
+## Uygulama başına AdGuard CLI yapılandırması
+
+Kullanıcıların genellikle belirli tarayıcılar için filtrelemeyi elle etkinleştirmesi gerekir. Linux için AdGuard, **uygulama başına yapılandırmayı** destekleyerek ayarları veya kuralları sistem genelinde uygulamak yerine her uygulamaya ayrı ayrı uygulamanıza olanak tanır.
+
+Ayrıntılar için `proxy.yaml` dosyasındaki `apps` bölümüne bakın.
+
+A set of pre-configured entries for popular web browsers is included by default in `browsers.yaml`.
+
 ### Checking the current configuration
 
 To view the current `outbound_proxy` configuration, enter:
