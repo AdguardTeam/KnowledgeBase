@@ -9,13 +9,13 @@ sidebar_position: 2
 
 :::
 
-To access the Tracking protection module, tap the _Protection_ tab (the second icon from the bottom of the screen) and then select _Tracking protection_.
+Защита от трекинга находится во вкладке _Защита_ (второй слева значок в нижней части экрана).
 
-_Tracking protection_ (formerly _Stealth Mode_) prevents websites from collecting information about you, such as your IP address, information about your browser and operating system, screen resolution, and the page you came or were redirected from. Защита от трекинга позволяет блокировать куки, которые сайты используют, чтобы сохранять ваши настройки и пользовательские предпочтения или узнавать вас при следующем посещении.
+_Защита от трекинга_ (ранее _Антитрекинг_) не позволяет сайтам собирать информацию о вас: IP-адрес, информацию о вашем браузере, операционной системе, разрешении экрана и странице, с которой вы пришли или были перенаправлены. Защита от трекинга позволяет блокировать куки, которые сайты используют, чтобы сохранять ваши настройки и пользовательские предпочтения или узнавать вас при следующем посещении.
 
-![Tracking protection \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/tracking_protection.png)
+![Защита от трекинга \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/tracking_protection.png)
 
-_Tracking protection_ has three pre-configured privacy protection levels (_Standard_, _High_, and _Extreme_) and one user-defined level (_Custom_).
+_Защита от трекинга_ предлагает три преднастроенных уровня защиты конфиденциальности (_Стандартный_, _Высокий_ и _Экстремальный_) и один настраиваемый уровень (_Пользовательский_).
 
 Вот функции, которые по умолчанию включены на разных уровнях защиты:
 
@@ -23,7 +23,7 @@ _Tracking protection_ has three pre-configured privacy protection levels (_Stand
 
    a. _Блокировать трекеры_. Эта функция использует _Фильтр счётчиков и систем аналитики_ для защиты от трекеров и инструментов веб-аналитики
 
-   b. _Ask websites not to track me_. Эта функция отправляет сигналы [Global Privacy Control](https://globalprivacycontrol.org/) и [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) на сайты, которые вы посещаете. Она запрашивает веб-приложения отключить отслеживание вашей активности
+   b. _Просить сайты не отслеживать вас_. Эта функция отправляет сигналы [Global Privacy Control](https://globalprivacycontrol.org/) и [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) на сайты, которые вы посещаете. Она запрашивает веб-приложения отключить отслеживание вашей активности
 
    c. _Удалять заголовок X-Client-Data_. Эта функция не даёт отправлять информацию о версии и модификации Google Chrome на домены Google (включая DoubleClick и Google Analytics)
 
@@ -33,11 +33,11 @@ _Tracking protection_ has three pre-configured privacy protection levels (_Stand
 
    b. _Удалять параметры отслеживания из URL-адресов_. Эта функция использует _Фильтр отслеживания по URL_ для удаления параметров отслеживания, таких как `utm_*` и `fb_ref`, из URL-адресов страниц
 
-   c. _Hide search queries_. This feature hides your searches from websites visited through search engine results
+   c. _Скрывать поисковые запросы_. Эта функция скрывает запросы к сайтам, на которые вы пришли из поисковой системы
 
-   d. _Ask websites not to track me_. Эта функция отправляет сигналы [Global Privacy Control](https://globalprivacycontrol.org/) и [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) на сайты, которые вы посещаете. Она запрашивает веб-приложения отключить отслеживание вашей активности
+   d. _Просить сайты не отслеживать вас_. Эта функция отправляет сигналы [Global Privacy Control](https://globalprivacycontrol.org/) и [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) на сайты, которые вы посещаете. Она запрашивает веб-приложения отключить отслеживание вашей активности
 
-   е. _Delete third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes and prevents advertisers from tracking your behavior across multiple pages
+   е. _Удалять сторонние куки_. Эта функция ограничивает время жизни сторонних куки до 180 минут и не позволяет рекламодателям отслеживать ваше поведение на нескольких страницах
 
    :::caution
 
@@ -53,11 +53,11 @@ _Tracking protection_ has three pre-configured privacy protection levels (_Stand
 
    b. _Удалять параметры отслеживания из URL-адресов_. Эта функция использует _Фильтр отслеживания по URL_ для удаления параметров отслеживания, таких как `utm_*` и `fb_ref`, из URL-адресов страниц
 
-   c. _Hide search queries_. This feature hides your searches from websites visited through search engine results
+   c. _Скрывать поисковые запросы_. Эта функция скрывает запросы к сайтам, на которые вы пришли из поисковой системы
 
-   d. _Ask websites not to track me_. Эта функция отправляет сигналы [Global Privacy Control](https://globalprivacycontrol.org/) и [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) на сайты, которые вы посещаете. Она запрашивает веб-приложения отключить отслеживание вашей активности
+   d. _Просить сайты не отслеживать вас_. Эта функция отправляет сигналы [Global Privacy Control](https://globalprivacycontrol.org/) и [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) на сайты, которые вы посещаете. Она запрашивает веб-приложения отключить отслеживание вашей активности
 
-   е. _Delete third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes and prevents advertisers from tracking your behavior across multiple pages
+   е. _Удалять сторонние куки_. Эта функция ограничивает время жизни сторонних куки до 180 минут и не позволяет рекламодателям отслеживать ваше поведение на нескольких страницах
 
    :::caution
 
@@ -65,16 +65,16 @@ _Tracking protection_ has three pre-configured privacy protection levels (_Stand
 
    :::
 
-   f. _Блокировать WebRTC_. This feature blocks WebRTC that can leak your real IP address even if you use a proxy or VPN. Some messengers, streaming platforms, or games may stop working properly
+   f. _Блокировать WebRTC_. Эта функция блокирует WebRTC — уязвимость, которая может привести к утечке вашего IP-адреса, даже если вы используете прокси или VPN. Некоторые мессенджеры, стриминговые платформы или игры могут перестать работать должным образом
 
-   g. _Блокировать Push API_. This feature blocks push notifications from websites
+   g. _Блокировать Push API_. Эта функция блокирует push-уведомления с сайтов
 
    h. _Блокировать Location API_. Эта функция не позволяет браузерам получать доступ к вашим данным GPS и определять ваше местоположение
 
    i. _Скрывать Referer от третьих лиц_. Эта функция не позволяет третьим лицам узнать, какие сайты вы посещаете. Она скрывает HTTP-заголовок, содержащий URL-адрес начальной страницы, и заменяет его на стандартный или пользовательский, который вы можете задать
 
-   j. _Hide User-Agent_. Эта функция удаляет из заголовка User-Agent идентифицирующую информацию, которая обычно включает название и версию браузера, операционную систему и языковые настройки
+   j. _Скрыть User-Agent_. Эта функция удаляет из заголовка User-Agent идентифицирующую информацию, которая обычно включает название и версию браузера, операционную систему и языковые настройки
 
    k. _Удалять заголовок X-Client-Data_. Эта функция не даёт отправлять информацию о версии и модификации Google Chrome на домены Google (включая DoubleClick и Google Analytics)
 
-You can tweak individual settings in _Tracking protection_ to create a custom configuration. Each setting has a description to help you understand its purpose. [Read more about various _Tracking protection_ settings](/general/stealth-mode) and use them cautiously, as some may interfere with the functionality of websites and browser extensions.
+Эти параметры можно изменить, если выбрать _Пользовательский_ уровень защиты. У каждой настройки есть описание, которое поможет вам понять её роль. [Узнайте больше о том, что делают настройки _Защиты от трекинга_](/general/stealth-mode) и относитесь к ним с осторожностью, поскольку некоторые из них могут мешать работе сайтов и браузерных расширений.

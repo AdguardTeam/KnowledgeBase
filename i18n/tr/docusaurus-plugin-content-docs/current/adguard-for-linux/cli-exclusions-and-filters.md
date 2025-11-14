@@ -12,7 +12,7 @@ AdGuard CLI working directory:
 - Linux: `~/.local/share/adguard-cli/`
 - macOS: `~/Library/Application Support/adguard-cli/`
 
-Several key files are located in this folder:
+Bu klasörde birkaç önemli dosya bulunmaktadır:
 
 1. `browsers.yaml` — tarayıcıların bir listesi (Safari, Chrome, Firefox, vb.). Here you can enable or disable HTTPS filtering for individual browsers, or completely exclude them from filtering.
 
@@ -44,7 +44,7 @@ Several key files are located in this folder:
 
 To disable HTTPS filtering, replace `default` with `bypass_https`. To completely exclude the app from filtering, replace `default` with `bypass`.
 
-1. `proxy.yaml` — the main configuration file. Diğer uygulamalar için istisnaların ayarlandığı bir uygulamalar bölümü vardır.
+1. `proxy.yaml` — ana yapılandırma dosyası. Diğer uygulamalar için istisnaların ayarlandığı bir uygulamalar bölümü vardır.
 
 **Örnek `proxy.yaml`**:
 
@@ -65,7 +65,7 @@ On **Linux**, specify the executable name (`chrome`, `firefox`, etc.). On **macO
 
 ## Özel filtreler nasıl eklenir
 
-The working directory contains the `user.txt` file, where you can add your own blocking or allowing rules for websites. If you have your own list of rules in `.txt` format, connect it via `proxy.yaml`:
+Çalışma dizini, siteler için kendi engelleme veya izin verme kurallarınızı ekleyebileceğiniz `user.txt` dosyasını içerir. Eğer `.txt` biçiminde kendi kural listeniz varsa, bunu `proxy.yaml` aracılığıyla bağlayın:
 
 ```sh
 filters:

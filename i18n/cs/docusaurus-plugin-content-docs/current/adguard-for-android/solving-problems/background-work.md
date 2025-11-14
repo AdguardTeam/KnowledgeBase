@@ -621,3 +621,12 @@ Na zařízeních Motorola existují čtyři klíčové konfigurace, které zajis
 
    - Přejděte do **Nastavení → Baterie**
    - Vypněte možnost **Adaptivní baterie**
+
+## ZTE
+
+ZTE devices functioning under the MyOS operating system have an aggressive approach to background processes. Follow these steps to prevent AdGuard from being closed automatically by AI control:
+
+- Go to **Settings → Battery → App Management**
+- Turn off **AI Control**
+- Select **Manual Management**
+- Find **AdGuard** in the list and set **Background Work** to **Allow**

@@ -55,6 +55,24 @@ Tento skript odstraní z odkazů ve výsledcích vyhledávání Google funkci sl
 
 Jeho zdrojový kód je [k dispozici na GitHubu](https://github.com/Rob--W/dont-track-me-google). Tento uživatelský skript lze stáhnout ze stránek [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) a nainstalovat do libovolné aplikace založené na AdGuard CoreLibs.
 
+#### SponsorBlock
+
+SponsorBlock přeskakuje sponzorované segmenty ve videích na YouTube. Šetří čas tím, že přechází přímo k hlavnímu obsahu a odstraňuje přerušení způsobená reklamami a vlastní propagací.
+
+:::info
+
+Tento uživatelský skript běží výhradně v našich desktopových aplikacích AdGuard pro Windows a AdGuard pro Mac.
+
+:::
+
+Vyzkoušejte to:
+
+1. Přejděte na [https://mchangrh.github.io/sb.js/](https://mchangrh.github.io/sb.js/).
+2. Klikněte na **Generovat odkaz**.
+3. Zkopírujte zobrazený odkaz.
+4. Otevřete AdGuard a přejděte do **Rozšíření → Přidat rozšíření → Importovat ze souboru nebo URL**.
+5. Vložte zkopírovaný odkaz a potvrďte.
+
 #### tinyShield
 
 Uživatelský skript pro lidi, kteří navštěvují korejské a některé mezinárodní webové stránky. Uživatelský skript tinyShield blokuje Ad-Shield a anti-adblock. Tento uživatelský skript lze nainstalovat v AdGuard CoreLibs, Violentmonkey, Tampermonkey a [quoid/userscripts](https://github.com/quoid/userscripts). Více informací o skriptu microShield a jeho instalaci najdete na [GitHubu](https://github.com/List-KR/tinyShield).

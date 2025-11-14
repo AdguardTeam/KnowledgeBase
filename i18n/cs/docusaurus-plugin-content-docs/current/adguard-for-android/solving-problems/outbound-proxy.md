@@ -155,6 +155,28 @@ Před nastavením procesu byste měli odstranit aplikaci Shadowsocks z filtrová
     | Hostitel proxy | *127.0.0.1* |
     | Port proxy     | *7891*      |
 
+### Jak používat AdGuard s WG Tunnel
+
+*Režim proxy byl přidán ve verzi 4.0. Předpokládáme, že již máte ve svém zařízení nainstalovaný WG Tunnel a přidali jste konfiguraci WireGuard.*
+
+1. Otevřete WG Tunnel a přejděte do **Nastavení** (ozubené kolo dole) → **Režim aplikace** → **Proxy (experimentální)**. Tímto nastavíte WG Tunnel do režimu proxy.
+
+1. Otevřete AdGuard a přejděte na **Správa aplikací**. Zvolte **WG Tunnel** a deaktivujte **Směrování provozu skrze AdGuard**. Tímto se odstraní zacyklení provozu.
+
+1. Poté jděte do **Nastavení** → **Filtrování** → **Síť** → **Proxy** → **Proxy server**.
+
+1. Klepněte na tlačítko **Přidat proxy** a vyplňte pole:
+
+    | Pole           | Hodnota     |
+    | -------------- | ----------- |
+    | Typ proxy      | *SOCKS5*    |
+    | Hostitel proxy | *127.0.0.1* |
+    | Port proxy     | *25344*     |
+
+1. Klepněte na **Uložit a vybrat**.
+
+1. Zapněte hlavní přepínač proxy a AdGuard ochranu, aby byl provoz zařízení směrován přes proxy server.
+
 ## Omezení
 
 Přinejmenším jeden faktor však může zabránit tomu, aby byl určitý provoz směrován přes odchozí proxy server, a to i po konfiguraci nastavení proxy serveru AdGuard. To v případě, že samotná aplikace není nakonfigurována tak, aby odesílala svůj provoz přes AdGuard. Chcete-li to provést, musíte přejít na **Správa aplikací**, vybrat aplikaci a zapnout **Směrovat provoz skrze AdGuard**.

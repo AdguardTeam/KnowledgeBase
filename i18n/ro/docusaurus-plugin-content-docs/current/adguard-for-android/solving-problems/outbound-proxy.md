@@ -155,6 +155,28 @@ Trebuie să ștergeți aplicația Shadowsocks din filtrare înainte de a configu
     | Gazdă proxy | *127.0.0.1* |
     | Port proxy  | *7891*      |
 
+### How to use AdGuard with WG Tunnel
+
+*The proxy mode was added in version 4.0. We presume that you already have WG Tunnel installed on your device and have added the WireGuard configuration.*
+
+1. Open WG Tunnel and go to **Settings** (the cog wheel at the bottom) → **App Mode** → **Proxy (experimental)**. This will set WG Tunnel to proxy mode.
+
+1. Deschideți AdGuard și mergeți la **Gestionarea aplicațiilor**. Choose **WG Tunnel** and disable **Route traffic through AdGuard**. Aceasta va elimina buclele de trafic.
+
+1. Apoi mergeți la **Setări** → **Filtrare** → **Rețea** → **Proxy** → **Server proxy**.
+
+1. Apăsați **Adăugați server proxy** și completați câmpurile:
+
+    | Câmp        | Valoare     |
+    | ----------- | ----------- |
+    | Tip proxy   | *SOCKS5*    |
+    | Gazdă proxy | *127.0.0.1* |
+    | Port proxy  | *25344*     |
+
+1. Apăsați **Salvați și selectați**.
+
+1. Enable the main proxy switch and AdGuard protection to route your device’s traffic through the proxy.
+
 ## Limitări
 
 However, at least one factor may prevent certain traffic from being routed through the outbound proxy, even after configuring the AdGuard proxy settings. That would be if the app itself isn't configured to send its traffic through AdGuard. To do it, you need to proceed to **App management**, choose the app, and turn on **Route traffic through AdGuard**.

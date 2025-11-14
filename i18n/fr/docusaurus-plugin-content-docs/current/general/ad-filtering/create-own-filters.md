@@ -1369,6 +1369,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$removeparam](#removeparam-modifier)       |                      ✅                      |                      ✅                       | ✅ [*[6]](#removeparam-modifier-limitations)  |                      ✅                       |              ❌              |               ❌                |                   ❌                   |
 | [$replace](#replace-modifier)               |                      ✅                      |                      ❌                       |                      ❌                       |                      ✅                       |              ❌              |               ❌                |                   ❌                   |
 | [$urltransform](#urltransform-modifier)     |                      ✅                      |                      ❌                       |                      ❌                       |                      ❌                       |              ❌              |               ❌                |                   ❌                   |
+| [$reason](#reason-modifier)                 |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |              ✅              |               ✅                |                   ❌                   |
 | [noop](#noop-modifier)                      |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |              ✅              |               ✅                |                   ❌                   |
 | [$empty 👎](#empty-modifier "deprecated")    |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |              ❌              |               ❌                |                   ❌                   |
 | [$mp4 👎](#mp4-modifier "deprecated")        |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |              ❌              |               ❌                |                   ❌                   |
@@ -2929,6 +2930,41 @@ Rules with the `$urltransform` modifier can only be used [**in trusted filters**
 :::info Compatibility
 
 Rules with the `$urltransform` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.15 or later.
+
+:::
+
+#### **`$reason`** {#reason-modifier}
+
+The `$reason` modifier allows you to add a custom explanation message that will be displayed on the blocking page when a request is blocked by this rule. This modifier only works with the `$document` content-type modifier.
+
+**Character limitations and escaping requirements:**
+
+- There is no maximum length limit for the reason text
+- All characters are allowed in the reason text
+- Special characters (such as quotes, commas, and backslashes) must be properly escaped using the backslash (`\`)
+
+**Predefined localizable tokens:**
+
+Instead of custom text, you can use predefined tokens that will be automatically localized:
+
+- `malicious` — for malicious content
+- `tracker` — for tracking content
+- `disreputable` — for disreputable content
+
+**Examples**
+
+```adblock
+||example.com^$document,reason="Tracker"
+||example.com^$document,reason="Malicious site blocked by security filter"
+||ads.example.com^$document,reason="This site contains tracking scripts"
+||malware.example.com^$document,reason="Site blocked: \"Known malware distributor\""
+||tracking.example.com^$document,reason=disreputable
+||analytics.example.com^$document,reason=tracker
+```
+
+:::info Compatibility
+
+AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with CoreLibs v1.20 or later support rules with the `$reason` modifier. AdGuard Content Blocker does not support these rules.
 
 :::
 
