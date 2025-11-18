@@ -5,11 +5,11 @@ sidebar_position: 1
 
 :::info
 
-В этой статье рассказывается об AdGuard для iOS — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock).
+В этой статье рассказывается об AdGuard для iOS — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-There are two ways to activate Premium features in the AdGuard for iOS app:
+Активировать премиум-функции на AdGuard для iOS можно двумя способами:
 
 1. **Purchase a subscription.** Just tap the **Get Premium** plaque anywhere in the app and follow the on-screen instructions. Enter your Apple Account password and confirm the purchase. You can choose a monthly, yearly, or lifetime subscription.
 
