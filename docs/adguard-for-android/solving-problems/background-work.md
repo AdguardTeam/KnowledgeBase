@@ -601,7 +601,7 @@ On Motorola devices, there are four key configurations to ensure that AdGuard wo
 
    - Stop AdGuard protection and close the AdGuard app
    - Go to **Settings → Apps → App battery usage** and find AdGuard
-   - Enable the **Allow background usage** option, or select **Unrestricted**, depending on Android version
+   - Enable **Allow background usage** or select **Unrestricted**, depending on your Android version
 
 1. Remove background activity restrictions:
 
