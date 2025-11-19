@@ -397,7 +397,7 @@ Basically, they just limit the scope of rule application.
 | [$app](#app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$domain](#domain-modifier) | ✅ | ✅ | ✅ [*[1]](#domain-modifier-limitations) | ✅ | ✅ [*[1]](#domain-modifier-limitations) | ✅ [*[1]](#domain-modifier-limitations) | ✅ |
-| [$header](#header-modifier) | ✅ | ✅ [*[2]](#header-modifier-limitations)| ❌ | ✅ [*[2]](#header-modifier-limitations) | ❌ | ❌ | ❌ |
+| [$header](#header-modifier) | ✅ | ✅ [*[2]](#header-modifier-limitations)| ✅ [*[2]](#header-modifier-limitations) | ✅ [*[2]](#header-modifier-limitations) | ❌ | ❌ | ❌ |
 | [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$method](#method-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
@@ -645,12 +645,14 @@ The modifier part, `":" h_value`, may be omitted. In that case, the modifier mat
   [`$script`](#script-modifier) and [`$stylesheet`](#stylesheet-modifier). The rules with other modifiers
   are considered invalid and will be discarded.
 
+1. In AdGuard Browser Extension MV3, regular expressions in the `$header` modifier values are not supported.
+
 :::
 
 :::info Compatibility
 
 Rules with the `$header` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux
-with [CoreLibs] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later.
+with [CoreLibs] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later (including AdGuard Browser Extension MV3 v5.3 or later).
 
 :::
 
