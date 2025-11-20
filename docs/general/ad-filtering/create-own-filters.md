@@ -652,7 +652,8 @@ The modifier part, `":" h_value`, may be omitted. In that case, the modifier mat
 :::info Compatibility
 
 Rules with the `$header` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux
-with [CoreLibs] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later (including AdGuard Browser Extension MV3 v5.3 or later).
+with [CoreLibs] v1.11 or later, AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later,
+and AdGuard Browser Extension MV3 v5.3 or later.
 
 :::
 
