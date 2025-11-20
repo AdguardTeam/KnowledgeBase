@@ -55,6 +55,24 @@ Este script elimina la función de seguimiento de Google de los enlaces en los r
 
 Su código fuente está [disponible en GitHub](https://github.com/Rob--W/dont-track-me-google). Este scripts de usuario se puede descargar de [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) e instalar en cualquier app basada en AdGuard CoreLibs.
 
+#### SponsorBlock
+
+SponsorBlock skips sponsored segments in YouTube videos. It saves time by jumping straight to the main content and removes interruptions from ads and self-promotions.
+
+:::info
+
+This userscript runs exclusively on our desktop applications, AdGuard for Windows and AdGuard for Mac.
+
+:::
+
+To try it out:
+
+1. Go to [https://mchangrh.github.io/sb.js/](https://mchangrh.github.io/sb.js/).
+2. Click **Generate link**.
+3. Copy the link that appears.
+4. Open AdGuard and go to **Extensions → Add extension → Import from file or URL**.
+5. Paste the copied link and confirm.
+
 #### tinyShield
 
 Un script de usuario para personas que visitan sitios web coreanos y algunos sitios web internacionales. El script de usuario de tinyShield bloquea los anuncios de Ad-Shield y los antibloqueos de anuncios. Este script de usuario se puede instalar en aplicaciones basadas en AdGuard CoreLibs, Violentmonkey, Tampermonkey y [quoid/userscripts](https://github.com/quoid/userscripts). Obtén más información sobre tinyShield y cómo instalarlo en [GitHub](https://github.com/List-KR/tinyShield).
