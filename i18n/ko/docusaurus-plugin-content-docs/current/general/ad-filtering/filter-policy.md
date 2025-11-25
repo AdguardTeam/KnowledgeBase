@@ -3,6 +3,16 @@ title: AdGuard 필터 정책
 sidebar_position: 6
 ---
 
+:::note Disclaimer
+
+Please read this filter policy carefully before enabling any filters.
+
+Using AdGuard Ad Blocker, AdGuard DNS, and their filters may affect how third-party websites and services function. You are responsible for reviewing and following the policies and terms of any websites or services you use.
+
+Before enabling filters provided by third parties, you agree to review their applicable terms and make an informed decision about using them. AdGuard is not responsible for how third-party filters operate or what their terms contain, and their presence in AdGuard products is not a recommendation to use them.
+
+:::
+
 AdGuard는 필터를 제작할 때 오랫동안 특정 원칙을 준수해 왔으며, 필터 설명과 함께 필터링 정책의 일부로 아래에 설명되어 있습니다.
 
 ## 일반 기준

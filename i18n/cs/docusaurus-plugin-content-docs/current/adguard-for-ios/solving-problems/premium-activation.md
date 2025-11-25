@@ -11,14 +11,12 @@ Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který
 
 Existují dvě možnosti, jak aktivovat prémiové funkce v AdGuardu pro iOS:
 
-1. **Zakupte předplatné.** Stačí klepnout na položku **Získat prémium** kdekoli v aplikaci a postupovat podle pokynů na obrazovce. Zadejte heslo svého účtu Apple a potvrďte nákup. Můžete si vybrat měsíční, roční nebo doživotní předplatné.
+1. **Buy a subscription through the App Store** — monthly, yearly, or lifetime. You can subscribe by tapping the *Premium* label anywhere in the app or from the *License* tab. A 7-day free trial is available for new users.
 
-2. **Použijte licenci AdGuardu.** Můžete ji zakoupit na [stránkách AdGuardu](https://adguard.com/license.html). Chcete-li ji aktivovat, otevřete aplikaci AdGuard, klepněte na *Nastavení → Licence → Přihlásit se* a zadejte stejnou e-mailovou adresu, kterou jste použili při nákupu, nebo licenční klíč. Pokud máte platný licenční klíč ve svém účtu, aplikace jej automaticky rozpozná a aktivuje Premium.
+2. **Buy an AdGuard license on our [website](https://adguard.com/license.html).** To activate it, open your AdGuard app, tap *Settings → License → Log in*, and enter the same email address you used for the purchase. You can also enter the activation code in the email field and leave the password field blank. However, we recommend using the email and password combination because it is a more secure option.
 
-Alternativně můžete pro aktivaci funkcí Premium zadat platný licenční klíč do pole pro e-mail a pole pro heslo ponechat prázdné.
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-:::note
-
-AdGuard Pro pro iOS je naše další aplikace pro iOS. Lze ji zakoupit pouze v [App Store](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264).
+AdGuard Pro for iOS is our other iOS app. It can only be purchased from the [App Store](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264).
 
 :::
