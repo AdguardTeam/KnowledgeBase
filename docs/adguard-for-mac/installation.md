@@ -55,6 +55,12 @@ Now, you'll see a quick installation wizard where you'll be offered to configure
 
 Here we are, AdGuard is installed on your Mac!
 
+### Installation on older versions of macOS
+
+Users running older versions of macOS (Big Sur 11, Catalina 10.15 or earlier) won’t find a compatible app version in the download section of the AdGuard Ad Blocker website, as these OS versions are no longer supported in the latest releases.
+
+However, you still can [download an older, compatible version]( https://agrd.io/adguard_for_mac_v2-17)
+
 ## Uninstall
 
 ### Regular
