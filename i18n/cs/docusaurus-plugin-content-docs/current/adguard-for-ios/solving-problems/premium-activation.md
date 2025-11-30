@@ -11,11 +11,9 @@ Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který
 
 Existují dvě možnosti, jak aktivovat prémiové funkce v AdGuardu pro iOS:
 
-1. **Zakupte předplatné.** Stačí klepnout na položku **Získat prémium** kdekoli v aplikaci a postupovat podle pokynů na obrazovce. Zadejte heslo svého účtu Apple a potvrďte nákup. Můžete si vybrat měsíční, roční nebo doživotní předplatné.
+1. **Zakupte předplatné v App Store** — měsíční, roční nebo doživotní. Předplatné si můžete objednat klepnutím na štítek *Premium* kdekoli v aplikaci nebo na kartě *Licence*. Pro nové uživatele je k dispozici 7denní zkušební verze zdarma.
 
-2. **Použijte licenci AdGuardu.** Můžete ji zakoupit na [stránkách AdGuardu](https://adguard.com/license.html). Chcete-li ji aktivovat, otevřete aplikaci AdGuard, klepněte na *Nastavení → Licence → Přihlásit se* a zadejte stejnou e-mailovou adresu, kterou jste použili při nákupu, nebo licenční klíč. Pokud máte platný licenční klíč ve svém účtu, aplikace jej automaticky rozpozná a aktivuje Premium.
-
-Alternativně můžete pro aktivaci funkcí Premium zadat platný licenční klíč do pole pro e-mail a pole pro heslo ponechat prázdné.
+2. **Zakupte si licenci AdGuard na našich [webových stránkách](https://adguard.com/license.html).** Chcete-li ji aktivovat, otevřete aplikaci AdGuard, klepněte na *Nastavení → Licence → Přihlásit se* a zadejte stejnou e-mailovou adresu, kterou jste použili při nákupu. Aktivační kód můžete také zadat do pole e-mailu a pole pro heslo nechat prázdné. Doporučujeme však používat kombinaci e-mailu a hesla, protože je to bezpečnější možnost.
 
 :::note
 
