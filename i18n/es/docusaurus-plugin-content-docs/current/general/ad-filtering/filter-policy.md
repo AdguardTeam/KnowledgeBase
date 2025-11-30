@@ -3,6 +3,16 @@ title: Política de filtrado de AdGuard
 sidebar_position: 6
 ---
 
+:::note Descargo de responsabilidad
+
+Por favor, lee cuidadosamente esta política de filtros antes de habilitar cualquier filtro.
+
+El uso del bloqueador de anuncios AdGuard, AdGuard DNS y sus filtros puede afectar el funcionamiento de sitios web y servicios de terceros. Eres responsable de revisar y seguir las políticas y términos de cualquier sitio web o servicio que utilices.
+
+Antes de habilitar los filtros proporcionados por terceros, aceptas revisar sus términos aplicables y tomar una decisión informada sobre su uso. AdGuard no es responsable de cómo funcionan los filtros de terceros ni de lo que contienen sus términos, y su presencia en los productos AdGuard no es una recomendación para utilizarlos.
+
+:::
+
 Aquí en AdGuard, desde hace tiempo seguimos ciertos principios para la creación de nuestros filtros, los cuales, junto con las descripciones de los filtros, se presentan a continuación como parte de nuestra política de filtrado.
 
 ## Criterios comunes
