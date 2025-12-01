@@ -182,6 +182,14 @@ Pokud váš proxy SOCKS5 nepodporuje UDP, připojení možná selžou.
 
 :::
 
+## Konfigurace AdGuard CLI pro jednotlivé aplikace
+
+Uživatelé často musí ručně povolit filtrování pro určité prohlížeče. AdGuard pro Linux podporuje **konfiguraci pro jednotlivé aplikace**, což vám umožňuje aplikovat nastavení nebo pravidla individuálně na každou aplikaci namísto na celý systém.
+
+Podrobnosti najdete v části `apps` v souboru `proxy.yaml`.
+
+Sada předkonfigurovaných položek pro oblíbené webové prohlížeče je ve výchozím nastavení zahrnuta v souboru `browsers.yaml`.
+
 ### Kontrola aktuální konfigurace
 
 Chcete-li zobrazit aktuální konfiguraci `outbound_proxy`, zadejte:

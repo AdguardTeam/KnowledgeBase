@@ -599,11 +599,9 @@ On Motorola devices, there are four key configurations to ensure that AdGuard wo
 
 1. Allow background usage:
 
-   - Go to **Settings → Apps** and find **AdGuard**
-   - Open **App battery usage**
-   - Enable **Allow background battery usage**
-   - Tap the option with the toggle
-   - Set battery usage to **Unrestricted**
+   - Stop AdGuard protection and close the AdGuard app
+   - Go to **Settings → Apps → App battery usage** and find AdGuard
+   - Enable **Allow background usage** or select **Unrestricted**, depending on your Android version
 
 1. Remove background activity restrictions:
 
@@ -615,10 +613,24 @@ On Motorola devices, there are four key configurations to ensure that AdGuard wo
 
 1. Manage background apps:
 
-   - Go to **Settings**, then type **Managing background apps** in the search bar
-   - Find **AdGuard** and enable the toggle to allow the app to run in the background
+   - Go to **Settings → Battery → Background app use**
+   - Enable the **Manage background apps** option
+   - In the resulting menu, select the **Apps** tab
+   - Find **AdGuard** in the list and tap it
+   - In the **Optimize battery use** dialog, select **Always allow**
+
+    ![Always allow *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/motorolla-background-app-use.png)
 
 1. Disable Adaptive Battery:
 
    - Go to **Settings → Battery**
    - Turn off the **Adaptive Battery** option
+
+## ZTE
+
+ZTE devices functioning under the MyOS operating system have an aggressive approach to background processes. Follow these steps to prevent AdGuard from being closed automatically by AI control:
+
+- Go to **Settings → Battery → App Management**
+- Turn off **AI Control**
+- Select **Manual Management**
+- Find **AdGuard** in the list and set **Background Work** to **Allow**

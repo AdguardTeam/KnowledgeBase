@@ -598,11 +598,9 @@ Na zařízeních Motorola existují čtyři klíčové konfigurace, které zajis
 
 1. Povolit využití na pozadí:
 
-   - Přejděte do **Nastavení → Aplikace** a vyhledejte **AdGuard**
-   - Otevřete **Využití baterie aplikacemi**
-   - Povolte **Povolit využití baterie na pozadí**
-   - Klepněte na možnost s přepínačem
-   - Nastavte využití baterie na **Neomezeno**
+   - Stop AdGuard protection and close the AdGuard app
+   - Go to **Settings → Apps → App battery usage** and find AdGuard
+   - Enable **Allow background usage** or select **Unrestricted**, depending on your Android version
 
 1. Odebrat omezení aktivity na pozadí:
 
@@ -614,10 +612,24 @@ Na zařízeních Motorola existují čtyři klíčové konfigurace, které zajis
 
 1. Spravovat aplikace na pozadí:
 
-   - Přejděte do **Nastavení** a poté do vyhledávacího pole napište **Spravovat aplikace na pozadí**
-   - Vyhledejte **AdGuard** a přepněte přepínač, abyste povolili aplikaci běžet na pozadí
+   - Go to **Settings → Battery → Background app use**
+   - Enable the **Manage background apps** option
+   - In the resulting menu, select the **Apps** tab
+   - Find **AdGuard** in the list and tap it
+   - In the **Optimize battery use** dialog, select **Always allow**
+
+    ![Always allow *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/motorolla-background-app-use.png)
 
 1. Zakázat adaptivní baterii:
 
    - Přejděte do **Nastavení → Baterie**
    - Vypněte možnost **Adaptivní baterie**
+
+## ZTE
+
+Zařízení ZTE fungující pod operačním systémem MyOS mají agresivní přístup k procesům na pozadí. Postupujte podle těchto kroků, abyste zabránili automatickému zavření AdGuardu pomocí AI:
+
+- Přejděte do **Nastavení → Baterie → Správa aplikací**
+- Vypněte **Ovládání pomocí AI**
+- Vyberte **Ruční správa**
+- V seznamu vyhledejte **AdGuard** a nastavte **Práce na pozadí** na **Povolit**
