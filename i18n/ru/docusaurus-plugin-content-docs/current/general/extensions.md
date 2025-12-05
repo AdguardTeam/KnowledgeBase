@@ -75,7 +75,7 @@ To try it out:
 
 #### tinyShield
 
-Пользовательский скрипт для тех, кто посещает корейские и некоторые международные сайты. Скрипт блокирует рекламу Ad-Shield и программы, обходящие блокировщики рекламы. Этот пользовательский скрипт можно установить с помощью приложений AdGuard на основе CoreLibs, а также с помощью Violentmonkey, Tampermonkey и [quoid/userscripts](https://github.com/quoid/userscripts). [На GitHub](https://github.com/List-KR/tinyShield) есть подробности об этом пользовательском скрипте и о том, как его установить.
+Пользовательский скрипт для тех, кто посещает корейские и некоторые международные сайты. Скрипт блокирует рекламу Ad-Shield и программы, обходящие блокировщики рекламы. Этот пользовательский скрипт можно установить с помощью приложений AdGuard на основе CoreLibs, а также с помощью Violentmonkey, Tampermonkey и [quoid/userscripts](https://github.com/quoid/userscripts). [На GitHub](https://github.com/FilteringDev/tinyShield) есть подробности об этом пользовательском скрипте и о том, как его установить.
 
 ### Где взять больше пользовательских скриптов{#more-userscripts}
 
