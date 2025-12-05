@@ -3612,6 +3612,10 @@ To force the ExtendedCss implementation of `:has()` to be used (regardless of na
 use the `#?#` or `#$?#` rule markers explicitly,
 e.g., `example.com#?#p:has(> a)` or `example.com#$?#div:has(> span) { display: none !important; }`.
 
+And since the `:has()` pseudo-class cannot be nested within another `:has()`
+in native implementation, e.g. `div:has(p:has(a))`,
+it is always treated as extended in AdGuard Browser Extension.
+
 :::
 
 [native-has]: https://developer.mozilla.org/docs/Web/CSS/:has
