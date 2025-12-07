@@ -31,6 +31,14 @@ From this tab, you can activate optimized filters, enable notifications about ex
 
 Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
 
+You can also choose whether to help us improve the extension by sending anonymized usage data. This includes the names of screens you interact with, the names of buttons you click, and session identifiers. This option is disabled by default, and if you enable it, all data will be strictly anonymized, used only internally, and never shared with third parties.
+
+:::note
+
+The Send anonymized usage data option can also be enabled on the post-installation page in Chromium-based browsers.
+
+:::
+
 ## About {#about}
 
 In the *About* section, you can find info about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
