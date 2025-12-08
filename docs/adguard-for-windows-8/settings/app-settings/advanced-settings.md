@@ -5,9 +5,7 @@ sidebar_position: 3
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level.
-
-This is a beta release and still under development. If you’d like to try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
 
 :::
 
@@ -71,8 +69,8 @@ Using the *Block Java* option does not affect JavaScript — it will remain enab
 
 Choose how AdGuard responds when a domain is blocked by a DNS rule based on the [hosts-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
-- Return a “REFUSED” error
-- Return a “NXDOMAIN” error
+- Return a ``REFUSED`` error
+- Return a ``NXDOMAIN`` error
 - Return a custom IP address
 
 ### Custom IPv4 address

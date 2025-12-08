@@ -5,9 +5,7 @@ sidebar_position: 1
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level.
-
-This is a beta release and still under development. If you’d like to try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
 
 :::
 

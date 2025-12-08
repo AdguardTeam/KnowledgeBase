@@ -5,9 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level.
-
-This is a beta release and still under development. If you’d like to try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
 
 :::
 
@@ -29,7 +27,7 @@ Most websites use HTTPS encryption today. Without HTTPS filtering, AdGuard canno
 
 We recommend keeping the *Filter HTTPS* option turned on unless you have a specific reason to turn it off.
 
-When you click this option, you can:
+With this option, you can:
 
 - Reinstall or download the AdGuard certificate
 
@@ -45,9 +43,9 @@ Here you can choose which proxy AdGuard should use to download filter updates or
 
 ## Use WFP network driver
 
-Enable this to use the WFP (Windows Filtering Platform) driver, which helps block ads and trackers in apps on Windows 8 and later.
+Enable this option to use the WFP (Windows Filtering Platform) driver, which helps block ads and trackers in apps on Windows 8 and later.
 
-If this option is turned off, AdGuard will switch to the older TDI driver instead.
+If this option is disabled, AdGuard will switch to the older TDI driver instead.
 
 :::note
 
