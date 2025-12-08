@@ -54,28 +54,6 @@ This means:
 - Network Service falls back to a network path that the TDI driver can see.
 - AdGuard regains the ability to filter browser traffic.
 
-The relevant keys are:
-
-    ```sh
-    RendererAppContainerEnabled = 0
-    NetworkServiceSandboxEnabled = 0
-    ```
-
-These settings are applied as enterprise policies, meaning:
-
-- They override field trials.
-- They override internal browser settings.
-- They cannot be reverted by the browser itself.
-
-This makes the workaround more stable than alternatives like clearing the user profile or launching the browser with a different user-data directory.
-
-:::note
-
-This workaround reduces browser security by disabling parts of its sandbox.
-It should be used only as a temporary solution until AdGuard fully transitions away from TDI-based filtering.
-
-:::
-
 ### How to apply the registry fix manually in any Chromium-based browser
 
 The steps below explain how to manually disable AppContainer and Network Service sandboxing for any Chrome-based browser by editing the Windows Registry.
@@ -111,11 +89,7 @@ If your browser is not listed, you must determine its policy branch by checking 
 - `vivaldi://policy`
 - `browser://policy` (Yandex)
 
-This page shows the exact policy namespace your browser uses. Once identified, we refer to the browser-specific branch as:
-
-    ```sh
-    HKLM\SOFTWARE\Policies\<Vendor>\<Product>
-    ```
+This page shows the exact policy namespace your browser uses. Once identified, we refer to the browser-specific branch as `HKLM\SOFTWARE\Policies\<Vendor>\<Product>`.
 
 1. Open the Registry Editor:
 
@@ -125,55 +99,35 @@ This page shows the exact policy namespace your browser uses. Once identified, w
 
 1. Back up the Policies branch:
 
-    - In the left panel, navigate to:
-
-    ```sh
-    HKEY_LOCAL_MACHINE\SOFTWARE\Policies
-    ```
-
+    - In the left panel, navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies`
     - Right-click **Policies** → **Export**
-    - Save the file as `Policies_backup.reg`
+    - Save the file as *Policies_backup.reg*
 
     If something goes wrong, you can restore the backup by double-clicking this file.
 
 1. Navigate to your browser’s policy key:
-    - Expand the following path:
 
-    ```sh
-    HKEY_LOCAL_MACHINE
-    └ SOFTWARE
-      └ Policies
-    ```
+    - Expand the path `HKEY_LOCAL_MACHINE` → *SOFTWARE* → *Policies*.
     - Locate the folder corresponding to your browser.
 
 If the key does not exist, you can create it manually. Example for Chrome:
-    - Right-click **Policies** → **New → Key** → name it `Google`
-    - Inside `Google`, create another key named `Chrome`
 
-Repeat the same logic for Chromium, Edge, Brave, Vivaldi, Yandex Browser, etc. You should end up with a key that looks like:
+- Right-click *Policies* → *New* → *Key* and name it `Google`
+- Inside `Google`, create another key named `Chrome`
 
-    ```sh
-    HKEY_LOCAL_MACHINE\SOFTWARE\Policies\<Vendor>\<Product>
-    ```
+Repeat the same logic for Chromium, Edge, Brave, Vivaldi, Yandex Browser, etc. You should end up with a key that looks like `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\<Vendor>\<Product>`.
 
 1. Add the required registry values:
-    - In the correct key, Right-click the right panel → **New → DWORD (32-bit) Value**
-    - Name it:
 
-        ```sh
-        RendererAppContainerEnabled
-        ```
+    - In the correct key, click the right panel → **New → DWORD (32-bit) Value**
+    - Name it `RendererAppContainerEnabled`
 
     - Double-click it and set:
 
-        - **Value:** `0`
+        - **Value:** 0
         - **Base:** Hexadecimal or Decimal (either is fine)
 
-    - Repeat the process and create a second DWORD:
-
-        ```sh
-        NetworkServiceSandboxEnabled
-        ```
+    - Repeat the process and create a second DWORD `NetworkServiceSandboxEnabled`.
 
     - Set its value to 0.
 
@@ -182,7 +136,7 @@ Repeat the same logic for Chromium, Edge, Brave, Vivaldi, Yandex Browser, etc. Y
 1. Close the browser and apply the settings. To ensure the policy is loaded:
 
     - Fully close the browser
-    - Check Task Manager — make sure no processes such as `chrome.exe`, `msedge.exe`, `brave.exe`, etc., remain running
+    - Check Task Manager and make sure no processes such as *chrome.exe*, *msedge.exe*, *brave.exe* remain running
     - Reopen the browser
 
 1. Verify that the policies have been applied by opening the policy viewer for your browser:
@@ -196,8 +150,8 @@ Repeat the same logic for Chromium, Edge, Brave, Vivaldi, Yandex Browser, etc. Y
 
 You should see the following policies active:
 
-    - `RendererAppContainerEnabled` — **0 / false**
-    - `NetworkServiceSandboxEnabled` — **0 / false**
+- `RendererAppContainerEnabled` — **0 / false**
+- `NetworkServiceSandboxEnabled` — **0 / false**
 
 If available, click *Reload policies*.
 
