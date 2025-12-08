@@ -3599,7 +3599,7 @@ If it is not supported by the product (or by the browser in case of AdGuard Brow
 ExtendedCss implementation will be used automatically as a fallback,
 even for rules with the `##` marker.
 
-Currently, all modern AdGuard products support the native implementation of `:has()`:
+AdGuard products support the native implementation of `:has()`:
 
 - AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **support** it with [CoreLibs] v1.12 or later.
 - AdGuard for iOS and AdGuard for Safari **support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 and [Safari browser v16.4][safari-16.4] or later.
