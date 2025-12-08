@@ -56,7 +56,7 @@ This means:
 
 The relevant keys are:
 
-    ```
+    ```sh
     RendererAppContainerEnabled = 0
     NetworkServiceSandboxEnabled = 0
     ```
@@ -112,29 +112,34 @@ If your browser is not listed, you must determine its policy branch by checking 
 - `browser://policy` (Yandex)
 
 This page shows the exact policy namespace your browser uses. Once identified, we refer to the browser-specific branch as:
-    ```
+
+    ```sh
     HKLM\SOFTWARE\Policies\<Vendor>\<Product>
     ```
 
-2. Open the Registry Editor:
+1. Open the Registry Editor:
+
     - Press **Win + R**
     - Type **regedit** and press **Enter**
     - Approve the UAC prompt by running it as administrator
 
-3. Back up the Policies branch:
+1. Back up the Policies branch:
+
     - In the left panel, navigate to:
 
-    ```
+    ```sh
     HKEY_LOCAL_MACHINE\SOFTWARE\Policies
     ```
+
     - Right-click **Policies** → **Export**
     - Save the file as `Policies_backup.reg`
 
     If something goes wrong, you can restore the backup by double-clicking this file.
 
-4. Navigate to your browser’s policy key:
+1. Navigate to your browser’s policy key:
     - Expand the following path:
-    ```
+
+    ```sh
     HKEY_LOCAL_MACHINE
     └ SOFTWARE
       └ Policies
@@ -146,23 +151,27 @@ If the key does not exist, you can create it manually. Example for Chrome:
     - Inside `Google`, create another key named `Chrome`
 
 Repeat the same logic for Chromium, Edge, Brave, Vivaldi, Yandex Browser, etc. You should end up with a key that looks like:
-    ```
+
+    ```sh
     HKEY_LOCAL_MACHINE\SOFTWARE\Policies\<Vendor>\<Product>
     ```
 
-5. Add the required registry values:
+1. Add the required registry values:
     - In the correct key, Right-click the right panel → **New → DWORD (32-bit) Value**
     - Name it:
-        ```
+
+        ```sh
         RendererAppContainerEnabled
         ```
 
     - Double-click it and set:
+
         - **Value:** `0`
         - **Base:** Hexadecimal or Decimal (either is fine)
 
     - Repeat the process and create a second DWORD:
-        ```
+
+        ```sh
         NetworkServiceSandboxEnabled
         ```
 
@@ -170,12 +179,14 @@ Repeat the same logic for Chromium, Edge, Brave, Vivaldi, Yandex Browser, etc. Y
 
     Both parameters must be `REG_DWORD` and have the value **0**.
 
-6. Close the browser and apply the settings. To ensure the policy is loaded:
+1. Close the browser and apply the settings. To ensure the policy is loaded:
+
     - Fully close the browser
     - Check Task Manager — make sure no processes such as `chrome.exe`, `msedge.exe`, `brave.exe`, etc., remain running
     - Reopen the browser
 
-7. Verify that the policies have been applied by opening the policy viewer for your browser:
+1. Verify that the policies have been applied by opening the policy viewer for your browser:
+
     - **Chrome:** `chrome://policy`
     - **Chromium:** `chrome://policy`
     - **Edge:** `edge://policy`
@@ -184,8 +195,9 @@ Repeat the same logic for Chromium, Edge, Brave, Vivaldi, Yandex Browser, etc. Y
     - **Yandex Browser:** `browser://policy` or `yandex://policy` (varies)
 
 You should see the following policies active:
-- `RendererAppContainerEnabled` — **0 / false**
-- `NetworkServiceSandboxEnabled` — **0 / false**
+
+    - `RendererAppContainerEnabled` — **0 / false**
+    - `NetworkServiceSandboxEnabled` — **0 / false**
 
 If available, click *Reload policies*.
 
