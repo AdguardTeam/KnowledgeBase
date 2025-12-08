@@ -31,7 +31,7 @@ From this tab, you can activate optimized filters, enable notifications about ex
 
 Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
 
-You can also choose to help us improve the extension by sending anonymized usage data. This may include the names of screens you view, the buttons you tap, and session identifiers. These insights help us understand where users run into friction, refine the experience, and make the extension faster and easier to use. The option is off by default, and if you turn it on, all data is fully anonymized, used only internally, and never shared with third parties.
+You can also choose to help us improve the extension by sending us anonymized usage data. This includes the names of the screens you interact with, the names of the buttons you click, and session identifiers. These insights help us understand where users run into friction, refine the experience, and make the extension faster and easier to use. The *Send anonymized usage data* option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
 
 :::note
 
