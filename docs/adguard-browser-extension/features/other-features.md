@@ -27,7 +27,7 @@ The *Additional settings* section contains a range of various settings that are 
 
 ![Additional settings *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
 
-From this tab, you can activate optimized filters, enable notifications about extension updates, open the *Filtering log*, or clear the statistics of blocked ads and trackers.
+From this tab, you can invert the allowlist and add the AdGuard item to the browser’s context menu. You can also enable the display of the number of blocked ads on the AdGuard icon and notifications about extension updates. Additionally, this section lets you enable notifications about the AdGuard app, open the *Filtering log*, clear the statistics of blocked ads and trackers, or reset the settings.
 
 Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
 
