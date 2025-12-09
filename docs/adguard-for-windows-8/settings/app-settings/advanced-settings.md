@@ -69,8 +69,8 @@ Using the *Block Java* option does not affect JavaScript — it will remain enab
 
 Choose how AdGuard responds when a domain is blocked by a DNS rule based on the [hosts-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
-- Return a ``REFUSED`` error
-- Return a ``NXDOMAIN`` error
+- Return a `REFUSED` error
+- Return a `NXDOMAIN` error
 - Return a custom IP address
 
 ### Custom IPv4 address
