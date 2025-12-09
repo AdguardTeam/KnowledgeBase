@@ -9,8 +9,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 :::
 
-Some AdGuard for Windows users may notice that the app stops filtering traffic in Chromium-based browsers, especially starting from **Google Chrome 142+**.
-Browser traffic simply does not appear at the TDI driver level, preventing AdGuard from inspecting or filtering it.
+Some AdGuard for Windows users may notice that [the app stops filtering traffic in Chromium-based browsers](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). Starting from Google Chrome 142+, browser traffic simply does not appear at the TDI driver level, preventing AdGuard from inspecting or filtering it.
 
 This behavior is not a bug in AdGuard, but a result of recent architectural and security changes in modern browsers.
 
@@ -26,11 +25,9 @@ Chromium-based browsers (Chrome, Edge, Brave, Vivaldi, etc.) have been strengthe
 
 As a result, all browser traffic becomes invisible to the TDI driver used by AdGuard.
 
-A known precedent is Microsoft Edge, which has never been filterable via TDI for this exact reason. Now Chrome and other Chromium browsers are adopting the same model.
-
 ### What changed in Chrome 142
 
-Starting from **Chrome 142**, the **Network Service** process is now launched inside AppContainer by default.
+Starting from Chrome 142, the Network Service process is now launched inside AppContainer by default.
 
 When this happens, the browser no longer uses TDI, all traffic flows through WSK, and AdGuard cannot intercept that traffic on the TDI level.
 
@@ -44,63 +41,47 @@ Because of this, TDI-based traffic visibility becomes increasingly unstable. In 
 
 AdGuard already treats the TDI driver as deprecated, and its complete removal is planned as the product evolves.
 
-## A temporary solution
+## Temporary solution
 
-Certain Windows Registry changes can force the browser to stop using AppContainer, causing its processes to run in a non-sandboxed mode again.
+Certain Windows registry changes can force the browser to stop using AppContainer, causing its processes to run in a non-sandboxed mode again. Network Service stops using the WSK stack and falls back to a network path that the TDI driver can see. AdGuard then regains the ability to filter browser traffic.
 
-This means:
-
-- Network Service stops using the WSK stack.
-- Network Service falls back to a network path that the TDI driver can see.
-- AdGuard regains the ability to filter browser traffic.
-
-### How to apply the registry fix manually in any Chromium-based browser
-
-The steps below explain how to manually disable AppContainer and Network Service sandboxing for any Chrome-based browser by editing the Windows Registry.
+### How to modify the registry in Chromium-based browsers
 
 :::warning
 
-Administrator rights are required to edit the Registry. Incorrect changes may affect system or browser stability and security. Always create a backup of the Registry branch before modifying it.
+Administrator rights are required to edit the registry. Incorrect changes may affect system or browser stability and security. Always create a backup of the registry branch before modifying it.
 
 Before proceeding, keep in mind that this solution reduces sandbox/AppContainer security, making the browser less isolated. It applies system-wide because it modifies `HKLM`, and should only be used for debugging, temporary workarounds, in controlled environments, or when TDI-based traffic interception is strictly necessary.
 
-It should **not** be applied broadly across end-user machines.
-
-**Proceed only if you understand the implications.**
+It should **not** be applied broadly across end-user machines. **Proceed only if you understand the implications.**
 
 :::
 
-1. Identify the correct registry branch for your browser. Different Chromium-based browsers use different policy paths under `HKLM`:
+You can apply the necessary registry changes automatically by using one of the pre-generated .reg files below. Each file disables AppContainer/Network Service sandboxing for a specific Chromium-based browser:
 
-| Browser                       | Registry Path                                              |
-| ----------------------------- | ---------------------------------------------------------- |
-| **Google Chrome**             | `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome`       |
-| **Chromium**                  | `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Chromium`            |
-| **Microsoft Edge (Chromium)** | `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge`      |
-| **Brave**                     | `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\BraveSoftware\Brave` |
-| **Vivaldi**                   | `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Vivaldi`             |
-| **Yandex Browser**            | `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\YandexBrowser`       |
+- [Download Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chrome.reg)
+- [Download Chromium.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chromium.reg)
+- [Download Edge.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Edge.reg)
+- [Download Brave.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Brave.reg)
+- [Download Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Vivaldi.reg)
+- [Download YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_YandexBrowser.reg)
 
-If your browser is not listed, you must determine its policy branch by checking the vendor’s official documentation, or opening the internal policy page:
+If your browser is not listed, follow the manual instructions below to create the necessary registry entries:
 
-- `chrome://policy`
-- `edge://policy`
-- `brave://policy`
-- `vivaldi://policy`
-- `browser://policy` (Yandex)
+1. Determine its policy branch by checking the vendor’s official documentation, or opening the internal policy page. On Chrome, navigate to `chrome://policy`. Other browsers use a similar path.
 
-This page shows the exact policy namespace your browser uses. Once identified, we refer to the browser-specific branch as `HKLM\SOFTWARE\Policies\<Vendor>\<Product>`.
+1. Identify the correct registry branch for your browser. Different Chromium-based browsers use different policy paths under `HKLM`. It should follow the model `HKLM\SOFTWARE\Policies\<Vendor>\<Product>`.
 
 1. Open the Registry Editor:
 
-    - Press **Win + R**
-    - Type **regedit** and press **Enter**
+    - Press *Win + R*
+    - Type *regedit* and press *Enter*
     - Approve the UAC prompt by running it as administrator
 
 1. Back up the Policies branch:
 
     - In the left panel, navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies`
-    - Right-click **Policies** → **Export**
+    - Right-click *Policies* → *Export*
     - Save the file as *Policies_backup.reg*
 
     If something goes wrong, you can restore the backup by double-clicking this file.
@@ -119,7 +100,7 @@ Repeat the same logic for Chromium, Edge, Brave, Vivaldi, Yandex Browser, etc. Y
 
 1. Add the required registry values:
 
-    - In the correct key, click the right panel → **New → DWORD (32-bit) Value**
+    - In the correct key, click the right panel → *New → DWORD (32-bit) Value*
     - Name it `RendererAppContainerEnabled`
 
     - Double-click it and set:
@@ -139,14 +120,7 @@ Repeat the same logic for Chromium, Edge, Brave, Vivaldi, Yandex Browser, etc. Y
     - Check Task Manager and make sure no processes such as *chrome.exe*, *msedge.exe*, *brave.exe* remain running
     - Reopen the browser
 
-1. Verify that the policies have been applied by opening the policy viewer for your browser:
-
-    - **Chrome:** `chrome://policy`
-    - **Chromium:** `chrome://policy`
-    - **Edge:** `edge://policy`
-    - **Brave:** `brave://policy`
-    - **Vivaldi:** `vivaldi://policy`
-    - **Yandex Browser:** `browser://policy` or `yandex://policy` (varies)
+1. Verify that the policies have been applied by opening the policy viewer for your browser.
 
 You should see the following policies active:
 
@@ -156,3 +130,7 @@ You should see the following policies active:
 If available, click *Reload policies*.
 
 Done!
+
+## Permanent solution
+
+We’re planning to add support for the SockFilter driver in the upcoming versions. It will fix the issue by solving conflicts in the WFP stack. [More information](https://github.com/AdguardTeam/AdguardForWindows/issues/5780). 
