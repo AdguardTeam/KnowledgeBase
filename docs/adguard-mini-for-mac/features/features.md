@@ -3,7 +3,7 @@ title: Features
 sidebar_position: 1
 ---
 
-- [Safari protection](adguard-mini-for-mac/features/safari-protection.md)
+- [Safari protection](/adguard-mini-for-mac/features/safari-protection.md)
 
     Core filtering feature with customizable options
 

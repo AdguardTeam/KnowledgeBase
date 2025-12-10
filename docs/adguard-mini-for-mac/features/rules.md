@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ![User rules](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/user-rules.png)
 
-User rules can be used to customize ad blocking when you want something personal: exclude a website from filtering, unblock requests, or allow scripts on a certain webpage. They can be added manually, imported, or created automatically when you block an element on the page. 
+User rules can be used to customize ad blocking when you want something personal: exclude a website from filtering, unblock requests, or allow scripts on a certain webpage. They can be added manually, imported, or created automatically when you block an element on the page.
 
 To add your own filtering rules, use a [special syntax](/general/ad-filtering/create-own-filters).
 

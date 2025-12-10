@@ -24,5 +24,3 @@ This page is about AdGuard Mini for Mac, which safeguards only your Safari brows
 - [Solving problems](/adguard-mini-for-mac/solving-problems/solving-problems.md)
 
     Known issues and possible solutions
-
-

@@ -8,7 +8,7 @@ sidebar_position: 6
 *Support* section has helpful options in case you have a question or encounter a problem:
 
 - FAQ
-  
+
   Answers to a lot of questions and problems can be found here
 
 - Report incorrect blocking
@@ -26,5 +26,5 @@ sidebar_position: 6
   Takes you to a page where you can find links to AdGuard's social media and GitHub
 
 - Rate app
-  
+
   Takes you to the App Store screen where you can leave review on AdGuard Mini

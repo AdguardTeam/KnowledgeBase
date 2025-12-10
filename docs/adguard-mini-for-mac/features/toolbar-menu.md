@@ -10,7 +10,7 @@ AdGuard Mini has a handy menu right in the Safari toolbar. To open it, click the
 Here's what you can do in the toolbar menu:
 
 - **Pause icon**
-  
+
   Disables AdGuard Mini
 
 - **Settings icon**
