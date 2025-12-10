@@ -37,13 +37,13 @@ Option 1
 
 1. Wechseln Sie zurück zu **Einstellungen** → **Apps** → **Apps verwalten** → **AdGuard** und entfernen Sie das Häkchen bei **App-Aktivität anhalten, wenn nicht genutzt**
 
-1. Öffnen Sie <0>Batteriesparer</0> und tippen Sie auf <0>Keine Einschränkungen</0>.
+1. Öffnen Sie **Batteriesparer** und tippen Sie auf **Keine Einschränkungen**
 
 Option 2
 
 1. Öffnen Sie **Einstellungen** → **Apps** → **Apps verwalten** → **AdGuard** und aktivieren Sie **Autostart**
 
-1. Öffnen Sie <0>Batteriesparer</0> und tippen Sie auf <0>Keine Einschränkungen</0>.
+1. Öffnen Sie **Batteriesparer** und tippen Sie auf **Keine Einschränkungen**
 
 Fertig! Sie haben AdGuard erfolgreich für das Verwenden im Hintergrund eingerichtet.
 
