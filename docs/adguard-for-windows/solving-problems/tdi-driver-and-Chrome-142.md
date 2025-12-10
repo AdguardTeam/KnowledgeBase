@@ -68,7 +68,7 @@ You can apply the necessary registry changes automatically by using one of the p
 
 If your browser is not listed, follow the manual instructions below to create the necessary registry entries:
 
-1. Determine its policy branch by checking the vendor’s official documentation, or opening the internal policy page. On Chrome, navigate to `chrome://policy`. Other browsers use a similar path.
+1. Determine its policy branch by checking the vendor’s official documentation or by opening the internal policy page. In Chrome, navigate to `chrome://policy`. Other browsers use a similar path.
 
 1. Identify the correct registry branch for your browser. Different Chromium-based browsers use different policy paths under `HKLM`. It should follow the model `HKLM\SOFTWARE\Policies\<Vendor>\<Product>`.
 
