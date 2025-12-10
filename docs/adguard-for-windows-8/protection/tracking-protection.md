@@ -69,6 +69,8 @@ With this option, you can set a time limit (in minutes) after which all third-pa
 
 Keep in mind that this setting removes all third-party cookies, including those used for logins via social networks or other external services. This means you may need to log in again from time to time or deal with other cookie-related issues. If you only want to block tracking cookies, use [*AdGuard Tracking Protection filter*](/general/ad-filtering/filter-policy/#tracking-protection-filter).
 
+:::
+
 ### Self-destruction of first-party cookies (not recommended)
 
 This option deletes cookies set by the website you are currently visiting after a selected period of time (in minutes). When the timer runs out, all such cookies are removed. Set the timer to 0 to block them completely.

@@ -11,6 +11,8 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 When you open AdGuard for Windows v8.0, the first thing you’ll notice is the main screen. Its central element is the large switch that turns protection on and off.
 
+![Home screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/homescreen_eng.png)
+
 Right above the switch are the icons for *Ad blocking*, *Tracking protection*, *DNS protection*, and *Annoyance blocking*. You can activate any of them with a single click.
 
 If you want to fine-tune the app, open the menu on the left. To set up ad blocking and security features manually, go to the *Protection* tab.
