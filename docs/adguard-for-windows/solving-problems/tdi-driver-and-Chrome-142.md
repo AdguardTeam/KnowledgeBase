@@ -100,7 +100,7 @@ Repeat the same logic for Chromium, Edge, Brave, Vivaldi, Yandex Browser, etc. Y
 
 1. Add the required registry values:
 
-    - In the correct key, click the right panel → *New → DWORD (32-bit) Value*
+    - In the correct key, click the right panel → *New* → *DWORD (32-bit) Value*
     - Name it `RendererAppContainerEnabled`
 
     - Double-click it and set:
