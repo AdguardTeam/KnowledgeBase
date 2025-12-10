@@ -598,9 +598,9 @@ Na zařízeních Motorola existují čtyři klíčové konfigurace, které zajis
 
 1. Povolit využití na pozadí:
 
-   - Stop AdGuard protection and close the AdGuard app
-   - Go to **Settings → Apps → App battery usage** and find AdGuard
-   - Enable **Allow background usage** or select **Unrestricted**, depending on your Android version
+   - Ukončete ochranu AdGuardem a zavřete aplikaci AdGuard
+   - Přejděte do **Nastavení → Aplikace → Využití baterie aplikacemi** a vyhledejte AdGuard
+   - Povolte **Povolit použití na pozadí** nebo vyberte **Bez omezení** v závislosti na vaší verzi systému Android
 
 1. Odebrat omezení aktivity na pozadí:
 
@@ -612,11 +612,11 @@ Na zařízeních Motorola existují čtyři klíčové konfigurace, které zajis
 
 1. Spravovat aplikace na pozadí:
 
-   - Go to **Settings → Battery → Background app use**
-   - Enable the **Manage background apps** option
-   - In the resulting menu, select the **Apps** tab
-   - Find **AdGuard** in the list and tap it
-   - In the **Optimize battery use** dialog, select **Always allow**
+   - Přejděte do **Nastavení → Baterie → Používání aplikací na pozadí**
+   - Povolte možnost **Spravovat aplikace na pozadí**
+   - Ve výsledné nabídce vyberte kartu **Aplikace**
+   - Vyhledejte **AdGuard** v seznamu a klepněte na něj
+   - V dialogovém okně **Optimalizovat využití baterie** vyberte **Vždy povolit.**
 
     ![Always allow *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/motorolla-background-app-use.png)
 

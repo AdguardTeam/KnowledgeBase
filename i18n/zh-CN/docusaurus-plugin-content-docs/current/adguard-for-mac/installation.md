@@ -55,6 +55,12 @@ AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序�
 
 完成啦！AdGuard 已成功安装到您的 Mac！
 
+### Installation on older versions of macOS
+
+Users with older versions of macOS (Big Sur 11, Catalina 10.15, or earlier) won’t find a compatible app version on the AdGuard Ad Blocker website — these OS versions are no longer supported in the latest releases.
+
+However, you still can [download an older, compatible version](https://agrd.io/adguard_for_mac_v2-17)
+
 ## 卸载
 
 ### 一般卸载方式
