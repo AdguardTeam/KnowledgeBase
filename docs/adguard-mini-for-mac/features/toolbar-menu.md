@@ -23,7 +23,7 @@ Here's what you can do in the toolbar menu:
 
 - **Protection**
 
-  Turn protection on or off for the website you are currently on
+  Turn protection off just for the website you are currently on — this adds the website to the allowlist
 
 - **Block element**
 
