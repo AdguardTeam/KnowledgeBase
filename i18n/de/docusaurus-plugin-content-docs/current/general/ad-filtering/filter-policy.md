@@ -3,6 +3,16 @@ title: Filterrichtlinie von AdGuard
 sidebar_position: 6
 ---
 
+:::note Haftungsausschluss
+
+Bitte lesen Sie diese Filterrichtlinie sorgfältig durch, bevor Sie einen Filter aktivieren.
+
+Das Verwenden von AdGuard Werbeblocker, AdGuard DNS und deren Filtern kann die Funktionsweise von Websites und Diensten von Drittanbietern beeinträchtigen. Sie sind dafür verantwortlich, die Richtlinien und Bedingungen aller von Ihnen genutzten Websites oder Dienste zu überprüfen und zu befolgen.
+
+Bevor Sie Filter von Drittanbietern aktivieren, erklären Sie sich damit einverstanden, deren geltende Bedingungen zu überprüfen und eine fundierte Entscheidung über deren Verwendung zu treffen. AdGuard ist nicht dafür verantwortlich, wie Filter von Drittanbietern funktionieren oder was deren Bedingungen enthalten, und das Vorhandensein dieser Filter in AdGuard-Produkten stellt keine Empfehlung zu deren Verwendung dar.
+
+:::
+
 Bei AdGuard folgen wir seit langem bestimmten Grundsätzen bei der Erstellung unserer Filter, die zusammen mit den Filterbeschreibungen unten als Teil unserer Filterrichtlinien aufgeführt sind.
 
 ## Gemeinsame Kriterien
