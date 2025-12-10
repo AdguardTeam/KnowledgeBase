@@ -19,6 +19,6 @@ In the *Safari extensions* tab, you can see which content blockers are enabled, 
 
 :::tip
 
-You can manage enabled filters in *Settings* → *Filters*. In *Safari extensions* section, you can only see the list enabled filters and the number of enabled rules.
+You can manage enabled filters in *Settings* → *Filters*. In *Safari extensions* section, you can only see the list of enabled filters and the number of enabled rules.
 
 :::
