@@ -17,7 +17,7 @@ sidebar_position: 1
 
 - [Settings](/adguard-mini-for-mac/features/settings/settings.md)
 
-    Info about the app's current version and a list of helpful links
+    Various options that help you configure the app and filtering
 
 - [Support](/adguard-mini-for-mac/features/support.md)
 
