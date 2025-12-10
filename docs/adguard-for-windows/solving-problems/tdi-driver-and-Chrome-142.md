@@ -17,19 +17,11 @@ This behavior is not a bug in AdGuard, but a result of recent architectural and 
 
 Chromium-based browsers (Chrome, Edge, Brave, Vivaldi, etc.) have been strengthening their security architecture. One significant change is moving sensitive internal processes into the [Windows AppContainer sandbox](https://learn.microsoft.com/en-us/windows/win32/secauthz/appcontainer-isolation), including the Network Service, which handles all browser traffic.
 
-### What changes when the browser uses AppContainer
-
-- Processes running inside AppContainer **do not use** the legacy TDI network interface.
-- The traffic goes through the modern WSK (Winsock Kernel) stack instead.
-- The TDI driver cannot see, intercept, or process connections that go through WSK.
-
-As a result, all browser traffic becomes invisible to the TDI driver used by AdGuard.
-
 ### What changed in Chrome 142
 
 Starting from Chrome 142, the Network Service process is now launched inside AppContainer by default.
 
-When this happens, applications running in an AppContainer do not use the legacy TDI networking interface; instead, their traffic is routed through the more modern WSK (Winsock Kernel) stack.
+When this happens, applications running in an AppContainer do not use the legacy TDI networking interface; instead, their traffic is routed through the more modern WSK (Winsock Kernel) stack. As a result, the TDI driver cannot see, intercept, or process connections that go through WSK, and all browser traffic becomes invisible to the TDI driver used by AdGuard.
 
 This behavior is controlled entirely by Chrome’s sandboxing policies and internal experiments (field trials), not by user settings.
 
