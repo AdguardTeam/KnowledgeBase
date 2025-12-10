@@ -9,7 +9,7 @@ AdGuard Mini for Mac was designed to conform to Apple’s restrictions for ad bl
 
     Core filtering feature with customizable options
 
-- [Advanced blocking](adguard-mini-for-mac/features/advanced-blocking.md)
+- [Advanced blocking](/adguard-mini-for-mac/features/advanced-blocking.md)
 
     Unlocks stronger filtering capabilities
 
