@@ -19,7 +19,7 @@ sidebar_position: 6
 
   Contact our support team directly from the app, allowing you to attach logs and app info
 
-  ![Support tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/contact-support.png)
+  ![Contact support screen](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/contact-support.png)
 
 - Discuss
 
