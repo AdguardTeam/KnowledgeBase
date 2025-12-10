@@ -24,7 +24,7 @@ AdGuard Mini for Mac has 6 content blockers:
 
 This makes a total of 900,000 filtering rules.
 
-However, **an extension can contain up to 150,000 rules**. If you exceed this limit, some of the rules will not be applied. This may lead to incorrect blocking.
+However, **one extension can contain only up to 150,000 rules**. If you exceed this limit, some of the rules will not be applied. This may lead to incorrect blocking.
 
 ## How to check if you are exceeding the rule limit
 
