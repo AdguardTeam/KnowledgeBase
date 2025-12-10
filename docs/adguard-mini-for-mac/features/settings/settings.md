@@ -1,6 +1,6 @@
 ---
 title: Settings
-sidebar_position: 1
+sidebar_position: 5
 ---
 
 ![Settings tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings.png)

@@ -27,4 +27,4 @@ sidebar_position: 6
 
 - Rate app
 
-  Takes you to the App Store screen where you can leave review on AdGuard Mini
+  Takes you to the App Store screen where you can leave a review on AdGuard Mini
