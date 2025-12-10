@@ -5,7 +5,7 @@ sidebar_position: 8
 
 ![Safari toolbar assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/assistant.png)
 
-AdGuard Mini has a handy menu right in the Safari toolbar. To open it, click the icon located to the right of the search bar.
+AdGuard Mini has a handy menu right in the Safari toolbar. To open it, click the icon located to the left of the search bar.
 
 Here's what you can do in the toolbar menu:
 

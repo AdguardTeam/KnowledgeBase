@@ -15,7 +15,7 @@ sidebar_position: 1
 
     Custom filtering rules to fine-tune ad blocking
 
-- [Settings](/adguard-mini-for-mac/features/settings.md)
+- [Settings](/adguard-mini-for-mac/features/settings/settings.md)
 
     Info about the app's current version and a list of helpful links
 
@@ -26,6 +26,10 @@ sidebar_position: 1
 - [About](/adguard-mini-for-mac/features/about.md)
 
     Info about the app's current version and a list of helpful links
+
+- [Safari toolbar menu](/adguard-mini-for-mac/features/toolbar-menu.md)
+
+    A handy menu in the Safari toolbar
 
 - [Full version](/adguard-mini-for-mac/features/full-version.md)
 
