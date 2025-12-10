@@ -11,13 +11,13 @@ sidebar_position: 2
 
 Раздел _Настройки_ требует наибольшего внимания. Здесь вы можете настроить приложение в соответствии с вашими требованиями: блокировать определённые элементы или сайты, использовать DNS-сервер доверенного провайдера, удалять сторонние куки и так далее.
 
-### General settings
+### Основные настройки
 
-Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect _Debug logs_](/adguard-for-windows/solving-problems/adguard-logs.md).
+Здесь вы можете настроить язык и тему (Тёмная или Светлая), включение AdGuard при запуске системы и тихие автоматические обновления, выбрать канал обновления и установить интервал проверки обновлений. Если AdGuard для Windows работает некорректно и поддержка попросила вас [собрать логи](/adguard-for-windows/solving-problems/adguard-logs.md), вам тоже следует перейти в _Настройки_.
 
-![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/general_settings.png)
+![Настройки \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/general_settings.png)
 
-At the very bottom of the screen you will find _Advanced Settings_. Changing some of them mindlessly may potentially cause problems with AdGuard’s performance, break the Internet connection or compromise your security and privacy. That’s why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in _Advanced Settings_, read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
+В самом низу экрана вы найдёте _Расширенные настройки_. Изменение некоторых из них может потенциально вызвать проблемы с работой AdGuard, нарушить интернет-соединение или поставить под угрозу вашу безопасность и конфиденциальность. Заходите в этот раздел, только если вы уверены в своих действиях, или наша команда поддержки попросила вас об этом. [В отдельной статье](/adguard-for-windows/solving-problems/low-level-settings.md) рассказали, что находится в _Расширенных настройках_.
 
 ![Advanced Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/advanced_settings.png)
 
@@ -25,7 +25,7 @@ At the very bottom of the screen you will find _Advanced Settings_. Changing som
 
 Это основной модуль AdGuard для Windows, блокирующий рекламу на сайтах, которые вы посещаете, и в приложениях, установленных на вашем устройстве. Для фильтрации рекламы и контента, угрожающего конфиденциальности, такого как баннеры, всплывающие окна или трекеры, AdGuard использует разные фильтры — группы правил с похожим назначением, написанные с использованием [специального синтаксиса](/general/ad-filtering/create-own-filters). [Что такое фильтры и как они работают](/general/ad-filtering/how-ad-blocking-works)
 
-![Блокировка рекламы \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings_ad_blocker.png)
+![Блокировка рекламы \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/ad_blocking.png)
 
 В модуле Блокировка рекламы вы можете:
 
@@ -44,11 +44,11 @@ At the very bottom of the screen you will find _Advanced Settings_. Changing som
 
 Многие сайты собирают данные о посетителях: IP-адреса, информацию о браузере и операционной системе, разрешении экрана и даже странице, с которой пользователь перешёл на сайт. Чтобы сохранить индивидуальные настройки, личные предпочтения или «узнать» посетителя при повторном визите, некоторые сайты помечают браузер специальными файлами cookie. _Защита от трекинга_ оберегает вашу личную информацию от подобных систем, собирающих данные и статистику.
 
-![Защита от трекинга \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/stealth-mode.png)
+![Защита от трекинга \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection.png)
 
-You can flexibly adjust the work of _Tracking protection_: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and disable location sharing in your browser that can be used to track your whereabouts.
+Работа этого модуля гибко настраивается: например, вы можете запретить сайту узнавать, что вы искали в поисковой системе, прежде чем попасть на этот сайт. Вы также можете автоматически удалять cookie, как принадлежащие сайту, так и сторонние, и отключить определение местоположения в браузере — оно может использоваться для отслеживания ваших перемещений.
 
-To learn everything about _Tracking protection_ and its many options, [read this article](/general/stealth-mode).
+[Больше о Защите от трекинга](/general/stealth-mode)
 
 ### Защита от фишинга
 
@@ -60,7 +60,7 @@ To learn everything about _Tracking protection_ and its many options, [read this
 - активировать звуковые уведомления,
 - согласиться отправлять анонимную информацию, связанную с безопасностью, на сервер AdGuard, чтобы помочь нам поддерживать базу вредоносных и фишинговых сайтов в актуальном состоянии.
 
-![Защита от фишинга \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
+![Защита от фишинга \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/browsing_security.png)
 
 [Больше о Защите от фишинга](/general/browsing-security)
 
@@ -68,7 +68,7 @@ To learn everything about _Tracking protection_ and its many options, [read this
 
 Есть три важные причины, по которым вам может понадобиться изучить настройки DNS-защиты. Во-первых, чтобы вас не отслеживал интернет-провайдер. Каждый раз, когда вы открываете сайт, например, `google.com`, ваш браузер отправляет запрос на DNS-сервер, чтобы получить взамен IP-адрес сайта. Обычно DNS-сервер принадлежит вашему интернет-провайдеру, что позволяет ему отслеживать ваши действия в интернете. Во-вторых, для шифрования вашего DNS-трафика. И в-третьих — чтобы [блокировать контент на уровне DNS](https://adguard-dns.io/kb/general/dns-filtering/).
 
-![DNS-защита \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
+![DNS-защита \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/dns_protection.png)
 
 В _DNS-защите_ вы можете выбрать DNS-серверы от известных DNS-провайдеров, в том числе [AdGuard DNS](https://adguard-dns.io/kb/), который блокирует рекламу и трекеры, AdGuard DNS Семейный, который дополнительно блокирует контент для взрослых, или Нефильтрующий AdGuard DNS, который обеспечивает безопасное и надёжное соединение, но ничего не фильтрует. Вы даже можете добавлять пользовательские DNS-серверы и правила, используя [синтаксис DNS-правил](https://adguard-dns.io/kb/general/dns-filtering-syntax/). При необходимости вы можете добавить [DNS-фильтры из списка](https://filterlists.com).
 
@@ -81,15 +81,15 @@ To learn everything about _Tracking protection_ and its many options, [read this
 
 ![DNS-фильтры \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
 
-### Parental control
+### Родительский контроль
 
-Бывают сайты, доступ к которым стоит ограничивать, если компьютером пользуются дети. This task is accomplished by _Parental control_.
+Бывают сайты, доступ к которым стоит ограничивать, если компьютером пользуются дети. Эту задачу выполняет _Родительский контроль_.
 
 ![Parental control \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/parental_control.png)
 
-Модуль проверяет содержимое веб-страниц, открытых в браузере, и отфильтровывает страницы с нежелательным для детей контентом: изображения и тексты для взрослых, ненормативная лексика, насилие, пропаганда наркотиков и т. д. Parental control settings are password-protected so that the child is not able to go round the restrictions. Этот модуль не только блокирует доступ к нежелательным сайтам, но и удаляет неподходящие для детей ссылки из результатов поиска.
+Модуль проверяет содержимое веб-страниц, открытых в браузере, и отфильтровывает страницы с нежелательным для детей контентом: изображения и тексты для взрослых, ненормативная лексика, насилие, пропаганда наркотиков и т. д. Настройки Родительского контроля защищены паролем, чтобы ребёнок не смог обойти ограничения. Этот модуль не только блокирует доступ к нежелательным сайтам, но и удаляет неподходящие для детей ссылки из результатов поиска.
 
-In the _Parental control_ module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. Вы также можете включить функцию _Запретить загрузку программ_, чтобы ваш ребёнок не мог загружать и устанавливать программное обеспечение на компьютер. There are two more options in the _Parental control_ module: you can select a specific Windows user to be protected by _Parental control_ and set a password to protect AdGuard settings from change.
+В модуле _Родительский контроль_ вы можете включить _Безопасный поиск_, а также указать, на какие сайты _Родительский контроль_ должен распространяться. Вы также можете включить функцию _Запретить загрузку программ_, чтобы ваш ребёнок не мог загружать и устанавливать программное обеспечение на компьютер. В модуле _Родительский контроль_ есть ещё две опции: вы можете выбрать конкретного пользователя Windows для защиты с помощью _Родительского контроля_ и установить пароль для защиты настроек AdGuard от изменений.
 
 ### Браузерный помощник
 
