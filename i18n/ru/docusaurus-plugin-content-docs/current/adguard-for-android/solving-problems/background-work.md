@@ -594,42 +594,42 @@ Android на заводской прошивке, как правило, не к
 
 ## Motorola
 
-On Motorola devices, there are four key configurations to ensure that AdGuard works properly in the background.
+На устройствах Motorola есть четыре ключевые конфигурации для правильной работы AdGuard в фоновом режиме.
 
-1. Allow background usage:
+1. Разрешить фоновую активность:
 
-   - Stop AdGuard protection and close the AdGuard app
-   - Go to **Settings → Apps → App battery usage** and find AdGuard
-   - Enable **Allow background usage** or select **Unrestricted**, depending on your Android version
+   - Остановите защиту AdGuard и закройте приложение AdGuard
+   - Перейдите в **Настройки → Приложения → Использование батареи приложениями** и найдите AdGuard
+   - Включите **Разрешитьработу в фоне** или выберите **Без ограничений**, в зависимости от версии Android
 
-1. Remove background activity restrictions:
+1. Снять ограничения на фоновую активность:
 
    - Откройте **Настройки**
-   - Scroll down and tap **Apps & notifications**
-   - Find **AdGuard** and open **Advanced → Battery**
-   - Tap **Background restriction** or **Background limits**
-   - If it says **Background activity restricted**, tap it and then tap **Remove**
+   - Прокрутите вниз и нажмите **Приложения и уведомления**
+   - Найдите **AdGuard** и откройте **Дополнительно → Батарея**
+   - Нажмите **Ограничение фоновой работы** или **Ограничения фона**
+   - Если написано **Фоновая активность ограничена**, нажмите на строку, а затем нажмите **Удалить**
 
-1. Manage background apps:
+1. Управлять фоновыми приложениями:
 
-   - Go to **Settings → Battery → Background app use**
-   - Enable the **Manage background apps** option
-   - In the resulting menu, select the **Apps** tab
-   - Find **AdGuard** in the list and tap it
-   - In the **Optimize battery use** dialog, select **Always allow**
+   - Перейдите в **Настройки → Батарея → Использование приложений в фоне**
+   - Включите опцию **Управление фоновыми приложениями**
+   - В появившемся меню выберите вкладку **Приложения**
+   - Найдите в списке **AdGuard** и нажмите на него
+   - В диалоговом окне **Оптимизация использования батареи** выберите **Всегда разрешать**
 
-    ![Always allow *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/motorolla-background-app-use.png)
+    ![Всегда разрешать *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/motorolla-background-app-use.png)
 
-1. Disable Adaptive Battery:
+1. Отключить Адаптивную батарею:
 
-   - Go to **Settings → Battery**
-   - Turn off the **Adaptive Battery** option
+   - Перейдите в **Настройки → Батарея**
+   - Отключите опцию **Адаптивная батарея**
 
 ## ZTE
 
-ZTE devices functioning under the MyOS operating system have an aggressive approach to background processes. Follow these steps to prevent AdGuard from being closed automatically by AI control:
+Устройства ZTE, работающие под управлением операционной системы MyOS, отличаются агрессивным подходом к фоновым процессам. Выполните следующие действия, чтобы предотвратить автоматическое закрытие AdGuard с помощью AI control:
 
-- Go to **Settings → Battery → App Management**
-- Turn off **AI Control**
-- Select **Manual Management**
-- Find **AdGuard** in the list and set **Background Work** to **Allow**
+- Перейдите в **Настройки → Батарея → Управление приложениями**
+- Отключите **AI Control**
+- Выберите **Ручное управление**
+- Найдите **AdGuard** в списке и установите **Фоновую работу** в положение **Разрешить**
