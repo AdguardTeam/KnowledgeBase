@@ -11,7 +11,7 @@ This article is about AdGuard Mini for Mac, which safeguards only your Safari br
 
 ## System requirements
 
-Requires macOS 10.15 (Catalina). The minimum supported version of Safari is 13 or later.
+Requires macOS 12 or later.
 
 ## How to install AdGuard Mini for Mac
 
