@@ -3,7 +3,7 @@ title: Full version
 sidebar_position: 9
 ---
 
-AdGuard Mini for Mac's full version unlocks advanced features that provide extra filtering speed and power.
+AdGuard Mini for Mac’s full version unlocks advanced features that provide extra filtering speed and power.
 
 To activate it, you can use a universal AdGuard license, which is obtainable [on our website](https://adguard.com/license.html) or through in-app purchase. You can also use the 14-day trial to test the features beforehand.
 

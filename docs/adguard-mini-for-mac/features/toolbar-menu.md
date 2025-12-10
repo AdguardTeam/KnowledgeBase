@@ -7,7 +7,7 @@ sidebar_position: 8
 
 AdGuard Mini has a handy menu right in the Safari toolbar. To open it, click the icon located to the left of the search bar.
 
-Here's what you can do in the toolbar menu:
+Here’s what you can do in the toolbar menu:
 
 - **Pause icon**
 
@@ -15,7 +15,7 @@ Here's what you can do in the toolbar menu:
 
 - **Settings icon**
 
-  Takes you to AdGuard Mini's *Settings* screen
+  Takes you to AdGuard Mini’s *Settings* screen
 
 - **Website info**
 

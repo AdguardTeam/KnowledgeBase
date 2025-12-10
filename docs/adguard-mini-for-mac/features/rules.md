@@ -11,10 +11,10 @@ To add your own filtering rules, use a [special syntax](/general/ad-filtering/cr
 
 ### Rule constructor
 
-We understand that writing filtering rules yourself is not every user's cup of tea. That's why you can just click *Create rule* to use a rule constructor: choose what you want to do, click through a few options, and you’re done. Block images, videos, scripts, or any other elements you’d rather not see on a page.
+We understand that writing filtering rules yourself is not every user’s cup of tea. That’s why you can just click *Create rule* to use a rule constructor: choose what you want to do, click through a few options, and you’re done. Block images, videos, scripts, or any other elements you’d rather not see on a page.
 
 ![Rule constructor](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/build-a-rule.png)
 
-Here's an example of a tricky case — a cookie popup that resists filtering. Find it in the page code, then open *User rules* and create a rule to block it:
+Here’s an example of a tricky case — a cookie popup that resists filtering. Find it in the page code, then open *User rules* and create a rule to block it:
 
 <iframe class="youtube-video" src="https://cdn.adtidy.org/content/blog/rule.mp4" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
