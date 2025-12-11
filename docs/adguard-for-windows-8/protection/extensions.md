@@ -11,7 +11,7 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 AdGuard can extend website functionality by acting as a [userscript manager](/general/extensions.md). This allows you to add your own scripts as well as manage existing ones.
 
-![Extensions *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/Extensions_screen.png)
+![Extensions *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extension.png)
 
 ## Automatically detect userscripts
 
