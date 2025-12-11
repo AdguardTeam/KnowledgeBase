@@ -17,7 +17,7 @@ If you wish, you can agree to send anonymized app usage data to help us improve 
 
 In case of issues, you can change the logging level to create detailed logs for the support team.
 
-In *Filter editor*, you can add your own filtering rules or import ready-to-use filters.
+In [*Filter editor*](/adguard-for-windows-8/settings/app-settings/filter-editor.md), you can add your own filtering rules or import ready-to-use filters.
 
 [*Network* settings](/adguard-for-windows-8/settings/app-settings/network-settings.md) include all options related to network filtering and how AdGuard interacts with your system’s network.
 
