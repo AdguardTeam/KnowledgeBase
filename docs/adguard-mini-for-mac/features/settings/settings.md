@@ -13,7 +13,7 @@ The main two sections are:
 
     Different filters that allow you to customize your ad blocking experience
 
-- [Safari extensions](/adguard-mini-for-mac/features/settings/safari-extensions/safari-extensions.md)
+- [Safari extensions](/adguard-mini-for-mac/features/settings/safari-extensions.md)
 
     Info on the current state of content blockers — how many rules and filters are enabled for each of them
 
