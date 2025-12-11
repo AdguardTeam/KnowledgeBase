@@ -9,7 +9,7 @@ This page is about AdGuard Mini for Mac, which safeguards only your Safari brows
 
 :::
 
-AdGuard Mini for Mac (formerly AdGuard for Safari) was designed to conform to Apple’s restrictions for ad blocking browser extensions and is the most popular ad blocker for Safari. Although it can’t be compared to our desktop ad blocking apps, it’s free and can protect you from ads, trackers, phishing, and malicious websites.
+AdGuard Mini for Mac (formerly AdGuard for Safari) was designed to conform to Apple’s restrictions for ad blocking browser extensions. Although it can’t be compared to our desktop ad blocking apps, it’s free and can protect you from ads, trackers, phishing, and malicious websites.
 
 - [Features](/adguard-mini-for-mac/features/features.md)
 

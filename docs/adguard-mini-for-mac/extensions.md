@@ -38,7 +38,7 @@ More on each extension below.
 
 *AdGuard Privacy* applies rules from filters located in *Filters* → *Privacy*. It blocks tracking mechanisms and ensures that your browsing activity remains private.
 
-*AdGuard Social* applies rules from filters that can be found in *Filters* → *Social Widgets* and *Filters* → *Annoyances*. It blocks popups, social media buttons, online assistant windows, and other elements on web pages that you might find annoying.
+*AdGuard Social* applies rules from filters that can be found in *Filters* → *Social Widgets* and *Filters* → *Annoyances*. It blocks popups, social media buttons, online assistant windows, and other elements on webpages that you might find annoying.
 
 *AdGuard Security* applies rules from filters under *Filters* → *Security*. This extension identifies and blocks potentially harmful elements, safeguarding users from malicious content.
 
@@ -68,9 +68,9 @@ User rules and allowlist rules are included in every extension.
 
 ## Why AdGuard for Safari requires permission
 
-When enabling the *AdGuard for Safari* extension, you might notice that it requires **access to web page content** and **access to browsing history**. Here’s why it needs these permissions:
+When enabling the *AdGuard for Safari* extension, you might notice that it requires **access to webpage content** and **access to browsing history**. Here’s why it needs these permissions:
 
-- Access to web page content is required for manual ad blocking and advanced blocking rules to work correctly
+- Access to webpage content is required for manual ad blocking and advanced blocking rules to work correctly
 - Access to browsing history is required to check the protection status on websites and determine which advanced rules should be applied
 
 We do not use this data for any other purpose or share it with anyone. For more info, you can consult our [Privacy policy](https://adguard.com/privacy.html).

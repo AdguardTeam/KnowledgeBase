@@ -35,7 +35,7 @@ AdGuard Mini for Mac is a free app present in the Mac App Store. To install it o
 
     ![Checked extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/check-extensions.png)
 
-6. To allow AdGuard Mini to work on all websites, click on the *AdGuard for Safari* extension and then *Always Allow on Every Website...*.
+6. To allow AdGuard Mini to work on all websites, click the *AdGuard for Safari* extension and then *Always Allow on Every Website...*.
 
     ![Always allow button](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/always-allow-button.png)
 
@@ -63,7 +63,7 @@ To uninstall AdGuard Mini for Mac, do the following:
 
     ![Uninstall notification](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/show-in-finder.png)
 
-6. Right click *AdGuard Mini* app and choose *Move to trash*.
+6. Right-click *AdGuard Mini* and choose *Move to trash*.
 
     ![Move to trash](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/move-to-trash.png)
 

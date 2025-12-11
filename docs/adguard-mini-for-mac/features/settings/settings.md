@@ -5,7 +5,7 @@ sidebar_position: 5
 
 ![Settings tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings.png)
 
-In *Settings* you can set up basic things like filters, filter updates, launching AdGuard at system startup, and so on. You can also choose whether to show the AdGuard icon in the menu bar.
+In *Settings*, you can set up basic things like filters, filter updates, launching AdGuard at system startup, and so on. You can also choose whether to show the AdGuard icon in the menu bar.
 
 The main two sections are:
 
@@ -17,4 +17,4 @@ The main two sections are:
 
     Info on the current state of content blockers — how many rules and filters are enabled for each of them
 
-At the bottom of the *Settings* screen you can find options that come in handy when communicating with our support: *Debug logging* and *Export logs*.
+At the bottom of the *Settings* screen, you can find options that come in handy when communicating with our support team: *Debug logging* and *Export logs*.
