@@ -24,7 +24,3 @@ sidebar_position: 6
 - Discuss
 
   Takes you to a page where you can find links to AdGuard’s social media and GitHub
-
-- Rate app
-
-  Takes you to the App Store screen where you can leave a review on AdGuard Mini

@@ -34,7 +34,3 @@ Here’s what you can do in the toolbar menu:
 - **Report an issue**
 
   Takes you to a special form for reporting issues with some information automatically pre-filled
-
-- **Rate AdGuard Mini**
-
-  Lets you leave a review on AdGuard Mini in App Store
