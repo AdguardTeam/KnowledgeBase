@@ -13,7 +13,7 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 The Filter editor is a tool that allows you to view and manage filters at the level of individual rules. Filters are combined into thematic categories: *Ad Blocking*, *Privacy*, *Language-specific* filters, *Custom*, and *Other*.
 
-With the Filter Editor, you can:
+With the Filter editor, you can:
 
 - See all filters that are currently enabled
 
