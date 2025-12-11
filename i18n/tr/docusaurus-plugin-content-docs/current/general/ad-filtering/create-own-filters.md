@@ -3474,10 +3474,10 @@ AdGuard products support the native implementation of `:has()`:
 
 - AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **support** it with [CoreLibs][] v1.12 or later.
 - AdGuard for iOS and AdGuard for Safari **support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 and [Safari browser v16.4][safari-16.4] or later.
-- AdGuard Browser Extension **supports** it in v5.3 or later:
-    - **Manifest V3** (Chromium-based): always uses native `:has()` by default.
-    - **Manifest V2**: Detects native `:has()` support using `CSS.supports()` and falls back to ExtendedCss if the browser doesn’t support it natively.
-- All other AdGuard products **do not support** it.
+- AdGuard Tarayıcı Uzantısı, 5.3 veya daha sonraki sürümlerde bunu **destekler**:
+    - **Manifest V3** (Chromium tabanlı): varsayılan olarak her zaman yerel `:has()` kullanır.
+    - **Manifest V2**: Yerel `:has()` desteğini `CSS.supports()` kullanarak algılar ve tarayıcı yerel olarak desteklemiyorsa ExtendedCss'e geri döner.
+- Diğer tüm AdGuard ürünleri bunu **desteklemez**.
 
 To force the ExtendedCss implementation of `:has()` to be used (regardless of native support), use the `#?#` or `#$?#` rule markers explicitly, e.g., `example.com#?#p:has(> a)` or `example.com#$?#div:has(> span) { display: none !important; }`.
 
@@ -3882,8 +3882,8 @@ The `:nth-ancestor()` pseudo-class allows to lookup the *nth* ancestor relative 
 subject:nth-ancestor(n)
 ```
 
-- `subject` — required, standard or extended CSS selector
-- `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
+- `subject` — gerekli, standart veya genişletilmiş CSS seçici
+- `n` — gerekli, sayı >= 1 ve < 256, `subject` tarafından seçilen öğeden gerekli ata öğeye uzaklık
 
 **Söz dizimi**
 
@@ -3891,8 +3891,8 @@ subject:nth-ancestor(n)
 subject:nth-ancestor(n)
 ```
 
-- `subject` — required, standard or extended CSS selector
-- `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
+- `subject` — gerekli, standart veya genişletilmiş CSS seçici
+- `n` — gerekli, sayı >= 1 ve < 256, `subject` tarafından seçilen öğeden gerekli ata öğeye uzaklık
 
 ##### `:nth-ancestor()` limitations {#extended-css-nth-ancestor-limitations}
 
@@ -3929,7 +3929,7 @@ The `:upward()` pseudo-class allows to lookup the ancestor relative to the previ
 subject:upward(ancestor)
 ```
 
-- `subject` — required, standard or extended CSS selector
+- `subject` — gerekli, standart veya genişletilmiş CSS seçici
 - `ancestor` — required, specification for the ancestor of the element selected by `subject`, can be set as:
     - *number* >= 1 and < 256 for distance to the needed ancestor, same as [`:nth-ancestor()`](#extended-css-nth-ancestor)
     - *standard CSS selector* for matching closest ancestor
