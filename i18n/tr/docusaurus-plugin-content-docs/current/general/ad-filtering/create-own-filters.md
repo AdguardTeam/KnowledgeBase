@@ -1369,6 +1369,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$removeparam](#removeparam-modifier)       |                      ✅                      |                      ✅                       | ✅ [*[6]](#removeparam-modifier-limitations)  |                      ✅                       |              ❌              |               ❌                |                  ❌                   |
 | [$replace](#replace-modifier)               |                      ✅                      |                      ❌                       |                      ❌                       |                      ✅                       |              ❌              |               ❌                |                  ❌                   |
 | [$urltransform](#urltransform-modifier)     |                      ✅                      |                      ❌                       |                      ❌                       |                      ❌                       |              ❌              |               ❌                |                  ❌                   |
+| [$reason](#reason-modifier)                 |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |              ✅              |               ✅                |                  ❌                   |
 | [noop](#noop-modifier)                      |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |              ✅              |               ✅                |                  ❌                   |
 | [$empty 👎](#empty-modifier "deprecated")    |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |              ❌              |               ❌                |                  ❌                   |
 | [$mp4 👎](#mp4-modifier "deprecated")        |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |              ❌              |               ❌                |                  ❌                   |
@@ -2932,6 +2933,41 @@ Rules with the `$urltransform` modifier are supported by AdGuard for Windows, Ad
 
 :::
 
+#### **`$reason`** {#reason-modifier}
+
+The `$reason` modifier allows you to add a custom explanation message that will be displayed on the blocking page when a request is blocked by this rule. This modifier only works with the `$document` content-type modifier.
+
+**Character limitations and escaping requirements:**
+
+- There is no maximum length limit for the reason text
+- All characters are allowed in the reason text
+- Special characters (such as quotes, commas, and backslashes) must be properly escaped using the backslash (`\`)
+
+**Predefined localizable tokens:**
+
+Instead of custom text, you can use predefined tokens that will be automatically localized:
+
+- `malicious` — for malicious content
+- `tracker` — for tracking content
+- `disreputable` — for disreputable content
+
+**Örnekler**
+
+```adblock
+||example.com^$document,reason="Tracker"
+||example.com^$document,reason="Malicious site blocked by security filter"
+||ads.example.com^$document,reason="This site contains tracking scripts"
+||malware.example.com^$document,reason="Site blocked: \"Known malware distributor\""
+||tracking.example.com^$document,reason=disreputable
+||analytics.example.com^$document,reason=tracker
+```
+
+:::info Uyumluluk
+
+AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with CoreLibs v1.20 or later support rules with the `$reason` modifier. AdGuard Content Blocker does not support these rules.
+
+:::
+
 #### **`noop`** {#noop-modifier}
 
 `noop` modifier does nothing and can be used solely to increase rules' readability. It consists of a sequence of underscore characters (`_`) of arbitrary length and can appear in a rule as often as needed.
@@ -3432,15 +3468,20 @@ Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3
 
 :::note
 
-Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`][native-has] if they use the `##` rule marker and if it is possible, i.e., there are no other extended CSS selectors inside. If it is not supported by the product, ExtendedCss implementation will be used even for rules with the `##` marker.
+Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`][native-has] if they use the `##` rule marker and if it is possible, i.e., there are no other extended CSS selectors inside. If it is not supported by the product (or by the browser in case of AdGuard Browser Extension), ExtendedCss implementation will be used automatically as a fallback, even for rules with the `##` marker.
 
-Currently, not all AdGuard products support the native implementation of `:has()` yet:
+AdGuard products support the native implementation of `:has()`:
 
-- AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **do support** it with [CoreLibs][] v1.12 or later.
-- AdGuard for iOS and AdGuard for Safari **do support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 and [Safari browser v16.4][safari-16.4].
-- AdGuard Browser Extension **does not support** it yet, but it is [planned][AdguardBrowserExtension#2587].
+- AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **support** it with [CoreLibs][] v1.12 or later.
+- AdGuard for iOS and AdGuard for Safari **support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 and [Safari browser v16.4][safari-16.4] or later.
+- AdGuard Tarayıcı Uzantısı, 5.3 veya daha sonraki sürümlerde bunu **destekler**:
+    - **Manifest V3** (Chromium tabanlı): varsayılan olarak her zaman yerel `:has()` kullanır.
+    - **Manifest V2**: Yerel `:has()` desteğini `CSS.supports()` kullanarak algılar ve tarayıcı yerel olarak desteklemiyorsa ExtendedCss'e geri döner.
+- Diğer tüm AdGuard ürünleri bunu **desteklemez**.
 
-To force the ExtendedCss implementation of `:has()` to be used, use the `#?#` or `#$?#` rule markers explicitly, e.g., `example.com#?#p:has(> a)` or `example.com#$?#div:has(> span) { display: none !important; }`.
+To force the ExtendedCss implementation of `:has()` to be used (regardless of native support), use the `#?#` or `#$?#` rule markers explicitly, e.g., `example.com#?#p:has(> a)` or `example.com#$?#div:has(> span) { display: none !important; }`.
+
+And since the `:has()` pseudo-class cannot be nested within another `:has()` in native implementation, e.g. `div:has(p:has(a))`, it is always treated as extended in AdGuard Browser Extension.
 
 :::
 
@@ -3841,8 +3882,8 @@ The `:nth-ancestor()` pseudo-class allows to lookup the *nth* ancestor relative 
 subject:nth-ancestor(n)
 ```
 
-- `subject` — required, standard or extended CSS selector
-- `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
+- `subject` — gerekli, standart veya genişletilmiş CSS seçici
+- `n` — gerekli, sayı >= 1 ve < 256, `subject` tarafından seçilen öğeden gerekli ata öğeye uzaklık
 
 **Söz dizimi**
 
@@ -3850,8 +3891,8 @@ subject:nth-ancestor(n)
 subject:nth-ancestor(n)
 ```
 
-- `subject` — required, standard or extended CSS selector
-- `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
+- `subject` — gerekli, standart veya genişletilmiş CSS seçici
+- `n` — gerekli, sayı >= 1 ve < 256, `subject` tarafından seçilen öğeden gerekli ata öğeye uzaklık
 
 ##### `:nth-ancestor()` limitations {#extended-css-nth-ancestor-limitations}
 
@@ -3888,7 +3929,7 @@ The `:upward()` pseudo-class allows to lookup the ancestor relative to the previ
 subject:upward(ancestor)
 ```
 
-- `subject` — required, standard or extended CSS selector
+- `subject` — gerekli, standart veya genişletilmiş CSS seçici
 - `ancestor` — required, specification for the ancestor of the element selected by `subject`, can be set as:
     - *number* >= 1 and < 256 for distance to the needed ancestor, same as [`:nth-ancestor()`](#extended-css-nth-ancestor)
     - *standard CSS selector* for matching closest ancestor
@@ -5090,7 +5131,6 @@ The following scriptlets also may be used for debug purposes:
 
 [native-has]: https://developer.mozilla.org/docs/Web/CSS/:has
 [safari-16.4]: https://www.webkit.org/blog/13966/webkit-features-in-safari-16-4/
-[AdguardBrowserExtension#2587]: https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2587
 
 [cl-apps]: #what-product "AdGuard for Windows, Mac, Linux, Android"
 

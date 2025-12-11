@@ -55,6 +55,12 @@ Nyní se zobrazí rychlý průvodce instalací, kde vám bude nabídnuta konfigu
 
 A je to tady, AdGuard je na vašem Macu nainstalován!
 
+### Instalace ve starších verzích macOS
+
+Uživatelé se staršími verzemi macOS (Big Sur 11, Catalina 10.15 nebo starší) nenajdou kompatibilní verzi aplikace na webových stránkách Blokátoru reklam AdGuard — tyto verze operačního systému již nejsou v nejnovějších verzích podporovány.
+
+Stále si však můžete [stáhnout starší kompatibilní verzi](https://agrd.io/adguard_for_mac_v2-17)
+
 ## Odinstalace
 
 ### Obvyklá
