@@ -120,15 +120,15 @@ adguard-cli update -v
 - При запуске `adguard-cli config set listen_address <address>`, где `<address>` не 127.0.0.1, AdGuard CLI запросит имя пользователя и пароль, если прокси-аутентификация ещё не настроена.
 - При редактировании файла конфигурации напрямую найдите ключ `listen_auth`. Установите для подключа `enabled` значение `true`, а для `username` и `password` \` — непустые значения.
 
-## Configure outbound proxy
+## Настроить исходящий прокси
 
-You can configure `outbound_proxy` if you want AdGuard CLI to work through another proxy server.
+Вы можете настроить `outbound_proxy`, если хотите, чтобы AdGuard CLI работал через другой прокси-сервер.
 
-There are two ways to configure it:
+Есть два способа настройки:
 
-### 1. Configure via URL (recommended)
+### 1. Настроить через URL (рекомендуется)
 
-Instead of setting each option step by step, you can set all parameters in a single line using a URL:
+Вместо того чтобы настраивать каждую опцию пошагово, вы можете задать все параметры в одной строке, используя URL:
 
 ```sh
 adguard-cli config set outbound_proxy https://user:pass@host:port
@@ -136,25 +136,25 @@ adguard-cli config set outbound_proxy https://user:pass@host:port
 
 :::info
 
-Supported modes are HTTP, HTTPS, SOCKS4, and SOCKS5.
+Поддерживаемые режимы: HTTP, HTTPS, SOCKS, и SOCKS5.
 
 :::
 
-You can also quickly enable or disable `outbound_proxy`:
+Вы также можете быстро включить или отключить `outbound_proxy`:
 
 ```sh
 adguard-cli config set outbound_proxy false
 ```
 
-Or quickly clear the settings:
+Или быстро очистить настройки:
 
 ```sh
 adguard-cli config set outbound_proxy ""
 ```
 
-### 2. Configure individual parameters
+### 2. Настроить отдельные параметры
 
-The ability to adjust specific parameters is also available:
+Также есть возможность настроить отдельные параметры:
 
 ```sh
 adguard-cli config set outbound_proxy.enabled true
@@ -164,13 +164,13 @@ adguard-cli config set outbound_proxy.username user
 adguard-cli config set outbound_proxy.password pass
 ```
 
-Disable certificate verification for HTTPS proxies:
+Отключить проверку сертификата для HTTPS-прокси:
 
 ```sh
 adguard-cli config set outbound_proxy.trust_any_certificate true
 ```
 
-Enable SOCKS5 proxy for UDP traffic:
+Включить прокси SOCKS5 для UDP-трафика:
 
 ```sh
 adguard-cli config set outbound_proxy.udp_through_socks5_enabled true
@@ -178,13 +178,21 @@ adguard-cli config set outbound_proxy.udp_through_socks5_enabled true
 
 :::note
 
-If your SOCKS5 proxy does not support UDP, connections may fail.
+Если ваш прокси SOCKS5 не поддерживает UDP, соединения могут не работать.
 
 :::
 
-### Checking the current configuration
+## Настройка AdGuard CLI для каждого приложения
 
-To view the current `outbound_proxy` configuration, enter:
+Пользователям часто приходится вручную включать фильтрацию для определённых браузеров. AdGuard для Linux поддерживает **конфигурацию для каждого приложения**, позволяя применять настройки или правила индивидуально к каждому приложению, а не ко всей системе.
+
+За подробностями обратитесь к разделу `apps` в файле `proxy.yaml`.
+
+Набор преднастроенных записей для популярных интернет-браузеров включён в файл `browsers.yaml` по умолчанию.
+
+### Проверка текущей конфигурации
+
+Чтобы просмотреть текущую конфигурацию `outbound_proxy`, введите:
 
 ```sh
 adguard-cli config show outbound_proxy
@@ -192,6 +200,6 @@ adguard-cli config show outbound_proxy
 
 :::info Совместимость
 
-Configuring `outbound_proxy` via URL is available starting from AdGuard for Linux v1.1.26 nightly and v1.1 stable release.
+Настройка `outbound_proxy` через URL доступна, начиная с AdGuard для Linux 1.1.26 nightly и стабильной версии 1.1.
 
 :::
