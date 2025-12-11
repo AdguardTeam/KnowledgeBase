@@ -634,3 +634,27 @@ ZTE devices functioning under the MyOS operating system have an aggressive appro
 - Turn off **AI Control**
 - Select **Manual Management**
 - Find **AdGuard** in the list and set **Background Work** to **Allow**
+
+## Infinix
+
+Infinix devices apply strict battery and power-saving rules that may interrupt AdGuard’s work in the background. To ensure stable protection, follow these steps to prevent AdGuard being closed automatically by the system:
+
+1. Disable protection and close the AdGuard app.
+
+1. Go to system settings → *App management* → *App list* → *AdGuard* → *Battery*, enable *Allow background usage*, then switch the mode to *Unrestricted*.
+
+    ![Allow background usage *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_allow.png)
+
+1. Open system settings → *App management* → *Auto-start management* and enable *AdGuard*.
+
+    ![Auto-start management *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_app_launch.png)
+
+1. Navigate to system settings → *Battery&Power Saving* → *Battery Saver* and disable *Battery Saver*.
+
+1. From the *Battery&Power Saving* tab navigate to *Battery Saver* → *Other Power Saving Settings* → *Power Saving Management for Apps*, find *AdGuard* and select *No Restrictions*.
+
+    ![Power saving management for apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_power_saving.png)
+
+1. From the *Battery&Power Saving* tab go to *Battery Saver* → *Other Power Saving Settings* → *Battery Optimisation*, locate *AdGuard* and set it to *Not Optimised*.
+
+    ![Battery optimisation *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_not_optimized.png)
