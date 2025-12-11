@@ -15,7 +15,7 @@ The Filter editor is a tool that allows you to view and manage filters at the le
 
 With the Filter editor, you can:
 
-- See all filters that are currently enabled
+- See all the filters that are currently enabled
 
 - Edit existing filtering rules, add your own custom rules, or import ready-to-use ones
 
