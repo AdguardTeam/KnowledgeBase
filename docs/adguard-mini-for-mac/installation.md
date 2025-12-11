@@ -21,25 +21,25 @@ AdGuard Mini for Mac is a free app present in the Mac App Store. To install it o
 
     ![AdGuard Mini in App Store](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-in-app-store.png)
 
-1. Press *Get* → *Install* → *Open*.
+2. Press *Get* → *Install* → *Open*.
 
-1. In the opened AdGuard Mini window, accept EULA and Privacy policy and click *Continue*.
+3. In the opened AdGuard Mini window, accept EULA and Privacy policy and click *Continue*.
 
     ![Onboarding](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/first-open.png)
 
-1. Click *Open settings*.
+4. Click *Open settings*.
 
     ![Open settings](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/open-settings.png)
 
-1. Check the checkboxes for all seven AdGuard extensions.
+5. Check the checkboxes for all seven AdGuard extensions.
 
     ![Checked extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/check-extensions.png)
 
-1. To allow AdGuard Mini to work on all websites, click on the *AdGuard for Safari* extension and then *Always Allow on Every Website...*.
+6. To allow AdGuard Mini to work on all websites, click on the *AdGuard for Safari* extension and then *Always Allow on Every Website...*.
 
     ![Always allow button](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/always-allow-button.png)
 
-1. In the notification that appears, click *Always Allow on Every Website...* again.
+7. In the notification that appears, click *Always Allow on Every Website...* again.
 
     ![Always allow notification](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/always-allow.png)
 

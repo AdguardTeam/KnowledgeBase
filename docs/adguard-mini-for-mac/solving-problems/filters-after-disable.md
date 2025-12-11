@@ -9,7 +9,7 @@ This article is about AdGuard Mini for Mac, which safeguards only your Safari br
 
 :::
 
-If filtering doesn’t stop when AdGuard for Safari is disabled, it may be because content blockers take too long to update.
+If filtering doesn’t stop when AdGuard Mini for Mac is disabled, it may be because content blockers take too long to update.
 
 ## How to fix
 

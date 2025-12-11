@@ -9,7 +9,7 @@ This article is about AdGuard Mini for Mac, which safeguards only your Safari br
 
 :::
 
-In some cases, filtering may not work and ads may still be displayed even though AdGuard for Safari and the proper filters are enabled. This usually happens when something goes wrong with filter updates due to Safari bugs.
+In some cases, filtering may not work and ads may still be displayed even though AdGuard Mini for Mac and the proper filters are enabled. This usually happens when something goes wrong with filter updates due to Safari bugs.
 
 ### How to fix
 

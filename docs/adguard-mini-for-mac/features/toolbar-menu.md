@@ -23,11 +23,11 @@ Here’s what you can do in the toolbar menu:
 
 - **Protection**
 
-  Turn protection off just for the website you are currently on — this adds the website to the allowlist
+  Turning it off disables filtering on the website you are currently on. Turning it back on resumes filtering on the website
 
 - **Block element**
 
-  Lets you manually select and block any element on the page
+  Lets you manually select and block any element on the page: select the element, adjust the selection frame (if needed), and click the *Block* button. To unblock an element, go to *Settings* → *User rules* and delete or uncheck the corresponding rule
 
   ![Manual blocking](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/manual-blocking.png)
 

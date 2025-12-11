@@ -42,7 +42,7 @@ More on each extension below.
 
 *AdGuard Security* applies rules from filters under *Filters* → *Security*. This extension identifies and blocks potentially harmful elements, safeguarding users from malicious content.
 
-*AdGuard Other* applies rules from filters that that don’t fall under the above-mentioned categories and that are located in *Filters* → *Other*: *Filter unblocking search ads and self-promotion*, *AdGuard DNS filter*, and *AdGuard Experimental filter*.
+*AdGuard Other* applies rules from filters that don’t fall under the above-mentioned categories and that are located in *Filters* → *Other*: *Filter unblocking search ads and self-promotion*, *AdGuard DNS filter*, and *AdGuard Experimental filter*.
 
 *AdGuard Custom* applies rules from filters that you add on your own to *Custom filters*.
 
@@ -60,9 +60,9 @@ User rules and allowlist rules are included in every extension.
 
     ![Safari settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
 
-1. Click *Settings...*
+2. Click *Settings...*
 
-1. Select *Extensions*.
+3. Select *Extensions*.
 
     ![Extensions tab](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 

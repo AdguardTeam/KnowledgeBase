@@ -15,7 +15,7 @@ This article is about AdGuard Mini for Mac, which safeguards only your Safari br
 
 *Safari protection* section is the most important area for the app’s core purpose. Settings are grouped logically and explained in plain language so you can quickly see what each option does.
 
-Here’s a simple explaination on what each group of settings does:
+Here’s a simple explanation on what each group of settings does:
 
 ![Protection screen part one *border](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/new/safari_protection_1.png)
 
