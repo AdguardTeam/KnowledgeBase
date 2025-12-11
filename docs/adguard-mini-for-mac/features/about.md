@@ -14,8 +14,8 @@ You can also find the links to:
 
 - Our official website
 - EULA and Privacy policy
+- Acknowledgements
 - Version history
-- Leaving an App Store review
 
 :::note Reminder
 
