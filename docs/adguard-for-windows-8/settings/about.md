@@ -9,4 +9,6 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 :::
 
-In addition to information about the current version of the program and used libraries, this screen provides some useful links to License agreement, Privacy policy, Acknowledgements, Version history, and the main page of our website.
+![About *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/about.png)
+
+In addition to information about the current version of the program and used libraries, this screen provides some useful links to License agreement, Privacy policy, acknowledgements, version history, and the main page of our website.

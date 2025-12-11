@@ -21,7 +21,7 @@ Language and theme, update channel and interval, advanced options for experience
 
 Information about license type, number of available devices, and activation code, with options to refresh or reset license and bind it to your AdGuard account.
 
-## Support
+## [Support](/adguard-for-windows-8/settings/support)
 
 FAQ and support form, tools to report missed ads and request new features, possibility to rate the app, share feedback, and access AdGuard social networks.
 

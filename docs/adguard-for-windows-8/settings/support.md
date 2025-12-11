@@ -9,7 +9,7 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 :::
 
-![Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/support.png)
+![Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/support_screen.png)
 
 Use this section if you have any questions or suggestions about AdGuard for Windows v8.0. We recommend checking the [FAQ](https://adguard.com/support/faq.html) and this Knowledge base before contacting support.
 
