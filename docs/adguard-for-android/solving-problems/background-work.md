@@ -655,6 +655,6 @@ Infinix devices apply strict battery and power-saving rules that may interrupt A
 
     ![Power saving management for apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_power_saving.png)
 
-1. From the *Battery&Power Saving* tab go to *Battery Saver* → *Other Power Saving Settings* → *Battery Optimisation*, locate *AdGuard* and set it to *Not Optimised*.
+1. From the *Battery&Power Saving* tab, go to *Battery Saver* → *Other Power Saving Settings* → *Battery Optimisation*, locate *AdGuard*, and set it to *Not Optimised*.
 
     ![Battery optimisation *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_not_optimized.png)
