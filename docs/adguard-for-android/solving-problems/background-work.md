@@ -637,7 +637,7 @@ ZTE devices functioning under the MyOS operating system have an aggressive appro
 
 ## Infinix
 
-Infinix devices apply strict battery and power-saving rules that may interrupt AdGuard’s work in the background. To ensure stable protection, follow these steps to prevent AdGuard being closed automatically by the system:
+Infinix devices apply strict battery and power-saving rules that may interrupt AdGuard’s work in the background. Follow these steps to prevent AdGuard from being closed automatically by the system and ensure stable protection:
 
 1. Disable protection and close the AdGuard app.
 
