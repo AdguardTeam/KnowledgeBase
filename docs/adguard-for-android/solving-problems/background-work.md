@@ -641,7 +641,7 @@ Infinix devices apply strict battery and power-saving rules that may interrupt A
 
 1. Disable protection and close the AdGuard app.
 
-1. Go to system settings → *App management* → *App list* → *AdGuard* → *Battery*, enable *Allow background usage*, then switch the mode to *Unrestricted*.
+1. Go to system settings → *App management* → *App list* → *AdGuard* → *Battery*, enable *Allow background usage*. Then go to *Allow background usage* setting and switch the mode to *Unrestricted*.
 
     ![Allow background usage *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_allow.png)
 
