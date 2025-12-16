@@ -42,11 +42,13 @@ Než začnete ručně psát vlastní pravidla, přečtěte si našeho podrobnéh
 
 ### Ochrana před sledováním
 
-Mnoho webových stránek shromažďuje informace o svých návštěvnících, například jejich IP adresy, informace o nainstalovaném prohlížeči a operačním systému, rozlišení obrazovky, a dokonce i o tom, na jakou stránku uživatel přišel nebo z jaké stránky byl přesměrován. Některé webové stránky používají soubory cookies k označení prohlížeče a uložení vašich osobních nastavení, uživatelských preferencí nebo k vašemu “rozpoznání“ při příští návštěvě. _Ochrana před sledováním_ chrání vaše osobní údaje před takovými systémy shromažďujícími data a statistiky.
+Mnoho webových stránek shromažďuje informace o svých návštěvnících, například jejich IP adresy, informace o nainstalovaném prohlížeči a operačním systému, rozlišení obrazovky, a dokonce i o tom, na jakou stránku uživatel přišel nebo z jaké stránky byl přesměrován. Některé webové stránky používají soubory cookies k označení prohlížeče a uložení vašich osobních nastavení, uživatelských preferencí nebo k vašemu “rozpoznání“ při příští návštěvě. To jim umožní vás při příští návštěvě “rozpoznat“. Ochrana před sledováním chrání vaše osobní údaje před takovými systémy shromažďujícími data a statistiky.
 
-![Tracking protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection.png)
+![Tracking protection levels \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection1.png)
 
-Práci v _Ochraně před sledováním_ můžete flexibilně nastavit: můžete například zakázat, aby webová stránka obdržela požadavek na vyhledávání, který jste použili k jejímu nalezení na internetu, automaticky vymazat soubory cookies třetích stran i vlastní soubory cookies webové stránky a zakázat sdílení polohy ve vašem prohlížeči, které lze použít ke sledování vaší polohy.
+Nastavení _ochrany před sledováním_ můžete upravit podle potřeby. Můžete například zabránit webovým stránkám v přijímání vyhledávacích dotazů, které jste použili k jejich vyhledání na internetu, automaticky mazat soubory cookies třetích stran a vlastní a deaktivovat sdílení polohy ve svém prohlížeči, abyste zabránili sledování vaší polohy.
+
+![Tracking protection custom features \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection2.png)
 
 Chcete-li se dozvědět vše o _Ochraně před sledováním_ a mnoha možnostech, přečtěte si [tento článek](/general/stealth-mode).
 
@@ -70,7 +72,7 @@ Existují tři důležité důvody, proč byste měli prozkoumat nastavení DNS 
 
 ![DNS Protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/dns_protection.png)
 
-V modulu DNS ochrany AdGuardu pro Windows můžete vybrat DNS servery od známých poskytovatelů DNS, včetně [AdGuard DNS](https://adguard-dns.io/kb/), který blokuje reklamy a slídiče, AdGuard DNS Ochrana rodiny, který navíc blokuje obsah pro dospělé, nebo AdGuard DNS - bez filtrování, který poskytuje bezpečné a spolehlivé připojení, ale nic nefiltruje. Můžete dokonce přidat vlastní DNS servery a pravidla pomocí [syntaxe pravidel DNS](https://adguard-dns.io/kb/general/dns-filtering-syntax/). Pokud je to nutné, můžete přidat [DNS filtry dle vlastního výběru](https://filterlists.com).
+V modulu DNS ochrany AdGuardu pro Windows můžete vybrat DNS servery od známých poskytovatelů DNS, včetně AdGuard DNS, který blokuje reklamy a slídiče, AdGuard DNS Ochrana rodiny, který navíc blokuje obsah pro dospělé, nebo AdGuard DNS - bez filtrování, který poskytuje bezpečné a spolehlivé připojení, ale nic nefiltruje. Můžete dokonce přidat vlastní DNS servery a pravidla pomocí [syntaxe pravidel DNS](https://adguard-dns.io/kb/general/dns-filtering-syntax/). Pokud je to nutné, můžete přidat [DNS filtry dle vlastního výběru](https://filterlists.com).
 
 Od verze 7.20 můžete také přidávat filtry jednoduchým výběrem ze seznamu předpřipravených důvěryhodných filtrů. Pro vaše pohodlí jsou rozděleny do čtyř kategorií:
 

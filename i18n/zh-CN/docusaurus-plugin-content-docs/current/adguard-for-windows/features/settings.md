@@ -42,54 +42,56 @@ In the Ad blocking module you can:
 
 ### Tracking protection
 
-众多网站收集其访问者的信息，如他们的 IP 地址，所用浏览器和操作系统的信息，屏幕分辨率，甚至是用户从何重新定向而至。 Some web pages use cookies to mark the browser and save your personal settings, user preferences, or “recognize” you upon your next visit. _Tracking protection_ safeguards your personal information from such data and statistics gathering systems.
+Many websites gather information about their visitors, such as their IP addresses, browser and operating system details, screen resolution, and the webpage from which the user came or was redirected. Some websites use cookies to mark and identify your browser, save your personal settings and preferences. This allows them to “recognize” you on your next visit. Tracking protection safeguards your personal information from these data- and statistics-gathering systems.
 
-![Tracking protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection.png)
+![Tracking protection levels \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection1.png)
 
-You can flexibly adjust the work of _Tracking protection_: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and disable location sharing in your browser that can be used to track your whereabouts.
+You can adjust the _Tracking Protection_ settings as needed. For example, you can prevent websites from receiving the search request that you used to find them on the Internet, automatically delete third- and first-party cookies, and disable location sharing in your browser, to prevent tracking of your whereabouts.
+
+![Tracking protection custom features \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection2.png)
 
 To learn everything about _Tracking protection_ and its many options, [read this article](/general/stealth-mode).
 
 ### 浏览安全
 
-「浏览安全」功能针对恶意网站和钓鱼网站提供给用户强力保护。 AdGuard Windows 版并非反病毒软件。 It will neither stop the download of a virus when it’s already started, nor delete the already existing ones. But it will warn you if you’re about to proceed to a website whose domain has been added to our “untrusted sites” database, or to download a file from such website. 您可[在专门文章内](/general/browsing-security)找到关于此模块工作方式的更多信息。
+Browsing security gives strong protection against malicious and phishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it’s already started, nor delete the already existing ones. But it will warn you if you’re about to proceed to a website whose domain has been added to our “untrusted sites” database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 
-在此模块内，用户可以进行以下设置：
+In this module, you can:
 
-- 开启对恶意和钓鱼网站的拦截请求的通知，
-- 激活声音通知，
-- 同意向 AdGuard 服务器提交匿名安全相关信息，以帮助我们保持恶意和钓鱼网站数据库最新状态。
+- enable notifications to block requests to malicious and phishing sites,
+- activate sound notifications,
+- agree to submit anonymous security-related info to the AdGuard server to help us keep the malicious and phishing websites database up to date.
 
 ![Browsing security \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/browsing_security.png)
 
-要了解更多关于「浏览安全」功能的信息，请阅读[此文章](/general/browsing-security)。
+In case you want to learn more about Browsing security, read [this article](/general/browsing-security).
 
-### DNS 保护
+### DNS Protection
 
-有三个重要原因值得用户探索 DNS 保护设置。 首先，避免受到您 ISP 的跟踪。 每次用户打开网站，例如 google.com，浏览器都会给 DNS 服务器发送请求以获取相应网站的 IP 地址。 通常，DNS 服务器属于您的 ISP，这使他们能够跟踪用户的在线活动。 第二，加密 DNS 流量。 第三，[在 DNS 级别上屏蔽内容](https://adguard-dns.io/kb/general/dns-filtering/)。
+There are three significant reasons why you might want to explore the DNS protection settings. First, to avoid being tracked by your ISP. Every time you open a website, for example `google.com`, your browser sends a request to a DNS server to get the IP address of the website in return. Usually, the DNS server belongs to your ISP, which allows them to track your online activity. Second, to encrypt you DNS traffic. And the third one is to [block content on DNS level](https://adguard-dns.io/kb/general/dns-filtering/).
 
 ![DNS Protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/dns_protection.png)
 
-在 AdGuard Windows 版的 DNS 保护模块中，用户可以从知名 DNS 提供商中选择 DNS 服务器，包括可以拦截广告和跟踪器的 AdGuard DNS，还可拦截成人内容的 AdGuard DNS 家庭保护，或提供安全可靠连接但不过滤任何内容的 AdGuard DNS 无过滤。 您也可以使用 [DNS 规则语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/) 添加自定义 DNS 服务器和规则。 如有必要，用户可以添加[自己选择的 DNS 过滤器](https://filterlists.com)。
+In the DNS protection module of AdGuard for Windows, you can choose DNS servers from known DNS providers, including AdGuard DNS, which blocks ads and trackers, AdGuard DNS Family Protection, which also blocks adult content, or AdGuard DNS Non-filtering, which provides a secure and reliable connection but doesn’t filter anything. You can even add custom DNS servers and rules using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). If necessary, you can add [DNS filters of your choice](https://filterlists.com).
 
-从 v7.20 版本开始，您还可以通过从预置的可信过滤器列表中选择来轻松添加过滤器。 为了方便用户使用，它们被分为四类：
+Starting with v7.20, you can also add filters by simply selecting them from a list of pre-built, trusted filters. They are grouped into four categories for your convenience:
 
-- **常规**：拦截广告和跟踪器。
-- **区域**：在特定语言的网站上拦截广告和跟踪器。
-- **安全**：屏蔽钓鱼和不可靠的网站。
-- **其他**：涵盖不适合上述类别的特殊用例。
+- **General**: block ads and trackers
+- **Regional**: block ads and trackers on language-specific websites
+- **Security**: block phishing and unreliable websites
+- **Other**: cover special use cases that don’t fit into the above categories
 
-![DNS 过滤 \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
+![DNS filters \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
 
 ### Parental control
 
-有一些网站不适合儿童访问，建议在儿童使用的电脑上对其进行访问限制。 This task is accomplished by _Parental control_.
+There are several websites to which access should be restricted from a PC used by children. This task is accomplished by _Parental control_.
 
 ![Parental control \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/parental_control.png)
 
-此模块检查浏览器打开的网页内容，过滤儿童不宜的内容：成人图像和文字、粗俗语言、暴力、毒品宣传等。 Parental control settings are password-protected so that the child is not able to go round the restrictions. 此模块不仅拦截对不良网站的指向，也可从搜索结果中移除儿童不宜的链接。
+The module checks the contents of webpages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental control settings are password-protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results.
 
-In the _Parental control_ module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. 用户也可以选中「阻止下载可执行文件」以防止儿童在计算机上下载和安装软件。 There are two more options in the _Parental control_ module: you can select a specific Windows user to be protected by _Parental control_ and set a password to protect AdGuard settings from change.
+In the _Parental control_ module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. You can also check the _Block executable files download_ box to prevent your child from downloading and installing software on the computer. There are two more options in the _Parental control_ module: you can select a specific Windows user to be protected by _Parental control_ and set a password to protect AdGuard settings from change.
 
 ### 浏览器助手
 
