@@ -91,7 +91,7 @@ Alternatively, you can use a [license key](../what-is#license-key) to activate t
 
     ![Get full version](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/get-full-button.png)
 
-4. Click *Already purchased?* at the bottom-left of the screen.
+4. Click *Already purchased?* at the bottom left of the screen.
 
     ![Click already purchased](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased.png)
 
