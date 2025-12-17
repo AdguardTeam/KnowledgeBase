@@ -1,5 +1,5 @@
 ---
-title: Filtering issues in Chrome 142+ when using the TDI driver
+title: Problémy s filtrováním v prohlížeči Chrome 142+ při použití ovladače TDI
 sidebar_position: 14
 ---
 
@@ -9,121 +9,121 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 :::
 
-Some AdGuard for Windows users may notice that [the app stops filtering traffic in Chromium-based browsers](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). Starting from Google Chrome 142+, browser traffic simply does not appear at the TDI driver level, preventing AdGuard from inspecting or filtering it.
+Někteří uživatelé AdGuardu pro Windows si mohou všimnout, že [aplikace přestává filtrovat provoz v prohlížečích založených na Chromiu](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). Od verze Google Chrome 142+ se provoz prohlížeče jednoduše nezobrazuje na úrovni ovladače TDI, což brání AdGuardu v jeho kontrole nebo filtrování.
 
-This behavior is not a bug in AdGuard, but a result of recent architectural and security changes in modern browsers.
+Toto chování není chybou AdGuardu, ale výsledkem nedávných změn architektury a zabezpečení v moderních prohlížečích.
 
-## Why this happens
+## Proč se to děje
 
-Chromium-based browsers (Chrome, Edge, Brave, Vivaldi, etc.) have been strengthening their security architecture. One significant change is moving sensitive internal processes into the [Windows AppContainer sandbox](https://learn.microsoft.com/en-us/windows/win32/secauthz/appcontainer-isolation), including the Network Service, which handles all browser traffic.
+Prohlížeče založené na Chromium (Chrome, Edge, Brave, Vivaldi, atd.) posilovali svou bezpečnostní architekturu. Jednou významnou změnou je přesunutí citlivých interních procesů do sandboxu [Windows AppContainer](https://learn.microsoft.com/en-us/windows/win32/secauthz/appcontainer-isolation), včetně síťové služby, která zpracovává veškerý provoz prohlížeče.
 
-### What changed in Chrome 142
+### Co se změnilo v Chrome 142
 
-Starting from Chrome 142, the Network Service process is now launched inside AppContainer by default.
+Od verze Chrome 142 se proces síťové služby nyní standardně spouští uvnitř AppContainer.
 
-When this happens, applications running in an AppContainer do not use the legacy TDI networking interface; instead, their traffic is routed through the more modern WSK (Winsock Kernel) stack. As a result, the TDI driver cannot see, intercept, or process connections that go through WSK, and all browser traffic becomes invisible to the TDI driver used by AdGuard.
+V takovém případě aplikace spuštěné v AppContainer nepoužívají starší síťové rozhraní TDI, ale jejich provoz je směrován přes modernější stack WSK (Winsock Kernel). V důsledku toho ovladač TDI nemůže vidět, zachytit ani zpracovat připojení procházející přes WSK a veškerý provoz prohlížeče se stává pro ovladač TDI používaný AdGuardem neviditelným.
 
-This behavior is controlled entirely by Chrome’s sandboxing policies and internal experiments (field trials), not by user settings.
+Toto chování je zcela řízeno zásadami sandboxingu prohlížeče Chrome a interními experimenty (terénními zkouškami), nikoli uživatelskými nastaveními.
 
-## Why this affects AdGuard
+## Proč to ovlivňuje AdGuard
 
-The TDI driver is an outdated Windows technology that has been deprecated and unsupported by Microsoft for many years. It is not compatible with modern isolation and sandboxing models used by browsers.
+Ovladač TDI je zastaralá technologie systému Windows, která již mnoho let není společností Microsoft podporována a je považována za zastaralou. Není kompatibilní s moderními modely izolace a sandboxingu používanými prohlížeči.
 
-Because of this, TDI-based traffic visibility becomes increasingly unstable. In some browsers, it has already disappeared completely, and it will eventually stop working altogether.
+Z tohoto důvodu se viditelnost provozu založená na TDI stává stále nestabilnější. V některých prohlížečích již zcela zmizel a nakonec přestane fungovat úplně.
 
-AdGuard already treats the TDI driver as deprecated, and its complete removal is planned as the product evolves.
+AdGuard již považuje ovladač TDI za zastaralý a v rámci vývoje produktu se plánuje jeho úplné odstranění.
 
-## Temporary solution
+## Dočasné řešení
 
-Certain Windows registry changes can force the browser to stop using AppContainer, causing its processes to run in a non-sandboxed mode again. Network Service stops using the WSK stack and falls back to a network path that the TDI driver can see. AdGuard then regains the ability to filter browser traffic.
+Určité změny v registru systému Windows mohou přimět prohlížeč, aby přestal používat AppContainer, což způsobí, že jeho procesy budou opět spuštěny v režimu bez sandboxu. Síťová služba přestane používat stack WSK a přejde na síťovou cestu, kterou může vidět ovladač TDI. AdGuard poté znovu získá schopnost filtrovat provoz prohlížeče.
 
-### How to modify the registry in Chromium-based browsers
+### Jak upravit registr v prohlížečích založených na Chromium
 
 :::warning
 
-Administrator rights are required to edit the registry. Incorrect changes may affect system or browser stability and security. Always create a backup of the registry branch before modifying it.
+K úpravám registru jsou vyžadována práva správce. Nesprávné změny mohou ovlivnit stabilitu a bezpečnost systému nebo prohlížeče. Před úpravou větve registru vždy vytvořte její zálohu.
 
-Before proceeding, keep in mind that this solution reduces sandbox/AppContainer security, making the browser less isolated. It applies system-wide because it modifies `HKLM`, and should only be used for debugging, temporary workarounds, in controlled environments, or when TDI-based traffic interception is strictly necessary.
+Než budete pokračovat, mějte na paměti, že toto řešení snižuje bezpečnost sandboxu/AppContaineru, čímž se prohlížeč stává méně izolovaným. Platí pro celý systém, protože upravuje `HKLM`, a měl by být používán pouze pro ladění, dočasná řešení, v kontrolovaných prostředích nebo v případech, kdy je zachycování provozu založené na TDI nezbytně nutné.
 
-It should **not** be applied broadly across end-user machines. **Proceed only if you understand the implications.**
+Nemělo by se to **používat** plošně na počítačích koncových uživatelů. **Pokračujte pouze tehdy, pokud rozumíte důsledkům.**
 
 :::
 
-You can apply the necessary registry changes automatically by using one of the pre-generated .reg files below. Each file disables AppContainer/Network Service sandboxing for a specific Chromium-based browser:
+Potřebné změny registru můžete provést automaticky pomocí jednoho z níže uvedených předem vygenerovaných souborů .reg. Každý soubor zakazuje sandboxing AppContainer/Network Service pro konkrétní prohlížeč založený na Chromium:
 
-- [Download Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chrome.reg)
-- [Download Chromium.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chromium.reg)
-- [Download Edge.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Edge.reg)
-- [Download Brave.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Brave.reg)
-- [Download Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Vivaldi.reg)
-- [Download YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_YandexBrowser.reg)
+- [Stáhnout Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chrome.reg)
+- [Stáhnout Chromium.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chromium.reg)
+- [Stáhnout Edge.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Edge.reg)
+- [Stáhnout Brave.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Brave.reg)
+- [Stáhnout Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Vivaldi.reg)
+- [Stáhnout YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_YandexBrowser.reg)
 
-If your browser is not listed, follow the manual instructions below to create the necessary registry entries:
+Pokud váš prohlížeč není uveden v seznamu, postupujte podle níže uvedených pokynů a vytvořte potřebné položky registru:
 
-1. Determine its policy branch by checking the vendor’s official documentation or by opening the internal policy page. In Chrome, navigate to `chrome://policy`. Other browsers use a similar path.
+1. Určete jeho větev zásad kontrolou oficiální dokumentace dodavatele nebo otevřením interní stránky zásady. V Chrome přejděte na `chrome://policy`. Ostatní prohlížeče používají podobnou cestu.
 
-2. Identify the correct registry branch for your browser. Different Chromium-based browsers use different policy paths under `HKLM`. It should follow the model `HKLM\SOFTWARE\Policies\<Vendor>\<Product>`.
+2. Určete správnou větev registru pro váš prohlížeč. Různé prohlížeče založené na Chromiu používají různé cesty zásad v rámci `HKLM`. Mělo by se řídit modelem `HKLM\SOFTWARE\Policie\<Vendor>\<Product>`.
 
-3. Open the Registry Editor:
+3. Otevřít editor registru:
 
-   - Press _Win + R_
-   - Type _regedit_ and press _Enter_
-   - Approve the UAC prompt by running it as administrator
+   - Stiskněte _Win + R_
+   - Napište _regedit_ a stiskněte _Enter_
+   - Potvrďte výzvu UAC spuštěním jako správce
 
-4. Back up the Policies branch:
+4. Zálohujte větev zásad:
 
-   - In the left panel, navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies`
-   - Right-click _Policies_ → _Export_
-   - Save the file as _Policies_backup.reg_
+   - V levém panelu přejděte na `HKEY_LOCAL_MACHINE\SOFTWARE\Policies`
+   - Klikněte pravým tlačítkem myši na _Zásady_ → _Exportovat_
+   - Uložte soubor jako _Policies_backup.reg_
 
-   If something goes wrong, you can restore the backup by double-clicking this file.
+   Pokud se něco pokazí, můžete zálohu obnovit dvojitým kliknutím na tento soubor.
 
-5. Navigate to your browser’s policy key:
+5. Přejděte na klíč zásad vašeho prohlížeče:
 
-   - Expand the path `HKEY_LOCAL_MACHINE` → _SOFTWARE_ → _Policies_.
-   - Locate the folder corresponding to your browser.
+   - Rozbalte cestu `HKEY_LOCAL_MACHINE` → _SOFTWARE_ → _Policies_.
+   - Vyhledejte složku odpovídající vašemu prohlížeči.
 
-If the key does not exist, you can create it manually. Example for Chrome:
+Pokud klíč neexistuje, můžete jej vytvořit ručně. Příklad pro Chrome:
 
-- Right-click _Policies_ → _New_ → _Key_ and name it `Google`
-- Inside `Google`, create another key named `Chrome`
+- Klikněte pravým tlačítkem myši na _Zásady_ → _Nový_ → _Klíč_ a pojmenujte jej `Google`
+- Uvnitř `Google` vytvořte další klíč s názvem `Chrome`
 
-Repeat the same logic for Chromium, Edge, Brave, Vivaldi, Yandex Browser, etc. You should end up with a key that looks like `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\<Vendor>\<Product>`.
+Opakujte stejnou logiku pro prohlížeče Chromium, Edge, Brave, Vivaldi, Yandex Browser atd. Měli byste získat klíč, který vypadá jako `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\<Vendor>\<Product>`.
 
-1. Add the required registry values:
+1. Přidejte požadované hodnoty registru:
 
-   - In the correct key, click the right panel → _New_ → _DWORD (32-bit) Value_
+   - Ve správném klíči klikněte na pravý panel → _Nový_ → _DWORD (32bitová) hodnota_
 
-   - Name it `RendererAppContainerEnabled`
+   - Pojmenujte jej `RendererAppContainerEnabled`
 
-   - Double-click it and set:
+   - Dvakrát na něj klikněte a nastavte:
 
      - **Value:** 0
-     - **Base:** Hexadecimal or Decimal (either is fine)
+     - **Base:** Hexadecimální nebo decimální (obojí je v pořádku)
 
-   - Repeat the process and create a second DWORD `NetworkServiceSandboxEnabled`.
+   - Opakujte postup a vytvořte druhý DWORD \`NetworkServiceSandboxEnabled\`.
 
-   - Set its value to 0.
+   - Nastavte jeho hodnotu na 0.
 
-   Both parameters must be `REG_DWORD` and have the value **0**.
+   Oba parametry musí být `REG_DWORD` a mít hodnotu **0**.
 
-2. Close the browser and apply the settings. To ensure the policy is loaded:
+2. Zavřete prohlížeč a použijte nastavení. Chcete-li zajistit, aby byla zásada načtena:
 
-   - Fully close the browser
-   - Check Task Manager and make sure no processes such as _chrome.exe_, _msedge.exe_, _brave.exe_ remain running
-   - Reopen the browser
+   - Úplně zavřete prohlížeč
+   - Zkontrolujte Správce úloh a ujistěte se, že žádné procesy jako _chrome.exe_, _msedge.exe_, _brave.exe_ nezůstávají spuštěné
+   - Znovu otevřete prohlížeč
 
-3. Verify that the policies have been applied by opening the policy viewer for your browser.
+3. Ověřte, zda byly zásady použity otevřením prohlížeče zásad v prohlížeči.
 
-You should see the following policies active:
+Měly by být aktivní následující zásady:
 
 - `RendererAppContainerEnabled` — **0 / false**
 - `NetworkServiceSandboxEnabled` — **0 / false**
 
-If available, click _Reload policies_.
+Pokud jsou k dispozici, klikněte na _Znovu načíst zásadu_.
 
 Hotovo!
 
-## Permanent solution
+## Trvalé řešení
 
-We’re planning to add support for the SockFilter driver in the upcoming versions. It will fix the issue by solving conflicts in the WFP stack. [More information](https://github.com/AdguardTeam/AdguardForWindows/issues/5780).
+Plánujeme přidat podporu pro ovladač SockFilter v nadcházejících verzích. Problém vyřeší odstraněním konfliktů ve stacku WFP. [Další informace](https://github.com/AdguardTeam/AdguardForWindows/issues/5780).
