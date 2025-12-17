@@ -87,17 +87,17 @@ Alternatively, you can use a [license key](../what-is#license-key) to activate t
 
     ![Settings icon *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
 
-3. Click *Get full version*.
+3. Go to *License* tab.
 
-    ![Get full version](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/get-full-button.png)
+    ![Go to License](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
 
-4. Click *Already purchased?* at the bottom left of the screen.
+4. Open menu (⋮) in the upper right corner and click *Already purchased?*
 
-    ![Click already purchased](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased.png)
+    ![Click already purchased](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
 
-5. You will see 3 activation options:
+5. You will see available activation options:
 
-    ![Activation options](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options.png)
+    ![Activation options](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
 
     - **Log in**
 
@@ -105,7 +105,7 @@ Alternatively, you can use a [license key](../what-is#license-key) to activate t
 
     - **Restore from App Store**
 
-      Use a license that you have previously bought through App Store.
+      Use a license that you have previously bought through the App Store.
 
     - **Enter activation code**
 
