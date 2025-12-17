@@ -1,5 +1,5 @@
 ---
-title: 추적 보호(스텔스 모드)
+title: Tracking protection (formerly Stealth Mode)
 sidebar_position: 3
 ---
 
@@ -9,14 +9,20 @@ sidebar_position: 3
 
 :::
 
-**스텔스 모드**는 추적기 및 사기 사이트로부터 민감한 개인정보를 보호하는 것을 목표로 합니다.
+The purpose of _Tracking protection_ is to safeguard your sensitive personal data from online trackers and fraudsters. There are slight differences in the tracking protection features between Chromium-based browsers, which support MV3, and non-Chromium browsers, which support MV2.
 
-![스텔스 모드 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
+![Tracking protection in Chromium-based browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv3_trackingProtection.png)
 
-스텔스 모드에서는 웹사이트가 인터넷에서 해당 웹사이트를 찾는 데 사용한 검색어를 볼 수 없도록 하고, 쿠키(제3자 쿠키 포함)를 자동으로 삭제하는 등의 기능을 사용할 수 있습니다. [별도의 문서](/general/stealth-mode)에서 이러한 모든 기능에 대해 확인할 수 있습니다.
+_Tracking protection_ in Chromium-based browsers
+
+![Tracking protection in non-Chromium browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv2_trackingProtection.png)
+
+_Tracking protection_ in non-Chromium browsers
+
+_Tracking protection_ features prevent websites from seeing the search query you used to find them on the Internet, automatically delete third-party and website cookies, and more. A [separate article](/general/stealth-mode) is devoted to all these features.
 
 :::note
 
-정식 앱에서 사용이 가능한 일부 **스텔스 모드** 옵션은 기술적 한계로 인해 확장 프로그램에서는 존재하지 않습니다.
+Browser extensions are limited to a specific browser and are subject to its technical restrictions. Therefore, they cannot offer all the tracking protection features available in full-fledged ad-blocking apps.
 
 :::

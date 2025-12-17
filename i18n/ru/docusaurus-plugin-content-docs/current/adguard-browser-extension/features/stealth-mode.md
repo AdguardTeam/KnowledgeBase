@@ -1,5 +1,5 @@
 ---
-title: Защита от трекинга
+title: Tracking protection (formerly Stealth Mode)
 sidebar_position: 3
 ---
 
@@ -9,14 +9,20 @@ sidebar_position: 3
 
 :::
 
-_Антитрекинг_ защищает личные данные от онлайн-трекеров и мошенников.
+The purpose of _Tracking protection_ is to safeguard your sensitive personal data from online trackers and fraudsters. There are slight differences in the tracking protection features between Chromium-based browsers, which support MV3, and non-Chromium browsers, which support MV2.
 
-![Антитрекинг \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
+![Tracking protection in Chromium-based browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv3_trackingProtection.png)
 
-В режиме Антитрекинга вы можете запретить сайту видеть поисковые запросы, которые вы использовали, чтобы найти его в интернете, автоматически удалять сторонние и собственные куки-файлы сайта и т. д. Всем этим особенностям посвящена [отдельная статья](/general/stealth-mode).
+_Tracking protection_ in Chromium-based browsers
+
+![Tracking protection in non-Chromium browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv2_trackingProtection.png)
+
+_Tracking protection_ in non-Chromium browsers
+
+_Tracking protection_ features prevent websites from seeing the search query you used to find them on the Internet, automatically delete third-party and website cookies, and more. A [separate article](/general/stealth-mode) is devoted to all these features.
 
 :::note
 
-Некоторые опции _Антитрекинга_, доступные в полноценных приложениях, отсутствуют в браузерных расширениях из-за технических ограничений.
+Browser extensions are limited to a specific browser and are subject to its technical restrictions. Therefore, they cannot offer all the tracking protection features available in full-fledged ad-blocking apps.
 
 :::
