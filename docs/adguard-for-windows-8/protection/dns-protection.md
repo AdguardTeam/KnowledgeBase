@@ -46,5 +46,3 @@ You can use one of our public servers, add your own custom DNS server, or pick a
 To fine-tune protection, you can create your own DNS filters using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/) or import ready-made [DNS filters](https://filterlists.com).
 
 In addition, you can create custom DNS rules to block, unblock, or redirect domains as needed. Use our built-in rule constructor.
-
-![Create DNS rules](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_user_rules.png)
