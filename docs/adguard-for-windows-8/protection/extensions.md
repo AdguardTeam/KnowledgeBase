@@ -1,4 +1,4 @@
-s---
+---
 title: Extensions
 sidebar_position: 7
 ---
