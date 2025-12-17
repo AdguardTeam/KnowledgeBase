@@ -17,7 +17,7 @@ It won’t stop a virus that is already being downloaded, and it won’t remove 
 
 For more details about how this protection works, see our article [Phishing and malware protection](/general/browsing-security).
 
-![Browsing security *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/browsing_security.png)
+![Browsing security *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/browsing.png)
 
 In the *Browsing security* section, you can:
 

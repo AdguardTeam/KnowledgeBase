@@ -11,7 +11,7 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 There are other useful AdGuard options that shouldn’t go unnoticed in this article, since they add much to user experience.
 
-![Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/settings.png)
+![Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/setting.png)
 
 ## [App settings](/adguard-for-windows-8/settings/app-settings)
 

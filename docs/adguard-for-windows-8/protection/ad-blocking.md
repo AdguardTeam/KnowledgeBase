@@ -11,7 +11,7 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 The *Ad blocking* section is responsible for removing ads from the websites you visit and from the apps installed on your device. To filter banners, popups, trackers, and other intrusive elements, AdGuard relies on filters — sets of rules written in a [special syntax](/general/ad-filtering/create-own-filters). If you’d like to learn more about how they work, read our [article about filters](/general/ad-filtering/how-ad-blocking-works).
 
-![Ad blocking *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/ad_blocking_new.png)
+![Ad blocking *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/ad_blocking.png)
 
 Here you can:
 
@@ -22,5 +22,3 @@ Here you can:
 - manage user rules.
 
 You can also open the *Filtering log* to view all requests made by browsers and apps on your computer. From there, it’s easy to block or unblock any request by creating a custom rule. In the *Filter editor*, you can create, add, and import your own rules and filters.
-
-![Filtering log and Filter editor *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/filtering_log_menu.png)

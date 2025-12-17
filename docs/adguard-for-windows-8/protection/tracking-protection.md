@@ -33,7 +33,7 @@ For maximum flexibility, select *Custom* and adjust everything manually. The set
 
 ## General settings
 
-![General settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/general_settings.png)
+![General settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general.png)
 
 ### Block trackers
 
@@ -53,9 +53,9 @@ Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) a
 
 ## Tracking methods
 
-![Tracking methods *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_methods.png)
+![Tracking methods *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_tracking_methods.png)
 
-### Self-destruction of third-party cookies
+### Delete third-party cookies
 
 Websites use cookies to store your preferences — for example, the language you chose, your location, or the items in your shopping cart. When you return, the browser sends these cookies back so the site can recognize you.
 
@@ -63,7 +63,7 @@ Third-party cookies work the same way, but they are created by domains other tha
 
 With this option, you can set a time limit (in minutes) after which all third-party cookies will be deleted. If you set the timer to 0, such cookies will be blocked completely.
 
-![Time-to-live *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/third-party_cookies.png)
+![Time-to-live *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/delete_third_party.png)
 
 :::caution
 
@@ -71,7 +71,7 @@ Keep in mind that this setting removes all third-party cookies, including those 
 
 :::
 
-### Self-destruction of first-party cookies (not recommended)
+### Delete first-party cookies (not recommended)
 
 This option deletes cookies set by the website you are currently visiting after a selected period of time (in minutes). When the timer runs out, all such cookies are removed. Set the timer to 0 to block them completely.
 
@@ -95,7 +95,7 @@ The Authorization header value is cached by the browser and automatically sent w
 
 ## Browser API
 
-![Browser API *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/browser_api.png)
+![Browser API *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_browser_api.png)
 
 ### Block WebRTC
 
@@ -117,7 +117,7 @@ The Flash Player plugin is outdated and highly vulnerable to viruses and exploit
 
 ## Windows tracking
 
-![Windows tracking *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/windows_tracking.png)
+![Windows tracking *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_windows_tracking.png)
 
 ### Disable Windows telemetry
 
@@ -137,7 +137,7 @@ Disables data collection about Windows component problems
 
 ## Miscellaneous
 
-![Miscellaneous *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/miscellaneous.png)
+![Miscellaneous *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_misc.png)
 
 ### Hide Referer from third parties
 

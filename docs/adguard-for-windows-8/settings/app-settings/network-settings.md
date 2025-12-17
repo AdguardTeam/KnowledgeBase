@@ -11,7 +11,7 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 This section lets you manage how AdGuard filters your Internet traffic and provides additional tools to control network-related features.
 
-![Network settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network.png)
+![Network settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
 
 ## Use AdGuard as an HTTP proxy
 
@@ -39,16 +39,10 @@ With this option, you can:
 
 Here you can choose which proxy AdGuard should use to download filter updates or new app versions — the system proxy, a custom proxy, or no proxy at all.
 
-![Proxy settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_settings.png)
+![Proxy settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
 
-## Use WFP network driver
+## Use SockFilter driver
 
-Enable this option to use the WFP (Windows Filtering Platform) driver, which helps block ads and trackers in apps on Windows 8 and later.
+Enable this option to use the SockFilter driver, which helps block ads and trackers in apps on Windows 8 and later.
 
-If this option is disabled, AdGuard will switch to the older TDI driver instead.
-
-:::note
-
-The TDI driver is not available in the version of AdGuard installed from the Microsoft Store.
-
-:::
+If this option is disabled, AdGuard will switch to the older WFP driver instead.

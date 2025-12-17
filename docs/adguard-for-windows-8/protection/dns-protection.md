@@ -23,11 +23,13 @@ Modern protocols like DNS-over-TLS and DNS-over-HTTPS ensure that your DNS reque
 
 DNS protection can filter out ads, trackers, phishing websites, and other harmful or annoying content before it even loads in your browser or apps. [Learn more about DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/)
 
-![DNS protection *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_protection.png)
+![DNS protection *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns.png)
 
 Here’s what you can configure in DNS protection:
 
 ## Choose a DNS server
+
+![DNS servers *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_server.png)
 
 You can select from multiple trusted DNS providers. AdGuard itself offers several options for different needs:
 
@@ -45,4 +47,4 @@ To fine-tune protection, you can create your own DNS filters using [DNS rule syn
 
 In addition, you can create custom DNS rules to block, unblock, or redirect domains as needed. Use our built-in rule constructor.
 
-![Create DNS rules](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/create_dns_rule.png)
+![Create DNS rules](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_rule.png)

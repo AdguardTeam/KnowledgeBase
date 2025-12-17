@@ -11,7 +11,7 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 In *Statistics*, you see a complete picture of what is happening with the traffic on your computer: how many requests are being sent and to which companies, how much data is being uploaded and downloaded, what requests are being blocked. You can check statistics for various time frames: all time, the last 14 days, the last 7 days, the last 24 hours, and broken down by ads, trackers, or requests.
 
-![Customize stats *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/statistics/customize_stats.png)
+![Customize stats *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/statistics/stats.png)
 
 :::note
 
@@ -26,8 +26,6 @@ All statistics are stored locally on your device. We only calculate how much dat
 This section displays stats for all apps installed on your device. You can sort apps by the number of blocked ads or trackers or by the number of sent requests.
 
 If you click an app, you can see its full stats: the requests it sends and the domains and companies it reaches out to.
-
-![App stats *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/statistics/app_stats.png)
 
 ## DNS
 
