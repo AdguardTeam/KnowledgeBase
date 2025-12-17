@@ -47,4 +47,4 @@ To fine-tune protection, you can create your own DNS filters using [DNS rule syn
 
 In addition, you can create custom DNS rules to block, unblock, or redirect domains as needed. Use our built-in rule constructor.
 
-![Create DNS rules](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_rule.png)
+![Create DNS rules](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_rules.png)
