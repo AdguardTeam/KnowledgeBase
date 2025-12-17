@@ -26,3 +26,4 @@ On Linux, press `Ctrl+Alt+T`. On your Mac, type `Terminal` in the search field.
 To view all available commands, enter:
 
     adguard-cli --help-all
+    
