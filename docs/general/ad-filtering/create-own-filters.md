@@ -4792,10 +4792,10 @@ If `pattern` is not set for `$path`, rule will apply only on the main page of we
 
 :::caution Limitations
 
-In AdGuard Browser Extension, non-basic `$path` modifier is compatible with
-other non-basic modifiers only when it is placed last,
-e.g. `[$domain=/example.(com|org)/,path=/foo]##.ad`,
-otherwise it may not work as expected.
+In AdGuard Browser Extension, the non-basic `$path` modifier is compatible
+with other non-basic modifiers only when it is placed last,
+e.g., `[$domain=/example.(com|org)/,path=/foo]##.ad`.
+Otherwise, it may not work as expected.
 
 :::
 
