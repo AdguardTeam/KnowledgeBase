@@ -4293,6 +4293,7 @@ Syntax supported by AdGuard Browser Extension v5.3 or later:
 :::caution Limitations
 
 In AdGuard Browser Extension v5.3 or later following limitations apply:
+
 - Universal selector (`*`) is not supported, as such rules require checking every element in the DOM tree, which may lead to significant performance issues. More targeted selectors should be used instead.
 - Pseudo-elements (e.g., `::before`, `::after`) are not supported, as they are not applicable in the context of HTML filtering.
 
