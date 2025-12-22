@@ -49,7 +49,7 @@ It should **not** be applied broadly across end-user machines. **Proceed only if
 
 :::
 
-#### Automatic setup
+#### Using .reg files
 
 You can apply the necessary registry changes automatically by using one of the pre-generated .reg files below. Each file disables AppContainer/Network Service sandboxing for a specific Chromium-based browser:
 
@@ -69,7 +69,7 @@ You can revert these changes using the undo .reg files provided below. These fil
 - [Undo Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Vivaldi.reg)
 - [Undo YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_YandexBrowser.reg)
 
-#### Manual setup
+#### Explicit registry editing
 
 If your browser is not listed, follow the manual instructions below to create the necessary registry entries:
 
