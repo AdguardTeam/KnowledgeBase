@@ -11,7 +11,8 @@ AdGuard CLI supports the following Linux distributions:
 
 - Debian stable 10 or later
 - Ubuntu LTS 22.04, 24.04, or later
-- RHEL / Fedora
+- RHEL 8.0 or later
+- Fedora 35 or later
 
 On Linux distributions that are **not based on Debian or Red Hat**, the automatic certificate installation script may not work properly.
 
