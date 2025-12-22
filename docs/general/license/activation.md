@@ -87,7 +87,7 @@ Alternatively, you can use a [license key](../what-is#license-key) to activate t
 
     ![Settings icon *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
 
-3. Go to *License* tab.
+3. Go to *License*.
 
     ![Go to License](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
 
