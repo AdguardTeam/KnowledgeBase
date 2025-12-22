@@ -4696,8 +4696,8 @@ this: `\]`.
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [$app](#non-basic-app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$domain](#non-basic-domain-modifier) | ✅ | ✅ | ✅ [*[1]](#non-basic-domain-modifier-limitations) | ✅ | ✅ | ✅ | ❌ |
-| [$path](#non-basic-path-modifier) | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ |
-| [$url](#non-basic-url-modifier) | ✅ | ✅ [*[2]](#non-basic-url-modifier-limitations) | ✅ [*[2]](#non-basic-url-modifier-limitations) | ✅ [*[2]](#non-basic-url-modifier-limitations) | ❌ | ❌ | ❌ |
+| [$path](#non-basic-path-modifier) | ✅ | ✅ [*[2]](#non-basic-path-modifier-limitations) | ❌ | ✅ [*[2]](#non-basic-path-modifier-limitations) | ✅ | ✅ | ❌ |
+| [$url](#non-basic-url-modifier) | ✅ | ✅ [*[3]](#non-basic-url-modifier-limitations) | ✅ [*[3]](#non-basic-url-modifier-limitations) | ✅ [*[3]](#non-basic-url-modifier-limitations) | ❌ | ❌ | ❌ |
 
 :::note
 
@@ -4787,6 +4787,17 @@ If `pattern` is not set for `$path`, rule will apply only on the main page of we
 - `[$path]example.com##.textad` hides a `div` with the class `textad` at the main page of `example.com`
 - `[$domain=example.com,path=/page.html]##.textad` hides a `div` with the class `textad` at `page.html` of `example.com` and all subdomains but not at `another_page.html`
 - `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` hides a `div` with the class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please note the [escaped special characters](#non-basic-rules-modifiers-syntax))
+
+#### `$path` modifier limitations {#non-basic-path-modifier-limitations}
+
+:::caution Limitations
+
+In AdGuard Browser Extension, the non-basic `$path` modifier is compatible
+with other non-basic modifiers only when it is placed last,
+e.g., `[$domain=/example.(com|org)/,path=/foo]##.ad`.
+Otherwise, it may not work as expected.
+
+:::
 
 :::info Compatibility
 
