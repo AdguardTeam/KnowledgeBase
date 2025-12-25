@@ -25,13 +25,21 @@ You can save your settings configuration by clicking the _Export settings_ butto
 
 The _Additional settings_ section contains a range of various settings that are related to the ad blocking process and application usability.
 
-![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
+![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
 
-From this tab, you can activate optimized filters, enable notifications about extension updates, open the _Filtering log_, or clear the statistics of blocked ads and trackers.
+Bu sekmeden, i̇zin listesini tersine çevirebilir ve AdGuard öğesini tarayıcının sağ tık menüsüne ekleyebilirsiniz. Ayrıca AdGuard simgesinde engellenen reklam sayısının görüntülenmesini ve uzantı güncellemeleriyle ilgili bildirimleri etkinleştirebilirsiniz. Ayrıca, bu bölüm AdGuard uygulamasıyla ilgili bildirimleri etkinleştirmenize, _Filtreleme günlüğünü_ açmanıza, engellenen reklamların ve izleyicilerin istatistiklerini temizlemenize veya ayarları sıfırlamanıza olanak tanır.
 
 Ayrıca, uygulanan kurallarla ilgili istatistikleri göndererek filtrelerin geliştirilmesinde bize yardımcı olmayı tercih edebilirsiniz: hangilerinin tetiklendiği, hangi sitelerde ve ne sıklıkta olduğu. Kullanıcı verilerini onay olmadan toplamadığımız için bu seçenek varsayılan olarak devre dışıdır. Yine de, etkinleştirirseniz, tüm veriler kesinlikle anonimleştirilecektir.
 
-## Hakkında {#about}
+You can also choose to help us improve the extension by sending us anonymized usage data. Bu, etkileşimde bulunduğunuz ekranların adlarını, tıkladığınız düğmelerin adlarını ve oturum tanımlayıcılarını içerir. Bu bilgiler, kullanıcıların nerede sorun yaşadığını anlamamıza, deneyimi geliştirmemize, uzantıyı daha hızlı ve kullanımı daha kolay hâle getirmemize yardımcı oluyor. The _Send anonymized usage data_ option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
+
+:::note
+
+Chromium tabanlı tarayıcılarda, yükleme sonrası sayfasında _Anonim kullanım verilerini gönder_ seçeneği de etkinleştirilebilir.
+
+:::
+
+## About {#about}
 
 In the _About_ section, you can find info about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
 

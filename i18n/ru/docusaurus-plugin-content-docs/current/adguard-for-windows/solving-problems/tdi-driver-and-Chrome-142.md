@@ -49,6 +49,8 @@ AdGuard уже считает TDI-драйвер устаревшим и пла�
 
 :::
 
+#### Using .reg files
+
 Изменения в реестре можно применить автоматически, используя один из предварительно сгенерированных файлов .reg ниже. Каждый из этих файлов отключает изоляцию AppContainer/Network Service для конкретного браузера на основе Chromium:
 
 - [Скачать Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chrome.reg)
@@ -57,6 +59,17 @@ AdGuard уже считает TDI-драйвер устаревшим и пла�
 - [Скачать Brave.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Brave.reg)
 - [Скачать Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Vivaldi.reg)
 - [Скачать YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_YandexBrowser.reg)
+
+You can revert these changes using the undo .reg files provided below. These files remove the registry branches that were added by the direct version:
+
+- [Undo Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chrome.reg)
+- [Undo Chromium.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chromium.reg)
+- [Undo Edge.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Edge.reg)
+- [Undo Brave.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Brave.reg)
+- [Undo Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Vivaldi.reg)
+- [Undo YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_YandexBrowser.reg)
+
+#### Explicit registry editing
 
 Если вашего браузера нет в списке, следуйте приведённой ниже инструкции, чтобы создать записи в реестре:
 

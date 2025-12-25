@@ -49,6 +49,8 @@ Es sollte **nicht** breitflächig auf Endbenutzergeräte übernommen werden. **F
 
 :::
 
+#### Using .reg files
+
 Sie können die erforderlichen Registry-Änderungen automatisch anwenden, indem Sie eine der unten stehenden, vorab generierten .reg-Dateien verwenden. Jede Datei deaktiviert das Sandboxen von AppContainer/Network Service für einen bestimmten Chromium-basierten Browser:
 
 - [Chrome.reg herunterladen](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chrome.reg)
@@ -57,6 +59,17 @@ Sie können die erforderlichen Registry-Änderungen automatisch anwenden, indem 
 - [Brave.reg herunterladen](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Brave.reg)
 - [Vivaldi.reg herunterladen](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Vivaldi.reg)
 - [YandexBrowser.reg herunterladen](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_YandexBrowser.reg)
+
+You can revert these changes using the undo .reg files provided below. These files remove the registry branches that were added by the direct version:
+
+- [Undo Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chrome.reg)
+- [Undo Chromium.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chromium.reg)
+- [Undo Edge.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Edge.reg)
+- [Undo Brave.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Brave.reg)
+- [Undo Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Vivaldi.reg)
+- [Undo YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_YandexBrowser.reg)
+
+#### Explicit registry editing
 
 Wenn Ihr Browser nicht aufgeführt ist, befolgen Sie die unten stehenden Anweisungen aus der Anleitung, um die erforderlichen Einträge zu erstellen:
 
