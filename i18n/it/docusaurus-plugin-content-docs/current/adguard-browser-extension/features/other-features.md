@@ -25,14 +25,22 @@ Puoi salvare la configurazione delle tue impostazioni cliccando il pulsante _Esp
 
 La sezione delle _Impostazioni aggiuntive_ contiene una gamma di varie impostazioni, correlate a processo di blocco delle inserzioni e utilizzabilità dell'applicazione.
 
-![Impostazioni aggiuntive \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
+![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
 
-Da questa scheda puoi attivare i filtri ottimizzati, abilitare le notifiche sugli aggiornamenti dell'estensione, aprire il _Registro di filtraggio_ o cancellare le statistiche di inserzioni e tracciatori bloccati.
+From this tab, you can invert the allowlist and add the AdGuard item to the browser’s context menu. You can also enable the display of the number of blocked ads on the AdGuard icon and notifications about extension updates. Additionally, this section lets you enable notifications about the AdGuard app, open the _Filtering log_, clear the statistics of blocked ads and trackers, or reset the settings.
 
 Inoltre, puoi decidere di aiutarci con lo sviluppo dei filtri, inviandoci le statistiche sulle regole applicate: quali sono innescate, in quali siti web e quanto spesso. Questa opzione è disabilitata di default in quanto non raccogliamo dati dell'utente senza consenso. Tuttavia, se l'abiliti, tutti i dati saranno strettamente anonimizzati.
 
-## Informazioni {#about}
+You can also choose to help us improve the extension by sending us anonymized usage data. This includes the names of the screens you interact with, the names of the buttons you click, and session identifiers. These insights help us understand where users run into friction, refine the experience, and make the extension faster and easier to use. The _Send anonymized usage data_ option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
 
-Nella sezione _Informazioni_, puoi trovare le informazioni sulla versione corrente, collegamenti all'EULA e alla Politica di riservatezza e al dispensario dell'estensione browser su GitHub.
+:::note
 
-![Informazioni \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+The _Send anonymized usage data_ option can also be enabled on the post-installation page in Chromium-based browsers.
+
+:::
+
+## About {#about}
+
+In the _About_ section, you can find info about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
+
+![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)

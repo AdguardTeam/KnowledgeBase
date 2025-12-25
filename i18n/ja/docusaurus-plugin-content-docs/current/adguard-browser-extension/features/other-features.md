@@ -25,14 +25,22 @@ AdGuard ブラウザ拡張機能の主要なモジュールのほかに、拡張
 
 「追加設定」セクションには、広告ブロックのプロセスと、アプリの使い勝手に関する様々な設定があります。
 
-![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
+![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
 
-このタブにて、最適化されたフィルタを有効にすることや、拡張機能のアップデートに関する通知を有効にすること、「フィルタリングログ」を開くこと、ブロックされた広告とトラッカーの統計情報をクリアすることができます。
+From this tab, you can invert the allowlist and add the AdGuard item to the browser’s context menu. You can also enable the display of the number of blocked ads on the AdGuard icon and notifications about extension updates. Additionally, this section lets you enable notifications about the AdGuard app, open the _Filtering log_, clear the statistics of blocked ads and trackers, or reset the settings.
 
 他にも、適用されているルールに関する統計情報（どのルールが、どのウェブサイトで、どのくらいの頻度で適用されたか）の送信を許可することにより、フィルタの開発に貢献することができます。 ※AdGuardは同意なしにユーザーデータを収集することは一切ないため、このオプションはデフォルトで無効になっています。 また、このオプションを有効にしても、送信されるデータはすべて厳格に匿名化されます。
 
-## AdGuard について {#about}
+You can also choose to help us improve the extension by sending us anonymized usage data. This includes the names of the screens you interact with, the names of the buttons you click, and session identifiers. These insights help us understand where users run into friction, refine the experience, and make the extension faster and easier to use. The _Send anonymized usage data_ option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
 
-「AdGuardについて」セクションには現在のバージョンに関する情報と、使用許諾契約(EULA)、プライバシーポリシー、Githubリポジトリへのリンクがあります。
+:::note
+
+The _Send anonymized usage data_ option can also be enabled on the post-installation page in Chromium-based browsers.
+
+:::
+
+## About {#about}
+
+In the _About_ section, you can find info about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
 
 ![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)

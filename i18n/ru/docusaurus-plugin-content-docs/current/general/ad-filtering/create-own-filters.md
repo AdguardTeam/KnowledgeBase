@@ -4117,6 +4117,8 @@ The syntax with an optional `value` in the attributes is supported by AdGuard fo
 
 ### Syntax
 
+Syntax supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux with CoreLibs, and AdGuard Browser Extension prior to v5.2:
+
 ```text
      selector = [tagName] [attributes] [pseudoClasses]
    combinator = ">"
@@ -4133,6 +4135,24 @@ pseudoClasses = pseudoClass *pseudoClass
 - **`pseudoName`** — имя псевдокласса.
 - **`pseudoArgs`** — аргументы псевдокласса, записанного в виде функции.
 - **`combinator`** — оператор, который работает аналогично [CSS-комбинатору дочерних элементов](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator): то есть `selector` справа от `combinator` будет относиться только к элементу, прямой родительский элемент которого соответствует `selector` слева от `combinator`.
+
+Syntax supported by AdGuard Browser Extension v5.3 or later:
+
+```text
+         rule = [domains] "$$" selector
+      domains = [domain0, domain1[, ...[, domainN]]]
+```
+
+- **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the element(s) to be removed from the HTML code before the page is loaded.
+- **`domains`** — доменное ограничение для правила. Те же принципы, что и в [синтаксисе правил скрытия элементов](#cosmetic-elemhide-rules).
+
+:::caution Limitations
+
+The following limitations apply to AdGuard Browser Extension v5.3 and later:
+
+- Pseudo-elements (e.g., `::before`, `::after`) are not supported, as they are not applicable in the context of HTML filtering.
+
+:::
 
 ### Примеры
 
@@ -4197,6 +4217,8 @@ $$script[tag-content="banner"]
 
 The `tag-content` special attribute must not appear in a selector to the left of a `>` combinator.
 
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
+
 :::
 
 #### `wildcard`
@@ -4218,6 +4240,8 @@ It checks if the element code contains the two consecutive substrings `banner` a
 :::caution Limitations
 
 The `wildcard` special attribute must not appear in a selector to the left of a `>` combinator.
+
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 :::
 
@@ -4247,6 +4271,8 @@ This rule will remove all the `div` elements, whose code contains the substring 
 
 The `max-length` special attribute must not appear in a selector to the left of a `>` combinator.
 
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
+
 :::
 
 #### `min-length`
@@ -4270,6 +4296,8 @@ This rule will remove all the `div` elements, whose code contains the substring 
 :::caution Limitations
 
 The `min-length` special attribute must not appear in a selector to the left of a `>` combinator.
+
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 :::
 
@@ -4297,7 +4325,7 @@ The `min-length` special attribute must not appear in a selector to the left of 
 
 :::info Совместимость
 
-The `:contains()` pseudo-class is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.13 or later.
+The `:contains()` pseudo-class is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux with [CoreLibs][] v1.13 or later, and AdGuard Browser Extension v5.3 or later.
 
 :::
 
@@ -4306,6 +4334,8 @@ Requires that the inner HTML of the element contains the specified text or match
 :::caution Limitations
 
 A `:contains()` pseudo-class must not appear in a selector to the left of a `>` combinator.
+
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 :::
 
@@ -4534,7 +4564,7 @@ In the modifiers values, the following characters must be escaped: `[`, `]`, `,`
 | [$app](#non-basic-app-modifier)       |               ✅                |                       ❌                       |                        ❌                         |                       ❌                       |             ❌              |               ❌               |                 ❌                 |
 | [$domain](#non-basic-domain-modifier) |               ✅                |                       ✅                       | ✅ [*[1]](#non-basic-domain-modifier-limitations) |                       ✅                       |             ✅              |               ✅               |                 ❌                 |
 | [$path](#non-basic-path-modifier)     |               ✅                |                       ✅                       |                        ❌                         |                       ✅                       |             ✅              |               ✅               |                 ❌                 |
-| [$url](#non-basic-url-modifier)       |               ✅                | ✅ [*[2]](#non-basic-url-modifier-limitations) |  ✅ [*[2]](#non-basic-url-modifier-limitations)   | ✅ [*[2]](#non-basic-url-modifier-limitations) |             ❌              |               ❌               |                 ❌                 |
+| [$url](#non-basic-url-modifier)       |               ✅                | ✅ [*[3]](#non-basic-url-modifier-limitations) |  ✅ [*[3]](#non-basic-url-modifier-limitations)   | ✅ [*[3]](#non-basic-url-modifier-limitations) |             ❌              |               ❌               |                 ❌                 |
 
 :::note
 
@@ -4621,6 +4651,14 @@ If `pattern` is not set for `$path`, rule will apply only on the main page of we
 - `[$domain=example.com,path=/page.html]##.textad` скрывает `div` с классом `textad` на `page.html` домена `example.com` и всех его поддоменах, но не на `another_page.html`
 - `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` скрывает `div` с классом `textad` как на `/sub1/page.html`, так и на `/sub2/page.html` любого домена (обратите внимание на [специальные экранированные символы](#non-basic-rules-modifiers-syntax))
 
+#### `$path` modifier limitations {#non-basic-path-modifier-limitations}
+
+:::caution Limitations
+
+In AdGuard Browser Extension, the non-basic `$path` modifier is compatible with other non-basic modifiers only when it is placed last, e.g., `[$domain=/example.(com|org)/,path=/foo]##.ad`. Otherwise, it may not work as expected.
+
+:::
+
 :::info Совместимость
 
 Rules with `$path` modifier are not supported by AdGuard Content Blocker.
@@ -4645,7 +4683,7 @@ where `pattern` is pretty much the same as [`pattern` of the basic rules](#basic
 - `[$url=||example.org^]###adblock` скрывает элемент с атрибутом `id` равным `adblock` в запросах к `example.org` и всем его поддоменам.
 - `[$url=/\[a-z\]+\\.example\\.com^/]##.textad` скрывает `div`-элементы класса `textad` для всех доменов, соответствующих регулярному выражению `[a-z]+\.example\.com^`.
 
-#### Ограничения модификатора `$url` {#non-basic-url-modifier-limitations}
+#### `$url` modifier limitations {#non-basic-url-modifier-limitations}
 
 :::caution Limitations
 
@@ -4679,7 +4717,7 @@ Preprocessor directives can be used in the user rules or in the custom filters.
 
 :::
 
-#### Включение файла {#include-directive}
+#### Including a file {#include-directive}
 
 The `!#include` directive allows to include contents of a specified file into the filter. It supports only files from the same origin to make sure that the filter maintainer is in control of the specified file. The included file can also contain pre-directives (even other `!#include` directives). Ad blockers should consider the case of recursive `!#include` and implement a protection mechanism.
 
@@ -4713,7 +4751,7 @@ Filter URL: `https://example.org/path/filter.txt`
 !#include https://domain.com/path/includedfile.txt
 ```
 
-#### Условия {#conditions-directive}
+#### Conditions {#conditions-directive}
 
 Filter maintainers can use conditions to supply different rules depending on the ad blocker type. A conditional directive beginning with an `!#if` directive must explicitly be terminated with an `!#endif` directive. Conditions support all basic logical operators.
 
@@ -4811,7 +4849,7 @@ It is already supported for filter lists compiled by the [FiltersRegistry][], bu
 
 :::
 
-#### Правила фильтрации в Safari {#safari-affinity-directive}
+#### Safari affinity {#safari-affinity-directive}
 
 Safari's limit for each content blocker is 150,000 active rules. But in AdGuard for Safari and AdGuard for iOS, we've split the rules into 6 content blockers, thus increasing the rule limit to 900,000.
 
@@ -4882,7 +4920,7 @@ example.org#@#.adBanner
 
 Multiple hints can be applied.
 
-#### Подсказка `NOT_OPTIMIZED`
+#### `NOT_OPTIMIZED` hint
 
 For each filter, AdGuard compiles two versions: full and optimized. Optimized version is much more lightweight and does not contain rules which are not used at all or used rarely.
 
@@ -4925,7 +4963,7 @@ Eventually, here are the two versions of the Base filter for AdGuard Browser Ext
 ||example.org^
 ```
 
-#### Подсказки `PLATFORM` и `NOT_PLATFORM`
+#### `PLATFORM` and `NOT_PLATFORM` hints
 
 Used to specify the platforms to apply the rules. List of existing platforms and links to Base filter, for example, for each of them:
 
