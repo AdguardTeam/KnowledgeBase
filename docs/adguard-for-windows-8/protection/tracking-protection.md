@@ -11,7 +11,7 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 Many websites collect data about their visitors, including IP addresses, browser and OS information, screen resolution, and even the page you came from. Cookies can be used to identify your browser, remember your preferences, or recognize you when you return. Tracking protection prevents such systems from collecting your personal data. Learn more in our [article about Tracking protection in AdGuard](https://adguard.com/kb/general/stealth-mode/)
 
-![Tracking protection *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
+![Tracking protection](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
 
 If you don’t want to spend time adjusting filters manually, you can simply pick one of the ready-made protection levels:
 
@@ -33,7 +33,7 @@ For maximum flexibility, select *Custom* and adjust everything manually. The set
 
 ## General settings
 
-![General settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general.png)
+![General settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general.png)
 
 ### Block trackers
 
@@ -53,7 +53,7 @@ Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) a
 
 ## Tracking methods
 
-![Tracking methods *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_tracking_methods.png)
+![Tracking methods](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_tracking_methods.png)
 
 ### Delete third-party cookies
 
@@ -63,7 +63,7 @@ Third-party cookies work the same way, but they are created by domains other tha
 
 With this option, you can set a time limit (in minutes) after which all third-party cookies will be deleted. If you set the timer to 0, such cookies will be blocked completely.
 
-![Time-to-live *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/delete_third_party.png)
+![Time-to-live](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/delete_third_party.png)
 
 :::caution
 
@@ -95,7 +95,7 @@ The Authorization header value is cached by the browser and automatically sent w
 
 ## Browser API
 
-![Browser API *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_browser_api.png)
+![Browser API](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_browser_api.png)
 
 ### Block WebRTC
 
@@ -117,7 +117,7 @@ The Flash Player plugin is outdated and highly vulnerable to viruses and exploit
 
 ## Windows tracking
 
-![Windows tracking *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_windows_tracking.png)
+![Windows tracking](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_windows_tracking.png)
 
 ### Disable Windows telemetry
 
@@ -137,7 +137,7 @@ Disables data collection about Windows component problems
 
 ## Miscellaneous
 
-![Miscellaneous *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_misc.png)
+![Miscellaneous](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_misc.png)
 
 ### Hide Referer from third parties
 

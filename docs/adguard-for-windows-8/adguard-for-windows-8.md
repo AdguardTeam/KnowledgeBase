@@ -11,7 +11,7 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 AdGuard for Windows is an easy-to-use tool that blocks annoying banners, popups, video ads, and trackers. But that’s not all: it helps you save traffic, load web pages faster, and protect your computer from undesirable and potentially malicious websites. AdGuard also protects you from phishing websites and keeps your kids away from inappropriate content.
 
-![Home screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
+![Home screen](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
 
 On the Home screen, you’ll find a toggle to enable or disable AdGuard protection, as well as icons for *Ad blocking*, *Tracking protection*, *DNS protection*, and *Annoyance blocking*. Main settings can be accessed through the left-side menu.
 
@@ -33,4 +33,4 @@ Options to select language and theme, view legal documents, check license inform
 
 Click *Check for updates* to see whether your app version, filters, and extensions are up to date.
 
-![Check for updates *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/checking_for_updates.png)
+![Check for updates](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/checking_for_updates.png)

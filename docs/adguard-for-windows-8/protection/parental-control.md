@@ -11,7 +11,7 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 There are several websites that children shouldn’t be able to access. *Parental control* helps you solve this problem.
 
-![Parental control *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/parental_control.png)
+![Parental control](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/parental_control.png)
 
 When *Parental control* is enabled, AdGuard scans the content of webpages and blocks those that may be harmful or inappropriate for children. This includes adult images and text, crude language, violence, and drug-related content.
 

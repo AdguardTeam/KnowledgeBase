@@ -13,7 +13,7 @@ Annoyance filters are designed to improve website usability by blocking non-adve
 
 These filters may contain rules that are not suitable for all users. Sometimes it is recommended to disable them. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
 
-![Annoyance filters *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
+![Annoyance filters](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
 
 **Block cookie notices** removes cookie consent banners on webpages.
 

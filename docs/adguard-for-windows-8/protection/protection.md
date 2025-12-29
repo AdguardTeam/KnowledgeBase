@@ -9,7 +9,7 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 :::
 
-![Protection tab *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/protection_section.png)
+![Protection tab](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/protection_section.png)
 
 The *Protection* tab contains all key security and filtering settings. Here you can control *Ad blocking*, *Tracking protection*, *Annoyance blocking*, *DNS filtering*, *Browsing security*, *Parental control*, and *Extensions*. You can also manage AdGuard Assistant here — a tool that lets you control its functionality without opening the app. Each of these features is described in a separate article.
 
