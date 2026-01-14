@@ -714,7 +714,7 @@ So, for example, the rule `||evil.com^$method=get|~head` will be ignored.
 
 Rules with `$method` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.12 or later, and AdGuard Browser Extension for Chrome, Firefox, and Edge with [TSUrlFilter] v2.1.1 or later.
 
-In AdGuard for iOS (v4.5.15 or later) and AdGuard Mini for Mac (v2.1 or later), the `$method` modifier is supported with limitations. 
+In AdGuard for iOS (v4.5.15 or later) and AdGuard Mini for Mac (v2.1 or later), the `$method` modifier is supported with limitations.
 
 :::
 
