@@ -703,9 +703,9 @@ This modifier limits the rule scope to requests that use the specified set of HT
 
 :::caution Restrictions
 
-1. In AdGuard for iOS and AdGuard Mini for Mac, the `$method` modifier does not support negation. As a result, rules such as `$method=~get` are not supported.
+1. In AdGuard for iOS and AdGuard Mini for Mac, the `$method` modifier does not support negation. Therefore, rules such as `$method=~get` are not supported.
 
-1. Rules with mixed negated and not negated values are considered invalid.
+1. Rules with a combination of negated and non-negated values are considered invalid.
 So, for example, the rule `||evil.com^$method=get|~head` will be ignored.
 
 :::
