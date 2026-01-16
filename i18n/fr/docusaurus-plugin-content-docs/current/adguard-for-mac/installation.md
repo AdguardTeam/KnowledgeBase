@@ -11,7 +11,7 @@ Cet article parle de AdGuard pour Mac, un bloqueur d'annonces multifonctionnel q
 
 ## Configuration requise
 
-**Version du système d'exploitation :** macOS 10.15 (64 bits) ou supérieur
+**Operating system version:** macOS 12 or later
 
 **RAM :** au moins 2 Go
 

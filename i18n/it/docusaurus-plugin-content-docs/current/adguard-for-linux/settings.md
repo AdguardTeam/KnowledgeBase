@@ -85,6 +85,17 @@ Usa il comando `config` per configurare AdGuard per Linux. Sotto-comandi:
 
 - `get`: Ottieni lo stato attuale delle opzioni soprastanti
 
+:::note
+
+The Automatic mode can only be used if the following requirements are met:
+
+- `iptables` is installed and running (either `nft` or `legacy`)
+- `iptables` supports the `nat` table for both IPv4 and IPv6
+- `iptables` supports the `REDIRECT` and `QUEUE` chains for both IPv4 and IPv6
+- The `sudo` package is installed
+
+:::
+
 ## Gestisci i filtri
 
 Usa il comando `filters` per configurare AdGuard per Linux. Sotto-comandi:

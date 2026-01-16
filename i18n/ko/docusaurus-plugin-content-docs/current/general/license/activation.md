@@ -76,3 +76,37 @@ AdGuard 계정을 통해 라이선스를 활성화하기 위해서는 최소 하
 1. 이메일 주소 또는 소셜 미디어 계정을 사용하여 라이선스를 활성화합니다.
 
     ![로그인 화면 *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
+
+### Activating AdGuard Mini for Mac
+
+1. Click AdGuard Mini icon in the menu bar.
+
+    ![AdGuard Mini in the menu bar](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
+
+2. Click the settings icon.
+
+    ![Settings icon *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
+
+3. Go to *License*.
+
+    ![Go to License](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
+
+4. Open the menu (⋮) in the upper right corner and click *Already purchased?*.
+
+    ![Click already purchased](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
+
+5. You will see the available activation options:
+
+    ![Activation options](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
+
+    - **Log in**
+
+      Log in to your AdGuard account that has a valid license in it.
+
+    - **Restore from App Store**
+
+      Use a license that you have previously bought through the App Store.
+
+    - **Enter activation code**
+
+      Enter your activation code.

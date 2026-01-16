@@ -25,13 +25,21 @@ Wenn Sie Ihre Einstellungen speichern möchten, klicken Sie auf die Schaltfläch
 
 Der Tab _Zusätzliche Einstellungen_ enthält eine Reihe von Einstellungen, die sich auf das Blockieren von Werbung und die Benutzerfreundlichkeit der Erweiterung beziehen.
 
-![Zusätzliche Einstellungen \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
+![Zusätzliche Einstellungen \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
 
-In diesem Tab können Sie optimierte Filter aktivieren, Benachrichtigungen über Erweiterungs-Updates aktivieren, das _Filter-Protokoll_ öffnen oder die Statistiken über blockierte Werbung und Tracker löschen.
+From this tab, you can invert the allowlist and add the AdGuard item to the browser’s context menu. You can also enable the display of the number of blocked ads on the AdGuard icon and notifications about extension updates. Additionally, this section lets you enable notifications about the AdGuard app, open the _Filtering log_, clear the statistics of blocked ads and trackers, or reset the settings.
 
 Sie können uns auch bei der Entwicklung von Filtern helfen, indem Sie uns Statistiken über die angewendeten Regeln senden: Welche Regeln wurden ausgelöst, auf welchen Websites und wie oft. Diese Option ist standardmäßig deaktiviert, da wir ohne Zustimmung keine Nutzerdaten sammeln. Wenn Sie diese Funktion jedoch aktivieren, werden alle Daten streng anonymisiert.
 
-## Über uns {#about}
+You can also choose to help us improve the extension by sending us anonymized usage data. This includes the names of the screens you interact with, the names of the buttons you click, and session identifiers. These insights help us understand where users run into friction, refine the experience, and make the extension faster and easier to use. The _Send anonymized usage data_ option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
+
+:::note
+
+The _Send anonymized usage data_ option can also be enabled on the post-installation page in Chromium-based browsers.
+
+:::
+
+## About {#about}
 
 Im Tab _Über uns_ finden Sie Informationen zur aktuellen Version, Links zum Endbenutzer-Lizenzvertrag und zur Datenschutzerklärung sowie zum Repository der Browsererweiterung auf GitHub.
 

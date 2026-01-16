@@ -636,24 +636,24 @@ MyOS işletim sistemi altında çalışan ZTE cihazları, arka plan işlemlerine
 
 ## Infinix
 
-Infinix devices apply strict battery and power-saving rules that may interrupt AdGuard’s work in the background. Follow these steps to prevent AdGuard from being closed automatically by the system and ensure stable protection:
+Infinix cihazları, AdGuard'ın arka planda çalışmasını kesintiye uğratabilecek katı pil ve güç tasarrufu kuralları uygular. AdGuard'ın sistem tarafından otomatik olarak kapatılmasını önlemek ve istikrarlı koruma sağlamak için şu adımları izleyin:
 
-1. Disable protection and close the AdGuard app.
+1. Korumayı devre dışı bırakın ve AdGuard uygulamasını kapatın.
 
-1. Go to system settings → *App management* → *App list* → *AdGuard* → *Battery* and enable *Allow background usage*. Then go to *Allow background usage* setting and switch the mode to *Unrestricted*.
+1. Sistem ayarlarına gidin → *Uygulama yönetimi* → *Uygulama listesi* → *AdGuard* → *Pil* ve *Arka plan kullanımına izin ver* öğesini etkinleştirin. Ardından *Arka plan kullanımına izin ver* ayarına gidin ve modu *Kısıtlamasız* olarak değiştirin.
 
-    ![Allow background usage *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_allow.png)
+    ![Arka plan kullanımına izin ver *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_allow.png)
 
-1. Open system settings → *App management* → *Auto-start management* and enable *AdGuard*.
+1. Sistem ayarlarını açın → *Uygulama yönetimi* → *Otomatik başlatma yönetimi* ve *AdGuard* öğelerini etkinleştirin.
 
-    ![Auto-start management *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_app_launch.png)
+    ![Otomatik başlatma yönetimi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_app_launch.png)
 
-1. Navigate to system settings → *Battery & Power Saving* → *Power Saver* and disable *Battery Saver*.
+1. Sistem ayarlarına gidin → *Pil ve Güç Tasarrufu* → *Güç Tasarrufu* ve *Pil Tasarrufu* öğelerini devre dışı bırakın.
 
-1. From the *Battery & Power Saving* tab, find *AdGuard*, and select *No Restrictions*.
+1. *Pil ve Güç Tasarrufu* sekmesinden *AdGuard* öğesini bulun ve *Kısıtlama Yok* öğesini işaretleyin.
 
-    ![Power saving management for apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_power_saving.png)
+    ![Uygulamalar için güç tasarrufu yönetimi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_power_saving.png)
 
-1. Go to *App management* → *Special App Access* → *Battery Optimisation*. At the top of the screen, select *All apps* from the dropdown menu, tap *AdGuard*, and set it to *Not Optimised*.
+1. *Uygulama yönetimi* → *Özel Uygulama Erişimi* → *Pil Optimizasyonu* öğesine gidin. Ekranın üst kısmında, açılır menüden *Tüm uygulamalar* öğesini belirleyin, *AdGuard* öğesine dokunun ve *Optimize Edilmemiş* olarak ayarlayın.
 
-    ![Battery optimisation *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_not_optimized.png)
+    ![Pil optimizasyonu *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_not_optimized.png)

@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 ## Požadavky na systém
 
-**Verze operačního systému:** macOS 10.15 (64 bitů) nebo vyšší
+**Verze operačního systému:** macOS 12 nebo novější
 
 **RAM:** alespoň 2 GB
 

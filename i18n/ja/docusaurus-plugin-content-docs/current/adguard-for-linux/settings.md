@@ -85,6 +85,17 @@ AdGuard for Linuxを設定するには、`config` コマンドを使用します
 
 - `get`: 上記オプションの現在の状態を取得する
 
+:::note
+
+The Automatic mode can only be used if the following requirements are met:
+
+- `iptables` is installed and running (either `nft` or `legacy`)
+- `iptables` supports the `nat` table for both IPv4 and IPv6
+- `iptables` supports the `REDIRECT` and `QUEUE` chains for both IPv4 and IPv6
+- The `sudo` package is installed
+
+:::
+
 ## フィルターを管理する
 
 AdGuard for Linuxを設定するには、`filters` コマンドを使用します。 サブコマンドは以下のとおりです：
