@@ -11,7 +11,7 @@ Acest articol se referă la AdGuard pentru macOS, un blocant de reclame multifun
 
 ## Cerințele Sistemului
 
-**Versiunea sistemului de operare:** macOS 10.15 (64 biți) sau mai recent
+**Operating system version:** macOS 12 or later
 
 **RAM:** cel puțin 2 GB
 

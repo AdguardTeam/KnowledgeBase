@@ -9,7 +9,7 @@ Dieser Artikel behandelt AdGuard für Mac, einem multifunktionalen Werbeblocker,
 
 :::
 
-## Features
+## Funktionen
 
 Die wichtigsten Funktionen und Einstellungen von AdGuard für Mac
 

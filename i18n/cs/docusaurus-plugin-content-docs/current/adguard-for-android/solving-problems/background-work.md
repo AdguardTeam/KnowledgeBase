@@ -636,24 +636,24 @@ Zařízení ZTE fungující pod operačním systémem MyOS mají agresivní př�
 
 ## Infinix
 
-Infinix devices apply strict battery and power-saving rules that may interrupt AdGuard’s work in the background. Follow these steps to prevent AdGuard from being closed automatically by the system and ensure stable protection:
+Zařízení Infinix používají přísná pravidla pro úsporu baterie, která mohou přerušit práci AdGuardu na pozadí. Postupujte podle těchto kroků, abyste zabránili automatickému ukončování AdGuardu systémem a zajistili stabilní ochranu:
 
-1. Disable protection and close the AdGuard app.
+1. Deaktivujte ochranu a zavřete aplikaci AdGuard.
 
-1. Go to system settings → *App management* → *App list* → *AdGuard* → *Battery* and enable *Allow background usage*. Then go to *Allow background usage* setting and switch the mode to *Unrestricted*.
+1. Přejděte do nastavení systému → *Správa aplikací* → *Seznam aplikací* → *AdGuard* → *Baterie* a povolte *Povolit používání na pozadí*. Poté přejděte do nastavení *Povolit používání na pozadí* a přepněte režim na *Bez omezení*.
 
     ![Allow background usage *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_allow.png)
 
-1. Open system settings → *App management* → *Auto-start management* and enable *AdGuard*.
+1. Otevřete nastavení systému → *Správa aplikací* → *Správa automatického spuštění* a povolte *AdGuard*.
 
     ![Auto-start management *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_app_launch.png)
 
-1. Navigate to system settings → *Battery & Power Saving* → *Power Saver* and disable *Battery Saver*.
+1. Přejděte do nastavení systému → *Baterie a spořič energie* → *Úspora energie* a vypněte *Spořič baterie*.
 
-1. From the *Battery & Power Saving* tab, find *AdGuard*, and select *No Restrictions*.
+1. Na kartě *Baterie a spořič energie* vyhledejte *AdGuard* a vyberte *Bez omezení*.
 
     ![Power saving management for apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_power_saving.png)
 
-1. Go to *App management* → *Special App Access* → *Battery Optimisation*. At the top of the screen, select *All apps* from the dropdown menu, tap *AdGuard*, and set it to *Not Optimised*.
+1. Přejděte na *Správu aplikací* → *Speciální přístup k aplikacím* → *Optimalizace baterie*. V horní části obrazovky vyberte z rozbalovací nabídky *Všechny aplikace*, klepněte na *AdGuard*a nastavte na *Bez optimalizace*.
 
     ![Battery optimisation *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_not_optimized.png)
