@@ -11,7 +11,7 @@ Este artigo é sobre o AdGuard para Mac, um bloqueador de anúncios multifuncion
 
 ## Requisitos do sistema
 
-**Versão do sistema operacional:** macOS 10.15 (64 bits) ou superior
+**Operating system version:** macOS 12 or later
 
 **RAM:** pelo menos 2 GB
 
@@ -54,6 +54,12 @@ Agora, você verá um assistente de instalação rápida, onde será solicitado 
 ![Configurar proteção](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation-wizard.jpg)
 
 Prontinho, o AdGuard está instalado no seu Mac!
+
+### Installation on older versions of macOS
+
+Users with older versions of macOS (Big Sur 11, Catalina 10.15, or earlier) won’t find a compatible app version on the AdGuard Ad Blocker website — these OS versions are no longer supported in the latest releases.
+
+However, you still can [download an older, compatible version](https://agrd.io/adguard_for_mac_v2-17)
 
 ## Desinstalar
 

@@ -55,6 +55,24 @@ Bu betik, Google arama sonuçlarındaki bağlantılardan Google'ın izleyici öz
 
 Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me-google). This userscript can be downloaded from [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) and installed in any AdGuard CoreLibs-based app.
 
+#### SponsorBlock
+
+SponsorBlock skips sponsored segments in YouTube videos. It saves time by jumping straight to the main content and removes interruptions from ads and self-promotions.
+
+:::info
+
+Bu kullanıcı betiği yalnızca masaüstü uygulamalarımız olan Windows için AdGuard ve Mac için AdGuard'da çalışır.
+
+:::
+
+Denemek için:
+
+1. [https://mchangrh.github.io/sb.js/](https://mchangrh.github.io/sb.js/) adresine gidin.
+2. **Bağlantı oluştur** öğesine tıklayın.
+3. Görünen bağlantıyı kopyalayın.
+4. AdGuard'ı açın ve **Uzantılar → Uzantı ekle → Dosyadan veya URL'den içe aktar** öğesine gidin.
+5. Paste the copied link and confirm.
+
 #### tinyShield
 
 A userscript for people visiting Korean websites and some international websites. The tinyShield userscript blocks Ad-Shield ads and anti-adblocks. This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). tinyShield hakkında daha fazla bilgi edinin ve [GitHub'da](https://github.com/FilteringDev/tinyShield) nasıl yükleneceğini öğrenin.

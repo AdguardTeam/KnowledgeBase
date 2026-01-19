@@ -9,8 +9,8 @@ sidebar_position: 6
 
 :::
 
-## Расширенная защита от отслеживания
+## Защита от трекинга
 
-![Защита от трекинга](https://cdn.adtidy.org/content/kb/ad_blocker/mac/stealth.png)
+![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tracking_protection.png)
 
-_Расширенная защита конфиденциальности_ защищает вас, удаляя файлы cookie, UTM-метки, онлайн-счётчики и системы аналитики. Она не позволяет сайтам собирать ваш IP-адрес, параметры устройства и браузера, поисковые запросы и личную информацию. [Узнайте больше о настройках Защиты от трекинга](/general/stealth-mode)
+_Tracking protection_ (formerly Stealth Mode) safeguards your privacy by deleting cookies, UTM tags, online counters, and analytics systems. Она не позволяет сайтам собирать ваш IP-адрес, параметры устройства и браузера, поисковые запросы и личную информацию. [Узнайте больше о настройках Защиты от трекинга](/general/stealth-mode)

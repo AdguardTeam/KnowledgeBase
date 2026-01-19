@@ -55,6 +55,24 @@ Android용 AdGuard에만 사전 설치된 스크립트입니다. Google 검색 �
 
 소스 코드는 [Github](https://github.com/Rob--W/dont-track-me-google)에서 확인할 수 있습니다. 이 사용자 스크립트는 [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google)에서 다운로드하여 모든 AdGuard CoreLibs 기반 앱에 설치할 수 있습니다.
 
+#### SponsorBlock
+
+SponsorBlock skips sponsored segments in YouTube videos. It saves time by jumping straight to the main content and removes interruptions from ads and self-promotions.
+
+:::info
+
+This userscript runs exclusively on our desktop applications, AdGuard for Windows and AdGuard for Mac.
+
+:::
+
+To try it out:
+
+1. Go to [https://mchangrh.github.io/sb.js/](https://mchangrh.github.io/sb.js/).
+2. Click **Generate link**.
+3. Copy the link that appears.
+4. Open AdGuard and go to **Extensions → Add extension → Import from file or URL**.
+5. Paste the copied link and confirm.
+
 #### tinyShield
 
 한국어 웹사이트 및 일부 해외 웹사이트 방문자를 위한 유저스크립트입니다. tinyShield 사용자 스크립트는 Ad-Shield 광고와 안티블록을 차단합니다. 이 유저스크립트는 AdGuard CoreLibs 기반 앱, Violentmonkey, Tampermonkey, [quoid/userscripts](https://github.com/quoid/userscripts)에 설치할 수 있습니다. tinyShield에 대한 자세한 내용과 설치 방법은 [GitHub](https://github.com/FilteringDev/tinyShield)에서 확인할 수 있습니다.

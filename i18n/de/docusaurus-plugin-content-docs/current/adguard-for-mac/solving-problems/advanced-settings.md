@@ -171,6 +171,10 @@ Sperrt macOS Privat-Relay Domains, wenn der Benutzer eine Firewall aktiviert hat
 
 Das Aktivieren dieser Einstellung ist in folgendem Szenario nützlich: Wenn macOS Privat-Relay aktiv ist, kann die Filterung nicht richtig funktionieren und muss deaktiviert werden. In macOS-Versionen bis 14 konnte AdGuard automatisch Privat-Relay deaktivieren, wenn der Schutz aktiviert war. Ab macOS 15 ist dies jedoch nicht mehr möglich, wenn eine Firewall aktiv ist. Wenn Sie diese Einstellung aktivieren, können Sie Privat-Relay auch bei aktivierter Firewall deaktivieren und so die vorherige Einschränkung aufheben.
 
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Secures DNS proxy connections with a hybrid post-quantum key exchange, combining the classical X25519 algorithm with the ML-KEM-768 post-quantum KEM. Applies only to DoH, DoT, and DoQ upstreams.
+
 ### Privatsphäre-Einstellungen
 
 #### `stealth.antidpi.http.split.fragment.size`
