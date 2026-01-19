@@ -4117,6 +4117,8 @@ Syntaxi s volitelnou hodnotou `value` v atributech podporuje AdGuard pro Windows
 
 ### Syntaxe
 
+Syntaxe podporovaná AdGuardem pro Windows, AdGuardem pro Mac, AdGuardem pro Android, AdGuardem pro Linux s CoreLibs a rozšířením prohlížeče AdGuard před verzí 5.2:
+
 ```text
      selector = [tagName] [attributes] [pseudoClasses]
    combinator = ">"
@@ -4133,6 +4135,24 @@ pseudoClasses = pseudoClass *pseudoClass
 - **`pseudoName`** — název pseudotřídy.
 - **`pseudoArgs`** — argumenty pseudotřídy typu funkce.
 - **`combinator`** — operátor, který funguje podobně jako podřízený kombinátor [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator): to znamená, že `selector` napravo od `combinator` bude odpovídat pouze prvku, jehož přímý původce odpovídá `selector` vlevo z `combinator`.
+
+Syntaxe podporovaná rozšířením prohlížeče AdGuard verze 5.3 nebo novější:
+
+```text
+         rule = [domains] "$$" selector
+      domains = [domain0, domain1[, ...[, domainN]]]
+```
+
+- **`selektor`** — [CSS selektor](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors) definuje prvek(y), které mají být odstraněny z HTML kódu před načtením stránky.
+- **`domains`** — omezení domény pro dané pravidlo. Stejné zásady jako v [syntaxi pravidel pro skrývání prvků](#cosmetic-elemhide-rules).
+
+:::caution Omezení
+
+Následující omezení platí pro rozšíření prohlížeče AdGuard v5.3 a novější:
+
+- Pseudoprvky (např. `::before`, `::after`) nejsou podporovány, protože nejsou použitelné v kontextu filtrování HTML.
+
+:::
 
 ### Příklady
 
@@ -4197,6 +4217,8 @@ $$script[tag-content="banner"]
 
 Speciální atribut `tag-content` se nesmí objevit v selektoru nalevo od kombinátoru `>`.
 
+Toto omezení se nevztahuje na rozšíření prohlížeče AdGuard v5.3 nebo novější.
+
 :::
 
 #### `wildcard`
@@ -4218,6 +4240,8 @@ Kontroluje, zda prvek code obsahuje dva po sobě jdoucí podřetězce `banner` a
 :::caution Omezení
 
 Speciální atribut `wildcard` se nesmí objevit v selektoru nalevo od kombinátoru `>`.
+
+Toto omezení se nevztahuje na rozšíření prohlížeče AdGuard v5.3 nebo novější.
 
 :::
 
@@ -4247,6 +4271,8 @@ Toto pravidlo odstraní všechny prvky `div`, jejichž kód obsahuje podřetěze
 
 Speciální atribut `max-length` se nesmí objevit v selektoru nalevo od kombinátoru `>`.
 
+Toto omezení se nevztahuje na rozšíření prohlížeče AdGuard v5.3 nebo novější.
+
 :::
 
 #### `min-length`
@@ -4270,6 +4296,8 @@ Toto pravidlo odstraní všechny prvky `div`, jejichž kód obsahuje podřetěze
 :::caution Omezení
 
 Speciální atribut `min-length` se nesmí objevit v selektoru nalevo od kombinátoru `>`.
+
+Toto omezení se nevztahuje na rozšíření prohlížeče AdGuard v5.3 nebo novější.
 
 :::
 
@@ -4297,7 +4325,7 @@ nebo
 
 :::info Kompatibilita
 
-Pseudotřída `:contains()` je podporována aplikacemi AdGuard pro Windows, AdGuard pro Mac, AdGuard pro Android a AdGuard pro Linux s [knihovnou CoreLibs][] v1.13 nebo novější.
+Pseudotřída `:contains()` je podporována AdGuardem pro Windows, AdGuardem pro Mac, AdGuardem pro Android, AdGuardem pro Linux s [CoreLibs][] v1.13 nebo novější a rozšířením AdGuard v5.3 nebo novější.
 
 :::
 
@@ -4306,6 +4334,8 @@ Vyžaduje, aby vnitřní HTML prvku obsahovalo zadaný text nebo odpovídalo zad
 :::caution Omezení
 
 Pseudotřída `:contains()` se nesmí objevit v selektoru nalevo od kombinátoru `>`.
+
+Toto omezení se nevztahuje na rozšíření prohlížeče AdGuard v5.3 nebo novější.
 
 :::
 
@@ -4534,7 +4564,7 @@ V modifikátorech musí být uvozeny hodnoty následujících znaků: `[`, `]`, 
 | [$app](#non-basic-app-modifier)       |              ✅               |                       ❌                       |                        ❌                         |                       ❌                       |             ❌              |               ❌               |                 ❌                 |
 | [$domain](#non-basic-domain-modifier) |              ✅               |                       ✅                       | ✅ [*[1]](#non-basic-domain-modifier-limitations) |                       ✅                       |             ✅              |               ✅               |                 ❌                 |
 | [$path](#non-basic-path-modifier)     |              ✅               |                       ✅                       |                        ❌                         |                       ✅                       |             ✅              |               ✅               |                 ❌                 |
-| [$url](#non-basic-url-modifier)       |              ✅               | ✅ [*[2]](#non-basic-url-modifier-limitations) |  ✅ [*[2]](#non-basic-url-modifier-limitations)   | ✅ [*[2]](#non-basic-url-modifier-limitations) |             ❌              |               ❌               |                 ❌                 |
+| [$url](#non-basic-url-modifier)       |              ✅               | ✅ [*[3]](#non-basic-url-modifier-limitations) |  ✅ [*[3]](#non-basic-url-modifier-limitations)   | ✅ [*[3]](#non-basic-url-modifier-limitations) |             ❌              |               ❌               |                 ❌                 |
 
 :::note
 
@@ -4620,6 +4650,14 @@ Modifikátor `$path` podporuje regulární výrazy [stejným způsobem](#regexp-
 - `[$path]example.com##.textad` skryje `div` se třídou `textad` na hlavní stránce domény `example.com`
 - `[$domain=example.com,path=/page.html]##.textad` skryje `div` se třídou `textad` na `page.html` domény `example.com` a všech subdoménách kromě `another_page.html`
 - `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` skryje `div` se třídou `textad` na `/sub1/page.html` a `/sub2/page.html` jakékoliv domény (vezměte prosím na vědomí, že [ uvozuje speciální znak](#non-basic-rules-modifiers-syntax))
+
+#### omezení modifikátoru `$path` {#non-basic-path-modifier-limitations}
+
+:::caution Omezení
+
+V rozšíření prohlížeče AdGuard, nezákladní `$path` modifikátor je kompatibilní s ostatními nezákladními modifikátory, pouze pokud je umístěn jako poslední, např. `[$domain=/example.(com|org)/,path=/foo]##.ad`. Jinak to možná nebude fungovat dle očekávání.
+
+:::
 
 :::info Kompatibilita
 
@@ -4925,7 +4963,7 @@ Nakonec zde jsou dvě verze základního filtru pro Rozšíření prohlížeče 
 ||example.org^
 ```
 
-#### Nápověda `PLATFORM` a `NOT_PLATFORM`
+#### Nápovědy `PLATFORM` a `NOT_PLATFORM`
 
 Slouží k zadání platforem pro použití pravidel. Seznam existujících platforem a odkazy např. na Základní filtr:
 
