@@ -85,6 +85,17 @@ adguard-cli update -v
 
 - `get`：获取上述选项的当前状态
 
+:::note
+
+The Automatic mode can only be used if the following requirements are met:
+
+- `iptables` is installed and running (either `nft` or `legacy`)
+- `iptables` supports the `nat` table for both IPv4 and IPv6
+- `iptables` supports the `REDIRECT` and `QUEUE` chains for both IPv4 and IPv6
+- The `sudo` package is installed
+
+:::
+
 ## 管理过滤器
 
 使用 `filters` 命令配置 Linux 版 AdGuard。 子命令：
