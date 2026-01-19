@@ -11,7 +11,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 ## Sistem gereksinimleri
 
-**İşletim sistemi sürümü:** macOS 10.15 (64 bit) veya üstü
+**Operating system version:** macOS 12 or later
 
 **RAM:** en az 2 GB
 
@@ -54,6 +54,12 @@ Now, you'll see a quick installation wizard where you'll be offered to configure
 ![Korumayı yapılandır](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation-wizard.jpg)
 
 İşte buradayız, AdGuard Mac'inize kuruldu!
+
+### Installation on older versions of macOS
+
+Users with older versions of macOS (Big Sur 11, Catalina 10.15, or earlier) won’t find a compatible app version on the AdGuard Ad Blocker website — these OS versions are no longer supported in the latest releases.
+
+Ancak, yine de [daha eski, uyumlu bir sürümü indirebilirsiniz](https://agrd.io/adguard_for_mac_v2-17)
 
 ## Uninstall
 

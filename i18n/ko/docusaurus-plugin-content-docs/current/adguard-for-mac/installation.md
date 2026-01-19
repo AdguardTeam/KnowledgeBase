@@ -11,7 +11,7 @@ sidebar_position: 2
 
 ## 시스템 요구 사항
 
-**운영 체제 버전**: macOS 10.15 (64 비트) 이상
+**Operating system version:** macOS 12 or later
 
 **RAM**: 2 GB 이상
 
@@ -54,6 +54,12 @@ AdGuard가 처음 시작되면 운영 체제에서 이 프로그램이 인터넷
 ![보호 설정](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation-wizard.jpg)
 
 맥북에 AdGuard가 설치되었습니다!
+
+### Installation on older versions of macOS
+
+Users with older versions of macOS (Big Sur 11, Catalina 10.15, or earlier) won’t find a compatible app version on the AdGuard Ad Blocker website — these OS versions are no longer supported in the latest releases.
+
+However, you still can [download an older, compatible version](https://agrd.io/adguard_for_mac_v2-17)
 
 ## 제거 방법
 

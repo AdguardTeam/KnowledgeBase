@@ -11,7 +11,7 @@ sidebar_position: 2
 
 ## 系统要求
 
-**操作系统版本**： macOS 10.15（64 位）或更高版本
+**Operating system version:** macOS 12 or later
 
 **RAM**： 至少 2 GB
 
@@ -54,6 +54,12 @@ AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序�
 ![配置保护](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation-wizard.jpg)
 
 完成啦！AdGuard 已成功安装到您的 Mac！
+
+### Installation on older versions of macOS
+
+Users with older versions of macOS (Big Sur 11, Catalina 10.15, or earlier) won’t find a compatible app version on the AdGuard Ad Blocker website — these OS versions are no longer supported in the latest releases.
+
+However, you still can [download an older, compatible version](https://agrd.io/adguard_for_mac_v2-17)
 
 ## 卸载
 

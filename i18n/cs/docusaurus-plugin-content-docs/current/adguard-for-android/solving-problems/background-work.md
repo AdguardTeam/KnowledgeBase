@@ -594,30 +594,66 @@ Na zařízeních s uživatelským rozhraním Realme UI 4.0 existují tři klíč
 
 ## Motorola
 
-On Motorola devices, there are four key configurations to ensure that AdGuard works properly in the background.
+Na zařízeních Motorola existují čtyři klíčové konfigurace, které zajistí správnou funkci AdGuardu na pozadí.
 
-1. Allow background usage:
+1. Povolit využití na pozadí:
 
-   - Go to **Settings → Apps** and find **AdGuard**
-   - Open **App battery usage**
-   - Enable **Allow background battery usage**
-   - Tap the option with the toggle
-   - Set battery usage to **Unrestricted**
+   - Ukončete ochranu AdGuardem a zavřete aplikaci AdGuard
+   - Přejděte do **Nastavení → Aplikace → Využití baterie aplikacemi** a vyhledejte AdGuard
+   - Povolte **Povolit použití na pozadí** nebo vyberte **Bez omezení** v závislosti na vaší verzi systému Android
 
-1. Remove background activity restrictions:
+1. Odebrat omezení aktivity na pozadí:
 
-   - Přejděte na **Nastavení**
-   - Scroll down and tap **Apps & notifications**
-   - Find **AdGuard** and open **Advanced → Battery**
-   - Tap **Background restriction** or **Background limits**
-   - If it says **Background activity restricted**, tap it and then tap **Remove**
+   - Přejděte do **Nastavení**
+   - Přejděte dolů a klepněte na **Aplikace a oznámení**
+   - Vyhledejte **AdGuard** a otevřete **Pokročilé → Baterie**
+   - Klepněte na **Omezení na pozadí** nebo **Limity na pozadí**
+   - Pokud se zobrazí **Aktivita na pozadí je omezena**, klepněte na ni a poté klepněte na **Odebrat**
 
-1. Manage background apps:
+1. Spravovat aplikace na pozadí:
 
-   - Go to **Settings**, then type **Managing background apps** in the search bar
-   - Find **AdGuard** and enable the toggle to allow the app to run in the background
+   - Přejděte do **Nastavení → Baterie → Používání aplikací na pozadí**
+   - Povolte možnost **Spravovat aplikace na pozadí**
+   - Ve výsledné nabídce vyberte kartu **Aplikace**
+   - Vyhledejte **AdGuard** v seznamu a klepněte na něj
+   - V dialogovém okně **Optimalizovat využití baterie** vyberte **Vždy povolit.**
 
-1. Disable Adaptive Battery:
+    ![Always allow *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/motorolla-background-app-use.png)
 
-   - Go to **Settings → Battery**
-   - Turn off the **Adaptive Battery** option
+1. Zakázat adaptivní baterii:
+
+   - Přejděte do **Nastavení → Baterie**
+   - Vypněte možnost **Adaptivní baterie**
+
+## ZTE
+
+Zařízení ZTE fungující pod operačním systémem MyOS mají agresivní přístup k procesům na pozadí. Postupujte podle těchto kroků, abyste zabránili automatickému zavření AdGuardu pomocí AI:
+
+- Přejděte do **Nastavení → Baterie → Správa aplikací**
+- Vypněte **Ovládání pomocí AI**
+- Vyberte **Ruční správa**
+- V seznamu vyhledejte **AdGuard** a nastavte **Práce na pozadí** na **Povolit**
+
+## Infinix
+
+Zařízení Infinix používají přísná pravidla pro úsporu baterie, která mohou přerušit práci AdGuardu na pozadí. Postupujte podle těchto kroků, abyste zabránili automatickému ukončování AdGuardu systémem a zajistili stabilní ochranu:
+
+1. Deaktivujte ochranu a zavřete aplikaci AdGuard.
+
+1. Přejděte do nastavení systému → *Správa aplikací* → *Seznam aplikací* → *AdGuard* → *Baterie* a povolte *Povolit používání na pozadí*. Poté přejděte do nastavení *Povolit používání na pozadí* a přepněte režim na *Bez omezení*.
+
+    ![Allow background usage *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_allow.png)
+
+1. Otevřete nastavení systému → *Správa aplikací* → *Správa automatického spuštění* a povolte *AdGuard*.
+
+    ![Auto-start management *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_app_launch.png)
+
+1. Přejděte do nastavení systému → *Baterie a spořič energie* → *Úspora energie* a vypněte *Spořič baterie*.
+
+1. Na kartě *Baterie a spořič energie* vyhledejte *AdGuard* a vyberte *Bez omezení*.
+
+    ![Power saving management for apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_power_saving.png)
+
+1. Přejděte na *Správu aplikací* → *Speciální přístup k aplikacím* → *Optimalizace baterie*. V horní části obrazovky vyberte z rozbalovací nabídky *Všechny aplikace*, klepněte na *AdGuard*a nastavte na *Bez optimalizace*.
+
+    ![Battery optimisation *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_not_optimized.png)

@@ -138,11 +138,11 @@ Bootstrap DNS для зашифрованных upstream DNS-серверов, �
 
 **О протоколе HTTP/3**: это последняя версия протокола HTTP, основанная на QUIC.
 
-**Limitations**:
+**Ограничения**:
 
-- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
-- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
-- Safari supports HTTP/3 filtering without additional configuration.
+- Браузеры на базе Chrome не принимают пользовательские сертификаты, поэтому HTTP/3-фильтрация в них не поддерживается.
+- Браузеры на базе Firefox ведут себя аналогично по умолчанию, но вы можете установить параметр `network.http.http3.disable_when_third_party_roots_found` в `about:config` в значение `false`, чтобы разрешить пользовательские сертификаты для HTTP/3.
+- Safari поддерживает HTTP/3-фильтрацию без дополнительной настройки.
 
 ### Исходящий прокси
 

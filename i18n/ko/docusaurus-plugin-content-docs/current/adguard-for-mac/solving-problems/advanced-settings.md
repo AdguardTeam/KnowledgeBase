@@ -171,6 +171,10 @@ DNS-over-HTTPS 업스트림에 HTTP/3을 활성화하여 연결을 가속화합�
 
 이 옵션을 활성화하는 것이 유용한 이유는 macOS 비공개 릴레이가 활성화되어 있으면 필터링이 제대로 작동하지 않으므로 비활성화해야 하기 때문입니다. macOS 14 이하 버전에서는 보호 기능이 활성화된 경우 AdGuard가 자동으로 비공개 릴레이를 비활성화할 수 있었습니다. 그러나 macOS 15부터는 방화벽이 활성화된 경우, 더 이상 이 기능을 사용할 수 없습니다. 이 설정을 켜면 방화벽이 활성화되어 있어도 비공개 릴레이를 비활성화할 수 있어 이전의 제한을 극복할 수 있습니다.
 
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Secures DNS proxy connections with a hybrid post-quantum key exchange, combining the classical X25519 algorithm with the ML-KEM-768 post-quantum KEM. Applies only to DoH, DoT, and DoQ upstreams.
+
 ### 스텔스 모드 설정
 
 #### `stealth.antidpi.http.split.fragment.size`

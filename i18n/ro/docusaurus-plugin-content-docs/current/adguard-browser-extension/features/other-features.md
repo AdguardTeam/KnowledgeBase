@@ -25,13 +25,21 @@ Puteți salva configurația setărilor făcând clic pe butonul _Exportați set�
 
 Secțiunea _Setări suplimentare_ conține o serie de diferite setări care sunt legate de procesul de blocare a reclamelor și de utilizare a aplicației.
 
-![Setări suplimentare \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
+![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
 
-Pe această filă, puteți activa filtrele optimizate, permiteți notificările despre actualizările extensiei, deschideți _Jurnalul de filtrare_ sau ștergeți statisticile reclamelor și urmăritorilor blocați.
+From this tab, you can invert the allowlist and add the AdGuard item to the browser’s context menu. You can also enable the display of the number of blocked ads on the AdGuard icon and notifications about extension updates. Additionally, this section lets you enable notifications about the AdGuard app, open the _Filtering log_, clear the statistics of blocked ads and trackers, or reset the settings.
 
 Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. Această opțiune este dezactivată în mod implicit, deoarece nu colectăm date ale utilizatorilor fără consimțământul acestora. Acum, dacă o activați, toate datele vor fi strict anonime.
 
-## Despre {#about}
+You can also choose to help us improve the extension by sending us anonymized usage data. This includes the names of the screens you interact with, the names of the buttons you click, and session identifiers. These insights help us understand where users run into friction, refine the experience, and make the extension faster and easier to use. The _Send anonymized usage data_ option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
+
+:::note
+
+The _Send anonymized usage data_ option can also be enabled on the post-installation page in Chromium-based browsers.
+
+:::
+
+## About {#about}
 
 In the _About_ section, you can find info about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
 
