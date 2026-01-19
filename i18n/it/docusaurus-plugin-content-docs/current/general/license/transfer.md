@@ -9,22 +9,29 @@ La chiave di licenza è attivabile su un [numero limitato di dispositivi](../wha
 
 ### Come scollegare un dispositivo
 
-- Fai clic su *Reimpostare licenza* o *Esci* in un'app AdGuard
+#### Metodo 1
 
-- Rimuovi il dispositivo dal tuo account AdGuard:
-    1. Fai clic sul *Blocco AdGuard* nel tuo [account AdGuard](https://adguardaccount.com/).
+Nel dispositivo che vuoi scollegare, apri l'app AdGuard e clicca *Reimposta licenza* o *Disconnetti*.
 
-        ![Scheda dell'account di Blocco annunci *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
+#### Metodo 2
 
-    1. Fai clic sul dispositivo che desideri scollegare.
+In alternativa, puoi rimuovere il dispositivo nel tuo profilo AdGuard:
 
-        ![Seleziona il dispositivo *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+1. Accedi al tuo [profilo AdGuard](https://adguardaccount.com/).
 
-    1. Fai clic su *Rimuovi*.
+1. Apri la scheda *AdGuard Ad Blocker*.
 
-        ![Clicca su Rimuovi *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+    ![Scheda dell'account di Blocco annunci *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 
-Dopo che hai scollegato il numero di dispositivi necessari, puoi accedere al tuo account AdGuard sui nuovi dispositivi. La licenza si collegherà ai dispositivi.
+1. Fai clic sul dispositivo che desideri scollegare.
+
+    ![Seleziona il dispositivo *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+
+1. Fai clic su *Rimuovi*.
+
+    ![Clicca su Rimuovi *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+
+Dopo che hai slegato il numero di dispositivi necessari, potrai accedere da nuovi dispositivi. La licenza diventerà legata a loro.
 
 ## Come trasferire la licenza su un altro account AdGuard{#transferaccount}
 

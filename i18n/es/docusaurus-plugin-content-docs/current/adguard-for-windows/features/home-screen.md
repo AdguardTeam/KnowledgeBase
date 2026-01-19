@@ -11,6 +11,6 @@ Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multi
 
 AdGuard para Windows es una herramienta fácil de usar que bloquea molestos banners, ventanas emergentes, anuncios de vídeo y rastreadores. Pero eso no es todo: te ayuda a ahorrar tráfico, cargar páginas web más rápido y proteger tu ordenador de sitios web indeseables y potencialmente maliciosos. AdGuard también te protege de los sitios web de phishing y mantiene a tus hijos alejados de contenidos inapropiados.
 
-![Pantalla principal \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/home-screen.png)
+![Main screen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/main_screen_en.png)
 
 Una vez que inicies AdGuard para Windows, verás la pantalla principal de la aplicación. Su detalle más llamativo es el botón _activar/desactivar protección_. Además, en esta pantalla puedes monitorear anuncios bloqueados, rastreadores y estadísticas de amenazas, conocer la versión actual de la aplicación o actualizarla. Además, hay cuatro pestañas en la esquina superior derecha: _Configuración_, _Soporte_, _Licencia_ y _Acerca de_. Merece la pena hablar de cada uno de ellos por separado.

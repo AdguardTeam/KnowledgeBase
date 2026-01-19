@@ -21,19 +21,19 @@ La vecchia estensione beta verrà rinominata [**AdGuard Ad Blocker MV2**](https:
 
 - **Registro di filtraggio**
 
-    ! [Registro di filtraggio \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+  ! [Registro di filtraggio \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-    A causa delle restrizioni DNR, non possiamo mostrare esattamente quale regola ha funzionato, ma forniremo una "regola presunta che è stata attivata" in base al nostro motore. Per informazioni più precise, dovrai installare tu stesso la versione "scompattata" dell'estensione nel tuo browser. Troverai istruzioni dettagliate su come farlo in un [articolo separato](/adguard-browser-extension/solving-problems/debug-rules/).
+  A causa delle restrizioni DNR, non possiamo mostrare esattamente quale regola ha funzionato, ma forniremo una "regola presunta che è stata attivata" in base al nostro motore. Per informazioni più precise, dovrai installare tu stesso la versione "scompattata" dell'estensione nel tuo browser. Troverai istruzioni dettagliate su come farlo in un [articolo separato](/adguard-browser-extension/solving-problems/debug-rules/).
 
 - _Protezione dal tracciamento_ (precedentemente nota come _Modalità invisibile_)
 
-    ![Protezione dal tracciamento \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+  ![Protezione dal tracciamento \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
 
-    Non sono presenti sezioni _Cookie_, così come _Autodistruzione dei cookie proprietari_ e _Autodistruzione dei cookie di terze parti_, poiché non possiamo impostare il TTL dei cookie utilizzando regole dichiarative.
+  Non sono presenti sezioni _Cookie_, così come _Autodistruzione dei cookie proprietari_ e _Autodistruzione dei cookie di terze parti_, poiché non possiamo impostare il TTL dei cookie utilizzando regole dichiarative.
 
 - La _protezione da phishing e malware_ non è più disponibile nelle impostazioni generali. Per proteggerti da siti web dannosi e truffe, attiva i filtri _Sicurezza_ appropriati nella scheda _Filtri_.
 
-    ![Sicurezza \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![Sicurezza \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## Limitazioni
 
@@ -55,7 +55,7 @@ Il numero massimo di filtri abilitati contemporaneamente è **50**.
 
 **Regole dinamiche:** è imposto un limite massimo di **5.000** regole, che include un massimo di 1.000 regole regex.
 
-Se questo limite viene superato, verranno applicate solo **5.000 regole convertite** nel seguente ordine: prima la Lista consentita, poi le Regole utente, i Filtri personalizzati e infine — il Filtro Quick Fixes delle correzioni rapide.
+If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules and finally Custom filters.
 
 > Le **regole convertite** sono regole che sono state trasformate
 > in \[formato DNR] utilizzando il [convertitore dichiarativo][github-declarative-converter].

@@ -21,19 +21,19 @@ AdGuard MV3 확장 프로그램은 광고와 추적기를 효과적으로 차단
 
 - **필터링 로그**
 
-    ![필터링 로그 \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+  ![필터링 로그 \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
 
-    DNR 제한으로 인해 구체적으로 어떤 규칙이 적용되었는지 표시할 수 없게 되었는데, 대신에 저희의 엔진을 바탕으로 '작동되었을 것으로 추정되는 규칙'을 제공할 예정입니다. 정확한 정보를 얻기 위해서는 '압축 해제된' 형태의 확장 프로그램을 브라우저에 직접 설치해야 합니다. 이 작업을 수행하는 방법에 대한 자세한 설명은 [별도의 문서](/adguard-browser-extension/solving-problems/debug-rules/)에서 확인하실 수 있습니다.
+  DNR 제한으로 인해 구체적으로 어떤 규칙이 적용되었는지 표시할 수 없게 되었는데, 대신에 저희의 엔진을 바탕으로 '작동되었을 것으로 추정되는 규칙'을 제공할 예정입니다. 정확한 정보를 얻기 위해서는 '압축 해제된' 형태의 확장 프로그램을 브라우저에 직접 설치해야 합니다. 이 작업을 수행하는 방법에 대한 자세한 설명은 [별도의 문서](/adguard-browser-extension/solving-problems/debug-rules/)에서 확인하실 수 있습니다.
 
 - **추적 보호** (이전 명칭으로는 **스텔스 모드**)
 
-    ![추적 보호 \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+  ![추적 보호 \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
 
-    선언적 규칙을 사용하여 쿠키의 TTL을 설정할 수 없게 되었기 때문에, **쿠키**를 비롯한 **퍼스트 파티 쿠키 자동 파괴**, **서드파티 쿠키 자동 파괴** 섹션이 사라졌습니다.
+  선언적 규칙을 사용하여 쿠키의 TTL을 설정할 수 없게 되었기 때문에, **쿠키**를 비롯한 **퍼스트 파티 쿠키 자동 파괴**, **서드파티 쿠키 자동 파괴** 섹션이 사라졌습니다.
 
 - 일반 설정에서 **피싱, 멀웨어 보호**를 더 이상 사용할 수 없습니다. 악성 웹사이트와 사기로부터 보호받기 위해서는 **필터** 탭에서 적절한 **보안** 필터를 활성화하세요.
 
-    ![보안 \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![보안 \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
 
 ## 제한
 
@@ -55,7 +55,7 @@ AdGuard MV3 확장 프로그램은 광고와 추적기를 효과적으로 차단
 
 **동적 규칙:** 최대 1,000개의 정규식 규칙을 포함한 **5,000** 규칙의 엄격한 한도가 적용됩니다.
 
-If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules, Custom filters, and finally — Quick Fixes filter.
+If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules and finally Custom filters.
 
 > **변환된 규칙**은 [선언적 변환기][github-declarative-converter]를 이용해 \[DNR 형식]으로 변환된 규칙입니다.
 > 변환 과정에서 일부 규칙들은 다른 규칙의 (`$badfilter`)를 덮어쓸 수도 있고, (`$removeparam`)와 결합될 수도 있는데, 그 결과 순서가 약간 다른 규칙 목록이 생성됩니다.

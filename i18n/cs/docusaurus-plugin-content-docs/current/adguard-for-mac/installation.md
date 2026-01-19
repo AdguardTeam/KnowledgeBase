@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 ## Požadavky na systém
 
-**Verze operačního systému:** macOS 10.15 (64 bitů) nebo vyšší
+**Verze operačního systému:** macOS 12 nebo novější
 
 **RAM:** alespoň 2 GB
 
@@ -54,6 +54,12 @@ Nyní se zobrazí rychlý průvodce instalací, kde vám bude nabídnuta konfigu
 ![Configure protection](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation-wizard.jpg)
 
 A je to tady, AdGuard je na vašem Macu nainstalován!
+
+### Instalace ve starších verzích macOS
+
+Uživatelé se staršími verzemi macOS (Big Sur 11, Catalina 10.15 nebo starší) nenajdou kompatibilní verzi aplikace na webových stránkách Blokátoru reklam AdGuard — tyto verze operačního systému již nejsou v nejnovějších verzích podporovány.
+
+Stále si však můžete [stáhnout starší kompatibilní verzi](https://agrd.io/adguard_for_mac_v2-17)
 
 ## Odinstalace
 

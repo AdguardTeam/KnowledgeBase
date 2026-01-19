@@ -3,6 +3,16 @@ title: Zásady AdGuard filtrů
 sidebar_position: 6
 ---
 
+::::::note Odmítnutí odpovědnosti
+
+Před povolením filtrů si pečlivě přečtěte tyto zásady filtrování.
+
+Používání blokátoru reklam AdGuard, AdGuard DNS a jejich filtrů může ovlivnit fungování webových stránek a služeb třetích stran. Jste odpovědní za prostudování a dodržování zásad a podmínek všech webových stránek nebo služeb, které používáte.
+
+Před povolením filtrů poskytovaných třetími stranami souhlasíte s tím, že si přečtete jejich příslušné podmínky a učiníte informované rozhodnutí o jejich používání. AdGuard nenese odpovědnost za to, jak fungují filtry třetích stran ani za obsah jejich podmínek, a jejich přítomnost v produktech AdGuard neznamená doporučení k jejich používání.
+
+:::
+
 V AdGuardu se při vytváření filtrů dlouhodobě řídíme určitými zásadami, které jsou spolu s popisem filtrů uvedeny níže jako součást našich zásad filtrování.
 
 ## Společná kritéria
@@ -41,14 +51,12 @@ Mezi AdGuard filtry blokující reklamy patří:
 - Základní filtr AdGuardu
 - Filtr mobilních reklam AdGuard
 - Regionální filtry rozdělené podle jazyků — čínština, holandština, francouzština, němčina, japonština, ruština, španělština/portugalština, turečtina a ukrajinština
-- Filtr rychlých oprav AdGuard
 
 ### Účel těchto filtrů
 
 - **Základní filtr** je určen k blokování reklam na anglicky psaných webových stránkách a na těch, pro které neexistuje samostatný filtr. Obsahuje také obecná pravidla filtrování, která platí pro všechny weby bez ohledu na jazyk
 - **Filtr mobilních reklam** blokuje reklamy na mobilních verzích webových stránek a v mobilních aplikacích. Neexistuje žádná segmentace na základě jazyka
 - **Regionální filtry** se řídí stejnými zásadami jako **Základní filtr**, ale jsou omezeny na webové stránky v konkrétních jazycích
-- **Filtr rychlých oprav** slouží k rychlému řešení kritických problémů s filtrováním obsahu na oblíbených webech bez aktualizace rozšíření MV3.
 
 Cílem filtrů pro blokování reklam je blokovat všechny typy reklam na webových stránkách, v aplikacích a v některých zařízeních, která mohou načítat reklamy z internetu:
 

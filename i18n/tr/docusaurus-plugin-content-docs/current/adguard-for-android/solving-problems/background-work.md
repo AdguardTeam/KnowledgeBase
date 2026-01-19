@@ -173,81 +173,87 @@ AdGuard'ın Xiaomi cihazları için arka plan çalışmasını ayarlamak için P
 
 ## Samsung
 
-Birçok Samsung cihazında, 3 gün boyunca kullanılmayan herhangi bir uygulama arka plandan başlatılamayacaktır. Bunu önlemek için mümkün olan her yerde **Uyarlanabilir pil** ve **Uygulamaları uyku moduna al** seçeneklerini kapatmalısınız. Bir uygulama veya işletim sistemi güncellemesinden sonra bu ayarların sıklıkla varsayılan değerlerine döndüğünü ve tekrar kapatılması gerekeceğini unutmayın.
+On many Samsung devices, apps that have been unused for three days will not be able to start from the background. To prevent this, you should turn off the **Adaptive Battery** and **Put apps to sleep** options wherever possible. Note that after an app or OS update, these settings often revert to their default values and must be turned off again.
 
 ### Android 11+
 
-Android 11'de Samsung, pil optimizasyonlarından hariç tutmadığınız sürece uygulamaların (AdGuard dahil) arka planda çalışmasını varsayılan olarak engeller. AdGuard'ın arka planda kapatılmayacağından emin olmak için:
+On Android 11, Samsung prevents apps (including AdGuard) from working in the background by default, unless you exclude them from battery optimizations. To ensure that AdGuard will not be terminated in the background:
 
-1. AdGuard'ı Sonda kilitleyin
+1. Lock AdGuard in **Recent apps**: open **Recent apps**, find AdGuard, and long-press the AdGuard app icon.
 
-    - **Son uygulamalar** öğesini açın.
-    - AdGuard'ı bulun.
-    - AdGuard uygulamasının simgesine uzun basın.
+1. To keep AdGuard working properly:
 
-1. AdGuard'ın düzgün çalışmasını sağlamak için:
-
-    **Ayarlar** → **Uygulamalar** → **AdGuard** → **Pil** → **Pil kullanımını optimize et** öğesine gidin
+    Go to **Settings** → **Apps** → **AdGuard** → **Battery** → **Optimize battery usage**
 
     ![Samsung](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsung-a11-optimize.png)
 
-    Açılır menüde **Tümü** öğesini seçin. Ardından, listede AdGuard'ı bulun ve durumunu **Optimize etme** olarak ayarlayın (bazı modellerde, kapatmanız gereken bir düğme olabilir).
+    In the drop-down menu, select **All**. Then find AdGuard on the list and set the state for it to **Don’t optimize** (on some models, there may be a switch that you need to toggle off).
 
     ![Samsung](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsung-a11-optimize-2.png)
 
-    Bazı cihazlarda, ilgili ayar farklı şekilde adlandırılmış ve başka yerlerde konumlandırılmıştır. Olası yollar arasında şunlar yer alır:
+    On some devices, the relevant setting may be named differently and be located in other places. Among the possible paths is **Settings** → **Apps** → (⁝) menu → **Special access** → **Optimize battery usage**. Listede AdGuard'ı bulun ve işaretini kaldırın.
 
-    **Ayarlar** → **Uygulamalar** → (⁝) menüsü → **Özel Erişim** → **Pil kullanımını optimize et** → Listede AdGuard'ı bulun ve işaretini kaldırın
+1. Otomatik optimizasyonu devre dışı bırakın:
 
-1. Otomatik optimizasyonu devre dışı bırakın. Bunu yapmak için:
+    Open **Battery** → (⁝) menu → **Automation** and toggle off all the settings there.
 
-    **Pil** → (⁝) menüsünü açın → **Otomasyon** öğesini seçin → Oradaki tüm ayarları kapatın
+    Again, the exact path may differ. For example, on some devices you should go to phone **Settings** → **Device care** → (⁝) menu → **Advanced** and isable **Auto optimization** and **Optimize settings**.
 
-    Yine, tam yol farklı olabilir, örneğin bazı cihazlarda şuraya gitmelisiniz:
+1. If your phone has this option, disable **Adaptive battery**:
 
-    Telefon **Ayarlar** → **Cihaz bakımı** → (⁝) 3 noktalı menüye dokunun → **Gelişmiş** → **Otomatik optimizasyon** ve **Ayarları optimize et** öğelerini devre dışı bırak
+    Open phone **Settings** → **Battery** → **More battery settings** and toggle off **Adaptive battery**
 
-1. Telefonunuzda varsa, Uyarlanabilir pili devre dışı bırakın:
+1. Disable **Sleeping apps** (the exact name of this setting and the path to it may vary depending on the device):
 
-    Telefon **Ayarlar** öğesini açın → **Pil** → **Daha fazla pil ayarları** → **Uyarlanabilir pil** öğesini kapatın
+    Open phone **Settings** → **Battery** → **Background usage limits** and disable **Put unused apps to sleep**
 
-1. Uykudaki uygulamaları devre dışı bırakın (bu ayarın tam adı ve yolu cihaza göre değişebilir):
+If you’re still experiencing issues, try these additional battery optimization adjustments:
 
-    Telefon **Ayarlar** öğesini açın → **Pil** → **Arka plan kullanım sınırları** → **Kullanılmayan uygulamaları uyku moduna al** öğesini devre dışı bırakın
+ 1. Navigate to **Settings** → **Apps** → **AdGuard** → **Battery** and turn on the **Optimised** option:
+
+    ![Optimised settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/app__battery_optimised_mode.png)
+
+ 1. Go to **Settings** → **Battery** → **Background usage limits** → **Never auto sleeping apps**:
+
+    ![Never auto sleeping apps settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/background_usage_limits.png)
+
+ 1. Choose AdGuard from the list of apps. If you don’t see it, return to step 1 and make sure that the *Optimized* battery mode is active:
+
+    ![Choose the app *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/never_auto_sleeping_apps.png)
 
 ### Android 9 & 10
 
-- Go to **Phone settings** → **Device care** → Tap on the **Battery** item → (⁝) **3-dot menu** → **Settings** and uncheck **Put unused apps to sleep** and **Auto-disable unused apps**.
+- Go to **Phone settings** → **Device care**, tap the **Battery** item, go to (⁝) **3-dot menu** → **Settings**, and uncheck **Put unused apps to sleep** and **Auto-disable unused apps**.
 
-- Check that **Phone settings** → **Apps** → **Sleep as Android** → **Battery** → **Background restriction** is set to **App can use battery in background** for AdGuard.
+- In **Phone settings** → **Apps** → **Sleep as Android** → **Battery**, check that **Background restriction** is set to **App can use battery in background** for AdGuard.
 
-- AdGuard'ı Uykudaki uygulamalarından kaldırın. Bunu yapmak için:
+- Remove AdGuard from **Sleeping apps**:
 
-    1. **Telefon ayarları** → **Cihaz bakımı** öğesine gidin
+    1. Go to **Phone settings** → **Device care**:
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung1en.png)
 
-    1. **Pil** öğesine dokunun
+    1. **Pil** öğesine dokunun:
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung2en.png)
 
-    1. **3 noktalı menü** → **Ayarlar** öğesine dokunun
+    1. Tap the **3-dot menu** → **Settings**:
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung3en.png)
 
-    1. **Uykudaki uygulamalar** öğesine dokunun
+    1. **Uykudaki uygulamalar** öğesine dokunun:
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung45en.png)
 
-    1. Çöp kutusu simgesini kullanarak AdGuard'ı **uykudan uyandırın**
+    1. Çöp kutusu simgesini kullanarak AdGuard'ı uykudan uyandırın:
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung6en.png)
 
 ### Eski Samsung cihazları
 
-Eski Samsung cihazlarında, arka plan işlemini ayarlamaya çok gerek yoktur, ancak sizin durumunuzda AdGuard uygulaması kapanıyorsa veya bir süre sonra son görevlerden kayboluyorsa, aşağıdakileri yapın:
+For early Samsung devices, there is no huge need for setting up the background operation, but if in your case the AdGuard app is getting closed or disappears from the recent tasks after a while, do the following:
 
-- **Son görevler** düğmesine dokunun, **Ek ayarlar** simgesine dokunun. Bu şöyle görünmelidir:
+- Tap the **Recent tasks** button, tap the **Additional settings** icon. Bu şöyle görünmelidir:
 
  ![Samsung ayarları *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_1.png)
 
@@ -255,31 +261,31 @@ Eski Samsung cihazlarında, arka plan işlemini ayarlamaya çok gerek yoktur, an
 
  ![Samsung ayarları *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_2.png)
 
-- Kilit simgesine dokunun
+- Kilit simgesine dokunun:
 
  ![Samsung ayarları *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_3.png)
 
 ## Huawei
 
-Huawei ve Android özelleştirmesi **EMUI**, standart dışı arka plan işlem sınırlamaları açısından piyasadaki en sıkıntılı ürünlerden biridir. On default settings, virtually all apps that work in background will face problems and ultimately break.
+Huawei and their Android customization **EMUI** belongs to the most troublesome on the market with respect to non-standard background process limitations. On default settings, virtually all apps that work in background will face problems and ultimately break.
 
 ### App Launch on some EMUI 8, 9 and 10 devices (Huawei P20, Huawei P20 Lite, Huawei Mate 10…)
 
 This feature may or may not be available for all devices or may be labeled differently.
 
-1. Go to phone **Settings** → **Battery** → **App launch**
+1. Go to phone **Settings** → **Battery** → **App launch**:
 
     ![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei1en.png)
 
-1. Turn off **Manage all automatically**
+1. Turn off **Manage all automatically**:
 
     ![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei2en.png)
 
-1. Set AdGuard to **Manage manually** and enable all toggles.
+1. Set AdGuard to **Manage manually** and enable all toggles:
 
     ![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei3en.png)
 
-1. Disable **Startup manager** that prevents apps from running automatically after the phone starts up.
+1. Disable **Startup manager** that prevents apps from running automatically after the phone starts up:
 
     Go to **Settings** → **All** → **Startup manager** → Toggle AdGuard off
 
@@ -289,7 +295,7 @@ This feature may or may not be available for all devices or may be labeled diffe
 
 :::note
 
-On phones with EMUI 9+ (Android P+) there is a task killer app called PowerGenie which forces to quit all apps not whitelisted by Huawei and does not give users any configuration options. Nasıl kaldırılacağını aşağıda görebilirsiniz.
+On phones with EMUI 9+ (Android P+) there is a task killer app called PowerGenie which forces to quit all apps not whitelisted by Huawei and does not give users any configuration options. See below how to uninstall it.
 
 :::
 
@@ -299,7 +305,7 @@ It is called **PowerGenie** and it kills all apps that are not on its whitelist.
 
 Unfortunately, this is a system app that can only be fully uninstalled using ADB (Android Debug Bridge).
 
-:::note Kaynak
+:::note Source
 
 [XDA forum](https://forum.xda-developers.com/mate-20-pro/themes/remove-powergenie-to-allow-background-t3890409).
 
@@ -307,23 +313,23 @@ Unfortunately, this is a system app that can only be fully uninstalled using ADB
 
 **You need to**:
 
-It is not confirmed, but it might be possible to just disable PowerGenie in **Phone settings** → **Apps**. Bu ayar cihazınızın ayarlarında mevcutsa, aşağıdaki adımları atlayabilirsiniz. However, it would need to be re-applied every time you reboot your device. If there is no such setting, follow this instruction:
+It is not confirmed, but it might be possible to just disable PowerGenie in **Phone settings** → **Apps**. If this setting is present in your device's settings, you may skip the following steps. However, it would need to be re-applied every time you reboot your device. If there is no such setting, follow this instruction:
 
-1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer.
 
-1. Telefonunuzu bir veri kablosuyla bağlayın;
+1. Telefonunuzu bir veri kablosuyla bağlayın.
 
 1. [Geliştirici seçeneklerini](https://developer.android.com/studio/debug/dev-options.html) etkinleştirin;
 
-1. Enable **USB debugging** within Developer options on your phone;
+1. Enable **USB debugging** within Developer options on your phone.
 
 1. Run the following commands on your computer:
 
 `adb shell pm uninstall --user 0 com.huawei.powergenie`
 
-`adb shell pm uninstall -k --user 0 com.huawei.android.hwapsvv`
+`adb shell pm uninstall -k --user 0 com.huawei.android.hwaps`
 
-AdGuard sürekli kapatılıyorsa, şunu çalıştırmayı da deneyin
+AdGuard sürekli kapatılıyorsa, şunu çalıştırmayı da deneyin:
 
 `adb shell pm stopservice hwPfwService`
 
@@ -340,25 +346,25 @@ Open device settings → **Apps** → **Settings** → **Special access** → ch
 
 ### Huawei P20, Huawei Honor 9 Lite ve Huawei Mate 9 Pro
 
-Cihaz ayarlarını açın → **Pil** → **Uygulamayı başlatma** → AdGuard'ı **Manuel olarak yönet** olarak ayarlayın ve her şeyin açık olduğundan emin olun.
+Open device settings → **Battery** → **App launch** → set AdGuard to **Manage manually** and make sure everything is turned on.
 
 ### Huawei P20, Huawei P20 Lite, Huawei Mate 10
 
-**Telefon ayarları** → **Pil** → **Uygulama başlatma** → AdGuard'ı **Manuel olarak yönet** olarak ayarlayın ve her şeyin açık olduğundan emin olun. Ayrıca güvenilir arka plan işlemleri için PowerGenie'yi yukarıda açıklandığı gibi kaldırmanız gerekebilir.
+**Phone settings** → **Battery** → **App launch** → set AdGuard to **Manage manually** and make sure everything is turned on. Also for reliable background processes you may need to uninstall PowerGenie as described above.
 
 ### Early Huawei
 
 Old Huawei devices are the easiest to set up, it is enough to perform two simple steps to lock AdGuard in the background so it won't be terminated by battery saving or background killer process.
 
-- **Son görevler** düğmesine dokunun:
+- Tap the **Recent tasks** button:
 
-    ![Huawei son uygulamalar *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
+    ![Huawei recent apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
 
 - Kilit simgesine dokunun:
 
-    ![Huawei kilidi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
+    ![Huawei lock *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
 
-Ayrıca, AdGuard'ın arka plan çalışmasını daha etkili bir şekilde ayarlamak için cihaz ayarlarını açmalı ve aşağıdakileri yapmalısınız:
+Besides, to set up the background work of AdGuard more effectively, you should open device settings and do the following:
 
 - Go to **Settings** → open **Battery Manager** → set **Power plan** to **Performance**;
 - Then choose **Protected apps** in the **Battery Manager** and check if AdGuard is Protected;
@@ -367,7 +373,7 @@ Ayrıca, AdGuard'ın arka plan çalışmasını daha etkili bir şekilde ayarlam
 
 ## Meizu
 
-Meizu, arka plan işlem sınırlamaları konusunda Huawei ve Xiaomi ile neredeyse aynı yaklaşıma sahiptir. Böylece, aşağıdaki ayarları yaparak AdGuard'ın ve diğer uygulamaların arka planda çalışmasını devre dışı bırakmaktan kaçınabilirsiniz:
+Meizu has almost the same approach to the background process limitations as Huawei and Xiaomi. So you can avoid disabling the background work of AdGuard and any other app by adjusting the following settings:
 
 - Go to **Advanced Settings** → open **Battery Manager** → set **Power plan** to **Performance**;
 - Then choose **Protected apps** in the **Battery Manager** and check if AdGuard is Protected;
@@ -381,7 +387,7 @@ Nokia devices running Android 9+ have **The Evenwell Power saver** disabled, whi
 
 1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
 
-1. Telefonunuzu bir veri kablosuyla bağlayın;
+1. Connect your phone with a data cable;
 
 1. [Geliştirici seçeneklerini](https://developer.android.com/studio/debug/dev-options.html) etkinleştirin;
 
@@ -397,7 +403,7 @@ On these devices there is a task killer called **DuraSpeed** that terminates all
 
 1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
 
-1. Telefonunuzu bir veri kablosuyla bağlayın;
+1. Connect your phone with a data cable;
 
 1. [Geliştirici seçeneklerini](https://developer.android.com/studio/debug/dev-options.html) etkinleştirin;
 
@@ -431,13 +437,13 @@ On these devices there is a task killer called **DuraSpeed** that terminates all
 
 Find **Power saver app** on the list, select it and tap **Force close**. It will remain stopped for a while but will restart at some point.
 
-Şu andan itibaren, AdGuard normal şekilde çalışmalı ve Güç Tasarrufu yeniden başlatılana kadar standart Android pil optimizasyonlarını kullanmalıdır.
+From now on, AdGuard should work normally and use the standard Android battery optimizations until Power Saver restarts.
 
-Teknoloji meraklısı kullanıcılar için alternatif, daha kalıcı bir çözüm:
+An alternative, more permanent solution for more tech-savvy users:
 
 1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
 
-1. Telefonunuzu bir veri kablosuyla bağlayın;
+1. Connect your phone with a data cable;
 
 1. [Geliştirici seçeneklerini](https://developer.android.com/studio/debug/dev-options.html) etkinleştirin;
 
@@ -449,43 +455,43 @@ Teknoloji meraklısı kullanıcılar için alternatif, daha kalıcı bir çözü
 
 ## Oppo
 
-Sometimes background services are being killed (including accessibility services, which then need re-enabling) when you turn the screen off. Şimdiye kadar, bunun için bir geçici çözüm:
+Sometimes background services are being killed (including accessibility services, which then need re-enabling) when you turn the screen off. So far, a workaround for this is:
 
 Go to **Security Centre** → tap **Privacy Permissions** → **Startup manager** and allow AdGuard app to run in background.
 
-Diğer çözümler:
+Other solutions:
 
-- AdGuard'ı son uygulamalar ekranına sabitleyin
+- Pin AdGuard to the recent apps screen
 - Enable AdGuard in the app list inside the security app’s “startup manager” and “floating app list” (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
-- Pil optimizasyonlarını kapatın
+- Turn off battery optimizations
 
 ## OnePlus
 
-OxygenOS yüklü cihazlar, işletim sistemi optimizasyonu da dahil olmak üzere işletim sistemine özgü önbellek temizleme ve boş RAM ile en sorunlu olanlardır. Ayrıca OxygenOS, bir süre kullanmazsanız AdGuard'ın çalışmasını kesintiye uğratabilir. Bu istenmeyen sonuçlardan kaçınmak için aşağıdaki adımları izleyin.
+Devices with OxygenOS on board are the most problematic, with its OS-specific cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the AdGuard's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps.
 
 ### Uygulamayı kilitleme
 
-- **Ayarlar** öğesine gidin
+- Go to **Settings**
 
 - **Battery** → **Battery optimization**
 
-- AdGuard'ı bulun
+- Find AdGuard
 
 - Tap on it and select **Don't optimize** option
 
 - Tap **Done** to save
 
-- Son uygulamalar menüsünü açın (bu ekran görüntüsünde gösterildiği gibi):
+- Open recent apps menu (as showed on this screenshot):
 
     ![Onepluslock *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/onepluslock.png)
 
-- AdGuard uygulamasını kilitleyin:
+- Lock AdGuard app:
 
     ![Oneplusdots *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
 
 :::caution
 
-On some OnePlus phones there is also a thing called App Auto-Launch and Deep Optimization which essentially prevents apps from working in the background. Lütfen AdGuard için devre dışı bırakın.
+On some OnePlus phones there is also a thing called App Auto-Launch and Deep Optimization which essentially prevents apps from working in the background. Please disable it for AdGuard.
 
 :::
 
@@ -497,7 +503,7 @@ On some OnePlus phones there is also a thing called App Auto-Launch and Deep Opt
 
 ### App Auto-Launch
 
-App Auto-Launch (on some OnePlus phones) essentially prevents apps from working in the background. Lütfen AdGuard için devre dışı bırakın.
+App Auto-Launch (on some OnePlus phones) essentially prevents apps from working in the background. Please disable it for AdGuard.
 
 ### Enhanced / Advanced optimization
 
@@ -505,7 +511,7 @@ For OnePlus 6 and above:
 
 - Open **System settings** → **Battery** → **Battery optimization** → (⁝) three-dot menu → **Advanced optimization**
 - Disable **Deep optimization** / **Adaptive Battery**
-- Disble **Sleep standby optimization**. OnePlus tries to learn when you are usually asleep, and in those times it will then disable the phone’s network connections. Bu ayar, anlık bildirimlerin gönderilmesini engeller.
+- Disble **Sleep standby optimization**. OnePlus tries to learn when you are usually asleep, and in those times it will then disable the phone’s network connections. This setting will prevent push notifications from being delivered.
 
 For OnePlus below 6:
 
@@ -513,13 +519,13 @@ For OnePlus below 6:
 
 ### Son uygulamaların temizleme davranışı
 
-Normally when you swipe an app away, it won’t close. On OnePlus this may however work in a different way. Recent app clear behaviour manager might be set up in a way that swiping the app to close will kill it. "Normal" moda geri döndürmek için:
+Normally when you swipe an app away, it won’t close. On OnePlus this may however work in a different way. Recent app clear behaviour manager might be set up in a way that swiping the app to close will kill it. To return it to the “normal” mode:
 
 Go to **Settings** → **Advanced** → **Recent app management** → Switch to **Normal clear**
 
 ## Sony
 
-Sony was the first mobile OS developer to introduce non-standard background process optimization. It is called **Stamina mode** and it instantly breaks all background processes if enabled. Bunu çözmek için:
+Sony was the first mobile OS developer to introduce non-standard background process optimization. It is called **Stamina mode** and it instantly breaks all background processes if enabled. To solve this:
 
 Go to **Settings** → **Battery** → Disable **STAMINA mode**
 
@@ -533,7 +539,7 @@ You also need to be set AdGuard as Excepted from Power-saving feature:
 
 ## Wiko
 
-Wiko cihazları, standart olmayan arka plan işlem optimizasyonları açısından sorunludur. To let AdGuard work in background, do the following:
+Wiko devices are problematic in terms of non-standard background process optimizations. To let AdGuard work in background, do the following:
 
 - Go to **Phone Assistant** → **Battery** → turn off **Eco Mode**
 - Go back and go to **Manual mode**
@@ -557,24 +563,24 @@ Android stock OS normally does not conflict with apps working in the background,
 
 ## Realme
 
-Realme UI 4.0 çalıştıran cihazlarda, AdGuard'ın arka planda düzgün çalışmasını sağlamak için üç temel yapılandırma bulunuyor.
+On devices running Realme UI 4.0, there are three key configurations to ensure that AdGuard works properly in the background.
 
 1. AdGuard uygulamasını ayarlayın:
 
-    - AdGuard simgesine uzun basın
-    - Görüntülenen menüden **Uygulama bilgileri** öğesini seçin
-    - **Pil kullanımı** öğesine gidin ve tüm seçenekleri etkinleştirin:
-        - Arka planda çalışmaya izin ver
-        - Ön planda çalışmaya izin ver
-        - Otomatik başlatmaya izin ver
+    - Long press the AdGuard icon
+    - From the menu that appears, select **App info**
+    - Go to **Battery usage** and enable all options:
+        - Allow background activity
+        - Allow foreground activity
+        - Allow auto launch
     - In the **App info** section, scroll down and turn off the option **Pause app activity if unused**
 
     ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
 
 1. Pili ayarlayın:
 
-    - **Ayarlar → Pil → Diğer ayarlar → Pil kullanımını optimize et** öğesine gidin
-    - Listede AdGuard'ı bulun ve **Optimize etme** öğesini etkinleştirin
+    - Go to **Settings → Battery → More settings → Optimize battery use**
+    - Find AdGuard in the list and enable **Don't optimize**
     - In **Other settings**, check the **App Quick Freeze** section and disable it for AdGuard
 
     ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
@@ -585,3 +591,69 @@ Realme UI 4.0 çalıştıran cihazlarda, AdGuard'ın arka planda düzgün çalı
     - Find **AdGuard** and enable the **Always-on VPN** option
 
     ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)
+
+## Motorola
+
+On Motorola devices, there are four key configurations to ensure that AdGuard works properly in the background.
+
+1. Allow background usage:
+
+   - Stop AdGuard protection and close the AdGuard app
+   - Go to **Settings → Apps → App battery usage** and find AdGuard
+   - Enable **Allow background usage** or select **Unrestricted**, depending on your Android version
+
+1. Remove background activity restrictions:
+
+   - Go to **Settings**
+   - Scroll down and tap **Apps & notifications**
+   - Find **AdGuard** and open **Advanced → Battery**
+   - Tap **Background restriction** or **Background limits**
+   - If it says **Background activity restricted**, tap it and then tap **Remove**
+
+1. Manage background apps:
+
+   - Go to **Settings → Battery → Background app use**
+   - Enable the **Manage background apps** option
+   - Açılan menüde **Uygulamalar** sekmesini seçin
+   - Listede **AdGuard** öğesini bulun ve ona dokunun
+   - **Pil kullanımını optimize et** uyarısında, **Her zaman izin ver** öğesini seçin
+
+    ![Always allow *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/motorolla-background-app-use.png)
+
+1. Disable Adaptive Battery:
+
+   - Go to **Settings → Battery**
+   - Turn off the **Adaptive Battery** option
+
+## ZTE
+
+MyOS işletim sistemi altında çalışan ZTE cihazları, arka plan işlemlerine karşı agresif bir yaklaşıma sahiptir. Follow these steps to prevent AdGuard from being closed automatically by AI control:
+
+- Go to **Settings → Battery → App Management**
+- Turn off **AI Control**
+- Select **Manual Management**
+- Find **AdGuard** in the list and set **Background Work** to **Allow**
+
+## Infinix
+
+Infinix cihazları, AdGuard'ın arka planda çalışmasını kesintiye uğratabilecek katı pil ve güç tasarrufu kuralları uygular. AdGuard'ın sistem tarafından otomatik olarak kapatılmasını önlemek ve istikrarlı koruma sağlamak için şu adımları izleyin:
+
+1. Korumayı devre dışı bırakın ve AdGuard uygulamasını kapatın.
+
+1. Sistem ayarlarına gidin → *Uygulama yönetimi* → *Uygulama listesi* → *AdGuard* → *Pil* ve *Arka plan kullanımına izin ver* öğesini etkinleştirin. Ardından *Arka plan kullanımına izin ver* ayarına gidin ve modu *Kısıtlamasız* olarak değiştirin.
+
+    ![Arka plan kullanımına izin ver *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_allow.png)
+
+1. Sistem ayarlarını açın → *Uygulama yönetimi* → *Otomatik başlatma yönetimi* ve *AdGuard* öğelerini etkinleştirin.
+
+    ![Otomatik başlatma yönetimi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_app_launch.png)
+
+1. Sistem ayarlarına gidin → *Pil ve Güç Tasarrufu* → *Güç Tasarrufu* ve *Pil Tasarrufu* öğelerini devre dışı bırakın.
+
+1. *Pil ve Güç Tasarrufu* sekmesinden *AdGuard* öğesini bulun ve *Kısıtlama Yok* öğesini işaretleyin.
+
+    ![Uygulamalar için güç tasarrufu yönetimi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_power_saving.png)
+
+1. *Uygulama yönetimi* → *Özel Uygulama Erişimi* → *Pil Optimizasyonu* öğesine gidin. Ekranın üst kısmında, açılır menüden *Tüm uygulamalar* öğesini belirleyin, *AdGuard* öğesine dokunun ve *Optimize Edilmemiş* olarak ayarlayın.
+
+    ![Pil optimizasyonu *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_not_optimized.png)

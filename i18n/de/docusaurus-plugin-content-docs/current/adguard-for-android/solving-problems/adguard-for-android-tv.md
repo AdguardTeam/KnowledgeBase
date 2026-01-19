@@ -33,7 +33,7 @@ Fertig, AdGuard für Android TV ist installiert.
 - Klicken Sie auf das AdGuard-Symbol, um die App zu starten.
 - Folgen Sie den Anweisungen auf dem Bildschirm, um die Einrichtung abzuschließen.
 
-## Installation von AdGuard für Android TV über ADB
+## AdGuard für Android TV über ADB installieren
 
 1. Stellen Sie sicher, dass die Android Debug Bridge (ADB) auf Ihrem Computer installiert ist. Wenn nicht, können Sie die Anweisungen auf XDA Developers befolgen: [ADB-Installationsanleitung](https://www.xda-developers.com/install-adb-windows-macos-linux).
 
@@ -43,18 +43,46 @@ Fertig, AdGuard für Android TV ist installiert.
 
 4. Notieren Sie sich die IP-Adresse Ihres Android TV:
 
-    - Navigieren Sie auf Ihrem Android TV zu „Einstellungen“.
-    - Wählen Sie _System_ → _Über_.
-    - Suchen Sie _Netzwerk_ und wählen Sie _Wi-Fi_ oder _Ethernet_, je nach Verbindungstyp.
-    - Wechseln Sie zum Abschnitt „Netzwerk“ und suchen Sie die _IP-Adresse_. Notieren Sie sich diese IP-Adresse.
+   - Navigieren Sie auf Ihrem Android TV zu „Einstellungen“.
+   - Wählen Sie _System_ → _Über_.
+   - Suchen Sie _Netzwerk_ und wählen Sie _Wi-Fi_ oder _Ethernet_, je nach Verbindungstyp.
+   - Wechseln Sie zum Abschnitt „Netzwerk“ und suchen Sie die _IP-Adresse_. Notieren Sie sich diese IP-Adresse.
 
 5. Verbinden Sie sich mit Android TV über ADB:
 
-    - Öffnen Sie das Terminal oder die Eingabeaufforderung auf Ihrem Computer.
-    - Geben Sie den Befehl `adb connect` ein und fügen Sie die IP-Adresse Ihres TV-Geräts ein.
-    - Die Verbindung wird aufgebaut.
+   - Öffnen Sie das Terminal oder die Eingabeaufforderung auf Ihrem Computer.
+   - Geben Sie den Befehl `adb connect` ein und fügen Sie die IP-Adresse Ihres TV-Geräts ein.
+   - Die Verbindung wird aufgebaut.
 
 6. Installieren Sie AdGuard für Android TV über ADB:
 
-    - Geben Sie im Terminal den Befehl `adb install Downloads/adguard_tv.apk` ein. Ersetzen Sie gegebenenfalls `Downloads/adguard_tv.apk` durch Ihren Pfad.
-    - Warten Sie auf eine Meldung im Terminal, die die erfolgreiche Installation der App anzeigt.
+   - Geben Sie im Terminal den Befehl `adb install Downloads/adguard_tv.apk` ein. Ersetzen Sie gegebenenfalls `Downloads/adguard_tv.apk` durch Ihren Pfad.
+   - Warten Sie auf eine Meldung im Terminal, die die erfolgreiche Installation der App anzeigt.
+
+## Installing AdGuard for Android TV via atvTools
+
+**Important:** Your smartphone and TV with Android TV (TV box) must be on the same local network.
+
+1. Install the [atvTools](https://play.google.com/store/apps/details?id=dev.vodik7.atvtools) app on your Android smartphone
+
+2. Connect **atvTools** to **Android TV**
+
+   1. Enable developer mode on your Android TV device
+
+      `Settings` → `Device settings` → `About device` → Tap `Android TV build` until you see a message confirming that you have successfully obtained developer status
+
+   2. Enable USB debugging on your Android TV device
+
+      Go to `Settings` → `Device settings` → `For developers` → `Debugging`, allow and enable `USB debugging`
+
+3. Launch **atvTools** on your smartphone
+
+4. Find the desired **Android TV** device in the list and click it
+
+5. Allow the connection on the TV
+
+6. Download the [AdGuard for Android TV](https://agrd.io/tvapk) installer to your smartphone as an **APK** file
+
+7. In **atvTools**, click **Install** on the main screen and wait (less than a minute) until the **AdGuard for Android TV** icon appears in the list of applications
+
+![Main screen \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/android-tv/main-screen.png)

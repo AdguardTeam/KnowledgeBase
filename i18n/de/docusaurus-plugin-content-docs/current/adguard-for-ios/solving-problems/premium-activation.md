@@ -5,20 +5,18 @@ sidebar_position: 1
 
 :::info
 
-Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
+Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, laden Sie [die AdGuard-App](https://agrd.io/download-kb-adblock)herunter.
 
 :::
 
 Es gibt zwei Optionen, um Premium-Funktionen in der AdGuard für iOS-App zu aktivieren:
 
-1. Ein Abonnement kaufen. Tippen Sie einfach auf das **Premium holen**-Symbol irgendwo in der App und folgen Sie den Anweisungen auf dem Bildschirm. Dazu müssen Sie nur Ihr Apple ID-Kennwort eingeben und den Kauf bestätigen. Sie können zwischen einem monatlichen, jährlichen und lebenslangen Abonnement wählen.
+1. **Buy a subscription through the App Store** — monthly, yearly, or lifetime. You can subscribe by tapping the *Premium* label anywhere in the app or from the *License* tab. A 7-day free trial is available for new users.
 
-2. Eine AdGuard-Lizenz verwenden. Sie können diese auf der [AdGuard-Website](https://adguard.com/license.html) erwerben. Melden Sie sich über die App bei Ihrem persönlichen AdGuard-Konto an: Öffnen Sie den Bildschirm *AdGuard-App → Einstellungen → Lizenz* und tippen Sie dort auf die Schaltfläche **Anmelden**. Sie werden aufgefordert, Ihre Anmeldedaten für das AdGuard-Konto* einzugeben. Wenn Sie einen gültigen Lizenzschlüssel in Ihrem Konto haben, wird dieser automatisch abgerufen, um Premium in AdGuard für iOS zu aktivieren.
-
-Alternativ können Sie auch einfach einen gültigen Lizenzschlüssel in das E-Mail-Feld eingeben und das Passwortfeld leer lassen, um die Premium-Funktionen zu aktivieren.
+2. **Buy an AdGuard license on our [website](https://adguard.com/license.html).** To activate it, open your AdGuard app, tap *Settings → License → Log in*, and enter the same email address you used for the purchase. You can also enter the activation code in the email field and leave the password field blank. However, we recommend using the email and password combination because it is a more secure option.
 
 :::note
 
-AdGuard Pro für iOS (unsere andere iOS-App) kann nur im [App Store](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264) erworben werden.
+AdGuard Pro for iOS is our other iOS app. It can only be purchased from the [App Store](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264).
 
 :::

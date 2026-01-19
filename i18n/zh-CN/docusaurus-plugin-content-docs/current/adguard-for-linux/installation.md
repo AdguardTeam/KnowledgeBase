@@ -43,89 +43,89 @@ Linux 版 AdGuard 需要 [AdGuard 许可证](https://adguard.com/license.html)�
 
 1. 安装后，请输入以下命令：
 
-    ```sh
-    adguard-cli activate
-    ```
+   ```sh
+   adguard-cli activate
+   ```
 
 2. 然后选择所需的选项：
 
-    ![adguard-cli 激活 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation1.png)
+   ![adguard-cli activate \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/1activate.png)
 
 3. 获得许可证后，请按提供的链接继续激活：
 
-    ![激活许可证 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation2.png)
+   ![Activate license \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/2activate_link.png)
 
 4. 激活后，您可以继续使用该程序：
 
-    ![激活成功 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation3.png)
+   ![Successful activation \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/3activate_success.png)
 
 5. 您还可以输入以下命令来重置许可证：
 
-    ```sh
-    adguard-cli reset-license
-    ```
+   ```sh
+   adguard-cli reset-license
+   ```
 
-    或输入以下命令查看许可证信息
+   或输入以下命令查看许可证信息
 
-    ```sh
-    adguard-cli license
-    ```
+   ```sh
+   adguard-cli license
+   ```
 
 6. 现在需要设置 AdGuard CLI。 要运行配置向导，请输入以下命令：
 
-    ```sh
-    adguard-cli configure
-    ```
+   ```sh
+   adguard-cli configure
+   ```
 
-    ![设置 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation4.png)
+   ![Setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/4configure.png)
 
-    向导会询问初始设置所需的基本问题。
+   向导会询问初始设置所需的基本问题。
 
 7. 之后，您可以输入以下命令来启动 AdGuard 保护
 
-    ```sh
-    adguard-cli start
-    ```
+   ```sh
+   adguard-cli start
+   ```
 
-    ![启动保护 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation5.png)
+   ![Start protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/5start.png)
 
 8. 要查看保护状态，请输入以下命令：
 
-    ```sh
-    adguard-cli status
-    ```
+   ```sh
+   adguard-cli status
+   ```
 
-    用以下命令停止保护：
+   用以下命令停止保护：
 
-    ```sh
-    adguard-cli stop
-    ```
+   ```sh
+   adguard-cli stop
+   ```
 
-    ![停用保护 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+   ![Stop protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/6status-stop.png)
 
 9. 要查看当前配置，请键入：
 
-    ```sh
-    adguard-cli config show
-    ```
+   ```sh
+   adguard-cli config show
+   ```
 
-    ![当前设置 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+   ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/7config_show.png)
 
-    配置文件的路径也将被显示，您应该编辑它。 它包含所有附加选项的描述。
+   配置文件的路径也将被显示，您应该编辑它。 它包含所有附加选项的描述。
 
-    或者，您可以使用以下命令：
+   或者，您可以使用以下命令：
 
-    ```sh
-    adguard-cli config get
-    ```
+   ```sh
+   adguard-cli config get
+   ```
 
-    或者：
+   或者：
 
-    ```sh
-    adguard-cli config set
-    ```
+   ```sh
+   adguard-cli config set
+   ```
 
-    它们主要用于脚本。
+   它们主要用于脚本。
 
 有关可用命令的更多信息，请查看[设置和保护管理](https://adguard.com/kb/adguard-for-linux/settings/)部分。
 

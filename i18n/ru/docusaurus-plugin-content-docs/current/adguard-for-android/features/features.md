@@ -35,7 +35,7 @@ sidebar_position: 1
 
 ## Низкоуровневые настройки
 
-Descriptions of the low-level settings available in AdGuard for Android v4.3 and later.
+Описания низкоуровневых настроек, доступных в AdGuard 4.3 для Android и более поздних версиях.
 
 [Гайд по низкоуровневым настройкам](/adguard-for-android/features/low-level-settings.md)
 

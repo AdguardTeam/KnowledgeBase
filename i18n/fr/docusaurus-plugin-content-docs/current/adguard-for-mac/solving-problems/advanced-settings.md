@@ -81,6 +81,12 @@ Vérifie l'authenticité de tous les certificats du domaine en fonction de la po
 
 En définissant `true`, vous autorisez AdGuard à filtrer le trafic envoyé via HTTP/3, la dernière version du protocole HTTP basé sur QUIC.
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 #### `network.filtering.localnetwork`
 
 En définissant `true`, vous activez le filtrage du réseau local.
@@ -164,6 +170,10 @@ Supprime les paramètres Encrypted Client Hello des réponses.
 Bloque les domaines macOS Private Relay si l'utilisateur a un pare-feu activé, ce qui désactive à son tour la fonction *Private Relay*.
 
 L'activation de ce paramètre est utile dans le scénario suivant : lorsque macOS Private Relay est actif, le filtrage ne peut pas fonctionner correctement et doit être désactivé. Dans les versions de macOS jusqu'à 14, AdGuard pouvait désactiver automatiquement le Private Relay lorsque la protection était activée. Toutefois, à partir de macOS 15, cela n'est plus possible si un pare-feu est actif. En activant ce paramètre, vous pouvez désactiver Private Relay même lorsque le pare-feu est activé, contournant ainsi la limitation précédente.
+
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Secures DNS proxy connections with a hybrid post-quantum key exchange, combining the classical X25519 algorithm with the ML-KEM-768 post-quantum KEM. Applies only to DoH, DoT, and DoQ upstreams.
 
 ### Paramètres du Mode furtif
 

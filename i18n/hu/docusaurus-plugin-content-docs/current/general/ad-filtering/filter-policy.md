@@ -3,6 +3,16 @@ title: AdGuard szűrőszabályzat
 sidebar_position: 6
 ---
 
+:::note Disclaimer
+
+Please read this filter policy carefully before enabling any filters.
+
+Using AdGuard Ad Blocker, AdGuard DNS, and their filters may affect how third-party websites and services function. You are responsible for reviewing and following the policies and terms of any websites or services you use.
+
+Before enabling filters provided by third parties, you agree to review their applicable terms and make an informed decision about using them. AdGuard is not responsible for how third-party filters operate or what their terms contain, and their presence in AdGuard products is not a recommendation to use them.
+
+:::
+
 Az AdGuard-nál már régóta követünk bizonyos elveket a szűrők készítése során, amelyeket a szűrők leírásával együtt az alábbiakban ismertetünk szűrési irányelvünk részeként.
 
 ## Közös kritériumok
@@ -41,14 +51,12 @@ Az AdGuard hirdetésblokkoló szűrői a következők:
 - AdGuard Alap szűrő
 - AdGuard Mobile App Banners szűrő
 - Regionális szűrők nyelvi elvek szerint - kínai, holland, francia, német, japán, orosz, spanyol/portugál, török, német, ukrán és orosz
-- AdGuard gyorsjavítások szűrő
 
 ### Ezeknek a szűrőknek a célja
 
 - A **Az** alapszűrő célja, hogy blokkolja a hirdetéseket az angol nyelvű webhelyeken és azokon, amelyekhez nincs külön szűrő. Általános szűrési szabályokat is tartalmaz, amelyek nyelvtől függetlenül minden webhelyre vonatkoznak
 - A **mobilhirdetések szűrője** blokkolja a hirdetéseket a weboldalak mobilverzióiban és a mobilalkalmazásokban. Nincs nyelvi szegmentálás
 - **A** regionális szűrők ugyanazt az irányelvet követik, mint a **Alapszűrő**, de bizonyos nyelvű webhelyekre korlátozva
-- A **Gyorsjavítás szűrő** a kritikus tartalomszűrési problémák gyors megoldására szolgál népszerű weboldalakon, anélkül, hogy frissíteni kellene az MV3 kiegészítőt.
 
 A hirdetésblokkoló szűrők célja, hogy blokkoljanak mindenféle hirdetést olyan webhelyeken, alkalmazásokban és bizonyos eszközökön, amelyek hirdetéseket tölthetnek be az internetről:
 

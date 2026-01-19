@@ -27,7 +27,7 @@ Při vytváření výpisu postupujte podle následujících kroků:
 
 Vytvořený soubor výpisu (`.DMP`) bude mít stejný název jako proces, který jste vybrali.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 AdGuard pro Windows spouští dva procesy `Adguard.exe` a `AdguardSvc.exe`. Pro každý z nich je třeba vytvořit samostatný soubor výpisu.
 
@@ -36,3 +36,26 @@ AdGuard pro Windows spouští dva procesy `Adguard.exe` a `AdguardSvc.exe`. Pro 
 ![Two processes *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/two_processes_en.png)
 
 Protože soubory mohou být velké, před odesláním na podporu je zkomprimujte do archivu. Přiložte také logy AdGuardu, které nám pomohou problém lépe diagnostikovat. [Pokyny pro sběr logů](../adguard-logs).
+
+## Shromažďování souboru `wfpdiag.cab`
+
+Náš tým podpory si může vyžádat soubor wfpdiag.cab spolu se souborem minidump, aby mohl důkladněji analyzovat systémové protokoly a diagnostikovat problémy. Chcete-li soubor shromáždit, postupujte podle následujících kroků:
+
+1. Zapněte AdGuard ochranu.
+
+1. Klikněte na *Start* a napište `cmd` pro otevření příkazového řádku
+
+1. Klikněte pravým tlačítkem myši na příkazový řádek a vyberte možnost *Spustit jako správce*
+
+    Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
+
+    V aktuálním adresáři se vytvoří soubor wfpdiag.cab. Umístění můžete změnit zadáním `cd<folder_name>`.
+
+
+:::
+
+1. Chcete-li spustit protokolování, zadejte následující příkaz: `netsh wfp capture start`
+
+1. Navštivte libovolnou webovou stránku, abyste přesměrovali provoz skrze AdGuard a zaznamenali proces filtrování
+
+1. Chcete-li zastavit protokolování, zadejte `netsh wfp capture stop`

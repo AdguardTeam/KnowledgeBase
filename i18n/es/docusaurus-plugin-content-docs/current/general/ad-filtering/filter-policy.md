@@ -3,6 +3,16 @@ title: Política de filtrado de AdGuard
 sidebar_position: 6
 ---
 
+:::note Descargo de responsabilidad
+
+Por favor, lee cuidadosamente esta política de filtros antes de habilitar cualquier filtro.
+
+El uso del bloqueador de anuncios AdGuard, AdGuard DNS y sus filtros puede afectar el funcionamiento de sitios web y servicios de terceros. Eres responsable de revisar y seguir las políticas y términos de cualquier sitio web o servicio que utilices.
+
+Antes de habilitar los filtros proporcionados por terceros, aceptas revisar sus términos aplicables y tomar una decisión informada sobre su uso. AdGuard no es responsable de cómo funcionan los filtros de terceros ni de lo que contienen sus términos, y su presencia en los productos AdGuard no es una recomendación para utilizarlos.
+
+:::
+
 Aquí en AdGuard, desde hace tiempo seguimos ciertos principios para la creación de nuestros filtros, los cuales, junto con las descripciones de los filtros, se presentan a continuación como parte de nuestra política de filtrado.
 
 ## Criterios comunes
@@ -41,14 +51,12 @@ Los filtros de bloqueo de anuncios de AdGuard incluyen:
 - Filtro base AdGuard
 - Filtro de anuncios de AdGuard para dispositivos móviles
 - Filtros regionales divididos por idiomas: chino, holandés, francés, alemán, japonés, ruso, español, portugués, turco y ucraniano
-- Filtro AdGuard Quick Fixes
 
 ### La finalidad de estos filtros
 
 - El **Filtro base** fue diseñado para bloquear anuncios en sitios en inglés y aquellos para los cuales no hay un filtro separado. También contiene reglas generales de filtrado que se aplican a todos los sitios, independientemente del idioma
 - El **Filtro de anuncios para dispositivos móviles** bloquea anuncios en versiones móviles de sitios y en teléfonos celulares y tabletas. No hay segmentación basada en el idioma
 - Los **Filtros regionales** siguen la misma política que el **Filtro base**, pero están limitados a sitios en determinados idiomas
-- **Filtro Quick Filters** utilizados para resolver rápidamente problemas críticos de filtrado de contenido en sitios populares sin actualizar la extensión MV3.
 
 El objetivo de los filtros de bloqueo de anuncios es bloquear todos los tipos de publicidad en sitios web, aplicaciones y dispositivos específicos que pueden cargar anuncios de Internet:
 

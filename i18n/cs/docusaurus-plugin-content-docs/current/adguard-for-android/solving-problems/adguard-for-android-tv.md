@@ -43,18 +43,46 @@ Hotovo, AdGuard pro Android TV je nainstalován.
 
 4. Zapište si IP adresu vaší Android TV:
 
-    - V Android TV přejděte do Nastavení.
-    - Vyberte _System_ → _Informace_.
-    - Vyhledejte _Síť_ a vyberte _Wi-Fi_ nebo _Ethernet_ v závislosti na typu vašeho připojení.
-    - Přejděte do sekce Síť a vyhledejte _IP adresu_. Zapište tuto IP adresu.
+   - V Android TV přejděte do Nastavení.
+   - Vyberte _System_ → _Informace_.
+   - Vyhledejte _Síť_ a vyberte _Wi-Fi_ nebo _Ethernet_ v závislosti na typu vašeho připojení.
+   - Přejděte do sekce Síť a vyhledejte _IP adresu_. Zapište tuto IP adresu.
 
 5. Připojte Android TV skrze ADB:
 
-    - Otevřete Terminál nebo příkazový řádek v PC.
-    - Zadejte příkaz `adb connect` a vložte IP adresu své TV.
-    - Připojení bude navázáno.
+   - Otevřete Terminál nebo příkazový řádek v PC.
+   - Zadejte příkaz `adb connect` a vložte IP adresu své TV.
+   - Připojení bude navázáno.
 
 6. Nainstalujte AdGuard pro Android TV skrze ADB:
 
-    - V Terminálu zadejte příkaz `adb install Downloads/adguard_tv.apk`. V případě potřeby nahraďte `Downloads/adguard_tv.apk` vlastní cestou.
-    - Počkejte, až se v Terminálu zobrazí zpráva o úspěšné instalaci aplikace.
+   - V Terminálu zadejte příkaz `adb install Downloads/adguard_tv.apk`. V případě potřeby nahraďte `Downloads/adguard_tv.apk` vlastní cestou.
+   - Počkejte, až se v Terminálu zobrazí zpráva o úspěšné instalaci aplikace.
+
+## Instalace aplikace AdGuard pro Android TV skrze atvTools
+
+**Důležité:** Vaše chytrá TV a TV s Android TV (TV box) musí být ve stejné místní síti.
+
+1. Nainstalujte [aplikaci atvTools](https://play.google.com/store/apps/details?id=dev.vodik7.atvtools) do svého telefonu s Androidem
+
+2. Připojte **atvTools** k **Android TV**
+
+   1. Povolte režim pro vývojáře na zařízení Android TV
+
+      `Nastavení` → `Nastavení zařízení` → `O zařízení` → Klepněte na `Sestavení Android TV` dokud neuvidíte zprávu potvrzující, že jste úspěšně získali stav pro vývojáře
+
+   2. Povolte USB ladění na zařízení Android TV
+
+      Přejděte do `Nastavení` → `Nastavení zařízení` → `Pro vývojáře` → `Ladění`, povolte a zapněte `USB ladění`
+
+3. Spusťte **atvTools** na svém chytrém telefonu
+
+4. Vyhledejte v seznamu požadované zařízení **Android TV** a klikněte na něj
+
+5. Povolte připojení na TV
+
+6. Stáhněte instalátor [AdGuard pro Android TV](https://agrd.io/tvapk) do svého smartphonu jako **APK** soubor
+
+7. V **atvTools** klikněte na **Instalovat** na hlavní obrazovce a počkejte (méně než minutu), než se v seznamu aplikací objeví ikona **AdGuard pro Android TV**
+
+![Main screen \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/android-tv/main-screen.png)

@@ -138,6 +138,12 @@ Se esta configuração estiver ativada, o AdGuard filtrará as solicitações en
 
 **Sobre o HTTP/3**: Esta é a versão mais recente do protocolo HTTP, baseado em QUIC.
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 ### Proxy de saída
 
 #### Mostrar a configuração Filtrar solicitações de DNS
@@ -204,10 +210,6 @@ Aqui você pode definir o atraso em milissegundos antes que o AdGuard reprograme
 #### MTU
 
 Aqui você pode definir a unidade máxima de transmissão (MTU) da interface VPN. Este é o tamanho máximo do pacote de dados usado na sua VPN local. O intervalo recomendado é de 1500 a 1900 bytes.
-
-#### Restaurar VPN automaticamente
-
-Se esta configuração estiver ativada, a VPN local do AdGuard será reativada automaticamente após ser desligada devido à ausência de rede, tethering ou modo de baixo consumo de energia.
 
 #### Captura de pacotes (PCAP)
 

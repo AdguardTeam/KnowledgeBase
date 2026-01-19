@@ -77,13 +77,24 @@ Usa el comando `config` para configurar AdGuard para Linux. Subcomandos:
 
 - `show`: Muestra la configuración actual en `proxy.yaml`
 
-    ![Configuración actual \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![Configuración actual \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
 - `set`: Configurar una opción en `proxy.yaml`
-    - `listen_ports.http_proxy`: puerto HTTP de escucha
-    - `proxy_mode`: Modo proxy (`manual` u `auto`)
+  - `listen_ports.http_proxy`: puerto HTTP de escucha
+  - `proxy_mode`: Modo proxy (`manual` u `auto`)
 
 - `get`: Obtener el estado actual de las opciones anteriores
+
+:::note
+
+The Automatic mode can only be used if the following requirements are met:
+
+- `iptables` is installed and running (either `nft` or `legacy`)
+- `iptables` supports the `nat` table for both IPv4 and IPv6
+- `iptables` supports the `REDIRECT` and `QUEUE` chains for both IPv4 and IPv6
+- The `sudo` package is installed
+
+:::
 
 ## Administrar filtros
 
@@ -91,15 +102,15 @@ Usa el comando `filters` para configurar AdGuard para Linux. Subcomandos:
 
 - `list`: Listar filtros instalados
 
-    - `--all`: Ver todos los filtrados
+  - `--all`: Ver todos los filtrados
 
-    ![Lista de filtros \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
+  ![Lista de filtros \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
 - `install`: Instalar un filtro. Ingrese la URL del filtrado que deseas instalar
 
 - `enable`: Habilitar un filtro. Introduce el nombre o ID del filtro
 
-    ![Habilitar filtros \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+  ![Habilitar filtros \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
 - `disable`: Deshabilitar un filtro. Introduce el nombre o ID del filtro
 
@@ -112,10 +123,94 @@ Hay dos formas de hacer que el proxy escuche en una interfaz diferente:
 
 1. Ejecuta `adguard-cli config set listen_address <dirección>` donde `<dirección>` es la dirección a la que escuchar.
 2. Edita el archivo de configuración directamente:
-    - Para determinar la ubicación del archivo de configuración, ejecuta `adguard-cli config show | grep "Config location"`.
-    - Busca la clave `listen_address` y establece su valor en consecuencia. Para escuchar en todas las interfaces de red disponibles, establece la dirección de escucha en `0.0.0.0` o `::`.
+   - Para determinar la ubicación del archivo de configuración, ejecuta `adguard-cli config show | grep "Config location"`.
+   - Busca la clave `listen_address` y establece su valor en consecuencia. Para escuchar en todas las interfaces de red disponibles, establece la dirección de escucha en `0.0.0.0` o `::`.
 
 Si la dirección de escucha está configurada en algo diferente a `127.0.0.1`, se requiere la autenticación del cliente proxy. AdGuard CLI no se iniciará a menos que se configure la autenticación del proxy:
 
 - Al ejecutar `adguard-cli config set listen_address <address>` donde `<address>` no es `127.0.0.1`, AdGuard CLI solicitará un nombre de usuario y una contraseña si la autenticación del proxy no está configurada.
 - Al editar el archivo de configuración directamente, busca la clave `listen_auth`. Establece la subclave `enabled` en `true`, y `username` y `password` en valores no vacíos.
+
+## Configure outbound proxy
+
+You can configure `outbound_proxy` if you want AdGuard CLI to work through another proxy server.
+
+There are two ways to configure it:
+
+### 1. Configure via URL (recommended)
+
+Instead of setting each option step by step, you can set all parameters in a single line using a URL:
+
+```sh
+adguard-cli config set outbound_proxy https://user:pass@host:port
+```
+
+:::info
+
+Supported modes are HTTP, HTTPS, SOCKS4, and SOCKS5.
+
+:::
+
+You can also quickly enable or disable `outbound_proxy`:
+
+```sh
+adguard-cli config set outbound_proxy false
+```
+
+Or quickly clear the settings:
+
+```sh
+adguard-cli config set outbound_proxy ""
+```
+
+### 2. Configure individual parameters
+
+The ability to adjust specific parameters is also available:
+
+```sh
+adguard-cli config set outbound_proxy.enabled true
+adguard-cli config set outbound_proxy.host localhost
+adguard-cli config set outbound_proxy.port 3128
+adguard-cli config set outbound_proxy.username user
+adguard-cli config set outbound_proxy.password pass
+```
+
+Disable certificate verification for HTTPS proxies:
+
+```sh
+adguard-cli config set outbound_proxy.trust_any_certificate true
+```
+
+Enable SOCKS5 proxy for UDP traffic:
+
+```sh
+adguard-cli config set outbound_proxy.udp_through_socks5_enabled true
+```
+
+:::note
+
+If your SOCKS5 proxy does not support UDP, connections may fail.
+
+:::
+
+## Per-app AdGuard CLI configuration
+
+Users often need to enable filtering manually for certain browsers. AdGuard for Linux supports **per-app configuration**, allowing you to apply settings or rules individually to each application instead of system-wide.
+
+For details, refer to the `apps` section in `proxy.yaml`.
+
+A set of pre-configured entries for popular web browsers is included by default in `browsers.yaml`.
+
+### Checking the current configuration
+
+To view the current `outbound_proxy` configuration, enter:
+
+```sh
+adguard-cli config show outbound_proxy
+```
+
+:::info Compatibilidad
+
+Configuring `outbound_proxy` via URL is available starting from AdGuard for Linux v1.1.26 nightly and v1.1 stable release.
+
+:::

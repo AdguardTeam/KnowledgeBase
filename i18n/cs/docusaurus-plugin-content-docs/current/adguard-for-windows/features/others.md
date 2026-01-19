@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock).
 
 :::
 
@@ -15,7 +15,7 @@ Existují i další užitečné možnosti AdGuardu, které by v tomto článku n
 
 ![Support \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/support.png)
 
-By clicking the _Support_ tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
+Kliknutím na kartu _Podpora_ otevřete dialogové okno, ve kterém můžete nahlásit chybu, odeslat požadavek na funkci nebo se jednoduše podělit o svůj názor na produkt.
 
 ### Licence
 
@@ -30,7 +30,7 @@ Tato karta obsahuje informace o vaší licenci. Zde můžete:
 
 ![About \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/about.png)
 
-In addition to information about the current version of the program, this tab provides some useful links to License agreement, Privacy policy, Acknowledgements, Discussions, and Version history pages.
+Kromě informací o aktuální verzi programu jsou na této kartě k dispozici užitečné odkazy na Licenční smlouvu, Zásady ochrany osobních údajů, Poděkování, Diskuzi a Historii verzí.
 
 ### Zkontrolovat aktualizace
 

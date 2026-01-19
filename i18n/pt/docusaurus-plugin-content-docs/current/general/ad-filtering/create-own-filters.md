@@ -103,7 +103,7 @@ Blocking rules with [`$important`](#important-modifier) modifier can override ex
 
 ![Cosmetic rule](https://cdn.adtidy.org/content/kb/ad_blocker/general/5_cosmetic_rules.svg)
 
-Cosmetic rules are based on using a special language named CSS, which every browser understands. Basically, it adds a new CSS style to the website which purpose is to hide particular elements. You can learn more about CSS in general [here](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
+Cosmetic rules are based on using a special language named CSS, which every browser understands. Basically, it adds a new CSS style to the website which purpose is to hide particular elements. You can [learn more about CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors) in general.
 
 AdGuard [extends CSS](#extended-css-selectors) and lets filters developers handle much more complicated cases. However, to use these extended rules, you need to be fluent in regular CSS.
 
@@ -419,6 +419,19 @@ This modifier lets you narrow the rule coverage down to a specific application (
 
 For Mac, you can find out the bundle ID or the process name of the app by viewing the respective request details in the Filtering log.
 
+**Syntax**
+
+The modifier is a list of one or more expressions, each of which is matched against an application in a particular way depending on its type. These expressions are separated by the `|` symbol.
+
+```text
+applications = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
+entry_i = ( regular_app / wildcard_app / regexp )
+```
+
+- **`regular_app`** — a regular application name (`example.app`). It corresponds to the specified application and is matched lexicographically.
+- **`wildcard_app`** — an application name ending with a wildcard character `*`, such as `org.example.*` or `com.ad*`. It matches all applications whose names start with the specified prefix. Matching is done lexicographically.
+- **`regexp`** — a regular expression that starts and ends with `/`. It works the same way as the basic URL rules, but the characters `/`, `$`, `,`, and `|` must be escaped with `\`.
+
 **Examples**
 
 - `||baddomain.com^$app=org.example.app` — a rule to block requests that match the specified mask and are sent from the `org.example.app` Android app.
@@ -429,9 +442,23 @@ If you want the rule not to be applied to certain apps, start the app name with 
 - `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask and are sent from any app except for the `org.example.app`.
 - `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
+You can use wildcards in the `$app` modifier:
+
+- `||baddomain.com^$app=org.example.*` — applies to all apps whose package names start with `org.example.`
+
+You can use regular expressions in the `$app` modifier by enclosing them in forward slashes `/.../`. This allows for more flexible matching — for example, targeting a group of apps from the same publisher or matching complex patterns.
+
+- `||baddomain.com^$app=/org\.example\.[a-z0-9_]+/` — applies to all apps whose package name starts with `org.example` (e.g. `org.example.app1`, `org.example.utility`, etc.).
+- `||baddomain.com^$app=/^org\.example\.app\$\|^org\.example\.[ab].*/` — applies to `org.example.app` and to any app whose package starts with `org.example.a` or `org.example.b`.
+
+The `$app` modifier supports combining all three types of entries — plain names, wildcards, and regular expressions — within the same rule, but it does not allow combining negated and non-negated expressions together.
+
+- `||example.com^$app=org.example.app|org.example.*|/org\.example\.[a-z]+/` — applies to `org.example.app`, all matching `org.example.*` and `org.example.[a-z]+` apps.
+
 :::caution Restrictions
 
-Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`. Rules with such modifier are considered invalid.
+- Apps in the modifier value cannot include a wildcard inside the string , e.g. `$app=com.*.music`. Use a regular expression instead: `$app=/com\..*\.music/`.
+- You cannot combine negated (`~`) and non-negated expressions in the same `$app` modifier — this would be ambiguous.
 
 :::
 
@@ -439,6 +466,7 @@ Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`. Rule
 
 - Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$app` modifier.
 - On Windows the process name is case-insensitive starting with AdGuard for Windows with [CoreLibs][] v1.12 or later.
+- Support for regular expressions and for combining different types of entries (plain names, wildcards, and regular expressions) in the `$app` modifier is available starting from CoreLibs v1.19 or later.
 
 :::
 
@@ -529,38 +557,23 @@ If you want the rule not to be applied to certain domains, start a domain name w
 
 **`$domain` modifier matching target domain:**
 
-In some cases the `$domain` modifier can match not only the referrer domain, but also the target domain. This happens when all the following conditions are met:
+In some cases the `$domain` modifier can match not only the referrer domain, but also the target domain.
 
-1. The request has the `document` content type
-1. The rule pattern does not match any particular domains
-1. The rule pattern does not contain regular expressions
-1. The `$domain` modifier contains only excluded domains, e.g. `$domain=~example.org|~example.com`
+This happens when the rule has one of the following modifiers: [`$cookie`](#cookie-modifier), [`$csp`](#csp-modifier), [`$permissions`](#permissions-modifier), [`$removeparam`](#removeparam-modifier).
 
-The following predicate should be satisfied to perform a target domain matching:
-
-```text
-1 AND ((2 AND 3) OR 4)
-```
-
-That is, if the modifier `$domain` contains only excluded domains, then the rule does not need to meet the second and third conditions to match the target domain against the modifier `$domain`.
-
-If some of the conditions above are not met but the rule contains [`$cookie`](#cookie-modifier) or [`$csp`](#csp-modifier) modifier, the target domain will still be matched.
-
-If the referrer matches a rule with `$domain` that explicitly excludes the referrer domain, then the rule will not be applied even if the target domain also matches the rule. This affects rules with [`$cookie`](#cookie-modifier) and [`$csp`](#csp-modifier) modifiers, too.
+These modifiers will not be applied if the referrer matches a rule with `$domain` that explicitly excludes the referrer domain, even if the target domain also matches the rule.
 
 **Examples**
 
 - `*$cookie,domain=example.org|example.com` will block cookies for all requests to and from `example.org` and `example.com`.
-- `*$document,domain=example.org|example.com` will block all requests to and from `example.org` and `example.com`.
+- `*$document,domain=example.org|example.com` will block requests only from `example.org` and `example.com`, but not to them.
 
 In the following examples it is implied that requests are sent from `http://example.org/page` (the referrer) and the target URL is `http://targetdomain.com/page`.
 
 - `page$domain=example.org` will be matched, as it matches the referrer domain.
-- `page$domain=targetdomain.com` will be matched, as it matches the target domain and satisfies all requirements mentioned above.
-- `||*page$domain=targetdomain.com` will not be matched, as the pattern `||*page` may match specific domains, e.g. `example.page`.
+- `page$domain=targetdomain.com` will not be matched because it does not match the referrer domain.
 - `||*page$domain=targetdomain.com,cookie` will be matched because the rule contains `$cookie` modifier despite the pattern `||*page` may match specific domains.
-- `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
-- `page$domain=targetdomain.com|~example.org` will not be matched because the referrer domain is explicitly excluded.
+- `page$domain=targetdomain.com|~example.org,cookie` will not be matched because the referrer domain is explicitly excluded.
 
 ##### `$domain` modifier limitations {#domain-modifier-limitations}
 
@@ -569,6 +582,8 @@ In the following examples it is implied that requests are sent from `http://exam
 In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries are not supported.
 
 AdGuard for iOS and AdGuard for Safari support the `$domain` modifier but have some limitations. For more details, see the [SafariConverterLib section](#safari-converter--basic--supported-with-limitations).
+
+Rules with `regexp` in the `$domain` modifier are not supported by AdGuard for Safari and AdGuard for iOS.
 
 :::
 
@@ -711,6 +726,8 @@ Rules with the `$popup` modifier are not supported by AdGuard Content Blocker.
 
 Works the same as the [`$~third-party`](#third-party-modifier) modifier, but only treats the request as first-party if the referrer and origin have exactly the same hostname.
 
+Requests without a referrer are also treated as first-party requests, and the rules with the `$strict-first-party` modifier are applied to such requests.
+
 **Examples**
 
 - domain.com$strict-first-party' — this rule applies only to `domain.com`. For example, a request from `domain.com` to `http://domain.com/icon.ico` is a first-party request. A request from `sub.domain.com` to `http://domain.com/icon.ico` is treated as a third-party one (as opposed to the `$~third-party` modifier).
@@ -724,6 +741,8 @@ You can use a shorter name (alias) instead of using the full modifier name: `$st
 :::info Compatibility
 
 Rules with the `$strict-first-party` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.16 or later.
+
+Requests without a referrer are matched by rules with `$strict-first-party` in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.18 or later.
 
 :::
 
@@ -764,17 +783,25 @@ To be considered as such, a third-party request should meet one of the following
 
 **`$third-party`:**
 
-- `||domain.com^$third-party` — this rule applies to all domains, except `domain.com` and its subdomains. An example of a third-party request: `http://example.org/banner.jpg`.
+- `||domain.com^$third-party` — this rule applies to all domains except `domain.com` and its subdomains. The rule is never applied if there is no referrer. An example of a third-party request: `http://example.org/banner.jpg`.
 
-If there is a `$~third-party` modifier, the rule is only applied to the requests that are not from third parties. Which means, they have to be sent from the same domain.
+If there is a `$~third-party` modifier, the rule is only applied to requests that are not from third parties. Which means they have to be sent from the same domain or shouldn't have a referrer at all.
 
 **`$~third-party`:**
 
-- `||domain.com$~third-party` — this rule is applied exclusively to `domain.com`. Example of a non third-party request: `http://domain.com/icon.ico`.
+- `||domain.com$~third-party` — this rule applies only to `domain.com` and its subdomains. Example of a non third-party request: `http://sub.domain.com/icon.ico`.
+
+Requests without a referrer are also treated as non third-party requests and the rules with the `$~third-party` modifier are applied to such requests.
 
 :::note
 
 You may use a shorter name (alias) instead of using the full modifier name: `$3p`.
+
+:::
+
+:::info Compatibility
+
+Requests without a referrer are matched by rules with `$~third-party` in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.18 or later.
 
 :::
 
@@ -1342,6 +1369,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$removeparam](#removeparam-modifier)       |                      ✅                      |                      ✅                       | ✅ [*[6]](#removeparam-modifier-limitations)  |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
 | [$replace](#replace-modifier)               |                      ✅                      |                      ❌                       |                      ❌                       |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
 | [$urltransform](#urltransform-modifier)     |                      ✅                      |                      ❌                       |                      ❌                       |                      ❌                       |             ❌              |               ❌               |                 ❌                 |
+| [$reason](#reason-modifier)                 |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ✅              |               ✅               |                 ❌                 |
 | [noop](#noop-modifier)                      |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ✅              |               ✅               |                 ❌                 |
 | [$empty 👎](#empty-modifier "deprecated")    |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
 | [$mp4 👎](#mp4-modifier "deprecated")        |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
@@ -1875,7 +1903,7 @@ In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.11 or later, JSONPa
 {
     "elems": [
         {
-            "a": {"b": {"c": 123}},
+            "a": {"b": {"c": 123}}
         },
         {
             "a": {"b": {"c": "abc"}}
@@ -2203,7 +2231,7 @@ For the requests matching a `$permissions` rule, AdGuard strengthens response's 
 1. A comma that separates multiple features **MUST** be escaped — see examples below.
 2. A pipe character (`|`) can be used instead of a comma to separate features.
 
-The list of available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
+Available directives are listed in the [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives) article.
 
 `$permissions` value can be empty in the case of exception rules — see examples below.
 
@@ -2905,6 +2933,41 @@ Rules with the `$urltransform` modifier are supported by AdGuard for Windows, Ad
 
 :::
 
+#### **`$reason`** {#reason-modifier}
+
+The `$reason` modifier allows you to add a custom explanation message that will be displayed on the blocking page when a request is blocked by this rule. This modifier only works with the `$document` content-type modifier.
+
+**Character limitations and escaping requirements:**
+
+- There is no maximum length limit for the reason text
+- All characters are allowed in the reason text
+- Special characters (such as quotes, commas, and backslashes) must be properly escaped using the backslash (`\`)
+
+**Predefined localizable tokens:**
+
+Instead of custom text, you can use predefined tokens that will be automatically localized:
+
+- `malicious` — for malicious content
+- `tracker` — for tracking content
+- `disreputable` — for disreputable content
+
+**Examples**
+
+```adblock
+||example.com^$document,reason="Tracker"
+||example.com^$document,reason="Malicious site blocked by security filter"
+||ads.example.com^$document,reason="This site contains tracking scripts"
+||malware.example.com^$document,reason="Site blocked: \"Known malware distributor\""
+||tracking.example.com^$document,reason=disreputable
+||analytics.example.com^$document,reason=tracker
+```
+
+:::info Compatibility
+
+AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with CoreLibs v1.20 or later support rules with the `$reason` modifier. AdGuard Content Blocker does not support these rules.
+
+:::
+
 #### **`noop`** {#noop-modifier}
 
 `noop` modifier does nothing and can be used solely to increase rules' readability. It consists of a sequence of underscore characters (`_`) of arbitrary length and can appear in a rule as often as needed.
@@ -3313,6 +3376,26 @@ CSS rules may operate differently [depending on the platform](#cosmetic-rules-pr
 
 :::
 
+:::info Adblock Plus compatibility
+
+In AdGuard products that use **CoreLibs version 1.18 or later**, you can also use element hiding rules to inject a `remove: true` declaration:
+
+```adblock
+example.org##body { remove: true; }
+```
+
+This usage is discouraged in favor of using [CSS rules](#cosmetic-css-rules) and is only supported for compatibility with filter lists written for Adblock Plus.
+
+Element hiding exceptions (`#@#`) are matched by the selector part only, ignoring the declarations block part. For example, the above rule can be disabled by any of the following exception rules:
+
+```adblock
+example.org#@#body
+example.org#@#body { remove: true; }
+example.org#@#body{remove:true;}
+```
+
+:::
+
 ### Extended CSS selectors {#extended-css-selectors}
 
 - [Limitations](#extended-css-limitations)
@@ -3385,15 +3468,20 @@ Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3
 
 :::note
 
-Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`][native-has] if they use the `##` rule marker and if it is possible, i.e., there are no other extended CSS selectors inside. If it is not supported by the product, ExtendedCss implementation will be used even for rules with the `##` marker.
+Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`][native-has] if they use the `##` rule marker and if it is possible, i.e., there are no other extended CSS selectors inside. If it is not supported by the product (or by the browser in case of AdGuard Browser Extension), ExtendedCss implementation will be used automatically as a fallback, even for rules with the `##` marker.
 
-Currently, not all AdGuard products support the native implementation of `:has()` yet:
+AdGuard products support the native implementation of `:has()`:
 
-- AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **do support** it with [CoreLibs][] v1.12 or later.
-- AdGuard for iOS and AdGuard for Safari **do support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 and [Safari browser v16.4][safari-16.4].
-- AdGuard Browser Extension **does not support** it yet, but it is [planned][AdguardBrowserExtension#2587].
+- AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **support** it with [CoreLibs][] v1.12 or later.
+- AdGuard for iOS and AdGuard for Safari **support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 and [Safari browser v16.4][safari-16.4] or later.
+- AdGuard Browser Extension **supports** it in v5.3 or later:
+    - **Manifest V3** (Chromium-based): always uses native `:has()` by default.
+    - **Manifest V2**: Detects native `:has()` support using `CSS.supports()` and falls back to ExtendedCss if the browser doesn’t support it natively.
+- All other AdGuard products **do not support** it.
 
-To force the ExtendedCss implementation of `:has()` to be used, use the `#?#` or `#$?#` rule markers explicitly, e.g., `example.com#?#p:has(> a)` or `example.com#$?#div:has(> span) { display: none !important; }`.
+To force the ExtendedCss implementation of `:has()` to be used (regardless of native support), use the `#?#` or `#$?#` rule markers explicitly, e.g., `example.com#?#p:has(> a)` or `example.com#$?#div:has(> span) { display: none !important; }`.
+
+And since the `:has()` pseudo-class cannot be nested within another `:has()` in native implementation, e.g. `div:has(p:has(a))`, it is always treated as extended in AdGuard Browser Extension.
 
 :::
 
@@ -4029,6 +4117,8 @@ The syntax with an optional `value` in the attributes is supported by AdGuard fo
 
 ### Syntax
 
+Syntax supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux with CoreLibs, and AdGuard Browser Extension prior to v5.2:
+
 ```text
      selector = [tagName] [attributes] [pseudoClasses]
    combinator = ">"
@@ -4045,6 +4135,24 @@ pseudoClasses = pseudoClass *pseudoClass
 - **`pseudoName`** — the name of a pseudo-class.
 - **`pseudoArgs`** — the arguments of a function-style pseudo-class.
 - **`combinator`** — an operator that works similarly to the [CSS child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator): that is, the `selector` on the right of the `combinator` will only match an element whose direct parent matches the `selector` on the left of the `combinator`.
+
+Syntax supported by AdGuard Browser Extension v5.3 or later:
+
+```text
+         rule = [domains] "$$" selector
+      domains = [domain0, domain1[, ...[, domainN]]]
+```
+
+- **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the element(s) to be removed from the HTML code before the page is loaded.
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rule syntax](#cosmetic-elemhide-rules).
+
+:::caution Limitations
+
+The following limitations apply to AdGuard Browser Extension v5.3 and later:
+
+- Pseudo-elements (e.g., `::before`, `::after`) are not supported, as they are not applicable in the context of HTML filtering.
+
+:::
 
 ### Examples
 
@@ -4075,7 +4183,7 @@ example.org$$div[some_attribute]
 
 This rule removes all `div` elements with the attribute `some_attribute` on `example.org` and all its subdomains. So, the both `div` elements from the example above will be removed.
 
-### Special attributes
+### Special attributes {#html-filtering-rules--special-attributes}
 
 In addition to usual attributes, which value is every element checked for, there is a set of special attributes that change the way a rule works. Below there is a list of these attributes:
 
@@ -4109,6 +4217,8 @@ $$script[tag-content="banner"]
 
 The `tag-content` special attribute must not appear in a selector to the left of a `>` combinator.
 
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
+
 :::
 
 #### `wildcard`
@@ -4130,6 +4240,8 @@ It checks if the element code contains the two consecutive substrings `banner` a
 :::caution Limitations
 
 The `wildcard` special attribute must not appear in a selector to the left of a `>` combinator.
+
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 :::
 
@@ -4159,6 +4271,8 @@ This rule will remove all the `div` elements, whose code contains the substring 
 
 The `max-length` special attribute must not appear in a selector to the left of a `>` combinator.
 
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
+
 :::
 
 #### `min-length`
@@ -4183,11 +4297,13 @@ This rule will remove all the `div` elements, whose code contains the substring 
 
 The `min-length` special attribute must not appear in a selector to the left of a `>` combinator.
 
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
+
 :::
 
-### Pseudo-classes
+### Pseudo-classes {#html-filtering-rules--pseudo-classes}
 
-#### `:contains()`
+#### `:contains()` {#html-filtering-rules--contains}
 
 ##### Syntax
 
@@ -4209,7 +4325,7 @@ or
 
 :::info Compatibility
 
-The `:contains()` pseudo-class is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.13 or later.
+The `:contains()` pseudo-class is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux with [CoreLibs][] v1.13 or later, and AdGuard Browser Extension v5.3 or later.
 
 :::
 
@@ -4218,6 +4334,8 @@ Requires that the inner HTML of the element contains the specified text or match
 :::caution Limitations
 
 A `:contains()` pseudo-class must not appear in a selector to the left of a `>` combinator.
+
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 :::
 
@@ -4427,7 +4545,7 @@ More information about trusted scriptlets can be found [on GitHub](https://githu
 
 Each rule can be modified using the modifiers described in the following paragraphs.
 
-**Syntax** {#non-basic-rules-modifiers-syntax}
+**Syntax**
 
 ```text
 rule = "[$" modifiers "]" [rule text]
@@ -4441,12 +4559,12 @@ For example, `[$domain=example.com,app=test_app]##selector`.
 
 In the modifiers values, the following characters must be escaped: `[`, `]`, `,`, and `\` (unless it is used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like this: `\]`.
 
-| Modifier \ Products                  | [CoreLibs apps][cl-apps] |        [AdGuard for Chromium][ext-chr]        |        [AdGuard for Chrome MV3][ext-mv3]         |         [AdGuard for Firefox][ext-ff]         | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
-| ------------------------------------- |:------------------------:|:---------------------------------------------:|:------------------------------------------------:|:---------------------------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
-| [$app](#non-basic-app-modifier)       |            ✅             |                       ❌                       |                        ❌                         |                       ❌                       |             ❌              |               ❌               |                 ❌                 |
-| [$domain](#non-basic-domain-modifier) |            ✅             |                       ✅                       | ✅ [*[1]](#non-basic-domain-modifier-limitations) |                       ✅                       |             ✅              |               ✅               |                 ❌                 |
-| [$path](#non-basic-path-modifier)     |            ✅             |                       ✅                       |                        ❌                         |                       ✅                       |             ✅              |               ✅               |                 ❌                 |
-| [$url](#non-basic-url-modifier)       |            ✅             | ✅ [*[2]](#non-basic-url-modifier-limitations) |  ✅ [*[2]](#non-basic-url-modifier-limitations)   | ✅ [*[2]](#non-basic-url-modifier-limitations) |             ❌              |               ❌               |                 ❌                 |
+| Modifier \ Products                  | [CoreLibs apps][cl-apps] |        [AdGuard for Chromium][ext-chr]         |        [AdGuard for Chrome MV3][ext-mv3]         |         [AdGuard for Firefox][ext-ff]          | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
+| ------------------------------------- |:------------------------:|:----------------------------------------------:|:------------------------------------------------:|:----------------------------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
+| [$app](#non-basic-app-modifier)       |            ✅             |                       ❌                        |                        ❌                         |                       ❌                        |             ❌              |               ❌               |                 ❌                 |
+| [$domain](#non-basic-domain-modifier) |            ✅             |                       ✅                        | ✅ [*[1]](#non-basic-domain-modifier-limitations) |                       ✅                        |             ✅              |               ✅               |                 ❌                 |
+| [$path](#non-basic-path-modifier)     |            ✅             | ✅ [*[2]](#non-basic-path-modifier-limitations) |                        ❌                         | ✅ [*[2]](#non-basic-path-modifier-limitations) |             ✅              |               ✅               |                 ❌                 |
+| [$url](#non-basic-url-modifier)       |            ✅             | ✅ [*[3]](#non-basic-url-modifier-limitations)  |  ✅ [*[3]](#non-basic-url-modifier-limitations)   | ✅ [*[3]](#non-basic-url-modifier-limitations)  |             ❌              |               ❌               |                 ❌                 |
 
 :::note
 
@@ -4532,6 +4650,14 @@ If `pattern` is not set for `$path`, rule will apply only on the main page of we
 - `[$path]example.com##.textad` hides a `div` with the class `textad` at the main page of `example.com`
 - `[$domain=example.com,path=/page.html]##.textad` hides a `div` with the class `textad` at `page.html` of `example.com` and all subdomains but not at `another_page.html`
 - `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` hides a `div` with the class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please note the [escaped special characters](#non-basic-rules-modifiers-syntax))
+
+#### `$path` modifier limitations {#non-basic-path-modifier-limitations}
+
+:::caution Limitations
+
+In AdGuard Browser Extension, the non-basic `$path` modifier is compatible with other non-basic modifiers only when it is placed last, e.g., `[$domain=/example.(com|org)/,path=/foo]##.ad`. Otherwise, it may not work as expected.
+
+:::
 
 :::info Compatibility
 
@@ -5043,7 +5169,6 @@ The following scriptlets also may be used for debug purposes:
 
 [native-has]: https://developer.mozilla.org/docs/Web/CSS/:has
 [safari-16.4]: https://www.webkit.org/blog/13966/webkit-features-in-safari-16-4/
-[AdguardBrowserExtension#2587]: https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2587
 
 [cl-apps]: #what-product "AdGuard for Windows, Mac, Linux, Android"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"

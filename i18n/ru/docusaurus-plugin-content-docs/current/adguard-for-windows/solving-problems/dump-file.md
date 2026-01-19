@@ -5,34 +5,57 @@ sidebar_position: 8
 
 :::info
 
-В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
+В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock).
 
 :::
 
 :::note
 
-Data and files provided in dump files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Данные и/или файлы в дампах обрабатываются в соответствии с [Политикой конфиденциальности AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-If you experience an issue while using AdGuard, the support team may ask you to provide a dump file. This file helps developers see what processes were running in the app at the time and identify the cause of the problem.
+Если у вас возникли проблемы при использовании AdGuard, команда поддержки может попросить вас предоставить файл дампа. Файл дампа помогает разработчикам увидеть процессы, которые выполнялись в приложении в определённый период времени и определить причину возникновения проблемы.
 
-Follow these steps to create a dump file:
+Выполните следующие шаги, чтобы создать файл дампа:
 
-1. Press *Ctrl + Shift + Esc* to open *Task Manager*.
+1. Нажмите *Ctrl + Shift + Esc*, чтобы открыть *Диспетчер задач*.
 
-1. In the left sidebar, click *Details*. ![Task Manager details *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/task_manager_en.png)
-1. Right-click the process you want to create a dump file for. In the drop-down menu, click *Create memory dump file*. ![Create dump file *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/create_dump_en.png)
-1. Once the dump file is created, you’ll be prompted to open the folder where it’s saved. If not, you can find it in the **%tmp%** folder. ![Open file location *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/open_file_location_en.png)
+1. На левой боковой панели нажмите *Сведения*. ![Сведения в диспетчере задач *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/task_manager_en.png)
+1. Щёлкните правой кнопкой мыши на процессе, для которого нужно создать файл дампа. В раскрывающемся меню нажмите *Создать файл дампа памяти*. ![Создать файл дампа *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/create_dump_en.png)
+1. После создания файла дампа вам будет предложено открыть папку, в которой он сохранён. Если нет, вы можете найти его в папке **%tmp%**. ![Открыть местоположение файла *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/open_file_location_en.png)
 
-The created dump file (`.DMP`) will have the same name as the process you selected.
+У созданного файла дампа (`.DMP`) будет то же имя, что и у выбранного вами процесса.
 
 :::note
 
-AdGuard for Windows runs two processes: `Adguard.exe` and `AdguardSvc.exe`. You’ll need to create a separate dump file for each one.
+AdGuard для Windows запускает два процесса: `Adguard.exe` и `AdguardSvc.exe`. Нужно создать отдельный файл дампа для каждого из них.
 
 :::
 
-![Two processes *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/two_processes_en.png)
+![Два процесса *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/two_processes_en.png)
 
-Since dump files can be large, please compress them into an archive before sending them to support. Also, include the AdGuard logs to help us diagnose the issue more effectively. [Instructions for collecting logs](../adguard-logs).
+Поскольку файлы дампов могут быть большими, пожалуйста, заархивируйте их перед отправкой команде поддержки. Также приложите логи AdGuard, чтобы мы могли более эффективно диагностировать проблему. [Инструкция по сбору логов](../adguard-logs).
+
+## Сбор файла `wfpdiag.cab`
+
+Наша команда поддержки может запросить файл wfpdiag.cab, а также файл minidump, чтобы более тщательно проанализировать системные логи и диагностировать проблемы. Чтобы получить файл, выполните следующие действия:
+
+1. Включите защиту AdGuard.
+
+1. Нажмите *Пуск* и введите `cmd`, чтобы открыть командную строку
+
+1. Щёлкните правой кнопкой мыши по командной строке и выберите *Запуск от имени администратора*
+
+    :::note
+
+    Файл wfpdiag.cab будет создан в текущем каталоге. Вы можете изменить его местоположение, введя `cd <folder_name>`.
+
+
+:::
+
+1. Чтобы начать логирование, введите команду: `netsh wfp capture start`
+
+1. Откройте любой сайт, чтобы направить трафик через AdGuard и зафиксировать процесс фильтрации
+
+1. Чтобы остановить логирование, введите `netsh wfp capture stop`

@@ -43,89 +43,89 @@ AdGuard para Linux requiere una [licencia de AdGuard](https://adguard.com/licens
 
 1. Después de la instalación, ingresa:
 
-    ```sh
-    adguard-cli activate
-    ```
+   ```sh
+   adguard-cli activate
+   ```
 
 2. Luego selecciona la opción deseada:
 
-    ![adguard-cli activate \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation1.png)
+   ![adguard-cli activate \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/1activate.png)
 
 3. Una vez que tengas una licencia, sigue el enlace proporcionado para continuar con la activación:
 
-    ![Activar licencia \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation2.png)
+   ![Activate license \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/2activate_link.png)
 
 4. Después de la activación, puedes continuar trabajando con el programa:
 
-    ![Activación exitosa \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation3.png)
+   ![Successful activation \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/3activate_success.png)
 
 5. También puedes reiniciar tu licencia ingresando:
 
-    ```sh
-    adguard-cli reset-license
-    ```
+   ```sh
+   adguard-cli reset-license
+   ```
 
-    o visualizar la información de la licencia ingresando
+   o visualizar la información de la licencia ingresando
 
-    ```sh
-    adguard-cli license
-    ```
+   ```sh
+   adguard-cli license
+   ```
 
 6. Ahora necesitas configurar AdGuard CLI. Para ejecutar el asistente de configuración, ingresa:
 
-    ```sh
-    adguard-cli configure
-    ```
+   ```sh
+   adguard-cli configure
+   ```
 
-    ![Configuración \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation4.png)
+   ![Setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/4configure.png)
 
-    El asistente hará preguntas básicas necesarias para la configuración inicial.
+   El asistente hará preguntas básicas necesarias para la configuración inicial.
 
 7. Después de eso, puedes comenzar la protección de AdGuard ingresando
 
-    ```sh
-    adguard-cli start
-    ```
+   ```sh
+   adguard-cli start
+   ```
 
-    ![Iniciar protección \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation5.png)
+   ![Start protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/5start.png)
 
 8. Puedes verificar el estado de la protección usando:
 
-    ```sh
-    adguard-cli status
-    ```
+   ```sh
+   adguard-cli status
+   ```
 
-    y deténlo con:
+   y deténlo con:
 
-    ```sh
-    adguard-cli stop
-    ```
+   ```sh
+   adguard-cli stop
+   ```
 
-    ![Iniciar protección \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+   ![Stop protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/6status-stop.png)
 
 9. Para comprobar la configuración actual, ingresa:
 
-    ```sh
-    adguard-cli config show
-    ```
+   ```sh
+   adguard-cli config show
+   ```
 
-    ![Configuración actual \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+   ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/7config_show.png)
 
-    También se mostrará la ruta al archivo de configuración, que puedes y debes editar directamente. Contiene descripciones de todas las opciones adicionales.
+   También se mostrará la ruta al archivo de configuración, que puedes y debes editar directamente. Contiene descripciones de todas las opciones adicionales.
 
-    Como alternativa, puedes utilizar los comandos:
+   Como alternativa, puedes utilizar los comandos:
 
-    ```sh
-    adguard-cli config get
-    ```
+   ```sh
+   adguard-cli config get
+   ```
 
-    o:
+   o:
 
-    ```sh
-    adguard-cli config set
-    ```
+   ```sh
+   adguard-cli config set
+   ```
 
-    Sin embargo, están destinados principalmente a la creación de scripts.
+   Sin embargo, están destinados principalmente a la creación de scripts.
 
 Para restablecer tu licencia, introduce:
 

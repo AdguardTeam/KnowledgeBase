@@ -29,15 +29,15 @@ Aceste reguli se aplică tuturor aplicațiilor de pe dispozitivul dumneavoastră
 
 1. Deschideți _Reguli de firewall personalizate_. Sub _Aplicații cu reguli personalizate_, atingeți _Adăugați aplicație_.
 
-    ![Reguli de firewall personalizate \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+   ![Reguli de firewall personalizate \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
 2. Selectați aplicația pentru care doriți să stabiliți reguli individuale.
 
-    ![Adăugarea unei aplicații la regulile de firewall personalizate \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+   ![Adăugarea unei aplicații la regulile de firewall personalizate \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
 3. În _Reguli personalizate disponibile_, selectați cele pe care doriți să le configurați și atingeți iconița “+”. Regulile vor apărea acum în _Reguli personalizate aplicate_.
 
-    ![Regulă adăugată \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+   ![Regulă adăugată \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
 4. Dacă trebuie să blocați un tip specific de conexiune, comutați butonul spre stânga. Dacă doriți să permiteți conexiunea, lăsați butonul activat. **Regulile personalizate suprascriu regulile globale**: orice modificări pe care le faceți în _Reguli globale de firewall_ nu vor afecta această aplicație.
 

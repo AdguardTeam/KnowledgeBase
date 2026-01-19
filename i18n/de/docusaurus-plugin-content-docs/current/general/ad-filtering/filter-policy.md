@@ -3,6 +3,16 @@ title: Filterrichtlinie von AdGuard
 sidebar_position: 6
 ---
 
+:::note Haftungsausschluss
+
+Bitte lesen Sie diese Filterrichtlinie sorgfältig durch, bevor Sie einen Filter aktivieren.
+
+Das Verwenden von AdGuard Werbeblocker, AdGuard DNS und deren Filtern kann die Funktionsweise von Websites und Diensten von Drittanbietern beeinträchtigen. Sie sind dafür verantwortlich, die Richtlinien und Bedingungen aller von Ihnen genutzten Websites oder Dienste zu überprüfen und zu befolgen.
+
+Bevor Sie Filter von Drittanbietern aktivieren, erklären Sie sich damit einverstanden, deren geltende Bedingungen zu überprüfen und eine fundierte Entscheidung über deren Verwendung zu treffen. AdGuard ist nicht dafür verantwortlich, wie Filter von Drittanbietern funktionieren oder was deren Bedingungen enthalten, und das Vorhandensein dieser Filter in AdGuard-Produkten stellt keine Empfehlung zu deren Verwendung dar.
+
+:::
+
 Bei AdGuard folgen wir seit langem bestimmten Grundsätzen bei der Erstellung unserer Filter, die zusammen mit den Filterbeschreibungen unten als Teil unserer Filterrichtlinien aufgeführt sind.
 
 ## Gemeinsame Kriterien
@@ -41,14 +51,12 @@ AdGuard-Filter zum Blockieren von Werbung umfassen:
 - AdGuard Basisfilter
 - AdGuard-Filter gegen mobile Werbung
 - Regionale Filter nach Sprachprinzip — Chinesisch, Niederländisch, Französisch, Deutsch, Japanisch, Russisch, Spanisch/Portugiesisch, Türkisch, und Ukrainisch
-- AdGuard Quick Fixes-Filter
 
 ### Der Zweck dieser Filter
 
 - **Der Basisfilter** blockiert Werbung auf englischsprachigen Websites und solchen, für die es keinen eigenen Filter gibt. Er enthält auch allgemeine Filterregeln, die für alle Websites unabhängig von der Sprache gelten
 - **Filter gegen mobile Werbung** blockiert Werbung auf mobilen Versionen von Websites und in mobilen Apps. Es gibt keine Unterteilung nach Sprachen
 - **Sprachspezifische Filter** folgen der gleichen Politik wie der **Basisfilter**, sind aber auf Websites in bestimmten Sprachen beschränkt
-- **Quick-Fixes-Filter** zur schnellen Behebung kritischer Probleme bei der Filterung von Inhalten auf beliebten Websites ohne Aktualisierung der MV3-Erweiterung.
 
 Das Ziel von Werbeblockern ist es, alle Arten von Werbung auf Websites, in Apps und auf bestimmten Geräten, die Werbung aus dem Internet laden können, zu blockieren:
 

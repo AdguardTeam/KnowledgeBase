@@ -43,18 +43,46 @@ Finalizat, AdGuard pentru Android TV este instalat.
 
 4. Notează adresa IP a TV-ului tău Android:
 
-    - Pe TV-ul tău Android, navighează la Setări.
-    - Selectează _System_ → _About_.
-    - Găsiți _Network_ și selectați _Wi-Fi_ sau _Ethernet_, în funcție de tipul de conexiune.
-    - Go to the network section and find _IP address_. Notează această adresă IP.
+   - Pe TV-ul tău Android, navighează la Setări.
+   - Selectează _System_ → _About_.
+   - Găsiți _Network_ și selectați _Wi-Fi_ sau _Ethernet_, în funcție de tipul de conexiune.
+   - Go to the network section and find _IP address_. Notează această adresă IP.
 
 5. Conectați-vă la Android TV prin ADB:
 
-    - Deschideți terminalul sau promptul de comandă pe computerul dvs.
-    - Introduceți comanda `adb connect` și lipiți adresa IP a TV-ului dvs.
-    - Conexiunea va fi stabilită.
+   - Deschideți terminalul sau promptul de comandă pe computerul dvs.
+   - Introduceți comanda `adb connect` și lipiți adresa IP a TV-ului dvs.
+   - Conexiunea va fi stabilită.
 
 6. Instalați AdGuard pentru Android TV prin ADB:
 
-    - În terminal, introduceți comanda `adb install Downloads/adguard_tv.apk`. Dacă este necesar, înlocuiți `Downloads/adguard_tv.apk` cu calea dvs.
-    - Așteptați un mesaj în terminal care să indice instalarea reușită a aplicației.
+   - În terminal, introduceți comanda `adb install Downloads/adguard_tv.apk`. Dacă este necesar, înlocuiți `Downloads/adguard_tv.apk` cu calea dvs.
+   - Așteptați un mesaj în terminal care să indice instalarea reușită a aplicației.
+
+## Installing AdGuard for Android TV via atvTools
+
+**Important:** Your smartphone and TV with Android TV (TV box) must be on the same local network.
+
+1. Install the [atvTools](https://play.google.com/store/apps/details?id=dev.vodik7.atvtools) app on your Android smartphone
+
+2. Connect **atvTools** to **Android TV**
+
+   1. Enable developer mode on your Android TV device
+
+      `Settings` → `Device settings` → `About device` → Tap `Android TV build` until you see a message confirming that you have successfully obtained developer status
+
+   2. Enable USB debugging on your Android TV device
+
+      Go to `Settings` → `Device settings` → `For developers` → `Debugging`, allow and enable `USB debugging`
+
+3. Launch **atvTools** on your smartphone
+
+4. Find the desired **Android TV** device in the list and click it
+
+5. Allow the connection on the TV
+
+6. Download the [AdGuard for Android TV](https://agrd.io/tvapk) installer to your smartphone as an **APK** file
+
+7. In **atvTools**, click **Install** on the main screen and wait (less than a minute) until the **AdGuard for Android TV** icon appears in the list of applications
+
+![Main screen \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/android-tv/main-screen.png)

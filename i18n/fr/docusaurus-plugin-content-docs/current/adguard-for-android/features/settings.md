@@ -132,6 +132,12 @@ Le mode _VPN local_ ne permet pas d'utiliser AdGuard simultanément avec d'autre
 
 - _Le proxy automatique_ est une méthode alternative de routage du trafic qui ne nécessite pas l'utilisation d'un VPN. L’un des avantages majeurs est qu’il peut être exécuté en parallèle avec un VPN. Ce mode nécessite un accès root.
 
+:::note
+
+Please note that DNS filtering will still be active in _Automatic proxy_ routing mode, and your device may not be able to filter DNS requests from specific apps. In _VPN_ routing mode, apps are excluded from the local VPN by system means. Therefore, the system resolver sees which apps are included in the VPN and which are not. It either allows them into the local VPN or lets them bypass it. However, DNS requests come from the system resolver, not the application. In _Automatic proxy_ mode, it is only possible to exclude traffic from applications, not their DNS queries, because AdGuard sees them as system queries.
+
+:::
+
 - _Le proxy manuel_ implique la configuration d'un serveur proxy sur un port spécifique, qui peut ensuite être configuré dans les paramètres Wi-Fi. Ce mode nécessite un accès root pour Android 10 et versions ultérieures.
 
 ## Licence
@@ -139,13 +145,13 @@ Le mode _VPN local_ ne permet pas d'utiliser AdGuard simultanément avec d'autre
 Dans cette section, vous pouvez trouver des informations sur votre licence et la gérer :
 
 - Acheter une licence AdGuard pour activer [les fonctionnalités de la version complète](/adguard-for-android/features/free-vs-full)
-- Se connecter à votre compte AdGuard ou saisir la clef de licence pour activer votre licence
-- S'inscrire pour activer votre période d'essai de 7 jours si vous ne l'avez pas encore utilisée
+- Log in to your AdGuard account or enter the activation code to activate your license
+- Sign up to activate your 14-day trial period. The activation code can be used on different devices and platforms
 - Rafraîchir le statut de la licence via le menu à trois points (⋮)
 - Ouvrir le compte AdGuard pour gérer votre licence
 - Réinitialiser votre licence — par exemple, si vous avez atteint la limite d'appareils pour cette licence et que vous souhaitez en appliquer une autre
 
-![Écran de licence \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![License screen \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/android/settings/licensetab.png)
 
 ## Assistance
 

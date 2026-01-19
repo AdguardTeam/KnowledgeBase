@@ -138,6 +138,12 @@ If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in add
 
 **HTTP/3 Hakkında**: Bu, QUIC tabanlı HTTP protokolünün en son sürümüdür.
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 ### Giden proxy
 
 #### Show the Filter DNS requests setting
@@ -204,10 +210,6 @@ Here you can set the delay in milliseconds before AdGuard reschedules the restor
 #### MTU
 
 Burada VPN arayüzünün maksimum iletim birimini (MTU) ayarlayabilirsiniz. Bu, yerel VPN'inizde kullanılan veri paketinin maksimum boyutudur. Önerilen aralık 1500-1900 bayttır.
-
-#### Restore VPN automatically
-
-Bu ayar etkinleştirilirse, AdGuard'ın yerel VPN'i ağ yokluğu, tethering veya düşük güç modu nedeniyle kapatıldıktan sonra otomatik olarak yeniden etkinleştirilir.
 
 #### Paket yakalama (PCAP)
 

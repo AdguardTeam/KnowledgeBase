@@ -3,6 +3,16 @@ title: AdGuard filter policy
 sidebar_position: 6
 ---
 
+:::note Disclaimer
+
+Please read this filter policy carefully before enabling any filters.
+
+Using AdGuard Ad Blocker, AdGuard DNS, and their filters may affect how third-party websites and services function. You are responsible for reviewing and following the policies and terms of any websites or services you use.
+
+Before enabling filters provided by third parties, you agree to review their applicable terms and make an informed decision about using them. AdGuard is not responsible for how third-party filters operate or what their terms contain, and their presence in AdGuard products is not a recommendation to use them.
+
+:::
+
 At AdGuard, we’ve long followed certain principles in making our filters, which, along with filter descriptions, are outlined below as part of our filtering policy.
 
 ## Common criteria
@@ -41,14 +51,12 @@ AdGuard ad-blocking filters include:
 - AdGuard Base filter
 - AdGuard Mobile Ads filter
 - Regional filters divided by language principle — Chinese, Dutch, French, German, Japanese, Russian, Spanish/Portuguese, Turkish, and Ukrainian
-- AdGuard Quick Fixes filter
 
 ### The purpose of these filters
 
 - **Base filter** is designed to block ads on English-language websites and those for which there is no separate filter. It also contains general filtering rules that apply to all sites regardless of language
 - **Mobile Ads filter** blocks advertisements on mobile versions of websites and within mobile apps. There is no segmentation based on language
 - **Regional filters** follow the same policy as the **Base filter**, but limited to websites in certain languages
-- **Quick Fixes filter** used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension.
 
 The goal of ad-blocking filters is to block all types of advertising on websites, applications, and certain devices that can load ads from the Internet:
 

@@ -137,6 +137,12 @@ For AdGuard for Android v4.x we’ve completely redesigned the low-level setting
 
 **关于 HTTP/3**：这是基于 QUIC 的 HTTP 协议的最新版本。
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 ### 出站代理
 
 #### 显示「过滤 DNS 请求」设置
@@ -203,10 +209,6 @@ For AdGuard for Android v4.x we’ve completely redesigned the low-level setting
 #### MTU
 
 用户可以在此处设置 VPN 接口的最大传输单元 （MTU）。 这是您本地 VPN 中使用的数据包的最大大小。 推荐范围是 1500–1900.
-
-#### 自动恢复 VPN 连接
-
-如果启用，AdGuard 的本地 VPN 将在因网络缺失、系留或低功耗模式而关闭后自动重新启用。
 
 #### 数据包捕获（PCAP）
 

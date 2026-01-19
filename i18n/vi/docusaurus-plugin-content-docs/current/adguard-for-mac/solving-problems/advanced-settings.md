@@ -81,6 +81,12 @@ Verifies the authenticity of all certificates for the domain based on Chrome Cer
 
 By setting `true`, you allow AdGuard to filter traffic sent over HTTP/3, the latest version of the HTTP protocol based on QUIC.
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 #### `network.filtering.localnetwork`
 
 By setting `true`, you enable local network filtering.
@@ -164,6 +170,10 @@ Removes the Encrypted Client Hello parameters from responses.
 Blocks macOS Private Relay domains if the user has a firewall enabled, which in turn disables the *Private Relay* feature.
 
 Enabling this setting is useful in the following scenario: when macOS Private Relay is active, filtering cannot function properly and must be disabled. In macOS versions up to 14, AdGuard could automatically disable Private Relay when Protection was enabled. However, starting with macOS 15, this is no longer possible if a firewall is active. By turning on this setting, you can disable Private Relay even when the firewall is enabled, overcoming the previous limitation.
+
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Secures DNS proxy connections with a hybrid post-quantum key exchange, combining the classical X25519 algorithm with the ML-KEM-768 post-quantum KEM. Applies only to DoH, DoT, and DoQ upstreams.
 
 ### Stealth Mode settings
 

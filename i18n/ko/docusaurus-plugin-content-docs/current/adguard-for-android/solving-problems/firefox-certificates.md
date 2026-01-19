@@ -11,7 +11,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 AdGuard가 Firefox에서 HTTPS 트래픽을 성공적으로 필터링하기 위해서는 브라우저가 AdGuard의 인증서를 신뢰해야 합니다. Firefox 버전에 따라 브라우저가 인증서를 신뢰하도록 하는 방법은 다릅니다.
 
-### Method 1
+### 방법 1
 
 :::note
 
@@ -35,7 +35,7 @@ Firefox Nightly가 AdGuard 인증서를 신뢰하도록 하려면 다음 단계�
 
 1. Toggle **Use third party CA certificates**.
 
-### Method 2
+### 방법 2
 
 :::note
 

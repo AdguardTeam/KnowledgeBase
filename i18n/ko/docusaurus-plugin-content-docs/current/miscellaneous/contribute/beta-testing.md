@@ -17,7 +17,7 @@ AdGuard를 사용하고, 베타/나이틀리 버전으로 업그레이드할 수
 
 또한 앱을 설치할 기기와 [베타 테스트 페이지 링크](https://adguard.com/beta.html)가 필요합니다. 여기에서 프로그램에 참여하고 Windows, Mac, Android, iOS용 AdGuard를 테스트하는 방법에 대한 자세한 정보를 확인할 수 있습니다.
 
-설명 부분을 건너뛰고 바로 실행에 옮기고 싶다면 [여기](https://surveys.adguard.com/beta_testing_program/form.html)에서 신청할 수 있습니다. 신청서는 영업일 기준 1~3일 이내에 검토되며 이메일을 통해 회신해 드립니다.
+If you would like to become a tester, please [fill out the form](https://surveys.adguard.com/beta_testing_program/form.html) to submit your application. If it is approved, you will receive a response via email within a few days.
 
 :::note
 

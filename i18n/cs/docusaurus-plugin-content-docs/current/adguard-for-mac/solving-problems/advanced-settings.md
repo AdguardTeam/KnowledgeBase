@@ -81,6 +81,12 @@ Ověřuje pravost všech certifikátů pro doménu na základě zásad transpare
 
 Nastavením `true` umožníte AdGuardu filtrovat provoz odeslaný skrze HTTP/3, nejnovější verzi protokolu HTTP založeného na QUIC.
 
+**Omezení**:
+
+- Prohlížeče založené na Chrome nepřijímají uživatelské certifikáty, proto v nich není podporováno filtrování HTTP/3.
+- Prohlížeče založené na Firefoxu se ve výchozím nastavení chovají podobně, ale můžete nastavit možnost `network.http.http3.disable_when_third_party_roots_found` v `about:config` na `false`, aby byly povoleny uživatelské certifikáty pro HTTP/3.
+- Safari podporuje filtrování HTTP/3 bez další konfigurace.
+
 #### `network.filtering.localnetwork`
 
 Nastavením `true` povolíte filtrování lokální sítě.
@@ -164,6 +170,10 @@ Odstraní z dotazů parametry Encrypted Client Hello.
 Blokuje domény macOS Private Relay, pokud má uživatel povolenou bránu firewall, která následně zakáže funkci *Private Relay*.
 
 Povolení tohoto nastavení je užitečné v následujícím scénáři: pokud je aktivní macOS Private Relay, filtrování nemůže správně fungovat a musí být zakázáno. Ve verzích macOS až do verze 14 mohl AdGuard při zapnuté ochraně automaticky vypnout funkci Private Relay. Od systému macOS 15 to však již není možné, pokud je aktivní brána firewall. Zapnutím tohoto nastavení můžete zakázat funkci Private Relay, i když je brána firewall povolena, a překonat tak předchozí omezení.
+
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Zabezpečuje připojení DNS proxy pomocí hybridní postkvantové výměny klíčů, která kombinuje klasický algoritmus X25519 s postkvantovým algoritmem ML-KEM-768. Platí pouze pro odchozí připojení DoH, DoT a DoQ.
 
 ### Nastavení Režimu utajení
 

@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 In Version 4.7 hat AdGuard für Android einen privaten In-App-Browser eingeführt. Sie können darauf vom Hauptbildschirm aus zugreifen, indem Sie auf die Schaltfläche _Privater Browser_ oder auf den Tab _Schutz_ tippen, in dem sich einige Anpassungsoptionen befinden.
 
-![Privater Browser](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
+![Privater Browser \*mobile](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_de.png)
 
 Das können Sie einrichten:
 

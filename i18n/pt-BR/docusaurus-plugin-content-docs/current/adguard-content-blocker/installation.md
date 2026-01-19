@@ -15,7 +15,7 @@ Instalando o AdGuard Content Blocker no Google Play. Pesquise por *AdGuard Conte
 
 ![AdGuard Content Blocker no Google Play *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market.jpg)
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 O AdGuard Content Blocker funciona em dois navegadores: [Navegador Yandex](https://browser.yandex.com/) e [Navegador Samsung Internet](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
 

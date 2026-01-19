@@ -81,6 +81,12 @@ Chrome Certificate Transparency Policy（証明書透過性ポリシー）に基
 
 `true` を設定すると、AdGuardがHTTP/3（QUICに基づくHTTPプロトコルの最新バージョン）経由で送信されるトラフィックをフィルタリングできるようになります。
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 #### `network.filtering.localnetwork`
 
 `true` を設定すると、ローカル ネットワークフィルタリングが有効になります。
@@ -164,6 +170,10 @@ Chrome Certificate Transparency Policy（証明書透過性ポリシー）に基
 ユーザーがファイアウォールを有効にしている場合、macOSプライベートリレードメインをブロックし、「*プライベートリレー*」機能を無効にします。
 
 この設定を有効にすると、次のような時に便利です：macOSプライベートリレーがアクティブだとフィルタリングは正しく機能しないため、無効にする必要があります。 macOSバージョン14まででは、保護機能が有効の際に、AdGuardはプライベートリレーを自動的に無効にすることができていました。 しかし、macOS 15 以降では、ファイアウォールがアクティブな場合、これを行うことはできません。 この設定をオンにすると、ファイアウォールが有効な場合でもプライベートリレーを無効にすることができ、以前の制限を克服することができます。
+
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Secures DNS proxy connections with a hybrid post-quantum key exchange, combining the classical X25519 algorithm with the ML-KEM-768 post-quantum KEM. Applies only to DoH, DoT, and DoQ upstreams.
 
 ### ステルスモード設定
 

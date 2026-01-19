@@ -3,6 +3,16 @@ title: Politica sui Filtri di AdGuard
 sidebar_position: 6
 ---
 
+:::nota Dichiarazione di non responsabilità
+
+Leggere attentamente questa politica del filtro prima di abilitare qualunque filtro.
+
+L'uso di AdGuard Ad Blocker, AdGuard DNS e dei relativi filtri può influire sul funzionamento di siti web e servizi di terzi. Sei responsabile di rivedere e seguire le politiche e i termini di qualunque sito web o servizio che usi.
+
+Prima di abilitare i filtri forniti da terze parti, accetti di esaminare i loro termini applicabili e prendere una decisione informata sul loro uso. AdGuard non è responsabile di come funzionano i filtri di terze parti o di ciò che contengono i loro termini, e la loro presenza nei prodotti AdGuard non è una raccomandazione per usarli.
+
+:::
+
 Ad AdGuard, seguiamo certi principi nel realizzare i nostri filtri che, insieme alle loro descrizioni, sono delineati di seguito come parte della nostra politica di filtraggio.
 
 ## Criteri comuni
@@ -26,7 +36,7 @@ Un **ad blocker**, o blocco annunci, è uno strumento software o hardware proget
 
 Un **filtro** (o un **elenco di filtri**) è una serie di regole di filtraggio, per filtrare i contenuti e bloccare vari tipi di inserzioni e altri tipi di contenuti, utilizzando gli ad blocker. Questi filtri, solitamente, funzionano al livello del browser web, programma, o server DNS.
 
-**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so-called “adblock walls”). Gli anti-adblock potrebbero essere di diversi tipi:
+Gli **anti-adblock** sono tecnologie utilizzate dai siti web o dalle applicazioni, intese a rilevare il blocco degli annunci e reagirvi in modi differenti: tracciamento, reiniezione delle inserzioni, incoraggiamento a disabilitare il blocco di annunci (cosiddetti "muri adblock"). Gli anti-adblock potrebbero essere di diversi tipi:
 
 - Anti-adblock che bloccano i contenuti del sito web senza offrire un'alternativa: per continuare a utilizzare il sito, l'utente deve disabilitare l'ad blocker sul sito
 - "Muri anti-adblock" con opzioni alternative offerte, come l'acquisto di un abbonamento per continuare a utilizzare il blocco annunci
@@ -41,14 +51,12 @@ I filtri di blocco degli annunci di AdGuard includono:
 - Filtro di base di AdGuard
 - Filtro Inserzioni Mobili di AdGuard
 - Filtri regionali divisi per principio linguistico: cinese, olandese, francese, tedesco, giapponese, russo, spagnolo/portoghese, turco e ucraino
-- AdGuard Quick Fixes filter
 
 ### Lo scopo di questi filtri
 
 - Il **filtro di base** è progettato per bloccare le inserzioni sui siti web in lingua inglese, nonché quelle per le quali non è presente alcun filtro separato. Inoltre, contiene le regole di filtraggio generali che si applicano a tutti i siti, indipendentemente dalla lingua
 - Il **filtro delle Inserzioni Mobili** blocca le inserzioni sulle versioni mobili dei siti web, e sulle app mobili. Non esiste alcuna segmentazione basata sulla lingua
 - I **filtri regionali** seguono la stessa politica del **filtro di base**, ma si limitano ai siti web in certe lingue
-- **Quick Fixes filter** used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension.
 
 L'obiettivo dei filtri di blocco delle inserzioni è bloccare ogni tipo di inserzione sui siti web, le applicazioni, e certi dispositivi capaci di caricare inserzioni da Internet:
 

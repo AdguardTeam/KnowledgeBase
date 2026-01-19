@@ -55,6 +55,24 @@ Acest script elimină caracteristica de urmărire a Google din linkurile din rez
 
 Codul său sursă este [disponibil pe GitHub](https://github.com/Rob--W/dont-track-me-google). Acest userscript poate fi descărcat de pe [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) și instalat în orice aplicație bazată pe AdGuard CoreLibs.
 
+#### SponsorBlock
+
+SponsorBlock skips sponsored segments in YouTube videos. It saves time by jumping straight to the main content and removes interruptions from ads and self-promotions.
+
+:::info
+
+This userscript runs exclusively on our desktop applications, AdGuard for Windows and AdGuard for Mac.
+
+:::
+
+To try it out:
+
+1. Go to [https://mchangrh.github.io/sb.js/](https://mchangrh.github.io/sb.js/).
+2. Click **Generate link**.
+3. Copy the link that appears.
+4. Open AdGuard and go to **Extensions → Add extension → Import from file or URL**.
+5. Paste the copied link and confirm.
+
 #### tinyShield
 
 Un userscript pentru persoanele care vizitează site-uri coreene și unele site-uri internaționale. The tinyShield userscript blocks Ad-Shield ads and anti-adblocks. Acest userscript poate fi instalat în aplicațiile bazate pe AdGuard CoreLibs, Violentmonkey, Tampermonkey și [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about tinyShield and how to install it on [GitHub](https://github.com/List-KR/tinyShield).
@@ -147,6 +165,7 @@ Toate funcțiile vechi listate Greasemonkey sunt depreciate, dar încă sunt sup
 - [`GM_addStyle`](https://www.tampermonkey.net/documentation.php#api:GM_addStyle)
 - [`GM_log`](https://www.tampermonkey.net/documentation.php#api:GM_log)
 - [`GM.addElement`, `GM_addElement`](https://www.tampermonkey.net/documentation.php#api:GM_addElement)
+- [`window.onurlchange`](https://www.tampermonkey.net/documentation.php#api:window.onurlchange)
 
 You can find more information about Greasemonkey API in [its manual](https://wiki.greasespot.net/Greasemonkey_Manual:API).
 
@@ -183,6 +202,7 @@ You can find more information about Greasemonkey API in [its manual](https://wik
 // @grant           GM_openInTab
 // @grant           GM_registerMenuCommand
 // @grant           GM_addElement
+// @grant           window.onurlchange
 // @run-at          document-start
 // ==/UserScript==
 !function(){(
@@ -321,23 +341,97 @@ function convertPropertyToTrusted(
 divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML", "<div></div>");
 ```
 
-## Stiluri de utilizator
+#### Matching SPA sites
 
-Userstyles allow users to change the appearance of popular websites.
+:::info Compatibilitate
 
-AdGuard are opțiunea de a încărca sau crea propriile stiluri de utilizator. Aceasta este o caracteristică avansată, așa că va trebui să aveți cunoștințe despre HTML și CSS.
-
-:::info Aplicații suportate
-
-În prezent, două aplicații AdGuard vă permit să creați și să gestionați stiluri de utilizator: AdGuard pentru Windows (v7.19 sau mai recent) și AdGuard pentru Mac (v2.16 sau mai recent). We also plan to implement this new feature in AdGuard for Android v4.8 in the nearest future.
+This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.19 or later.
 
 :::
 
-Aceasta este o caracteristică experimentală, așa că, dacă întâlniți probleme la adăugarea sau crearea unui stil de utilizator, vă rugăm să contactați echipa noastră de asistență la <support@adguard.com>.
+Many modern websites, such as YouTube, utilize [Single Page Application (SPA)](https://en.wikipedia.org/wiki/Single-page_application) capabilities. Unlike traditional web applications, the page does not reload when navigating between pages. Instead, the content is updated dynamically using JavaScript, allowing for a smoother user experience.
 
-### Cum să configurați un stil de utilizator în AdGuard
+On such websites, a userscript is invoked only once when the `@match` or `@include` directives are matched (unless `@exclude` is matched). Due to the nature of SPAs, the userscript cannot be re-invoked on subsequent page changes because the global JavaScript context remains the same. To address this issue, userscripts can use the `@grant window.onurlchange` directive.
 
-Puteți descărca stiluri de utilizator de pe diferite site-uri. Unul dintre cele mai populare site-uri de stiluri de utilizator este [https://userstyles.world/](https://userstyles.world/explore), pe care îl vom folosi ca exemplu pentru următoarele instrucțiuni despre cum să configurați stilul de utilizator în AdGuard.
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @grant window.onurlchange
+// @run-at document-start
+// ==/UserScript==
+
+// via window.onurlchange
+window.onurlchange = (event) => {
+    console.log('URL changed to:', event.url);
+};
+
+// via window.addEventListener('urlchange')
+window.addEventListener('urlchange', (event) => {
+    console.log('URL changed to:', event.url);
+});
+```
+
+This will allow userscripts to listen for URL changes and handle them accordingly.
+
+:::note
+
+The `urlchange` event is only triggered for full URL changes, such as a change in the path or query, but not for fragment (hash) changes.
+Examples:
+
+- Navigation from `https://example.com/page1` to `https://example.com/page2` will trigger the event.
+- Navigation from `https://example.com/page1?query=1` to `https://example.com/page1?query=2` will trigger the event.
+- Navigation from `https://example.com/page1#section1` to `https://example.com/page1#section2` will **NOT** trigger the event.
+
+:::
+
+:::note
+
+The `window.onurlchange` and `window.addEventListener('urlchange', ...)` APIs are non-standard. To use them, you must explicitly grant them in your userscript with `@grant window.onurlchange`.
+
+:::
+
+If a website uses hash routing, userscripts can use the native DOM [`hashchange` event](https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event):
+
+```javascript
+// ==UserScript==
+// @name SPA
+// @namespace spa
+// @version 1.0.0
+// @match https://*/*
+// @run-at document-start
+// ==/UserScript==
+
+// via window.onhashchange
+window.onhashchange = (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+};
+
+// via window.addEventListener('hashchange')
+window.addEventListener('hashchange', (event) => {
+    console.log(`Hash changed from "${event.oldURL}" to "${event.newURL}"`);
+});
+```
+
+## Userstyles
+
+Userstyles allow users to change the appearance of popular websites.
+
+AdGuard has the option to upload or create your own userstyles. This is an advanced feature, so you will need some knowledge of HTML and CSS.
+
+:::info Aplicații suportate
+
+Currently, two AdGuard apps allow you to create and manage userstyles: AdGuard for Windows (v7.19 or later) and AdGuard for Mac (v2.16 or later). We also plan to implement this new feature in AdGuard for Android v4.8 in the nearest future.
+
+:::
+
+This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at <support@adguard.com>.
+
+### How to set up a userstyle in AdGuard
+
+You can download userstyles from various websites. One of the most popular userstyle websites is [https://userstyles.world/](https://userstyles.world/explore), which we will use as an example for the following instructions on how to set up the userstyle in AdGuard.
 
 1. Follow the link above and choose the userstyle you like
 
@@ -363,30 +457,30 @@ We don’t support userstyles that contain `@var` or `@advanced` in the metadata
 
 3. To create a userstyle, first write the title with metadata, for example
 
-    ```CSS
-    /* ==UserStyle==
-    @name New userstyle
-    @version 1.0
-    ==/UserStyle== */
-    ```
+   ```CSS
+   /* ==UserStyle==
+   @name New userstyle
+   @version 1.0
+   ==/UserStyle== */
+   ```
 
 4. Write the CSS part after the meta data. AdGuard supports website domain names matching (`@-moz-document domain(…), …`). De exemplu:
 
-    ```CSS
-    body {
-      background: gray;
-      }
-    ```
+   ```CSS
+   body {
+     background: gray;
+     }
+   ```
 
-    Or:
+   Or:
 
-    ```CSS
-    @-moz-document domain('example.org'),
-    domain('example.net'),
-    domain('example.com') body {
-      background: gray;
-      }
-    ```
+   ```CSS
+   @-moz-document domain('example.org'),
+   domain('example.net'),
+   domain('example.com') body {
+     background: gray;
+     }
+   ```
 
 5. Once you’re finished, press _Save and Close_. Your new userstyle has been successfully added to AdGuard
 
@@ -409,3 +503,5 @@ We don’t support userstyles that contain `@var` or `@advanced` in the metadata
     }
 }
 ```
+
+[CoreLibs]: https://github.com/AdguardTeam/CoreLibs

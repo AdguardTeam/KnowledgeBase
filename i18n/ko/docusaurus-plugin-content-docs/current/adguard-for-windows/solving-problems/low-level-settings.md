@@ -65,6 +65,12 @@ AdGuard가 필터 구독 URL(예: `abp:subscribe` 등)을 자동으로 가로채
 
 이 옵션을 활성화하면 AdGuard는 다른 요청 유형과 함께 HTTP/3을 통해 전송된 요청을 필터링합니다.
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 ### 리디렉션 드라이버 모드 사용
 
 이 옵션을 활성화하면 AdGuard가 모든 트래픽을 가로채서 추가 필터링을 위해 로컬 프록시 서버로 리디렉션합니다.

@@ -20,18 +20,18 @@ Dacă doriți să sprijiniți implementarea unei noi caracteristici sau a unei r
 
 1. Enable debug logging:
 
-    `adguard-cli config set log_level debug`
+   `adguard-cli config set log_level debug`
 
 2. Reproduce problema și încearcă să îți amintești momentul exact în care a apărut.
 
 3. Wait a while, then export the logs:
 
-    `adguard-cli export-logs`
+   `adguard-cli export-logs`
 
-    The archived log file will be downloaded to the application folder by default, and the path to the logs will be written to the console.
+   The archived log file will be downloaded to the application folder by default, and the path to the logs will be written to the console.
 
 4. Send the log file to <devteam@adguard.com>. Specify the time of the error and attach a link to your GitHub issue or its number (it appears as #number next to the title). Alternatively, you can upload the log file to Google Drive and share it with <devteam@adguard.com>. Attach the file link to your GitHub issue.
 
 5. Switch the logging mode back to `info`:
 
-    `adguard-cli config set log_level info`
+   `adguard-cli config set log_level info`

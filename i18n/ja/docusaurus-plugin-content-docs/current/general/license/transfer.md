@@ -9,22 +9,29 @@ sidebar_position: 4
 
 ### デバイスのバインド（紐付け）を解除する方法
 
-- 【方法①】AdGuard アプリで「*ライセンスをリセット*」または「*ログアウト*」をクリックします。
+#### 方法①
 
-- 【方法②】お使いのAdGuardアカウントでデバイスを削除します:
-    1. お使いの[AdGuardアカウント](https://adguardaccount.com/)→「*AdGuard 広告ブロッカー*」 タブを押します。
+紐付け解除したいデバイスで AdGuard アプリを開き、「*ライセンスをリセット*」または「*ログアウト*」をクリックしてください。
 
-        ![AdGuard広告ブロッカータブ *mobile](https://cdn.adtidy.org/blog/new/ynkyjltansfer-ja-1.png)
+#### 方法②
 
-    1. 紐付けを解除したいデバイスをクリックします。
+別の方法として、AdGuardアカウントでデバイスを削除することができます：
 
-        ![デバイスを選択 *mobile](https://cdn.adtidy.org/blog/new/2noyttransfer-ja-2.png)
+1. お持ちの[AdGuardアカウント](https://adguardaccount.com/)にログインします。
 
-    1. 「*削除する*」を押します。
+1. 「*AdGuard 広告ブロッカー*」タブを開きます。
 
-        ![「削除する」を押す *mobile](https://cdn.adtidy.org/blog/new/odqj3transfer-ja-3.png)
+    ![AdGuard広告ブロッカータブ *mobile](https://cdn.adtidy.org/blog/new/ynkyjltansfer-ja-1.png)
 
-必要な台数のデバイスを解除したら、新しいデバイスでAdGuardアカウントにログインすることができるようになります。 そうすると、ライセンスはその新しいデバイスにバインド（紐付け）されます。
+1. 紐付けを解除したいデバイスをクリックします。
+
+    ![デバイスを選択 *mobile](https://cdn.adtidy.org/blog/new/2noyttransfer-ja-2.png)
+
+1. 「*削除する*」を押します。
+
+    ![「削除する」を押す *mobile](https://cdn.adtidy.org/blog/new/odqj3transfer-ja-3.png)
+
+必要な台数のデバイスを解除したら、新しいデバイスでログインすることができるようになります。 そうすると、ライセンスはその新しいデバイスにバインド（紐付け）されます。
 
 ## ライセンスを他のAdGuardアカウントに移行する方法{#transferaccount}
 

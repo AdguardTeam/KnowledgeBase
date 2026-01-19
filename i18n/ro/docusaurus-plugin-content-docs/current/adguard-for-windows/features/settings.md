@@ -11,15 +11,15 @@ Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multif
 
 _Setările_ este secțiunea care necesită cea mai mare atenție. Aici poți configura aplicația astfel încât să corespundă pe deplin cerințelor tale: blochează doar ceea ce te deranjează, utilizează serverul DNS al furnizorului de încredere, șterge cookie-urile ale terților și așa mai departe.
 
+### General settings
+
+Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect _Debug logs_](/adguard-for-windows/solving-problems/adguard-logs.md).
+
 ![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/general_settings.png)
 
-### Setări Generale
-
-Aici poți seta limba și tema (Întuneric sau Lumină), activați lansarea AdGuard la pornirea sistemului și actualizările automate silențioase, alege canalul de actualizare și intervalul de verificare a actualizărilor. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect _Debug logs_](/adguard-for-windows/solving-problems/adguard-logs.md).
+At the very bottom of the screen you will find _Advanced Settings_. Changing some of them mindlessly may potentially cause problems with AdGuard’s performance, break the Internet connection or compromise your security and privacy. That’s why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in _Advanced Settings_, read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
 
 ![Advanced Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/advanced_settings.png)
-
-În partea de jos a ecranului vei găsi _Setările Avansate_. Changing some of them mindlessly may potentially cause problems with AdGuard’s performance, break the Internet connection or compromise your security and privacy. That’s why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in _Advanced Settings_, read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
 
 ### Ad blocking
 
@@ -42,31 +42,33 @@ In the Ad blocking module you can:
 
 ### Tracking protection
 
-Multe site-uri web colectează informații despre vizitatorii lor, cum ar fi adresele IP, informațiile despre browser și sistemul de operare instalat, rezoluția ecranului și chiar de pe ce pagină a venit utilizatorul sau a fost redirecționat. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or “recognize” you upon your next visit. _Tracking protection_ safeguards your personal information from such data and statistics gathering systems.
+Many websites gather information about their visitors, such as their IP addresses, browser and operating system details, screen resolution, and the webpage from which the user came or was redirected. Some websites use cookies to mark and identify your browser, save your personal settings and preferences. This allows them to “recognize” you on your next visit. Tracking protection safeguards your personal information from these data- and statistics-gathering systems.
 
-![Tracking protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection.png)
+![Tracking protection levels \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection1.png)
 
-Poți ajusta flexibil funcționarea Modul invizibil: de exemplu, poți interzice site-ului să primească cererea de căutare folosită pentru a-l găsi pe Internet, să ștergi automat cookie-urile atât ale terților, cât și ale site-ului web și să dezactivezi partajarea locației în browserul tău care poate fi folosită pentru a-ți urmări locația.
+You can adjust the _Tracking Protection_ settings as needed. For example, you can prevent websites from receiving the search request that you used to find them on the Internet, automatically delete third- and first-party cookies, and disable location sharing in your browser, to prevent tracking of your whereabouts.
 
-Pentru a învăța totul despre Modul invizibil și opțiunile sale, [citește acest articol](/general/stealth-mode).
+![Tracking protection custom features \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection2.png)
+
+To learn everything about _Tracking protection_ and its many options, [read this article](/general/stealth-mode).
 
 ### Securitate la navigare
 
-Securitatea la navigare oferă o protecție puternică împotriva site-urilor web dăunătoare și de phishing. Nu, AdGuard pentru Windows nu este un antivirus. It will neither stop the download of a virus when it’s already started, nor delete the already existing ones. But it will warn you if you’re about to proceed to a website whose domain has been added to our “untrusted sites” database, or to download a file from such website. Poți găsi mai multe informații despre modul în care funcționează acest modul în [articolul dedicat](/general/browsing-security).
+Browsing security gives strong protection against malicious and phishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it’s already started, nor delete the already existing ones. But it will warn you if you’re about to proceed to a website whose domain has been added to our “untrusted sites” database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 
 In this module, you can:
 
-- permite notificări pentru a bloca solicitările către site-uri dăunătoare și de phishing,
-- activează notificările sonore,
-- ești de acord să trimiți informații anonime legate de securitate serverului AdGuard pentru a ne ajuta să menținem baza de date a site-urilor dăunătoare și de phishing actualizată.
+- enable notifications to block requests to malicious and phishing sites,
+- activate sound notifications,
+- agree to submit anonymous security-related info to the AdGuard server to help us keep the malicious and phishing websites database up to date.
 
 ![Browsing security \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/browsing_security.png)
 
-În cazul în care dorești să afli mai multe despre Securitatea la navigare, citește [acest articol](/general/browsing-security).
+In case you want to learn more about Browsing security, read [this article](/general/browsing-security).
 
-### Protecție DNS
+### DNS Protection
 
-Există trei motive importante pentru care ai putea dori să explorezi setările de protecție DNS. În primul rând, pentru a evita să fii urmărit de ISP-ul tău. De fiecare dată când deschizi un site web, de exemplu `google.com`, browserul tău trimite o solicitare către un server DNS pentru a obține înapoi adresa IP a site-ului. De obicei, serverul DNS aparține ISP-ului tău, ceea ce le permite să îți urmărească activitatea online. În al doilea rând, pentru a cripta traficul DNS. Și al treilea motiv este [blocarea conținutului la nivel DNS](https://adguard-dns.io/kb/general/dns-filtering/).
+There are three significant reasons why you might want to explore the DNS protection settings. First, to avoid being tracked by your ISP. Every time you open a website, for example `google.com`, your browser sends a request to a DNS server to get the IP address of the website in return. Usually, the DNS server belongs to your ISP, which allows them to track your online activity. Second, to encrypt you DNS traffic. And the third one is to [block content on DNS level](https://adguard-dns.io/kb/general/dns-filtering/).
 
 ![DNS Protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/dns_protection.png)
 
@@ -81,15 +83,15 @@ Starting with v7.20, you can also add filters by simply selecting them from a li
 
 ![DNS filters \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
 
-### Parental Control
+### Parental control
 
-There are several websites to which access should be restricted from a PC used by children. This task is accomplished by _Parental Control_.
+There are several websites to which access should be restricted from a PC used by children. This task is accomplished by _Parental control_.
 
-![Parental Control \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/parental_control.png)
+![Parental control \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/parental_control.png)
 
-The module checks the contents of web pages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental Control settings are password-protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results.
+The module checks the contents of webpages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental control settings are password-protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results.
 
-In the _Parental Control_ module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. You can also check the _Block executable files download_ box to prevent your child from downloading and installing software on the computer. There are two more options in the _Parental Control_ module: you can select a specific Windows user to be protected by _Parental Control_ and set a password to protect AdGuard settings from change.
+In the _Parental control_ module you can enable the _Safe search_ and manage the _blocklist_ and the _allowlist_ to customize how this option works. You can also check the _Block executable files download_ box to prevent your child from downloading and installing software on the computer. There are two more options in the _Parental control_ module: you can select a specific Windows user to be protected by _Parental control_ and set a password to protect AdGuard settings from change.
 
 ### Asistent Browser
 

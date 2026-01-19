@@ -55,6 +55,6 @@ Bitte beachten Sie, dass Sie mit diesem Status keine zusätzlichen Lizenzen oder
 
 ## Geschenke für aktive Mitwirkende
 
-Jedes Jahr senden wir den besten Mitwirkenden Geschenke mit dem AdGuard-Merch und würdigen sie in unserem [Blog](https://adguard.com/en/blog/best-contributors-2023.html).
+Jedes Jahr senden wir den besten Mitwirkenden Geschenke mit dem AdGuard-Merch und würdigen sie in unserem [Blog](https://adguard.com/en/blog/best-contributors-2024.html).
 
 ![AdGuard Merch *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

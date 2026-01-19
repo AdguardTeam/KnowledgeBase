@@ -89,9 +89,9 @@ To block ads and trackers on most websites and in most apps, AdGuard needs to fi
 
 To manage encrypted traffic, AdGuard installs its CA certificate on your device. It's safe: the traffic is filtered locally and AdGuard verifies the security of the connection.
 
-On older versions of Android, the certificate is installed automatically. On Android 11 and later, you need to install it manually. [Installation instructions](/adguard-for-android/solving-problems/manual-certificate/)
+On older versions of Android, the certificate is installed automatically. On Android 11 and later, you need to install it manually. [Installationsanweisungen](/adguard-for-android/solving-problems/manual-certificate/)
 
-The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
+The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Anleitung](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
 ##### HTTPS-filtered apps
 
@@ -101,7 +101,7 @@ This section contains the list of apps for which AdGuard filters HTTPS traffic. 
 
 This setting allows you to manage websites for which AdGuard should filter HTTPS traffic.
 
-HTTPS filtering allows AdGuard to filter the content of requests and responses, but we never collect or store this data. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
+HTTPS filtering allows AdGuard to filter the content of requests and responses, but we never collect or store this data. Um jedoch die Sicherheit zu erhöhen, [schließen wir Websites, die potenziell sensible Informationen enthalten, von der HTTPS-Filterung aus](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
 
 You can also add websites that you consider necessary to exclusions by selecting one of the modes:
 
@@ -132,6 +132,12 @@ The _Local VPN_ mode doesn't allow AdGuard to be used simultaneously with other 
 
 - _Automatic proxy_ is an alternative traffic routing method that does not require the use of a VPN. One significant advantage is that it can be run in parallel with a VPN. This mode requires root access.
 
+:::note
+
+Please note that DNS filtering will still be active in _Automatic proxy_ routing mode, and your device may not be able to filter DNS requests from specific apps. In _VPN_ routing mode, apps are excluded from the local VPN by system means. Therefore, the system resolver sees which apps are included in the VPN and which are not. It either allows them into the local VPN or lets them bypass it. However, DNS requests come from the system resolver, not the application. In _Automatic proxy_ mode, it is only possible to exclude traffic from applications, not their DNS queries, because AdGuard sees them as system queries.
+
+:::
+
 - _Manual proxy_ involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
 
 ## Lizenz
@@ -139,13 +145,13 @@ The _Local VPN_ mode doesn't allow AdGuard to be used simultaneously with other 
 In this section, you can find information about your license and manage it:
 
 - Buy an AdGuard license to activate [the full version's features](/adguard-for-android/features/free-vs-full)
-- Log in to your AdGuard account or enter the license key to activate your license
-- Sign up to activate your 7-day trial period if you haven't used it yet
+- Log in to your AdGuard account or enter the activation code to activate your license
+- Sign up to activate your 14-day trial period. The activation code can be used on different devices and platforms
 - Refresh the license status from the three-dots menu (⋮)
 - Open the AdGuard account to manage your license there
 - Reset your license — for example, if you've reached device limit for this license and want to apply another one
 
-![License screen \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![License screen \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/android/settings/licensetab.png)
 
 ## Support
 

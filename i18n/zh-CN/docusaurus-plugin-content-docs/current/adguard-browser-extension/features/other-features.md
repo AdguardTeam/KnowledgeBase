@@ -25,14 +25,22 @@ sidebar_position: 4
 
 「附加设置」部分包含一系列与广告拦截过程和应用程序可用性有关的各种设置。
 
-![其他设置 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
+![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
 
-从此选项卡中，您可以激活优化的过滤器，启用扩展程序更新通知，打开「过滤日志」，清除已阻止的广告和跟踪器的统计信息。
+From this tab, you can invert the allowlist and add the AdGuard item to the browser’s context menu. You can also enable the display of the number of blocked ads on the AdGuard icon and notifications about extension updates. Additionally, this section lets you enable notifications about the AdGuard app, open the _Filtering log_, clear the statistics of blocked ads and trackers, or reset the settings.
 
 此外，用户可以选择发送应用规则的统计数据以帮助我们开发过滤器：触发哪些规则、在哪些网站上触发以及触发频率。 该选项默认为禁用，因为我们不会在未经同意的情况下收集用户数据。 但是，如果启用该功能，所有数据都将匿名发送。
 
-## 关于 {#about}
+You can also choose to help us improve the extension by sending us anonymized usage data. This includes the names of the screens you interact with, the names of the buttons you click, and session identifiers. These insights help us understand where users run into friction, refine the experience, and make the extension faster and easier to use. The _Send anonymized usage data_ option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
 
-在「关于」部分中，用户可以找到有关当前版本的信息、EULA 和隐私政策的链接以及 GitHub 上浏览器扩展存储库的链接。
+:::note
 
-![关于 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+The _Send anonymized usage data_ option can also be enabled on the post-installation page in Chromium-based browsers.
+
+:::
+
+## About {#about}
+
+In the _About_ section, you can find info about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
+
+![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)

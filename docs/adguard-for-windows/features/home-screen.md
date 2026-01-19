@@ -11,7 +11,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 AdGuard for Windows is an easy-to-use tool that blocks annoying banners, pop-ups, video ads, and trackers. But that’s not all: it helps save bandwidth, load web pages faster, and protect your computer from undesirable and potentially malicious websites. AdGuard also shields you from phishing sites and keeps inappropriate content away from kids.
 
-![Home screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/homescreen_en.png)
+![Main screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/main_screen_en.png)
 
 When you launch AdGuard for Windows, the main screen will appear.
 

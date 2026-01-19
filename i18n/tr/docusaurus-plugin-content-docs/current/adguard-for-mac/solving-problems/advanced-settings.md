@@ -81,6 +81,12 @@ Verifies the authenticity of all certificates for the domain based on Chrome Cer
 
 By setting `true`, you allow AdGuard to filter traffic sent over HTTP/3, the latest version of the HTTP protocol based on QUIC.
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 #### `network.filtering.localnetwork`
 
 By setting `true`, you enable local network filtering.
@@ -164,6 +170,10 @@ Encrypted Client Hello parametrelerini yanıtlardan kaldırır.
 Kullanıcının bir güvenlik duvarı etkinse macOS Özel Geçişi alan adlarını engeller ve bu da *Özel Geçişi* özelliğini devre dışı bırakır.
 
 Enabling this setting is useful in the following scenario: when macOS Private Relay is active, filtering cannot function properly and must be disabled. macOS 14'e kadar olan sürümlerde, Koruma etkinleştirildiğinde AdGuard Özel Geçişi otomatik olarak devre dışı bırakabiliyordu. Ancak, macOS 15 ile birlikte, eğer bir güvenlik duvarı etkinse bu artık mümkün değil. Bu ayarı açarak, güvenlik duvarı etkinleştirildiğinde bile Özel Geçişi devre dışı bırakabilir ve önceki kısıtlamanın üstesinden gelebilirsiniz.
+
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Klasik X25519 algoritmasını ML-KEM-768 kuantum sonrası KEM ile birleştiren hibrit bir kuantum sonrası anahtar değişimiyle DNS proxy bağlantılarını güvence altına alır. Applies only to DoH, DoT, and DoQ upstreams.
 
 ### Gizlilik Modu ayarları
 

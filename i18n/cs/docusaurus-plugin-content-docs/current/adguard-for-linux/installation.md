@@ -43,89 +43,89 @@ AdGuard pro Linux vyžaduje [licenci AdGuardu](https://adguard.com/license.html)
 
 1. Po instalaci zadejte:
 
-    ```sh
-    adguard-cli activate
-    ```
+   ```sh
+   adguard-cli activate
+   ```
 
 2. Poté vyberte požadovanou možnost:
 
-    ![adguard-cli activate \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation1.png)
+   ![adguard-cli activate \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/1activate.png)
 
 3. Po získání licence pokračujte v aktivaci pomocí poskytnutého odkazu:
 
-    ![Activate license \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation2.png)
+   ![Activate license \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/2activate_link.png)
 
 4. Po aktivaci můžete s programem dále pracovat:
 
-    ![Successful activation \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation3.png)
+   ![Successful activation \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/3activate_success.png)
 
 5. Licenci můžete obnovit také zadáním:
 
-    ```sh
-    adguard-cli reset-license
-    ```
+   ```sh
+   adguard-cli reset-license
+   ```
 
-    nebo zobrazit informace o licenci zadáním
+   nebo zobrazit informace o licenci zadáním
 
-    ```sh
-    adguard-cli license
-    ```
+   ```sh
+   adguard-cli license
+   ```
 
 6. Nyní je třeba nastavit rozhraní AdGuard CLI. Chcete-li spustit průvodce konfigurací, zadejte:
 
-    ```sh
-    adguard-cli configure
-    ```
+   ```sh
+   adguard-cli configure
+   ```
 
-    ![Setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation4.png)
+   ![Setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/4configure.png)
 
-    Průvodce se zeptá na základní otázky potřebné pro počáteční nastavení.
+   Průvodce se zeptá na základní otázky potřebné pro počáteční nastavení.
 
 7. Poté můžete spustit ochranu AdGuardem zadáním příkazu
 
-    ```sh
-    adguard-cli start
-    ```
+   ```sh
+   adguard-cli start
+   ```
 
-    ![Start protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation5.png)
+   ![Start protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/5start.png)
 
 8. Stav ochrany můžete zkontrolovat pomocí:
 
-    ```sh
-    adguard-cli status
-    ```
+   ```sh
+   adguard-cli status
+   ```
 
-    a zastavit pomocí:
+   a zastavit pomocí:
 
-    ```sh
-    adguard-cli stop
-    ```
+   ```sh
+   adguard-cli stop
+   ```
 
-    ![Stop protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+   ![Stop protecton \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/6status-stop.png)
 
 9. Chcete-li zkontrolovat aktuální konfiguraci, zadejte:
 
-    ```sh
-    adguard-cli config show
-    ```
+   ```sh
+   adguard-cli config show
+   ```
 
-    ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+   ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/7config_show.png)
 
-    Zobrazí se také cesta ke konfiguračnímu souboru, který můžete a měli byste přímo upravit. Obsahuje popisy všech dalších možností.
+   Zobrazí se také cesta ke konfiguračnímu souboru, který můžete a měli byste přímo upravit. Obsahuje popisy všech dalších možností.
 
-    Alternativně můžete použít příkazy:
+   Alternativně můžete použít příkazy:
 
-    ```sh
-    adguard-cli config get
-    ```
+   ```sh
+   adguard-cli config get
+   ```
 
-    nebo:
+   nebo:
 
-    ```sh
-    adguard-cli config set
-    ```
+   ```sh
+   adguard-cli config set
+   ```
 
-    Jsou však primárně určeny pro skriptování.
+   Jsou však primárně určeny pro skriptování.
 
 Další informace o dostupných příkazech naleznete v [Nastavení a správa ochrany] (https://adguard.com/kb/adguard-for-linux/settings/).
 

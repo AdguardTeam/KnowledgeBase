@@ -10,7 +10,7 @@ Usare AdGuard CLI in **modalità proxy automatico** insieme a AdGuard VPN CLI in
 Queste sono le due possibili soluzioni:
 
 - Cambia AdGuard CLI in **modalità proxy manuale**.
-    - In questo caso, AdGuard VPN CLI può essere usato in **modalità tunnel**, ma le app per le quali è desiderato il bloccaggio delle inserzioni devono essere configurate manualmente per usare il proxy di AdGuard CLI.
+  - In questo caso, AdGuard VPN CLI può essere usato in **modalità tunnel**, ma le app per le quali è desiderato il bloccaggio delle inserzioni devono essere configurate manualmente per usare il proxy di AdGuard CLI.
 - Passa all'interfaccia **SOCKS5** di AdGuard VPN CLI e configura AdGuard CLI con un proxy di partenza che punta all'interfaccia SOCKS5 di AdGuard VPN CLI. In questo caso, è importante tenere a mente che:
-    - Affinché il traffico di un'app passi attraverso il Tunnel VPN, deve avere il proprio traffico proxy trasparente tramite AdGuard CLI (il che è il caso per tutte le app per impostazione predefinita), oppure deve essere configurato manualmente per usare l'interfaccia SOCKS5 di AdGuard VPN CLI.
-    - Per evitare un ciclo di instradamento, l'opzione `skip_outbound_proxy` deve essere abilitata per AdGuard VPN CLI nella sezione di configurazione delle app di AdGuard CLI. Per impostazione predefinita, `skip_outbound_proxy` è abilitato per tutte le app con `vpn` nel loro nome, compresa AdGuard VPN CLI.
+  - Affinché il traffico di un'app passi attraverso il Tunnel VPN, deve avere il proprio traffico proxy trasparente tramite AdGuard CLI (il che è il caso per tutte le app per impostazione predefinita), oppure deve essere configurato manualmente per usare l'interfaccia SOCKS5 di AdGuard VPN CLI.
+  - Per evitare un ciclo di instradamento, l'opzione `skip_outbound_proxy` deve essere abilitata per AdGuard VPN CLI nella sezione di configurazione delle app di AdGuard CLI. Per impostazione predefinita, `skip_outbound_proxy` è abilitato per tutte le app con `vpn` nel loro nome, compresa AdGuard VPN CLI.

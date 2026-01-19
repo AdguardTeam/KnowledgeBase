@@ -81,6 +81,12 @@ sidebar_position: 9
 
 如果设置为 `true`，允许 AdGuard 过滤通过 HTTP/3 发送的流量，HTTP/3 是基于 QUIC 的 HTTP 协议的最新版本。
 
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
+
 #### `network.filtering.localnetwork`
 
 设置为 `true` 即可启用本地网络过滤。
@@ -164,6 +170,10 @@ sidebar_position: 9
 如果用户启用防火墙，将阻止 macOS 私有代理域名，这将禁用「*私有代理*」功能。
 
 启用此设置在一些情况下很有用，比如，当 macOS 私有代理被启动时，过滤无法正常工作，必须禁用。 在 macOS 14 及以前的版本中，当启用保护时，AdGuard 将自动禁用私有代理。 但从 macOS 15 开始，如果用户启用防火墙，就不能再这样做了。 启用此设置，即使防火墙已启用，用户也可以禁用私有代理，从而克服先前的限制。
+
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Secures DNS proxy connections with a hybrid post-quantum key exchange, combining the classical X25519 algorithm with the ML-KEM-768 post-quantum KEM. Applies only to DoH, DoT, and DoQ upstreams.
 
 ### 隐身模式设置
 

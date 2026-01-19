@@ -3,6 +3,16 @@ title: AdGuard 필터 정책
 sidebar_position: 6
 ---
 
+:::note 주의사항
+
+필터를 활성화하기 전에 이 필터 정책을 읽어주세요.
+
+AdGuard 광고 차단기, AdGuard DNS 및 해당 필터를 사용하면 타사 웹사이트 및 서비스가 작동하는 방식에 영향을 미칠 수 있습니다. 귀하는 사용하시는 모든 웹사이트 또는 서비스의 정책 및 약관을 검토하고 준수할 책임이 있습니다.
+
+타사에서 제공하는 필터를 활성화하기 전에 해당 약관을 검토하고 정보에 입각하여 필터 사용에 대한 결정을 내리는 데 동의합니다. AdGuard는 타사 필터의 작동 방식이나 약관에 대해 책임을 지지 않으며, 타사 필터가 AdGuard 제품에 포함되어 있다고 해서 사용을 권장하는 것은 아닙니다.
+
+:::
+
 AdGuard는 필터를 제작할 때 오랫동안 특정 원칙을 준수해 왔으며, 필터 설명과 함께 필터링 정책의 일부로 아래에 설명되어 있습니다.
 
 ## 일반 기준
@@ -26,7 +36,7 @@ AdGuard는 필터를 제작할 때 오랫동안 특정 원칙을 준수해 왔�
 
 **필터** (또는 **필터 목록**)는 광고 차단기를 사용하여 콘텐츠를 필터링하고 다양한 유형의 광고 및 기타 유형의 콘텐츠를 차단하도록 설계된 필터링 규칙 집합입니다. 이러한 필터는 일반적으로 웹 브라우저, 프로그램 또는 DNS 서버 수준에서 작동합니다.
 
-**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so-called “adblock walls”). 안티블록은 여러 유형이 있을 수 있습니다.
+**안티애드블록(** )은 웹사이트나 애플리케이션에서 광고 차단을 감지하고 추적, 광고 재주입, 광고 차단기 비활성화 유도(소위 '광고 차단 벽') 등 다양한 방식으로 대응하기 위해 사용하는 기술입니다. 안티블록은 여러 유형이 있을 수 있습니다.
 
 - 대안을 제공하지 않고 웹사이트 콘텐츠를 차단하는 안티애드블록: 사이트를 계속 사용하려면 사용자가 해당 사이트에서 광고 차단을 비활성화해야 합니다.
 - 광고 차단기를 계속 사용하기 위해 구독을 구매하는 등의 대체 옵션이 제공되는 '안티애드블록 벽'
@@ -41,14 +51,12 @@ AdGuard 광고 차단 필터에는 다음이 포함됩니다.
 - AdGuard 베이스 필터
 - AdGuard 모바일 광고 필터
 - 언어 원칙에 따라 구분된 지역 필터: 중국어, 네덜란드어, 프랑스어, 독일어, 일본어, 러시아어, 스페인어/포르투갈어, 터키어, 우크라이나어
-- AdGuard Quick Fixes filter
 
 ### 이러한 필터의 목적
 
 - **베이스 필터**는 영어 웹사이트 및 별도의 필터가 없는 웹사이트의 광고를 차단하도록 설계되었습니다. 또한 언어에 관계없이 모든 사이트에 적용되는 일반 필터링 규칙이 포함되어 있습니다.
 - **Mobile Ads filter** blocks advertisements on mobile versions of websites and within mobile apps. 언어에 따른 세분화가 없습니다.
 - **지역 필터**는 **베이스 필터**와 동일한 정책을 따르지만 특정 언어의 웹사이트로 제한됩니다.
-- **Quick Fixes filter** used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension.
 
 광고 차단 필터의 목표는 인터넷에서 광고를 로드할 수 있는 웹사이트, 애플리케이션 및 특정 디바이스에서 모든 유형의 광고를 차단하는 것입니다.
 

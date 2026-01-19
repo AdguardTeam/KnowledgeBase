@@ -3,6 +3,16 @@ title: Política de filtros do AdGuard
 sidebar_position: 6
 ---
 
+:::note Disclaimer
+
+Por favor, leia atentamente esta política de filtros antes de ativar qualquer filtro.
+
+O uso do bloqueador de anúncios AdGuard, do DNS AdGuard e de seus filtros pode afetar o funcionamento de sites e serviços de terceiros. É sua responsabilidade revisar e seguir as políticas e os termos de quaisquer sites ou serviços que você utilize.
+
+Antes de ativar filtros fornecidos por terceiros, você concorda em revisar os termos aplicáveis e tomar uma decisão informada sobre o uso deles. O AdGuard não se responsabiliza pela forma como os filtros de terceiros operam ou pelo conteúdo dos seus termos, e a presença deles nos produtos AdGuard não é uma recomendação para usá-los.
+
+:::
+
 Aqui no AdGuard, já faz tempo que seguimos certos princípios para a criação de nossos filtros, que, junto com as descrições dos filtros, são apresentados abaixo como parte de nossa política de filtragem.
 
 ## Critérios comuns
@@ -41,14 +51,12 @@ Os filtros de bloqueio de anúncios AdGuard incluem:
 - Filtro base do AdGuard
 - Filtro de anúncios para dispositivos móveis do AdGuard
 - Filtros regionais divididos por idiomas: chinês, holandês, francês, alemão, japonês, russo, espanhol, português, turco e ucraniano
-- AdGuard Quick Fixes filter
 
 ### O propósito desses filtros
 
 - O **Filtro base** foi projetado para bloquear anúncios em sites em inglês e aqueles para os quais não há filtro separado. Ele também contém regras gerais de filtragem que se aplicam a todos os sites, independentemente do idioma
 - O **Filtro de anúncios para dispositivos móveis** bloqueia anúncios em versões móveis de sites e em celulares e tablets. Não há segmentação com base no idioma
 - Os **Filtros regionais** seguem a mesma política do **Filtro base**, mas são limitados a sites em determinados idiomas
-- **Quick Fixes filter** used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension.
 
 O objetivo dos filtros de bloqueio de anúncios é bloquear todos os tipos de publicidade em sites, aplicativos e determinados dispositivos que podem carregar anúncios da Internet:
 
