@@ -1,5 +1,5 @@
 ---
-title: Proteção contra rastreamento (Modo invisível)
+title: Tracking protection (formerly Stealth Mode)
 sidebar_position: 3
 ---
 
@@ -9,14 +9,20 @@ Este artigo é sobre a extensão de navegador AdGuard, que protege apenas o seu 
 
 :::
 
-O _Modo invisível_ visa garantir a proteção de dados pessoais sensíveis contra rastreadores e fraudadores online.
+The purpose of _Tracking protection_ is to safeguard your sensitive personal data from online trackers and fraudsters. There are slight differences in the tracking protection features between Chromium-based browsers, which support MV3, and non-Chromium browsers, which support MV2.
 
-![Stealth Mode \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
+![Tracking protection in Chromium-based browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv3_trackingProtection.png)
 
-No Modo invisível, você pode impedir que um site veja as consultas de pesquisa que você usou para encontrá-lo na Internet, excluir automaticamente cookies de terceiros e do próprio site etc. Um [artigo separado](/general/stealth-mode) é dedicado a todos esses recursos.
+_Tracking protection_ in Chromium-based browsers
+
+![Tracking protection in non-Chromium browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv2_trackingProtection.png)
+
+_Tracking protection_ in non-Chromium browsers
+
+_Tracking protection_ features prevent websites from seeing the search query you used to find them on the Internet, automatically delete third-party and website cookies, and more. A [separate article](/general/stealth-mode) is devoted to all these features.
 
 :::note
 
-Algumas das opções do _Modo Invisível_ disponíveis em aplicativos completos não estão presentes nas extensões do navegador devido a restrições técnicas.
+Browser extensions are limited to a specific browser and are subject to its technical restrictions. Therefore, they cannot offer all the tracking protection features available in full-fledged ad-blocking apps.
 
 :::

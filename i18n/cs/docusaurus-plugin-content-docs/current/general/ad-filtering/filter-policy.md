@@ -3,6 +3,16 @@ title: Zásady AdGuard filtrů
 sidebar_position: 6
 ---
 
+::::::note Odmítnutí odpovědnosti
+
+Před povolením filtrů si pečlivě přečtěte tyto zásady filtrování.
+
+Používání blokátoru reklam AdGuard, AdGuard DNS a jejich filtrů může ovlivnit fungování webových stránek a služeb třetích stran. Jste odpovědní za prostudování a dodržování zásad a podmínek všech webových stránek nebo služeb, které používáte.
+
+Před povolením filtrů poskytovaných třetími stranami souhlasíte s tím, že si přečtete jejich příslušné podmínky a učiníte informované rozhodnutí o jejich používání. AdGuard nenese odpovědnost za to, jak fungují filtry třetích stran ani za obsah jejich podmínek, a jejich přítomnost v produktech AdGuard neznamená doporučení k jejich používání.
+
+:::
+
 V AdGuardu se při vytváření filtrů dlouhodobě řídíme určitými zásadami, které jsou spolu s popisem filtrů uvedeny níže jako součást našich zásad filtrování.
 
 ## Společná kritéria

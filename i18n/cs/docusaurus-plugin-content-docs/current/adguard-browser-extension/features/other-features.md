@@ -25,11 +25,19 @@ Konfiguraci nastavení můžete uložit kliknutím na tlačítko _Exportovat nas
 
 Sekce _Další nastavení_ obsahuje řadu různých nastavení, která souvisejí s procesem blokování reklam a použitelností aplikace.
 
-![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
+![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
 
-Na této kartě můžete aktivovat optimalizované filtry, zapnout oznámení o aktualizacích rozšíření, otevřít _Záznam filtrování_ nebo vymazat statistiky blokovaných reklam a slídičů.
+Na této kartě můžete invertovat seznam povolených a přidat položku AdGuard do kontextového menu prohlížeče. Můžete také povolit zobrazení počtu blokovaných reklam na ikoně AdGuard a oznámení o aktualizacích rozšíření. V této sekci můžete navíc povolit oznámení o aplikaci AdGuard, otevřít _Záznam filtrování_, vymazat statistiky blokovaných reklam a slídičů nebo obnovit nastavení.
 
 Kromě toho nám můžete pomoci s vývojem filtrů zasíláním statistik o použitých pravidlech: které z nich se spouští, na kterých webových stránkách a jak často. Tato možnost je ve výchozím nastavení vypnutá, protože neshromažďujeme údaje uživatelů bez jejich souhlasu. Pokud ji zapnete, budou všechna data přísně anonymizovaná.
+
+Můžete se také rozhodnout, že nám pomůžete vylepšit rozšíření tím, že nám zašlete anonymizované údaje o používání. To zahrnuje názvy obrazovek, se kterými pracujete, názvy tlačítek, na která klikáte, a identifikátory relací. Tyto poznatky nám pomáhají pochopit, kde uživatelé narážejí na potíže, vylepšit uživatelský zážitek a učinit rozšíření rychlejší a snadněji použitelné. Možnost _Odeslat anonymizované údaje o používání_ je ve výchozím nastavení deaktivována. Pokud tuto funkci povolíte, budou všechny údaje přísně anonymizovány a použity pouze interně. Nikdy je nebudeme sdílet s třetími stranami.
+
+:::note
+
+Možnost _Odeslat anonymizované údaje o používání_ lze také povolit na stránce po instalaci v prohlížečích založených na Chromiu.
+
+:::
 
 ## Informace {#about}
 

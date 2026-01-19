@@ -171,6 +171,10 @@ Bloque les domaines macOS Private Relay si l'utilisateur a un pare-feu activé, 
 
 L'activation de ce paramètre est utile dans le scénario suivant : lorsque macOS Private Relay est actif, le filtrage ne peut pas fonctionner correctement et doit être désactivé. Dans les versions de macOS jusqu'à 14, AdGuard pouvait désactiver automatiquement le Private Relay lorsque la protection était activée. Toutefois, à partir de macOS 15, cela n'est plus possible si un pare-feu est actif. En activant ce paramètre, vous pouvez désactiver Private Relay même lorsque le pare-feu est activé, contournant ainsi la limitation précédente.
 
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Secures DNS proxy connections with a hybrid post-quantum key exchange, combining the classical X25519 algorithm with the ML-KEM-768 post-quantum KEM. Applies only to DoH, DoT, and DoQ upstreams.
+
 ### Paramètres du Mode furtif
 
 #### `stealth.antidpi.http.split.fragment.size`

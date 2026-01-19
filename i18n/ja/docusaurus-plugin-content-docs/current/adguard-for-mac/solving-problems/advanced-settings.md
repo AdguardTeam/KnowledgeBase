@@ -171,6 +171,10 @@ Chrome Certificate Transparency Policy（証明書透過性ポリシー）に基
 
 この設定を有効にすると、次のような時に便利です：macOSプライベートリレーがアクティブだとフィルタリングは正しく機能しないため、無効にする必要があります。 macOSバージョン14まででは、保護機能が有効の際に、AdGuardはプライベートリレーを自動的に無効にすることができていました。 しかし、macOS 15 以降では、ファイアウォールがアクティブな場合、これを行うことはできません。 この設定をオンにすると、ファイアウォールが有効な場合でもプライベートリレーを無効にすることができ、以前の制限を克服することができます。
 
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Secures DNS proxy connections with a hybrid post-quantum key exchange, combining the classical X25519 algorithm with the ML-KEM-768 post-quantum KEM. Applies only to DoH, DoT, and DoQ upstreams.
+
 ### ステルスモード設定
 
 #### `stealth.antidpi.http.split.fragment.size`

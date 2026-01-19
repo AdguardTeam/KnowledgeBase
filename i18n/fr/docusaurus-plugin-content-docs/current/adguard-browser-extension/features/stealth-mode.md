@@ -1,5 +1,5 @@
 ---
-title: Protection contre le suivi (Mode furtif)
+title: Tracking protection (formerly Stealth Mode)
 sidebar_position: 3
 ---
 
@@ -9,14 +9,20 @@ Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement 
 
 :::
 
-_Le mode furtif_ vise à assurer la protection des données personnelles sensibles contre les traqueurs en ligne et les fraudeurs.
+The purpose of _Tracking protection_ is to safeguard your sensitive personal data from online trackers and fraudsters. There are slight differences in the tracking protection features between Chromium-based browsers, which support MV3, and non-Chromium browsers, which support MV2.
 
-![Stealth Mode \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
+![Tracking protection in Chromium-based browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv3_trackingProtection.png)
 
-En mode furtif, vous pouvez empêcher un site web de voir les requêtes de recherche que vous avez utilisées pour le trouver sur Internet, supprimer automatiquement les cookies tiers et les cookies propres au site, etc. Un [article séparé](/general/stealth-mode) est consacré à toutes ces fonctionnalités.
+_Tracking protection_ in Chromium-based browsers
+
+![Tracking protection in non-Chromium browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv2_trackingProtection.png)
+
+_Tracking protection_ in non-Chromium browsers
+
+_Tracking protection_ features prevent websites from seeing the search query you used to find them on the Internet, automatically delete third-party and website cookies, and more. A [separate article](/general/stealth-mode) is devoted to all these features.
 
 :::note
 
-Certaines des options du _Mode furtif_ disponibles dans les applications autonomes ne sont pas présentes dans les extensions de navigateur à cause de restrictions techniques.
+Browser extensions are limited to a specific browser and are subject to its technical restrictions. Therefore, they cannot offer all the tracking protection features available in full-fledged ad-blocking apps.
 
 :::
