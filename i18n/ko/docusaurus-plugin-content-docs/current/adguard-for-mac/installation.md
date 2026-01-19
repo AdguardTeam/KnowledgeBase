@@ -11,7 +11,7 @@ sidebar_position: 2
 
 ## 시스템 요구 사항
 
-**운영 체제 버전**: macOS 10.15 (64 비트) 이상
+**Operating system version:** macOS 12 or later
 
 **RAM**: 2 GB 이상
 

@@ -85,6 +85,17 @@ Pro konfiguraci AdGuardu pro Linux použijte příkaz `config`. Dílčí příka
 
 - `get`: Zjištění aktuálního stavu výše uvedených možností
 
+:::note
+
+Automatický režim lze použít pouze tehdy, že jsou splněny následující požadavky:
+
+- `iptables` je nainstalován a spuštěn (buď `nft` nebo `legacy`)
+- `iptables` podporuje tabulku `nat` jak pro IPv4, tak pro IPv6
+- `iptables` podporuje řetězce `REDIRECT` a `QUEUE` jak pro IPv4, tak pro IPv6
+- Balíček `sudo` je nainstalován
+
+:::
+
 ## Správa filtrů
 
 Pro konfiguraci AdGuardu pro Linux použijte příkaz `filters`. Dílčí příkazy:

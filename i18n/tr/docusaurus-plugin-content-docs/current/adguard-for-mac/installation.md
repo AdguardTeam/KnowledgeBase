@@ -11,7 +11,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 ## Sistem gereksinimleri
 
-**İşletim sistemi sürümü:** macOS 10.15 (64 bit) veya üstü
+**Operating system version:** macOS 12 or later
 
 **RAM:** en az 2 GB
 
