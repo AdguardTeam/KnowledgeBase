@@ -171,6 +171,10 @@ Bloquea los dominios de macOS Private Relay si el usuario tiene habilitado un Co
 
 Habilitar esta configuración es útil en el siguiente escenario: cuando macOS Private Relay está activo, el filtrado no puede funcionar correctamente y debe ser deshabilitado. En las versiones de macOS hasta 14, AdGuard podía deshabilitar automáticamente el Private Relay cuando la protección estaba habilitada. Sin embargo, a partir de macOS 15, esto ya no es posible si un cortafuegos está activo. Al activar esta configuración, puedes deshabilitar Private Relay incluso cuando el Cortafuegos esté habilitado, superando la limitación anterior.
 
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Secures DNS proxy connections with a hybrid post-quantum key exchange, combining the classical X25519 algorithm with the ML-KEM-768 post-quantum KEM. Applies only to DoH, DoT, and DoQ upstreams.
+
 ### Configuración del Modo oculto
 
 #### `stealth.antidpi.http.split.fragment.size`

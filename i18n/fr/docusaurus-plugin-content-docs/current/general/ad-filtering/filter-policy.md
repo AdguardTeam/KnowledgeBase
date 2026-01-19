@@ -3,6 +3,16 @@ title: Politique des filtres d'AdGuard
 sidebar_position: 6
 ---
 
+:::note Avis de non-responsabilité
+
+Veuillez lire cette politique sur les filtres attentivement avant d'activer un filtre.
+
+L’utilisation du Bloqueur d’annonces AdGuard, de AdGuard DNS et de leurs filtres peut influencer le fonctionnement des sites et services tiers. Il vous incombe de consulter et de respecter les politiques et conditions de tous les sites web ou services que vous utilisez.
+
+Avant d'activer les filtres fournis par des tiers, vous acceptez de consulter leurs conditions d'utilisation et de prendre une décision éclairée quant à leur utilisation. AdGuard n'est pas responsable du fonctionnement des filtres tiers ou de leurs conditions, et leur présence dans les produits AdGuard ne constitue pas une recommandation d'utilisation.
+
+:::
+
 Chez AdGuard, nous suivons depuis longtemps certains principes dans l'élaboration de nos filtres. Ces principes, ainsi que les descriptions des filtres, sont décrits ci-dessous dans le cadre de notre politique de filtrage.
 
 ## Critères communs
@@ -26,7 +36,7 @@ Exigences de qualité pour les règles de filtrage :
 
 Un **filtre** (ou une **liste de filtres**) est un ensemble de règles de filtrage conçues pour filtrer le contenu et bloquer des divers types de publicités et d'autres types de contenu à l'aide de bloqueurs de publicités. Ces filtres fonctionnent généralement au niveau du navigateur web, des programmes ou du serveur DNS.
 
-**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so-called “adblock walls”). Les anti-ablocks peuvent être de types différents :
+**Anti-blocage de publicités** est une technologie utilisée par des sites web ou des applications destinée à détecter le blocage de publicités et à y réagir de manières différentes : en piquant, réinjectant des publicités, encourageant à désactiver le bloqueur de pubs (les « murs de blocage publicitaire »). Les anti-ablocks peuvent être de types différents :
 
 - Anti-adblock qui bloque le contenu du site web sans proposer d'alternative : pour continuer à utiliser le site, l'utilisateur doit y désactiver le bloqueur de publicité
 - "Mur anti-adblock" avec des options alternatives proposées, telles que l'achat d'un abonnement pour continuer à utiliser le bloqueur de publicité
@@ -62,10 +72,10 @@ L'objectif des filtres de blocage des publicités est de bloquer tous les types 
 - Annonces interstitielles — annonces en plein écran sur les appareils mobiles qui couvrent l'interface de l'app ou du navigateur web
 - Les restes d'annonces qui occupent de grands espaces ou se détachent de l'arrière-plan et attirent l'attention des visiteurs (à l'exception de celles qui sont à peine discernables ou qui passent inaperçues)
 - Publicité anti-adblock — annonce alternative affichée sur le site web après le blocage de l'annonce principale
-- Bait elements that are used by multiple known adblock detection scripts to detect an ad blocker presence for different goals including changing the way ads are shown, fingerprinting, etc.
+- Éléments d'appât utilisés par plusieurs scripts de détection de bloqueurs de publicités connus pour détecter la présence d'un bloqueur de publicités à des fins différentes, notamment la modification de la manière dont les publicités sont affichées, le fingerprinting, etc.
 - La propre publicité du site, si elle a été bloquée par les règles générales de filtrage (voir *Limitations et exceptions*)
 - Scripts anti-adblock qui empêchent l'utilisation du site (voir *Limitations et exceptions*)
-- Advertising injected by malware, if detailed information about its loading method or steps for reproduction is provided
+- Publicité injectée par un logiciel malveillant, si des informations détaillées sur sa méthode de chargement ou les étapes de reproduction sont fournies
 - Minage indésirable — des scripts qui minent de la crypto-monnaie sans le consentement de l’utilisateur
 
 ### Limitations et exceptions
@@ -79,7 +89,7 @@ L'objectif des filtres de blocage des publicités est de bloquer tous les types 
 - Nous ne bloquons pas les messages de détection des bloqueurs de publicités qui satisfont à au moins un des critères suivants :
     - Ils permettent l'utilisation du site Internet et ne superposent pas une quantité importante de contenu
     - Ils offrent une alternative à la désactivation d'un bloqueur de publicité étant donné que cette alternative ne met pas la vie privée ou la sécurité des utilisateurs en danger
-    - They allow the user to proceed to the website’s content
+    - Ils permettent à l’utilisateur d’accéder au contenu du site Web
     - Certaines règles héritées peuvent continuer à bloquer les messages qui répondent à un ou plusieurs de ces critères. Si elles sont identifiées, ces règles seront traitées conformément à cette politique
 - Les pools de minage ne sont pas bloqués s'ils sont publics et s'ils ne sont pas utilisés uniquement à des fins malveillantes
 
@@ -114,7 +124,7 @@ Qu'est-ce qu'il bloque :
 - Cookies de suivi
 - Pixels de suivi
 - API de suivi des navigateurs
-- Detection of the ad blocker for tracking purposes
+- Détection du bloqueur de publicité à des fins de suivi
 - Fonctionnalité Privacy Sandbox dans Google Chrome et ses dérivés utilisés pour le suivi (Google Topics API, Protected Audience API)
 
 Le **Filtre de suivi des URL** est conçu pour supprimer les paramètres de suivi des adresses web
@@ -184,7 +194,7 @@ Il s'agit d'un filtre qui bloque diverses fenêtres pop-up sur les pages web qui
 
 #### Filtre AdGuard Mobile App Banners
 
-This is a filter that blocks banners and popups that encourage visitors to install mobile apps.
+C'est un filtre qui bloque les bannières et les popups qui encouragent les visiteurs à installer des applications mobiles.
 
 **Limitations et exceptions**
 

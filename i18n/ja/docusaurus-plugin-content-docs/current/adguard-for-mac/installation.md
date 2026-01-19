@@ -9,7 +9,7 @@ sidebar_position: 2
 
 ## 動作環境
 
-**OSバージョン**: macOS 10.15 (64 bit) 以上
+**Operating system version:** macOS 12 or later
 
 **RAM**: 2 GB以上
 
@@ -52,6 +52,12 @@ AdGuardアプリを使用するにはmacOS管理者アカウントのパスワ�
 ![保護を設定する](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-8.jpg)
 
 これで、お使いのMacへのAdGuardインストールは完了です！
+
+### Installation on older versions of macOS
+
+Users with older versions of macOS (Big Sur 11, Catalina 10.15, or earlier) won’t find a compatible app version on the AdGuard Ad Blocker website — these OS versions are no longer supported in the latest releases.
+
+However, you still can [download an older, compatible version](https://agrd.io/adguard_for_mac_v2-17)
 
 ## アンインストール
 

@@ -5,20 +5,18 @@ sidebar_position: 1
 
 :::info
 
-В этой статье рассказывается об AdGuard для iOS — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock).
+В этой статье рассказывается об AdGuard для iOS — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-There are two ways to activate Premium features in the AdGuard for iOS app:
+Активировать премиум-функции на AdGuard для iOS можно двумя способами:
 
-1. **Purchase a subscription.** Just tap the **Get Premium** plaque anywhere in the app and follow the on-screen instructions. Enter your Apple Account password and confirm the purchase. You can choose a monthly, yearly, or lifetime subscription.
+1. **Купить подписку в App Store.** — на год, месяц или навсегда. Это можно сделать, нажав на пометку *Премиум* в любом месте приложения или на вкладке *Лицензия*. Новым пользователям доступна пробная версия — 7 дней бесплатно.
 
-2. **Use an AdGuard license.** You can buy one on the [AdGuard website](https://adguard.com/license.html). To activate it, open your AdGuard app, tap *Settings → License → Log in* and enter the same email address you used for purchase or your license key. If you have a valid license key in your account, the app will detect it automatically and activate Premium.
-
-Alternatively, to activate Premium features, you can enter a valid license key in the email field and leave the password field blank.
+2. **Купить лицензию AdGuard [на нашем сайте](https://adguard.com/license.html).** Чтобы её активировать, откройте приложение AdGuard, нажмите *Настройки → Лицензия → Войти* и введите тот же адрес почты, что и при покупке. Или можно ввести код активации в поле почты и оставить поле пароля пустым. Но мы рекомендуем использовать комбинацию почты и пароля — это более безопасно.
 
 :::note
 
-AdGuard Pro for iOS is our other iOS app. It can only be purchased from the [App Store](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264).
+AdGuard Pro для iOS — это ещё одно наше приложение для iOS. Его можно купить только [в App Store](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264).
 
 :::

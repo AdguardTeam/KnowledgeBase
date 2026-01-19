@@ -85,6 +85,17 @@ Linux için AdGuard'ı yapılandırmak için `config` komutunu kullanın. Alt ko
 
 - `get`: Get the current status of the above options
 
+:::note
+
+The Automatic mode can only be used if the following requirements are met:
+
+- `iptables` is installed and running (either `nft` or `legacy`)
+- `iptables` supports the `nat` table for both IPv4 and IPv6
+- `iptables` supports the `REDIRECT` and `QUEUE` chains for both IPv4 and IPv6
+- The `sudo` package is installed
+
+:::
+
 ## Manage filters
 
 Use the `filters` command to configure AdGuard for Linux. Alt komutlar:
@@ -181,6 +192,14 @@ adguard-cli config set outbound_proxy.udp_through_socks5_enabled true
 SOCKS5 proxy'niz UDP'yi desteklemiyorsa, bağlantılar başarısız olabilir.
 
 :::
+
+## Uygulama başına AdGuard CLI yapılandırması
+
+Kullanıcıların genellikle belirli tarayıcılar için filtrelemeyi elle etkinleştirmesi gerekir. Linux için AdGuard, **uygulama başına yapılandırmayı** destekleyerek ayarları veya kuralları sistem genelinde uygulamak yerine her uygulamaya ayrı ayrı uygulamanıza olanak tanır.
+
+Ayrıntılar için `proxy.yaml` dosyasındaki `apps` bölümüne bakın.
+
+A set of pre-configured entries for popular web browsers is included by default in `browsers.yaml`.
 
 ### Checking the current configuration
 
