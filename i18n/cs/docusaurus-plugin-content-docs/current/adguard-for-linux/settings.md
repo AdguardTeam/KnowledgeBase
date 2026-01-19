@@ -85,6 +85,17 @@ Pro konfiguraci AdGuardu pro Linux použijte příkaz `config`. Dílčí příka
 
 - `get`: Zjištění aktuálního stavu výše uvedených možností
 
+:::note
+
+Automatický režim lze použít pouze tehdy, že jsou splněny následující požadavky:
+
+- `iptables` je nainstalován a spuštěn (buď `nft` nebo `legacy`)
+- `iptables` podporuje tabulku `nat` jak pro IPv4, tak pro IPv6
+- `iptables` podporuje řetězce `REDIRECT` a `QUEUE` jak pro IPv4, tak pro IPv6
+- Balíček `sudo` je nainstalován
+
+:::
+
 ## Správa filtrů
 
 Pro konfiguraci AdGuardu pro Linux použijte příkaz `filters`. Dílčí příkazy:
@@ -181,6 +192,14 @@ adguard-cli config set outbound_proxy.udp_through_socks5_enabled true
 Pokud váš proxy SOCKS5 nepodporuje UDP, připojení možná selžou.
 
 :::
+
+## Konfigurace AdGuard CLI pro jednotlivé aplikace
+
+Uživatelé často musí ručně povolit filtrování pro určité prohlížeče. AdGuard pro Linux podporuje **konfiguraci pro jednotlivé aplikace**, což vám umožňuje aplikovat nastavení nebo pravidla individuálně na každou aplikaci namísto na celý systém.
+
+Podrobnosti najdete v části `apps` v souboru `proxy.yaml`.
+
+Sada předkonfigurovaných položek pro oblíbené webové prohlížeče je ve výchozím nastavení zahrnuta v souboru `browsers.yaml`.
 
 ### Kontrola aktuální konfigurace
 

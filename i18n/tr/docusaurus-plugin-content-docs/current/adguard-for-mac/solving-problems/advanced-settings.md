@@ -171,6 +171,10 @@ Kullanıcının bir güvenlik duvarı etkinse macOS Özel Geçişi alan adların
 
 Enabling this setting is useful in the following scenario: when macOS Private Relay is active, filtering cannot function properly and must be disabled. macOS 14'e kadar olan sürümlerde, Koruma etkinleştirildiğinde AdGuard Özel Geçişi otomatik olarak devre dışı bırakabiliyordu. Ancak, macOS 15 ile birlikte, eğer bir güvenlik duvarı etkinse bu artık mümkün değil. Bu ayarı açarak, güvenlik duvarı etkinleştirildiğinde bile Özel Geçişi devre dışı bırakabilir ve önceki kısıtlamanın üstesinden gelebilirsiniz.
 
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Klasik X25519 algoritmasını ML-KEM-768 kuantum sonrası KEM ile birleştiren hibrit bir kuantum sonrası anahtar değişimiyle DNS proxy bağlantılarını güvence altına alır. Applies only to DoH, DoT, and DoQ upstreams.
+
 ### Gizlilik Modu ayarları
 
 #### `stealth.antidpi.http.split.fragment.size`

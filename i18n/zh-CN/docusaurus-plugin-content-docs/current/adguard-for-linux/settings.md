@@ -85,6 +85,17 @@ adguard-cli update -v
 
 - `get`：获取上述选项的当前状态
 
+:::note
+
+The Automatic mode can only be used if the following requirements are met:
+
+- `iptables` is installed and running (either `nft` or `legacy`)
+- `iptables` supports the `nat` table for both IPv4 and IPv6
+- `iptables` supports the `REDIRECT` and `QUEUE` chains for both IPv4 and IPv6
+- The `sudo` package is installed
+
+:::
+
 ## 管理过滤器
 
 使用 `filters` 命令配置 Linux 版 AdGuard。 子命令：
@@ -181,6 +192,14 @@ adguard-cli config set outbound_proxy.udp_through_socks5_enabled true
 If your SOCKS5 proxy does not support UDP, connections may fail.
 
 :::
+
+## Per-app AdGuard CLI configuration
+
+Users often need to enable filtering manually for certain browsers. AdGuard for Linux supports **per-app configuration**, allowing you to apply settings or rules individually to each application instead of system-wide.
+
+For details, refer to the `apps` section in `proxy.yaml`.
+
+A set of pre-configured entries for popular web browsers is included by default in `browsers.yaml`.
 
 ### Checking the current configuration
 

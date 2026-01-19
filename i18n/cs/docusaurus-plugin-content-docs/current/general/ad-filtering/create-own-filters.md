@@ -103,7 +103,7 @@ Pravidla blokování s modifikátorem [`$important`](#important-modifier) mohou 
 
 ![Cosmetic rule](https://cdn.adtidy.org/content/kb/ad_blocker/general/5_cosmetic_rules.svg)
 
-Kosmetická pravidla jsou založena na použití speciálního jazyka CSS, kterému rozumí každý prohlížeč. V podstatě přidává na webové stránky nový styl CSS, jehož účelem je skrýt určité prvky. You can [learn more about CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors) in general.
+Kosmetická pravidla jsou založena na použití speciálního jazyka CSS, kterému rozumí každý prohlížeč. V podstatě přidává na webové stránky nový styl CSS, jehož účelem je skrýt určité prvky. Více o CSS obecně se můžete dozvědět [zde](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
 
 AdGuard [rozšiřuje CSS](#extended-css-selectors) a umožňuje tak vývojářům filtrů řešit mnohem složitější případy. Abyste však mohli tato rozšířená pravidla používat, musíte ovládat běžný jazyk CSS.
 
@@ -1369,6 +1369,7 @@ Tyto modifikátory mohou zcela změnit chování základních pravidel.
 | [$removeparam](#removeparam-modifier)       |                      ✅                      |                      ✅                       | ✅ [*[6]](#removeparam-modifier-limitations)  |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
 | [$replace](#replace-modifier)               |                      ✅                      |                      ❌                       |                      ❌                       |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
 | [$urltransform](#urltransform-modifier)     |                      ✅                      |                      ❌                       |                      ❌                       |                      ❌                       |             ❌              |               ❌               |                 ❌                 |
+| [$reason](#reason-modifier)                 |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ✅              |               ✅               |                 ❌                 |
 | [noop](#noop-modifier)                      |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ✅              |               ✅               |                 ❌                 |
 | [$empty 👎](#empty-modifier "deprecated")    |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
 | [$mp4 👎](#mp4-modifier "deprecated")        |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
@@ -1504,7 +1505,7 @@ Existují dva způsoby, jak deaktivovat pravidla `$cookie`: primární metoda za
 
 :::caution Omezení
 
-V [AdGuardu pro Chrome MV3][ext-mv3] odstraňujeme soubory cookies dvěma způsoby: ze strany `content-script` (ke které máme přístup) a z `onBeforeSendHeaders` posluchače. Vzhledem k tomu, že `onBeforeSendHeaders` a další posluchači již nejsou blokováni, je nemůžeme ve všech případech smazat. Pomocí [tohoto testu](https://testcases.agrd.dev/Filters/cookie-rules/test-cookie-rules) můžete zkontrolovat, zda pravidlo funguje.
+V [AdGuardu pro Chrome MV3][ext-mv3] odstraňujeme soubory cookies 2 způsoby: ze strany `content-script` (ke které máme přístup) a z `onBeforeSendHeaders` posluchače. Vzhledem k tomu, že `onBeforeSendHeaders` a další posluchači již nejsou blokováni, je nemůžeme ve všech případech smazat. Pomocí [tohoto testu](https://testcases.agrd.dev/Filters/cookie-rules/test-cookie-rules) můžete zkontrolovat, zda pravidlo funguje.
 
 :::
 
@@ -1692,7 +1693,7 @@ preroll.ts
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$hls` jsou podporována AdGuardem pro Windows, Mac a Android s [CoreLibs][] v1.10 nebo novější.
+Pravidla s modifikátorem `$hls` jsou podporována AdGuardem pro Windows, Mac, Android a Linux s [CoreLibs][] v1.10 nebo novější.
 
 :::
 
@@ -2230,7 +2231,7 @@ Hodnota syntaxe `$permissions` je shodná se [syntaxí](https://developer.mozill
 1. Čárka, která odděluje více prvků **MUSÍ být uvozena** – viz příklady níže.
 2. Místo čárky lze pro oddělení funkcí použít znak `(|)`.
 
-Available directives are listed in the [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives) article.
+Seznam dostupných direktiv je k dispozici v [Zásadách oprávnění](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
 
 Hodnota `$permissions` může být v případě pravidel pro výjimky prázdná — viz příklady níže.
 
@@ -2932,6 +2933,41 @@ Pravidla s modifikátorem `$urltransform` jsou podporována AdGuardem pro Window
 
 :::
 
+#### **`$reason`** {#reason-modifier}
+
+Modifikátor `$reason` umožňuje přidat vlastní vysvětlující zprávu, která se zobrazí na blokovací stránce, když je požadavek tímto pravidlem blokován. Tento modifikátor funguje pouze s modifikátorem typu obsahu `$document`.
+
+**Omezení počtu znaků a požadavky na únik:**
+
+- Pro text s odůvodněním neexistuje žádné omezení maximální délky
+- V textu důvodu jsou povoleny všechny znaky
+- Zvláštní znaky (například uvozovky, čárky a zpětné lomítko) musí být správně uvozeny pomocí zpětného lomítka (`\`)
+
+**Předdefinované lokalizovatelné tokeny:**
+
+Místo vlastního textu můžete použít předdefinované tokeny, které budou automaticky lokalizovány:
+
+- `malicious` — pro škodlivý obsah
+- `tracker` — pro sledování obsahu
+- `disreputable` — pro nedůvěryhodný obsah
+
+**Příklady**
+
+```adblock
+||example.com^$document,reason="Tracker"
+||example.com^$document,reason="Malicious site blocked by security filter"
+||ads.example.com^$document,reason="This site contains tracking scripts"
+||malware.example.com^$document,reason="Site blocked: \"Known malware distributor\""
+||tracking.example.com^$document,reason=disreputable
+||analytics.example.com^$document,reason=tracker
+```
+
+:::info Kompatibilita
+
+AdGuard pro Windows, AdGuard pro Mac, AdGuard pro Android a AdGuard pro Linux s CoreLibs v1.20 nebo novější podporují pravidla s modifikátorem `$reason`. Blokátor obsahu AdGuard tato pravidla nepodporuje.
+
+:::
+
 #### **`noop`** {#noop-modifier}
 
 Modifikátor `noop` nedělá nic a lze jej použít pouze ke zvýšení čitelnosti pravidel. Skládá se ze sekvence znaků podtržítka (`_`) libovolné délky a může se v pravidle objevit tolikrát, kolikrát je potřeba.
@@ -3432,15 +3468,20 @@ Návrh specifikace CSS 4.0 popisuje [`:has()` pseudo-třídu](https://www.w3.org
 
 :::note
 
-Pravidla s pseudo-třídou `:has()` musí používat nativní implementaci [ `:has()`][native-has], pokud používají znak `##` a pokud je to možné, tj. bez dalších rozšířených selektorů uvnitř. Pokud není produktem podporována, bude implementace ExtendedCss použita i pro pravidla se značkou `##`.
+Pravidla s pseudo-třídou `:has()` musí používat nativní implementaci [ `:has()`][native-has], pokud používají znak `##` a pokud je to možné, tj. bez dalších rozšířených selektorů uvnitř. Pokud to produkt (nebo v případě rozšíření prohlížeče AdGuard) nepodporuje, bude automaticky použita implementace ExtendedCss jako náhradní řešení, a to i pro pravidla se značkou `##`.
 
-V současné době ne všechny produkty AdGuardu podporují nativní implementaci `:has()`:
+AdGuard podporuje nativní implementaci `:has()`:
 
 - AdGuard pro Windows, AdGuard pro Mac, AdGuard pro Android a AdGuard pro Linux to **podporují** s [knihovnou CoreLibs][] v1.12 nebo novější.
-- AdGuard pro iOS a AdGuard pro Safari to **podporují** s [knihovnou SafariConverterLib](#safari-converter-lib) v2.0.39 a [prohlížečem Safari v16.4][safari-16.4].
-- Rozšíření prohlížeče AdGuard to zatím **nepodporuje**, ale [plánuje se][AdguardBrowserExtension#2587].
+- AdGuard pro iOS a AdGuard pro Safari to **podporují** s [knihovnou SafariConverterLib](#safari-converter-lib) v2.0.39 a [prohlížečem Safari v16.4][safari-16.4] nebo novějším.
+- Rozšíření prohlížeče AdGuard to **podporuje** ve verzi 5.3 nebo novější:
+    - **Manifest V3** (na bázi Chromium): vždy používá nativní `:has()` jako výchozí.
+    - **Manifest V2**: Pokud prohlížeč nepodporuje nativní podporu `:has()`, použije `CSS.supports()` a vrátí se k ExtendedCss.
+- Všechny ostatní produkty AdGuardu **to** nepodporují.
 
 Chcete-li vynutit použití implementace ExtendedCss `:has()`, použijte explicitně značky pravidel `#?#` nebo `#$?#`, např. `example.com#?#p:has(> a)` nebo `example.com#$?#div:has(> span) { display: none !important; }`.
+
+A protože pseudo-třída `:has()` nemůže být v nativní implementaci zanořena do další `:has()`, například `div:has(p:has(a))`, vždy je v rozšíření prohlížeče AdGuard považována za rozšířenou.
 
 :::
 
@@ -4076,6 +4117,8 @@ Syntaxi s volitelnou hodnotou `value` v atributech podporuje AdGuard pro Windows
 
 ### Syntaxe
 
+Syntaxe podporovaná AdGuardem pro Windows, AdGuardem pro Mac, AdGuardem pro Android, AdGuardem pro Linux s CoreLibs a rozšířením prohlížeče AdGuard před verzí 5.2:
+
 ```text
      selector = [tagName] [attributes] [pseudoClasses]
    combinator = ">"
@@ -4092,6 +4135,24 @@ pseudoClasses = pseudoClass *pseudoClass
 - **`pseudoName`** — název pseudotřídy.
 - **`pseudoArgs`** — argumenty pseudotřídy typu funkce.
 - **`combinator`** — operátor, který funguje podobně jako podřízený kombinátor [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator): to znamená, že `selector` napravo od `combinator` bude odpovídat pouze prvku, jehož přímý původce odpovídá `selector` vlevo z `combinator`.
+
+Syntaxe podporovaná rozšířením prohlížeče AdGuard verze 5.3 nebo novější:
+
+```text
+         rule = [domains] "$$" selector
+      domains = [domain0, domain1[, ...[, domainN]]]
+```
+
+- **`selektor`** — [CSS selektor](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors) definuje prvek(y), které mají být odstraněny z HTML kódu před načtením stránky.
+- **`domains`** — omezení domény pro dané pravidlo. Stejné zásady jako v [syntaxi pravidel pro skrývání prvků](#cosmetic-elemhide-rules).
+
+:::caution Omezení
+
+Následující omezení platí pro rozšíření prohlížeče AdGuard v5.3 a novější:
+
+- Pseudoprvky (např. `::before`, `::after`) nejsou podporovány, protože nejsou použitelné v kontextu filtrování HTML.
+
+:::
 
 ### Příklady
 
@@ -4122,7 +4183,7 @@ example.org$$div[some_attribute]
 
 Toto pravidlo odstraní všechny prvky `div` s atributem `some_attribute` na `example.org` a všech jejích subdoménách. Oba prvky `div` z výše uvedeného příkladu budou odstraněny.
 
-### Special attributes {#html-filtering-rules--special-attributes}
+### Speciální atributy {#html-filtering-rules--special-attributes}
 
 Kromě obvyklých atributů, jejichž hodnotu kontroluje každý prvek, existuje sada speciálních atributů, které mění způsob fungování pravidla. Níže je uveden seznam těchto atributů:
 
@@ -4156,6 +4217,8 @@ $$script[tag-content="banner"]
 
 Speciální atribut `tag-content` se nesmí objevit v selektoru nalevo od kombinátoru `>`.
 
+Toto omezení se nevztahuje na rozšíření prohlížeče AdGuard v5.3 nebo novější.
+
 :::
 
 #### `wildcard`
@@ -4177,6 +4240,8 @@ Kontroluje, zda prvek code obsahuje dva po sobě jdoucí podřetězce `banner` a
 :::caution Omezení
 
 Speciální atribut `wildcard` se nesmí objevit v selektoru nalevo od kombinátoru `>`.
+
+Toto omezení se nevztahuje na rozšíření prohlížeče AdGuard v5.3 nebo novější.
 
 :::
 
@@ -4206,6 +4271,8 @@ Toto pravidlo odstraní všechny prvky `div`, jejichž kód obsahuje podřetěze
 
 Speciální atribut `max-length` se nesmí objevit v selektoru nalevo od kombinátoru `>`.
 
+Toto omezení se nevztahuje na rozšíření prohlížeče AdGuard v5.3 nebo novější.
+
 :::
 
 #### `min-length`
@@ -4230,9 +4297,11 @@ Toto pravidlo odstraní všechny prvky `div`, jejichž kód obsahuje podřetěze
 
 Speciální atribut `min-length` se nesmí objevit v selektoru nalevo od kombinátoru `>`.
 
+Toto omezení se nevztahuje na rozšíření prohlížeče AdGuard v5.3 nebo novější.
+
 :::
 
-### Pseudo-classes {#html-filtering-rules--pseudo-classes}
+### Pseudotřídy {#html-filtering-rules--pseudo-classes}
 
 #### `:contains()` {#html-filtering-rules--contains}
 
@@ -4256,7 +4325,7 @@ nebo
 
 :::info Kompatibilita
 
-Pseudotřída `:contains()` je podporována aplikacemi AdGuard pro Windows, AdGuard pro Mac, AdGuard pro Android a AdGuard pro Linux s [knihovnou CoreLibs][] v1.13 nebo novější.
+Pseudotřída `:contains()` je podporována AdGuardem pro Windows, AdGuardem pro Mac, AdGuardem pro Android, AdGuardem pro Linux s [CoreLibs][] v1.13 nebo novější a rozšířením AdGuard v5.3 nebo novější.
 
 :::
 
@@ -4265,6 +4334,8 @@ Vyžaduje, aby vnitřní HTML prvku obsahovalo zadaný text nebo odpovídalo zad
 :::caution Omezení
 
 Pseudotřída `:contains()` se nesmí objevit v selektoru nalevo od kombinátoru `>`.
+
+Toto omezení se nevztahuje na rozšíření prohlížeče AdGuard v5.3 nebo novější.
 
 :::
 
@@ -4493,7 +4564,7 @@ V modifikátorech musí být uvozeny hodnoty následujících znaků: `[`, `]`, 
 | [$app](#non-basic-app-modifier)       |              ✅               |                       ❌                       |                        ❌                         |                       ❌                       |             ❌              |               ❌               |                 ❌                 |
 | [$domain](#non-basic-domain-modifier) |              ✅               |                       ✅                       | ✅ [*[1]](#non-basic-domain-modifier-limitations) |                       ✅                       |             ✅              |               ✅               |                 ❌                 |
 | [$path](#non-basic-path-modifier)     |              ✅               |                       ✅                       |                        ❌                         |                       ✅                       |             ✅              |               ✅               |                 ❌                 |
-| [$url](#non-basic-url-modifier)       |              ✅               | ✅ [*[2]](#non-basic-url-modifier-limitations) |  ✅ [*[2]](#non-basic-url-modifier-limitations)   | ✅ [*[2]](#non-basic-url-modifier-limitations) |             ❌              |               ❌               |                 ❌                 |
+| [$url](#non-basic-url-modifier)       |              ✅               | ✅ [*[3]](#non-basic-url-modifier-limitations) |  ✅ [*[3]](#non-basic-url-modifier-limitations)   | ✅ [*[3]](#non-basic-url-modifier-limitations) |             ❌              |               ❌               |                 ❌                 |
 
 :::note
 
@@ -4579,6 +4650,14 @@ Modifikátor `$path` podporuje regulární výrazy [stejným způsobem](#regexp-
 - `[$path]example.com##.textad` skryje `div` se třídou `textad` na hlavní stránce domény `example.com`
 - `[$domain=example.com,path=/page.html]##.textad` skryje `div` se třídou `textad` na `page.html` domény `example.com` a všech subdoménách kromě `another_page.html`
 - `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` skryje `div` se třídou `textad` na `/sub1/page.html` a `/sub2/page.html` jakékoliv domény (vezměte prosím na vědomí, že [ uvozuje speciální znak](#non-basic-rules-modifiers-syntax))
+
+#### omezení modifikátoru `$path` {#non-basic-path-modifier-limitations}
+
+:::caution Omezení
+
+V rozšíření prohlížeče AdGuard, nezákladní `$path` modifikátor je kompatibilní s ostatními nezákladními modifikátory, pouze pokud je umístěn jako poslední, např. `[$domain=/example.(com|org)/,path=/foo]##.ad`. Jinak to možná nebude fungovat dle očekávání.
+
+:::
 
 :::info Kompatibilita
 
@@ -4760,9 +4839,9 @@ domain.com##div.ad
 
 :::info Kompatibilita
 
-Direktivu `!#else` podporuje [FiltersDownloader][gh-filters-downloader] v1.1.20 nebo novější.
+Direktiva `!#else` je podporována nástrojem [FiltersDownloader][gh-filters-downloader] v1.1.20 nebo novějším.
 
-Je již podporována pro seznamy filtrů sestavené pomocí [FiltersRegistry][], ale stále nemusí být podporována produkty AdGuardu při přidání seznamu filtrů s `!#else` jako vlastních. Následující produkty ji budou podporovat ve zmíněných nebo novějších verzích:
+Je již podporována pro seznamy filtrů sestavené pomocí [FiltersRegistry][], ale stále nemusí být podporována produkty AdGuard při přidávání seznamu filtrů s `!#else` jako vlastního. Následující produkty ji budou podporovat ve zmíněných nebo novějších verzích:
 
 - AdGuard pro Windows, Mac a Android s [CoreLibs][] v1.13;
 - Rozšíření prohlížeče AdGuard v4.2.208;
@@ -4884,7 +4963,7 @@ Nakonec zde jsou dvě verze základního filtru pro Rozšíření prohlížeče 
 ||example.org^
 ```
 
-#### Nápověda `PLATFORM` a `NOT_PLATFORM`
+#### Nápovědy `PLATFORM` a `NOT_PLATFORM`
 
 Slouží k zadání platforem pro použití pravidel. Seznam existujících platforem a odkazy např. na Základní filtr:
 
@@ -5090,7 +5169,6 @@ Následující skriptlety lze také použít pro účely ladění:
 
 [native-has]: https://developer.mozilla.org/docs/Web/CSS/:has
 [safari-16.4]: https://www.webkit.org/blog/13966/webkit-features-in-safari-16-4/
-[AdguardBrowserExtension#2587]: https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2587
 
 [cl-apps]: #what-product "AdGuard pro Windows, Mac, Linux a Android"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"

@@ -103,7 +103,7 @@ toc_max_heading_level: 4
 
 ![Косметические правила](https://cdn.adtidy.org/content/kb/ad_blocker/general/5_cosmetic_rules.svg)
 
-Косметические правила применяются с использованием CSS — специального языка программирования, который понимает каждый браузер. В основном, он добавляет новый стиль CSS на сайт, цель которого — скрыть определённые элементы. You can [learn more about CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors) in general.
+Косметические правила применяются с использованием CSS — специального языка программирования, который понимает каждый браузер. В основном, он добавляет новый стиль CSS на сайт, цель которого — скрыть определённые элементы. Вы можете [узнать больше о CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors) в целом.
 
 AdGuard [расширяет возможности CSS](#extended-css-selectors) и позволяет разработчикам фильтров решать гораздо более сложные задачи. Но чтобы использовать эти расширенные правила, вы должны хорошо понимать, что такое CSS.
 
@@ -421,7 +421,7 @@ Wildcard-символы поддерживаются для TLD-доменов �
 
 **Синтаксис**
 
-The modifier is a list of one or more expressions, each of which is matched against an application in a particular way depending on its type. These expressions are separated by the `|` symbol.
+Модификатор представляет собой список из одного или нескольких выражений, каждое из которых сопоставляется с приложением определённым образом в зависимости от его типа. Эти выражения разделены символом `|`.
 
 ```text
 applications = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
@@ -465,7 +465,7 @@ The `$app` modifier supports combining all three types of entries — plain name
 :::info Совместимость
 
 - Только AdGuard для Windows, Mac и Android имеют технические возможности для поддержки правил с модификатором `$app`.
-- На Windows имя процесса нечувствительно к регистру, начиная с версий AdGuard для Windows [c CoreLibs][] 1.12 или более поздней версии.
+- On Windows the process name is case-insensitive starting with AdGuard for Windows with [CoreLibs][] v1.12 or later.
 - Support for regular expressions and for combining different types of entries (plain names, wildcards, and regular expressions) in the `$app` modifier is available starting from CoreLibs v1.19 or later.
 
 :::
@@ -1152,7 +1152,7 @@ $extension="userscript name\, with \"quote\""
 :::info Совместимость
 
 - Только AdGuard для Windows, Mac и Android имеют технические возможности для поддержки правил с модификатором `$extension`.
-- Правила с модификатором `$extension` и определённым именем пользовательского скрипта поддерживаются в AdGuard для Windows, AdGuard для Mac, AdGuard для Android и AdGuard для Linux [с CoreLibs][] версии 1.13 или выше.
+- Rules with `$extension` modifier with specific userscript name are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.13 or later.
 
 :::
 
@@ -1232,7 +1232,7 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 :::info Совместимость
 
 - Защита от трекинга доступна в AdGuard для Windows, AdGuard для Mac, AdGuard для Android и расширении AdGuard для Firefox и браузеров на базе Chromium, за исключением AdGuard для Chrome MV3. Все остальные продукты будут игнорировать правила с модификатором `$stealth`.
-- Правила с модификатором `$stealth` поддерживаются в AdGuard для Windows, AdGuard для Mac, AdGuard для Android и AdGuard для Linux с [CoreLibs][] версии 1.10 или выше и в Браузерном расширении AdGuard с [TSUrlFilter][] версии 3.0.0 или выше.
+- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
 
 :::
 
@@ -1369,6 +1369,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$removeparam](#removeparam-modifier)       |                      ✅                      |                      ✅                       | ✅ [*[6]](#removeparam-modifier-limitations)  |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
 | [$replace](#replace-modifier)               |                      ✅                      |                      ❌                       |                      ❌                       |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
 | [$urltransform](#urltransform-modifier)     |                      ✅                      |                      ❌                       |                      ❌                       |                      ❌                       |             ❌              |               ❌               |                 ❌                 |
+| [$reason](#reason-modifier)                 |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ✅              |               ✅               |                 ❌                 |
 | [noop](#noop-modifier)                      |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ✅              |               ✅               |                 ❌                 |
 | [$empty 👎](#empty-modifier "устарел")       |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
 | [$mp4 👎](#mp4-modifier "устарел")           |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
@@ -2273,8 +2274,8 @@ Firefox ignores the `Permissions-Policy` header. For more information, see [this
 
 :::info Совместимость
 
-- Правила с модификатором `$permissions` поддерживаются в AdGuard для Windows, AdGuard для Mac, AdGuard для Android и AdGuard для Linux [с CoreLibs][] версии 1.11 или выше и в Браузерном расширении AdGuard [с TSUrlFilter][] версии 3.0.0 или выше.
-- Разделитель `|` вместо запятой поддерживается в AdGuard для Windows, AdGuard для Mac, AdGuard для Android и AdGuard для Linux [с CoreLibs][] версии 1.14 или выше и в Браузерном расширении AdGuard [с TSUrlFilter][] версии 3.0.0 или выше.
+- Rules with the `$permissions` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+- Pipe separator `|` instead of escaped comma is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.14 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
 
 :::
 
@@ -2319,7 +2320,7 @@ In [AdGuard for Chrome MV3][ext-mv3] allowlist rules with `$redirect` are not su
 
 :::info Совместимость
 
-- Правила с модификатором `$redirect` не поддерживаются в [AdGuard Content Blocker][and-cb], [AdGuard для iOS][ios-app] и [AdGuard для Safari][ext-saf] .
+- Rules with `$redirect` modifier are not supported by [AdGuard Content Blocker][and-cb], [AdGuard for iOS][ios-app], and [AdGuard for Safari][ext-saf] .
 - `$redirect` в uBlock Origin поддерживает указание приоритета, например, `$redirect=noopjs:42`. AdGuard не поддерживает его и вместо этого просто отбрасывает приоритетный постфикс.
 
 :::
@@ -2736,9 +2737,9 @@ With these rules, specified UTM parameters will be removed from any request save
 
 :::info Совместимость
 
-- Правила с модификатором `$removeparam` поддерживаются в AdGuard для Windows, AdGuard для Mac, AdGuard для Android и AdGuard для Linux с [CoreLibs][] версии 1.7 или выше, а также в Браузерном расширении AdGuard версии 3.6 или выше.
-- Синтаксис `$removeparam` для регулярных выражений поддерживается в AdGuard для Windows, AdGuard для Mac и AdGuard для Android с [CoreLibs][] версии 1.8 или выше, а также в Браузерном расширении AdGuard версии 4.0 или выше.
-- Запросы `POST` поддерживаются только в AdGuard для Windows, Mac и Android с [CoreLibs][] версии 1.10 или выше, и в Браузерном расширении AdGuard с [TSWebExtension][] версии 0.4.6 или выше.
+- Rules with `$removeparam` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.7 or later, and AdGuard Browser Extension v3.6 or later.
+- `$removeparam` syntax for regular expressions is supported AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.8 or later, and AdGuard Browser Extension v4.0 or later.
+- `POST` request types are supported only by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSWebExtension][] v0.4.6 or later.
 
 :::
 
@@ -2932,6 +2933,41 @@ Rules with the `$urltransform` modifier are supported by AdGuard for Windows, Ad
 
 :::
 
+#### **`$reason`** {#reason-modifier}
+
+The `$reason` modifier allows you to add a custom explanation message that will be displayed on the blocking page when a request is blocked by this rule. This modifier only works with the `$document` content-type modifier.
+
+**Character limitations and escaping requirements:**
+
+- There is no maximum length limit for the reason text
+- All characters are allowed in the reason text
+- Special characters (such as quotes, commas, and backslashes) must be properly escaped using the backslash (`\`)
+
+**Predefined localizable tokens:**
+
+Instead of custom text, you can use predefined tokens that will be automatically localized:
+
+- `malicious` — for malicious content
+- `tracker` — for tracking content
+- `disreputable` — for disreputable content
+
+**Примеры**
+
+```adblock
+||example.com^$document,reason="Tracker"
+||example.com^$document,reason="Malicious site blocked by security filter"
+||ads.example.com^$document,reason="This site contains tracking scripts"
+||malware.example.com^$document,reason="Site blocked: \"Known malware distributor\""
+||tracking.example.com^$document,reason=disreputable
+||analytics.example.com^$document,reason=tracker
+```
+
+:::info Совместимость
+
+AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with CoreLibs v1.20 or later support rules with the `$reason` modifier. AdGuard Content Blocker does not support these rules.
+
+:::
+
 #### **`noop`** {#noop-modifier}
 
 `noop` modifier does nothing and can be used solely to increase rules' readability. It consists of a sequence of underscore characters (`_`) of arbitrary length and can appear in a rule as often as needed.
@@ -3015,7 +3051,7 @@ The base priority of any rule is 1. If the calculated priority is a floating-poi
 
 :::info Совместимость
 
-- Понятие приоритета было введено [в TSUrlFilter][] 2.1.0 и [CoreLibs][] 1.13. До этого в AdGuard не было специального алгоритма вычисления приоритетов, и обработка конфликтов могла отличаться в зависимости от продукта и версии AdGuard.
+- The concept of priority has been introduced in [TSUrlFilter][] v2.1.0 and [CoreLibs][] v1.13. До этого в AdGuard не было специального алгоритма вычисления приоритетов, и обработка конфликтов могла отличаться в зависимости от продукта и версии AdGuard.
 - AdGuard для iOS, Safari и AdGuard Content Blocker зависят от реализации браузера и не могут следовать указанным здесь правилам.
 
 :::
@@ -3432,15 +3468,20 @@ Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3
 
 :::note
 
-Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`][native-has] if they use the `##` rule marker and if it is possible, i.e., there are no other extended CSS selectors inside. If it is not supported by the product, ExtendedCss implementation will be used even for rules with the `##` marker.
+Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`][native-has] if they use the `##` rule marker and if it is possible, i.e., there are no other extended CSS selectors inside. If it is not supported by the product (or by the browser in case of AdGuard Browser Extension), ExtendedCss implementation will be used automatically as a fallback, even for rules with the `##` marker.
 
-Currently, not all AdGuard products support the native implementation of `:has()` yet:
+AdGuard products support the native implementation of `:has()`:
 
-- AdGuard для Windows, AdGuard для Mac, AdGuard для Android и AdGuard для Linux **поддерживают** её с [CoreLibs][] версии 1.12.
-- AdGuard для iOS и AdGuard для Safari **поддерживают** её с [SafariConverterLib](#safari-converter-lib) версии 2.0.39 и [браузера Safari версии 16.4][safari-16.4].
-- Браузерное расширение AdGuard **пока не поддерживает** её, но это [планируется][AdguardBrowserExtension#2587].
+- AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **support** it with [CoreLibs][] v1.12 or later.
+- AdGuard for iOS and AdGuard for Safari **support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 and [Safari browser v16.4][safari-16.4] or later.
+- AdGuard Browser Extension **supports** it in v5.3 or later:
+    - **Manifest V3** (Chromium-based): always uses native `:has()` by default.
+    - **Manifest V2**: Detects native `:has()` support using `CSS.supports()` and falls back to ExtendedCss if the browser doesn’t support it natively.
+- All other AdGuard products **do not support** it.
 
-To force the ExtendedCss implementation of `:has()` to be used, use the `#?#` or `#$?#` rule markers explicitly, e.g., `example.com#?#p:has(> a)` or `example.com#$?#div:has(> span) { display: none !important; }`.
+To force the ExtendedCss implementation of `:has()` to be used (regardless of native support), use the `#?#` or `#$?#` rule markers explicitly, e.g., `example.com#?#p:has(> a)` or `example.com#$?#div:has(> span) { display: none !important; }`.
+
+And since the `:has()` pseudo-class cannot be nested within another `:has()` in native implementation, e.g. `div:has(p:has(a))`, it is always treated as extended in AdGuard Browser Extension.
 
 :::
 
@@ -3842,7 +3883,7 @@ subject:nth-ancestor(n)
 ```
 
 - `subject` — обязателен. Стандартный или расширенный CSS-селектор
-- `n` — обязателен. Число >= 1 и < 256, расстояние до нужного родителя от элемента, выбранного `subject`
+- `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
 
 **Syntax**
 
@@ -3851,7 +3892,7 @@ subject:nth-ancestor(n)
 ```
 
 - `subject` — обязателен. Стандартный или расширенный CSS-селектор
-- `n` — обязателен. Число >= 1 и < 256, расстояние до нужного родителя от элемента, выбранного `subject`
+- `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
 
 ##### Ограничения `:nth-ancestor()` {#extended-css-nth-ancestor-limitations}
 
@@ -4076,6 +4117,8 @@ The syntax with an optional `value` in the attributes is supported by AdGuard fo
 
 ### Syntax
 
+Syntax supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux with CoreLibs, and AdGuard Browser Extension prior to v5.2:
+
 ```text
      selector = [tagName] [attributes] [pseudoClasses]
    combinator = ">"
@@ -4092,6 +4135,24 @@ pseudoClasses = pseudoClass *pseudoClass
 - **`pseudoName`** — имя псевдокласса.
 - **`pseudoArgs`** — аргументы псевдокласса, записанного в виде функции.
 - **`combinator`** — оператор, который работает аналогично [CSS-комбинатору дочерних элементов](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator): то есть `selector` справа от `combinator` будет относиться только к элементу, прямой родительский элемент которого соответствует `selector` слева от `combinator`.
+
+Syntax supported by AdGuard Browser Extension v5.3 or later:
+
+```text
+         rule = [domains] "$$" selector
+      domains = [domain0, domain1[, ...[, domainN]]]
+```
+
+- **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the element(s) to be removed from the HTML code before the page is loaded.
+- **`domains`** — доменное ограничение для правила. Те же принципы, что и в [синтаксисе правил скрытия элементов](#cosmetic-elemhide-rules).
+
+:::caution Limitations
+
+The following limitations apply to AdGuard Browser Extension v5.3 and later:
+
+- Pseudo-elements (e.g., `::before`, `::after`) are not supported, as they are not applicable in the context of HTML filtering.
+
+:::
 
 ### Примеры
 
@@ -4156,6 +4217,8 @@ $$script[tag-content="banner"]
 
 The `tag-content` special attribute must not appear in a selector to the left of a `>` combinator.
 
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
+
 :::
 
 #### `wildcard`
@@ -4177,6 +4240,8 @@ It checks if the element code contains the two consecutive substrings `banner` a
 :::caution Limitations
 
 The `wildcard` special attribute must not appear in a selector to the left of a `>` combinator.
+
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 :::
 
@@ -4206,6 +4271,8 @@ This rule will remove all the `div` elements, whose code contains the substring 
 
 The `max-length` special attribute must not appear in a selector to the left of a `>` combinator.
 
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
+
 :::
 
 #### `min-length`
@@ -4229,6 +4296,8 @@ This rule will remove all the `div` elements, whose code contains the substring 
 :::caution Limitations
 
 The `min-length` special attribute must not appear in a selector to the left of a `>` combinator.
+
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 :::
 
@@ -4256,7 +4325,7 @@ The `min-length` special attribute must not appear in a selector to the left of 
 
 :::info Совместимость
 
-The `:contains()` pseudo-class is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.13 or later.
+The `:contains()` pseudo-class is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux with [CoreLibs][] v1.13 or later, and AdGuard Browser Extension v5.3 or later.
 
 :::
 
@@ -4265,6 +4334,8 @@ Requires that the inner HTML of the element contains the specified text or match
 :::caution Limitations
 
 A `:contains()` pseudo-class must not appear in a selector to the left of a `>` combinator.
+
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 :::
 
@@ -4493,7 +4564,7 @@ In the modifiers values, the following characters must be escaped: `[`, `]`, `,`
 | [$app](#non-basic-app-modifier)       |               ✅                |                       ❌                       |                        ❌                         |                       ❌                       |             ❌              |               ❌               |                 ❌                 |
 | [$domain](#non-basic-domain-modifier) |               ✅                |                       ✅                       | ✅ [*[1]](#non-basic-domain-modifier-limitations) |                       ✅                       |             ✅              |               ✅               |                 ❌                 |
 | [$path](#non-basic-path-modifier)     |               ✅                |                       ✅                       |                        ❌                         |                       ✅                       |             ✅              |               ✅               |                 ❌                 |
-| [$url](#non-basic-url-modifier)       |               ✅                | ✅ [*[2]](#non-basic-url-modifier-limitations) |  ✅ [*[2]](#non-basic-url-modifier-limitations)   | ✅ [*[2]](#non-basic-url-modifier-limitations) |             ❌              |               ❌               |                 ❌                 |
+| [$url](#non-basic-url-modifier)       |               ✅                | ✅ [*[3]](#non-basic-url-modifier-limitations) |  ✅ [*[3]](#non-basic-url-modifier-limitations)   | ✅ [*[3]](#non-basic-url-modifier-limitations) |             ❌              |               ❌               |                 ❌                 |
 
 :::note
 
@@ -4580,6 +4651,14 @@ If `pattern` is not set for `$path`, rule will apply only on the main page of we
 - `[$domain=example.com,path=/page.html]##.textad` скрывает `div` с классом `textad` на `page.html` домена `example.com` и всех его поддоменах, но не на `another_page.html`
 - `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` скрывает `div` с классом `textad` как на `/sub1/page.html`, так и на `/sub2/page.html` любого домена (обратите внимание на [специальные экранированные символы](#non-basic-rules-modifiers-syntax))
 
+#### `$path` modifier limitations {#non-basic-path-modifier-limitations}
+
+:::caution Limitations
+
+In AdGuard Browser Extension, the non-basic `$path` modifier is compatible with other non-basic modifiers only when it is placed last, e.g., `[$domain=/example.(com|org)/,path=/foo]##.ad`. Otherwise, it may not work as expected.
+
+:::
+
 :::info Совместимость
 
 Rules with `$path` modifier are not supported by AdGuard Content Blocker.
@@ -4604,7 +4683,7 @@ where `pattern` is pretty much the same as [`pattern` of the basic rules](#basic
 - `[$url=||example.org^]###adblock` скрывает элемент с атрибутом `id` равным `adblock` в запросах к `example.org` и всем его поддоменам.
 - `[$url=/\[a-z\]+\\.example\\.com^/]##.textad` скрывает `div`-элементы класса `textad` для всех доменов, соответствующих регулярному выражению `[a-z]+\.example\.com^`.
 
-#### Ограничения модификатора `$url` {#non-basic-url-modifier-limitations}
+#### `$url` modifier limitations {#non-basic-url-modifier-limitations}
 
 :::caution Limitations
 
@@ -4638,7 +4717,7 @@ Preprocessor directives can be used in the user rules or in the custom filters.
 
 :::
 
-#### Включение файла {#include-directive}
+#### Including a file {#include-directive}
 
 The `!#include` directive allows to include contents of a specified file into the filter. It supports only files from the same origin to make sure that the filter maintainer is in control of the specified file. The included file can also contain pre-directives (even other `!#include` directives). Ad blockers should consider the case of recursive `!#include` and implement a protection mechanism.
 
@@ -4672,7 +4751,7 @@ Filter URL: `https://example.org/path/filter.txt`
 !#include https://domain.com/path/includedfile.txt
 ```
 
-#### Условия {#conditions-directive}
+#### Conditions {#conditions-directive}
 
 Filter maintainers can use conditions to supply different rules depending on the ad blocker type. A conditional directive beginning with an `!#if` directive must explicitly be terminated with an `!#endif` directive. Conditions support all basic logical operators.
 
@@ -4719,12 +4798,12 @@ where:
         - `adguard_app_ios` — AdGuard для iOS
         - `adguard_ext_safari` — AdGuard для Safari
         - `adguard_ext_chromium` — Браузерное расширение AdGuard для Chrome (и браузеров на основе Chrome, например, новый Microsoft Edge)
-        - `adguard_ext_chromium_mv3` — [AdGuard для Chrome MV3][ext-mv3]
+        - `adguard_ext_chromium_mv3` — [AdGuard for Chrome MV3][ext-mv3]
         - `adguard_ext_firefox` — Браузерное расширение AdGuard для Firefox
         - `adguard_ext_edge` — Браузерное расширение AdGuard для Edge Legacy
         - `adguard_ext_opera` — Браузерное расширение AdGuard для Opera
         - `adguard_ext_android_cb` — AdGuard Content Blocker для мобильных браузеров Samsung и Яндекс
-        - `ext_ublock` — особый случай; эта константа объявляется, когда версия фильтра для uBlock компилируется при помощи [FiltersRegistry][]
+        - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry][]
         - `cap_html_filtering` — продукты, поддерживающие правила HTML-фильтрации: AdGuard для Windows, AdGuard для Mac, AdGuard для Android и AdGuard для Linux
 - `!#else` — начало блока, когда условия ложны
 - `rules_list`, `true_conditions_rules_list`, `false_conditions_rules_list` — списки правил
@@ -4764,13 +4843,13 @@ The `!#else` directive is supported by the [FiltersDownloader][gh-filters-downlo
 
 It is already supported for filter lists compiled by the [FiltersRegistry][], but it still may not be supported by AdGuard products when adding a filter list with `!#else` as a custom one. The following products will support it in the mentioned versions or later:
 
-- AdGuard для Windows, Mac и Android c [CoreLibs][] 1.13;
+- AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.13;
 - Браузерное расширение AdGuard 4.2.208;
 - AdGuard 1.11.16 для Safari.
 
 :::
 
-#### Правила фильтрации в Safari {#safari-affinity-directive}
+#### Safari affinity {#safari-affinity-directive}
 
 Safari's limit for each content blocker is 150,000 active rules. But in AdGuard for Safari and AdGuard for iOS, we've split the rules into 6 content blockers, thus increasing the rule limit to 900,000.
 
@@ -4841,7 +4920,7 @@ example.org#@#.adBanner
 
 Multiple hints can be applied.
 
-#### Подсказка `NOT_OPTIMIZED`
+#### `NOT_OPTIMIZED` hint
 
 For each filter, AdGuard compiles two versions: full and optimized. Optimized version is much more lightweight and does not contain rules which are not used at all or used rarely.
 
@@ -4884,7 +4963,7 @@ Eventually, here are the two versions of the Base filter for AdGuard Browser Ext
 ||example.org^
 ```
 
-#### Подсказки `PLATFORM` и `NOT_PLATFORM`
+#### `PLATFORM` and `NOT_PLATFORM` hints
 
 Used to specify the platforms to apply the rules. List of existing platforms and links to Base filter, for example, for each of them:
 
@@ -5090,29 +5169,21 @@ The following scriptlets also may be used for debug purposes:
 
 [native-has]: https://developer.mozilla.org/docs/Web/CSS/:has
 [safari-16.4]: https://www.webkit.org/blog/13966/webkit-features-in-safari-16-4/
-[AdguardBrowserExtension#2587]: https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2587
 
 [cl-apps]: #what-product "AdGuard для Windows, Mac, Linux и Android"
 [ext-chr]: #what-product "Браузерное расширение AdGuard для Chrome и других браузеров на основе Chromium"
 [ext-mv3]: #what-product "Браузерное расширение AdGuard MV3 для Chrome"
 [ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
-[ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
 [ext-ff]: #what-product "Браузерное расширение AdGuard для Firefox"
 [ios-app]: #what-product "AdGuard для iOS и AdGuard Pro для iOS"
 [ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"
-[ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"
 [ext-saf]: #what-product "AdGuard для Safari"
-[ext-saf]: #what-product "AdGuard for Safari"
 [ext-saf]: #what-product "AdGuard for Safari"
 [and-cb]: #what-product "AdGuard Content Blocker для браузеров Samsung Internet and Яндекс на Android"
 [and-cb]: #what-product "AdGuard Content Blocker for Samsung Internet and Yandex Browser on Android"
 
 [gh-filters-downloader]: https://github.com/AdguardTeam/FiltersDownloader
 [FiltersRegistry]: https://github.com/AdguardTeam/FiltersRegistry
-[c CoreLibs]: https://adguard.com/en/blog/introducing-corelibs.html
 [CoreLibs]: https://adguard.com/en/blog/introducing-corelibs.html
-[с CoreLibs]: https://adguard.com/en/blog/introducing-corelibs.html
 [TSUrlFilter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter#tsurlfilter
-[с TSUrlFilter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter#tsurlfilter
-[в TSUrlFilter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter#tsurlfilter
 [TSWebExtension]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tswebextension#tswebextension
