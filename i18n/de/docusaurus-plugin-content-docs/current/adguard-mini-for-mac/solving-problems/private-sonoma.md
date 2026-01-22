@@ -1,11 +1,11 @@
 ---
-title: AdGuard Mini doesn’t work in private tabs on macOS Sonoma
+title: AdGuard Mini funktioniert nicht in privaten Tabs unter macOS Sonoma
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+In diesem Artikel geht es um AdGuard Mini für Mac, der nur Ihren Safari-Browser schützt. Um Ihren Mac vollständig zu schützen, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -19,4 +19,4 @@ This article is about AdGuard Mini for Mac, which safeguards only your Safari br
 
 Wenn dies nicht hilft und die Werbung immer noch nicht blockiert wird, wenden Sie sich bitte an unseren Support unter support@adguard.com.
 
-If you only have problems with a specific page or website, you can report it directly from the browser: click the AdGuard Mini icon next to the Safari search bar, and then click _Report an issue_.
+Wenn Sie nur Probleme mit einer bestimmten Seite oder Website haben, können Sie diese direkt im Browser melden: Klicken Sie auf das AdGuard Mini-Symbol neben der Safari-Suchleiste und dann auf _Problem melden_.

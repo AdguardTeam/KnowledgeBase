@@ -47,7 +47,7 @@ Turning this on allows AdGuard to filter traffic immediately, even if the app ha
 
 ## Localhost filtern
 
-Enable this to allow AdGuard to filter loopback (localhost) traffic, which some apps use to communicate within the system. If AdGuard VPN is installed, this setting is always on because the VPN requires it to work properly.
+Aktivieren Sie diese Option, damit AdGuard den Loopback-Datenverkehr (localhost) filtern kann, den einige Apps für die Kommunikation innerhalb des Systems verwenden. If AdGuard VPN is installed, this setting is always on because the VPN requires it to work properly.
 
 ## Capture HAR
 

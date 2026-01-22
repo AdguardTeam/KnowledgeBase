@@ -116,7 +116,7 @@
     "description": "The label for category App settings in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard Mini for Mac": {
-    "message": "AdGuard Mini for Mac",
+    "message": "AdGuard Mini pro Mac",
     "description": "The label for category AdGuard Mini for Mac in sidebar tutorialSidebar"
   }
 }

@@ -77,7 +77,7 @@ Případně můžete k aktivaci použít [licenční klíč](../what-is#license-
 
     ![Login screen *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
 
-### Activating AdGuard Mini for Mac
+### Aktivace AdGuardu Mini pro Mac
 
 1. Click AdGuard Mini icon in the menu bar.
 
