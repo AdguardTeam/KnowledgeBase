@@ -386,7 +386,7 @@ Wildcard-символы поддерживаются для TLD-доменов �
 
 <!-- Please keep them sorted -->
 
-| Модификатор \ Продукты                             |    [Приложения CoreLibs][cl-apps]     |    [AdGuard для Chromium][ext-chr]     |   [AdGuard для Chrome MV3][ext-mv3]    |     [AdGuard для Firefox][ext-ff]      |       [AdGuard для iOS][ios-app]       |     [AdGuard для Safari][ext-saf]      | [AdGuard Content Blocker][and-cb] |
+| Модификатор \ Продукты                             |    [Приложения CoreLibs][cl-apps]     |    [AdGuard для Chromium][ext-chr]     |   [AdGuard для Chrome MV3][ext-mv3]    |     [AdGuard для Firefox][ext-ff]      |       [AdGuard для iOS][ios-app]       |    [AdGuard Mini for Mac][ext-saf]     | [AdGuard Content Blocker][and-cb] |
 | --------------------------------------------------- |:-------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:---------------------------------:|
 | [$app](#app-modifier)                               |                   ✅                   |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                 ❌                 |
 | [$denyallow](#denyallow-modifier)                   |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                 ❌                 |
@@ -394,7 +394,7 @@ Wildcard-символы поддерживаются для TLD-доменов �
 | [$header](#header-modifier)                         |                   ✅                   | ✅ [*[2]](#header-modifier-limitations) |                   ❌                    | ✅ [*[2]](#header-modifier-limitations) |                   ❌                    |                   ❌                    |                 ❌                 |
 | [$important](#important-modifier)                   |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                 ❌                 |
 | [$match-case](#match-case-modifier)                 |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                 ✅                 |
-| [$method](#method-modifier)                         |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ❌                    |                   ❌                    |                 ❌                 |
+| [$method](#method-modifier)                         |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    | ✅ [*[2]](#method-modifier-limitations) | ✅ [*[2]](#method-modifier-limitations) |                 ❌                 |
 | [$popup](#popup-modifier)                           | ✅ [*[3]](#popup-modifier-limitations) |                   ✅                    | ✅ [*[3]](#popup-modifier-limitations)  |                   ✅                    | ✅ [*[3]](#popup-modifier-limitations)  | ✅ [*[3]](#popup-modifier-limitations)  |                 ❌                 |
 | [$strict-first-party](#strict-first-party-modifier) |                   ✅                   |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                 ❌                 |
 | [$strict-third-party](#strict-third-party-modifier) |                   ✅                   |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                 ❌                 |
@@ -687,13 +687,17 @@ This modifier limits the rule scope to requests that use the specified set of HT
 
 :::caution Ограничения
 
-Rules with mixed negated and not negated values are considered invalid. So, for example, the rule `||evil.com^$method=get|~head` will be ignored.
+1. In AdGuard for iOS and AdGuard Mini for Mac, the `$method` modifier does not support negation. Therefore, rules such as `$method=~get` are not supported.
+
+1. Rules with a combination of negated and non-negated values are considered invalid. So, for example, the rule `||evil.com^$method=get|~head` will be ignored.
 
 :::
 
 :::info Совместимость
 
 Rules with `$method` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.12 or later, and AdGuard Browser Extension for Chrome, Firefox, and Edge with [TSUrlFilter][] v2.1.1 or later.
+
+In AdGuard for iOS (v4.5.15 or later) and AdGuard Mini for Mac (v2.1 or later), the `$method` modifier is supported with limitations.
 
 :::
 
@@ -5177,6 +5181,7 @@ The following scriptlets also may be used for debug purposes:
 [ext-ff]: #what-product "Браузерное расширение AdGuard для Firefox"
 [ios-app]: #what-product "AdGuard для iOS и AdGuard Pro для iOS"
 [ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"
+[ext-saf]: #what-product "AdGuard для Safari"
 [ext-saf]: #what-product "AdGuard для Safari"
 [ext-saf]: #what-product "AdGuard for Safari"
 [and-cb]: #what-product "AdGuard Content Blocker для браузеров Samsung Internet and Яндекс на Android"

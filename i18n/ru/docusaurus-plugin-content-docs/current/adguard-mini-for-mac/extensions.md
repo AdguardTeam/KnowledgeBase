@@ -73,4 +73,4 @@ When enabling the _AdGuard for Safari_ extension, you might notice that it requi
 - Access to webpage content is required for manual ad blocking and advanced blocking rules to work correctly
 - Доступ к истории просмотров нужен для проверки статуса защиты на сайтах и определения того, какие расширенные правила следует применять
 
-Мы не используем эти данные в других целях и никому их не передаём. For more info, you can consult our [Privacy policy](https://adguard.com/privacy.html).
+Мы не используем эти данные в других целях и никому их не передаём. Подробности читайте [в Политике конфиденциальности](https://adguard.com/privacy.html).
