@@ -21,7 +21,7 @@ In some cases, filtering may not work and ads may still be displayed even though
 5. Restart Safari.
 6. Return to Safari → *Settings...* → *Extensions* and re-enable the AdGuard extensions.
 7. Open AdGuard Mini’s menu.
-8. Click *Check for updates*:
+8. Click *Check for updates* icon.
    ![Update button *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/update-button.png)
 9. Do not close the AdGuard Mini window until the filters are updated.
 
