@@ -1,36 +1,36 @@
 ---
-title: Safari toolbar menu
+title: Меню панели инструментов Safari
 sidebar_position: 8
 ---
 
 ![Safari toolbar assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/assistant.png)
 
-AdGuard Mini has a handy menu right in the Safari toolbar. To open it, click the icon located to the left of the search bar.
+У AdGuard Mini есть удобное меню прямо на панели инструментов Safari. Чтобы открыть его, нажмите на иконку слева от строки поиска.
 
 Here’s what you can do in the toolbar menu:
 
-- **Pause icon**
+- **Иконка паузы**
 
-  Disables AdGuard Mini
+  Отключает AdGuard Mini
 
-- **Settings icon**
+- **Иконка настроек**
 
-  Takes you to AdGuard Mini’s _Settings_ screen
+  Перенаправляет на экран _Настройки_ AdGuard Mini
 
-- **Website info**
+- **Информация о сайте**
 
-  Indicates the website you are currently on
+  Указывает сайт, на котором вы сейчас находитесь
 
-- **Protection**
+- **Защита**
 
-  Turning it off disables filtering on the website you are currently on. Turning it back on resumes filtering on the website
+  Отключение деактивирует фильтрацию на сайте, на котором вы сейчас находитесь. Повторное включение возобновляет фильтрацию на сайте
 
-- **Block element**
+- **Заблокировать элемент**
 
-  Lets you manually select and block any element on the page: select the element, adjust the selection frame (if needed), and click the _Block_ button. To unblock an element, go to _Settings_ → _User rules_ and delete or uncheck the corresponding rule
+  Позволяет вручную выбрать и заблокировать любой элемент на странице: выберите элемент, настройте рамку выделения (если необходимо) и нажмите кнопку _Заблокировать_. Чтобы разблокировать элемент, перейдите в _Настройки_ → _Пользовательские правила_ и удалите или снимите галочку с соответствующего правила
 
-  ![Manual blocking](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/manual-blocking.png)
+  ![Ручная блокировка](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/manual-blocking.png)
 
-- **Report an issue**
+- **Сообщить о проблеме**
 
-  Takes you to a special form for reporting issues with some information automatically pre-filled
+  Перенаправляет на специальную форму для сообщения о проблемах, где некоторая информация заполняется автоматически
