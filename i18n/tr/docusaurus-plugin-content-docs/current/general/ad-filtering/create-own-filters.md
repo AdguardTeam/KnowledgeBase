@@ -386,7 +386,7 @@ The following modifiers are the most simple and frequently used. Temel olarak, s
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products                                |       [CoreLibs apps][cl-apps]        |    [Chromium için AdGuard][ext-chr]    |   [Chrome MV3 için AdGuard][ext-mv3]   |     [AdGuard for Firefox][ext-ff]      |      [iOS için AdGuard][ios-app]       |     [Safari için AdGuard][ext-saf]     | [AdGuard İçerik Engelleyici][and-cb] |
+| Modifier \ Products                                |       [CoreLibs apps][cl-apps]        |    [Chromium için AdGuard][ext-chr]    |   [Chrome MV3 için AdGuard][ext-mv3]   |     [AdGuard for Firefox][ext-ff]      |      [iOS için AdGuard][ios-app]       |    [AdGuard Mini for Mac][ext-saf]     | [AdGuard İçerik Engelleyici][and-cb] |
 | --------------------------------------------------- |:-------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:------------------------------------:|
 | [$app](#app-modifier)                               |                   ✅                   |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                  ❌                   |
 | [$denyallow](#denyallow-modifier)                   |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                  ❌                   |
@@ -394,7 +394,7 @@ The following modifiers are the most simple and frequently used. Temel olarak, s
 | [$header](#header-modifier)                         |                   ✅                   | ✅ [*[2]](#header-modifier-limitations) |                   ❌                    | ✅ [*[2]](#header-modifier-limitations) |                   ❌                    |                   ❌                    |                  ❌                   |
 | [$important](#important-modifier)                   |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                  ❌                   |
 | [$match-case](#match-case-modifier)                 |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                  ✅                   |
-| [$method](#method-modifier)                         |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ❌                    |                   ❌                    |                  ❌                   |
+| [$method](#method-modifier)                         |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    | ✅ [*[2]](#method-modifier-limitations) | ✅ [*[2]](#method-modifier-limitations) |                  ❌                   |
 | [$popup](#popup-modifier)                           | ✅ [*[3]](#popup-modifier-limitations) |                   ✅                    | ✅ [*[3]](#popup-modifier-limitations)  |                   ✅                    | ✅ [*[3]](#popup-modifier-limitations)  | ✅ [*[3]](#popup-modifier-limitations)  |                  ❌                   |
 | [$strict-first-party](#strict-first-party-modifier) |                   ✅                   |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                  ❌                   |
 | [$strict-third-party](#strict-third-party-modifier) |                   ✅                   |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                  ❌                   |
@@ -687,13 +687,17 @@ This modifier limits the rule scope to requests that use the specified set of HT
 
 :::dikkat Kısıtlamalar
 
-Rules with mixed negated and not negated values are considered invalid. So, for example, the rule `||evil.com^$method=get|~head` will be ignored.
+1. In AdGuard for iOS and AdGuard Mini for Mac, the `$method` modifier does not support negation. Therefore, rules such as `$method=~get` are not supported.
+
+1. Rules with a combination of negated and non-negated values are considered invalid. So, for example, the rule `||evil.com^$method=get|~head` will be ignored.
 
 :::
 
 :::info Uyumluluk
 
 Rules with `$method` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.12 or later, and AdGuard Browser Extension for Chrome, Firefox, and Edge with [TSUrlFilter][] v2.1.1 or later.
+
+In AdGuard for iOS (v4.5.15 or later) and AdGuard Mini for Mac (v2.1 or later), the `$method` modifier is supported with limitations.
 
 :::
 
@@ -5181,6 +5185,7 @@ The following scriptlets also may be used for debug purposes:
 [ext-ff]: #what-product "Firefox için AdGuard Tarayıcı Uzantısı"
 [ios-app]: #what-product "iOS için AdGuard ve iOS için AdGuard Pro"
 [ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"
+[ext-saf]: #what-product "Safari için AdGuard"
 [ext-saf]: #what-product "Safari için AdGuard"
 [ext-saf]: #what-product "AdGuard for Safari"
 [and-cb]: #what-product "AdGuard Content Blocker for Samsung Internet and Yandex Browser on Android"
