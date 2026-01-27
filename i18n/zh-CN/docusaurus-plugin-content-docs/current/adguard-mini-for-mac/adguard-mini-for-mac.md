@@ -1,5 +1,5 @@
 ---
-title: AdGuard Mini for Mac
+title: AdGuard Mini Mac版
 sidebar_position: 1
 ---
 
@@ -25,4 +25,4 @@ AdGuard Mini for Mac (formerly AdGuard for Safari) was designed to conform to Ap
 
 - [Solving problems](/adguard-mini-for-mac/solving-problems/solving-problems.md)
 
-  已知问题和可能的解决方案。
+  Known issues and possible solutions

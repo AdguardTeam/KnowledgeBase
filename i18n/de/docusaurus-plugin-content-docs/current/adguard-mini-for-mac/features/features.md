@@ -3,34 +3,34 @@ title: Funktionen
 sidebar_position: 1
 ---
 
-- [Safari protection](/adguard-mini-for-mac/features/safari-protection.md)
+- [Safari-Schutz](/adguard-mini-for-mac/features/safari-protection.md)
 
-  Core filtering feature with customizable options
+  Zentrale Filterfunktion mit anpassbaren Optionen
 
-- [Advanced blocking](/adguard-mini-for-mac/features/advanced-blocking.md)
+- [Erweiterte Blockierung](/adguard-mini-for-mac/features/advanced-blocking.md)
 
-  Unlocks stronger filtering capabilities
+  Schaltet stärkere Filtermöglichkeiten frei
 
-- [User rules](/adguard-mini-for-mac/features/rules.md)
+- [Benutzerregeln](/adguard-mini-for-mac/features/rules.md)
 
   Benutzerdefinierte Filterregeln zur Feinabstimmung der Werbeblockierung
 
-- [Settings](/adguard-mini-for-mac/features/settings/settings.md)
+- [Einstellungen](/adguard-mini-for-mac/features/settings/settings.md)
 
-  Various options that help you configure the app and filtering
+  Verschiedene Optionen, die Ihnen dabei helfen, die App und das Filtern zu konfigurieren
 
 - [Support](/adguard-mini-for-mac/features/support.md)
 
-  Helpful options for when you have a question or encountered a problem
+  Hilfreiche Optionen, wenn Sie eine Frage haben oder auf ein Problem stoßen
 
-- [About](/adguard-mini-for-mac/features/about.md)
+- [Über uns](/adguard-mini-for-mac/features/about.md)
 
-  Info about the app’s current version and a list of helpful links
+  Informationen zur aktuellen Version der App und eine Liste hilfreicher Links
 
-- [Safari toolbar menu](/adguard-mini-for-mac/features/toolbar-menu.md)
+- [Safari-Menüleiste](/adguard-mini-for-mac/features/toolbar-menu.md)
 
-  A handy menu in the Safari toolbar
+  Ein praktisches menü in der Safari-Symbolleiste
 
-- [Full version](/adguard-mini-for-mac/features/full-version.md)
+- [Vollversion](/adguard-mini-for-mac/features/full-version.md)
 
-  Advanced features that enhance filtering speed and power
+  Fortschrittliche Funktionen, die die Filtergeschwindigkeit und -leistung verbessern

@@ -29,6 +29,6 @@ Safari 版 AdGuard 的安装、卸载和系统要求。
 
 ## 解决问题
 
-已知问题和可能的解决方案。
+Known issues and possible solutions
 
 [解决问题](/adguard-for-safari/solving-problems/solving-problems.md)

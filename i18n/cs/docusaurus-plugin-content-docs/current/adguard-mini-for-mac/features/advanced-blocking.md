@@ -1,5 +1,5 @@
 ---
-title: Advanced blocking
+title: Pokročilé blokování
 sidebar_position: 3
 ---
 
