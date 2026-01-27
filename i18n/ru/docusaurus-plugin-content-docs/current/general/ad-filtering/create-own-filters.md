@@ -2840,17 +2840,30 @@ If multiple `$urltransform` rules match a single request, we will apply each of 
 
 **Syntax**
 
-`$urltransform` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
+`$urltransform` value is a series of one or more transformations separated by `|`. The first transformation is applied to the input URL. Each of the following transformations is applied to the output of the previous one. The output of a failed transformation (for example, if Base64 decoding failed or if substitution found no matches) is its input, unchanged. Formally:
 
 ```text
-urltransform = "/" regexp "/" replacement "/" modifiers
+urltransform = transforms
+transforms = transform | transform "|" transforms
+transform = substitute | decode
+substitute = "/" regexp "/" replacement "/" modifiers
+decode = "b64" | "pct"
 ```
 
-- **`regexp`** — регулярное выражение.
+- **`substitute`** is similar to replacement with regular expressions [in Perl](https://perldoc.perl.org/perlrequick.html#Search-and-replace).
+    - **`regexp`** — регулярное выражение.
+    - **`replacement`** — a string that replaces whatever is matched by `regexp`. `$1`, `$2`, etc. in the replacement string are replaced with the contents of the corresponding capture group.
+    - **`modifiers`** — regular expression flags, e.g., `i` for case-insensitive search.
 - **`replacement`** — строка, которая будет использована для замены строки в соответствии с `regexp`.
-- **`modifiers `** — флаги регулярных выражений. Например, `i` — поиск без учёта регистра, `s` — режим одной строки.
+- **`pct`** — decodes a [percent-encoded](https://datatracker.ietf.org/doc/html/rfc3986#section-2.1) string.
 
 In the `$urltransform` value, two characters must be escaped: the comma `,` and the dollar sign `$`. Use the backslash character `\` for this. For example, an escaped comma looks like this: `\,`.
+
+:::info Совместимость
+
+AdGuard products that use a [CoreLibs][] version older than 1.20 only support a single `substitute` transformation for the value of the `$urltransform` modifier.
+
+:::
 
 **Changing the origin**
 
@@ -3231,14 +3244,15 @@ The [`$replace`](#replace-modifier) modifier takes precedence over all blocking 
 
 However, basic rules may not be enough to block ads. Sometimes you need to hide an element or change part of the HTML code of a web page without breaking anything. The rules described in this section are created specifically for this purpose.
 
-| Категории \ Продукты                         | [Приложения CoreLibs][cl-apps] | [AdGuard для Chromium][ext-chr] | [AdGuard для Chrome MV3][ext-mv3] | [AdGuard для Firefox][ext-ff] | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
-| --------------------------------------------- |:------------------------------:|:-------------------------------:|:---------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
-| [Скрытие элементов](#cosmetic-elemhide-rules) |               ✅                |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ✅                 |
-| [CSS-правила](#cosmetic-css-rules)            |               ✅                |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [Расширенный CSS](#extended-css-selectors)    |               ✅                |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [Фильтрация HTML](#html-filtering-rules)      |               ✅                |                ❌                |                 ❌                 |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [JavaScript](#javascript-rules)               |               ✅                |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [Скриптлеты](#scriptlets)                     |               ✅                |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| Категории \ Продукты                             | [Приложения CoreLibs][cl-apps] | [AdGuard для Chromium][ext-chr] | [AdGuard для Chrome MV3][ext-mv3] | [AdGuard для Firefox][ext-ff] | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
+| ------------------------------------------------- |:------------------------------:|:-------------------------------:|:---------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
+| [Скрытие элементов](#cosmetic-elemhide-rules)     |               ✅                |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [CSS-правила](#cosmetic-css-rules)                |               ✅                |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [Path-in-domain syntax](#cosmetic-path-in-domain) |               ✅                |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [Расширенный CSS](#extended-css-selectors)        |               ✅                |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [Фильтрация HTML](#html-filtering-rules)          |               ✅                |                ❌                |                 ❌                 |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [JavaScript](#javascript-rules)                   |               ✅                |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [Скриптлеты](#scriptlets)                         |               ✅                |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ❌                 |
 
 :::note
 
@@ -3397,6 +3411,73 @@ example.org#@#body
 example.org#@#body { remove: true; }
 example.org#@#body{remove:true;}
 ```
+
+:::
+
+### Path-in-domain syntax {#cosmetic-path-in-domain}
+
+AdGuard supports a simplified syntax for cosmetic rules that need to be applied only on specific paths of a website. Instead of using the `$path` modifier, you can specify the path directly in the domain part of the rule.
+
+**Syntax**
+
+```text
+domain.com/path##selector
+```
+
+This is equivalent to:
+
+```text
+[$path=/path]domain.com##selector
+```
+
+**Примеры**
+
+- `example.org/checkout##.promo-banner` — hides `.promo-banner` elements only on checkout pages
+- `news.site.com/article##.sidebar-ad` — hides sidebar ads only on article pages
+- `shop.com/product,~shop.com/product/reviews##.upsell` — hides upsell blocks on product pages but not on review pages
+
+**Multiple domains**
+
+Path-in-domain syntax works with multiple domains:
+
+- `domain1.com,example.org/path##.banner` — applies to all pages on `domain1.com` and only `/path` pages on `example.org`
+
+**Regex domains**
+
+Path-in-domain syntax is also supported for regex domains:
+
+- `/example\.org\/article\d+/##.ad` — hides ads on article pages with numeric IDs
+
+**All cosmetic rule types**
+
+Path-in-domain syntax works with all types of cosmetic rules:
+
+```adblock
+! Element hiding
+example.org/path##.banner
+
+! Element hiding exception  
+example.org/path#@#.banner
+
+! CSS injection
+example.org/path#$#.banner { display: block !important; }
+
+! HTML filtering
+example.org/path$$script[src*="ads"]
+
+! HTML filtering exception
+example.org/path$@$script[src*="ads"]
+
+! JavaScript rules
+example.org/path#%#//scriptlet('abort-on-property-read', 'ads')
+
+! JavaScript exception
+example.org/path#@%#//scriptlet('abort-on-property-read', 'ads')
+```
+
+:::info Совместимость
+
+Path-in-domain syntax has been introduced in [CoreLibs][] v1.21.
 
 :::
 
@@ -4629,6 +4710,14 @@ Such rules with `$domain` modifier are supported by AdGuard for Windows, AdGuard
 ### **`$path`** {#non-basic-path-modifier}
 
 `$path` modifier limits the rule application area to specific locations or pages on websites.
+
+:::tip Alternative syntax
+
+For cosmetic rules, you can use a simplified [path-in-domain syntax](#cosmetic-path-in-domain) instead of the `$path` modifier:
+
+- `example.org/path##.banner` instead of `[$path=/path]example.org##.banner`
+
+:::
 
 **Syntax**
 

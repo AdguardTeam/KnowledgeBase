@@ -11,12 +11,12 @@ In diesem Artikel geht es um AdGuard Mini für Mac, der nur Ihren Safari-Browser
 
 ## Safari-Schutz
 
-![General tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/safari-protection.png)
+![Tab „Allgemein“](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/safari-protection.png)
 
-_Safari protection_ section is the most important area for the app’s core purpose. Settings are grouped logically and explained in plain language so you can quickly see what each option does.
+_Safari-Schutz_-Abschnitt ist der wichtigste Bereich für den Kernzweck der App. Einstellungen sind logisch gruppiert und in einfacher Sprache erklärt, damit Sie schnell sehen können, was jede Option bewirkt.
 
-Here’s a simple explanation on what each group of settings does:
+Hier ist eine einfache Erklärung, was jede Gruppe von Einstellungen bewirkt:
 
-![Protection screen part one \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/new/safari_protection_1.png)
+![Schutzschirm Teil eins \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/new/safari_protection_1.png)
 
-![Protection screen part two \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/new/safari_protection_2.png)
+![Schutzschirm Teil zwei \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/new/safari_protection_2.png)

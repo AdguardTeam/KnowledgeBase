@@ -11,66 +11,66 @@ In diesem Artikel geht es um AdGuard Mini für Mac, der nur Ihren Safari-Browser
 
 ## Was sind Safari-Erweiterungen
 
-Safari-Erweiterungen sind kleine Softwareprogramme, die den Safari-Webbrowser um zusätzliche Funktionen erweitern. Sie ermöglichen es den Nutzer:innen, ihr Surfern anzupassen und zu verbessern, indem sie Funktionen hinzufügen, die nicht von Haus aus in den Browser eingebaut sind. AdGuard Mini for Mac uses extensions primarily to apply filtering rules on websites opened in Safari.
+Safari-Erweiterungen sind kleine Softwareprogramme, die den Safari-Webbrowser um zusätzliche Funktionen erweitern. Sie ermöglichen es den Nutzer:innen, ihr Surfern anzupassen und zu verbessern, indem sie Funktionen hinzufügen, die nicht von Haus aus in den Browser eingebaut sind. AdGuard Mini für Mac verwendet Erweiterungen in erster Linie, um Filterregeln auf Websites anzuwenden, die in Safari geöffnet werden.
 
 ## So funktioniert es
 
-Um Werbung, Tracker und störende Elemente auf Websites zu blockieren, verwendet AdGuard Filterregeln. The rules from AdGuard’s and your custom filters are converted into ones comprehensible by Safari and are integrated into 6 Safari extensions:
+Um Werbung, Tracker und störende Elemente auf Websites zu blockieren, verwendet AdGuard Filterregeln. Die Regeln von AdGuard und Ihren eigenen Filtern werden in für Safari verständliche Regeln umgewandelt und in 6 Safari-Erweiterungen integriert:
 
-- AdGuard General (Allgemein)
-- AdGuard Privacy (Datenschutz)
+- AdGuard Allgemein
+- AdGuard Datenschutz
 - AdGuard Soziales
-- AdGuard Security (Sicherheit)
+- AdGuard Sicherheit
 - AdGuard Benutzerdefiniert
-- AdGuard Other (Sonstiges)
+- AdGuard Sonstiges
 
-Jede Erweiterung zum Blockieren von Inhalten kann bis zu 150.000 aktive Filterregeln enthalten. Die Anzahl der Regeln in den meisten Filtergruppen beträgt nicht mehr als 150.000. Wenn Sie jedoch zu viele sprachspezifische oder benutzerdefinierte Filter aktivieren, könnten Sie das Limit überschreiten. In solchen Fällen werden zufällige Regeln, die den Grenzwert überschreiten, automatisch deaktiviert, was zu fehlerhaften Blockierungen führen kann. **We strongly recommend activating only the filters you need**.
+Jede Erweiterung zum Blockieren von Inhalten kann bis zu 150.000 aktive Filterregeln enthalten. Die Anzahl der Regeln in den meisten Filtergruppen beträgt nicht mehr als 150.000. Wenn Sie jedoch zu viele sprachspezifische oder benutzerdefinierte Filter aktivieren, könnten Sie das Limit überschreiten. In solchen Fällen werden zufällige Regeln, die den Grenzwert überschreiten, automatisch deaktiviert, was zu fehlerhaften Blockierungen führen kann. **Wir empfehlen dringend, nur die Filter zu aktivieren, die Sie benötigen**.
 
-There is also one more extension responsible for other features: _AdGuard for Safari_, which adds the AdGuard icon next to the search bar in Safari and allows using advanced rules to block complex ads.
+Es gibt noch eine weitere Erweiterung, die für andere Funktionen zuständig ist: _AdGuard für Safari_, die das AdGuard-Symbol neben der Suchleiste in Safari hinzufügt und die Verwendung von erweiterten Regeln zum Blockieren komplexer Werbeanzeigen ermöglicht.
 
-![Safari extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/check-extensions.png)
+![Safari Erweiterungen](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/check-extensions.png)
 
 Mehr zu den einzelnen Erweiterungen weiter unten.
 
 ## Erweiterungen zur Blockierung von Inhalten
 
-_AdGuard General_ applies rules from filters that you can find in _Settings_ → _Filters_ → _Ad blocking_ and _Language-specific_. Diese Erweiterung konzentriert sich auf eine umfassende Werbeblockierung und enthält Filter für Werbung in bestimmten Sprachen.
+_AdGuard Allgemein_ übernimmt Regeln von Filtern, die Sie in _Einstellungen_ → _Filter_ → _Werbeblockierung_ und _Sprachspezifisch_ finden. Diese Erweiterung konzentriert sich auf eine umfassende Werbeblockierung und enthält Filter für Werbung in bestimmten Sprachen.
 
-_AdGuard Privacy_ applies rules from filters located in _Filters_ → _Privacy_. Sie blockiert Verfolgungsmechanismen und sorgt dafür, dass Ihre Surfaktivitäten privat bleiben.
+_AdGuard Datenschutz_ wendet Regeln von Filtern an, die sich in _Filter_ → _Datenschutz_ befinden. Sie blockiert Verfolgungsmechanismen und sorgt dafür, dass Ihre Surfaktivitäten privat bleiben.
 
-_AdGuard Social_ applies rules from filters that can be found in _Filters_ → _Social Widgets_ and _Filters_ → _Annoyances_. It blocks popups, social media buttons, online assistant windows, and other elements on webpages that you might find annoying.
+_AdGuard Soziales_ wendet Regeln aus Filtern an, die unter _Filter_ → _Soziale Widgets_ und _Filter → Belästigungen_ zu finden sind. Sie blockiert Pop-ups, Schaltflächen für soziale Medien, Fenster von Online-Assistenten und andere Elemente auf Webseiten, die Sie als störend empfinden könnten.
 
-_AdGuard Security_ applies rules from filters under _Filters_ → _Security_. Diese Erweiterung identifiziert und blockiert potenziell schädliche Elemente und schützt die Nutzer:innen vor bösartigen Inhalten.
+_AdGuard Sicherheit_ übernimmt Regeln aus Filtern unter _Filter_ → _Sicherheit_. Diese Erweiterung identifiziert und blockiert potenziell schädliche Elemente und schützt die Nutzer:innen vor bösartigen Inhalten.
 
-_AdGuard Other_ applies rules from filters that don’t fall under the above-mentioned categories and that are located in _Filters_ → _Other_: _Filter unblocking search ads and self-promotion_, _AdGuard DNS filter_, and _AdGuard Experimental filter_.
+_AdGuard Sonstiges_ übernimmt Regeln von Filtern, die nicht unter die oben genannten Kategorien fallen und sich unter _Filter_ → _Sonstiges_ befinden: _Filter zur Entsperrung von Werbung in Suchanfragen und Eigenwerbung_, _AdGuard DNS-Filter_ und _AdGuard Experimenteller Filter_.
 
-_AdGuard Custom_ applies rules from filters that you add on your own to _Custom filters_.
+_AdGuard Benutzerdefiniert_ übernimmt Regeln von Filtern, die Sie selbst zu _benutzerdefinierten Filtern_ hinzufügen.
 
-User rules and allowlist rules are included in every extension.
+Benutzerregeln und Regeln für die Zulassungsliste sind in jeder Erweiterung enthalten.
 
 ## AdGuard für Safari
 
-_AdGuard for Safari_ activates the AdGuard icon next to the search bar. It’s useful if you want to quickly set up protection for a specific website or block ads manually.
+_AdGuard for Safari_ aktiviert das AdGuard-Symbol neben der Suchleiste. Dies ist nützlich, wenn Sie schnell einen Schutz für eine bestimmte Website einrichten oder Werbung manuell blockieren möchten.
 
-_AdGuard for Safari_ extension also contains advanced rules that aren’t converted to the format supported by Safari. These include [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), which allow AdGuard to block complex ads, such as those on YouTube.
+Die Erweiterung _AdGuard für Safari_ enthält auch erweiterte Regeln, die nicht in das von Safari unterstützte Format konvertiert werden. Diese umfassen [CSS-Regeln](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [erweiterte CSS-Selektoren](/general/ad-filtering/create-own-filters#extended-css-selectors) und [Scriptlets](/general/ad-filtering/create-own-filters#scriptlets), die AdGuard erlauben, komplexe Werbung wie die auf YouTube zu blockieren.
 
 ## So verwalten Sie Safari-Erweiterungen
 
-1. Open Safari and click _Safari_ in the upper left corner of the screen to expand the menu.
+1. Öffnen Sie Safari und klicken Sie auf _Safari_ in der oberen linken Ecke des Bildschirms, um das Menü zu erweitern.
 
-   ![Safari settings \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
+   ![Safari-Einstellungen \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
 
-2. Click _Settings..._
+2. Klicken Sie auf _Einstellungen..._
 
-3. Select _Extensions_.
+3. Wählen Sie _Erweiterungen_.
 
-   ![Extensions tab](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
+   ![Tab „Erweiterungen“](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
-## Darum benötigt AdGuard für Safari eine Genehmigung
+## Warum AdGuard für Safari eine Berechtigung benötigt
 
-When enabling the _AdGuard for Safari_ extension, you might notice that it requires **access to webpage content** and **access to browsing history**. Here’s why it needs these permissions:
+Wenn Sie die _AdGuard for Safari_ Erweiterung aktivieren, werden Sie feststellen, dass sie **Zugriff auf Webseiteninhalte** und **Zugriff auf den Browserverlauf** benötigt. Hier ist, warum sie diese Berechtigungen benötigt:
 
-- Access to webpage content is required for manual ad blocking and advanced blocking rules to work correctly
+- Der Zugriff auf Webseiteninhalte ist erforderlich, damit die manuelle Werbeblockierung und die erweiterten Sperrregeln korrekt funktionieren
 - Der Zugriff auf den Browserverlauf ist erforderlich, um den Schutzstatus von Websites zu überprüfen und zu bestimmen, welche erweiterten Regeln angewendet werden sollen
 
-Wir verwenden diese Daten nicht für andere Zwecke und geben sie nicht an Dritte weiter. For more info, you can consult our [Privacy policy](https://adguard.com/privacy.html).
+Wir verwenden diese Daten nicht für andere Zwecke und geben sie nicht an Dritte weiter. Weitere Informationen finden Sie in unserer [Datenschutzerklärung](https://adguard.com/privacy.html).

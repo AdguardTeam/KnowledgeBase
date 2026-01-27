@@ -11,60 +11,60 @@ In diesem Artikel geht es um AdGuard Mini für Mac, der nur Ihren Safari-Browser
 
 ## Systemanforderungen
 
-Requires macOS 12 or later.
+Erfordert macOS 12 oder neuer.
 
-## How to install AdGuard Mini for Mac
+## Wie installiere ich AdGuard Mini auf meinem Mac
 
-AdGuard Mini for Mac is a free app present in the Mac App Store. To install it on your Mac, do the following:
+AdGuard Mini für Mac ist eine kostenlose App, die im Mac App Store verfügbar ist. Um sie auf Ihrem Mac zu installieren, gehen Sie wie folgt vor:
 
-1. Open the App Store and find _AdGuard Mini_ app there.
+1. Öffnen Sie den App Store und suchen Sie dort die App _AdGuard Mini_.
 
-   ![AdGuard Mini in App Store](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-in-app-store.png)
+   ![AdGuard Mini im App Store](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-in-app-store.png)
 
-2. Press _Get_ → _Install_ → _Open_.
+2. Drücken Sie _Get_ → _Installieren_ → _Öffnen_.
 
-3. In the opened AdGuard Mini window, accept EULA and Privacy policy and click _Continue_.
+3. Im geöffneten Fenster akzeptieren Sie EULA und Datenschutzerklärung und klicken Sie auf _Weiter_.
 
    ![Onboarding](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/first-open.png)
 
-4. Click _Open settings_.
+4. Klicken Sie auf _Einstellungen öffnen_.
 
-   ![Open settings](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/open-settings.png)
+   ![Einstellungen öffnen](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/open-settings.png)
 
-5. Check the checkboxes for all seven AdGuard extensions.
+5. Aktivieren Sie die Kontrollkästchen für alle sieben AdGuard-Erweiterungen.
 
-   ![Checked extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/check-extensions.png)
+   ![Angekreuzte Erweiterungen](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/check-extensions.png)
 
-6. To allow AdGuard Mini to work on all websites, click the _AdGuard for Safari_ extension and then _Always Allow on Every Website..._.
+6. Um AdGuard Mini die Arbeit auf allen Websites zu erlauben, klicken Sie auf die Erweiterung _AdGuard für Safari_ und dann auf _Auf allen Websites immer zulassen..._.
 
-   ![Always allow button](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/always-allow-button.png)
+   ![Immer erlauben](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/always-allow-button.png)
 
-7. In the notification that appears, click _Always Allow on Every Website..._ again.
+7. Klicken Sie in der daraufhin angezeigten Benachrichtigung erneut auf _Auf allen Websites immer zulassen..._.
 
-   ![Always allow notification](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/always-allow.png)
+   ![Benachrichtigung immer erlauben](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/always-allow.png)
 
-After you complete these steps, AdGuard Mini for Mac will start functioning in Safari.
+Nachdem Sie diese Schritte abgeschlossen haben, wird AdGuard Mini für Mac in Safari funktionieren.
 
-## How to uninstall AdGuard Mini for Mac
+## Wie man AdGuard Mini für Mac deinstalliert
 
-To uninstall AdGuard Mini for Mac, do the following:
+Um AdGuard Mini für Mac zu deinstallieren, gehen Sie wie folgt vor:
 
 1. Beenden Sie die App.
 
 2. Klicken Sie auf _Safari_ in der linken oberen Ecke des Menüs.
 
-3. Klicken Sie auf _Einstellungen…_ → _Erweiterungen_. You will see a list of extensions, AdGuard Mini has seven.
+3. Klicken Sie auf _Einstellungen…_ → _Erweiterungen_. Sie sehen eine Liste der Erweiterungen; AdGuard Mini verfügt über sieben.
 
-4. Uncheck all checkboxes and press _Uninstall_ below any of them.
+4. Deaktivieren Sie alle Kontrollkästchen und drücken Sie _Deinstallieren_ unter einem davon.
 
-   ![Unchecked extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
+   ![Nicht angekreuzte Erweiterungen](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
 
-5. In the notification that appears, press _Show in Finder_.
+5. In der Benachrichtigung, die erscheint, drücken Sie _Im Finder anzeigen_.
 
-   ![Uninstall notification](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/show-in-finder.png)
+   ![Deinstallationsbenachrichtigung](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/show-in-finder.png)
 
-6. Right-click _AdGuard Mini_ and choose _Move to trash_.
+6. Klicken Sie mit der rechten Maustaste auf _AdGuard Mini_ und wählen Sie _In den Papierkorb verschieben_.
 
-   ![Move to trash](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/move-to-trash.png)
+   ![In den Papierkorb verschieben](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/move-to-trash.png)
 
-   AdGuard Mini for Mac will be removed from your device.
+   AdGuard Mini für Mac wird von Ihrem Gerät entfernt.
