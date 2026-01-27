@@ -3,31 +3,31 @@ title: Safari-Erweiterungen
 sidebar_position: 3
 ---
 
-![Extensions tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/extensions.png)
+![Tab „Erweiterungen“](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/extensions.png)
 
-Safari extensions are mechanisms that allow implementing content blockers — thematic clusters of filters. For example, privacy-related filters are included in the content blocker with the corresponding name — _AdGuard Privacy_.
+Safari-Erweiterungen sind Mechanismen, die die Implementierung von Inhaltsblockern ermöglichen — thematische Gruppen von Filtern. Datenschutzbezogene Filter sind im Inhaltsblocker enthalten und tragen den entsprechenden Namen — _AdGuard Datenschutz_.
 
-Content blockers were designed for two reasons: to structure filters and to conform to Apple’s restrictions.
+Inhaltsblocker wurden aus zwei Gründen entwickelt: zur Strukturierung von Filtern und zur Anpassung an die Beschränkungen von Apple.
 
-[Im Jahr 2019](https://adguard.com/en/blog/adguard-safari-1-5.html) hat Apple die Werbeblocker für Safari eingeschränkt, so dass sie nur 50.000 Filterregeln gleichzeitig verwenden können. As this number was not enough for an ad blocker to provide a good filtering quality (_AdGuard Base Filter_ alone has 30,000 filtering rules), we divided AdGuard for Safari into six content blockers each containing up to 50,000 rules.
+[Im Jahr 2019](https://adguard.com/en/blog/adguard-safari-1-5.html) hat Apple die Werbeblocker für Safari eingeschränkt, so dass sie nur 50.000 Filterregeln gleichzeitig verwenden können. Da diese Anzahl für einen Werbeblocker nicht ausreicht, um eine gute Filterqualität zu bieten (_AdGuard Basisfilter_ hat allein 30.000 Filterregeln), haben wir AdGuard für Safari in sechs Inhaltsblocker mit jeweils bis zu 50.000 Regeln unterteilt.
 
-[Im Jahr 2022](https://adguard.com/de/blog/adguard-for-safari-1-11.html) erhöhte Apple das Limit der Filterregeln für jeden Inhaltsblocker auf 150.000 gleichzeitig angewandte Regeln. Regarding AdGuard Mini for Mac, up to 900,000 rules can be enabled for all six content blockers.
+[Im Jahr 2022](https://adguard.com/de/blog/adguard-for-safari-1-11.html) erhöhte Apple das Limit der Filterregeln für jeden Inhaltsblocker auf 150.000 gleichzeitig angewandte Regeln. Bei AdGuard Mini für Mac können bis zu 900.000 Regeln für alle sechs Inhaltsblocker aktiviert werden.
 
 Während der Grenzwert erhöht wurde, ist die Struktur der Inhaltsblocker gleich geblieben.
 
-In _Safari extensions_, you can see which content blockers are enabled, how many rules each of them is using, and which filters are functioning.
+In _Safari-Erweiterungen_ können Sie sehen, welche Inhaltsblocker aktiviert sind, wie viele Regeln jeder von ihnen verwendet, und welche Filter funktionieren.
 
 :::tip
 
-You can manage enabled filters in _Settings_ → _Filters_. In _Safari extensions_, you can only see the list of enabled filters and the number of enabled rules.
+Sie können aktivierte Filter in _Einstellungen_ → _Filter_ verwalten. In _Safari Extensions_ können Sie nur die Liste der aktivierten Filter und die Anzahl der aktivierten Regeln sehen.
 
 :::
 
-## List of AdGuard Mini’s Safari extensions
+## Liste der Safari-Erweiterungen von AdGuard Mini
 
 ### AdGuard General (Allgemein)
 
-_AdGuard Allgemein_ ist ein Inhaltsblocker, der die wichtigsten Filter zum Blockieren von Werbung vereint. We recommend keeping _AdGuard Base Filter_ always enabled.
+_AdGuard Allgemein_ ist ein Inhaltsblocker, der die wichtigsten Filter zum Blockieren von Werbung vereint. Wir empfehlen, den _AdGuard Basisfilter_ immer aktiviert zu lassen.
 
 ### AdGuard Privacy (Datenschutz)
 

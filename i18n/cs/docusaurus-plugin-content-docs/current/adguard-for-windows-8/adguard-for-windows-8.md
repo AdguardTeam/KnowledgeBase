@@ -5,32 +5,32 @@ sidebar_position: 1
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Jedná se o beta verzi, která je stále ve vývoji. Chcete-li vyzkoušet, stáhněte si [beta verzi AdGuard pro Windows](https://agrd.io/windows_beta).
 
 :::
 
-AdGuard pro Windows je snadno použitelný nástroj, který blokuje otravné bannery, vyskakovací okna, videoreklamy a slídiče. But that’s not all: it helps you save traffic, load web pages faster, and protect your computer from undesirable and potentially malicious websites. AdGuard vás také chrání před krádeží identity a chrání vaše děti před nevhodným obsahem.
+AdGuard pro Windows je snadno použitelný nástroj, který blokuje otravné bannery, vyskakovací okna, videoreklamy a slídiče. To ale není vše: pomáhá šetřit data, rychleji načítat webové stránky a chránit počítač před nežádoucím a potenciálně škodlivými weby. AdGuard vás také chrání před krádeží identity a chrání vaše děti před nevhodným obsahem.
 
 ![Home screen](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
 
-On the Home screen, you’ll find a toggle to enable or disable AdGuard protection, as well as icons for _Ad blocking_, _Tracking protection_, _DNS protection_, and _Annoyance blocking_. Main settings can be accessed through the left-side menu.
+Na domovské obrazovce najdete přepínač pro zapnutí nebo vypnutí AdGuard ochrany, stejně jako ikony pro _Blokování reklam_, _Ochranu před sledováním_, _Ochranu DNS_ a _Blokování obtěžování_. Hlavní nastavení je přístupné přes menu na levé straně.
 
-## [Protection](/adguard-for-windows-8/protection/)
+## [Ochrana](/adguard-for-windows-8/protection/)
 
-Settings to configure _Ad blocking_, _Tracking protection_, _DNS protection_, _Annoyances blocking_, _Browsing security_, _Parental control_, and _Extensions_.
+Nastavení pro konfiguraci _Blokování reklam_, _Ochrana před sledováním_, _Ochrana DNS_, _Blokování obtěžování_, _Bezpečné prohlížení_, _Rodičovská ochrana_ a _Rozšíření_.
 
-## [Statistics](/adguard-for-windows-8/statistics/)
+## [Statistiky](/adguard-for-windows-8/statistics/)
 
-Detailed information about blocked ads, trackers, and data usage.
+Podrobné informace o zablokovaných reklamách, slídičích a využití dat.
 
-## [App management](/adguard-for-windows-8/app-management/)
+## [Správa aplikací](/adguard-for-windows-8/app-management/)
 
-Settings to customize traffic filtering and routing for each app and browser.
+Nastavení pro přizpůsobení filtrování a směrování provozu pro každou aplikaci a prohlížeč.
 
-## [Settings](/adguard-for-windows-8/settings/)
+## [Nastavení](/adguard-for-windows-8/settings/)
 
-Options to select language and theme, view legal documents, check license information, and contact support. Advanced settings and network settings also live there.
+Možnosti výběru jazyka a motivu, zobrazení právních dokumentů, kontroly informací o licenci a kontaktování podpory. Pokročilá nastavení a nastavení sítě se také nacházejí zde.
 
-Click _Check for updates_ to see whether your app version, filters, and extensions are up to date.
+Kliknutím na _Zkontrolovat aktualizace_ zjistíte, zda jsou verze aplikace, filtry a rozšíření aktuální.
 
 ![Check for updates](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/checking_for_updates.png)

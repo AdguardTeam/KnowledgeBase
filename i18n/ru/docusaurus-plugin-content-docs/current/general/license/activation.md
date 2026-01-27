@@ -77,36 +77,36 @@ sidebar_position: 3
 
     ![Экран входа *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
 
-### Activating AdGuard Mini for Mac
+### Активация AdGuard Mini для Mac
 
-1. Click AdGuard Mini icon in the menu bar.
+1. Нажмите на иконку AdGuard Mini в строке меню.
 
-    ![AdGuard Mini in the menu bar](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
+    ![AdGuard Mini в строке меню](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
 
-2. Click the settings icon.
+2. Нажмите на иконку настроек.
 
-    ![Settings icon *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
+    ![Иконка настроек *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
 
-3. Go to *License*.
+3. Перейдите на вкладку *Лицензия*.
 
-    ![Go to License](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
+    ![Перейдите на вкладку Лицензия](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
 
-4. Open the menu (⋮) in the upper right corner and click *Already purchased?*.
+4. Откройте меню (⋮) в правом верхнем углу и нажмите *Уже купили?*.
 
-    ![Click already purchased](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
+    ![Нажмите «Уже купили»](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
 
-5. You will see the available activation options:
+5. Вы увидите доступные варианты активации:
 
-    ![Activation options](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
+    ![Варианты активации](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
 
-    - **Log in**
+    - **Войти в аккаунт**
 
-      Log in to your AdGuard account that has a valid license in it.
+      Войдите в свой аккаунт AdGuard, где есть действующая лицензия.
 
-    - **Restore from App Store**
+    - **Восстановить из App Store**
 
-      Use a license that you have previously bought through the App Store.
+      Используйте лицензию, которую вы ранее купили через App Store.
 
-    - **Enter activation code**
+    - **Ввести код активации**
 
-      Enter your activation code.
+      Введите код активации.
