@@ -3562,7 +3562,6 @@ This is equivalent to:
 
 - `example.org/checkout##.promo-banner` — hides `.promo-banner` elements only on checkout pages
 - `news.site.com/article##.sidebar-ad` — hides sidebar ads only on article pages
-- `shop.com/product,~shop.com/product/reviews##.upsell` — hides upsell blocks on product pages but not on review pages
 
 **Multiple domains**
 
