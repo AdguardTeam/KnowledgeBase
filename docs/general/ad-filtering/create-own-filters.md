@@ -4846,7 +4846,7 @@ For cosmetic rules, you can use a simplified path-in-domain syntax by specifying
 **Syntax**
 
 ```text
-   rule = [targets] "##" selector "{" style "}"
+   rule = [targets] "##" selector
 targets = [target0, target1[, ...[, targetN]]]
  target = domain [path]
 ```
