@@ -3370,7 +3370,6 @@ The rules described in this section are created specifically for this purpose.
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [Element hiding](#cosmetic-elemhide-rules) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [CSS rules](#cosmetic-css-rules) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [Path-in-domain syntax](#cosmetic-path-in-domain) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [Extended CSS](#extended-css-selectors) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [HTML filtering](#html-filtering-rules) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
 | [JavaScript](#javascript-rules) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
@@ -3539,72 +3538,6 @@ example.org#@#body
 example.org#@#body { remove: true; }
 example.org#@#body{remove:true;}
 ```
-
-:::
-
-### Path-in-domain syntax {#cosmetic-path-in-domain}
-
-AdGuard supports a simplified syntax for cosmetic rules that need to be applied only on specific paths of a website. Instead of using the `$path` modifier, you can specify the path directly in the domain part of the rule.
-
-**Syntax**
-
-```text
-domain.com/path##selector
-```
-
-This is equivalent to:
-
-```text
-[$path=/path]domain.com##selector
-```
-
-**Examples**
-
-- `example.org/checkout##.promo-banner` — hides `.promo-banner` elements only on checkout pages
-- `news.site.com/article##.sidebar-ad` — hides sidebar ads only on article pages
-
-**Multiple domains**
-
-Path-in-domain syntax works with multiple domains:
-
-- `domain1.com,example.org/path##.banner` — applies to all pages on `domain1.com` and only `/path` pages on `example.org`
-
-**Regex domains**
-
-Path-in-domain syntax is also supported for regex domains:
-
-- `/example\.org\/article\d+/##.ad` — hides ads on article pages with numeric IDs
-
-**All cosmetic rule types**
-
-Path-in-domain syntax works with all types of cosmetic rules:
-
-```adblock
-! Element hiding
-example.org/path##.banner
-
-! Element hiding exception  
-example.org/path#@#.banner
-
-! CSS injection
-example.org/path#$#.banner { display: block !important; }
-
-! HTML filtering
-example.org/path$$script[src*="ads"]
-
-! HTML filtering exception
-example.org/path$@$script[src*="ads"]
-
-! JavaScript rules
-example.org/path#%#//scriptlet('abort-on-property-read', 'ads')
-
-! JavaScript exception
-example.org/path#@%#//scriptlet('abort-on-property-read', 'ads')
-```
-
-:::info Compatibility
-
-Path-in-domain syntax has been introduced in [CoreLibs] v1.21.
 
 :::
 
@@ -4881,14 +4814,6 @@ Such rules with `$domain` modifier are supported by AdGuard for Windows, AdGuard
 
 `$path` modifier limits the rule application area to specific locations or pages on websites.
 
-:::tip Alternative syntax
-
-For cosmetic rules, you can use a simplified [path-in-domain syntax](#cosmetic-path-in-domain) instead of the `$path` modifier:
-
-- `example.org/path##.banner` instead of `[$path=/path]example.org##.banner`
-
-:::
-
 **Syntax**
 
 ```text
@@ -4913,6 +4838,32 @@ If `pattern` is not set for `$path`, rule will apply only on the main page of we
 - `[$path]example.com##.textad` hides a `div` with the class `textad` at the main page of `example.com`
 - `[$domain=example.com,path=/page.html]##.textad` hides a `div` with the class `textad` at `page.html` of `example.com` and all subdomains but not at `another_page.html`
 - `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` hides a `div` with the class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please note the [escaped special characters](#non-basic-rules-modifiers-syntax))
+
+#### Path-in-domain syntax {#path-in-domain-syntax}
+
+For cosmetic rules, you can use a simplified path-in-domain syntax by specifying the path directly in the domain part of the rule instead of using the `$path` modifier.
+
+**Syntax**
+
+```text
+   rule = [targets] "##" selector "{" style "}"
+targets = [target0, target1[, ...[, targetN]]]
+ target = domain [path]
+```
+
+**Examples:**
+
+- `example.org/checkout##.promo-banner` — hides `.promo-banner` elements only on checkout pages
+- `news.site.com/article##.sidebar-ad` — hides sidebar ads only on article pages
+- `domain1.com,example.org/path##.banner` — applies to all pages on `domain1.com` and only `/path` pages on `example.org`
+- `/example\.org\/article\d+/##.ad` — hides ads on article pages with numeric IDs
+
+Path-in-domain syntax works with all types of cosmetic rules (`##`, `#@#`, `#$#`, `$$`, `$@$`, `#%#`, `#@%#`)
+
+:::info Compatibility
+
+Path-in-domain syntax has been introduced in [CoreLibs] v1.21.
+:::
 
 #### `$path` modifier limitations {#non-basic-path-modifier-limitations}
 
