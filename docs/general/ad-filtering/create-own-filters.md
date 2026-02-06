@@ -4862,7 +4862,7 @@ Path-in-domain syntax works with all types of cosmetic rules (`##`, `#@#`, `#$#`
 
 :::info Compatibility
 
-Path-in-domain syntax has been introduced in [CoreLibs] v1.21.
+Path-in-domain syntax has been introduced in [CoreLibs] v1.20.
 
 :::
 
