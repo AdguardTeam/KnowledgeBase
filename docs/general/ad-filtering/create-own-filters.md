@@ -3034,7 +3034,7 @@ Rules with the `$urltransform` modifier can only be used [**in trusted filters**
 
 Rules with the `$urltransform` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.15 or later.
 
-`$urltransform` rules with [content-type modifiers](#content-type-modifiers) are supported starting from [CoreLibs] v1.21 or later. In earlier versions, content-type modifiers were not allowed with `$urltransform`.
+`$urltransform` rules with [content-type modifiers](#content-type-modifiers) are supported starting from [CoreLibs] v1.19 or later. In earlier versions, content-type modifiers were not allowed with `$urltransform`.
 
 :::
 
