@@ -3,7 +3,7 @@ title: Ad blocking issues on search websites in Opera
 sidebar_position: 3
 ---
 
-If AdGuard Browser Extension for Opera fails to block ads on search websites, either automatically or manually, this indicates that the extension does not have permission to access search page results.
+If AdGuard Browser Extension fails to block ads on search websites in Opera, either automatically or manually, it means that the extension does not have permission to access search page results.
 
 To grant the required permission:
 
