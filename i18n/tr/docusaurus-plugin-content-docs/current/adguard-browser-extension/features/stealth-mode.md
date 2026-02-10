@@ -1,5 +1,5 @@
 ---
-title: İzleme koruması (Gizlilik Modu)
+title: Tracking protection (formerly Stealth Mode)
 sidebar_position: 3
 ---
 
@@ -9,14 +9,20 @@ Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakk
 
 :::
 
-_Stealth Mode_ aims to ensure the protection of sensitive personal data from online trackers and fraudsters.
+İzleme korumasının\* amacı, hassas kişisel verilerinizi çevrimiçi izleyicilerden ve dolandırıcılardan korumaktır. MV3'ü destekleyen Chromium tabanlı tarayıcılar ile MV2'yi destekleyen Chromium tabanlı olmayan tarayıcılar arasında izleme koruması özelliklerinde küçük farklılıklar vardır.
 
-![Stealth Mode \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
+![Tracking protection in Chromium-based browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv3_trackingProtection.png)
 
-Gizlilik Modunda, bir sitenin onu internette bulmak için kullandığınız arama sorgularını görmesini engelleyebilir, üçüncü taraf ve sitenin kendi çerezlerini, vb. otomatik olarak silebilirsiniz. A [separate article](/general/stealth-mode) is devoted to all these features.
+Chromium tabanlı tarayıcılarda _İzleme koruması_
+
+![Chromium tabanlı olmayan tarayıcılarda İzleme koruması \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv2_trackingProtection.png)
+
+_Tracking protection_ in non-Chromium browsers
+
+_İzleme koruması_ özellikleri, sitelerin internette onları bulmak için kullandığınız arama sorgusunu görmesini önler, üçüncü taraf ve site çerezlerini otomatik olarak siler ve daha fazlasını yapar. A [separate article](/general/stealth-mode) is devoted to all these features.
 
 :::note
 
-Some of the _Stealth Mode_ options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
+Tarayıcı uzantıları belirli bir tarayıcıyla sınırlıdır ve o tarayıcının teknik kısıtlamalarına tabidir. Bu sebeple, tam teşekküllü reklam engelleme uygulamalarında bulunan tüm izleme koruma özelliklerini sunamazlar.
 
 :::

@@ -84,6 +84,17 @@ Use the `config` command to configure AdGuard for Linux. Subcommands:
     - `proxy_mode`: Proxy mode (`manual` or `auto`)
 - `get`: Get the current status of the above options
 
+:::note
+
+The Automatic mode can only be used if the following requirements are met:
+
+- `iptables` is installed and running (either `nft` or `legacy`)
+- `iptables` supports the `nat` table for both IPv4 and IPv6
+- `iptables` supports the `REDIRECT` and `QUEUE` chains for both IPv4 and IPv6
+- The `sudo` package is installed
+
+:::
+
 ## Manage filters
 
 Use the `filters` command to configure AdGuard for Linux. Subcommands:
@@ -199,3 +210,37 @@ adguard-cli config show outbound_proxy
 Configuring `outbound_proxy` via URL is available starting from AdGuard for Linux v1.1.26 nightly and v1.1 stable release.
 
 :::
+
+## Export and import settings
+
+The export/import functionality allows you to backup your AdGuard CLI configuration and restore it on the same or different system. This includes filters, proxy settings, and other configuration options.
+
+### Export settings
+
+To export current AdGuard CLI settings to a ZIP archive, use:
+
+```sh
+adguard-cli export-settings
+```
+
+You can specify the output path using the `-o` or `--output` flag. This can be either a specific file path or a directory:
+
+```sh
+# Export to a specific file
+adguard-cli export-settings -o "/path/to/settings.zip"
+
+# Export to a directory (archive will be created with a standard name)
+adguard-cli export-settings -o "/path/to/directory"
+```
+
+If no output path is specified, the settings will be exported to the working directory with a standard name. After successful export, the command will display the full path where the archive was created.
+
+### Import settings
+
+To import AdGuard CLI settings from a ZIP archive, use:
+
+```sh
+adguard-cli import-settings -i "/path/to/settings.zip"
+```
+
+The `-i` or `--input` flag is required and specifies the path to the settings archive to import.

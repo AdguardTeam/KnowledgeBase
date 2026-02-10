@@ -1,0 +1,20 @@
+---
+title: Пользовательские правила
+sidebar_position: 4
+---
+
+![Пользовательские правила](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/user-rules.png)
+
+С помощью пользовательских правил можно настраивать блокировку рекламы по своему усмотрению: исключать сайты из фильтрации, разблокировать запросы или разрешать выполнение скриптов на определённой веб-странице. Их можно добавить вручную или импортировать. Когда вы блокируете элемент на странице, они создаются автоматически.
+
+Чтобы добавить собственные правила фильтрации, используйте [специальный синтаксис](/general/ad-filtering/create-own-filters).
+
+### Конструктор правил
+
+Мы понимаем, что самостоятельное написание правил фильтрации — задача не из лёгких. That’s why you can just click _Create rule_ to use a rule constructor: choose what you want to do, click through a few options, and you’re done. Блокируйте изображения, видео, скрипты и любые другие элементы, которые вы не хотели бы видеть на странице.
+
+![Конструктор правил](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/build-a-rule.png)
+
+Вот пример сложного случая — всплывающее окно с уведомлением о файлах cookie, которое не поддаётся фильтрации. Найдите его в коде страницы, затем откройте _Пользовательские правила_ и создайте правило для его блокировки:
+
+<iframe class="youtube-video" src="https://cdn.adtidy.org/content/blog/rule.mp4" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

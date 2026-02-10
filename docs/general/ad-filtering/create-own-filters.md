@@ -392,7 +392,7 @@ Basically, they just limit the scope of rule application.
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Chrome MV3][ext-mv3] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
+| Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Chrome MV3][ext-mv3] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard Mini for Mac][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [$app](#app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
@@ -400,7 +400,7 @@ Basically, they just limit the scope of rule application.
 | [$header](#header-modifier) | ✅ | ✅ [*[2]](#header-modifier-limitations)| ✅ [*[2]](#header-modifier-limitations) | ✅ [*[2]](#header-modifier-limitations) | ❌ | ❌ | ❌ |
 | [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$method](#method-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$method](#method-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ [*[2]](#method-modifier-limitations) | ✅ [*[2]](#method-modifier-limitations) | ❌ |
 | [$popup](#popup-modifier) | ✅ [*[3]](#popup-modifier-limitations) | ✅ | ✅ [*[3]](#popup-modifier-limitations) | ✅ | ✅ [*[3]](#popup-modifier-limitations) | ✅ [*[3]](#popup-modifier-limitations) | ❌ |
 | [$strict-first-party](#strict-first-party-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$strict-third-party](#strict-third-party-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
@@ -706,7 +706,9 @@ This modifier limits the rule scope to requests that use the specified set of HT
 
 :::caution Restrictions
 
-Rules with mixed negated and not negated values are considered invalid.
+1. In AdGuard for iOS and AdGuard Mini for Mac, the `$method` modifier does not support negation. Therefore, rules such as `$method=~get` are not supported.
+
+1. Rules with a combination of negated and non-negated values are considered invalid.
 So, for example, the rule `||evil.com^$method=get|~head` will be ignored.
 
 :::
@@ -714,6 +716,8 @@ So, for example, the rule `||evil.com^$method=get|~head` will be ignored.
 :::info Compatibility
 
 Rules with `$method` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.12 or later, and AdGuard Browser Extension for Chrome, Firefox, and Edge with [TSUrlFilter] v2.1.1 or later.
+
+In AdGuard for iOS (v4.5.15 or later) and AdGuard Mini for Mac (v2.1 or later), the `$method` modifier is supported with limitations.
 
 :::
 
@@ -2913,17 +2917,34 @@ If multiple `$urltransform` rules match a single request, we will apply each of 
 
 **Syntax**
 
-`$urltransform` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
+`$urltransform` value is a series of one or more transformations separated by `|`. The first transformation is
+applied to the input URL. Each of the following transformations is applied to the output of the previous one.
+The output of a failed transformation (for example, if Base64 decoding failed or if substitution found no matches)
+is its input, unchanged. Formally:
 
 ```text
-urltransform = "/" regexp "/" replacement "/" modifiers
+urltransform = transforms
+transforms = transform | transform "|" transforms
+transform = substitute | decode
+substitute = "/" regexp "/" replacement "/" modifiers
+decode = "b64" | "pct"
 ```
 
-- **`regexp`** — a regular expression.
-- **`replacement`** — a string that will be used to replace the string corresponding to `regexp`.
-- **`modifiers`** — a regular expression flags. For example, `i` — insensitive search, or `s` — single-line mode.
+- **`substitute`** is similar to replacement with regular expressions [in Perl](https://perldoc.perl.org/perlrequick.html#Search-and-replace).
+    - **`regexp`** — a regular expression.
+    - **`replacement`** — a string that replaces whatever is matched by `regexp`. `$1`, `$2`, etc. in the replacement string are replaced with the contents of the corresponding capture group.
+    - **`modifiers`** — regular expression flags, e.g., `i` for case-insensitive search.
+- **`b64`** — decodes a [Base64-encoded](https://datatracker.ietf.org/doc/html/rfc4648) string, both the default and the URL-safe alphabets are supported.
+- **`pct`** — decodes a [percent-encoded](https://datatracker.ietf.org/doc/html/rfc3986#section-2.1) string.
 
 In the `$urltransform` value, two characters must be escaped: the comma `,` and the dollar sign `$`. Use the backslash character `\` for this. For example, an escaped comma looks like this: `\,`.
+
+:::info Compatibility
+
+AdGuard products that use a [CoreLibs] version older than 1.20 only support a single
+`substitute` transformation for the value of the `$urltransform` modifier.
+
+:::
 
 **Changing the origin**
 
@@ -3598,22 +3619,31 @@ Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3
 
 Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`][native-has]
 if they use the `##` rule marker and if it is possible, i.e., there are no other extended CSS selectors inside.
-If it is not supported by the product, ExtendedCss implementation will be used even for rules with the `##` marker.
+If it is not supported by the product (or by the browser in case of AdGuard Browser Extension),
+ExtendedCss implementation will be used automatically as a fallback,
+even for rules with the `##` marker.
 
-Currently, not all AdGuard products support the native implementation of `:has()` yet:
+AdGuard products support the native implementation of `:has()`:
 
-- AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **do support** it with [CoreLibs] v1.12 or later.
-- AdGuard for iOS and AdGuard for Safari **do support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 and [Safari browser v16.4][safari-16.4].
-- AdGuard Browser Extension **does not support** it yet, but it is [planned][AdguardBrowserExtension#2587].
+- AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **support** it with [CoreLibs] v1.12 or later.
+- AdGuard for iOS and AdGuard for Safari **support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 and [Safari browser v16.4][safari-16.4] or later.
+- AdGuard Browser Extension **supports** it in v5.3 or later:
+    - **Manifest V3** (Chromium-based): always uses native `:has()` by default.
+    - **Manifest V2**: Detects native `:has()` support using `CSS.supports()` and falls back to ExtendedCss if the browser doesn’t support it natively.
+- All other AdGuard products **do not support** it.
 
-To force the ExtendedCss implementation of `:has()` to be used, use the `#?#` or `#$?#` rule markers explicitly,
+To force the ExtendedCss implementation of `:has()` to be used (regardless of native support),
+use the `#?#` or `#$?#` rule markers explicitly,
 e.g., `example.com#?#p:has(> a)` or `example.com#$?#div:has(> span) { display: none !important; }`.
+
+And since the `:has()` pseudo-class cannot be nested within another `:has()`
+in native implementation, e.g. `div:has(p:has(a))`,
+it is always treated as extended in AdGuard Browser Extension.
 
 :::
 
 [native-has]: https://developer.mozilla.org/docs/Web/CSS/:has
 [safari-16.4]: https://www.webkit.org/blog/13966/webkit-features-in-safari-16-4/
-[AdguardBrowserExtension#2587]: https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2587
 
 **Compatibility with other pseudo-classes**
 
@@ -4255,6 +4285,8 @@ The syntax with an optional `value` in the attributes is supported by AdGuard fo
 
 ### Syntax
 
+Syntax supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux with CoreLibs, and AdGuard Browser Extension prior to v5.2:
+
 ```text
      selector = [tagName] [attributes] [pseudoClasses]
    combinator = ">"
@@ -4271,6 +4303,24 @@ pseudoClasses = pseudoClass *pseudoClass
 - **`pseudoName`** — the name of a pseudo-class.
 - **`pseudoArgs`** — the arguments of a function-style pseudo-class.
 - **`combinator`** — an operator that works similarly to the [CSS child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator): that is, the `selector` on the right of the `combinator` will only match an element whose direct parent matches the `selector` on the left of the `combinator`.
+
+Syntax supported by AdGuard Browser Extension v5.3 or later:
+
+```text
+         rule = [domains] "$$" selector
+      domains = [domain0, domain1[, ...[, domainN]]]
+```
+
+- **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the element(s) to be removed from the HTML code before the page is loaded.
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rule syntax](#cosmetic-elemhide-rules).
+
+:::caution Limitations
+
+The following limitations apply to AdGuard Browser Extension v5.3 and later:
+
+- Pseudo-elements (e.g., `::before`, `::after`) are not supported, as they are not applicable in the context of HTML filtering.
+
+:::
 
 ### Examples
 
@@ -4337,6 +4387,8 @@ $$script[tag-content="banner"]
 
 The `tag-content` special attribute must not appear in a selector to the left of a `>` combinator.
 
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
+
 :::
 
 #### `wildcard`
@@ -4360,6 +4412,8 @@ It checks if the element code contains the two consecutive substrings `banner` a
 :::caution Limitations
 
 The `wildcard` special attribute must not appear in a selector to the left of a `>` combinator.
+
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 :::
 
@@ -4389,6 +4443,8 @@ This rule will remove all the `div` elements, whose code contains the substring 
 
 The `max-length` special attribute must not appear in a selector to the left of a `>` combinator.
 
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
+
 :::
 
 #### `min-length`
@@ -4412,6 +4468,8 @@ This rule will remove all the `div` elements, whose code contains the substring 
 :::caution Limitations
 
 The `min-length` special attribute must not appear in a selector to the left of a `>` combinator.
+
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 :::
 
@@ -4439,7 +4497,7 @@ or
 
 :::info Compatibility
 
-The `:contains()` pseudo-class is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.13 or later.
+The `:contains()` pseudo-class is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux with [CoreLibs] v1.13 or later, and AdGuard Browser Extension v5.3 or later.
 
 :::
 
@@ -4448,6 +4506,8 @@ Requires that the inner HTML of the element contains the specified text or match
 :::caution Limitations
 
 A `:contains()` pseudo-class must not appear in a selector to the left of a `>` combinator.
+
+This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 :::
 
@@ -4690,8 +4750,8 @@ this: `\]`.
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [$app](#non-basic-app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$domain](#non-basic-domain-modifier) | ✅ | ✅ | ✅ [*[1]](#non-basic-domain-modifier-limitations) | ✅ | ✅ | ✅ | ❌ |
-| [$path](#non-basic-path-modifier) | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ |
-| [$url](#non-basic-url-modifier) | ✅ | ✅ [*[2]](#non-basic-url-modifier-limitations) | ✅ [*[2]](#non-basic-url-modifier-limitations) | ✅ [*[2]](#non-basic-url-modifier-limitations) | ❌ | ❌ | ❌ |
+| [$path](#non-basic-path-modifier) | ✅ | ✅ [*[2]](#non-basic-path-modifier-limitations) | ❌ | ✅ [*[2]](#non-basic-path-modifier-limitations) | ✅ | ✅ | ❌ |
+| [$url](#non-basic-url-modifier) | ✅ | ✅ [*[3]](#non-basic-url-modifier-limitations) | ✅ [*[3]](#non-basic-url-modifier-limitations) | ✅ [*[3]](#non-basic-url-modifier-limitations) | ❌ | ❌ | ❌ |
 
 :::note
 
@@ -4781,6 +4841,44 @@ If `pattern` is not set for `$path`, rule will apply only on the main page of we
 - `[$path]example.com##.textad` hides a `div` with the class `textad` at the main page of `example.com`
 - `[$domain=example.com,path=/page.html]##.textad` hides a `div` with the class `textad` at `page.html` of `example.com` and all subdomains but not at `another_page.html`
 - `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` hides a `div` with the class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please note the [escaped special characters](#non-basic-rules-modifiers-syntax))
+
+#### Path-in-domain syntax {#path-in-domain-syntax}
+
+For cosmetic rules, you can use a simplified path-in-domain syntax by specifying the path directly in the domain part of the rule instead of using the `$path` modifier.
+
+**Syntax**
+
+```text
+   rule = [targets] "##" selector
+targets = [target0, target1[, ...[, targetN]]]
+ target = domain [path]
+```
+
+**Examples:**
+
+- `example.org/checkout##.promo-banner` — hides `.promo-banner` elements only on checkout pages
+- `news.site.com/article##.sidebar-ad` — hides sidebar ads only on article pages
+- `domain1.com,example.org/path##.banner` — applies to all pages on `domain1.com` and only `/path` pages on `example.org`
+- `/example\.org\/article\d+/##.ad` — hides ads on article pages with numeric IDs
+
+Path-in-domain syntax works with all types of cosmetic rules (`##`, `#@#`, `#$#`, `$$`, `$@$`, `#%#`, `#@%#`)
+
+:::info Compatibility
+
+Path-in-domain syntax has been introduced in [CoreLibs] v1.20.
+
+:::
+
+#### `$path` modifier limitations {#non-basic-path-modifier-limitations}
+
+:::caution Limitations
+
+In AdGuard Browser Extension, the non-basic `$path` modifier is compatible
+with other non-basic modifiers only when it is placed last,
+e.g., `[$domain=/example.(com|org)/,path=/foo]##.ad`.
+Otherwise, it may not work as expected.
+
+:::
 
 :::info Compatibility
 

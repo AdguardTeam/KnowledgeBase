@@ -120,7 +120,7 @@ This setting may slow down your device. Use it for debugging purposes only.
 
 #### Encrypted Client Hello
 
-If this setting is enabled, AdGuard will encrypt ClientHellos, if necessary. Für diese Funktion muss die HTTPS-Filterung aktiviert sein. This feature uses a local DNS proxy to look for the ECH configuration for the domain. If it is found, the ClientHello packet will be encrypted. Make sure to use an encrypted DNS server with this feature.
+If this setting is enabled, AdGuard will encrypt ClientHellos, if necessary. Für diese Funktion muss die HTTPS-Filterung aktiviert sein. This feature uses a local DNS proxy to look for the ECH configuration for the domain. If it is found, the ClientHello packet will be encrypted. Stellen Sie sicher, dass Sie einen verschlüsselten DNS-Server mit dieser Funktion verwenden.
 
 **About ClientHellos and ECH**: Every encrypted Internet connection has an unencrypted part. This is the very first packet that contains the name of the server you are connecting to. Encrypted Client Hello technology is designed to solve this problem by encrypting this packet.
 
@@ -166,7 +166,7 @@ If this setting is enabled, the app will display debugging information in the br
 
 #### Excluded apps
 
-This setting allows you to list the packages and UIDs to exclude from AdGuard protection. Enter package names or UIDs, one per line. You can use `//` for comments.
+This setting allows you to list the packages and UIDs to exclude from AdGuard protection. Geben Sie Paketnamen oder UIDs ein (einen pro Zeile). You can use `//` for comments.
 
 #### QUIC bypass packages
 

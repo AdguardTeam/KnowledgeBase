@@ -21,25 +21,25 @@ Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunziona
 
 ## Installazione AdGuard
 
-To install AdGuard on a Windows PC or tablet, follow these steps:
+Per installare AdGuard su un PC o tablet Windows, segui questi passaggi:
 
-1. Go to the [AdGuard website](http://adguard.com) and click *Download*. You can also get the installation program from the [download page](https://adguard.com/download.html?auto=1) — the download will start automatically.
+1. Vai nel [sito web di AdGuard](http://adguard.com) e clicca *Scarica*. Puoi anche ottenere il programma di installazione dalla [pagina di scaricamento](https://adguard.com/download.html?auto=1) — lo scaricamento inizierà automaticamente.
 
-   ![Download AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/website_en.png)
+   ![Scarica AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/website_en.png)
 
-2. Once the download is complete, open the file *adguardInstaller.exe*.
+2. Al termine del download, premi il pulsante *Apri* visualizzato nella barra dei download o clicca sul nome del file *adguardInstaller.exe*.
 
-   ![Downloaded file](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/download_en.png)
+   ![File scaricato](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/download_en.png)
 
-3. You’ll see a User Account Control prompt asking if you want to allow the app to make changes to your PC. Clicca *Sì*.
+3. Vedrai la finestra di dialogo Controllo dell'account utente che richiede di consentire all'app di apportare modifiche al tuo PC. Clicca *Sì*.
 
    ![Consenti modifiche *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/allow-changes.png)
 
-4. Choose the folder where you want AdGuard to be installed.
+4. Successivamente, seleziona la cartella sul tuo PC in cui installare l'app.
 
    ![Scegli cartella *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer1_en.png)
 
-   If you want to select a different location, click *Browse*, choose the folder, and click *OK*. You can also create a new folder by clicking *Make New Folder* and naming it. If you’d like a desktop shortcut, check the box *Create a desktop shortcut*. Then click *Install* to start the installation.
+   Se non sei d'accordo con il percorso d'installazione predefinito, clicca su *Sfoglia*, seleziona la cartella e clicca su *OK*. Puoi anche installare AdGuard in una nuova cartella, cliccando su *Crea nuova cartella* e inserendone il nome. Per creare un collegamento sul fisso per AdGuard, spunta la casella *Crea un collegamento sul desktop*. Clicca *Installa* per procedere con l'installazione.
 
    ![Avvia installazione *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer2_en.png)
 
@@ -47,7 +47,7 @@ To install AdGuard on a Windows PC or tablet, follow these steps:
 
    ![Installazione completa *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer3_en.png)
 
-   Felicitazioni! AdGuard has been successfully installed. You’ll be prompted to set up protection according to your preferences.
+   Felicitazioni! AdGuard è stato installato correttamente. Sullo schermo vedrai la finestra principale, in cui puoi modificare le impostazioni dell'app.
 
    ![Setting up protection *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/setting_up_protection_en.png)
 

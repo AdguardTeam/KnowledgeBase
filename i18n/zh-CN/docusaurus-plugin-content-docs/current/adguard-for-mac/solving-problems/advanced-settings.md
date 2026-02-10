@@ -171,6 +171,10 @@ sidebar_position: 9
 
 启用此设置在一些情况下很有用，比如，当 macOS 私有代理被启动时，过滤无法正常工作，必须禁用。 在 macOS 14 及以前的版本中，当启用保护时，AdGuard 将自动禁用私有代理。 但从 macOS 15 开始，如果用户启用防火墙，就不能再这样做了。 启用此设置，即使防火墙已启用，用户也可以禁用私有代理，从而克服先前的限制。
 
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Secures DNS proxy connections with a hybrid post-quantum key exchange, combining the classical X25519 algorithm with the ML-KEM-768 post-quantum KEM. Applies only to DoH, DoT, and DoQ upstreams.
+
 ### 隐身模式设置
 
 #### `stealth.antidpi.http.split.fragment.size`
