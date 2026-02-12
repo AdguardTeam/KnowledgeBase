@@ -87,7 +87,6 @@ Go to the Applications section. Find AdGuard there, right-click it and choose **
     To do so, open the Terminal app, then enter and execute the following commands:
 
     ```bash
-    rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist
     rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"
     find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete
     sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist
