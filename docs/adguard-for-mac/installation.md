@@ -78,8 +78,6 @@ Go to the Applications section. Find AdGuard there, right-click it and choose **
 **Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Also, do all the steps from the "regular uninstall" first.**
 
 1. After that, delete following AdGuard files:
-    - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
-    - ~/Library/Preferences/com.adguard.mac.adguard.plist (file)
     - ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (folder)
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (file)
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (file)
@@ -89,8 +87,6 @@ Go to the Applications section. Find AdGuard there, right-click it and choose **
     To do so, open the Terminal app, then enter and execute the following commands:
 
     ```bash
-    sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
-    rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"
     rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist
     rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"
     find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete
