@@ -5,55 +5,55 @@ sidebar_position: 2
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Dieser Artikel beschreibt AdGuard für Windows v8.0, einen umfassenden Werbeblocker, der Ihr Gerät auf Systemebene schützt. Es handelt sich hierbei um eine Beta-Version, die sich noch in der Entwicklung befindet. Um es auszuprobieren, laden Sie die [Beta-Version von AdGuard für Windows](https://agrd.io/windows_beta) herunter.
 
 :::
 
-Many websites collect data about their visitors, including IP addresses, browser and OS information, screen resolution, and even the page you came from. Cookies can be used to identify your browser, remember your preferences, or recognize you when you return. Tracking protection prevents such systems from collecting your personal data. Learn more in our [article about Tracking protection in AdGuard](https://adguard.com/kb/general/stealth-mode/)
+Viele Websites sammeln Daten über ihre Besucher, darunter IP-Adressen, Browser- und Betriebssysteminformationen, Bildschirmauflösung und sogar die Seite, von der aus Sie gekommen sind. Cookies können verwendet werden, um Ihren Browser zu identifizieren, Ihre Präferenzen zu speichern oder Sie bei Ihrer Rückkehr wiederzuerkennen. Der Tracking-Schutz verhindert, dass solche Systeme Ihre personenbezogenen Daten erfassen. Erfahren Sie mehr in unserem [Artikel über Tracking-Schutz in AdGuard (https://adguard.com/kb/general/stealth-mode/)
 
-![Tracking protection](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
+![Tracking-Schutz](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
 
-If you don’t want to spend time adjusting filters manually, you can simply pick one of the ready-made protection levels:
+Wenn Sie keine Zeit mit der manuellen Einstellung von Filtern verbringen möchten, können Sie einfach eine der vordefinierten Schutzstufen auswählen:
 
-- _Standard_: enabled by default and provides reliable protection for everyday browsing.
-- _High_: removes tracking parameters from page URLs and blocks third-party cookies. You may have to re-log in to some websites or face other cookie-related issues.
-- _Extreme_: limits cookie lifetime of third-party cookies and blocks certain browser APIs. Some websites may not work correctly.
+- _Standard_: standardmäßig aktiviert und bietet zuverlässigen Schutz für das tägliche Surfen.
+- _Hoch_: entfernt Tracking-Parameter aus Seiten-URLs und blockiert Cookies von Drittanbietern. Möglicherweise müssen Sie sich bei manchen Websites regelmäßig erneut anmelden und es treten andere Probleme im Zusammenhang mit Cookies auf.
+- _Extrem_: begrenzt die Lebensdauer von Cookies von Drittanbietern und blockiert bestimmte Browser-APIs. Einige Websites funktionieren möglicherweise nicht wie vorgesehen.
 
-For maximum flexibility, select _Custom_ and adjust everything manually. The settings there are divided into five categories:
+Für maximale Flexibilität wählen Sie _Benutzerdefiniert_ und nehmen Sie alle Einstellungen manuell vor. Die darin enthaltenen Einstellungen sind in fünf Kategorien unterteilt:
 
-- [General settings](#general-settings)
+- [Allgemein](#general-settings)
 
-- [Tracking methods](#tracking-methods)
+- [Tracking-Methoden](#tracking-methods)
 
-- [Browser API](#browser-api)
+- [Browser-API](#browser-api)
 
-- [Windows tracking](#windows-tracking)
+- [Windows-Tracking](#windows-tracking)
 
-- [Miscellaneous](#miscellaneous)
+- [Sonstiges](#miscellaneous)
 
 ## Allgemeine Einstellungen
 
-![General settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general.png)
+![Allgemeine Einstellungen](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general.png)
 
 ### Tracker blockieren
 
-Blocks trackers and web analytics using _AdGuard Tracking Protection filter_.
+Blockiert Tracker und Webanalysen mit dem _AdGuard Tracking-Schutzfilter_.
 
 ### Tracking-Parameter aus URLs entfernen
 
-Strips tracking parameters such as `utm_*` and `fb_ref` from pages’ URLs using _AdGuard URL Tracking filter_.
+Entfernt Tracking-Parameter wie `utm_*` und `fb_ref` aus den Seiten-URLs mithilfe des _AdGuard-URL-Tracking-Filters_.
 
-### Hide your search queries
+### Suchanfragen verbergen
 
 Hides queries for websites visited from a search engine. When you get directed to a website from Google, Yahoo, or any other search engine, this option hides the search query that you used to find that website.
 
-### Ask websites not to track you
+### Websites bitten, Sie nicht zu verfolgen
 
 Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit.
 
 ## Tracking-Methoden
 
-![Tracking methods](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_tracking_methods.png)
+![Tracking-Methoden](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_tracking_methods.png)
 
 ### Cookies von Drittanbietern löschen
 
@@ -63,7 +63,7 @@ Third-party cookies work the same way, but they are created by domains other tha
 
 With this option, you can set a time limit (in minutes) after which all third-party cookies will be deleted. If you set the timer to 0, such cookies will be blocked completely.
 
-![Time-to-live](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/delete_third_party.png)
+![Gültigkeitsdauer](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/delete_third_party.png)
 
 :::caution
 
@@ -101,11 +101,11 @@ The Authorization header value is cached by the browser and automatically sent w
 
 Blocks WebRTC, a known vulnerability that can leak your real IP address even if you use a proxy or VPN.
 
-WebRTC (Web Real-Time Communication) is a technology that allows direct data streaming between browsers and apps. It can reveal your true IP address, even if you use a proxy or VPN. Enabling this option may disrupt certain browser applications, such as messengers, chats, cinemas, or games.
+WebRTC (Web Real-Time Communication) ist eine Technologie, die direktes Daten-Streaming zwischen Browsern und Apps ermöglicht. It can reveal your true IP address, even if you use a proxy or VPN. Enabling this option may disrupt certain browser applications, such as messengers, chats, cinemas, or games.
 
 ### Push API blockieren
 
-The Push API allows servers to send messages to web applications regardless of the activity status of your browser. This is why you may receive notifications from websites even if your browser is hidden in the tray or not launched. Enabling this option completely blocks the Push API.
+The Push API allows servers to send messages to web applications regardless of the activity status of your browser. This is why you may receive notifications from websites even if your browser is hidden in the tray or not launched. Durch das Aktivieren dieser Option wird die Push-API vollständig blockiert.
 
 ### Location-API blockieren
 

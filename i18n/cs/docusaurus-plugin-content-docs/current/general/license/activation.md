@@ -79,34 +79,34 @@ Případně můžete k aktivaci použít [licenční klíč](../what-is#license-
 
 ### Aktivace AdGuardu Mini pro Mac
 
-1. Click AdGuard Mini icon in the menu bar.
+1. Klikněte na ikonu AdGuard Mini v liště nabídky.
 
     ![AdGuard Mini in the menu bar](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
 
-2. Click the settings icon.
+2. Klikněte na ikonu nastavení.
 
     ![Settings icon *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
 
-3. Go to *License*.
+3. Přejděte na *licenci*.
 
     ![Go to License](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
 
-4. Open the menu (⋮) in the upper right corner and click *Already purchased?*.
+4. Otevřete nabídku (⋮) v pravém horním rohu a klikněte na *Již zakoupeno?*.
 
     ![Click already purchased](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
 
-5. You will see the available activation options:
+5. Zobrazí se dostupné možnosti aktivace:
 
     ![Activation options](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
 
-    - **Log in**
+    - **Přihlásit se**
 
-      Log in to your AdGuard account that has a valid license in it.
+      Přihlaste se ke svému účtu AdGuard, který obsahuje platnou licenci.
 
-    - **Restore from App Store**
+    - **Obnovit z App Store**
 
-      Use a license that you have previously bought through the App Store.
+      Použijte licenci, kterou jste si dříve zakoupili prostřednictvím App Store.
 
-    - **Enter activation code**
+    - **Zadat aktivační kód**
 
-      Enter your activation code.
+      Zadejte svůj aktivační kód.

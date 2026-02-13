@@ -1,20 +1,20 @@
 ---
-title: Full version
+title: Versione completa
 sidebar_position: 9
 ---
 
-AdGuard Mini for Mac’s full version unlocks advanced features that provide extra filtering speed and power.
+La versione completa di AdGuard Mini per Mac sblocca funzionalità avanzate che forniscono una maggiore velocità e potenza di filtraggio.
 
-To activate it, you can use a regular AdGuard license, which is obtainable [on our website](https://adguard.com/license.html) or through in-app purchase. You can also use the 14-day trial to test the features beforehand.
+Per attivarla, puoi usare una normale licenza AdGuard, ottenibile [sul nostro sito web](https://adguard.com/license.html) o tramite acquisto in-app. Puoi anche usare la prova gratuita di 14 giorni per testare in anticipo le funzionalità.
 
 ### AdGuard Extra
 
-AdGuard Extra is an advanced script that handles complex ads, mostly on social media and online video platforms. It also shuts down ad blocking circumvention technologies such as ad re-insertion.
+AdGuard Extra è uno script avanzato che gestisce annunci pubblicitari complessi, principalmente sui social media o nelle piattaforme video online. Inoltre, blocca le tecnologie di aggiramento del blocco degli annunci, come il reinserimento degli annunci pubblicitari.
 
 ![AdGuard Extra](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/advanced-blocking.png)
 
-### Real-time filter updates
+### Aggiornamento dei filtri in tempo reale
 
-Receive filter updates as soon as there is a new rule or a fix. This ensures that your filters are always up-to-date and no ad slips through.
+Ricevi gli aggiornamenti dei filtri non appena viene introdotta una nuova regola o una correzione. In questo modo i tuoi filtri saranno sempre aggiornati e nessun annuncio pubblicitario sfuggirà al controllo.
 
-![Real-time updates](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/real-time-updates.png)
+![Aggiornamenti in tempo reale](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/real-time-updates.png)

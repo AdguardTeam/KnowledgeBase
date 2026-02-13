@@ -1,5 +1,5 @@
 ---
-title: How to collect logs in AdGuard Mini for Mac
+title: So erfassen Sie Protokolle in AdGuard Mini für Mac
 sidebar_position: 4
 ---
 
@@ -9,24 +9,24 @@ In diesem Artikel geht es um AdGuard Mini für Mac, der nur Ihren Safari-Browser
 
 :::
 
-To analyze and diagnose various problems that may occur with AdGuard Mini for Mac, the AdGuard support service may need its log files. Diese Dateien enthalten Aufzeichnungen über Fehler und andere Software-Ereignisse. Im Folgenden finden Sie eine kurze Anleitung, wie Sie Protokolle erstellen und bei Bedarf an den Support senden können.
+Zur Analyse und Diagnose verschiedener Probleme, die mit AdGuard Mini für Mac auftreten können, benötigt der AdGuard-Support möglicherweise seine Protokolldateien. Diese Dateien enthalten Aufzeichnungen über Fehler und andere Software-Ereignisse. Im Folgenden finden Sie eine kurze Anleitung, wie Sie Protokolle erstellen und bei Bedarf an den Support senden können.
 
 ### So erfassen Sie Protokolle
 
-1. Open AdGuard Mini.
-2. Go to _Settings_, scroll down, and click _Export logs_.
+1. Öffnen Sie AdGuard Mini.
+2. Gehen Sie zu _Einstellungen_, scrollen Sie nach unten und klicken Sie auf _Protokolle exportieren_.
 3. Wählen Sie einen Speicherort für die .zip-Datei und klicken Sie auf _Speichern_.
 
-Now you can send this file to [support@adguard.com](mailto:support@adguard.com) or attach it to your bug report on GitHub.
+Jetzt können Sie diese Datei an [support@adguard.com](mailto:support@adguard.com) senden oder sie an Ihren Fehlerbericht auf GitHub anhängen.
 
 :::note
 
-AdGuard ist dem Schutz Ihrer Privatsphäre verpflichtet. We strictly follow our [Privacy Policy](https://adguard.com/privacy.html) and do not collect any private information about users. Bevor Sie Ihre Protokolle an das Support-Team senden, überprüfen Sie bitte die Datei, da sie zusätzliche Informationen enthalten kann, die Sie vielleicht nicht freigeben möchten. Wenn sie solche persönlichen Informationen enthält, empfehlen wir Ihnen, sie zuerst zu löschen.
+AdGuard ist dem Schutz Ihrer Privatsphäre verpflichtet. Wir halten uns strikt an unsere [Datenschutzerklärung](https://adguard.com/privacy.html) und sammeln keine privaten Informationen über Nutzer:innen. Bevor Sie Ihre Protokolle an das Support-Team senden, überprüfen Sie bitte die Datei, da sie zusätzliche Informationen enthalten kann, die Sie vielleicht nicht freigeben möchten. Wenn sie solche persönlichen Informationen enthält, empfehlen wir Ihnen, sie zuerst zu löschen.
 
 :::
 
-### How to attach your log to a bug report on GitHub
+### Wie man sein Protokoll an einen Bugbericht auf GitHub anhängt
 
-1. Go to the [AdGuard Mini for Mac GitHub repo](https://github.com/AdguardTeam/AdGuardMiniForMac/issues) and click _New issue_.
-2. Send the log file to [devteam@adguard.com](mailto:devteam@adguard.com). Geben Sie die Uhrzeit des Fehlers an und fügen Sie einen Link zu Ihrem Problem oder dessen Nummer hinzu (sie wird neben dem Titel als #Nummer angezeigt).
-   Alternatively, you can upload the log file to Google Drive and send it to [devteam@adguard.com](mailto:devteam@adguard.com). Fügen Sie den Dateilink zu Ihrem GitHub-Problem hinzu.
+1. Gehen Sie zum [AdGuard Mini für Mac GitHub-Repository](https://github.com/AdguardTeam/AdGuardMiniForMac/issues) und klicke auf _New issue_.
+2. Senden Sie die Protokolldatei an [devteam@adguard.com](mailto:devteam@adguard.com). Geben Sie die Uhrzeit des Fehlers an und fügen Sie einen Link zu Ihrem Problem oder dessen Nummer hinzu (sie wird neben dem Titel als #Nummer angezeigt).
+   Alternativ können Sie die Protokolldatei auf Google Drive hochladen und an [devteam@adguard.com](mailto:devteam@adguard.com) senden. Fügen Sie den Dateilink zu Ihrem GitHub-Problem hinzu.

@@ -3,18 +3,18 @@ title: Regole dell'utente
 sidebar_position: 4
 ---
 
-![User rules](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/user-rules.png)
+![Regole Utente](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/user-rules.png)
 
-User rules can be used to customize ad blocking when you want something personal: exclude a website from filtering, unblock requests, or allow scripts on a certain webpage. Possono essere aggiunte manualmente, importate o create automaticamente al blocco di un elemento su una pagina.
+Le regole utente possono essere usate per personalizzare il blocco degli annunci quando si desidera qualcosa di personale: escludi un sito web dal filtraggio, sblocca richiesta o consenti gli script su una determinata pagina web. Possono essere aggiunte manualmente, importate o create automaticamente al blocco di un elemento su una pagina.
 
 Per aggiungere le tue regole di filtraggio, utilizza una [sintassi speciale](/general/ad-filtering/create-own-filters).
 
-### Rule constructor
+### Costruttore di regole
 
-We understand that writing filtering rules yourself is not every user’s cup of tea. That’s why you can just click _Create rule_ to use a rule constructor: choose what you want to do, click through a few options, and you’re done. Block images, videos, scripts, or any other elements you’d rather not see on a page.
+Siamo consapevoli che scrivere le regole di filtraggio non è una cosa da tutti. Ecco perché puoi semplicemente cliccare _Crea regola_ per utilizzare un costruttore di regole: scegli cosa vuoi fare, clicca su alcune opzioni e il gioco è fatto. Blocca immagini, video, script o qualsiasi altro elemento che preferisci non vedere su una pagina.
 
-![Rule constructor](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/build-a-rule.png)
+![Costruttore di regole](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/build-a-rule.png)
 
-Here’s an example of a tricky case — a cookie popup that resists filtering. Find it in the page code, then open _User rules_ and create a rule to block it:
+Ecco un esempio di un caso complicato: una comparsa per cookie che resiste al filtraggio. Trovalo nel codice della pagina, quindi apri _Regole utente_ e crea una regola per bloccarlo:
 
 <iframe class="youtube-video" src="https://cdn.adtidy.org/content/blog/rule.mp4" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -5,7 +5,7 @@ sidebar_position: 7
 
 ![About tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/about.png)
 
-On the _About_ tab, you can check:
+Na záložce _Informace_ můžete zkontrolovat:
 
 - Current version of your AdGuard Mini app
 - Current versions of the libraries

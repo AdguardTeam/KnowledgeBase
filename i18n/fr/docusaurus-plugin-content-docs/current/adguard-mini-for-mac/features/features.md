@@ -1,36 +1,36 @@
 ---
-title: Features
+title: Fonctionnalités
 sidebar_position: 1
 ---
 
-- [Safari protection](/adguard-mini-for-mac/features/safari-protection.md)
+- [Protection Safari](/adguard-mini-for-mac/features/safari-protection.md)
 
-  Core filtering feature with customizable options
+  Fonctionnalité de filtrage principale avec options personnalisables
 
-- [Advanced blocking](/adguard-mini-for-mac/features/advanced-blocking.md)
+- [Blocage avancé](/adguard-mini-for-mac/features/advanced-blocking.md)
 
-  Unlocks stronger filtering capabilities
+  Débloque des capacités de filtrage plus avancées
 
-- [User rules](/adguard-mini-for-mac/features/rules.md)
+- [Règles utilisateur](/adguard-mini-for-mac/features/rules.md)
 
   Règles de filtrage personnalisées pour affiner le blocage de publicité
 
-- [Settings](/adguard-mini-for-mac/features/settings/settings.md)
+- [Paramètres](/adguard-mini-for-mac/features/settings/settings.md)
 
-  Various options that help you configure the app and filtering
+  Diverses options vous permettant de configurer l'application et le filtrage
 
-- [Support](/adguard-mini-for-mac/features/support.md)
+- [Assistance](/adguard-mini-for-mac/features/support.md)
 
-  Helpful options for when you have a question or encountered a problem
+  Des options utiles lorsque vous avez une question ou rencontrez un problème
 
-- [About](/adguard-mini-for-mac/features/about.md)
+- [À propos](/adguard-mini-for-mac/features/about.md)
 
-  Info about the app’s current version and a list of helpful links
+  Informations sur la version actuelle de l'application et liste de liens utiles
 
-- [Safari toolbar menu](/adguard-mini-for-mac/features/toolbar-menu.md)
+- [Menu de la barre d'outils Safari](/adguard-mini-for-mac/features/toolbar-menu.md)
 
-  A handy menu in the Safari toolbar
+  Un menu pratique dans la barre d'outils Safari
 
-- [Full version](/adguard-mini-for-mac/features/full-version.md)
+- [Version complète](/adguard-mini-for-mac/features/full-version.md)
 
-  Advanced features that enhance filtering speed and power
+  Des fonctionnalités avancées qui améliorent la rapidité et la puissance du filtrage

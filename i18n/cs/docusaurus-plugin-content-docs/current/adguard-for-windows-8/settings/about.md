@@ -11,4 +11,4 @@ Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor rekla
 
 ![About](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/about.png)
 
-In addition to information about the current version of the program and used libraries, this screen provides some useful links to License agreement, Privacy policy, acknowledgements, version history, and the main page of our website.
+Kromě informací o aktuální verzi programu a použitých knihovnách obsahuje tato obrazovka také užitečné odkazy na licenční smlouvu, zásady ochrany osobních údajů, poděkování, historii verzí a hlavní stránku našeho webu.

@@ -5,22 +5,22 @@ sidebar_position: 5
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Questo articolo descrive AdGuard per Windows v8.0, un blocca-inserzioni completo che protegge il tuo dispositivo a livello di sistema. Questo è una versione beta ancora in fase di sviluppo. Per provarlo, scarica la [versione beta di AdGuard per Windows](https://agrd.io/windows_beta).
 
 :::
 
-_Browsing security_ offers strong protection against harmful websites and phishing attempts.
+La _Sicurezza di navigazione_ offre una forte protezione contro siti web dannosi e tentativi di phishing.
 
-While AdGuard for Windows is not an antivirus, it does provide essential security by warning you before visiting untrusted sites or downloading potentially dangerous files.
+Sebbene AdGuard per Windows non sia un antivirus, fornisce una sicurezza essenziale avvisandoti prima di visitare siti non attendibili o scaricare file potenzialmente pericolosi.
 
-It won’t stop a virus that is already being downloaded, and it won’t remove existing malware. But it will block access to websites that are marked as unsafe, helping you avoid threats in the first place.
+Non fermerà un virus che è già in fase di scaricamento e non rimuoverà il malware esistente. Ma bloccherà� l'accesso ai siti web contrassegnati come insicuri, aiutandoti a evitare le minacce fin dall'inizio.
 
-For more details about how this protection works, see our article [Phishing and malware protection](/general/browsing-security).
+Per maggiori dettagli su come funziona questa protezione, vedere il nostro articolo [Protezione da phishing e malware](/general/browsing-security).
 
-![Browsing security](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/browsing.png)
+![Sicurezza di navigazione](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/browsing.png)
 
-In the _Browsing security_ section, you can:
+Nella sezione _Sicurezza di navigazione_, puoi:
 
-- turn on notifications about blocked malicious and phishing websites;
-- enable sound alerts;
-- allow anonymous security security-related data to be sent to AdGuard, which helps us keep our database of harmful websites up to date.
+- attivare le notifiche sui siti web dannosi e di phishing bloccati;
+- abilitare gli avvisi sonori;
+- consentire l'invio anonimo di dati relativi alla sicurezza ad AdGuard, che ci aiuta a mantenere aggiornata la nostra banca dati di siti web dannosi.

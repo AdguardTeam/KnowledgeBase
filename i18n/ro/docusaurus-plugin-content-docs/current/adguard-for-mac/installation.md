@@ -78,8 +78,6 @@ Mergeți la secțiunea Aplicații. Găsiți AdGuard acolo, faceți clic dreapta 
 **Folosiți această instrucțiune doar dacă știți ce faceți sau dacă serviciul nostru de suport v-a recomandat în mod specific 'dezinstalarea avansată'. De asemenea, faceți toate etapele din "dezinstalarea regulată" întâi.**
 
 1. După aceea, ștergeți următoarele fișiere AdGuard:
-    - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
-    - ~/Library/Preferences/com.adguard.mac.adguard.plist (fișier)
     - ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (folder)
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (fișier)
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (fișier)
@@ -89,9 +87,6 @@ Mergeți la secțiunea Aplicații. Găsiți AdGuard acolo, faceți clic dreapta 
     Pentru a face acest lucru, deschideți aplicația Terminal, apoi introduceți și executați următoarele comenzi:
 
     ```bash
-    sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
-    rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"
-    rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist
     rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"
     find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete
     sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist

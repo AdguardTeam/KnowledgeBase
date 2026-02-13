@@ -9,22 +9,22 @@ In diesem Artikel geht es um AdGuard Mini für Mac, der nur Ihren Safari-Browser
 
 :::
 
-In some cases, filtering may not work and ads may still be displayed even though AdGuard Mini for Mac and the proper filters are enabled. Dies geschieht in der Regel, wenn bei Filteraktualisierungen aufgrund von Safari-Fehlern ein Problem auftritt.
+In einigen Fällen funktioniert das Filtern möglicherweise nicht und es wird weiterhin Werbung angezeigt, obwohl AdGuard Mini für Mac und die entsprechenden Filter aktiviert sind. Dies geschieht in der Regel, wenn bei Filteraktualisierungen aufgrund von Safari-Fehlern ein Problem auftritt.
 
 ### Behebung
 
 1. Öffnen Sie Safari.
 2. Klicken Sie auf _Safari_ in der linken oberen Ecke des Menüs.
 3. Klicken Sie auf _Einstellungen…_ → _Erweiterungen_.
-4. Clear the checkboxes for AdGuard Mini’s extensions: _Custom_, _General_, _Other_, _Privacy_, _Security_, _Social_, and _AdGuard for Safari_.
-   ![Unchecked extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
+4. Deaktivieren Sie die Kontrollkästchen für die Erweiterungen von AdGuard Mini: _Benutzerdefiniert_, _Allgemein_, _Sonstiges_, _Datenschutz_, _Sicherheit_, _Soziales_ und _AdGuard für Safari_.
+   ![Nicht angekreuzte Erweiterungen](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
 5. Starten Sie Safari neu.
-6. Return to Safari → _Settings..._ → _Extensions_ and re-enable the AdGuard extensions.
-7. Open AdGuard Mini’s menu.
-8. Click _Check for updates_ icon.
-   ![Update button \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/update-button.png)
-9. Do not close the AdGuard Mini window until the filters are updated.
+6. Kehren Sie zurück zu Safari → _Einstellungen…_ → _Erweiterungen_ und aktivieren Sie die AdGuard-Erweiterungen erneut.
+7. Öffnen Sie das Menü von AdGuard Mini.
+8. Klicken Sie auf das Symbol _Nach Updates suchen_.
+   ![Update-Button \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/update-button.png)
+9. Schließen Sie das Fenster des AdGuard Mini erst, wenn die Filter aktualisiert wurden.
 
-If this doesn’t help and ads are still not being blocked, please contact our support at [support@adguard.com](mailto:support@adguard.com).
+Wenn dies nicht hilft und die Werbung immer noch nicht blockiert wird, wenden Sie sich bitte an unseren Support unter [support@adguard.com](mailto:support@adguard.com).
 
-If you only have problems with a specific page or website, you can report it directly from the browser: click the AdGuard Mini icon next to the Safari search bar and then click _Report an issue_.
+Wenn Sie nur Probleme mit einer bestimmten Seite oder Website haben, können Sie dies direkt über den Browser melden: Klicken Sie auf das AdGuard Mini-Symbol neben der Safari-Suchleiste und dann auf _Problem melden_.

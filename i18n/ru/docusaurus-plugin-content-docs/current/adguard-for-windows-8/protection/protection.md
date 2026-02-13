@@ -5,24 +5,24 @@ sidebar_position: 1
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+В этой статье описывается AdGuard для Windows v8.0 — комплексный блокировщик рекламы, который защищает ваше устройство на системном уровне. Это бета-релиз, который ещё находится в стадии разработки. Чтобы начать им пользоваться, скачайте [бета-версию AdGuard для Windows](https://agrd.io/windows_beta).
 
 :::
 
-![Protection tab](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/protection_section.png)
+![Защита](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/protection_section.png)
 
-The _Protection_ tab contains all key security and filtering settings. Here you can control _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS filtering_, _Browsing security_, _Parental control_, and _Extensions_. You can also manage AdGuard Assistant here — a tool that lets you control its functionality without opening the app. Each of these features is described in a separate article.
+Вкладка «Защита» содержит все ключевые настройки безопасности и фильтрации. Here you can control _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Browsing security_, _Parental control_, and _Extensions_. Здесь же вы можете настроить Помощник AdGuard — инструмент, которым можно управлять без открытия приложения. Каждая из этих функций описана в отдельной статье.
 
-[Ad blocking](/adguard-for-windows-8/protection/ad-blocking)
+[Блокировка рекламы](/adguard-for-windows-8/protection/ad-blocking)
 
-[Tracking protection](/adguard-for-windows-8/protection/tracking-protection)
+[Защита от трекинга](/adguard-for-windows-8/protection/tracking-protection)
 
-[Annoyance blocking](/adguard-for-windows-8/protection/annoyance-blocking)
+[Блокировка раздражителей](/adguard-for-windows-8/protection/annoyance-blocking)
 
-[DNS protection](/adguard-for-windows-8/protection/dns-protection)
+[DNS-защита](/adguard-for-windows-8/protection/dns-protection)
 
-[Browsing security](/adguard-for-windows-8/protection/browsing-security)
+[Защита от фишинга](/adguard-for-windows-8/protection/browsing-security)
 
-[Parental control](/adguard-for-windows-8/protection/parental-control)
+[Родительский контроль](/adguard-for-windows-8/protection/parental-control)
 
-[Extensions](/adguard-for-windows-8/protection/extensions)
+[Расширения](/adguard-for-windows-8/protection/extensions)

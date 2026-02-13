@@ -1,36 +1,36 @@
 ---
-title: Features
+title: Функции
 sidebar_position: 1
 ---
 
-- [Safari protection](/adguard-mini-for-mac/features/safari-protection.md)
+- [Защита Safari](/adguard-mini-for-mac/features/safari-protection.md)
 
-  Core filtering feature with customizable options
+  Основная функция фильтрации с настраиваемыми параметрами
 
-- [Advanced blocking](/adguard-mini-for-mac/features/advanced-blocking.md)
+- [Расширенная блокировка](/adguard-mini-for-mac/features/advanced-blocking.md)
 
-  Unlocks stronger filtering capabilities
+  Открывает доступ к более мощным возможностям фильтрации
 
-- [User rules](/adguard-mini-for-mac/features/rules.md)
+- [Пользовательские правила](/adguard-mini-for-mac/features/rules.md)
 
   Пользовательские правила фильтрации для настройки блокировки рекламы
 
-- [Settings](/adguard-mini-for-mac/features/settings/settings.md)
+- [Настройки](/adguard-mini-for-mac/features/settings/settings.md)
 
-  Various options that help you configure the app and filtering
+  Различные опции, которые помогут настроить приложение и фильтрацию
 
-- [Support](/adguard-mini-for-mac/features/support.md)
+- [Поддержка](/adguard-mini-for-mac/features/support.md)
 
-  Helpful options for when you have a question or encountered a problem
+  Полезные опции на случай, если у вас возник вопрос или проблема
 
-- [About](/adguard-mini-for-mac/features/about.md)
+- [О программе](/adguard-mini-for-mac/features/about.md)
 
-  Info about the app’s current version and a list of helpful links
+  Текущая версия приложения и список полезных ссылок
 
-- [Safari toolbar menu](/adguard-mini-for-mac/features/toolbar-menu.md)
+- [Панель инструментов Safari](/adguard-mini-for-mac/features/toolbar-menu.md)
 
-  A handy menu in the Safari toolbar
+  Удобное меню на панели инструментов Safari
 
-- [Full version](/adguard-mini-for-mac/features/full-version.md)
+- [Полная версия](/adguard-mini-for-mac/features/full-version.md)
 
-  Advanced features that enhance filtering speed and power
+  Расширенные функции, повышающие скорость и мощность фильтрации

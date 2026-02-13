@@ -1,20 +1,20 @@
 ---
-title: Full version
+title: Version complète
 sidebar_position: 9
 ---
 
-AdGuard Mini for Mac’s full version unlocks advanced features that provide extra filtering speed and power.
+La version complète de AdGuard Mini pour Mac débloque des fonctionnalités avancées qui offrent une vitesse et une puissance de filtrage supplémentaires.
 
-To activate it, you can use a regular AdGuard license, which is obtainable [on our website](https://adguard.com/license.html) or through in-app purchase. You can also use the 14-day trial to test the features beforehand.
+Pour l'activer, vous pouvez utiliser une licence AdGuard ordinaire, qui est disponible [sur notre site Web](https://adguard.com/license.html) ou via un achat intégré dans l'application. Vous pouvez également utiliser la période d'essai de 14 jours pour tester les fonctionnalités au préalable.
 
 ### AdGuard Extra
 
-AdGuard Extra is an advanced script that handles complex ads, mostly on social media and online video platforms. It also shuts down ad blocking circumvention technologies such as ad re-insertion.
+AdGuard Extra est un script avancé qui gère des publicités complexes, principalement sur les réseaux sociaux et les plateformes vidéo en ligne. Il bloque également les technologies de contournement du blocage des publicités, telles que la réinsertion publicitaire.
 
 ![AdGuard Extra](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/advanced-blocking.png)
 
-### Real-time filter updates
+### Mises à jour du filtre en temps réel
 
-Receive filter updates as soon as there is a new rule or a fix. This ensures that your filters are always up-to-date and no ad slips through.
+Recevez les mises à jour des filtres dès qu'une nouvelle règle ou un correctif est disponible. Cela garantit que vos filtres sont toujours à jour et qu'aucune publicité ne passe entre les mailles du filet.
 
-![Real-time updates](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/real-time-updates.png)
+![Mises à jour en temps réel](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/real-time-updates.png)

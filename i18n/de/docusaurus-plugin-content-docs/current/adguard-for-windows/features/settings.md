@@ -83,7 +83,7 @@ Starting with v7.20, you can also add filters by simply selecting them from a li
 
 ![DNS filters \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
 
-### Parental control
+### Kindersicherung
 
 There are several websites to which access should be restricted from a PC used by children. This task is accomplished by _Parental control_.
 

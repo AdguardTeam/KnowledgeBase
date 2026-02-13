@@ -3,31 +3,31 @@ title: Extensions Safari
 sidebar_position: 3
 ---
 
-![Extensions tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/extensions.png)
+![Onglet extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/extensions.png)
 
-Safari extensions are mechanisms that allow implementing content blockers — thematic clusters of filters. For example, privacy-related filters are included in the content blocker with the corresponding name — _AdGuard Privacy_.
+Les extensions Safari sont des mécanismes qui autorisent la mise en œuvre de bloqueurs de contenu — des groupes thématiques de filtres. Par exemple, les filtres liés à la confidentialité sont inclus dans le bloqueur de contenu sous le nom correspondant — _AdGuard Confidentialité_.
 
-Content blockers were designed for two reasons: to structure filters and to conform to Apple’s restrictions.
+Les bloqueurs de contenu ont été conçus pour deux raisons : pour structurer les filtres et se conformer aux restrictions d'Apple.
 
-[En 2019](https://adguard.com/en/blog/adguard-safari-1-5.html), Apple a imposé des limites aux bloqueurs de publicités pour Safari, leur permettant d'utiliser simultanément seulement 50 000 règles de filtrage. As this number was not enough for an ad blocker to provide a good filtering quality (_AdGuard Base Filter_ alone has 30,000 filtering rules), we divided AdGuard for Safari into six content blockers each containing up to 50,000 rules.
+[En 2019](https://adguard.com/en/blog/adguard-safari-1-5.html), Apple a imposé des limites aux bloqueurs de publicités pour Safari, leur permettant d'utiliser simultanément seulement 50 000 règles de filtrage. Comme ce nombre n'était pas suffisant pour qu'un bloqueur de publicité fournisse une bonne qualité de filtrage (_Filtre de Base AdGuard_ possède à lui seul 30 000 règles de filtrage), nous avons divisé AdGuard pour Safari en six bloqueurs de contenu contenant chacun jusqu'à 50 000 règles.
 
-[En 2022](https://adguard.com/en/blog/adguard-for-safari-1-11.html), Apple a augmenté la limite des règles de filtrage pour chaque bloqueur de contenu à 150 000 règles appliquées simultanément. Regarding AdGuard Mini for Mac, up to 900,000 rules can be enabled for all six content blockers.
+[En 2022](https://adguard.com/en/blog/adguard-for-safari-1-11.html), Apple a augmenté la limite des règles de filtrage pour chaque bloqueur de contenu à 150 000 règles appliquées simultanément. En ce qui concerne AdGuard Mini pour Mac, jusqu'à 900 000 règles peuvent être activées pour les six bloqueurs de contenu.
 
 Même si la limite a été augmentée, la structure des bloqueurs de contenu est restée la même.
 
-In _Safari extensions_, you can see which content blockers are enabled, how many rules each of them is using, and which filters are functioning.
+Dans les _extensions Safari_, vous pouvez voir quels bloqueurs de contenu sont activés, combien de règles chacun d'eux utilise et quels filtres sont fonctionnels.
 
 :::tip
 
-You can manage enabled filters in _Settings_ → _Filters_. In _Safari extensions_, you can only see the list of enabled filters and the number of enabled rules.
+Vous pouvez gérer les filtres activés dans _Paramètres_ → _Filtres_. Dans les _extensions Safari_, vous ne pouvez voir que la liste des filtres activés et le nombre de règles activées.
 
 :::
 
-## List of AdGuard Mini’s Safari extensions
+## La liste des extensions Safari d'AdGuard Mini
 
 ### AdGuard Général
 
-_AdGuard Général_ est un bloqueur de contenu qui combine les filtres les plus essentiels pour bloquer les publicités. We recommend keeping _AdGuard Base Filter_ always enabled.
+_AdGuard Général_ est un bloqueur de contenu qui combine les filtres les plus essentiels pour bloquer les publicités. Nous vous recommandons de garder le _Filtre de Base AdGuard_ toujours activé.
 
 ### AdGuard Confidentialité
 
@@ -35,7 +35,7 @@ Ce bloqueur de contenu est le principal outil de lutte contre les compteurs et a
 
 ### AdGuard Social
 
-_AdGuard Social_ contient des filtres contre les boutons, widgets, scripts et icônes des réseaux sociaux. Other annoyance filters can also be found in this section: filters against popups, banners, cookie notices, and more. To enable them, find _Social Widgets_ in _Settings_ → _Filters_.
+_AdGuard Social_ contient des filtres contre les boutons, widgets, scripts et icônes des réseaux sociaux. D'autres filtres de nuisances peuvent également être trouvés dans cette section : les filtres contre les pop-ups, les bannières, les notifications de cookies, etc. Pour les activer, recherchez _Widgets sociaux_ dans _Paramètres_ → _Filtres_.
 
 ### AdGuard Sécurité
 
@@ -47,14 +47,14 @@ _AdGuard Autres_ contient des filtres avec des fonctions différentes. Par exemp
 
 :::note Clause de non-responsabilité
 
-We don’t have any “acceptable ads” paid by advertisers. Instead, we provide users with an option to see [search ads and websites’ self-promotion](/general/ad-filtering/search-ads).
+Nous n'avons pas de ”publicités acceptables” payées par les annonceurs. Au lieu de cela, nous offrons aux utilisateurs la possibilité de voir [les annonces de recherche et l’autopromotion des sites Web](/general/ad-filtering/search-ads).
 
 :::
 
 ### AdGuard Personnalisé
 
-![Create custom filter](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/create-custom.png)
+![Créer un filtre personnalisé](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/create-custom.png)
 
-If you need more filters, you can add them to _AdGuard Custom_ extension.
+Si vous avez besoin de plus de filtres, vous pouvez les ajouter à l’extension _AdGuard personnalisé_.
 
-To add a custom filter, go to _Settings_ → _Filters_ → _Custom filters_ and enter a URL or a local file path in the relevant field. Vous pouvez trouver de nouveaux filtres sur [filterlists.com](https://filterlists.com/).
+Pour ajouter un filtre personnalisé, allez dans _Paramètres_ → _Filtres_ → _Filtres personnalisés_ et saisissez une URL ou un chemin de fichier local dans le champ approprié. Vous pouvez trouver de nouveaux filtres sur [filterlists.com](https://filterlists.com/).

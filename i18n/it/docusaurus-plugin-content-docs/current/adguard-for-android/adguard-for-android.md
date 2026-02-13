@@ -9,7 +9,7 @@ Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunziona
 
 :::
 
-## Features
+## Funzioni
 
 Main features and settings available in AdGuard for Android
 
