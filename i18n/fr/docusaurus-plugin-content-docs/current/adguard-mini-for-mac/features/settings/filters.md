@@ -3,22 +3,22 @@ title: Filtres
 sidebar_position: 2
 ---
 
-![Filters tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/filters.png)
+![Onglet Filtres](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/filters.png)
 
-In _Settings_ → _Filters_, you can enable separate filters or whole categories of filters.
+Dans _Paramètres_ → _Filtres_, vous pouvez activer des filtres individuels ou des catégories entières de filtres.
 
-Filters are the backbone of ad blocking and basically it’s what keeps the Internet clean. Un filtre est une liste de règles écrites dans une syntaxe particulière. En suivant ces règles, les bloqueurs de contenu peuvent filtrer le trafic web : ils bloquent les publicités ou les requêtes vers des sites web malveillants.
+Les filtres sont la base du blocage des publicités et, en gros, c’est ce qui maintient l’Internet propre. Un filtre est une liste de règles écrites dans une syntaxe particulière. En suivant ces règles, les bloqueurs de contenu peuvent filtrer le trafic web : ils bloquent les publicités ou les requêtes vers des sites web malveillants.
 
-Filters are combined into eight thematic categories: _Ad Blocking, Privacy, Social widgets, Annoyances, Security, Language-specific filters, Custom,_ and _Other filters_.
+Les filtres sont regroupés en huit catégories thématiques : _Blocage des publicités, Confidentialité, Widgets sociaux, Nuisances, Sécurité, Filtres spécifiques à une langue, Personnalisés_ et _Autres filtres_.
 
 Apprenez plus sur les [Filtres AdGuard](/general/ad-filtering/adguard-filters) ou [le filtrage des publicités en général](/general/ad-filtering/how-ad-blocking-works).
 
-Changes in _Filters_ are also reflected in _Settings_ → _Safari extensions_.
+Les modifications apportées aux _Filtres_ sont également reflétées dans _Paramètres_ → _Extensions Safari_.
 
 ## Filtres personnalisés
 
-![Create custom filter](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/create-custom.png)
+![Créer un filtre personnalisé](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/create-custom.png)
 
-To add a custom filter, go to _Settings_ → _Filters_ → _Custom filters_ and enter a URL or a local file path in the relevant field.
+Pour ajouter un filtre personnalisé, allez dans _Paramètres_ → _Filtres_ → _Filtres personnalisés_ et saisissez une URL ou un chemin de fichier local dans le champ approprié.
 
-You can find a lot of filters at [filterlists.com](https://filterlists.com/).
+Vous trouverez de nombreux filtres sur [filterlists.com](https://filterlists.com/).

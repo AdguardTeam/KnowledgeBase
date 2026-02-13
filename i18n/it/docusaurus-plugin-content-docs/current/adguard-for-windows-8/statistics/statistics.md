@@ -5,31 +5,31 @@ sidebar_position: 1
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Questo articolo descrive AdGuard per Windows v8.0, un blocca-inserzioni completo che protegge il tuo dispositivo a livello di sistema. Questo è una versione beta ancora in fase di sviluppo. Per provarlo, scarica la [versione beta di AdGuard per Windows](https://agrd.io/windows_beta).
 
 :::
 
-In _Statistics_, you see a complete picture of what is happening with the traffic on your computer: how many requests are being sent and to which companies, how much data is being uploaded and downloaded, what requests are being blocked. You can check statistics for various time frames: all time, the last 14 days, the last 7 days, the last 24 hours, and broken down by ads, trackers, or requests.
+Nelle _Statistiche_, vedi un quadro completo di ciò che accade al traffico del tuo computer: quante richieste sono inviate e a quali società, quanti dati sono caricati e scaricati, quali richieste sono bloccate. Puoi controllare le statistiche per vari intervalli di tempo: ogni momento, gli ultimi 14 giorni, gli ultimi 7 giorni, le ultime 24 ore, e suddivise per inserzioni, tracciatori o richieste.
 
-![Customize stats](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/statistics/stats.png)
+![Personalizza statistiche](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/statistics/stats.png)
 
 :::note
 
-All statistics are stored locally on your device. We only calculate how much data is used — we don’t see what websites you visit. You can also turn off statistics if you don’t need them.
+Tutte le statistiche sono memorizzate localmente nel tuo dispositivo. Calcoliamo solo la quantità di dati usata, non vediamo quali siti web visiti. Puoi anche disattivare le statistiche se non ti servono.
 
 :::
 
-_Open Filtering log_ shows the last 10,000 requests processed by AdGuard
+_Apri Registro di filtraggio_ mostra le ultime 10.000 richieste elaborate da AdGuard
 
 ## App
 
 Questa sezione mostra le statistiche per tutte le app installate sul tuo dispositivo. Puoi ordinare le app per numero di annunci o tracciatori bloccati, o secondo il numero delle richieste inviate.
 
-If you click an app, you can see its full stats: the requests it sends and the domains and companies it reaches out to.
+Se clicchi un'app, puoi vederne le statistiche complete: le richieste che invia e i domini e le società ai quali si collega.
 
 ## DNS
 
-This section shows data about the requests handled by DNS protection. You can see the total number of requests sent and how many were blocked by AdGuard
+Questa sezione mostra i dati sulle richieste gestite dalla protezione DNS. Puoi vedere il numero totale di richieste inviate e quante sono state bloccate da AdGuard
 
 ## Società
 
@@ -39,4 +39,4 @@ AdGuard rileva i domini ai quali il tuo dispositivo invia richieste e determina 
 
 ## Uso dei dati
 
-This section shows the amount of downloaded and uploaded data and saved traffic.
+Questa sezione mostra la quantità di dati scaricati e caricati, nonché del traffico salvato.

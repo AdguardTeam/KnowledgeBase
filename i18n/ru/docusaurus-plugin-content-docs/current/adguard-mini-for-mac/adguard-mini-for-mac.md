@@ -1,28 +1,28 @@
 ---
-title: AdGuard Mini for Mac
+title: AdGuard Mini для Mac
 sidebar_position: 1
 ---
 
 :::info
 
-This page is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Эта страница об AdGuard Mini для Mac, который защищает только браузер Safari. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы полностью защитить ваш Mac
 
 :::
 
-AdGuard Mini for Mac (formerly AdGuard for Safari) was designed to conform to Apple’s restrictions for ad blocking browser extensions. Although it can’t be compared to our desktop ad blocking apps, it’s free and can protect you from ads, trackers, phishing, and malicious websites.
+Расширение AdGuard Mini для Mac (ранее известное как AdGuard для Safari) было разработано в соответствии с ограничениями Apple для браузерных расширений, блокирующих рекламу. Хотя он менее мощный, чем десктопные приложения AdGuard, он бесплатен и может защитить вас от рекламы, трекеров, фишинга и вредоносных сайтов.
 
-- [Features](/adguard-mini-for-mac/features/features.md)
+- [Функции](/adguard-mini-for-mac/features/features.md)
 
-  Main features and settings available in AdGuard Mini for Mac
+  Основные функции и настройки, доступные в AdGuard Mini для Mac
 
-- [Installation](/adguard-mini-for-mac/installation.md)
+- [Установка](/adguard-mini-for-mac/installation.md)
 
-  Installation, removal, and system requirements for AdGuard Mini for Mac
+  Установка, удаление и системные требования для AdGuard Mini для Mac
 
-- [Safari extensions](/adguard-mini-for-mac/extensions.md)
+- [Расширения Safari](/adguard-mini-for-mac/extensions.md)
 
-  Mechanisms that enable content blocking and add functionality to the Safari web browser
+  Механизмы, которые включают блокировку контента и добавляют функциональность браузеру Safari
 
-- [Solving problems](/adguard-mini-for-mac/solving-problems/solving-problems.md)
+- [Решение проблем](/adguard-mini-for-mac/solving-problems/solving-problems.md)
 
   Известные проблемы и возможные решения

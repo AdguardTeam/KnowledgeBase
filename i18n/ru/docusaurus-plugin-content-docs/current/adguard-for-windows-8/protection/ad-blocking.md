@@ -5,20 +5,20 @@ sidebar_position: 1
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+В этой статье описывается AdGuard для Windows v8.0 — комплексный блокировщик рекламы, который защищает ваше устройство на системном уровне. Это бета-релиз, который ещё находится в стадии разработки. Чтобы начать им пользоваться, скачайте [бета-версию AdGuard для Windows](https://agrd.io/windows_beta).
 
 :::
 
-The _Ad blocking_ section is responsible for removing ads from the websites you visit and from the apps installed on your device. To filter banners, popups, trackers, and other intrusive elements, AdGuard relies on filters — sets of rules written in a [special syntax](/general/ad-filtering/create-own-filters). If you’d like to learn more about how they work, read our [article about filters](/general/ad-filtering/how-ad-blocking-works).
+Раздел _Блокировка рекламы_ отвечает за удаление рекламы с веб-сайтов, которые вы посещаете, и из приложений, установленных на вашем устройстве. Для фильтрации баннеров, всплывающих окон, трекеров и других навязчивых элементов AdGuard использует фильтры — наборы правил, написанных с использованием [специального синтаксиса](/general/ad-filtering/create-own-filters). Чтобы узнать больше о том, как они работают, прочитайте нашу [статью о фильтрах](/general/ad-filtering/how-ad-blocking-works).
 
-![Ad blocking](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/ad_blocking.png)
+![Блокировка рекламы](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/ad_blocking.png)
 
 Здесь вы можете:
 
-- enable basic protection,
-- block [search ads and self-promotion](/general/ad-filtering/search-ads),
+- включить базовую защиту,
+- заблокировать [поисковую рекламу и саморекламу](/general/ad-filtering/search-ads),
 - отключить рекламу в меню «Пуск» на Windows 11,
-- enable automatic activation of language-specific filters
-- manage user rules.
+- включить автоматическую активацию языковых фильтров,
+- управлять пользовательскими правилами.
 
-You can also open the _Filtering log_ to view all requests made by browsers and apps on your computer. From there, it’s easy to block or unblock any request by creating a custom rule. In the _Filter editor_, you can create, add, and import your own rules and filters.
+Вы также можете открыть _Журнал фильтрации_, чтобы просмотреть все запросы, сделанные браузерами и приложениями на вашем компьютере. В нём вы также можете заблокировать или разблокировать любой запрос, создав пользовательское правило. В _Редакторе фильтров_ вы можете создавать, добавлять и импортировать собственные правила и фильтры.

@@ -3,11 +3,11 @@ title: Меню панели инструментов Safari
 sidebar_position: 8
 ---
 
-![Safari toolbar assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/assistant.png)
+![Помощник панели инструментов Safari](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/assistant.png)
 
 У AdGuard Mini есть удобное меню прямо на панели инструментов Safari. Чтобы открыть его, нажмите на иконку слева от строки поиска.
 
-Here’s what you can do in the toolbar menu:
+Вот что можно сделать в меню панели инструментов:
 
 - **Иконка паузы**
 

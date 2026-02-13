@@ -78,8 +78,6 @@ However, you still can [download an older, compatible version](https://agrd.io/a
 **除非您知道如何操作或有我们技术支持专门为您推荐使用进阶方式卸载应用程序，我们不推荐您使用该方式。 另外，先执行「标准卸载」的所有步骤。**
 
 1. 之后，删除以下 AdGuard 文件：
-    - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard（文件夹）
-    - ~/Library/Preferences/com.adguard.mac.adguard.plist（文件）
     - ~/Library/Group\Containers/TC3Q7MAJXF.com.adguard.mac（文件夹）
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist（文件）
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist（文件）
@@ -89,9 +87,6 @@ However, you still can [download an older, compatible version](https://agrd.io/a
     为了执行上述步骤，请您打开 Terminal 终端，然后输入并执行以下的指令：
 
     ```bash
-    sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
-    rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"
-    rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist
     rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"
     find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete
     sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist

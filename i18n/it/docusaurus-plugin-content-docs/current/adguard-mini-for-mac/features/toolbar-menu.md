@@ -1,36 +1,37 @@
 ---
-title: Safari toolbar menu
+title: Menu della barra degli strumenti di Safari
 sidebar_position: 8
 ---
 
-![Safari toolbar assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/assistant.png)
+![Assistente barra degli strumenti di Safari]
+(https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/assistant.png)
 
-AdGuard Mini has a handy menu right in the Safari toolbar. To open it, click the icon located to the left of the search bar.
+AdGuard Mini ha un menu pratico direttamente nella barra di Safari. Per aprirlo, clicca l'icona situata a sinistra della barra di ricerca.
 
-Here’s what you can do in the toolbar menu:
+Ecco cosa puoi fare nel menu della barra degli strumenti:
 
-- **Pause icon**
+- **Icona di pausa**
 
-  Disables AdGuard Mini
+  Disabilita AdGuard Mini
 
-- **Settings icon**
+- **Icona delle impostazioni**
 
-  Takes you to AdGuard Mini’s _Settings_ screen
+  Ti porta alla schermata _Impostazioni_ di AdGuard Mini
 
-- **Website info**
+- **Informazioni sul sito web**
 
-  Indicates the website you are currently on
+  Indica il sito web su cui ti trovi attualmente
 
-- **Protection**
+- **Protezione**
 
-  Turning it off disables filtering on the website you are currently on. Turning it back on resumes filtering on the website
+  Disattivandola, disabiliti il filtraggio sul sito web su cui ti trovi attualmente. Riattivandola, riattivi il filtraggio sul sito web
 
-- **Block element**
+- **Blocca elemento**
 
-  Lets you manually select and block any element on the page: select the element, adjust the selection frame (if needed), and click the _Block_ button. To unblock an element, go to _Settings_ → _User rules_ and delete or uncheck the corresponding rule
+  Ti consente di selezionare e bloccare ogni elemento sulla pagina: seleziona l'elemento, regola il riquadro di selezione (se necessario) e clicca il pulsante _Blocca_. Per sbloccare un elemento, vai nelle _Impostazioni_ → _Regole utente_ ed elimina o deseleziona la regola corrispondente
 
-  ![Manual blocking](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/manual-blocking.png)
+  ![Bloccaggio manuale](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/manual-blocking.png)
 
-- **Report an issue**
+- **Segnala un problema**
 
-  Takes you to a special form for reporting issues with some information automatically pre-filled
+  Ti porta a un modulo speciale per segnalare problemi con alcune informazioni già precompilate automaticamente

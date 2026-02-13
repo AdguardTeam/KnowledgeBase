@@ -25,36 +25,36 @@ Sie können aktivierte Filter in _Einstellungen_ → _Filter_ verwalten. In _Saf
 
 ## Liste der Safari-Erweiterungen von AdGuard Mini
 
-### AdGuard General (Allgemein)
+### AdGuard Allgemein
 
 _AdGuard Allgemein_ ist ein Inhaltsblocker, der die wichtigsten Filter zum Blockieren von Werbung vereint. Wir empfehlen, den _AdGuard Basisfilter_ immer aktiviert zu lassen.
 
-### AdGuard Privacy (Datenschutz)
+### AdGuard Datenschutz
 
 Dieser Inhaltsblocker ist das Hauptwerkzeug gegen Besucherzähler und andere Webanalysetools. Der _AdGuard Tracking-Schutzfilter_ ist standardmäßig aktiviert.
 
 ### AdGuard Soziales
 
-_AdGuard Soziales_ enthält Filter gegen Social-Media-Schaltflächen, -Widgets, -Skripte und -Symbole. Other annoyance filters can also be found in this section: filters against popups, banners, cookie notices, and more. To enable them, find _Social Widgets_ in _Settings_ → _Filters_.
+_AdGuard Soziales_ enthält Filter gegen Social-Media-Schaltflächen, -Widgets, -Skripte und -Symbole. In diesem Abschnitt finden Sie auch andere Belästigungsfilter: Filter gegen Pop-ups, Banner, Cookie-Hinweise und mehr. Um sie zu aktivieren, suchen Sie _Soziale Widgets_ in _Einstellungen_ → _Filter_.
 
-### AdGuard Security (Sicherheit)
+### AdGuard Sicherheit
 
 Dieser Inhaltsblocker vereint mehrere sicherheitsrelevante Filter. _Malware Domains Blocklist_ blockiert Domains, die für die Verbreitung von Malware und Spyware berüchtigt sind. _Spam404_ schützt Sie vor Internet-Betrügern. Die _NoCoin Filterkiste_ verhindert die Nutzung von browserbasierten Kryptowährungen, wie z.B. Coinhive.
 
-### AdGuard Other (Sonstiges)
+### AdGuard Sonstiges
 
 _AdGuard Sonstiges_ enthält Filter mit verschiedenen Funktionen. So gibt es zum Beispiel einen Filter, der Suchanzeigen und Eigenwerbung freischaltet. In manchen Fällen hilft es, genau das zu finden, wonach man sucht, denn diese Art von Werbung ist relevanter und weniger aufdringlich als andere.
 
 :::note Haftungsausschluss
 
-We don’t have any “acceptable ads” paid by advertisers. Instead, we provide users with an option to see [search ads and websites’ self-promotion](/general/ad-filtering/search-ads).
+Bei uns gibt es keine „akzeptablen Werbung“, die von Werbetreibenden bezahlt wird. Stattdessen bieten wir Ihnen die Möglichkeit, [Werbung in Suchvorgängen und Eigenwerbung der Websites](/general/ad-filtering/search-ads) anzuzeigen.
 
 :::
 
 ### AdGuard Benutzerdefiniert
 
-![Create custom filter](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/create-custom.png)
+![Benutzerdefinierten Filter erstellen](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/create-custom.png)
 
-If you need more filters, you can add them to _AdGuard Custom_ extension.
+Wenn Sie weitere Filter benötigen, können Sie diese zur Erweiterung _AdGuard Benutzerdefiniert_ hinzufügen.
 
-To add a custom filter, go to _Settings_ → _Filters_ → _Custom filters_ and enter a URL or a local file path in the relevant field. Neue Filter finden Sie unter [filterlists.com](https://filterlists.com/).
+Um einen benutzerdefinierten Filter hinzuzufügen, gehen Sie zu _Einstellungen_ → _Filter_ → _Benutzerdefinierte Filter_ und geben Sie eine URL oder einen lokalen Dateipfad in das entsprechende Feld ein. Neue Filter finden Sie unter [filterlists.com](https://filterlists.com/).

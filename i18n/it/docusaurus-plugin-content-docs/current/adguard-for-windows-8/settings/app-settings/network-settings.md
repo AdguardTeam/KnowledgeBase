@@ -5,44 +5,44 @@ sidebar_position: 3
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Questo articolo descrive AdGuard per Windows v8.0, un blocca-inserzioni completo che protegge il tuo dispositivo a livello di sistema. Questo è una versione beta ancora in fase di sviluppo. Per provarlo, scarica la [versione beta di AdGuard per Windows](https://agrd.io/windows_beta).
 
 :::
 
-This section lets you manage how AdGuard filters your Internet traffic and provides additional tools to control network-related features.
+Questa sezione ti permette di gestire come AdGuard filtra il tuo traffico nella rete globale e fornisce strumenti aggiuntivi per il controllo delle funzioni correlate alla rete.
 
-![Network settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
+![Impostazioni rete dedicata](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
 
-## Use AdGuard as an HTTP proxy
+## Usa AdGuard come proxy HTTP
 
-Enable this option to make AdGuard work as an HTTP proxy. All traffic passing through it will be filtered — not only on your computer but also on other devices in your home network.
+Abilita questa opzione per far funzionare AdGuard come proxy HTTP. Tutto il traffico che lo attraversa sarà filtrato — non solo nel tuo computer, ma anche in altri dispositivi della tua rete dedicata domestica.
 
-To filter traffic on other devices, install AdGuard’s root certificate on them and set up the proxy manually.
+Per filtrare il traffico in altri dispositivi, installa il certificato root di AdGuard in essi e appronta manualmente il proxy.
 
-Other settings are enabled by default.
+Altre impostazioni sono abilitate per impostazione prescelta.
 
 ## Filtraggio HTTPS
 
-Most websites use HTTPS encryption today. Without HTTPS filtering, AdGuard cannot block ads on websites like YouTube, Facebook, or X (Twitter).
+Oggi la maggior parte dei siti web usa la crittografia HTTPS. Senza il filtraggio HTTPS, AdGuard non può bloccare le inserzioni in siti web come YouTube, Facebook o X (Twitter).
 
-We recommend keeping the _Filter HTTPS_ option turned on unless you have a specific reason to turn it off.
+Si consiglia di mantenere l'opzione _Filtra HTTPS_ attivata a meno che non si abbia una ragione specifica per disattivarla.
 
-With this option, you can:
+Con questa opzione, puoi:
 
-- Reinstall or download the AdGuard certificate
+- Reinstallare o scarica il certificato di AdGuard
 
-- Add websites to a list that won’t be filtered
+- Aggiungere siti web a una lista che non sarà filtrata
 
-- Choose whether to filter websites with EV (Extended Validation) certificates
+- Scegliere se filtrare i siti web con certificati EV (Extended Validation)
 
-## Proxy for app and filter updates
+## Proxy per aggiornamenti app e filtri
 
-Here you can choose which proxy AdGuard should use to download filter updates or new app versions — the system proxy, a custom proxy, or no proxy at all.
+Qui puoi scegliere quale proxy AdGuard deve usare per scaricare gli aggiornamenti dei filtri o nuove versioni dell'app — il proxy di sistema, un proxy personale o nessun proxy.
 
-![Proxy settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
+![Impostazioni proxy](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
 
-## Use SockFilter driver
+## Usa il driver SockFilter
 
-Enable this option to use the SockFilter driver, which helps block ads and trackers in apps on Windows 8 and later.
+Abilita questa opzione per usare il driver SockFilter, che aiuta a bloccare inserzioni e tracciatori nelle app su Windows 8 e versioni successive.
 
-If this option is disabled, AdGuard will switch to the older WFP driver instead.
+Se questa opzione viene disabilitata, AdGuard passerà al vecchio driver WFP.

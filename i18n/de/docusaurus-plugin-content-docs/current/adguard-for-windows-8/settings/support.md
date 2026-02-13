@@ -5,14 +5,14 @@ sidebar_position: 3
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Dieser Artikel beschreibt AdGuard für Windows v8.0, einen umfassenden Werbeblocker, der Ihr Gerät auf Systemebene schützt. Es handelt sich hierbei um eine Beta-Version, die sich noch in der Entwicklung befindet. Um es auszuprobieren, laden Sie die [Beta-Version von AdGuard für Windows](https://agrd.io/windows_beta) herunter.
 
 :::
 
 ![Support](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/support.png)
 
-Use this section if you have any questions or suggestions about AdGuard for Windows v8.0. We recommend checking the [FAQ](https://adguard.com/support/faq.html) and this Knowledge base before contacting support.
+Verwenden Sie diesen Abschnitt, wenn Sie Fragen oder Anregungen zu AdGuard für Windows v8.0 haben. Wir empfehlen Ihnen, die [FAQ](https://adguard.com/support/faq.html) und diese Wissensdatenbank zu konsultieren, bevor Sie sich an den Support wenden.
 
-If you notice a missed ad, please let us know using _Report incorrect blocking_.
+Wenn Sie eine übersehene Werbung bemerken, teilen Sie uns dies bitte über _Fehlerhaftes Sperren melden_ mit.
 
-You can also join our social channels to discuss AdGuard with other users, or reach out to us on GitHub to suggest new features or report bugs.
+Unsere sozialen Kanäle bieten Austausch über AdGuard, GitHub dient zur Meldung von Fehlern und Vorschlägen für neue Funktionen.

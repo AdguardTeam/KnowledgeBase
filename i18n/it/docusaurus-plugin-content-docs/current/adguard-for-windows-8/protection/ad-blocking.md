@@ -1,24 +1,24 @@
 ---
-title: Ad blocking
+title: Blocco inserzioni
 sidebar_position: 1
 ---
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Questo articolo descrive AdGuard per Windows v8.0, un blocca-inserzioni completo che protegge il tuo dispositivo a livello di sistema. Questo è una versione beta ancora in fase di sviluppo. Per provarlo, scarica la [versione beta di AdGuard per Windows](https://agrd.io/windows_beta).
 
 :::
 
-The _Ad blocking_ section is responsible for removing ads from the websites you visit and from the apps installed on your device. To filter banners, popups, trackers, and other intrusive elements, AdGuard relies on filters — sets of rules written in a [special syntax](/general/ad-filtering/create-own-filters). If you’d like to learn more about how they work, read our [article about filters](/general/ad-filtering/how-ad-blocking-works).
+La sezione _Blocco inserzioni_ è responsabile di rimuovere le inserzioni dai siti web che visiti e dalle app installate nel tuo dispositivo. Per filtrare striscioni, comparse, tracciatori e altri elementi intrusivi, AdGuard si affida a filtri — insiemi di regole scritte in una [sintassi speciale](/general/ad-filtering/create-own-filters). Se vuoi scoprire di più su come funzionano, leggi il nostro [articolo sui filtri](/general/ad-filtering/how-ad-blocking-works).
 
-![Ad blocking](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/ad_blocking.png)
+![Blocco inserzioni](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/ad_blocking.png)
 
 Qui puoi:
 
-- enable basic protection,
-- block [search ads and self-promotion](/general/ad-filtering/search-ads),
+- abilitare la protezione di base,
+- bloccare [inserzioni di ricerca e auto-promozioni](/general/ad-filtering/search-ads),
 - disabilitare gli annunci nel menu Start su Windows 11,
-- enable automatic activation of language-specific filters
-- manage user rules.
+- abilitare l'attivazione automatica dei filtri specifici per lingua
+- gestire regole utente.
 
-You can also open the _Filtering log_ to view all requests made by browsers and apps on your computer. From there, it’s easy to block or unblock any request by creating a custom rule. In the _Filter editor_, you can create, add, and import your own rules and filters.
+Puoi anche aprire il _Registro di filtraggio_ per visualizzare tutte le richieste effettuate dai browser e dalle app sul tuo computer. Da lì, è facile bloccare o sbloccare qualunque richiesta creando una regola personale. Nell'_Editor filtri_, puoi creare, aggiungere e importare le tue regole e i tuoi filtri.
