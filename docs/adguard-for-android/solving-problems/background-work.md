@@ -466,7 +466,7 @@ Other solutions:
 - Enable AdGuard in the app list inside the security app’s “startup manager” and “floating app list” (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
 - Turn off battery optimizations
 
-## OnePlus
+## OnePlus with OxygenOS
 
 Devices with OxygenOS on board are the most problematic, with its OS-specific cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the AdGuard's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps.
 
@@ -523,6 +523,27 @@ For OnePlus below 6:
 Normally when you swipe an app away, it won’t close. On OnePlus this may however work in a different way. Recent app clear behaviour manager might be set up in a way that swiping the app to close will kill it. To return it to the “normal” mode:
 
 Go to **Settings** → **Advanced** → **Recent app management** → Switch to **Normal clear**
+
+## OnePlus with ColorOS
+
+On devices running ColorOS, the system may aggressively restrict background processes. To ensure AdGuard works properly in the background, configure the following settings:
+
+- Battery → Battery mode → High performance mode
+
+![High performance mode *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/high_performance_mode.jpg)
+
+- Apps → App management → AdGuard → Battery usage → Allow background activity
+
+![Allow background activity *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/allow_background_activity.jpg)
+
+- Apps → Auto launch → enable the switch for AdGuard
+
+![Auto launch *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/auto_launch.jpg)
+
+- Lock AdGuard in the Recent apps menu:
+
+- Open the Recent apps screen
+- Swipe the AdGuard app card down to lock it in memory
 
 ## Sony
 
