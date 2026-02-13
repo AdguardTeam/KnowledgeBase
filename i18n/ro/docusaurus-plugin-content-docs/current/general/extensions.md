@@ -75,7 +75,7 @@ To try it out:
 
 #### tinyShield
 
-Un userscript pentru persoanele care vizitează site-uri coreene și unele site-uri internaționale. The tinyShield userscript blocks Ad-Shield ads and anti-adblocks. Acest userscript poate fi instalat în aplicațiile bazate pe AdGuard CoreLibs, Violentmonkey, Tampermonkey și [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about tinyShield and how to install it on [GitHub](https://github.com/List-KR/tinyShield).
+Un userscript pentru persoanele care vizitează site-uri coreene și unele site-uri internaționale. The tinyShield userscript blocks Ad-Shield ads and anti-adblocks. Acest userscript poate fi instalat în aplicațiile bazate pe AdGuard CoreLibs, Violentmonkey, Tampermonkey și [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about tinyShield and how to install it on [GitHub](https://github.com/FilteringDev/tinyShield).
 
 ### De unde puteți obține mai multe userscripts?{#more-userscripts}
 

@@ -75,7 +75,7 @@ To try it out:
 
 #### tinyShield
 
-一个适用于访问韩国网站和一些国际网站的用户脚本。 tinyShield 用户脚本可以屏蔽 Ad-Shield 广告和反广告拦截功能。 这个用户脚本可以安装在基于 AdGuard CoreLibs 的应用程序、Violentmonkey、Tampermonkey 以及 [quoid/userscripts](https://github.com/quoid/userscripts) 中。 了解更多关于 tinyShield 的信息以及如何在 [GitHub](https://github.com/List-KR/tinyShield) 上安装它。
+一个适用于访问韩国网站和一些国际网站的用户脚本。 tinyShield 用户脚本可以屏蔽 Ad-Shield 广告和反广告拦截功能。 这个用户脚本可以安装在基于 AdGuard CoreLibs 的应用程序、Violentmonkey、Tampermonkey 以及 [quoid/userscripts](https://github.com/quoid/userscripts) 中。 了解更多关于 tinyShield 的信息以及如何在 [GitHub](https://github.com/FilteringDev/tinyShield) 上安装它。
 
 ### 在哪里查看更多自定义脚本{#more-userscripts}
 
