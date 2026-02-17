@@ -587,9 +587,7 @@ despite the pattern `||*page` may match specific domains.
 
 :::caution Limitations
 
-In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries are not supported.
-
-`$domain` compatibility with `$removeparam` rules is restricted in the MV3 extension.
+In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries and the `$removeparam` modifier are not supported.
 
 AdGuard for iOS and AdGuard for Safari support the `$domain` modifier but have some limitations.
 For more details, see the [SafariConverterLib section](#safari-converter--basic--supported-with-limitations).
@@ -2811,7 +2809,7 @@ With these rules, specified UTM parameters will be removed from any request save
 
 1. Rules with the `$removeparam` modifier can only be used [**in trusted filters**](#trusted-filters).
 1. `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers), [content-type modifiers](#content-type-modifiers), and with the `$important` and `$app` modifiers. Rules with any other modifiers are considered invalid and will be discarded.
-1. Although `$domain` is classified as a basic modifier, its compatibility with `$removeparam` rules in Manifest V3 comes with restrictions. [More information](#domain-modifier-limitations).
+1. Although `$domain` is classified as a basic modifier, it's not compatible with `$removeparam` rules in the Manifest V3 extension.
 1. `$removeparam` rules without [content type modifiers](#content-type-modifiers) will only match requests where the content type is `document`.
 
 :::
