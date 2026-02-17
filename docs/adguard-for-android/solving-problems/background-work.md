@@ -506,7 +506,7 @@ On some OnePlus phones there is also a thing called App Auto-Launch and Deep Opt
 
 #### App Auto-Launch
 
-App Auto-Launch (on some OnePlus phones) essentially prevents apps from working in the background. Please disable it for AdGuard.
+App Auto-Launch (on some OnePlus phones) essentially prevents apps from working in the background. Please enable it for AdGuard.
 
 #### Enhanced / Advanced optimization
 
@@ -530,11 +530,11 @@ Go to **Settings** → **Advanced** → **Recent app management** → Switch to 
 
 On devices running ColorOS, the system may aggressively restrict background processes as well. To ensure AdGuard works properly in the background, configure the following settings:
 
-- Go to **Battery → Battery mode** → **High performance mode**
+- Open **System settings** → **Battery → Battery mode** and select **High performance mode**
 
 ![High performance mode *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/high_performance_mode.jpg)
 
-- **Apps → App management → AdGuard → Battery usage → Allow background activity**
+- Go to **Apps → App management → AdGuard → Battery usage** and select **Allow background activity**
 
 ![Allow background activity *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/allow_background_activity.jpg)
 
