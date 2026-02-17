@@ -5,66 +5,72 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+这篇文章是关于 Mac 版的 AdGuard Mini，用于 Safari 浏览器的保护。 To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## 系统要求
 
-Requires macOS 12 or later.
+要求 macOS 12 或更高版本。
 
-## How to install AdGuard Mini for Mac
+## 如何安装 AdGuard Mini Mac版
 
-AdGuard Mini for Mac is a free app present in the Mac App Store. To install it on your Mac, do the following:
+AdGuard Mini Mac版是 App Store 中的一款免费应用程序。 要在 Mac 上安装它，请执行以下操作：
 
-1. Open the App Store and find _AdGuard Mini_ app there.
+1. 打开 App Store，找到「_AdGuard Mini_」应用程序。
 
-   ![AdGuard Mini in App Store](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-in-app-store.png)
+   ![App Store 中的 AdGuard Mini](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-in-app-store.png)
 
-2. Press _Get_ → _Install_ → _Open_.
+2. 按下「_获取_」→「_安装_」→「_打开_」。
 
-3. In the opened AdGuard Mini window, accept EULA and Privacy policy and click _Continue_.
+3. 在打开的 AdGuard Mini 窗口中，请接受使用许可协议和隐私政策。 您还可以选择通过发送匿名使用数据来帮助我们改进扩展程序。 然后点击「_继续_」。
 
-   ![Onboarding](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/first-open.png)
+   ![开始使用](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/first-open.png)
 
-4. Click _Open settings_.
+   :::note
 
-   ![Open settings](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/open-settings.png)
+   如果您选择与 AdGuard 共享应用使用数据，扩展程序将收集匿名化信息，例如界面交互行为与会话标识符。 此同意为自愿选项，您可随时撤回授权。 所有收集的数据均已完全匿名，仅限内部使用，绝不会与第三方共享。
 
-5. Check the checkboxes for all seven AdGuard extensions.
+   :::
 
-   ![Checked extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/check-extensions.png)
+4. 点击「_打开_」设置。
 
-6. To allow AdGuard Mini to work on all websites, click the _AdGuard for Safari_ extension and then _Always Allow on Every Website..._.
+   ![打开设置](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/open-settings.png)
 
-   ![Always allow button](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/always-allow-button.png)
+5. 选中七个 AdGuard 扩展的复选框。
 
-7. In the notification that appears, click _Always Allow on Every Website..._ again.
+   ![选中扩展](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/check-extensions.png)
 
-   ![Always allow notification](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/always-allow.png)
+6. 要允许 AdGuard Mini 在所有网站上工作，点击「_AdGuard for Safari_」扩展，然后选择「_在所有网站上始终允许_」。
 
-After you complete these steps, AdGuard Mini for Mac will start functioning in Safari.
+   ![始终允许按钮](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/always-allow-button.png)
 
-## How to uninstall AdGuard Mini for Mac
+7. 在出现的通知中，再次点击「_在所有网站上始终允许_」。
 
-To uninstall AdGuard Mini for Mac, do the following:
+   ![始终允许通知](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/always-allow.png)
+
+完成上述步骤后，适用于 Mac 的 AdGuard Mini 将开始在 Safari 中正常运行。
+
+## 如何卸载 AdGuard Mini Mac版
+
+要卸载 Mac 版 AdGuard Mini，请执行以下操作：
 
 1. 退出应用程序。
 
 2. 点击左上角菜单中的「_Safari_」。
 
-3. 单击「_设置…_」→「_扩展_」。 You will see a list of extensions, AdGuard Mini has seven.
+3. 单击「_设置…_」→「_扩展_」。 您将看到一个扩展列表，AdGuard Mini 有七个扩展。
 
-4. Uncheck all checkboxes and press _Uninstall_ below any of them.
+4. 取消选中所有复选框，然后按「_卸载_」。
 
-   ![Unchecked extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
+   ![加载扩展](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
 
-5. In the notification that appears, press _Show in Finder_.
+5. 在出现的通知中，按「_显示在 Finder 中_」。
 
-   ![Uninstall notification](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/show-in-finder.png)
+   ![卸载通知](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/show-in-finder.png)
 
-6. Right-click _AdGuard Mini_ and choose _Move to trash_.
+6. 右键点击「_AdGuard Mini_」，然后选择「_移到废纸篓_」。
 
-   ![Move to trash](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/move-to-trash.png)
+   ![移到废纸篓](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/move-to-trash.png)
 
-   AdGuard Mini for Mac will be removed from your device.
+   AdGuard Mini Mac 版将从您的设备中删除。

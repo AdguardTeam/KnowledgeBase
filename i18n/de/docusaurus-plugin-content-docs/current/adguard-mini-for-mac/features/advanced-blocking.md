@@ -1,16 +1,16 @@
 ---
-title: Advanced blocking
+title: Erweiterte Werbeblockierung
 sidebar_position: 3
 ---
 
-![Advanced blocking](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/advanced-blocking.png)
+![Erweiterte Blockierung](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/advanced-blocking.png)
 
-_Advanced blocking_ is optional, but when enabled it unlocks stronger filtering: for example, it lets us apply extended rules to block tough cases such as some YouTube ads. You decide whether to grant Safari the extra permissions and whether you want that extra power.
+_Erweiterte Werbeblockierung_ ist optional, aber wenn aktiviert, ermöglicht es eine stärkere Filterung: Zum Beispiel können wir erweiterte Regeln übernehmen, um schwierige Fälle wie einige YouTube-Werbungen zu blockieren. Sie entscheiden selbst, ob Sie Safari die zusätzlichen Berechtigungen erteilen und ob Sie diese zusätzliche Kontrolle wünschen.
 
-Here you can turn on the _AdGuard Extra_ userscript — if there’s a website where ads just won’t go, like Facebook or YouTube.
+Hier können Sie das Benutzerskript _AdGuard Extra_ aktivieren — falls es eine Website gibt, auf der Werbung einfach nicht verschwindet, wie Facebook oder YouTube.
 
 :::note
 
-_AdGuard Extra_ is a feature of the [full version](/adguard-mini-for-mac/features/full-version.md).
+_AdGuard Extra_ ist eine Funktion der [Vollversion](/adguard-mini-for-mac/features/full-version.md).
 
 :::

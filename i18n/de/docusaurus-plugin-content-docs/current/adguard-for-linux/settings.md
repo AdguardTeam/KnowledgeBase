@@ -87,12 +87,12 @@ Verwenden Sie den Befehl `config`, um AdGuard für Linux zu konfigurieren. Unter
 
 :::note
 
-The Automatic mode can only be used if the following requirements are met:
+Der Automatikmodus kann nur verwendet werden, wenn folgende Voraussetzungen erfüllt sind:
 
-- `iptables` is installed and running (either `nft` or `legacy`)
-- `iptables` supports the `nat` table for both IPv4 and IPv6
-- `iptables` supports the `REDIRECT` and `QUEUE` chains for both IPv4 and IPv6
-- The `sudo` package is installed
+- `iptables` ist installiert und wird ausgeführt (entweder `nft` oder `legacy`)
+- `iptables` unterstützt die `nat`-Tabelle sowohl für IPv4 als auch für IPv6
+- `iptables` unterstützt die `REDIRECT`- und `QUEUE`-Ketten sowohl für IPv4 als auch für IPv6
+- Das Paket `sudo` wurde installiert
 
 :::
 
@@ -131,15 +131,15 @@ Wenn die Lauschadresse auf einen anderen Wert als `127.0.0.1` eingestellt ist, i
 - Wenn Sie `adguard-cli config set listen_address <address>` ausführen, wobei `<address>` nicht `127.0.0.1` ist, wird AdGuard CLI nach einem Benutzernamen und Passwort fragen, wenn die Proxy-Authentifizierung nicht bereits konfiguriert ist.
 - Wenn Sie die Konfigurationsdatei direkt bearbeiten, suchen Sie nach dem Schlüssel `listen_auth`. Setzen Sie den Unterschlüssel `enabled` auf `true` und geben Sie Werte für `username` und `password` ein.
 
-## Configure outbound proxy
+## Ausgehenden Proxy konfigurieren
 
-You can configure `outbound_proxy` if you want AdGuard CLI to work through another proxy server.
+Sie können `outbound_proxy` konfigurieren, wenn Sie möchten, dass AdGuard CLI einen anderen Proxy-Server verwendet.
 
-There are two ways to configure it:
+Es gibt zwei Möglichkeiten, dies zu konfigurieren:
 
-### 1. Configure via URL (recommended)
+### 1. Über URL konfigurieren (empfohlen)
 
-Instead of setting each option step by step, you can set all parameters in a single line using a URL:
+Anstatt jede Option Schritt für Schritt festzulegen, können Sie alle Parameter in einer einzigen Zeile mithilfe einer URL festlegen:
 
 ```sh
 adguard-cli config set outbound_proxy https://user:pass@host:port
@@ -147,25 +147,25 @@ adguard-cli config set outbound_proxy https://user:pass@host:port
 
 :::info
 
-Supported modes are HTTP, HTTPS, SOCKS4, and SOCKS5.
+Unterstützte Modi sind HTTP, HTTPS, SOCKS4 und SOCKS5.
 
 :::
 
-You can also quickly enable or disable `outbound_proxy`:
+Sie können `outbound_proxy` auch schnell aktivieren oder deaktivieren:
 
 ```sh
 adguard-cli config set outbound_proxy false
 ```
 
-Or quickly clear the settings:
+Oder löschen Sie schnell die Einstellungen:
 
 ```sh
 adguard-cli config set outbound_proxy ""
 ```
 
-### 2. Configure individual parameters
+### 2. Eigene Parameter festlegen
 
-The ability to adjust specific parameters is also available:
+Die Möglichkeit, bestimmte Parameter anzupassen, ist ebenfalls verfügbar:
 
 ```sh
 adguard-cli config set outbound_proxy.enabled true
@@ -175,13 +175,13 @@ adguard-cli config set outbound_proxy.username user
 adguard-cli config set outbound_proxy.password pass
 ```
 
-Disable certificate verification for HTTPS proxies:
+Zertifikatsüberprüfung für HTTPS-Proxys deaktivieren:
 
 ```sh
 adguard-cli config set outbound_proxy.trust_any_certificate true
 ```
 
-Enable SOCKS5 proxy for UDP traffic:
+SOCKS5-Proxy für UDP-Datenverkehr aktivieren:
 
 ```sh
 adguard-cli config set outbound_proxy.udp_through_socks5_enabled true
@@ -189,21 +189,21 @@ adguard-cli config set outbound_proxy.udp_through_socks5_enabled true
 
 :::note
 
-If your SOCKS5 proxy does not support UDP, connections may fail.
+Wenn Ihr SOCKS5-Proxy UDP nicht unterstützt, können Verbindungen fehlschlagen.
 
 :::
 
-## Per-app AdGuard CLI configuration
+## AdGuard CLI-Konfiguration pro App
 
-Users often need to enable filtering manually for certain browsers. AdGuard for Linux supports **per-app configuration**, allowing you to apply settings or rules individually to each application instead of system-wide.
+Benutzer müssen das Filtern für bestimmte Browser oft manuell aktivieren. AdGuard für Linux unterstützt die **Konfiguration pro App**, sodass Sie Einstellungen oder Regeln individuell für jede Anwendung anwenden können, anstatt sie systemweit zu übernehmen.
 
-For details, refer to the `apps` section in `proxy.yaml`.
+Weitere Informationen finden Sie im Abschnitt `apps` in `proxy.yaml`.
 
-A set of pre-configured entries for popular web browsers is included by default in `browsers.yaml`.
+Eine Reihe vorkonfigurierter Einträge für gängige Webbrowser ist standardmäßig in `browsers.yaml` enthalten.
 
-### Checking the current configuration
+### Überprüfung der aktuellen Konfiguration
 
-To view the current `outbound_proxy` configuration, enter:
+Um die aktuelle Konfiguration von `outbound_proxy` anzuzeigen, geben Sie Folgendes ein:
 
 ```sh
 adguard-cli config show outbound_proxy
@@ -211,6 +211,40 @@ adguard-cli config show outbound_proxy
 
 :::info Kompatibilität
 
-Configuring `outbound_proxy` via URL is available starting from AdGuard for Linux v1.1.26 nightly and v1.1 stable release.
+Die Konfiguration von `outbound_proxy` über URL ist ab AdGuard für Linux v1.1.26 Nightly und v1.1 Stable Release verfügbar.
 
 :::
+
+## Einstellungen exportieren und importieren
+
+Mit der Export-/Importfunktion können Sie Ihre AdGuard-CLI-Konfiguration sichern und auf demselben oder einem anderen System wiederherstellen. Dazu gehören Filter, Proxy-Einstellungen und andere Konfigurationseistellungen.
+
+### Einstellungen exportieren
+
+Um die aktuellen AdGuard-CLI-Einstellungen in ein ZIP-Archiv zu exportieren, verwenden Sie:
+
+```sh
+adguard-cli export-settings
+```
+
+Sie können den Ausgabepfad mit dem Parameter `-o` oder `--output` angeben. Dies kann entweder ein bestimmter Dateipfad oder ein Ordner sein:
+
+```sh
+# Export to a specific file
+adguard-cli export-settings -o "/path/to/settings.zip"
+
+# Export to a directory (archive will be created with a standard name)
+adguard-cli export-settings -o "/path/to/directory"
+```
+
+Wenn kein Ausgabepfad angegeben ist, werden die Einstellungen unter einem Standardnamen in das Arbeitsverzeichnis exportiert. Nach erfolgreichem Export zeigt der Befehl den vollständigen Pfad an, in dem das Archiv erstellt wurde.
+
+### Einstellungen importieren
+
+Um AdGuard CLI-Einstellungen aus einem ZIP-Archiv zu importieren, verwenden Sie:
+
+```sh
+adguard-cli import-settings -i "/path/to/settings.zip"
+```
+
+Die Option `-i` oder `--input` ist erforderlich und gibt den Pfad zum zu importierenden Archiv mit den Einstellungen an.

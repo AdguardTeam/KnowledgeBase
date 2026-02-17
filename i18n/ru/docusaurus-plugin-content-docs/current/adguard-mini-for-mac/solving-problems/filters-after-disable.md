@@ -1,24 +1,24 @@
 ---
-title: Filtering doesn’t stop when AdGuard Mini is disabled
+title: Фильтрация не прекращается, когда AdGuard Mini отключён
 sidebar_position: 3
 ---
 
 :::info
 
-This article is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Эта статья об AdGuard Mini для Mac, которое защищает только браузер Safari. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы полностью защитить ваш Mac
 
 :::
 
-If filtering doesn’t stop when AdGuard Mini for Mac is disabled, it may be because content blockers take too long to update.
+Если фильтрация не прекращается, даже если AdGuard Mini отключён, это может быть связано с тем, что блокировщики контента слишком долго обновляются.
 
 ## Как исправить
 
 1. Откройте Safari.
 2. Нажмите _Safari_ в левом верхнем углу меню.
 3. Нажмите _Настройки…_ → _Расширения_.
-4. Clear the checkboxes for AdGuard Mini’s extensions: _Custom_, _General_, _Other_, _Privacy_, _Security_, _Social_, and _AdGuard for Safari_.
-   ![Unchecked extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
+4. Уберите галочки с расширений AdGuard Mini: _Пользовательские_, _Основные_, _Другие_, _Конфиденциальность_, _Безопасность_, _Виджеты соцсетей_ и _AdGuard для Safari_.
+   ![Неотмеченные расширения](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
 5. Перезапустите Safari.
-6. Return to Safari → _Settings..._ → _Extensions_ and re-enable the AdGuard extensions.
+6. Вернитесь в Safari → _Настройки..._ → _Расширения_ и снова включите расширения AdGuard.
 
-Now everything should work as intended: filtering is on when AdGuard Mini is enabled, and filtering is off when it is disabled.
+Теперь всё будет как надо: фильтрация работает при включённом AdGuard Mini и не работает при выключенном.

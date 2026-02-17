@@ -3,24 +3,24 @@ title: Supporto
 sidebar_position: 6
 ---
 
-![Support tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/support.png)
+![Assistenza](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/support.png)
 
-_Support_ section has helpful options in case you have a question or encounter a problem:
+La sezione _Assistenza_ offre opzioni utili in caso tu abbia una domanda o un problema:
 
 - FAQ
 
-  Answers to a lot of questions and problems can be found here
+  Qui puoi trovare le risposte a molte domande e problemi
 
 - Segnalare blocco non corretto
 
-  Takes you to the page where you can report a bug or a problem in details
+  Ti porta alla pagina dove puoi segnalare un bug o un problema in dettaglio
 
-- Contact support
+- Contatta l'assistenza
 
-  Contact our support team directly from the app, allowing you to attach logs and app info
+  Contatta il nostro gruppo di assistenza direttamente dall'app, consentendoti di allegare file di registri e informazioni sull'app
 
-  ![Contact support screen](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/contact-support.png)
+  ![Schermata contatta assistenza](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/contact-support.png)
 
 - Discuti
 
-  Takes you to a page where you can find links to AdGuard’s social media and GitHub
+  Ti porta a una pagina dove puoi trovare link ai social media e a GitHub di AdGuard

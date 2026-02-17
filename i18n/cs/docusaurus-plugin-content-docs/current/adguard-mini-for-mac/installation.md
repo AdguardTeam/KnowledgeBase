@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Tento článek je o AdGuardu Mini pro Mac, který chrání pouze váš prohlížeč Safari. Chcete-li zcela ochránit svůj Mac, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -23,9 +23,15 @@ AdGuard Mini for Mac is a free app present in the Mac App Store. To install it o
 
 2. Press _Get_ → _Install_ → _Open_.
 
-3. In the opened AdGuard Mini window, accept EULA and Privacy policy and click _Continue_.
+3. In the opened AdGuard Mini window, accept EULA and Privacy policy. Here you can also choose to help us improve the extension by sending anonymized usage data. Then click _Continue_.
 
    ![Onboarding](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/first-open.png)
+
+   Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
+
+   If you choose to share app usage data with AdGuard, the extension will collect anonymized information such as UI interactions and session identifiers. This consent is optional and can be withdrawn at any time. All collected data is fully anonymized, used only internally, and never shared with third parties.
+
+   :::
 
 4. Click _Open settings_.
 

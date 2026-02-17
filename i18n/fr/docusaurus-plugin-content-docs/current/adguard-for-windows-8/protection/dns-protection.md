@@ -5,44 +5,44 @@ sidebar_position: 4
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Cet article décrit AdGuard pour Windows v8.0, un bloqueur de publicité complet qui protège votre appareil au niveau du système. Il s'agit d'une version bêta encore en développement. Pour l'essayer, téléchargez la [version bêta d'AdGuard pour Windows](https://agrd.io/windows_beta).
 
 :::
 
-DNS protection gives you more control over how your device connects to the Internet. There are three main reasons why it can be useful:
+La protection DNS vous offre un meilleur contrôle sur la façon dont votre appareil se connecte à Internet. Il y a trois raisons principales pour lesquelles cela peut être utile :
 
-## 1. Protect your privacy from your ISP
+## 1. Pour protéger votre vie privée contre votre FAI
 
-Every time you open a website, for example `google.com`, your browser sends a request to a DNS server to get the IP address of the website in return. Usually, the DNS server belongs to your ISP, which means they can track the websites you visit. If you switch to another DNS server, such as AdGuard DNS, your ISP no longer sees your online activity.
+Chaque fois que vous ouvrez un site web, par exemple `google.com`, votre navigateur envoie une requête à un serveur DNS pour obtenir en retour l'adresse IP du site web. En général, le serveur DNS appartient à votre fournisseur d'accès Internet, ce qui signifie qu'il peut suivre les sites web que vous consultez. Si vous changez de serveur DNS, comme AdGuard DNS, votre FAI ne voit plus votre activité en ligne.
 
-## 2. Encrypt your DNS traffic
+## 2. Pour chiffrer votre trafic DNS
 
-Modern protocols like DNS-over-TLS and DNS-over-HTTPS ensure that your DNS requests are encrypted. This protects them from being intercepted, modified, or spied on by attackers.
+Les protocoles modernes comme DNS-over-TLS et DNS-over-HTTPS garantissent le chiffrement de vos requêtes DNS. Cela les protège contre l'interception, la modification ou l'espionnage par des attaquants.
 
-## 3. Block unwanted content at the DNS level
+## 3. Pour bloquer les contenus indésirables au niveau du DNS
 
-DNS protection can filter out ads, trackers, phishing websites, and other harmful or annoying content before it even loads in your browser or apps. [Learn more about DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/)
+La protection DNS peut filtrer les publicités, les traqueurs, les sites web d'hameçonnage et autres contenus nuisibles ou gênants avant même leur chargement dans votre navigateur ou vos applications. [Apprenez plus sur le filtrage DNS](https://adguard-dns.io/kb/general/dns-filtering/)
 
-![DNS protection](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns.png)
+![Protection DNS](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns.png)
 
-Here’s what you can configure in DNS protection:
+Voici ce que vous pouvez configurer dans la protection DNS :
 
-## Choose a DNS server
+## Choisissez un serveur DNS
 
-![DNS servers](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_server.png)
+![Serveurs DNS](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_server.png)
 
-You can select from multiple trusted DNS providers. AdGuard itself offers several options for different needs:
+Vous pouvez choisir parmi plusieurs fournisseurs DNS fiables. AdGuard propose plusieurs options pour répondre à différents besoins :
 
-- AdGuard DNS — blocks ads and trackers.
+- AdGuard DNS — bloque les publicités et les traqueurs.
 
-- AdGuard DNS Family Protection — blocks ads, trackers, and adult content.
+- AdGuard DNS Protection Familiale — bloque les publicités, les traqueurs et le contenu pour adultes.
 
-- AdGuard DNS Non-filtering — provides a secure and reliable connection without any filtering.
+- AdGuard DNS Sans filtrage — offre une connexion sécurisée et fiable sans aucun filtrage.
 
-You can use one of our public servers, add your own custom DNS server, or pick another trusted option from our [list of trusted DNS providers](https://adguard-dns.io/kb/general/dns-providers/).
+Vous pouvez utiliser l'un de nos serveurs publics, ajouter votre propre serveur DNS personnalisé ou choisir une autre option de confiance dans notre [liste de fournisseurs DNS de confiance](https://adguard-dns.io/kb/general/dns-providers/).
 
-## Add DNS filters and rules
+## Ajout des filtres et des règles DNS
 
-To fine-tune protection, you can create your own DNS filters using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/) or import ready-made [DNS filters](https://filterlists.com).
+Pour affiner la protection, vous pouvez créer vos propres filtres DNS en utilisant la [syntaxe des règles DNS](https://adguard-dns.io/kb/general/dns-filtering-syntax/) ou importer des [filtres DNS](https://filterlists.com) prêts à l'emploi.
 
-In addition, you can create custom DNS rules to block, unblock, or redirect domains as needed. Use our built-in rule constructor.
+De plus, vous pouvez créer des règles DNS personnalisées pour bloquer, débloquer ou rediriger des domaines selon vos besoins. Utilisez notre constructeur de règles intégré.
