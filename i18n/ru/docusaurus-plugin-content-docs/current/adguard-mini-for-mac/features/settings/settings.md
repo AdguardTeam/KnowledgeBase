@@ -3,18 +3,18 @@ title: Настройки
 sidebar_position: 5
 ---
 
-![Settings tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings.png)
+![Вкладка Настройки](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings.png)
 
-In _Settings_, you can set up basic things like filters, filter updates, launching AdGuard at system startup, and so on. You can also choose whether to show the AdGuard icon in the menu bar.
+В _Настройках_ можно задать основные параметры, такие как фильтры, обновление фильтров и запуск AdGuard при запуске системы. Вы также можете выбрать, показывать ли иконку AdGuard в строке меню.
 
-The main two sections are:
+Основные два раздела:
 
-- [Filters](/adguard-mini-for-mac/features/settings/filters.md)
+- [Фильтры](/adguard-mini-for-mac/features/settings/filters.md)
 
-  Different filters that allow you to customize your ad blocking experience
+  Разные фильтры, которые позволяют настраивать блокировку рекламы
 
-- [Safari extensions](/adguard-mini-for-mac/features/settings/safari-extensions.md)
+- [Расширения Safari](/adguard-mini-for-mac/features/settings/safari-extensions.md)
 
-  Info on the current state of content blockers — how many rules and filters are enabled for each of them
+  Информация о текущем состоянии блокировщиков контента — сколько правил и фильтров включено для каждого из них
 
-At the bottom of the _Settings_ screen, you can find options that come in handy when communicating with our support team: _Debug logging_ and _Export logs_.
+В нижней части экрана _Настройки_ вы найдёте полезные настройки для общения с командой поддержки: _Подробное логирование_ и _Экспортировать логи_.

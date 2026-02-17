@@ -49,7 +49,7 @@ Es sollte **nicht** breitflächig auf Endbenutzergeräte übernommen werden. **F
 
 :::
 
-#### Using .reg files
+#### Verwendung von .REG-Dateien
 
 Sie können die erforderlichen Registry-Änderungen automatisch anwenden, indem Sie eine der unten stehenden, vorab generierten .reg-Dateien verwenden. Jede Datei deaktiviert das Sandboxen von AppContainer/Network Service für einen bestimmten Chromium-basierten Browser:
 
@@ -60,16 +60,16 @@ Sie können die erforderlichen Registry-Änderungen automatisch anwenden, indem 
 - [Vivaldi.reg herunterladen](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Vivaldi.reg)
 - [YandexBrowser.reg herunterladen](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_YandexBrowser.reg)
 
-You can revert these changes using the undo .reg files provided below. These files remove the registry branches that were added by the direct version:
+Sie können diese Änderungen mit den nachfolgend bereitgestellten .REG-Dateien widerrufen. Diese Dateien entfernen die Registry-Zweige, die von der direkten Version hinzugefügt wurden:
 
-- [Undo Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chrome.reg)
-- [Undo Chromium.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chromium.reg)
-- [Undo Edge.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Edge.reg)
-- [Undo Brave.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Brave.reg)
-- [Undo Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Vivaldi.reg)
-- [Undo YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_YandexBrowser.reg)
+- [Chrome.reg widerrufen](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chrome.reg)
+- [Chromium.reg widerrufen](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chromium.reg)
+- [Edge.reg widerrufen](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Edge.reg)
+- [Brave.reg widerrufen](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Brave.reg)
+- [Vivaldi.reg widerrufen](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Vivaldi.reg)
+- [YandexBrowser.reg widerrufen](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_YandexBrowser.reg)
 
-#### Explicit registry editing
+#### Direkte Bearbeitung der Registry
 
 Wenn Ihr Browser nicht aufgeführt ist, befolgen Sie die unten stehenden Anweisungen aus der Anleitung, um die erforderlichen Einträge zu erstellen:
 

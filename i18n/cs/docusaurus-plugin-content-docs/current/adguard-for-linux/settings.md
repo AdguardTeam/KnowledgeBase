@@ -214,3 +214,37 @@ adguard-cli config show outbound_proxy
 Nastavení `outbound_proxy` přes URL je dostupné od AdGuardu pro Linux verze 1.1.26 nightly a hlavní verze 1.1.
 
 :::
+
+## Nastavení exportu a importu
+
+Funkce exportu/importu vám umožňuje zálohovat konfiguraci AdGuard CLI a obnovit ji na stejném nebo jiném systému. To zahrnuje filtry, nastavení proxy a další možnosti konfigurace.
+
+### Export nastavení
+
+Chcete-li exportovat aktuální nastavení AdGuard CLI do archivu ZIP, použijte:
+
+```sh
+adguard-cli export-settings
+```
+
+Výstupní cestu můžete zadat pomocí příznaku `-o` nebo `--output`. Může se jednat buď o konkrétní cestu k souboru, nebo o adresář:
+
+```sh
+# Export to a specific file
+adguard-cli export-settings -o "/path/to/settings.zip"
+
+# Export to a directory (archive will be created with a standard name)
+adguard-cli export-settings -o "/path/to/directory"
+```
+
+Pokud není zadána žádná výstupní cesta, nastavení se exportuje do pracovního adresáře se standardním názvem. Po úspěšném exportu příkaz zobrazí úplnou cestu, kde byl archiv vytvořen.
+
+### Import nastavení
+
+Chcete-li importovat nastavení AdGuard CLI ze ZIP archivu, použijte:
+
+```sh
+adguard-cli import-settings -i "/path/to/settings.zip"
+```
+
+Příznak `-i` nebo `--input` je povinný a určuje cestu k archivu nastavení, který se má importovat.

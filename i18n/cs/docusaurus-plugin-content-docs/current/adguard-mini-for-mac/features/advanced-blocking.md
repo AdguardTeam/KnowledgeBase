@@ -1,16 +1,16 @@
 ---
-title: Advanced blocking
+title: Pokročilé blokování
 sidebar_position: 3
 ---
 
 ![Advanced blocking](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/advanced-blocking.png)
 
-_Advanced blocking_ is optional, but when enabled it unlocks stronger filtering: for example, it lets us apply extended rules to block tough cases such as some YouTube ads. You decide whether to grant Safari the extra permissions and whether you want that extra power.
+_Pokročilé blokování_ je volitelné, ale pokud je povoleno, odemkne silnější filtrování: umožňuje např. použít rozšířená pravidla pro blokování náročných případů, jako jsou některé reklamy na YouTube. Vy rozhodujete, zda Safari udělíte další oprávnění a zda chcete tuto další funkci využívat.
 
-Here you can turn on the _AdGuard Extra_ userscript — if there’s a website where ads just won’t go, like Facebook or YouTube.
+Zde můžete zapnout uživatelský skript _AdGuard Extra_ — pokud je nějaká webová stránka, kde reklamy prostě nezmizí, jako Facebook nebo YouTube.
 
 :::note
 
-_AdGuard Extra_ is a feature of the [full version](/adguard-mini-for-mac/features/full-version.md).
+_AdGuard Extra_ je funkcí [plné verze](/adguard-mini-for-mac/features/full-version.md).
 
 :::

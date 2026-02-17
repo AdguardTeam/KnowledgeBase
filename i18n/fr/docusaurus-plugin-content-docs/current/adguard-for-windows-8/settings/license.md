@@ -5,16 +5,16 @@ sidebar_position: 2
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Cet article décrit AdGuard pour Windows v8.0, un bloqueur de publicité complet qui protège votre appareil au niveau du système. Il s'agit d'une version bêta encore en développement. Pour l'essayer, téléchargez la [version bêta d'AdGuard pour Windows](https://agrd.io/windows_beta).
 
 :::
 
-![License](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/licenses.png)
+![Licence](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/licenses.png)
 
-The _License_ tab provides details about your current license. Ici, vous pouvez :
+L'onglet _Licence_ fournit des détails sur votre licence actuelle. Ici, vous pouvez :
 
-- view the license type, the number of devices available for simultaneous connection to AdGuard, and the activation code;
-- bind your license to an AdGuard account;
-- activate or reset your license;
-- refresh the license status
-- get a trial license to explore paid functions for free.
+- voir le type de licence, le nombre d'appareils disponibles pour une connexion simultanée à AdGuard, et le code d'activation;
+- lier votre licence à un compte AdGuard ;
+- activer ou réinitialiser votre licence ;
+- actualiser l'état de la licence ;
+- obtenir une licence d'essai pour découvrir les fonctions payantes gratuitement.

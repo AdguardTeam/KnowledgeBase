@@ -1,24 +1,24 @@
 ---
-title: Parental control
+title: Родительский контроль
 sidebar_position: 6
 ---
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+В этой статье описывается AdGuard для Windows v8.0 — комплексный блокировщик рекламы, который защищает ваше устройство на системном уровне. Это бета-релиз, который ещё находится в стадии разработки. Чтобы начать им пользоваться, скачайте [бета-версию AdGuard для Windows](https://agrd.io/windows_beta).
 
 :::
 
-There are several websites that children shouldn’t be able to access. _Parental control_ helps you solve this problem.
+Существует ряд сайтов, к которым дети не должны иметь доступа. _Родительский контроль_ помогает решить эту проблему.
 
-![Parental control](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/parental.png)
+![Родительский контроль](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/parental.png)
 
-When _Parental control_ is enabled, AdGuard scans the content of webpages and blocks those that may be harmful or inappropriate for children. This includes adult images and text, crude language, violence, and drug-related content.
+При включённом _Родительском контроле_ AdGuard сканирует содержимое сайтов и блокирует те, которые могут быть вредными или неподходящими для детей. Сюда входят изображения и тексты для взрослых, грубые выражения, насилие и материалы, связанные с наркотиками.
 
-You can also turn on _Safe search_ to remove inappropriate links from search results.
+Вы также можете включить _Безопасный поиск_, чтобы удалить неприемлемые ссылки из результатов поиска.
 
-To prevent children from downloading unwanted programs, enable the _Block downloading exe.files_ option. This option blocks them from downloading and installing software.
+Чтобы предотвратить скачивание нежелательных программ детьми, включите опцию _Блокировать загрузку файлов .exe_. Эта опция блокирует возможность скачивания и устанавки программного обеспечения.
 
-You can manage the _Blocklist_ and the _Allowlist_ to decide which websites should be blocked and which should be allowed.
+Вы можете настроить _Чёрный список_ и _Белый список_, чтобы самостоятельно решить, доступ к каким сайтам стоит заблокировать, а к каким разрешить.
 
-Finally, you can protect these settings with a password and choose which user accounts they apply to.
+Наконец, вы можете защитить эти настройки паролем и выбрать, к каким пользовательским аккаунтам они будут применяться.

@@ -21,10 +21,10 @@ When this option is enabled, AdGuard automatically notices when your browser req
 
 AdGuard comes with four pre-installed userscripts:
 
-- AdGuard Assistent (Beta)
-- AdGuard Extra
-- AdGuard Popup blocker
-- Web of Trust
+- AdGuard Assistant (Beta)
+- AdGuard Extra (Beta)
+- AdGuard Popup blocker (Beta)
+- Web of Trust (Beta)
 
 ### AdGuard Assistant (Beta)
 

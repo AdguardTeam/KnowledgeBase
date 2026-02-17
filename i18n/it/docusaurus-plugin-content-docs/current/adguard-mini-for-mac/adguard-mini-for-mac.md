@@ -1,28 +1,28 @@
 ---
-title: AdGuard Mini for Mac
+title: AdGuard Mini per Mac
 sidebar_position: 1
 ---
 
 :::info
 
-This page is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Questa pagina riguarda AdGuard Mini per Mac, che protegge solo il tuo browser Safari. Per proteggere completamente il tuo Mac, [scarica l'app AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard Mini for Mac (formerly AdGuard for Safari) was designed to conform to Apple’s restrictions for ad blocking browser extensions. Although it can’t be compared to our desktop ad blocking apps, it’s free and can protect you from ads, trackers, phishing, and malicious websites.
+AdGuard Mini per Mac (precedentemente AdGuard per Safari) è stato progettato per conformarsi alle restrizioni Apple per le estensioni per browser di bloccaggio inserzioni. Sebbene non sia comparabile con le nostre app di bloccaggio delle inserzioni per fisso, è gratuita e può proteggerti da inserzioni, tracciatori, phishing e siti web dannosi.
 
-- [Features](/adguard-mini-for-mac/features/features.md)
+- [Funzioni](/adguard-mini-for-mac/features/features.md)
 
-  Main features and settings available in AdGuard Mini for Mac
+  Funzioni principali e impostazioni disponibili in AdGuard Mini per Mac
 
-- [Installation](/adguard-mini-for-mac/installation.md)
+- [Installazione](/adguard-mini-for-mac/installation.md)
 
-  Installation, removal, and system requirements for AdGuard Mini for Mac
+  Installazione, rimozione e requisiti di sistema per AdGuard Mini per Mac
 
-- [Safari extensions](/adguard-mini-for-mac/extensions.md)
+- [Estensioni di Safari](/adguard-mini-for-mac/extensions.md)
 
-  Mechanisms that enable content blocking and add functionality to the Safari web browser
+  Meccanismi che abilitano il bloccaggio dei contenuti e aggiungono funzionalità al browser Safari
 
-- [Solving problems](/adguard-mini-for-mac/solving-problems/solving-problems.md)
+- [Risoluzione problemi](/adguard-mini-for-mac/solving-problems/solving-problems.md)
 
   Problemi noti e possibili soluzioni

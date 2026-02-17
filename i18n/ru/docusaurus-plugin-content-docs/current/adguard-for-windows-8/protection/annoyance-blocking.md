@@ -5,22 +5,22 @@ sidebar_position: 3
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+В этой статье описывается AdGuard для Windows v8.0 — комплексный блокировщик рекламы, который защищает ваше устройство на системном уровне. Это бета-релиз, который ещё находится в стадии разработки. Чтобы начать им пользоваться, скачайте [бета-версию AdGuard для Windows](https://agrd.io/windows_beta).
 
 :::
 
-Annoyance filters are designed to improve website usability by blocking non-advertisement elements that distract from or interfere with site interaction or content consumption. These elements include modal windows, interactive forms, cookie consent notifications and requests, mobile app banners, and various widgets.
+Фильтры раздражителей предназначены для повышения удобства использования сайтов за счёт блокировки не рекламных элементов, которые отвлекают от взаимодействия с сайтом или мешают восприятию контента. Эти элементы включают модальные окна, интерактивные формы, уведомления и запросы на согласие с куки, баннеры мобильных приложений и различные виджеты.
 
-These filters may contain rules that are not suitable for all users. Sometimes it is recommended to disable them. Решения о добавлении правил в этот фильтр принимаются разработчиками фильтров индивидуально для каждого правила.
+Эти фильтры могут содержать правила, которые подходят не всем пользователям. Иногда рекомендуется отключить их. Решения о добавлении правил в этот фильтр принимаются разработчиками фильтров индивидуально для каждого правила.
 
-![Annoyance filters](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
+![Фильтры раздражителей](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
 
-**Block cookie notices** removes cookie consent banners on webpages.
+**Блокировать уведомления о куки** удаляет баннеры с запросами согласия на использование куки на веб-страницах.
 
-**Block mobile app banners** removes banners that promote mobile apps on websites.
+**Блокировать баннеры мобильных приложений** удаляет баннеры, рекламирующие мобильные приложения на веб-сайтах.
 
-**Block other annoyances** removes elements that do not fall under the popular categories of annoyances.
+**Блокировать другие раздражители** удаляет элементы, которые не попадают в популярные категории раздражителей.
 
-**Block popups** removes all kinds of popups that are not necessary for websites’ operation.
+**Блокировать всплывающие окона** удаляет все виды всплывающих окон, которые не нужны для работы сайтов.
 
-**Block widgets** removes online assistants, live support chats, and similar tools.
+**Блокировать виджеты** удаляет онлайн-помощников, чаты поддержки и подобные инструменты.

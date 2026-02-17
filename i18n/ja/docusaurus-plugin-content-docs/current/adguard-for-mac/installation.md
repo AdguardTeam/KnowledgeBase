@@ -76,8 +76,6 @@ However, you still can [download an older, compatible version](https://agrd.io/a
 **※この手順は、技術的なことが分かる場合、またはAdGuardサポートに「アドバンスドアンインストール」を案内された場合にのみ使用してください。 また、最初に「通常のアンインストール」手順のステップをすべて行ってください。**
 
 1. 次に、以下のAdGuardファイルを削除してください:
-    - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (フォルダ)
-    - ~/Library/Preferences/com.adguard.mac.adguard.plist (ファイル)
     - ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (フォルダ)
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (ファイル)
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (ファイル)
@@ -87,9 +85,6 @@ However, you still can [download an older, compatible version](https://agrd.io/a
     これらのファイルを削除するには、Terminalアプリを開き、以下のコマンドを入力して実行してください:
 
     ```bash
-    sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
-    rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"
-    rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist
     rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"
     find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete
     sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist

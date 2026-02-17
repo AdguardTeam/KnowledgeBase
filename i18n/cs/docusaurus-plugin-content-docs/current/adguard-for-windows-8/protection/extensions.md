@@ -9,43 +9,43 @@ Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor rekla
 
 :::
 
-AdGuard can extend website functionality by acting as a [userscript manager](/general/extensions.md). This allows you to add your own scripts as well as manage existing ones.
+AdGuard může rozšířit funkčnost webových stránek tím, že funguje jako [správce uživatelských skriptů](/general/extensions.md). To vám umožňuje přidávat vlastní skripty a spravovat ty stávající.
 
 ![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
 
-## Automatically detect userscripts
+## Automatické rozpoznání uživatelských skriptů
 
-When this option is enabled, AdGuard automatically notices when your browser requests a userscript and offers to install it. If you prefer, you can also download and install userscripts manually.
+Když je tato možnost zapnutá, AdGuard automaticky zjistí, když váš prohlížeč požádá o uživatelský skript a nabídne jeho instalaci. Pokud chcete, můžete si uživatelské skripty také stáhnout a nainstalovat ručně.
 
-## Pre-installed userscripts
+## Předinstalované uživatelské skripty
 
-AdGuard comes with four pre-installed userscripts:
+AdGuard obsahuje čtyři předinstalované uživatelské skripty:
 
-- AdGuard Assistent (Beta)
-- AdGuard Extra
+- Asistent AdGuard (Beta)
+- AdGuard Extra (Beta)
 - AdGuard Popup blocker
 - Web of Trust
 
-### AdGuard Assistant (Beta)
+### Asistent AdGuard (Beta)
 
-AdGuard Assistant is the legacy version of Assistant, which you can use if the [new Assistant](/adguard-for-windows/browser-assistant.md) is not available for your browser. As the name suggests, it helps you manage basic AdGuard settings directly from your browser without opening the app.
+Asistent AdGuard je starší verze asistenta, kterou můžete použít, pokud [nový asistent](/adguard-for-windows/browser-assistant.md) není pro váš prohlížeč k dispozici. Jak název napovídá, pomáhá vám spravovat základní nastavení AdGuardu přímo z vašeho prohlížeče, aniž byste museli otevírat aplikaci.
 
-AdGuard Assistant works with all browsers compatible with Microsoft Windows. It will not appear on websites excluded from filtering or on certain pages where it could cause display issues.
+Asistent AdGuard funguje se všemi prohlížeči kompatibilními s Microsoft Windows. Nebude se zobrazovat na webových stránkách vyloučených z filtrování ani na určitých stránkách, kde by mohlo dojít k problémům se zobrazením.
 
 ### AdGuard Extra
 
-AdGuard Extra is a custom extension created to fight ad-blocker circumvention and ad reinjection methods used by websites. Such techniques are becoming more common as advertisers try to bypass ad blockers.
+AdGuard Extra je vlastní rozšíření vytvořené za účelem boje proti obcházení blokování reklam a metodám opětovného vkládání reklam používaným webovými stránkami. Tyto techniky se stávají stále běžnějšími, protože inzerenti se snaží obejít blokátory reklam.
 
-AdGuard Extra works by modifying the way pages are loaded, making it more difficult for websites to bypass ad blockers using these advanced methods.
+AdGuard Extra funguje tak, že mění způsob načítání stránek, čímž webovým stránkám ztěžuje obcházení blokování reklam pomocí těchto pokročilých metod.
 
 ### AdGuard Popup Blocker (Beta)
 
-This extension stops unwanted pop-up windows from opening while you browse. Some popups can be useful — for example, settings for website management or extra reference information that appears after clicking a link. If needed, you can turn off the Popup Blocker.
+Toto rozšíření zabraňuje otevírání nežádoucích vyskakovacích oken při prohlížení. Některá vyskakovací okna mohou být užitečná — například nastavení pro správu webových stránek nebo doplňkové referenční informace, které se zobrazí po kliknutí na odkaz. V případě potřeby můžete blokování vyskakovacích oken vypnout.
 
-This extension does not work on the allowlisted websites.
+Toto rozšíření nefunguje na webových stránkách zařazených na seznam povolených.
 
 ### Web of Trust (Beta)
 
-Web of Trust lets you see the reputation of websites based on user ratings. Websites are reviewed according to several criteria, including trust and security.
+Web of Trust umožňuje zobrazit reputaci webových stránek na základě hodnocení uživatelů. Webové stránky jsou posuzovány podle několika kritérií, včetně důvěryhodnosti a bezpečnosti.
 
-This extension is off by default. Keep in mind that it is developed by a third party, not AdGuard.
+Toto rozšíření je ve výchozím nastavení vypnuto. Mějte na paměti, že je vyvinut třetí stranou, nikoli AdGuardem.

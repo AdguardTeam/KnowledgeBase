@@ -1,24 +1,24 @@
 ---
-title: Filtering doesn’t stop when AdGuard Mini is disabled
+title: Filtrování se nezastaví, když je AdGuard Mini deaktivován
 sidebar_position: 3
 ---
 
 :::info
 
-This article is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Tento článek je o AdGuardu Mini pro Mac, který chrání pouze váš prohlížeč Safari. Chcete-li zcela ochránit svůj Mac, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-If filtering doesn’t stop when AdGuard Mini for Mac is disabled, it may be because content blockers take too long to update.
+Pokud se filtrování po vypnutí AdGuardu Mini pro Mac nezastaví, může to být způsobeno tím, že blokátorům obsahu trvá příliš dlouho, než se aktualizují.
 
 ## Jak to opravit
 
 1. Otevřete Safari.
 2. Klikněte na _Safari_ v nabídce v levém horním rohu.
 3. Klikněte na _Nastavení…_ → _Rozšíření_.
-4. Clear the checkboxes for AdGuard Mini’s extensions: _Custom_, _General_, _Other_, _Privacy_, _Security_, _Social_, and _AdGuard for Safari_.
+4. Zrušte zaškrtnutí políček u rozšíření AdGuard Mini: _Vlastní_, _Obecné_, _Jiné_, _Soukromí_, _Zabezpečení_, _Sociální sítě_, _AdGuard pro Safari_.
    ![Unchecked extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
 5. Restartujte Safari.
-6. Return to Safari → _Settings..._ → _Extensions_ and re-enable the AdGuard extensions.
+6. Vraťte se do Safari → _Nastavení..._ → _Rozšíření_ a znovu povolte rozšíření AdGuardu.
 
-Now everything should work as intended: filtering is on when AdGuard Mini is enabled, and filtering is off when it is disabled.
+Nyní by mělo vše fungovat, jak má: filtrování je zapnuto, když je AdGuard Mini povolen, a filtrování je vypnuto, když je zakázán.

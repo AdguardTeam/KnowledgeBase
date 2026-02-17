@@ -5,47 +5,47 @@ sidebar_position: 7
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+В этой статье описывается AdGuard для Windows v8.0 — комплексный блокировщик рекламы, который защищает ваше устройство на системном уровне. Это бета-релиз, который ещё находится в стадии разработки. Чтобы начать им пользоваться, скачайте [бета-версию AdGuard для Windows](https://agrd.io/windows_beta).
 
 :::
 
-AdGuard can extend website functionality by acting as a [userscript manager](/general/extensions.md). This allows you to add your own scripts as well as manage existing ones.
+AdGuard может расширить функциональность сайта, выступая в роли [менеджера пользовательских скриптов](/general/extensions.md). Это позволяет вам добавлять собственные скрипты, а также управлять существующими.
 
-![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
+![Расширения](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
 
-## Automatically detect userscripts
+## Автоматически определять расширения
 
-When this option is enabled, AdGuard automatically notices when your browser requests a userscript and offers to install it. If you prefer, you can also download and install userscripts manually.
+Если эта опция включена, AdGuard автоматически определяет запрос браузера к пользовательскому скрипту и предлагает его установить. При желании вы также можете загрузить и установить пользовательские скрипты вручную.
 
-## Pre-installed userscripts
+## Предустановленные пользовательские скрипты
 
-AdGuard comes with four pre-installed userscripts:
+В AdGuard предустановлено четыре пользовательских скрипта:
 
-- AdGuard Assistent (Beta)
-- AdGuard Extra
-- AdGuard Popup blocker
-- Web of Trust
+- AdGuard Assistant (Beta)
+- AdGuard Extra (Beta)
+- AdGuard Popup blocker (Beta)
+- Web of Trust (Beta)
 
-### AdGuard Assistant (Beta)
+### Помощник AdGuard (Beta)
 
-AdGuard Assistant is the legacy version of Assistant, which you can use if the [new Assistant](/adguard-for-windows/browser-assistant.md) is not available for your browser. As the name suggests, it helps you manage basic AdGuard settings directly from your browser without opening the app.
+Помощник AdGuard — это устаревшая версия Помощника, который вы можете использовать, если [новый Помощник](/adguard-for-windows/browser-assistant.md) недоступен для вашего браузера. Как следует из названия, он помогает управлять основными настройками AdGuard прямо из браузера без необходимости открывать приложение.
 
-AdGuard Assistant works with all browsers compatible with Microsoft Windows. It will not appear on websites excluded from filtering or on certain pages where it could cause display issues.
+Помощник AdGuard работает со всеми браузерами, совместимыми с Microsoft Windows. Он не будет отображаться на веб-сайтах, исключённых из фильтрации, или на определённых страницах, где это может вызвать проблемы с отображением.
 
 ### AdGuard Extra
 
-AdGuard Extra is a custom extension created to fight ad-blocker circumvention and ad reinjection methods used by websites. Such techniques are becoming more common as advertisers try to bypass ad blockers.
+AdGuard Extra — это специальное расширение, созданное для борьбы с методами обхода блокировщиков рекламы и повторного внедрения рекламы на веб-сайтах. Такие методы становятся всё более распространёнными, поскольку рекламодатели пытаются обойти блокировщики рекламы.
 
-AdGuard Extra works by modifying the way pages are loaded, making it more difficult for websites to bypass ad blockers using these advanced methods.
+Работа AdGuard Extra заключается в изменении способа загрузки страниц. Это затрудняет сайтам обход блокировки рекламы с помощью продвинутых методов.
 
-### AdGuard Popup Blocker (Beta)
+### Блокировщик всплывающей рекламы от AdGuard (Beta)
 
-This extension stops unwanted pop-up windows from opening while you browse. Some popups can be useful — for example, settings for website management or extra reference information that appears after clicking a link. If needed, you can turn off the Popup Blocker.
+Это расширение предотвращает открытие нежелательных всплывающих окон во время просмотра веб-страниц. Некоторые всплывающие окна могут быть полезны — например, настройки управления сайтом или дополнительная справочная информация, которая появляется после перехода по ссылке. При необходимости вы можете отключить Блокировщик всплывающих окон.
 
-This extension does not work on the allowlisted websites.
+Это расширение не работает на сайтах из Белого списка.
 
 ### Web of Trust (Beta)
 
-Web of Trust lets you see the reputation of websites based on user ratings. Websites are reviewed according to several criteria, including trust and security.
+Web of Trust показывает репутацию сайтов на основе оценок пользователей. Сайты проверяются по нескольким критериям, включая доверие и безопасность.
 
-This extension is off by default. Keep in mind that it is developed by a third party, not AdGuard.
+Это расширение по умолчанию выключено. Имейте в виду, что оно разработано сторонней компанией, а не AdGuard.

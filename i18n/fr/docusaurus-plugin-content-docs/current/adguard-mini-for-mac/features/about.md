@@ -3,22 +3,22 @@ title: À propos
 sidebar_position: 7
 ---
 
-![About tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/about.png)
+![Onglet À propos](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/about.png)
 
-On the _About_ tab, you can check:
+Dans l'onglet _À propos_, vous pouvez vérifier :
 
-- Current version of your AdGuard Mini app
-- Current versions of the libraries
+- La version actuelle de votre app AdGuard Mini
+- Les versions actuelles des bibliothèques
 
-You can also find the links to:
+Vous pouvez également trouver les liens vers :
 
-- Our official website
-- EULA and Privacy policy
-- Acknowledgements
+- Notre site Web officiel
+- CLUF et Politique de confidentialité
+- Remerciements
 - Historique des versions
 
 :::note Rappel
 
-AdGuard Mini for Mac can be downloaded for free [from the App Store](https://agrd.io/mini_mac). A detailed setup instruction is available in [this Knowledge Base article](/adguard-mini-for-mac/installation/).
+AdGuard Mini pour Mac peut être téléchargé gratuitement [depuis l'App Store](https://agrd.io/mini_mac). Une instruction de configuration détaillée est disponible dans [cet article de la Base de connaissances](/adguard-mini-for-mac/installation/).
 
 :::

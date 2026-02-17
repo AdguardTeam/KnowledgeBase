@@ -5,47 +5,47 @@ sidebar_position: 7
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Cet article décrit AdGuard pour Windows v8.0, un bloqueur de publicité complet qui protège votre appareil au niveau du système. Il s'agit d'une version bêta encore en développement. Pour l'essayer, téléchargez la [version bêta d'AdGuard pour Windows](https://agrd.io/windows_beta).
 
 :::
 
-AdGuard can extend website functionality by acting as a [userscript manager](/general/extensions.md). This allows you to add your own scripts as well as manage existing ones.
+AdGuard peut accroître les fonctionnalités des sites Web en agissant comme un [gestionnaire de scripts utilisateur](/general/extensions.md). Cela vous permet d'ajouter vos propres scripts ainsi que de gérer ceux existants.
 
 ![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
 
-## Automatically detect userscripts
+## Détection automatique des scripts utilisateur
 
-When this option is enabled, AdGuard automatically notices when your browser requests a userscript and offers to install it. If you prefer, you can also download and install userscripts manually.
+Lorsque cette option est activée, AdGuard détecte automatiquement lorsque votre navigateur demande un script utilisateur et propose de l'installer. Si vous préférez, vous pouvez aussi télécharger et installer manuellement des scripts utilisateur.
 
-## Pre-installed userscripts
+## Scripts utilisateur préinstallés
 
-AdGuard comes with four pre-installed userscripts:
+AdGuard possède quatre userscripts préinstallés :
 
-- AdGuard Assistent (Beta)
-- AdGuard Extra
-- AdGuard Popup blocker
-- Web of Trust
+- AdGuard Assistant (Beta)
+- AdGuard Extra (Beta)
+- AdGuard Popup blocker (Beta)
+- Web of Trust (Beta)
 
-### AdGuard Assistant (Beta)
+### Assistant AdGuard (Bêta)
 
-AdGuard Assistant is the legacy version of Assistant, which you can use if the [new Assistant](/adguard-for-windows/browser-assistant.md) is not available for your browser. As the name suggests, it helps you manage basic AdGuard settings directly from your browser without opening the app.
+AdGuard Assistant est l'ancienne version de l'Assistant, que vous pouvez utiliser si le [nouvel Assistant](/adguard-for-windows/browser-assistant.md) n'est pas disponible pour votre navigateur. Comme son nom l'indique, il vous permet de gérer les paramètres de base d'AdGuard directement depuis votre navigateur sans ouvrir l'application.
 
-AdGuard Assistant works with all browsers compatible with Microsoft Windows. It will not appear on websites excluded from filtering or on certain pages where it could cause display issues.
+L'Assistant AdGuard fonctionne avec tous les navigateurs compatibles avec Microsoft Windows. Il n'apparaîtra pas sur les sites web exclus du filtrage ni sur certaines pages où il pourrait causer des problèmes d'affichage.
 
 ### AdGuard Extra
 
-AdGuard Extra is a custom extension created to fight ad-blocker circumvention and ad reinjection methods used by websites. Such techniques are becoming more common as advertisers try to bypass ad blockers.
+AdGuard Extra est une extension personnalisée créée pour lutter contre le contournement des bloqueurs de publicités et les méthodes de réinjection publicitaire utilisées par les sites Web. De telles techniques deviennent de plus en plus courantes car les annonceurs essaient de contourner les bloqueurs de publicité.
 
-AdGuard Extra works by modifying the way pages are loaded, making it more difficult for websites to bypass ad blockers using these advanced methods.
+AdGuard Extra fonctionne en modifiant la façon dont les pages sont chargées, ce qui rend plus difficile pour les sites Web de contourner les bloqueurs de publicité en utilisant ces méthodes avancées.
 
-### AdGuard Popup Blocker (Beta)
+### Bloqueur de popups AdGuard (Bêta)
 
-This extension stops unwanted pop-up windows from opening while you browse. Some popups can be useful — for example, settings for website management or extra reference information that appears after clicking a link. If needed, you can turn off the Popup Blocker.
+Cette extension empêche l'ouverture de fenêtres pop-up indésirables pendant que vous êtes en ligne. Certains popups peuvent être utiles — par exemple, les paramètres pour la gestion du site Web ou des informations de référence supplémentaires qui apparaissent après avoir cliqué sur un lien. Si nécessaire, vous pouvez désactiver le bloqueur de fenêtres publicitaires.
 
-This extension does not work on the allowlisted websites.
+Cette extension ne fonctionne pas sur les sites Web autorisés.
 
-### Web of Trust (Beta)
+### Web of Trust (Bêta)
 
-Web of Trust lets you see the reputation of websites based on user ratings. Websites are reviewed according to several criteria, including trust and security.
+Web of Trust vous permet de voir la réputation des sites Web basée sur les évaluations des utilisateurs. Les sites Web sont évalués selon plusieurs critères, notamment la confiance et la sécurité.
 
-This extension is off by default. Keep in mind that it is developed by a third party, not AdGuard.
+Cette extension est désactivée par défaut. N'oubliez pas que ce logiciel est développé par un tiers, et non par AdGuard.

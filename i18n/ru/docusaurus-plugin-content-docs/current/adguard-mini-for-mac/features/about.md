@@ -3,22 +3,22 @@ title: О компании
 sidebar_position: 7
 ---
 
-![About tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/about.png)
+![Вкладка О программе](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/about.png)
 
-On the _About_ tab, you can check:
+На вкладке _О программе_ вы можете проверить:
 
-- Current version of your AdGuard Mini app
-- Current versions of the libraries
+- Текущую версию вашего приложения AdGuard Mini
+- Текущие версии библиотек
 
-You can also find the links to:
+Вы также можете найти ссылки на:
 
-- Our official website
-- EULA and Privacy policy
-- Acknowledgements
+- Наш официальный сайт
+- Лицензионное соглашение и Политику конфиденциальности
+- Благодарности
 - История версий
 
 :::note Напоминание
 
-AdGuard Mini for Mac can be downloaded for free [from the App Store](https://agrd.io/mini_mac). A detailed setup instruction is available in [this Knowledge Base article](/adguard-mini-for-mac/installation/).
+AdGuard Mini для Mac можно бесплатно загрузить [из App Store](https://agrd.io/mini_mac). [Подробная инструкция по установке](/adguard-mini-for-mac/installation/).
 
 :::
