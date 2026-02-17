@@ -528,24 +528,24 @@ Go to **Settings** → **Advanced** → **Recent app management** → Switch to 
 
 ### ColorOS
 
-On devices running ColorOS, the system may aggressively restrict background processes. To ensure AdGuard works properly in the background, configure the following settings:
+On devices running ColorOS, the system may aggressively restrict background processes as well. To ensure AdGuard works properly in the background, configure the following settings:
 
-- Battery → Battery mode → High performance mode
+- Go to **Battery → Battery mode** → **High performance mode**
 
 ![High performance mode *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/high_performance_mode.jpg)
 
-- Apps → App management → AdGuard → Battery usage → Allow background activity
+- **Apps → App management → AdGuard → Battery usage → Allow background activity**
 
 ![Allow background activity *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/allow_background_activity.jpg)
 
-- Apps → Auto launch → enable the switch for AdGuard
+- **Apps → Auto launch** → enable the switch for AdGuard
 
 ![Auto launch *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/auto_launch.jpg)
 
-- Lock AdGuard in the Recent apps menu:
+- To lock AdGuard in the **Recent apps** menu:
 
-- Open the Recent apps screen
-- Swipe the AdGuard app card down to lock it in memory
+    - Open the **Recent apps** screen
+    - Swipe the AdGuard app card down to lock it in memory
 
 ## Sony
 
