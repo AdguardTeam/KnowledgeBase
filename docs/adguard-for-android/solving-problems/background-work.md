@@ -466,11 +466,13 @@ Other solutions:
 - Enable AdGuard in the app list inside the security app’s “startup manager” and “floating app list” (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
 - Turn off battery optimizations
 
-## OnePlus with OxygenOS
+## OnePlus
+
+### OxygenOS
 
 Devices with OxygenOS on board are the most problematic, with its OS-specific cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the AdGuard's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps.
 
-### Locking the app
+#### Locking the app
 
 - Go to **Settings**
 
@@ -496,17 +498,17 @@ On some OnePlus phones there is also a thing called App Auto-Launch and Deep Opt
 
 :::
 
-### Battery optimization
+#### Battery optimization
 
 - Open device settings → **Battery** → **Battery optimization** → switch to the **All apps** list (top menu) → choose AdGuard → activate **Don’t optimize**
 
 - Open device settings → **Battery** → **Battery Optimization** → (⁝) three-dot menu → **Advanced Optimization** → Disable Deep Optimization
 
-### App Auto-Launch
+#### App Auto-Launch
 
 App Auto-Launch (on some OnePlus phones) essentially prevents apps from working in the background. Please disable it for AdGuard.
 
-### Enhanced / Advanced optimization
+#### Enhanced / Advanced optimization
 
 For OnePlus 6 and above:
 
@@ -518,13 +520,13 @@ For OnePlus below 6:
 
 - Turn off **System settings** → **Battery** → **Battery optimization** → (⁝) three-dot menu → **Enhanced optimization**.
 
-### Recent apps clearing behaviour
+#### Recent apps clearing behaviour
 
 Normally when you swipe an app away, it won’t close. On OnePlus this may however work in a different way. Recent app clear behaviour manager might be set up in a way that swiping the app to close will kill it. To return it to the “normal” mode:
 
 Go to **Settings** → **Advanced** → **Recent app management** → Switch to **Normal clear**
 
-## OnePlus with ColorOS
+### ColorOS
 
 On devices running ColorOS, the system may aggressively restrict background processes. To ensure AdGuard works properly in the background, configure the following settings:
 
