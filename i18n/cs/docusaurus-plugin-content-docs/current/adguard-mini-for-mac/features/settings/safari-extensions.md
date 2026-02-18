@@ -5,29 +5,29 @@ sidebar_position: 3
 
 ![Extensions tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/extensions.png)
 
-Safari extensions are mechanisms that allow implementing content blockers — thematic clusters of filters. For example, privacy-related filters are included in the content blocker with the corresponding name — _AdGuard Privacy_.
+Rozšíření Safari jsou mechanismy, které umožňují implementovat blokátory obsahu — tématické shluky filtrů. Například filtry související se soukromím jsou zahrnuty v blokátoru obsahu pod odpovídajícím názvem — _AdGuard Privacy_.
 
-Content blockers were designed for two reasons: to structure filters and to conform to Apple’s restrictions.
+Blokátory obsahu byly navrženy ze dvou důvodů: pro strukturování filtrů a pro splnění omezení společnosti Apple.
 
-[V roce 2019](https://adguard.com/en/blog/adguard-safari-1-5.html) společnost Apple omezila blokátory reklam pro Safari tak, že mohou současně používat pouze 50 000 pravidel filtrování. As this number was not enough for an ad blocker to provide a good filtering quality (_AdGuard Base Filter_ alone has 30,000 filtering rules), we divided AdGuard for Safari into six content blockers each containing up to 50,000 rules.
+[V roce 2019](https://adguard.com/en/blog/adguard-safari-1-5.html) společnost Apple omezila blokátory reklam pro Safari tak, že mohou současně používat pouze 50 000 pravidel filtrování. Protože tento počet nestačí k tomu, aby blokátor reklam poskytoval dobrou kvalitu filtrování (samotný _AdGuard Base Filter_ má 30000 pravidel filtrování), rozdělili jsme AdGuard pro Safari do šesti blokátorů obsahu, z nichž každý obsahuje až 50000 pravidel.
 
-[V roce 2022](https://adguard.com/en/blog/adguard-for-safari-1-11.html) společnost Apple zvýšila limit pravidel filtrování pro každý blokátor obsahu na 150 000 současně aplikovaných pravidel. Regarding AdGuard Mini for Mac, up to 900,000 rules can be enabled for all six content blockers.
+[V roce 2022](https://adguard.com/en/blog/adguard-for-safari-1-11.html) společnost Apple zvýšila limit pravidel filtrování pro každý blokátor obsahu na 150 000 současně aplikovaných pravidel. Pokud jde o AdGuard Mini pro Mac, lze povolit až 900 000 pravidel pro všech šest blokátorů obsahu.
 
 Zatímco limit byl zvýšen, struktura blokátorů obsahu zůstala stejná.
 
-In _Safari extensions_, you can see which content blockers are enabled, how many rules each of them is using, and which filters are functioning.
+V _Rozšířeních pro Safari_ můžete vidět, které blokátory obsahu jsou povoleny, kolik pravidel každý z nich používá a které filtrování funguje.
 
 :::tip
 
-You can manage enabled filters in _Settings_ → _Filters_. In _Safari extensions_, you can only see the list of enabled filters and the number of enabled rules.
+Povolené filtry můžete spravovat v _Nastavení_ → _Filtry_. V _Rozšířeních pro Safari_ můžete vidět pouze seznam povolených filtrů a počet povolených pravidel.
 
 :::
 
-## List of AdGuard Mini’s Safari extensions
+## Seznam rozšíření Safari AdGuard Mini
 
 ### AdGuard – General
 
-_AdGuard – General_ je blokátor obsahu, který kombinuje nejdůležitější filtry pro blokování reklam. We recommend keeping _AdGuard Base Filter_ always enabled.
+_AdGuard – General_ je blokátor obsahu, který kombinuje nejdůležitější filtry pro blokování reklam. Doporučujeme ponechat _AdGuard Base Filter_ vždy zapnutý.
 
 ### AdGuard – Privacy
 
@@ -35,7 +35,7 @@ Tento blokátor obsahu je hlavním nástrojem proti čítačům a dalším nást
 
 ### AdGuard – Social
 
-_AdGuard – Social_ obsahuje filtry proti tlačítkům, widgetům, skriptům a ikonám sociálních médií. Other annoyance filters can also be found in this section: filters against popups, banners, cookie notices, and more. To enable them, find _Social Widgets_ in _Settings_ → _Filters_.
+_AdGuard – Social_ obsahuje filtry proti tlačítkům, widgetům, skriptům a ikonám sociálních médií. V této části najdete také další filtry obtěžování: filtry proti vyskakovacím oknům, bannerům, upozorněním na soubory cookies a další. Chcete-li je povolit, najděte _Widgety sociálních sítí_ v _Nastavení_ → _Filtry_.
 
 ### AdGuard – Security
 
@@ -47,7 +47,7 @@ _AdGuard – Other_ obsahuje filtry s různými funkcemi. Má například filtr,
 
 :::note Odmítnutí odpovědnosti
 
-We don’t have any “acceptable ads” paid by advertisers. Instead, we provide users with an option to see [search ads and websites’ self-promotion](/general/ad-filtering/search-ads).
+Nemáme žádné “přijatelné reklamy” placené inzerenty. Místo toho uživatelům poskytujeme možnost vidět [reklamy ve vyhledávání a vlastní propagaci webových stránek](/general/ad-filtering/search-ads).
 
 :::
 
@@ -55,6 +55,6 @@ We don’t have any “acceptable ads” paid by advertisers. Instead, we provid
 
 ![Create custom filter](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/create-custom.png)
 
-If you need more filters, you can add them to _AdGuard Custom_ extension.
+Pokud potřebujete další filtry, můžete je přidat do sekce _AdGuard – Custom_.
 
-To add a custom filter, go to _Settings_ → _Filters_ → _Custom filters_ and enter a URL or a local file path in the relevant field. Nové filtry najdete na [filterlists.com](https://filterlists.com/).
+Chcete-li přidat vlastní filtr, přejděte do _Nastavení_ → _Filtry_ → _Vlastní filtry_ a do příslušného pole zadejte URL nebo cestu k lokálnímu souboru. Nové filtry najdete na [filterlists.com](https://filterlists.com/).

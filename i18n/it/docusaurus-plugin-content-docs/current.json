@@ -84,7 +84,7 @@
     "description": "The label for category Features overview in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Features": {
-    "message": "Features",
+    "message": "Funzioni",
     "description": "The label for category Features in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Content Blockers": {
@@ -104,7 +104,7 @@
     "description": "The label for category AdGuard for Linux in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Windows v8": {
-    "message": "AdGuard for Windows v8",
+    "message": "AdGuard per Windows v8",
     "description": "The label for category AdGuard for Windows v8 in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Settings": {
@@ -112,11 +112,11 @@
     "description": "The label for category Settings in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.App settings": {
-    "message": "App settings",
+    "message": "Impostazioni app",
     "description": "The label for category App settings in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard Mini for Mac": {
-    "message": "AdGuard Mini for Mac",
+    "message": "AdGuard Mini per Mac",
     "description": "The label for category AdGuard Mini for Mac in sidebar tutorialSidebar"
   }
 }

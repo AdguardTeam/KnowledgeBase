@@ -395,9 +395,9 @@ Basically, they just limit the scope of rule application.
 | Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Chrome MV3][ext-mv3] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard Mini for Mac][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [$app](#app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
 | [$domain](#domain-modifier) | ✅ | ✅ | ✅ [*[1]](#domain-modifier-limitations) | ✅ | ✅ [*[1]](#domain-modifier-limitations) | ✅ [*[1]](#domain-modifier-limitations) | ✅ |
-| [$header](#header-modifier) | ✅ | ✅ [*[2]](#header-modifier-limitations)| ❌ | ✅ [*[2]](#header-modifier-limitations) | ❌ | ❌ | ❌ |
+| [$header](#header-modifier) | ✅ | ✅ [*[2]](#header-modifier-limitations)| ✅ [*[2]](#header-modifier-limitations) | ✅ [*[2]](#header-modifier-limitations) | ❌ | ❌ | ❌ |
 | [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$method](#method-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ [*[2]](#method-modifier-limitations) | ✅ [*[2]](#method-modifier-limitations) | ❌ |
@@ -587,7 +587,7 @@ despite the pattern `||*page` may match specific domains.
 
 :::caution Limitations
 
-In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries are not supported.
+In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries and the `$removeparam` modifier are not supported.
 
 AdGuard for iOS and AdGuard for Safari support the `$domain` modifier but have some limitations.
 For more details, see the [SafariConverterLib section](#safari-converter--basic--supported-with-limitations).
@@ -645,12 +645,15 @@ The modifier part, `":" h_value`, may be omitted. In that case, the modifier mat
   [`$script`](#script-modifier) and [`$stylesheet`](#stylesheet-modifier). The rules with other modifiers
   are considered invalid and will be discarded.
 
+1. In AdGuard Browser Extension MV3, regular expressions in the `$header` modifier values are not supported.
+
 :::
 
 :::info Compatibility
 
 Rules with the `$header` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux
-with [CoreLibs] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later.
+with [CoreLibs] v1.11 or later, AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later,
+and AdGuard Browser Extension MV3 v5.3 or later.
 
 :::
 
@@ -2738,6 +2741,7 @@ With these rules, specified UTM parameters will be removed from any request save
 [AdGuard for Chrome MV3][ext-mv3] has some limitations:
 
 - Regular expressions, negation and allowlist rules are not supported.
+- Generic rules are applied before specific rules, and redirection occurs only once. This may prevent subsequent or more specific redirects from applying.
 - Group of similar `$removeparam` rules will be combined into one. Example:
 
     ```bash
@@ -2805,6 +2809,7 @@ With these rules, specified UTM parameters will be removed from any request save
 
 1. Rules with the `$removeparam` modifier can only be used [**in trusted filters**](#trusted-filters).
 1. `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers), [content-type modifiers](#content-type-modifiers), and with the `$important` and `$app` modifiers. Rules with any other modifiers are considered invalid and will be discarded.
+1. Although `$domain` is classified as a basic modifier, it's not compatible with `$removeparam` rules in the Manifest V3 extension.
 1. `$removeparam` rules without [content type modifiers](#content-type-modifiers) will only match requests where the content type is `document`.
 
 :::
@@ -3026,11 +3031,15 @@ Tracking links will now be automatically cleaned up, allowing direct navigation 
 
 Rules with the `$urltransform` modifier can only be used [**in trusted filters**](#trusted-filters).
 
+`$urltransform` rules without [content-type modifiers](#content-type-modifiers) will only match requests where the content type is `document`.
+
 :::
 
 :::info Compatibility
 
 Rules with the `$urltransform` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.15 or later.
+
+`$urltransform` rules with [content-type modifiers](#content-type-modifiers) are supported starting from [CoreLibs] v1.19 or later. In earlier versions, content-type modifiers were not allowed with `$urltransform`.
 
 :::
 

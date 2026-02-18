@@ -3,18 +3,18 @@ title: Paramètres
 sidebar_position: 5
 ---
 
-![Settings tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings.png)
+![Onglet paramètres](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings.png)
 
-In _Settings_, you can set up basic things like filters, filter updates, launching AdGuard at system startup, and so on. You can also choose whether to show the AdGuard icon in the menu bar.
+Dans les _Paramètres_, vous pouvez configurer des éléments de base tels que les filtres, les mises à jour des filtres, le lancement d'AdGuard au démarrage du système, etc. Vous pouvez également choisir d'afficher l'icône AdGuard dans le menu.
 
-The main two sections are:
+Les deux sections principales :
 
-- [Filters](/adguard-mini-for-mac/features/settings/filters.md)
+- [Filtres](/adguard-mini-for-mac/features/settings/filters.md)
 
-  Different filters that allow you to customize your ad blocking experience
+  Les filtres différents qui permettent de personnaliser votre expérience en matière de blocage des publicités
 
-- [Safari extensions](/adguard-mini-for-mac/features/settings/safari-extensions.md)
+- [Extensions Safari](/adguard-mini-for-mac/features/settings/safari-extensions.md)
 
-  Info on the current state of content blockers — how many rules and filters are enabled for each of them
+  Des informations sur l’état actuel des bloqueurs de contenu — le nombre de règles et de filtrages sont activés pour chacun d’eux
 
-At the bottom of the _Settings_ screen, you can find options that come in handy when communicating with our support team: _Debug logging_ and _Export logs_.
+Au bas de l'écran _Paramètres_, vous trouverez des options qui s'avèrent utiles pour communiquer avec notre équipe d'assistance : _Journalisation de débogage_ et _Exporter les journaux_.

@@ -77,36 +77,36 @@ sidebar_position: 3
 
     ![登录屏幕 *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
 
-### Activating AdGuard Mini for Mac
+### 在 Mac 版的 AdGuard Mini 激活许可证
 
-1. Click AdGuard Mini icon in the menu bar.
+1. 点击菜单栏中的 AdGuard Mini 图标。
 
-    ![AdGuard Mini in the menu bar](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
+    ![菜单栏中的 AdGuard Mini](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
 
-2. Click the settings icon.
+2. 点击设置图标。
 
-    ![Settings icon *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
+    ![设置图标 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
 
-3. Go to *License*.
+3. 转到「*许可证*」。
 
-    ![Go to License](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
+    ![转到许可证](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
 
-4. Open the menu (⋮) in the upper right corner and click *Already purchased?*.
+4. 打开右上角的菜单 (⋮)，点击「*已经购买？*」。
 
     ![Click already purchased](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
 
-5. You will see the available activation options:
+5. 您将看到以下可用的激活选项：
 
-    ![Activation options](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
+    ![激活选项](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
 
-    - **Log in**
+    - **登录**
 
-      Log in to your AdGuard account that has a valid license in it.
+      登录 AdGuard 账号，账号中含有有效的许可证。
 
-    - **Restore from App Store**
+    - **从 App Store 恢复**
 
-      Use a license that you have previously bought through the App Store.
+      使用您之前通过 App Store 购买的许可证。
 
-    - **Enter activation code**
+    - **输入激活码**
 
-      Enter your activation code.
+      输入您的激活码。

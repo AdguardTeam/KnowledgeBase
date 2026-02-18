@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Эта статья об AdGuard Mini для Mac, которое защищает только браузер Safari. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы полностью защитить ваш Mac
 
 :::
 
@@ -13,10 +13,10 @@ This article is about AdGuard Mini for Mac, which safeguards only your Safari br
 
 ![Вкладка Основные](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/safari-protection.png)
 
-Раздел _Защита Safari_ — самая важная область для основной задачи приложения. Settings are grouped logically and explained in plain language so you can quickly see what each option does.
+Раздел _Защита Safari_ — самая важная область для основной задачи приложения. Настройки сгруппированы логически и объяснены простым языком, так что вы быстро поймёте, за что отвечает каждая опция.
 
-Here’s a simple explanation on what each group of settings does:
+Вот простое объяснение того, что делает каждая группа настроек:
 
-![Protection screen part one \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/new/safari_protection_1.png)
+! [Экран защиты часть первая \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/new/safari_protection_1.png)
 
-![Protection screen part two \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/new/safari_protection_2.png)
+! [Экран защиты часть вторая \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/new/safari_protection_2.png)

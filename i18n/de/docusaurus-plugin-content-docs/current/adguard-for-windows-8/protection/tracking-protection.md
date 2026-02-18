@@ -5,75 +5,75 @@ sidebar_position: 2
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Dieser Artikel beschreibt AdGuard für Windows v8.0, einen umfassenden Werbeblocker, der Ihr Gerät auf Systemebene schützt. Es handelt sich hierbei um eine Beta-Version, die sich noch in der Entwicklung befindet. Um es auszuprobieren, laden Sie die [Beta-Version von AdGuard für Windows](https://agrd.io/windows_beta) herunter.
 
 :::
 
-Many websites collect data about their visitors, including IP addresses, browser and OS information, screen resolution, and even the page you came from. Cookies can be used to identify your browser, remember your preferences, or recognize you when you return. Tracking protection prevents such systems from collecting your personal data. Learn more in our [article about Tracking protection in AdGuard](https://adguard.com/kb/general/stealth-mode/)
+Viele Websites sammeln Daten über ihre Besucher, darunter IP-Adressen, Browser- und Betriebssysteminformationen, Bildschirmauflösung und sogar die Seite, von der aus Sie gekommen sind. Cookies können verwendet werden, um Ihren Browser zu identifizieren, Ihre Präferenzen zu speichern oder Sie bei Ihrer Rückkehr wiederzuerkennen. Der Tracking-Schutz verhindert, dass solche Systeme Ihre personenbezogenen Daten erfassen. Erfahren Sie mehr in unserem [Artikel über Tracking-Schutz in AdGuard (https://adguard.com/kb/general/stealth-mode/)
 
-![Tracking protection](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
+![Tracking-Schutz](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
 
-If you don’t want to spend time adjusting filters manually, you can simply pick one of the ready-made protection levels:
+Wenn Sie keine Zeit mit der manuellen Einstellung von Filtern verbringen möchten, können Sie einfach eine der vordefinierten Schutzstufen auswählen:
 
-- _Standard_: enabled by default and provides reliable protection for everyday browsing.
-- _High_: removes tracking parameters from page URLs and blocks third-party cookies. You may have to re-log in to some websites or face other cookie-related issues.
-- _Extreme_: limits cookie lifetime of third-party cookies and blocks certain browser APIs. Some websites may not work correctly.
+- _Standard_: standardmäßig aktiviert und bietet zuverlässigen Schutz für das tägliche Surfen.
+- _Hoch_: entfernt Tracking-Parameter aus Seiten-URLs und blockiert Cookies von Drittanbietern. Möglicherweise müssen Sie sich bei manchen Websites regelmäßig erneut anmelden und es treten andere Probleme im Zusammenhang mit Cookies auf.
+- _Extrem_: begrenzt die Lebensdauer von Cookies von Drittanbietern und blockiert bestimmte Browser-APIs. Einige Websites funktionieren möglicherweise nicht wie vorgesehen.
 
-For maximum flexibility, select _Custom_ and adjust everything manually. The settings there are divided into five categories:
+Für maximale Flexibilität wählen Sie _Benutzerdefiniert_ und nehmen Sie alle Einstellungen manuell vor. Die darin enthaltenen Einstellungen sind in fünf Kategorien unterteilt:
 
-- [General settings](#general-settings)
+- [Allgemein](#general-settings)
 
-- [Tracking methods](#tracking-methods)
+- [Tracking-Methoden](#tracking-methods)
 
-- [Browser API](#browser-api)
+- [Browser-API](#browser-api)
 
-- [Windows tracking](#windows-tracking)
+- [Windows-Tracking](#windows-tracking)
 
-- [Miscellaneous](#miscellaneous)
+- [Sonstiges](#miscellaneous)
 
 ## Allgemeine Einstellungen
 
-![General settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general.png)
+![Allgemeine Einstellungen](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general.png)
 
 ### Tracker blockieren
 
-Blocks trackers and web analytics using _AdGuard Tracking Protection filter_.
+Blockiert Tracker und Webanalysen mit dem _AdGuard Tracking-Schutzfilter_.
 
 ### Tracking-Parameter aus URLs entfernen
 
-Strips tracking parameters such as `utm_*` and `fb_ref` from pages’ URLs using _AdGuard URL Tracking filter_.
+Entfernt Tracking-Parameter wie `utm_*` und `fb_ref` aus den Seiten-URLs mithilfe des _AdGuard-URL-Tracking-Filters_.
 
-### Hide your search queries
+### Suchanfragen verbergen
 
-Hides queries for websites visited from a search engine. When you get directed to a website from Google, Yahoo, or any other search engine, this option hides the search query that you used to find that website.
+Verbirgt Suchanfragen für Websites, die über Suchmaschinenergebnisse besucht wurden. Wenn Sie von Google, Yahoo oder einer anderen Suchmaschine auf eine Website weitergeleitet werden, blendet diese Option die Suchanfrage aus, mit der Sie die Website gefunden haben.
 
-### Ask websites not to track you
+### Websites bitten, Sie nicht zu verfolgen
 
-Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit.
+Sendet die Signale [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) und [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) an die von Ihnen besuchten Websites.
 
 ## Tracking-Methoden
 
-![Tracking methods](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_tracking_methods.png)
+![Tracking-Methoden](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_tracking_methods.png)
 
 ### Cookies von Drittanbietern löschen
 
-Websites use cookies to store your preferences — for example, the language you chose, your location, or the items in your shopping cart. When you return, the browser sends these cookies back so the site can recognize you.
+Websites verwenden Cookies, um Ihre bevorzugten Einstellungen zu speichern — beispielsweise die von Ihnen gewählte Sprache, Ihren Standort oder die Artikel in Ihrem Warenkorb. Wenn Sie zurückkehren, sendet der Browser diese Cookies zurück, damit die Website Sie erkennen kann.
 
-Third-party cookies work the same way, but they are created by domains other than the one you’re visiting. For instance, cnn.com may include a Facebook _Like_ widget that sets a cookie later read by Facebook. Advertisers often use such cookies to track which other sites you visit.
+Cookies von Drittanbietern funktionieren auf die gleiche Weise, werden jedoch von anderen Domains als der von Ihnen besuchten erstellt. Beispielsweise kann cnn.com ein Facebook-Widget _Like_ einbinden, das einen Cookie setzt, der später von Facebook gelesen wird. Werbetreibende verwenden solche Cookies häufig, um nachzuverfolgen, welche anderen Websites Sie besuchen.
 
-With this option, you can set a time limit (in minutes) after which all third-party cookies will be deleted. If you set the timer to 0, such cookies will be blocked completely.
+Mit dieser Option können Sie eine Gültigkeitsdauer (in Minuten) festlegen, nach dessen Ablauf alle Cookies von Drittanbietern gelöscht werden. Wenn Sie den Timer auf 0 setzen, werden solche Cookies vollständig blockiert.
 
-![Time-to-live](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/delete_third_party.png)
+![Gültigkeitsdauer](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/delete_third_party.png)
 
 :::caution
 
-Keep in mind that this setting removes all third-party cookies, including those used for logins via social networks or other external services. This means you may need to log in again from time to time or deal with other cookie-related issues. If you only want to block tracking cookies, use [_AdGuard Tracking Protection filter_](/general/ad-filtering/filter-policy/#tracking-protection-filter).
+Beachten Sie, dass diese Einstellung alle Cookies von Drittanbietern entfernt, einschließlich derjenigen, die für Anmeldungen über soziale Netzwerke oder andere externe Dienste verwendet werden. Das bedeutet, dass Sie sich möglicherweise von Zeit zu Zeit erneut anmelden müssen oder andere Probleme im Zusammenhang mit Cookies klären müssen. Wenn Sie ausschließlich Tracking-Cookies blockieren möchten, verwenden Sie den [_AdGuard Tracking-Schutzfiter_](/general/ad-filtering/filter-policy/#tracking-protection-filter).
 
 :::
 
 ### Cookies von Erstanbieter löschen (nicht empfohlen)
 
-This option deletes cookies set by the website you are currently visiting after a selected period of time (in minutes). When the timer runs out, all such cookies are removed. Set the timer to 0 to block them completely.
+Diese Option löscht Cookies, die von der Website, die Sie gerade besuchen, gesetzt wurden, nach einer ausgewählten Zeitspanne (in Minuten). Nachdem der Timer abgelaufen ist, werden alle derartigen Cookies gelöscht. Setzen Sie den Timer auf 0, um sie vollständig zu blockieren.
 
 :::caution
 
@@ -83,102 +83,102 @@ Wir raten davon ab, diese Option zu aktivieren, da sie die Arbeit bestimmter Web
 
 ### ETag- und If-None-Match-Header blockieren
 
-Removes the ETag and If-None-Match headers from requests and responses to prevent websites from using them for tracking.
+Entfernt die Header „ETag“ und „If-None-Match“ aus Anfragen und Antworten, um zu verhindern, dass Websites diese zum Tracking verwenden können.
 
-When a browser addresses a page, the server assigns it an ETag — a unique identifier used to cache the page’s contents. On subsequent visits, the browser sends the same ETag back to the server. This allows the server to recognize the visitor. As long as the cached files remain, the ETag is transmitted with every request. If the page also contains embedded elements from other servers, such as images or iframes, those servers can use ETags to track your activity without your knowledge.
+Wenn ein Browser eine Seite aufruft, weist der Server ihr einen ETag zu — eine eindeutige Kennung, die zum Zwischenspeichern des Seiteninhalts verwendet wird. Bei späteren Besuchen sendet der Browser denselben ETag zurück an den Server. Dies ermöglicht es dem Server, den Besucher wiederzuerkennen. Solange die zwischengespeicherten Dateien vorhanden sind, wird der ETag bei jeder Anfrage übertragen. Wenn die Seite auch eingebettete Elemente von anderen Servern enthält, wie Bilder oder Iframes, können diese Server ETags verwenden, um Ihre Aktivitäten ohne Ihr Wissen zu verfolgen.
 
 ### Drittanbieter-Autorisierungsheader blockieren
 
-Disables cached authorization data that can be used for tracking purposes. Dies kann die Funktionalität einiger Erweiterungen und Websites beeinträchtigen.
+Deaktiviert zwischengespeicherte Autorisierungsdaten, die für Tracking-Zwecke verwendet werden können. Dies kann die Funktionalität einiger Erweiterungen und Websites beeinträchtigen.
 
-The Authorization header value is cached by the browser and automatically sent with every request to the same domain. Since it accompanies each request, it can be used to identify and track you similarly to how cookies do.
+Der Wert des Headers wird vom Browser zwischengespeichert und mit jeder Anfrage an diese Domain mitgesendet. Da es jede Anfrage begleitet, kann es ähnlich wie Cookies dazu verwendet werden, Sie zu identifizieren und zu verfolgen.
 
 ## Browser-API
 
-![Browser API](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_browser_api.png)
+![Browser-API](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_browser_api.png)
 
 ### WebRTC blockieren
 
-Blocks WebRTC, a known vulnerability that can leak your real IP address even if you use a proxy or VPN.
+Blockiert WebRTC, eine bekannte Schwachstelle, die Ihre echte IP-Adresse preisgeben kann, selbst wenn Sie einen Proxy oder VPN verwenden.
 
-WebRTC (Web Real-Time Communication) is a technology that allows direct data streaming between browsers and apps. It can reveal your true IP address, even if you use a proxy or VPN. Enabling this option may disrupt certain browser applications, such as messengers, chats, cinemas, or games.
+WebRTC (Web Real-Time Communication) ist eine Technologie, die direktes Daten-Streaming zwischen Browsern und Apps ermöglicht. Es kann Ihre echte IP-Adresse offenlegen, selbst wenn Sie einen Proxy oder ein VPN verwenden. Die Aktivierung dieser Option kann bestimmte Browseranwendungen wie Messenger, Chats, Videoplayer oder Spiele beeinträchtigen.
 
 ### Push API blockieren
 
-The Push API allows servers to send messages to web applications regardless of the activity status of your browser. This is why you may receive notifications from websites even if your browser is hidden in the tray or not launched. Enabling this option completely blocks the Push API.
+Die Push-API ermöglicht es Servern, unabhängig vom Aktivitätsstatus Ihres Browsers Nachrichten an Webanwendungen zu senden. Aus diesem Grund erhalten Sie möglicherweise Benachrichtigungen von Websites, auch wenn Ihr Browser in der Taskleiste ausgeblendet oder nicht gestartet ist. Durch das Aktivieren dieser Option wird die Push-API vollständig blockiert.
 
 ### Location-API blockieren
 
-When this option is enabled, the browser will no longer send GPS data to websites. This prevents them from determining your location, altering search results, or tailoring content based on where you are.
+Wenn diese Option aktiviert ist, sendet der Browser keine GPS-Daten mehr an Websites. Dadurch wird verhindert, dass Ihr Standort ermittelt, Suchergebnisse verändert oder Inhalte auf Grundlage Ihres Standorts angepasst werden.
 
 ### Flash blockieren
 
-The Flash Player plugin is outdated and highly vulnerable to viruses and exploits. It can also slow down website loading. Enabling this option prevents browsers from detecting Flash components (such as plugins or ActiveXObject objects), which effectively disables Flash support.
+Das Flash Player-Plugin ist veraltet und sehr anfällig für Viren und Sicherheitslücken. Es kann auch das Laden der Websites verlangsamen. Durch das Aktivieren dieser Option wird verhindert, dass Browser Flash-Komponenten (wie Plugins oder ActiveXObject-Objekte) erkennen, wodurch die Flash-Unterstützung effektiv deaktiviert wird.
 
 ## Windows-Tracking
 
-![Windows tracking](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_windows_tracking.png)
+![Windows-Tracking](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_windows_tracking.png)
 
 ### Windows-Telemetrie deaktivieren
 
-Disables sending technical data about your system and app usage.
+Deaktiviert das Senden technischer Daten über Ihr System und Ihre App-Nutzung.
 
 ### Werbe-ID deaktivieren
 
-Disables Advertising ID to block tracking of your app usage.
+Deaktiviert die Werbe-ID, um das Tracking Ihrer App-Nutzung zu verhindern.
 
 ### Automatische Berichterstellung durch Microsoft Defender deaktivieren
 
-Blocks automatic reporting and sampling of suspected malware.
+Blockiert die automatische Meldung und Probenahme von verdächtiger Malware.
 
 ### WAP-Push-Nachrichtendienst deaktivieren
 
-Disables data collection about Windows component problems
+Deaktiviert die Datenerfassung zu Problemen mit Windows-Komponenten
 
 ## Sonstiges
 
-![Miscellaneous](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_misc.png)
+![Sonstiges](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_misc.png)
 
 ### Referer vor Drittanbietern verbergen
 
-Referer is an HTTP header included in browser-to-server requests. Er enthält die URL der Anfragequelle. Wenn Sie von einer Seite zur anderen navigieren, speichert Referer die URL der ursprünglichen Seite. Der Server, auf dem die Ziel-Webseite gehostet wird, verfügt häufig über Software, die Referer analysiert und verschiedene Informationen daraus extrahiert.
+Referer ist ein HTTP-Header, der in Anfragen vom Browser an den Server enthalten ist. Er enthält die URL der Anfragequelle. Wenn Sie von einer Seite zur anderen navigieren, speichert Referer die URL der ursprünglichen Seite. Der Server, auf dem die Ziel-Webseite gehostet wird, verfügt häufig über Software, die Referer analysiert und verschiedene Informationen daraus extrahiert.
 
-Enabling the _Hide Referer from third-parties_ option prevents third-party websites from seeing this information by altering or removing the header.
+Durch Aktivieren der Option _Referer vor Drittanbietern verbergen_ wird verhindert, dass Websites von Drittanbietern diese Informationen einsehen können, indem der Header geändert oder entfernt wird.
 
-You can also enter a custom value in the _Custom Referer_ field. Um den Standard-Referer zu verwenden, lassen Sie das Feld leer.
+Sie können auch einen benutzerdefinierten Wert in das Feld _Eigener Referer_ eingeben. Um den Standard-Referer zu verwenden, lassen Sie das Feld leer.
 
-Note that to be able to filter traffic, AdGuard applications intercept browser-to-server requests. Anfragen an Werbe-, Tracking- und Phishing-Server können verändert werden, bevor sie an den Server gesendet werden, oder ganz blockiert werden.
+Beachten Sie, dass AdGuard-Anwendungen Browser-zu-Server-Anfragen abfangen, um den Datenverkehr filtern zu können. Anfragen an Werbe-, Tracking- und Phishing-Server können verändert werden, bevor sie an den Server gesendet werden, oder ganz blockiert werden.
 
-Same goes for the _Hide Referer from third parties_ option: To filter traffic, AdGuard intercepts HTTP(S) requests and may alter or block them before they reach the server. The change happens only after the request leaves your browser. For this reason, if you check headers inside the browser (for example with Chrome Developer Tools), you will still see the original Referer. To confirm that it has been modified, you can use external tools such as Fiddler.
+Das Gleiche gilt für die Option _Referer vor Drittanbietern verbergen_: Um den Datenverkehr filtern zu können, fängt AdGuard HTTP(S)-Anfragen ab und kann diese ändern oder sperren, bevor diese den Server erreichen. Die Änderung erfolgt erst, nachdem die Anfrage Ihren Browser verlassen hat. Aus diesem Grund sehen Sie beim Überprüfen der Header im Browser (z. B. mit den Chrome Developer Tools) weiterhin den ursprünglichen Referer. Um zu überprüfen, ob es geändert wurde, können Sie externe Tools wie „Fiddler“ verwenden.
 
-### Hide your User-Agent
+### User-Agent verbergen
 
-When you visit a website, your browser sends a header called User-Agent as part of the HTTP request. It looks like a text line that begins with “User-Agent:”. This line usually contains details such as the browser name and version, operating system, and language settings.
+Wenn Sie eine Website besuchen, sendet Ihr Browser eine Kopfzeile namens User-Agent als Teil der HTTP-Anfrage. Es sieht aus wie eine Textzeile, die mit „User-Agent:“ beginnt. Diese Zeile enthält in der Regel Angaben wie den Namen und die Version des Browsers, das Betriebssystem und die Spracheinstellungen.
 
-By enabling this option, AdGuard removes identifying information from the User-Agent so advertisers and trackers cannot use it to profile you. If you prefer, you can enter a custom value in the _Custom User-Agent_ field. To keep the default value, simply leave the field blank.
+Durch Aktivierung dieser Option entfernt AdGuard identifizierende Informationen aus dem User-Agent, sodass Werbetreibende und Tracker diese nicht zur Erstellung von Profilen über Sie verwenden können. Wenn Sie möchten, können Sie einen benutzerdefinierten Wert in das Feld _Benutzerdefinierter User-Agent_ eingeben. Um den Standardwert beizubehalten, lassen Sie das Feld einfach leer.
 
-### Mask your IP address
+### IP-Adresse maskieren
 
-AdGuard cannot completely hide your real IP address, but it can replace it with a different one so that websites interpret your connection as coming through a proxy. In some cases this helps to obscure your true IP.
+AdGuard kann Ihre echte IP-Adresse nicht vollständig verbergen, aber es kann sie durch eine andere ersetzen, sodass Websites Ihre Verbindung als über einen Proxy hergestellt interpretieren. In einigen Fällen hilft dies dabei, Ihre tatsächliche IP-Adresse zu verschleiern.
 
-You can enter any IP address you want to use in the corresponding field. Um die Standard-IP-Adresse zu verwenden, lassen Sie das Feld leer.
+Sie können jede beliebige IP-Adresse, die Sie verwenden möchten, in das entsprechende Feld eingeben. Um die Standard-IP-Adresse zu verwenden, lassen Sie das Feld leer.
 
 ### X-Client-Data-Header entfernen
 
-Prevents Google Chrome from sending information about its version and modifications in requests to Google domains, including services like DoubleClick and Google Analytics.
+Verhindert, dass Google Chrome Informationen über seine Version und Änderungen in Anfragen an Google-Domains sendet, einschließlich Diensten wie DoubleClick und Google Analytics.
 
 ### Schutz vor DPI
 
 Bei der Deep Packet Inspection handelt es sich um ein System zur Tiefenanalyse und Filterung des Datenverkehrs nach Paketinhalt sowie zur Sammlung statistischer Daten. Mit dieser Technologie können Internetanbieter den Datenverkehr kontrollieren und den Zugang zu bestimmten Inhalten beschränken.
 
-Deep Packet Inspection (DPI) is a technology used by some ISPs to analyze and filter traffic based on packet content. It allows them to monitor connections, restrict access to certain resources, and collect statistics about users.
+Deep Packet Inspection (DPI) ist eine Technologie, die von einigen Internetdienstanbietern verwendet wird, um den Datenverkehr anhand des Paketinhalts analysieren und filtern zu können. Es ermöglicht ihnen, Verbindungen zu überwachen, den Zugriff auf bestimmte Ressourcen zu beschränken und Statistiken über Benutzer zu sammeln.
 
-When this option is enabled, AdGuard modifies outgoing packet data so that it no longer matches the DPI blocking criteria. This can help you bypass restrictions and access the content you need. However, not all DPI systems can be circumvented yet — improvements are still in progress.
+Wenn diese Option aktiviert ist, modifiziert AdGuard ausgehende Paketdaten so, dass sie nicht mehr den Sperrkriterien von DPI entsprechen. Dies kann Ihnen helfen, Einschränkungen zu umgehen und auf die benötigten Inhalte zugreifen zu können. Allerdings können noch nicht alle DPI-Systeme umgangen werden – Verbesserungen sind noch nicht abgeschlossen.
 
-The _Protect from DPI_ feature is already implemented in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android.
+Die Funktion _Schutz vor DPI_ ist bereits in AdGuard für Windows, AdGuard für Mac und AdGuard für Android implementiert.
 
 :::caution
 
-If this feature is enabled in AdGuard for Windows, it may interfere with the ESET antivirus. In this case, ESET will not be able to filter traffic, leaving some malicious or blocked websites accessible.
+Wenn diese Funktion in AdGuard für Windows aktiviert ist, kann sie zu Konflikten mit dem Virenschutzprogramm von ESET führen. In diesem Fall kann ESET den Datenverkehr nicht filtern, sodass einige bösartige oder gesperrte Websites weiterhin zugänglich sind.
 
 :::

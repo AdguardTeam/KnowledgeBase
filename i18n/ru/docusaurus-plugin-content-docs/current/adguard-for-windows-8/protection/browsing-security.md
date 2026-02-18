@@ -5,22 +5,22 @@ sidebar_position: 5
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+В этой статье описывается AdGuard для Windows v8.0 — комплексный блокировщик рекламы, который защищает ваше устройство на системном уровне. Это бета-релиз, который ещё находится в стадии разработки. Чтобы начать им пользоваться, скачайте [бета-версию AdGuard для Windows](https://agrd.io/windows_beta).
 
 :::
 
-_Browsing security_ offers strong protection against harmful websites and phishing attempts.
+_Защита от фишинга_ надёжно защищает от вредоносных и фишинговых атак.
 
-While AdGuard for Windows is not an antivirus, it does provide essential security by warning you before visiting untrusted sites or downloading potentially dangerous files.
+Хотя AdGuard для Windows не является антивирусом, он обеспечивает необходимый уровень безопасности, предупреждая вас перед открытием ненадёжных сайтов или загрузкой потенциально опасных файлов.
 
-It won’t stop a virus that is already being downloaded, and it won’t remove existing malware. But it will block access to websites that are marked as unsafe, helping you avoid threats in the first place.
+Эта функция не остановит вирус, который уже загружается, и не удалит существующие вредоносные программы. Но она заблокирует доступ к сайтам, помеченным как небезопасные, помогая вам в первую очередь избежать угроз.
 
-For more details about how this protection works, see our article [Phishing and malware protection](/general/browsing-security).
+Подробнее о том, как работает эта защита, читайте в нашей статье [Защита от фишинга и вредоносных программ](/general/browsing-security).
 
-![Browsing security](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/browsing.png)
+![Защита от фишинга](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/browsing.png)
 
-In the _Browsing security_ section, you can:
+В разделе _Защита от фишинга_ вы можете:
 
-- turn on notifications about blocked malicious and phishing websites;
-- enable sound alerts;
-- allow anonymous security security-related data to be sent to AdGuard, which helps us keep our database of harmful websites up to date.
+- включить уведомления о заблокированных вредоносных и фишинговых веб-сайтах;
+- включить звуковые оповещения;
+- разрешить отправлять анонимные данные о безопасности в AdGuard, что поможет нам поддерживать актуальность нашей базы вредоносных сайтов.
