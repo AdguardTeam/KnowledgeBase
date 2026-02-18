@@ -21,7 +21,7 @@ At last, there is a section with proxy settings. There you can specify which pro
 
 In *Network*, you can also choose which driver to use: SockFilter, WFP, or TDI.
 
-**WFP** (Windows Filtering Platform) is a powerful driver, but it may present stability risks, such as [occasional system crashes (BSOD)](https://github.com/AdguardTeam/AdguardForWindows/issues/5792) for some users. 
+**WFP** (Windows Filtering Platform) is a powerful driver, but it may present stability risks, such as [occasional system crashes (BSOD)](https://github.com/AdguardTeam/AdguardForWindows/issues/5792) for some users.
 
 The **TDI** driver is also available, but it is outdated and may cause [filtering issues in some versions of Google Chrome](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). [A temporary workaround exists](https://adguard.com/kb/adguard-for-windows/solving-problems/tdi-driver-and-Chrome-142/), but it’s not a reliable long-term solution.
 
