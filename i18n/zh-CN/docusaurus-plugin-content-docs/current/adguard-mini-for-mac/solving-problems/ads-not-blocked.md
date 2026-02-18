@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+这篇文章是关于 Mac 版的 AdGuard Mini，用于 Safari 浏览器的保护。 To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -19,12 +19,12 @@ In some cases, filtering may not work and ads may still be displayed even though
 4. Clear the checkboxes for AdGuard Mini’s extensions: _Custom_, _General_, _Other_, _Privacy_, _Security_, _Social_, and _AdGuard for Safari_.
    ![Unchecked extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
 5. 重新启动 Safari 浏览器。
-6. Return to Safari → _Settings..._ → _Extensions_ and re-enable the AdGuard extensions.
-7. Open AdGuard Mini’s menu.
-8. Click _Check for updates_ icon.
+6. 返回 Safari → 「_设置..._」→「_扩展_」并重新启用 AdGuard 扩展。
+7. 打开 AdGuard Mini 菜单。
+8. 点击「_检查更新_」图标。
    ![Update button \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/update-button.png)
-9. Do not close the AdGuard Mini window until the filters are updated.
+9. 在过滤器更新完成之前，请勿关闭 AdGuard Mini 窗口。
 
-If this doesn’t help and ads are still not being blocked, please contact our support at [support@adguard.com](mailto:support@adguard.com).
+如果上述方法无效，广告仍未被拦截，请通过 [support@adguard.com](mailto:support@adguard.com) 联系我们的支持团队。
 
-If you only have problems with a specific page or website, you can report it directly from the browser: click the AdGuard Mini icon next to the Safari search bar and then click _Report an issue_.
+如果只有特定网页或网站出现问题，可以直接从浏览器举报：点击 Safari 搜索栏旁的 AdGuard Mini 图标，然后点击「_举报问题_」。

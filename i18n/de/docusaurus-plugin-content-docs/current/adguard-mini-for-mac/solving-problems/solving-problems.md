@@ -9,10 +9,10 @@ In diesem Artikel geht es um AdGuard Mini für Mac, der nur Ihren Safari-Browser
 
 :::
 
-Here are some problems you may encounter and workarounds, as well as guides and instructions you may need:
+Hier finden Sie einige Probleme, denen Sie begegnen könnten, und Workarounds, sowie Anleitungen und Anweisungen, die Sie benötigen:
 
-- [Rule limit issues](/adguard-mini-for-mac/solving-problems/rule-limit.md)
-- [Filtering doesn’t work and ads aren’t blocked](/adguard-mini-for-mac/solving-problems/ads-not-blocked.md)
-- [Filtering doesn’t stop when AdGuard Mini is disabled](/adguard-mini-for-mac/solving-problems/filters-after-disable.md)
-- [How to collect logs in AdGuard Mini for Mac](/adguard-mini-for-mac/solving-problems/logs.md)
-- [AdGuard Mini doesn’t work in private tabs on macOS Sonoma](/adguard-mini-for-mac/solving-problems/private-sonoma.md)
+- [Probleme mit Regelgrenzen](/adguard-mini-for-mac/solving-problems/rule-limit.md)
+- [Die Filterung funktioniert nicht und die Werbung wird nicht blockiert](/adguard-mini-for-mac/solving-problems/ads-not-blocked.md)
+- [Die Filterung wird nicht beendet, wenn AdGuard Mini deaktiviert ist](/adguard-mini-for-mac/solving-problems/filters-after-disable.md)
+- [So sammeln Sie Protokolle in AdGuard Mini für Mac](/adguard-mini-for-mac/solving-problems/logs.md)
+- [AdGuard Mini funktioniert nicht in privaten Tabs unter macOS Sonoma](/adguard-mini-for-mac/solving-problems/private-sonoma.md)

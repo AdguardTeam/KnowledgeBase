@@ -5,100 +5,100 @@ sidebar_position: 4
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Dieser Artikel beschreibt AdGuard für Windows v8.0, einen umfassenden Werbeblocker, der Ihr Gerät auf Systemebene schützt. Es handelt sich hierbei um eine Beta-Version, die sich noch in der Entwicklung befindet. Um es auszuprobieren, laden Sie die [Beta-Version von AdGuard für Windows](https://agrd.io/windows_beta) herunter.
 
 :::
 
-The _Advanced settings_ section contains options that go beyond what most users usually need. AdGuard for Windows works perfectly out of the box, but these settings can be useful in special cases or for troubleshooting.
+Der Abschnitt _Erweiterte Einstellungen_ enthält Optionen, die über die üblichen Anforderungen hinausgehen. AdGuard für Windows funktioniert sofort nach der Installation einwandfrei, aber diese Einstellungen können in besonderen Fällen oder zur Fehlerbehebung nützlich sein.
 
 :::caution
 
-Changing advanced settings without understanding them may cause performance issues, break your Internet connection, or affect your security and privacy. Only modify them if you know what you’re doing or if instructed by our support team.
+Das Ändern von erweiterten Einstellungen ohne entsprechende Kenntnisse kann zu Leistungsproblemen führen, Ihre Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre beeinträchtigen. Ändern Sie diese nur, wenn Sie wissen, was Sie tun, oder wenn Sie von unserem Support-Team dazu aufgefordert werden.
 
 :::
 
 ## Anwendung von der Filterung ausschließen, durch Angabe des vollständigen Pfads
 
-If you want AdGuard to skip filtering a specific app, enter its full file path here. You can add multiple apps by separating their paths with semicolons.
+Wenn Sie möchten, dass AdGuard eine bestimmte App nicht filtert, geben Sie hier den vollständigen Dateipfad ein. Sie können mehrere Apps hinzufügen, indem Sie deren Pfade durch Semikolons trennen.
 
 ## AdGuard Pop-up-Benachrichtigungen aktivieren
 
-Aktivieren Sie diese Funktion, um Popup-Benachrichtigungen von AdGuard anzuzeigen. Sie werden nicht allzu oft angezeigt und enthalten nur wichtige Informationen. You can also reopen the latest notification from the tray menu.
+Aktivieren Sie diese Funktion, um Popup-Benachrichtigungen von AdGuard anzuzeigen. Sie werden nicht allzu oft angezeigt und enthalten nur wichtige Informationen. Sie können die letzte Benachrichtigung auch über den Infobereich der Taskleiste erneut öffnen.
 
 ## Filter-Abonnement URLs automatisch filtern
 
-When enabled, AdGuard will automatically detect filter subscription links (like `abp:subscribe`) and open a window to help you add them to your filters.
+Wenn diese Option aktiviert ist, erkennt AdGuard automatisch Filter-Abonnement-Links (wie `abp:subscribe`) und öffnet ein Fenster, in dem Sie diese zu Ihren Filtern hinzufügen können.
 
 ## Umleitungstreiber-Modus verwenden
 
-With this option enabled, AdGuard reroutes all your traffic to a local proxy server for filtering.
+Wenn diese Option aktiviert ist, leitet AdGuard Ihren gesamten Datenverkehr zur Filterung an einen lokalen Proxy-Server weiter.
 
-If it’s turned off, AdGuard filters traffic directly — without redirecting it. In this mode, Windows sees AdGuard as the only app connecting to the Internet, since all other apps go through it. This can slightly improve performance but may reduce the effectiveness of the system firewall.
+Ist diese Option jedoch deaktiviert, filtert AdGuard den Datenverkehr direkt, ohne ihn umzuleiten. In diesem Modus erkennt Windows AdGuard als die einzige App, die eine Verbindung zum Internet herstellt, da alle anderen Apps über AdGuard geleitet werden. Dies kann die Leistung geringfügig verbessern, jedoch die Wirksamkeit der System-Firewall beeinträchtigen.
 
-## Open AdGuard at system start-up
+## AdGuard beim Systemstart öffnen
 
-Enable this option to launch the AdGuard window automatically when your PC starts.
+Aktivieren Sie diese Option, um das AdGuard-Fenster automatisch zu öffnen, wenn Ihr PC gestartet wird.
 
 ## Filterung beim Systemstart aktivieren
 
-Since version 7.12, AdGuard doesn’t start filtering traffic automatically after you boot your PC — unless the _Launch AdGuard at system start-up_ option is enabled. Instead, it runs in a passive “idle” mode.
+Seit Version 7.12 beginnt AdGuard nicht mehr automatisch mit der Filterung des Datenverkehrs, nachdem Sie Ihren PC hochgefahren haben — es sei denn, die Option _AdGuard beim Systemstart öffnen_ ist aktiviert. Stattdessen läuft es in einem passiven „Leerlaufmodus“.
 
-Turning this on allows AdGuard to filter traffic immediately, even if the app hasn’t been opened yet.
+Wenn Sie diese Option aktivieren, kann AdGuard den Datenverkehr sofort filtern, auch wenn die App noch nicht geöffnet wurde.
 
 ## Localhost filtern
 
-Aktivieren Sie diese Option, damit AdGuard den Loopback-Datenverkehr (localhost) filtern kann, den einige Apps für die Kommunikation innerhalb des Systems verwenden. If AdGuard VPN is installed, this setting is always on because the VPN requires it to work properly.
+Aktivieren Sie diese Option, damit AdGuard den Loopback-Datenverkehr (localhost) filtern kann, den einige Apps für die Kommunikation innerhalb des Systems verwenden. Wenn AdGuard VPN installiert ist, ist diese Einstellung immer aktiviert, da das VPN dies für eine ordnungsgemäße Funktion benötigt.
 
-## Capture HAR
+## HAR erfassen
 
-This is for debugging only. When enabled, AdGuard will create a HAR file (HTTP Archive 1.2 format) with detailed info about all filtered requests. You can open it in apps like Fiddler.
+Dies dient ausschließlich dem Debugging. Wenn diese Option aktiviert ist, erstellt AdGuard eine HAR-Datei (HTTP Archive 1.2-Format) mit detaillierten Informationen zu allen gefilterten Anfragen. Diese lassen sich in Anwendungen wie Fiddler öffnen.
 
-Keep in mind: it may slow down your browsing.
+Bitte beachten Sie: Dies kann Ihre Surfgeschwindigkeit verringern.
 
-## Show QUIC in the filtering log
+## QUIC im Filterungsprotokoll anzeigen
 
-When enabled, AdGuard will include QUIC protocol traffic in the filtering log — but only for blocked requests.
+Wenn diese Option aktiviert ist, nimmt AdGuard den Datenverkehr des QUIC-Protokolls in das Filterprotokoll auf — jedoch nur für blockierte Anfragen.
 
 ## Java blockieren
 
-Some websites still use Java plug-ins, which rely on outdated and insecure technology. You can disable these plug-ins for security.
+Einige Websites verwenden noch immer Java-Plug-ins, die auf veralteter und unsicherer Technologie basieren. Sie können diese Plug-ins aus Sicherheitsgründen deaktivieren.
 
-Using the _Block Java_ option does not affect JavaScript — it will remain enabled.
+Die Option _Java blockieren_ hat keine Auswirkungen auf JavaScript — dieses bleibt weiterhin aktiviert.
 
-## Blocking mode for DNS rules
+## Sperrmodus für DNS-Regeln
 
-Choose how AdGuard responds when a domain is blocked by a DNS rule based on the [hosts-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
+Wählen Sie aus, wie AdGuard reagieren soll, wenn eine Domain durch eine DNS-Regel auf Basis der [Hosts-Style-Syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax) blockiert wird.
 
-- Return a `REFUSED` error
-- Return a `NXDOMAIN` error
-- Return a custom IP address
+- Einen `REFUSED`-Fehler zurückgeben
+- Einen `NXDOMAIN`-Fehler zurückgeben
+- Eine benutzerdefinierte IP-Adresse zurückgeben
 
 ### Benutzerdefinierte IPv4-Adresse
 
-If _Custom IP address_ is selected in _Blocking mode for DNS rules_, this IP address will be returned in response to blocked A requests. If none are specified, AdGuard will reply with the default REFUSED error.
+Wenn unter _Sperrmodus für DNS-Regeln_ die Option _Benutzerdefinierte IP-Adresse_ ausgewählt ist, wird diese IP-Adresse als Antwort auf blockierte A-Anfragen zurückgegeben. Wenn keine angegeben sind, antwortet AdGuard mit dem Standardfehler REFUSED.
 
 ### Benutzerdefiniertes IPv6-Adresse
 
-If _Custom IP address_ is selected in _Blocking mode for DNS rules_, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default REFUSED error.
+Wenn unter _Sperrmodus für DNS-Regeln_ die Option _Benutzerdefinierte IP-Adresse_ ausgewählt ist, wird diese IP-Adresse als Antwort auf blockierte AAAA-Anfragen zurückgegeben. Wenn keine angegeben sind, antwortet AdGuard mit dem Standardfehler REFUSED.
 
 ## Fallback-Server
 
-Set backup DNS servers here. AdGuard will use them if the main DNS server doesn’t respond within the timeout you set. You can:
+Legen Sie hier Backup-DNS-Server fest. AdGuard verwendet diese, wenn der Haupt-DNS-Server nicht innerhalb der von Ihnen festgelegten Zeit reagiert. Sie können:
 
-- Use your system’s default DNS servers
-- Add custom fallback servers
-- Or choose not to use fallback servers at all
+- Die Standard-DNS-Server Ihres Systems verwenden
+- Benutzerdefinierte Fallback-Server hinzufügen
+- Oder Sie können sich dafür entscheiden, überhaupt keine Fallback-Server zu verwenden
 
-## DNS server timeout
+## DNS-Server-Timeout
 
-Specify how long (in milliseconds) AdGuard should wait for a DNS response before switching to a fallback server. If left empty or invalid, the default is 5000 ms (5 seconds).
+Geben Sie an, wie lange (in Millisekunden) AdGuard auf eine DNS-Antwort warten soll, bevor es zu einem Fallback-Server wechselt. Wenn dieser Wert leer oder ungültig ist, beträgt der Standardwert 5000 ms (5 Sekunden).
 
-## Custom bootstrap addresses
+## Benutzerdefinierte Bootstrap-Adressen
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in DNS protection. Such a “middle ground” is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In diesem Fall fungiert der Bootstrap als Übersetzer und wandelt die Buchstaben in Zahlen um, die Ihr System versteht.
+Ein Bootstrap ist ein zwischengeschalteter DNS-Server, der dazu dient, die IP-Adresse des sicheren DNS-Servers zu ermitteln, den Sie zuvor im DNS-Schutz ausgewählt haben. Ein solcher „Mittelweg“ ist erforderlich, wenn Protokolle verwendet werden, die die Serveradresse durch Buchstaben bezeichnen (wie beispielsweise DNS-over-TLS). In diesem Fall fungiert der Bootstrap als Übersetzer und wandelt die Buchstaben in Zahlen um, die Ihr System versteht.
 
-But if needed, you can specify different IP addresses here — they’ll be tried in the order from top to bottom. If none work or nothing is entered, AdGuard will fall back to system defaults.
+Bei Bedarf können Sie hier jedoch verschiedene IP-Adressen angeben — diese werden dann in der Reihenfolge von oben nach unten durchprobiert. Wenn keine davon funktioniert oder nichts eingegeben wird, greift AdGuard auf die Systemstandardwerte zurück.
 
 ## DNS-Ausschlüsse
 
-Domains listed here bypass AdGuard DNS servers. Their requests go through the system’s default resolver, and AdGuard does not apply any blocking rules to them.
+Die hier aufgeführten Domains umgehen die DNS-Server von AdGuard. Ihre Anfragen werden über den Standardauflöser des Systems geleitet, und AdGuard wendet keine Sperrregeln auf sie an.

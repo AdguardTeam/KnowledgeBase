@@ -78,8 +78,6 @@ Finder 앱을 엽니다.
 **고객 지원 팀에서 특별히 '고급 제거'를 권장하거나 고급 제거에 익숙한 경우에만 이 지침을 사용하십시오. 또한 '일반 제거'의 모든 단계를 먼저 수행하십시오.**
 
 1. 그다음에는 다음 AdGuard 파일을 삭제합니다.
-    - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (폴더)
-    - ~/Library/Preferences/com.adguard.mac.adguard.plist (파일)
     - ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (폴더)
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (파일)
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (파일)
@@ -89,9 +87,6 @@ Finder 앱을 엽니다.
     이 파일을 삭제하려면 터미널 앱을 열고 다음 명령을 입력하고 실행합니다.
 
     ```bash
-    sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
-    rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"
-    rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist
     rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"
     find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete
     sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist

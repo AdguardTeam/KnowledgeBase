@@ -27,19 +27,19 @@ Der Tab _Zusätzliche Einstellungen_ enthält eine Reihe von Einstellungen, die 
 
 ![Zusätzliche Einstellungen \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
 
-From this tab, you can invert the allowlist and add the AdGuard item to the browser’s context menu. You can also enable the display of the number of blocked ads on the AdGuard icon and notifications about extension updates. Additionally, this section lets you enable notifications about the AdGuard app, open the _Filtering log_, clear the statistics of blocked ads and trackers, or reset the settings.
+In diesem Tab können Sie die Zulassungsliste umkehren und AdGuard zum Kontextmenü des Browsers hinzufügen. Sie können sich auch anzeigen lassen, wie oft Werbung blockiert wurde, und Benachrichtigungen über Updates der Erweiterung aktivieren. Darüber hinaus können Sie in diesem Abschnitt Benachrichtigungen zur AdGuard-App aktivieren, das _Filterungsprotokoll_ öffnen, die Statistiken zu blockierter Werbungen und Trackern löschen oder die Einstellungen zurücksetzen.
 
 Sie können uns auch bei der Entwicklung von Filtern helfen, indem Sie uns Statistiken über die angewendeten Regeln senden: Welche Regeln wurden ausgelöst, auf welchen Websites und wie oft. Diese Option ist standardmäßig deaktiviert, da wir ohne Zustimmung keine Nutzerdaten sammeln. Wenn Sie diese Funktion jedoch aktivieren, werden alle Daten streng anonymisiert.
 
-You can also choose to help us improve the extension by sending us anonymized usage data. This includes the names of the screens you interact with, the names of the buttons you click, and session identifiers. These insights help us understand where users run into friction, refine the experience, and make the extension faster and easier to use. The _Send anonymized usage data_ option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
+Sie können uns auch dabei helfen, die Erweiterung zu verbessern, indem Sie uns anonymisierte Nutzungsdaten senden. Dazu gehören die Namen der Bildschirmfenster, mit denen Sie interagieren, die Namen der Schaltflächen, auf die Sie klicken, und Sitzungskennungen. Diese Erkenntnisse helfen uns zu verstehen, wo Nutzer auf Probleme stoßen, die Benutzererfahrung zu verbessern und die Erweiterung schneller und benutzerfreundlicher zu gestalten. Die Option _Anonymisierte Nutzungsdaten senden_ ist standardmäßig deaktiviert. Wenn Sie diese Option aktivieren, werden alle Daten vollständig anonymisiert und ausschließlich intern verwendet. Sie werden niemals an Dritte weitergegeben.
 
 :::note
 
-The _Send anonymized usage data_ option can also be enabled on the post-installation page in Chromium-based browsers.
+Die Option „Anonymisierte Nutzungsdaten senden“ kann auch auf der Seite nach der Installation in Chromium-basierten Browsern aktiviert werden.
 
 :::
 
-## About {#about}
+## Über uns {#about}
 
 Im Tab _Über uns_ finden Sie Informationen zur aktuellen Version, Links zum Endbenutzer-Lizenzvertrag und zur Datenschutzerklärung sowie zum Repository der Browsererweiterung auf GitHub.
 

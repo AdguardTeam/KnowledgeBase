@@ -5,44 +5,44 @@ sidebar_position: 3
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+В этой статье описывается AdGuard для Windows v8.0 — комплексный блокировщик рекламы, который защищает ваше устройство на системном уровне. Это бета-релиз, который ещё находится в стадии разработки. Чтобы начать им пользоваться, скачайте [бета-версию AdGuard для Windows](https://agrd.io/windows_beta).
 
 :::
 
-This section lets you manage how AdGuard filters your Internet traffic and provides additional tools to control network-related features.
+Этот раздел позволяет управлять тем, как AdGuard фильтрует ваш интернет-трафик, и предоставляет дополнительные инструменты для контроля сетевых функций.
 
-![Network settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
+![Сетевые настройки](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
 
-## Use AdGuard as an HTTP proxy
+## Использовать AdGuard как HTTP-прокси
 
-Enable this option to make AdGuard work as an HTTP proxy. All traffic passing through it will be filtered — not only on your computer but also on other devices in your home network.
+Включите эту опцию, чтобы AdGuard работал как HTTP-прокси. Весь трафик, проходящий через него, будет фильтроваться — не только на вашем компьютере, но и на других устройствах в вашей домашней сети.
 
-To filter traffic on other devices, install AdGuard’s root certificate on them and set up the proxy manually.
+Чтобы фильтровать трафик на других устройствах, установите корневой сертификат AdGuard на них и настройте прокси вручную.
 
-Other settings are enabled by default.
+Другие настройки включены по умолчанию.
 
 ## HTTPS-фильтрация
 
-Most websites use HTTPS encryption today. Without HTTPS filtering, AdGuard cannot block ads on websites like YouTube, Facebook, or X (Twitter).
+Сегодня большинство сайтов используют HTTPS-шифрование. Без HTTPS-фильтрации AdGuard не может блокировать рекламу на таких сайтах, как YouTube, Facebook или X (Twitter).
 
-We recommend keeping the _Filter HTTPS_ option turned on unless you have a specific reason to turn it off.
+Мы рекомендуем оставить опцию _Фильтрация HTTPS_ включённой, если у вас нет веской причины выключить её.
 
-With this option, you can:
+С этой опцией вы можете:
 
-- Reinstall or download the AdGuard certificate
+- Переустановить или скачать сертификат AdGuard
 
-- Add websites to a list that won’t be filtered
+- Добавить сайты в список, который не будет фильтроваться
 
-- Choose whether to filter websites with EV (Extended Validation) certificates
+- Выбрать, фильтровать ли сайты с EV-сертификатами (Extended Validation)
 
-## Proxy for app and filter updates
+## Прокси для обновлений приложения и фильтров
 
-Here you can choose which proxy AdGuard should use to download filter updates or new app versions — the system proxy, a custom proxy, or no proxy at all.
+Здесь можно выбрать, какой прокси AdGuard должен использовать для скачивания обновлений фильтров или новых версий приложений — системный прокси, пользовательский прокси или вообще без прокси.
 
-![Proxy settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
+![Настройки прокси](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
 
-## Use SockFilter driver
+## Использовать драйвер SockFilter
 
-Enable this option to use the SockFilter driver, which helps block ads and trackers in apps on Windows 8 and later.
+Включите эту опцию, чтобы использовать драйвер SockFilter, который помогает блокировать рекламу и трекеры в приложениях на Windows 8 и более поздних версиях.
 
-If this option is disabled, AdGuard will switch to the older WFP driver instead.
+Если эта опция отключена, AdGuard переключится на более старый WFP-драйвер.

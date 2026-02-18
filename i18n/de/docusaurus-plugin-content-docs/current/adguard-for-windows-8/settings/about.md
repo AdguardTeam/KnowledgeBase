@@ -1,14 +1,14 @@
 ---
-title: Über uns
+title: Über die App
 sidebar_position: 4
 ---
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Dieser Artikel beschreibt AdGuard für Windows v8.0, einen umfassenden Werbeblocker, der Ihr Gerät auf Systemebene schützt. Es handelt sich hierbei um eine Beta-Version, die sich noch in der Entwicklung befindet. Um es auszuprobieren, laden Sie die [Beta-Version von AdGuard für Windows](https://agrd.io/windows_beta) herunter.
 
 :::
 
-![About](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/about.png)
+![Über die App](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/about.png)
 
-In addition to information about the current version of the program and used libraries, this screen provides some useful links to License agreement, Privacy policy, acknowledgements, version history, and the main page of our website.
+Neben Informationen zur aktuellen Version der App und den verwendeten Bibliotheken enthält dieser Bildschirm einige nützliche Links zur Lizenzvereinbarung, Datenschutzerklärung, Danksagungen, Versionsverlauf und der Hauptseite unserer Website.

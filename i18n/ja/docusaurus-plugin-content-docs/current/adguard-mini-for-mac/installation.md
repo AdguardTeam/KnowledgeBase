@@ -5,17 +5,17 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事は、Safariブラウザでのみ機能する「AdGuard Mini for Mac」に関するものです。 Mac全体を保護するには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
 ## 動作環境
 
-Requires macOS 12 or later.
+macOS 12以降が必要です。
 
-## How to install AdGuard Mini for Mac
+## AdGuard Mini for Mac のインストール方法
 
-AdGuard Mini for Mac is a free app present in the Mac App Store. To install it on your Mac, do the following:
+「AdGuard Mini」はMac用App Storeにある無料アプリです。 お使いのMacにインストールする方法以下の通りです。
 
 1. Open the App Store and find _AdGuard Mini_ app there.
 
@@ -23,9 +23,15 @@ AdGuard Mini for Mac is a free app present in the Mac App Store. To install it o
 
 2. Press _Get_ → _Install_ → _Open_.
 
-3. In the opened AdGuard Mini window, accept EULA and Privacy policy and click _Continue_.
+3. In the opened AdGuard Mini window, accept EULA and Privacy policy. Here you can also choose to help us improve the extension by sending anonymized usage data. Then click _Continue_.
 
    ![Onboarding](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/first-open.png)
+
+   :::note
+
+   If you choose to share app usage data with AdGuard, the extension will collect anonymized information such as UI interactions and session identifiers. This consent is optional and can be withdrawn at any time. All collected data is fully anonymized, used only internally, and never shared with third parties.
+
+   :::
 
 4. Click _Open settings_.
 
@@ -49,13 +55,13 @@ After you complete these steps, AdGuard Mini for Mac will start functioning in S
 
 To uninstall AdGuard Mini for Mac, do the following:
 
-1. AdGuard for Safari アプリを終了します。
+1. AdGuard Mini アプリを終了します。
 
 2. 左上のメニューで「_Safari_」をクリックします。
 
-3. 「_環境設定…_」→「_拡張機能_」をクリックします。 You will see a list of extensions, AdGuard Mini has seven.
+3. 「_環境設定…_」→「_拡張機能_」をクリックします。 拡張機能の一覧が表示され、AdGuardには7つの拡張機能があります。
 
-4. Uncheck all checkboxes and press _Uninstall_ below any of them.
+4. AdGuard拡張機能すべてのチェックボックスのチェックを外し、それぞれの「アンインストール」ボタンを押します。
 
    ![Unchecked extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
 

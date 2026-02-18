@@ -1,36 +1,36 @@
 ---
-title: Safari toolbar menu
+title: Nabídka panelu nástrojů Safari
 sidebar_position: 8
 ---
 
 ![Safari toolbar assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/assistant.png)
 
-AdGuard Mini has a handy menu right in the Safari toolbar. To open it, click the icon located to the left of the search bar.
+AdGuard Mini má praktické menu přímo na panelu nástrojů Safari. Chcete-li jej otevřít, klikněte na ikonu umístěnou vlevo od vyhledávacího pole.
 
-Here’s what you can do in the toolbar menu:
+V nabídce panelu nástrojů můžete provádět následující akce:
 
-- **Pause icon**
+- **Ikona pozastavení**
 
-  Disables AdGuard Mini
+  Deaktivuje AdGuard Mini
 
-- **Settings icon**
+- **Ikona nastavení**
 
-  Takes you to AdGuard Mini’s _Settings_ screen
+  Přenese vás na obrazovku _Nastavení_ AdGuard Mini
 
-- **Website info**
+- **Informace o webech**
 
-  Indicates the website you are currently on
+  Označuje web, na kterém se právě nacházíte
 
-- **Protection**
+- **Ochrana**
 
-  Turning it off disables filtering on the website you are currently on. Turning it back on resumes filtering on the website
+  Vypnutím se deaktivuje filtrování na webu, na kterém se právě nacházíte. Opětovné zapnutí obnoví filtrování na webu
 
-- **Block element**
+- **Blokování prvku**
 
-  Lets you manually select and block any element on the page: select the element, adjust the selection frame (if needed), and click the _Block_ button. To unblock an element, go to _Settings_ → _User rules_ and delete or uncheck the corresponding rule
+  Umožňuje ručně vybrat a zablokovat jakýkoli prvek na stránce: vyberte prvek, upravte výběrový rámeček (je-li to nutné) a klikněte na tlačítko _Zablokovat_. Chcete-li odblokovat prvek, přejděte do _Nastavení_ → _Uživatelská pravidla_ a odstraňte nebo zrušte zaškrtnutí příslušného pravidla
 
   ![Manual blocking](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/manual-blocking.png)
 
-- **Report an issue**
+- **Hlášení problému**
 
-  Takes you to a special form for reporting issues with some information automatically pre-filled
+  Přesměruje vás na speciální formulář pro hlášení problémů, ve kterém jsou některé informace automaticky předvyplněné

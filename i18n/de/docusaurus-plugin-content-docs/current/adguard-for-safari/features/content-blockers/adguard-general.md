@@ -1,5 +1,5 @@
 ---
-title: AdGuard General (Allgemein)
+title: AdGuard Allgemein
 sidebar_position: 2
 ---
 

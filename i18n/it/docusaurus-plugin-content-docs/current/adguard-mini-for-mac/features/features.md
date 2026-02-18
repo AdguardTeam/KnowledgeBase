@@ -1,36 +1,36 @@
 ---
-title: Features
+title: Funzioni
 sidebar_position: 1
 ---
 
-- [Safari protection](/adguard-mini-for-mac/features/safari-protection.md)
+- [Protezione Safari](/adguard-mini-for-mac/features/safari-protection.md)
 
-  Core filtering feature with customizable options
+  Funzione basilare di filtraggio con opzioni personalizzabili
 
-- [Advanced blocking](/adguard-mini-for-mac/features/advanced-blocking.md)
+- [Blocco Avanzato](/adguard-mini-for-mac/features/advanced-blocking.md)
 
-  Unlocks stronger filtering capabilities
+  Sblocca capacità di filtraggio più potenti
 
-- [User rules](/adguard-mini-for-mac/features/rules.md)
+- [Regole dell'utente](/adguard-mini-for-mac/features/rules.md)
 
   Regole di filtraggio personali per ottimizzare il blocco delle inserzioni
 
-- [Settings](/adguard-mini-for-mac/features/settings/settings.md)
+- [Impostazioni](/adguard-mini-for-mac/features/settings/settings.md)
 
-  Various options that help you configure the app and filtering
+  Varie opzioni che ti aiutano a configurare l'app e il filtraggio
 
-- [Support](/adguard-mini-for-mac/features/support.md)
+- [Supporto](/adguard-mini-for-mac/features/support.md)
 
-  Helpful options for when you have a question or encountered a problem
+  Opzioni utili per quando hai una domanda o riscontri un problema
 
-- [About](/adguard-mini-for-mac/features/about.md)
+- [Informazioni](/adguard-mini-for-mac/features/about.md)
 
-  Info about the app’s current version and a list of helpful links
+  Informazioni sulla versione attuale dell'app e una lista di link utili
 
-- [Safari toolbar menu](/adguard-mini-for-mac/features/toolbar-menu.md)
+- [Menu della barra degli strumenti di Safari](/adguard-mini-for-mac/features/toolbar-menu.md)
 
-  A handy menu in the Safari toolbar
+  Un pratico menu nella barra degli strumenti di Safari
 
-- [Full version](/adguard-mini-for-mac/features/full-version.md)
+- [Versione Completa](/adguard-mini-for-mac/features/full-version.md)
 
-  Advanced features that enhance filtering speed and power
+  Funzionalità avanzate che migliorano la velocità e la potenza del filtraggio

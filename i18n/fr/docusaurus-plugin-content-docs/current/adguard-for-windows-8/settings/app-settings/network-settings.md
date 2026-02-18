@@ -5,44 +5,44 @@ sidebar_position: 3
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Cet article décrit AdGuard pour Windows v8.0, un bloqueur de publicité complet qui protège votre appareil au niveau du système. Il s'agit d'une version bêta encore en développement. Pour l'essayer, téléchargez la [version bêta d'AdGuard pour Windows](https://agrd.io/windows_beta).
 
 :::
 
-This section lets you manage how AdGuard filters your Internet traffic and provides additional tools to control network-related features.
+Cette section vous permet de gérer la façon dont AdGuard filtre votre trafic Internet et fournit des outils supplémentaires pour contrôler les fonctionnalités liées au réseau.
 
-![Network settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
+![Paramètres réseau](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
 
-## Use AdGuard as an HTTP proxy
+## Utiliser AdGuard comme proxy HTTP
 
-Enable this option to make AdGuard work as an HTTP proxy. All traffic passing through it will be filtered — not only on your computer but also on other devices in your home network.
+Activez cette option pour que AdGuard fonctionne en tant que proxy HTTP. Tout le trafic qui le traverse sera soumis au filtrage — pas seulement sur votre ordinateur, mais aussi sur d'autres appareils de votre réseau domestique.
 
-To filter traffic on other devices, install AdGuard’s root certificate on them and set up the proxy manually.
+Pour filtrer le trafic sur d'autres appareils, installez-y le certificat racine d'AdGuard et configurez le proxy manuellement.
 
-Other settings are enabled by default.
+Les autres paramètres sont activés par défaut.
 
 ## Filtrage HTTPS
 
-Most websites use HTTPS encryption today. Without HTTPS filtering, AdGuard cannot block ads on websites like YouTube, Facebook, or X (Twitter).
+La plupart des sites Web utilisent aujourd'hui le chiffrement HTTPS. Sans filtrage HTTPS, AdGuard ne peut pas bloquer les publicités sur des sites Web comme YouTube, Facebook ou X (Twitter).
 
-We recommend keeping the _Filter HTTPS_ option turned on unless you have a specific reason to turn it off.
+Nous vous recommandons de laisser l'option _Filtrer HTTPS_ activée, sauf si vous avez une raison particulière de la désactiver.
 
-With this option, you can:
+Avec cette option, vous pouvez :
 
-- Reinstall or download the AdGuard certificate
+- Réinstaller ou télécharger le certificat AdGuard
 
-- Add websites to a list that won’t be filtered
+- Ajouter des sites Web à une liste qui ne sera pas filtrée
 
-- Choose whether to filter websites with EV (Extended Validation) certificates
+- Choisir de filtrer ou pas les sites web dotés de certificats EV (Extended Validation)
 
-## Proxy for app and filter updates
+## Proxy pour les mises à jour des applications et des filtres
 
-Here you can choose which proxy AdGuard should use to download filter updates or new app versions — the system proxy, a custom proxy, or no proxy at all.
+Ici, vous pouvez choisir quel proxy AdGuard doit utiliser pour télécharger les mises à jour des filtres ou les nouvelles versions de l'app — le proxy système, un proxy personnalisé ou aucun proxy.
 
-![Proxy settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
+![Paramètres du proxy](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
 
-## Use SockFilter driver
+## Utiliser le pilote SockFilter
 
-Enable this option to use the SockFilter driver, which helps block ads and trackers in apps on Windows 8 and later.
+Activez cette option pour utiliser le pilote SockFilter, qui aide à bloquer les publicités et les traqueurs dans les apps sur Windows 8 et versions ultérieures.
 
-If this option is disabled, AdGuard will switch to the older WFP driver instead.
+Si cette option est désactivée, AdGuard passera au pilote WFP plus ancien.

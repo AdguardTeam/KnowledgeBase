@@ -1,22 +1,22 @@
 ---
-title: How to set app exclusions and custom filters
+title: So legen Sie App-Ausschlüsse und benutzerdefinierte Filter fest
 sidebar_position: 5
 ---
 
-In AdGuard CLI, it’s not possible to import app exclusions from other versions of the program. You can, however, manually create the required exclusions and filters by editing several configuration files in the app’s working directory.
+In der AdGuard CLI ist es nicht möglich, App-Ausschlüsse aus anderen Versionen des Programms zu importieren. Sie können jedoch die erforderlichen Ausschlüsse und Filter manuell erstellen, indem Sie mehrere Konfigurationsdateien im Arbeitsverzeichnis der App bearbeiten.
 
-## How to add exclusions
+## So fügen Sie Ausschlüsse hinzu
 
-AdGuard CLI working directory:
+Arbeitsverzeichnis von AdGuard CLI:
 
 - Linux: `~/.local/share/adguard-cli/`
 - macOS: `~/Library/Application Support/adguard-cli/`
 
-Several key files are located in this folder:
+In diesem Ordner befinden sich mehrere wichtige Dateien:
 
-1. `browsers.yaml` — a list of browsers (Safari, Chrome, Firefox, etc.). Here you can enable or disable HTTPS filtering for individual browsers, or completely exclude them from filtering.
+1. `browsers.yaml` – eine Liste von Browsern (Safari, Chrome, Firefox usw.). Hier können Sie das Filtern von HTTPS-Verbindungen für einzelne Browser aktivieren oder deaktivieren oder diese vollständig vom Filtern ausschließen.
 
-**Example browsers.yaml (for Linux)**:
+**Beispiel `browsers.yaml` (für Linux)**:
 
 ```sh
 - name: firefox
@@ -29,7 +29,7 @@ Several key files are located in this folder:
   action: default
 ```
 
-**Example `browsers.yaml` (for macOS)**:
+**Beispiel `browsers.yaml` (für macOS)**:
 
 ```sh
 - name: com.apple.Safari
@@ -42,11 +42,11 @@ Several key files are located in this folder:
   action: default
 ```
 
-To disable HTTPS filtering, replace `default` with `bypass_https`. To completely exclude the app from filtering, replace `default` with `bypass`.
+Um die HTTPS-Filterung zu deaktivieren, ersetzen Sie `default` durch `bypass_https`. Um die App vollständig von der Filterung auszuschließen, ersetzen Sie `default` durch `bypass`.
 
-1. `proxy.yaml` — the main configuration file. It has an apps section where exclusions for any other apps are set.
+1. `proxy.yaml` — die Hauptkonfigurationsdatei. Es gibt einen Bereich für Apps, in dem Ausschlüsse für andere Apps festgelegt werden können.
 
-**Example `proxy.yaml`**:
+**Beispiel `proxy.yaml`**:
 
 ```sh
   - include-list: browsers.yaml
@@ -59,17 +59,17 @@ To disable HTTPS filtering, replace `default` with `bypass_https`. To completely
 
 :::note
 
-On **Linux**, specify the executable name (`chrome`, `firefox`, etc.). On **macOS**, specify the bundle ID, e.g., `com.google.Chrome`, `org.mozilla.firefox`.
+Unter **Linux** geben Sie den Namen der ausführbaren Datei an (`chrome`, `firefox` usw.). Unter **macOS** geben Sie die Bundle-ID an, z. B. `com.google.Chrome`, `org.mozilla.firefox`.
 
 :::
 
-## How to add custom filters
+## So fügen Sie benutzerdefinierte Filter hinzu
 
-The working directory contains the `user.txt` file, where you can add your own blocking or allowing rules for websites. If you have your own list of rules in `.txt` format, connect it via `proxy.yaml`:
+Das Arbeitsverzeichnis enthält die Datei `user.txt`, in der Sie Ihre eigenen Regeln zum Sperren oder Zulassen von Websites hinzufügen können. Wenn Sie eine eigene Liste mit Regeln im `.txt`-Format erstellt haben, verbinden Sie diese über `proxy.yaml`:
 
 ```sh
 filters:
   - 'flm://'
   - 'user.txt'
-  - 'my_filter.txt' # connecting your own file
+  - 'my_filter.txt' # Verbinden Ihrer eigenen Datei
 ```

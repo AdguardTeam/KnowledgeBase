@@ -5,22 +5,22 @@ sidebar_position: 3
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Cet article décrit AdGuard pour Windows v8.0, un bloqueur de publicité complet qui protège votre appareil au niveau du système. Il s'agit d'une version bêta encore en développement. Pour l'essayer, téléchargez la [version bêta d'AdGuard pour Windows](https://agrd.io/windows_beta).
 
 :::
 
-Annoyance filters are designed to improve website usability by blocking non-advertisement elements that distract from or interfere with site interaction or content consumption. These elements include modal windows, interactive forms, cookie consent notifications and requests, mobile app banners, and various widgets.
+Les filtres anti-nuisances sont conçus pour améliorer l'ergonomie des sites Web en bloquant les éléments non publicitaires qui distraient ou perturbent l'interaction avec le site ou la consommation de contenu. Ces éléments comprennent des fenêtres modales, des formulaires interactifs, des notifications et demandes de consentement aux cookies, des bannières d'applications mobiles et widgets de toute sorte.
 
-These filters may contain rules that are not suitable for all users. Sometimes it is recommended to disable them. Les décisions d'ajouter des règles à ce filtre sont prises par les développeurs de filtres, règle par règle.
+Ces filtres peuvent contenir des règles qui ne conviennent pas à tous les utilisateurs. Il est parfois recommandé de les désactiver. Les décisions d'ajouter des règles à ce filtre sont prises par les développeurs de filtres, règle par règle.
 
-![Annoyance filters](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
+![Filtres anti-nuisances](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
 
-**Block cookie notices** removes cookie consent banners on webpages.
+**Bloquer les avis de cookies** retire les bannières de consentement aux cookies sur les pages web.
 
-**Block mobile app banners** removes banners that promote mobile apps on websites.
+**Bloquer les bannières d'apps mobiles** retire les bannières qui promeuvent les apps mobiles sur les sites Web.
 
-**Block other annoyances** removes elements that do not fall under the popular categories of annoyances.
+**Bloquer les autres nuisances** retire les éléments qui ne relèvent pas des catégories populaires de nuisances.
 
-**Block popups** removes all kinds of popups that are not necessary for websites’ operation.
+**Bloquer les pop-ups** supprime tous les types de pop-ups qui ne sont pas nécessaires au fonctionnement des sites web.
 
-**Block widgets** removes online assistants, live support chats, and similar tools.
+**Bloquer les widgets** supprime les assistants en ligne, les chats d'assistance en direct et les outils similaires.

@@ -3,34 +3,34 @@ title: Funkce
 sidebar_position: 1
 ---
 
-- [Safari protection](/adguard-mini-for-mac/features/safari-protection.md)
+- [Ochrana Safari](/adguard-mini-for-mac/features/safari-protection.md)
 
-  Core filtering feature with customizable options
+  Funkce filtrování jádra s možností přizpůsobení
 
-- [Advanced blocking](/adguard-mini-for-mac/features/advanced-blocking.md)
+- [Pokročilé blokování](/adguard-mini-for-mac/features/advanced-blocking.md)
 
-  Unlocks stronger filtering capabilities
+  Odemkne silnější možnosti filtrování
 
-- [User rules](/adguard-mini-for-mac/features/rules.md)
+- [Uživatelská pravidla](/adguard-mini-for-mac/features/rules.md)
 
   Vlastní pravidla filtrování pro přsené doladění blokování reklam
 
-- [Settings](/adguard-mini-for-mac/features/settings/settings.md)
+- [Nastavení](/adguard-mini-for-mac/features/settings/settings.md)
 
-  Various options that help you configure the app and filtering
+  Různé možnosti, které vám pomohou nakonfigurovat aplikaci a filtrování
 
-- [Support](/adguard-mini-for-mac/features/support.md)
+- [Podpora](/adguard-mini-for-mac/features/support.md)
 
-  Helpful options for when you have a question or encountered a problem
+  Užitečné možnosti, pokud máte dotaz nebo narazili jste na problém
 
-- [About](/adguard-mini-for-mac/features/about.md)
+- [Informace](/adguard-mini-for-mac/features/about.md)
 
-  Info about the app’s current version and a list of helpful links
+  Informace o aktuální verzi aplikace a seznam užitečných odkazů
 
-- [Safari toolbar menu](/adguard-mini-for-mac/features/toolbar-menu.md)
+- [Nabídka panelu nástrojů Safari](/adguard-mini-for-mac/features/toolbar-menu.md)
 
-  A handy menu in the Safari toolbar
+  Praktické menu v nástrojové liště Safari
 
-- [Full version](/adguard-mini-for-mac/features/full-version.md)
+- [Plná verze](/adguard-mini-for-mac/features/full-version.md)
 
-  Advanced features that enhance filtering speed and power
+  Pokročilé funkce, které zvyšují rychlost a výkon filtrování
