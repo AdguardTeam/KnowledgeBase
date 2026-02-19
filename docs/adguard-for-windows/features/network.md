@@ -25,13 +25,13 @@ In *Network*, you can also choose which driver to use: SockFilter, WFP, or TDI.
 
 The **TDI** driver is also available, but it is outdated and may cause [filtering issues in some versions of Google Chrome](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). [A temporary workaround exists](https://adguard.com/kb/adguard-for-windows/solving-problems/tdi-driver-and-Chrome-142/), but it’s not a reliable long-term solution.
 
-**SockFilter** is an *experimental*, lightweight network driver. It intercepts network activity at the socket level (TCP/UDP) instead of processing raw packets, which makes it more stable and compatible with other software.
+**SockFilter** is an *experimental*, lightweight network driver. It intercepts network activity at the socket level (TCP/UDP) instead of processing raw packets.
 
-Compared to its alternatives, SockFilter offers:
+Currently, SockFilter Right is still unstable, and you may encounter bugs. When fully tested and implemented, SockFilter has the potential to bring several advantages over other drivers:
 
-- **Better compatibility:** Works smoothly with VPNs, firewalls, and antivirus software.
-- **Lower risk of system crashes:** Runs in a safer part of the Windows networking stack, reducing the chance of system-level failures.
-- **More stability in the future:** When fully tested and implemented, SockFilter will reduce potential errors by operating closer to how applications use the network.
+- Better compatibility with VPNs, firewalls, and antivirus software.
+- Lower risk of system crashes by working in a safer part of the Windows networking stack, reducing the chance of system-level failures.
+- SockFilter has the potential to reduce errors by operating closer to how applications use the network.
 
 ### AdGuard VPN
 
