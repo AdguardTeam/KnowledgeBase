@@ -389,7 +389,7 @@ The following modifiers are the most simple and frequently used. Basically, they
 | Modifier \ Products                                |       [CoreLibs apps][cl-apps]        |    [AdGuard para Chromium][ext-chr]    |   [AdGuard para Chrome MV3][ext-mv3]   |     [AdGuard para Firefox][ext-ff]     |      [AdGuard para iOS][ios-app]       |    [AdGuard Mini for Mac][ext-saf]     | [Bloqueador de contenido AdGuard][and-cb] |
 | --------------------------------------------------- |:-------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:-----------------------------------------:|
 | [$app](#app-modifier)                               |                   ✅                   |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                     ❌                     |
-| [$denyallow](#denyallow-modifier)                   |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                     ❌                     |
+| [$denyallow](#denyallow-modifier)                   |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ❌                    |                   ✅                    |                     ❌                     |
 | [$domain](#domain-modifier)                         |                   ✅                   |                   ✅                    | ✅ [*[1]](#domain-modifier-limitations) |                   ✅                    | ✅ [*[1]](#domain-modifier-limitations) | ✅ [*[1]](#domain-modifier-limitations) |                     ✅                     |
 | [$header](#header-modifier)                         |                   ✅                   | ✅ [*[2]](#header-modifier-limitations) | ✅ [*[2]](#header-modifier-limitations) | ✅ [*[2]](#header-modifier-limitations) |                   ❌                    |                   ❌                    |                     ❌                     |
 | [$important](#important-modifier)                   |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                     ❌                     |
@@ -579,7 +579,7 @@ In the following examples it is implied that requests are sent from `http://exam
 
 :::caution Limitations
 
-In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries are not supported.
+In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries and the `$removeparam` modifier are not supported.
 
 AdGuard for iOS and AdGuard for Safari support the `$domain` modifier but have some limitations. For more details, see the [SafariConverterLib section](#safari-converter--basic--supported-with-limitations).
 
@@ -2670,6 +2670,7 @@ With these rules, specified UTM parameters will be removed from any request save
 [AdGuard for Chrome MV3][ext-mv3] has some limitations:
 
 - Regular expressions, negation and allowlist rules are not supported.
+- Generic rules are applied before specific rules, and redirection occurs only once. This may prevent subsequent or more specific redirects from applying.
 - Group of similar `$removeparam` rules will be combined into one. Example:
 
     ```bash
@@ -2737,6 +2738,7 @@ With these rules, specified UTM parameters will be removed from any request save
 
 1. Rules with the `$removeparam` modifier can only be used [**in trusted filters**](#trusted-filters).
 1. `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers), [content-type modifiers](#content-type-modifiers), and with the `$important` and `$app` modifiers. Rules with any other modifiers are considered invalid and will be discarded.
+1. Although `$domain` is classified as a basic modifier, it's not compatible with `$removeparam` rules in the Manifest V3 extension.
 1. `$removeparam` rules without [content type modifiers](#content-type-modifiers) will only match requests where the content type is `document`.
 
 :::
