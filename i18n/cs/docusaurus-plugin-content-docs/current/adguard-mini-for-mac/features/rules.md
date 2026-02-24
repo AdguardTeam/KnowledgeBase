@@ -5,16 +5,16 @@ sidebar_position: 4
 
 ![User rules](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/user-rules.png)
 
-User rules can be used to customize ad blocking when you want something personal: exclude a website from filtering, unblock requests, or allow scripts on a certain webpage. Lze je přidat ručně, importovat nebo vytvořit automaticky při zablokování prvku na stránce.
+Uživatelská pravidla lze použít k přizpůsobení blokování reklam, když chcete něco osobního: vyloučit webovou stránku z filtrování, odblokovat požadavky nebo povolit skripty na určité webové stránce. Lze je přidat ručně, importovat nebo vytvořit automaticky při zablokování prvku na stránce.
 
 Chcete-li přidávat vlastní pravidla filtrování, použijte [speciální syntaxi](/general/ad-filtering/create-own-filters).
 
-### Rule constructor
+### Nástroj pro tvorbu pravidel
 
-We understand that writing filtering rules yourself is not every user’s cup of tea. That’s why you can just click _Create rule_ to use a rule constructor: choose what you want to do, click through a few options, and you’re done. Block images, videos, scripts, or any other elements you’d rather not see on a page.
+Chápeme, že psaní filtrů není pro každého uživatele snadné. Proto stačí kliknout na _Vytvořit pravidlo_ a použít nástroj pro tvorbu pravidel: vyberte, co chcete udělat, klikněte na několik možností a hotovo. Blokujte obrázky, videa, skripty nebo jakékoli jiné prvky, které na stránce nechcete vidět.
 
 ![Rule constructor](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/build-a-rule.png)
 
-Here’s an example of a tricky case — a cookie popup that resists filtering. Find it in the page code, then open _User rules_ and create a rule to block it:
+Zde je příklad složitého případu — vyskakovací okno s informacemi o souborech cookies, které odolává filtrování. Najděte jej v kódu stránky, poté otevřete _Uživatelská pravidla_ a vytvořte pravidlo, které jej zablokuje:
 
 <iframe class="youtube-video" src="https://cdn.adtidy.org/content/blog/rule.mp4" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

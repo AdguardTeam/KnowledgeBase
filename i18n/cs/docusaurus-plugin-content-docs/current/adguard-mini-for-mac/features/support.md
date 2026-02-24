@@ -5,22 +5,22 @@ sidebar_position: 6
 
 ![Support tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/support.png)
 
-_Support_ section has helpful options in case you have a question or encounter a problem:
+Sekce _Podpora_ obsahuje užitečné možnosti pro případ, že máte dotaz nebo narazíte na problém:
 
 - FAQ
 
-  Answers to a lot of questions and problems can be found here
+  Odpovědi na mnoho otázek a problémů najdete zde
 
 - Nahlášení nekorektního blokování
 
-  Takes you to the page where you can report a bug or a problem in details
+  Přesměruje vás na stránku, kde můžete podrobně nahlásit chybu nebo problém
 
-- Contact support
+- Kontaktování podpory
 
-  Contact our support team directly from the app, allowing you to attach logs and app info
+  Kontaktujte náš tým podpory přímo z aplikace, kde můžete připojit logy a informace o aplikaci
 
   ![Contact support screen](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/contact-support.png)
 
-- Diskutovat
+- Diskuze
 
-  Takes you to a page where you can find links to AdGuard’s social media and GitHub
+  Přesměruje vás na stránku, kde najdete odkazy na sociální sítě AdGuard a GitHub

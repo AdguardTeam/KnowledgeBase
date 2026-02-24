@@ -23,9 +23,15 @@ AdGuard Mini for Mac is a free app present in the Mac App Store. To install it o
 
 2. Press _Get_ → _Install_ → _Open_.
 
-3. In the opened AdGuard Mini window, accept EULA and Privacy policy and click _Continue_.
+3. In the opened AdGuard Mini window, accept EULA and Privacy policy. Here you can also choose to help us improve the extension by sending anonymized usage data. Then click _Continue_.
 
    ![Onboarding](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/first-open.png)
+
+   :::note
+
+   If you choose to share app usage data with AdGuard, the extension will collect anonymized information such as UI interactions and session identifiers. This consent is optional and can be withdrawn at any time. All collected data is fully anonymized, used only internally, and never shared with third parties.
+
+   :::
 
 4. Click _Open settings_.
 

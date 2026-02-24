@@ -9,39 +9,39 @@ Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor rekla
 
 :::
 
-This section lets you manage how AdGuard filters your Internet traffic and provides additional tools to control network-related features.
+V této části můžete spravovat způsob, jakým AdGuard filtruje váš internetový provoz, a najdete zde další nástroje pro ovládání funkcí souvisejících se sítí.
 
 ![Network settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
 
-## Use AdGuard as an HTTP proxy
+## Použít AdGuard jako HTTP proxy
 
-Enable this option to make AdGuard work as an HTTP proxy. All traffic passing through it will be filtered — not only on your computer but also on other devices in your home network.
+Tuto možnost povolte, aby AdGuard fungoval jako HTTP proxy. All traffic passing through it will be filtered — not only on your computer but also on other devices in your home network.
 
 To filter traffic on other devices, install AdGuard’s root certificate on them and set up the proxy manually.
 
-Other settings are enabled by default.
+Ostatní nastavení jsou ve výchozím nastavení povolena.
 
 ## HTTPS filtrování
 
-Most websites use HTTPS encryption today. Without HTTPS filtering, AdGuard cannot block ads on websites like YouTube, Facebook, or X (Twitter).
+Většina webových stránek dnes používá šifrování HTTPS. Without HTTPS filtering, AdGuard cannot block ads on websites like YouTube, Facebook, or X (Twitter).
 
 We recommend keeping the _Filter HTTPS_ option turned on unless you have a specific reason to turn it off.
 
-With this option, you can:
+S touto volbou můžete:
 
-- Reinstall or download the AdGuard certificate
+- Přeinstalovat nebo stáhnnout AdGuard certifikát
 
-- Add websites to a list that won’t be filtered
+- Přidat webové stránky do seznamu, který nebude filtrován
 
-- Choose whether to filter websites with EV (Extended Validation) certificates
+- Vyberat, zda chcete filtrovat webové stránky s certifikáty EV (Extended Validation)
 
-## Proxy for app and filter updates
+## Proxy pro aktualizace aplikace a filtrování
 
 Here you can choose which proxy AdGuard should use to download filter updates or new app versions — the system proxy, a custom proxy, or no proxy at all.
 
 ![Proxy settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
 
-## Use SockFilter driver
+## Použít ovladač SockFilter
 
 Enable this option to use the SockFilter driver, which helps block ads and trackers in apps on Windows 8 and later.
 

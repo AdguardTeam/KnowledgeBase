@@ -9,27 +9,27 @@ Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor rekla
 
 :::
 
-Many websites collect data about their visitors, including IP addresses, browser and OS information, screen resolution, and even the page you came from. Cookies can be used to identify your browser, remember your preferences, or recognize you when you return. Tracking protection prevents such systems from collecting your personal data. Learn more in our [article about Tracking protection in AdGuard](https://adguard.com/kb/general/stealth-mode/)
+Mnoho webových stránek shromažďuje údaje o svých návštěvnících, včetně IP adres, informací o prohlížeči a operačním systému, rozlišení obrazovky a dokonce i stránky, ze které jste přišli. Soubory cookies mohou být použity k identifikaci vašeho prohlížeče, zapamatování vašich preferencí nebo k rozpoznání vás při vašem návratu. Ochrana před sledováním zabraňuje takovým systémům ve sběru vašich osobních údajů. Další informace naleznete v našem [článku o Ochraně před sledováním v AdGuardu](https://adguard.com/kb/general/stealth-mode/)
 
 ![Tracking protection](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
 
-If you don’t want to spend time adjusting filters manually, you can simply pick one of the ready-made protection levels:
+Pokud nechcete trávit čas ručním nastavováním filtrů, můžete si jednoduše vybrat jednu z přednastavených úrovní ochrany:
 
-- _Standard_: enabled by default and provides reliable protection for everyday browsing.
-- _High_: removes tracking parameters from page URLs and blocks third-party cookies. You may have to re-log in to some websites or face other cookie-related issues.
-- _Extreme_: limits cookie lifetime of third-party cookies and blocks certain browser APIs. Some websites may not work correctly.
+- _Standardní_: výchozí nastavení, které poskytuje spolehlivou ochranu při běžném prohlížení.
+- _Vysoká_: odebere sledovací parametry z URL stránek a blokuje cookies třetích stran. Možná se budete muset znovu přihlašovat na některé webové stránky nebo čelit dalším problémům souvisejícím se soubory cookies.
+- _Extrémní_: omezuje životnost cookies třetích stran a blokuje určité API prohlížeče. Některé webové stránky nemusí fungovat správně.
 
-For maximum flexibility, select _Custom_ and adjust everything manually. The settings there are divided into five categories:
+Pro maximální flexibilitu vyberte možnost _Vlastní_ a vše nastavte ručně. Nastavení jsou rozdělena do pěti kategorií:
 
-- [General settings](#general-settings)
+- [Obecná nastavení](#general-settings)
 
-- [Tracking methods](#tracking-methods)
+- [Metody sledování](#tracking-methods)
 
-- [Browser API](#browser-api)
+- [API prohlížeče](#browser-api)
 
-- [Windows tracking](#windows-tracking)
+- [Sledování Windows](#windows-tracking)
 
-- [Miscellaneous](#miscellaneous)
+- [Různé](#miscellaneous)
 
 ## Obecná nastavení
 
@@ -37,19 +37,19 @@ For maximum flexibility, select _Custom_ and adjust everything manually. The set
 
 ### Blokovat slídiče
 
-Blocks trackers and web analytics using _AdGuard Tracking Protection filter_.
+Blokuje slídiče a nástroje pro webovou analýzu pomocí _AdGuard filtru ochrany sledování_.
 
 ### Odebrat sledovací parametry z URL
 
-Strips tracking parameters such as `utm_*` and `fb_ref` from pages’ URLs using _AdGuard URL Tracking filter_.
+Odstraňuje sledovací parametry, jako jsou `utm_*` a `fb_ref`, z URL adres stránek pomocí _filtru AdGuard URL Tracking_.
 
-### Hide your search queries
+### Skrýt vyhledávací dotazy
 
-Hides queries for websites visited from a search engine. When you get directed to a website from Google, Yahoo, or any other search engine, this option hides the search query that you used to find that website.
+Skryje vyhledávací fráze ze stránek navštívených skrze vyhledávače. Když jste přesměrováni na webovou stránku z vyhledávače Google, Yahoo nebo jiného vyhledávače, tato možnost skryje vyhledávací dotaz, který jste použili k nalezení dané webové stránky.
 
-### Ask websites not to track you
+### Požádat webové stránky, aby vás nesledovaly
 
-Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit.
+Odešle webovým stránkám, které jste navštívili signály [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track).
 
 ## Metody sledování
 
@@ -57,23 +57,23 @@ Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) a
 
 ### Smazat cookies třetích stran
 
-Websites use cookies to store your preferences — for example, the language you chose, your location, or the items in your shopping cart. When you return, the browser sends these cookies back so the site can recognize you.
+Webové stránky používají soubory cookies k ukládání vašich preferencí — například zvolený jazyk, vaši polohu nebo položky ve vašem nákupním košíku. Po návratu prohlížeč tyto soubory cookies odešle zpět, aby vás web mohl rozpoznat.
 
-Third-party cookies work the same way, but they are created by domains other than the one you’re visiting. For instance, cnn.com may include a Facebook _Like_ widget that sets a cookie later read by Facebook. Advertisers often use such cookies to track which other sites you visit.
+Cookies třetích stran fungují stejně, ale vytvářejí je domény jiné než ta, kterou navštěvujete. Například cnn.com může obsahovat widget Facebook _Like_, který nastaví cookies, které později přečte Facebook. Inzerenti často používají tyto soubory cookies ke sledování, které další stránky navštěvujete.
 
-With this option, you can set a time limit (in minutes) after which all third-party cookies will be deleted. If you set the timer to 0, such cookies will be blocked completely.
+Pomocí této možnosti můžete nastavit časový limit (v minutách), po jehož uplynutí budou všechny soubory cookies třetích stran smazány. Pokud nastavíte časovač na 0, takové cookies budou zcela zablokovány.
 
 ![Time-to-live](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/delete_third_party.png)
 
 :::caution
 
-Keep in mind that this setting removes all third-party cookies, including those used for logins via social networks or other external services. This means you may need to log in again from time to time or deal with other cookie-related issues. If you only want to block tracking cookies, use [_AdGuard Tracking Protection filter_](/general/ad-filtering/filter-policy/#tracking-protection-filter).
+Mějte na paměti, že toto nastavení odstraní všechny cookies třetích stran, včetně těch používaných pro přihlášení prostřednictvím sociálních sítí nebo jiných externích služeb. To znamená, že se možná budete muset čas od času znovu přihlásit nebo řešit jiné problémy související s cookies. Pokud chcete blokovat pouze sledovací soubory cookies, použijte [_filtr AdGuard Tracking Protection_](/general/ad-filtering/filter-policy/#tracking-protection-filter).
 
 :::
 
 ### Smazat vlastní cookies (není doporučeno)
 
-This option deletes cookies set by the website you are currently visiting after a selected period of time (in minutes). When the timer runs out, all such cookies are removed. Set the timer to 0 to block them completely.
+Tato možnost odstraní soubory cookies nastavené webovou stránkou, kterou právě navštěvujete, po uplynutí zvolené doby (v minutách). Když časovač vyprší, všechny takové sookies jsou odstraněny. Pro úplné zablokování nastavte časovač na 0.
 
 :::caution
 
@@ -83,15 +83,15 @@ Tuto možnost nedoporučujeme povolovat, protože může vážně narušit prác
 
 ### Blokovat záhlaví ETag a If-None-Match
 
-Removes the ETag and If-None-Match headers from requests and responses to prevent websites from using them for tracking.
+Odstraňuje hlavičky ETag a If-None-Match z požadavků a odezev, aby webové stránky nemohly tyto hlavičky používat ke sledování.
 
-When a browser addresses a page, the server assigns it an ETag — a unique identifier used to cache the page’s contents. On subsequent visits, the browser sends the same ETag back to the server. This allows the server to recognize the visitor. As long as the cached files remain, the ETag is transmitted with every request. If the page also contains embedded elements from other servers, such as images or iframes, those servers can use ETags to track your activity without your knowledge.
+Když prohlížeč vyvolá stránku, server jí přiřadí ETag — jedinečný identifikátor používaný k ukládání obsahu stránky do mezipaměti. Při následujících návštěvách prohlížeč odešle stejný ETag zpět na server. To umožňuje serveru rozpoznat návštěvníka. Dokud jsou soubory uložené v mezipaměti zachovány, je ETag přenášen s každým požadavkem. Pokud stránka obsahuje také vložené prvky z jiných serverů, jako jsou obrázky nebo iframes, mohou tyto servery pomocí ETags sledovat vaši aktivitu bez vašeho vědomí.
 
 ### Blokovat autorizační hlavičku třetí strany
 
-Disables cached authorization data that can be used for tracking purposes. Může narušovat funkčnost některých rozšíření prohlížeče a webových stránek.
+Zakáže autorizační data uložená v mezipaměti, která lze použít pro účely sledování. Může narušovat funkčnost některých rozšíření prohlížeče a webových stránek.
 
-The Authorization header value is cached by the browser and automatically sent with every request to the same domain. Since it accompanies each request, it can be used to identify and track you similarly to how cookies do.
+Hodnota autorizační hlavičky je uložena v mezipaměti prohlížeče a automaticky odeslána s každým požadavkem na stejnou doménu. Jelikož doprovází každou žádost, lze jej použít k identifikaci a sledování podobně jako soubory cookies.
 
 ## API prohlížeče
 
@@ -99,21 +99,21 @@ The Authorization header value is cached by the browser and automatically sent w
 
 ### Blokovat WebRTC
 
-Blocks WebRTC, a known vulnerability that can leak your real IP address even if you use a proxy or VPN.
+Blokuje WebRTC, známou zranitelnost, která může prozradit vaši skutečnou IP adresu, i když používáte proxy server nebo VPN.
 
-WebRTC (Web Real-Time Communication) is a technology that allows direct data streaming between browsers and apps. It can reveal your true IP address, even if you use a proxy or VPN. Enabling this option may disrupt certain browser applications, such as messengers, chats, cinemas, or games.
+WebRTC (Web Real-Time Communication) je technologie, která umožňuje přímé streamování dat mezi prohlížeči a aplikacemi. Umožňuje jiným uživatelům zjistit vaši skutečnou IP adresu, i když používáte proxy nebo VPN. Povolení této možnosti může narušit práci některých aplikací prohlížeče, například messengerů, chatů, kin nebo her.
 
 ### Blokovat Push API
 
-The Push API allows servers to send messages to web applications regardless of the activity status of your browser. This is why you may receive notifications from websites even if your browser is hidden in the tray or not launched. Enabling this option completely blocks the Push API.
+Push API umožňuje serverům odesílat zprávy do webových aplikací bez ohledu na stav aktivity prohlížeče. Oznámení z různých webových stránek se tak mohou zobrazovat, i když je prohlížeč skrytý v liště nebo není spuštěný. Povolení této volby zcela blokuje Push API.
 
 ### Blokovat lokalizační API
 
-When this option is enabled, the browser will no longer send GPS data to websites. This prevents them from determining your location, altering search results, or tailoring content based on where you are.
+Pokud je tato možnost zapnutá, prohlížeč už nebude posílat GPS data na weby. Tím se zabrání tomu, aby zjistili vaši polohu, změnili výsledky vyhledávání nebo přizpůsobili obsah na základě toho, kde se nacházíte.
 
 ### Blokovat Flash
 
-The Flash Player plugin is outdated and highly vulnerable to viruses and exploits. It can also slow down website loading. Enabling this option prevents browsers from detecting Flash components (such as plugins or ActiveXObject objects), which effectively disables Flash support.
+Plugin Flash Player je zastaralý a velmi náchylný k virům a zneužití. Může také zpomalit načítání webových stránek. Povolení této možnosti zabrání prohlížečům detekovat komponenty Flash (například pluginy nebo objekty ActiveXObject), což účinně deaktivuje podporu Flash.
 
 ## Sledování systému Windows
 
@@ -121,19 +121,19 @@ The Flash Player plugin is outdated and highly vulnerable to viruses and exploit
 
 ### Zakázat telemetrii systému Windows
 
-Disables sending technical data about your system and app usage.
+Zakáže odesílání technických údajů o používání systému a aplikací.
 
 ### Vypnout reklamní ID
 
-Disables Advertising ID to block tracking of your app usage.
+Zakáže reklamní ID pro blokování sledování používání aplikace.
 
 ### Zakázat automatické hlášení Microsoft Defender
 
-Blocks automatic reporting and sampling of suspected malware.
+Blokuje automatické hlášení a odběr vzorků podezřelého malwaru.
 
 ### Zakázat službu směrování zpráv WAP Push
 
-Disables data collection about Windows component problems
+Zakáže sběr dat o problémech s komponentami systému Windows
 
 ## Různé
 
@@ -141,17 +141,17 @@ Disables data collection about Windows component problems
 
 ### Skrýt třetím stranám referenční ID
 
-Referer is an HTTP header included in browser-to-server requests. Obsahuje adresu URL zdroje požadavku. Při přechodu z jedné stránky na druhou uloží referenční ID adresu URL původní stránky. Na serveru, který je hostitelem cílové webové stránky, je často instalován software, který analyzuje referenční ID a získává z něj různé informace.
+Referenční ID je hlavička HTTP používaná v požadavcích prohlížeče na server. Obsahuje adresu URL zdroje požadavku. Při přechodu z jedné stránky na druhou uloží referenční ID adresu URL původní stránky. Na serveru, který je hostitelem cílové webové stránky, je často instalován software, který analyzuje referenční ID a získává z něj různé informace.
 
-Enabling the _Hide Referer from third-parties_ option prevents third-party websites from seeing this information by altering or removing the header.
+Povolení možnosti _Skrýt třetím stranám referenční ID_ zabrání webovým stránkám třetích stran v zobrazení těchto informací změnou nebo odstraněním záhlaví.
 
-You can also enter a custom value in the _Custom Referer_ field. Chcete-li použít výchozí referenční ID, ponechte pole prázdné.
+Můžete také zadat vlastní hodnotu do pole _Vlastní Referer_. Chcete-li použít výchozí referenční ID, ponechte pole prázdné.
 
-Note that to be able to filter traffic, AdGuard applications intercept browser-to-server requests. Požadavky na reklamní, sledovací a phishingové servery mohou být před odesláním na server změněny nebo zcela zablokovány.
+Všimněte si, že aby bylo možné filtrovat provoz, aplikace AdGuard 'zachycují' požadavky prohlížeče na server. Požadavky na reklamní, sledovací a phishingové servery mohou být před odesláním na server změněny nebo zcela zablokovány.
 
-Same goes for the _Hide Referer from third parties_ option: To filter traffic, AdGuard intercepts HTTP(S) requests and may alter or block them before they reach the server. The change happens only after the request leaves your browser. For this reason, if you check headers inside the browser (for example with Chrome Developer Tools), you will still see the original Referer. To confirm that it has been modified, you can use external tools such as Fiddler.
+Totéž platí pro možnost _Skrýt referenční ID před třetími stranami_: Aby filtroval provoz, AdGuard zachycuje HTTP(S) požadavky a může je změnit nebo blokovat, než se dostanou na server. Změna nastane až poté, co požadavek opustí váš prohlížeč. Z tohoto důvodu, pokud zkontrolujete hlavičky v prohlížeči (například pomocí nástrojů Chrome Developer Tools), uvidíte stále původní odkaz Referer. K potvrzení, že došlo k úpravě, můžete použít externí nástroje, jako je například Fiddler.
 
-### Hide your User-Agent
+### Skrýt User-Agent
 
 When you visit a website, your browser sends a header called User-Agent as part of the HTTP request. It looks like a text line that begins with “User-Agent:”. This line usually contains details such as the browser name and version, operating system, and language settings.
 

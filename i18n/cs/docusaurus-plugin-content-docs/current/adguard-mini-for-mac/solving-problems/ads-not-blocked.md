@@ -5,26 +5,26 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Tento článek je o AdGuardu Mini pro Mac, který chrání pouze váš prohlížeč Safari. Chcete-li zcela ochránit svůj Mac, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-In some cases, filtering may not work and ads may still be displayed even though AdGuard Mini for Mac and the proper filters are enabled. K tomu obvykle dochází, když se něco pokazí při aktualizací filtrů kvůli chybám v prohlížeči Safari.
+V některých případech nemusí filtrování fungovat a reklamy se mohou zobrazovat, i když je AdGuard Mini pro Mac a příslušné filtry povoleny. K tomu obvykle dochází, když se něco pokazí při aktualizací filtrů kvůli chybám v prohlížeči Safari.
 
 ### Jak to opravit
 
 1. Otevřete Safari.
 2. Klikněte na _Safari_ v nabídce v levém horním rohu.
 3. Klikněte na _Nastavení…_ → _Rozšíření_.
-4. Clear the checkboxes for AdGuard Mini’s extensions: _Custom_, _General_, _Other_, _Privacy_, _Security_, _Social_, and _AdGuard for Safari_.
+4. Zrušte zaškrtnutí políček u rozšíření AdGuard Mini: _Vlastní_, _Obecné_, _Jiné_, _Soukromí_, _Zabezpečení_, _Sociální sítě_, _AdGuard pro Safari_.
    ![Unchecked extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
 5. Restartujte Safari.
-6. Return to Safari → _Settings..._ → _Extensions_ and re-enable the AdGuard extensions.
-7. Open AdGuard Mini’s menu.
-8. Click _Check for updates_ icon.
+6. Vraťte se do Safari → _Nastavení..._ → _Rozšíření_ a znovu povolte rozšíření AdGuardu.
+7. Otevřete menu AdGuard Mini.
+8. Klikněte na ikonu _Zkontrolovat aktualizace_.
    ![Update button \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/update-button.png)
-9. Do not close the AdGuard Mini window until the filters are updated.
+9. Nezavírejte okno AdGuard Mini, dokud nebudou filtry aktualizovány.
 
-If this doesn’t help and ads are still not being blocked, please contact our support at [support@adguard.com](mailto:support@adguard.com).
+Pokud to nepomůže a reklamy stále nejsou blokovány, kontaktujte naši podporu [support@adguard.com](mailto:support@adguard.com).
 
-If you only have problems with a specific page or website, you can report it directly from the browser: click the AdGuard Mini icon next to the Safari search bar and then click _Report an issue_.
+Pokud máte problémy pouze s konkrétní stránkou nebo webem, můžete je nahlásit přímo z prohlížeče: klikněte na ikonu AdGuard Mini vedle vyhledávacího řádku Safari a poté klikněte na _Nahlásit problém_.

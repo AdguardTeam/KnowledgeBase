@@ -9,16 +9,16 @@ Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor rekla
 
 :::
 
-There are several websites that children shouldn’t be able to access. _Parental control_ helps you solve this problem.
+Existuje několik webových stránek, ke kterým by děti neměly mít přístup. _Rodičovská ochrana_ vám pomůže tento problém vyřešit.
 
 ![Parental control](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/parental.png)
 
-When _Parental control_ is enabled, AdGuard scans the content of webpages and blocks those that may be harmful or inappropriate for children. This includes adult images and text, crude language, violence, and drug-related content.
+Když je povolena _Rodičovská ochrana_, AdGuard skenuje obsah webových stránek a blokuje ty, které mohou být škodlivé nebo nevhodné pro děti. To zahrnuje obrázky a texty pro dospělé, vulgární jazyk, násilí a obsah související s drogami.
 
-You can also turn on _Safe search_ to remove inappropriate links from search results.
+Můžete také zapnout funkci _Bezpečné vyhledávání_, která odstraní nevhodné odkazy z výsledků vyhledávání.
 
-To prevent children from downloading unwanted programs, enable the _Block downloading exe.files_ option. This option blocks them from downloading and installing software.
+Chcete-li zabránit dětem ve stahování nežádoucích programů, povolte možnost _Blokovat stahování souborů exe_. Tato možnost jim znemožňuje stahovat a instalovat software.
 
-You can manage the _Blocklist_ and the _Allowlist_ to decide which websites should be blocked and which should be allowed.
+Můžete spravovat _Seznam zakázaných_ a _Seznam povolených_, abyste rozhodli, které webové stránky by měly být zablokovány a které ne.
 
-Finally, you can protect these settings with a password and choose which user accounts they apply to.
+Nakonec můžete tato nastavení chránit heslem a vybrat, na které uživatelské účty se budou vztahovat.

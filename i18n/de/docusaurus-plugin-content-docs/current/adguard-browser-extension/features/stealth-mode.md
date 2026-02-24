@@ -1,5 +1,5 @@
 ---
-title: Tracking protection (formerly Stealth Mode)
+title: Tracking-Schutz (Privatsphäre)
 sidebar_position: 3
 ---
 
@@ -9,20 +9,20 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
 :::
 
-The purpose of _Tracking protection_ is to safeguard your sensitive personal data from online trackers and fraudsters. There are slight differences in the tracking protection features between Chromium-based browsers, which support MV3, and non-Chromium browsers, which support MV2.
+Das Ziel des _Tracking-Schutzes_ ist es, Ihre sensiblen persönlichen Daten vor Online-Trackern und Betrügern zu schützen. Es gibt geringfügige Unterschiede bei den Tracking-Schutzfunktionen zwischen Chromium-basierten Browsern, die MV3 unterstützen, und Nicht-Chromium-Browsern, die MV2 unterstützen.
 
-![Tracking protection in Chromium-based browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv3_trackingProtection.png)
+![Tracking-Schutz in Chromium-basierten Browsern \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv3_trackingProtection.png)
 
-_Tracking protection_ in Chromium-based browsers
+_Tracking-Schutz_ in Chromium-basierten Browsern
 
-![Tracking protection in non-Chromium browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv2_trackingProtection.png)
+![Tracking-Schutz in Nicht-Chromium-Browsern \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv2_trackingProtection.png)
 
-_Tracking protection_ in non-Chromium browsers
+_Tracking-Schutz_ in Nicht-Chromium-Browsern
 
-_Tracking protection_ features prevent websites from seeing the search query you used to find them on the Internet, automatically delete third-party and website cookies, and more. A [separate article](/general/stealth-mode) is devoted to all these features.
+_Tracking-Schutz_ verhindert, dass Websites die Suchanfrage einsehen können, mit der Sie sie im Internet gefunden haben — es werden automatisch Cookies von Drittanbietern und Websites gelöscht und vieles mehr. Alle diese Funktionen werden in einem [separaten Artikel](/general/stealth-mode) beschrieben.
 
 :::note
 
-Browser extensions are limited to a specific browser and are subject to its technical restrictions. Therefore, they cannot offer all the tracking protection features available in full-fledged ad-blocking apps.
+Browsererweiterungen sind auf einen bestimmten Browser beschränkt und unterliegen dessen technischen Beschränkungen. Daher können sie nicht alle Tracking-Schutzfunktionen bieten, die in vollwertigen Werbeblocker-Apps zur Verfügung stehen.
 
 :::

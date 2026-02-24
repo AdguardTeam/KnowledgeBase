@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ![Filters tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/filters.png)
 
-In _Settings_ → _Filters_, you can enable separate filters or whole categories of filters.
+前往「_设置_」→「_过滤_」，启用单独的过滤器或整个过滤器类别。
 
 Filters are the backbone of ad blocking and basically it’s what keeps the Internet clean. 过滤器是用特殊语法编写的规则列表。 根据这些规则，内容拦截器可以过滤网络流量：拦截广告或对恶意网站的请求。
 

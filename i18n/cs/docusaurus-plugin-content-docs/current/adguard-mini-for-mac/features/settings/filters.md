@@ -5,20 +5,20 @@ sidebar_position: 2
 
 ![Filters tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/filters.png)
 
-In _Settings_ → _Filters_, you can enable separate filters or whole categories of filters.
+V sekci _Nastavení_ → _Filtry_ můžete povolit jednotlivé filtry nebo celé kategorie filtrů.
 
-Filters are the backbone of ad blocking and basically it’s what keeps the Internet clean. Filtr je seznam pravidel zapsaný ve speciální syntaxi. Podle těchto pravidel mohou blokátory obsahu filtrovat provoz webu: blokovat reklamy nebo požadavky na škodlivé webové stránky.
+Filtry jsou základem blokování reklam a v podstatě udržují internet čistý. Filtr je seznam pravidel zapsaný ve speciální syntaxi. Podle těchto pravidel mohou blokátory obsahu filtrovat provoz webu: blokovat reklamy nebo požadavky na škodlivé webové stránky.
 
-Filters are combined into eight thematic categories: _Ad Blocking, Privacy, Social widgets, Annoyances, Security, Language-specific filters, Custom,_ and _Other filters_.
+Filtry jsou sdruženy do osmi tematických kategorií: _Blokování reklam, Ochrana soukromí, Widgety sociálních sítí, Obtěžování, Zabezpečení, Jazykově specifické filtry, Vlastní_ a _Ostatní filtry_.
 
 Přečtěte si více o [AdGuard filtrech](/general/ad-filtering/adguard-filters) nebo [obecném filtrování reklam](/general/ad-filtering/how-ad-blocking-works).
 
-Changes in _Filters_ are also reflected in _Settings_ → _Safari extensions_.
+Změny v _Filtrech_ se projeví také v _Nastavení_ → _Rozšíření Safari_.
 
 ## Vlastní filtry
 
 ![Create custom filter](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/create-custom.png)
 
-To add a custom filter, go to _Settings_ → _Filters_ → _Custom filters_ and enter a URL or a local file path in the relevant field.
+Chcete-li přidat vlastní filtr, přejděte do _Nastavení_ → _Filtry_ → _Vlastní filtry_ a do příslušného pole zadejte URL nebo cestu k lokálnímu souboru.
 
-You can find a lot of filters at [filterlists.com](https://filterlists.com/).
+Další filtry najdete na [filterlists.com](https://filterlists.com/).

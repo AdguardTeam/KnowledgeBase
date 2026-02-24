@@ -110,7 +110,7 @@ This setting has two modes:
 
 ### Filtraggio
 
-#### Capture HAR
+#### Cattura HAR
 
 If this setting is enabled, AdGuard will log all filtered HTTP requests in HAR 1.2 format to the “har” subdirectory in the app cache directory. These files can be analyzed with the Fiddler tool.
 

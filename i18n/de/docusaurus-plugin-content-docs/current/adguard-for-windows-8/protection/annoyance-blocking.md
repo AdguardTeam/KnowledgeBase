@@ -1,26 +1,26 @@
 ---
-title: Belästigungsblockierung
+title: Blockieren von Belästigungen
 sidebar_position: 3
 ---
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Dieser Artikel beschreibt AdGuard für Windows v8.0, einen umfassenden Werbeblocker, der Ihr Gerät auf Systemebene schützt. Es handelt sich hierbei um eine Beta-Version, die sich noch in der Entwicklung befindet. Um es auszuprobieren, laden Sie die [Beta-Version von AdGuard für Windows](https://agrd.io/windows_beta) herunter.
 
 :::
 
-Annoyance filters are designed to improve website usability by blocking non-advertisement elements that distract from or interfere with site interaction or content consumption. These elements include modal windows, interactive forms, cookie consent notifications and requests, mobile app banners, and various widgets.
+Belästigungsfilter wurden entwickelt, um die Benutzerfreundlichkeit von Websites zu verbessern, indem sie Elemente blockieren, die keine Werbung sind und die Interaktion mit der Website oder die Nutzung von Inhalten stören oder beeinträchtigen. Zu diesen Elementen gehören modale Fenster, interaktive Formulare, Benachrichtigungen und Anfragen zur Cookie-Zustimmung, Banner für mobile Apps und verschiedene Widgets.
 
-These filters may contain rules that are not suitable for all users. Sometimes it is recommended to disable them. Die Entscheidung, diesem Filter Regeln hinzuzufügen, wird von den Filterentwickler:innen für jede einzelne Regel getroffen.
+Diese Filter können Regeln enthalten, die nicht für alle geeignet sind. Manchmal ist es empfehlenswert, sie zu deaktivieren. Die Entscheidung, diesem Filter Regeln hinzuzufügen, wird von den Filterentwickler:innen für jede einzelne Regel getroffen.
 
-![Annoyance filters](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
+![Belästigungsfilter](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
 
-**Block cookie notices** removes cookie consent banners on webpages.
+**Cookies-Hinweise blockieren** entfernt Cookie-Einwilligungsbanner von Websites.
 
-**Block mobile app banners** removes banners that promote mobile apps on websites.
+**Banner für mobile Apps blockieren** entfernt Banner, die auf Websites für mobile Apps werben.
 
-**Block other annoyances** removes elements that do not fall under the popular categories of annoyances.
+**Andere Belästigungen blockieren** entfernt Elemente, die nicht unter die gängigen Kategorien von Belästigungen fallen.
 
-**Block popups** removes all kinds of popups that are not necessary for websites’ operation.
+**Pop-ups blockieren** entfernt alle Arten von Pop-ups, die für den Betrieb von Websites nicht erforderlich sind.
 
-**Block widgets** removes online assistants, live support chats, and similar tools.
+**Widgets blockieren** entfernt Online-Assistenten, Live-Support-Chats und ähnliche Tools.

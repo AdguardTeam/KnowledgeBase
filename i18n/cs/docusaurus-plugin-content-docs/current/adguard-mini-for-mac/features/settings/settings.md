@@ -5,16 +5,16 @@ sidebar_position: 5
 
 ![Settings tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings.png)
 
-In _Settings_, you can set up basic things like filters, filter updates, launching AdGuard at system startup, and so on. You can also choose whether to show the AdGuard icon in the menu bar.
+V _Nastavení_ můžete nastavit základní věci, jako jsou filtry, aktualizace filtrů, spuštění AdGuardu při startu systému a podobně. Můžete také zvolit, zda zobrazit ikonu AdGuardu v panelu nabídek.
 
-The main two sections are:
+Hlavní dvě sekce jsou:
 
-- [Filters](/adguard-mini-for-mac/features/settings/filters.md)
+- [Filtry](/adguard-mini-for-mac/features/settings/filters.md)
 
-  Different filters that allow you to customize your ad blocking experience
+  Různé filtry, které vám umožňují přizpůsobit si blokování reklam
 
-- [Safari extensions](/adguard-mini-for-mac/features/settings/safari-extensions.md)
+- [Rozšíření Safari](/adguard-mini-for-mac/features/settings/safari-extensions.md)
 
-  Info on the current state of content blockers — how many rules and filters are enabled for each of them
+  Informace o aktuálním stavu blokátorů obsahu — kolik pravidel a filtrů je pro každý z nich povoleno
 
-At the bottom of the _Settings_ screen, you can find options that come in handy when communicating with our support team: _Debug logging_ and _Export logs_.
+Ve spodní části obrazovky _Nastavení_ najdete možnosti, které se hodí při komunikaci s naším týmem podpory: _Logy ladění_ a _Export logů_.

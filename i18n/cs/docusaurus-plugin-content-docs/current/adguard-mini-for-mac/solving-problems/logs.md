@@ -1,32 +1,32 @@
 ---
-title: How to collect logs in AdGuard Mini for Mac
+title: Jak shromažďovat logy v AdGuard Mini pro Mac
 sidebar_position: 4
 ---
 
 :::info
 
-This article is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Tento článek je o AdGuardu Mini pro Mac, který chrání pouze váš prohlížeč Safari. Chcete-li zcela ochránit svůj Mac, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-To analyze and diagnose various problems that may occur with AdGuard Mini for Mac, the AdGuard support service may need its log files. Tyto soubory obsahují záznamy o chybách a dalších softwarových událostech. Níže jsou uvedeny stručné pokyny, jak shromažďovat protokoly a v případě potřeby je odesílat na podporu.
+K analýze a diagnostice různých problémů, které mohou nastat s AdGuardem Mini pro Mac, může služba podpory AdGuardu potřebovat soubory záznamu. Tyto soubory obsahují logy chyb a další softwarové události. Níže jsou uvedeny stručné pokyny, jak shromažďovat protokoly a v případě potřeby je odesílat na podporu.
 
 ### Jak shromažďovat a záznamy
 
-1. Open AdGuard Mini.
-2. Go to _Settings_, scroll down, and click _Export logs_.
+1. Otevřete AdGuard Mini.
+2. Přejděte do _nastavení_, přejděte dolů a klikněte na _Exportovat logy_.
 3. Zvolte umístění pro uložení souboru .zip a klikněte na _Uložit_.
 
-Now you can send this file to [support@adguard.com](mailto:support@adguard.com) or attach it to your bug report on GitHub.
+Nyní můžete tento soubor odeslat na [support@adguard.com](mailto:support@adguard.com) nebo jej připojit k hlášení o chybě na GitHubu.podporapodpora.
 
 :::note
 
-AdGuard se zavazuje chránit vaše soukromí. We strictly follow our [Privacy Policy](https://adguard.com/privacy.html) and do not collect any private information about users. Před odesláním protokolů týmu podpory si soubor prohlédněte, protože může obsahovat další informace, které nechcete sdílet. Pokud takové osobní údaje obsahuje, doporučujeme je nejprve smazat.
+AdGuard se zavazuje chránit vaše soukromí. Přísně dodržujeme naše [Zásady ochrany osobních údajů](https://adguard.com/privacy.html) a neshromažďujeme žádné soukromé informace o uživatelích. Před odesláním protokolů týmu podpory si soubor prohlédněte, protože může obsahovat další informace, které nechcete sdílet. Pokud takové osobní údaje obsahuje, doporučujeme je nejprve smazat.
 
 :::
 
-### How to attach your log to a bug report on GitHub
+### Jak připojit log k hlášení o chybě na GitHubu
 
-1. Go to the [AdGuard Mini for Mac GitHub repo](https://github.com/AdguardTeam/AdGuardMiniForMac/issues) and click _New issue_.
-2. Send the log file to [devteam@adguard.com](mailto:devteam@adguard.com). Uveďte čas chyby a připojte odkaz na problém nebo jeho číslo (zobrazuje se jako #číslo vedle názvu).
-   Alternatively, you can upload the log file to Google Drive and send it to [devteam@adguard.com](mailto:devteam@adguard.com). Přidejte odkaz na soubor do svého problému na GitHubu.
+1. Otevřete [GitHub repozitář AdGuard Mini pro Mac](https://github.com/AdguardTeam/AdGuardMiniForMac/issues) a klikněte na _New issue_.
+2. Odešlete soubor s logem na [devteam@adguard.com](mailto:devteam@adguard.com). Uveďte čas chyby a připojte odkaz na problém nebo jeho číslo (zobrazuje se jako #číslo vedle názvu).
+   Soubor se záznamem můžete také nahrát na Disk Google a odeslat jej na adresu [devteam@adguard.com](mailto:devteam@adguard.com). Přidejte odkaz na soubor do svého problému na GitHubu.

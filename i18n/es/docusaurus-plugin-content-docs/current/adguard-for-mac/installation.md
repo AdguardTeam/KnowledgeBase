@@ -78,8 +78,6 @@ Ve a la sección de Aplicaciones. Busca AdGuard allí, haz clic derecho sobre é
 **Utilice esta instrucción sólo si sabes lo que estás haciendo o si nuestro servicio de soporte te recomendó específicamente la "desinstalación avanzada". Además, haz primero todos los pasos de la "desinstalación normal".**
 
 1. Después, elimina los siguientes archivos de AdGuard:
-    - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (carpeta)
-    - ~/Library/Preferences/com.adguard.mac.adguard.plist (archivo)
     - ~/Library/Group\Containers/TC3Q7MAJXF.com.adguard.mac (carpeta)
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (archivo)
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (archivo)
@@ -89,9 +87,6 @@ Ve a la sección de Aplicaciones. Busca AdGuard allí, haz clic derecho sobre é
     Para ello, abre la aplicación Terminal, luego ingresa y ejecuta los siguientes comandos:
 
     ```bash
-    sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
-    rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"
-    rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist
     rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"
     find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete
     sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist

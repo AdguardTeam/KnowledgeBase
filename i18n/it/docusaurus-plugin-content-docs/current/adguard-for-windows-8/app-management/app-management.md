@@ -5,28 +5,28 @@ sidebar_position: 1
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Questo articolo descrive AdGuard per Windows v8.0, un blocca-inserzioni completo che protegge il tuo dispositivo a livello di sistema. Questo è una versione beta ancora in fase di sviluppo. Per provarlo, scarica la [versione beta di AdGuard per Windows](https://agrd.io/windows_beta).
 
 :::
 
-![App management](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/management.png)
+![Gestione app](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/management.png)
 
-In the _App management_ section, you can manage routing and filtering settings for all apps installed on your device.
+Nella sezione _Gestione app_, puoi gestire le impostazioni di instradamento e filtraggio per tutte le app installate nel tuo dispositivo.
 
-Once AdGuard detects that an app has gone online, it is automatically added to _App management_, and its traffic is routed through AdGuard.
+Quando AdGuard rileva che un'app è andata in rete, è automaticamente aggiunta a _Gestione app_, e il suo traffico è instradato tramite AdGuard.
 
-By default, AdGuard filters all traffic, but you can choose what to exclude.
+Per impostazione prescelta, AdGuard filtra tutto il traffico, ma puoi scegliere cosa escludere.
 
-AdGuard also filters HTTPS traffic, as most websites today use HTTPS. This is especially important for blocking ads on sites like youtube.com, facebook.com, and x.com, where it is impossible to remove ads without HTTPS filtering.
+AdGuard filtra anche il traffico HTTPS, poiché la maggior parte dei siti web oggigiorno usa HTTPS. Questo è particolarmente importante per bloccare le inserzioni in siti come youtube.com, facebook.com e x.com, dove è impossibile rimuovere le inserzioni senza il filtraggio HTTPS.
 
-When routing and filtering are enabled for an app, the icons below each app will appear green.
+Quando l'instradamento e il filtraggio sono abilitati per un'app, le icone sotto ogni app diventeranno verdi.
 
-You can leave the settings as they are, disable both filtering and routing, or fine-tune them manually for each app. You can also access the app’s stats.
+Puoi lasciare le impostazioni così come sono, disabilitare sia il filtraggio sia l'instradamento, oppure affinarle manualmente per ogni app. Puoi anche accedere alle statistiche dell'app.
 
-![App stats](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
+![Statistiche app](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
 ## App “senza problemi” e “problematiche”
 
-La maggior parte delle app funziona correttamente quando è filtrata. Some apps are considered “problematic” and may not work correctly when routed through AdGuard. You may see a warning like this when trying to route or filter all apps:
+La maggior parte delle app funziona correttamente quando è filtrata. Alcune app sono considerate "problematiche" e potrebbero non funzionare correttamente se instradate tramite AdGuard. Potresti vedere un avviso simile quando provi a instradare o filtrare tutte le app:
 
-To ensure the proper operation of all apps installed on your device, we recommend routing only problem-free apps through AdGuard.
+Per garantire il corretto funzionamento di tutte le app installate sul tuo dispositivo, ti consigliamo di instradare tramite AdGuard solo le app che non presentano problemi.

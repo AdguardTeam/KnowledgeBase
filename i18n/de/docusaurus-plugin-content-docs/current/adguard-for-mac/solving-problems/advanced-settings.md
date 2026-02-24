@@ -173,7 +173,7 @@ Das Aktivieren dieser Einstellung ist in folgendem Szenario nützlich: Wenn macO
 
 #### `dns.proxy.postquantum.cryptography.enabled`
 
-Secures DNS proxy connections with a hybrid post-quantum key exchange, combining the classical X25519 algorithm with the ML-KEM-768 post-quantum KEM. Applies only to DoH, DoT, and DoQ upstreams.
+Sichert DNS-Proxy-Verbindungen mit einem hybriden Post-Quanten-Schlüsselaustausch, der den klassischen X25519-Algorithmus mit dem Post-Quanten-KEM ML-KEM-768 kombiniert. Gilt nur für DoH-, DoT- und DoQ-Upstreams.
 
 ### Privatsphäre-Einstellungen
 

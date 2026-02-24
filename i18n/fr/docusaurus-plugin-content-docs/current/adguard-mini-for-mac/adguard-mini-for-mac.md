@@ -1,28 +1,28 @@
 ---
-title: AdGuard Mini for Mac
+title: AdGuard Mini pour Mac
 sidebar_position: 1
 ---
 
 :::info
 
-This page is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cette page concerne AdGuard Mini pour Mac, qui protège uniquement votre navigateur Safari. Pour protéger l'ensemble de votre Mac, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard Mini for Mac (formerly AdGuard for Safari) was designed to conform to Apple’s restrictions for ad blocking browser extensions. Although it can’t be compared to our desktop ad blocking apps, it’s free and can protect you from ads, trackers, phishing, and malicious websites.
+AdGuard Mini pour Mac (anciennement AdGuard pour Safari) a été conçu pour se conformer aux restrictions d'Apple concernant les extensions de navigateur bloquant les publicités. Bien qu’elle ne soit pas comparable à nos applications de blocage des publicités sur ordinateur, elle est gratuite et peut vous protéger contre les publicités, les traqueurs, l’hameçonnage et les sites web malveillants.
 
-- [Features](/adguard-mini-for-mac/features/features.md)
+- [Fonctionnalités](/adguard-mini-for-mac/features/features.md)
 
-  Main features and settings available in AdGuard Mini for Mac
+  Fonctionnalités principales et paramètres disponibles dans AdGuard Mini pour Mac
 
 - [Installation](/adguard-mini-for-mac/installation.md)
 
-  Installation, removal, and system requirements for AdGuard Mini for Mac
+  Installation, désinstallation et configuration système requise pour AdGuard Mini pour Mac
 
-- [Safari extensions](/adguard-mini-for-mac/extensions.md)
+- [Extensions Safari](/adguard-mini-for-mac/extensions.md)
 
-  Mechanisms that enable content blocking and add functionality to the Safari web browser
+  Les mécanismes qui permettent le blocage de contenu et ajoutent des fonctionnalités au navigateur Web Safari
 
-- [Solving problems](/adguard-mini-for-mac/solving-problems/solving-problems.md)
+- [Résolution des problèmes](/adguard-mini-for-mac/solving-problems/solving-problems.md)
 
   Problèmes connus et solutions possibles

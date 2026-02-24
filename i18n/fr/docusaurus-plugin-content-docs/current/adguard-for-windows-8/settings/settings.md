@@ -5,26 +5,26 @@ sidebar_position: 1
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Cet article décrit AdGuard pour Windows v8.0, un bloqueur de publicité complet qui protège votre appareil au niveau du système. Il s'agit d'une version bêta encore en développement. Pour l'essayer, téléchargez la [version bêta d'AdGuard pour Windows](https://agrd.io/windows_beta).
 
 :::
 
-There are other useful AdGuard options that shouldn’t go unnoticed in this article, since they add much to user experience.
+D’autres options utiles proposées par AdGuard ne devraient pas passer inaperçues dans cet article, car elles apportent beaucoup à l’expérience utilisateur.
 
-![Settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/setting.png)
+![Paramètres](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/setting.png)
 
-## [App settings](/adguard-for-windows-8/settings/app-settings)
+## [Paramètres de l'application](/adguard-for-windows-8/settings/app-settings)
 
-Language and theme, update channel and interval, advanced options for experienced users, and a filter editor to quickly create custom rules.
+Langue et thème, canal et intervalle de mise à jour, options avancées pour utilisateurs expérimentés, et un éditeur de filtrage pour créer rapidement des règles personnalisées.
 
-## [License](/adguard-for-windows-8/settings/license)
+## [Licence](/adguard-for-windows-8/settings/license)
 
-Information about license type, number of available devices, and activation code, with options to refresh or reset license and bind it to your AdGuard account.
+Des informations concernant le type de licence, le nombre d'appareils disponibles et le code d'activation, avec des options pour actualiser ou réinitialiser la licence et la lier à votre compte AdGuard.
 
-## [Support](/adguard-for-windows-8/settings/support)
+## [Assistance](/adguard-for-windows-8/settings/support)
 
-FAQ and support form, tools to report missed ads and request new features, possibility to rate the app, share feedback, and access AdGuard social networks.
+FAQ et formulaire d'assistance, outils pour signaler les publicités manquées et demander de nouvelles fonctionnalités, possibilité de noter l'application, partager des commentaires et accéder aux réseaux sociaux d'AdGuard.
 
-## [About](/adguard-for-windows-8/settings/about)
+## [À propos](/adguard-for-windows-8/settings/about)
 
-Details about app version and libraries, as well as links to legal documents.
+Détails concernant la version de l'application et les bibliothèques, ainsi que des liens vers les documents juridiques.

@@ -1,24 +1,24 @@
 ---
-title: Parental control
+title: Contrôle parental
 sidebar_position: 6
 ---
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Cet article décrit AdGuard pour Windows v8.0, un bloqueur de publicité complet qui protège votre appareil au niveau du système. Il s'agit d'une version bêta encore en développement. Pour l'essayer, téléchargez la [version bêta d'AdGuard pour Windows](https://agrd.io/windows_beta).
 
 :::
 
-There are several websites that children shouldn’t be able to access. _Parental control_ helps you solve this problem.
+Il existe plusieurs sites Web auxquels les enfants ne devraient pas avoir accès. _Le contrôle parental_ vous aide à résoudre ce problème.
 
-![Parental control](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/parental.png)
+![Contrôle parental](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/parental.png)
 
-When _Parental control_ is enabled, AdGuard scans the content of webpages and blocks those that may be harmful or inappropriate for children. This includes adult images and text, crude language, violence, and drug-related content.
+Lorsque le _Contrôle parental_ est activé, AdGuard analyse le contenu des pages Web et bloque celles qui pourraient être nuisibles ou inappropriées pour les enfants. Cela inclut des images et des textes pour adultes, un langage grossier, de la violence et du contenu lié à la drogue.
 
-You can also turn on _Safe search_ to remove inappropriate links from search results.
+Vous pouvez également activer la _Recherche sécurisée_ pour supprimer les liens inappropriés des résultats de recherche.
 
-To prevent children from downloading unwanted programs, enable the _Block downloading exe.files_ option. This option blocks them from downloading and installing software.
+Pour empêcher les enfants de télécharger des programmes indésirables, activez l’option _Bloquer le téléchargement des fichiers exe_. Cette option les empêche de télécharger et d'installer des logiciels.
 
-You can manage the _Blocklist_ and the _Allowlist_ to decide which websites should be blocked and which should be allowed.
+Vous pouvez gérer la _Liste de blocage_ et la _Liste d'autorisation_ pour décider quels sites web doivent être bloqués et lesquels doivent être autorisés.
 
-Finally, you can protect these settings with a password and choose which user accounts they apply to.
+Enfin, vous pouvez protéger ces paramètres par un mot de passe et choisir les comptes d'utilisateurs auxquels ils s'appliquent.

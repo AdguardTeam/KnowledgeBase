@@ -20,23 +20,23 @@ Die Option zur Erstellung der Minidump-Datei ist standardmäßig deaktiviert. Be
 
 Auch wenn Sie keine BSoD-Absturzfehler feststellen, können Sie diese Option aktivieren — dies ist eine allgemeine Empfehlung, die sich nicht unbedingt auf AdGuard-Produkte bezieht. Bitte folgen Sie den nachstehenden Anweisungen, um die Minidump-Datei automatisch zu erstellen.
 
- 1. Type *sysdm.cpl* in the Windows search bar and click **Open**. The **System Properties Control Panel Menu** window will appear on the screen.
+ 1. Geben Sie *sysdm.cpl* in die Windows-Suchleiste ein und klicken Sie auf **Öffnen**. Das Fenster **Systemeigenschaften** wird auf dem Bildschirm angezeigt.
 
     :::tip
 
-    Alternatively, click **Settings** → **System** → **About** → **Advanced system settings**.
+    Alternativ klicken Sie auf **Einstellungen** → **System** → **Info** → **Erweiterte Systemeinstellungen**.
 
 
 :::
 
-    ![System Properties *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
+    ![Systemeigenschaften *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
 
- 1. Go to the **Advanced** tab.
- 1. In the **Startup and Recovery** section, click **Settings**.
+ 1. Öffnen Sie den Tab **Erweitert**.
+ 1. Klicken Sie im Abschnitt **Starten und Wiederherstellen** auf **Einstellungen**.
 
-    ![Startup and Recovery *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
+    ![Starten und Wiederherstellen *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
 
- 1. Enable the following three options:
+ 1. Aktivieren Sie die folgenden drei Optionen:
 
     - Ereignis in das Systemprotokoll eintragen
     - Automatisch Neustart durchführen
@@ -55,7 +55,7 @@ Standardmäßig wird die Minidump-Datei im Ordner **%SystemRoot%\Minidump** gesp
 
 :::
 
-## Collecting wfpdiag.cab file
+## Erfassen der Datei wfpdiag.cab
 
 Unser Support-Team kann eine wfpdiag.cab-Datei zusammen mit einer Minidump-Datei anfordern, um die Systemprotokolle genauer analysieren und Probleme diagnostizieren zu können. Um die Datei zu erfassen, gehen Sie bitte wie folgt vor:
 

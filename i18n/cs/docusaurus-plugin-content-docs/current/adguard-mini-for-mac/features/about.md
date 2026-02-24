@@ -5,20 +5,20 @@ sidebar_position: 7
 
 ![About tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/about.png)
 
-On the _About_ tab, you can check:
+Na záložce _Informace_ můžete zkontrolovat:
 
-- Current version of your AdGuard Mini app
-- Current versions of the libraries
+- Aktuální verzi aplikace AdGuard Mini
+- Aktuální verzi knihoven
 
-You can also find the links to:
+Také zde naleznete odkazy na:
 
-- Our official website
-- EULA and Privacy policy
-- Acknowledgements
-- Historie verzí
+- Naši oficiální webovou stránku
+- EULA a Zásady ochrany osobních údajů
+- Poděkování
+- Historii verzí
 
 :::note Připomínka
 
-AdGuard Mini for Mac can be downloaded for free [from the App Store](https://agrd.io/mini_mac). A detailed setup instruction is available in [this Knowledge Base article](/adguard-mini-for-mac/installation/).
+AdGuard Mini pro Mac si můžete stáhnout zdarma [z App Store](https://agrd.io/mini_mac). Podrobný návod k nastavení je k dispozici v [databázi znalostí](/adguard-mini-for-mac/installation/).
 
 :::

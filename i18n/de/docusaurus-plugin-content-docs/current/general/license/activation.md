@@ -3,7 +3,7 @@ title: Lizenz aktivieren
 sidebar_position: 3
 ---
 
-Um Ihre Lizenz zu aktivieren, gehen Sie zum Abschnitt *Lizenz* Ihres AdGuard-Produkts und suchen Sie das Feld *Anmelden* oder die Schaltfläche *Aktivieren* . Verwenden Sie die E-Mail und das Passwort Ihres AdGuard-Kontos, um sich anzumelden. Wenn Sie noch kein Konto haben, wird Ihnen angeboten, eines zu erstellen.
+Um Ihre Lizenz zu aktivieren, öffnen Sie den Abschnitt *Lizenz* Ihres AdGuard-Produkts und suchen Sie das Feld *Anmelden* oder die Schaltfläche *Aktivieren*. Verwenden Sie die E-Mail und das Passwort Ihres AdGuard-Kontos, um sich anzumelden. Wenn Sie noch kein Konto haben, wird Ihnen angeboten, eines zu erstellen.
 
 :::note
 
@@ -77,36 +77,36 @@ Alternativ können Sie auch einen [Lizenzschlüssel](../what-is#license-key) ver
 
     ![Anmeldebildschirm *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
 
-### Activating AdGuard Mini for Mac
+### AdGuard Mini für Mac aktivieren
 
-1. Click AdGuard Mini icon in the menu bar.
+1. Klicken Sie in der Menüleiste auf das AdGuard Mini-Symbol.
 
-    ![AdGuard Mini in the menu bar](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
+    ![AdGuard Mini in der Menüleiste](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
 
-2. Click the settings icon.
+2. Klicken Sie auf das Symbol „Einstellungen”.
 
-    ![Settings icon *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
+    ![Einstellungen-Symbol *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
 
-3. Go to *License*.
+3. Klicken Sie auf *Lizenz*.
 
-    ![Go to License](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
+    ![Klicken Sie auf Lizenz](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
 
-4. Open the menu (⋮) in the upper right corner and click *Already purchased?*.
+4. Öffnen Sie das Menü (⋮) in der oberen rechten Ecke und klicken Sie auf *Bereits gekauft?*.
 
-    ![Click already purchased](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
+    ![Klicken Sie auf „Bereits gekauft“](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
 
-5. You will see the available activation options:
+5. Sie sehen die verfügbaren Aktivierungsoptionen:
 
-    ![Activation options](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
+    ![Aktivierungsoptionen](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
 
-    - **Log in**
+    - **Anmelden**
 
-      Log in to your AdGuard account that has a valid license in it.
+      Melden Sie sich bei Ihrem AdGuard-Konto an, das über eine gültige Lizenz verfügt.
 
-    - **Restore from App Store**
+    - **Aus dem App Store wiederherstellen**
 
-      Use a license that you have previously bought through the App Store.
+      Verwenden Sie eine Lizenz, die Sie zuvor über den App Store erworben haben.
 
-    - **Enter activation code**
+    - **Aktivierungscode eingeben**
 
-      Enter your activation code.
+      Geben Sie Ihren Aktivierungscode ein.

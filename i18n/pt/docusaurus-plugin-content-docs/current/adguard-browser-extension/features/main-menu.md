@@ -11,7 +11,7 @@ Este artigo é sobre a extensão do navegador AdGuard, que protege apenas o seu 
 
 The extension's main page can be accessed by clicking the extension's icon on the toolbar of your browser.
 
-![Main menu \*mobile\_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Main menu \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
 On the main page, you can hide any element on any page manually (a corresponding rule will be added to the _User rules_), open the _Filtering log_ to view the complete information about your browser's traffic and block requests on the go, or look at a website’s security report. Besides, you can submit a complaint about any website (for example, if there are missed ads on the page, our filter engineers will review the report and fix the problem) and see the statistics on applied blocking rules.
 

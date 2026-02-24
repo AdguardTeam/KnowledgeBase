@@ -1,32 +1,32 @@
 ---
-title: Управление приложениями
+title: Приложения
 sidebar_position: 1
 ---
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+В этой статье описывается AdGuard для Windows v8.0 — комплексный блокировщик рекламы, который защищает ваше устройство на системном уровне. Это бета-релиз, который ещё находится в стадии разработки. Чтобы начать им пользоваться, скачайте [бета-версию AdGuard для Windows](https://agrd.io/windows_beta).
 
 :::
 
-![App management](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/management.png)
+![Приложения](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/management.png)
 
-In the _App management_ section, you can manage routing and filtering settings for all apps installed on your device.
+В разделе _Приложения_ вы можете управлять настройками маршрутизации и фильтрации для всех приложений, установленных на вашем устройстве.
 
-Once AdGuard detects that an app has gone online, it is automatically added to _App management_, and its traffic is routed through AdGuard.
+Как только AdGuard определяет, что приложение подключилось к сети, оно автоматически добавляется в _Приложения_, а его трафик направляется через AdGuard.
 
-By default, AdGuard filters all traffic, but you can choose what to exclude.
+По умолчанию AdGuard фильтрует весь трафик, но вы можете выбрать, что исключить.
 
-AdGuard also filters HTTPS traffic, as most websites today use HTTPS. This is especially important for blocking ads on sites like youtube.com, facebook.com, and x.com, where it is impossible to remove ads without HTTPS filtering.
+AdGuard также фильтрует HTTPS-трафик, поскольку большинство сайтов сегодня используют HTTPS. Это особенно важно для блокировки рекламы на таких сайтах, как youtube.com, facebook.com и x.com, где невозможно удалить рекламу без HTTPS-фильтрации.
 
-When routing and filtering are enabled for an app, the icons below each app will appear green.
+Если для приложения включены функции маршрутизации и фильтрации, значки под каждым приложением отображаются в зелёном цвете.
 
-You can leave the settings as they are, disable both filtering and routing, or fine-tune them manually for each app. You can also access the app’s stats.
+Вы можете оставить все настройки как есть, отключить фильтрацию и маршрутизацию или настроить их вручную для каждого приложения. Также вам доступна статистика приложений.
 
-![App stats](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
+![Статистика приложения](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
 ## Непроблемные и проблемные приложения
 
-Большинство приложений при фильтрации работают корректно. Some apps are considered “problematic” and may not work correctly when routed through AdGuard. You may see a warning like this when trying to route or filter all apps:
+Большинство приложений при фильтрации работают корректно. Некоторые приложения считаются «проблемными» и могут работать некорректно при маршрутизации через AdGuard. Поэтому при попытке настроить маршрутизацию или фильтрацию всех приложений может появиться подобное предупреждение:
 
-To ensure the proper operation of all apps installed on your device, we recommend routing only problem-free apps through AdGuard.
+Чтобы все приложения работали правильно, рекомендуем направлять через AdGuard только непроблемные.

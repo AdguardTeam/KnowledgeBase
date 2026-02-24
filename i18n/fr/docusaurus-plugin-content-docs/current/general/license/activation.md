@@ -77,36 +77,36 @@ Alternativement, vous pouvez utiliser une [clef de licence](../what-is#license-k
 
     ![Écran de connexion *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
 
-### Activating AdGuard Mini for Mac
+### L’activation de AdGuard Mini pour Mac
 
-1. Click AdGuard Mini icon in the menu bar.
+1. Cliquez sur l’icône AdGuard Mini dans la barre de menu.
 
-    ![AdGuard Mini in the menu bar](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
+    ![AdGuard Mini dans la barre de menu](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
 
-2. Click the settings icon.
+2. Cliquez sur l’icône des paramètres.
 
-    ![Settings icon *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
+    ![Icône paramètres *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
 
-3. Go to *License*.
+3. Allez sur *Licence*.
 
-    ![Go to License](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
+    ![Allez sur Licence](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
 
-4. Open the menu (⋮) in the upper right corner and click *Already purchased?*.
+4. Ouvrez le menu (⋮) dans le coin supérieur droit et cliquez sur *Déjà acheté ?*.
 
-    ![Click already purchased](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
+    ![Cliquez sur « Déjà acheté »](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
 
-5. You will see the available activation options:
+5. Vous verrez les options d’activation disponibles :
 
-    ![Activation options](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
+    ![Options d’activation](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
 
-    - **Log in**
+    - **Connexion**
 
-      Log in to your AdGuard account that has a valid license in it.
+      Connectez-vous à votre compte AdGuard disposant d’une licence valide.
 
-    - **Restore from App Store**
+    - **Restaurer depuis l’App Store**
 
-      Use a license that you have previously bought through the App Store.
+      Utilisez une licence que vous avez préalablement achetée via l’App Store.
 
-    - **Enter activation code**
+    - **Saisissez le code d’activation**
 
-      Enter your activation code.
+      Saisissez votre code d’activation.
