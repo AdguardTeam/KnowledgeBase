@@ -19,7 +19,7 @@ All volunteers must follow the **AdGuard filter policy** when creating rules. By
 
 However, working with blocking filters requires specific skills. If you have them and know how to create rules, then head straight to our [AdGuard Filters repository](https://github.com/AdguardTeam/AdguardFilters) on GitHub. Before you start contributing, we recommend reviewing the [guidelines](https://github.com/AdguardTeam/AdguardFilters/blob/master/CONTRIBUTING.md).
 
-In the repository, you will find a lot of open issues, each one referencing a problem with some website problem — a missed ad, a false positive, etc. Choose any and suggest your own rules in comments. AdGuard filter engineers will review your suggestions, and if they find them appropriate, your rules will be added to AdGuard filters. 
+In the repository, you will find a lot of open issues, each one referencing a problem with some website problem — a missed ad, a false positive, etc. Choose any and suggest your own rules in comments. AdGuard filter engineers will review your suggestions, and if they find them appropriate, your rules will be added to AdGuard filters.
 
 If you are not yet familiar with our filtering rule syntax, or maybe need a refresher, you'll find the basics about the syntax [in our Knowledge Base](/general/ad-filtering/create-own-filters).
 
