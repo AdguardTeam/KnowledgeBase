@@ -11,9 +11,9 @@ Tento článek je o AdGuardu Mini pro Mac, který chrání pouze váš prohlíž
 
 ## Limity pravidel pro blokování obsahu v Safari
 
-AdGuard Mini for Mac uses the Content Blocking API to apply filtering rules to pages in the Safari browser. V současné době je pro každé rozšíření blokování obsahu povoleno maximálně 150 000 pravidel.
+AdGuard Mini pro Mac používá rozhraní API pro blokování obsahu k použití pravidel filtrování na stránky v prohlížeči Safari. V současné době je pro každé rozšíření blokování obsahu povoleno maximálně 150 000 pravidel.
 
-AdGuard Mini for Mac has 6 content blockers:
+AdGuard Mini pro Mac má 6 blokátorů obsahu:
 
 - AdGuard – General
 - AdGuard – Privacy
@@ -24,13 +24,13 @@ AdGuard Mini for Mac has 6 content blockers:
 
 Celkem tak vznikne 900000 pravidel filtrování.
 
-However, **one extension can contain only up to 150,000 rules**. Pokud tento limit překročíte, některá pravidla se neuplatní. To může vést k nesprávnému blokování.
+Nicméně **jedno rozšíření může obsahovat až 150000 pravidel**. Pokud tento limit překročíte, některá pravidla se neuplatní. To může vést k nesprávnému blokování.
 
 ## Jak zkontrolovat překročení limitu pravidel
 
-1. Open AdGuard Mini app.
-2. Go to _Settings_ → _Safari extensions_.
-3. Below each extension, you can see the enabled filters and the number of active rules.
+1. Otevřete aplikaci AdGuard Mini.
+2. Přejděte do _nastavení_ → _rozšíření Safari_.
+3. Pod každým rozšířením můžete vidět povolené filtry a počet aktivních pravidel.
    ![Extensions tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/extensions.png)
 
 Pokud je v blokátoru obsahu povoleno více než 150 000 pravidel, může být nutné zakázat některé filtry nebo uživatelská pravidla. Přejděte na _Filtry_, vyberte problematickou kategorii a zakažte filtry nebo uživatelská pravidla, která nepotřebujete.

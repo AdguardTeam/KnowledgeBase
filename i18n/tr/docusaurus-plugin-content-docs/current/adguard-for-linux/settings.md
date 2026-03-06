@@ -33,7 +33,7 @@ Korumayı devre dışı bırakmak için şunu yazın:
 adguard-cli stop
 ```
 
-This command not only stops the proxy but also stops the trafic from redirecting to it.
+This command not only stops the proxy but also stops the traffic from redirecting to it.
 
 ### Check protection status
 
@@ -45,11 +45,19 @@ adguard-cli status
 
 ![Status/Stop protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
 
-## Güncellemeler
+### Restart protection
+
+To restart the proxy server and reapply settings, enter:
+
+```sh
+adguard-cli restart
+```
+
+## Updates
 
 ### Güncellemeleri denetleyin
 
-Güncellemeleri denetlemek için şunu yazın:
+To check for updates, enter:
 
 ```sh
 adguard-cli check-update
@@ -57,7 +65,7 @@ adguard-cli check-update
 
 ### Update AdGuard for Linux
 
-Linux için AdGuard'ı güncellemek için şunu yazın:
+To update AdGuard for Linux, enter:
 
 ```sh
 adguard-cli update
@@ -71,19 +79,27 @@ To view the update script output, enter:
 adguard-cli update -v
 ```
 
-## Linux için AdGuard'ı yapılandırma
+## Configure AdGuard for Linux
 
-Linux için AdGuard'ı yapılandırmak için `config` komutunu kullanın. Alt komutlar:
+Use the `config` command to configure AdGuard for Linux. Subcommands:
 
-- `show`: Show the current configuration in `proxy.yaml`
+- `show [<section-name>]`: Show the current configuration in `proxy.yaml` (or a specific section)
 
   ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
-- `set`: Configure an option in `proxy.yaml`
+- `set <key> <value>`: Configure an option in `proxy.yaml`
   - `listen_ports.http_proxy`: HTTP listening port
   - `proxy_mode`: Proxy mode (`manual` or `auto`)
 
-- `get`: Get the current status of the above options
+- `get <key>`: Get the current status of a setting
+
+- `list-add <key> <value> [<value>...]`: Add one or more values to a list setting
+
+- `list-remove <key> <value>`: Remove a value from a list setting
+
+- `reset <key>`: Reset a setting to its default value
+
+- `reset --all`: Reset all settings to their default values
 
 :::note
 
@@ -98,23 +114,61 @@ The Automatic mode can only be used if the following requirements are met:
 
 ## Manage filters
 
-Use the `filters` command to configure AdGuard for Linux. Alt komutlar:
+Use the `filters` command to configure AdGuard for Linux. Subcommands:
 
-- `list`: List installed filters
+- `list`: List installed and added filters
 
   - `--all`: View all filters
 
   ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
-- `install`: Install a filter. Yüklemek istediğiniz filtrenin URL'sini girin
+- `add`: Add a built-in filter by ID or name
 
-- `enable`: Enable a filter. Filtrenin adını veya kimliğini girin
+- `install`: Install a filter. Enter the URL of the filter you want to install or local file
+  - `--trusted`: Mark the custom filter as trusted
+  - `--title`: Set a custom title for the filter
+
+- `enable`: Enable a filter. Enter the name or ID of the filter
 
   ![Enable filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
-- `disable`: Disable a filter. Filtrenin adını veya kimliğini girin
+- `disable`: Disable a filter. Enter the name or ID of the filter
 
-- `update`: Update filters
+- `remove`: Remove an internal or custom filter by ID
+
+- `set-trusted`: Mark a custom filter as trusted or untrusted
+
+- `set-title`: Set a custom title for a custom filter
+
+Filter updates are handled by `adguard-cli check-update` (the `filters update` subcommand forwards to it).
+
+## Manage DNS filters
+
+Use the `dns filters` command to manage DNS filter lists. Subcommands:
+
+- `list`: List installed and added DNS filters
+  - `--all`: View all DNS filters
+- `add`: Add a built-in DNS filter by ID or name
+- `install`: Install a custom DNS filter from a URL or local file
+  - `--title`: Set a custom title for the filter
+- `enable`: Enable a DNS filter. Enter the name or ID of the filter
+- `disable`: Disable a DNS filter. Enter the name or ID of the filter
+- `remove`: Remove a DNS filter by ID
+- `set-title`: Set a custom title for a DNS filter
+
+DNS filter updates are handled by `adguard-cli check-update`.
+
+## Manage userscripts
+
+Use the `userscripts` command to manage userscripts. Subcommands:
+
+- `list`: Show installed userscripts
+- `install`: Install a userscript from a URL
+- `remove`: Remove a userscript
+- `enable`: Enable a userscript
+- `disable`: Disable a userscript
+
+Userscripts are updated by `adguard-cli check-update`.
 
 ## Changing the proxy server listen address in manual proxy mode
 
@@ -122,8 +176,8 @@ By default, the proxy server listens on `127.0.0.1` — the address of the loopb
 There are two ways to make the proxy server listen on a different interface:
 
 1. Run `adguard-cli config set listen_address <address>` where `<address>` is the address to listen on.
-2. Yapılandırma dosyasını doğrudan düzenleyin:
-   - Yapılandırma dosyasının konumunu belirlemek için `adguard-cli config show | grep "Config location"` komutunu çalıştırın.
+2. Edit the config file directly:
+   - To determine the location of the config file, run `adguard-cli config show | grep "Config location"`.
    - Look for the `listen_address` key and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0` or `::`.
 
 If the listen address is set to anything other than `127.0.0.1`, then proxy client authentication is required. AdGuard CLI will not start unless proxy authentication is configured:
@@ -131,7 +185,7 @@ If the listen address is set to anything other than `127.0.0.1`, then proxy clie
 - When running `adguard-cli config set listen_address <address>` where `<address>` is not `127.0.0.1`, AdGuard CLI will prompt for a username and password if proxy authentication is not already configured.
 - When editing the config file directly, look for the `listen_auth`key. Set the `enabled` sub-key to `true`, and `username` and `password` to non-empty values.
 
-## Giden proxy'yi yapılandırma
+## Configure outbound proxy
 
 You can configure `outbound_proxy` if you want AdGuard CLI to work through another proxy server.
 
@@ -147,7 +201,7 @@ adguard-cli config set outbound_proxy https://user:pass@host:port
 
 :::info
 
-Desteklenen modlar HTTP, HTTPS, SOCKS4 ve SOCKS5'tir.
+Supported modes are HTTP, HTTPS, SOCKS4, and SOCKS5.
 
 :::
 
@@ -157,13 +211,13 @@ You can also quickly enable or disable `outbound_proxy`:
 adguard-cli config set outbound_proxy false
 ```
 
-Veya ayarları hızlıca temizleyin:
+Or quickly clear the settings:
 
 ```sh
 adguard-cli config set outbound_proxy ""
 ```
 
-### 2. Bireysel parametreleri yapılandırma
+### 2. Configure individual parameters
 
 The ability to adjust specific parameters is also available:
 
@@ -175,13 +229,13 @@ adguard-cli config set outbound_proxy.username user
 adguard-cli config set outbound_proxy.password pass
 ```
 
-HTTPS proxy'leri için sertifika doğrulamayı devre dışı bırakın:
+Disable certificate verification for HTTPS proxies:
 
 ```sh
 adguard-cli config set outbound_proxy.trust_any_certificate true
 ```
 
-UDP trafiği için SOCKS5 proxy'sini etkinleştirin:
+Enable SOCKS5 proxy for UDP traffic:
 
 ```sh
 adguard-cli config set outbound_proxy.udp_through_socks5_enabled true
@@ -189,15 +243,15 @@ adguard-cli config set outbound_proxy.udp_through_socks5_enabled true
 
 :::note
 
-SOCKS5 proxy'niz UDP'yi desteklemiyorsa, bağlantılar başarısız olabilir.
+If your SOCKS5 proxy does not support UDP, connections may fail.
 
 :::
 
-## Uygulama başına AdGuard CLI yapılandırması
+## Per-app AdGuard CLI configuration
 
-Kullanıcıların genellikle belirli tarayıcılar için filtrelemeyi elle etkinleştirmesi gerekir. Linux için AdGuard, **uygulama başına yapılandırmayı** destekleyerek ayarları veya kuralları sistem genelinde uygulamak yerine her uygulamaya ayrı ayrı uygulamanıza olanak tanır.
+Users often need to enable filtering manually for certain browsers. AdGuard for Linux supports **per-app configuration**, allowing you to apply settings or rules individually to each application instead of system-wide.
 
-Ayrıntılar için `proxy.yaml` dosyasındaki `apps` bölümüne bakın.
+For details, refer to the `apps` section in `proxy.yaml`.
 
 A set of pre-configured entries for popular web browsers is included by default in `browsers.yaml`.
 
