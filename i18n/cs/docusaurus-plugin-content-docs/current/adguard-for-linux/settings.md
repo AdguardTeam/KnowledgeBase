@@ -33,7 +33,7 @@ Chcete-li povolit zakázat, zadejte:
 adguard-cli stop
 ```
 
-Tento příkaz nejen zastaví proxy, ale také zastaví přesměrování na něj.
+Tento příkaz nejen zastaví proxy, ale také zastaví přesměrování provozu na něj.
 
 ### Zkontrolovat stav ochrany
 
@@ -44,6 +44,14 @@ adguard-cli status
 ```
 
 ![Status/Stop protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+
+### Restart protection
+
+To restart the proxy server and reapply settings, enter:
+
+```sh
+adguard-cli restart
+```
 
 ## Aktualizace
 
@@ -65,7 +73,7 @@ adguard-cli update
 
 ### Aktualizace výstupu skriptu
 
-Chcete-li zobrazit výstup skriptu aktualizace, zadejte:
+Chcete-li aktualizovat výstup skriptu aktualizace, zadejte:
 
 ```sh
 adguard-cli update -v
@@ -75,15 +83,23 @@ adguard-cli update -v
 
 Pro konfiguraci AdGuardu pro Linux použijte příkaz `config`. Dílčí příkazy:
 
-- `show`: Zobrazení aktuální konfigurace v souboru `proxy.yaml`
+- `show [<section-name>]`: Show the current configuration in `proxy.yaml` (or a specific section)
 
   ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
-- `set`: Konfigurace volby v souboru `proxy.yaml`
+- `set <key> <value>`: Configure an option in `proxy.yaml`
   - `listen_ports.http_proxy`: Naslouchací port HTTP
   - `proxy_mode`: Režim proxy (`manuální` nebo `automatický`)
 
-- `get`: Zjištění aktuálního stavu výše uvedených možností
+- `get <key>`: Get the current status of a setting
+
+- `list-add <key> <value> [<value>...]`: Add one or more values to a list setting
+
+- `list-remove <key> <value>`: Remove a value from a list setting
+
+- `reset <key>`: Reset a setting to its default value
+
+- `reset --all`: Reset all settings to their default values
 
 :::note
 
@@ -100,21 +116,59 @@ Automatický režim lze použít pouze tehdy, že jsou splněny následující p
 
 Pro konfiguraci AdGuardu pro Linux použijte příkaz `filters`. Dílčí příkazy:
 
-- `list`: Seznam nainstalovaných filtrů
+- `list`: List installed and added filters
 
   - `--all`: Zobrazení všech filtrů
 
   ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
-- `install`: Instalace filtru. Zadejte adresu URL filtru, který chcete nainstalovat
+- `add`: Add a built-in filter by ID or name
+
+- `install`: Instalace filtru. Enter the URL of the filter you want to install or local file
+  - `--trusted`: Mark the custom filter as trusted
+  - `--title`: Set a custom title for the filter
 
 - `enable`: Povolení filtru. Zadejte název nebo ID filtru
 
   ![Enable filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
-- `disable`: Zakázání filtrování. Zadejte název nebo ID filtru
+- `disable`: Zakázání filtru. Zadejte název nebo ID filtru
 
-- `update`: Aktualizace filtrů
+- `remove`: Remove an internal or custom filter by ID
+
+- `set-trusted`: Mark a custom filter as trusted or untrusted
+
+- `set-title`: Set a custom title for a custom filter
+
+Filter updates are handled by `adguard-cli check-update` (the `filters update` subcommand forwards to it).
+
+## Manage DNS filters
+
+Use the `dns filters` command to manage DNS filter lists. Dílčí příkazy:
+
+- `list`: List installed and added DNS filters
+  - `--all`: View all DNS filters
+- `add`: Add a built-in DNS filter by ID or name
+- `install`: Install a custom DNS filter from a URL or local file
+  - `--title`: Set a custom title for the filter
+- `enable`: Enable a DNS filter. Zadejte název nebo ID filtru
+- `disable`: Disable a DNS filter. Zadejte název nebo ID filtru
+- `remove`: Remove a DNS filter by ID
+- `set-title`: Set a custom title for a DNS filter
+
+DNS filter updates are handled by `adguard-cli check-update`.
+
+## Manage userscripts
+
+Use the `userscripts` command to manage userscripts. Dílčí příkazy:
+
+- `list`: Show installed userscripts
+- `install`: Install a userscript from a URL
+- `remove`: Remove a userscript
+- `enable`: Enable a userscript
+- `disable`: Disable a userscript
+
+Userscripts are updated by `adguard-cli check-update`.
 
 ## Změna poslechové adresy proxy v režimu ručního proxy
 

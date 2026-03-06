@@ -11,66 +11,66 @@ Tento článek je o AdGuardu Mini pro Mac, který chrání pouze váš prohlíž
 
 ## Požadavky na systém
 
-Requires macOS 12 or later.
+Vyžaduje macOS 12 nebo novější.
 
-## How to install AdGuard Mini for Mac
+## Jak nainstalovat AdGuard Mini pro Mac
 
-AdGuard Mini for Mac is a free app present in the Mac App Store. To install it on your Mac, do the following:
+AdGuard Mini pro Mac je aplikace zdarma dostupná v App Store pro Mac. Chcete-li ji nainstalovat do Macu, postupujte takto:
 
-1. Open the App Store and find _AdGuard Mini_ app there.
+1. Otevřete App Store a vyhledejte tam aplikaci _AdGuard Mini_.
 
    ![AdGuard Mini in App Store](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-in-app-store.png)
 
-2. Press _Get_ → _Install_ → _Open_.
+2. Stiskněte _Získat_ → _Instalovat_ → _Otevřít_.
 
-3. In the opened AdGuard Mini window, accept EULA and Privacy policy. Here you can also choose to help us improve the extension by sending anonymized usage data. Then click _Continue_.
+3. V otevřeném okně AdGuard Mini přijměte smlouvu EULA a zásady ochrany osobních údajů. Zde se také můžete rozhodnout, zda nám pomůžete vylepšit rozšíření zasláním anonymizovaných údajů o používání. Poté klikněte na _Pokračovat_.
 
    ![Onboarding](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/first-open.png)
 
    Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-   If you choose to share app usage data with AdGuard, the extension will collect anonymized information such as UI interactions and session identifiers. This consent is optional and can be withdrawn at any time. All collected data is fully anonymized, used only internally, and never shared with third parties.
+   Pokud se rozhodnete sdílet údaje o používání aplikace s AdGuardem, rozšíření bude shromažďovat anonymizované informace, jako jsou interakce s uživatelským rozhraním a identifikátory relací. Tento souhlas je dobrovolný a lze jej kdykoli odvolat. Všechny shromážděné údaje jsou zcela anonymizovány, používány pouze interně a nikdy nejsou sdíleny s třetími stranami.
 
    :::
 
-4. Click _Open settings_.
+4. Klikněte na _Otevřít nastavení_.
 
    ![Open settings](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/open-settings.png)
 
-5. Check the checkboxes for all seven AdGuard extensions.
+5. Zaškrtněte políčka u všech sedmi rozšíření AdGuardu.
 
    ![Checked extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/check-extensions.png)
 
-6. To allow AdGuard Mini to work on all websites, click the _AdGuard for Safari_ extension and then _Always Allow on Every Website..._.
+6. Chcete-li povolit aplikaci AdGuard Mini na všech webových stránkách, klikněte na rozšíření _AdGuard pro Safari_ a poté na _Vždy povolit na všech webových stránkách..._.
 
    ![Always allow button](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/always-allow-button.png)
 
-7. In the notification that appears, click _Always Allow on Every Website..._ again.
+7. V zobrazeném oznámení klikněte znovu na _Vždy povolit na všech webových stránkách..._.
 
    ![Always allow notification](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/always-allow.png)
 
-After you complete these steps, AdGuard Mini for Mac will start functioning in Safari.
+Po dokončení těchto kroků začne AdGuard Mini pro Mac fungovat v prohlížeči Safari.
 
-## How to uninstall AdGuard Mini for Mac
+## Jak odinstalovat AdGuard Mini pro Mac
 
-To uninstall AdGuard Mini for Mac, do the following:
+Chcete-li odinstalovat AdGuard Mini pro Mac postupujte takto:
 
 1. Ukončete aplikaci.
 
 2. Klikněte na _Safari_ v nabídce v levém horním rohu.
 
-3. Klikněte na _Nastavení…_ → _Rozšíření_. You will see a list of extensions, AdGuard Mini has seven.
+3. Klikněte na _Nastavení…_ → _Rozšíření_. Zobrazí se seznam rozšíření, AdGuard Mini jich má sedm.
 
-4. Uncheck all checkboxes and press _Uninstall_ below any of them.
+4. Zrušte zaškrtnutí všech políček a stiskněte _Odinstalovat_ pod kterýmkoli z nich.
 
    ![Unchecked extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
 
-5. In the notification that appears, press _Show in Finder_.
+5. V zobrazeném oznámení stiskněte _Zobrazit ve Finderu_.
 
    ![Uninstall notification](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/show-in-finder.png)
 
-6. Right-click _AdGuard Mini_ and choose _Move to trash_.
+6. Klikněte pravým tlačítkem na _AdGuard Mini_ a vyberte možnost _Přesunout do koše_.
 
    ![Move to trash](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/move-to-trash.png)
 
-   AdGuard Mini for Mac will be removed from your device.
+   AdGuard Mini pro Mac bude z vašeho zařízení odebrán.

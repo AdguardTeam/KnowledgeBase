@@ -9,41 +9,41 @@ Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor rekla
 
 :::
 
-The _Advanced settings_ section contains options that go beyond what most users usually need. AdGuard for Windows works perfectly out of the box, but these settings can be useful in special cases or for troubleshooting.
+Sekce _Pokročilá nastavení_ obsahuje možnosti, které přesahují to, co většina uživatelů obvykle potřebuje. AdGuard pro Windows funguje ihned po instalaci, ale tato nastavení mohou být užitečná ve zvláštních případech nebo při řešení problémů.
 
 :::caution
 
-Changing advanced settings without understanding them may cause performance issues, break your Internet connection, or affect your security and privacy. Only modify them if you know what you’re doing or if instructed by our support team.
+Změna pokročilých nastavení bez jejich pochopení může způsobit problémy s výkonem, přerušit připojení k internetu nebo ovlivnit vaše zabezpečení a soukromí. Upravujte je pouze v případě, že víte, co děláte, nebo pokud vás k tomu vyzve náš tým podpory.
 
 :::
 
 ## Vyloučit aplikaci z filtrování zadáním úplné cesty
 
-If you want AdGuard to skip filtering a specific app, enter its full file path here. You can add multiple apps by separating their paths with semicolons.
+Pokud chcete, aby AdGuard přeskočil filtrování konkrétní aplikace, zadejte zde její úplnou cestu k souboru. Můžete přidat více aplikací oddělením jejich cest středníky.
 
 ## Povolit vyskakovací oznámení AdGuardu
 
-Povolením této funkce zobrazíte vyskakovací oznámení AdGuardu. Nezobrazují se příliš často a obsahují pouze důležité informace. You can also reopen the latest notification from the tray menu.
+Povolením této funkce zobrazíte vyskakovací oznámení AdGuardu. Nezobrazují se příliš často a obsahují pouze důležité informace. Nejnovější oznámení můžete také znovu otevřít z nabídky v liště.
 
 ## Automaticky zachytávat URL adresy pro odběr filtrů
 
-When enabled, AdGuard will automatically detect filter subscription links (like `abp:subscribe`) and open a window to help you add them to your filters.
+Pokud je tato funkce zapnutá, AdGuard automaticky detekuje odkazy na odběry filtrů (např. `abp:subscribe`) a otevře okno, které vám pomůže přidat je do vašich filtrů.
 
 ## Použít režim přesměrování ovladače
 
-With this option enabled, AdGuard reroutes all your traffic to a local proxy server for filtering.
+Při zapnutí této možnosti AdGuard přesměruje veškerý váš provoz na místní proxy server za účelem filtrování.
 
-If it’s turned off, AdGuard filters traffic directly — without redirecting it. In this mode, Windows sees AdGuard as the only app connecting to the Internet, since all other apps go through it. This can slightly improve performance but may reduce the effectiveness of the system firewall.
+Pokud je vypnuto, AdGuard filtruje provoz přímo — bez přesměrování. V tomto režimu Windows vnímá AdGuard jako jedinou aplikaci připojenou k internetu, protože všechny ostatní aplikace procházejí přes něj. To může mírně zlepšit výkon, ale může snížit účinnost systémového firewallu.
 
-## Open AdGuard at system start-up
+## Otevřít AdGuard při startu systému
 
-Enable this option to launch the AdGuard window automatically when your PC starts.
+Povolením této možnosti se okno AdGuardu spustí automaticky při zapnutí počítače.
 
 ## Zapnout filtrování při spuštění systému
 
-Since version 7.12, AdGuard doesn’t start filtering traffic automatically after you boot your PC — unless the _Launch AdGuard at system start-up_ option is enabled. Instead, it runs in a passive “idle” mode.
+Od verze 7.12 AdGuard nezačne automaticky filtrovat provoz po zapnutí počítače, pokud není povolena možnost _Spustit AdGuard při spuštění systému_. Místo toho běží v pasivním “nečinném“ režimu.
 
-Turning this on allows AdGuard to filter traffic immediately, even if the app hasn’t been opened yet.
+Zapnutí této možnosti umožní AdGuardu okamžitě filtrovat provoz, dokonce i když aplikace ještě nebyla otevřena.
 
 ## Filtrovat localhost
 
