@@ -27,7 +27,7 @@ The **TDI** driver is also available, but it is outdated and may cause [filterin
 
 **SockFilter** is an *experimental*, lightweight kernel-mode network driver that works at the socket level (TCP/UDP). Instead of inspecting or modifying packets as they travel through the full Windows networking stack, a sock filter intercepts socket calls (e.g., connect, send, receive, bind) at a higher, more stable abstraction level. This makes it ideal for applications that need to monitor or control network activity without deep packet processing.
 
-Currently, SockFilter Right is still unstable, and you may encounter bugs. When fully tested and implemented, SockFilter has the potential to bring several advantages over other drivers:
+SockFilter was first implemented in v7.22.4 and, currently, it's still unstable, and you may encounter bugs. When fully tested and implemented, SockFilter has the potential to bring several advantages over other drivers:
 
 - **It operates at a higher, socket-level layer**: SockFilter works with socket operations rather than raw packets, making it less complex and more stable than WFP's low-level packet filtering.
 - **No interference with other network drivers**: Because it sits above VPN, firewall, and antivirus WFP filters, it avoids filter-ordering problems and compatibility conflicts common in the WFP stack.
