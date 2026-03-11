@@ -168,9 +168,9 @@ For better customization, annoyance filters are divided by their purpose:
 
 This filter is designed to block both cookie notices and requests from cookie management platforms (CMPs). Depending on how a website implements its consent mechanism, different methods may be applied.
 
-In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when the site’s functionality and display of third-party content require cookie consent, the filter applies alternative handling methods to resolve the request automatically.
+In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when a website requires a cookie decision for certain features or third-party content to work, the filter automatically handles the request using alternative methods.
 
-Whenever possible, non-essential cookies are declined by default. If declining is not technically feasible and consent must be granted for the site to function correctly, the website is additionally reviewed for analytics and tracking technologies, which are then blocked by the **AdGuard Tracking Protection filter**.
+Whenever possible, non-essential cookies are declined by default. If this is not technically feasible and consent must be granted for the site to function correctly, the site is additionally reviewed for analytics and tracking technologies, which are then blocked by the **AdGuard Tracking Protection filter**.
 
 **Limitations and exceptions**
 
