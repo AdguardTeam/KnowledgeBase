@@ -389,7 +389,7 @@ Následující modifikátory jsou nejjednodušší a nejčastěji používané. 
 | Modifikátor \ Produkty                             |     [Aplikace CoreLibs][cl-apps]      |    [AdGuard pro Chromium][ext-chr]     |   [AdGuard pro Chrome MV3][ext-mv3]    |     [AdGuard pro Firefox][ext-ff]      |       [AdGuard pro iOS][ios-app]       |    [AdGuard Mini pro Mac][ext-saf]     | [Blokátor obsahu AdGuard][and-cb] |
 | --------------------------------------------------- |:-------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:---------------------------------:|
 | [$app](#app-modifier)                               |                   ✅                   |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                 ❌                 |
-| [$denyallow](#denyallow-modifier)                   |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                 ❌                 |
+| [$denyallow](#denyallow-modifier)                   |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ❌                    |                   ✅                    |                 ❌                 |
 | [$domain](#domain-modifier)                         |                   ✅                   |                   ✅                    | ✅ [*[1]](#domain-modifier-limitations) |                   ✅                    | ✅ [*[1]](#domain-modifier-limitations) | ✅ [*[1]](#domain-modifier-limitations) |                 ✅                 |
 | [$header](#header-modifier)                         |                   ✅                   | ✅ [*[2]](#header-modifier-limitations) | ✅ [*[2]](#header-modifier-limitations) | ✅ [*[2]](#header-modifier-limitations) |                   ❌                    |                   ❌                    |                 ❌                 |
 | [$important](#important-modifier)                   |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                   ✅                    |                 ❌                 |
@@ -579,7 +579,7 @@ V následujících příkladech se předpokládá, že požadavky jsou odesílá
 
 :::caution Omezení
 
-V [AdGuardu pro Chrome MV3][ext-mv3] nejsou podporovány domény s `regexp` a `any_tld_domain`.
+V [AdGuardu pro Chrome MV3][ext-mv3] nejsou podporovány domény s `regexp` a `any_tld_domain` a modifikátory `$removeparam`.
 
 AdGuard pro iOS a AdGuard pro Safari podporují modifikátor `$domain`, ale má některá omezení. Pro více informací navštivte [sekci SafariConverterLib](#safari-converter--basic--supported-with-limitations).
 
@@ -630,7 +630,7 @@ kde:
 
 1. V Rozšíření prohlížeče AdGuard je modifikátor `$header` kompatibilní poze s [`$csp`](#csp-modifier), [`$removeheader`](#removeheader-modifier) (pouze hlavičky odpovědí), [`$important`](#important-modifier), [`$badfilter`](#badfilter-modifier), [`$domain`](#domain-modifier), [`$third-party`](#third-party-modifier), [`$match-case`](#match-case-modifier) s [content-type modifiers](#content-type-modifiers) jako [`$script`](#script-modifier) a [`$stylesheet`](#stylesheet-modifier). Pravidla s jinými modifikátory jsou považována za neplatná a budou vyřazena.
 
-1. In AdGuard Browser Extension MV3, regular expressions in the `$header` modifier values are not supported.
+1. V Rozšíření prohlížeče AdGuard MV3 nejsou podporovány regulární výrazy v hodnotách modifikátoru `$header`.
 
 :::
 
@@ -2670,6 +2670,7 @@ Pravidla `$removeparam` lze také zakázat pravidly výjimek `$document` a `$url
 [AdGuard pro Chrome MV3][ext-mv3] má některá omezení:
 
 - Regulární výrazy, negace a pravidla seznamu povolených nejsou podporovány.
+- Generická pravidla se uplatňují před specifickými pravidly a přesměrování se provádí pouze jednou. To může zabránit použití následných nebo konkrétnějších přesměrování.
 - Skupina podobných `$removeparam` budou sloučena do jedné. Příklad:
 
     ```bash
@@ -2737,6 +2738,7 @@ Pravidla `$removeparam` lze také zakázat pravidly výjimek `$document` a `$url
 
 1. Pravidla s modifikátorem `$removeparam` lze použít [**pouze v důvěryhodných filtrech**](#trusted-filters).
 1. Pravidla `$removeparam` jsou kompatibilní se [základními modifikátory](#basic-rules-basic-modifiers), [modifikátory typu obsahu](#content-type-modifiers) a s modifikátory `$important` a `$app`. Pravidla s jinými modifikátory jsou považována za neplatná a budou vyřazena.
+1. Ačkoli je modifikátor `$domain` klasifikován jako základní, není kompatibilní s pravidly `$removeparam` v rozšíření Manifest V3.
 1. Pravidla `$removeparam`, která neobsahují žádné [modifikátory typu obsahu](#content-type-modifiers), budou odpovídat pouze požadavkům, jejichž typem obsahu je `document`.
 
 :::
@@ -2944,7 +2946,7 @@ Sledovací odkazy se nyní automaticky vyčistí a umožní přímou navigaci na
 
 Pravidla s modifikátorem `$urltransform` lze použít [**pouze v důvěryhodných filtrech**](#trusted-filters).
 
-`$urltransform` rules without [content-type modifiers](#content-type-modifiers) will only match requests where the content type is `document`.
+Pravidla `$urltransform`, která neobsahují žádné [modifikátory typu obsahu](#content-type-modifiers), budou odpovídat pouze požadavkům, jejichž typem obsahu je `document`.
 
 :::
 
@@ -2952,7 +2954,7 @@ Pravidla s modifikátorem `$urltransform` lze použít [**pouze v důvěryhodný
 
 Pravidla s modifikátorem `$urltransform` jsou podporována AdGuardem pro Windows, Mac, Android a Linux s [CoreLibs][] v1.15 nebo novější.
 
-`$urltransform` rules with [content-type modifiers](#content-type-modifiers) are supported starting from [CoreLibs][] v1.19 or later. In earlier versions, content-type modifiers were not allowed with `$urltransform`.
+`$urltransform` pravidla s [modifikátory typu obsahu](#content-type-modifiers) jsou podporována od [CoreLibs][] v1.19 nebo novější. V dřívějších verzích nebyly modifikátory typu obsahu povoleny s `$urltransform`.
 
 :::
 
@@ -4676,7 +4678,7 @@ Modifikátor `$path` podporuje regulární výrazy [stejným způsobem](#regexp-
 
 #### Syntaxe Path-in-domain {#path-in-domain-syntax}
 
-For cosmetic rules, you can use a simplified path-in-domain syntax by specifying the path directly in the domain part of the rule instead of using the `$path` modifier.
+U kosmetických pravidel můžete použít zjednodušenou syntaxi cesta v doméně tak, že zadáte cestu přímo v doménové části pravidla místo použití modifikátoru `$path`.
 
 **Syntaxe**
 
@@ -4693,11 +4695,11 @@ targets = [target0, target1[, ...[, targetN]]]
 - `domain1.com,example.org/cesta##.banner` — platí pro všechny stránky na `domain1.com` a pouze pro `/path` stránky na `example.org`
 - `/example\.org\/article\d+/##.ad` — skrývá reklamy na stránkách článků s číselnými ID
 
-Path-in-domain syntax works with all types of cosmetic rules (`##`, `#@#`, `#$#`, `$$`, `$@$`, `#%#`, `#@%#`)
+Syntaxe cesty v doméně funguje se všemi typy kosmetických pravidel (`##`, `#@#`, `#$#`, `$$`, `$@$`, `#%#`, `#@%#`)
 
 :::info Kompatibilita
 
-Path-in-domain syntax has been introduced in [CoreLibs][] v1.20.
+Syntaxe Path-in-domain byla zavedena v [CoreLibs][] v1.20.
 
 :::
 
