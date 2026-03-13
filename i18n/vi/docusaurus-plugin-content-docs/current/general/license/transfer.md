@@ -17,7 +17,7 @@ On the device that you want to unbind, open the AdGuard app and click *Reset lic
 
 As an alternative, you can remove the device in your AdGuard account:
 
-1. Log in to your [AdGuard account](https://adguardaccount.com/).
+1. Log in to your [AdGuard account](https://adguardaccount.com).
 
 1. Open *AdGuard Ad Blocker* tab.
 

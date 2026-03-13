@@ -17,7 +17,7 @@ Auf dem Gerät, das Sie entbinden möchten, öffnen Sie die AdGuard-App und klic
 
 Alternativ können Sie das Gerät in Ihrem AdGuard-Konto entfernen:
 
-1. Melden Sie sich in Ihrem [AdGuard-Konto](https://adguardaccount.com/) an.
+1. Log in to your [AdGuard account](https://adguardaccount.com).
 
 1. Öffnen Sie den Tab *AdGuard Werbeblocker*.
 

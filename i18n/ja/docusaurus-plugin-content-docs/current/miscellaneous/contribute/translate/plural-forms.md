@@ -12,7 +12,7 @@ sidebar_position: 4
 
 名詞がいくつかの複数形の語形を持つ言語があります。 その使い方は、示される物の数によって異なります。
 
-For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural — *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. しかし、言語によっては、複数形が1つだけだったり、逆に2つ以上あったりもします。
+For instance, English words have two word forms when speaking about something in the singular, like *one star*, and in the plural — *two stars*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. しかし、言語によっては、複数形が1つだけだったり、逆に2つ以上あったりもします。
 
 英語とは対照的に、ポーランド語には名詞の複数形が3つあります。 One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2–4, excluding 12–14, and the third form — for words with other numbers in front of them.
 

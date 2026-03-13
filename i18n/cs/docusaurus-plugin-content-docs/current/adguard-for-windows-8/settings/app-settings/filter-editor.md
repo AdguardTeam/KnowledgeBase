@@ -1,5 +1,5 @@
 ---
-title: Filter editor
+title: Editor filtrů
 sidebar_position: 2
 ---
 
@@ -11,14 +11,14 @@ Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor rekla
 
 ![Filter editor](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/editor.png)
 
-The Filter editor is a tool that allows you to view and manage filters at the level of individual rules. Filters are combined into thematic categories: _Ad Blocking_, _Privacy_, _Language-specific_ filters, _Custom_, and _Other_.
+Editor filtrů je nástroj, který umožňuje prohlížet a spravovat filtry na úrovni jednotlivých pravidel. Filtry jsou rozděleny do tematických kategorií: _Blokování reklam_, _Soukromí_, _Jazykově specifické_ filtry, _Vlastní_ a _Ostatní_.
 
-With the Filter editor, you can:
+Pomocí editoru filtrů můžete:
 
-- See all the filters that are currently enabled
+- Zobrazit všechny aktuálně povolené filtry
 
-- Edit existing filtering rules, add your own custom rules, or import ready-to-use ones
+- Upravit stávající pravidla filtrování, přidat vlastní pravidla nebo importovat hotová pravidla
 
-The Filter editor is especially useful for advanced users who want to fine-tune ad blocking by precisely controlling what is blocked or allowed. If you’re not familiar with creating your own rules, we have an article to help you learn how.
+Editor filtrů je obzvláště užitečný pro pokročilé uživatele, kteří chtějí doladit blokování reklam pomocí přesného nastavení toho, co je blokováno a co povoleno. Pokud nevíte, jak vytvořit vlastní pravidla, máme pro vás článek, který vám s tím pomůže.
 
-[How to create own rules](general/ad-filtering/create-own-filters/)
+[Jak vytvářet vlastní pravidla](general/ad-filtering/create-own-filters/)

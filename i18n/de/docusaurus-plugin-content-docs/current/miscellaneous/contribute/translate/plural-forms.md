@@ -12,7 +12,7 @@ Wir empfehlen Ihnen dringend, diesen Artikel sorgfältig zu lesen, um mehr über
 
 Substantive in verschiedenen Sprachen können mehrere Wortformen im Plural haben. Ihre Verwendung hängt von der Anzahl der Dinge ab, über die Sie sprechen.
 
-Zum Beispiel haben englische Wörter zwei Wortformen, wenn man über etwas im Singular spricht, wie *„one star“*, und im Plural — *„two stars“*. Es spielt keine Rolle, ob Sie fünf, sechsundzwanzig oder sogar fünfhundertzweiunddreißig Sterne sagen — die Endung „s“ bleibt dieselbe. Einige Sprachen können jedoch nur eine oder mehrere Pluralformen enthalten.
+For instance, English words have two word forms when speaking about something in the singular, like *one star*, and in the plural — *two stars*. Es spielt keine Rolle, ob Sie fünf, sechsundzwanzig oder sogar fünfhundertzweiunddreißig Sterne sagen — die Endung „s“ bleibt dieselbe. Einige Sprachen können jedoch nur eine oder mehrere Pluralformen enthalten.
 
 Im Gegensatz zum Englischen gibt es in der polnischen Sprache drei Substantivformen im Plural. Eine davon wird verwendet, wenn man über etwas in der Einzahl spricht, eine andere Form wird im Plural verwendet, aber mit Zahlen, die auf 2-4 enden, außer 12-14, und die dritte Form - für Wörter mit anderen Zahlen vor ihnen.
 
