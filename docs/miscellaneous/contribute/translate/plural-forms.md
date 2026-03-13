@@ -12,7 +12,7 @@ We strongly recommend you to properly read this article to learn more about plur
 
 Nouns in different languages can have several plural word forms. Their usage depends on the number of things you are talking about.
 
-For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural — *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. But some languages can contain only one or many plural forms.
+For instance, English words have two word forms when speaking about something in the singular, like *one star*, and in the plural — *two stars*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. But some languages can contain only one or many plural forms.
 
 In contrast to English, the Polish language has three plural forms of nouns. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2–4, excluding 12–14, and the third form — for words with other numbers in front of them.
 
