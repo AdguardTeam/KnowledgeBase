@@ -30,7 +30,8 @@ RemainAfterExit=yes
 [Install]
 WantedBy=default.target
 ```
-2. Run the following commands to enable the service:
+
+1. Run the following commands to enable the service:
 
 ```sh
 systemctl --user daemon-reload
@@ -66,9 +67,11 @@ WantedBy=default.target
 
 In the `User=username` parameter, replace `username` with your Linux username.
 
-2. Run the following commands to enable the service:
+1. Run the following commands to enable the service:
 
 ```sh
 systemctl daemon-reload
 systemctl enable --now adguard-cli
 ```
+
+
