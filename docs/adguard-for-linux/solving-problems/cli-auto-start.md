@@ -11,7 +11,7 @@ To start AdGuard CLI automatically at login, create a user-level systemd service
 
 1. Create the service file `~/.config/systemd/user/adguard-cli.service` and add the following configuration:
 
-```sh
+```ini
 [Unit]
 Description=AdGuard CLI
 After=network.target
@@ -44,7 +44,7 @@ If you want AdGuard protection to start at system startup, create a system-level
 
 1. Create the service file `/etc/systemd/system/adguard-cli.service` and add the following configuration:
 
-```sh
+```ini
 [Unit]
 Description=AdGuard CLI
 After=network.target
@@ -73,5 +73,3 @@ In the `User=username` parameter, replace `username` with your Linux username.
 systemctl daemon-reload
 systemctl enable --now adguard-cli
 ```
-
-
