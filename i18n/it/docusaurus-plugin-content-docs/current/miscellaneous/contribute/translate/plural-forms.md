@@ -12,7 +12,7 @@ Ti suggeriamo vivamente di leggere correttamente questo articolo, per scoprire d
 
 I sostantivi in diverse lingue, possono avere diverse forme plurali. Il loro utilizzo dipende dal numero di cose di cui parli.
 
-Ad esempio, le parole inglesi prevedono due forme parlando di qualcosa al singolare, come in *'one star'*, e al plurale, *'two stars'*. Non importa che tu dica cinque, ventisei, o persino cinquecentotrentadue stelle (stars), la 's' finale rimarrà la stessa. Ma certe lingue possono contenere soltanto una o più forme plurali.
+For instance, English words have two word forms when speaking about something in the singular, like *one star*, and in the plural — *two stars*. Non importa che tu dica cinque, ventisei, o persino cinquecentotrentadue stelle (stars), la 's' finale rimarrà la stessa. Ma certe lingue possono contenere soltanto una o più forme plurali.
 
 A differenza dell'inglese, il polacco ha tre forme plurali dei sostantivi. Una di esse viene utilizzata al singolare, un'altra al plurale, ma con i numeri che terminano da 2 a 4, tranne 12 e 14; e la terza, per le parole precedute da altri numeri.
 

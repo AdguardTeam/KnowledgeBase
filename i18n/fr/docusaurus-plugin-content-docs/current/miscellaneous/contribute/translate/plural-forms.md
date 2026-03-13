@@ -12,7 +12,7 @@ Nous vous recommandons vivement de lire attentivement cet article pour en savoir
 
 Les substantifs dans les langues différentes peuvent avoir plusieurs formes de mots au pluriel. Leur utilisation dépend du nombre de choses dont vous parlez.
 
-Par exemple, les mots anglais ont deux formes de mots lorsqu'ils parlent de quelque chose au singulier, comme *'one star'*, et au pluriel – *'two stars'*. Peu importe que vous disiez cinq, vingt-six ou même cinq cent trente-deux « stars» — la terminaison « s » restera la même. Mais certaines langues ne peuvent contenir qu'une ou plusieurs formes plurielles.
+For instance, English words have two word forms when speaking about something in the singular, like *one star*, and in the plural — *two stars*. Peu importe que vous disiez cinq, vingt-six ou même cinq cent trente-deux « stars» — la terminaison « s » restera la même. Mais certaines langues ne peuvent contenir qu'une ou plusieurs formes plurielles.
 
 Contrairement à l'anglais, la langue polonaise a trois formes plurielles de noms. L'une d'entre elles est utilisée pour parler de quelque chose au singulier, une autre forme est utilisée au pluriel, mais avec des nombres se terminant par 2—4, à l'exclusion de 12—14, et la troisième forme — pour les mots avec d'autres nombres devant eux.
 

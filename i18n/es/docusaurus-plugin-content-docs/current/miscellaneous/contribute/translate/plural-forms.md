@@ -12,7 +12,7 @@ Te recomendamos encarecidamente que leas correctamente este artículo para obten
 
 Los sustantivos en diferentes idiomas pueden tener varias formas de palabras en plural. Su uso depende del número de cosas de las que se hable.
 
-Por ejemplo, las palabras en inglés tienen dos formas de palabras cuando se habla de algo en singular, como *"one star"*, y en plural: *"two stars"*. No importa si dices cinco, veintiséis o incluso quinientas treinta y dos estrellas, la terminación ''s'' seguirá siendo la misma. Pero algunos idiomas pueden contener solo una o varias formas plurales.
+For instance, English words have two word forms when speaking about something in the singular, like *one star*, and in the plural — *two stars*. No importa si dices cinco, veintiséis o incluso quinientas treinta y dos estrellas, la terminación ''s'' seguirá siendo la misma. Pero algunos idiomas pueden contener solo una o varias formas plurales.
 
 A diferencia del inglés, el idioma polaco tiene tres formas plurales de sustantivos. Uno de ellos se usa cuando se habla de algo en singular, otra forma se usa en plural pero con números que terminan en 2–4, excluyendo 12–14, y la tercera forma, para palabras con otros números delante de ellos.
 

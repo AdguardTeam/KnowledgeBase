@@ -18,6 +18,6 @@ Chcete-li více využívat produkty AdGuardu, můžete svou licenci upgradovat a
 - Chcete-li rozšířit počet zařízení, můžete **upgradovat Osobní licenci na licenci Rodinnou**
 - Můžete také **upgradovat své předplatné na doživotní licenci**
 
-Licenci můžete upgradovat ve svém AdGuard účtu. Chcete-li tak učinit, klikněte na *Upgradovat na doživotní licenci* nebo *Navýšit limit zařízení*.
+You can upgrade your license in your [AdGuard account](https://adguardaccount.com). Chcete-li tak učinit, klikněte na *Upgradovat na doživotní licenci* nebo *Navýšit limit zařízení*.
 
 ![Upgrade](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

@@ -3,7 +3,7 @@ title: Co je licence AdGuardu?
 sidebar_position: 1
 ---
 
-Licence je povolení používat produkt AdGuard v souladu s [licenční smlouvou s koncovým uživatelem](https://adguard.com/eula.html). Pokud jsou licence vázány na e-mailovou adresu, lze licence AdGuardu nalézt v uživatelském účtu [](https://adguardaccount.com/).
+Licence je povolení používat produkt AdGuard v souladu s [licenční smlouvou s koncovým uživatelem](https://adguard.com/eula.html). If bound to an email address, AdGuard licenses can be found in the user's [AdGuard account](https://adguardaccount.com).
 
 ## Jaké typy licencí AdGuardu existují
 
@@ -35,7 +35,7 @@ Chcete-li rozšířit limit zařízení, můžete provést [upgrade](../payment-
 
 ## Jak používat licenci AdGuardu
 
-Chcete-li licenci používat v zařízení, přihlaste se do aplikace AdGuard pomocí e-mailové adresy přidružené k licenci. Pokud licence ještě nebyla připojena k vaší e-mailové adrese, můžete to provést v [AdGuard účtu](https://adguardaccount.com/). Chcete-li tak učinit, otevřete kartu *Licence* a klikněte na *Připojit licenci*. Obvykle jsou licence aktivovány okamžitě, ale někdy může aktivace trvat až pět minut.
+Chcete-li licenci používat v zařízení, přihlaste se do aplikace AdGuard pomocí e-mailové adresy přidružené k licenci. If the license hasn't been bound to your email address yet, you can do it in your [AdGuard account](https://adguardaccount.com). Chcete-li tak učinit, otevřete kartu *Licence* a klikněte na *Připojit licenci*. Obvykle jsou licence aktivovány okamžitě, ale někdy může aktivace trvat až pět minut.
 
 Případně můžete v aplikaci AdGuard zadat [licenční klíč](#license-key).
 
