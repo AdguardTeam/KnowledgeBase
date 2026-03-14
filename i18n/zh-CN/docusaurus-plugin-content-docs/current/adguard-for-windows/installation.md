@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解其工作原理， 请 [下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -21,25 +21,25 @@ sidebar_position: 2
 
 ## AdGuard 安装过程
 
-To install AdGuard on a Windows PC or tablet, follow these steps:
+要在 Windows 电脑或平板电脑上安装 AdGuard，请按照以下步骤操作：
 
-1. Go to the [AdGuard website](http://adguard.com) and click *Download*. You can also get the installation program from the [download page](https://adguard.com/download.html?auto=1) — the download will start automatically.
+1. 访问 [AdGuard 网站](http://adguard.com) 并点击 *下载*。您也可以从 [下载页面](https://adguard.com/download.html?auto=1) 获取安装程序 — 下载将自动开始。
 
-   ![Download AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/website_en.png)
+   ![下载 AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/website_en.png)
 
-2. Once the download is complete, open the file *adguardInstaller.exe*.
+2. 下载完成后，打开 *adguardInstaller.exe* 文件。
 
-   ![Downloaded file](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/download_en.png)
+   ![已下载的文件](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/download_en.png)
 
-3. You’ll see a User Account Control prompt asking if you want to allow the app to make changes to your PC. 请点击「*是*」。
+3. 您将看到用户账户控制提示，询问是否允许该应用对您的电脑进行更改。请点击「*是*」。
 
    ![允许更改 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/allow-changes.png)
 
-4. Choose the folder where you want AdGuard to be installed.
+4. 选择您想要安装 AdGuard 的文件夹。
 
    ![选择文件夹 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer1_en.png)
 
-   If you want to select a different location, click *Browse*, choose the folder, and click *OK*. You can also create a new folder by clicking *Make New Folder* and naming it. If you’d like a desktop shortcut, check the box *Create a desktop shortcut*. Then click *Install* to start the installation.
+   如果您想选择其他位置，请点击 *浏览*，选择文件夹，然后点击 *确定*。您也可以通过点击 *新建文件夹* 并命名来创建一个新文件夹。如果您需要桌面快捷方式，请勾选 *创建桌面快捷方式* 复选框。然后点击 *安装* 开始安装。
 
    ![开始安装 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer2_en.png)
 
@@ -47,11 +47,11 @@ To install AdGuard on a Windows PC or tablet, follow these steps:
 
    ![安装完成 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer3_en.png)
 
-   恭喜！ AdGuard has been successfully installed. You’ll be prompted to set up protection according to your preferences.
+   恭喜！AdGuard 已成功安装。系统将提示您根据个人偏好设置保护。
 
-   ![Setting up protection *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/setting_up_protection_en.png)
+   ![设置保护 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/setting_up_protection_en.png)
 
-   After that, the main window will open, where you can adjust the app’s settings.
+   之后，主窗口将打开，您可以在其中调整应用程序的设置。
 
 ## 如何卸载 Windows 版 AdGuard  {#uninstall}
 
@@ -59,55 +59,55 @@ To install AdGuard on a Windows PC or tablet, follow these steps:
 
 要卸载或重新安装 AdGuard，请执行以下操作：
 
-- For Microsoft Windows 10 & 11: Open the *Start Menu* by clicking *Start*, then select *Settings*. In the window that opens, click  *Apps* → *Installed apps*. Select *AdGuard* from the list of your installed apps, click the three-dot menu, and select *Uninstall*.
+- 对于 Microsoft Windows 10 和 11：单击 *开始* 打开 *开始菜单*，然后选择 *设置*。在打开的窗口中，依次单击 *应用* → *已安装的应用*。从已安装的应用列表中选择 *AdGuard*，单击三点菜单，然后选择 *卸载*。
 
-   ![Windows 10 & 11 uninstallation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/win11_uninstall_adguard.png)
+   ![Windows 10 & 11 卸载 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/win11_uninstall_adguard.png)
 
-- For Microsoft Windows 8: Right-click the *empty space* in the lower left corner of the task bar and select *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
+- 对于 Microsoft Windows 8：右键单击任务栏左下角的 *空白区域*，然后选择 *控制面板*。在 *程序* 部分单击 *卸载程序*，然后从已安装的应用列表中选择 *AdGuard*，并按列表上方的 *卸载* 按钮。在打开的窗口中单击 *卸载 AdGuard* 确认操作。
 
-- For Microsoft Windows 8.1: Right-click the *Start button* and select *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
+- 对于 Microsoft Windows 8.1：右键单击 *开始按钮*，然后选择 *控制面板*。在 *程序* 部分单击 *卸载程序*，然后从已安装的应用列表中选择 *AdGuard*，并按列表上方的 *卸载* 按钮。在打开的窗口中单击 *卸载 AdGuard* 确认操作。
 
-- For Microsoft Windows 7: Open *Start Menu*. In the search box, type *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
+- 对于 Microsoft Windows 7：打开 *开始菜单*。在搜索框中输入 *控制面板*。在 *程序* 部分单击 *卸载程序*，然后从已安装的应用列表中选择 *AdGuard*，并按列表上方的 *卸载* 按钮。在打开的窗口中单击 *卸载 AdGuard* 确认操作。
 
 ### 卸载的进阶方法 {#advanced}
 
-In case regular uninstall doesn't work for any reason, you can try to use an advanced method. First of all, you need to [download the uninstaller tool](https://static.adtidy.org/windows/uninstaller/uninstall_utility.zip) created by our developers. Extract the archive to any folder on your PC and run the **Adguard.UninstallUtility.exe** file, and allow the app to make changes to your device. Then follow the instruction below:
+如果常规卸载因任何原因无法进行，您可以尝试使用高级方法。首先，您需要 [下载我们开发人员创建的卸载工具](https://static.adtidy.org/windows/uninstaller/uninstall_utility.zip) 。将压缩包解压到电脑上的任意文件夹，运行 **Adguard.UninstallUtility.exe** 文件，并允许该应用程序对您的设备进行更改。然后按照以下说明操作：
 
-- Select *AdGuard Ad Blocker* and *Standard* uninstall type, then click *Uninstall*.
+- 选择 *AdGuard Ad Blocker* 和 *Standard* 卸载类型，然后单击 *Uninstall*。
 
-   ![Standard uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard.jpg)
+   ![标准卸载 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard.jpg)
 
-- Click *OK* once the warning window pops up:
+- 弹出警告窗口后，单击 *OK*：
 
-   ![Standard uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
+   ![标准卸载警告 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
+- 等待卸载完成 — 界面将显示 **卸载完成** 字样并提示您重启电脑：
 
-   ![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard_complete.jpg)
+   ![卸载完成 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard_complete.jpg)
 
 :::caution
 
-Follow the next steps only if performing the first two steps wasn’t enough for some reason. We strongly suggest contacting our support before using steps 3-4 of advanced uninstall instruction.
+仅当由于某种原因执行前两个步骤不足以解决问题时，才请遵循后续步骤。我们强烈建议在使用高级卸载说明的步骤 3-4 之前联系我们的支持团队。
 
 :::
 
-- Select *AdGuard Ad Blocker* and *Extended* uninstall type, then click *Uninstall*. Click *Yes, continue* in the window prompt.
+- 选择 *AdGuard Ad Blocker* 和 *Extended(扩展)* 卸载类型，然后单击 *Uninstall(卸载)*。在弹出的窗口中点击 *Yes, continue(是，继续)*。
 
-   ![Extended uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
+   ![扩展卸载 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
 
-- Click *OK* once the warning window pops up:
+- 弹出警告窗口后，单击 *OK*：
 
-   ![Extended uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
+   ![扩展卸载警告 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
+- 等待卸载完成 — 界面将显示 **Uninstall complete(卸载完成)** 字样并提示您重启电脑：
 
-   ![Extended uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
+   ![扩展卸载完成 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
 
-AdGuard is successfully uninstalled!
+AdGuard 已成功卸载！
 
 #### 在控制台模式下运行卸载程序
 
-Besides running the advanced uninstaller in its user-interactive mode, you can also use command-line arguments to uninstall AdGuard for Windows. To do this, follow the instructions below:
+除了以用户交互模式运行高级卸载程序外，您还可以使用命令行参数来卸载 AdGuard for Windows。为此，请按照以下说明操作：
 
 1. 从开始菜单中输入 *cmd* 打开命令提示符。
 2. 使用 `/console` 在控制台模式下运行卸载程序，无需交互式 UI。 如果未激活 `/console` 模式，则以下所有命令行参数将被忽略。
@@ -119,6 +119,6 @@ Besides running the advanced uninstaller in its user-interactive mode, you can a
 
 :::note
 
-The use of the parameters `/console` and `/adblocker` is necessary for a successful uninstall. The parameters `/advanced` and `/settings` are optional.
+参数 `/console` 和 `/adblocker` 的使用对于成功卸载是必需的。参数 `/advanced` 和 `/settings` 是可选的。
 
 :::
