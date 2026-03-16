@@ -532,7 +532,7 @@ On devices running ColorOS, the system may aggressively restrict background proc
 
 - Open **System settings** → **Battery → Battery mode** and select **High performance mode**
 
-![High performance mode *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/high_performance_mode.jpg)
+![High performance mode *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/high_performance_mode.jpg)
 
 - Go to **Apps → App management → AdGuard → Battery usage** and select **Allow background activity**
 
