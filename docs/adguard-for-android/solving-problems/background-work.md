@@ -536,7 +536,7 @@ On devices running ColorOS, the system may aggressively restrict background proc
 
 - Go to **Apps → App management → AdGuard → Battery usage** and select **Allow background activity**
 
-![Allow background activity *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/allow_background_activity.jpg)
+![Allow background activity *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/allow_background_activity.jpg)
 
 - **Apps → Auto launch** → enable the switch for AdGuard
 
