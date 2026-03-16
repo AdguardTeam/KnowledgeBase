@@ -62,8 +62,7 @@ RemainAfterExit=yes
 User=username
 
 [Install]
-WantedBy=default.target
-```
+WantedBy=multi-user.target
 
 In the `User=username` parameter, replace `username` with your Linux username.
 
