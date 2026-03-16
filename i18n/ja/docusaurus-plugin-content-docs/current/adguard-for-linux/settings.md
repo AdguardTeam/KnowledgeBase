@@ -33,7 +33,7 @@ This command attempts to configure a redirection to the proxy.
 adguard-cli stop
 ```
 
-This command not only stops the proxy but also stops the trafic from redirecting to it.
+This command not only stops the proxy but also stops the traffic from redirecting to it.
 
 ### Check protection status
 
@@ -45,11 +45,19 @@ adguard-cli status
 
 ![Status/Stop protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
 
+### Restart protection
+
+To restart the proxy server and reapply settings, enter:
+
+```sh
+adguard-cli restart
+```
+
 ## Updates
 
 ### フィルタ更新を確認する
 
-更新があるかどうかをチェックするには、以下を入力します：
+To check for updates, enter:
 
 ```sh
 adguard-cli check-update
@@ -57,7 +65,7 @@ adguard-cli check-update
 
 ### Update AdGuard for Linux
 
-AdGuard for Linux をアップデートするには、以下を入力します：
+To update AdGuard for Linux, enter:
 
 ```sh
 adguard-cli update
@@ -65,45 +73,102 @@ adguard-cli update
 
 ### Update script output
 
-更新スクリプトの出力を表示するには、以下を入力します：
+To view the update script output, enter:
 
 ```sh
 adguard-cli update -v
 ```
 
-## AdGuard for Linux を設定する
+## Configure AdGuard for Linux
 
-AdGuard for Linuxを設定するには、`config` コマンドを使用します。 サブコマンドは以下のとおりです：
+Use the `config` command to configure AdGuard for Linux. Subcommands:
 
-- `show`: `proxy.yaml` の現在の構成を表示する
+- `show [<section-name>]`: Show the current configuration in `proxy.yaml` (or a specific section)
 
   ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
-- `set`: `proxy.yaml` でオプションを設定する
+- `set <key> <value>`: Configure an option in `proxy.yaml`
   - `listen_ports.http_proxy`: HTTP listening port
-  - `proxy_mode`: プロキシモード（`manual`または`auto`）
+  - `proxy_mode`: Proxy mode (`manual` or `auto`)
 
-- `get`: 上記オプションの現在の状態を取得する
+- `get <key>`: Get the current status of a setting
 
-## フィルターを管理する
+- `list-add <key> <value> [<value>...]`: Add one or more values to a list setting
 
-AdGuard for Linuxを設定するには、`filters` コマンドを使用します。 サブコマンドは以下のとおりです：
+- `list-remove <key> <value>`: Remove a value from a list setting
 
-- `list`: インストールされているフィルタ一覧を表示する
+- `reset <key>`: Reset a setting to its default value
 
-  - `--all`: すべてのフィルタを表示
+- `reset --all`: Reset all settings to their default values
+
+:::note
+
+The Automatic mode can only be used if the following requirements are met:
+
+- `iptables` is installed and running (either `nft` or `legacy`)
+- `iptables` supports the `nat` table for both IPv4 and IPv6
+- `iptables` supports the `REDIRECT` and `QUEUE` chains for both IPv4 and IPv6
+- The `sudo` package is installed
+
+:::
+
+## Manage filters
+
+Use the `filters` command to configure AdGuard for Linux. Subcommands:
+
+- `list`: List installed and added filters
+
+  - `--all`: View all filters
 
   ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
-- `install`: フィルタをインストールする （インストールしたいフィルタのURLを入力してください。）
+- `add`: Add a built-in filter by ID or name
 
-- `enable`: フィルタを有効にする （フィルタの名前またはIDを入力してください。）
+- `install`: Install a filter. Enter the URL of the filter you want to install or local file
+  - `--trusted`: Mark the custom filter as trusted
+  - `--title`: Set a custom title for the filter
+
+- `enable`: Enable a filter. Enter the name or ID of the filter
 
   ![Enable filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
-- `disable`: フィルタを無効にする （フィルタの名前またはIDを入力してください。）
+- `disable`: Disable a filter. Enter the name or ID of the filter
 
-- `update`: フィルタを更新する
+- `remove`: Remove an internal or custom filter by ID
+
+- `set-trusted`: Mark a custom filter as trusted or untrusted
+
+- `set-title`: Set a custom title for a custom filter
+
+Filter updates are handled by `adguard-cli check-update` (the `filters update` subcommand forwards to it).
+
+## Manage DNS filters
+
+Use the `dns filters` command to manage DNS filter lists. Subcommands:
+
+- `list`: List installed and added DNS filters
+  - `--all`: View all DNS filters
+- `add`: Add a built-in DNS filter by ID or name
+- `install`: Install a custom DNS filter from a URL or local file
+  - `--title`: Set a custom title for the filter
+- `enable`: Enable a DNS filter. Enter the name or ID of the filter
+- `disable`: Disable a DNS filter. Enter the name or ID of the filter
+- `remove`: Remove a DNS filter by ID
+- `set-title`: Set a custom title for a DNS filter
+
+DNS filter updates are handled by `adguard-cli check-update`.
+
+## Manage userscripts
+
+Use the `userscripts` command to manage userscripts. Subcommands:
+
+- `list`: Show installed userscripts
+- `install`: Install a userscript from a URL
+- `remove`: Remove a userscript
+- `enable`: Enable a userscript
+- `disable`: Disable a userscript
+
+Userscripts are updated by `adguard-cli check-update`.
 
 ## Changing the proxy server listen address in manual proxy mode
 
@@ -203,3 +268,37 @@ adguard-cli config show outbound_proxy
 Configuring `outbound_proxy` via URL is available starting from AdGuard for Linux v1.1.26 nightly and v1.1 stable release.
 
 :::
+
+## Export and import settings
+
+The export/import functionality allows you to backup your AdGuard CLI configuration and restore it on the same or different system. This includes filters, proxy settings, and other configuration options.
+
+### Export settings
+
+To export current AdGuard CLI settings to a ZIP archive, use:
+
+```sh
+adguard-cli export-settings
+```
+
+You can specify the output path using the `-o` or `--output` flag. This can be either a specific file path or a directory:
+
+```sh
+# Export to a specific file
+adguard-cli export-settings -o "/path/to/settings.zip"
+
+# Export to a directory (archive will be created with a standard name)
+adguard-cli export-settings -o "/path/to/directory"
+```
+
+If no output path is specified, the settings will be exported to the working directory with a standard name. After successful export, the command will display the full path where the archive was created.
+
+### Import settings
+
+To import AdGuard CLI settings from a ZIP archive, use:
+
+```sh
+adguard-cli import-settings -i "/path/to/settings.zip"
+```
+
+The `-i` or `--input` flag is required and specifies the path to the settings archive to import.

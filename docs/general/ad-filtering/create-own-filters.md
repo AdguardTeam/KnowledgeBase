@@ -392,15 +392,15 @@ Basically, they just limit the scope of rule application.
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Chrome MV3][ext-mv3] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
+| Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Chrome MV3][ext-mv3] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard Mini for Mac][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [$app](#app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
 | [$domain](#domain-modifier) | ✅ | ✅ | ✅ [*[1]](#domain-modifier-limitations) | ✅ | ✅ [*[1]](#domain-modifier-limitations) | ✅ [*[1]](#domain-modifier-limitations) | ✅ |
-| [$header](#header-modifier) | ✅ | ✅ [*[2]](#header-modifier-limitations)| ❌ | ✅ [*[2]](#header-modifier-limitations) | ❌ | ❌ | ❌ |
+| [$header](#header-modifier) | ✅ | ✅ [*[2]](#header-modifier-limitations)| ✅ [*[2]](#header-modifier-limitations) | ✅ [*[2]](#header-modifier-limitations) | ❌ | ❌ | ❌ |
 | [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$method](#method-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$method](#method-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ [*[2]](#method-modifier-limitations) | ✅ [*[2]](#method-modifier-limitations) | ❌ |
 | [$popup](#popup-modifier) | ✅ [*[3]](#popup-modifier-limitations) | ✅ | ✅ [*[3]](#popup-modifier-limitations) | ✅ | ✅ [*[3]](#popup-modifier-limitations) | ✅ [*[3]](#popup-modifier-limitations) | ❌ |
 | [$strict-first-party](#strict-first-party-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$strict-third-party](#strict-third-party-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
@@ -587,7 +587,7 @@ despite the pattern `||*page` may match specific domains.
 
 :::caution Limitations
 
-In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries are not supported.
+In [AdGuard for Chrome MV3][ext-mv3], `regexp` and `any_tld_domain` entries and the `$removeparam` modifier are not supported.
 
 AdGuard for iOS and AdGuard for Safari support the `$domain` modifier but have some limitations.
 For more details, see the [SafariConverterLib section](#safari-converter--basic--supported-with-limitations).
@@ -645,12 +645,15 @@ The modifier part, `":" h_value`, may be omitted. In that case, the modifier mat
   [`$script`](#script-modifier) and [`$stylesheet`](#stylesheet-modifier). The rules with other modifiers
   are considered invalid and will be discarded.
 
+1. In AdGuard Browser Extension MV3, regular expressions in the `$header` modifier values are not supported.
+
 :::
 
 :::info Compatibility
 
 Rules with the `$header` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux
-with [CoreLibs] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later.
+with [CoreLibs] v1.11 or later, AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later,
+and AdGuard Browser Extension MV3 v5.3 or later.
 
 :::
 
@@ -703,7 +706,9 @@ This modifier limits the rule scope to requests that use the specified set of HT
 
 :::caution Restrictions
 
-Rules with mixed negated and not negated values are considered invalid.
+1. In AdGuard for iOS and AdGuard Mini for Mac, the `$method` modifier does not support negation. Therefore, rules such as `$method=~get` are not supported.
+
+1. Rules with a combination of negated and non-negated values are considered invalid.
 So, for example, the rule `||evil.com^$method=get|~head` will be ignored.
 
 :::
@@ -711,6 +716,8 @@ So, for example, the rule `||evil.com^$method=get|~head` will be ignored.
 :::info Compatibility
 
 Rules with `$method` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.12 or later, and AdGuard Browser Extension for Chrome, Firefox, and Edge with [TSUrlFilter] v2.1.1 or later.
+
+In AdGuard for iOS (v4.5.15 or later) and AdGuard Mini for Mac (v2.1 or later), the `$method` modifier is supported with limitations.
 
 :::
 
@@ -2734,6 +2741,7 @@ With these rules, specified UTM parameters will be removed from any request save
 [AdGuard for Chrome MV3][ext-mv3] has some limitations:
 
 - Regular expressions, negation and allowlist rules are not supported.
+- Generic rules are applied before specific rules, and redirection occurs only once. This may prevent subsequent or more specific redirects from applying.
 - Group of similar `$removeparam` rules will be combined into one. Example:
 
     ```bash
@@ -2801,6 +2809,7 @@ With these rules, specified UTM parameters will be removed from any request save
 
 1. Rules with the `$removeparam` modifier can only be used [**in trusted filters**](#trusted-filters).
 1. `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers), [content-type modifiers](#content-type-modifiers), and with the `$important` and `$app` modifiers. Rules with any other modifiers are considered invalid and will be discarded.
+1. Although `$domain` is classified as a basic modifier, it's not compatible with `$removeparam` rules in the Manifest V3 extension.
 1. `$removeparam` rules without [content type modifiers](#content-type-modifiers) will only match requests where the content type is `document`.
 
 :::
@@ -2910,17 +2919,34 @@ If multiple `$urltransform` rules match a single request, we will apply each of 
 
 **Syntax**
 
-`$urltransform` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
+`$urltransform` value is a series of one or more transformations separated by `|`. The first transformation is
+applied to the input URL. Each of the following transformations is applied to the output of the previous one.
+The output of a failed transformation (for example, if Base64 decoding failed or if substitution found no matches)
+is its input, unchanged. Formally:
 
 ```text
-urltransform = "/" regexp "/" replacement "/" modifiers
+urltransform = transforms
+transforms = transform | transform "|" transforms
+transform = substitute | decode
+substitute = "/" regexp "/" replacement "/" modifiers
+decode = "b64" | "pct"
 ```
 
-- **`regexp`** — a regular expression.
-- **`replacement`** — a string that will be used to replace the string corresponding to `regexp`.
-- **`modifiers`** — a regular expression flags. For example, `i` — insensitive search, or `s` — single-line mode.
+- **`substitute`** is similar to replacement with regular expressions [in Perl](https://perldoc.perl.org/perlrequick.html#Search-and-replace).
+    - **`regexp`** — a regular expression.
+    - **`replacement`** — a string that replaces whatever is matched by `regexp`. `$1`, `$2`, etc. in the replacement string are replaced with the contents of the corresponding capture group.
+    - **`modifiers`** — regular expression flags, e.g., `i` for case-insensitive search.
+- **`b64`** — decodes a [Base64-encoded](https://datatracker.ietf.org/doc/html/rfc4648) string, both the default and the URL-safe alphabets are supported.
+- **`pct`** — decodes a [percent-encoded](https://datatracker.ietf.org/doc/html/rfc3986#section-2.1) string.
 
 In the `$urltransform` value, two characters must be escaped: the comma `,` and the dollar sign `$`. Use the backslash character `\` for this. For example, an escaped comma looks like this: `\,`.
+
+:::info Compatibility
+
+AdGuard products that use a [CoreLibs] version older than 1.20 only support a single
+`substitute` transformation for the value of the `$urltransform` modifier.
+
+:::
 
 **Changing the origin**
 
@@ -3005,11 +3031,15 @@ Tracking links will now be automatically cleaned up, allowing direct navigation 
 
 Rules with the `$urltransform` modifier can only be used [**in trusted filters**](#trusted-filters).
 
+`$urltransform` rules without [content-type modifiers](#content-type-modifiers) will only match requests where the content type is `document`.
+
 :::
 
 :::info Compatibility
 
 Rules with the `$urltransform` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.15 or later.
+
+`$urltransform` rules with [content-type modifiers](#content-type-modifiers) are supported starting from [CoreLibs] v1.19 or later. In earlier versions, content-type modifiers were not allowed with `$urltransform`.
 
 :::
 
@@ -4817,6 +4847,33 @@ If `pattern` is not set for `$path`, rule will apply only on the main page of we
 - `[$path]example.com##.textad` hides a `div` with the class `textad` at the main page of `example.com`
 - `[$domain=example.com,path=/page.html]##.textad` hides a `div` with the class `textad` at `page.html` of `example.com` and all subdomains but not at `another_page.html`
 - `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` hides a `div` with the class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please note the [escaped special characters](#non-basic-rules-modifiers-syntax))
+
+#### Path-in-domain syntax {#path-in-domain-syntax}
+
+For cosmetic rules, you can use a simplified path-in-domain syntax by specifying the path directly in the domain part of the rule instead of using the `$path` modifier.
+
+**Syntax**
+
+```text
+   rule = [targets] "##" selector
+targets = [target0, target1[, ...[, targetN]]]
+ target = domain [path]
+```
+
+**Examples:**
+
+- `example.org/checkout##.promo-banner` — hides `.promo-banner` elements only on checkout pages
+- `news.site.com/article##.sidebar-ad` — hides sidebar ads only on article pages
+- `domain1.com,example.org/path##.banner` — applies to all pages on `domain1.com` and only `/path` pages on `example.org`
+- `/example\.org\/article\d+/##.ad` — hides ads on article pages with numeric IDs
+
+Path-in-domain syntax works with all types of cosmetic rules (`##`, `#@#`, `#$#`, `$$`, `$@$`, `#%#`, `#@%#`)
+
+:::info Compatibility
+
+Path-in-domain syntax has been introduced in [CoreLibs] v1.20.
+
+:::
 
 #### `$path` modifier limitations {#non-basic-path-modifier-limitations}
 

@@ -49,6 +49,8 @@ Nemělo by se to **používat** plošně na počítačích koncových uživatel�
 
 :::
 
+#### Použití souborů .reg
+
 Potřebné změny registru můžete provést automaticky pomocí jednoho z níže uvedených předem vygenerovaných souborů .reg. Každý soubor zakazuje sandboxing AppContainer/Network Service pro konkrétní prohlížeč založený na Chromium:
 
 - [Stáhnout Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chrome.reg)
@@ -57,6 +59,17 @@ Potřebné změny registru můžete provést automaticky pomocí jednoho z níž
 - [Stáhnout Brave.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Brave.reg)
 - [Stáhnout Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Vivaldi.reg)
 - [Stáhnout YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_YandexBrowser.reg)
+
+Tyto změny můžete vrátit zpět pomocí souborů .reg pro vrácení změn, které jsou k dispozici níže. Tyto soubory odstraní větve registru, které byly přidány přímou verzí:
+
+- [Undo Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chrome.reg)
+- [Undo Chromium.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chromium.reg)
+- [Undo Edge.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Edge.reg)
+- [Undo Brave.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Brave.reg)
+- [Undo Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Vivaldi.reg)
+- [Undo YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_YandexBrowser.reg)
+
+#### Explicitní úprava registru
 
 Pokud váš prohlížeč není uveden v seznamu, postupujte podle níže uvedených pokynů a vytvořte potřebné položky registru:
 

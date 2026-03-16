@@ -171,6 +171,10 @@ Blokuje domény macOS Private Relay, pokud má uživatel povolenou bránu firewa
 
 Povolení tohoto nastavení je užitečné v následujícím scénáři: pokud je aktivní macOS Private Relay, filtrování nemůže správně fungovat a musí být zakázáno. Ve verzích macOS až do verze 14 mohl AdGuard při zapnuté ochraně automaticky vypnout funkci Private Relay. Od systému macOS 15 to však již není možné, pokud je aktivní brána firewall. Zapnutím tohoto nastavení můžete zakázat funkci Private Relay, i když je brána firewall povolena, a překonat tak předchozí omezení.
 
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Zabezpečuje připojení DNS proxy pomocí hybridní postkvantové výměny klíčů, která kombinuje klasický algoritmus X25519 s postkvantovým algoritmem ML-KEM-768. Platí pouze pro odchozí připojení DoH, DoT a DoQ.
+
 ### Nastavení Režimu utajení
 
 #### `stealth.antidpi.http.split.fragment.size`

@@ -33,7 +33,7 @@ adguard-cli start
 adguard-cli stop
 ```
 
-이 명령은 프록시를 중지할 뿐만 아니라 트래픽이 프록시로 리디렉션되는 것도 중지합니다.
+This command not only stops the proxy but also stops the traffic from redirecting to it.
 
 ### 보호 상태 확인
 
@@ -45,80 +45,145 @@ adguard-cli status
 
 ![상태/보호 중지 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
 
-## 업데이트
+### Restart protection
+
+To restart the proxy server and reapply settings, enter:
+
+```sh
+adguard-cli restart
+```
+
+## Updates
 
 ### 업데이트 확인
 
-업데이트를 확인하려면 다음을 입력합니다.
+To check for updates, enter:
 
 ```sh
 adguard-cli check-update
 ```
 
-### Linux용 AdGuard 업데이트
+### Update AdGuard for Linux
 
-Linux용 AdGuard를 업데이트하려면 다음을 입력합니다.
+To update AdGuard for Linux, enter:
 
 ```sh
 adguard-cli update
 ```
 
-### 스크립트 출력 업데이트
+### Update script output
 
-업데이트 스크립트 출력을 보려면 다음을 입력합니다.
+To view the update script output, enter:
 
 ```sh
 adguard-cli update -v
 ```
 
-## Linux용 AdGuard 구성
+## Configure AdGuard for Linux
 
-`config` 명령을 사용하여 Linux용 AdGuard를 구성합니다. 하위 명령:
+Use the `config` command to configure AdGuard for Linux. Subcommands:
 
-- `show`: `proxy.yaml`의 현재 설정 표시
+- `show [<section-name>]`: Show the current configuration in `proxy.yaml` (or a specific section)
 
-  ![현재 설정 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
-- `set`: `proxy.yaml`에서 옵션 설정
-  - `listen_ports.http_proxy`: HTTP 수신 포트
-  - `proxy_mode`: 프록시 모드(`manual` 또는 `auto`)
+- `set <key> <value>`: Configure an option in `proxy.yaml`
+  - `listen_ports.http_proxy`: HTTP listening port
+  - `proxy_mode`: Proxy mode (`manual` or `auto`)
 
-- `get`: 위 옵션의 현재 상태 확인
+- `get <key>`: Get the current status of a setting
 
-## 필터 관리
+- `list-add <key> <value> [<value>...]`: Add one or more values to a list setting
 
-`filters` 명령을 사용하여 Linux용 AdGuard를 구성합니다. 하위 명령:
+- `list-remove <key> <value>`: Remove a value from a list setting
 
-- `list`: 설치된 필터 목록
+- `reset <key>`: Reset a setting to its default value
 
-  - `--all`: 모든 필터 보기
+- `reset --all`: Reset all settings to their default values
 
-  ![필터 목록 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
+:::note
 
-- `install`: 필터 설치 설치하려는 필터의 URL을 입력합니다.
+The Automatic mode can only be used if the following requirements are met:
 
-- `enable`: 필터 활성화 필터의 이름이나 ID를 입력합니다.
+- `iptables` is installed and running (either `nft` or `legacy`)
+- `iptables` supports the `nat` table for both IPv4 and IPv6
+- `iptables` supports the `REDIRECT` and `QUEUE` chains for both IPv4 and IPv6
+- The `sudo` package is installed
 
-  ![필터 활성화 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+:::
 
-- `disable`: 필터 비활성화 필터의 이름이나 ID를 입력합니다.
+## Manage filters
 
-- `update`: 필터 업데이트
+Use the `filters` command to configure AdGuard for Linux. Subcommands:
 
-## 수동 프록시 모드에서 프록시 서버 수신 주소 변경
+- `list`: List installed and added filters
 
-기본적으로 프록시 서버는 `127.0.0.1`(루프백 네트워크 인터페이스 주소)를 감시합니다.
-프록시 서버가 다른 인터페이스를 감시하도록 설정할 수 있습니다. 두 가지 방법이 있습니다.
+  - `--all`: View all filters
 
-1. `adguard-cli config set listen_address <address>` 명령어를 실행하세요. 여기서 `<address>`는 감시할 주소입니다.
-2. 구성 파일을 직접 편집합니다.
-   - 구성 파일의 위치를 확인하려면 `adguard-cli config show | grep "Config location"`를 실행합니다.
-   - `listen_address` 키를 찾아서 그에 맞는 값을 설정합니다. 사용 가능한 모든 네트워크 인터페이스에서 수신하려면 수신 주소를 `0.0.0.0` 또는 `::`으로 설정합니다.
+  ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
-수신 주소가 `127.0.0.1`이 아닌 다른 주소로 설정된 경우 프록시 클라이언트 인증이 필요합니다. 프록시 인증이 구성되지 않으면 AdGuard CLI가 시작되지 않습니다.
+- `add`: Add a built-in filter by ID or name
 
-- `adguard-cli config set listen_address <address>`를 실행할 때 `<address>`가 127.0.0.1이 아닌 경우, AdGuard CLI는 프로xy 인증이 아직 설정되지 않았다면 사용자 이름과 비밀번호를 요청합니다.
-- 구성 파일을 직접 편집할 때는 `listen_auth` 키를 찾습니다. `enabled` 하위 키를 `true`로 설정하고, `username`과 `password`를 비어 있지 않은 값으로 설정합니다.
+- `install`: Install a filter. Enter the URL of the filter you want to install or local file
+  - `--trusted`: Mark the custom filter as trusted
+  - `--title`: Set a custom title for the filter
+
+- `enable`: Enable a filter. Enter the name or ID of the filter
+
+  ![Enable filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+
+- `disable`: Disable a filter. Enter the name or ID of the filter
+
+- `remove`: Remove an internal or custom filter by ID
+
+- `set-trusted`: Mark a custom filter as trusted or untrusted
+
+- `set-title`: Set a custom title for a custom filter
+
+Filter updates are handled by `adguard-cli check-update` (the `filters update` subcommand forwards to it).
+
+## Manage DNS filters
+
+Use the `dns filters` command to manage DNS filter lists. Subcommands:
+
+- `list`: List installed and added DNS filters
+  - `--all`: View all DNS filters
+- `add`: Add a built-in DNS filter by ID or name
+- `install`: Install a custom DNS filter from a URL or local file
+  - `--title`: Set a custom title for the filter
+- `enable`: Enable a DNS filter. Enter the name or ID of the filter
+- `disable`: Disable a DNS filter. Enter the name or ID of the filter
+- `remove`: Remove a DNS filter by ID
+- `set-title`: Set a custom title for a DNS filter
+
+DNS filter updates are handled by `adguard-cli check-update`.
+
+## Manage userscripts
+
+Use the `userscripts` command to manage userscripts. Subcommands:
+
+- `list`: Show installed userscripts
+- `install`: Install a userscript from a URL
+- `remove`: Remove a userscript
+- `enable`: Enable a userscript
+- `disable`: Disable a userscript
+
+Userscripts are updated by `adguard-cli check-update`.
+
+## Changing the proxy server listen address in manual proxy mode
+
+By default, the proxy server listens on `127.0.0.1` — the address of the loopback network interface.
+There are two ways to make the proxy server listen on a different interface:
+
+1. Run `adguard-cli config set listen_address <address>` where `<address>` is the address to listen on.
+2. Edit the config file directly:
+   - To determine the location of the config file, run `adguard-cli config show | grep "Config location"`.
+   - Look for the `listen_address` key and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0` or `::`.
+
+If the listen address is set to anything other than `127.0.0.1`, then proxy client authentication is required. AdGuard CLI will not start unless proxy authentication is configured:
+
+- When running `adguard-cli config set listen_address <address>` where `<address>` is not `127.0.0.1`, AdGuard CLI will prompt for a username and password if proxy authentication is not already configured.
+- When editing the config file directly, look for the `listen_auth`key. Set the `enabled` sub-key to `true`, and `username` and `password` to non-empty values.
 
 ## Configure outbound proxy
 
@@ -203,3 +268,37 @@ adguard-cli config show outbound_proxy
 Configuring `outbound_proxy` via URL is available starting from AdGuard for Linux v1.1.26 nightly and v1.1 stable release.
 
 :::
+
+## Export and import settings
+
+The export/import functionality allows you to backup your AdGuard CLI configuration and restore it on the same or different system. This includes filters, proxy settings, and other configuration options.
+
+### Export settings
+
+To export current AdGuard CLI settings to a ZIP archive, use:
+
+```sh
+adguard-cli export-settings
+```
+
+You can specify the output path using the `-o` or `--output` flag. This can be either a specific file path or a directory:
+
+```sh
+# Export to a specific file
+adguard-cli export-settings -o "/path/to/settings.zip"
+
+# Export to a directory (archive will be created with a standard name)
+adguard-cli export-settings -o "/path/to/directory"
+```
+
+If no output path is specified, the settings will be exported to the working directory with a standard name. After successful export, the command will display the full path where the archive was created.
+
+### Import settings
+
+To import AdGuard CLI settings from a ZIP archive, use:
+
+```sh
+adguard-cli import-settings -i "/path/to/settings.zip"
+```
+
+The `-i` or `--input` flag is required and specifies the path to the settings archive to import.

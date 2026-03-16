@@ -76,3 +76,37 @@ Altrimenti, puoi utilizzare una [chiave di licenza](../what-is#license-key) per 
 1. Utilizza il tuo indirizzo email o profilo social per attivare la tua licenza.
 
     ![Schermata d'accesso *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
+
+### Attivazione di AdGuard Mini per Mac
+
+1. Clicca l'icona AdGuard Mini nella barra dei menu'.
+
+    ![AdGuard Mini nella barra dei menu'](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
+
+2. Clicca l'icona delle impostazioni.
+
+    ![Icona impostazioni *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
+
+3. Vai a *Licenza*.
+
+    ![Vai a Licenza](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
+
+4. Apri il menu' (⋮) nell'angolo in alto a destra e clicca *Già acquistato?*.
+
+    ![Clicca "già acquistato"](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
+
+5. Vedrai le opzioni di attivazione disponibili:
+
+    ![Opzioni di attivazione](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
+
+    - **Accedi**
+
+      Accedi al tuo profilo AdGuard che contiene una licenza valida.
+
+    - **Ripristina dall'App Store**
+
+      Usa una licenza che hai precedentemente comprato tramite l'App Store.
+
+    - **Inserisci il codice di attivazione**
+
+      Inserisci il tuo codice di attivazione.

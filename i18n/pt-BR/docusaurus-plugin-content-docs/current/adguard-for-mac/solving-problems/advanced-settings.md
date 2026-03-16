@@ -171,6 +171,10 @@ Bloqueia domínios do Private Relay do macOS se o usuário tiver um firewall ati
 
 Ativar esta configuração é útil no seguinte cenário: quando o Private Relay do macOS está ativo, a filtragem não pode funcionar corretamente e deve ser desativada. Nas versões do macOS até 14, o AdGuard podia desativar automaticamente o Private Relay quando a proteção estava ativada. No entanto, a partir do macOS 15, isso não é mais possível se um Firewall estiver ativo. Ao ativar esta configuração, você pode desativar o Firewall mesmo quando está ativado, superando a limitação anterior.
 
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Secures DNS proxy connections with a hybrid post-quantum key exchange, combining the classical X25519 algorithm with the ML-KEM-768 post-quantum KEM. Applies only to DoH, DoT, and DoQ upstreams.
+
 ### Configurações do Modo Furtivo
 
 #### `stealth.antidpi.http.split.fragment.size`

@@ -171,6 +171,10 @@ sidebar_position: 9
 
 Эта настройка полезна, если Частный узел препятствует фильтрации. В версиях macOS до 14 AdGuard мог автоматически отключать Частный узел при включённой защите. Но начиная с macOS 15 это больше невозможно, если у пользователя включён фаервол. Эта настройка помогает исправить проблему.
 
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Secures DNS proxy connections with a hybrid post-quantum key exchange, combining the classical X25519 algorithm with the ML-KEM-768 post-quantum KEM. Applies only to DoH, DoT, and DoQ upstreams.
+
 ### Настройки Защиты от трекинга
 
 #### `stealth.antidpi.http.split.fragment.size`

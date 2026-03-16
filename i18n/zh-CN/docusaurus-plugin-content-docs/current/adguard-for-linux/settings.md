@@ -33,7 +33,7 @@ adguard-cli start
 adguard-cli stop
 ```
 
-此命令不仅停用代理，而且还停止流量重定向到代理。
+This command not only stops the proxy but also stops the traffic from redirecting to it.
 
 ### 检查保护状态
 
@@ -45,80 +45,145 @@ adguard-cli status
 
 ![状态/停用保护 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
 
-## 更新
+### Restart protection
+
+To restart the proxy server and reapply settings, enter:
+
+```sh
+adguard-cli restart
+```
+
+## Updates
 
 ### 检查更新
 
-要检查更新，请输入以下命令：
+To check for updates, enter:
 
 ```sh
 adguard-cli check-update
 ```
 
-### 更新 AdGuard Linux 版
+### Update AdGuard for Linux
 
-要更新 Linux 版 AdGuard，请输入以下命令：
+To update AdGuard for Linux, enter:
 
 ```sh
 adguard-cli update
 ```
 
-### 更新脚本输出
+### Update script output
 
-要查看更新脚本的输出，请输入以下命令：
+To view the update script output, enter:
 
 ```sh
 adguard-cli update -v
 ```
 
-## 配置 AdGuard Linux 版
+## Configure AdGuard for Linux
 
-使用 `config` 命令配置 Linux 版 AdGuard。 子命令：
+Use the `config` command to configure AdGuard for Linux. Subcommands:
 
-- `show`：显示 `proxy.yaml` 中的当前配置
+- `show [<section-name>]`: Show the current configuration in `proxy.yaml` (or a specific section)
 
-  ![当前设置 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
-- `set`：在 `proxy.yaml` 中配置选项
-  - `listen_ports.http_proxy`：HTTP 协议监听端口
-  - `proxy_mode`：代理模式（`manual` 或 `auto`)
+- `set <key> <value>`: Configure an option in `proxy.yaml`
+  - `listen_ports.http_proxy`: HTTP listening port
+  - `proxy_mode`: Proxy mode (`manual` or `auto`)
 
-- `get`：获取上述选项的当前状态
+- `get <key>`: Get the current status of a setting
 
-## 管理过滤器
+- `list-add <key> <value> [<value>...]`: Add one or more values to a list setting
 
-使用 `filters` 命令配置 Linux 版 AdGuard。 子命令：
+- `list-remove <key> <value>`: Remove a value from a list setting
 
-- `list`：列出已安装的过滤器
+- `reset <key>`: Reset a setting to its default value
 
-  - `--all`：查看所有过滤器
+- `reset --all`: Reset all settings to their default values
 
-  ![过滤列表 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
+:::note
 
-- `install`：安装过滤器。 请输入您要安装的过滤器 URL
+The Automatic mode can only be used if the following requirements are met:
 
-- `enable`：启用过滤器。 输入过滤器的名称或 ID
+- `iptables` is installed and running (either `nft` or `legacy`)
+- `iptables` supports the `nat` table for both IPv4 and IPv6
+- `iptables` supports the `REDIRECT` and `QUEUE` chains for both IPv4 and IPv6
+- The `sudo` package is installed
 
-  ![启用过滤器 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+:::
 
-- `disable`：禁用过滤器。 输入过滤器的名称或 ID
+## Manage filters
 
-- `update`：更新过滤器
+Use the `filters` command to configure AdGuard for Linux. Subcommands:
 
-## 在手动代理模式下更改代理服务器监听地址
+- `list`: List installed and added filters
 
-默认情况下，代理服务器监听 `127.0.0.1`（循环网络接口的地址）。
-有两种方法可以让代理在不同的界面上侦听：
+  - `--all`: View all filters
 
-1. 运行 `adguard-cli config set listen_address <address>`，其中`<address>` 是要监听的地址。
-2. 编辑配置文件：
-   - 要确定配置文件的位置，请运行 `adguard-cli config show | grep "Config location"`。
-   - 查找 `listen_address` 键并相应设置其值。 要在所有可用网络接口上监听，请将监听地址设置为 `0.0.0.0` 或 `::`。
+  ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
-若监听地址设置为除 `127.0.0.1` 之外的任何值，则需启用代理客户端认证。 AdGuard CLI 不会启动，除非配置代理认证：
+- `add`: Add a built-in filter by ID or name
 
-- 当执行 `adguard-cli config set listen_address <address>` 且 `<address>` 不为 `127.0.0.1` 时，若未配置代理认证，AdGuard CLI 将提示输入用户名和密码。
-- 编辑配置文件时，请查找 `listen_auth` 键。 将 `enabled` 子键设置为 `true`，并将 `username` 和 `password` 设置为非空值。
+- `install`: Install a filter. Enter the URL of the filter you want to install or local file
+  - `--trusted`: Mark the custom filter as trusted
+  - `--title`: Set a custom title for the filter
+
+- `enable`: Enable a filter. Enter the name or ID of the filter
+
+  ![Enable filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+
+- `disable`: Disable a filter. Enter the name or ID of the filter
+
+- `remove`: Remove an internal or custom filter by ID
+
+- `set-trusted`: Mark a custom filter as trusted or untrusted
+
+- `set-title`: Set a custom title for a custom filter
+
+Filter updates are handled by `adguard-cli check-update` (the `filters update` subcommand forwards to it).
+
+## Manage DNS filters
+
+Use the `dns filters` command to manage DNS filter lists. Subcommands:
+
+- `list`: List installed and added DNS filters
+  - `--all`: View all DNS filters
+- `add`: Add a built-in DNS filter by ID or name
+- `install`: Install a custom DNS filter from a URL or local file
+  - `--title`: Set a custom title for the filter
+- `enable`: Enable a DNS filter. Enter the name or ID of the filter
+- `disable`: Disable a DNS filter. Enter the name or ID of the filter
+- `remove`: Remove a DNS filter by ID
+- `set-title`: Set a custom title for a DNS filter
+
+DNS filter updates are handled by `adguard-cli check-update`.
+
+## Manage userscripts
+
+Use the `userscripts` command to manage userscripts. Subcommands:
+
+- `list`: Show installed userscripts
+- `install`: Install a userscript from a URL
+- `remove`: Remove a userscript
+- `enable`: Enable a userscript
+- `disable`: Disable a userscript
+
+Userscripts are updated by `adguard-cli check-update`.
+
+## Changing the proxy server listen address in manual proxy mode
+
+By default, the proxy server listens on `127.0.0.1` — the address of the loopback network interface.
+There are two ways to make the proxy server listen on a different interface:
+
+1. Run `adguard-cli config set listen_address <address>` where `<address>` is the address to listen on.
+2. Edit the config file directly:
+   - To determine the location of the config file, run `adguard-cli config show | grep "Config location"`.
+   - Look for the `listen_address` key and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0` or `::`.
+
+If the listen address is set to anything other than `127.0.0.1`, then proxy client authentication is required. AdGuard CLI will not start unless proxy authentication is configured:
+
+- When running `adguard-cli config set listen_address <address>` where `<address>` is not `127.0.0.1`, AdGuard CLI will prompt for a username and password if proxy authentication is not already configured.
+- When editing the config file directly, look for the `listen_auth`key. Set the `enabled` sub-key to `true`, and `username` and `password` to non-empty values.
 
 ## Configure outbound proxy
 
@@ -203,3 +268,37 @@ adguard-cli config show outbound_proxy
 Configuring `outbound_proxy` via URL is available starting from AdGuard for Linux v1.1.26 nightly and v1.1 stable release.
 
 :::
+
+## Export and import settings
+
+The export/import functionality allows you to backup your AdGuard CLI configuration and restore it on the same or different system. This includes filters, proxy settings, and other configuration options.
+
+### Export settings
+
+To export current AdGuard CLI settings to a ZIP archive, use:
+
+```sh
+adguard-cli export-settings
+```
+
+You can specify the output path using the `-o` or `--output` flag. This can be either a specific file path or a directory:
+
+```sh
+# Export to a specific file
+adguard-cli export-settings -o "/path/to/settings.zip"
+
+# Export to a directory (archive will be created with a standard name)
+adguard-cli export-settings -o "/path/to/directory"
+```
+
+If no output path is specified, the settings will be exported to the working directory with a standard name. After successful export, the command will display the full path where the archive was created.
+
+### Import settings
+
+To import AdGuard CLI settings from a ZIP archive, use:
+
+```sh
+adguard-cli import-settings -i "/path/to/settings.zip"
+```
+
+The `-i` or `--input` flag is required and specifies the path to the settings archive to import.

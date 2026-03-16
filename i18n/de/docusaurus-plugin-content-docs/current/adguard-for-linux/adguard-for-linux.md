@@ -5,6 +5,17 @@ sidebar_position: 1
 
 AdGuard für Linux, auch bekannt als AdGuard CLI, ist ein Befehlszeilen-Werbeblocker. Sie können ihn auf Linux- oder macOS-Geräten verwenden.
 
+## Unterstützte Linux-Distributionen
+
+AdGuard CLI unterstützt die folgenden Linux-Distributionen:
+
+- Debian Stable 10 oder höher
+- Ubuntu LTS 22.04, 24.04 oder höher
+- RHEL 8.0 oder höher
+- Fedora 35 oder höher
+
+Bei Linux-Distributionen, die **nicht auf Debian oder Red Hat basieren**, funktioniert das Skript zur automatischen Zertifikatsinstallation möglicherweise nicht ordnungsgemäß.
+
 Nachfolgend finden Sie die Befehle, die Sie benötigen, um sich anzumelden, den Schutz zu aktivieren und die Einstellungen zu verwalten.
 
 - [Installation, Einrichtung und Entfernung](/adguard-for-linux/installation)
