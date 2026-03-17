@@ -28,4 +28,4 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 - [Documentation for admins](/adguard-for-windows/admins-documentation.md)
 
-Configuration guide for system administrators
+    Configuration guide for system administrators
