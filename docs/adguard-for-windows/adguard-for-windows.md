@@ -15,7 +15,8 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 - [Installation](/adguard-for-windows/installation.md)
 
-Installation, removal, and system requirements for AdGuard for Windows
+    Installation, removal, and system requirements for AdGuard for Windows
+
 
 - [Browser Assistant](/adguard-for-windows/browser-assistant.md)
 
