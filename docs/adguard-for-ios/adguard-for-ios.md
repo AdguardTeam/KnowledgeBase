@@ -21,4 +21,4 @@ sidebar_position: 1
 
 - [AdGuard and AdGuard Pro](/adguard-for-ios/adguard-and-adguard-pro.md)
 
-Why there are two AdGuard apps in the App Store and how they differ
+    Why there are two AdGuard apps in the App Store and how they differ
