@@ -11,7 +11,7 @@ This article is about AdGuard Browser Extension, which safeguards only your brow
 
 - [Features](/adguard-browser-extension/features)
 
-    Main features and settings available in the AdGuard Browser Extension
+    Main features and settings available in AdGuard Browser Extension
 
 - [Availability](/adguard-browser-extension/availability)
 
@@ -23,7 +23,7 @@ This article is about AdGuard Browser Extension, which safeguards only your brow
 
 - [Compatibility with the standalone app](/adguard-browser-extension/compatibility)
 
-    Compatibility of the AdGuard Browser Extension with the AdGuard desktop apps
+    Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
 
 - [AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version/)
 
