@@ -35,7 +35,7 @@ This article is about AdGuard for Mac, a multifunctional ad blocker that protect
 
 - [Browser Assistant](/adguard-for-mac/features/browser-assistant.md)
 
-    An extension that complements the desktop program and allows you to manage filtering from your browser
+    An extension that complements the desktop app and allows you to manage filtering from your browser
 
 - [Extensions](/adguard-for-mac/features/extensions.md)
 

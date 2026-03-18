@@ -19,7 +19,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 - [Browser Assistant](/adguard-for-windows/browser-assistant.md)
 
-    An extension that complements the desktop program and allows you to manage filtering from your browser
+    An extension that complements the desktop app and allows you to manage filtering from your browser
 
 - [Solving problems](/adguard-for-windows/solving-problems/solving-problems.md)
 
