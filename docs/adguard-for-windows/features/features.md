@@ -27,4 +27,4 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 - [Other features](/adguard-for-windows/features/others/)
 
-    Support, license management, tray menu options, program version and updates
+    Support, license management, tray menu options, app version and updates

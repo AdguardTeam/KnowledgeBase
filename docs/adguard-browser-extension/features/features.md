@@ -23,4 +23,4 @@ This article is about AdGuard Browser Extension, which safeguards only your brow
 
 - [Other features and options](/adguard-browser-extension/features/other-features.md)
 
-    General and additional settings, links to privacy documents and the repository
+    General and additional settings, links to privacy documents and GitHub repository
