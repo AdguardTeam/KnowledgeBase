@@ -9,32 +9,22 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 :::
 
-## Home screen
+- [Home screen](/adguard-for-windows/features/home-screen/)
 
-On the main screen you’ll find *Settings*, *Support*, *License*, and *About*, as well as statistics on blocked ads and trackers
+    On the main screen you’ll find *Settings*, *Support*, *License*, and *About*, as well as statistics on blocked ads and trackers
 
-[Home screen](/adguard-for-windows/features/home-screen/)
+- [Settings](/adguard-for-windows/features/settings/)
 
-## Settings
+    Theme and language settings, ad blocking customization, DNS protection, parental controls, extension management, and advanced options for expert users
 
-Theme and language settings, ad blocking customization, DNS protection, parental controls, extension management, and advanced options for expert users
+- [Extensions](/adguard-for-windows/features/extensions/)
 
-[Settings](/adguard-for-windows/features/settings/)
+    A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
 
-## Extensions
+- [Network](/adguard-for-windows/features/network/)
 
-A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
+    Additional network-related options and proxy settings
 
-[Extensions](/adguard-for-windows/features/extensions/)
+- [Other features](/adguard-for-windows/features/others/)
 
-## Network
-
-Additional network-related options and proxy settings
-
-[Network](/adguard-for-windows/features/network/)
-
-## Other features
-
-Support, license management, tray menu options, program version and updates
-
-[Other features](/adguard-for-windows/features/others/)
+    Support, license management, tray menu options, app version and updates
