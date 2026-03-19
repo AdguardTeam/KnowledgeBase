@@ -43,14 +43,14 @@ Starting with AdGuard for Mac v2.18 beta, the minimum supported system version i
 
 If your Mac runs an older version of macOS, install one of the following releases:
 
-- macOS 11 (Big Sur)
+- macOS 10.15–11
 https://github.com/AdguardTeam/AdguardForMac/releases/download/v2.17.3/AdGuard-2.17.3.2020-release.dmg
 
-- macOS 10.12–10.15
-https://github.com/AdguardTeam/AdGuardVPNForMac/releases/download/v2.5.1.770/AdGuardVPN-2.5.1.770-release.dmg
+- macOS 10.13–10.14
+https://github.com/AdguardTeam/AdguardForMac/releases/download/v2.11.0/AdGuard-2.11.0.1292-release.dmg
 
 - macOS 10.12
-https://github.com/AdguardTeam/AdGuardVPNForMac/releases/download/v2.0-beta/AdGuardVPN-2.0.0.254-beta.dmg
+https://github.com/AdguardTeam/AdguardForMac/releases/download/v2.8.1.1147/AdGuard-2.8.1.1147-release.dmg
 
 - macOS 10.9 and older (64-bit only)
 https://github.com/AdguardTeam/AdguardForMac/releases/download/v1.4.2.390-beta/Adguard-1.4.2.beta.dmg
@@ -91,16 +91,16 @@ TestFlight builds are available for a limited time.
 
 If your system uses an older Safari version, you can try installing one of the earlier releases:
 
-- AdGuard for Safari v1.11.24 
+- AdGuard for Safari v1.11.24
 https://agrd.io/safari_release
 
-- AdGuard for Safari v1.5.2 
+- AdGuard for Safari v1.5.2
 https://github.com/AdguardTeam/AdGuardForSafari/releases/download/v1.5.2-beta/AdGuard_Safari.app.zip
 
-- AdGuard for Safari v1.4.1 
+- AdGuard for Safari v1.4.1
 https://github.com/AdguardTeam/AdGuardForSafari/releases/download/v1.4.1/AdGuard.for.Safari.app.zip
 
-- AdGuard for Safari v1.3.3 
+- AdGuard for Safari v1.3.3
 https://github.com/AdguardTeam/AdGuardForSafari/releases/download/v1.3.3/AdGuard.for.Safari.app.zip
 
 Older Safari versions may not support modern content blocking API. If possible, we recommend updating your browser or operating system to the latest version supported by your device.
