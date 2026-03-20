@@ -17,7 +17,7 @@ Les fichiers HAR sont traités conformément à la [Politique de confidentialit�
 
 ## Qu'est-ce qu'un fichier HAR ?
 
-Le format HAR (HTTP ARchive) est un fichier d'archive au format JSON pour la journalisation de l'interaction d'un navigateur web avec un site. Les spécifications du format HAR définissent les données d'archives pour les transactions HTTP qu'un navigateur utilise pour exporter des informations détaillées sur les pages Web qu'il charge. Vous pouvez trouver une description plus détaillée du format de fichier HAR et de sa spécification sur le site Web [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
+Le format HAR (HTTP ARchive) est un fichier d'archive au format JSON pour la journalisation de l'interaction d'un navigateur web avec un site. Les spécifications du format HAR définissent les données d'archives pour les transactions HTTP qu'un navigateur utilise pour exporter des informations détaillées sur les pages Web qu'il charge. More detailed description of HAR file format and its specification you can find at [softwareishard.com](https://www.softwareishard.com/blog/har-12-spec/) website.
 
 ## Comment générer des fichiers HAR
 

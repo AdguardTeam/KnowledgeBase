@@ -23,7 +23,7 @@ Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multif
 
 To install AdGuard on a Windows PC or tablet, follow these steps:
 
-1. Go to the [AdGuard website](http://adguard.com) and click *Download*. You can also get the installation program from the [download page](https://adguard.com/download.html?auto=1) — the download will start automatically.
+1. Go to the [AdGuard website](https://adguard.com) and click *Download*. You can also get the installation program from the [download page](https://adguard.com/download.html?auto=1) — the download will start automatically.
 
    ![Download AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/website_en.png)
 

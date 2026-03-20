@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor rekla
 
 Filtry obtěžování jsou navrženy tak, aby zlepšili použitelnost webové stránky blokováním prvků, které nejsou reklamou a které odvádějí pozornost od nebo narušují interakci s webem či konzumaci obsahu. Mezi tyto prvky patří modální okna, interaktivní formuláře, oznámení a žádosti o souhlas s používáním cookies, bannery mobilních aplikací a různé widgety.
 
-Tyto filtry můžou obsahovat pravidla, která nejsou vhodná pro všechny uživatele. Někdy se doporučuje je vypnout. O přidání pravidel do tohoto filtru rozhodují vývojáři filtru na základě jednotlivých pravidel.
+Tyto filtry můžou obsahovat pravidla, která nejsou vhodná pro všechny uživatele. Někdy se doporučuje je vypnout. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
 
 ![Annoyance filters](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
 

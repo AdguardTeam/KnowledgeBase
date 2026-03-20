@@ -3,32 +3,22 @@ title: AdGuard pro iOS
 sidebar_position: 1
 ---
 
-## Funkce
+- [Funkce](/adguard-for-ios/features/features.md)
 
-Hlavní funkce a nastavení dostupné v aplikaci AdGuard pro iOS
+  Main features and settings available in AdGuard for iOS
 
-[Funkce](/adguard-for-ios/features/features.md)
+- [Instalace](/adguard-for-ios/installation.md)
 
-## Instalace
+  Instalace, odstranění a systémové požadavky AdGuardu pro iOS
 
-Instalace, odstranění a systémové požadavky AdGuardu pro iOS
+- [Webové rozšíření Safari](/adguard-for-ios/web-extension.md)
 
-[Instalace](/adguard-for-ios/installation.md)
+  Webové rozšíření, které rozšiřuje funkce AdGuardu pro iOS a umožňuje spravovat AdGuard z prohlížeče
 
-## Webové rozšíření Safari
+- [Řešení problémů](/adguard-for-android/solving-problems/solving-problems.md)
 
-Webové rozšíření, které rozšiřuje funkce AdGuardu pro iOS a umožňuje spravovat AdGuard z prohlížeče
+  Známé problémy a možná řešení
 
-[Webové rozšíření Safari](/adguard-for-ios/web-extension.md)
+- [AdGuard a AdGuard Pro](/adguard-for-ios/adguard-and-adguard-pro.md)
 
-## Řešení problémů
-
-Známé problémy a možná řešení
-
-[Řešení problémů](/adguard-for-android/solving-problems/solving-problems.md)
-
-## AdGuard a AdGuard Pro
-
-Proč jsou v App Store dvě aplikace AdGuard a v čem se liší
-
-[AdGuard a AdGuard Pro](/adguard-for-ios/adguard-and-adguard-pro.md)
+  Proč jsou v App Store dvě aplikace AdGuard a v čem se liší

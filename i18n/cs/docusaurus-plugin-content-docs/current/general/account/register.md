@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Co je AdGuard účet
 
-[AdGuard účet](https://adguardaccount.com/) je uživatelský účet, který ukládá informace o vašich licencích a předplatných AdGuardu, aktivních zařízeních, historii nákupů, preferovaném jazyce a dalších preferencích. Mnoho AdGuard produktů nabízí možnost aktivace zadáním pověření k AdGuard účtu, pokud obsahuje platnou licenci.
+[AdGuard účet](https://adguardaccount.com) je uživatelský účet, který ukládá informace o vašich licencích a předplatných AdGuardu, aktivních zařízeních, historii nákupů, preferovaném jazyce a dalších preferencích. Mnoho AdGuard produktů nabízí možnost aktivace zadáním pověření k AdGuard účtu, pokud obsahuje platnou licenci.
 
 ## Jak vytvořit účet
 

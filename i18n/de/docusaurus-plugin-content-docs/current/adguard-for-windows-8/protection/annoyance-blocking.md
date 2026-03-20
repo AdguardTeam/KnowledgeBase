@@ -11,7 +11,7 @@ Dieser Artikel beschreibt AdGuard für Windows v8.0, einen umfassenden Werbebloc
 
 Belästigungsfilter wurden entwickelt, um die Benutzerfreundlichkeit von Websites zu verbessern, indem sie Elemente blockieren, die keine Werbung sind und die Interaktion mit der Website oder die Nutzung von Inhalten stören oder beeinträchtigen. Zu diesen Elementen gehören modale Fenster, interaktive Formulare, Benachrichtigungen und Anfragen zur Cookie-Zustimmung, Banner für mobile Apps und verschiedene Widgets.
 
-Diese Filter können Regeln enthalten, die nicht für alle geeignet sind. Manchmal ist es empfehlenswert, sie zu deaktivieren. Die Entscheidung, diesem Filter Regeln hinzuzufügen, wird von den Filterentwickler:innen für jede einzelne Regel getroffen.
+Diese Filter können Regeln enthalten, die nicht für alle geeignet sind. Manchmal ist es empfehlenswert, sie zu deaktivieren. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
 
 ![Belästigungsfilter](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
 

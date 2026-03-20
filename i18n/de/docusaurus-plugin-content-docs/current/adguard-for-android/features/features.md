@@ -9,56 +9,38 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-## Schutz
+- [Schutz](/adguard-for-android/features/protection/protection.md)
 
-Verfügbare Einstellungen im Tab _Schutz_: _Sperren von Werbung_, _Tracking-Schutz_, _Belästigungsblockierung_, _DNS-Schutz_, _Firewall_ und _Internetsicherheit_
+  Available settings in the _Protection_ tab: _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Firewall_, and _Browsing security_
 
-[Schutz](/adguard-for-android/features/protection/protection.md)
+- [App-Verwaltung](/adguard-for-android/features/app-management.md)
 
-## App-Verwaltung
+  Funktionen, mit denen Sie die Filterung und Weiterleitung des Datenverkehrs für jede App anpassen können
 
-Funktionen, mit denen Sie die Filterung und Weiterleitung des Datenverkehrs für jede App anpassen können
+- [Statistiken](/adguard-for-android/features/statistics.md)
 
-[App-Verwaltung](/adguard-for-android/features/app-management.md)
+  Detaillierte Statistiken zu blockierten Anzeigen, Trackern und Datennutzung
 
-## Statistiken
+- [Einstellungen](/adguard-for-android/features/settings.md)
 
-Detaillierte Statistiken zu blockierten Anzeigen, Trackern und Datennutzung
+  Allgemeine, erweiterte und Low-Level-Einstellungen, mit denen Sie die Sprache und das Design auswählen, den DNS-Schutz anpassen, die HTTPS-Filterung aktivieren und Benutzerskripte verwalten können
 
-[Statistiken](/adguard-for-android/features/statistics.md)
+- [Leitfaden für Low-Level-Einstellungen](/adguard-for-android/features/low-level-settings.md)
 
-## Einstellungen
+  Beschreibungen der Low-Level-Einstellungen, die in AdGuard für Android v4.3 und höher verfügbar sind.
 
-Allgemeine, erweiterte und Low-Level-Einstellungen, mit denen Sie die Sprache und das Design auswählen, den DNS-Schutz anpassen, die HTTPS-Filterung aktivieren und Benutzerskripte verwalten können
+- [Assistent](/adguard-for-android/features/assistant.md)
 
-[Einstellungen](/adguard-for-android/features/settings.md)
+  Ein Tool, mit dem Sie App- oder Website-Einstellungen schnell ändern und Statistiken anzeigen können, ohne die AdGuard-Oberfläche zu öffnen
 
-## Low-Level-Einstellungen
+- [Kostenlose vs. Vollversion](/adguard-for-android/features/free-vs-full.mdx)
 
-Beschreibungen der Low-Level-Einstellungen, die in AdGuard für Android v4.3 und höher verfügbar sind.
+  Vergleich der Funktionen zwischen der kostenlosen und der kostenpflichtigen Version
 
-[Leitfaden für Low-Level-Einstellungen](/adguard-for-android/features/low-level-settings.md)
+- [Integration mit AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
 
-## Assistent
+  Integrierter Modus, der die gleichzeitige Ausführung von AdGuard Werbeblocker und AdGuard VPN trotz Systembeschränkungen ermöglicht
 
-Ein Tool, mit dem Sie App- oder Website-Einstellungen schnell ändern und Statistiken anzeigen können, ohne die AdGuard-Oberfläche zu öffnen
+- [Gerootete Geräte](/adguard-for-android/features/rooted.md)
 
-[Assistent](/adguard-for-android/features/assistant.md)
-
-## Kostenlose Version vs. Vollversion
-
-Vergleich der Funktionen zwischen der kostenlosen und der kostenpflichtigen Version
-
-[Kostenlose vs. Vollversion](/adguard-for-android/features/free-vs-full.mdx)
-
-## Integration mit AdGuard VPN
-
-Integrierter Modus, der die gleichzeitige Ausführung von AdGuard Werbeblocker und AdGuard VPN trotz Systembeschränkungen ermöglicht
-
-[Integration mit AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
-
-## Gerootete Geräte
-
-Funktionen, die in AdGuard für Android auf gerooteten Geräten verfügbar sind: HTTPS-Filterung in allen Apps, _Automatischer Proxy_ und _Manueller Proxy_
-
-[Gerootete Geräte](/adguard-for-android/features/rooted.md)
+  Funktionen, die in AdGuard für Android auf gerooteten Geräten verfügbar sind: HTTPS-Filterung in allen Apps, _Automatischer Proxy_ und _Manueller Proxy_

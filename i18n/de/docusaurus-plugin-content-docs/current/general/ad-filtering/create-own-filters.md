@@ -42,14 +42,14 @@ Zum Beispiel:
 
 **Diese Regel sperrt:**
 
-- `http://example.org/ad1.gif`
-- `http://subdomain.example.org/ad1.gif`
+- `https://example.org/ad1.gif`
+- `https://subdomain.example.org/ad1.gif`
 - `https://ads.example.org:8000/`
 
 **Diese Regel sperrt nicht:**
 
-- `http://ads.example.org.us/ad1.gif`
-- `http://example.com/redirect/http://ads.example.org/`
+- `https://ads.example.org.us/ad1.gif`
+- `https://example.com/redirect/https://ads.example.org/`
 
 Standardmäßig funktionieren solche Regeln nicht für Dokumentanfragen. This means that the `||example.org^` rule will block a request made to `example.org` when you try to navigate to this domain from another website, but if you type `example.org` into the address bar and try to navigate to it, the website will open. To block the document request, you will need to use a rule with the [`$document` modifier](#document-modifier): `||example.org^$document`.
 
@@ -59,7 +59,7 @@ Standardmäßig funktionieren solche Regeln nicht für Dokumentanfragen. This me
 
 **Diese Regel sperrt:**
 
-- `http://example.org/`
+- `https://example.org/`
 
 **Diese Regel sperrt nicht:**
 
@@ -73,7 +73,7 @@ Filterregeln unterstützen zahlreiche Modifikatoren, mit denen Sie das Verhalten
 
 **Diese Regel sperrt:**
 
-- `http://example.org/script.js` if this script is loaded from `example.com`.
+- `https://example.org/script.js` if this script is loaded from `example.com`.
 
 **Diese Regel sperrt nicht:**
 
@@ -86,7 +86,7 @@ Filterregeln unterstützen zahlreiche Modifikatoren, mit denen Sie das Verhalten
 
 **Diese Regel sperrt nicht:**
 
-- `http://example.org/banner.png`, auch wenn es eine Sperrregel für diese Adresse gibt.
+- `https://example.org/banner.png` even if there is a blocking rule for this address.
 
 Sperrregeln mit dem Modifikator [`$important`](#important-modifier) können Ausnahmen außer Kraft setzen.
 
@@ -109,15 +109,15 @@ AdGuard [erweitert CSS](#extended-css-selectors) und ermöglicht es den Entwickl
 
 **Beliebte CSS-Selektoren**
 
-| Name                              | CSS-Selektor                     | Beschreibung                                                                                                                                                                                                          |
-| --------------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ID-Selektor                       | `#banners`                       | Matches all elements with `id` attribute equal to `banners`.<br/>![ID-Selektor](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_id_selector.png)                                                   |
-| Klassenselektor                   | `.banners`                       | Matches all elements with `class` attribute containing `banners`.<br/>![Klassenselektor](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_selector.png)                                       |
-| Attribut-Selektor                 | `div[class="banners"]`           | Matches all `div` elements with `class` attribute **exactly equal** to `banners`.<br/>![Attribut-Selektor](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr.png)                         |
-| Attribute substring selector      | `div[class^="advert1"]`          | Matches all `div` elements which `class` attribute **starts with** the `advert1` string.<br/>![Attribute substring selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png) |
-| Selektor für Attribut-Teilstrings | `div[class$="banners_ads"]`      | Entspricht allen `div`-Elementen, deren `class`-Attribut mit `banners_ads` **endet**.<br/>![Selektor für Attribut-Teilstrings](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
-| Selektor für Attribut-Teilstrings | `a[href^="http://example.com/"]` | Entspricht allen Links, die von der Domain `http://example.com/` geladen werden.<br/>![Selektor für Attribut-Teilstrings](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_start.png)          |
-| Attribut-Selektor                 | `a[href="http://example.com/"]`  | Matches all links to **exactly** the `http://example.com/` address.<br/>![Attribut-Selektor](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_equal.png)                                       |
+| Name                              | CSS-Selektor                      | Beschreibung                                                                                                                                                                                                          |
+| --------------------------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID-Selektor                       | `#banners`                        | Matches all elements with `id` attribute equal to `banners`.<br/>![ID-Selektor](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_id_selector.png)                                                   |
+| Klassenselektor                   | `.banners`                        | Matches all elements with `class` attribute containing `banners`.<br/>![Klassenselektor](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_selector.png)                                       |
+| Attribut-Selektor                 | `div[class="banners"]`            | Matches all `div` elements with `class` attribute **exactly equal** to `banners`.<br/>![Attribut-Selektor](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr.png)                         |
+| Attribute substring selector      | `div[class^="advert1"]`           | Matches all `div` elements which `class` attribute **starts with** the `advert1` string.<br/>![Attribute substring selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png) |
+| Selektor für Attribut-Teilstrings | `div[class$="banners_ads"]`       | Entspricht allen `div`-Elementen, deren `class`-Attribut mit `banners_ads` **endet**.<br/>![Selektor für Attribut-Teilstrings](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
+| Selektor für Attribut-Teilstrings | `a[href^="https://example.com/"]` | Matches all links that are loaded from `https://example.com/` domain.<br/>![Selektor für Attribut-Teilstrings](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_start.png)                     |
+| Attribut-Selektor                 | `a[href="https://example.com/"]`  | Matches all links to **exactly** the `https://example.com/` address.<br/>![Attribut-Selektor](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_equal.png)                                      |
 
 ## Einschränkungen und Begrenzungen
 
@@ -296,9 +296,9 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 ### Sonderzeichen {#basic-rules-special-characters}
 
 - **`*`** — ein Platzhalterzeichen. Es wird verwendet, um eine beliebige Menge von Zeichen darzustellen. Dies kann auch eine leere Zeichenkette oder eine Zeichenkette mit beliebiger Länge sein.
-- **`||`** — eine Angabe zur Anwendung der Regel auf die angegebene Domain und ihre Subdomains. Mit diesem Zeichen müssen Sie kein bestimmtes Protokoll und keine Subdomain in der Adressmaske angeben. It means that `||` stands for `http://*.`, `https://*.`, `ws://*.`, `wss://*.` at once.
+- **`||`** — eine Angabe zur Anwendung der Regel auf die angegebene Domain und ihre Subdomains. Mit diesem Zeichen müssen Sie kein bestimmtes Protokoll und keine Subdomain in der Adressmaske angeben. It means that `||` stands for `https://*.`, `https://*.`, `ws://*.`, `wss://*.` at once.
 - **`^`** — ein Trennzeichen. Das Trennzeichen ist ein beliebiges Zeichen, jedoch ein Buchstabe, eine Ziffer oder eines der folgenden Zeichen: `_` `-` `.` `%`. In diesem Beispiel sind die Trennzeichen fett gedruckt: `http:`**`//`**`beispiel.de`**`/?`**`t=1`**`&`**`t2=t3`. Das Ende der Adresse wird auch als Trennzeichen akzeptiert.
-- **`|`** — ein Zeiger auf den Anfang oder das Ende der Adresse. Der Wert hängt von der Platzierung des Zeichens in der Maske ab. Zum Beispiel entspricht die Regel `swf|` der Regel `http://beispiel.de/annoyingflash.swf` , aber nicht der Regel `http://beispiel.de/swf/index.html`. `|http://beispiel.de` entspricht `http://beispiel.de`, aber nicht `http://domain.com?url=http://beispiel.de`.
+- **`|`** — ein Zeiger auf den Anfang oder das Ende der Adresse. Der Wert hängt von der Platzierung des Zeichens in der Maske ab. For example, a rule `swf|` corresponds to `https://example.com/annoyingflash.swf` , but not to `https://example.com/swf/index.html`. `|https://example.org` corresponds to `https://example.org`, but not to `https://domain.com?url=https://example.org`.
 
 :::note
 
@@ -354,7 +354,7 @@ Regeln mit Platzhaltern für TLD werden vom AdGuard Inhaltsblocker nicht unterst
 
 ### Beispiele für Grundregeln
 
-- `||example.com/ads/*` — eine einfache Regel, die Adressen wie `http://example.com/ads/banner.jpg` und sogar `http://subdomain.example.com/ads/otherbanner.jpg` entspricht.
+- `||example.com/ads/*` — a simple rule, which corresponds to addresses like `https://example.com/ads/banner.jpg` and even `https://subdomain.example.com/ads/otherbanner.jpg`.
 
 - `||example.org^$third-party` — diese Regel blockiert Anfragen von Drittanbietern zu `example.org` und seinen Subdomains.
 
@@ -568,7 +568,7 @@ These modifiers will not be applied if the referrer matches a rule with `$domain
 - `*$cookie,domain=example.org|example.com` blockiert Cookies für alle Anfragen an und von `example.org` und `example.com`.
 - `*$document,domain=example.org|example.com` will block requests only from `example.org` and `example.com`, but not to them.
 
-In the following examples it is implied that requests are sent from `http://example.org/page` (the referrer) and the target URL is `http://targetdomain.com/page`.
+In the following examples it is implied that requests are sent from `https://example.org/page` (the referrer) and the target URL is `https://targetdomain.com/page`.
 
 - `page$domain=example.org` will be matched, as it matches the referrer domain.
 - `page$domain=targetdomain.com` will not be matched because it does not match the referrer domain.
@@ -666,7 +666,7 @@ This modifier defines a rule which applies only to addresses that match the case
 
 **Beispiele**
 
-- `*/BannerAd.gif$match-case` – diese Regel blockiert `http://example.com/BannerAd.gif`, aber nicht `http://example.com/bannerad.gif`.
+- `*/BannerAd.gif$match-case` — this rule will block `https://example.com/BannerAd.gif`, but not `https://example.com/bannerad.gif`.
 
 :::info Kompatibilität
 
@@ -709,7 +709,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 **Beispiele**
 
-- `||domain.com^$popup` - wenn Sie versuchen, `http://domain.com/` von einer beliebigen Seite des Browsers aus aufzurufen, wird eine neue Registerkarte, in der die angegebene Website geöffnet werden muss, durch diese Regel geschlossen.
+- `||domain.com^$popup` — if you try to go to `https://domain.com/` from any page in the browser, a new tab in which specified site has to be opened will be closed by this rule.
 
 ##### `$popup` modifier limitations {#popup-modifier-limitations}
 
@@ -736,7 +736,7 @@ Requests without a referrer are also treated as first-party requests, and the ru
 
 **Beispiele**
 
-- domain.com$strict-first-party' — this rule applies only to `domain.com`. For example, a request from `domain.com` to `http://domain.com/icon.ico` is a first-party request. A request from `sub.domain.com` to `http://domain.com/icon.ico` is treated as a third-party one (as opposed to the `$~third-party` modifier).
+- domain.com$strict-first-party' — this rule applies only to `domain.com`. For example, a request from `domain.com` to `https://domain.com/icon.ico` is a first-party request. A request from `sub.domain.com` to `https://domain.com/icon.ico` is treated as a third-party one (as opposed to the `$~third-party` modifier).
 
 :::note
 
@@ -758,7 +758,7 @@ Works the same as the [`$third-party`](#third-party-modifier) modifier but also 
 
 **Beispiele**
 
-- `||domain.com^$strict-third-party` — this rule applies to all domains except `domain.com`. An example of a third-party request: `http://sub.domain.com/banner.jpg` (as opposed to the `$third-party` modifier).
+- `||domain.com^$strict-third-party` — this rule applies to all domains except `domain.com`. An example of a third-party request: `https://sub.domain.com/banner.jpg` (as opposed to the `$third-party` modifier).
 
 :::note
 
@@ -789,13 +789,13 @@ To be considered as such, a third-party request should meet one of the following
 
 **`$third-party`:**
 
-- `||domain.com^$third-party` — this rule applies to all domains except `domain.com` and its subdomains. The rule is never applied if there is no referrer. An example of a third-party request: `http://example.org/banner.jpg`.
+- `||domain.com^$third-party` — this rule applies to all domains except `domain.com` and its subdomains. The rule is never applied if there is no referrer. An example of a third-party request: `https://example.org/banner.jpg`.
 
 If there is a `$~third-party` modifier, the rule is only applied to requests that are not from third parties. Which means they have to be sent from the same domain or shouldn't have a referrer at all.
 
 **`$~third-party`:**
 
-- `||domain.com$~third-party` — this rule applies only to `domain.com` and its subdomains. Example of a non third-party request: `http://sub.domain.com/icon.ico`.
+- `||domain.com$~third-party` — this rule applies only to `domain.com` and its subdomains. Example of a non third-party request: `https://sub.domain.com/icon.ico`.
 
 Requests without a referrer are also treated as non third-party requests and the rules with the `$~third-party` modifier are applied to such requests.
 
@@ -2564,7 +2564,7 @@ Rules with `$removeparam` modifier are intended to strip query parameters from r
 
 **Basic syntax**
 
-- `$removeparam=param` removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed into `http://example.com/page?another=2`.
+- `$removeparam=param` removes query parameter with the name `param` from URLs of any request, e.g. a request to `https://example.com/page?param=1&another=2` will be transformed into `https://example.com/page?another=2`.
 
 **Regular expressions**
 
@@ -2633,11 +2633,11 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 @@||example.com^$removeparam
 ```
 
-With these rules some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) will be stripped out from any request, except that requests to `example.com` will not be stripped at all, e.g. `http://google.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will be transformed to `http://google.com/page`, but `http://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will not be affected by the blocking rule.
+With these rules some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) will be stripped out from any request, except that requests to `example.com` will not be stripped at all, e.g. `https://google.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will be transformed to `https://google.com/page`, but `https://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will not be affected by the blocking rule.
 
 - `$removeparam=utm_source` removes `utm_source` query parameter from all requests.
 
-- `$removeparam=/utm_.*/` removes all `utm_* query` parameters from URL queries of any request, e.g. a request to `http://example.com/page?utm_source=test` will be transformed to `http://example.com/page`.
+- `$removeparam=/utm_.*/` removes all `utm_* query` parameters from URL queries of any request, e.g. a request to `https://example.com/page?utm_source=test` will be transformed to `https://example.com/page`.
 
 - `$removeparam=/^utm_source=campaign$/` removes `utm_source` query parameter with the value equal to `campaign`. It does not touch other `utm_source` parameters.
 
@@ -2773,7 +2773,7 @@ In case if multiple `$replace` rules match a single request, we will apply each 
 
 **Syntax**
 
-In general, `$replace` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
+In general, `$replace` syntax is similar to replacement with regular expressions [in Perl](https://perldoc.perl.org/perlrequick.html#Search-and-replace).
 
 ```text
 replace = "/" regexp "/" replacement "/" modifiers
@@ -2797,7 +2797,7 @@ There are three parts in this rule:
 - `replacement` — `\$1<\/VAST>` where `$` is escaped;
 - `modifiers` — `i` for insensitive search.
 
-You can see how this rule works here: http://regexr.com/3cesk
+You can see how this rule works here: https://regexr.com/3cesk
 
 **Multiple `$replace` rules**
 

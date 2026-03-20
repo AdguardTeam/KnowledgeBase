@@ -9,20 +9,14 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-## Features
+- [Özellikler](/adguard-for-mac/features/features.md)
 
-Main features and settings available in AdGuard for Mac
+  Main features and settings available in AdGuard for Mac
 
-[Özellikler](/adguard-for-mac/features/features.md)
+- [Installation](/adguard-for-mac/installation.md)
 
-## Kurulum
+  Installation, removal, and system requirements for AdGuard for Mac
 
-Installation, removal, and system requirements for AdGuard for Mac
+- [Solving problems](/adguard-for-mac/solving-problems/solving-problems.md)
 
-[Installation](/adguard-for-mac/installation.md)
-
-### Sorunları çözme
-
-Known issues and possible solutions
-
-[Solving problems](/adguard-for-mac/solving-problems/solving-problems.md)
+  Known issues and possible solutions

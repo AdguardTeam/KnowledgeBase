@@ -9,26 +9,18 @@ sidebar_position: 1
 
 :::
 
-## Главное меню
+- [Main menu](/adguard-browser-extension/features/main-menu.md)
 
-Основное всплывающее окно, из которого вы можете получить доступ к настройкам, журналу фильтрации и статистике, а также сообщить о проблемах
+  The main popup from which you can access settings, filtering log and statistics, and report problems
 
-[Главное меню](/adguard-browser-extension/features/main-menu.md)
+- [Filters](/adguard-browser-extension/features/filters.md)
 
-## Фильтры
+  Фильтры и пользовательские правила для настройки блокировки рекламы
 
-Фильтры и пользовательские правила для настройки блокировки рекламы
+- [Tracking protection (Stealth Mode)](/adguard-browser-extension/features/stealth-mode.md)
 
-[Фильтры](/adguard-browser-extension/features/filters.md)
+  Settings to block cookies, UTM tags, and online analytics that collect user information
 
-## Защита от трекинга
+- [Other features and options](/adguard-browser-extension/features/other-features.md)
 
-Настройки блокировки файлов cookie, UTM-меток и онлайн-аналитики, собирающей информацию о пользователях
-
-[Защита от трекинга](/adguard-browser-extension/features/stealth-mode.md)
-
-## Другие функции и опции
-
-Основные и дополнительные настройки, ссылки на юридические документы и репозиторий
-
-[Другие функции и опции](/adguard-browser-extension/features/other-features.md)
+  General and additional settings, links to privacy documents and GitHub repository

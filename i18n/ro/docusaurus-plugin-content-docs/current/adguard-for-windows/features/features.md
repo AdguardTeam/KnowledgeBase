@@ -9,32 +9,22 @@ Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multif
 
 :::
 
-## Home screen
+- [Ecranul principal](/adguard-for-windows/features/home-screen/)
 
-On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
+  On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
 
-[Ecranul principal](/adguard-for-windows/features/home-screen/)
+- [Setări](/adguard-for-windows/features/settings/)
 
-## Setări
+  Theme and language settings, ad blocking customization, DNS protection, parental controls, extension management, and advanced options for expert users
 
-Theme and language settings, ad blocking customization, DNS protection, parental controls, extension management, and advanced options for expert users
+- [Extensii](/adguard-for-windows/features/extensions/)
 
-[Setări](/adguard-for-windows/features/settings/)
+  A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
 
-## Extensii
+- [Rețea](/adguard-for-windows/features/network/)
 
-A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
+  Additional network-related options and proxy settings
 
-[Extensii](/adguard-for-windows/features/extensions/)
+- [Alte caracteristici](/adguard-for-windows/features/others/)
 
-## Rețea
-
-Additional network-related options and proxy settings
-
-[Rețea](/adguard-for-windows/features/network/)
-
-## Alte caracteristici
-
-Support, license management, tray menu options, program version and updates
-
-[Alte caracteristici](/adguard-for-windows/features/others/)
+  Support, license management, tray menu options, app version and updates

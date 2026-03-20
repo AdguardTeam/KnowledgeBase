@@ -23,7 +23,7 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 Chcete-li nainstalovat AdGuard do počítače nebo tabletu se systémem Windows, postupujte podle následujících kroků:
 
-1. Přejděte na webové stránky [AdGuardu](http://adguard.com) a klikněte na *Stáhnout*. Instalační program můžete také získat ze [stránky stahování](https://adguard.com/download.html?auto=1) — stahování se spustí automaticky.
+1. Go to the [AdGuard website](https://adguard.com) and click *Download*. Instalační program můžete také získat ze [stránky stahování](https://adguard.com/download.html?auto=1) — stahování se spustí automaticky.
 
    ![Download AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/website_en.png)
 

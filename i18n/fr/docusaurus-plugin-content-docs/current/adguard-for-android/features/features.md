@@ -9,56 +9,38 @@ Cet article concerne AdGuard pour Android, un bloqueur de publicité multifoncti
 
 :::
 
-## Protection
+- [Protection](/adguard-for-android/features/protection/protection.md)
 
-Paramètres disponibles dans l'onglet _Protection_ : _Blocage des publicités_, _Protection contre le suivi_, _Blocage des nuisances_, _Protection DNS_, _Pare-feu_, et _Navigation sécurisée_
+  Available settings in the _Protection_ tab: _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Firewall_, and _Browsing security_
 
-[Protection](/adguard-for-android/features/protection/protection.md)
+- [Gestion des applications](/adguard-for-android/features/app-management.md)
 
-## Gestion des applications
+  Fonctionnalités qui vous permettent de personnaliser le filtrage et le routage du trafic pour chaque application
 
-Fonctionnalités qui vous permettent de personnaliser le filtrage et le routage du trafic pour chaque application
+- [Statistiques](/adguard-for-android/features/statistics.md)
 
-[Gestion des applications](/adguard-for-android/features/app-management.md)
+  Statistiques détaillées sur les publicités bloquées, les traqueurs et l'utilisation des données
 
-## Statistiques
+- [Paramètres](/adguard-for-android/features/settings.md)
 
-Statistiques détaillées sur les publicités bloquées, les traqueurs et l'utilisation des données
+  Paramètres généraux, avancés et de bas niveau qui vous permettent de sélectionner la langue et le thème, de personnaliser la protection DNS, d'activer le filtrage HTTPS et de gérer les scripts utilisateur
 
-[Statistiques](/adguard-for-android/features/statistics.md)
+- [Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
 
-## Paramètres
+  Descriptions of the low-level settings available in AdGuard for Android v4.3 and later.
 
-Paramètres généraux, avancés et de bas niveau qui vous permettent de sélectionner la langue et le thème, de personnaliser la protection DNS, d'activer le filtrage HTTPS et de gérer les scripts utilisateur
+- [Assistant](/adguard-for-android/features/assistant.md)
 
-[Paramètres](/adguard-for-android/features/settings.md)
+  Un outil qui vous permet de changer rapidement les paramètres d'application ou de site Web et de consulter les Statistiques sans ouvrir l'interface AdGuard
 
-## Guide sur les paramètres de bas niveau
+- [Version gratuite vs. version complète](/adguard-for-android/features/free-vs-full.mdx)
 
-Descriptions of the low-level settings available in AdGuard for Android v4.3 and later.
+  Une comparaison des fonctionnalités entre la version gratuite et la version payante.
 
-[Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
+- [Intégration avec AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
 
-## Assistant
+  Mode intégré qui permet au Bloqueur AdGuard et à AdGuard VPN de fonctionner simultanément malgré les limitations du système
 
-Un outil qui vous permet de changer rapidement les paramètres d'application ou de site Web et de consulter les Statistiques sans ouvrir l'interface AdGuard
+- [Appareils rootés](/adguard-for-android/features/rooted.md)
 
-[Assistant](/adguard-for-android/features/assistant.md)
-
-## Version gratuite vs version complète
-
-Une comparaison des fonctionnalités entre la version gratuite et la version payante.
-
-[Version gratuite vs. version complète](/adguard-for-android/features/free-vs-full.mdx)
-
-## Intégration avec AdGuard VPN
-
-Mode intégré qui permet au Bloqueur AdGuard et à AdGuard VPN de fonctionner simultanément malgré les limitations du système
-
-[Intégration avec AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
-
-## Appareils rootés
-
-Fonctionnalités disponibles dans AdGuard pour Android sur les appareils rootés : filtrage HTTPS dans toutes les applications, modes _Proxy automatique_ et _Proxy manuel_
-
-[Appareils rootés](/adguard-for-android/features/rooted.md)
+  Fonctionnalités disponibles dans AdGuard pour Android sur les appareils rootés : filtrage HTTPS dans toutes les applications, modes _Proxy automatique_ et _Proxy manuel_

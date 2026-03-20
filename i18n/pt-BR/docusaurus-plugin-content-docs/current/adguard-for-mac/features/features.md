@@ -9,56 +9,38 @@ Este artigo é sobre o AdGuard para Mac, um bloqueador de anúncios multifuncion
 
 :::
 
-## Janela principal
+- [Janela principal](/adguard-for-mac/features/main.md)
 
-Tela principal com estatísticas sobre anúncios e rastreadores bloqueados e acesso às principais configurações
+  Main screen with statistics on blocked ads and trackers and access to main settings
 
-[Janela principal](/adguard-for-mac/features/main.md)
+- [Modo geral](/adguard-for-mac/features/general.md)
 
-## Geral
+  Configurações básicas para bloquear anúncios de busca e anúncios auto-promotionais de sites, ativar filtros específicos por idioma e gerenciar a _Lista de permissões_
 
-Configurações básicas para bloquear anúncios de busca e anúncios auto-promotionais de sites, ativar filtros específicos por idioma e gerenciar a _Lista de permissões_
+- [Filtros](/adguard-for-mac/features/filters.md)
 
-[Modo geral](/adguard-for-mac/features/general.md)
+  Filtros e regras de usuário para ajustar o bloqueio de anúncios
 
-## Filtros
+- [DNS](/adguard-for-mac/features/dns.md)
 
-Filtros e regras de usuário para ajustar o bloqueio de anúncios
+  Servidores DNS e filtros DNS que permitem bloquear anúncios, rastreadores e sites perigosos
 
-[Filtros](/adguard-for-mac/features/filters.md)
+- [Modo invisível](/adguard-for-mac/features/stealth.md)
 
-## DNS
+  Settings to block cookies, UTM tags, and online analytics that collect user information
 
-Servidores DNS e filtros DNS que permitem bloquear anúncios, rastreadores e sites perigosos
+- [Segurança](/adguard-for-mac/features/security.md)
 
-[DNS](/adguard-for-mac/features/dns.md)
+  Uma definição que bloqueia o acesso a sites maliciosos e de phishing e o protege de ameaças online
 
-## Modo Stealth
+- [Assistente do navegador](/adguard-for-mac/features/browser-assistant.md)
 
-Configurações de bloqueio cookies, tags UTM e análises online que coletam informações do usuário
+  An extension that complements the desktop app and allows you to manage filtering from your browser
 
-[Modo invisível](/adguard-for-mac/features/stealth.md)
+- [Extensões](/adguard-for-mac/features/extensions.md)
 
-## Segurança
+  Um recurso que permite ampliar a funcionalidade dos sites adicionando scripts e estilos de usuário
 
-Uma definição que bloqueia o acesso a sites maliciosos e de phishing e o protege de ameaças online
+- [Rede](/adguard-for-mac/features/network.md)
 
-[Segurança](/adguard-for-mac/features/security.md)
-
-## Assistente de navegador
-
-Uma extensão que complementa o programa de computador e permite que você gerencie a filtragem do seu navegador
-
-[Assistente do navegador](/adguard-for-mac/features/browser-assistant.md)
-
-## Extensões
-
-Um recurso que permite ampliar a funcionalidade dos sites adicionando scripts e estilos de usuário
-
-[Extensões](/adguard-for-mac/features/extensions.md)
-
-## Rede
-
-Opções adicionais relacionadas à rede e configurações de proxy
-
-[Rede](/adguard-for-mac/features/network.md)
+  Opções adicionais relacionadas à rede e configurações de proxy

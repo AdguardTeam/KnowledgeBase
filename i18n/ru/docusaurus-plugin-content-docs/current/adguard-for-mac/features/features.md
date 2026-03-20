@@ -9,56 +9,38 @@ sidebar_position: 1
 
 :::
 
-## Главное окно
+- [Главное окно](/adguard-for-mac/features/main.md)
 
-Главный экран со статистикой по заблокированной рекламе и трекерам и доступом к основным настройкам
+  Main screen with statistics on blocked ads and trackers and access to main settings
 
-[Главное окно](/adguard-for-mac/features/main.md)
+- [Основные](/adguard-for-mac/features/general.md)
 
-## Основные
+  Основные настройки для блокировки поисковой рекламы и саморекламы на сайтах, включения языковых фильтров и управления _Белым списком_
 
-Основные настройки для блокировки поисковой рекламы и саморекламы на сайтах, включения языковых фильтров и управления _Белым списком_
+- [Фильтры](/adguard-for-mac/features/filters.md)
 
-[Основные](/adguard-for-mac/features/general.md)
+  Фильтры и пользовательские правила для настройки блокировки рекламы
 
-## Фильтры
+- [DNS](/adguard-for-mac/features/dns.md)
 
-Фильтры и пользовательские правила для настройки блокировки рекламы
+  DNS-серверы и DNS-фильтры, позволяющие блокировать рекламу, трекеры и опасные сайты
 
-[Фильтры](/adguard-for-mac/features/filters.md)
+- [Защита от трекинга](/adguard-for-mac/features/stealth.md)
 
-## DNS
+  Settings to block cookies, UTM tags, and online analytics that collect user information
 
-DNS-серверы и DNS-фильтры, позволяющие блокировать рекламу, трекеры и опасные сайты
+- [Безопасность](/adguard-for-mac/features/security.md)
 
-[DNS](/adguard-for-mac/features/dns.md)
+  Настройка, которая блокирует доступ к вредоносным и фишинговым сайтам и защищает вас от онлайн-угроз
 
-## Защита от трекинга
+- [Браузерный помощник](/adguard-for-mac/features/browser-assistant.md)
 
-Настройки блокировки файлов cookie, UTM-меток и онлайн-аналитики, собирающей информацию о пользователях
+  An extension that complements the desktop app and allows you to manage filtering from your browser
 
-[Защита от трекинга](/adguard-for-mac/features/stealth.md)
+- [Расширения](/adguard-for-mac/features/extensions.md)
 
-## Безопасность
+  Функция, которая позволяет расширять функциональность сайтов путём добавления пользовательских скриптов и стилей
 
-Настройка, которая блокирует доступ к вредоносным и фишинговым сайтам и защищает вас от онлайн-угроз
+- [Сеть](/adguard-for-mac/features/network.md)
 
-[Безопасность](/adguard-for-mac/features/security.md)
-
-## Браузерный помощник
-
-Расширение, которое дополняет десктопное приложение и позволяет управлять фильтрацией из браузера
-
-[Браузерный помощник](/adguard-for-mac/features/browser-assistant.md)
-
-## Расширения
-
-Функция, которая позволяет расширять функциональность сайтов путём добавления пользовательских скриптов и стилей
-
-[Расширения](/adguard-for-mac/features/extensions.md)
-
-## Сеть
-
-Дополнительные параметры сети и настройки прокси
-
-[Сеть](/adguard-for-mac/features/network.md)
+  Дополнительные параметры сети и настройки прокси

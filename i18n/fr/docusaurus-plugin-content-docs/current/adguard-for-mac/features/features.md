@@ -9,56 +9,38 @@ Cet article parle de AdGuard pour Mac, un bloqueur d'annonces multifonctionnel q
 
 :::
 
-## Fenêtre principale
+- [Fenêtre principale](/adguard-for-mac/features/main.md)
 
-Écran principal avec des statistiques sur les annonces bloquées et les traqueurs et accès aux paramètres principaux
+  Main screen with statistics on blocked ads and trackers and access to main settings
 
-[Fenêtre principale](/adguard-for-mac/features/main.md)
+- [Général](/adguard-for-mac/features/general.md)
 
-## Général
+  Paramètres de base pour bloquer les publicités de recherche et les publicités auto-promotionnelles sur le site Web, activer les filtres spécifiques à la langue et gérer la _liste d'autorisation_
 
-Paramètres de base pour bloquer les publicités de recherche et les publicités auto-promotionnelles sur le site Web, activer les filtres spécifiques à la langue et gérer la _liste d'autorisation_
+- [Filtres](/adguard-for-mac/features/filters.md)
 
-[Général](/adguard-for-mac/features/general.md)
+  Les filtres et les règles utilisateur pour personnaliser le blocage d'annonces
 
-## Filtres
+- [DNS](/adguard-for-mac/features/dns.md)
 
-Les filtres et les règles utilisateur pour personnaliser le blocage d'annonces
+  Les serveurs DNS et les filtres DNS qui vous permettent de bloquer les publicités, les traqueurs et les sites Web dangereux
 
-[Filtres](/adguard-for-mac/features/filters.md)
+- [Mode furtif](/adguard-for-mac/features/stealth.md)
 
-## DNS
+  Settings to block cookies, UTM tags, and online analytics that collect user information
 
-Les serveurs DNS et les filtres DNS qui vous permettent de bloquer les publicités, les traqueurs et les sites Web dangereux
+- [Sécurité](/adguard-for-mac/features/security.md)
 
-[DNS](/adguard-for-mac/features/dns.md)
+  Un paramètre qui bloque l'accès aux sites Web malveillants et hameçonneurs et vous protège des menaces en ligne
 
-## Mode furtif
+- [Assistant AdGuard](/adguard-for-mac/features/browser-assistant.md)
 
-Paramètres permettant de bloquer les cookies, les balises UTM et les outils d'analyse en ligne qui collectent des informations sur l'utilisateur
+  An extension that complements the desktop app and allows you to manage filtering from your browser
 
-[Mode furtif](/adguard-for-mac/features/stealth.md)
+- [Extensions](/adguard-for-mac/features/extensions.md)
 
-## Sécurité
+  Une fonctionnalité qui vous permet d'étendre la fonctionnalité des sites Web en ajoutant des scripts utilisateur et des styles utilisateur
 
-Un paramètre qui bloque l'accès aux sites Web malveillants et hameçonneurs et vous protège des menaces en ligne
+- [Réseau](/adguard-for-mac/features/network.md)
 
-[Sécurité](/adguard-for-mac/features/security.md)
-
-## Assistant de navigateur
-
-Une extension qui complète le programme de bureau et vous permet de gérer le filtrage depuis votre navigateur
-
-[Assistant AdGuard](/adguard-for-mac/features/browser-assistant.md)
-
-## Extensions
-
-Une fonctionnalité qui vous permet d'étendre la fonctionnalité des sites Web en ajoutant des scripts utilisateur et des styles utilisateur
-
-[Extensions](/adguard-for-mac/features/extensions.md)
-
-## Réseau
-
-Options supplémentaires liées au réseau et paramètres du proxy
-
-[Réseau](/adguard-for-mac/features/network.md)
+  Options supplémentaires liées au réseau et paramètres du proxy

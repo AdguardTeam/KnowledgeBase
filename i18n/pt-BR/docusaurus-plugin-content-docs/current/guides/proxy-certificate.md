@@ -23,7 +23,7 @@ Dependendo do sistema operacional do dispositivo cujo tráfego você deseja filt
 
 1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. No Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
 
-1. No mesmo computador com o AdGuard, siga este link: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. On the same computer with AdGuard, follow this link: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Clique no botão **Baixar**. Se o download não iniciar, tente outro navegador como o Firefox, por exemplo.
 
@@ -65,7 +65,7 @@ Dependendo do sistema operacional do dispositivo cujo tráfego você deseja filt
 
 1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. No Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
 
-1. Siga este link usando um navegador da web: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. Follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Clique no botão **Baixar**. Se o download não iniciar, tente outro navegador como o Firefox, por exemplo.
 
@@ -97,7 +97,7 @@ Dependendo do sistema operacional do dispositivo cujo tráfego você deseja filt
 
 1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. No Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
 
-1. No computador com AdGuard, siga este link usando um navegador: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Clique no botão **Baixar**. Se o download não iniciar, tente outro navegador como o Firefox, por exemplo.
 
@@ -117,7 +117,7 @@ Dependendo do sistema operacional do dispositivo cujo tráfego você deseja filt
 
 1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. No Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
 
-1. No computador com AdGuard, siga este link usando um navegador: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Clique no botão **Baixar**. Se o download não iniciar, tente outro navegador como o Firefox, por exemplo.
 

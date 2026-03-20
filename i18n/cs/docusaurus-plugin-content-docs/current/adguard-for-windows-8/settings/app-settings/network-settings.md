@@ -15,17 +15,17 @@ V této části můžete spravovat způsob, jakým AdGuard filtruje váš intern
 
 ## Použít AdGuard jako HTTP proxy
 
-Tuto možnost povolte, aby AdGuard fungoval jako HTTP proxy. All traffic passing through it will be filtered — not only on your computer but also on other devices in your home network.
+Tuto možnost povolte, aby AdGuard fungoval jako HTTP proxy. Veškerý provoz, který jím prochází, bude filtrován — a to nejen na vašem počítači, ale i na ostatních zařízeních ve vaší domácí síti.
 
-To filter traffic on other devices, install AdGuard’s root certificate on them and set up the proxy manually.
+Chcete-li filtrovat provoz na jiných zařízeních, nainstalujte na ně kořenový certifikát AdGuard a ručně nastavte proxy.
 
 Ostatní nastavení jsou ve výchozím nastavení povolena.
 
 ## HTTPS filtrování
 
-Většina webových stránek dnes používá šifrování HTTPS. Without HTTPS filtering, AdGuard cannot block ads on websites like YouTube, Facebook, or X (Twitter).
+Většina webových stránek dnes používá šifrování HTTPS. Bez HTTPS filtrování nemůže AdGuard blokovat reklamy na webech jako YouTube, Facebook nebo X (Twitter).
 
-We recommend keeping the _Filter HTTPS_ option turned on unless you have a specific reason to turn it off.
+Doporučujeme ponechat možnost _HTTPS filtrování_ zapnutou, pokud nemáte konkrétní důvod ji vypnout.
 
 S touto volbou můžete:
 
@@ -37,12 +37,12 @@ S touto volbou můžete:
 
 ## Proxy pro aktualizace aplikace a filtrování
 
-Here you can choose which proxy AdGuard should use to download filter updates or new app versions — the system proxy, a custom proxy, or no proxy at all.
+Zde můžete vybrat, jaký proxy server má AdGuard používat ke stahování aktualizací filtrů nebo nových verzí aplikace — systémový proxy server, vlastní proxy server nebo žádný proxy server.
 
 ![Proxy settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
 
 ## Použít ovladač SockFilter
 
-Enable this option to use the SockFilter driver, which helps block ads and trackers in apps on Windows 8 and later.
+Tuto možnost zapněte, chcete-li používat ovladač SockFilter, který pomáhá blokovat reklamy a slídiče v aplikacích ve Windows 8 a novějších verzích.
 
-If this option is disabled, AdGuard will switch to the older WFP driver instead.
+Pokud je tato možnost deaktivována, AdGuard místo toho přepne na starší ovladač WFP.

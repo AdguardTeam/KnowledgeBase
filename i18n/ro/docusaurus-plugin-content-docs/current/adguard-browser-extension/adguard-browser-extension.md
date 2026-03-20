@@ -9,50 +9,34 @@ Acest articol se referă la extensia de browser AdGuard, care vă protejează do
 
 :::
 
-## Features
+- [Features](/adguard-browser-extension/features)
 
-Main features and settings available in the AdGuard Browser Extension
+  Main features and settings available in AdGuard Browser Extension
 
-[Features](/adguard-browser-extension/features)
+- [Availability](/adguard-browser-extension/availability)
 
-## Availability
+  Supported browsers and platforms where the extension can be installed
 
-Supported browsers and platforms where the extension can be installed
+- [Installation](/adguard-browser-extension/installation)
 
-[Availability](/adguard-browser-extension/availability)
+  Installation and removal
 
-## Instalare
+- [Compatibility with the standalone app](/adguard-browser-extension/compatibility)
 
-Installation and removal
+  Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
 
-[Installation](/adguard-browser-extension/installation)
+- [Extensia de browser AdGuard pentru Chrome MV3](/adguard-browser-extension/mv3-version/)
 
-## Compatibility with the standalone app
+  A separate AdGuard Browser Extension compatible with the Manifest V3 API
 
-Compatibility of the AdGuard Browser Extension with the AdGuard desktop apps
+- [Browser-protected pages](/adguard-browser-extension/protected-pages)
 
-[Compatibility with the standalone app](/adguard-browser-extension/compatibility)
+  Restricted domains whose content can’t be modified with ad blocking extensions
 
-## Extensie de browser AdGuard pentru Chrome MV3
+- [Solving problems](/adguard-browser-extension/solving-problems)
 
-A separate AdGuard Browser Extension compatible with the Manifest V3 API
+  Known issues and possible solutions
 
-[Extensia de browser AdGuard pentru Chrome MV3](/adguard-browser-extension/mv3-version/)
+- [Comparison to standalone apps](/adguard-browser-extension/comparison-standalone)
 
-## Pagini protejate la nivel de browser
-
-Restricted domains whose content can’t be modified with ad blocking extensions
-
-[Browser-protected pages](/adguard-browser-extension/protected-pages)
-
-## Solving problems
-
-Known issues and possible solutions
-
-[Solving problems](/adguard-browser-extension/solving-problems)
-
-## Comparison to standalone apps
-
-The differences in functionality and features between the AdGuard extensions and desktop apps
-
-[Comparison to standalone apps](/adguard-browser-extension/comparison-standalone)
+  The differences in functionality and features between the AdGuard extensions and desktop apps

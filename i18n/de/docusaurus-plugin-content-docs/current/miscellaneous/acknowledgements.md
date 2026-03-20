@@ -18,9 +18,9 @@ Dies ist die Liste der Bibliotheken und anderen Ressourcen, die uns beim Entwick
 
 ## AdGuard für Mac {#mac}
 
-- Red Sweater Software, LLC für die Komponente RSVerticallyCenteredTextFieldCell: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
+- Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component: [https://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](https://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
 - Ilija Tovilo für die Komponente ITProgressIndicator: [github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
-- Sparkle Projekt für die Komponente Sparkle.framework: [http://sparkle-project.org](http://sparkle-project.org)
+- Sparkle Project for Sparkle.framework component: [https://sparkle-project.org](https://sparkle-project.org)
 - Robbie Hanson für die Komponente GCDAsyncSocket: [github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
 - Tony Million für die Reachability-Komponente: [github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
 - August «Gus» Müller für die Fmdb-Komponente: [github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
@@ -31,7 +31,7 @@ Dies ist die Liste der Bibliotheken und anderen Ressourcen, die uns beim Entwick
 ## AdGuard für Android {#android}
 
 - Logback-android von Tony19: [tony19.github.io/logback-android](https://tony19.github.io/logback-android)
-- Otto von Square: [http://square.github.io/otto](http://square.github.io/otto)
+- Otto by Square: [https://square.github.io/otto](https://square.github.io/otto)
 - RootTools Library von Stericson: [github.com/Stericson/RootTools](https://github.com/Stericson/RootTools)
 - MaterialDateRangePicker von Supratim Chakraborty: [github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
 - HelloCharts von Leszek Wach: [github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)

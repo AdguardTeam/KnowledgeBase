@@ -118,5 +118,9 @@
   "sidebar.tutorialSidebar.category.AdGuard Mini for Mac": {
     "message": "AdGuard Mini pro Mac",
     "description": "The label for category AdGuard Mini for Mac in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems": {
+    "message": "solving-problems",
+    "description": "The label for category solving-problems in sidebar tutorialSidebar"
   }
 }

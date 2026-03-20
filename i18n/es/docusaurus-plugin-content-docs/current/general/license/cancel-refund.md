@@ -7,7 +7,7 @@ sidebar_position: 5
 
 La suscripción se puede cancelar en tu cuenta de AdGuard. Para cancelar tu suscripción:
 
- 1. Ve a tu [cuenta de AdGuard](https://adguardaccount.com/).
+ 1. Go to your [AdGuard account](https://adguardaccount.com).
  1. Selecciona *Licencias*.
  1. Haz clic en *Cancelar suscripción* debajo de la suscripción que ya no necesitas. ![Cancelar](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
 

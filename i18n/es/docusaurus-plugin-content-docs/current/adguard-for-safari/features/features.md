@@ -3,32 +3,22 @@ title: Funciones
 sidebar_position: 1
 ---
 
-## General
+- [General](adguard-for-safari/features/general.md)
 
-Funciones básicas, incluidas notificaciones, intervalos de actualización y nivel de registro
+  Basic features, including notifications, update intervals, and logging level
 
-[General](adguard-for-safari/features/general.md)
+- [Filtros](/adguard-for-safari/features/filters.md)
 
-## Filtros
+  Diferentes filtros que permiten personalizar el bloqueo de anuncios
 
-Diferentes filtros que permiten personalizar el bloqueo de anuncios
+- [Bloqueador de contenido AdGuard](/adguard-for-safari/features/content-blockers/content-blockers.md)
 
-[Filtros](/adguard-for-safari/features/filters.md)
+  Seis bloqueadores de contenido temáticos que se ajustan a las restricciones de Apple
 
-## Bloqueadores de contenido
+- [Reglas del usuario](/adguard-for-safari/features/rules.md)
 
-Seis bloqueadores de contenido temáticos que se ajustan a las restricciones de Apple
+  Reglas de filtrado personalizadas para mejorar el bloqueo de anuncios
 
-[Bloqueador de contenido AdGuard](/adguard-for-safari/features/content-blockers/content-blockers.md)
+- [Acerca de](/adguard-for-safari/features/about.md)
 
-## Reglas de usuario
-
-Reglas de filtrado personalizadas para mejorar el bloqueo de anuncios
-
-[Reglas del usuario](/adguard-for-safari/features/rules.md)
-
-## Acerca de
-
-Una sección con enlaces a documentos sobre privacidad, el repositorio de GitHub y la historia de versiones
-
-[Acerca de](/adguard-for-safari/features/about.md)
+  Una sección con enlaces a documentos sobre privacidad, el repositorio de GitHub y la historia de versiones
