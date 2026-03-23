@@ -5,7 +5,7 @@ sidebar_position: 9
 
 At AdGuard, our goal is to make the Internet safer, more comfortable, and more transparent. This commitment is reflected not only in our product features and strict privacy policies, but also in the fact that we keep our work as open as possible. That includes actively interacting with our community.
 
-This is why [all of our products have public repositories](https://github.com/orgs/AdguardTeam/repositories?type=all&q=visibility%3Apublic+archived%3Afalse) — online spaces where anybody can see what we are working on, report issues directly to AdGuard developers, and even contribute to our open-source projects. The repositories cover our ad-blocking apps, filters, browser extensions, DNS solutions, VPN tools, developer utilities, and more. There are different platforms that offer such functionality, but the most popular one by far is GutHub, and all AdGuard projects are stored there.
+This is why [all of our products have public repositories](https://github.com/orgs/AdguardTeam/repositories?type=all&q=visibility%3Apublic+archived%3Afalse) — online spaces where anybody can see what we are working on, report issues directly to AdGuard developers, and even contribute to our open-source projects. The repositories cover our ad-blocking apps, filters, browser extensions, DNS solutions, VPN tools, developer utilities, and more. There are different platforms that offer such functionality, but the most popular one by far is GitHub, and all AdGuard projects are stored there.
 
 This article lists the most important repositories by category, summarizes the purpose of each one, and gives a simple breakdown of what users can do there.
 
@@ -64,7 +64,8 @@ As part of our commitment to transparency, we host all legal documents — such 
 ## AdGuard Ad Blocker products
 
 In these repositories, users can:
-- View and report bugs or feature requests via GitHub issues  
+
+- View and report bugs or feature requests via GitHub issues
 - Check changelogs, track release history, monitor updates
 - Download latest, previous, and beta builds (except for iOS)
 
@@ -106,11 +107,11 @@ In these repositories, users can:
 
 ### [AdGuardVPNForiOS](https://github.com/AdguardTeam/AdGuardVPNForiOS)
 
-Repository of AdGuard VPN for iOS. Serves as an open bug tracker. 
+Repository of AdGuard VPN for iOS. Serves as an open bug tracker.
 
 ### [AdGuardVPNForAndroid](https://github.com/AdguardTeam/AdGuardVPNForAndroid)
 
-Repository of AdGuard VPN for Android. Serves as an open bug tracker. 
+Repository of AdGuard VPN for Android. Serves as an open bug tracker.
 
 ### [AdGuardVPNForWindows](https://github.com/AdguardTeam/AdGuardVPNForWindows)
 
@@ -169,7 +170,6 @@ Detailed feature overview and troubleshooting guides for AdGuard VPN.
 
 Detailed feature overview and troubleshooting guides of AdGuard Mail.
 
-
 ## Core libraries
 
 ### [AdGuardCoreLibs](https://github.com/AdguardTeam/CoreLibs)
@@ -183,7 +183,7 @@ AdGuard’s cross-platform core filtering engine. Used in Android, Windows, and 
 
 A DNS library used by CoreLibs and AdGuardHome. Users can:
 
-- Review and contribute to low-level DNS implementation  
+- Review and contribute to low-level DNS implementation
 - Suggest optimizations
 
 ### [VPNLibs](https://github.com/AdguardTeam/VPNLibs)
@@ -193,12 +193,12 @@ Shared codebase used in AdGuard VPN products across platforms for AdGuard VPN pr
 - Contribute to VPN stack behavior
 - Report or view performance issues and bugs
 
-
 ## Core ad blocking and filtering technologies
 
 ### [AdguardFilters](https://github.com/AdguardTeam/AdguardFilters)
 
 Contains AdGuard’s core filter lists. Users can:
+
 - View and download filter lists
 - Create issues to report false positives or suggest new rules
 - Monitor updates to filter logic
@@ -213,18 +213,21 @@ Repository of AdGuard DNS filter — the main DNS-level blocking list used in Ad
 ### [AGLint](https://github.com/AdguardTeam/AGLint)
 
 A linter for adblock filter list syntax. Users can:
+
 - Install AGLint to check their projects for rule issues
 - Contribute to lint rules
 
 ### [Scriptlets](https://github.com/AdguardTeam/Scriptlets)
 
 JavaScript helpers used in filtering rules. Users can:
+
 - Explore available scriptlets
 - Submit pull requests for new scriptlets
 
 ### [tsurlfilter](https://github.com/AdguardTeam/tsurlfilter)
 
 TypeScript content blocker library for browser extensions. Users can:
+
 - Explore how filtering logic is implemented
 - Contribute fixes and features
 
