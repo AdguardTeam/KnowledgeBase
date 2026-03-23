@@ -233,6 +233,6 @@ TypeScript content blocker library for browser extensions. Users can:
 
 ## There’s more
 
-Above, we listed 27 main public AdGuard repositories out of 96 total. If you want to go down the rabbit hole, you can [find the rest on the AdGuardTeam GitHub page](https://github.com/orgs/AdguardTeam/repositories?type=all&q=visibility%3Apublic+archived%3Afalse). 
+Above, we listed 27 main public AdGuard repositories out of 96 total. If you want to go down the rabbit hole, you can [find the rest on the AdGuardTeam GitHub page](https://github.com/orgs/AdguardTeam/repositories?type=all&q=visibility%3Apublic+archived%3Afalse).
 
 We’ll be waiting for your feedback there! Stay safe online and offline.
