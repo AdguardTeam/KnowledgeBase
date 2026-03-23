@@ -49,6 +49,7 @@ If you are new to GitHub, you’ll need to create a GitHub account in order to c
 :::
 
 In open-source repos advanced users can also:
+
 - **Browse code** to understand product logic, what technologies are used and how they are implemented
 - **Fork and contribute** via pull requests
 
@@ -60,7 +61,7 @@ Whether you’re a casual user, technical expert, or a developer, AdGuard welcom
 
 As part of our commitment to transparency, we host all legal documents — such as End-User License Agreements, Privacy Policies, and Terms and Conditions — on GitHub. Our *LegalDocs* repo lets anyone check the full history of changes to these documents.
 
-##  AdGuard Ad Blocker products
+## AdGuard Ad Blocker products
 
 In these repositories, users can:
 - View and report bugs or feature requests via GitHub issues  
@@ -73,7 +74,7 @@ Repository of AdGuard for Android — an app that provides system-wide ad blocki
 
 ### [AdguardForiOS](https://github.com/AdguardTeam/AdguardForiOS)
 
-Repository of AdGuard for iOS — Safari content blocker with DNS and custom filters. Users can also check open-source code. 
+Repository of AdGuard for iOS — Safari content blocker with DNS and custom filters. Users can also check open-source code.
 
 ### [AdguardForWindows](https://github.com/AdguardTeam/AdguardForWindows)
 
@@ -85,7 +86,7 @@ Repository of AdGuard for Mac — macOS standalone content blocker. Bug tracker 
 
 ### [AdguardBrowserExtension](https://github.com/AdguardTeam/AdguardBrowserExtension)
 
-Repository of AdGuard Browser Extension — extension that provides ad blocking with enhanced privacy for Chrome, Firefox, Opera, Edge. 
+Repository of AdGuard Browser Extension — extension that provides ad blocking with enhanced privacy for Chrome, Firefox, Opera, Edge.
 
 ### [AdguardForSafari](https://github.com/AdguardTeam/AdGuardForSafari)
 
@@ -95,11 +96,11 @@ Repository of AdGuard for Safari — Safari ad blocking extension for Mac. Users
 
 Repository of AdGuard for Linux — a command‑line interface for managing ad blocking.
 
-
-##  AdGuard VPN products
+## AdGuard VPN products
 
 In these repositories, users can:
-- View and report bugs or feature requests via GitHub issues  
+
+- View and report bugs or feature requests via GitHub issues
 - Check changelogs, track release history, monitor updates
 - Download latest, previous, and beta builds (except for iOS)
 
@@ -123,27 +124,26 @@ Repository of AdGuard VPN for Mac — app designed for macOS.
 
 Repository of AdGuard VPN Browser Extension.
 
-
 ### [AdGuardVPNCLI](https://github.com/AdguardTeam/AdGuardVPNCLI)
 
 Repository of AdGuard VPN for Linux — a command‑line interface for managing VPN connection. The repo acts as a bug tracker.
-
 
 ## DNS-based products
 
 ### [AdGuardDNS](https://github.com/AdguardTeam/AdGuardDNS)
 
 Open-source repository that is also used for tracking bugs and issues related to AdGuard DNS service. Users can:
+
 - View and report DNS issues
 - Suggest improvements
 
 ### [AdGuardHome](https://github.com/AdguardTeam/AdGuardHome)
 
 Repository of AdGuard Home — free network-wide software for blocking ads and trackers via DNS. Users can:
+
 - Check and file bug reports or feature requests
 - Review or contribute to code
 - Download and install releases
-
 
 ## Documentation and Knowledge bases
 
@@ -175,18 +175,21 @@ Detailed feature overview and troubleshooting guides of AdGuard Mail.
 ### [AdGuardCoreLibs](https://github.com/AdguardTeam/CoreLibs)
 
 AdGuard’s cross-platform core filtering engine. Used in Android, Windows, and Mac products. Users can:
+
 - Explore filtering logic and DNS handling
 - Report bugs and suggest features via Issues, contribute code via Pull requests
 
 ### [DNSLibs](https://github.com/AdguardTeam/DNSLibs)
 
 A DNS library used by CoreLibs and AdGuardHome. Users can:
+
 - Review and contribute to low-level DNS implementation  
 - Suggest optimizations
 
 ### [VPNLibs](https://github.com/AdguardTeam/VPNLibs)
 
 Shared codebase used in AdGuard VPN products across platforms for AdGuard VPN protocol implementation. Users can:
+
 - Contribute to VPN stack behavior
 - Report or view performance issues and bugs
 
@@ -203,6 +206,7 @@ Contains AdGuard’s core filter lists. Users can:
 ### [AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter)
 
 Repository of AdGuard DNS filter — the main DNS-level blocking list used in AdGuard DNS and DNS filtering features. Users can:
+
 - Inspect the current rule set
 - Propose changes or additions
 
@@ -223,7 +227,6 @@ JavaScript helpers used in filtering rules. Users can:
 TypeScript content blocker library for browser extensions. Users can:
 - Explore how filtering logic is implemented
 - Contribute fixes and features
-
 
 ## There’s more
 
