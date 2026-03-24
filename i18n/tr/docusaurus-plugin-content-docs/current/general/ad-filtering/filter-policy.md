@@ -81,11 +81,12 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 ### Kısıtlamalar ve istisnalar
 
 - Sitenin kendi reklamları kasıtlı olarak engellenmemelidir. Ancak, engelleme genel filtreleme kurallarından kaynaklanıyorsa engelleme kaldırılmamalıdır
-- Ödeme duvarları gibi içerik erişim önlemleri engellenmez
+- Content access measures like paywalls are not blocked by Ad blocking filters. However, they may be blocked by Tracking protection filters if their operation results in a violation of user privacy
 - Anti-adblock walls will be blocked in the following cases:
     - They aggressively insist on disabling or removing the ad blocker or effectively prevent using the website
     - They feature incorrect and misleading descriptions of possible consequences of ad blockers’ use
     - They put visitors at risk of malvertising — when unblocked advertisements come from dubious sources
+    - They violate or negatively impact user privacy
 - We do not block ad blocker detection messages that satisfy at least one of the following criteria:
     - They allow the usage of the website and do not overlay the significant amount of content
     - They provide an alternative to disabling an ad blocker given that this alternative does not put the users’ privacy or security at risk
@@ -165,13 +166,11 @@ For better customization, annoyance filters are divided by their purpose:
 
 #### AdGuard Çerez Bildirimleri filtresi
 
-This filter is designed to block both cookie notices and requests from cookie management platforms (CMPs). Various methods may be applied to cookie notices and CMPs. In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when the site’s functionality and display of third-party content require cookie consent, the following methods are applied:
+This filter is designed to block both cookie notices and requests from cookie management platforms (CMPs). Depending on how a website implements its consent mechanism, different methods may be applied.
 
-- Scriptlets are used to bypass the consent request (practically not applicable on sites with restrictions on loading third-party content until a decision is made)
-- Setting a cookie or key in the site’s local storage in such a way that the script considers the user to have made a choice
-- Simulating user action using a rule that clicks a specified button and interrupts its execution 10 seconds after loading. İki seçenek mümkündür:
-    - Reject (except for functional cookies — depending on the CMP system) — the preferred option, as there is less risk of loading additional analytics tools
-    - Accept — this option is used as the last resort if other methods fail. In this case, the site is additionally checked for the use of analytics tools, which are then blocked by the **AdGuard Tracking Protection filter**
+In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when a website requires a cookie decision for certain features or third-party content to work, the filter automatically handles the request using alternative methods.
+
+Whenever possible, non-essential cookies are declined by default. If this is not technically feasible and consent must be granted for the site to function correctly, the site is additionally reviewed for analytics and tracking technologies, which are then blocked by the **AdGuard Tracking Protection filter**.
 
 **Kısıtlamalar ve istisnalar**
 
@@ -189,7 +188,7 @@ This is a filter that blocks various popups on web pages that are not necessary 
 **Kısıtlamalar ve istisnalar**
 
 - Push notifications are only blocked on sites where they are not used for practical purposes. For example, in email web clients or tools used for work purposes, such notifications will not be blocked
-- Some popups that do not fall into the categories described above but still interfere with the user’s experience may be also blocked. For example, registration prompts on a site or popups that introduce the site’s features. Karar filtre geliştiricileri tarafından verilir
+- Some popups that do not fall into the categories described above but still interfere with the user’s experience may be also blocked. For example, registration prompts on a site or popups that introduce the site’s features. The decision is made by filter developers
 - Content access measures that ask the user to pay to access the content must not be circumvented
 
 #### AdGuard Mobil Uygulama Afişleri filtresi
@@ -207,14 +206,14 @@ This is a filter that blocks various widgets that are not essential for the func
 - Widgets for content recommendations — related articles, similar websites, various personalized recommendations
 - Chat widgets that are not integrated with the content and are not the main content of the page
 - Marketing widgets:
-    - Asistanlar veya botlarla iletişim için sohbetler
+    - Chats for communication with assistants or bots
     - Widgets with product recommendations that are shown to the user
     - Call-back forms
 - Other widgets that do not have a separate category but may visually clutter the page. For example, weather widgets, currency exchange rates, job listings, and donations
 
 **Kısıtlamalar ve istisnalar**
 
-Bu filtre şunları engellemez:
+This filter doesn’t block:
 
 - Widgets closely related to the content of the page, such as comments sections, live chat streams, with an exception of unmoderated chats on sites with unofficial streams, which are often filled with spam and similar content
 - Widgets for self-promotion and site-specific promotional activities
@@ -222,7 +221,7 @@ Bu filtre şunları engellemez:
 
 #### AdGuard Diğer Can Sıkıcı Öğeler filtresi
 
-Bu filtre, diğer filtrelerde yer almayan can sıkıcı öğeleri engellemek ve çeşitli ince ayarlar uygulamak için tasarlanmıştır. Bunun amacı:
+This filter is designed to block annoying elements that are not included in other filters, as well as to apply various tweaks. It’s purpose is to:
 
 - Block self-promotion of websites (any type of advertising promoting goods or services owned by the site owner, without receiving commercial compensation from a third party), if it is considered an annoying element
 - Block annoying elements that are not included in other categories
@@ -232,15 +231,15 @@ Bu filtre, diğer filtrelerde yer almayan can sıkıcı öğeleri engellemek ve 
 
 **Kısıtlamalar ve istisnalar**
 
-Bu filtre tüm kullanıcılar için uygun olmayan kurallar içerebilir. Bazen bu filtrenin devre dışı bırakılması önerilir. Bu filtreye kural ekleme kararları, filtre geliştiricileri tarafından kural bazında verilir.
+This filter may contain rules that are not suitable for all users. Sometimes it is recommended to disable this filter. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
 
 ## Sosyal medya filtreleri
 
 ### Filtreler
 
-AdGuard Sosyal Medya filtreleri şunları içerir:
+AdGuard Social Media filters include:
 
-- AdGuard Sosyal Medya filtresi
+- AdGuard Social Media filter
 
 ### Bu filtrelerin amacı
 
@@ -266,34 +265,34 @@ For more details on these types of advertising, refer to the [article on search 
 
 ### Filtreler
 
-- Arama motoru reklamları ve öz tanıtımına izin veren filtre
-- AdGuard DNS filtresi
-- AdGuard Deneysel filtresi
+- Filter unblocking search ads and self-promotion
+- AdGuard DNS filter
+- AdGuard Experimental filter
 
 ### Bu filtrelerin amacı
 
-#### Arama motoru reklamları ve öz tanıtımına izin veren filtre
+#### Filter unblocking search ads and self-promotion
 
-Bu filtre şunların engelini kaldırır:
+This filter unblocks:
 
 - Contextual advertising in search results when using search engines (such as Google, Bing, Yandex, DuckDuckGo)
 - Self-promotion of websites
 
 **Kısıtlamalar ve istisnalar**
 
-- Search advertising is unblocked only if it corresponds to the user’s search query, as it is contextual. Aksi takdirde, reklam engellenmiş olarak kalır
+- Search advertising is unblocked only if it corresponds to the user’s search query, as it is contextual. Otherwise, the advertising remains blocked
 - Self-promotion is unblocked only if it complies with the filter policy. A request for unblocking may be rejected by filter developers
 - Any other advertising will not be unblocked
 
-#### AdGuard DNS filtresi
+#### AdGuard DNS filter
 
-Bu filtre AdGuard DNS'de kullanılır. Bu, reklam engelleme filtrelerinin yerine geçmez.
+This filter is used in AdGuard DNS. It is not a replacement for ad-blocking filters.
 
 **Kısıtlamalar ve istisnalar**
 
 Same as for ad-blocking filters.
 
-#### AdGuard Deneysel filtresi
+#### AdGuard Experimental filter
 
 This filter is intended for testing and debugging rules that potentially may break websites’ functionality. Rules are added by filter developers when there’s a need to test a particular solution. As the filter is designed for debugging purposes, its limitations are minimal.
 

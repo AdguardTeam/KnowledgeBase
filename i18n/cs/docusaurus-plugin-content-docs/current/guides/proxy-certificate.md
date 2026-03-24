@@ -23,7 +23,7 @@ V závislosti na operačním systému zařízení, jehož přenosy chcete filtro
 
 1. Zkontrolujte, zda je ochrana AdGuard zapnuta. V počítači s Windows zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení. V Macu přejděte do **Nastavení** → **Předvolby** → **Síť** a povolte **HTTP proxy**.
 
-1. Na stejném počítači s AdGuardem použijte tento odkaz: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. On the same computer with AdGuard, follow this link: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Klepněte na tlačítko **Stáhnout**. Pokud se stahování nespustí, zkuste jiný prohlížeč, například Firefox.
 
@@ -65,7 +65,7 @@ V závislosti na operačním systému zařízení, jehož přenosy chcete filtro
 
 1. Zkontrolujte, zda je ochrana AdGuard zapnuta. V počítači s Windows zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení. V Macu přejděte do **Nastavení** → **Předvolby** → **Síť** a povolte **HTTP proxy**.
 
-1. Pomocí webového prohlížeče následujte tento odkaz: http: [//local.adguard.org/cert.](http://local.adguard.org/cert).
+1. Follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Klepněte na tlačítko **Stáhnout**. Pokud se stahování nespustí, zkuste jiný prohlížeč, například Firefox.
 
@@ -97,7 +97,7 @@ V závislosti na operačním systému zařízení, jehož přenosy chcete filtro
 
 1. Zkontrolujte, zda je ochrana AdGuard zapnuta. V počítači s Windows zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení. V Macu přejděte do **Nastavení** → **Předvolby** → **Síť** a povolte **HTTP proxy**.
 
-1. Na stejném počítači s AdGuardem použijte tento odkaz pomocí libovolného prohlížeče: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Klepněte na tlačítko **Stáhnout**. Pokud se stahování nespustí, zkuste jiný prohlížeč, například Firefox.
 
@@ -117,7 +117,7 @@ V závislosti na operačním systému zařízení, jehož přenosy chcete filtro
 
 1. Zkontrolujte, zda je ochrana AdGuard zapnuta. V počítači s Windows zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení. V Macu přejděte do **Nastavení** → **Předvolby** → **Síť** a povolte **HTTP proxy**.
 
-1. Na stejném počítači s AdGuardem použijte tento odkaz pomocí libovolného prohlížeče: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Klepněte na tlačítko **Stáhnout**. Pokud se stahování nespustí, zkuste jiný prohlížeč, například Firefox.
 

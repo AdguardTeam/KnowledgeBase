@@ -27,7 +27,7 @@ sidebar_position: 6
 
 - AdGuard를 설치하려고 했던 드라이브에서 일부 프로그램을 제거하거나 불필요한 파일을 삭제하세요.
 
-- Malwarebytes의 무료 소프트웨어인 [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/)를 다운로드, 설치 및 실행하세요. 무엇보다도 프로그램 등을 잘못 제거한 후 남아있는 모든 종류의 불필요한 파일로부터 시스템을 정리합니다. 디스크 공간을 정리하는 데 도움이 됩니다.
+- Download, install, and run [AdwCleaner](https://www.bleepingcomputer.com/download/adwcleaner/), a free piece of software by Malwarebytes. 무엇보다도 프로그램 등을 잘못 제거한 후 남아있는 모든 종류의 불필요한 파일로부터 시스템을 정리합니다. 디스크 공간을 정리하는 데 도움이 됩니다.
 
 - 컴퓨터를 재부팅합니다. 임시 파일은 디스크 공간을 상당히 많이 차지할 수 있으므로 PC를 재시작하는 것이 가장 안정적인 방법으로 임시 파일을 제거할 수 있습니다.
 

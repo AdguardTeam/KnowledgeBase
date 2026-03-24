@@ -9,56 +9,38 @@ Acest articol se referă la AdGuard pentru macOS, un blocant de reclame multifun
 
 :::
 
-## Fereastra principală
+- [Fereastra principală](/adguard-for-mac/features/main.md)
 
-Main screen with statistics on blocked ads and trackers and access to main settings
+  Main screen with statistics on blocked ads and trackers and access to main settings
 
-[Fereastra principală](/adguard-for-mac/features/main.md)
+- [General](/adguard-for-mac/features/general.md)
 
-## General
+  Basic settings to block search ads and website self-promotional ads, enable language-specific filters, and manage _Allowlist_
 
-Basic settings to block search ads and website self-promotional ads, enable language-specific filters, and manage _Allowlist_
+- [Filtre](/adguard-for-mac/features/filters.md)
 
-[General](/adguard-for-mac/features/general.md)
+  Filters and user rules to fine-tune ad blocking
 
-## Filtre
+- [DNS](/adguard-for-mac/features/dns.md)
 
-Filters and user rules to fine-tune ad blocking
+  DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
 
-[Filtre](/adguard-for-mac/features/filters.md)
+- [Stealth Mode](/adguard-for-mac/features/stealth.md)
 
-## DNS
+  Settings to block cookies, UTM tags, and online analytics that collect user information
 
-DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
+- [Securitate](/adguard-for-mac/features/security.md)
 
-[DNS](/adguard-for-mac/features/dns.md)
+  A setting that blocks access to malicious and phishing websites and protects you from online threats
 
-## Modul Incognito
+- [Asistent Browser](/adguard-for-mac/features/browser-assistant.md)
 
-Settings to block cookies, UTM tags, and online analytics that collect user information
+  An extension that complements the desktop app and allows you to manage filtering from your browser
 
-[Stealth Mode](/adguard-for-mac/features/stealth.md)
+- [Extensii](/adguard-for-mac/features/extensions.md)
 
-## Securitate
+  A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
 
-A setting that blocks access to malicious and phishing websites and protects you from online threats
+- [Rețea](/adguard-for-mac/features/network.md)
 
-[Securitate](/adguard-for-mac/features/security.md)
-
-## Asistent Browser
-
-An extension that complements the desktop program and allows you to manage filtering from your browser
-
-[Asistent Browser](/adguard-for-mac/features/browser-assistant.md)
-
-## Extensii
-
-A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
-
-[Extensii](/adguard-for-mac/features/extensions.md)
-
-## Rețea
-
-Additional network-related options and proxy settings
-
-[Rețea](/adguard-for-mac/features/network.md)
+  Additional network-related options and proxy settings

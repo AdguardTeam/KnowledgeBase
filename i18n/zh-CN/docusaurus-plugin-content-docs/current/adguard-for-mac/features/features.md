@@ -9,56 +9,38 @@ sidebar_position: 1
 
 :::
 
-## 主窗口
+- [主页](/adguard-for-mac/features/main.md)
 
-主屏幕包括已拦截的广告和跟踪器统计数据，以及其他主要设置。
+  Main screen with statistics on blocked ads and trackers and access to main settings
 
-[主页](/adguard-for-mac/features/main.md)
+- [常规](/adguard-for-mac/features/general.md)
 
-## 常规
+  基本设置允许用户阻止搜索广告和网站自我推销广告，启用特定语言过滤器，并管理「白名单」。
 
-基本设置允许用户阻止搜索广告和网站自我推销广告，启用特定语言过滤器，并管理「白名单」。
+- [过滤器](/adguard-for-mac/features/filters.md)
 
-[常规](/adguard-for-mac/features/general.md)
+  过滤和用户规则以微调广告拦截。
 
-## 过滤器
+- [DNS](/adguard-for-mac/features/dns.md)
 
-过滤和用户规则以微调广告拦截。
+  DNS 服务器和 DNS 过滤器，让用户拦截广告、跟踪器和危险网站。
 
-[过滤器](/adguard-for-mac/features/filters.md)
+- [隐身模式](/adguard-for-mac/features/stealth.md)
 
-## DNS
+  Settings to block cookies, UTM tags, and online analytics that collect user information
 
-DNS 服务器和 DNS 过滤器，让用户拦截广告、跟踪器和危险网站。
+- [安全](/adguard-for-mac/features/security.md)
 
-[DNS](/adguard-for-mac/features/dns.md)
+  阻止访问恶意网站和钓鱼网站，保护用户免受在线威胁的设置。
 
-## 隐身模式
+- [AdGuard 助手](/adguard-for-mac/features/browser-assistant.md)
 
-设置阻止收集用户信息的 Cookie、UTM 标签和在线分析功能。
+  An extension that complements the desktop app and allows you to manage filtering from your browser
 
-[隐身模式](/adguard-for-mac/features/stealth.md)
+- [扩展](/adguard-for-mac/features/extensions.md)
 
-## 安全
+  通过添加用户脚本和用户样式来扩展网站功能的功能。
 
-阻止访问恶意网站和钓鱼网站，保护用户免受在线威胁的设置。
+- [网络](/adguard-for-mac/features/network.md)
 
-[安全](/adguard-for-mac/features/security.md)
-
-## 浏览器助手
-
-该扩展是桌面程序的补充，让用户通过浏览器管理过滤功能。
-
-[AdGuard 助手](/adguard-for-mac/features/browser-assistant.md)
-
-## 浏览器扩展
-
-通过添加用户脚本和用户样式来扩展网站功能的功能。
-
-[扩展](/adguard-for-mac/features/extensions.md)
-
-## 网络
-
-其他网络相关选项和代理设置。
-
-[网络](/adguard-for-mac/features/network.md)
+  其他网络相关选项和代理设置。

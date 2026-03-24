@@ -9,50 +9,34 @@ Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement 
 
 :::
 
-## Fonctionnalités
+- [Fonctionnalités](/adguard-browser-extension/features)
 
-Les fonctionnalités principales et les réglages disponibles dans l'extension de navigateur AdGuard
+  Main features and settings available in AdGuard Browser Extension
 
-[Fonctionnalités](/adguard-browser-extension/features)
+- [Disponibilité](/adguard-browser-extension/availability)
 
-## Disponibilité
+  Les navigateurs et plateformes compatibles où l'extension peut être installée
 
-Les navigateurs et plateformes compatibles où l'extension peut être installée
+- [Installation](/adguard-browser-extension/installation)
 
-[Disponibilité](/adguard-browser-extension/availability)
+  Installation et désinstallation
 
-## Installation
+- [Compatibilité avec l'application autonome](/adguard-browser-extension/compatibility)
 
-Installation et désinstallation
+  Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
 
-[Installation](/adguard-browser-extension/installation)
+- [Extension de navigateur AdGuard pour Chrome MV3](/adguard-browser-extension/mv3-version/)
 
-## Compatibilité avec l'application autonome
+  Une extension de navigation AdGuard autonome compatible avec l'API Manifest V3
 
-Compatibilité de l'extension de navigateur AdGuard avec les applications de bureau AdGuard
+- [Pages protégées par le navigateur](/adguard-browser-extension/protected-pages)
 
-[Compatibilité avec l'application autonome](/adguard-browser-extension/compatibility)
+  Domaines restreints dont le contenu ne peut pas être modifié avec des extensions de blocage de publicité
 
-## Extension de navigateur AdGuard pour Chrome MV3
+- [Résolution des problèmes](/adguard-browser-extension/solving-problems)
 
-Une extension de navigation AdGuard autonome compatible avec l'API Manifest V3
+  Problèmes connus et solutions possibles
 
-[Extension de navigateur AdGuard pour Chrome MV3](/adguard-browser-extension/mv3-version/)
+- [Comparaison avec les applications autonomes](/adguard-browser-extension/comparison-standalone)
 
-## Pages protégées par le navigateur
-
-Domaines restreints dont le contenu ne peut pas être modifié avec des extensions de blocage de publicité
-
-[Pages protégées par le navigateur](/adguard-browser-extension/protected-pages)
-
-## Résolution des problèmes
-
-Problèmes connus et solutions possibles
-
-[Résolution des problèmes](/adguard-browser-extension/solving-problems)
-
-## Comparaison avec les applications autonomes
-
-Les différences de fonctionnalités et d'options entre les extensions AdGuard et les applications de bureau
-
-[Comparaison avec les applications autonomes](/adguard-browser-extension/comparison-standalone)
+  Les différences de fonctionnalités et d'options entre les extensions AdGuard et les applications de bureau

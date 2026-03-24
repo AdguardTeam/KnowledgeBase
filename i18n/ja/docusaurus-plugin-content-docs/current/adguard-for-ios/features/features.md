@@ -9,56 +9,38 @@ sidebar_position: 1
 
 :::
 
-## Safariでブロック
+- [Safariでブロック](/adguard-for-ios/features/safari-protection.md)
 
-「Safariでブロック」セクションにある機能と設定（「フィルタ」「ユーザールール」「ホワイトリスト」）についての説明です：
+  Available features and settings in the _Safari protection_ tab: _Filters_, _User rules_, and _Allowlist_
 
-[Safariでブロック](/adguard-for-ios/features/safari-protection.md)
+- [DNS通信を保護](/adguard-for-ios/features/dns-protection/)
 
-## DNS通信を保護
+  DNSサーバーやDNSフィルタを設定することで、広告、トラッカー、および悪意のあるコンテンツをブロックする方法についての説明です：
 
-DNSサーバーやDNSフィルタを設定することで、広告、トラッカー、および悪意のあるコンテンツをブロックする方法についての説明です：
+- [高度な保護機能](/adguard-for-ios/features/advanced-protection.md)
 
-[DNS通信を保護](/adguard-for-ios/features/dns-protection/)
+  高度なフィルタリングルールやスクリプトレットを使用して、YouTube広告のような複雑な広告に対処する機能についての説明です：
 
-## 高度な保護機能
+- [アクティビティと統計](/adguard-for-ios/features/activity.md)
 
-高度なフィルタリングルールやスクリプトレットを使用して、YouTube広告のような複雑な広告に対処する機能についての説明です：
+  ブロックされた広告、トラッカー、DNSクエリを監視できるようにする詳細なアクティビティレポートを備えた「統計」タブについて説明しております：
 
-[高度な保護機能](/adguard-for-ios/features/advanced-protection.md)
+- [アシスタント](/adguard-for-ios/features/assistant.md)
 
-## アクティビティと統計
+  AdGuardアプリを開くことなく、直接Safariブラウザからフィルタリングの管理を可能にしてくれるツールです：
 
-ブロックされた広告、トラッカー、DNSクエリを監視できるようにする詳細なアクティビティレポートを備えた「統計」タブについて説明しております：
+- [ローレベル設定](/adguard-for-ios/features/low-level-settings.md)
 
-[アクティビティと統計](/adguard-for-ios/features/activity.md)
+  上級ユーザーはアプリのパフォーマンスを微調整したり、広告ブロックをカスタマイズしたり、DNS通信の保護を調整したりして、より細かい管理を可能にする設定です：
 
-## アシスタント
+- [その他の機能](/adguard-for-ios/features/other-features.md)
 
-AdGuardアプリを開くことなく、直接Safariブラウザからフィルタリングの管理を可能にしてくれるツールです：
+  General settings: theme, settings and statistics reset, auto-update, inverting the allowlist, and advanced mode.
 
-[アシスタント](/adguard-for-ios/features/assistant.md)
+- [AdGuard VPN との併用モード](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 
-## ローレベル設定
+  システム制限にもかかわらず、AdGuard 広告ブロッカーとAdGuard VPNの併用を可能にしてくれる統合モードについての説明です：
 
-上級ユーザーはアプリのパフォーマンスを微調整したり、広告ブロックをカスタマイズしたり、DNS通信の保護を調整したりして、より細かい管理を可能にする設定です：
+- [無料版 vs フルバージョン（有料版）](/adguard-for-ios/features/free-vs-full.md)
 
-[ローレベル設定](/adguard-for-ios/features/low-level-settings.md)
-
-## その他の機能
-
-一般設定（テーマ、設定、統計のリセット、自動更新）に関する説明です：
-
-[その他の機能](/adguard-for-ios/features/other-features.md)
-
-## AdGuard VPN との併用モード
-
-システム制限にもかかわらず、AdGuard 広告ブロッカーとAdGuard VPNの併用を可能にしてくれる統合モードについての説明です：
-
-[AdGuard VPN との併用モード](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
-
-## 無料版 vs フルバージョン（有料版）
-
-無料版と有料版の機能比較です：
-
-[無料版 vs フルバージョン（有料版）](/adguard-for-ios/features/free-vs-full.md)
+  無料版と有料版の機能比較です：

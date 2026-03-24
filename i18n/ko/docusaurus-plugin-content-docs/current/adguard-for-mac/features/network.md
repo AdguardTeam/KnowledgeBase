@@ -33,4 +33,4 @@ sidebar_position: 10
 
 AdGuard를 HTTP 프록시 서버로 사용할 수 있습니다. 이렇게 하면 프록시에 연결된 다른 기기의 트래픽을 필터링할 수 있습니다.
 
-Mac과 다른 기기가 동일한 네트워크에 연결되어 있는지 확인하고, 프록시 서버를 통해 라우팅하려는 기기의 프록시 포트(일반적으로 네트워크 설정에 있음)를 입력합니다. HTTPS 트래픽도 필터링하려면 [AdGuard의 프록시 인증서를 이 기기로 전송](http://local.adguard.org/cert)하세요. [프록시 인증서 설치에 대해 자세히 알아보기](/guides/proxy-certificate)
+Mac과 다른 기기가 동일한 네트워크에 연결되어 있는지 확인하고, 프록시 서버를 통해 라우팅하려는 기기의 프록시 포트(일반적으로 네트워크 설정에 있음)를 입력합니다. To filter HTTPS traffic as well, [transfer AdGuard’s proxy certificate](https://local.adguard.org/cert) to this device. [프록시 인증서 설치에 대해 자세히 알아보기](/guides/proxy-certificate)

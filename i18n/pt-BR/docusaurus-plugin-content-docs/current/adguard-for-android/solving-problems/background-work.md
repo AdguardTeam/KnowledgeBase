@@ -467,9 +467,11 @@ Other solutions:
 
 ## OnePlus
 
+### OxygenOS
+
 Devices with OxygenOS on board are the most problematic, with its OS-specific cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the AdGuard's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps.
 
-### Bloqueando o aplicativo
+#### Locking the app
 
 - Go to **Settings**
 
@@ -495,17 +497,17 @@ On some OnePlus phones there is also a thing called App Auto-Launch and Deep Opt
 
 :::
 
-### Otimização da bateria
+#### Battery optimization
 
 - Open device settings → **Battery** → **Battery optimization** → switch to the **All apps** list (top menu) → choose AdGuard → activate **Don’t optimize**
 
 - Open device settings → **Battery** → **Battery Optimization** → (⁝) three-dot menu → **Advanced Optimization** → Disable Deep Optimization
 
-### Inicialização automática do aplicativo
+#### App Auto-Launch
 
-App Auto-Launch (on some OnePlus phones) essentially prevents apps from working in the background. Please disable it for AdGuard.
+App Auto-Launch (on some OnePlus phones) essentially prevents apps from working in the background. Please enable it for AdGuard.
 
-### Otimização avançada/aprimorada
+#### Enhanced / Advanced optimization
 
 For OnePlus 6 and above:
 
@@ -517,11 +519,32 @@ For OnePlus below 6:
 
 - Turn off **System settings** → **Battery** → **Battery optimization** → (⁝) three-dot menu → **Enhanced optimization**.
 
-### Comportamento de limpeza de aplicativos recentes
+#### Recent apps clearing behaviour
 
 Normally when you swipe an app away, it won’t close. On OnePlus this may however work in a different way. Recent app clear behaviour manager might be set up in a way that swiping the app to close will kill it. To return it to the “normal” mode:
 
 Go to **Settings** → **Advanced** → **Recent app management** → Switch to **Normal clear**
+
+### ColorOS
+
+On devices running ColorOS, the system may aggressively restrict background processes as well. To ensure AdGuard works properly in the background, configure the following settings:
+
+- Open **System settings** → **Battery → Battery mode** and select **High performance mode**
+
+![High performance mode *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/high_performance_mode.jpg)
+
+- Go to **Apps → App management → AdGuard → Battery usage** and select **Allow background activity**
+
+![Allow background activity *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/allow_background_activity.jpg)
+
+- Go to **Apps → Auto launch** and enable the switch for AdGuard
+
+![Auto launch *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/auto_launch.jpg)
+
+- To lock AdGuard in the **Recent apps** menu:
+
+    - Open the **Recent apps** screen
+    - Swipe the AdGuard app card down to lock it in memory
 
 ## Sony
 

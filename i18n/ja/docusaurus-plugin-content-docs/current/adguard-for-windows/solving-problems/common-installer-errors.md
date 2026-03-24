@@ -27,7 +27,7 @@ sidebar_position: 6
 
 - AdGuard をインストールしようとしているドライブから、いくつかのプログラムをアンインストールするか、不要なファイルを削除してください。
 
-- Malwarebytes による無料ソフトウェア [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/) をダウンロード、インストールし、実行しください。 これは、特に、誤ってアンインストールしたプログラムなどの後に残る、あらゆる種類の余分な「残り物」ファイルからシステムをクリーンアップしてくれます。 ディスク領域を空けるのにも役立ちます。
+- Download, install, and run [AdwCleaner](https://www.bleepingcomputer.com/download/adwcleaner/), a free piece of software by Malwarebytes. これは、特に、誤ってアンインストールしたプログラムなどの後に残る、あらゆる種類の余分な「残り物」ファイルからシステムをクリーンアップしてくれます。 ディスク領域を空けるのにも役立ちます。
 
 - コンピュータを再起動してください。 一時ファイルがかなりのディスク容量を占めることがあり、PCを再起動することが、一時ファイルを取り除く最も確実な方法です。
 

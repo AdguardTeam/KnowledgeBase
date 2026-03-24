@@ -18,6 +18,6 @@ iOS用「AdGuard Pro」は、App Storeで購入することができます。
 - 利用可能端末台数を増やすには、 **AdGuardパーソナルライセンス（3台用）をファミリーライセンス（9台用）にアップグレード**します。
 - また、サブスクリプションを**期限なく使える永久版ライセンスにアップグレードする**ことも可能です。
 
-お持ちのライセンスはAdGuardアカウントにてアップグレードいただけます。 そうするには、AdGuardアカウントで、「*永久版にアップグレードする*」または「*利用可能端末台数を増やす*」をクリックしてください。
+You can upgrade your license in your [AdGuard account](https://adguardaccount.com). そうするには、AdGuardアカウントで、「*永久版にアップグレードする*」または「*利用可能端末台数を増やす*」をクリックしてください。
 
 ![アップグレード](https://cdn.adtidy.org/blog/new/7mtemnewaccount-kb-upgrade-ja.png)

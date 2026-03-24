@@ -9,32 +9,22 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 :::
 
-## Domovská obrazovka
+- [Úvodní obrazovka](/adguard-for-windows/features/home-screen/)
 
-Na hlavní obrazovce najdete položky _Nastavení_, _Podpora_, _Licence_ a _O aplikaci_ a také statistiky blokovaných reklam a slídičů
+  On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
 
-[Úvodní obrazovka](/adguard-for-windows/features/home-screen/)
+- [Nastavení](/adguard-for-windows/features/settings/)
 
-## Nastavení
+  Nastavení motivu a jazyka, přizpůsobení blokování reklam, DNS ochrana, rodičovská kontrola, správa rozšíření a pokročilé možnosti pro zkušené uživatele
 
-Nastavení motivu a jazyka, přizpůsobení blokování reklam, DNS ochrana, rodičovská kontrola, správa rozšíření a pokročilé možnosti pro zkušené uživatele
+- [Rozšíření](/adguard-for-windows/features/extensions/)
 
-[Nastavení](/adguard-for-windows/features/settings/)
+  Funkce, která umožňuje rozšířit funkčnost webových stránek přidáním uživatelských skriptů a uživatelských stylů
 
-## Rozšíření
+- [Síť](/adguard-for-windows/features/network/)
 
-Funkce, která umožňuje rozšířit funkčnost webových stránek přidáním uživatelských skriptů a uživatelských stylů
+  Další možnosti související se sítí a nastavením proxy
 
-[Rozšíření](/adguard-for-windows/features/extensions/)
+- [Další funkce](/adguard-for-windows/features/others/)
 
-## Síť
-
-Další možnosti související se sítí a nastavením proxy
-
-[Síť](/adguard-for-windows/features/network/)
-
-## Další funkce
-
-Podpora, správa licencí, možnosti menu, verze programu a aktualizace
-
-[Další funkce](/adguard-for-windows/features/others/)
+  Support, license management, tray menu options, app version and updates

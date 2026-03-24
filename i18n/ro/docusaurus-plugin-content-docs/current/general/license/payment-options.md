@@ -18,6 +18,6 @@ Pentru a utiliza mai bine produsele AdGuard, puteți actualiza licența pentru u
 - Pentru a extinde numărul de dispozitive, puteți **actualiza licența dvs. Personal la Familial**
 - De asemenea, puteți **actualiza abonamentul de 1 an la o licență pe viață**
 
-Puteți actualiza licența în contul dvs. AdGuard. To do so, click *Upgrade to Lifetime* or *Increase device limit*.
+You can upgrade your license in your [AdGuard account](https://adguardaccount.com). To do so, click *Upgrade to Lifetime* or *Increase device limit*.
 
 ![Upgrade](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

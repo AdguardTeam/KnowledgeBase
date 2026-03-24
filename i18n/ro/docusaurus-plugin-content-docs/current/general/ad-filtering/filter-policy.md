@@ -81,11 +81,12 @@ Obiectivul filtrelor de blocare a reclamelor este de a bloca toate tipurile de p
 ### Limitări și excepții
 
 - Publicitatea proprie a site-ului nu ar trebui să fie blocată intenționat. Cu toate acestea, nu ar trebui să fie deblocată dacă blocarea este cauzată de regulile de filtrare generale
-- Măsurile de acces la conținut, cum ar fi paywalls, nu sunt blocate
+- Content access measures like paywalls are not blocked by Ad blocking filters. However, they may be blocked by Tracking protection filters if their operation results in a violation of user privacy
 - Anti-adblock walls will be blocked in the following cases:
     - Ele insistă agresiv pe dezactivarea sau eliminarea blocantului de reclame sau împiedică efectiv utilizarea site-ului
     - Conțin descrieri incorecte și înșelătoare ale posibilelor consecințe ale utilizării blocantelor de reclame
     - Expun vizitatorii la riscul de malware — când reclamele deblocate provind din surse dubioase
+    - They violate or negatively impact user privacy
 - Nu blocăm mesajele de detectare a blocantelor de reclame care respectă cel puțin unul dintre următoarele criterii:
     - Ele permit utilizarea site-ului și nu suprapun o cantitate semnificativă de conținut
     - Ele oferă o alternativă la dezactivarea blocantului de reclame, cu condiția ca această alternativă să nu pună în pericol intimitatea sau securitatea utilizatorilor
@@ -165,13 +166,11 @@ For better customization, annoyance filters are divided by their purpose:
 
 #### AdGuard Cookie Notices filter
 
-This filter is designed to block both cookie notices and requests from cookie management platforms (CMPs). Various methods may be applied to cookie notices and CMPs. In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when the site’s functionality and display of third-party content require cookie consent, the following methods are applied:
+This filter is designed to block both cookie notices and requests from cookie management platforms (CMPs). Depending on how a website implements its consent mechanism, different methods may be applied.
 
-- Scriptlets are used to bypass the consent request (practically not applicable on sites with restrictions on loading third-party content until a decision is made)
-- Setting a cookie or key in the site’s local storage in such a way that the script considers the user to have made a choice
-- Simulating user action using a rule that clicks a specified button and interrupts its execution 10 seconds after loading. Two options are possible:
-    - Reject (except for functional cookies — depending on the CMP system) — the preferred option, as there is less risk of loading additional analytics tools
-    - Accept — this option is used as the last resort if other methods fail. In this case, the site is additionally checked for the use of analytics tools, which are then blocked by the **AdGuard Tracking Protection filter**
+In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when a website requires a cookie decision for certain features or third-party content to work, the filter automatically handles the request using alternative methods.
+
+Whenever possible, non-essential cookies are declined by default. If this is not technically feasible and consent must be granted for the site to function correctly, the site is additionally reviewed for analytics and tracking technologies, which are then blocked by the **AdGuard Tracking Protection filter**.
 
 **Limitări și excepții**
 
@@ -266,13 +265,13 @@ For more details on these types of advertising, refer to the [article on search 
 
 ### Filtre
 
-- Filtru care deblochează reclamele de căutare și auto-promovare
+- Filter unblocking search ads and self-promotion
 - AdGuard DNS filter
 - AdGuard Experimental filter
 
 ### Scopul acestor filtre
 
-#### Filtru care deblochează reclamele de căutare și auto-promovare
+#### Filter unblocking search ads and self-promotion
 
 This filter unblocks:
 

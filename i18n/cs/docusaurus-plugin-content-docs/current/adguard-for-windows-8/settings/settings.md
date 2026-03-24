@@ -9,22 +9,22 @@ Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor rekla
 
 :::
 
-There are other useful AdGuard options that shouldn’t go unnoticed in this article, since they add much to user experience.
+Existují i další užitečné možnosti AdGuardu, které by v tomto článku neměly zůstat nepovšimnuty, protože výrazně přispívají k uživatelskému komfortu.
 
 ![Settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/setting.png)
 
-## [App settings](/adguard-for-windows-8/settings/app-settings)
+## [Nastavení aplikace](/adguard-for-windows-8/settings/app-settings)
 
-Language and theme, update channel and interval, advanced options for experienced users, and a filter editor to quickly create custom rules.
+Jazyk a motiv, kanál aktualizací a interval, pokročilé možnosti pro zkušené uživatele a editor filtrů pro rychlé vytváření vlastních pravidel.
 
-## [License](/adguard-for-windows-8/settings/license)
+## [Licence](/adguard-for-windows-8/settings/license)
 
-Information about license type, number of available devices, and activation code, with options to refresh or reset license and bind it to your AdGuard account.
+Informace o typu licence, počtu dostupných zařízení a aktivačním kódu, s možnostmi obnovit nebo resetovat licenci a připojit ji k vašemu AdGuard účtu.
 
-## [Support](/adguard-for-windows-8/settings/support)
+## [Podpora](/adguard-for-windows-8/settings/support)
 
-FAQ and support form, tools to report missed ads and request new features, possibility to rate the app, share feedback, and access AdGuard social networks.
+FAQ a formulář podpory, nástroje k nahlášení nezablokovaných reklam a vytvoření požadavku na nové funkce, možnost ohodnotit aplikaci, sdílet zpětnou vazbu a přístup k sociálním sítím AdGuard.
 
-## [About](/adguard-for-windows-8/settings/about)
+## [Informace](/adguard-for-windows-8/settings/about)
 
-Details about app version and libraries, as well as links to legal documents.
+Podrobnosti o verzi aplikace a knihovnách, jakož i odkazy na právní dokumenty.

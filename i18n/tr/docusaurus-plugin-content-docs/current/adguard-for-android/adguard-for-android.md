@@ -9,20 +9,14 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-## Features
+- [Özellikler](/adguard-for-android/features/features.md)
 
-Main features and settings available in AdGuard for Android
+  Main features and settings available in AdGuard for Android
 
-[Özellikler](/adguard-for-android/features/features.md)
+- [Yükleme](/adguard-for-android/installation.md)
 
-## Kurulum
+  Installation, removal, and system requirements for AdGuard for Android
 
-Installation, removal, and system requirements for AdGuard for Android
+- [Sorunları çözme](/adguard-for-android/solving-problems/solving-problems.md)
 
-[Yükleme](/adguard-for-android/installation.md)
-
-## Sorunları çözme
-
-Known issues and possible solutions
-
-[Sorunları çözme](/adguard-for-android/solving-problems/solving-problems.md)
+  Known issues and possible solutions

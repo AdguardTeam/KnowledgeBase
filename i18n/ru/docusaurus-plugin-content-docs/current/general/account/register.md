@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Что такое личный кабинет AdGuard
 
-[Личный кабинет AdGuard](https://adguardaccount.com/) — это пользовательский аккаунт, в котором хранится информация о ваших лицензиях и подписках AdGuard, активных устройствах, истории покупок, предпочтительном языке и других настройках. Многие продукты AdGuard можно активировать с помощью данных аккаунта AdGuard, при условии, что он содержит действующую лицензию.
+[AdGuard account](https://adguardaccount.com) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. Многие продукты AdGuard можно активировать с помощью данных аккаунта AdGuard, при условии, что он содержит действующую лицензию.
 
 ## Как создать личный кабинет
 

@@ -5,30 +5,22 @@ sidebar_position: 1
 
 :::info
 
-Questo articolo riguarda l'estensione per browser di AdGuard, che protegge solo il tuo browser. Per proteggere l'intero dispositivo, [scarica l'app AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda l'Estensione di browser AdGuard, che protegge solo il tuo browser. Per proteggere l'intero dispositivo, [scarica l'app AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Menu' principale
+- [Main menu](/adguard-browser-extension/features/main-menu.md)
 
-Il popup principale da cui puoi accedere alle impostazioni, al registro di filtraggio e alle statistiche, e segnalare problemi
+  The main popup from which you can access settings, filtering log and statistics, and report problems
 
-[Menu' prinicpale](/adguard-browser-extension/features/main-menu.md)
+- [Filters](/adguard-browser-extension/features/filters.md)
 
-## Filtri
+  Filtri e regole utente per ottimizzare il blocco delle inserzioni
 
-Filtri e regole utente per ottimizzare il blocco delle inserzioni
+- [Tracking protection (Stealth Mode)](/adguard-browser-extension/features/stealth-mode.md)
 
-[Filtri](/adguard-browser-extension/features/filters.md)
+  Settings to block cookies, UTM tags, and online analytics that collect user information
 
-## Protezione dal tracciamento (Modalità Invisibile)
+- [Other features and options](/adguard-browser-extension/features/other-features.md)
 
-Impostazioni per bloccare cookie, tag UTM e le analisi in rete che raccolgono informazioni sugli utenti
-
-[Protezione dal Tracciamento (Modalità Invisibile)](/adguard-browser-extension/features/stealth-mode.md)
-
-## Altre funzioni e opzioni
-
-Impostazioni generali e aggiuntive, collegamenti ai documenti sulla riservatezza e al repository
-
-[Altre funzioni e opzioni(/adguard-browser-extension/features/other-features.md)
+  General and additional settings, links to privacy documents and GitHub repository

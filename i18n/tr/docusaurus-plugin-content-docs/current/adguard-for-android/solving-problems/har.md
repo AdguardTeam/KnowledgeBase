@@ -17,7 +17,7 @@ HAR dosyaları [AdGuard Gizlilik Politikasına](https://adguard.com/en/privacy.h
 
 ## HAR dosyaları nedir?
 
-The HAR (HTTP ARchive) format is a JSON-formatted archive file for logging of a web browser's interaction with a site. The specifications of HAR format define archival data for HTTP transactions that a browser uses to export detailed information about the web pages it loads. More detailed description of HAR file format and its specification you can find at [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/) website.
+The HAR (HTTP ARchive) format is a JSON-formatted archive file for logging of a web browser's interaction with a site. The specifications of HAR format define archival data for HTTP transactions that a browser uses to export detailed information about the web pages it loads. More detailed description of HAR file format and its specification you can find at [softwareishard.com](https://www.softwareishard.com/blog/har-12-spec/) website.
 
 ## HAR dosyaları nasıl oluşturulur
 

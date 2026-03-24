@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-This article is about the AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Ez a cikk az AdGuard böngészőbővítményről szól, amely csak a böngészőt védi. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

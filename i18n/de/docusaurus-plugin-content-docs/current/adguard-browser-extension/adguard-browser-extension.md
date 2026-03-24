@@ -9,50 +9,34 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
 :::
 
-## Funktionen
+- [Funktionen](/adguard-browser-extension/features)
 
-Die wichtigsten Funktionen und Einstellungen der AdGuard Browsererweiterung
+  Main features and settings available in AdGuard Browser Extension
 
-[Funktionen](/adguard-browser-extension/features)
+- [Verfügbarkeit](/adguard-browser-extension/availability)
 
-## Verfügbarkeit
+  Unterstützte Browser und Plattformen, auf denen die Erweiterung installiert werden kann
 
-Unterstützte Browser und Plattformen, auf denen die Erweiterung installiert werden kann
+- [Installation](/adguard-browser-extension/installation)
 
-[Verfügbarkeit](/adguard-browser-extension/availability)
+  Installation und Entfernung
 
-## Installation
+- [Kompatibilität mit der eigenständigen App](adguard-browser-extension/compatibility)
 
-Installation und Entfernung
+  Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
 
-[Installation](/adguard-browser-extension/installation)
+- [AdGuard Browsererweiterung für Chrome MV3](/adguard-browser-extension/mv3-version/)
 
-## Kompatibilität mit der eigenständigen App
+  Eine separate AdGuard Browsererweiterung, die mit der Manifest V3-API kompatibel ist
 
-Kompatibilität der AdGuard Browsererweiterung mit den AdGuard-Desktop-Apps
+- [Browser-geschützte Seiten](/adguard-browser-extension/protected-pages)
 
-[Kompatibilität mit der eigenständigen App](adguard-browser-extension/compatibility)
+  Eingeschränkte Domains, deren Inhalt nicht mit Werbeblocker-Erweiterungen geändert werden kann
 
-## AdGuard Browsererweiterung für Chrome MV3
+- [Probleme lösen](/adguard-browser-extension/solving-problems)
 
-Eine separate AdGuard Browsererweiterung, die mit der Manifest V3-API kompatibel ist
+  Bekannte Probleme und mögliche Lösungen
 
-[AdGuard Browsererweiterung für Chrome MV3](/adguard-browser-extension/mv3-version/)
+- [Kompatibilität mit der eigenständigen App](/adguard-browser-extension/comparison-standalone)
 
-## Browser-geschützte Webseiten
-
-Eingeschränkte Domains, deren Inhalt nicht mit Werbeblocker-Erweiterungen geändert werden kann
-
-[Browser-geschützte Seiten](/adguard-browser-extension/protected-pages)
-
-## Probleme lösen
-
-Bekannte Probleme und mögliche Lösungen
-
-[Probleme lösen](/adguard-browser-extension/solving-problems)
-
-## Vergleich mit eigenständigen Anwendungen
-
-Die Unterschiede in der Funktionalität und den Merkmalen zwischen den AdGuard-Erweiterungen und den Desktop-Apps
-
-[Kompatibilität mit der eigenständigen App](/adguard-browser-extension/comparison-standalone)
+  Die Unterschiede in der Funktionalität und den Merkmalen zwischen den AdGuard-Erweiterungen und den Desktop-Apps

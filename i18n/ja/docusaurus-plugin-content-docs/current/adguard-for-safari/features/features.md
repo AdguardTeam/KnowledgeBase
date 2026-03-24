@@ -3,32 +3,22 @@ title: 機能
 sidebar_position: 1
 ---
 
-## 一般
+- [一般設定](adguard-for-safari/features/general.md)
 
-通知、更新間隔、ログレベルなどの基本機能の説明です：
+  Basic features, including notifications, update intervals, and logging level
 
-[一般設定](adguard-for-safari/features/general.md)
+- [フィルタ](/adguard-for-safari/features/filters.md)
 
-## フィルタ
+  広告ブロックのカスタマイズを可能にするさまざまなフィルタについてです：
 
-広告ブロックのカスタマイズを可能にするさまざまなフィルタについてです：
+- [コンテンツブロッカー](/adguard-for-safari/features/content-blockers/content-blockers.md)
 
-[フィルタ](/adguard-for-safari/features/filters.md)
+  Appleの制約に準拠した6つのテーマ別コンテンツブロッカーについてです：
 
-## コンテンツブロッカー
+- [ユーザールール](/adguard-for-safari/features/rules.md)
 
-Appleの制約に準拠した6つのテーマ別コンテンツブロッカーについてです：
+  広告ブロックを微調整するためのカスタムフィルタリングルールについてです：
 
-[コンテンツブロッカー](/adguard-for-safari/features/content-blockers/content-blockers.md)
+- [このアプリについて](/adguard-for-safari/features/about.md)
 
-## ユーザールール
-
-広告ブロックを微調整するためのカスタムフィルタリングルールについてです：
-
-[ユーザールール](/adguard-for-safari/features/rules.md)
-
-## AdGuardについて
-
-プライバシーに関する文書、GitHubリポジトリ、およびバージョン履歴へのリンクを含むセクションです：
-
-[このアプリについて](/adguard-for-safari/features/about.md)
+  プライバシーに関する文書、GitHubリポジトリ、およびバージョン履歴へのリンクを含むセクションです：

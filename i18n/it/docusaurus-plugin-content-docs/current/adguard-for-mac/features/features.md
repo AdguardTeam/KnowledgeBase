@@ -9,56 +9,38 @@ Questo articolo riguarda AdGuard per Mac, un blocco annunci multifunzionale che 
 
 :::
 
-## Schermo principale
+- [Finestra principale](/adguard-for-mac/features/main.md)
 
-Schermata principale con statistiche sugli annunci e tracciatori bloccati e accesso alle impostazioni principali
+  Main screen with statistics on blocked ads and trackers and access to main settings
 
-[Finestra principale](/adguard-for-mac/features/main.md)
+- [Generale](/adguard-for-mac/features/general.md)
 
-## Generali
+  Impostazioni di base per bloccare gli annunci di ricerca e gli annunci auto-promozionali del sito web, abilitare i filtri specifici per lingua e gestire la _Lista consentita_
 
-Impostazioni di base per bloccare gli annunci di ricerca e gli annunci auto-promozionali del sito web, abilitare i filtri specifici per lingua e gestire la _Lista consentita_
+- [Filtri](/adguard-for-mac/features/filters.md)
 
-[Generale](/adguard-for-mac/features/general.md)
+  Filtri e regole utente per ottimizzare il blocco delle inserzioni
 
-## Filtri
+- [DNS](/adguard-for-mac/features/dns.md)
 
-Filtri e regole utente per ottimizzare il blocco delle inserzioni
+  Server DNS e filtri DNS che consentono di bloccare inserzioni, tracciatori e siti web pericolosi
 
-[Filtri](/adguard-for-mac/features/filters.md)
+- [Modalità Invisibilità](/adguard-for-mac/features/stealth.md)
 
-## DNS
+  Impostazioni per bloccare cookie, tag UTM e le analisi in rete che raccolgono informazioni sugli utenti
 
-Server DNS e filtri DNS che consentono di bloccare inserzioni, tracciatori e siti web pericolosi
+- [Sicurezza](/adguard-for-mac/features/security.md)
 
-[DNS](/adguard-for-mac/features/dns.md)
+  Un'impostazione che blocca l'accesso a siti web dannosi e di phishing e ti protegge dalle minacce in rete
 
-## Modalità Invisibilità
+- [Browser Assistant](/adguard-for-mac/features/browser-assistant.md)
 
-Impostazioni per bloccare cookie, tag UTM e le analisi in rete che raccolgono informazioni sugli utenti
+  An extension that complements the desktop app and allows you to manage filtering from your browser
 
-[Modalità Invisibilità](/adguard-for-mac/features/stealth.md)
+- [Estensioni](/adguard-for-mac/features/extensions.md)
 
-## Sicurezza
+  Una funzione che consente di estendere le funzionalità dei siti web aggiungendo codici e stili personali
 
-Un'impostazione che blocca l'accesso a siti web dannosi e di phishing e ti protegge dalle minacce in rete
+- [Rete](/adguard-for-mac/features/network.md)
 
-[Sicurezza](/adguard-for-mac/features/security.md)
-
-## Browser Assistant
-
-Un'estensione che completa il programma per desktop e consente di gestire il filtraggio dal browser
-
-[Browser Assistant](/adguard-for-mac/features/browser-assistant.md)
-
-## Estensioni
-
-Una funzione che consente di estendere le funzionalità dei siti web aggiungendo codici e stili personali
-
-[Estensioni](/adguard-for-mac/features/extensions.md)
-
-## Rete
-
-Opzioni aggiuntive relative alla rete e impostazioni del proxy
-
-[Rete](/adguard-for-mac/features/network.md)
+  Opzioni aggiuntive relative alla rete e impostazioni del proxy

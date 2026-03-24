@@ -9,32 +9,22 @@ Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multi
 
 :::
 
-## Pantalla de inicio
+- [Pantalla de inicio](/adguard-for-windows/features/home-screen/)
 
-En la pantalla principal encontrarás _Configuración_, _Soporte_, _Licencia_ y _Acerca de_, así como estadísticas sobre anuncios y rastreadores bloqueados
+  On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
 
-[Pantalla de inicio](/adguard-for-windows/features/home-screen/)
+- [Configuración](/adguard-for-windows/features/settings/)
 
-## Configuración
+  Configuración de tema e idioma, personalización de bloqueo de anuncios, Protección DNS, controles parentales, gestión de extensiones y opciones avanzadas para usuarios expertos
 
-Configuración de tema e idioma, personalización de bloqueo de anuncios, Protección DNS, controles parentales, gestión de extensiones y opciones avanzadas para usuarios expertos
+- [Extensiones](/adguard-for-windows/features/extensions/)
 
-[Configuración](/adguard-for-windows/features/settings/)
+  Una función que te permite ampliar la funcionalidad de los sitios web agregando scripts y estilos de usuario
 
-## Extensiones
+- [Red](/adguard-for-windows/features/network/)
 
-Una función que te permite ampliar la funcionalidad de los sitios web agregando scripts y estilos de usuario
+  Opciones adicionales relacionadas con la red y configuración de proxy
 
-[Extensiones](/adguard-for-windows/features/extensions/)
+- [Otras funciones](/adguard-for-windows/features/others/)
 
-## Red
-
-Opciones adicionales relacionadas con la red y configuración de proxy
-
-[Red](/adguard-for-windows/features/network/)
-
-## Otras funciones
-
-Soporte, gestión de licencias, opciones del menú de la bandeja, versión del programa y actualizaciones
-
-[Otras funciones](/adguard-for-windows/features/others/)
+  Support, license management, tray menu options, app version and updates

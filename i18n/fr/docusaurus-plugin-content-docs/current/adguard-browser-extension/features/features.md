@@ -9,26 +9,18 @@ Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement 
 
 :::
 
-## Menu principal
+- [Main menu](/adguard-browser-extension/features/main-menu.md)
 
-La fenêtre contextuelle principale à partir de laquelle vous pouvez accéder aux paramètres, au journal de filtrage et aux statistiques et signaler les problèmes
+  The main popup from which you can access settings, filtering log and statistics, and report problems
 
-[Menu principal](/adguard-browser-extension/features/main-menu.md)
+- [Filters](/adguard-browser-extension/features/filters.md)
 
-## Filtres
+  Les filtres et les règles utilisateur pour personnaliser le blocage d'annonces
 
-Les filtres et les règles utilisateur pour personnaliser le blocage d'annonces
+- [Tracking protection (Stealth Mode)](/adguard-browser-extension/features/stealth-mode.md)
 
-[Filtres](/adguard-browser-extension/features/filters.md)
+  Settings to block cookies, UTM tags, and online analytics that collect user information
 
-## Protection contre le suivi (Mode furtif)
+- [Other features and options](/adguard-browser-extension/features/other-features.md)
 
-Paramètres permettant de bloquer les cookies, les balises UTM et les outils d'analyse en ligne qui collectent des informations sur l'utilisateur
-
-[Protection contre le suivi (Mode furtif)](/adguard-browser-extension/features/stealth-mode.md)
-
-## Autres fonctionnalités et options
-
-Mode général et paramètres supplémentaires, liens vers les documents de confidentialité et le dépôt
-
-[Autres fonctionnalités et options](/adguard-browser-extension/features/other-features.md)
+  General and additional settings, links to privacy documents and GitHub repository

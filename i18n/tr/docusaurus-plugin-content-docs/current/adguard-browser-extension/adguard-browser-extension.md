@@ -9,50 +9,34 @@ Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakk
 
 :::
 
-## Features
+- [Features](/adguard-browser-extension/features)
 
-Main features and settings available in the AdGuard Browser Extension
+  Main features and settings available in AdGuard Browser Extension
 
-[Features](/adguard-browser-extension/features)
+- [Availability](/adguard-browser-extension/availability)
 
-## Kullanılabilirlik
+  Supported browsers and platforms where the extension can be installed
 
-Supported browsers and platforms where the extension can be installed
+- [Installation](/adguard-browser-extension/installation)
 
-[Availability](/adguard-browser-extension/availability)
+  Installation and removal
 
-## Kurulum
+- [Compatibility with the standalone app](/adguard-browser-extension/compatibility)
 
-Installation and removal
+  Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
 
-[Installation](/adguard-browser-extension/installation)
+- [AdGuard Tarayıcı Uzantısı için Chrome Manifest](/adguard-browser-extension/mv3-version/)
 
-## Bağımsız uygulama ile uyumluluk
+  A separate AdGuard Browser Extension compatible with the Manifest V3 API
 
-Compatibility of the AdGuard Browser Extension with the AdGuard desktop apps
+- [Browser-protected pages](/adguard-browser-extension/protected-pages)
 
-[Compatibility with the standalone app](/adguard-browser-extension/compatibility)
+  Restricted domains whose content can’t be modified with ad blocking extensions
 
-## Chrome için AdGuard Tarayıcı Uzantısı MV3
+- [Solving problems](/adguard-browser-extension/solving-problems)
 
-A separate AdGuard Browser Extension compatible with the Manifest V3 API
+  Known issues and possible solutions
 
-[AdGuard Tarayıcı Uzantısı için Chrome Manifest](/adguard-browser-extension/mv3-version/)
+- [Comparison to standalone apps](/adguard-browser-extension/comparison-standalone)
 
-## Tarayıcı korumalı sayfalar
-
-Restricted domains whose content can’t be modified with ad blocking extensions
-
-[Browser-protected pages](/adguard-browser-extension/protected-pages)
-
-## Sorunları çözme
-
-Known issues and possible solutions
-
-[Solving problems](/adguard-browser-extension/solving-problems)
-
-## Bağımsız uygulamalar ile karşılaştırma
-
-The differences in functionality and features between the AdGuard extensions and desktop apps
-
-[Comparison to standalone apps](/adguard-browser-extension/comparison-standalone)
+  The differences in functionality and features between the AdGuard extensions and desktop apps
