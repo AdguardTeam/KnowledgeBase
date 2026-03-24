@@ -17,7 +17,7 @@ sidebar_position: 4
 
 또는 AdGuard 계정에서 기기를 제거할 수 있습니다.
 
-1. [AdGuard 계정](https://adguardaccount.com/)에 로그인합니다.
+1. Log in to your [AdGuard account](https://adguardaccount.com).
 
 1. *AdGuard 광고 차단기* 탭을 엽니다.
 

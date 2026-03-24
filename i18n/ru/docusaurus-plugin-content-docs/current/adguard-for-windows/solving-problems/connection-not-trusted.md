@@ -33,7 +33,7 @@ sidebar_position: 2
 
 1. Запустите AdGuard.
 
-1. Перейдите на страницу [http://local.adguard.org/cert](http://local.adguard.org/cert) и нажмите кнопку *Скачать*. Браузер начнёт загрузку файла **cert.cer**.
+1. Go to [https://local.adguard.org/cert](https://local.adguard.org/cert) and click the *Download* button. Браузер начнёт загрузку файла **cert.cer**.
 
     :::note
 

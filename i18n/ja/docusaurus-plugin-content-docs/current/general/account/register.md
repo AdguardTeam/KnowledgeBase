@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## AdGuard アカウントとは？
 
-[AdGuard アカウント](https://adguardaccount.com/) （マイ・アカウント）は、お客様の AdGuard ライセンスおよびサブスクリプション、使用しているデバイス、購入履歴、言語、その他の設定に関する情報があるユーザーアカウントです。 多くの AdGuard 製品には、AdGuard アカウントを使ってログインすることで製品をアクティベートするオプションがあります（アカウントに有効なライセンスがある場合）。
+[AdGuard account](https://adguardaccount.com) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. 多くの AdGuard 製品には、AdGuard アカウントを使ってログインすることで製品をアクティベートするオプションがあります（アカウントに有効なライセンスがある場合）。
 
 ## AdGuard アカウントを登録する方法
 

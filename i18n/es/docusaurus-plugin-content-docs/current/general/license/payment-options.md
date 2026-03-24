@@ -18,6 +18,6 @@ Para hacer un mayor uso de tus productos AdGuard, puedes actualizar tu licencia 
 - Para ampliar la cantidad de dispositivos, puedes **actualizar tu licencia Personal a Familiar**
 - También puedes **actualizar tu suscripción de 1 año a una licencia de por vida**
 
-Puedes actualizar tu licencia en tu cuenta AdGuard. Para ello, haz clic en *Actualizar a vitalicia* o *Aumentar límite de dispositivos*.
+You can upgrade your license in your [AdGuard account](https://adguardaccount.com). Para ello, haz clic en *Actualizar a vitalicia* o *Aumentar límite de dispositivos*.
 
 ![Actualizar](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

@@ -11,41 +11,41 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 Modul _Síť_ je věnován filtrování sítě a najdete v něm další možnosti související se sítí. Dvě z nich jsou standardně povoleny: _Povolit filtrování provozu_ a _Filtrovat HTTPS_. Jedná se o důležitá dodatečná opatření pro lepší filtrování webového prostoru. Většina webů nyní používá protokol HTTPS a totéž platí i pro reklamu. Z mnoha webů, jako je youtube.com, facebook.com a x.com, není možné odstranit reklamy bez HTTPS filtrování. Pokud tedy nemáte pádný důvod, ponechte funkci _Filtrovat HTTPS_ povolenou.
 
-![Network Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/network/network_settings_2.png)
+![Network Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/network/network_settings.png)
 
 V tomto modulu můžete vybrat _Použít AdGuard jako HTTP proxy_, chcete-li použít AdGuard jako běžný HTTP proxy, který bude filtrovat veškerý procházející provoz. Můžete také povolit funkci _Filtrovat webové stránky s certifikáty EV_. Certifikáty SSL s rozšířeným ověřením (Extended Validation, EV) poskytují silnější bezpečnostní záruku; majitelé těchto webových stránek musí projít důkladným a celosvětově standardizovaným procesem ověřování identity definovaným v pokynech pro EV. To je důvod, proč někteří uživatelé webovým stránkám s takovými certifikáty důvěřují a raději je nefiltrují.
 
 Nakonec je zde část s nastavením proxy. Zde můžete určit, který proxy má AdGuard používat k aktualizaci filtrů, získávání nových verzí atd.
 
-### SockFilter and other network drivers
+### SockFilter a další síťové ovladače
 
-In _Network_, you can also enable traffic filtering and choose which driver to use: SockFilter, WFP, or TDI.
+V sekci _Síť_ můžete také povolit filtrování provozu a zvolit, který ovladač chcete použít: SockFilter, WFP nebo TDI.
 
-**WFP** (Windows Filtering Platform) is a powerful driver, but it may present stability risks, such as [occasional system crashes (BSOD)](https://github.com/AdguardTeam/AdguardForWindows/issues/5792) for some users.
+**WFP** (Windows Filtering Platform) je výkonný ovladač, u některých uživatelů však může představovat riziko pro stabilitu, například [občasné selhání systému (BSOD)](https://github.com/AdguardTeam/AdguardForWindows/issues/5792).
 
-The **TDI** driver is also available, but it is outdated and may cause [filtering issues in some versions of Google Chrome](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). [A temporary workaround exists](https://adguard.com/kb/adguard-for-windows/solving-problems/tdi-driver-and-Chrome-142/), but it’s not a reliable long-term solution.
+K dispozici je také ovladač **TDI**, ten je však zastaralý a v některých verzích prohlížeče Google Chrome může způsobovat [problémy s filtrováním](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). [Existuje dočasné provizorní řešení](https://adguard.com/kb/adguard-for-windows/solving-problems/tdi-driver-and-Chrome-142/), ale nejde o spolehlivé dlouhodobé řešení.
 
-**SockFilter** is an _experimental_, lightweight kernel-mode network driver that works at the socket level (TCP/UDP). Instead of inspecting or modifying packets as they travel through the full Windows networking stack, a sock filter intercepts socket calls (e.g., connect, send, receive, bind) at a higher, more stable abstraction level. This makes it ideal for applications that need to monitor or control network activity without deep packet processing.
+**SockFilter** je _experimentální_, odlehčený síťový ovladač v režimu jádra, který pracuje na úrovni soketů (TCP/UDP). Místo toho, aby filtrování soketů kontrolovalo nebo upravovalo pakety při jejich průchodu celým síťovým zásobníkem systému Windows, zachycuje volání soketů (např. connect, send, receive, bind) na vyšší a stabilnější abstrakční úrovni. Díky tomu je ideální pro aplikace, které vyžadují monitorování nebo řízení síťové aktivity bez hloubkové analýzy paketů.
 
-Currently, SockFilter Right is still unstable, and you may encounter bugs. When fully tested and implemented, SockFilter has the potential to bring several advantages over other drivers:
+V současné době je SockFilter Right stále nestabilní a mohou se vyskytnout chyby. Po dokončení testování a implementace má SockFilter potenciál přinést oproti jiným ovladačům několik výhod:
 
-- **It operates at a higher, socket-level layer**: SockFilter works with socket operations rather than raw packets, making it less complex and more stable than WFP's low-level packet filtering.
-- **No interference with other network drivers**: Because it sits above VPN, firewall, and antivirus WFP filters, it avoids filter-ordering problems and compatibility conflicts common in the WFP stack.
-- **Greatly reduced risk of NETIO-related BSODs**: SockFilter doesn't run inside the NETIO packet pipeline, so it avoids the typical crash scenarios caused by WFP callouts mishandling buffers, classification results, or packet memory.
+- **Pracuje na vyšší úrovni, na úrovni soketů**: SockFilter pracuje se soketovými operacemi namísto surových paketů, díky čemuž je méně složitý a stabilnější než nízkoúrovňové filtrování paketů v rámci WFP.
+- **Žádné rušení ostatních síťových ovladačů**: Jelikož je umístěn nad filtry VPN, brány firewall a antivirového softwaru WFP, nedochází k problémům s pořadím filtrů ani ke konfliktům kompatibility, které jsou v zásobníku WFP běžné.
+- **Výrazně snížené riziko BSOD souvisejících s NETIO**: SockFilter neběží uvnitř paketu NETIO, čímž se vyhýbá typickým situacím vedoucím k selhání, které jsou způsobeny nesprávným zpracováním vyrovnávacích pamětí, výsledků klasifikace nebo paměti paketů při voláních WFP.
 
-When it comes to disadvantages, SockFilter driver sees only socket-level operations and does not capture traffic generated by other kernel drivers or components that bypass the standard Winsock API. From a low-level networking perspective, this can be viewed as a limitation, since the driver cannot access raw packets or inspect non-socket traffic. However, for an ad-blocking application, this behavior is not just acceptable but optimal. All relevant traffic from browsers and user-mode applications goes through standard sockets, and that's exactly what we need to control. At the same time, ignoring low-level driver traffic removes unnecessary complexity, avoids compatibility issues, and keeps the system stable.
+Co se týče nevýhod, ovladač SockFilter vidí pouze operace na úrovni soketů a nezachytává provoz generovaný jinými ovladači jádra nebo komponentami, které obcházejí standardní rozhraní Winsock API. Z pohledu síťových mechanismů na nízké úrovni lze toto považovat za omezení, protože ovladač nemá přístup k surovým paketům ani nemůže kontrolovat provoz mimo sokety. Pro aplikaci blokující reklamy je však toto chování nejen přijatelné, ale přímo optimální. Veškerý relevantní provoz z prohlížečů a aplikací v uživatelském režimu prochází standardními sokety, a právě to potřebujeme mít pod kontrolou. Zároveň ignorování provozu na nízké úrovni ovladačů odstraňuje zbytečnou složitost, předchází problémům s kompatibilitou a zajišťuje stabilitu systému.
 
 ### AdGuard VPN
 
-The last section is dedicated to AdGuard VPN — an ideal tool that provides security and anonymity each time you browse the Internet. You can download it by clicking the _Download_ button or go to the AdGuard VPN website by clicking the _Homepage_ button.
+Poslední část je věnována AdGuard VPN — ideálnímu nástroji, který poskytuje bezpečnost a anonymitu při každém procházení internetu. Můžete si ji stáhnout kliknutím na tlačítko _Stáhnout_ nebo přejít na webové stránky AdGuard VPN kliknutím na tlačítko _Domovská stránka_.
 
-How does AdGuard VPN work? Without going into technical details, we can say that VPN creates a secure encrypted tunnel between the user's computer or mobile device and a remote VPN server. In this way, data privacy is preserved, as well as the anonymity of the user, because a third-party observer sees the IP address of the VPN server and not the actual user's IP.
+Jak funguje AdGuard VPN? Aniž bychom zacházeli do technických podrobností, můžeme říci, že VPN vytváří bezpečný šifrovaný tunel mezi počítačem nebo mobilním zařízením uživatele a vzdáleným serverem VPN. Tímto způsobem je zachována důvěrnost dat i anonymita uživatele, protože pozorovatel třetí strany vidí IP adresu serveru VPN, a nikoli skutečnou IP adresu uživatele.
 
-**What AdGuard VPN does:**
+**Co dělá AdGuard VPN:**
 
-- hides your real whereabouts and helps you stay anonymous
-- changes your IP address to protect your data from tracking
-- encrypts your traffic to make it unreadable to third parties
-- lets you configure where to use VPN and where not to (exclusions feature)
+- skrývá vaše skutečné místo pobytu a pomáhá vám zůstat v anonymitě
+- změní vaši IP adresu a ochrání vaše data před sledováním
+- šifruje váš provoz, aby byl nečitelný pro třetí strany
+- umožňuje nastavit, kde se má VPN používat a kde ne (funkce výjimek)
 
-To get more information about AdGuard VPN, dive into the [AdGuard VPN Knowledge Base](https://adguard-vpn.com/kb/).
+Chcete-li získat více informací o AdGuard VPN, ponořte se do [Databáze znalostí AdGuard VPN](https://adguard-vpn.com/kb/).

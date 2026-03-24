@@ -33,7 +33,7 @@ Dacă acest lucru nu ajută, urmează instrucțiunile pentru a adăuga manual ce
 
 1. Porniți AdGuard.
 
-1. Mergi la [http://local.adguard.org/cert](http://local.adguard.org/cert) și fă clic pe butonul *Descarcă*. Browserul ar trebui să înceapă descărcarea fișierului **cert.cer**.
+1. Go to [https://local.adguard.org/cert](https://local.adguard.org/cert) and click the *Download* button. Browserul ar trebui să înceapă descărcarea fișierului **cert.cer**.
 
     :::note
 

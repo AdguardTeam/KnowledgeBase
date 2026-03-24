@@ -9,56 +9,38 @@ sidebar_position: 1
 
 :::
 
-## Защита Safari
+- [Защита Safari](/adguard-for-ios/features/safari-protection.md)
 
-Доступные функции и настройки во вкладке _Защита Safari_: _Фильтры_, _Пользовательские правила_ и _Белый список_
+  Available features and settings in the _Safari protection_ tab: _Filters_, _User rules_, and _Allowlist_
 
-[Защита Safari](/adguard-for-ios/features/safari-protection.md)
+- [DNS-защита](/adguard-for-ios/features/dns-protection/)
 
-## DNS-защита
+  DNS-серверы и DNS-фильтры, позволяющие блокировать рекламу, трекеры и опасные сайты
 
-DNS-серверы и DNS-фильтры, позволяющие блокировать рекламу, трекеры и опасные сайты
+- [Расширенная защита](/adguard-for-ios/features/advanced-protection.md)
 
-[DNS-защита](/adguard-for-ios/features/dns-protection/)
+  Функция, которая позволяет AdGuard применять расширенные правила фильтрации и скриптлеты для блокировки сложной рекламы
 
-## Расширенная защита
+- [Активность и статистика](/adguard-for-ios/features/activity.md)
 
-Функция, которая позволяет AdGuard применять расширенные правила фильтрации и скриптлеты для блокировки сложной рекламы
+  Вкладка статистики с подробными отчётами об активности, которые позволяют отслеживать заблокированную рекламу, трекеры и DNS-запросы
 
-[Расширенная защита](/adguard-for-ios/features/advanced-protection.md)
+- [Помощник](/adguard-for-ios/features/assistant.md)
 
-## Активность и статистика
+  Инструмент, который позволяет быстро управлять фильтрацией в Safari прямо из браузера, не открывая AdGuard
 
-Вкладка статистики с подробными отчётами об активности, которые позволяют отслеживать заблокированную рекламу, трекеры и DNS-запросы
+- [Низкоуровневые настройки](/adguard-for-ios/features/low-level-settings.md)
 
-[Активность и статистика](/adguard-for-ios/features/activity.md)
+  Настройки, которые позволяют опытным пользователям настраивать производительность приложения и DNS-защиту
 
-## Помощник
+- [Другие функции](/adguard-for-ios/features/other-features.md)
 
-Инструмент, который позволяет быстро управлять фильтрацией в Safari прямо из браузера, не открывая AdGuard
+  General settings: theme, settings and statistics reset, auto-update, inverting the allowlist, and advanced mode.
 
-[Помощник](/adguard-for-ios/features/assistant.md)
+- [Совместимость с AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 
-## Низкоуровневые настройки
+  Режим интеграции, который позволяет Блокировщику рекламы AdGuard и AdGuard VPN работать одновременно, несмотря на системные ограничения
 
-Настройки, которые позволяют опытным пользователям настраивать производительность приложения и DNS-защиту
+- [Разница между бесплатной и платной версией](/adguard-for-ios/features/free-vs-full.md)
 
-[Низкоуровневые настройки](/adguard-for-ios/features/low-level-settings.md)
-
-## Другие функции
-
-Основные настройки: тема, настройки и сброс статистики, автоматическое обновление
-
-[Другие функции](/adguard-for-ios/features/other-features.md)
-
-## Совместимость с AdGuard VPN
-
-Режим интеграции, который позволяет Блокировщику рекламы AdGuard и AdGuard VPN работать одновременно, несмотря на системные ограничения
-
-[Совместимость с AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
-
-## Разница между бесплатной и платной версией
-
-Сравнение возможностей бесплатной и платной версий
-
-[Разница между бесплатной и платной версией](/adguard-for-ios/features/free-vs-full.md)
+  Сравнение возможностей бесплатной и платной версий

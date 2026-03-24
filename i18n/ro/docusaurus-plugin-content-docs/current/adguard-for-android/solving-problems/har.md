@@ -17,7 +17,7 @@ Fișierele HAR sunt procesate conform [Politicii de confidențialitate AdGuard](
 
 ## Ce sunt fișierele HAR?
 
-Formatul HAR (HTTP ARchive) este un fișier arhivă format JSON pentru înregistrarea interacțiunii unui browser web cu un site. Specificațiile formatului HAR definesc datele arhivate pentru tranzacțiile HTTP pe care un browser le folosește pentru a exporta informații detaliate despre paginile web pe care le încarcă. O descriere mai detaliată a formatului fișierelor HAR și a specificațiilor sale poate fi găsită pe site-ul [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
+Formatul HAR (HTTP ARchive) este un fișier arhivă format JSON pentru înregistrarea interacțiunii unui browser web cu un site. Specificațiile formatului HAR definesc datele arhivate pentru tranzacțiile HTTP pe care un browser le folosește pentru a exporta informații detaliate despre paginile web pe care le încarcă. More detailed description of HAR file format and its specification you can find at [softwareishard.com](https://www.softwareishard.com/blog/har-12-spec/) website.
 
 ## Cum să generați fișiere HAR
 

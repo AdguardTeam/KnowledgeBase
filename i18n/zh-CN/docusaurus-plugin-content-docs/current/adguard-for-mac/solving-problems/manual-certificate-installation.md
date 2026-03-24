@@ -21,6 +21,6 @@ Mac 版 AdGuard 需要将 Root 证书安装到证书存储区，才能进行 [HT
 
   4. 转到「*授权*」选项卡并单击「*导入..*」按钮。
 
-  5. 选择 `/Library/Application Support/AdGuard Software/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` 文件，或使用基于 Chromium 的浏览器（如 Google Chrome 或新 Edge）并在 AdGuard 中运行 HTTPS 过滤，从 http://local.adguard.org/cert 下载该文件。
+  5. Select file `/Library/Application Support/AdGuard Software/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` or just download it from https://local.adguard.org/cert using a Chromium-based browser (e.g Google Chrome or new Edge) and with a HTTPS-filtering running in AdGuard
 
 不同的基于 Gecko 的浏览器可能需要不同的操作，但 `AdGuard Personal CA.cer ` 文件的基本流程和路径是相同的。

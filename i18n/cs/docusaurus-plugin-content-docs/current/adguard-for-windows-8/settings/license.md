@@ -11,10 +11,10 @@ Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor rekla
 
 ![License](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/licenses.png)
 
-The _License_ tab provides details about your current license. Zde můžete:
+Karta _Licence_ poskytuje podrobnosti o vaší aktuální licenci. Zde můžete:
 
-- view the license type, the number of devices available for simultaneous connection to AdGuard, and the activation code;
-- bind your license to an AdGuard account;
-- activate or reset your license;
-- refresh the license status
-- get a trial license to explore paid functions for free.
+- zobrazit typ licence, počet zařízení dostupných pro souběžné připojení k AdGuardu a aktivační kód;
+- připojit svou licenci na účet AdGuard;
+- aktivovat nebo resetovat licenci;
+- obnovit stav licence
+- získat zkušební licenci, abyste mohli prozkoumat placené funkce zdarma.

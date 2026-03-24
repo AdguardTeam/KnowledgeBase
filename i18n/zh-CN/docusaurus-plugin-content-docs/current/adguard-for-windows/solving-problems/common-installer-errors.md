@@ -27,7 +27,7 @@ sidebar_position: 6
 
 - 从尝试安装 AdGuard 的驱动器中卸载一些程序或删除不需要的文件。
 
-- 下载、安装并运行 [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/)，这是一款由 Malwarebytes 提供的免费软件。 除其他功能外，该软件还能清除系统中因卸载程序错误而产生的各种额外“遗留”文件。 它有助于清理出磁盘空间。
+- Download, install, and run [AdwCleaner](https://www.bleepingcomputer.com/download/adwcleaner/), a free piece of software by Malwarebytes. 除其他功能外，该软件还能清除系统中因卸载程序错误而产生的各种额外“遗留”文件。 它有助于清理出磁盘空间。
 
 - 重新启动计算机。 有时候临时文件会占用大量磁盘空间，重启电脑是清除临时文件最可靠的方法。
 

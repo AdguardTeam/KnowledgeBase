@@ -23,7 +23,7 @@ HTTP 트래픽은 어떤 경우에도 필터링되지만, AdGard가 HTTPS 트래
 
 1. AdGuard 보호 기능이 활성화되어 있는지 확인하세요. Windows 컴퓨터의 경우, 설정의 **네트워크** 탭에서 **AdGuard를 HTTP 프록시로 사용** 확인란을 선택합니다. Mac의 경우, **설정** → **환경설정** → **네트워크**로 이동하여 **HTTP 프록시**를 활성화합니다.
 
-1. AdGuard가 설치된 동일한 컴퓨터에서 다음 링크를 따르세요: [http://local.adguard.org/cert](http://local.adguard.org/cert)
+1. On the same computer with AdGuard, follow this link: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. **다운로드** 버튼을 클릭합니다. 다운로드가 시작되지 않으면 다른 브라우저(예: Firefox)를 사용해 보세요.
 
@@ -65,7 +65,7 @@ HTTP 트래픽은 어떤 경우에도 필터링되지만, AdGard가 HTTPS 트래
 
 1. AdGuard 보호 기능이 활성화되어 있는지 확인하세요. Windows 컴퓨터의 경우, 설정의 **네트워크** 탭에서 **AdGuard를 HTTP 프록시로 사용** 확인란을 선택합니다. Mac의 경우, **설정** → **환경설정** → **네트워크**로 이동하여 **HTTP 프록시**를 활성화합니다.
 
-1. 웹 브라우저를 사용하여 이 링크를 클릭하세요: [http://local.adguard.org/cert](http://local.adguard.org/cert)
+1. Follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. **다운로드** 버튼을 클릭합니다. 다운로드가 시작되지 않으면 다른 브라우저(예: Firefox)를 사용해 보세요.
 
@@ -97,7 +97,7 @@ HTTP 트래픽은 어떤 경우에도 필터링되지만, AdGard가 HTTPS 트래
 
 1. AdGuard 보호 기능이 활성화되어 있는지 확인하세요. Windows 컴퓨터의 경우, 설정의 **네트워크** 탭에서 **AdGuard를 HTTP 프록시로 사용** 확인란을 선택합니다. Mac의 경우, **설정** → **환경설정** → **네트워크**로 이동하여 **HTTP 프록시**를 활성화합니다.
 
-1. AdGuard가 설치된 컴퓨터에서 웹 브라우저를 사용하여 다음 링크를 따르세요: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. **다운로드** 버튼을 클릭합니다. 다운로드가 시작되지 않으면 다른 브라우저(예: Firefox)를 사용해 보세요.
 
@@ -117,7 +117,7 @@ HTTP 트래픽은 어떤 경우에도 필터링되지만, AdGard가 HTTPS 트래
 
 1. AdGuard 보호 기능이 활성화되어 있는지 확인하세요. Windows 컴퓨터의 경우, 설정의 **네트워크** 탭에서 **AdGuard를 HTTP 프록시로 사용** 확인란을 선택합니다. Mac의 경우, **설정** → **환경설정** → **네트워크**로 이동하여 **HTTP 프록시**를 활성화합니다.
 
-1. AdGuard가 설치된 컴퓨터에서 웹 브라우저를 사용하여 다음 링크를 따르세요: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. **다운로드** 버튼을 클릭합니다. 다운로드가 시작되지 않으면 다른 브라우저(예: Firefox)를 사용해 보세요.
 

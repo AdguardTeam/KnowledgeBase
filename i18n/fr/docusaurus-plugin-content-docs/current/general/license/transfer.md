@@ -17,7 +17,7 @@ Sur l'appareil que vous souhaitez dissocier, ouvrez l'app AdGuard et cliquez sur
 
 Vous pouvez également supprimer l'appareil dans votre compte AdGuard :
 
-1. Accédez à votre [compte AdGuard](https://adguardaccount.com/).
+1. Log in to your [AdGuard account](https://adguardaccount.com).
 
 1. Ouvrez l'onglet *Bloqueur AdGuard* .
 

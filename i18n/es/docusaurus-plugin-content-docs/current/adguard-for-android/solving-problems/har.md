@@ -17,7 +17,7 @@ Los archivos HAR se procesan de acuerdo con la [Política de privacidad de AdGua
 
 ## ¿Qué son los archivos HAR?
 
-El formato HAR (HTTP ARchive) es un archivo de almacenamiento con formato JSON para registrar la interacción de un navegador web con un sitio. Las especificaciones del formato HAR definen datos de archivo para las transacciones HTTP que un navegador utiliza para exportar información detallada sobre las páginas web que carga. Puedes encontrar una descripción más detallada del formato de archivo HAR y su especificación en el sitio web [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
+El formato HAR (HTTP ARchive) es un archivo de almacenamiento con formato JSON para registrar la interacción de un navegador web con un sitio. Las especificaciones del formato HAR definen datos de archivo para las transacciones HTTP que un navegador utiliza para exportar información detallada sobre las páginas web que carga. More detailed description of HAR file format and its specification you can find at [softwareishard.com](https://www.softwareishard.com/blog/har-12-spec/) website.
 
 ## Cómo generar archivos HAR
 

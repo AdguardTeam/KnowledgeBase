@@ -3,32 +3,22 @@ title: Функции
 sidebar_position: 1
 ---
 
-## Основные
+- [Общие](adguard-for-safari/features/general.md)
 
-Основные функции, включая уведомления, интервалы обновления и уровень логирования
+  Basic features, including notifications, update intervals, and logging level
 
-[Общие](adguard-for-safari/features/general.md)
+- [Фильтры](/adguard-for-safari/features/filters.md)
 
-## Фильтры
+  Разные фильтры, которые позволяют настраивать блокировку рекламы
 
-Разные фильтры, которые позволяют настраивать блокировку рекламы
+- [Блокировщики контента](/adguard-for-safari/features/content-blockers/content-blockers.md)
 
-[Фильтры](/adguard-for-safari/features/filters.md)
+  Шесть тематических блокировщиков контента, соответствующих требованиям Apple
 
-## Блокировщики контента
+- [Пользовательские правила](/adguard-for-safari/features/rules.md)
 
-Шесть тематических блокировщиков контента, соответствующих требованиям Apple
+  Пользовательские правила фильтрации для настройки блокировки рекламы
 
-[Блокировщики контента](/adguard-for-safari/features/content-blockers/content-blockers.md)
+- [О программе](/adguard-for-safari/features/about.md)
 
-## Пользовательские правила
-
-Пользовательские правила фильтрации для настройки блокировки рекламы
-
-[Пользовательские правила](/adguard-for-safari/features/rules.md)
-
-## О компании
-
-Раздел со ссылками на юридические документы, репозиторий GitHub и историю версий
-
-[О программе](/adguard-for-safari/features/about.md)
+  Раздел со ссылками на юридические документы, репозиторий GitHub и историю версий

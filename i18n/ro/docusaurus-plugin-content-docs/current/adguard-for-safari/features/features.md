@@ -3,32 +3,22 @@ title: Features
 sidebar_position: 1
 ---
 
-## General
+- [Modul general](adguard-for-safari/features/general.md)
 
-Basic features, including notifications, update intervals, and logging level
+  Basic features, including notifications, update intervals, and logging level
 
-[Modul general](adguard-for-safari/features/general.md)
+- [Filtre](/adguard-for-safari/features/filters.md)
 
-## Filtre
+  Different filters that allow you to customize ad blocking
 
-Different filters that allow you to customize ad blocking
+- [Blocante de conţinut](/adguard-for-safari/features/content-blockers/content-blockers.md)
 
-[Filtre](/adguard-for-safari/features/filters.md)
+  Six thematic content blockers that conform to Apple’s restrictions
 
-## Content Blockers
+- [Reguli utilizator](/adguard-for-safari/features/rules.md)
 
-Six thematic content blockers that conform to Apple’s restrictions
+  Custom filtering rules to fine-tune ad blocking
 
-[Blocante de conţinut](/adguard-for-safari/features/content-blockers/content-blockers.md)
+- [Despre](/adguard-for-safari/features/about.md)
 
-## Reguli utilizator
-
-Custom filtering rules to fine-tune ad blocking
-
-[Reguli utilizator](/adguard-for-safari/features/rules.md)
-
-## About
-
-A section with links to privacy documents, GitHub repository, and version history
-
-[Despre](/adguard-for-safari/features/about.md)
+  A section with links to privacy documents, GitHub repository, and version history

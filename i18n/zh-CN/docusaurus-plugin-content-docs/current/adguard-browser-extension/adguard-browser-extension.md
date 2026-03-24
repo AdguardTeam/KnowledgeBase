@@ -9,50 +9,34 @@ sidebar_position: 1
 
 :::
 
-## 功能
+- [功能](/adguard-browser-extension/features)
 
-AdGuard 浏览器扩展程序中的主要功能和设置
+  Main features and settings available in AdGuard Browser Extension
 
-[功能](/adguard-browser-extension/features)
+- [可用性](/adguard-browser-extension/availability)
 
-## 可用性
+  可安装扩展的浏览器和操作系统
 
-可安装扩展的浏览器和操作系统
+- [安装](/adguard-browser-extension/installation)
 
-[可用性](/adguard-browser-extension/availability)
+  安装和卸载
 
-## 安装
+- [与独立应用程序的兼容性](/adguard-browser-extension/compatibility)
 
-安装和卸载
+  Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
 
-[安装](/adguard-browser-extension/installation)
+- [用于 Chrome Manifest 的 AdGuard 浏览器扩展](/adguard-browser-extension/mv3-version/)
 
-## 与独立应用程序兼容
+  与 Manifest V3 API 兼容的独立 AdGuard 浏览器扩展程序
 
-AdGuard 浏览器扩展与 AdGuard 桌面应用程序的兼容性
+- [浏览器保护的网页](/adguard-browser-extension/protected-pages)
 
-[与独立应用程序的兼容性](/adguard-browser-extension/compatibility)
+  使用广告拦截扩展无法修改其内容的受限域名
 
-## Chrome 版 AdGuard 浏览器扩展 MV3
+- [解决问题](/adguard-browser-extension/solving-problems)
 
-与 Manifest V3 API 兼容的独立 AdGuard 浏览器扩展程序
+  已知问题和可能的解决方案
 
-[用于 Chrome Manifest 的 AdGuard 浏览器扩展](/adguard-browser-extension/mv3-version/)
+- [与独立应用程序的比较](/adguard-browser-extension/comparison-standalone)
 
-## 受浏览器保护的网页
-
-使用广告拦截扩展无法修改其内容的受限域名
-
-[浏览器保护的网页](/adguard-browser-extension/protected-pages)
-
-## 解决问题
-
-已知问题和可能的解决方案
-
-[解决问题](/adguard-browser-extension/solving-problems)
-
-## 与独立应用程序的比较
-
-AdGuard 扩展程序和桌面应用程序之间的功能和特性差异
-
-[与独立应用程序的比较](/adguard-browser-extension/comparison-standalone)
+  AdGuard 扩展程序和桌面应用程序之间的功能和特性差异

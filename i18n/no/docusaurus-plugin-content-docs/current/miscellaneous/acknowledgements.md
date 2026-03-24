@@ -18,9 +18,9 @@ This is the list of libraries and other resources that really helped us with AdG
 
 ## AdGuard for Mac {#mac}
 
-- Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
+- Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component: [https://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](https://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
 - Ilija Tovilo for ITProgressIndicator component: [github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
-- Sparkle Project for Sparkle.framework component: [http://sparkle-project.org](http://sparkle-project.org)
+- Sparkle Project for Sparkle.framework component: [https://sparkle-project.org](https://sparkle-project.org)
 - Robbie Hanson for GCDAsyncSocket component: [github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
 - Tony Million for Reachability component: [github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
 - August «Gus» Mueller for Fmdb component: [github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
@@ -31,7 +31,7 @@ This is the list of libraries and other resources that really helped us with AdG
 ## AdGuard for Android {#android}
 
 - Logback-android by Tony19: [tony19.github.io/logback-android](https://tony19.github.io/logback-android)
-- Otto by Square: [http://square.github.io/otto](http://square.github.io/otto)
+- Otto by Square: [https://square.github.io/otto](https://square.github.io/otto)
 - RootTools Library by Stericson: [github.com/Stericson/RootTools](https://github.com/Stericson/RootTools)
 - MaterialDateRangePicker by Supratim Chakraborty: [github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
 - HelloCharts by Leszek Wach: [github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)
