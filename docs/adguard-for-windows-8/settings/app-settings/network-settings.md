@@ -49,7 +49,7 @@ SockFilter was first introduced in v8.0 RC. It is an *experimental*, lightweight
 
 When fully tested and implemented, SockFilter has the potential to bring several advantages over other drivers:
 
-- **It operates at a higher, socket-level layer**: SockFilter works with socket operations rather than raw packets, making it less complex and more stable than WFP's low-level packet filtering.
+- **It operates at a higher, socket-level layer**: SockFilter works with socket operations rather than raw packets, making it less complex and more stable than WFP’s low-level packet filtering.
 - **No interference with other network drivers**: Because it sits above VPN, firewall, and antivirus WFP filters, it avoids filter-ordering problems and compatibility conflicts common in the WFP stack.
 - **Greatly reduced risk of NETIO-related BSODs**: SockFilter doesn't run inside the NETIO packet pipeline, so it avoids the typical crash scenarios caused by WFP callouts mishandling buffers, classification results, or packet memory.
 
