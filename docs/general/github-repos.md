@@ -21,7 +21,7 @@ Very simply put, you can think of GitHub as sort of Google Docs for code, where 
 
 GitHub is widely used for open-source projects, letting anyone view the code, suggest improvements, and contribute.
 
-A repository (often called “repo” for short) is the most basic element of GitHub. It's a place where you can store your code, your files, and each file's revision history. Repositories can have multiple collaborators and can be either public or private.
+A repository (often called “repo” for short) is the most basic element of GitHub. It’s a place where you can store your code, your files, and each file’s revision history. Repositories can have multiple collaborators and can be either public or private.
 
 ## What can you do in AdGuard’s repositories
 
