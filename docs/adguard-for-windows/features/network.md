@@ -39,7 +39,7 @@ When it comes to disadvantages, SockFilter driver sees only socket-level operati
 
 #### WFP
 
-**WFP** (Windows Filtering Platform) is a Microsoft networking framework built into Windows that allows software to filter and monitor network packets at different layers of the system networking stack. AdGuard uses WFP to safely hook into the network flow of applications and apply filtering rules before the traffic reaches the browser or the internet. [More information](https://learn.microsoft.com/en-us/windows/win32/fwp/windows-filtering-platform-architecture-overview).
+**WFP** (Windows Filtering Platform) is a Microsoft networking framework built into Windows that allows software to filter and monitor network packets at different layers of the system networking stack. AdGuard uses WFP to safely hook into the network flow of applications and apply filtering rules before the traffic reaches the browser or the Internet. [More information](https://learn.microsoft.com/en-us/windows/win32/fwp/windows-filtering-platform-architecture-overview).
 
 While it is a powerful driver, it may present stability risks, such as [occasional system crashes (BSOD)](https://github.com/AdguardTeam/AdguardForWindows/issues/5792) and lower Internet speed for some users.
 
