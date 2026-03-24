@@ -31,7 +31,7 @@ In *Network*, you can also enable traffic filtering and choose which driver to u
 
 SockFilter was first implemented in version 7.22.4, and it is still considered unstable — you may encounter bugs. Once fully tested and implemented, SockFilter has the potential to offer several advantages over other drivers:
 
-- **It operates at a higher, socket-level layer**: SockFilter works with socket operations rather than raw packets, making it less complex and more stable than WFP's low-level packet filtering.
+- **It operates at a higher, socket-level layer**: SockFilter works with socket operations rather than raw packets, making it less complex and more stable than WFP’s low-level packet filtering.
 - **No interference with other network drivers**: Because it sits above VPN, firewall, and antivirus WFP filters, it avoids filter-ordering problems and compatibility conflicts common in the WFP stack.
 - **Greatly reduced risk of NETIO-related BSODs**: SockFilter doesn’t run inside the NETIO packet pipeline, so it avoids the typical crash scenarios caused by WFP callouts mishandling buffers, classification results, or packet memory.
 
