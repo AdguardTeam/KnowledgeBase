@@ -9,56 +9,38 @@ sidebar_position: 1
 
 :::
 
-## メインウィンドウ
+- [メインウィンドウ](/adguard-for-mac/features/main.md)
 
-ブロックされた広告とトラッカーの統計と主要設定へのアクセスを備えたメイン画面についてです：
+  Main screen with statistics on blocked ads and trackers and access to main settings
 
-[メインウィンドウ](/adguard-for-mac/features/main.md)
+- [一般設定](/adguard-for-mac/features/general.md)
 
-## 一般
+  言語特化フィルタ、ホワイトリスト、検索広告とウェブサイトの自己宣伝広告のブロックなどという基本設定です：
 
-言語特化フィルタ、ホワイトリスト、検索広告とウェブサイトの自己宣伝広告のブロックなどという基本設定です：
+- [フィルタ](/adguard-for-mac/features/filters.md)
 
-[一般設定](/adguard-for-mac/features/general.md)
+  フィルターとユーザールールで広告ブロックの微調整が可能です：
 
-## フィルタ
+- [DNS](/adguard-for-mac/features/dns.md)
 
-フィルターとユーザールールで広告ブロックの微調整が可能です：
+  DNSサーバーやDNSフィルタを設定することで、広告、トラッカー、および悪意のあるコンテンツをブロックする方法についての説明です：
 
-[フィルタ](/adguard-for-mac/features/filters.md)
+- [ステルスモード](/adguard-for-mac/features/stealth.md)
 
-## DNS
+  Settings to block cookies, UTM tags, and online analytics that collect user information
 
-DNSサーバーやDNSフィルタを設定することで、広告、トラッカー、および悪意のあるコンテンツをブロックする方法についての説明です：
+- [セキュリティ](/adguard-for-mac/features/security.md)
 
-[DNS](/adguard-for-mac/features/dns.md)
+  悪意のあるウェブサイトやフィッシングサイトへのアクセスをブロックし、オンラインの脅威から保護してくれる設定です：
 
-## ステルスモード
+- [ブラウザアシスタント](/adguard-for-mac/features/browser-assistant.md)
 
-ユーザー情報を収集するCookie、UTMタグ、オンライン分析をブロックする機能です。
+  An extension that complements the desktop app and allows you to manage filtering from your browser
 
-[ステルスモード](/adguard-for-mac/features/stealth.md)
+- [拡張機能](/adguard-for-mac/features/extensions.md)
 
-## セキュリティ
+  ユーザースクリプトやユーザースタイルを追加することで、ウェブサイトの機能を拡張できる機能です：
 
-悪意のあるウェブサイトやフィッシングサイトへのアクセスをブロックし、オンラインの脅威から保護してくれる設定です：
+- [ネットワーク](/adguard-for-mac/features/network.md)
 
-[セキュリティ](/adguard-for-mac/features/security.md)
-
-## ブラウザアシスタント
-
-直接ブラウザからのフィルタリング管理を可能にすることで、AdGuardデスクトップアプリを補完してくれる拡張機能です。
-
-[ブラウザアシスタント](/adguard-for-mac/features/browser-assistant.md)
-
-## 拡張機能
-
-ユーザースクリプトやユーザースタイルを追加することで、ウェブサイトの機能を拡張できる機能です：
-
-[拡張機能](/adguard-for-mac/features/extensions.md)
-
-## ネットワーク
-
-追加のネットワーク関連オプションとプロキシ設定についての説明です：
-
-[ネットワーク](/adguard-for-mac/features/network.md)
+  追加のネットワーク関連オプションとプロキシ設定についての説明です：

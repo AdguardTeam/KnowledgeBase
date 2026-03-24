@@ -9,20 +9,14 @@ Acest articol se referă la AdGuard pentru macOS, un blocant de reclame multifun
 
 :::
 
-## Features
+- [Caracteristici](/adguard-for-mac/features/features.md)
 
-Main features and settings available in AdGuard for Mac
+  Main features and settings available in AdGuard for Mac
 
-[Caracteristici](/adguard-for-mac/features/features.md)
+- [Instalare](/adguard-for-mac/installation.md)
 
-## Instalare
+  Installation, removal, and system requirements for AdGuard for Mac
 
-Installation, removal, and system requirements for AdGuard for Mac
+- [Rezolvarea problemelor](/adguard-for-mac/solving-problems/solving-problems.md)
 
-[Instalare](/adguard-for-mac/installation.md)
-
-### Solving problems
-
-Known issues and possible solutions
-
-[Rezolvarea problemelor](/adguard-for-mac/solving-problems/solving-problems.md)
+  Known issues and possible solutions

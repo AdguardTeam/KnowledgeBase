@@ -9,56 +9,38 @@ sidebar_position: 1
 
 :::
 
-## Защита
+- [Защита](/adguard-for-android/features/protection/protection.md)
 
-Настройки на вкладке _Защита_: _Блокировка рекламы_, _Защита от трекинга_, _Блокировка раздражителей_, _DNS-защита_, _Фаервол_ и _Защита от фишинга_
+  Available settings in the _Protection_ tab: _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Firewall_, and _Browsing security_
 
-[Защита](/adguard-for-android/features/protection/protection.md)
+- [Управление приложениями](/adguard-for-android/features/app-management.md)
 
-## Управление приложениями
+  Функции, которые позволяют настроить фильтрацию и маршрутизацию трафика для каждого приложения
 
-Функции, которые позволяют настроить фильтрацию и маршрутизацию трафика для каждого приложения
+- [Статистика](/adguard-for-android/features/statistics.md)
 
-[Управление приложениями](/adguard-for-android/features/app-management.md)
+  Подробная статистика о заблокированных рекламах, трекерах и использовании данных
 
-## Статистика
+- [Настройки](/adguard-for-android/features/settings.md)
 
-Подробная статистика о заблокированных рекламах, трекерах и использовании данных
+  Основные, расширенные и низкоуровневые настройки, которые позволяют выбрать язык и тему, настроить DNS-защиту, включить HTTPS-фильтрацию и управлять пользовательскими скриптами
 
-[Статистика](/adguard-for-android/features/statistics.md)
+- [Гайд по низкоуровневым настройкам](/adguard-for-android/features/low-level-settings.md)
 
-## Настройки
+  Описания низкоуровневых настроек, доступных в AdGuard 4.3 для Android и более поздних версиях.
 
-Основные, расширенные и низкоуровневые настройки, которые позволяют выбрать язык и тему, настроить DNS-защиту, включить HTTPS-фильтрацию и управлять пользовательскими скриптами
+- [Помощник](/adguard-for-android/features/assistant.md)
 
-[Настройки](/adguard-for-android/features/settings.md)
+  Инструмент, который позволяет быстр изменять настройки приложения или сайта и просматривать статистику, не открывая AdGuard
 
-## Низкоуровневые настройки
+- [Разница между бесплатной и платной версией](/adguard-for-android/features/free-vs-full.mdx)
 
-Описания низкоуровневых настроек, доступных в AdGuard 4.3 для Android и более поздних версиях.
+  Сравнение возможностей бесплатной и платной версий
 
-[Гайд по низкоуровневым настройкам](/adguard-for-android/features/low-level-settings.md)
+- [Интеграция с AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
 
-## Помощник
+  Режим интеграции, который позволяет Блокировщику рекламы AdGuard и AdGuard VPN работать одновременно, несмотря на системные ограничения
 
-Инструмент, который позволяет быстр изменять настройки приложения или сайта и просматривать статистику, не открывая AdGuard
+- [Устройства с root-доступом](/adguard-for-android/features/rooted.md)
 
-[Помощник](/adguard-for-android/features/assistant.md)
-
-## Разница между бесплатной и платной версией
-
-Сравнение возможностей бесплатной и платной версий
-
-[Разница между бесплатной и платной версией](/adguard-for-android/features/free-vs-full.mdx)
-
-## Интеграция с AdGuard VPN
-
-Режим интеграции, который позволяет Блокировщику рекламы AdGuard и AdGuard VPN работать одновременно, несмотря на системные ограничения
-
-[Интеграция с AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
-
-## Устройства с root-доступом
-
-Функции, доступные в AdGuard для Android на устройствах с root-доступом: HTTPS-фильтрация во всех приложениях, режимы _Автоматический прокси_ и _Ручной прокси_
-
-[Устройства с root-доступом](/adguard-for-android/features/rooted.md)
+  Функции, доступные в AdGuard для Android на устройствах с root-доступом: HTTPS-фильтрация во всех приложениях, режимы _Автоматический прокси_ и _Ручной прокси_

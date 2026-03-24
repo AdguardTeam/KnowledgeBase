@@ -9,50 +9,34 @@ sidebar_position: 1
 
 :::
 
-## Функции
+- [Функции](/adguard-browser-extension/features)
 
-Здесь описаны основные функции и настройки, доступные в Браузерном расширении AdGuard
+  Main features and settings available in AdGuard Browser Extension
 
-[Функции](/adguard-browser-extension/features)
+- [Доступность](/adguard-browser-extension/availability)
 
-## Доступность
+  В этой статье вы узнаете о поддерживаемых браузерах и платформах, на которые можно установить расширение
 
-В этой статье вы узнаете о поддерживаемых браузерах и платформах, на которые можно установить расширение
+- [Установка](/adguard-browser-extension/installation)
 
-[Доступность](/adguard-browser-extension/availability)
+  Установка и удаление
 
-## Установка
+- [Совместимость с автономным приложением](/adguard-browser-extension/compatibility)
 
-Установка и удаление
+  Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
 
-[Установка](/adguard-browser-extension/installation)
+- [Браузерное расширение AdGuard для Chrome MV3](/adguard-browser-extension/mv3-version/)
 
-## Совместимость с основным приложением
+  Отдельное Браузерное расширение AdGuard, совместимое с API Manifest V3
 
-Совместимость Браузерного расширения AdGuard с десктопными приложениями AdGuard
+- [Защищённые страницы](/adguard-browser-extension/protected-pages)
 
-[Совместимость с автономным приложением](/adguard-browser-extension/compatibility)
+  Домены с ограниченным доступом, содержимое которых нельзя изменить с помощью расширений для блокировки рекламы
 
-## Браузерное расширение AdGuard MV3 для Chrome
+- [Решение проблем](/adguard-browser-extension/solving-problems)
 
-Отдельное Браузерное расширение AdGuard, совместимое с API Manifest V3
+  Известные проблемы и возможные решения
 
-[Браузерное расширение AdGuard для Chrome MV3](/adguard-browser-extension/mv3-version/)
+- [Сравнение с отдельными приложениями](/adguard-browser-extension/comparison-standalone)
 
-## Страницы, защищённые браузером
-
-Домены с ограниченным доступом, содержимое которых нельзя изменить с помощью расширений для блокировки рекламы
-
-[Защищённые страницы](/adguard-browser-extension/protected-pages)
-
-## Решение проблем
-
-Известные проблемы и возможные решения
-
-[Решение проблем](/adguard-browser-extension/solving-problems)
-
-## Сравнение с автономными приложениями
-
-Различия в функциональности между расширениями AdGuard и десктопными приложениями
-
-[Сравнение с отдельными приложениями](/adguard-browser-extension/comparison-standalone)
+  Различия в функциональности между расширениями AdGuard и десктопными приложениями

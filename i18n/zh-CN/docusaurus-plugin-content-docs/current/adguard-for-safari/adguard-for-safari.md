@@ -9,26 +9,18 @@ sidebar_position: 2
 
 :::
 
-## 功能
+- [功能](/adguard-for-safari/features/features.md)
 
-Safari 版 AdGuard 的主要功能和可用设置。
+  Main features and settings available in AdGuard for Safari
 
-[功能](/adguard-for-safari/features/features.md)
+- [安装](/adguard-for-safari/installation.md)
 
-## 安装
+  Safari 版 AdGuard 的安装、卸载和系统要求。
 
-Safari 版 AdGuard 的安装、卸载和系统要求。
+- [Safari 扩展](/adguard-for-safari/extensions.md)
 
-[安装](/adguard-for-safari/installation.md)
+  为 Safari 浏览器添加功能的扩展。
 
-## Safari 扩展
+- [解决问题](/adguard-for-safari/solving-problems/solving-problems.md)
 
-为 Safari 浏览器添加功能的扩展。
-
-[Safari 扩展](/adguard-for-safari/extensions.md)
-
-## 解决问题
-
-Known issues and possible solutions
-
-[解决问题](/adguard-for-safari/solving-problems/solving-problems.md)
+  Known issues and possible solutions

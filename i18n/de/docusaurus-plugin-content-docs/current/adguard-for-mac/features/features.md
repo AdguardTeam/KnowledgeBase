@@ -9,56 +9,38 @@ Dieser Artikel behandelt AdGuard für Mac, einem multifunktionalen Werbeblocker,
 
 :::
 
-## Hauptfenster
+- [Hauptfenster](/adguard-for-mac/features/main.md)
 
-Hauptbildschirm mit Statistiken zu blockierten Anzeigen und Trackern sowie Zugriff auf die Haupteinstellungen
+  Main screen with statistics on blocked ads and trackers and access to main settings
 
-[Hauptfenster](/adguard-for-mac/features/main.md)
+- [Allgemein](/adguard-for-mac/features/general.md)
 
-## Allgemein
+  Grundlegende Einstellungen zum Blockieren von Suchanzeigen und Eigenwerbung auf Websites, Aktivieren sprachspezifischer Filter und Verwalten der _Freigabeliste_
 
-Grundlegende Einstellungen zum Blockieren von Suchanzeigen und Eigenwerbung auf Websites, Aktivieren sprachspezifischer Filter und Verwalten der _Freigabeliste_
+- [Filter](/adguard-for-mac/features/filters.md)
 
-[Allgemein](/adguard-for-mac/features/general.md)
+  Filter und Benutzerregeln zur Feinabstimmung der Werbeblockierung
 
-## Filter
+- [DNS](/adguard-for-mac/features/dns.md)
 
-Filter und Benutzerregeln zur Feinabstimmung der Werbeblockierung
+  DNS-Server und DNS-Filter, mit denen Sie Werbung, Tracker und gefährliche Websites blockieren können
 
-[Filter](/adguard-for-mac/features/filters.md)
+- [Privatsphäre](/adguard-for-mac/features/stealth.md)
 
-## DNS
+  Settings to block cookies, UTM tags, and online analytics that collect user information
 
-DNS-Server und DNS-Filter, mit denen Sie Werbung, Tracker und gefährliche Websites blockieren können
+- [Sicherheit](/adguard-for-mac/features/security.md)
 
-[DNS](/adguard-for-mac/features/dns.md)
+  Eine Einstellung, die den Zugriff auf bösartige und Phishing-Websites blockiert und Sie vor Online-Bedrohungen schützt
 
-## Privatsphäre (Tracking-Schutz)
+- [Browser-Assistent](/adguard-for-mac/features/browser-assistant.md)
 
-Einstellungen zum Blockieren von Cookies, UTM-Tags und Analyse-Tools, die Nutzerdaten sammeln
+  Eine Erweiterung, die das Desktop-App ergänzt und es Ihnen ermöglicht, die Filterung von Ihrem Browser aus zu verwalten
 
-[Privatsphäre](/adguard-for-mac/features/stealth.md)
+- [Erweiterungen](/adguard-for-mac/features/extensions.md)
 
-## Sicherheit
+  Eine Funktion, mit der Sie die Funktionalität von Websites durch Hinzufügen von Benutzerskripten und Benutzerstilen erweitern können
 
-Eine Einstellung, die den Zugriff auf bösartige und Phishing-Websites blockiert und Sie vor Online-Bedrohungen schützt
+- [Netzwerk](/adguard-for-mac/features/network.md)
 
-[Sicherheit](/adguard-for-mac/features/security.md)
-
-## Browser-Assistent
-
-Eine Erweiterung, die das Desktop-Programm ergänzt und es Ihnen ermöglicht, die Filterung von Ihrem Browser aus zu verwalten
-
-[Browser-Assistent](/adguard-for-mac/features/browser-assistant.md)
-
-## Erweiterungen
-
-Eine Funktion, mit der Sie die Funktionalität von Websites durch Hinzufügen von Benutzerskripten und Benutzerstilen erweitern können
-
-[Erweiterungen](/adguard-for-mac/features/extensions.md)
-
-## Netzwerk
-
-Zusätzliche netzwerkbezogene Optionen und Proxy-Einstellungen
-
-[Netzwerk](/adguard-for-mac/features/network.md)
+  Zusätzliche netzwerkbezogene Optionen und Proxy-Einstellungen

@@ -9,56 +9,38 @@ sidebar_position: 1
 
 :::
 
-## 보호
+- [보호](/adguard-for-android/features/protection/protection.md)
 
-Available settings in the _Protection_ tab: _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Firewall_, and _Browsing security_
+  Available settings in the _Protection_ tab: _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Firewall_, and _Browsing security_
 
-[보호](/adguard-for-android/features/protection/protection.md)
+- [앱 관리](/adguard-for-android/features/app-management.md)
 
-## 앱 관리
+  Features that allow you to customize traffic filtering and routing for each app
 
-Features that allow you to customize traffic filtering and routing for each app
+- [통계](/adguard-for-android/features/statistics.md)
 
-[앱 관리](/adguard-for-android/features/app-management.md)
+  Detailed statistics on blocked ads, trackers, and data usage
 
-## 통계
+- [설정](/adguard-for-android/features/settings.md)
 
-Detailed statistics on blocked ads, trackers, and data usage
+  General, advanced, and low-level settings that let you select the language and theme, customize DNS protection, enable HTTPS filtering, and manage userscripts
 
-[통계](/adguard-for-android/features/statistics.md)
+- [Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
 
-## 설정
+  Descriptions of the low-level settings available in AdGuard for Android v4.3 and later.
 
-General, advanced, and low-level settings that let you select the language and theme, customize DNS protection, enable HTTPS filtering, and manage userscripts
+- [어시스턴트](/adguard-for-android/features/assistant.md)
 
-[설정](/adguard-for-android/features/settings.md)
+  A tool that lets you quickly change app or website settings and view statistics without opening the AdGuard interface
 
-## Low-level settings guide
+- [무료 버전과 정식 버전 비교](/adguard-for-android/features/free-vs-full.mdx)
 
-Descriptions of the low-level settings available in AdGuard for Android v4.3 and later.
+  Comparison of features between the free and paid versions
 
-[Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
+- [AdGuard VPN과의 통합](/adguard-for-android/features/integration-with-vpn.md)
 
-## 어시스턴트
+  Integrated mode that allows AdGuard Ad Blocker and AdGuard VPN to run simultaneously despite system limitations
 
-A tool that lets you quickly change app or website settings and view statistics without opening the AdGuard interface
+- [루팅된 기기](/adguard-for-android/features/rooted.md)
 
-[어시스턴트](/adguard-for-android/features/assistant.md)
-
-## 무료 버전과 정식 버전 비교
-
-Comparison of features between the free and paid versions
-
-[무료 버전과 정식 버전 비교](/adguard-for-android/features/free-vs-full.mdx)
-
-## AdGuard VPN과 통합
-
-Integrated mode that allows AdGuard Ad Blocker and AdGuard VPN to run simultaneously despite system limitations
-
-[AdGuard VPN과의 통합](/adguard-for-android/features/integration-with-vpn.md)
-
-## 루팅된 기기
-
-Features available in AdGuard for Android on rooted devices: HTTPS filtering in all apps, _Automatic proxy_ and _Manual proxy_ modes
-
-[루팅된 기기](/adguard-for-android/features/rooted.md)
+  Features available in AdGuard for Android on rooted devices: HTTPS filtering in all apps, _Automatic proxy_ and _Manual proxy_ modes

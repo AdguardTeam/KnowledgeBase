@@ -9,50 +9,34 @@ Questo articolo riguarda l'Estensione di browser AdGuard, che protegge solo il t
 
 :::
 
-## Funzionalità
+- [Funzionalità](/adguard-browser-extension/features)
 
-Principali caratteristiche e impostazioni disponibili nell'Estensione di browser AdGuard
+  Main features and settings available in AdGuard Browser Extension
 
-[Funzionalità](/adguard-browser-extension/features)
+- [Disponibilità](/adguard-browser-extension/availability)
 
-## Disponibilità
+  Browser e piattaforme supportati dove l'estensione può essere installata
 
-Browser e piattaforme supportati dove l'estensione può essere installata
+- [Installazione](/adguard-browser-extension/installation)
 
-[Disponibilità](/adguard-browser-extension/availability)
+  Installazione e rimozione
 
-## Installazione
+- [Compatibilità con l'app autonoma](/adguard-browser-extension/compatibility)
 
-Installazione e rimozione
+  Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
 
-[Installazione](/adguard-browser-extension/installation)
+- [Estensione di browser AdGuard per Chrome MV3](/adguard-browser-extension/mv3-version/)
 
-## Compatibilità con l'app autonoma
+  Un'estensione AdGuard autonoma per browser compatibile con l'API Manifest V3
 
-Compatibilità dell'Estensione di browser AdGuard con le app desktop AdGuard
+- [Pagine protette dal browser](/adguard-browser-extension/protected-pages)
 
-[Compatibilità con l'app autonoma](/adguard-browser-extension/compatibility)
+  Domini con restrizioni i cui contenuti non possono essere modificati con le estensioni di blocco-inserzioni
 
-## Estensione AdGuard Browser per Chrome MV3
+- [Risoluzione dei problemi](/adguard-browser-extension/solving-problems)
 
-Un'estensione AdGuard autonoma per browser compatibile con l'API Manifest V3
+  Problemi noti e possibili soluzioni
 
-[Estensione di browser AdGuard per Chrome MV3](/adguard-browser-extension/mv3-version/)
+- [Confronto con le app autonome](/adguard-browser-extension/comparison-standalone)
 
-## Pagine protette dal browser
-
-Domini con restrizioni i cui contenuti non possono essere modificati con le estensioni di blocco-inserzioni
-
-[Pagine protette dal browser](/adguard-browser-extension/protected-pages)
-
-## Risoluzione problemi
-
-Problemi noti e possibili soluzioni
-
-[Risoluzione dei problemi](/adguard-browser-extension/solving-problems)
-
-## Comparazione con le app autonome
-
-Differenze in funzioni e caratteristiche tra le estensioni di AdGuard e le app desktop
-
-[Confronto con le app autonome](/adguard-browser-extension/comparison-standalone)
+  Differenze in funzioni e caratteristiche tra le estensioni di AdGuard e le app desktop

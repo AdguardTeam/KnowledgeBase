@@ -33,7 +33,7 @@ Here are some common issues:
 
 1. AdGuard를 실행합니다.
 
-1. [http://local.adguard.org/cert](http://local.adguard.org/cert)으로 이동하여 *다운로드* 버튼을 클릭합니다. 브라우저에서 **cert.cer** 파일 다운로드가 시작됩니다.
+1. Go to [https://local.adguard.org/cert](https://local.adguard.org/cert) and click the *Download* button. 브라우저에서 **cert.cer** 파일 다운로드가 시작됩니다.
 
     :::note
 

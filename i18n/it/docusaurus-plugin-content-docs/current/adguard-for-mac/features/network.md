@@ -33,4 +33,4 @@ Puoi configurare AdGuard per instradare tutto il traffico del tuo dispositivo at
 
 Puoi utilizzare AdGuard come server proxy HTTP. Ciò ti consentirà di filtrare il traffico su altri dispositivi collegati al proxy.
 
-Assicurati che il tuo Mac e l'altro dispositivo siano connessi alla stessa rete e inserisci la porta proxy sul dispositivo che desideri instradare attraverso il tuo server proxy (di solito nelle impostazioni di rete). Per filtrare anche il traffico HTTPS, [trasferisci il certificato proxy di AdGuard](http://local.adguard.org/cert) su questo dispositivo. [Ulteriori informazioni sull'installazione di un certificato proxy](/guides/proxy-certificate)
+Assicurati che il tuo Mac e l'altro dispositivo siano connessi alla stessa rete e inserisci la porta proxy sul dispositivo che desideri instradare attraverso il tuo server proxy (di solito nelle impostazioni di rete). To filter HTTPS traffic as well, [transfer AdGuard’s proxy certificate](https://local.adguard.org/cert) to this device. [Ulteriori informazioni sull'installazione di un certificato proxy](/guides/proxy-certificate)

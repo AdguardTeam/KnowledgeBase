@@ -9,32 +9,22 @@ sidebar_position: 1
 
 :::
 
-## 기능
+- [기능](/adguard-for-windows/features/features.md)
 
-Windows용 AdGuard의 주요 기능 및 설정
+  Main features and settings available in AdGuard for Windows
 
-[기능](/adguard-for-windows/features/features.md)
+- [설치](/adguard-for-windows/installation.md)
 
-## 설치 방법
+  Windows용 AdGuard의 설치, 제거 방법 및 시스템 요구 사항
 
-Windows용 AdGuard의 설치, 제거 방법 및 시스템 요구 사항
+- [브라우저 어시스턴트](/adguard-for-windows/browser-assistant.md)
 
-[설치](/adguard-for-windows/installation.md)
+  An extension that complements the desktop app and allows you to manage filtering from your browser
 
-## 브라우저 어시스턴트
+- [문제 해결](/adguard-for-windows/solving-problems/solving-problems.md)
 
-데스크톱 프로그램을 보완하고 브라우저에서 필터링을 관리할 수 있는 확장 프로그램입니다.
+  알려진 문제 및 해결 방법
 
-[브라우저 어시스턴트](/adguard-for-windows/browser-assistant.md)
+- [관리자를 위한 문서](/adguard-for-windows/admins-documentation.md)
 
-## 문제 해결
-
-알려진 문제 및 해결 방법
-
-[문제 해결](/adguard-for-windows/solving-problems/solving-problems.md)
-
-## 관리자를 위한 문서
-
-시스템 관리자를 위한 구성 가이드
-
-[관리자를 위한 문서](/adguard-for-windows/admins-documentation.md)
+  시스템 관리자를 위한 구성 가이드

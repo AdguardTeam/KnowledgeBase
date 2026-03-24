@@ -11,38 +11,26 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 Karta _Ochrana_ obsahuje následující funkce nebo nastavení. Podrobný článek ke každému z nich najdete v této databázi znalostí.
 
-## Blokování reklam
+- [Blokování reklam](/adguard-for-android/features/protection/ad-blocking.md)
 
-Nastavení blokování reklam v prohlížečích a aplikacích
+  Settings to block ads in browsers and apps
 
-[Blokování reklam](/adguard-for-android/features/protection/ad-blocking.md)
+- [Ochrana před sledováním](/adguard-for-android/features/protection/tracking-protection.md)
 
-## Ochrana před sledováním
+  Nastavení umožňující blokovat sledovací prvky, které shromažďují informace o uživateli
 
-Nastavení umožňující blokovat sledovací prvky, které shromažďují informace o uživateli
+- [Blokování obtěžování](/adguard-for-android/features/protection/annoyance-blocking.md)
 
-[Ochrana před sledováním](/adguard-for-android/features/protection/tracking-protection.md)
+  Nastavení pro blokování obtěžujících prvků, jako jsou vyskakovací okna se souhlasem se soubory cookies, widgety sociálních sítí a bannery vyzývající ke stažení mobilních aplikací
 
-## Blokování obtěžování
+- [DNS ochrana](/adguard-for-android/features/protection/dns-protection.md)
 
-Nastavení pro blokování obtěžujících prvků, jako jsou vyskakovací okna se souhlasem se soubory cookies, widgety sociálních sítí a bannery vyzývající ke stažení mobilních aplikací
+  DNS servery a DNS filtry, které umožňují blokovat reklamy, slídiče a nebezpečné webové stránky
 
-[Blokování obtěžování](/adguard-for-android/features/protection/annoyance-blocking.md)
+- [Firewall](/adguard-for-android/features/protection/firewall/firewall.md)
 
-## DNS ochrana
+  Funkce, která umožňuje řídit přístup k internetu pro jednotlivé aplikace
 
-DNS servery a DNS filtry, které umožňují blokovat reklamy, slídiče a nebezpečné webové stránky
+- [Bezpečné prohlížení](/adguard-for-android/features/protection/browsing-security.md)
 
-[DNS ochrana](/adguard-for-android/features/protection/dns-protection.md)
-
-## Firewall
-
-Funkce, která umožňuje řídit přístup k internetu pro jednotlivé aplikace
-
-[Firewall](/adguard-for-android/features/protection/firewall/firewall.md)
-
-## Bezpečné prohlížení
-
-Funkce, která blokuje přístup ke škodlivým a phishingovým webům a chrání vás před online hrozbami
-
-[Bezpečné prohlížení](/adguard-for-android/features/protection/browsing-security.md)
+  Funkce, která blokuje přístup ke škodlivým a phishingovým webům a chrání vás před online hrozbami

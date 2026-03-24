@@ -81,11 +81,12 @@ AdGuardの広告ブロックフィルタには以下が含まれます:
 ### 制限と例外
 
 - サイト独自の広告（自己宣伝広告）を意図的にブロックすべきではない。 ただし、一般的なフィルタリングルールによってブロックされている場合は、ブロックを解除すべきではない。
-- ペイウォールのようなコンテンツへのアクセス関連手段はブロックしない。
+- Content access measures like paywalls are not blocked by Ad blocking filters. However, they may be blocked by Tracking protection filters if their operation results in a violation of user privacy
 - アンチアドブロックウォールが以下のことをしている場合、アンチアドブロックウォールはブロックされる:
     - 広告ブロッカーの無効化や削除を強引に要求したり、ウェブサイトの利用を事実上妨害したりしている
     - 広告ブロッカーの使用がもたらす可能性のあることについて、誤解を招くような説明をしている
     - 訪問者を不正広告の危険にさらしている（ブロックされない広告が疑わしいソースから来る場合）
+    - They violate or negatively impact user privacy
 - AdGuard は、以下の基準の少なくとも1つを満たす広告ブロッカー検出メッセージをブロックしません:
     - ウェブサイトの利用を許可していて、コンテンツの大部分を被せていない
     - 広告ブロッカーを無効にする代わりに、ユーザーのプライバシーやセキュリティを危険にさらすことのない代替手段を提供している
@@ -165,139 +166,137 @@ AdGuardの追跡防止フィルタには以下が含まれます:
 
 #### AdGuard クッキー通知フィルタ
 
-このフィルタは、クッキー（Cookie）通知とクッキー管理プラットフォーム(CMP)からのリクエストの両方をブロックするように設計されています。 クッキー通知やCMPに対しては様々な手段が適用されることがあります。 ほとんどの場合、対応するスクリプトを非表示にするか、ブロックするだけで十分です。 ただし、サイトの機能および第三者のコンテンツの表示において、クッキーの同意が必要な場合は、以下の方法を適用します:
+このフィルタは、クッキー（Cookie）通知とクッキー管理プラットフォーム(CMP)からのリクエストの両方をブロックするように設計されています。 Depending on how a website implements its consent mechanism, different methods may be applied.
 
-- 同意要求を回避するためにはScriptletsを使用（決定がなされるまでサードパーティコンテンツの読み込みが制限されているサイトでは、実質的に適用されない）
-- ユーザーが選択したとスクリプトがみなすように、サイトのローカルストレージにクッキーまたはキーを設定
-- 指定されたボタンをクリックし、ロードの10秒後にその実行を中断するルールを使用して、ユーザーのアクションをシミュレート。 この場合、以下のの 2 つのオプションが可能です:
-    - 拒否する（機能的なクッキーを除く（CMPシステムにもよる））　追加の分析ツールをロードするリスクが少ないため、好ましいオプションです。
-    - 許可する　このオプションは、他の方法が失敗した場合の最後の手段として使用されます。 この場合、サイトが分析ツールを使用しているかどうかが追加でチェックされ、**AdGuard 追跡防止フィルタ**によってブロックされます。
+In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when a website requires a cookie decision for certain features or third-party content to work, the filter automatically handles the request using alternative methods.
+
+Whenever possible, non-essential cookies are declined by default. If this is not technically feasible and consent must be granted for the site to function correctly, the site is additionally reviewed for analytics and tracking technologies, which are then blocked by the **AdGuard Tracking Protection filter**.
 
 **制限と例外**
 
-ルールを追加するかどうかの決定は、フィルタ開発者たちが独自に行う場合があります。ほとんどの場合、行動をシミュレートする際の選択がサイトの機能に影響を与える時にそういった対応になります（たとえば、履歴が機能しなかったり、ユーザー設定がそのようなサイトに保存されなかったりするケース）。
+In some cases, the decision to add rules is made independently by filter developers; mostly, when the choice made when simulating actions would affect the site’s functionality (for example, history may not work, or user settings may not be saved on such a site).
 
 #### AdGuard ポップアップフィルタ
 
-通常のサイト利用には必要ないウェブページ上のさまざまなポップアップをブロックするフィルタです。ポップアップは以下のものを含めるが、これらに限定されない:
+This is a filter that blocks various popups on web pages that are not necessary for normal site usage, including but not limited to:
 
-- プッシュ通知受信許可の要求
-- ニュース、プロモーション、キャンペーン、各種イベント（と、それらを受信するためのサードパーティチャンネル（Googleニュース、Telegramなど）を含む）を購読するためのポップアップやフォーム
-- 広告ブロッカーの無効化を促し、ユーザーのプライバシーを侵害するポップアップ（フィルタ開発者の判断による）
-- その他の、ユーザーを困らせるポップアップ（フィルタ開発者の判断による）
+- Requests for permission to receive push notifications
+- Popups and forms for subscribing to news, promotions, and various events, including third-party channels for receiving them (such as Google News, Telegram)
+- Popups that encourage users to disable ad blocker and violate user’s privacy (at the discretion of the filter developers)
+- Other types of popups that may annoy users (at the discretion of filter developers)
 
 **制限と例外**
 
-- プッシュ通知は、実用的な目的で使用されないサイトでのみブロックします。 例えば、電子メールのウェブクライアントや業務で使用するツールでは、このような通知はブロックしません。
-- 上記のカテゴリーに該当しないポップアップでも、ユーザーエクスピリエンスを妨げるものはブロックされることがあります。 （例えば、サイト上の登録プロンプトや、サイトの機能を紹介するポップアップなど）。 フィルタ開発者によって決定されます。
-- コンテンツへのアクセスのためにユーザーに支払いを求めるコンテンツアクセス手段を回避してはならない。
+- Push notifications are only blocked on sites where they are not used for practical purposes. For example, in email web clients or tools used for work purposes, such notifications will not be blocked
+- Some popups that do not fall into the categories described above but still interfere with the user’s experience may be also blocked. For example, registration prompts on a site or popups that introduce the site’s features. The decision is made by filter developers
+- Content access measures that ask the user to pay to access the content must not be circumvented
 
 #### AdGuard モバイルアプリバナーフィルタ
 
-モバイルアプリのインストールを促すバナーやポップアップをブロックするフィルタです。
+This is a filter that blocks banners and popups that encourage visitors to install mobile apps.
 
 **制限と例外**
 
-ウェブサイトのヘッダーやメニューにあるバナーは、アニメーションでなく、使用可能なスペースの大部分を占めない場合はブロックされません。 フッターにバナーを設置する場合は、フィルター開発者がケースバイケースでブロックするかどうかを決定します。 通常、フッターのバナーは他の要素に対して目立たず、邪魔にならないことが多いです。
+Banners located in the headers or in the menus of websites are not blocked if they are not animated and do not occupy a significant portion of usable space. If a banner is located in the footer, the decision is made by filter developers case-by-case. Usually, banners in the footer do not stand out against other elements and are not distracting.
 
 #### AdGuard ウィジェットフィルタ
 
-ウェブサイトの機能やウェブサイトとのインタラクションに不可欠でない様々なウィジェットをブロックするフィルタです:
+This is a filter that blocks various widgets that are not essential for the functioning of websites or for interaction with them:
 
-- コンテンツ推奨用ウィジェット　関連記事、類似サイト、様々なパーソナライズされたおすすめ項目
-- コンテンツと統合されておらず、ページのメインコンテンツでもないチャットウィジェット
-- マーケティング系ウィジェット:
-    - アシスタントやボットとのコミュニケーション用チャット
-    - ユーザーに表示されるおすすめ商品ウィジェット
-    - 電話折り返し・お問い合わせ要求フォーム
-- 独立したカテゴリに該当しないが、視覚的にページを乱雑にする可能性があるその他のウィジェット （例えば、天気ウィジェット、為替レート、求人情報、寄付など）
+- Widgets for content recommendations — related articles, similar websites, various personalized recommendations
+- Chat widgets that are not integrated with the content and are not the main content of the page
+- Marketing widgets:
+    - Chats for communication with assistants or bots
+    - Widgets with product recommendations that are shown to the user
+    - Call-back forms
+- Other widgets that do not have a separate category but may visually clutter the page. For example, weather widgets, currency exchange rates, job listings, and donations
 
 **制限と例外**
 
-このフィルタは以下をブロックしません:
+This filter doesn’t block:
 
-- コメント欄やライブチャットストリームなど、ページのコンテンツに密接に関連するウィジェット。ただし、非公式なストリームを持つサイトのモデレートされていないチャットは例外です（スパムや類似のコンテンツで埋め尽くされていることが多いため）。
-- 自己宣伝やサイト固有の宣伝活動のためのウィジェット
-- 寄付ウィジェット（ページの大部分を占め、コンテンツに対して目立つ場合を除く）。 ブロックするかどうかはフィルタ開発者によって決定されます。
+- Widgets closely related to the content of the page, such as comments sections, live chat streams, with an exception of unmoderated chats on sites with unofficial streams, which are often filled with spam and similar content
+- Widgets for self-promotion and site-specific promotional activities
+- Donation widgets, except the cases where they occupy a significant portion of the page and stand out prominently against the content. The decision to block is made by filter developers
 
 #### AdGuard その他の迷惑要素フィルタ
 
-このフィルタは、他のフィルタに含まれない厄介な要素をブロックし、さまざまな微調整を適用するように設計されています。 その目的は以下の通りです:
+This filter is designed to block annoying elements that are not included in other filters, as well as to apply various tweaks. It’s purpose is to:
 
-- 迷惑な要素と見なされる場合、ウェブサイトの自己宣伝（第三者から商業的対価を受け取ることなく、サイト所有者自身が所有する商品やサービスを宣伝するあらゆるタイプの広告）をブロックする
-- 他のカテゴリーに含まれない迷惑な要素をブロックする
-- コンテキストメニューを開く、テキストを選択する、コピーするといったページ上のアクションがブロックされている場合、ブロックを解除する
-- ウェブサイトからファイルを読み込む際のカウントダウン・タイマーを高速化する（チェックがサーバーによって制御されていない、または支障がない場合）
-- フィルタ開発者にとって便利な様々なルールを適用する （例えば、ウェブデバッガー検出のブロック）
+- Block self-promotion of websites (any type of advertising promoting goods or services owned by the site owner, without receiving commercial compensation from a third party), if it is considered an annoying element
+- Block annoying elements that are not included in other categories
+- Unblock actions on the page, such as opening the context menu, selecting and copying text, if they are blocked
+- Speed up countdown timers when loading files from websites, if the check is not controlled by the server or is not hindered
+- Apply various rules that may be useful for filter developers. For example, blocking web debugger detection
 
 **制限と例外**
 
-このフィルタには、ユーザーのすべてには適していないルールが含まれている可能性があります。 このフィルタを無効にすることがおすすめの場合もあります。 このフィルタにルールを追加するかどうかは、フィルター開発者がルールごとに決定します。
+This filter may contain rules that are not suitable for all users. Sometimes it is recommended to disable this filter. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
 
 ## SNS系フィルタ
 
 ### フィルタ
 
-AdGuardのSNS用フィルタには以下が含まれます:
+AdGuard Social Media filters include:
 
-- AdGuard SNS用フィルタ
+- AdGuard Social Media filter
 
 ### これらのフィルタの目的
 
-このフィルタは、サードパーティのウェブサイト上のSNSウィジェット、例えば「いいね」や「シェア」ボタン、グループウィジェット、おすすめアイテム、類似のウィジェットをブロックします。
+This filter will block social media widgets on third-party websites, such as “Like” and “Share” buttons, group widgets, recommendations, and similar widgets.
 
 ### 制限と例外
 
-コメント、埋め込み投稿、投票、ソーシャルメディアログインウィジェットなど、ウェブサイトの機能やコンテンツの一部であるウィジェットはブロックされません。 ウェブサイトのSNS紹介ページへのリンクもブロックされません。
+Widgets that are part of the website’s functionality or content, such as comments, embedded posts, polls, as well as social media login widgets, are not blocked. Links to the website’s social media pages are also not blocked.
 
 ## その他のフィルタ
 
-このグループには、広告をブロックするのに必須ではないフィルタが含まれます。
+This group contains filters that are not essential for blocking advertisements.
 
 ### 用語の定義
 
-**コンテキスト広告**とは、インターネット広告の一種で、インターネットページのコンテンツ、選択されたオーディエンス、場所、時間、その他のコンテキストに基づいて広告が表示されます。
+**Contextual advertising** is a type of internet advertising where the advertisement is displayed based on the content, selected audience, location, time, or other context of internet pages.
 
-**検索広告は**、訪問者の検索クエリに基づいて広告が表示される、コンテキスト広告のサブクラスです。
+**Search advertising** is a subclass of contextual advertising where ads are displayed based on the visitor's search query.
 
-**ウェブサイトの自己宣伝**とは、サイト所有者が所有する商品やサービスを宣伝するウェブサイトのバナーを指します。第三者から報酬を受け取って表示するものでははありません。
+**Self-promotion of websites** refers to the banners of a website promoting goods and services owned by the site owner, for which they do not receive compensation from third parties.
 
-これらの広告の詳細については、[検索広告に関する記事](https://adguard.com/kb/general/ad-filtering/search-ads/)を参照してください。
+For more details on these types of advertising, refer to the [article on search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
 ### フィルタ
 
-- 検索広告・自己宣伝のブロック解除フィルタ
-- AdGuard DNSフィルタ
-- AdGuard 実験フィルタ
+- Filter unblocking search ads and self-promotion
+- AdGuard DNS filter
+- AdGuard Experimental filter
 
 ### これらのフィルタの目的
 
-#### 検索広告・自己宣伝のブロック解除フィルタ
+#### Filter unblocking search ads and self-promotion
 
-このフィルタは以下のブロックを解除します:
+This filter unblocks:
 
-- 検索エンジン（Google、Bing、Yandex、DuckDuckGoなど）の検索結果におけるコンテキスト広告
-- ウェブサイトの自己宣伝
-
-**制限と例外**
-
-- 検索広告は、ユーザーの検索クエリにマッチする場合に限って、ブロックされません。 そうでなければ、広告はブロックされたままになります。
-- 自己宣伝はフィルターポリシに沿っているもののみブロック解除されます。 フィルタ開発者たちによってブロック解除の要求が拒否されることがあります。
-- その他の広告はブロックされません。
-
-#### AdGuard DNSフィルタ
-
-このフィルタは AdGuard DNS で使用されています。 広告ブロック用フィルタの代わりにはなりません。
+- Contextual advertising in search results when using search engines (such as Google, Bing, Yandex, DuckDuckGo)
+- Self-promotion of websites
 
 **制限と例外**
 
-上記の広告ブロック用フィルタと同じ。
+- Search advertising is unblocked only if it corresponds to the user’s search query, as it is contextual. Otherwise, the advertising remains blocked
+- Self-promotion is unblocked only if it complies with the filter policy. A request for unblocking may be rejected by filter developers
+- Any other advertising will not be unblocked
 
-#### AdGuard 実験フィルタ
+#### AdGuard DNS filter
 
-このフィルタは、ウェブサイトの機能を壊す可能性のあるルールのテストとデバッグを目的としています。 ルールは、特定のソリューションをテストする必要があるときに、フィルタ開発者によって追加されます。 このフィルタはデバッグ用に設計されているため、制限は最小限です。
+This filter is used in AdGuard DNS. It is not a replacement for ad-blocking filters.
 
 **制限と例外**
 
-- ルールは、ウェブサイトの機能を意図的に壊すものであってはならない。
-- ルールは、広告のブロックを解除したり、本フィルタポリシーに違反するものであってはならない。
+Same as for ad-blocking filters.
+
+#### AdGuard Experimental filter
+
+This filter is intended for testing and debugging rules that potentially may break websites’ functionality. Rules are added by filter developers when there’s a need to test a particular solution. As the filter is designed for debugging purposes, its limitations are minimal.
+
+**制限と例外**
+
+- Rules should not intentionally break websites’ functionality
+- Rules should not unblock advertisements or otherwise violate the Policy

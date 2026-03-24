@@ -9,32 +9,22 @@ sidebar_position: 1
 
 :::
 
-## 功能
+- [功能](/adguard-for-windows/features/features.md)
 
-Windows 版 AdGuard 的主要功能和可用设置。
+  Main features and settings available in AdGuard for Windows
 
-[功能](/adguard-for-windows/features/features.md)
+- [安装](/adguard-for-windows/installation.md)
 
-## 安装
+  Windows 版 AdGuard 的安装、卸载和系统要求。
 
-Windows 版 AdGuard 的安装、卸载和系统要求。
+- [AdGuard 助手](/adguard-for-windows/browser-assistant.md)
 
-[安装](/adguard-for-windows/installation.md)
+  An extension that complements the desktop app and allows you to manage filtering from your browser
 
-## 浏览器助手
+- [解决问题](/adguard-for-windows/solving-problems/solving-problems.md)
 
-该扩展是桌面程序的补充，让用户通过浏览器管理过滤功能。
+  已知问题和可能的解决方案。
 
-[AdGuard 助手](/adguard-for-windows/browser-assistant.md)
+- [管理员文档](/adguard-for-windows/admins-documentation.md)
 
-## 解决问题
-
-已知问题和可能的解决方案。
-
-[解决问题](/adguard-for-windows/solving-problems/solving-problems.md)
-
-## 管理员文档
-
-系统管理员的配置指南。
-
-[管理员文档](/adguard-for-windows/admins-documentation.md)
+  系统管理员的配置指南。

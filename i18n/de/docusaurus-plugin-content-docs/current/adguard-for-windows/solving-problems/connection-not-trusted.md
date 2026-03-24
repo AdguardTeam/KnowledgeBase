@@ -33,7 +33,7 @@ Wenn das nicht hilft, folgen Sie den Anweisungen zum manuellen Hinzufügen des A
 
 1. Starten Sie AdGuard.
 
-1. Öffnen Sie die Seite [http://local.adguard.org/cert](http://local.adguard.org/cert) und klicken anschließend auf die Schaltfläche *Herunterladen*. Der Browser sollte mit dem Herunterladen der Datei **cert.cer** beginnen.
+1. Go to [https://local.adguard.org/cert](https://local.adguard.org/cert) and click the *Download* button. Der Browser sollte mit dem Herunterladen der Datei **cert.cer** beginnen.
 
     :::note
 
