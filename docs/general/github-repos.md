@@ -9,7 +9,7 @@ This is why [all of our products have public repositories](https://github.com/or
 
 This article lists the most important repositories by category, summarizes the purpose of each one, and gives a simple breakdown of what users can do there.
 
-:::note
+:::tip
 
 Pro tip: Creating an issue on GitHub is the most effective way to bring the attention of AdGuard developers to a problem. Just make sure to check that a similar issue doesn’t already exist and describe the problem in a comprehensive but concise way. If it does exist, you can upvote it.
 
