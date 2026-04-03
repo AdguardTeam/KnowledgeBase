@@ -172,12 +172,12 @@ Detailed feature overview and troubleshooting guides of AdGuard Mail.
 
 ## Core libraries
 
-### [AdGuardCoreLibs](https://github.com/AdguardTeam/CoreLibs)
+### [CoreLibs](https://github.com/AdguardTeam/CoreLibs)
 
 AdGuard’s cross-platform core filtering engine. Used in Android, Windows, and Mac products. Users can:
 
 - Explore filtering logic and DNS handling
-- Report bugs and suggest features via Issues, contribute code via Pull requests
+- Report bugs and suggest features via Issues
 
 ### [DNSLibs](https://github.com/AdguardTeam/DNSLibs)
 
