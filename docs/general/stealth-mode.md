@@ -131,7 +131,7 @@ Enabling this option can disrupt the work of certain browser applications, such 
 
 :::note
 
-In AdGuard Browser Extension, *Block WebRTC* is applied globally and cannot be controlled on a per-site basis. Exception rules like `@@||example.com^$stealth=webrtc` are not supported. For per-site WebRTC control, use a full AdGuard app (for Windows, Mac, or Android).
+In AdGuard Browser Extension, *Block WebRTC* is applied globally and cannot be controlled on a per-site basis. Exception rules like `@@||example.com^$stealth=webrtc` are not supported. For per-site WebRTC control, use the full-fledged AdGuard app for Windows, Mac, or Android.
 
 :::
 
