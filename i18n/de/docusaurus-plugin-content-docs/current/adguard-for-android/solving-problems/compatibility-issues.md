@@ -38,7 +38,7 @@ Einige Gerätehersteller halten die privaten DNS-Einstellungen verborgen und ste
 
 Um den HTTPS-Datenverkehr filtern zu können, muss AdGuard ein Zertifikat zu den vertrauenswürdigen Benutzerzertifikaten des Geräts hinzufügen. Leider trauen UC-Browser den Benutzerzertifikaten nicht, so dass AdGuard dort keine HTTPS-Filterung durchführen kann.
 
-- Um dieses Problem zu lösen, verschieben Sie das [Zertifikat in den Zertifikatspeicher des Systems](../solving-problems/https-certificate-for-rooted.md/)
+- Um dieses Problem zu lösen, verschieben Sie das [Zertifikat in den Zertifikatspeicher des Systems](../solving-problems/https-certificate-for-rooted.md)
 
 :::note Kompatibilität
 

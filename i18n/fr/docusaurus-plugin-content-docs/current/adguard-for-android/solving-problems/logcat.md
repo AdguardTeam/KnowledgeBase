@@ -101,7 +101,7 @@ Il est important de reproduire le problème après avoir terminé la première p
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-    Envoyez par e-mail le fichier `txt` créé avec l'heure quand le problème a été reproduit (à partir de la partie #2) à notre équipe d'assistance à l'adresse <support@adguard.com>.
+    Envoyez par e-mail le fichier `txt` créé avec l'heure quand le problème a été reproduit (à partir de la partie #2) à notre équipe d'assistance à l'adresse [support@adguard.com](mailto:support@adguard.com).
 
 ### Méthode alternative pour les utilisateurs ROOT
 

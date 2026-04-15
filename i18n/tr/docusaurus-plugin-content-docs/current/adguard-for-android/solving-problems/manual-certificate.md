@@ -51,4 +51,4 @@ Bu uyarılara rağmen trafiğiniz güvende kalır. Uzak sunuculara olan bağlant
 
 [HTTPS filtrelemesi ve sertifikanın nasıl çalıştığı hakkında daha fazla bilgi edinin](/general/https-filtering/what-is-https-filtering.md).
 
-Hâlâ bir sorunla karşılaşıyorsanız ve sertifikayı yükleyemiyorsanız lütfen <support@adguard.com> adresinden destek ekibimizle iletişime geçin.
+Hâlâ bir sorunla karşılaşıyorsanız ve sertifikayı yükleyemiyorsanız lütfen [support@adguard.com](mailto:support@adguard.com) adresinden destek ekibimizle iletişime geçin.

@@ -33,9 +33,9 @@ A s *využitím mobilních dat* a *využitím Wi-Fi dat* můžete vidět, kolik 
 
 Nejprve si řekneme něco málo z teorie a uvedeme si souvislosti s potřebnými údaji.
 
-1. Android odvozuje spotřebu baterie podle takzvaného "Profilu napájení", který udává každý výrobce: <https://source.android.com/devices/tech/power/values.html>
+1. Android odvozuje spotřebu baterie podle takzvaného "Profilu napájení", který udává každý výrobce: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
-1. Hlavní součástí tohoto profilu je soubor hodnot v mAh, které určují spotřebu baterie pro každou část zařízení: <https://source.android.com/devices/tech/power/values.html>
+1. Hlavní součástí tohoto profilu je soubor hodnot v mAh, které určují spotřebu baterie pro každou část zařízení: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
     Například podle výše uvedené tabulky:
 

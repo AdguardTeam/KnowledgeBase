@@ -33,9 +33,9 @@ sidebar_position: 1
 
 首先，我们从理论角度看此问题并附上必要数据的链接。
 
-1. Android 设备使用厂商提供的 Power Profile 来计算流量使用量：<https://source.android.com/devices/tech/power/values.html>
+1. Android 设备使用厂商提供的 Power Profile 来计算流量使用量：[https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
-1. Power Profile 的主要部分是一组用于定义设备每个组件的电池消耗的值，以 mAh 为单位：<https://source.android.com/devices/tech/power/values.html>
+1. Power Profile 的主要部分是一组用于定义设备每个组件的电池消耗的值，以 mAh 为单位：[https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
     例如，从链接的表格中可以看到：
 

@@ -63,11 +63,11 @@ Analizziamo automaticamente i reclami relativi ai siti sospetti e dedichiamo mol
 
 ### Vuoi aiutare?
 
-Ogni aiuto è ben accetto! Se incontri un sito web di phishing o malware, segnalalo a <support@adguard.com>.
+Ogni aiuto è ben accetto! Se incontri un sito web di phishing o malware, segnalalo a [support@adguard.com](mailto:support@adguard.com).
 
 ### Risposte false positive
 
-Occasionalmente, alcuni siti web non dannosi sono aggiunti ai filtri di AdGuard. Facciamo del nostro meglio per ridurre la percentuale di falsi positivi, ma si verificano comunque. Se riscontri questo comportamento da AdGuard, segnala il falso positivo al nostro servizio di assistenza all'indirizzo <support@adguard.com>.
+Occasionalmente, alcuni siti web non dannosi sono aggiunti ai filtri di AdGuard. Facciamo del nostro meglio per ridurre la percentuale di falsi positivi, ma si verificano comunque. Se riscontri questo comportamento da AdGuard, segnala il falso positivo al nostro servizio di assistenza all'indirizzo [support@adguard.com](mailto:support@adguard.com).
 
 ## Se hai dubbi su un sito web
 

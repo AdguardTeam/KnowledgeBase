@@ -33,9 +33,9 @@ sidebar_position: 1
 
 Для начала приведём немного теории и ссылок с необходимыми данными.
 
-1. Android считает потребление трафика исходя из так называемого Power Profile, который предоставляется каждым производителем: <https://source.android.com/devices/tech/power/values.html>
+1. Android считает потребление трафика исходя из так называемого Power Profile, который предоставляется каждым производителем: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
-1. Главная часть Power Profile — это набор значений, выраженных в миллиамперах, которые определяют потребление батареи каждым компонентом устройства: <https://source.android.com/devices/tech/power/values.html>
+1. Главная часть Power Profile — это набор значений, выраженных в миллиамперах, которые определяют потребление батареи каждым компонентом устройства: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
     Например, из таблицы выше:
 

@@ -23,4 +23,4 @@ Wir haben eine eigenständige Erweiterung für Safari. Seit der Veröffentlichun
 
 :::
 
-**Vergessen Sie nicht, dass die Funktionalität jeder Erweiterung durch die Möglichkeiten des Browsers begrenzt ist.** Wenn Sie also einen umfassenden Schutz wünschen, sollten Sie die Installation eines eigenständigen Programms für Ihren Computer in Betracht ziehen. Es gibt [einen Grund dafür](adguard-browser-extension/comparison-standalone).
+**Vergessen Sie nicht, dass die Funktionalität jeder Erweiterung durch die Möglichkeiten des Browsers begrenzt ist.** Wenn Sie also einen umfassenden Schutz wünschen, sollten Sie die Installation eines eigenständigen Programms für Ihren Computer in Betracht ziehen. Es gibt [einen Grund dafür](/adguard-browser-extension/comparison-standalone).

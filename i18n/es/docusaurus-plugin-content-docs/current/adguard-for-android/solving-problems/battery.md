@@ -33,9 +33,9 @@ Y con el uso de *datos móviles* y *datos de Wi-Fi*, puedes ver cuánto tráfico
 
 Primero, expongamos un poco de teoría y vínculos con los datos necesarios.
 
-1. Android obtiene el consumo de tráfico a partir del llamado Perfil de potencia, que proporciona cada fabricante: <https://source.android.com/devices/tech/power/values.html>
+1. Android obtiene el consumo de tráfico a partir del llamado Perfil de potencia, que proporciona cada fabricante: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
-1. La parte principal del perfil de energía es un conjunto de valores en mAh que definen el consumo de batería para cada componente del dispositivo: <https://source.android.com/devices/tech/power/values.html>
+1. La parte principal del perfil de energía es un conjunto de valores en mAh que definen el consumo de batería para cada componente del dispositivo: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
     Por ejemplo, en la tabla anterior:
 

@@ -67,7 +67,7 @@ DNS 필터링에 액세스하는 방법
 
 #### DNS 필터 {#dns-filters}
 
-Safari에서 작동하는 필터와 마찬가지로 DNS 필터는 특수한 [구문](https://adguard-dns.io/kb/general/dns-filtering-syntax/)에 따라 작성된 규칙 집합입니다. AdGuard는 DNS 트래픽을 모니터링하고 하나 이상의 규칙과 일치하는 요청을 차단합니다. AdGuard DNS 필터](https://github.com/AdguardTeam/AdguardSDNSFilter)와 같은 필터를 사용하거나 호스트 파일을 필터로 추가할 수 있습니다. 여러 필터를 동시에 추가할 수 있습니다. 여러 필터를 동시에 추가하는 방법을 알아보려면 이 [설명서를 참조](adguard-for-ios/solving-problems/system-wide-filtering)하세요.
+Safari에서 작동하는 필터와 마찬가지로 DNS 필터는 특수한 [구문](https://adguard-dns.io/kb/general/dns-filtering-syntax/)에 따라 작성된 규칙 집합입니다. AdGuard는 DNS 트래픽을 모니터링하고 하나 이상의 규칙과 일치하는 요청을 차단합니다. AdGuard DNS 필터](https://github.com/AdguardTeam/AdguardSDNSFilter)와 같은 필터를 사용하거나 호스트 파일을 필터로 추가할 수 있습니다. 여러 필터를 동시에 추가할 수 있습니다. 여러 필터를 동시에 추가하는 방법을 알아보려면 이 [설명서를 참조](/adguard-for-ios/solving-problems/system-wide-filtering)하세요.
 
 #### 허용 목록 및 차단 목록 {#allowlist-blocklist}
 

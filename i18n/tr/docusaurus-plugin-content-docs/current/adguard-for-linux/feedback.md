@@ -30,7 +30,7 @@ If you want to support the implementation of a new feature or bugfix, you can vo
 
    Arşivlenen günlük dosyası varsayılan olarak uygulama klasörüne indirilecek ve günlüklerin yolu konsola yazılacaktır.
 
-4. Günlük dosyasını <devteam@adguard.com> adresine gönderin. Hatanın zamanını belirtin ve GitHub sorununuza veya numarasına bir bağlantı ekleyin (başlığın yanında #sayı olarak görünür). Alternatif olarak, günlük dosyasını Google Drive'a yükleyebilir ve <devteam@adguard.com> ile paylaşabilirsiniz. Attach the file link to your GitHub issue.
+4. Günlük dosyasını [devteam@adguard.com](mailto:devteam@adguard.com) adresine gönderin. Hatanın zamanını belirtin ve GitHub sorununuza veya numarasına bir bağlantı ekleyin (başlığın yanında #sayı olarak görünür). Alternatif olarak, günlük dosyasını Google Drive'a yükleyebilir ve [devteam@adguard.com](mailto:devteam@adguard.com) ile paylaşabilirsiniz. Attach the file link to your GitHub issue.
 
 5. Switch the logging mode back to `info`:
 

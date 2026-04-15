@@ -33,9 +33,9 @@ And with *Mobile data usage* and *Wi-Fi data usage*, you can see how much traffi
 
 Lassen Sie uns zunächst ein paar theoretische Überlegungen anstellen und mit den erforderlichen Daten verknüpfen.
 
-1. Android leitet den Datenverkehr nach dem sogenannten Power Profile (Energieprofil) ab, das von jedem Hersteller vorgegeben wird: <https://source.android.com/devices/tech/power/values.html>
+1. Android leitet den Datenverkehr nach dem sogenannten Power Profile (Energieprofil) ab, das von jedem Hersteller vorgegeben wird: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
-1. Hauptbestandteil des Energieprofils ist eine Reihe von Werten in mAh, die den Batterieverbrauch für jede Komponente des Geräts definieren: <https://source.android.com/devices/tech/power/values.html>
+1. Hauptbestandteil des Energieprofils ist eine Reihe von Werten in mAh, die den Batterieverbrauch für jede Komponente des Geräts definieren: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
     Ein Beispiel aus der obigen Tabelle:
 

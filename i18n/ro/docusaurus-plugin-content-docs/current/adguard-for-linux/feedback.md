@@ -30,7 +30,7 @@ Dacă doriți să sprijiniți implementarea unei noi caracteristici sau a unei r
 
    The archived log file will be downloaded to the application folder by default, and the path to the logs will be written to the console.
 
-4. Send the log file to <devteam@adguard.com>. Specify the time of the error and attach a link to your GitHub issue or its number (it appears as #number next to the title). Alternatively, you can upload the log file to Google Drive and share it with <devteam@adguard.com>. Attach the file link to your GitHub issue.
+4. Send the log file to [devteam@adguard.com](mailto:devteam@adguard.com). Specify the time of the error and attach a link to your GitHub issue or its number (it appears as #number next to the title). Alternatively, you can upload the log file to Google Drive and share it with [devteam@adguard.com](mailto:devteam@adguard.com). Attach the file link to your GitHub issue.
 
 5. Switch the logging mode back to `info`:
 
