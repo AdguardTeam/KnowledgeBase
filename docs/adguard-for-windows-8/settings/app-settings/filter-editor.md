@@ -21,4 +21,4 @@ With the Filter editor, you can:
 
 The Filter editor is especially useful for advanced users who want to fine-tune ad blocking by precisely controlling what is blocked or allowed. If you’re not familiar with creating your own rules, we have an article to help you learn how.
 
-[How to create own rules](general/ad-filtering/create-own-filters/)
+[How to create own rules](/general/ad-filtering/create-own-filters/)

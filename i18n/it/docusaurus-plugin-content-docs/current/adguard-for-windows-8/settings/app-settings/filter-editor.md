@@ -21,4 +21,4 @@ Con l'editor dei filtri puoi:
 
 L'editor dei filtri è particolarmente utile per gli utenti avanzati che desiderano affinare il blocco delle inserzioni controllando con precisione cosa è bloccato o consentito. Se non sei familiare con la creazione delle tue regole, abbiamo un articolo che ti aiuta a imparare come.
 
-[Come creare regole proprie](general/ad-filtering/create-own-filters/)
+[Come creare regole proprie](/general/ad-filtering/create-own-filters/)

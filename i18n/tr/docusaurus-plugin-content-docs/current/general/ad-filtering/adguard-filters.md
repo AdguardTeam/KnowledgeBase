@@ -36,11 +36,11 @@ This article is about the filters we create to use in AdGuard and other ad-block
 - **Chinese filter** removes ads from websites in Chinese. Originally based on the [EasyList China](https://github.com/easylist/easylistchina) filter and subsequently modified by us according to the complaints from users. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt)
 - **Ukrainian filter** removes ads from websites in Ukrainian.
 
-Bu sayfada bu filtre hakkında daha fazla bilgi edinin. [Kuralları görüntüle](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_23_Ukrainian/filter.txt)</li> 
+Bu sayfada bu filtre hakkında daha fazla bilgi edinin. [Kuralları görüntüle](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_23_Ukrainian/filter.txt) 
   
   - **Experimental filter** serves to test some new filtering rules that can potentially cause conflicts and mess with websites' work. In case these rules perform without any issues, they get added to main filters. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_5_Experimental/filter.txt)
 - **Mobile ads filter** blocks ads on mobile devices. Bilinen tüm mobil reklam ağlarını içerir. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt)
-- **DNS filter** — composed of several other filters (AdGuard Base filter, Social media filter, Spyware filter, Mobile ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking. This filter is used by [AdGuard DNS](https://adguard-dns.io/kb) servers to block ads and tracking. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt)</ul> 
+- **DNS filter** — composed of several other filters (AdGuard Base filter, Social media filter, Spyware filter, Mobile ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking. This filter is used by [AdGuard DNS](https://adguard-dns.io/kb) servers to block ads and tracking. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt) 
 
 
 

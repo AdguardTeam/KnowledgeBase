@@ -38,7 +38,7 @@ Android Pie 中引入了私有 DNS 功能。 在 Q 版本之前，私有 DNS 不
 
 要过滤 HTTPS 流量，AdGuard 要求用户将证书添加到设备的受信任用户证书中。 不幸的是，UC 浏览器不信任用户证书，因此 AdGuard 无法执行 HTTPS 过滤。
 
-- 要解决此问题，请将[证书移至系统证书存储](../solving-problems/https-certificate-for-rooted.md/)
+- 要解决此问题，请将[证书移至系统证书存储](../solving-problems/https-certificate-for-rooted.md)
 
 :::note 兼容性
 

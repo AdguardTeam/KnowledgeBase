@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::note
 
-Die in den Protokollen enthaltenen Daten und Dateien werden in Übereinstimmung mit der <a [Datenschutzerklärung von AdGuard](https://adguard.com/en/privacy.html) verarbeitet.
+Die in den Protokollen enthaltenen Daten und Dateien werden in Übereinstimmung mit der [Datenschutzerklärung von AdGuard](https://adguard.com/en/privacy.html) verarbeitet.
 
 :::
 
@@ -101,7 +101,7 @@ It is important to reproduce the problem after you're done with the first part.
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at <support@adguard.com>.
+    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at [support@adguard.com](mailto:support@adguard.com).
 
 ### Alternative way for ROOT users
 

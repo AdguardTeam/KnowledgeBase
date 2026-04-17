@@ -21,4 +21,4 @@ Pomocí editoru filtrů můžete:
 
 Editor filtrů je obzvláště užitečný pro pokročilé uživatele, kteří chtějí doladit blokování reklam pomocí přesného nastavení toho, co je blokováno a co povoleno. Pokud nevíte, jak vytvořit vlastní pravidla, máme pro vás článek, který vám s tím pomůže.
 
-[Jak vytvářet vlastní pravidla](general/ad-filtering/create-own-filters/)
+[Jak vytvářet vlastní pravidla](/general/ad-filtering/create-own-filters/)

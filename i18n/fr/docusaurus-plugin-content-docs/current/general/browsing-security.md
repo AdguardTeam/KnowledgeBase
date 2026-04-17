@@ -63,11 +63,11 @@ Nous analysons automatiquement les plaintes concernant les sites web suspects et
 
 ### Vous souhaitez nous aider ?
 
-Nous apprécions toute votre aide ! Si vous rencontrez un site d'hameçonnage ou de maliciels, veuillez le signaler à <support@adguard.com>.
+Nous apprécions toute votre aide ! Si vous rencontrez un site d'hameçonnage ou de maliciels, veuillez le signaler à [support@adguard.com](mailto:support@adguard.com).
 
 ### Réponses faussement positives
 
-Il arrive que des sites web non malveillants soient ajoutés aux filtres d'AdGuard. Nous faisons de notre mieux pour réduire le pourcentage de faux positifs, mais il y en a toujours. Si vous rencontrez ce comportement de la part d'AdGuard, veuillez signaler le faux positif à notre assistance technique à <support@adguard.com>.
+Il arrive que des sites web non malveillants soient ajoutés aux filtres d'AdGuard. Nous faisons de notre mieux pour réduire le pourcentage de faux positifs, mais il y en a toujours. Si vous rencontrez ce comportement de la part d'AdGuard, veuillez signaler le faux positif à notre assistance technique à [support@adguard.com](mailto:support@adguard.com).
 
 ## Si vous avez des doutes sur un site web
 

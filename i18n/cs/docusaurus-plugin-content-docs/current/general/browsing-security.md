@@ -63,11 +63,11 @@ Automaticky analyzujeme stížnosti na podezřelé weby a trávíme mnoho času 
 
 ### Chcete nám pomoci?
 
-Jakákoli pomoc je vítána! Pokud narazíte na phishingovou nebo malwarovou webovou stránku, nahlaste ji na <support@adguard.com>.
+Jakákoli pomoc je vítána! Pokud narazíte na phishingovou nebo malwarovou webovou stránku, nahlaste ji na [support@adguard.com](mailto:support@adguard.com).
 
 ### Falešně pozitivní odezvy
 
-Občas se do AdGuard filtrů přidají i jiné než škodlivé webové stránky. Snažíme se procento falešných pozitivních výsledků snížit, ale stále se vyskytují. Pokud se s tímto chováním AdGuardu setkáte, nahlaste prosím falešné hlášení naší technické podpoře na <support@adguard.com>.
+Občas se do AdGuard filtrů přidají i jiné než škodlivé webové stránky. Snažíme se procento falešných pozitivních výsledků snížit, ale stále se vyskytují. Pokud se s tímto chováním AdGuardu setkáte, nahlaste prosím falešné hlášení naší technické podpoře na [support@adguard.com](mailto:support@adguard.com).
 
 ## Pokud máte podezření na webovou stránku
 

@@ -30,7 +30,7 @@ Se desideri supportare l'implementazione di una nuova funzionalità o correzione
 
    Il file di registro archiviato verrà scaricato nella cartella dell'app per impostazione predefinita, e il percorso degli appunti sarà scritto nella console.
 
-4. Invia il file di registro a <devteam@adguard.com>. Includi l'ora dell'errore e allega un link al tuo problema su GitHub o il suo numero (appare come #numero accanto al titolo). In alternativa, puoi caricare il file di registro su Google Drive e condividerlo con <devteam@adguard.com>. Aggiungi il link del file al tuo problema su GitHub.
+4. Invia il file di registro a [devteam@adguard.com](mailto:devteam@adguard.com). Includi l'ora dell'errore e allega un link al tuo problema su GitHub o il suo numero (appare come #numero accanto al titolo). In alternativa, puoi caricare il file di registro su Google Drive e condividerlo con [devteam@adguard.com](mailto:devteam@adguard.com). Aggiungi il link del file al tuo problema su GitHub.
 
 5. Riporta la modalità di registrazione a `info`:
 

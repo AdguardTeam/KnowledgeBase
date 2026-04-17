@@ -30,7 +30,7 @@ Wenn Sie die Implementierung einer neuen Funktion oder eines Bugfixes unterstüt
 
    Die archivierte Protokolldatei wird standardmäßig in den Anwendungsordner heruntergeladen, und der Pfad zu den Protokollen wird in die Konsole geschrieben.
 
-4. Senden Sie die Protokolldatei an <devteam@adguard.com>. Geben Sie den Zeitpunkt des Fehlers an und fügen Sie einen Link zu Ihrem GitHub-Problem oder dessen Nummer hinzu (sie erscheint als #Nummer neben dem Titel). Alternativ können Sie die Protokolldatei auf Google Drive hochladen und sie mit <devteam@adguard.com> teilen. Hängen Sie den Dateilink an Ihr GitHub-Problem an.
+4. Senden Sie die Protokolldatei an [devteam@adguard.com](mailto:devteam@adguard.com). Geben Sie den Zeitpunkt des Fehlers an und fügen Sie einen Link zu Ihrem GitHub-Problem oder dessen Nummer hinzu (sie erscheint als #Nummer neben dem Titel). Alternativ können Sie die Protokolldatei auf Google Drive hochladen und sie mit [devteam@adguard.com](mailto:devteam@adguard.com) teilen. Hängen Sie den Dateilink an Ihr GitHub-Problem an.
 
 5. Wechseln Sie den Protokollierungsmodus zurück auf `info`:
 

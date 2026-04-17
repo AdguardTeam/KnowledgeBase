@@ -21,7 +21,7 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
   Installation und Entfernung
 
-- [Kompatibilität mit der eigenständigen App](adguard-browser-extension/compatibility)
+- [Kompatibilität mit der eigenständigen App](/adguard-browser-extension/compatibility)
 
   Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
 

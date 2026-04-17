@@ -63,11 +63,11 @@ We automatically analyze complaints about suspicious sites and spend a great dea
 
 ### Yardım etmek ister misiniz?
 
-Her türlü yardıma açığız! If you encounter a phishing or malware website, please report it to <support@adguard.com>.
+Her türlü yardıma açığız! If you encounter a phishing or malware website, please report it to [support@adguard.com](mailto:support@adguard.com).
 
 ### False-positive responses
 
-Occasionally, some non-malicious websites are added to AdGuard’s filters. We do our best to reduce the percentage of false positives, but they still occur. If you encounter this behavior from AdGuard, please report the false positive to our technical support at <support@adguard.com>.
+Occasionally, some non-malicious websites are added to AdGuard’s filters. We do our best to reduce the percentage of false positives, but they still occur. If you encounter this behavior from AdGuard, please report the false positive to our technical support at [support@adguard.com](mailto:support@adguard.com).
 
 ## If you are suspicious about a website
 

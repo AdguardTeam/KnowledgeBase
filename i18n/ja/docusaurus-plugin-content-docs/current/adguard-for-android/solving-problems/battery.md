@@ -33,9 +33,9 @@ And with *Mobile data usage* and *Wi-Fi data usage*, you can see how much traffi
 
 まず、少し理論を整理し、必要なデータへのリンク挙げたいと思います。を
 
-1. Androidは、各メーカーから提供されているいわゆるパワープロファイルに基づき、トラフィック消費量を算出します: <https://source.android.com/devices/tech/power/values.html>
+1. Androidは、各メーカーから提供されているいわゆるパワープロファイルに基づき、トラフィック消費量を算出します: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
-1. パワープロファイルの主な部分は、デバイスの各コンポーネントのバッテリー消費を定義するmAh単位の値のセットです: <https://source.android.com/devices/tech/power/values.html>
+1. パワープロファイルの主な部分は、デバイスの各コンポーネントのバッテリー消費を定義するmAh単位の値のセットです: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
     例えば、上の表から:
 

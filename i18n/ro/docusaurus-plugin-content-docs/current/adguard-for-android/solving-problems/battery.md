@@ -33,9 +33,9 @@ And with *Mobile data usage* and *Wi-Fi data usage*, you can see how much traffi
 
 În primul rând, să stabilim câteva teorii și legături cu datele necesare.
 
-1. Android derivă consumul de trafic pe baza așa-numitului Profil de putere, care este oferit de fiecare fabricant: <https://source.android.com/devices/tech/power/values.html>
+1. Android derivă consumul de trafic pe baza așa-numitului Profil de putere, care este oferit de fiecare fabricant: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
-1. Partea principală a Profilului de putere este un set de valori în mAh care definesc consumul de baterie pentru fiecare componentă a dispozitivului: <https://source.android.com/devices/tech/power/values.html>
+1. Partea principală a Profilului de putere este un set de valori în mAh care definesc consumul de baterie pentru fiecare componentă a dispozitivului: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
     De exemplu, din tabelul de mai sus:
 

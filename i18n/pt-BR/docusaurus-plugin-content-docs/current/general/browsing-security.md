@@ -63,11 +63,11 @@ Analisamos automaticamente reclamações sobre sites suspeitos e gastamos muito 
 
 ### Quer ajudar?
 
-Toda ajuda é bem-vinda! Se você encontrar um site de phishing ou malware, denuncie-o via <support@adguard.com>.
+Toda ajuda é bem-vinda! Se você encontrar um site de phishing ou malware, denuncie-o via [support@adguard.com](mailto:support@adguard.com).
 
 ### Resultados falso-positivos
 
-Ocasionalmente, alguns sites não maliciosos são adicionados aos filtros do AdGuard. Fazemos o possível para reduzir a porcentagem de falsos positivos, mas eles ainda assim podem ocorrer. Se você encontrar esse comportamento do AdGuard, informe o falso positivo ao nosso suporte técnico via <support@adguard.com>.
+Ocasionalmente, alguns sites não maliciosos são adicionados aos filtros do AdGuard. Fazemos o possível para reduzir a porcentagem de falsos positivos, mas eles ainda assim podem ocorrer. Se você encontrar esse comportamento do AdGuard, informe o falso positivo ao nosso suporte técnico via [support@adguard.com](mailto:support@adguard.com).
 
 ## Se você suspeitar de um site
 
