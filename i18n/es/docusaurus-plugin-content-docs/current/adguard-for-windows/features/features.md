@@ -27,4 +27,4 @@ Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multi
 
 - [Otras funciones](/adguard-for-windows/features/others/)
 
-  Support, license management, tray menu options, app version and updates
+  Soporte, gestión de licencias, opciones del menú de la bandeja, versión de la app y actualizaciones

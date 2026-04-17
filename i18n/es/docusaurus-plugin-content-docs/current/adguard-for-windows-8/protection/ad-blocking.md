@@ -9,14 +9,14 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 :::
 
-The _Ad blocking_ section is responsible for removing ads from the websites you visit and from the apps installed on your device. To filter banners, popups, trackers, and other intrusive elements, AdGuard relies on filters — sets of rules written in a [special syntax](/general/ad-filtering/create-own-filters). If you’d like to learn more about how they work, read our [article about filters](/general/ad-filtering/how-ad-blocking-works).
+The _Ad blocking_ section is responsible for removing ads from the websites you visit and from the apps installed on your device. Para filtrar banners, ventanas emergentes, rastreadores y otros elementos intrusivos, AdGuard se basa en filtros: conjuntos de reglas escritas en una [sintaxis especial](/general/ad-filtering/create-own-filters). Si quieres saber más sobre cómo funcionan, lee nuestro [artículo sobre filtros](/general/ad-filtering/how-ad-blocking-works).
 
 ![Ad blocking](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/ad_blocking.png)
 
 Aquí puedes:
 
 - enable basic protection,
-- block [search ads and self-promotion](/general/ad-filtering/search-ads),
+- bloquear [anuncios de búsqueda y autopromoción](/general/ad-filtering/search-ads),
 - desactivar los anuncios en el menú Inicio en Windows 11,
 - enable automatic activation of language-specific filters
 - manage user rules.

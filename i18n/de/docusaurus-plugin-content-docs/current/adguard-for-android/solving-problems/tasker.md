@@ -112,7 +112,7 @@ Oder Sie können die Parameter zum Entfernen manuell konfigurieren:
 
 - **Optionale Parameter**:
 
- \<`[Benutzername und Passwort]` — nur wenn der Proxy dies verlangt. Diese Daten werden bei der Einrichtung von **SOCKS4** ignoriert;
+ `[Benutzername und Passwort]` — nur wenn der Proxy dies verlangt. Diese Daten werden bei der Einrichtung von **SOCKS4** ignoriert;
 
  `[udp]` gilt nur für **SOCKS5** Servertyp und beinhaltet die Option **UDP through SOCKS5**. Es ist notwendig, den Wert **true** oder **false** zu setzen;
 

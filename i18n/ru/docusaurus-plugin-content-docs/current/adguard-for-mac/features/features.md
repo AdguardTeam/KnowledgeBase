@@ -27,7 +27,7 @@ sidebar_position: 1
 
 - [Защита от трекинга](/adguard-for-mac/features/stealth.md)
 
-  Settings to block cookies, UTM tags, and online analytics that collect user information
+  Настройки блокировки файлов куки, UTM-меток и онлайн-аналитики, собирающей информацию о пользователях
 
 - [Безопасность](/adguard-for-mac/features/security.md)
 
@@ -35,7 +35,7 @@ sidebar_position: 1
 
 - [Браузерный помощник](/adguard-for-mac/features/browser-assistant.md)
 
-  An extension that complements the desktop app and allows you to manage filtering from your browser
+  Расширение, которое дополняет десктопное приложение и позволяет управлять фильтрацией из браузера
 
 - [Расширения](/adguard-for-mac/features/extensions.md)
 

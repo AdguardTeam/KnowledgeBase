@@ -245,4 +245,4 @@ If this setting is enabled, AdGuard will display the **Developer tools** icon in
 
 #### Detect Samsung Pay
 
-If this setting is enabled, AdGuard protection will be paused when you open the Samsung Pay app. Korean users require this feature as they experience [issues with Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) when AdGuard is enabled.
+If this setting is enabled, AdGuard protection will be paused when you open the Samsung Pay app. Los usuarios coreanos requieren esta característica ya que experimentan [asuntos con Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) cuando AdGuard está habilitado.

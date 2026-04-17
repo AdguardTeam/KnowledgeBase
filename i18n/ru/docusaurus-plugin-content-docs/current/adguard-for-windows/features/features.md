@@ -11,7 +11,7 @@ sidebar_position: 1
 
 - [Главный экран](/adguard-for-windows/features/home-screen/)
 
-  On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
+  На главном экране вы найдёте разделы _Настройки_, _Поддержка_, _Лицензия_ и _О программе_, а также статистику по заблокированной рекламе и трекерам
 
 - [Настройки](/adguard-for-windows/features/settings/)
 
@@ -27,4 +27,4 @@ sidebar_position: 1
 
 - [Другие функции](/adguard-for-windows/features/others/)
 
-  Support, license management, tray menu options, app version and updates
+  Поддержка, управление лицензиями, опции трей-меню, версии и обновления приложения

@@ -5,24 +5,24 @@ sidebar_position: 1
 
 :::info
 
-This page is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+此网页是关于 Mac 版的 AdGuard Mini，用于 Safari 浏览器的保护。 要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-AdGuard Mini for Mac (formerly AdGuard for Safari) was designed to conform to Apple’s restrictions for ad blocking browser extensions. Although it can’t be compared to our desktop ad blocking apps, it’s free and can protect you from ads, trackers, phishing, and malicious websites.
+AdGuard Mini Mac 版（前称 AdGuard Safari 版）旨在符合 Apple 对广告拦截浏览器扩展的限制。 虽然它无法与我们桌面版的广告拦截应用相提并论，但它是免费的，并且可以保护您免受广告、跟踪器、网络钓鱼和恶意网站的侵害。
 
-- [Features](/adguard-mini-for-mac/features/features.md)
+- [功能](/adguard-mini-for-mac/features/features.md)
 
-  Main features and settings available in AdGuard Mini for Mac
+  Mac 版 AdGuard Mini 的主要功能和可用设置。
 
-- [Installation](/adguard-mini-for-mac/installation.md)
+- [安装](/adguard-mini-for-mac/installation.md)
 
-  Installation, removal, and system requirements for AdGuard Mini for Mac
+  Mac 版 AdGuard Mini 的安装、卸载和系统要求。
 
-- [Safari extensions](/adguard-mini-for-mac/extensions.md)
+- [Safari 扩展](/adguard-mini-for-mac/extensions.md)
 
-  Mechanisms that enable content blocking and add functionality to the Safari web browser
+  启用内容拦截中并为 Safari 网络浏览器添加功能的机制。
 
-- [Solving problems](/adguard-mini-for-mac/solving-problems/solving-problems.md)
+- [解决问题](/adguard-mini-for-mac/solving-problems/solving-problems.md)
 
-  Known issues and possible solutions
+  已知问题和可能的解决方案。

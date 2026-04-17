@@ -13,18 +13,18 @@ There are other useful AdGuard options that shouldn’t go unnoticed in this art
 
 ![Settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/setting.png)
 
-## [App settings](/adguard-for-windows-8/settings/app-settings)
+## [应用设置](/adguard-for-windows-8/settings/app-settings)
 
 Language and theme, update channel and interval, advanced options for experienced users, and a filter editor to quickly create custom rules.
 
-## [License](/adguard-for-windows-8/settings/license)
+## [许可证](/adguard-for-windows-8/settings/license)
 
 Information about license type, number of available devices, and activation code, with options to refresh or reset license and bind it to your AdGuard account.
 
-## [Support](/adguard-for-windows-8/settings/support)
+## [支持](/adguard-for-windows-8/settings/support)
 
 FAQ and support form, tools to report missed ads and request new features, possibility to rate the app, share feedback, and access AdGuard social networks.
 
-## [About](/adguard-for-windows-8/settings/about)
+## [关于](/adguard-for-windows-8/settings/about)
 
 Details about app version and libraries, as well as links to legal documents.

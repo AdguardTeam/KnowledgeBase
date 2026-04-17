@@ -11,7 +11,7 @@ Cet article parle de AdGuard pour iOS, un bloqueur de contenus multifonctionnel 
 
 - [Protection Safari](/adguard-for-ios/features/safari-protection.md)
 
-  Available features and settings in the _Safari protection_ tab: _Filters_, _User rules_, and _Allowlist_
+  Fonctionnalités et paramètres disponibles dans l'onglet _Protection Safari_ : _Filtres_, _Règles utilisateur_ et _Liste autorisée_
 
 - [Protection DNS](/adguard-for-ios/features/dns-protection/)
 
@@ -35,7 +35,7 @@ Cet article parle de AdGuard pour iOS, un bloqueur de contenus multifonctionnel 
 
 - [Autres fonctionnalités](/adguard-for-ios/features/other-features.md)
 
-  General settings: theme, settings and statistics reset, auto-update, inverting the allowlist, and advanced mode.
+  Mode général : thème, paramètres et réinitialisation des statistiques, mise à jour automatique, inversion de la liste blanche et mode avancé.
 
 - [Compatibilité avec AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 

@@ -52,7 +52,7 @@ User rules and allowlist rules are included in every extension.
 
 _AdGuard for Safari_ activates the AdGuard icon next to the search bar. It’s useful if you want to quickly set up protection for a specific website or block ads manually.
 
-_AdGuard for Safari_ extension also contains advanced rules that aren’t converted to the format supported by Safari. These include [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), which allow AdGuard to block complex ads, such as those on YouTube.
+_AdGuard for Safari_ extension also contains advanced rules that aren’t converted to the format supported by Safari. Isso inclui [regras CSS](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [seletores CSS Estendidos](/general/ad-filtering/create-own-filters#extended-css-selectors) e [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), que permitem que o AdGuard bloqueie anúncios complexos, como aqueles no YouTube.
 
 ## Como gerenciar as extensões do Safari
 

@@ -47,7 +47,7 @@ _AdGuard Otros_ contiene filtros con varias funciones. Por ejemplo, tiene un fil
 
 :::note Importante
 
-We don’t have any “acceptable ads” paid by advertisers. Instead, we provide users with an option to see [search ads and websites’ self-promotion](/general/ad-filtering/search-ads).
+We don’t have any “acceptable ads” paid by advertisers. En su lugar, ofrecemos a los usuarios la opción de ver [anuncios de búsqueda y autopromoción de sitios web](/general/ad-filtering/search-ads).
 
 :::
 

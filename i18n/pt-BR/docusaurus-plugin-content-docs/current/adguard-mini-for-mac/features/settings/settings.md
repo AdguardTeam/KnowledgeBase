@@ -9,11 +9,11 @@ In _Settings_, you can set up basic things like filters, filter updates, launchi
 
 The main two sections are:
 
-- [Filters](/adguard-mini-for-mac/features/settings/filters.md)
+- [Filtros](/adguard-mini-for-mac/features/settings/filters.md)
 
   Different filters that allow you to customize your ad blocking experience
 
-- [Safari extensions](/adguard-mini-for-mac/features/settings/safari-extensions.md)
+- [Extensões para Safari](/adguard-mini-for-mac/features/settings/safari-extensions.md)
 
   Info on the current state of content blockers — how many rules and filters are enabled for each of them
 

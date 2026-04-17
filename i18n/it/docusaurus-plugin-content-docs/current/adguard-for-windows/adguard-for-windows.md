@@ -19,7 +19,7 @@ Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunziona
 
 - [Browser Assistant](/adguard-for-windows/browser-assistant.md)
 
-  An extension that complements the desktop app and allows you to manage filtering from your browser
+  Un'estensione che completa l'app per sistemi fissi e consente di gestire il filtraggio dal browser
 
 - [Risoluzione problemi](/adguard-for-windows/solving-problems/solving-problems.md)
 

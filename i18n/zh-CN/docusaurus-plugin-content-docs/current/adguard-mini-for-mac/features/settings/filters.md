@@ -3,22 +3,22 @@ title: 过滤器
 sidebar_position: 2
 ---
 
-![Filters tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/filters.png)
+![过滤器标签](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/filters.png)
 
 前往「_设置_」→「_过滤_」，启用单独的过滤器或整个过滤器类别。
 
-Filters are the backbone of ad blocking and basically it’s what keeps the Internet clean. 过滤器是用特殊语法编写的规则列表。 根据这些规则，内容拦截器可以过滤网络流量：拦截广告或对恶意网站的请求。
+过滤器是广告拦截的核心，本质上正是它们让互联网保持整洁。 过滤器是用特殊语法编写的规则列表。 内容拦截器遵循这些规则来过滤网络流量：拦截广告或恶意网站的请求。
 
-Filters are combined into eight thematic categories: _Ad Blocking, Privacy, Social widgets, Annoyances, Security, Language-specific filters, Custom,_ and _Other filters_.
+过滤器共分为八个主题类别：广告拦截、隐私、社交插件、恼人元素、安全、语言专用过滤器、自定义过滤器和其他过滤器。
 
-了解更多有关 [AdGuard 过滤器](/general/ad-filtering/adguard-filters)或[一般广告过滤](/general/ad-filtering/how-ad-blocking-works)的信息。
+阅读更多关于 [AdGuard 过滤器](/general/ad-filtering/adguard-filters) 或[广告过滤的一般信息(/general/ad-filtering/how-ad-blocking-works)。
 
-Changes in _Filters_ are also reflected in _Settings_ → _Safari extensions_.
+过滤器的更改也会同步反映在「设置」→「Safari 扩展」中。
 
 ## 自定义过滤器
 
-![Create custom filter](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/create-custom.png)
+![建立自定义过滤器](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/create-custom.png)
 
-To add a custom filter, go to _Settings_ → _Filters_ → _Custom filters_ and enter a URL or a local file path in the relevant field.
+要添加自定义过滤器，请转到「设置」→「过滤器」→「自定义过滤器」，并在相关字段中输入 URL 或本地文件路径。
 
-You can find a lot of filters at [filterlists.com](https://filterlists.com/).
+在 [filterlists.com](https://filterlists.com/) 上可以找到很多过滤器。

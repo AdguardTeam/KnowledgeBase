@@ -26,3 +26,9 @@ _İzleme koruması_ özellikleri, sitelerin internette onları bulmak için kull
 Tarayıcı uzantıları belirli bir tarayıcıyla sınırlıdır ve o tarayıcının teknik kısıtlamalarına tabidir. Bu sebeple, tam teşekküllü reklam engelleme uygulamalarında bulunan tüm izleme koruma özelliklerini sunamazlar.
 
 :::
+
+:::caution
+
+In AdGuard Browser Extension, the _Block WebRTC_ option works globally — it either blocks or allows WebRTC for all websites. It cannot be controlled on a per-site basis. Exception rules like `@@||example.com^$stealth=webrtc` have no effect in the browser extension because the `webrtc` option is not among the [supported `$stealth` modifier options](/general/ad-filtering/create-own-filters#stealth-modifier). If you need per-site WebRTC control, use the full-fledged AdGuard app for Windows, Mac, or Android.
+
+:::

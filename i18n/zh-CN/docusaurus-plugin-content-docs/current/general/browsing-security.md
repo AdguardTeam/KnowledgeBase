@@ -63,11 +63,11 @@ AdGuard 维护一个广泛的网络钓鱼和恶意软件网站数据库，并在
 
 ### 帮助我们
 
-我们非常感谢大家给予我们的帮助！ 如果有用户遇到钓鱼网站或恶意软件网站，请向 [support@adguard.com](mailto:support@adguard.com) 报告。
+我们非常感谢大家给予我们的帮助！ If you encounter a phishing or malware website, please report it to [support@adguard.com](mailto:support@adguard.com).
 
 ### 假阳性反应
 
-偶尔会有一些非恶意网站被添加到 AdGuard 的过滤器中。 我们尽最大努力降低误报率，但误报依然可能发生。 如果有用户遇到 AdGuard 的错误行为，请通过 [support@adguard.com](mailto:support@adguard.com) 向我们的技术支持报告误报情况。
+偶尔会有一些非恶意网站被添加到 AdGuard 的过滤器中。 我们尽最大努力降低误报率，但误报依然可能发生。 If you encounter this behavior from AdGuard, please report the false positive to our technical support at [support@adguard.com](mailto:support@adguard.com).
 
 ## 发现可疑网站
 

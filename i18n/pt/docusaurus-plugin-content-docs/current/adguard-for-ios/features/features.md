@@ -35,7 +35,7 @@ This article is about AdGuard for iOS, a multifunctional ad blocker that protect
 
 - [Other features](/adguard-for-ios/features/other-features.md)
 
-  General settings: theme, settings and statistics reset, auto-update, inverting the allowlist, and advanced mode.
+  Definições gerais: tema, reposição de definições e estatísticas, atualização automática, inversão da lista de permissões e modo avançado.
 
 - [Compatibility with AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 

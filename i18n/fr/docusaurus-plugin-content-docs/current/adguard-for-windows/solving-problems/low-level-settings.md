@@ -112,8 +112,8 @@ Host: example.org`
 
 sera convertie en
 
-`GET /foo/bar/ HTTP/1.1
-Host: example.org`
+`GET  /foo/bar/ HTTP/1.1
+Host:example.org`
 
 Cette option n'est appliquée que lorsque l'option *Protection contre l'inspection approfondie des paquets* du mode furtif est activée.
 

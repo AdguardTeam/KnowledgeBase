@@ -15,19 +15,19 @@ AdGuard para Windows é uma ferramenta fácil de usar que bloqueia banners, pop-
 
 On the Home screen, you’ll find a toggle to enable or disable AdGuard protection, as well as icons for _Ad blocking_, _Tracking protection_, _DNS protection_, and _Annoyance blocking_. Main settings can be accessed through the left-side menu.
 
-## [Protection](/adguard-for-windows-8/protection/)
+## [Proteção](/adguard-for-windows-8/protection/)
 
 Settings to configure _Ad blocking_, _Tracking protection_, _DNS protection_, _Annoyances blocking_, _Browsing security_, _Parental control_, and _Extensions_.
 
-## [Statistics](/adguard-for-windows-8/statistics/)
+## [Estatísticas](/adguard-for-windows-8/statistics/)
 
 Detailed information about blocked ads, trackers, and data usage.
 
-## [App management](/adguard-for-windows-8/app-management/)
+## [Gerenciamento de aplicativos](/adguard-for-windows-8/app-management/)
 
 Settings to customize traffic filtering and routing for each app and browser.
 
-## [Settings](/adguard-for-windows-8/settings/)
+## [Configurações](/adguard-for-windows-8/settings/)
 
 Options to select language and theme, view legal documents, check license information, and contact support. Advanced settings and network settings also live there.
 

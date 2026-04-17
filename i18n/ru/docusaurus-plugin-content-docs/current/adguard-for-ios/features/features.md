@@ -11,7 +11,7 @@ sidebar_position: 1
 
 - [Защита Safari](/adguard-for-ios/features/safari-protection.md)
 
-  Available features and settings in the _Safari protection_ tab: _Filters_, _User rules_, and _Allowlist_
+  Доступные функции и настройки во вкладке _Защита Safari_: _Фильтры_, _Пользовательские правила_ и _Белый список_
 
 - [DNS-защита](/adguard-for-ios/features/dns-protection/)
 
@@ -35,7 +35,7 @@ sidebar_position: 1
 
 - [Другие функции](/adguard-for-ios/features/other-features.md)
 
-  General settings: theme, settings and statistics reset, auto-update, inverting the allowlist, and advanced mode.
+  Основные настройки: тема, сброс настроек и статистики, автообновление, инвертирование белого списка и расширенный режим.
 
 - [Совместимость с AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 

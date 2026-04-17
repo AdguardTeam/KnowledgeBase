@@ -44,11 +44,7 @@ Bevor Sie mit dem manuellen Schreiben eigener Regeln beginnen, lesen Sie unsere 
 
 Viele Websites sammeln Informationen über Personen, die sie besuchen, z. B. ihre IP-Adressen, Informationen über den Browser und das installierte Betriebssystem, die Bildschirmauflösung und sogar darüber, von welcher Seite die Benutzer:innen kamen oder weitergeleitet wurden. Einige Webseiten verwenden Cookies, um den Browser zu kennzeichnen und Ihre persönlichen Einstellungen und Vorlieben zu speichern oder Sie bei Ihrem nächsten Besuch wiederzuerkennen. Dadurch können sie Sie bei Ihrem nächsten Besuch „wiedererkennen“. Tracking-Schutz bewahrt Ihre persönlichen Informationen vor solchen Daten- und Statistiksammelsystemen.
 
-![Tracking-Schutzstufen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection1.png)
-
 Sie können die Einstellungen für den _Tracking-Schutz_ nach Bedarf anpassen. Beispielsweise können Sie verhindern, dass Websites die Suchanfrage erfahren, mit der Sie sie im Internet gefunden haben, automatisch Cookies von Drittanbietern und Erstanbietern löschen und die Standortfreigabe in Ihrem Browser deaktivieren, um die Verfolgung Ihres Aufenthaltsorts zu unterbinden.
-
-![Benutzerdefinierte Funktionen für den Tracking-Schutz \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection2.png)
 
 Um alles über den _Tracking-Schutz_ und seine Optionen zu erfahren, [lesen Sie diesen Artikel](/general/stealth-mode).
 

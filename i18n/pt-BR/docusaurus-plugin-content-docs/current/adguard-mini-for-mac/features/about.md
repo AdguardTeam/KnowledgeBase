@@ -19,6 +19,6 @@ You can also find the links to:
 
 :::note Lembrete
 
-AdGuard Mini for Mac can be downloaded for free [from the App Store](https://agrd.io/mini_mac). A detailed setup instruction is available in [this Knowledge Base article](/adguard-mini-for-mac/installation/).
+AdGuard Mini for Mac can be downloaded for free [from the App Store](https://agrd.io/mini_mac). Uma instrução de configuração detalhada está disponível neste artigo da Base de conhecimento (/adguard-mini-for-mac/installation/).
 
 :::

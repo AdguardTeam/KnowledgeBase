@@ -427,7 +427,7 @@ V současné době umožňují vytvářet a spravovat uživatelské styly dvě a
 
 :::
 
-Jedná se o experimentální funkci, takže pokud se při přidávání nebo vytváření uživatelského stylu setkáte s jakýmikoli problémy, kontaktujte prosím náš tým podpory na [support@adguard.com](mailto:support@adguard.com).
+This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at [support@adguard.com](mailto:support@adguard.com).
 
 ### Jak nastavit uživatelský styl v AdGuardu
 

@@ -27,7 +27,7 @@ Dieser Artikel behandelt AdGuard für Mac, einem multifunktionalen Werbeblocker,
 
 - [Privatsphäre](/adguard-for-mac/features/stealth.md)
 
-  Settings to block cookies, UTM tags, and online analytics that collect user information
+  Einstellungen zum Blockieren von Cookies, UTM-Tags und Analyse-Tools, die Nutzerdaten sammeln
 
 - [Sicherheit](/adguard-for-mac/features/security.md)
 

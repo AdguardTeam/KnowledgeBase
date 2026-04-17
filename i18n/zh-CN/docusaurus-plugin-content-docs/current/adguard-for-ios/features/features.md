@@ -35,7 +35,7 @@ sidebar_position: 1
 
 - [其他功能](/adguard-for-ios/features/other-features.md)
 
-  General settings: theme, settings and statistics reset, auto-update, inverting the allowlist, and advanced mode.
+  常规设置：主题、重置设置和统计数据、自动更新、反转允许列表、高级模式。
 
 - [与 AdGuard VPN 的兼容](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 

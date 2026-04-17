@@ -67,7 +67,7 @@ _Ochrana_ (ikona štítu v dolní liště menu) → _DNS ochrana_ → _DNS filtr
 
 #### DNS filtry {#dns-filters}
 
-Podobně jako filtry v prohlížeči Safari jsou DNS filtry sadami pravidel zapsaných podle speciální [syntaxe](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard bude monitorovat provoz DNS a blokovat požadavky, které odpovídají jednomu nebo více pravidlům. Můžete použít filtry, jako je [filtr AdGuard DNS](https://github.com/AdguardTeam/AdguardSDNSFilter), nebo přidat soubory hostitelů jako filtry. Lze přidávat více filtrů současně. Chcete-li vědět, jak na to, seznamte se s [touto vyčerpávající příručkou](/adguard-for-ios/solving-problems/system-wide-filtering).
+Podobně jako filtry v prohlížeči Safari jsou DNS filtry sadami pravidel zapsaných podle speciální [syntaxe](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard bude monitorovat provoz DNS a blokovat požadavky, které odpovídají jednomu nebo více pravidlům. Můžete použít filtry, jako je [filtr AdGuard DNS](https://github.com/AdguardTeam/AdguardSDNSFilter), nebo přidat soubory hostitelů jako filtry. Lze přidávat více filtrů současně. To know how to do it, get acquainted with [this exhaustive manual](/adguard-for-ios/solving-problems/system-wide-filtering).
 
 #### Seznam povolených a seznam zakázaných {#allowlist-blocklist}
 

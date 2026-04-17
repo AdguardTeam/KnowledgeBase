@@ -51,4 +51,4 @@ sidebar_position: 11
 
 [了解有关 HTTPS 过滤以及证书如何工作的更多信息](/general/https-filtering/what-is-https-filtering.md)。
 
-如问题仍然存在使您无法安装证书，请联系我们的客户支持团队 [support@adguard.com](mailto:support@adguard.com)。
+If you still encounter a problem and can’t install the certificate, please contact our support team at [support@adguard.com](mailto:support@adguard.com).

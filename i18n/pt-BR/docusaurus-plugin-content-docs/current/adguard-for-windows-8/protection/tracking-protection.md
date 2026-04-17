@@ -67,7 +67,7 @@ With this option, you can set a time limit (in minutes) after which all third-pa
 
 :::caution
 
-Keep in mind that this setting removes all third-party cookies, including those used for logins via social networks or other external services. This means you may need to log in again from time to time or deal with other cookie-related issues. If you only want to block tracking cookies, use [_AdGuard Tracking Protection filter_](/general/ad-filtering/filter-policy/#tracking-protection-filter).
+Keep in mind that this setting removes all third-party cookies, including those used for logins via social networks or other external services. This means you may need to log in again from time to time or deal with other cookie-related issues. Se você deseja bloquear apenas cookies de rastreamento, use o [_Filtro de proteção contra rastreamento do AdGuard_](/general/ad-filtering/filter-policy/#tracking-protection-filter).
 
 :::
 
