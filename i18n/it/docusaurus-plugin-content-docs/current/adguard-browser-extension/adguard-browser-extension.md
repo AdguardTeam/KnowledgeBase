@@ -23,7 +23,7 @@ Questo articolo riguarda l'Estensione di browser AdGuard, che protegge solo il t
 
 - [Compatibilità con l'app autonoma](/adguard-browser-extension/compatibility)
 
-  Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
+  Compatibilità dell'estensione AdGuard per browser con le app AdGuard per sistemi fissi
 
 - [Estensione di browser AdGuard per Chrome MV3](/adguard-browser-extension/mv3-version/)
 

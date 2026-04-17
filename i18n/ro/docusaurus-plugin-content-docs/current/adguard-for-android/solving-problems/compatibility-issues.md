@@ -38,7 +38,7 @@ Unii producători de dispozitive țin setările DNS-ului privat ascunse și sete
 
 Pentru a putea filtra traficul HTTPS, AdGuard cere utilizatorului să adauge un certificat în certificatele de utilizator de încredere ale dispozitivului. Din păcate, browserele UC nu au încredere în certificatele utilizatorului, așa că AdGuard nu poate efectua filtrare HTTPS acolo.
 
-- Pentru a rezolva această problemă, mutați [certificatul în magazinul de certificate al sistemului](../solving-problems/https-certificate-for-rooted.md)
+- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md)
 
 :::note Compatibility
 

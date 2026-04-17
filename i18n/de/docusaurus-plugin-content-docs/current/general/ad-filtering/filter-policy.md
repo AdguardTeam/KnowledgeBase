@@ -205,7 +205,7 @@ This is a filter that blocks various widgets that are not essential for the func
 
 - Widgets for content recommendations — related articles, similar websites, various personalized recommendations
 - Chat widgets that are not integrated with the content and are not the main content of the page
-- Marketing widgets:
+- Marketing-Widgets:
     - Chats for communication with assistants or bots
     - Widgets with product recommendations that are shown to the user
     - Call-back forms
@@ -213,7 +213,7 @@ This is a filter that blocks various widgets that are not essential for the func
 
 **Beschränkungen und Ausnahmen**
 
-This filter doesn’t block:
+Was wird nicht blockiert?
 
 - Widgets closely related to the content of the page, such as comments sections, live chat streams, with an exception of unmoderated chats on sites with unofficial streams, which are often filled with spam and similar content
 - Widgets for self-promotion and site-specific promotional activities

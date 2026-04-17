@@ -30,7 +30,7 @@ Si vous souhaitez soutenir la mise en œuvre d'une nouvelle fonctionnalité ou d
 
    Le fichier de journal archive sera téléchargé dans le dossier de l'application par défaut, et le chemin vers les journaux sera écrit dans la console.
 
-4. Envoyez le fichier de journalisation à [devteam@adguard.com](mailto:devteam@adguard.com). Indiquez la date de l'erreur et joignez un lien vers votre problème GitHub ou son numéro (il apparaît sous la forme #numéro à côté du titre). Vous pouvez également télécharger le fichier journal sur Google Drive et le partager avec [devteam@adguard.com](mailto:devteam@adguard.com). Ajoutez le lien du fichier à votre problème GitHub.
+4. Send the log file to [devteam@adguard.com](mailto:devteam@adguard.com). Indiquez la date de l'erreur et joignez un lien vers votre problème GitHub ou son numéro (il apparaît sous la forme #numéro à côté du titre). Alternatively, you can upload the log file to Google Drive and share it with [devteam@adguard.com](mailto:devteam@adguard.com). Ajoutez le lien du fichier à votre problème GitHub.
 
 5. Remettez le mode de journalisation sur `info`:
 

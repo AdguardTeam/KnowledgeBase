@@ -112,8 +112,8 @@ Host: example.org`
 
 будет преобразовано в
 
-`GET /foo/bar/ HTTP/1.1
-Host: example.org`
+`GET  /foo/bar/ HTTP/1.1
+Host:example.org`
 
 Эта настройка применяется только в том случае, если в режиме Антитрекинг включён параметр *Защищать от DPI*.
 

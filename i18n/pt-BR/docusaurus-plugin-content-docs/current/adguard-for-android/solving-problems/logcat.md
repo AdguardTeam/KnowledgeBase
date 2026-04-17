@@ -101,7 +101,7 @@ Siga estas instruções:
 
     `adb logcat -v threadtime -d > C:\Arquivos de programas\plataforma-ferramentas\logs.txt`
 
-    Envie por e-mail o arquivo `txt` criado, bem como o horário em que o problema foi reproduzido (da parte #2) para nosso suporte ao cliente em [support@adguard.com](mailto:support@adguard.com).
+    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at [support@adguard.com](mailto:support@adguard.com).
 
 ### Maneira alternativa para usuários com ROOT
 

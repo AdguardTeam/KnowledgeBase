@@ -67,7 +67,7 @@ _Protecție_ (icoana scut în bara de meniu de jos) → _Protecție DNS_ → _Fi
 
 #### Filtre DNS {#dns-filters}
 
-Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard va monitoriza traficul DNS și va bloca solicitările care se potrivesc cu una sau mai multe reguli. Puteți folosi filtre precum [filtrul DNS AdGuard](https://github.com/AdguardTeam/AdguardSDNSFilter) sau adăuga fișiere hosts ca filtre. Multiple filtre pot fi adăugate simultan. Pentru a ști cum se face, familiarizați-vă cu [acest manual exhaustiv](/adguard-for-ios/solving-problems/system-wide-filtering).
+Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard va monitoriza traficul DNS și va bloca solicitările care se potrivesc cu una sau mai multe reguli. Puteți folosi filtre precum [filtrul DNS AdGuard](https://github.com/AdguardTeam/AdguardSDNSFilter) sau adăuga fișiere hosts ca filtre. Multiple filtre pot fi adăugate simultan. To know how to do it, get acquainted with [this exhaustive manual](/adguard-for-ios/solving-problems/system-wide-filtering).
 
 #### Lista permisă și lista de blocări {#allowlist-blocklist}
 

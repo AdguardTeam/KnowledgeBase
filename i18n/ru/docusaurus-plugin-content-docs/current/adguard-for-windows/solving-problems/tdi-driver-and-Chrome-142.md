@@ -33,6 +33,14 @@ TDI-драйвер — это устаревшая технология Windows,
 
 AdGuard уже считает TDI-драйвер устаревшим и планирует его полное удаление.
 
+## Постоянное решение
+
+From v7.22.4, we’ve added experimental support for the SockFilter driver. It fixes the issue by solving conflicts in the WFP stack. [More information](/adguard-for-windows/features/network/#sockfilter-and-other-network-drivers).
+
+To use it, go to _Settings → Network → Traffic filtering_, enable traffic filtering, and select _SockFilter (Experimental)_ from the list of available options.
+
+Since it’s experimental, there may be bugs. If you notice anything unusual, unexpected, or just plain broken, **you can switch back to TDI or WFP at any time** in the same section.
+
 ## Временное решение
 
 Определённые изменения в реестре Windows могут заставить браузер перестать использовать AppContainer, в результате чего его процессы снова будут работать вне песочницы. Network Service прекращает использование стека WSK и переключается на сетевой путь, который виден TDI-драйверу. После этого AdGuard восстанавливает способность фильтровать трафик браузера.
@@ -136,7 +144,3 @@ You can revert these changes using the undo .reg files provided below. These fil
 Если такая опция есть, нажмите _Reload policies_.
 
 Готово!
-
-## Постоянное решение
-
-В будущих версиях мы планируем добавить поддержку драйвера SockFilter. Это решит проблему, устранив конфликты в стеке WFP. [Больше информации](https://github.com/AdguardTeam/AdguardForWindows/issues/5780).

@@ -27,4 +27,4 @@ sidebar_position: 1
 
 - [其他功能](/adguard-for-windows/features/others/)
 
-  Support, license management, tray menu options, app version and updates
+  支持、许可证管理、托盘菜单选项、程序版本和更新。

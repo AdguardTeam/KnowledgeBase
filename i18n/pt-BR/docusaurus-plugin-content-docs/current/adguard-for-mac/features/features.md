@@ -27,7 +27,7 @@ Este artigo é sobre o AdGuard para Mac, um bloqueador de anúncios multifuncion
 
 - [Modo invisível](/adguard-for-mac/features/stealth.md)
 
-  Settings to block cookies, UTM tags, and online analytics that collect user information
+  Configurações de bloqueio cookies, tags UTM e análises online que coletam informações do usuário
 
 - [Segurança](/adguard-for-mac/features/security.md)
 
@@ -35,7 +35,7 @@ Este artigo é sobre o AdGuard para Mac, um bloqueador de anúncios multifuncion
 
 - [Assistente do navegador](/adguard-for-mac/features/browser-assistant.md)
 
-  An extension that complements the desktop app and allows you to manage filtering from your browser
+  Uma extensão que complementa o aplicativo de computador e permite que você gerencie a filtragem do seu navegador
 
 - [Extensões](/adguard-for-mac/features/extensions.md)
 

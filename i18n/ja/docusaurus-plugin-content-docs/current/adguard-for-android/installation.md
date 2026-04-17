@@ -67,7 +67,7 @@ sidebar_position: 2
 
 ## АdGuardのアンインストールや再インストール
 
-モバイル端末でAdGuardをアンインストールする必要がある場合は、デバイスの「*設定*」を開き、*アプリ*（Android 7）または\<「*アプリと通知*」（Android 8以降）を選択してください。 インストールされているアプリのリストでAdGuardを見つけ、「*削除する*」を押します。
+モバイル端末でAdGuardをアンインストールする必要がある場合は、デバイスの「*設定*」を開き、*アプリ*（Android 7）または「*アプリと通知*」（Android 8以降）を選択してください。 インストールされているアプリのリストでAdGuardを見つけ、「*削除する*」を押します。
 
 ![AdGuardを再インストール *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 

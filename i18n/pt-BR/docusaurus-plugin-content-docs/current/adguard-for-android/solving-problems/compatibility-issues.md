@@ -38,7 +38,7 @@ Alguns fabricantes de dispositivos mantêm as configurações de DNS privado ocu
 
 Para poder filtrar o tráfego HTTPS, o AdGuard exige que o usuário adicione um certificado aos certificados de usuário confiáveis do dispositivo. Infelizmente, os navegadores UC não confiam nos certificados do usuário, então o AdGuard não pode executar a filtragem HTTPS neles.
 
-- Para resolver este problema, mova o certificado [para o armazenamento de certificados do sistema](../solving-problems/https-certificate-for-rooted.md)
+- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md)
 
 :::note Compatibilidade
 

@@ -21,4 +21,4 @@ Mit dem Filter-Editor können Sie:
 
 Mit dem Filter-Editor lassen sich Werbung und Inhalte präzise steuern und blockieren. Wenn Sie mit dem Erstellen eigener Regeln noch nicht vertraut sind, finden Sie in unserem Artikel eine Anleitung hierzu.
 
-[So erstellen Sie eigene Filterregeln](/general/ad-filtering/create-own-filters/)
+[How to create own rules](/general/ad-filtering/create-own-filters/)

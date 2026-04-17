@@ -112,8 +112,8 @@ Host: example.org`
 
 将转换为
 
-`GET /foo/bar/ HTTP/1.1
-Host: example.org`
+`GET  /foo/bar/ HTTP/1.1
+Host:example.org`
 
 此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
 

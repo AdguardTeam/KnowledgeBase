@@ -44,17 +44,13 @@ sidebar_position: 2
 
 Many websites gather information about their visitors, such as their IP addresses, browser and operating system details, screen resolution, and the webpage from which the user came or was redirected. Some websites use cookies to mark and identify your browser, save your personal settings and preferences. This allows them to “recognize” you on your next visit. Tracking protection safeguards your personal information from these data- and statistics-gathering systems.
 
-![Tracking protection levels \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection1.png)
-
 You can adjust the _Tracking Protection_ settings as needed. For example, you can prevent websites from receiving the search request that you used to find them on the Internet, automatically delete third- and first-party cookies, and disable location sharing in your browser, to prevent tracking of your whereabouts.
 
-![Tracking protection custom features \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection2.png)
-
-To learn everything about _Tracking protection_ and its many options, [read this article](/general/stealth-mode).
+[Больше о Защите от трекинга](/general/stealth-mode)
 
 ### Защита от фишинга
 
-Browsing security gives strong protection against malicious and phishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it’s already started, nor delete the already existing ones. But it will warn you if you’re about to proceed to a website whose domain has been added to our “untrusted sites” database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
+Browsing security gives strong protection against malicious and phishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it’s already started, nor delete the already existing ones. But it will warn you if you’re about to proceed to a website whose domain has been added to our “untrusted sites” database, or to download a file from such website. [Как работает Защита от фишинга](/general/browsing-security)
 
 In this module, you can:
 
@@ -64,7 +60,7 @@ In this module, you can:
 
 ![Browsing security \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/browsing_security.png)
 
-In case you want to learn more about Browsing security, read [this article](/general/browsing-security).
+[Больше о Защите от фишинга](/general/browsing-security)
 
 ### DNS Protection
 
@@ -97,4 +93,4 @@ In the _Parental control_ module you can enable the _Safe search_ and manage the
 
 ![Browser Assistant \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/browser_assistant.png)
 
-From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](/adguard-for-windows/browser-assistant.md).
+From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. Подробнее о том, как с ним работать и что делать, если для вашего браузера нет Помощника, мы рассказали [в отдельной статье](/adguard-for-windows/browser-assistant.md).

@@ -63,11 +63,11 @@ AdGuard는 피싱 및 악성 웹사이트의 데이터베이스를 관리하고 
 
 ### 피싱 또는 멀웨어 웹사이트 신고
 
-피싱 또는 멀웨어 웹사이트를 발견하면 [support@adguard.com](mailto:support@adguard.com)으로 신고해 주세요.
+피싱 또는 멀웨어 웹사이트를 발견하면 If you encounter a phishing or malware website, please report it to [support@adguard.com](mailto:support@adguard.com).
 
 ### 오탐 응답
 
-간혹 일부 악의적이지 않은 웹사이트가 AdGuard의 필터에 추가될 수 있습니다. 저희는 악의적이지 않은 웹사이트가 AdGuard 필터에 추가되지 않도록 최선을 다하고 있지만, 여전히 발생할 수 있습니다. AdGuard 필터에서 악의적이지 않은 웹사이트를 발견한 경우, 지원팀([support@adguard.com](mailto:support@adguard.com))으로 알려주세요.
+간혹 일부 악의적이지 않은 웹사이트가 AdGuard의 필터에 추가될 수 있습니다. 저희는 악의적이지 않은 웹사이트가 AdGuard 필터에 추가되지 않도록 최선을 다하고 있지만, 여전히 발생할 수 있습니다. If you encounter this behavior from AdGuard, please report the false positive to our technical support at [support@adguard.com](mailto:support@adguard.com).
 
 ## 웹사이트가 의심스러운 경우
 

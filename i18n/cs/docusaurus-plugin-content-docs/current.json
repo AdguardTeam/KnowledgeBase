@@ -5,31 +5,31 @@
   },
   "sidebar.tutorialSidebar.category.General": {
     "message": "Obecné",
-    "description": "The label for category General in sidebar tutorialSidebar"
+    "description": "The label for category 'General' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Ad filtering": {
     "message": "Filtrování reklam",
-    "description": "The label for category Ad filtering in sidebar tutorialSidebar"
+    "description": "The label for category 'Ad filtering' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.HTTPS filtering": {
     "message": "HTTPS filtrování",
-    "description": "The label for category HTTPS filtering in sidebar tutorialSidebar"
+    "description": "The label for category 'HTTPS filtering' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard account": {
     "message": "Účet AdGuard",
-    "description": "The label for category AdGuard account in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard account' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.License": {
     "message": "Licence",
-    "description": "The label for category License in sidebar tutorialSidebar"
+    "description": "The label for category 'License' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Windows": {
     "message": "AdGuard pro Windows",
-    "description": "The label for category AdGuard for Windows in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard for Windows' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Mac": {
     "message": "AdGuard pro macOS",
-    "description": "The label for category AdGuard for Mac in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard for Mac' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Solving problems": {
     "message": "Řešení problémů",
@@ -37,11 +37,11 @@
   },
   "sidebar.tutorialSidebar.category.AdGuard for Android": {
     "message": "AdGuard pro Android",
-    "description": "The label for category AdGuard for Android in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard for Android' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard for iOS": {
     "message": "AdGuard pro iOS",
-    "description": "The label for category AdGuard for iOS in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard for iOS' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard Browser extension": {
     "message": "Rozšíření prohlížeče AdGuard",
@@ -49,27 +49,27 @@
   },
   "sidebar.tutorialSidebar.category.AdGuard for Safari": {
     "message": "AdGuard pro Safari",
-    "description": "The label for category AdGuard for Safari in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard for Safari' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard Content Blocker": {
     "message": "Blokátor obsahu AdGuard",
-    "description": "The label for category AdGuard Content Blocker in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard Content Blocker' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Miscellaneous": {
     "message": "Různé",
-    "description": "The label for category Miscellaneous in sidebar tutorialSidebar"
+    "description": "The label for category 'Miscellaneous' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Contribute to AdGuard": {
     "message": "Přispět na AdGuard",
-    "description": "The label for category Contribute to AdGuard in sidebar tutorialSidebar"
+    "description": "The label for category 'Contribute to AdGuard' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Translating AdGuard": {
     "message": "Překlad AdGuardu",
-    "description": "The label for category Translating AdGuard in sidebar tutorialSidebar"
+    "description": "The label for category 'Translating AdGuard' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Guides": {
     "message": "Průvodci",
-    "description": "The label for category Guides in sidebar tutorialSidebar"
+    "description": "The label for category 'Guides' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Technical support": {
     "message": "Technická podpora",
@@ -77,7 +77,7 @@
   },
   "sidebar.tutorialSidebar.category.AdGuard Browser Extension": {
     "message": "Rozšíření prohlížeče AdGuard",
-    "description": "The label for category AdGuard Browser Extension in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard Browser Extension' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Features overview": {
     "message": "Přehled funkcí",
@@ -89,7 +89,7 @@
   },
   "sidebar.tutorialSidebar.category.Content Blockers": {
     "message": "Blokátory obsahu",
-    "description": "The label for category Content Blockers in sidebar tutorialSidebar"
+    "description": "The label for category 'Content Blockers' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Protection": {
     "message": "Ochrana",
@@ -97,15 +97,15 @@
   },
   "sidebar.tutorialSidebar.category.Firewall": {
     "message": "Firewall",
-    "description": "The label for category Firewall in sidebar tutorialSidebar"
+    "description": "The label for category 'Firewall' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Linux": {
     "message": "AdGuard pro Linux",
-    "description": "The label for category AdGuard for Linux in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard for Linux' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Windows v8": {
     "message": "AdGuard pro Windows v8",
-    "description": "The label for category AdGuard for Windows v8 in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard for Windows v8' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Settings": {
     "message": "Nastavení",
@@ -113,14 +113,90 @@
   },
   "sidebar.tutorialSidebar.category.App settings": {
     "message": "Nastavení aplikace",
-    "description": "The label for category App settings in sidebar tutorialSidebar"
+    "description": "The label for category 'App settings' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard Mini for Mac": {
     "message": "AdGuard Mini pro Mac",
-    "description": "The label for category AdGuard Mini for Mac in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard Mini for Mac' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.solving-problems": {
     "message": "solving-problems",
-    "description": "The label for category solving-problems in sidebar tutorialSidebar"
+    "description": "The label for category 'solving-problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.features-adguard-for-windows": {
+    "message": "Funkce",
+    "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-for-windows": {
+    "message": "Řešení problémů",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.protection-adguard-for-windows-8": {
+    "message": "Ochrana",
+    "description": "The label for category 'Protection' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.settings-adguard-for-windows-8": {
+    "message": "Nastavení",
+    "description": "The label for category 'Settings' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-for-windows-8": {
+    "message": "Řešení problémů",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.features-adguard-for-mac": {
+    "message": "Funkce",
+    "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-for-mac": {
+    "message": "Řešení problémů",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.features-adguard-for-android": {
+    "message": "Funkce",
+    "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.protection-adguard-for-android-features": {
+    "message": "Ochrana",
+    "description": "The label for category 'Protection' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-for-android": {
+    "message": "Řešení problémů",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.features-adguard-for-ios": {
+    "message": "Funkce",
+    "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-for-ios": {
+    "message": "Řešení problémů",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.features-adguard-browser-extension": {
+    "message": "Funkce",
+    "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-browser-extension": {
+    "message": "Řešení problémů",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.features-adguard-for-safari": {
+    "message": "Funkce",
+    "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-for-safari": {
+    "message": "Řešení problémů",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.features-adguard-mini-for-mac": {
+    "message": "Funkce",
+    "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.settings-adguard-mini-for-mac": {
+    "message": "Nastavení",
+    "description": "The label for category 'Settings' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-mini-for-mac": {
+    "message": "Řešení problémů",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
   }
 }

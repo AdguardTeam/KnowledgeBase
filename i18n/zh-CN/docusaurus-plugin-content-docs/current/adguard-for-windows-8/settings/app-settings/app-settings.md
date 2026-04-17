@@ -17,10 +17,10 @@ If you wish, you can agree to send anonymized app usage data to help us improve 
 
 In case of issues, you can change the logging level to create detailed logs for the support team.
 
-In [_Filter editor_](/adguard-for-windows-8/settings/app-settings/filter-editor.md), you can add your own filtering rules or import ready-to-use filters.
+在「 [过滤器编辑器](/adguard-for-windows-8/settings/app-settings/filter-editor.md)」中，您可以添加自定义过滤规则或导入现成的过滤器。
 
-[_Network_ settings](/adguard-for-windows-8/settings/app-settings/network-settings.md) include all options related to network filtering and how AdGuard interacts with your system’s network.
+「[网络设置](/adguard-for-windows-8/settings/app-settings/network-settings.md)」包含与网络过滤以及 AdGuard 如何与系统网络交互相关的所有选项。
 
-[_Advanced_](/adguard-for-windows-8/settings/app-settings/advanced-settings.md) settings are intended for experienced users. They are rarely needed in everyday use and should only be changed if you know what you’re doing or if our support team asks you to.
+「[高级](/adguard-for-windows-8/settings/app-settings/advanced-settings.md)」设置面向有经验的用户。 They are rarely needed in everyday use and should only be changed if you know what you’re doing or if our support team asks you to.
 
 ![App settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/2_app_settings.png)

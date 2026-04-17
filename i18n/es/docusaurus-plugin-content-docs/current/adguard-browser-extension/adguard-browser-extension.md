@@ -11,7 +11,7 @@ Este artículo trata sobre la extensión de navegador AdGuard, que protege solo 
 
 - [Funciones](/adguard-browser-extension/features)
 
-  Main features and settings available in AdGuard Browser Extension
+  Principales funciones y configuraciones disponibles en la extensión de navegador AdGuard
 
 - [Disponibilidad](/adguard-browser-extension/availability)
 
@@ -23,7 +23,7 @@ Este artículo trata sobre la extensión de navegador AdGuard, que protege solo 
 
 - [Compatibilidad con la app independiente](/adguard-browser-extension/compatibility)
 
-  Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
+  Compatibilidad de la extensión de navegador AdGuard con las aplicaciones de escritorio de AdGuard
 
 - [Extensión de navegador de AdGuard para Chrome MV3](/adguard-browser-extension/mv3-version/)
 

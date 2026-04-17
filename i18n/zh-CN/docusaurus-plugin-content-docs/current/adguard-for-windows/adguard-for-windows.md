@@ -19,7 +19,7 @@ sidebar_position: 1
 
 - [AdGuard 助手](/adguard-for-windows/browser-assistant.md)
 
-  An extension that complements the desktop app and allows you to manage filtering from your browser
+  该扩展是桌面程序的补充，让用户通过浏览器管理过滤功能。
 
 - [解决问题](/adguard-for-windows/solving-problems/solving-problems.md)
 

@@ -5,31 +5,31 @@
   },
   "sidebar.tutorialSidebar.category.General": {
     "message": "Generali",
-    "description": "The label for category General in sidebar tutorialSidebar"
+    "description": "The label for category 'General' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Ad filtering": {
     "message": "Filtraggio annunci",
-    "description": "The label for category Ad filtering in sidebar tutorialSidebar"
+    "description": "The label for category 'Ad filtering' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.HTTPS filtering": {
     "message": "Filtraggio HTTPS",
-    "description": "The label for category HTTPS filtering in sidebar tutorialSidebar"
+    "description": "The label for category 'HTTPS filtering' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard account": {
     "message": "Profilo AdGuard",
-    "description": "The label for category AdGuard account in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard account' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.License": {
     "message": "Licenza",
-    "description": "The label for category License in sidebar tutorialSidebar"
+    "description": "The label for category 'License' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Windows": {
     "message": "AdGuard per Windows",
-    "description": "The label for category AdGuard for Windows in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard for Windows' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Mac": {
     "message": "AdGuard per Mac",
-    "description": "The label for category AdGuard for Mac in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard for Mac' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Solving problems": {
     "message": "Risoluzione problemi",
@@ -37,11 +37,11 @@
   },
   "sidebar.tutorialSidebar.category.AdGuard for Android": {
     "message": "AdGuard per Android",
-    "description": "The label for category AdGuard for Android in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard for Android' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard for iOS": {
     "message": "AdGuard per iOS",
-    "description": "The label for category AdGuard for iOS in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard for iOS' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard Browser extension": {
     "message": "Estensione AdGuard Browser",
@@ -49,27 +49,27 @@
   },
   "sidebar.tutorialSidebar.category.AdGuard for Safari": {
     "message": "AdGuard per Safari",
-    "description": "The label for category AdGuard for Safari in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard for Safari' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard Content Blocker": {
     "message": "Blocco contenuti AdGuard",
-    "description": "The label for category AdGuard Content Blocker in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard Content Blocker' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Miscellaneous": {
     "message": "Varie",
-    "description": "The label for category Miscellaneous in sidebar tutorialSidebar"
+    "description": "The label for category 'Miscellaneous' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Contribute to AdGuard": {
     "message": "Contribuisci ad AdGuard",
-    "description": "The label for category Contribute to AdGuard in sidebar tutorialSidebar"
+    "description": "The label for category 'Contribute to AdGuard' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Translating AdGuard": {
     "message": "Tradurre AdGuard",
-    "description": "The label for category Translating AdGuard in sidebar tutorialSidebar"
+    "description": "The label for category 'Translating AdGuard' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Guides": {
     "message": "Guide",
-    "description": "The label for category Guides in sidebar tutorialSidebar"
+    "description": "The label for category 'Guides' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Technical support": {
     "message": "Supporto tecnico",
@@ -77,7 +77,7 @@
   },
   "sidebar.tutorialSidebar.category.AdGuard Browser Extension": {
     "message": "Estensione del Browser di AdGuard",
-    "description": "The label for category AdGuard Browser Extension in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard Browser Extension' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Features overview": {
     "message": "Panoramica delle funzionalità",
@@ -89,7 +89,7 @@
   },
   "sidebar.tutorialSidebar.category.Content Blockers": {
     "message": "Bloccatori di contenuti",
-    "description": "The label for category Content Blockers in sidebar tutorialSidebar"
+    "description": "The label for category 'Content Blockers' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Protection": {
     "message": "Protezione",
@@ -97,15 +97,15 @@
   },
   "sidebar.tutorialSidebar.category.Firewall": {
     "message": "Firewall",
-    "description": "The label for category Firewall in sidebar tutorialSidebar"
+    "description": "The label for category 'Firewall' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Linux": {
     "message": "AdGuard per Linux",
-    "description": "The label for category AdGuard for Linux in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard for Linux' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Windows v8": {
     "message": "AdGuard per Windows v8",
-    "description": "The label for category AdGuard for Windows v8 in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard for Windows v8' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Settings": {
     "message": "Impostazioni",
@@ -113,14 +113,90 @@
   },
   "sidebar.tutorialSidebar.category.App settings": {
     "message": "Impostazioni app",
-    "description": "The label for category App settings in sidebar tutorialSidebar"
+    "description": "The label for category 'App settings' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard Mini for Mac": {
     "message": "AdGuard Mini per Mac",
-    "description": "The label for category AdGuard Mini for Mac in sidebar tutorialSidebar"
+    "description": "The label for category 'AdGuard Mini for Mac' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.solving-problems": {
     "message": "solving-problems",
-    "description": "The label for category solving-problems in sidebar tutorialSidebar"
+    "description": "The label for category 'solving-problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.features-adguard-for-windows": {
+    "message": "Funzioni",
+    "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-for-windows": {
+    "message": "Risoluzione problemi",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.protection-adguard-for-windows-8": {
+    "message": "Protezione",
+    "description": "The label for category 'Protection' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.settings-adguard-for-windows-8": {
+    "message": "Impostazioni",
+    "description": "The label for category 'Settings' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-for-windows-8": {
+    "message": "Risoluzione problemi",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.features-adguard-for-mac": {
+    "message": "Funzioni",
+    "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-for-mac": {
+    "message": "Risoluzione problemi",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.features-adguard-for-android": {
+    "message": "Funzioni",
+    "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.protection-adguard-for-android-features": {
+    "message": "Protezione",
+    "description": "The label for category 'Protection' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-for-android": {
+    "message": "Risoluzione problemi",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.features-adguard-for-ios": {
+    "message": "Funzioni",
+    "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-for-ios": {
+    "message": "Risoluzione problemi",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.features-adguard-browser-extension": {
+    "message": "Funzioni",
+    "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-browser-extension": {
+    "message": "Risoluzione problemi",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.features-adguard-for-safari": {
+    "message": "Funzioni",
+    "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-for-safari": {
+    "message": "Risoluzione problemi",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.features-adguard-mini-for-mac": {
+    "message": "Funzioni",
+    "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.settings-adguard-mini-for-mac": {
+    "message": "Impostazioni",
+    "description": "The label for category 'Settings' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-mini-for-mac": {
+    "message": "Risoluzione problemi",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
   }
 }

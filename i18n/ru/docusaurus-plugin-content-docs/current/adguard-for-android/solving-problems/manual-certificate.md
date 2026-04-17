@@ -51,4 +51,4 @@ sidebar_position: 11
 
 [Узнайте больше о HTTPS-фильтрации и о том, как работает сертификат](/general/https-filtering/what-is-https-filtering.md).
 
-Если проблему не удаётся решить и вы по-прежнему не можете установить сертификат, напишите нашей команде поддержки по адресу [support@adguard.com](mailto:support@adguard.com).
+If you still encounter a problem and can’t install the certificate, please contact our support team at [support@adguard.com](mailto:support@adguard.com).

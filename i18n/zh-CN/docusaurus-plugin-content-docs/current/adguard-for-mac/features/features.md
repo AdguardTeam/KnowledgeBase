@@ -27,7 +27,7 @@ sidebar_position: 1
 
 - [隐身模式](/adguard-for-mac/features/stealth.md)
 
-  Settings to block cookies, UTM tags, and online analytics that collect user information
+  用于拦截 Cookie、UTM 标签以及收集用户信息的在线分析工具的设置
 
 - [安全](/adguard-for-mac/features/security.md)
 
@@ -35,7 +35,7 @@ sidebar_position: 1
 
 - [AdGuard 助手](/adguard-for-mac/features/browser-assistant.md)
 
-  An extension that complements the desktop app and allows you to manage filtering from your browser
+  该扩展是桌面程序的补充，让用户通过浏览器管理过滤功能。
 
 - [扩展](/adguard-for-mac/features/extensions.md)
 

@@ -112,8 +112,8 @@ Host: example.org`
 
 は、以下に変換されます:
 
-`GET /foo/bar/ HTTP/1.1
-Host: example.org`
+`GET  /foo/bar/ HTTP/1.1
+Host:example.org`
 
 このオプションは、「*DPIから保護する*」というステルスモード機能が有効になっている場合にのみ適用されます。
 

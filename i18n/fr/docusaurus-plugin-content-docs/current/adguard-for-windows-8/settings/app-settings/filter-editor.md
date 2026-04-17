@@ -21,4 +21,4 @@ Avec l'éditeur de filtres, vous pouvez :
 
 L'éditeur de filtres est particulièrement utile pour les utilisateurs avancés qui souhaitent affiner le blocage des publicités en contrôlant précisément ce qui est bloqué ou autorisé. Si vous n'êtes pas familier avec la création des règles, nous avons un article pour vous aider à apprendre comment faire.
 
-[Comment créer des règles](/general/ad-filtering/create-own-filters/)
+[How to create own rules](/general/ad-filtering/create-own-filters/)

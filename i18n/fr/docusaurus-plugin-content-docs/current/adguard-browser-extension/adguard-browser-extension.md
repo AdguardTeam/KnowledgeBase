@@ -23,7 +23,7 @@ Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement 
 
 - [Compatibilité avec l'application autonome](/adguard-browser-extension/compatibility)
 
-  Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
+  Compatibilité de l'Extension de navigateur AdGuard avec les applications de bureau AdGuard
 
 - [Extension de navigateur AdGuard pour Chrome MV3](/adguard-browser-extension/mv3-version/)
 

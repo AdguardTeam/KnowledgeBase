@@ -1239,6 +1239,7 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 
 - Tracking protection (formerly Stealth Mode) is available in AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox and Chromium-based browsers, except AdGuard for Chrome MV3. All other products will ignore the rules with `$stealth` modifier.
 - Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+- In AdGuard Browser Extension, *Block WebRTC* is applied globally and cannot be controlled on a per-site basis. Exception rules like `$stealth=webrtc` have no effect.
 
 :::
 
@@ -2757,7 +2758,7 @@ This modifier completely changes the rule behavior. If it is applied, the rule w
 
 You will need some knowledge of regular expressions to use `$replace` modifier.
 
-**Features**
+**功能**
 
 - `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc.).
 - `$replace` rules do not apply if the size of the original response is more than 10 MB.
@@ -2830,7 +2831,7 @@ Rules with `$replace` modifier are supported by AdGuard for Windows, AdGuard for
 
 The `$urltransform` rules allow you to modify the request URL by replacing text matched by a regular expression.
 
-**Features**
+**功能**
 
 - `$urltransform` rules normally only apply to the path and query parts of the URL, see below for one exception.
 - `$urltransform` will not be applied if the original URL is blocked by other rules.

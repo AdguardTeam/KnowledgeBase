@@ -11,7 +11,7 @@ sidebar_position: 1
 
 - [Функции](/adguard-for-windows/features/features.md)
 
-  Main features and settings available in AdGuard for Windows
+  Основные функции и настройки, доступные в AdGuard для Windows
 
 - [Установка](/adguard-for-windows/installation.md)
 
@@ -19,7 +19,7 @@ sidebar_position: 1
 
 - [Браузерный помощник](/adguard-for-windows/browser-assistant.md)
 
-  An extension that complements the desktop app and allows you to manage filtering from your browser
+  Расширение, которое дополняет десктопное приложение и позволяет управлять фильтрацией из браузера
 
 - [Решение проблем](/adguard-for-windows/solving-problems/solving-problems.md)
 

@@ -67,7 +67,7 @@ _Protección_ (el icono de escudo en la barra de menú inferior) → _Protecció
 
 #### Filtrado de DNS {#dns-filters}
 
-Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard supervisará tu tráfico DNS y bloqueará las peticiones que cumplan una o más reglas. Puedes utilizar filtros como el [filtro de AdGuard DNS](https://github.com/AdguardTeam/AdguardSDNSFilter) o agregar archivos de hosts como filtros. Se pueden añadir varios filtros simultáneamente. Para saber cómo hacerlo, familiarízate con [este manual](/adguard-for-ios/solving-problems/system-wide-filtering).
+Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard supervisará tu tráfico DNS y bloqueará las peticiones que cumplan una o más reglas. Puedes utilizar filtros como el [filtro de AdGuard DNS](https://github.com/AdguardTeam/AdguardSDNSFilter) o agregar archivos de hosts como filtros. Se pueden añadir varios filtros simultáneamente. To know how to do it, get acquainted with [this exhaustive manual](/adguard-for-ios/solving-problems/system-wide-filtering).
 
 #### Lista de permitidos y Lista de bloqueo {#allowlist-blocklist}
 

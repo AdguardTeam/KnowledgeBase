@@ -63,11 +63,11 @@ Wir analysieren automatisch Beschwerden über verdächtige Websites und verbring
 
 ### Möchten Sie mithelfen?
 
-Jede Hilfe ist willkommen! Wenn Sie auf eine Phishing- oder Malware-Website stoßen, melden Sie sie bitte an [support@adguard.com](mailto:support@adguard.com).
+Jede Hilfe ist willkommen! If you encounter a phishing or malware website, please report it to [support@adguard.com](mailto:support@adguard.com).
 
 ### Falsch-positive Antworten
 
-Gelegentlich werden den AdGuard-Filtern auch einige nicht bösartige Websites hinzugefügt. Wir tun unser Bestes, um den Prozentsatz der Falschmeldungen zu verringern, aber sie kommen trotzdem vor. Wenn Sie dieses Verhalten von AdGuard feststellen, melden Sie bitte den Fehlalarm an unseren technischen Support unter [support@adguard.com](mailto:support@adguard.com).
+Gelegentlich werden den AdGuard-Filtern auch einige nicht bösartige Websites hinzugefügt. Wir tun unser Bestes, um den Prozentsatz der Falschmeldungen zu verringern, aber sie kommen trotzdem vor. If you encounter this behavior from AdGuard, please report the false positive to our technical support at [support@adguard.com](mailto:support@adguard.com).
 
 ## Wenn Sie eine Website für verdächtig halten
 

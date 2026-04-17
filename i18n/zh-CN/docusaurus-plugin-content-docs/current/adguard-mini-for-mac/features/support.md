@@ -3,24 +3,24 @@ title: 支持
 sidebar_position: 6
 ---
 
-![Support tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/support.png)
+!支持标签](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/support.png)
 
-_Support_ section has helpful options in case you have a question or encounter a problem:
+「支持」部分包含有用的选项，当您遇到问题或疑问时可以使用：
 
 - 常见问题
 
-  Answers to a lot of questions and problems can be found here
+  许多常见问题和解答都可以在这里找到
 
 - 报告错误拦截
 
-  Takes you to the page where you can report a bug or a problem in details
+  跳转到可以详细报告错误或问题的页面。
 
-- Contact support
+- 联系支持
 
-  Contact our support team directly from the app, allowing you to attach logs and app info
+  直接从应用中联系我们的支持团队，并允许附加日志和应用信息。
 
-  ![Contact support screen](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/contact-support.png)
+  ![联系支持屏幕](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/contact-support.png)
 
 - 讨论
 
-  Takes you to a page where you can find links to AdGuard’s social media and GitHub
+  跳转到包含 AdGuard 社交媒体和 GitHub 链接的页面

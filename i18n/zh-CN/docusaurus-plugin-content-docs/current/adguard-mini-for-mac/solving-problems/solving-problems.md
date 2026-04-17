@@ -5,14 +5,14 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+这篇文章是关于 Mac 版的 AdGuard Mini，用于 Safari 浏览器的保护。 要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-Here are some problems you may encounter and workarounds, as well as guides and instructions you may need:
+以下是用户会遇到的一些问题以及可能需要的解决方法、指南和指示说明。
 
-- [Rule limit issues](/adguard-mini-for-mac/solving-problems/rule-limit.md)
-- [Filtering doesn’t work and ads aren’t blocked](/adguard-mini-for-mac/solving-problems/ads-not-blocked.md)
-- [Filtering doesn’t stop when AdGuard Mini is disabled](/adguard-mini-for-mac/solving-problems/filters-after-disable.md)
-- [How to collect logs in AdGuard Mini for Mac](/adguard-mini-for-mac/solving-problems/logs.md)
-- [AdGuard Mini doesn’t work in private tabs on macOS Sonoma](/adguard-mini-for-mac/solving-problems/private-sonoma.md)
+- [规则数量上限的问题](/adguard-mini-for-mac/solving-problems/rule-limit.md)
+- [过滤无效，无法拦截广告](/adguard-mini-for-mac/solving-problems/ads-not-blocked.md)
+- [禁用 AdGuard Mini 后过滤不停止](/adguard-mini-for-mac/solving-problems/filters-after-disable.md)
+- [如何在 Mac 版 AdGuard Mini 中收集日志](/adguard-mini-for-mac/solving-problems/logs.md)
+- [AdGuard Mini 在 macOS Sonoma 的隐私标签页中无法正常工作](/adguard-mini-for-mac/solving-problems/private-sonoma.md)

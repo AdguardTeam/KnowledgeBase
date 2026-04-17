@@ -1239,6 +1239,7 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 
 - Der Tracking-Schutz (ehemals Privatsphäre) ist in AdGuard für Windows, AdGuard für Mac, AdGuard für Android und AdGuard Browsererweiterung für Firefox und Chromium-basierte Browser verfügbar, mit Ausnahme von AdGuard für Chrome MV3. Alle anderen Produkte ignorieren die Regeln mit dem Modifikator `$stealth`.
 - Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+- In AdGuard Browser Extension, *Block WebRTC* is applied globally and cannot be controlled on a per-site basis. Exception rules like `$stealth=webrtc` have no effect.
 
 :::
 
@@ -4584,12 +4585,12 @@ For example, `[$domain=example.com,app=test_app]##selector`.
 
 In the modifiers values, the following characters must be escaped: `[`, `]`, `,`, and `\` (unless it is used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like this: `\]`.
 
-| Modifikator \ Produkte               | [CoreLibs-Apps][cl-apps] |        [AdGuard für Chromium][ext-chr]        |        [AdGuard für Chrome MV3][ext-mv3]         |         [AdGuard für Firefox][ext-ff]         | [AdGuard für iOS][ios-app] | [AdGuard für Safari][ext-saf] | [AdGuard-Inhaltsblocker][and-cb] |
-| ------------------------------------- |:------------------------:|:---------------------------------------------:|:------------------------------------------------:|:---------------------------------------------:|:--------------------------:|:-----------------------------:|:--------------------------------:|
-| [$app](#non-basic-app-modifier)       |            ✅             |                       ❌                       |                        ❌                         |                       ❌                       |             ❌              |               ❌               |                ❌                 |
-| [$domain](#non-basic-domain-modifier) |            ✅             |                       ✅                       | ✅ [*[1]](#non-basic-domain-modifier-limitations) |                       ✅                       |             ✅              |               ✅               |                ❌                 |
-| [$path](#non-basic-path-modifier)     |            ✅             |                       ✅                       |                        ❌                         |                       ✅                       |             ✅              |               ✅               |                ❌                 |
-| [$url](#non-basic-url-modifier)       |            ✅             | ✅ [*[2]](#non-basic-url-modifier-limitations) |  ✅ [*[2]](#non-basic-url-modifier-limitations)   | ✅ [*[2]](#non-basic-url-modifier-limitations) |             ❌              |               ❌               |                ❌                 |
+| Modifikator \ Produkte               | [CoreLibs-Apps][cl-apps] |        [AdGuard für Chromium][ext-chr]         |        [AdGuard für Chrome MV3][ext-mv3]         |         [AdGuard für Firefox][ext-ff]          | [AdGuard für iOS][ios-app] | [AdGuard für Safari][ext-saf] | [AdGuard-Inhaltsblocker][and-cb] |
+| ------------------------------------- |:------------------------:|:----------------------------------------------:|:------------------------------------------------:|:----------------------------------------------:|:--------------------------:|:-----------------------------:|:--------------------------------:|
+| [$app](#non-basic-app-modifier)       |            ✅             |                       ❌                        |                        ❌                         |                       ❌                        |             ❌              |               ❌               |                ❌                 |
+| [$domain](#non-basic-domain-modifier) |            ✅             |                       ✅                        | ✅ [*[1]](#non-basic-domain-modifier-limitations) |                       ✅                        |             ✅              |               ✅               |                ❌                 |
+| [$path](#non-basic-path-modifier)     |            ✅             | ✅ [*[2]](#non-basic-path-modifier-limitations) |                        ❌                         | ✅ [*[2]](#non-basic-path-modifier-limitations) |             ✅              |               ✅               |                ❌                 |
+| [$url](#non-basic-url-modifier)       |            ✅             | ✅ [*[2]](#non-basic-url-modifier-limitations)  |  ✅ [*[2]](#non-basic-url-modifier-limitations)   | ✅ [*[2]](#non-basic-url-modifier-limitations)  |             ❌              |               ❌               |                ❌                 |
 
 :::note
 

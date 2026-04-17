@@ -112,8 +112,8 @@ Host: ejemplo.org`
 
 se convertirá en
 
-`GET /foo/bar/ HTTP/1.1
-Host: ejemplo.org`
+`GET  /foo/bar/ HTTP/1.1
+Host:example.org`
 
 Esta opción solo se aplica cuando la opción *Proteger de DPI* en Modo Stealh está habilitada.
 

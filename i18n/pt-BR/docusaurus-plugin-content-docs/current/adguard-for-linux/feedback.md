@@ -30,7 +30,7 @@ Se você deseja oferecer suporte à implementação de um novo recurso ou corre�
 
    O arquivo de registro arquivado será baixado para a pasta do aplicativo por padrão, e o caminho para os registros será mostrado no console.
 
-4. Envie o arquivo de registro para [devteam@adguard.com](mailto:devteam@adguard.com). Especifique a hora do erro e anexe um link ao seu GitHub ou seu número (ele aparece como #número ao lado do título). Como alternativa, você pode fazer upload do registro do arquivo para o Google Drive e compartilhá-lo com [devteam@adguard.com](mailto:devteam@adguard.com). Anexe o link do arquivo ao seu problema do GitHub.
+4. Send the log file to [devteam@adguard.com](mailto:devteam@adguard.com). Especifique a hora do erro e anexe um link ao seu GitHub ou seu número (ele aparece como #número ao lado do título). Alternatively, you can upload the log file to Google Drive and share it with [devteam@adguard.com](mailto:devteam@adguard.com). Anexe o link do arquivo ao seu problema do GitHub.
 
 5. Alterne o nível de registro de volta para `info`:
 

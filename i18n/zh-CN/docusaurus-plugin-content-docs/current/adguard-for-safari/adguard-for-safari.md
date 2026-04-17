@@ -23,4 +23,4 @@ sidebar_position: 2
 
 - [解决问题](/adguard-for-safari/solving-problems/solving-problems.md)
 
-  Known issues and possible solutions
+  已知问题和可能的解决方案。

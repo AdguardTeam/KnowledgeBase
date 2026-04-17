@@ -11,7 +11,7 @@ sidebar_position: 1
 
 - [Функции](/adguard-browser-extension/features)
 
-  Main features and settings available in AdGuard Browser Extension
+  Основные функции и настройки, доступные в Браузерном расширении AdGuard
 
 - [Доступность](/adguard-browser-extension/availability)
 
@@ -23,7 +23,7 @@ sidebar_position: 1
 
 - [Совместимость с автономным приложением](/adguard-browser-extension/compatibility)
 
-  Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
+  Совместимость Браузерного расширения AdGuard с десктопными приложениями AdGuard
 
 - [Браузерное расширение AdGuard для Chrome MV3](/adguard-browser-extension/mv3-version/)
 

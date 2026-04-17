@@ -33,6 +33,14 @@ Z tohoto důvodu se viditelnost provozu založená na TDI stává stále nestabi
 
 AdGuard již považuje ovladač TDI za zastaralý a v rámci vývoje produktu se plánuje jeho úplné odstranění.
 
+## Trvalé řešení
+
+From v7.22.4, we’ve added experimental support for the SockFilter driver. It fixes the issue by solving conflicts in the WFP stack. [More information](/adguard-for-windows/features/network/#sockfilter-and-other-network-drivers).
+
+To use it, go to _Settings → Network → Traffic filtering_, enable traffic filtering, and select _SockFilter (Experimental)_ from the list of available options.
+
+Since it’s experimental, there may be bugs. If you notice anything unusual, unexpected, or just plain broken, **you can switch back to TDI or WFP at any time** in the same section.
+
 ## Dočasné řešení
 
 Určité změny v registru systému Windows mohou přimět prohlížeč, aby přestal používat AppContainer, což způsobí, že jeho procesy budou opět spuštěny v režimu bez sandboxu. Síťová služba přestane používat stack WSK a přejde na síťovou cestu, kterou může vidět ovladač TDI. AdGuard poté znovu získá schopnost filtrovat provoz prohlížeče.
@@ -136,7 +144,3 @@ Měly by být aktivní následující zásady:
 Pokud jsou k dispozici, klikněte na _Znovu načíst zásadu_.
 
 Hotovo!
-
-## Trvalé řešení
-
-Plánujeme přidat podporu pro ovladač SockFilter v nadcházejících verzích. Problém vyřeší odstraněním konfliktů ve stacku WFP. [Další informace](https://github.com/AdguardTeam/AdguardForWindows/issues/5780).

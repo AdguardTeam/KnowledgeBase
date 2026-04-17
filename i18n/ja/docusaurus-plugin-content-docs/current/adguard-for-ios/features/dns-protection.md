@@ -67,7 +67,7 @@ _AdGuardによる保護_（画面下の左から2番目の盾アイコン） →
 
 #### DNSフィルタ
 
-Safariで動作するフィルタと同様に、DNSフィルタは[特別な構文](https://adguard-dns.io/kb/general/dns-filtering-syntax/)に従って記述されたルールのセットです。 AdGuard は、DNSトラフィックを監視し、フィルタのルール1つ以上にマッチするDNSリクエストをブロックします。 [AdGuard DNS フィルタ](https://github.com/AdguardTeam/AdguardSDNSFilter)などのフィルターを使用したり、フィルタとしてhostsファイルを追加したりできます。 同時に複数のフィルタも追加できます。 その方法は、[こちらの詳しいマニュアル](/adguard-for-ios/solving-problems/system-wide-filtering)をお読みください。
+Safariで動作するフィルタと同様に、DNSフィルタは[特別な構文](https://adguard-dns.io/kb/general/dns-filtering-syntax/)に従って記述されたルールのセットです。 AdGuard は、DNSトラフィックを監視し、フィルタのルール1つ以上にマッチするDNSリクエストをブロックします。 [AdGuard DNS フィルタ](https://github.com/AdguardTeam/AdguardSDNSFilter)などのフィルターを使用したり、フィルタとしてhostsファイルを追加したりできます。 同時に複数のフィルタも追加できます。 To know how to do it, get acquainted with [this exhaustive manual](/adguard-for-ios/solving-problems/system-wide-filtering).
 
 #### ホワイトリストとブラックリスト
 

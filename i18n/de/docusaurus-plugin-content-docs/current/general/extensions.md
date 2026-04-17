@@ -426,7 +426,7 @@ Derzeit gibt es zwei AdGuard-Anwendungen, mit denen Sie Benutzerstile erstellen 
 
 :::
 
-Es handelt sich hierbei um eine experimentelle Funktion. Wenn Sie also beim Hinzufügen oder Erstellen eines Benutzerstils auf Probleme stoßen, wenden Sie sich bitte an unser Support-Team unter [support@adguard.com](mailto:support@adguard.com).
+This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at [support@adguard.com](mailto:support@adguard.com).
 
 ### So richten Sie einen Benutzerstil in AdGuard ein
 

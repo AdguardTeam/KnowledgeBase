@@ -11,7 +11,7 @@ sidebar_position: 1
 
 - [功能](/adguard-browser-extension/features)
 
-  Main features and settings available in AdGuard Browser Extension
+  AdGuard 浏览器扩展程序中的主要功能和设置
 
 - [可用性](/adguard-browser-extension/availability)
 
@@ -23,7 +23,7 @@ sidebar_position: 1
 
 - [与独立应用程序的兼容性](/adguard-browser-extension/compatibility)
 
-  Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
+  AdGuard 浏览器扩展与 AdGuard 桌面应用程序的兼容性
 
 - [用于 Chrome Manifest 的 AdGuard 浏览器扩展](/adguard-browser-extension/mv3-version/)
 

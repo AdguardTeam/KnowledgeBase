@@ -33,9 +33,9 @@ Grâce à l'*Utilisation des données mobiles* et à l'*Utilisation des données
 
 Tout d'abord, proposons un peu de théorie et de liens avec les données nécessaires.
 
-1. Android calcule la consommation de trafic en fonction du Profil de Puissance fourni par chaque fabricant : [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
+1. Android derives traffic consumption judging on so-called Power Profile, which is given by every manufacturer: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
-1. La partie principale du Profil de Puissance est un ensemble de valeurs en mAh qui définissent la consommation de la batterie pour chaque composant de l'appareil : [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
+1. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
     Par exemple, à partir du tableau ci-dessus :
 

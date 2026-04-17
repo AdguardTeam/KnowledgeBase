@@ -19,7 +19,7 @@ Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multi
 
 - [Asistente de navegador](/adguard-for-windows/browser-assistant.md)
 
-  An extension that complements the desktop app and allows you to manage filtering from your browser
+  Una extensión que complementa la aplicación de escritorio y te permite gestionar el filtrado desde tu navegador
 
 - [Resolviendo problemas](/adguard-for-windows/solving-problems/solving-problems.md)
 

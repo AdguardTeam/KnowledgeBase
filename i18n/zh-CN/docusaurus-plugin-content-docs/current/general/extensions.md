@@ -61,7 +61,7 @@ SponsorBlock skips sponsored segments in YouTube videos. It saves time by jumpin
 
 :::info
 
-This userscript runs exclusively on our desktop applications, AdGuard for Windows and AdGuard for Mac.
+此用户脚本仅在我们的桌面应用程序 AdGuard Windows 版和 AdGuard Mac 版上运行。
 
 :::
 

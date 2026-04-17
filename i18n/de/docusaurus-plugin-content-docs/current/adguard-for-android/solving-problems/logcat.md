@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::note
 
-Die in den Protokollen enthaltenen Daten und Dateien werden in Übereinstimmung mit der [Datenschutzerklärung von AdGuard](https://adguard.com/en/privacy.html) verarbeitet.
+Die in den Protokollen enthaltenen Daten und Dateien werden in Übereinstimmung mit der a [Datenschutzerklärung von AdGuard](https://adguard.com/en/privacy.html) verarbeitet.
 
 :::
 

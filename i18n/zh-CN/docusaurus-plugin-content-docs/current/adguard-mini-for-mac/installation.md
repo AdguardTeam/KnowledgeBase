@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-这篇文章是关于 Mac 版的 AdGuard Mini，用于 Safari 浏览器的保护。 To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+这篇文章是关于 Mac 版的 AdGuard Mini，用于 Safari 浏览器的保护。 要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
