@@ -55,8 +55,8 @@ module.exports = {
       title: '',
       logo: {
         alt: 'AdGuard',
-        src: 'img/logo.svg',
-        srcDark: 'img/logo_dark.svg',
+        src: 'img/logo_v2.svg',
+        srcDark: 'img/logo_dark_v2.svg',
       },
       items: [
         {
