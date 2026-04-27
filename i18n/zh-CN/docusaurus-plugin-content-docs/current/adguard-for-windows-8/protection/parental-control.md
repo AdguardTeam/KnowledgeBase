@@ -1,24 +1,24 @@
 ---
-title: Parental control
+title: 家长控制
 sidebar_position: 6
 ---
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+本文适用于 Windows 版的 AdGuard v8.0，一款全面的广告拦截器，可在系统层面保护您的设备。 这是一个仍在开发中的 Beta 测试版本。 要试用，请下载[适用于 Windows 的 AdGuard 测试版](https://agrd.io/windows_beta)。
 
 :::
 
-There are several websites that children shouldn’t be able to access. _Parental control_ helps you solve this problem.
+有些网站不适合让孩子访问。 「家长控制」功能可以帮助您解决这个问题。
 
-![Parental control](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/parental.png)
+![家长控制](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/parental.png)
 
-When _Parental control_ is enabled, AdGuard scans the content of webpages and blocks those that may be harmful or inappropriate for children. This includes adult images and text, crude language, violence, and drug-related content.
+启用家长控制后，AdGuard 会扫描网页内容，拦截那些可能对儿童有害或不适宜的页面， 包括成人图片和文字、粗俗语言、暴力以及毒品相关内容。
 
-You can also turn on _Safe search_ to remove inappropriate links from search results.
+您还可以开启「安全搜索」，从搜索结果中移除不适宜的链接。
 
-To prevent children from downloading unwanted programs, enable the _Block downloading exe.files_ option. This option blocks them from downloading and installing software.
+为为防止孩子下载不需要的程序，请启用「拦截 .exe 文件下载」选项。 此选项会阻止他们下载和安装软件。
 
-You can manage the _Blocklist_ and the _Allowlist_ to decide which websites should be blocked and which should be allowed.
+您可以通过管理「黑名单」和「白名单」，自行决定哪些网站应被拦截、哪些应被放行。
 
-Finally, you can protect these settings with a password and choose which user accounts they apply to.
+最后，您可以为这些设置加上密码保护，并选择将它们应用于哪些用户账户。

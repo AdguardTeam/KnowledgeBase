@@ -11,7 +11,7 @@ Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonction
 
 - [Écran d'accueil](/adguard-for-windows/features/home-screen/)
 
-  On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
+  Sur l'écran principal, vous trouverez _Paramètres_, _Assistance_, _Licence_ et _À propos_, ainsi que des statistiques sur les publicités et les traqueurs bloqués
 
 - [Paramètres](/adguard-for-windows/features/settings/)
 
@@ -27,4 +27,4 @@ Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonction
 
 - [Autres fonctionnalités](/adguard-for-windows/features/others/)
 
-  Support, license management, tray menu options, app version and updates
+  Assistance, gestion des licences, options de menu de la barre d'état, version de l'app et les mises à jour

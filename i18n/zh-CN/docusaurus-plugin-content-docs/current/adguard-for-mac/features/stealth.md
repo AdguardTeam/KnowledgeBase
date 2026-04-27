@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::
 
-## Tracking protection
+## 跟踪保护
 
 ![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tracking_protection.png)
 
