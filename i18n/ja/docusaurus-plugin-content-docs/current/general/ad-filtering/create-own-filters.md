@@ -5026,9 +5026,9 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 - `cli` — AdGuard for Linux — [https://filters.adtidy.org/cli/filters/2.txt](https://filters.adtidy.org/cli/filters/2.txt)
 
-- `android` — AdGuard for Android — [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
+- `android` — AdGuard for Android — [https://filters.adtidy.org/android/filters/2_optimized.txt](https://filters.adtidy.org/android/filters/2_optimized.txt)
 
-- `ios` — AdGuard for iOS — [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
+- `ios` — AdGuard for iOS — [https://filters.adtidy.org/ios/filters/2_optimized.txt](https://filters.adtidy.org/ios/filters/2_optimized.txt)
 
 - `ext_chromium` — AdGuard Browser Extension for Chrome — [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
 
@@ -5040,9 +5040,9 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 - `ext_opera` — AdGuard Browser Extension for Opera — [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
 
-- `ext_safari` — AdGuard for Safari — [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
+- `ext_safari` — AdGuard for Safari — [https://filters.adtidy.org/extension/safari/filters/2_optimized.txt](https://filters.adtidy.org/extension/safari/filters/2_optimized.txt)
 
-- `ext_android_cb` — AdGuard Content Blocker — [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
+- `ext_android_cb` — AdGuard Content Blocker — [https://filters.adtidy.org/extension/android-content-blocker/filters/2_optimized.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2_optimized.txt)
 
 - `ext_ublock` — uBlock Origin — [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
 
