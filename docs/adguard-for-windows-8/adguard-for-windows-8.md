@@ -5,8 +5,7 @@ sidebar_position: 1
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta). 
-Please note the minimal system requirements: AdGuard for Windows 8 operates under *Microsoft Windows 10 or later*, requires a *2-core, 2.0 GHz processor (or faster)*, at least *6 GM of RAM* and a minimum of *4 GB of available disk space*.
+This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta). Please note the minimal system requirements: AdGuard for Windows 8 operates under *Microsoft Windows 10 or later*, requires a *2-core, 2.0 GHz processor (or faster)*, at least *6 GM of RAM* and a minimum of *4 GB of available disk space*.
 
 :::
 
