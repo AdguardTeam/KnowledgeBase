@@ -302,7 +302,7 @@ AdGuard Browser Assistant allows you to manage AdGuard protection directly from 
 
 AdGuard Browser Assistant is a browser extension. It allows you to quickly manage AdGuard for Linux:
 
-- Enable or disable protection for a specific website (a toggle under the website name)
+- Enable or disable protection for a specific website (the toggle under the website name)
 - Pause protection for 30 seconds
 - Disable protection (the pause icon in the upper right corner)
 - Manually block an ad
