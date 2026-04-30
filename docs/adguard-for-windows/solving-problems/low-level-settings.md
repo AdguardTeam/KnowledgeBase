@@ -107,14 +107,14 @@ This option should be enabled **only for debugging purposes**. Ticking the check
 
 Adds extra space between the HTTP method and the URL and removes space after the "Host:" field to avoid deep packet inspection. For instance, the request
 
-```
+```text
 GET /foo/bar/ HTTP/1.1
 Host: example.org
 ```
 
 will be converted to
 
-```
+```text
 GET  /foo/bar/ HTTP/1.1
 Host:example.org
 ```
