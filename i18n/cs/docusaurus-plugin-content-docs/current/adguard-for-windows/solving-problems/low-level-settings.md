@@ -107,89 +107,93 @@ Tato možnost by měla být zapnuta **pouze pro účely ladění**. Zaškrtnutí
 
 Přidá dodatečnou mezeru mezi metodu HTTP a URL adresu a odstraní mezeru za polem "Host:", aby se zabránilo hloubkové kontrole paketů. Např. požadavek
 
-`GET /foo/bar/ HTTP/1.1
-Host: example.org`
+```text
+GET /foo/bar/ HTTP/1.1
+Host: example.org
+```
 
-bude převeden na
+will be converted to
 
-`GET  /foo/bar/ HTTP/1.1
-Host:example.org`
+```text
+GET  /foo/bar/ HTTP/1.1
+Host:example.org
+```
 
-Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana před DPI* v Režimu utajení.
+This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Upravit velikost fragmentu úvodního paketu TLS
 
-Určuje velikost fragmentace paketů TCP, čímž se zabrání hloubkové kontrole paketů. Tato možnost má vliv pouze na zabezpečený (HTTPS) provoz.
+Specifies the size of the TCP packet fragmentation, avoiding deep packet inspection. This option only affects secured (HTTPS) traffic.
 
-Pokud je tato možnost povolena, AdGuard rozdělí počáteční paket TLS (paket Client Hello) na dvě části: první má zadanou délku a druhá obsahuje zbytek až do délky celého počátečního paketu TLS.
+If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Platné hodnoty: 1–1500. Pokud je zadána neplatná velikost, použije se hodnota vybraná systémem. Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana před DPI* v Režimu utajení.
+Valid values: 1–1500. Pokud je zadána neplatná velikost, použije se hodnota vybraná systémem. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Velikost fragmentu běžného požadavku HTTP
 
-Upraví velikost fragmentace požadavků HTTP. Tato možnost má vliv pouze na prostý HTTP provoz. Pokud je tato možnost povolena, AdGuard rozdělí počáteční paket na dvě části: první má zadanou délku a druhá obsahuje zbytek až do délky celého původního paketu.
+Upraví velikost fragmentace požadavků HTTP. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-Platné hodnoty: 1–1500. Pokud je zadána neplatná velikost, použije se hodnota vybraná systémem. Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana před DPI* v Režimu utajení.
+Platné hodnoty: 1–1500. Pokud je zadána neplatná velikost, použije se hodnota vybraná systémem. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Zobrazit QUIC
 
-Umožňuje zobrazit záznamy protokolu QUIC v záznamech filtrování. Pouze pro blokované požadavky.
+Allows displaying the QUIC protocol records in the filtering log. For blocked requests only.
 
 ### Povolit udržování TCP
 
-Pravidelné odesílání paketů TCP přes neaktivní připojení, aby se zajistilo jeho fungování a resetování časových limitů NAT. Tato možnost může být užitečná pro obejití přísného nastavení překladu síťových adres (NAT), které používají někteří poskytovatelé internetových služeb.
+Platné hodnoty: 1–1500. Pokud je zadána neplatná velikost, použije se hodnota vybraná systémem.
 
 ### Interval udržování TCP
 
-Zde můžete zadat dobu nečinnosti v sekundách před odesláním udržovací sondy. Pokud je zadána 0, použije se hodnota vybraná systémem.
+Here you can specify an idle time period, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used.
 
 Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Toto nastavení funguje pouze v případě, že je povolena možnost *Povolit udržování TCP*.
+This setting only works when the *Enable TCP keepalive* option is enabled.
 
 :::
 
 ### Časový limit udržování TCP
 
-Zde můžete zadat dobu v sekundách před odesláním další udržovací sondy neodpovídajícímu partnerovi. Pokud je zadána 0, použije se hodnota vybraná systémem.
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
 
 Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Toto nastavení funguje pouze v případě, že je povolena možnost *Povolit udržování TCP*.
+This setting only works when the *Enable TCP keepalive* option is enabled.
 
 :::
 
 ### Blokovat Java
 
-Některé webové stránky a webové služby stále podporují zásuvné moduly Java. Rozhraní API, které slouží jako základ pro zásuvné moduly Java, obsahuje závažné bezpečnostní chyby. Tyto zásuvné moduly můžete z bezpečnostních důvodů zakázat. Nicméně, i když se rozhodnete použít možnost *Blokovat Java*, JavaScript bude stále povolen.
+Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
 
 ### Časový limit DNS serveru
 
-Zde můžete zadat dobu v milisekundách, po kterou bude AdGuard čekat na odezvu od vybraného DNS serveru, než se uchýlí k nouzovému řešení. Pokud toto pole nevyplníte nebo zadáte neplatnou hodnotu, bude použita hodnota 5000.
+Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
 
 ### Použít HTTP/3 pro DNS-over-HTTPS
 
-Povolí HTTP/3 pro odchozí připojení DNS-over-HTTPS, aby se urychlilo připojení, pokud vybrané odchozí připojení tento protokol podporuje. To znamená, že povolení této možnosti nezaručuje, že všechny požadavky DNS budou odesílány prostřednictvím HTTP/3.
+Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection if the selected upstream supports this protocol. This means that enabling this option does not guarantee that all DNS requests will be sent via HTTP/3.
 
 ### Použít záložní DNS odchozích připojení
 
-Běžné dotazy budou přesměrovány na záložní odchozí server, pokud všechny požadavky DNS na vybrané odchozí připojení selžou.
+Normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
 
 ### Paralelní dotazování na odchozí připojení DNS
 
-Všechny odchozí připojení budou dotazovány paralelně a je vrácena první odpověď. Vzhledem k tomu, že dotazy DNS jsou prováděny paralelně, zvyšuje se povolením této funkce rychlost internetu.
+All upstreams will be queried in parallel and the first response is returned. Since DNS queries are made in parallel, enabling this feature increases the Internet speed.
 
 ### Vždy odpovídat na neúspěšné DNS dotazy
 
-Pokud se překládání adres nezdařilo v každém z předávaných odchozích připojení a také v záložních doménách, bude odpovědí na požadavek DNS `SERVFAIL`.
+If address resolving failed on each of the forwarded upstreams, as well as on the fallback domains, then the response to the DNS request will be `SERVFAIL`.
 
 ### Povolit filtrování zabezpečených DNS požadavků
 
-Kromě běžných DNS požadavků bude AdGuard přesměrovávat zabezpečené DNS požadavky na místní DNS proxy.
+AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
 
 ### Režim blokování pro pravidla hosts
 
-Zde můžete vybrat způsob, jakým bude AdGuard reagovat na domény blokované pravidly DNS na základě [syntaxe pravidla hosts](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
 - Odpověď s chybou "Refused"
 - Odpověď s chybou "NxDomain"
@@ -197,7 +201,7 @@ Zde můžete vybrat způsob, jakým bude AdGuard reagovat na domény blokované 
 
 ### Režim blokování pro pravidla stylu adblock
 
-Zde můžete vybrat způsob, jakým bude AdGuard reagovat na domény blokované pravidly DNS na základě [syntaxe stylu ad-block](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [adblock-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
 - Odpověď s chybou "Refused"
 - Odpověď s chybou "NxDomain"
@@ -205,15 +209,15 @@ Zde můžete vybrat způsob, jakým bude AdGuard reagovat na domény blokované 
 
 ### Vlastní IPv4 adresa
 
-Pokud je v režimu blokování pro pravidla pro hostitele, nebo v režimu blokování pro pravidla typu adblock vybrána vlastní IP adresa, bude tato IP adresa vrácena v odpovědi na blokované požadavky A. Pokud nejsou zadáno nic, AdGuard odpoví výchozí chybou "Refused".
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked A requests. If none are specified, AdGuard will reply with the default Refused error.
 
 ### Vlastní IPv6 adresa
 
-Pokud je v režimu blokování pro pravidla pro hostitele, nebo v režimu blokování pro pravidla typu adblock vybrána vlastní IP adresa, bude tato IP adresa vrácena v odpovědi na blokované požadavky AAAA. Pokud nejsou zadáno nic, AdGuard odpoví výchozí chybou "Refused".
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
 ### Záložní server
 
-Zde můžete zadat alternativní DNS server, na který bude požadavek DNS přesměrován, pokud hlavní server neodpoví v časovém limitu uvedeném v následující části. Na výběr jsou tři možnosti:
+Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
 
 - Nepoužívat záložní servery;
 - Použít výchozí systémové servery;
@@ -221,22 +225,22 @@ Zde můžete zadat alternativní DNS server, na který bude požadavek DNS přes
 
 ### Blokovat ECH
 
-Pokud je tato možnost povolena, AdGuard odstraní z dotazů parametry Encrypted Client Hello.
+If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
 
 ### Seznam vlastních záložních serverů
 
-Pokud chcete, aby AdGuard používal vlastní záložní servery, uveďte je v této části po jednom na řádek.
+If you want AdGuard to use custom fallback servers, list them in this section, one per line.
 
 ### Seznam vlastních bootstrap adres
 
-Bootstrap je zprostředkující DNS server používaný k získání IP adresy zabezpečeného DNS serveru, který jste vybrali dříve v menu *DNS ochrana*. Taková "střední cesta" je nutná při použití protokolů, které označují adresu serveru písmeny (například DNS-over-TLS). V tomto případě funguje bootstrap jako překladač a převádí písmena na čísla, kterým systém rozumí.
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
-Ve výchozím nastavení je použit systémový překladač DNS a bootstrap požadavek je odeslán prostřednictvím portu 53. Pokud vám to nevyhovuje, uveďte zde IP adresy DNS serverů, které budou použity k určení adresy šifrovaného DNS serveru v pořadí shora dolů. Zadané IP adresy budou použity v uvedeném pořadí. Pokud zadáte neplatné adresy nebo nezadáte žádné, budou použity systémové IP adresy.
+By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
 
 ### DNS výjimky
 
-Všechny DNS požadavky na domény zde uvedené budou přesměrovány na výchozí systémový DNS server namísto DNS serveru zadaného v nastavení aplikace. Na tyto požadavky se také neuplatní pravidla DNS blokování.
+All DNS requests to domains listed here will be redirected to the system default DNS server instead of the DNS server specified in the app’s settings. Also, DNS blocking rules will not be applied to such requests.
 
 ### Vyloučit zadané názvy sítí Wi-Fi (SSID) z DNS filtrování
 
-DNS ochrana nebude fungovat pro sítě Wi-Fi uvedené v této části. Zadejte názvy sítí Wi-Fi (SSID), jeden na řádek. To může být užitečné, pokud je určitá síť Wi-Fi již chráněna pomocí AdGuard Home nebo jiným systémem DNS ochrany. V tomto případě je zbytečné znovu filtrovat DNS požadavky.
+DNS protection will not include Wi-Fi networks listed in this section. Specify Wi-Fi networks names (SSIDs) one per line. This can be useful if a particular Wi-Fi network is already protected by AdGuard Home or another DNS protection system. In this case, it is superfluous to filter DNS requests again.

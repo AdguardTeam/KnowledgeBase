@@ -179,11 +179,11 @@ Klasik X25519 algoritmasını ML-KEM-768 kuantum sonrası KEM ile birleştiren h
 
 #### `stealth.antidpi.http.split.fragment.size`
 
-HTTP istek parçalanmasının boyutunu ayarlar. Geçerli değerler: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
+HTTP istek parçalanmasının boyutunu ayarlar. Valid values: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
 
 #### `stealth.antidpi.clienthello.split.fragment.size`
 
-Bu seçenek, derin paket incelemesinden kaçınmaya yardımcı olan TCP paket parçalama boyutunu belirtir. Geçerli değerler: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
+Bu seçenek, derin paket incelemesinden kaçınmaya yardımcı olan TCP paket parçalama boyutunu belirtir. Valid values: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
 
 #### `stealth.antidpi.http.space.juggling`
 

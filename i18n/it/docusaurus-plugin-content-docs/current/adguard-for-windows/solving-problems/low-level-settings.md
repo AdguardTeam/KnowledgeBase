@@ -107,89 +107,93 @@ Quest'opzione dovrebbe essere abilitata **esclusivamente per scopi di debug**. S
 
 Aggiunge ulteriore spazio tra il metodo HTTP e l'URL e rimuove lo spazio dopo il campo "Host:" per evitare l'ispezione approfondita dei pacchetti. Ad esempio, la richiesta
 
-`GET /foo/bar/ HTTP/1.1
-Host: example.org`
+```text
+GET /foo/bar/ HTTP/1.1
+Host: example.org
+```
 
-sarà convertito in
+will be converted to
 
-`GET  /foo/bar/ HTTP/1.1
-Host:example.org`
+```text
+GET  /foo/bar/ HTTP/1.1
+Host:example.org
+```
 
-Questa opzione viene applicata solo quando l'opzione Modalità Stealth di *Protezione da DPI* è attivata.
+This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Regola la dimensione della frammentazione del pacchetto TLS iniziale
 
-Specifica la dimensione della frammentazione del pacchetto TCP, evitando l'ispezione approfondita dei pacchetti. Questa opzione influisce solo sul traffico protetto (HTTPS).
+Specifies the size of the TCP packet fragmentation, avoiding deep packet inspection. This option only affects secured (HTTPS) traffic.
 
-Se questa opzione è abilitata, AdGuard divide il pacchetto TLS iniziale (il pacchetto Client Hello) in due parti: la prima ha la lunghezza specificata e la seconda ha il resto, fino alla lunghezza dell'intero pacchetto TLS iniziale.
+If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Valori validi: 1–1500. Se viene specificata una dimensione non valida, verrà utilizzato il valore selezionato dal sistema. Questa opzione viene applicata solo quando l'opzione Modalità Stealth di *Protezione da DPI* è attivata.
+Valid values: 1–1500. Se viene specificata una dimensione non valida, verrà utilizzato il valore selezionato dal sistema. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Dimensione del frammento della richiesta HTTP semplice
 
-Regola la dimensione della frammentazione della richiesta HTTP. Questa opzione influisce solo sul traffico HTTP semplice. Se questa opzione è abilitata, AdGuard divide il pacchetto iniziale in due parti: la prima ha la lunghezza specificata e la seconda ha il resto, fino alla lunghezza dell'intero pacchetto originale.
+Regola la dimensione della frammentazione della richiesta HTTP. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-Valori validi: 1–1500. Se viene specificata una dimensione non valida, verrà utilizzato il valore selezionato dal sistema. Questa opzione viene applicata solo quando l'opzione Modalità Stealth di *Protezione da DPI* è attivata.
+Valori validi: 1–1500. Se viene specificata una dimensione non valida, verrà utilizzato il valore selezionato dal sistema. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Mostra QUIC
 
-Consente la visualizzazione dei registri del protocollo QUI, nel registro di filtraggio. Esclusivamente per le richieste bloccate.
+Allows displaying the QUIC protocol records in the filtering log. For blocked requests only.
 
 ### Abilita il keepalive TCP
 
-Invia periodicamente pacchetti TCP su una connessione inattiva per assicurarsi che sia attivo e per rinnovare i timeout NAT. Questa opzione può essere utile per ignorare le rigorose impostazioni NAT (Network Address Translation) utilizzate da alcuni ISP.
+Valori validi: 1–1500. Se viene specificata una dimensione non valida, verrà utilizzato il valore selezionato dal sistema.
 
 ### Intervallo keepalive TCP
 
-Qui puoi specificare un periodo di tempo di inattività, in secondi, prima di inviare una sonda keepalive. Se viene specificato 0, verrà utilizzato il valore selezionato dal sistema.
+Here you can specify an idle time period, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used.
 
 :::note
 
-Questa impostazione funziona solo quando l'opzione *Abilita keepalive TCP* è abilitata.
+This setting only works when the *Enable TCP keepalive* option is enabled.
 
 :::
 
 ### Timeout keepalive TCP
 
-Qui puoi specificare il tempo in secondi prima di inviare un'altra sonda keepalive a un peer che non risponde. Se viene specificato 0, verrà utilizzato il valore selezionato dal sistema.
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
 
 :::note
 
-Questa impostazione funziona solo quando l'opzione *Abilita keepalive TCP* è abilitata.
+This setting only works when the *Enable TCP keepalive* option is enabled.
 
 :::
 
 ### Blocca Java
 
-Alcuni siti e servizi web, suppotrano ancora i Plugin in Java. L'API che serve da base per tali plugin, presenta delle gravi vulnerabilità di sicurezza. Puoi disabilitare tali plugin per motivi di sicurezza. Tuttavia, anche se decidi di utilizzare l'opzione *Blocca Java*, JavaScript sarà comunque abilitato.
+Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
 
 ### Periodo di timeout del server DNS
 
-Qui, puoi specificare il tempo in millisecondi che sarà atteso da AdGuard per la risposta dal server DNS selezionato, prima di ricorrere a quello di fallback. Se non compili questo campo o inserisci un valore non valido, sarà utilizzato il valore 5000.
+Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
 
 ### Usa HTTP/3 per DNS-over-HTTPS
 
-Abilita HTTP/3 per gli upstream DNS-over-HTTPS per accelerare la connessione se l'upstream selezionato supporta questo protocollo. Ciò significa che l'abilitazione di questa opzione non garantisce che tutte le richieste DNS verranno inviate tramite HTTP/3.
+Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection if the selected upstream supports this protocol. This means that enabling this option does not guarantee that all DNS requests will be sent via HTTP/3.
 
 ### Usa upstream DNS di fallback
 
-Le richieste normali verranno reindirizzate ad un upstream di fallback se tutti gli upstream normali falliscono.
+Normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
 
 ### Richiedi gli upstream DNS in parallelo
 
-Tutti gli upstream verranno richiesti in parallelo e verrà restituita la prima risposta. Poiché le richieste DNS vengono effettuate in parallelo, l'abilitazione di questa funzione aumenta la velocità di Internet.
+All upstreams will be queried in parallel and the first response is returned. Since DNS queries are made in parallel, enabling this feature increases the Internet speed.
 
 ### Rispondi sempre alle richieste DNS fallite
 
-Se la risoluzione dell'indirizzo non è riuscita su ciascuno degli upstream inoltrati, nonché sui domini di fallback, la risposta alla richiesta DNS sarà `SERVFAIL`.
+If address resolving failed on each of the forwarded upstreams, as well as on the fallback domains, then the response to the DNS request will be `SERVFAIL`.
 
 ### Abilita filtraggio delle richieste DNS sicure
 
-AdGuard reindirizzerà le richieste DNS sicure al proxy DNS locale, oltre alle semplici richieste DNS.
+AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
 
 ### Modalità di blocco per le regole degli host
 
-Qui puoi selezionare il modo in cui AdGuard risponderà ai domini bloccati dalle regole DNS in base alla sintassi della regola [host](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
 - Rispondi con l'errore "Refused"
 - Rispondi con l'errore "NxDomain"
@@ -197,7 +201,7 @@ Qui puoi selezionare il modo in cui AdGuard risponderà ai domini bloccati dalle
 
 ### Modalità di blocco per le regole in stile adblock
 
-Qui puoi selezionare il modo in cui AdGuard risponderà ai domini bloccati dalle regole DNS in base a [sintassi in stile adblock](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [adblock-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
 - Rispondi con l'errore "Refused"
 - Rispondi con l'errore "NxDomain"
@@ -205,15 +209,15 @@ Qui puoi selezionare il modo in cui AdGuard risponderà ai domini bloccati dalle
 
 ### Indirizzo IPv4 personalizzato
 
-Se l'indirizzo IP personalizzato è selezionato in Modalità di blocco per le regole degli host o Modalità di blocco per le regole in stile adblock, questo indirizzo IP verrà restituito in risposta alle richieste A bloccate. Se non ne viene specificato nessuno, AdGuard risponderà con l'errore Refused predefinito.
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked A requests. If none are specified, AdGuard will reply with the default Refused error.
 
 ### Indirizzo IPv6 personalizzato
 
-Se l'indirizzo IP personalizzato è selezionato in Modalità di blocco per le regole degli host o Modalità di blocco per le regole in stile adblock, questo indirizzo IP verrà restituito in risposta alle richieste AAAA bloccate. Se non ne è specificato nessuno, AdGuard risponderà con l'errore predefinito "Rifiutata".
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
 ### Server di fallback
 
-Qui puoi specificare un server DNS alternativo a cui sarà reindirizzata una richiesta DNS, se il server principale non risponde entro il periodo di timeout specificato nella sezione successiva. Esistono tre opzioni tra cui scegliere:
+Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
 
 - Non utilizzare i server di fallback;
 - Utilizza i server predefiniti di sistema;
@@ -221,22 +225,22 @@ Qui puoi specificare un server DNS alternativo a cui sarà reindirizzata una ric
 
 ### Blocca ECH
 
-Se abilitata, Adguard elimina i parametri Encrypted ClientHello dalle risposte.
+If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
 
 ### Elenco di server di fallback personalizzati
 
-Se desideri che AdGuard utilizzi dei server di fallback personalizzati, elencali in questa sezione, uno per riga.
+If you want AdGuard to use custom fallback servers, list them in this section, one per line.
 
 ### Elenco di indirizzi di boostrap personalizzati
 
-Un bootstrap è un server DNS intermedio utilizzato per ottenere l'indirizzo IP del server DNS sicuro scelto in precedenza in *Protezione DNS*. Una simile "via di mezzo" è necessaria utilizzando i protocolli che denotano l'indirizzo del server con delle lettere (come ad esempio DNS su TLS). In questo caso, il bootstrap agisce da traduttore, trasformando le lettere in numeri comprensibili dal tuo sistema.
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
-Di default, è utilizzato il risolutore DNS di sistema e la richiesta di bootstrap iniziale è effettuata tramite la porta 53. Se ciò non ti soddisfa, elenca qui gli indirizzi IP dei server DNS che saranno utilizzati per determinare l'indirizzo del server DNS crittografato, nell'ordine dall'alto verso il basso. Gli indirizzi IP specificati saranno applicati nell'ordine elencato. Se specifichi degli indirizzi non validi (o non ne specifichi nessuno), saranno utilizzati gli IP di sistema.
+By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
 
 ### Esclusioni DNS
 
-Tutte le richieste DNS ai domini qui elencati saranno reindirizzate al server DNS predefinito di sistema, invece che al server DNS specificato nelle impostazioni dell'app. Inoltre, le regole di blocco DNS non saranno applicate a tali richieste.
+All DNS requests to domains listed here will be redirected to the system default DNS server instead of the DNS server specified in the app’s settings. Also, DNS blocking rules will not be applied to such requests.
 
 ### Escludi i nomi delle reti Wi-Fi (SSID) specificati dal filtro DNS
 
-La protezione DNS non includerà le reti Wi-Fi elencate in questa sezione. Specifica i nomi delle reti Wi-Fi (SSID) uno per riga. Questo può essere utile se una particolare rete Wi-Fi è già protetta da AdGuard Home o da un altro sistema di protezione DNS. In questo caso è superfluo filtrare nuovamente le richieste DNS.
+DNS protection will not include Wi-Fi networks listed in this section. Specify Wi-Fi networks names (SSIDs) one per line. This can be useful if a particular Wi-Fi network is already protected by AdGuard Home or another DNS protection system. In this case, it is superfluous to filter DNS requests again.

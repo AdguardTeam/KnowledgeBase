@@ -107,15 +107,19 @@ Această opțiune ar trebui să fie activată **doar pentru scopuri de depanare*
 
 Adaugă un spațiu suplimentar între metoda HTTP și URL și elimină spațiul după câmpul "Host:" pentru a evita inspecția profundă a pachetelor. De exemplu, cererea
 
-`GET /foo/bar/ HTTP/1.1
-Host: example.org`
+```text
+GET /foo/bar/ HTTP/1.1
+Host: example.org
+```
 
 will be converted to
 
-`GET  /foo/bar/ HTTP/1.1
-Host:example.org`
+```text
+GET  /foo/bar/ HTTP/1.1
+Host:example.org
+```
 
-Această opțiune este aplicată doar atunci când opțiunea *Protejați de DPI* în modul Stealth este activată.
+This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Adjust size of fragmentation of initial TLS packet
 
@@ -123,17 +127,17 @@ Specifies the size of the TCP packet fragmentation, avoiding deep packet inspect
 
 If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Valid values: 1–1500. If invalid size is specified, the value selected by the system will be used. Această opțiune este aplicată doar atunci când opțiunea *Protejați de DPI* în modul Stealth este activată.
+Valid values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Plain HTTP request fragment size
 
 Ajustează dimensiunea fragmentării cererilor HTTP. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-Valid values: 1–1500. If invalid size is specified, the value selected by the system will be used. Această opțiune este aplicată doar atunci când opțiunea *Protejați de DPI* în modul Stealth este activată.
+Valid values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Arată QUIC
 
-Permite afișarea înregistrărilor protocolului QUIC în jurnalul de filtrare. Numai pentru solicitările blocate.
+Allows displaying the QUIC protocol records in the filtering log. For blocked requests only.
 
 ### Enable TCP keepalive
 
@@ -141,7 +145,7 @@ Periodically sends TCP packets over idle connection to ensure it is alive and to
 
 ### TCP keepalive interval
 
-Here you can specify an idle time period, in seconds, before sending a keepalive probe. Dacă se specifică 0, va fi folosită valoarea selectată de sistem.
+Here you can specify an idle time period, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used.
 
 :::note
 
@@ -151,7 +155,7 @@ This setting only works when the *Enable TCP keepalive* option is enabled.
 
 ### TCP keepalive timeout
 
-Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. Dacă se specifică 0, va fi folosită valoarea selectată de sistem.
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
 
 :::note
 
@@ -161,11 +165,11 @@ This setting only works when the *Enable TCP keepalive* option is enabled.
 
 ### Block Java
 
-Unele site-uri web și servicii web încă suportă Java Plug-Ins. API-ul care servește ca bază pentru plug-in-urile Java are vulnerabilități de securitate serioase. Puteți dezactiva astfel de plug-in-uri din motive de securitate. Cu toate acestea, chiar dacă decideți să utilizați opțiunea *Blocați Java*, JavaScript va fi totuși activat.
+Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
 
 ### Perioada de expirare a serverului DNS
 
-Aici puteți specifica timpul în milisecunde pe care AdGuard va aștepta pentru răspunsul de la serverul DNS selectat înainte de a recurge la fallback. Dacă nu completați acest câmp sau introduceți o valoare invalidă, va fi utilizată valoarea de 5000.
+Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
 
 ### Use HTTP/3 for DNS-over-HTTPS
 
@@ -209,11 +213,11 @@ If Custom IP address is selected in Blocking mode for hosts rules or Blocking mo
 
 ### Adresă IPv6 personalizată
 
-If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. Dacă nu este specificat nimic, AdGuard va răspunde cu eroarea implicită "Refuzat".
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
 ### Servere de rezervă
 
-Aici puteți specifica un server DNS alternativ la care o cerere DNS va fi redirecționată dacă serverul principal nu răspunde în perioada de timp specificată în secțiunea următoare. Există trei opțiuni din care să alegeți:
+Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
 
 - Nu utilizați servere de rezervă;
 - Utilizați servere implicite de sistem;
@@ -221,21 +225,21 @@ Aici puteți specifica un server DNS alternativ la care o cerere DNS va fi redir
 
 ### Blocați ECH
 
-Dacă este activat, AdGuard elimină parametrii Encrypted Client Hello din răspunsuri.
+If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
 
 ### Lista serverelor de rezervă personalizate
 
-Dacă doriți ca AdGuard să folosească servere de rezervă personalizate, listați-le în această secțiune, câte una pe linie.
+If you want AdGuard to use custom fallback servers, list them in this section, one per line.
 
 ### Lista de adrese bootstrap personalizate
 
-Un bootstrap este un server DNS intermediar folosit pentru a obține adresa IP a serverului DNS sigur pe care l-ați ales anterior în *protecția DNS*. Un astfel de "teren de mijloc" este necesar atunci când folosiți protocoale care denotă adresa serverului prin litere (cum ar fi DNS-over-TLS, de exemplu). În acest caz, bootstrapul acționează ca un translator, transformând literele în numere pe care sistemul dumneavoastră le poate înțelege.
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
-În mod implicit, se folosește rezolvatorul DNS al sistemului, iar cererea inițială bootstrap este făcută prin portul 53. Dacă acest lucru nu vi se potrivește, listați aici adresele IP ale serverelor DNS care vor fi utilizate pentru a determina adresa serverului DNS criptat în ordinea de sus în jos. Adresele IP specificate vor fi aplicate în ordinea listată. Dacă specificați adrese invalide, sau nu specificați deloc adrese, vor fi utilizate IP-urile sistemului.
+By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
 
 ### Excluderi DNS
 
-Toate cererile DNS către domeniile listate aici vor fi redirecționate către serverul DNS implicit al sistemului în loc de serverul DNS specificat în setările aplicației. De asemenea, regulile de blocare DNS nu vor fi aplicate la astfel de cereri.
+All DNS requests to domains listed here will be redirected to the system default DNS server instead of the DNS server specified in the app’s settings. Also, DNS blocking rules will not be applied to such requests.
 
 ### Exclude specified Wi-Fi networks names (SSIDs) from the DNS filtering
 

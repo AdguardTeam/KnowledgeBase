@@ -11,6 +11,15 @@ Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor rekla
 
 AdGuard pro Windows je snadno použitelný nástroj, který blokuje otravné bannery, vyskakovací okna, videoreklamy a slídiče. To ale není vše: pomáhá šetřit data, rychleji načítat webové stránky a chránit počítač před nežádoucím a potenciálně škodlivými weby. AdGuard vás také chrání před krádeží identity a chrání vaše děti před nevhodným obsahem.
 
+## Požadavky na systém
+
+- **OS version:** Microsoft Windows 10 or higher
+- **RAM:** at least 6 GB
+- **Processor:** 2-core, 2.0 GHz (or faster)
+- **Free disk space:** at least 4 GB.
+
+---
+
 ![Home screen](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
 
 Na domovské obrazovce najdete přepínač pro zapnutí nebo vypnutí AdGuard ochrany, stejně jako ikony pro _Blokování reklam_, _Ochranu před sledováním_, _Ochranu DNS_ a _Blokování obtěžování_. Hlavní nastavení je přístupné přes menu na levé straně.

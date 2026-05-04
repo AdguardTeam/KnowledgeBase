@@ -95,7 +95,7 @@ Spécifiez la durée (en millisecondes) pendant laquelle AdGuard doit attendre u
 
 ## Adresses d'amorçage personnalisées
 
-Un serveur d'amorçage est un serveur DNS intermédiaire utilisé pour obtenir l'adresse IP du serveur DNS sécuritaire que vous avez choisi précédemment dans la Protection DNS. Un "territoire neutre" est nécessaire lors de l'utilisation de protocoles qui désignent l'adresse du serveur par des lettres (comme DNS-over-TLS, par exemple). Dans ce cas, l'amorçage agit comme un traducteur, transformant les lettres en chiffres que votre système peut comprendre.
+Un serveur d'amorçage est un serveur DNS intermédiaire utilisé pour obtenir l'adresse IP du serveur DNS sécuritaire que vous avez choisi précédemment dans la Protection DNS. Un "territoire neutre" est nécessaire lors de l'utilisation de protocoles qui désignent l'adresse du serveur par des lettres (comme DNS-over-TLS, par exemple). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
 Mais si nécessaire, vous pouvez spécifier ici de différentes adresses IP — elles seront essayées dans l'ordre, de haut en bas. Si rien ne fonctionne ou rien n’est saisi, AdGuard reviendra aux paramètres par défaut du système.
 

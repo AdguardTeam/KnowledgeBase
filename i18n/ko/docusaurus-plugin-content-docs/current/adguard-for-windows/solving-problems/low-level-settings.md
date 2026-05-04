@@ -107,89 +107,93 @@ AdGuard가 특정 서브넷을 필터링하지 않도록 설정하려면 이 기
 
 HTTP 메서드와 URL 사이에 공백을 추가하고 심층 패킷 검사를 피하기 위해 '호스트:' 필드 뒤에 공백을 제거합니다. 예를 들어,
 
-`GET /foo/bar/ HTTP/1.1
-Host: example.org 요청은`
+```text
+GET /foo/bar/ HTTP/1.1
+Host: example.org
+```
 
-다음과 같이 변환됩니다.
+will be converted to
 
-`GET  /foo/bar/ HTTP/1.1
-Host:example.org`
+```text
+GET  /foo/bar/ HTTP/1.1
+Host:example.org
+```
 
-이 설정은 스텔스 모드에서 *DP로부터 보호* 옵션이 활성화된 경우에만 적용됩니다.
+This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### 초기 TLS 패킷의 조각화 크기 조정
 
-심층 패킷 검사를 피하기 위해 TCP 패킷 조각화의 크기를 지정합니다. 이 옵션은 보안(HTTPS) 트래픽에만 영향을 줍니다.
+Specifies the size of the TCP packet fragmentation, avoiding deep packet inspection. This option only affects secured (HTTPS) traffic.
 
-이 옵션을 활성화하면 AdGuard는 초기 TLS 패킷(Client Hello 패킷)을 두 부분으로 분할합니다. 첫 번째 부분은 지정된 길이를 가지며 두 번째 부분은 나머지 길이(전체 초기 TLS 패킷의 길이까지)를 가집니다.
+If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-유효한 값은 1~1500입니다. 잘못된 크기를 지정하면 시스템에서 선택한 값이 사용됩니다. 이 설정은 스텔스 모드에서 *DP로부터 보호* 옵션이 활성화된 경우에만 적용됩니다.
+Valid values: 1–1500. 잘못된 크기를 지정하면 시스템에서 선택한 값이 사용됩니다. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### 일반 HTTP 조각 크기
 
-HTTP 요청 조각화의 크기를 조정합니다. 이 옵션은 일반 HTTP 트래픽에만 영향을 줍니다. 이 옵션을 활성화하면 AdGuard는 초기 패킷을 두 부분으로 분할하여 첫 번째 패킷은 지정된 길이로, 두 번째 패킷은 전체 원본 패킷의 길이까지 나머지 부분을 차지합니다.
+HTTP 요청 조각화의 크기를 조정합니다. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-유효한 값은 1~1500입니다. 잘못된 크기를 지정하면 시스템에서 선택한 값이 사용됩니다. 이 설정은 스텔스 모드에서 *DP로부터 보호* 옵션이 활성화된 경우에만 적용됩니다.
+유효한 값은 1~1500입니다. 잘못된 크기를 지정하면 시스템에서 선택한 값이 사용됩니다. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### QUIC 보기
 
-필터링 로그에 QUIC 프로토콜 레코드를 표시할 수 있습니다. 이 옵션은 차단된 요청에 대해서만 작동합니다.
+Allows displaying the QUIC protocol records in the filtering log. For blocked requests only.
 
 ### TCP 연결 유지 사용
 
-유휴 연결을 통해 주기적으로 TCP 패킷을 전송하여 연결이 활성화되어 있는지 확인하고 NAT 시간 제한을 갱신합니다. 이 옵션은 일부 ISP가 사용하는 엄격한 NAT(네트워크 주소 변환) 설정을 우회하는 데 유용할 수 있습니다.
+유효한 값은 1~1500입니다. 잘못된 크기를 지정하면 시스템에서 선택한 값이 사용됩니다.
 
 ### TCP 연결 유지 간격
 
-킵얼라이브 프로브를 보내기 전에 유휴 기간을 초 단위로 지정할 수 있습니다. 0을 지정하면 시스템에서 선택한 값이 사용됩니다.
+Here you can specify an idle time period, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used.
 
 :::note
 
-이 설정은 *TCP 킵얼라이브 활성화* 옵션이 활성화된 경우에만 작동합니다.
+This setting only works when the *Enable TCP keepalive* option is enabled.
 
 :::
 
 ### TCP 연결 유지 시간 초과
 
-여기에서 응답이 없는 피어에게 다른 킵얼라이브 프로브를 보내기 전에 시간을 초 단위로 지정할 수 있습니다. 0을 지정하면 시스템에서 선택한 값이 사용됩니다.
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
 
 :::note
 
-이 설정은 *TCP 킵얼라이브 활성화* 옵션이 활성화된 경우에만 작동합니다.
+This setting only works when the *Enable TCP keepalive* option is enabled.
 
 :::
 
 ### Java 차단
 
-일부 웹사이트와 웹 서비스는 여전히 Java 플러그인을 지원합니다. Java 플러그인의 기반이 되는 API에는 심각한 보안 취약점이 있습니다. 보안을 위해 이러한 플러그인을 비활성화할 수 있습니다. 그러나 *Java 차단* 옵션을 사용하기로 결정하더라도 자바스크립트는 계속 활성화됩니다.
+Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
 
 ### DNS 서버 시간 초과 기간
 
-이 필드에서 AdGuard가 폴백 DNS 서버를 사용하기 전에 선택한 DNS 서버의 응답을 기다리는 시간(밀리초)을 지정할 수 있습니다. 이 필드를 채우지 않거나 잘못된 값을 입력하면 5000이라는 값이 사용됩니다.
+Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
 
 ### DNS-over-HTTPS에 HTTP/3 사용
 
-선택한 업스트림이 이 프로토콜을 지원하는 경우, DNS-over-HTTPS 업스트림에 HTTP/3을 활성화하여 연결을 가속화합니다. 즉, 이 옵션을 활성화해도 모든 DNS 요청이 HTTP/3을 통해 전송된다는 보장은 없습니다.
+Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection if the selected upstream supports this protocol. This means that enabling this option does not guarantee that all DNS requests will be sent via HTTP/3.
 
 ### 폴백 DNS 업스트림 사용
 
-선택한 업스트림에 대한 모든 DNS 요청이 실패하면 일반 쿼리는 폴백 업스트림으로 리디렉션됩니다.
+Normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
 
 ### DNS 업스트림 쿼리를 병렬로 수행
 
-모든 업스트림이 병렬로 쿼리되고 첫 번째 응답이 반환됩니다. DNS 쿼리는 병렬로 이루어지므로 이 기능을 활성화하면 인터넷 속도가 빨라집니다.
+All upstreams will be queried in parallel and the first response is returned. Since DNS queries are made in parallel, enabling this feature increases the Internet speed.
 
 ### 실패한 DNS 쿼리에 항상 응답
 
-전달된 각 업스트림과 폴백 도메인에서 주소 확인에 실패한 경우 DNS 요청에 대한 응답은 `SERVFAIL`이 됩니다.
+If address resolving failed on each of the forwarded upstreams, as well as on the fallback domains, then the response to the DNS request will be `SERVFAIL`.
 
 ### 보안 DNS 요청 필터링 사용
 
-AdGuard는 일반 DNS 요청뿐만 아니라 보안 DNS 요청을 로컬 DNS 프록시로 리디렉션합니다.
+AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
 
 ### 호스트 규칙에 대한 차단 모드
 
-[호스트 규칙 구문](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax)을 기반으로 DNS 규칙에 의해 차단된 도메인에 대해 AdGuard가 응답하는 방식을 선택할 수 있습니다.
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
 - 'Refused' 오류로 회신
 - 'NxDomain' 오류로 회신
@@ -197,7 +201,7 @@ AdGuard는 일반 DNS 요청뿐만 아니라 보안 DNS 요청을 로컬 DNS 프
 
 ### adblock-style 규칙을 위한 차단 모드
 
-여기에서 [adblock-style 구문](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax)을 기반으로 DNS 규칙에 의해 차단된 도메인에 AdGuard가 응답하는 방식을 선택할 수 있습니다.
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [adblock-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
 - 'Refused' 오류로 회신
 - 'NxDomain' 오류로 회신
@@ -205,15 +209,15 @@ AdGuard는 일반 DNS 요청뿐만 아니라 보안 DNS 요청을 로컬 DNS 프
 
 ### 사용자 정의 IPv4
 
-호스트 규칙의 차단 모드 또는 adblock-style 규칙의 차단 모드에서 사용자 정의 IP 주소를 선택한 경우, 차단된 A 요청에 대한 응답으로 이 IP 주소가 반환됩니다. IP 주소가 지정되지 않은 경우 AdGuard는 기본 'Refused' 오류로 응답합니다.
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked A requests. If none are specified, AdGuard will reply with the default Refused error.
 
 ### 사용자 지정 IPv6
 
-호스트 규칙의 차단 모드 또는 adblock-style 규칙의 차단 모드에서 사용자 정의 IP 주소를 선택한 경우, 차단된 AAAA 요청에 대한 응답으로 이 IP 주소가 반환됩니다. IP 주소가 지정되지 않은 경우 AdGuard는 기본 'Refused' 오류로 응답합니다.
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
 ### 폴백 서버
 
-여기에서 주 서버가 다음 섹션에서 지정한 시간 제한 기간 내에 응답하지 않을 경우, DNS 요청을 다시 라우팅할 대체 DNS 서버를 지정할 수 있습니다. 세 가지 옵션 중에서 선택할 수 있습니다.
+Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
 
 - 폴백 서버를 사용하지 않음
 - 시스템 기본 서버 사용
@@ -221,22 +225,22 @@ AdGuard는 일반 DNS 요청뿐만 아니라 보안 DNS 요청을 로컬 DNS 프
 
 ### ECH 차단
 
-이 옵션을 활성화하면 AdGuard는 응답에서 암호화된 클라이언트 헬로 매개변수를 제거합니다.
+If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
 
 ### 사용자 정의 폴백 서버 목록
 
-AdGuard가 사용자 정의 폴백 서버를 사용하도록 하려면 이 섹션에 한 줄에 하나씩 나열하세요.
+If you want AdGuard to use custom fallback servers, list them in this section, one per line.
 
 ### 사용자 정의 부트스트랩 주소 목록
 
-부트스트랩은 앞서 *DNS 보호*에서 선택한 보안 DNS 서버의 IP 주소를 가져오는 데 사용되는 중간 DNS 서버입니다. 이러한 '중간 지점'은 서버 주소를 문자로 표시하는 프로토콜(예: DNS-over-TLS)을 사용할 때 필요합니다. 이 경우 부트스트랩이 번역기 역할을 하여 문자를 시스템에서 이해할 수 있는 숫자로 변환합니다.
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
-기본적으로 시스템 DNS DNS 리졸버가 사용되며 초기 부트스트랩 요청은 포트 53을 통해 이루어집니다. 이 방법이 적합하지 않은 경우 암호화된 DNS 서버의 주소를 확인하는 데 사용할 DNS 서버의 IP 주소를 여기에 나열하세요. 지정된 IP 주소는 나열된 순서대로 적용됩니다. 잘못된 주소를 지정하거나 주소를 전혀 지정하지 않으면 시스템 IP가 사용됩니다.
+By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
 
 ### DNS 예외
 
-여기에 나열된 도메인에 대한 모든 DNS 요청은 앱 설정에 지정된 DNS 서버가 아닌 시스템 기본 DNS 서버로 리디렉션됩니다. 또한 이러한 요청에는 DNS 차단 규칙이 적용되지 않습니다.
+All DNS requests to domains listed here will be redirected to the system default DNS server instead of the DNS server specified in the app’s settings. Also, DNS blocking rules will not be applied to such requests.
 
 ### 지정된 Wi-Fi 네트워크 이름(SSID)을 DNS 필터링하지 않기
 
-DNS 보호에는 이 섹션에 나열된 Wi-Fi 네트워크가 포함되지 않습니다. Wi-Fi 네트워크 이름(SSID)을 한 줄에 하나씩 지정합니다. 특정 Wi-Fi 네트워크가 이미 AdGuard Home 또는 다른 DNS 보호 시스템에 의해 보호되고 있는 경우 유용할 수 있습니다. 이 경우 DNS 요청을 다시 필터링할 필요가 없습니다.
+DNS protection will not include Wi-Fi networks listed in this section. Specify Wi-Fi networks names (SSIDs) one per line. This can be useful if a particular Wi-Fi network is already protected by AdGuard Home or another DNS protection system. In this case, it is superfluous to filter DNS requests again.

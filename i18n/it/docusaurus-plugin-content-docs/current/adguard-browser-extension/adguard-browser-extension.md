@@ -11,7 +11,7 @@ Questo articolo riguarda l'Estensione di browser AdGuard, che protegge solo il t
 
 - [Funzionalità](/adguard-browser-extension/features)
 
-  Main features and settings available in AdGuard Browser Extension
+  Principali funzioni e impostazioni disponibili nell'estensione AdGuard per browser
 
 - [Disponibilità](/adguard-browser-extension/availability)
 
