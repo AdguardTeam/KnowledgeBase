@@ -95,7 +95,7 @@ Specifica per quanto tempo (in millisecondi) AdGuard deve attendere una risposta
 
 ## Indirizzi bootstrap personali
 
-Un bootstrap è un server DNS intermedio utilizzato per ottenere l'indirizzo IP del server DNS sicuro scelto in precedenza in Protezione DNS. Una simile "via di mezzo" è necessaria utilizzando i protocolli che denotano l'indirizzo del server con delle lettere (come ad esempio DNS su TLS). In questo caso, il bootstrap agisce da traduttore, trasformando le lettere in numeri comprensibili dal tuo sistema.
+Un bootstrap è un server DNS intermedio utilizzato per ottenere l'indirizzo IP del server DNS sicuro scelto in precedenza in Protezione DNS. Una simile "via di mezzo" è necessaria utilizzando i protocolli che denotano l'indirizzo del server con delle lettere (come ad esempio DNS su TLS). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
 Ma se necessario, qui puoi specificare diversi indirizzi IP — verranno provati nell'ordine dall'alto verso il basso. Se non funziona o non viene inserito nulla, AdGuard tornerà alle impostazioni predefinite del sistema.
 

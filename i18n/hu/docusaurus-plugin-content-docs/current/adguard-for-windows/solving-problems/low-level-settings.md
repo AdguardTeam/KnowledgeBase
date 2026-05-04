@@ -107,13 +107,17 @@ This option should be enabled **only for debugging purposes**. Ticking the check
 
 Adds extra space between the HTTP method and the URL and removes space after the "Host:" field to avoid deep packet inspection. For instance, the request
 
-`GET /foo/bar/ HTTP/1.1
-Host: example.org`
+```text
+GET /foo/bar/ HTTP/1.1
+Host: example.org
+```
 
 will be converted to
 
-`GET  /foo/bar/ HTTP/1.1
-Host:example.org`
+```text
+GET  /foo/bar/ HTTP/1.1
+Host:example.org
+```
 
 This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
@@ -141,7 +145,7 @@ Periodically sends TCP packets over idle connection to ensure it is alive and to
 
 ### TCP keepalive interval
 
-Here you can specify an idle time period, in seconds, before sending a keepalive probe. Ha 0 van megadva, akkor a rendszer által kiválasztott értéket fogja használni.
+Here you can specify an idle time period, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used.
 
 :::note
 
@@ -151,7 +155,7 @@ This setting only works when the *Enable TCP keepalive* option is enabled.
 
 ### TCP keepalive timeout
 
-Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. Ha 0 van megadva, akkor a rendszer által kiválasztott értéket fogja használni.
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
 
 :::note
 

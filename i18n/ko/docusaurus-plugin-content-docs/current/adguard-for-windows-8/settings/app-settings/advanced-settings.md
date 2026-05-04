@@ -95,7 +95,7 @@ Specify how long (in milliseconds) AdGuard should wait for a DNS response before
 
 ## Custom bootstrap addresses
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in DNS protection. Such a “middle ground” is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). 이 경우 부트스트랩이 번역기 역할을 하여 문자를 시스템에서 이해할 수 있는 숫자로 변환합니다.
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in DNS protection. Such a “middle ground” is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
 But if needed, you can specify different IP addresses here — they’ll be tried in the order from top to bottom. If none work or nothing is entered, AdGuard will fall back to system defaults.
 

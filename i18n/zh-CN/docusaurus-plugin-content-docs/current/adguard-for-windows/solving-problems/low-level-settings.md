@@ -107,89 +107,93 @@ sidebar_position: 7
 
 在 HTTP 方法和 URL 之间添加额外的空格，并在“主机”（Host）字段后删除空格以避免深度包检测。 例如，请求
 
-`GET /foo/bar/ HTTP/1.1
-Host: example.org`
+```text
+GET /foo/bar/ HTTP/1.1
+Host: example.org
+```
 
-将转换为
+will be converted to
 
-`GET  /foo/bar/ HTTP/1.1
-Host:example.org`
+```text
+GET  /foo/bar/ HTTP/1.1
+Host:example.org
+```
 
-此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
+This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### 调整初始 TLS 数据包的碎片大小
 
-指定 TCP 数据包碎片的大小，避免深度包检测。 此选项仅影响安全（HTTPS）流量。
+Specifies the size of the TCP packet fragmentation, avoiding deep packet inspection. This option only affects secured (HTTPS) traffic.
 
-如果开启该选项，AdGuard 将初始 TLS 数据包（ClientHello 数据包）分成两部分：第一部分包含指定的长度，第二部分包含剩余的长度，直到整个初始 TLS 数据包的长度。
+If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-有效值：1–1500。 如果指定无效大小，将使用系统选择的数值。 此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
+Valid values: 1–1500. 如果指定无效大小，将使用系统选择的数值。 This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### 普通 HTTP 请求片段大小
 
-调整 HTTP 请求片段大小。 此选项仅影响普通 HTTP 流量。 开启该选项后，AdGuard 会将初始数据包分成两部分：第一部分是指定的长度，第二部分是指定的长度，直到原始数据包的长度。
+调整 HTTP 请求片段大小。 This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-有效值：1–1500。 如果指定无效大小，将使用系统选择的数值。 此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
+有效值：1–1500。 如果指定无效大小，将使用系统选择的数值。 This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### 显示 QUIC
 
-允许在过滤日志中显示 QUIC 协议记录。 仅适用于被阻止的请求。
+Allows displaying the QUIC protocol records in the filtering log. For blocked requests only.
 
 ### 启用 TCP 保活（keepalive）
 
-定期在 IDLE 连接上发送 TCP 数据包，以确保它是保活的，并更新 NAT 超时。 此选项可用于绕过某些 ISP（互联网服务提供商）使用的严格的网络地址转换（NAT）设置。
+Periodically sends TCP packets over idle connection to ensure it is alive and to renew NAT timeouts. 如果指定无效大小，将使用系统选择的数值。
 
 ### TCP 保活间隔
 
-用户可以指定在发送 keepalive 探测之前的空闲时间段（以秒为单位）。 如指定为 0，则使用系统选择的数值。
+Here you can specify an idle time period, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used.
 
 :::note
 
-此设置仅工作在「*启用 TCP 保活*」被开启的情况下。
+This setting only works when the *Enable TCP keepalive* option is enabled.
 
 :::
 
 ### TCP 保活超时
 
-用户可以指定时间（以秒为单位），然后向没有响应的对等发送另一个 keepalive（保活）探测。 如果指定 0，使用系统选择的数值。
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
 
 :::note
 
-此设置仅工作在「*启用 TCP 保活*」被开启的情况下。
+This setting only works when the *Enable TCP keepalive* option is enabled.
 
 :::
 
 ### 拦截 Java
 
-一些网站和 Web 服务仍然支持 Java 插件。 作为 Java 插件基础的 API 存在严重的安全漏洞。 出于安全考虑，可以禁用此类插件。 然而，即使用户决定使用*「拦截 Java」*选项，JavaScript 仍然会被启用。
+Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
 
 ### DNS 服务器的超时期限
 
-用户可以指定 AdGuard 在使用后备服务器之前，等待选定 DNS 服务器响应的时间（以毫秒为单位）。 如果数值无效或为空，要使用的数值为 5000。
+Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
 
 ### 将 HTTP/3 用于 DNS-over-HTTPS
 
-如果所选上游支持此协议，为 DNS-over-HTTPS 上游启用 HTTP/3 以加速连接。 这意味着，启用该选项并不能保证所有 DNS 请求都将通过 HTTP/3 发送。
+Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection if the selected upstream supports this protocol. This means that enabling this option does not guarantee that all DNS requests will be sent via HTTP/3.
 
 ### 使用备用 DNS 上游
 
-如果所有 DNS 到所选上游请求失败，则正常查询将重新定向到后备上游。
+Normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
 
 ### 并行查询 DNS 上游
 
-所有的上游都是并行查询的。第一个响应会被返回。 由于 DNS 查询以并行方式处理，因此启用此功能可以提高上网速度。
+All upstreams will be queried in parallel and the first response is returned. Since DNS queries are made in parallel, enabling this feature increases the Internet speed.
 
 ### 始终响应故障的 DNS 查询
 
-如果地址解析在每个转发的上游以及后备域名上失败，对 DNS 请求的响应将是 `SERVFAIL`。
+If address resolving failed on each of the forwarded upstreams, as well as on the fallback domains, then the response to the DNS request will be `SERVFAIL`.
 
 ### 启用安全 DNS 请求的过滤
 
-除普通 DNS 请求外，AdGuard 将所用安全 DNS 请求都重新定向到本地 DNS 代理。
+AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
 
 ### host 规则的拦截模式
 
-用户可以选择 AdGuard 将根据 [hosts 规则的语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax)对被 DNS 规则阻止的域名作出反应的方式。
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
 - 将「REFUSED」的错误作出回应
 - 将「NxDomain」的错误作出回应
@@ -197,7 +201,7 @@ Host:example.org`
 
 ### adblock 规则的拦截模式
 
-用户可以选择 AdGuard 将根据 [ adblock 规则的语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax)对被 DNS 规则阻止的域名作出反应的方式。
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [adblock-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
 - 将「REFUSED」的错误作出回应
 - 将「NxDomain」的错误作出回应
@@ -205,15 +209,15 @@ Host:example.org`
 
 ### 自定义 IPv4 地址
 
-如果在 host 规则的「拦截模式」或 adblock 规则的「拦截模式」中选择「自定义 IP 地址」，所有被阻止的「A」请求将返回该 IP 地址. 如果没有指定，AdGuard 将回复默认的「REFUSED」错误。
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked A requests. If none are specified, AdGuard will reply with the default Refused error.
 
 ### 自定义 IPv6 地址
 
-如果在 host 规则的「拦截模式」或 adblock 规则的「拦截模式」中选择「自定义 IP 地址」，所有被阻止的「AAAA」请求将返回该 IP 地址. 如果没有指定，AdGuard 将回复默认的「REFUSED」错误。
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
 ### 后备（Fallback）服务器
 
-用户可以指定一个后备 DNS 服务器，如果主服务器未能在下一节指定的超时期限内做出响应，DNS 请求将被重新路由到后备服务器。 有三个选项可供选择：
+Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
 
 - 不要使用后备服务器；
 - 使用系统默认的服务器；
@@ -221,22 +225,22 @@ Host:example.org`
 
 ### 拦截 ECH
 
-如果启用，AdGuard 将从响应中去除 Encrypted Client Hello 参数。
+If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
 
 ### 自定义后备服务器的列表
 
-如果用户希望 AdGuard 使用自定义后备服务器，请在此部分列出它们，每行一个。
+If you want AdGuard to use custom fallback servers, list them in this section, one per line.
 
 ### 自定义 bootstrap 地址的列表
 
-Bootstrap 是一个中间 DNS 服务器，用于获取用户在「*DNS 保护*」中选择的安全 DNS 服务器的 IP 地址。 当使用用字母表示服务器地址的协议（例如 DNS-over-TLS）时，需要这样的“中间立场”。 在这种情况下，bootstrap 充当翻译器，将字母转换为系统可以理解的数字。
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
-默认情况下，使用系统 DNS 解析器，初始 bootstrap 请求通过端口53发出。 如果该方式不适合，请按从上到下的顺序列出将用于确定加密 DNS 服务器地址的 DNS 服务器的 IP 地址。 指定的 IP 地址将按列出的顺序应用。 如果用户指定的地址无效，或者没有指定地址，系统 IP 将被使用。
+By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
 
 ### DNS 排除项
 
-所有对这里列出的域名的 DNS 请求将被重定向到系统默认的 DNS 服务器，而不是在应用程序设置中指定的 DNS 服务器。 此外，DNS 拦截规则将不会应用于此类请求。
+All DNS requests to domains listed here will be redirected to the system default DNS server instead of the DNS server specified in the app’s settings. Also, DNS blocking rules will not be applied to such requests.
 
 ### 从 DNS 过滤中排除指定的 Wi-Fi 网络名称（SSID）
 
-DNS 保护将不包括列在本节中的 Wi-Fi 网络。 每行指定一个 Wi-Fi 网络名称（SSID）。 如果一个特定的 Wi-Fi 网络已经被 AdGuard Home 或其他 DNS 保护系统保护，此功能很实用。 在这种情况下，再次过滤 DNS 请求是多余的。
+DNS protection will not include Wi-Fi networks listed in this section. Specify Wi-Fi networks names (SSIDs) one per line. This can be useful if a particular Wi-Fi network is already protected by AdGuard Home or another DNS protection system. In this case, it is superfluous to filter DNS requests again.

@@ -179,11 +179,11 @@ Secures DNS proxy connections with a hybrid post-quantum key exchange, combining
 
 #### `stealth.antidpi.http.split.fragment.size`
 
-HTTP 요청 조각화의 크기를 조정합니다. 유효한 값은 1~1500입니다. 잘못된 크기를 지정하면 시스템에서 기본값을 사용합니다.
+HTTP 요청 조각화의 크기를 조정합니다. Valid values: 1–1500. 잘못된 크기를 지정하면 시스템에서 기본값을 사용합니다.
 
 #### `stealth.antidpi.clienthello.split.fragment.size`
 
-이 옵션은 심층 패킷 검사를 피하는 데 도움이 되는 TCP 패킷 조각화 크기를 지정합니다. 유효한 값은 1~1500입니다. 잘못된 크기를 지정하면 시스템에서 기본값을 사용합니다.
+이 옵션은 심층 패킷 검사를 피하는 데 도움이 되는 TCP 패킷 조각화 크기를 지정합니다. Valid values: 1–1500. 잘못된 크기를 지정하면 시스템에서 기본값을 사용합니다.
 
 #### `stealth.antidpi.http.space.juggling`
 

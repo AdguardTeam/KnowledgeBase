@@ -95,7 +95,7 @@ Určete, jak dlouho (v milisekundách) má AdGuard čekat na odpověď DNS, než
 
 ## Vlastní adresy bootstrap
 
-Bootstrap je zprostředkující DNS server používaný k získání IP adresy zabezpečeného DNS serveru, který jste vybrali dříve v menu DNS ochrana. Taková "střední cesta" je nutná při použití protokolů, které označují adresu serveru písmeny (například DNS-over-TLS). V tomto případě funguje bootstrap jako překladač a převádí písmena na čísla, kterým systém rozumí.
+Bootstrap je zprostředkující DNS server používaný k získání IP adresy zabezpečeného DNS serveru, který jste vybrali dříve v menu DNS ochrana. Taková "střední cesta" je nutná při použití protokolů, které označují adresu serveru písmeny (například DNS-over-TLS). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
 V případě potřeby však můžete zde zadat různé IP adresy — budou vyzkoušeny v pořadí shora dolů. Pokud žádná nefunguje nebo není zadána žádná, AdGuard se vrátí k výchozím nastavením systému.
 

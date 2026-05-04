@@ -9,7 +9,7 @@ Cet article concerne AdGuard pour Android, un bloqueur de publicité multifoncti
 
 :::
 
-- [Features](/adguard-for-android/features/features.md)
+- [Fonctionnalités](/adguard-for-android/features/features.md)
 
   Main features and settings available in AdGuard for Android
 
@@ -17,6 +17,6 @@ Cet article concerne AdGuard pour Android, un bloqueur de publicité multifoncti
 
   Installation, removal, and system requirements for AdGuard for Android
 
-- [Solving problems](/adguard-for-android/solving-problems/solving-problems.md)
+- [Résolution des problèmes](/adguard-for-android/solving-problems/solving-problems.md)
 
   Problèmes connus et solutions possibles

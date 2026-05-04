@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-Questo articolo riguarda l'Estensione di browser AdGuard, che protegge solo il tuo browser. Per proteggere l'intero dispositivo, [scarica l'app AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda l'Estensione per browser di AdGuard, che protegge solo il tuo browser. Per proteggere l'intero dispositivo, [scarica l'app AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -25,22 +25,22 @@ Puoi salvare la configurazione delle tue impostazioni cliccando il pulsante _Esp
 
 La sezione delle _Impostazioni aggiuntive_ contiene una gamma di varie impostazioni, correlate a processo di blocco delle inserzioni e utilizzabilità dell'applicazione.
 
-![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
+![Impostazioni aggiuntive \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
 
-From this tab, you can invert the allowlist and add the AdGuard item to the browser’s context menu. You can also enable the display of the number of blocked ads on the AdGuard icon and notifications about extension updates. Additionally, this section lets you enable notifications about the AdGuard app, open the _Filtering log_, clear the statistics of blocked ads and trackers, or reset the settings.
+Da questa scheda, puoi invertire la lista consensi e aggiungere l'elemento AdGuard al menu' contestuale del browser. È inoltre possibile abilitare la visualizzazione del numero di annunci bloccati sull'icona di AdGuard e le notifiche relative agli aggiornamenti dell'estensione. Inoltre, questa sezione consente di abilitare le notifiche relative all'app AdGuard, aprire il _Registro di filtraggio_, cancellare le statistiche degli annunci e dei tracker bloccati o ripristinare le impostazioni.
 
 Inoltre, puoi decidere di aiutarci con lo sviluppo dei filtri, inviandoci le statistiche sulle regole applicate: quali sono innescate, in quali siti web e quanto spesso. Questa opzione è disabilitata di default in quanto non raccogliamo dati dell'utente senza consenso. Tuttavia, se l'abiliti, tutti i dati saranno strettamente anonimizzati.
 
-You can also choose to help us improve the extension by sending us anonymized usage data. This includes the names of the screens you interact with, the names of the buttons you click, and session identifiers. These insights help us understand where users run into friction, refine the experience, and make the extension faster and easier to use. The _Send anonymized usage data_ option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
+Puoi anche scegliere di aiutarci a migliorare l'estensione inviandoci dati di uso anonimizzati. Questo include i nomi delle schermate con cui interagisci, i nomi dei pulsanti che clicchi, e gli identificatori di sessione. Queste informazioni ci aiutano a capire dove gli utenti incontrano difficoltà, migliorare l'esperienza e rendere l'estensione più veloce e più facile da usare. L'opzione _"Invia dati di uso anonimizzati"_ è disabilitata di default. Se lo abiliti, tutti i dati saranno strettamente anonimizzati e usati solo internamente. Non sarà mai condiviso con terze parti.
 
 :::note
 
-The _Send anonymized usage data_ option can also be enabled on the post-installation page in Chromium-based browsers.
+L'opzione _Invia dati di uso anonimizzati_ può anche essere abilitata nella pagina post-installazione nei browser basati su Chromium.
 
 :::
 
-## About {#about}
+## Informazioni {#about}
 
-In the _About_ section, you can find info about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
+Nella sezione _Informazioni_, puoi trovare le informazioni sulla versione corrente, collegamenti all'EULA e alla Politica di riservatezza e al dispensario dell'estensione browser su GitHub.
 
-![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+![Informazioni \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)

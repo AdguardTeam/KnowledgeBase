@@ -5,44 +5,44 @@ sidebar_position: 4
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+本文适用于 Windows 版的 AdGuard v8.0，一款全面的广告拦截器，可在系统层面保护您的设备。 这是一个仍在开发中的 Beta 测试版本。 要试用，请下载 [适用于 Windows 的 AdGuard 测试版](https://agrd.io/windows_beta)。
 
 :::
 
-DNS protection gives you more control over how your device connects to the Internet. There are three main reasons why it can be useful:
+DNS 保护让用户对设备的网络连接方式拥有更多控制权。 它之所以有用，主要有三个原因：
 
-## 1. Protect your privacy from your ISP
+## 1. 保护个人隐私，远离 ISP
 
-Every time you open a website, for example `google.com`, your browser sends a request to a DNS server to get the IP address of the website in return. Usually, the DNS server belongs to your ISP, which means they can track the websites you visit. If you switch to another DNS server, such as AdGuard DNS, your ISP no longer sees your online activity.
+每次打开一个网站（例如 `google.com`），浏览器都会向 DNS 服务器发送请求，以获取该网站对应的 IP 地址。 通常情况下，DNS 服务器属于用户的 ISP（互联网服务提供商），这意味着他们可以跟踪用户访问的网站。 如果您切换到其他 DNS 服务器（例如 AdGuard DNS），ISP 将无法再看到您的在线活动。
 
-## 2. Encrypt your DNS traffic
+## 2. 加密 DNS 流量
 
-Modern protocols like DNS-over-TLS and DNS-over-HTTPS ensure that your DNS requests are encrypted. This protects them from being intercepted, modified, or spied on by attackers.
+DNS-over-TLS 和 DNS-over-HTTPS 等现代协议可确保您的 DNS 请求得到加密。 这能保护请求免遭攻击者拦截、篡改或窃听。
 
-## 3. Block unwanted content at the DNS level
+## 3. 在 DNS 级别拦截有害内容
 
-DNS protection can filter out ads, trackers, phishing websites, and other harmful or annoying content before it even loads in your browser or apps. [Learn more about DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/)
+DNS 保护可以在广告、跟踪器、钓鱼网站及其他有害或烦人内容加载到您的浏览器或应用之前，就将其过滤掉。 [了解有关 DNS 过滤的更多信息](https://adguard-dns.io/kb/general/dns-filtering/)。
 
-![DNS protection](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns.png)
+![DNS 保护](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns.png)
 
-Here’s what you can configure in DNS protection:
+在 DNS 保护中，您可以配置以下内容：
 
-## Choose a DNS server
+## 选择 DNS 服务器
 
-![DNS servers](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_server.png)
+![DNS 服务器](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_server.png)
 
-You can select from multiple trusted DNS providers. AdGuard itself offers several options for different needs:
+您可以从多个受信任的 DNS 提供商中进行选择。 AdGuard 自身针对不同需求提供多个选项：
 
-- AdGuard DNS — blocks ads and trackers.
+- AdGuard DNS：拦截广告和跟踪器。
 
-- AdGuard DNS Family Protection — blocks ads, trackers, and adult content.
+- AdGuard DNS 家庭保护版：拦截广告、跟踪器和成人内容。
 
-- AdGuard DNS Non-filtering — provides a secure and reliable connection without any filtering.
+- AdGuard DNS 非过滤版：提供安全可靠的连接，不进行任何过滤。
 
-You can use one of our public servers, add your own custom DNS server, or pick another trusted option from our [list of trusted DNS providers](https://adguard-dns.io/kb/general/dns-providers/).
+您可以使用我们的公共服务器之一，添加自己的自定义 DNS 服务器，或从我们列出的[受信任 DNS 提供商](https://adguard-dns.io/kb/general/dns-providers/)中选择其他选项。
 
-## Add DNS filters and rules
+## 添加 DNS 过滤器和规则
 
-To fine-tune protection, you can create your own DNS filters using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/) or import ready-made [DNS filters](https://filterlists.com).
+要微调保护，可以使用 [DNS 规则语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/)创建自己的 DNS 过滤器，或导入现成的 [DNS 过滤器](https://filterlists.com)。
 
-In addition, you can create custom DNS rules to block, unblock, or redirect domains as needed. Use our built-in rule constructor.
+此外，用户还可以根据需要创建自定义 DNS 规则来拦截、解除拦截或重定向域名。 请使用我们内置的规则构造器。

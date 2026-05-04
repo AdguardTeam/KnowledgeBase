@@ -179,11 +179,11 @@ Secures DNS proxy connections with a hybrid post-quantum key exchange, combining
 
 #### `stealth.antidpi.http.split.fragment.size`
 
-Regola la dimensione della frammentazione della richiesta HTTP. Valori validi: 1–1500. Se viene specificata una dimensione non valida, il sistema utilizzerà il valore predefinito.
+Regola la dimensione della frammentazione della richiesta HTTP. Valid values: 1–1500. Se viene specificata una dimensione non valida, il sistema utilizzerà il valore predefinito.
 
 #### `stealth.antidpi.clienthello.split.fragment.size`
 
-Questa opzione specifica la dimensione della frammentazione dei pacchetti TCP, che consente di evitare l'ispezione approfondita dei pacchetti. Valori validi: 1–1500. Se viene specificata una dimensione non valida, il sistema utilizzerà il valore predefinito.
+Questa opzione specifica la dimensione della frammentazione dei pacchetti TCP, che consente di evitare l'ispezione approfondita dei pacchetti. Valid values: 1–1500. Se viene specificata una dimensione non valida, il sistema utilizzerà il valore predefinito.
 
 #### `stealth.antidpi.http.space.juggling`
 

@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement votre navigateur. Pour protéger l'ensemble de votre appareil, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
+Cet article concerne l'Extension de navigateur AdGuard, qui protège uniquement votre navigateur. Pour protéger l'ensemble de votre appareil, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -25,22 +25,22 @@ Vous pouvez sauvegarder la configuration de vos paramètres en cliquant sur le b
 
 La section _Paramètres supplémentaires_ contient une gamme de paramètres variés liés au processus de blocage des publicités et à la convivialité de l'application.
 
-![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
+![Paramètres additionnels \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
 
-From this tab, you can invert the allowlist and add the AdGuard item to the browser’s context menu. You can also enable the display of the number of blocked ads on the AdGuard icon and notifications about extension updates. Additionally, this section lets you enable notifications about the AdGuard app, open the _Filtering log_, clear the statistics of blocked ads and trackers, or reset the settings.
+Depuis cet onglet, vous pouvez inverser la liste autorisée et ajouter l'élément AdGuard au menu contextuel du navigateur. Vous pouvez également activer l'affichage du nombre de publicités bloquées sur l'icône AdGuard et les notifications concernant les mises à jour de l'extension. De plus, cette section vous permet d'activer les notifications concernant l'app AdGuard, d'ouvrir le _Journal de filtrage_, d'effacer les statistiques des pubs et des traqueurs bloqués, ou de réinitialiser les paramètres.
 
 De plus, vous pouvez choisir de nous aider dans le développement des filtres en envoyant les statistiques sur les règles appliquées : celles qui sont déclenchées, sur quels sites web et à quelle fréquence. Cette option est désactivée par défaut car nous ne collectons pas de données utilisateur sans consentement. Cependant, si vous l'activez, toutes les données seront strictement anonymisées.
 
-You can also choose to help us improve the extension by sending us anonymized usage data. This includes the names of the screens you interact with, the names of the buttons you click, and session identifiers. These insights help us understand where users run into friction, refine the experience, and make the extension faster and easier to use. The _Send anonymized usage data_ option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
+Vous pouvez également choisir de nous aider à améliorer l'extension en nous envoyant des données d'utilisation anonymisées. Cela inclut les noms des écrans avec lesquels vous interagissez, les noms des boutons sur lesquels vous cliquez, et les identifiants de session. Ces informations nous aident à comprendre où les utilisateurs rencontrent des difficultés, à affiner leur expérience et à rendre l'extension plus rapide et plus facile à utiliser. L'option _Envoyer des données d'utilisation anonymisées_ est désactivée par défaut. Si vous l'activez, toutes les données seront strictement anonymisées et utilisées uniquement en interne. Elles ne seront jamais communiquées à des tiers.
 
 :::note
 
-The _Send anonymized usage data_ option can also be enabled on the post-installation page in Chromium-based browsers.
+L'option _Envoyer des données d'utilisation anonymisées_ peut également être activée sur la page de post-installation dans les navigateurs basés sur Chromium.
 
 :::
 
-## About {#about}
+## À propos {#about}
 
-In the _About_ section, you can find info about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
+Dans la section _À propos_, vous pouvez trouver des informations sur la version actuelle, des liens vers le CLUF et la Politique de confidentialité, ainsi que vers le dépôt de l'Extension de navigateur sur GitHub.
 
-![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+![À propos \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
