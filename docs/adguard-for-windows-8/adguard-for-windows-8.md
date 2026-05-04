@@ -17,6 +17,7 @@ AdGuard for Windows is an easy-to-use tool that blocks annoying banners, popups,
 - **RAM:** at least 6 GB
 - **Processor:** 2-core, 2.0 GHz (or faster)
 - **Free disk space:** at least 4 GB.
+
 ---
 
 ![Home screen](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
