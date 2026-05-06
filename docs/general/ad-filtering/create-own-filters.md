@@ -3565,6 +3565,7 @@ example.org#@#body{remove:true;}
 - [Pseudo-class `:remove()` and pseudo-property `remove`](#remove-pseudos)
 - [Pseudo-class `:is()`](#extended-css-is)
 - [Pseudo-class `:not()`](#extended-css-not)
+- [Pseudo-class `:empty-trimmed`](#extended-css-empty-trimmed)
 - [Pseudo-class `:if-not()` (removed)](#extended-css-if-not)
 
 CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends CSS capabilities by adding support for the new pseudo-elements. We have developed a separate [open-source library](https://github.com/AdguardTeam/ExtendedCss) for non-standard element selecting and applying CSS styles with extended properties.
@@ -4257,6 +4258,60 @@ The `:not()` is considered as a standard CSS pseudo-class inside the argument of
   <span class="text">text</span>
 </div>
 ```
+
+#### Pseudo-class `:empty-trimmed` {#extended-css-empty-trimmed}
+
+The `:empty-trimmed` pseudo-class allows selecting elements without text content. Unlike the native CSS [`:empty`](https://developer.mozilla.org/en-US/docs/Web/CSS/:empty) pseudo-class, which matches elements that have no child nodes at all (no elements, no text nodes), `:empty-trimmed` checks `textContent` of the element **and its descendants**. It also matches elements whose text content consists only of whitespace, including non-breaking spaces such as `&nbsp;`.
+
+**Syntax**
+
+```text
+[target]:empty-trimmed
+```
+
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
+
+:::note
+
+This pseudo-class has no arguments.
+
+:::
+
+:::info Compatibility
+
+Rules with the `:empty-trimmed` pseudo-class are supported by AdGuard Browser Extension. Such rules do not work in AdGuard Content Blocker.
+
+:::
+
+**Examples**
+
+`div > p:empty-trimmed` selects `p#empty`, `p#spaces`, `p#nbsp`, `p#child-empty`, and `p#comment`:
+
+```html
+<!-- HTML code -->
+<div>
+  <p id="empty"></p>
+  <p id="spaces">   </p>
+  <p id="nbsp">&nbsp;</p>
+  <p id="text">hello</p>
+  <p id="child-empty"><span></span></p>
+  <p id="child-text"><span>world</span></p>
+  <p id="comment"><!-- hidden --></p>
+  <p id="zwsp">&#x200B;</p>
+</div>
+```
+
+`div > p:not(:empty-trimmed)` selects `p#text`, `p#child-text`, and `p#zwsp`.
+
+:::note
+
+An element like `<p><span></span></p>` matches `:empty-trimmed` (its text content is empty) but does **not** match native `:empty` (it has a child `<span>` node).
+
+Elements containing only HTML comments (e.g. `<!-- hidden -->`) also match `:empty-trimmed`, because comment nodes are not reflected in `textContent`.
+
+Zero-width characters such as zero-width space (`\u200B`) are **not** treated as whitespace. An element containing only zero-width characters does **not** match `:empty-trimmed`.
+
+:::
 
 #### Pseudo-class `:if-not()` (removed) {#extended-css-if-not}
 
