@@ -9,9 +9,17 @@ sidebar_position: 4
 
 웹사이트는 광고 삽입 방식을 지속적으로 변경하고 있으며, 저희는 필터에 새로운 규칙을 추가해서 대응합니다. 필터 개발자들은 새로운 규칙을 만들기 위해 노력하고 있지만, 우리는 언제나 자원봉사자들의 도움과 지원을 환영합니다.
 
+:::note
+
+All contributors must follow the **AdGuard filter policy** when creating rules. By participating, you agree to comply with the Policy and ensure your rules adhere to its requirements. Also contributors must not create rules intended to deliberately block websites or services that do not meet the criteria for blocking or that fall under exceptions described in the Policy.
+
+:::
+
 ### 시작하는 법 {#how-to-start}
 
-하지만, 차단 필터를 다루기 위해서는 특정한 기술들이 필요합니다. 그 기술들과 규칙을 만드는 법을 알고 있다면 [GitHub의 AdGuard 필터 저장소로](https://github.com/AdguardTeam/AdguardFilters) 오세요. 이곳에는 놓친 광고, 잘못된 판단 등 웹사이트 문제와 관련된 여러 가지 미해결 문제들이 있습니다. 자유롭게 골라서 댓글로 당신만의 규칙을 제안해보세요. AdGuard 필터 개발자가 귀하의 제안을 검토하고 적절하다고 판단하면 당신의 규칙이 AdGuard 필터에 추가됩니다.
+하지만, 차단 필터를 다루기 위해서는 특정한 기술들이 필요합니다. 그 기술들과 규칙을 만드는 법을 알고 있다면 [GitHub의 AdGuard 필터 저장소로](https://github.com/AdguardTeam/AdguardFilters) 오세요. Before you start contributing, we recommend reviewing the [guidelines](https://github.com/AdguardTeam/AdguardFilters/blob/master/CONTRIBUTING.md).
+
+In the repository, you will find a lot of open issues, each one referencing a problem with some website problem — a missed ad, a false positive, etc. 자유롭게 골라서 댓글로 당신만의 규칙을 제안해보세요. AdGuard 필터 개발자가 귀하의 제안을 검토하고 적절하다고 판단하면 당신의 규칙이 AdGuard 필터에 추가됩니다.
 
 필터링 규칙 구문에 아직 익숙하지 않거나 복습이 필요한 경우 [저희의 지식 창고에서](/general/ad-filtering/create-own-filters) 구문의 기본에 대해 알아볼 수 있습니다.
 

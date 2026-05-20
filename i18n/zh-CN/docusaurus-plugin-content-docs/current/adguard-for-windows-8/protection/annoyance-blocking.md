@@ -11,7 +11,7 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 Annoyance filters are designed to improve website usability by blocking non-advertisement elements that distract from or interfere with site interaction or content consumption. These elements include modal windows, interactive forms, cookie consent notifications and requests, mobile app banners, and various widgets.
 
-These filters may contain rules that are not suitable for all users. Sometimes it is recommended to disable them. 向该过滤器添加规则的决定由过滤器开发人员逐条做出。
+These filters may contain rules that are not suitable for all users. Sometimes it is recommended to disable them. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
 
 ![Annoyance filters](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
 

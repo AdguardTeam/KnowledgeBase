@@ -9,56 +9,38 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-## Ochrana
+- [Ochrana](/adguard-for-android/features/protection/protection.md)
 
-Dostupná nastavení na kartě _Ochrana_: _Blokování reklam_, _Ochrana před sledováním_, _Blokování obtěžování_, _Ochrana DNS_, _Firewall_ a _Bezpečné prohlížení_
+  Available settings in the _Protection_ tab: _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Firewall_, and _Browsing security_
 
-[Ochrana](/adguard-for-android/features/protection/protection.md)
+- [Správa aplikací](/adguard-for-android/features/app-management.md)
 
-## Správa aplikací
+  Funkce, které umožňují přizpůsobit filtrování a směrování provozu pro každou aplikaci
 
-Funkce, které umožňují přizpůsobit filtrování a směrování provozu pro každou aplikaci
+- [Statistiky](/adguard-for-android/features/statistics.md)
 
-[Správa aplikací](/adguard-for-android/features/app-management.md)
+  Podrobné statistiky o blokovaných reklamách, slídičích a využití dat
 
-## Statistiky
+- [Nastavení](/adguard-for-android/features/settings.md)
 
-Podrobné statistiky o blokovaných reklamách, slídičích a využití dat
+  Obecná, pokročilá a nízkoúrovňová nastavení, která umožňují vybrat jazyk a motiv, přizpůsobit ochranu DNS, povolit filtrování HTTPS a spravovat uživatelské skripty
 
-[Statistiky](/adguard-for-android/features/statistics.md)
+- [Průvodce nízkoúrovňovým nastavením](/adguard-for-android/features/low-level-settings.md)
 
-## Nastavení
+  Popisy nízkoúrovňových nastavení dostupných v aplikaci AdGuard pro Android v4.3 a novější.
 
-Obecná, pokročilá a nízkoúrovňová nastavení, která umožňují vybrat jazyk a motiv, přizpůsobit ochranu DNS, povolit filtrování HTTPS a spravovat uživatelské skripty
+- [Asistent](/adguard-for-android/features/assistant.md)
 
-[Nastavení](/adguard-for-android/features/settings.md)
+  Nástroj, který umožňuje rychle měnit nastavení aplikací nebo webových stránek a zobrazovat statistiky bez nutnosti otevírat rozhraní AdGuardu
 
-## Průvodce nízkoúrovňových nastavení
+- [Bezplatná vs. plná verze](/adguard-for-android/features/free-vs-full.mdx)
 
-Popisy nízkoúrovňových nastavení dostupných v aplikaci AdGuard pro Android v4.3 a novější.
+  Porovnání funkcí bezplatné a placené verze
 
-[Průvodce nízkoúrovňovým nastavením](/adguard-for-android/features/low-level-settings.md)
+- [Integrace s AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
 
-## Assistant
+  Režim integrace, který umožňuje současný provoz Blokátoru reklam AdGuard a AdGuard VPN navzdory systémovým omezením
 
-Nástroj, který umožňuje rychle měnit nastavení aplikací nebo webových stránek a zobrazovat statistiky bez nutnosti otevírat rozhraní AdGuardu
+- [Zařízení s přístupem root](/adguard-for-android/features/rooted.md)
 
-[Asistent](/adguard-for-android/features/assistant.md)
-
-## Bezplatná vs. plná verze
-
-Porovnání funkcí bezplatné a placené verze
-
-[Bezplatná vs. plná verze](/adguard-for-android/features/free-vs-full.mdx)
-
-## Integrace s AdGuard VPN
-
-Režim integrace, který umožňuje současný provoz Blokátoru reklam AdGuard a AdGuard VPN navzdory systémovým omezením
-
-[Integrace s AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
-
-## Zařízení s přístupem root
-
-Funkce dostupné v AdGuardu pro Android na zařízeních s přístupem root: _Automatický proxy server_ a _Ruční proxy server_
-
-[Zařízení s přístupem root](/adguard-for-android/features/rooted.md)
+  Funkce dostupné v AdGuardu pro Android na zařízeních s přístupem root: _Automatický proxy server_ a _Ruční proxy server_

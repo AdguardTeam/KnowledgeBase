@@ -27,7 +27,7 @@ Esistono due errori differenti con soluzioni molto simili. Come suggerito dai lo
 
 - Disinstalla alcuni programmi o elimina i file non necessari, dall'unità in cui stavi tentando d'installare AdGuard.
 
-- Scarica, installa ed esegui [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), un software gratuito di Malwarebytes. Tra le altre cose, pulirà il sistema da tutti i tipi di file "residui" che rimangono dopo aver disinstallato programmi in modo errato e simili. Aiuterà a svuotare dello spazio su disco.
+- Download, install, and run [AdwCleaner](https://www.bleepingcomputer.com/download/adwcleaner/), a free piece of software by Malwarebytes. Tra le altre cose, pulirà il sistema da tutti i tipi di file "residui" che rimangono dopo aver disinstallato programmi in modo errato e simili. Aiuterà a svuotare dello spazio su disco.
 
 - Riavvia il tuo computer. Talvolta, i file temporanei, possono occupare una notevole quantità di spazio su disco e, riavviare il tuo PC, è il metodo più affidabile per liberarsene.
 

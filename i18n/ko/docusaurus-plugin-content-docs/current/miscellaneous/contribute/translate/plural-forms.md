@@ -12,7 +12,7 @@ sidebar_position: 4
 
 어떤 언어의 명사는 여러 복수형 단어 형태를 가질 수 있습니다. 사용법은 대화하는 대상의 수에 따라 다릅니다.
 
-예를 들어, 영어 단어는 단수형으로 무언가를 말할 때 두 가지 단어 형태를 갖습니다. 예를 들어 *'one star'*와 같고, 복수형으로는 *'two stars'*와 같습니다. 별 5개, 26개, 또는 532개라고 말하더라도 마지막 글자 's'는 동일하게 유지됩니다. 그러나 일부 언어에는 복수형이 하나 또는 여러 개가 포함될 수 있습니다. 별 5개, 26개, 또는 532개라고 말하더라도 마지막 글자 's'는 동일하게 유지됩니다. 그러나 일부 언어에는 복수형이 하나 또는 여러 개만 포함될 수 있습니다.
+For instance, English words have two word forms when speaking about something in the singular, like *one star*, and in the plural — *two stars*. 별 5개, 26개, 또는 532개라고 말하더라도 마지막 글자 's'는 동일하게 유지됩니다. 그러나 일부 언어에는 복수형이 하나 또는 여러 개만 포함될 수 있습니다.
 
 영어와 달리 폴란드어에는 세 가지 복수형 명사가 있습니다. 그 중 하나는 단수로 무언가를 말할 때 사용되고, 다른 형태는 복수형으로 사용되지만 12~14를 제외하고 2~4로 끝나는 숫자가 사용되며, 세 번째 형태는 앞에 다른 숫자가 붙은 단어에 사용됩니다.
 
@@ -38,9 +38,9 @@ sidebar_position: 4
 
 다음은 사용할 수 있는 몇 가지 정보 출처입니다.
 
-[현지화 가이드](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html)에는 다양한 언어 목록이 포함되어 있습니다. 다른 언어의 복수형 수는 `nplurals=2`, `nplurals=4` 등과 같은 방식으로 표시됩니다. 등호 기호 `=` 뒤의 숫자는 해당 언어의 복수형 개수를 나타냅니다.
+[Localization Guide](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. 다른 언어의 복수형 수는 `nplurals=2`, `nplurals=4` 등과 같은 방식으로 표시됩니다. 등호 기호 `=` 뒤의 숫자는 해당 언어의 복수형 개수를 나타냅니다.
 
-또한 [Unicode Common Locale Data Repository(CLDR)](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules)에서 복수형에 대한 정보를 확인할 수 있습니다. CLDR 복수형 규칙은 10진수(1.5, 2.3, 100.1…)에 대한 추가 단어 형식을 나타내지만 AdGuard 번역에는 사용하지 않습니다.
+Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). CLDR 복수형 규칙은 10진수(1.5, 2.3, 100.1…)에 대한 추가 단어 형식을 나타내지만 AdGuard 번역에는 사용하지 않습니다.
 
 ## AdGuard 번역의 복수형 {#translations}
 
@@ -116,7 +116,7 @@ Crowdin은 사용자에게 다양한 복수형을 가진 특정 양의 문구를
 
 예를 들어, 복수형이 3개인 다른 언어가 있는 상황에서는 그 사이에 세로 막대 기호 2개가 있는 템플릿 3개가 있어야 합니다.
 
-예를 들어, 위에 언급된 문구를 슬로바키아어로 번역하면, [현지화 가이드](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) 규칙에 따라 세 가지 단어 형태가 있는데, 올바른 번역은 다음과 같습니다.
+For example, when we translate the above mentioned phrase into Slovak, that according to the rule of [Localization Guide](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) has three word forms, the correct translation will look so:
 
 `Štandartná licencia pre %count% počítač | Štandartná licencia pre %count% počítače | Štandartná licencia pre %count% počítačov`
 

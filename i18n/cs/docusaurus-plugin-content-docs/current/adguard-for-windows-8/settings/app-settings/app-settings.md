@@ -11,16 +11,16 @@ Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor rekla
 
 ![App settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/1_app_settings.png)
 
-Here you can adjust the main app settings: choose between light and dark themes, set the app language, enable AdGuard to launch at system startup, and allow silent automatic updates. It’s also possible to select the update channel and specify how often AdGuard checks for filter updates.
+Zde můžete upravit hlavní nastavení aplikace: vybrat si mezi světlým a tmavým motivem, nastavit jazyk aplikace, povolit spuštění AdGuardu při startu systému a povolit tiché automatické aktualizace. Je také možné vybrat kanál aktualizací a určit, jak často má AdGuard kontrolovat aktualizace filtrů.
 
-If you wish, you can agree to send anonymized app usage data to help us improve the product.
+Pokud chcete, můžete souhlasit s odesíláním anonymizovaných údajů o používání aplikace, které nám pomohou vylepšit produkt.
 
-In case of issues, you can change the logging level to create detailed logs for the support team.
+V případě problémů můžete změnit úroveň logování a vytvořit podrobné logy pro tým podpory.
 
-In [_Filter editor_](/adguard-for-windows-8/settings/app-settings/filter-editor.md), you can add your own filtering rules or import ready-to-use filters.
+V [_Editoru filtrů_](/adguard-for-windows-8/settings/app-settings/filter-editor.md) můžete přidat vlastní pravidla filtrování nebo importovat hotové filtry.
 
-[_Network_ settings](/adguard-for-windows-8/settings/app-settings/network-settings.md) include all options related to network filtering and how AdGuard interacts with your system’s network.
+[_Nastavení sítě_](/adguard-for-windows-8/settings/app-settings/network-settings.md) zahrnuje všechny možnosti související s filtrováním sítě a způsobem, jakým AdGuard komunikuje se sítí vašeho systému.
 
-[_Advanced_](/adguard-for-windows-8/settings/app-settings/advanced-settings.md) settings are intended for experienced users. They are rarely needed in everyday use and should only be changed if you know what you’re doing or if our support team asks you to.
+[_Pokročilá_](/adguard-for-windows-8/settings/app-settings/advanced-settings.md) nastavení jsou určena pro zkušené uživatele. V běžném používání jsou zřídka potřebné a měly by být měněny pouze v případě, že víte, co děláte, nebo pokud vás o to požádá náš tým podpory.
 
 ![App settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/2_app_settings.png)

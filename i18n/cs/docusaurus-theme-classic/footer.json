@@ -118,5 +118,9 @@
   "copyright": {
     "message": "© AdGuard, 2009–2023",
     "description": "The footer copyright"
+  },
+  "logo.alt": {
+    "message": "AdGuard",
+    "description": "The alt text of footer logo"
   }
 }

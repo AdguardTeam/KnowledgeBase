@@ -61,7 +61,7 @@ SponsorBlock skips sponsored segments in YouTube videos. It saves time by jumpin
 
 :::info
 
-This userscript runs exclusively on our desktop applications, AdGuard for Windows and AdGuard for Mac.
+Questo codice utente funziona esclusivamente nelle nostre applicazioni per sistemi non mobile, AdGuard per Windows e AdGuard per Mac.
 
 :::
 
@@ -427,7 +427,7 @@ Currently, two AdGuard apps allow you to create and manage userstyles: AdGuard f
 
 :::
 
-This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at <support@adguard.com>.
+This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at [support@adguard.com](mailto:support@adguard.com).
 
 ### How to set up a userstyle in AdGuard
 

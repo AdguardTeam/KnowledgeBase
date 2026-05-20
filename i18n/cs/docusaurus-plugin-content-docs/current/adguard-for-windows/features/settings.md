@@ -44,11 +44,7 @@ Než začnete ručně psát vlastní pravidla, přečtěte si našeho podrobnéh
 
 Mnoho webových stránek shromažďuje informace o svých návštěvnících, například jejich IP adresy, informace o nainstalovaném prohlížeči a operačním systému, rozlišení obrazovky, a dokonce i o tom, na jakou stránku uživatel přišel nebo z jaké stránky byl přesměrován. Některé webové stránky používají soubory cookies k označení prohlížeče a uložení vašich osobních nastavení, uživatelských preferencí nebo k vašemu “rozpoznání“ při příští návštěvě. To jim umožní vás při příští návštěvě “rozpoznat“. Ochrana před sledováním chrání vaše osobní údaje před takovými systémy shromažďujícími data a statistiky.
 
-![Tracking protection levels \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection1.png)
-
 Nastavení _ochrany před sledováním_ můžete upravit podle potřeby. Můžete například zabránit webovým stránkám v přijímání vyhledávacích dotazů, které jste použili k jejich vyhledání na internetu, automaticky mazat soubory cookies třetích stran a vlastní a deaktivovat sdílení polohy ve svém prohlížeči, abyste zabránili sledování vaší polohy.
-
-![Tracking protection custom features \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/tracking_protection2.png)
 
 Chcete-li se dozvědět vše o _Ochraně před sledováním_ a mnoha možnostech, přečtěte si [tento článek](/general/stealth-mode).
 

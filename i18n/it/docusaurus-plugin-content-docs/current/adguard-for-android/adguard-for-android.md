@@ -9,20 +9,14 @@ Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunziona
 
 :::
 
-## Funzioni
+- [Features](/adguard-for-android/features/features.md)
 
-Main features and settings available in AdGuard for Android
+  Main features and settings available in AdGuard for Android
 
-[Features](/adguard-for-android/features/features.md)
+- [Installation](/adguard-for-android/installation.md)
 
-## Installazione
+  Installation, removal, and system requirements for AdGuard for Android
 
-Installation, removal, and system requirements for AdGuard for Android
+- [Solving problems](/adguard-for-android/solving-problems/solving-problems.md)
 
-[Installation](/adguard-for-android/installation.md)
-
-## Risoluzione problemi
-
-Problemi noti e possibili soluzioni
-
-[Solving problems](/adguard-for-android/solving-problems/solving-problems.md)
+  Problemi noti e possibili soluzioni

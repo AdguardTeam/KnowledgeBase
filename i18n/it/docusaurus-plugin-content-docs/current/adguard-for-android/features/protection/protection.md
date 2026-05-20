@@ -11,38 +11,26 @@ Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunziona
 
 La scheda _Protezione_ include le seguenti funzioni o impostazioni. Troverai un articolo dettagliato per ciascuno di essi in questa Base di Conoscenze.
 
-## Ad blocking
+- [Bloccaggio inserzioni](/adguard-for-android/features/protection/ad-blocking.md)
 
-Impostazioni per bloccare le inserzioni nei browser e nelle app
+  Settings to block ads in browsers and apps
 
-[Bloccaggio inserzioni](/adguard-for-android/features/protection/ad-blocking.md)
+- [Protezione dal tracciamento](/adguard-for-android/features/protection/tracking-protection.md)
 
-## Protezione dal tracciamento
+  Impostazioni che consenti di bloccare gli strumenti di tracciamento che raccolgono informazioni sugli utenti
 
-Impostazioni che consenti di bloccare gli strumenti di tracciamento che raccolgono informazioni sugli utenti
+- [Blocco dei fastidi](/adguard-for-android/features/protection/annoyance-blocking.md)
 
-[Protezione dal tracciamento](/adguard-for-android/features/protection/tracking-protection.md)
+  Impostazioni per bloccare fastidi come i popup di consenso ai cookie, gli elementi social e i banner che ti invitano a scaricare app mobili
 
-## Blocco dei fastidi
+- [Protezione DNS](/adguard-for-android/features/protection/dns-protection.md)
 
-Impostazioni per bloccare fastidi come i popup di consenso ai cookie, gli elementi social e i banner che ti invitano a scaricare app mobili
+  Impostazioni per un server DNS sicuro e filtri DNS per bloccare le inserzioni, i tracciatori e i siti web pericolosi
 
-[Blocco dei fastidi](/adguard-for-android/features/protection/annoyance-blocking.md)
+- [Firewall](/adguard-for-android/features/protection/firewall/firewall.md)
 
-## Protezione DNS
+  Una funzionalità che consente di controllare l'accesso a Internet per singole app
 
-Impostazioni per un server DNS sicuro e filtri DNS per bloccare le inserzioni, i tracciatori e i siti web pericolosi
+- [Sicurezza di navigazione](/adguard-for-android/features/protection/browsing-security.md)
 
-[Protezione DNS](/adguard-for-android/features/protection/dns-protection.md)
-
-## Firewall
-
-Una funzionalità che consente di controllare l'accesso a Internet per singole app
-
-[Firewall](/adguard-for-android/features/protection/firewall/firewall.md)
-
-## Sicurezza di navigazione
-
-Una funzionalità che blocca l'accesso a siti Web dannosi e di phishing e ti protegge dalle minacce online
-
-[Sicurezza di navigazione](/adguard-for-android/features/protection/browsing-security.md)
+  Una funzionalità che blocca l'accesso a siti Web dannosi e di phishing e ti protegge dalle minacce online

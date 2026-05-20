@@ -33,4 +33,4 @@ Você pode configurar o AdGuard para rotear todo o tráfego do seu dispositivo a
 
 Você pode usar o AdGuard como um servidor proxy HTTP. Isso permitirá filtrar o tráfego em outros dispositivos conectados ao proxy.
 
-Verifique se o Mac e o outro dispositivo estão conectados à mesma rede e insira a porta proxy no dispositivo que deseja rotear por meio do servidor proxy (geralmente nas configurações de rede). Para filtrar também o tráfego HTTPS, [transfira o certificado proxy do AdGuard](http://local.adguard.org/cert) para este dispositivo. [Saiba mais sobre como instalar um certificado proxy](/guides/proxy-certificate)
+Verifique se o Mac e o outro dispositivo estão conectados à mesma rede e insira a porta proxy no dispositivo que deseja rotear por meio do servidor proxy (geralmente nas configurações de rede). To filter HTTPS traffic as well, [transfer AdGuard’s proxy certificate](https://local.adguard.org/cert) to this device. [Saiba mais sobre como instalar um certificado proxy](/guides/proxy-certificate)

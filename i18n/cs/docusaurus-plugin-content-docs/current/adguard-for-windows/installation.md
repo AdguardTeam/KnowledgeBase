@@ -23,7 +23,7 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 Chcete-li nainstalovat AdGuard do počítače nebo tabletu se systémem Windows, postupujte podle následujících kroků:
 
-1. Přejděte na webové stránky [AdGuardu](http://adguard.com) a klikněte na *Stáhnout*. Instalační program můžete také získat ze [stránky stahování](https://adguard.com/download.html?auto=1) — stahování se spustí automaticky.
+1. Go to the [AdGuard website](https://adguard.com) and click *Download*. Instalační program můžete také získat ze [stránky stahování](https://adguard.com/download.html?auto=1) — stahování se spustí automaticky.
 
    ![Download AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/website_en.png)
 
@@ -71,7 +71,7 @@ Pokud potřebujete AdGuard odinstalovat nebo přeinstalovat, postupujte následo
 
 ### Pokročilý způsob {#advanced}
 
-Pokud běžná odinstalace z nějakého důvodu nefunguje, můžete zkusit pokročilou metodu. First of all, you need to [download the uninstaller tool](https://static.adtidy.org/windows/uninstaller/uninstall_utility.zip) created by our developers. Rozbalte archiv do libovolné složky v počítači, spusťte soubor **Adguard.UninstallUtility.exe** a nechte aplikaci provést změny v zařízení. Poté postupujte podle níže uvedených pokynů:
+Pokud běžná odinstalace z nějakého důvodu nefunguje, můžete zkusit pokročilou metodu. Nejprve si musíte stáhnout [nástroj pro odinstalaci](https://static.adtidy.org/windows/uninstaller/uninstall_utility.zip) vytvořený našimi vývojáři. Rozbalte archiv do libovolné složky v počítači, spusťte soubor **Adguard.UninstallUtility.exe** a nechte aplikaci provést změny v zařízení. Poté postupujte podle níže uvedených pokynů:
 
 - Vyberte *Blokátor reklam AdGuard* a *Standardní* typ odinstalace a poté klikněte na *Odinstalovat*.
 

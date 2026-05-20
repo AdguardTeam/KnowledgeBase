@@ -17,7 +17,7 @@ Nel dispositivo che vuoi scollegare, apri l'app AdGuard e clicca *Reimposta lice
 
 In alternativa, puoi rimuovere il dispositivo nel tuo profilo AdGuard:
 
-1. Accedi al tuo [profilo AdGuard](https://adguardaccount.com/).
+1. Log in to your [AdGuard account](https://adguardaccount.com).
 
 1. Apri la scheda *AdGuard Ad Blocker*.
 

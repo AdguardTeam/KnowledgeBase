@@ -33,7 +33,7 @@ Para deshabilitar la protección, ingresa:
 adguard-cli stop
 ```
 
-Este comando no solo detiene el proxy, sino que también detiene el tráfico de redirección hacia él.
+This command not only stops the proxy but also stops the traffic from redirecting to it.
 
 ### Comprobar el estado de protección
 
@@ -45,45 +45,61 @@ adguard-cli status
 
 ![Estado/Detener protección \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
 
-## Actualizaciones
+### Restart protection
+
+To restart the proxy server and reapply settings, enter:
+
+```sh
+adguard-cli restart
+```
+
+## Updates
 
 ### Buscar actualizaciones
 
-Para buscar actualizaciones, ingresa:
+To check for updates, enter:
 
 ```sh
 adguard-cli check-update
 ```
 
-### Actualizar AdGuard para Linux
+### Update AdGuard for Linux
 
-Para actualizar AdGuard para Linux, ingresa:
+To update AdGuard for Linux, enter:
 
 ```sh
 adguard-cli update
 ```
 
-### Actualizar la salida del script
+### Update script output
 
-Para ver la salida del script de actualización, ingresa:
+To view the update script output, enter:
 
 ```sh
 adguard-cli update -v
 ```
 
-## Configurando o AdGuard para Linux
+## Configure AdGuard for Linux
 
-Usa el comando `config` para configurar AdGuard para Linux. Subcomandos:
+Use the `config` command to configure AdGuard for Linux. Subcommands:
 
-- `show`: Muestra la configuración actual en `proxy.yaml`
+- `show [<section-name>]`: Show the current configuration in `proxy.yaml` (or a specific section)
 
-  ![Configuración actual \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
-- `set`: Configurar una opción en `proxy.yaml`
-  - `listen_ports.http_proxy`: puerto HTTP de escucha
-  - `proxy_mode`: Modo proxy (`manual` u `auto`)
+- `set <key> <value>`: Configure an option in `proxy.yaml`
+  - `listen_ports.http_proxy`: HTTP listening port
+  - `proxy_mode`: Proxy mode (`manual` or `auto`)
 
-- `get`: Obtener el estado actual de las opciones anteriores
+- `get <key>`: Get the current status of a setting
+
+- `list-add <key> <value> [<value>...]`: Add one or more values to a list setting
+
+- `list-remove <key> <value>`: Remove a value from a list setting
+
+- `reset <key>`: Reset a setting to its default value
+
+- `reset --all`: Reset all settings to their default values
 
 :::note
 
@@ -96,40 +112,78 @@ The Automatic mode can only be used if the following requirements are met:
 
 :::
 
-## Administrar filtros
+## Manage filters
 
-Usa el comando `filters` para configurar AdGuard para Linux. Subcomandos:
+Use the `filters` command to configure AdGuard for Linux. Subcommands:
 
-- `list`: Listar filtros instalados
+- `list`: List installed and added filters
 
-  - `--all`: Ver todos los filtrados
+  - `--all`: View all filters
 
-  ![Lista de filtros \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
+  ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
-- `install`: Instalar un filtro. Ingrese la URL del filtrado que deseas instalar
+- `add`: Add a built-in filter by ID or name
 
-- `enable`: Habilitar un filtro. Introduce el nombre o ID del filtro
+- `install`: Install a filter. Enter the URL of the filter you want to install or local file
+  - `--trusted`: Mark the custom filter as trusted
+  - `--title`: Set a custom title for the filter
 
-  ![Habilitar filtros \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+- `enable`: Enable a filter. Enter the name or ID of the filter
 
-- `disable`: Deshabilitar un filtro. Introduce el nombre o ID del filtro
+  ![Enable filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
-- `update`: Actualiza los filtros
+- `disable`: Disable a filter. Enter the name or ID of the filter
 
-## Cambiando la dirección de escucha del proxy en modo proxy manual
+- `remove`: Remove an internal or custom filter by ID
 
-De forma predeterminada, el proxy escucha en `127.0.0.1` — la dirección de la interfaz de red de loopback invertido.
-Hay dos formas de hacer que el proxy escuche en una interfaz diferente:
+- `set-trusted`: Mark a custom filter as trusted or untrusted
 
-1. Ejecuta `adguard-cli config set listen_address <dirección>` donde `<dirección>` es la dirección a la que escuchar.
-2. Edita el archivo de configuración directamente:
-   - Para determinar la ubicación del archivo de configuración, ejecuta `adguard-cli config show | grep "Config location"`.
-   - Busca la clave `listen_address` y establece su valor en consecuencia. Para escuchar en todas las interfaces de red disponibles, establece la dirección de escucha en `0.0.0.0` o `::`.
+- `set-title`: Set a custom title for a custom filter
 
-Si la dirección de escucha está configurada en algo diferente a `127.0.0.1`, se requiere la autenticación del cliente proxy. AdGuard CLI no se iniciará a menos que se configure la autenticación del proxy:
+Filter updates are handled by `adguard-cli check-update` (the `filters update` subcommand forwards to it).
 
-- Al ejecutar `adguard-cli config set listen_address <address>` donde `<address>` no es `127.0.0.1`, AdGuard CLI solicitará un nombre de usuario y una contraseña si la autenticación del proxy no está configurada.
-- Al editar el archivo de configuración directamente, busca la clave `listen_auth`. Establece la subclave `enabled` en `true`, y `username` y `password` en valores no vacíos.
+## Manage DNS filters
+
+Use the `dns filters` command to manage DNS filter lists. Subcommands:
+
+- `list`: List installed and added DNS filters
+  - `--all`: View all DNS filters
+- `add`: Add a built-in DNS filter by ID or name
+- `install`: Install a custom DNS filter from a URL or local file
+  - `--title`: Set a custom title for the filter
+- `enable`: Enable a DNS filter. Enter the name or ID of the filter
+- `disable`: Disable a DNS filter. Enter the name or ID of the filter
+- `remove`: Remove a DNS filter by ID
+- `set-title`: Set a custom title for a DNS filter
+
+DNS filter updates are handled by `adguard-cli check-update`.
+
+## Manage userscripts
+
+Use the `userscripts` command to manage userscripts. Subcommands:
+
+- `list`: Show installed userscripts
+- `install`: Install a userscript from a URL
+- `remove`: Remove a userscript
+- `enable`: Enable a userscript
+- `disable`: Disable a userscript
+
+Userscripts are updated by `adguard-cli check-update`.
+
+## Changing the proxy server listen address in manual proxy mode
+
+By default, the proxy server listens on `127.0.0.1` — the address of the loopback network interface.
+There are two ways to make the proxy server listen on a different interface:
+
+1. Run `adguard-cli config set listen_address <address>` where `<address>` is the address to listen on.
+2. Edit the config file directly:
+   - To determine the location of the config file, run `adguard-cli config show | grep "Config location"`.
+   - Look for the `listen_address` key and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0` or `::`.
+
+If the listen address is set to anything other than `127.0.0.1`, then proxy client authentication is required. AdGuard CLI will not start unless proxy authentication is configured:
+
+- When running `adguard-cli config set listen_address <address>` where `<address>` is not `127.0.0.1`, AdGuard CLI will prompt for a username and password if proxy authentication is not already configured.
+- When editing the config file directly, look for the `listen_auth`key. Set the `enabled` sub-key to `true`, and `username` and `password` to non-empty values.
 
 ## Configure outbound proxy
 

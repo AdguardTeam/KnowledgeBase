@@ -9,56 +9,38 @@ This article is about AdGuard for Mac, a multifunctional ad blocker that protect
 
 :::
 
-## Main window
+- [Main window](/adguard-for-mac/features/main.md)
 
-Main screen with statistics on blocked ads and trackers and access to main settings
+    Main screen with statistics on blocked ads and trackers and access to main settings
 
-[Main window](/adguard-for-mac/features/main.md)
+- [General](/adguard-for-mac/features/general.md)
 
-## General
+    Basic settings to block search ads and website self-promotional ads, enable language-specific filters, and manage *Allowlist*
 
-Basic settings to block search ads and website self-promotional ads, enable language-specific filters, and manage *Allowlist*
+- [Filters](/adguard-for-mac/features/filters.md)
 
-[General](/adguard-for-mac/features/general.md)
+    Filters and user rules to fine-tune ad blocking
 
-## Filters
+- [DNS](/adguard-for-mac/features/dns.md)
 
-Filters and user rules to fine-tune ad blocking
+    DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
 
-[Filters](/adguard-for-mac/features/filters.md)
+- [Stealth Mode](/adguard-for-mac/features/stealth.md)
 
-## DNS
+    Settings to block cookies, UTM tags, and online analytics that collect user information
 
-DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
+- [Security](/adguard-for-mac/features/security.md)
 
-[DNS](/adguard-for-mac/features/dns.md)
+    A setting that blocks access to malicious and phishing websites and protects you from online threats
 
-## Stealth Mode
+- [Browser Assistant](/adguard-for-mac/features/browser-assistant.md)
 
-Settings to block cookies, UTM tags, and online analytics that collect user information
+    An extension that complements the desktop app and allows you to manage filtering from your browser
 
-[Stealth Mode](/adguard-for-mac/features/stealth.md)
+- [Extensions](/adguard-for-mac/features/extensions.md)
 
-## Security
+    A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
 
-A setting that blocks access to malicious and phishing websites and protects you from online threats
+- [Network](/adguard-for-mac/features/network.md)
 
-[Security](/adguard-for-mac/features/security.md)
-
-## Browser Assistant
-
-An extension that complements the desktop program and allows you to manage filtering from your browser
-
-[Browser Assistant](/adguard-for-mac/features/browser-assistant.md)
-
-## Extensions
-
-A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
-
-[Extensions](/adguard-for-mac/features/extensions.md)
-
-## Network
-
-Additional network-related options and proxy settings
-
-[Network](/adguard-for-mac/features/network.md)
+    Additional network-related options and proxy settings

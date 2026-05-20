@@ -17,7 +17,7 @@ Na zařízení, které chcete odpojit, otevřete aplikaci AdGuard a klikněte na
 
 Jako alternativu můžete zařízení odebrat ve svém účtu AdGuard:
 
-1. Přihlaste se do [AdGuard účtu](https://adguardaccount.com/).
+1. Přihlaste se do [AdGuard účtu](https://adguardaccount.com).
 
 1. Otevřít záložku *Blokátor reklam AdGuard*.
 

@@ -23,7 +23,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 AdGuard'ı bir Windows PC veya tablete kurmak için şu adımları izleyin:
 
-1. [AdGuard sitesine](http://adguard.com) gidin ve *İndir* öğesine tıklayın. Kurulum programını [indirme sayfasından](https://adguard.com/download.html?auto=1) da edinebilirsiniz — indirme otomatik olarak başlar.
+1. Go to the [AdGuard website](https://adguard.com) and click *Download*. Kurulum programını [indirme sayfasından](https://adguard.com/download.html?auto=1) da edinebilirsiniz — indirme otomatik olarak başlar.
 
    ![Download AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/website_en.png)
 

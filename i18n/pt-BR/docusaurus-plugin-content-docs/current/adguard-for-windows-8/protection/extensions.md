@@ -9,7 +9,7 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 :::
 
-AdGuard can extend website functionality by acting as a [userscript manager](/general/extensions.md). This allows you to add your own scripts as well as manage existing ones.
+O AdGuard pode estender a funcionalidade do site atuando como um [gerenciador de userscript](/general/extensions.md). This allows you to add your own scripts as well as manage existing ones.
 
 ![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
 
@@ -28,7 +28,7 @@ AdGuard comes with four pre-installed userscripts:
 
 ### AdGuard Assistant (Beta)
 
-AdGuard Assistant is the legacy version of Assistant, which you can use if the [new Assistant](/adguard-for-windows/browser-assistant.md) is not available for your browser. As the name suggests, it helps you manage basic AdGuard settings directly from your browser without opening the app.
+O Assistente do navegador é a versão legada do Assistente, que você pode usar se o [novo Assistente](/adguard-for-windows/browser-assistant.md) não estiver disponível para o seu navegador. As the name suggests, it helps you manage basic AdGuard settings directly from your browser without opening the app.
 
 AdGuard Assistant works with all browsers compatible with Microsoft Windows. It will not appear on websites excluded from filtering or on certain pages where it could cause display issues.
 

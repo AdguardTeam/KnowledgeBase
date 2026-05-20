@@ -27,7 +27,7 @@ Bunlar çok benzer çözümlere sahip iki farklı hatadır. As their titles sugg
 
 - AdGuard'ı kurmaya çalıştığınız sürücüden bazı programları kaldırın veya gereksiz dosyaları silin.
 
-- Malwarebytes'in ücretsiz bir yazılımı olan [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/) yazılımını indirin, kurun ve çalıştırın. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstalled programs and such. Biraz disk alanı temizlemeye yardımcı olur.
+- Download, install, and run [AdwCleaner](https://www.bleepingcomputer.com/download/adwcleaner/), a free piece of software by Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstalled programs and such. Biraz disk alanı temizlemeye yardımcı olur.
 
 - Bilgisayarınızı yeniden başlatın. Bazen geçici dosyalar önemli miktarda disk alanı kaplayabilir ve PC'nizi yeniden başlatmak bunlardan kurtulmanın en güvenilir yoludur.
 

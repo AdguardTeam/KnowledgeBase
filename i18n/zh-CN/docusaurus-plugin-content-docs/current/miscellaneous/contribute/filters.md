@@ -9,9 +9,17 @@ sidebar_position: 4
 
 许多网站会不断更改插入广告的方式。为了过滤器保持有效，我们要持续更新过滤器以及添加新规则。 过滤器工程师一直都在努力创建新规则，但是我们也非常愿意接受一些外界的帮助。
 
+:::note
+
+All contributors must follow the **AdGuard filter policy** when creating rules. By participating, you agree to comply with the Policy and ensure your rules adhere to its requirements. Also contributors must not create rules intended to deliberately block websites or services that do not meet the criteria for blocking or that fall under exceptions described in the Policy.
+
+:::
+
 ### 如何开始 {#how-to-start}
 
-当然，改进并创建拦截过滤器需要有特定的技能。 如果您已经了解如何创建规则，请直接访问我们在 GitHub 上的 [AdGuard 过滤器存储库](https://github.com/AdguardTeam/AdguardFilters)。 在那里，您可发现很多待解决的问题。每个问题都涉及某个网站上的问题，包括广告漏洞，错误报告等等。 选择任何一个问题并在注释中建议您个人的规则， AdGuard 过滤器工程师将审核您的建议。 如果正确，则您的规则会被添加到 AdGuard 过滤器中。
+当然，改进并创建拦截过滤器需要有特定的技能。 如果您已经了解如何创建规则，请直接访问我们在 GitHub 上的 [AdGuard 过滤器存储库](https://github.com/AdguardTeam/AdguardFilters)。 Before you start contributing, we recommend reviewing the [guidelines](https://github.com/AdguardTeam/AdguardFilters/blob/master/CONTRIBUTING.md).
+
+In the repository, you will find a lot of open issues, each one referencing a problem with some website problem — a missed ad, a false positive, etc. 选择任何一个问题并在注释中建议您个人的规则， AdGuard 过滤器工程师将审核您的建议。 如果正确，则您的规则会被添加到 AdGuard 过滤器中。
 
 如果您还不太熟悉或者需要复习我们的过滤规则语法，请[在我们的知识库中](/general/ad-filtering/create-own-filters)找到有关语法的基础知识。
 

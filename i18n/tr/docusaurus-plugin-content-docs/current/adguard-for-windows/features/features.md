@@ -9,32 +9,22 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-## Ana ekran
+- [Ana ekran](/adguard-for-windows/features/home-screen/)
 
-Ana ekranda _Ayarlar_, _Destek_, _Lisans_ ve _Hakkında_ öğelerinin yanı sıra engellenen reklamlar ve izleyiciler hakkındaki istatistikleri bulabilirsiniz
+  On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
 
-[Ana ekran](/adguard-for-windows/features/home-screen/)
+- [Ayarlar](/adguard-for-windows/features/settings/)
 
-## Ayarlar
+  Theme and language settings, ad blocking customization, DNS protection, parental controls, extension management, and advanced options for expert users
 
-Theme and language settings, ad blocking customization, DNS protection, parental controls, extension management, and advanced options for expert users
+- [Uzantılar](/adguard-for-windows/features/extensions/)
 
-[Ayarlar](/adguard-for-windows/features/settings/)
+  Kullanıcı betikleri ve kullanıcı stilleri ekleyerek sitelerin işlevselliğini genişletmenize olanak tanıyan bir özellik
 
-## Uzantılar
+- [Ağ](/adguard-for-windows/features/network/)
 
-Kullanıcı betikleri ve kullanıcı stilleri ekleyerek sitelerin işlevselliğini genişletmenize olanak tanıyan bir özellik
+  Additional network-related options and proxy settings
 
-[Uzantılar](/adguard-for-windows/features/extensions/)
+- [Diğer özellikler](/adguard-for-windows/features/others/)
 
-## Ağ
-
-Additional network-related options and proxy settings
-
-[Ağ](/adguard-for-windows/features/network/)
-
-## Diğer özellikler
-
-Support, license management, tray menu options, program version and updates
-
-[Diğer özellikler](/adguard-for-windows/features/others/)
+  Support, license management, tray menu options, app version and updates

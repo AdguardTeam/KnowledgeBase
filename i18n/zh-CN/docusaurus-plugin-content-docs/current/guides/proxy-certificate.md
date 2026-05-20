@@ -23,7 +23,7 @@ sidebar_position: 2
 
 1. 请确保 AdGuard 保护已启用。 在 Windows 电脑上转到设置中的「**网络**」，勾选「**将 AdGuard 用作 HTTP 代理**」。 Mac 用户，请前往「**设置**」→「**首选项**」→「**网络**」并启用「**HTTP 代理**」。
 
-1. 在装有 AdGuard 的计算机上，通过浏览器打开此链接：[http://local.adguard.org/cert](http://local.adguard.org/cert)
+1. On the same computer with AdGuard, follow this link: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. 单击「**下载**」按钮。 如果下载未开始，请使用另一个浏览器，例如 Firefox 浏览器。
 
@@ -65,7 +65,7 @@ sidebar_position: 2
 
 1. 请确保 AdGuard 保护已启用。 在 Windows 电脑上转到设置中的「**网络**」，勾选「**AdGuard 用作 HTTP 代理**」。 Mac 用户，请前往「**设置**」→「**首选项**」→「**网络**」并启用「**HTTP 代理**」。
 
-1. 通过浏览器打开此链接：[http://local.adguard.org/cert](http://local.adguard.org/cert)
+1. Follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. 单击「**下载**」按钮。 如果下载未开始，请使用另一个浏览器，例如 Firefox 浏览器。
 
@@ -97,7 +97,7 @@ sidebar_position: 2
 
 1. 请确保 AdGuard 保护已启用。 在 Windows 电脑上转到设置中的「**网络**」，勾选「**将 AdGuard 用作 HTTP 代理**」。 Mac 用户，请前往「**设置**」→「**首选项**」→「**网络**」并启用「**HTTP 代理**」。
 
-1. 在装有 AdGuard 的计算机上，通过浏览器访问此链接：[http://local.adguard.org/cert](http://local.adguard.org/cert)。
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. 单击「**下载**」按钮。 如果下载未开始，请使用另一个浏览器，例如 Firefox 浏览器。
 
@@ -117,7 +117,7 @@ sidebar_position: 2
 
 1. 请确保 AdGuard 保护已启用。 在 Windows 电脑上转到设置中的「**网络**」，勾选「**将 AdGuard 用作 HTTP 代理**」。 Mac 用户，请前往「**设置**」→「**首选项**」→「**网络**」并启用「**HTTP 代理**」。
 
-1. 在装有 AdGuard 的计算机上，通过浏览器访问此链接：[http://local.adguard.org/cert](http://local.adguard.org/cert)。
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. 单击「**下载**」按钮。 如果下载未开始，请使用另一个浏览器，例如 Firefox 浏览器。
 

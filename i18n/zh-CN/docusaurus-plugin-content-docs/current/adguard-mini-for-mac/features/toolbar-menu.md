@@ -1,36 +1,36 @@
 ---
-title: Safari toolbar menu
+title: Safari 工具栏菜单
 sidebar_position: 8
 ---
 
-![Safari toolbar assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/assistant.png)
+![Safari 工具栏助手](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/assistant.png)
 
-AdGuard Mini has a handy menu right in the Safari toolbar. To open it, click the icon located to the left of the search bar.
+AdGuard Mini 在 Safari 工具栏中有一个便捷的菜单。 要打开它，请点击搜索栏左侧的图标。
 
-Here’s what you can do in the toolbar menu:
+在工具栏菜单中，可以进行以下操作：
 
-- **Pause icon**
+- **暂停图标**
 
-  Disables AdGuard Mini
+  暂停 AdGuard Mini
 
-- **Settings icon**
+- **设置图标**
 
-  Takes you to AdGuard Mini’s _Settings_ screen
+  前往 AdGuard Mini 的「设置」界面
 
-- **Website info**
+- **网站信息**
 
-  Indicates the website you are currently on
+  表示您当前所在的网站
 
-- **Protection**
+- **防护**
 
-  Turning it off disables filtering on the website you are currently on. Turning it back on resumes filtering on the website
+  关闭后，将对当前网站禁用过滤。 重新开启后，恢复对当前网站的过滤。
 
-- **Block element**
+- **拦截元素**
 
-  Lets you manually select and block any element on the page: select the element, adjust the selection frame (if needed), and click the _Block_ button. To unblock an element, go to _Settings_ → _User rules_ and delete or uncheck the corresponding rule
+  让用户手动选择并拦截页面上的任意元素：选择元素，调整选择框（如果需要），然后点击「拦截」按钮。 要取消拦截某个元素，请前往「设置」→「用户规则」，删除或取消勾选对应的规则
 
-  ![Manual blocking](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/manual-blocking.png)
+  ![手动拦截](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/manual-blocking.png)
 
-- **Report an issue**
+- **报告错误**
 
-  Takes you to a special form for reporting issues with some information automatically pre-filled
+  跳转至问题报告表单，部分信息会自动预填。

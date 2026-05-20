@@ -23,7 +23,7 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 Um AdGuard auf einem PC oder Tablet zu installieren, gehen Sie wie folgt vor:
 
-1. Öffnen Sie die [AdGuard-Website](http://adguard.com) und klicken Sie auf *Herunterladen*. Sie können das Installationsprogramm auch von der [Download-Seite](https://adguard.com/download.html?auto=1) herunterladen. Der Download startet daraufhin automatisch.
+1. Go to the [AdGuard website](https://adguard.com) and click *Download*. Sie können das Installationsprogramm auch von der [Download-Seite](https://adguard.com/download.html?auto=1) herunterladen. Der Download startet daraufhin automatisch.
 
    ![AdGuard herunterladen *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/website_en.png)
 

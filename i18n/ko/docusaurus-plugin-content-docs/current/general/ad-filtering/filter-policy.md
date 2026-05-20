@@ -81,11 +81,12 @@ AdGuard 광고 차단 필터에는 다음이 포함됩니다.
 ### 제한 및 예외
 
 - 사이트 자체의 광고는 의도적으로 차단해서는 안 됩니다. 단, 일반 필터링 규칙으로 인해 차단된 경우에는 차단을 해제해서는 안 됩니다.
-- 페이월과 같은 콘텐츠 액세스 조치는 차단되지 않습니다.
+- Content access measures like paywalls are not blocked by Ad blocking filters. However, they may be blocked by Tracking protection filters if their operation results in a violation of user privacy
 - 다음과 같은 경우 Anti-adblock wall이 차단됩니다.
     - 광고 차단기를 비활성화하거나 제거할 것을 적극적으로 요구하거나 웹사이트 사용을 효과적으로 막습니다.
     - 광고 차단기 사용 시 발생할 수 있는 결과에 대한 부정확하고 오해의 소지가 있는 설명이 포함되어 있습니다.
     - 차단되지 않은 광고가 모호한 출처에서 오는 경우, 방문자는 멀버타이징의 위험에 노출될 수 있습니다.
+    - They violate or negatively impact user privacy
 - 다음 기준 중 하나 이상을 충족하는 광고 차단기 탐지 메시지는 차단하지 않습니다:
     - 웹 사이트 사용을 허용하고 상당한 양의 콘텐츠를 오버레이하지 않습니다.
     - 이 대안은 사용자의 개인정보나 보안을 위험에 빠뜨리지 않는다는 점에서 광고 차단기를 비활성화하는 대안이 될 수 있습니다.
@@ -165,32 +166,30 @@ What it blocks:
 
 #### AdGuard 쿠키 알림 필터
 
-이 필터는 쿠키 관리 플랫폼(CMP)의 쿠키 알림과 요청을 모두 차단하도록 설계되었습니다. 쿠키 고지 및 CMP에는 다양한 방법이 적용될 수 있습니다. 대부분의 경우 해당 스크립트를 숨기거나 차단하는 것만으로도 충분합니다. 단, 사이트의 기능 및 타사 콘텐츠 표시를 위해 쿠키 동의가 필요한 경우 다음 방법이 적용됩니다:
+이 필터는 쿠키 관리 플랫폼(CMP)의 쿠키 알림과 요청을 모두 차단하도록 설계되었습니다. Depending on how a website implements its consent mechanism, different methods may be applied.
 
-- 스크립트는 동의 요청을 우회하는 데 사용됩니다(타사 콘텐츠 로딩에 제한이 있는 사이트에서는 결정이 내려질 때까지 실제로 적용되지 않음).
-- 스크립트가 사용자가 선택한 것으로 간주하는 방식으로 사이트의 로컬 저장소에 쿠키 또는 키를 설정합니다.
-- 지정된 버튼을 클릭하고 로딩 후 10초 후에 실행을 중단하는 규칙을 사용하여 사용자 동작을 시뮬레이션합니다. 두 가지 옵션이 있습니다.
-    - 거부(기능 쿠키 제외 - CMP 시스템에 따라 다름) - 추가 분석 도구가 로드될 위험이 적으므로 선호되는 옵션입니다.
-    - 수락 - 이 옵션은 다른 방법이 실패할 경우 최후의 수단으로 사용됩니다. 이 경우 사이트가 분석 도구의 사용을 추가로 확인한 다음 **AdGuard 추적 보호 필터(**)에 의해 차단됩니다.
+In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when a website requires a cookie decision for certain features or third-party content to work, the filter automatically handles the request using alternative methods.
+
+Whenever possible, non-essential cookies are declined by default. If this is not technically feasible and consent must be granted for the site to function correctly, the site is additionally reviewed for analytics and tracking technologies, which are then blocked by the **AdGuard Tracking Protection filter**.
 
 **제한 및 예외**
 
-어떤 경우에는 규칙 추가 결정이 필터 개발자에 의해 독립적으로 이루어집니다. 대부분, 작업을 시뮬레이션할 때 선택한 사항이 사이트 기능에 영향을 미치는 경우입니다(예: 기록이 작동하지 않거나 사용자 설정이 해당 사이트에 저장되지 않을 수 있음).
+In some cases, the decision to add rules is made independently by filter developers; mostly, when the choice made when simulating actions would affect the site’s functionality (for example, history may not work, or user settings may not be saved on such a site).
 
 #### AdGuard 팝업 필터
 
-정상적인 사이트 이용에 필요하지 않은 웹 페이지의 각종 팝업을 차단하는 필터입니다:
+This is a filter that blocks various popups on web pages that are not necessary for normal site usage, including but not limited to:
 
-- 푸시 알림 수신 권한 요청
-- 뉴스, 프로모션 및 다양한 이벤트 수신을 위한 타사 채널(예: Google 뉴스, 텔레그램)을 포함한 뉴스, 프로모션 및 다양한 이벤트 구독을 위한 팝업 및 양식
-- 사용자가 광고 차단기를 비활성화하도록 유도하고 사용자의 개인정보를 침해하는 팝업(필터 개발자의 재량에 따라)
-- 사용자를 괴롭힐 수 있는 기타 유형의 팝업(필터 개발자의 재량에 따라)
+- Requests for permission to receive push notifications
+- Popups and forms for subscribing to news, promotions, and various events, including third-party channels for receiving them (such as Google News, Telegram)
+- Popups that encourage users to disable ad blocker and violate user’s privacy (at the discretion of the filter developers)
+- Other types of popups that may annoy users (at the discretion of filter developers)
 
 **제한 및 예외**
 
-- 푸시 알림은 실제 목적으로 사용되지 않는 사이트에서만 차단됩니다. 예를 들어 이메일 웹 클라이언트나 업무용으로 사용하는 도구에서는 이러한 알림이 차단되지 않습니다.
-- 위에 설명된 범주에 속하지는 않지만 사용자 경험을 방해하는 일부 팝업도 차단될 수 있습니다. 예를 들어 사이트의 등록 프롬프트 또는 사이트의 기능을 소개하는 팝업이 있습니다. 결정은 필터 개발자가 내립니다.
-- 콘텐츠에 액세스하기 위해 사용자에게 비용을 지불하도록 요청하는 콘텐츠 액세스 조치를 우회해서는 안 됩니다.
+- Push notifications are only blocked on sites where they are not used for practical purposes. For example, in email web clients or tools used for work purposes, such notifications will not be blocked
+- Some popups that do not fall into the categories described above but still interfere with the user’s experience may be also blocked. For example, registration prompts on a site or popups that introduce the site’s features. The decision is made by filter developers
+- Content access measures that ask the user to pay to access the content must not be circumvented
 
 #### AdGuard 모바일 앱 배너 필터
 
@@ -198,106 +197,106 @@ This is a filter that blocks banners and popups that encourage visitors to insta
 
 **제한 및 예외**
 
-웹사이트의 헤더나 메뉴에 있는 배너는 애니메이션이 없고 사용 가능한 공간의 상당 부분을 차지하지 않는 경우 차단되지 않습니다. 배너가 바닥글에 있는 경우 필터 개발자가 사례별로 결정합니다. 일반적으로 바닥글의 배너는 다른 요소에 비해 눈에 띄지 않고 산만하지 않습니다.
+Banners located in the headers or in the menus of websites are not blocked if they are not animated and do not occupy a significant portion of usable space. If a banner is located in the footer, the decision is made by filter developers case-by-case. Usually, banners in the footer do not stand out against other elements and are not distracting.
 
 #### AdGuard 위젯 필터
 
 This is a filter that blocks various widgets that are not essential for the functioning of websites or for interaction with them:
 
-- 콘텐츠 추천 위젯 - 관련 기사, 유사한 웹사이트, 다양한 맞춤형 추천
-- 콘텐츠와 통합되어 있지 않고 페이지의 주요 콘텐츠가 아닌 채팅 위젯
-- 마케팅 위젯
-    - 어시스턴트 또는 봇과의 커뮤니케이션을 위한 채팅
-    - 사용자에게 표시되는 제품 추천이 포함된 위젯
-    - 콜백 양식
-- 별도의 카테고리가 없지만 페이지를 시각적으로 어수선하게 만들 수 있는 기타 위젯. 예를 들어 날씨 위젯, 환율, 채용 정보, 기부금 등이 있습니다.
+- Widgets for content recommendations — related articles, similar websites, various personalized recommendations
+- Chat widgets that are not integrated with the content and are not the main content of the page
+- Marketing widgets:
+    - Chats for communication with assistants or bots
+    - Widgets with product recommendations that are shown to the user
+    - Call-back forms
+- Other widgets that do not have a separate category but may visually clutter the page. For example, weather widgets, currency exchange rates, job listings, and donations
 
 **제한 및 예외**
 
-이 필터는 다음을 차단하지 않습니다.
+This filter doesn’t block:
 
-- 댓글 섹션, 실시간 채팅 스트림 등 페이지의 콘텐츠와 밀접하게 관련된 위젯(스팸 및 유사한 콘텐츠로 가득 찬 비공식 스트림이 있는 사이트의 중재되지 않은 채팅은 예외로 함)은 제외됩니다.
-- 자체 프로모션 및 사이트별 프로모션 활동을 위한 위젯
-- 기부 위젯은 페이지의 상당 부분을 차지하고 콘텐츠와 대비되어 눈에 띄는 경우를 제외하고는 사용할 수 없습니다. 차단 여부는 필터 개발자가 결정합니다.
+- Widgets closely related to the content of the page, such as comments sections, live chat streams, with an exception of unmoderated chats on sites with unofficial streams, which are often filled with spam and similar content
+- Widgets for self-promotion and site-specific promotional activities
+- Donation widgets, except the cases where they occupy a significant portion of the page and stand out prominently against the content. The decision to block is made by filter developers
 
 #### AdGuard 기타 방해 요소 필터
 
-이 필터는 다른 필터에 포함되지 않은 성가신 요소를 차단하고 다양한 조정을 적용하도록 설계되었습니다. 그 목적은 다음과 같습니다.
+This filter is designed to block annoying elements that are not included in other filters, as well as to apply various tweaks. It’s purpose is to:
 
-- 성가신 요소로 간주되는 경우 웹사이트의 자체 홍보(제3자로부터 상업적 보상을 받지 않고 사이트 소유자가 소유한 상품 또는 서비스를 홍보하는 모든 유형의 광고)를 차단합니다.
-- 다른 카테고리에 포함되지 않은 귀찮은 요소를 차단합니다.
-- 컨텍스트 메뉴 열기, 텍스트 선택 및 복사와 같은 페이지의 동작이 차단된 경우 해당 동작의 차단을 해제합니다.
-- 웹 사이트에서 파일을 로드할 때 서버에 의해 제어되지 않거나 방해를 받지 않는 경우 카운트다운 타이머 속도를 높입니다.
-- 필터 개발자에게 유용할 수 있는 다양한 규칙을 적용합니다 (예: 웹 디버거 탐지 차단).
+- Block self-promotion of websites (any type of advertising promoting goods or services owned by the site owner, without receiving commercial compensation from a third party), if it is considered an annoying element
+- Block annoying elements that are not included in other categories
+- Unblock actions on the page, such as opening the context menu, selecting and copying text, if they are blocked
+- Speed up countdown timers when loading files from websites, if the check is not controlled by the server or is not hindered
+- Apply various rules that may be useful for filter developers. For example, blocking web debugger detection
 
 **제한 및 예외**
 
-이 필터에는 모든 사용자에게 적합하지 않은 규칙이 포함되어 있을 수 있습니다. 때로는 이 필터를 비활성화하는 것이 좋습니다. 이 필터에 규칙을 추가할지 여부는 필터 개발자가 규칙별로 결정합니다.
+This filter may contain rules that are not suitable for all users. Sometimes it is recommended to disable this filter. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
 
 ## 소셜 미디어 필터
 
 ### 필터
 
-AdGuard 소셜 미디어 필터에는 다음이 포함됩니다.
+AdGuard Social Media filters include:
 
-- AdGuard 소셜미디어 필터
+- AdGuard Social Media filter
 
 ### 이러한 필터의 목적
 
-이 필터는 타사 웹사이트의 소셜 미디어 위젯(예: '좋아요' 및 '공유하기' 버튼, 그룹 위젯, 추천 및 이와 유사한 위젯)을 차단합니다.
+This filter will block social media widgets on third-party websites, such as “Like” and “Share” buttons, group widgets, recommendations, and similar widgets.
 
 ### 제한 및 예외
 
-댓글, 임베드된 글, 설문조사, 소셜 미디어 로그인 위젯 등 웹사이트의 기능이나 콘텐츠의 일부인 위젯은 차단되지 않습니다. 웹사이트의 소셜 미디어 페이지로 연결되는 링크도 차단되지 않습니다.
+Widgets that are part of the website’s functionality or content, such as comments, embedded posts, polls, as well as social media login widgets, are not blocked. Links to the website’s social media pages are also not blocked.
 
 ## 기타 필터
 
-이 그룹에는 광고 차단에 필수적이지 않은 필터가 포함되어 있습니다.
+This group contains filters that are not essential for blocking advertisements.
 
 ### 용어
 
-**문맥 광고**는 인터넷 페이지의 콘텐츠, 선택한 대상, 위치, 시간 또는 기타 문맥에 따라 광고가 표시되는 인터넷 광고의 한 유형입니다.
+**Contextual advertising** is a type of internet advertising where the advertisement is displayed based on the content, selected audience, location, time, or other context of internet pages.
 
-**검색 광고**는 방문자의 검색어에 따라 광고가 표시되는 문맥 광고의 하위 클래스입니다.
+**Search advertising** is a subclass of contextual advertising where ads are displayed based on the visitor's search query.
 
-**웹사이트의 자체 홍보** 사이트 소유자가 소유한 상품 및 서비스를 홍보하는 웹사이트의 배너로, 제3자로부터 보상을 받지 않는 배너를 말합니다.
+**Self-promotion of websites** refers to the banners of a website promoting goods and services owned by the site owner, for which they do not receive compensation from third parties.
 
 For more details on these types of advertising, refer to the [article on search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
 ### 필터
 
-- 유용한 광고 필터
-- AdGuard DNS 필터
-- AdGuard 실험 필터
+- Filter unblocking search ads and self-promotion
+- AdGuard DNS filter
+- AdGuard Experimental filter
 
 ### 이러한 필터의 목적
 
-#### 유용한 광고 필터
+#### Filter unblocking search ads and self-promotion
 
-이 필터는 차단을 해제합니다.
+This filter unblocks:
 
-- 검색 엔진 사용 시 검색 결과 내 문맥 광고(예: 구글, 빙, 얀덱스, 덕덕고)
-- 웹사이트 자체 홍보
-
-**제한 및 예외**
-
-- 검색 광고는 문맥에 따라 사용자의 검색어와 일치하는 경우에만 차단이 해제됩니다. 그렇지 않으면 광고가 차단된 상태로 유지됩니다.
-- 셀프 프로모션은 필터 정책을 준수하는 경우에만 차단이 해제됩니다. 필터 개발자가 차단 해제 요청을 거부할 수 있습니다.
-- 다른 광고는 차단 해제되지 않습니다.
-
-#### AdGuard DNS 필터
-
-This filter is used in AdGuard DNS. 광고 차단 필터를 대체할 수 없습니다.
+- Contextual advertising in search results when using search engines (such as Google, Bing, Yandex, DuckDuckGo)
+- Self-promotion of websites
 
 **제한 및 예외**
 
-광고 차단 필터와 동일합니다.
+- Search advertising is unblocked only if it corresponds to the user’s search query, as it is contextual. Otherwise, the advertising remains blocked
+- Self-promotion is unblocked only if it complies with the filter policy. A request for unblocking may be rejected by filter developers
+- Any other advertising will not be unblocked
 
-#### AdGuard 실험 필터
+#### AdGuard DNS filter
 
-이 필터는 웹사이트의 기능을 잠재적으로 손상시킬 수 있는 규칙을 테스트하고 디버깅하기 위한 것입니다. 특정 솔루션을 테스트할 필요가 있을 때 필터 개발자가 규칙을 추가합니다. 이 필터는 디버깅 목적으로 설계되었기 때문에 제한이 최소화되어 있습니다.
+This filter is used in AdGuard DNS. It is not a replacement for ad-blocking filters.
+
+**제한 및 예외**
+
+Same as for ad-blocking filters.
+
+#### AdGuard Experimental filter
+
+This filter is intended for testing and debugging rules that potentially may break websites’ functionality. Rules are added by filter developers when there’s a need to test a particular solution. As the filter is designed for debugging purposes, its limitations are minimal.
 
 **제한 및 예외**
 
 - Rules should not intentionally break websites’ functionality
-- 규칙은 광고 차단을 해제하거나 정책을 위반해서는 안 됩니다.
+- Rules should not unblock advertisements or otherwise violate the Policy

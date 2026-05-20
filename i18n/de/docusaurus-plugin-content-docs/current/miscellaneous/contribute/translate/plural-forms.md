@@ -12,7 +12,7 @@ Wir empfehlen Ihnen dringend, diesen Artikel sorgfältig zu lesen, um mehr über
 
 Substantive in verschiedenen Sprachen können mehrere Wortformen im Plural haben. Ihre Verwendung hängt von der Anzahl der Dinge ab, über die Sie sprechen.
 
-Zum Beispiel haben englische Wörter zwei Wortformen, wenn man über etwas im Singular spricht, wie *„one star“*, und im Plural — *„two stars“*. Es spielt keine Rolle, ob Sie fünf, sechsundzwanzig oder sogar fünfhundertzweiunddreißig Sterne sagen — die Endung „s“ bleibt dieselbe. Einige Sprachen können jedoch nur eine oder mehrere Pluralformen enthalten.
+For instance, English words have two word forms when speaking about something in the singular, like *one star*, and in the plural — *two stars*. Es spielt keine Rolle, ob Sie fünf, sechsundzwanzig oder sogar fünfhundertzweiunddreißig Sterne sagen — die Endung „s“ bleibt dieselbe. Einige Sprachen können jedoch nur eine oder mehrere Pluralformen enthalten.
 
 Im Gegensatz zum Englischen gibt es in der polnischen Sprache drei Substantivformen im Plural. Eine davon wird verwendet, wenn man über etwas in der Einzahl spricht, eine andere Form wird im Plural verwendet, aber mit Zahlen, die auf 2-4 enden, außer 12-14, und die dritte Form - für Wörter mit anderen Zahlen vor ihnen.
 
@@ -38,9 +38,9 @@ Wenn Sie eine Phrase mit Pluralformen übersetzen, können Sie möglicherweise n
 
 Hier sind einige Informationsquellen, die Sie verwenden können.
 
-[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) enthält eine umfangreiche Liste von Sprachen. Die Anzahl der Pluralformen für die verschiedenen Sprachen wird auf diese Weise dargestellt: `nplurals=2`, `nplurals=4` und so weiter. Die Zahl hinter dem Gleichheitszeichen `=` gibt die Anzahl der Pluralformen der jeweiligen Sprache an.
+[Localization Guide](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. Die Anzahl der Pluralformen für die verschiedenen Sprachen wird auf diese Weise dargestellt: `nplurals=2`, `nplurals=4` und so weiter. Die Zahl hinter dem Gleichheitszeichen `=` gibt die Anzahl der Pluralformen der jeweiligen Sprache an.
 
-Informationen zu Pluralformen finden Sie auch im [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Die CLDR-Pluralregeln geben eine zusätzliche Wortform für Dezimalzahlen an (1,5; 2,3; 100,1…), aber wir verwenden sie nicht in AdGuard-Übersetzungen.
+Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Die CLDR-Pluralregeln geben eine zusätzliche Wortform für Dezimalzahlen an (1,5; 2,3; 100,1…), aber wir verwenden sie nicht in AdGuard-Übersetzungen.
 
 ## Pluralformen in AdGuard-Übersetzungen {#translations}
 
@@ -116,7 +116,7 @@ Eine weitere wichtige Sache, auf die Sie Ihre Aufmerksamkeit richten sollten, si
 
 In einer Situation mit einer anderen Sprache, die beispielsweise drei Pluralformen hat, sollten drei Vorlagen mit zwei vertikalen Balkenzeichen dazwischen vorhanden sein.
 
-Wenn wir zum Beispiel den oben erwähnten Satz ins Slowakische übersetzen, der gemäß der Regel von [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) drei Wortformen hat, sieht die korrekte Übersetzung so aus:
+For example, when we translate the above mentioned phrase into Slovak, that according to the rule of [Localization Guide](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) has three word forms, the correct translation will look so:
 
 `**Štandartná licencia pre *%count%* počítač | Štandartná licencia pre *%count%* počítače | Štandartná licencia pre *%count%* počítačov**`
 

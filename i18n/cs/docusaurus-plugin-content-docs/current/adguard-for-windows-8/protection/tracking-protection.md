@@ -153,32 +153,32 @@ Totéž platí pro možnost _Skrýt referenční ID před třetími stranami_: A
 
 ### Skrýt User-Agent
 
-When you visit a website, your browser sends a header called User-Agent as part of the HTTP request. It looks like a text line that begins with “User-Agent:”. This line usually contains details such as the browser name and version, operating system, and language settings.
+Když navštívíte webovou stránku, váš prohlížeč odešle jako součást HTTP požadavku hlavičku nazvanou User-Agent. Vypadá to jako textový řádek, který začíná “User-Agent:”. Tento řádek obvykle obsahuje podrobnosti, jako je název a verze prohlížeče, operační systém a nastavení jazyka.
 
-By enabling this option, AdGuard removes identifying information from the User-Agent so advertisers and trackers cannot use it to profile you. If you prefer, you can enter a custom value in the _Custom User-Agent_ field. To keep the default value, simply leave the field blank.
+Povolením této možnosti AdGuard odstraní identifikační informace z User-Agent, aby je inzerenti a slídiče nemohli použít k vytvoření vašeho profilu. Pokud chcete, můžete zadat vlastní hodnotu do pole _Vlastní User-Agent_. Chcete-li zachovat výchozí hodnotu, jednoduše ponechte pole prázdné.
 
-### Mask your IP address
+### Maskovat adresu IP
 
-AdGuard cannot completely hide your real IP address, but it can replace it with a different one so that websites interpret your connection as coming through a proxy. In some cases this helps to obscure your true IP.
+AdGuard nemůže zcela skrýt vaši skutečnou IP adresu, ale může ji nahradit jinou, aby webové stránky interpretovaly vaše připojení jako připojení přes proxy server. V některých případech to pomáhá skrýt vaši skutečnou IP adresu.
 
-You can enter any IP address you want to use in the corresponding field. Chcete-li použít výchozí IP adresu, ponechte pole prázdné.
+Do příslušného pole můžete zadat libovolnou IP adresu, kterou chcete použít. Chcete-li použít výchozí IP adresu, ponechte pole prázdné.
 
 ### Odstranit X-Client-Data hlavičku
 
-Prevents Google Chrome from sending information about its version and modifications in requests to Google domains, including services like DoubleClick and Google Analytics.
+Zabraňuje prohlížeči Google Chrome odesílat informace o své verzi a úpravách v požadavcích na domény Google, včetně služeb jako DoubleClick a Google Analytics.
 
 ### Ochrana proti DPI
 
 Deep Packet Inspection je systém hloubkové analýzy a filtrování provozu podle obsahu paketů a shromažďování statistických údajů. Pomocí této technologie mají poskytovatelé internetových služeb možnost kontrolovat procházející provoz a omezovat přístup k obsahu pro své klienty.
 
-Deep Packet Inspection (DPI) is a technology used by some ISPs to analyze and filter traffic based on packet content. It allows them to monitor connections, restrict access to certain resources, and collect statistics about users.
+Deep Packet Inspection (DPI) je technologie používaná některými poskytovateli internetových služeb k analýze a filtrování provozu na základě obsahu paketů. Umožňuje jim monitorovat připojení, omezovat přístup k určitým zdrojům a shromažďovat statistické údaje o uživatelích.
 
-When this option is enabled, AdGuard modifies outgoing packet data so that it no longer matches the DPI blocking criteria. This can help you bypass restrictions and access the content you need. However, not all DPI systems can be circumvented yet — improvements are still in progress.
+Když je tato možnost zapnutá, AdGuard upraví odchozí data paketů tak, aby už nesplňovala kritéria blokování DPI. To vám pomůže obejít omezení a získat přístup k obsahu, který potřebujete. Ne všechny systémy DPI však lze zatím obejít — stále probíhají vylepšení.
 
-The _Protect from DPI_ feature is already implemented in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android.
+Funkce _Ochrana před DPI_ je již implementována v AdGuardu pro Windows, AdGuardu pro Mac a AdGuardu pro Android.
 
 :::caution
 
-If this feature is enabled in AdGuard for Windows, it may interfere with the ESET antivirus. In this case, ESET will not be able to filter traffic, leaving some malicious or blocked websites accessible.
+Pokud je tato funkce v AdGuardu pro Windows povolena, může docházet k interferenci s antivirem ESET. V takovém případě nebude ESET schopen filtrovat provoz, takže některé škodlivé nebo blokované webové stránky zůstanou přístupné.
 
 :::

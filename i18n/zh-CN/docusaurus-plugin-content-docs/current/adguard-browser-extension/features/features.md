@@ -9,26 +9,18 @@ sidebar_position: 1
 
 :::
 
-## 主菜单
+- [主菜单](/adguard-browser-extension/features/main-menu.md)
 
-主弹出窗口，用户可以访问设置、过滤日志和统计信息，以及报告问题。
+  用于访问设置、过滤日志和统计信息以及报告问题的主弹出窗口设置
 
-[主菜单](/adguard-browser-extension/features/main-menu.md)
+- [过滤器](/adguard-browser-extension/features/filters.md)
 
-## 过滤器
+  过滤和用户规则以微调广告拦截。
 
-过滤和用户规则以微调广告屏蔽。
+- [跟踪保护（隐身模式)](/adguard-browser-extension/features/stealth-mode.md)
 
-[过滤器](/adguard-browser-extension/features/filters.md)
+  用于拦截 Cookie、UTM 标签以及收集用户信息的在线分析工具的设置
 
-## 跟踪保护（隐身模式）
+- [其他功能与选项](/adguard-browser-extension/features/other-features.md)
 
-设置阻止收集用户信息的 Cookie、UTM 标签和在线分析功能。
-
-[跟踪保护（隐身模式）](/adguard-browser-extension/features/stealth-mode.md)
-
-## 其他功能
-
-常规设置和附加设置，隐私文件和存储库链接。
-
-[其他功能与选项](/adguard-browser-extension/features/other-features.md)
+  常规和附加设置，以及指向隐私文档和 GitHub 仓库的链接

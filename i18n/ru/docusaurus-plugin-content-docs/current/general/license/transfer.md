@@ -17,7 +17,7 @@ sidebar_position: 4
 
 Или вы можете удалить устройство в личном кабинете AdGuard:
 
-1. Войдите [в личный кабинет AdGuard](https://adguardaccount.com/).
+1. Log in to your [AdGuard account](https://adguardaccount.com).
 
 1. Откройте вкладку *Блокировщик AdGuard*.
 

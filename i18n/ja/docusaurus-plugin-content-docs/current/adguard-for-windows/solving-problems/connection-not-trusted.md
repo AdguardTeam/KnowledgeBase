@@ -33,7 +33,7 @@ Here are some common issues:
 
 1. AdGuard を起動します。
 
-1. [http://local.adguard.org/cert](http://local.adguard.org/cert) にアクセスし、 *ダウンロード* ボタンをクリックします。 ブラウザは **cert.cer** ファイルのダウンロードを開始するはずです。
+1. Go to [https://local.adguard.org/cert](https://local.adguard.org/cert) and click the *Download* button. ブラウザは **cert.cer** ファイルのダウンロードを開始するはずです。
 
     :::note
 

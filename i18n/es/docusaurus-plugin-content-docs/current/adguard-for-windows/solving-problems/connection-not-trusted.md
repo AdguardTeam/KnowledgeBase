@@ -33,7 +33,7 @@ Si eso no ayuda, sigue las instrucciones para agregar manualmente el certificado
 
 1. Ejecutar AdGuard.
 
-1. Ve a [http://local.adguard.org/cert](http://local.adguard.org/cert) y haz clic en el botón *Descargar*. El navegador debería comenzar a descargar el archivo **cert.cer**.
+1. Go to [https://local.adguard.org/cert](https://local.adguard.org/cert) and click the *Download* button. El navegador debería comenzar a descargar el archivo **cert.cer**.
 
     :::note
 
