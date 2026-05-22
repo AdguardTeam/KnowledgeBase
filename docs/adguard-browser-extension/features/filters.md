@@ -29,6 +29,8 @@ To add a filter, just click *Add custom filter*, enter the URL or the file path 
 
 ![Add a custom filter *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
+Custom filters update independently, staying up to date without requiring extension updates—so your filtering remains effective and current.
+
 ## User rules {#user-rules}
 
 *User rules* is another tool that helps you customize the blocking of ads.
@@ -49,7 +51,7 @@ The *allowlist* is used to exclude certain websites from filtering. Blocking rul
 
 ![Allowlist *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-The *allowlist* can be inverted, too: you can unblock ads everywhere except on the websites added to this list. To do that, activate the *Invert allowlist* option.
+The *allowlist* can be inverted, too: you can unblock ads everywhere except on the websites added to this list. To do that, activate the *Invert allowlist* option. Before it turns on, a confirmation dialog will appear to prevent accidental activation and explain what will happen.
 
 ![Invert allowlist *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 
