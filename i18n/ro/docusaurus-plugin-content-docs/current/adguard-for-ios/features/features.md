@@ -9,56 +9,38 @@ Acest articol se referă la AdGuard pentru iOS, un blocant de reclame multifunc�
 
 :::
 
-## Protecție Safari
+- [Protecția Safari](/adguard-for-ios/features/safari-protection.md)
 
-Available features and settings in the _Safari protection_ tab: _Filters_, _User rules_, and _Allowlist_
+  Available features and settings in the _Safari protection_ tab: _Filters_, _User rules_, and _Allowlist_
 
-[Protecția Safari](/adguard-for-ios/features/safari-protection.md)
+- [Protecția DNS](/adguard-for-ios/features/dns-protection/)
 
-## Protecție DNS
+  DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
 
-DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
+- [Protecție avansată](/adguard-for-ios/features/advanced-protection.md)
 
-[Protecția DNS](/adguard-for-ios/features/dns-protection/)
+  A feature that allows AdGuard to apply advanced filtering rules and scriptlets to handle complex ads
 
-## Protecție avansată
+- [Activitate și statistici](/adguard-for-ios/features/activity.md)
 
-A feature that allows AdGuard to apply advanced filtering rules and scriptlets to handle complex ads
+  Statistics with detailed activity reports that allow you to monitor blocked ads, trackers, and DNS queries
 
-[Protecție avansată](/adguard-for-ios/features/advanced-protection.md)
+- [Asistent](/adguard-for-ios/features/assistant.md)
 
-## Activitate și statistici
+  A tool that lets you quickly manage filtering in Safari right from the browser without opening the AdGuard interface
 
-Statistics with detailed activity reports that allow you to monitor blocked ads, trackers, and DNS queries
+- [Setări de bază](/adguard-for-ios/features/low-level-settings.md)
 
-[Activitate și statistici](/adguard-for-ios/features/activity.md)
+  Settings that allow advanced users to fine-tune app performance and adjust DNS protection
 
-## Asistent
+- [Alte caracteristici](/adguard-for-ios/features/other-features.md)
 
-A tool that lets you quickly manage filtering in Safari right from the browser without opening the AdGuard interface
+  General settings: theme, settings and statistics reset, auto-update, inverting the allowlist, and advanced mode.
 
-[Asistent](/adguard-for-ios/features/assistant.md)
+- [Compatibilitate cu AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 
-## Setări la nivel scăzut
+  Integrated mode that allows AdGuard Ad Blocker and AdGuard VPN to run simultaneously despite system limitations
 
-Settings that allow advanced users to fine-tune app performance and adjust DNS protection
+- [Versiunea gratuită vs. versiunea completă](/adguard-for-ios/features/free-vs-full.md)
 
-[Setări de bază](/adguard-for-ios/features/low-level-settings.md)
-
-## Alte caracteristici
-
-General settings: theme, settings and statistics reset, auto-update
-
-[Alte caracteristici](/adguard-for-ios/features/other-features.md)
-
-## Modul de compatibilitate cu AdGuard VPN
-
-Integrated mode that allows AdGuard Ad Blocker and AdGuard VPN to run simultaneously despite system limitations
-
-[Compatibilitate cu AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
-
-## Versiune gratuită vs. versiune completă
-
-Comparison of features between the free and paid versions
-
-[Versiunea gratuită vs. versiunea completă](/adguard-for-ios/features/free-vs-full.md)
+  Comparison of features between the free and paid versions

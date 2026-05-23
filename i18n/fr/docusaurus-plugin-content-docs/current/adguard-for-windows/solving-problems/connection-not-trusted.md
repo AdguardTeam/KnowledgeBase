@@ -33,7 +33,7 @@ Si cela ne vous aide pas, suivez les instructions pour ajouter manuellement le c
 
 1. Démarrez AdGuard.
 
-1. Allez à [http://local.adguard.org/cert](http://local.adguard.org/cert) et cliquez sur le bouton *Télécharger*. Le navigateur devrait commencer à télécharger le fichier **cert.cer**.
+1. Go to [https://local.adguard.org/cert](https://local.adguard.org/cert) and click the *Download* button. Le navigateur devrait commencer à télécharger le fichier **cert.cer**.
 
     :::note
 

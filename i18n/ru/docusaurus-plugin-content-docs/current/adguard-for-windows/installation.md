@@ -23,7 +23,7 @@ sidebar_position: 2
 
 Чтобы установить AdGuard на ПК или планшет с Windows, выполните следующие действия:
 
-1. Откройте [сайт AdGuard](http://adguard.com) и нажмите *Загрузить*. Вы также можете скачать программу установки со [страницы скачивания](https://adguard.com/download.html?auto=1) — загрузка начнётся автоматически.
+1. Go to the [AdGuard website](https://adguard.com) and click *Download*. Вы также можете скачать программу установки со [страницы скачивания](https://adguard.com/download.html?auto=1) — загрузка начнётся автоматически.
 
    ![Скачайте AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/website_ru.png)
 

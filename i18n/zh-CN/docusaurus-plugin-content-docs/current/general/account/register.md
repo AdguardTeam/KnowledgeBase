@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## 什么是 AdGuard 账号
 
-[AdGuard 账号](https://adguardaccount.com/)是一种存储您的 AdGuard 许可证和订阅、活动的设备、购买历史、首选语言及其他首选项的用户账号。 许多 AdGuard 产品具有通过输入 AdGuard 账号凭证激活软件的选项，但前提是其须包含有效许可证。
+[AdGuard account](https://adguardaccount.com) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. 许多 AdGuard 产品具有通过输入 AdGuard 账号凭证激活软件的选项，但前提是其须包含有效许可证。
 
 ## 账号创建方式
 

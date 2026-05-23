@@ -9,56 +9,38 @@ Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který
 
 :::
 
-## Ochrana Safari
+- [Ochrana Safari](/adguard-for-ios/features/safari-protection.md)
 
-Dostupné funkce a nastavení na kartě _Ochrana Safari_: _Filtry_, _Uživatelská pravidla_ a _Seznam povolených_
+  Available features and settings in the _Safari protection_ tab: _Filters_, _User rules_, and _Allowlist_
 
-[Ochrana Safari](/adguard-for-ios/features/safari-protection.md)
+- [DNS ochrana](/adguard-for-ios/features/dns-protection/)
 
-## DNS ochrana
+  DNS servery a DNS filtry, které umožňují blokovat reklamy, slídiče a nebezpečné webové stránky
 
-DNS servery a DNS filtry, které umožňují blokovat reklamy, slídiče a nebezpečné webové stránky
+- [Pokročilá ochrana](/adguard-for-ios/features/advanced-protection.md)
 
-[DNS ochrana](/adguard-for-ios/features/dns-protection/)
+  Funkce, která umožňuje AdGuardu používat pokročilá pravidla filtrování a skriptlety pro zpracování složitých reklam
 
-## Pokročilá ochrana
+- [Aktivita a statistiky](/adguard-for-ios/features/activity.md)
 
-Funkce, která umožňuje AdGuardu používat pokročilá pravidla filtrování a skriptlety pro zpracování složitých reklam
+  Statistiky s podrobnými přehledy aktivit, které umožňují sledovat blokované reklamy, slídiče a dotazy DNS
 
-[Pokročilá ochrana](/adguard-for-ios/features/advanced-protection.md)
+- [Asistent](/adguard-for-ios/features/assistant.md)
 
-## Aktivita a statistiky
+  Nástroj, který vám pomůže spravovat filtrování v Safari přímo z prohlížeče bez nutnosti přepínat zpět do aplikace
 
-Statistiky s podrobnými přehledy aktivit, které umožňují sledovat blokované reklamy, slídiče a dotazy DNS
+- [Nízkoúrovňová nastavení](/adguard-for-ios/features/low-level-settings.md)
 
-[Aktivita a statistiky](/adguard-for-ios/features/activity.md)
+  Nastavení, která pokročilým uživatelům umožňují vyladit výkon aplikací a upravit DNS ochranu
 
-## Assistant
+- [Další funkce](/adguard-for-ios/features/other-features.md)
 
-Nástroj, který vám pomůže spravovat filtrování v Safari přímo z prohlížeče bez nutnosti přepínat zpět do aplikace
+  General settings: theme, settings and statistics reset, auto-update, inverting the allowlist, and advanced mode.
 
-[Asistent](/adguard-for-ios/features/assistant.md)
+- [Kompatibilita s AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 
-## Nízkoúrovňová nastavení
+  Režim integrace, který umožňuje současný provoz Blokátoru reklam AdGuard a AdGuard VPN navzdory systémovým omezením
 
-Nastavení, která pokročilým uživatelům umožňují vyladit výkon aplikací a upravit DNS ochranu
+- [Bezplatná vs. plná verze](/adguard-for-ios/features/free-vs-full.md)
 
-[Nízkoúrovňová nastavení](/adguard-for-ios/features/low-level-settings.md)
-
-## Další funkce
-
-Obecná nastavení: motiv, nastavení a resetování statistik, automatické aktualizace
-
-[Další funkce](/adguard-for-ios/features/other-features.md)
-
-## Kompatibilita s AdGuard VPN
-
-Režim integrace, který umožňuje současný provoz Blokátoru reklam AdGuard a AdGuard VPN navzdory systémovým omezením
-
-[Kompatibilita s AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
-
-## Bezplatná vs. plná verze
-
-Porovnání funkcí bezplatné a placené verze
-
-[Bezplatná vs. plná verze](/adguard-for-ios/features/free-vs-full.md)
+  Porovnání funkcí bezplatné a placené verze

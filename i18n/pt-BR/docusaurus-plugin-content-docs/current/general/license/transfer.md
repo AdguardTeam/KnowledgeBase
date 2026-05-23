@@ -17,7 +17,7 @@ No dispositivo que você deseja desvincular, abra o aplicativo AdGuard e clique 
 
 Como alternativa, você pode remover o dispositivo na sua conta AdGuard:
 
-1. Entre na sua [conta AdGuard](https://adguardaccount.com/).
+1. Log in to your [AdGuard account](https://adguardaccount.com).
 
 1. Abra a aba *Bloqueador de anúncios AdGuard*.
 

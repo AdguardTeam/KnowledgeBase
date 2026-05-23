@@ -12,7 +12,7 @@ Nous vous recommandons vivement de lire attentivement cet article pour en savoir
 
 Les substantifs dans les langues différentes peuvent avoir plusieurs formes de mots au pluriel. Leur utilisation dépend du nombre de choses dont vous parlez.
 
-Par exemple, les mots anglais ont deux formes de mots lorsqu'ils parlent de quelque chose au singulier, comme *'one star'*, et au pluriel – *'two stars'*. Peu importe que vous disiez cinq, vingt-six ou même cinq cent trente-deux « stars» — la terminaison « s » restera la même. Mais certaines langues ne peuvent contenir qu'une ou plusieurs formes plurielles.
+For instance, English words have two word forms when speaking about something in the singular, like *one star*, and in the plural — *two stars*. Peu importe que vous disiez cinq, vingt-six ou même cinq cent trente-deux « stars» — la terminaison « s » restera la même. Mais certaines langues ne peuvent contenir qu'une ou plusieurs formes plurielles.
 
 Contrairement à l'anglais, la langue polonaise a trois formes plurielles de noms. L'une d'entre elles est utilisée pour parler de quelque chose au singulier, une autre forme est utilisée au pluriel, mais avec des nombres se terminant par 2—4, à l'exclusion de 12—14, et la troisième forme — pour les mots avec d'autres nombres devant eux.
 
@@ -38,9 +38,9 @@ Faisant face à une traduction qui nécessite l'utilisation de pluriels, vous ne
 
 Voici quelques sources d'informations que vous pouvez utiliser.
 
-[Guide de localisation](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contient une large liste de langues. Le nombre de formes plurielles pour les langues différentes est indiqué de cette façon : `nplurals=2`, `nplurals=4` et ainsi de suite. Le chiffre après le signe Égal `=` indique le nombre de formes plurielles de la langue respective.
+[Localization Guide](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. Le nombre de formes plurielles pour les langues différentes est indiqué de cette façon : `nplurals=2`, `nplurals=4` et ainsi de suite. Le chiffre après le signe Égal `=` indique le nombre de formes plurielles de la langue respective.
 
-En outre, vous pouvez obtenir des informations sur les formes plurielles dans le répertoire [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Les règles plurielles CLDR indiquent une forme de mot supplémentaire pour les nombres décimaux (1.5 ; 2.3 ; 100.1…), mais nous ne les utilisons pas dans les traductions AdGuard.
+Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Les règles plurielles CLDR indiquent une forme de mot supplémentaire pour les nombres décimaux (1.5 ; 2.3 ; 100.1…), mais nous ne les utilisons pas dans les traductions AdGuard.
 
 ## Les pluriels dans les traductions de AdGuard {#translations}
 
@@ -116,7 +116,7 @@ Une autre chose importante à laquelle vous devriez prêter attention c'est les 
 
 Dans le cas d'une langue ayant, par exemple, trois formes de pluriel, il doit y avoir trois modèles séparés par deux barres verticales.
 
-Par exemple, lorsque nous traduisons la phrase mentionnée ci-dessus en slovaque, qui, selon la règle du [Guide de la localisation](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) a trois formes de mots, la traduction correcte sera comme suit :
+For example, when we translate the above mentioned phrase into Slovak, that according to the rule of [Localization Guide](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) has three word forms, the correct translation will look so:
 
 `**Štandartná licencia pre *%count%* počítač | Štandartná licencia pre *%count%* počítače | Štandartná licencia pre *%count%* počítačov**`
 

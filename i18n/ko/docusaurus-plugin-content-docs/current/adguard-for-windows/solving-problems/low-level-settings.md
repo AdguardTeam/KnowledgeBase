@@ -112,8 +112,8 @@ Host: example.org 요청은`
 
 다음과 같이 변환됩니다.
 
-`GET /foo/bar/ HTTP/1.1
-Host: example.org 요청은`
+`GET  /foo/bar/ HTTP/1.1
+Host:example.org`
 
 이 설정은 스텔스 모드에서 *DP로부터 보호* 옵션이 활성화된 경우에만 적용됩니다.
 

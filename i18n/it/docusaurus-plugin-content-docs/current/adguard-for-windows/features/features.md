@@ -9,32 +9,22 @@ Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunziona
 
 :::
 
-## Schermata iniziale
+- [Schermata principale](/adguard-for-windows/features/home-screen/)
 
-Nella schermata principale troverai _Impostazioni_, _Assistenza_, _Licenza_ e _Informazioni_, così come le statistiche sulle inserzioni bloccate e sui tracciatori
+  On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
 
-[Schermata principale](/adguard-for-windows/features/home-screen/)
+- [Impostazioni](/adguard-for-windows/features/settings/)
 
-## Impostazioni
+  Impostazioni di tema e lingua, personalizzazione del blocco delle inserzioni, Protezione DNS, controlli parentali, gestione delle estensioni e opzioni avanzate per utenti esperti
 
-Impostazioni di tema e lingua, personalizzazione del blocco delle inserzioni, Protezione DNS, controlli parentali, gestione delle estensioni e opzioni avanzate per utenti esperti
+- [Estensioni](/adguard-for-windows/features/extensions/)
 
-[Impostazioni](/adguard-for-windows/features/settings/)
+  Una funzione che consente di estendere le funzionalità dei siti web aggiungendo codici e stili personali
 
-## Estensioni
+- [Rete](/adguard-for-windows/features/network/)
 
-Una funzione che consente di estendere le funzionalità dei siti web aggiungendo codici e stili personali
+  Opzioni aggiuntive relative alla rete e impostazioni del proxy
 
-[Estensioni](/adguard-for-windows/features/extensions/)
+- [Altre funzioni](/adguard-for-windows/features/others/)
 
-## Rete
-
-Opzioni aggiuntive relative alla rete e impostazioni del proxy
-
-[Rete](/adguard-for-windows/features/network/)
-
-## Altre funzioni
-
-Assistenza, gestione della licenza, opzioni del menu', versione del programma e aggiornamenti
-
-[Altre funzioni](/adguard-for-windows/features/others/)
+  Support, license management, tray menu options, app version and updates

@@ -17,7 +17,7 @@ sidebar_position: 4
 
 別の方法として、AdGuardアカウントでデバイスを削除することができます：
 
-1. お持ちの[AdGuardアカウント](https://adguardaccount.com/)にログインします。
+1. Log in to your [AdGuard account](https://adguardaccount.com).
 
 1. 「*AdGuard 広告ブロッカー*」タブを開きます。
 

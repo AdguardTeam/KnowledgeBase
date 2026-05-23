@@ -23,4 +23,4 @@ Safari용 독립 실행형 확장 프로그램이 있습니다. Since the releas
 
 :::
 
-**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** So if you want to get full-fledged protection, consider installing a standalone program for your computer. There's [a reason why](adguard-browser-extension/comparison-standalone).
+**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** So if you want to get full-fledged protection, consider installing a standalone program for your computer. There's [a reason why](/adguard-browser-extension/comparison-standalone).

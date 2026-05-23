@@ -45,9 +45,9 @@ adguard-cli status
 
 ![Status/Stop protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
 
-### Restart protection
+### Restartovat ochranu
 
-To restart the proxy server and reapply settings, enter:
+Chcete-li restartovat proxy server a znovu použít nastavení, zadejte:
 
 ```sh
 adguard-cli restart
@@ -83,23 +83,23 @@ adguard-cli update -v
 
 Pro konfiguraci AdGuardu pro Linux použijte příkaz `config`. Dílčí příkazy:
 
-- `show [<section-name>]`: Show the current configuration in `proxy.yaml` (or a specific section)
+- `show [<section-name>]`: Zobrazení aktuální konfigurace v souboru `proxy.yaml` (nebo konkrétní sekce)
 
   ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
-- `set <key> <value>`: Configure an option in `proxy.yaml`
+- `set <key> <value>`: Konfigurace volby v souboru `proxy.yaml`
   - `listen_ports.http_proxy`: Naslouchací port HTTP
   - `proxy_mode`: Režim proxy (`manuální` nebo `automatický`)
 
-- `get <key>`: Get the current status of a setting
+- `get <key>`: Získání aktuálního stavu nastavení
 
-- `list-add <key> <value> [<value>...]`: Add one or more values to a list setting
+- `list-add <key> <value> [<value>...]`: Přidání jedné nebo více hodnot do seznamu
 
-- `list-remove <key> <value>`: Remove a value from a list setting
+- `list-remove <key> <value>`: Odebrání hodnoty z nastavení seznamu
 
-- `reset <key>`: Reset a setting to its default value
+- `reset <key>`: Obnovení nastavení na výchozí hodnoty
 
-- `reset --all`: Reset all settings to their default values
+- `reset --all`: Obnovení všech nastavení na výchozí hodnoty
 
 :::note
 
@@ -116,17 +116,17 @@ Automatický režim lze použít pouze tehdy, že jsou splněny následující p
 
 Pro konfiguraci AdGuardu pro Linux použijte příkaz `filters`. Dílčí příkazy:
 
-- `list`: List installed and added filters
+- `list`: Seznam nainstalovaných a přidaných filtrů
 
   - `--all`: Zobrazení všech filtrů
 
   ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
-- `add`: Add a built-in filter by ID or name
+- `add`: Přidání vestavěného filtru podle ID nebo názvu
 
-- `install`: Instalace filtru. Enter the URL of the filter you want to install or local file
-  - `--trusted`: Mark the custom filter as trusted
-  - `--title`: Set a custom title for the filter
+- `install`: Instalace filtru. Zadejte adresu URL filtru, který chcete nainstalovat nebo místní soubor
+  - `--trusted`: Označení vlastního filtrování jako důvěryhodné
+  - `--title`: Nastavení vlastního názvu filtru
 
 - `enable`: Povolení filtru. Zadejte název nebo ID filtru
 
@@ -134,41 +134,41 @@ Pro konfiguraci AdGuardu pro Linux použijte příkaz `filters`. Dílčí přík
 
 - `disable`: Zakázání filtru. Zadejte název nebo ID filtru
 
-- `remove`: Remove an internal or custom filter by ID
+- `remove`: Odebrání interního nebo vlastního filtru podle ID
 
-- `set-trusted`: Mark a custom filter as trusted or untrusted
+- `set-trusted`: Označení vlastního filtru jako důvěryhodného nebo nedůvěryhodného
 
-- `set-title`: Set a custom title for a custom filter
+- `set-title`: Nastavení vlastního názvu filtru
 
-Filter updates are handled by `adguard-cli check-update` (the `filters update` subcommand forwards to it).
+Aktualizace filtrů zajišťuje příkaz `adguard-cli check-update` (dílčí příkaz `filters update` na něj přesměruje).
 
-## Manage DNS filters
+## Správa DNS filtrů
 
-Use the `dns filters` command to manage DNS filter lists. Dílčí příkazy:
+Pro správu seznamů DNS filtrů použijte příkaz `dns filters`. Dílčí příkazy:
 
-- `list`: List installed and added DNS filters
-  - `--all`: View all DNS filters
-- `add`: Add a built-in DNS filter by ID or name
-- `install`: Install a custom DNS filter from a URL or local file
-  - `--title`: Set a custom title for the filter
-- `enable`: Enable a DNS filter. Zadejte název nebo ID filtru
-- `disable`: Disable a DNS filter. Zadejte název nebo ID filtru
-- `remove`: Remove a DNS filter by ID
-- `set-title`: Set a custom title for a DNS filter
+- `list`: Seznam nainstalovaných a přidaných DNS filtrů
+  - `--all`: Zobrazení všech DNS filtrů
+- `add`: Přidání vestavěného DNS filtru podle ID nebo názvu
+- `install`: Instalace vlastního DNS filtru z URL nebo místního souboru
+  - `--title`: Nastavení vlastního názvu filtru
+- `enable`: Povolení DNS filtru. Zadejte název nebo ID filtru
+- `disable`: Zakázání DNS filtru. Zadejte název nebo ID filtru
+- `remove`: Odebrání DNS filtru podle ID
+- `set-title`: Nastavení vlastního názvu DNS filtru
 
-DNS filter updates are handled by `adguard-cli check-update`.
+Aktualizace DNS filtrů jsou řešeny příkazem `adguard-cli check-update`.
 
-## Manage userscripts
+## Správa uživatelských filtrů
 
-Use the `userscripts` command to manage userscripts. Dílčí příkazy:
+Pro správu uživatelských skriptů použijte příkaz `userscripts`. Dílčí příkazy:
 
-- `list`: Show installed userscripts
-- `install`: Install a userscript from a URL
-- `remove`: Remove a userscript
-- `enable`: Enable a userscript
-- `disable`: Disable a userscript
+- `list`: Zobrazení nainstalovaných uživatelských skriptů
+- `install`: Instalace uživatelského skriptu z URL
+- `remove`: Odebrání uživatelského skriptu
+- `enable`: Povolení uživatelského skriptu
+- `disable`: Zakázání uživatelského skriptu
 
-Userscripts are updated by `adguard-cli check-update`.
+Uživatelské skripty se aktualizují pomocí příkazu `adguard-cli check-update`.
 
 ## Změna poslechové adresy proxy v režimu ručního proxy
 

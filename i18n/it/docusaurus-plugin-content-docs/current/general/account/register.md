@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Cos'è un profilo di AdGuard
 
-Il [profilo di AdGuard](https://adguardaccount.com/) è un profilo utente che memorizza le informazioni sui tuoi abbonamenti e licenze di AdGuard, dispositivi attivi, lo storico dei tuoi acquisti, la lingua preferita e altre preferenze. Molti prodotti di AdGuard offrono un'opzione per attivarli inserendo le credenziali per il tuo profilo di AdGuard, ammesso che contenga una licenza valida.
+[AdGuard account](https://adguardaccount.com) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. Molti prodotti di AdGuard offrono un'opzione per attivarli inserendo le credenziali per il tuo profilo di AdGuard, ammesso che contenga una licenza valida.
 
 ## Come creare un profilo
 

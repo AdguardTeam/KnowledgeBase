@@ -17,7 +17,7 @@ sidebar_position: 4
 
 或者，您可以在您的 AdGuard 账号中删除该设备：
 
-1. 登录 [AdGuard 账号](https://adguardaccount.com/)。
+1. Log in to your [AdGuard account](https://adguardaccount.com).
 
 1. 打开「*AdGuard 广告拦截程序*」标签。
 

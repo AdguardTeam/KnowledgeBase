@@ -33,6 +33,14 @@ Per questo motivo, la visibilità del traffico basata su TDI diventa sempre più
 
 AdGuard già considera il driver TDI obsoleto e la sua completa rimozione è pianificata con l'evoluzione del prodotto.
 
+## Soluzione permanente
+
+From v8.0 RC, we’ve added experimental support for the SockFilter driver. It fixes the issue by solving conflicts in the WFP stack. [More information](/adguard-for-windows-8/settings/app-settings/network-settings/).
+
+To use it, go to _Settings → Network → Traffic filtering_, enable traffic filtering, and select _SockFilter (Experimental)_ from the list of available options.
+
+Since it’s experimental, there may be bugs. If you notice anything unusual, unexpected, or just plain broken, **you can switch back to TDI or WFP at any time** in the same section.
+
 ## Soluzione temporanea
 
 Certi cambiamenti del registro di Windows possono forzare il browser a fermare l'uso di AppContainer, causando nuovamente l'esecuzione dei suoi processi in una modalità non isolata. Il servizio della rete dedica ferma l'uso dello stack WSK e torna a un percorso di rete che il driver TDI può vedere. AdGuard quindi riacquista la capacità di filtrare il traffico del browser.
@@ -123,7 +131,3 @@ Dovresti vedere le seguenti politiche attive:
 Se disponibile, clicca _Ricarica le politiche_.
 
 Fatto!
-
-## Soluzione permanente
-
-Abbiamo in programma di aggiungere il supporto per il driver SockFilter nelle prossime versioni. Risolverà l'inghippo sistemando i conflitti nello stack WFP. [Ulteriori informazioni](https://github.com/AdguardTeam/AdguardForWindows/issues/5780).

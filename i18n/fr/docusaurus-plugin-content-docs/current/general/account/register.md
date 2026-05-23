@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Qu'est-ce qu'un compte AdGuard
 
-[Le compte AdGuard](https://adguardaccount.com/) est un compte utilisateur qui stocke des informations sur vos licences et abonnements AdGuard, vos appareils actifs, votre historique d'achats, votre langue préférée et d'autres préférences. De nombreux produits AdGuard offrent la possibilité de les activer en saisissant les informations d'identification de votre compte AdGuard, à condition qu'il contienne une licence valide.
+[AdGuard account](https://adguardaccount.com) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. De nombreux produits AdGuard offrent la possibilité de les activer en saisissant les informations d'identification de votre compte AdGuard, à condition qu'il contienne une licence valide.
 
 ## Comment créer un compte
 

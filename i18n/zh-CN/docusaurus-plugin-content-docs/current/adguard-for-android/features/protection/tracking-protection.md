@@ -77,4 +77,4 @@ _Tracking protection_ has three pre-configured privacy protection levels (_Stand
 
    11. 「移除 X-Client-Data 头部」 此功能禁止 Chrome 浏览器向 Google 域名（包括 DoubleClick 和 Google Analytics）发送有关其版本和修改的信息。
 
-You can tweak individual settings in _Tracking protection_ to create a custom configuration. Each setting has a description to help you understand its purpose. [Read more about various _Tracking protection_ settings](/general/stealth-mode) and use them cautiously, as some may interfere with the functionality of websites and browser extensions.
+You can tweak individual settings in _Tracking protection_ to create a custom configuration. Each setting has a description to help you understand its purpose. [详细了解各种「跟踪防护」设置](/general/stealth-mode)，并谨慎使用，因为部分设置可能影响网站及浏览器扩展的正常功能。

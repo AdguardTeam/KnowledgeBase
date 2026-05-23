@@ -33,4 +33,4 @@ sidebar_position: 10
 
 用户可以将 AdGuard 用作 HTTP 代理服务器。 这样就可以过滤连接到代理的其他设备上的流量。
 
-确保 Mac 和其他设备连接到同一网络，并在要通过代理服务器路由的设备上输入代理端口（通常在网络设置中）。 要同时过滤 HTTPS 流量，请将 [AdGuard 代理证书](http://local.adguard.org/cert)传输到此设备。 [了解有关安装代理证书的更多信息](/guides/proxy-certificate)。
+确保 Mac 和其他设备连接到同一网络，并在要通过代理服务器路由的设备上输入代理端口（通常在网络设置中）。 To filter HTTPS traffic as well, [transfer AdGuard’s proxy certificate](https://local.adguard.org/cert) to this device. [了解有关安装代理证书的更多信息](/guides/proxy-certificate)。

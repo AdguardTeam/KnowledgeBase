@@ -11,38 +11,26 @@ Acest articol se referă la AdGuard pentru Android, un blocant de reclame multif
 
 The _Protection_ tab includes the following features or settings. You’ll find a detailed article for each of them in this Knowledge Base.
 
-## Ad blocking
+- [Blocarea reclamelor](/adguard-for-android/features/protection/ad-blocking.md)
 
-Settings to block ads in browsers and apps
+  Settings to block ads in browsers and apps
 
-[Blocarea reclamelor](/adguard-for-android/features/protection/ad-blocking.md)
+- [Protecție de urmărire](/adguard-for-android/features/protection/tracking-protection.md)
 
-## Tracking protection
+  Settings that allow you to block tracking tools that collect user information
 
-Settings that allow you to block tracking tools that collect user information
+- [Blocarea reclamelor enervante](/adguard-for-android/features/protection/annoyance-blocking.md)
 
-[Protecție de urmărire](/adguard-for-android/features/protection/tracking-protection.md)
+  Settings to block annoyances such as cookie consent popups, social widgets, and banners that prompt you to download mobile apps
 
-## Blocarea reclamelor enervante
+- [Protecție DNS](/adguard-for-android/features/protection/dns-protection.md)
 
-Settings to block annoyances such as cookie consent popups, social widgets, and banners that prompt you to download mobile apps
+  DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
 
-[Blocarea reclamelor enervante](/adguard-for-android/features/protection/annoyance-blocking.md)
+- [Firewall](/adguard-for-android/features/protection/firewall/firewall.md)
 
-## Protecție DNS
+  A feature that allows you to control Internet access for individual apps
 
-DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
+- [Securitate la navigare](/adguard-for-android/features/protection/browsing-security.md)
 
-[Protecție DNS](/adguard-for-android/features/protection/dns-protection.md)
-
-## Firewall
-
-A feature that allows you to control Internet access for individual apps
-
-[Firewall](/adguard-for-android/features/protection/firewall/firewall.md)
-
-## Securitate la navigare
-
-A feature that blocks access to malicious and phishing websites and protects you from online threats
-
-[Securitate la navigare](/adguard-for-android/features/protection/browsing-security.md)
+  A feature that blocks access to malicious and phishing websites and protects you from online threats

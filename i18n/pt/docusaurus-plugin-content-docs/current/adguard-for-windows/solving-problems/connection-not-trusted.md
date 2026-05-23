@@ -33,7 +33,7 @@ If that doesn't help, follow the instructions for manually adding the AdGuard ce
 
 1. Run AdGuard.
 
-1. Go to [http://local.adguard.org/cert](http://local.adguard.org/cert) and click the *Download* button. The browser should start downloading **cert.cer** file.
+1. Go to [https://local.adguard.org/cert](https://local.adguard.org/cert) and click the *Download* button. The browser should start downloading **cert.cer** file.
 
     :::note
 

@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-这篇文章是关于 AdGuard 浏览器扩展，它只能保护用户的浏览器。 要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文介绍的是 AdGuard 浏览器扩展，它仅保护用户的浏览器。 要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -25,22 +25,22 @@ sidebar_position: 4
 
 「附加设置」部分包含一系列与广告拦截过程和应用程序可用性有关的各种设置。
 
-![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
+![其他设置 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
 
-From this tab, you can invert the allowlist and add the AdGuard item to the browser’s context menu. You can also enable the display of the number of blocked ads on the AdGuard icon and notifications about extension updates. Additionally, this section lets you enable notifications about the AdGuard app, open the _Filtering log_, clear the statistics of blocked ads and trackers, or reset the settings.
+在此标签页中，您可以反转白名单，并将 AdGuard 项目添加到浏览器的上下文菜单中。 用户还可以启用 AdGuard 图标上显示被拦截广告数量以及扩展更新通知的功能。 此外，此部分还允许用户启用关于 AdGuard 应用的通知、打开「过滤日志」、清除已拦截广告和跟踪器的统计数据，或重置设置。
 
 此外，用户可以选择发送应用规则的统计数据以帮助我们开发过滤器：触发哪些规则、在哪些网站上触发以及触发频率。 该选项默认为禁用，因为我们不会在未经同意的情况下收集用户数据。 但是，如果启用该功能，所有数据都将匿名发送。
 
-You can also choose to help us improve the extension by sending us anonymized usage data. This includes the names of the screens you interact with, the names of the buttons you click, and session identifiers. These insights help us understand where users run into friction, refine the experience, and make the extension faster and easier to use. The _Send anonymized usage data_ option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
+您还可以选择通过向我们发送匿名使用数据来帮助我们改进扩展程序。 这包括您所交互的屏幕名称、您点击的按钮名称以及会话标识符。 这些信息帮助我们了解用户在哪里遇到困难，优化体验，并使扩展更快、更易于使用。 「匿名发送扩展使用数据」选项默认是禁用的。 如果您启用它，所有数据都将严格匿名，且仅用于内部。 绝不会与任何第三方共享。
 
 :::note
 
-The _Send anonymized usage data_ option can also be enabled on the post-installation page in Chromium-based browsers.
+在基于 Chromium 的浏览器中，也可以在安装后页面上启用「发送匿名使用数据」选项。
 
 :::
 
-## About {#about}
+## 关于 {#about}
 
-In the _About_ section, you can find info about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
+在「关于」部分中，用户可以找到有关当前版本的信息、EULA 和隐私政策的链接以及 GitHub 上浏览器扩展存储库的链接。
 
-![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+![关于 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
