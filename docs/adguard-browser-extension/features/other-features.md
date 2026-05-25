@@ -27,7 +27,7 @@ In addition, you can still export your settings to a .json file by clicking *Exp
 
 The *Additional settings* section contains a range of various settings that are related to the ad blocking process and application usability.
 
-![Additional settings *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional_new_.png)
+![Additional settings *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional_new.png)
 
 From this tab, you can invert the allowlist and add the AdGuard item to the browser’s context menu. You can also enable the display of the number of blocked ads on the AdGuard icon and notifications about extension updates. Additionally, this section lets you enable notifications about the AdGuard app, open the *Filtering log*, clear the statistics of blocked ads and trackers, or reset the settings.
 
