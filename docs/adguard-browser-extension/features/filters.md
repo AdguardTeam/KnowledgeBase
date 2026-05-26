@@ -51,7 +51,7 @@ The *allowlist* is used to exclude certain websites from filtering. Blocking rul
 
 ![Allowlist *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-The *allowlist* can be inverted, too: you can unblock ads everywhere except on the websites added to this list. To do that, activate the *Invert allowlist* option. Before it turns on, a confirmation dialog will appear to prevent accidental activation and explain what will happen.
+*Allowlist* can also be inverted: you can unblock ads everywhere except on the websites added to this list. To do that, activate the *Invert Allowlist* option. Before it turns on, a confirmation dialog will appear to prevent accidental activation and explain what will happen.
 
 ![Invert allowlist *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 
