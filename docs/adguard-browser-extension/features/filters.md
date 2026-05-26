@@ -29,7 +29,7 @@ To add a filter, just click *Add custom filter*, enter the URL or the file path 
 
 ![Add a custom filter *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
-Custom filters update independently, staying up to date without requiring extension updates—so your filtering remains effective and current.
+Custom filters update independently, so your filtering remains effective and current without requiring extension updates.
 
 ## User rules {#user-rules}
 
