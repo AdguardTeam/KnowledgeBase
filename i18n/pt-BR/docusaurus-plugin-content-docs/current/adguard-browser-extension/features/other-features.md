@@ -25,22 +25,22 @@ Você pode salvar suas configurações clicando no botão _Exportar configuraç�
 
 A seção _Configurações adicionais_ contém uma variedade de configurações relacionadas ao processo de bloqueio de anúncios e à usabilidade do aplicativo.
 
-![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
+![Configurações adicionais \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
 
-From this tab, you can invert the allowlist and add the AdGuard item to the browser’s context menu. You can also enable the display of the number of blocked ads on the AdGuard icon and notifications about extension updates. Additionally, this section lets you enable notifications about the AdGuard app, open the _Filtering log_, clear the statistics of blocked ads and trackers, or reset the settings.
+Nesta aba, você pode inverter a lista de permissões e adicionar o item do AdGuard ao menu de contexto do navegador. Você também pode ativar a exibição do número de anúncios bloqueados no ícone do AdGuard e notificações sobre atualizações da extensão. Além disso, esta seção permite ativar notificações sobre o aplicativo AdGuard, Abrir o _Registro de filtragem_, limpar as estatísticas de anúncios e rastreadores bloqueados ou redefinir as configurações.
 
 Além disso, você pode optar por nos ajudar no desenvolvimento de filtros enviando estatísticas sobre as regras aplicadas: quais são acionadas, em quais sites e com que frequência. Esta opção está desativada por padrão, pois não coletamos dados do usuário sem consentimento. Mesmo que você a ative, todos os dados serão estritamente anônimos.
 
-You can also choose to help us improve the extension by sending us anonymized usage data. This includes the names of the screens you interact with, the names of the buttons you click, and session identifiers. These insights help us understand where users run into friction, refine the experience, and make the extension faster and easier to use. The _Send anonymized usage data_ option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
+Você também pode optar por nos ajudar a melhorar a extensão enviando-nos dados de uso anonimizados. Isso inclui os nomes das telas com as quais você interage, os nomes dos botões em que você clica e os identificadores de sessão. Essas informações nos ajudam a entender onde os usuários encontram dificuldades, aprimorar a experiência e tornar a extensão mais rápida e fácil de usar. A opção _Enviar dados de uso anonimizados_ está desativada por padrão. Ao ativar essa opção, todos os dados serão estritamente anonimizados e usados apenas internamente. Nunca será compartilhado com terceiros.
 
 :::note
 
-The _Send anonymized usage data_ option can also be enabled on the post-installation page in Chromium-based browsers.
+A opção _Enviar dados de uso anonimizados_ também pode ser ativada na página pós-instalação em navegadores baseados em Chromium.
 
 :::
 
-## About {#about}
+## Sobre {#about}
 
-In the _About_ section, you can find info about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
+Na seção _Sobre_, você pode encontrar informações sobre a versão atual, links para o EULA e a política de privacidade e para o repositório da extensão do navegador no GitHub.
 
-![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+![Sobre \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)

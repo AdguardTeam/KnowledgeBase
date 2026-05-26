@@ -15,7 +15,7 @@ While AdGuard for Windows is not an antivirus, it does provide essential securit
 
 It won’t stop a virus that is already being downloaded, and it won’t remove existing malware. But it will block access to websites that are marked as unsafe, helping you avoid threats in the first place.
 
-For more details about how this protection works, see our article [Phishing and malware protection](/general/browsing-security).
+Para obtener más detalles sobre cómo funciona esta protección, consulte nuestro artículo [Protección contra phishing y malware](/general/browsing-security).
 
 ![Browsing security](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/browsing.png)
 

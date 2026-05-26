@@ -31,7 +31,7 @@ Die _Protokollierungsebene_ legt fest, welche Daten über die Funktion der App p
 
 ![Erweitert \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-Der Abschnitt _Low-Level-Einstellungen_ ist für erfahrene Benutzer:innen gedacht. [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
+Der Abschnitt _Low-Level-Einstellungen_ ist für erfahrene Benutzer:innen gedacht. [Weitere Informationen über Low-Level-Einstellungen](/adguard-for-android/features/low-level-settings/)
 
 ![Low-Level-Einstellungen \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
@@ -83,7 +83,7 @@ Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.
 
 #### HTTPS-Filterung
 
-To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
+To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Lesen Sie mehr über HTTPS-Filterung](/general/https-filtering/what-is-https-filtering)
 
 ##### Security certificates
 
@@ -112,7 +112,7 @@ By default, we also do not filter websites with Extended Validation (EV) certifi
 
 #### Proxy
 
-You can set up AdGuard to route all your device's traffic through your proxy server. [How to set up an outbound proxy](/adguard-for-android/solving-problems/outbound-proxy)
+You can set up AdGuard to route all your device's traffic through your proxy server. [So richten Sie einen Outbound-Proxy ein](/adguard-for-android/solving-problems/outbound-proxy)
 
 In this section, you can also set up a third-party VPN to work with AdGuard, if your VPN provider allows it.
 
@@ -126,7 +126,7 @@ This section allows you to select the traffic filtering method.
 
 :::note
 
-The _Local VPN_ mode doesn't allow AdGuard to be used simultaneously with other VPNs. To use another VPN with AdGuard, you need to reconfigure it to work in proxy mode and set up an outbound proxy in AdGuard. For AdGuard VPN, this is done automatically with the help of the [_Integrated mode_](/adguard-for-android/features/integration-with-vpn).
+The _Local VPN_ mode doesn't allow AdGuard to be used simultaneously with other VPNs. To use another VPN with AdGuard, you need to reconfigure it to work in proxy mode and set up an outbound proxy in AdGuard. Bei AdGuard VPN geschieht dies automatisch mit Hilfe des [_Integrierten Modus_](/adguard-for-android/features/integration-with-vpn).
 
 :::
 
@@ -161,12 +161,12 @@ Use this section if you have any questions or suggestions regarding AdGuard for 
 
 If you notice a missed ad, please report it via _Report incorrect blocking_.
 
-For unexpected app behavior, select _Report a bug_. If possible, describe your problem in detail and add app logs. [How to describe an issue](/guides/report-bugs/#how-to-describe-a-problem)
+For unexpected app behavior, select _Report a bug_. If possible, describe your problem in detail and add app logs. [So beschreiben Sie ein Problem](/guides/report-bugs/#how-to-describe-a-problem)
 
 For your suggestions, use _Request a feature_.
 
 :::note
 
-GitHub is an alternative way to report bugs and suggest new features. [Instructions and repository links](/guides/report-bugs/#adguard-for-android)
+GitHub is an alternative way to report bugs and suggest new features. [Anleitungen und Repository-Links](/guides/report-bugs/#adguard-for-android)
 
 :::

@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## O que é uma conta AdGuard
 
-A [conta AdGuard](https://adguardaccount.com/) é uma conta de usuário que armazena informações sobre suas licenças e assinaturas do AdGuard, dispositivos ativos, seu histórico de compras, preferência de idioma e outras preferências. Muitos produtos AdGuard oferecem uma opção de ativação inserindo as credenciais de sua conta AdGuard, desde que contenha uma licença válida.
+[AdGuard account](https://adguardaccount.com) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. Muitos produtos AdGuard oferecem uma opção de ativação inserindo as credenciais de sua conta AdGuard, desde que contenha uma licença válida.
 
 ## Como criar uma conta
 

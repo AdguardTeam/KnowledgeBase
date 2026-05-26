@@ -23,7 +23,7 @@ Selon le système d'exploitation de l'appareil dont vous souhaitez filtrer le tr
 
 1. Assurez-vous que la protection AdGuard est activée. Sur un ordinateur Windows, cochez la case **Utiliser AdGuard comme proxy HTTP** dans l'onglet **Réseau** de ses paramètres. Pour Mac, allez dans **Réglages** → **Préférences** → **Réseau** et activez le **Proxy HTTP**.
 
-1. Sur le même ordinateur avec AdGuard, suivez ce lien : [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. On the same computer with AdGuard, follow this link: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Cliquez sur le bouton **Télécharger** . Si le téléchargement ne démarre pas, essayez un autre navigateur, par exemple Firefox.
 
@@ -65,7 +65,7 @@ Selon le système d'exploitation de l'appareil dont vous souhaitez filtrer le tr
 
 1. Assurez-vous que la protection AdGuard est activée. Sur un ordinateur Windows, cochez la case **Utiliser AdGuard comme proxy HTTP** dans l'onglet **Réseau** de ses paramètres. Pour Mac, allez dans **Réglages** → **Préférences** → **Réseau** et activez le **Proxy HTTP**.
 
-1. Suivez ce lien à l'aide d'un navigateur web : [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. Follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Cliquez sur le bouton **Télécharger** . Si le téléchargement ne démarre pas, essayez un autre navigateur, par exemple Firefox.
 
@@ -97,7 +97,7 @@ Selon le système d'exploitation de l'appareil dont vous souhaitez filtrer le tr
 
 1. Assurez-vous que la protection AdGuard est activée. Sur un ordinateur Windows, cochez la case **Utiliser AdGuard comme proxy HTTP** dans l'onglet **Réseau** de ses paramètres. Pour Mac, allez dans **Réglages** → **Préférences** → **Réseau** et activez le **Proxy HTTP**.
 
-1. Depuis l'ordinateur avec AdGuard, suivez ce lien à l'aide d'un navigateur web : [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Cliquez sur le bouton **Télécharger** . Si le téléchargement ne démarre pas, essayez un autre navigateur, par exemple Firefox.
 
@@ -117,7 +117,7 @@ Selon le système d'exploitation de l'appareil dont vous souhaitez filtrer le tr
 
 1. Assurez-vous que la protection AdGuard est activée. Sur un ordinateur Windows, cochez la case **Utiliser AdGuard comme proxy HTTP** dans l'onglet **Réseau** de ses paramètres. Pour Mac, allez dans **Réglages** → **Préférences** → **Réseau** et activez le **Proxy HTTP**.
 
-1. Depuis l'ordinateur avec AdGuard, suivez ce lien à l'aide d'un navigateur web : [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Cliquez sur le bouton **Télécharger** . Si le téléchargement ne démarre pas, essayez un autre navigateur, par exemple Firefox.
 

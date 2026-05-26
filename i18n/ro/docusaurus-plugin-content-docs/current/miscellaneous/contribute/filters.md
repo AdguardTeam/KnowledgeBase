@@ -9,9 +9,17 @@ As you probably know, AdGuard uses filtering rules to block ads, and these rules
 
 Site-urile web își schimbă constant modul în care încorporează reclamele, iar noi adăugăm reguli noi la filtrele noastre pentru a le menține eficiente. Filter engineers are working on creating new rules, but we always welcome the help and support of volunteers.
 
+:::note
+
+All contributors must follow the **AdGuard filter policy** when creating rules. By participating, you agree to comply with the Policy and ensure your rules adhere to its requirements. Also contributors must not create rules intended to deliberately block websites or services that do not meet the criteria for blocking or that fall under exceptions described in the Policy.
+
+:::
+
 ### How to start {#how-to-start}
 
-Cu toate acestea, lucrul cu filtrele de blocare necesită abilități specifice. Dacă le aveți și știți cum să creați reguli, atunci mergeți direct la [repozitoriul filtrelor AdGuard](https://github.com/AdguardTeam/AdguardFilters) de pe GitHub. Acolo veți găsi multe probleme deschise, fiecare referindu-se la o problemă cu vreun site web — o reclamă ratată, un fals pozitiv, etc. Alegeți oricare și sugerați propriile reguli în comentarii. Inginerii de filtre AdGuard vor revizui sugestiile dumneavoastră și, dacă le consideră adecvate, regulile dumneavoastră vor fi adăugate la filtrele AdGuard.
+Cu toate acestea, lucrul cu filtrele de blocare necesită abilități specifice. Dacă le aveți și știți cum să creați reguli, atunci mergeți direct la [repozitoriul filtrelor AdGuard](https://github.com/AdguardTeam/AdguardFilters) de pe GitHub. Before you start contributing, we recommend reviewing the [guidelines](https://github.com/AdguardTeam/AdguardFilters/blob/master/CONTRIBUTING.md).
+
+In the repository, you will find a lot of open issues, each one referencing a problem with some website problem — a missed ad, a false positive, etc. Alegeți oricare și sugerați propriile reguli în comentarii. Inginerii de filtre AdGuard vor revizui sugestiile dumneavoastră și, dacă le consideră adecvate, regulile dumneavoastră vor fi adăugate la filtrele AdGuard.
 
 Dacă nu sunteți încă familiarizați cu sintaxa regulilor noastre de filtrare sau poate aveți nevoie de o reîmprospătare, veți găsi informațiile de bază despre sintaxă [în baza noastră de cunoștințe](/general/ad-filtering/create-own-filters).
 

@@ -23,7 +23,7 @@ Traficul HTTP va fi filtrat în orice caz, dar pentru ca AdGuard să poată filt
 
 1. Asigurați-vă că protecția AdGuard este activată. Pe un computer Windows, bifați caseta **Utilizați AdGuard ca proxy HTTP** în tab-ul **Rețea** din setările acestuia. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
-1. Pe același computer cu AdGuard, urmați acest link: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. On the same computer with AdGuard, follow this link: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Click the **Download** button. Dacă descărcarea nu începe, încercați un alt browser, de exemplu Firefox.
 
@@ -65,7 +65,7 @@ Traficul HTTP va fi filtrat în orice caz, dar pentru ca AdGuard să poată filt
 
 1. Asigurați-vă că protecția AdGuard este activată. Pe un computer Windows, bifați caseta **Utilizați AdGuard ca proxy HTTP** în tab-ul **Rețea** din setările acestuia. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
-1. Urmați acest link folosind un browser web: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. Follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Click the **Download** button. Dacă descărcarea nu începe, încercați un alt browser, de exemplu Firefox.
 
@@ -97,7 +97,7 @@ Traficul HTTP va fi filtrat în orice caz, dar pentru ca AdGuard să poată filt
 
 1. Asigurați-vă că protecția AdGuard este activată. Pe un computer Windows, bifați caseta **Utilizați AdGuard ca proxy HTTP** în tab-ul **Rețea** din setările acestuia. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
-1. De pe computerul cu AdGuard, urmați acest link folosind un browser web: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Click the **Download** button. Dacă descărcarea nu începe, încercați un alt browser, de exemplu Firefox.
 
@@ -117,7 +117,7 @@ Traficul HTTP va fi filtrat în orice caz, dar pentru ca AdGuard să poată filt
 
 1. Asigurați-vă că protecția AdGuard este activată. Pe un computer Windows, bifați caseta **Utilizați AdGuard ca proxy HTTP** în tab-ul **Rețea** din setările acestuia. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
-1. De pe computerul cu AdGuard, urmați acest link folosind un browser web: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Click the **Download** button. Dacă descărcarea nu începe, încercați un alt browser, de exemplu Firefox.
 

@@ -51,4 +51,4 @@ Despite these warnings, your traffic remains secure. Your connection to remote s
 
 [Learn more about HTTPS filtering and how the certificate works](/general/https-filtering/what-is-https-filtering.md).
 
-If you still encounter a problem and can’t install the certificate, please contact our support team at <support@adguard.com>.
+If you still encounter a problem and can’t install the certificate, please contact our support team at [support@adguard.com](mailto:support@adguard.com).

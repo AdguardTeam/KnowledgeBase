@@ -1,6 +1,6 @@
 ---
 title: So installieren Sie AdGuard
-sidebar_position: 9
+sidebar_position: 10
 ---
 
 Je nachdem, welche AdGuard-App oder Browsererweiterung Sie installieren möchten, folgen Sie einem dieser Links, um den entsprechenden Artikel zu finden:

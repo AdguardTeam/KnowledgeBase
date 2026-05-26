@@ -11,8 +11,8 @@ Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor rekla
 
 ![Support](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/support.png)
 
-Use this section if you have any questions or suggestions about AdGuard for Windows v8.0. We recommend checking the [FAQ](https://adguard.com/support/faq.html) and this Knowledge base before contacting support.
+Tuto sekci využijte, pokud máte nějaké dotazy nebo připomínky k programu AdGuard pro Windows v8.0. Než se obrátíte na podporu, doporučujeme vám nahlédnout do sekce [FAQ](https://adguard.com/support/faq.html) a do této databáze znalostí.
 
-If you notice a missed ad, please let us know using _Report incorrect blocking_.
+Pokud si všimnete nezablokované reklamy, nahlaste ji prosím skrze menu _Nahlásit nesprávné blokování_.
 
-You can also join our social channels to discuss AdGuard with other users, or reach out to us on GitHub to suggest new features or report bugs.
+Můžete se také připojit k našim sociálním sítím a diskutovat o AdGuardu s ostatními uživateli, nebo nás kontaktovat na GitHubu a navrhnout nové funkce či nahlásit chyby.

@@ -11,7 +11,7 @@ Cet article décrit AdGuard pour Windows v8.0, un bloqueur de publicité complet
 
 Les filtres anti-nuisances sont conçus pour améliorer l'ergonomie des sites Web en bloquant les éléments non publicitaires qui distraient ou perturbent l'interaction avec le site ou la consommation de contenu. Ces éléments comprennent des fenêtres modales, des formulaires interactifs, des notifications et demandes de consentement aux cookies, des bannières d'applications mobiles et widgets de toute sorte.
 
-Ces filtres peuvent contenir des règles qui ne conviennent pas à tous les utilisateurs. Il est parfois recommandé de les désactiver. Les décisions d'ajouter des règles à ce filtre sont prises par les développeurs de filtres, règle par règle.
+Ces filtres peuvent contenir des règles qui ne conviennent pas à tous les utilisateurs. Il est parfois recommandé de les désactiver. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
 
 ![Filtres anti-nuisances](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
 

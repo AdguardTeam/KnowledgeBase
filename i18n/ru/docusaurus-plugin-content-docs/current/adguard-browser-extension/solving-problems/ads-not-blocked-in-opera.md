@@ -1,15 +1,15 @@
 ---
-title: Ad blocking issues on search websites in Opera
+title: Проблемы с блокировкой рекламы на поисковых сайтах в браузере Opera
 sidebar_position: 3
 ---
 
-If AdGuard Browser Extension fails to block ads on search websites in Opera, either automatically or manually, it means that the extension does not have permission to access search page results.
+Если Браузерное расширение AdGuard не блокирует рекламу на поисковых сайтах в Opera автоматически или при ручной настройке, значит у него нет разрешения на доступ к результатам поиска.
 
-To grant the required permission:
+Чтобы предоставить необходимое разрешение:
 
-![Allow access to search page results](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/allow-access.png)
+![Разрешить доступ к результатам поиска](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/allow-access.png)
 
-1. Click the cube icon next to the address bar → _Manage extensions..._.
-2. Find AdGuard AdBlocker in the list of installed extensions and tick the box next to _Allow access to search page results_.
+1. Кликните по иконке куба рядом с адресной строкой → _Управление расширениями..._.
+2. Найдите AdGuard Антибаннер в списке установленных расширений и поставьте галочку напротив _Разрешить доступ к результатам на странице поиска_.
 
-Once this is done, ads on search websites will be blocked as expected.
+После этого реклама на сайтах поисковых систем будет блокироваться корректно.

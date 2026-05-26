@@ -12,7 +12,7 @@ Te recomendamos encarecidamente que leas correctamente este artículo para obten
 
 Los sustantivos en diferentes idiomas pueden tener varias formas de palabras en plural. Su uso depende del número de cosas de las que se hable.
 
-Por ejemplo, las palabras en inglés tienen dos formas de palabras cuando se habla de algo en singular, como *"one star"*, y en plural: *"two stars"*. No importa si dices cinco, veintiséis o incluso quinientas treinta y dos estrellas, la terminación ''s'' seguirá siendo la misma. Pero algunos idiomas pueden contener solo una o varias formas plurales.
+For instance, English words have two word forms when speaking about something in the singular, like *one star*, and in the plural — *two stars*. No importa si dices cinco, veintiséis o incluso quinientas treinta y dos estrellas, la terminación ''s'' seguirá siendo la misma. Pero algunos idiomas pueden contener solo una o varias formas plurales.
 
 A diferencia del inglés, el idioma polaco tiene tres formas plurales de sustantivos. Uno de ellos se usa cuando se habla de algo en singular, otra forma se usa en plural pero con números que terminan en 2–4, excluyendo 12–14, y la tercera forma, para palabras con otros números delante de ellos.
 
@@ -38,9 +38,9 @@ Cuando se enfrenta a una traducción que requiere el uso de plurales, es posible
 
 Aquí hay algunas fuentes de información que puedes utilizar.
 
-[La Guía de localización](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contiene una amplia lista de idiomas. El número de formas plurales para diferentes idiomas se muestra de esta manera: `nplurales=2`, `nplurales=4` y así sucesivamente. El número después del signo igual `=` indica el número de formas plurales del idioma respectivo.
+[Localization Guide](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. El número de formas plurales para diferentes idiomas se muestra de esta manera: `nplurales=2`, `nplurales=4` y así sucesivamente. El número después del signo igual `=` indica el número de formas plurales del idioma respectivo.
 
-Además, puedes obtener información sobre formas plurales en el [Repositorio de datos de configuración regional común](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR) de Unicode. Las reglas CLDR Plural indican una forma de palabra adicional para los números decimales (1,5; 2,3; 100,1…), pero no las usamos en las traducciones de AdGuard.
+Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Las reglas CLDR Plural indican una forma de palabra adicional para los números decimales (1,5; 2,3; 100,1…), pero no las usamos en las traducciones de AdGuard.
 
 ## Plurales en las traducciones de AdGuard {#translations}
 
@@ -116,7 +116,7 @@ Otra cosa importante a la que debes prestar atención son los placeholders **%co
 
 En una situación con otro idioma que tiene, digamos, tres formas plurales, debe haber tres plantillas con dos barras verticales entre ellas.
 
-Por ejemplo, cuando traducimos la frase mencionada anteriormente al eslovaco, que de acuerdo con la regla del [Guía de localización](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) tiene tres formas de palabras, la traducción correcta se verá así:
+For example, when we translate the above mentioned phrase into Slovak, that according to the rule of [Localization Guide](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) has three word forms, the correct translation will look so:
 
 `**Štandartná licencia pre *%count%* počítač | Štandartná licencia pre *%count%* počítače | Štandartná licencia pre *%count%* počítačov**`
 

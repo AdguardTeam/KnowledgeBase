@@ -18,6 +18,6 @@ Pour mieux utiliser vos produits AdGuard, vous pouvez surclasser votre licence p
 - Pour augmenter le nombre d'appareils, vous pouvez **surclasser votre licence Personnelle vers la licence Familiale**
 - Vous pouvez également **surclasser votre abonnement annuel vers une licence à vie**
 
-Vous pouvez mettre votre licence à niveau dans votre compte AdGuard. Pour cela, cliquez sur *Surclasser vers à vie* ou *Augmenter la limite d'appareils*.
+You can upgrade your license in your [AdGuard account](https://adguardaccount.com). Pour cela, cliquez sur *Surclasser vers à vie* ou *Augmenter la limite d'appareils*.
 
 ![Surclasser](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

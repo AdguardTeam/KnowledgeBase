@@ -12,7 +12,7 @@ sidebar_position: 4
 
 Существительные в некоторых языках могут иметь несколько форм множественного числа. Использование той или иной формы в основном зависит от количества называемых предметов или свойства числительных.
 
-Например, у английских слов две словоформы: в единственном числе — *one star*, «одна звезда», во множественном — *two stars*, «две звезды». Неважно, скажете ли вы пять, двадцать шесть или даже пятьсот тридцать две звезды — окончание «s» останется прежним. Но некоторые языки могут содержать только одну плюральную форму или наоборот — больше, чем две.
+For instance, English words have two word forms when speaking about something in the singular, like *one star*, and in the plural — *two stars*. Неважно, скажете ли вы пять, двадцать шесть или даже пятьсот тридцать две звезды — окончание «s» останется прежним. Но некоторые языки могут содержать только одну плюральную форму или наоборот — больше, чем две.
 
 В отличие от английского, в польском языке есть три формы множественного числа существительных. Одна из них используется, когда говорят о чём-либо в единственном числе, другая — во множественном числе, но с числами, оканчивающимися на 2–4, не включая 12–14, а третья форма — для слов, перед которыми стоят все остальные числа.
 
@@ -38,9 +38,9 @@ sidebar_position: 4
 
 Вот некоторые источники информации, которые можно использовать.
 
-На сайте [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) есть информация о большом количестве языков. Количество форм множественного числа для разных языков показано так: `nplurals=2`, `nplurals=4` и так далее. Цифра после знака равенства `=` означает количество форм множественного числа соответствующего языка.
+[Localization Guide](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. Количество форм множественного числа для разных языков показано так: `nplurals=2`, `nplurals=4` и так далее. Цифра после знака равенства `=` означает количество форм множественного числа соответствующего языка.
 
-Информацию о плюральных формах можно также найти на сайте [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). В правилах плюральных форм CLDR указана дополнительная форма слова для десятичных чисел (1,5; 2,3; 100,1…), но мы не используем их в переводах AdGuard.
+Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). В правилах плюральных форм CLDR указана дополнительная форма слова для десятичных чисел (1,5; 2,3; 100,1…), но мы не используем их в переводах AdGuard.
 
 ## Плюральные формы в переводах AdGuard {#translations}
 
@@ -116,7 +116,7 @@ sidebar_position: 4
 
 Если в языке три формы множественного числа, в переводе должно быть три шаблона с двумя вертикальными линиями между ними.
 
-Например, если мы переведём эту же фразу на словацкий, [в котором три плюральных формы](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html), правильный перевод будет выглядеть так:
+For example, when we translate the above mentioned phrase into Slovak, that according to the rule of [Localization Guide](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) has three word forms, the correct translation will look so:
 
 `Štandartná licencia pre %count% počítač | Štandartná licencia pre %count% počítače | Štandartná licencia pre %count% počítačov`
 

@@ -3,32 +3,22 @@ title: Funktionen
 sidebar_position: 1
 ---
 
-## Allgemein
+- [Allgemein](/adguard-for-mac/features/general.md)
 
-Grundlegende Funktionen, einschließlich Benachrichtigungen, Aktualisierungsintervalle und Protokollierungsstufe
+  Basic features, including notifications, update intervals, and logging level
 
-[Allgemein](/adguard-for-mac/features/general.md)
+- [Filter](/adguard-for-safari/features/filters.md)
 
-## Filter
+  Verschiedene Filter, mit denen Sie die Werbeblockierung anpassen können
 
-Verschiedene Filter, mit denen Sie die Werbeblockierung anpassen können
+- [Inhaltsblocker](/adguard-for-safari/features/content-blockers/content-blockers.md)
 
-[Filter](/adguard-for-safari/features/filters.md)
+  Sechs thematische Inhaltsblocker, die den Beschränkungen von Apple entsprechen
 
-## Inhaltsblocker
+- [Benutzerregeln](/adguard-for-safari/features/rules.md)
 
-Sechs thematische Inhaltsblocker, die den Beschränkungen von Apple entsprechen
+  Benutzerdefinierte Filterregeln zur Feinabstimmung der Werbeblockierung
 
-[Inhaltsblocker](/adguard-for-safari/features/content-blockers/content-blockers.md)
+- [Über uns](/adguard-for-safari/features/about.md)
 
-## Benutzerregeln
-
-Benutzerdefinierte Filterregeln zur Feinabstimmung der Werbeblockierung
-
-[Benutzerregeln](/adguard-for-safari/features/rules.md)
-
-## Über uns
-
-Ein Abschnitt mit Links zu Datenschutzdokumenten, dem GitHub-Repository und dem Versionsverlauf
-
-[Über uns](/adguard-for-safari/features/about.md)
+  Ein Abschnitt mit Links zu Datenschutzdokumenten, dem GitHub-Repository und dem Versionsverlauf

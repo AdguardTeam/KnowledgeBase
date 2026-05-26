@@ -23,7 +23,7 @@ Je nach Betriebssystem des Geräts, dessen Datenverkehr Sie filtern möchten, be
 
 1. Stellen Sie sicher, dass der AdGuard-Schutz aktiviert ist. Auf einem Windows-Computer markieren Sie das Kästchen **AdGuard als HTTP-Proxy verwenden** im Tab **Netzwerk** in den Einstellungen. Für Mac gehen Sie zu **Einstellungen** → **Voreinstellungen** → **Netzwerk** und aktivieren den **HTTP-Proxy**.
 
-1. Folgen Sie auf demselben Computer mit AdGuard diesem Link: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. On the same computer with AdGuard, follow this link: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Klicken Sie auf die Schaltfläche **Herunterladen**. Wenn der Download nicht startet, versuchen Sie einen anderen Browser, z. B. Firefox.
 
@@ -65,7 +65,7 @@ Je nach Betriebssystem des Geräts, dessen Datenverkehr Sie filtern möchten, be
 
 1. Stellen Sie sicher, dass der AdGuard-Schutz aktiviert ist. Auf einem Windows-Computer markieren Sie das Kästchen **AdGuard als HTTP-Proxy verwenden** im Tab **Netzwerk** in den Einstellungen. Für Mac gehen Sie zu **Einstellungen** → **Voreinstellungen** → **Netzwerk** und aktivieren den **HTTP-Proxy**.
 
-1. Folgen Sie diesem Link in einem Webbrowser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. Follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Klicken Sie auf die Schaltfläche **Herunterladen**. Wenn der Download nicht startet, versuchen Sie einen anderen Browser, z. B. Firefox.
 
@@ -97,7 +97,7 @@ Je nach Betriebssystem des Geräts, dessen Datenverkehr Sie filtern möchten, be
 
 1. Stellen Sie sicher, dass der AdGuard-Schutz aktiviert ist. Auf einem Windows-Computer markieren Sie das Kästchen **AdGuard als HTTP-Proxy verwenden** im Tab **Netzwerk** in den Einstellungen. Für Mac gehen Sie zu **Einstellungen** → **Voreinstellungen** → **Netzwerk** und aktivieren den **HTTP-Proxy**.
 
-1. Folgen Sie auf dem Computer mit AdGuard diesem Link in einem Browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Klicken Sie auf die Schaltfläche **Herunterladen**. Wenn der Download nicht startet, versuchen Sie einen anderen Browser, z. B. Firefox.
 
@@ -117,7 +117,7 @@ Je nach Betriebssystem des Geräts, dessen Datenverkehr Sie filtern möchten, be
 
 1. Stellen Sie sicher, dass der AdGuard-Schutz aktiviert ist. Auf einem Windows-Computer markieren Sie das Kästchen **AdGuard als HTTP-Proxy verwenden** im Tab **Netzwerk** in den Einstellungen. Für Mac gehen Sie zu **Einstellungen** → **Voreinstellungen** → **Netzwerk** und aktivieren den **HTTP-Proxy**.
 
-1. Folgen Sie auf dem Computer mit AdGuard diesem Link in einem Browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Klicken Sie auf die Schaltfläche **Herunterladen**. Wenn der Download nicht startet, versuchen Sie einen anderen Browser, z. B. Firefox.
 

@@ -3,32 +3,22 @@ title: 功能
 sidebar_position: 1
 ---
 
-## 常规
+- [常规](adguard-for-safari/features/general.md)
 
-基本功能，包括通知、更新间隔和日志记录级别。
+  Basic features, including notifications, update intervals, and logging level
 
-[常规](adguard-for-safari/features/general.md)
+- [过滤器](/adguard-for-safari/features/filters.md)
 
-## 过滤器
+  不同的过滤器允许用户自定义广告拦截。
 
-不同的过滤器允许用户自定义广告拦截。
+- [内容拦截器](/adguard-for-safari/features/content-blockers/content-blockers.md)
 
-[过滤器](/adguard-for-safari/features/filters.md)
+  符合 Apple 限制的六个主题内容拦截器。
 
-## 内容拦截器
+- [用户规则](/adguard-for-safari/features/rules.md)
 
-符合 Apple 限制的六个主题内容拦截器。
+  自定义过滤规则以微调广告拦截。
 
-[内容拦截器](/adguard-for-safari/features/content-blockers/content-blockers.md)
+- [关于](/adguard-for-safari/features/about.md)
 
-## 用户规则
-
-自定义过滤规则以微调广告拦截。
-
-[用户规则](/adguard-for-safari/features/rules.md)
-
-## 关于
-
-一个包含隐私文档、GitHub 存储库和版本历史链接的部分。
-
-[关于](/adguard-for-safari/features/about.md)
+  一个包含隐私文档、GitHub 存储库和版本历史链接的部分。

@@ -33,7 +33,7 @@ Here are some common issues:
 
 1. 运行 AdGuard。
 
-1. 转到 [http://local.adguard.org/cert](http://local.adguard.org/cert) 并单击「*下载*」按钮。 浏览器应开始下载 **cert.cer** 文件。
+1. Go to [https://local.adguard.org/cert](https://local.adguard.org/cert) and click the *Download* button. 浏览器应开始下载 **cert.cer** 文件。
 
     :::note
 

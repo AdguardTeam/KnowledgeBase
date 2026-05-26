@@ -27,7 +27,7 @@ Acestea sunt două erori diferite cu soluții foarte asemănătoare. Așa cum su
 
 - Dezinstalați unele programe sau ștergeți fișierele inutile de pe disc la care încercați să instalați AdGuard.
 
-- Descărcați, instalați și rulați [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), un program gratuit de la Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstalled programs and such. Acesta va ajuta la curățarea unei părți din spațiul pe disc.
+- Download, install, and run [AdwCleaner](https://www.bleepingcomputer.com/download/adwcleaner/), a free piece of software by Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstalled programs and such. Acesta va ajuta la curățarea unei părți din spațiul pe disc.
 
 - Reporniți computerul. Uneori, fișierele temporare pot ocupa o cantitate considerabilă de spațiu pe disc, iar repornirea PC-ului este cea mai fiabilă modalitate de a scăpa de ele.
 

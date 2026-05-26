@@ -47,58 +47,58 @@ Zapnutí této možnosti umožní AdGuardu okamžitě filtrovat provoz, dokonce 
 
 ## Filtrovat localhost
 
-Enable this to allow AdGuard to filter loopback (localhost) traffic, which some apps use to communicate within the system. If AdGuard VPN is installed, this setting is always on because the VPN requires it to work properly.
+Povolte tuto možnost, aby AdGuard mohl filtrovat provoz loopback (localhost), který některé aplikace používají ke komunikaci v rámci systému. Pokud je nainstalována AdGuard VPN, je toto nastavení vždy zapnuté, protože VPN to vyžaduje pro správnou funkci.
 
 ## Zachytit HAR
 
-This is for debugging only. When enabled, AdGuard will create a HAR file (HTTP Archive 1.2 format) with detailed info about all filtered requests. You can open it in apps like Fiddler.
+Slouží pouze k ladění. Je-li tato funkce povolena, vytvoří AdGuard soubor HAR (formát Archiv HTTP 1.2) s podrobnými informacemi o všech filtrovaných požadavcích. Můžete jej otevřít v aplikacích jako Fiddler.
 
-Keep in mind: it may slow down your browsing.
+Mějte na paměti: může to zpomalit vaše prohlížení.
 
-## Show QUIC in the filtering log
+## Zobrazit QUIC v záznamu filtrování
 
-When enabled, AdGuard will include QUIC protocol traffic in the filtering log — but only for blocked requests.
+Pokud je tato funkce povolena, AdGuard zahrne provoz protokolu QUIC do logu filtrování, ale pouze u blokovaných požadavků.
 
 ## Blokovat Java
 
-Some websites still use Java plug-ins, which rely on outdated and insecure technology. You can disable these plug-ins for security.
+Některé webové stránky stále používají pluginy Java, které jsou založeny na zastaralé a nezabezpečené technologii. Z bezpečnostních důvodů můžete tyto pluginy deaktivovat.
 
-Using the _Block Java_ option does not affect JavaScript — it will remain enabled.
+Použití možnosti _Blokovat Java_ nemá vliv na JavaScript — ten zůstane povolený.
 
-## Blocking mode for DNS rules
+## Režim blokování pro pravidla DNS
 
-Choose how AdGuard responds when a domain is blocked by a DNS rule based on the [hosts-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
+Zvolte, jak bude AdGuard reagovat, když je doména blokována pravidlem DNS na základě syntaxe [hosts-style](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
-- Return a `REFUSED` error
-- Return a `NXDOMAIN` error
-- Return a custom IP address
+- Vrátit chybu `REFUSED`
+- Vrátit chybu `NXDOMAIN`
+- Vrátit vlastní IP adresu
 
 ### Vlastní IPv4 adresa
 
-If _Custom IP address_ is selected in _Blocking mode for DNS rules_, this IP address will be returned in response to blocked A requests. If none are specified, AdGuard will reply with the default REFUSED error.
+Pokud je v _Režimu blokování pro pravidla DNS_ vybrána možnost _Vlastní IP adresa_, bude tato IP adresa vrácena jako odpověď na blokované požadavky A. Pokud nejsou zadáno nic, AdGuard odpoví výchozí chybou REFUSED.
 
 ### Vlastní IPv6 adresa
 
-If _Custom IP address_ is selected in _Blocking mode for DNS rules_, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default REFUSED error.
+Pokud je v _Režimu blokování pro pravidla DNS_ vybrána možnost _Vlastní IP adresa_, bude tato IP adresa vrácena jako odpověď na blokované požadavky AAAA. Pokud nejsou zadáno nic, AdGuard odpoví výchozí chybou REFUSED.
 
 ## Záložní server
 
-Set backup DNS servers here. AdGuard will use them if the main DNS server doesn’t respond within the timeout you set. You can:
+Zde nastavte záložní DNS servery. AdGuard je použije, pokud hlavní server DNS neodpoví ve lhůtě, kterou jste nastavili. Můžete:
 
-- Use your system’s default DNS servers
-- Add custom fallback servers
-- Or choose not to use fallback servers at all
+- Použít výchozí systémové DNS servery
+- Přidat vlastní záložní servery
+- Nebo se rozhodnout záložní servery vůbec nepoužívat
 
-## DNS server timeout
+## Časový limit DNS serveru
 
-Specify how long (in milliseconds) AdGuard should wait for a DNS response before switching to a fallback server. If left empty or invalid, the default is 5000 ms (5 seconds).
+Určete, jak dlouho (v milisekundách) má AdGuard čekat na odpověď DNS, než přepne na záložní server. Pokud je pole prázdné nebo neplatné, výchozí hodnota je 5000 ms (5 sekund).
 
-## Custom bootstrap addresses
+## Vlastní adresy bootstrap
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in DNS protection. Such a “middle ground” is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). V tomto případě funguje bootstrap jako překladač a převádí písmena na čísla, kterým systém rozumí.
+Bootstrap je zprostředkující DNS server používaný k získání IP adresy zabezpečeného DNS serveru, který jste vybrali dříve v menu DNS ochrana. Taková "střední cesta" je nutná při použití protokolů, které označují adresu serveru písmeny (například DNS-over-TLS). V tomto případě funguje bootstrap jako překladač a převádí písmena na čísla, kterým systém rozumí.
 
-But if needed, you can specify different IP addresses here — they’ll be tried in the order from top to bottom. If none work or nothing is entered, AdGuard will fall back to system defaults.
+V případě potřeby však můžete zde zadat různé IP adresy — budou vyzkoušeny v pořadí shora dolů. Pokud žádná nefunguje nebo není zadána žádná, AdGuard se vrátí k výchozím nastavením systému.
 
 ## DNS výjimky
 
-Domains listed here bypass AdGuard DNS servers. Their requests go through the system’s default resolver, and AdGuard does not apply any blocking rules to them.
+Domény uvedené zde obcházejí servery AdGuard DNS. Jejich požadavky procházejí výchozím řešitelem systému a AdGuard na ně neuplatňuje žádná pravidla blokování.

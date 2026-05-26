@@ -112,8 +112,8 @@ Host: example.org`
 
 umgewandelt in
 
-`GET /foo/bar/ HTTP/1.1
-Host: example.org`
+`GET  /foo/bar/ HTTP/1.1
+Host:example.org`
 
 Diese Option wird nur angewendet, wenn die Option *Schutz vor DPI* im Privatsphärenmodus aktiviert ist.
 
