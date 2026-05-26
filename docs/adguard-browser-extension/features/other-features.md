@@ -13,7 +13,7 @@ Apart from the large key modules of AdGuard Browser Extension, there are several
 
 ## General {#general}
 
-*General* tab contains the main settings of the extension and lets you control its basic filtering behavior. Here you can allow search ads and [self‑promotion on websites](/general/ad-filtering/search-ads/), enable automatic activation of language‑specific filters, set the filters’ update interval, and turn on [protection against phishing and malicious websites](/general/browsing-security/).
+The *General* tab contains the main extension settings and lets you control its basic filtering behavior. Here you can allow search ads and [self‑promotion on websites](/general/ad-filtering/search-ads/), enable automatic activation of language-specific filters, set the update interval for the filters, and turn on [protection against phishing and malicious websites](/general/browsing-security/).
 
 ![General *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/general_new.png)
 
