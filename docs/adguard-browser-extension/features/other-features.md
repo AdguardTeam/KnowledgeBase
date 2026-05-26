@@ -13,19 +13,21 @@ Apart from the large key modules of AdGuard Browser Extension, there are several
 
 ## General {#general}
 
-In the *General* tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters' update interval, etc.
+The *General* tab contains the main extension settings and lets you control its basic filtering behavior. Here you can allow search ads and [self‑promotion on websites](/general/ad-filtering/search-ads/), enable automatic activation of language-specific filters, set the update interval for the filters, and turn on [protection against phishing and malicious websites](/general/browsing-security/).
 
-![General *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
+![General *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/general_new.png)
 
-Besides, here you can enable [*Phishing and malware protection*](/general/browsing-security).
+You can also save your current configuration and quickly apply it to another browser or device. To do this, click *Share settings* in the *General* tab: the extension will generate a special link and a QR code that contain your current settings. You can either copy the link and open it in a browser, or scan the QR code on a device with AdGuard to open the link directly in the app. You will then see a prompt to apply the shared configuration so that you can restore the same setup after reinstalling your browser or on a new device.
 
-You can save your settings configuration by clicking the *Export settings* button. The settings will be saved as a .json file. To import the previously saved settings configuration, use the *Import settings* function. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers.
+If needed, you can also share this link with other people or attach it to a support request so the team can see your exact configuration.
+
+In addition, you can still export your settings to a .json file by clicking *Export settings* and import them via the *Import settings* option. This makes it easy to switch between different configuration profiles or move them between browsers.
 
 ## Additional settings {#misc}
 
 The *Additional settings* section contains a range of various settings that are related to the ad blocking process and application usability.
 
-![Additional settings *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
+![Additional settings *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional_new.png)
 
 From this tab, you can invert the allowlist and add the AdGuard item to the browser’s context menu. You can also enable the display of the number of blocked ads on the AdGuard icon and notifications about extension updates. Additionally, this section lets you enable notifications about the AdGuard app, open the *Filtering log*, clear the statistics of blocked ads and trackers, or reset the settings.
 
@@ -43,4 +45,4 @@ The *Send anonymized usage data* option can also be enabled on the post-installa
 
 In the *About* section, you can find info about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
 
-![About *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+![About *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/about_new.png)
