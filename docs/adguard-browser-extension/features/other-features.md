@@ -17,7 +17,7 @@ The *General* tab contains the main extension settings and lets you control its 
 
 ![General *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/general_new.png)
 
-You can also save your current configuration and quickly apply it in another browser or on another device. To do this, click *Share settings* in the *General* tab: the extension will generate a special link and a QR code that contain your current settings. You can either copy the link and open it in a browser, or scan the QR code on a device that has AdGuard installed to open it directly in the app. You will then see a prompt to apply the shared configuration so you can restore the same setup after reinstalling your browser or on a new device.
+You can also save your current configuration and quickly apply it to another browser or device. To do this, click *Share settings* in the *General* tab: the extension will generate a special link and a QR code that contain your current settings. You can either copy the link and open it in a browser, or scan the QR code on a device with AdGuard to open the link directly in the app. You will then see a prompt to apply the shared configuration so that you can restore the same setup after reinstalling your browser or on a new device.
 
 If needed, you can also share this link with other people or attach it to a support request so the team can see your exact configuration.
 
