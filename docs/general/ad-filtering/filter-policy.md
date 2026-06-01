@@ -112,6 +112,7 @@ AdGuard tracking protection filters include:
 
 - AdGuard Tracking Protection filter
 - AdGuard URL Tracking filter
+- AdGuard Mail Tracking Protection filter
 
 ### The purpose of these filters
 
@@ -129,6 +130,8 @@ What it blocks:
 - Privacy Sandbox functionality in Google Chrome and its forks used for tracking (Google Topics API, the Protected Audience API)
 
 The **URL Tracking filter** is designed to remove tracking parameters from web addresses
+
+The **Mail Tracking Protection filter** removes tracking pixels embedded in emails to prevent senders from monitoring when you open messages.
 
 ### Limitations and exceptions
 
