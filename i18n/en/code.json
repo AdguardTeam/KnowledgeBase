@@ -1,4 +1,12 @@
 {
+  "siteConfig.title": {
+    "message": "AdGuard Knowledge Base",
+    "description": "The site title used in the browser tab and metadata"
+  },
+  "siteConfig.tagline": {
+    "message": "Knowledge Base for AdGuard products",
+    "description": "The site tagline used in meta description"
+  },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
@@ -484,13 +492,5 @@
   "theme.docs.DocCard.categoryDescription.plurals": {
     "message": "1 item|{count} items",
     "description": "The default description for a category card in the generated index about how many items this category includes"
-  },
-  "siteConfig.title": {
-    "message": "AdGuard Knowledge Base",
-    "description": "The site title used in the browser tab and metadata"
-  },
-  "siteConfig.tagline": {
-    "message": "Knowledge Base for AdGuard products",
-    "description": "The site tagline used in meta description"
   }
 }
