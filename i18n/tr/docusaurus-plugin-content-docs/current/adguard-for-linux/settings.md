@@ -302,3 +302,46 @@ adguard-cli import-settings -i "/path/to/settings.zip"
 ```
 
 The `-i` or `--input` flag is required and specifies the path to the settings archive to import.
+
+## AdGuard Tarayıcı Asistanı
+
+AdGuard Tarayıcı Asistanı, AdGuard korumasını doğrudan tarayıcınızdan yönetmenize olanak tanır.
+
+![Asistan penceresi \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
+
+### Nasıl çalışır
+
+AdGuard Browser Assistant is a browser extension. Linux için AdGuard'ı hızlı bir şekilde yönetmenizi sağlar:
+
+- Enable or disable protection for a specific website (the toggle under the website name)
+- Pause protection for 30 seconds
+- Disable protection (the pause icon in the upper right corner)
+- Manually block an ad
+- Report incorrect blocking
+- Manage HTTPS filtering (the lock icon next to the website name)
+
+### Nasıl yüklenir
+
+To install Native Messaging manifests for browser integration, use:
+
+```sh
+adguard-cli install-browser-integration
+```
+
+To uninstall the manifests, use:
+
+```sh
+adguard-cli install-browser-integration --uninstall
+```
+
+**Install AdGuard Browser Assistant extension**:
+
+1. Open the [Assistant page](https://adguard.com/adguard-assistant/overview.html).
+2. Tarayıcı adınızın altında _Yükle_ öğesini seçin.
+3. Install Assistant from your browser’s extension store.
+
+:::info Uyumluluk
+
+Support for AdGuard Browser Assistant is available starting from AdGuard for Linux v1.4.
+
+:::

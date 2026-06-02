@@ -1,4 +1,12 @@
 {
+  "siteConfig.title": {
+    "message": "Base de connaissances AdGuard",
+    "description": "The site title used in the browser tab and metadata"
+  },
+  "siteConfig.tagline": {
+    "message": "Base de connaissances pour les produits AdGuard",
+    "description": "The site tagline used in meta description"
+  },
   "theme.ErrorPageContent.title": {
     "message": "Cette page a planté.",
     "description": "The title of the fallback page when the page crashed"

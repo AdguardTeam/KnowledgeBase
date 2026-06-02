@@ -1,15 +1,15 @@
 ---
-title: Starting AdGuard for Linux automatically
+title: Automatické spuštění AdGuardu pro Linux
 sidebar_position: 1
 ---
 
-If you want AdGuard CLI to start automatically, configure it as a systemd service. This allows AdGuard protection to launch either at login or at system startup. Choose the option that best fits your needs.
+Chcete-li, aby se AdGuard CLI spouštěl automaticky, nastavte jej jako službu systemd. Díky tomu se ochrana AdGuard spustí buď při přihlášení, nebo při spuštění systému. Vyberte možnost, která nejlépe vyhovuje vašim potřebám.
 
-## Start AdGuard CLI at login
+## Spustit AdGuard CLI při přihlášení
 
-To start AdGuard CLI automatically at login, create a user-level systemd service.
+Chcete-li spouštět AdGuard CLI automaticky při přihlášení, vytvořte službu systemd na úrovni uživatele.
 
-1. Create the service file `~/.config/systemd/user/adguard-cli.service` and add the following configuration:
+1. Vytvořte soubor služby `~/.config/systemd/user/adguard-cli.service` a přidejte následující konfiguraci:
 
 ```ini
 [Unit]
@@ -31,18 +31,18 @@ RemainAfterExit=yes
 WantedBy=default.target
 ```
 
-1. Run the following commands to enable the service:
+1. Spusťte následující příkazy pro povolení služby:
 
 ```sh
 systemctl --user daemon-reload
 systemctl --user enable --now adguard-cli
 ```
 
-## Start AdGuard CLI at system startup
+## Spustit AdGuard CLI při spuštění systému
 
-If you want AdGuard protection to start at system startup, create a system-level service.
+Chcete-li, aby se ochrana AdGuard spouštěla při startu systému, vytvořte službu na systémové úrovni.
 
-1. Create the service file `/etc/systemd/system/adguard-cli.service` and add the following configuration:
+1. Vytvořte soubor služby `/etc/systemd/system/adguard-cli.service` a přidejte následující konfiguraci:
 
 ````ini
 [Unit]
@@ -64,9 +64,9 @@ User=username
 [Install]
 WantedBy=multi-user.target
 
-In the `User=username` parameter, replace `username` with your Linux username.
+V parametru `User=username` nahraďte `username` vsším uživ. jménem Linux.
 
-1. Run the following commands to enable the service:
+1. Spusťte následující příkazy a službu povolte:
 
 ```sh
 systemctl daemon-reload

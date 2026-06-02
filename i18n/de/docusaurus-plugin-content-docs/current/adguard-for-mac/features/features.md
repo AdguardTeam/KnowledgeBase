@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Mac, einem multifunktionalen Werbeblocker,
 
 - [Hauptfenster](/adguard-for-mac/features/main.md)
 
-  Main screen with statistics on blocked ads and trackers and access to main settings
+  Hauptbildschirm mit Statistiken zu blockierten Anzeigen und Trackern sowie Zugriff auf die Haupteinstellungen
 
 - [Allgemein](/adguard-for-mac/features/general.md)
 

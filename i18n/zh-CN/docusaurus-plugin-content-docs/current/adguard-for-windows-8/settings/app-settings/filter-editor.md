@@ -1,24 +1,24 @@
 ---
-title: Filter editor
+title: 过滤器编辑器
 sidebar_position: 2
 ---
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+本文适用于 Windows 版的 AdGuard v8.0，一款全面的广告拦截器，可在系统层面保护您的设备。 这是一个仍在开发中的 Beta 测试版本。 要试用，请下载[适用于 Windows 的 AdGuard 测试版](https://agrd.io/windows_beta)。
 
 :::
 
-![Filter editor](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/editor.png)
+![过滤编辑器](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/editor.png)
 
-The Filter editor is a tool that allows you to view and manage filters at the level of individual rules. Filters are combined into thematic categories: _Ad Blocking_, _Privacy_, _Language-specific_ filters, _Custom_, and _Other_.
+过滤器编辑器是一个允许您在单条规则层面查看和管理过滤器的工具。 过滤器按主题分类：广告拦截、隐私、语言特定过滤器、自定义和其他。
 
-With the Filter editor, you can:
+使用过滤器编辑器，您可以：
 
-- See all the filters that are currently enabled
+- 查看当前启用的所有过滤器
 
-- Edit existing filtering rules, add your own custom rules, or import ready-to-use ones
+- 编辑现有过滤规则、添加自己的自定义规则或导入现成规则
 
-The Filter editor is especially useful for advanced users who want to fine-tune ad blocking by precisely controlling what is blocked or allowed. If you’re not familiar with creating your own rules, we have an article to help you learn how.
+过滤器编辑器对于希望通过精细控制拦截或放行内容来微调广告拦截效果的高级用户尤为有用。 如果您不熟悉如何创建自己的规则，我们有一篇文章可帮助您学习。
 
-[How to create own rules](/general/ad-filtering/create-own-filters/)
+[如何创建自定义规则](/general/ad-filtering/create-own-filters/)

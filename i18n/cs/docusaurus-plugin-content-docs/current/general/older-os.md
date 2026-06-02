@@ -1,49 +1,49 @@
 ---
-title: Installing AdGuard on older OS versions
+title: Instalace AdGuardu na starších verzích OS
 sidebar_position: 10
 ---
 
-If your device runs an older operating system, you may not be able to install the latest version of AdGuard. If this is the case, you can download an earlier, compatible version of the app using the links below.
+Pokud vaše zařízení používá starší operační systém, nemusí být možné nainstalovat nejnovější verzi aplikace AdGuard. V takovém případě si můžete pomocí níže uvedených odkazů stáhnout starší, kompatibilní verzi aplikace.
 
 :::note
 
-Older versions of the app may not include the latest features and may no longer receive updates.
+Starší verze aplikace nemusí obsahovat nejnovější funkce a nemusí již dostávat aktualizace.
 
 :::
 
 ## Android
 
-AdGuard Ad Blocker for Android and Android TV require **Android 9 or later**.
+Blokátor reklam AdGuard pro Android a Android TV vyžaduje **Android 9 a novější**.
 
-If your device runs an older Android version, you can install an earlier version of the app:
+Pokud má vaše zařízení starší verzi systému Android, můžete si nainstalovat starší verzi aplikace:
 
 - https://agrd.io/android-older-version
 
-Download the `.apk` file and install the app as usual.
+Stáhněte soubor `.apk` a nainstalujte aplikaci obvyklým způsobem.
 
 :::note
 
-To install the `.apk` file, you may need to allow [installation from unknown sources](https://adguard.com/kb/adguard-for-android/installation/#installation) in your Android settings.
+Chcete-li nainstalovat soubor `.apk`, možná budete muset v nastavení Androidu povolit [instalaci z neznámých zdrojů](https://adguard.com/kb/adguard-for-android/installation/#installation).
 
 :::
 
 ## iOS
 
-AdGuard Ad Blocker requires **iOS 15.4 or later**.
+Blokátor reklam AdGuard vyžaduje **iOS 15.4 a novější**.
 
 :::note
 
-Apple does not allow installing older app versions manually. If your device runs an older iOS version, AdGuard may not be available for installation.
+Apple neumožňuje ruční instalaci starších verzí aplikací. Pokud vaše zařízení používá starší verzi systému iOS, nemusí být možné aplikaci AdGuard nainstalovat.
 
 :::
 
 ## macOS
 
-Starting with AdGuard for Mac v2.18 beta, the minimum supported system version is **macOS 12 Monterey**.
+Od verze AdGuard pro Mac v2.18 beta je minimální podporovaná verze systému **macOS 12 Monterey**.
 
-If your Mac runs an older version of macOS, install one of the following releases:
+Pokud váš Mac používá starší verzi systému macOS, nainstalujte jednu z následujících verzí:
 
-- macOS 10.9 and older (64-bit only)
+- macOS 10.9 a starší (pouze 64-bit)
   https://agrd.io/macos-10-9
 
 - macOS 10.12
@@ -55,13 +55,13 @@ If your Mac runs an older version of macOS, install one of the following release
 - macOS 10.15–11
   https://agrd.io/macos-10-15-11
 
-Download the `dmg` file and install the app as usual.
+Stáhněte soubor `.dmg` a nainstalujte aplikaci obvyklým způsobem.
 
 ## Windows
 
-Starting with AdGuard for Windows v8.0 requires **Windows 10 or later**.
+Od verze AdGuard pro Windows v8.0 je vyžadován systém **Windows 10 a novější**.
 
-If you are using an older Windows version, you can install one of the following releases:
+Pokud používáte starší verzi systému Windows, můžete nainstalovat jednu z následujících verzí:
 
 - Windows XP
   https://agrd.io/windows-xp
@@ -72,35 +72,35 @@ If you are using an older Windows version, you can install one of the following 
 - Windows 8 and 8.1
   https://agrd.io/windows-8-8-1
 
-Download the `.exe` file and install the app as usual.
+Stáhněte soubor `.exe` a nainstalujte aplikaci obvyklým způsobem.
 
-## AdGuard Mini for Mac (formerly AdGuard for Safari)
+## AdGuard Mini pro Mac (dříve AdGuard pro Safari)
 
-AdGuard Mini for Mac requires **Safari 15 or later (macOS 12 Monterey)**.
+AdGuard Mini pro Mac vyžaduje **Safari 15 a novější (macOS 12 Monterey)**.
 
-If your device cannot run a newer Safari version, try installing beta builds of AdGuard Mini through TestFlight:
+Pokud vaše zařízení nepodporuje novější verzi prohlížeče Safari, zkuste nainstalovat beta verze aplikace AdGuard Mini skrze TestFlight:
 
-- AdGuard Mini on TestFlight
+- AdGuard Mini v TestFlight
   https://agrd.io/adguard_for_safari_testflight
 
 :::note
 
-TestFlight builds are available for a limited time.
+Sestavení TestFlight jsou k dispozici po omezenou dobu.
 
 :::
 
-If your system uses an older Safari version, you can try installing one of the earlier releases:
+Pokud váš systém používá starší verzi prohlížeče Safari, můžete zkusit nainstalovat jednu z dřívějších verzí:
 
-- AdGuard for Safari v1.11.24
+- AdGuard pro Safari v1.11.24
   https://agrd.io/safari_release
 
-- AdGuard for Safari v1.3.3
+- AdGuard pro Safari v1.3.3
   https://agrd.io/safari-1-3-3
 
-- AdGuard for Safari v1.4.1
+- AdGuard pro Safari v1.4.1
   https://agrd.io/safari-1-4-1
 
-- AdGuard for Safari v1.5.2
+- AdGuard pro Safari v1.5.2
   https://agrd.io/safari-1-5-2
 
-Older Safari versions may not support modern content blocking API. If possible, we recommend updating your browser or operating system to the latest version supported by your device.
+Starší verze prohlížeče Safari nemusí podporovat moderní rozhraní API pro blokování obsahu. Pokud je to možné, doporučujeme aktualizovat prohlížeč nebo operační systém na nejnovější verzi, kterou vaše zařízení podporuje.

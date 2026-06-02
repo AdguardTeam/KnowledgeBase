@@ -11,7 +11,7 @@ Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multi
 
 _Configuración_ es la sección que requiere mayor atención. Aquí es donde podrás configurar la aplicación para que cumpla plenamente con tus requisitos: bloquea sólo lo que te molesta, utiliza el servidor DNS del proveedor de confianza, elimina las cookies de terceros, etc.
 
-### General settings
+### Configuración general
 
 Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Además, configuración es el lugar al que acudir si AdGuard para Windows no funciona correctamente y el equipo de soporte te pidió que [recopiles _Logs de depuración_](/adguard-for-windows/solving-problems/adguard-logs.md).
 
@@ -21,7 +21,7 @@ At the very bottom of the screen you will find _Advanced Settings_. Changing som
 
 ![Advanced Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/advanced_settings.png)
 
-### Ad blocking
+### Bloqueador de anuncios
 
 Este es el módulo principal de AdGuard para Windows que elimina anuncios de los sitios web que visitas y de las aplicaciones instaladas en tu dispositivo. Para filtrar publicidad y contenido que amenaza la privacidad, como banners, ventanas emergentes o rastreadores, AdGuard utiliza diferentes filtros: grupos de reglas con un propósito similar escrito con una [sintaxis especial](/general/ad-filtering/create-own-filters). Para comprender qué son los filtros y cómo funcionan, lee [este artículo](/general/ad-filtering/how-ad-blocking-works).
 
@@ -64,7 +64,7 @@ En caso de que desees obtener más información sobre la Seguridad de navegació
 
 ### DNS Protection
 
-There are three significant reasons why you might want to explore the DNS protection settings. First, to avoid being tracked by your ISP. Every time you open a website, for example `google.com`, your browser sends a request to a DNS server to get the IP address of the website in return. Usually, the DNS server belongs to your ISP, which allows them to track your online activity. Second, to encrypt you DNS traffic. And the third one is to [block content on DNS level](https://adguard-dns.io/kb/general/dns-filtering/).
+There are three significant reasons why you might want to explore the DNS protection settings. First, to avoid being tracked by your ISP. Cada vez que abres un sitio web, por ejemplo "google.com", tu navegador envía una solicitud a un servidor DNS para obtener a cambio la dirección IP del sitio web. Usually, the DNS server belongs to your ISP, which allows them to track your online activity. Second, to encrypt you DNS traffic. And the third one is to [block content on DNS level](https://adguard-dns.io/kb/general/dns-filtering/).
 
 ![DNS Protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/dns_protection.png)
 
@@ -79,7 +79,7 @@ Starting with v7.20, you can also add filters by simply selecting them from a li
 
 ![DNS filters \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
 
-### Parental control
+### Control parental
 
 There are several websites to which access should be restricted from a PC used by children. This task is accomplished by _Parental control_.
 

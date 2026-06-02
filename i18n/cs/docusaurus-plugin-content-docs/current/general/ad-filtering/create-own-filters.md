@@ -73,7 +73,7 @@ Pravidla filtrování podporují řadu modifikátorů, které umožňují doladi
 
 **Toto pravidlo blokuje:**
 
-- `https://example.org/script.js` if this script is loaded from `example.com`.
+- `https://example.org/script.js`, pokud je tento skript načten z `example.com`.
 
 **Toto pravidlo neblokuje:**
 
@@ -86,7 +86,7 @@ Pravidla filtrování podporují řadu modifikátorů, které umožňují doladi
 
 **Toto pravidlo odblokuje:**
 
-- `https://example.org/banner.png` even if there is a blocking rule for this address.
+- `https://example.org/banner.png`, i když pro tuto adresu existuje pravidlo blokování.
 
 Pravidla blokování s modifikátorem [`$important`](#important-modifier) mohou přepsat výjimky.
 
@@ -116,8 +116,8 @@ AdGuard [rozšiřuje CSS](#extended-css-selectors) a umožňuje tak vývojářů
 | Attribute selector           | `div[class="banners"]`            | Shoduje se se všemi prvky `div` s atributem `class` **přesně rovným** k `banners`.<br/>![Attribute selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr.png)                        |
 | Attribute substring selector | `div[class^="advert1"]`           | Shoduje se se všemi prvky `div` s atributem `class` **začínajícím na** řetězec `advert1`.<br/>![Attribute substring selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png) |
 | Attribute substring selector | `div[class$="banners_ads"]`       | Shoduje se se všemi prvky `div` s atributem `class` **končícím na** řetězec `banners_ads`.<br/>![Attribute substring selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png)  |
-| Attribute substring selector | `a[href^="https://example.com/"]` | Matches all links that are loaded from `https://example.com/` domain.<br/>![Attribute substring selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_start.png)                           |
-| Attribute selector           | `a[href="https://example.com/"]`  | Matches all links to **exactly** the `https://example.com/` address.<br/>![Attribute selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_equal.png)                                      |
+| Attribute substring selector | `a[href^="https://example.com/"]` | Shoduje se se všemi odkazy načtenými z domény `https://example.com/`.<br/>![Attribute substring selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_start.png)                           |
+| Attribute selector           | `a[href="https://example.com/"]`  | Shoduje se se všemi odkazy **exactly** adresy `https://example.com/`.<br/>![Attribute selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_equal.png)                                     |
 
 ## Omezení a restrikce
 
@@ -296,9 +296,9 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 ### Speciální znaky {#basic-rules-special-characters}
 
 - **`*`** — zástupný znak. Používá se k reprezentaci libovolné sady znaků. Může to být také prázdný řetězec nebo řetězec libovolné délky.
-- **`||`** — indikace o použití pravidla na zadanou doménu a její subdomény. S tímto znakem nemusíte v masce adresy zadávat konkrétní protokol a subdoménu. It means that `||` stands for `https://*.`, `https://*.`, `ws://*.`, `wss://*.` at once.
+- **`||`** — indikace o použití pravidla na zadanou doménu a její subdomény. S tímto znakem nemusíte v masce adresy zadávat konkrétní protokol a subdoménu. Tj., že `||` znamená `https://*.`, `https://*.`, `ws://*.`, `wss://*.` najednou.
 - **`^`** — oddělovací znak. Oddělovací znak je libovolný znak, mimo písmeno, číslice nebo jeden z následujících znaků: `_` `-` `.` `%`. V tomto příkladu jsou oddělovací znaky zobrazeny tučně: `http:`**`//`**`example.com`**`/?`**`t=1`**`&`**`t2=t3`. Konec adresy je také akceptován jako oddělovací znak.
-- **`|`** — ukazatel na začátku nebo konci adresy. Hodnota závisí na umístění znaku v masce. For example, a rule `swf|` corresponds to `https://example.com/annoyingflash.swf` , but not to `https://example.com/swf/index.html`. `|https://example.org` corresponds to `https://example.org`, but not to `https://domain.com?url=https://example.org`.
+- **`|`** — ukazatel na začátku nebo konci adresy. Hodnota závisí na umístění znaku v masce. Např. pravidlo `swf|` odpovídá `https://example.com/annoyingflash.swf`, ale neodpovídá `https://example.com/swf/index.html`. `|https://example.org` odpovídá `https://example.org`, ale ne `https://domain.com?url=https://example.org`.
 
 :::note
 
@@ -354,7 +354,7 @@ Pravidla se zástupným znakem pro TLD nejsou podporována Blokátorem obsahu Ad
 
 ### Příklady základních pravidel
 
-- `||example.com/ads/*` — a simple rule, which corresponds to addresses like `https://example.com/ads/banner.jpg` and even `https://subdomain.example.com/ads/otherbanner.jpg`.
+- `||example.com/ads/*` — jednoduché pravidlo, které odpovídá adresám typu `https://example.com/ads/banner.jpg` a dokonce i `https://subdomain.example.com/ads/otherbanner.jpg`.
 
 - `||example.org^$third-party` — toto pravidlo blokuje požadavky třetích stran na `example.org` a jejím subdoménám.
 
@@ -568,7 +568,7 @@ Tyto modifikátory nebudou použity, pokud odkazující doména odpovídá pravi
 - `*$cookie,domain=example.org|example.com` zablokuje soubory cookie pro všechny požadavky do a z domény `example.org` a `example.com`.
 - `*$document,domain=example.org|example.com` zablokuje pouze požadavky z `example.org` a `example.com`, ale ne požadavky směřující na tyto domény.
 
-In the following examples it is implied that requests are sent from `https://example.org/page` (the referrer) and the target URL is `https://targetdomain.com/page`.
+V následujících příkladech se předpokládá, že požadavky jsou odesílány z adresy `https://example.org/page` (odkazující adresa), cílová adresa URL je `https://targetdomain.com/page`.
 
 - `page$domain=example.org` bude přiřazena, protože odpovídá doméně odkazu.
 - `page$domain=targetdomain.com` nebude odpovídat, protože neodpovídá doméně odkazujícího webu.
@@ -666,7 +666,7 @@ Tento modifikátor definuje pravidlo, které se vztahuje pouze na adresy odpoví
 
 **Příklady**
 
-- `*/BannerAd.gif$match-case` — this rule will block `https://example.com/BannerAd.gif`, but not `https://example.com/bannerad.gif`.
+- `*/BannerAd.gif$match-case` — toto pravidlo zablokuje `https://example.com/BannerAd.gif`, ale ne `https://example.com/bannerad.gif`.
 
 :::info Kompatibilita
 
@@ -709,7 +709,7 @@ AdGuard se pokusí zavřít kartu prohlížeče s jakoukoli adresou, která odpo
 
 **Příklady**
 
-- `||domain.com^$popup` — if you try to go to `https://domain.com/` from any page in the browser, a new tab in which specified site has to be opened will be closed by this rule.
+- `||domain.com^$popup` — pokud se pokusíte přejít na `https://domain.com/` z libovolné stránky v prohlížeči, nová karta, ve které má být zadaný web otevřen, bude tímto pravidlem zavřena.
 
 ##### omezení modifikátoru `$popup` {#popup-modifier-limitations}
 
@@ -736,7 +736,7 @@ Požadavky bez odkazovače jsou také považovány za vlastní požadavky a na t
 
 **Příklady**
 
-- domain.com$strict-first-party' – toto pravidlo platí pouze pro `domena.com`. For example, a request from `domain.com` to `https://domain.com/icon.ico` is a first-party request. A request from `sub.domain.com` to `https://domain.com/icon.ico` is treated as a third-party one (as opposed to the `$~third-party` modifier).
+- domain.com$strict-first-party' – toto pravidlo platí pouze pro `domena.com`. Např. požadavek z `domain.com` na `https://domain.com/icon.ico` je požadavek vlastní. Požadavek z `sub.domain.com` na `https://domain.com/icon.ico` je považován za požadavek třetí strany (na rozdíl od modifikátoru `$~third-party`).
 
 :::note
 
@@ -758,7 +758,7 @@ Funguje stejně jako modifikátor [`$third-party`](#third-party-modifier), ale z
 
 **Příklady**
 
-- `||domain.com^$strict-thirdparty` — toto pravidlo bude použito na všechny domény, kromě `domain.com`. An example of a third-party request: `https://sub.domain.com/banner.jpg` (as opposed to the `$third-party` modifier).
+- `||domain.com^$strict-thirdparty` — toto pravidlo bude použito na všechny domény, kromě `domain.com`. Příklad požadavku třetí strany: `https://sub.domain.com/banner.jpg` (na rozdíl od modifikátoru `$third-party`).
 
 Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
@@ -789,13 +789,13 @@ Aby mohla být žádost třetí strany považována za takovou, měla by splňov
 
 **`$third-party`:**
 
-- `||domain.com^$third-party` — toto pravidlo bude použito na všechny domény, kromě `domain.com` a její subdomény. Pravidlo se nikdy neuplatní, pokud neexistuje žádný odkazovač. An example of a third-party request: `https://example.org/banner.jpg`.
+- `||domain.com^$third-party` — toto pravidlo bude použito na všechny domény, kromě `domain.com` a její subdomény. Pravidlo se nikdy neuplatní, pokud neexistuje žádný odkazovač. Příklad požadavku třetí strany: `https://example.org/banner.jpg`.
 
 Pokud existuje modifikátor `$third-party`, pravidlo se použije pouze na požadavky, které nejsou od třetích stran. To znamená, že musí být odeslány ze stejné domény nebo by neměly mít vůbec žádný odkazovač.
 
 **`$~third-party`:**
 
-- `||domain.com$~third-party` — toto pravidlo se vztahuje výhradně na `domain.com`. Example of a non third-party request: `https://sub.domain.com/icon.ico`.
+- `||domain.com$~third-party` — toto pravidlo se vztahuje výhradně na `domain.com`. Příklad požadavku která není podán třetí stranou: `https://sub.domain.com/icon.ico`.
 
 Požadavky bez odkazovače jsou rovněž považovány za požadavky, které nejsou požadavky třetích stran, a jsou na ně aplikována pravidla s modifikátorem `$~third-party`.
 
@@ -1239,7 +1239,7 @@ Blokování cookies a odstranění sledovacích parametrů se provádí pomocí 
 
 - Ochrana před sledováním (dříve Režim utajení) je k dispozici v AdGuardu pro Windows, AdGuardu pro macOS, AdGuardu pro Android a Rozšíření prohlížeče AdGuard pro Firefox a prohlížeče založené na Chromium, kromě AdGuardu pro Chrome Manifest MV3. Všechny ostatní produkty budou ignorovat pravidla s modifikátorem `$stealth`.
 - Pravidla s modifikátorem `$stealth` jsou podporována AdGuardem pro Windows, AdGuardem pro Mac, AdGuardem pro Android a AdGuardem pro Linux s [CoreLibs][] v1.10 nebo novějším a Rozšířením prohlížeče AdGuard s [TSUrlFilter][] v3.0.0 nebo novějším.
-- In AdGuard Browser Extension, *Block WebRTC* is applied globally and cannot be controlled on a per-site basis. Exception rules like `$stealth=webrtc` have no effect.
+- V rozšíření prohlížeče AdGuard se příkaz *Block WebRTC* používá globálně a nelze jej ovládat pro jednotlivé stránky. Pravidla výjimek jako `$stealth=webrtc` nemají žádný účinek.
 
 :::
 
@@ -2565,7 +2565,7 @@ Pravidla s modifikátorem `$removeparam` jsou určena k odstranění parametrů 
 
 **Základní syntaxe**
 
-- `$removeparam=param` removes query parameter with the name `param` from URLs of any request, e.g. a request to `https://example.com/page?param=1&another=2` will be transformed into `https://example.com/page?another=2`.
+- `$removeparam=param` odstraní parametr dotazu s názvem `param` z URL libovolného požadavku, např. požadavek na `https://example.com/page?param=1&another=2` bude transformován na `https://example.com/page?another=2`.
 
 **Regulární výrazy**
 
@@ -2634,11 +2634,11 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 @@||example.com^$removeparam
 ```
 
-With these rules some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) will be stripped out from any request, except that requests to `example.com` will not be stripped at all, e.g. `https://google.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will be transformed to `https://google.com/page`, but `https://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will not be affected by the blocking rule.
+S těmito pravidly bude z jakéhokoli požadavku odstraněno [UTM parametrů](https://en.wikipedia.org/wiki/UTM_parameters), kromě toho, že požadavky na `example.com` nebudou odstraněny vůbec, např. `https://google.com/page?utm_source=s&utm_referrer= fb.com&utm_content=img` bude transformováno na `https://google.com/page`, ale `https://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` nebude ovlivněno pravidlem blokování.
 
 - `$removeparam=utm_source` odstraní parametr dotazu `utm_source` ze všech požadavků.
 
-- `$removeparam=/utm_.*/` removes all `utm_* query` parameters from URL queries of any request, e.g. a request to `https://example.com/page?utm_source=test` will be transformed to `https://example.com/page`.
+- `$removeparam=/utm_.*/` odstraní všechny parametry `utm_* query` z URL libovolného požadavku, např. požadavek na `https://example.com/page?utm_source=test` bude transformován na `https://example.com/page`.
 
 - `$removeparam=/^utm_source=campaign$/` odstraní parametr dotazu `utm_source` s hodnotou rovnou `campaign`. Nemá vliv na ostatní parametry `utm_source`.
 
@@ -2671,8 +2671,7 @@ Pravidla `$removeparam` lze také zakázat pravidly výjimek `$document` a `$url
 [AdGuard pro Chrome MV3][ext-mv3] má některá omezení:
 
 - Regulární výrazy, negace a pravidla seznamu povolených nejsou podporovány.
-- Generická pravidla se uplatňují před specifickými pravidly a přesměrování se provádí pouze jednou. To může zabránit použití následných nebo konkrétnějších přesměrování.
-- Skupina podobných `$removeparam` budou sloučena do jedné. Příklad:
+- Každé pravidlo `$removeparam` s pojmenovaným parametrem má své vlastní deklarativní pravidlo s parametrem `urlFilter` (například `^utm_source=`). Chrome DNR provede přesměrování pouze jednou za relaci, takže bez této funkce by se uplatnilo pouze pravidlo s nejvyšší prioritou a ostatní by byla přeskočena. Param-aware `urlFilter` způsobí, že se každé pravidlo spustí pouze v případě, že je přítomen jeho cílový parametr a vytvoří řetězec přesměrování — na každý skok je odstraněn jeden parametr — dokud nejsou všechny odstraněny. Chrome umožňuje až 20 přesměrování na jednu navigaci, což je dost pro reálné sledovací URL. Tyto skoky nejsou pro uživatele viditelné. Příklad:
 
     ```bash
     ||testcases.adguard.com$xmlhttprequest,removeparam=p1case1
@@ -2693,8 +2692,48 @@ Pravidla `$removeparam` lze také zakázat pravidly výjimek `$document` a `$url
         "transform": {
         "queryTransform": {
           "removeParams": [
-          "p1case1",
-          "p2case1",
+          "p1case1"
+          ]
+        }
+        }
+      }
+      },
+      "condition": {
+      "urlFilter": "||testcases.adguard.com*^p1case1=",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+      }
+    },
+    {
+      "id": 2,
+      "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+        "queryTransform": {
+          "removeParams": [
+          "p2case1"
+          ]
+        }
+        }
+      }
+      },
+      "condition": {
+      "urlFilter": "||testcases.adguard.com*^p2case1=",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+      }
+    },
+    {
+      "id": 3,
+      "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+        "queryTransform": {
+          "removeParams": [
           "P3Case1"
           ]
         }
@@ -2702,11 +2741,10 @@ Pravidla `$removeparam` lze také zakázat pravidly výjimek `$document` a `$url
       }
       },
       "condition": {
-      "urlFilter": "||testcases.adguard.com",
+      "urlFilter": "||testcases.adguard.com*^P3Case1=",
       "resourceTypes": [
         "xmlhttprequest"
-      ],
-      "isUrlFilterCaseSensitive": false
+      ]
       }
     },
     {
@@ -2724,10 +2762,10 @@ Pravidla `$removeparam` lze také zakázat pravidly výjimek `$document` a `$url
       }
       },
       "condition": {
+      "urlFilter": "^p1case2=",
       "resourceTypes": [
         "xmlhttprequest"
-      ],
-      "isUrlFilterCaseSensitive": false
+      ]
       }
     }
     ]
@@ -2774,7 +2812,7 @@ V případě, že jednomu požadavku odpovídá více pravidel `$replace`, použ
 
 **Syntaxe**
 
-In general, `$replace` syntax is similar to replacement with regular expressions [in Perl](https://perldoc.perl.org/perlrequick.html#Search-and-replace).
+Obecně je syntaxe `$replace` podobná nahrazování regulárními výrazy v [Perl](https://perldoc.perl.org/perlrequick.html#Search-and-replace).
 
 ```text
 replace = "/" regexp "/" replacement "/" modifiers
@@ -2798,7 +2836,7 @@ Toto pravidlo má tři části:
 - `replacement` — `\$1<\/VAST>` kde `$` je uvozeno;
 - `modifiers` — `i` pro necitlivé vyhledávání.
 
-You can see how this rule works here: https://regexr.com/3cesk
+Jak toto pravidlo funguje, se můžete podívat zde: https://regexr.com/3cesk
 
 **Vícenásobná pravidla `$replace`**
 
@@ -4700,7 +4738,7 @@ Syntaxe cesty v doméně funguje se všemi typy kosmetických pravidel (`##`, `#
 
 :::info Kompatibilita
 
-Syntaxe Path-in-domain byla zavedena v [CoreLibs][] v1.20.
+Syntaxe Path-in-domain byla zavedena v [CoreLibs][] v1.20, rozšíření prohlížeče v5.4.
 
 :::
 
@@ -5026,9 +5064,9 @@ Slouží k zadání platforem pro použití pravidel. Seznam existujících plat
 
 - `cli` — AdGuard pro Linux — [https://filters.adtidy.org/cli/filters/2.txt](https://filters.adtidy.org/cli/filters/2.txt)
 
-- `android` — AdGuard pro Android — [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
+- `android` — AdGuard pro Android — [https://filters.adtidy.org/android/filters/2_optimized.txt](https://filters.adtidy.org/android/filters/2_optimized.txt)
 
-- `ios` — AdGuard pro iOS — [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
+- `ios` — AdGuard pro iOS — [https://filters.adtidy.org/ios/filters/2_optimized.txt](https://filters.adtidy.org/ios/filters/2_optimized.txt)
 
 - `ext_chromium` — Rozšíření prohlížeče AdGuard pro Chrome — [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
 
@@ -5040,9 +5078,9 @@ Slouží k zadání platforem pro použití pravidel. Seznam existujících plat
 
 - `ext_opera` — Rozšíření prohlížeče AdGuard pro Operu — [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
 
-- `ext_safari` — AdGuard pro Safari — [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
+- `ext_safari` — AdGuard pro Safari — [https://filters.adtidy.org/extension/safari/filters/2_optimized.txt](https://filters.adtidy.org/extension/safari/filters/2_optimized.txt)
 
-- `ext_android_cb` — Blokátor obsahu AdGuard — [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
+- `ext_android_cb` — Blokátor obsahu AdGuard — [https://filters.adtidy.org/extension/android-content-blocker/filters/2_optimized.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2_optimized.txt)
 
 - `ext_ublock` — uBlock Origin — [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
 

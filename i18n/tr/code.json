@@ -1,4 +1,12 @@
 {
+  "siteConfig.title": {
+    "message": "AdGuard Bilgi Tabanı",
+    "description": "The site title used in the browser tab and metadata"
+  },
+  "siteConfig.tagline": {
+    "message": "AdGuard ürünleri için Bilgi Tabanı",
+    "description": "The site tagline used in meta description"
+  },
   "theme.ErrorPageContent.title": {
     "message": "Bu sayfa çöktü.",
     "description": "The title of the fallback page when the page crashed"

@@ -35,7 +35,7 @@ AdGuard considère déjà le pilote TDI comme obsolète, et sa suppression compl
 
 ## Solution permanente
 
-From v8.0 RC, we’ve added experimental support for the SockFilter driver. It fixes the issue by solving conflicts in the WFP stack. [More information](/adguard-for-windows-8/settings/app-settings/network-settings/).
+From v8.0 RC, we’ve added experimental support for the SockFilter driver. It fixes the issue by solving conflicts in the WFP stack. [Plus d'informations](/adguard-for-windows-8/settings/app-settings/network-settings/).
 
 To use it, go to _Settings → Network → Traffic filtering_, enable traffic filtering, and select _SockFilter (Experimental)_ from the list of available options.
 

@@ -231,7 +231,7 @@ This filter is designed to block annoying elements that are not included in othe
 
 **Limitaciones y Excepciones**
 
-This filter may contain rules that are not suitable for all users. Sometimes it is recommended to disable this filter. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
+This filter may contain rules that are not suitable for all users. Sometimes it is recommended to disable this filter. Las decisiones de agregar reglas a este filtro son tomadas por los desarrolladores de filtros, una por una.
 
 ## Filtros de redes sociales
 

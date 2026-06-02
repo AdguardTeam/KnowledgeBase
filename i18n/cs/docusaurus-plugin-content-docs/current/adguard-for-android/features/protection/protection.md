@@ -13,7 +13,7 @@ Karta _Ochrana_ obsahuje následující funkce nebo nastavení. Podrobný člán
 
 - [Blokování reklam](/adguard-for-android/features/protection/ad-blocking.md)
 
-  Settings to block ads in browsers and apps
+  Nastavení blokování reklam v prohlížečích a aplikacích
 
 - [Ochrana před sledováním](/adguard-for-android/features/protection/tracking-protection.md)
 

@@ -1,24 +1,24 @@
 ---
-title: Filter editor
+title: Editor de filtros
 sidebar_position: 2
 ---
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Este artículo describe AdGuard para Windows v8.0, un bloqueador de anuncios integral que protege su dispositivo a nivel del sistema. Esta es una versión beta que aún está en desarrollo. Para probarlo, descarga la [versión beta de AdGuard para Windows](https://agrd.io/windows_beta).
 
 :::
 
-![Filter editor](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/editor.png)
+![Editor de filtros](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/editor.png)
 
-The Filter editor is a tool that allows you to view and manage filters at the level of individual rules. Filters are combined into thematic categories: _Ad Blocking_, _Privacy_, _Language-specific_ filters, _Custom_, and _Other_.
+El editor de filtros es una herramienta que permite visualizar y gestionar filtros a nivel de reglas individuales. Los filtros se combinan en categorías temáticas: _Bloqueo de anuncios_, _Privacidad_, _Filtros específicos del idioma_, _Personalizado_ y _Otros_.
 
-With the Filter editor, you can:
+Con el editor de filtros, puedes:
 
-- See all the filters that are currently enabled
+- Ver todos los filtros que están habilitados actualmente
 
-- Edit existing filtering rules, add your own custom rules, or import ready-to-use ones
+- Editar las reglas de filtrado existentes, añadir tus propias reglas personalizadas o importar reglas listas para usar
 
-The Filter editor is especially useful for advanced users who want to fine-tune ad blocking by precisely controlling what is blocked or allowed. If you’re not familiar with creating your own rules, we have an article to help you learn how.
+El editor de filtros es especialmente útil para usuarios avanzados que desean ajustar con precisión el bloqueo de anuncios controlando exactamente qué se bloquea o se permite. Si no estás familiarizado con crear tus propias reglas, tenemos un artículo que te ayudará a aprender cómo hacerlo.
 
-[How to create own rules](/general/ad-filtering/create-own-filters/)
+[Cómo crear tus propias reglas](/general/ad-filtering/create-own-filters/)
