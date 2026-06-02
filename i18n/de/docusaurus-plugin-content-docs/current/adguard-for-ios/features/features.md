@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker,
 
 - [Safari-Schutz](/adguard-for-ios/features/safari-protection.md)
 
-  Available features and settings in the _Safari protection_ tab: _Filters_, _User rules_, and _Allowlist_
+  Verfügbare Funktionen und Einstellungen im Tab _Safari-Schutz_: _Filter_, _Benutzerregeln_ und _Zulassungsliste_
 
 - [DNS-Schutz](/adguard-for-ios/features/dns-protection/)
 

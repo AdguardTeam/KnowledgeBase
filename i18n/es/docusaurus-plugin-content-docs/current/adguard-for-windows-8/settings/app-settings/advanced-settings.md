@@ -5,100 +5,100 @@ sidebar_position: 4
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Este artículo describe AdGuard para Windows v8.0, un bloqueador de anuncios integral que protege su dispositivo a nivel del sistema. Esta es una versión beta que aún está en desarrollo. Para probarlo, descarga la [versión beta de AdGuard para Windows](https://agrd.io/windows_beta).
 
 :::
 
-The _Advanced settings_ section contains options that go beyond what most users usually need. AdGuard for Windows works perfectly out of the box, but these settings can be useful in special cases or for troubleshooting.
+La sección de _configuración avanzada_ contiene opciones que van más allá de lo que la mayoría de los usuarios suelen necesitar. AdGuard para Windows funciona perfectamente desde el primer momento, pero estos ajustes pueden ser útiles en casos especiales o para la resolución de problemas.
 
 :::caution
 
-Changing advanced settings without understanding them may cause performance issues, break your Internet connection, or affect your security and privacy. Only modify them if you know what you’re doing or if instructed by our support team.
+Cambiar configuraciones avanzadas sin comprenderlas puede causar problemas de rendimiento, interrumpir tu conexión a Internet o afectar tu seguridad y privacidad. Modifícalos solo si sabes lo que estás haciendo o si así lo indica nuestro equipo de soporte.
 
 :::
 
 ## Excluye aplicaciones del filtrado ingresando la ruta completa
 
-If you want AdGuard to skip filtering a specific app, enter its full file path here. You can add multiple apps by separating their paths with semicolons.
+Si quieres que AdGuard omita el filtrado de una aplicación específica, introduce aquí la ruta completa de su archivo. Puedes agregar varias aplicaciones separando sus rutas con punto y coma.
 
 ## Habilitar notificaciones en ventanas emergentes de AdGuard
 
-Habilita esta función para ver las notificaciones en ventanas emergentes de AdGuard. Ellas no aparecen con demasiada frecuencia y solo contienen información importante. You can also reopen the latest notification from the tray menu.
+Habilita esta función para ver las notificaciones en ventanas emergentes de AdGuard. Ellas no aparecen con demasiada frecuencia y solo contienen información importante. También puedes volver a abrir la notificación más reciente desde el menú de la bandeja.
 
 ## Interceptar automáticamente las URL de suscripción a los filtros
 
-When enabled, AdGuard will automatically detect filter subscription links (like `abp:subscribe`) and open a window to help you add them to your filters.
+Cuando esté habilitado, AdGuard detectará automáticamente enlaces de suscripción de filtros (como `abp:subscribe`) y abrirá una ventana para ayudar a añadirlos a tus filtros.
 
 ## Usar modo de redireccionamiento del driver
 
-With this option enabled, AdGuard reroutes all your traffic to a local proxy server for filtering.
+Con esta opción activada, AdGuard redirige todo tu tráfico a un servidor proxy local para filtrar.
 
-If it’s turned off, AdGuard filters traffic directly — without redirecting it. In this mode, Windows sees AdGuard as the only app connecting to the Internet, since all other apps go through it. This can slightly improve performance but may reduce the effectiveness of the system firewall.
+Si está desactivado, AdGuard filtra el tráfico directamente sin redirigirlo. En este modo, Windows ve AdGuard como la única aplicación que se conecta a Internet, ya que todas las demás aplicaciones pasan por él. Esto puede mejorar ligeramente el rendimiento, pero puede reducir la efectividad del cortafuegos del sistema.
 
-## Open AdGuard at system start-up
+## Abrir AdGuard al iniciar el sistema
 
-Enable this option to launch the AdGuard window automatically when your PC starts.
+Activa esta opción para que la ventana de AdGuard se abra automáticamente cuando tu PC se inicie.
 
 ## Habilitar filtrado al iniciar el sistema
 
-Since version 7.12, AdGuard doesn’t start filtering traffic automatically after you boot your PC — unless the _Launch AdGuard at system start-up_ option is enabled. Instead, it runs in a passive “idle” mode.
+Desde la versión 7.12, AdGuard no inicia el filtrado de tráfico automáticamente después de iniciar tu PC — a menos que la opción _Iniciar AdGuard al iniciar el sistema_ esté habilitada. En cambio, funciona en un modo pasivo “inactivo”.
 
-Turning this on allows AdGuard to filter traffic immediately, even if the app hasn’t been opened yet.
+Al activar esto, AdGuard podrá filtrar el tráfico inmediatamente, incluso si la aplicación aún no se ha abierto.
 
 ## Filtrar localhost
 
-Enable this to allow AdGuard to filter loopback (localhost) traffic, which some apps use to communicate within the system. If AdGuard VPN is installed, this setting is always on because the VPN requires it to work properly.
+Activa esto para permitir que AdGuard filtre el tráfico de loopback (localhost), que algunas aplicaciones utilizan para comunicarse dentro del sistema. Si la VPN de AdGuard está instalada, esta opción siempre está activa porque la VPN requiere que funcione correctamente.
 
 ## Capturar HAR
 
-This is for debugging only. When enabled, AdGuard will create a HAR file (HTTP Archive 1.2 format) with detailed info about all filtered requests. You can open it in apps like Fiddler.
+Esto es solo para depuración. Cuando está habilitado, AdGuard creará un archivo HAR (formato HTTP Archive 1.2) con información detallada sobre todas las solicitudes filtradas. Puedes abrirlo en apps como Fiddler.
 
-Keep in mind: it may slow down your browsing.
+Ten en cuenta: puede ralentizar tu navegación.
 
-## Show QUIC in the filtering log
+## Mostrar QUIC en el registro de filtrado
 
-When enabled, AdGuard will include QUIC protocol traffic in the filtering log — but only for blocked requests.
+Cuando está habilitado, AdGuard incluirá el tráfico del protocolo QUIC en el registro de filtrado, pero solo para solicitudes bloqueadas.
 
 ## Bloquear Java
 
-Some websites still use Java plug-ins, which rely on outdated and insecure technology. You can disable these plug-ins for security.
+Algunos sitios web aún utilizan complementos de Java, que dependen de tecnología obsoleta e insegura. Puedes desactivar estos complementos por seguridad.
 
-Using the _Block Java_ option does not affect JavaScript — it will remain enabled.
+Usar la opción _Bloquear Java_ no afecta a JavaScript — permanecerá habilitada.
 
-## Blocking mode for DNS rules
+## Modo de bloqueo para reglas DNS
 
-Choose how AdGuard responds when a domain is blocked by a DNS rule based on the [hosts-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
+Elige cómo responde AdGuard cuando un dominio es bloqueado por una regla DNS basada en la sintaxis [hosts-style](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
-- Return a `REFUSED` error
-- Return a `NXDOMAIN` error
-- Return a custom IP address
+- Devuelve un error `REFUSED`
+- Devuelve un error 'NXDOMAIN'
+- Devuelve una dirección IP personalizada
 
 ### Dirección IPv4 personalizada
 
-If _Custom IP address_ is selected in _Blocking mode for DNS rules_, this IP address will be returned in response to blocked A requests. If none are specified, AdGuard will reply with the default REFUSED error.
+Si se selecciona _Dirección IP personalizada_ en _Modo bloqueador para reglas DNS_, esta dirección IP se devolverá en respuesta a solicitudes A bloqueadas. Si no se especifica ninguno, AdGuard responderá con el error por defecto de REFUSED.
 
 ### Dirección IPv6 personalizada
 
-If _Custom IP address_ is selected in _Blocking mode for DNS rules_, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default REFUSED error.
+Si se selecciona _Dirección IP personalizada_ en _Modo bloqueante para reglas DNS_, esta dirección IP se devolverá en respuesta a solicitudes AAAA bloqueadas. Si no se especifica ninguno, AdGuard responderá con el error por defecto de REFUSED.
 
 ## Servidores fallback
 
-Set backup DNS servers here. AdGuard will use them if the main DNS server doesn’t respond within the timeout you set. You can:
+Configura aquí los servidores DNS de respaldo. AdGuard los usará si el servidor DNS principal no responde dentro del tiempo de espera que hayas marcado. Puedes:
 
-- Use your system’s default DNS servers
-- Add custom fallback servers
-- Or choose not to use fallback servers at all
+- Utilizar los servidores DNS predeterminados de tu sistema
+- Añadir servidores de respaldo personalizados
+- O elegir no usar servidores de respaldo en absoluto
 
-## DNS server timeout
+## Tiempo de espera del servidor DNS
 
-Specify how long (in milliseconds) AdGuard should wait for a DNS response before switching to a fallback server. If left empty or invalid, the default is 5000 ms (5 seconds).
+Especifica cuánto tiempo (en milisegundos) debe esperar AdGuard a una respuesta DNS antes de cambiar a un servidor de respaldo. Si se deja vacío o inválido, el valor por defecto es 5000 ms (5 segundos).
 
-## Custom bootstrap addresses
+## Direcciones de bootstrap personalizadas
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in DNS protection. Such a “middle ground” is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). En este caso, el bootstrap actúa como un traductor, transformando las letras en números que tu sistema pueda entender.
+Un bootstrap es un servidor DNS intermedio utilizado para obtener la dirección IP del servidor DNS seguro que elegiste antes en la protección DNS. Este tipo de "punto intermedio" es necesario cuando se usan protocolos que denotan la dirección del servidor con letras (como DNS-over-TLS, por ejemplo). En este caso, el bootstrap actúa como traductor, transformando las letras en números que tu sistema puede entender.
 
-But if needed, you can specify different IP addresses here — they’ll be tried in the order from top to bottom. If none work or nothing is entered, AdGuard will fall back to system defaults.
+Pero si es necesario, puedes especificar diferentes direcciones IP aquí: se probarán en el orden de arriba a abajo. Si no funciona o no se introduce nada, AdGuard volverá a los valores predeterminados del sistema.
 
 ## Exclusiones del DNS
 
-Domains listed here bypass AdGuard DNS servers. Their requests go through the system’s default resolver, and AdGuard does not apply any blocking rules to them.
+Los dominios listados aquí evitan los servidores DNS de AdGuard. Sus solicitudes pasan por el resolver predeterminado del sistema, y AdGuard no les aplica ninguna regla de bloqueo.

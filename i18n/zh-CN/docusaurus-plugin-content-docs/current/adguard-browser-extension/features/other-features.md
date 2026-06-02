@@ -13,34 +13,36 @@ sidebar_position: 4
 
 ## 常规 {#general}
 
-在「常规」选项卡中，用户可以允许搜索广告和网站的[自我推广](/general/ad-filtering/search-ads)，启用自动激活特定语言过滤器的，指明过滤器更新间隔等。
+The _General_ tab contains the main extension settings and lets you control its basic filtering behavior. Here you can allow search ads and [self‑promotion on websites](/general/ad-filtering/search-ads/), enable automatic activation of language-specific filters, set the update interval for the filters, and turn on [protection against phishing and malicious websites](/general/browsing-security/).
 
-![常规 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
+![General \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/general_new.png)
 
-此外，还可以启用[「钓鱼和恶意保护」](/general/browsing-security)。
+You can also save your current configuration and quickly apply it to another browser or device. To do this, click _Share settings_ in the _General_ tab: the extension will generate a special link and a QR code that contain your current settings. You can either copy the link and open it in a browser, or scan the QR code on a device with AdGuard to open the link directly in the app. You will then see a prompt to apply the shared configuration so that you can restore the same setup after reinstalling your browser or on a new device.
 
-您可以单击「导出设置」来保存设置配置。 设置将保存为 .json 文件。 要导入以前保存的设置配置，请使用「导入设置」功能。 用户还可以使用该功能在不同的设置配置文件之间快速切换，甚至可以在不同的浏览器之间传输设置配置。
+If needed, you can also share this link with other people or attach it to a support request so the team can see your exact configuration.
 
-## 附加设置 {#misc}
+In addition, you can still export your settings to a .json file by clicking _Export settings_ and import them via the _Import settings_ option. This makes it easy to switch between different configuration profiles or move them between browsers.
 
-「附加设置」部分包含一系列与广告拦截过程和应用程序可用性有关的各种设置。
+## Additional settings {#misc}
 
-![其他设置 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
+The _Additional settings_ section contains a range of various settings that are related to the ad blocking process and application usability.
 
-在此标签页中，您可以反转白名单，并将 AdGuard 项目添加到浏览器的上下文菜单中。 用户还可以启用 AdGuard 图标上显示被拦截广告数量以及扩展更新通知的功能。 此外，此部分还允许用户启用关于 AdGuard 应用的通知、打开「过滤日志」、清除已拦截广告和跟踪器的统计数据，或重置设置。
+![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional_new.png)
 
-此外，用户可以选择发送应用规则的统计数据以帮助我们开发过滤器：触发哪些规则、在哪些网站上触发以及触发频率。 该选项默认为禁用，因为我们不会在未经同意的情况下收集用户数据。 但是，如果启用该功能，所有数据都将匿名发送。
+From this tab, you can invert the allowlist and add the AdGuard item to the browser’s context menu. You can also enable the display of the number of blocked ads on the AdGuard icon and notifications about extension updates. Additionally, this section lets you enable notifications about the AdGuard app, open the _Filtering log_, clear the statistics of blocked ads and trackers, or reset the settings.
 
-您还可以选择通过向我们发送匿名使用数据来帮助我们改进扩展程序。 这包括您所交互的屏幕名称、您点击的按钮名称以及会话标识符。 这些信息帮助我们了解用户在哪里遇到困难，优化体验，并使扩展更快、更易于使用。 「匿名发送扩展使用数据」选项默认是禁用的。 如果您启用它，所有数据都将严格匿名，且仅用于内部。 绝不会与任何第三方共享。
+Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
+
+You can also choose to help us improve the extension by sending us anonymized usage data. This includes the names of the screens you interact with, the names of the buttons you click, and session identifiers. These insights help us understand where users run into friction, refine the experience, and make the extension faster and easier to use. The _Send anonymized usage data_ option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
 
 :::note
 
-在基于 Chromium 的浏览器中，也可以在安装后页面上启用「发送匿名使用数据」选项。
+The _Send anonymized usage data_ option can also be enabled on the post-installation page in Chromium-based browsers.
 
 :::
 
-## 关于 {#about}
+## About {#about}
 
-在「关于」部分中，用户可以找到有关当前版本的信息、EULA 和隐私政策的链接以及 GitHub 上浏览器扩展存储库的链接。
+In the _About_ section, you can find info about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
 
-![关于 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/about_new.png)

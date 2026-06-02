@@ -302,3 +302,46 @@ adguard-cli import-settings -i "/path/to/settings.zip"
 ```
 
 Příznak `-i` nebo `--input` je povinný a určuje cestu k archivu nastavení, který se má importovat.
+
+## AdGuard Asistent prohlížeče
+
+Asistent prohlížeče AdGuard vám umožňuje spravovat ochranu AdGuardem přímo ve vašem prohlížeči.
+
+![The Assistant window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
+
+### Jak to funguje
+
+Asistent prohlížeče AdGuard je rozšíření prohlížeče. Umožňuje rychlou správu aplikace AdGuard pro Linux:
+
+- Povolení nebo zakázání ochrany pro konkrétní webovou stránku (přepínač pod názvem webové stránky)
+- Pozastavení ochrany po dobu 30 sekund
+- Vypnutí ochrany (ikona pozastavení v pravém horním rohu)
+- Ruční blokování reklam
+- Nahlášení nekorektního blokování
+- Správa filtrování HTTPS (ikona zámku vedle názvu webové stránky)
+
+### Jak nainstalovat
+
+Chcete-li nainstalovat manifesty Native Messaging pro integraci do prohlížeče, použijte:
+
+```sh
+adguard-cli install-browser-integration
+```
+
+K odinstalaci manifestů použijte:
+
+```sh
+adguard-cli install-browser-integration --uninstall
+```
+
+**Instalace rozšíření asistenta prohlížeče AdGuard**:
+
+1. Otevřete [stránku Asistenta](https://adguard.com/adguard-assistant/overview.html).
+2. Pod názvem prohlížeče vyberte _Instalovat_.
+3. Nainstalujte Asistenta z obchodu s rozšířeními vašeho prohlížeče.
+
+:::info Kompatibilita
+
+Podpora asistenta prohlížeče AdGuard je dostupná od verze AdGuard pro Linux v1.4.
+
+:::

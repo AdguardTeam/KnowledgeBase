@@ -1,5 +1,5 @@
 ---
-title: Tracking protection (formerly Stealth Mode)
+title: Protection contre le suivi (anciennement Mode furtif)
 sidebar_position: 3
 ---
 
@@ -9,26 +9,26 @@ Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement 
 
 :::
 
-The purpose of _Tracking protection_ is to safeguard your sensitive personal data from online trackers and fraudsters. There are slight differences in the tracking protection features between Chromium-based browsers, which support MV3, and non-Chromium browsers, which support MV2.
+Le but de la _Protection contre le suivi_ est de protéger vos données personnelles sensibles contre les traqueurs en ligne et les fraudeurs. Il existe de légères différences dans les fonctionnalités de protection contre le suivi entre les navigateurs basés sur Chromium, qui prennent en charge MV3, et les navigateurs non basés sur Chromium, qui prennent en charge MV2.
 
-![Tracking protection in Chromium-based browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv3_trackingProtection.png)
+![Protection contre le suivi dans les navigateurs basés sur Chromium \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv3_trackingProtection.png)
 
-_Tracking protection_ in Chromium-based browsers
+_Protection contre le suivi_ dans les navigateurs basés sur Chromium
 
-![Tracking protection in non-Chromium browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv2_trackingProtection.png)
+![Protection contre le suivi dans les navigateurs non basés sur Chromium \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv2_trackingProtection.png)
 
-_Tracking protection_ in non-Chromium browsers
+La _Protection contre le suivi_ dans les navigateurs non basés sur Chromium
 
-_Tracking protection_ features prevent websites from seeing the search query you used to find them on the Internet, automatically delete third-party and website cookies, and more. A [separate article](/general/stealth-mode) is devoted to all these features.
+Les fonctionnalités de _Protection contre le suivi_ empêchent aux sites Web de voir la requête que vous avez fait pour les trouver sur Internet, suppriment automatiquement les cookies tiers et les cookies du site, et plus encore. Un [article séparé](/general/stealth-mode) est consacré à toutes ces fonctionnalités.
 
 :::note
 
-Browser extensions are limited to a specific browser and are subject to its technical restrictions. Therefore, they cannot offer all the tracking protection features available in full-fledged ad-blocking apps.
+Les extensions de navigateur sont limitées à un navigateur spécifique et sont soumises à ses restrictions techniques. Elles ne peuvent donc pas offrir toutes les fonctionnalités de protection contre le suivi disponibles dans les applications de blocage des publicités à part entière.
 
 :::
 
 :::caution
 
-In AdGuard Browser Extension, the _Block WebRTC_ option works globally — it either blocks or allows WebRTC for all websites. It cannot be controlled on a per-site basis. Exception rules like `@@||example.com^$stealth=webrtc` have no effect in the browser extension because the `webrtc` option is not among the [supported `$stealth` modifier options](/general/ad-filtering/create-own-filters#stealth-modifier). If you need per-site WebRTC control, use the full-fledged AdGuard app for Windows, Mac, or Android.
+Dans l'extension de navigateur AdGuard, l'option _Bloquer WebRTC_ fonctionne globalement — elle bloque ou autorise WebRTC pour tous les sites Web. Elle ne peut pas être contrôlée par site. Les règles d'exception comme `@@||example.com^$stealth=webrtc` n'ont aucun effet dans l'extension du navigateur car l'option `webrtc` ne fait pas partie des [options de modification `$stealth` prises en charge](/general/ad-filtering/create-own-filters#stealth-modifier). Si vous avez besoin d'un contrôle WebRTC par site, utilisez l'application AdGuard complète pour Windows, Mac ou Android.
 
 :::

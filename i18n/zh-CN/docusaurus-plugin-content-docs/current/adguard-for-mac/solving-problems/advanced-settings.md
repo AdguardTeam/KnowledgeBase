@@ -179,11 +179,11 @@ Secures DNS proxy connections with a hybrid post-quantum key exchange, combining
 
 #### `stealth.antidpi.http.split.fragment.size`
 
-调整 HTTP 请求片段大小。 有效值：1–1500。 如果指定的大小无效，系统将使用默认值。
+调整 HTTP 请求片段大小。 Valid values: 1–1500. 如果指定的大小无效，系统将使用默认值。
 
 #### `stealth.antidpi.clienthello.split.fragment.size`
 
-该设置指定 TCP 数据包碎片的大小，有助于避免深度包检测。 有效值：1–1500。 如果指定的大小无效，系统将使用默认值。
+该设置指定 TCP 数据包碎片的大小，有助于避免深度包检测。 Valid values: 1–1500. 如果指定的大小无效，系统将使用默认值。
 
 #### `stealth.antidpi.http.space.juggling`
 

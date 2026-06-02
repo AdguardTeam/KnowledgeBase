@@ -5,52 +5,52 @@ sidebar_position: 3
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Este artigo descreve o AdGuard para Windows v8.0, um bloqueador de anúncios completo que protege seu dispositivo em nível de sistema. Esta é uma versão beta que ainda está em desenvolvimento. Para experimentá-lo, baixe a [versão beta do AdGuard para Windows](https://agrd.io/windows_beta).
 
 :::
 
-This section lets you manage how AdGuard filters your Internet traffic and provides additional tools to control network-related features.
+Esta seção permite que você gerencie como o AdGuard filtra seu tráfego na Internet e oferece ferramentas adicionais para controlar recursos relacionados à rede.
 
-![Network settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
+![Configurações de rede](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
 
-## Use AdGuard as an HTTP proxy
+## Use AdGuard como um proxy HTTP
 
-Enable this option to make AdGuard work as an HTTP proxy. All traffic passing through it will be filtered — not only on your computer but also on other devices in your home network.
+Ative esta opção para fazer o AdGuard funcionar como um proxy HTTP. Todo o tráfego que passar por ele será filtrado — não apenas no seu computador, mas também em outros dispositivos na sua rede doméstica.
 
-To filter traffic on other devices, install AdGuard’s root certificate on them and set up the proxy manually.
+Para filtrar o tráfego em outros dispositivos, instale o certificado raiz do AdGuard neles e configure o proxy manualmente.
 
-Other settings are enabled by default.
+Outras configurações são ativadas por padrão.
 
 ## Filtragem HTTPS
 
-Most websites use HTTPS encryption today. Without HTTPS filtering, AdGuard cannot block ads on websites like YouTube, Facebook, or X (Twitter).
+A maioria dos sites utiliza criptografia HTTPS hoje em dia. Sem filtragem HTTPS, o AdGuard não pode bloquear anúncios em sites como YouTube, Facebook ou X (Twitter).
 
-We recommend keeping the _Filter HTTPS_ option turned on unless you have a specific reason to turn it off.
+Recomendamos manter a opção _Filtrar HTTPS_ ativada, a menos que você tenha um motivo específico para desativá-la.
 
-With this option, you can:
+Com esta opção você pode:
 
-- Reinstall or download the AdGuard certificate
+- Reinstalar ou baixar o certificado AdGuard
 
-- Add websites to a list that won’t be filtered
+- Adicionar sites a uma lista que não será filtrada
 
-- Choose whether to filter websites with EV (Extended Validation) certificates
+- Escolher se deve filtrar sites com certificados EV (Validação Estendida)
 
-## Proxy for app and filter updates
+## Proxy para atualizações de aplicativos e filtros
 
-Here you can choose which proxy AdGuard should use to download filter updates or new app versions — the system proxy, a custom proxy, or no proxy at all.
+Aqui você pode escolher qual proxy o AdGuard deve usar para baixar atualizações de filtro ou novas versões de aplicativos — o proxy do sistema, um proxy personalizado ou nenhum proxy.
 
-![Proxy settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
+![Configurações de proxy](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
 
-## Use SockFilter driver
+## Usar o driver SockFilter
 
-Enable this option to use the SockFilter driver, which helps block ads and trackers in apps on Windows 8 and later. If this option is disabled, AdGuard will switch to the older WFP driver instead.
+Ative esta opção para usar o driver SockFilter, que ajuda a bloquear anúncios e rastreadores em aplicativos no Windows 8 e versões posteriores. Se essa opção estiver desativada, o AdGuard passará a usar o driver WFP mais antigo.
 
-SockFilter was first introduced in v8.0 RC. It is an _experimental_, lightweight kernel-mode network driver that works at the socket level (TCP/UDP). Instead of inspecting or modifying packets as they travel through the full Windows networking stack, a sock filter intercepts socket calls (e.g., connect, send, receive, bind) at a higher, more stable abstraction level. This makes it ideal for applications that need to monitor or control network activity without deep packet processing.
+SockFilter foi introduzido pela primeira vez na versão v8.0 RC. É um driver de rede em modo kernel _experimental_ e leve que funciona no nível de socket (TCP/UDP). Em vez de inspecionar ou modificar pacotes enquanto eles percorrem toda a pilha de rede do Windows, um filtro de soquete intercepta chamadas de socket (por exemplo, connect, send, receive, bind) em um nível de abstração mais alto e mais estável. Isso o torna ideal para aplicações que precisam monitorar ou controlar a atividade de rede sem processamento profundo de pacotes.
 
-When fully tested and implemented, SockFilter has the potential to bring several advantages over other drivers:
+Quando totalmente testado e implementado, o SockFilter tem o potencial de trazer várias vantagens em relação a outros drivers:
 
-- **It operates at a higher, socket-level layer**: SockFilter works with socket operations rather than raw packets, making it less complex and more stable than WFP’s low-level packet filtering.
-- **No interference with other network drivers**: Because it sits above VPN, firewall, and antivirus WFP filters, it avoids filter-ordering problems and compatibility conflicts common in the WFP stack.
-- **Greatly reduced risk of NETIO-related BSODs**: SockFilter doesn’t run inside the NETIO packet pipeline, so it avoids the typical crash scenarios caused by WFP callouts mishandling buffers, classification results, or packet memory.
+- **Ele opera em um nível mais alto, no nível de soquete**: o SockFilter trabalha com operações de soquete em vez de pacotes brutos, tornando-o menos complexo e mais estável do que a filtragem de pacotes de baixo nível do WFP.
+- **Sem interferência com outros drivers de rede**: Como fica acima dos filtros WFP de VPN, firewall e antivírus, evita problemas de ordenação de filtros e conflitos de compatibilidade comuns na stack WFP.
+- **Risco de BSODs relacionados ao NETIO drasticamente reduzido**: o SockFilter não é executado dentro do pipeline de pacotes do NETIO, portanto evita os cenários típicos de falha causados por callouts do WFP que manipulam incorretamente buffers, resultados de classificação ou memória de pacotes.
 
-When it comes to disadvantages, SockFilter driver sees only socket-level operations and does not capture traffic generated by other kernel drivers or components that bypass the standard Winsock API. From a low-level networking perspective, this can be viewed as a limitation, since the driver cannot access raw packets or inspect non-socket traffic. However, for an ad-blocking application, this behavior is not just acceptable but optimal. All relevant traffic from browsers and user-mode applications goes through standard sockets, and that’s exactly what we need to control. At the same time, ignoring low-level driver traffic removes unnecessary complexity, avoids compatibility issues, and keeps the system stable.
+Quando se trata de desvantagens, o driver SockFilter vê apenas operações no nível de soquete e não captura o tráfego gerado por outros drivers de kernel ou componentes que ignoram a API Winsock padrão. Do ponto de vista de rede de baixo nível, isso pode ser visto como uma limitação, pois o driver não pode acessar pacotes brutos nem inspecionar tráfego não relacionado a sockets. No entanto, para um aplicativo de bloqueio de anúncios, esse comportamento não é apenas aceitável, mas ideal. Todo o tráfego relevante de navegadores e aplicativos em modo de usuário passa por soquetes padrão, e é exatamente isso que precisamos controlar. Ao mesmo tempo, ignorar o tráfego de drivers de baixo nível remove complexidade desnecessária, evita problemas de compatibilidade e mantém o sistema estável.

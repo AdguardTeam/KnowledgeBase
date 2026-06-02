@@ -33,7 +33,7 @@ adguard-cli start
 adguard-cli stop
 ```
 
-This command not only stops the proxy but also stops the traffic from redirecting to it.
+Эта команда не только останавливает работу прокси-сервера, но и прекращает перенаправление трафика на него.
 
 ### Проверить статус защиты
 
@@ -45,55 +45,55 @@ adguard-cli status
 
 ![Статус/Отключить защиту \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
 
-### Restart protection
+### Перезапустить защиту
 
-To restart the proxy server and reapply settings, enter:
+Чтобы перезапустить прокси-сервер и повторно применить настройки, введите:
 
 ```sh
 adguard-cli restart
 ```
 
-## Updates
+## Обновления
 
 ### Проверить обновления
 
-To check for updates, enter:
+Чтобы проверить наличие обновлений, введите:
 
 ```sh
 adguard-cli check-update
 ```
 
-### Update AdGuard for Linux
+### Обновить AdGuard для Linux
 
-To update AdGuard for Linux, enter:
+Чтобы обновить AdGuard для Linux, введите:
 
 ```sh
 adguard-cli update
 ```
 
-### Update script output
+### Вывод скрипта обновления
 
-To view the update script output, enter:
+Чтобы просмотреть вывод скрипта обновления, введите:
 
 ```sh
 adguard-cli update -v
 ```
 
-## Configure AdGuard for Linux
+## Настроить AdGuard для Linux
 
-Use the `config` command to configure AdGuard for Linux. Subcommands:
+Используйте команду `config` для настройки AdGuard для Linux. Подкоманды:
 
-- `show [<section-name>]`: Show the current configuration in `proxy.yaml` (or a specific section)
+- `show [<section-name>]`: показать текущую конфигурацию в `proxy.yaml` (или конкретный раздел)
 
-  ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![Текущая настройка \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
 
-- `set <key> <value>`: Configure an option in `proxy.yaml`
-  - `listen_ports.http_proxy`: HTTP listening port
-  - `proxy_mode`: Proxy mode (`manual` or `auto`)
+- `set <key> <value>`: настроить параметр в `proxy.yaml`
+  - `listen_ports.http_proxy`: порт прослушивания HTTP
+  - `proxy_mode`: режим прокси-сервера (`manual` или `auto`)
 
-- `get <key>`: Get the current status of a setting
+- `get <key>`: получить текущий статус настройки
 
-- `list-add <key> <value> [<value>...]`: Add one or more values to a list setting
+- `list-add <key> <value> [<value>...]`: добавить одно или несколько значений в настройку списка
 
 - `list-remove <key> <value>`: Remove a value from a list setting
 
@@ -114,7 +114,7 @@ The Automatic mode can only be used if the following requirements are met:
 
 ## Manage filters
 
-Use the `filters` command to configure AdGuard for Linux. Subcommands:
+Use the `filters` command to configure AdGuard for Linux. Подкоманды:
 
 - `list`: List installed and added filters
 
@@ -144,7 +144,7 @@ Filter updates are handled by `adguard-cli check-update` (the `filters update` s
 
 ## Manage DNS filters
 
-Use the `dns filters` command to manage DNS filter lists. Subcommands:
+Use the `dns filters` command to manage DNS filter lists. Подкоманды:
 
 - `list`: List installed and added DNS filters
   - `--all`: View all DNS filters
@@ -160,7 +160,7 @@ DNS filter updates are handled by `adguard-cli check-update`.
 
 ## Manage userscripts
 
-Use the `userscripts` command to manage userscripts. Subcommands:
+Use the `userscripts` command to manage userscripts. Подкоманды:
 
 - `list`: Show installed userscripts
 - `install`: Install a userscript from a URL
@@ -302,3 +302,46 @@ adguard-cli import-settings -i "/path/to/settings.zip"
 ```
 
 The `-i` or `--input` flag is required and specifies the path to the settings archive to import.
+
+## Браузерный помощник AdGuard
+
+Браузерный помощник AdGuard позволяет управлять защитой AdGuard прямо из браузера.
+
+![Окно Помощника \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
+
+### Как это работает
+
+Браузерный помощник AdGuard — это расширение для браузера. It allows you to quickly manage AdGuard for Linux:
+
+- Enable or disable protection for a specific website (the toggle under the website name)
+- Приостановить защиту на 30 секунд
+- Отключить защиту (значок паузы в правом верхнем углу)
+- Блокировка рекламы вручную
+- Сообщить о неправильной блокировке
+- Manage HTTPS filtering (the lock icon next to the website name)
+
+### Как установить
+
+To install Native Messaging manifests for browser integration, use:
+
+```sh
+adguard-cli install-browser-integration
+```
+
+To uninstall the manifests, use:
+
+```sh
+adguard-cli install-browser-integration --uninstall
+```
+
+**Install AdGuard Browser Assistant extension**:
+
+1. Откройте [страницу Помощника](https://adguard.com/adguard-assistant/overview.html).
+2. Под названием вашего браузера выберите _Установить_.
+3. Установите Помощник из магазина расширений вашего браузера.
+
+:::info Совместимость
+
+Support for AdGuard Browser Assistant is available starting from AdGuard for Linux v1.4.
+
+:::

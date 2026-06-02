@@ -175,11 +175,11 @@ This feature disables sending technical data about your system and app usage.
 
 This feature prevents Windows from taking and analyzing screenshots of your desktop activity.
 
-### Turn off Advertising ID {#advertisingid}
+### Deshabilitar Advertising ID {#advertisingid}
 
 This feature disables Advertising ID to block tracking of your app usage.
 
-### Disable automatic reporting by Microsoft Defender {#windowsautoreport}
+### Deshabilitar el informe automático de Microsoft Defender {#windowsautoreport}
 
 Esta función bloquea la notificación automática y el muestreo de malware sospechoso.
 

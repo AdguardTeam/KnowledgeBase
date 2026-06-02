@@ -5,100 +5,100 @@ sidebar_position: 4
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+本文适用于 Windows 版的 AdGuard v8.0，一款全面的广告拦截器，可在系统层面保护您的设备。 这是一个仍在开发中的 Beta 测试版本。 要试用，请下载[适用于 Windows 的 AdGuard 测试版](https://agrd.io/windows_beta)。
 
 :::
 
-The _Advanced settings_ section contains options that go beyond what most users usually need. AdGuard for Windows works perfectly out of the box, but these settings can be useful in special cases or for troubleshooting.
+「高级设置」部分包含的选项超出了大多数用户的日常使用需求。 Windows 版 AdGuard 开箱即用即可完美运行，但这些设置在特殊情况下或排查问题时可能很有用。
 
 :::caution
 
-Changing advanced settings without understanding them may cause performance issues, break your Internet connection, or affect your security and privacy. Only modify them if you know what you’re doing or if instructed by our support team.
+在不理解高级设置的情况下进行更改可能导致性能问题、中断网络连接或影响您的安全和隐私。 只有在您明确自己的操作或得到我们技术支持团队的指示时，才应修改这些设置。
 
 :::
 
-## 过滤时按完整路径排除应用
+## 按完整路径排除应用过滤
 
-If you want AdGuard to skip filtering a specific app, enter its full file path here. You can add multiple apps by separating their paths with semicolons.
+如果您希望 AdGuard 跳过对某个特定应用的过滤，请在此输入其完整文件路径。 您可以添加多个应用，路径之间用分号分隔。
 
 ## 启用 AdGuard 弹窗通知
 
-启用此功能查看 AdGuard 弹出式通知。 通知不经常出现，只包含重要的信息。 You can also reopen the latest notification from the tray menu.
+启用此功能查看 AdGuard 弹出式通知。 它们不会频繁出现，只包含重要信息。 您也可以从系统托盘菜单重新打开最新的通知。
 
-## 自动截取过滤器订阅 URL
+## 自动拦截过滤器订阅链接
 
-When enabled, AdGuard will automatically detect filter subscription links (like `abp:subscribe`) and open a window to help you add them to your filters.
+启用后，AdGuard 将自动检测过滤器订阅链接（如 `abp:subscribe`）并打开窗口帮助您将其添加到过滤器中。
 
 ## 使用重定向驱动模式
 
-With this option enabled, AdGuard reroutes all your traffic to a local proxy server for filtering.
+启用此选项后，AdGuard 会将您的所有流量重定向到本地代理服务器进行过滤。
 
-If it’s turned off, AdGuard filters traffic directly — without redirecting it. In this mode, Windows sees AdGuard as the only app connecting to the Internet, since all other apps go through it. This can slightly improve performance but may reduce the effectiveness of the system firewall.
+如果关闭此选项，AdGuard 将直接过滤流量而不进行重定向。 在此模式下，Windows 将 AdGuard 视为唯一连接到互联网的应用，因为所有其他应用都通过它连接。 这可以略微提升性能，但可能降低系统防火墙的有效性。
 
-## Open AdGuard at system start-up
+## 系统启动时打开 AdGuard
 
-Enable this option to launch the AdGuard window automatically when your PC starts.
+启用此选项可在电脑启动时自动打开 AdGuard 窗口。
 
-## 在系统启动时启用过滤
+## 系统启动时开启过滤
 
-Since version 7.12, AdGuard doesn’t start filtering traffic automatically after you boot your PC — unless the _Launch AdGuard at system start-up_ option is enabled. Instead, it runs in a passive “idle” mode.
+从 7.12 版本开始，除非同时启用了「系统启动时打开 AdGuard」选项，否则 AdGuard 不会在电脑启动后自动开始过滤流量。 相反，它会以被动「闲置」模式运行。
 
-Turning this on allows AdGuard to filter traffic immediately, even if the app hasn’t been opened yet.
+开启此选项后，即使应用尚未打开，AdGuard 也能立即过滤流量。
 
 ## 过滤 localhost 连接
 
-Enable this to allow AdGuard to filter loopback (localhost) traffic, which some apps use to communicate within the system. If AdGuard VPN is installed, this setting is always on because the VPN requires it to work properly.
+启用此选项可让 AdGuard 过滤回环（localhost）流量，某些应用使用该流量在系统内部通信。 如果安装了 AdGuard VPN，此设置将始终开启，因为 VPN 需要它才能正常工作。
 
 ## 捕获 HAR
 
-This is for debugging only. When enabled, AdGuard will create a HAR file (HTTP Archive 1.2 format) with detailed info about all filtered requests. You can open it in apps like Fiddler.
+仅供调试使用。 启用后，AdGuard 将创建一个 HAR 文件（HTTP Archive 1.2 格式），其中包含所有已过滤请求的详细信息。 您可以在 Fiddler 等应用中打开它。
 
-Keep in mind: it may slow down your browsing.
+请注意：这可能会降低您的浏览速度。
 
-## Show QUIC in the filtering log
+## 在过滤日志中显示 QUIC
 
-When enabled, AdGuard will include QUIC protocol traffic in the filtering log — but only for blocked requests.
+启用后，AdGuard 将在过滤日志中包含 QUIC 协议流量，但仅限于被拦截的请求。
 
 ## 拦截 Java
 
-Some websites still use Java plug-ins, which rely on outdated and insecure technology. You can disable these plug-ins for security.
+某些网站仍使用 Java 插件，这些插件依赖过时且不安全的技术。 出于安全考虑，您可以禁用这些插件。
 
-Using the _Block Java_ option does not affect JavaScript — it will remain enabled.
+使用「拦截 Java」选项不会影响 JavaScript，JavaScript 将保持启用状态。
 
-## Blocking mode for DNS rules
+## DNS 规则的拦截模式
 
-Choose how AdGuard responds when a domain is blocked by a DNS rule based on the [hosts-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
+选择当域名被基于 [hosts 风格语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).的 DNS 规则拦截时，AdGuard 如何响应。
 
-- Return a `REFUSED` error
-- Return a `NXDOMAIN` error
-- Return a custom IP address
+- 返回 `REFUSED` 错误
+- 返回 `NXDOMAIN` 错误
+- 返回自定义 IP 地址
 
 ### 自定义 IPv4 地址
 
-If _Custom IP address_ is selected in _Blocking mode for DNS rules_, this IP address will be returned in response to blocked A requests. If none are specified, AdGuard will reply with the default REFUSED error.
+如果在 DNS 规则的拦截模式中选择了「返回自定义 IP 地址」，则在响应被拦截的 A 请求时将返回此 IPv4 地址。 如果未指定，AdGuard 将回复默认的 REFUSED 错误。
 
 ### 自定义 IPv6 地址
 
-If _Custom IP address_ is selected in _Blocking mode for DNS rules_, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default REFUSED error.
+如果在 DNS 规则的拦截模式中选择了「返回自定义 IP 地址」，则在响应被拦截的 AAAA 请求时将返回此 IPv6 地址。 如果未指定，AdGuard 将回复默认的 REFUSED 错误。
 
-## 后备服务器
+## 备份服务器
 
-Set backup DNS servers here. AdGuard will use them if the main DNS server doesn’t respond within the timeout you set. You can:
+在此设置备份 DNS 服务器。 如果主 DNS 服务器在您设定的超时时间内未响应，AdGuard 将使用这些备用服务器。 您可以：
 
-- Use your system’s default DNS servers
-- Add custom fallback servers
-- Or choose not to use fallback servers at all
+- 使用系统的默认 DNS 服务器
+- 添加自定义备用服务器
+- 或完全不使用备用服务器
 
-## DNS server timeout
+## DNS 服务器超时时间
 
-Specify how long (in milliseconds) AdGuard should wait for a DNS response before switching to a fallback server. If left empty or invalid, the default is 5000 ms (5 seconds).
+指定 AdGuard 在切换到备用服务器之前等待 DNS 响应的时间（以毫秒为单位）。 如果留空或填写无效值，默认值为 5000 毫秒（5 秒）。
 
-## Custom bootstrap addresses
+## 自定义 Bootstrap 地址
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in DNS protection. Such a “middle ground” is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). 在这种情况下，bootstrap 充当翻译器，将字母转换为系统可以理解的数字。
+Bootstrap 是一个中间 DNS 服务器，用于获取您之前在 DNS 保护中选择的安全 DNS 服务器的 IP 地址。 当使用以字母表示服务器地址的协议（例如 DNS-over-TLS）时，需要这样一个「中间人」。 在这种情况下，Bootstrap 充当翻译器，将字母转换为系统能够理解的数字。
 
-But if needed, you can specify different IP addresses here — they’ll be tried in the order from top to bottom. If none work or nothing is entered, AdGuard will fall back to system defaults.
+但如有需要，您可以在此指定不同的 IP 地址，它们将按从上到下的顺序尝试。 如果所有地址都无效或未输入任何内容，AdGuard 将回退到系统默认值。
 
 ## DNS 排除项
 
-Domains listed here bypass AdGuard DNS servers. Their requests go through the system’s default resolver, and AdGuard does not apply any blocking rules to them.
+此处列出的域名将绕过 AdGuard DNS 服务器。 它们的请求通过系统的默认解析器发出，AdGuard 不会对其应用任何拦截规则。

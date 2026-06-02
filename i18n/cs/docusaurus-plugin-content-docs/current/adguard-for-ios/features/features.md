@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který
 
 - [Ochrana Safari](/adguard-for-ios/features/safari-protection.md)
 
-  Available features and settings in the _Safari protection_ tab: _Filters_, _User rules_, and _Allowlist_
+  Dostupné funkce a nastavení na kartě _Ochrana Safari_: _Filtry_, _Uživatelská pravidla_ a _Seznam povolených_
 
 - [DNS ochrana](/adguard-for-ios/features/dns-protection/)
 
@@ -35,7 +35,7 @@ Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který
 
 - [Další funkce](/adguard-for-ios/features/other-features.md)
 
-  General settings: theme, settings and statistics reset, auto-update, inverting the allowlist, and advanced mode.
+  Obecná nastavení: motiv, reset nastavení a statistik, automatická aktualizace, inverze seznamu povolených a pokročilý režim.
 
 - [Kompatibilita s AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 
