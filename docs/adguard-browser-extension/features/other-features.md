@@ -49,6 +49,6 @@ The *Send anonymized usage data* option can also be enabled on the post-installa
 
 ## About {#about}
 
-In the *About* section, you can find information about the current version, links to the EULA and Privacy policy, and a link to the repository of the Browser Extension on GitHub.
+In the *About* section, you can find information about the current version, links to the Privacy policy, and a link to the repository of the Browser Extension on GitHub.
 
 ![About *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/about.png)

@@ -12,6 +12,7 @@ This article is about AdGuard Browser Extension, which safeguards only your brow
 [AdGuard Browser Extension](https://adguard.com/adguard-browser-extension/overview.html) is a free extension that works in five popular browsers: Chrome, Firefox, Edge, Opera, and Yandex Browser. You can find and install it via your browser’s web store or download it from our official website.
 
 ![AdGuard Browser Extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
+
 ![Available for most popular browsers *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/extension_for_browsers.png)
 
 :::note

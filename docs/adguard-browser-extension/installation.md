@@ -18,7 +18,7 @@ This article is about AdGuard Browser Extension, which safeguards only your brow
 - [Microsoft Edge](#edge)
 - [Safari](#safari)
 
-### [Chrome and Chromium-based browsers]{#chrome-based}
+### Chrome and Chromium-based browsers {#chrome-based}
 
 Open the extension’s page in [Chrome Web Store](https://agrd.io/extension_chrome) and click *Add to Chrome*.
 
@@ -28,25 +28,25 @@ In the opened dialog, click *Add extension*.
 
 ![Dialog box in Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_extension_chrome.png)
 
-### [Opera]{#opera}
+### Opera {#opera}
 
 Open the page [addons.opera.com](https://agrd.io/extension_opera) and click *Add to Opera*.
 
 ![AdGuard Browser Extension in Opera addons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/opera_install.jpg)
 
-### [Firefox]{#firefox}
+### Firefox {#firefox}
 
 Open the page [addons.mozilla.org](https://agrd.io/extension_firefox) and click *Add to Firefox*.
 
 ![AdGuard Browser Extension in Firefox add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/mozilla_install.png)
 
-### [Yandex Browser]{#yandex}
+### Yandex Browser {#yandex}
 
 Click the browser settings button in the upper right corner of the browser, then choose *Extensions* → *Online safety*. Find AdGuard, then click *Install*.
 
 ![AdGuard Browser Extension in Yandex Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/yandex_install.png)
 
-### [Microsoft Edge]{#edge}
+### Microsoft Edge {#edge}
 
 Go to the [Edge Add-ons store](https://agrd.io/extension_edge) page and click *Get*.
 
@@ -62,6 +62,6 @@ Alternatively, you can install AdGuard Browser Extension for Edge from the [Chro
 
 In the opened dialog, click *Add extension*.
 
-### [Safari]{#safari}
+### Safari {#safari}
 
 AdGuard Mini for Mac (formerly AdGuard for Safari) is not a traditional browser extension. It was specifically built to comply with Apple’s strict content blocking limitations. For more details, you can read the [dedicated article](/adguard-mini-for-mac/). Or you can [download AdGuard Mini for Mac](https://agrd.io/mini_mac) directly from this page.
