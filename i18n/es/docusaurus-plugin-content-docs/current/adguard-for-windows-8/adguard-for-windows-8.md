@@ -1,36 +1,45 @@
 ---
-title: AdGuard for Windows v8
+title: AdGuard para Windows v8
 sidebar_position: 1
 ---
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Este artículo describe AdGuard para Windows v8.0, un bloqueador de anuncios integral que protege su dispositivo a nivel del sistema. Esta es una versión beta que aún está en desarrollo. Para probarlo, descarga la [versión beta de AdGuard para Windows](https://agrd.io/windows_beta).
 
 :::
 
-AdGuard para Windows es una herramienta fácil de usar que bloquea molestos banners, ventanas emergentes, anuncios de vídeo y rastreadores. But that’s not all: it helps you save traffic, load web pages faster, and protect your computer from undesirable and potentially malicious websites. AdGuard también te protege de los sitios web de phishing y mantiene a tus hijos alejados de contenidos inapropiados.
+AdGuard para Windows es una herramienta fácil de usar que bloquea molestos banners, ventanas emergentes, anuncios de vídeo y rastreadores. Pero eso no es todo: te ayuda a ahorrar tráfico, cargar páginas web más rápido y proteger tu ordenador de sitios web indeseables y potencialmente maliciosos. AdGuard también te protege de los sitios web de phishing y mantiene a tus hijos alejados de contenidos inapropiados.
 
-![Home screen](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
+## Requisitos del sistema
 
-On the Home screen, you’ll find a toggle to enable or disable AdGuard protection, as well as icons for _Ad blocking_, _Tracking protection_, _DNS protection_, and _Annoyance blocking_. Main settings can be accessed through the left-side menu.
+- **Versión del sistema operativo:** Microsoft Windows 10 o superior
+- **RAM:** al menos 6 GB
+- **Procesador:** 2 núcleos, 2,0 GHz (o más rápido)
+- **Espacio libre en disco:** al menos 4 GB.
+
+---
+
+![Pantalla de inicio](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
+
+En la pantalla de inicio, encontrarás un interruptor para habilitar o deshabilitar la protección de AdGuard, así como iconos para _bloqueo de anuncios_, _protección contra rastreo_, _protección DNS_ y _bloqueo de molestias_. La configuración principal se puede acceder a través del menú del lado izquierdo.
 
 ## [Protección DNS](/adguard-for-windows-8/protection/)
 
-Settings to configure _Ad blocking_, _Tracking protection_, _DNS protection_, _Annoyances blocking_, _Browsing security_, _Parental control_, and _Extensions_.
+Configuraciones para configurar _bloqueo de anuncios_, _protección contra seguimiento_, _protección DNS_, _bloqueo de molestias_, _seguridad de navegación_, _control parental_ y _extensiones_.
 
 ## [Estadísticas](/adguard-for-windows-8/statistics/)
 
-Detailed information about blocked ads, trackers, and data usage.
+Información detallada sobre anuncios bloqueados, rastreadores y uso de datos.
 
 ## [Administración de la app](/adguard-for-windows-8/app-management/)
 
-Settings to customize traffic filtering and routing for each app and browser.
+Configuración para personalizar el filtrado y el enrutamiento del tráfico para cada aplicación y navegador.
 
 ## [Ajustes](/adguard-for-windows-8/settings/)
 
-Options to select language and theme, view legal documents, check license information, and contact support. Advanced settings and network settings also live there.
+Opciones para seleccionar el idioma y el tema, ver documentos legales, consultar la información de la licencia y contactar con el soporte. La configuración avanzada y la configuración de red también se encuentran allí.
 
-Click _Check for updates_ to see whether your app version, filters, and extensions are up to date.
+Haz clic en _Comprobar actualizaciones_ para comprobar si la versión de tu app, los filtros y las extensiones están actualizados.
 
-![Check for updates](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/checking_for_updates.png)
+![Buscar actualizaciones](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/checking_for_updates.png)

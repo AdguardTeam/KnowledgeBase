@@ -11,7 +11,7 @@ Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement 
 
 - [Fonctionnalités](/adguard-browser-extension/features)
 
-  Main features and settings available in AdGuard Browser Extension
+  Les fonctionnalités principales et les réglages disponibles dans l'extension de navigateur AdGuard
 
 - [Disponibilité](/adguard-browser-extension/availability)
 

@@ -2671,8 +2671,7 @@ With these rules, specified UTM parameters will be removed from any request save
 [AdGuard for Chrome MV3][ext-mv3] has some limitations:
 
 - Regular expressions, negation and allowlist rules are not supported.
-- Generic rules are applied before specific rules, and redirection occurs only once. This may prevent subsequent or more specific redirects from applying.
-- Group of similar `$removeparam` rules will be combined into one. Beispiel:
+- Each `$removeparam` rule with a named parameter gets its own declarative rule with a param-aware `urlFilter` (e.g. `^utm_source=`). Chrome DNR applies a redirect only once per navigation, so without this, only the highest-priority rule would fire and the rest would be skipped. The param-aware `urlFilter` makes each rule fire only when its target parameter is present, forming a redirect chain — one parameter stripped per hop — until all are removed. Chrome allows up to 20 hops per navigation, which is enough for real-world tracking URLs. These hops are invisible to users. Beispiel:
 
     ```bash
     ||testcases.adguard.com$xmlhttprequest,removeparam=p1case1
@@ -2693,8 +2692,48 @@ With these rules, specified UTM parameters will be removed from any request save
         "transform": {
         "queryTransform": {
           "removeParams": [
-          "p1case1",
-          "p2case1",
+          "p1case1"
+          ]
+        }
+        }
+      }
+      },
+      "condition": {
+      "urlFilter": "||testcases.adguard.com*^p1case1=",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+      }
+    },
+    {
+      "id": 2,
+      "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+        "queryTransform": {
+          "removeParams": [
+          "p2case1"
+          ]
+        }
+        }
+      }
+      },
+      "condition": {
+      "urlFilter": "||testcases.adguard.com*^p2case1=",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+      }
+    },
+    {
+      "id": 3,
+      "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+        "queryTransform": {
+          "removeParams": [
           "P3Case1"
           ]
         }
@@ -2702,11 +2741,10 @@ With these rules, specified UTM parameters will be removed from any request save
       }
       },
       "condition": {
-      "urlFilter": "||testcases.adguard.com",
+      "urlFilter": "||testcases.adguard.com*^P3Case1=",
       "resourceTypes": [
         "xmlhttprequest"
-      ],
-      "isUrlFilterCaseSensitive": false
+      ]
       }
     },
     {
@@ -2724,10 +2762,10 @@ With these rules, specified UTM parameters will be removed from any request save
       }
       },
       "condition": {
+      "urlFilter": "^p1case2=",
       "resourceTypes": [
         "xmlhttprequest"
-      ],
-      "isUrlFilterCaseSensitive": false
+      ]
       }
     }
     ]
@@ -4590,7 +4628,7 @@ In the modifiers values, the following characters must be escaped: `[`, `]`, `,`
 | [$app](#non-basic-app-modifier)       |            ✅             |                       ❌                        |                        ❌                         |                       ❌                        |             ❌              |               ❌               |                ❌                 |
 | [$domain](#non-basic-domain-modifier) |            ✅             |                       ✅                        | ✅ [*[1]](#non-basic-domain-modifier-limitations) |                       ✅                        |             ✅              |               ✅               |                ❌                 |
 | [$path](#non-basic-path-modifier)     |            ✅             | ✅ [*[2]](#non-basic-path-modifier-limitations) |                        ❌                         | ✅ [*[2]](#non-basic-path-modifier-limitations) |             ✅              |               ✅               |                ❌                 |
-| [$url](#non-basic-url-modifier)       |            ✅             | ✅ [*[2]](#non-basic-url-modifier-limitations)  |  ✅ [*[2]](#non-basic-url-modifier-limitations)   | ✅ [*[2]](#non-basic-url-modifier-limitations)  |             ❌              |               ❌               |                ❌                 |
+| [$url](#non-basic-url-modifier)       |            ✅             | ✅ [*[3]](#non-basic-url-modifier-limitations)  |  ✅ [*[3]](#non-basic-url-modifier-limitations)   | ✅ [*[3]](#non-basic-url-modifier-limitations)  |             ❌              |               ❌               |                ❌                 |
 
 :::note
 
@@ -4700,7 +4738,7 @@ Path-in-domain syntax works with all types of cosmetic rules (`##`, `#@#`, `#$#`
 
 :::info Kompatibilität
 
-Path-in-domain syntax has been introduced in [CoreLibs][] v1.20.
+Path-in-domain syntax has been introduced in [CoreLibs][] v1.20, Browser extension v5.4.
 
 :::
 
@@ -5026,9 +5064,9 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 - `cli` — AdGuard for Linux — [https://filters.adtidy.org/cli/filters/2.txt](https://filters.adtidy.org/cli/filters/2.txt)
 
-- `android` — AdGuard for Android — [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
+- `android` — AdGuard for Android — [https://filters.adtidy.org/android/filters/2_optimized.txt](https://filters.adtidy.org/android/filters/2_optimized.txt)
 
-- `ios` — AdGuard for iOS — [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
+- `ios` — AdGuard for iOS — [https://filters.adtidy.org/ios/filters/2_optimized.txt](https://filters.adtidy.org/ios/filters/2_optimized.txt)
 
 - `ext_chromium` — AdGuard Browser Extension for Chrome — [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
 
@@ -5040,9 +5078,9 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 - `ext_opera` — AdGuard Browser Extension for Opera — [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
 
-- `ext_safari` — AdGuard for Safari — [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
+- `ext_safari` — AdGuard for Safari — [https://filters.adtidy.org/extension/safari/filters/2_optimized.txt](https://filters.adtidy.org/extension/safari/filters/2_optimized.txt)
 
-- `ext_android_cb` — AdGuard Content Blocker — [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
+- `ext_android_cb` — AdGuard Content Blocker — [https://filters.adtidy.org/extension/android-content-blocker/filters/2_optimized.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2_optimized.txt)
 
 - `ext_ublock` — uBlock Origin — [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
 
@@ -5192,7 +5230,7 @@ The following scriptlets also may be used for debug purposes:
 1. `AdGuard for Chromium` — [AdGuard Browser Extension](/adguard-browser-extension/availability) for Chrome and other Chromium-based browsers such as Microsoft Edge and Opera
 1. `AdGuard for Chrome MV3` — [AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version)
 1. `AdGuard for Firefox` — [AdGuard Browser Extension](/adguard-browser-extension/availability) for Firefox
-1. `AdGuard for iOS` — [AdGuard for iOS](/adguard-for-ios/features/safari-protection) and AdGuard Pro for iOS (for mobile Safari browser)
+1. `AdGuard für iOS` — [AdGuard für iOS](/adguard-for-ios/features/safari-protection) und AdGuard Pro für iOS (für den mobilen Safari-Browser)
 1. `AdGuard for Safari` — [AdGuard for desktop Safari browser](/adguard-for-safari/features/general)
 1. `AdGuard Content Blocker` — [Content Blocker](/adguard-content-blocker/overview) for Android mobile browsers: Samsung Internet and Yandex Browser
 

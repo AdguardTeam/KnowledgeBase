@@ -25,7 +25,7 @@ Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunziona
 
   Impostazioni generali, avanzate e quelli di basso livello che ti permettono di selezionare la lingua e il tema, personalizzare la protezione DNS, abilitare il filtraggio HTTPS e gestire i codici personali
 
-- [Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
+- [Guida alle impostazioni di basso livello](/adguard-for-android/features/low-level-settings.md)
 
   Descriptions of the low-level settings available in AdGuard for Android v4.3 and later.
 

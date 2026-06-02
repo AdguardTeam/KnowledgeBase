@@ -13,11 +13,11 @@ _Impostazioni_ è la sezione che richiede maggiore attenzione. Qui, puoi configu
 
 ### Impostazioni generali
 
-Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect _Debug logs_](/adguard-for-windows/solving-problems/adguard-logs.md).
+Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Inoltre, Impostazioni è il posto in cui andare se AdGuard per Windows non funziona correttamente e se il team di supporto ti ha richiesto di [raccogliere i _Registri di debug_](/adguard-for-windows/solving-problems/adguard-logs.md).
 
 ![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/general_settings.png)
 
-At the very bottom of the screen you will find _Advanced Settings_. Changing some of them mindlessly may potentially cause problems with AdGuard’s performance, break the Internet connection or compromise your security and privacy. That’s why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in _Advanced Settings_, read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
+At the very bottom of the screen you will find _Advanced Settings_. Changing some of them mindlessly may potentially cause problems with AdGuard’s performance, break the Internet connection or compromise your security and privacy. That’s why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. Se desideri scoprire cosa è possibile configurare nelle _Impostazioni Avanzate_, leggi l'[articolo dedicato](/adguard-for-windows/solving-problems/low-level-settings.md).
 
 ![Advanced Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/advanced_settings.png)
 
@@ -46,11 +46,11 @@ Many websites gather information about their visitors, such as their IP addresse
 
 You can adjust the _Tracking Protection_ settings as needed. For example, you can prevent websites from receiving the search request that you used to find them on the Internet, automatically delete third- and first-party cookies, and disable location sharing in your browser, to prevent tracking of your whereabouts.
 
-To learn everything about _Tracking protection_ and its many options, [read this article](/general/stealth-mode).
+Per imparare tutto sulla _Protezione dal tracciamento_ e sulle sue tante opzioni, [leggi questo articolo](/general/stealth-mode).
 
 ### Sicurezza di navigazione
 
-Browsing security gives strong protection against malicious and phishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it’s already started, nor delete the already existing ones. But it will warn you if you’re about to proceed to a website whose domain has been added to our “untrusted sites” database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
+Browsing security gives strong protection against malicious and phishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it’s already started, nor delete the already existing ones. But it will warn you if you’re about to proceed to a website whose domain has been added to our “untrusted sites” database, or to download a file from such website. Puoi trovare ulteriori informazioni sul funzionamento di questo modulo nell'[articolo dedicato](/general/browsing-security).
 
 In this module, you can:
 
@@ -60,7 +60,7 @@ In this module, you can:
 
 ![Browsing security \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/browsing_security.png)
 
-In case you want to learn more about Browsing security, read [this article](/general/browsing-security).
+Nel caso in cui tu desideri scoprire di più sulla Sicurezza di navigazione, leggi [questo articolo](/general/browsing-security/).
 
 ### DNS Protection
 
@@ -93,4 +93,4 @@ In the _Parental control_ module you can enable the _Safe search_ and manage the
 
 ![Browser Assistant \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/browser_assistant.png)
 
-From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](/adguard-for-windows/browser-assistant.md).
+From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. Abbiamo spiegato di più sul funzionamento e sul da farsi se non è presente alcun Browser Assistant per il tuo browser, in un [articolo separato](/adguard-for-windows/browser-assistant.md).

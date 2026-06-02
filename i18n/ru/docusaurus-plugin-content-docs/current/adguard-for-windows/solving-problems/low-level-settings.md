@@ -107,89 +107,93 @@ sidebar_position: 7
 
 Добавляет дополнительный пробел между методом HTTP и URL и удаляет пробел после поля «Host:», чтобы избежать «глубокую проверку пакетов». Например, правило
 
-`GET /foo/bar/ HTTP/1.1
-Host: example.org`
+```text
+GET /foo/bar/ HTTP/1.1
+Host: example.org
+```
 
-будет преобразовано в
+will be converted to
 
-`GET  /foo/bar/ HTTP/1.1
-Host:example.org`
+```text
+GET  /foo/bar/ HTTP/1.1
+Host:example.org
+```
 
-Эта настройка применяется только в том случае, если в режиме Антитрекинг включён параметр *Защищать от DPI*.
+This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Настроить размер фрагментации начального пакета TLS
 
-Определяет размер фрагментации пакетов TCP, позволяющий избежать глубокой проверки пакетов. Этот параметр влияет только на защищённый трафик (HTTPS).
+Specifies the size of the TCP packet fragmentation, avoiding deep packet inspection. This option only affects secured (HTTPS) traffic.
 
-Если эта опция включена, AdGuard разбивает начальный TLS-пакет (пакет Client Hello) на две части: первая имеет указанную длину, а вторая — остаток, вплоть до длины всего начального TLS-пакета.
+If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Допустимые значения: 1–1500. Если указан недопустимый размер, будет использоваться значение, установленное системой. Эта настройка применяется только в том случае, если в режиме Антитрекинг включён параметр *Защищать от DPI*.
+Valid values: 1–1500. Если указан недопустимый размер, будет использоваться значение, установленное системой. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Размер фрагмента обычного HTTP-запроса
 
-Настраивает размер фрагментации HTTP-запроса. Этот параметр влияет только на обычный HTTP-трафик. Если эта опция включена, AdGuard разбивает начальный пакет на две части: первая имеет указанную длину, а вторая — остаток, вплоть до длины всего исходного пакета.
+Настраивает размер фрагментации HTTP-запроса. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-Допустимые значения: 1–1500. Если указан недопустимый размер, будет использоваться значение, установленное системой. Эта настройка применяется только в том случае, если в режиме Антитрекинг включён параметр *Защищать от DPI*.
+Допустимые значения: 1–1500. Если указан недопустимый размер, будет использоваться значение, установленное системой. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Показывать QUIC
 
-Позволяет отображать записи протокола QUIC в отчёте журнала фильтрации. Эта опция работает только для заблокированных запросов.
+Allows displaying the QUIC protocol records in the filtering log. For blocked requests only.
 
 ### Включить поддержку активности TCP
 
-Периодически отправляет TCP-пакеты по неактивному соединению, чтобы убедиться в его работоспособности и продлить время ожидания NAT. Эта опция может быть полезна для обхода строгих настроек трансляции сетевых адресов (NAT), которые используют некоторые провайдеры.
+Допустимые значения: 1–1500. Если указан недопустимый размер, будет использоваться значение, установленное системой.
 
 ### Интервал проверки активности TCP
 
-Здесь вы можете указать период простоя в секундах перед проверкой активности. Если указано 0, будет использоваться значение, установленное системой.
+Here you can specify an idle time period, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used.
 
 :::note
 
-Этот параметр работает только в том случае, если включена опция *Включить проверку активности TCP*.
+This setting only works when the *Enable TCP keepalive* option is enabled.
 
 :::
 
 ### Тайм-аут ожидания TCP
 
-Здесь вы можете указать время в секундах, прежде чем отправить ещё одну проверку активности не отвечающему узлу. Если указано 0, будет использоваться значение, установленное системой.
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
 
 :::note
 
-Этот параметр работает только в том случае, если включена опция *Включить проверку активности TCP*.
+This setting only works when the *Enable TCP keepalive* option is enabled.
 
 :::
 
 ### Блокировать Java
 
-Некоторые сайты и веб-сервисы до сих пор используют устаревшие технологии поддержки Java-плагинов. API-интерфейс, лежащий в основе Java-плагинов, небезопасен. Вы можете отключить такие плагины в целях безопасности. Тем не менее, даже если вы решите использовать опцию *Блокировать Java*, JavaScript будет по-прежнему включён.
+Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
 
 ### Время ожидания ответа DNS-сервера
 
-В этом поле вы можете указать время в миллисекундах, в течение которого AdGuard будет ждать ответа от выбранного DNS-сервера, прежде чем прибегнуть к резервному. Если вы не заполните это поле или введёте недопустимое значение, будет использовано значение 5000.
+Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
 
 ### Использовать HTTP/3 для DNS-over-HTTPS
 
-Включает HTTP/3 для upstream-серверов DNS-over-HTTPS для ускорения соединения, если выбранный upstream поддерживает этот протокол. Включение данной опции не гарантирует, что все DNS-запросы будут отправляться через HTTP/3.
+Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection if the selected upstream supports this protocol. This means that enabling this option does not guarantee that all DNS requests will be sent via HTTP/3.
 
 ### Использовать резервные upstream DNS-серверы
 
-Обычные запросы будут перенаправлены в резервный upstream-сервер, если все DNS-запросы к выбранным upstream-серверам будут неудачными.
+Normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
 
 ### Выполнять запросы к upstream DNS-серверам параллельно
 
-Все upstream-серверы будут запрашиваться параллельно, и будет возвращён первый ответ. Поскольку DNS-запросы выполняются параллельно, включение этой функции увеличивает скорость интернета.
+All upstreams will be queried in parallel and the first response is returned. Since DNS queries are made in parallel, enabling this feature increases the Internet speed.
 
 ### Всегда отвечать на неудачные DNS-запросы
 
-Если разрешение адресов не удалось на каждом из перенаправленных upstream-серверов, а также на резервных доменах, то ответом на DNS-запрос будет `SERVFAIL`.
+If address resolving failed on each of the forwarded upstreams, as well as on the fallback domains, then the response to the DNS request will be `SERVFAIL`.
 
 ### Включить фильтрацию зашифрованных DNS-запросов
 
-Помимо незашифрованных DNS-запросов, AdGuard будет перенаправлять на локальный DNS-прокси зашифрованные.
+AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
 
 ### Режим блокировки для правил hosts
 
-Здесь вы можете выбрать, как AdGuard будет реагировать на домены, заблокированные DNS-правилами на основе [синтаксиса правил hosts](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
 - Ответ ошибкой «Refused»
 - Ответ ошибкой «NxDomain»
@@ -197,7 +201,7 @@ Host:example.org`
 
 ### Режим блокировки для правил adblock
 
-Здесь вы можете выбрать, как AdGuard будет реагировать на домены, заблокированные DNS-правилами на основе [синтаксиса по примеру блокировщиков](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [adblock-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
 - Ответ ошибкой «Refused»
 - Ответ ошибкой «NxDomain»
@@ -205,15 +209,15 @@ Host:example.org`
 
 ### Пользовательский IPv4-адрес
 
-Если для «Режима блокировки для правил hosts» или «Режима блокировки для правил adblock» выбран пользовательский IP-адрес, он будет возвращён в ответ на заблокированные запросы А. Если он не указан, AdGuard ответит ошибкой «Refused» по умолчанию.
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked A requests. If none are specified, AdGuard will reply with the default Refused error.
 
 ### Пользовательский IPv6-адрес
 
-Если для «Режима блокировки для правил hosts» или «Режима блокировки для правил adblock» выбран пользовательский IP-адрес, он будет возвращён в ответ на заблокированные запросы АAAA. Если он не указан, AdGuard ответит ошибкой «Refused» по умолчанию.
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
 ### Резервные (fallback) серверы
 
-Здесь вы можете указать альтернативный DNS-сервер, на который будет перенаправлен DNS-запрос, если основной сервер не ответит в течение времени ожидания, указанного в следующем разделе. Есть три варианта на выбор:
+Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
 
 - Не использовать резервные серверы;
 - Использовать системные серверы;
@@ -221,22 +225,22 @@ Host:example.org`
 
 ### Блокировать ECH
 
-Если опция включена, AdGuard удаляет из ответов параметры Encrypted Client Hello.
+If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
 
 ### Список пользовательских резервных (fallback) серверов
 
-Если вы хотите, чтобы AdGuard использовал пользовательские fallback-серверы, перечислите их в этом разделе, по одному в строке.
+If you want AdGuard to use custom fallback servers, list them in this section, one per line.
 
 ### Список пользовательских bootstrap-адресов
 
-Bootstrap — это промежуточный DNS-сервер, используемый для получения IP-адреса безопасного DNS-сервера, который вы выбрали ранее в разделе *DNS-защита*. Такое «промежуточное звено» нужно при использовании протоколов, которые обозначают адрес сервера буквами (например, DNS-over-TLS). В этом случае bootstrap выступает в роли переводчика, трансформируя буквы в цифры, понятные вашей системе.
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
-По умолчанию используется системный DNS-резолвер, а первоначальный bootstrap-запрос идёт через 53 порт. Если вас это не устраивает, перечислите здесь IP-адреса DNS-серверов, которые будут использоваться для определения адреса зашифрованного DNS-сервера. Указанные IP-адреса будут применены в порядке перечисления. Если вы укажете некорректные адреса или не укажете их вовсе, будут использованы системные IP-адреса.
+By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
 
 ### DNS-исключения
 
-Все DNS-запросы к перечисленным здесь доменам будут перенаправляться на системный DNS-сервер вместо DNS-сервера, указанного в настройках приложения. Также к таким запросам не будут применяться правила DNS-фильтрации.
+All DNS requests to domains listed here will be redirected to the system default DNS server instead of the DNS server specified in the app’s settings. Also, DNS blocking rules will not be applied to such requests.
 
 ### Исключить указанные сети Wi-Fi (SSID) из DNS-фильтрации
 
-DNS-защита не распространяется на сети Wi-Fi, перечисленные в этом разделе. Укажите сети Wi-Fi (SSID) по одной в строке. Это может быть полезно, если конкретная сеть Wi-Fi уже защищена AdGuard Home или другой системой DNS-защиты. В этом случае не нужно снова фильтровать DNS-запросы.
+DNS protection will not include Wi-Fi networks listed in this section. Specify Wi-Fi networks names (SSIDs) one per line. This can be useful if a particular Wi-Fi network is already protected by AdGuard Home or another DNS protection system. In this case, it is superfluous to filter DNS requests again.

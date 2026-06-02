@@ -11,6 +11,15 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 AdGuard for Windows は、迷惑なバナー、ポップアップ、ビデオ広告、トラッカーをブロックする使いやすいツールです。 But that’s not all: it helps you save traffic, load web pages faster, and protect your computer from undesirable and potentially malicious websites. また、AdGuard はフィッシング Web サイトからユーザーを保護し、お子様を不適切なコンテンツから守ります。
 
+## 動作環境
+
+- **OS version:** Microsoft Windows 10 or higher
+- **RAM:** at least 6 GB
+- **Processor:** 2-core, 2.0 GHz (or faster)
+- **Free disk space:** at least 4 GB.
+
+---
+
 ![Home screen](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
 
 On the Home screen, you’ll find a toggle to enable or disable AdGuard protection, as well as icons for _Ad blocking_, _Tracking protection_, _DNS protection_, and _Annoyance blocking_. Main settings can be accessed through the left-side menu.

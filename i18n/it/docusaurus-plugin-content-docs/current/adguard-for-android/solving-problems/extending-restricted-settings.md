@@ -9,7 +9,7 @@ Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunziona
 
 :::
 
-In an effort to improve user privacy, Google has expanded the restriction settings in Android 15. More settings, such as _App usage access_, now require an additional permission to be enabled. Since the _[Firewall](/adguard-for-android/features/protection/firewall)_ and _[Detect Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea)_ features require the _App usage access_ setting to be enabled for them to work properly, you may have experienced problems using them. To resolve these issues, please follow the steps below.
+In an effort to improve user privacy, Google has expanded the restriction settings in Android 15. More settings, such as _App usage access_, now require an additional permission to be enabled. Poiché le funzioni _[Firewall](/adguard-for-android/features/protection/firewall)_ e _[Rileva Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea)_ richiedono che l'impostazione _Accesso all'uso dell'app_ sia abilitata affinché funzionino correttamente, puoi aver riscontrato problemi nell'usarle. To resolve these issues, please follow the steps below.
 
 :::note
 

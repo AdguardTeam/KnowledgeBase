@@ -5,7 +5,7 @@ sidebar_position: 1
 
 - [Obecné](/adguard-for-safari/features/general.md)
 
-  Basic features, including notifications, update intervals, and logging level
+  Základní funkce, včetně oznámení, intervalů aktualizací a úrovně záznamů
 
 - [Filtry](/adguard-for-safari/features/filters.md)
 

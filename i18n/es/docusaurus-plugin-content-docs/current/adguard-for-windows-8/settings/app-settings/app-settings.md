@@ -1,26 +1,26 @@
 ---
-title: App settings
+title: Configuración de la aplicación
 sidebar_position: 1
 ---
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Este artículo describe AdGuard para Windows v8.0, un bloqueador de anuncios integral que protege su dispositivo a nivel del sistema. Esta es una versión beta que aún está en desarrollo. Para probarlo, descarga la [versión beta de AdGuard para Windows](https://agrd.io/windows_beta).
 
 :::
 
-![App settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/1_app_settings.png)
+![Configuración de la app](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/1_app_settings.png)
 
-Here you can adjust the main app settings: choose between light and dark themes, set the app language, enable AdGuard to launch at system startup, and allow silent automatic updates. It’s also possible to select the update channel and specify how often AdGuard checks for filter updates.
+Aquí puedes ajustar la configuración principal de la aplicación: elegir entre temas claros y oscuros, configurar el idioma de la aplicación, habilitar AdGuard para que se inicie al arrancar el sistema y permitir las actualizaciones automáticas silenciosas. También es posible seleccionar el canal de actualización y especificar con qué frecuencia AdGuard comprueba las actualizaciones de filtros.
 
-If you wish, you can agree to send anonymized app usage data to help us improve the product.
+Si lo deseas, puedes aceptar enviar datos de uso de apps anonimizados para ayudarnos a mejorar el producto.
 
-In case of issues, you can change the logging level to create detailed logs for the support team.
+En caso de problemas, puedes cambiar el nivel de registro para crear registros detallados para el equipo de soporte.
 
 En [_Editor de filtrado_](/adguard-for-windows-8/settings/app-settings/filter-editor.md), puedes añadir tus propias reglas de filtrado o importar filtros listos para usar.
 
 [_Configuración de red_](/adguard-for-windows-8/settings/app-settings/network-settings.md) incluyen todas las opciones relacionadas con el filtrado de red y cómo AdGuard interactúa con la red de tu sistema.
 
-La configuración [_Avanzado_](/adguard-for-windows-8/settings/app-settings/advanced-settings.md) está destinada a usuarios experimentados. They are rarely needed in everyday use and should only be changed if you know what you’re doing or if our support team asks you to.
+La configuración [_Avanzado_](/adguard-for-windows-8/settings/app-settings/advanced-settings.md) está destinada a usuarios experimentados. Rara vez se necesitan en el uso diario y solo deben cambiarse si sabes lo que haces o si nuestro equipo de soporte te lo pide.
 
-![App settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/2_app_settings.png)
+![Configuración de la app](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/2_app_settings.png)
