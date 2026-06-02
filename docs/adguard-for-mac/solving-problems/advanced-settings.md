@@ -57,6 +57,10 @@ Redirects secure DNS requests to a local DNS proxy, if there is one available.
 
 By setting `true`, you enable HTTPS certificate revocation checking.
 
+#### `network.http.compress.body`
+
+Enables HTTP body compression after processing. CoreLibs will compress HTTP response body before sending it with original response algorithm (if supported) or with default fallback algorithm (GZip). Currently only GZip compression algorithm is implemented. Responses from BrowserApi will also be encoded if this option is enabled.
+
 #### `network.tcp.keepalive.enabled`
 
 Periodically sends TCP packets over an idle connection to ensure that it remains active and to renew NAT timeouts.
