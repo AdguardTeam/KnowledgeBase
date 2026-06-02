@@ -5,7 +5,7 @@ sidebar_position: 1
 
 - [Funktionen](/adguard-for-ios/features/features.md)
 
-  Main features and settings available in AdGuard for iOS
+  Die wichtigsten Funktionen und Einstellungen von AdGuard für iOS
 
 - [Installation](/adguard-for-ios/installation.md)
 

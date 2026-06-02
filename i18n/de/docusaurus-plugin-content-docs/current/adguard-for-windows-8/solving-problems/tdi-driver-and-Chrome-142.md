@@ -35,9 +35,9 @@ AdGuard behandelt den TDI-Treiber bereits als veraltet, und seine vollständige 
 
 ## Dauerhafte Lösung
 
-Ab Version 8.0 RC wurde eine experimentelle Unterstützung für den SockFilter-Treiber hinzugefügt. It fixes the issue by solving conflicts in the WFP stack. [Weitere Informationen](/adguard-for-windows-8/settings/app-settings/network-settings/).
+Ab Version 8.0 RC wurde eine experimentelle Unterstützung für den SockFilter-Treiber hinzugefügt. Das Problem wird dadurch behoben, dass Konflikte im WFP-Stack gelöst werden. [Weitere Informationen](/adguard-for-windows-8/settings/app-settings/network-settings/).
 
-To use it, go to _Settings → Network → Traffic filtering_, enable traffic filtering, and select _SockFilter (Experimental)_ from the list of available options.
+Um diese Funktion nutzen zu können, öffnen Sie _Einstellungen → Netzwerk → Datenfilterung_, aktivieren Sie die Datenfilterung und wählen Sie _SockFilter (Experimentell)_ aus der Liste der verfügbaren Optionen aus.
 
 Da es sich um eine experimentelle Funktion handelt, kann es zu Fehlern kommen. Sollten Sie etwas Ungewöhnliches, Unerwartetes oder einfach nur eine Fehlfunktion bemerken, **können Sie jederzeit im selben Abschnitt wieder zu TDI oder WFP zurückwechseln**.
 

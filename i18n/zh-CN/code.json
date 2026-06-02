@@ -1,4 +1,12 @@
 {
+  "siteConfig.title": {
+    "message": "AdGuard 知识库",
+    "description": "The site title used in the browser tab and metadata"
+  },
+  "siteConfig.tagline": {
+    "message": "AdGuard 产品知识库",
+    "description": "The site tagline used in meta description"
+  },
   "theme.ErrorPageContent.title": {
     "message": "此页面崩溃了。",
     "description": "The title of the fallback page when the page crashed"

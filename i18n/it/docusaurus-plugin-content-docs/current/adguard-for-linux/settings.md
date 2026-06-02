@@ -302,3 +302,46 @@ adguard-cli import-settings -i "/path/to/settings.zip"
 ```
 
 The `-i` or `--input` flag is required and specifies the path to the settings archive to import.
+
+## AdGuard Browser Assistant
+
+AdGuard Browser Assistant ti consente di gestire la protezione AdGuard direttamente dal tuo browser.
+
+![Schermo Assistant \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
+
+### Come funziona
+
+AdGuard Browser Assistant è un'estensione del browser. It allows you to quickly manage AdGuard for Linux:
+
+- Enable or disable protection for a specific website (the toggle under the website name)
+- Disabilitare protezione per 30 secondi
+- Disattivare la protezione (l'icona di pausa nell'angolo in alto a destra)
+- Bloccare manualmente un annuncio
+- Segnalare blocco non corretto
+- Manage HTTPS filtering (the lock icon next to the website name)
+
+### Come installare
+
+To install Native Messaging manifests for browser integration, use:
+
+```sh
+adguard-cli install-browser-integration
+```
+
+To uninstall the manifests, use:
+
+```sh
+adguard-cli install-browser-integration --uninstall
+```
+
+**Install AdGuard Browser Assistant extension**:
+
+1. Apri la [pagina dell'Assistant](https://adguard.com/adguard-assistant/overview.html).
+2. Sotto il nome del tuo browser, seleziona _Installa_.
+3. Installa l'Assistant dallo store delle estensioni del tuo browser.
+
+:::info Compatibilità
+
+Support for AdGuard Browser Assistant is available starting from AdGuard for Linux v1.4.
+
+:::

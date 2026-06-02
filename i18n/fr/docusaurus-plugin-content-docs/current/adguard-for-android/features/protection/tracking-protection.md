@@ -77,4 +77,4 @@ Voici les fonctionnalités actives des niveaux préconfigurés :
 
    k. _Retirer l'en-tête X-Client-Data_. Cette fonctionnalité empêche Google Chrome d'envoyer ses informations de version et de modifications aux domaines Google (y compris DoubleClick et Google Analytics)
 
-You can tweak individual settings in _Tracking protection_ to create a custom configuration. Each setting has a description to help you understand its purpose. [Read more about various _Tracking protection_ settings](/general/stealth-mode) and use them cautiously, as some may interfere with the functionality of websites and browser extensions.
+You can tweak individual settings in _Tracking protection_ to create a custom configuration. Each setting has a description to help you understand its purpose. [Découvrez-en plus sur les différents paramètres de _Protection contre le suivi_](/general/stealth-mode) et utilisez-les avec prudence, car certains peuvent interférer avec la fonctionnalité des sites Web et des extensions de navigateur.

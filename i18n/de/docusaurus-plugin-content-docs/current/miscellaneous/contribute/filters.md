@@ -11,15 +11,15 @@ Websites ändern ständig die Art und Weise, wie sie Anzeigen einbetten, und wir
 
 :::note
 
-All contributors must follow the **AdGuard filter policy** when creating rules. By participating, you agree to comply with the Policy and ensure your rules adhere to its requirements. Also contributors must not create rules intended to deliberately block websites or services that do not meet the criteria for blocking or that fall under exceptions described in the Policy.
+Alle Mitwirkenden müssen sich bei der Erstellung von Regeln an die **AdGuard-Filterrichtlinie** halten. Mit Ihrer Teilnahme erklären Sie sich damit einverstanden, die Richtlinien einzuhalten und sicherzustellen, dass Ihre Regeln den darin festgelegten Anforderungen entsprechen. Außerdem dürfen Mitwirkende keine Regeln erstellen, die darauf abzielen, Websites oder Dienste absichtlich zu sperren, die die Kriterien für eine Sperrung nicht erfüllen oder unter die in der Richtlinie beschriebenen Ausnahmen fallen.
 
 :::
 
 ### Wie man anfängt {#how-to-start}
 
-Die Arbeit mit blockierenden Filtern erfordert jedoch spezifische Fähigkeiten. Wenn Sie diese haben und wissen, wie man Regeln erstellt, dann gehen Sie direkt zu unserem [AdGuard Filters Repository](https://github.com/AdguardTeam/AdguardFilters) auf GitHub. Before you start contributing, we recommend reviewing the [guidelines](https://github.com/AdguardTeam/AdguardFilters/blob/master/CONTRIBUTING.md).
+Die Arbeit mit blockierenden Filtern erfordert jedoch spezifische Fähigkeiten. Wenn Sie diese haben und wissen, wie man Regeln erstellt, dann gehen Sie direkt zu unserem [AdGuard Filters Repository](https://github.com/AdguardTeam/AdguardFilters) auf GitHub. Bevor Sie mit der Mitarbeit beginnen, empfehlen wir Ihnen, die [Richtlinien](https://github.com/AdguardTeam/AdguardFilters/blob/master/CONTRIBUTING.md) durchzulesen.
 
-In the repository, you will find a lot of open issues, each one referencing a problem with some website problem — a missed ad, a false positive, etc. Wählen Sie beliebige aus und schlagen Sie Ihre eigenen Regeln in den Kommentaren vor. AdGuard-Filteringenieure prüfen Ihre Vorschläge und wenn sie sie für angemessen halten, werden Ihre Regeln zu AdGuard-Filtern hinzugefügt.
+Im Repository finden Sie zahlreiche offene Issues, die sich jeweils auf ein Problem mit einer Website beziehen — eine verpasste Anzeige, ein falsch positives Ergebnis usw. Wählen Sie beliebige aus und schlagen Sie Ihre eigenen Regeln in den Kommentaren vor. AdGuard-Filteringenieure prüfen Ihre Vorschläge und wenn sie sie für angemessen halten, werden Ihre Regeln zu AdGuard-Filtern hinzugefügt.
 
 Wenn Sie mit der Syntax unserer Filterregeln noch nicht vertraut sind oder vielleicht eine Auffrischung benötigen, finden Sie die Grundlagen der Syntax [in unserer Wissensdatenbank](/general/ad-filtering/create-own-filters).
 

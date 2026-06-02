@@ -5,7 +5,7 @@ sidebar_position: 1
 
 - [Allgemein](/adguard-for-mac/features/general.md)
 
-  Basic features, including notifications, update intervals, and logging level
+  Grundlegende Funktionen, einschließlich Benachrichtigungen, Aktualisierungsintervalle und Protokollierungsstufe
 
 - [Filter](/adguard-for-safari/features/filters.md)
 

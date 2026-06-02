@@ -120,7 +120,7 @@
     "description": "The label for category 'AdGuard Mini for Mac' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.solving-problems": {
-    "message": "solving-problems",
+    "message": "řešení problémů",
     "description": "The label for category 'solving-problems' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.features-adguard-for-windows": {

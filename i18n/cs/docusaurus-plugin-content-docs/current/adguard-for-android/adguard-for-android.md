@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 - [Funkce](/adguard-for-android/features/features.md)
 
-  Main features and settings available in AdGuard for Android
+  Hlavní funkce a nastavení dostupné v aplikaci AdGuard pro Android
 
 - [Instalace](/adguard-for-android/installation.md)
 

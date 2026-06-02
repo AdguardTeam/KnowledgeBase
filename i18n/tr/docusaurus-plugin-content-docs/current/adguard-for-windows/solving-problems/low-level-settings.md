@@ -107,85 +107,89 @@ Bu seçenek **yalnızca hata ayıklama amacıyla** etkinleştirilmelidir. Tickin
 
 HTTP yöntemi ile URL arasına fazladan boşluk ekler ve Derin Paket İncelemesini önlemek için "Ana makine:" alanından sonraki boşluğu kaldırır. Örneğin, istek
 
-`GET /foo/bar/ HTTP/1.1
-Host: example.org`
+```text
+GET /foo/bar/ HTTP/1.1
+Host: example.org
+```
 
-şuna dönüştürülecektir
+will be converted to
 
-`GET  /foo/bar/ HTTP/1.1
-Host:example.org`
+```text
+GET  /foo/bar/ HTTP/1.1
+Host:example.org
+```
 
-Bu seçenek yalnızca *DPİ'den koru* Gizlilik Modu seçeneği etkinleştirildiğinde uygulanır.
+This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### İlk TLS paketinin parçalanma boyutunu ayarla
 
-Derin paket incelemesinden kaçınarak TCP paket parçalanmasının boyutunu belirtir. Bu seçenek yalnızca güvenli (HTTPS) trafiğini etkiler.
+Specifies the size of the TCP packet fragmentation, avoiding deep packet inspection. This option only affects secured (HTTPS) traffic.
 
 If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Geçerli değerler: 1–1500. Geçersiz boyut belirtilirse, sistem tarafından seçilen değer kullanılacaktır. Bu seçenek yalnızca *DPİ'den koru* Gizlilik Modu seçeneği etkinleştirildiğinde uygulanır.
+Valid values: 1–1500. Geçersiz boyut belirtilirse, sistem tarafından seçilen değer kullanılacaktır. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Düz HTTP istek parçası boyutu
 
-HTTP istek parçalanmasının boyutunu ayarlar. Bu seçenek yalnızca düz HTTP trafiğini etkiler. Bu seçenek etkinleştirilirse, AdGuard ilk paketi iki parçaya böler: ilki belirtilen uzunluğa sahiptir ve ikincisi tüm orijinal paketin uzunluğuna kadar geri kalanına sahiptir.
+HTTP istek parçalanmasının boyutunu ayarlar. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-Geçerli değerler: 1–1500. Geçersiz boyut belirtilirse, sistem tarafından seçilen değer kullanılır. Bu seçenek yalnızca *DPİ'den koru* Gizlilik Modu seçeneği etkinleştirildiğinde uygulanır.
+Geçerli değerler: 1–1500. Geçersiz boyut belirtilirse, sistem tarafından seçilen değer kullanılacaktır. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### QUIC'i göster
 
-QUIC protokolü kayıtlarının filtreleme günlüğünde görüntülenmesine izin verir. Yalnızca engellenen istekler için.
+Allows displaying the QUIC protocol records in the filtering log. For blocked requests only.
 
 ### TCP keepalive'ı etkinleştir
 
-Etkin olduğundan emin olmak ve NAT zaman aşımlarını yenilemek için boşta olan bağlantı üzerinden periyodik olarak TCP paketleri gönderir. Bu seçenek, bazı İSS'lerin kullandığı katı ağ adresi dönüştürme (NAT) ayarlarını atlamak için yararlı olabilir.
+Geçerli değerler: 1–1500. This option can be useful to bypass the strict network address translation (NAT) settings that some ISPs use.
 
 ### TCP keepalive aralığı
 
-Burada, bir keepalive probu göndermeden önce saniye cinsinden boşta kalma süresini belirtebilirsiniz. 0 belirtilirse, sistem tarafından seçilen değer kullanılacaktır.
+Here you can specify an idle time period, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used.
 
-:::not
+:::note
 
-Bu ayar yalnızca *TCP keepalive'ı etkinleştir* seçeneği etkinleştirildiğinde çalışır.
+This setting only works when the *Enable TCP keepalive* option is enabled.
 
 :::
 
 ### TCP keepalive zaman aşımı
 
-Burada, yanıt vermeyen bir eşe başka bir keepalive probu göndermeden önce geçen süreyi saniye cinsinden belirtebilirsiniz. 0 belirtilirse, sistem tarafından seçilen değer kullanılacaktır.
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
 
-:::not
+:::note
 
-Bu ayar yalnızca *TCP keepalive'ı etkinleştir* seçeneği etkinleştirildiğinde çalışır.
+This setting only works when the *Enable TCP keepalive* option is enabled.
 
 :::
 
 ### Java'yı engelle
 
-Bazı siteler ve web hizmetleri hâlâ Java Eklentilerini desteklemektedir. Java eklentilerine temel oluşturan API'nin ciddi güvenlik açıkları bulunmaktadır. Güvenlik amacıyla bu tür eklentileri devre dışı bırakabilirsiniz. Bununla birlikte, *Java'yı engelle* seçeneğini kullanmaya karar verseniz bile, JavaScript hâlâ etkin olacaktır.
+Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
 
 ### DNS sunucusu zaman aşımı süresi
 
-Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. Bu alanı doldurmazsanız veya geçersiz bir değer girerseniz, 5000 değeri kullanılacaktır.
+Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
 
 ### DNS-over-HTTPS için HTTP/3 kullan
 
-Seçilen üst kaynak bu protokolü destekliyorsa, bağlantıyı hızlandırmak amacıyla DNS-over-HTTPS üst kaynakları için HTTP/3'ü etkinleştirir. Bu, bu seçeneğin etkinleştirilmesinin tüm DNS isteklerinin HTTP/3 aracılığıyla gönderileceğini garanti etmediği anlamına gelir.
+Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection if the selected upstream supports this protocol. This means that enabling this option does not guarantee that all DNS requests will be sent via HTTP/3.
 
 ### Yedek DNS üst kaynaklarını kullan
 
-Seçilen üst kaynaklara yönelik tüm DNS istekleri başarısız olursa, normal sorgular yedek kaynağa yönlendirilecektir.
+Normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
 
 ### DNS üst kaynaklarını paralel olarak sorgulama
 
-Tüm üst kaynaklar paralel olarak sorgulanacak ve ilk yanıt döndürülecektir. DNS sorguları paralel olarak yapıldığından bu özelliğin etkinleştirilmesi internet hızını artırır.
+All upstreams will be queried in parallel and the first response is returned. Since DNS queries are made in parallel, enabling this feature increases the Internet speed.
 
 ### Başarısız DNS sorgularına her zaman yanıt ver
 
-Yönlendirilen üst kaynakların her birinde ve yedek alan adlarında adres çözümlemesi başarısız olursa, DNS isteğine verilen yanıt `SERVFAIL` olacaktır.
+If address resolving failed on each of the forwarded upstreams, as well as on the fallback domains, then the response to the DNS request will be `SERVFAIL`.
 
 ### Güvenli DNS isteklerinin filtrelenmesini etkinleştir
 
-AdGuard, düz DNS isteklerine ek olarak güvenli DNS isteklerini yerel DNS proxy'sine yönlendirir.
+AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
 
 ### hosts kuralları için engelleme modu
 
@@ -205,15 +209,15 @@ Here you can select the way AdGuard will respond to domains blocked by DNS rules
 
 ### Özel IPv4 adresi
 
-hosts kuralları için Engelleme modunda veya reklam engelleme stili kuralları için Engelleme modunda Özel IP adresi seçilirse, bu IP adresi engellenen A isteklerine yanıt olarak döndürülür. Hiçbiri belirtilmezse, AdGuard varsayılan Refused hatasıyla yanıt verir.
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked A requests. If none are specified, AdGuard will reply with the default Refused error.
 
 ### Özel IPv6 adresi
 
-hosts kuralları için Engelleme modunda veya reklam engelleme stili kuralları için Engelleme modunda Özel IP adresi seçilirse, bu IP adresi engellenen AAAA isteklerine yanıt olarak döndürülür. Hiçbiri belirtilmezse, AdGuard varsayılan "Refused" hatasıyla yanıt verir.
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
 ### Yedek sunucular
 
-Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. Aralarından seçim yapabileceğiniz üç seçenek vardır:
+Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
 
 - Yedek sunucuları kullanmayın;
 - Sistem varsayılan sunucularını kullanın;
@@ -225,18 +229,18 @@ If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
 
 ### Özel yedek sunucuların listesi
 
-AdGuard'ın özel yedek sunucular kullanmasını istiyorsanız, bunları bu bölümde her satıra bir tane gelecek şekilde listeleyin.
+If you want AdGuard to use custom fallback servers, list them in this section, one per line.
 
 ### Özel önyükleme adresleri listesi
 
-Önyükleme, daha önce *DNS koruması* içinde seçtiğiniz güvenli DNS sunucusunun IP adresini almak için kullanılan bir ara DNS sunucusudur. Sunucu adresini harflerle belirten protokoller (örneğin, DNS-over-TLS gibi) kullanılırken böyle bir "orta yol" gereklidir. Bu durumda, önyüklemeyi bir çevirmen görevi görerek harfleri sisteminizin anlayabileceği sayılara dönüştürür.
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
-Varsayılan olarak sistem DNS çözümleyicisi kullanılır ve ilk önyükleme isteği bağlantı noktası 53 aracılığıyla yapılır. Eğer bu size uymuyorsa, şifrelenmiş DNS sunucusunun adresini belirlemek için kullanılacak DNS sunucularının IP adreslerini yukarıdan aşağıya doğru listeleyin. Belirtilen IP adresleri listelenen sıraya göre uygulanacaktır. Geçersiz adres belirtirseniz veya hiç adres belirtmezseniz sistem IP'leri kullanılacaktır.
+By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
 
 ### DNS istisnaları
 
-Burada listelenen alan adlarına yapılan tüm DNS istekleri, uygulamanın ayarlarında belirtilen DNS sunucusu yerine sistemin varsayılan DNS sunucusuna yönlendirilecektir. Ayrıca, DNS engelleme kuralları bu tür isteklere uygulanmayacaktır.
+All DNS requests to domains listed here will be redirected to the system default DNS server instead of the DNS server specified in the app’s settings. Also, DNS blocking rules will not be applied to such requests.
 
 ### Belirtilen Wi-Fi ağ adlarını (SSID'ler) DNS filtrelemesinden hariç tut
 
-DNS koruması, bu bölümde listelenen Wi-Fi ağlarını kapsamaz. Wi-Fi ağ adlarını (SSID'leri) her satıra bir tane belirtin. Belirli bir Wi-Fi ağı AdGuard Home veya başka bir DNS koruma sistemi tarafından zaten korunuyorsa bu yararlı olabilir. Bu durumda DNS isteklerini tekrar filtrelemek gereksizdir.
+DNS protection will not include Wi-Fi networks listed in this section. Specify Wi-Fi networks names (SSIDs) one per line. This can be useful if a particular Wi-Fi network is already protected by AdGuard Home or another DNS protection system. In this case, it is superfluous to filter DNS requests again.

@@ -13,7 +13,7 @@ Der Tab _Schutz_ umfasst die folgenden Funktionen oder Einstellungen. In dieser 
 
 - [Sperren von Werbung](/adguard-for-android/features/protection/ad-blocking.md)
 
-  Settings to block ads in browsers and apps
+  Einstellungen zum Blockieren von Werbung in Browsern und Apps
 
 - [Schutz vor Tracking](/adguard-for-android/features/protection/tracking-protection.md)
 
