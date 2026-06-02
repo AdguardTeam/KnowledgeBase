@@ -13,7 +13,7 @@ Some AdGuard for Windows users may notice that [the app stops filtering traffic 
 
 This behavior is not a bug in AdGuard, but a result of recent architectural and security changes in modern browsers.
 
-## Why this happens
+## 为什么会发生这种情况
 
 Chromium-based browsers (Chrome, Edge, Brave, Vivaldi, etc.) have been strengthening their security architecture. One significant change is moving sensitive internal processes into the [Windows AppContainer sandbox](https://learn.microsoft.com/en-us/windows/win32/secauthz/appcontainer-isolation), including the Network Service, which handles all browser traffic.
 
@@ -27,33 +27,33 @@ This behavior is controlled entirely by Chrome’s sandboxing policies and inter
 
 ## Why this affects AdGuard
 
-The TDI driver is an outdated Windows technology that has been deprecated and unsupported by Microsoft for many years. It is not compatible with modern isolation and sandboxing models used by browsers.
+The TDI driver is an outdated Windows technology that has been deprecated and unsupported by Microsoft for many years. 它与浏览器使用的现代隔离和沙箱模型不兼容。
 
-Because of this, TDI-based traffic visibility becomes increasingly unstable. In some browsers, it has already disappeared completely, and it will eventually stop working altogether.
+因此，基于 TDI 的流量可见性变得越来越不稳定。 In some browsers, it has already disappeared completely, and it will eventually stop working altogether.
 
 AdGuard already treats the TDI driver as deprecated, and its complete removal is planned as the product evolves.
 
-## Permanent solution
+## 永久解决方案
 
-From v7.22.4, we’ve added experimental support for the SockFilter driver. It fixes the issue by solving conflicts in the WFP stack. [更多信息](/adguard-for-windows/features/network/#sockfilter-and-other-network-drivers)。
+From v7.22.4, we’ve added experimental support for the SockFilter driver. 它通过解决 WFP 协议栈中的冲突来修复该问题。 [更多信息](/adguard-for-windows/features/network/#sockfilter-and-other-network-drivers)。
 
-To use it, go to _Settings → Network → Traffic filtering_, enable traffic filtering, and select _SockFilter (Experimental)_ from the list of available options.
+使用方法：前往「设置」→「网络」→「流量过滤」，开启流量过滤，并从可用选项列表中选择「SockFilter（实验性）」。
 
-Since it’s experimental, there may be bugs. If you notice anything unusual, unexpected, or just plain broken, **you can switch back to TDI or WFP at any time** in the same section.
+由于该功能仍处于实验阶段，可能存在错误。 如果您发现任何异常、意外或明显故障，**可以在同一位置随时切换回 TDI 或 WFP**。
 
-## Temporary solution
+## 临时解决方案
 
-Certain Windows registry changes can force the browser to stop using AppContainer, causing its processes to run in a non-sandboxed mode again. Network Service stops using the WSK stack and falls back to a network path that the TDI driver can see. AdGuard then regains the ability to filter browser traffic.
+Certain Windows registry changes can force the browser to stop using AppContainer, causing its processes to run in a non-sandboxed mode again. Network Service stops using the WSK stack and falls back to a network path that the TDI driver can see. 随后 AdGuard 就能重新获得过滤浏览器流量的能力。
 
-### How to modify the registry in Chromium-based browsers
+### 如何在基于 Chromium 的浏览器里修改注册表
 
 :::warning
 
-Administrator rights are required to edit the registry. Incorrect changes may affect system or browser stability and security. Always create a backup of the registry branch before modifying it.
+编辑注册表需要管理员权限。 不正确的更改可能会影响系统或浏览器的稳定性和安全性。 Always create a backup of the registry branch before modifying it.
 
 Before proceeding, keep in mind that this solution reduces sandbox/AppContainer security, making the browser less isolated. It applies system-wide because it modifies `HKLM`, and should only be used for debugging, temporary workarounds, in controlled environments, or when TDI-based traffic interception is strictly necessary.
 
-It should **not** be applied broadly across end-user machines. **Proceed only if you understand the implications.**
+它**不应该**被广泛应用于最终用户机器。 **Proceed only if you understand the implications.**
 
 :::
 
@@ -61,11 +61,11 @@ It should **not** be applied broadly across end-user machines. **Proceed only if
 
 You can apply the necessary registry changes automatically by using one of the pre-generated .reg files below. Each file disables AppContainer/Network Service sandboxing for a specific Chromium-based browser:
 
-- [Download Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chrome.reg)
-- [Download Chromium.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chromium.reg)
-- [Download Edge.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Edge.reg)
+- [下载 Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chrome.reg)
+- [下载 Chromium.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chromium.reg)
+- [下载 Edge.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Edge.reg)
 - [Download Brave.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Brave.reg)
-- [Download Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Vivaldi.reg)
+- [下载 Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Vivaldi.reg)
 - [Download YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_YandexBrowser.reg)
 
 You can revert these changes using the undo .reg files provided below. These files remove the registry branches that were added by the direct version:
@@ -81,58 +81,58 @@ You can revert these changes using the undo .reg files provided below. These fil
 
 If your browser is not listed, follow the manual instructions below to create the necessary registry entries:
 
-1. Determine its policy branch by checking the vendor’s official documentation or by opening the internal policy page. In Chrome, navigate to `chrome://policy`. Other browsers use a similar path.
+1. Determine its policy branch by checking the vendor’s official documentation or by opening the internal policy page. 在 Chrome 浏览器中，导航到 `chrome://policy`。 其他浏览器使用相似的路径。
 
-2. Identify the correct registry branch for your browser. Different Chromium-based browsers use different policy paths under `HKLM`. It should follow the model `HKLM\SOFTWARE\Policies\<Vendor>\<Product>`.
+2. 确定您的浏览器的正确的注册表分支。 不同的基于 Chromium 的浏览器在 `HKLM` 下使用不同的策略路径。 它应遵循 `HKLM\SOFTWARE\Policies\<Vendor>\<Product>` 的模式。
 
-3. Open the Registry Editor:
+3. 打开注册表编辑器：
 
-   - Press _Win + R_
-   - Type _regedit_ and press _Enter_
-   - Approve the UAC prompt by running it as administrator
+   - 按下 _Win + R_
+   - 输入 _regedit_ 并按下 _Enter_
+   - 以管理员身份运行程序，批准 UAC 提示
 
-4. Back up the Policies branch:
+4. 备份策略分支：
 
-   - In the left panel, navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies`
-   - Right-click _Policies_ → _Export_
-   - Save the file as _Policies_backup.reg_
+   - 在左侧面板中，导航到 `HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies`
+   - 右键单击 _Policies_ → _导出_
+   - 保存文件为 _Policies_backup.reg_
 
-   If something goes wrong, you can restore the backup by double-clicking this file.
+   如果出现问题，您可以通过双击此文件来还原备份。
 
-5. Navigate to your browser’s policy key:
+5. 导航到您的浏览器的策略项：
 
-   - Expand the path `HKEY_LOCAL_MACHINE` → _SOFTWARE_ → _Policies_.
-   - Locate the folder corresponding to your browser.
+   - 展开路径 `HKEY_LOCAL_MACHINE` → _SOFTWARE_ → _Policies_。
+   - 找到与您的浏览器对应的文件夹。
 
-If the key does not exist, you can create it manually. Example for Chrome:
+If the key does not exist, you can create it manually. 以 Chrome 浏览器为例：
 
-- Right-click _Policies_ → _New_ → _Key_ and name it `Google`
-- Inside `Google`, create another key named `Chrome`
+- 右键单击 _Policies_ → _新建_ → _项_ 并将其命名为 `Google`
+- 在 `Google` 内创建另一个名为 `Chrome` 的项
 
-Repeat the same logic for Chromium, Edge, Brave, Vivaldi, Yandex Browser, etc. You should end up with a key that looks like `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\<Vendor>\<Product>`.
+对 Chromium、Edge、Brave、Vivaldi、Yandex 浏览器等重复相同的逻辑。 You should end up with a key that looks like `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\<Vendor>\<Product>`.
 
-1. Add the required registry values:
+1. 添加所需的注册表项：
 
-   - In the correct key, click the right panel → _New_ → _DWORD (32-bit) Value_
+   - 在正确的项中，单击右侧面板 → _新建_ → _DWORD (32 位)值_
 
-   - Name it `RendererAppContainerEnabled`
+   - 将其命名为 `RendererAppContainerEnabled`
 
-   - Double-click it and set:
+   - 双击它并设置：
 
      - **Value:** 0
      - **Base:** Hexadecimal or Decimal (either is fine)
 
-   - Repeat the process and create a second DWORD `NetworkServiceSandboxEnabled`.
+   - 重复上述过程，并创建第二个 DWORD 值 `NetworkServiceSandboxEnabled`。
 
-   - Set its value to 0.
+   - 设置其值为 0。
 
-   Both parameters must be `REG_DWORD` and have the value **0**.
+   两个参数都必须是 `REG_DWORD` 并且值为 **0**。
 
-2. Close the browser and apply the settings. To ensure the policy is loaded:
+2. 关闭浏览器并应用设置。 为确保策略已加载：
 
-   - Fully close the browser
+   - 完全关闭浏览器
    - Check Task Manager and make sure no processes such as _chrome.exe_, _msedge.exe_, _brave.exe_ remain running
-   - Reopen the browser
+   - 重新打开浏览器
 
 3. Verify that the policies have been applied by opening the policy viewer for your browser.
 

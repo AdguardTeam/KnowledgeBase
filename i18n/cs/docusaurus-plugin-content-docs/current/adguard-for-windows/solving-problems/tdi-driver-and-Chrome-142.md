@@ -35,11 +35,11 @@ AdGuard již považuje ovladač TDI za zastaralý a v rámci vývoje produktu se
 
 ## Trvalé řešení
 
-From v7.22.4, we’ve added experimental support for the SockFilter driver. It fixes the issue by solving conflicts in the WFP stack. [More information](/adguard-for-windows/features/network/#sockfilter-and-other-network-drivers).
+Od verze 7.22.4 jsme přidali experimentální podporu pro ovladač SockFilter. Opravuje problém řešením konfliktů v zásobníku WFP. [Více informací](/adguard-for-windows/features/network/#sockfilter-and-other-network-drivers).
 
-To use it, go to _Settings → Network → Traffic filtering_, enable traffic filtering, and select _SockFilter (Experimental)_ from the list of available options.
+Chcete-li tuto funkci použít, přejděte do _Nastavení → Síť → Filtrování provozu_, zapněte filtrování provozu a ze seznamu dostupných možností vyberte _SockFilter (Experimentální)_.
 
-Since it’s experimental, there may be bugs. If you notice anything unusual, unexpected, or just plain broken, **you can switch back to TDI or WFP at any time** in the same section.
+Jelikož se jedná o experimentální verzi, mohou se vyskytnout chyby. Pokud si všimnete čehokoli neobvyklého, neočekávaného nebo prostě nefunkčního, **můžete se kdykoli přepnout zpět na TDI nebo WFP** ve stejné sekci.
 
 ## Dočasné řešení
 

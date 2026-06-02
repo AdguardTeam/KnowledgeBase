@@ -21,6 +21,6 @@ Questo articolo riguarda l'Estensione per browser di AdGuard, che protegge solo 
 
   Impostazioni per bloccare cookie, tag UTM e le analisi in rete che raccolgono informazioni sugli utenti
 
-- [Altre funzioni e opzioni(/adguard-browser-extension/features/other-features.md)
+- [Altre funzioni e opzioni](/adguard-browser-extension/features/other-features.md)
 
   Impostazioni generali e aggiuntive, collegamenti ai documenti sulla riservatezza e al dispensario GitHub

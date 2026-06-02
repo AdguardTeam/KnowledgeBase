@@ -25,7 +25,7 @@ Cet article concerne AdGuard pour Android, un bloqueur de publicité multifoncti
 
   Paramètres généraux, avancés et de bas niveau qui vous permettent de sélectionner la langue et le thème, de personnaliser la protection DNS, d'activer le filtrage HTTPS et de gérer les scripts utilisateur
 
-- [Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
+- [Guide des paramètres de bas niveau](/adguard-for-android/features/low-level-settings.md)
 
   Descriptions of the low-level settings available in AdGuard for Android v4.3 and later.
 

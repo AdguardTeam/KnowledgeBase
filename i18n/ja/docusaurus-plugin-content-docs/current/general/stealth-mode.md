@@ -1,11 +1,11 @@
 ---
-title: Tracking protection (formerly Stealth Mode)
+title: トラッキング防止（旧「ステルスモード」）
 sidebar_position: 4
 ---
 
-Many websites gather information about their visitors, including their IP address, installed browser and operating system, screen resolution, and even the page from which they were redirected. Some web pages use cookies to mark your browser and save your settings and preferences, or to “recognize” you upon your next visit. **Tracking protection** safeguards your personal information from such data- and statistics-gathering systems.
+「トラッキング防止」（旧名：「ステルスモード」）機能は、ウェブサイトがあなたに関する情報（IPアドレス、インストール済みのブラウザやオペレーティングシステム、画面の解像度、ユーザーがどのページからリダイレクトされたかなど）を収集することを防ぎます。 また、Cookie（クッキー）を使って、ウェブサイトはあなたのブラウザをマークしたり、個人設定やユーザー設定を保存したり、次回訪問時にあなたを識別したりします。 そこで、「**トラッキング防止**」機能は、そのようなデータ収集・統計収集システムからお客様の個人情報を保護します。
 
-You can adjust the tracking protection settings as needed. For example, you can prevent websites from receiving search engine queries that led you to them. You can automatically delete third-party and first-party cookies. You can also turn off browser geolocation sharing, which can be used to track your location. You can hide your true IP address or replace it with an arbitrary one.
+必要に応じてトラッキング防止の設定を調整できます。 例えば、サイトにたどり着くきっかけとなった検索エンジンのクエリがウェブサイトに送信されないようにすることができます。 You can automatically delete third-party and first-party cookies. You can also turn off browser geolocation sharing, which can be used to track your location. You can hide your true IP address or replace it with an arbitrary one.
 
 Below, we will list and describe the main features that you can control in the **Tracking protection** settings. The features are organized into the following sections: **General**, **Tracking methods**, **Browser API**,  **Windows tracking**, and **Miscellaneous**.
 

@@ -11,7 +11,7 @@ Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze v
 
 - [Funkce](/adguard-browser-extension/features)
 
-  Main features and settings available in AdGuard Browser Extension
+  Hlavní funkce a nastavení dostupné v Rozšíření prohlížeče AdGuard
 
 - [Dostupnost](/adguard-browser-extension/availability)
 
@@ -23,7 +23,7 @@ Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze v
 
 - [Kompatibilita se samostatnou aplikací](/adguard-browser-extension/compatibility)
 
-  Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
+  Kompatibilita Rozšíření prohlížeče AdGuard s desktopovými aplikacemi AdGuard
 
 - [Rozšíření prohlížeče AdGuard pro Chrome MV3](/adguard-browser-extension/mv3-version/)
 

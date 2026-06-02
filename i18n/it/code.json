@@ -1,4 +1,12 @@
 {
+  "siteConfig.title": {
+    "message": "Nozionistica di AdGuard",
+    "description": "The site title used in the browser tab and metadata"
+  },
+  "siteConfig.tagline": {
+    "message": "Nozionistica per i prodotti AdGuard",
+    "description": "The site tagline used in meta description"
+  },
   "theme.ErrorPageContent.title": {
     "message": "Questa pagina si è bloccata.",
     "description": "The title of the fallback page when the page crashed"

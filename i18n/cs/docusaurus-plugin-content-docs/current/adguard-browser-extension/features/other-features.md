@@ -13,19 +13,21 @@ Kromě velkých klíčových modulů rozšíření prohlížeče AdGuard existuj
 
 ## Obecné {#general}
 
-Na kartě Obecné můžete povolit reklamy ve vyhledávání a [vlastní propagaci webových stránek](/general/ad-filtering/search-ads), povolit automatickou aktivaci filtrů pro jednotlivé jazyky, určit interval aktualizace filtrů atd.
+Karta _Obecné_ obsahuje hlavní nastavení rozšíření a umožňuje ovládat jeho základní chování při filtrování. Zde můžete povolit reklamy ve vyhledávání a [vlastní propagaci na webových stránkách](/general/ad-filtering/search-ads/), povolit automatickou aktivaci filtrů pro jednotlivé jazyky, nastavit interval aktualizace filtrů a zapnout [ochranu proti phishingu a škodlivým webům](/general/browsing-security/).
 
-![General \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
+![General \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/general_new.png)
 
-Kromě toho zde můžete povolit [_Ochranu proti phishingu a malwaru_](/general/browsing-security).
+Můžete také uložit aktuální nastavení a rychle je použít v jiném prohlížeči nebo na jiném zařízení. Chcete-li to provést, klikněte na _Sdílet nastavení_ na kartě _Obecné_: rozšíření vygeneruje speciální odkaz a QR kód, které obsahují vaše aktuální nastavení. Můžete buď zkopírovat odkaz a otevřít jej v prohlížeči, nebo naskenovat QR kód na zařízení s aplikací AdGuard a otevřít odkaz přímo v aplikaci. Zobrazí se výzva k použití sdílené konfigurace, abyste mohli stejné nastavení obnovit po přeinstalování prohlížeče nebo na novém zařízení.
 
-Konfiguraci nastavení můžete uložit kliknutím na tlačítko _Exportovat nastavení_. Nastavení se uloží jako soubor .json. Chcete-li importovat dříve uloženou konfiguraci nastavení, použijte funkci _Importovat nastavení_. Můžete to použít i k rychlému přepínání mezi různými profily nastavení nebo dokonce k přenosu konfigurací nastavení mezi různými prohlížeči.
+V případě potřeby můžete tento odkaz sdílet s dalšími lidmi nebo jej připojit k žádosti o podporu, aby náš tým mohl vidět vaši přesnou konfiguraci.
+
+Kromě toho můžete svá nastavení i nadále exportovat do souboru ve formátu .json kliknutím na _Exportovat nastavení_ a importovat je pomocí možnosti _Importovat nastavení_. Díky tomu lze snadno přepínat mezi různými konfiguračními profily nebo je přenášet mezi prohlížeči.
 
 ## Další nastavení {#misc}
 
 Sekce _Další nastavení_ obsahuje řadu různých nastavení, která souvisejí s procesem blokování reklam a použitelností aplikace.
 
-![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
+![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional_new.png)
 
 Na této kartě můžete invertovat seznam povolených a přidat položku AdGuard do kontextového menu prohlížeče. Můžete také povolit zobrazení počtu blokovaných reklam na ikoně AdGuard a oznámení o aktualizacích rozšíření. V této sekci můžete navíc povolit oznámení o aplikaci AdGuard, otevřít _Záznam filtrování_, vymazat statistiky blokovaných reklam a slídičů nebo obnovit nastavení.
 
@@ -43,4 +45,4 @@ Možnost _Odeslat anonymizované údaje o používání_ lze také povolit na st
 
 V sekci _Informace_ najdete informace o aktuální verzi, odkazy na smlouvu EULA a zásady ochrany osobních údajů a na úložiště rozšíření prohlížeče na GitHubu.
 
-![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/about_new.png)

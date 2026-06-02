@@ -29,6 +29,8 @@ Pentru a adăuga un filtru, pur și simplu faceți clic pe _Adăugați filtru pe
 
 ![Adăugați un filtru personalizat \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
+Custom filters update independently, so your filtering remains effective and current without requiring extension updates.
+
 ## Reguli utilizator {#user-rules}
 
 _User rules_ is another tool that helps you customize the blocking of ads.
@@ -49,7 +51,7 @@ Lista de permisiuni este utilizată pentru a exclude anumite site-uri web de la 
 
 ![Lista de permisiuni \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-De asemenea, lista de permisiuni poate fi inversată: puteți debloca reclamele de peste tot, cu excepția site-urilor web adăugate în această listă. Pentru a face acest lucru, activați opțiunea _Inversare listă de permisiuni_.
+_Allowlist_ can also be inverted: you can unblock ads everywhere except on the websites added to this list. To do that, activate the _Invert Allowlist_ option. Before it turns on, a confirmation dialog will appear to prevent accidental activation and explain what will happen.
 
 ![Inversare listă de permisiuni \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 

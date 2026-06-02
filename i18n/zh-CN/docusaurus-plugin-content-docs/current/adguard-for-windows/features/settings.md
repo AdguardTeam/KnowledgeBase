@@ -11,7 +11,7 @@ sidebar_position: 2
 
 「设置」是最需要关注的部分。 用户可以在此处配置本应用以完全符合您的需求：仅拦截困扰您的广告，使用受信任提供商的 DNS 服务器，移除第三方 Cookie 等等。
 
-### General settings
+### 常规设置
 
 Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. 此外，如果 AdGuard Windows 版无法正常工作，且支持团队要求您[收集调试日志](/adguard-for-windows/solving-problems/adguard-logs.md)，也请前往「设置」。
 
@@ -40,7 +40,7 @@ In the Ad blocking module you can:
 
 在开始手动编写自己的规则之前，请阅读我们详细的[语法指南](/general/ad-filtering/create-own-filters)。
 
-### Tracking protection
+### 跟踪保护
 
 Many websites gather information about their visitors, such as their IP addresses, browser and operating system details, screen resolution, and the webpage from which the user came or was redirected. Some websites use cookies to mark and identify your browser, save your personal settings and preferences. This allows them to “recognize” you on your next visit. Tracking protection safeguards your personal information from these data- and statistics-gathering systems.
 
@@ -79,7 +79,7 @@ Starting with v7.20, you can also add filters by simply selecting them from a li
 
 ![DNS filters \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/windows/v7.20/dns_filters/en.png)
 
-### Parental control
+### 家长控制
 
 There are several websites to which access should be restricted from a PC used by children. This task is accomplished by _Parental control_.
 

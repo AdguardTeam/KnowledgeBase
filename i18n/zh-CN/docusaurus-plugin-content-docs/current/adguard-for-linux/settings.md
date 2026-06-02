@@ -302,3 +302,46 @@ adguard-cli import-settings -i "/path/to/settings.zip"
 ```
 
 The `-i` or `--input` flag is required and specifies the path to the settings archive to import.
+
+## AdGuard 浏览器助手
+
+AdGuard 浏览器助手让用户直接从浏览器管理 AdGuard 保护。
+
+![助手窗口 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
+
+### 工作原理
+
+AdGuard 浏览器助手是一个浏览器扩展。 It allows you to quickly manage AdGuard for Linux:
+
+- Enable or disable protection for a specific website (the toggle under the website name)
+- 禁用保护 30 秒
+- 禁用保护（右上角的暂停图标）
+- 手动拦截广告
+- 报告错误拦截
+- Manage HTTPS filtering (the lock icon next to the website name)
+
+### 安装方式
+
+To install Native Messaging manifests for browser integration, use:
+
+```sh
+adguard-cli install-browser-integration
+```
+
+To uninstall the manifests, use:
+
+```sh
+adguard-cli install-browser-integration --uninstall
+```
+
+**Install AdGuard Browser Assistant extension**:
+
+1. 打开[助手页面](https://adguard.com/adguard-assistant/overview.html)。
+2. 在浏览器名称下，选择「安装」。
+3. 从浏览器的扩展商店安装助手。
+
+:::info 兼容性
+
+Support for AdGuard Browser Assistant is available starting from AdGuard for Linux v1.4.
+
+:::

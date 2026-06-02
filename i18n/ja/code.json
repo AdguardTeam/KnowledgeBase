@@ -1,4 +1,12 @@
 {
+  "siteConfig.title": {
+    "message": "AdGuard ナレッジベース（知恵袋）",
+    "description": "The site title used in the browser tab and metadata"
+  },
+  "siteConfig.tagline": {
+    "message": "AdGuard製品のナレッジベース",
+    "description": "The site tagline used in meta description"
+  },
   "theme.ErrorPageContent.title": {
     "message": "このページはクラッシュしました。",
     "description": "The title of the fallback page when the page crashed"
