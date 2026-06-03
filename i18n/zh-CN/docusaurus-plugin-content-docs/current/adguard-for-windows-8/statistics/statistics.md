@@ -5,31 +5,31 @@ sidebar_position: 1
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+本文适用于 Windows 版的 AdGuard v8.0，一款全面的广告拦截器，可在系统层面保护您的设备。 这是一个仍在开发中的 Beta 测试版本。 要试用，请下载 [适用于 Windows 的 AdGuard 测试版](https://agrd.io/windows_beta)。
 
 :::
 
-In _Statistics_, you see a complete picture of what is happening with the traffic on your computer: how many requests are being sent and to which companies, how much data is being uploaded and downloaded, what requests are being blocked. You can check statistics for various time frames: all time, the last 14 days, the last 7 days, the last 24 hours, and broken down by ads, trackers, or requests.
+在「统计」部分，用户可以全面了解电脑上的流量情况：发送了多少请求、发往哪些公司、上传和下载了多少数据、哪些请求被拦截。 您还可以按不同时间范围查看统计数据：所有时间、最近 14 天、最近 7 天、最近 24 小时，并按广告、跟踪器或请求分类查看。
 
-![Customize stats](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/statistics/stats.png)
+![自定义统计](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/statistics/stats.png)
 
 :::note
 
-All statistics are stored locally on your device. We only calculate how much data is used — we don’t see what websites you visit. You can also turn off statistics if you don’t need them.
+所有统计数据均存储在您设备本地。 我们只计算数据使用量，不会查看用户访问哪些网站。 如果您不需要统计功能，也可以将其关闭。
 
 :::
 
-_Open Filtering log_ shows the last 10,000 requests processed by AdGuard
+打开「过滤日志」可显示 AdGuard 处理过的最近 10,000 条请求。
 
 ## 应用程序
 
-此部分显示您设备上安装的所有应用程序的统计信息。 用户可按已拦截的广告数量，已拦截的跟踪器数量或发送的请求数量排序应用。
+本部分显示设备上已安装所有应用的统计数据。 您可以按拦截的广告数、跟踪器数或发送的请求数对应用进行排序。
 
-If you click an app, you can see its full stats: the requests it sends and the domains and companies it reaches out to.
+点击某个应用，即可查看其完整统计信息：它发送的请求以及访问的域名和公司。
 
 ## DNS
 
-This section shows data about the requests handled by DNS protection. You can see the total number of requests sent and how many were blocked by AdGuard
+本部分显示由 DNS 保护处理的请求相关数据。 您可以查看发送的请求总数以及被 AdGuard 拦截的数量。
 
 ## 公司
 
@@ -39,4 +39,4 @@ AdGuard 检测设备发送请求所到的域名并判断它们属于哪些公司
 
 ## 数据使用量
 
-This section shows the amount of downloaded and uploaded data and saved traffic.
+本部分显示已下载和已上传的数据量以及节省的流量。

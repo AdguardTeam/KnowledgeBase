@@ -1,4 +1,12 @@
 {
+  "siteConfig.title": {
+    "message": "AdGuard Vidensbase",
+    "description": "The site title used in the browser tab and metadata"
+  },
+  "siteConfig.tagline": {
+    "message": "Vidensbase til AdGuard-produkter",
+    "description": "The site tagline used in meta description"
+  },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"

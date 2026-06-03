@@ -5,44 +5,44 @@ sidebar_position: 4
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Este artículo describe AdGuard para Windows v8.0, un bloqueador de anuncios integral que protege su dispositivo a nivel del sistema. Esta es una versión beta que aún está en desarrollo. Para probarlo, descarga la [versión beta de AdGuard para Windows](https://agrd.io/windows_beta).
 
 :::
 
-DNS protection gives you more control over how your device connects to the Internet. There are three main reasons why it can be useful:
+La Protección DNS te brinda más control sobre cómo tu dispositivo se conecta a Internet. Hay tres razones principales por las que puede ser útil:
 
-## 1. Protect your privacy from your ISP
+## 1. Protege tu privacidad frente a tu ISP
 
-Every time you open a website, for example `google.com`, your browser sends a request to a DNS server to get the IP address of the website in return. Usually, the DNS server belongs to your ISP, which means they can track the websites you visit. If you switch to another DNS server, such as AdGuard DNS, your ISP no longer sees your online activity.
+Cada vez que abres un sitio web, por ejemplo "google.com", tu navegador envía una solicitud a un servidor DNS para obtener a cambio la dirección IP del sitio web. Por lo general, el servidor DNS pertenece a tu ISP, lo que significa que puede rastrear los sitios web que visitas. Si cambias a otro servidor DNS, como AdGuard DNS, tu proveedor de servicios de Internet ya no verá tu actividad en línea.
 
-## 2. Encrypt your DNS traffic
+## 2. Cifra tu tráfico DNS
 
-Modern protocols like DNS-over-TLS and DNS-over-HTTPS ensure that your DNS requests are encrypted. This protects them from being intercepted, modified, or spied on by attackers.
+Los protocolos modernos como DNS-over-TLS y DNS-over-HTTPS garantizan que tus solicitudes de DNS estén cifradas. Esto los protege de que sean interceptados, modificados o espiados por atacantes.
 
-## 3. Block unwanted content at the DNS level
+## 3. Bloquear contenido no deseado a nivel de DNS
 
-DNS protection can filter out ads, trackers, phishing websites, and other harmful or annoying content before it even loads in your browser or apps. [Learn more about DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/)
+La Protección DNS puede filtrar anuncios, rastreadores, sitios web de phishing y otro contenido dañino o molesto antes de que siquiera se cargue en tu navegador o apps. [Más información sobre el filtrado DNS](https://adguard-dns.io/kb/general/dns-filtering/)
 
-![DNS protection](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns.png)
+![Protección DNS](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns.png)
 
-Here’s what you can configure in DNS protection:
+Esto es lo que puedes configurar en la protección DNS:
 
-## Choose a DNS server
+## Elige un servidor DNS
 
-![DNS servers](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_server.png)
+![Servidores DNS](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_server.png)
 
-You can select from multiple trusted DNS providers. AdGuard itself offers several options for different needs:
+Puedes elegir entre varios proveedores DNS de confianza. AdGuard ofrece varias opciones para diferentes necesidades:
 
-- AdGuard DNS — blocks ads and trackers.
+- AdGuard DNS — bloquea anuncios y rastreadores.
 
-- AdGuard DNS Family Protection — blocks ads, trackers, and adult content.
+- AdGuard DNS Family Protection — bloquea anuncios, rastreadores y contenido para adultos.
 
-- AdGuard DNS Non-filtering — provides a secure and reliable connection without any filtering.
+- AdGuard DNS No filtrado — proporciona una conexión segura y fiable sin filtros.
 
-You can use one of our public servers, add your own custom DNS server, or pick another trusted option from our [list of trusted DNS providers](https://adguard-dns.io/kb/general/dns-providers/).
+Puedes usar uno de nuestros servidores públicos, añadir tu propio servidor DNS personalizado o elegir otra opción de confianza de nuestra [lista de proveedores DNS de confianza](https://adguard-dns.io/kb/general/dns-providers/).
 
-## Add DNS filters and rules
+## Añadir filtros y reglas DNS
 
-To fine-tune protection, you can create your own DNS filters using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/) or import ready-made [DNS filters](https://filterlists.com).
+Para afinar la protección, puedes crear tus propios filtros DNS usando [sintaxis de reglas DNS](https://adguard-dns.io/kb/general/dns-filtering-syntax/) o importar [filtros DNS ya preparados](https://filterlists.com).
 
-In addition, you can create custom DNS rules to block, unblock, or redirect domains as needed. Use our built-in rule constructor.
+Además, puedes crear reglas DNS personalizadas para bloquear, desbloquear o redirigir dominios según sea necesario. Utiliza nuestro constructor de reglas integrado.

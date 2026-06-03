@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 - [Ochrana](/adguard-for-android/features/protection/protection.md)
 
-  Available settings in the _Protection_ tab: _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Firewall_, and _Browsing security_
+  Dostupná nastavení na kartě _Ochrana_: _Blokování reklam_, _Ochrana před sledováním_, _Blokování obtěžování_, _Ochrana DNS_, _Firewall_ a _Bezpečné prohlížení_
 
 - [Správa aplikací](/adguard-for-android/features/app-management.md)
 

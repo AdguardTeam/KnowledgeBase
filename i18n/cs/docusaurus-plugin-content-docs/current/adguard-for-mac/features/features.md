@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 - [Hlavní okno](/adguard-for-mac/features/main.md)
 
-  Main screen with statistics on blocked ads and trackers and access to main settings
+  Hlavní obrazovka se statistikami blokovaných reklam a slídičů a přístupem k hlavním nastavením
 
 - [Obecné](/adguard-for-mac/features/general.md)
 
@@ -27,7 +27,7 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 - [Režim utajení](/adguard-for-mac/features/stealth.md)
 
-  Settings to block cookies, UTM tags, and online analytics that collect user information
+  Nastavení pro blokování souborů cookies, značek UTM a online analýz, které shromažďují informace o uživateli
 
 - [Zabezpečení](/adguard-for-mac/features/security.md)
 
@@ -35,7 +35,7 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 - [Asistent prohlížeče](/adguard-for-mac/features/browser-assistant.md)
 
-  An extension that complements the desktop app and allows you to manage filtering from your browser
+  Rozšíření, které doplňuje program pro stolní počítače a umožňuje spravovat filtrování z prohlížeče
 
 - [Rozšíření](/adguard-for-mac/features/extensions.md)
 

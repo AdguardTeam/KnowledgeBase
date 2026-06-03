@@ -29,6 +29,8 @@ sidebar_position: 2
 
 ![添加自定义过滤器 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
+Custom filters update independently, so your filtering remains effective and current without requiring extension updates.
+
 ## 用户规则 {#user-rules}
 
 「用户规则」是另一个可以帮助用户自定义广告拦截的工具。
@@ -49,7 +51,7 @@ sidebar_position: 2
 
 ![白名单 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-「白名单」也可以反转使用：可以在除此列表的网站之外的任何地方放行广告。 为此，请激活「颠倒白名单」选项。
+_Allowlist_ can also be inverted: you can unblock ads everywhere except on the websites added to this list. To do that, activate the _Invert Allowlist_ option. Before it turns on, a confirmation dialog will appear to prevent accidental activation and explain what will happen.
 
 ![颠倒白名单 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 

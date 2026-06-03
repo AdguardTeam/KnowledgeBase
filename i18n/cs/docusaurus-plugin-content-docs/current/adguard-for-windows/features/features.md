@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 - [Úvodní obrazovka](/adguard-for-windows/features/home-screen/)
 
-  On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
+  Na hlavní obrazovce najdete položky _Nastavení_, _Podpora_, _Licence_ a _O aplikaci_ a také statistiky blokovaných reklam a slídičů
 
 - [Nastavení](/adguard-for-windows/features/settings/)
 
@@ -27,4 +27,4 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 - [Další funkce](/adguard-for-windows/features/others/)
 
-  Support, license management, tray menu options, app version and updates
+  Podpora, správa licencí, možnosti menu, verze programu a aktualizace

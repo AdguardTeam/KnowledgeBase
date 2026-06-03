@@ -1,238 +1,238 @@
 ---
-title: AdGuard’s GitHub repositories
+title: GitHub repozitáře AdGuard
 sidebar_position: 9
 ---
 
-At AdGuard, our goal is to make the Internet safer, more comfortable, and more transparent. This commitment is reflected not only in our product features and strict privacy policies, but also in the fact that we keep our work as open as possible. That includes actively interacting with our community.
+V AdGuardu je naším cílem učinit internet bezpečnějším, pohodlnějším a transparentnějším. Tento závazek se odráží nejen ve vlastnostech našich produktů a přísných zásadách ochrany osobních údajů, ale také v tom, že o naší práci informujeme co nejotevřeněji. To zahrnuje i aktivní komunikaci s naší komunitou.
 
-This is why [all of our products have public repositories](https://github.com/orgs/AdguardTeam/repositories?type=all&q=visibility%3Apublic+archived%3Afalse) — online spaces where anybody can see what we are working on, report issues directly to AdGuard developers, and even contribute to our open-source projects. The repositories cover our ad-blocking apps, filters, browser extensions, DNS solutions, VPN tools, developer utilities, and more. There are different platforms that offer such functionality, but the most popular one by far is GitHub, and all AdGuard projects are stored there.
+Proto [všechny naše produkty mají veřejné repozitáře](https://github.com/orgs/AdguardTeam/repositories?type=all&q=visibility%3Apublic+archived%3Afalse) — online prostory, kde si kdokoli může prohlédnout, na čem právě pracujeme, nahlásit chyby přímo vývojářům AdGuardu a dokonce přispět k našim open-source projektům. Repozitáře zahrnují naše aplikace pro blokování reklam, filtry, rozšíření prohlížečů, řešení DNS, nástroje VPN, vývojářské nástroje a další. Existuje řada platforem, které tuto funkci nabízejí, ale zdaleka nejoblíbenější je GitHub, kde jsou uloženy všechny projekty AdGuard.
 
-This article lists the most important repositories by category, summarizes the purpose of each one, and gives a simple breakdown of what users can do there.
+Tento článek uvádí nejdůležitější repozitáře podle kategorií, shrnuje účel každého z nich a stručně popisuje, co v nich mohou uživatelé dělat.
 
 :::tip
 
-Pro tip: Creating an issue on GitHub is the most effective way to bring the attention of AdGuard developers to a problem. Just make sure to check that a similar issue doesn’t already exist and describe the problem in a comprehensive but concise way. If it does exist, you can upvote it.
+Tip: Vytvoření ticketu na GitHubu je nejúčinnější způsob, jak upozornit vývojáře AdGuardu na nějaký problém. Nezapomeňte se nejprve ujistit, zda již podobný dotaz neexistuje, a problém popište srozumitelně, ale stručně. Pokud existuje, můžete mu dát kladný hlas.
 
 :::
 
-## What is Github and its repositories
+## Co je GitHub a jeho repozitáře
 
-Very simply put, you can think of GitHub as sort of Google Docs for code, where multiple people can work on the same project, track changes, and see who made which updates. It provides a central, cloud-based place to store your code so it’s accessible from anywhere. It also has teamwork tools for reviewing changes, fixing issues, and merging everyone’s work smoothly.
+Zjednodušeně řečeno si GitHub můžete představit jako něco na způsob Google Docs pro kód, kde může na stejném projektu pracovat více lidí, sledovat změny a zjistit, kdo které úpravy provedl. Poskytuje centrální cloudové úložiště pro váš kód, takže k němu máte přístup odkudkoli. Obsahuje také nástroje pro týmovou spolupráci, které slouží k revizi změn, řešení problémů a hladkému sloučení práce všech členů týmu.
 
-GitHub is widely used for open-source projects, letting anyone view the code, suggest improvements, and contribute.
+GitHub je hojně využíván pro open-source projekty a umožňuje komukoli prohlížet zdrojový kód, navrhovat vylepšení a přispívat.
 
-A repository (often called “repo” for short) is the most basic element of GitHub. It’s a place where you can store your code, your files, and each file’s revision history. Repositories can have multiple collaborators and can be either public or private.
+Repozitář (často zkráceně nazývaný “repo”) je nejzákladnějším prvkem platformy GitHub. Je to místo, kde můžete ukládat svůj kód, soubory a historii revizí jednotlivých souborů. Repozitáře mohou mít více spolupracovníků a mohou být veřejné nebo soukromé.
 
-## What can you do in AdGuard’s repositories
+## Co můžete dělat v repozitářích AdGuardu
 
-You can find links to key repositories below in this article or visit the [general AdGuardTeam GitHub page](https://github.com/orgs/AdguardTeam/repositories?type=all) for a full list. In most repos, you can:
+Odkazy na hlavní repozitáře najdete níže v tomto článku, případně si můžete prohlédnout [hlavní stránku AdGuardTeam na GitHubu](https://github.com/orgs/AdguardTeam/repositories?type=all), kde najdete jejich úplný seznam. Ve většině repozitářů můžete:
 
-- **View README file** on the main page: it gives you an introduction to the product and its repo
+- **Zobrazit soubor README** na hlavní stránce: poskytuje vám úvod k produktu a jeho repozitáři
   ![README file \*border](https://cdn.adtidy.org/content/blog/github-repos/see-readme.png)
 
-- **Check existing bug reports or feature requests**, comment and upvote
+- **Zkontrolovat existující hlášení chyb nebo požadavky na funkce**, okomentujte je a přidat svůj hlas
   ![Check issues \*border](https://cdn.adtidy.org/content/blog/github-repos/check-issues.png)
 
-- **Create issues** to report bugs or request features
+- **Vytvořte ticket**, abyste nahlásili chybu nebo požádali o novou funkci
   ![Create issues \*border](https://cdn.adtidy.org/content/blog/github-repos/create-issue.png)
 
-- **Check releases** for different versions and their changelogs (and install an older version if needed)
+- **Zkontrolovat vydání**, kde najdete různé verze a jejich seznamy změn (a v případě potřeby si nainstalovat starší verzi)
   ![Check releases \*border](https://cdn.adtidy.org/content/blog/github-repos/check-releases.png)
 
-- **Install any older or beta version** if needed
+- **Nainstalovat jakoukoli starší nebo beta verzi, pokud je to potřeba**
   ![Download builds \*border](https://cdn.adtidy.org/content/blog/github-repos/download-releases.png)
 
 :::note
 
-If you are new to GitHub, you’ll need to create a GitHub account in order to create new issues and comment on the existing ones.
+Pokud jste na GitHubu noví, budete si muset založit účet na GitHubu, abyste mohli zakládat nové úkoly a komentovat ty stávající.
 
 :::
 
-In open-source repos advanced users can also:
+V open-source repozitářích mohou pokročilí uživatelé také:
 
-- **Browse code** to understand product logic, what technologies are used and how they are implemented
-- **Fork and contribute** via pull requests
+- **Procházet kód**, abyste porozuměli logice produktu, jaké technologie se používají a jak jsou implementovány
+- **Přispívat (fork)** prostřednictvím pull requestů
 
-Whether you’re a casual user, technical expert, or a developer, AdGuard welcomes all community participation across its GitHub repos.
+Ať už jste běžný uživatel, technický odborník nebo vývojář, AdGuard vítá jakoukoli účast komunity ve svých repozitářích na GitHubu.
 
-## Legal documents
+## Právní dokumenty
 
 ### [LegalDocs](https://github.com/AdguardTeam/LegalDocs)
 
-As part of our commitment to transparency, we host all legal documents — such as End-User License Agreements, Privacy Policies, and Terms and Conditions — on GitHub. Our _LegalDocs_ repo lets anyone check the full history of changes to these documents.
+V rámci našeho závazku k transparentnosti zveřejňujeme všechny právní dokumenty — jako jsou licenční smlouvy s koncovým uživatelem, zásady ochrany osobních údajů a obchodní podmínky — na platformě GitHub. Naše repozitář _LegalDocs_ umožňuje komukoli nahlédnout do kompletní historie změn těchto dokumentů.
 
-## AdGuard Ad Blocker products
+## Produkty blokátoru reklam AdGuard
 
-In these repositories, users can:
+V těchto repozitářích uživatelé mohou:
 
-- View and report bugs or feature requests via GitHub issues
-- Check changelogs, track release history, monitor updates
-- Download latest, previous, and beta builds (except for iOS)
+- Zobrazit a hlásit chyby nebo požadavky na funkce prostřednictvím GitHub Issues
+- Zkontrolovat seznamy změn, sledovat historii vydání, monitorovat aktualizace
+- Stáhnout nejnovější, předchozí a beta sestavení (kromě iOS)
 
 ### [AdguardForAndroid](https://github.com/AdguardTeam/AdguardForAndroid)
 
-Repository of AdGuard for Android — an app that provides system-wide ad blocking.
+Repozitář AdGuard pro Android — aplikace, která poskytuje blokování reklam v celém systému.
 
 ### [AdguardForiOS](https://github.com/AdguardTeam/AdguardForiOS)
 
-Repository of AdGuard for iOS — Safari content blocker with DNS and custom filters. Users can also check open-source code.
+Repozitář AdGuard pro iOS — blokátor obsahu pro Safari s DNS a vlastními filtry. Uživatelé si také mohou prohlédnout open-source kód.
 
 ### [AdguardForWindows](https://github.com/AdguardTeam/AdguardForWindows)
 
-Repository of AdGuard for Windows. Non-open-source; GitHub used as an open bug tracker.
+Repozitář AdGuard pro Windows. Nejde o open source; GitHub je používán jako otevřený systém pro sledování chyb.
 
 ### [AdguardForMac](https://github.com/AdguardTeam/AdguardForMac)
 
-Repository of AdGuard for Mac — macOS standalone content blocker. Bug tracker only.
+Repozitář AdGuard pro Mac — samostatný blokátor obsahu pro macOS. Pouze pro sledování chyb.
 
 ### [AdguardBrowserExtension](https://github.com/AdguardTeam/AdguardBrowserExtension)
 
-Repository of AdGuard Browser Extension — extension that provides ad blocking with enhanced privacy for Chrome, Firefox, Opera, Edge.
+Repozitář rozšíření prohlížeče AdGuard — rozšíření, které poskytuje blokování reklam se zvýšenou ochranou soukromí pro prohlížeče Chrome, Firefox, Opera a Edge.
 
 ### [AdguardForSafari](https://github.com/AdguardTeam/AdGuardForSafari)
 
-Repository of AdGuard for Safari — Safari ad blocking extension for Mac. Users can also check open-sourced code.
+Repozitář AdGuard pro Safari — rozšíření pro blokování reklam v Safari pro Mac. Uživatelé si také mohou prohlédnout open-source kód.
 
 ### [AdGuardCLI](https://github.com/AdguardTeam/AdGuardCLI)
 
-Repository of AdGuard for Linux — a command‑line interface for managing ad blocking.
+Repozitář AdGuard pro Linux — rozhraní příkazového řádku pro správu blokování reklam.
 
-## AdGuard VPN products
+## Produkty AdGuard VPN
 
-In these repositories, users can:
+V těchto repozitářích uživatelé mohou:
 
-- View and report bugs or feature requests via GitHub issues
-- Check changelogs, track release history, monitor updates
-- Download latest, previous, and beta builds (except for iOS)
+- Zobrazit a hlásit chyby nebo požadavky na funkce prostřednictvím GitHub Issues
+- Zkontrolovat seznamy změn, sledovat historii vydání, monitorovat aktualizace
+- Stáhnout nejnovější, předchozí a beta sestavení (kromě iOS)
 
 ### [AdGuardVPNForiOS](https://github.com/AdguardTeam/AdGuardVPNForiOS)
 
-Repository of AdGuard VPN for iOS. Serves as an open bug tracker.
+Repozitář AdGuard VPN pro iOS. Slouží jako otevřený systém pro sledování chyb.
 
 ### [AdGuardVPNForAndroid](https://github.com/AdguardTeam/AdGuardVPNForAndroid)
 
-Repository of AdGuard VPN for Android. Serves as an open bug tracker.
+Repozitář AdGuard VPN pro Android. Slouží jako otevřený systém pro sledování chyb.
 
 ### [AdGuardVPNForWindows](https://github.com/AdguardTeam/AdGuardVPNForWindows)
 
-Repository of AdGuard VPN for Windows. Serves as an open bug tracker.
+Repozitář AdGuard VPN pro Windows. Slouží jako otevřený systém pro sledování chyb.
 
 ### [AdGuardVPNForMac](https://github.com/AdguardTeam/AdGuardVPNForMac)
 
-Repository of AdGuard VPN for Mac — app designed for macOS.
+Repozitář AdGuard VPN pro Mac — aplikace navržená pro macOS.
 
 ### [AdGuardVPNExtension](https://github.com/AdguardTeam/AdGuardVPNExtension)
 
-Repository of AdGuard VPN Browser Extension.
+Repozitář rozšíření prohlížeče AdGuard VPN.
 
 ### [AdGuardVPNCLI](https://github.com/AdguardTeam/AdGuardVPNCLI)
 
-Repository of AdGuard VPN for Linux — a command‑line interface for managing VPN connection. The repo acts as a bug tracker.
+Repozitář AdGuard VPN pro Linux — rozhraní příkazového řádku pro správu VPN připojení. Repo slouží jako nástroj pro sledování chyb.
 
-## DNS-based products
+## Produkty založené na DNS
 
 ### [AdGuardDNS](https://github.com/AdguardTeam/AdGuardDNS)
 
-Open-source repository that is also used for tracking bugs and issues related to AdGuard DNS service. Users can:
+Open-source repozitář, který slouží také ke sledování chyb a problémů souvisejících s AdGuard DNS. Uživatelé mohou:
 
-- View and report DNS issues
-- Suggest improvements
+- Zobrazit a nahlásit problémy s DNS
+- Navrhnout vylepšení
 
 ### [AdGuardHome](https://github.com/AdguardTeam/AdGuardHome)
 
-Repository of AdGuard Home — free network-wide software for blocking ads and trackers via DNS. Users can:
+Repozitář AdGuard Home — bezplatný software pro blokování reklam a slídičů v celé síti prostřednictvím DNS. Uživatelé mohou:
 
-- Check and file bug reports or feature requests
-- Review or contribute to code
-- Download and install releases
+- Zkontrolovat a odeslat hlášení o chybách nebo požadavcích na nové funkce
+- Zkontrolovat nebo přispět ke kódu
+- Stáhnout a nainstalovat sestavení
 
-## Documentation and Knowledge bases
+## Dokumentace a databáze znalostí
 
-Knowledge bases are aimed to help users better understand and use AdGuard. They describe each AdGuard product in detail: from feature overviews and problem-solving guides to advanced setting manuals and API documentations. In the repositories users can:
+Cílem databáze znalostí je pomoci uživatelům lépe porozumět programu AdGuard a efektivněji jej využívat. Podrobně popisuje každý produkt AdGuard: od přehledů funkcí a návodů k řešení problémů až po příručky k pokročilým nastavením a dokumentaci k API. V repozitářích uživatelé mohou:
 
-- Suggest corrections or edits to knowledge base articles
-- Propose new articles
-- Test or run the local version
+- Navrhnout opravy nebo úpravy článků databáze znalostí
+- Navrhnout nové články
+- Otestovat nebo spustit lokální verzi
 
 ### [KnowledgeBase](https://github.com/AdguardTeam/KnowledgeBase)
 
-Central documentation for AdGuard Ad Blocker and the technologies related to it.
+Centrální dokumentace k blokátoru reklam AdGuard a souvisejícím technologiím.
 
 ### [KnowledgeBaseDNS](https://github.com/AdguardTeam/KnowledgeBaseDNS)
 
-Detailed feature overview, troubleshooting guides and documentation for AdGuard DNS (both Public and Private), AdGuard Home, and everything related to them.
+Podrobný přehled funkcí, návody k řešení problémů a dokumentace k AdGuard DNS (veřejnému i soukromému), AdGuard Home a všem souvisejícím tématům.
 
 ### [KnowledgeBaseVPN](https://github.com/AdguardTeam/KnowledgeBaseVPN)
 
-Detailed feature overview and troubleshooting guides for AdGuard VPN.
+Podrobný přehled funkcí a návody k řešení problémů pro AdGuard VPN.
 
 ### [KnowledgeBaseMail](https://github.com/AdguardTeam/KnowledgeBaseMail)
 
-Detailed feature overview and troubleshooting guides of AdGuard Mail.
+Podrobný přehled funkcí a návody k řešení problémů pro AdGuard Mail.
 
-## Core libraries
+## Základní knihovny
 
 ### [CoreLibs](https://github.com/AdguardTeam/CoreLibs)
 
-AdGuard’s cross-platform core filtering engine. Used in Android, Windows, and Mac products. Users can:
+Multiplatformní jádro modulu filtrování AdGuard. Používá se v produktech pro Android, Windows a Mac. Uživatelé mohou:
 
-- Explore filtering logic and DNS handling
-- Report bugs and suggest features via Issues
+- Prozkoumat logiku filtrování a zpracování DNS
+- Nahlásit chyby a navrhnout funkce skrze Issues
 
 ### [DNSLibs](https://github.com/AdguardTeam/DNSLibs)
 
-A DNS library used by CoreLibs and AdGuardHome. Users can:
+Knihovna DNS používaná v balíčcích CoreLibs a AdGuard Home. Uživatelé mohou:
 
-- Review and contribute to low-level DNS implementation
-- Suggest optimizations
+- Posoudit a přispět k nízkoúrovňové implementaci DNS
+- Navrhnout optimalizace
 
 ### [VPNLibs](https://github.com/AdguardTeam/VPNLibs)
 
-Shared codebase used in AdGuard VPN products across platforms for AdGuard VPN protocol implementation. Users can:
+Sdílená kódová základna používaná v produktech AdGuard VPN napříč platformami pro implementaci protokolu AdGuard VPN. Uživatelé mohou:
 
-- Contribute to VPN stack behavior
-- Report or view performance issues and bugs
+- Přispět k chování zásobníku VPN
+- Nahlásit nebo zobrazit problémy s výkonem a chyby
 
-## Core ad blocking and filtering technologies
+## Základní technologie blokování reklam a filtrování
 
 ### [AdguardFilters](https://github.com/AdguardTeam/AdguardFilters)
 
-Contains AdGuard’s core filter lists. Users can:
+Obsahuje základní seznamy filtrů AdGuard. Uživatelé mohou:
 
-- View and download filter lists
-- Create issues to report false positives or suggest new rules
-- Monitor updates to filter logic
+- Zobrazit a stáhnout seznamy filtrů
+- Vytvořit problémy pro hlášení falešně pozitivních výsledků nebo navržení nových pravidel
+- Sledovat aktualizace logiky filtru
 
 ### [AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter)
 
-Repository of AdGuard DNS filter — the main DNS-level blocking list used in AdGuard DNS and DNS filtering features. Users can:
+Repozitář filtru AdGuard DNS — hlavní seznam blokování na úrovni DNS používaný v AdGuard DNS a funkcích DNS filtrování. Uživatelé mohou:
 
-- Inspect the current rule set
-- Propose changes or additions
+- Zkontrolovat aktuální sadu pravidel
+- Navrhnout změny nebo doplnění
 
 ### [AGLint](https://github.com/AdguardTeam/AGLint)
 
-A linter for adblock filter list syntax. Users can:
+Nástroj pro kontrolu syntaxe seznamů filtrů Adblock. Uživatelé mohou:
 
-- Install AGLint to check their projects for rule issues
-- Contribute to lint rules
+- Nainstalovat AGLint pro kontrolu projektů na problémy s pravidly
+- Přispívat k pravidlům lint
 
 ### [Scriptlets](https://github.com/AdguardTeam/Scriptlets)
 
-JavaScript helpers used in filtering rules. Users can:
+Pomocné funkce JavaScript používané v pravidlech filtrování. Uživatelé mohou:
 
-- Explore available scriptlets
-- Submit pull requests for new scriptlets
+- Prozkoumat dostupné skriptlety
+- Odeslat pull request pro nové skriptlety
 
 ### [tsurlfilter](https://github.com/AdguardTeam/tsurlfilter)
 
-TypeScript content blocker library for browser extensions. Users can:
+Knihovna pro blokování obsahu v TypeScript pro rozšíření prohlížečů. Uživatelé mohou:
 
-- Explore how filtering logic is implemented
-- Contribute fixes and features
+- Prozkoumat, jak je implementována logika filtrování
+- Přispět opravami a funkcemi
 
-## There’s more
+## Je toho více
 
-Above, we listed 27 main public AdGuard repositories out of 96 total. If you want to go down the rabbit hole, you can [find the rest on the AdGuardTeam GitHub page](https://github.com/orgs/AdguardTeam/repositories?type=all&q=visibility%3Apublic+archived%3Afalse).
+Výše jsme uvedli 27 hlavních veřejných repozitářů AdGuard z celkových 96. Pokud se do toho chcete ponořit do hloubky, můžete [zbytek najít na AdGuardTeam na GitHubu](https://github.com/orgs/AdguardTeam/repositories?type=all&q=visibility%3Apublic+archived%3Afalse).
 
-We’ll be waiting for your feedback there! Stay safe online and offline.
+Budeme čekat na vaši zpětnou vazbu! Dbejte na svou bezpečnost na internetu i v reálném životě.
