@@ -59,7 +59,7 @@ By setting `true`, you enable HTTPS certificate revocation checking.
 
 #### `network.http.compress.body`
 
-Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering engine, will compress the HTTP response body before sending it with the original response algorithm, if supported, or with the default fallback algorithm, GZip. Currently, only the GZip compression algorithm is implemented. Responses from BrowserApi will also be encoded if this option is enabled.
+Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering engine, will compress the HTTP response body before sending it with the original response algorithm (if supported) or with the default fallback algorithm (GZip). Responses from BrowserApi will also be encoded if this option is enabled.
 
 #### `network.tcp.keepalive.enabled`
 
