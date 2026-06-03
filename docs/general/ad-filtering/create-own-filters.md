@@ -3032,6 +3032,8 @@ Tracking links will now be automatically cleaned up, allowing direct navigation 
 
 Rules with the `$urltransform` modifier can only be used [**in trusted filters**](#trusted-filters).
 
+`$urltransform` is only compatible with `$domain`, `$third-party`, `$important`, `$match-case`, `$badfilter`, `$to`, `$method`, `$popup`, `$denyallow`, and [content-type modifiers](#content-type-modifiers). Rules using any other modifiers are invalid and discarded.
+
 `$urltransform` rules without [content-type modifiers](#content-type-modifiers) will only match requests where the content type is `document`.
 
 :::
@@ -3042,7 +3044,7 @@ Rules with the `$urltransform` modifier are supported by AdGuard for Windows, Ad
 
 `$urltransform` rules with [content-type modifiers](#content-type-modifiers) are supported starting from [CoreLibs] v1.19 or later. In earlier versions, content-type modifiers were not allowed with `$urltransform`.
 
-Rules with the `$urltransform` modifier and [content-type modifiers](#content-type-modifiers) are also supported by [AdGuard Browser Extension][ext-chr] v5.5 or later, and by [AdGuard for Chrome MV3][ext-mv3] with [limitations](#urltransform-modifier-limitations).
+Rules with the `$urltransform` modifier and [content-type modifiers](#content-type-modifiers) are also supported by [AdGuard Browser Extension][ext-chr] v5.5 or later, and by [AdGuard for Chrome MV3][ext-mv3] v5.5 or later with [limitations](#urltransform-modifier-limitations).
 
 :::
 
