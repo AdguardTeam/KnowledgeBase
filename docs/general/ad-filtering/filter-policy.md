@@ -111,8 +111,8 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 AdGuard tracking protection filters include:
 
 - AdGuard Tracking Protection filter
-- AdGuard URL Tracking filter
 - AdGuard Mail Tracking Protection filter
+- AdGuard URL Tracking filter
 
 ### The purpose of these filters
 
