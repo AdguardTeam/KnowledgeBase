@@ -21,4 +21,4 @@ We have a standalone extension for Safari [AdGuard Mini for Mac](/adguard-mini-f
 
 :::
 
-**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** While extensions provide essential ad-blocking features, they cannot match the system-wide capabilities of desktop programs like [AdGuard for Windows](/adguard-for-windows/) and [AdGuard for Mac](/adguard-for-mac/). If you are looking for comprehensive protection that goes beyond the browser, you can read more about the [benefits of standalone apps in our detailed comparison](/adguard-browser-extension/comparison-standalone).
+**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** While extensions provide essential ad-blocking features, they cannot match the system-wide capabilities of desktop programs like [AdGuard for Windows](/adguard-for-windows/) and [AdGuard for Mac](/adguard-for-mac/). If you are looking for comprehensive protection that goes beyond the browser, you can read more about the [benefits of standalone apps](/adguard-browser-extension/comparison-standalone).

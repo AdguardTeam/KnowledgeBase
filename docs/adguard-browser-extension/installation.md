@@ -20,13 +20,13 @@ This article is about AdGuard Browser Extension, which safeguards only your brow
 
 ### Chrome and Chromium-based browsers {#chrome-based}
 
-Open the extension’s page in [Chrome Web Store](https://agrd.io/extension_chrome) and click *Add to Chrome*.
+Open the extension’s page in the [Chrome Web Store](https://agrd.io/extension_chrome) and click *Add to Chrome*.
 
-![AdGuard Browser Extension in Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/chrome_install.png)
+![AdGuard Browser Extension in the Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/chrome_install.png)
 
 In the opened dialog, click *Add extension*.
 
-![Dialog box in Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_extension_chrome.png)
+![Dialog box in the Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_extension_chrome.png)
 
 ### Opera {#opera}
 
@@ -42,7 +42,7 @@ Open the page [addons.mozilla.org](https://agrd.io/extension_firefox) and click 
 
 ### Yandex Browser {#yandex}
 
-Click the browser settings button in the upper right corner of the browser, then choose *Extensions* → *Online safety*. Find AdGuard, then click *Install*.
+Click the browser settings button in the upper right corner of the browser, choose *Extensions* → *Online safety*, find AdGuard, and click *Install*.
 
 ![AdGuard Browser Extension in Yandex Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/yandex_install.png)
 
@@ -56,9 +56,9 @@ In the opened dialog window, click *Add extension*.
 
 ![Edge dialog window *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_adguard_in_edge.png)
 
-Alternatively, you can install AdGuard Browser Extension for Edge from the [Chrome Web Store](https://agrd.io/extension_chrome). Open its web page in your Edge browser and click *Get extension*.
+Alternatively, you can install AdGuard Browser Extension for Edge from the [Chrome Web Store](https://agrd.io/extension_chrome). Open its webpage in your Edge browser and click *Get extension*.
 
-![Edge on the Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_chrome_store_in_edge.png)
+![Chrome extensions in Edge *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_chrome_store_in_edge.png)
 
 In the opened dialog, click *Add extension*.
 

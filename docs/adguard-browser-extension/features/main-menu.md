@@ -15,8 +15,8 @@ The extension’s main page can be accessed by clicking its icon on your browser
 
 From the main page, you can manage your protection and access key features:
 
-- Manually hide any element on a web page (a custom rule will be automatically added to your *User rules*)
-- Open the *Filtering log* to view detailed information about your browser’s traffic and block requests on the fly
+- Manually hide any element on a webpage (a custom rule will be automatically added to your *User rules*)
+- Open *Filtering log* to view detailed information about your browser’s traffic and block requests on the fly
 - Submit a complaint about missed ads or broken page elements so our filter engineers can review and fix the issue
 - Check a website’s security report
 - See statistics on all blocked elements

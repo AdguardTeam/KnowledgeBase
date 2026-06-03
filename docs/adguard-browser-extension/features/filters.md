@@ -19,14 +19,14 @@ Blocking ads is the core functionality of any ad blocker, and AdGuard Browser Ex
 
 All filters are grouped by category based on their role:
 
-- Ad blocking: Blocks various types of advertisements
-- Privacy: Blocks online trackers and analytical systems to protect your data
-- Social widgets: Blocks social media elements like ‘Like’ and ‘Share’ buttons
-- Annoyances: Blocks irritating web elements, such as cookie notices, third-party widgets, or in-page popups
-- Security: Blocks requests to phishing and malicious websites
-- Other: Contains miscellaneous filters that do not fit into the main categories
-- Language-specific: Blocks ads on websites in specific languages
-- Custom: Allows you to add your own filters from a local file or URL
+- Ad blocking: Block various types of advertisements
+- Privacy: Block online trackers and analytical systems to protect your data
+- Social widgets: Block social media elements like *Like* and *Share* buttons
+- Annoyances: Block irritating web elements, such as cookie notices, third-party widgets, or in-page popups
+- Security: Block requests to phishing and malicious websites
+- Other: Contain miscellaneous filters that do not fit into the main categories
+- Language-specific: Block ads on websites in specific languages
+- Custom: Allow you to add your own filters from a local file or URL
 
 You can enable either individual filters or entire groups at once.
 
@@ -64,11 +64,11 @@ Importing a ready-to-use filter list is better done in the *Custom filters* tab.
 
 You can export your own filtering rules. This option is good for transferring your list of rules between browsers or devices.
 
-When you add a website to the *Allowlist* or use the Assistant tool to hide an element on a page, the corresponding rule is automatically saved in *User rules*.
+When you add a website to *Allowlist* or use the Assistant tool to hide an element on a page, the corresponding rule is automatically saved in *User rules*.
 
 ## Allowlist {#allowlist}
 
-The *Allowlist* is used to exclude specific websites from filtering. None of the blocking rules will apply to the websites on this list.
+*Allowlist* is used to exclude specific websites from filtering. None of the blocking rules will apply to the websites on this list.
 
 ![Allowlist *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allowlist.png)
 
