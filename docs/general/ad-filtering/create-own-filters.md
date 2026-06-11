@@ -4401,7 +4401,7 @@ This rule removes all `div` elements with the attribute `some_attribute` on `exa
 
 In addition to checking standard HTML attributes, you can filter elements based on their inner text or script content.
 
-### `:contains()`
+#### `:contains()`
 
 The recommended way to filter elements by their content is using the `:contains()` pseudo-class. It allows you to target elements based on the actual text or script variables they contain, supporting both plain text strings and regular expressions.
 
