@@ -131,7 +131,7 @@ What it blocks:
 
 The **URL Tracking filter** is designed to remove tracking parameters from web addresses
 
-The **Mail Tracking Protection filter** removes tracking pixels embedded in emails to prevent senders from monitoring when you open messages.
+The **Mail Tracking Protection filter** blocks tracking pixels embedded in emails to prevent senders from monitoring when you open messages.
 
 ### Limitations and exceptions
 
