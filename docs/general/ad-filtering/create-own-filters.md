@@ -4412,7 +4412,7 @@ example.com$$div:contains("Sponsored by")
 example.com$$script:contains(/ad_system_\d+/)
 ```
 
-The first rule removes any `<script>` tag containing the word Adverts. The second targets any `<div>` containing the phrase Sponsored by. The third rule utilizes a regular expression to match dynamic script patterns.
+The first rule removes any `<script>` tag containing the word `Adverts`. The second targets any `<div>` containing the phrase `Sponsored by`. The third rule utilizes a regular expression to match dynamic script patterns.
 
 :::caution Deprecation notice
 
