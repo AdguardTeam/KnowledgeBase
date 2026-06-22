@@ -4399,15 +4399,28 @@ This rule removes all `div` elements with the attribute `some_attribute` on `exa
 
 ### Special attributes {#html-filtering-rules--special-attributes}
 
-In addition to usual attributes, which value is every element checked for, there is a set of special attributes that change the way a rule works. Below there is a list of these attributes:
+In addition to checking standard HTML attributes, you can filter elements based on their inner text or script content.
 
-#### `tag-content`
+#### `:contains()`
+
+The recommended way to filter elements by their content is using the `:contains()` pseudo-class. It allows you to target elements based on the actual text or script variables they contain, supporting both plain text strings and regular expressions.
+
+**Examples:**
+
+```example.com$$script:contains(Adverts)
+example.com$$div:contains("Sponsored by")
+example.com$$script:contains(/ad_system_\d+/)
+```
+
+The first rule removes any `<script>` tag containing the word `Adverts`. The second targets any `<div>` containing the phrase `Sponsored by`. The third rule utilizes a regular expression to match dynamic script patterns.
 
 :::caution Deprecation notice
 
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
+The attributes listed below are legacy features kept only for backward compatibility. They may become unsupported in future updates. Prefer using the `:contains()` pseudo-class where it is available.
 
 :::
+
+#### `tag-content`
 
 This is the most frequently used special attribute. It limits selection with those elements whose innerHTML code contains the specified substring.
 
@@ -4438,12 +4451,6 @@ This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 #### `wildcard`
 
-:::caution Deprecation notice
-
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
-
-:::
-
 This special attribute works almost like `tag-content` and allows you to check the innerHTML code of the document. Rule will check if HTML code of the element fits the [search pattern](https://en.wikipedia.org/wiki/Glob_(programming)).
 
 You must use `""` to escape `"`, for instance:
@@ -4463,12 +4470,6 @@ This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 :::
 
 #### `max-length`
-
-:::caution Deprecation notice
-
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
-
-:::
 
 Specifies the maximum length for content of HTML element. If this parameter is set and the content length exceeds the value, a rule does not apply to the element.
 
@@ -4493,12 +4494,6 @@ This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 :::
 
 #### `min-length`
-
-:::caution Deprecation notice
-
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
-
-:::
 
 Specifies the minimum length for content of HTML element. If this parameter is set and the content length is less than preset value, a rule does not apply to the element.
 
