@@ -4732,6 +4732,12 @@ Learn more about [how to debug scriptlets](#debug-scriptlets).
 
 More information about scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
 
+:::caution Restrictions
+
+Scriptlets rules can only be used [**in trusted filters**](#trusted-filters).
+
+:::
+
 :::info Compatibility
 
 Scriptlet rules are not supported by AdGuard Content Blocker.
