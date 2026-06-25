@@ -4317,7 +4317,9 @@ This pseudo-class has no arguments.
 
 :::info Compatibility
 
-Rules with the `:empty-trimmed` pseudo-class are supported by AdGuard Browser Extension. Such rules do not work in AdGuard Content Blocker.
+Added in ExtendedCSS v2.0.0.
+
+Rules with the `:empty-trimmed` pseudo-class are supported by AdGuard Browser Extension v5.5 or later. Such rules do not work in AdGuard Content Blocker.
 
 :::
 
