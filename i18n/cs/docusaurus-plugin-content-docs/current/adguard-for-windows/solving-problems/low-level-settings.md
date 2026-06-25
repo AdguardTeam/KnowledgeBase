@@ -107,13 +107,17 @@ Tato možnost by měla být zapnuta **pouze pro účely ladění**. Zaškrtnutí
 
 Přidá dodatečnou mezeru mezi metodu HTTP a URL adresu a odstraní mezeru za polem "Host:", aby se zabránilo hloubkové kontrole paketů. Např. požadavek
 
-`GET /foo/bar/ HTTP/1.1
-Host: example.org`
+```text
+GET /foo/bar/ HTTP/1.1
+Host: example.org
+```
 
 bude převeden na
 
-`GET  /foo/bar/ HTTP/1.1
-Host:example.org`
+```text
+GET  /foo/bar/ HTTP/1.1
+Host:example.org
+```
 
 Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana před DPI* v Režimu utajení.
 
@@ -137,7 +141,7 @@ Umožňuje zobrazit záznamy protokolu QUIC v záznamech filtrování. Pouze pro
 
 ### Povolit udržování TCP
 
-Pravidelné odesílání paketů TCP přes neaktivní připojení, aby se zajistilo jeho fungování a resetování časových limitů NAT. Tato možnost může být užitečná pro obejití přísného nastavení překladu síťových adres (NAT), které používají někteří poskytovatelé internetových služeb.
+Platné hodnoty: 1–1500. Pokud je zadána neplatná velikost, použije se hodnota vybraná systémem.
 
 ### Interval udržování TCP
 
@@ -209,7 +213,7 @@ Pokud je v režimu blokování pro pravidla pro hostitele, nebo v režimu blokov
 
 ### Vlastní IPv6 adresa
 
-Pokud je v režimu blokování pro pravidla pro hostitele, nebo v režimu blokování pro pravidla typu adblock vybrána vlastní IP adresa, bude tato IP adresa vrácena v odpovědi na blokované požadavky AAAA. Pokud nejsou zadáno nic, AdGuard odpoví výchozí chybou "Refused".
+Pokud je v režimu blokování pro pravidla pro hostitele, nebo v režimu blokování pro pravidla typu adblock vybrána vlastní IP adresa, bude tato IP adresa vrácena v odpovědi na blokované požadavky AAAA. Pokud není zadáno nic, AdGuard odpoví výchozí chybou "Refused".
 
 ### Záložní server
 

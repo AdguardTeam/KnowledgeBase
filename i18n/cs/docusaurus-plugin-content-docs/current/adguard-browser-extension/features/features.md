@@ -9,18 +9,18 @@ Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze v
 
 :::
 
-- [Main menu](/adguard-browser-extension/features/main-menu.md)
+- [Hlavní nabídka](/adguard-browser-extension/features/main-menu.md)
 
-  The main popup from which you can access settings, filtering log and statistics, and report problems
+  Hlavní vyskakovací okno, ze kterého můžete přistupovat k nastavení, filtrovat logy, statistiky a hlásit problémy
 
-- [Filters](/adguard-browser-extension/features/filters.md)
+- [Filtry](/adguard-browser-extension/features/filters.md)
 
   Filtry a uživatelská pravidla pro přesné nastavení blokování reklam
 
-- [Tracking protection (Stealth Mode)](/adguard-browser-extension/features/stealth-mode.md)
+- [Ochrana před sledováním (Režim utajení)](/adguard-browser-extension/features/stealth-mode.md)
 
-  Settings to block cookies, UTM tags, and online analytics that collect user information
+  Nastavení pro blokování souborů cookies, značek UTM a online analýz, které shromažďují informace o uživateli
 
-- [Other features and options](/adguard-browser-extension/features/other-features.md)
+- [Další funkce a možnosti](/adguard-browser-extension/features/other-features.md)
 
-  General and additional settings, links to privacy documents and GitHub repository
+  Obecná a doplňková nastavení, odkazy na dokumenty o ochraně osobních údajů a repozitář GitHub

@@ -5,15 +5,15 @@ sidebar_position: 1
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+本文适用于 Windows 版的 AdGuard v8.0，一款全面的广告拦截器，可在系统层面保护您的设备。 这是一个仍在开发中的 Beta 测试版本。 要试用，请下载[适用于 Windows 的 AdGuard 测试版](https://agrd.io/windows_beta)。
 
 :::
 
-![Protection tab](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/protection_section.png)
+![保护选项卡](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/protection_section.png)
 
-The _Protection_ tab contains all key security and filtering settings. Here you can control _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Browsing security_, _Parental control_, and _Extensions_. You can also manage AdGuard Assistant here — a tool that lets you control its functionality without opening the app. Each of these features is described in a separate article.
+「保护」标签包含所有关键的安全与过滤设置。 在这里可配置广告拦截、跟踪保护、DNS 保护、烦扰拦截、浏览安全、家长控制和扩展程序。 您还可以在这里管理 AdGuard 助手，该工具在不打开应用程序的情况下控制其功能。 每个功能都在单独的文章中描述。
 
-[网络设置](/adguard-for-windows-8/protection/ad-blocking)
+[广告拦截](/adguard-for-windows-8/protection/ad-blocking)
 
 [跟踪保护](/adguard-for-windows-8/protection/tracking-protection)
 

@@ -107,13 +107,17 @@ This option should be enabled **only for debugging purposes**. Ticking the check
 
 Adds extra space between the HTTP method and the URL and removes space after the "Host:" field to avoid deep packet inspection. For instance, the request
 
-`GET /foo/bar/ HTTP/1.1
-Host: example.org`
+```text
+GET /foo/bar/ HTTP/1.1
+Host: example.org
+```
 
 will be converted to
 
-`GET  /foo/bar/ HTTP/1.1
-Host:example.org`
+```text
+GET  /foo/bar/ HTTP/1.1
+Host:example.org
+```
 
 This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 

@@ -2671,8 +2671,7 @@ With these rules, specified UTM parameters will be removed from any request save
 [AdGuard for Chrome MV3][ext-mv3] has some limitations:
 
 - Регулярные выражения, отрицание и правила белого списка не поддерживаются.
-- Generic-правила применяются раньше specific-правил, а перенаправление происходит только один раз. This may prevent subsequent or more specific redirects from applying.
-- Группа похожих правил `$removeparam` будет объединена в одно. Пример:
+- Each `$removeparam` rule with a named parameter gets its own declarative rule with a param-aware `urlFilter` (e.g. `^utm_source=`). Chrome DNR applies a redirect only once per navigation, so without this, only the highest-priority rule would fire and the rest would be skipped. The param-aware `urlFilter` makes each rule fire only when its target parameter is present, forming a redirect chain — one parameter stripped per hop — until all are removed. Chrome allows up to 20 hops per navigation, which is enough for real-world tracking URLs. These hops are invisible to users. Пример:
 
     ```bash
     ||testcases.adguard.com$xmlhttprequest,removeparam=p1case1
@@ -2693,8 +2692,48 @@ With these rules, specified UTM parameters will be removed from any request save
         "transform": {
         "queryTransform": {
           "removeParams": [
-          "p1case1",
-          "p2case1",
+          "p1case1"
+          ]
+        }
+        }
+      }
+      },
+      "condition": {
+      "urlFilter": "||testcases.adguard.com*^p1case1=",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+      }
+    },
+    {
+      "id": 2,
+      "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+        "queryTransform": {
+          "removeParams": [
+          "p2case1"
+          ]
+        }
+        }
+      }
+      },
+      "condition": {
+      "urlFilter": "||testcases.adguard.com*^p2case1=",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+      }
+    },
+    {
+      "id": 3,
+      "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+        "queryTransform": {
+          "removeParams": [
           "P3Case1"
           ]
         }
@@ -2702,11 +2741,10 @@ With these rules, specified UTM parameters will be removed from any request save
       }
       },
       "condition": {
-      "urlFilter": "||testcases.adguard.com",
+      "urlFilter": "||testcases.adguard.com*^P3Case1=",
       "resourceTypes": [
         "xmlhttprequest"
-      ],
-      "isUrlFilterCaseSensitive": false
+      ]
       }
     },
     {
@@ -2724,10 +2762,10 @@ With these rules, specified UTM parameters will be removed from any request save
       }
       },
       "condition": {
+      "urlFilter": "^p1case2=",
       "resourceTypes": [
         "xmlhttprequest"
-      ],
-      "isUrlFilterCaseSensitive": false
+      ]
       }
     }
     ]
@@ -4700,7 +4738,7 @@ Path-in-domain syntax works with all types of cosmetic rules (`##`, `#@#`, `#$#`
 
 :::info Совместимость
 
-Path-in-domain syntax has been introduced in [CoreLibs][] v1.20.
+Path-in-domain syntax has been introduced in [CoreLibs][] v1.20, Browser extension v5.4.
 
 :::
 
@@ -5026,9 +5064,9 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 - `cli` — AdGuard для Linux — [https://filters.adtidy.org/cli/filters/2.txt](https://filters.adtidy.org/cli/filters/2.txt)
 
-- `android` — AdGuard для Android — [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
+- `android` — AdGuard for Android — [https://filters.adtidy.org/android/filters/2_optimized.txt](https://filters.adtidy.org/android/filters/2_optimized.txt)
 
-- `ios` — AdGuard для iOS — [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
+- `ios` — AdGuard for iOS — [https://filters.adtidy.org/ios/filters/2_optimized.txt](https://filters.adtidy.org/ios/filters/2_optimized.txt)
 
 - `ext_chromium` — Браузерное расширение AdGuard для Chrome — [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
 
@@ -5040,9 +5078,9 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 - `ext_opera` — Браузерное расширение AdGuard для Opera — [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
 
-- `ext_safari` — AdGuard для Safari — [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
+- `ext_safari` — AdGuard for Safari — [https://filters.adtidy.org/extension/safari/filters/2_optimized.txt](https://filters.adtidy.org/extension/safari/filters/2_optimized.txt)
 
-- `ext_android_cb` — AdGuard Content Blocker — [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
+- `ext_android_cb` — AdGuard Content Blocker — [https://filters.adtidy.org/extension/android-content-blocker/filters/2_optimized.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2_optimized.txt)
 
 - `ext_ublock` — uBlock Origin — [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
 

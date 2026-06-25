@@ -471,7 +471,7 @@ Další řešení:
 
 Nejproblematičtější jsou zařízení s operačním systémem OxygenOS, který se vyznačuje čištěním mezipaměti a paměti RAM včetně optimalizace operačního systému. Kromě toho může OxygenOS přerušit práci AdGuardu, pokud ho delší dobu nepoužíváte. Chcete-li se těmto nežádoucím následkům vyhnout, postupujte podle následujících pokynů.
 
-#### Locking the app
+#### Uzamčení aplikace
 
 - Přejděte na **Nastavení**
 
@@ -497,17 +497,17 @@ Na některých telefonech OnePlus existuje také funkce nazvaná Automatické sp
 
 :::
 
-#### Battery optimization
+#### Optimalizace baterie
 
 - Otevřete nastavení zařízení → **Baterie** → **Optimalizace baterie** → přepněte na **Všechny aplikace** seznam (menu nahoře) → vyberte AdGuard → a aktivujte **Neoptimalizovat**
 
 - Otevřete nastavení zařízení → **Baterie** → **Optimalizace baterie** → (⁝) nabídka se třemi tečkami → **Pokročilá optimalizace** → Zakázat hloubkovou optimalizaci
 
-#### App Auto-Launch
+#### Automatické spouštění aplikací
 
 Funkce automatického spouštění aplikací (v některých OnePlus telefonech) v podstatě zabraňuje práci aplikací na pozadí. Deaktivujte ji pro AdGuard.
 
-#### Enhanced / Advanced optimization
+#### Vylepšená / pokročilá optimalizace
 
 Pro OnePlus 6 a novější:
 
@@ -519,7 +519,7 @@ Pro OnePlus 6 a starší:
 
 - Vypněte **Nastavení systému** → **Baterie** → **Optimalizace baterie** → (⁝) nabídka se třemi tečkami → **Vylepšená optimalizace**.
 
-#### Recent apps clearing behaviour
+#### Chování při čištění nedávných aplikací
 
 Za normálních okolností se aplikace po přejetí nezavře. U OnePlus to však může fungovat jinak. Vymazání nedávných aplikací může být nastaveno tak, že přejetím prstu nahoru po aplikaci ji zavřete. Návrat do “normálního“ režimu:
 
@@ -527,139 +527,139 @@ Přejděte na **Nastavení** → **Pokročilé** → **Správa nedávných aplik
 
 ### ColorOS
 
-On devices running ColorOS, the system may aggressively restrict background processes as well. To ensure AdGuard works properly in the background, configure the following settings:
+V zařízeních se systémem ColorOS může systém agresivně omezovat procesy na pozadí. Aby AdGuard správně fungoval na pozadí, proveďte následující nastavení:
 
-- Open **System settings** → **Battery → Battery mode** and select **High performance mode**
+- Otevřete **Nastavení** → **Baterie → Režim baterie** a vyberte **Režim vysokého výkonu**
 
 ![High performance mode *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/high_performance_mode.jpg)
 
-- Go to **Apps → App management → AdGuard → Battery usage** and select **Allow background activity**
+- Přejděte na **Aplikace → Správa aplikací → AdGuard → Využití baterie** a vyberte **Povolit aktivitu na pozadí**
 
 ![Allow background activity *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/allow_background_activity.jpg)
 
-- Go to **Apps → Auto launch** and enable the switch for AdGuard
+- Přejděte na **Aplikace → Automatické spouštění** a přepněte AdGuard
 
 ![Auto launch *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/auto_launch.jpg)
 
-- To lock AdGuard in the **Recent apps** menu:
+- Chcete-li uzamknout AdGuard v menu **Nedávné aplikace**:
 
-    - Open the **Recent apps** screen
-    - Swipe the AdGuard app card down to lock it in memory
+    - Otevřete **Nedávné aplikace**
+    - Přejeďte dolů přes kartu aplikace AdGuard a uzamkněte ji v paměti
 
 ## Sony
 
-Sony was the first mobile OS developer to introduce non-standard background process optimization. It is called **Stamina mode** and it instantly breaks all background processes if enabled. To solve this:
+Společnost Sony byla prvním vývojářem mobilního operačního systému, která zavedla nestandardní optimalizaci procesů na pozadí. Nazývá se **režim STAMINA** a okamžitě přeruší všechny procesy na pozadí, pokud je povolen. Možné řešení:
 
-Go to **Settings** → **Battery** → Disable **STAMINA mode**
+Přejděte do **Nastavení** → **Baterie** → vypněte **režim STAMINA**
 
 ![Sony Stamina mode *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/sony_stamina.png)
 
-On Android 11+, on the same screen with STAMINA mode, there is a setting called **Adaptive battery**, you should disable it too.
+V systému Android 11+ je na stejné obrazovce s režimem STAMINA nastavení s názvem **Adaptivní baterie**, to byste měli také vypnout.
 
-You also need to be set AdGuard as Excepted from Power-saving feature:
+Je také třeba AdGuard vyjmout z funkce úspory energie:
 
-**System settings** → **Apps & Notifications** → **Advanced** → **Special app access** → **Power saving feature** → Switch AdGuard to **Excepted**
+**Nastavení systému** → **Aplikace a Oznámení** → **Rozšířené** → **Přístup ke speciálním aplikacím** → **Funkce úspory energie** → Přepnout AdGuard na **Vynechat**
 
 ## Wiko
 
-Wiko devices are problematic in terms of non-standard background process optimizations. To let AdGuard work in background, do the following:
+Zařízení Wiko jsou problematická z hlediska nestandardních optimalizací procesů na pozadí. Chcete-li nechat AdGuard pracovat na pozadí, proveďte následující:
 
-- Go to **Phone Assistant** → **Battery** → turn off **Eco Mode**
-- Go back and go to **Manual mode**
-- Tap on the **Gear** icon on top right → **Background apps whitelist** → Select **AdGuard**
+- Přejděte do **Asistent telefonu** → **Baterie** → vypněte **režim Eco**
+- Vraťte se zpět a přejděte do sekce **Ruční režim**
+- Klepněte na ikonu **Ozubeného kola** vpravo nahoře → **Seznam povolených aplikací na pozadí** → Vyberte **AdGuard**
 
 ## Zařízení Pixel/Nexus/Nubia/Essential
 
-Android stock OS normally does not conflict with apps working in the background, but if you are facing any issues you will need to switch on the **Always-on VPN** mode.
+Čistý operační systém Android obvykle není v konfliktu s aplikacemi pracujícími na pozadí, ale pokud se potýkáte s nějakými problémy, musíte zapnout režim **Trvalá síť VPN**.
 
-- Go to **Settings** → **Network and Internet**
+- Přejděte do **Nastavení** → **Síť a Internet**
 
     ![Stocknetwork *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stocknetwork.png)
 
-- Tap **VPN** and choose **AdGuard**
+- Klepněte na **VPN** a vyberte **AdGuard**
 
     ![Stockvpn *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockvpn.png)
 
-- Set up **Always-on VPN** mode
+- Nastavte režim **Trvalá síť VPN**
 
     ![Stockadguard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)
 
 ## Realme
 
-On devices running Realme UI 4.0, there are three key configurations to ensure that AdGuard works properly in the background.
+Na zařízeních s uživatelským rozhraním Realme UI 4.0 existují tři klíčové konfigurace, které zajistí správnou funkci AdGuardu na pozadí.
 
 1. Nastavte aplikaci AdGuard:
 
-    - Long press the AdGuard icon
-    - From the menu that appears, select **App info**
-    - Go to **Battery usage** and enable all options:
-        - Allow background activity
-        - Allow foreground activity
-        - Allow auto launch
-    - In the **App info** section, scroll down and turn off the option **Pause app activity if unused**
+    - Dlouze stiskněte ikonu AdGuardu
+    - V zobrazené nabídce vyberte možnost **Informace o aplikaci**
+    - Přejděte na **Využití baterie** a povolte všechny možnosti:
+        - Povolit aktivitu na pozadí
+        - Povolit aktivitu na popředí
+        - Povolit automatické spouštění
+    - V sekci **Informace o aplikaci** přejděte dolů a vypněte možnost **Pozastavit aktivitu aplikace, pokud se nepoužívá**
 
     ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme12.png)
 
 1. Nastavte baterii:
 
-    - Go to **Settings → Battery → More settings → Optimize battery use**
-    - Find AdGuard in the list and enable **Don't optimize**
-    - In **Other settings**, check the **App Quick Freeze** section and disable it for AdGuard
+    - Přejděte na **Nastavení → Baterie → Další nastavení → Optimalizace využití baterie**
+    - Vyhledejte AdGuard v seznamu a povolte **Neoptimalizovat**
+    - V **Dalších nastaveních** zkontrolujte sekci **Rychlé zmrazení aplikace** a zakažte pro AdGuard
 
     ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme345.png)
 
 1. Povolte *Always-On VPN* pro AdGuard:
 
-    - Go to **Settings → Connection & sharing → VPN**
-    - Find **AdGuard** and enable the **Always-on VPN** option
+    - Přejděte na **Nastavení → Připojení a sdílení → VPN**
+    - Vyhledejte **AdGuard** a povolte možnost **Always-on VPN**
 
     ![Always-on VPN *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/realme678.png)
 
 ## Motorola
 
-On Motorola devices, there are four key configurations to ensure that AdGuard works properly in the background.
+Na zařízeních Motorola existují čtyři klíčové konfigurace, které zajistí správnou funkci AdGuardu na pozadí.
 
 1. Povolit využití na pozadí:
 
-   - Stop AdGuard protection and close the AdGuard app
-   - Go to **Settings → Apps → App battery usage** and find AdGuard
-   - Enable **Allow background usage** or select **Unrestricted**, depending on your Android version
+   - Ukončete ochranu AdGuardem a zavřete aplikaci AdGuard
+   - Přejděte do **Nastavení → Aplikace → Využití baterie aplikacemi** a vyhledejte AdGuard
+   - Povolte **Povolit použití na pozadí** nebo vyberte **Bez omezení** v závislosti na vaší verzi systému Android
 
 1. Odebrat omezení aktivity na pozadí:
 
-   - Přejděte na **Nastavení**
-   - Scroll down and tap **Apps & notifications**
-   - Find **AdGuard** and open **Advanced → Battery**
-   - Tap **Background restriction** or **Background limits**
-   - If it says **Background activity restricted**, tap it and then tap **Remove**
+   - Přejděte do **Nastavení**
+   - Přejděte dolů a klepněte na **Aplikace a oznámení**
+   - Vyhledejte **AdGuard** a otevřete **Pokročilé → Baterie**
+   - Klepněte na **Omezení na pozadí** nebo **Limity na pozadí**
+   - Pokud se zobrazí **Aktivita na pozadí je omezena**, klepněte na ni a poté klepněte na **Odebrat**
 
 1. Spravovat aplikace na pozadí:
 
-   - Go to **Settings → Battery → Background app use**
-   - Enable the **Manage background apps** option
-   - In the resulting menu, select the **Apps** tab
-   - Find **AdGuard** in the list and tap it
-   - In the **Optimize battery use** dialog, select **Always allow**
+   - Přejděte do **Nastavení → Baterie → Používání aplikací na pozadí**
+   - Povolte možnost **Spravovat aplikace na pozadí**
+   - Ve výsledné nabídce vyberte kartu **Aplikace**
+   - Vyhledejte **AdGuard** v seznamu a klepněte na něj
+   - V dialogovém okně **Optimalizovat využití baterie** vyberte **Vždy povolit.**
 
     ![Always allow *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/motorolla-background-app-use.png)
 
 1. Zakázat adaptivní baterii:
 
-   - Go to **Settings → Battery**
-   - Turn off the **Adaptive Battery** option
+   - Přejděte do **Nastavení → Baterie**
+   - Vypněte možnost **Adaptivní baterie**
 
 ## ZTE
 
-ZTE devices functioning under the MyOS operating system have an aggressive approach to background processes. Follow these steps to prevent AdGuard from being closed automatically by AI control:
+Zařízení ZTE fungující pod operačním systémem MyOS mají agresivní přístup k procesům na pozadí. Postupujte podle těchto kroků, abyste zabránili automatickému zavření AdGuardu pomocí AI:
 
-- Go to **Settings → Battery → App Management**
-- Turn off **AI Control**
-- Select **Manual Management**
-- Find **AdGuard** in the list and set **Background Work** to **Allow**
+- Přejděte do **Nastavení → Baterie → Správa aplikací**
+- Vypněte **Ovládání pomocí AI**
+- Vyberte **Ruční správa**
+- V seznamu vyhledejte **AdGuard** a nastavte **Práce na pozadí** na **Povolit**
 
 ## Infinix
 
-Infinix devices apply strict battery and power-saving rules that may interrupt AdGuard’s work in the background. Follow these steps to prevent AdGuard from being closed automatically by the system and ensure stable protection:
+Zařízení Infinix používají přísná pravidla pro úsporu baterie, která mohou přerušit práci AdGuardu na pozadí. Postupujte podle těchto kroků, abyste zabránili automatickému ukončování AdGuardu systémem a zajistili stabilní ochranu:
 
 1. Deaktivujte ochranu a zavřete aplikaci AdGuard.
 

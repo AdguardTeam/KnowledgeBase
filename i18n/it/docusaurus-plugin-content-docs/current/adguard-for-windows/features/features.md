@@ -11,7 +11,7 @@ Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunziona
 
 - [Schermata principale](/adguard-for-windows/features/home-screen/)
 
-  On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
+  Nella schermata principale troverai _Impostazioni_, _Assistenza_, _Licenza_ e _Informazioni_, così come le statistiche sulle inserzioni bloccate e sui tracciatori
 
 - [Impostazioni](/adguard-for-windows/features/settings/)
 
@@ -27,4 +27,4 @@ Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunziona
 
 - [Altre funzioni](/adguard-for-windows/features/others/)
 
-  Support, license management, tray menu options, app version and updates
+  Assistenza, gestione della licenza, opzioni del menu', versione dell'app e aggiornamenti

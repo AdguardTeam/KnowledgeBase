@@ -31,7 +31,7 @@ In _Network_, you can also enable traffic filtering and choose which driver to u
 
 SockFilter was first implemented in version 7.22.4, and it is still considered unstable — you may encounter bugs. Once fully tested and implemented, SockFilter has the potential to offer several advantages over other drivers:
 
-- **It operates at a higher, socket-level layer**: SockFilter works with socket operations rather than raw packets, making it less complex and more stable than WFP’s low-level packet filtering.
+- **Es wird auf einer höheren Ebene ausgeführt, nämlich auf Socket-Ebene**: SockFilter arbeitet mit Socket-Operationen statt mit rohen Paketen, wodurch es weniger komplex und stabiler ist als die Low-Level-Paketfilterung von WFP.
 - **Keine Beeinträchtigung anderer Netzwerktreiber**: Da es über den VPN-, Firewall- und Antivirus-WFP-Filtern angesiedelt ist, vermeidet es Probleme mit der Filterreihenfolge und Kompatibilitätskonflikte, die im WFP-Stack häufig auftreten.
 - **Deutlich geringeres Risiko von NETIO-bedingten BSODs**: SockFilter läuft nicht innerhalb der NETIO-Paketpipeline, wodurch die typischen Absturzszenarien vermieden werden, die durch WFP-Callouts verursacht werden, bei denen Puffer, Klassifizierungsergebnisse oder der Paketspeicher falsch verarbeitet werden.
 
@@ -51,9 +51,9 @@ The **TDI** driver is also available, but it is outdated and may cause [filterin
 
 The last section is dedicated to AdGuard VPN — an ideal tool that provides security and anonymity each time you browse the Internet. You can download it by clicking the _Download_ button or go to the AdGuard VPN website by clicking the _Homepage_ button.
 
-How does AdGuard VPN work? Without going into technical details, we can say that VPN creates a secure encrypted tunnel between the user's computer or mobile device and a remote VPN server. In this way, data privacy is preserved, as well as the anonymity of the user, because a third-party observer sees the IP address of the VPN server and not the actual user's IP.
+Wie funktioniert AdGuard VPN? Without going into technical details, we can say that VPN creates a secure encrypted tunnel between the user's computer or mobile device and a remote VPN server. In this way, data privacy is preserved, as well as the anonymity of the user, because a third-party observer sees the IP address of the VPN server and not the actual user's IP.
 
-**What AdGuard VPN does:**
+**Was AdGuard VPN leistet:**
 
 - hides your real whereabouts and helps you stay anonymous
 - changes your IP address to protect your data from tracking

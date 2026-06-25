@@ -131,7 +131,7 @@ Povolení této možnosti může narušit práci některých aplikací prohlíž
 
 Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-In AdGuard Browser Extension, *Block WebRTC* is applied globally and cannot be controlled on a per-site basis. Exception rules like `@@||example.com^$stealth=webrtc` are not supported. For per-site WebRTC control, use the full-fledged AdGuard app for Windows, Mac, or Android.
+V rozšíření prohlížeče AdGuard se příkaz *Block WebRTC* používá globálně a nelze jej ovládat pro jednotlivé stránky. Pravidla výjimek jako `@@||example.com^$stealth=webrtc` nejsou podporována. Pokud potřebujete ovládat WebRTC pro jednotlivé weby, použijte plnohodnotnou aplikaci AdGuard pro Windows, Mac nebo Android.
 
 :::
 

@@ -5,13 +5,13 @@ sidebar_position: 1
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+Este artigo descreve o AdGuard para Windows v8.0, um bloqueador de anúncios completo que protege seu dispositivo em nível de sistema. Esta é uma versão beta que ainda está em desenvolvimento. Para experimentá-lo, baixe a [versão beta do AdGuard para Windows](https://agrd.io/windows_beta).
 
 :::
 
-![Protection tab](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/protection_section.png)
+![Aba de proteção](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/protection_section.png)
 
-The _Protection_ tab contains all key security and filtering settings. Here you can control _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Browsing security_, _Parental control_, and _Extensions_. You can also manage AdGuard Assistant here — a tool that lets you control its functionality without opening the app. Each of these features is described in a separate article.
+A aba _Proteção_ contém todas as principais configurações de segurança e filtragem. Aqui você pode controlar o _Bloqueio de anúncios_, a _Proteção contra rastreamento_, o _Bloqueio de mensagens irritantes_, a _Filtragem de DNS_, a _Segurança de navegação_, o _Controle parental_ e as _Extensões_. Você também pode gerenciar o Assistente do navegador aqui — uma ferramenta que permite controlar sua funcionalidade sem abrir o aplicativo. Cada um desses recursos é descrito em um artigo separado.
 
 [Bloqueio de anúncios](/adguard-for-windows-8/protection/ad-blocking)
 

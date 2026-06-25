@@ -2742,8 +2742,7 @@ With these rules, specified UTM parameters will be removed from any request save
 [AdGuard for Chrome MV3][ext-mv3] has some limitations:
 
 - Regular expressions, negation and allowlist rules are not supported.
-- Generic rules are applied before specific rules, and redirection occurs only once. This may prevent subsequent or more specific redirects from applying.
-- Group of similar `$removeparam` rules will be combined into one. Example:
+- Each `$removeparam` rule with a named parameter gets its own declarative rule with a param-aware `urlFilter` (e.g. `^utm_source=`). Chrome DNR applies a redirect only once per navigation, so without this, only the highest-priority rule would fire and the rest would be skipped. The param-aware `urlFilter` makes each rule fire only when its target parameter is present, forming a redirect chain — one parameter stripped per hop — until all are removed. Chrome allows up to 20 hops per navigation, which is enough for real-world tracking URLs. These hops are invisible to users. Example:
 
     ```bash
     ||testcases.adguard.com$xmlhttprequest,removeparam=p1case1
@@ -2764,8 +2763,48 @@ With these rules, specified UTM parameters will be removed from any request save
         "transform": {
         "queryTransform": {
           "removeParams": [
-          "p1case1",
-          "p2case1",
+          "p1case1"
+          ]
+        }
+        }
+      }
+      },
+      "condition": {
+      "urlFilter": "||testcases.adguard.com*^p1case1=",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+      }
+    },
+    {
+      "id": 2,
+      "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+        "queryTransform": {
+          "removeParams": [
+          "p2case1"
+          ]
+        }
+        }
+      }
+      },
+      "condition": {
+      "urlFilter": "||testcases.adguard.com*^p2case1=",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+      }
+    },
+    {
+      "id": 3,
+      "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+        "queryTransform": {
+          "removeParams": [
           "P3Case1"
           ]
         }
@@ -2773,11 +2812,10 @@ With these rules, specified UTM parameters will be removed from any request save
       }
       },
       "condition": {
-      "urlFilter": "||testcases.adguard.com",
+      "urlFilter": "||testcases.adguard.com*^P3Case1=",
       "resourceTypes": [
         "xmlhttprequest"
-      ],
-      "isUrlFilterCaseSensitive": false
+      ]
       }
     },
     {
@@ -2795,10 +2833,10 @@ With these rules, specified UTM parameters will be removed from any request save
       }
       },
       "condition": {
+      "urlFilter": "^p1case2=",
       "resourceTypes": [
         "xmlhttprequest"
-      ],
-      "isUrlFilterCaseSensitive": false
+      ]
       }
     }
     ]
@@ -4416,15 +4454,28 @@ This rule removes all `div` elements with the attribute `some_attribute` on `exa
 
 ### Special attributes {#html-filtering-rules--special-attributes}
 
-In addition to usual attributes, which value is every element checked for, there is a set of special attributes that change the way a rule works. Below there is a list of these attributes:
+In addition to checking standard HTML attributes, you can filter elements based on their inner text or script content.
 
-#### `tag-content`
+#### `:contains()`
+
+The recommended way to filter elements by their content is using the `:contains()` pseudo-class. It allows you to target elements based on the actual text or script variables they contain, supporting both plain text strings and regular expressions.
+
+**Examples:**
+
+```example.com$$script:contains(Adverts)
+example.com$$div:contains("Sponsored by")
+example.com$$script:contains(/ad_system_\d+/)
+```
+
+The first rule removes any `<script>` tag containing the word `Adverts`. The second targets any `<div>` containing the phrase `Sponsored by`. The third rule utilizes a regular expression to match dynamic script patterns.
 
 :::caution Deprecation notice
 
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
+The attributes listed below are legacy features kept only for backward compatibility. They may become unsupported in future updates. Prefer using the `:contains()` pseudo-class where it is available.
 
 :::
+
+#### `tag-content`
 
 This is the most frequently used special attribute. It limits selection with those elements whose innerHTML code contains the specified substring.
 
@@ -4455,12 +4506,6 @@ This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 #### `wildcard`
 
-:::caution Deprecation notice
-
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
-
-:::
-
 This special attribute works almost like `tag-content` and allows you to check the innerHTML code of the document. Rule will check if HTML code of the element fits the [search pattern](https://en.wikipedia.org/wiki/Glob_(programming)).
 
 You must use `""` to escape `"`, for instance:
@@ -4480,12 +4525,6 @@ This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 :::
 
 #### `max-length`
-
-:::caution Deprecation notice
-
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
-
-:::
 
 Specifies the maximum length for content of HTML element. If this parameter is set and the content length exceeds the value, a rule does not apply to the element.
 
@@ -4510,12 +4549,6 @@ This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 :::
 
 #### `min-length`
-
-:::caution Deprecation notice
-
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
-
-:::
 
 Specifies the minimum length for content of HTML element. If this parameter is set and the content length is less than preset value, a rule does not apply to the element.
 
@@ -4754,6 +4787,12 @@ Learn more about [how to debug scriptlets](#debug-scriptlets).
 
 More information about scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
 
+:::caution Restrictions
+
+Scriptlets rules can only be used [**in trusted filters**](#trusted-filters).
+
+:::
+
 :::info Compatibility
 
 Scriptlet rules are not supported by AdGuard Content Blocker.
@@ -4927,7 +4966,7 @@ Path-in-domain syntax works with all types of cosmetic rules (`##`, `#@#`, `#$#`
 
 :::info Compatibility
 
-Path-in-domain syntax has been introduced in [CoreLibs] v1.20.
+Path-in-domain syntax has been introduced in [CoreLibs] v1.20, Browser extension v5.4.
 
 :::
 

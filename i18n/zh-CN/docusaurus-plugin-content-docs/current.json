@@ -112,7 +112,7 @@
     "description": "The label for category Settings in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.App settings": {
-    "message": "App settings",
+    "message": "应用设置",
     "description": "The label for category 'App settings' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard Mini for Mac": {

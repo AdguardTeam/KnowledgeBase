@@ -29,6 +29,6 @@ Rozšíření prohlížeče jsou omezeny na konkrétní prohlížeč a podléhaj
 
 :::caution
 
-In AdGuard Browser Extension, the _Block WebRTC_ option works globally — it either blocks or allows WebRTC for all websites. It cannot be controlled on a per-site basis. Exception rules like `@@||example.com^$stealth=webrtc` have no effect in the browser extension because the `webrtc` option is not among the [supported `$stealth` modifier options](/general/ad-filtering/create-own-filters#stealth-modifier). If you need per-site WebRTC control, use the full-fledged AdGuard app for Windows, Mac, or Android.
+V rozšíření prohlížeče AdGuard funguje možnost _Blokovat WebRTC_ globálně — buď blokuje, nebo povoluje WebRTC pro všechny webové stránky. Nelze to nastavit pro jednotlivé weby. Pravidla výjimek jako `@@|||example.com^$stealth=webrtc` nemají v rozšíření prohlížeče žádný účinek, protože `webrtc` nepatří mezi [podporované `$stealth` možnosti modifikátoru](/general/ad-filtering/create-own-filters#stealth-modifier). Pokud potřebujete ovládat WebRTC pro jednotlivé weby, použijte plnohodnotnou aplikaci AdGuard pro Windows, Mac nebo Android.
 
 :::

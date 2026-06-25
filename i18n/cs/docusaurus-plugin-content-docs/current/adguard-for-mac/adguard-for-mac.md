@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 - [Funkce](/adguard-for-mac/features/features.md)
 
-  Main features and settings available in AdGuard for Mac
+  Hlavní funkce a nastavení dostupné v aplikaci AdGuard pro macOS
 
 - [Instalace](/adguard-for-mac/installation.md)
 
