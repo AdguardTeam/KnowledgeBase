@@ -21,7 +21,7 @@ To filter traffic on other devices, install AdGuard’s root certificate on them
 
 Other settings are enabled by default.
 
-## HTTPS filtering
+## HTTPS-filtrering
 
 Most websites use HTTPS encryption today. Without HTTPS filtering, AdGuard cannot block ads on websites like YouTube, Facebook, or X (Twitter).
 

@@ -11,7 +11,7 @@ Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakk
 
 Özel bir filtre veya kullanıcı kuralı eklerken, uzantıda bu özellikleri kullanmak için Geliştirici modunu etkinleştirmenizi isteyen bir bildirim görüntülenir.
 
-![Bildirim \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/notification-allow-user-scripts.jpg)
+![Notification \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/userscripts_api_restrictions.png)
 
 Starting with version 5.2, AdGuard Browser Extension uses the User Scripts API. Chrome requires this new API to follow best practices for user safety.
 

@@ -1,62 +1,63 @@
 ---
-title: AdGuard filters
+title: Filtres AdGuard
 sidebar_position: 2
 ---
 
 :::info
 
-Cet article concerne les filtres que nous développons et qui sont préinstallés dans AdGuard. To check them out, you can [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article concerne les filtres que nous développons et qui sont préinstallés dans AdGuard. Pour les découvrir, vous pouvez [télécharger l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Cet article concerne les filtres que nous créons pour les utiliser dans AdGuard et d'autres logiciels de blocage des publicités (par exemple, uBlock Origin). Filters are sets of rules in text format used by AdGuard apps and programs to filter out advertising and privacy-threatening content such as banners, popups, or trackers. Filters contain lists of rules based on their purpose. Language filters include rules for corresponding language segments of the Internet (e.g., German filter). Task-based filters group rules that fulfil a specific task, such as Social media filter or Tracking Protection filter. Enabling or disabling a filter makes it easier to work with the entire list of rules at once.
+Cet article concerne les filtres que nous créons pour les utiliser dans AdGuard et d'autres logiciels de blocage des publicités (par exemple, uBlock Origin). Les filtres sont des ensembles de règles au format texte utilisés par les applications et programmes AdGuard pour filtrer le contenu publicitaire et menaçant pour la vie privée, tels que les bannières, les pop-ups ou les traqueurs. Les filtres contiennent des listes de règles basées sur leur objectif. Les filtres de langue incluent des règles pour les segments linguistiques correspondants d'Internet (ex. : filtre allemand). Les filtres basés sur les tâches regroupent des règles qui accomplissent une tâche spécifique, comme le filtre des réseaux sociaux ou le filtre de protection contre le suivi. Activer ou désactiver un filtre facilite la gestion de la liste complète des règles d'un coup.
 
-## AdGuard filters
+## Les filtres AdGuard
 
-- **Base filter** removes ads from websites with English content. Originally based on [EasyList](https://easylist.to/) and modified by us. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt)
-- **Tracking Protection filter** — comprehensive list of various online counters and web analytics tools. Use it to hide your actions online and avoid tracking. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt)
-- **URL Tracking filter** enhances privacy by removing tracking parameters from URLs. When a user opts to block tracking parameters in Stealth Mode, this filter will be enabled automatically. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt)
-- **Social media filter** removes numerous "Like" and "Tweet" buttons and other social media integrations on popular websites. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt)
-- **Annoyances filter** blocks irritating elements on web pages. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt). Includes the following AdGuard filters (all of them can be enabled separately from the Annoyances filter):
+- Le **filtre de base** supprime les publicités sur les sites en anglais. Initialement basé sur [EasyList](https://easylist.to/) et modifié par nos soins. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt)
+- Le **filtre de protection contre le suivi** est une liste complète de divers compteurs en ligne et outils d'analyse web. Utilisez-le pour masquer vos actions en ligne et éviter le suivi. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt)
+- Le **filtre du suivi des URL** améliore la confidentialité en supprimant les paramètres de suivi des URL. Lorsqu'un utilisateur choisit de bloquer les paramètres de suivi en mode furtif, ce filtre sera activé automatiquement. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt)
+- Le **filtre des réseaux sociaux** supprime de nombreux boutons "Like" et "Tweet" ainsi que d'autres intégrations de réseaux sociaux sur les sites populaires. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt)
+- Le **filtre anti-nuisances** bloque les éléments irritants sur les pages web. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt). Comprend les filtres suivants d'AdGuard (chacun peut être activé séparément) :
 
-    - **Cookie Notices** blocks cookie notices on web pages. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_18_Annoyances_Cookies/filter.txt)
-    - **Popups** blocks all kinds of popups that are not necessary for websites' operation. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_19_Annoyances_Popups/filter.txt)
-    - **Mobile App Banners** blocks banners that promote mobile apps of websites. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_20_Annoyances_MobileApp/filter.txt)
-    - **Widgets** blocks third-party widgets: online assistants, live support chats, etc. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_22_Annoyances_Widgets/filter.txt)
-    - **Other Annoyances** blocks elements that do not fall under the popular categories of annoyances. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_21_Annoyances_Other/filter.txt)
+    - **Avis de cookies** bloque les avis de cookies sur les pages web. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_18_Annoyances_Cookies/filter.txt)
+    - **Pop-ups** bloque tous les types de pop-ups qui ne sont pas nécessaires au fonctionnement des sites. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_19_Annoyances_Popups/filter.txt)
+    - **Bannières d'applications mobiles** bloque les bannières qui promeuvent les applications mobiles des sites. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_20_Annoyances_MobileApp/filter.txt)
+    - **Widgets** bloque les widgets tiers : assistants en ligne, chats de support, etc. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_22_Annoyances_Widgets/filter.txt)
+    - **Autres éléments gênants** bloque les éléments qui ne rentrent pas dans les catégories populaires de gêne. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_21_Annoyances_Other/filter.txt)
 
-- **Filter unblocking search ads and self-promotions** unblocks ads that may be useful to users. Learn more about this filter on [this page](../search-ads). [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt)
-- **Russian filter** removes ads from websites in Russian. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_1_Russian/filter.txt)
-- **German filter** removes ads from websites in German. Originally based on the [EasyList Germany](https://easylist.to/) filter and subsequently modified by us according to the complaints from users. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_6_German/filter.txt)
-- **French filter** removes ads from websites in French. Originally based on the [Liste FR](https://forums.lanik.us/viewforum.php?f=91) filter and subsequently modified by us according to the complaints from users. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_16_French/filter.txt)
-- **Japanese filter** removes ads from websites in Japanese. Originally based on the [Fanboy’s Japanese](https://www.fanboy.co.nz/fanboy-japanese.txt) filter and subsequently modified by us according to the complaints from users. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_7_Japanese/filter.txt)
-- **Dutch filter** removes ads from websites in Dutch. Originally based on the [EasyList Dutch](https://easylist.to/) filter and subsequently modified by us according to the complaints from users. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_8_Dutch/filter.txt)
-- **Spanish/Portuguese filter** removes ads from websites in Spanish and Portuguese. Originally based on the [Fanboy’s Spanish/Portuguese](https://www.fanboy.co.nz/fanboy-espanol.txt) filter and subsequently modified by us according to the complaints from users. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_9_Spanish/filter.txt)
-- **Turkish filter** removes ads from websites in Turkish. Created by us according to the complaints from users. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_13_Turkish/filter.txt)
-- **Chinese filter** removes ads from websites in Chinese. Originally based on the [EasyList China](https://github.com/easylist/easylistchina) filter and subsequently modified by us according to the complaints from users. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt)
-- **Ukrainian filter** removes ads from websites in Ukrainian. Learn more about this filter on [this page](https://adguard.com/en/blog/ukrainian-filter.html). [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_23_Ukrainian/filter.txt)
-- **Experimental filter** serves to test some new filtering rules that can potentially cause conflicts and mess with websites' work. In case these rules perform without any issues, they get added to main filters. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_5_Experimental/filter.txt)
-- **Mobile ads filter** blocks ads on mobile devices. Contains all known mobile ad networks. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt)
-- **DNS filter** — composed of several other filters (AdGuard Base filter, Social media filter, Spyware filter, Mobile ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking. This filter is used by [AdGuard DNS](https://adguard-dns.io/kb) servers to block ads and tracking. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt)
+- **Filtre de déblocage des publicités de recherche et des autopromotions** débloque les publicités qui peuvent être utiles aux utilisateurs. En savoir plus sur ce filtre sur [cette page](../search-ads). [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt)
+- Le filtre de **protection contre le suivi des e-mails** bloque les pixels de suivi intégrés dans les e-mails afin d’empêcher les expéditeurs de surveiller quand vous ouvrez les messages et de collecter des informations sur votre appareil ou votre activité. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_25_Mail_Tracking_Protection/filter.txt)
+- **Filtre russe** supprime les publicités des sites en russe. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_1_Russian/filter.txt)
+- **Filtre allemand** supprime les publicités des sites en allemand. Initialement basé sur le filtre [EasyList Germany](https://easylist.to/) et modifié selon les plaintes des utilisateurs. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_6_German/filter.txt)
+- **Filtre français** supprime les publicités des sites en français. Basé initialement sur la [Liste FR](https://forums.lanik.us/viewforum.php?f=91) et modifié selon les plaintes des utilisateurs. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_16_French/filter.txt)
+- **Filtre japonais** supprime les publicités des sites en japonais. Basé initialement sur le filtre [Fanboy’s Japanese](https://www.fanboy.co.nz/fanboy-japanese.txt) et modifié selon les plaintes des utilisateurs. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_7_Japanese/filter.txt)
+- **Filtre néerlandais** supprime les publicités des sites en néerlandais. Basé sur le filtre [EasyList Dutch](https://easylist.to/) et modifié selon les plaintes des utilisateurs. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_8_Dutch/filter.txt)
+- **Filtre espagnol/portugais** supprime les publicités des sites en espagnol et portugais. Basé sur le filtre [Fanboy’s Spanish/Portuguese](https://www.fanboy.co.nz/fanboy-espanol.txt) et modifié selon les plaintes des utilisateurs. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_9_Spanish/filter.txt)
+- **Filtre turc** supprime les publicités des sites en turc. Créé selon les plaintes des utilisateurs. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_13_Turkish/filter.txt)
+- **Filtre chinois** supprime les publicités des sites en chinois. Basé initialement sur le filtre [EasyList China](https://github.com/easylist/easylistchina) et modifié selon les plaintes des utilisateurs. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt)
+- **Filtre ukrainien** supprime les publicités des sites en ukrainien. En savoir plus sur ce filtre sur [cette page](https://adguard.com/en/blog/ukrainian-filter.html). [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_23_Ukrainian/filter.txt)
+- **Filtre expérimental** teste de nouvelles règles de filtrage pouvant causer des conflits. Si elles fonctionnent correctement, elles sont ajoutées aux filtres principaux. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_5_Experimental/filter.txt)
+- **Filtre pour les publicités mobiles** bloque les publicités sur les appareils mobiles. Contient toutes les régies publicitaires mobiles connues. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt)
+- **Filtre DNS** — composé de plusieurs autres filtres (filtre de base AdGuard, filtre des réseaux sociaux, filtre spyware, filtre pour les publicités mobiles, EasyList et EasyPrivacy) simplifié pour être mieux compatible avec le blocage DNS. Utilisé par [AdGuard DNS](https://adguard-dns.io/kb) pour bloquer les publicités et le suivi. [Voir les règles](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt)
 
-## AdGuard Filters Policy
+## Politique de filtres AdGuard
 
-Our filter policy defines what AdGuard filters should and shouldn't block, as well as the rules for adding and removing rules from filters. Read the full text of [AdGuard filter policy](../filter-policy) for detailed information.
+Notre politique de filtres définit ce que les filtres AdGuard doivent ou ne doivent pas bloquer, ainsi que les règles d'ajout et de suppression de règles des filtres. Lisez le texte complet de la [politique de filtres AdGuard](../filter-policy) pour plus de détails.
 
-## Contributing to AdGuard filters
+## Contribuer aux filtres AdGuard
 
-We are blessed with a unique community that not only loves AdGuard but also gives back. Many people volunteer in various ways to make AdGuard's user experience better for everybody. You are welcome to join the band and make a difference. We will do our part and happily reward the most active community. So, what can you do?
+Nous avons la chance d'avoir une communauté qui non seulement aime AdGuard mais contribue également à son amélioration. De nombreuses personnes s'engagent bénévolement de diverses manières pour améliorer l'expérience utilisateur d'AdGuard pour tout le monde. Vous êtes invité à rejoindre cette communauté et à faire une différence. Nous ferons notre part et récompenserons volontiers les membres les plus actifs. Alors, que pouvez-vous faire ?
 
-### Report Issues
+### Signaler des problèmes
 
-We rely on the community to let us know about issues with our filters. It helps us use our time more efficiently and keep filters constantly updated. To submit a report, please use this [web reporting tool](https://agrd.io/report).
+Nous comptons sur la communauté pour nous informer des problèmes liés à nos filtres. Cela nous aide à utiliser notre temps plus efficacement et à garder les filtres constamment mis à jour. Pour soumettre un rapport, veuillez utiliser cet [outil de signalement en ligne](https://agrd.io/report).
 
-### Suggest Filtering Rules
+### Suggérer des règles de filtrage
 
-You will find many open issues in the [GitHub filter repository](https://github.com/AdguardTeam/AdguardFilters/issues). Each one refers to a problem with a website, such as a missed ad or a false positive. Pick an issue and suggest your own rules in the comments. AdGuard filter engineers will review your suggestions and, if approved, add your rules to AdGuard filters.
+Vous trouverez de nombreux problèmes ouverts dans le [dépôt GitHub des filtres](https://github.com/AdguardTeam/AdguardFilters/issues). Chacun d'eux se réfère à un problème avec un site web, tel qu'une publicité manquée ou un faux positif. Choisissez un problème et proposez vos propres règles dans les commentaires. Les ingénieurs de filtres AdGuard examineront vos suggestions et, si elles sont approuvées, ajouteront vos règles aux filtres AdGuard.
 
-Here is the [official documentation](../create-own-filters) on the syntax of AdGuard filtering rules. Please read it carefully: it will help you create your own filtering rules.
+Voici la [documentation officielle](../create-own-filters) sur la syntaxe des règles de filtrage AdGuard. Veuillez la lire attentivement : elle vous aidera à créer vos propres règles de filtrage.
 
-### Other ways to contribute
+### Autres moyens de contribuer
 
-Here is [a dedicated page](https://adguard.com/contribute.html) for people willing to contribute to AdGuard in other ways.
+Voici [une page dédiée](https://adguard.com/contribute.html) pour ceux qui souhaitent contribuer à AdGuard d'autres manières.

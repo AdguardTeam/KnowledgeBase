@@ -1,11 +1,11 @@
 ---
-title: AdGuard for Safari
+title: AdGuard til Safari
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Safari, which safeguards only your Safari browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Safari, which safeguards only your Safari browser. For at beskytte hele enheden, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 

@@ -1,5 +1,5 @@
 ---
-title: License
+title: Licens
 sidebar_position: 2
 ---
 

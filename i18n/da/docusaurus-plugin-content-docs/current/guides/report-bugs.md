@@ -42,7 +42,7 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 ## Instructions for all platforms
 
-### AdGuard for Windows
+### AdGuard til Windows
 
 1. Check out the [Windows repo](https://github.com/AdguardTeam/AdGuardforWindows/issues) to make sure the issue hasn’t been reported yet.
 
@@ -52,7 +52,7 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 ![Reporting a bug via GitHub *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
 
-### AdGuard for Mac
+### AdGuard til Mac
 
 1. Check out the [Mac repo](https://github.com/AdguardTeam/AdGuardforMac/issues) to make sure the issue hasn’t been reported yet.
 
@@ -60,7 +60,7 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 3. Fill out the form. If possible, attach screenshots or a screen recording.
 
-### AdGuard for Android
+### AdGuard til Android
 
 1. Check out the [Android repo](https://github.com/AdguardTeam/AdGuardforAndroid/issues) to make sure the issue hasn’t been reported yet.
 
@@ -68,7 +68,7 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 3. Fill out the form. If possible, attach screenshots or a screen recording.
 
-### AdGuard for iOS
+### AdGuard til iOS
 
 1. Check out the [iOS repo](https://github.com/AdguardTeam/AdGuardforiOS/issues) to make sure the issue hasn’t been reported yet.
 
@@ -84,7 +84,7 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 3. Fill out the form. If possible, attach screenshots or a screen recording.
 
-### AdGuard for Safari
+### AdGuard til Safari
 
 1. Check out the [Safari repo](https://github.com/AdguardTeam/AdGuardForSafari/issues) to make sure the issue hasn’t been reported yet.
 

@@ -65,15 +65,15 @@ sidebar_position: 2
 
 1. 개발자 모드를 켜세요:
 
-   ![개발자 모드](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
+   ![Developer mode \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
 
 2. \*\*압축해제된 확장 프로그램을 로드합니다.\*\*를 클릭하세요:
 
-   ![Load unpacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+   ![Load unpacked \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
 3. 확장 프로그램 디렉토리를 선택하고 **선택**을 클릭합니다:
 
-   ![선택](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
+   ![Select \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
 
 다 되었습니다!
 
@@ -95,4 +95,4 @@ sidebar_position: 2
 
 4. 브라우저에서 확장프로그램을 다시 불러오세요:
 
-   ![확장 프로그램 다시 로드](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
+   ![Reload extension \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)

@@ -111,6 +111,7 @@ Obiectivul filtrelor de blocare a reclamelor este de a bloca toate tipurile de p
 Filtrele de protecție împotriva urmăririi AdGuard includ:
 
 - Filtrul AdGuard de protecție de urmărire
+- AdGuard Mail Tracking Protection filter
 - Filtrul de urmărire URL AdGuard
 
 ### Scopul acestor filtre
@@ -129,6 +130,8 @@ What it blocks:
 - Privacy Sandbox functionality in Google Chrome and its forks used for tracking (Google Topics API, the Protected Audience API)
 
 The **URL Tracking filter** is designed to remove tracking parameters from web addresses
+
+The **Mail Tracking Protection filter** blocks tracking pixels embedded in emails to prevent senders from monitoring when you open messages.
 
 ### Limitări și excepții
 

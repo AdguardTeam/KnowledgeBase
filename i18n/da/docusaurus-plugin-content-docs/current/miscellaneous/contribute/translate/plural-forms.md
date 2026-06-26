@@ -84,7 +84,7 @@ Crowdin suggests to users that they translate the certain amount of phrases with
 
 If your language provides only one plural form, then you will see only one phrase to translate. If three or more forms, Crowdin will provide you with the string divided into other two or three strings to translate.
 
-For example:
+F.eks.:
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/crowdin_scheme.png)
 

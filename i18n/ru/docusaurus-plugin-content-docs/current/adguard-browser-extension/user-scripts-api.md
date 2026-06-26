@@ -11,7 +11,7 @@ sidebar_position: 8
 
 При добавлении пользовательского фильтра или правила появится уведомление с просьбой включить режим разработчика, чтобы использовать эти функции в расширении.
 
-![Уведомление \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/notification-allow-user-scripts.jpg)
+![Notification \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/userscripts_api_restrictions.png)
 
 Начиная с версии 5.2, Браузерное расширение AdGuard использует User Scripts API. Chrome требует этот новый API для соблюдения передовых практик безопасности пользователя.
 

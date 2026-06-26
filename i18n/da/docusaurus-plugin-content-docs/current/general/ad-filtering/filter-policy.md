@@ -1,60 +1,60 @@
 ---
-title: AdGuard filter policy
+title: AdGuard-filterpolitik
 sidebar_position: 6
 ---
 
-:::note Disclaimer
+:::note Ansvarsfraskrivelse
 
-Please read this filter policy carefully before enabling any filters.
+Læs venligst denne filterpolitik omhyggeligt inden aktivering af filtre.
 
-Using AdGuard Ad Blocker, AdGuard DNS, and their filters may affect how third-party websites and services function. You are responsible for reviewing and following the policies and terms of any websites or services you use.
+Brug af AdGuard Ad Blocker, AdGuard DNS og deres filtre kan påvirke, hvordan tredjepartswebsteder og -tjenester fungerer. Brugeren er ansvarlig for at gennemgå samt følge politikkerne og betingelserne for alle websteder/tjeneste, som benyttes.
 
-Before enabling filters provided by third parties, you agree to review their applicable terms and make an informed decision about using them. AdGuard is not responsible for how third-party filters operate or what their terms contain, and their presence in AdGuard products is not a recommendation to use them.
+Inden aktivering af filtre leveret af tredjeparter, accepterer brugeren at gennemgå deres gældende vilkår og træffe en informeret beslutning om brugen af dem. AdGuard er ikke ansvarlig for, hvordan tredjepartsfiltre fungerer, eller hvad deres vilkår indeholder, og deres tilstedeværelse i AdGuard-produkter er ikke en anbefaling til brug af dem.
 
 :::
 
-At AdGuard, we’ve long followed certain principles in making our filters, which, along with filter descriptions, are outlined below as part of our filtering policy.
+Hos AdGuard har vi længe fulgt visse principper ved oprettelsen af vores filtre, som sammen med filterbeskrivelser er skitseret nedenfor som en del af vores filtreringspolitik.
 
-## Common criteria
+## Fælles kriterier
 
-These criteria are equally applied to the rules of all filters.
+Disse kriterier anvendes ligeligt på reglerne for alle filtre.
 
-- Rules for a specific site will only be added if there is sufficient traffic. Traffic is determined by public statistics (if available) or indirect indicators, such as the number of subscribers on social networks. A site’s traffic is considered sufficient if it reaches 100,000 visits per month. We will consider adding a rule for a site that is not as popular, but the final decision rests with filter developers. Sites with low traffic should still be checked for third-party analytics and advertising networks
-- The decision about content farms (websites that produce large amounts of content primarily aimed at achieving high visibility in search results and generating advertising revenue) is made by filter developers depending on the quality of the content
+- Regler for et specifikt websted tilføjes kun, hvis der er tilstrækkelig trafik. Trafikken bestemmes af offentlige statistikker (hvis tilgængelige) eller indirekte indikatorer, såsom antallet af abonnenter på sociale netværk. En websteds trafik anses for tilstrækkelig, når det har 100.000 månedlige besøgende. Vi vil overveje at tilføje en regel for et websted, der ikke er så populært, men den endelige beslutning er op til filterudviklerne. Websteder med lav trafik bør stadig tjekkes for tredjepartsanalyse- og reklamenetværk
+- Beslutningen om indholdsfarme (websteder, som producerer store mængder indhold, primært rettet mod at opnå høj synlighed i søgeresultater og generere reklameindtægter) træffes af filterudviklere afhængigt af kvaliteten af indholdet
 
-Quality requirements for filtering rules:
+Kvalitetskrav til filtreringsregler:
 
-- Rules should not negatively impact the websites in terms of performance
-- Unblocking rules must be as specific as possible to avoid unblocking anything unnecessary
-- JavaScript rules should be used as sparingly as possible and only if blocking ads is impossible without them
+- Regler bør ikke påvirke webstederne negativt ift. ydeevne
+- Afblokeringsregler skal være så specifikke som muligt for at undgå afblokering af noget unødvendigt
+- JavaScript-regler bør bruges så lidt som muligt, og kun hvis det er umuligt at blokere annoncer uden dem
 
-## Ad blocking filters
+## Adblockerfiltre
 
-### Terminology
+### Terminologi
 
-**Ad blocker** is a software or hardware tool designed to filter, hide, or block advertisements and other elements on web pages. Ad blockers are created to improve user experience, reduce page load times, decrease internet traffic consumption, block ads, enhance privacy while browsing websites and using applications, and block annoying elements.
+En **Adblocker** er et software- eller hardwareværktøj designet til at filtrere, skjule eller blokere annoncer og andre elementer på websider. Adblockere er skabt til at forbedre brugeroplevelsen, reducere sideindlæsningstider, reducere internettrafikforbrug, blokere annoncer og forbedre fortroligheden, mens websteder gennemses og applikationer bruges, samt til at blokerer irriterende elementer.
 
-A **filter** (or a **filter list**) is a set of filtering rules designed to filter content and block various types of advertisements and other types of content using ad blockers. These filters usually operate at the level of the web browser, programs, or DNS server.
+Et **filter** (eller en **filterliste**) er et sæt filtreringsregler designet til at filtrere indhold og blokere forskellige typer reklamer og andre indholdstyper vha. adblockere. Disse filtre fungerer normalt på niveau med webbrowseren, programmerne eller DNS-serveren.
 
-**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so-called “adblock walls”). Anti-adblocks may be of different types:
+**Anti-adblock** er en teknologi brugt af websteder eller applikationer mhp. at registrere adblocking og reagere herpå på forskellige måder: Sporing, genindsættelse af annoncer, tilskyndelse til at deaktivere adblocking (såkaldte "adblock walls"). Forskellige typer af Anti-adblocks findes:
 
-- Anti-adblock that blocks website content without offering an alternative: to continue using the site, the user must disable the ad blocker on the site
-- “Anti-adblock wall” with alternative options offered, such as purchasing a subscription to continue using the ad blocker
-- Informational messages that do not obligate action: users are asked to disable the ad blocker, but these messages can be closed, allowing users to continue using the site without restrictions
-- Implementing alternative advertising in response to ad blocker usage: sites introduce alternative advertising when ad blockers are detected
-- Paywall: a method of content monetization where content is partially or fully hidden from users, with a message prompting them to purchase a subscription for access
+- Anti-adblock, der blokerer webstedsindhold uden at tilbyde et alternativ: For fortsat brug af webstedet, skal brugeren deaktivere adblocking under besøget
+- "Anti-adblock wall" med alternative muligheder, såsom køb af abonnement for fortsat brug af adblockeren
+- Informationsmeddelelser, som ikke forpligter til handling: Brugere anmodes om at deaktivere adblocking, men disse meddelelser kan lukkes, hvorefter brugerne kan fortsætte med at bruge webstedet uden restriktioner
+- Implementering af alternativ annoncering som reaktion på brug af adblocking: Websteder introducerer alternativ annoncering, når adblockere detekteres
+- Paywall: En metode til indtægtsgenerering på indhold, hvor indholdet er delvist eller helt skjult for brugerne, med en meddelelse, der beder dem købe et abonnement for at få adgang
 
-### Filters
+### Filtre
 
-AdGuard ad-blocking filters include:
+AdGuard-adblockingfiltre omfatter:
 
-- AdGuard Base filter
-- AdGuard Mobile Ads filter
-- Regional filters divided by language principle — Chinese, Dutch, French, German, Japanese, Russian, Spanish/Portuguese, Turkish, and Ukrainian
+- AdGuard Basisfilter
+- AdGuard Mobilannoncefilter
+- Regionale filtre opdelt efter sprogprincip — fransk, hollandsk, japansk, kinesisk, russisk, spansk/portugisisk, tysk, tyrkisk og ukrainsk
 
-### The purpose of these filters
+### Formålet med disse filtre
 
-- **Base filter** is designed to block ads on English-language websites and those for which there is no separate filter. It also contains general filtering rules that apply to all sites regardless of language
+- **Basisfilter** er designet til at blokere annoncer på engelsksprogede websteder og dem, hvor der ikke er et separat filter. It also contains general filtering rules that apply to all sites regardless of language
 - **Mobile Ads filter** blocks advertisements on mobile versions of websites and within mobile apps. There is no segmentation based on language
 - **Regional filters** follow the same policy as the **Base filter**, but limited to websites in certain languages
 
@@ -96,7 +96,7 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 
 ## Tracking protection filters
 
-### Terminology
+### Terminologi
 
 **Tracking** — the process of monitoring and collecting data about users and their interactions with websites and applications for marketing purposes, as well as to obtain telemetry about the functioning of websites or applications for the purpose of analyzing their operation. This process includes tracking visited pages, time spent, interaction with website elements (e.g., clicks, form submissions), and other metrics. It allows website and application owners to better understand user behavior, optimize functionality, and adapt marketing strategies. Tracking is also used to monitor performance, usage patterns, and identify issues, providing developers with the necessary data to improve the stability and quality of the website or application. Even if the data obtained cannot reveal a person’s identity, such actions are still considered tracking.
 
@@ -106,14 +106,15 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 
 **Cookies** — files that websites send to and store on devices. These files contain various information — both necessary for the functioning of the site on the device and used for analytics purposes — unique identifiers used to track visitor activity on the website, advertising parameters, and more.
 
-### Filters
+### Filtre
 
 AdGuard tracking protection filters include:
 
 - AdGuard Tracking Protection filter
+- AdGuard Mail Sporingsbeskyttelsesfilter
 - AdGuard URL Tracking filter
 
-### The purpose of these filters
+### Formålet med disse filtre
 
 **Tracking Protection filter** is designed to block trackers that collect users’ personal data and to improve users’ privacy.
 
@@ -130,6 +131,8 @@ What it blocks:
 
 The **URL Tracking filter** is designed to remove tracking parameters from web addresses
 
+Filteret **Mail Sporingsbeskyttelse** blokerer sporingspixels indlejret i e-mails for at forhindre afsendere i at monitorere, hvornår beskederne åbnes.
+
 ### Limitations and exceptions
 
 Tracking protection filters should not block a tracker if blocking would disrupt the correct functioning of the website:
@@ -141,7 +144,7 @@ Tracking protection filters should not block a tracker if blocking would disrupt
 
 Annoyance filters are designed to improve the usability of websites by blocking elements on pages that are not advertisements but distract from and interfere with site interaction or content consumption — such as various modal windows and interactive forms, cookie consent notifications and requests, mobile app banners, and various widgets.
 
-### Terminology
+### Terminologi
 
 **Cookie notice** — a form that describes the types and use of cookies on a website. A cookie notice appears when a user visits the website, informing the user that the website uses cookies or other tracking technologies to collect and use personal information, and explaining why and with whom the information collected is shared.
 
@@ -151,7 +154,7 @@ Annoyance filters are designed to improve the usability of websites by blocking 
 
 **Popup** — a window that appears above the current web page. It is intended to display additional information, advertisements, notifications, or data entry forms. Popups usually block the view of the main content of the page and require user action to close, which can be irritating.
 
-### Filters
+### Filtre
 
 For better customization, annoyance filters are divided by their purpose:
 
@@ -162,7 +165,7 @@ For better customization, annoyance filters are divided by their purpose:
 - AdGuard Other Annoyances filter
 - AdGuard Annoyances filter — a combined filter that includes all 5 specialized annoyance filters
 
-### The purpose of these filters
+### Formålet med disse filtre
 
 #### AdGuard Cookie Notices filter
 
@@ -235,13 +238,13 @@ This filter may contain rules that are not suitable for all users. Sometimes it 
 
 ## Social media filters
 
-### Filters
+### Filtre
 
 AdGuard Social Media filters include:
 
 - AdGuard Social Media filter
 
-### The purpose of these filters
+### Formålet med disse filtre
 
 This filter will block social media widgets on third-party websites, such as “Like” and “Share” buttons, group widgets, recommendations, and similar widgets.
 
@@ -253,7 +256,7 @@ Widgets that are part of the website’s functionality or content, such as comme
 
 This group contains filters that are not essential for blocking advertisements.
 
-### Terminology
+### Terminologi
 
 **Contextual advertising** is a type of internet advertising where the advertisement is displayed based on the content, selected audience, location, time, or other context of internet pages.
 
@@ -263,13 +266,13 @@ This group contains filters that are not essential for blocking advertisements.
 
 For more details on these types of advertising, refer to the [article on search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
-### Filters
+### Filtre
 
 - Filter unblocking search ads and self-promotion
 - AdGuard DNS filter
 - AdGuard Experimental filter
 
-### The purpose of these filters
+### Formålet med disse filtre
 
 #### Filter unblocking search ads and self-promotion
 

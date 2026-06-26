@@ -111,6 +111,7 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 AdGuard izleme korumasu filtreleri şunları içerir:
 
 - AdGuard İzleme Koruması filtresi
+- AdGuard E-Posta İzleme Koruması filtresi
 - AdGuard URL İzleme filtresi
 
 ### Bu filtrelerin amacı
@@ -129,6 +130,8 @@ Neleri engeller:
 - Google Chrome'daki Privacy Sandbox işlevi ve izleme için kullanılan çatalları (Google Topics API, Protected Audience API)
 
 The **URL Tracking filter** is designed to remove tracking parameters from web addresses
+
+**E-posta İzleme Koruması filtresi**, gönderenlerin iletileri ne zaman açtığınızı izlemesini engellemek amacıyla e-postalara gömülü izleme piksellerini engeller.
 
 ### Kısıtlamalar ve istisnalar
 

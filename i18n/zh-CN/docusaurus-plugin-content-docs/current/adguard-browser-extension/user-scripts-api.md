@@ -11,7 +11,7 @@ sidebar_position: 8
 
 当添加自定义过滤器或用户规则时，会出现一个通知，询问您是否启用开发者模式以在扩展中使用这些功能。
 
-![通知 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/notification-allow-user-scripts.jpg)
+![Notification \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/userscripts_api_restrictions.png)
 
 从 5.2 版本开始，AdGuard 浏览器扩展开始使用 User Scripts API。 Chrome 要求使用这一新 API，以遵循用户安全的最佳实践。
 

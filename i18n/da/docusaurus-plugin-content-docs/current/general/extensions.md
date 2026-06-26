@@ -379,7 +379,7 @@ This will allow userscripts to listen for URL changes and handle them accordingl
 :::note
 
 The `urlchange` event is only triggered for full URL changes, such as a change in the path or query, but not for fragment (hash) changes.
-Examples:
+Eksempler:
 
 - Navigation from `https://example.com/page1` to `https://example.com/page2` will trigger the event.
 - Navigation from `https://example.com/page1?query=1` to `https://example.com/page1?query=2` will trigger the event.
@@ -464,7 +464,7 @@ We don’t support userstyles that contain `@var` or `@advanced` in the metadata
    ==/UserStyle== */
    ```
 
-4. Write the CSS part after the meta data. AdGuard supports website domain names matching (`@-moz-document domain(…), …`). For example:
+4. Write the CSS part after the meta data. AdGuard supports website domain names matching (`@-moz-document domain(…), …`). F.eks.:
 
    ```CSS
    body {

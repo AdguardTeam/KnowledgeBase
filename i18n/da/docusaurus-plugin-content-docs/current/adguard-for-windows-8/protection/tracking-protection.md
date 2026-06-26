@@ -135,7 +135,7 @@ Blocks automatic reporting and sampling of suspected malware.
 
 Disables data collection about Windows component problems
 
-## Miscellaneous
+## Diverse
 
 ![Miscellaneous](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_misc.png)
 

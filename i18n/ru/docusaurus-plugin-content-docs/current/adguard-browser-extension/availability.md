@@ -9,18 +9,16 @@ sidebar_position: 2
 
 :::
 
-[Браузерное расширение AdGuard](https://adguard.com/adguard-browser-extension/overview.html) — это бесплатное расширение, которое работает в пяти популярных браузерах: Chrome, Firefox, Edge, Opera и Яндекс Браузер. Вы можете легко найти расширение в интернет-магазине вашего браузера или на нашем официальном сайте.
+[Браузерное расширение AdGuard](https://adguard.com/adguard-browser-extension/overview.html) — это бесплатное расширение, которое работает в пяти популярных браузерах: Chrome, Firefox, Edge, Opera и Яндекс Браузер. You can find and install it via your browser’s web store or download it from our official website.
 
 ![Браузерное расширение AdGuard для Chrome \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
-Браузерные расширения включают в себя базовые функции блокировки рекламы, но их нельзя сравнивать с полнофункциональными десктопными программами, такими как [AdGuard для Windows](/adguard-for-windows/features/home-screen) и [AdGuard для Mac](/adguard-for-mac/features/main).
-
-![Доступно для большинства популярных браузеров \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
+![Available for most popular browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/extension_for_browsers.png)
 
 :::note
 
-У нас есть отдельное расширение для Safari. С момента выхода [Safari 13](https://adguard.com/ru/blog/adguard-safari-1-5.html) большинство расширений, блокирующих рекламу, столкнулись с большими проблемами, и многие из них перестали работать. Нам пришлось разработать [отдельное расширение для Safari](/adguard-for-safari/features/general), которое отличается от расширения, описанного в этой статье.
+We have a standalone extension for Safari [AdGuard Mini for Mac](/adguard-mini-for-mac/) (formerly AdGuard for Safari). Due to the unique architecture and strict requirements of Safari’s extension framework, it was developed as a separate application and has some functional differences compared to the extension described in this article.
 
 :::
 
-**Не забывайте, что функциональность любого расширения строго ограничена возможностями самого браузера**. Для полноценной защиты на уровне системы используйте отдельную программу для компьютера или мобильного устройства. [И вот почему](/adguard-browser-extension/comparison-standalone).
+**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** While extensions provide essential ad-blocking features, they cannot match the system-wide capabilities of desktop programs like [AdGuard for Windows](/adguard-for-windows/) and [AdGuard for Mac](/adguard-for-mac/). If you are looking for comprehensive protection that goes beyond the browser, you can read more about the [benefits of standalone apps](/adguard-browser-extension/comparison-standalone).

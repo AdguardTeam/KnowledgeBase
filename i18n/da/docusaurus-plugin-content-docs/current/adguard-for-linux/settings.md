@@ -303,7 +303,7 @@ adguard-cli import-settings -i "/path/to/settings.zip"
 
 The `-i` or `--input` flag is required and specifies the path to the settings archive to import.
 
-## AdGuard Browser Assistant
+## AdGuard Browser Assistent
 
 AdGuard Browser Assistant allows you to manage AdGuard protection directly from your browser.
 
