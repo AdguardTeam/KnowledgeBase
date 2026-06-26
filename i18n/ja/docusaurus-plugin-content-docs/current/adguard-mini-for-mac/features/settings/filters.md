@@ -3,22 +3,22 @@ title: フィルタ
 sidebar_position: 2
 ---
 
-![Filters tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/filters.png)
+![フィルタ](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/filters.png)
 
-In _Settings_ → _Filters_, you can enable separate filters or whole categories of filters.
+「_設定_」 → 「_フィルタ_」 では、個別のフィルタまたはフィルタカテゴリごとを有効・無効にすることができます。
 
-Filters are the backbone of ad blocking and basically it’s what keeps the Internet clean. フィルタとは、特別な構文で書かれたルールのリストです。 これらのルールに従って、コンテンツブロッカーはウェブトラフィックをフィルタリングし、広告や悪質なウェブサイトへのリクエストをブロックすることができるようになります。
+フィルタは広告ブロックの基盤であり、基本的にインターネットをクリーンに保つために何をブロックすべきかということを広告ブロッカーに指示してくれるものなのです。 フィルタとは、特別な構文で書かれたルールのリストです。 これらのルールに従って、コンテンツブロッカーはウェブトラフィックをフィルタリングし、広告や悪質なウェブサイトへのリクエストをブロックすることができるようになります。
 
-Filters are combined into eight thematic categories: _Ad Blocking, Privacy, Social widgets, Annoyances, Security, Language-specific filters, Custom,_ and _Other filters_.
+フィルタは全部で8つのテーマ別カテゴリに結合されています: _広告ブロック、プライバシー、SNSウィジェット、迷惑要素、セキュリティ、言語特化フィルタ、カスタム、その他_
 
 [AdGuardフィルタについてはこちら](/general/ad-filtering/adguard-filters)、[広告フィルタリング全般についてはこちら](/general/ad-filtering/how-ad-blocking-works)でもっと読むことができます。
 
-Changes in _Filters_ are also reflected in _Settings_ → _Safari extensions_.
+「フィルタ」での変更は、「設定」→「Safari拡張機能」にも反映されます。
 
 ## カスタムフィルタ
 
-![Create custom filter](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/create-custom.png)
+![カスタムフィルタ作成](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/create-custom.png)
 
-To add a custom filter, go to _Settings_ → _Filters_ → _Custom filters_ and enter a URL or a local file path in the relevant field.
+カスタムフィルターを追加するには、「_設定_」 → 「_フィルタ_」 → 「_カスタムフィルタ_」 に移動し、該当するフィールドにURLまたはローカルファイルへのパスを入力してください。
 
-You can find a lot of filters at [filterlists.com](https://filterlists.com/).
+[filterlists.com](https://filterlists.com/) では多くのフィルタを見つけることができます。

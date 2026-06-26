@@ -111,6 +111,7 @@ El objetivo de los filtros de bloqueo de anuncios es bloquear todos los tipos de
 Los filtros de protección de seguimiento de AdGuard incluyen:
 
 - Filtro de protección contra rastreo
+- Filtro de protección de seguimiento de correo electrónico AdGuard
 - Filtro contra rastreo de URL
 
 ### La finalidad de estos filtros
@@ -129,6 +130,8 @@ Lo que bloquean:
 - Funcionalidad Privacy Sandbox en Google Chrome y sus bifurcaciones utilizadas para el seguimiento (Google Topics API, Protected Audience API)
 
 El **filtro de seguimiento de URL** fue diseñado para eliminar parámetros de seguimiento de direcciones web
+
+El **filtro Protección de seguimiento de correo** bloquea los píxeles de seguimiento incrustados en los correos electrónicos para evitar que los remitentes supervisen cuándo abres los mensajes.
 
 ### Limitaciones y Excepciones
 

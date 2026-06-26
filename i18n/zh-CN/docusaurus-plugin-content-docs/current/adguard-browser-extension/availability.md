@@ -9,18 +9,16 @@ sidebar_position: 2
 
 :::
 
-[AdGuard 浏览器扩展](https://adguard.com/adguard-browser-extension/overview.html)是一个免费扩展，可在五个流行浏览器中使用，包括 Chrome、Firefox、Edge、Opera 和 Yandex 浏览器。 用户可以在浏览器的在线商店和我们的官网上轻松地找到它。
+[AdGuard 浏览器扩展](https://adguard.com/adguard-browser-extension/overview.html)是一个免费扩展，可在五个流行浏览器中使用，包括 Chrome、Firefox、Edge、Opera 和 Yandex 浏览器。 You can find and install it via your browser’s web store or download it from our official website.
 
 ![AdGuard 浏览器扩展 Chrome 版 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
-浏览器扩展包括基本的广告拦截功能，但无法与功能完整的桌面程序相比，如 [AdGuard Windows 版](/adguard-for-windows/features/home-screen)和 [AdGuard Mac 版](/adguard-for-mac/features/main) 。
-
-![可用于流行浏览器 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
+![Available for most popular browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/extension_for_browsers.png)
 
 :::note
 
-我们有一个独立的 Safari 扩展。 自从 [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html)发布以来，大多数广告拦截扩展都遇到了严重的问题，并且其中许多已停止运行。 我们不得不为 Safari 浏览器[开发一个独立的扩展](/adguard-for-safari/features/general)（与本文描述的扩展相比有一些差异）。
+We have a standalone extension for Safari [AdGuard Mini for Mac](/adguard-mini-for-mac/) (formerly AdGuard for Safari). Due to the unique architecture and strict requirements of Safari’s extension framework, it was developed as a separate application and has some functional differences compared to the extension described in this article.
 
 :::
 
-**请记住，各种浏览器扩展的功能都严格受制于浏览器本身**。因此，如果您想获得全面的保护，还是建议安装单独的程序。 这是[有原因的](/adguard-browser-extension/comparison-standalone)。
+**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** While extensions provide essential ad-blocking features, they cannot match the system-wide capabilities of desktop programs like [AdGuard for Windows](/adguard-for-windows/) and [AdGuard for Mac](/adguard-for-mac/). If you are looking for comprehensive protection that goes beyond the browser, you can read more about the [benefits of standalone apps](/adguard-browser-extension/comparison-standalone).

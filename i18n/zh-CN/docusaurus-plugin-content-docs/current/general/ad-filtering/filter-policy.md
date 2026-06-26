@@ -36,7 +36,7 @@ sidebar_position: 6
 
 **过滤器**（或者，**过滤器列表**）是一套过滤规则，旨在使用广告拦截程序过滤内容和拦截各种类型的广告和其他内容。 这些过滤器通常在浏览器、程序或 DNS 服务器级别上运行。
 
-**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so-called “adblock walls”). 反广告拦截有多种类型
+**Anti-adblock**（中文：反广告拦截）是网站或应用程序使用的一种技术，旨在检测广告拦截并以不同方式对其做出反应：跟踪、重新注入广告、鼓励禁用广告拦截器（即所谓的“广告拦截墙”（英文：Adblock walls））。 反广告拦截有多种类型
 
 - 不提供其他选择的 Anti-adblock：要继续使用网站，用户必须禁用网站上的广告拦截程序。
 - 提供替代选项的 “Anti-adblock wall”，例如购买订阅以继续使用广告拦截程序。
@@ -81,16 +81,16 @@ AdGuard 广告拦截的过滤器包含以下过滤器：
 ### 限制及例外
 
 - 不应故意屏蔽网站自身的广告。 但是，如果屏蔽是由一般过滤规则造成的，则不应解除屏蔽。
-- Content access measures like paywalls are not blocked by Ad blocking filters. However, they may be blocked by Tracking protection filters if their operation results in a violation of user privacy
+- 付费墙等内容访问限制措施不会被广告拦截过滤器屏蔽。 不过，如果其运作方式侵犯用户隐私，则可能被「跟踪保护过滤器」屏蔽。
 - 在以下情况下，Anti-adblock walls 将被屏蔽：
     - 强烈要求禁用或删除广告拦截器，或有效阻止使用网站。
     - 对使用广告拦截器可能造成的后果作出错误和误导性的描述。
     - 使访问者面临恶意广告的风险，如果未阻止的广告来自可疑来源。
-    - They violate or negatively impact user privacy
+    - 它们侵犯用户隐私或对其产生负面影响。
 - 如果广告拦截程序检测到的信息至少满足以下条件之一，我们将不予拦截：
     - 监测到的信息允许不干扰网站使用体验，不会覆盖大量页面内容。
     - 监测到的信息提供禁用广告拦截器的替代方案，但这种替代方案不会危及用户的隐私或安全。
-    - They allow the user to proceed to the website’s content
+    - 它们允许用户继续访问网站内容。
     - 某些传统规则可能会继续拦截符合上述一个或多个标准的信息。 如果发现此类规则，将依照政策进行处理。
 - 如果网络矿池是公开的，且不完全用于恶意目的，则不会被封锁。
 
@@ -111,6 +111,7 @@ AdGuard 广告拦截的过滤器包含以下过滤器：
 AdGuard 跟踪保护过滤器包含以下过滤器：
 
 - AdGuard 防跟踪保护过滤器
+- AdGuard 邮件跟踪保护过滤器
 - AdGuard URL 跟踪过滤器
 
 ### 过滤器的用途
@@ -129,6 +130,8 @@ AdGuard 跟踪保护过滤器包含以下过滤器：
 - Google 浏览器的隐私沙盒功能及其用于跟踪的分叉（Google Topics API、受保护受众 API）
 
 **URL 跟踪过滤器**旨在移除网址中的跟踪参数。
+
+**Mail 跟踪保护过滤器**会拦截邮件中嵌入的跟踪像素，防止发件人监控用户何时打开邮件。
 
 ### 限制及例外
 
@@ -166,38 +169,38 @@ AdGuard 跟踪保护过滤器包含以下过滤器：
 
 #### AdGuard Cookie 通知过滤器
 
-该过滤器旨在阻止 Cookie 通知和来自 Cookie 管理平台（CMP）的请求。 Depending on how a website implements its consent mechanism, different methods may be applied.
+该过滤器旨在阻止 Cookie 通知和来自 Cookie 管理平台（CMP）的请求。 根据网站实现同意机制的方式不同，所采用的方法也有所差异。
 
-In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when a website requires a cookie decision for certain features or third-party content to work, the filter automatically handles the request using alternative methods.
+大多数情况下，只需隐藏或屏蔽相应的脚本即可。 不过，如果网站要求用户做出 Cookie 选择才能使某些功能或第三方内容正常运行，过滤器会自动采用替代方法来处理该请求。
 
-Whenever possible, non-essential cookies are declined by default. If this is not technically feasible and consent must be granted for the site to function correctly, the site is additionally reviewed for analytics and tracking technologies, which are then blocked by the **AdGuard Tracking Protection filter**.
+在可能的情况下，非必要 Cookie 默认会被拒绝。 如果技术上不可行，必须授予同意才能让网站正常运行，则会额外对该网站进行分析和跟踪技术审查，并由 **AdGuard 跟踪保护过滤器**进行拦截。
 
 **限制及例外**
 
-In some cases, the decision to add rules is made independently by filter developers; mostly, when the choice made when simulating actions would affect the site’s functionality (for example, history may not work, or user settings may not be saved on such a site).
+在某些情况下，添加规则的决定由过滤器开发者自行做出；主要是在模拟操作时的选择会影响网站功能的情况下（例如，网站的历史记录可能无法使用，或用户设置可能无法保存）。
 
 #### AdGuard 弹窗过滤器
 
-This is a filter that blocks various popups on web pages that are not necessary for normal site usage, including but not limited to:
+这是一个用于拦截网页上各类非必需弹窗的过滤器，包括但不限于：
 
-- Requests for permission to receive push notifications
-- Popups and forms for subscribing to news, promotions, and various events, including third-party channels for receiving them (such as Google News, Telegram)
-- Popups that encourage users to disable ad blocker and violate user’s privacy (at the discretion of the filter developers)
-- Other types of popups that may annoy users (at the discretion of filter developers)
+- 请求获取推送通知权限的弹窗
+- 订阅新闻、促销活动及各类事件的弹窗和表单，包括通过第三方渠道（如 Google News、Telegram）接收的订阅请求
+- 鼓励用户关闭广告拦截程序并侵犯用户隐私的弹窗（由过滤器开发者酌情决定）
+- 其他可能对用户造成困扰的弹窗类型（由过滤器开发者酌情决定）
 
 **限制及例外**
 
-- Push notifications are only blocked on sites where they are not used for practical purposes. For example, in email web clients or tools used for work purposes, such notifications will not be blocked
-- Some popups that do not fall into the categories described above but still interfere with the user’s experience may be also blocked. For example, registration prompts on a site or popups that introduce the site’s features. The decision is made by filter developers
-- Content access measures that ask the user to pay to access the content must not be circumvented
+- 推送通知仅在非实用用途的网站上被拦截。 例如，在邮件网页客户端或用于工作目的的工具中，这类通知不会被拦截。
+- 部分不属于上述类别但仍干扰用户体验的弹窗，也可能被拦截。 例如，网站上的注册提示或介绍网站功能的弹窗。 具体由过滤器开发者酌情决定。
+- 要求用户付费以访问内容的内容访问措施，不得被绕过。
 
 #### AdGuard 移动拦截程序横幅广告的过滤器
 
-This is a filter that blocks banners and popups that encourage visitors to install mobile apps.
+该过滤器可阻止鼓励访客安装移动应用程序的横幅广告和弹出窗口。
 
 **限制及例外**
 
-Banners located in the headers or in the menus of websites are not blocked if they are not animated and do not occupy a significant portion of usable space. If a banner is located in the footer, the decision is made by filter developers case-by-case. Usually, banners in the footer do not stand out against other elements and are not distracting.
+位于网站页眉或菜单中的横幅，若非动画形式且未占用过多可用空间，则不予拦截。 若横幅位于页脚，则由过滤器开发者根据具体情况决定。 通常，页脚横幅与其他元素相比并不突出，也不易分散注意力。
 
 #### AdGuard 小工具过滤器
 

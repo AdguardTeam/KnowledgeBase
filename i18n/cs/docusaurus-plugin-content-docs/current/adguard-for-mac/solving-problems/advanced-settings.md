@@ -57,6 +57,10 @@ Přesměruje zabezpečené DNS požadavky na místní DNS proxy, pokud je k disp
 
 Nastavením `true` povolíte kontrolu odvolání certifikátu HTTPS.
 
+#### `network.http.compress.body`
+
+Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering engine, will compress the HTTP response body before sending it with the original response algorithm (if supported) or with the default fallback algorithm (GZip). Responses from BrowserApi will also be encoded if this option is enabled.
+
 #### `network.tcp.keepalive.enabled`
 
 Pravidelně odesílá pakety TCP přes neaktivní připojení, aby se zajistilo aktivity a obnovení časových limitů NAT.

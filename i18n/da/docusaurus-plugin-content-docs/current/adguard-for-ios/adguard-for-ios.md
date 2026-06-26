@@ -1,5 +1,5 @@
 ---
-title: AdGuard for iOS
+title: AdGuard til iOS
 sidebar_position: 1
 ---
 

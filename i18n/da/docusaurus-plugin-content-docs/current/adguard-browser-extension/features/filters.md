@@ -1,58 +1,79 @@
 ---
-title: Filters
+title: Filtre
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard Browser Extension, der kun beskytter webbrowseren. For at beskytte hele enheden, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-Blocking ads is the key functionality of any ad blocker, and AdGuard Browser Extension is not an exception. Ad blocking is based on filters — sets of rules written in a special language. These rules tell which elements should be blocked and which should not. AdGuard interpretes the rules and modifies web requests based on them. As a result, you stop seeing ads on your webpages.
+- [Tilpassede filtre](#custom-filters)
+- [Brugerregler](#user-rules)
+- [Hvidliste](#allowlist)
 
-![Filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
+Blokering af annoncer er kernefunktionen i enhver adblocker, og AdGuard Browser Extension er ingen undtagelse. Adblocking er baseret på filtre — sæt af regler skrevet i en særlig syntaks. Disse regler definerer, hvilke sideelementer, som skal blokeres, og hvilke, som ikke skal. AdGuard fortolker disse regler og ændrer forespørgsler i overensstemmelse hermed. Som et resultat ses annoncer ikke længere på websiderne.
 
-All filters are grouped according to their role. For example, there are categories for ad-blocking filters, privacy protection filters, social media-related filters, etc. You can enable either individual filters or the entire group at once.
+![Filtre \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/filters.png)
 
-![Ad blocking filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
+Alle filtre er grupperet efter kategori baseret på deres rolle:
 
-## Custom filters
+- Adblocking: Blokér forskellige typer af reklamer
+- Fortrolighed: Blokér online-trackere og analyseværktøjer for at beskytte personlige data
+- Sociale widgets: Blokér sociale medieelementer, såsom _Like_- og _Share_-knapper
+- Irritationer: Blokér irriterende webelementer, såsom cookie-meddelelser, tredjeparts-widgets eller pop op-vinduer på siden
+- Sikkerhed: Blokér forespørgsler til phishing- og skadelige websteder
+- Andre: Indeholder diverse filtre, som ikke passer ind i hovedkategorierne
+- Sprogspecifikt: Blokér annoncer på websteder på bestemte sprog
+- Tilpasset: Muliggør at tilføje egne filtre fra en lokal fil eller URL
 
-While the features of other filter groups are more or less self-explanatory, there is a group called _Custom_ that may raise additional questions.
+Enten individuelle filtre kan aktiveres eller hele grupper på én gang.
 
-![Custom filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
+![Sikkerhedsfiltre \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/security_filters.png)
 
-In this tab, you can add filters that are not present in the extension by default. There are plenty of [publicly available filters on the Internet](https://filterlists.com). Moreover, you can create and add your own filters. In fact, you can build any set of filters and customize ad blocking the way you like.
+## Tilpassede filtre {#custom-filters}
 
-To add a filter, just click _Add custom filter_, enter the URL or the file path of the filter you want to be added and click _Next_.
+Mens funktionerne for andre filtergrupper er mere eller mindre selvforklarende, findes en gruppe kaldet _Tilpasset_, der kan afføde yderligere spørgsmål.
 
-![Add a custom filter \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
+![Tilpassede filtre \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/custom_filters.png)
 
-Custom filters update independently, so your filtering remains effective and current without requiring extension updates.
+Via denne fane kan filtre tilføjes, som ikke er inkluderet i udvidelsen som standard. Der er masser af [offentligt tilgængelige filtre på internet](https://filterlists.com). Derudover kan egne filtre oprettes og tilføjes. Faktisk kan der bygges et hvilket som helst sæt filtre og tilpasse adblockingen som ønsket.
 
-## User rules {#user-rules}
+For at tilføje et filter, klik blot på _Tilføj tilpasset filter_, angiv URL'en eller filstien til det ønskede filter og klik på _Næste_.
 
-_User rules_ is another tool that helps you customize the blocking of ads.
+![Tilføj et tilpasset filter \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_filter.png)
 
-![User rules \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
+Tilpassede filtre opdateres uafhængigt og holder beskyttelsen effektiv og opdateret uden krav om opdateringer af udvidelsen.
 
-There are several ways to add new rules. The most straightforward is to just type a rule in, but it requires some knowledge of the [rule syntax](/general/ad-filtering/create-own-filters).
+## Brugerregler {#user-rules}
 
-You can import a ready-to-use filter list from a text file as well. **Make sure that different rules are separated by line breaks.** Note that importing a ready-to-use filter list is better done in the Custom filters tab.
+_Brugerregler_ er et andet værktøj, hvormed adblocking kan tilpasses.
 
-Besides, you can export your own filtering rules. This option is good for transferring your list of rules between browsers or devices.
+![Brugerregler \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/user_rules.png)
 
-When you add a website to the Allowlist (more on that below) or use the Assistant tool for hiding an element on the page, a corresponding rule is also saved in _User rules_.
+Nye regler kan tilføjes på flere måder. Det nemmest er blot at skrive en regel, men det kræver en vis viden om [regelsyntaks](/general/ad-filtring/create-own-filters).
 
-## Allowlist
+Der kan også importeres en filterliste, der er klar til brug, fra en tekstfil. **Sørg for, at forskellige regler er adskilt af linjeskift.**
 
-The _allowlist_ is used to exclude certain websites from filtering. Blocking rules are not applied to the websites on the list.
+:::note
 
-![Allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
+Import af en klar-til-brug filterliste gøres bedst via fanen _Tilpassede filtre_.
 
-_Allowlist_ can also be inverted: you can unblock ads everywhere except on the websites added to this list. To do that, activate the _Invert Allowlist_ option. Before it turns on, a confirmation dialog will appear to prevent accidental activation and explain what will happen.
+:::
 
-![Invert allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
+Egne filtreringsregler kan eksporteres. Denne mulighed er god til at overføre en liste over regler mellem webbrowsere eller enheder.
 
-You can also import and export existing allowlists. It is useful, for instance, if you want to apply the same allowing rules in each of your browsers.
+Når et websted føjes til _Hvidliste_, eller Assistentværktøjet bruges til at skjule et sideelement, gemmes den korresponderende regel automatisk i _Brugerregler_.
+
+## Hvidliste {#allowlist}
+
+_Hvidiste_ bruges til at undtage bestemte websteder fra filtrering. Ingen af blokeringsreglerne vil gælde for webstederne på denne liste.
+
+![Hvidliste \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allowlist.png)
+
+_Hvidliste_ kan også inverteres, så annoncer afblokeres overalt undtagen på de websteder, som er føjet til denne liste. For at gøre dette, gå til _Yderligere indstillinger_ og aktivér  _Invertér Hvidliste_. Før den aktiveres, vises en bekræftelsesdialog for at forklare, hvordan den fungerer, og forhindre utilsigtet aktivering.
+
+![Invertér Hvidliste \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/invert_allowlist_dialog.png)
+
+Eksisterende hvidlister kan også importeres og eksporteres. Det er nyttigt, såfremt de samme regler ønskes anvendt på tværs af alle webbrowsere.

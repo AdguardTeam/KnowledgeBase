@@ -9,12 +9,16 @@ sidebar_position: 1
 
 :::
 
-На главную страницу расширения можно попасть, нажав на значок расширения на панели инструментов браузера.
+The extension’s main page can be accessed by clicking its icon on your browser’s toolbar.
 
-![Главное меню \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Main menu \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/main_popup_mv2.png)
 
-На главном экране можно скрыть любой элемент на сайте вручную (это добавит новое пользовательское правило) или открыть _Журнал фильтрации_, чтобы посмотреть информацию о трафике вашего браузера. Там же можно заблокировать запросы на ходу и просмотреть отчёт о безопасности сайта. Если вы заметили пропущенную рекламу, вы можете пожаловаться на некорректную блокировку. Наши разработчики фильтров рассмотрят жалобу и исправят проблему. Там же можно посмотреть статистику по применённым правилам фильтрации.
+From the main page, you can manage your protection and access key features:
 
-Все запросы, сделанные браузером, отображаются в _Журнале фильтрации_ вместе с подробной информацией о каждом запросе. _Журнал фильтрации_ позволяет, например, отследить, какие запросы заблокировало расширение. В Журнале также можно заблокировать или разблокировать любой запрос в два клика. Там же можно отсортировать запросы, что может помочь, если вы создаёте свои правила фильтрации. _Журнал фильтрации_ можно открыть из главного меню или настроек (во вкладке _Дополнительные настройки_).
+- Manually hide any element on a webpage (a custom rule will be automatically added to your _User rules_)
+- Open _Filtering log_ to view detailed information about your browser’s traffic and block requests on the fly
+- Submit a complaint about missed ads or broken page elements so our filter engineers can review and fix the issue
+- Check a website’s security report
+- See statistics on all blocked elements
 
-Значки в правом верхнем углу главного меню отвечают за настройки расширения и приостановку защиты.
+By clicking the icons in the top-right corner of the extension’s main menu, you can manually update filters, pause protection, or open the extension settings.

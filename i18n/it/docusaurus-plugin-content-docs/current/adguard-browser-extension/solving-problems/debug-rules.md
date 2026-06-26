@@ -65,15 +65,15 @@ Queste istruzioni sono pensate anche per i casi problematici in cui si desidera 
 
 1. Attivare la modalità sviluppatore:
 
-   ![Modalita sviluppatore](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
+   ![Developer mode \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
 
 2. Fare clic su _Carica decompresso_:
 
-   ![Carica decompresso](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+   ![Load unpacked \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
 3. Selezionare la ripartizione dell'estensione e fare clic su `Seleziona`:
 
-   ![Seleziona](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
+   ![Select \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
 
 Ecco fatto!
 
@@ -95,4 +95,4 @@ Ecco fatto!
 
 4. Ricaricare l'estensione nel browser:
 
-   ![Ricarica estensione](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
+   ![Reload extension \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)

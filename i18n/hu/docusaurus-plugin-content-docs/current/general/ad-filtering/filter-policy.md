@@ -111,6 +111,7 @@ A hirdetésblokkoló szűrők célja, hogy blokkoljanak mindenféle hirdetést o
 AdGuard Követés Elleni szűrő:
 
 - AdGuard Követés Elleni szűrő
+- AdGuard Mail Tracking Protection filter
 - AdGuard URL Követés szűrő
 
 ### E szűrők célja
@@ -129,6 +130,8 @@ Amit blokkol:
 - Privacy Sandbox funkció a Google Chrome-ban és a nyomkövetéshez használt villáiban (Google Topics API, Protected Audience API)
 
 A **URL-követő szűrő** célja a nyomkövetési paraméterek eltávolítása a webcímekről
+
+The **Mail Tracking Protection filter** blocks tracking pixels embedded in emails to prevent senders from monitoring when you open messages.
 
 ### Korlátozások és kivételek
 

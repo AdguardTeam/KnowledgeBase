@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-This page is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事は、Safariブラウザのみで機能する「AdGuard Mini for Mac」に関するものです。 Mac全体を保護するには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 

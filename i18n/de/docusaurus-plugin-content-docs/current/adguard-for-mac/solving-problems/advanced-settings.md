@@ -57,6 +57,10 @@ Leitet sichere DNS-Anfragen an einen lokalen DNS-Proxy um, sofern ein solcher vo
 
 Indem Sie `true` festlegen, aktivieren Sie die Sperrprüfung von HTTPS-Zertifikaten.
 
+#### `network.http.compress.body`
+
+Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering engine, will compress the HTTP response body before sending it with the original response algorithm (if supported) or with the default fallback algorithm (GZip). Responses from BrowserApi will also be encoded if this option is enabled.
+
 #### `network.tcp.keepalive.enabled`
 
 Sendet in regelmäßigen Abständen TCP-Pakete über eine inaktive Verbindung, um sicherzustellen, dass diese aktiv bleibt und um NAT-Zeitüberschreitungen zu erneuern.

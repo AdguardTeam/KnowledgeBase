@@ -116,7 +116,7 @@ If this setting is enabled, AdGuard will log all filtered HTTP requests in HAR 1
 
 This setting may slow down your device. Use it for debugging purposes only.
 
-### HTTPS filtering
+### HTTPS-filtrering
 
 #### Encrypted Client Hello
 
@@ -150,7 +150,7 @@ If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in add
 
 When this setting is enabled, the _Filter DNS requests_ switch is displayed in the _Add proxy server_ dialog. To access the dialog, open **Settings**, then go to **Filtering** → **Network** → **Proxy** → **Proxy server**, and click _+ Add proxy server_. Turning on that switch enables filtering of DNS requests passing through the specified outbound proxy.
 
-### Protection
+### Beskyttelse
 
 #### Port ranges
 
@@ -235,7 +235,7 @@ If this setting is enabled, AdGuard will exclude LAN connections from filtering 
 
 Here you can enter the IP address that will be used to create a TUN interface. The default value is `2001:db8:ad:0:ff::`.
 
-### Miscellaneous
+### Diverse
 
 #### Show Developer tools on the main screen
 

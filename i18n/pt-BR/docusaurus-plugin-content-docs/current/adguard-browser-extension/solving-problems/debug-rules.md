@@ -65,15 +65,15 @@ Estas instruções também são destinadas a casos problemáticos em que você d
 
 1. Ative o modo de desenvolvedor:
 
-   ![Modo de desenvolvedor](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
+   ![Developer mode \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
 
 2. Clique em _Carregar unpacked_:
 
-   ![Load unpacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+   ![Load unpacked \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
 3. Selecione o diretório da extensão e clique em `Selecionar`:
 
-   ![Select](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
+   ![Select \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
 
 Tudo pronto!
 
@@ -95,4 +95,4 @@ Tudo pronto!
 
 4. Recarregue a extensão no navegador:
 
-   ![Recarregar extensão](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
+   ![Reload extension \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)

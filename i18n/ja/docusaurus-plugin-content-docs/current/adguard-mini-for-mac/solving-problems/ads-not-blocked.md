@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事は、Safariブラウザでのみ機能する「AdGuard Mini for Mac」に関するものです。 Mac全体を保護するには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
@@ -16,10 +16,10 @@ In some cases, filtering may not work and ads may still be displayed even though
 1. Safariを開きます。
 2. 左上のメニューで「_Safari_」をクリックします。
 3. 「_環境設定…_」→「_拡張機能_」をクリックします。
-4. Clear the checkboxes for AdGuard Mini’s extensions: _Custom_, _General_, _Other_, _Privacy_, _Security_, _Social_, and _AdGuard for Safari_.
-   ![Unchecked extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
+4. これらの AdGuard Mini拡張機能チェックボックスをオフにします： [_カスタム_]、[_一般_]、[_その他_]、[_プライバシー_]、[_セキュリティ_]、[_ソーシャル_]、[_AdGuard for Safari_]
+   ![チェックなし拡張機能](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
 5. Safari を再起動します。
-6. Return to Safari → _Settings..._ → _Extensions_ and re-enable the AdGuard extensions.
+6. Safariに戻る→「_環境設定..._」→「_拡張機能_」に戻り、AdGuardの拡張機能を再度有効にします。
 7. Open AdGuard Mini’s menu.
 8. Click _Check for updates_ icon.
    ![Update button \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/update-button.png)

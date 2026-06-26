@@ -7,7 +7,7 @@ Se a extensão AdGuard para navegadores não conseguir bloquear anúncios em sit
 
 Para conceder a permissão necessária:
 
-![Permitir acesso aos resultados da página de pesquisa](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/allow-access.png)
+![Allow access to search page results \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/opera_allow_search.png)
 
 1. Clique no ícone de cubo ao lado da barra de endereço → _Gerenciar extensões..._.
 2. Encontre o bloqueador de anúncios AdGuard na lista de extensões instaladas e marque a caixa ao lado de _Permitir acesso aos resultados da página de pesquisa_.
