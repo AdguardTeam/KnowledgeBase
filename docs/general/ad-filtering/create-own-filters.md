@@ -2942,7 +2942,7 @@ Rules with `$replace` modifier are supported by AdGuard for Windows, AdGuard for
 
 #### **`$urltransform`** {#urltransform-modifier}
 
-The `$urltransform` rules allow you to modify the request URL by replacing text matched by a regular expression.
+The `$urltransform` rules allow you to modify the request URL by applying a series of transformations.
 
 **Features**
 
@@ -2954,7 +2954,8 @@ The `$urltransform` value can be empty for exception rules.
 
 **Multiple rules matching a single request**
 
-If multiple `$urltransform` rules match a single request, we will apply each of them. **The order is defined alphabetically.**
+If multiple `$urltransform` rules match a single request, they are applied one-by-one in lexicographical order, each
+rule being applied to the result of the previous one.
 
 **Syntax**
 
@@ -2996,7 +2997,7 @@ This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for A
 :::
 
 As stated above, normally `$urltransform` rules are only allowed to change the path and query parts of the URL.
-However, if the rule's `regexp` begins with the string `^http`, then the full URL is searched and can be modified by the rule.
+However, if the value of the `$urltransform` modifier begins with the string `/^http`, then the full URL becomes the input for, and can be modified by, the rule.
 Such a rule will not be applied if the URL transformation can not be achieved via an HTTP redirect (for example, if the request's method is `POST`).
 
 **Examples**
@@ -3046,23 +3047,35 @@ Many websites use tracking URLs to monitor clicks before redirecting to the actu
 
 Below is an example of how to obtain the clean destination link to bypass tracking websites and go directly to the destination.
 
-In our example:
+In our first example, the destination URL is percent-encoded:
 
- 1. The initial URL (with click tracking): `https://www.aff.example.com/visit?url=https%3A%2F%2Fwww.somestore.com%2F%26referrer%3Dhttps%3A%2F%2Fwww.aff.example.com%2F%26ref%3Dref-123`
- 1. Tracking URL after decoding special characters: `https://www.aff.example.com/visit?url=https://www.somestore.com/`
- 1. The website you want to visit: `https://www.somestore.com`
+ 1. The initial URL (with click tracking): `https://www.aff.example.com/visit?url=https%3A%2F%2Fwww.somestore.com%2F&ref=ref-123`
+ 1. The website you want to visit: `https://www.somestore.com/`
 
-To clean the URL, we first need to decode special characters (like `%3A` → `:`, `%2F` → `/`, etc.) and extract the real URL from the tracking parameters. We will use the `$urltransform` modifier to do this. The following 4 rules replace URL-encoded symbols with their real characters:
+To clean the URL, extract the encoded destination from the `url` parameter and decode it with the `pct` transformation:
 
-`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3A/:/`
-`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%2F/\//`
-`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3F/?/`
-`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3D/=/`
-`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%26/&/`
+```adblock
+/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=([^&]*).*/\$1/|pct
+```
 
-After that, we need to write the rule that will block the tracking website and redirect you directly to the target address (somestore.com):
+The first transformation extracts `https%3A%2F%2Fwww.somestore.com%2F`, and `pct` decodes it to `https://www.somestore.com/`.
 
-`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com.*url=([^&]*).*/\$1/`
+If the full target URL with a tracking parameter is Base64-encoded, the same approach can be used with the `b64` transformation,
+followed by another substitution that removes the tracking parameter:
+
+ 1. The initial URL (with click tracking): `https://www.aff.example.com/visit?url=aHR0cHM6Ly93d3cuc29tZXN0b3JlLmNvbS8/cmVmPXJlZi0xMjM=`
+ 1. The website you want to visit: `https://www.somestore.com/`
+
+```adblock
+/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=([^&]*).*/\$1/|b64|/[?&]ref=[^&]*//
+```
+
+The first transformation extracts `aHR0cHM6Ly93d3cuc29tZXN0b3JlLmNvbS8/cmVmPXJlZi0xMjM=`, and `b64` decodes it to
+`https://www.somestore.com/?ref=ref-123`. The final substitution removes the `ref` tracking parameter.
+
+:::caution Changing the origin
+Note that in both rules, the `$urltransform` value starts with `/^http`, so the full request URL is transformed. Without this prefix, only the path and query parts of the URL can be transformed.
+:::
 
 Tracking links will now be automatically cleaned up, allowing direct navigation to the destination website without tracking.
 
