@@ -312,7 +312,7 @@ Before submitting a dispute, please make sure you have read this policy carefull
 
 ### How to submit a dispute
 
-You can submit a dispute by using [our report tool](https://reports.adguard.com/en/new_issue.html). See the step-by-step guide in our [dedicated article](https://adguard.com/kb/guides/report-website/).
+You can submit a dispute by using [our report tool](https://reports.adguard.com/new_issue.html). See the step-by-step guide in our [dedicated article](https://adguard.com/kb/guides/report-website/).
 
 Alternatively, you can report it via GitHub:
 
