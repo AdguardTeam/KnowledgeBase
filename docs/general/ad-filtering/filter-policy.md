@@ -312,11 +312,13 @@ Before submitting a dispute, please make sure you have read this policy carefull
 
 ### How to submit a dispute
 
+You can submit a dispute by using [our report tool](https://reports.adguard.com/en/new_issue.html). See the step-by-step guide in our [dedicated article](https://adguard.com/kb/guides/report-website/).
+
+Alternatively, you can report it via GitHub:
+
 1. Go to the [AdGuard Filters GitHub repository](https://github.com/AdguardTeam/AdguardFilters/issues) and create a new issue.
 2. Select the **Report an issue using AdGuard** issue template.
 3. Fill out the template with as much detail as possible.
-
-Alternatively, you can submit a dispute through [our report tool](https://reports.adguard.com/en/new_issue.html). See our step-by-step guide in our [dedicated article](https://adguard.com/kb/guides/report-website/).
 
 Your report should include:
 
