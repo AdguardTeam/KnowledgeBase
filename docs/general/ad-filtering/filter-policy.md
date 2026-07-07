@@ -306,7 +306,7 @@ This filter is intended for testing and debugging rules that potentially may bre
 
 ## How to dispute a blocking rule
 
-AdGuard filter lists are maintained not only by the AdGuard team but also by community contributors. If you believe a blocking rule violates the principles described in this Filter Policy, you can dispute it by opening an issue on GitHub.
+AdGuard filter lists are maintained not only by the AdGuard team but also by community contributors. If you believe a blocking rule violates the principles described in this filter policy, you can dispute it by opening an issue on GitHub.
 
 Before submitting a dispute, please make sure you have read this policy carefully. When reviewing your report, filter maintainers will evaluate whether the rule complies with the criteria described above, so your explanation should refer to this policy whenever possible.
 
