@@ -327,7 +327,7 @@ Your report should include:
 - The blocking rule, if you know which one is responsible.
 - Steps to reproduce the issue.
 - Screenshots or other evidence that illustrate the problem, if applicable.
-- A detailed explanation of **why you believe the rule does not comply with this Filter Policy**. Whenever possible, refer to the relevant section or principle of the policy that you believe the rule violates.
+- A detailed explanation of **why you believe the rule does not comply with this filter policy**. Whenever possible, refer to the relevant section or principle of the policy that you believe the rule violates.
 
 ### What makes a good dispute?
 
