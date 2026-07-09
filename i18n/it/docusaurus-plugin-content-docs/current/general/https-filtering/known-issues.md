@@ -1,9 +1,11 @@
 ---
 title: Problemi noti
 sidebar_position: 2
+toc_min_heading_level: 2
+toc_max_heading_level: 4
 ---
 
-Ultimo aggiornamento: 20 settembre 2022
+Ultimo aggiornamento: 17 settembre 2024
 
 Per comprendere questo articolo potrebbero essere necessarie alcune conoscenze di base sulla crittografia, TLS e HTTPS.
 
@@ -30,7 +32,38 @@ Tutti i problemi a noi noti e le stime sulle correzioni, sono elencati di seguit
 
 Lo svantaggio più importante del meccanismo di filtraggio HTTPS è che nasconde il certificato reale di un sito web. Non puoi semplicemente controllarne il certificato originale, poiché puoi visualizzare soltanto quello emesso da AdGuard.
 
-Questo problema è risolto nel [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). Quest'estensione del browser ti aiuta a gestire il filtraggio direttamente dal browser, consentendoti di ispezionare il certificato originale di qualsiasi sito web.
+Questo problema può essere risolto in 2 modi:
+
+- Utilizzando il nostro [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). Quest'estensione del browser ti aiuta a gestire il filtraggio direttamente dal browser, consentendoti di ispezionare il certificato originale di qualsiasi sito web
+
+  ![Certificato Browser Assistant *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-browser.png)
+
+- Visitando la sezione *Attività recente* in AdGuard per Android o la sezione *registro di filtraggio* in AdGuard per Windows e AdGuard per Mac. Mentre nel Browser Assistant puoi vedere solo il certificato del sito web, in Attività recente puoi ispezionare il certificato di qualsiasi server utilizzato in una sottodomanda o browser, con o senza il Browser Assistant. Per visualizzare il certificato utilizzando questo metodo, segui le istruzioni riportate di seguito.
+
+#### Ispeziona il certificato originale in AdGuard per Android
+
+1. Fai clic sull'icona delle statistiche sulla barra di navigazione.
+2. Vai a *Attività recente*.
+3. Clicca sulla richiesta di cui vuoi ispezionare il certificato per aprire i dettagli della richiesta.
+4. Scorri verso il basso fino al *Certificato originale*. Tocca per maggiori informazioni.
+
+![Attività recente AdGuard per Android *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-android.png)
+
+#### Ispeziona il certificato originale in AdGuard per Windows
+
+1. Vai a *Impostazioni* → *Blocco annunci* → *Registro di filtraggio*.
+2. Clicca sulla richiesta di cui vuoi ispezionare il certificato per aprire i dettagli della richiesta.
+3. Nel settore *TLS*, fai clic su *Visualizza certificato del sito web*.
+
+![Registro di filtraggio AdGuard per Windows *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-win.png)
+
+#### Ispeziona il certificato originale in AdGuard per Mac
+
+1. Fare clic sull'icona dell'ingranaggio. Nel menu a tendina, vai a *Avanzate* → *Registro di filtraggio...*.
+2. Clicca sulla richiesta di cui vuoi ispezionare il certificato per aprire i dettagli della richiesta.
+3. Clicca su *Visualizza certificato*.
+
+![Registro di filtraggio AdGuard per Mac *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-mac.png)
 
 ### Trasparenza del Certificato
 

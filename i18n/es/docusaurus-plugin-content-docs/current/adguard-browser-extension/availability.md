@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-Este artículo trata sobre la extensión del navegador de AdGuard, que protege solo tu navegador. Para proteger todo su dispositivo, [descarca la aplicación AdGuard](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre la extensión de navegador AdGuard, que protege solo tu navegador. Para proteger todo su dispositivo, [descarca la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -23,4 +23,4 @@ Tenemos una extensión independiente para Safari. Desde el lanzamiento de [Safar
 
 :::
 
-**No olvides que la funcionalidad de cada extensión está estrictamente limitada por las capacidades del navegador**. Entonces, si deseas obtener una protección completa, considera instalar un programa independiente para tu computadora. Hay [una razón para ello](adguard-browser-extension/comparison-standalone).
+**No olvides que la funcionalidad de cada extensión está estrictamente limitada por las capacidades del navegador**. Entonces, si deseas obtener una protección completa, considera instalar un programa independiente para tu computadora. Hay [una razón para ello](/adguard-browser-extension/comparison-standalone).

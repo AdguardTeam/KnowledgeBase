@@ -1,6 +1,6 @@
 ---
 title: 助手
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info
@@ -32,13 +32,13 @@ sidebar_position: 5
 
 选择应用程序后，**我们以 Chrome 浏览器为例**，您将看到可执行的选项。
 
-![Assistant Chrome menu \*mobile\_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Assistant Chrome menu \*mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
 #### 最新活动
 
 您将进入 AdGuard 应用程序，查看有关 Chrome 浏览器的最近1万次请求的详细信息。
 
-![App recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![App recent activity \*mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
 
 #### App 数据统计信息
 
@@ -72,7 +72,7 @@ sidebar_position: 5
 
 您将进入 AdGuard 应用程序，查看向 google.com 的最近1万次请求的详细信息。
 
-![website recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+![website recent activity \*mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
 
 #### 网站统计信息
 

@@ -3,6 +3,16 @@ title: Filterrichtlinie von AdGuard
 sidebar_position: 6
 ---
 
+:::note Haftungsausschluss
+
+Bitte lesen Sie diese Filterrichtlinie sorgfältig durch, bevor Sie einen Filter aktivieren.
+
+Das Verwenden von AdGuard Werbeblocker, AdGuard DNS und deren Filtern kann die Funktionsweise von Websites und Diensten von Drittanbietern beeinträchtigen. Sie sind dafür verantwortlich, die Richtlinien und Bedingungen aller von Ihnen genutzten Websites oder Dienste zu überprüfen und zu befolgen.
+
+Bevor Sie Filter von Drittanbietern aktivieren, erklären Sie sich damit einverstanden, deren geltende Bedingungen zu überprüfen und eine fundierte Entscheidung über deren Verwendung zu treffen. AdGuard ist nicht dafür verantwortlich, wie Filter von Drittanbietern funktionieren oder was deren Bedingungen enthalten, und das Vorhandensein dieser Filter in AdGuard-Produkten stellt keine Empfehlung zu deren Verwendung dar.
+
+:::
+
 Bei AdGuard folgen wir seit langem bestimmten Grundsätzen bei der Erstellung unserer Filter, die zusammen mit den Filterbeschreibungen unten als Teil unserer Filterrichtlinien aufgeführt sind.
 
 ## Gemeinsame Kriterien
@@ -41,14 +51,12 @@ AdGuard-Filter zum Blockieren von Werbung umfassen:
 - AdGuard Basisfilter
 - AdGuard-Filter gegen mobile Werbung
 - Regionale Filter nach Sprachprinzip — Chinesisch, Niederländisch, Französisch, Deutsch, Japanisch, Russisch, Spanisch/Portugiesisch, Türkisch, und Ukrainisch
-- AdGuard Quick Fixes filter
 
 ### Der Zweck dieser Filter
 
 - **Der Basisfilter** blockiert Werbung auf englischsprachigen Websites und solchen, für die es keinen eigenen Filter gibt. Er enthält auch allgemeine Filterregeln, die für alle Websites unabhängig von der Sprache gelten
 - **Filter gegen mobile Werbung** blockiert Werbung auf mobilen Versionen von Websites und in mobilen Apps. Es gibt keine Unterteilung nach Sprachen
 - **Sprachspezifische Filter** folgen der gleichen Politik wie der **Basisfilter**, sind aber auf Websites in bestimmten Sprachen beschränkt
-- **Quick Fixes filter** used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension.
 
 Das Ziel von Werbeblockern ist es, alle Arten von Werbung auf Websites, in Apps und auf bestimmten Geräten, die Werbung aus dem Internet laden können, zu blockieren:
 
@@ -73,15 +81,16 @@ Das Ziel von Werbeblockern ist es, alle Arten von Werbung auf Websites, in Apps 
 ### Beschränkungen und Ausnahmen
 
 - Die Website-eigene Werbung sollte nicht bewusst gesperrt werden. Sie sollte jedoch nicht entsperrt werden, wenn das Sperren auf allgemeine Filterregeln zurückzuführen ist
-- Maßnahmen zum Zugriff auf Inhalte wie Paywalls werden nicht gesperrt
+- Zugriffsbeschränkungen wie Paywalls werden von Werbeblockern nicht umgangen. However, they may be blocked by Tracking protection filters if their operation results in a violation of user privacy
 - In folgenden Fällen werden die Anti-Adblock-Walls blockiert:
     - Sie bestehen aggressiv auf der Deaktivierung oder Entfernung des Werbeblockers oder verhindern effektiv die Nutzung der Website
     - Sie enthalten falsche und irreführende Beschreibungen der möglichen Folgen der Verwendung von Werbeblockern
     - Sie setzen Besucher:innen dem Risiko von Malware aus — wenn nicht gesperrte Werbung aus dubiosen Quellen stammt
+    - Sie verletzen die Privatsphäre der Nutzer oder beeinträchtigen sie
 - Es werden keine Werbeblocker-Erkennungsmeldungen blockiert, die mindestens eines der folgenden Kriterien erfüllen:
     - Sie ermöglichen die Nutzung der Website und überlagern nicht die große Menge an Inhalten
     - Sie bieten eine Alternative zum Deaktivieren eines Werbeblockers, da diese Alternative weder die Privatsphäre noch die Sicherheit der Nutzer:innen gefährdet
-    - Sie ermöglichen den Zugang zum Inhalt der Website oder bieten einen praktikablen Gegenwert, der die Privatsphäre oder Sicherheit der Nutzer:innen nicht gefährdet
+    - Sie ermöglichen den Zugang zum Inhalt der Website
     - Einige ältere Regeln können weiterhin Meldungen blockieren, die eines oder mehrere dieser Kriterien erfüllen. Wenn solche Regeln identifiziert werden, werden sie gemäß dieser Richtlinie behandelt
 - Mining-Pools werden nicht blockiert, wenn sie öffentlich sind und nicht ausschließlich zu böswilligen Zwecken genutzt werden
 
@@ -157,50 +166,48 @@ Zur besseren Anpassung sind die Belästigungsfilter nach ihrem Zweck unterteilt:
 
 #### AdGuard Cookie-Hinweise-Filter
 
-Dieser Filter wurde entwickelt, um sowohl Cookie-Hinweise als auch Anfragen von Cookie-Verwaltungsplattformen (CMPs) zu sperren. Für Cookie-Hinweise und CMPs können verschiedene Methoden angewandt werden. In den meisten Fällen reicht es aus, die entsprechenden Skripte auszublenden oder zu sperren. Wenn jedoch die Funktionalität der Website und die Anzeige von Inhalten Dritter die Zustimmung zu Cookies erfordern, werden die folgenden Methoden angewandt:
+Dieser Filter wurde entwickelt, um sowohl Cookie-Hinweise als auch Anfragen von Cookie-Verwaltungsplattformen (CMPs) zu sperren. Je nachdem, wie eine Website ihren Zustimmungsmechanismus implementiert, können unterschiedliche Methoden übernommen werden.
 
-- Scriptlets werden verwendet, um die Zustimmungsanfrage zu umgehen (praktisch nicht anwendbar auf Websites mit Beschränkungen für das Laden von Inhalten Dritter, bis eine Entscheidung getroffen wurde)
-- Setzen eines Cookies oder Schlüssels im lokalen Speicher der Website, so dass das Skript davon ausgeht, dass eine Wahl getroffen ist
-- Simulation von Benutzeraktionen mit einer Regel, die eine bestimmte Schaltfläche anklickt und deren Ausführung 10 Sekunden nach dem Laden unterbricht. Es bestehen zwei Möglichkeiten:
-    - Ablehnen (mit Ausnahme von funktionalen Cookies — je nach CMP-System) — die bevorzugte Option, da das Risiko, zusätzliche Analysetools zu laden, geringer ist
-    - Akzeptieren — diese Option wird als letztes Mittel verwendet, wenn andere Methoden fehlschlagen. In diesem Fall wird die Seite zusätzlich auf die Verwendung von Analysetools überprüft, die dann durch den **AdGuard Tracking-Schutzfilter** gesperrt werden
+In den meisten Fällen reicht es aus, die entsprechenden Skripte einfach zu verbergen oder zu blockieren. Wenn jedoch eine Website eine Cookie-Entscheidung erfordert, damit bestimmte Funktionen oder Inhalte von Drittanbietern funktionieren, verarbeitet der Filter die Anfrage automatisch mithilfe alternativer Methoden.
+
+Soweit möglich, werden nicht unbedingt erforderliche Cookies standardmäßig abgelehnt. Sollte dies technisch nicht möglich sein und eine Einwilligung erforderlich sein, damit die Website ordnungsgemäß funktioniert, wird die Website zusätzlich auf Analyse- und Tracking-Technologien überprüft, die dann durch den **AdGuard Tracking-Schutzfilter** blockiert werden.
 
 **Beschränkungen und Ausnahmen**
 
-In einigen Fällen wird die Entscheidung, Regeln hinzuzufügen, von den Filterentwicklern selbst getroffen. Meistens dann, wenn die bei der Simulation von Aktionen getroffene Wahl die Funktionalität der Website beeinträchtigen würde (z. B. könnte die Verlaufsfunktion nicht funktionieren oder die Benutzereinstellungen würden auf einer solchen Website nicht gespeichert).
+In einigen Fällen wird die Entscheidung, Regeln hinzuzufügen, von Filterentwicklern eigenständig getroffen; meist dann, wenn die bei der Simulation von Aktionen getroffene Wahl die Funktionalität der Website beeinträchtigen würde (zum Beispiel funktioniert der Verlauf möglicherweise nicht oder Benutzereinstellungen werden auf einer solchen Website nicht gespeichert).
 
 #### AdGuard Pop-up-Filter
 
 Dies ist ein Filter, der verschiedene Pop-ups auf Seiten blockiert, die für die normale Nutzung der Website nicht notwendig sind. Dazu gehören unter anderem folgende Pop-ups:
 
-- Anfragen für die Genehmigung zum Empfang von Push-Benachrichtigungen
+- Anfragen zur Erlaubnis, Push-Benachrichtigungen zu empfangen
 - Pop-ups und Formulare zum Abonnieren von Nachrichten, Werbeaktionen und verschiedenen Ereignissen, einschließlich der Kanäle von Drittanbietern, über die sie empfangen werden können (z. B. Google News, Telegram)
 - Pop-ups, die die Privatsphäre verletzen (nach Ermessen der Filterentwickler:innen) und die Nutzer:innen auffordern, den Werbeblocker zu deaktivieren
 - Andere Arten von Pop-ups, die den Benutzer:innen stören können (im Ermessen der Filterentwickler:innen)
 
 **Beschränkungen und Ausnahmen**
 
-- Push-Benachrichtigungen werden nur auf Websites gesperrt, auf denen sie nicht für praktische Zwecke verwendet werden. Beispielsweise werden solche Benachrichtigungen in E-Mail-Webclients oder Tools, die zu Arbeitszwecken verwendet werden, nicht gesperrt
-- Einige Pop-ups, die nicht in die oben beschriebenen Kategorien fallen, aber dennoch die Benutzerfreundlichkeit beeinträchtigen, können ebenfalls blockiert werden. Zum Beispiel Aufforderungen zur Registrierung auf einer Website oder Pop-ups, in denen die Funktionen der Website vorgestellt werden. Die Entscheidung wird von den Filterentwickler:innen getroffen
-- Maßnahmen für den Zugang zu Inhalten, bei denen der Nutzer für den Zugang zum Inhalt bezahlen muss, dürfen nicht umgangen werden
+- Push-Benachrichtigungen werden nur auf Websites blockiert, auf denen sie keinen praktischen Nutzen haben. For example, in email web clients or tools used for work purposes, such notifications will not be blocked
+- Einige Pop-ups, die nicht in die oben beschriebenen Kategorien fallen, aber dennoch die Benutzerfreundlichkeit beeinträchtigen, können ebenfalls blockiert werden. Zum Beispiel Aufforderungen zur Registrierung auf einer Website oder Pop-ups, in denen die Funktionen der Website vorgestellt werden. Die Entscheidung wird von den Filterentwicklern getroffen
+- Content access measures that ask the user to pay to access the content must not be circumvented
 
 #### AdGuard-Filter gegen Mobile-App-Banner
 
-Dieser Filter blockiert Banner und Pop-ups, die Besucher:innen zur Installation mobiler Apps auffordern.
+Dieser Filter blockiert Banner und Pop-ups, die Besucher zur Installation mobiler Apps auffordern.
 
 **Beschränkungen und Ausnahmen**
 
-Banner in Website-Headern oder Website-Menüs werden nicht blockiert, wenn sie nicht animiert sind und keinen wesentlichen Teil der Nutzfläche einnehmen. Die Entscheidung, ob ein Banner in der Fußzeile blockiert werden soll, wird von den Filterentwickler:innen von Fall zu Fall getroffen. In der Regel heben sich Banner in der Fußzeile nicht von anderen Elementen ab und sind nicht störend.
+Banner in Website-Headern oder Website-Menüs werden nicht blockiert, wenn sie nicht animiert sind und keinen wesentlichen Teil der Nutzfläche einnehmen. Befindet sich ein Banner im Footer, wird die Entscheidung von den Filterentwicklern von Fall zu Fall getroffen. In der Regel heben sich die Banner im Footer nicht von anderen Elementen ab und sind nicht ablenkend.
 
 #### AdGuard Widgets-Filter
 
 Dies ist ein Filter, der verschiedene Widgets blockiert, die für das Funktionieren der Website oder die Interaktion mit ihr nicht unbedingt erforderlich sind:
 
-- Widgets für Inhaltsempfehlungen — verwandte Artikel, ähnliche Websites, verschiedene personalisierte Empfehlungen
-- Chat-Widgets, die nicht in den Inhalt integriert sind und nicht der Hauptinhalt der Seite sind
+- Widgets for content recommendations — related articles, similar websites, various personalized recommendations
+- Chat widgets that are not integrated with the content and are not the main content of the page
 - Marketing-Widgets:
-    - Chats für die Kommunikation mit Assistenten oder Bots
-    - Widgets mit Produktempfehlungen, die den Nutzer:innen angezeigt werden
+    - Chats for communication with assistants or bots
+    - Widgets with product recommendations that are shown to the user
     - Formulare für Rückrufe
 - Andere Widgets, die keiner eigenen Kategorie zugeordnet sind, aber die Seite optisch unübersichtlich machen können: Wetter-Widgets, Wechselkurse, Stellenanzeigen und Spenden
 
@@ -210,72 +217,72 @@ Was wird nicht blockiert?
 
 - Widgets, die in engem Zusammenhang mit dem Inhalt der Seite stehen, z. B. Kommentarbereiche, Live-Chat-Streams, mit Ausnahme von unmoderierten Chats auf Websites mit inoffiziellen Streams, die oft mit Spam und ähnlichen Inhalten gefüllt sind
 - Widgets für Eigenwerbung und standortspezifische Werbemaßnahmen
-- Spenden-Widgets, außer in den Fällen, in denen sie einen großen Teil der Seite einnehmen und sich deutlich vom Inhalt abheben. Die Entscheidung über die Blockierung wird von den Filterentwickler:innen getroffen
+- Donation widgets, except the cases where they occupy a significant portion of the page and stand out prominently against the content. The decision to block is made by filter developers
 
 #### AdGuard-Filter gegen andere Belästigungen
 
-Dieser Filter wurde entwickelt, um störende Elemente zu blockieren, die in anderen Filtern nicht enthalten sind, und um verschiedene Optimierungen vorzunehmen. Er wird für folgende Zwecke benötigt:
+This filter is designed to block annoying elements that are not included in other filters, as well as to apply various tweaks. It’s purpose is to:
 
-- Sperren von Eigenwerbung auf Websites (jede Art von Werbung für Waren oder Dienstleistungen, die dem Eigentümer der Website gehören, ohne dass er eine kommerzielle Vergütung von einem Dritten erhält), wenn sie als störendes Element empfunden wird
-- Sperren von störenden Elementen, die nicht in anderen Kategorien enthalten sind
-- Entsperren von Aktionen auf der Seite, wie z. B. Öffnen des Kontextmenüs, Auswählen und Kopieren von Text, wenn diese gesperrt sind
-- Beschleunigung von Countdown-Timern beim Laden von Dateien von Websites, wenn die Prüfung nicht vom Server gesteuert wird oder nicht behindert wird
-- Anwendung verschiedener Regeln, die für Filterentwickler:innen nützlich sein können, zum Beispiel das Sperren der Web-Debugger-Erkennung
+- Block self-promotion of websites (any type of advertising promoting goods or services owned by the site owner, without receiving commercial compensation from a third party), if it is considered an annoying element
+- Block annoying elements that are not included in other categories
+- Unblock actions on the page, such as opening the context menu, selecting and copying text, if they are blocked
+- Speed up countdown timers when loading files from websites, if the check is not controlled by the server or is not hindered
+- Apply various rules that may be useful for filter developers. For example, blocking web debugger detection
 
 **Beschränkungen und Ausnahmen**
 
-Dieser Filter kann Regeln enthalten, die nicht für alle Benutzer:innen geeignet sind. Manchmal ist es empfehlenswert, diesen Filter zu deaktivieren. Die Entscheidung, diesem Filter Regeln hinzuzufügen, wird von den Filterentwickler:innen für jede einzelne Regel getroffen.
+This filter may contain rules that are not suitable for all users. Sometimes it is recommended to disable this filter. Die Entscheidung, diesem Filter Regeln hinzuzufügen, wird von den Entwicklern des Filters auf der Grundlage der einzelnen Regeln getroffen.
 
 ## Social-Media-Filter
 
 ### Filter
 
-AdGuard Social Media-Filter umfassen:
+AdGuard Social Media filters include:
 
-- AdGuard Social-Media-Filter
+- AdGuard Social Media filter
 
 ### Der Zweck dieser Filter
 
-Dieser Filter blockiert Widgets für soziale Medien auf Websites von Drittanbietern, z. B. „Gefällt mir“- und „Teilen“-Schaltflächen, Gruppen-Widgets, Empfehlungen und ähnliche Widgets.
+This filter will block social media widgets on third-party websites, such as “Like” and “Share” buttons, group widgets, recommendations, and similar widgets.
 
 ### Beschränkungen und Ausnahmen
 
-Widgets, die zur Funktionalität oder zum Inhalt der Website gehören, wie z. B. Kommentare, eingebettete Beiträge, Umfragen sowie Widgets für die Anmeldung bei sozialen Medien, werden nicht gesperrt. Auch Links zu den Social-Media-Seiten der Website werden nicht gesperrt.
+Widgets that are part of the website’s functionality or content, such as comments, embedded posts, polls, as well as social media login widgets, are not blocked. Links to the website’s social media pages are also not blocked.
 
 ## Sonstiges
 
-Diese Gruppe enthält Filter, die zum Blockieren von Werbung nicht unbedingt erforderlich sind.
+This group contains filters that are not essential for blocking advertisements.
 
 ### Begriffe
 
-**Kontextbezogene Werbung** ist eine Art der Internetwerbung, bei der die Werbung auf der Grundlage des Inhalts, der ausgewählten Zielgruppe, des Standorts, der Zeit oder eines anderen Kontexts von Internetseiten angezeigt wird.
+**Contextual advertising** is a type of internet advertising where the advertisement is displayed based on the content, selected audience, location, time, or other context of internet pages.
 
-**Suchwerbung** ist eine Unterklasse der kontextbezogenen Werbung, bei der Anzeigen auf Grundlage der Suchanfrage der Besucher:innen angezeigt werden.
+**Search advertising** is a subclass of contextual advertising where ads are displayed based on the visitor's search query.
 
-**Eigenwerbung von Websites** bezieht sich auf die Banner einer Website, die für Waren und Dienstleistungen werben, die dem Eigentümer der Website gehören und für die er keine Vergütung von Dritten erhält.
+**Self-promotion of websites** refers to the banners of a website promoting goods and services owned by the site owner, for which they do not receive compensation from third parties.
 
-Weitere Einzelheiten zu diesen Arten von Werbung finden Sie im [Artikel über Suchanzeigen](https://adguard.com/kb/general/ad-filtering/search-ads/).
+For more details on these types of advertising, refer to the [article on search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
 ### Filter
 
-- Filter zum Anzeigen von nützlicher Werbung
+- Filter unblocking search ads and self-promotion
 - AdGuard DNS-Filter
 - AdGuard Experimenteller Filter
 
 ### Der Zweck dieser Filter
 
-#### Filter zum Anzeigen von nützlicher Werbung
+#### Filter unblocking search ads and self-promotion
 
 Dieser Filter entsperrt:
 
-- Kontextbezogene Werbung in den Suchergebnissen bei der Nutzung von Suchmaschinen (wie Google, Bing, Yandex, DuckDuckGo)
-- Eigenwerbung von Websites
+- Contextual advertising in search results when using search engines (such as Google, Bing, Yandex, DuckDuckGo)
+- Self-promotion of websites
 
 **Beschränkungen und Ausnahmen**
 
-- Suchwerbung wird nur dann freigegeben, wenn sie der Suchanfrage entspricht, da sie kontextbezogen ist. Andernfalls bleibt die Werbung gesperrt
-- Eigenwerbung wird nur dann freigeschaltet, wenn sie mit den Filterrichtlinien übereinstimmt. Eine Anfrage zum Entsperren kann von Filterentwickler:innen abgelehnt werden
-- Andere Werbung wird nicht entsperrt
+- Search advertising is unblocked only if it corresponds to the user’s search query, as it is contextual. Otherwise, the advertising remains blocked
+- Self-promotion is unblocked only if it complies with the filter policy. A request for unblocking may be rejected by filter developers
+- Any other advertising will not be unblocked
 
 #### AdGuard DNS-Filter
 

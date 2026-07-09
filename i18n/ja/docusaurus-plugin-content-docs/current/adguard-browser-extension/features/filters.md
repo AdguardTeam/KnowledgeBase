@@ -1,6 +1,6 @@
 ---
 title: フィルタ
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 :::info
@@ -29,6 +29,8 @@ sidebar_position: 1
 
 ![Add a custom filter \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
+Custom filters update independently, so your filtering remains effective and current without requiring extension updates.
+
 ## ユーザールール {#user-rules}
 
 「ユーザールール」は、広告ブロック機能のカスタマイズに役立つもう1つのツールです。
@@ -49,7 +51,7 @@ sidebar_position: 1
 
 ![Allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-「ホワイトリスト」の動作を逆にすることもできます。つまり、リストに追加されたウェブサイト以外で広告ブロックされなくなる、といった動作になります。 そうするには、「ホワイトリストを逆転する」オプションを有効にしてください。
+_Allowlist_ can also be inverted: you can unblock ads everywhere except on the websites added to this list. To do that, activate the _Invert Allowlist_ option. Before it turns on, a confirmation dialog will appear to prevent accidental activation and explain what will happen.
 
 ![Invert allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 

@@ -76,3 +76,37 @@ sidebar_position: 3
 1. 使用电子邮件地址或社交媒体账户激活许可证。
 
     ![登录屏幕 *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
+
+### 在 Mac 版的 AdGuard Mini 激活许可证
+
+1. 点击菜单栏中的 AdGuard Mini 图标。
+
+    ![菜单栏中的 AdGuard Mini](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
+
+2. 点击设置图标。
+
+    ![设置图标 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
+
+3. 转到「*许可证*」。
+
+    ![转到许可证](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
+
+4. 打开右上角的菜单 (⋮)，点击「*已经购买？*」。
+
+    ![Click already purchased](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
+
+5. 您将看到以下可用的激活选项：
+
+    ![激活选项](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
+
+    - **登录**
+
+      登录 AdGuard 账号，账号中含有有效的许可证。
+
+    - **从 App Store 恢复**
+
+      使用您之前通过 App Store 购买的许可证。
+
+    - **输入激活码**
+
+      输入您的激活码。

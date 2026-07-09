@@ -57,6 +57,10 @@ Redirects secure DNS requests to a local DNS proxy, if there is one available.
 
 By setting `true`, you enable HTTPS certificate revocation checking.
 
+#### `network.http.compress.body`
+
+Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering engine, will compress the HTTP response body before sending it with the original response algorithm (if supported) or with the default fallback algorithm (GZip). Responses from BrowserApi will also be encoded if this option is enabled.
+
 #### `network.tcp.keepalive.enabled`
 
 Periodically sends TCP packets over an idle connection to ensure that it remains active and to renew NAT timeouts.
@@ -80,6 +84,12 @@ Verifies the authenticity of all certificates for the domain based on Chrome Cer
 #### `network.https.filter.http3.enabled`
 
 By setting `true`, you allow AdGuard to filter traffic sent over HTTP/3, the latest version of the HTTP protocol based on QUIC.
+
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
 
 #### `network.filtering.localnetwork`
 
@@ -158,6 +168,16 @@ Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection.
 #### `dns.proxy.block.encrypted.client.hello.response`
 
 Removes the Encrypted Client Hello parameters from responses.
+
+#### `dns.proxy.private.relay.sequoia.workaround.enabled`
+
+Blocks macOS Private Relay domains if the user has a firewall enabled, which in turn disables the *Private Relay* feature.
+
+Enabling this setting is useful in the following scenario: when macOS Private Relay is active, filtering cannot function properly and must be disabled. In macOS versions up to 14, AdGuard could automatically disable Private Relay when Protection was enabled. However, starting with macOS 15, this is no longer possible if a firewall is active. By turning on this setting, you can disable Private Relay even when the firewall is enabled, overcoming the previous limitation.
+
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Secures DNS proxy connections with a hybrid post-quantum key exchange, combining the classical X25519 algorithm with the ML-KEM-768 post-quantum KEM. Applies only to DoH, DoT, and DoQ upstreams.
 
 ### Stealth Mode settings
 

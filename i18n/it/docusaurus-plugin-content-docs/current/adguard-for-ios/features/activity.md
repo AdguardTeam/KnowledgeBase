@@ -11,7 +11,7 @@ Questo articolo riguarda AdGuard per iOS, un blocco annunci multifunzionale che 
 
 La schermata _Attività_ è il "fulcro informativo" della suite di protezione DNS di AdGuard. Puoi passare rapidamente a esso toccando la terza icona nella barra inferiore. N.B. questa schermata è visualizzata soltanto quando la Protezione DNS è abilitata.
 
-![Schermata attività \*mobile\_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
+![Schermata attività \*mobile_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
 
 Qui, AdGuard mostra le statistiche sulle richieste DNS del dispositivo, come il numero totale, il numero di richieste bloccate e di dati salvati bloccandole. AdGuard può mostrare le statistiche per un giorno, una settimana, un mese, o in totale.
 
@@ -25,7 +25,7 @@ AdGuard non invia queste informazioni da alcuna parte. Sono locali al 100% e non
 
 Tocca su qualsiasi richiesta per visualizzare ulteriori dettagli. Saranno inoltre presenti dei pulsanti per aggiungere la richiesta alla Lista di Blocco/Allowlist, in un solo tocco.
 
-![Dettagli richiesta \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
+![Dettagli richiesta \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
 
 Sopra al feed delle attività, sono presenti le aziende _Più attive_ e _Più bloccate_. Tocca ciascuna di esse per visualizzare i dati, in base alle ultime 1500 richieste.
 

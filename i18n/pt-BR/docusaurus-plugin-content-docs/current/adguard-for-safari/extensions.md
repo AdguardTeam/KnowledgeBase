@@ -21,6 +21,7 @@ Para bloquear anúncios, rastreadores e incômodos em sites, o AdGuard usa regra
 - AdGuard Privacy
 - AdGuard Social
 - AdGuard Security
+- AdGuard Custom
 - AdGuard Other
 
 Cada extensão de bloqueio de conteúdo pode incluir até 150.000 regras de filtragem ativas. O número de regras na maioria dos grupos de filtros não ultrapassa 150.000. No entanto, se você ativar muitos filtros específicos de idioma ou personalizados, poderá exceder o limite. Nesses casos, as regras aleatórias que estiverem acima do limite serão automaticamente desativadas, o que pode levar a bloqueios incorretos. **É altamente recomendável ativar apenas os filtros de que você mais precisa**.
@@ -49,13 +50,19 @@ Regras de usuário e regras de lista de permissões estão incluídas em todas a
 
 ## AdGuard para Safari
 
-*AdGuard para Safari* ativa o ícone do AdGuard próximo à barra de pesquisa. Pode ser útil se você desejar configurar rapidamente a proteção em um site específico ou bloquear anúncios manualmente. Ele também contém regras avançadas que não são convertidas para o formato suportado pelo Safari. Isso inclui regras CSS, seletores CSS e scriptlets que permitem ao AdGuard bloquear anúncios complexos, como no YouTube, por exemplo.
+*AdGuard para Safari* ativa o ícone do AdGuard próximo à barra de pesquisa. Pode ser útil se você desejar configurar rapidamente a proteção em um site específico ou bloquear anúncios manualmente. Ele também contém regras avançadas que não são convertidas para o formato compatível com o Safari. Isso inclui [regras CSS](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [seletores CSS estendidos](/general/ad-filtering/create-own-filters#extended-css-selectors) e [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), que permitem ao AdGuard bloquear anúncios complexos, como aqueles do YouTube.
 
 ## Como gerenciar as extensões do Safari
 
-1. Abra o Safari e clique em *Safari* no canto superior esquerdo da tela para expandir o menu. ![Configurações do Safari *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
+1. Abra o Safari e clique em *Safari* no canto superior esquerdo da tela para expandir o menu.
+
+    ![Configurações do Safari *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
+
 1. Clique em *Configurações...*
-1. Selecione *Extensões*. ![Aba Extensões](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
+
+1. Selecione *Extensões*.
+
+    ![Aba Extensões](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
 ## Por que o AdGuard para Safari requer permissões
 

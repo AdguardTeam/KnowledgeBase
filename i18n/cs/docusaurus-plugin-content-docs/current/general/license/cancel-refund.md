@@ -7,13 +7,13 @@ sidebar_position: 5
 
 Předplatné lze zrušit ve vašem AdGuard účtu. Pro zrušení předplatného:
 
- 1. Přejděte do [AdGuard účtu](https://my.adguard.com/).
+ 1. Přejděte do [AdGuard účtu](https://adguardaccount.com).
  1. Vyberte *Licence*.
  1. Klikněte na *Zrušit předplatné* pod předplatným, které již nepotřebujete. ![Zrušit](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
 
  Zrušené předplatné bude platné do data vypršení jeho platnosti.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 Předplatné zakoupené v App Store lze spravovat v účtu App Store nebo v nastavení zařízení.
 

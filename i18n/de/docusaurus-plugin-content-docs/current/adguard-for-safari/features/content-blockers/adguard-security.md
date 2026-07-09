@@ -1,5 +1,5 @@
 ---
-title: AdGuard Security (Sicherheit)
+title: AdGuard Sicherheit
 sidebar_position: 5
 ---
 

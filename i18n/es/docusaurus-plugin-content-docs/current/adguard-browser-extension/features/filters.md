@@ -1,11 +1,11 @@
 ---
 title: Filtros
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 :::info
 
-Este artículo trata sobre la extensión del navegador de AdGuard, que protege solo tu navegador. Para proteger todo su dispositivo, [descarca la aplicación AdGuard](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre la extensión de navegador AdGuard, que protege solo tu navegador. Para proteger todo su dispositivo, [descarca la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -29,6 +29,8 @@ Para agregar un filtro, simplemente haz clic en _Agregar filtro personalizado_, 
 
 ![Agregar un filtro personalizado \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
+Custom filters update independently, so your filtering remains effective and current without requiring extension updates.
+
 ## Reglas de usuario {#user-rules}
 
 _Reglas de usuario_ es otra herramienta que te ayuda a personalizar el bloqueo de anuncios.
@@ -49,7 +51,7 @@ La _lista de permitidos_ se utiliza para excluir ciertos sitios web del filtrado
 
 ![Lista de permitidos \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-La _lista de permitidos_ también se puede invertir: puedes desbloquear anuncios en todas partes excepto en los sitios web agregados a esta lista. Para ello, activa la opción _Invertir lista de permitidos_.
+_Allowlist_ can also be inverted: you can unblock ads everywhere except on the websites added to this list. To do that, activate the _Invert Allowlist_ option. Before it turns on, a confirmation dialog will appear to prevent accidental activation and explain what will happen.
 
 ![Invertir lista de permitidos \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 

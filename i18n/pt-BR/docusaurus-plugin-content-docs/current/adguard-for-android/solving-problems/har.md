@@ -9,7 +9,7 @@ Este artigo é sobre o AdGuard para Android, um bloqueador de anúncios multifun
 
 :::
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Os arquivos HAR são processados de acordo com [a Política de Privacidade do AdGuard](https://adguard.com/en/privacy.html).
 
@@ -17,7 +17,7 @@ Os arquivos HAR são processados de acordo com [a Política de Privacidade do Ad
 
 ## O que são arquivos HAR?
 
-O formato HAR (arquivo HTTP) é um arquivo compactado em JSON para registrar a interação de um navegador da web com um site. As especificações do formato HAR definem dados de arquivamento para transações HTTP que um navegador usa para exportar informações detalhadas sobre as páginas da web que ele carrega. Uma descrição mais detalhada do formato de arquivo HAR e suas especificações pode ser encontrada no site [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
+O formato HAR (arquivo HTTP) é um arquivo compactado em JSON para registrar a interação de um navegador da web com um site. As especificações do formato HAR definem dados de arquivamento para transações HTTP que um navegador usa para exportar informações detalhadas sobre as páginas da web que ele carrega. More detailed description of HAR file format and its specification you can find at [softwareishard.com](https://www.softwareishard.com/blog/har-12-spec/) website.
 
 ## Como gerar arquivos HAR
 
@@ -33,7 +33,7 @@ O formato HAR (arquivo HTTP) é um arquivo compactado em JSON para registrar a i
 
 **Envie o arquivo gerado com os logs para o serviço de suporte do AdGuard.**
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Nossa equipe de suporte processará seu tíquete muito mais rápido se você especificar o número do tíquete do HelpDesk ou o número do problema do GitHub em sua mensagem.
 

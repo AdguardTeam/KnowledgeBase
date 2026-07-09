@@ -1,5 +1,5 @@
 ---
-title: AdGuard Privacy (Datenschutz)
+title: AdGuard Datenschutz
 sidebar_position: 3
 ---
 

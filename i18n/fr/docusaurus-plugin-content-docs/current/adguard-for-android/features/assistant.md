@@ -1,84 +1,84 @@
 ---
 title: Assistant
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
+Cet article concerne AdGuard pour Android, un bloqueur de publicité multifonctionnel qui protège votre appareil au niveau système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Assistant is a handy tool to quickly change app or website settings and view statistics without opening the AdGuard UI.
+Assistant est un outil pratique pour modifier rapidement les paramètres d'une application ou d'un site Web et afficher les statistiques sans ouvrir l'interface utilisateur AdGuard.
 
-### How to access Assistant
+### Comment accéder à l'Assistant
 
-1. On your Android device, swipe down from the top of the screen to open the notification shade.
-2. Find and **expand** the AdGuard notification.
+1. Sur votre appareil Android, glissez vers le bas depuis le haut de l'écran pour ouvrir le volet de notification.
+2. Trouvez et **élargissez** la notification AdGuard.
 
-![Expand AdGuard notification in the notification shade \*mobile](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
+![Élargissez la notification AdGuard dans la zone de notification \*mobile](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
 
-1. Tap _Assistant_.
+1. Appuyez sur _Assistant_.
 
-![Tap Assistant \*mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
+![Appuyez sur l'Assistant \*mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
 
-### How to use Assistant
+### Comment utiliser l'Assistant
 
-When you open Assistant, you will see two tabs: **Apps** and **Websites**. Each of them contains a list of the recently used apps and websites respectively.
+Lorsque vous ouvrez Assistant, vous verrez deux onglets : **Applications** et **Sites Web**. Chacun d'eux contient une liste des applications et des sites Web récemment utilisés, respectivement.
 
-![Assistant main \*mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
+![Page principale de l'Assistant \*mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
 
-### Apps tab
+### Onglet applications
 
-After you select an app (**let's take Chrome as an example**), you'll get a few options of what you can do.
+Après avoir sélectionné une application (**prenons Chrome comme exemple**), vous obtiendrez quelques options sur ce que vous pouvez faire.
 
-![Assistant Chrome menu \*mobile\_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Menu de l'assistant Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
-#### Recent activity
+#### Activité récente
 
-You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests made by Chrome.
+Vous serez dirigé vers l'application AdGuard, où vous verrez des informations détaillées sur les dernières 10 000 requêtes effectuées par Chrome.
 
-![App recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![Activité récente de l'application \*mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
 
-#### App statistics
+#### Statistiques de l'application
 
-You'll be taken to the AdGuard app, where you'll see detailed statistics about Chrome:
+Vous serez dirigé vers l'application AdGuard, où vous verrez des statistiques détaillées sur Chrome :
 
-- Number of ads and trackers blocked in Chrome
-- Data saved by blocking Chrome's ad or tracking requests
-- Companies that Chrome sends requests to
+- Nombre de publicités et de traqueurs bloqués dans Chrome
+- Données enregistrées en bloquant les requêtes de publicité ou de suivi de Chrome
+- Sociétés auxquelles Chrome envoie des requêtes
 
-#### App management
+#### Gestion des applications
 
-You'll be taken to the AdGuard app screen where you can disable AdGuard protection for the app.
+Vous serez dirigé vers l'écran de l'application AdGuard où vous pouvez désactiver la protection AdGuard pour l'application.
 
-#### Firewall settings
+#### Paramètres du pare-feu
 
-You'll be taken to the AdGuard screen where you can change Firewall settings for the app, meaning you can manage the app's Internet access.
+Vous serez dirigé vers l'écran AdGuard où vous pouvez modifier les paramètres du Pare-feu pour l'application, ce qui signifie que vous pouvez gérer l'accès à Internet de l'application.
 
-### Websites tab
+### Onglet sites Web
 
-![Assistant websites tab \*mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
+![Onglet Sites Web de l'assistant \*mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
 
-Select a website (**we use google.com here purely as an example**) and you'll see few options of what you can do.
+Sélectionnez un site Web (**nous utilisons google.com ici uniquement comme exemple**) et vous verrez quelques options sur ce que vous pouvez faire.
 
 ![Assistant google.com info \*mobile](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
 
-#### Add to allowlist
+#### Ajouter à la liste d’autorisation
 
-Tapping this option will instantly add `google.com` to allowlist, and AdGuard will no longer filter it (meaning ads and trackers won't be blocked for the website).
+L'activation de cette option ajoutera instantanément `google.com` à la liste blanche, et AdGuard ne filtrera plus ce site Web (c'est-à-dire que les publicités et les traqueurs ne seront plus bloqués pour le site Web).
 
-#### Recent activity
+#### Activité récente
 
-You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests to google.com.
+Vous serez dirigé vers l'application AdGuard, où vous verrez des informations détaillées sur les dernières 10 000 requêtes à google.com.
 
-![website recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+![Activité récente du site Web \*mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
 
-#### Website statistics
+#### Statistiques du site Web
 
-You'll be taken to the AdGuard app, where you'll see detailed statistics about google.com:
+Vous serez dirigé vers l'application AdGuard, où vous verrez des statistiques détaillées sur google.com :
 
-- Number of blocked ad and tracking requests to google.com
-- Data saved by blocking ad and tracking requests to google.com
-- Apps that send requests to google.com
-- Information about google.com's subdomains
+- Nombre de publicités et de requêtes de suivi bloquées vers google.com
+- Données enregistrées lors du blocage des annonces et des requêtes de suivi vers google.com
+- Applications qui envoient des requêtes à google.com
+- Informations sur les sous-domaines de google.com

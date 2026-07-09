@@ -21,4 +21,4 @@ sidebar_position: 1
 
 - 사용자 규칙 추가 — AdGuard는 해당 웹사이트에 이를 적용합니다. [나만의 사용자 규칙을 만드는 방법 알아보기](/general/ad-filtering/create-own-filters)
 
-![광고 차단 \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
+![광고 차단 \*mobile_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)

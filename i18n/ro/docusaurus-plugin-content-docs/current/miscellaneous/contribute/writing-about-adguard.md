@@ -3,8 +3,8 @@ title: Writing about AdGuard
 sidebar_position: 3
 ---
 
-If you like AdGuard and want to spread the word and share your thoughts about it on social media or on a personal blog or website, this article may interest you.
+Dacă vă place AdGuard și doriți să răspândiți vestea și să împărtășiți gândurile dvs. despre acesta pe rețelele sociale sau pe un blog personal sau site web, acest articol ar putea să vă intereseze.
 
-After sharing your experience, email [pr@adguard.com](mailto:pr@adguard.com) and include a link to your post. The authors of the most well-written reviews will receive a free AdGuard license key. It doesn't matter if your website's audience is small or large; we value every effort. Please note that your review should be around 300 to 500 words.
+După ce ați împărtășit experiența dvs., trimiteți un e-mail [pr@adguard.com](mailto:pr@adguard.com) și includeți un link către postarea dvs. Autorii celor mai bine scrise recenzii vor primi o cheie de licență gratuită AdGuard. Nu contează dacă audiența site-ului dvs. este mică sau mare; apreciem fiecare efort. Vă rugăm să rețineți că recenzia dvs. ar trebui să fie de aproximativ 300 până la 500 de cuvinte.
 
-If you are planning to make a video about AdGuard or do anything else offbeat, please let us know in advance to avoid any possible misunderstandings. The same applies if your plan includes the use of the AdGuard logo, banners, or other visual elements. The contact email address remains the same: [pr@adguard.com](mailto:pr@adguard.com).
+Dacă plănuiți să faceți un video despre AdGuard sau să faceți altceva neobișnuit, vă rugăm să ne informați din timp pentru a evita orice posibile neînțelegeri. Același lucru se aplică dacă planul dvs. include utilizarea logo-ului AdGuard, bannerelor sau altor elemente vizuale. Adresa de e-mail de contact rămâne aceeași: [pr@adguard.com](mailto:pr@adguard.com).

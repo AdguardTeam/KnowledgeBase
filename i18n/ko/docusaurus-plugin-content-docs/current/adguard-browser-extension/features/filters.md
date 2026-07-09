@@ -1,6 +1,6 @@
 ---
 title: 필터
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 :::info
@@ -29,6 +29,8 @@ sidebar_position: 1
 
 ![사용자 정의 필터 추가 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
+Custom filters update independently, so your filtering remains effective and current without requiring extension updates.
+
 ## 사용자 규칙 {#user-rules}
 
 **사용자 규칙**은 광고 차단을 맞춤 설정하는 데 도움이 되는 또 다른 도구입니다.
@@ -49,7 +51,7 @@ sidebar_position: 1
 
 ![허용 목록 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-**허용 목록**을 반대로 사용할 수도 있습니다. 이 목록에 추가된 웹사이트를 제외한 모든 곳에서 광고 차단을 해제할 수 있습니다. 이렇게 하려면 허용 목록 **반전 옵션**을 활성화합니다.
+_Allowlist_ can also be inverted: you can unblock ads everywhere except on the websites added to this list. To do that, activate the _Invert Allowlist_ option. Before it turns on, a confirmation dialog will appear to prevent accidental activation and explain what will happen.
 
 ![허용 목록 반전 \*border] (https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 

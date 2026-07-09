@@ -21,4 +21,4 @@ La protección básica bloquea eficazmente los anuncios en la mayoría de los si
 
 - Crear reglas de usuario: AdGuard las aplicará en sitios web específicos. [Aprenda a crear tus propias reglas de usuario](/general/ad-filtering/create-own-filters)
 
-![Bloqueo de publicidad \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
+![Bloqueo de publicidad \*mobile_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)

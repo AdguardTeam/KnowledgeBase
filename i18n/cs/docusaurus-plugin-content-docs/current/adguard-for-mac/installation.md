@@ -1,5 +1,5 @@
 ---
-title: 'Instalace/odinstalace'
+title: 'Instalace'
 sidebar_position: 2
 ---
 
@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 ## Požadavky na systém
 
-**Verze operačního systému:** macOS 10.15 (64 bitů) nebo vyšší
+**Verze operačního systému:** macOS 12 nebo novější
 
 **RAM:** alespoň 2 GB
 
@@ -55,6 +55,12 @@ Nyní se zobrazí rychlý průvodce instalací, kde vám bude nabídnuta konfigu
 
 A je to tady, AdGuard je na vašem Macu nainstalován!
 
+### Instalace ve starších verzích macOS
+
+Uživatelé se staršími verzemi macOS (Big Sur 11, Catalina 10.15 nebo starší) nenajdou kompatibilní verzi aplikace na webových stránkách Blokátoru reklam AdGuard — tyto verze operačního systému již nejsou v nejnovějších verzích podporovány.
+
+Stále si však můžete [stáhnout starší kompatibilní verzi](https://agrd.io/adguard_for_mac_v2-17)
+
 ## Odinstalace
 
 ### Obvyklá
@@ -72,8 +78,6 @@ Přejděte do sekce Aplikace. Vyhledejte tam AdGuard, klikněte na něj pravým 
 **Tento pokyn použijte pouze v případě, že víte, co děláte, nebo pokud vám naše služba podpory výslovně doporučila "pokročilou odinstalaci". Také nejprve proveďte všechny kroky z "obvyklé odinstalace".**
 
 1. Poté odstraňte následující soubory AdGuardu:
-    - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (složka)
-    - ~/Library/Preferences/com.adguard.mac.adguard.plist (soubor)
     - ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (složka)
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (soubor)
     - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (soubor)
@@ -83,9 +87,6 @@ Přejděte do sekce Aplikace. Vyhledejte tam AdGuard, klikněte na něj pravým 
     Za tímto účelem otevřete aplikaci Terminal, zadejte a proveďte následující příkazy:
 
     ```bash
-    sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
-    rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"
-    rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist
     rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"
     find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete
     sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist

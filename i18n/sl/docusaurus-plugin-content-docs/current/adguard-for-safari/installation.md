@@ -9,6 +9,10 @@ This article is about AdGuard for Safari, which safeguards only your Safari brow
 
 :::
 
+## System requirements
+
+Requires macOS 10.15 (Catalina). The minimum supported version of Safari is 13 or later.
+
 ## How to install AdGuard for Safari {#install}
 
 AdGuard for Safari is a free app presented on the App Store. To install it on your device, do the following.
@@ -32,26 +36,12 @@ AdGuard for Safari is a free app presented on the App Store. To install it on yo
 
     ![Extensions checked](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 
-1. To make AdGuard take effects on websites, the *Content Blockers* setting must be enabled. You can either enable for all websites or select the ones you want.
+1. For AdGuard to work on websites, the *Extensions* setting in Safari must be enabled. Open Safari → *Settings* → *Websites* → *Extensions*. If you want to enable AdGuard on every website, set *For other websites* to *Allow*.
 
-    :::note
-
-    This step is needed for iOS 9.0 and later, macOS 10.11 with Safari 10, and macOS 10.12 and later.
-
-
-:::
-
-On macOS, click *Preference* → *Websites* → *Content Blockers*. If you want to enable AdGuard on every website, turn *When visiting other websites* to *On*.
-
-![Mac Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
+![Mac Safari Content Blocker Setting](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/macos_extensions.png)
 <!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
-On iOS, go to *Settings* → *Safari* → *Content Blockers*, and set the option to *Yes*.
-
-![iOS Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
-<!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
-
-After you complete steps 1-4, AdGuard for Safari will start functioning. You can now configure its settings.
+After you complete these steps, AdGuard for Safari will start functioning. You can now configure its settings.
 
 ## How to uninstall AdGuard for Safari {#uninstall}
 

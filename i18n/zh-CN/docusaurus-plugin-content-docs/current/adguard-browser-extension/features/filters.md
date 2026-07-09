@@ -1,6 +1,6 @@
 ---
 title: 过滤器
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 :::info
@@ -21,13 +21,15 @@ sidebar_position: 1
 
 虽然其他过滤器组的功能易于理解，但一个名为「自定义」的组可能会引起额外的问题。
 
-![Custom filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
+![自定义过滤器 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
 
 在此选项卡中，用户可以添加默认情况下扩展中不存在的过滤器。 互联网上有很多[公开的过滤器](https://filterlists.com)。 除此之外，您还可以创建和添加自己的过滤器。 其实，用户可以创建任意过滤器组并按照自己喜欢的方式自定义拦截广告。
 
 要添加过滤器，只需要单击「添加自定义过滤器」，输入要添加的过滤器的 URL 或文件路径，然后单击「下一步」。
 
 ![添加自定义过滤器 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
+
+Custom filters update independently, so your filtering remains effective and current without requiring extension updates.
 
 ## 用户规则 {#user-rules}
 
@@ -49,7 +51,7 @@ sidebar_position: 1
 
 ![白名单 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-「白名单」也可以反转使用：可以在除此列表的网站之外的任何地方放行广告。 为此，请激活「颠倒白名单」选项。
+_Allowlist_ can also be inverted: you can unblock ads everywhere except on the websites added to this list. To do that, activate the _Invert Allowlist_ option. Before it turns on, a confirmation dialog will appear to prevent accidental activation and explain what will happen.
 
 ![颠倒白名单 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 

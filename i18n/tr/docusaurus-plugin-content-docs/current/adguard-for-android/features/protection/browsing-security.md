@@ -1,5 +1,5 @@
 ---
-title: Browsing security
+title: Gezinti koruması
 sidebar_position: 6
 ---
 
@@ -13,11 +13,11 @@ The Browsing security module can be accessed by tapping the _Protection_ tab (se
 
 Browsing security protects you from visiting phishing and malicious websites. Ayrıca sizi olası kötü amaçlı yazılımlara karşı uyarır.
 
-![Gezinti koruması \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
+![Gezinti koruması \*mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
 Tehlikeli bir siteyi ziyaret etmek üzereyseniz, Gezinti koruması size aşağıdaki uyarıyı gösterir:
 
-![Gezinti koruması uyarısı \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
+![Gezinti koruması uyarısı \*mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
 :::warning
 

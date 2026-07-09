@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 ## Požadavky na systém
 
-**Verze OS:** Android 7.0 nebo vyšší
+**Verze OS:** Android 9.0 nebo vyšší
 
 **RAM:** alespoň 2 GB
 

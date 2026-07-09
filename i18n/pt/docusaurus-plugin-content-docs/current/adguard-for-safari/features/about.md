@@ -1,5 +1,5 @@
 ---
-title: About
+title: Acerca de
 sidebar_position: 5
 ---
 

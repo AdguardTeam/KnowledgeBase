@@ -1,6 +1,6 @@
 ---
-title: Problems caused by multiple user profiles
-sidebar_position: 10
+title: Problémák, amelyeket több felhasználói profil okoz
+sidebar_position: 9
 ---
 
 :::info
@@ -11,7 +11,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 In this article you will find the methods on how to solve problems with AdGuard when you set up *multiple accounts* or *Restricted Profiles* on your Android devices.
 
-## Problems caused by multiple user profiles
+## Problémák, amelyeket több felhasználói profil okoz
 
 On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. This happens because AdGuard is installed for a different user profile on the device.
 
@@ -68,7 +68,7 @@ About how to manage user accounts from an Android device you can [find here](htt
 
 :::note
 
-In some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual messenger or Dual app features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
+In some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual Messenger or Dual App features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
 
 :::
 
@@ -84,8 +84,8 @@ Owners of **LG** or **Samsung** phones may also encounter a similar issue. It ca
 
 - Open **Settings**;
 - Press **Advanced**;
-- Scroll down and press **Dual messenger**;
-- Disable the **Dual messenger** for all apps;
+- Scroll down and press **Dual Messenger**;
+- Disable the **Dual Messenger** for all apps;
 - Lock the device for 5 minutes;
 - Unlock the screen and try again to create the VPN profile.
 
@@ -93,6 +93,6 @@ Owners of **LG** or **Samsung** phones may also encounter a similar issue. It ca
 
 - Open **Settings**;
 - Choose **General** tab;
-- Scroll down and press **Dual app**;
+- Scroll down and press **Dual App**;
 - Remove all apps from the list;
 - Reboot your device.

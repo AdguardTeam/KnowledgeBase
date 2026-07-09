@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article concerne AdGuard pour Android, un bloqueur de publicité multifonctionnel qui protège votre appareil au niveau système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -45,9 +45,9 @@ Here are actions that, when included in the intent, will be understood by AdGuar
 
 `enable:true` or `enable:false` enables or disables the *Use FakeDNS* setting, respectively.
 
-:::note
+::note
 
-When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automatically disabled. DNS requests won't be filtered locally.
+Lorsque le paramètre *Utiliser FakeDNS* est activé, la *Protection DNS* sera automatiquement désactivée. DNS requests won't be filtered locally.
 
 :::
 
@@ -57,7 +57,7 @@ When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automaticall
 
  `server:adguard dns` switches to AdGuard DNS server;
 
-:::note
+::note
 
 The full list of supported provider names can be found in our [known DNS providers list](https://adguard-dns.io/kb/general/dns-providers/).
 
@@ -118,7 +118,7 @@ Or you can configure remove parameters manually:
 
  `[trust]` applies for **HTTPS_CONNECT** server type only and include option **Trust any certificates**. It is necessary to set **true or false** value.
 
-:::note Example
+:::note Exemple
 
 `setting by name`: server:MyServer
 
@@ -134,16 +134,16 @@ Package name: `com.adguard.android`
 
 Class: `com.adguard.android.receiver.AutomationReceiver`
 
-:::note
+::note
 
 Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. If this function is used, remember to update to the new name.
 
 :::
 
-### Execution without notification
+### Exécution sans notification
 
-To perform a task without showing a toast, add an additional EXTRA `quiet: true`
+Pour effectuer une tâche sans afficher de toast, ajoutez un EXTRA supplémentaire `quiet: true`
 
-### Example
+### Exemple
 
-![Automation *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)
+![Automatisation *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)

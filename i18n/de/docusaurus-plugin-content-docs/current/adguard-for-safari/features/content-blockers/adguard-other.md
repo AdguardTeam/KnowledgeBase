@@ -1,5 +1,5 @@
 ---
-title: AdGuard Other (Sonstiges)
+title: AdGuard Sonstiges
 sidebar_position: 6
 ---
 

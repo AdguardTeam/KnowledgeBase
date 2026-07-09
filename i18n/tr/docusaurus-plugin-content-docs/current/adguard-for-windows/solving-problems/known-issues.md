@@ -1,6 +1,6 @@
 ---
 title: Windows için AdGuard'ın bilinen sorunları
-sidebar_position: 10
+sidebar_position: 11
 ---
 
 :::bilgi

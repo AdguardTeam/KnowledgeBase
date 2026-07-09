@@ -11,26 +11,40 @@ Wir empfehlen die Einrichtung einer Zwei-Faktor-Authentifizierung für Ihr AdGua
 
 ## So richten Sie 2FA ein
 
-1. Melden Sie sich bei Ihrem [AdGuard-Konto](https://auth.adguard.com/login.html) an und öffnen Sie den Tab „Einstellungen“:
+1. Melden Sie sich in Ihrem [AdGuard-Konto](https://auth.adguardaccount.com/login.html) an und öffnen Sie *Einstellungen*:
 
-![AdGuard Kontoeinstellungen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
+ ![AdGuard-Kontoeinstellungen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Scrollen Sie nach unten zum Abschnitt *Passwort und 2FA* und klicken Sie auf **Aktivieren**:
+1. Blättern Sie nach unten zu *Zwei-Faktor-Authentifizierung* und aktivieren Sie sie:
 
-![Die Schaltfläche „Ändern” *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
+ ![Zwei-Faktor-Authentifizierung umschalten *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. Befolgen Sie die Anweisungen auf dem Bildschirm, um eine Authentifizierungs-App zu installieren und den QR-Code zu scannen:
+1. Ein Code wird an die mit Ihrem AdGuard-Konto verbundene E-Mail-Adresse gesendet. Um 2FA zu aktivieren, geben Sie den Code ein und klicken Sie auf *Aktivieren*.
 
-![Der Verifizierungscode](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
+ ![Der Verifizierungscode *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-***Wichtig***
+Nachdem Sie die Zwei-Faktor-Authentifizierung aktiviert haben, können Sie zwischen zwei Optionen wählen:
 
-- Bewahren Sie den Sicherungscode irgendwo auf. Er wird benötigt, um Ihr Konto wiederherzustellen, falls Ihr Mobiltelefon verloren geht oder gestohlen wird
+- *Einmaliger E-Mail-Code*: Wenn Sie sich anmelden, werden Sie aufgefordert, den Code einzugeben, der Ihnen per E-Mail zugesandt wurde
+
+- *Code aus der Authentifikator-App*: Wenn Sie sich anmelden, wird ein Code aus Ihrer Authentifikator-App abgefragt
+
+![2FA-Optionen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
+
+:::note
+
+Wenn Sie die Authentifikator-App verwenden, stellen Sie sicher, dass Sie den **Einrichtungsschlüssel** an einem beliebigen Ort speichern. Es ist notwendig, Ihr Konto wiederherzustellen, falls Ihr Mobiltelefon verloren geht oder gestohlen wird.
+
+![Der Einrichtungsschlüssel in der Authentifikator-App *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
+
+:::
 
 Wenn Sie alles richtig gemacht haben, wird dies bei der nächsten Anmeldung angezeigt:
 
-![Das Ergebnis *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+![Das Ergebnis *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
 
-Verwenden Sie Ihre mobile Authentifizierungs-App, um den Code anzuzeigen und ihn einzugeben. Sie sollten jetzt angemeldet sein!
+:::note
 
-***HINWEIS***: Wenn Sie einen Authentifizierungsfehler erhalten, überprüfen Sie die Uhr (Zeit/Datum) auf Ihrem Telefon. Stellen Sie sie bei Bedarf ein, da eine nicht synchronisierte Uhr die Ursache für den Fehler sein kann.
+Wenn Sie einen Authentifizierungsfehler erhalten, überprüfen Sie die Uhr auf Ihrem Handy. Stellen Sie sie bei Bedarf ein, da eine nicht synchronisierte Uhr die Ursache für den Fehler sein kann.
+
+:::

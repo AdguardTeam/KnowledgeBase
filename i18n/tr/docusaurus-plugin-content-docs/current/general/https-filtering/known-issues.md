@@ -1,9 +1,11 @@
 ---
 title: Bilinen sorunlar
 sidebar_position: 2
+toc_min_heading_level: 2
+toc_max_heading_level: 4
 ---
 
-Last update: September 20, 2022
+Son güncelleme: 17 Eylül 2024
 
 Understanding this article may require some basic knowledge about encryption, TLS, and HTTPS.
 
@@ -30,7 +32,38 @@ All the issues known to us and the ETAs on their fixes are listed below.
 
 The most important drawback of the HTTPS filtering mechanism is that it hides the real certificate of a website. You cannot simply check its original certificate because you can only see the one issued by AdGuard.
 
-This problem is solved in [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). This browser extension helps you manage filtering directly from the browser and allows you to inspect the original certificate of any website.
+Bu sorun 2 şekilde çözülebilir:
+
+- [Tarayıcı Asistanımızı](https://adguard.com/adguard-assistant/overview.html) kullanarak. Bu tarayıcı uzantısı, filtrelemeyi doğrudan tarayıcıdan yönetmenize yardımcı olur ve herhangi bir web sitesinin orijinal sertifikasını incelemenize olanak tanır
+
+  ![Sertifika Tarayıcı Asistanı *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-browser.png)
+
+- By visiting the *Recent activity* section in AdGuard for Android or the *Filtering log* section in AdGuard for Windows and AdGuard for Mac. While in the Browser Assistant you can only see the certificate of the website, in Recent activity you can inspect the certificate of any server used in a subrequest or browser, with or without the Browser Assistant. Bu yöntemi kullanarak sertifikayı görüntülemek için aşağıdaki talimatları izleyin.
+
+#### Inspect original certificate in AdGuard for Android
+
+1. Gezinme çubuğundaki İstatistikler simgesine tıklayın.
+2. Go to *Recent activity*.
+3. İstek ayrıntılarını açmak için sertifikasını incelemek istediğiniz isteğe tıklayın.
+4. Scroll down to *Original certificate*. Daha fazla bilgi için tıklayın.
+
+![Recent activity AdGuard for Android *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-android.png)
+
+#### Inspect original certificate in AdGuard for Windows
+
+1. Go to *Settings* → *Ad Blocker* → *Filtering log*.
+2. İstek ayrıntılarını açmak için sertifikasını incelemek istediğiniz isteğe tıklayın.
+3. Under the *TLS* section, click *View website certificate*.
+
+![Windows için AdGuard filtreleme günlüğü *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-win.png)
+
+#### Inspect original certificate in AdGuard for macOS
+
+1. Dişli çark simgesine tıklayın. Açılır menüde, *Gelişmiş* → *Filtreleme günlüğü....* öğesine gidin.
+2. İstek ayrıntılarını açmak için sertifikasını incelemek istediğiniz isteğe tıklayın.
+3. *Sertifikayı görüntüle* öğesine tıklayın.
+
+![Mac için AdGuard filtreleme günlüğü *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/cert-mac.png)
 
 ### Certificate Transparency
 

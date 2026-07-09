@@ -1,6 +1,6 @@
 ---
 title: Помощник
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info
@@ -20,25 +20,25 @@ sidebar_position: 5
 
 1. Нажмите _Помощник_.
 
-![Tap Assistant \*mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
+![Нажмите «Помощник» \*mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
 
 ### Как пользоваться Помощником
 
 Открыв Помощник, вы увидите две вкладки: **Приложения** и **Сайты**. В каждой есть список недавно использованных приложений и сайтов соответственно.
 
-![Assistant main \*mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
+![Окно Помощника \*mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
 
 ### Приложения
 
 После выбора приложения (**в качестве примера возьмём Chrome**) появится несколько вариантов действий.
 
-![Помощник: меню для Chrome \*mobile\_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Помощник: меню для Chrome \*mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
 #### Недавняя активность
 
 Вы перейдёте в приложение AdGuard, где увидите подробную информацию о последних 10 тысячах запросов, сделанных Chrome.
 
-![App recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![Недавняя активность в приложении \*mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
 
 #### Статистика приложения
 
@@ -58,11 +58,11 @@ sidebar_position: 5
 
 ### Сайты
 
-![Assistant websites tab \*mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
+![Вкладка Сайты \*mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
 
 Выберите сайт (**например, google.com**), и вы увидите несколько вариантов того, что можно сделать.
 
-![Assistant google.com info \*mobile](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
+![google.com в Помощнике \*mobile](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
 
 #### Добавить в белый список
 
@@ -72,7 +72,7 @@ sidebar_position: 5
 
 Вы перейдёте в приложение AdGuard, где увидите подробную информацию о последних 10 тысячах запросов к google.com.
 
-![Недавняя активность на сайте \*mobile\_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+![Недавняя активность на сайте \*mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
 
 #### Статистика сайта
 

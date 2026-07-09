@@ -5,20 +5,18 @@ sidebar_position: 1
 
 :::info
 
-Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock).
 
 :::
 
 Existují dvě možnosti, jak aktivovat prémiové funkce v AdGuardu pro iOS:
 
-1. Zakupte předplatné. Stačí klepnout na položku **Získat prémium** kdekoli v aplikaci a postupovat podle pokynů na obrazovce. Stačí zadat heslo k Apple ID a potvrdit nákup. Můžete si vybrat mezi měsíčním, ročním a doživotním předplatným.
+1. **Zakupte předplatné v App Store** — měsíční, roční nebo doživotní. Předplatné si můžete objednat klepnutím na štítek *Premium* kdekoli v aplikaci nebo na kartě *Licence*. Pro nové uživatele je k dispozici 7denní zkušební verze zdarma.
 
-2. Použijte licenci AdGuardu (můžete ji zakoupit na [stránkách AdGuardu](https://adguard.com/license.html)). Přihlaste se ke svému osobnímu účtu AdGuard prostřednictvím aplikace: přejděte do *aplikace AdGuard → Nastavení → Licence* a tam klepněte na tlačítko **Přihlásit se**. Budete požádáni o zadání přihlašovacích údajů k osobnímu účtu AdGuard*. Pokud máte ve svém účtu platný licenční klíč, bude automaticky vybrán pro aktivaci služby Premium v aplikaci AdGuard pro iOS.
-
-Alternativně můžete pro aktivaci funkcí Premium zadat platný licenční klíč do pole pro e-mail a pole pro heslo ponechat prázdné.
+2. **Zakupte si licenci AdGuard na našich [webových stránkách](https://adguard.com/license.html).** Chcete-li ji aktivovat, otevřete aplikaci AdGuard, klepněte na *Nastavení → Licence → Přihlásit se* a zadejte stejnou e-mailovou adresu, kterou jste použili při nákupu. Aktivační kód můžete také zadat do pole e-mailu a pole pro heslo nechat prázdné. Doporučujeme však používat kombinaci e-mailu a hesla, protože je to bezpečnější možnost.
 
 :::note
 
-AdGuard Pro pro iOS (naši další aplikaci pro iOS) lze zakoupit pouze v [App Store](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264).
+AdGuard Pro pro iOS je naše další aplikace pro iOS. Lze ji zakoupit pouze v [App Store](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264).
 
 :::

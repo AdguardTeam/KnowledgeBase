@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::
 
-![Низкоуровневые настройки \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/ios/low_level_ru.jpeg)
+![Низкоуровневые настройки \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/ios/low_level_ru.jpeg)
 
 Чтобы открыть _Низкоуровневые настройки_, перейдите в _Настройки_ → _Общие_ → (включите _Расширенный режим_, если он выключен) → _Расширенные настройки_ → _Низкоуровневые настройки_.
 

@@ -1,37 +1,37 @@
 ---
-title: Search ads and self-promotion
+title: Werbung in Suchmaschinen und Eigenwerbung
 sidebar_position: 3
 ---
 
-**Disclosure.** While AdGuard provides an option to show some ads, we do not have any 'acceptable ads' program like Adblock Plus and some other ad blockers, where they take money for leaving certain ads unblocked. This isn't our way of doing business. We do not get paid for showing any of the ads, and we do not use the term 'acceptable' for a reason: the ads we might show may be, in fact, useful and not just 'acceptable'. All of this applies only to search ads and self-promotion ads.
+**Bekanntgabe.** AdGuard bietet zwar die Möglichkeit, einige Werbung anzuzeigen, aber wir haben kein Programm für „akzeptable Werbung“ wie Adblock Plus und einige andere Werbeblocker, die Geld dafür nehmen, dass sie bestimmte Werbung nicht sperren. Das ist nicht unsere Art, Geschäfte zu machen. Wir werden nicht dafür bezahlt, dass wir die Werbung zeigen, und wir verwenden den Begriff „akzeptabel“ nicht ohne Grund: Die Werbung, die wir zeigen, kann tatsächlich nützlich und nicht nur „akzeptabel“ sein. All dies gilt nur für Werbung in Suchmaschinen und Eigenwerbung.
 
-You can turn off the display of these ads at any time. Furthermore, we will explain which ads qualify for this definition.
+Sie können das Anzeigen dieser Werbung jederzeit deaktivieren. Außerdem werden wir erklären, welche Werbung unter diese Definition fällt.
 
-### Search ads
+### Werbung in Suchmaschinen
 
-Search ads are ads that you see among search query results when using online search engines, such as Google, Bing, DuckDuckGo, etc.
+Bei Suchanzeigen handelt es sich um Werbung, die bei der Verwendung von Online-Suchmaschinen wie Google, Bing, DuckDuckGo usw. zwischen den Ergebnissen einer Suchanfrage angezeigt wird.
 
-![Search ads](https://cdn.adtidy.org/content/kb/ad_blocker/general/googlead.jpg)
+![Suchanzeigen](https://cdn.adtidy.org/content/kb/ad_blocker/general/googlead.jpg)
 
-These ads are always contextual: they are targeted to match the keywords you used in the query. This helps you find exactly what you are searching for. Moreover, search ads (because they go through manual moderation) are often more relevant and helpful than the rest of the search results.
+Diese Werbung ist immer kontextbezogen: Sie ist auf die von Ihnen in der Suchanfrage verwendeten Schlüsselwörter ausgerichtet. So können Sie genau das finden, wonach Sie suchen. Außerdem sind Suchanzeigen (da sie manuell moderiert werden) oft relevanter und hilfreicher als die übrigen Suchergebnisse.
 
-Another argument in defense of search ads is that they are much less intrusive than many other ad formats.
+Ein weiteres Argument zur Verteidigung von Werbung in Suchmaschinen ist, dass sie viel weniger aufdringlich sind als viele andere Werbeformate.
 
-### What is websites' self-promotion?
+### Was ist die Eigenwerbung von Websites?
 
-In principle, when an ad on a website promotes this particular website or closely related websites, social media, and so on, such an ad is considered a self-promoting one.
+Wenn eine Werbung auf einer Website für diese spezielle Website oder eng verwandte Websites, soziale Medien usw. wirbt, gilt eine solche Werbung grundsätzlich als Eigenwerbung.
 
-![Search ads](https://cdn.adtidy.org/content/kb/ad_blocker/general/echodot.jpg)
+![Suchanzeigen](https://cdn.adtidy.org/content/kb/ad_blocker/general/echodot.jpg)
 
-Our general stance here is very similar to the EasyList policy regarding self-promotion ads. According to our [filter policy](../filter-policy), we should not block these ads; however, we should not make an exception if such an ad gets blocked by some rule 'alongside' a regular ad.
+Unsere allgemeine Haltung ist hier sehr ähnlich wie die EasyList-Politik in Bezug auf Eigenwerbung. Gemäß unserer [Filterrichtlinie](../filter-policy) sollten wir diese Anzeigen nicht sperren; wir sollten jedoch keine Ausnahme machen, wenn eine solche Anzeige durch eine Regel „neben“ einer normalen Werbung gesperrt wird.
 
-Partly, this is due to ethical reasons, but mostly because such ads are rarely too intrusive and are often useful for the visitor of the website (who is supposedly interested in this website's content).
+Dies hat zum Teil ethische Gründe, vor allem aber deshalb, weil solche Werbung selten zu aufdringlich ist und oft für den Besucher der Website (der sich wahrscheinlich für den Inhalt dieser Website interessiert) nützlich ist.
 
-By enabling 'Search ads and self-promotion', AdGuard users can unblock some of these self-promotion ads.
+Durch die Aktivierung von „Suchanzeigen und Eigenwerbung von Websites“ können Sie einige dieser Eigenwerbungsanzeigen freischalten.
 
-### What ads are on the list?
+### Welche Werbung steht auf der Liste?
 
-When you enable 'Search ads and self-promotion', search ads from the following search engines are shown:
+Wenn Sie „Suchanzeigen und Eigenwerbung von Websites“ aktivieren, wird Werbung in folgenden Suchmaschinen angezeigt:
 
 - Google
 - Yahoo
@@ -41,8 +41,8 @@ When you enable 'Search ads and self-promotion', search ads from the following s
 - DuckDuckGo
 - StartPage
 
-As well as all self-promotional ads that satisfy our filter policy.
+Sowie alle Eigenwerbung, die unserer Filterrichtlinie entspricht.
 
-### Summary
+### Zusammenfassung
 
-Allowing 'Search ads and self-promotion' is a 100% optional feature that may be helpful in some cases. If you don't like it, you can turn it off at any time. It does not, and never will, include any ad types or individual ads that do not fall into one of the two categories described above.
+Das Zulassen von „Suchanzeigen und Eigenwerbung von Websites“ ist eine optionale Funktion, die in einigen Fällen hilfreich sein kann. Wenn sie Ihnen nicht gefällt, können Sie sie jederzeit abschalten. Es enthält keine und wird auch nie irgendwelche Anzeigentypen oder einzelne Werbung enthalten, die nicht in eine der beiden oben beschriebenen Kategorien fallen.

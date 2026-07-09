@@ -1,5 +1,5 @@
 ---
-title: Advanced Settings guide
+title: Gelişmiş Ayarlar kılavuzu
 sidebar_position: 9
 ---
 
@@ -25,25 +25,25 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 #### `network.extension.exclude.domains`
 
-The listed domains will be excluded from filtering in the *Network Extension* mode. Değerleri ayırmak için virgül veya satır sonu kullanın.
+Listelenen alan adları *Ağ Uzantısı* modunda filtrelemeden hariç tutulacaktır. Değerleri ayırmak için virgül veya satır sonu kullanın.
 
 #### `network.extension.exclude.ports`
 
-The listed ports will be excluded from filtering in the *Network Extension* mode. Değerleri ayırmak için virgül veya satır sonu kullanın.
+Listelenen bağlantı noktaları *Ağ Uzantısı* modunda filtrelemeden hariç tutulacaktır. Değerleri ayırmak için virgül veya satır sonu kullanın.
 
 #### `network.extension.route.exclude`
 
-The listed routes will be excluded from filtering in the *Network Extension* mode. Set routes using an IP address or destination CIDR. Separate values with commas or line breaks.
+Listelenen yönlendirmeler *Ağ Uzantısı* modunda filtrelemeden hariç tutulacaktır. Set routes using an IP address or destination CIDR. Değerleri virgülle veya satır sonlarıyla ayırın.
 
 #### `network.extension.http.downgrade.bundleids`
 
-Here you can specify a list of applications for which the HTTP/2 protocol will be downgraded to HTTP/1.1 in the *Network Extension* filtering mode. The bundle ID should be separated by a comma or a line break.
+Here you can specify a list of applications for which the HTTP/2 protocol will be downgraded to HTTP/1.1 in the *Network Extension* filtering mode. Paket kimliği virgül veya satır sonuyla ayrılmalıdır.
 
 #### `network.extension.monterey.force.split.tunnel`
 
 Here you can prohibit AdGuard from using the "default route" which is enabled by default in the *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, as it cannot operate in unison with them.
 
-You will find more information about the problem [in this article](../icloud-private-relay).
+Sorun hakkında daha fazla bilgiyi [bu makalede](../icloud-private-relay) bulabilirsiniz.
 
 #### `network.extension.dns.redirect.exclude.bundleids`
 
@@ -80,6 +80,12 @@ Verifies the authenticity of all certificates for the domain based on Chrome Cer
 #### `network.https.filter.http3.enabled`
 
 By setting `true`, you allow AdGuard to filter traffic sent over HTTP/3, the latest version of the HTTP protocol based on QUIC.
+
+**Limitations**:
+
+- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Safari supports HTTP/3 filtering without additional configuration.
 
 #### `network.filtering.localnetwork`
 
@@ -159,15 +165,25 @@ Bağlantıyı hızlandırmak için DNS-over-HTTPS üst kaynakları için HTTP/3'
 
 Encrypted Client Hello parametrelerini yanıtlardan kaldırır.
 
+#### `dns.proxy.private.relay.sequoia.workaround.enabled`
+
+Kullanıcının bir güvenlik duvarı etkinse macOS Özel Geçişi alan adlarını engeller ve bu da *Özel Geçişi* özelliğini devre dışı bırakır.
+
+Enabling this setting is useful in the following scenario: when macOS Private Relay is active, filtering cannot function properly and must be disabled. macOS 14'e kadar olan sürümlerde, Koruma etkinleştirildiğinde AdGuard Özel Geçişi otomatik olarak devre dışı bırakabiliyordu. Ancak, macOS 15 ile birlikte, eğer bir güvenlik duvarı etkinse bu artık mümkün değil. Bu ayarı açarak, güvenlik duvarı etkinleştirildiğinde bile Özel Geçişi devre dışı bırakabilir ve önceki kısıtlamanın üstesinden gelebilirsiniz.
+
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Klasik X25519 algoritmasını ML-KEM-768 kuantum sonrası KEM ile birleştiren hibrit bir kuantum sonrası anahtar değişimiyle DNS proxy bağlantılarını güvence altına alır. Applies only to DoH, DoT, and DoQ upstreams.
+
 ### Gizlilik Modu ayarları
 
 #### `stealth.antidpi.http.split.fragment.size`
 
-HTTP istek parçalanmasının boyutunu ayarlar. Geçerli değerler: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
+HTTP istek parçalanmasının boyutunu ayarlar. Valid values: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
 
 #### `stealth.antidpi.clienthello.split.fragment.size`
 
-Bu seçenek, derin paket incelemesinden kaçınmaya yardımcı olan TCP paket parçalama boyutunu belirtir. Geçerli değerler: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
+Bu seçenek, derin paket incelemesinden kaçınmaya yardımcı olan TCP paket parçalama boyutunu belirtir. Valid values: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
 
 #### `stealth.antidpi.http.space.juggling`
 

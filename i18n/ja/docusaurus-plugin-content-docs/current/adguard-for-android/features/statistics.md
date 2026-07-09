@@ -11,7 +11,7 @@ sidebar_position: 3
 
 「統計」画面は、画面下部の左から4番目のアイコンをタップすることでアクセスできます。 この機能により、デバイス上のトラフィックで何が起こっているかの全体像を把握することが可能です。送信されているリクエストの数と送信先の企業、アップロードおよびダウンロードされているデータ通信量、ブロックされているリクエストなどを確認できます。 指定した期間（24 時間、7 日間、30 日間、または全期間）の統計を表示するように選択できます。
 
-![Statistics \*mobile\_border](https://cdn.adtidy.org/blog/new/grt11ktempFileForShare_20230614-170547.jpg)
+![Statistics \*mobile_border](https://cdn.adtidy.org/blog/new/grt11ktempFileForShare_20230614-170547.jpg)
 
 統計はさまざまなセクションに分類されます。
 
@@ -33,7 +33,7 @@ sidebar_position: 3
 
 「すべてのアプリを見る」をタップすると、広告、トラッカー、リクエストの数で並べ替えられたアプリのリストが開きます。
 
-![List of apps \*mobile\_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
+![List of apps \*mobile_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
 
 各アプリをタップすると、送信したリクエストやアクセス先のドメインや企業など、そのアプリの詳しい統計情報が表示されます。
 

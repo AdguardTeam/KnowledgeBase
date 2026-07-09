@@ -1,6 +1,6 @@
 ---
-title: Menú principal de la extensión
-sidebar_position: 4
+title: Menú principal
+sidebar_position: 1
 ---
 
 :::info
@@ -11,7 +11,7 @@ Este artículo trata sobre la extensión del navegador de AdGuard, que protege s
 
 Puedes acceder a la página principal de la extensión haciendo clic en el icono de la extensión en la barra de herramientas de tu navegador.
 
-![Menú principal \*mobile\_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Menú principal \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
 En la página principal, puedes ocultar cualquier elemento en cualquier página manualmente (se agregará una regla correspondiente a las _Reglas de usuario_), abrir el _Registro de filtrado_ para ver la información completa sobre el tráfico de tu navegador y bloquear solicitudes sobre el tráfego de tu navegador o consultar el informe de seguridad de un sitio web. Además, puedes enviar una queja sobre cualquier sitio web (por ejemplo, si quedan anuncios en la página, nuestros ingenieros de filtrado revisarán el informe y solucionarán el problema) y ver las estadísticas sobre las reglas de bloqueo aplicadas.
 

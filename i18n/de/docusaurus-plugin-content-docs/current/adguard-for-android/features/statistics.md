@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 Das Modul _Statistiken_ kann durch Tippen auf den Tab _Statistiken_ (viertes Symbol von links am unteren Rand des Bildschirms) aufgerufen werden. Mit dieser Funktion erhalten Sie einen vollständigen Überblick über den Datenverkehr auf Ihrem Gerät: wie viele Anfragen an welche Unternehmen gesendet wurden, wie viele Daten hoch- und heruntergeladen wurden, welche Anfragen blockiert wurden. Sie können wählen, ob Sie die Statistiken für den ausgewählten Zeitraum anzeigen möchten: 24 Stunden, 7 Tage, 30 Tage oder die gesamte Zeit.
 
-![Statistiken \*mobile\_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
+![Statistiken \*mobile_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
 
 Die Statistiken sind in verschiedene Abschnitte unterteilt.
 
@@ -33,7 +33,7 @@ In diesem Bereich werden die Statistiken für alle auf Ihrem Gerät installierte
 
 Tippen Sie auf _Alle Apps anzeigen_, um die Liste Ihrer Apps zu erweitern, sortiert nach der Anzahl der Werbeanzeigen, Tracker oder Anfragen.
 
-![Liste der Apps \*mobile\_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
+![Liste der Apps \*mobile_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
 
 Wenn Sie auf eine App tippen, können Sie ihre vollständige Statistik einsehen: die Anfragen, die sie sendet, und die Domains und Unternehmen, an die sie sich wendet.
 

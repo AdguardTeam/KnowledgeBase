@@ -9,7 +9,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-:::not
+:::note
 
 Günlüklerde sağlanan veriler ve/veya dosyalar [AdGuard Gizlilik Politikasına](https://adguard.com/en/privacy.html) uygun olarak işlenir.
 
@@ -17,7 +17,7 @@ Günlüklerde sağlanan veriler ve/veya dosyalar [AdGuard Gizlilik Politikasına
 
 Bu makalede, potansiyel olarak ortaya çıkabilecek karmaşık sorunları çözmek için önemli bir sorun giderme adımı olan hata ayıklama günlüklerini toplama sürecinde size rehberlik edeceğiz. Hata ayıklama günlükleri, Android için AdGuard'ın iç işleyişine ilişkin ayrıntılı bilgiler sağlar. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
 
-:::not
+:::note
 
 AdGuard gizliliğinizi korumaya kararlıdır. [Gizlilik Politikamıza](https://adguard.com/privacy/android.html) kesinlikle uyuyoruz ve kullanıcılar hakkında herhangi bir özel bilgi toplamıyoruz. Günlüklerinizi destek ekibine göndermeden önce, paylaşmak istemediğiniz ek bilgiler içerebileceğinden lütfen dosyayı inceleyin. Bu tür kişisel bilgiler içeriyorsa öncelikle onu silmenizi öneririz.
 
@@ -35,4 +35,4 @@ AdGuard gizliliğinizi korumaya kararlıdır. [Gizlilik Politikamıza](https://a
 Sorununuzun çözümünü takip etmek ve geliştiricilerle diyalog kurmakla ilgileniyorsanız, ilk üç adımı tamamladıktan sonra aşağıdaki adımları uygulamanızı tavsiye ederiz:
 
 1. Bir süre bekleyin, ardından *Gelişmiş* ekranına dönün ve *Günlükleri ve sistem bilgisini dışa aktar* aracılığıyla günlükleri dışa aktarın. Ardından, bu [talimatları](/guides/report-bugs.md) izleyerek GitHub'da bir hata bildirin.
-1. GitHub'da bir sorun oluşturduktan sonra, günlük dosyasını devteam@adguard.com adresine gönderin. Hatanın zamanını ekleyin ve sorununuzun bağlantısını veya numarasını ekleyin (başlığın yanında #sayı olarak görünür). Alternatif olarak, günlük dosyasını Google Drive'a yükleyebilir ve devteam@adguard.com adresine gönderebilirsiniz. Dosya bağlantısını GitHub sorununuza ekleyin
+1. After creating an issue on GitHub, send the log file to [devteam@adguard.com](mailto:devteam@adguard.com). Hatanın zamanını ekleyin ve sorununuzun bağlantısını veya numarasını ekleyin (başlığın yanında #sayı olarak görünür). Alternatively, you can upload the log file to Google Drive and send it to [devteam@adguard.com](mailto:devteam@adguard.com). Dosya bağlantısını GitHub sorununuza ekleyin

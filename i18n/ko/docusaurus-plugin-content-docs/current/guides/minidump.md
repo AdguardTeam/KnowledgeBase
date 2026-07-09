@@ -20,23 +20,23 @@ Minidump 파일을 생성하는 옵션은 기본적으로 비활성화되어 있
 
 BSoD 오류가 발생하지 않았더라도 이 옵션을 설정하는 것이 좋으며, 이는 일반적인 권장 사항으로 AdGuard 제품과 반드시 관련이 있는 것은 아닙니다. Minidump 파일을 자동으로 생성하려면 아래 지침을 따르세요.
 
- 1. Windows 검색 창에 *sysdm.cpl*을 입력하고 **열기**를 클릭합니다. **시스템 속성 제어판 메뉴** 창이 화면에 나타납니다.
+ 1. Type *sysdm.cpl* in the Windows search bar and click **Open**. The **System Properties Control Panel Menu** window will appear on the screen.
 
     :::tip
 
-    또는 **설정** → **시스템** → **정보** → **고급 시스템 설정**을 클릭합니다.
+    Alternatively, click **Settings** → **System** → **About** → **Advanced system settings**.
 
 
 :::
 
-    ![시스템 속성 *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
+    ![System Properties *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
 
- 1. **고급** 탭으로 이동합니다.
- 1. **시작 및 복구** 섹션에서 **설정**을 클릭합니다.
+ 1. Go to the **Advanced** tab.
+ 1. In the **Startup and Recovery** section, click **Settings**.
 
-    ![시작 및 복구 *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
+    ![Startup and Recovery *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
 
- 1. 다음 세 가지 옵션을 활성화합니다.
+ 1. Enable the following three options:
 
     - 시스템 로그에 이벤트 기록
     - 자동 재시작
@@ -54,3 +54,26 @@ Minidump 파일을 성공적으로 활성화했습니다. 이제 시스템 크�
 기본적으로 minidump 파일은 **%SystemRoot%\Minidump** 폴더에 저장됩니다. 디렉토리 위치를 원하는 대로 변경할 수 있지만, 많은 프로그램이 기본적으로 이 위치를 찾도록 설정되어 있으므로 위치를 변경하지 않는 것이 좋습니다.
 
 :::
+
+## Collecting wfpdiag.cab file
+
+Our support team may request a wfpdiag.cab file, along with a minidump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
+
+1. AdGuard 보호를 활성화합니다.
+
+1. Click *Start* and type `cmd` to open Command Prompt
+
+1. Right-click Command Prompt and choose *Run as administrator*
+
+    :::note
+
+    A wfpdiag.cab file is created in your current directory. You can change the location by typing `cd <folder_name>`.
+
+
+:::
+
+1. To start logging, enter the following command: `netsh wfp capture start`
+
+1. Visit any website to route traffic through AdGuard and log the filtering process
+
+1. To stop logging, enter `netsh wfp capture stop`

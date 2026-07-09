@@ -57,7 +57,7 @@ AdGuard 致力于保护用户的个人隐私。 我们严格遵守我们的[隐�
 
 1. 打开控制台（在开始面板中键入 `cmd`）。
 
-1. 如果您已安装适用于 Windows 的 AdGuard v7.16 或更高版本，请使用命令 `C:\"Program Files"\Adguard\Adguard.exe /trace` 运行程序，无论 Windows 位数如何。
+1. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard for Windows v7.16 or later.
 
 如果您有旧版本的 AdGuard for Windows：如您使用的是 64 位 Windows，则请使用命令 "C:\Program Files (x86)\Adguard\Adguard.exe /trace" 运行程序；如您使用的是 32 位 Windows，则请使用命令 "C:\Program Files\Adguard\Adguard.exe /trace"。
 

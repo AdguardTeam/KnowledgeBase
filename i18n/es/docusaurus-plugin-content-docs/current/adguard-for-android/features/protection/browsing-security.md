@@ -13,11 +13,11 @@ Se puede acceder al módulo de seguridad de navegación tocando la pestaña _Pro
 
 La seguridad de navegación te protege de visitar sitios web maliciosos y de phishing. También te advierte sobre posibles programas maliciosos.
 
-![Seguridad de navegación \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
+![Seguridad de navegación \*mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
 Si está a punto de visitar un sitio web peligroso, la seguridad de navegación te mostrará la siguiente advertencia:
 
-![Advertencia de seguridad de navegación \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
+![Advertencia de seguridad de navegación \*mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
 :::warning
 

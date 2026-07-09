@@ -13,11 +13,11 @@ sidebar_position: 6
 
 浏览安全功能还能保护用户免受恶意软件和钓鱼网站的侵害。 该功能还会警告用户有关潜在的恶意软件。
 
-![Browsing security \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
+![Browsing security \*mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
 如果用户要访问一个危险网站，浏览安全功能发出以下警告：
 
-![Browsing security warning \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
+![Browsing security warning \*mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
 :::warning
 

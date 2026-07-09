@@ -9,41 +9,47 @@ If you want to help translate AdGuard products, websites, and Knowledge Bases, g
 
 完了したら、[AdGuardのページ](https://crowdin.com/profile/adguard/)に移動します。 AdGuardプロジェクトが表示され、それぞれのフォルダに製品ごとの未翻訳の文字列が表示されます。
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/projects.png)
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_page.png)
 
-翻訳する言語を選択すると、利用可能な製品フォルダのリストが表示されます。
+:::note
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/languages.png)
+*AdGuard Glossary* is only used for storing and managing terms — it doesn’t need to be translated.
 
-それぞれのフォルダを選択することで、お好みの製品の翻訳を開始することができます。 [AdGuard Websitesプロジェクトで、どのファイルから翻訳を始めるのが良いのか](../translation-priority)について、いくつかの推奨事項があります。
+:::
+
+Choose a project you’d like to translate, click *Join*, and choose your language.
+
+![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_kb.png)
+
+You can start translating literally any product you like by choosing the respective folder. We have some recommendations about [what files are better to start with in AdGuard Websites project](../translation-priority).
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/folders.png)
 
-まだ翻訳されていないフレーズをフィルタリングして、翻訳の第一歩を踏み出しましょう。
+Filter phrases that are not yet translated and start your translation history.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
-テキストボックスにあなたの翻訳を提案し、「SAVE」ボタンで保存してください。
+Suggest your version in the text box and save it.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/text-box.png)
 
-既存の翻訳に違和感がある場合は、あなたの翻訳を提案することができます。 また、「プラス」と「マイナス」ボタンをクリックすることで、他の翻訳提案をupvote・downvoteすることができます。
+If you don’t agree with an existing translation, you can suggest your version. You can also upvote and downvote suggestions made by other volunteers by clicking the plus and minus buttons.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/vote.png)
 
-さらに、翻訳を評価したい場合、Votingモードで翻訳を開くことができます。
+Besides, there is an opportunity to open translations in a Voting mode if you just want to rate translations.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-AdGuardの翻訳に役立つヒントは、[こちらの記事](../guidelines)で紹介しています。 Please take a look at it.
+You can find some [helpful tips on translating AdGuard in this article](../guidelines). Please take a look at it.
 
 ### 校正者になるには {#proofreaders}
 
-各言語には校正者(以前はモデレーターと呼ばれていました)がいます。 そして、現在翻訳に参加している方々は皆、校正者になることができます。
+We have proofreaders (previously known as moderators) for each language. And every active translator has an option to become one.
 
-では、校正者は何を担当するのでしょうか。
+So, what are proofreaders responsible for?
 
-**校正者は:**
+**Proofreaders:**
 
 - 質の高い翻訳を承認（Approve）し、質の悪い翻訳を却下します。
 
@@ -51,4 +57,4 @@ AdGuardの翻訳に役立つヒントは、[こちらの記事](../guidelines)�
 
 - 自分の言語で問いかけられた、翻訳に関連するコメントに返信します。
 
-Every year, the best proofreaders receive gifts from AdGuard. また、活躍した翻訳者にも報酬が送られます。 [翻訳の報奨制度](../rewards)で詳細をお読みください。
+Every year, the best proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system](../rewards).

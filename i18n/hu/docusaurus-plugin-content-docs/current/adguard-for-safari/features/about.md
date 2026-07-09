@@ -1,5 +1,5 @@
 ---
-title: About
+title: Névjegy
 sidebar_position: 5
 ---
 

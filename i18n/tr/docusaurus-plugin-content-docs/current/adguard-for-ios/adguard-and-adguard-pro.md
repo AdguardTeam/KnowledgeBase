@@ -1,5 +1,5 @@
 ---
-title: AdGuard and AdGuard Pro
+title: AdGuard ve AdGuard Pro
 sidebar_position: 5
 ---
 

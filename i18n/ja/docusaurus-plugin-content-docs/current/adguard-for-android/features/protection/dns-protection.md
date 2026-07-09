@@ -25,7 +25,7 @@ sidebar_position: 4
 
 - また、DNSユーザールールを作成することで、ドメインをブロックしたり、ブロック解除したりすることもできる。 [こちらのDNSフィルタリングルールの構文](https://adguard-dns.io/kb/general/dns-filtering-syntax/)を参照してください。
 
-![DNS 通信を保護 \*mobile\_border](https://cdn.adtidy.org/blog/new/9htftScreenshot_20230621-163736_AdGuard.jpg?mw=1360)
+![DNS 通信を保護 \*mobile_border](https://cdn.adtidy.org/blog/new/9htftScreenshot_20230621-163736_AdGuard.jpg?mw=1360)
 
 #### DNSサーバー
 

@@ -15,7 +15,7 @@ Os bloqueadores de conteúdo servem como "armazenamento" para regras de filtrage
 
 Informações sobre todos os bloqueadores de conteúdo, seus status, quais filtros temáticos eles incluem no momento e o número total de regras de filtragem usadas podem ser encontrados na respectiva tela em _Configurações avançadas_ (toque no ícone de engrenagem no canto inferior direito → _Geral_ → _Configurações avançadas_ → _Bloqueadores de conteúdo_).
 
-![Bloqueadores de conteúdo \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
+![Bloqueadores de conteúdo \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
 
 :::tip
 
@@ -47,7 +47,7 @@ Aqui você pode adicionar novas regras, inserindo-as manualmente ou usando [a fe
 
 Aprenda a [criar seus próprios filtros de anúncios](/general/ad-filtering/create-own-filters). Mas observe que muitos deles não funcionam no Safari no iOS.
 
-![Tela de regras do usuário \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
+![Tela de regras do usuário \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
 ### Lista de permissões {#allowlist}
 

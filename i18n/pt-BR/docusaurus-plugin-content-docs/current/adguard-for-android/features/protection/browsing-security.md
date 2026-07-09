@@ -13,11 +13,11 @@ O módulo de segurança de navegação pode ser acessado tocando na guia _Prote�
 
 A segurança da navegação protege você contra visitas a sites de phishing e maliciosos. Ele também avisa sobre malware em potencial.
 
-![Segurança de navegação \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
+![Segurança de navegação \*mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
 Se você estiver prestes a visitar um site perigoso, a Segurança de navegação mostrará o seguinte aviso:
 
-![Aviso de segurança de navegação \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
+![Aviso de segurança de navegação \*mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
 :::warning
 

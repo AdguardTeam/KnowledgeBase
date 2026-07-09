@@ -1,6 +1,6 @@
 ---
 title: Filter
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 :::info
@@ -29,6 +29,8 @@ Um einen Filter hinzuzufügen, klicken Sie einfach auf _Eigenen Filter hinzufüg
 
 ![Eigenen Filter hinzufügen \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
+Custom filters update independently, so your filtering remains effective and current without requiring extension updates.
+
 ## Benutzerregeln {#user-rules}
 
 _Benutzerregeln_ ist ein weiteres Tool, mit dem Sie die Blockierung von Werbung individuell anpassen können.
@@ -49,7 +51,7 @@ Die _Positivliste_ wird verwendet, um bestimmte Websites von der Filterung auszu
 
 ![Positivliste \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-Die _Positivliste_ kann auch umgekehrt werden: Sie können die Werbung überall freischalten, außer auf den Websites, die auf dieser Liste stehen. Aktivieren Sie dazu die Option _Positivliste umkehren_.
+_Allowlist_ can also be inverted: you can unblock ads everywhere except on the websites added to this list. To do that, activate the _Invert Allowlist_ option. Before it turns on, a confirmation dialog will appear to prevent accidental activation and explain what will happen.
 
 ![Positivliste umkehren \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 

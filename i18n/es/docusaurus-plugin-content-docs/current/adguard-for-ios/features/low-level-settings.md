@@ -9,7 +9,7 @@ Este artículo trata sobre AdGuard para iOS, un bloqueador de anuncios multifunc
 
 :::
 
-![Configuración de bajo nivel \*mobile\_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
+![Configuración de bajo nivel \*mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
 
 Para abrir la _Configuración de bajo nivel_, ve a _Configuración_ → → _General_ (habilita el _Modo avanzado_ si está desactivado) → _Configuración avanzada_ → _Configuración de bajo nivel_.
 

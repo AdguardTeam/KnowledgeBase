@@ -9,7 +9,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-Due to built-in statistics processes, high data and/or battery consumption was often attributed to AdGuard by Android 6 and earlier. Bylo to proto, že AdGuard počítal veškerý provoz, který filtroval z různých aplikací. V důsledku toho byl podíl AdGuardu na celkovém využití dat a baterie nadhodnocen, zatímco podíl ostatních aplikací byl podhodnocen.
+Kvůli vestavěným statistickým procesům byla vysoká spotřeba dat a/nebo baterie často připisována AdGuardu v systému Android 6 a dřívějších verzích. Bylo to proto, že AdGuard počítal veškerý provoz, který filtroval z různých aplikací. V důsledku toho byl podíl AdGuardu na celkovém využití dat a baterie nadhodnocen, zatímco podíl ostatních aplikací byl podhodnocen.
 
 V Androidu 7 se však tento scénář zlepšil. Nyní se údaje uvedené ve vestavěných statistikách využití dat systému Android velmi blíží skutečnosti, i když v údajích o využití baterie jsou drobné nesrovnalosti.
 
@@ -23,13 +23,19 @@ Přístup k ní získáte v sekci *Statistiky* → *Využití baterie*.
 
 Uvnitř najdete graf, který zobrazuje spotřebu zdrojů baterie AdGuard za posledních 24 hodin s možností získat podrobnější údaje po jednotlivých hodinách klepnutím v grafu. Kromě toho je zde také číselný rozpis příslušných údajů a krátké technické vysvětlení.
 
+Pod grafem je několik dalších parametrů: *CPU na popředí*, *CPU na pozadí*, *Použití mobilních dat* a *Použití Wi-Fi dat*.
+
+*CPU na popředí* a *CPU na pozadí* ukazují, jak dlouho CPU využívá AdGuard, když je aplikace aktivní nebo běží na pozadí.
+
+A s *využitím mobilních dat* a *využitím Wi-Fi dat* můžete vidět, kolik provozu AdGuard použil, když váš telefon používal mobilní internet nebo byl připojen k Wi-Fi.
+
 ### Kolik prostředků baterie AdGuard skutečně spotřebovává?
 
 Nejprve si řekneme něco málo z teorie a uvedeme si souvislosti s potřebnými údaji.
 
-1. Android odvozuje spotřebu baterie podle takzvaného "Profilu napájení", který udává každý výrobce: <https://source.android.com/devices/tech/power/values.html>
+1. Android odvozuje spotřebu baterie podle takzvaného "Profilu napájení", který udává každý výrobce: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
-1. Hlavní součástí tohoto profilu je soubor hodnot v mAh, které určují spotřebu baterie pro každou část zařízení: <https://source.android.com/devices/tech/power/values.html>
+1. Hlavní součástí tohoto profilu je soubor hodnot v mAh, které určují spotřebu baterie pro každou část zařízení: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
     Například podle výše uvedené tabulky:
 

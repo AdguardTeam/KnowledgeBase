@@ -1,24 +1,24 @@
 ---
-title: Security
-sidebar_position: 6
+title: Securitate
+sidebar_position: 7
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru macOS, un blocant de reclame multifuncțional care protejează dispozitivul tău la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Phishing and malware protection
+## Protecția împotriva phishing-ului și a malware-ului
 
-![Security](https://cdn.adtidy.org/content/kb/ad_blocker/mac/security.png)
+![Securitate](https://cdn.adtidy.org/content/kb/ad_blocker/mac/security.png)
 
-AdGuard has a database of fraudulent, phishing, and malicious domains. If you enable _Phishing and malware protection_, AdGuard will warn you every time you’re about to visit a dangerous website. Even if only some parts of the website are dangerous, AdGuard will check it and display a warning.
+AdGuard has a database of fraudulent, phishing, and malicious domains. Dacă activați _Protecția împotriva phishing-ului și a malware-ului_, AdGuard vă va avertiza de fiecare dată când sunteți pe cale să vizitați un site web periculos. Chiar dacă doar unele părți ale site-ului web sunt periculoase, AdGuard le va verifica și va afișa o avertizare.
 
-This is safe. As AdGuard checks hash prefixes, not URLs, it doesn’t know what websites you visit. [Learn more about AdGuard’s security checks](/general/browsing-security)
+Acesta este sigur. Deoarece AdGuard verifică prefixele hash, nu URL-uri, nu știe ce site-uri web vizitați. [Aflați mai multe despre verificările de securitate ale AdGuard](/general/browsing-security)
 
 :::note
 
-AdGuard is not an antivirus software. It can’t stop you from downloading suspicious files or delete existing viruses.
+AdGuard nu este un program antivirus. Nu poate împiedica descărcarea de fișiere suspecte sau ștergerea virusurilor existente.
 
 :::

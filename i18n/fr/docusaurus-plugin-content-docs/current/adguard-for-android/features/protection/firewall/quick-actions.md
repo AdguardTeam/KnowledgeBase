@@ -1,18 +1,18 @@
 ---
-title: Quick actions
+title: Actions rapides
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
+Cet article concerne AdGuard pour Android, un bloqueur de publicités multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Quick actions can be found inside the _Firewall_ module, which can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Firewall_.
+Les actions rapides se trouvent dans le module _Pare-feu_, accessible en appuyant sur l'onglet _Protection_ (deuxième icône en partant de la gauche en bas de l'écran) puis en sélectionnant _Pare-feu_.
 
-_Quick actions_ are based on the requests from _Recent activity_ (which can be found in [_Statistics_](/adguard-for-android/features/statistics)). This section shows which apps have recently connected to the Internet.
+_Les actions rapides_ sont basées sur les requêtes de _l'Activité récente_ (que l'on peut trouver dans les [_Statistiques_](/adguard-for-android/features/statistics)). Cette section montre quelles applications se sont récemment connectées à Internet.
 
-![Quick actions \*mobile\_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
+![Actions rapides \*mobile_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
 
-If you see an app that shouldn't be using the Internet at all or an app that you haven't used recently, you can block its access on the fly. This will not be possible unless the _Firewall_ module is turned on.
+Si vous voyez une application qui ne devrait pas utiliser Internet du tout ou une application que vous n'avez pas utilisée récemment, vous pouvez bloquer son accès instantanément. Cela ne sera possible que si le module _Pare-feu_ est activé.

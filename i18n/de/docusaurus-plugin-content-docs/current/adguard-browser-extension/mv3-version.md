@@ -55,7 +55,7 @@ Die maximale Anzahl der gleichzeitig aktivierten Filter beträgt **50**.
 
 **Dynamische Regeln:** Es gilt eine strikte Obergrenze von **5.000** Regeln, darunter maximal 1.000 Regex-Regeln.
 
-Wird diese Grenze überschritten, werden nur **5.000 konvertierte Regeln** in folgender Reihenfolge angewendet: zuerst die Positivliste, dann die Benutzerregeln und schließlich die Eigene Filter.
+Wenn diese Grenze überschritten wird, werden nur **5.000 umgewandelte Regeln** in der folgenden Reihenfolge angewendet: zuerst Freigabeliste, dann Benutzerregeln und schließlich benutzerdefinierte Filter.
 
 > **Konvertierte Regeln** sind Regeln, die mit dem [deklarativen Konverter][github-declarative-converter] in das \[DNR-Format] umgewandelt wurden.
 > Während dieses Umwandlungsprozesses können einige Regeln andere überschreiben (`$badfilter`), einige können kombiniert werden (`$removeparam`), was zu einer Liste von Regeln mit einer etwas anderen Reihenfolge führt.
@@ -102,8 +102,5 @@ Weitere Details zu den Einschränkungen finden Sie auf [GitHub][github-declarati
 Weitere Informationen zu Modifikatoren finden Sie in unserer [Wissensdatenbank](/general/ad-filtering/create-own-filters).
 
 [DNR format]: https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest#build-rules
-
-<!-- TODO: update the following urls after the release/v3.1 branch is merged -->
-
-[github-declarative-converter]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter
-[github-declarative-converter-examples]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#basic-examples
+[github-declarative-converter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#table-of-contents
+[github-declarative-converter-examples]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#basic-examples

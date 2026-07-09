@@ -23,13 +23,19 @@ Puedes acceder navegando a *Estadísticas* → *Uso de batería*.
 
 En su interior, encontrarás un gráfico que muestra el consumo de recursos de la batería de AdGuard en las últimas 24 horas, con una opción para obtener datos más detallados hora a hora tocando el gráfico. Además de eso, también hay información numérica de los datos relevantes y una breve explicación técnica.
 
+Hay varios otros parámetros debajo del gráfico: *CPU en primer plano*, *CPU en segundo plano*, *Uso de datos móviles*, y *Uso de datos de Wi-Fi*.
+
+*CPU en primer plano* y *CPU en segundo plano* muestran cuánto tiempo de CPU utiliza AdGuard cuando la aplicación está activa o en segundo plano.
+
+Y con el uso de *datos móviles* y *datos de Wi-Fi*, puedes ver cuánto tráfico consumió AdGuard cuando tu teléfono estaba usando Internet móvil o conectado a Wi-Fi.
+
 ### ¿Cuánta batería consume realmente AdGuard?
 
 Primero, expongamos un poco de teoría y vínculos con los datos necesarios.
 
-1. Android obtiene el consumo de tráfico a partir del llamado Perfil de potencia, que proporciona cada fabricante: <https://source.android.com/devices/tech/power/values.html>
+1. Android derives traffic consumption judging on so-called Power Profile, which is given by every manufacturer: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
-1. La parte principal del perfil de energía es un conjunto de valores en mAh que definen el consumo de batería para cada componente del dispositivo: <https://source.android.com/devices/tech/power/values.html>
+1. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
     Por ejemplo, en la tabla anterior:
 
@@ -55,6 +61,6 @@ Primero, expongamos un poco de teoría y vínculos con los datos necesarios.
 
     > 506000 *225 / (60* 60 * 1000) = 31,625 mAh
 
-### Conclusion
+### Conclusión
 
-Real consumption is **several times less** than it is shown in Android statistics. Instead of 220mAh it should be somewhere around 31-40mAh. On the other hand, browser's consumption should be not 66mAh, but ~200mAh.
+El consumo real es **varias veces menor** de lo que se muestra en las estadísticas de Android. En lugar de 220 mAh, debería rondar los 31-40 mAh. Por otro lado, el consumo del navegador no debería ser de 66 mAh, sino de ~200 mAh.

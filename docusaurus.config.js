@@ -1,5 +1,6 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const { themes } = require('prism-react-renderer');
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
 
 const ADGUARD_WEBSITE_URL = 'https://adguard.com';
 
@@ -14,12 +15,22 @@ const typesenseApiKey = process.env.SEARCH_API_KEY || 'test';
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
+  future: {
+    faster: true,
+    v4: {
+      removeLegacyPostBuildHeadAttribute: true,
+    },
+  },
   title: 'AdGuard Knowledge Base',
   tagline: 'Knowledge Base for AdGuard products',
   url: url,
   baseUrl: baseUrl,
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   favicon: 'img/favicon.ico',
   trailingSlash: true,
   organizationName: 'AdGuard',
@@ -101,16 +112,16 @@ module.exports = {
               href: ADGUARD_WEBSITE_URL + '/contacts.html',
             },
             {
-              label: 'in_the_press',
-              href: ADGUARD_WEBSITE_URL + '/press-releases.html',
+              label: 'blog',
+              href: ADGUARD_WEBSITE_URL + '/blog/index.html',
             },
             {
-              label: 'media_kits',
-              href: ADGUARD_WEBSITE_URL + '/media-materials.html',
+              label: 'discuss',
+              href: ADGUARD_WEBSITE_URL + '/discuss.html',
             },
             {
-              label: 'awards',
-              href: ADGUARD_WEBSITE_URL + '/awards.html',
+              label: 'support_adguard',
+              href: ADGUARD_WEBSITE_URL + '/support-adguard.html',
             },
           ],
         },
@@ -118,24 +129,32 @@ module.exports = {
           title: 'products',
           items: [
             {
-              label: 'adguard_for_windows',
+              label: 'for_windows',
               href: ADGUARD_WEBSITE_URL + '/adguard-windows/overview.html',
             },
             {
-              label: 'adguard_for_android',
-              href: ADGUARD_WEBSITE_URL + '/adguard-android/overview.html',
-            },
-            {
-              label: 'adguard_for_mac',
+              label: 'for_mac',
               href: ADGUARD_WEBSITE_URL + '/adguard-mac/overview.html',
             },
             {
-              label: 'adguard_for_ios',
+              label: 'for_android',
+              href: ADGUARD_WEBSITE_URL + '/adguard-android/overview.html',
+            },
+            {
+              label: 'for_android_tv',
+              href: ADGUARD_WEBSITE_URL + '/adguard-android-tv/overview.html',
+            },
+            {
+              label: 'for_ios',
               href: ADGUARD_WEBSITE_URL + '/adguard-ios/overview.html',
             },
             {
-              label: 'adguard_for_ios_pro',
-              href: ADGUARD_WEBSITE_URL + '/adguard-ios-pro/overview.html',
+              label: 'for_browsers',
+              href: ADGUARD_WEBSITE_URL + '/adguard-browser-extension/overview.html',
+            },
+            {
+              label: 'version_history',
+              href: ADGUARD_WEBSITE_URL + '/versions.html',
             },
           ],
         },
@@ -160,7 +179,19 @@ module.exports = {
             },
             {
               label: 'userscripts',
-              to: '/general/userscripts',
+              to: '/general/extensions',
+            },
+            {
+              label: 'faq',
+              href: ADGUARD_WEBSITE_URL + '/support/faq.html',
+            },
+            {
+              label: 'status',
+              href: 'https://status.adguard.com/',
+            },
+            {
+              label: 'diagnostics',
+              href: ADGUARD_WEBSITE_URL + '/test.html',
             },
           ],
         },
@@ -184,13 +215,13 @@ module.exports = {
               href: ADGUARD_WEBSITE_URL + '/get-adguard-for-free.html',
             },
             {
-              label: 'contribute_to_adguard',
-              href: ADGUARD_WEBSITE_URL + '/contribute.html',
+              label: 'distribution',
+              href: ADGUARD_WEBSITE_URL + '/partners.html',
             },
           ],
         },
       ],
-      copyright: `© AdGuard, 2009–${new Date().getFullYear()}`,
+      copyright: `© 2009–${new Date().getFullYear()} Adguard Software Ltd.`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -227,21 +258,4 @@ module.exports = {
       },
     ],
   ],
-  webpack: {
-    jsLoader: (isServer) => ({
-      loader: require.resolve('swc-loader'),
-      options: {
-        jsc: {
-          parser: {
-            syntax: 'typescript',
-            tsx: true,
-          },
-          target: 'es2017',
-        },
-        module: {
-          type: isServer ? 'commonjs' : 'es6',
-        },
-      },
-    }),
-  },
 };

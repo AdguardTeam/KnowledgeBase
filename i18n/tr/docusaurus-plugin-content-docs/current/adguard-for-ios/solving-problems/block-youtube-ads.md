@@ -17,18 +17,12 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 1. Bir video seçin ve *Paylaş* öğesine dokunun.
 1. *Diğer* öğesine dokunun ve ardından *YouTube Reklamlarını Engelle (AdGuard tarafından)* öğesini seçin.
 
-The video now opens in AdGuard's ad-free player.
+The video now opens in AdGuard’s ad-free player.
 
 ## Safari'de YouTube'daki reklamlar nasıl engellenir
 
-:::tip
+1. Go to *Safari* → *Extensions* → *AdGuard*.
+1. *Uzantıya İzin Ver* öğesinin etkin olduğundan emin olun. Aynı ekranda, AdGuard için *Tüm Siteler* iznini *İzin Ver* olarak ayarlayın. ![Uzantı izinleri *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/extensions_allow.jpg)
+1. AdGuard'ı açın, kalkan simgesine dokunun ve *Gelişmiş koruma* öğesini etkinleştirin.
 
-AdGuard'a tüm sitelere erişim izni verdiğinizden emin olun. Bunu Safari → Uzantılar → AdGuard'dan kontrol edebilirsiniz. Ardından AdGuard'ı açın ve *Gelişmiş koruma* öğesini etkinleştirin.
-
-:::
-
-1. Safari'de youtube.com adresini açın.
-1. Bir video seçin ve *Paylaş* öğesine dokunun.
-1. *YouTube Reklamlarını Engelle (AdGuard tarafından)* öğesine dokunun.
-
-The video now opens in AdGuard's ad-free player.
+You can now watch YouTube videos in Safari without ads.

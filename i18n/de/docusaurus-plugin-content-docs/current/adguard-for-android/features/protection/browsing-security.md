@@ -13,11 +13,11 @@ Sie können auf das Modul Internetsicherheit zugreifen, indem Sie auf den Tab _S
 
 Die Internetsicherheit schützt Sie vor dem Besuch von Phishing- und bösartigen Websites und warnt auch vor potenzieller Malware.
 
-![Internetsicherheit \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
+![Internetsicherheit \*mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
 Wenn Sie im Begriff sind, eine gefährliche Website zu besuchen, zeigt Internetsicherheit Ihnen die folgende Warnmeldung an:
 
-![Warnung der Internetsicherheit \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
+![Warnung der Internetsicherheit \*mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
 :::warning
 

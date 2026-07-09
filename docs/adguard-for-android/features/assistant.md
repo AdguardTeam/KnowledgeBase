@@ -1,6 +1,6 @@
 ---
 title: Assistant
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info
@@ -68,7 +68,7 @@ Select a website (**we use google.com here purely as an example**) and you'll se
 
 Tapping this option will instantly add `google.com` to allowlist, and AdGuard will no longer filter it (meaning ads and trackers won't be blocked for the website).
 
-#### Recent activity
+#### Recent activity (websites)
 
 You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests to google.com.
 

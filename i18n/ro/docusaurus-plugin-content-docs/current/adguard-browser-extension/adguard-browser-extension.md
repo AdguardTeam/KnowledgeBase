@@ -1,0 +1,42 @@
+---
+title: Extensia de browser AdGuard
+sidebar_position: 1
+---
+
+:::info
+
+Acest articol se referă la extensia de browser AdGuard, care vă protejează doar browserul dvs. Pentru a proteja întreg dispozitivul dvs., [descărcați aplicația AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
+- [Features](/adguard-browser-extension/features)
+
+  Main features and settings available in AdGuard Browser Extension
+
+- [Availability](/adguard-browser-extension/availability)
+
+  Supported browsers and platforms where the extension can be installed
+
+- [Installation](/adguard-browser-extension/installation)
+
+  Installation and removal
+
+- [Compatibility with the standalone app](/adguard-browser-extension/compatibility)
+
+  Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
+
+- [Extensia de browser AdGuard pentru Chrome MV3](/adguard-browser-extension/mv3-version/)
+
+  A separate AdGuard Browser Extension compatible with the Manifest V3 API
+
+- [Browser-protected pages](/adguard-browser-extension/protected-pages)
+
+  Restricted domains whose content can’t be modified with ad blocking extensions
+
+- [Solving problems](/adguard-browser-extension/solving-problems)
+
+  Known issues and possible solutions
+
+- [Comparison to standalone apps](/adguard-browser-extension/comparison-standalone)
+
+  The differences in functionality and features between the AdGuard extensions and desktop apps

@@ -1,5 +1,5 @@
 ---
-title: How to collect Windows system logs
+title: Como coletar logs do sistema no Windows
 sidebar_position: 5
 ---
 
@@ -9,13 +9,13 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 :::
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Os dados e/ou arquivos fornecidos nos registros do sistema são processados de acordo com [a Política de Privacidade do AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-Para analisar e diagnosticar diferentes problemas que possam surgir, o serviço de suporte AdGuard pode precisar de arquivos de log do sistema Windows. Windows event logs contain records about all errors that occur with the installed software, including AdGuard. Há uma breve instrução abaixo que descreve a forma de obter os arquivos de log e enviá-los ao nosso serviço de suporte, se necessário.
+Para analisar e diagnosticar diferentes problemas que possam surgir, o serviço de suporte AdGuard pode precisar de arquivos de log do sistema Windows. Os logs de eventos do Windows contêm registros sobre todos os erros que ocorrem com o software instalado, incluindo o AdGuard. Há uma breve instrução abaixo que descreve a forma de obter os arquivos de log e enviá-los ao nosso serviço de suporte, se necessário.
 
 1. Pressiona *Win + R*
 
@@ -43,7 +43,7 @@ Para analisar e diagnosticar diferentes problemas que possam surgir, o serviço 
 
 Por favor, envie os dois arquivos que você salvou recentemente para **support@adguard.com**.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 O AdGuard tem o compromisso de proteger sua privacidade. Seguimos rigorosamente nossa [Política de Privacidade](https://adguard.com/privacy/windows.html) e não coletamos nenhuma informação privada sobre os usuários. Antes de enviar seus registros para a equipe de suporte, revise o arquivo, pois ele pode conter informações adicionais que você não deseja compartilhar. Se contiver tais informações pessoais, recomendamos que você as exclua primeiro.
 

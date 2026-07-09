@@ -5,24 +5,56 @@ sidebar_position: 6
 
 Poiché qualsiasi sforzo onesto e ben fatto dovrebbe esser ricompensato, i traduttori attivi su Crowdin possono richiedere una chiave di licenza gratuita di AdGuard e un abbonamento alla VPN.
 
-Per richiedere una **chiave di licenza di AdGuard della durata di un anno** o un **abbonamento di un anno ad AdGuard VPN**, devi tradurre almeno **500** e **2,500** parole rispettivamente.
+## Come funziona il nostro sistema di ricompense
 
-Per verificare l'avanzamento della traduzione, apri un progetto su cui hai lavorato, fai clic sulla scheda *Rapporti* e seleziona *Il mio contributo*. Puoi sommare il numero di parole tradotte in diversi progetti per ottenere una licenza.
+### Per licenze AdGuard
 
-## Ecco come funziona il nostro sistema di ricompense
+- Per la tua prima licenza di un anno del Blocco-inserzioni devi tradurre **1.000 parole**.
+- Per la tua seconda licenza, avrai bisogno di **1.500 parole aggiuntive** (un totale di 2.500 parole).
+- Tutte le licenze successive richiedono la traduzione di ulteriori **2.500** parole per licenza.
 
-```text
-Per la prima licenza di un anno di Adguard, devi tradurre 500 parole.
-Per la seconda licenza, devi tradurre 1.000 parole, ovvero 1.500 parole in totale.
-Tutte le licenze successive richiedono la traduzione di ulteriori 1.500 parole per licenza.
+### Per licenze AdGuard VPN
 
-Per il primo anno di abbonammento ad AdGuard VPN, devi tradurre 2.500 parole.
-Tutti gli abbonamenti o rinnovi successivi richiedono la traduzione di ulteriori 2.500 parole per abbonamento.
+- La prima sottoscrizione VPN di un anno richiede la traduzione di **3.000 parole**.
+- Tutti gli abbonamenti o rinnovi successivi richiedono la **traduzione di 3.000 parole ulteriori** per abbonamento.
 
-```
+:::note Limitazioni
 
-Basta inviarci una richiesta a [translate@adguard.com](mailto:translate@adguard.com) e otterrai la licenza, come nostro segno di gratitudine.
+Come premio per il contributo, offriamo licenze e abbonamenti validi per un massimo di 5 anni. Nel caso di Ad Blocker, offriamo licenze che coprono fino a 5 dispositivi. Non offriamo licenze a vita.
 
-Inoltre, i traduttori più attivi potrebbero ricevere lo stato di revisori in futuro, dovessero esprimere tale intenzione e, ciò, promette cose persino migliori.
+:::
 
-Ogni anno presentiamo regali con il logo di AdGuard ai nostri revisori attivi. Se desideri divenire uno di loro, ti preghiamo di scriverci a [translate@adguard.com](mailto:translate@adguard.com).
+## Come richiedere la tua licenza
+
+Invia un'e-mail al nostro gruppo di traduttori all'indirizzo [translate@adguard.com](mailto:translate@adguard.com) con le seguenti informazioni:
+
+- Il tuo nome utente Crowdin
+- I progetti a cui hai contribuito (Siti web, Applicazioni, Base di conoscenze, ecc.)
+- L'indirizzo e-mail a cui vuoi collegare la tua licenza
+- Le tue statistiche di traduzione (una schermata o conteggio totale delle parole) e il tipo di licenza che desideri
+
+**Modello di e-mail:**
+
+> Ciao team AdGuard!
+> 
+> Ho tradotto più di 5.000 parole in AdGuard per Android in (*inserisci la tua lingua*) — puoi trovare le mie statistiche allegate. Come ricompensa, vorrei richiedere una licenza di AdGuard VPN e una licenza del Blocca-inserzioni Il mio indirizzo e-mail è (*inserisci il tuo indirizzo e-mail*). Il mio nome utente Crowdin è (*inserisci il tuo nome utente*).
+
+## Come controllare i progressi della tua traduzione
+
+Apri un progetto su cui hai lavorato, clicca la scheda *Rapporti*, seleziona *Il mio contributo*, scorri verso il basso, seleziona un intervallo di date e genera un rapporto. Produrrà qualcosa del genere.
+
+![Statistiche *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/statistics.png)
+
+Puoi sommare il numero di parole tradotte in diversi progetti per qualificarti per una licenza.
+
+## Come diventare un revisore
+
+In futuro, i nostri traduttori più attivi potrebbero essere presi in considerazione per la qualifica di correttori di bozze. Per diventare un correttore di bozze, dovrai fornire traduzioni di alta qualità in modo costante per un lasso di diversi mesi.
+
+Si prega di notare che i correttori di bozze non ricevono licenze o vantaggi aggiuntivi oltre ad aiutare più persone ad accedere ai prodotti AdGuard nella loro lingua. Se sei interessato a diventare uno dei nostri correttori di bozze, ti preghiamo di contattarci a [translate@adguard.com](mailto:translate@adguard.com).
+
+## Regali per i collaboratori attivi
+
+To the best contributors, every year we send gifts with the AdGuard merch and give a shout out on our [blog](https://adguard.com/en/blog/best-contributors-2024.html).
+
+![Merchandising AdGuard *border](https://cdn.adguard.com/public/Adguard/Blog/presents.png)

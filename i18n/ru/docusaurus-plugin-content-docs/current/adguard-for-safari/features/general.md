@@ -1,5 +1,5 @@
 ---
-title: Основное
+title: Основные
 sidebar_position: 1
 ---
 

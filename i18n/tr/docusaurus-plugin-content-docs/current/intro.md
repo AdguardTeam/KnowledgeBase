@@ -15,7 +15,7 @@ AdGuard, 15 yılı aşkın deneyimi, çeşitli platformlar için neredeyse onlar
 
 Ancak tüm popüler tarayıcılar için ücretsiz tarayıcı uzantıları da geliştiriyor ve sürdürüyoruz:
 
-- [AdGuard Tarayıcı Uzantısı](/adguard-browser-extension/features/filters)
+- [AdGuard Tarayıcı Uzantısı](/adguard-browser-extension/availability)
 - [Safari için AdGuard](/adguard-for-safari/features/general)
 
 ## Sadece reklam engelleme değil

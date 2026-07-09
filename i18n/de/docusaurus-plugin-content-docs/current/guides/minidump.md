@@ -54,3 +54,26 @@ Sie haben das Anlegen der Minidump-Datei erfolgreich aktiviert. Jetzt wird die D
 Standardmäßig wird die Minidump-Datei im Ordner **%SystemRoot%\Minidump** gespeichert. Sie können den Speicherort des Ordners nach Belieben ändern, aber bedenken Sie, dass viele Programme standardmäßig nach diesem Ort suchen, weshalb wir empfehlen, den Speicherort nicht zu ändern.
 
 :::
+
+## Erfassen der Datei wfpdiag.cab
+
+Unser Support-Team kann eine wfpdiag.cab-Datei zusammen mit einer Minidump-Datei anfordern, um die Systemprotokolle genauer analysieren und Probleme diagnostizieren zu können. Um die Datei zu erfassen, gehen Sie bitte wie folgt vor:
+
+1. Aktivieren Sie den AdGuard-Schutz.
+
+1. Klicken Sie auf *Start* und geben Sie den Befehl `cmd` ein, um die Eingabeaufforderung zu öffnen
+
+1. Klicken Sie mit der rechten Maustaste auf Eingabeaufforderung und wählen Sie *Als Administrator ausführen*
+
+    :::note
+
+    Es wird eine Datei „wfpdiag.cab“ in Ihrem aktuellen Verzeichnis erstellt. Sie können den Speicherort ändern, indem Sie `cd <folder_name>` eingeben.
+
+
+:::
+
+1. Um die Protokollierung zu starten, geben Sie den folgenden Befehl ein: `netsh wfp capture start`
+
+1. Besuchen Sie eine beliebige Website, um den Datenverkehr durch AdGuard zu leiten und den Filterungsprozess zu protokollieren
+
+1. Um die Protokollierung zu beenden, geben Sie `netsh wfp capture stop` ein

@@ -1,6 +1,6 @@
 ---
-title: Ручная установка сертификата безопасности в браузер Firefox
-sidebar_position: 11
+title: Ручная установка сертификата безопасности в браузере Firefox
+sidebar_position: 10
 ---
 
 :::info

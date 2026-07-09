@@ -21,19 +21,19 @@ The old beta extension will be renamed to [**AdGuard Ad Blocker MV2**](https://c
 
 - **Filtering log**
 
-    ![Filtering log *border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+    ![Filtering log *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/filtering_log.png)
 
     Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules/).
 
 - *Tracking protection* (formerly known as *Stealth mode*)
 
-    ![Tracking protection *border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+    ![Tracking protection *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
 
     There are no *Cookies* section, along with *Self-destruction of first-party cookies* and *Self-destruction of third-party cookies* since we cannot set the TTL of cookies using declarative rules.
 
 - *Phishing & malware protection* is no longer available in the general settings. To protect yourself from malicious websites and scams, enable the appropriate *Security* filters in the *Filters* tab.
 
-    ![Security *border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+    ![Security *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/security_filters.png)
 
 ## Limitations
 
@@ -55,7 +55,7 @@ The maximum number of simultaneously enabled filters is **50**.
 
 **Dynamic rules:** a strict cap of **5,000** rules is imposed, which includes a maximum of 1,000 regex rules.
 
-If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first allowlist, then user rules, and finally — custom filters.
+If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules and finally Custom filters.
 
 > **Converted rules** are rules that have been transformed
 > to [DNR format] using the [declarative converter][github-declarative-converter].
@@ -104,6 +104,5 @@ More details about the limitations can be found on [GitHub][github-declarative-c
 For further information on modifiers, please refer to our [Knowledge base](/general/ad-filtering/create-own-filters).
 
 [DNR format]: https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest#build-rules
-<!-- TODO: update the following urls after the release/v3.1 branch is merged -->
-[github-declarative-converter]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter
-[github-declarative-converter-examples]: https://github.com/AdguardTeam/tsurlfilter/tree/release/v3.1/packages/tsurlfilter/src/rules/declarative-converter#basic-examples
+[github-declarative-converter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#table-of-contents
+[github-declarative-converter-examples]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#basic-examples

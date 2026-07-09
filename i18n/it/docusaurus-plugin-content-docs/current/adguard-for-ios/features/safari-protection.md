@@ -15,7 +15,7 @@ I blocchi dei contenuti servono da 'contenitori' per filtrare le regole che svol
 
 Tutti i blocchi dei contenuti, il loro stato, i filtri tematici attualmente inclusi e il numero totale di regole di filtraggio utilizzate sono disponibili nella rispettiva schermata in _Impostazioni avanzate_ (clicca l'icona dell'ingranaggio in basso a destra → _Generale_ → _Impostazioni avanzate_ → _Blocchi dei contenuti_).
 
-![Blocchi dei contenuti \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
+![Blocchi dei contenuti \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
 
 :::tip
 
@@ -29,7 +29,7 @@ Il funzionamento dei blocchi di contenuti si basa sui filtri, talvolta anche ind
 
 Tutti i filtri sono raggruppati in categorie tematiche. Per visualizzare l'elenco completo di queste categorie (da non confondere con i blocchi dei contenuti), apri la sezione _Protezione_ toccando l'icona dello scudo, quindi vai in _Protezione di Safari_ → _Filtri_.
 
-![Gruppi di filtri \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
+![Gruppi di filtri \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
 
 Ne esistono otto, ogni categoria unisce vari filtri che servono e condividono uno scopo comune, cioè bloccare annunci, widget social, avvisi sui cookie, proteggere l'utente dalle truffe online. Per decidere quali filtri soddisfano le tue esigenze, leggi le loro descrizioni e naviga tra le etichette ("annunci", "privacy", "consigliati", ecc.).
 
@@ -47,7 +47,7 @@ Qui, puoi aggiungere nuove regole, inserendole manualmente o utilizzando lo [str
 
 Scopri [come creare i tuoi filtri degli annunci](/general/ad-filtering/create-own-filters). Ma sei pregato di notare che molti di essi non funzioneranno su Safari su iOS.
 
-![Schermata Regole utente \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
+![Schermata Regole utente \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
 ### Lista consentita {#allowlist}
 

@@ -1,6 +1,6 @@
 ---
 title: DNS 유출 가능성
-sidebar_position: 9
+sidebar_position: 10
 ---
 
 :::정보

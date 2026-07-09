@@ -40,7 +40,7 @@ and this one for iPhone X or later:
 
 - **Press the *Sleep/Wake* button and the *Volume up* button at the same time, then quickly release them**
 
-iOS cihazınız tüm ekranı yakalar ve bir fotoğraf olarak kaydeder. You can find it in a standard Photo app.
+iOS cihazınız tüm ekranı yakalar ve bir fotoğraf olarak kaydeder. Bunu standart bir Fotoğraf uygulamasında bulabilirsiniz.
 
 ### Windows {#windows}
 

@@ -25,15 +25,15 @@ Mac에서 VPN 앱을 사용할 때도 마찬가지입니다. iCloud 비공개 �
 
 Monterey에서 iCloud 비공개 릴레이가 도입되었습니다. 메일 앱의 개인정보 보호 기능도 iCloud 비공개 릴레이 서버를 사용합니다.
 
-따라서 AdGuard는 iCloud 비공개 릴레이 및 메일 앱 개인정보 보호 기능과 함께 사용할 수 없습니다.
+As a consequence, AdGuard can’t work together with iCloud Private Relay and the Mail app privacy features:
 
 1. iCloud 비공개 릴레이는 AdGuard가 작동하는 소켓 레벨에 도달하기 전에 라이브러리 레벨의 연결에 적용됩니다.
-2. iCloud 비공개 릴레이는 아직 HTTP/3 필터링을 사용할 수 없기 때문에 AdGuard가 필터링된 앱에서 필터링할 수 없는 QUIC을 사용합니다.
-3. 따라서 AdGuard는 iCloud 비공개 릴레이 트래픽을 포함한 QUIC을 차단합니다. 그렇지 않으면 광고 차단이 불가능합니다.
-4. iCloud 비공개 릴레이를 사용하고 AdGuard를 '분할 터널링' 모드로 전환하면 Safari에서 웹사이트를 열 수 없습니다.
-5. Monterey에서 이 문제를 해결하기 위해 '기본 경로' 규칙을 적용합니다. 비공개 릴레이가 해당 규칙을 발견하면 자동으로 비활성화됩니다. 따라서 AdGuard는 Monterey에서 원활하게 작동하지만 iCloud 비공개 릴레이는 비활성화됩니다.
+2. iCloud Private Relay is implemented with HTTP/3 CONNECT proxies.
+3. Since AdGuard does not filter CONNECT HTTP/3 requests yet, it attempts to downgrade HTTP/3 proxy connections to HTTP/1.1, which results in blocking iCloud Private Relay traffic.
+4. When you use iCloud Private Relay and switch AdGuard into the Split-Tunnel mode, you can’t open websites in Safari.
+5. To work around this issue for Monterey, we apply the “default route” rule. 비공개 릴레이가 해당 규칙을 발견하면 자동으로 비활성화됩니다. 따라서 AdGuard는 Monterey에서 원활하게 작동하지만 iCloud 비공개 릴레이는 비활성화됩니다.
 
-`network.extension.monterey.force.split.tunnel`은 'Big Sur' 동작을 복원하지만 이 옵션은 (3) 및 (4)로 인해 웹사이트에 대한 액세스가 중단될 수 있습니다. 저희는 이 문제에 대한 해결책을 계속 찾고 있습니다. 옵션 중 하나는 HTTP/3 필터링을 구현하는 것입니다.
+The `network.extension.monterey.force.split.tunnel` option restores the “Big Sur” behavior, but this option may break access to websites due to (3) and (4). 저희는 이 문제에 대한 해결책을 계속 찾고 있습니다. One of the options is implementing HTTP/3 proxy filtering.
 
 ## 권장 솔루션
 

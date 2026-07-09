@@ -9,7 +9,7 @@ Este artigo é sobre o AdGuard para Android, um bloqueador de anúncios multifun
 
 :::
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Os dados e/ou arquivos fornecidos nos logs são processados de acordo com [a Política de Privacidade do AdGuard](https://adguard.com/en/privacy.html).
 
@@ -17,7 +17,7 @@ Os dados e/ou arquivos fornecidos nos logs são processados de acordo com [a Pol
 
 Às vezes, um registro regular pode não ser suficiente para identificar a origem do problema. Nesses casos, é necessário um log do sistema. Abaixo estão as instruções sobre como coletar e obtê-los: por meio das opções do desenvolvedor e do Logcat.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 O AdGuard tem o compromisso de proteger sua privacidade. Seguimos rigorosamente nossa [Política de Privacidade](https://adguard.com/privacy/android.html) e não coletamos nenhuma informação privada sobre os usuários. Antes de enviar seus registros para a equipe de suporte, revise o arquivo, pois ele pode conter informações adicionais que você não deseja compartilhar. Se contiver tais informações pessoais, recomendamos que você as exclua primeiro.
 
@@ -35,7 +35,7 @@ Para obter um relatório de bug diretamente do seu dispositivo, faça o seguinte
 
 1. Selecione o tipo de relatório de bug desejado e toque em **Reportar**.
 
-    :::note
+    Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
     Depois de um momento, você verá uma notificação de que o relatório de bug está pronto (veja a Figura 2).
 
@@ -50,7 +50,7 @@ Para obter um relatório de bug diretamente do seu dispositivo, faça o seguinte
 
 1. Envie esse registro para nossa equipe de suporte.
 
-    :::note
+    Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
     Nossa equipe de suporte processará seu tíquete muito mais rapidamente se você especificar o número do tíquete do HelpDesk ou o número do problema do GitHub na sua mensagem para o suporte.
 
@@ -63,7 +63,7 @@ Em dispositivos com Android 7 e anteriores, não é possível enviar um relatór
 
 Siga estas instruções:
 
-**Parte #1: prepare o dispositivo**
+### Parte #1: prepare o dispositivo
 
 1. Mude o dispositivo para o modo de desenvolvedor. Para fazer isso: vá para **Configurações** → **Sobre** → toque em **Número da compilação** 7 vezes.
 
@@ -75,7 +75,7 @@ Siga estas instruções:
 
 4 MB devem ser suficientes para armazenar os logs necessários até que você possa fazer a segunda parte (obter o log do dispositivo);
 
-**Parte #2: reproduza o problema**
+### Parte #2: reproduza o problema
 
 É importante reproduzir o problema depois de concluir a primeira parte.
 
@@ -83,7 +83,7 @@ Siga estas instruções:
 
 1. Lembre-se/anote a data e a hora da reprodução e inclua-a no e-mail enviado ao nosso suporte posteriormente.
 
-**Parte #3: obter o log**
+### Parte #3: obter o registro
 
 1. Conecte seu dispositivo a um PC com um cabo USB.
 
@@ -101,7 +101,7 @@ Siga estas instruções:
 
     `adb logcat -v threadtime -d > C:\Arquivos de programas\plataforma-ferramentas\logs.txt`
 
-    Envie por e-mail o arquivo `txt` criado, bem como o horário em que o problema foi reproduzido (da parte #2) para nossa equipe de suporte em support@adguard.com.
+    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at [support@adguard.com](mailto:support@adguard.com).
 
 ### Maneira alternativa para usuários com ROOT
 
@@ -115,8 +115,8 @@ Siga estas instruções:
 
 1. Envie esse registro para nossa equipe de suporte.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
-Nossa equipe de suporte processará seu tíquete muito mais rapidamente se você especificar o número do tíquete do HelpDesk ou o número do problema do GitHub na sua mensagem para o suporte.
+Nossa equipe de suporte processará seu bilhete muito mais rapidamente se você especificar o número do bilhete do HelpDesk ou o número do problema do GitHub na sua mensagem para o suporte.
 
 :::

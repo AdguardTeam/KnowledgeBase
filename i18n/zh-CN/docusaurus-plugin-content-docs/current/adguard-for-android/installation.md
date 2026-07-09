@@ -11,7 +11,7 @@ sidebar_position: 2
 
 ## 系统要求
 
-**操作系统版本：** Android 7.0 或更高版本
+**操作系统版本：** Android 9.0 或更高版本
 
 **RAM**： 至少 2GB
 

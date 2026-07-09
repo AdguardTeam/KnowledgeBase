@@ -3,7 +3,7 @@ title: Lizenz aktivieren
 sidebar_position: 3
 ---
 
-Um Ihre Lizenz zu aktivieren, gehen Sie zum Abschnitt *Lizenz* Ihres AdGuard-Produkts und suchen Sie das Feld *Anmelden* oder die Schaltfläche *Aktivieren* . Verwenden Sie die E-Mail und das Passwort Ihres AdGuard-Kontos, um sich anzumelden. Wenn Sie noch kein Konto haben, wird Ihnen angeboten, eines zu erstellen.
+Um Ihre Lizenz zu aktivieren, öffnen Sie den Abschnitt *Lizenz* Ihres AdGuard-Produkts und suchen Sie das Feld *Anmelden* oder die Schaltfläche *Aktivieren*. Verwenden Sie die E-Mail und das Passwort Ihres AdGuard-Kontos, um sich anzumelden. Wenn Sie noch kein Konto haben, wird Ihnen angeboten, eines zu erstellen.
 
 :::note
 
@@ -76,3 +76,37 @@ Alternativ können Sie auch einen [Lizenzschlüssel](../what-is#license-key) ver
 1. Verwenden Sie Ihre E-Mail-Adresse oder Ihr Social-Media-Konto, um Ihre Lizenz zu aktivieren.
 
     ![Anmeldebildschirm *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
+
+### AdGuard Mini für Mac aktivieren
+
+1. Klicken Sie in der Menüleiste auf das AdGuard Mini-Symbol.
+
+    ![AdGuard Mini in der Menüleiste](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
+
+2. Klicken Sie auf das Symbol „Einstellungen”.
+
+    ![Einstellungen-Symbol *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
+
+3. Klicken Sie auf *Lizenz*.
+
+    ![Klicken Sie auf Lizenz](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
+
+4. Öffnen Sie das Menü (⋮) in der oberen rechten Ecke und klicken Sie auf *Bereits gekauft?*.
+
+    ![Klicken Sie auf „Bereits gekauft“](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
+
+5. Sie sehen die verfügbaren Aktivierungsoptionen:
+
+    ![Aktivierungsoptionen](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
+
+    - **Anmelden**
+
+      Melden Sie sich bei Ihrem AdGuard-Konto an, das über eine gültige Lizenz verfügt.
+
+    - **Aus dem App Store wiederherstellen**
+
+      Verwenden Sie eine Lizenz, die Sie zuvor über den App Store erworben haben.
+
+    - **Aktivierungscode eingeben**
+
+      Geben Sie Ihren Aktivierungscode ein.

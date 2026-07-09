@@ -38,11 +38,10 @@ sidebar_position: 2
 - **Экспериментальный фильтр** предназначен для проверки некоторых новых правил фильтрации, которые потенциально могут вызывать конфликты или ломать работу сайтов. В случае успешной проверки правила из этого фильтра добавляются в основные фильтры. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_5_Experimental/filter.txt)
 - **Фильтр мобильной рекламы** блокирует рекламу на мобильных устройствах. Содержит все известные нам рекламные сети. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt)
 - **DNS-фильтр** составлен из нескольких фильтров (Базовый фильтр AdGuard, Фильтр социальных сетей, Фильтр счётчиков и систем аналитики, Фильтр мобильной рекламы, EasyList и EasyPrivacy) и специально упрощён для лучшей совместимости с блокировкой рекламы на DNS-уровне. Этот фильтр используется серверами [AdGuard DNS](https://adguard-dns.io/kb) для блокировки рекламы и трекинга. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt)
-- **Quick Fixes filter** — used to quickly resolve critical content filtering issues on popular websites without updating the MV3 extension. [View rules](https://filters.adtidy.org/extension/chromium-mv3/filters/24.txt)
 
 ## Политика фильтров AdGuard
 
-Our filter policy defines what AdGuard filters should and shouldn't block, as well as the rules for adding and removing rules from filters. Чтобы узнать больше, прочтите полный текст [политики фильтров AdGuard](../filter-policy).
+Наша политика фильтрации определяет, что фильтры AdGuard должны блокировать, а что нет, а также регулирует порядок добавления и удаления правил из фильтров. Чтобы узнать больше, прочтите полный текст [политики фильтров AdGuard](../filter-policy).
 
 ## Участвовать в развитии фильтров AdGuard
 

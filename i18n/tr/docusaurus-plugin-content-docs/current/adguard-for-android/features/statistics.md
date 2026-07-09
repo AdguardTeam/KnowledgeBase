@@ -1,5 +1,5 @@
 ---
-title: Statistics
+title: İstatistikler
 sidebar_position: 3
 ---
 
@@ -11,11 +11,11 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 The _Statistics_ module can be accessed by tapping the _Statistics_ tab (fourth icon from the left at the bottom of the screen). This feature gives you a complete picture of what is happening with the traffic on your device: how many requests are being sent and to which companies, how much data is being uploaded and downloaded, what requests are being blocked, and more. You can choose to display the statistics for the selected time period: 24 hours, 7 days, 30 days, or all time.
 
-![Statistics \*mobile\_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
+![Statistics \*mobile_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
 
 The stats are categorized into different sections.
 
-### Requests
+### İstekler
 
 This section shows the number of blocked ads, trackers, and the total number of requests. You can filter requests by data type: mobile data, Wi-Fi, or all data combined.
 
@@ -33,7 +33,7 @@ Bu bölüm, cihazınızda yüklü tüm uygulamaların istatistiklerini görünt�
 
 Tap _View all apps_ to expand the list of your apps, sorted by the number of ads, trackers, or requests.
 
-![List of apps \*mobile\_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
+![List of apps \*mobile_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
 
 If you tap an app, you can see its full stats: the requests it sends and the domains and companies it reaches out to.
 

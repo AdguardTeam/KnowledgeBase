@@ -23,4 +23,4 @@ Máme samostatné rozšíření pro Safari. Od vydání [Safari 13](https://adgu
 
 :::
 
-**Nezapomeňte, že funkčnost každého rozšíření je přísně omezena možnostmi prohlížeče.** Pokud tedy chcete získat plnohodnotnou ochranu, zvažte instalaci samostatného programu pro svůj počítač. Existuje [důvod, proč](adguard-browser-extension/comparison-standalone).
+**Nezapomeňte, že funkčnost každého rozšíření je přísně omezena možnostmi prohlížeče.** Pokud tedy chcete získat plnohodnotnou ochranu, zvažte instalaci samostatného programu pro svůj počítač. Existuje [důvod, proč](/adguard-browser-extension/comparison-standalone).

@@ -13,9 +13,9 @@ Bien que le blocage de contenu Safari et la protection DNS soient incontestablem
 
 ### **Thème sombre**
 
-![Thème clair \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
+![Thème clair \*mobile_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Thème sombre \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![Thème sombre \*mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
 Situé juste en haut de l'écran **Paramètres** → **Général**, ce paramètre vous permet de basculer entre les thèmes sombres et clairs.
 

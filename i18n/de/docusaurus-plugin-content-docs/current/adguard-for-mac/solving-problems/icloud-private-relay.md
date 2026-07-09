@@ -28,12 +28,12 @@ Auf Monterey wurde iCloud Privat-Relay eingeführt. Datenschutzfunktionen der Ma
 Infolgedessen kann AdGuard nicht mit iCloud Privat-Relay und den Datenschutzfunktionen der Mail-App zusammenarbeiten:
 
 1. iCloud Privat-Relay wird auf Verbindungen auf Bibliotheksebene angewendet – bevor sie die Socket-Ebene erreichen, auf der AdGuard arbeitet.
-2. iCloud Privat-Relay verwendet QUIC, das AdGuard in gefilterten Apps nicht filtern kann, da die HTTP/3-Filterung noch nicht verfügbar ist.
-3. Folglich sperrt AdGuard QUIC, einschließlich des iCloud Privat-Relay-Verkehrs — andernfalls ist das Sperren von Werbung unmöglich.
-4. Wenn Sie iCloud Privat-Relay verwenden und AdGuard in den „Split-Tunnel“-Modus schalten, können Sie keine Websites in Safari öffnen.
+2. iCloud Privat-Relay wird mit HTTP/3 CONNECT-Proxys implementiert.
+3. Da AdGuard CONNECT HTTP/3-Anfragen noch nicht filtert, versucht es, HTTP/3-Proxy-Verbindungen auf HTTP/1.1 herunterzustufen, was zur Blockierung des iCloud Privat-Relay-Verkehrs führt.
+4. Wenn Sie iCloud Privat-Relay verwenden und AdGuard in den Split-Tunnel“Modus schalten, können Sie keine Websites in Safari öffnen.
 5. Um dieses Problem für Monterey zu umgehen, wenden wir die Regel „Standard-Route“ an. Wenn Privat-Relay diese Regel sieht, deaktiviert es sich automatisch. AdGuard funktioniert also nahtlos auf Monterey, aber iCloud Privat-Relay wird deaktiviert.
 
-`network.extension.monterey.force.split.tunnel` stellt das „Big Sur“-Verhalten wieder her, aber diese Option kann den Zugriff auf Websites aufgrund von (3) und (4) unterbrechen. Wir suchen weiter nach einer Lösung für dieses Problem. Eine der Optionen ist die Implementierung der HTTP/3-Filterung.
+Die Option `network.extension.monterey.force.split.tunnel` stellt das „Big Sur“-Verhalten wieder her, aber diese Option kann den Zugriff auf Websites aufgrund von (3) und (4) unterbrechen. Wir suchen weiter nach einer Lösung für dieses Problem. Eine der Optionen ist die Implementierung der HTTP/3-Proxy-Filterung.
 
 ## Empfohlene Lösung
 

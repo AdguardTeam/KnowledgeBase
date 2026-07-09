@@ -5,7 +5,7 @@ sidebar_position: 3
 
 Lisansınızı etkinleştirmek için AdGuard ürününüzün *Lisans* bölümüne gidin ve *Giriş yap* alanını veya *Etkinleştir* düğmesini bulun. Giriş yapmak için AdGuard hesabınızın e-posta adresini ve parolasını kullanın. Henüz bir hesabınız yoksa, bir tane oluşturmanız teklif edilecektir.
 
-:::not
+:::note
 
 AdGuard hesabı aracılığıyla bir lisansı etkinleştirmek için en az bir boş alana sahip geçerli bir lisans gereklidir. Lisansınız zaten maksimum sayıda cihazda kullanılıyorsa, [lisansınızı yükseltebilir](../payment-options#upgrade) veya [bir cihazdan diğerine aktarabilirsiniz](../transfer).
 
@@ -76,3 +76,37 @@ Alternatif olarak lisansı etkinleştirmek için [lisans anahtarı](../what-is#l
 1. Lisansınızı etkinleştirmek için e-posta adresinizi veya sosyal medya hesabınızı kullanın.
 
     ![Giriş ekranı *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
+
+### Activating AdGuard Mini for Mac
+
+1. Click AdGuard Mini icon in the menu bar.
+
+    ![AdGuard Mini in the menu bar](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
+
+2. Click the settings icon.
+
+    ![Settings icon *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
+
+3. Go to *License*.
+
+    ![Go to License](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
+
+4. Open the menu (⋮) in the upper right corner and click *Already purchased?*.
+
+    ![Click already purchased](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
+
+5. You will see the available activation options:
+
+    ![Activation options](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
+
+    - **Log in**
+
+      Log in to your AdGuard account that has a valid license in it.
+
+    - **Restore from App Store**
+
+      Use a license that you have previously bought through the App Store.
+
+    - **Enter activation code**
+
+      Enter your activation code.

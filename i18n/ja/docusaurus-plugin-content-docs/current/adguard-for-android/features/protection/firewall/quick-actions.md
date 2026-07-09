@@ -13,6 +13,6 @@ sidebar_position: 2
 
 「クイックアクション」は、「最新アクティビティ」（「[統計](/adguard-for-android/features/statistics)」→「最新アクティビティ」）のリクエスト情報に基づいています。 このセクションには、最近インターネットに接続したアプリが表示されます。
 
-![クイックアクション \*mobile\_border](https://cdn.adtidy.org/blog/new/1l1vhScreenshot_20230706-142022_AdGuard.jpg)
+![クイックアクション \*mobile_border](https://cdn.adtidy.org/blog/new/1l1vhScreenshot_20230706-142022_AdGuard.jpg)
 
 インターネットそのものやモバイルデータ通信を一切使うべきではないアプリや、最近使っていないアプリがあれば、その場でアクセスをブロック・制限することができます。 ※「クイックアクション」を使うには、「ファイアウォール」機能がオンになっている必要があります。

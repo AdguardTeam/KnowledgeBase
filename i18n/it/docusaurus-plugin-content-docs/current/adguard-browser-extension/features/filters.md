@@ -1,6 +1,6 @@
 ---
 title: Filtri
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 :::info
@@ -29,6 +29,8 @@ Per aggiungere un filtro, basta cliccare _Aggiungi filtro personalizzato_, inser
 
 ![Aggiungi un filtro personalizzato \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
+Custom filters update independently, so your filtering remains effective and current without requiring extension updates.
+
 ## Regole utente {#user-rules}
 
 _Le regole utente_ sono un altro strumento che ti aiuta a personalizzare il blocco degli annunci.
@@ -49,7 +51,7 @@ La _lista consentita_ è utilizzata per escludere certi siti web dal filtraggio.
 
 ![Allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-Inoltre, la _lista consentita_ può essere invertita: puoi sbloccare gli annunci ovunque, tranne che sui siti web aggiunti a questo elenco. Per farlo, attiva l'opzione _Inverti lista consentita_.
+_Allowlist_ can also be inverted: you can unblock ads everywhere except on the websites added to this list. To do that, activate the _Invert Allowlist_ option. Before it turns on, a confirmation dialog will appear to prevent accidental activation and explain what will happen.
 
 ! [Inverti allowlist \*border] (https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Como configurar o proxy de saída
-sidebar_position: 8
+sidebar_position: 7
 ---
 
 :::info
@@ -11,7 +11,7 @@ Este artigo é sobre o AdGuard para Android, um bloqueador de anúncios multifun
 
 Abaixo está uma lista dos aplicativos mais conhecidos que podem ser configurados para funcionar como proxies no AdGuard.
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Se o seu aplicativo não estiver listado abaixo, verifique as configurações de proxy nas configurações ou entre em contato com a equipe de suporte.
 
@@ -117,7 +117,7 @@ Neste artigo, damos exemplos de como configurar alguns dos proxies mais populare
 
 *Aqui presumimos que você já configurou um servidor Shadowsocks e um cliente no seu dispositivo.*
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Você deve remover o aplicativo Shadowsocks da filtragem antes de configurar o processo (**Gerenciamento de aplicativos** →**Shadowsocks** → **Rotear tráfego pelo AdGuard**) para evitar loops e quedas infinitos.
 
@@ -141,7 +141,7 @@ Você deve remover o aplicativo Shadowsocks da filtragem antes de configurar o p
 
 *Aqui presumimos que você já é um cliente Clash e o tem instalado em seu dispositivo.*
 
-1. Abra o Clash e vá em **Configurações** → **Rede** → **Rota Sistema Tráfego** e alterne o botão. Isso colocará o Clash no modo proxy.
+1. Abra o Clash e vá para **Configurações** → **Rede** → **Tráfego da rota do sistema** e ative a opção. Isso colocará o Clash no modo proxy.
 
 1. Abra o AdGuard e vá para **Gerenciamento de aplicativos**. Escolha **Clash para Android** e desabilite **Rotear tráfego através do AdGuard**. Isso eliminará o looping de tráfego.
 
@@ -154,6 +154,28 @@ Você deve remover o aplicativo Shadowsocks da filtragem antes de configurar o p
     | Tipo do proxy  | *SOCKS5*    |
     | Host do proxy  | *127.0.0.1* |
     | Porta do proxy | *7891*      |
+
+### How to use AdGuard with WG Tunnel
+
+*The proxy mode was added in version 4.0. We presume that you already have WG Tunnel installed on your device and have added the WireGuard configuration.*
+
+1. Open WG Tunnel and go to **Settings** (the cog wheel at the bottom) → **App Mode** → **Proxy (experimental)**. This will set WG Tunnel to proxy mode.
+
+1. Abra o AdGuard e vá para **Gerenciamento de aplicativos**. Choose **WG Tunnel** and disable **Route traffic through AdGuard**. Isso eliminará o looping de tráfego.
+
+1. Em seguida, vá para **Configurações** → **Filtragem** → **Rede** → **Proxy** → **Servidor proxy**.
+
+1. Toque em **Adicionar servidor proxy** e preencha os campos:
+
+    | Campo          | Valor       |
+    | -------------- | ----------- |
+    | Tipo do proxy  | *SOCKS5*    |
+    | Host do proxy  | *127.0.0.1* |
+    | Porta do proxy | *25344*     |
+
+1. Toque em **Salvar e selecionar**.
+
+1. Enable the main proxy switch and AdGuard protection to route your device’s traffic through the proxy.
 
 ## Limitações
 

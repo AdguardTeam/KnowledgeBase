@@ -9,13 +9,13 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-:::not
+:::note
 
 Sistem günlüklerinde sağlanan veriler ve/veya dosyalar [AdGuard Gizlilik Politikasına](https://adguard.com/en/privacy.html) uygun olarak işlenir.
 
 :::
 
-AdGuard kurulumu sırasında herhangi bir sorun oluşursa, destek ekibi sizden AdGuard kurulum günlüklerini toplamanızı ve göndermenizi isteyebilir. In this case you need to:
+AdGuard kurulumu sırasında herhangi bir sorun oluşursa, destek ekibi sizden AdGuard kurulum günlüklerini toplamanızı ve göndermenizi isteyebilir. Bu durumda yapmanız gerekenler:
 
 1. Select the *Run* command in Start menu or press *Win + R* on the keyboard.
 

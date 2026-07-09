@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Nossos aplicativos de desktop, AdGuard para Windows e AdGuard para Mac, podem ser usados como proxy para outros dispositivos. Isso significa que você pode rotear o tráfego de outros dispositivos através do AdGuard (todo o tráfego ou tráfego de aplicativos e navegadores específicos).
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Esses dispositivos devem estar na mesma rede que o PC ou Mac com o AdGuard.
 
@@ -21,9 +21,9 @@ Dependendo do sistema operacional do dispositivo cujo tráfego você deseja filt
 
 1. Anote o endereço IP do seu computador com o AdGuard instalado.
 
-1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. Para Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
+1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. No Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
 
-1. No mesmo computador com o AdGuard, siga este link: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. On the same computer with AdGuard, follow this link: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Clique no botão **Baixar**. Se o download não iniciar, tente outro navegador como o Firefox, por exemplo.
 
@@ -55,17 +55,17 @@ Dependendo do sistema operacional do dispositivo cujo tráfego você deseja filt
 
 1. Clique em **Configurar** na guia *Usar um servidor proxy*.
 
-1. Ative esta opção. Para **Endereço IP do proxy**, digite o endereço IP do seu computador que você anotou na etapa 1. Para **Port**, insira a porta escolhida nas configurações de rede do aplicativo AdGuard para desktop.
+1. Ative esta opção. Para **Endereço IP do proxy**, digite o endereço de IP do seu computador, anotado na etapa 1. Para **Port**, insira a porta escolhida nas configurações de rede do aplicativo AdGuard para desktop.
 
 1. Clique em **Salvar**.
 
 ### Mac {#mac}
 
-1. Anote o endereço IP do seu computador desktop com o AdGuard instalado.
+1. Anote o endereço IP do seu computador com o AdGuard instalado.
 
-1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. Para Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
+1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. No Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
 
-1. Siga este link usando um navegador da web: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. Follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Clique no botão **Baixar**. Se o download não iniciar, tente outro navegador como o Firefox, por exemplo.
 
@@ -93,11 +93,11 @@ Dependendo do sistema operacional do dispositivo cujo tráfego você deseja filt
 
 ### Android {#android}
 
-1. Anote o endereço IP do seu computador desktop com o AdGuard instalado.
+1. Anote o endereço IP do seu computador com o AdGuard instalado.
 
-1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. Para Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
+1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. No Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
 
-1. No computador com AdGuard, siga este link usando um navegador: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Clique no botão **Baixar**. Se o download não iniciar, tente outro navegador como o Firefox, por exemplo.
 
@@ -113,11 +113,11 @@ Dependendo do sistema operacional do dispositivo cujo tráfego você deseja filt
 
 ### iOS {#ios}
 
-1. Anote o endereço IP do seu computador desktop com o AdGuard instalado.
+1. Anote o endereço IP do seu computador com o AdGuard instalado.
 
-1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. Para Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
+1. Certifique-se de que a proteção do AdGuard esteja ativada. Em um computador Windows, marque a caixa **Usar o AdGuard como proxy HTTP** na guia **Rede** das configurações. No Mac, vá para **Configurações** → **Preferências** → **Rede** e ative **proxy HTTP**.
 
-1. No computador com AdGuard, siga este link usando um navegador: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Clique no botão **Baixar**. Se o download não iniciar, tente outro navegador como o Firefox, por exemplo.
 

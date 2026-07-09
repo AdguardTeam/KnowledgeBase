@@ -1,6 +1,6 @@
 ---
 title: 有 Root 权限的设备
-sidebar_position: 7
+sidebar_position: 9
 ---
 
 :::info

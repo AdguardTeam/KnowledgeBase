@@ -16,7 +16,7 @@ Karşılaştığınız reklam örneklerini içeren bir form doldurarak bize yard
 
 ## Report a website {#report}
 
-:::not
+:::note
 
 Uygulama veya AdGuard Tarayıcı Asistanı aracılığıyla bir şikayet gönderdiğinizde, tüm bilgiler otomatik olarak önceden doldurulur. Ekran görüntüleri hariç, bunları kendiniz hazırlamanız ve eklemeniz gerekir. [doğrudan bağlantı](https://reports.adguard.com/new_issue.html)kullanıyorsanız, verileri elle girmeniz gerekir.
 
@@ -72,7 +72,7 @@ Bir reklamın yeniden eklendiğini veya bir sitenin hatalı görüntülendiğini
 
 ## Formu doldurma {#form}
 
-:::not
+:::note
 
 When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Ekran görüntüleri hariç, bunları kendiniz hazırlamanız ve eklemeniz gerekir. [doğrudan bağlantı](https://reports.adguard.com/new_issue.html)kullanıyorsanız, verileri elle girmeniz gerekir.
 
@@ -109,7 +109,7 @@ When you send a complaint via the app or via AdGuard Assistant, all information 
 
     ![forma6 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma6en.png)
 
-7. Check each step before sending the form;
+7. Formu göndermeden önce her adımı kontrol edin;
 
     ![forma7 *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma7en.png)
 
@@ -123,7 +123,7 @@ This option is suitable for those who aren’t afraid of difficulties and don’
 
 For example, you are faced with a situation that your favorite website won’t open, authorization has broken, or some page elements are displayed incorrectly. The cause may be using a specific filter/extension/Stealth Mode setting. To diagnose these problems, you need to do the following:
 
-### **Filters**
+### **Filtreler**
 
 1. Disable **Ad Blocker**;
 2. If it solved the problem, re-enable the module and disable filters one by one. This is done to identify filters that "break" the page;

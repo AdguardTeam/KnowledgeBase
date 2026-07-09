@@ -1,34 +1,34 @@
 ---
-title: Activity and statistics
+title: Activitate și statistici
 sidebar_position: 4
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru iOS, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-_Activity_ screen is the 'information hub' of AdGuard's DNS protection suite. You can quickswitch to it by tapping the third icon in the bottom bar. N.b. this screen is only seen when DNS protection is enabled.
+_Activity_ screen is the 'information hub' of AdGuard's DNS protection suite. Puteți comuta rapid la acesta atingând a treia iconiță din bara de jos. N.b. acest ecran este vizibil doar când protecția DNS este activată.
 
-![Activity screen \*mobile\_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
+![Ecran Activitate \*mobil_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
 
-This is where AdGuard displays statistics about the device's DNS requests, such as total number, number of blocked requests and data saved by blocking them. AdGuard can display the statistics for a day, a week, a month or in total.
+Aici AdGuard afișează statistici despre cererile DNS ale dispozitivului, precum numărul total, numărul de cereri blocate și datele salvate prin blocarea acestora. AdGuard poate afișa statisticile pentru o zi, o săptămână, o lună sau în total.
 
-Below is the _Recent activity_ feed. AdGuard stores the last 1500 DNS requests that have originated on your device and shows their attributes such as protocol type and target domain.
+Mai jos se află fluxul de _Activitate recentă_. AdGuard stochează ultimele 1500 de cereri DNS care au fost inițiate pe dispozitivul dumneavoastră și afișează atributele lor, cum ar fi tipul de protocol și domeniul țintă.
 
 :::note
 
-AdGuard does not send this information anywhere. It is 100% local and does not leave your device.
+AdGuard nu trimite aceste informații nicăieri. Este 100% local și nu părăsește dispozitivul dumneavoastră.
 
 :::
 
-Tap any request to view more details. There will also be buttons to add the request to Blocklist/Allowlist in one tap.
+Atinge orice cerere pentru a vedea mai multe detalii. Vor exista, de asemenea, butoane pentru a adăuga cererea la lista de blocări/permisă cu o singură atingere.
 
-![Request details \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
+![Detalii cerere \*mobil_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
 
-Above the activity feed, there are _Most active_ and _Most blocked_ companies. Tap each to see data based on the last 1500 requests.
+Deasupra fluxului de activitate, există companii _Cele mai active_ și _Cele mai blocate_. Atingeți fiecare pentru a vedea datele bazate pe ultimele 1500 de cereri.
 
-### Statistics {#statistics}
+### Statistici {#statistics}
 
-Aside from the _Activity_ screen, you can find global statistics on the home screen and in widgets.
+Pe lângă ecranul _Activitate_, puteți găsi statistici globale pe ecranul principal și în widget-uri.

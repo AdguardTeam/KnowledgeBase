@@ -1,95 +1,95 @@
 ---
-title: How to take a screenshot
+title: Cum să faceți o captură de ecran
 sidebar_position: 5
 ---
 
-Screenshot is a capture of your computer’s or mobile device’s screen, which can be obtained by using standard tools or a special program/app.
+Captura de ecran este o captură a ecranului computerului sau aparatului mobil, care poate fi obținută prin utilizarea unor instrumente standard sau a unui program/aplicație special.
 
-Sometimes screenshots are requested by the support team for a better understanding. Here you will find all the necessary hotkeys you should know in order to take screenshots on your computer or mobile device.
+Uneori, capturile de ecran sunt solicitate de echipa de asistență pentru a înțelege mai bine. Aici veți găsi toate combinațiile de taste necesare pe care ar trebui să le știți pentru a face capturi de ecran pe computerul sau aparatul mobil.
 
 ### Android {#android}
 
-Taking a screenshot on an Android device can be done in various ways, depending on the device model and its manufacturer.
+Capturarea unei capturi de ecran pe un dispozitiv Android poate fi realizată în diverse moduri, în funcție de modelul dispozitivului și de fabricantul său.
 
-Generally, the following button combination is used for Android:
+În general, următoarea combinație de butoane este folosită pentru Android:
 
 - **Press the *Volume Down* and the *Power* buttons at the same time**
 
-Your Android device will capture the entire screen and save it as a photo. So, you can find the screenshot in a *Screenshots* folder in your Gallery.
+Aparatul dumneavoastră Android va captura întregul ecran și îl va salva ca o fotografie. Deci, puteți găsi captura de ecran într-un folder *Capturi de ecran* în Galeria dumneavoastră.
 
-For older devices, you may use following combinations:
+Pentru dispozitive mai vechi, puteți utiliza următoarele combinații:
 
 - **Press *Home* and *Power* at the same time**
 - **Press *Back* and *Home* at the same time**
 
-On Android 8 and later you can also take a screenshot with other manipulations, for example, with swiping your hand over the screen at a 90-degree angle to trigger a screenshot (Samsung devices), or with swiping down three fingers (OnePlus devices), etc.
+Pe Android 8 și versiunile ulterioare, puteți face de asemenea o captură de ecran cu alte manipulări, de exemplu, prin periinderea mâinii peste ecran la un unghi de 90 de grade pentru a declanșa o captură de ecran (dispozitive Samsung) sau prin periinderea cu trei degete (dispozitive OnePlus), etc.
 
-The options for taking a screenshot vary by brand and model. Check your device’s settings to find the method that works best for you.
+Opțiunile pentru a face o captură de ecran variază în funcție de marcă și model. Verificați setările dispozitivului dumneavoastră pentru a găsi metoda care funcționează cel mai bine pentru dumneavoastră.
 
-Besides, you can always use any special apps for taking screenshots on your devices, for example — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap*, etc.
+În plus, puteți folosi întotdeauna aplicații speciale pentru a face capturi de ecran pe dispozitivele dumneavoastră, de exemplu — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap*, etc.
 
 ### iOS {#ios}
 
-Any iOS device (except very old ones) lets you take a screenshot using standard tools.
+Orice dispozitiv iOS (cu excepția celor foarte vechi) vă permite să faceți o captură de ecran utilizând instrumente standard.
 
-To take a screenshot on an iOS device, use the following combination:
+Pentru a face o captură de ecran pe un dispozitiv iOS, utilizați următoarea combinație:
 
-- **Press the *Sleep/Wake* (side) button and the *Home* button at the same time, then quickly release them**
+- **Apăsați simultan butonul *Sleep/Wake* (lateral) și butonul *Home*, apoi eliberați-i rapid**
 
-and this one for iPhone X or later:
+iar acesta pentru iPhone X sau mai recent:
 
 - **Press the *Sleep/Wake* button and the *Volume up* button at the same time, then quickly release them**
 
-Your iOS device will capture the entire screen and save it as a photo. You can find it in a standard Photo app.
+Dispozitivul dumneavoastră iOS va captura întregul ecran și îl va salva ca o fotografie. Puteți găsi aceasta într-o aplicație standard de fotografii.
 
 ### Windows {#windows}
 
-- **To take a screenshot on Windows, press the *PrtScn* key**
+- **Pentru a face o captură de ecran pe Windows, apăsați tasta *PrtScn***
 
-On some notebooks you have to hold *Fn* and then press *PrtScn*.
+Pe unele laptopuri trebuie să țineți apăsat *Fn* și apoi să apăsați *PrtScn*.
 
-*Please note: The PrtScn (Print Screen) key may be abbreviated differently on different keyboards — PrntScrn, PrtScn, PrtScr, or PrtSc.*
+*Vă rugăm să rețineți: Tasta PrtScn (Print Screen) poate fi abreviată diferit pe diferite tastaturi — PrntScrn, PrtScn, PrtScr sau PrtSc.*
 
-Windows captures the entire screen and copies it to the clipboard.
+Windows capturează întregul ecran și îl copiază în clipboard.
 
 To take a screenshot of an active window, use the following shortcut keys:
 
-- **Hold down *Alt* and press *PrtScn* (or *Fn + Alt + PrtScn* on some laptops)**
+- **Țineți apăsat *Alt* și apăsați *PrtScn* (sau *Fn + Alt + PrtScn* pe unele laptopuri)**
 
 To take a screenshot of a specific area, use the following shortcut keys:
 
-- ***Press ***Win + Shift + S******
+- ***Apăsați ***Win + Shift + S******
 
-After you take a screenshot, it will be saved in the clipboard. In most cases, you will be able to paste it into a document that you are currently editing by using the *Ctrl + V* shortcut. Alternatively, if you need to save the screenshot into a file, you should open the standard **Paint** program (or any other app that can work with images). Paste your screenshot there using the same shortcut keys or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
+După ce faceți o captură de ecran, aceasta va fi salvată în clipboard. În cele mai multe cazuri, veți putea să-l lipiți într-un document pe care îl editați în prezent folosind combinația de taste *Ctrl + V*. Alternativ, dacă trebuie să salvați captura de ecran într-un fișier, ar trebui să deschideți programul standard **Paint** (sau orice altă aplicație care poate funcționa cu imagini). Lipiți captura de ecran acolo folosind aceleași combinații de taste sau făcând clic pe butonul Lipire (de obicei în colțul din stânga sus al ecranului) și apoi salvați-l.
 
-Windows 8 and 10 let you take a screenshot very quickly with the *Win + PrtScn* shortcut keys. As soon as you press these keys, the screenshot will be automatically saved as a file to your *Pictures* → *Screenshots Folder*.
+Windows 8 și 10 vă permit să faceți o captură de ecran foarte repede cu combinațiile de taste *Win + PrtScn*. As soon as you press these keys, the screenshot will be automatically saved as a file to your *Pictures* → *Screenshots Folder*.
 
-There is also a dedicated program for taking screenshots called *Snipping Tool* that you can find via Start menu among standard programs of your computer. Snipping Tool lets you capture of any area of your desktop or the entire screen. After taking a screenshot using this program you can edit the picture and save it to any folder on your computer.
+Există, de asemenea, un program dedicat pentru a face capturi de ecran numit *Snipping Tool* pe care îl puteți găsi în meniul Start, printre programele standard ale computerului dumneavoastră. Snipping Tool vă permite să capturați orice zonă a desktopului sau întregul ecran. After taking a screenshot using this program you can edit the picture and save it to any folder on your computer.
 
-Besides, you can also try using different apps for taking screenshots on your computer, like **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap**, etc.
+În plus, puteți încerca să folosiți diferite aplicații pentru a face capturi de ecran pe computerul dumneavoastră, cum ar fi **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap**, etc.
 
 ### macOS {#mac}
 
-To take a screenshot on Mac, use the following shortcut keys:
+Pentru a face o captură de ecran pe Mac, folosiți următoarele combinații de taste:
 
-- ***Press and hold ***⌘ Cmd + Shift + 3******
+- ***Apăsați și țineți apăsat ***⌘ Cmd + Shift + 3******
 
-Your Mac will capture the entire screen and save it as a file on the desktop.
+Mac-ul dumneavoastră va captura întregul ecran și îl va salva ca un fișier pe desktop.
 
 To take a screenshot of an active window, use the following shortcut keys:
 
-- **Press and hold *⌘ Cmd + Shift + 4 + Space bar*. The pointer will change to a camera icon. Click the window to capture it. Press Esc to cancel taking a screenshot**
+- **Apăsați și țineți apăsat *⌘ Cmd + Shift + 4 + Spațiu*. The pointer will change to a camera icon. Faceți clic pe fereastră pentru a o captura. Apăsați Esc pentru a anula capturarea unei ecrane**
 
 To take a screenshot of a specific area, use the following shortcut keys:
 
-- ***Press ***⌘ Cmd + Shift + 5******. Drag the crosshair to select the needed area. Release your mouse or trackpad to take a screenshot, press Esc to cancel it.
+- ***Apăsați ***⌘ Cmd + Shift + 5******. Drag the crosshair to select the needed area. Eliberați mouse-ul sau trackpad-ul pentru a face o captură de ecran, apăsați Esc pentru a o anula.
 
-To take a screenshot of the *Touch Bar* (MacBook Pro), use the following shortcut keys:
+Pentru a face o captură de ecran a *Touch Bar* (MacBook Pro), utilizați următoarele combinații de taste:
 
-- ***Press ***⌘ Cmd + Shift + 6******
+- ***Apăsați ***⌘ Cmd + Shift + 6******
 
-Your Mac captures the entire *Touch Bar* and saves it as a file on the desktop.
+Mac-ul dumneavoastră capturează întreaga *Touch Bar* și o salvează ca un fișier pe desktop.
 
-To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the shortcut keys above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* shortcut keys.
+Pentru a copia o captură de ecran în clipboard în loc să o salvați, țineți apăsat *Ctrl* împreună cu oricare dintre combinațiile de taste de mai sus. Apoi puteți lipi captura de ecran (din clipboard) într-un document sau o imagine pe care o editați în prezent folosind combinațiile de taste *Cmd + V*.
 
-You can also take screenshots by using **Preview** and choosing **Take screenshot** (of the selected area, window, or the entire screen). With **Preview** you can save your screenshots in JPG, TIFF, PDF, and other file formats.
+You can also take screenshots by using **Preview** and choosing **Take screenshot** (of the selected area, window, or the entire screen). Cu **Preview** puteți salva capturile de ecran în formate de fișiere JPG, TIFF, PDF și altele.

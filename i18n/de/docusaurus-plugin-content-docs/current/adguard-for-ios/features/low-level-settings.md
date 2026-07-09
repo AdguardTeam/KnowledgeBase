@@ -9,7 +9,7 @@ Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker,
 
 :::
 
-![Low-Level-Einstellungen \*mobile\_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
+![Low-Level-Einstellungen \*mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
 
 Um die _Low-Level-Einstellungen_ zu öffnen, gehen Sie zu _Einstellungen_ → _Allgemein_ → (Aktivieren Sie den _Erweiterten Modus_, falls er deaktiviert ist) → _Erweiterte Einstellungen_ → _Low-Level-Einstellungen_.
 

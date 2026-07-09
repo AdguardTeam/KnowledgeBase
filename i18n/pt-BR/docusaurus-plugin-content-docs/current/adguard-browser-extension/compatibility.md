@@ -17,7 +17,7 @@ Se você tiver a versão desktop do AdGuard instalada em seu PC, é melhor usar 
 
 ## Assistente de navegador AdGuard
 
-![Assistente de navegador AdGuard \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
+![Assistente de navegador AdGuard \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 
 O Assistente de navegador AdGuard é uma extensão de navegador que funciona e se sente exatamente como a Extensão do AdGuard para navegador, mas é muito mais leve e não interfere nos aplicativos de desktop. Você pode [ler mais sobre o Assistente do navegador para Windows](/adguard-for-windows/browser-assistant) ou [Mac](/adguard-for-mac/features/browser-assistant), ou [baixá-lo em nosso site](https://adguard.com/adguard-assistant/overview.html).
 

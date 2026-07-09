@@ -1,27 +1,27 @@
 ---
-title: Local.adguard.org domain
+title: Domeniul local.adguard.org
 sidebar_position: 3
 ---
 
-Users of AdGuard for Windows, Mac, and Android may notice that AdGuard adds a small script to every web page, that is loaded from the `local.adguard.org` domain.
+Utilizatorii AdGuard pentru Windows, macOS și Android pot observa că AdGuard adaugă un mic script pe fiecare pagină web, care este încărcată din domeniul `local.adguard.org`.
 
-First of all, don't worry, this is not a real domain, and there is actually no real server with that name. This domain is used to apply cosmetic filtering to web pages, but everything is done locally right on your device without connecting to any server.
+În primul rând, nu vă faceți griji, acesta nu este un domeniu real, iar de fapt nu există un server real cu acest nume. Acest domeniu este folosit pentru a aplica filtrarea cosmetică pe paginile web, dar totul se face local, direct pe dispozitivul dumneavoastră, fără a se conecta la vreun server.
 
-### Technical explanation
+### Explicație tehnică
 
-But what's going on and why is it done? Please read the technical explanation below.
+Dar ce se întâmplă și de ce se face asta? Vă rugăm să citiți explicația tehnică de mai jos.
 
-1. AdGuard is a network-level content blocker so it cannot simply add custom JavaScript and CSS to webpages like what browser extensions do. However, doing this is crucial for quality content blocking.
-2. In order to do it AdGuard injects a "content script" that looks like this: `<script src="https://local.adguard.org/.../content-script.js">`. This "content script" takes care of cosmetic filtering, hides or removes ad content from the web pages.
-3. Connections to the IP address of the `local.adguard.org` domain are intercepted by AdGuard on the network level and **processed locally**. This is why that domain has a "static" IP address that does not change for years.
+1. AdGuard este un blocant de conținut la nivel de rețea, așa că nu poate adăuga pur și simplu JavaScript și CSS personalizate pe pagini web, așa cum fac extensiile pentru browser. Cu toate acestea, a face acest lucru este crucial pentru blocarea conținutului de calitate.
+2. Pentru a face acest lucru, AdGuard injectează un "script de conținut" care arată așa: `<script src="https://local.adguard.org/.../content-script.js">`. Acest "script de conținut" se ocupă de filtrarea cosmetică, ascunzând sau eliminând conținutul publicitar de pe paginile web.
+3. Conexiunile la adresa IP a domeniului `local.adguard.org` sunt interceptate de AdGuard la nivel de rețea și **sunt procesate local**. Aceasta este motivul pentru care acel domeniu are o adresă IP "statică" care nu se schimbă timp de ani de zile.
 
-**Why do we need to use a real IP address for that?**
+**De ce trebuie să folosim o adresă IP reală pentru asta?**
 
-- We cannot use `127.0.0.1` as the browsers won't accept it.
-- Using some IP address from the private subnets is possible, but this solution has two downsides.
-    - First, there is a slight chance of intersecting with an existing intranet service and breaking access to it.
-    - Second, some DNS servers may consider this a DNS rebinding attack and refuse to respond to `local.adguard.org`.
+- Nu putem folosi `127.0.0.1` deoarece browserele nu o vor accepta.
+- Folosirea unei adrese IP din subrețelele private este posibilă, dar această soluție are două dezavantaje.
+    - Primul, există o șansă mică de a intersecta cu un serviciu intranet existent și de a întrerupe accesul la acesta.
+    - Al doilea, unele servere DNS pot considera aceasta un atac de reîmpăturire DNS și pot refuza să răspundă la `local.adguard.org`.
 
-### Verification
+### Verificare
 
-This is easy to verify. If you disable AdGuard, you'll see that it is simply impossible to establish connection to `local.adguard.org` since there is no server with that address. Just try opening it in your browser when AdGuard is disabled.
+Acest lucru este ușor de verificat. Dacă dezactivați AdGuard, veți vedea că este pur și simplu imposibil să stabiliți o conexiune la `local.adguard.org` deoarece nu există un server cu această adresă. Încercați doar să o deschideți în browser când AdGuard este dezactivat.

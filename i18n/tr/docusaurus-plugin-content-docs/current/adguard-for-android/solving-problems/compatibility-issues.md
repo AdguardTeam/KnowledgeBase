@@ -1,6 +1,6 @@
 ---
 title: Known compatibility issues with Android apps
-sidebar_position: 16
+sidebar_position: 14
 ---
 
 :::info
@@ -18,7 +18,7 @@ AdGuard'ı *Yerel VPN* filtreleme modunda kullanıyorsanız, diğer VPN uygulama
 - Switch to the *Automatic proxy* mode. When you do that, AdGuard will no longer use local VPN and will reconfigure iptables instead
 - Switch to the *Manual proxy* mode. To do this, go to *Settings* → *Filtering* → *Network* → *Routing mode*
 
-:::note Uyumluluk
+:::note Compatibility
 
 The *Automatic proxy* mode is only accessible on rooted devices. For *Manual proxy*, rooting is required on devices running on Android 10 or later.
 
@@ -38,7 +38,7 @@ Some device manufacturers keep Private DNS settings hidden and set 'Automatic' m
 
 To be able to filter HTTPS traffic, AdGuard requires the user to add a certificate to the device's trusted user certificates. Unfortunately, UC browsers don't trust user certificates, so AdGuard cannot perform HTTPS filtering there.
 
-- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md/)
+- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md)
 
 :::note Uyumluluk
 

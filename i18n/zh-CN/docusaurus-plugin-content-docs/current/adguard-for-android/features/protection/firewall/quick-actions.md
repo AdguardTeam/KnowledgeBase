@@ -13,6 +13,6 @@ sidebar_position: 2
 
 快速操作是基于「最近活动」（可在「[统计](/adguard-for-android/features/statistics)」内找到）的请求之上. 此部分显示最近连接到互联网的应用。
 
-![Quick actions \*mobile\_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
+![Quick actions \*mobile_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
 
 如果您发现有某个应用程序根本不应该连接互联网，或者您最近没有使用过某个应用程序，可以立即阻止其访问权限。 启用「防火墙」模块后，才能设置连接权限。

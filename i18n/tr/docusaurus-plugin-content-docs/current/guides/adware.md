@@ -3,7 +3,7 @@ title: Reklam yazılımı ve virüsler
 sidebar_position: 6
 ---
 
-:::not
+:::note
 
 AdGuard bir antivirüs programı değildir. Kötü amaçlı yazılım veya kimlik avı sitesini ziyaret edeceğinizde sizi uyarabilir, ancak **cihazınızdan virüsleri kaldırmaz.**
 
@@ -49,7 +49,7 @@ Further on this page we describe the instructions on how to remove some of the m
 
 Below are the instructions on how to disable settings and extensions for the most popular browsers:
 
-- [for Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
+- [Google Chrome için](https://support.google.com/chrome/answer/187443?hl=en)
 
 - [for Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
 

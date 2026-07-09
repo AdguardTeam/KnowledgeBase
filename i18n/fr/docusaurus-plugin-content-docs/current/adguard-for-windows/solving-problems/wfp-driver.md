@@ -1,20 +1,20 @@
 ---
-title: WFP driver
+title: Pilote WFP
 sidebar_position: 1
 ---
 
 :::info
 
-Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-To filter network traffic, AdGuard uses a network driver. There are two options: TDI driver and WFP driver. While a WFP driver is generally preferrable and is enabled by default for all newer Windows OS versions (Windows 8 and newer), it can potentially cause compatibility problems, especially with some antiviruses. These problems and subsequent errors can be very different in each case.
+Pour filtrer le trafic réseau, AdGuard utilise un pilote réseau. Il y a deux options : pilote TDI et pilote WFP. Bien qu'un pilote WFP soit généralement préférable et est activé par défaut pour toutes les versions récentes de Windows (Windows 8 et ultérieures), il peut potentiellement causer des problèmes de compatibilité, notamment avec certains antivirus. Ces problèmes et les erreurs qui en découlent peuvent être très différents dans chaque cas.
 
-If you encounter a problem that you suspect might be caused by this, you can always switch to the older but more stable TDI network driver. To do so:
+Si vous rencontrez un problème que vous soupçonnez d'en être la cause, vous pouvez toujours passer au pilote réseau TDI, plus ancien mais plus stable. Pour cela :
 
-1. Go to *Settings → Network*.
+1. Accédez à *Paramètres → Réseau*.
 
-2. Disable the WFP driver as it’s done in this picture:
+2. Désactivez le pilote WFP comme indiqué sur cette image :
 
-![WFP driver *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)
+![Pilote WFP *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)

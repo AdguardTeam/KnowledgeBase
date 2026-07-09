@@ -7,9 +7,9 @@ Bu sayfada AdGuard'ın politika ve tercihlere ilişkin merkezi yönetiminin öze
 
 ## 1. MSI'ı indirin {#msi-download}
 
-[AdGuard MSI x86'yı](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi) indirin
+Download the [AdGuard MSI x86](https://agrd.io/adguard_setup86_msi)
 
-[AdGuard MSI x64'ü](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi) indirin
+Download the [AdGuard MSI x64](https://agrd.io/adguard_setup64_msi)
 
 ## 2. Ağınız için ayarları yapılandırın {#settings-configuring}
 
@@ -29,7 +29,7 @@ Otherwise, you can run the MSI on the target machine directly (and silently) wit
 
 If you need to roll out an update, use this command: `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
-:::not
+:::note
 
 Bu komutları yönetici ayrıcalıklarıyla çalıştırmalısınız.
 
@@ -37,7 +37,7 @@ Bu komutları yönetici ayrıcalıklarıyla çalıştırmalısınız.
 
 AdGuard'ı Windows 7 yüklü bir bilgisayara kurmak istiyorsanız, .NET 4 İstemci Profilinin kurulu olduğundan emin olun: https://www.microsoft.com/en-us/download/details.aspx?id=24872
 
-:::not
+:::note
 
 Windows için AdGuard'ı bir MSI dosyasından kurduysanız, AdGuard otomatik olarak güncellenmeyecektir. Elle güncellemelere izin vermek için:
 

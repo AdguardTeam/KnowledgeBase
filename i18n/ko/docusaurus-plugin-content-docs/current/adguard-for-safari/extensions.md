@@ -21,6 +21,7 @@ Safari 확장 프로그램은 Safari 웹 브라우저에 기능을 추가하는 
 - AdGuard Privacy
 - AdGuard Social
 - AdGuard Security
+- AdGuard Custom
 - AdGuard Other
 
 각 콘텐츠 차단 확장 프로그램에는 최대 15만 개의 활성 필터링 규칙이 포함될 수 있습니다. 대부분의 필터 그룹 내 규칙 수는 15만 개를 넘지 않습니다. 그러나 언어별 또는 사용자 정의 필터를 너무 많이 활성화하면 한도를 초과할 수 있습니다. 이러한 경우 한도를 초과하는 임의의 규칙은 자동으로 비활성화되어 잘못된 차단으로 이어질 수 있습니다. **필요한 필터만 활성화하는 것이 좋습니다**.
@@ -49,13 +50,19 @@ Safari 확장 프로그램은 Safari 웹 브라우저에 기능을 추가하는 
 
 ## Safari용 AdGuard
 
-*Safari용 AdGuard* 검색창 옆에 있는 AdGuard 아이콘을 활성화합니다. 특정 웹사이트에 대한 보호 기능을 빠르게 설정하거나 수동으로 광고를 차단하려는 경우 유용합니다. 또한 Safari에서 지원되지 않는 형식으로 변환되지 않는 고급 규칙도 포함되어 있습니다. 고급 규칙에는 복잡한 광고(예: YouTube 광고)를 차단할 수 있는 CSS 규칙, CSS 선택기 및 스크립틀릿이 포함되어 있습니다.
+*Safari용 AdGuard*는 검색창 옆에 있는 AdGuard 아이콘을 활성화합니다. 특정 웹사이트에 대한 보호 기능을 빠르게 설정하거나 수동으로 광고를 차단하려는 경우 유용합니다. 또한 Safari에서 지원되지 않는 형식으로 변환되지 않는 고급 규칙도 포함되어 있습니다. 여기에는 [CSS 규칙](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [확장 CSS 선택기](/general/ad-filtering/create-own-filters#extended-css-selectors) 및 [스크립틀릿](/general/ad-filtering/create-own-filters#scriptlets)이 포함되며, 이를 통해 AdGuard는 YouTube의 광고와 같은 복잡한 광고를 차단할 수 있습니다.
 
 ## Safari용 확장 프로그램 관리 방법
 
-1. Safari를 열고 화면 왼쪽 상단 모서리에 있는 *Safari*를 클릭하여 메뉴를 확장합니다. ![Safari 설정 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
-1. *설정...*을 클릭합니다.
-1. *확장 프로그램*을 선택합니다. ![확장 프로그램 탭](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
+1. Safari를 열고 화면 왼쪽 상단 모서리에 있는 *Safari*를 클릭하여 메뉴를 확장합니다.
+
+    ![Safari 설정 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
+
+1. *설정...*를 클릭합니다.
+
+1. *확장 프로그램*을 선택합니다.
+
+    ![확장 프로그램 탭](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
 ## Safari용 AdGuard에 권한이 필요한 이유
 

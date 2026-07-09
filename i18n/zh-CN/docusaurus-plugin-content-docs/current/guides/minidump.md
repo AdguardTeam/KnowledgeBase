@@ -20,23 +20,23 @@ Minidump 文件是一个包含有关系统崩溃信息的转储文件。 它是�
 
 即使您的电脑没有出现蓝屏错误，您仍然可以设置此选项。这是一个普遍建议，不一定与 AdGuard 服务有关。 请按照下面的指示说明自动创建 Minidump 文件。
 
- 1. 在 Windows 搜索栏中输入 *sysdm.cpl*，然后单击「**打开**」。 **系统属性控制面板菜单**窗口将出现在屏幕上。
+ 1. Type *sysdm.cpl* in the Windows search bar and click **Open**. The **System Properties Control Panel Menu** window will appear on the screen.
 
     :::tip
 
-    或者，单击「**设置**」→「**系统**」→「**关于**」→「**高级系统设置**」。
+    Alternatively, click **Settings** → **System** → **About** → **Advanced system settings**.
 
 
 :::
 
-    ![系统属性 *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
+    ![System Properties *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
 
- 1. 转到「**高级**」标签。
- 1. 在「**启动和恢复**」部分，单击「**设置**」。
+ 1. Go to the **Advanced** tab.
+ 1. In the **Startup and Recovery** section, click **Settings**.
 
-    ![启动和恢复 *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
+    ![Startup and Recovery *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
 
- 1. 请启用以下三个选项：
+ 1. Enable the following three options:
 
     - 在系统日志写入事件
     - 自动重启
@@ -54,3 +54,26 @@ Minidump 文件是一个包含有关系统崩溃信息的转储文件。 它是�
 默认情况下，Minidump 文件存储在 **%SystemRoot%\Minidump** 文件夹中。 用户可以更改目录位置为自己喜欢的位置，但请记住，许多程序都默认设置为查找此位置，因此我们建议您不要更改位置。
 
 :::
+
+## Collecting wfpdiag.cab file
+
+Our support team may request a wfpdiag.cab file, along with a minidump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
+
+1. 开启 AdGuard 保护。
+
+1. Click *Start* and type `cmd` to open Command Prompt
+
+1. Right-click Command Prompt and choose *Run as administrator*
+
+    :::note
+
+    A wfpdiag.cab file is created in your current directory. You can change the location by typing `cd <folder_name>`.
+
+
+:::
+
+1. To start logging, enter the following command: `netsh wfp capture start`
+
+1. Visit any website to route traffic through AdGuard and log the filtering process
+
+1. To stop logging, enter `netsh wfp capture stop`

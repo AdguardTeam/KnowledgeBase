@@ -23,7 +23,7 @@ AdGuard Browser Assistant is a browser extension. It allows you to quickly manag
 - Manually block an ad
 - Open the filtering log
 - Report incorrect blocking
-- Open AdGuard settings
+- AdGuard ayarlarını açın
 - View website certificate and manage HTTPS filtering (the lock icon next to the website name)
 
 ## Nasıl yüklenir
@@ -32,7 +32,7 @@ When you install AdGuard for Mac, you will be prompted to install Browser Assist
 
 **From settings**:
 
-1. Open the AdGuard menu.
+1. AdGuard menüsünü açın.
 2. Click the gear icon and select _Preferences_.
 3. Switch to the _Assistant_ tab.
 4. Click _Get the Extension_ next to your default browser.
@@ -43,7 +43,7 @@ When you install AdGuard for Mac, you will be prompted to install Browser Assist
 **From the website**:
 
 1. Open the [Assistant page](https://adguard.com/adguard-assistant/overview.html).
-2. Under your browser name, select _Install_.
+2. Tarayıcı adınızın altında _Yükle_ öğesini seçin.
 3. Install Assistant from your browser’s extension store.
 
 :::note
@@ -58,6 +58,6 @@ The legacy Assistant is the previous version of AdGuard Browser Assistant. It’
 
 - It has fewer features than the extension version.
 - You have to wait for the userscript to be inserted into a webpage — sometimes it doesn’t load immediately.
-- You can’t hide the Assistant icon on the page.
+- Sayfada Asistan simgesini gizleyemezsiniz.
 
 We recommend that you use the legacy Assistant only if the new Assistant is not available.

@@ -1,6 +1,6 @@
 ---
 title: Manual installation of the security certificate into the Firefox browser
-sidebar_position: 11
+sidebar_position: 10
 ---
 
 :::info

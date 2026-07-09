@@ -1,6 +1,6 @@
 ---
 title: Assistant
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info
@@ -32,13 +32,13 @@ When you open Assistant, you will see two tabs: **Apps** and **Websites**. Each 
 
 After you select an app (**let's take Chrome as an example**), you'll get a few options of what you can do.
 
-![Assistant Chrome menu \*mobile\_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Assistant Chrome menu \*mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
 #### Recent activity
 
 You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests made by Chrome.
 
-![App recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![App recent activity \*mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
 
 #### App statistics
 
@@ -68,11 +68,11 @@ Select a website (**we use google.com here purely as an example**) and you'll se
 
 Tapping this option will instantly add `google.com` to allowlist, and AdGuard will no longer filter it (meaning ads and trackers won't be blocked for the website).
 
-#### Recent activity
+#### Recent activity (websites)
 
 You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests to google.com.
 
-![website recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+![website recent activity \*mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
 
 #### Website statistics
 

@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který
 
 Obrazovka _Aktivity_ je 'informační centrum' sady DNS ochrany AdGuardu. Můžete na něj rychle přepnout klepnutím na třetí ikonu ve spodní liště. Pozn. tato obrazovka se zobrazí pouze v případě, že je zapnuta DNS ochrana.
 
-![Activity screen \*mobile\_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
+![Activity screen \*mobile_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
 
 Zde AdGuard zobrazuje statistiky o DNS požadavcích zařízení, například celkový počet, počet blokovaných požadavků a data ušetřená jejich blokováním. AdGuard může zobrazit statistiky za den, týden, měsíc nebo celkově.
 
@@ -25,7 +25,7 @@ AdGuard tyto informace nikam neodesílá. Tyto informace jsou 100% ukládány ve
 
 Klepnutím na libovolný požadavek zobrazíte další podrobnosti. K dispozici budou také tlačítka pro přidání požadavku do seznamu blokovaných/povolených jedním klepnutím.
 
-![Request details \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
+![Request details \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
 
 Nad zdrojem aktivit jsou _Nejaktivnější_ a _Nejvíce blokované_ společnosti. Klepnutím na každou z nich zobrazíte údaje založené na posledních 1500 požadavcích.
 

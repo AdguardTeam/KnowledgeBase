@@ -9,6 +9,10 @@ Questo articolo riguarda AdGuard per Safari, che protegge solo il tuo browser Sa
 
 :::
 
+## Requisiti di sistema
+
+Richiede macOS 10.15 (Catalina). La versione minima supportata di Safari è la 13 o successiva.
+
 ## Come installare AdGuard per Safari {#install}
 
 AdGuard per Safari è un'app gratuita, presente sull'App Store. Per installarla sul tuo dispositivo, fai quanto segue.
@@ -32,26 +36,12 @@ AdGuard per Safari è un'app gratuita, presente sull'App Store. Per installarla 
 
     ![Estensioni spuntate](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 
-1. Per far sì che AdGuard agisca sui siti web, l'impostazione *Blocchi di contenuti* dev'essere abilitata. Puoi abilitarlo per tutti i siti web o selezionare quelli che desideri.
+1. Affinché AdGuard funzioni sui siti web, è necessario abilitare l'impostazione *Estensioni* in Safari. Apri Safari → *Impostazioni* → *Siti web* → *Estensioni*. Se desideri abilitare AdGuard su ogni sito web, imposta *Per altri siti web* su *Consenti*.
 
-    :::note
-
-    Questo passaggio è necessario per iOS 9.0 e successive, macOS 10.11 con Safari 10 e macOS 10.12 e successive.
-
-
-:::
-
-Su macOS, clicca su *Preferenze* → *Siti web* → *Blocchi di contenuti*. Se desideri abilitare AdGuard su ogni sito web, *Abilita* "*Visitando altri siti web*".
-
-![Impostazione del Blocco di Contenuti di Safari del Mac](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
+![Impostazione del Blocco di Contenuti di Safari del Mac](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/macos_extensions.png)
 <!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
-Su iOS, vai a *Impostazioni* → *Safari* → *Blocchi dei contenuti*, e imposta l'opzione a *Sì*.
-
-![Impostazione del Blocco di Contenuti di Safari di iOS](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
-<!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
-
-Dopo aver completato i passaggi dall'1 al 4, AdGuard per Safari inizierà a funzionare. Puoi ora configurarne le impostazioni.
+Dopo aver completato questi passaggi, AdGuard per Safari inizierà a funzionare. Puoi ora configurarne le impostazioni.
 
 ## Come disinstallare AdGuard per Safari {#uninstall}
 

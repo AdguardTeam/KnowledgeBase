@@ -1,6 +1,6 @@
 ---
 title: Privatsphäre
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info
@@ -9,8 +9,8 @@ Dieser Artikel behandelt AdGuard für Mac, einem multifunktionalen Werbeblocker,
 
 :::
 
-## Erweiterter Datenschutz
+## Tracking-Schutz
 
-![Privatsspäre](https://cdn.adtidy.org/content/kb/ad_blocker/mac/stealth.png)
+![Privatsphäre](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tracking_protection.png)
 
-_Erweiterter Datenschutz_ schützt Ihre Privatsphäre durch das Löschen von Cookies, UTM-Parametern, Online-Zählern und Analysesystemen. Es verhindert, dass Websites Ihre IP-Adresse, Geräte- und Browserparameter, Suchanfragen und persönliche Informationen sammeln. [Weitere Informationen zu den Einstellungen des Privatsspährenmodus](/general/stealth-mode)
+_Tracking-Schutz_ (früher Privatsphäre) schützt Ihre Privatsphäre, indem Cookies, UTM-Tags, Online-Zähler und Analysesysteme gelöscht werden. Es verhindert, dass Websites Ihre IP-Adresse, Geräte- und Browserparameter, Suchanfragen und persönliche Informationen sammeln. [Mehr über die Einstellungen zum Tracking-Schutz](/general/stealth-mode)

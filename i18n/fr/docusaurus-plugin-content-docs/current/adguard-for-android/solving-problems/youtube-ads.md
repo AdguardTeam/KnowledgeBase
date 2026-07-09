@@ -1,32 +1,32 @@
 ---
-title: How to block ads in the YouTube app
-sidebar_position: 7
+title: Comment bloquer les publicités dans l'application YouTube
+sidebar_position: 6
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article concerne AdGuard pour Android, un bloqueur de publicité multifonctionnel qui protège votre appareil au niveau système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-One of the most popular questions users ask us is: 'Is it possible to block ads in YouTube on Android?'. Due to the technical restrictions of the Android OS, there is no way to *completely* remove ads from the YouTube app. But we've found an alternative that brings you to it as close as possible, while getting around the Android-imposed restrictions.
+L'une des questions les plus courantes que les utilisateurs nous posent est : "Est-il possible de bloquer les publicités dans YouTube sur Android ?". En raison des restrictions techniques d'Android, il n'est pas possible de *supprimer complètement* les publicités de l'application YouTube. Cependant, nous avons trouvé une alternative qui vous en rapproche autant que possible, tout en contournant les limitations imposées par Android.
 
-## Watch YouTube in the AdGuard app
+## Regardez YouTube dans l'application AdGuard
 
 ![Instruction *mobile](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-6/share.gif)
 
-1. Open the YouTube app and start the video you want to watch.
+1. Ouvrez l'application YouTube et lancez la vidéo que vous souhaitez regarder.
 
-1. Tap the *Share* button.
+1. Appuyez sur le bouton *Partager*.
 
-    ![Share to YouTube step 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
+    ![Partager sur YouTube étape 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
 
-1. Select *AdGuard* from the list of apps.
+1. Sélectionnez *AdGuard* dans la liste des applications.
 
-    ![Share to YouTube step 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
+    ![Partager sur YouTube étape 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
 
-That's it! A new window with the video will open where you'll be able to watch it without being interrupted by ads.
+Et voilà ! Une nouvelle fenêtre avec la vidéo s'ouvrira, où vous pourrez la regarder sans être interrompu par des publicités.
 
-## Watch YouTube in a browser
+## Regarder YouTube dans un navigateur
 
-Alternatively, you can also watch YouTube in a browser and there will be no ads if you have AdGuard installed and enabled.
+Alternativement, vous pouvez également regarder YouTube dans un navigateur. Il n'y aura pas de publicités si vous avez installé et activé AdGuard.

@@ -11,7 +11,7 @@ Este artigo aborda o AdGuard para Android, um bloqueador de anúncios multifunci
 
 O módulo _Estatísticas_ pode ser acessado tocando na aba _Estatísticas_ (quarto ícone da esquerda na parte inferior da tela). Esse recurso oferece uma visão completa do que está acontecendo com o tráfego no seu dispositivo: quantas solicitações estão sendo enviadas e para quais empresas, quantos dados estão sendo carregados e baixados, quais solicitações estão sendo bloqueadas e muito mais. Você pode optar por exibir as estatísticas do período selecionado: 24 horas, 7 dias, 30 dias ou o tempo todo.
 
-![Estatísticas \*mobile\_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
+![Estatísticas \*mobile_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
 
 As estatísticas são categorizadas em diferentes seções.
 
@@ -33,7 +33,7 @@ Esta seção exibe estatísticas de todos os aplicativos instalados no seu dispo
 
 Toque em _Ver todos os aplicativos_ para expandir a lista de seus aplicativos, classificados pelo número de anúncios, rastreadores ou solicitações.
 
-![Lista de aplicativos \*mobile\_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
+![Lista de aplicativos \*mobile_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
 
 Se você tocar em um aplicativo, poderá ver suas estatísticas completas, desde as solicitações que ele envia até os domínios e empresas que ele alcança.
 

@@ -31,7 +31,7 @@ Under *App and filter updates*, you can configure automatic filter updates and s
 
 ![Advanced *mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-The *Low-level settings* section is for expert users. [Read more about low-level settings](/adguard-for-android/solving-problems/low-level-settings/)
+The *Low-level settings* section is for expert users. [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
 
 ![Low-level settings *mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
@@ -39,7 +39,7 @@ The *Low-level settings* section is for expert users. [Read more about low-level
 
 This section allows you to manage HTTPS filtering settings, filters, and userscripts, and set up a proxy server.
 
-![Filtering *mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
+![Filtering *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.jpg)
 
 ### Filters
 
@@ -57,11 +57,19 @@ If you activate too many filters, some websites may work incorrectly.
 
 [Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
 
-### Userscripts
+### Extensions
+
+Extensions allow you to add userscripts and userstyles.
+
+![Extensions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.jpg)
 
 Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
 
-![Userscripts *mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
+Userstyles are like userscripts that allow you to change how web pages look in the browser without modifying their content. They work by adding CSS styles to the website’s existing styles. For example, if you want a dark theme on a website that doesn’t offer one, you can use a userstyle to do it.
+
+To add a userstyle, go to *Settings* → *Filtering* → *Extensions*→ *Add extension* → *Import from file or URL*. You can find ready-made user styles [online](https://userstyles.world/).
+
+To create your own style, tap *Add extension* → *Create userstyle*.
 
 #### AdGuard Extra
 
@@ -124,6 +132,12 @@ The *Local VPN* mode doesn't allow AdGuard to be used simultaneously with other 
 
 - *Automatic proxy* is an alternative traffic routing method that does not require the use of a VPN. One significant advantage is that it can be run in parallel with a VPN. This mode requires root access.
 
+:::note
+
+Please note that DNS filtering will still be active in *Automatic proxy* routing mode, and your device may not be able to filter DNS requests from specific apps. In *VPN* routing mode, apps are excluded from the local VPN by system means. Therefore, the system resolver sees which apps are included in the VPN and which are not. It either allows them into the local VPN or lets them bypass it. However, DNS requests come from the system resolver, not the application. In *Automatic proxy* mode, it is only possible to exclude traffic from applications, not their DNS queries, because AdGuard sees them as system queries.
+
+:::
+
 - *Manual proxy* involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
 
 ## License
@@ -131,13 +145,13 @@ The *Local VPN* mode doesn't allow AdGuard to be used simultaneously with other 
 In this section, you can find information about your license and manage it:
 
 - Buy an AdGuard license to activate [the full version's features](/adguard-for-android/features/free-vs-full)
-- Log in to your AdGuard account or enter the license key to activate your license
-- Sign up to activate your 7-day trial period if you haven't used it yet
+- Log in to your AdGuard account or enter the activation code to activate your license
+- Sign up to activate your 14-day trial period. The activation code can be used on different devices and platforms
 - Refresh the license status from the three-dots menu (⋮)
 - Open the AdGuard account to manage your license there
 - Reset your license — for example, if you've reached device limit for this license and want to apply another one
 
-![License screen *mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![License screen *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/android/settings/licensetab.png)
 
 ## Support
 

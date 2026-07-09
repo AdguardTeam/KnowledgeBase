@@ -1,6 +1,6 @@
 ---
 title: 브라우저 어시스턴트
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 :::info

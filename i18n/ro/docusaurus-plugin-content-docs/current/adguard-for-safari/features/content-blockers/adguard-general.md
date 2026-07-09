@@ -3,4 +3,4 @@ title: AdGuard General
 sidebar_position: 2
 ---
 
-_AdGuard General_ is a content blocker that combines the most essential filters for blocking ads. We recommend keeping the AdGuard Base Filter always enabled.
+_Modul general_ este un blocant de conținut care combină cele mai esențiale filtre pentru a bloca reclamele. Recomandăm să mențineți filtrul de bază AdGuard întotdeauna activat.

@@ -45,7 +45,7 @@ sidebar_position: 3
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/context-note.png)
 
-1. Note that source strings may also have screenshots in the Context section. Они помогают понять контекст и передать точное значение.
+1. Обратите внимание, что исходные строки также могут содержать скриншоты в разделе Context. Они помогают понять контекст и передать точное значение.
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Известные проблемы совместимости с приложениями для Android
-sidebar_position: 16
+sidebar_position: 14
 ---
 
 :::info
@@ -38,7 +38,7 @@ sidebar_position: 16
 
 Чтобы фильтровать HTTPS-трафик, AdGuard добавляет свой сертификат в пользовательское хранилище. Браузеры UC не доверяют пользовательским сертификатам, поэтому AdGuard не может фильтровать их HTTPS-трафик.
 
-- Чтобы решить эту проблему, переместите сертификат [в системное хранилище сертификатов](../solving-problems/https-certificate-for-rooted.md/)
+- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md)
 
 :::note Совместимость
 

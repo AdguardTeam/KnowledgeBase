@@ -15,7 +15,7 @@ AdGuard は、15 年以上の経験、さまざまなプラットフォーム向
 
 また、一般的なブラウザ向けの無料ブラウザ拡張機能の開発とメンテナンスも行っております:
 
-- [AdGuard ブラウザ拡張機能](/adguard-browser-extension/features/filters)
+- [AdGuard ブラウザ拡張機能](/adguard-browser-extension/availability)
 - [AdGuard for Safari](/adguard-for-safari/features/general)
 
 ## 広告ブロック以外の機能もたくさんあります

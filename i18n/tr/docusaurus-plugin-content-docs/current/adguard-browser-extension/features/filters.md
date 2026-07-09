@@ -1,6 +1,6 @@
 ---
-title: Filters
-sidebar_position: 1
+title: Filtreler
+sidebar_position: 2
 ---
 
 :::info
@@ -29,7 +29,9 @@ To add a filter, just click _Add custom filter_, enter the URL or the file path 
 
 ![Add a custom filter \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
-## User rules {#user-rules}
+Özel filtreler bağımsız olarak güncellenir, bu nedenle uzantı güncellemeleri gerektirmeden filtrelemeniz etkili ve güncel kalır.
+
+## Kullanıcı kuralları {#user-rules}
 
 _User rules_ is another tool that helps you customize the blocking of ads.
 
@@ -49,7 +51,7 @@ The _allowlist_ is used to exclude certain websites from filtering. Listedeki si
 
 ![Allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-The _allowlist_ can be inverted, too: you can unblock ads everywhere except on the websites added to this list. To do that, activate the _Invert allowlist_ option.
+_Allowlist_ can also be inverted: you can unblock ads everywhere except on the websites added to this list. Bunu yapmak için _İzin listesini ters çevir_ seçeneğini etkinleştirin. Açılmadan önce, yanlışlıkla etkinleştirilmesini önlemek ve neler olacağını açıklamak için bir onay iletişim kutusu görünür.
 
 ![Invert allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 

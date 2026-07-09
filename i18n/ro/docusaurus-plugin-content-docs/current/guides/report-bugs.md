@@ -1,93 +1,93 @@
 ---
-title: How to report bugs
+title: Cum să raportați o eroare
 sidebar_position: 4
 ---
 
-If you notice a bug while using AdGuard products, please help us address it. Here’s how to report bugs most effectively.
+Dacă observați o eroare în timp ce utilizați produsele AdGuard, vă rugăm să ne ajutați să o remediem. Iată cum să raportați erorile cel mai eficient.
 
-## Before you start
+## Înainte să începeți
 
-### When to report bugs
+### Când să raportați erorile
 
-Check that you have the most up-to-date version, and if not, upgrade: the bug might have already been resolved in the new version.
+Verificați dacă aveți cea mai recentă versiune și, dacă nu, faceți upgrade: eroarea ar putea fi deja rezolvată în versiunea nouă.
 
-Check if the bug hasn’t been reported before. We advise paying attention to both open and closed issues.
+Verificați dacă eroarea nu a fost raportată anterior. Vă sfătuim să acordați atenție atât problemelor deschise, cât și celor închise.
 
-![Closed issues](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png)
+![Probleme închise](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png)
 
-### How to describe a problem
+### Cum să descrieți o problemă
 
-Try to provide as many details as possible — that'll make it easier for us to reproduce the bug and figure out how to fix it. Here’s what we expect a bug report to include:
+Încercați să oferiți cât mai multe detalii posibil — acest lucru ne va face mai ușor să reproducem eroarea și să descoperim cum să o reparăm. Iată ce ne așteptăm ca un raport de eroare să conțină:
 
 - Your app version
 - Your OS version
-- When you noticed the problem
-- What you were doing or what happened to the app before you noticed the problem. Steps to reproduce it
-- Whether it recurred and with what frequency
-- Whether you have a VPN or an antivirus software
+- Când ați observat problema
+- Ce făceați sau ce s-a întâmplat cu aplicația înainte de a observa problema. Pași pentru a o reproduce
+- Dacă s-a repetat și cu ce frecvență
+- Dacă aveți un VPN sau un software antivirus
 
-### How to collect logs
+### Cum să colectați jurnalele
 
-Read about collecting logs in dedicated articles for each platform.
+Citiți despre colectarea jurnalelor în articolele dedicate pentru fiecare platformă.
 
-## How to vote for bug reports or feature requests
+## Cum să votați pentru rapoartele de erori sau solicitările de caracteristici
 
-If you want to support the implementation of a new feature or bugfix, you can vote for it on GitHub. To vote, just react with some emoji.
+Dacă doriți să sprijiniți implementarea unei noi caracteristici sau a unei reparări de bug, puteți vota pentru aceasta pe GitHub. Pentru a vota, reacționați doar cu un emoji.
 
-![GitHub issue with reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction.png)
+![Problema GitHub cu reacții](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction.png)
 
-![GitHub issue without reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
+![Problema GitHub fără reacții](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
 
-You can find reactions in the upper right corner or at the bottom of an issue.
+Puteți găsi reacțiile în colțul din dreapta sus sau la baza unei probleme.
 
-## Instructions for all platforms
+## Instrucțiuni pentru toate platformele
 
 ### AdGuard for Windows
 
-1. Check out the [Windows repo](https://github.com/AdguardTeam/AdGuardforWindows/issues) to make sure the issue hasn’t been reported yet.
+1. Verificați [repo-ul Windows](https://github.com/AdguardTeam/AdGuardforWindows/issues) pentru a vă asigura că problema nu a fost raportată încă.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) and select *Bug report*.
+2. Deschideți o [pagină pentru a crea probleme noi](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) și selectați *Raport de eroare*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Completați formularul. Dacă este posibil, atașați capturi de ecran sau o înregistrare a ecranului.
 
-![Reporting a bug via GitHub *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
+![Raportând o eroare prin GitHub *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
 
 ### AdGuard for Mac
 
-1. Check out the [Mac repo](https://github.com/AdguardTeam/AdGuardforMac/issues) to make sure the issue hasn’t been reported yet.
+1. Verificați [repo-ul Mac](https://github.com/AdguardTeam/AdGuardforMac/issues) pentru a vă asigura că problema nu a fost raportată încă.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForMac/issues/new).
+2. Deschideți o [pagină pentru a crea probleme noi](https://github.com/AdguardTeam/AdguardForMac/issues/new).
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Completați formularul. Dacă este posibil, atașați capturi de ecran sau o înregistrare a ecranului.
 
 ### AdGuard for Android
 
-1. Check out the [Android repo](https://github.com/AdguardTeam/AdGuardforAndroid/issues) to make sure the issue hasn’t been reported yet.
+1. Verificați [repo-ul Android](https://github.com/AdguardTeam/AdGuardforAndroid/issues) pentru a vă asigura că problema nu a fost raportată încă.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForAndroid/issues/new/choose) and select *Bug report*.
+2. Deschideți o [pagină pentru a crea probleme noi](https://github.com/AdguardTeam/AdguardForAndroid/issues/new/choose) și selectați *Raport de eroare*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Completați formularul. Dacă este posibil, atașați capturi de ecran sau o înregistrare a ecranului.
 
 ### AdGuard for iOS
 
-1. Check out the [iOS repo](https://github.com/AdguardTeam/AdGuardforiOS/issues) to make sure the issue hasn’t been reported yet.
+1. Verificați [repo-ul iOS](https://github.com/AdguardTeam/AdGuardforiOS/issues) pentru a vă asigura că problema nu a fost raportată încă.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForiOS/issues/new/choose), select *Bug report*.
+2. Deschideți o [pagină pentru a crea probleme noi](https://github.com/AdguardTeam/AdguardForiOS/issues/new/choose), selectați *Raport de eroare*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Completați formularul. Dacă este posibil, atașați capturi de ecran sau o înregistrare a ecranului.
 
-### AdGuard Browser Extension
+### Extensia de browser AdGuard
 
-1. Check out the [Browser Extension repo](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/) to make sure the issue hasn’t been reported yet.
+1. Verificați [repo-ul Extensiei de browser](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/) pentru a vă asigura că problema nu a fost raportată încă.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose) and select *Bug report*.
+2. Deschideți o [pagină pentru a crea probleme noi](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose) și selectați *Raport de eroare*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Completați formularul. Dacă este posibil, atașați capturi de ecran sau o înregistrare a ecranului.
 
 ### AdGuard for Safari
 
-1. Check out the [Safari repo](https://github.com/AdguardTeam/AdGuardForSafari/issues) to make sure the issue hasn’t been reported yet.
+1. Verificați [repo-ul Safari](https://github.com/AdguardTeam/AdGuardForSafari/issues) pentru a vă asigura că problema nu a fost raportată încă.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) and select *Bug report*.
+2. Deschideți o [pagină pentru a crea probleme noi](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) și selectați *Raport de eroare*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Completați formularul. Dacă este posibil, atașați capturi de ecran sau o înregistrare a ecranului.

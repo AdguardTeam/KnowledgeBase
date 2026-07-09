@@ -11,7 +11,7 @@ sidebar_position: 3
 
 **통계 모듈**은 **통계** 탭(화면 하단 왼쪽에서 네 번째 아이콘)을 눌러 액세스할 수 있습니다. 이 기능을 사용하면 얼마나 많은 요청이 어떤 회사로 전송되고 있는지, 얼마나 많은 데이터가 업로드 및 다운로드되고 있는지, 어떤 요청이 차단되고 있는지 등 기기에서 발생하는 트래픽에 대한 전체적인 정보를 파악할 수 있습니다. 24시간, 7일, 30일 또는 전체 기간 중 선택한 기간에 대한 통계를 표시하도록 선택할 수 있습니다.
 
-![통계 \*mobile\_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
+![통계 \*mobile_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
 
 통계는 다른 섹션으로 분류됩니다.
 
@@ -33,7 +33,7 @@ sidebar_position: 3
 
 **모든 애플리케이션 보기**를 탭하면 광고, 추적기 또는 요청 수에 따라 정렬된 앱 목록이 펼쳐집니다.
 
-![앱 목록 \*mobile\_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
+![앱 목록 \*mobile_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
 
 앱을 클릭하면 전송된 요청 수, 접속한 도메인 및 회사 등의 전체 통계를 확인할 수 있습니다.
 

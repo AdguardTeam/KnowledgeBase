@@ -1,9 +1,9 @@
 ---
-title: What is an AdGuard license?
+title: Qu'est-ce qu'une licence AdGuard ?
 sidebar_position: 1
 ---
 
-Une licence est une autorisation d'utiliser le produit AdGuard, fournie conformément au [Contrat de licence utilisateur final](https://adguard.com/eula.html). Si elles sont liées à une adresse e-mail, les licences AdGuard peuvent être trouvées dans le [compte AdGuard](https://my.adguard.com/) de l'utilisateur.
+Une licence est une autorisation d'utiliser le produit AdGuard, fournie conformément au [Contrat de licence utilisateur final](https://adguard.com/eula.html). If bound to an email address, AdGuard licenses can be found in the user's [AdGuard account](https://adguardaccount.com).
 
 ## Quels types de licences AdGuard existent-ils
 
@@ -12,7 +12,7 @@ Sur la [page d'achat](https://adguard.com/license.html), vous pouvez voir les ty
 - **Les abonnements d'un an** — ces licences sont renouvelées automatiquement chaque année ou peuvent être prolongées manuellement
     - Personnelles — jusqu’à 3 appareils
     - Familiales — jusqu'à 9 appareils
-- **Lifetime** — these licenses are perpetual
+- **À vie** — ces licences ne sont pas limitées dans le temps
     - Personnelles — jusqu’à 3 appareils
     - Familiales — jusqu'à 9 appareils
 
@@ -25,17 +25,17 @@ Il existe également des licences que l'utilisateur peut acheter auprès d'autre
 - **Les licences de distributeur** et **les licences offertes** peuvent être à la fois limitées dans le temps et non limitées dans le temps. Les licences avec une date d'expiration ne peuvent être renouvelées que manuellement
     - Personnelles — jusqu’à 3 appareils
     - Familiales — jusqu'à 9 appareils
-- **La licence AdGuard Pro pour iOS** est achetée et gérée via l'App Store et ne peut être utilisée que sur les appareils iOS et iPadOS avec le même identifiant Apple
+- Les licences **AdGuard pour iOS** et **AdGuard Pro** sont achetées et gérées via l'App Store et ne peuvent être utilisées que sur les appareils iOS et iPadOS avec le même identifiant Apple
 
 :::tip
 
-Pour étendre la limite d'appareils, vous pouvez [surclasser](../payment-options/#upgrade) votre licence.
+Pour augmenter la limite d'appareils, vous pouvez [surclasser](../payment-options/#upgrade) votre licence.
 
 :::
 
 ## Comment utiliser la licence AdGuard
 
-Pour utiliser votre licence sur un appareil, connectez-vous à votre application AdGuard en utilisant l'adresse e-mail associée à la licence. Si la licence n'a pas encore été liée à votre adresse e-mail, vous pouvez le faire dans votre [compte AdGuard](https://my.adguard.com/). Pour faire ça, ouvrez l'onglet *Licences* et cliquez sur *Lier la licence*.
+Pour utiliser votre licence sur un appareil, connectez-vous à votre application AdGuard en utilisant l'adresse e-mail associée à la licence. If the license hasn't been bound to your email address yet, you can do it in your [AdGuard account](https://adguardaccount.com). Pour faire ça, ouvrez l'onglet *Licences* et cliquez sur *Lier la licence*. Usually, licenses are activated immediately, but sometimes activation may take up to five minutes.
 
 Vous pouvez également saisir votre [clef de licence ](#license-key) dans votre application AdGuard.
 

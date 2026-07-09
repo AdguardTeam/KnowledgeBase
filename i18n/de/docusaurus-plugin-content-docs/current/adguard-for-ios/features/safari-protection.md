@@ -15,7 +15,7 @@ Inhaltsblocker dienen als „Container“ für Filterregeln, die die eigentliche
 
 Alle Inhaltsblocker, ihr Status, die aktuell enthaltenen thematischen Filter und die Gesamtzahl der verwendeten Filterregeln finden Sie auf dem entsprechenden Bildschirm in den _Erweiterten Einstellungen_ (tippen Sie auf das Zahnradsymbol unten rechts → _Allgemein_ → _Erweiterte Einstellungen_ → _Inhaltsblocker_).
 
-![Inhaltsblocker \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
+![Inhaltsblocker \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
 
 :::tip
 
@@ -29,7 +29,7 @@ Die Funktion von Inhaltsblockern basiert auf Filtern, die manchmal auch als Filt
 
 Alle Filter sind in thematische Kategorien eingeteilt. Um die vollständige Liste dieser Kategorien anzuzeigen (nicht zu verwechseln mit Inhaltsblockern), öffnen Sie den Bereich _Schutz_, indem Sie auf das Schildsymbol tippen, und gehen Sie dann zu _Safari-Schutz_ → _Filter_.
 
-![Filtergruppen \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
+![Filtergruppen \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
 
 Es gibt acht davon. Jede Kategorie vereint mehrere Filter, die einem gemeinsamen Zweck dienen, z. B. dem Blockieren von Werbung, Social-Media-Widgets, Cookie-Hinweisen und dem Schutz vor Online-Betrug. Um zu entscheiden, welche Filter Ihren Bedürfnissen entsprechen, lesen Sie die Beschreibungen und orientieren Sie sich an den Bezeichnungen („Werbung“, „Datenschutz“, „Empfohlen“ usw.).
 
@@ -47,7 +47,7 @@ Hier können Sie neue Regeln hinzufügen — entweder durch manuelle Eingabe ode
 
 Erfahren Sie [mehr über die Erstellung eigener Filter](/general/ad-filtering/create-own-filters). Bitte beachten Sie aber, dass viele von ihnen in Safari unter iOS nicht funktionieren.
 
-![Bildschirm der Benutzerregeln \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
+![Bildschirm der Benutzerregeln \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
 ### Positivliste {#allowlist}
 

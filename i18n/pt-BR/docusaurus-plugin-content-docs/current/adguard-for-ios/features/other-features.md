@@ -13,9 +13,9 @@ Embora o bloqueio de conteúdo do Safari e a proteção DNS sejam as duas princi
 
 ### **Tema escuro**
 
-![Tema claro \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
+![Tema claro \*mobile_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Tema escuro \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![Tema escuro \*mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
 Residindo na parte superior da tela **Configurações** → **Geral**, esta configuração permite alternar entre temas claros e escuros.
 

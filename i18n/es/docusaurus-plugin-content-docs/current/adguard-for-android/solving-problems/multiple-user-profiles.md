@@ -1,6 +1,6 @@
 ---
 title: Problemas causados por múltiples perfiles de usuario
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 :::info
@@ -21,9 +21,9 @@ Para solucionar este problema, debes desinstalar la aplicación para todos los u
 
 ![Desinstalar *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 
-## Problems caused by using a Restricted Mode profile
+## Problemas causados por el uso de un perfil en modo restringido
 
-The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. Si tienes un perfil de este tipo, **AdGuard**, al igual que otras aplicaciones que utilizan VPN, obtiene restricciones en el filtrado selectivo del tráfico VPN. Como resultado, AdGuard no puede iniciar la protección en un **modo VPN local**. Además, una de las razones de esta situación puede ser el uso del **Perfil Dual App/Dual Messenger** en tu dispositivo. A continuación, se describen las recomendaciones que puedes aplicar cuando se presenta este problema.
+Los propietarios de teléfonos, tabletas o televisores con el sistema operativo Android 7+ pueden enfrentar el problema causado por el uso de **un perfil con modo restringido**. Si tienes un perfil de este tipo, **AdGuard**, al igual que otras aplicaciones que utilizan VPN, obtiene restricciones en el filtrado selectivo del tráfico VPN. Como resultado, AdGuard no puede iniciar la protección en un **modo VPN local**. Además, una de las razones de esta situación puede ser el uso del **Perfil Dual App/Dual Messenger** en tu dispositivo. A continuación, se describen las recomendaciones que puedes aplicar cuando se presenta este problema.
 
 ### Soluciones
 
@@ -68,7 +68,7 @@ Sobre cómo gestionar cuentas de usuario desde un dispositivo [Android](https://
 
 :::note
 
-En algunos casos, se crean cuentas de usuario restringidas de forma implícita y no se pueden eliminar. Por ejemplo, cuando utilizas las funciones de mensajería dual o de aplicación dual en dispositivos **Samsung** o **LG**. A continuación, puedes leer cómo solucionar el problema en estos casos.
+En algunos casos, se crean cuentas de usuario restringidas de forma implícita y no se pueden eliminar. Por ejemplo, cuando se utilizan las funciones Dual Messenger o Dual App en los dispositivos **Samsung** o **LG**. A continuación, puedes leer cómo solucionar el problema en estos casos.
 
 :::
 
@@ -85,7 +85,7 @@ Los propietarios de los teléfonos **LG** o **Samsung** también pueden encontra
 - Abre **Configuración**;
 - Presiona **Avanzado**;
 - Desplázate hacia abajo y pulsa **Dual messenger**;
-- Desactivar el **Dual messenger** para todas las aplicaciones;
+- Desactiva **Dual messenger** para todas las aplicaciones;
 - Bloquea el dispositivo durante 5 minutos;
 - Desbloquea la pantalla y vuelve a intentar crear el perfil VPN.
 

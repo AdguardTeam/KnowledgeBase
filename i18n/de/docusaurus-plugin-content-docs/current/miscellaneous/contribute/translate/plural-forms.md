@@ -38,9 +38,9 @@ Wenn Sie eine Phrase mit Pluralformen übersetzen, können Sie möglicherweise n
 
 Hier sind einige Informationsquellen, die Sie verwenden können.
 
-[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) enthält eine umfangreiche Liste von Sprachen. Die Anzahl der Pluralformen für die verschiedenen Sprachen wird auf diese Weise dargestellt: `nplurals=2`, `nplurals=4` und so weiter. The numeral after the Equals sign `=` indicates the number of plural forms of the respective language.
+[Localization Guide](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) enthält eine umfangreiche Liste von Sprachen. Die Anzahl der Pluralformen für die verschiedenen Sprachen wird auf diese Weise dargestellt: `nplurals=2`, `nplurals=4` und so weiter. Die Zahl hinter dem Gleichheitszeichen `=` gibt die Anzahl der Pluralformen der jeweiligen Sprache an.
 
-Informationen zu Pluralformen finden Sie auch im [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Die CLDR-Pluralregeln geben eine zusätzliche Wortform für Dezimalzahlen an (1,5; 2,3; 100,1…), aber wir verwenden sie nicht in AdGuard-Übersetzungen.
+Informationen zu Pluralformen finden Sie auch im [Unicode Common Locale Data Repository](https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Die CLDR-Pluralregeln geben eine zusätzliche Wortform für Dezimalzahlen an (1,5; 2,3; 100,1…), aber wir verwenden sie nicht in AdGuard-Übersetzungen.
 
 ## Pluralformen in AdGuard-Übersetzungen {#translations}
 
@@ -116,7 +116,7 @@ Eine weitere wichtige Sache, auf die Sie Ihre Aufmerksamkeit richten sollten, si
 
 In einer Situation mit einer anderen Sprache, die beispielsweise drei Pluralformen hat, sollten drei Vorlagen mit zwei vertikalen Balkenzeichen dazwischen vorhanden sein.
 
-Wenn wir zum Beispiel den oben erwähnten Satz ins Slowakische übersetzen, der gemäß der Regel von [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) drei Wortformen hat, sieht die korrekte Übersetzung so aus:
+Wenn wir zum Beispiel den oben erwähnten Satz ins Slowakische übersetzen, der gemäß der Regel von [Localization Guide](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) drei Wortformen hat, sieht die korrekte Übersetzung so aus:
 
 `**Štandartná licencia pre *%count%* počítač | Štandartná licencia pre *%count%* počítače | Štandartná licencia pre *%count%* počítačov**`
 
@@ -137,7 +137,7 @@ Die Übersetzung aus dem Englischen ins Serbische sollte also lauten:
 
 Obwohl es offensichtlich ist, dass die letzten beiden Vorlagen keine Unterschiede aufweisen, ist es sehr wichtig, die Regel einzuhalten: **Die Anzahl der Vorlagen sollte die Anzahl der Pluralformen der jeweiligen Sprache widerspiegeln!**(typisch für diese Art von Strings mit Pluralformen).
 
-## Short summary {#summary}
+## Kurze Zusammenfassung {#summary}
 
 Achten Sie beim Übersetzen von AdGuard-Projekten genau auf Formulierungen, die die Verwendung von Pluralformen erfordern.
 

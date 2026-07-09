@@ -5,13 +5,13 @@ sidebar_position: 4
 
 :::info
 
-この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for iOS」についてです。 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for iOS」についてです。 実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
 「_アクティビティ_」画面は、AdGuard の「DNS通信を保護」機能の「情報ハブ」のようなものです。 画面下のバーの3番目のアイコンをタップすると、この画面に切り替えができます。 ※ この画面は、「DNS通信を保護」が有効な場合にのみ表示されます。
 
-![Activity screen \*mobile\_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
+![Activity screen \*mobile_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
 
 ここでは、AdGuardがデバイスのDNSリクエストに関する統計情報（総数、ブロックされたリクエスト数、ブロックによって節約されたデータ通信量など）を表示します。 1日、1週間、1ヶ月、または全期間合計の統計を表示できます。
 
@@ -25,7 +25,7 @@ sidebar_position: 4
 
 各リクエストをタップすると、その詳細が表示されます。 また、リクエストをワンタップでブラックリスト/ホワイトリストに追加するボタンもあります。
 
-![Request details \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
+![Request details \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
 
 アクティビティの上には、_最もアクティブな_企業と_最もブロックされた_企業があります。 それぞれをタップすると、直近1500件のリクエストに基づくデータが表示されます。
 

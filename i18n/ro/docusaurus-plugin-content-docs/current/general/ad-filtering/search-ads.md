@@ -1,35 +1,35 @@
 ---
-title: Search ads and self-promotion
+title: Căutați reclame și auto-promo
 sidebar_position: 3
 ---
 
-**Disclosure.** While AdGuard provides an option to show some ads, we do not have any 'acceptable ads' program like Adblock Plus and some other ad blockers, where they take money for leaving certain ads unblocked. This isn't our way of doing business. We do not get paid for showing any of the ads, and we do not use the term 'acceptable' for a reason: the ads we might show may be, in fact, useful and not just 'acceptable'. All of this applies only to search ads and self-promotion ads.
+**Disclosure.** While AdGuard provides an option to show some ads, we do not have any 'acceptable ads' program like Adblock Plus and some other ad blockers, where they take money for leaving certain ads unblocked. Aceasta nu este metoda noastră de a face afaceri. Nu primim bani pentru a arăta nicio reclamă și nu folosim termenul 'acceptabil' dintr-un motiv: reclamele pe care le-am putea arăta pot fi, de fapt, utile și nu doar 'acceptabile'. Toate acestea se aplică doar reclamelor de căutare și reclamelor de auto-promovare.
 
-You can turn off the display of these ads at any time. Furthermore, we will explain which ads qualify for this definition.
+Poți dezactiva afișarea acestor reclame în orice moment. În plus, vom explica care reclame se încadrează în această definiție.
 
-### Search ads
+### Reclame de căutare
 
-Search ads are ads that you see among search query results when using online search engines, such as Google, Bing, DuckDuckGo, etc.
+Reclamele de căutare sunt reclamele pe care le vezi printre rezultatele interogărilor de căutare atunci când folosești motoare de căutare online, cum ar fi Google, Bing, DuckDuckGo etc.
 
-![Search ads](https://cdn.adtidy.org/content/kb/ad_blocker/general/googlead.jpg)
+![Reclame de căutare](https://cdn.adtidy.org/content/kb/ad_blocker/general/googlead.jpg)
 
-These ads are always contextual: they are targeted to match the keywords you used in the query. This helps you find exactly what you are searching for. Moreover, search ads (because they go through manual moderation) are often more relevant and helpful than the rest of the search results.
+Aceste reclame sunt întotdeauna contextuale: sunt targetate pentru a se potrivi cu cuvintele cheie pe care le-ai folosit în interogare. Acest lucru te ajută să găsești exact ceea ce cauți. În plus, reclamele de căutare (deoarece trec prin moderare manuală) sunt adesea mai relevante și mai utile decât restul rezultatelor căutării.
 
-Another argument in defense of search ads is that they are much less intrusive than many other ad formats.
+Un alt argument în favoarea reclamelor de căutare este că sunt mult mai puțin intrusive decât multe alte formate de reclame.
 
-### What is websites' self-promotion?
+### Ce este auto-promovarea site-urilor web?
 
-In principle, when an ad on a website promotes this particular website or closely related websites, social media, and so on, such an ad is considered a self-promoting one.
+În principiu, atunci când o reclamă pe un site web promovează acest site web particular sau site-uri web strâns legate, rețele sociale etc., o astfel de reclamă este considerată de auto-promovare.
 
-![Search ads](https://cdn.adtidy.org/content/kb/ad_blocker/general/echodot.jpg)
+![Reclame de căutare](https://cdn.adtidy.org/content/kb/ad_blocker/general/echodot.jpg)
 
-Our general stance here is very similar to the EasyList policy regarding self-promotion ads. According to our [filter policy](../filter-policy), we should not block these ads; however, we should not make an exception if such an ad gets blocked by some rule 'alongside' a regular ad.
+Poziția noastră generală aici este foarte similară cu politica EasyList referitoare la reclamele de auto-promovare. According to our [filter policy](../filter-policy), we should not block these ads; however, we should not make an exception if such an ad gets blocked by some rule 'alongside' a regular ad.
 
-Partly, this is due to ethical reasons, but mostly because such ads are rarely too intrusive and are often useful for the visitor of the website (who is supposedly interested in this website's content).
+Parțial, aceasta se datorează unor motive etice, dar în mare parte pentru că astfel de reclame sunt rareori prea intrusive și sunt adesea utile pentru vizitatorul site-ului web (care e, în mod presupus, interesat de conținutul acestui site web).
 
-By enabling 'Search ads and self-promotion', AdGuard users can unblock some of these self-promotion ads.
+Prin activarea 'Reclamelor de căutare și auto-promovare', utilizatorii AdGuard pot debloca unele dintre aceste reclame de auto-promovare.
 
-### What ads are on the list?
+### Ce reclame sunt pe listă?
 
 When you enable 'Search ads and self-promotion', search ads from the following search engines are shown:
 
@@ -41,8 +41,8 @@ When you enable 'Search ads and self-promotion', search ads from the following s
 - DuckDuckGo
 - StartPage
 
-As well as all self-promotional ads that satisfy our filter policy.
+La fel și toate reclamele de auto-promovare care satisfac politica noastră de filtrare.
 
-### Summary
+### Rezumat
 
-Allowing 'Search ads and self-promotion' is a 100% optional feature that may be helpful in some cases. If you don't like it, you can turn it off at any time. It does not, and never will, include any ad types or individual ads that do not fall into one of the two categories described above.
+Permițând 'Reclamele de căutare și auto-promovare', este o caracteristică 100% opțională care poate fi utilă în unele cazuri. Dacă nu-ți place, poți să o dezactivezi în orice moment. Nu include, și nu va include niciodată, niciun tip de reclame sau reclame individuale care nu se încadrează în una dintre cele două categorii descrise mai sus.

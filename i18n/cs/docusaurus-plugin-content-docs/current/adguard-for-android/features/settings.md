@@ -15,11 +15,11 @@ Na kartu _Nastavení_ se dostanete klepnutím na ikonu úplně vpravo dole na ob
 
 Tato sekce vám pomůže spravovat vzhled a chování aplikace: můžete nastavit barevný motiv a jazyk, spravovat oznámení a další. Pokud chcete týmu AdGuard pomoci odhalit pády aplikací a zkoumat jejich použitelnost, můžete povolit funkce _Automatické hlášení pádů_ a _Odesílání technických údajů a údajů o interakci_.
 
-![General \*mobile\_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
+![General \*mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
 
 V sekci _Aktualizace aplikace a filtrů_ můžete nakonfigurovat automatické aktualizace filtrů a vybrat kanál aktualizace aplikace. Vyberte _Hlavní_ pro větší stabilitu a _Beta_ nebo _Nightly_ pro včasný přístup k novým funkcím.
 
-![Updates \*mobile\_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
+![Updates \*mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
 
 ### Pokročilá nastavení
 
@@ -27,25 +27,25 @@ _Automatizace_ vám umožňuje spravovat AdGuard prostřednictvím aplikací Tas
 
 _Hlídací pes_ pomáhá chránit AdGuard před vypnutím systémem ([přečtěte si více o úsporném režimu baterie systému Android](/adguard-for-android/solving-problems/background-work/)). Zadaná hodnota bude interval v sekundách mezi kontrolami watchdog.
 
-_Úroveň záznamu_ definuje, jaká data o provozu aplikace by měla být zaznamenána. Ve výchozím nastavení aplikace shromažďuje údaje o vlastních událostech. _Úroveň ladění_ zaznamenává více událostí – povolte ji, pokud o to tým AdGuardu požádá, abyste mu pomohli lépe porozumět problému. [Read more about collecting and sending logs](/adguard-for-android/solving-problems/log/)
+_Úroveň záznamu_ definuje, jaká data o provozu aplikace by měla být zaznamenána. Ve výchozím nastavení aplikace shromažďuje údaje o vlastních událostech. _Úroveň ladění_ zaznamenává více událostí – povolte ji, pokud o to tým AdGuardu požádá, abyste mu pomohli lépe porozumět problému. [Přečtěte si více o shromažďování a odesílání záznamů](/adguard-for-android/solving-problems/log/)
 
-![Advanced \*mobile\_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
+![Advanced \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-Sekce _Nízkoúrovňová nastavení_ je určena pro zkušené uživatele. [Přečtěte si více o Nízkoúrovňových nastavení](/adguard-for-android/solving-problems/low-level-settings/)
+Sekce _Nízkoúrovňová nastavení_ je určena pro zkušené uživatele. [Přečtěte si více o Nízkoúrovňových nastavení](/adguard-for-android/features/low-level-settings/)
 
-![Low-level settings \*mobile\_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
+![Low-level settings \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
 ## Filtrování
 
 Tato sekce umožňuje spravovat nastavení HTTPS filtrování, filtry a uživatelské skripty a nastavit proxy server.
 
-![Filtering \*mobile\_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
+![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.jpg)
 
 ### Filtry
 
 AdGuard blokuje reklamy, slídiče a obtěžující prvky pomocí pravidel ze svých filtrů. Většina funkcí ze sekce _Ochrana_ je podporována [AdGuard filtry](/general/ad-filtering/adguard-filters/#adguard-filters). Pokud povolíte _Základní ochranu_, automaticky se zapne filtr AdGuard Base a AdGuard Filtr mobilních reklam. A naopak: pokud oba filtry vypnete, bude vypnuta i _Základní ochrana_.
 
-![Filters \*mobile\_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
+![Filters \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
 Filtry povolené ve výchozím nastavení jsou dostatečné pro běžný provoz AdGuardu. Pokud si však chcete blokování reklam přizpůsobit, můžete použít jiné AdGuard filtry nebo filtry třetích stran. Za tímto účelem vyberte kategorii a povolte požadované filtry. Chcete-li přidat vlastní filtr, klepněte na _Vlastní filtry_ → _Přidat vlastní filtr_ a zadejte jeho URL nebo cestu k souboru.
 
@@ -57,11 +57,19 @@ Pokud aktivujete příliš mnoho filtrů, mohou některé webové stránky fungo
 
 [Více informací o filtrech](https://adguard.com/en/blog/what-are-filters.html)
 
-### Uživatelské skripty
+### Rozšíření
 
-Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. K instalaci uživatelských skriptů potřebujete speciální správce uživatelských skriptů. AdGuard takovou funkci má a umožňuje přidávat uživatelské skripty pomocí URL nebo ze souboru.
+Rozšíření umožňují přidávat uživatelské skripty a uživatelské styly.
 
-![Userscripts \*mobile\_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
+![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.jpg)
+
+Uživatelské skripty jsou miniprogramy napsané v jazyce JavaScript, které rozšiřují funkčnost jedné nebo více webových stránek. K instalaci uživatelských skriptů potřebujete speciální správce uživatelských skriptů. AdGuard takovou funkci má a umožňuje přidávat uživatelské skripty pomocí URL nebo ze souboru.
+
+Uživatelské styly jsou podobné uživatelským skriptům, které umožňují měnit vzhled webových stránek v prohlížeči, aniž by se měnil jejich obsah. Fungují tak, že přidávají styly CSS ke stávajícím stylům webových stránek. Pokud například chcete tmavý motiv na webu, který ho nenabízí, můžete k tomu použít uživatelský styl.
+
+Chcete-li přidat uživatelský styl, přejděte do _Nastavení_ → _Filtrování_ → _Rozšíření_→ _Přidat rozšíření_ → _Importovat ze souboru nebo URL_. Hotové uživatelské styly najdete [online](https://userstyles.world/).
+
+Chcete-li vytvořit vlastní styl, klepněte na _Přidat rozšíření_ → _Vytvořit uživatelský styl_.
 
 #### AdGuard Extra
 
@@ -124,6 +132,12 @@ Režim _Lokální VPN_ neumožňuje používat AdGuard současně s jinými VPN.
 
 - _Automatický proxy_ je alternativní metoda směrování provozu, která nevyžaduje použití VPN. Významnou výhodou je, že jej lze provozovat souběžně s VPN. Tento režim vyžaduje přístup root.
 
+:::note
+
+Upozorňujeme, že filtrování DNS bude aktivní i v režimu _Automatického proxy serveru_ a zařízení nemusí být schopno filtrovat požadavky DNS z konkrétních aplikací. V režimu směrování _VPN_ jsou aplikace z lokální VPN vyloučeny systémovými prostředky. Řešitel systému proto vidí, které aplikace jsou součástí VPN a které ne. Buď je pustí do lokální VPN, nebo jim umožní ji obejít. Požadavky DNS však přicházejí ze systémového řešitele, nikoli z aplikace. V režimu _Automatický proxy server_ je možné vyloučit pouze provoz z aplikací, nikoli jejich dotazy DNS, protože AdGuard je považuje za systémové dotazy.
+
+:::
+
 - _Manuální proxy_ zahrnuje nastavení proxy na konkrétním portu, který lze poté nakonfigurovat v nastavení Wi-Fi. Tento režim vyžaduje přístup root pro Android 10 a vyšší.
 
 ## Licence
@@ -132,18 +146,18 @@ V této sekci najdete informace o své licenci a můžete provádět následují
 
 - Zakoupit licenci AdGuardu pro aktivaci [funkcí plné verze](/adguard-for-android/features/free-vs-full)
 - Přihlásit se ke svému AdGuard účtu nebo zadat licenční klíč pro aktivaci licence
-- Zaregistrovat se a aktivovat si 7denní zkušební dobu, pokud jste ji ještě nevyužili
-- Refresh the license status from the three-dots menu (⋮)
+- Zaregistrujte se a aktivujte si 14denní zkušební období. Aktivační kód lze použít na různých zařízeních a platformách
+- Obnovit stav licence z nabídky se třemi tečkami (⋮)
 - Otevřít AdGuard účet a spravovat v něm své licence
 - Resetovat licenci — například pokud jste dosáhli limitu zařízení pro tuto licenci a chcete použít jinou
 
-![License screen \*mobile\_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![License screen \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/android/settings/licensetab.png)
 
 ## Podpora
 
 Tuto sekci použijte, pokud máte nějaké dotazy nebo návrhy týkající se AdGuardu pro Android. Před kontaktováním podpory doporučujeme nahlédnout do _[FAQ](https://adguard.com/support/adguard_for_android.html)_ nebo do této databáze znalostí.
 
-![Support \*mobile\_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
+![Support \*mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
 Pokud si všimnete nezablokované reklamy, nahlaste ji prosím skrze menu _Nahlásit nesprávné blokování_.
 

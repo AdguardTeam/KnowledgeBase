@@ -17,18 +17,12 @@ sidebar_position: 4
 1. 选择视频并点击「*分享*」。
 1. 点击「*更多*」，然后选择「*拦截 YouTube 的广告（由 AdGuard 创建）*」。
 
-视频将在 AdGuard 的无广告播放器中打开。
+The video now opens in AdGuard’s ad-free player.
 
 ## 如何在 Safari 中拦截 YouTube 广告
 
-:::tip
+1. Go to *Safari* → *Extensions* → *AdGuard*.
+1. Make sure *Allow Extension* is enabled. On the same screen, set the *All Websites* permission for AdGuard to *Allow*. ![Extension permissions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/extensions_allow.jpg)
+1. Open AdGuard, tap the shield icon, and enable *Advanced protection*.
 
-请确保您已给 AdGuard 管理所有网站的权限。 要开启访问权限，前往「Safari」→「扩展」→「AdGuard」。 然后打开 AdGuard 并启用「*高级保护*」。
-
-:::
-
-1. 在 Safari 中打开 youtube.com
-1. 选择视频并点击「*分享*」。
-1. 点击「*拦截 YouTube 的广告（由 AdGuard 创建）*」。
-
-视频将在 AdGuard 的无广告播放器中打开。
+You can now watch YouTube videos in Safari without ads.

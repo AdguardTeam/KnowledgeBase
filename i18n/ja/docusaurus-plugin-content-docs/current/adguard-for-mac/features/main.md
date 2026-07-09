@@ -1,14 +1,14 @@
 ---
-title: Main window
-sidebar_position: 1
+title: メインウィンドウ
+sidebar_position: 2
 ---
 
 :::info
 
-この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for Mac」についてです。 実際どのように機能するのかを確認するには、[AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for Mac」についてです。 実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
-The main window of AdGuard for Mac allows you to enable or disable the AdGuard protection. It also gives you a quick overview of the app’s stats: ads, trackers, and threats blocked since you’ve installed AdGuard or since your last stats reset. By clicking the gear icon, you can access settings, check for app and filter updates, contact support, and manage your license.
+AdGuard for Mac のメインウィンドウでは、AdGuard による保護をオン・オフにすることができます。 また、AdGuardをインストールしてから（もしくは最後に統計情報をリセットしてから）ブロックされた広告数、トラッカー数、脅威数など、アプリの統計情報の概要も表示されます。 歯車アイコン「⚙️」をクリックすると、設定にアクセスしたり、アプリやフィルタのアップデートをチェックしたり、サポートに連絡したり、ライセンスを管理したりできます。
 
 ![Main window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)

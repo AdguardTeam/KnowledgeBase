@@ -1,22 +1,22 @@
 ---
-title: AdGuard for Safari doesn’t work in private tabs on macOS Sonoma
+title: AdGuard pentru Safari nu funcționează în tab-uri private pe macOS Sonoma
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for Safari, which safeguards only your Safari browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Safari, care protejează doar browserul dvs. Safari. Pentru a proteja întregul dispozitiv, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## How to fix
 
-1. Open Safari.
-2. Click _Safari_ in the left upper corner menu.
-3. Click _Settings…_ → _Extensions_.
+1. Deschideți Safari.
+2. Faceți clic pe _Safari_ în meniul din colțul din stânga sus.
+3. Faceți clic pe _Setări…_ → _Extensii_.
 4. Check _Allow in Private Browsing_ for all AdGuard extensions.
-   ![Checked private browsing](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
+   ![Verificat navigarea privată](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
 
-If this doesn’t help and ads are still not being blocked, please contact our support at support@adguard.com.
+Dacă aceasta nu ajută și reclamele continuă să nu fie blocate, vă rugăm să contactați suportul nostru la support@adguard.com.
 
-If you only have problems with a specific page or website, you can report it directly from the browser: click the AdGuard for Safari icon next to the Safari search bar, and then click _Report an issue_.
+Dacă aveți probleme doar cu o pagină sau un site web specific, puteți raporta direct din browser: faceți clic pe iconița AdGuard pentru Safari de lângă bara de căutare Safari și apoi faceți clic pe _Raportați o problemă_.

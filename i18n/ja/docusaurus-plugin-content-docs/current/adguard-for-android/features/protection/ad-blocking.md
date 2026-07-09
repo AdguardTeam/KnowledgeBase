@@ -21,4 +21,4 @@ sidebar_position: 1
 
 - 【ユーザールールの作成する】AdGuard は、指定されたウェブサイトにそれらのルールを適用します。 [独自のユーザールールを作成する方法についてはこちら](/general/ad-filtering/create-own-filters)
 
-![広告ブロック \*mobile\_border](https://cdn.adtidy.org/blog/new/g7tbpScreenshot_20230621-163650_AdGuard.jpg)
+![広告ブロック \*mobile_border](https://cdn.adtidy.org/blog/new/g7tbpScreenshot_20230621-163650_AdGuard.jpg)

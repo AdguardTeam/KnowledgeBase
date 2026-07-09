@@ -17,7 +17,7 @@ Escolha qualquer uma das pastas de produtos disponíveis e selecione um arquivo.
 
 ![Arquivos *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Você também pode alterar o idioma da interface do Crowdin clicando no ícone *Configurações* no canto superior direito da página. Na janela aberta, role para baixo até a guia *UI language*. Abra-o, escolha um idioma e clique em **Alterar**.
 

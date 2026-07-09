@@ -1,6 +1,6 @@
 ---
 title: Problems caused by multiple user profiles
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 :::info
@@ -68,7 +68,7 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. 古いバ�
 
 :::note
 
-In some cases restricted user accounts are created implicitly and cannot be removed. たとえば、**Samsung**または**LG**デバイスでデュアルメッセンジャーまたはデュアルアプリ機能を使用する場合です。 これらのケースで問題を解決する方法を以下に記載いたしました。
+In some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual Messenger or Dual App features on **Samsung** or **LG** devices. これらのケースで問題を解決する方法を以下に記載いたしました。
 
 :::
 
@@ -84,8 +84,8 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 
 - 端末**設定**を開く
 - **高度な設定**をタップ
-- 下にスクロールして**デュアルメッセンジャー**をタップ
-- Disable the **Dual messenger** for all apps;
+- Scroll down and press **Dual Messenger**;
+- Disable the **Dual Messenger** for all apps;
 - 端末画面オフにして5～10分程度放置する
 - 画面のロックを解除し、再度VPNプロファイルの作成を試みてください。
 
@@ -93,6 +93,6 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 
 - 端末**設定**を開く
 - 「**便利な機能**」を開く（端末によっては「一般」や他のメニュー名称の場合もあります）
-- 下にスクロールして、「**デュアルアプリ**」をタップ
+- Scroll down and press **Dual App**;
 - Remove all apps from the list;
 - 端末を再起動する

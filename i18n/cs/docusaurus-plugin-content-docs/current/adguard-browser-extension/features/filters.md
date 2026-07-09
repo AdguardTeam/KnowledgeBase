@@ -1,6 +1,6 @@
 ---
 title: Filtry
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 :::info
@@ -29,6 +29,8 @@ Chcete-li přidat filtr, stačí kliknout na _Přidat vlastní filtr_, zadat adr
 
 ![Add a custom filter \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
+Vlastní filtry se aktualizují samostatně, takže vaše filtrování zůstává účinné a aktuální, aniž by bylo nutné aktualizovat rozšíření.
+
 ## Uživatelská pravidla {#user-rules}
 
 _Uživatelská pravidla_ jsou další nástroj, který vám pomůže přizpůsobit blokování reklam.
@@ -49,7 +51,7 @@ _Seznam povolených_ se používá k vyloučení určitých webových stránek z
 
 ![Allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-_Seznam povolených_ lze také obrátit: reklamy můžete odblokovat všude kromě webových stránek přidaných do tohoto seznamu. Chcete-li to provést, povolte možnost _Invertovat seznam povolených_.
+_Seznam povolených_ lze také obrátit: reklamy můžete odblokovat všude kromě webových stránek přidaných do tohoto seznamu. Chcete-li to provést, povolte možnost _Invertovat seznam povolených_. Než se funkce zapne, zobrazí se potvrzovací dialogové okno, které zabrání náhodnému spuštění a vysvětlí, co se stane.
 
 ![Invert allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 

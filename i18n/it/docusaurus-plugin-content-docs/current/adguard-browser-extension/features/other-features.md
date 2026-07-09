@@ -1,38 +1,48 @@
 ---
-title: Altre funzionalità e opzioni
-sidebar_position: 3
+title: Altre funzioni e opzioni
+sidebar_position: 4
 ---
 
 :::info
 
-Questo articolo riguarda l'Estensione di browser AdGuard, che protegge solo il tuo browser. Per proteggere l'intero dispositivo, [scarica l'app AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda l'Estensione per browser di AdGuard, che protegge solo il tuo browser. Per proteggere l'intero dispositivo, [scarica l'app AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Oltre ai grandi moduli chiave dell'estensione del browser AdGuard, ci sono molte altre funzionalità specifiche che possono essere configurate nelle schede _Generale_ e _Impostazioni aggiuntive_ delle impostazioni dell'estensione.
+Oltre ai grandi moduli chiave dell'estensione del browser AdGuard, ci sono molte altre funzioni specifiche che possono essere configurate nelle schede _Generale_ e _Impostazioni aggiuntive_ delle impostazioni dell'estensione.
 
 ## Generale {#general}
 
-Nella scheda _Generale_, puoi consentire la ricerca di annunci e [l'auto-promozione dei siti web](/general/ad-filtering/search-ads), abilitare l'attivazione automatica di filtri specifici per la lingua, indicare l'intervallo di aggiornamento dei filtri, etc.
+The _General_ tab contains the main extension settings and lets you control its basic filtering behavior. Here you can allow search ads and [self‑promotion on websites](/general/ad-filtering/search-ads/), enable automatic activation of language-specific filters, set the update interval for the filters, and turn on [protection against phishing and malicious websites](/general/browsing-security/).
 
-! [Generale \*border] (https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
+![General \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/general_new.png)
 
-Inoltre, qui puoi abilitare la [_Protezione da phishing e malware_](/general/browsing-security).
+You can also save your current configuration and quickly apply it to another browser or device. To do this, click _Share settings_ in the _General_ tab: the extension will generate a special link and a QR code that contain your current settings. You can either copy the link and open it in a browser, or scan the QR code on a device with AdGuard to open the link directly in the app. You will then see a prompt to apply the shared configuration so that you can restore the same setup after reinstalling your browser or on a new device.
 
-Puoi salvare la configurazione delle tue impostazioni cliccando il pulsante _Esporta impostazioni_. Le impostazioni saranno salvate come un file .json. Per importare la configurazione d'impostazioni precedentemente salvata, utilizza la funzionalità _Importa impostazioni_. Puoi anche utilizzarla per passare tra diversi profili di impostazioni, o persino per trasferire le configurazioni di impostazioni tra browser differenti.
+If needed, you can also share this link with other people or attach it to a support request so the team can see your exact configuration.
 
-## Impostazioni aggiuntive {#misc}
+In addition, you can still export your settings to a .json file by clicking _Export settings_ and import them via the _Import settings_ option. This makes it easy to switch between different configuration profiles or move them between browsers.
 
-La sezione delle _Impostazioni aggiuntive_ contiene una gamma di varie impostazioni, correlate al processo di blocco degli annunci e di utilizzabilità dell'applicazione.
+## Additional settings {#misc}
 
-![Impostazioni aggiuntive \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
+The _Additional settings_ section contains a range of various settings that are related to the ad blocking process and application usability.
 
-Da questa scheda, puoi attivare i filtri ottimizzati, abilitare le notifiche sugli aggiornamenti dell'estensione, aprire il _Registro di filtraggio_ o cancellare le statistiche di annunci e tracciatori bloccati.
+![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional_new.png)
 
-Inoltre, puoi decidere di aiutarci con lo sviluppo dei filtri, inviandoci le statistiche sulle regole applicate: quali sono innescate, su quali siti web e quanto spesso. Questa opzione è disabilitata di default in quanto non raccogliamo dati dell'utente senza consenso. Tuttavia, se l'abiliti, tutti i dati saranno strettamente anonimizzati.
+From this tab, you can invert the allowlist and add the AdGuard item to the browser’s context menu. You can also enable the display of the number of blocked ads on the AdGuard icon and notifications about extension updates. Additionally, this section lets you enable notifications about the AdGuard app, open the _Filtering log_, clear the statistics of blocked ads and trackers, or reset the settings.
 
-## Informazioni {#about}
+Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
 
-Nella sezione _Informazioni_, puoi trovare le informazioni sulla versione corrente, collegamenti all'EULA e l'Informativa sulla Privacy e alla repository dell'estensione del Browser su GitHub.
+You can also choose to help us improve the extension by sending us anonymized usage data. This includes the names of the screens you interact with, the names of the buttons you click, and session identifiers. These insights help us understand where users run into friction, refine the experience, and make the extension faster and easier to use. The _Send anonymized usage data_ option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
 
-![Informazioni \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+:::note
+
+The _Send anonymized usage data_ option can also be enabled on the post-installation page in Chromium-based browsers.
+
+:::
+
+## About {#about}
+
+In the _About_ section, you can find info about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
+
+![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/about_new.png)

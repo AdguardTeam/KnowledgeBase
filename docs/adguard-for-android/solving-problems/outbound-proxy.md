@@ -1,6 +1,6 @@
 ---
 title: How to set up outbound proxy
-sidebar_position: 8
+sidebar_position: 7
 ---
 
 :::info
@@ -141,7 +141,7 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 *Here we presume that you are already a Clash client and have it installed on your device.*
 
-1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and toggle the switch. This will set Clash to proxy mode.
+1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and toggle the switch on. This will set Clash to proxy mode.
 
 1. Open AdGuard and go to **App management**. Choose **Clash For Android** and disable **Route traffic through AdGuard**. This will eliminate traffic looping.
 
@@ -154,6 +154,28 @@ You should remove Shadowsocks app from filtering before setting up the process (
     Proxy type | *SOCKS5*
     Proxy host | *127.0.0.1*
     Proxy port | *7891*
+
+### How to use AdGuard with WG Tunnel
+
+*The proxy mode was added in version 4.0. We presume that you already have WG Tunnel installed on your device and have added the WireGuard configuration.*
+
+1. Open WG Tunnel and go to **Settings** (the cog wheel at the bottom) → **App Mode** → **Proxy (experimental)**. This will set WG Tunnel to proxy mode.
+
+1. Open AdGuard and go to **App management**. Choose **WG Tunnel** and disable **Route traffic through AdGuard**. This will eliminate traffic looping.
+
+1. Then go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
+
+1. Tap **Add proxy server** and fill in the fields:
+
+    Field      |  Value
+    -------    | ---------
+    Proxy type | *SOCKS5*
+    Proxy host | *127.0.0.1*
+    Proxy port | *25344*
+
+1. Tap **Save and select**.
+
+1. Enable the main proxy switch and AdGuard protection to route your device’s traffic through the proxy.
 
 ## Limitations
 

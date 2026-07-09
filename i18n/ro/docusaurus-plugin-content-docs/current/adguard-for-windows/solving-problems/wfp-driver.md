@@ -1,20 +1,20 @@
 ---
-title: WFP driver
+title: Driver WFP
 sidebar_position: 1
 ---
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multifuncțional care protejează dispozitivul dumneavoastră la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-To filter network traffic, AdGuard uses a network driver. There are two options: TDI driver and WFP driver. While a WFP driver is generally preferrable and is enabled by default for all newer Windows OS versions (Windows 8 and newer), it can potentially cause compatibility problems, especially with some antiviruses. These problems and subsequent errors can be very different in each case.
+Pentru a filtra traficul de rețea, AdGuard folosește un driver de rețea. Există două opțiuni: driver TDI și driver WFP. În timp ce un driver WFP este, în general, preferabil și este activat implicit pentru toate versiunile mai noi ale sistemului de operare Windows (Windows 8 și versiunile ulterioare), acesta poate cauza potențial probleme de compatibilitate, mai ales cu unele antivirusuri. Aceste probleme și erorile ulterioare pot fi foarte diferite în fiecare caz.
 
-If you encounter a problem that you suspect might be caused by this, you can always switch to the older but more stable TDI network driver. To do so:
+Dacă întâlniți o problemă de care suspectați că ar putea fi cauzată de aceasta, puteți comuta întotdeauna la driverul de rețea TDI, mai vechi, dar mai stabil. Pentru a face acest lucru:
 
-1. Go to *Settings → Network*.
+1. Mergi la *Setări → Rețea*.
 
-2. Disable the WFP driver as it’s done in this picture:
+2. Dezactivați driverul WFP așa cum este arătat în această imagine:
 
 ![WFP driver *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)

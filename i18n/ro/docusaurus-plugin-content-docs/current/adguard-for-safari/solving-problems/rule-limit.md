@@ -1,36 +1,36 @@
 ---
-title: Rule limit issues
+title: Limitele regulilor
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard for Safari, which safeguards only your Safari browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru Safari, care protejează doar browserul dvs. Safari. Pentru a proteja întregul dispozitiv, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Safari content blocker rule limit
 
-AdGuard for Safari uses the Content Blocking API to apply filtering rules to pages in the Safari browser. Currently, a maximum of 150,000 rules are allowed for each content-blocking extension.
+AdGuard pentru Safari folosește API-ul de Blocare a Conținutului pentru a aplica regulile de filtrare pe paginile din browserul Safari. În prezent, un maxim de 150.000 de reguli sunt permise pentru fiecare extensie de blocare a conținutului.
 
-AdGuard for Safari has 6 content blockers:
+AdGuard pentru Safari are 6 blocante de conținut:
 
 - AdGuard General
 - AdGuard Privacy
 - AdGuard Social
 - AdGuard Security
-- AdGuard Other
+- AdGuard Altele
 - AdGuard Custom
 
-This makes a total of 900,000 filtering rules.
+Acest lucru face un total de 900.000 de reguli de filtrare.
 
-However, **an extension can contain up to 150,000 rules**. If you exceed this limit, some of the rules will not be applied. This may lead to incorrect blocking.
+Cu toate acestea, **o extensie poate conține până la 150.000 de reguli**. Dacă depășești această limită, unele dintre reguli nu vor fi aplicate. Aceasta poate duce la blocări incorecte.
 
-## How to check if you are exceeding the rule limit
+## Cum să verifici dacă depășești limita regulilor
 
-1. Open AdGuard for Safari app.
-2. Scroll down and click _Content blockers_.
-3. Below each content blocker, you can see the enabled filters and the number of active rules.
-   ![Content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
+1. Deschide aplicația AdGuard pentru Safari.
+2. Derulează în jos și apasă _Blocante de conținut_.
+3. Sub fiecare blocant de conținut, poți vedea filtrele activate și numărul de reguli active.
+   ![Blocante de conținut](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
 
-If more than 150,000 rules are enabled in a content blocker, you may need to disable some filters or user rules from it. Go to _Filters_, select the problematic category, and disable the filters or user rules you don’t need.
+Dacă mai mult de 150.000 de reguli sunt activate într-un blocant de conținut, poate fi necesar să dezactivezi unele filtre sau reguli utilizator din acesta. Mergi la _Filtre_, selectează categoria problematică și dezactivează filtrele sau regulile utilizator de care nu ai nevoie.

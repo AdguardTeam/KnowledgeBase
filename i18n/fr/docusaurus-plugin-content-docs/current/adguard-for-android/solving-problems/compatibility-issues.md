@@ -1,11 +1,11 @@
 ---
 title: Known compatibility issues with Android apps
-sidebar_position: 16
+sidebar_position: 14
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article concerne AdGuard pour Android, un bloqueur de publicité multifonctionnel qui protège votre appareil au niveau système. Pour voir comment ça fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -18,7 +18,7 @@ If you are using AdGuard in the *Local VPN* filtering mode, you cannot run other
 - Switch to the *Automatic proxy* mode. When you do that, AdGuard will no longer use local VPN and will reconfigure iptables instead
 - Switch to the *Manual proxy* mode. To do this, go to *Settings* → *Filtering* → *Network* → *Routing mode*
 
-:::note Compatibility
+:::note Compatibilité
 
 The *Automatic proxy* mode is only accessible on rooted devices. For *Manual proxy*, rooting is required on devices running on Android 10 or later.
 
@@ -30,7 +30,7 @@ The Private DNS feature was introduced in Android Pie. Before version Q, Private
 
 - To solve the problem with Private DNS, use the `$network` rule
 
-Some device manufacturers keep Private DNS settings hidden and set 'Automatic' mode as a default one. Thus, disabling Private DNS is impossible but we can make the system think that the upstream is not valid by blocking it with a `$network` rule. For instance, if the system uses Google DNS by default, we can add rules `|8.8.4.4^$network` and `|8.8.8.8^$network` to block Google DNS.
+Certains fabricants d'appareils gardent les paramètres DNS privés masqués et définissent le mode 'Automatique' comme mode par défaut. Thus, disabling Private DNS is impossible but we can make the system think that the upstream is not valid by blocking it with a `$network` rule. For instance, if the system uses Google DNS by default, we can add rules `|8.8.4.4^$network` and `|8.8.8.8^$network` to block Google DNS.
 
 ## Unsupported browsers
 
@@ -38,9 +38,9 @@ Some device manufacturers keep Private DNS settings hidden and set 'Automatic' m
 
 To be able to filter HTTPS traffic, AdGuard requires the user to add a certificate to the device's trusted user certificates. Unfortunately, UC browsers don't trust user certificates, so AdGuard cannot perform HTTPS filtering there.
 
-- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md/)
+- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md)
 
-:::note Compatibility
+:::note Compatibilité
 
 Requires root access.
 

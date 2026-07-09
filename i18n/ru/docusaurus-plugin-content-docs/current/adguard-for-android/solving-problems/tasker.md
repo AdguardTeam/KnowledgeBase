@@ -126,7 +126,7 @@ sidebar_position: 3
 
 :::
 
-**Don't forget to include the password, package name, and class. Это нужно делать для каждого интента.**
+**Не забудьте указать пароль, имя приложения (package) и класс. Это нужно делать для каждого интента.**
 
 Extra: `password:*******`
 
@@ -136,7 +136,7 @@ Class: `com.adguard.android.receiver.AutomationReceiver`
 
 :::note
 
-До версии 4.0 класс назывался `com.adguard.android.receivers.AutomationReceiver`, но затем мы изменили его название на `com.adguard.android.receiver.AutomationReceiver`. If this function is used, remember to update to the new name.
+До версии 4.0 класс назывался `com.adguard.android.receivers.AutomationReceiver`, но затем мы изменили его название на `com.adguard.android.receiver.AutomationReceiver`. Если используется эта функция, не забудьте обновить её название.
 
 :::
 

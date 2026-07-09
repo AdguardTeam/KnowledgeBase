@@ -1,40 +1,40 @@
 ---
-title: Launch issues on macOS
+title: Probleme de lansare pe macOS
 sidebar_position: 6
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru macOS, un blocant de reclame multifuncțional care protejează dispozitivul tău la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Occasionally macOS may cause the corruption of AdGuard's Network Extension module, making it unable to use the app. In this case you should follow one of these instructions, based on your OS version.
+Occasionally macOS may cause the corruption of AdGuard's Network Extension module, making it unable to use the app. În acest caz, ar trebui să urmați una dintre aceste instrucțiuni, în funcție de versiunea sistemului de operare.
 
-## Launch issues on macOS 11 and higher
+## Probleme de lansare pe macOS 11 și versiuni superioare
 
-If you have problems launching AdGuard for Mac on Big Sur and Monterey operating systems, please use this instruction:
+Dacă aveți probleme la lansarea AdGuard pentru Mac pe sistemele de operare Big Sur și Monterey, vă rugăm să folosiți această instrucțiune:
 
-1. Reboot Mac and enter [recovery mode](https://support.apple.com/en-us/HT201255).
+1. Reporniți macOS și introduceți [modul de recuperare](https://support.apple.com/en-us/HT201255).
 1. Disable SIP (Launch **Terminal** from the **Utilities** menu and type `csrutil disable`).
-1. Reboot Mac.
-1. Close the AdGuard app, open **Terminal** and type `systemextensionsctl reset`.
-1. Reboot Mac and enter recovery mode.
+1. Reporniți macOS.
+1. Închideți aplicația AdGuard, deschideți **Terminal** și tastați `systemextensionsctl reset`.
+1. Reporniți macOS și introduceți modul de recuperare.
 1. Enable SIP (Launch **Terminal** from the **Utilities** menu and type `csrutil enable`).
-1. Launch the AdGuard app and enable protection.
+1. Lansați aplicația AdGuard și activați protecția.
 
-## Launch issues on macOS 10
+## Probleme de lansare pe macOS 10
 
-If you have problems launching AdGuard for Mac on Sierra, Mojave and Catalina operating systems, please use this instruction:
+Dacă aveți probleme la lansarea AdGuard pentru Mac pe sistemele de operare Sierra, Mojave și Catalina, vă rugăm să folosiți această instrucțiune:
 
-1. Open **Terminal** and enter command `ls -@lOae /private/var/db/KernelExtensionManagement`.
-1. Check that the `restricted` flag is not present (like on the screenshot). ![Command example *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/restricted-flag.jpg)
-1. Reboot your Mac in recovery mode.
-1. Open **Utilities** → **Terminal**.
+1. Deschideți **Terminal** și introduceți comanda `ls -@lOae /private/var/db/KernelExtensionManagement`.
+1. Verificați că marca `restricted` nu este prezentă (așa cum este în captura de ecran). ![Exemplu de comandă *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/restricted-flag.jpg)
+1. Reporniți macOS în modul de recuperare.
+1. Deschideți **Utilitare** → **Terminal**.
 1. Enter `csrutil disable`.
-1. Enter administrator password.
-1. Reboot your Mac.
-1. Open **Terminal** and enter the following command: `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
-1. Reboot your Mac in recovery mode.
+1. Introduceți parola de administrator.
+1. Reporniți macOS.
+1. Deschideți **Terminal** și introduceți următoarea comandă: `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
+1. Reporniți macOS în modul de recuperare.
 1. Open **Utilities** → **Terminal** → Enter `csrutil enable` → Enter administrator password → Reboot your Mac.
-1. Enable AdGuard protection.
+1. Activați protecția AdGuard.

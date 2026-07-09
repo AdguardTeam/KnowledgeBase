@@ -9,12 +9,12 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 :::
 
-Um den Netzwerkverkehr filtern zu können, verwendet AdGuard einen Netzwerktreiber. There are two options: TDI driver and WFP driver. While a WFP driver is generally preferrable and is enabled by default for all newer Windows OS versions (Windows 8 and newer), it can potentially cause compatibility problems, especially with some antiviruses. These problems and subsequent errors can be very different in each case.
+Um den Netzwerkverkehr filtern zu können, verwendet AdGuard einen Netzwerktreiber. Es gibt zwei Optionen: TDI-Treiber und WFP-Treiber. Obwohl ein WFP-Treiber im Allgemeinen vorzuziehen ist und standardmäßig für alle neueren Windows-Betriebssystemversionen (Windows 8 und neuer) aktiviert ist, kann er möglicherweise Kompatibilitätsprobleme verursachen, insbesondere mit einigen Antivirenprogrammen. Diese Probleme und Folgefehler können von Fall zu Fall sehr unterschiedlich sein.
 
-If you encounter a problem that you suspect might be caused by this, you can always switch to the older but more stable TDI network driver. Um dies zu tun:
+Wenn Sie auf ein Problem stoßen, von dem Sie vermuten, dass es dadurch verursacht wird, können Sie jederzeit auf den älteren, aber stabileren TDI-Netzwerktreiber wechseln. Um dies zu tun:
 
-1. Go to *Settings → Network*.
+1. Gehen Sie zu *Einstellungen → Netzwerk*.
 
-2. Disable the WFP driver as it’s done in this picture:
+2. Deaktivieren Sie den WFP-Treiber, wie in diesem Bild gezeigt:
 
 ![WFP-Treiber *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)

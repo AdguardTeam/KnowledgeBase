@@ -1,5 +1,5 @@
 ---
-title: How to automate AdGuard for Android
+title: Cómo automatizar AdGuard para Android
 sidebar_position: 3
 ---
 
@@ -65,85 +65,85 @@ La lista completa de nombres de proveedores admitidos se puede encontrar en nues
 
  `server:custom` cambia al servidor previamente añadido llamado `custom`;
 
- `servidor:tls://dns.adguard.com` crea un nuevo servidor y cambia a él si los servidores y proveedores agregados anteriormente no contienen un servidor con la misma dirección. De lo contrario, cambia al servidor correspondiente. You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or `tls://...` (DNS-over-TLS);
+ `servidor:tls://dns.adguard.com` crea un nuevo servidor y cambia a él si los servidores y proveedores agregados anteriormente no contienen un servidor con la misma dirección. De lo contrario, cambia al servidor correspondiente. Puedes agregar direcciones de servidor como IP (DNS normal), `sdns://…` (DNSCrypt o DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) o `tls://...` (DNS-over-TLS);
 
- `server:1.1.1.1, tls://1.1.1.1` creates a server with comma separated addresses and switches to it. When adding a server via `server:1.1.1.1, tls://1.1.1.1`, the previously added server is removed.
+ `server:1.1.1.1, tls://1.1.1.1` crea un servidor con direcciones separadas por comas y conmuta a él. Al agregar un servidor a través de `server:1.1.1.1, tls://1.1.1.1`, se elimina el servidor agregado anteriormente.
 
- `server:system` resets DNS settings to default system DNS servers.
+ `servidor:sistema` restablece la configuración de DNS a los servidores DNS del sistema predeterminados.
 
  -----
 
-`proxy_state` enables/disables the outbound proxy. Requiere una bandera extra:
+`proxy_state` habilita/deshabilita el proxy saliente. Requiere una bandera extra:
 
-`enable:true` or `enable:false` activates or deactivates the outbound proxy, accordingly.
+`enable:true` o `enable:false` activa o desactiva el proxy saliente, según corresponda.
 
 -----
 
-`proxy_default` sets the proxy from the list of previously added ones as default or creates a new one if server has not been added before.
+`proxy_default` establece el proxy de la lista de los agregados previamente como predeterminado o crea uno nuevo si no se ha agregado ningún servidor antes.
 
-You need to specify additional data:
+Es necesario especificar datos adicionales:
 
-`server:[name]` where `[name]` is the name of the outbound proxy from the list.
+`server:[name]` donde `[nombre]` es el nombre del proxy saliente de la lista.
 
-Or you can configure server parameters manually:
-
-`server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
-
-`proxy_remove` removes the proxy server from the list of previously added ones.
-
-`server:[name]` where `[name]` is the name of the outbound proxy from the list.
-
-Or you can configure remove parameters manually:
+O puedes configurar los parámetros del servidor manualmente:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 
-- **Compulsory parameters**:
+`proxy_remove` elimina el servidor proxy de la lista de los agregados previamente.
 
-`[type]` — proxy server type:
+`server:[name]` donde `[name]` es el nombre del proxy saliente de la lista.
+
+También puedes configurar manualmente los parámetros de eliminación:
+
+`server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
+
+- **Parámetros obligatorios**:
+
+`[type]` — tipo de servidor proxy:
 
 - HTTP
 - SOCKS4
 - SOCKS5
 - HTTPS_CONNECT
 
-`[host]` — outbound proxy domain or IP address;
+`[host]` — dominio proxy saliente o dirección IP;
 
-`[port]` — outbound proxy port (integer number from 1 to 65535);
+`[port]` — puerto proxy de salida (número entero de 1 a 65535);
 
-- **Optional parameters**:
+- **Parámetros opcionales**:
 
- `[login and password]` — only if proxy requires it. This data is ignored when setting up **SOCKS4**;
+ `[login and password]` — solo si el proxy lo requiere. Estos datos se ignoran al configurar **SOCKS4**;
 
- `[udp]` applied only on **SOCKS5** server type and include option **UDP through SOCKS5**. It is necessary to set **true or false** value;
+ `[udp]` se aplica solo en el tipo de servidor **SOCKS5** e incluye la opción **UDP a través de SOCKS5**. Es necesario establecer el valor **true o false**;
 
- `[trust]` applies for **HTTPS_CONNECT** server type only and include option **Trust any certificates**. It is necessary to set **true or false** value.
+ `[trust]` se aplica solo al tipo de servidor **HTTPS_CONNECT** e incluye la opción **Confiar en cualquier certificado**. Es necesario establecer el valor **true o false**.
 
-:::note Example
+:::note Ejemplo
 
-`setting by name`: server:MyServer
+`configuración por nombre`: servidor:MyServer
 
 `manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
 
 :::
 
-**Don't forget to include the password, package name, and class. You need to do so for every intent.**
+**No olvides incluir la contraseña, el nombre del paquete y la clase. Debes hacer lo mismo para cada intención.**
 
-Extra: `password:*******`
+Extra: `contraseña:*******`
 
-Package name: `com.adguard.android`
+Nombre del paquete: `com.adguard.android`
 
-Class: `com.adguard.android.receiver.AutomationReceiver`
+Clase: `com.adguard.android.receiver.AutomationReceiver`
 
 :::note
 
-Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. If this function is used, remember to update to the new name.
+Antes de la v4.0 la clase se llamaba `com.adguard.android.receivers.AutomationReceiver` pero luego cambiamos su nombre a `com.adguard.android.receiver.AutomationReceiver`. Si se utiliza esta función, recuerda actualizar al nuevo nombre.
 
 :::
 
-### Execution without notification
+### Ejecución sin notificación
 
-To perform a task without showing a toast, add an additional EXTRA `quiet: true`
+Para realizar una tarea sin mostrar un mensaje, agrega un EXTRA adicional `quiet: true`
 
-### Example
+### Ejemplo
 
-![Automation *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)
+![Automatización *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)

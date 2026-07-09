@@ -1,6 +1,6 @@
 ---
 title: 如何在韩国使用 Samsung Pay 和 AdGuard
-sidebar_position: 17
+sidebar_position: 16
 ---
 
 :::info

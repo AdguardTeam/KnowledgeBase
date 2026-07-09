@@ -1,6 +1,6 @@
 ---
 title: Проблемы, вызванные использованием нескольких профилей пользователей
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 :::info
@@ -15,7 +15,7 @@ sidebar_position: 10
 
 На Android 9 и более поздних версиях, если AdGuard установлен более чем для одного пользовательского профиля на вашем устройстве, вы можете столкнуться с проблемами при удалении приложения. Когда вы удаляете AdGuard из одного пользовательского профиля, приложение по-прежнему будет отображаться в списке приложений, но вы не сможете удалить или переустановить его. Это происходит потому, что AdGuard установлен для другого профиля пользователя на устройстве.
 
-If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
+Если вы попытаетесь переустановить AdGuard после неудачной попытки удаления, вы увидите сообщение об ошибке «Вы не можете установить приложение на своё устройство».
 
 Чтобы решить эту проблему, вам нужно удалить приложение для всех пользователей: перейдите в Настройки → Все приложения → AdGuard. Нажмите три точки в правом верхнем углу и выберите *Удалить для всех пользователей*.
 
@@ -51,7 +51,7 @@ If you try to reinstall AdGuard after an unsuccessful removal attempt, you will 
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Установите и настройте](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; На платформе Windows владельцам **Samsung** может потребоваться установить [эту утилиту](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. Подключите устройство с помощью кабеля USB **** к компьютеру или ноутбуку, на котором вы установили **ADB**;
 

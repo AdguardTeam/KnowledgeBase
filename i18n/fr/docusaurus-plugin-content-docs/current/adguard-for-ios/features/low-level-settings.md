@@ -9,7 +9,7 @@ Cet article parle de AdGuard pour iOS, un bloqueur de contenus multifonctionnel 
 
 :::
 
-![Paramètres de bas niveau \*mobile\_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
+![Paramètres de bas niveau \*mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
 
 Pour ouvrir les _Paramètres de bas niveau_, accédez à _Paramètres_ → _Général_ → (Activer le _Mode avancé_ s'il est désactivé) → _Paramètres avancés_ → _Paramètres de bas niveau_.
 

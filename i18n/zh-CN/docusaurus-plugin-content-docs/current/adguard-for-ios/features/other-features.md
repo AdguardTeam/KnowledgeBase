@@ -13,9 +13,9 @@ sidebar_position: 7
 
 ### **深色主题**
 
-![浅色主题 \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
+![浅色主题 \*mobile_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![暗黑主题 \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![暗黑主题 \*mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
 该设置位于「设置」→「通用」屏幕的顶部，可让用户在深色和浅色主题之间切换。
 

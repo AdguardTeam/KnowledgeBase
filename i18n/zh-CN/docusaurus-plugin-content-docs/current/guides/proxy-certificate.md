@@ -19,11 +19,11 @@ sidebar_position: 2
 
 ### Windows 系统 {#windows}
 
-1. 记下装有 AdGuard 的台式计算机的 IP 地址。
+1. 记下装有 AdGuard 的计算机的 IP 地址。
 
 1. 请确保 AdGuard 保护已启用。 在 Windows 电脑上转到设置中的「**网络**」，勾选「**将 AdGuard 用作 HTTP 代理**」。 Mac 用户，请前往「**设置**」→「**首选项**」→「**网络**」并启用「**HTTP 代理**」。
 
-1. 在装有 AdGuard 的计算机上，通过浏览器打开此链接：[http://local.adguard.org/cert](http://local.adguard.org/cert)
+1. On the same computer with AdGuard, follow this link: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. 单击「**下载**」按钮。 如果下载未开始，请使用另一个浏览器，例如 Firefox 浏览器。
 
@@ -55,17 +55,17 @@ sidebar_position: 2
 
 1. 在「*使用代理服务器*」中，点击「**设置**」。
 
-1. 打开开关。 要设置**代理 IP 地址**，请键入您在步骤 1 记下的桌面端计算机的 IP 地址。 对于**端口**，输入在桌面 AdGuard 应用程序的网络设置中选择的端口。
+1. 打开开关。 要设置**代理 IP 地址**，请键入您在步骤 1 记下的计算机的 IP 地址。 对于**端口**，输入在桌面 AdGuard 应用程序的网络设置中选择的端口。
 
 1. 单击「**保存**」。
 
 ### Mac 系统 {#mac}
 
-1. 记下装有 AdGuard 的台式计算机的 IP 地址。
+1. 记下装有 AdGuard 的计算机的 IP 地址。
 
 1. 请确保 AdGuard 保护已启用。 在 Windows 电脑上转到设置中的「**网络**」，勾选「**AdGuard 用作 HTTP 代理**」。 Mac 用户，请前往「**设置**」→「**首选项**」→「**网络**」并启用「**HTTP 代理**」。
 
-1. 通过浏览器打开此链接：[http://local.adguard.org/cert](http://local.adguard.org/cert)
+1. Follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. 单击「**下载**」按钮。 如果下载未开始，请使用另一个浏览器，例如 Firefox 浏览器。
 
@@ -93,11 +93,11 @@ sidebar_position: 2
 
 ### Android 系统 {#android}
 
-1. 记下装有 AdGuard 的台式计算机的 IP 地址。
+1. 记下装有 AdGuard 的计算机的 IP 地址。
 
 1. 请确保 AdGuard 保护已启用。 在 Windows 电脑上转到设置中的「**网络**」，勾选「**将 AdGuard 用作 HTTP 代理**」。 Mac 用户，请前往「**设置**」→「**首选项**」→「**网络**」并启用「**HTTP 代理**」。
 
-1. 在装有 AdGuard 的计算机上，通过浏览器访问此链接：[http://local.adguard.org/cert](http://local.adguard.org/cert)。
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. 单击「**下载**」按钮。 如果下载未开始，请使用另一个浏览器，例如 Firefox 浏览器。
 
@@ -113,11 +113,11 @@ sidebar_position: 2
 
 ### iOS 系统 {#ios}
 
-1. 记下装有 AdGuard 的台式计算机的 IP 地址。
+1. 记下装有 AdGuard 的计算机的 IP 地址。
 
 1. 请确保 AdGuard 保护已启用。 在 Windows 电脑上转到设置中的「**网络**」，勾选「**将 AdGuard 用作 HTTP 代理**」。 Mac 用户，请前往「**设置**」→「**首选项**」→「**网络**」并启用「**HTTP 代理**」。
 
-1. 在装有 AdGuard 的计算机上，通过浏览器访问此链接：[http://local.adguard.org/cert](http://local.adguard.org/cert)。
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. 单击「**下载**」按钮。 如果下载未开始，请使用另一个浏览器，例如 Firefox 浏览器。
 

@@ -1,98 +1,98 @@
 ---
-title: How to debug rules in AdGuard for Chrome MV3
+title: Cum să depanăm regulile în AdGuard pentru Chrome MV3
 sidebar_position: 2
 ---
 
-In [AdGuard for Chrome MV3](/adguard-browser-extension/mv3-version), the Filtering log only shows the approximate rules that were applied, which we call “assumed rules”. This is because the browser doesn’t provide details about which specific declarative rules were used unless the extension is in an “unpacked” format. To get precise information, you’ll need to install the unpacked version of the extension in your browser yourself.
+În [AdGuard pentru Chrome MV3](/adguard-browser-extension/mv3-version), jurnalul de filtrare arată doar regulile aproximative care au fost aplicate, pe care le numim „reguli asumate”. Acest lucru se datorează faptului că browserul nu oferă detalii despre care reguli declarative specifice au fost utilizate, cu excepția cazului în care extensia este într-un format „nepachetat”. Pentru a obține informații precise, va trebui să instalați versiunea nepachetata a extensiei în browserul dumneavoastră.
 
-These instructions are also meant for problematic cases where you want to modify the rules that are bundled with the extension statically. In most cases, using _User rules_ in the extension should be sufficient.
+Aceste instrucțiuni sunt, de asemenea, destinate cazurilor problematice în care doriți să modificați regulile care sunt incluse static în extensie. În cele mai multe cazuri, utilizarea _Reguli utilizator_ în extensie ar trebui să fie suficientă.
 
-## Prerequisites
+## Condiții preliminare
 
-1. **Git:** [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+1. **Git:** [Instalați Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-2. **Node:** [Install Node.js](https://nodejs.org/en/download/package-manager)
+2. **Node:** [Instalați Node.js](https://nodejs.org/en/download/package-manager)
 
-3. **Yarn:** [Install Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
+3. **Yarn:** [Instalați Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
 
-## How to clone extension
+## Cum să clonați extensia
 
-1. Clone the repository:
+1. Clonați repozitoriul:
 
    ```bash
    git clone git@github.com:AdguardTeam/AdguardBrowserExtension.git
    ```
 
-2. Navigate to the directory:
+2. Navigați la director:
 
    ```bash
    cd AdguardBrowserExtension
    ```
 
-3. Switch to the `v5.0` branch:
+3. Comutați pe ramura `v5.0`:
 
    ```bash
    git checkout v5.0
    ```
 
-4. Install dependencies:
+4. Instalați dependențele:
 
    ```bash
    yarn install
    ```
 
-## How to build extension
+## Cum să construiți extensia
 
-1. Switch to the `v5.0` branch:
+1. Comutați pe ramura `v5.0`:
 
    ```bash
    git checkout v5.0
    ```
 
-2. Run the following command in the terminal:
+2. Rulați următoarea comandă în terminal:
 
    ```bash
    yarn dev chrome-mv3
    ```
 
-3. The built extension will be located in the directory:
+3. Extensia construită va fi localizată în directorul:
 
    ```bash
    ./build/dev/chrome-mv3
    ```
 
-## How to install unpacked in the browser
+## Cum să instalați nepachetat în browser
 
-1. Turn on developer mode:
+1. Activați modul pentru dezvoltatori:
 
-   ![Developer mode](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
+   ![Mod pentru dezvoltatori](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
 
-2. Click _Load unpacked_:
+2. Faceți clic pe _Încărcați nepachetat_:
 
    ![Load unpacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
-3. Select the extension directory and click `Select`:
+3. Selectați directorul extensiei și faceți clic pe `Selectați`:
 
-   ![Select](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
+   ![Selectați](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
 
-That’s it!
+Asta e tot!
 
-## How to debug rules
+## Cum să depanăm regulile
 
-1. Find and modify the rule you need in the `./Extension/filters/chromium-mv3` directory in the `.txt` files.
+1. Găsiți și modificați regula de care aveți nevoie în directorul `./Extension/filters/chromium-mv3` în fișierele `.txt`.
 
-2. Convert the rules from txt to declarative form:
+2. Convertiți regulile din txt în formă declarativă:
 
    ```bash
    yarn convert-declarative
    ```
 
-3. Build the extension again:
+3. Construiți din nou extensia:
 
    ```bash
    yarn dev chrome-mv3
    ```
 
-4. Reload the extension in the browser:
+4. Reîncărcați extensia în browser:
 
-   ![Reload extension](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
+   ![Reîncărcați extensia](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)

@@ -1,6 +1,6 @@
 ---
 title: Jak nastavit odchozí proxy
-sidebar_position: 8
+sidebar_position: 7
 ---
 
 :::info
@@ -9,7 +9,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-Below is a list of the most well-known applications that can be configured to work as proxies in AdGuard.
+Níže je uveden seznam nejznámějších aplikací, které lze v AdGuardu nakonfigurovat jako proxy servery.
 
 :::note
 
@@ -41,11 +41,11 @@ V tomto článku uvádíme příklady nastavení některých nejoblíbenějšíc
     | Hostitel proxy | *127.0.0.1*            |
     | Port proxy     | *9050*                 |
 
-    Or you can tap **Proxy server** → **Add proxy server**, enter these values manually, and set Orbot as the default proxy.
+    Nebo můžete klepnout na **Proxy server** → **Přidat proxy server**, zadat tyto hodnoty ručně a nastavit Orbot jako výchozí proxy.
 
 1. Zapněte hlavní přepínač Proxy a AdGuard ochranu, aby byl provoz zařízení směrován přes proxy server.
 
-    Now AdGuard will route all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable the outbound proxy settings in AdGuard.
+    Nyní bude AdGuard směrovat veškerý provoz přes Orbot. Pokud zakážete Orbot, připojení k Internetu bude nedostupné, dokud nezakážete nastavení odchozího proxy v AdGuardu.
 
 ### Jak používat AdGuard s PIA (Private Internet Access)
 
@@ -117,7 +117,7 @@ V tomto článku uvádíme příklady nastavení některých nejoblíbenějšíc
 
 *Zde předpokládáme, že jste již nakonfigurovali server Shadowsocks a klienta ve svém zařízení.*
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 Před nastavením procesu byste měli odstranit aplikaci Shadowsocks z filtrování (**Správa aplikací** → **Shadowsocks** → **Směrovat provoz skrze AdGuard**), abyste se vyhnuli nekonečným smyčkám a pádům.
 
@@ -155,6 +155,28 @@ Před nastavením procesu byste měli odstranit aplikaci Shadowsocks z filtrová
     | Hostitel proxy | *127.0.0.1* |
     | Port proxy     | *7891*      |
 
+### Jak používat AdGuard s WG Tunnel
+
+*Režim proxy byl přidán ve verzi 4.0. Předpokládáme, že již máte ve svém zařízení nainstalovaný WG Tunnel a přidali jste konfiguraci WireGuard.*
+
+1. Otevřete WG Tunnel a přejděte do **Nastavení** (ozubené kolo dole) → **Režim aplikace** → **Proxy (experimentální)**. Tímto nastavíte WG Tunnel do režimu proxy.
+
+1. Otevřete AdGuard a přejděte na **Správa aplikací**. Zvolte **WG Tunnel** a deaktivujte **Směrování provozu skrze AdGuard**. Tímto se odstraní zacyklení provozu.
+
+1. Poté jděte do **Nastavení** → **Filtrování** → **Síť** → **Proxy** → **Proxy server**.
+
+1. Klepněte na tlačítko **Přidat proxy** a vyplňte pole:
+
+    | Pole           | Hodnota     |
+    | -------------- | ----------- |
+    | Typ proxy      | *SOCKS5*    |
+    | Hostitel proxy | *127.0.0.1* |
+    | Port proxy     | *25344*     |
+
+1. Klepněte na **Uložit a vybrat**.
+
+1. Zapněte hlavní přepínač proxy a AdGuard ochranu, aby byl provoz zařízení směrován přes proxy server.
+
 ## Omezení
 
-However, at least one factor may prevent certain traffic from being routed through the outbound proxy, even after configuring the AdGuard proxy settings. That would be if the app itself isn't configured to send its traffic through AdGuard. Chcete-li to provést, musíte přejít na **Správa aplikací**, vybrat aplikaci a zapnout **Směrovat provoz skrze AdGuard**.
+Přinejmenším jeden faktor však může zabránit tomu, aby byl určitý provoz směrován přes odchozí proxy server, a to i po konfiguraci nastavení proxy serveru AdGuard. To v případě, že samotná aplikace není nakonfigurována tak, aby odesílala svůj provoz přes AdGuard. Chcete-li to provést, musíte přejít na **Správa aplikací**, vybrat aplikaci a zapnout **Směrovat provoz skrze AdGuard**.

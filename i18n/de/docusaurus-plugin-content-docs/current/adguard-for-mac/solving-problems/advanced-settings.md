@@ -81,6 +81,12 @@ Verwendet einen lokalen DNS-Proxy für die Suche nach Konfigurationen in den ECH
 
 Mit der Einstellung `true` erlauben Sie AdGuard, Datenverkehr zu filtern, der über HTTP/3, die neueste Version des auf QUIC-basierenden HTTP-Protokolls, gesendet wird.
 
+**Einschränkungen**:
+
+- Chromebasierte Browser akzeptieren keine Benutzerzertifikate, daher wird HTTP/3-Filterung in ihnen nicht unterstützt.
+- Firefox-basierte Browser verhalten sich standardmäßig ähnlich, aber Sie können die Option `network.http.http3.disable_when_third_party_roots_found` in `about:config` auf `false` setzen, um Benutzerzertifikate für HTTP/3 zuzulassen.
+- Safari unterstützt HTTP/3-Filterung ohne zusätzliche Konfiguration.
+
 #### `network.filtering.localnetwork`
 
 Indem Sie `true` setzen, aktivieren Sie die lokale Netzwerkfilterung.
@@ -158,6 +164,16 @@ Aktiviert HTTP/3 für DNS-over-HTTPS-Upstreams, um die Verbindung zu beschleunig
 #### `dns.proxy.block.encrypted.client.hello.response`
 
 Entfernt die „Encrypted Client Hello“-Parameter aus den Antworten.
+
+#### `dns.proxy.private.relay.sequoia.workaround.enabled`
+
+Sperrt macOS Privat-Relay Domains, wenn der Benutzer eine Firewall aktiviert hat, die wiederum die *Privat-Relay-Funktion* deaktiviert.
+
+Das Aktivieren dieser Einstellung ist in folgendem Szenario nützlich: Wenn macOS Privat-Relay aktiv ist, kann die Filterung nicht richtig funktionieren und muss deaktiviert werden. In macOS-Versionen bis 14 konnte AdGuard automatisch Privat-Relay deaktivieren, wenn der Schutz aktiviert war. Ab macOS 15 ist dies jedoch nicht mehr möglich, wenn eine Firewall aktiv ist. Wenn Sie diese Einstellung aktivieren, können Sie Privat-Relay auch bei aktivierter Firewall deaktivieren und so die vorherige Einschränkung aufheben.
+
+#### `dns.proxy.postquantum.cryptography.enabled`
+
+Sichert DNS-Proxy-Verbindungen mit einem hybriden Post-Quanten-Schlüsselaustausch, der den klassischen X25519-Algorithmus mit dem Post-Quanten-KEM ML-KEM-768 kombiniert. Gilt nur für DoH-, DoT- und DoQ-Upstreams.
 
 ### Privatsphäre-Einstellungen
 

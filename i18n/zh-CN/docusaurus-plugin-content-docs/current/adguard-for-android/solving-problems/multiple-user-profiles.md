@@ -1,6 +1,6 @@
 ---
 title: 多用户配置文件引起的问题
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 :::info

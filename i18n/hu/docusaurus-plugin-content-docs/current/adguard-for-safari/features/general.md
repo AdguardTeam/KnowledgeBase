@@ -1,5 +1,5 @@
 ---
-title: General
+title: Általános
 sidebar_position: 1
 ---
 

@@ -11,7 +11,7 @@ sidebar_position: 7
 
 ## Краткое описание проблемы
 
-По умолчанию AdGuard использует "default route", таким образом отключая iCloud Private Relay.
+По умолчанию AdGuard использует "default route", который отключает Частный узел iCloud (iCloud Private Relay).
 
 Сейчас AdGuard и iCloud Private Relay не могут работать одновременно. AdGuard не может блокировать рекламу, так как iCloud Private Relay шифрует трафик до того, как AdGuard сможет фильтровать сетевые соединения. Использование iCloud Private Relay блокирует любую фильтрацию, включая локальную. Таким образом, AdGuard не может фильтровать трафик или выполнять DNS-фильтрацию в Safari. Но AdGuard по-прежнему фильтрует трафик в других браузерах. Если вы хотите использовать iCloud Private Relay, подумайте об установке [AdGuard для Safari](https://adguard.com/adguard-safari/overview.html).
 
@@ -28,12 +28,12 @@ Network extensions API имеет VPN-подобную конфигурацию 
 Как следствие, AdGuard не может работать вместе с iCloud Private Relay и функциями конфиденциальности приложения Почта:
 
 1. iCloud Private Relay применяется к соединениям на уровне библиотек — до того, как они достигают уровня сокета, где работает AdGuard.
-2. iCloud Private Relay использует QUIC, который AdGuard не может блокировать в фильтруемых приложениях, поскольку фильтрация HTTP/3 пока не доступна.
-3. Следовательно, AdGuard блокирует QUIC, включая и трафик iCloud Private Relay — иначе блокировка рекламы невозможна.
-4. При использовании iCloud Private Relay и переключении AdGuard в режим "split-tunnel" невозможно открыть сайты в Safari.
-5. Чтобы обойти эту проблему для Monterey, мы применяем правило "default route". Тогда Private Relay видит это правило, он автоматически отключается. Таким образом, AdGuard работает без проблем на Monterey, но iCloud Private Relay отключается.
+2. iCloud Private Relay реализован с использованием прокси-серверов HTTP/3 CONNECT.
+3. Поскольку AdGuard пока не фильтрует запросы CONNECT HTTP/3, он пытается понизить версию прокси-подключений HTTP/3 до HTTP/1.1, что приводит к блокировке трафика iCloud Private Relay.
+4. При использовании iCloud Private Relay и переключении AdGuard в режим Split-Tunnel невозможно открыть сайты в Safari.
+5. Чтобы обойти эту проблему для Monterey, мы применяем правило “default route”. Тогда Private Relay видит это правило, он автоматически отключается. Таким образом, AdGuard работает без проблем на Monterey, но iCloud Private Relay отключается.
 
-`network.extension.monterey.force.split.tunnel` восстанавливает поведение Big Sur, но этот вариант может нарушить доступ к сайтам из-за (3) и (4). Мы продолжаем искать решение этой проблемы. Один из вариантов — внедрить HTTP/3-фильтрацию.
+`network.extension.monterey.force.split.tunnel` восстанавливает поведение Big Sur, но этот вариант может нарушить доступ к сайтам из-за (3) и (4). Мы продолжаем искать решение этой проблемы. Один из вариантов — внедрить фильтрацию прокси для HTTP/3.
 
 ## Рекомендуемое решение
 

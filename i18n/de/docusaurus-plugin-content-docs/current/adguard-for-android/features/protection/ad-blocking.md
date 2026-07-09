@@ -21,4 +21,4 @@ Der Basisschutz blockiert effektiv Werbung auf den meisten Websites. Für eine n
 
 - Benutzerregeln erstellen— AdGuard wendet sie auf bestimmte Websites an. [Erfahren Sie, wie Sie Ihre eigenen Benutzerregeln erstellen können](/general/ad-filtering/create-own-filters)
 
-![Werbeblocker \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
+![Werbeblocker \*mobile_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)

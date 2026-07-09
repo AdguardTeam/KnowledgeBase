@@ -1,23 +1,35 @@
 ---
-title: AdGuard Beta Testing
+title: AdGuard testen (Beta/Nightly)
 sidebar_position: 1
 ---
 
-AdGuard-App gibt es für praktisch jede große Plattform, und wir veröffentlichen regelmäßig Updates für alle. Ohne Betatests und vor allem Betatester wäre dies nicht möglich. Möchten Sie einer werden? Hier erfahren Sie, wie Sie das machen können.
+AdGuard-App gibt es für praktisch jede große Plattform, und wir veröffentlichen regelmäßig Updates für alle. Ohne Betatests und vor allem Betatester wäre dies nicht möglich. Möchten Sie einer werden? So können Sie es tun:
 
-## Beta-Tester:in werden {#intro}
+### Beta oder Nightly: Was ist der Unterschied?
 
-Unsere Anforderungen sind einfach: Verwenden Sie AdGuard, aktualisieren Sie auf die Beta-Version, sobald diese verfügbar ist, und melden Sie alle Fehler, die Sie bemerken. However, you will need a [GitHub](https://github.com/) account to become our beta tester, so you may want to get that out of the way first.
+Sowohl Beta- als auch das Testen der Nightlys sind wichtig, um AdGuard ständig zu verbessern. Sie unterscheiden sich jedoch, und Sie können diejenige wählen, die Ihnen am meisten zusagt.
 
-In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/beta.html).
+Der Entwicklungsprozess verläuft von der Nightly-Version zur Beta und dann von der Beta zur endgültigen, stabilen Version — der Release. Das bedeutet, dass es wahrscheinlicher ist, dass Sie in nächtlichen Builds Fehler finden, aber Sie erhalten schneller Zugang zu neuen Funktionen, fast täglich. Betas sind stabiler, aber Sie erhalten seltener Aktualisierungen.
 
-Wenn Sie den Beschreibungsteil überspringen und direkt zur Aktion übergehen möchten, können Sie sich hier [bewerben](https://surveys.adguard.com/beta_testing_program/form.html). Ihre Bewerbung wird innerhalb von 1-3 Werktagen geprüft und Sie erhalten eine Antwort per E-Mail.
+## Wie man Beta- oder Nightly-Tester wird {#intro}
+
+Unsere Anforderungen sind einfach: Verwenden Sie AdGuard, aktualisieren Sie auf die Beta-/Nightly-Version, sobald diese verfügbar ist, und melden Sie alle Fehler, die Sie bemerken. Sie benötigen ein Konto bei [GitHub](https://github.com/), um unser Tester zu werden, also sollten Sie dies zuerst erledigen.
+
+Sie benötigen außerdem das Gerät, auf dem Sie die App installieren wollen, und [den Link zur Beta-Test-Seite](https://adguard.com/beta.html). Dort finden Sie weitere Informationen darüber, wie Sie an unserem Programm teilnehmen und AdGuard für Windows, Mac, Android und iOS testen können.
+
+Wenn Sie Tester werden möchten, [füllen Sie das Formular aus](https://surveys.adguard.com/beta_testing_program/form.html), um Ihre Bewerbung zu senden. Wenn die Bewerbung genehmigt wird, erhalten Sie innerhalb weniger Tage eine Antwort per E-Mail.
+
+:::note
+
+Um AdGuard für iOS Beta oder Nightly-Build zu erhalten, müssen Sie zuerst [Testflight](https://apps.apple.com/app/testflight/id899247664) auf Ihrem iOS-Gerät installieren.
+
+:::
 
 ## Fehler melden {#report-a-bug}
 
-If you spotted a bug or just want to share your suggestion, let us know: go to [GitHub](https://github.com/AdguardTeam/), find a suitable repository, create a new issue there, and describe the bug/feature request in detail.
+Wenn Sie einen Fehler entdeckt haben oder einfach nur einen Vorschlag machen wollen, lassen Sie es uns wissen: Gehen Sie zu [GitHub](https://github.com/AdguardTeam/), finden Sie ein passendes Repository, erstellen Sie dort einen neuen Eintrag und beschreiben Sie den Fehler/Funktionswunsch im Detail.
 
-The above method is the most preferred, but you can use others if necessary:
+Die oben beschriebene Methode ist die bevorzugte, aber Sie können bei Bedarf auch andere Methoden anwenden:
 
 - Finden Sie uns auf verschiedenen Social-Media-Plattformen wie [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), usw. Dies ist jedoch nicht der bequemste Weg, um technische Fragen zu diskutieren.
 
@@ -29,6 +41,6 @@ Wenn Sie bereits einen Beta-Schlüssel erhalten haben und dieser in Ihrem `adgua
 
 ### Was sonst?
 
-Es gibt nicht viel mehr hinzuzufügen. Sie müssen sich nicht die Mühe machen, Fehler zu finden. Sie können AdGuard wie gewohnt weiter verwenden. Wenn Sie jedoch auf einen Fehler stoßen, melden Sie ihn bitte. Of course, we appreciate any additional effort.
+Es gibt nicht viel mehr hinzuzufügen. Sie müssen sich nicht die Mühe machen, Fehler zu finden. Sie können AdGuard wie gewohnt weiter verwenden. Wenn Sie jedoch auf einen Fehler stoßen, melden Sie ihn bitte. Natürlich sind wir für jede zusätzliche Unterstützung dankbar.
 
 Gelegentlich erhalten Sie unsere Newsletter, die Sie über die neuesten Änderungen in der Beta (falls Sie sie verpasst haben) und andere wichtige Neuigkeiten auf dem Laufenden halten. Sie können sich jederzeit wieder abmelden.

@@ -13,6 +13,6 @@ sidebar_position: 2
 
 **퀵 액션**은 **최근 활동**(\*\*[통계](/adguard-for-android/features/statistics)\*\*에서 확인할 수 있음)의 요청을 기반으로 합니다. 이 섹션에는 최근에 인터넷에 연결한 앱이 표시됩니다.
 
-![퀵 액션 \*mobile\_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
+![퀵 액션 \*mobile_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
 
 인터넷을 전혀 사용해서는 안 되는 앱이나 최근에 사용하지 않은 앱이 보이면 즉시 해당 앱의 액세스를 차단할 수 있습니다. **방화벽** 모듈이 켜져 있지 않으면 이 기능을 사용할 수 없습니다.

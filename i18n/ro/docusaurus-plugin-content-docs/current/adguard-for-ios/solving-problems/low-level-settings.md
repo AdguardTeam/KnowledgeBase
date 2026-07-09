@@ -1,64 +1,64 @@
 ---
-title: Low-level Settings guide
+title: Ghid pentru Setările la nivel scăzut
 sidebar_position: 5
 ---
 
 :::info
 
-This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Acest articol se referă la AdGuard pentru iOS, un blocant de reclame multifuncțional care vă protejează dispozitivul la nivel de sistem. Pentru a vedea cum funcționează, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to reach the Low-level settings
+## Cum să accesați setările la nivel scăzut
 
-:::caution
+:::atenție
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
+Modificarea *setărilor la nivel scăzut* poate provoca probleme cu performanța AdGuard, poate întrerupe conexiunea la Internet sau poate compromite securitatea și intimitatea dumneavoastră. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
 
 :::
 
-To go to *Low-level settings*, tap the gear icon at the bottom right of the screen to open *Settings*. Select the *General* section and then toggle on the *Advanced mode* switch, after that the *Advanced settings* section will appear below. Tap *Advanced settings* to reach the *Low-level settings* section.
+Pentru a accesa *Setările la nivel scăzut*, atingeți iconița cu rotiță în colțul din dreapta jos al ecranului pentru a deschide *Setările*. Selectați secțiunea *General* și apoi activați comutatorul *Mod avansat*; după aceea secțiunea *Setări avansate* va apărea mai jos. Atingeți *Setările avansate* pentru a accesa secțiunea *Setările la nivel scăzut*.
 
-## Low-level settings
+## Setări la nivel scăzut
 
-### Tunnel mode
+### Modul Tunel
 
-There are two main tunnel modes: *Split* and *Full*. *Split-Tunnel* mode provides compatibility of AdGuard and so-called "Personal VPN" apps. In *Full-Tunnel* mode no other VPN can work simultaneously with AdGuard.
+Există două moduri principale de tunel: *Split* și *Full*. Modul *Split-Tunnel* oferă compatibilitate dintre AdGuard și așa-numitele aplicații "VPN Personal". În modul *Full-Tunnel*, niciun alt VPN nu poate funcționa simultan cu AdGuard.
 
-There is a specific feature of the *Split-Tunnel* mode: In case of poor DNS proxy performance, for example, if the response from the AdGuard DNS server isn't returned in timely, iOS will instead reroute traffic through the DNS server specified in the iOS settings. No ads are blocked at this time and DNS traffic is not encrypted.
+Există o caracteristică specifică a modului *Split-Tunnel*: în cazul unei performanțe slabe a proxy-ului DNS, de exemplu, dacă răspunsul de la serverul AdGuard DNS nu este returnat la timp, iOS va redirecționa traficul prin serverul DNS specificat în setările iOS. În prezent, nu sunt blocate reclame și traficul DNS nu este criptat.
 
-In *Full-Tunnel* mode only the DNS server specified in AdGuard settings is used. If it does not respond, the Internet will simply not work. Enabled *Full-Tunnel* mode may negatively impact the performance of some programs (e.g., FaceTime) and cause app update issues.
+În modul *Full-Tunnel*, este utilizat doar serverul DNS specificat în setările AdGuard. Dacă nu răspunde, Internetul pur și simplu nu va funcționa. Activarea modului *Full-Tunnel* poate afecta negativ performanța unor programe (de exemplu, FaceTime) și poate cauza probleme de actualizare a aplicațiilor.
 
-By default, AdGuard uses *Split-Tunnel* mode as the most stable option.
+Implicit, AdGuard folosește modul *Split-Tunnel* ca opțiune cea mai stabilă.
 
-There is also an additional mode called *Full-Tunnel (without VPN icon)*. This is exactly the same as *Full-Tunnel* mode, but it is set up so that the VPN icon is not displayed in the system line.
+Există și un mod suplimentar numit *Full-Tunnel (fără iconița VPN)*. Acesta este exact la fel ca modul *Full-Tunnel*, dar este configurat astfel încât iconița VPN să nu fie afișată în bara de sistem.
 
-### Blocking mode
+### Modul de blocare
 
-In this module you can select the way AdGuard will respond to DNS queries that should be blocked:
+În acest modul, puteți selecta modul în care AdGuard va răspunde la interogările DNS care ar trebui blocate:
 
-- Default — respond with zero IP address when blocked by adblock-style rules; respond with the IP address specified in the rule when blocked by /etc/hosts-style rules
-- REFUSED — respond with REFUSED code
-- NXDOMAIN — respond with NXDOMAIN code
-- Unspecified IP — respond with zero IP address
-- Custom IP — respond with a manually set IP address
+- Implicit — răspundeți cu o adresă IP zero când sunt blocate de regulile de tip adblock; răspundeți cu adresa IP specificată în regulă când sunt blocate de regulile de tip /etc/hosts
+- REFUZAT — răspundeți cu codul REFUZAT
+- NXDOMAIN — răspundeți cu codul NXDOMAIN
+- IP nedefinit — răspundeți cu o adresă IP zero
+- IP personalizat — răspundeți cu o adresă IP setată manual
 
-### Block IPv6
+### Blocați IPv6
 
-By moving the toggle to the right, you activate the blocking of IPv6 queries (AAAA requests). AAAA-type DNS requests will not be resolved, hence only IPv4 queries can be processed.
+Prin mutarea comutatorului către dreapta, activați blocarea interogărilor IPv6 (solicitări AAAA). Solicitările DNS de tip AAAA nu vor fi rezolvate, prin urmare doar interogările IPv4 pot fi procesate.
 
-### Blocked response TTL
+### Răspuns blocat TTL
 
-Here you can set the period for a device to cache the response to a DNS request. During the specified time to live (in seconds) the request can be read from the cache without re-requesting the DNS server.
+Aici puteți seta perioada pentru ca un dispozitiv să cacheze răspunsul la o cerere DNS. În timpul duratei de viață specificate (în secunde), cererea poate fi citită din cache fără a solicita din nou serverul DNS.
 
-### Bootstrap servers
+### Servere Bootstrap
 
-For DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC a bootstrap server is required for getting the IP address of the main DNS server. If not specified, the DNS server from iOS settings is used as the bootstrap server.
+Pentru DNS-over-HTTPS, DNS-over-TLS și DNS-over-QUIC, este necesar un server bootstrap pentru obținerea adresei IP a serverului DNS principal. Dacă nu este specificat, serverul DNS din setările iOS este utilizat ca server bootstrap.
 
-### Fallback servers
+### Servere de rezervă
 
-Here you can specify an alternate server to which a request will be rerouted if the main server fails to respond. If not specified, the system DNS server will be used as the fallback. It is also possible to specify `none`, in this case, there will be no fallback server set and only the main DNS server will be used.
+Aici puteți specifica un server alternativ la care o solicitare va fi direcționată dacă serverul principal nu răspunde. Dacă nu este specificat, serverul DNS al sistemului va fi utilizat ca rezervă. Este de asemenea posibil să specificați `none`; în acest caz, nu va fi setat niciun server de rezervă și va fi utilizat doar serverul DNS principal.
 
-### Background app refresh time
+### Intervalul de actualizare al aplicației de fundal
 
-Here you can select the frequency at which the application will check for filter updates while in the background. Note that update checks will not be performed more often than the specified period, but the exact intervals may not be respected.
+Aici puteți selecta frecvența cu care aplicația va verifica actualizările filtrării în timp ce se află în fundal. Rețineți că verificarea actualizărilor nu va fi efectuată mai des decât perioada specificată, dar intervalele exacte pot să nu fie respectate.
