@@ -1511,7 +1511,7 @@ Rules with `$badfilter` modifier are not supported by AdGuard Content Blocker.
 
 :::
 
-[badfilter-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#badfilter
+[badfilter-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/dnr-converter/src/examples/README.md#mv3_specific_limitations__$badfilter
 
 #### **`$cookie`** {#cookie-modifier}
 
