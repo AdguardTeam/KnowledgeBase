@@ -43,7 +43,7 @@ These are determined by three sources:
 
 - *Compatibility list*
   Apps that have been tested by our team and are confirmed to work correctly with filtering.
-  This list is updated through internal testing and user reports in the [dedicated repository for listing AdGuard compatibility issues](https://github.com/AdguardTeam/CompatibilityIssues)
+  This list is updated through internal testing and user reports in the [dedicated repository for listing AdGuard compatibility issues](https://github.com/AdguardTeam/CompatibilityIssues).
 - *Exclusion lists*
   Separate lists for routing, filtering, and HTTPS filtering. These include apps known to break when filtering is applied.
 - *Filter unknown apps*
