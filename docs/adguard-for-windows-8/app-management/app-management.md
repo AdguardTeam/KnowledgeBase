@@ -61,19 +61,14 @@ The compatibility lists are continuously updated — and you can help improve th
 
 The *Filter unknown apps* setting allows you to choose between two modes — a safe default one where only trusted apps are filtered and a manual one where you decide which apps to filter. It affects only new and unknown applications.
 
-import Tabs from '@theme/Tabs';
+There are three categories of apps:
 
-import TabItem from '@theme/TabItem';
-
-:::tip[There are three categories of apps:]
-
-<Tabs>
-  <TabItem value="apple" label="Compatible, or problem-free (e.g., browsers)">Always routed through AdGuard, filtered, and HTTPS-filtered. This setting does not affect them.</TabItem>
-  <TabItem value="orange" label="Problematic apps (from exclusion lists)">Never routed, filtered, or HTTPS-filtered. This setting does not affect them either.</TabItem>
-  <TabItem value="banana" label="Other (unknown)">Their behavior depends on the setting.</TabItem>
-</Tabs>
-
-:::
+- **Compatible, or problem-free (e.g., browsers)**
+Always routed through AdGuard, filtered, and HTTPS-filtered. This setting does not affect them.
+- **Problematic apps (from exclusion lists)**
+Never routed, filtered, or HTTPS-filtered. This setting does not affect them either.
+- **Other (unknown)**
+Their behavior depends on the setting.
 
 If the setting is enabled (default), app traffic is routed through AdGuard, regular filtering is applied, and **HTTPS filtering is NOT enabled automatically**. This is intentional: HTTPS interception is the most sensitive part of traffic processing and may affect app behavior.
 
