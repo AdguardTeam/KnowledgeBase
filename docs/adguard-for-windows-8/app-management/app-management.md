@@ -42,11 +42,14 @@ Each app has three independent processing layers: traffic routing through AdGuar
 These are determined by three sources:
 
 - *Compatibility list*
+
   Apps that have been tested by our team and are confirmed to work correctly with filtering.
   This list is updated through internal testing and user reports in the [dedicated repository for listing AdGuard compatibility issues](https://github.com/AdguardTeam/CompatibilityIssues).
 - *Exclusion lists*
+
   Separate lists for routing, filtering, and HTTPS filtering. These include apps known to break when filtering is applied.
 - *Filter unknown apps*
+
   This setting defines how all other apps (not present in any list) are handled.
 
 :::info
@@ -64,11 +67,14 @@ The *Filter unknown apps* setting allows you to choose between two modes — a s
 There are three categories of apps:
 
 - **Compatible, or problem-free (e.g., browsers)**
-Always routed through AdGuard, filtered, and HTTPS-filtered. This setting does not affect them.
+
+  Always routed through AdGuard, filtered, and HTTPS-filtered. This setting does not affect them.
 - **Problematic apps (from exclusion lists)**
-Never routed, filtered, or HTTPS-filtered. This setting does not affect them either.
+
+  Never routed, filtered, or HTTPS-filtered. This setting does not affect them either.
 - **Other (unknown)**
-Their behavior depends on the setting.
+
+  Their behavior depends on the setting.
 
 If the setting is enabled (default), app traffic is routed through AdGuard, regular filtering is applied, and **HTTPS filtering is NOT enabled automatically**. This is intentional: HTTPS interception is the most sensitive part of traffic processing and may affect app behavior.
 
