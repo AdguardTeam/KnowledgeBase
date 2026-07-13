@@ -27,7 +27,7 @@ You can leave the settings as they are, disable both filtering and routing, or f
 
 AdGuard for Windows v8.0 introduces updated logic for handling apps. It helps prevent compatibility issues while still giving you control over which apps are filtered. Let’s break down how it works.
 
-There are “problem-free” and “problematic” apps. Ones work correctly when filtered, others may not function when their traffic is processed by AdGuard. This can be caused by features like HTTPS interception or proxying.
+There are “problem-free” and “problematic” apps. Some work correctly when filtered, while others may not function when their traffic is processed by AdGuard. This can be caused by features like HTTPS interception or proxying.
 
 To avoid breaking apps out of the box, AdGuard does not filter everything indiscriminately. Instead, it relies on a compatibility list — a set of apps that are known to work correctly with filtering enabled.
 
