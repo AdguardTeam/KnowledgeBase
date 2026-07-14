@@ -64,9 +64,9 @@ The compatibility lists are continuously updated — and you can help improve th
 
 ![Filter unknown apps *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/app-management.png)
 
-The *Filter unknown apps* setting allows you to choose between two modes — a safe one where only trusted apps are filtered and a manual one where you decide which apps to filter.
+The *Filter unknown apps* setting is enabled by default and determines how AdGuard handles new apps that are not yet present in the compatibility or exclusion lists
 
-When enabled (default), app traffic is routed through AdGuard, regular filtering is applied, and **HTTPS filtering is NOT enabled automatically**. This is intentional: HTTPS interception is the most sensitive part of traffic processing and may affect app behavior.
+When enabled, app traffic is routed through AdGuard, regular filtering is applied, and **HTTPS filtering is NOT enabled automatically**. This is intentional: HTTPS interception is the most sensitive part of traffic processing and may affect app behavior.
 
 When disabled, new apps are not processed by AdGuard — you will need to manually configure routing for them.
 
@@ -74,9 +74,9 @@ Here is a quick overview of how different app categories behave depending on thi
 
 | App category | Toggle on (default) | Toggle off |
 |----------------------|--------------------|------------|
-| Compatible, or problem-free (e.g., browsers) | · Routing ✅ <br> · Filtering ✅ <br> · HTTPS filtering ✅ | Same behavior — does not depend on toggle |
-| Problematic (from exclusion lists, filtering may cause issues) | · Routing ❌ <br> · Filtering ❌ <br> · HTTPS filtering ❌ | Same behavior — does not depend on toggle |
-| Others / (newly detected, unknown, not in lists) | · Routing ✅ <br> · Filtering ✅ <br> · HTTPS filtering ❌ | Not routed through AdGuard, must be enabled manually |
+| Compatible, or problem-free (e.g., browsers) | · Routing ✅ <br /> · Filtering ✅ <br /> · HTTPS filtering ✅ | Same behavior — does not depend on toggle |
+| Problematic (from exclusion lists, filtering may cause issues) | · Routing ❌ <br /> · Filtering ❌ <br /> · HTTPS filtering ❌ | Same behavior — does not depend on toggle |
+| Others / (newly detected, unknown, not in lists) | · Routing ✅ <br /> · Filtering ✅ <br /> · HTTPS filtering ❌ | Not routed through AdGuard, must be enabled manually |
 
 :::info What happens on reset
 
