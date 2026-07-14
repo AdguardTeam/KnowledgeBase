@@ -74,9 +74,9 @@ Here is a quick overview of how different app categories behave depending on thi
 
 | App category | Toggle on (default) | Toggle off |
 |----------------------|--------------------|------------|
-| Compatible, or problem-free (e.g., browsers) | · Routing ✅ <br> · Filtering ✅ <br> · HTTPS filtering ✅ | Same behavior — does not depend on toggle |
-| Problematic (from exclusion lists, filtering may cause issues) | · Routing ❌ <br> · Filtering ❌ <br> · HTTPS filtering ❌ | Same behavior — does not depend on toggle |
-| Others / (newly detected, unknown, not in lists) | · Routing ✅ <br> · Filtering ✅ <br> · HTTPS filtering ❌ | Not routed through AdGuard, must be enabled manually |
+| Compatible, or problem-free (e.g., browsers) | · Routing ✅ <br /> · Filtering ✅ <br /> · HTTPS filtering ✅ | Same behavior — does not depend on toggle |
+| Problematic (from exclusion lists, filtering may cause issues) | · Routing ❌ <br /> · Filtering ❌ <br /> · HTTPS filtering ❌ | Same behavior — does not depend on toggle |
+| Others / (newly detected, unknown, not in lists) | · Routing ✅ <br /> · Filtering ✅ <br /> · HTTPS filtering ❌ | Not routed through AdGuard, must be enabled manually |
 
 :::info What happens on reset
 
