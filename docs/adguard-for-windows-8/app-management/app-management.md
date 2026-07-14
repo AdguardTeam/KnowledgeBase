@@ -56,7 +56,6 @@ These are determined by three sources:
 
 :::info
 
-The compatibility lists are continuously updated — and you can help improve them. If you notice that an app does not work correctly with filtering enabled, report it [on GitHub](https://github.com/AdguardTeam/CompatibilityIssues) or contact support via the app. Your feedback helps improve AdGuard for everyone.
 The compatibility lists are continuously updated — and you can help improve them. If you notice that an app does not work correctly with filtering enabled, **report it on [GitHub](https://github.com/AdguardTeam/CompatibilityIssues)** or contact support via the app. Your feedback helps improve AdGuard for everyone.
 
 :::
