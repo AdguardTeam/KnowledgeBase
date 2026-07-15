@@ -11,24 +11,22 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
 Das Ziel des _Tracking-Schutzes_ ist es, Ihre sensiblen persönlichen Daten vor Online-Trackern und Betrügern zu schützen. Es gibt geringfügige Unterschiede bei den Tracking-Schutzfunktionen zwischen Chromium-basierten Browsern, die MV3 unterstützen, und Nicht-Chromium-Browsern, die MV2 unterstützen.
 
-![Tracking-Schutz in Chromium-basierten Browsern \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv3_trackingProtection.png)
+_Tracking protection_ in Chromium-based browsers
+![Tracking protection in Chromium-based browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
 
-_Tracking-Schutz_ in Chromium-basierten Browsern
+_Tracking protection_ in non-Chromium browsers
+![Tracking protection in non-Chromium browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv2.png)
 
-![Tracking-Schutz in Nicht-Chromium-Browsern \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv2_trackingProtection.png)
-
-_Tracking-Schutz_ in Nicht-Chromium-Browsern
-
-_Tracking-Schutz_ verhindert, dass Websites die Suchanfrage einsehen können, mit der Sie sie im Internet gefunden haben — es werden automatisch Cookies von Drittanbietern und Websites gelöscht und vieles mehr. Alle diese Funktionen werden in einem [separaten Artikel](/general/stealth-mode) beschrieben.
+_Tracking protection_ features prevent websites from seeing the search query you used to find them on the Internet, automatically delete third-party and website cookies, and more. A [separate article](/general/stealth-mode) is devoted to all these features.
 
 :::note
 
-Browsererweiterungen sind auf einen bestimmten Browser beschränkt und unterliegen dessen technischen Beschränkungen. Daher können sie nicht alle Tracking-Schutzfunktionen bieten, die in vollwertigen Werbeblocker-Apps zur Verfügung stehen.
+Browser extensions are limited to a specific browser and are subject to its technical restrictions. Therefore, they cannot offer all the tracking protection features available in full-fledged ad-blocking apps.
 
 :::
 
 :::caution
 
-In der AdGuard Browser-Erweiterung funktioniert die Option _WebRTC blockieren_ global — sie blockiert oder erlaubt WebRTC für alle Websites. Dieses Verhalten lässt sich nicht für jede Website einzeln steuern. Ausnahmeregeln wie `@@||example.com^$stealth=webrtc` haben in der Browsererweiterung keine Wirkung, da die Option `webrtc` nicht zu den [unterstützten Optionen für den Modifikator `$stealth`](/general/ad-filtering/create-own-filters#stealth-modifier) gehört. Wenn Sie WebRTC-Einstellungen für einzelne Websites vornehmen möchten, nutzen Sie die vollwertige App AdGuard für Windows, Mac oder Android.
+In AdGuard Browser Extension, the _Block WebRTC_ option works globally — it either blocks or allows WebRTC for all websites. It cannot be controlled on a per-site basis. Exception rules like `@@||example.com^$stealth=webrtc` have no effect in the browser extension because the `webrtc` option is not among the [supported `$stealth` modifier options](/general/ad-filtering/create-own-filters#stealth-modifier). If you need per-site WebRTC control, use the full-fledged AdGuard app for Windows, Mac, or Android.
 
 :::

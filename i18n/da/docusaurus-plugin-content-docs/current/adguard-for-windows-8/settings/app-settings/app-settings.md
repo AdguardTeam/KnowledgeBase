@@ -1,5 +1,5 @@
 ---
-title: App settings
+title: App-indstillinger
 sidebar_position: 1
 ---
 

@@ -33,15 +33,15 @@ If minidumps are not created automatically, follow these steps to enable _Small 
 
 2. Type `sysdm.cpl` and click _Enter_. This will open the _System properties_ window.
 
-    ![Open system properties \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/sysdm.png)
+   ![Open system properties \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/sysdm.png)
 
 3. Navigate to _Advanced_ tab → _Startup and Recovery_ → _Settings_.
 
-    ![Advanced tab \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/advanced_tab.png)
+   ![Advanced tab \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/advanced_tab.png)
 
 4. Here you’ll find an option called _Write debugging information_. Make sure it’s set to _Small Memory Dump (256 KB)_ and that the path shows `%SystemRoot%\Minidump`. These settings will ensure that Windows creates the minidump files we need when a BSOD occurs.
 
-    ![Small memory dump \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/systemroot.png)
+   ![Small memory dump \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/systemroot.png)
 
 5. Click _OK_ to save changes.
 
@@ -61,11 +61,11 @@ Our support team may request a wfpdiag.cab file, along with a minidump file, to 
 
 3. Right-click _Command Prompt_ and choose _Run as administrator_.
 
-    :::note
+   :::note
 
-    A wfpdiag.cab file is created in your current directory. You can change the location by typing `cd <folder_name>`.
+   A wfpdiag.cab file is created in your current directory. You can change the location by typing `cd <folder_name>`.
 
-    :::
+   :::
 
 4. To start logging, enter the following command: `netsh wfp capture start`.
 

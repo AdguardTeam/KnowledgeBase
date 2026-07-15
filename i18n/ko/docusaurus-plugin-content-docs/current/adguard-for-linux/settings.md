@@ -43,7 +43,7 @@ This command not only stops the proxy but also stops the traffic from redirectin
 adguard-cli status
 ```
 
-![상태/보호 중지 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+![Status/Stop protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/6status-stop.png)
 
 ### Restart protection
 
@@ -85,7 +85,7 @@ Use the `config` command to configure AdGuard for Linux. Subcommands:
 
 - `show [<section-name>]`: Show the current configuration in `proxy.yaml` (or a specific section)
 
-  ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/7config_show.png)
 
 - `set <key> <value>`: Configure an option in `proxy.yaml`
   - `listen_ports.http_proxy`: HTTP listening port

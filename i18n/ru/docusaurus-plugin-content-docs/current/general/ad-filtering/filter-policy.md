@@ -111,6 +111,7 @@ sidebar_position: 6
 Фильтры защиты от отслеживания AdGuard включают в себя:
 
 - Фильтр счётчиков и систем аналитики
+- Фильтр защиты от отслеживания почты
 - Фильтр отслеживания по URL
 
 ### Назначение этих фильтров
@@ -129,6 +130,8 @@ sidebar_position: 6
 - Функции Privacy Sandbox в Google Chrome и его ответвлениях, используемых для отслеживания (Google Topics API, Protected Audience API)
 
 **Фильтр отслеживания URL** предназначен для удаления параметров отслеживания с веб-адресов
+
+**Фильтр защиты от отслеживания почты** блокирует отслеживающие пиксели, встроенные в письма, чтобы отправители не могли видеть, когда вы открываете сообщения.
 
 ### Ограничения и исключения
 
@@ -300,3 +303,34 @@ This filter is intended for testing and debugging rules that potentially may bre
 
 - Rules should not intentionally break websites’ functionality
 - Rules should not unblock advertisements or otherwise violate the Policy
+
+## How to dispute a blocking rule
+
+AdGuard filter lists are maintained not only by the AdGuard team but also by community contributors. If you believe a blocking rule violates the principles described in this filter policy, you can dispute it by opening an issue on GitHub.
+
+Before submitting a dispute, please make sure you have read this policy carefully. When reviewing your report, filter maintainers will evaluate whether the rule complies with the criteria described above, so your explanation should refer to this policy whenever possible.
+
+### How to submit a dispute
+
+You can submit a dispute by using [our report tool](https://reports.adguard.com/new_issue.html). See the step-by-step guide in our [dedicated article](https://adguard.com/kb/guides/report-website/).
+
+Alternatively, you can report it via GitHub:
+
+1. Go to the [AdGuard Filters GitHub repository](https://github.com/AdguardTeam/AdguardFilters/issues) and create a new issue.
+2. Select the **Report an issue using AdGuard** issue template.
+3. Fill out the template with as much detail as possible.
+
+Your report should include:
+
+- The URL of the affected website.
+- A clear description of what is being blocked.
+- The blocking rule, if you know which one is responsible.
+- Steps to reproduce the issue.
+- Screenshots or other evidence that illustrate the problem, if applicable.
+- A detailed explanation of **why you believe the rule does not comply with this filter policy**. Whenever possible, refer to the relevant section or principle of the policy that you believe the rule violates.
+
+### What makes a good dispute?
+
+Simply stating that you disagree with a blocking rule is usually not enough. To help maintainers evaluate your report, explain why the rule conflicts with the blocking policy rather than why you personally would prefer different behavior.
+
+For example, if you believe a rule blocks content that should not be blocked under this policy, describe which policy criterion applies and how the rule fails to meet it. The more specific and well-supported your report is, the easier it will be for maintainers to review your request and determine whether the rule should be changed.

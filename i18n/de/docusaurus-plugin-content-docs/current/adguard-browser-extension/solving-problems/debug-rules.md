@@ -69,7 +69,7 @@ Diese Anweisungen sind auch für problematische Fälle gedacht, in denen Sie die
 
 2. Klicken Sie auf _Entpackt laden_:
 
-   ![Entpackte Erweiterung laden](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+   ![Entpackt laden](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
 3. Wählen Sie den Ordner der Erweiterung und klicken Sie auf `Auswählen`:
 

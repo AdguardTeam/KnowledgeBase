@@ -23,7 +23,7 @@ Pentru a putea gestiona setările DNS, aplicațiile AdGuard necesită stabilirea
 
 Această secțiune are două opțiuni: AdGuard și implementare nativă. Practic, acestea sunt două metode de configurare a DNS-ului.
 
-În implementarea nativă, DNS-ul este gestionat de sistem și nu de aplicație. Aceasta înseamnă că AdGuard nu trebuie să creeze un VPN local. Din păcate, aceasta nu vă va ajuta să ocoliți restricțiile sistemului și să folosiți AdGuard împreună cu alte aplicații bazate pe VPN - dacă vreun VPN este activat, DNS-ul nativ este ignorat. Prin urmare, nu veți putea filtra traficul local sau să folosiți noul nostru [protocol DNS-over-QUIC (DoQ)](https://adguard.com/en/blog/dns-over-quic.html).
+În implementarea nativă, DNS-ul este gestionat de sistem și nu de aplicație. Aceasta înseamnă că AdGuard nu trebuie să creeze un VPN local. Din păcate, aceasta nu vă va ajuta să ocoliți restricțiile sistemului și să folosiți AdGuard împreună cu alte aplicații bazate pe VPN - dacă vreun VPN este activat, DNS-ul nativ este ignorat. Consequently, you won't be able to filter traffic locally or to use our brand new [DNS-over-QUIC protocol (DoQ)](https://adguard-dns.io/blog/dns-over-quic.html).
 
 ### Servere DNS {#dns-servers}
 

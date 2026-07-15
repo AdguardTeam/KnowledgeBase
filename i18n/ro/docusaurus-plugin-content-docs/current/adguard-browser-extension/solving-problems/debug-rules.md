@@ -65,15 +65,15 @@ Aceste instrucțiuni sunt, de asemenea, destinate cazurilor problematice în car
 
 1. Activați modul pentru dezvoltatori:
 
-   ![Mod pentru dezvoltatori](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
+   ![Developer mode \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
 
 2. Faceți clic pe _Încărcați nepachetat_:
 
-   ![Load unpacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+   ![Load unpacked \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
 3. Selectați directorul extensiei și faceți clic pe `Selectați`:
 
-   ![Selectați](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
+   ![Select \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
 
 Asta e tot!
 
@@ -95,4 +95,4 @@ Asta e tot!
 
 4. Reîncărcați extensia în browser:
 
-   ![Reîncărcați extensia](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
+   ![Reload extension \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)

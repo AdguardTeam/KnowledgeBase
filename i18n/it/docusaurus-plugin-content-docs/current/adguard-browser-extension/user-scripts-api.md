@@ -11,7 +11,7 @@ Questo articolo riguarda l'Estensione di browser AdGuard, che protegge solo il t
 
 Quando aggiungi un filtro personale o una regola utente, comparirà una notifica che ti chiederà di abilitare la modalità sviluppatore per usare queste funzioni nell'estensione.
 
-![Notifica \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/notification-allow-user-scripts.jpg)
+![Notification \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/userscripts_api_restrictions.png)
 
 A partire dalla versione 5.2, l'Estensione AdGuard per browser usa l'API dei script utenti. Chrome richiede questa nuova API per seguire le migliori pratiche di sicurezza per l'utente.
 

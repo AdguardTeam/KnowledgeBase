@@ -13,19 +13,15 @@ sidebar_position: 1
 
 3. Povolte _Režim pro vývojáře_.
 
-   ![Developer mode \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
+   ![Developer mode \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_extensions.png)
 
-4. Klikněte na `background.html`.
+4. Find AdGuard Browser Extension and click `service worker`.
 
-   ![Background \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
+   ![Background \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_developer_mode.png)
 
-5. Otevřete kartu _Konzola_.
+5. Open the tab _Console_, right-click anywhere inside the console area, and select _Save as…_.
 
-   ![The Console tab \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
-
-6. Otevřete kontextovou nabídku a vyberte _Uložit jako…_.
-
-   ![Save as \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
+   ![Save as \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_console_save.png)
 
 ### Firefox
 
@@ -33,21 +29,17 @@ sidebar_position: 1
 
 2. Přejděte na `about:addons`.
 
-3. Klikněte na _Doplňky ladění_.
+3. Click the gear icon and select _Debug Add-ons_.
 
-   ![Debug Add-ons \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+   ![Debug Add-ons \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_debug_addons.png)
 
 4. Klikněte na _Zkontrolovat_.
 
-   ![Inspect \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
+   ![Inspect \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_inspect.png)
 
-5. Přejděte na kartu _Konzola_.
+5. In the tab _Console_ tab, right-click anywhere inside the console area and select _Save all Messages to File_.
 
-   ![Console \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
-
-6. Klikněte na _Uložit všechny zprávy do souboru_.
-
-   ![Save \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
+   ![Console \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_console_save.png)
 
 ## Odesílání záznamů
 

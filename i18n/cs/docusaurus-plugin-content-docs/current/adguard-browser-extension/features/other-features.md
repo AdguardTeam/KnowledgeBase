@@ -9,15 +9,15 @@ Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze v
 
 :::
 
-Kromě velkých klíčových modulů rozšíření prohlížeče AdGuard existuje několik dalších specifických funkcí, které lze konfigurovat na kartách _Obecné_ a _Další nastavení_ v nastavení rozšíření.
+Apart from the main settings of AdGuard Browser Extension, there are several more specific features that can be configured in the [_General_](#general) and [_Additional settings_](#misc) tabs.
 
 ## Obecné {#general}
 
 Karta _Obecné_ obsahuje hlavní nastavení rozšíření a umožňuje ovládat jeho základní chování při filtrování. Zde můžete povolit reklamy ve vyhledávání a [vlastní propagaci na webových stránkách](/general/ad-filtering/search-ads/), povolit automatickou aktivaci filtrů pro jednotlivé jazyky, nastavit interval aktualizace filtrů a zapnout [ochranu proti phishingu a škodlivým webům](/general/browsing-security/).
 
-![General \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/general_new.png)
+![General settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/general_settings.png)
 
-Můžete také uložit aktuální nastavení a rychle je použít v jiném prohlížeči nebo na jiném zařízení. Chcete-li to provést, klikněte na _Sdílet nastavení_ na kartě _Obecné_: rozšíření vygeneruje speciální odkaz a QR kód, které obsahují vaše aktuální nastavení. Můžete buď zkopírovat odkaz a otevřít jej v prohlížeči, nebo naskenovat QR kód na zařízení s aplikací AdGuard a otevřít odkaz přímo v aplikaci. Zobrazí se výzva k použití sdílené konfigurace, abyste mohli stejné nastavení obnovit po přeinstalování prohlížeče nebo na novém zařízení.
+Můžete také uložit aktuální nastavení a rychle je použít v jiném prohlížeči nebo na jiném zařízení. To do this, click _Share settings_: the extension will generate a special link and a QR code that contain your current settings. Můžete buď zkopírovat odkaz a otevřít jej v prohlížeči, nebo naskenovat QR kód na zařízení s aplikací AdGuard a otevřít odkaz přímo v aplikaci. Zobrazí se výzva k použití sdílené konfigurace, abyste mohli stejné nastavení obnovit po přeinstalování prohlížeče nebo na novém zařízení.
 
 V případě potřeby můžete tento odkaz sdílet s dalšími lidmi nebo jej připojit k žádosti o podporu, aby náš tým mohl vidět vaši přesnou konfiguraci.
 
@@ -25,24 +25,30 @@ Kromě toho můžete svá nastavení i nadále exportovat do souboru ve formátu
 
 ## Další nastavení {#misc}
 
-Sekce _Další nastavení_ obsahuje řadu různých nastavení, která souvisejí s procesem blokování reklam a použitelností aplikace.
+The _Additional settings_ section contains various settings that are related to the ad-blocking process and usability.
 
-![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional_new.png)
+![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional_settings.png)
 
-Na této kartě můžete invertovat seznam povolených a přidat položku AdGuard do kontextového menu prohlížeče. Můžete také povolit zobrazení počtu blokovaných reklam na ikoně AdGuard a oznámení o aktualizacích rozšíření. V této sekci můžete navíc povolit oznámení o aplikaci AdGuard, otevřít _Záznam filtrování_, vymazat statistiky blokovaných reklam a slídičů nebo obnovit nastavení.
+Enabling _Use optimized filters_ activates lightweight versions of the ad-blocking rules. It focuses only on the most popular filters to save internet traffic and system memory, which is ideal for mobile browsing.
 
-Kromě toho nám můžete pomoci s vývojem filtrů zasíláním statistik o použitých pravidlech: které z nich se spouští, na kterých webových stránkách a jak často. Tato možnost je ve výchozím nastavení vypnutá, protože neshromažďujeme údaje uživatelů bez jejich souhlasu. Pokud ji zapnete, budou všechna data přísně anonymizovaná.
+You can invert the _Allowlist_ will unblock ads on all websites by default, except for the specific domains you manually add to your list
 
-Můžete se také rozhodnout, že nám pomůžete vylepšit rozšíření tím, že nám zašlete anonymizované údaje o používání. To zahrnuje názvy obrazovek, se kterými pracujete, názvy tlačítek, na která klikáte, a identifikátory relací. Tyto poznatky nám pomáhají pochopit, kde uživatelé narážejí na potíže, vylepšit uživatelský zážitek a učinit rozšíření rychlejší a snadněji použitelné. Možnost _Odeslat anonymizované údaje o používání_ je ve výchozím nastavení deaktivována. Pokud tuto funkci povolíte, budou všechny údaje přísně anonymizovány a použity pouze interně. Nikdy je nebudeme sdílet s třetími stranami.
+You can also add the AdGuard item to the browser’s context menu, enable the display of the number of blocked ads on the AdGuard icon, and toggle notifications about extension updates.
+
+Additionally, this section lets you enable notifications about the AdGuard app, open the _Filtering log_, clear the statistics of blocked ads and trackers, or reset the settings.
+
+Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
+
+You can also choose to help us improve the extension by sending us anonymized usage data. This includes the names of the screens you interact with, the names of the buttons you click, and session identifiers. These insights help us understand where users run into friction, refine the experience, and make the extension faster and easier to use. The _Send anonymized usage data_ option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
 
 :::note
 
-Možnost _Odeslat anonymizované údaje o používání_ lze také povolit na stránce po instalaci v prohlížečích založených na Chromiu.
+The _Send anonymized usage data_ option can also be enabled on the post-installation page in Chromium-based browsers.
 
 :::
 
-## Informace {#about}
+## About {#about}
 
-V sekci _Informace_ najdete informace o aktuální verzi, odkazy na smlouvu EULA a zásady ochrany osobních údajů a na úložiště rozšíření prohlížeče na GitHubu.
+In the _About_ section, you can find information about the current version, links to the Privacy policy, and a link to the repository of the Browser Extension on GitHub.
 
-![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/about_new.png)
+![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/about.png)

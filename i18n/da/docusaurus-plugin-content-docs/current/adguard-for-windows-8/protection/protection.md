@@ -1,5 +1,5 @@
 ---
-title: Protection
+title: Beskyttelse
 sidebar_position: 1
 ---
 

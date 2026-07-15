@@ -43,7 +43,7 @@ To view the protection status, enter:
 adguard-cli status
 ```
 
-![Status/Stop protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+![Status/Stop protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/6status-stop.png)
 
 ### Restart protection
 
@@ -85,7 +85,7 @@ Use the `config` command to configure AdGuard for Linux. Subcommands:
 
 - `show [<section-name>]`: Show the current configuration in `proxy.yaml` (or a specific section)
 
-  ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/7config_show.png)
 
 - `set <key> <value>`: Configure an option in `proxy.yaml`
   - `listen_ports.http_proxy`: HTTP listening port
@@ -303,7 +303,7 @@ adguard-cli import-settings -i "/path/to/settings.zip"
 
 The `-i` or `--input` flag is required and specifies the path to the settings archive to import.
 
-## AdGuard Browser Assistant
+## AdGuard Browser Assistent
 
 AdGuard Browser Assistant allows you to manage AdGuard protection directly from your browser.
 

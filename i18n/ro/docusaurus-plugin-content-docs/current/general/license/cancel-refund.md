@@ -9,7 +9,7 @@ Abonamentul poate fi anulat în contul dvs. AdGuard. Pentru a anula abonamentul:
 
  1. Go to your [AdGuard account](https://adguardaccount.com).
  1. Selectați *Licențe*.
- 1. Faceți clic pe *Anulați abonamentul* sub abonamentul de care nu mai aveți nevoie. ![Cancel](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
+ 1. Click *Cancel auto-renewal* below the subscription you no longer need. ![Cancel](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub-upd.png)
 
  Abonamentul anulat va fi valabil până la data sa de expirare.
 

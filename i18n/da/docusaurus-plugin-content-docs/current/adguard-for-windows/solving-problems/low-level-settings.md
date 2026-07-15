@@ -65,11 +65,11 @@ Enable this feature if you want AdGuard to automatically intercept filter subscr
 
 If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
-**Limitations**:
+**Begrænsninger**:
 
-- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
-- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
-- Safari supports HTTP/3 filtering without additional configuration.
+- Chrome-baserede webbrowsere accepterer ikke brugercertifikater og understøtter dermed ikke HTTP/3-filtrering.
+- Firefox-baserede webbrowsere opfører sig som standard tilsvarende, men `network.http.http3.disable_when_third_party_roots_found`-indstillingen kan i `about:config` sættes til `false` for at tillad brugercertifikater til HTTP/3.
+- Safari understøtter HTTP/3-filtrering uden yderligere opsætning.
 
 ### Use redirect driver mode
 

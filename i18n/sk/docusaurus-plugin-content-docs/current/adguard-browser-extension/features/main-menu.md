@@ -9,12 +9,16 @@ This article is about AdGuard Browser Extension, which safeguards only your brow
 
 :::
 
-The extension's main page can be accessed by clicking the extension's icon on the toolbar of your browser.
+The extension’s main page can be accessed by clicking its icon on your browser’s toolbar.
 
-![Main menu \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Main menu \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/main_popup_mv2.png)
 
-On the main page, you can hide any element on any page manually (a corresponding rule will be added to the _User rules_), open the _Filtering log_ to view the complete information about your browser's traffic and block requests on the go, or look at a website’s security report. Besides, you can submit a complaint about any website (for example, if there are missed ads on the page, our filter engineers will review the report and fix the problem) and see the statistics on applied blocking rules.
+From the main page, you can manage your protection and access key features:
 
-All web requests made by the browser are displayed in the _Filtering log_, along with detailed information about each request. The _Filtering log_ makes it easy, for example, to monitor requests blocked by AdGuard Browser Extension. Besides, it allows you to block any request or add a previously blocked request to Allowlist in two clicks. The _Filtering log_ also offers you a wide variety of options for sorting web requests, which can be helpful when creating your own filtering rules. You can open the _Filtering log_ by selecting the corresponding item in the main menu, or from the settings page (in the _Additional settings_ tab).
+- Manually hide any element on a webpage (a custom rule will be automatically added to your _User rules_)
+- Open _Filtering log_ to view detailed information about your browser’s traffic and block requests on the fly
+- Submit a complaint about missed ads or broken page elements so our filter engineers can review and fix the issue
+- Check a website’s security report
+- See statistics on all blocked elements
 
-By clicking the icons in the top right corner of the extension's main menu, you can open the extension settings or pause the protection.
+By clicking the icons in the top-right corner of the extension’s main menu, you can manually update filters, pause protection, or open the extension settings.

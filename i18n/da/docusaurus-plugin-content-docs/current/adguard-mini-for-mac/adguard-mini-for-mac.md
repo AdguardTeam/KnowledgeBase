@@ -1,5 +1,5 @@
 ---
-title: AdGuard Mini for Mac
+title: AdGuard Mini til Mac
 sidebar_position: 1
 ---
 

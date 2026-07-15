@@ -13,14 +13,12 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
 ![AdGuard Browsererweiterung für Chrome \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
-Browsererweiterungen enthalten grundlegende Werbeblockerfunktionen, sind aber nicht mit vollwertigen Desktop-Programmen wie [AdGuard für Windows](/adguard-for-windows/features/home-screen) und [AdGuard für Mac](/adguard-for-mac/features/main) vergleichbar.
-
-![Verfügbar für die meisten gängigen Browser \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
+![Verfügbar für die meisten gängigen Browser \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/extension_for_browsers.png)
 
 :::note
 
-Wir haben eine eigenständige Erweiterung für Safari. Seit der Veröffentlichung von [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) haben die meisten Werbeblocker-Erweiterungen große Probleme und viele von ihnen funktionieren nicht mehr. Wir mussten eine [separate Erweiterung für Safari](/adguard-for-safari/features/general) entwickeln, die einige Unterschiede zu der in diesem Artikel beschriebenen Erweiterung aufweist.
+Wir haben eine eigenständige Erweiterung für Safari [AdGuard Mini für Mac](/adguard-mini-for-mac/) (ehemals AdGuard für Safari). Aufgrund der einzigartigen Architektur und der strengen Anforderungen des Erweiterungs-Frameworks von Safari wurde es als separate Anwendung entwickelt und weist einige funktionale Unterschiede im Vergleich zu der in diesem Artikel beschriebenen Erweiterung auf.
 
 :::
 
-**Vergessen Sie nicht, dass die Funktionalität jeder Erweiterung durch die Möglichkeiten des Browsers begrenzt ist.** Wenn Sie also einen umfassenden Schutz wünschen, sollten Sie die Installation eines eigenständigen Programms für Ihren Computer in Betracht ziehen. Es gibt [einen Grund dafür](/adguard-browser-extension/comparison-standalone).
+**Vergessen Sie nicht, dass die Funktionalität jeder Erweiterung strikt durch die Möglichkeiten des Browsers begrenzt ist.** Während Erweiterungen grundlegende Funktionen zum Blockieren von Werbung bieten, können sie nicht mit den systemweiten Möglichkeiten von Desktop-Apps wie [AdGuard for Windows](/adguard-for-windows/) und [AdGuard for Mac](/adguard-for-mac/) mithalten. Wenn Sie nach umfassendem Schutz suchen, der über den Browser hinausgeht, können Sie mehr über die [Vorteile von eigenständigen Apps](/adguard-browser-extension/comparison-standalone) lesen.

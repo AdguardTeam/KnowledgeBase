@@ -11,7 +11,7 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
 Beim Hinzufügen eines benutzerdefinierten Filters oder einer Benutzerregel wird eine Benachrichtigung angezeigt, in der Sie aufgefordert werden, den Entwicklermodus zu aktivieren, um diese Funktionen in der Erweiterung nutzen zu können.
 
-![Benachrichtigung \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/notification-allow-user-scripts.jpg)
+![Notification \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/userscripts_api_restrictions.png)
 
 Ab Version 5.2 verwendet die AdGuard-Browsererweiterung die User Scripts API. Chrome verlangt von dieser neuen API, dass bewährte Methoden für die Sicherheit der Nutzer eingehalten werden.
 

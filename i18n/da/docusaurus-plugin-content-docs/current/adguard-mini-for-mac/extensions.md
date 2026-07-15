@@ -48,7 +48,7 @@ _AdGuard Custom_ applies rules from filters that you add on your own to _Custom 
 
 User rules and allowlist rules are included in every extension.
 
-## AdGuard for Safari
+## AdGuard til Safari
 
 _AdGuard for Safari_ activates the AdGuard icon next to the search bar. It’s useful if you want to quickly set up protection for a specific website or block ads manually.
 

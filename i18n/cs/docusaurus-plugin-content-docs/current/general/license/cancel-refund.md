@@ -9,7 +9,7 @@ Předplatné lze zrušit ve vašem AdGuard účtu. Pro zrušení předplatného:
 
  1. Přejděte do [AdGuard účtu](https://adguardaccount.com).
  1. Vyberte *Licence*.
- 1. Klikněte na *Zrušit předplatné* pod předplatným, které již nepotřebujete. ![Zrušit](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
+ 1. Click *Cancel auto-renewal* below the subscription you no longer need. ![Zrušit](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub-upd.png)
 
  Zrušené předplatné bude platné do data vypršení jeho platnosti.
 

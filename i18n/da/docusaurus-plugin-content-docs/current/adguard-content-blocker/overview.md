@@ -1,5 +1,5 @@
 ---
-title: Features overview
+title: Funktionsoversigt
 sidebar_position: 1
 ---
 
