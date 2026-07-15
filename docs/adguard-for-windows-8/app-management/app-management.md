@@ -9,8 +9,6 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 :::
 
-![App management](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/management.png)
-
 In the *App management* section, you can manage routing and filtering settings for all apps installed on your device.
 
 Once AdGuard detects that an app has gone online, it is automatically added to *App management*, and its traffic is routed through AdGuard.
@@ -25,8 +23,66 @@ You can leave the settings as they are, disable both filtering and routing, or f
 
 ![App stats](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
-## “Problem-free” and “problematic” apps
+## How app filtering and routing work in AdGuard for Windows v8.0
 
-Most apps work correctly when filtered. Some apps are considered “problematic” and may not work correctly when routed through AdGuard. You may see a warning like this when trying to route or filter all apps:
+AdGuard for Windows v8.0 introduces updated logic for handling apps. It helps prevent compatibility issues while still giving you control over which apps are filtered. Let’s break down how it works.
 
-To ensure the proper operation of all apps installed on your device, we recommend routing only problem-free apps through AdGuard.
+There are “problem-free” and “problematic” apps. Some work correctly when filtered, while others may not function when their traffic is processed by AdGuard. This can be caused by features like HTTPS interception or proxying.
+
+To avoid breaking apps out of the box, AdGuard does not filter everything indiscriminately. Instead, it relies on a compatibility list — a set of apps that are known to work correctly with filtering enabled.
+
+:::note
+
+“Not filtering everything” does not mean “filter nothing.” Trusted apps (like browsers) are always filtered.
+
+:::
+
+Each app has three independent processing layers: traffic routing through AdGuard, filtering (blocking ads and trackers), and HTTPS filtering (interception of encrypted traffic).
+
+These are determined by three sources:
+
+- *Compatibility list*
+
+  Apps that have been tested by our team and are confirmed to work correctly with filtering.
+  This list is updated through internal testing and user reports in the [dedicated repository for listing AdGuard compatibility issues](https://github.com/AdguardTeam/CompatibilityIssues).
+
+- *Exclusion lists*
+
+  Separate lists for routing, filtering, and HTTPS filtering. These include apps known to break when filtering is applied.
+
+- *Filter unknown apps*
+
+  This setting defines how all other apps (not present in any list) are handled.
+
+:::info
+
+The compatibility lists are continuously updated — and you can help improve them. If you notice that an app does not work correctly with filtering enabled, **report it on [GitHub](https://github.com/AdguardTeam/CompatibilityIssues)** or contact support via the app. Your feedback helps improve AdGuard for everyone.
+
+:::
+
+## Filter unknown apps
+
+![Filter unknown apps *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/app-management.png)
+
+The *Filter unknown apps* setting is enabled by default and determines how AdGuard handles new apps that are not yet present in the compatibility or exclusion lists
+
+When enabled, app traffic is routed through AdGuard, regular filtering is applied, and **HTTPS filtering is NOT enabled automatically**. This is intentional: HTTPS interception is the most sensitive part of traffic processing and may affect app behavior.
+
+When disabled, new apps are not processed by AdGuard — you will need to manually configure routing for them.
+
+Here is a quick overview of how different app categories behave depending on this setting:
+
+| App category | Toggle on (default) | Toggle off |
+|----------------------|--------------------|------------|
+| Compatible, or problem-free (e.g., browsers) | · Routing ✅ <br /> · Filtering ✅ <br /> · HTTPS filtering ✅ | Same behavior — does not depend on toggle |
+| Problematic (from exclusion lists, filtering may cause issues) | · Routing ❌ <br /> · Filtering ❌ <br /> · HTTPS filtering ❌ | Same behavior — does not depend on toggle |
+| Others / (newly detected, unknown, not in lists) | · Routing ✅ <br /> · Filtering ✅ <br /> · HTTPS filtering ❌ | Not routed through AdGuard, must be enabled manually |
+
+:::info What happens on reset
+
+If you click **Reset to default**, two things happen:
+
+1. All app-specific permissions are cleared (set to “not configured”).
+2. Predefined rules are applied to known safe apps (such as browsers), including HTTPS filtering.
+
+:::
