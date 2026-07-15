@@ -9,12 +9,16 @@ Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakk
 
 :::
 
-Uzantının ana sayfasına, tarayıcınızın araç çubuğundaki uzantı simgesine tıklayarak erişebilirsiniz.
+The extension’s main page can be accessed by clicking its icon on your browser’s toolbar.
 
-![Main menu \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Main menu \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/main_popup_mv2.png)
 
-On the main page, you can hide any element on any page manually (a corresponding rule will be added to the _User rules_), open the _Filtering log_ to view the complete information about your browser's traffic and block requests on the go, or look at a website’s security report. Ayrıca, herhangi bir site hakkında bir şikayet gönderebilir (örneğin, sayfada gözden kaçan reklamlar varsa, filtre mühendislerimiz raporu inceler ve sorunu çözer) ve uygulanan engelleme kurallarına ilişkin istatistikleri görebilirsiniz.
+From the main page, you can manage your protection and access key features:
 
-All web requests made by the browser are displayed in the _Filtering log_, along with detailed information about each request. The _Filtering log_ makes it easy, for example, to monitor requests blocked by AdGuard Browser Extension. Ayrıca, herhangi bir isteği engellemenize veya daha önce engellenen bir isteği iki tıklamayla İzin listesine eklemenize olanak tanır. The _Filtering log_ also offers you a wide variety of options for sorting web requests, which can be helpful when creating your own filtering rules. You can open the _Filtering log_ by selecting the corresponding item in the main menu, or from the settings page (in the _Additional settings_ tab).
+- Manually hide any element on a webpage (a custom rule will be automatically added to your _User rules_)
+- Open _Filtering log_ to view detailed information about your browser’s traffic and block requests on the fly
+- Submit a complaint about missed ads or broken page elements so our filter engineers can review and fix the issue
+- Check a website’s security report
+- See statistics on all blocked elements
 
-Uzantının ana menüsünün sağ üst köşesindeki simgelere tıklayarak uzantı ayarlarını açabilir veya korumayı duraklatabilirsiniz.
+By clicking the icons in the top-right corner of the extension’s main menu, you can manually update filters, pause protection, or open the extension settings.

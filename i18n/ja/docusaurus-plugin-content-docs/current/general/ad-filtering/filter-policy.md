@@ -81,12 +81,12 @@ AdGuardの広告ブロックフィルタには以下が含まれます:
 ### 制限と例外
 
 - サイト独自の広告（自己宣伝広告）を意図的にブロックすべきではない。 ただし、一般的なフィルタリングルールによってブロックされている場合は、ブロックを解除すべきではない。
-- Content access measures like paywalls are not blocked by Ad blocking filters. However, they may be blocked by Tracking protection filters if their operation results in a violation of user privacy
+- ペイウォールのようなコンテンツへのアクセスを制限する仕組みは、広告ブロックフィルタによってはブロックされません。 しかし、そのような仕組みの動作がユーザーのプライバシー侵害につながる場合、トラッキング防止フィルターによってブロックされる場合があります。
 - アンチアドブロックウォールが以下のことをしている場合、アンチアドブロックウォールはブロックされる:
     - 広告ブロッカーの無効化や削除を強引に要求したり、ウェブサイトの利用を事実上妨害したりしている
     - 広告ブロッカーの使用がもたらす可能性のあることについて、誤解を招くような説明をしている
     - 訪問者を不正広告の危険にさらしている（ブロックされない広告が疑わしいソースから来る場合）
-    - They violate or negatively impact user privacy
+    - ユーザーのプライバシーを侵害している、またはプライバシーに悪影響を与えている
 - AdGuard は、以下の基準の少なくとも1つを満たす広告ブロッカー検出メッセージをブロックしません:
     - ウェブサイトの利用を許可していて、コンテンツの大部分を被せていない
     - 広告ブロッカーを無効にする代わりに、ユーザーのプライバシーやセキュリティを危険にさらすことのない代替手段を提供している
@@ -111,6 +111,7 @@ AdGuardの広告ブロックフィルタには以下が含まれます:
 AdGuardの追跡防止フィルタには以下が含まれます:
 
 - AdGuard 追跡防止フィルタ
+- AdGuard メール追跡防止フィルタ
 - AdGuard URL追跡防止フィルタ
 
 ### これらのフィルタの目的
@@ -125,10 +126,12 @@ AdGuardの追跡防止フィルタには以下が含まれます:
 - 追跡クッキー
 - トラッキングピクセル
 - ブラウザのトラッキングAPI
-- Detection of the ad blocker for tracking purposes
+- トラッキング目的の広告ブロッカー検知
 - Google Chromeのプライバシーサンドボックス機能、およびトラッキングに使用されるプライバシーサンドボックスのフォーク（Google Topics API、Protected Audience API）
 
 「**AdGuard URL追跡防止フィルタ**」は、ウェブアドレスからトラッキングパラメータを削除するように設計されています。
+
+「**AdGuard メール追跡防止フィルタ**」は、メールに埋め込まれたトラッキングピクセルをブロックし、メール開封のタイミングを送信者が監視できないようにします。
 
 ### 制限と例外
 
@@ -166,15 +169,15 @@ AdGuardの追跡防止フィルタには以下が含まれます:
 
 #### AdGuard クッキー通知フィルタ
 
-このフィルタは、クッキー（Cookie）通知とクッキー管理プラットフォーム(CMP)からのリクエストの両方をブロックするように設計されています。 Depending on how a website implements its consent mechanism, different methods may be applied.
+このフィルタは、クッキー（Cookie）通知とクッキー管理プラットフォーム(CMP)からのリクエストの両方をブロックするように設計されています。 ウェブサイトが同意メカニズムをどのように実装しているかによって、適用される方法は異なることがあります。
 
-In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when a website requires a cookie decision for certain features or third-party content to work, the filter automatically handles the request using alternative methods.
+ほとんどの場合、対応するスクリプトを非表示にするか、ブロックするだけで十分です。 しかし、特定の機能やサードパーティコンテンツを動作させるためにウェブサイトがCookieに関する選択を要求している場合、フィルタは代替の方法を使用してその要求を自動的に処理します。
 
-Whenever possible, non-essential cookies are declined by default. If this is not technically feasible and consent must be granted for the site to function correctly, the site is additionally reviewed for analytics and tracking technologies, which are then blocked by the **AdGuard Tracking Protection filter**.
+可能な限り、必須でないCookieはデフォルトで拒否されます。 これが技術的に実現不可能であり、サイトが正しく機能するためにはCookie同意が必要な場合、当該サイトは分析ソフトおよびトラッキング技術の有無についても追加で審査され、その後**AdGuard 追跡防止フィルタ**によって分析ソフトおよびトラッキング技術はブロックされます。
 
 **制限と例外**
 
-In some cases, the decision to add rules is made independently by filter developers; mostly, when the choice made when simulating actions would affect the site’s functionality (for example, history may not work, or user settings may not be saved on such a site).
+ルールを追加するかどうかの決定は、フィルタ開発者たちが独自に行う場合があります。ほとんどの場合、行動をシミュレートする際の選択がサイトの機能に影響を与える時にそういった対応になります（たとえば、履歴が機能しなかったり、ユーザー設定がそのようなサイトに保存されなかったりするケース）。
 
 #### AdGuard ポップアップフィルタ
 
@@ -265,13 +268,13 @@ For more details on these types of advertising, refer to the [article on search 
 
 ### フィルタ
 
-- Filter unblocking search ads and self-promotion
-- AdGuard DNS filter
-- AdGuard Experimental filter
+- 検索広告・自己宣伝のブロック解除フィルタ
+- AdGuard DNS フィルタ
+- AdGuard 実験フィルタ
 
 ### これらのフィルタの目的
 
-#### Filter unblocking search ads and self-promotion
+#### 検索広告・自己宣伝のブロック解除フィルタ
 
 This filter unblocks:
 
@@ -284,7 +287,7 @@ This filter unblocks:
 - Self-promotion is unblocked only if it complies with the filter policy. A request for unblocking may be rejected by filter developers
 - Any other advertising will not be unblocked
 
-#### AdGuard DNS filter
+#### AdGuard DNS フィルタ
 
 This filter is used in AdGuard DNS. It is not a replacement for ad-blocking filters.
 
@@ -292,7 +295,7 @@ This filter is used in AdGuard DNS. It is not a replacement for ad-blocking filt
 
 Same as for ad-blocking filters.
 
-#### AdGuard Experimental filter
+#### AdGuard 実験フィルタ
 
 This filter is intended for testing and debugging rules that potentially may break websites’ functionality. Rules are added by filter developers when there’s a need to test a particular solution. As the filter is designed for debugging purposes, its limitations are minimal.
 
@@ -300,3 +303,34 @@ This filter is intended for testing and debugging rules that potentially may bre
 
 - Rules should not intentionally break websites’ functionality
 - Rules should not unblock advertisements or otherwise violate the Policy
+
+## How to dispute a blocking rule
+
+AdGuard filter lists are maintained not only by the AdGuard team but also by community contributors. If you believe a blocking rule violates the principles described in this filter policy, you can dispute it by opening an issue on GitHub.
+
+Before submitting a dispute, please make sure you have read this policy carefully. When reviewing your report, filter maintainers will evaluate whether the rule complies with the criteria described above, so your explanation should refer to this policy whenever possible.
+
+### How to submit a dispute
+
+You can submit a dispute by using [our report tool](https://reports.adguard.com/new_issue.html). See the step-by-step guide in our [dedicated article](https://adguard.com/kb/guides/report-website/).
+
+Alternatively, you can report it via GitHub:
+
+1. Go to the [AdGuard Filters GitHub repository](https://github.com/AdguardTeam/AdguardFilters/issues) and create a new issue.
+2. Select the **Report an issue using AdGuard** issue template.
+3. Fill out the template with as much detail as possible.
+
+Your report should include:
+
+- The URL of the affected website.
+- A clear description of what is being blocked.
+- The blocking rule, if you know which one is responsible.
+- Steps to reproduce the issue.
+- Screenshots or other evidence that illustrate the problem, if applicable.
+- A detailed explanation of **why you believe the rule does not comply with this filter policy**. Whenever possible, refer to the relevant section or principle of the policy that you believe the rule violates.
+
+### What makes a good dispute?
+
+Simply stating that you disagree with a blocking rule is usually not enough. To help maintainers evaluate your report, explain why the rule conflicts with the blocking policy rather than why you personally would prefer different behavior.
+
+For example, if you believe a rule blocks content that should not be blocked under this policy, describe which policy criterion applies and how the rule fails to meet it. The more specific and well-supported your report is, the easier it will be for maintainers to review your request and determine whether the rule should be changed.

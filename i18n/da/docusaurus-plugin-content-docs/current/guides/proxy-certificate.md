@@ -21,71 +21,71 @@ Depending on the operating system of the device whose traffic you want to filter
 
 1. Note the IP address of your computer with AdGuard installed.
 
-1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
+1. Sørg for, at AdGuard-beskyttelsen er slået til. På en Windows-computer, markér afkrydsningsfeltet **Benyt AdGuard som en HTTP-proxy** i indstillingerne på fanen **Netværk**. På Mac, gå til **Indstillinger** → **Præferencer** → **Netværk** og slå **HTTP-proxy** til.
 
-1. On the same computer with AdGuard, follow this link: [https://local.adguard.org/cert](https://local.adguard.org/cert).
+1. På samme computer med AdGuard, følg dette link: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-1. Click the **Download** button. If the download doesn’t start, try another browser, for example Firefox.
+1. Klik på knappen **Download**. Starter download ikke, prøv med en anden webbrowser, f.eks. Firefox.
 
-1. Transfer the downloaded **cert.cer** file to the Windows device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
+1. Overfør den downloadede **cert.cer**-fil til den enhed, hvis trafik skal rutes igennem AdGuard. Der kan bruges et USB-kabel, Bluetooth eller cloud-tjenester til at gøre dette.
 
-1. On that device, press **Win**, type `Manage computer certificates` and press **Enter**.
+1. På den enhed, tryk på **Win**, skriv `Håndtér computercertifikater` og tryk på **Retur**.
 
-1. On the *Certificates — Local Computer* page, find the *Trusted Root Certification Authorities* → *Certificates* folder.
+1. På siden *Certifikater — Lokal computer*, find mappen *Betroede Rodcertificeringsmyndigheder* → *Certifikater*.
 
-1. Right-click the *Certificates* folder and click **All Tasks** → **Import**.
+1. Højreklik på mappen *Certifikater*, og klik på **Alle opgaver** → **Import**.
 
-1. On the *Certificate Import Wizard* page, click **Next**.
+1. På siden *Certifikatimport Guide*, klik på **Næste**.
 
-1. Click **Browse** to import the certificate.
+1. Klik på **Gennemse** for at importere certifikatet.
 
-1. Navigate to the **cert.cer** certificate file, select it, click **Open**, then **Next**.
+1. Find certifikatfilen **cert.cer**, vælg den, klik på **Åbn** og dernæst på **Næste**.
 
-1. Select the **Place all certificates in the following store** checkbox.
+1. Markér afkrydsningsfeltet **Placér alle certifikater i flg. lager**.
 
-1. Make sure that the *Certificate store* field displays *Trusted Root Certification Authorities* and click **Next**.
+1. Sørg for, at feltet *Certifikatlager* viser *Betroede Rodcertificeringsmyndigheder*, og klik på **Næste**.
 
-1. Click **Finish**.
+1. Klik på **Udfør**.
 
-1. Press **Win**, then open **Settings**.
+1. Tryk på **Win**, og åbn dernæst **Indstillinger**.
 
-1. Select **Network & Internet** → **Proxy**.
+1. Vælg **Netværk og Internet** → **Proxy**.
 
-1. Toggle *Automatically detect settings* off.
+1. Slå *Detektér automatisk indstillinger* fra.
 
-1. Click **Set up** in the *Use a proxy server* tab.
+1. Klik på **Opsæt** på fanen *Brug en proxyserver*.
 
-1. Turn the toggle on. For **Proxy IP address**, type the IP address of your computer that you noted in step 1. For **Port**, enter the port chosen in the network settings of the desktop AdGuard app.
+1. Slå kontakten til. Angiv som **Proxy IP-adresse** den noterede IP-adresse på computeren fra trin 1. Angiv som **Port** den port, der er valgt i netværksindstillingerne i AdGuard computer-appen.
 
-1. Click **Save**.
+1. Klik på **Gem**.
 
 ### Mac {#mac}
 
-1. Note the IP address of your computer with installed AdGuard.
+1. Notér IP-adressen på den computer, der har AdGuard installeret.
 
-1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
+1. Sørg for, at AdGuard-beskyttelsen er slået til. På en Windows-computer, markér afkrydsningsfeltet **Benyt AdGuard som en HTTP-proxy** i indstillingerne på fanen **Netværk**. På Mac, gå til **Indstillinger** → **Præferencer** → **Netværk** og slå **HTTP-proxy** til.
 
-1. Follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
+1. Følg dette link: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-1. Click the **Download** button. If the download doesn’t start, try another browser, for example Firefox.
+1. Klik på knappen **Download**. Starter download ikke, prøv med en anden webbrowser, f.eks. Firefox.
 
-1. Transfer the downloaded **cert.cer** file to the Mac device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
+1. Overfør den downloadede **cert.cer**-fil til den Mac-enhed, hvis trafik skal rutes igennem AdGuard. Der kan bruges et USB-kabel, Bluetooth eller cloud-tjenester til at gøre dette.
 
-1. Double-click the downloaded certificate file.
+1. Dobbeltklik på den downloadede certifikatfil.
 
-1. Enter the administrator password and then click **Modify Keychain**.
+1. Angiv administratoradgangskoden, og klik dernæst på **Redigér Nøglering**.
 
-1. Go to **Spotlight** (the search icon in the top right corner), type in `Keychain Access`, and then select **Keychain Access** from the search results.
+1. Gå til **Spotlight** (søgeikonet øverste til højre), skriv `Keychain Access`, og vælg dernæst **Keychain Access** fra søgeresultaterne.
 
-1. Under *System*, highlight the certificate that you added.
+1. Fremhæv under *System* det tilføjede certifikat.
 
-1. Right-click it and select **Get Info** from the context menu.
+1. Højreklik på det og vælg i kontekstmenuen **Hent info**.
 
-1. Expand *Trust* to display the trust policies for the certificate.
+1. Udvid *Tillid* for at få vist certifikatets tillidspolitikker.
 
-1. Under *Secure Sockets Layers (SSL)*, select **Always Trust**.
+1. Vælg under *Secure Sockets Layers (SSL)* **Hav altid tillid**.
 
-1. Open **System Preferences** → **Network** and select the active connection at the top.
+1. Åbn **Systempræferencer** → **Netværk** og vælg den aktive forbindelse øverst.
 
 1. Click **Details...** and navigate to the **Proxies** tab.
 
@@ -93,15 +93,15 @@ Depending on the operating system of the device whose traffic you want to filter
 
 ### Android {#android}
 
-1. Note the IP address of your computer with installed AdGuard.
+1. Notér IP-adressen på den computer, der har AdGuard installeret.
 
-1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
+1. Sørg for, at AdGuard-beskyttelsen er slået til. På en Windows-computer, markér afkrydsningsfeltet **Benyt AdGuard som en HTTP-proxy** i indstillingerne på fanen **Netværk**. På Mac, gå til **Indstillinger** → **Præferencer** → **Netværk** og slå **HTTP-proxy** til.
 
 1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
-1. Click the **Download** button. If the download doesn’t start, try another browser, for example Firefox.
+1. Klik på knappen **Download**. Starter download ikke, prøv med en anden webbrowser, f.eks. Firefox.
 
-1. Transfer the downloaded **cert.cer** file to the Android device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
+1. Transfer the downloaded **cert.cer** file to the Android device whose traffic you want to route through AdGuard. Der kan bruges et USB-kabel, Bluetooth eller cloud-tjenester til at gøre dette.
 
 1. Locate and tap the previously downloaded **cert.cer** certificate to open the file and follow the instructions to install the certificate.
 
@@ -113,15 +113,15 @@ Depending on the operating system of the device whose traffic you want to filter
 
 ### iOS {#ios}
 
-1. Note the IP address of your computer with installed AdGuard.
+1. Notér IP-adressen på den computer, der har AdGuard installeret.
 
-1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
+1. Sørg for, at AdGuard-beskyttelsen er slået til. På en Windows-computer, markér afkrydsningsfeltet **Benyt AdGuard som en HTTP-proxy** i indstillingerne på fanen **Netværk**. På Mac, gå til **Indstillinger** → **Præferencer** → **Netværk** og slå **HTTP-proxy** til.
 
 1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
-1. Click the **Download** button. If the download doesn’t start, try another browser, for example Firefox.
+1. Klik på knappen **Download**. Starter download ikke, prøv med en anden webbrowser, f.eks. Firefox.
 
-1. Transfer the downloaded **cert.cer** file to the iOS device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
+1. Transfer the downloaded **cert.cer** file to the iOS device whose traffic you want to route through AdGuard. Der kan bruges et USB-kabel, Bluetooth eller cloud-tjenester til at gøre dette.
 
 1. On your iOS device, open **Settings** → **Profile Downloaded** and tap **Install** in the top right corner. Enter your password and confirm the installation. Tap **Done**.
 

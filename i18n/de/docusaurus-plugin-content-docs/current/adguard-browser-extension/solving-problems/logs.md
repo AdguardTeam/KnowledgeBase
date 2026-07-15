@@ -13,19 +13,15 @@ sidebar_position: 1
 
 3. Aktivieren Sie den _Entwicklermodus_.
 
-   ![Entwicklermodus \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
+   ![Entwicklermodus \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_extensions.png)
 
-4. Klicken Sie auf „background.html".
+4. Suchen Sie die AdGuard Browsererweiterung und klicken Sie auf `service worker`.
 
-   ![Hintergrund \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
+   ![Hintergrund \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_developer_mode.png)
 
-5. Öffnen Sie den Tab _Konsole_.
+5. Öffnen Sie den Tab _Konsole_, klicken Sie mit der rechten Maustaste irgendwo in den Konsolenbereich und wählen Sie _Speichern unter…_.
 
-   ![Der Tab Konsole \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
-
-6. Öffnen Sie das Kontextmenü und wählen Sie _Speichern unter …_.
-
-   ![Speichern unter \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
+   ![Speichern unter \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_console_save.png)
 
 ### Firefox
 
@@ -33,21 +29,17 @@ sidebar_position: 1
 
 2. Navigieren Sie zu „about:addons".
 
-3. Klicken Sie auf _Add-ons debuggen_.
+3. Klicken Sie auf das Zahnradsymbol und wählen Sie _Debug Add-ons_.
 
-   ![Add-ons debuggen \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+   ![Debug Add-ons \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_debug_addons.png)
 
 4. Klicken Sie auf _Untersuchen_.
 
-   ![Untersuchen \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
+   ![Untersuchen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_inspect.png)
 
-5. Wechseln Sie zum Tab _Konsole_.
+5. Klicken Sie im Reiter _Konsole_ mit der rechten Maustaste an eine beliebige Stelle im Konsolenbereich und wählen Sie _Alle Meldungen in Datei speichern_.
 
-   ![Konsole \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
-
-6. Klicken Sie auf _Alle Nachrichten in Datei speichern_.
-
-   ![Speichern \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
+   ![Konsole \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_console_save.png)
 
 ## Einreichen der Protokolle
 

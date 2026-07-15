@@ -11,21 +11,17 @@ sidebar_position: 1
 
 2. `chrome://extensions` に移動します。
 
-3. _開発者モード_を有効にします。
+3. _開発者モー&#x30C9;_&#x3092;有効にします。
 
-   ![Developer mode \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
+   ![Developer mode \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_extensions.png)
 
-4. `background.html`をクリックします。
+4. Find AdGuard Browser Extension and click `service worker`.
 
-   ![Background \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
+   ![Background \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_developer_mode.png)
 
-5. _コンソール_タブを開きます。
+5. Open the tab _Console_, right-click anywhere inside the console area, and select _Save as…_.
 
-   ![The Console tab \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
-
-6. コンテキスト メニューを開き、_名前を付けて保存…_ を選択します。
-
-   ![Save as \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
+   ![Save as \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_console_save.png)
 
 ### Mozilla Firefox の場合
 
@@ -33,21 +29,17 @@ sidebar_position: 1
 
 2. `about:addons` に移動します。
 
-3. 「_アドオンのデバッグ_」をクリックします。
+3. Click the gear icon and select _Debug Add-ons_.
 
-   ![Debug Add-ons \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+   ![Debug Add-ons \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_debug_addons.png)
 
 4. 「_検証する_」をクリックします。
 
-   ![Inspect \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
+   ![Inspect \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_inspect.png)
 
-5. _コンソール_タブを開きます。
+5. In the tab _Console_ tab, right-click anywhere inside the console area and select _Save all Messages to File_.
 
-   ![Console \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
-
-6. 「_すべてのメッセージをファイルに保存_」をクリックします。
-
-   ![Save \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
+   ![Console \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_console_save.png)
 
 ## ログの送信方法
 

@@ -1,302 +1,336 @@
 ---
-title: AdGuard filter policy
+title: AdGuard-filterpolitik
 sidebar_position: 6
 ---
 
-:::note Disclaimer
+:::note Ansvarsfraskrivelse
 
-Please read this filter policy carefully before enabling any filters.
+Læs venligst denne filterpolitik omhyggeligt inden aktivering af filtre.
 
-Using AdGuard Ad Blocker, AdGuard DNS, and their filters may affect how third-party websites and services function. You are responsible for reviewing and following the policies and terms of any websites or services you use.
+Brug af AdGuard Ad Blocker, AdGuard DNS og deres filtre kan påvirke, hvordan tredjepartswebsteder og -tjenester fungerer. Brugeren er ansvarlig for at gennemgå samt følge politikkerne og betingelserne for alle websteder/tjeneste, som benyttes.
 
-Before enabling filters provided by third parties, you agree to review their applicable terms and make an informed decision about using them. AdGuard is not responsible for how third-party filters operate or what their terms contain, and their presence in AdGuard products is not a recommendation to use them.
+Inden aktivering af filtre leveret af tredjeparter, accepterer brugeren at gennemgå deres gældende vilkår og træffe en informeret beslutning om brugen af dem. AdGuard er ikke ansvarlig for, hvordan tredjepartsfiltre fungerer, eller hvad deres vilkår indeholder, og deres tilstedeværelse i AdGuard-produkter er ikke en anbefaling til brug af dem.
 
 :::
 
-At AdGuard, we’ve long followed certain principles in making our filters, which, along with filter descriptions, are outlined below as part of our filtering policy.
+Hos AdGuard har vi længe fulgt visse principper ved oprettelsen af vores filtre, som sammen med filterbeskrivelser er skitseret nedenfor som en del af vores filtreringspolitik.
 
-## Common criteria
+## Fælles kriterier
 
-These criteria are equally applied to the rules of all filters.
+Disse kriterier anvendes ligeligt på reglerne for alle filtre.
 
-- Rules for a specific site will only be added if there is sufficient traffic. Traffic is determined by public statistics (if available) or indirect indicators, such as the number of subscribers on social networks. A site’s traffic is considered sufficient if it reaches 100,000 visits per month. We will consider adding a rule for a site that is not as popular, but the final decision rests with filter developers. Sites with low traffic should still be checked for third-party analytics and advertising networks
-- The decision about content farms (websites that produce large amounts of content primarily aimed at achieving high visibility in search results and generating advertising revenue) is made by filter developers depending on the quality of the content
+- Regler for et specifikt websted tilføjes kun, hvis der er tilstrækkelig trafik. Trafikken bestemmes af offentlige statistikker (hvis tilgængelige) eller indirekte indikatorer, såsom antallet af abonnenter på sociale netværk. En websteds trafik anses for tilstrækkelig, når det har 100.000 månedlige besøgende. Vi vil overveje at tilføje en regel for et websted, der ikke er så populært, men den endelige beslutning er op til filterudviklerne. Websteder med lav trafik bør stadig tjekkes for tredjepartsanalyse- og reklamenetværk
+- Beslutningen om indholdsfarme (websteder, som producerer store mængder indhold, primært rettet mod at opnå høj synlighed i søgeresultater og generere reklameindtægter) træffes af filterudviklere afhængigt af kvaliteten af indholdet
 
-Quality requirements for filtering rules:
+Kvalitetskrav til filtreringsregler:
 
-- Rules should not negatively impact the websites in terms of performance
-- Unblocking rules must be as specific as possible to avoid unblocking anything unnecessary
-- JavaScript rules should be used as sparingly as possible and only if blocking ads is impossible without them
+- Regler bør ikke påvirke webstederne negativt ift. ydeevne
+- Afblokeringsregler skal være så specifikke som muligt for at undgå afblokering af noget unødvendigt
+- JavaScript-regler bør bruges så lidt som muligt, og kun hvis det er umuligt at blokere annoncer uden dem
 
-## Ad blocking filters
+## Adblockerfiltre
 
-### Terminology
+### Terminologi
 
-**Ad blocker** is a software or hardware tool designed to filter, hide, or block advertisements and other elements on web pages. Ad blockers are created to improve user experience, reduce page load times, decrease internet traffic consumption, block ads, enhance privacy while browsing websites and using applications, and block annoying elements.
+En **Adblocker** er et software- eller hardwareværktøj designet til at filtrere, skjule eller blokere annoncer og andre elementer på websider. Adblockere er skabt til at forbedre brugeroplevelsen, reducere sideindlæsningstider, reducere internettrafikforbrug, blokere annoncer og forbedre fortroligheden, mens websteder gennemses og applikationer bruges, samt til at blokerer irriterende elementer.
 
-A **filter** (or a **filter list**) is a set of filtering rules designed to filter content and block various types of advertisements and other types of content using ad blockers. These filters usually operate at the level of the web browser, programs, or DNS server.
+Et **filter** (eller en **filterliste**) er et sæt filtreringsregler designet til at filtrere indhold og blokere forskellige typer reklamer og andre indholdstyper vha. adblockere. Disse filtre fungerer normalt på niveau med webbrowseren, programmerne eller DNS-serveren.
 
-**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so-called “adblock walls”). Anti-adblocks may be of different types:
+**Anti-adblock** er en teknologi brugt af websteder eller applikationer mhp. at registrere adblocking og reagere herpå på forskellige måder: Sporing, genindsættelse af annoncer, tilskyndelse til at deaktivere adblocking (såkaldte "adblock walls"). Forskellige typer af Anti-adblocks findes:
 
-- Anti-adblock that blocks website content without offering an alternative: to continue using the site, the user must disable the ad blocker on the site
-- “Anti-adblock wall” with alternative options offered, such as purchasing a subscription to continue using the ad blocker
-- Informational messages that do not obligate action: users are asked to disable the ad blocker, but these messages can be closed, allowing users to continue using the site without restrictions
-- Implementing alternative advertising in response to ad blocker usage: sites introduce alternative advertising when ad blockers are detected
-- Paywall: a method of content monetization where content is partially or fully hidden from users, with a message prompting them to purchase a subscription for access
+- Anti-adblock, der blokerer webstedsindhold uden at tilbyde et alternativ: For fortsat brug af webstedet, skal brugeren deaktivere adblocking under besøget
+- "Anti-adblock wall" med alternative muligheder, såsom køb af abonnement for fortsat brug af adblockeren
+- Informationsmeddelelser, som ikke forpligter til handling: Brugere anmodes om at deaktivere adblocking, men disse meddelelser kan lukkes, hvorefter brugerne kan fortsætte med at bruge webstedet uden restriktioner
+- Implementering af alternativ annoncering som reaktion på brug af adblocking: Websteder introducerer alternativ annoncering, når adblockere detekteres
+- Paywall: En metode til indtægtsgenerering på indhold, hvor indholdet er delvist eller helt skjult for brugerne, med en meddelelse, der beder dem købe et abonnement for at få adgang
 
-### Filters
+### Filtre
 
-AdGuard ad-blocking filters include:
+AdGuard-adblockingfiltre omfatter:
 
-- AdGuard Base filter
-- AdGuard Mobile Ads filter
-- Regional filters divided by language principle — Chinese, Dutch, French, German, Japanese, Russian, Spanish/Portuguese, Turkish, and Ukrainian
+- AdGuard Basisfilter
+- AdGuard Mobilannoncefilter
+- Regionale filtre opdelt efter sprogprincip — fransk, hollandsk, japansk, kinesisk, russisk, spansk/portugisisk, tysk, tyrkisk og ukrainsk
 
-### The purpose of these filters
+### Formålet med disse filtre
 
-- **Base filter** is designed to block ads on English-language websites and those for which there is no separate filter. It also contains general filtering rules that apply to all sites regardless of language
-- **Mobile Ads filter** blocks advertisements on mobile versions of websites and within mobile apps. There is no segmentation based on language
-- **Regional filters** follow the same policy as the **Base filter**, but limited to websites in certain languages
+- **Basisfilter** er designet til at blokere annoncer på engelsksprogede websteder og dem, hvor der ikke er et separat filter. Den indeholder også generelle filtreringsregler gældende for alle websteder uanset sprog
+- **Mobilannoncefilter** blokerer annoncer på mobilversioner af websteder og i mobil-apps. Der sker ingen segmentering baseret på sprog
+- **Regionale filtre** følger samme politik som **Basisfilter**, dog begrænset til websteder på bestemte sprog
 
-The goal of ad-blocking filters is to block all types of advertising on websites, applications, and certain devices that can load ads from the Internet:
+Målet med adblockingfiltre er at blokere alle typer reklame på websteder, apps og visse enheder, som kan indlæse annoncer fra internet:
 
-- Banners — advertisements displayed as images in various parts of web pages
-- Teasers — text or graphical ads, often animated, designed to intrigue visitors (sensational headlines, attention-grabbing images) and prompt them to click on the banner (clickbait)
-- Text ads — advertising in the form of text, including links
-- Modal adverts — advertising that suddenly appears over the current content in the form of modal windows
-- Popunders — advertising that opens in a separate window under the current one, when clicked anywhere on the page
-- Redirect advertising — mechanisms which automatically redirect users to another site after clicking
-- Ads disguised as site content, which open pages with promoted products or unrelated content upon clicking
-- Video ads — advertisement videos embedded within video content or in separate ad elements on websites and applications
-- Interactive ads — ads with which users can interact (e.g., games and surveys, upon completion of which the advertised item opens)
-- Interstitial ads — full-screen ads on mobile devices that cover the interface of the app or web browser
-- Ads leftovers that occupy large spaces or stand out against the background and attract visitors' attention (except barely discernible or unnoticeable ones)
-- Anti-adblock advertising — alternative advertising displayed on the site when the main one is blocked
-- Bait elements that are used by multiple known adblock detection scripts to detect an ad blocker presence for different goals including changing the way ads are shown, fingerprinting, etc.
-- Site’s own advertising, if it has been blocked by general filtering rules (see *Limitations and exceptions*)
-- Anti-adblock scripts that prevent site usage (see *Limitations and exceptions*)
-- Advertising injected by malware, if detailed information about its loading method or steps for reproduction is provided
-- Unwanted mining — scripts that mine cryptocurrency without user consent
+- Bannere — reklame vist som billeder på forskellige dele af websider
+- Teasere — tekst- eller grafikannoncer, ofte animerede, designet til at fascinere besøgende (sensationelle overskrifter, opmærksomhedsfangende billeder) og få dem til at klikke på banneret (clickbait)
+- Tekstannoncer — reklame i form af tekst, herunder links
+- Viduesannoncer — reklame, der pludselig vises over aktuelt indhold i form af vinduer, som kræver interaktion
+- Popunders — reklame, der åbner i et separat vindue under det aktuelle, når der klikkes hvor som helst på siden
+- Omdirigeringsreklame — mekanismer, som automatisk omdirigerer brugere til andet websted efter et klik
+- Annoncer forklædt som webstedsindhold, som, når der klikkes, åbner sider med promoverede produkter eller ikke-relateret indhold
+- Videoannoncer — reklamevideoer indlejret i videoindhold eller i separate annonceelementer på websteder og apps
+- Interaktive annoncer — annoncer brugere kan interagere med (f.eks. spil og undersøgelser, hvorefter det annoncerede element åbner)
+- Mellemliggende annoncer — fuldskærmsannoncer på mobilenheder, som dækker appens eller webbrowserens brugerflade
+- Annoncerester, som optager større områder eller skiller sig ud i baggrunden og tiltrækker besøgendes opmærksomhed (undtagen de knapt synlige eller umærkelige)
+- Anti-adblock reklame — alternativ reklame vist på webstedet, når den hovedobjektet blokeres
+- Lokkemadelementer brugt af flere kendte adblockdetekteringsscripts til at detektere en adblocker-tilstedeværelse til forskellige mål, herunder ændring af den måde, annoncer vises på, fingerprinting mv.
+- Webstedets egen reklame såfremt blokeret af generelle filtreringsregler (se *Begrænsninger og undtagelser*)
+- Anti-adblock scripts, som forhindrer webstedsbrug (se *Begrænsninger og undtagelser*)
+- Reklame injiceret af malware, hvis detaljerede oplysninger om dens indlæsningsmetode eller trin til reproduktion er angivet
+- Uønsket mining — scripts, som miner kryptovaluta uden brugersamtykke
 
-### Limitations and exceptions
+### Begrænsninger og undtagelser
 
-- The site’s own advertising should not be deliberately blocked. However, it should not be unblocked if the blocking is caused by general filtering rules
-- Content access measures like paywalls are not blocked by Ad blocking filters. However, they may be blocked by Tracking protection filters if their operation results in a violation of user privacy
-- Anti-adblock walls will be blocked in the following cases:
-    - They aggressively insist on disabling or removing the ad blocker or effectively prevent using the website
-    - They feature incorrect and misleading descriptions of possible consequences of ad blockers’ use
-    - They put visitors at risk of malvertising — when unblocked advertisements come from dubious sources
-    - They violate or negatively impact user privacy
-- We do not block ad blocker detection messages that satisfy at least one of the following criteria:
-    - They allow the usage of the website and do not overlay the significant amount of content
-    - They provide an alternative to disabling an ad blocker given that this alternative does not put the users’ privacy or security at risk
-    - They allow the user to proceed to the website’s content
-    - Some legacy rules may continue to block messages that satisfy one or more of these criteria. If identified, such rules will be handled according to this policy
-- Mining pools are not blocked if they are public and not used solely for malicious purposes
+- Webstedets egen reklame bør ikke bevidst blokeres. Den bør dog ikke afblokeres, hvis blokeringen skyldes generelle filtreringsregler
+- Indholdsadgangsforanstaltninger, såsom betalingsmure, blokeres ikke af adblockingfiltre. De kan dog blive blokeret af sporingsbeskyttelsefiltre, hvis deres operation resulterer i en brugerfortrolighedsovertrædelse
+- Anti-adblock mure blokeres i flg. tilfælde:
+    - Ved aggressiv insisteren på at deaktivere eller fjerne adblockeren eller effektiv forhindring af webstedsbrugen
+    - Ved indehold af forkerte og vildledende beskrivelser af mulige konsekvenser af adblockerbrug
+    - Ved at sætte besøgende i fare for malvertising — når ublokerede reklame stammer fra tvivlsomme kilder
+    - De krænker eller påvirker brugerfortroligheden negativt
+- Vi blokerer ikke adblocker-detekteringsmeddelelser, som opfylder mindst ét af flg. kriterier:
+    - De tillader brugen af webstedet og overlejrer ikke hovedparten af indholdet
+    - De giver et alternativ til deaktivering af en adbloker, såfremt dette alternativ ikke bringer brugernes fortrolighed eller sikkerhed i fare
+    - De lader brugeren fortsætte til webstedsindholdet eller tilbyder en mulig værdiudveksling, der ikke bringer brugerens fortrolighed eller sikkerhed i fare
+    - Visse ældre regler kan dog fortsat blokere meddelelser, som opfylder et eller flere af disse kriterier. Hvis de identificeres, vil sådanne regler blive håndteret i overensstemmelse med denne politik
+- Mining pools blokeres ikke, hvis de er offentlige og ikke udelukkende bruges til ondsindede formål
 
-## Tracking protection filters
+## Sporingsbeskyttelsesfiltre
 
-### Terminology
+### Terminologi
 
-**Tracking** — the process of monitoring and collecting data about users and their interactions with websites and applications for marketing purposes, as well as to obtain telemetry about the functioning of websites or applications for the purpose of analyzing their operation. This process includes tracking visited pages, time spent, interaction with website elements (e.g., clicks, form submissions), and other metrics. It allows website and application owners to better understand user behavior, optimize functionality, and adapt marketing strategies. Tracking is also used to monitor performance, usage patterns, and identify issues, providing developers with the necessary data to improve the stability and quality of the website or application. Even if the data obtained cannot reveal a person’s identity, such actions are still considered tracking.
+**Sporing** — proces, der overvåger og indsamler data om brugere og deres interaktioner med websteder og applikationer til markedsføringsformål, samt for at opnå telemetri om funktionen af websteder eller applikationer med det formål at analysere deres drift. Denne proces omfatter sporing af besøgte sider, tidsforbrug, interaktion med webstedselementer (f.eks. klik, formularindsendelser) og andre målingsdata. Det giver websteds- og applikationsejere mulighed for bedre at forstå brugeradfærd, optimere funktionalitet og tilpasse marketingstrategier. Sporing bruges også til at monitorere ydeevne, brugsmønstre samt problemidentifikation, hvilket giver udviklere de nødvendige data til at forbedre stabiliteten og kvaliteten af webstedet eller applikationen. Selvom de indhentede data ikke kan afsløre en persons identitet, anses sådanne handlinger stadig for sporing.
 
-**Tracker** — software used on a website or in an application and designed to collect information about their operation and visitors’ actions. It tracks user interaction with the website or application, recording data about page views, time spent, clicks, form submissions, and other events. Its purpose is to provide website and application owners with a tool for analyzing user behavior, improving the user experience, and optimizing content and advertising.
+**Tracker** — software, brugt på et websted eller i en applikation, designet til indsamling af oplysninger om deres drift og besøgendes handlinger. Den sporer brugerinteraktion med webstedet eller applikationen, registrerer data om sidevisninger, tidsforbrug, klik, formularindsendelser og andre begivenheder. Dens formål er at give websteds- og applikationsejere et værktøj til at analysere brugeradfærd, forbedre brugeroplevelsen samt optimere indhold og reklame.
 
-**URL tracking parameter** — a part of the address that is added to links by analytics systems or present in some links on web pages. When a request is made, this URL tracking parameter can be processed by the backend of an analytics system or website, which will extract information from it. For example, URL tracking parameters can transmit information about clicks or advertising campaigns. URL tracking parameters can also be used by fraud protection or bot detection systems.
+**URL-sporingsparameter** — del af webadressen føjet til links af analysesystemer eller til stede i visse links på websider. Når der foretages en forespørgsel, kan denne URL-sporingsparameter behandles af en analysesystem- eller websted-backend, der så udtrækker information herfra. URL-sporingsparametre kan f.eks. overføre oplysninger om klik eller annoncekampagner. URL-sporingsparametre kan også bruges af svindelbeskyttelses- eller botdetekteringssystemer.
 
-**Cookies** — files that websites send to and store on devices. These files contain various information — both necessary for the functioning of the site on the device and used for analytics purposes — unique identifiers used to track visitor activity on the website, advertising parameters, and more.
+**Cookies** — filer, som websteder sender til, og gemmer på, enheder. Disse filer indeholder forskellige oplysninger — både nødvendige for, at webstedet fungerer på enheden samt til analyseformål — unikke identifikatorer, som bruges til at spore besøgendes aktivitet på webstedet, reklameparametre mv.
 
-### Filters
+### Filtre
 
-AdGuard tracking protection filters include:
+AdGuard-sporingsbeskyttelsesfiltre omfatter:
 
-- AdGuard Tracking Protection filter
-- AdGuard URL Tracking filter
+- AdGuard Sporingsbeskyttelsesfilter
+- AdGuard Mail Sporingsbeskyttelsesfilter
+- AdGuard URL-sporingsfilter
 
-### The purpose of these filters
+### Formålet med disse filtre
 
-**Tracking Protection filter** is designed to block trackers that collect users’ personal data and to improve users’ privacy.
+**Sporingsbeskyttelsesfilter** er designet til at blokere trackere, som indsamler brugeres personlige data samt til at forbedre brugernes fortrolighed.
 
-What it blocks:
+Hvad der blokeres:
 
-- Analytics systems’ scripts
-- Websites’ and applications’ own tracking scripts
-- Masked CNAME trackers
-- Tracking cookies
-- Tracking pixels
-- Tracking APIs of browsers
-- Detection of the ad blocker for tracking purposes
-- Privacy Sandbox functionality in Google Chrome and its forks used for tracking (Google Topics API, the Protected Audience API)
+- Analysesystemers scripts
+- Websteders og applikationers egne sporingsscripts
+- Maskerede CNAME-trackere
+- Sporingscookies
+- Sporingspixels
+- Webbrowseres sporings-API'er
+- Detektering af adblockeren til sporingsformål
+- Privacy Sandbox-funktionalitet i Google Chrome og dens gafler brugt til sporing (Google Topics API, Protected Audience API)
 
-The **URL Tracking filter** is designed to remove tracking parameters from web addresses
+**URL-sporingsfilteret** er designet til at fjerne sporingsparametre fra webadresser
 
-### Limitations and exceptions
+Filteret **Mail Sporingsbeskyttelse** blokerer sporingspixels indlejret i e-mails for at forhindre afsendere i at monitorere, hvornår beskederne åbnes.
 
-Tracking protection filters should not block a tracker if blocking would disrupt the correct functioning of the website:
+### Begrænsninger og undtagelser
 
-- Anti-bots and fraud protection if it interferes with using the site. For example, with PerimeterX or hCaptcha blocking causes problems when the site attempts to verify its visitor with a captcha
-- Error tracking systems like Sentry or Bugsnag are not blocked
+Sporingsbeskyttelsesfiltre bør ikke blokere en tracker, såfremt blokering vil hindre webstedets korrekte funktion:
 
-## Annoyance filters
+- Anti-bots og svindelbeskyttelse, hvis det forstyrrer brugen af webstedet. F.eks. forårsager blokering med PerimeterX eller hCaptcha problemer, når webstedet forsøger at bekræfte en besøgende med en captcha
+- Fejlsporingssystemer, såsom Sentry eller Bugsnag, blokeres ikke
 
-Annoyance filters are designed to improve the usability of websites by blocking elements on pages that are not advertisements but distract from and interfere with site interaction or content consumption — such as various modal windows and interactive forms, cookie consent notifications and requests, mobile app banners, and various widgets.
+## Irritationsfiltre
 
-### Terminology
+Irritationsfiltre er designet til at forbedre websteders anvendelighed ved på sider at blokere elementer, som ikke er reklamer, men blot distraherer og forstyrrer webstedsinteraktion eller indholdsbrug — såsom forskellige interaktionsvinduer og -formularer, meddelelser og anmodninger om cookiesamtykke, bannere til mobil-apps og forskellige widgets.
 
-**Cookie notice** — a form that describes the types and use of cookies on a website. A cookie notice appears when a user visits the website, informing the user that the website uses cookies or other tracking technologies to collect and use personal information, and explaining why and with whom the information collected is shared.
+### Terminologi
 
-**CMP (Consent Management Platform)** — software that helps websites comply with cookie usage rules. CMPs limit cookies usage until user consent is obtained, providing users with the option to accept certain cookies and manage privacy settings.
+**Cookie-meddelelse** — en formular, der beskriver typen og brugen af cookies på et websted. En cookie-meddelelse vises, når en bruger besøger et websted og informerer denne om, at webstedet bruger cookies eller andre sporingsteknologier til indsamling og brug af personlige oplysninger, samt forklarer, hvorfor og med hvem, de indsamlede oplysninger deles.
 
-**Widget** — a user interface element that extends the functionality of a website. Web widgets are integrated into web pages and can include interactive elements such as buttons, forms, or banners. They can provide users with access to specific services or content without requiring navigation to other pages.
+**CMP (Consent Management Platform)** — software, der hjælper websteder med at overholde reglerne for brug af cookies. CMP'er begrænser brugen af cookies, indtil brugerens samtykke er opnået, hvilket lader brugeren acceptere visse cookies samt håndtere fortrolighedsindstillinger.
 
-**Popup** — a window that appears above the current web page. It is intended to display additional information, advertisements, notifications, or data entry forms. Popups usually block the view of the main content of the page and require user action to close, which can be irritating.
+**Widget** — et brugerfladeelement, der udvider funktionaliteten af et websted. Web-widgets er integreret i websider og kan indeholde interaktive elementer, såsom knapper, formularer eller bannere. De kan give brugere adgang til bestemte tjenester eller indhold uden at skulle navigere til andre sider.
 
-### Filters
+**Popup** — et vindue, der vises over den aktuelle webside. Det er beregnet til at vise yderligere information, annoncer, meddelelser eller dataindtastningsformularer. Pop op-vinduer blokerer normalt sidens hovedindhold og kræver, at brugeren lukker dem, hvilket kan være irriterende.
 
-For better customization, annoyance filters are divided by their purpose:
+### Filtre
 
-- AdGuard Cookie Notices filter
-- AdGuard Popups filter
-- AdGuard Mobile App Banners filter
-- AdGuard Widgets filter
-- AdGuard Other Annoyances filter
-- AdGuard Annoyances filter — a combined filter that includes all 5 specialized annoyance filters
+For bedre tilpasning er irritationsfiltre opdelt jf. efter deres formål:
 
-### The purpose of these filters
+- AdGuard Cookie Notices-filter
+- AdGuard Pop op-filter
+- AdGuard Mobil-app bannerfilter
+- AdGuard Widget-filter
+- AdGuard Andre irritationsfilter
+- AdGuard Irritationsfilter — et kombineret filter indeholdende alle 5 specialiserede irritationsfiltre
 
-#### AdGuard Cookie Notices filter
+### Formålet med disse filtre
 
-This filter is designed to block both cookie notices and requests from cookie management platforms (CMPs). Depending on how a website implements its consent mechanism, different methods may be applied.
+#### AdGuard Cookie Notices-filter
 
-In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when a website requires a cookie decision for certain features or third-party content to work, the filter automatically handles the request using alternative methods.
+Dette filter er designet til at blokere både cookiemeddelelser og anmodninger fra cookiehåndteringsplatforme (CMP'er). Afhængigt af et websteds implementering af sin samtykkemekanisme, kan forskellige metoder anvendes.
 
-Whenever possible, non-essential cookies are declined by default. If this is not technically feasible and consent must be granted for the site to function correctly, the site is additionally reviewed for analytics and tracking technologies, which are then blocked by the **AdGuard Tracking Protection filter**.
+I de fleste tilfælde er det tilstrækkeligt at skjule eller blokere de korresponderende scripts. Når et websted imidlertid kræver en cookie-beslutning, for at bestemte funktioner eller tredjepartsindhold kan fungere, håndterer filteret automatisk forespørgslen via alternative metoder.
 
-**Limitations and exceptions**
+Når det er muligt, afvises uvæsentlige cookies som standard. Er dette ikke teknisk muligt, og samtykke skal tildeles, for at webstedet kan fungere korrekt, gennemgås webstedet desuden for analyserværktøjer og sporingsteknologier, som derefter blokeres af **filteret i AdGuard Sporingsbeskyttelse**.
 
-In some cases, the decision to add rules is made independently by filter developers; mostly, when the choice made when simulating actions would affect the site’s functionality (for example, history may not work, or user settings may not be saved on such a site).
+**Begrænsninger og undtagelser**
 
-#### AdGuard Popups filter
+I nogle tilfælde træffes beslutningen om at tilføje regler uafhængigt af filterudviklere; fortrinsvis, når det foretagne valg ved handlingssimulering ville påvirke webstedsfunktionaliteten (f.eks. at historikken måske ikke fungerer eller brugerindstillingerne måske ikke gemmes på et sådant websted).
 
-This is a filter that blocks various popups on web pages that are not necessary for normal site usage, including but not limited to:
+#### AdGuard Pop op-filter
 
-- Requests for permission to receive push notifications
-- Popups and forms for subscribing to news, promotions, and various events, including third-party channels for receiving them (such as Google News, Telegram)
-- Popups that encourage users to disable ad blocker and violate user’s privacy (at the discretion of the filter developers)
-- Other types of popups that may annoy users (at the discretion of filter developers)
+Dette er et filter, der på websider blokerer forskellige pop op-vinduer, som er unødvendige for normal brug af webstedet, inkl. men ikke begrænset til:
 
-**Limitations and exceptions**
+- Anmodninger om tilladelse til at modtage push-beskeder
+- Pop op-vinduer og formularer til at abonnere på nyheder, kampagner og forskellige begivenheder, herunder tredjepartskanaler til at modtage dem (såsom Google News, Telegram)
+- Pop op-vinduer, som opfordrer brugere til at deaktivere adblockere og krænke brugernes fortrolighed (efter filterudviklernes skøn)
+- Andre typer pop op-vinduer, som kan irritere brugere (efter filterudvikleres skøn)
 
-- Push notifications are only blocked on sites where they are not used for practical purposes. For example, in email web clients or tools used for work purposes, such notifications will not be blocked
-- Some popups that do not fall into the categories described above but still interfere with the user’s experience may be also blocked. For example, registration prompts on a site or popups that introduce the site’s features. The decision is made by filter developers
-- Content access measures that ask the user to pay to access the content must not be circumvented
+**Begrænsninger og undtagelser**
 
-#### AdGuard Mobile App Banners filter
+- Push-meddelelser blokeres kun på websteder, hvor de ikke bruges til praktiske formål. I f.eks. e-mailwebklienter eller værktøjer brugt til arbejdsformål blokeres sådanne meddelelser ikke
+- Visse pop op-vinduer, som ikke falder ind under ovenfor beskrevne kategorier, men som stadig forstyrrer brugerens oplevelse, kan også blive blokeret. F.eks. registreringsprompter på et websted eller pop op-vinduer, som præsenterer webstedets funktioner. Beslutningen træffes af filterudviklere
+- Indholdsadgangsforanstaltninger, som beder brugeren betale for at få adgang til indholdet, må ikke omgås
 
-This is a filter that blocks banners and popups that encourage visitors to install mobile apps.
+#### AdGuard Mobil-app bannerfilter
 
-**Limitations and exceptions**
+Dette er et filter, der blokerer bannere og pop op-vinduer, som opfordrer besøgende til at installere mobil-apps.
 
-Banners located in the headers or in the menus of websites are not blocked if they are not animated and do not occupy a significant portion of usable space. If a banner is located in the footer, the decision is made by filter developers case-by-case. Usually, banners in the footer do not stand out against other elements and are not distracting.
+**Begrænsninger og undtagelser**
 
-#### AdGuard Widgets filter
+Bannere placeret i webstedsoverskrifter eller -menuer blokeres ikke, hvis de ikke er animerede og ikke optager en væsentlig del af den brugbare plads. Er et banner placeret i sidefoden, træffes beslutningen af filterudviklere fra gang til gang. Normalt skiller bannere i sidefoden sig ikke ud fra andre elementer og er ikke distraherende.
 
-This is a filter that blocks various widgets that are not essential for the functioning of websites or for interaction with them:
+#### AdGuard Widget-filter
 
-- Widgets for content recommendations — related articles, similar websites, various personalized recommendations
-- Chat widgets that are not integrated with the content and are not the main content of the page
-- Marketing widgets:
-    - Chats for communication with assistants or bots
-    - Widgets with product recommendations that are shown to the user
-    - Call-back forms
-- Other widgets that do not have a separate category but may visually clutter the page. For example, weather widgets, currency exchange rates, job listings, and donations
+Dette er et filter, der blokerer forskellige widgets, som ikke er afgørende for hverken webstedsfunktion eller interaktion:
 
-**Limitations and exceptions**
+- Widgets til indholdsanbefalinger — relaterede artikler, lign. websteder, forskellige personlige anbefalinger
+- Chat-widgets, som ikke er integreret med indholdet og ikke er hovedindholdet på siden
+- Markedsførings-widgets:
+    - Chats til kommunikation med assistenter eller bots
+    - Widgets med produktanbefalinger vist for brugeren
+    - Tilbagekaldsformularer
+- Andre widgets uden nogen separat kategori, men som visuelt kan gøre siden rodet. F.eks. vejr-widgets, valutakurser, jobannoncer og donationer
 
-This filter doesn’t block:
+**Begrænsninger og undtagelser**
 
-- Widgets closely related to the content of the page, such as comments sections, live chat streams, with an exception of unmoderated chats on sites with unofficial streams, which are often filled with spam and similar content
-- Widgets for self-promotion and site-specific promotional activities
-- Donation widgets, except the cases where they occupy a significant portion of the page and stand out prominently against the content. The decision to block is made by filter developers
+Dette filter blokerer ikke:
 
-#### AdGuard Other Annoyances filter
+- Widgets tæt relateret til sideindholdet, såsom kommentarsektioner, live chat-streams, undtagen umodererede chats på websteder med uofficielle streams, som ofte er fyldt med spam og lign. indhold
+- Widgets til selvpromovering og webstedspecifikke, salgsfremmende aktiviteter
+- Donations-widgets, undtagen de tilfælde, hvor de optager en betydelig del af siden og skiller sig mærkbart ud fra det øvrige indhold. Blokeringsbeslutningen træffes af filterudviklere
 
-This filter is designed to block annoying elements that are not included in other filters, as well as to apply various tweaks. It’s purpose is to:
+#### AdGuard Andre irritationsfilter
 
-- Block self-promotion of websites (any type of advertising promoting goods or services owned by the site owner, without receiving commercial compensation from a third party), if it is considered an annoying element
-- Block annoying elements that are not included in other categories
-- Unblock actions on the page, such as opening the context menu, selecting and copying text, if they are blocked
-- Speed up countdown timers when loading files from websites, if the check is not controlled by the server or is not hindered
-- Apply various rules that may be useful for filter developers. For example, blocking web debugger detection
+Dette filter er designet til at blokere irriterende elementer ikke inkluderet i andre filtre, samt til at anvende forskellige tilpasninger. Dets formål er at:
 
-**Limitations and exceptions**
+- Blokere webstedsselvpromovering (enhver form for reklame, der promoverer varer/tjenester ejet af webstedsejeren, uden at modtage kommerciel kompensation fra en tredjepart), hvis det anses for at være et irriterende element
+- Blokere irriterende elementer ikke inkluderet i andre kategorier
+- Afblokere handlinger på siden, såsom at åbne kontekstmenuen, vælge og kopiere tekst, hvis de er blokeret
+- Accelerere nedtællingstimere ved indlæsning af filer fra websteder, hvis tjekket ikke styres af serveren eller ikke hindres
+- Anvende forskellige regler, som kan være nyttige for filterudviklere. F.eks. blokering af webfejlretningsdetektering
 
-This filter may contain rules that are not suitable for all users. Sometimes it is recommended to disable this filter. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
+**Begrænsninger og undtagelser**
 
-## Social media filters
+Dette filter kan indeholde regler, som ikke er egnede for alle brugere. I visse tilfælde anbefales det at deaktivere dette filter. Beslutninger om at føje regler til dette filter træffes af filterudviklere på en regel-for-regel basis.
 
-### Filters
+## Sociale medier-filtre
 
-AdGuard Social Media filters include:
+### Filtre
 
-- AdGuard Social Media filter
+AdGuard Social Media-filtre omfatter:
 
-### The purpose of these filters
+- AdGuard Social Media-filter
 
-This filter will block social media widgets on third-party websites, such as “Like” and “Share” buttons, group widgets, recommendations, and similar widgets.
+### Formålet med disse filtre
 
-### Limitations and exceptions
+Dette filter blokerer sociale medier-widgets, såsom "Like"- og "Del"-knapper, gruppe- og anbefalings-widgets o.lign., på tredjepartswebsteder.
 
-Widgets that are part of the website’s functionality or content, such as comments, embedded posts, polls, as well as social media login widgets, are not blocked. Links to the website’s social media pages are also not blocked.
+### Begrænsninger og undtagelser
 
-## Other filters
+Widgets, som er en del af webstedsfunktionaliteten eller -indholdetet, såsom kommentarer, indlejrede indlæg, afstemninger, samt login-widgets til sociale medier, blokeres ikke. Links til webstedets sociale medier-sider blokeres heller ikke.
 
-This group contains filters that are not essential for blocking advertisements.
+## Andre filtre
 
-### Terminology
+Denne gruppe indeholder filtre, som ikke er essentielle for at blokere annoncer.
 
-**Contextual advertising** is a type of internet advertising where the advertisement is displayed based on the content, selected audience, location, time, or other context of internet pages.
+### Terminologi
 
-**Search advertising** is a subclass of contextual advertising where ads are displayed based on the visitor's search query.
+**Kontekstuel reklame** er en type internetreklame, hvor reklamen vises baseret på indhold, udvalgt målgruppe, sted, tidspunkt eller anden kontekst på internetsider.
 
-**Self-promotion of websites** refers to the banners of a website promoting goods and services owned by the site owner, for which they do not receive compensation from third parties.
+**Søgereklame** er en underklasse af kontekstuel reklame, hvor reklamer vises baseret på den besøgendes søgeforespørgsel.
 
-For more details on these types of advertising, refer to the [article on search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
+**Selvpromovering af websteder** henviser til bannere på et websted, som promoverer varer og tjenester ejet af webstedsejeren, og som der ikke modtages kompensation for fra tredjeparter.
 
-### Filters
+Se [artiklen om søgeannoncer](https://adguard.com/kb/general/ad-filtering/search-ads/) for flere detaljer om disse annoncetyper.
 
-- Filter unblocking search ads and self-promotion
-- AdGuard DNS filter
-- AdGuard Experimental filter
+### Filtre
 
-### The purpose of these filters
+- Filter, der afblokerer søgeannoncer og selvpromovering
+- AdGuard DNS-filter
+- AdGuard Experimental-filter
 
-#### Filter unblocking search ads and self-promotion
+### Formålet med disse filtre
 
-This filter unblocks:
+#### Filter, der afblokerer søgeannoncer og selvpromovering
 
-- Contextual advertising in search results when using search engines (such as Google, Bing, Yandex, DuckDuckGo)
-- Self-promotion of websites
+Dette filter afblokerer:
 
-**Limitations and exceptions**
+- Kontekstuel annoncering i søgeresultater ved brug af søgemaskiner (såsom Google, Bing, Yandex, DuckDuckGo)
+- Webstedsselvpromovering
 
-- Search advertising is unblocked only if it corresponds to the user’s search query, as it is contextual. Otherwise, the advertising remains blocked
-- Self-promotion is unblocked only if it complies with the filter policy. A request for unblocking may be rejected by filter developers
-- Any other advertising will not be unblocked
+**Begrænsninger og undtagelser**
 
-#### AdGuard DNS filter
+- Søgereklame afblokeres kun, hvis den svarer til brugerens søgeforespørgsel, da den er kontekstuel. Ellers forbliver reklamen blokeret
+- Selvpromovering afblokeres kun, hvis den overholder filterpolitikken. En anmodning om afblokering kan afvises af filterudviklere
+- Enhver anden reklame afblokeres ikke
 
-This filter is used in AdGuard DNS. It is not a replacement for ad-blocking filters.
+#### AdGuard DNS-filter
 
-**Limitations and exceptions**
+Dette filter bruges i AdGuard DNS. Det er ikke en erstatning for adblockingfiltre.
 
-Same as for ad-blocking filters.
+**Begrænsninger og undtagelser**
 
-#### AdGuard Experimental filter
+Samme som for adblockingfiltre.
 
-This filter is intended for testing and debugging rules that potentially may break websites’ functionality. Rules are added by filter developers when there’s a need to test a particular solution. As the filter is designed for debugging purposes, its limitations are minimal.
+#### AdGuard Experimental-filter
 
-**Limitations and exceptions**
+Dette filter er beregnet til aftestning af og fejlfinding i regler, som potentielt kan ødelægge webstedsfunktionalitet. Regler tilføjes af filterudviklere ved behov for aftestning af en bestemt løsning. Da filteret er designet til fejlsøgningsformål, er dets begrænsninger minimale.
 
-- Rules should not intentionally break websites’ functionality
-- Rules should not unblock advertisements or otherwise violate the Policy
+**Begrænsninger og undtagelser**
+
+- Regler bør ikke tilsigtet bryde webstedsfunktionaliteten
+- Regler bør ikke afblokerer reklamer eller på anden måde overtræde politikken
+
+## Sådan bestrides en blokeringsregel
+
+AdGuard-filterlister vedligeholdes ikke kun af AdGuard-teamet, men også af fællesskabsbidragsydere. Anses en blokeringsregel for at overtræde de principper, som er beskrevet i denne filterpolitik, kan dem bestrides ved at oprette en problematik på GitHub.
+
+Før indsendelse af en indsigelse, sørg for at have gennemlæst denne politik grundigt. Ved gennemgant af anmeldelsen vil filtervedligeholdere vurdere, om reglen overholder de ovenfor beskrevne kriterier, så din forklaring bør henvise til denne politik, når det er muligt.
+
+### Sådan indsendes en indsigelse
+
+En indsigelse kan indsendes ved brug af [vores anmeldelsesværktøj](https://reports.adguard.com/new_issue.html). Se trin-for-trin-vejledningen i vores [dedikerede artikel](https://adguard.com/kb/guides/report-website/).
+
+Alternativt kan anmeldelse ske via GitHub:
+
+1. Gå til [AdGuard Filters GitHub-repo](https://github.com/AdguardTeam/AdguardFilters/issues) og opret en ny problematik.
+2. Vælg skabelonen **Anmeld et problem med AdGuard**.
+3. Udfyld skabelonen med så mange opkysninger som muligt.
+
+Anmeldelsen bør indeholde:
+
+- URL til det berørte websted.
+- En klar beskrivelse af, hvad der blokeres.
+- Blokeringsreglen, såfremt den relevante regel er kendt.
+- Trin til genskabelse af problemet.
+- Skærmfotos eller anden dokumentation, der, om muligt, illustrerer problemet.
+- En detaljeret forklaring af, **hvorfor reglen ikke anses for at overholde denne filterpolitik**. Henvis, når muligt, til det relevante afsnit eller princip i politikken, som reglen angiveligt overtræder.
+
+### Hvad kendetegner en god indsigelse?
+
+Blot at angive uenighed med en blokeringsregel, er normalt ikke nok. For at hjælpe vedligeholdere med at vurdere anmeldelsen, forklar hvorfor reglen er i konflikt med blokeringspolitikken, fremfor hvorfor man personligt ville foretrække en anden adfærd.
+
+Menes f.eks. at en regel blokerer indhold, som ikke bør blokeres under denne politik, beskriv da, hvilket politikkriterium der gælder, og hvordan reglen ikke opfylder det. Jo mere specifik og velunderbygget anmeldelsen er, desto nemmere vil det være for vedligeholdere at gennemgå anmodningen og afgøre, hvorvidt reglen bør ændres.

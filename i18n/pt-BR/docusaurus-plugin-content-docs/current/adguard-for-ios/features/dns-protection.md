@@ -23,7 +23,7 @@ Para poder gerenciar as configurações de DNS, os aplicativos AdGuard exigem o 
 
 Esta seção tem duas opções: AdGuard e implementação nativa. Basicamente, esses são dois métodos de configuração de DNS.
 
-Na implementação nativa, o DNS é gerenciado pelo sistema e não pelo aplicativo. Isso significa que o AdGuard não precisa criar uma VPN local. Infelizmente, isso não te ajudará a contornar as restrições do sistema e usar o AdGuard junto com outros aplicativos baseados em VPN. Se alguma VPN estiver habilitada, o DNS nativo será ignorado. Consequentemente, você não poderá filtrar o tráfego localmente nem usar nosso novo [protocolo DNS-over-QUIC (DoQ)] (https://adguard.com/en/blog/dns-over-quic.html).
+Na implementação nativa, o DNS é gerenciado pelo sistema e não pelo aplicativo. Isso significa que o AdGuard não precisa criar uma VPN local. Infelizmente, isso não te ajudará a contornar as restrições do sistema e usar o AdGuard junto com outros aplicativos baseados em VPN. Se alguma VPN estiver habilitada, o DNS nativo será ignorado. Consequently, you won't be able to filter traffic locally or to use our brand new [DNS-over-QUIC protocol (DoQ)](https://adguard-dns.io/blog/dns-over-quic.html).
 
 ### Servidores DNS {#dns-servers}
 

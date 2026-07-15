@@ -11,19 +11,17 @@ Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakk
 
 İzleme korumasının\* amacı, hassas kişisel verilerinizi çevrimiçi izleyicilerden ve dolandırıcılardan korumaktır. MV3'ü destekleyen Chromium tabanlı tarayıcılar ile MV2'yi destekleyen Chromium tabanlı olmayan tarayıcılar arasında izleme koruması özelliklerinde küçük farklılıklar vardır.
 
-![Tracking protection in Chromium-based browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv3_trackingProtection.png)
-
-Chromium tabanlı tarayıcılarda _İzleme koruması_
-
-![Chromium tabanlı olmayan tarayıcılarda İzleme koruması \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv2_trackingProtection.png)
+_Tracking protection_ in Chromium-based browsers
+![Tracking protection in Chromium-based browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
 
 _Tracking protection_ in non-Chromium browsers
+![Tracking protection in non-Chromium browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv2.png)
 
-_İzleme koruması_ özellikleri, sitelerin internette onları bulmak için kullandığınız arama sorgusunu görmesini önler, üçüncü taraf ve site çerezlerini otomatik olarak siler ve daha fazlasını yapar. A [separate article](/general/stealth-mode) is devoted to all these features.
+_Tracking protection_ features prevent websites from seeing the search query you used to find them on the Internet, automatically delete third-party and website cookies, and more. A [separate article](/general/stealth-mode) is devoted to all these features.
 
 :::note
 
-Tarayıcı uzantıları belirli bir tarayıcıyla sınırlıdır ve o tarayıcının teknik kısıtlamalarına tabidir. Bu sebeple, tam teşekküllü reklam engelleme uygulamalarında bulunan tüm izleme koruma özelliklerini sunamazlar.
+Browser extensions are limited to a specific browser and are subject to its technical restrictions. Therefore, they cannot offer all the tracking protection features available in full-fledged ad-blocking apps.
 
 :::
 

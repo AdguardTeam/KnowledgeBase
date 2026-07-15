@@ -7,7 +7,7 @@ Wenn die AdGuard Browsererweiterung in Opera weder automatisch noch manuell Werb
 
 Um die erforderliche Berechtigung zu erteilen:
 
-![Zugriff auf Suchergebnisseiten zulassen](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/allow-access.png)
+![Zugriff auf Suchergebnisseiten zulassen](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/opera_allow_search.png)
 
 1. Klicken Sie auf das Würfelsymbol neben der Adressleiste → _Erweiterungen verwalten ..._.
 2. Suchen Sie AdGuard Werbeblocker in der Liste der installierten Erweiterungen und aktivieren Sie das Kontrollkästchen neben _Zugriff auf Webseiten mit Suchergebnissen zulassen_.

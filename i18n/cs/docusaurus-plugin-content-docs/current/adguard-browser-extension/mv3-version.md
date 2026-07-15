@@ -21,19 +21,19 @@ Staré beta rozšíření bude přejmenováno na [**Blokátor reklam AdGuard MV2
 
 - **Záznam filtrování**
 
-  ![Filtering log \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+  ![Filtering log \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/filtering_log.png)
 
   Vzhledem k omezením DNR nemůžeme přesně ukázat, které pravidlo fungovalo, ale uvedeme "předpokládané pravidlo, které bylo spuštěno" na základě našeho enginu. Chcete-li získat přesné informace, musíte si "rozbalenou" formu rozšíření nainstalovat do prohlížeče sami. Podrobný návod, jak to provést, najdete v [samostatném článku](/adguard-browser-extension/solving-problems/debug-rules/).
 
 - _Ochrana před sledováním_ (dříve známá jako _Režim utajení_)
 
-  ![Tracking protection \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+  ![Tracking protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
 
   Neexistuje sekce _Cookies_ spolu s _Samozničení vlastních cookies_ a _Samozničení cookies třetích stran_, protože nelze nastavit TTL cookies pomocí deklarativních pravidel.
 
 - _Ochrana proti phishingu a malwaru_ již není v obecném nastavení k dispozici. Chcete-li se chránit před škodlivými webovými stránkami a podvody, zapněte příslušné filtry _Zabezpečení_ na kartě _Filtry_.
 
-  ![Security \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![Security \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/security_filters.png)
 
 ## Omezení
 

@@ -9,18 +9,16 @@ Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement 
 
 :::
 
-[L'Extension de navigateur AdGuard] (https://adguard.com/adguard-browser-extension/overview.html) est une extension gratuite qui fonctionne dans cinq navigateurs populaires : Chrome, Firefox, Edge, Opera et Yandex Browser. Vous pouvez la trouver facilement dans la boutique en ligne de votre navigateur ou sur notre site officiel.
+[L'Extension de navigateur AdGuard] (https://adguard.com/adguard-browser-extension/overview.html) est une extension gratuite qui fonctionne dans cinq navigateurs populaires : Chrome, Firefox, Edge, Opera et Yandex Browser. You can find and install it via your browser’s web store or download it from our official website.
 
 ! [Extension de navigateur AdGuard pour Chrome \*border] (https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
-Les extensions de navigateur incluent des fonctionnalités de blocage des publicités de base, mais ne peuvent pas être comparées aux programmes de bureau complets, tels que [AdGuard pour Windows](/adguard-for-windows/features/home-screen) et [AdGuard pour Mac](/adguard-for-mac/features/main).
-
-![Disponible pour la plupart des navigateurs populaires \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
+![Available for most popular browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/extension_for_browsers.png)
 
 :::note
 
-Nous avons une extension autonome pour Safari. Depuis la sortie de [Safari 13] (https://adguard.com/en/blog/adguard-safari-1-5.html), la plupart des extensions de blocage des publicités ont connu d'énormes problèmes et nombre d'entre elles ont cessé de fonctionner. Nous avons dû développer une [extension séparée pour Safari](/adguard-for-safari/features/general) qui présente quelques différences par rapport à l'extension décrite dans cet article.
+We have a standalone extension for Safari [AdGuard Mini for Mac](/adguard-mini-for-mac/) (formerly AdGuard for Safari). Due to the unique architecture and strict requirements of Safari’s extension framework, it was developed as a separate application and has some functional differences compared to the extension described in this article.
 
 :::
 
-**N'oubliez pas que la fonctionnalité de chaque extension est strictement limitée par les capacités du navigateur.** Donc, si vous souhaitez une protection complète, envisagez d'installer un programme autonome sur votre ordinateur. Il y a [une raison à cela](/adguard-browser-extension/comparison-standalone).
+**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** While extensions provide essential ad-blocking features, they cannot match the system-wide capabilities of desktop programs like [AdGuard for Windows](/adguard-for-windows/) and [AdGuard for Mac](/adguard-for-mac/). If you are looking for comprehensive protection that goes beyond the browser, you can read more about the [benefits of standalone apps](/adguard-browser-extension/comparison-standalone).

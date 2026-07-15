@@ -9,12 +9,16 @@ Questo articolo riguarda l'Estensione per browser di AdGuard, che protegge solo 
 
 :::
 
-La pagina principale dell'estensione è accessibile cliccando l'icona dell'estensione nella barra degli strumenti del tuo browser.
+The extension’s main page can be accessed by clicking its icon on your browser’s toolbar.
 
-![Menu principale \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Main menu \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/main_popup_mv2.png)
 
-Nella pagina principale, puoi nascondere qualsiasi elemento in qualsiasi pagina, manualmente (sarà aggiunta una regola corrispondente alle _Regole utente_), aprire il _Registro di filtraggio_ per vedere le informazioni complete sul traffico del tuo browser e le richieste di blocco al volo, o dare un'occhiata al rapporto di sicurezza di un sito web. Inoltre, puoi inviare un reclamo su qualsiasi sito web (ad esempio, se alcune inserzioni nella pagina non sono bloccate, i nostri ingegneri di filtraggio revisioneranno il rapporto e risolveranno il problema) e vedere le statistiche sulle regole di bloccaggio applicate.
+From the main page, you can manage your protection and access key features:
 
-Tutte le richieste web effettuate dal browser sono registrate nel _Registro di filtraggio_, insieme a informazioni dettagliate su ogni richiesta. Il _Registro di filtraggio_ semplifica, ad esempio, il monitoraggio delle richieste bloccate dall'estensione di browser AdGuard. Inoltre, ti consente di bloccare qualsiasi richiesta o di aggiungere una richiesta bloccata in precedenza alla lista consentita, in due click. Inoltre, il _Registro di filtraggio_ ti offre numerose opzioni per ordinare le richieste web, il che può essere utile creando le tue regole di filtraggio. Puoi aprire il _Registro di filtraggio_ selezionando la voce corrispondente nel menu principale, o dalla pagina delle impostazioni (nella scheda _Impostazioni aggiuntive_).
+- Manually hide any element on a webpage (a custom rule will be automatically added to your _User rules_)
+- Open _Filtering log_ to view detailed information about your browser’s traffic and block requests on the fly
+- Submit a complaint about missed ads or broken page elements so our filter engineers can review and fix the issue
+- Check a website’s security report
+- See statistics on all blocked elements
 
-Cliccando le icone in alto a destra nel menu' principale dell'estensione puoi aprire le impostazioni dell'estensione o interrompere la protezione.
+By clicking the icons in the top-right corner of the extension’s main menu, you can manually update filters, pause protection, or open the extension settings.

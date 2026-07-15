@@ -9,7 +9,7 @@ sidebar_position: 5
 
  1. Go to your [AdGuard account](https://adguardaccount.com).
  1. Выберите *Лицензии*.
- 1. Нажмите *Отменить подписку* под подпиской, которая вам больше не нужна. ![Отменить](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
+ 1. Click *Cancel auto-renewal* below the subscription you no longer need. ![Отменить](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub-upd.png)
 
  Отменённой подпиской можно продолжать пользоваться, пока не закончится срок её действия.
 

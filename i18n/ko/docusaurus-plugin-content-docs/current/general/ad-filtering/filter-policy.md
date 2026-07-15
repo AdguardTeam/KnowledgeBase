@@ -111,6 +111,7 @@ AdGuard 광고 차단 필터에는 다음이 포함됩니다.
 AdGuard 추적 보호 필터에는 다음이 포함됩니다.
 
 - AdGuard 추적 보호 필터
+- AdGuard Mail Tracking Protection filter
 - AdGuard URL 추적 필터
 
 ### 이러한 필터의 목적
@@ -129,6 +130,8 @@ What it blocks:
 - Google 크롬의 개인정보 보호 샌드박스 기능 및 추적에 사용되는 포크(Google 토픽 API, 보호 대상 API)
 
 **URL 추적 필터**는 웹 주소에서 추적 매개 변수를 제거하도록 설계되었습니다.
+
+**메일 추적 보호 필터**는 이메일에 삽입된 추적 픽셀을 차단하여 발신자가 메시지 열람 여부를 모니터링하는 것을 방지합니다.
 
 ### 제한 및 예외
 
@@ -300,3 +303,34 @@ This filter is intended for testing and debugging rules that potentially may bre
 
 - Rules should not intentionally break websites’ functionality
 - Rules should not unblock advertisements or otherwise violate the Policy
+
+## How to dispute a blocking rule
+
+AdGuard filter lists are maintained not only by the AdGuard team but also by community contributors. If you believe a blocking rule violates the principles described in this filter policy, you can dispute it by opening an issue on GitHub.
+
+Before submitting a dispute, please make sure you have read this policy carefully. When reviewing your report, filter maintainers will evaluate whether the rule complies with the criteria described above, so your explanation should refer to this policy whenever possible.
+
+### How to submit a dispute
+
+You can submit a dispute by using [our report tool](https://reports.adguard.com/new_issue.html). See the step-by-step guide in our [dedicated article](https://adguard.com/kb/guides/report-website/).
+
+Alternatively, you can report it via GitHub:
+
+1. Go to the [AdGuard Filters GitHub repository](https://github.com/AdguardTeam/AdguardFilters/issues) and create a new issue.
+2. Select the **Report an issue using AdGuard** issue template.
+3. Fill out the template with as much detail as possible.
+
+Your report should include:
+
+- The URL of the affected website.
+- A clear description of what is being blocked.
+- The blocking rule, if you know which one is responsible.
+- Steps to reproduce the issue.
+- Screenshots or other evidence that illustrate the problem, if applicable.
+- A detailed explanation of **why you believe the rule does not comply with this filter policy**. Whenever possible, refer to the relevant section or principle of the policy that you believe the rule violates.
+
+### What makes a good dispute?
+
+Simply stating that you disagree with a blocking rule is usually not enough. To help maintainers evaluate your report, explain why the rule conflicts with the blocking policy rather than why you personally would prefer different behavior.
+
+For example, if you believe a rule blocks content that should not be blocked under this policy, describe which policy criterion applies and how the rule fails to meet it. The more specific and well-supported your report is, the easier it will be for maintainers to review your request and determine whether the rule should be changed.

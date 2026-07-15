@@ -57,6 +57,10 @@ sidebar_position: 9
 
 `true로` 설정하면 HTTPS 인증서 해지 확인을 사용하도록 설정합니다.
 
+#### `network.http.compress.body`
+
+Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering engine, will compress the HTTP response body before sending it with the original response algorithm (if supported) or with the default fallback algorithm (GZip). Responses from BrowserApi will also be encoded if this option is enabled.
+
 #### `network.tcp.keepalive.enabled`
 
 유휴 연결을 통해 주기적으로 TCP 패킷을 전송하여 연결이 활성 상태로 유지되도록 하고 NAT 시간 제한을 갱신합니다.

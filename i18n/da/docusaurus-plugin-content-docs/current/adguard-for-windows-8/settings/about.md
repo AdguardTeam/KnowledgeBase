@@ -1,5 +1,5 @@
 ---
-title: About
+title: Om
 sidebar_position: 4
 ---
 

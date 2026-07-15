@@ -9,66 +9,59 @@ Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze v
 
 :::
 
-## Jak nainstalovat Rozšíření prohlížeče AdGuard pro Google Chrome nebo Chromium
+## How to install AdGuard Browser Extension in different browsers
 
-Otevřete stránku s rozšířením v [Internetovém obchodě Chrome](https://agrd.io/extension_chrome) a klikněte na *Přidat do Chromu*.
+- [Chrome-based browsers](#chrome-based)
+- [Opera](#opera)
+- [Firefox](#firefox)
+- [Yandex Browser](#yandex)
+- [Microsoft Edge](#edge)
+- [Safari](#safari)
 
-![AdGuard Browser Extension in Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome.png)
+### Chrome and Chromium-based browsers {#chrome-based}
 
-V otevřeném dialogovém okně klikněte na *Přidat rozšíření*.
+Open the extension’s page in the [Chrome Web Store](https://agrd.io/extension_chrome) and click *Add to Chrome*.
 
-![Dialog box in Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome1.png)
+![AdGuard Browser Extension in the Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/chrome_install.png)
 
-## Jak nainstalovat Rozšíření prohlížeče AdGuard pro Operu
+In the opened dialog, click *Add extension*.
 
-Otevřete stránku [addons.opera.com](https://agrd.io/extension_opera).
+![Dialog box in the Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_extension_chrome.png)
 
-![AdGuard Browser Extension in Opera addons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_opera.png)
+### Opera {#opera}
 
-Klikněte na *Přidat do Opery*.
+Open the page [addons.opera.com](https://agrd.io/extension_opera) and click *Add to Opera*.
 
-## Jak nainstalovat Rozšíření prohlížeče AdGuard pro Firefox
+![AdGuard Browser Extension in Opera addons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/opera_install.jpg)
 
-Otevřete stránku [addons.mozilla.org](https://agrd.io/extension_firefox).
+### Firefox {#firefox}
 
-![AdGuard Browser Extension in Firefox add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_firefox.png)
+Open the page [addons.mozilla.org](https://agrd.io/extension_firefox) and click *Add to Firefox*.
 
-Klikněte na *Přidat do Firefoxu*.
+![AdGuard Browser Extension in Firefox add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/mozilla_install.png)
 
-## Jak nainstalovat Rozšíření prohlížeče AdGuard pro Yandex Browser
+### Yandex Browser {#yandex}
 
-Klikněte na tlačítko Nastavení prohlížeče v pravém horním rohu a v rozevírací nabídce vyberte *Doplňky*.
+Click the browser settings button in the upper right corner of the browser, choose *Extensions* → *Online safety*, find AdGuard, and click *Install*.
 
-Přejděte dolů, vyhledejte AdGuard a klikněte na *Instalovat*.
+![AdGuard Browser Extension in Yandex Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/yandex_install.png)
 
-![AdGuard Browser Extension in Yandex Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_yandex.png)
+### Microsoft Edge {#edge}
 
-## Jak nainstalovat Rozšíření prohlížeče AdGuard pro Microsoft Edge
+Go to the [Edge Add-ons store](https://agrd.io/extension_edge) page and click *Get*.
 
-Vyhledejte Rozšíření prohlížeče AdGuard v obchodě [Doplňky Microsoft Edge](https://agrd.io/extension_edge) a klikněte na *Získat*.
+![AdGuard Browser Extension in Edge Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/edge_install.png)
 
-![AdGuard Browser Extension in Edge Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge.png)
+In the opened dialog window, click *Add extension*.
 
-V otevřeném dialogovém okně stiskněte *Přidat rozšíření*.
+![Edge dialog window *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_adguard_in_edge.png)
 
-![Edge dialog window *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge1.png)
+Alternatively, you can install AdGuard Browser Extension for Edge from the [Chrome Web Store](https://agrd.io/extension_chrome). Open its webpage in your Edge browser and click *Get extension*.
 
-Případně si můžete nainstalovat Rozšíření prohlížeče AdGuard pro Edge z [Internetového obchodu Chrome](https://agrd.io/extension_chrome). Otevřete jeho webovou stránku v prohlížeči Edge a vyberte možnost *Povolit rozšíření z jiných obchodů* na banneru v horní části stránky.
+![Chrome extensions in Edge *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_chrome_store_in_edge.png)
 
-![Edge banner on the Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/edge_banner.jpg)
+In the opened dialog, click *Add extension*.
 
-V otevřeném dialogovém okně klikněte na *Povolit*.
+### Safari {#safari}
 
-![Edge dialog box "Allow extensions from other web stores"](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_from_stores.jpg)
-
-Klikněte na *Přidat do Chromu*.
-
-![Add to Chrome button *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_chrome.jpg)
-
-V otevřeném dialogovém okně klikněte na *Přidat rozšíření* a nainstalujte Rozšíření prohlížeče AdGuard.
-
-![Add to Edge button](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_edge.jpg)
-
-## Jak nainstalovat Rozšíření prohlížeče AdGuard pro Safari
-
-AdGuard pro Safari není rozšířením prohlížeče v běžném slova smyslu. Více si o něm můžete přečíst ve [vyhrazeném článku](/adguard-for-safari/features/general). Nebo si můžete [stáhnout instalační soubor](https://agrd.io/safari_release) přímo z této stránky.
+AdGuard Mini for Mac (formerly AdGuard for Safari) is not a traditional browser extension. It was specifically built to comply with Apple’s strict content blocking limitations. For more details, you can read the [dedicated article](/adguard-mini-for-mac/). Or you can [download AdGuard Mini for Mac](https://agrd.io/mini_mac) directly from this page.
