@@ -11,7 +11,7 @@ Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze v
 
 Při přidávání vlastního filtru nebo uživatelského pravidla se zobrazí oznámení s žádostí o povolení režimu pro vývojáře, abyste mohli tyto funkce v rozšíření používat.
 
-![Notification \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/notification-allow-user-scripts.jpg)
+![Notification \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/userscripts_api_restrictions.png)
 
 Od verze 5.2 používá rozšíření prohlížeče AdGuard rozhraní API uživatelských skriptů. Chrome vyžaduje, aby toto nové rozhraní API dodržovalo osvědčené postupy pro bezpečnost uživatelů.
 

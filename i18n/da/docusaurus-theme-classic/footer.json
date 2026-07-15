@@ -4,7 +4,7 @@
     "description": "The title of the footer links column with title=adguard in the footer"
   },
   "link.title.products": {
-    "message": "Products",
+    "message": "Produkter",
     "description": "The title of the footer links column with title=products in the footer"
   },
   "link.title.support": {
@@ -12,31 +12,31 @@
     "description": "The title of the footer links column with title=support in the footer"
   },
   "link.title.license": {
-    "message": "License",
+    "message": "Licens",
     "description": "The title of the footer links column with title=license in the footer"
   },
   "link.item.label.official_website": {
-    "message": "Official website",
+    "message": "Officielt websted",
     "description": "The label of footer link with label=official_website linking to https://adguard.com"
   },
   "link.item.label.about": {
-    "message": "About",
+    "message": "Om",
     "description": "The label of footer link with label=about linking to https://adguard.com/contacts.html"
   },
   "link.item.label.support_center": {
-    "message": "Support Center",
+    "message": "Supportcenter",
     "description": "The label of footer link with label=support_center linking to https://adguard.com/support.html"
   },
   "link.item.label.how_to_create_your_own_ad_filter": {
-    "message": "How to create your own ad filter",
+    "message": "Sådan oprettes eget annoncefilter",
     "description": "The label of footer link with label=how_to_create_your_own_ad_filter linking to /general/ad-filtering/create-own-filters"
   },
   "link.item.label.adguard_ad_filters": {
-    "message": "AdGuard Ad Filters",
+    "message": "AdGuard Annoncefiltre",
     "description": "The label of footer link with label=adguard_ad_filters linking to /general/ad-filtering/adguard-filters"
   },
   "link.item.label.removal_instructions": {
-    "message": "Removal Instructions",
+    "message": "Vejledning til fjernelse",
     "description": "The label of footer link with label=removal_instructions linking to https://adguard.com/removal.html"
   },
   "link.item.label.userscripts": {
@@ -44,19 +44,19 @@
     "description": "The label of footer link with label=userscripts linking to /general/extensions"
   },
   "link.item.label.purchase_license": {
-    "message": "Purchase License",
+    "message": "Køb licens",
     "description": "The label of footer link with label=purchase_license linking to https://adguard.com/license.html"
   },
   "link.item.label.recover_license": {
-    "message": "Recover License",
+    "message": "Gendan licens",
     "description": "The label of footer link with label=recover_license linking to /general/license/what-is"
   },
   "link.item.label.terms_of_sale": {
-    "message": "Terms of sale",
+    "message": "Salgsbetingelser",
     "description": "The label of footer link with label=terms_of_sale linking to https://adguard.com/terms-of-sale.html"
   },
   "link.item.label.get_free_license": {
-    "message": "Get Free License",
+    "message": "Få Gratis licens",
     "description": "The label of footer link with label=get_free_license linking to https://adguard.com/get-adguard-for-free.html"
   },
   "link.item.label.blog": {
@@ -64,39 +64,39 @@
     "description": "The label of footer link with label=blog linking to https://adguard.com/blog/index.html"
   },
   "link.item.label.discuss": {
-    "message": "Discuss",
+    "message": "Drøft",
     "description": "The label of footer link with label=discuss linking to https://adguard.com/discuss.html"
   },
   "link.item.label.support_adguard": {
-    "message": "Support AdGuard",
+    "message": "Støt AdGuard",
     "description": "The label of footer link with label=support_adguard linking to https://adguard.com/support-adguard.html"
   },
   "link.item.label.for_windows": {
-    "message": "For Windows",
+    "message": "Til Windows",
     "description": "The label of footer link with label=for_windows linking to https://adguard.com/adguard-windows/overview.html"
   },
   "link.item.label.for_mac": {
-    "message": "For Mac",
+    "message": "Til Mac",
     "description": "The label of footer link with label=for_mac linking to https://adguard.com/adguard-mac/overview.html"
   },
   "link.item.label.for_android": {
-    "message": "For Android",
+    "message": "Til Android",
     "description": "The label of footer link with label=for_android linking to https://adguard.com/adguard-android/overview.html"
   },
   "link.item.label.for_android_tv": {
-    "message": "For Android TV",
+    "message": "Til Android TV",
     "description": "The label of footer link with label=for_android_tv linking to https://adguard.com/adguard-android-tv/overview.html"
   },
   "link.item.label.for_ios": {
-    "message": "For iOS",
+    "message": "Til iOS",
     "description": "The label of footer link with label=for_ios linking to https://adguard.com/adguard-ios/overview.html"
   },
   "link.item.label.for_browsers": {
-    "message": "For browsers",
+    "message": "Til webbrowsere",
     "description": "The label of footer link with label=for_browsers linking to https://adguard.com/adguard-browser-extension/overview.html"
   },
   "link.item.label.version_history": {
-    "message": "Version history",
+    "message": "Versionshistorik",
     "description": "The label of footer link with label=version_history linking to https://adguard.com/versions.html"
   },
   "link.item.label.faq": {
@@ -104,11 +104,11 @@
     "description": "The label of footer link with label=faq linking to https://adguard.com/support/faq.html"
   },
   "link.item.label.status": {
-    "message": "AdGuard status",
+    "message": "AdGuard-status",
     "description": "The label of footer link with label=status linking to https://status.adguard.com/"
   },
   "link.item.label.diagnostics": {
-    "message": "AdGuard diagnostics",
+    "message": "AdGuard-diagnostik",
     "description": "The label of footer link with label=diagnostics linking to https://adguard.com/test.html"
   },
   "link.item.label.distribution": {
@@ -116,7 +116,7 @@
     "description": "The label of footer link with label=distribution linking to https://adguard.com/partners.html"
   },
   "copyright": {
-    "message": "© 2009–2025 Adguard Software Ltd.",
+    "message": "©AdGuard, 2009–2023",
     "description": "The footer copyright"
   },
   "logo.alt": {

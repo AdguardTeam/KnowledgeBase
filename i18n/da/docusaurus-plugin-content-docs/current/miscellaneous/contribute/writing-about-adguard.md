@@ -1,10 +1,10 @@
 ---
-title: Writing about AdGuard
+title: Omtaler af AdGuard
 sidebar_position: 3
 ---
 
-If you like AdGuard and want to spread the word and share your thoughts about it on social media or on a personal blog or website, this article may interest you.
+Synes du om AdGuard og ønsker at dele budskabet og dine tanker om den på sociale medier eller på en personlig blog eller hjemmeside, kan denne artikel være af interesse.
 
-After sharing your experience, email [pr@adguard.com](mailto:pr@adguard.com) and include a link to your post. The authors of the most well-written reviews will receive a free AdGuard license key. It doesn't matter if your website's audience is small or large; we value every effort. Please note that your review should be around 300 to 500 words.
+Efter at have delt oplevelsen, send en e-mail til [pr@adguard.com](mailto:pr@adguard.com) med et link til indlægget. Forfatterne af de mest velskrevne anmeldelser vil modtage en gratis AdGuard-licensnøgle. Det er underordnet, om dit webstedspublikum er lille eller stort; vi værdsætter enhver indsats. Bemærk også, at anmeldelsen skal bestå af 300 og 500 ord.
 
-If you are planning to make a video about AdGuard or do anything else offbeat, please let us know in advance to avoid any possible misunderstandings. The same applies if your plan includes the use of the AdGuard logo, banners, or other visual elements. The contact email address remains the same: [pr@adguard.com](mailto:pr@adguard.com).
+Planlægger du at kreere en video om AdGuard eller gøre noget andet ekstra, så lad os det vide på forhånd for at undgå evt. misforståelser. Det samme gælder, såfremt AdGuard-logoer, bannere eller andre visuelle elementer ønskes benyttet. Kontaktmailen vil uændret være: [pr@adguard.com](mailto:pr@adguard.com).

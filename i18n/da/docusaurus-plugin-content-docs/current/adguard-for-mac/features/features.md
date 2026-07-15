@@ -1,5 +1,5 @@
 ---
-title: Features
+title: Funktioner
 sidebar_position: 1
 ---
 
@@ -27,7 +27,7 @@ This article is about AdGuard for Mac, a multifunctional ad blocker that protect
 
 - [Stealth Mode](/adguard-for-mac/features/stealth.md)
 
-  Settings to block cookies, UTM tags, and online analytics that collect user information
+  Indstillinger til blokering af cookies, UTM-tags og onlineanalyseværktøjer, som indsamler brugeroplysninger
 
 - [Security](/adguard-for-mac/features/security.md)
 

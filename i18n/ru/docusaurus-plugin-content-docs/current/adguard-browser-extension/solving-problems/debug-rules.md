@@ -65,15 +65,15 @@ sidebar_position: 2
 
 1. Включите режим разработчика:
 
-   ![Режим разработчика](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
+   ![Developer mode \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
 
 2. Нажмите _Загрузить распакованное_:
 
-   ![Загрузить нераспакованное](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+   ![Load unpacked \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
 3. Выберите каталог расширения и нажмите _Выбрать_:
 
-   ![Выбрать](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
+   ![Select \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
 
 Готово!
 
@@ -95,4 +95,4 @@ sidebar_position: 2
 
 4. Перезагрузите расширение в браузере:
 
-   ![Перезагрузка расширения](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
+   ![Reload extension \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)

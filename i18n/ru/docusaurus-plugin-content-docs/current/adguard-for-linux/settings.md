@@ -43,7 +43,7 @@ adguard-cli stop
 adguard-cli status
 ```
 
-![Статус/Отключить защиту \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+![Status/Stop protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/6status-stop.png)
 
 ### Перезапустить защиту
 
@@ -85,7 +85,7 @@ adguard-cli update -v
 
 - `show [<section-name>]`: показать текущую конфигурацию в `proxy.yaml` (или конкретный раздел)
 
-  ![Текущая настройка \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/7config_show.png)
 
 - `set <key> <value>`: настроить параметр в `proxy.yaml`
   - `listen_ports.http_proxy`: порт прослушивания HTTP

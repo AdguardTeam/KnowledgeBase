@@ -13,19 +13,15 @@ sidebar_position: 1
 
 3. _Geliştirici modu_ öğesini etkinleştirin.
 
-   ![Geliştirici modu \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
+   ![Developer mode \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_extensions.png)
 
-4. `background.html` öğesine tıklayın.
+4. Find AdGuard Browser Extension and click `service worker`.
 
-   ![Arka plan \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
+   ![Background \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_developer_mode.png)
 
-5. _Konsol_ sekmesini açın.
+5. Open the tab _Console_, right-click anywhere inside the console area, and select _Save as…_.
 
-   ![Konsol sekmesi \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
-
-6. Sağ tık menüsünü açın ve _Farklı kaydet…_ öğesini seçin.
-
-   ![Farklı kaydet \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
+   ![Save as \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_console_save.png)
 
 ### Firefox
 
@@ -33,21 +29,17 @@ sidebar_position: 1
 
 2. `about:addons` adresine gidin.
 
-3. _Eklentilerde hata ayıkla_ öğesine tıklayın.
+3. Click the gear icon and select _Debug Add-ons_.
 
-   ![Eklentilerde hata ayıkla \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+   ![Debug Add-ons \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_debug_addons.png)
 
 4. _İncele_ öğesine tıklayın.
 
-   ![İncele \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
+   ![Inspect \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_inspect.png)
 
-5. _Konsol_ sekmesine gidin.
+5. In the tab _Console_ tab, right-click anywhere inside the console area and select _Save all Messages to File_.
 
-   ![Konsol \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
-
-6. _Tüm Mesajları Dosyaya Kaydet_ öğesine tıklayın.
-
-   ![Kaydet \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
+   ![Console \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_console_save.png)
 
 ## Günlükleri gönderme
 

@@ -23,7 +23,7 @@ sidebar_position: 2
 
 此部分有两个选项：AdGuard 和本地实现。 基本上，这是两种设置 DNS 的方法。
 
-在本地实现中，DNS 由系统而非应用程序处理。 这意味着 AdGuard 不必创建本地 VPN。 遗憾的是，这无法帮助用户规避系统限制并与其他基于 VPN 的应用程序一起使用 AdGuard。如果启用了任何 VPN，则本机 DNS 将被忽略。 因此，用户将无法在本地过滤流量或使用我们全新的 [DNS-over-QUIC 协议 (DoQ)](https://adguard.com/zh_cn/blog/dns-over-quic.html)。
+在本地实现中，DNS 由系统而非应用程序处理。 这意味着 AdGuard 不必创建本地 VPN。 遗憾的是，这无法帮助用户规避系统限制并与其他基于 VPN 的应用程序一起使用 AdGuard。如果启用了任何 VPN，则本机 DNS 将被忽略。 Consequently, you won't be able to filter traffic locally or to use our brand new [DNS-over-QUIC protocol (DoQ)](https://adguard-dns.io/blog/dns-over-quic.html).
 
 ### DNS 服务器 {#dns-servers}
 

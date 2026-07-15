@@ -13,19 +13,15 @@ sidebar_position: 1
 
 3. Ative o _Modo desenvolvedor_.
 
-   ![Modo de desenvolvedor \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
+   ![Developer mode \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_extensions.png)
 
-4. Clique em `background.html`.
+4. Find AdGuard Browser Extension and click `service worker`.
 
-   ![Segundo plano \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
+   ![Background \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_developer_mode.png)
 
-5. Abra a aba _Console_.
+5. Open the tab _Console_, right-click anywhere inside the console area, and select _Save as…_.
 
-   ![A guia Console \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
-
-6. Abra o menu de contexto e selecione _Salvar como…_.
-
-   ![Salvar como \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
+   ![Save as \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_console_save.png)
 
 ### Firefox
 
@@ -33,21 +29,17 @@ sidebar_position: 1
 
 2. Navegue até `about:addons`.
 
-3. Clique em _Depurar complementos_.
+3. Click the gear icon and select _Debug Add-ons_.
 
-   ![Depurar complementos \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+   ![Debug Add-ons \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_debug_addons.png)
 
 4. Clique em _Inspecionar_.
 
-   ![Inspecionar \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
+   ![Inspect \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_inspect.png)
 
-5. Vá para a aba _Console_.
+5. In the tab _Console_ tab, right-click anywhere inside the console area and select _Save all Messages to File_.
 
-   ![Console \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
-
-6. Clique em _Salvar todas as mensagens no arquivo_.
-
-   ![Salvar \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
+   ![Console \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_console_save.png)
 
 ## Enviando logs
 

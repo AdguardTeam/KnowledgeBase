@@ -1,5 +1,5 @@
 ---
-title: Filters
+title: Filtre
 sidebar_position: 4
 ---
 
@@ -9,7 +9,7 @@ This article is about AdGuard for Mac, a multifunctional ad blocker that protect
 
 :::
 
-## Filters
+## Filtre
 
 ![Filters](https://cdn.adtidy.org/content/kb/ad_blocker/mac/filters.png)
 
@@ -17,7 +17,7 @@ Filter lists are sets of rules written using a [special syntax](/general/ad-filt
 
 We recommend enabling the following filters:
 
-- AdGuard Base filter
+- AdGuard Basisfilter
 - AdGuard Tracking Protection filter and AdGuard URL Tracking filter
 - AdGuard Annoyances filter
 - Filters for your language

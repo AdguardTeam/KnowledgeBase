@@ -1,5 +1,5 @@
 ---
-title: Filters
+title: Filtre
 sidebar_position: 2
 ---
 
@@ -15,7 +15,7 @@ Read more about [AdGuard filters](/general/ad-filtering/adguard-filters) or [ad 
 
 Changes in _Filters_ are also reflected in _Settings_ → _Safari extensions_.
 
-## Custom filters
+## Tilpassede filtre
 
 ![Create custom filter](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/create-custom.png)
 

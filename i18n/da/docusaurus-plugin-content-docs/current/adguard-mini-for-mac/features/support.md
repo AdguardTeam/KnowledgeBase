@@ -21,6 +21,6 @@ _Support_ section has helpful options in case you have a question or encounter a
 
   ![Contact support screen](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/contact-support.png)
 
-- Discuss
+- Drøft
 
   Takes you to a page where you can find links to AdGuard’s social media and GitHub

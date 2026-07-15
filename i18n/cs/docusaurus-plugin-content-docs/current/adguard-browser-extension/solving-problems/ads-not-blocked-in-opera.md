@@ -7,7 +7,7 @@ Pokud rozšíření prohlížeče AdGuard neblokuje reklamy na vyhledávacích w
 
 Chcete-li udělit požadované oprávnění:
 
-![Allow access to search page results](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/allow-access.png)
+![Allow access to search page results \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/opera_allow_search.png)
 
 1. Klikněte na ikonu krychle vedle adresního řádku → _Spravovat rozšíření..._.
 2. Vyhledejte blokátor reklam AdGuard v seznamu nainstalovaných rozšíření a zaškrtněte políčko vedle _Povolit přístup k výsledkům vyhledávání na stránce_.

@@ -1,5 +1,5 @@
 ---
-title: AdGuard for Android
+title: AdGuard til Android
 sidebar_position: 1
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: AdGuard for Linux
+title: AdGuard til Linux
 sidebar_position: 1
 ---
 
