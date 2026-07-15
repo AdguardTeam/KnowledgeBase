@@ -75,7 +75,7 @@ To try it out:
 
 #### tinyShield
 
-Uno script utente per coloro che visitano siti web coreani e alcuni siti web internazionali. Lo script utente tinyShield blocca le inserzioni di Ad-Shield e gli anti-adblock. Questo script utente si può installare nelle app basate su AdGuard CoreLibs, Violentmonkey, Tampermonkey e [quoid/userscripts](https://github.com/quoid/userscripts). Scopri di più su tinyShield e su come installarlo su [GitHub](https://github.com/List-KR/tinyShield).
+Uno script utente per coloro che visitano siti web coreani e alcuni siti web internazionali. Lo script utente tinyShield blocca le inserzioni di Ad-Shield e gli anti-adblock. Questo script utente si può installare nelle app basate su AdGuard CoreLibs, Violentmonkey, Tampermonkey e [quoid/userscripts](https://github.com/quoid/userscripts). Scopri di più su tinyShield e su come installarlo su [GitHub](https://github.com/FilteringDev/tinyShield).
 
 ### Dove puoi ottenere altri script utente?{#more-userscripts}
 
