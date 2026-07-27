@@ -9,11 +9,11 @@ The license key can be activated on a [limited number of devices](../what-is). I
 
 ### How to unbind a device
 
-#### Method 1
+#### Metode 1
 
 On the device that you want to unbind, open the AdGuard app and click *Reset license* or *Log out*.
 
-#### Method 2
+#### Metode 2
 
 As an alternative, you can remove the device in your AdGuard account:
 

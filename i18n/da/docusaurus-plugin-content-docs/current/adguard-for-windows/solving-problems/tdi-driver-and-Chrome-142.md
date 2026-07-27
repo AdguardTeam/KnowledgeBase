@@ -143,4 +143,4 @@ You should see the following policies active:
 
 If available, click _Reload policies_.
 
-Done!
+Udført!

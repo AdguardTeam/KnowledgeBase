@@ -5,11 +5,11 @@ sidebar_position: 3
 
 :::info
 
-This article is about AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard Browser Extension, der kun beskytter webbrowseren. For at beskytte hele enheden, [download AdGuard appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Sådan installeres AdGuard Browser Extension i andre webbrowsere
+## Sådan installeres AdGuard Browser Extension i forskellige webbrowsere
 
 - [Chrome-baserede webbrowsere](#chrome-based)
 - [Opera](#opera)
@@ -18,33 +18,33 @@ This article is about AdGuard Browser Extension, which safeguards only your brow
 - [Microsoft Edge](#edge)
 - [Safari](#safari)
 
-### Chrome og Chromium-baserede webbrowsere {#chrome-based}
+### Chrome- og Chromium-baserede webbrowsere {#chrome-based}
 
-Open the extension’s page in the [Chrome Web Store](https://agrd.io/extension_chrome) and click *Add to Chrome*.
+Åbn udvidelsens side i [Chrome Webshop](https://agrd.io/extension_chrome) og klik på *Føj til Chrome*.
 
-![AdGuard Browser Extension in the Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/chrome_install.png)
+![AdGuard Browser Extension i Chrome Webshop *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/chrome_install.png)
 
-In the opened dialog, click *Add extension*.
+Klik på *Tilføj udvidelse* i den viste dialog.
 
-![Dialog box in the Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_extension_chrome.png)
+![Dialog i Chrome Webshop *kant](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_extension_chrome.png)
 
 ### Opera {#opera}
 
-Open the page [addons.opera.com](https://agrd.io/extension_opera) and click *Add to Opera*.
+Åbn siden [addons.opera.com](https://agrd.io/extension_opera) og klik på *Føj til Opera*.
 
-![AdGuard Browser Extension in Opera addons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/opera_install.jpg)
+![AdGuard Browser Extension i Opera-tilføjelser *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/opera_install.jpg)
 
 ### Firefox {#firefox}
 
-Open the page [addons.mozilla.org](https://agrd.io/extension_firefox) and click *Add to Firefox*.
+Åbn siden [addons.mozilla.org](https://agrd.io/extension_firefox) og klik på *Føj til Firefox*.
 
-![AdGuard Browser Extension in Firefox add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/mozilla_install.png)
+![AdGuard Browser Extension i Firefox-tilføjelser *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/mozilla_install.png)
 
 ### Yandex Browser {#yandex}
 
-Klik på indstillingsknappen øverste til højre i webbrowseren, vælg *Udvidelser* → *Onlinesikkerhed*, find AdGuard, og klik på *Installér*.
+Klik på indstillingsknappen øverste til højre i webbrowseren, vælg *Udvidelser* → *Onlinesikkerhed*, find AdGuard og klik på *Installér*.
 
-![AdGuard Browser Extension in Yandex Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/yandex_install.png)
+![AdGuard Browser Extension i Yandex Tilføjelser *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/yandex_install.png)
 
 ### Microsoft Edge {#edge}
 
@@ -60,7 +60,7 @@ Alternatively, you can install AdGuard Browser Extension for Edge from the [Chro
 
 ![Chrome-udvidelser i Edge *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_chrome_store_in_edge.png)
 
-In the opened dialog, click *Add extension*.
+Klik på *Tilføj udvidelse* i den viste dialog.
 
 ### Safari {#safari}
 

@@ -9,25 +9,25 @@ Cet article décrit AdGuard pour Windows v8.0, un bloqueur de publicité complet
 
 :::
 
-In the _App management_ section, you can manage routing and filtering settings for all apps installed on your device.
+Dans la section _Gestion des applications_, vous pouvez gérer les paramètres de routage et de filtrage pour toutes les applications installées sur votre appareil.
 
-Once AdGuard detects that an app has gone online, it is automatically added to _App management_, and its traffic is routed through AdGuard.
+Une fois qu'AdGuard détecte qu’une app est en ligne, elle est automatiquement ajoutée à la _Gestion des applications_, et son trafic est acheminé via AdGuard.
 
-By default, AdGuard filters all traffic, but you can choose what to exclude.
+Par défaut, AdGuard filtre tout le trafic, mais vous pouvez choisir ce qu'il faut exclure.
 
-AdGuard also filters HTTPS traffic, as most websites today use HTTPS. This is especially important for blocking ads on sites like youtube.com, facebook.com, and x.com, where it is impossible to remove ads without HTTPS filtering.
+AdGuard filtre également le trafic HTTPS, car la plupart des sites Web utilisent aujourd'hui HTTPS. Ceci est particulièrement important pour bloquer les publicités sur des sites comme youtube.com, facebook.com, et x.com, où il est impossible de retirer les publicités sans filtrage HTTPS.
 
-When routing and filtering are enabled for an app, the icons below each app will appear green.
+Lorsque le routage et le filtrage sont activés pour une application, les icônes situées sous chaque application apparaissent en vert.
 
-You can leave the settings as they are, disable both filtering and routing, or fine-tune them manually for each app. You can also access the app’s stats.
+Vous pouvez laisser les paramètres tels quels, désactiver à la fois le filtrage et le routage, ou les affiner manuellement pour chaque app. Vous pouvez également accéder aux statistiques de l'application.
 
-![App stats](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
+![Statistiques de l'application](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
-## How app filtering and routing work in AdGuard for Windows v8.0
+## Fonctionnement du filtrage et du routage des applications dans AdGuard pour Windows v8.0
 
-AdGuard for Windows v8.0 introduces updated logic for handling apps. It helps prevent compatibility issues while still giving you control over which apps are filtered. Let’s break down how it works.
+AdGuard pour Windows v8.0 introduit une logique mise à jour pour la gestion des applications. Cela permet d’éviter les problèmes de compatibilité tout en vous donnant le contrôle sur les applications qui sont filtrées. Voyons comment cela fonctionne.
 
-There are “problem-free” and “problematic” apps. Some work correctly when filtered, while others may not function when their traffic is processed by AdGuard. This can be caused by features like HTTPS interception or proxying.
+Il existe des applications "sans problème" et "problématiques". Certaines applications sont considérées comme "problématiques" et peuvent ne pas fonctionner correctement lorsqu'elles sont acheminées par AdGuard. Cela peut être causé par des fonctionnalités telles que l'interception HTTPS ou la mise en proxy.
 
 To avoid breaking apps out of the box, AdGuard does not filter everything indiscriminately. Instead, it relies on a compatibility list — a set of apps that are known to work correctly with filtering enabled.
 

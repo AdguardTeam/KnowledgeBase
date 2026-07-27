@@ -23,7 +23,7 @@ DNS 설정을 관리하려면 AdGuard 앱에서 로컬 VPN을 설정해야 합�
 
 이 섹션에는 AdGuard 및 기본 구현 옵션이 있습니다. 기본적으로 DNS를 설정하는 방법입니다.
 
-기본 구현에서 DNS는 앱이 아닌 시스템에 의해 처리됩니다. 즉, AdGuard는 로컬 VPN을 만들 필요가 없습니다. 안타깝게도 시스템 제한을 우회하고 다른 VPN 기반 앱과 함께 AdGuard를 사용하는 데는 도움이 되지 않습니다. VPN이 활성화되어 있으면 기본 DNS가 무시됩니다. Consequently, you won't be able to filter traffic locally or to use our brand new [DNS-over-QUIC protocol (DoQ)](https://adguard-dns.io/blog/dns-over-quic.html).
+기본 구현에서 DNS는 앱이 아닌 시스템에 의해 처리됩니다. 즉, AdGuard는 로컬 VPN을 만들 필요가 없습니다. 안타깝게도 시스템 제한을 우회하고 다른 VPN 기반 앱과 함께 AdGuard를 사용하는 데는 도움이 되지 않습니다. VPN이 활성화되어 있으면 기본 DNS가 무시됩니다. 따라서 로컬에서 트래픽을 필터링하거나 새로운 [DNS-over-QUIC 프로토콜(DoQ)](https://adguard-dns.io/blog/dns-over-quic.html)을 사용할 수 없습니다.
 
 ### DNS 서버 {#dns-servers}
 

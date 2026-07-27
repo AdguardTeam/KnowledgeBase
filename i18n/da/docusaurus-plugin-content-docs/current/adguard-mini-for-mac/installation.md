@@ -9,7 +9,7 @@ This article is about AdGuard Mini for Mac, which safeguards only your Safari br
 
 :::
 
-## System requirements
+## Systemkrav
 
 Requires macOS 12 or later.
 

@@ -9,80 +9,80 @@ sidebar_position: 1
 
 :::
 
-In the _App management_ section, you can manage routing and filtering settings for all apps installed on your device.
+В разделе _Управление приложениями_ можно настроить маршрутизацию и фильтрацию для всех приложений, установленных на устройстве.
 
-Once AdGuard detects that an app has gone online, it is automatically added to _App management_, and its traffic is routed through AdGuard.
+Как только AdGuard определяет, что приложение подключилось к сети, оно автоматически добавляется в _Управление приложениями_, а его трафик направляется через AdGuard.
 
-By default, AdGuard filters all traffic, but you can choose what to exclude.
+По умолчанию AdGuard фильтрует весь трафик, но вы можете выбрать, что исключить.
 
-AdGuard also filters HTTPS traffic, as most websites today use HTTPS. This is especially important for blocking ads on sites like youtube.com, facebook.com, and x.com, where it is impossible to remove ads without HTTPS filtering.
+AdGuard также фильтрует HTTPS-трафик, поскольку большинство сайтов сегодня используют HTTPS. Это особенно важно для блокировки рекламы на таких сайтах, как youtube.com, facebook.com и x.com, где невозможно удалить рекламу без HTTPS-фильтрации.
 
-When routing and filtering are enabled for an app, the icons below each app will appear green.
+Если для приложения включены функции маршрутизации и фильтрации, значки под каждым приложением будут зелёными.
 
-You can leave the settings as they are, disable both filtering and routing, or fine-tune them manually for each app. You can also access the app’s stats.
+Вы можете оставить все настройки как есть, отключить фильтрацию и маршрутизацию или настроить их вручную для каждого приложения. Также вам доступна статистика приложений.
 
-![App stats](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
+![Статистика приложения](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
-## How app filtering and routing work in AdGuard for Windows v8.0
+## Как работает фильтрация и маршрутизация приложений в AdGuard для Windows v8.0
 
-AdGuard for Windows v8.0 introduces updated logic for handling apps. It helps prevent compatibility issues while still giving you control over which apps are filtered. Let’s break down how it works.
+В версии 8.0 AdGuard для Windows реализована обновлённая логика управления приложениями. Она помогает избежать проблем с совместимостью, при этом позволяя вам выбирать, какие приложения отфильтровать. Давайте разберёмся, как это работает.
 
-There are “problem-free” and “problematic” apps. Some work correctly when filtered, while others may not function when their traffic is processed by AdGuard. This can be caused by features like HTTPS interception or proxying.
+Существуют «беспроблемные» и «проблемные» приложения. Некоторые работают корректно, тогда как другие могут не функционировать, когда их трафик обрабатывается AdGuard. Это может быть вызвано такими функциями, как перехват HTTPS или проксирование.
 
-To avoid breaking apps out of the box, AdGuard does not filter everything indiscriminately. Instead, it relies on a compatibility list — a set of apps that are known to work correctly with filtering enabled.
+Чтобы не привести к сбоям в работе приложений сразу после установки, AdGuard не фильтрует всё подряд. Вместо этого используется список совместимости — в нём приложения, которые корректно работают при включённой фильтрации.
 
 :::note
 
-“Not filtering everything” does not mean “filter nothing.” Trusted apps (like browsers) are always filtered.
+«Не фильтровать всё» не означает «не фильтровать ничего». Доверенные приложения (например, браузеры) всегда фильтруются.
 
 :::
 
-Each app has three independent processing layers: traffic routing through AdGuard, filtering (blocking ads and trackers), and HTTPS filtering (interception of encrypted traffic).
+У каждого приложения три независимых уровня обработки: маршрутизация трафика через AdGuard, фильтрация (блокировка рекламы и трекеров) и HTTPS-фильтрация (перехват зашифрованного трафика).
 
-These are determined by three sources:
+Они определяются тремя источниками:
 
-- _Compatibility list_
+- _Список совместимости_
 
-  Apps that have been tested by our team and are confirmed to work correctly with filtering.
-  This list is updated through internal testing and user reports in the [dedicated repository for listing AdGuard compatibility issues](https://github.com/AdguardTeam/CompatibilityIssues).
+  Приложения, протестированные нашей командой — мы убедились, что они корректно работают с фильтрацией.
+  Этот список обновляется на основе внутреннего тестирования и сообщений пользователей [в репозитории для перечисления проблем совместимости AdGuard](https://github.com/AdguardTeam/CompatibilityIssues).
 
-- _Exclusion lists_
+- _Списки исключений_
 
-  Separate lists for routing, filtering, and HTTPS filtering. These include apps known to break when filtering is applied.
+  Отдельные списки для маршрутизации, фильтрации и HTTPS-фильтрации. К ним относятся приложения, которые перестают работать при включённой фильтрации.
 
-- _Filter unknown apps_
+- _Фильтровать неизвестные приложения_
 
-  This setting defines how all other apps (not present in any list) are handled.
+  Эта настройка определяет, как обрабатываются все остальные приложения (не присутствующие ни в одном списке).
 
 :::info
 
-The compatibility lists are continuously updated — and you can help improve them. If you notice that an app does not work correctly with filtering enabled, **report it on [GitHub](https://github.com/AdguardTeam/CompatibilityIssues)** or contact support via the app. Your feedback helps improve AdGuard for everyone.
+Списки совместимости постоянно обновляются — и вы можете помочь их улучшить. Если вы заметили, что приложение работает некорректно при включённой фильтрации, **сообщите об этом [на GitHub](https://github.com/AdguardTeam/CompatibilityIssues)** или напишите в поддержку через приложение. Ваши отзывы помогают сделать AdGuard лучше для всех пользователей.
 
 :::
 
-## Filter unknown apps
+## Фильтровать неизвестные приложения
 
-![Filter unknown apps \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/app-management.png)
+![Фильтровать неизвестные приложения \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/app-management.png)
 
-The _Filter unknown apps_ setting is enabled by default and determines how AdGuard handles new apps that are not yet present in the compatibility or exclusion lists
+Настройка _Фильтровать неизвестные приложения_ включена по умолчанию и определяет, как AdGuard обрабатывает новые приложения, которые ещё не внесены в список совместимости или исключений
 
-When enabled, app traffic is routed through AdGuard, regular filtering is applied, and **HTTPS filtering is NOT enabled automatically**. This is intentional: HTTPS interception is the most sensitive part of traffic processing and may affect app behavior.
+Если функция включена, трафик приложения маршрутизируется через AdGuard, применяется обычная фильтрация, а **HTTPS-фильтрация НЕ включается автоматически**. Это сделано намеренно: перехват HTTPS — самая чувствительная часть обработки трафика и может повлиять на поведение приложения.
 
-When disabled, new apps are not processed by AdGuard — you will need to manually configure routing for them.
+Если функция отключена, новые приложения не обрабатываются AdGuard — вам потребуется вручную настроить для них маршрутизацию.
 
-Here is a quick overview of how different app categories behave depending on this setting:
+Вот как различные категории приложений ведут себя в зависимости от этой настройки:
 
-| App category                                                                                    | Toggle on (default)                      | Toggle off                                           |
-| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------- |
-| Compatible, or problem-free (e.g., browsers) | · Routing ✅ <br /> · Filtering ✅ <br /> · HTTPS filtering ✅ | Same behavior — does not depend on toggle            |
-| Problematic (from exclusion lists, filtering may cause issues)               | · Routing ❌ <br /> · Filtering ❌ <br /> · HTTPS filtering ❌ | Same behavior — does not depend on toggle            |
-| Others / (newly detected, unknown, not in lists)                             | · Routing ✅ <br /> · Filtering ✅ <br /> · HTTPS filtering ❌ | Not routed through AdGuard, must be enabled manually |
+| Категория приложения                                                                     | Включено (по умолчанию)                          | Отключено                                              |
+| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------ |
+| Совместимые или беспроблемные (например, браузеры)                    | · Маршрутизация ✅ <br /> · Фильтрация ✅ <br /> · HTTPS-фильтрация ✅ | То же поведение                                        |
+| Проблемные (из списков исключений, фильтрация может вызвать проблемы) | · Маршрутизация ❌ <br /> · Фильтрация ❌ <br /> · HTTPS-фильтрация ❌ | То же поведение                                        |
+| Другие (недавно обнаруженные, неизвестные, отсутствующие в списках)   | · Маршрутизация ✅ <br /> · Фильтрация ✅ <br /> · HTTPS-фильтрация ❌ | Не проходят через AdGuard, необходимо включить вручную |
 
-:::info What happens on reset
+:::info Что происходит при сбросе настроек
 
-If you click **Reset to default**, two things happen:
+Если вы нажмёте **Сбросить настройки**, произойдут две вещи:
 
-1. All app-specific permissions are cleared (set to “not configured”).
-2. Predefined rules are applied to known safe apps (such as browsers), including HTTPS filtering.
+1. Все разрешения, относящиеся к приложению, сбрасываются.
+2. К известным безопасным приложениям (таким как браузеры) применяются заранее заданные правила, в том числе HTTPS-фильтрация.
 
 :::
