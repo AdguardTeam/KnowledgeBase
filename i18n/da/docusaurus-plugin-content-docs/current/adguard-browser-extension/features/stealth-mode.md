@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-This article is about AdGuard Browser Extension, which safeguards only your browser. For at beskytte hele enheden, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard Browser Extension, der kun beskytter webbrowseren. For at beskytte hele enheden, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 

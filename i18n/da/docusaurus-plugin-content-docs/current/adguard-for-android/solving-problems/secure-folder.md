@@ -5,7 +5,7 @@ sidebar_position: 12
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -21,4 +21,4 @@ If you install AdGuard [in the *Secure folder*](https://www.samsung.com/uk/suppo
 1. Confirm installation with your graphic key/password/fingerprint.
 1. Find and select the previously saved certificate, then tap **Done**.
 1. Return to the AdGuard app and navigate back to the main screen.
-1. Done! The certificate has been installed.
+1. Udført! The certificate has been installed.

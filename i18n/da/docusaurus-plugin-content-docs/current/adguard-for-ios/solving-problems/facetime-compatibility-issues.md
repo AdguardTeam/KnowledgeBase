@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -25,4 +25,4 @@ To enable it, follow the instructions:
 2. Enable *Advanced mode* and go to the *Advanced settings* section that appears right after.
 3. Open *Tunnel mode* and select *Split-Tunnel*.
 
-Done! Now there should be no problems with FaceTime compatibility.
+Udført! Now there should be no problems with FaceTime compatibility.

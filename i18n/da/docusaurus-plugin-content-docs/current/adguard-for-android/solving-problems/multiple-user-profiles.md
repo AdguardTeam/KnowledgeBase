@@ -5,7 +5,7 @@ sidebar_position: 9
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -37,12 +37,12 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. If you're u
 
 :::
 
-1. Activate the **developer mode** and enable **USB debugging**:
+1. Aktivér både **Udviklertilstand** samt **USB-fejlfinding**:
 
     - Open the **Settings** app phone;
-    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
-    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
-    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+    - Gå til afsnittet **System** (sidste punkt på indstillingsmenuen). Find i dette afsnit underpunktet **Om telefon**;
+    - Tryk 7 gange på linjen **Build-nummer**. Dernæst ses meddelelse **Du er nu udvikler** (angiv om nødvendigt enhedens oplåsningskode);
+    - Åbn **Systemindstillinger** → **Udviklerindstillinger** → Rul ned og aktivér **USB-fejlfinding** → Bekræft, at fejlfinding er aktiveret i vinduet **Tillad USB-fejlfinding** efter omhyggeligt at have læst advarslen.
 
     :::note
 

@@ -23,66 +23,66 @@ You can leave the settings as they are, disable both filtering and routing, or f
 
 ![App stats](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
-## How app filtering and routing work in AdGuard for Windows v8.0
+## Sådan fungerer app-filtrering og rutning i AdGuard til Windows v8.0
 
-AdGuard for Windows v8.0 introduces updated logic for handling apps. It helps prevent compatibility issues while still giving you control over which apps are filtered. Let’s break down how it works.
+AdGuard til Windows v8.0 introducerer opdateret logik til håndtering af apps. Det bidrager til at forhindre kompatibilitetsproblemer, mens der stadig er kontrol over, hvilke apps som filtreres. Lad os gennemgå, hvordan det fungerer.
 
-There are “problem-free” and “problematic” apps. Some work correctly when filtered, while others may not function when their traffic is processed by AdGuard. This can be caused by features like HTTPS interception or proxying.
+Der er "uproblematisk" og "problematiske" apps. Some work correctly when filtered, while others may not function when their traffic is processed by AdGuard. This can be caused by features like HTTPS interception or proxying.
 
-To avoid breaking apps out of the box, AdGuard does not filter everything indiscriminately. Instead, it relies on a compatibility list — a set of apps that are known to work correctly with filtering enabled.
+For at undgå app-fejlfunktioner fra starten, filtrerer AdGuard ikke alt vilkårligt. Den refererer i stedet til en kompatibilitetsliste — en samling apps kendt for at fungere korrekt med filtrering aktiveret.
 
 :::note
 
-“Not filtering everything” does not mean “filter nothing.” Trusted apps (like browsers) are always filtered.
+"Ikke atl filtrere" betyder ikke "intet filtreres." Betroede apps (såsom webbrowsere) filtreres altid.
 
 :::
 
-Each app has three independent processing layers: traffic routing through AdGuard, filtering (blocking ads and trackers), and HTTPS filtering (interception of encrypted traffic).
+Hver app har tre uafhængige behandlingslag: Trafikrutning igennem AdGuard, filtrering (blokering af annoncer og trackere) og HTTPS-filtrering (opfangning af krypteret trafik).
 
-These are determined by three sources:
+Disse bestemmes af tre kilder:
 
-- _Compatibility list_
+- _Kompatibilitetsliste_
 
-  Apps that have been tested by our team and are confirmed to work correctly with filtering.
-  This list is updated through internal testing and user reports in the [dedicated repository for listing AdGuard compatibility issues](https://github.com/AdguardTeam/CompatibilityIssues).
+  Apps testet af vores team og er bekræftet fungerende korrekt med filtrering.
+  Denne liste opdateres baseret på interne tests og brugerrapporter i det [dedikerede repo til registrering af AdGuard-kompatibilitetsproblemer](https://github.com/AdguardTeam/CompatibilityIssues).
 
-- _Exclusion lists_
+- _Undtagelseslister_
 
-  Separate lists for routing, filtering, and HTTPS filtering. These include apps known to break when filtering is applied.
+  Separate lister til rutning, filtrering og HTTPS-filtrering. Disse omfatter apps kendt for at fejlfungere ved anvendelse af filtrering.
 
-- _Filter unknown apps_
+- _Filtrere ukendte apps_
 
-  This setting defines how all other apps (not present in any list) are handled.
+  Denne indstilling definerer, hvordan alle øvrige apps (som ikke er på nogen liste) håndteres.
 
 :::info
 
-The compatibility lists are continuously updated — and you can help improve them. If you notice that an app does not work correctly with filtering enabled, **report it on [GitHub](https://github.com/AdguardTeam/CompatibilityIssues)** or contact support via the app. Your feedback helps improve AdGuard for everyone.
+Kompatibilitetslisterne opdateres løbende — og brugeren kan hjælpe med at forbedre dem. Bemærkers det, at en app ikke fungerer korrekt med filtrering aktiveret, **anmeld dette på [GitHub](https://github.com/AdguardTeam/CompatibilityIssues)** eller kontakt supporten via appen. Brugerfeedback bidrager til at forbedre AdGuard for alle.
 
 :::
 
-## Filter unknown apps
+## Filtrere ukendte apps
 
-![Filter unknown apps \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/app-management.png)
+![Filtrere ukendte apps \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/app-management.png)
 
-The _Filter unknown apps_ setting is enabled by default and determines how AdGuard handles new apps that are not yet present in the compatibility or exclusion lists
+Indstillingen _Filtrere ukendte apps_ er aktiveret som standard og bestemmer, hvordan AdGuard håndterer nye apps, som endnu ikke findes på kompatibilitets- eller undtagelseslisterne
 
-When enabled, app traffic is routed through AdGuard, regular filtering is applied, and **HTTPS filtering is NOT enabled automatically**. This is intentional: HTTPS interception is the most sensitive part of traffic processing and may affect app behavior.
+Når aktiveret, rutes app-trafik igennem AdGuard, almindelig filtrering anvendes, og **HTTPS-filtrering aktiveres IKKE automatisk**. Dette er tilsigtet: HTTPS-opfangning er den mest følsomme del af trafikbehandlingen og kan påvirke app-adfærden.
 
-When disabled, new apps are not processed by AdGuard — you will need to manually configure routing for them.
+Når deaktiveret, behandles nye apps ikke af AdGuard — rutning af dem vil skulle opsættes manuelt.
 
-Here is a quick overview of how different app categories behave depending on this setting:
+Her er en hurtig oversigt over forskellige app-kategoriers adfærd relateret til denne indstilling:
 
-| App category                                                                                    | Toggle on (default)                      | Toggle off                                           |
-| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------- |
-| Compatible, or problem-free (e.g., browsers) | · Routing ✅ <br /> · Filtering ✅ <br /> · HTTPS filtering ✅ | Same behavior — does not depend on toggle            |
-| Problematic (from exclusion lists, filtering may cause issues)               | · Routing ❌ <br /> · Filtering ❌ <br /> · HTTPS filtering ❌ | Same behavior — does not depend on toggle            |
-| Others / (newly detected, unknown, not in lists)                             | · Routing ✅ <br /> · Filtering ✅ <br /> · HTTPS filtering ❌ | Not routed through AdGuard, must be enabled manually |
+| App-kategori                                                                                           | Slå til (standard)                         | Slå fra                                            |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- | -------------------------------------------------- |
+| Kompatibel eller uproblematisk (f.eks. webbrowsere) | · Rutning ✅ <br /> · Filtrering ✅ <br /> · HTTPS-filtrering ✅ | Samme adfærd — afhænger ikke af til/fra-knappen    |
+| Problematisk (fra undtagelseslister, filtrering kan medføre problemer)              | · Rutning ❌ <br /> · Filtrering ❌ <br /> · HTTPS-filtrering ❌ | Samme adfærd — afhænger ikke af til/fra-knappen    |
+| Øvrige / (nyligt detekterede, ukendte, ikke på lister)                              | · Rutning ✅ <br /> · Filtrering ✅ <br /> · HTTPS-filtrering ❌ | Ikke rutet igennem AdGuard, skal aktiveres manuelt |
 
-:::info What happens on reset
+:::info Hvad der sker ved nulstilling
 
-If you click **Reset to default**, two things happen:
+Klikkes på **Nulstil til standard**, vil to ting ske:
 
-1. All app-specific permissions are cleared (set to “not configured”).
-2. Predefined rules are applied to known safe apps (such as browsers), including HTTPS filtering.
+1. Alle app-specifikke tilladelser ryddes (sættes til »ikke opsat«).
+2. Prædefinerede regler anvendes på kendte, sikre apps (såsom webbrowsere), herunder HTTPS-filtrering.
 
 :::
