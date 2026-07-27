@@ -1,48 +1,48 @@
 ---
-title: iCloud Private Relay and AdGuard
+title: iCloud Private Relay og AdGuard
 sidebar_position: 7
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel dækker AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Problem description in a nutshell
+## Problembeskrivelse i en nøddeskal
 
-By default, AdGuard uses the "default route" which disables iCloud Private Relay.
+Som standard benytter AdGuard "standardrutning", der deaktiverer iCloud Private Relay.
 
-Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuard cannot block ads because iCloud Private Relay encrypts traffic before AdGuard can filter network connections. When iCloud Private Relay is active, any filtering (including local filtering) becomes impossible. Thus, AdGuard can't filter traffic or perform DNS filtering in Safari. Yet, AdGuard still filters traffic in other browsers. To keep using iCloud Private Relay, consider installing [AdGuard for Safari](https://adguard.com/adguard-safari/overview.html).
+Pt. kan AdGuard og iCloud Private Relay ikke fungere sideløbende. AdGuard kan ikke blokere annoncer, da iCloud Private Relay krypterer trafik, før AdGuard kan filtrere netværksforbindelser. Når iCloud Private Relay er aktivt, umuliggøres enhver filtrering (inkl. lokal filtrering). AdGuard kan derfor ikke filtrere trafik eller udføre DNS-filtrering i Safari. Dog filtrerer AdGuard fortsat trafik i andre webbrowsere. Overvej at installere [AdGuard til Safari](https://adguard.com/adguard-safari/overview.html) for fortsat brug af iCloud Private Relay.
 
-The same applies to using any VPN apps on Mac: you have to choose between using iCloud Private Relay or a VPN service.
+Det samme gælder brug af VPN-apps på Mac: Vælg mellem brug af enten iCloud Private Relay eller en VPN-tjeneste.
 
-## In detail
+## I detaljer
 
-AdGuard for Mac now uses macOS built-in socket filtering based on the network extensions API. This new and rather buggy mechanism replaced good old Kernel extensions. Over the last 1.5 years, we've reported more than 20(!) bugs to Apple regarding their new filtering method.
+AdGuard til Mac bruger nu macOS indbygget socket-filtrering baseret på netværksudvidelses-API'en. Denne nye og ret fejlbehæftede mekanisme har erstattet de gode gamle Kernel-udvidelser. I løbet af det seneste 1,5 år har vi anmeldt flere end 20(!) fejl til Apple vedr. deres nye filtreringsmetode.
 
-The network extensions API has a VPN-like configuration with a list of route-like entries. On Big Sur, AdGuard developed "split-tunnel" rules to avoid creating the "default route" rule because it causes problems on early Big Sur releases.
+Netværksudvidelses-API'en har en VPN-lignende opsætning med en liste over rute-lignende poster. På Big Sur udviklede AdGuard "split-tunnel"-regler for at undgå at oprette "standardrutning"-reglen, da den forårsager problemer på tidlige Big Sur-udgivelser.
 
-On Monterey, iCloud Private Relay got introduced. Privacy features of the Mail app also use Private Relay servers.
+I Monterey blev iCloud Private Relay introduceret. Fortrolighedsfunktioner i Mail-appen bruger også Private Relay-servere.
 
-As a consequence, AdGuard can’t work together with iCloud Private Relay and the Mail app privacy features:
+Som følge heraf er AdGuard ikke kompatibel med iCloud Private Relay og Mail-appens fortrolighedsfunktioner:
 
-1. iCloud Private Relay is applied to connections at the library level — before they reach the socket level, where AdGuard operates.
-2. iCloud Private Relay is implemented with HTTP/3 CONNECT proxies.
-3. Since AdGuard does not filter CONNECT HTTP/3 requests yet, it attempts to downgrade HTTP/3 proxy connections to HTTP/1.1, which results in blocking iCloud Private Relay traffic.
-4. When you use iCloud Private Relay and switch AdGuard into the Split-Tunnel mode, you can’t open websites in Safari.
-5. To work around this issue for Monterey, we apply the “default route” rule. When Private Relay sees that rule, it disables itself automatically. So, AdGuard works seamlessly on Monterey, but iCloud Private Relay gets disabled.
+1. iCloud Private Relay anvendes på forbindelser på biblioteksniveauet — før de når socket-niveauet, hvor AdGuard opererer.
+2. iCloud Private Relay er implementeret med HTTP/3 CONNECT-proxyer.
+3. Da AdGuard endnu ikke filtrerer CONNECT HTTP/3-forespørgsler, forsøger den at nedgradere HTTP/3-proxyforbindelser til HTTP/1.1, hvilket resulterer i blokering af iCloud Private Relay-trafik.
+4. Når der benyttes iCloud Private Relay og skifter AdGuard til tilstanden Split-Tunnel, kan Safari ikke åbne websteder.
+5. For at omgå dette problem på Monterey, anvendes reglen "standardrutning". Når Private Relay ser denne regel, deaktiverer den automatisk sig selv. Så AdGuard fungerer gnidningløst på Monterey, men iCloud Private Relay deaktiveres.
 
-The `network.extension.monterey.force.split.tunnel` option restores the “Big Sur” behavior, but this option may break access to websites due to (3) and (4). We keep searching for a solution to this issue. One of the options is implementing HTTP/3 proxy filtering.
+Indstillingen `network.extension.monterey.force.split.tunnel` gendanner "Big Sur"-adfærden, men den kan samtidig afbryde webstedsadgang grundet (3) og (4). Søgning efter en løsning på dette problem fortsættes. En af mulighederne er at implementere HTTP/3-filtrering.
 
-## Recommended solution
+## Anbefalet løsning
 
-We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/).
+Det anbefales at bruge AdGuard sammen med en mere traditionel VPN-tjeneste såsom [AdGuard VPN](https://adguard-vpn.com/).
 
-## Alternative solution
+## Alternativ løsning
 
-You can prevent AdGuard from using the "default route" by disabling the "default route". It can be done via Advanced Settings → `network.extension.monterey.force.split.tunnel`.
+AdGuard kan forhindres i at bruge "standardrutning" ved at slå "standardrutning" fra. Dette kan gøres via Avancerede indstillinger → `network.extension.monterey.force.split.tunnel`.
 
-![Disable default route in advanced settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
+![Slå Standardrutning fra i Avancerede indstillinger *kant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
 
-Bear in mind that, in this case, you'll face the issues described above.
+Husk dog, at de ovenfor beskrevne problemer i så tilfælde vil kunne opstå.

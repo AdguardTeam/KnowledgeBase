@@ -9,80 +9,80 @@ Este artigo descreve o AdGuard para Windows v8.0, um bloqueador de anúncios com
 
 :::
 
-In the _App management_ section, you can manage routing and filtering settings for all apps installed on your device.
+Na seção _Gerenciamento de apps_, você pode gerenciar as configurações de roteamento e filtragem para todos os apps instalados no seu dispositivo.
 
-Once AdGuard detects that an app has gone online, it is automatically added to _App management_, and its traffic is routed through AdGuard.
+Uma vez que o AdGuard detecta que um aplicativo está online, ele é automaticamente adicionado ao _Gerenciamento de aplicativos_, e seu tráfego é roteado através do AdGuard.
 
-By default, AdGuard filters all traffic, but you can choose what to exclude.
+Por padrão, o AdGuard filtra todo o tráfego, mas você pode escolher o que excluir.
 
-AdGuard also filters HTTPS traffic, as most websites today use HTTPS. This is especially important for blocking ads on sites like youtube.com, facebook.com, and x.com, where it is impossible to remove ads without HTTPS filtering.
+O AdGuard também filtra o tráfego HTTPS, pois a maioria dos sites hoje utiliza HTTPS. Isto é especialmente importante para bloquear anúncios em sites como youtube.com, facebook.com e x.com, onde é impossível remover anúncios sem filtragem HTTPS.
 
-When routing and filtering are enabled for an app, the icons below each app will appear green.
+Quando o roteamento e a filtragem estão ativados para um aplicativo, os ícones abaixo de cada aplicativo aparecerão em verde.
 
-You can leave the settings as they are, disable both filtering and routing, or fine-tune them manually for each app. You can also access the app’s stats.
+Você pode deixar as configurações como estão, desativar tanto a filtragem quanto o roteamento, ou ajustá-los manualmente para cada aplicativo. Você também pode acessar as estatísticas do aplicativo.
 
-![App stats](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
+![Estatísticas do aplicativo](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
-## How app filtering and routing work in AdGuard for Windows v8.0
+## Como funcionam a filtragem e o roteamento de aplicativos no AdGuard para Windows v8.0
 
-AdGuard for Windows v8.0 introduces updated logic for handling apps. It helps prevent compatibility issues while still giving you control over which apps are filtered. Let’s break down how it works.
+O AdGuard para Windows v8.0 introduz lógica atualizada para gerenciamento de aplicativos. Isso ajuda a evitar problemas de compatibilidade, ao mesmo tempo que oferece controle sobre quais aplicativos são filtrados. Vamos detalhar como isso funciona.
 
-There are “problem-free” and “problematic” apps. Some work correctly when filtered, while others may not function when their traffic is processed by AdGuard. This can be caused by features like HTTPS interception or proxying.
+Existem aplicativos “sem problemas” e “problemáticos”. Alguns aplicativos são considerados "problemáticos" e podem não funcionar corretamente quando roteados pelo AdGuard. É por isso que você poderá ver o seguinte aviso ao tentar rotear ou realizar a filtragem em todos os aplicativos:
 
-To avoid breaking apps out of the box, AdGuard does not filter everything indiscriminately. Instead, it relies on a compatibility list — a set of apps that are known to work correctly with filtering enabled.
+Para evitar que aplicativos parem de funcionar logo de início, o AdGuard não filtra tudo indiscriminadamente. Em vez disso, ele depende de uma lista de compatibilidade — um conjunto de aplicativos que são conhecidos por funcionar corretamente com a filtragem ativada.
 
 :::note
 
-“Not filtering everything” does not mean “filter nothing.” Trusted apps (like browsers) are always filtered.
+“Não filtrar tudo” não significa “não filtrar nada.” Aplicativos confiáveis (como navegadores) são sempre filtrados.
 
 :::
 
-Each app has three independent processing layers: traffic routing through AdGuard, filtering (blocking ads and trackers), and HTTPS filtering (interception of encrypted traffic).
+Cada aplicativo possui três camadas de processamento independentes: roteamento de tráfego pelo AdGuard, filtragem (bloqueio de anúncios e rastreadores) e filtragem HTTPS (interceptação de tráfego criptografado).
 
-These are determined by three sources:
+Eles são determinados por três fontes:
 
-- _Compatibility list_
+- _Lista de compatibilidade_
 
-  Apps that have been tested by our team and are confirmed to work correctly with filtering.
-  This list is updated through internal testing and user reports in the [dedicated repository for listing AdGuard compatibility issues](https://github.com/AdguardTeam/CompatibilityIssues).
+  Aplicativos que foram testados pela nossa equipe e confirmados como funcionando corretamente com a filtragem.
+  Esta lista é atualizada por meio de testes internos e relatórios de usuários no [repositório dedicado para listar problemas de compatibilidade do AdGuard](https://github.com/AdguardTeam/CompatibilityIssues).
 
-- _Exclusion lists_
+- _Listas de exclusões_
 
-  Separate lists for routing, filtering, and HTTPS filtering. These include apps known to break when filtering is applied.
+  Listas separadas para roteamento, filtragem e filtragem de HTTPS. Isso inclui aplicativos conhecidos por falharem quando a filtragem é aplicada.
 
-- _Filter unknown apps_
+- _Filtrar aplicativos desconhecidos_
 
-  This setting defines how all other apps (not present in any list) are handled.
+  Esta configuração define como todos os outros aplicativos (não presentes em nenhuma lista) são tratados.
 
 :::info
 
-The compatibility lists are continuously updated — and you can help improve them. If you notice that an app does not work correctly with filtering enabled, **report it on [GitHub](https://github.com/AdguardTeam/CompatibilityIssues)** or contact support via the app. Your feedback helps improve AdGuard for everyone.
+As listas de compatibilidade são continuamente atualizadas, e você pode ajudar a melhorá-las. Se você perceber que um aplicativo não funciona corretamente com a filtragem ativada, **relate isso no [GitHub](https://github.com/AdguardTeam/CompatibilityIssues)** ou entre em contato com o suporte pelo aplicativo. Seu feedback ajuda a melhorar o AdGuard para todos.
 
 :::
 
-## Filter unknown apps
+## Filtrar aplicativos desconhecidos
 
-![Filter unknown apps \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/app-management.png)
+![Filtrar aplicativos desconhecidos \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/app-management.png)
 
-The _Filter unknown apps_ setting is enabled by default and determines how AdGuard handles new apps that are not yet present in the compatibility or exclusion lists
+A configuração _Filtrar apps desconhecidos_ está ativada por padrão e determina como o AdGuard lida com novos apps que ainda não estão presentes nas listas de compatibilidade ou de exclusão
 
-When enabled, app traffic is routed through AdGuard, regular filtering is applied, and **HTTPS filtering is NOT enabled automatically**. This is intentional: HTTPS interception is the most sensitive part of traffic processing and may affect app behavior.
+Quando ativado, o tráfego do aplicativo é roteado pelo AdGuard, a filtragem regular é aplicada e **a filtragem HTTPS NÃO é ativada automaticamente**. Isso é intencional: a interceptação HTTPS é a parte mais sensível do processamento de tráfego e pode afetar o comportamento do aplicativo.
 
-When disabled, new apps are not processed by AdGuard — you will need to manually configure routing for them.
+Quando desativado, novos aplicativos não são processados pelo AdGuard — você precisará configurar manualmente o roteamento para eles.
 
-Here is a quick overview of how different app categories behave depending on this setting:
+Aqui está uma visão geral rápida de como diferentes categorias de aplicativos se comportam dependendo desta configuração:
 
-| App category                                                                                    | Toggle on (default)                      | Toggle off                                           |
-| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------- |
-| Compatible, or problem-free (e.g., browsers) | · Routing ✅ <br /> · Filtering ✅ <br /> · HTTPS filtering ✅ | Same behavior — does not depend on toggle            |
-| Problematic (from exclusion lists, filtering may cause issues)               | · Routing ❌ <br /> · Filtering ❌ <br /> · HTTPS filtering ❌ | Same behavior — does not depend on toggle            |
-| Others / (newly detected, unknown, not in lists)                             | · Routing ✅ <br /> · Filtering ✅ <br /> · HTTPS filtering ❌ | Not routed through AdGuard, must be enabled manually |
+| Categoria do aplicativo                                                                    | Ativar (padrão)                             | Desativar                                                 |
+| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------- | --------------------------------------------------------- |
+| Compatível, ou sem problemas (por exemplo, navegadores)                 | · Roteamento ✅ <br /> · Filtragem ✅ <br /> · Filtragem HTTPS ✅ | Mesmo comportamento — não depende de alternar             |
+| Problemático (de listas de exclusão, a filtragem pode causar problemas) | · Roteamento ❌ <br /> · Filtragem ❌ <br /> · Filtragem HTTPS ❌ | Mesmo comportamento — não depende de alternar             |
+| Outros / (recém-detectados, desconhecidos, não presentes nas listas)    | · Roteamento ✅ <br /> · Filtragem ✅ <br /> · Filtragem HTTPS ❌ | Não roteado pelo AdGuard, deve ser habilitado manualmente |
 
-:::info What happens on reset
+:::info O que acontece ao redefinir
 
-If you click **Reset to default**, two things happen:
+Se você clicar em **Redefinir para o padrão**, duas coisas acontecem:
 
-1. All app-specific permissions are cleared (set to “not configured”).
-2. Predefined rules are applied to known safe apps (such as browsers), including HTTPS filtering.
+1. Todas as permissões específicas do aplicativo são limpas (definidas como “não configurado”).
+2. Regras predefinidas são aplicadas a aplicativos conhecidos como seguros (como navegadores), incluindo filtragem de HTTPS.
 
 :::

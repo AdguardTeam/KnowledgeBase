@@ -59,27 +59,27 @@ Ved at angive `true`, aktiveres ophævelsestjek af HTTPS-certifikater.
 
 #### `network.http.compress.body`
 
-Enables HTTP body compression after processing. CoreLibs, AdGuards filtreringsmotor, vil komprimere HTTP-svarindholdet inden afsendelsen med den oprindelige svaralgoritme (hvis understøttet) eller med standard reservealgoritmen (GZip). Svar fra BrowserApi kodes ligeledes, hvis denne indstilling er slået til.
+Aktiverer HTTP body compression-efterbehandling. CoreLibs, AdGuards filtreringsmotor, vil komprimere HTTP-svarindholdet inden afsendelsen med den oprindelige svaralgoritme (hvis understøttet) eller med standard reservealgoritmen (GZip). Svar fra BrowserApi kodes ligeledes, hvis denne indstilling er slået til.
 
 #### `network.tcp.keepalive.enabled`
 
-Periodically sends TCP packets over an idle connection to ensure that it remains active and to renew NAT timeouts.
+Sender periodisk TCP-pakker over en hvilende forbindelse for at sikre, at den forbliver aktiv samt at NAT-timeouts fornys.
 
 #### `network.tcp.keepalive.interval.seconds`
 
-Idle time, in seconds, before sending a keepalive probe. If 0 is specified, the system will use the default value.
+Hviletid, i sekunder, før en keepalive-datapakke sendes. Er 0 angivet, benytter systemet standardværdien.
 
 #### `network.tcp.keepalive.timeout.seconds`
 
-Time, in seconds, before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
+Tid, i sekunder, før endnu en keepalive-datapakke sendes til en peer, der ikke reagerer. Er 0 angivet, benyttes en systemvalgt værdi.
 
 #### `network.https.ech.enabled`
 
-Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, encrypts Client Hellos.
+Benytter en lokal DNS-proxy til at søge efter opsætninger i ECH Config Lists. Hvis fundet, krypteres Client Hellos.
 
 #### `network.https.enforce.certificate.transparency`
 
-Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy.
+Bekræfter ægtheden af alle certifikater for domænet baseret på Chrome Certificate Transparency Policy.
 
 #### `network.https.filter.http3.enabled`
 
@@ -173,36 +173,36 @@ Fjerner Encrypted Client Hello-parametre fra svar.
 
 Blokerer macOS Private Relay-domæner, hvis brugeren har en firewall aktiveret, hvilket igen deaktiverer *Private Relay*-funktionen.
 
-Aktivering af denne indstilling er nyttig i det flg. scenarie: Når macOS Private Relay er aktiv, kan filtrering ikke fungere korrekt og skal deaktiveres. In macOS versions up to 14, AdGuard could automatically disable Private Relay when Protection was enabled. However, starting with macOS 15, this is no longer possible if a firewall is active. By turning on this setting, you can disable Private Relay even when the firewall is enabled, overcoming the previous limitation.
+Aktivering af denne indstilling er nyttig i det flg. scenarie: Når macOS Private Relay er aktiv, kan filtrering ikke fungere korrekt og skal deaktiveres. I macOS til og med version 14 kunne AdGuard automatisk deaktivere Private Relay, når beskyttelse blev aktiveret. Fra macOS 15 er dette dog ikke længere muligt, hvis en firewall er aktiv. Ved at slå denne indstilling til kan Private Relay deaktiveres, selv når firewall'en er aktiveret, hvormed den tidligere begrænsning omgås.
 
 #### `dns.proxy.postquantum.cryptography.enabled`
 
-Secures DNS proxy connections with a hybrid post-quantum key exchange, combining the classical X25519 algorithm with the ML-KEM-768 post-quantum KEM. Applies only to DoH, DoT, and DoQ upstreams.
+Sikrer DNS-proxyforbindelser med en hybrid postkvante nøgleudveksling, der kombinerer den klassiske X25519-algoritme med ML-KEM-768 postkvante KEM. Gælder kun for DoH-, DoT- og DoQ-upstreams.
 
-### Stealth Mode settings
+### Indstillinger for Stealth Mode
 
 #### `stealth.antidpi.http.split.fragment.size`
 
-Adjusts the size of the HTTP request fragmentation. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
+Justerer størrelsen af HTTP-forespørgselsfragmenteringen. Gyldige værdier: 1–1500. Angives en ugyldig værdi, benytter systemet standardværdien.
 
 #### `stealth.antidpi.clienthello.split.fragment.size`
 
-This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
+Denne indstilling angiver størrelsen på TCP-pakkefragmentering, hvilket bidrager til at undgå Deep Packet Inspection. Gyldige værdier: 1–1500. Angives en ugyldig værdi, benytter systemet standardværdien.
 
 #### `stealth.antidpi.http.space.juggling`
 
-Adds extra space between the HTTP method and the URL and removes space after the "Host:" field.
+Tilføjer ekstra mellemrum mellem HTTP-metoden og URL'en og fjerner mellemrum efter feltet "Host:".
 
 #### `stealth.antidpi.split.delay.millisecond`
 
-Here you can specify the delay, in milliseconds, after sending the first fragment, if fragmentation is performed.
+Udføres fragmentering, kan her angives forsinkelsen, i millisekunder, efter afsendelsen af første fragment udføres.
 
-### Subscription link interception settings (userscripts and filters)
+### Indstillinger for opfangelse af abonnementslinks (userscripts og filtre)
 
 #### `subscription.link.interception.userscript`
 
-Activate this feature if you want AdGuard to automatically intercept the URLs of userscripts and open the installation window.
+Aktivér denne funktion, hvis AdGuard automatisk skal opfange URL'erne på userscripts og åbne installationsvinduet.
 
 #### `subscription.link.interception.filter`
 
-Activate this feature if you want AdGuard to automatically intercept subscription URLs (for example, abp:subscribe, etc.) and open the custom filter setup window.
+Aktivér denne funktion, hvis AdGuard automatisk skal opfange abonnements-URL'er (f.eks. abp:subscribe mv.) og åbn vinduet til opsætning af tilpassede filter.
