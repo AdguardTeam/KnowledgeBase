@@ -9,12 +9,16 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
 :::
 
-Sie können die Hauptseite der Erweiterung aufrufen, indem Sie auf das Erweiterungssymbol in der Symbolleiste Ihres Browsers klicken.
+The extension’s main page can be accessed by clicking its icon on your browser’s toolbar.
 
-![Hauptmenü \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Main menu \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/main_popup_mv2.png)
 
-Auf der Hauptseite können Sie jedes Element auf jeder Seite manuell ausblenden — eine entsprechende Regel wird zu den _Benutzerregeln_ hinzugefügt. Sie können auch das _Filter-Protokoll_ öffnen, um vollständige Informationen über den Datenverkehr Ihres Browsers zu erhalten und Anfragen zu blockieren, oder einen Blick auf den Sicherheitsbericht einer Website werfen. Außerdem können Sie Statistiken über die angewandten Sperrregeln einsehen und eine Website melden, wenn z. B. Werbung nicht blockiert wurde. Unsere Filter-Ingenieure werden die Meldung prüfen und das Problem beheben.
+From the main page, you can manage your protection and access key features:
 
-Alle Webanfragen des Browsers werden im _Filter-Protokoll_ angezeigt, zusammen mit detaillierten Informationen zu jeder Anfrage. Zum Beispiel ermöglicht das _Filter-Protokoll_ eine einfache Überwachung der Anfragen, die von der AdGuard Browsererweiterung blockiert werden. Außerdem können Sie mit zwei Klicks jede beliebige Anfrage sperren oder eine bereits blockierte Anfrage zur Positivliste hinzufügen. Das _Filter-Protokoll_ bietet auch eine Vielzahl von Optionen zur Sortierung von Webanfragen, was bei der Erstellung eigener Filterregeln hilfreich sein kann. Sie können das _Filter-Protokoll_ öffnen, indem Sie den entsprechenden Punkt im Hauptmenü oder auf der Einstellungsseite (im Tab _Zusätzliche Einstellungen_) auswählen.
+- Manually hide any element on a webpage (a custom rule will be automatically added to your _User rules_)
+- Open _Filtering log_ to view detailed information about your browser’s traffic and block requests on the fly
+- Submit a complaint about missed ads or broken page elements so our filter engineers can review and fix the issue
+- Check a website’s security report
+- See statistics on all blocked elements
 
-Wenn Sie auf die Symbole in der oberen rechten Ecke des Hauptmenüs klicken, können Sie die Einstellungen der Erweiterung öffnen oder den Schutz anhalten.
+By clicking the icons in the top-right corner of the extension’s main menu, you can manually update filters, pause protection, or open the extension settings.

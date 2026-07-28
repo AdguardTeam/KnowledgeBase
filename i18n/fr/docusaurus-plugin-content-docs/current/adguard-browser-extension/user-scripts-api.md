@@ -11,7 +11,7 @@ Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement 
 
 Lors de l'ajout d'un filtre ou d'une règle utilisateur personnalisée, une notification apparaîtra vous demandant d'activer le mode Développeur pour utiliser ces fonctionnalités dans l'extension.
 
-![Notification \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/notification-allow-user-scripts.jpg)
+![Notification \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/userscripts_api_restrictions.png)
 
 À partir de la version 5.2, l'extension de navigateur AdGuard utilise l'API des scripts utilisateur. Chrome exige que cette nouvelle API respecte les meilleures pratiques en matière de sécurité des utilisateurs.
 

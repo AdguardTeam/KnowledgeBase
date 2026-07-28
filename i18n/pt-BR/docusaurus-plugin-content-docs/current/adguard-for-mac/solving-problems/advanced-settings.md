@@ -57,6 +57,10 @@ Redireciona as solicitações de DNS seguro para um proxy de DNS local, se houve
 
 Ao definir `true`, você habilita a verificação de revogação de certificado HTTPS.
 
+#### `network.http.compress.body`
+
+Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering engine, will compress the HTTP response body before sending it with the original response algorithm (if supported) or with the default fallback algorithm (GZip). Responses from BrowserApi will also be encoded if this option is enabled.
+
 #### `network.tcp.keepalive.enabled`
 
 Envia periodicamente pacotes TCP através de uma conexão inativa para garantir que ela permaneça ativa e para renovar os tempos limite do NAT.

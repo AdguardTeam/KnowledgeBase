@@ -21,19 +21,19 @@ sidebar_position: 5
 
 - **Журнал фильтрации**
 
-  ![Журнал фильтрации \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+  ![Filtering log \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/filtering_log.png)
 
   Из-за ограничений declarativenetRequest мы не можем точно показать, какое правило сработало, но покажем «предполагаемое правило» на основе данных нашего движка. Для получения точной информации можно самостоятельно установить «распакованное» расширение в браузере. Как это сделать, вы узнаете [в другой статье](/adguard-browser-extension/solving-problems/debug-rules/).
 
 - _Защита от трекинга_
 
-  ![Защита от трекинга \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+  ![Tracking protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
 
   Здесь больше нет раздела _Файлы cookie_, а также _Самоуничтожение куки сайта_ и _Самоуничтожение сторонних куки_ отсутствуют, поскольку мы не можем устанавливать время жизни файлов cookie с помощью декларативных правил.
 
 - В основных настройках больше нет вкладки _Защита от фишинговых и вредоносных сайтов_. Чтобы защитить себя от таких сайтов, включите соответствующие фильтры _Безопасности_ на вкладке _Фильтры_.
 
-  ![Безопасность \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![Security \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/security_filters.png)
 
 ## Ограничения
 

@@ -9,50 +9,71 @@ sidebar_position: 2
 
 :::
 
-광고 차단은 모든 광고 차단기의 핵심 기능이며 AdGuard 브라우저 확장 프로그램도 예외는 아닙니다. 광고 차단은 특수 언어로 작성된 규칙 집합인 필터를 기반으로 합니다. 이러한 규칙은 어떤 요소를 차단해야 하고 어떤 요소를 차단하지 말아야 하는지를 알려줍니다. AdGuard는 규칙을 해석하고 이를 기반으로 웹 요청을 수정합니다. 결과적으로 웹페이지에 광고가 표시되지 않습니다.
+- [Custom filters](#custom-filters)
+- [User rules](#user-rules)
+- [Allowlist](#allowlist)
 
-![필터 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
+Blocking ads is the core functionality of any ad blocker, and AdGuard Browser Extension is no exception. Ad blocking is based on filters — sets of rules written in a special language. These rules define which page elements should be blocked and which should not. AdGuard interprets these rules and modifies web requests accordingly. As a result, you stop seeing ads on your webpages.
 
-모든 필터는 역할에 따라 분류됩니다. 예를 들어 광고 차단 필터, 프라이버시 보호 필터, 소셜 미디어 필터 등의 범주가 있습니다. 개별 필터 또는 전체 그룹을 한 번에 활성화할 수 있습니다.
+![Filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/filters.png)
 
-![광고 차단 필터 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
+All filters are grouped by category based on their role:
 
-## 사용자 정의 필터
+- Ad blocking: Block various types of advertisements
+- Privacy: Block online trackers and analytical systems to protect your data
+- Social widgets: Block social media elements like _Like_ and _Share_ buttons
+- Annoyances: Block irritating web elements, such as cookie notices, third-party widgets, or in-page popups
+- Security: Block requests to phishing and malicious websites
+- Other: Contain miscellaneous filters that do not fit into the main categories
+- Language-specific: Block ads on websites in specific languages
+- Custom: Allow you to add your own filters from a local file or URL
 
-다른 필터 그룹의 기능은 설명이 필요 없을 것 같지만, **사용자 정의**이라는 필터 그룹은 설명이 좀 더 필요한 것 같습니다.
+You can enable either individual filters or entire groups at once.
 
-![사용자 정의 필터 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
+![Security filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/security_filters.png)
 
-이 탭에서는 기본적으로 확장 프로그램에 없는 필터를 추가할 수 있습니다. [인터넷에는 공개적으로 사용 가능한 필터](https://filterlists.com)가 많이 있습니다. 또한 자신만의 필터를 만들고 추가할 수 있습니다. 필터 세트를 만들고 원하는 방식으로 광고 차단을 맞춤 설정할 수 있습니다.
+## Custom filters {#custom-filters}
 
-필터를 추가하려면 **사용자 정의 필터 추가**를 클릭하고 추가하려는 필터의 URL 또는 파일 경로를 입력한 후 **다음**을 클릭합니다.
+While the features of other filter groups are more or less self-explanatory, there is a group called _Custom_ that may raise additional questions.
 
-![사용자 정의 필터 추가 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
+![Custom filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/custom_filters.png)
 
-Custom filters update independently, so your filtering remains effective and current without requiring extension updates.
+In this tab, you can add filters that are not included in the extension by default. There are plenty of [publicly available filters on the Internet](https://filterlists.com). Moreover, you can create and add your own filters. In fact, you can build any set of filters and customize ad blocking the way you like.
+
+To add a filter, just click _Add custom filter_, enter the URL or the file path of the filter you want to be added and click _Next_.
+
+![Add a custom filter \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_filter.png)
+
+Custom filters update independently, keeping your protection effective and up to date without requiring extension updates.
 
 ## 사용자 규칙 {#user-rules}
 
-**사용자 규칙**은 광고 차단을 맞춤 설정하는 데 도움이 되는 또 다른 도구입니다.
+_User rules_ is another tool that helps you customize the blocking of ads.
 
-![사용자 규칙 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
+![User rules \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/user_rules.png)
 
-새 규칙을 추가하는 방법에는 여러 가지가 있습니다. 가장 간단한 방법은 규칙을 입력하는 것이지만, [규칙 구문](/general/ad-filtering/create-own-filters)에 대한 지식이 필요합니다.
+There are several ways to add new rules. The most straightforward is to just type a rule in, but it requires some knowledge of the [rule syntax](/general/ad-filtering/create-own-filters).
 
-텍스트 파일에서 바로 사용할 수 있는 필터 목록을 가져올 수도 있습니다. **서로 다른 규칙은 줄 바꿈으로 구분해야 합니다**. 바로 사용할 수 있는 필터 목록을 가져오는 것은 사용자 정의 필터 탭에서 하는 것이 좋습니다.
+You can import a ready-to-use filter list from a text file as well. **Make sure that different rules are separated by line breaks.**
 
-또한 자신만의 필터링 규칙을 내보낼 수도 있습니다. 이 옵션은 브라우저나 장치 간에 규칙 목록을 전송할 때 유용합니다.
+:::note
 
-웹사이트를 허용 목록에 추가하거나(자세한 내용은 아래 참조) 페이지에서 요소를 숨기기 위해 어시스턴트 도구를 사용하면 해당 규칙이 **사용자 규칙**에도 저장됩니다.
+Importing a ready-to-use filter list is better done in the _Custom filters_ tab.
 
-## 허용 목록
+:::
 
-**허용 목록**은 특정 웹사이트를 필터링에서 제외하는 데 사용됩니다. 목록에 있는 웹사이트에는 차단 규칙이 적용되지 않습니다.
+You can export your own filtering rules. This option is good for transferring your list of rules between browsers or devices.
 
-![허용 목록 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
+When you add a website to _Allowlist_ or use the Assistant tool to hide an element on a page, the corresponding rule is automatically saved in _User rules_.
 
-_Allowlist_ can also be inverted: you can unblock ads everywhere except on the websites added to this list. To do that, activate the _Invert Allowlist_ option. Before it turns on, a confirmation dialog will appear to prevent accidental activation and explain what will happen.
+## 허용 목록 {#allowlist}
 
-![허용 목록 반전 \*border] (https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
+_Allowlist_ is used to exclude specific websites from filtering. None of the blocking rules will apply to the websites on this list.
 
-허용 목록을 가져오거나 내보낼 수도 있습니다. 예를 들어 각 브라우저에 동일한 규칙을 적용하려는 경우 유용합니다.
+![Allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allowlist.png)
+
+_Allowlist_ can also be inverted, allowing you to unblock ads everywhere except on the websites added to this list. To do this, go to _Additional settings_ and enable  _Invert Allowlist_. Before it activates, a confirmation dialog will appear to explain how it works and prevent accidental activation.
+
+![Invert allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/invert_allowlist_dialog.png)
+
+You can also import and export existing allowlists. It is useful if you want to apply the same rules across all your browsers.

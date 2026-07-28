@@ -9,12 +9,16 @@ sidebar_position: 1
 
 :::
 
-ブラウザ拡張機能のメイン画面は、ブラウザのツールバーにある拡張機能のアイコンをクリックすることで開くことができます。
+The extension’s main page can be accessed by clicking its icon on your browser’s toolbar.
 
-![Main menu \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Main menu \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/main_popup_mv2.png)
 
-メイン画面では、ページ上の任意の要素を手動で非表示にしたり（対応するルールは「ユーザールール」に追加されます）、「フィルタリングログ」を開いてブラウザのトラフィックやブロック要求の情報を随時確認したり、ウェブサイトの安全性の報告を確認したりできます。 さらに、現在閲覧中のウェブサイトについて苦情を提出することができ（例えば、ページ上に見逃された広告がある場合、当社のフィルターエンジニアがご報告を確認し、問題を修正します）、適用されたブロックルールに関する統計情報を見ることができます。
+From the main page, you can manage your protection and access key features:
 
-ブラウザが行なったすべてのウェブリクエストは、各リクエストの詳細情報とともに、「フィルタリングログ」に表示されます。 また、「フィルタリングログ」では、たとえば、AdGuard ブラウザ拡張機能によってブロックされたリクエストを簡単に監視できます。 また、2回クリックするだけで、あらゆるリクエストをブロックしたり、以前にブロックしたリクエストをホワイトリストに追加することができます。 また、「フィルタリングログ」では、ウェブリクエストをソートするためのさまざまなオプションが用意されており、独自のフィルタリングルールを作成する際に役立ちます。 「フィルタリングログ」を開くには、メインメニューの対応する項目を選択するか、⚙設定→「_追加設定_」から開くことができます。
+- Manually hide any element on a webpage (a custom rule will be automatically added to your _User rules_)
+- Open _Filtering log_ to view detailed information about your browser’s traffic and block requests on the fly
+- Submit a complaint about missed ads or broken page elements so our filter engineers can review and fix the issue
+- Check a website’s security report
+- See statistics on all blocked elements
 
-拡張機能のメインメニューの右上にあるアイコンを使って、拡張機能の設定を開いたり（⚙アイコン）、保護機能を一時停止したり（⏸アイコン）することができます。
+By clicking the icons in the top-right corner of the extension’s main menu, you can manually update filters, pause protection, or open the extension settings.

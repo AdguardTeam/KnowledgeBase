@@ -15,7 +15,7 @@ Some features are only available for certain products because of limitations fro
 
 :::
 
-## General {#general}
+## Generelt {#general}
 
 ### Block trackers {#blocktrackers}
 
@@ -187,7 +187,7 @@ This feature blocks automatic reporting and sampling of suspected malware.
 
 This feature disables data collection about Windows component problems.
 
-## Miscellaneous {#miscellaneous}
+## Diverse {#miscellaneous}
 
 ### Hide Referer from third parties {#referer}
 

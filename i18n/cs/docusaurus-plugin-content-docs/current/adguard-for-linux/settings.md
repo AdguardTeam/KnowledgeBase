@@ -43,7 +43,7 @@ Chcete-li zobrazit stav ochrany, zadejte:
 adguard-cli status
 ```
 
-![Status/Stop protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+![Status/Stop protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/6status-stop.png)
 
 ### Restartovat ochranu
 
@@ -85,7 +85,7 @@ Pro konfiguraci AdGuardu pro Linux použijte příkaz `config`. Dílčí příka
 
 - `show [<section-name>]`: Zobrazení aktuální konfigurace v souboru `proxy.yaml` (nebo konkrétní sekce)
 
-  ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/7config_show.png)
 
 - `set <key> <value>`: Konfigurace volby v souboru `proxy.yaml`
   - `listen_ports.http_proxy`: Naslouchací port HTTP

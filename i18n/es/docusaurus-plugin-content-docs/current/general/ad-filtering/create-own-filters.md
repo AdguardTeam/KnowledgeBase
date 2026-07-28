@@ -3474,6 +3474,7 @@ example.org#@#body{remove:true;}
 - [Pseudo-class `:remove()` and pseudo-property `remove`](#remove-pseudos)
 - [Pseudo-class `:is()`](#extended-css-is)
 - [Pseudo-class `:not()`](#extended-css-not)
+- [Pseudo-class `:empty-trimmed`](#extended-css-empty-trimmed)
 - [Pseudo-class `:if-not()` (removed)](#extended-css-if-not)
 
 CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends CSS capabilities by adding support for the new pseudo-elements. We have developed a separate [open-source library](https://github.com/AdguardTeam/ExtendedCss) for non-standard element selecting and applying CSS styles with extended properties.
@@ -4147,6 +4148,62 @@ The `:not()` is considered as a standard CSS pseudo-class inside the argument of
 </div>
 ```
 
+#### Pseudo-class `:empty-trimmed` {#extended-css-empty-trimmed}
+
+The `:empty-trimmed` pseudo-class allows selecting elements without text content. Unlike the native CSS [`:empty`](https://developer.mozilla.org/en-US/docs/Web/CSS/:empty) pseudo-class, which matches elements that have no child nodes at all (no elements, no text nodes), `:empty-trimmed` checks `textContent` of the element **and its descendants**. It also matches elements whose text content consists only of whitespace, including non-breaking spaces such as `&nbsp;`.
+
+**Syntax**
+
+```text
+[target]:empty-trimmed
+```
+
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
+
+:::note
+
+This pseudo-class has no arguments.
+
+:::
+
+:::info Compatibility
+
+Added in ExtendedCSS v2.0.0.
+
+Rules with the `:empty-trimmed` pseudo-class are supported by AdGuard Browser Extension v5.5 or later. Such rules do not work in AdGuard Content Blocker.
+
+:::
+
+**Examples**
+
+`div > p:empty-trimmed` selects `p#empty`, `p#spaces`, `p#nbsp`, `p#child-empty`, and `p#comment`:
+
+```html
+<!-- HTML code -->
+<div>
+  <p id="empty"></p>
+  <p id="spaces">   </p>
+  <p id="nbsp">&nbsp;</p>
+  <p id="text">hello</p>
+  <p id="child-empty"><span></span></p>
+  <p id="child-text"><span>world</span></p>
+  <p id="comment"><!-- hidden --></p>
+  <p id="zwsp">&#x200B;</p>
+</div>
+```
+
+`div > p:not(:empty-trimmed)` selects `p#text`, `p#child-text`, and `p#zwsp`.
+
+:::note
+
+An element like `<p><span></span></p>` matches `:empty-trimmed` (its text content is empty) but does **not** match native `:empty` (it has a child `<span>` node).
+
+Elements containing only HTML comments (e.g. `<!-- hidden -->`) also match `:empty-trimmed`, because comment nodes are not reflected in `textContent`.
+
+Zero-width characters such as zero-width space (`\u200B`) are **not** treated as whitespace. An element containing only zero-width characters does **not** match `:empty-trimmed`.
+
+:::
+
 #### Pseudo-class `:if-not()` (removed) {#extended-css-if-not}
 
 :::danger Removal notice
@@ -4249,15 +4306,28 @@ This rule removes all `div` elements with the attribute `some_attribute` on `exa
 
 ### Special attributes {#html-filtering-rules--special-attributes}
 
-In addition to usual attributes, which value is every element checked for, there is a set of special attributes that change the way a rule works. Below there is a list of these attributes:
+In addition to checking standard HTML attributes, you can filter elements based on their inner text or script content.
 
-#### `tag-content`
+#### `:contains()`
+
+The recommended way to filter elements by their content is using the `:contains()` pseudo-class. It allows you to target elements based on the actual text or script variables they contain, supporting both plain text strings and regular expressions.
+
+**Examples:**
+
+```example.com$$script:contains(Adverts)
+example.com$$div:contains("Sponsored by")
+example.com$$script:contains(/ad_system_\d+/)
+```
+
+The first rule removes any `<script>` tag containing the word `Adverts`. The second targets any `<div>` containing the phrase `Sponsored by`. The third rule utilizes a regular expression to match dynamic script patterns.
 
 :::caution Deprecation notice
 
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
+The attributes listed below are legacy features kept only for backward compatibility. They may become unsupported in future updates. Prefer using the `:contains()` pseudo-class where it is available.
 
 :::
+
+#### `tag-content`
 
 This is the most frequently used special attribute. It limits selection with those elements whose innerHTML code contains the specified substring.
 
@@ -4287,12 +4357,6 @@ This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 #### `wildcard`
 
-:::caution Deprecation notice
-
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
-
-:::
-
 This special attribute works almost like `tag-content` and allows you to check the innerHTML code of the document. Rule will check if HTML code of the element fits the [search pattern](https://en.wikipedia.org/wiki/Glob_(programming)).
 
 You must use `""` to escape `"`, for instance: `$$script[wildcard=""banner""]`
@@ -4310,12 +4374,6 @@ This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 :::
 
 #### `max-length`
-
-:::caution Deprecation notice
-
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
-
-:::
 
 Specifies the maximum length for content of HTML element. If this parameter is set and the content length exceeds the value, a rule does not apply to the element.
 
@@ -4340,12 +4398,6 @@ This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 :::
 
 #### `min-length`
-
-:::caution Deprecation notice
-
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
-
-:::
 
 Specifies the minimum length for content of HTML element. If this parameter is set and the content length is less than preset value, a rule does not apply to the element.
 
@@ -4570,6 +4622,12 @@ Exception rules can disable some scriptlets on particular domains. The syntax fo
 Learn more about [how to debug scriptlets](#debug-scriptlets).
 
 More information about scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
+
+:::caution Restricciones
+
+Scriptlets rules can only be used [**in trusted filters**](#trusted-filters).
+
+:::
 
 :::info Compatibility
 

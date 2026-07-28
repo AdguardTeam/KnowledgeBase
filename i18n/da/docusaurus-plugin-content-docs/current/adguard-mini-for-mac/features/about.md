@@ -1,5 +1,5 @@
 ---
-title: About
+title: Om
 sidebar_position: 7
 ---
 
@@ -15,7 +15,7 @@ You can also find the links to:
 - Our official website
 - EULA and Privacy policy
 - Acknowledgements
-- Version history
+- Versionshistorik
 
 :::note Reminder
 

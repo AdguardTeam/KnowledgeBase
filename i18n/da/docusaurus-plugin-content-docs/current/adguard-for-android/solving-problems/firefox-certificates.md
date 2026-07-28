@@ -1,81 +1,81 @@
 ---
-title: Manual installation of the security certificate into the Firefox browser
+title: Manuel installation af sikkerhedscertifikatet i Firefox-webbrowseren
 sidebar_position: 10
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-For AdGuard to successfully filter HTTPS traffic in Firefox, the browser needs to trust AdGuard's certificate. It can be achieved differently for different versions of the Firefox.
+For at AdGuard kan filtrere HTTPS-trafik i Firefox, skal webbrowseren anse AdGuards certifikat for betroet. Dette gøres på forskellig vis afhængigt af Firefox-versionen.
 
-### Method 1
+### Metode 1
 
 :::note
 
-This method works in Firefox for Android version 90.0 and later.
+Denne metode fungerer i Firefox til Android version 90.0 og senere.
 
 :::
 
-To make Firefox trust the AdGuard certificate, do the following:
+Gør flg. for at få Firefox til at anse AdGuard-certifikatet for betroet:
 
-1. Run the browser.
+1. Kør webbrowseren.
 
-1. Go to **Settings** → **About Firefox**.
+1. Gå til **Indstillinger** → **Om Firefox**.
 
-    ![About Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
+    ![Om Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
-1. Tap the Firefox logo five times.
+1. Tryk på Firefox-logoet fem gange.
 
-1. Navigate to **Settings** → **Secret Settings**.
+1. Gå til **Indstillinger** → **Hemmelige indstillinger**.
 
-    ![Secret Settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+    ![Hemmelige indstillinger *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
-1. Toggle **Use third party CA certificates**.
+1. Slå **Brug tredjeparts CA-certifikater** til.
 
-### Method 2
+### Metode 2
 
 :::note
 
-This method will only work on **rooted** devices.
+Denne metode fungerer kun på **rootede** enheder.
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Installér og opsæt](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; På Windows-platformen skal **Samsung**-ejere muligvis installere [dette værktøj](https://developer.samsung.com/mobile/android-usb-driver.html).
 
-1. Activate the **developer mode** and enable **USB debugging**:
+1. Aktivér både **Udviklertilstand** samt **USB-fejlfinding**:
 
-    - Open the **Settings** app on your phone;
-    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
-    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
-    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+    - Åbn appen **Indstillinger** på mobilen;
+    - Gå til afsnittet **System** (sidste punkt på indstillingsmenuen). Find i dette afsnit underpunktet **Om telefon**;
+    - Tryk 7 gange på linjen **Build-nummer**. Dernæst ses meddelelse **Du er nu udvikler** (angiv om nødvendigt enhedens oplåsningskode);
+    - Åbn **Systemindstillinger** → **Udviklerindstillinger** → Rul ned og aktivér **USB-fejlfinding** → Bekræft, at fejlfinding er aktiveret i vinduet **Tillad USB-fejlfinding** efter omhyggeligt at have læst advarslen.
 
-1. Install the [Firefox](https://www.mozilla.org/en-US/firefox/releases/) browser (release version);
+1. Installér [Firefox](https://www.mozilla.org/en-US/firefox/releases/)-webbrowseren (udgivelsesversion);
 
-1. Open the **AdGuard settings** (gear icon in the bottom right corner) → **Filtering** → **Network** → **HTTPS filtering** → **Security certificate** → **Instructions for Firefox** → **Install for old versions**;
+1. Åbn **AdGuard-indstillingerne** (tandhjulsikonet nederste til hjørne) → **Filtrering** → **Netværk** → **HTTPS-filtrering** → **Sikkerhedscertifikat** → **Vejledning til Firefox** → **Installér til gamle versioner**;
 
-1. Open the folder `data/data/org.mozilla.firefox/files/mozilla` using `adb shell su` and `cd data/data/...`, then browse to the folder named `xxxxxxx.default` and memorize its name;
+1. Åbn mappen `data/data/org.mozilla.firefox/files/mozilla` vha. `adb shell su` og `cd data/data/...`og gå dernæst til mappen `xxxxxxx.default`, og husk dens navn;
 
-1. In the specified folder we are interested in two files:
+1. I den pågældende mappe er to filer af interesse:
 
     - `cert9.db`
     - `key4.db`
 
-1. We need to move these files to a folder of the browser where the security certificate issue occurred:
+1. Disse filer skal flyttes til webbrowsermappen, hvori problemet med sikkerhedscertifikatet opstod:
 
     - `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`.
 
-1. The full command will look like this:
+1. Den komplette kommando vil se således ud:
 
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
 
-    In case you received the system notification **permission denied**, you should first move the specified files to the permission-free directory. And after that you should move them to the necessary folder in your Firefox browser.
+    Vises systemmeddelelsen **Tilladelse nægtet**, skal de angivne filer først flyttes til den tilladelsesfrie mappe. Flyt dem dernæst til den relevante mappe i Firefox-webbrowseren.
 
-    The full command should look something like this:
+    Den komplette kommando bør se ca. således ud:
 
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxx.default/cert9.db sdcard/Download`
@@ -83,4 +83,4 @@ This method will only work on **rooted** devices.
     - `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
 
-    If `adb shell su` does not work, you should try `adb shell` initially, and then `su`.
+    Fungerer `adb shell su` ikke, så prøv først med `adb shell` og dernæst `su`.

@@ -57,6 +57,10 @@ sidebar_position: 9
 
 设置为 `true`，将启用 HTTPS 证书吊销检查。
 
+#### `network.http.compress.body`
+
+Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering engine, will compress the HTTP response body before sending it with the original response algorithm (if supported) or with the default fallback algorithm (GZip). Responses from BrowserApi will also be encoded if this option is enabled.
+
 #### `network.tcp.keepalive.enabled`
 
 定期在空闲连接上发送 TCP 数据包，以确保连接保持活动状态，并更新 NAT 超时。

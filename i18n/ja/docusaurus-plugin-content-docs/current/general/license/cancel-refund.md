@@ -9,7 +9,7 @@ sidebar_position: 5
 
  1. Go to your [AdGuard account](https://adguardaccount.com).
  1. メニューで「*ライセンス*」を押します。
- 1. 解約したいサブスクリプションの下の「**サブスクリプションを解約する**」をクリックします。 ![キャンセル](https://cdn.adtidy.org/blog/new/fgjbxcancel-ja-1.png)
+ 1. Click *Cancel auto-renewal* below the subscription you no longer need. ![キャンセル](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub-upd.png)
 
  ※解約されたサブスクリプションは、有効期限まで有効のままで、有効期間が終了するまでご利用いただけます。
 

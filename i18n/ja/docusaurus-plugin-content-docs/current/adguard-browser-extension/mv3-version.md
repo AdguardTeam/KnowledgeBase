@@ -17,23 +17,23 @@ AdGuard ブラウザ拡張機能MV3対応版は、SNSウィジェット、バナ
 
 ## 機能と設定における主な変更点
 
-- **自動および手動のフィルタ更新なし**　_フィルタ_タブの「_フィルタの自動更新_」および「_フィルタ更新の確認_」オプションは使用できなくなりました。 一部のルールは現在 DNR 形式で適用されているため、リクエストに応じてフィルタを更新することはできません。ストアでのレビューとともに拡張機能を更新する完全なプロセスを通じてのみ更新できます。
+- **自動および手動のフィルタ更新なし**　_フィル&#x30BF;_&#x30BF;ブの「_フィルタの自動更新_」および「_フィルタ更新の確認_」オプションは使用できなくなりました。 一部のルールは現在 DNR 形式で適用されているため、リクエストに応じてフィルタを更新することはできません。ストアでのレビューとともに拡張機能を更新する完全なプロセスを通じてのみ更新できます。
 
 - **フィルタリングログ**
 
-  ![Filtering log \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+  ![Filtering log \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/filtering_log.png)
 
   DNRの制限により、どのルールが機能したかを正確に示すことはできませんが、AdGuardのエンジンに基づいて「発動したと想定されるルール」を表示します。 正確な情報を確認されたい場合は、ご自身でブラウザにAdGuardブラウザ拡張機能の「解凍」版をインストールする必要があります。 これを行う方法の詳細な手順については、[別の記事](/adguard-browser-extension/solving-problems/debug-rules/)を参照してください。
 
 - _トラッキング防止_（旧称：_ステルスモード_）
 
-  ![Tracking protection \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+  ![Tracking protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
 
   宣言型ルールを使用して Cookie の TTL を設定できないため、_Cookie_ セクション、_ファーストパーティ Cookie の自己破壊_、_サードパーティ Cookie の自己破壊_ セクションはありません。
 
-- 「_フィッシング＆マルウェア保護_」は、一般設定では利用できなくなりました。 悪質なウェブサイトや詐欺から身を守るには、_フィルタ_タブで適切な「_セキュリティ_」フィルタを有効にしてください。
+- 「_フィッシング＆マルウェア保護_」は、一般設定では利用できなくなりました。 悪質なウェブサイトや詐欺から身を守るには、_フィル&#x30BF;_&#x30BF;ブで適切な「_セキュリティ_」フィルタを有効にしてください。
 
-  ![Security \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![Security \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/security_filters.png)
 
 ## 制限
 

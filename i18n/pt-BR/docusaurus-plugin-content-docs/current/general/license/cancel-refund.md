@@ -9,7 +9,7 @@ A assinatura pode ser cancelada em sua conta do AdGuard. Para cancelar sua assin
 
  1. Go to your [AdGuard account](https://adguardaccount.com).
  1. Selecione *Licenças*.
- 1. Clique em *Cancelar assinatura* abaixo da assinatura de que você não precisa mais. ![Cancelar](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
+ 1. Click *Cancel auto-renewal* below the subscription you no longer need. ![Cancelar](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub-upd.png)
 
  A assinatura cancelada será válida até a data de vencimento.
 

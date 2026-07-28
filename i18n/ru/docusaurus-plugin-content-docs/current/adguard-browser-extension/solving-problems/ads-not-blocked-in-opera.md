@@ -7,7 +7,7 @@ sidebar_position: 3
 
 Чтобы предоставить необходимое разрешение:
 
-![Разрешить доступ к результатам поиска](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/allow-access.png)
+![Allow access to search page results \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/opera_allow_search.png)
 
 1. Кликните по иконке куба рядом с адресной строкой → _Управление расширениями..._.
 2. Найдите AdGuard Антибаннер в списке установленных расширений и поставьте галочку напротив _Разрешить доступ к результатам на странице поиска_.

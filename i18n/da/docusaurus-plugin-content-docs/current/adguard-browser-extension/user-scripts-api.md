@@ -5,13 +5,13 @@ sidebar_position: 8
 
 :::info
 
-This article is about AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true).
+Denne artikel omhandler AdGuard Browser Extension, der kun beskytter webbrowseren. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true).
 
 :::
 
 When adding a custom filter or user rule, a notification will appear asking you to enable the Developer mode to use these features in the extension.
 
-![Notification \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/notification-allow-user-scripts.jpg)
+![Notification \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/userscripts_api_restrictions.png)
 
 Starting with version 5.2, AdGuard Browser Extension uses the User Scripts API. Chrome requires this new API to follow best practices for user safety.
 

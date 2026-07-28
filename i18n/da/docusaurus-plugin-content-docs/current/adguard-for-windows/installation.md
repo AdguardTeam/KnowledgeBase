@@ -5,120 +5,120 @@ sidebar_position: 2
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel dækker AdGuard til Windows, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-## System requirements
+## Systemkrav
 
-**Operating system:** Microsoft Windows 11, 10, 8.1, 8.
+**Operativsystem:** Microsoft Windows 11/10/8.1/8.
 
-**RAM:** at least 1 GB.
+**RAM:** Minimum 512 MB.
 
-**Free disk space:** 150 Mbytes.
+**Ledig diskplads:** 150 MB.
 
-**Browsers:** Microsoft Edge, Microsoft Internet Explorer (all versions), Opera, Google Chrome, Yandex.Browser, Mozilla Firefox, and many other browsers.
+**Webbrowsere:** Microsoft Edge, Microsoft Internet Explorer (alle versioner), Opera, Google Chrome, Yandex.Browser, Mozilla Firefox og mange andre webbrowsere.
 
-## AdGuard installation
+## AdGuard-installation
 
-To install AdGuard on a Windows PC or tablet, follow these steps:
+Følg disse trin for at installere AdGuard på en Windows-PC eller -tablet:
 
-1. Go to the [AdGuard website](https://adguard.com) and click *Download*. You can also get the installation program from the [download page](https://adguard.com/download.html?auto=1) — the download will start automatically.
+1. Gå til [AdGuard-webstedet](http://adguard.com) og klik på *Download*. Installationsprogrammet kan også hentes fra [download-siden](https://adguard.com/download.html?auto=1) — download starter automatisk.
 
    ![Download AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/website_en.png)
 
-2. Once the download is complete, open the file *adguardInstaller.exe*.
+2. Når download er færdig, åbn filen *adguardInstaller.exe*.
 
-   ![Downloaded file](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/download_en.png)
+   ![Downloadet fil](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/download_en.png)
 
-3. You’ll see a User Account Control prompt asking if you want to allow the app to make changes to your PC. Click *Yes*.
+3. Prompten Brugerkontokontrol spørger nu, om appen må foretage ændringer på PC'en. Klik på *Ja*.
 
-   ![Allow changes *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/allow-changes.png)
+   ![Tillad ændringer *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/allow-changes.png)
 
-4. Choose the folder where you want AdGuard to be installed.
+4. Vælg dernæst mappen på PC'en, i hvilken appen skal installeres.
 
-   ![Choose folder *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer1_en.png)
+   ![Vælg mappe *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer1_en.png)
 
-   If you want to select a different location, click *Browse*, choose the folder, and click *OK*. You can also create a new folder by clicking *Make New Folder* and naming it. If you’d like a desktop shortcut, check the box *Create a desktop shortcut*. Then click *Install* to start the installation.
+   Ønskes en anden placering valgt, klik på *Gennemse*, vælge mappen og klik på *OK*. AdGuard kan også installeres i en ny mappe ved at klikke på *Opret ny mappe* og angive dens navn. For at oprette en skrivebordsgenvej til AdGuard, afkryds feltet *Opret skrivebordsgenvej*. Tryk på *Installér* for at fortsætte med installationen.
 
    ![Start installation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer2_en.png)
 
-5. Wait for the installation to complete and click *Finish*.
+5. Afvent at installationen færdiggøres og klik dernæst på *Færdig*.
 
-   ![Complete installation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer3_en.png)
+   ![Færdiggør installation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer3_en.png)
 
-   Congratulations! AdGuard has been successfully installed. You’ll be prompted to set up protection according to your preferences.
+   Sådan! AdGuard er nu installeret. En anmodning om at opsætte beskyttelse jævnfør egne præferencer vises.
 
-   ![Setting up protection *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/setting_up_protection_en.png)
+   ![Opsætning af beskyttelse *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/setting_up_protection_en.png)
 
-   After that, the main window will open, where you can adjust the app’s settings.
+   Dernæst åbnes hovedvinduet, hvorfra appens indstillinger kan justeres.
 
-## How to uninstall AdGuard for Windows {#uninstall}
+## Sådan afinstalleres AdGuard til Windows {#uninstall}
 
-### Regular method
+### Almindelig metode
 
-If you need to uninstall or reinstall AdGuard, do the following:
+Gør flg. for enten at afinstallere eller geninstallere AdGuard:
 
-- For Microsoft Windows 10 & 11: Open the *Start Menu* by clicking *Start*, then select *Settings*. In the window that opens, click  *Apps* → *Installed apps*. Select *AdGuard* from the list of your installed apps, click the three-dot menu, and select *Uninstall*.
+- Microsoft Windows 10/11: Åbn menuen *Start* ved at klikke på *Start*, og vælg *Indstillinger*. Klik i det åbnede vindue på *Apps* → *Installerede apps*. Vælg *AdGuard* fra listen over installerede apps, klik på 3-priksmenuen og vælg *Afinstallér*.
 
-   ![Windows 10 & 11 uninstallation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/win11_uninstall_adguard.png)
+   ![Windows 10/11 afinstallation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/win11_uninstall_adguard.png)
 
-- For Microsoft Windows 8: Right-click the *empty space* in the lower left corner of the task bar and select *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
+- Microsoft Windows 8: Højreklik på det *tomme felt* nederste til venstre på proceslinjen, og vælg *Kontrolpanel*. Klik på *Afinstallere et program* i afsnittet *Programmer*, vælg dernæst *AdGuard* fra listen over installerede apps, og tryk på knappen *Afinstallér* ovenover listen. Bekræft handlingen ved at klikke på *Afinstallér AdGuard* i det åbnede vindue.
 
-- For Microsoft Windows 8.1: Right-click the *Start button* and select *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
+- Microsoft Windows 8.1: Højreklik på *Start-knappen* og vælg *Kontrolpanel*. Klik på *Afinstallere et program* i afsnittet *Programmer*, vælg dernæst *AdGuard* fra listen over installerede apps, og tryk på knappen *Afinstallér* ovenover listen. Bekræft handlingen ved at klikke på *Afinstallér AdGuard* i det åbnede vindue.
 
-- For Microsoft Windows 7: Open *Start Menu*. In the search box, type *Control Panel*. Click *Uninstall a program* in the *Programs* section, then select *AdGuard* from the list of installed apps and press the *Uninstall* button located right above the list. Confirm the action by clicking *Uninstall AdGuard* in the window that opens.
+- Microsoft Windows 7: Åbn *Startmenu*. Skriv *Kontrolpanel*i søgefeltet. Klik på *Afinstallere et program* i afsnittet *Programmer*, vælg dernæst *AdGuard* fra listen over installerede apps, og tryk på knappen *Afinstallér* ovenover listen. Bekræft handlingen ved at klikke på *Afinstallér AdGuard* i det åbnede vindue.
 
-### Advanced method {#advanced}
+### Avanceret metode {#advanced}
 
-In case regular uninstall doesn't work for any reason, you can try to use an advanced method. First of all, you need to [download the uninstaller tool](https://static.adtidy.org/windows/uninstaller/uninstall_utility.zip) created by our developers. Extract the archive to any folder on your PC and run the **Adguard.UninstallUtility.exe** file, and allow the app to make changes to your device. Then follow the instruction below:
+Fungerer alm. afinstallation af en eller anden grund ikke, kan en avanceret metode forsøges. Fiørste trin er at [download afinstallationsværktøjet](https://static.adtidy.org/windows/uninstaller/uninstall_utility.zip) fra vores udviklere. Udpak arkivet til en vilkårlig mappe på PC'en, og eksekvér filen **Adguard.UninstallUtility.exe**. Tillad appen at foretage ændringer på enheden. Følg dernæst vejledningen nedenfor:
 
-- Select *AdGuard Ad Blocker* and *Standard* uninstall type, then click *Uninstall*.
+- Vælg *AdGuard Ad Blocker* og *Standard* afinstallationstype, og klik dernæst på *Afinstallér*.
 
-   ![Standard uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard.jpg)
+   ![Standard afinstallation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard.jpg)
 
-- Click *OK* once the warning window pops up:
+- Klik på *OK*, når advarselsvinduet vises:
 
-   ![Standard uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
+   ![Standard afinstallation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
+- Vent indtil afinstallationen er færdig — dernæst vises sætning **Afinstallation fuldført** samt en prompt om at genstarte computeren:
 
-   ![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard_complete.jpg)
+   ![Afinstallation færdig *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard_complete.jpg)
 
 :::caution
 
-Follow the next steps only if performing the first two steps wasn’t enough for some reason. We strongly suggest contacting our support before using steps 3-4 of advanced uninstall instruction.
+Følg kun de næste trin, såfremt gennemførelsen af de første to trin viser sig utilstrækkelige. Det anbefales kraftigt at kontakte vores supportteam før brug af trin 3-4 i den avancerede afinstallationsvejledning.
 
 :::
 
-- Select *AdGuard Ad Blocker* and *Extended* uninstall type, then click *Uninstall*. Click *Yes, continue* in the window prompt.
+- Vælg *AdGuard Ad Blocker* og *Udvidet* afinstallationstype, og klik dernæst på *Afinstallér*. Klik på *Ja, fortsæt* i vinduesprompten.
 
-   ![Extended uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
+   ![Udvidet afinstallation *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
 
-- Click *OK* once the warning window pops up:
+- Klik på *OK*, når advarselsvinduet vises:
 
-   ![Extended uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
+   ![Udvidet afinstallationsadvarsel *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
+- Vent indtil afinstallationen er færdig — dernæst vises sætning **Afinstallation fuldført** samt en prompt om at genstarte computeren:
 
-   ![Extended uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
+   ![Udvidet afinstallation færdig *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
 
-AdGuard is successfully uninstalled!
+AdGuard er hermed afinstalleret!
 
-#### Running the uninstaller in console mode
+#### Kørsel af afinstalleren i konsoltilstand
 
-Besides running the advanced uninstaller in its user-interactive mode, you can also use command-line arguments to uninstall AdGuard for Windows. To do this, follow the instructions below:
+Udover at køre den avancerede afinstaller i sin bruger-interaktive tilstand, kan kommandolinjeargumenter også bruges til at afinstallere AdGuard til Windows. Følg vejledningen nedenfor for at gøre dette:
 
-1. Open Command Prompt by typing *cmd* from the Start menu.
-2. Use `/console` to run the uninstaller in console mode, without the interactive UI. All the command-line parameters below will be ignored if the `/console` mode is not activated.
-3. Use `/adblocker` to uninstall AdGuard for Windows. It should look like this:
+1. Åbn Kommandoprompt ved i Startmenuen at skrive *cmd*.
+2. Brug `/console` for at eksekverre afinstalleringsprogrammet i konsoltilstand, uden den interaktive Ui. Alle nedenstående kommandolinjeparametre ignoreres, hvis tilstanden `/console` ikke er aktiveret.
+3. Brug `/adblocker` til at afinstallere AdGuard til Windows. Det bør se således ud:
 
    `Adguard.UninstallUtility.exe /console /adblocker`
 
-4. You can also use `/advanced` to force the uninstaller to run in *Advanced mode* and `/settings` to force the uninstaller to remove user settings along with the application.
+4. Der kan også bruges `/advanced` for at tvinge afinstallationsprogrammet til at køre i *Avanceret tilstand* og `/settings` for at tvinge det til at slette brugerindstillingerne sammen med applikationen.
 
 :::note
 
-The use of the parameters `/console` and `/adblocker` is necessary for a successful uninstall. The parameters `/advanced` and `/settings` are optional.
+Brugen af parametrene `/console` og `/adblocker` er nødvendig for en vellykket afinstallation. Parametrene `/advanced` og `/settings` er valgfrie.
 
 :::

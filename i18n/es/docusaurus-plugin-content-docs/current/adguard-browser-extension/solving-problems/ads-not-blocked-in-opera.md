@@ -7,7 +7,7 @@ Si la extensión AdGuard Browser no logra bloquear los anuncios en los sitios we
 
 Para otorgar el permiso requerido:
 
-![Permitir el acceso a los resultados de la página de búsqueda](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/allow-access.png)
+![Allow access to search page results \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/opera_allow_search.png)
 
 1. Haz clic en el icono del cubo junto a la barra de direcciones → _Administrar extensiones..._.
 2. Encuentra el bloqueador de anuncios AdGuard en la lista de extensiones instaladas y marca la casilla junto a _Permitir acceso a los resultados de la página de búsqueda_.
