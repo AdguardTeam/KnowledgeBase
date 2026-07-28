@@ -16,7 +16,7 @@ AdGuard ist einer der Marktführer für Werbeblocker-Software mit mehr als 15 Ja
 Wir entwickeln und pflegen aber auch kostenlose Browsererweiterungen für alle gängigen Browser:
 
 - [AdGuard Browsererweiterung](/adguard-browser-extension/availability)
-- [AdGuard für Safari](/adguard-for-safari/features/general)
+- [AdGuard für Safari](/archive/adguard-for-safari/features/general)
 
 ## Nicht nur Werbeblocker
 
