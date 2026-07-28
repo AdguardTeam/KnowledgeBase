@@ -17,8 +17,4 @@ Basic protection effectively blocks ads on most websites. For more customized ad
 
 - Enable appropriate language-specific filters — they contain filtering rules for blocking ads on websites in specific languages
 
-- Add websites to allowlist — these websites won't be filtered by AdGuard
-
-- Create user rules — AdGuard will apply them on specified websites. [Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
-
 ![Ad blocking *mobile_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
