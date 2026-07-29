@@ -23,7 +23,7 @@ DNS設定を管理するには、AdGuardアプリはローカルVPNの確立を�
 
 このセクションには「AdGuard」と「ネイティブ」という2つのオプションがあります。 基本的に、この二つは何かというと、二種類のDNS設定方法なのです。
 
-「ネイティブ」実装では、DNS はアプリではなくシステムによって処理されます。 つまりこの場合、AdGuard はローカルVPNを作成する必要がありません。 しかし残念ながら、この方法ですと、システムの制限を回避し、他のVPNベースアプリと一緒にAdGuardを使用することはできません。VPNが有効になっている場合、ネイティブDNSは無視されるからです。 Consequently, you won't be able to filter traffic locally or to use our brand new [DNS-over-QUIC protocol (DoQ)](https://adguard-dns.io/blog/dns-over-quic.html).
+「ネイティブ」実装では、DNS はアプリではなくシステムによって処理されます。 つまりこの場合、AdGuard はローカルVPNを作成する必要がありません。 しかし残念ながら、この方法ですと、システムの制限を回避し、他のVPNベースアプリと一緒にAdGuardを使用することはできません。VPNが有効になっている場合、ネイティブDNSは無視されるからです。 その結果、トラフィックをローカルでフィルタリングしたり、新しい[DNS-over-QUICプロトコル(DoQ)](https://adguard-dns.io/blog/dns-over-quic.html)を使用することができなくなります。
 
 ### DNSサーバー
 

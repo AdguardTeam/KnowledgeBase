@@ -441,7 +441,7 @@ You can download userstyles from various websites. One of the most popular users
 
 4. Press the [+] button and paste the userstyle link
 
-5. Done!
+5. Udført!
 
 If you’re familiar with CSS rules, you can also create userstyles yourself.
 
