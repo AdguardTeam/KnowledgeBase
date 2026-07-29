@@ -33,4 +33,4 @@ Notifications are divided into two categories:
 
 - **Standard notifications** (grey) indicate less critical issues that can reduce protection quality, such as outdated filter lists or disabled filtering features.
 
-![Grey alert](https://cdn.adguardvpn.com/content/release_notes/ad_blocker/mini_for_mac/v2.3/blocking_en.png)
+![Gray alert](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v2.3/blocking_en.png)
