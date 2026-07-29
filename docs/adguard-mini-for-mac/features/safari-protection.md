@@ -13,10 +13,24 @@ This article is about AdGuard Mini for Mac, which safeguards only your Safari br
 
 ![General tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/safari-protection.png)
 
-*Safari protection* section is the most important area for the app’s core purpose. Settings are grouped logically and explained in plain language so you can quickly see what each option does.
+The *Safari protection* section is the most important area for the app’s core purpose. Settings are grouped logically and explained in plain language so you can quickly see what each option does.
 
 Here’s a simple explanation on what each group of settings does:
 
 ![Protection screen part one *border](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/new/safari_protection_1.png)
 
 ![Protection screen part two *border](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/new/safari_protection_2.png)
+
+### Health-check notifications
+
+The *Safari protection* section includes Health-check notifications that alert you to configuration issues that may affect filtering. Each notification explains the detected issue and, when applicable, suggests how to resolve it.
+
+Notifications are divided into two categories:
+
+- **Critical notifications** (orange) indicate issues that may prevent AdGuard Mini from working properly, such as disabled Safari extensions, missing background permission, Safari extension errors, or Safari's rule limit being reached.
+
+![Orange alert](https://cdn.adguardvpn.com/content/release_notes/ad_blocker/mini_for_mac/v2.3/extension_en.png)
+
+- **Standard notifications** (grey) indicate less critical issues that can reduce protection quality, such as outdated filter lists or disabled filtering features.
+
+![Grey alert](https://cdn.adguardvpn.com/content/release_notes/ad_blocker/mini_for_mac/v2.3/blocking_en.png)
