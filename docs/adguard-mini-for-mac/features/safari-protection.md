@@ -23,7 +23,7 @@ Here’s a simple explanation on what each group of settings does:
 
 ### Health-check notifications
 
-The *Safari protection* section includes Health-check notifications that alert you to configuration issues that may affect filtering. Each notification explains the detected issue and, when applicable, suggests how to resolve it.
+The *Safari protection* section includes health-check notifications that alert you to configuration issues that may affect filtering. Each notification describes the detected issue and suggests how to resolve it, where applicable.
 
 Notifications are divided into two categories:
 
