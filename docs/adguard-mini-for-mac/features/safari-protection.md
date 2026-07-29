@@ -30,6 +30,7 @@ Notifications are divided into two categories:
 - **Critical notifications** are highlighted in orange and indicate issues that may prevent AdGuard Mini from functioning properly. These issues include missing background permissions, disabled Safari extensions, Safari extension errors, and reaching the Safari rule limit.
 
 ![Orange alert](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v2.3/extension_en.png)
+
 - **Standard notifications** are highlighted in gray and indicate less critical issues that can reduce protection quality, such as outdated filter lists or disabled features.
 
 ![Gray alert](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v2.3/blocking_en.png)
