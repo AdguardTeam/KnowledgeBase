@@ -16,7 +16,7 @@ AdGuard es uno de los líderes en el mercado de software de bloqueo de anuncios 
 Pero también desarrollamos y mantenemos extensiones de navegador gratuitas para todos los navegadores populares:
 
 - [Extensión de navegador AdGuard](/adguard-browser-extension/availability)
-- [AdGuard para Safari](/adguard-for-safari/features/general)
+- [AdGuard para Safari](/archive/adguard-for-safari/features/general)
 
 ## No solo bloqueo de anuncios
 

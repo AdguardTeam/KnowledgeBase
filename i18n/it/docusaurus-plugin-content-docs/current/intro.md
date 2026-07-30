@@ -16,7 +16,7 @@ AdGuard è uno dei leader sul mercato dei programmi di blocco delle inserzioni, 
 Ma sviluppiamo e manteniamo anche delle estensioni gratuite per browser per tutti i browser popolari:
 
 - [Estensione del Browser di AdGuard](/adguard-browser-extension/availability)
-- [AdGuard per Safari](/adguard-for-safari/features/general)
+- [AdGuard per Safari](/archive/adguard-for-safari/features/general)
 
 ## Non soltanto blocco delle inserzioni
 
