@@ -15,6 +15,6 @@ sidebar_position: 10
 
 [AdGuard 확장 프로그램](/adguard-browser-extension/installation)
 
-[Safari용 AdGuard](/adguard-for-safari/installation)
+[Safari용 AdGuard](/archive/adguard-for-safari/installation)
 
 [AdGuard 콘텐츠 차단기](/adguard-content-blocker/installation)

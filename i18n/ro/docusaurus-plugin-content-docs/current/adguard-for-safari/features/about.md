@@ -9,6 +9,6 @@ sidebar_position: 5
 
 :::note Reminder
 
-AdGuard pentru Safari poate fi descărcat gratuit [din App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). O instrucțiune detaliată de configurare este disponibilă în [Baza de cunoștințe](/adguard-for-safari/installation/).
+AdGuard pentru Safari poate fi descărcat gratuit [din App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). O instrucțiune detaliată de configurare este disponibilă în [Baza de cunoștințe](/archive/adguard-for-safari/installation/).
 
 :::

@@ -15,6 +15,6 @@ Depending on which AdGuard app or browser extension you want to install, follow 
 
 [AdGuard Tarayıcı Uzantısı](/adguard-browser-extension/installation)
 
-[Safari için AdGuard](/adguard-for-safari/installation)
+[Safari için AdGuard](/archive/adguard-for-safari/installation)
 
 [AdGuard İçerik Engelleyici](/adguard-content-blocker/installation)

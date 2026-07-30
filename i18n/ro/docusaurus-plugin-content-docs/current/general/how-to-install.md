@@ -15,6 +15,6 @@ sidebar_position: 10
 
 [Extensia de browser AdGuard](/adguard-browser-extension/installation)
 
-[AdGuard for Safari](/adguard-for-safari/installation)
+[AdGuard for Safari](/archive/adguard-for-safari/installation)
 
 [AdGuard Content Blocker](/adguard-content-blocker/installation)

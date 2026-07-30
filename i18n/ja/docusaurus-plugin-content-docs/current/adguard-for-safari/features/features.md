@@ -7,18 +7,18 @@ sidebar_position: 1
 
   Basic features, including notifications, update intervals, and logging level
 
-- [フィルタ](/adguard-for-safari/features/filters.md)
+- [フィルタ](/archive/adguard-for-safari/features/filters.md)
 
   広告ブロックのカスタマイズを可能にするさまざまなフィルタについてです：
 
-- [コンテンツブロッカー](/adguard-for-safari/features/content-blockers/content-blockers.md)
+- [コンテンツブロッカー](/archive/adguard-for-safari/features/content-blockers/content-blockers.md)
 
   Appleの制約に準拠した6つのテーマ別コンテンツブロッカーについてです：
 
-- [ユーザールール](/adguard-for-safari/features/rules.md)
+- [ユーザールール](/archive/adguard-for-safari/features/rules.md)
 
   広告ブロックを微調整するためのカスタムフィルタリングルールについてです：
 
-- [このアプリについて](/adguard-for-safari/features/about.md)
+- [このアプリについて](/archive/adguard-for-safari/features/about.md)
 
   プライバシーに関する文書、GitHubリポジトリ、およびバージョン履歴へのリンクを含むセクションです：
