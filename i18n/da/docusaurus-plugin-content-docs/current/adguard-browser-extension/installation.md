@@ -24,7 +24,7 @@ Denne artikel omhandler AdGuard Browser Extension, der kun beskytter webbrowsere
 
 ![AdGuard Browser Extension i Chrome Webshop *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/chrome_install.png)
 
-Klik på *Tilføj udvidelse* i den viste dialog.
+In the opened dialog, click *Add extension*.
 
 ![Dialog i Chrome Webshop *kant](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_extension_chrome.png)
 
@@ -48,20 +48,20 @@ Klik på indstillingsknappen øverste til højre i webbrowseren, vælg *Udvidels
 
 ### Microsoft Edge {#edge}
 
-Go to the [Edge Add-ons store](https://agrd.io/extension_edge) page and click *Get*.
+Gå til siden [Edge Add-ons i butikken](https://agrd.io/extension_edge) og klik på *»Hent*«.
 
-![AdGuard Browser Extension in Edge Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/edge_install.png)
+![AdGuard Browser Extension i Edge-tilføjelser *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/edge_install.png)
 
-Klik i det åbnede dialogvindue på *Tilføj udvidelse*.
+Klik i den åbnede dialog på *Tilføj udvidelse*.
 
-![Edge dialog window *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_adguard_in_edge.png)
+![Edge-dialog *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_adguard_in_edge.png)
 
-Alternatively, you can install AdGuard Browser Extension for Edge from the [Chrome Web Store](https://agrd.io/extension_chrome). Åbn dens webside i Edge-webbrowseren og klik på *Hent udvidelse*.
+Alternativt kan AdGuard Browser Extension til Edge installeres via [Chrome Webshop](https://agrd.io/extension_chrome). Åbn dens webside i Edge-webbrowseren og klik på *Hent udvidelse*.
 
 ![Chrome-udvidelser i Edge *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_chrome_store_in_edge.png)
 
-Klik på *Tilføj udvidelse* i den viste dialog.
+Klik i den viste dialog på *Tilføj udvidelse*.
 
 ### Safari {#safari}
 
-AdGuard Mini til Mac (tidligere AdGuard til Safari) er ikke en traditionel webbrowserudvidelse. It was specifically built to comply with Apple’s strict content blocking limitations. For yderligere detaljer, læs denne [dedikerede artikel](/adguard-mini-for-mac/). Alternativt, [download AdGuard Mini til Mac](https://agrd.io/mini_mac) direkte fra denne side.
+AdGuard Mini til Mac (tidligere AdGuard til Safari) er ikke en traditionel webbrowserudvidelse. Den er specifikt udviklet til at overholde Apples strikse indholdsblokeringsbegrænsninger. For yderligere detaljer, læs denne [dedikerede artikel](/adguard-mini-for-mac/). Alternativt, [download AdGuard Mini til Mac](https://agrd.io/mini_mac) direkte fra denne side.

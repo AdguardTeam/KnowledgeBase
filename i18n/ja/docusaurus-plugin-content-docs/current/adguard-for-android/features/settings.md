@@ -37,25 +37,27 @@ sidebar_position: 4
 
 ## フィルタリング
 
-このセクションでは、HTTPSフィルタリング設定、フィルタ、ユーザースクリプトを管理し、プロキシサーバーを設定することができます。
+This section lets you manage filters, extensions, network settings, add websites to the allowlist, and create user rules.
 
-![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.jpg)
+[Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+
+![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.png)
 
 ### フィルタ
 
-AdGuard は、フィルタのルールを適用することで、広告、トラッカー（追跡）、迷惑なコンテンツをブロックします。 「AdGuardによる保護」セクションにある機能のほとんどは、[AdGuard フィルタ](/general/ad-filtering/adguard-filters/#adguard-filters) を使って動いています。 例えば、「基本的な保護」を有効にすると、「AdGuard ベースフィルタ」と「AdGuard モバイル広告フィルタ」が自動的にオンになります。 逆もまた同様で、両方のフィルタをオフにすると、「基本的な保護」も無効になります。
+AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the _Protection_ section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable _Basic protection_, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, _Basic protection_ will also be disabled.
 
 ![Filters \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
-デフォルトで有効になっているフィルタは、AdGuard が普通に動作するのに十分です。 しかし、広告ブロックをカスタマイズしたい場合は、他のAdGuardフィルタやサードパーティのフィルタを使用することができます。 既存のフィルタを追加で有効にするには、フィルタのカテゴリを選択し、必要なフィルタを選んでオンにします。 カスタムフィルタを追加するには、[_カスタムフィルタ_] → [_カスタムフィルターを追加する_] をタップし、フィルタの URL またはファイルパスを入力します。
+Filters enabled by default are enough for normal AdGuard operation. However, if you want to customize ad blocking, you can use other AdGuard or third-party filters. To do this, select a category and enable the filters you'd like. To add a custom filter, tap _Custom filters_ → _Add custom filter_ and enter its URL or file path.
 
 :::note
 
-多くのフィルタを有効にしすぎると、一部のウェブサイトが正しく動作しなくなることがありますので、有効フィルタの数にはご注意ください。
+If you activate too many filters, some websites may work incorrectly.
 
 :::
 
-[フィルタについてもっと読む](https://adguard.com/en/blog/what-are-filters.html)
+[Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
 
 ### 拡張機能
 

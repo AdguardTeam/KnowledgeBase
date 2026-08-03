@@ -9,16 +9,10 @@ sidebar_position: 1
 
 :::
 
-この機能は、「AdGuardによる保護」タブ（画面下部バーメニューで左から2番目の盾アイコン） → 「広告ブロック」にあります。
+![Ad blocking \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/ad-blocking.png)
 
-この機能は、広告ブロックと言語別の専用フィルタを適用して広告をブロックしてくれます。 広告ブロックの仕組みについては、[こちらの専用記事](/general/ad-filtering/how-ad-blocking-works)で詳しくお読みになれます。
+The Ad blocking module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Ad blocking_.
 
-「基本的な保護」という機能は、ほとんどのウェブサイトで広告を効果的にブロックします。 より柔軟にカスタマイズした広告ブロックは、以下の方法で設定することができます:
+The feature removes ads by applying ad-blocking and language-specific filters. To learn about the mechanism of ad blocking, you can read a [dedicated article](/general/ad-filtering/how-ad-blocking-works).
 
-- 【適切な言語特化フィルタを有効にする】言語特化フィルタには、特定の言語のウェブサイト上の広告をブロックするためのフィルタリングルールが含まれています。
-
-- 【ホワイトリストにウェブサイトを追加する】ホワイトリストに追加されているウェブサイトで AdGuard は広告をブロックしません。
-
-- 【ユーザールールの作成する】AdGuard は、指定されたウェブサイトにそれらのルールを適用します。 [独自のユーザールールを作成する方法についてはこちら](/general/ad-filtering/create-own-filters)
-
-![広告ブロック \*mobile_border](https://cdn.adtidy.org/blog/new/g7tbpScreenshot_20230621-163650_AdGuard.jpg)
+_Basic protection_ effectively blocks ads on most websites. For more customized ad blocking, you can enable _Language-specific ad blocking_ — it contains filtering rules for websites in specific languages.

@@ -25,4 +25,4 @@ The video now opens in AdGuard’s ad-free player.
 1. *Uzantıya İzin Ver* öğesinin etkin olduğundan emin olun. Aynı ekranda, AdGuard için *Tüm Siteler* iznini *İzin Ver* olarak ayarlayın. ![Uzantı izinleri *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/extensions_allow.jpg)
 1. AdGuard'ı açın, kalkan simgesine dokunun ve *Gelişmiş koruma* öğesini etkinleştirin.
 
-You can now watch YouTube videos in Safari without ads.
+You can now [watch YouTube videos in Safari without ads](https://adguard.com/en/adguard-youtube/overview.html).

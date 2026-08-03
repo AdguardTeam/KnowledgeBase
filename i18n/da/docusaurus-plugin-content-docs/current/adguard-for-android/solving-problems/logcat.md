@@ -1,122 +1,122 @@
 ---
-title: How to get system logs
+title: Sådan hentes systemlogfiler
 sidebar_position: 4
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel dækker AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Data og/eller filer tilgængelige i logfiler behandles i overensstemmelse med [AdGuard Fortrolighedspolitik](https://adguard.com/en/privacy.html).
 
 :::
 
-Sometimes a regular log may not be sufficient to identify the origin of the problem. In such cases a system log is needed. Below are instructions on how to collect and get it: via Developer options and Logcat.
+Af og til er en alm. log måske utilstrækkelig til identificering af problemårsagen. I så fald er en systemlog nødvendig. Nedenfor er en vejledning til, hvordan den indsamles og hentes: Via Udviklerindstillinger og Logcat.
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard er dedikeret til beskyttelse af brugerfortrolighed. Vi følger nøje vores [Fortrolighedspolitik](https://adguard.com/privacy/android.html) og indsamler ingen private oplysninger om brugere. Før indsendelse af logger til supportteamet, bedes filen gennemgået, da den kan indeholde ekstra oplysninger, som muligvis ikke ønskes delt. Indeholder den sådanne uønskede oplysninger, anbefaler disse slettet først.
 
 :::
 
-## Capture a bug report from a device
+## Optag en fejlrapport fra en enhed
 
-To get a bug report directly from your device, do the following:
+Gør følgende for at generere en fejlrapport direkte fra enheden:
 
-1. Be sure you have [Developer options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
+1. Sørg for, at [Udviklerindstillinger](https://developer.android.com/studio/run/device.html#developer-device-options) er aktiveret.
 
-1. In **Developer options**, tap **Take bug report**.
+1. Tryk i **Udviklerindstillinger** på **Optag fejlrapport**.
 
-    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
+    ![Fejlrapport *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-1. Select the type of bug report you want and tap **Report**.
+1. Vælg den ønskede fejlrapporttype og tryk på **Rapportér**.
 
     :::note
 
-    After a moment, you will see a notification that the bug report is ready (see Figure 2).
+    Efter et øjeblik ses en notifikation om, at fejlrapporten er klar (se Fig. 2).
 
 
 :::
 
-    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
+    ![Fejlrapport *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
-1. To share the bug report, tap the notification.
+1. Tryk på notifikationen for at dele fejlrapporten.
 
-    ![Bug report *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
+    ![Fejlrapport *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
-1. Send this log to our support team.
+1. Indsend denne log til supportteamet.
 
     :::note
 
-    Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+    Supportteamet behandler sagen meget hurtigere, såfremt HelpDesk-sagsnummeret eller GitHub-problematiknummeret angives i supporthenvendelsen.
 
 
 :::
 
-## Capture a bug report via Logcat
+## Optag en fejlrapport via Logcat
 
-On devices with Android 7 and below, it is not possible to send a bug report automatically. Then you can capture it manually via Logcat — a standard Android command-line tool that dumps a log of system messages.
+På enheder til og med Android 7 kan fejlrapporter ikke indsendes automatisk. Fejlrapporten kan så optages manuelt via Logcat — et standard Android-kommandolinjeværktøj, der dumper en log over systemmeddelelser.
 
-Follow this instruction:
+Følg denne vejledning:
 
-### Part #1: prepare the device
+### Del 1: Klargør enheden
 
-1. Switch device to the developer mode. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
+1. Aktivér Udviklertilstand på enheden. For at gøre dette: Gå til **Indstillinger** → **Om** → tryk på **Build-nummer** 7 gange.
 
-1. Go to **Developer Options**.
+1. Gå til **Udviklerindstillinger**.
 
-1. Enable **USB debugging**.
+1. Aktivér **USB-fejlfinding**.
 
-1. Increase **Logger buffer** sizes to 4 MB per log buffer.
+1. Forøg størrelsen på **Logger-buffer** til 4MB pr. log-buffer.
 
-4 MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
+4 MB burde være nok til lagring at de nødvendige logfiler, indtil den anden del (hentning af loggen fra enheden) kan udføres;
 
-### Part #2: reproduce the problem
+### Del 2: Genskab problematikken
 
-It is important to reproduce the problem after you're done with the first part.
+Det er vigtigt at genskabe problematikken, efte den første del er udført.
 
 1. Genskab problematikken.
 
-1. Remember/write down the date and time of reproduction and include it in the email to our support later.
+1. Husk/notér genskabelsesdato og -tidspunkt og medtag disse i e-mailen til supporten senere.
 
-### Part #3: get the log
+### Del 3: Hent loggen
 
-1. Connect your device to a PC with a USB cable.
+1. Tilslut via et USB-kabel enheden til en PC.
 
-1. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). Choose the appropriate download link for your OS from the Downloads section. Once you tap the link, a ZIP file will be downloaded. You can extract the ADB (Android Debug Bridge) files from the ZIP file and store them wherever you want.
+1. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). Vælg det relevante download-link til operativsystemet fra afsnittet Downloads. Når der er trykket på linket, downloades en ZIP-fil. ADB-filerne (Android Debug Bridge) kan dernæst udpakkes fra ZIP-filen og gemmes, hvor det ønskes.
 
-1. Test whether ADB is working properly: connect your Android device to your computer using a USB cable, open the Command Prompt, PowerShell or Terminal and run the following command:
+1. Test, om ADB fungerer korrekt: Tilslut Android-enheden til computeren via et USB-kabel, åbn en kommandoprompt, PowerShell eller Terminal og eksekvér flg. kommando:
 
     `adb devices`
 
-    An example of a successful result:
+    Et eksempel på et vellykket resultat:
 
-    ![Step 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
+    ![Trin 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
 
-1. Then run the following command (insert the relevant path):
+1. Eksekvér dernæst flg. kommando (indsæt den relevante sti):
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at [support@adguard.com](mailto:support@adguard.com).
+    E-mail den oprettede `txt`-fil samt tidspunktet, hvor problematikken blev genskabt (fra del 2), til supportteamet via [support@adguard.com](mailto:support@adguard.com).
 
-### Alternative way for ROOT users
+### Alternativ måde til ROOT-brugere
 
-1. Download and run [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
+1. Download og eksekvér [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
 
-1. Choose **Record** in the menu. Choose a name for a log file or just press **OK**. Now you can press **Home** button, CatLog will continue recording the log in background.
+1. Vælg menupunktet **Optag**. Vælg et navn til logfilen eller tryk blot på **OK**. Nu kan der trykkes på knappen **Hjem**, mens CatLog fortsætte optagelse af loggen i baggrunden.
 
-1. Reproduce the issue.
+1. Genskab problematikken.
 
-1. Open CatLog and press **Stop record** in the menu.
+1. Åbn CatLog og tryk på menupunktet **Stop optagelse**.
 
-1. Send this log to our support team.
+1. Indsend denne log til supportteamet.
 
 :::note
 
-Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+Supportteamet behandler sagen meget hurtigere, såfremt HelpDesk-sagsnummeret eller GitHub-problematiknummeret angives i supporthenvendelsen.
 
 :::

@@ -9,6 +9,12 @@ sidebar_position: 9
 
 :::
 
+:::info
+
+To use _Integration with AdGuard VPN_, both apps — AdGuard for Android and AdGuard VPN for Android — must be updated to their latest versions. Otherwise, the Integration mode will not be available
+
+:::
+
 Android용 AdGuard는 로컬 VPN을 생성하여 트래픽을 필터링합니다. 따라서 Android용 AdGuard가 실행되는 동안에는 다른 VPN 앱을 사용할 수 없습니다. 하지만 AdGuard와 [AdGuard VPN](https://adguard-vpn.com/) 앱 모두 통합 모드가 있어 동시에 사용할 수 있습니다.
 
 이 모드에서 AdGuard VPN은 AdGuard 광고 차단기가 트래픽을 라우팅하는 아웃바운드 프록시 서버 역할을 합니다. 이를 통해 AdGuard는 VPN 인터페이스를 생성하고 로컬에서 광고와 추적기를 차단하는 동시에 모든 트래픽을 원격 서버를 통해 라우팅할 수 있습니다.

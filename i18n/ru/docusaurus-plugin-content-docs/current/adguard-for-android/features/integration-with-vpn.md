@@ -9,6 +9,12 @@ sidebar_position: 8
 
 :::
 
+:::info
+
+To use _Integration with AdGuard VPN_, both apps — AdGuard for Android and AdGuard VPN for Android — must be updated to their latest versions. Otherwise, the Integration mode will not be available
+
+:::
+
 AdGuard для Android создает локальный VPN для фильтрации трафика. Получается, другие VPN-приложения нельзя использовать, пока работает AdGuard для Android. Но в приложениях AdGuard и [AdGuard VPN](https://adguard-vpn.com/) есть Режим интеграции, который позволяет использовать их вместе.
 
 В этом режиме AdGuard VPN выступает в роли исходящего прокси-сервера, через который AdGuard направляет свой трафик. Это позволяет AdGuard создавать VPN-интерфейс и блокировать рекламу и трекеры локально, а AdGuard VPN направляет весь трафик через удалённый сервер.
