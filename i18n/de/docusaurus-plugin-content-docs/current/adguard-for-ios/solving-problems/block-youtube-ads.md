@@ -25,4 +25,4 @@ Das Video wird nun im werbefreien Player von AdGuard geöffnet.
 1. Stellen Sie sicher, dass *Erweiterung zulassen* aktiviert ist. Auf demselben Bildschirm setzen Sie die Berechtigung *Alle Websites* für AdGuard auf *Zulassen*. ![Berechtigungen für die Erweiterung *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/extensions_allow.jpg)
 1. Öffnen Sie AdGuard, tippen Sie auf das Schildsymbol und aktivieren Sie *Erweiterter Schutz*.
 
-Sie können jetzt YouTube-Videos in Safari ohne Werbung ansehen.
+You can now [watch YouTube videos in Safari without ads](https://adguard.com/en/adguard-youtube/overview.html).

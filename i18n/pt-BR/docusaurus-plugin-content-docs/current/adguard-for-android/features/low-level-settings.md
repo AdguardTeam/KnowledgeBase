@@ -243,6 +243,14 @@ Se esta configuração estiver ativada, o AdGuard exibirá o ícone de **Ferrame
 
 **Ferramentas de desenvolvedor** é uma seção especializada disponível no AdGuard para Android v4.3 e posterior, projetada para navegação rápida e alternância entre funcionalidades. Ele permite que você ative ou desative rapidamente filtros personalizados, acesse registros, ative vários registros e muito mais.
 
+#### Simplified UI mode
+
+If this setting is enabled, AdGuard will only display the DNS icon on the app’s home screen.
+
 #### Detectar Samsung Pay
 
 Se esta configuração estiver ativada, a proteção do AdGuard será pausada quando você abrir o aplicativo Samsung Pay. Os usuários coreanos precisam desse recurso, pois enfrentam [problemas com o Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) quando o AdGuard está ativado.
+
+#### Show cloned apps
+
+If this setting is enabled, you will be able to change routing, filtering, and firewall settings for cloned apps in _App management_.

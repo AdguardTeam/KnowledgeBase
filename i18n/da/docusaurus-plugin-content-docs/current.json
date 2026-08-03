@@ -198,5 +198,9 @@
   "sidebar.tutorialSidebar.category.solving-problems-adguard-mini-for-mac": {
     "message": "Problemløsning",
     "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Archive": {
+    "message": "Arkiv",
+    "description": "The label for category 'Archive' in sidebar 'tutorialSidebar'"
   }
 }

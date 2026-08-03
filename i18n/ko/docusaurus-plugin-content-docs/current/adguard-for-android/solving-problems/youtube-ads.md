@@ -9,7 +9,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-사용자는 종종 Android의 YouTube에서 광고를 차단할 수 있는지 묻습니다. Android OS의 기술적인 제한으로 인해 YouTube 앱에서 광고를 *완전히* 제거할 수 있는 방법이 없습니다. 그러나 Android에서 부과한 제한을 피하면서 YouTube 광고를 차단하는 방법을 찾았습니다.
+사용자는 종종 Android의 YouTube에서 광고를 차단할 수 있는지 묻습니다. Due to the technical restrictions of the Android OS, there is no way to *completely* [remove ads from the YouTube app](https://adguard.com/en/adguard-youtube/overview.html). 그러나 Android에서 부과한 제한을 피하면서 YouTube 광고를 차단하는 방법을 찾았습니다.
 
 ## Watch YouTube in the AdGuard app
 

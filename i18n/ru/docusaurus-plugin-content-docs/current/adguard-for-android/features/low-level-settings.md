@@ -243,6 +243,14 @@ Bootstrap DNS для зашифрованных upstream DNS-серверов, �
 
 **Инструменты разработчика** — специализированный раздел, доступный в AdGuard 4.3 для Android и более поздних версий, предназначенный для быстрой навигации и переключения между функциями. Он позволяет быстро включать и отключать пользовательские фильтры, получать доступ к логам, включать различные варианты логирования и многое другое.
 
+#### Simplified UI mode
+
+If this setting is enabled, AdGuard will only display the DNS icon on the app’s home screen.
+
 #### Обнаруживать Samsung Pay
 
 Если эта настройка включена, защита AdGuard будет приостановлена, когда вы откроете приложение Samsung Pay. Эта функция нужна пользователям из Кореи, поскольку у них возникают [проблемы с Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) при включённом AdGuard.
+
+#### Show cloned apps
+
+If this setting is enabled, you will be able to change routing, filtering, and firewall settings for cloned apps in _App management_.

@@ -9,6 +9,12 @@ Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunziona
 
 :::
 
+:::info
+
+To use _Integration with AdGuard VPN_, both apps — AdGuard for Android and AdGuard VPN for Android — must be updated to their latest versions. Otherwise, the Integration mode will not be available
+
+:::
+
 AdGuard per Android crea una VPN locale per filtrare il traffico. Dunque, le altre app VPN non sono utilizzabili durante l'esecuzione di AdGuard per Android. Tuttavia, sia AdGuard che [AdGuard VPN](https://adguard-vpn.com/) dispongono di modalità Integrata per consentirti di usarle insieme.
 
 In questa modalità, AdGuard VPN funge da server proxy in uscita, tramite il quale AdGuard Ad Blocker instrada il proprio traffico. Ciò consente ad AdGuard di creare un'interfaccia VPN e di bloccare localmente annunci e tracciatori, mentre AdGuard VPN instrada tutto il traffico attraverso un server remoto.

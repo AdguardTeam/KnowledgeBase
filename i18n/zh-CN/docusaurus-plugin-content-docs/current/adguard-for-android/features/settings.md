@@ -37,25 +37,27 @@ sidebar_position: 4
 
 ## 过滤
 
-此部分允许用户管理 HTTPS 过滤设置、过滤器和用户脚本，以及设置代理服务器。
+This section lets you manage filters, extensions, network settings, add websites to the allowlist, and create user rules.
 
-![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.jpg)
+[Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+
+![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.png)
 
 ### 过滤器
 
-AdGuard 应用过滤器中的规则以阻止广告、跟踪器和其他干扰。 「保护」的大部分功能基于 [AdGuard 过滤器](/general/ad-filtering/adguard-filters/#adguard-filters)。 如果启用「基本保护」，它将自动打开 AdGuard 基础过滤器和 AdGuard 移动广告过滤器。 在关闭两个过滤器的情况下，「基本保护」也将被禁用。
+AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the _Protection_ section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable _Basic protection_, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, _Basic protection_ will also be disabled.
 
 ![Filters \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
-默认启用的过滤器足以保证 AdGuard 的正常运行。 不过，如果用户想自定义广告拦截，可以使用其他 AdGuard 或第三方过滤器。 要管理广告拦截请选择某个类别并启用自己想要的过滤器。 要添加自定义过滤器，请点击「自定义过滤器」→「添加自定义过滤器」，然后输入 URL 或文件路径。
+Filters enabled by default are enough for normal AdGuard operation. However, if you want to customize ad blocking, you can use other AdGuard or third-party filters. To do this, select a category and enable the filters you'd like. To add a custom filter, tap _Custom filters_ → _Add custom filter_ and enter its URL or file path.
 
 :::note
 
-启动的过滤器数量过多，会导致一些网站无法正常运行。
+If you activate too many filters, some websites may work incorrectly.
 
 :::
 
-[了解有关过滤器的更多信息](https://adguard.com/zh_cn/blog/what-are-filters.html)
+[Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
 
 ### 浏览器扩展
 
@@ -83,15 +85,15 @@ Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.
 
 #### HTTPS 过滤
 
-To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [了解有关 HTTPS 过滤的更多信息](/general/https-filtering/what-is-https-filtering)。
+To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
 
 ##### Security certificates
 
 To manage encrypted traffic, AdGuard installs its CA certificate on your device. It's safe: the traffic is filtered locally and AdGuard verifies the security of the connection.
 
-On older versions of Android, the certificate is installed automatically. On Android 11 and later, you need to install it manually. [安装说明](/adguard-for-android/solving-problems/manual-certificate/)
+On older versions of Android, the certificate is installed automatically. On Android 11 and later, you need to install it manually. [Installation instructions](/adguard-for-android/solving-problems/manual-certificate/)
 
-The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [说明](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
+The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
 ##### HTTPS-filtered apps
 
@@ -101,7 +103,7 @@ This section contains the list of apps for which AdGuard filters HTTPS traffic. 
 
 This setting allows you to manage websites for which AdGuard should filter HTTPS traffic.
 
-HTTPS filtering allows AdGuard to filter the content of requests and responses, but we never collect or store this data. 但为了增强安全性，我们会[将包含敏感信息的网站排除在 HTTPS 过滤之外](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data)。
+HTTPS filtering allows AdGuard to filter the content of requests and responses, but we never collect or store this data. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
 
 You can also add websites that you consider necessary to exclusions by selecting one of the modes:
 
@@ -112,7 +114,7 @@ By default, we also do not filter websites with Extended Validation (EV) certifi
 
 #### Proxy
 
-You can set up AdGuard to route all your device's traffic through your proxy server. [设置出站代理的说明](/adguard-for-android/solving-problems/outbound-proxy)
+You can set up AdGuard to route all your device's traffic through your proxy server. [How to set up an outbound proxy](/adguard-for-android/solving-problems/outbound-proxy)
 
 In this section, you can also set up a third-party VPN to work with AdGuard, if your VPN provider allows it.
 
@@ -126,7 +128,7 @@ This section allows you to select the traffic filtering method.
 
 :::note
 
-The _Local VPN_ mode doesn't allow AdGuard to be used simultaneously with other VPNs. To use another VPN with AdGuard, you need to reconfigure it to work in proxy mode and set up an outbound proxy in AdGuard. 对于 AdGuard VPN，此操作通过「[集成模式](/adguard-for-android/features/integration-with-vpn)」自动完成。
+The _Local VPN_ mode doesn't allow AdGuard to be used simultaneously with other VPNs. To use another VPN with AdGuard, you need to reconfigure it to work in proxy mode and set up an outbound proxy in AdGuard. For AdGuard VPN, this is done automatically with the help of the [_Integrated mode_](/adguard-for-android/features/integration-with-vpn).
 
 :::
 
@@ -144,7 +146,7 @@ Please note that DNS filtering will still be active in _Automatic proxy_ routing
 
 In this section, you can find information about your license and manage it:
 
-- 购买 AdGuard 许可证以激活[完整版功能](/adguard-for-android/features/free-vs-full)。
+- Buy an AdGuard license to activate [the full version's features](/adguard-for-android/features/free-vs-full)
 - Log in to your AdGuard account or enter the activation code to activate your license
 - Sign up to activate your 14-day trial period. The activation code can be used on different devices and platforms
 - Refresh the license status from the three-dots menu (⋮)
@@ -161,12 +163,12 @@ Use this section if you have any questions or suggestions regarding AdGuard for 
 
 If you notice a missed ad, please report it via _Report incorrect blocking_.
 
-For unexpected app behavior, select _Report a bug_. If possible, describe your problem in detail and add app logs. [描述问题的方法](/guides/report-bugs/#how-to-describe-a-problem)
+For unexpected app behavior, select _Report a bug_. If possible, describe your problem in detail and add app logs. [How to describe an issue](/guides/report-bugs/#how-to-describe-a-problem)
 
 For your suggestions, use _Request a feature_.
 
 :::note
 
-GitHub is an alternative way to report bugs and suggest new features. [说明和软件源链接](/guides/report-bugs/#adguard-for-android)
+GitHub is an alternative way to report bugs and suggest new features. [Instructions and repository links](/guides/report-bugs/#adguard-for-android)
 
 :::
