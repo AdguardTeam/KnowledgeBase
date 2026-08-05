@@ -7,7 +7,7 @@ sidebar_position: 3
 
 授予所需权限：
 
-![允许访问搜索页面结果](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/allow-access.png)
+![Allow access to search page results \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/opera_allow_search.png)
 
 1. 点击地址栏旁边的立方体图标 →「管理扩展...」。
 2. 在已安装的扩展列表中找到 AdGuard 广告拦截程序，并勾选「允许访问搜索页面结果」旁边的复选框。

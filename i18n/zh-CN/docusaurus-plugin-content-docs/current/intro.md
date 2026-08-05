@@ -16,7 +16,7 @@ AdGuard 是广告拦截软件市场的引领者之一，拥有 15 多年的经�
 但我们也为所有主流的浏览器开发和维护免费的浏览器扩展：
 
 - [AdGuard 浏览器扩展](/adguard-browser-extension/availability)
-- [AdGuard Safari版](/adguard-for-safari/features/general)
+- [AdGuard Safari版](/archive/adguard-for-safari/features/general)
 
 ## 不仅仅是广告拦截
 

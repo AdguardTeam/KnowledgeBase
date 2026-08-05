@@ -1,23 +1,23 @@
 ---
-title: Problems caused by multiple user profiles
+title: Problemer forårsaget af flere brugerprofiler
 sidebar_position: 9
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
 In this article you will find the methods on how to solve problems with AdGuard when you set up *multiple accounts* or *Restricted Profiles* on your Android devices.
 
-## Problems caused by multiple user profiles
+## Problemer forårsaget af flere brugerprofiler
 
-On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. This happens because AdGuard is installed for a different user profile on the device.
+Er AdGuard installeret på Android 9 og senere for mere end én brugerprofil på enheden, kan der opstå problemer ved afinstallation af appen. Når AdGuard afinstalleres i én brugerprofil, vises appen stadig på app-listen, men den vil hverken kunne afinstallere eller geninstalleres. This happens because AdGuard is installed for a different user profile on the device.
 
 If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
 
-To solve this problem, you need to uninstall the application for all users: go to Settings → All apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
+For at løse dette problem skal appen afinstalleres for alle brugere: Gå til Indstillinger → Alle apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
 
 ![Uninstall *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 
@@ -37,12 +37,12 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. If you're u
 
 :::
 
-1. Activate the **developer mode** and enable **USB debugging**:
+1. Aktivér både **Udviklertilstand** samt **USB-fejlfinding**:
 
     - Open the **Settings** app phone;
-    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
-    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
-    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+    - Gå til afsnittet **System** (sidste punkt på indstillingsmenuen). Find i dette afsnit underpunktet **Om telefon**;
+    - Tryk 7 gange på linjen **Build-nummer**. Dernæst ses meddelelse **Du er nu udvikler** (angiv om nødvendigt enhedens oplåsningskode);
+    - Åbn **Systemindstillinger** → **Udviklerindstillinger** → Rul ned og aktivér **USB-fejlfinding** → Bekræft, at fejlfinding er aktiveret i vinduet **Tillad USB-fejlfinding** efter omhyggeligt at have læst advarslen.
 
     :::note
 

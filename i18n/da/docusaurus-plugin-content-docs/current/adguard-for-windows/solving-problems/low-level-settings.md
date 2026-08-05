@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -35,7 +35,7 @@ Every encrypted Internet connection has an unencrypted part. This is the very fi
 
 ### Check websites' certificate transparency
 
-Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy. If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. Chrome, in turn, will block it.
+Bekræfter ægtheden af alle certifikater for domænet baseret på Chrome Certificate Transparency Policy. If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. Chrome, in turn, will block it.
 
 ### Enable SSL/TLS certificate revocation checks
 
@@ -65,11 +65,11 @@ Enable this feature if you want AdGuard to automatically intercept filter subscr
 
 If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
-**Limitations**:
+**Begrænsninger**:
 
-- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
-- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
-- Safari supports HTTP/3 filtering without additional configuration.
+- Chrome-baserede webbrowsere accepterer ikke brugercertifikater og understøtter dermed ikke HTTP/3-filtrering.
+- Firefox-baserede webbrowsere opfører sig som standard tilsvarende, men `network.http.http3.disable_when_third_party_roots_found`-indstillingen kan i `about:config` sættes til `false` for at tillad brugercertifikater til HTTP/3.
+- Safari understøtter HTTP/3-filtrering uden yderligere opsætning.
 
 ### Use redirect driver mode
 
@@ -127,13 +127,13 @@ Specifies the size of the TCP packet fragmentation, avoiding deep packet inspect
 
 If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Valid values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Gyldige værdier: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Plain HTTP request fragment size
 
-Adjusts the size of the HTTP request fragmentation. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
+Justerer størrelsen af HTTP-forespørgselsfragmenteringen. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-Valid values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Gyldige værdier: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Show QUIC
 

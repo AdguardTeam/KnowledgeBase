@@ -49,6 +49,6 @@ Learn [how to create your own ad filters](/general/ad-filtering/create-own-filte
 
 ![User rules screen \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
-### Allowlist {#allowlist}
+### Hvidliste {#allowlist}
 
 The third section of the _Safari protection_ screen. If you want to disable ad blocking on a certain website, Allowlist will be of help. It allows you to add domains and subdomains to exclusions. AdGuard for iOS has an Import/Export feature, so the allowlist from one device can be easily transferred to another.

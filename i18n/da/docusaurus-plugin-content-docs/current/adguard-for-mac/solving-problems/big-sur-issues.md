@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel dækker AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -19,17 +19,17 @@ These problems aren't fixed by Apple yet, or fixed only partially.
 
 #### Compatibility with iCloud Private Relay
 
-Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuard has no ability to block ads because iCloud Private Relay encrypts traffic before AdGuard can filter network connections. When iCloud Private Relay is active, any filtering (including local filtering) becomes impossible. Thus, AdGuard can't filter traffic or perform DNS filtering in Safari. That's why by default, AdGuard uses the "default route" which disables iCloud Private Relay.
+Pt. kan AdGuard og iCloud Private Relay ikke fungere sideløbende. AdGuard has no ability to block ads because iCloud Private Relay encrypts traffic before AdGuard can filter network connections. Når iCloud Private Relay er aktivt, umuliggøres enhver filtrering (inkl. lokal filtrering). AdGuard kan derfor ikke filtrere trafik eller udføre DNS-filtrering i Safari. That's why by default, AdGuard uses the "default route" which disables iCloud Private Relay.
 
 For a deeper understanding of this problem, read [this article](../icloud-private-relay).
 
-**Recommended solution**
+**Anbefalet løsning**
 
-We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/).
+Det anbefales at bruge AdGuard sammen med en mere traditionel VPN-tjeneste såsom [AdGuard VPN](https://adguard-vpn.com/).
 
-**Alternative solution**
+**Alternativ løsning**
 
-You can prevent AdGuard from using the "default route" by disabling it. It can be done via Advanced Settings → `network.extension.monterey.force.split.tunnel`. Note that enabling this setting will cause the problems described above.
+You can prevent AdGuard from using the "default route" by disabling it. Dette kan gøres via Avancerede indstillinger → `network.extension.monterey.force.split.tunnel`. Note that enabling this setting will cause the problems described above.
 
 ![Advanced Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
 
@@ -39,7 +39,7 @@ Apple's Mail app now uses a proxy to hide a user's IP address when downloading i
 
 For a deeper understanding of this problem, read [this article](../protect-mail-activity).
 
-**Recommended solution**
+**Anbefalet løsning**
 
 At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the newer Apple privacy features.
 

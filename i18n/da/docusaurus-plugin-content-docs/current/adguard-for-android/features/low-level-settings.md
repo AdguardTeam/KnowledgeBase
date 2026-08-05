@@ -116,7 +116,7 @@ If this setting is enabled, AdGuard will log all filtered HTTP requests in HAR 1
 
 This setting may slow down your device. Use it for debugging purposes only.
 
-### HTTPS filtering
+### HTTPS-filtrering
 
 #### Encrypted Client Hello
 
@@ -140,9 +140,9 @@ If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in add
 
 **Limitations**:
 
-- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Chrome-baserede webbrowsere accepterer ikke brugercertifikater og understøtter dermed ikke HTTP/3-filtrering.
 - Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
-- Safari supports HTTP/3 filtering without additional configuration.
+- Safari understøtter HTTP/3-filtrering uden yderligere opsætning.
 
 ### Outbound proxy
 
@@ -150,7 +150,7 @@ If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in add
 
 When this setting is enabled, the _Filter DNS requests_ switch is displayed in the _Add proxy server_ dialog. To access the dialog, open **Settings**, then go to **Filtering** → **Network** → **Proxy** → **Proxy server**, and click _+ Add proxy server_. Turning on that switch enables filtering of DNS requests passing through the specified outbound proxy.
 
-### Protection
+### Beskyttelse
 
 #### Port ranges
 
@@ -235,7 +235,7 @@ If this setting is enabled, AdGuard will exclude LAN connections from filtering 
 
 Here you can enter the IP address that will be used to create a TUN interface. The default value is `2001:db8:ad:0:ff::`.
 
-### Miscellaneous
+### Diverse
 
 #### Show Developer tools on the main screen
 

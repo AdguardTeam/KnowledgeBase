@@ -7,7 +7,7 @@ Se l'estensione del browser AdGuard non riesce a bloccare le inserzioni nei siti
 
 Per concedere il permesso obbligatorio:
 
-![Consenti accesso ai risultati della pagina di ricerca](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/allow-access.png)
+![Allow access to search page results \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/opera_allow_search.png)
 
 1. Clicca l'icona del cubo accanto alla barra degli indirizzi → _Gestisci estensioni…_.
 2. Trova AdGuard AdBlocker nella lista delle estensioni installate e spunta la casella accanto a _Consenti accesso ai risultati della pagina di ricerca_.

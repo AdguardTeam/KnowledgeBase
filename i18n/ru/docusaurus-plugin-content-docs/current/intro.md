@@ -16,7 +16,7 @@ AdGuard — один из лидеров на рынке программ для
 Но мы также разрабатываем и поддерживаем бесплатные расширения для всех популярных браузеров:
 
 - [Браузерное расширение AdGuard](/adguard-browser-extension/availability)
-- [AdGuard для Safari](/adguard-for-safari/features/general)
+- [AdGuard для Safari](/archive/adguard-for-safari/features/general)
 
 ## Не только блокировка рекламы
 

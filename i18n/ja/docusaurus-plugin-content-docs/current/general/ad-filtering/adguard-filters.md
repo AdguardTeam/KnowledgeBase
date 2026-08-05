@@ -9,7 +9,7 @@ sidebar_position: 2
 
 :::
 
-この記事は、AdGuard製品やその他の広告ブロックソフト（uBlock Originなど）で使用するためにAdGuardが作成したフィルターについてです。 Filters are sets of rules in text format used by AdGuard apps and programs to filter out advertising and privacy-threatening content such as banners, popups, or trackers. フィルタには、目的に応じたルールのリストが含まれています。 言語フィルタには、対応するインターネットの言語セグメントに対するルールが含まれています（例：ドイツ語フィルタ）。 目的別フィルタ（SNSフィルタやトラッキング防止フィルタなど）は、特定の目的を果たすルールをグループ化したものです。 フィルタの有効化または無効化は、ルールリスト全体を一度に扱うことを簡単にします。
+この記事は、AdGuard製品やその他の広告ブロックソフト（uBlock Originなど）で使用するためにAdGuardが作成したフィルターについてです。 フィルタは、バナー、ポップアップ、トラッカーなどの広告やプライバシーを脅かすコンテンツをフィルタリングするために、AdGuardのアプリやプログラムで使用されるテキスト形式のルールセットです。 フィルタには、目的に応じたルールのリストが含まれています。 言語フィルタには、対応するインターネットの言語セグメントに対するルールが含まれています（例：ドイツ語フィルタ）。 目的別フィルタ（SNSフィルタやトラッキング防止フィルタなど）は、特定の目的を果たすルールをグループ化したものです。 フィルタの有効化または無効化は、ルールリスト全体を一度に扱うことを簡単にします。
 
 ## AdGuard フィルタ
 
@@ -20,12 +20,13 @@ sidebar_position: 2
 - **AdGuard 迷惑要素フィルタ**は、ウェブページ上の刺激的な要素をブロックします。 [含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt) 以下のAdGuardフィルタが含まれています（以下のフィルタは、迷惑要素フィルタとは別に、一つ一つを有効にすることもできます）:
 
     - **Cookie通知フィルタ** は、Web ページ上の Cookie 通知をブロックします。 [含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_18_Annoyances_Cookies/filter.txt)
-    - **Popups** blocks all kinds of popups that are not necessary for websites' operation. [含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_19_Annoyances_Popups/filter.txt)
+    - **ポップアップフィルタ**は、Webサイトの動作に関係ないすべてのポップアップをブロックします。 [含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_19_Annoyances_Popups/filter.txt)
     - **モバイルアプリバナーフィルタ**は、ウェブサイトのモバイルアプリを宣伝するバナーをブロックします。 [含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_20_Annoyances_MobileApp/filter.txt)
     - **ウィジェットフィルタ**は、サードパーティのウィジェット（オンラインアシスタント、ライブサポートチャット）などをブロックします:。 [ルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_22_Annoyances_Widgets/filter.txt)
     - **その他の迷惑要素フィルタ**は、一般的な迷惑要素に該当しない迷惑な要素をWebページ上でブロックします。 [含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_21_Annoyances_Other/filter.txt)
 
 - **検索広告と自己宣伝のブロック解除フィルタ**は、ユーザーにとって有益と思われる広告のブロックを解除します。 このフィルタの詳細については、 [このページ](../search-ads)をご覧ください。 [含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt)
+- **AdGuard メール追跡防止フィルタ**は、メールに埋め込まれたトラッキングピクセルをブロックし、送信者がメール開封のタイミングを監視したり、受信者のデバイスやアクティビティに関する情報を収集したりするのを防ぎます。 [含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_25_Mail_Tracking_Protection/filter.txt)
 - **AdGuard ロシア語フィルタ**は、ロシア語のウェブサイトから広告を削除します。 [含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_1_Russian/filter.txt)
 - **AdGuard ドイツ語フィルタ**は、ドイツ語のウェブサイトから広告を削除します。 元々は[EasyList Germany](https://easylist.to/)フィルタがベースになっており、その後ユーザーからのクレームを元に当社で修正しているものです。 [含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_6_German/filter.txt)
 - **AdGuard フランス語フィルタ**は、フランス語のウェブサイトから広告を削除します。 元々は[Liste FR](https://forums.lanik.us/viewforum.php?f=91)フィルタがベースになっており、その後ユーザーからのクレームを元に当社で修正しているものです。 [含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_16_French/filter.txt)

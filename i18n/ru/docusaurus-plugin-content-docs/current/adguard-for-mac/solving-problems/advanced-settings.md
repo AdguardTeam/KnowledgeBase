@@ -57,6 +57,10 @@ sidebar_position: 9
 
 Установив значение `true`, вы включите проверку отзыва HTTPS-сертификатов.
 
+#### `network.http.compress.body`
+
+Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering engine, will compress the HTTP response body before sending it with the original response algorithm (if supported) or with the default fallback algorithm (GZip). Responses from BrowserApi will also be encoded if this option is enabled.
+
 #### `network.tcp.keepalive.enabled`
 
 Периодически отправляет TCP-пакеты по неактивному соединению, чтобы убедиться в его работоспособности и продлить время ожидания NAT.

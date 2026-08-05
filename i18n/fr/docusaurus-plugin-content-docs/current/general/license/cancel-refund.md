@@ -9,7 +9,7 @@ L'abonnement peut être annulé dans votre compte AdGuard. Pour annuler votre ab
 
  1. Go to your [AdGuard account](https://adguardaccount.com).
  1. Sélectionnez *Licences*.
- 1. Cliquez sur *Annuler l'abonnement* sous l'abonnement dont vous n'avez plus besoin. ![Annuler](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
+ 1. Click *Cancel auto-renewal* below the subscription you no longer need. ![Annuler](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub-upd.png)
 
  L'abonnement annulé sera valable jusqu'à sa date d'expiration.
 

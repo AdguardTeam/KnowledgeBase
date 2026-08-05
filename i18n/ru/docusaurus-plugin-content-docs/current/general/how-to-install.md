@@ -15,6 +15,6 @@ sidebar_position: 10
 
 [Браузерное расширение AdGuard](/adguard-browser-extension/installation)
 
-[AdGuard для Safari](/adguard-for-safari/installation)
+[AdGuard для Safari](/archive/adguard-for-safari/installation)
 
 [AdGuard Content Blocker](/adguard-content-blocker/installation)

@@ -15,6 +15,6 @@ Je nachdem, welche AdGuard-App oder Browsererweiterung Sie installieren möchten
 
 [AdGuard Browsererweiterung](/adguard-browser-extension/installation)
 
-[AdGuard für Safari](/adguard-for-safari/installation)
+[AdGuard für Safari](/archive/adguard-for-safari/installation)
 
 [AdGuard-Inhaltsblocker](/adguard-content-blocker/installation)

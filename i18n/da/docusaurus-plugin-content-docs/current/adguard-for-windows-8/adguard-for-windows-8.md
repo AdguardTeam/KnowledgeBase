@@ -1,5 +1,5 @@
 ---
-title: AdGuard for Windows v8
+title: AdGuard til Windows v8
 sidebar_position: 1
 ---
 
@@ -11,7 +11,7 @@ This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that
 
 AdGuard for Windows is an easy-to-use tool that blocks annoying banners, popups, video ads, and trackers. But that’s not all: it helps you save traffic, load web pages faster, and protect your computer from undesirable and potentially malicious websites. AdGuard also protects you from phishing websites and keeps your kids away from inappropriate content.
 
-## System requirements
+## Systemkrav
 
 - **OS version:** Microsoft Windows 10 or higher
 - **RAM:** at least 6 GB

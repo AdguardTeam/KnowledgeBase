@@ -11,19 +11,17 @@ Este artigo é sobre a extensão de navegador AdGuard, que protege apenas o seu 
 
 O objetivo da _Proteção contra rastreamento_ é proteger seus dados pessoais sensíveis contra rastreadores online e fraudadores. Existem pequenas diferenças nos recursos de proteção contra rastreamento entre navegadores baseados em Chromium, que suportam MV3, e navegadores não baseados em Chromium, que suportam MV2.
 
-![Stealth Mode \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
+_Tracking protection_ in Chromium-based browsers
+![Tracking protection in Chromium-based browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
 
-_Proteção contra rastreamento_ em navegadores baseados no Chromium
+_Tracking protection_ in non-Chromium browsers
+![Tracking protection in non-Chromium browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv2.png)
 
-![Proteção contra rastreamento em navegadores que não sejam Chromium \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv2_trackingProtection.png)
-
-Algumas das opções do _Modo Invisível_ disponíveis em aplicativos completos não estão presentes nas extensões do navegador devido a restrições técnicas.
-
-Os recursos de _Proteção contra rastreamento_ impedem que os sites vejam a consulta de pesquisa que você usou para encontrá-los na Internet, excluem automaticamente cookies de terceiros e de sites, e muito mais. Um [artigo separado](/general/stealth-mode) é dedicado a todos esses recursos.
+_Tracking protection_ features prevent websites from seeing the search query you used to find them on the Internet, automatically delete third-party and website cookies, and more. A [separate article](/general/stealth-mode) is devoted to all these features.
 
 :::note
 
-As extensões de navegador são limitadas a um navegador específico e estão sujeitas às suas restrições técnicas. Portanto, não podem oferecer todos os recursos de proteção contra rastreamento disponíveis em aplicativos completos de bloqueio de anúncios.
+Browser extensions are limited to a specific browser and are subject to its technical restrictions. Therefore, they cannot offer all the tracking protection features available in full-fledged ad-blocking apps.
 
 :::
 

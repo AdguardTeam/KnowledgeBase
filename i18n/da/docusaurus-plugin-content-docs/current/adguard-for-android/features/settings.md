@@ -1,5 +1,5 @@
 ---
-title: Settings
+title: Indstillinger
 sidebar_position: 4
 ---
 
@@ -11,7 +11,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 The _Settings_ tab can be accessed by tapping the right-most icon at the bottom of the screen. This section contains various settings, information about your app, license & subscription, and various support resources.
 
-## General
+## Generelt
 
 This section helps you manage the appearance and behavior of the app: you can set the color theme and language, manage notifications, and more. If you want to help the AdGuard team detect app crashes and research usability, you can enable _Auto-report crashes_ and _Send technical and interaction data_.
 
@@ -41,7 +41,7 @@ This section allows you to manage HTTPS filtering settings, filters, and userscr
 
 ![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.jpg)
 
-### Filters
+### Filtre
 
 AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the _Protection_ section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable _Basic protection_, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, _Basic protection_ will also be disabled.
 
@@ -81,7 +81,7 @@ Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.
 
 ### Network
 
-#### HTTPS filtering
+#### HTTPS-filtrering
 
 To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
 
@@ -140,7 +140,7 @@ Please note that DNS filtering will still be active in _Automatic proxy_ routing
 
 - _Manual proxy_ involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
 
-## License
+## Licens
 
 In this section, you can find information about your license and manage it:
 

@@ -1,37 +1,37 @@
 ---
-title: Search ads and self-promotion
+title: Søgeannoncer og selvpromovering
 sidebar_position: 3
 ---
 
-**Disclosure.** While AdGuard provides an option to show some ads, we do not have any 'acceptable ads' program like Adblock Plus and some other ad blockers, where they take money for leaving certain ads unblocked. This isn't our way of doing business. We do not get paid for showing any of the ads, and we do not use the term 'acceptable' for a reason: the ads we might show may be, in fact, useful and not just 'acceptable'. All of this applies only to search ads and self-promotion ads.
+**Offentliggørelse.** Selvom AdGuard muliggør visning af visse annoncer, har vi intet "acceptable annoncer"-program, såsom Adblock Plus og visse andre adblockere, hvor de tager penge for at lade visse annoncer være ublokerede. Det er ikke vores måde at drive forretning på. Vi bliver ikke betalt for at vise nogen af annoncerne, og vi bruger ikke udtrykket "acceptable" af én grund: De annoncer, vi muligvis viser, kan faktisk være nyttige og ikke blot "acceptable". Alt dette gælder kun for selvpromoverende og søgeannoncer.
 
-You can turn off the display of these ads at any time. Furthermore, we will explain which ads qualify for this definition.
+Visning af disse annoncer kan til enhver tid slås fra. Desuden vil vi forklare, hvilke annoncer hører ind under denne definition.
 
-### Search ads
+### Søgeannoncer
 
-Search ads are ads that you see among search query results when using online search engines, such as Google, Bing, DuckDuckGo, etc.
+Søgeannoncer er dem, som ses blandt resultaterne af en søgeforespørgsel ved brug af en online-søgemaskine såsom Google, Bing, DuckDuckGo mv.
 
-![Search ads](https://cdn.adtidy.org/content/kb/ad_blocker/general/googlead.jpg)
+![Søgeannoncer](https://cdn.adtidy.org/content/kb/ad_blocker/general/googlead.jpg)
 
-These ads are always contextual: they are targeted to match the keywords you used in the query. This helps you find exactly what you are searching for. Moreover, search ads (because they go through manual moderation) are often more relevant and helpful than the rest of the search results.
+Disse annoncer er altid kontekstuelle: De er målrettet til at matche de anvendte søgeord. Dette hjælper med at finde præcis det, der søges efter. Desuden er søgeannoncer (da de gennemgår manuel moderering) ofte mere relevante og nyttige end resten af søgeresultaterne.
 
-Another argument in defense of search ads is that they are much less intrusive than many other ad formats.
+Et andet argument til forsvar for søgeannoncer er, at de er meget mindre påtrængende end mange andre annoncetyper.
 
-### What is websites' self-promotion?
+### Hvad er websteders selvpromovering?
 
-In principle, when an ad on a website promotes this particular website or closely related websites, social media, and so on, such an ad is considered a self-promoting one.
+Hvis en annonce på et websted promoverer det selv samme websted eller nært beslægtede websteder, sociale medier mv., betragtes en sådan annonce som selvpromoverende.
 
-![Search ads](https://cdn.adtidy.org/content/kb/ad_blocker/general/echodot.jpg)
+![Søgeannoncer](https://cdn.adtidy.org/content/kb/ad_blocker/general/echodot.jpg)
 
-Our general stance here is very similar to the EasyList policy regarding self-promotion ads. According to our [filter policy](../filter-policy), we should not block these ads; however, we should not make an exception if such an ad gets blocked by some rule 'alongside' a regular ad.
+Vores generelle holdning her er meget lig EasyList-politikken vedr. samme emne. Iht. vores [filterpolitik](../filter-policy) bør vi ikke blokere disse annoncer; dog bør vi ikke gøre en undtagelse, hvis en sådan annonce blokeres af en regel 'ved siden af' en alm. annonce.
 
-Partly, this is due to ethical reasons, but mostly because such ads are rarely too intrusive and are often useful for the visitor of the website (who is supposedly interested in this website's content).
+Der skyldes dels etiske årsager, men mest fordi sådanne annoncer sjældent er for påtrængende og ofte er nyttige for den besøgende på webstedet (der sandsynligvis er interesseret i dets indhold).
 
-By enabling 'Search ads and self-promotion', AdGuard users can unblock some of these self-promotion ads.
+Ved at aktivere 'Søgeannoncer og selvpromovering' kan AdGuard-brugere afblokere nogle af disse selvpromoverende annoncer.
 
-### What ads are on the list?
+### Hvilke annoncer er på listen?
 
-When you enable 'Search ads and self-promotion', search ads from the following search engines are shown:
+Når 'Søgeannoncer og selvpromovering' aktiveres, vises søgeannoncer fra flg. søgemaskiner:
 
 - Google
 - Yahoo
@@ -41,8 +41,8 @@ When you enable 'Search ads and self-promotion', search ads from the following s
 - DuckDuckGo
 - StartPage
 
-As well as all self-promotional ads that satisfy our filter policy.
+Samt alle selvpromoverende annoncer, som overholder vores filterpolitik.
 
-### Summary
+### Sammenfatning
 
-Allowing 'Search ads and self-promotion' is a 100% optional feature that may be helpful in some cases. If you don't like it, you can turn it off at any time. It does not, and never will, include any ad types or individual ads that do not fall into one of the two categories described above.
+At tillade "Søgeannoncer og selvpromovering" er en 100% valgfri funktion, der kan være nyttig i visse tilfælde. Er den uønsket, kan den til enhver tid slås fra. Den omfatter ikke, og vil heller aldrig omfatte, nogen annoncetyper eller individuelle annoncer, som ikke falder ind under én af de to kategorier beskrevet ovenfor.

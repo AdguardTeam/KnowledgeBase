@@ -9,7 +9,7 @@ sidebar_position: 5
 
  1. Go to your [AdGuard account](https://adguardaccount.com).
  1. 选择「*许可证*」
- 1. 在不再需要的订阅下方点击「*取消订阅*」 ![取消](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
+ 1. Click *Cancel auto-renewal* below the subscription you no longer need. ![取消](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub-upd.png)
 
  被取消的订阅将在其到期日之前有效。
 

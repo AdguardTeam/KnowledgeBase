@@ -7,7 +7,7 @@ If AdGuard Browser Extension fails to block ads on search websites in Opera, eit
 
 To grant the required permission:
 
-![Allow access to search page results](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/allow-access.png)
+![Allow access to search page results \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/opera_allow_search.png)
 
 1. Click the cube icon next to the address bar → _Manage extensions..._.
 2. Find AdGuard AdBlocker in the list of installed extensions and tick the box next to _Allow access to search page results_.

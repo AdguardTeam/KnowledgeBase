@@ -26,4 +26,4 @@ The video now opens in AdGuard’s ad-free player.
   ![Extension permissions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/extensions_allow.jpg)
 1. Open AdGuard, tap the shield icon, and enable *Advanced protection*.
 
-You can now watch YouTube videos in Safari without ads.
+You can now [watch YouTube videos in Safari without ads](https://adguard.com/en/adguard-youtube/overview.html).
