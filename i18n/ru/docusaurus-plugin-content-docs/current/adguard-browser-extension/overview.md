@@ -21,7 +21,7 @@ sidebar_position: 10
 
 :::note
 
-У нас есть отдельное расширение для Safari. C момента выхода [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) большинство расширений столкнулись с проблемами, и многие из них перестали работать. We had to develop a [separate extension for Safari](/adguard-for-safari/features/general) that has some differences in comparison with the extension described in this article.
+У нас есть отдельное расширение для Safari. C момента выхода [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) большинство расширений столкнулись с проблемами, и многие из них перестали работать. We had to develop a [separate extension for Safari](/archive/adguard-for-safari/features/general) that has some differences in comparison with the extension described in this article.
 
 :::
 

@@ -15,6 +15,6 @@ sidebar_position: 10
 
 [AdGuard 浏览器扩展](/adguard-browser-extension/installation)
 
-[AdGuard Safari版](/adguard-for-safari/installation)
+[AdGuard Safari版](/archive/adguard-for-safari/installation)
 
 [AdGuard 内容拦截器](/adguard-content-blocker/installation)

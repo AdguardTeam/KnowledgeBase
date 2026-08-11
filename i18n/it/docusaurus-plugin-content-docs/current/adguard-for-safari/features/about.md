@@ -9,6 +9,6 @@ Nella scheda Informazioni, puoi visualizzare le informazioni sulla versione corr
 
 :::note Promemoria
 
-AdGuard per Safari può essere scaricato gratuitamente [dall'App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). Le istruzioni di configurazione dettagliate sono disponibili nella [Knowledge Base](/adguard-for-safari/installation/).
+AdGuard per Safari può essere scaricato gratuitamente [dall'App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). Le istruzioni di configurazione dettagliate sono disponibili nella [Knowledge Base](/archive/adguard-for-safari/installation/).
 
 :::

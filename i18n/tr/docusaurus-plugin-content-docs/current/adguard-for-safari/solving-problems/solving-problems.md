@@ -11,8 +11,8 @@ Bu makale, yalnızca Safari tarayıcınızı koruyan Safari için AdGuard hakkı
 
 İşte karşılaşabileceğiniz bazı sorunlar ve geçici çözümlerin yanı sıra ihtiyaç duyabileceğiniz kılavuzlar ve talimatlar.
 
-- [Rule limit issues](/adguard-for-safari/solving-problems/rule-limit.md)
-- [Filtreleme çalışmıyor ve reklamlar engellenmiyor](/adguard-for-safari/solving-problems/ads-not-blocked.md)
-- [Safari için AdGuard devre dışı bırakıldığında filtreleme durmuyor](/adguard-for-safari/solving-problems/filters-after-disable.md)
-- [Safari için AdGuard'da günlükler nasıl toplanır](/adguard-for-safari/solving-problems/logs.md)
-- Safari için AdGuard, macOS Sonoma'daki özel sekmelerde çalışmıyor](/adguard-for-safari/solving-problems/private-sonoma.md)
+- [Rule limit issues](/archive/adguard-for-safari/solving-problems/rule-limit.md)
+- [Filtreleme çalışmıyor ve reklamlar engellenmiyor](/archive/adguard-for-safari/solving-problems/ads-not-blocked.md)
+- [Safari için AdGuard devre dışı bırakıldığında filtreleme durmuyor](/archive/adguard-for-safari/solving-problems/filters-after-disable.md)
+- [Safari için AdGuard'da günlükler nasıl toplanır](/archive/adguard-for-safari/solving-problems/logs.md)
+- Safari için AdGuard, macOS Sonoma'daki özel sekmelerde çalışmıyor](/archive/adguard-for-safari/solving-problems/private-sonoma.md)
