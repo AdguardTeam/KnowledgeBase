@@ -716,7 +716,7 @@ AdGuard se pokusí zavřít kartu prohlížeče s jakoukoli adresou, která odpo
 :::caution Omezení
 
 1. Modifikátor `$popup` funguje nejlépe v rozšíření prohlížeče AdGuard pro prohlížeče založené na Chromiu a Firefox.
-1. V pravidlech [AdGuard pro Chrome MV3][ext-mv3] s modifikátorem [`$popup`][popup-in-mv3] by nefungovaly, proto jsme zakázali jejich převod na deklarativní pravidla. Pokusíme se je použít pouze v našem enginu [TSUrlFilter][] a zavírat nové karty programově.
+1. In [AdGuard for Chrome MV3][ext-mv3] rules with the [`$popup`][popup-in-mv3] modifier would not work, so we disable converting them to declarative rules. Pokusíme se je použít pouze v našem enginu [TSUrlFilter][] a zavírat nové karty programově.
 1. V AdGuardu pro Safari a AdGuardu pro iOS, pravidla `$popup` stránku jednoduše a okamžitě zablokují.
 1. V AdGuardu pro Windows, Mac, Android a Linux nemusí modifikátor `$popup` v některých případech detekovat vyskakovací okno a nebude zablokováno. Modifikátor `$popup` použije typ obsahu `document` se speciálním příznakem, který je předán blokovací stránce. Samotná blokovací stránka může provést některé kontroly a zavřít okno, pokud se skutečně jedná o vyskakovací okno. V opačném případě by se stránka měla načíst. Lze jej kombinovat s dalšími modifikátory typu požadavku, například `$third-party`, `$strict-third-party`, `$strict-first-party` a `$important`.
 
@@ -1174,13 +1174,13 @@ Zakazuje přidávání JavaScript kódu na stránku. O pravidlech skripletů a j
 
 :::info Omezení
 
-Pravidla s modifikátorem [`$jsinject`][jsinject-in-mv3] nelze v [AdGuard for Chrome MV3][ext-mv3] převést na DNR. Používáme je pouze v enginu [TSUrlFilter][], abychom zakázali některá kosmetická pravidla.
+Rules with the [`$jsinject`][jsinject-in-mv3] modifier cannot be converted to DNR in [AdGuard for Chrome MV3][ext-mv3]. Používáme je pouze v enginu [TSUrlFilter][], abychom zakázali některá kosmetická pravidla.
 
 :::
 
 :::info Kompatibilita
 
-Modifikátor `$jsinject` není podporován AdGuardem pro Chrome MV3 ([zatím][jsinject-in-mv3]) a Blokátorem obsahu AdGuard.
+The `$jsinject` modifier is not supported by AdGuard for Chrome MV3 ([yet][jsinject-in-mv3]) and AdGuard Content Blocker.
 
 :::
 
@@ -1375,7 +1375,7 @@ Tyto modifikátory mohou zcela změnit chování základních pravidel.
 | [$removeheader](#removeheader-modifier)     |                      ✅                      | ✅ [*[7]](#removeheader-modifier-limitations) | ✅ [*[7]](#removeheader-modifier-limitations) | ✅ [*[7]](#removeheader-modifier-limitations) |             ❌              |               ❌               |                 ❌                 |
 | [$removeparam](#removeparam-modifier)       |                      ✅                      |                      ✅                       | ✅ [*[6]](#removeparam-modifier-limitations)  |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
 | [$replace](#replace-modifier)               |                      ✅                      |                      ❌                       |                      ❌                       |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
-| [$urltransform](#urltransform-modifier)     |                      ✅                      |                      ❌                       |                      ❌                       |                      ❌                       |             ❌              |               ❌               |                 ❌                 |
+| [$urltransform](#urltransform-modifier)     |                      ✅                      |                      ✅                       | ✅ [*[8]](#urltransform-modifier-limitations) |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
 | [$reason](#reason-modifier)                 |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ✅              |               ✅               |                 ❌                 |
 | [noop](#noop-modifier)                      |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ✅              |               ✅               |                 ❌                 |
 | [$empty 👎](#empty-modifier "deprecated")    |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
@@ -1449,7 +1449,7 @@ V takovém případě pravidlo `$badfilter` zakáže odpovídající pravidlo pr
 
 :::caution Omezení
 
-V [AdGuardu pro Chrome MV3][ext-mv3] se pravidlo s modifikátorem `$badfilter` použije v DNR pouze v případě, že úplně zruší zdrojové pravidlo. Nemůžeme ho vypočítat, pokud je zrušeno pouze částečně. [Příklady][badfilter-in-mv3].
+V [AdGuardu pro Chrome MV3][ext-mv3] se pravidlo s modifikátorem `$badfilter` použije v DNR pouze v případě, že úplně zruší zdrojové pravidlo. Nemůžeme ho vypočítat, pokud je zrušeno pouze částečně. [Examples][badfilter-in-mv3].
 
 :::
 
@@ -2912,7 +2912,7 @@ Produkty AdGuard, které používají verzi [CoreLibs][] starší než 1.20, pod
 
 :::info Kompatibilita
 
-Tato část platí pouze pro AdGuard pro Windows, AdGuard pro Mac, AdGuard pro Android a Adguardem pro Linux s [CoreLibs][] v1.17 nebo novější.
+This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.17 or later, and to [AdGuard Browser Extension][ext-chr] v5.5 or later.
 
 :::
 
@@ -2985,31 +2985,46 @@ Sledovací odkazy se nyní automaticky vyčistí a umožní přímou navigaci na
 
 Pravidla s modifikátorem `$urltransform` lze použít [**pouze v důvěryhodných filtrech**](#trusted-filters).
 
-Pravidla `$urltransform`, která neobsahují žádné [modifikátory typu obsahu](#content-type-modifiers), budou odpovídat pouze požadavkům, jejichž typem obsahu je `document`.
+`$urltransform` is only compatible with `$domain`, `$third-party`, `$important`, `$match-case`, `$badfilter`, `$to`, `$method`, `$popup`, `$denyallow`, and [content-type modifiers](#content-type-modifiers). Rules using any other modifiers are invalid and discarded.
+
+`$urltransform` rules without [content-type modifiers](#content-type-modifiers) will only match requests where the content type is `document`.
 
 :::
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$urltransform` jsou podporována AdGuardem pro Windows, Mac, Android a Linux s [CoreLibs][] v1.15 nebo novější.
+Rules with the `$urltransform` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.15 or later.
 
-`$urltransform` pravidla s [modifikátory typu obsahu](#content-type-modifiers) jsou podporována od [CoreLibs][] v1.19 nebo novější. V dřívějších verzích nebyly modifikátory typu obsahu povoleny s `$urltransform`.
+`$urltransform` rules with [content-type modifiers](#content-type-modifiers) are supported starting from [CoreLibs][] v1.19 or later. In earlier versions, content-type modifiers were not allowed with `$urltransform`.
 
+Rules with the `$urltransform` modifier and [content-type modifiers](#content-type-modifiers) are also supported by [AdGuard Browser Extension][ext-chr] v5.5 or later, and by [AdGuard for Chrome MV3][ext-mv3] v5.5 or later with [limitations](#urltransform-modifier-limitations).
+
+:::
+
+##### `$urltransform` modifier limitations {#urltransform-modifier-limitations}
+
+:::caution Omezení
+
+In [AdGuard for Chrome MV3][ext-mv3], the `$urltransform` modifier has the following limitations:
+
+1. **No decode stages** — pipeline transforms containing `b64` (Base64 decode) or `pct` (percent-decode) stages are not supported and will be discarded.
+2. **No global replacement** — only the **first match** is replaced. The `/g` (global) flag is ignored. This is usually not an issue for full-URL transforms anchored with `^`, but path-only patterns that rely on replacing all occurrences will only replace the first one.
+3. **Single redirect per request** — when multiple `$urltransform` rules match the same request, only the highest-priority one takes effect. In CoreLibs, all matching rules are applied sequentially.
 :::
 
 #### **`$reason`** {#reason-modifier}
 
-Modifikátor `$reason` umožňuje přidat vlastní vysvětlující zprávu, která se zobrazí na blokovací stránce, když je požadavek tímto pravidlem blokován. Tento modifikátor funguje pouze s modifikátorem typu obsahu `$document`.
+The `$reason` modifier allows you to add a custom explanation message that will be displayed on the blocking page when a request is blocked by this rule. This modifier only works with the `$document` content-type modifier.
 
-**Omezení počtu znaků a požadavky na únik:**
+**Character limitations and escaping requirements:**
 
 - Pro text s odůvodněním neexistuje žádné omezení maximální délky
 - V textu důvodu jsou povoleny všechny znaky
 - Zvláštní znaky (například uvozovky, čárky a zpětné lomítko) musí být správně uvozeny pomocí zpětného lomítka (`\`)
 
-**Předdefinované lokalizovatelné tokeny:**
+**Predefined localizable tokens:**
 
-Místo vlastního textu můžete použít předdefinované tokeny, které budou automaticky lokalizovány:
+Instead of custom text, you can use predefined tokens that will be automatically localized:
 
 - `malicious` — pro škodlivý obsah
 - `tracker` — pro sledování obsahu
@@ -3028,13 +3043,13 @@ Místo vlastního textu můžete použít předdefinované tokeny, které budou 
 
 :::info Kompatibilita
 
-AdGuard pro Windows, AdGuard pro Mac, AdGuard pro Android a AdGuard pro Linux s CoreLibs v1.20 nebo novější podporují pravidla s modifikátorem `$reason`. Blokátor obsahu AdGuard tato pravidla nepodporuje.
+AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with CoreLibs v1.20 or later support rules with the `$reason` modifier. AdGuard Content Blocker does not support these rules.
 
 :::
 
 #### **`noop`** {#noop-modifier}
 
-Modifikátor `noop` nedělá nic a lze jej použít pouze ke zvýšení čitelnosti pravidel. Skládá se ze sekvence znaků podtržítka (`_`) libovolné délky a může se v pravidle objevit tolikrát, kolikrát je potřeba.
+`noop` modifier does nothing and can be used solely to increase rules' readability. It consists of a sequence of underscore characters (`_`) of arbitrary length and can appear in a rule as often as needed.
 
 **Příklady**
 
@@ -3045,19 +3060,19 @@ Modifikátor `noop` nedělá nic a lze jej použít pouze ke zvýšení čitelno
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `noop` nejsou Blokátorem obsahu AdGuard podporována.
+Rules with `noop` modifier are not supported by AdGuard Content Blocker.
 
 :::
 
 #### **`$empty` (zastaralé)** {#empty-modifier}
 
-:::caution Upozornění na vyřazení
+:::caution Deprecation notice
 
-Tento modifikátor je zastaralý a nahrazuje jej modifikátor [`$redirect`](#redirect-modifier). Pravidla s `$empty` jsou stále podporována a nyní se převádějí na `$redirect=nooptext`, ale podpora bude v budoucnu odstraněna.
+This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$empty` are still supported and being converted into `$redirect=nooptext` now but the support shall be removed in the future.
 
 :::
 
-Obvykle se zablokované požadavky v prohlížeči tváří jako chyba serveru. Pokud použijete modifikátor `$empty`, AdGuard bude emulovat prázdnou odpověď ze serveru se stavem `200 OK`.
+Usually, blocked requests look like a server error to browser. If you use `$empty` modifier, AdGuard will emulate a blank response from the server with`200 OK` status.
 
 **Příklady**
 
@@ -3065,19 +3080,19 @@ Obvykle se zablokované požadavky v prohlížeči tváří jako chyba serveru. 
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$empty` nejsou podporována Blokátorem obsahu AdGuard, AdGuardem pro iOS a AdGuardem pro Safari.
+Rules with `$empty` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS, and AdGuard for Safari.
 
 :::
 
 #### **`$mp4` (zastaralé)** {#mp4-modifier}
 
-:::caution Upozornění na vyřazení
+:::caution Deprecation notice
 
-Tento modifikátor je zastaralý a nahrazuje jej modifikátor [`$redirect`](#redirect-modifier). Pravidla s `$mp4` jsou stále podporována a nyní se převádějí na `$redirect=noopmp4-1s,media`, ale podpora bude v budoucnu odstraněna.
+This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$mp4` are still supported and being converted into `$redirect=noopmp4-1s,media` now but the support shall be removed in the future.
 
 :::
 
-Jako odpověď na zablokovaný požadavek vrátí AdGuard krátký zástupný videoklip.
+As a response to blocked request AdGuard returns a short video placeholder.
 
 **Příklady**
 
@@ -3085,33 +3100,33 @@ Jako odpověď na zablokovaný požadavek vrátí AdGuard krátký zástupný vi
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$mp4` nejsou podporována Blokátorem obsahu AdGuard, AdGuardem pro iOS a AdGuardem pro Safari.
+Rules with `$mp4` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS, and AdGuard for Safari.
 
 :::
 
 ### Priority pravidel {#rule-priorities}
 
-Každé pravidlo má svou vlastní prioritu, což je nutné v případě, že požadavku odpovídá několik pravidel a filtrovací nástroj musí vybrat jedno z nich. Priorita se měří kladným celým číslem.
+Each rule has its own priority, which is necessary when several rules match the request and the filtering engine needs to select one of them. Priority is measured by a positive integer.
 
-:::note Kolize
+:::note Collisions
 
-Pokud stejnému požadavku odpovídají dvě pravidla se stejnou prioritou, implementace filtrovacího modulu určí, které z nich bude vybráno.
+When two rules with the same priority match the same request, the filter engine implementation determines which one is chosen.
 
 :::
 
 :::info
 
-Koncept priorit pravidel nabývá na významu ve světle Manifest V3, protože stávající pravidla je třeba převést na pravidla declarativeNetRequest.
+The concept of rule priorities becomes increasingly important in light of Manifest V3, as the existing rules need to be converted to declarativeNetRequest rules.
 
 :::
 
 #### Výpočet priority
 
-Pro výpočet priority jsme modifikátory rozdělili do různých skupin. Tyto skupiny jsou seřazeny podle priority od nejnižší po nejvyšší. Modifikátor, který výrazně zužuje oblast působnosti pravidla, zvyšuje jeho celkovou prioritu. Naopak, pokud se pravidlo vztahuje na širší okruh požadavků, jeho priorita se snižuje.
+To calculate priority, we've categorized modifiers into different groups. These groups are ranked based on their priority, from lowest to highest. A modifier that significantly narrows the scope of a rule adds more weight to its total priority. Conversely, if a rule applies to a broader range of requests, its priority decreases.
 
-Stojí za zmínku, že existují případy, kdy má jednoparametrový modifikátor vyšší prioritu než víceparametrový. Například v případě `$domain=example.com|example.org` má pravidlo, které zahrnuje dvě domény o něco širší oblast účinnosti než pravidlo s jednou zadanou doménou, a proto je jeho priorita nižší.
+It's worth noting that there are cases where a single-parameter modifier has a higher priority than multi-parameter ones. For instance, in the case of `$domain=example.com|example.org`, a rule that includes two domains has a slightly broader effective area than a rule with one specified domain, therefore its priority is lower.
 
-Základní priorita každého pravidla je 1. Pokud je vypočtená priorita číslo s pohyblivou řádovou čárkou, bude **zaokrouhlena nahoru** na nejmenší celé číslo větší nebo rovno vypočtené prioritě.
+The base priority of any rule is 1. If the calculated priority is a floating-point number, it will be **rounded up** to the smallest integer greater than or equal to the calculated priority.
 
 :::info Kompatibilita
 
@@ -3120,9 +3135,9 @@ Základní priorita každého pravidla je 1. Pokud je vypočtená priorita čís
 
 :::
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Aliasy modifikátorů (`1p`, `3p` atd.) nejsou do těchto kategorií zahrnuty, nicméně jsou v rámci enginu využívány pro výpočet priority pravidla.
+Modifier aliases (`1p`, `3p`, etc.) are not included in these categories, however, they are utilized within the engine to compute the rule priority.
 
 :::
 
@@ -3141,11 +3156,11 @@ Aliasy modifikátorů (`1p`, `3p` atd.) nejsou do těchto kategorií zahrnuty, n
 - [`$to`](#to-modifier),
 - omezené [typy obsahu](#content-type-modifiers) s `~`.
 
-Při práci s negovanou doménou, aplikací, metodou nebo typem obsahu přidáváme **1 bod** za existenci samotného modifikátoru bez ohledu na množství negovaných domén nebo typů obsahu. Je to proto, že oblast působnosti tohoto pravidla je již nyní nekonečně široká. Jednoduše řečeno, zákazem více domén, typů obsahu, metod nebo aplikací se rozsah pravidla zmenší jen minimálně.
+When dealing with a negated domain, app, method, or content-type, we add **1 point** for the existence of the modifier itself, regardless of the quantity of negated domains or content-types. This is because the rule's scope is already infinitely broad. Put simply, by prohibiting multiple domains, content-types, methods or apps, the scope of the rule becomes only minimally smaller.
 
 #### Definované modifikátory typu obsahu, definované metody, definovaná záhlaví, $all, $popup, specifické výjimky {#priority-category-2}
 
-Všechny platné typy obsahu:
+All valid content types:
 
 <!-- Please keep them sorted -->
 
@@ -3162,15 +3177,15 @@ Všechny platné typy obsahu:
 - [`$websocket`](#websocket-modifier),
 - [`$xmlhttprequest`](#xmlhttprequest-modifier);
 
-Patří sem také pravidla, která implicitně přidávají všechny typy obsahu:
+This also includes rules that implicitly add all content types:
 
 - [`$all`](#all-modifier);
 
-Nebo pravidla, která implicitně přidávají modifikátor `$document`:
+Or rules that implicitly add the modifier `$document`:
 
 - [`$popup`](#popup-modifier);
 
-Nebo některé speciální výjimky, které implicitně přidávají `$document,subdocument`:
+Or some specific exceptions that implicitly add `$document,subdocument`:
 
 <!-- Please keep them sorted -->
 
@@ -3183,25 +3198,25 @@ Nebo některé speciální výjimky, které implicitně přidávají `$document,
 - [`$specifichide`](#specifichide-modifier),
 - [`$urlblock`](#urlblock-modifier);
 
-Nebo povolené metody skrze [`$method`](#method-modifier).
+Or allowed methods via [`$method`](#method-modifier).
 
-Nebo pravidla s [`$header`](#header-modifier).
+Or rules with [`$header`](#header-modifier).
 
-Přítomnost jakýchkoli modifikátorů typu obsahu přidává `(50 + 50 / N)`, kde `N` je např. počet přítomných modifikátorů: `||example.com^$image,skript` přidá `50 + 50 / 2 = 50 + 25 = 75` k celkové váze pravidla.
+The presence of any content-type modifiers adds `(50 + 50 / N)`, where `N` is the number of modifiers present, for example: `||example.com^$image,script` will add `50 + 50 / 2 = 50 + 25 = 75` to the total weight of the rule.
 
-Do této kategorie patří také `$all`, protože implicitně přidává všechny modifikátory typu obsahu, např. `$document,subdocument,image,script,media,<etc>` + `$popup`.
+The `$all` also belongs to this category, because it implicitly adds all content-type modifiers, e.g., `$document,subdocument,image,script,media,<etc>` + `$popup`.
 
-Do této kategorie patří i `$popup`, protože implicitně přidává modifikátor `$document`. Podobně specifické výjimky přidávají `$document,subdocument`.
+The `$popup` also belongs to this category, because it implicitly adds the modifier `$document`. Similarly, specific exceptions add `$document,subdocument`.
 
-Pokud je v pravidle s povolenými metodami modifikátor `$method`, přidává `(50 + 50 / N)`, kde `N` je počet povolených metod, např.: `||example.com^$method= GET|POST|PUT` přidává `50 + 50 / 3 = 50 + 16,6 = 67` k celkové váze pravidla.
+If there is a `$method` modifier in the rule with allowed methods it adds `(50 + 50 / N)`, where `N` is the number of methods allowed, for example: `||example.com^$method=GET|POST|PUT` will add `50 + 50 / 3 = 50 + 16.6 = 67` to the total weight of the rule.
 
-Pokud je v pravidle modifikátor `$header`, přidává se `50`.
+If there is a `$header` modifier in the rule, it adds `50`.
 
 #### `$domain` nebo `$app` s povolenými doménami nebo aplikacemi {#priority-category-3}
 
-Zadané domény prostřednictvím `$domain` nebo zadané aplikace prostřednictvím `$app` přidávají `100 + 100 / N`, kde `N` je např. počet hodnot modifikátoru: `||example.com^$domain=example.com|example.org|example.net` přidává `100 + 100 / 3 = 134,3 = 135` nebo `||example.com^$app=org.example.app1|org.example.app2` sečte `100 + 100 / 2 = 151` nebo `||example.com^$domain=example.com,app=org.example.app1|org.example.app2` sečte `100 + 100/1` ($domain část) a `100 + 100/2` ($app část), celkem `350`.
+Specified domains through `$domain` or specified applications through `$app` add `100 + 100 / N`, where `N` is the number of modifier values for example: `||example.com^$domain=example.com|example.org|example.net` will add `100 + 100 / 3 = 134.3 = 135` or `||example.com^$app=org.example.app1|org.example.app2` will add `100 + 100 / 2 = 151` or `||example.com^$domain=example.com,app=org.example.app1|org.example.app2` will add `100 + 100/1` ($domain part) and `100 + 100/2` ($app part), totaling `350`.
 
-Hodnoty modifikátorů, které jsou regexp nebo tld, budou interpretovány jako normální položky ve tvaru `example.com` a budou počítány po jedné, např.: `||example.com^$domain=example.*` sečte `100 + 100 / 1 = 200` nebo `||example.com^$domain=example.*|adguard.*` sečte `100 + 100 / 2 = 150`.
+Modifier values that are regexps or tld will be interpreted as normal entries of the form `example.com` and counted one by one, for example: `||example.com^$domain=example.*` will add `100 + 100 / 1 = 200` or `||example.com^$domain=example.*|adguard.*` will add `100 + 100 / 2 = 150`.
 
 #### Pravidla `$redirect` {#priority-category-6}
 
@@ -3210,7 +3225,7 @@ Hodnoty modifikátorů, které jsou regexp nebo tld, budou interpretovány jako 
 - [`$redirect`](#redirect-modifier),
 - [`$redirect-rule`](#redirect-rule-modifier).
 
-Každé z nich přidává `10^3` k prioritě pravidla.
+Each of which adds `10^3` to rule priority.
 
 #### Specifické výjimky {#priority-category-4}
 
@@ -3225,27 +3240,27 @@ Každé z nich přidává `10^3` k prioritě pravidla.
 - [`$specifichide`](#specifichide-modifier),
 - [`$urlblock`](#urlblock-modifier);
 
-Každá z nich přidává `10^4` k prioritě.
+Each of which adds `10^4` to the priority.
 
-Stejně jako výjimka s modifikátorem [`$document`](#document-modifier): protože je to alias pro `$elemhide,content,jsinject,urlblock,extension`. Přidá `10^4` pro každý modifikátor z [horního seznamu](#priority-category-4), celkem `10^4 * 5`.
+As well as exception with [`$document modifier`](#document-modifier): because it's an alias for `$elemhide,content,jsinject,urlblock,extension`. It will add `10^4` for each modifier from [the top list](#priority-category-4), `10^4 * 5` in total.
 
-Každá z těchto výjimek navíc implicitně přidává dva povolené modifikátory typu obsahu `$document,subdocument`.
+In addition, each of these exceptions implicitly adds the two allowed content-type modifiers `$document,subdocument`.
 
 #### Pravidla seznamu povolených {#priority-category-5}
 
-Modifikátor `@@` přidává `10^5` k prioritě pravidla.
+Modifier `@@` adds `10^5` to rule priority.
 
 #### Pravidla `$important` {#priority-category-7}
 
-Modifikátor [`$important`](#important-modifier) přidává `10^6` k prioritě pravidla.
+Modifier [`$important`](#important-modifier) adds `10^6` to rule priority.
 
 #### Pravidla, pro která není stanovena váha priority {#priority-category-extra}
 
-[Ostatní modifikátory](#advanced-capabilities), které mají provádět dodatečné následné nebo předběžné zpracování požadavků, nepřidávají nic k prioritě pravidel.
+[Other modifiers](#advanced-capabilities), which are supposed to perform additional post- or pre-processing of requests, do not add anything to the rule priority.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Modifikátor [`$replace`](#replace-modifier) má přednost před všemi pravidly blokování kategorií 1–3, stejně jako před pravidly výjimek z kategorií 3–5, **kromě** [`$content`](#content-modifier), protože výjimka s modifikátorem `$content` má přednost před všemi pravidly `$replace`.
+The [`$replace`](#replace-modifier) modifier takes precedence over all blocking rules of categories 1–3, as well as exception rules from categories 3–5, **except** [`$content`](#content-modifier), because an exception with the `$content` modifier overrides all `$replace` rules.
 
 :::
 
@@ -3253,43 +3268,43 @@ Modifikátor [`$replace`](#replace-modifier) má přednost před všemi pravidly
 
 1. `||example.com^`
 
-    Váha pravidla bez modifikátorů: `1`.
+    Weight of the rule without modifiers: `1`.
 
 1. `||example.com^$match-case`
 
-    Váha pravidla: základní + váha modifikátoru z [kategorie 1](#priority-category-1): `1 + 1 = 2`.
+    Rule weight: base weight + weight of the modifier from [category 1](#priority-category-1): `1 + 1 = 2`.
 
 1. `||example.org^$removeparam=p`
 
-    Váha pravidla: základní váha + 0, protože $removeparam [není zahrnuto](#priority-category-extra) do výpočtu priority: `1 + 0 = 1`.
+    Rule weight: base weight + 0, since $removeparam [is not involved](#priority-category-extra) in the priority calculation: `1 + 0 = 1`.
 
 1. `||example.org^$document,redirect=nooptext`
 
-    Váha pravidla: základní + povolený typ obsahu, [kategorie 3](#priority-category-3) + $redirect z [kategorie 6](#priority-category-6): `1 + (100 + 100 / 1) + 1000 = 1201`.
+    Rule weight: base weight + allowed content type, [category 3](#priority-category-3) + $redirect from [category 6](#priority-category-6): `1 + (100 + 100 / 1) + 1000 = 1201`.
 
 1. `@@||example.org^$removeparam=p,document`
 
-    Váha pravidla: základní váha + pravidlo seznamu povolených [kategorie 5](#priority-category-5) + 0, protože $removeparam [není zapojeno](#priority-category-extra) do výpočtu priority + povolený typ obsahu [kategorie 2](#priority-category-2): `1 + 10000 + 0 + (50 + 50 / 1) = 10101`.
+    Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + 0 because $removeparam [is not involved](#priority-category-extra) in the priority calculation + allowed content type, [category 2](#priority-category-2): `1 + 10000 + 0 + (50 + 50 / 1) = 10101`.
 
 1. `@@||example.com/ad/*$domain=example.org|example.net,important`
 
-    Váha pravidla: základní váha + pravidlo seznamu povolených [kategorie 5](#priority-category-5) + důležité pravidlo [kategorie 7](#priority-category-7) + povolené domény [kategorie 3](#priority-category-3): `1 + 10000 + 1000000 + (100 + 100 / 2) = 1010152`.
+    Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + important rule, [category 7](#priority-category-7) + allowed domains, [category 3](#priority-category-3): `1 + 10000 + 1000000 + (100 + 100 / 2) = 1010152`.
 
-1. `@@||example.org^$document` bez dalších modifikátorů je aliasem pro `@@||example.com^$elemhide,content,jsinject,urlblock,extension`
+1. `@@||example.org^$document` without additional modifiers is an alias for `@@||example.com^$elemhide,content,jsinject,urlblock,extension`
 
-    Váha pravidla: základní váha + specifické výjimky, [kategorie 4](#priority-category-4) + dva povolené typy obsahu (dokument a subdokument) [kategorie 2](#priority-category-2): `1 + 10000 * 4 + (50 + 50 / 2) = 40076`.
+    Rule weight: base weight + specific exceptions, [category 4](#priority-category-4) + two allowed content types (document and subdocument), [category 2](#priority-category-2): `1 + 10000 * 4 + (50 + 50 / 2) = 40076`.
 
 1. `*$script,domain=a.com,denyallow=x.com|y.com`
 
-    Váha pravidla: základní váha + povolený typ obsahu [kategorie 2](#priority-category-2) + povolená doména, [kategorie 3](#priority-category-3) + denyallow [kategorie 1](#priority-category-1): `1 + (50 + 50/1) + (100 + 100 / 1) + 1 = 303`.
+    Rule weight: base weight + allowed content type, [category 2](#priority-category-2) + allowed domain, [category 3](#priority-category-3) + denyallow, [category 1](#priority-category-1): `1 + (50 + 50/1) + (100 + 100 / 1) + 1 = 303`.
 
-1. `||example.com^$all` — alias na `||example.com^$document,subdocument,image,script,media,etc. + $popup`
+1. `||example.com^$all` — alias to `||example.com^$document,subdocument,image,script,media,etc. + $popup`
 
-    Váha pravidla: základní váha + vyskakovací okno ([kategorie 1](#priority-category-1)) + povolené typy obsahu ([kategorie 2](#priority-category-2)): `1 + 1 + (50 + 50/12) = 55`.
+    Rule weight: base weight + popup ([category 1](#priority-category-1)) + allowed content types ([category 2](#priority-category-2)): `1 + 1 + (50 + 50/12) = 55`.
 
 ## Ostatní pravidla {#non-basic-rules}
 
-Základní pravidla však nemusí k blokování reklam stačit. Někdy potřebujete skrýt prvek nebo změnit část kódu HTML webové stránky, aniž byste cokoli porušili. Pravidla popsaná v této části jsou vytvořena speciálně pro tento účel.
+However, basic rules may not be enough to block ads. Sometimes you need to hide an element or change part of the HTML code of a web page without breaking anything. The rules described in this section are created specifically for this purpose.
 
 | Kategorie \ Produkty                    | [Aplikace CoreLibs][cl-apps] | [AdGuard pro Chromium][ext-chr] | [AdGuard pro Chrome MV3][ext-mv3] | [AdGuard pro Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
 | ---------------------------------------- |:----------------------------:|:-------------------------------:|:---------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
@@ -3300,7 +3315,7 @@ Základní pravidla však nemusí k blokování reklam stačit. Někdy potřebuj
 | [JavaScript](#javascript-rules)          |              ✅               |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ❌                 |
 | [Scriptlety](#scriptlets)                |              ✅               |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ❌                 |
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 - ✅ — plně podporováno
 - ❌ — nepodporováno
@@ -3311,15 +3326,15 @@ Základní pravidla však nemusí k blokování reklam stačit. Někdy potřebuj
 
 :::info
 
-Práce s ostatními pravidly vyžaduje základní znalost HTML a CSS. Pokud se tedy chcete naučit, jak taková pravidla vytvářet, doporučujeme seznámit se s touto [dokumentací](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/What_is_CSS).
+Work with non-basic rules requires the basic knowledge of HTML and CSS. So, if you want to learn how to make such rules, we recommend to get acquainted with [this documentation](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/What_is_CSS).
 
 :::
 
 ### Pravidla pro skrytí prvků {#cosmetic-elemhide-rules}
 
-Pravidla pro skrytí prvků slouží ke skrývání prvků webových stránek. Je to podobné jako použít styl `{ display: none; }` na vybraný prvek.
+Element hiding rules are used to hide the elements of web pages. It is similar to applying `{ display: none; }` style to selected element.
 
-Pravidla pro skrytí prvků mohou fungovat odlišně [v závislosti na platformě](#cosmetic-rules-priority).
+Element hiding rules may operate differently [depending on the platform](#cosmetic-rules-priority).
 
 #### Syntaxe
 
@@ -3331,17 +3346,17 @@ domains = [domain0, domain1[, ...[, domainN]]]
 - **`selektor`** — [CSS selektor](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors) definuje prvky, které mají být skryty.
 - **`domains`** — omezení domény pro dané pravidlo.
 
-Pokud chcete omezit oblast použití pravidel na určité domény, stačí je zadat oddělené čárkami. Např.: `example.org,example.com##selector`.
+If you want to limit the rule application area to certain domains, just enter them separated with commas. For example: `example.org,example.com##selector`.
 
-Toto pravidlo bude také použito na všechny subdomény `example.org` a `example.com`.
+This rule will be also applied to all subdomains of `example.org` and `example.com`.
 
-Pokud chcete, aby se pravidlo nevztahovalo na určité domény, začněte název domény znakem `~`. Např.: `~example.org##selector`.
+Pokud chcete, aby se pravidlo nevztahovalo na určité domény, začněte název domény znakem `~`. For example: `~example.org##selector`.
 
-V jednom pravidle můžete použít oba přístupy. Např. `example.org,~subdomain.example.org##domain` bude fungovat pro `example.org` a všechny subdomény **kromě `subdomain.example.org`**.
+You can use both approaches in a single rule. For example, `example.org,~subdomain.example.org##domain` will work for `example.org` and all subdomains, **except `subdomain.example.org`**.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Pravidla pro skrývání prvků na sobě nejsou závislá. Pokud je ve filtru pravidlo `example.org##selector` a přidáte `~example.org##selector`, budou obě pravidla použita nezávisle.
+Element hiding rules are not dependent on each other. If there is a rule `example.org##selector` in the filter and you add `~example.org##selector` both rules will be applied independently.
 
 :::
 
@@ -3353,41 +3368,41 @@ Pravidla pro skrývání prvků na sobě nejsou závislá. Pokud je ve filtru pr
 
 **Omezení**
 
-Safari nepodporuje povolené i zakázané domény. Takže pravidla jako `example.org,~foo.example.org##.textad` jsou v AdGuardu pro Safari neplatná.
+Safari does not support both allowed and disallowed domains. So the rules like `example.org,~foo.example.org##.textad` are invalid in AdGuard for Safari.
 
 **Výjimky**
 
-Výjimky mohou zakázat některá pravidla pro určité domény. Jsou velmi podobné běžným pravidlům výjimek, ale namísto `##` musíte použít `#@#`.
+Exceptions can disable some rules on particular domains. They are very similar to usual exception rules, but instead of `##` you have to use `#@#`.
 
-Ve filtru je např. pravidlo:
+For example, there is a rule in filter:
 
 ```adblock
 ##.textad
 ```
 
-Pokud to chcete zakázat pro `example.com`, můžete vytvořit pravidlo výjimky:
+If you want to disable it for `example.com`, you can create an exception rule:
 
 ```adblock
 example.com#@#.textad
 ```
 
-Někdy může být nutné zakázat všechna pravidla omezení. Např. k provádění testů. Za tímto účelem použijte pravidlo výjimky bez zadání domény. Úplně zakáže odpovídající pravidlo CSS elemhide na VŠECH doménách:
+Sometimes, it may be necessary to disable all restriction rules. For example, to conduct tests. To do this, use the exclusion rule without specifying a domain. It will completely disable matching CSS elemhide rule on ALL domains:
 
 ```adblock
 #@#.textad
 ```
 
-Toho lze dosáhnout přidáním tohoto pravidla:
+The same can be achieved by adding this rule:
 
 ```adblock
 *#@#.textad
 ```
 
-Tento druh výjimek doporučujeme používat pouze v případě, že není možné změnit samotné pravidlo skrývání. V ostatních případech je lepší změnit původní pravidlo pomocí omezení domény.
+We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
 ### Pravidla CSS {#cosmetic-css-rules}
 
-Někdy pouhé skrytí prvku k vyřešení reklamy nestačí. Např. zablokování prvku reklamy může jen narušit rozvržení stránky. V tomto případě může AdGuard použít pravidla, která jsou mnohem flexibilnější než pravidla pro skrývání. Pomocí těchto pravidel můžete v podstatě přidat na stránku libovolné styly CSS.
+Sometimes, simple hiding of an element is not enough to deal with advertising. For example, blocking an advertising element can just break the page layout. In this case AdGuard can use rules that are much more flexible than hiding rules. With these rules you can basically add any CSS styles to the page.
 
 **Syntaxe**
 
@@ -3406,51 +3421,51 @@ domains = [domain0, domain1[, ...[, domainN]]]
 example.com#$#body { background-color: #333!important; }
 ```
 
-Toto pravidlo použije styl `background-color: #333!important;` na prvek `body` na doménu `example.com` a všechny subdomény.
+This rule will apply a style `background-color: #333!important;` to the `body` element at `example.com` and all subdomains.
 
 **Výjimky**
 
-Stejně jako u skrývání prvků existuje typ pravidel, který zakáže vybrané pravidlo stylu CSS pro určité domény. Syntaxe pravidel pro výjimky je téměř stejná, stačí jen změnit `#$#` na `#@$#`.
+Just like with element hiding, there is a type of rules that disable the selected CSS style rule for particular domains. Exception rule syntax is almost the same, you just have to change `#$#` to `#@$#`.
 
-Ve filtru je např. pravidlo:
+For example, there is a rule in filter:
 
 ```adblock
 #$#.textad { visibility: hidden; }
 ```
 
-Pokud to chcete zakázat pro `example.com`, můžete vytvořit pravidlo výjimky:
+If you want to disable it for `example.com`, you can create an exception rule:
 
 ```adblock
 example.com#@$#.textad { visibility: hidden; }
 ```
 
-Tento druh výjimek doporučujeme používat pouze v případě, že není možné změnit samotné pravidlo CSS. V ostatních případech je lepší změnit původní pravidlo pomocí omezení domény.
+We recommend to use this kind of exceptions only if it is not possible to change the CSS rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
 :::caution Omezení
 
-Styly, které vedou k načtení jakéhokoli zdroje, jsou zakázány. V podstatě to znamená, že ve stylu nelze použít žádný typ hodnoty `<url>`.
+Styles that lead to loading any resource are forbidden. Basically, it means that you cannot use any `<url>` type of value in the style.
 
 :::
 
 :::info Kompatibilita
 
-Pravidla CSS nejsou Blokátorem obsahu AdGuard podporována.
+CSS rules are not supported by AdGuard Content Blocker.
 
-Pravidla CSS mohou fungovat odlišně [v závislosti na platformě](#cosmetic-rules-priority).
+CSS rules may operate differently [depending on the platform](#cosmetic-rules-priority).
 
 :::
 
-:::info Kompatibilita s Adblock Plus
+:::info Adblock Plus compatibility
 
-V produktech AdGuardu, které používají **CoreLibs verze 1.18 nebo novější**, můžete také použít pravidla pro skrytí prvků k vložení deklarace `remove: true`:
+In AdGuard products that use **CoreLibs version 1.18 or later**, you can also use element hiding rules to inject a `remove: true` declaration:
 
 ```adblock
 example.org##body { remove: true; }
 ```
 
-Toto použití se nedoporučuje, protože je lepší používat [pravidla CSS](#cosmetic-css-rules), a je podporováno pouze z důvodu kompatibility se seznamy filtrů napsanými pro Adblock Plus.
+This usage is discouraged in favor of using [CSS rules](#cosmetic-css-rules) and is only supported for compatibility with filter lists written for Adblock Plus.
 
-Výjimky skrytí prvků (`#@#`) jsou porovnávány pouze podle části selektoru, přičemž část bloku deklarací je ignorována. Například výše uvedené pravidlo lze deaktivovat pomocí kterékoli z následujících výjimek:
+Element hiding exceptions (`#@#`) are matched by the selector part only, ignoring the declarations block part. For example, the above rule can be disabled by any of the following exception rules:
 
 ```adblock
 example.org#@#body
@@ -3477,30 +3492,30 @@ example.org#@#body{remove:true;}
 - [Pseudo-class `:empty-trimmed`](#extended-css-empty-trimmed)
 - [Pseudo-class `:if-not()` (removed)](#extended-css-if-not)
 
-CSS 3.0 ne vždy stačí k blokování reklam. AdGuard tento problém řeší rozšířením možností CSS o podporu nových pseudo-prvků. Vyvinuli jsme samostatnou [open-source knihovnu](https://github.com/AdguardTeam/ExtendedCss) pro výběr nestandardních prvků a aplikaci CSS stylů s rozšířenými vlastnostmi.
+CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends CSS capabilities by adding support for the new pseudo-elements. We have developed a separate [open-source library](https://github.com/AdguardTeam/ExtendedCss) for non-standard element selecting and applying CSS styles with extended properties.
 
-Myšlenkou rozšířených možností je možnost přiřazovat prvky DOM pomocí selektorů na základě jejich vlastní reprezentace (styl, textový obsah atd.) nebo vztahů s jinými prvky. Existuje také možnost použít styly s nestandardními vlastnostmi CSS.
+The idea of extended capabilities is an opportunity to match DOM elements with selectors based on their own representation (style, text content, etc.) or relations with other elements. There is also an opportunity to apply styles with non-standard CSS properties.
 
-**Oblast použití**
+**Application area**
 
-Rozšířené selektory lze použít v jakémkoli kosmetickém pravidle, ať už se jedná o pravidla pro [skrytí prvků](#cosmetic-elemhide-rules) nebo [pravidla CSS](#cosmetic-css-rules).
+Extended selectors can be used in any cosmetic rule, whether they are [element hiding rules](#cosmetic-elemhide-rules) or [CSS rules](#cosmetic-css-rules).
 
 :::info Kompatibilita
 
-Pravidla se selektory CSS nejsou Blokátorem obsahu AdGuard podporována.
+Rules with extended CSS selectors are not supported by AdGuard Content Blocker.
 
 :::
 
 **Syntaxe**
 
-Bez ohledu na pseudo-třídy CSS, které v pravidle používáte, můžete pomocí speciálních znaků vynutit použití těchto pravidel pomocí ExtendedCss. Doporučujeme používat tyto znaky pro všechna rozšířená kosmetická pravidla CSS, aby bylo snazší je najít.
+Regardless of the CSS pseudo-classes you are using in the rule, you can use special markers to force applying these rules by ExtendedCss. It is recommended to use these markers for all extended CSS cosmetic rules so that it was easier to find them.
 
-Syntaxe rozšířených pravidel CSS:
+The syntax for extended CSS rules:
 
 - `#?#` — pro skrytí prvku, `#@?#` — pro výjimky
 - `#$?#` — pro pravidlo CSS, `#@$?#` — pro výjimky
 
-**Důrazně doporučujeme** použít tyto znaky kdykoli, když používáte rozšířený selektor CSS.
+We **strongly recommend** using these markers any time when you use an extended CSS selector.
 
 **Příklady**
 
@@ -3509,33 +3524,33 @@ Syntaxe rozšířených pravidel CSS:
 - `example.net#?#.banner:matches-css(width: 360px)` — toto pravidlo blokuje všechny prvky `.banner` s vlastností stylu `width: 360px`. Pravidlo platí pouze pro `example.net` a její subdomény.
 - `example.net#@?#.banner:matches-css(width: 360px)` — toto pravidlo zakáže předchozí pravidlo.
 
-Standardní CSS selektory můžete použít pomocí knihovny ExtendedCss pomocí znaku pravidla `#?#`, např. `#?#div.banner`.
+You can apply standard CSS selectors using the ExtendedCss library by using the rule marker `#?#`, e.g. `#?#div.banner`.
 
-Přečtěte si další informace o [ladění rozšířených selektorů](#selectors-debugging-mode).
+Learn more about [how to debug extended selectors](#selectors-debugging-mode).
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Některé pseudo-třídy před sebou selektor nevyžadují. Přesto přidání [univerzálního selektoru](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` usnadňuje čtení rozšířeného selektoru, i když nemá žádný vliv na chování při porovnávání. Takže selektor `#blok :has(> .inner)` funguje přesně jako `#blok *:has(> .inner)`, ale druhý je zřejmější.
+Some pseudo-classes do not require selector before it. Still adding the [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` makes an extended selector easier to read, even though it has no effect on the matching behavior. So selector `#block :has(> .inner)` works exactly like `#block *:has(> .inner)`, but the second one is more obvious.
 
-Názvy pseudo-tříd nerozlišují malá a velká písmena, např. `:HAS()` funguje jako `:has()`. Přesto se běžně používají názvy s malými písmeny.
+Pseudo-class names are case-insensitive, e.g. `:HAS()` works as `:has()`. Still the lower-case names are used commonly.
 
 :::
 
 #### Limitace ExtendedCss {#extended-css-limitations}
 
-1. CSS [komentáře](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments) a [at-pravidla](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) nejsou podporovány.
+1. CSS [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments) and [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) are not supported.
 
-2. Konkrétní pseudot-řída může mít svá vlastní omezení: [`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations) a [`:remove()`](#extended-css-remove-limitations).
+2. Specific pseudo-class may have its own limitations: [`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), and [`:remove()`](#extended-css-remove-limitations).
 
 #### Pseudo-třída `:has()` {#extended-css-has}
 
-Návrh specifikace CSS 4.0 popisuje [`:has()` pseudo-třídu](https://www.w3.org/TR/selectors-4/#relational). Bohužel [to zatím není podporováno](https://caniuse.com/css-has) všemi oblíbenými prohlížeči.
+Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3.org/TR/selectors-4/#relational). Unfortunately, [it is not yet supported](https://caniuse.com/css-has) by all popular browsers.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Pravidla s pseudo-třídou `:has()` musí používat nativní implementaci [ `:has()`][native-has], pokud používají znak `##` a pokud je to možné, tj. bez dalších rozšířených selektorů uvnitř. Pokud to produkt (nebo v případě rozšíření prohlížeče AdGuard) nepodporuje, bude automaticky použita implementace ExtendedCss jako náhradní řešení, a to i pro pravidla se značkou `##`.
+Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`][native-has] if they use the `##` rule marker and if it is possible, i.e., there are no other extended CSS selectors inside. If it is not supported by the product (or by the browser in case of AdGuard Browser Extension), ExtendedCss implementation will be used automatically as a fallback, even for rules with the `##` marker.
 
-AdGuard podporuje nativní implementaci `:has()`:
+AdGuard products support the native implementation of `:has()`:
 
 - AdGuard pro Windows, AdGuard pro Mac, AdGuard pro Android a AdGuard pro Linux to **podporují** s [knihovnou CoreLibs][] v1.12 nebo novější.
 - AdGuard pro iOS a AdGuard pro Safari to **podporují** s [knihovnou SafariConverterLib](#safari-converter-lib) v2.0.39 a [prohlížečem Safari v16.4][safari-16.4] nebo novějším.
@@ -3544,19 +3559,19 @@ AdGuard podporuje nativní implementaci `:has()`:
     - **Manifest V2**: Pokud prohlížeč nepodporuje nativní podporu `:has()`, použije `CSS.supports()` a vrátí se k ExtendedCss.
 - Všechny ostatní produkty AdGuardu **to** nepodporují.
 
-Chcete-li vynutit použití implementace ExtendedCss `:has()` (bez ohledu na podporu), použijte explicitně značky pravidel `#?#` nebo `#$?#`, např. `example.com#?#p:has(> a)` nebo `example.com#$?#div:has(> span) { display: none !important; }`.
+To force the ExtendedCss implementation of `:has()` to be used (regardless of native support), use the `#?#` or `#$?#` rule markers explicitly, e.g., `example.com#?#p:has(> a)` or `example.com#$?#div:has(> span) { display: none !important; }`.
 
-A protože pseudo-třída `:has()` nemůže být v nativní implementaci zanořena do další `:has()`, například `div:has(p:has(a))`, vždy je v rozšíření prohlížeče AdGuard považována za rozšířenou.
+And since the `:has()` pseudo-class cannot be nested within another `:has()` in native implementation, e.g. `div:has(p:has(a))`, it is always treated as extended in AdGuard Browser Extension.
 
 :::
 
-**Kompatibilita s jinými pseudo-třídami**
+**Compatibility with other pseudo-classes**
 
-Synonyma `:-abp-has()` podporují ExtendedCss pro lepší kompatibilitu.
+Synonyms `:-abp-has()` is supported by ExtendedCss for better compatibility.
 
 :::danger Upozornění na odstranění
 
-`:if()` již není podporováno jako synonymum pro `:has()`.
+`:if()` is no longer supported as a synonym for `:has()`.
 
 :::
 
@@ -3569,24 +3584,24 @@ Synonyma `:-abp-has()` podporují ExtendedCss pro lepší kompatibilitu.
 - `target` — nepovinný, standardní nebo rozšířený selektor CSS může být přeskočen pro kontrolu *libovolného* prvku
 - `selector` — povinný, standardní nebo rozšířený selektor CSS
 
-Pseudo-třída `:has()` vybere prvky `target`, které se hodí do `selector`. Také `selector` může začínat kombinátorem.
+The pseudo-class `:has()` selects the `target` elements that fit to the `selector`. Also the `selector` can start with a combinator.
 
-Seznam selektorů lze nastavit také v `selector`. V tomto případě se zatím porovnávají **všechny** selektory v seznamu. V budoucnu bude opraveno pro [`<forgiving-relative-selector-list>`](https://www.w3.org/TR/selectors-4/#typedef-forgiving-relative-selector-list)jako argument
+A selector list can be set in `selector` as well. In this case **all** selectors in the list are being matched for now. In the future it will be fixed for [`<forgiving-relative-selector-list>`](https://www.w3.org/TR/selectors-4/#typedef-forgiving-relative-selector-list) as argument.
 
 ##### `:has()` limitations {#extended-css-has-limitations}
 
-Použití pseudo-třídy `:has()` je v [některých případech omezeno (2, 3)](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54):
+Usage of the `:has()` pseudo-class is [restricted for some cases (2, 3)](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54):
 
 - zakazuje `:has()` uvnitř pseudo akceptující pouze složené selektory;
 - zakazuje `:has()` po běžných pseudoprvcích.
 
-Nativní pseudo-třída `:has()` neumožňuje použití argumentů `:has()`, `:is()`, `:where()` uvnitř argumentu `:has()`, aby se nezvyšovala složitost zneplatnění `:has()`[(případ 1](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54)). ExtendedCss však dříve takové omezení nemělo a seznamy filtrů již taková pravidla obsahují, proto jsme toto omezení do ExtendedCss nepřidali a umožnili jsme používat `:has()` uvnitř `:has()`, jak to bylo možné dříve. Chcete-li to použít, stačí vynutit použití ExtendedCss nastavením znaku pravidla `#?#`/`#$?#`.
+Native `:has()` pseudo-class does not allow `:has()`, `:is()`, `:where()` inside `:has()` argument to avoid increasing the `:has()` invalidation complexity ([case 1](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54)). But ExtendedCss did not have such limitation earlier and filter lists already contain such rules, so we have not added this limitation to ExtendedCss and allow to use `:has()` inside `:has()` as it was possible before. To use it, just force ExtendedCss usage by setting `#?#`/`#$?#` rule marker.
 
-Nativní implementace neumožňuje žádné použití `:scope` uvnitř argumentu `:has()` ([[1]](https://github.com/w3c/csswg-drafts/issues/7211), [[2]](https://github.com/w3c/csswg-drafts/issues/6399)). Přesto v seznamech filtrů některá taková pravidla existují: `div:has(:scope a)`, která nadále podporujeme tím, že je jednoduše převedeme na `div:has(> a)`, jak se to dělalo dříve.
+Native implementation does not allow any usage of `:scope` inside the `:has()` argument ([[1]](https://github.com/w3c/csswg-drafts/issues/7211), [[2]](https://github.com/w3c/csswg-drafts/issues/6399)). Still, there are some such rules in filter lists: `div:has(:scope a)` which we continue to support by simply converting them to `div:has(> a)`, as it used to be done previously.
 
 **Příklady**
 
-`div:has(.banner)` vybere všechny prvky `div`, které **obsahují** prvek se třídou `banner`:
+`div:has(.banner)` selects all `div` elements which **include** an element with the `banner` class:
 
 ```html
 <!-- HTML code -->
@@ -3596,7 +3611,7 @@ Nativní implementace neumožňuje žádné použití `:scope` uvnitř argumentu
 </div>
 ```
 
-`div:has(> .banner)` vybere všechny `prvky div`, které **obsahují prvek třídy** `banner` jako *přímý potomek* z `div`:
+`div:has(> .banner)` selects all `div` elements which **include** an `banner` class element as a *direct child* of `div`:
 
 ```html
 <!-- HTML code -->
@@ -3606,7 +3621,7 @@ Nativní implementace neumožňuje žádné použití `:scope` uvnitř argumentu
 </div>
 ```
 
-`div:has(+ .banner)` vybere všechny prvky `div` **předcházející** prvek třídy `banner`, který *bezprostředně následuje* po `div` a oba jsou potomky stejného rodu:
+`div:has(+ .banner)` selects all `div` elements **preceding** `banner` class element which *immediately follows* the `div` and both are children of the same parent:
 
 ```html
 <!-- HTML code -->
@@ -3616,7 +3631,7 @@ Nativní implementace neumožňuje žádné použití `:scope` uvnitř argumentu
 <span>Not selected</span>
 ```
 
-`div:has(~ .banner)` vybere všechny prvky `div` **předcházející** prvek třídy `banner`, který *následuje* `div`, ale *ne nutně bezprostředně* a oba jsou potomky stejného rodu:
+`div:has(~ .banner)` selects all `div` elements **preceding** `banner` class element which *follows* the `div` but *not necessarily immediately* and both are children of the same parent:
 
 ```html
 <!-- HTML code -->
@@ -3626,7 +3641,7 @@ Nativní implementace neumožňuje žádné použití `:scope` uvnitř argumentu
 <p class="banner">general sibling</p>
 ```
 
-`div:has(span, .banner)` vybere všechny prvky `div`, které **obsahují** prvek se třídou `span` a `banner`:
+`div:has(span, .banner)` selects all `div` elements which **include both** `span` element and `banner` class element:
 
 ```html
 <!-- HTML code -->
@@ -3637,25 +3652,25 @@ Nativní implementace neumožňuje žádné použití `:scope` uvnitř argumentu
 </div>
 ```
 
-:::danger Stará syntaxe
+:::danger Old syntax
 
-[Zpětně kompatibilní syntaxe pro `:has()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-has)je podporována, ale **není doporučena**.
+[Backward compatible syntax for `:has()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-has) is supported but **not recommended**.
 
 :::
 
 #### Pseudo-třída `:contains()` {#extended-css-contains}
 
-Princip pseudo-třídy `:contains()` je velmi jednoduchý: umožňuje vybrat prvky, které obsahují zadaný text nebo jejichž obsah odpovídá zadanému regulárnímu výrazu. Příznaky regexp jsou podporovány.
+The `:contains()` pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Regexp flags are supported.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Pseudo-třída `:contains()` používá pro porovnávání vlastnost prvku `textContent`, nikoliv `innerHTML`.
+The `:contains()` pseudo-class uses the `textContent` element property for matching, not the `innerHTML`.
 
 :::
 
-**Kompatibilita s jinými pseudo-třídami**
+**Compatibility with other pseudo-classes**
 
-Pro lepší kompatibilitu jsou podporována synonyma `:-abp-contains()` a `:has-text()`.
+Synonyms `:-abp-contains()` and `:has-text()` are supported for better compatibility.
 
 **Syntaxe**
 
@@ -3668,7 +3683,7 @@ Pro lepší kompatibilitu jsou podporována synonyma `:-abp-contains()` a `:has-
 
 **Příklady**
 
-Pro DOM:
+For such DOM:
 
 ```html
 <!-- HTML code -->
@@ -3677,7 +3692,7 @@ Pro DOM:
 <div>Not selected <div class="banner"></div></div>
 ```
 
-prvek `div#match` lze vybrat pomocí kteréhokoli z těchto rozšířených selektorů:
+the element `div#match` can be selected by any of these extended selectors:
 
 ```adblock
 ! prostý text
@@ -3690,21 +3705,21 @@ div:contains(/as .*banner/)
 div:contains(/it .*banner/gi)
 ```
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Vybrán je pouze `div` s `id=match`, protože další prvek neobsahuje žádný text a `banner` je součástí kódu, nikoli textu.
+Only the `div` with `id=match` is selected because the next element does not contain any text, and `banner` is a part of code, not a text.
 
 :::
 
-:::danger Stará syntaxe
+:::danger Old syntax
 
-[Zpětně kompatibilní syntaxe pro `:contains()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-contains)je podporována, ale **není doporučena**.
+[Backward compatible syntax for `:contains()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-contains) is supported but **not recommended**.
 
 :::
 
 #### Pseudo-třída `:matches-css()` {#extended-css-matches-css}
 
-Pseudo-třída `:matches-css()` umožňuje porovnat prvek podle jeho aktuálních vlastností stylu. Práce pseudo-třídy je založena na použití metody [`Window.getComputedStyle().`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle).
+The `:matches-css()` pseudo-class allows to match the element by its current style properties. The work of the pseudo-class is based on using the [`Window.getComputedStyle()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) method.
 
 **Syntaxe**
 
@@ -3717,15 +3732,15 @@ Pseudo-třída `:matches-css()` umožňuje porovnat prvek podle jeho aktuálníc
 - `property` — povinný, název vlastnosti CSS, pro kterou se má prvek zkontrolovat
 - `pattern` — povinný, vzor hodnoty, který používá stejnou jednoduchou shodu se zástupnými znaky jako v základních pravidlech filtrování adres URL nebo regulární výraz. Při tomto typu porovnávání, AdGuard vždy porovnává bez ohledu na velikost písmen. V případě regulárního výrazu vypadá vzor takto: `/regexp/`.
 
-**Speciální znaky uvozené a neuvozené**
+**Special characters escaping and unescaping**
 
-Všechny vzory **non-regexp** `(`,`)`,`[`,`]` musí být **neuvozeny**, např. `:matches-css(background-image:url(data:*))`.
+For **non-regexp** patterns `(`,`)`,`[`,`]` must be **unescaped**, e.g. `:matches-css(background-image:url(data:*))`.
 
-Vzory **regexp** `\` by měly být **uvozeny**, např. `:matches-css(background-image: /^url\\("data:image\\/gif;base64.+/)`.
+For **regexp** patterns `\` should be **escaped**, e.g. `:matches-css(background-image: /^url\\("data:image\\/gif;base64.+/)`.
 
 **Příklady**
 
-Pro DOM:
+For such DOM:
 
 ```html
 <!-- HTML code -->
@@ -3738,7 +3753,7 @@ Pro DOM:
 <div id="not-matched"></div>
 ```
 
-prvky `div` s pseudoprvkem `::before` a se zadanou vlastností `content` lze vybrat kterýmkoli z těchto rozšířených selektorů:
+the `div` elements with pseudo-element `::before` and with specified `content` property can be selected by any of these extended selectors:
 
 ```adblock
 ! string pattern
@@ -3753,25 +3768,25 @@ div:matches-css(before, content: /block me/)
 
 :::caution Omezení
 
-Vzory regexp **nepodporují** příznaky.
+Regexp patterns **do not support** flags.
 
 :::
 
 :::info Kompatibilita
 
-Zastaralé pseudo-třídy `:matches-css-before()` a `:matches-css-after()` se již nedoporučují, ale stále jsou podporovány kvůli lepší kompatibilitě.
+Obsolete pseudo-classes `:matches-css-before()` and `:matches-css-after()` are no longer recommended but still are supported for better compatibility.
 
 :::
 
-:::danger Stará syntaxe
+:::danger Old syntax
 
-[Zpětně kompatibilní syntaxe pro `:matches-css()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-matches-css) je podporována, ale **nedoporučuje se**.
+[Backward compatible syntax for `:matches-css()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-matches-css) is supported but **not recommended**.
 
 :::
 
 #### Pseudo-třída `:matches-attr()` {#extended-css-matches-attr}
 
-Pseudo-třída `:matches-attr()` umožňuje vybrat prvek podle jeho atributů, zejména pokud jsou náhodné.
+The `:matches-attr()` pseudo-class allows selecting an element by its attributes, especially if they are randomized.
 
 **Syntaxe**
 
@@ -3785,32 +3800,32 @@ Pseudo-třída `:matches-attr()` umožňuje vybrat prvek podle jeho atributů, z
 
 **Uvození speciálních znaků**
 
-Pro vzory **regexp** `"` a `\` by mělo být **uvozeno**, např. `div:matches-attr(class=/[\\w]{5}/)`.
+For **regexp** patterns `"` and `\` should be **escaped**, e.g. `div:matches-attr(class=/[\\w]{5}/)`.
 
 **Příklady**
 
-`div:matches-attr("ad-link")` vybere prvek `div#target1`:
+`div:matches-attr("ad-link")` selects the element `div#target1`:
 
 ```html
 <!-- HTML code -->
 <div id="target1" ad-link="1random23-banner_240x400"></div>
 ```
 
-`div:matches-attr("data-*"="adBanner")` vybere prvek `div#target2`:
+`div:matches-attr("data-*"="adBanner")` selects the element `div#target2`:
 
 ```html
 <!-- HTML code -->
 <div id="target2" data-1random23="adBanner"></div>
 ```
 
-`div:matches-attr(*unit*=/^click$/)` vybere prvek `div#target3`:
+`div:matches-attr(*unit*=/^click$/)` selects the element `div#target3`:
 
 ```html
 <!-- HTML code -->
 <div id="target3" random123-unit094="click"></div>
 ```
 
-`*:matches-attr("/.{5,}delay$/"="/^[0-9]*$/")` vybere prvek `#target4`:
+`*:matches-attr("/.{5,}delay$/"="/^[0-9]*$/")` selects the element `#target4`:
 
 ```html
 <!-- HTML code -->
@@ -3821,13 +3836,13 @@ Pro vzory **regexp** `"` a `\` by mělo být **uvozeno**, např. `div:matches-at
 
 :::caution Omezení
 
-Vzory regexp **nepodporují** příznaky.
+Regexp patterns **do not support** flags.
 
 :::
 
 #### Pseudo-třída `:matches-property()` {#extended-css-property}
 
-Pseudo-třída `:matches-property()` umožňuje vybrat prvek podle jeho vlastností.
+The `:matches-property()` pseudo-class allows selecting an element by matching its properties.
 
 **Syntaxe**
 
@@ -3841,17 +3856,17 @@ Pseudo-třída `:matches-property()` umožňuje vybrat prvek podle jeho vlastnos
 
 **Uvození speciálních znaků**
 
-Pro vzory **regexp** `"` a `\` musí být uvozeno, např. `div:matches-property(prop=/[\\w]{4}/)`.
+For **regexp** patterns `"` and `\` must be escaped, e.g. `div:matches-property(prop=/[\\w]{4}/)`.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Vzory regexp jsou podporovány v `name` pro libovolnou vlastnost v řetězci, např. `prop./^unit[\\d]{4}$/.type`.
+Regexp patterns are supported in `name` for any property in chain, e.g. `prop./^unit[\\d]{4}$/.type`.
 
 :::
 
 **Příklady**
 
-Prvek s těmito vlastnostmi:
+An element with such properties:
 
 ```javascript
 divProperties = {
@@ -3871,7 +3886,7 @@ divProperties = {
 };
 ```
 
-lze vybrat pomocí některého z těchto rozšířených selektorů:
+can be selected by any of these extended selectors:
 
 ```adblock
 div:matches-property(check.track)
@@ -3885,24 +3900,24 @@ div:matches-property(memoizedProps.key="null")
 div:matches-property(memoizedProps._owner.src=/ad/)
 ```
 
-:::tip Pro správce filtrů
+:::tip For filter maintainers
 
-Chcete-li zkontrolovat vlastnosti konkrétního prvku, postupujte takto:
+To check properties of a specific element, do the following:
 
-1. Zkontrolujte prvek stránky nebo jej vyberte na kartě `Elements` v nástroji DevTools prohlížeče
-1. Spusťte `console.dir($0)` na kartě `Console`
+1. Inspect the page element or select it in `Elements` tab of browser DevTools
+1. Run `console.dir($0)` in `Console` tab
 
 :::
 
 :::caution Omezení
 
-Vzory regexp **nepodporují** příznaky.
+Regexp patterns **do not support** flags.
 
 :::
 
 #### Pseudo-třída `:xpath()` {#extended-css-xpath}
 
-Pseudo-třída `:xpath()` umožňuje vybrat prvek vyhodnocením výrazu XPath.
+The `:xpath()` pseudo-class allows selecting an element by evaluating an XPath expression.
 
 **Syntaxe**
 
@@ -3915,22 +3930,22 @@ Pseudo-třída `:xpath()` umožňuje vybrat prvek vyhodnocením výrazu XPath.
 
 ##### `:xpath()` limitations {#extended-css-xpath-limitations}
 
-`target` lze vynechat, takže je volitelný. Pro jakoukoli jinou pseudo-třídu by to znamenalo "aplikuj na *všechny* uzly DOM", ale v případě `:xpath()` to znamená jen "aplikuj na *celý* dokument", a takovéto použití výrazně zpomaluje výběr prvků. Proto jsou pravidla jako `#?#:xpath(expression)` omezena na nahlížení do znaku `body`. Např. pravidlo `#?#:xpath(//div[@data-st-area=\'Advert\'])` je analyzováno jako `#?#body:xpath(//div[@data-st- area=\'Advert\'])`.
+`target` can be omitted so it is optional. For any other pseudo-class that would mean "apply to *all* DOM nodes", but in case of `:xpath()` it just means "apply to the *whole* document", and such applying slows elements selecting significantly. That's why rules like `#?#:xpath(expression)` are limited to looking inside the `body` tag. For example, rule `#?#:xpath(//div[@data-st-area=\'Advert\'])` is parsed as `#?#body:xpath(//div[@data-st-area=\'Advert\'])`.
 
-Rozšířené selektory s definovaným `target` jako *libovolný selektor* — `*:xpath(expression)` — lze stále použít, ale nedoporučuje se to, proto by měl být místo toho uveden `target`.
+Extended selectors with defined `target` as *any* selector — `*:xpath(expression)` — can still be used but it is not recommended, so `target` should be specified instead.
 
-Funguje správně pouze na konci selektoru, s výjimkou [pseudo-třídy :remove()](#remove-pseudos).
+Works properly only at the end of selector, except for [pseudo-class :remove()](#remove-pseudos).
 
 **Příklady**
 
-`:xpath(//*[@class="banner"])` vybere prvek `div#target1`:
+`:xpath(//*[@class="banner"])` selects the element `div#target1`:
 
 ```html
 <!-- HTML code -->
 <div id="target1" class="banner"></div>
 ```
 
-`:xpath(//*[@class="inner"]/..)` vybere prvek `div#target2`:
+`:xpath(//*[@class="inner"]/..)` selects the element `div#target2`:
 
 ```html
 <!-- HTML code -->
@@ -3941,7 +3956,7 @@ Funguje správně pouze na konci selektoru, s výjimkou [pseudo-třídy :remove(
 
 #### Pseudo-třída `:nth-ancestor()` {#extended-css-nth-ancestor}
 
-Pseudo-třída `:nth-ancestor()` umožňuje vyhledat *nth* předka vzhledem k dříve vybranému prvku.
+The `:nth-ancestor()` pseudo-class allows to lookup the *nth* ancestor relative to the previously selected element.
 
 ```text
 subject:nth-ancestor(n)
@@ -3961,11 +3976,11 @@ subject:nth-ancestor(n)
 
 ##### `:nth-ancestor()` limitations {#extended-css-nth-ancestor-limitations}
 
-Pseudo-třída `:nth-ancestor()` není podporována v argumentu [pseudo-třídy `:not()`](#extended-css-not).
+The `:nth-ancestor()` pseudo-class is not supported inside the argument of the [`:not()` pseudo-class](#extended-css-not).
 
 **Příklady**
 
-Pro DOM:
+For such DOM:
 
 ```html
 <!-- HTML code -->
@@ -3982,11 +3997,11 @@ Pro DOM:
 </div>
 ```
 
-`.child:nth-ancestor(1)` vybere prvek `div#target1`, `div[class="inner"]:nth-ancestor(3)` vybere prvek `div#target2`.
+`.child:nth-ancestor(1)` selects the element `div#target1`, `div[class="inner"]:nth-ancestor(3)` selects the element `div#target2`.
 
 #### Pseudo-třída `:upward()` {#extended-css-upward}
 
-Pseudo-třída `:upward()` umožňuje vyhledat předka vzhledem k dříve vybranému prvku.
+The `:upward()` pseudo-class allows to lookup the ancestor relative to the previously selected element.
 
 **Syntaxe**
 
@@ -4001,11 +4016,11 @@ subject:upward(ancestor)
 
 ##### `:upward()` limitations {#extended-css-upward-limitations}
 
-Pseudo-třída `:nth-upward()` není podporována v argumentu [pseudo-třídy `:not()`](#extended-css-not).
+The `:upward()` pseudo-class is not supported inside the argument of the [`:not()` pseudo-class](#extended-css-not).
 
 **Příklady**
 
-Pro DOM:
+For such DOM:
 
 ```html
 <!-- HTML code -->
@@ -4022,13 +4037,13 @@ Pro DOM:
 </div>
 ```
 
-`.inner:upward(div[data])` vybere prvek `div#target1`, `.inner:upward(div[id])` vybere prvek `div#target2`, `.child:upward(1)` vybere prvek `div#target1`, `.inner:upward(3)` vybere prvek `div#target2`.
+`.inner:upward(div[data])` selects the element `div#target1`, `.inner:upward(div[id])` selects the element `div#target2`, `.child:upward(1)` selects the element `div#target1`, `.inner:upward(3)` selects the element `div#target2`.
 
 #### Pseudo-třída `:remove()` a pseudo-vlastnost `remove` {#remove-pseudos}
 
-Někdy je nutné odpovídající prvek odstranit namísto jeho skrytí nebo použití vlastních stylů. Chcete-li to provést, můžete použít pseudo-třídu `:remove()` a také pseudo-vlastnost `remove`.
+Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use the `:remove()` pseudo-class as well as the `remove` pseudo-property.
 
-**Pseudo-třídu `:remove()` lze umístit pouze na konec selektoru.**
+**Pseudo-class `:remove()` can be placed only at the end of a selector.**
 
 **Syntaxe**
 
@@ -4042,13 +4057,13 @@ selector { remove: true; }
 
 - `selector` — povinný, standardní nebo rozšířený selektor CSS
 
-##### `:remove()` a `remove` limitations {#extended-css-remove-limitations}
+##### `:remove()` and `remove` limitations {#extended-css-remove-limitations}
 
-Pseudo-třída `:remove()` je omezena tak, aby správně fungovala pouze na konci selektoru.
+The `:remove()` pseudo-class is limited to work properly only at the end of selector.
 
-Pro použití pseudo-třídy `:remove()` na libovolný prvek je třeba použít [univerzální selektor](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`. V opačném případě může být takový rozšířený selektor považován za neplatný, např. `.banner > :remove()` neplatí pro odstranění jakéhokoli podřízeného prvku třídy `banner`, takže by měl vypadat jako `.banner > *:remove()`.
+For applying the `:remove()` pseudo-class to any element, the [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` should be used. Otherwise such extended selector may be considered as invalid, e.g. `.banner > :remove()` is not valid for removing any child element of `banner` class element, so it should look like `.banner > *:remove()`.
 
-Pokud je použita pseudo-třída `:remove()` nebo pseudovlastnost `remove`, všechny vlastnosti stylu se ignorují kromě pseudovlastnosti [`debug`](#selectors-debug-mode).
+If the `:remove()` pseudo-class or the `remove` pseudo-property is used, all style properties are ignored except for the [`debug` pseudo-property](#selectors-debug-mode).
 
 **Příklady**
 
@@ -4060,15 +4075,15 @@ div:contains(advertisement) { remove: true; }
 div[class]:has(> a > img) { remove: true; }
 ```
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Pravidla s pseudovlastností `remove` musí používat znak `#$?#`: `$` pro syntaxi pravidel stylu CSS, `?` pro syntaxi ExtendedCss.
+Rules with the `remove` pseudo-property must use `#$?#` marker: `$` for CSS-style rule syntax, `?` for ExtendedCss syntax.
 
 :::
 
 #### Pseudo-třída `:is()` {#extended-css-is}
 
-Pseudo-třída `:is()` umožňuje porovnat jakýkoli prvek, který lze vybrat kterýmkoli ze selektorů, které jí byly předány. Neplatné selektory jsou přeskočeny a pseudo-třída se vypořádá s platnými selektory bez vyhození chyby. Naše implementace [nativní pseudotřídy `:is()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:is).
+The `:is()` pseudo-class allows to match any element that can be selected by any of selectors passed to it. Invalid selectors are skipped and the pseudo-class deals with valid ones with no error thrown. Our implementation of the [native `:is()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:is).
 
 **Syntaxe**
 
@@ -4081,15 +4096,15 @@ Pseudo-třída `:is()` umožňuje porovnat jakýkoli prvek, který lze vybrat kt
 
 ##### `:is()` limitations {#extended-css-is-limitations}
 
-Pravidla s pseudo-třídou `:is()` musí používat nativní implementaci [ `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:is), pokud pravidla používají znak `##` a pokud je to možné, tj. bez dalších rozšířených selektorů uvnitř. Chcete-li vynutit použití pravidel ExtendedCss s `:is()`, použijte explicitně znak `#?#`/`#$?#`.
+Rules with the `:is()` pseudo-class must use the [native implementation of `:is()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:is) if rules use `##` marker and it is possible, i.e. with no other extended selectors inside. To force applying ExtendedCss rules with `:is()`, use `#?#`/`#$?#` marker explicitly.
 
-Pokud je argument `:is()` pseudo-třídy `selector` rozšířeným selektorem, vzhledem ke způsobu, jakým je v ExtendedCss v2.0 implementována pseudo-třída `:is()`, není možné ji použít na horní uzel DOM, kterým je `html`, tj. `#?#html:is(<extended-selectors>)` nefunguje. Pokud tedy `target` není definován nebo je definován jako [univerzální selektor](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, je rozšířené použití pseudo-třídy omezeno na **`html`potomky**, např. pravidla `#?#:is(...)` a `#?#*:is(...)` jsou analyzována jako `#?#html *:is(...)`. Upozorňujeme, že pro standardní argument selektoru takové omezení neexistuje, tj. `#?#html:is(.locked)` funguje bez problémů.
+If the `:is()` pseudo-class argument `selectors` is an extended selector, due to the way how the `:is()` pseudo-class is implemented in ExtendedCss v2.0, it is impossible to apply it to the top DOM node which is `html`, i.e. `#?#html:is(<extended-selectors>)` does not work. So if `target` is not defined or defined as the [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, the extended pseudo-class applying is limited to **`html`'s children**, e.g. rules `#?#:is(...)` and `#?#*:is(...)` are parsed as `#?#html *:is(...)`. Please note that there is no such limitation for a standard selector argument, i.e. `#?#html:is(.locked)` works fine.
 
-[Komplexní selektory](https://www.w3.org/TR/selectors-4/#complex) s rozšířenými pseudo-třídami nejsou podporovány jako argument `selector` pro pseudo-třídu `:is()`, povoleny jsou pouze [složené](https://www.w3.org/TR/selectors-4/#compound). Další podrobnosti naleznete v příkladech níže.
+[Complex selectors](https://www.w3.org/TR/selectors-4/#complex) with extended pseudo-classes are not supported as `selectors` argument for `:is()` pseudo-class, only [compound ones](https://www.w3.org/TR/selectors-4/#compound) are allowed. Check examples below for more details.
 
 **Příklady**
 
-`#container *:is(.inner, .footer)` vybere pouze prvek `div#target1`:
+`#container *:is(.inner, .footer)` selects only the element `div#target1`:
 
 ```html
 <!-- HTML code -->
@@ -4102,7 +4117,7 @@ Pokud je argument `:is()` pseudo-třídy `selector` rozšířeným selektorem, v
 </div>
 ```
 
-Kvůli omezením `:is(*:not([class]) > .banner)'` nefunguje, ale lze místo něj použít `:is(*:not([class]):has(> .banner))` k výběru prvku `div#target2`:
+Due to limitations `:is(*:not([class]) > .banner)'` does not work but `:is(*:not([class]):has(> .banner))` can be used instead of it to select the element `div#target2`:
 
 ```html
 <!-- HTML code -->
@@ -4114,7 +4129,7 @@ Kvůli omezením `:is(*:not([class]) > .banner)'` nefunguje, ale lze místo něj
 
 #### Pseudo-třída `:not()` {#extended-css-not}
 
-Pseudo-třída `:not()` umožňuje vybrat prvky, které se *neshodují* se selektory předávanými jako argument. Neplatné selektory argumentů nejsou povoleny a je třeba vyhodit chybu. Naše implementace pseudo-třídy [`:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
+The `:not()` pseudo-class allows to select elements which are *not matched* by selectors passed as argument. Invalid argument selectors are not allowed and error is to be thrown. Our implementation of the [`:not()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
 
 **Syntaxe**
 
@@ -4127,17 +4142,17 @@ Pseudo-třída `:not()` umožňuje vybrat prvky, které se *neshodují* se selek
 
 ##### `:not()` limitations {#extended-css-not-limitations}
 
-Pravidla s pseudo-třídou `:not()` musí používat nativní implementaci [ `:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not), pokud pravidla používají znak `##` a pokud je to možné, tj. bez dalších rozšířených selektorů uvnitř. Chcete-li vynutit použití pravidel ExtendedCss s `:not()`, použijte explicitně znak `#?#`/`#$?#`.
+Rules with the `:not()` pseudo-class must use the [native implementation of `:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not) if rules use `##` marker and it is possible, i.e. with no other extended selectors inside. To force applying ExtendedCss rules with `:not()`, use `#?#`/`#$?#` marker explicitly.
 
-Pokud je argument `:not()` pseudo-třídy `selector` rozšířeným selektorem, vzhledem ke způsobu, jakým je v ExtendedCss v2.0 implementována pseudo-třída `:not()`, není možné ji použít na horní uzel DOM, kterým je `html`, tj. `#?#html:not(<extended-selectors>)` nefunguje. Pokud tedy `target` není definován nebo je definován jako [univerzální selektor](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, je rozšířené použití pseudo-třídy omezeno na **`html`potomky**, např. pravidla `#?#:not(...)` a `#?#*:not(...)` jsou analyzována jako `#?#html *:not(...)`. Upozorňujeme, že pro standardní argument selektoru takové omezení neexistuje, tj. `#?#html:not(.locked)` funguje bez problémů.
+If the `:not()` pseudo-class argument `selectors` is an extended selector, due to the way how the `:not()` pseudo-class is implemented in ExtendedCss v2.0, it is impossible to apply it to the top DOM node which is `html`, i.e. `#?#html:not(<extended-selectors>)` does not work. So if `target` is not defined or defined as the [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, the extended pseudo-class applying is limited to **`html`'s children**, e.g. rules `#?#:not(...)` and `#?#*:not(...)` are parsed as `#?#html *:not(...)`. Please note that there is no such limitation for a standard selector argument, i.e. `#?#html:not(.locked)` works fine.
 
-`:not()` je považována za standardní pseudo-třídu CSS uvnitř argumentu pseudo-třídy [`:upward()`](#extended-css-upward), protože `:upward()` podporuje pouze standardní selektory.
+The `:not()` is considered as a standard CSS pseudo-class inside the argument of the [`:upward()` pseudo-class](#extended-css-upward) because `:upward()` supports only standard selectors.
 
-"Up-looking" pseudotřídy, které jsou [`:nth-ancestor()`](#extended-css-nth-ancestor) a [`:upward()`](#extended-css-upward) nejsou podporovány uvnitř argumentu `selector` pro pseudo-třídu `:not()`.
+"Up-looking" pseudo-classes which are [`:nth-ancestor()`](#extended-css-nth-ancestor) and [`:upward()`](#extended-css-upward) are not supported inside `selectors` argument for `:not()` pseudo-class.
 
 **Příklady**
 
-`#container > *:not(h2, .text)` vybere pouze prvek `div#target1`:
+`#container > *:not(h2, .text)` selects only the element `div#target1`:
 
 ```html
 <!-- HTML code -->
@@ -4321,7 +4336,7 @@ example.com$$script:contains(/ad_system_\d+/)
 
 The first rule removes any `<script>` tag containing the word `Adverts`. The second targets any `<div>` containing the phrase `Sponsored by`. The third rule utilizes a regular expression to match dynamic script patterns.
 
-:::caution Upozornění na vyřazení
+:::caution Deprecation notice
 
 The attributes listed below are legacy features kept only for backward compatibility. They may become unsupported in future updates. Prefer using the `:contains()` pseudo-class where it is available.
 
@@ -4459,25 +4474,25 @@ This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 Similar to hiding rules, there is a special type of rules that disable the selected HTML filtering rule for particular domains. The syntax is the same, you just have to change `$$` to `$@$`.
 
-Ve filtru je např. pravidlo:
+For example, there is a rule in filter:
 
 ```adblock
 $$script[tag-content="banner"]
 ```
 
-Pokud to chcete zakázat pro `example.com`, můžete vytvořit pravidlo výjimky:
+If you want to disable it for `example.com`, you can create an exception rule:
 
 ```adblock
 example.com$@$script[tag-content="banner"]
 ```
 
-Někdy může být nutné zakázat všechna pravidla omezení. Např. k provádění testů. Za tímto účelem použijte pravidlo výjimky bez zadání domény.
+Sometimes, it may be necessary to disable all restriction rules. For example, to conduct tests. To do this, use the exclusion rule without specifying a domain.
 
 ```adblock
 $@$script[tag-content="banner"]
 ```
 
-Tento druh výjimek doporučujeme používat pouze v případě, že není možné změnit samotné pravidlo skrývání. V ostatních případech je lepší změnit původní pravidlo pomocí omezení domény.
+We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
 ## Pravidla JavaScript {#javascript-rules}
 
@@ -4502,25 +4517,25 @@ rule = [domains] "#%#" script
 
 Similar to hiding rules, there is a special type of rules that disable the selected JavaScript rule for particular domains. The syntax is the same, you just have to change `#%#` to `#@%#`.
 
-Ve filtru je např. pravidlo:
+For example, there is a rule in filter:
 
 ```adblock
 #%#window.__gaq = undefined;
 ```
 
-Pokud to chcete zakázat pro `example.com`, můžete vytvořit pravidlo výjimky:
+If you want to disable it for `example.com`, you can create an exception rule:
 
 ```adblock
 example.com#@%#window.__gaq = undefined;
 ```
 
-Někdy může být nutné zakázat všechna pravidla omezení. Např. k provádění testů. Za tímto účelem použijte pravidlo výjimky bez zadání domény.
+Sometimes, it may be necessary to disable all restriction rules. For example, to conduct tests. To do this, use the exclusion rule without specifying a domain.
 
 ```adblock
 #@%#window.__gaq = undefined;
 ```
 
-Tento druh výjimek doporučujeme používat pouze v případě, že není možné změnit samotné pravidlo skrývání. V ostatních případech je lepší změnit původní pravidlo pomocí omezení domény.
+We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
 :::caution Omezení
 
@@ -4556,13 +4571,13 @@ AdGuard supports a lot of different scriptlets. In order to achieve cross-blocke
 
 **Příklady**
 
-1. Použijte skriptlet `abort-on-property-read` na všech stránkách `example.org` a jejích subdoménách a předejte mu argument `alert`:
+1. Apply the `abort-on-property-read` scriptlet on all pages of `example.org` and its subdomains, and pass it an `alert` argument:
 
     ```adblock
     example.org#%#//scriptlet('abort-on-property-read', 'alert')
     ```
 
-1. Odstraňte třídu `branding` ze všech prvků `div[class^="inner"]` na všech stránkách `example.org` a jejích subdoménách:
+1. Remove the `branding` class from all `div[class^="inner"]` elements on all pages of `example.org` and its subdomains:
 
     ```adblock
     example.org#%#//scriptlet('remove-class', 'branding', 'div[class^="inner"]')
@@ -4582,28 +4597,28 @@ Exception rules can disable some scriptlets on particular domains. The syntax fo
 
 **Příklady**
 
-1. Zakázat specifické pravidlo skriptletu tak, aby se pouze `abort-on-property-read` použilo pouze na `example.org` a její subdomény:
+1. Disable specific scriptlet rule so that only `abort-on-property-read` is applied only on `example.org` and its subdomains:
 
     ```adblock
     example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
     example.com#@%#//scriptlet("abort-on-property-read", "alert")
     ```
 
-1. Zakázat všechny skriptlety `abort-on-property-read` pro `example.com` a její subdomény:
+1. Disable all `abort-on-property-read` scriptlets for `example.com` and its subdomains:
 
     ```adblock
     example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
     example.com#@%#//scriptlet("abort-on-property-read")
     ```
 
-1. Zakázat všechny skriptlety pro `example.com` a její subdomény:
+1. Disable all scriptlets for `example.com` and its subdomains:
 
     ```adblock
     example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
     example.com#@%#//scriptlet()
     ```
 
-1. Použijte `set-constant` a `set-cookie` na libovolnou webovou stránku, ale vzhledem ke speciálnímu pravidlu výjimky pro skriplety bude na `stránce example.org` a jejích subdoménách použito pouze `set-constant`:
+1. Apply `set-constant` and `set-cookie` to any web page, but due to special scriptlet exception rule only the `set-constant` scriptlet will be applied on `example.org` and its subdomains:
 
     ```adblock
     #%#//scriptlet('set-constant', 'adList', 'emptyArr')
@@ -4611,7 +4626,7 @@ Exception rules can disable some scriptlets on particular domains. The syntax fo
     example.org#@%#//scriptlet('set-cookie')
     ```
 
-1. Použijte `adjust-setInterval` na libovolnou webovou stránku a `set-local-storage-item` na `example.com` a jejích subdoménách, ale existuje také několik pravidel pro výjimky skriptletů, takže na `example.com` a jejích subdoménách nebudou použita žádná pravidla pro skriptlety:
+1. Apply `adjust-setInterval` to any web page and `set-local-storage-item` on `example.com` and its subdomains, but there are also multiple scriptlet exception rules, so no scriptlet rules will be applied on `example.com` and its subdomains:
 
     ```adblock
     #%#//scriptlet('adjust-setInterval', 'count', '*', '0.001')
@@ -4725,8 +4740,8 @@ Such rules with `$app` modifier are supported by AdGuard for Windows, AdGuard fo
 
 There are 2 ways to specify domain restrictions for non-basic rules:
 
-1. "klasický" způsob je zadat domény před masku pravidla a atributy: `example.com##.textad`;
-2. přístup modifikátoru spočívá v určení domén pomocí modifikátoru `$domain`: `[$domain=example.com]##.textad`.
+1. the "classic" way is to specify domains before rule mask and attributes: `example.com##.textad`;
+2. the modifier approach is to specify domains via `$domain` modifier: `[$domain=example.com]##.textad`.
 
 But rules with mixed style domains restriction are considered invalid. So, for example, the rule `[$domain=example.org]example.com##.textad` will be ignored.
 
@@ -4906,9 +4921,9 @@ Filter maintainers can use conditions to supply different rules depending on the
 
 There are two possible scenarios:
 
-1. Pokud blokátor reklamy narazí na direktivu `!#if` a ne `!#else`, zkompiluje kód mezi direktivami `!#if` a `!#endif` pouze v případě, že je zadaná podmínka pravdivá.
+1. When an ad blocker encounters an `!#if` directive and no `!#else` directive, it will compile the code between `!#if` and `!#endif` directives only if the specified condition is true.
 
-1. Pokud existuje direktiva `!#else`, bude zkompilován kód mezi `!#if` a `!#else`, pokud je podmínka pravdivá; v opačném případě bude zkompilován kód mezi `!#else` a `!#endif`.
+1. If there is an `!#else` directive, the code between `!#if` and `!#else` will be compiled if the condition is true; otherwise, the code between `!#else` and `!#endif` will be compiled.
 
 Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
@@ -5284,13 +5299,13 @@ The following scriptlets also may be used for debug purposes:
 
 ### Zkratky produktů {#what-product}
 
-1. `Aplikace CoreLibs` — [AdGuard pro Windows](/adguard-for-windows/features/home-screen), [AdGuard pro Mac](/adguard-for-mac/features/main), [AdGuard pro Android](/adguard-for-android/features/protection/ad-blocking) a [AdGuard pro Linux](/adguard-for-linux)
-1. `AdGuard pro Chromium` — [Rozšíření prohlížeče AdGuard](/adguard-browser-extension/availability) pro Chrome a další prohlížeče založené na Chromium, např. nový Microsoft Edge a Opera
-1. `Adguard pro Chrome MV3` — [Rozšíření prohlížeče AdGuard pro Chrome MV3](/adguard-browser-extension/mv3-version)
-1. `Adguard pro Firefox` — [Rozšíření prohlížeče AdGuard](/adguard-browser-extension/availability) pro Firefox
-1. `AdGuard pro iOS` — [AdGuard pro iOS](/adguard-for-ios/features/safari-protection) a AdGuard pro iOS Pro (pro mobilní prohlížeč Safari)
-1. `AdGuard pro Safari` — [AdGuard pro desktopový prohlížeč Safari](/archive/adguard-for-safari/features/general)
-1. `Blokátor obsahu AdGuard` — [blokátor obsahu](/adguard-content-blocker/overview) pro mobilní prohlížeče Android: Samsung Internet a Yandex Browser
+1. `CoreLibs apps` — [AdGuard for Windows](/adguard-for-windows/features/home-screen), [AdGuard for Mac](/adguard-for-mac/features/main), [AdGuard for Android](/adguard-for-android/features/protection/ad-blocking), and [AdGuard for Linux](/adguard-for-linux)
+1. `AdGuard for Chromium` — [AdGuard Browser Extension](/adguard-browser-extension/availability) for Chrome and other Chromium-based browsers such as Microsoft Edge and Opera
+1. `AdGuard for Chrome MV3` — [AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version)
+1. `AdGuard for Firefox` — [AdGuard Browser Extension](/adguard-browser-extension/availability) for Firefox
+1. `AdGuard for iOS` — [AdGuard for iOS](/adguard-for-ios/features/safari-protection) and AdGuard Pro for iOS (for mobile Safari browser)
+1. `AdGuard for Safari` — [AdGuard for desktop Safari browser](/archive/adguard-for-safari/features/general)
+1. `AdGuard Content Blocker` — [Content Blocker](/adguard-content-blocker/overview) for Android mobile browsers: Samsung Internet and Yandex Browser
 
 ### Zkratky kompatibility {#what-compatibility}
 
@@ -5306,25 +5321,25 @@ Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s 
 
 :::
 
-[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#popup
+[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/dnr-converter/src/examples/README.md#basic_modifiers__$popup
 
 [Sec-Fetch-Dest]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
 
-[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/dnr-converter/src/examples/README.md#exception_rules_modifiers__$jsinject
 
-[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/dnr-converter/src/examples/README.md#exception_rules_modifiers__$jsinject
 
-[badfilter-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#badfilter
+[badfilter-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/dnr-converter/src/examples/README.md#mv3_specific_limitations__$badfilter
 
 [native-has]: https://developer.mozilla.org/docs/Web/CSS/:has
 [safari-16.4]: https://www.webkit.org/blog/13966/webkit-features-in-safari-16-4/
 
 [cl-apps]: #what-product "AdGuard pro Windows, Mac, Linux a Android"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
+[ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
 [ext-mv3]: #what-product "Rozšíření prohlížeče AdGuard pro Chrome MV3"
 [ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
 [ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
-[ext-mv3]: #what-product "Rozšíření prohlížeče AdGuard pro Chrome MV3"
 [ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
 [ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
 [ext-ff]: #what-product "AdGuard Browser Extension for Firefox"

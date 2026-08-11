@@ -37,9 +37,11 @@ The _Low-level settings_ section is for expert users. [Read more about low-level
 
 ## Filtering
 
-This section allows you to manage HTTPS filtering settings, filters, and userscripts, and set up a proxy server.
+This section lets you manage filters, extensions, network settings, add websites to the allowlist, and create user rules.
 
-![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.jpg)
+[Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+
+![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.png)
 
 ### Filters
 

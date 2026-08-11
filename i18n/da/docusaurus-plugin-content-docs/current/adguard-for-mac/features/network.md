@@ -25,7 +25,7 @@ This setting allows AdGuard to filter the secure HTTPS protocol, which is curren
 
 By default, AdGuard doesn’t filter websites with Extended Validation (EV) certificates. If needed, you can enable the _Filter websites with EV certificates_ option.
 
-## Outbound proxy
+## Udgående proxy
 
 You can set up AdGuard to route all your device’s traffic through your proxy server.
 

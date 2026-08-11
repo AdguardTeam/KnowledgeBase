@@ -242,6 +242,14 @@ For AdGuard for Android v4.x we’ve completely redesigned the low-level setting
 
 **开发者工具**是 Android 版 AdGuard v4.3 及更高版本中的一个专用部分，旨在快速导航和在功能之间切换。 这使用户能够快速启用或停用自定义过滤器、访问日志记录、启用各种日志等。
 
+#### Simplified UI mode
+
+If this setting is enabled, AdGuard will only display the DNS icon on the app’s home screen.
+
 #### 检测 Samsung Pay
 
 如果启用，在打开 Samsung Pay 应用时将暂停 AdGuard 保护。 韩国用户需要此功能，因为在启用 AdGuard 时，他们会遇到[与 Samsung Pay 有关的问题](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea)。
+
+#### Show cloned apps
+
+If this setting is enabled, you will be able to change routing, filtering, and firewall settings for cloned apps in _App management_.

@@ -9,6 +9,12 @@ sidebar_position: 8
 
 :::
 
+:::info
+
+To use _Integration with AdGuard VPN_, both apps — AdGuard for Android and AdGuard VPN for Android — must be updated to their latest versions. Otherwise, the Integration mode will not be available
+
+:::
+
 Android 版 AdGuard 创建本地 VPN 以过滤流量。 因此，在启用 Android 版 AdGuard 时，用户不能启动其他 VPN 服务。 不过，AdGuard 和 [AdGuard VPN](https://adguard-vpn.com/) 都有集成模式，可以一起运作。
 
 在集成模式下，AdGuard VPN 作为一个出站代理服务器，通过该服务器，AdGuard 广告拦截程序路由流量。 这允许 AdGuard 创建一个 VPN 界面并在本地进行广告和跟踪器拦截，而AdGuard VPN 通过远程服务器路由所有流量。

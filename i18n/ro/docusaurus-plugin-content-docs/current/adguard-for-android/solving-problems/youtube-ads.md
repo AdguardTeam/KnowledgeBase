@@ -9,7 +9,7 @@ Acest articol se referă la AdGuard pentru Android, un blocant de reclame multif
 
 :::
 
-Una dintre cele mai populare întrebări pe care ni le pun utilizatorii este: "Este posibil să blocăm reclamele din YouTube pe Android?". Din cauza restricțiilor tehnice ale sistemului de operare Android, nu există nicio modalitate de a elimina *complet* reclamele din aplicația YouTube. Dar noi am găsit o alternativă care vă aduce cât mai aproape posibil, în timp ce ocolim restricțiile impuse de Android.
+Una dintre cele mai populare întrebări pe care ni le pun utilizatorii este: "Este posibil să blocăm reclamele din YouTube pe Android?". Due to the technical restrictions of the Android OS, there is no way to *completely* [remove ads from the YouTube app](https://adguard.com/en/adguard-youtube/overview.html). Dar noi am găsit o alternativă care vă aduce cât mai aproape posibil, în timp ce ocolim restricțiile impuse de Android.
 
 ## Vizionează YouTube în aplicația AdGuard
 

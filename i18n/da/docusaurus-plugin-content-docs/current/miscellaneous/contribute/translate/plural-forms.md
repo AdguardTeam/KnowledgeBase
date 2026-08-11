@@ -1,156 +1,156 @@
 ---
-title: Plural forms
+title: Flertalsformer
 sidebar_position: 4
 ---
 
 
-There are a lot of differences between the world’s languages. One of these differences is the use of plural forms that can cause huge difficulties when it comes to localization issue.
+Der er stor forskel på verdens sprog. En af disse disse er brugen af flertalsformer, der kan forårsage enorme vanskeligheder, når det kommer til lokalisering.
 
-We strongly recommend you to properly read this article to learn more about plural forms and how they are being used in AdGuard translations.
+Vi anbefaler på det kraftigste, at denne artikel læses grundigt for mere viden om flertalsformer og brugen heraf i AdGuard-oversættelser.
 
-## What do plural forms mean? {#plurals}
+## Hvad betyder flertalsformer? {#plurals}
 
-Nouns in different languages can have several plural word forms. Their usage depends on the number of things you are talking about.
+Navneord på forskellige sprog kan have flere flertalsformer. Deres brug afhænger af antallet af ting, det drejer sig om.
 
-For instance, English words have two word forms when speaking about something in the singular, like *one star*, and in the plural — *two stars*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. But some languages can contain only one or many plural forms.
+F.eks. har engelske ord to ordformer, når det drejer sig om noget i ental, såsom *'one star'* og i flertal – *'two stars'*. Det er lige meget, om det drejer sig om fem, seksogtyve eller endda fem hundrede og to og tredive stjerner – det afsluttende 's' forbliver det samme. Nogle sprog kan dog kun indeholde én eller mange flertalsformer.
 
-In contrast to English, the Polish language has three plural forms of nouns. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2–4, excluding 12–14, and the third form — for words with other numbers in front of them.
+Modsat engelsk, har polsk tre flertalsformer for navneord. Én af dem bruges, når noget omtales i ental, en anden form bruges til flertal, men med tal, som ender på 2-4, undtagen 12-14, og den tredje form – for ord med andre tal foran sig.
 
-Let’s take a look at this picture. Here you can see the groups of numerals which determine a word form when standing in front of it.
+Lad os tage et kig på dette billede. Her ses de talgrupper, som bestemmer en ordform, når de står foran det.
 
-![Polish](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
+![Polsk](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-Let’s draw a small parallel between English and Polish for better understanding:
+Lad os trække en lille parallel mellem engelsk og polsk for bedre forståelse:
 
-      The English version:                                                 The Polish equivalents:
+      Engelske version:                                                 Polsk ækvivalent:
     
       1. form — It takes one hour.                                     1. form — Zajmuje to godzinę.
       2. form — It takes two hours.                                    2. form — Zajmuje to dwie godziny.
       3. form — It takes five hours.                                   3. form — Zajmuje to pięć godzin.
 
-Now it is clear that the Polish *'godzinę'* (hour) has three different forms, whereas the English word changes its form with given numbers only twice.
+Det er nu klart, at det polske *'godzinę'* (time) har tre forskellige former, hvorimod det engelske ord kun ændrer sin form to gange med de givne tal.
 
-Except for Polish, there are a lot of other languages that have three plural forms and more, such as Russian, Serbian, Slovak, Czech etc. But not all of them obey the same rule. That's why it's so important to know how many plurals your language has, and how to use them correctly.
+Udover polsk er der en mange andre sprog, som har tre flertalsformer, eller endda flere, såsom russisk, serbisk, slovakisk, tjekkisk mv. De følger dog ikke alle den samme regel. Derfor er det så vigtigt at vide, hvor mange flertalsformer et sprog indeholder, samt hvordan de anvendes korrekt.
 
-## Where can you learn about the number of plural forms? {#where-to-learn}
+## Hvor kan det findes info om antallet af flertalsformer? {#where-to-learn}
 
-When you are faced with a translation that requires the use of plurals, you may not be able to realize right away how many word forms your language contains.
+Ved en oversættelse, der kræver brug af flertal, står det måske ikke med det samme klart, hvor mange ordformer sproget har.
 
-Here are some sources of information you can use.
+Her er nogle informationskilder, som kan bruges.
 
-[Localization Guide](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. The number of plural forms for different languages is shown this way: `nplurals=2`, `nplurals=4` and so on. The numeral after the equals sign `=` indicates the number of plural forms of the respective language.
+[Localization Guide](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) indeholder en lang liste af sprog. Antallet af flertalsformer for forskellige sprog vises på denne måde: `nplurals=2`, `nplurals=4` mv. Tallet efter lighedstegnet, `=`, angiver antallet af flertalsformer i det pågældende sprog.
 
-Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). The CLDR Plural Rules indicate an additional word form for decimal numbers (1.5; 2.3; 100.1…), but we don’t use them in AdGuard translations.
+Oplysninger om flertalsformer kan også findes i [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). CLDR-flertalsreglerne angiver en ekstra ordform for decimaltal (1,5; 2,3; 100,1…), men de benyttes ikke i AdGuard-oversættelser.
 
-## Plurals in AdGuard translations {#translations}
+## Flertalsformer i AdGuard-oversættelser {#translations}
 
-First of all, we want to mention that not every AdGuard translation requires the use of plural forms.
+Det skal indledningsvis nævnes, at ikke alle AdGuard-oversættelser kræver brug af flertalsformer.
 
-Currently, we have 4 types of strings on Crowdin that involve the use of plurals.
+Pt. har vi 4 typer strenge på Crowdin, som involverer flertalsformer.
 
-Let's take a closer look at them.
+Lad os se nærmere på dem.
 
-### 1. Phrases with string keys ending in `.singular`, `.dual`, `.plural` {#1type}
+### 1. Sætninger med strengnøgler, som ender på `.singular`, `.dual`, `.plural` {#1type}
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/dual_it.png)
 
-Most of them are represented in the `AdGuard for Windows` project and consist of only one or two words:
+De fleste af dem er repræsenteret i projektet `AdGuard til Windows` og består kun af ét eller to ord:
 
 - `days;`
 - `extensions;`
 - `hours`
 
-Please pay attention to the string keys of such phrases and to the "Context" field where you can see some important notes about plurals. The string keys may contain `Singular`, `Dual`, `Plural` words (ex.`FormatDayDeclensionDual`). In this case, you should leave the appropriate plural form as it is specified in the key.
+Vær opmærksom på strengnøglerne for sådanne sætninger samt på feltet "Kontekst", hvor der kan ses vigtige bemærkninger om flertalsformer. Strengnøglerne kan indeholde ordformerne `Ental`, `Dobbelt`, `Flertal` (eks.`FormatDayDeclensionDual`). I så tilfælde skal den passende flertalsform lades stå, som den er angivet i nøglen.
 
-### 2. Strings with singular and plural nouns separated by commas {#2type}
+### 2. Strenge med navneord i ental og flertal adskilt af kommaer {#2type}
 
-This kind of strings is mostly concentrated in the `AdGuard for Android` project.
+Denne slags strenge optræder hyppigst i projektet `AdGuard til Android`.
 
-Please look at the example:
+Tag et kig på eksemplet:
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/android_fr.png)
 
-If there are 3 plural forms of nouns in your language (like in Polish), please write all plural forms separated by commas.
+Er der 3 flertalsformer af navneord i et sprog (såsom på polsk), skal alle flertalsformerne angives adskilt af kommaer.
 
 `hour, hours — godzinę, godziny, godzin`
 
-In case a noun has only 2 forms, there is no need to write the same form twice (*typically only for this type of strings with plurals!*). However, it won't be a mistake if you repeat the form twice.
+Har et navneord kun 2 former, er det ikke nødvendigt at skrive den samme form to gange (*typisk kun for denne type strenge med flertalsformer!*). Det vil dog ikke være en fejl, såfremt formen gentages to gange.
 
-### 3. Strings that use the Crowdin-developed pattern {#3type}
+### 3. Strenge, som bruger det Crowdin-udviklede mønster {#3type}
 
-This is the most user-friendly scheme of translating strings with plurals.
+Dette er det mest brugervenlige system til oversættelse af strenge med flertal.
 
-Crowdin suggests to users that they translate the certain amount of phrases with different plural forms.
+Crowdin foreslår brugerne, at de oversætter en vis mængde af sætninger med forskellige flertalsformer.
 
-If your language provides only one plural form, then you will see only one phrase to translate. If three or more forms, Crowdin will provide you with the string divided into other two or three strings to translate.
+Har et sprog kun én flertalsform, vil der kun ses én sætning, der skal oversættes. Ved tre eller flere former, viser Crowdin strengen opdelt i yderligere to eller tre strenge til oversættelse.
 
 F.eks.:
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/crowdin_scheme.png)
 
-Please be attentive when translating these strings and approving them. If you have no idea what the "Other" field means, then just paste the same form as it is in the "Many" field. The translations of "Many" and "Other" fields can be the same.
+Vær opmærksom, når disse strenge oversættes og godkendes. Ved man ikke, hvad "Other"-feltet betyder, så indsæt blot den samme form, som brugt i "Many"-feltet. Oversættelserne i felterne "Many" og "Other" kan være identiske.
 
-### 4. Strings with templates separated by the vertical bar sign {#4type}
+### 4. Strenge med skabeloner adskilt af et lodret stregtegn {#4type}
 
-This is the most complicated type of AdGuard strings which is mostly used in the `AdGuard Websites` project.
+Dette er den mest komplicerede type AdGuard-strenge, som for det meste bruges i projektet `AdGuard Websites`.
 
-Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases — this will help you identify phrases where translations require the use of plural forms.
+Vær især opmærksom på det lodrette stregtegn mellem sætningerne og **%count%**-variabler i originale sætninger – disse vil bidrage til at identificere sætninger, hvori oversættelser kræver brug af flertalsformer.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png)
 
-Now, let’s imagine — you are faced with such a string: `Standard license for %count% computer | Standard license for %count% computers`.
+Lad os nu antage, at en sådan streng skal behandles: `Standard license for %count% computer | Standard license for %count% computers`.
 
-What should you know to translate it correctly?
+Hvilken viden kræves for at oversætte strengen korrekt?
 
-Let's call the sentences which are divided by a vertical bar sign **"templates"**, because actually they serve as templates for phrases with different numbers.
+Lad os kalde sætningerne opdelt med et lodret stregtegn **for "skabeloner"**, da de faktisk fungerer som skabeloner for sætninger med forskellige antal.
 
-Coming back to the example, as the English language includes only two forms, there should be two templates respectively:
+For at komme tilbage til eksemplet, da engelske kun omfatter to former, skal der være to skabeloner, henholdsvis:
 
 `Standard license for *%count%* computer | Standard license for *%count%* computers`
 
-where **template 1** is Standard license for *%count%* computer,
+hvor **skabelon 1** er "Standard license for *%count%* computer",
 
-and **template 2** is Standard license for *%count%* computers
+og **skabelon 2** er "Standard license for *%count%* computers"
 
-Another important thing you should pay your attention to is **%count%** placeholders that, as usual, take place before the words they define. Instead of **%count%** here will appear different numbers depending on which templates are being chosen.
+En anden vigtig ting er **%count%**-variabler, som jf. sædvanen findes før de ord, de definerer. I stedet for **%count%** vises forskellige tal afhængigt af skabelonvalget.
 
-In a situation with another language that has, let’s say, three plural forms, there should be three templates with two vertical bar signs between them.
+I tilfælde af et sprog med f.eks. tre flertalsformer, skal der være tre skabeloner med to lodrette stregtegn imellem.
 
-For example, when we translate the above mentioned phrase into Slovak, that according to the rule of [Localization Guide](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) has three word forms, the correct translation will look so:
+Oversættes f.eks. ovennævnte sætning til slovakisk, der ifølge reglen jf. [Lokaliseringsguiden](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) har tre ordformer, vil den korrekte oversættelse se således ud:
 
 `**Štandartná licencia pre *%count%* počítač | Štandartná licencia pre *%count%* počítače | Štandartná licencia pre *%count%* počítačov**`
 
-![Slovak](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
+![Slovakisk](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
 
-In this case, we see three templates which contain three forms of the word *"počítač"* (computer) in Slovak.
+I dette tilfælde ses tre skabeloner indeholdende tre former af ordet *"počítač"* (computer) på slovakisk.
 
-*If we ignore one of the forms and use only two templates for Slovak instead of three, the system won’t be able to take an appropriate template for certain numbers* and, as a result, we will have grammar mistakes in sentences, like in English: *Standard license for 5 computer*.
-> **Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
+*Ignoreres én af formerne, og bruges der kun to skabeloner for slovakisk i stedet for tre, vil systemet ikke kunne vælge en passende skabelon for visse tal*, og konsekvensen vil være grammatikfejl i sætninger, som f.eks. på engelsk: *Standardlicens til 5 computer*.
+> **Brug altid så mange former, som findes på det pågældende sprog, selv når selve ordet har færre ordformer.**
 
-For example, the Serbian word *'računar'* (computer) has only two forms. But there are 3 plural forms in Serbian.
+F.eks. har det serbiske ord *'računar'* (computer) kun to former. På serbisk findes der imidlertid 3 flertalsformer.
 
-![Serbian](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
+![Serbisk](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
 
-Thus, the translation from English into Serbian should be:
+Derfor bør oversættelsen fra engelsk til serbisk være:
 
 `**Standardna licenca za *%count%* računar | Standardna licenca za *%count%* računara | Standardna licenca za *%count%* računara**`
 
-Although it is obvious that the last two templates have no differences, it is very important to keep the rule: **The number of templates should reflect the number of plural forms of the respective language!**(typically for this type of strings with plurals).
+Selvom det er indlysende, at de sidste to skabeloner er ens, er det meget vigtigt at følge reglen: **Skabelonantallet skal afspejle antallet af flertalsformer for det aktuelle sprog!**(typisk for denne type strenge med flertal).
 
-## Short summary {#summary}
+## Kort sammendrag {#summary}
 
-When translating AdGuard projects pay your close attention to phrases which require the use of plural forms.
+Ved oversættelse af AdGuard-projekter skal der udvises stor opmærksom på sætninger, som kræver brug af flertalsformer.
 
-While first three types of such strings are more or less easy to perform, the fourth type demands more vigilance.
+Mens de første tre typer af sådanne strenge er forholdsvis lette at håndtere, kræver den fjerde type større bevågenhed.
 
-And again: if you come across an original phrase with two important elements: **the vertical bar sign** and **%count%** placeholders, please do the following:
+Og igen: Ses en original sætning med to vigtige elementer: **det lodrette stregtegn** og **%count%**-variabler, skal flg. gøres:
 
-- Refer to the plural rule of a language you translate into;
+- Henvis til flertalsreglen for et sprog, der oversættes til;
 
-The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
+Skabelonantallet skal matche antallet af flertalsformer i sproget, selv i tilfælde, hvor visse individuelle ord måtte have færre former. To flertalsformer — to skabeloner i oversættelser; fem flertalsformer — fem skabeloner mv.
 
-- Do not forget to use a vertical bar sign between templates as it is represented in original strings;
+- Glem ikke at bruge et lodret stregtegn mellem skabeloner, som det fremgår i originalstrengen;
 
-- Do not translate, fill in or delete **%count%** placeholders.
+- Oversæt, udfyld eller slet ikke **%count%**-variabler.
 
-By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.
+Ved at følge disse enkle regler kan AdGuard-udviklerne undgå en masse unødvendige komplikationer under lokaliseringsprocessen.

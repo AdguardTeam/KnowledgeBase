@@ -243,6 +243,14 @@ If this setting is enabled, AdGuard will display the **Developer tools** icon in
 
 **Developer tools** is a specialized section available in AdGuard for Android v4.3 and later, designed for quick navigation and switching between features. It allows you to quickly enable or disable custom filters, access logs, enable various logs, and more.
 
+#### Simplified UI mode
+
+If this setting is enabled, AdGuard will only display the DNS icon on the app’s home screen.
+
 #### Rileva Samsung Pay
 
 Se quest'impostazione è abilitata, la protezione di AdGuard sarà interrotta quando apri l'app Samsung Pay. Gli utenti coreani richiedono questa funzione poiché riscontrano [problemi con Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) quando AdGuard è abilitato.
+
+#### Show cloned apps
+
+If this setting is enabled, you will be able to change routing, filtering, and firewall settings for cloned apps in _App management_.

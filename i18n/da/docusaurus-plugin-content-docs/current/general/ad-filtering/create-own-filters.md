@@ -1375,7 +1375,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$removeheader](#removeheader-modifier)     |                      ✅                      | ✅ [*[7]](#removeheader-modifier-limitations) | ✅ [*[7]](#removeheader-modifier-limitations) | ✅ [*[7]](#removeheader-modifier-limitations) |             ❌              |               ❌               |                 ❌                 |
 | [$removeparam](#removeparam-modifier)       |                      ✅                      |                      ✅                       | ✅ [*[6]](#removeparam-modifier-limitations)  |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
 | [$replace](#replace-modifier)               |                      ✅                      |                      ❌                       |                      ❌                       |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
-| [$urltransform](#urltransform-modifier)     |                      ✅                      |                      ❌                       |                      ❌                       |                      ❌                       |             ❌              |               ❌               |                 ❌                 |
+| [$urltransform](#urltransform-modifier)     |                      ✅                      |                      ✅                       | ✅ [*[8]](#urltransform-modifier-limitations) |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
 | [$reason](#reason-modifier)                 |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ✅              |               ✅               |                 ❌                 |
 | [noop](#noop-modifier)                      |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ✅              |               ✅               |                 ❌                 |
 | [$empty 👎](#empty-modifier "deprecated")    |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
@@ -2912,7 +2912,7 @@ AdGuard products that use a [CoreLibs][] version older than 1.20 only support a 
 
 :::info Kompatibilitet
 
-This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.17 or later.
+This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.17 or later, and to [AdGuard Browser Extension][ext-chr] v5.5 or later.
 
 :::
 
@@ -2985,6 +2985,8 @@ Tracking links will now be automatically cleaned up, allowing direct navigation 
 
 Rules with the `$urltransform` modifier can only be used [**in trusted filters**](#trusted-filters).
 
+`$urltransform` is only compatible with `$domain`, `$third-party`, `$important`, `$match-case`, `$badfilter`, `$to`, `$method`, `$popup`, `$denyallow`, and [content-type modifiers](#content-type-modifiers). Rules using any other modifiers are invalid and discarded.
+
 `$urltransform` rules without [content-type modifiers](#content-type-modifiers) will only match requests where the content type is `document`.
 
 :::
@@ -2995,6 +2997,19 @@ Rules with the `$urltransform` modifier are supported by AdGuard for Windows, Ad
 
 `$urltransform` rules with [content-type modifiers](#content-type-modifiers) are supported starting from [CoreLibs][] v1.19 or later. In earlier versions, content-type modifiers were not allowed with `$urltransform`.
 
+Rules with the `$urltransform` modifier and [content-type modifiers](#content-type-modifiers) are also supported by [AdGuard Browser Extension][ext-chr] v5.5 or later, and by [AdGuard for Chrome MV3][ext-mv3] v5.5 or later with [limitations](#urltransform-modifier-limitations).
+
+:::
+
+##### `$urltransform` modifier limitations {#urltransform-modifier-limitations}
+
+:::caution Begrænsninger
+
+In [AdGuard for Chrome MV3][ext-mv3], the `$urltransform` modifier has the following limitations:
+
+1. **No decode stages** — pipeline transforms containing `b64` (Base64 decode) or `pct` (percent-decode) stages are not supported and will be discarded.
+2. **No global replacement** — only the **first match** is replaced. The `/g` (global) flag is ignored. This is usually not an issue for full-URL transforms anchored with `^`, but path-only patterns that rely on replacing all occurrences will only replace the first one.
+3. **Single redirect per request** — when multiple `$urltransform` rules match the same request, only the highest-priority one takes effect. In CoreLibs, all matching rules are applied sequentially.
 :::
 
 #### **`$reason`** {#reason-modifier}
@@ -4150,7 +4165,7 @@ The `:not()` is considered as a standard CSS pseudo-class inside the argument of
 
 #### Pseudoklasse `:empty-trimmed` {#extended-css-empty-trimmed}
 
-Pseudoklassen `:empty-trimmed` muliggør valg af elementer uden tekstindhold. Modsat det medfødte CSS [`:empty`](https://developer.mozilla.org/en-US/docs/Web/CSS/:empty)-pseudoklasse, der matcher elementer, som slet ingen undernoder har (hverken elementer eller tekstnoder), tjekker `:empty-trimmed` `textContent` for elementet **og dets efterkommere**. Den matcher også elementer, hvis tekstindhold kun består af blanktegn, herunder ikke-brydende mellemrum såsom `&nbsp;`.
+The `:empty-trimmed` pseudo-class allows selecting elements without text content. Unlike the native CSS [`:empty`](https://developer.mozilla.org/en-US/docs/Web/CSS/:empty) pseudo-class, which matches elements that have no child nodes at all (no elements, no text nodes), `:empty-trimmed` checks `textContent` of the element **and its descendants**. It also matches elements whose text content consists only of whitespace, including non-breaking spaces such as `&nbsp;`.
 
 **Syntaks**
 
@@ -4162,21 +4177,21 @@ Pseudoklassen `:empty-trimmed` muliggør valg af elementer uden tekstindhold. Mo
 
 :::note
 
-Denne pseudoklasse har ingen argumenter.
+This pseudo-class has no arguments.
 
 :::
 
 :::info Kompatibilitet
 
-Tilføjet i ExtendedCSS v2.0.0.
+Added in ExtendedCSS v2.0.0.
 
-Regler med pseudoklassen `:empty-trimmed` understøttes af AdGuard Browser Extension v5.5 eller senere. Sådanne regler fungerer ikke i AdGuard Content Blocker.
+Rules with the `:empty-trimmed` pseudo-class are supported by AdGuard Browser Extension v5.5 or later. Such rules do not work in AdGuard Content Blocker.
 
 :::
 
 **Eksempler**
 
-`div > p:empty-trimmed` vælger `p#empty`, `p#spaces`, `p#nbsp`, `p#child-empty` og `p#comment`:
+`div > p:empty-trimmed` selects `p#empty`, `p#spaces`, `p#nbsp`, `p#child-empty`, and `p#comment`:
 
 ```html
 <!-- HTML code -->
@@ -4192,15 +4207,15 @@ Regler med pseudoklassen `:empty-trimmed` understøttes af AdGuard Browser Exten
 </div>
 ```
 
-`div > p:not(:empty-trimmed)` vælger `p#text`, `p#child-text` og `p#zwsp`.
+`div > p:not(:empty-trimmed)` selects `p#text`, `p#child-text`, and `p#zwsp`.
 
 :::note
 
-Et element såsom `<p><span></span></p>` matcher `:empty-trimmed` (dets tekstindhold er tomt), men matcher **ikke** den oprindelige `:empty` (det har en underordnet `<span>`-node).
+An element like `<p><span></span></p>` matches `:empty-trimmed` (its text content is empty) but does **not** match native `:empty` (it has a child `<span>` node).
 
-Elementer indeholdende kun HTML-kommentarer (f.eks. `<!-- hidden -->`) matcher også `:empty-trimmed`, da kommentarnoder ikke afspejles i `textContent`.
+Elements containing only HTML comments (e.g. `<!-- hidden -->`) also match `:empty-trimmed`, because comment nodes are not reflected in `textContent`.
 
-Nul bredde-tegn, såsom mellemrum med nul bredde (`\u200B`), **behandles ikke** som mellemrum. Et element indeholdende udelukkende nul bredde-tegn matcher **ikke** `:empty-trimmed`.
+Zero-width characters such as zero-width space (`\u200B`) are **not** treated as whitespace. An element containing only zero-width characters does **not** match `:empty-trimmed`.
 
 :::
 
@@ -5306,20 +5321,21 @@ The following scriptlets also may be used for debug purposes:
 
 :::
 
-[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#popup
+[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/dnr-converter/src/examples/README.md#basic_modifiers__$popup
 
 [Sec-Fetch-Dest header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
 
-[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/dnr-converter/src/examples/README.md#exception_rules_modifiers__$jsinject
 
-[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/dnr-converter/src/examples/README.md#exception_rules_modifiers__$jsinject
 
-[badfilter-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#badfilter
+[badfilter-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/dnr-converter/src/examples/README.md#mv3_specific_limitations__$badfilter
 
 [native-has]: https://developer.mozilla.org/docs/Web/CSS/:has
 [safari-16.4]: https://www.webkit.org/blog/13966/webkit-features-in-safari-16-4/
 
 [cl-apps]: #what-product "AdGuard for Windows, Mac, Linux, Android"
+[ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
 [ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
 [ext-ff]: #what-product "AdGuard Browser Extension for Firefox"

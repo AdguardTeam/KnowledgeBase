@@ -1,66 +1,66 @@
 ---
-title: Battery and traffic consumption issues
+title: Problemer med strøm- og trafikforbrug
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel dækker AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-Due to built-in statistics processes, high data and/or battery consumption was often attributed to AdGuard by Android 6 and earlier. This was because AdGuard counted all the traffic it filtered from various apps. As a result, AdGuard's share of total data and battery usage was overstated, while other apps were understated.
+Grundet indbyggede statistikprocesser blev et højt data- og/eller batteriforbrug ofte tilskrevet AdGuard af Android 6 og tidligere. Dette skyldtes, at AdGuard opregnede al den trafik, den filtrerede fra forskellige apps. Resultat var, at AdGuards andel af det samlede data- og strømforbrug blev sat for højt, og for lavt for andre apps.
 
-With Android 7, however, this scenario has improved. Now the data reflected in Android's built-in data usage statistics is very close to reality, although there are minor discrepancies in the battery usage data.
+Dette scenarie blev dog forbedret med Android 7. Nu er dataangivelserne i Androids indbyggede dataforbrugsstatistik meget tæt på virkeligheden, selvom der er mindre uoverensstemmelser i strømforbrugsdataene.
 
-However, AdGuard users can always get a true picture of the situation on the *Battery usage* screen.
+AdGuard-brugere kan dog altid få et reelt billede af situationen via skærmen *Batteriforbrug*.
 
-### Own battery usage stats screen
+### Egen strømforbrugsstatistikskærm
 
-You can access it by navigating to *Statistics* → *Battery usage*.
+Denne kan tilgås ved at gå til *Statistik* → *Batteriforbrug*.
 
-![Battery stats *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
+![Batteristatistik *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
 
-Inside you will find a chart that shows the AdGuard battery resource consumption within the last 24 hours, with an option to get more detailed hour-to-hour data by tapping on the chart. Besides that, there’s also a numeric breakdown of the relevant data and a short technical explanation.
+Her findes et diagram, der viser AdGuards strømforbrug inden for de seneste 24 timer samt mulighed for at se mere detaljerede time-for-time data ved at trykke på på diagrammet. Der er desuden en numerisk opdeling af de relevante data samt en kort teknisk forklaring.
 
-There are several other parameters below the chart: *CPU foreground*, *CPU background*, *Mobile data usage*, and *Wi-Fi data usage*.
+Der er flere andre parametre under diagrammet: *CPU forgrund*, *CPU baggrund*, *Mobildatabrug* og *Wi-Fi-databrug*.
 
-*CPU foreground* and *CPU background* show how much CPU time is used by AdGuard when the app is active or running in the background.
+*CPU forgrund* og *CPU baggrund* viser, hvor meget CPU-tid AdGuard bruger, når appen er aktiv eller kører i baggrunden.
 
-And with *Mobile data usage* and *Wi-Fi data usage*, you can see how much traffic AdGuard consumed when your phone was using mobile Internet or connected to Wi-Fi.
+Med *Mobildatabrug* og *Wi-Fi-databrug* kan endvidere ses, hvor meget trafik, AdGuard har forbrugt, mens mobilen brugte mobildata eller var tilsluttet Wi-Fi.
 
-### How much battery resource does AdGuard really consume?
+### Hvor meget strøm forbruger AdGuard reelt?
 
-First, let us lay down a bit of theory and links with necessary data.
+Lad os se på lidt teori og links med nødvendige data.
 
-1. Android derives traffic consumption judging on so-called Power Profile, which is given by every manufacturer: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
+1. Androids trafikforbrugsvurdering baseres på en såkaldt Power Profile leveret af hver enkelt producent: <https://source.android.com/devices/tech/power/values.html>
 
-1. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
+1. Hovedindholdet i Power Profile er værdsæt i mAh, der definerer strømforbruget for hver komponent i enheden: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
-    For example, from the table above:
+    F.eks. fra tabellen ovenfor:
 
-    *wifi.active=* 31mA additional consumption in mAh caused by WiFi data exchange.
+    *wifi.active=* 31mA ekstra forbrug forårsaget af Wi-Fi-dataudveksling.
 
-    *radio.active=* 100-300mA additional consumption in mAh caused by data exchange over Mobile network.
+    *radio.active=* 100-300mA ekstra forbrug forårsaget af dataudveksling via mobilnetværk.
 
-    *cpu.active=* 100-200mA additional consumption in mAh caused by CPU load.
+    *cpu.active=* 100-200mA ekstra forbrug forårsaget af CPU-belastning.
 
-1. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating power consumption let's get rid of 'Mobile/Wi-Fi packets' and stick to 'CPU'.
+1. AdGuard forbruger i sig selv næsten ingen trafik, så lad os for at evaluere strømforbruget fjerne 'Mobil-/Wi-Fi-pakker' og holde os til 'CPU'.
 
-    Formula to calculate the consumption:
+    Formel til forbrugsberegningen:
 
-    > “CPU TIME (ms)” X “cpu.active” / (60 *60* 1000) = “POWER USE mAh”
+    > “CPU-TID (ms)” X “cpu.active” / (60 *60* 1000) = “STRØMFORBRUG mAh”
 
-    Let's put real numbers into this formula.
+    Lad os sætte reelle tal ind i formlen.
 
-    Let's take *CPU total* from the second screenshot and convert into milliseconds: 506000
+    Lad os tage *CPU i alt* fra det andet skærmfoto og konvertere til millisekunder: 506.000
 
-    A coefficient *cpu.active* for 2GHz will be roughly equal to 225mAh
+    Koefficienten *cpu.active* for 2GHz vil være nogenlunde lig med 225mAh
 
-    Final result:
+    Endeligt resultat:
 
-    > 506000 *225 / (60* 60 * 1000) = 31,625mAh
+    > 506000 *225/(60*60*1000)= 31,625mAh
 
-### Conclusion
+### Konklusion
 
-Real consumption is **several times less** than it is shown in Android statistics. Instead of 220mAh it should be somewhere around 31-40mAh. On the other hand, browser's consumption should be not 66mAh, but ~200mAh.
+Det reelle forbrug er **mange gange lavere** end vist i Android-statistikken. I stedet for 220mAh, bør det være i omegnen af 31-40mAh. Omvendt, så bør webbrowserens forbrug ikke vise 66mAh, men ~200mAh.

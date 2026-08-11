@@ -37,25 +37,27 @@ sidebar_position: 4
 
 ## 필터링
 
-이 섹션에서는 HTTPS 필터링 설정, 필터, 유저스크립트를 관리하고 프록시 서버를 설정할 수 있습니다.
+This section lets you manage filters, extensions, network settings, add websites to the allowlist, and create user rules.
 
-![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.jpg)
+[Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+
+![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.png)
 
 ### 필터
 
-AdGuard는 필터의 규칙을 적용하여 광고, 추적기 및 성가신 광고를 차단합니다. **보호** 섹션의 대부분의 기능은 [AdGuard 필터](/general/ad-filtering/adguard-filters/#adguard-filters)를 기반으로 작동합니다. **기본 보호**를 활성화하면 AdGuard 베이스 필터와 AdGuard 모바일 광고 필터가 자동으로 켜집니다. 두 필터를 모두 끄면 **기본 보호** 기능도 비활성화됩니다.
+AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the _Protection_ section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable _Basic protection_, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, _Basic protection_ will also be disabled.
 
-![필터 \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
+![Filters \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
-기본적으로 활성화된 필터만으로도 AdGuard를 정상적으로 작동할 수 있습니다. 그러나 광고 차단을 맞춤 설정하려면 다른 AdGuard 또는 타사 필터를 사용할 수 있습니다. 이렇게 하려면 카테고리를 선택하고 원하는 필터를 활성화합니다. 사용자 정의 필터를 추가하려면 **사용자 정의 필터** → **사용자 정의 필터 추가**를 탭하고 해당 URL 또는 파일 경로를 입력합니다.
+Filters enabled by default are enough for normal AdGuard operation. However, if you want to customize ad blocking, you can use other AdGuard or third-party filters. To do this, select a category and enable the filters you'd like. To add a custom filter, tap _Custom filters_ → _Add custom filter_ and enter its URL or file path.
 
 :::note
 
-필터를 너무 많이 활성화하면 일부 웹사이트가 제대로 작동하지 않을 수 있습니다.
+If you activate too many filters, some websites may work incorrectly.
 
 :::
 
-[필터에 대해 자세히 알아보기](https://adguard.com/en/blog/what-are-filters.html)
+[Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
 
 ### 확장 프로그램
 

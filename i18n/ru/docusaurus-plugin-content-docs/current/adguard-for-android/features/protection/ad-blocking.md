@@ -9,16 +9,10 @@ sidebar_position: 1
 
 :::
 
+![Блокировка рекламы \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/ad-blocking.png)
+
 Блокировка рекламы находится во вкладке _Защита_ (второй слева значок в нижней части экрана).
 
 Эта функция блокирует рекламу с помощью фильтров для блокировки рекламы и языковых фильтров. [В отдельной статье](/general/ad-filtering/how-ad-blocking-works) рассказали, как это работает.
 
-Базовая защита эффективно блокирует рекламу на большинстве сайтов. Чтобы настроить блокировку рекламы, вы можете:
-
-- Включить соответствующие языковые фильтры — они содержат правила фильтрации для блокировки рекламы на сайтах на определённых языках
-
-- Добавить сайты в белый список — они не будут фильтроваться AdGuard
-
-- Создавать пользовательские правила — AdGuard будет применять их на указанных сайтах. [Как создавать пользовательские правила](/general/ad-filtering/create-own-filters)
-
-![Блокировка рекламы \*mobile_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
+_Базовая защита_ эффективно блокирует рекламу на большинстве сайтов. For more customized ad blocking, you can enable _Language-specific ad blocking_ — it contains filtering rules for websites in specific languages.

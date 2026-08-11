@@ -1,81 +1,81 @@
 ---
-title: Legacy licenses FAQ
+title: Ældre licenser FAQ
 sidebar_position: 6
 ---
 
-We have written this article to avoid confusion and explain in detail how you can renew/upgrade a legacy AdGuard license.
+Vi har skrevet denne artikel for at undgå forvirring samt i detaljer forklare, hvordan en forældet (legacy) AdGuard-licens kan fornyes/opgraderes.
 
-## About legacy licenses
+## Om forældede licenser
 
-Initially licenses of the following types were available to activate AdGuard products:
+Oprindeligt var licenser af flg. typer tilgængelige til aktivering af AdGuard-produkter:
 
-**Standard** was for desktop applications, AdGuard for Windows and AdGuard for Mac
+**Standard** var til computerapplikationerne AdGuard til Windows og AdGuard til Mac
 
-**Mobile** was for mobile apps, AdGuard for Android and AdGuard for iOS
+**Mobile** var til mobil-apperne AdGuard til Android og AdGuard til iOS
 
-**Premium** was a license that combined desktop and mobile applications
+**Premium** var en licens, der kombinerede computer + mobil-apps
 
-Standard and Mobile licenses could be purchased for 1 to 9 devices.
+Standard- og Mobillicenser kan købes til 1-9 enheder.
 
-Standard were valid only for desktops, and Mobile were only for smartphones and tablets.
+Standard var kun gyldige til computere, og Mobile var kun gyldige til smartphones og tablets.
 
-Premium licenses could have been used on 2-18 devices. Depending on the number of devices selected upon purchasing, they allowed you to simultaneously activate AdGuard on an equal number of computers and mobile devices: 2+2, 3+3, etc.
+Premium-licenser var gyldige til 2-18 enheder. Afhængigt af antallet af valgte enheder ved købet, gav de mulighed for samtidig at aktivere AdGuard på et tilsvarende antal computere og mobilenheder: 2+2, 3+3 mv.
 
-For example, you might have had a Premium license for 2+2 devices, that is, the license could be installed on 2 computers and 2 phones/tablets. Or, for example, for 9+9 (18 devices in total), then the license could be installed on 9 computers and 9 phones/tablets.
+Det var f.eks. muligt at have en Premium-licens til 2+2-enheder, dvs., at licensen var gyldig til 2 computere og 2 mobiler/tablets. Eller f.eks. til 9+9 (18 enheder i alt), så licensen kunne installeres på 9 computere og 9 mobiler/tablets.
 
-For all types (Standard, Mobile, Premium) there were options for a Yearly and Lifetime license.
+For alle typer (Standard, Mobile, Premium) var der muligheder for Årlig og Livstidslicens.
 
-In October 2019 AdGuard switched to the new licensing system: from then on, licenses can still be purchased for 1 year or Lifetime, but their types have become **Personal** (for up to 3 devices) or **Family** (for up to 9 devices).
+I oktober 2019 skiftede AdGuard til det nye licenssystem: Fra da af kan licenser stadig købes for 1 år eller livstid, men deres typer er ændret til **Personal** (maks. 3 enheder) eller **Family** (maks. 9 enheder).
 
-Another change is that the **new types of license keys can now be used on any device, in any combination**. For example, a Personal license can be used on Android, Mac and iOS, as well as on two Windows computers and an Apple tablet.
+En anden ændring er, at de **nye typer licensnøgler nu kan bruges på enhver enhed, i enhver kombination**. En Personal-licens kan f.eks. bruges på Android, Mac og iOS, såvel som på to Windows-computere og en Apple-tablet.
 
-## What happened to the legacy licenses?
+## Hvad er der sket med de gamle licenstyper?
 
-**Standard licenses** were automatically made **universal**, which means that they can be activated on any device.
+**Standardlicenser** blev automatisk gjort **universelle**, dvs., at de kan aktiveres på enhver enhed.
 
-**Mobile licenses** remained unchanged and platform-limited (they can still only be used on phones or tablets).
+**Mobillicenser** er forblevet uændrede og platformbegrænsede (de kan stadig kun benyttes på mobiler/tablets).
 
-**Premium licenses** also remained unchanged and platform-limited. And although **Premium licenses are now displayed in your personal account by the total number of devices**, they can still be activated on desktop + mobile set of devices.
+**Premiumlicenser** er også forblevet uændrede og platformbegrænsede. Selvom **Premiumlicenser vises nu i den personlige konto efter det samlede antal enheder** og kan stadig aktiveres på computer + mobil-sæt af enheder.
 
-For example, this is how the 1+1 key looks like:
+F.eks. ser 1+1-nøglen således ud:
 
-![1+1 key](https://cdn.adtidy.org/blog/new/7rh5nlicense1.png)
+![1+1-nøgle](https://cdn.adtidy.org/blog/new/7rh5nlicense1.png)
 
-*But despite the total number of devices (2) it can be activated on 1 desktop and 1 mobile device.*
-> All the outdated licenses have a "legacy" badge in the AdGuard account. And they are automatically converted to a new type when you either renew or upgrade them. But there are some nuances. Let's see which licenses can be converted to a new type and how to do it.
+*Trods det samlede antal enheder (2), kan den aktiveres på 1 computer og 1 mobilenhed.*
+> Alle de gamle licenser vises i AdGuard-kontoen med et "legacy"-badge. De konverteres også automatisk til en ny type, når de enten fornyes eller opgraderes. Der er dog nogle nuancer. Lad os se, hvilke licenser, som kan konverteres til en ny type, og hvordan det gøres.
 
-## How to renew or upgrade a legacy key
+## Sådan fornyes eller opgraderes en legacy-nøgle
 
-You can extend/renew or upgrade a legacy license in your [AdGuard account](https://adguardaccount.com) or on the [Extend or upgrade page](https://adguard.com/renew.html).
+En ældre/legacy-licens kan forlænges/fornyes eller opgraderes i [AdGuard-kontoen](https://adguardaccount.com) eller på [siden Forlæng eller opgradér](https://adguard.com/renew.html).
 
-To extend/renew or upgrade a legacy license in your AdGuard account, go to the *Licenses* tab, find the license you need, and select one of the available options.
+For at udvide/forny eller opgradere en legacy/ældre licens i AdGuard-kontoen, gå til fanen *Licenser*, find den relavante licens og vælg en af de tilgængelige muligheder.
 
-![Renew or upgrade a license in your AdGuard account](https://cdn.adtidy.org/blog/new/rf4zgklicense2.png)
+![Forny eller opgradér en licens i AdGuard-kontoen](https://cdn.adtidy.org/blog/new/rf4zgklicense2.png)
 
-Or go to the [Extend or upgrade page](https://adguard.com/renew.html), enter your license, and click *Apply*. On the new page, select one of the available options.
+Eller gå til [siden Forlæng eller opgradér](https://adguard.com/renew.html), angiv licensen, og klik på *Anvend*. Vælg på den nye side en af de tilgængelige muligheder.
 
-### Licenses for 1/2/3 devices
+### Licenser til 1/2/3 enheder
 
-Mobile Yearly licenses for 3 devices can be converted to Personal licenses or upgraded to Family ones:
+Årlige mobillicenser til 3 enheder kan konverteres til Personal-licenser eller opgraderes til Family-licenser:
 
-![Upgrade Yearly licenses for 1, 2, 3 devices](https://cdn.adtidy.org/blog/new/fh5r7upgrade3.png)
+![Opgradere årlige licenser til 1, 2, 3 enheder](https://cdn.adtidy.org/blog/new/fh5r7upgrade3.png)
 
-> If you have a **Standard license for 3 devices**, it already works as a **Personal** license. If you renew your **Mobile license** for 3 devices, you will be able to use it on a **different set of device**s, not just phones.
+> Haves en **Standardlicens til 3 enheder**, fungerer den allerede som en **Personal** licens. Fornyes en **Mobillicens** til 3 enheder, kan den bruges på **forskellige enhedstyper**, ikke kun mobiler.
 
-You can also upgrade your license to Lifetime:
+Licensen kan også opgraderes til Livstidslicens:
 
-![Upgrade to Lifetime](https://cdn.adtidy.org/blog/new/7j4l6gupgrade4.png)
+![Opgradering til Livstid](https://cdn.adtidy.org/blog/new/7j4l6gupgrade4.png)
 
-**Lifetime** licenses can only be upgraded to Family (9 devices) due to technical limitations.
+Grundet tekniske forhold kan licenstypen **Livstid** kan kun opgraderes til Family (9 enheder).
 
-### Licenses for 4+ devices (up to 9)
+### Licenser til 4+ enheder (op til 9)
 
-**Yearly** licenses for 4 or more devices can be upgraded to Family and Lifetime licenses.
+**Årlige** licenser til 4 eller flere enheder kan opgraderes til Family- og Livstidslicenser.
 
-However, if you already have a **Lifetime** license, it cannot be upgraded due to technical limitations.
+Grundet tekniske forhold kan licenstypen **Livstid** dog ikke opgraderes.
 
-### Licenses for 9+ devices
+### Licenser til 9+ enheder
 
-Premium keys (5+5 and more) and custom keys for 10+ devices that you purchased individually with the help of our managers.
+Premium-nøgler (5+5 og flere) og tilpassede nøgler til 10+ enheder købt individuelt med hjælp fra vores salgsassistenter.
 
-These are quite unique cases, so if you want to upgrade your license to Lifetime, please contact us at partners@adguard.com. We will make you a special offer depending on the specific configuration of your license.
+Disse er ret unikke tilfælde, så ønskes en sådan licens opgraderet til Livstid, bedes man kontakte os via partners@adguard.com. Vi giver et særligt tilbud afhængigt af den specifikke licensopsætning.
