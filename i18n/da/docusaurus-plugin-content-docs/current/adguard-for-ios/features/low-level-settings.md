@@ -1,5 +1,5 @@
 ---
-title: Low-level settings
+title: Lavniveauindstillinger
 sidebar_position: 6
 ---
 

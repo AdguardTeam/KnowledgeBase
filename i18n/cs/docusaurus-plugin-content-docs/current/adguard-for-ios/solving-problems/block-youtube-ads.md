@@ -25,4 +25,4 @@ Video se nyní otevře v přehrávači AdGuard bez reklam.
 1. Ujistěte se, že je zapnuta možnost *Povolit rozšíření*. Na stejné obrazovce nastavte oprávnění *Všechny webové stránky* pro AdGuard na *Povolit*. ![Extension permissions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/extensions_allow.jpg)
 1. Otevřete AdGuard, klepněte na ikonu štítu a povolte *pokročilou ochranu*.
 
-Videa YouTube můžete nyní v Safari sledovat bez reklam.
+You can now [watch YouTube videos in Safari without ads](https://adguard.com/en/adguard-youtube/overview.html).

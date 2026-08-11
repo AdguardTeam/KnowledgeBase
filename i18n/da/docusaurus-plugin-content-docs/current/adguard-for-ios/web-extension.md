@@ -1,88 +1,88 @@
 ---
-title: Safari Web extension
+title: Safari Web-udvidelse
 sidebar_position: 3
 ---
 
-Web extensions add custom functionality to Safari. You can find [more information about Web extensions here](https://developer.apple.com/documentation/safariservices/safari_web_extensions).
+Web-udvidelser føjer tilpasset funktionalitet til Safari. Der kan findes [flere oplysninger om web-udvidelser hér](https://developer.apple.com/documentation/safariservices/safari_web_extensions).
 
-![What the Web extension looks like in Safari *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/menu_en.png)
+![Sådan ser Web-udvidelsen ud i Safari *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/menu_en.png)
 
-AdGuard's Safari Web extension is a tool that takes advantage of the new features of iOS 15. It serves to enhance the capabilities of AdGuard for iOS. With it, AdGuard can apply advanced filtering rules and ultimately block more ads.
+AdGuards Safari Web-udvidelse er et værktøj, der udnytter de seneste funktioner i iOS 15. Den tjener til at forbedre funktionaliteten af AdGuard til iOS. Med den kan AdGuard anvende avancerede filtreringsregler og dermed blokere flere annoncer.
 
-## What it does
+## Hvad den gør
 
-By default, Safari provides only basic tools for content blockers. These tools don't offer the level of performance found in content blockers on other operating systems (Windows, Mac, Android). For example, AdGuard apps on other platforms can use such powerful anti-ad weapons as [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets). Unfortunately, these utilities are absolutely irreplaceable when dealing with more complex cases, such as pre-roll ads on YouTube.
+Som standard leverer Safari kun basisværktøjer til indholdsblockere. Disse værktøjer muliggør ikke det ydelsesniveau, der kan findes i indholdsblockere til andre operativsystemer (Windows, macOS, Android). Eksempelvis kan AdGuard-apps på andre platforme bruge sådanne kraftfulde anti-reklamevåben såsom [CSS-regler](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Udvidede CSS-selektorer](/general/ad-filtering/create-own-filters#extended-css-selectors) og [scriptlets](/general/ad-filtering/create-own-filters#scriptlets). Desværre er disse værktøjer absolut uerstattelige ved håndtering af mere komplekse tilfælde, som f.eks. pre-roll reklamer på YouTube.
 
-AdGuard's Safari Web extension compliments AdGuard by giving it the ability to employ these types of filtering rules.
+AdGuards Safari Web-udvidelse komplimenterer AdGuard ved at give den mulighed for at anvende disse filtreringsregeltyper.
 
-Besides that, AdGuard's Safari Web extension can be used to quickly manage AdGuard for iOS right from the browser. Tap the *Extensions* button — it's the one with a jigsaw icon, depending on your device type it may be located to the left or to the right of the address bar. Find **AdGuard** in the list and tap it.
+Derudover kan AdGuards Safari Web-udvidelse bruges til hurtig håndtering af AdGuard til iOS direkte fra webbrowseren. Tryk på knappen *Udvidelser* — det er den med et puslespilsikonet, afhængigt af enhedstypen kan den være placeret til venstre eller til højre for adressebjælken. Find **AdGuard** på listen, og tryk på den.
 
-![Web extension menu *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/open-safari-assistant.jpg)
+![Web-udvidelsesmenu *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/open-safari-assistant.jpg)
 
-> On iPads, AdGuard's Safari web extension can be accessed directly by tapping the AdGuard icon in the browser's address bar.
+> På iPad kan AdGuards Safari-webudvidelse tilgås direkte ved at trykke på AdGuard-ikonet på webbrowserens adressebjælke.
 
-You will see the following list of options:
+Flg. liste over muligheder vises:
 
-- **Enabling/disabling protection on the website**. Turning the switch off will disable AdGuard completely for the current website and add a respective exclusion rule. Turning the switch back on will resume protection for the website and delete the rule. Any such change will require some time to take effect.
+- **Aktivering/deaktivering af beskyttelse på webstedet**. Slås kontakten fra, deaktiveres AdGuard fuldstændig for det aktuelle websted og en respektiv undtagelsesregel oprettes. Slås kontakten til igen, genoptages beskyttelsen for webstedet, og reglen slettes. Enhver sådan ændring vil tage lidt tid at effektuere.
 
-- **Blocking elements on the page manually**. Tap the *Block elements on this page* button to prompt a pop-up for element blocking. Select any element on the page you want to hide, adjust the selection zone, then preview changes and confirm the removal. A corresponding filtering rule will be added to AdGuard (that you can later disable or delete to revert the change).
+- **Manuel blokering af elementer på siden**. Tryk på knappen *Blokér elementer på denne side* for at prompte en pop op til elementblokering. Vælg et hvilket som helst element på siden, der skal skjules, justér markeringszonen, se et eksempel på ændringer og bekræft fjernelsen. En korresponderende filtreringsregel føjes til AdGuard (kan senere deaktiveres/slettes for at fortryde ændringen).
 
-- **Report an issue**. Swipe up to bring out the *Report an issue* button. Use it to report a missed ad or any other problem that you encountered on the current page.
+- **Anmeld et problem**. Stryg op for at se knappen *Anmeld et problem*. Brug den til at anmelde en overset annonce eller ethvert andet problem, der er oplevet på den aktuelle side.
 
-## How to enable AdGuard's Safari Web extension
-
-:::note
-
-AdGuard's Safari Web extension requires access to the web pages' content to operate, but doesn't use it for any purpose other than blocking ads.
-
-:::
-
-### In the iOS settings
-
-The Web extension is not a standalone tool and requires AdGuard for iOS. If you don't have AdGuard for iOS installed on your device, please [install it first](../installation) and complete the onboarding process to prepare it for work.
-
-Once done, open the *Settings* app and scroll down to *Apps*.
-
-![Select Apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/apps.jpg)
-
-Then, open *Safari* → *Extensions*.
-
-![Select Safari *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings1_en.png)
-
-![Select Extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings2_en.png)
-
-In the **ALLOW THESE EXTENSIONS** section find **AdGuard** among the available extensions.
-
-![Select AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/select-ag.jpg)
-
-Tap it, then toggle the *Allow Extension* switch on.
-
-Lower on the same screen, make sure *All Websites* is set *Allow* or *Ask*. If you choose *Allow*, you won't have to give permission every time you visit a new website. If you are unsure, choose *Ask* to grant permissions on a per-site basis.
-
-![AdGuard extension in Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ag-webext-in-settings.png)
-
-### In Safari
-
-To enable the AdGuard extension right from the Safari browser, tap the icon on the left side of the URL field:
-
-![In Safari tap icon on the left of URL field *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-1.jpg)
-
-Then, tap *Manage Extensions*.
-
-![Extensions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-2.jpg)
-
-In the opened window, turn on the AdGuard switches. The top one is the AdGuard Web extension; the other six are content blockers needed for filtering.
-
-![Extensions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-3.jpg)
-
-You should now be able to see AdGuard among the available extensions. To enable **Advanced protection**, open AdGuard extension, tap the yellow **i** icon, press *Enable*, and confirm the action.
+## Sådan aktiveres AdGuards Safari Web-udvidelse
 
 :::note
 
-If you use AdGuard for iOS without Premium subscription, you won't be able to enable **Advanced protection**.
+AdGuards Safari Web-udvidelse kræver adgang til websidernes indhold for at fungere, men bruger den ikke til andre formål end adblocking.
 
 :::
 
-Alternatively, you can enable **Advanced protection** directly from the app, in the **Protection** tab (second from the left in the bottom icon row).
+### I iOS-indstillingerne
 
-AdGuard's Safari Web extension only works on iOS versions 15 and later.
+Webudvidelsen er ikke et særskilt værktøj, men kræver AdGuard til iOS. Er AdGuard til iOS ikke installeret på enheden, så [installér den først](../installation) og fuldfør onboarding-processen for at gøre den funktionsklar.
+
+Når processen er færdig, åbn *Indstillinger* og rul ned til *Apps*.
+
+![Vælg Apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/apps.jpg)
+
+Åbn dernæst *Safari* → *Udvidelser*.
+
+![Vælg Safari *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings1_en.png)
+
+![Vælg Udvidelser *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings2_en.png)
+
+Find i **TILLAD DISSE UDVIDELSER**-afsnittet **AdGuard** blandt de tilgængelige udvidelser.
+
+![Vælg AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/select-ag.jpg)
+
+Tryk på den, og slå dernæst *Tillad udvidelse*-knappen til.
+
+Sørg længere nede på skærmen for, at *Alle websteder* er sat til *Tillad* eller *Spørg*. Vælges *Tillad*, skal der ikke give tilladelse, hver gang et nyt websted besøges. I tvivlstilfælde, vælg *Spørg* for at tildele tilladelser pr. websted.
+
+![AdGuard-udvidelse i Indstillinger *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ag-webext-in-settings.png)
+
+### I Safari
+
+For at aktivere AdGuard-udvidelsen direkte fra Safari-webbrowseren, tryk på ikonet til venstre for URL-feltet:
+
+![I Safari, tryk på ikonet til venstre for URL-feltet *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-1.jpg)
+
+Tryk dernæst på *Håndtér udvidelser*.
+
+![Udvidelser *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-2.jpg)
+
+Slå AdGuard-kontakterne til i det åbnede vindue. Den øverste er AdGuard Web-udvidelsen; de øvrige seks er indholdsblockere krævet for filtrering.
+
+![Udvidelser *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/web-extension-on-3.jpg)
+
+AdGuard bør nu kunne ses blandt de tilgængelige udvidelser. For at aktiver **Avanceret beskyttelse**, åbn AdGuard-udvidelsen, tryk på det gule **i** ikon, tryk på *Aktivér* og bekræft handlingen.
+
+:::note
+
+Anvendes AdGuard til iOS uden Premium-abonnement, vil **Avanceret beskyttelse** ikke kunne aktiveres.
+
+:::
+
+Alternativt kan **Avanceret beskyttelse** aktiveres direkte fra appen via fanen **Beskyttelse** (2. fra venstre i nederste ikonrække).
+
+AdGuards Safari Web-udvidelse virker kun på iOS fra version 15.

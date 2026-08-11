@@ -1,23 +1,23 @@
 ---
-title: How to purchase or upgrade
+title: Sådan købes/opgraderes
 sidebar_position: 2
 ---
 
-## How to purchase a license{#purchase}
+## Sådan købes en licens{#purchase}
 
-AdGuard licenses can be bought on [adguard.com](https://adguard.com/license.html). You can pay with Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay and UnionPay. We also accept the following cryptocurrencies: Bitcoin, Ethereum, Litecoin, and Tether.
+AdGuard-licenser kan købes via [adguard.com](https://adguard.com/license.html). Betaling kan ske med Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay og UnionPay. Vi accepterer også flg. kryptovalutaer: Bitcoin, Ethereum, Litecoin og Tether.
 
-AdGuard Pro for iOS can be bought on the App Store.
+AdGuard Pro til iOS kan købes i App Store.
 
-Ad Blocker licenses are also sold by various distributors. The availability of AdGuard products in app stores and by distributors depends on your country.
+Ad Blocker-licenser sælges også af forskellige distributører. Tilgængeligheden af AdGuard-produkter i app-butikker og hos distributører afhænger af landet.
 
-## How to upgrade a license{#upgrade}
+## Sådan opgraderes en licens{#upgrade}
 
-To make more use of your AdGuard products, you can upgrade your license for the following benefits.
+For bedre at udnytte AdGuard-produkterne, kan licensen opgraderes med flg. fordele.
 
-- To extend the number of devices, you can **upgrade your Personal license to Family**
-- You can also **upgrade your 1-year subscription to a lifetime license**
+- For at forøge antallet af enheder, kan en **Personal-licens opgraderes til en Family-licens**
+- Det er også muligt at **opgradere et 1-årigt abonnement til en Livstidslicens**
 
-You can upgrade your license in your [AdGuard account](https://adguardaccount.com). To do so, click *Upgrade to Lifetime* or *Increase device limit*.
+Licensen kan opgraderes i [AdGuard-kontoen](https://adguardaccount.com). Dette gøres ved at klikke på *Opgradér til Livstid* eller *Forøg enhedskvote*.
 
-![Upgrade](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)
+![Opgradering](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

@@ -1,112 +1,112 @@
 ---
-title: How to activate
+title: Sådan sker aktivering
 sidebar_position: 3
 ---
 
-To activate your license, go to the *License* section of your AdGuard product and find the *Log in* field or *Activate* button. Use the email and password of your AdGuard account to log in. If you don't have an account yet, you will be offered to create one.
+For at aktivere licensen, gå i AdGuard-produktet til sektionen *Licens* og find feltet *Log ind* eller knappen *Aktivér*. Brug e-mailen og adgangskoden fra AdGuard-kontoen til indlogning. Er ingen konto oprettet endnu, tilbydes oprettelsen af en.
 
 :::note
 
-To activate a license via the AdGuard account, a valid license with at least one free slot is required. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
+For licensaktivering via AdGuard-kontoen kræves en gyldig licens med mindst én ledig plads. Anvendes licensen allerede på et maksimalt antal enheder, kan den [opgraderes](../payment-options#upgrade) eller [overføres fra en enhed til en anden](../transfer).
 
 :::
 
-Alternatively, you can use a [license key](../what-is#license-key) to activate the license.
+Alternativt kan en [licensnøgle](../what-is#license-key) bruges til licensaktiveringen.
 
-**Below you can check step-by-step activation instructions for each platform.**
+**Nedenfor findes trin-for-trin aktiveringsvejledninger til hver platform.**
 
-### Activating AdGuard for Windows
+### Aktivering af AdGuard til Windows
 
-1. On the expired license screen, click *Activate*.
+1. Klik på *Aktivér* på skærmen med den udløbne licens.
 
-    ![Expired license screen *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
+    ![Udløbet licens-skærm *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
 
-    Alternatively, select *License* in the upper right corner of the main screen and click *Activate*.
+    Alternativt, vælg *Licens* øverste til højre på hovedskærmen og klik på *Aktivér*.
 
-    ![Main screen *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
+    ![Hovedskærm *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
 
-    ![License screen *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
+    ![Licensskærm *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
 
-1. Activate your license using your preferred method. If the license is bound to your email address, click *AdGuard Account* or select a social network associated with this email address. Alternatively, enter your license key.
+1. Aktivér licensen ved brug af den foretrukne metode. Er licensen tilknyttet en e-mailadresse, klik på *AdGuard-konto* eller vælg et socialt netværk tilknyttet denne e-mailadresse. Alternativt, angiv licensnøglen.
 
-    ![Activating a license *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
+    ![Licensaktivering *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
 
-### Activating AdGuard for Mac
+### Aktivering af AdGuard til Mac
 
-1. On the expired license screen, click *Activate*.
+1. Klik på *Aktivér* på skærmen med den udløbne licens.
 
-    ![Expired license screen *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
+    ![Udløbet licens-skærm *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
 
-    Alternatively, click the gear icon in the AdGuard menu, then click *License*.
+    Alternativt, klik først på tandhjulsikonet i AdGuard-menuen og dernæst på *Licens*.
 
-    ![Preferences *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
+    ![Præferencer *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
 
-1. In the opened window, click *Activate*.
+1. Vælg *Aktivér* i det nye vindue.
 
-    ![License screen *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
+    ![Licensskærm *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
 
-1. Activate your license using your preferred method. If the license is bound to your email address, click *AdGuard Account* or select a social network associated with this email address. Alternatively, enter your license key.
+1. Aktivér licensen ved brug af den foretrukne metode. Er licensen tilknyttet en e-mailadresse, klik på *AdGuard-konto* eller vælg et socialt netværk tilknyttet denne e-mailadresse. Alternativt, angiv licensnøglen.
 
-    ![Activating a license *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
+    ![Licensaktivering *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
 
-### Activating AdGuard for Android
+### Aktivering af AdGuard til Android
 
-1. Tap *Settings*, then select *License*.
+1. Tryk på *Indstillinger* og vælg *Licens*.
 
-    ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
+    ![Indstillingsskærm *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
 
-1. Tap *Activate license*.
+1. Tryk på *Aktivér licens*.
 
-    ![License screen *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
+    ![Licensskærm *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
 
-1. Activate your license using your preferred method. If the license is bound to your email address, tap *Continue with email* or select a social network associated with this email address. Alternatively, enter your license key.
+1. Aktivér licensen ved brug af den foretrukne metode. Er licensen tilknyttet en e-mailadresse, klik på *Fortsæt med e-mail* eller vælg et socialt netværk tilknyttet denne e-mailadresse. Alternativt, angiv licensnøglen.
 
-    ![Activating a license *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
+    ![Licensaktivering *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
-### Activating AdGuard for iOS
+### Aktivering af AdGuard til iOS
 
-1. Tap *Settings*, then select *License*.
+1. Tryk på *Indstillinger* og vælg *Licens*.
 
-    ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
+    ![Indstillingsskærm *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
 
-1. Tap **Log in** in the upper right corner of the screen
+1. Tryk på **Log ind** øverste til højre på skærmen
 
-    ![Purchase screen *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
+    ![Købsskærm *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
 
-1. Use your email address or social media account to activate your license.
+1. Brug e-mailadresse eller sociale mediekonto til aktivering af licensen.
 
-    ![Login screen *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
+    ![Loginskærm *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
 
-### Activating AdGuard Mini for Mac
+### Aktivering af AdGuard Mini til Mac
 
-1. Click AdGuard Mini icon in the menu bar.
+1. Klik på AdGuard Mini-ikonet på menubjælken.
 
-    ![AdGuard Mini in the menu bar](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
+    ![AdGuard Mini på menubjælken](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
 
-2. Click the settings icon.
+2. Klik på indstillingsikonet.
 
-    ![Settings icon *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
+    ![Indstillingsikon *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
 
-3. Go to *License*.
+3. Gå til *Licens*.
 
-    ![Go to License](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
+    ![Gå til Licens](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
 
-4. Open the menu (⋮) in the upper right corner and click *Already purchased?*.
+4. Åbn menuen (⋮) øverst til højre og klik på *Allerede købt?*.
 
-    ![Click already purchased](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
+    ![Klik på Allerede købt](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
 
-5. You will see the available activation options:
+5. Flg. liste over aktiveringsmuligheder vises:
 
-    ![Activation options](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
+    ![Aktiveringsmuligheder](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
 
-    - **Log in**
+    - **Log ind**
 
-      Log in to your AdGuard account that has a valid license in it.
+      Log ind på AdGuard-kontoen, der indeholder en gyldig licens.
 
-    - **Restore from App Store**
+    - **Gendannelse fra App Store**
 
-      Use a license that you have previously bought through the App Store.
+      Brug en licens, der tidligere er købt igennem App Store.
 
-    - **Enter activation code**
+    - **Angiv aktiveringskode**
 
-      Enter your activation code.
+      Angiv aktiveringskoden.

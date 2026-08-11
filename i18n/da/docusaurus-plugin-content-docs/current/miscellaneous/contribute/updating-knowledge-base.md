@@ -1,28 +1,28 @@
 ---
-title: Updating the Knowledge Base
+title: Opdatering af Vidensbase
 sidebar_position: 2
 ---
 
-The goal of AdGuard Ad Blocker Knowledge Base is to provide everyone with the most up-to-date information on all kinds of AdGuard-related topics. But things constantly change, and sometimes an article doesn't reflect the current state of things anymore.
+Målet med AdGuard Ad Blocker Vidensbase er at give alle den mest opdaterede information om alle former for AdGuard-relaterede emner. Tingene ændrer sig dog konstant, og nogle gange afspejler en artikel ikke længere tingenes faktuelle tilstand.
 
-This is why we placed all of our KB content on [GitHub](https://github.com/AdguardTeam/KnowledgeBase), and now literally anyone can contribute to it by suggesting edits and translations to existing articles, as well as totally new ones.
+Dette er grunden til, at alt vores KB-indhold er placeret på [GitHub](https://github.com/AdguardTeam/KnowledgeBase), og nu kan bogstaveligt talt enhver bidrage til det ved at foreslå redigeringer og oversættelser til eksisterende artikler, såvel som helt nye.
 
-## How to suggest a change or write a new article {#suggest-change}
+## Sådan foreslås en ændring eller skrives en ny artikel {#suggest-change}
 
-You can suggest changes to current articles and add new ones to our Knowledge Base using the functionality of GitHub mentioned above. If you are unfamiliar with principles of working with the platform, start by reading [GitHub documentation](https://docs.github.com/en).
+Der kan foreslås ændringer til eksisterende artikler og føje nye til vidensbasen via funktionaliteten i GitHub nævnt ovenfor. Er arbejdsprincipperne for platformen ikke kendte, så start med at læse [GitHub-dokumentationen](https://docs.github.com/en).
 
-Once you are ready to start, work in the [KnowledgeBase repository](https://github.com/AdguardTeam/KnowledgeBase). All texts in our Knowledge Base are written in `Markdown` markup language. Keep this in mind when editing or writing articles. Follow [this link](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) to learn more about Markdown syntax.
+Når alt er klar til start, så arbejd i [ KnowledgeBase-repo'et](https://github.com/AdguardTeam/KnowledgeBase). Alle tekster i vores Vidensbase er skrevet i `Markdown` markup-sproget. Husk dette, når artikler redigeres eller skrives. Følg [dette link](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for at læse mere om Markdown syntax.
 
-The Knowledge Base website is built using Docusaurus 2 — a modern static website generator. When suggesting changes or additions, take into account that all documents must comply with the principles of the platform. You can read about them in [Docusaurus Guides](https://docusaurus.io/docs/category/guides).
+Vidensbase-webstedet er bygget med Docusaurus 2 — en moderne statisk webstedsgenerator. Ved forslag til ændringer eller tilføjelser, tag højde for, at alle dokumenter skal overholde platformsprincipperne. Der kan læses om dem i [Docusaurus Guide](https://docusaurus.io/docs/category/guides).
 
-You can deploy this Knowledge Base locally on your computer to preview the changes you suggest. Detailed instructions on how to do this can be found [in the README file](https://github.com/AdguardTeam/KnowledgeBase#readme) on this Knowledge Base's GitHub page.
+Denne Vidensbase kan udrulles lokalt til egen computer for prævisning af foreslåede ændringer. En detaljeret vejledning til dette formål findes [i README-filen](https://github.com/AdguardTeam/KnowledgeBase#readme) på GitHub-siden for denne Vidensbase.
 
-## Translating articles {#translate-adguard}
+## Artikeloversættelse {#translate-adguard}
 
-Translation of the existing articles of the Knowledge Base is carried out on [the Crowdin platform](https://crowdin.com/profile/adguard). All the details about translations and working with Crowdin can be found [in the dedicated article](../translate/guidelines) of the AdGuard Ad Blocker Knowledge Base.
+Oversættelse af de eksisterende artikler i Vidensbase foretages via [Crowdin-platformen](https://crowdin.com/profile/adguard). Alle oplysninger om oversættelse og brug af Crowdin findes [i den dedikerede artikel](../translate/guidelines) i AdGuard Ad Blocker Vidensbase.
 
-When working on AdGuard Knowledge Base articles, you may meet strings containing plural forms that you should translate with extra attention. [In a separate article](../translate/plural-forms), we described in detail the difficulties that can arise when translating strings with plural forms and gave extensive instructions on how to work with them on the Crowdin platform.
+Under arbejdet med AdGuard Vidensbase-artikler kan der stødew på strenge indeholdende flertalsformer, som bør oversættes med ekstra opmærksomhed. [I en separat artikel](../translate/plural-forms)beskriver vi detaljeret de vanskeligheder, som kan opstå ved oversættelse af strenge med flertalsformer, samt giver omfattende vejledning til arbejdet med dem på Crowdin-platformen.
 
-## Working on open issues
+## Arbejde med åbne problematikker
 
-Sometimes there exist [open tasks](https://github.com/AdguardTeam/KnowledgeBase/issues) related to updating the Knowledge Base. You can help us speed up their completion [the same way](#suggest-change) you would suggest any other changes to the Knowledge Base. Choose any issue that you find appealing and start working on it. If you have any questions — you can ask them right in the comments to that issue.
+Nogle gange findes [åbne opgaver](https://github.com/AdguardTeam/KnowledgeBase/issues) relateret til opdatering af vidensbasen. Der kan hjælpes med at fremskynde færdiggørelsen [på samme måde](#suggest-change), som der kan foreslås andre ændringer til vidensbasen. Vælg en ønsket problematik, og begynd at arbejde på den. Ved evt. spørgsmål, kan disse stilles direkte i problematikkens kommentarfelt.

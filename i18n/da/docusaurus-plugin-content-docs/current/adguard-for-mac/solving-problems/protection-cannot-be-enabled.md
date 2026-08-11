@@ -1,5 +1,5 @@
 ---
-title: Protection cannot be enabled
+title: Beskyttelse kan ikke aktiveres
 sidebar_position: 2
 ---
 
@@ -9,14 +9,14 @@ Denne artikel dækker AdGuard til Mac, en multifunktionel adblocker, der beskytt
 
 :::
 
-If AdGuard Protection cannot be enabled for some reason, perform the following steps:
+Såfremt AdGuard-beskyttelsen af en eller anden grund ikke kan aktiveres, udfør da flg. trin:
 
-1. Click the AdGuard icon at the menu bar and go to *Advanced* → *Reset settings...* → *Quit AdGuard...*
+1. Klik på AdGuard-ikonet på menubjælken → *Avanceret* → *Nulstil indstillinger...* → *Afslut AdGuard...*
 
-2. In the Spotlight Search, type Terminal, enter `sudo rm -R /Library/Application\ Support/com.adguard.adguard` and execute.
+2. Skriv Terminal i Spotlight-søgning, indtast `sudo rm -R /Library/Application\ Support/com.adguard.adguard` og eksekvér.
 
-3. Restart your computer.
+3. Genstart computeren.
 
-4. Open the Terminal again, type `ls -al /Library/StagedExtensions/Library/Application\ Support/com.adguard.adguard/` and execute. You should receive the following: `No such file or directory`.
+4. Åbn terminalen igen, skriv `ls -al /Library/StagedExtensions/Library/Application\ Support/com.adguard.adguard/` og eksekvér. Flg. besked bør nu vises: `Ingen sådan fil eller mappe`.
 
-5. Start AdGuard and enter your login information when prompted.
+5. Start AdGuard, og angiv loginoplysningerne, når de udbedes.

@@ -1,50 +1,50 @@
 ---
-title: Two-factor authentication
+title: Tofaktorgodkendelse
 sidebar_position: 3
 ---
 
-Two-factor authentication (or 2FA) is an authentication method that requires an additional piece of evidence from the user to log in, on top of the usual username and password pair. This is done for security purposes. Websites usually offer such 2FA methods as a code sent by SMS or a special authenticator app.
+Tofaktorgodkendelse (eller 2FA) er en godkendelsesmetode, der udover det sædvanlige brugernavn og adgangskodepar kræver et yderligere bevis fra brugeren for indlogning. Dette gøres af sikkerhedsårsager. Websites tilbyder normalt sådanne 2FA-metoder som en kode sendt via SMS eller en særlig godkendelses-app.
 
-We see adding a 2FA option as a benefit. We also understand that enforcing it may irritate some users. That's why we made it optional for your personal account on adguard.com — by default, 2FA is disabled when you register a new account. You can enable it manually in the settings. As for the currently available authentication methods, we use the tried and tested one: an authenticator app for Android or iOS. You can use almost any such app, and there are plenty of them.
+Vi ser det som en fordel at tilføje en 2FA-mulighed. Vi forstår også, at dens håndhævelse kan irritere nogle brugere. Det er derfor, vi har gjort det valgfrit for den personlige konto på adguard.com — som standard er 2FA deaktiveret, når en ny konto registreres. Det kan aktiveres manuelt i indstillingerne. Hvad angår de aktuelt tilgængelige godkendelsesmetoder, bruger vi den afprøvede og aftestede: En godkendelses-app til Android eller iOS. Næsten enhver af sådanne apps kan bruges, og der er masser af dem.
 
-We recommend setting up two-factor authentication for your AdGuard account. It won't take you long, but it will help protect your license keys, subscriptions, and, most importantly, any personal information associated with the account.
+Vi anbefaler, at der opsættes tofaktorgodkendelse på AdGuard-kontoen. Det er hurtigt gjort, og det vil hjælpe med at beskytte licensnøgler, abonnementer og, vigtigst af alt, alle personlige oplysninger knyttet til kontoen.
 
-## How to set it up
+## Sådan opsættes det
 
-1. Log into your [AdGuard account](https://auth.adguardaccount.com/login.html) and go to the *Settings* tab:
+1. Log ind på [AdGuard-kontoen](https://auth.adguard.com/login.html) og gå til fanen *Indstillinger*:
 
- ![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
+ ![AdGuard-kontoindstillinger *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_1.png)
 
-1. Scroll down to *Two-factor authentication* and enable it:
+1. Rul ned til *Tofaktorgodkendelse*, og aktivér den:
 
- ![Two-factor authentication toggle *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
+ ![Tofaktorgodkendelse til-/fra-knap *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_2.png)
 
-1. A code will be sent to the email address associated with your AdGuard account. To enable 2FA, enter the code and click *Enable*.
+1. En kode sendes til e-mailadressen tilknyttet AdGuard-kontoen. For at aktivere 2FA, angiv koden og klik på *Aktivér*.
 
- ![The verification code *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
+ ![Bekræftelseskoden *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_3.png?)
 
-After you enable two-factor authentication, you have two options to choose from:
+Når tofaktorgodkendelse er aktiveret, er der to valgmuligheder:
 
-- *One-time email code*: when you log in, we will ask you to enter the code we sent to your email
+- *Engangsmailkode*: Under indlogning anmodes brugeren om at angive den kode, der er blevet tilsendt pr. e-mail
 
-- *Code from authenticator app*: when you log in, we will ask for a code from your authenticator app
+- *Kode fra godkendelses-app*: Under indlogning anmodes brugeren om en kode fra sin godkendelses-app
 
-![2FA options *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
+![2FA-muligheder *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_4.png)
 
 :::note
 
-If you use the authenticator app, make sure to save the **setup key** somewhere. It will be necessary to recover your account in case your mobile phone gets lost or stolen.
+Bruges godkendelses-appen, sørg for at gemme **opsætningsnøglen**. Den vil være nødvendig for at kunne gendanne kontoen, hvis mobilen mistet eller stjæles.
 
-![The setup key in the authenticator app *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
+![Opsætningsnøglen i godkendelses-appen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/setup_key.png)
 
 :::
 
-If everything is done right, you will see this when you log into your account the next time:
+Er alt er udført korrekt, vil dette vises ved næste indlogning på kontoen:
 
-![The result *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
+![Resultatet *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_5.png)
 
 :::note
 
-If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
+Vises en godkendelsesfejl, tjek klokkeslættet på telefonen. Justér det om nødvendigt, da et usynkroniseret ur kan forårsage fejlen.
 
 :::

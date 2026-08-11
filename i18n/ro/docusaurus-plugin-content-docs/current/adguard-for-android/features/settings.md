@@ -37,25 +37,27 @@ Secțiunea _Setări de nivel scăzut_ este pentru utilizatorii avansați. [Read 
 
 ## Filtrarea
 
-Această secțiune îți permite să gestionezi setările de filtrare HTTPS, filtrele și script-urile de utilizator, și să configurezi un server proxy.
+This section lets you manage filters, extensions, network settings, add websites to the allowlist, and create user rules.
 
-![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.jpg)
+[Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+
+![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.png)
 
 ### Filtre
 
-AdGuard blochează reclame, trackere și neplăceri prin aplicarea regulilor din filtrele sale. Cele mai multe caracteristici din secțiunea _Protecție_ sunt alimentate de [filtrele AdGuard](/general/ad-filtering/adguard-filters/#adguard-filters). Dacă activezi _Protecția de bază_, aceasta va activa automat filtrul de bază AdGuard și filtrul de reclame mobile AdGuard. Și invers: dacă dezactivezi ambele filtre, _Protecția de bază_ va fi de asemenea dezactivată.
+AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the _Protection_ section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable _Basic protection_, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, _Basic protection_ will also be disabled.
 
 ![Filters \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
-Filtrele activate implicit sunt suficiente pentru funcționarea normală a AdGuard. Cu toate acestea, dacă dorești să personalizezi blocarea reclamelor, poți folosi alte filtre AdGuard sau filtre terță parte. Pentru a face acest lucru, selectează o categorie și activează filtrele pe care le dorești. Pentru a adăuga un filtru personalizat, atingeti _Filtre personalizate_ → _Adăugați filtru personalizat_ și introduceți URL-ul sau calea către fișier.
+Filters enabled by default are enough for normal AdGuard operation. However, if you want to customize ad blocking, you can use other AdGuard or third-party filters. To do this, select a category and enable the filters you'd like. To add a custom filter, tap _Custom filters_ → _Add custom filter_ and enter its URL or file path.
 
 :::note
 
-Dacă activezi prea multe filtre, unele site-uri pot funcționa incorect.
+If you activate too many filters, some websites may work incorrectly.
 
 :::
 
-[Citește mai multe despre filtre](https://adguard.com/en/blog/what-are-filters.html)
+[Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
 
 ### Extensii
 

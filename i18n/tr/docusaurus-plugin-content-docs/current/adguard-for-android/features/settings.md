@@ -37,9 +37,11 @@ The _Low-level settings_ section is for expert users. [Read more about low-level
 
 ## Filtreleme
 
-This section allows you to manage HTTPS filtering settings, filters, and userscripts, and set up a proxy server.
+This section lets you manage filters, extensions, network settings, add websites to the allowlist, and create user rules.
 
-![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.jpg)
+[Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+
+![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.png)
 
 ### Filtreler
 
@@ -59,17 +61,17 @@ If you activate too many filters, some websites may work incorrectly.
 
 ### Uzantılar
 
-Uzantılar, kullanıcı betikleri ve kullanıcı stilleri eklemenize izin verir.
+Extensions allow you to add userscripts and userstyles.
 
 ![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.jpg)
 
 Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
 
-Kullanıcı stilleri, web sayfalarının içeriğini değiştirmeden tarayıcıda nasıl göründüğünü değiştirmenize olanak tanıyan kullanıcı betikleri gibidir. Sitenin mevcut stillerine CSS stilleri ekleyerek çalışırlar. Örneğin, koyu bir tema sunmayan bir sitede koyu bir tema istiyorsanız, bunu yapmak için bir kullanıcı stili kullanabilirsiniz.
+Userstyles are like userscripts that allow you to change how web pages look in the browser without modifying their content. They work by adding CSS styles to the website’s existing styles. For example, if you want a dark theme on a website that doesn’t offer one, you can use a userstyle to do it.
 
-Kullanıcı stili eklemek için _Ayarlar_ → _Filtreleme_ → _Uzantılar_→ _Uzantı ekle_ → _Dosyadan veya URL'den içe aktar_ öğesine gidin. [İnternette](https://userstyles.world/) hazır kullanıcı stilleri bulabilirsiniz.
+To add a userstyle, go to _Settings_ → _Filtering_ → _Extensions_→ _Add extension_ → _Import from file or URL_. You can find ready-made user styles [online](https://userstyles.world/).
 
-Kendi stilinizi oluşturmak için _Uzantı ekle_ → _Kullanıcı stili oluştur_ öğesine dokunun.
+To create your own style, tap _Add extension_ → _Create userstyle_.
 
 #### AdGuard Extra
 
@@ -146,7 +148,7 @@ In this section, you can find information about your license and manage it:
 
 - Buy an AdGuard license to activate [the full version's features](/adguard-for-android/features/free-vs-full)
 - Log in to your AdGuard account or enter the activation code to activate your license
-- 14 günlük deneme sürenizi etkinleştirmek için kaydolun. Etkinleştirme kodu farklı cihazlarda ve platformlarda kullanılabilir
+- Sign up to activate your 14-day trial period. The activation code can be used on different devices and platforms
 - Refresh the license status from the three-dots menu (⋮)
 - Open the AdGuard account to manage your license there
 - Reset your license — for example, if you've reached device limit for this license and want to apply another one

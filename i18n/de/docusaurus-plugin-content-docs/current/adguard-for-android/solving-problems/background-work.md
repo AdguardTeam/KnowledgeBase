@@ -255,15 +255,15 @@ For early Samsung devices, there is no huge need for setting up the background o
 
 - Tap the **Recent tasks** button, tap the **Additional settings** icon. Es sollte wie folgt aussehen:
 
- ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_1.png)
+ ![Samsung Einstellungen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_1.png)
 
 - Tap **Lock Apps**:
 
- ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_2.png)
+ ![Samsung Einstellungen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_2.png)
 
-- Tap the lock icon:
+- Tippen Sie auf das Schloss-Symbol:
 
- ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_3.png)
+ ![Samsung Einstellungen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_3.png)
 
 ## Huawei
 
@@ -305,7 +305,7 @@ It is called **PowerGenie** and it kills all apps that are not on its whitelist.
 
 Unfortunately, this is a system app that can only be fully uninstalled using ADB (Android Debug Bridge).
 
-:::note Source
+:::note Quelle
 
 [XDA forum](https://forum.xda-developers.com/mate-20-pro/themes/remove-powergenie-to-allow-background-t3890409).
 
@@ -358,9 +358,9 @@ Old Huawei devices are the easiest to set up, it is enough to perform two simple
 
 - Tap the **Recent tasks** button:
 
-    ![Huawei recent apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
+    ![Zuletzt verwendete Huawei-Apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
 
-- Tap the lock icon:
+- Tippen Sie auf das Schloss-Symbol:
 
     ![Huawei lock *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
 
@@ -373,7 +373,7 @@ Besides, to set up the background work of AdGuard more effectively, you should o
 
 ## Meizu
 
-Meizu has almost the same approach to the background process limitations as Huawei and Xiaomi. So you can avoid disabling the background work of AdGuard and any other app by adjusting the following settings:
+Meizu hat fast die gleiche Herangehensweise an die Einschränkungen der Hintergrundprozesse wie Huawei und Xiaomi. So you can avoid disabling the background work of AdGuard and any other app by adjusting the following settings:
 
 - Go to **Advanced Settings** → open **Battery Manager** → set **Power plan** to **Performance**;
 - Then choose **Protected apps** in the **Battery Manager** and check if AdGuard is Protected;

@@ -5,84 +5,84 @@ sidebar_position: 1
 
 :::info
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+이 문서는 Windows용 AdGuard v8.0을 소개합니다. Windows용 AdGuard는 기기를 시스템 수준에서 보호하는 광고 차단 프로그램입니다. 이 버전은 아직 개발 중인 베타입니다. [Windows용 AdGuard 베타](https://agrd.io/windows_beta)를 내려받아 사용해 보세요.
 
 :::
 
-In the _App management_ section, you can manage routing and filtering settings for all apps installed on your device.
+**앱 관리** 섹션에서는 기기에 설치된 모든 앱의 라우팅 및 필터링 설정을 관리할 수 있습니다.
 
-Once AdGuard detects that an app has gone online, it is automatically added to _App management_, and its traffic is routed through AdGuard.
+AdGuard가 앱의 네트워크 연결을 감지하면 해당 앱은 자동으로 **앱 관리**에 추가되며, 그 트래픽은 AdGuard를 거쳐 처리됩니다.
 
-By default, AdGuard filters all traffic, but you can choose what to exclude.
+AdGuard는 기본적으로 모든 트래픽을 필터링하지만, 제외할 항목을 선택할 수 있습니다.
 
-AdGuard also filters HTTPS traffic, as most websites today use HTTPS. This is especially important for blocking ads on sites like youtube.com, facebook.com, and x.com, where it is impossible to remove ads without HTTPS filtering.
+오늘날 대부분의 웹사이트가 HTTPS를 사용하고 있기 때문에, AdGuard는 HTTPS 트래픽도 필터링합니다. 특히 youtube.com, facebook.com, x.com 같은 사이트에서 광고를 차단하려면 HTTPS 필터링이 꼭 필요합니다.
 
-When routing and filtering are enabled for an app, the icons below each app will appear green.
+앱에 라우팅 및 필터링 기능이 활성화되면 각 앱 아래에 있는 아이콘이 녹색으로 표시됩니다.
 
-You can leave the settings as they are, disable both filtering and routing, or fine-tune them manually for each app. You can also access the app’s stats.
+설정을 그대로 둘 수도 있고, 필터링과 라우팅을 모두 끌 수도 있으며, 앱별로 세부 설정을 직접 조정할 수도 있습니다. 또한 해당 앱의 통계도 확인할 수 있습니다. 앱 통계 정보도 확인할 수 있습니다.
 
-![App stats](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
+![앱 통계](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
-## How app filtering and routing work in AdGuard for Windows v8.0
+## Windows용 AdGuard v8.0에서 앱 필터링 및 라우팅이 작동하는 방식
 
-AdGuard for Windows v8.0 introduces updated logic for handling apps. It helps prevent compatibility issues while still giving you control over which apps are filtered. Let’s break down how it works.
+Windows용 AdGuard v8.0에서는 앱 처리 방식이 개선되었습니다. 필터링할 앱을 직접 제어하면서도 호환성 문제를 방지하는 데 도움이 됩니다. 작동 방식을 자세히 살펴보겠습니다.
 
-There are “problem-free” and “problematic” apps. Some work correctly when filtered, while others may not function when their traffic is processed by AdGuard. This can be caused by features like HTTPS interception or proxying.
+앱은 크게 문제없이 작동하는 앱과 문제가 생길 수 있는 앱으로 나뉩니다. 어떤 앱은 필터링을 적용해도 정상적으로 작동하지만, 어떤 앱은 AdGuard가 그 트래픽을 처리하면 제대로 동작하지 않을 수 있습니다. 이는 HTTPS 가로채기나 프록시 처리 같은 기능 때문에 발생할 수 있습니다.
 
-To avoid breaking apps out of the box, AdGuard does not filter everything indiscriminately. Instead, it relies on a compatibility list — a set of apps that are known to work correctly with filtering enabled.
+앱이 기본 설정만으로 깨지는 일을 막기 위해, AdGuard는 모든 것을 무조건 필터링하지 않습니다. 대신 필터링을 켠 상태에서도 정상 작동이 확인된 앱 목록, 즉 호환성 목록을 기준으로 처리합니다.
 
 :::note
 
-“Not filtering everything” does not mean “filter nothing.” Trusted apps (like browsers) are always filtered.
+“모든 것을 필터링하지 않는다”는 뜻이 “아무것도 필터링하지 않는다”는 의미는 아닙니다. 브라우저처럼 신뢰할 수 있는 앱은 항상 필터링됩니다.
 
 :::
 
-Each app has three independent processing layers: traffic routing through AdGuard, filtering (blocking ads and trackers), and HTTPS filtering (interception of encrypted traffic).
+각 앱에는 AdGuard를 통한 트래픽 라우팅, 필터링(광고 및 추적기 차단), HTTPS 필터링(암호화된 트래픽 차단)이라는 세 가지 독립적인 처리 계층이 있습니다.
 
-These are determined by three sources:
+이는 다음 세 가지 출처에 의해 결정됩니다:
 
-- _Compatibility list_
+- **호환성 목록**
 
-  Apps that have been tested by our team and are confirmed to work correctly with filtering.
-  This list is updated through internal testing and user reports in the [dedicated repository for listing AdGuard compatibility issues](https://github.com/AdguardTeam/CompatibilityIssues).
+  저희 팀에서 테스트를 거쳐 필터링 기능이 정상적으로 작동하는 것으로 확인된 앱입니다.
+  이 목록은 내부 테스트와 사용자 제보를 바탕으로 [AdGuard 호환성 문제 전용 저장소](https://github.com/AdguardTeam/CompatibilityIssues)를 통해 계속 업데이트됩니다.
 
-- _Exclusion lists_
+- **예외 목록**
 
-  Separate lists for routing, filtering, and HTTPS filtering. These include apps known to break when filtering is applied.
+  라우팅, 필터링 및 HTTPS 필터링에 대한 별도의 목록입니다. 여기에는 필터링이 적용될 경우 문제가 발생하는 것으로 알려진 앱들이 포함되어 있습니다.
 
-- _Filter unknown apps_
+- **알 수 없는 앱 필터링**
 
-  This setting defines how all other apps (not present in any list) are handled.
+  호환성 목록이나 예외 목록에 없는 다른 앱을 어떻게 처리할지 정하는 설정입니다.
 
 :::info
 
-The compatibility lists are continuously updated — and you can help improve them. If you notice that an app does not work correctly with filtering enabled, **report it on [GitHub](https://github.com/AdguardTeam/CompatibilityIssues)** or contact support via the app. Your feedback helps improve AdGuard for everyone.
+호환성 목록은 지속적으로 업데이트되며, 여러분도 개선에 도움을 줄 수 있습니다. 필터링을 켠 상태에서 앱이 제대로 작동하지 않는다면 [GitHub](https://github.com/AdguardTeam/CompatibilityIssues)에 신고하거나 앱을 통해 지원팀에 알려 주세요. 여러분의 피드백은 AdGuard를 더 나은 제품으로 만드는 데 도움이 됩니다.
 
 :::
 
-## Filter unknown apps
+## 알 수 없는 앱 필터링
 
-![Filter unknown apps \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/app-management.png)
+![알 수 없는 앱 필터링 \*mobile]](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/app-management.png)
 
-The _Filter unknown apps_ setting is enabled by default and determines how AdGuard handles new apps that are not yet present in the compatibility or exclusion lists
+**알 수 없는 앱 필터링** 설정은 기본적으로 켜져 있으며, 아직 호환성 목록이나 예외 목록에 없는 새 앱을 AdGuard가 어떻게 처리할지 정합니다.
 
-When enabled, app traffic is routed through AdGuard, regular filtering is applied, and **HTTPS filtering is NOT enabled automatically**. This is intentional: HTTPS interception is the most sensitive part of traffic processing and may affect app behavior.
+이 기능이 활성화되면 앱 트래픽은 AdGuard를 통해 라우팅되며, 일반적인 필터링이 적용되지만 **HTTPS 필터링은 자동으로 활성화되지 않습니다**. 이는 의도된 설정입니다. HTTPS 가로채기는 트래픽 처리 과정에서 가장 민감한 부분이며, 앱의 동작에 영향을 미칠 수 있습니다.
 
-When disabled, new apps are not processed by AdGuard — you will need to manually configure routing for them.
+이 기능을 비활성화하면 새 앱은 AdGuard에서 처리되지 않으므로 수동으로 라우팅을 구성해야 합니다.
 
-Here is a quick overview of how different app categories behave depending on this setting:
+이 설정에 따라 다양한 앱 카테고리의 동작 방식은 다음과 같습니다.
 
-| App category                                                                                    | Toggle on (default)                      | Toggle off                                           |
-| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------- |
-| Compatible, or problem-free (e.g., browsers) | · Routing ✅ <br /> · Filtering ✅ <br /> · HTTPS filtering ✅ | Same behavior — does not depend on toggle            |
-| Problematic (from exclusion lists, filtering may cause issues)               | · Routing ❌ <br /> · Filtering ❌ <br /> · HTTPS filtering ❌ | Same behavior — does not depend on toggle            |
-| Others / (newly detected, unknown, not in lists)                             | · Routing ✅ <br /> · Filtering ✅ <br /> · HTTPS filtering ❌ | Not routed through AdGuard, must be enabled manually |
+| 앱 카테고리                                                    | 켬(기본값)                   | 끔                              |
+| --------------------------------------------------------- | ------------------------------------------- | ------------------------------ |
+| 호환성에 문제가 없는 앱(예: 브라우저) | · 라우팅 ✅ <br /> · 필터링 ✅ <br /> · HTTPS 필터링 ✅ | 동일하게 동작하며, 설정값과 무관             |
+| 문제가 있는 앱(예외 목록에 포함, 필터링 시 문제 발생 가능)    | · 라우팅 ❌ <br /> · 필터링 ❌ <br /> · HTTPS 필터링 ❌ | 동일하게 동작하며, 설정값과 무관             |
+| 기타/새로 감지된 앱/알 수 없는 앱/ 목록에 없는 앱                            | · 라우팅 ✅ <br /> · 필터링 ✅ <br /> · HTTPS 필터링 ❌ | AdGuard를 거치지 않으며, 수동으로 활성화해야 함 |
 
-:::info What happens on reset
+:::info 초기화 시 어떤 일이 발생하나요?
 
-If you click **Reset to default**, two things happen:
+**기본값으로 초기화**를 클릭하면 두 가지 일이 발생합니다.
 
-1. All app-specific permissions are cleared (set to “not configured”).
-2. Predefined rules are applied to known safe apps (such as browsers), including HTTPS filtering.
+1. 모든 앱별 권한이 초기화되어 '설정되지 않음' 상태로 돌아갑니다.
+2. 브라우저처럼 이미 안전하다고 알려진 앱에는 사전 정의된 규칙이 적용되며, HTTPS 필터링도 포함됩니다.
 
 :::
