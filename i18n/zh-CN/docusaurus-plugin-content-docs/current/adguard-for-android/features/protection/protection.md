@@ -13,7 +13,7 @@ sidebar_position: 1
 
 - [广告拦截](/adguard-for-android/features/protection/ad-blocking.md)
 
-  Settings to block ads in browsers and apps
+  在浏览器和应用中拦截广告的设置。
 
 - [跟踪保护](/adguard-for-android/features/protection/tracking-protection.md)
 
