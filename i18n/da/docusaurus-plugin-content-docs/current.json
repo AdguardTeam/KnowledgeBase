@@ -202,5 +202,9 @@
   "sidebar.tutorialSidebar.category.Archive": {
     "message": "Arkiv",
     "description": "The label for category 'Archive' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-for-linux": {
+    "message": "Problemløsning",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
   }
 }
