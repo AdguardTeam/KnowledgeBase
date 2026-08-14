@@ -49,7 +49,7 @@ Turning this on allows AdGuard to filter traffic immediately, even if the app ha
 
 Enable this to allow AdGuard to filter loopback (localhost) traffic, which some apps use to communicate within the system. If AdGuard VPN is installed, this setting is always on because the VPN requires it to work properly.
 
-## Capture HAR
+## Optag HAR
 
 This is for debugging only. When enabled, AdGuard will create a HAR file (HTTP Archive 1.2 format) with detailed info about all filtered requests. You can open it in apps like Fiddler.
 

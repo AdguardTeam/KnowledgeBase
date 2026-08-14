@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 - [Schutz](/adguard-for-android/features/protection/protection.md)
 
-  Available settings in the _Protection_ tab: _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Firewall_, and _Browsing security_
+  Verfügbare Einstellungen im Tab _Schutz_: _Sperren von Werbung_, _Tracking-Schutz_, _Belästigungsblockierung_, _DNS-Schutz_, _Firewall_ und _Internetsicherheit_
 
 - [App-Verwaltung](/adguard-for-android/features/app-management.md)
 

@@ -55,7 +55,7 @@ After you complete these steps, AdGuard Mini for Mac will start functioning in S
 
 To uninstall AdGuard Mini for Mac, do the following:
 
-1. Quit the app.
+1. Afslut appen.
 
 2. Click _Safari_ in the left upper corner menu.
 

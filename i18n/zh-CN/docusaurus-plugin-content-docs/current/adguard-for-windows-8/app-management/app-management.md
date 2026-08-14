@@ -9,80 +9,80 @@ sidebar_position: 1
 
 :::
 
-In the _App management_ section, you can manage routing and filtering settings for all apps installed on your device.
+在「应用管理」板块，您可以管理设备上所有已安装应用的路由和过滤设置。
 
-Once AdGuard detects that an app has gone online, it is automatically added to _App management_, and its traffic is routed through AdGuard.
+当 AdGuard 检测到某个应用联网时，它会自动添加到「应用管理」中，其流量将通过 AdGuard 路由。
 
-By default, AdGuard filters all traffic, but you can choose what to exclude.
+默认情况下，AdGuard 会过滤所有流量，但您可以选择排除项。
 
-AdGuard also filters HTTPS traffic, as most websites today use HTTPS. This is especially important for blocking ads on sites like youtube.com, facebook.com, and x.com, where it is impossible to remove ads without HTTPS filtering.
+由于如今大多数网站都使用 HTTPS，AdGuard 也会对 HTTPS 流量进行过滤。 这对于拦截 youtube.com、facebook.com 和 x.com 等网站上的广告尤其重要，因为不经过 HTTPS 过滤就无法移除这些广告。
 
-When routing and filtering are enabled for an app, the icons below each app will appear green.
+当某个应用的路由和过滤都开启时，每个应用下方的图标会显示为绿色。
 
-You can leave the settings as they are, disable both filtering and routing, or fine-tune them manually for each app. You can also access the app’s stats.
+您可以保留默认设置，也可以同时关闭过滤和路由，或者为每个应用单独手动微调。 用户还可以查看应用的统计数据。
 
-![App stats](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
+![应用统计](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
-## How app filtering and routing work in AdGuard for Windows v8.0
+## AdGuard Windows 版 v8.0 中应用过滤和路由的工作原理
 
-AdGuard for Windows v8.0 introduces updated logic for handling apps. It helps prevent compatibility issues while still giving you control over which apps are filtered. Let’s break down how it works.
+AdGuard Windows 版 v8.0 引入了更新后的应用处理逻辑。 这有助于防止兼容性问题，同时让您保持对哪些应用被过滤的控制权。 下面来看看具体是如何工作的。
 
-There are “problem-free” and “problematic” apps. Some work correctly when filtered, while others may not function when their traffic is processed by AdGuard. This can be caused by features like HTTPS interception or proxying.
+应用分为「无问题」和「有问题」两类。 部分应用在过滤后能正常工作，而另一些应用在流量经过 AdGuard 处理时可能无法正常运行。 这可能是由 HTTPS 拦截或代理等功能引起的。
 
-To avoid breaking apps out of the box, AdGuard does not filter everything indiscriminately. Instead, it relies on a compatibility list — a set of apps that are known to work correctly with filtering enabled.
+为避免应用一启动就出问题，AdGuard 不会无差别地过滤所有内容。 相反，它依赖于一份兼容性列表，一系列已知在启用过滤后能正常工作的应用。
 
 :::note
 
-“Not filtering everything” does not mean “filter nothing.” Trusted apps (like browsers) are always filtered.
+「不过滤所有内容」并不意味着「什么也不过滤」。 受信任的应用（如浏览器）始终会被过滤。
 
 :::
 
-Each app has three independent processing layers: traffic routing through AdGuard, filtering (blocking ads and trackers), and HTTPS filtering (interception of encrypted traffic).
+每个应用都有三个独立的处理层：通过 AdGuard 的流量路由、过滤（拦截广告和跟踪器）以及 HTTPS 过滤（拦截加密流量）。
 
-These are determined by three sources:
+这三层由以下三个来源决定：
 
-- _Compatibility list_
+- **兼容性列表**：
 
-  Apps that have been tested by our team and are confirmed to work correctly with filtering.
-  This list is updated through internal testing and user reports in the [dedicated repository for listing AdGuard compatibility issues](https://github.com/AdguardTeam/CompatibilityIssues).
+  经我们团队测试并确认在过滤后能正常工作的应用。
+  此列表通过内部测试和用户[在专门用于报告 AdGuard 兼容性问题的仓库中提交](https://github.com/AdguardTeam/CompatibilityIssues)的反馈进行更新。
 
-- _Exclusion lists_
+- **排除列表**：
 
-  Separate lists for routing, filtering, and HTTPS filtering. These include apps known to break when filtering is applied.
+  针对路由、过滤和 HTTPS 过滤的单独列表。 这些列表中包含已知在应用过滤时会出现问题的应用。
 
-- _Filter unknown apps_
+- **过滤未知应用**：
 
-  This setting defines how all other apps (not present in any list) are handled.
+  此设置定义如何处理所有其他应用（未出现在任何列表中的应用）。
 
 :::info
 
-The compatibility lists are continuously updated — and you can help improve them. If you notice that an app does not work correctly with filtering enabled, **report it on [GitHub](https://github.com/AdguardTeam/CompatibilityIssues)** or contact support via the app. Your feedback helps improve AdGuard for everyone.
+兼容性列表持续更新，您也可以帮助改进它们。 如果您发现某个应用在启用过滤后无法正常工作，\*\*请在 [GitHub 上报告](https://github.com/AdguardTeam/CompatibilityIssues)\*\*或通过应用联系支持团队。 用户的反馈有助于为所有用户改进 AdGuard。
 
 :::
 
-## Filter unknown apps
+## 过滤未知应用
 
-![Filter unknown apps \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/app-management.png)
+![过滤未知应用 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/app-management.png)
 
-The _Filter unknown apps_ setting is enabled by default and determines how AdGuard handles new apps that are not yet present in the compatibility or exclusion lists
+「过滤未知应用」设置默认启用，它决定 AdGuard 如何处理尚未出现在兼容性列表或排除列表中的新应用。
 
-When enabled, app traffic is routed through AdGuard, regular filtering is applied, and **HTTPS filtering is NOT enabled automatically**. This is intentional: HTTPS interception is the most sensitive part of traffic processing and may affect app behavior.
+启用后，应用流量将通过 AdGuard 路由，应用常规过滤，但 **HTTPS 过滤不会自动启用**。 这是有意为之：HTTPS 拦截是流量处理中最敏感的部分，可能影响应用行为。
 
-When disabled, new apps are not processed by AdGuard — you will need to manually configure routing for them.
+禁用后，新应用不会经过 AdGuard 处理，用户需要手动为其配置路由。
 
-Here is a quick overview of how different app categories behave depending on this setting:
+以下是不同应用类别在此设置下的行为概览：
 
-| App category                                                                                    | Toggle on (default)                      | Toggle off                                           |
-| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------- |
-| Compatible, or problem-free (e.g., browsers) | · Routing ✅ <br /> · Filtering ✅ <br /> · HTTPS filtering ✅ | Same behavior — does not depend on toggle            |
-| Problematic (from exclusion lists, filtering may cause issues)               | · Routing ❌ <br /> · Filtering ❌ <br /> · HTTPS filtering ❌ | Same behavior — does not depend on toggle            |
-| Others / (newly detected, unknown, not in lists)                             | · Routing ✅ <br /> · Filtering ✅ <br /> · HTTPS filtering ❌ | Not routed through AdGuard, must be enabled manually |
+| 应用类别                   | 开关打开（默认）                                 | 开关关闭                 |
+| ---------------------- | ---------------------------------------- | -------------------- |
+| 兼容或无问题（例如浏览器）          | · 路由 ✅ <br /> · 过滤 ✅ <br /> · HTTPS 过滤 ✅ | 行为相同，不受开关影响          |
+| 有问题（来自排除列表，过滤可能导致问题）   | · 路由 ❌ <br /> · 过滤 ❌ <br /> · HTTPS 过滤 ❌ | 行为相同，不受开关影响          |
+| 其他 /（新检测到的、未知的、不在列表中的） | · 路由 ✅ <br /> · 过滤 ✅ <br /> · HTTPS 过滤 ❌ | 不通过 AdGuard 路由，需手动启用 |
 
-:::info What happens on reset
+:::info 重置时会发生什么
 
-If you click **Reset to default**, two things happen:
+如果点击「**重置为默认值**」，会发生两件事：
 
-1. All app-specific permissions are cleared (set to “not configured”).
-2. Predefined rules are applied to known safe apps (such as browsers), including HTTPS filtering.
+1. 所有应用特定权限将被清除（设为「未配置」）。
+2. 预定义规则将应用于已知安全的应用（如浏览器），包括 HTTPS 过滤。
 
 :::

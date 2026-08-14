@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-Acest articol se referă la extensia de browser AdGuard, care vă protejează doar browserul dvs. Pentru a proteja întregul dispozitiv, [descărcați aplicația AdGuard](https://agrd.io/download-kb-adblock)
+This article is about AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

@@ -9,6 +9,12 @@ sidebar_position: 8
 
 :::
 
+:::info
+
+To use _Integration with AdGuard VPN_, both apps — AdGuard for Android and AdGuard VPN for Android — must be updated to their latest versions. Otherwise, the Integration mode will not be available
+
+:::
+
 AdGuard for Android は、トラフィックをフィルタリングするためにローカルVPNを作成します。 したがって、AdGuard for Android の実行中は、他のVPNアプリを使用することはできません。 ただし、AdGuard と [AdGuard VPN](https://adguard-vpn.com/) の両アプリを一緒に使える「併用モード」があります。
 
 このモードでは、AdGuard VPN は、AdGuard 広告ブロッカーがトラフィックをルーティングするアウトバウンドプロキシサーバーとして動作します。 これにより、AdGuard はVPNインターフェイスを作成し、ローカルで広告とトラッカーをブロックし、AdGuard VPN はすべてのトラフィックをリモートサーバー経由でルーティングします。

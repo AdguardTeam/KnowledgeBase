@@ -37,136 +37,138 @@ _Уровень логирования_ определяет, какие дан�
 
 ## Фильтрация
 
-В этом разделе можно управлять настройками HTTPS-фильтрации, фильтрами и пользовательскими скриптами, а также настраивать прокси-сервер.
+This section lets you manage filters, extensions, network settings, add websites to the allowlist, and create user rules.
 
-![Фильтрация \*mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
+[Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+
+![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.png)
 
 ### Фильтры
 
-AdGuard блокирует рекламу, трекеры и раздражители, применяя правила из своих фильтров. Большинство функций из раздела _Защита_ работают на основе [фильтров AdGuard] (/general/ad-filtering/adguard-filters/#adguard-filters). Если вы включите _Базовую защиту_, автоматически включится Базовый фильтр AdGuard и Фильтр мобильной рекламы AdGuard. И наоборот: если отключить оба фильтра, _Базовая защита_ тоже будет отключена.
+AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the _Protection_ section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable _Basic protection_, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, _Basic protection_ will also be disabled.
 
-![Фильтры \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
+![Filters \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
-Для нормальной работы AdGuard достаточно фильтров, включённых по умолчанию. Но если вы хотите настроить блокировку рекламы под себя, вы можете использовать другие фильтры AdGuard или сторонние фильтры. Для этого выберите категорию и включите нужные фильтры. Чтобы добавить пользовательский фильтр, нажмите _Собственные фильтры_ → _Добавить свой фильтр_ и введите его URL-адрес или путь к файлу.
+Filters enabled by default are enough for normal AdGuard operation. However, if you want to customize ad blocking, you can use other AdGuard or third-party filters. To do this, select a category and enable the filters you'd like. To add a custom filter, tap _Custom filters_ → _Add custom filter_ and enter its URL or file path.
 
 :::note
 
-Если вы активируете слишком много фильтров, некоторые сайты могут работать некорректно.
+If you activate too many filters, some websites may work incorrectly.
 
 :::
 
-[Подробнее о фильтрах](https://adguard.com/ru/blog/what-are-filters.html)
+[Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
 
 ### Расширения
 
-Расширения позволяют добавлять пользовательские скрипты и пользовательские стили.
+Extensions allow you to add userscripts and userstyles.
 
-![Расширения \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.jpg)
+![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.jpg)
 
-Пользовательские скрипты — это мини-программы, написанные на JavaScript и меняющие поведение одного или нескольких сайтов. Для установки пользовательских скриптов нужна специальная программа — менеджер скриптов. AdGuard может играть эту роль и позволяет устанавливать пользовательские скрипты по URL или из файла.
+Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
 
-Пользовательские стили как пользовательские скрипты позволяют менять внешний вид веб-страниц в браузере, не изменяя их содержимое. Они работают за счёт добавления CSS-стилей к существующим стилям сайта. Например, если вам нужна тёмная тема на сайте, который её не предлагает, вы можете получить желаемое с помощью пользовательского стиля.
+Userstyles are like userscripts that allow you to change how web pages look in the browser without modifying their content. They work by adding CSS styles to the website’s existing styles. For example, if you want a dark theme on a website that doesn’t offer one, you can use a userstyle to do it.
 
-Чтобы добавить пользовательский стиль, перейдите в раздел _Настройки_ → _Фильтрация_ → _Расширения_→ _Добавить_ → _Импорт из файла или URL_. Вы можете найти готовые пользовательские стили [онлайн](https://userstyles.world/).
+To add a userstyle, go to _Settings_ → _Filtering_ → _Extensions_→ _Add extension_ → _Import from file or URL_. You can find ready-made user styles [online](https://userstyles.world/).
 
-Чтобы создать собственный стиль, нажмите _Добавить_ → _Создать стиль_.
+To create your own style, tap _Add extension_ → _Create userstyle_.
 
 #### AdGuard Extra
 
-AdGuard Extra — это специальный пользовательский скрипт, который блокирует сложную рекламу и механизмы повторного внедрения рекламы на сайты.
+AdGuard Extra is a custom userscript that blocks complex ads and mechanisms that reinject ads to websites.
 
-#### Отключить AMP
+#### Disable AMP
 
-Отключить AMP — это пользовательский скрипт, который отключает [Accelerated mobile pages](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) на странице результатов поиска Google.
+Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) on the Google search results page.
 
 ### Сеть
 
 #### HTTPS-фильтрация
 
-Чтобы блокировать рекламу и трекеры на большинстве сайтов и в большинстве приложений, AdGuard нужно фильтровать HTTPS-трафик. [Подробнее об HTTPS-фильтрации](/general/https-filtering/what-is-https-filtering)
+To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
 
-##### Сертификаты безопасности
+##### Security certificates
 
-Чтобы управлять зашифрованным трафиком, AdGuard устанавливает на устройство сертификат ЦС. Это безопасно: трафик фильтруется локально, а AdGuard проверяет безопасность соединения.
+To manage encrypted traffic, AdGuard installs its CA certificate on your device. It's safe: the traffic is filtered locally and AdGuard verifies the security of the connection.
 
-В старых версиях Android сертификат устанавливается автоматически. На Android 11 и выше сертификат нужно устанавливать вручную. [Инструкция по установке](/adguard-for-android/solving-problems/manual-certificate/)
+On older versions of Android, the certificate is installed automatically. On Android 11 and later, you need to install it manually. [Installation instructions](/adguard-for-android/solving-problems/manual-certificate/)
 
-Сертификата в пользовательском хранилище достаточно для фильтрации HTTPS-трафика в браузерах и некоторых приложениях. Однако есть приложения, которые доверяют только сертификатам из системного хранилища. Чтобы фильтровать HTTPS-трафик подобных приложений, вам понадобится установить сертификат AdGuard в системное хранилище. [Инструкция](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
+The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
-##### Приложения с HTTPS-фильтрацией
+##### HTTPS-filtered apps
 
-В этом разделе содержится список приложений, для которых AdGuard фильтрует HTTPS-трафик. Обратите внимание, что настройку можно применить ко всем приложениям только в том случае, если у вас есть сертификаты ЦС как в пользовательском, так и в системном хранилище.
+This section contains the list of apps for which AdGuard filters HTTPS traffic. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
 
-##### Сайты с HTTPS-фильтрацией
+##### HTTPS-filtered websites
 
-Эта настройка позволяет вам управлять сайтами, для которых AdGuard должен фильтровать HTTPS-трафик.
+This setting allows you to manage websites for which AdGuard should filter HTTPS traffic.
 
-HTTPS-фильтрация позволяет AdGuard фильтровать содержимое запросов и ответов, но мы никогда не собираем и не храним эти данные. Однако для повышения безопасности мы [исключаем из HTTPS-фильтрации сайты, содержащие потенциально конфиденциальную информацию](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
+HTTPS filtering allows AdGuard to filter the content of requests and responses, but we never collect or store this data. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
 
-Вы также можете добавить в исключения сайты на своё усмотрение, выбрав один из режимов:
+You can also add websites that you consider necessary to exclusions by selecting one of the modes:
 
-- Исключить определённые сайты из HTTPS-фильтрации
-- Фильтровать HTTPS-трафик только на сайтах, добавленных в исключения
+- Exclude specific websites from HTTPS filtering
+- Filter HTTPS traffic only on the websites added to exclusions
 
-По умолчанию мы также не фильтруем сайты с сертификатами Extended Validation (EV), например, сайты финансовых организаций. При необходимости вы можете включить опцию _Фильтровать сайты с EV-сертификатами_.
+By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. При необходимости вы можете включить опцию _Фильтровать сайты с EV-сертификатами_.
 
-#### Прокси
+#### Proxy
 
-Вы можете настроить AdGuard так, чтобы он пропускал весь трафик устройства через прокси-сервер. [Как настроить исходящий прокси](/adguard-for-android/solving-problems/outbound-proxy)
+You can set up AdGuard to route all your device's traffic through your proxy server. [How to set up an outbound proxy](/adguard-for-android/solving-problems/outbound-proxy)
 
-В этом разделе вы также можете настроить сторонний VPN для работы с AdGuard, если ваш VPN-провайдер это позволяет.
+In this section, you can also set up a third-party VPN to work with AdGuard, if your VPN provider allows it.
 
-Во вкладке _Приложения, работающие через прокси_ можно выбрать приложения, которые будут направлять свой трафик через указанный вами прокси-сервер. Если у вас включена _Интеграция с AdGuard VPN_, эта настройка заменяет функцию исключений приложений в AdGuard VPN: она позволяет указывать приложения, которые будут направляться через туннель AdGuard VPN.
+Under _Apps operating through proxy_, you can select apps that will route their traffic through your specified proxy. If you have _Integration with AdGuard VPN_ enabled, this setting plays the role of AdGuard VPN's app exclusions: it allows you to specify apps to be routed through the AdGuard VPN tunnel.
 
-#### Режим маршрутизации
+#### Routing mode
 
-Здесь вы можете выбрать метод фильтрации трафика.
+This section allows you to select the traffic filtering method.
 
-- _Локальный VPN_ фильтрует трафик через локально созданный VPN. Это самый надёжный режим. Из-за ограничений Android это также единственный способ фильтрации трафика на системном уровне, доступный на нерутованных устройствах.
-
-:::note
-
-Режим _Локальный VPN_ не позволяет использовать AdGuard одновременно с другими VPN. Чтобы использовать другой VPN с AdGuard, вам необходимо перенастроить его для работы в режиме прокси и настроить исходящий прокси в AdGuard. Для AdGuard VPN это делается автоматически с помощью [_Режима интегрирации_](/adguard-for-android/features/integration-with-vpn).
-
-:::
-
-- _Автоматический прокси_ — альтернативный метод маршрутизации трафика, не требующий использования VPN. Одним из его существенных преимуществ является то, что его можно запускать параллельно с VPN. Этот режим требует root-доступа.
+- _Local VPN_ filters traffic through a locally created VPN. This is the most reliable mode. Due to Android restrictions, it is also the only system-wide traffic filtering method available on non-rooted devices.
 
 :::note
 
-Обратите внимание, что в режиме маршрутизации _Автоматический прокси_ DNS-фильтрация будет активна, и ваше устройство возможно не сможет фильтровать DNS-запросы от определённых приложений. В режиме маршрутизации _VPN_ приложения исключаются из локального VPN средствами системы. Таким образом, системный DNS-резолвер видит, какие приложения включены в VPN, а какие — нет. Это либо разрешает им доступ к локальному VPN, либо позволяет обходить его. Однако DNS-запросы поступают от системного DNS-резолвера, а не от приложения. В режиме _Автоматический прокси_ можно исключить только трафик приложений, но не их DNS-запросы, потому что AdGuard видит их как системные запросы.
+The _Local VPN_ mode doesn't allow AdGuard to be used simultaneously with other VPNs. To use another VPN with AdGuard, you need to reconfigure it to work in proxy mode and set up an outbound proxy in AdGuard. For AdGuard VPN, this is done automatically with the help of the [_Integrated mode_](/adguard-for-android/features/integration-with-vpn).
 
 :::
 
-- В режиме _Ручной прокси_ настраивается порт для прокси, который затем нужно указать в настройках Wi-Fi. Для этого режима требуется root-доступ на Android 10 и выше.
+- _Automatic proxy_ is an alternative traffic routing method that does not require the use of a VPN. One significant advantage is that it can be run in parallel with a VPN. This mode requires root access.
+
+:::note
+
+Please note that DNS filtering will still be active in _Automatic proxy_ routing mode, and your device may not be able to filter DNS requests from specific apps. In _VPN_ routing mode, apps are excluded from the local VPN by system means. Therefore, the system resolver sees which apps are included in the VPN and which are not. It either allows them into the local VPN or lets them bypass it. However, DNS requests come from the system resolver, not the application. In _Automatic proxy_ mode, it is only possible to exclude traffic from applications, not their DNS queries, because AdGuard sees them as system queries.
+
+:::
+
+- _Manual proxy_ involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
 
 ## Лицензия
 
-В этом разделе вы можете узнать больше о лицензии и управлять ей:
+In this section, you can find information about your license and manage it:
 
-- Купить лицензию AdGuard, чтобы активировать [функции полной версии](/adguard-for-android/features/free-vs-full)
-- Войти в аккаунт AdGuard или ввести код активации лицензии
-- Зарегистрироваться, чтобы активировать 14-дневный пробный период. Код активации можно использовать на разных устройствах и платформах
-- Обновить статус лицензии в меню с тремя точками (⋮)
-- Открыть личный кабинет AdGuard, чтобы управлять лицензией
-- Сбросить лицензию — например, если вы достигли лимита устройств для неё и хотите применить другую
+- Buy an AdGuard license to activate [the full version's features](/adguard-for-android/features/free-vs-full)
+- Log in to your AdGuard account or enter the activation code to activate your license
+- Sign up to activate your 14-day trial period. The activation code can be used on different devices and platforms
+- Refresh the license status from the three-dots menu (⋮)
+- Open the AdGuard account to manage your license there
+- Reset your license — for example, if you've reached device limit for this license and want to apply another one
 
-![Экран лицензии \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/android/settings/licensetab.png)
+![License screen \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/android/settings/licensetab.png)
 
 ## Поддержка
 
-Этот раздел поможет, если у вас есть вопросы или предложения по улучшению AdGuard для Android. Мы рекомендуем ознакомиться с _[FAQ](https://adguard.com/support/adguard_for_android.html)_ или этой базой знаний, прежде чем обращаться в поддержку.
+Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting _[FAQ](https://adguard.com/support/adguard_for_android.html)_ or this knowledge base before contacting support.
 
-![Поддержка \*mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
+![Support \*mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
-Если вы заметили пропущенную рекламу, сообщите об этом в разделе _Сообщить о некорректной блокировке_.
+If you notice a missed ad, please report it via _Report incorrect blocking_.
 
-Если приложение работает некорректно, выберите _Сообщить об ошибке_. По возможности опишите проблему подробно и прикрепите логи. [Как описать проблему](/guides/report-bugs/#how-to-describe-a-problem)
+For unexpected app behavior, select _Report a bug_. If possible, describe your problem in detail and add app logs. [How to describe an issue](/guides/report-bugs/#how-to-describe-a-problem)
 
-Предложить улучшение можно в разделе _Предложить улучшение_.
+For your suggestions, use _Request a feature_.
 
 :::note
 
-GitHub — ещё один способ сообщать об ошибках и предлагать новые функции. [Инструкции и ссылки на репозитории](/guides/report-bugs/#adguard-for-android)
+GitHub is an alternative way to report bugs and suggest new features. [Instructions and repository links](/guides/report-bugs/#adguard-for-android)
 
 :::

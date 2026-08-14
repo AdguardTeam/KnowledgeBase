@@ -20,7 +20,7 @@ If you're seeing annoying ads and popups in the bottom right corner of your scre
 5. You can also select _Block new requests asking to allow notifications_ to stop all push notifications requests at once.
 6. Click _Save Changes_.
 
-## In Safari
+## I Safari
 
 1. Click _Safari_ in the menu bar → _System Settings_.
 2. Go to the _Websites_ tab.

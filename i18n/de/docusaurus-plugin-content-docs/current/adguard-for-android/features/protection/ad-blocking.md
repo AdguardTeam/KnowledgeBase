@@ -9,16 +9,10 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-Sie können auf das Modul _Sperren von Werbung_ zugreifen, indem Sie auf den Tab _Schutz_ (zweites linkes Symbol unten auf dem Bildschirm) tippen und dann _Sperren von Werbung_ auswählen.
+![Werbeblocker \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/ad-blocking.png)
 
-Die Funktion sperrt Werbung durch das Anwenden von Werbeblockern und sprachspezifischen Filtern. Um mehr über die Werbeblockierung zu erfahren, können Sie einen [speziellen Artikel](/general/ad-filtering/how-ad-blocking-works) lesen.
+Sie können auf das Modul _Werbeblockierung_ zugreifen, indem Sie auf den Tab _Schutz_ (zweites linkes Symbol unten auf dem Bildschirm) tippen und dann _Werbeblockierung_ auswählen.
 
-Der Basisschutz blockiert effektiv Werbung auf den meisten Websites. Für eine noch individuellere Werbeblockierung können Sie:
+Die Funktion entfernt Werbung durch die Anwendung von Werbeblocker- und sprachspezifischen Filtern. Um mehr über die Werbeblockierung zu erfahren, können Sie einen [speziellen Artikel](/general/ad-filtering/how-ad-blocking-works) lesen.
 
-- Entsprechende sprachspezifische Filter aktivieren. Diese enthalten Filterregeln zum Sperren von Werbung auf Websites in bestimmten Sprachen
-
-- Websites zur Freigabeliste hinzufügen — diese Websites werden nicht von AdGuard gefiltert
-
-- Benutzerregeln erstellen— AdGuard wendet sie auf bestimmte Websites an. [Erfahren Sie, wie Sie Ihre eigenen Benutzerregeln erstellen können](/general/ad-filtering/create-own-filters)
-
-![Werbeblocker \*mobile_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
+_Basisschutz_ blockiert effektiv Werbung auf den meisten Websites. Für individuellere Werbeblockierung können Sie die _sprachspezifische Werbeblockierung_ aktivieren — sie enthält Filterregeln für Websites in bestimmten Sprachen.

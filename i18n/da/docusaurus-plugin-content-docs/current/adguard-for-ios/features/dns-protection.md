@@ -1,5 +1,5 @@
 ---
-title: DNS protection
+title: DNS-beskyttelse
 sidebar_position: 2
 ---
 

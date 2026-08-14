@@ -9,16 +9,10 @@ Acest articol se referă la AdGuard pentru Android, un blocant de reclame multif
 
 :::
 
+![Ad blocking \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/ad-blocking.png)
+
 The Ad blocking module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Ad blocking_.
 
-Funcția blochează reclamele prin aplicarea de filtre de blocare a reclamelor și filtre specifice limbii. Pentru a învăța despre mecanismul de blocare a reclamelor, poți citi un [articol dedicat](/general/ad-filtering/how-ad-blocking-works).
+The feature removes ads by applying ad-blocking and language-specific filters. To learn about the mechanism of ad blocking, you can read a [dedicated article](/general/ad-filtering/how-ad-blocking-works).
 
-Protecția de bază blochează eficient reclamele pe cele mai multe site-uri web. Pentru o blocare a reclamelor mai personalizată, poți:
-
-- Enable appropriate language-specific filters — they contain filtering rules for blocking ads on websites in specific languages
-
-- Adaugă site-uri web pe lista de permisiuni — aceste site-uri nu vor fi filtrate de AdGuard
-
-- Creează reguli utilizator — AdGuard le va aplica pe site-uri web specificate. [Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
-
-![Ad blocking \*mobile_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
+_Basic protection_ effectively blocks ads on most websites. For more customized ad blocking, you can enable _Language-specific ad blocking_ — it contains filtering rules for websites in specific languages.

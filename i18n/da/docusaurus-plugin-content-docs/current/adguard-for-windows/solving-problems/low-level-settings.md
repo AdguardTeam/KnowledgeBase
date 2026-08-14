@@ -43,7 +43,7 @@ Once enabled, this option runs asynchronous OCSP checks to check whether the web
 
 If the OCSP check completes within the minimum timeout, AdGuard will immediately apply the result: block the connection if the certificate is revoked or establish a connection if the certificate is valid.
 
-If the verification takes too long, AdGuard will establish a connection and continue checking in the background. If the certificate is revoked, current and future connections to the domain will be blocked.
+If the verification takes too long, AdGuard will establish a connection and continue checking in the background. Er certifikatet tilbagekaldt, blokeres nuværende og fremtidige forbindelser til domænet.
 
 ### Show AdGuard VPN in Settings
 
@@ -191,7 +191,7 @@ If address resolving failed on each of the forwarded upstreams, as well as on th
 
 AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
 
-### Blocking mode for hosts rules
+### Blokeringstilstand for hosts-regler
 
 Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
@@ -199,7 +199,7 @@ Here you can select the way AdGuard will respond to domains blocked by DNS rules
 - Reply with “NxDomain” error
 - Reply with a custom IP address
 
-### Blocking mode for adblock-style rules
+### Blokeringstilstand for adblock-lignende regler
 
 Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [adblock-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 

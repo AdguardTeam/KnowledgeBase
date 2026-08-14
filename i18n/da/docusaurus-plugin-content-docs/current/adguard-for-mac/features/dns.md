@@ -9,7 +9,7 @@ Denne artikel dækker AdGuard til Mac, en multifunktionel adblocker, der beskytt
 
 :::
 
-## DNS protection
+## DNS-beskyttelse
 
 The _DNS_ section contains one feature, _DNS protection_, with multiple settings:
 

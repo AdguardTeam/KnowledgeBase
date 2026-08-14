@@ -50,7 +50,7 @@ Denne metode fungerer kun på **rootede** enheder.
     - Åbn appen **Indstillinger** på mobilen;
     - Gå til afsnittet **System** (sidste punkt på indstillingsmenuen). Find i dette afsnit underpunktet **Om telefon**;
     - Tryk 7 gange på linjen **Build-nummer**. Dernæst ses meddelelse **Du er nu udvikler** (angiv om nødvendigt enhedens oplåsningskode);
-    - Åbn **Systemindstillinger** → **Udviklerindstillinger** → Rul ned og aktivér **USB-fejlfinding** → Bekræft, at fejlfinding er aktiveret i vinduet **Tillad USB-fejlfinding** efter omhyggeligt at have læst advarslen.
+    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
 1. Installér [Firefox](https://www.mozilla.org/en-US/firefox/releases/)-webbrowseren (udgivelsesversion);
 

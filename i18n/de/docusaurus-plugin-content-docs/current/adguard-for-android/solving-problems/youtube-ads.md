@@ -9,7 +9,7 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-Eine der häufigsten Fragen, die wir erhalten, lautet: „Ist es möglich, YouTube-Werbung auf Android zu blockieren?“. Aufgrund der technischen Einschränkungen des Android-Betriebssystems gibt es keine Möglichkeit, *Werbung vollständig* aus der YouTube-App zu entfernen. Wir haben jedoch eine Alternative gefunden, die Sie so nah wie möglich daran heranführt und gleichzeitig die von Android auferlegten Einschränkungen umgeht.
+Eine der häufigsten Fragen, die wir erhalten, lautet: „Ist es möglich, YouTube-Werbung auf Android zu blockieren?“. Due to the technical restrictions of the Android OS, there is no way to *completely* [remove ads from the YouTube app](https://adguard.com/en/adguard-youtube/overview.html). Wir haben jedoch eine Alternative gefunden, die Sie so nah wie möglich daran heranführt und gleichzeitig die von Android auferlegten Einschränkungen umgeht.
 
 ## YouTube in der AdGuard-App ansehen
 

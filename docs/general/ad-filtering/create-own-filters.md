@@ -753,7 +753,7 @@ Rules with the `$popup` modifier are not supported by AdGuard Content Blocker.
 
 :::
 
-[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#popup
+[popup-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/dnr-converter/src/examples/README.md#basic_modifiers__$popup
 
 #### **`$strict-first-party`** {#strict-first-party-modifier}
 
@@ -1223,7 +1223,7 @@ and AdGuard Content Blocker.
 
 :::
 
-[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#jsinject
+[jsinject-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/dnr-converter/src/examples/README.md#exception_rules_modifiers__$jsinject
 
 #### **`$stealth`** {#stealth-modifier}
 
@@ -1425,7 +1425,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$removeheader](#removeheader-modifier) | ✅ | ✅ [*[7]](#removeheader-modifier-limitations) | ✅ [*[7]](#removeheader-modifier-limitations) | ✅ [*[7]](#removeheader-modifier-limitations) | ❌ | ❌ | ❌ |
 | [$removeparam](#removeparam-modifier) | ✅ | ✅ | ✅ [*[6]](#removeparam-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
 | [$replace](#replace-modifier) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
-| [$urltransform](#urltransform-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$urltransform](#urltransform-modifier) | ✅ | ✅ | ✅ [*[8]](#urltransform-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
 | [$reason](#reason-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [noop](#noop-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$empty 👎](#empty-modifier "deprecated") | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
@@ -1511,7 +1511,7 @@ Rules with `$badfilter` modifier are not supported by AdGuard Content Blocker.
 
 :::
 
-[badfilter-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#badfilter
+[badfilter-in-mv3]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/dnr-converter/src/examples/README.md#mv3_specific_limitations__$badfilter
 
 #### **`$cookie`** {#cookie-modifier}
 
@@ -2992,7 +2992,7 @@ AdGuard products that use a [CoreLibs] version older than 1.20 only support a si
 
 :::info Compatibility
 
-This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.17 or later.
+This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.17 or later, and to [AdGuard Browser Extension][ext-chr] v5.5 or later.
 
 :::
 
@@ -3085,6 +3085,8 @@ Tracking links will now be automatically cleaned up, allowing direct navigation 
 
 Rules with the `$urltransform` modifier can only be used [**in trusted filters**](#trusted-filters).
 
+`$urltransform` is only compatible with `$domain`, `$third-party`, `$important`, `$match-case`, `$badfilter`, `$to`, `$method`, `$popup`, `$denyallow`, and [content-type modifiers](#content-type-modifiers). Rules using any other modifiers are invalid and discarded.
+
 `$urltransform` rules without [content-type modifiers](#content-type-modifiers) will only match requests where the content type is `document`.
 
 :::
@@ -3095,6 +3097,19 @@ Rules with the `$urltransform` modifier are supported by AdGuard for Windows, Ad
 
 `$urltransform` rules with [content-type modifiers](#content-type-modifiers) are supported starting from [CoreLibs] v1.19 or later. In earlier versions, content-type modifiers were not allowed with `$urltransform`.
 
+Rules with the `$urltransform` modifier and [content-type modifiers](#content-type-modifiers) are also supported by [AdGuard Browser Extension][ext-chr] v5.5 or later, and by [AdGuard for Chrome MV3][ext-mv3] v5.5 or later with [limitations](#urltransform-modifier-limitations).
+
+:::
+
+##### `$urltransform` modifier limitations {#urltransform-modifier-limitations}
+
+:::caution Limitations
+
+In [AdGuard for Chrome MV3][ext-mv3], the `$urltransform` modifier has the following limitations:
+
+1. **No decode stages** — pipeline transforms containing `b64` (Base64 decode) or `pct` (percent-decode) stages are not supported and will be discarded.
+2. **No global replacement** — only the **first match** is replaced. The `/g` (global) flag is ignored. This is usually not an issue for full-URL transforms anchored with `^`, but path-only patterns that rely on replacing all occurrences will only replace the first one.
+3. **Single redirect per request** — when multiple `$urltransform` rules match the same request, only the highest-priority one takes effect. In CoreLibs, all matching rules are applied sequentially.
 :::
 
 #### **`$reason`** {#reason-modifier}

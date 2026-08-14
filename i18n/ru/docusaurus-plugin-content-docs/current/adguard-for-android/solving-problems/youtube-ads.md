@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::
 
-Один из самых популярных вопросов, которые задают нам пользователи: «Можно ли заблокировать рекламу в Youtube на Android?». Из-за технических ограничений ОС Android не существует способа *полностью* удалить рекламу из приложения YouTube. Но мы нашли способ, который позволяет максимально добиться желаемого, при этом обходя ограничения Android.
+Один из самых популярных вопросов, которые задают нам пользователи: «Можно ли заблокировать рекламу в Youtube на Android?». Due to the technical restrictions of the Android OS, there is no way to *completely* [remove ads from the YouTube app](https://adguard.com/en/adguard-youtube/overview.html). Но мы нашли способ, который позволяет максимально добиться желаемого, при этом обходя ограничения Android.
 
 ## Смотрите YouTube в приложении AdGuard
 
