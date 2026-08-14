@@ -3074,7 +3074,9 @@ The first transformation extracts `aHR0cHM6Ly93d3cuc29tZXN0b3JlLmNvbS8/cmVmPXJlZ
 `https://www.somestore.com/?ref=ref-123`. The final substitution removes the `ref` tracking parameter.
 
 :::caution Changing the origin
+
 Note that in both rules, the `$urltransform` value starts with `/^http`, so the full request URL is transformed. Without this prefix, only the path and query parts of the URL can be transformed.
+
 :::
 
 Tracking links will now be automatically cleaned up, allowing direct navigation to the destination website without tracking.
