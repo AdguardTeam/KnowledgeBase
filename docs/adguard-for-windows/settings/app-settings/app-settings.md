@@ -17,10 +17,10 @@ If you wish, you can agree to send anonymized app usage data to help us improve 
 
 In case of issues, you can change the logging level to create detailed logs for the support team.
 
-In [*Filter editor*](/adguard-for-windows-8/settings/app-settings/filter-editor.md), you can add your own filtering rules or import ready-to-use filters.
+In [*Filter editor*](/adguard-for-windows/settings/app-settings/filter-editor.md), you can add your own filtering rules or import ready-to-use filters.
 
-[*Network* settings](/adguard-for-windows-8/settings/app-settings/network-settings.md) include all options related to network filtering and how AdGuard interacts with your system’s network.
+[*Network* settings](/adguard-for-windows/settings/app-settings/network-settings.md) include all options related to network filtering and how AdGuard interacts with your system’s network.
 
-[*Advanced*](/adguard-for-windows-8/settings/app-settings/advanced-settings.md) settings are intended for experienced users. They are rarely needed in everyday use and should only be changed if you know what you’re doing or if our support team asks you to.
+[*Advanced*](/adguard-for-windows/settings/app-settings/advanced-settings.md) settings are intended for experienced users. They are rarely needed in everyday use and should only be changed if you know what you’re doing or if our support team asks you to.
 
 ![App settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/2_app_settings.png)

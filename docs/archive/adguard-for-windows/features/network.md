@@ -45,7 +45,7 @@ While it is a powerful driver, it may present stability risks, such as [occasion
 
 #### TDI
 
-The **TDI** driver is also available, but it is outdated and may cause [filtering issues in some versions of Google Chrome](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). [A temporary workaround exists](https://adguard.com/kb/adguard-for-windows/solving-problems/tdi-driver-and-Chrome-142/), but it’s not a reliable long-term solution.
+The **TDI** driver is also available, but it is outdated and may cause [filtering issues in some versions of Google Chrome](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). [A temporary workaround exists](https://adguard.com/kb/archive/adguard-for-windows/solving-problems/tdi-driver-and-Chrome-142/), but it’s not a reliable long-term solution.
 
 ### AdGuard VPN
 

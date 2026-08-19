@@ -28,7 +28,7 @@ AdGuard comes with four pre-installed userscripts:
 
 ### AdGuard Assistant (Beta)
 
-AdGuard Assistant is the legacy version of Assistant, which you can use if the [new Assistant](/adguard-for-windows/browser-assistant.md) is not available for your browser. As the name suggests, it helps you manage basic AdGuard settings directly from your browser without opening the app.
+AdGuard Assistant is the legacy version of Assistant, which you can use if the [new Assistant](/archive/adguard-for-windows/browser-assistant.md) is not available for your browser. As the name suggests, it helps you manage basic AdGuard settings directly from your browser without opening the app.
 
 AdGuard Assistant works with all browsers compatible with Microsoft Windows. It will not appear on websites excluded from filtering or on certain pages where it could cause display issues.
 

@@ -1,11 +1,11 @@
 ---
 title: Filtering issues in Chrome 142+ when using the TDI driver
-sidebar_position: 14
+sidebar_position: 1
 ---
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
+This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
 
 :::
 
@@ -35,7 +35,7 @@ AdGuard already treats the TDI driver as deprecated, and its complete removal is
 
 ## Permanent solution
 
-From v7.22.4, we’ve added experimental support for the SockFilter driver. It fixes the issue by solving conflicts in the WFP stack. [More information](/adguard-for-windows/features/network/#sockfilter-and-other-network-drivers).
+From v8.0 RC, we’ve added experimental support for the SockFilter driver. It fixes the issue by solving conflicts in the WFP stack. [More information](/adguard-for-windows/settings/app-settings/network-settings/).
 
 To use it, go to *Settings → Network → Traffic filtering*, enable traffic filtering, and select *SockFilter (Experimental)* from the list of available options.
 
@@ -57,8 +57,6 @@ It should **not** be applied broadly across end-user machines. **Proceed only if
 
 :::
 
-#### Using .reg files
-
 You can apply the necessary registry changes automatically by using one of the pre-generated .reg files below. Each file disables AppContainer/Network Service sandboxing for a specific Chromium-based browser:
 
 - [Download Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chrome.reg)
@@ -67,17 +65,6 @@ You can apply the necessary registry changes automatically by using one of the p
 - [Download Brave.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Brave.reg)
 - [Download Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Vivaldi.reg)
 - [Download YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_YandexBrowser.reg)
-
-You can revert these changes using the undo .reg files provided below. These files remove the registry branches that were added by the direct version:
-
-- [Undo Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chrome.reg)
-- [Undo Chromium.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chromium.reg)
-- [Undo Edge.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Edge.reg)
-- [Undo Brave.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Brave.reg)
-- [Undo Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Vivaldi.reg)
-- [Undo YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_YandexBrowser.reg)
-
-#### Explicit registry editing
 
 If your browser is not listed, follow the manual instructions below to create the necessary registry entries:
 
