@@ -9,22 +9,22 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 :::
 
-- [Funkce](/adguard-for-windows/features/features.md)
+- [Funkce](/adguard-for-windows/)
 
   Hlavní funkce a nastavení dostupné v aplikaci AdGuard pro Windows
 
-- [Instalace](/adguard-for-windows/installation.md)
+- [Instalace](/adguard-for-windows/)
 
   Instalace, odstranění a systémové požadavky AdGuardu pro Windows
 
-- [Asistent prohlížeče](/adguard-for-windows/browser-assistant.md)
+- [Asistent prohlížeče](/archive/adguard-for-windows/browser-assistant)
 
   Rozšíření, které doplňuje program pro stolní počítače a umožňuje spravovat filtrování z prohlížeče
 
-- [Řešení problémů](/adguard-for-windows/solving-problems/solving-problems.md)
+- [Řešení problémů](/adguard-for-windows/solving-problems/)
 
   Známé problémy a možná řešení
 
-- [Dokumentace pro administrátory](/adguard-for-windows/admins-documentation.md)
+- [Dokumentace pro administrátory](/adguard-for-windows/)
 
   Průvodce konfigurací pro správce systému
