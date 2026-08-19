@@ -8,7 +8,7 @@ slug: /
 
 AdGuard — один из лидеров на рынке программ для блокировки рекламы с более чем 15-летним опытом, почти десятком продуктов для разных платформ и более чем 375 млн установок пользователями. В отличие от других решений по блокировке рекламы, большинство из которых работают на основе браузера, мы предлагаем отдельные приложения для всех основных платформ, как десктопных, так и мобильных. Приложения AdGuard более мощные, чем браузерные расширения, могут блокировать больше и делать это эффективнее:
 
-- [AdGuard для Windows](/adguard-for-windows/features/home-screen)
+- [AdGuard для Windows](/adguard-for-windows/)
 - [AdGuard для Mac](/adguard-for-mac/features/main)
 - [AdGuard для Android](/adguard-for-android/features/protection/ad-blocking)
 - [AdGuard для iOS](/adguard-for-ios/features/safari-protection)

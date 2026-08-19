@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::note Поддерживаемые приложения
 
-AdGuard может значительно расширять функциональность сайтов, работая как менеджер пользовательских скриптов. Вы можете добавлять собственные скрипты или управлять существующими в наших трёх продуктах: [AdGuard для Windows](/adguard-for-windows/features/extensions), [AdGuard для Android](/adguard-for-android/features/settings#userscripts) и [AdGuard для Mac](/adguard-for-mac/features/extensions).
+AdGuard может значительно расширять функциональность сайтов, работая как менеджер пользовательских скриптов. Вы можете добавлять собственные скрипты или управлять существующими в наших трёх продуктах: [AdGuard для Windows](/adguard-for-windows/protection/extensions), [AdGuard для Android](/adguard-for-android/features/settings#userscripts) и [AdGuard для Mac](/adguard-for-mac/features/extensions).
 
 :::
 
