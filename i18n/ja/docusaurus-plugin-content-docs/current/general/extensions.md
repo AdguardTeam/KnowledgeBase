@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::note Supported apps
 
-AdGuard はユーザースクリプトマネージャとして、ウェブサイトの機能を大幅に拡張することができます。 You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/features/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
+AdGuard はユーザースクリプトマネージャとして、ウェブサイトの機能を大幅に拡張することができます。 You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/protection/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
 
 :::
 

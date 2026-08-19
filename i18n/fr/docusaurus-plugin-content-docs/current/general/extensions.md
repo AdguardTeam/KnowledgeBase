@@ -9,7 +9,7 @@ Les scripts utilisateurs ou userscripts (que nous appelons aussi "extensions") s
 
 :::note Apps prises en charge
 
-AdGuard peut accroître considérablement les fonctionnalités des sites web en agissant comme un gestionnaire de scripts utilisateur. Vous pouvez ajouter vos scripts personnalisés ou gérer ceux existants dans nos trois produits : [AdGuard pour Windows](/adguard-for-windows/features/extensions), [AdGuard pour Android](/adguard-for-android/features/settings#userscripts) et [AdGuard pour Mac](/adguard-for-mac/features/extensions).
+AdGuard peut accroître considérablement les fonctionnalités des sites web en agissant comme un gestionnaire de scripts utilisateur. Vous pouvez ajouter vos scripts personnalisés ou gérer ceux existants dans nos trois produits : [AdGuard pour Windows](/adguard-for-windows/protection/extensions), [AdGuard pour Android](/adguard-for-android/features/settings#userscripts) et [AdGuard pour Mac](/adguard-for-mac/features/extensions).
 
 :::
 

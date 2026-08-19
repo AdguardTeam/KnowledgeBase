@@ -35,7 +35,7 @@ sidebar_position: 3
 
 ### AdGuard for Windows の場合 {#windows}
 
-- [AdGuardブラウザアシスタント](/adguard-for-windows/browser-assistant)を開き、 「**問題・不具合を報告する**」を押す
+- [AdGuardブラウザアシスタント](/archive/adguard-for-windows/browser-assistant)を開き、 「**問題・不具合を報告する**」を押す
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/report-website-ja-2.png)
 

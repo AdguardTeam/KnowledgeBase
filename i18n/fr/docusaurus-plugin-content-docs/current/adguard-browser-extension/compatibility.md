@@ -19,6 +19,6 @@ Si vous avez la version de bureau d'AdGuard installée sur votre PC, il est pré
 
 ![AdGuard Browser Assistant \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/browser_assistant.png)
 
-L'Assistant de navigateur AdGuard Browser Assistant est une extension de navigateur qui fonctionne et se sent comme l'Extension de navigateur AdGuard, mais elle est beaucoup plus légère et n'interfère pas avec les applications de bureau. Vous pouvez [apprendre plus sur l'Assistant de navigateur pour Windows](/adguard-for-windows/browser-assistant) ou [Mac](/adguard-for-mac/features/browser-assistant), ou [le télécharger depuis notre site web](https://adguard.com/adguard-assistant/overview.html).
+L'Assistant de navigateur AdGuard Browser Assistant est une extension de navigateur qui fonctionne et se sent comme l'Extension de navigateur AdGuard, mais elle est beaucoup plus légère et n'interfère pas avec les applications de bureau. Vous pouvez [apprendre plus sur l'Assistant de navigateur pour Windows](/archive/adguard-for-windows/browser-assistant) ou [Mac](/adguard-for-mac/features/browser-assistant), ou [le télécharger depuis notre site web](https://adguard.com/adguard-assistant/overview.html).
 
 L'Assistant de navigateur AdGuard est disponible dans tous les navigateurs principaux.

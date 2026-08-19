@@ -8,7 +8,7 @@ slug: /
 
 Az AdGuard az egyik vezető a hirdetésblokkoló szoftverpiacon 15 éves tapasztalattal, majd tíz termékkel különböző platformokra és több mint 375 millió felhasználói telepítéssel. Más reklámblokkoló megoldásokkal ellentétben, amelyek többsége böngészőalapú, mi önálló alkalmazásokat kínálunk minden főbb platformra, mind asztali, mind mobil platformokra. Az AdGuard alkalmazások nagyobb teljesítményűek, mint a böngészőbővítmények, többet és hatékonyabban tudnak blokkolni:
 
-- [AdGuard for Windows](/adguard-for-windows/features/home-screen)
+- [AdGuard for Windows](/adguard-for-windows/)
 - [AdGuard for Mac](/adguard-for-mac/features/main)
 - [AdGuard for Android](/adguard-for-android/features/protection/ad-blocking)
 - [AdGuard for iOS](/adguard-for-ios/features/safari-protection)

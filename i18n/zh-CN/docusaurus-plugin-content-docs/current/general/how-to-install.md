@@ -9,7 +9,7 @@ sidebar_position: 10
 
 [AdGuard iOS版](/adguard-for-ios/installation)
 
-[AdGuard Windows版](/adguard-for-windows/installation)
+[AdGuard Windows版](/adguard-for-windows/)
 
 [AdGuard Mac版](/adguard-for-mac/installation)
 

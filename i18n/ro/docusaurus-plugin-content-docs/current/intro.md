@@ -8,7 +8,7 @@ slug: /
 
 AdGuard este unul dintre liderii pe piața software-ului de blocare a reclamelor, cu peste 15 ani de experiență, aproape o duzină de produse pentru diverse platforme și peste 375 de milioane de instalări de utilizatori. Spre deosebire de alte soluții de blocare a reclamelor, cele mai multe dintre care sunt bazate pe browser, oferim aplicații autonome pentru toate platformele majore, atât desktop, cât și mobile. Aplicațiile AdGuard sunt mai puternice decât extensiile de browser, pot bloca mai multe și o fac mai eficient:
 
-- [AdGuard for Windows](/adguard-for-windows/features/home-screen)
+- [AdGuard for Windows](/adguard-for-windows/)
 - [AdGuard for Mac](/adguard-for-mac/features/main)
 - [AdGuard for Android](/adguard-for-android/features/protection/ad-blocking)
 - [AdGuard for iOS](/adguard-for-ios/features/safari-protection)

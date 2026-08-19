@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::note 支持的应用
 
-AdGuard 可作为用户脚本管理器以显著扩展网站功能。 您可以在我们的三款产品中添加自定义脚本或管理现有脚本：[AdGuard Windows 版](/adguard-for-windows/features/extensions)、[AdGuard Android 版](/adguard-for-android/features/settings#userscripts) 和 [AdGuard Mac 版](/adguard-for-mac/features/extensions)。
+AdGuard 可作为用户脚本管理器以显著扩展网站功能。 您可以在我们的三款产品中添加自定义脚本或管理现有脚本：[AdGuard Windows 版](/adguard-for-windows/protection/extensions)、[AdGuard Android 版](/adguard-for-android/features/settings#userscripts) 和 [AdGuard Mac 版](/adguard-for-mac/features/extensions)。
 
 :::
 
