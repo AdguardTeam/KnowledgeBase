@@ -9,7 +9,7 @@ Userscripts (pe care le numim și "extensii") sunt, de facto, miniprograme scris
 
 :::note Aplicații suportate
 
-AdGuard poate mări semnificativ funcționalitatea site-ului operând ca manager de userscript. Puteți adăuga scripturi personalizate sau gestiona cele existente în cele trei produse ale noastre: [AdGuard pentru Windows](/adguard-for-windows/features/extensions), [AdGuard pentru Android](/adguard-for-android/features/settings#userscripts) și [AdGuard pentru Mac](/adguard-for-mac/features/extensions).
+AdGuard poate mări semnificativ funcționalitatea site-ului operând ca manager de userscript. Puteți adăuga scripturi personalizate sau gestiona cele existente în cele trei produse ale noastre: [AdGuard pentru Windows](/adguard-for-windows/protection/extensions), [AdGuard pentru Android](/adguard-for-android/features/settings#userscripts) și [AdGuard pentru Mac](/adguard-for-mac/features/extensions).
 
 :::
 

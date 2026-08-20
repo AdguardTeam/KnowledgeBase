@@ -9,7 +9,7 @@ Los scripts de usuario (también los llamamos "extensiones") son, de facto, mini
 
 :::note Aplicaciones compatibles
 
-AdGuard puede ampliar significativamente la funcionalidad del sitio web al actuar como administrador de scripts de usuario. Puedes agregar tus scripts personalizados o administrar los existentes en nuestros tres productos: [AdGuard para Windows](/adguard-for-windows/features/extensions), [AdGuard para Android](/adguard-for-android/features/settings#userscripts) y [AdGuard para Mac](/adguard-for-mac/features/extensions).
+AdGuard puede ampliar significativamente la funcionalidad del sitio web al actuar como administrador de scripts de usuario. Puedes agregar tus scripts personalizados o administrar los existentes en nuestros tres productos: [AdGuard para Windows](/adguard-for-windows/protection/extensions), [AdGuard para Android](/adguard-for-android/features/settings#userscripts) y [AdGuard para Mac](/adguard-for-mac/features/extensions).
 
 :::
 

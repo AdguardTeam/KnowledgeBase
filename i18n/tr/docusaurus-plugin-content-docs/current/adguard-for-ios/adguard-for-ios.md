@@ -3,7 +3,7 @@ title: iOS için AdGuard
 sidebar_position: 1
 ---
 
-- [Özellikler](/adguard-for-windows/features/features.md)
+- [Özellikler](/archive/adguard-for-windows/features/features.md)
 
   Main features and settings available in AdGuard for iOS
 

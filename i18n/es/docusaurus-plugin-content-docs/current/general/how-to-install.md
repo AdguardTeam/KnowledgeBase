@@ -9,7 +9,7 @@ Dependiendo de la aplicación AdGuard o de la extensión del navegador que desee
 
 [AdGuard para iOS](/adguard-for-ios/installation)
 
-[AdGuard para Windows](/adguard-for-windows/installation)
+[AdGuard para Windows](/adguard-for-windows/)
 
 [AdGuard para Mac](/adguard-for-mac/installation)
 

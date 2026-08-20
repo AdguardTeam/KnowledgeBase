@@ -35,7 +35,7 @@ sidebar_position: 3
 
 ### Windows 系统 {#windows}
 
-- 打开 [AdGuard 浏览器助手](/adguard-for-windows/browser-assistant)，点击「**报告问题**」：
+- 打开 [AdGuard 浏览器助手](/archive/adguard-for-windows/browser-assistant)，点击「**报告问题**」：
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 

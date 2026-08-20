@@ -35,7 +35,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ### Windows {#windows}
 
-- Open [AdGuard Browser Assistant](/adguard-for-windows/browser-assistant) and hit **Report an issue**:
+- Open [AdGuard Browser Assistant](/archive/adguard-for-windows/browser-assistant) and hit **Report an issue**:
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 

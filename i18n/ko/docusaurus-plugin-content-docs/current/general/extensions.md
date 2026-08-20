@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::note 지원되는 앱
 
-AdGuard는 유저스크립트 관리자 역할을 수행하여 웹사이트 기능을 크게 확장할 수 있습니다. 다음 제품에서 사용자 정의 스크립트를 추가하거나 기존 스크립트를 관리할 수 있습니다: [Windows용 AdGuard](/adguard-for-windows/features/extensions), [Android용 AdGuard](/adguard-for-android/features/settings#userscripts), [Mac용 AdGuard](/adguard-for-mac/features/extensions).
+AdGuard는 유저스크립트 관리자 역할을 수행하여 웹사이트 기능을 크게 확장할 수 있습니다. 다음 제품에서 사용자 정의 스크립트를 추가하거나 기존 스크립트를 관리할 수 있습니다: [Windows용 AdGuard](/adguard-for-windows/protection/extensions), [Android용 AdGuard](/adguard-for-android/features/settings#userscripts), [Mac용 AdGuard](/adguard-for-mac/features/extensions).
 
 :::
 

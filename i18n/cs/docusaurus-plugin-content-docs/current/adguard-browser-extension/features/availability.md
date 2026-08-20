@@ -13,7 +13,7 @@ Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze v
 
 ![AdGuard Browser Extension for Chrome \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
-Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
+Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/archive/adguard-for-windows/) and [AdGuard for Mac](/adguard-for-mac/features/main).
 
 ![Available for most popular browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 

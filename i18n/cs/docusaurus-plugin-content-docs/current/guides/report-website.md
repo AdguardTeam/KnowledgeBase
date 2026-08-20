@@ -35,7 +35,7 @@ Chcete-li nahlásit opakované vložení reklamy nebo nesprávné zobrazení web
 
 ### Windows {#windows}
 
-- Otevřete [AdGuard Asistenta prohlížeče](/adguard-for-windows/browser-assistant) a stiskněte **Nahlásit problém**:
+- Otevřete [AdGuard Asistenta prohlížeče](/archive/adguard-for-windows/browser-assistant) a stiskněte **Nahlásit problém**:
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 

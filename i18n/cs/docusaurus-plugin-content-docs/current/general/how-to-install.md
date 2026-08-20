@@ -9,7 +9,7 @@ Podle toho, kterou aplikaci AdGuard nebo rozšíření prohlížeče chcete nain
 
 [AdGuard pro iOS](/adguard-for-ios/installation)
 
-[AdGuard pro Windows](/adguard-for-windows/installation)
+[AdGuard pro Windows](/archive/adguard-for-windows/)
 
 [AdGuard pro macOS](/adguard-for-mac/installation)
 

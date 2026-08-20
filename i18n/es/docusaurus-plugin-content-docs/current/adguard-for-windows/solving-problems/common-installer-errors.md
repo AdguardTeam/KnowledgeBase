@@ -63,7 +63,7 @@ El error suena más aterrador de lo que realmente es. En realidad, este es un er
 
 - Elige otra carpeta de instalación. Es posible que la carpeta de instalación actual tenga algunas restricciones de acceso. También asegúrate de no seleccionar una unidad externa, una unidad virtual, etc.
 
-- Desinstala AdGuard usando nuestra herramienta especial de desinstalación [](../../installation#advanced) y luego repite la instalación.
+- Desinstala AdGuard usando nuestra herramienta especial de desinstalación [](/archive/adguard-for-windows/installation#advanced) y luego repite la instalación.
 
 - Inicia y vuelve a registrar el servicio Microsoft Installer. Esto puede resultar laborioso.
 
@@ -99,7 +99,7 @@ Es muy probable que ya hayas instalado AdGuard.
 
 - Verifica si AdGuard ya está instalado en tu ordenador. Puedes hacerlo presionando la tecla *Win* y escribiendo ***AdGuard***.
 
-- Tal vez haya algunos archivos sobrantes de una instalación anterior de AdGuard. Desinstala AdGuard usando nuestra herramienta especial de desinstalación [](../../installation#advanced) y luego repite la instalación.
+- Tal vez haya algunos archivos sobrantes de una instalación anterior de AdGuard. Desinstala AdGuard usando nuestra herramienta especial de desinstalación [](/archive/adguard-for-windows/installation#advanced) y luego repite la instalación.
 
 ### Otros errores {#other}
 

@@ -9,7 +9,7 @@ sidebar_position: 10
 
 [iOS용 AdGuard](/adguard-for-ios/installation)
 
-[Windows용 AdGuard](/adguard-for-windows/installation)
+[Windows용 AdGuard](/adguard-for-windows/)
 
 [Mac용 AdGuard](/adguard-for-mac/installation)
 

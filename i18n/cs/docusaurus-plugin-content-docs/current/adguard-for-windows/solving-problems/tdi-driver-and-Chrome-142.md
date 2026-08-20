@@ -1,11 +1,11 @@
 ---
 title: Problémy s filtrováním v prohlížeči Chrome 142+ při použití ovladače TDI
-sidebar_position: 14
+sidebar_position: 1
 ---
 
 :::info
 
-Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock).
+Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Jedná se o beta verzi, která je stále ve vývoji. Chcete-li vyzkoušet, stáhněte si [beta verzi AdGuard pro Windows](https://agrd.io/windows_beta).
 
 :::
 
@@ -35,7 +35,7 @@ AdGuard již považuje ovladač TDI za zastaralý a v rámci vývoje produktu se
 
 ## Trvalé řešení
 
-Od verze 7.22.4 jsme přidali experimentální podporu pro ovladač SockFilter. Opravuje problém řešením konfliktů v zásobníku WFP. [Více informací](/adguard-for-windows/features/network/#sockfilter-and-other-network-drivers).
+Od verze 8.0 RC jsme přidali experimentální podporu pro ovladač SockFilter. Opravuje problém řešením konfliktů v zásobníku WFP. [Více informací](/adguard-for-windows/settings/app-settings/network-settings/).
 
 Chcete-li tuto funkci použít, přejděte do _Nastavení → Síť → Filtrování provozu_, zapněte filtrování provozu a ze seznamu dostupných možností vyberte _SockFilter (Experimentální)_.
 
@@ -57,8 +57,6 @@ Nemělo by se to **používat** plošně na počítačích koncových uživatel�
 
 :::
 
-#### Použití souborů .reg
-
 Potřebné změny registru můžete provést automaticky pomocí jednoho z níže uvedených předem vygenerovaných souborů .reg. Každý soubor zakazuje sandboxing AppContainer/Network Service pro konkrétní prohlížeč založený na Chromium:
 
 - [Stáhnout Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chrome.reg)
@@ -67,17 +65,6 @@ Potřebné změny registru můžete provést automaticky pomocí jednoho z níž
 - [Stáhnout Brave.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Brave.reg)
 - [Stáhnout Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Vivaldi.reg)
 - [Stáhnout YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_YandexBrowser.reg)
-
-Tyto změny můžete vrátit zpět pomocí souborů .reg pro vrácení změn, které jsou k dispozici níže. Tyto soubory odstraní větve registru, které byly přidány přímou verzí:
-
-- [Undo Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chrome.reg)
-- [Undo Chromium.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chromium.reg)
-- [Undo Edge.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Edge.reg)
-- [Undo Brave.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Brave.reg)
-- [Undo Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Vivaldi.reg)
-- [Undo YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_YandexBrowser.reg)
-
-#### Explicitní úprava registru
 
 Pokud váš prohlížeč není uveden v seznamu, postupujte podle níže uvedených pokynů a vytvořte potřebné položky registru:
 

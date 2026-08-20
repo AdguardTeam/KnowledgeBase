@@ -1,30 +1,45 @@
 ---
-title: AdGuard para Windows
+title: AdGuard para Windows v8
 sidebar_position: 1
 ---
 
 :::info
 
-Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
+Este artigo descreve o AdGuard para Windows v8.0, um bloqueador de anúncios completo que protege seu dispositivo em nível de sistema. Esta é uma versão beta que ainda está em desenvolvimento. Para experimentá-lo, baixe a [versão beta do AdGuard para Windows](https://agrd.io/windows_beta).
 
 :::
 
-- [Recursos](/adguard-for-windows/features/features.md)
+AdGuard para Windows é uma ferramenta fácil de usar que bloqueia banners, pop-ups, anúncios em vídeo e rastreadores irritantes. Mas isso não é tudo: ajuda a economizar tráfego, carregar páginas Web mais rápido e proteger seu computador contra sites indesejáveis e potencialmente maliciosos. O AdGuard também protege você contra sites de phishing e mantém seus filhos longe de conteúdo impróprio.
 
-  Main features and settings available in AdGuard for Windows
+## Requisitos do sistema
 
-- [Instalação](/adguard-for-windows/installation.md)
+- **Versão do sistema operativo:** Microsoft Windows 10 ou superior
+- **RAM:** pelo menos 6 GB
+- **Processador:** 2 núcleos, 2.0 GHz (ou mais rápido)
+- **Espaço livre em disco:** pelo menos 4 GB.
 
-  Instalação, desinstalação e requisitos de sistema do AdGuard para Windows
+---
 
-- [Assistente de navegador](/adguard-for-windows/browser-assistant.md)
+![Tela inicial](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
 
-  Uma extensão que complementa o aplicativo de computador e permite que você gerencie a filtragem do seu navegador
+Na tela inicial, você encontrará um botão para ativar ou desativar a proteção do AdGuard, bem como ícones para _bloqueio de anúncios_, _Proteção contra rastreamento_, _Proteção de DNS_ e _Bloqueio de aborrecimentos_. As configurações principais podem ser acessadas através do menu lateral esquerdo.
 
-- [Resolvendo problemas](/adguard-for-windows/solving-problems/solving-problems.md)
+## [Proteção](/adguard-for-windows/protection/)
 
-  Problemas conhecidos e possíveis soluções
+Configurações para configurar o _Bloqueio de anúncios_, a _Proteção contra rastreamento_, a _Proteção de DNS_, o _Bloqueio de aborrecimentos_, a _Segurança de navegação_, o _Controle parental_ e as _Extensões_.
 
-- [Documentação para administradores](/adguard-for-windows/admins-documentation.md)
+## [Estatísticas](/adguard-for-windows/statistics/)
 
-  Guia de configuração para administradores de sistema
+Informações detalhadas sobre anúncios bloqueados, rastreadores e uso de dados.
+
+## [Gerenciamento de aplicativos](/adguard-for-windows/app-management/)
+
+Configurações para personalizar a filtragem e roteamento de tráfego para cada aplicativo e navegador.
+
+## [Configurações](/adguard-for-windows/settings/)
+
+Opções para selecionar idioma e tema, ver documentos legais, verificar informações da licença e contatar o suporte. Configurações avançadas e configurações de rede também estão presentes lá.
+
+Clique em _Verificar atualizações_ para ver se a versão do seu aplicativo, as filtragens e as extensões estão atualizadas.
+
+![Verificar atualizações](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/checking_for_updates.png)

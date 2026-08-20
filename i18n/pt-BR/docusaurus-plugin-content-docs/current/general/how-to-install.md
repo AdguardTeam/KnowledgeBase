@@ -9,7 +9,7 @@ Depending on which AdGuard app or browser extension you want to install, follow 
 
 [AdGuard para iOS](/adguard-for-ios/installation)
 
-[AdGuard para Windows](/adguard-for-windows/installation)
+[AdGuard para Windows](/adguard-for-windows/)
 
 [AdGuard para Mac](/adguard-for-mac/installation)
 

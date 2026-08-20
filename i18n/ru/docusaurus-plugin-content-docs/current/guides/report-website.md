@@ -35,7 +35,7 @@ sidebar_position: 3
 
 ### Windows {#windows}
 
-- Откройте [Браузерный помощник AdGuard](/adguard-for-windows/browser-assistant) и нажмите **Сообщить о проблеме**:
+- Откройте [Браузерный помощник AdGuard](/archive/adguard-for-windows/browser-assistant) и нажмите **Сообщить о проблеме**:
 
 ![окна *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 
