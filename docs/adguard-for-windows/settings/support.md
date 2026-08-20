@@ -3,12 +3,6 @@ title: Support
 sidebar_position: 3
 ---
 
-:::info
-
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
-
-:::
-
 ![Support](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/support.png)
 
 Use this section if you have any questions or suggestions about AdGuard for Windows v8.0. We recommend checking the [FAQ](https://adguard.com/support/faq.html) and this Knowledge base before contacting support.

@@ -3,12 +3,6 @@ title: DNS protection
 sidebar_position: 4
 ---
 
-:::info
-
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
-
-:::
-
 DNS protection gives you more control over how your device connects to the Internet. There are three main reasons why it can be useful:
 
 ## 1. Protect your privacy from your ISP

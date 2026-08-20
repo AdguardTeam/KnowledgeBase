@@ -3,12 +3,6 @@ title: Statistics
 sidebar_position: 1
 ---
 
-:::info
-
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
-
-:::
-
 In *Statistics*, you see a complete picture of what is happening with the traffic on your computer: how many requests are being sent and to which companies, how much data is being uploaded and downloaded, what requests are being blocked. You can check statistics for various time frames: all time, the last 14 days, the last 7 days, the last 24 hours, and broken down by ads, trackers, or requests.
 
 ![Customize stats](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/statistics/stats.png)

@@ -3,12 +3,6 @@ title: Browsing security
 sidebar_position: 5
 ---
 
-:::info
-
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
-
-:::
-
 *Browsing security* offers strong protection against harmful websites and phishing attempts.
 
 While AdGuard for Windows is not an antivirus, it does provide essential security by warning you before visiting untrusted sites or downloading potentially dangerous files.

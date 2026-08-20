@@ -3,12 +3,6 @@ title: Parental control
 sidebar_position: 6
 ---
 
-:::info
-
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
-
-:::
-
 There are several websites that children shouldn’t be able to access. *Parental control* helps you solve this problem.
 
 ![Parental control](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/parental.png)

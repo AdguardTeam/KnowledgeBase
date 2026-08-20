@@ -3,12 +3,6 @@ title: AdGuard for Windows
 sidebar_position: 1
 ---
 
-:::info
-
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
-
-:::
-
 AdGuard for Windows is an easy-to-use tool that blocks annoying banners, popups, video ads, and trackers. But that’s not all: it helps you save traffic, load web pages faster, and protect your computer from undesirable and potentially malicious websites. AdGuard also protects you from phishing websites and keeps your kids away from inappropriate content.
 
 ## System requirements
