@@ -35,7 +35,7 @@ AdGuard für Windows führt zwei Prozesse aus: `Adguard.exe` und `AdguardSvc.exe
 
 ![Zwei Prozesse *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/two_processes_en.png)
 
-Da Dump-Dateien groß sein können, komprimieren Sie sie bitte in einem Archiv, bevor Sie sie an den Support senden. Fügen Sie außerdem die AdGuard-Protokolle bei, damit wir das Problem effektiver diagnostizieren können. [Anweisungen zum Erfassen von Protokollen](../adguard-logs).
+Da Dump-Dateien groß sein können, komprimieren Sie sie bitte in einem Archiv, bevor Sie sie an den Support senden. Fügen Sie außerdem die AdGuard-Protokolle bei, damit wir das Problem effektiver diagnostizieren können. [Anweisungen zum Erfassen von Protokollen](/archive/adguard-for-windows/solving-problems/adguard-logs).
 
 ## Erfassen der Datei `wfpdiag.cab`
 

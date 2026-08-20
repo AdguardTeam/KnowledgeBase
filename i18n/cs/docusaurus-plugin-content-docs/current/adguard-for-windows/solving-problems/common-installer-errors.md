@@ -63,7 +63,7 @@ Chyba zní děsivěji, než ve skutečnosti je. Ve skutečnosti se jedná o pom�
 
 - Zvolte jinou složku pro instalaci. Je možné, že aktuální složka pro instalaci má nějaká omezení přístupu. Také se ujistěte, že jste nevybrali externí jednotku, virtuální jednotku atd.
 
-- Odinstalujte AdGuard pomocí našeho speciálního [nástroje pro odinstalaci](../../installation#advanced) a poté instalaci zopakujte.
+- Odinstalujte AdGuard pomocí našeho speciálního [nástroje pro odinstalaci](/archive/adguard-for-windows/installation#advanced) a poté instalaci zopakujte.
 
 - Spusťte a znovu zaregistrujte službu Microsoft Installer. Vyžaduje to určitou práci.
 
@@ -99,7 +99,7 @@ Je velmi pravděpodobné, že jste si AdGuard již dříve nainstalovali.
 
 - Zkontrolujte, zda je v počítači již nainstalován AdGuard. Můžete to udělat stisknutím klávesy *Win* a zadáním názvu ***AdGuard***.
 
-- Možná tam jsou nějaké zbytky souborů z předchozí instalace AdGuardu. Odinstalujte AdGuard pomocí našeho speciálního [nástroje pro odinstalaci](../../installation#advanced) a poté instalaci zopakujte.
+- Možná tam jsou nějaké zbytky souborů z předchozí instalace AdGuardu. Odinstalujte AdGuard pomocí našeho speciálního [nástroje pro odinstalaci](/archive/adguard-for-windows/installation#advanced) a poté instalaci zopakujte.
 
 ### Další chyby {#other}
 
