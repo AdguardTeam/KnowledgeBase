@@ -95,6 +95,10 @@ Here we will describe some of the most popular userscript catalogs.
 
 [OpenUserJS.org](https://openuserjs.org/) is an open-source userscript catalog written in nodeJS. It's not moderated, so keep an eye out for suspicious scripts.
 
+#### NamuLink
+
+[NamuLink](https://github.com/FilteringDev/NamuLink) is an open-source userscript that removes Naver PowerLink advertisements from NamuWiki by bypassing the site's advanced link obfuscation mechanisms. The project is maintained by the AdGuard team and the broader ad-blocking community.
+
 #### Community
 
 If you like the idea of customizing your browser with userscripts and have questions, you can ask them on one of these websites:
