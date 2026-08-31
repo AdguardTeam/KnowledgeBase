@@ -11,38 +11,26 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 _Koruma_ sekmesi aşağıdaki özellikleri veya ayarları içerir. Her biri hakkında detaylı bilgiyi bu Bilgi Tabanında bulabilirsiniz.
 
-## Ad blocking
+- [Reklam engelleme](/adguard-for-android/features/protection/ad-blocking.md)
 
-Settings to block ads in browsers and apps
+  Settings to block ads in browsers and apps
 
-[Reklam engelleme](/adguard-for-android/features/protection/ad-blocking.md)
+- [İzleme koruması](/adguard-for-android/features/protection/tracking-protection.md)
 
-## Tracking protection
+  Settings that allow you to block tracking tools that collect user information
 
-Settings that allow you to block tracking tools that collect user information
+- [Can sıkıcı öğe engelleme](/adguard-for-android/features/protection/annoyance-blocking.md)
 
-[İzleme koruması](/adguard-for-android/features/protection/tracking-protection.md)
+  Settings to block annoyances such as cookie consent popups, social widgets, and banners that prompt you to download mobile apps
 
-## Can sıkıcı öğe engelleme
+- [DNS koruması](/adguard-for-android/features/protection/dns-protection.md)
 
-Settings to block annoyances such as cookie consent popups, social widgets, and banners that prompt you to download mobile apps
+  DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
 
-[Can sıkıcı öğe engelleme](/adguard-for-android/features/protection/annoyance-blocking.md)
+- [Güvenlik duvarı](/adguard-for-android/features/protection/firewall/firewall.md)
 
-## DNS koruması
+  A feature that allows you to control Internet access for individual apps
 
-DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
+- [Gezinti koruması](/adguard-for-android/features/protection/browsing-security.md)
 
-[DNS koruması](/adguard-for-android/features/protection/dns-protection.md)
-
-## Güvenlik duvarı
-
-A feature that allows you to control Internet access for individual apps
-
-[Güvenlik duvarı](/adguard-for-android/features/protection/firewall/firewall.md)
-
-## Gezinti koruması
-
-A feature that blocks access to malicious and phishing websites and protects you from online threats
-
-[Gezinti koruması](/adguard-for-android/features/protection/browsing-security.md)
+  A feature that blocks access to malicious and phishing websites and protects you from online threats

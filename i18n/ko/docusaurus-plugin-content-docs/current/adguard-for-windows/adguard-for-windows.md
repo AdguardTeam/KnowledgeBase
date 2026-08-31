@@ -1,40 +1,45 @@
 ---
-title: Windows용 AdGuard
+title: AdGuard for Windows v8
 sidebar_position: 1
 ---
 
 :::info
 
-본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 이용하고자 한다면 [AdGuard 앱을 다운로드](https://agrd.io/download-kb-adblock)해 보세요.
+This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
 
 :::
 
-## 기능
+Windows용 AdGuard는 성가신 배너, 팝업, 동영상 광고 및 트래커를 차단하는 사용하기 쉬운 도구입니다. But that’s not all: it helps you save traffic, load web pages faster, and protect your computer from undesirable and potentially malicious websites. 또한 AdGuard는 피싱 웹사이트로부터 사용자를 보호하고 자녀가 부적절한 콘텐츠를 보지 못하도록 차단합니다.
 
-Windows용 AdGuard의 주요 기능 및 설정
+## 시스템 요구 사항
 
-[기능](/adguard-for-windows/features/features.md)
+- **OS version:** Microsoft Windows 10 or higher
+- **RAM:** at least 6 GB
+- **Processor:** 2-core, 2.0 GHz (or faster)
+- **Free disk space:** at least 4 GB.
 
-## 설치 방법
+---
 
-Windows용 AdGuard의 설치, 제거 방법 및 시스템 요구 사항
+![Home screen](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
 
-[설치](/adguard-for-windows/installation.md)
+On the Home screen, you’ll find a toggle to enable or disable AdGuard protection, as well as icons for _Ad blocking_, _Tracking protection_, _DNS protection_, and _Annoyance blocking_. Main settings can be accessed through the left-side menu.
 
-## 브라우저 어시스턴트
+## [Protection](/adguard-for-windows/protection/)
 
-데스크톱 프로그램을 보완하고 브라우저에서 필터링을 관리할 수 있는 확장 프로그램입니다.
+Settings to configure _Ad blocking_, _Tracking protection_, _DNS protection_, _Annoyances blocking_, _Browsing security_, _Parental control_, and _Extensions_.
 
-[브라우저 어시스턴트](/adguard-for-windows/browser-assistant.md)
+## [Statistics](/adguard-for-windows/statistics/)
 
-## 문제 해결
+Detailed information about blocked ads, trackers, and data usage.
 
-알려진 문제 및 해결 방법
+## [App management](/adguard-for-windows/app-management/)
 
-[문제 해결](/adguard-for-windows/solving-problems/solving-problems.md)
+Settings to customize traffic filtering and routing for each app and browser.
 
-## 관리자를 위한 문서
+## [Settings](/adguard-for-windows/settings/)
 
-시스템 관리자를 위한 구성 가이드
+Options to select language and theme, view legal documents, check license information, and contact support. Advanced settings and network settings also live there.
 
-[관리자를 위한 문서](/adguard-for-windows/admins-documentation.md)
+Click _Check for updates_ to see whether your app version, filters, and extensions are up to date.
+
+![Check for updates](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/checking_for_updates.png)

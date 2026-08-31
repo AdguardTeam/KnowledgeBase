@@ -81,11 +81,12 @@ Cílem filtrů pro blokování reklam je blokovat všechny typy reklam na webov�
 ### Omezení a výjimky
 
 - Vlastní reklama webu by neměla být záměrně blokována. Pokud je však blokování způsobeno obecnými pravidly filtrování, nemělo by být odblokováno
-- Oprávnění pro přístup k obsahu, jako jsou paywally, nejsou blokována
+- Opatření omezující přístup k obsahu, jako jsou placené přístupy, nejsou blokována filtry na blokování reklam. Mohou však být blokovány filtry ochrany před sledováním, pokud by jejich činnost vedla k porušení soukromí uživatele
 - Anti-adblock budou blokovány v následujících případech:
     - Agresivně trvají na vypnutí nebo odstranění blokátoru reklam nebo účinně brání používání webových stránek
     - Obsahují nesprávné a zavádějící popisy možných důsledků používání blokátorů reklamy
     - Vystavují návštěvníky riziku malvertisingu — když povolené reklamy pocházejí z pochybných zdrojů
+    - Porušují nebo negativně ovlivňují soukromí uživatelů
 - Neblokujeme zprávy o detekci blokování reklam, které splňují alespoň jedno z následujících kritérií:
     - Umožňují používání webových stránek a nepřekrývají značné množství obsahu
     - Poskytují alternativu k deaktivaci blokátoru reklam, protože tato alternativa neohrožuje soukromí ani bezpečnost uživatelů
@@ -110,6 +111,7 @@ Cílem filtrů pro blokování reklam je blokovat všechny typy reklam na webov�
 AdGuard filtr ochrany sledování obsahují:
 
 - AdGuard filtr ochrany sledování
+- AdGuard Mail Tracking Protection filter
 - AdGuard filtr sledování URL
 
 ### Účel těchto filtrů
@@ -128,6 +130,8 @@ Co je blokováno:
 - Funkce Privacy Sandbox v Google Chrome a jeho odnože používané pro sledování (Google Topics API, Protected Audience API)
 
 **Filtr sledování URL** je určen k odstranění sledovacích parametrů z webových adres
+
+The **Mail Tracking Protection filter** blocks tracking pixels embedded in emails to prevent senders from monitoring when you open messages.
 
 ### Omezení a výjimky
 
@@ -165,13 +169,11 @@ Pro lepší přizpůsobení jsou filtry obtěžování rozděleny podle účelu:
 
 #### AdGuard Cookie Notices filter
 
-Tento filtr je navržen tak, aby blokoval oznámení o souborech cookies i požadavky platforem pro správu souborů cookies (CMP). Na oznámení o cookiess a CMP lze použít různé metody. Ve většině případů stačí příslušné skripty jednoduše skrýt nebo zablokovat. Pokud však funkce webu a zobrazování obsahu třetích stran vyžadují souhlas se soubory cookies, používají se následující metody:
+Tento filtr je navržen tak, aby blokoval oznámení o souborech cookies i požadavky platforem pro správu souborů cookies (CMP). V závislosti na tom, jakým způsobem webová stránka implementuje mechanismus pro získávání souhlasu, mohou být použity různé metody.
 
-- Skriptlety se používají k obejití žádosti o souhlas (prakticky nepoužitelné na webech s omezením načítání obsahu třetích stran, dokud není učiněno rozhodnutí)
-- Nastavení souboru cookies nebo klíče v místním úložišti webu takovým způsobem, aby skript považoval volbu uživatele za provedenou
-- Simulace akce uživatele pomocí pravidla, které klikne na zadané tlačítko a přeruší jeho provádění 10 sekund po načtení. Jsou možné dvě možnosti:
-    - Odmítnout (s výjimkou funkčních souborů cookies — v závislosti na systému CMP) — preferovaná možnost, protože je menší riziko na načtení dalších analytických nástrojů
-    - Přijmout — tato možnost se používá jako poslední možnost, pokud jiné metody selžou. V tomto případě je web navíc kontrolován na použití analytických nástrojů, které jsou pak blokovány filtrem **AdGuard Tracking Protection**
+Ve většině případů stačí příslušné skripty jednoduše skrýt nebo zablokovat. Pokud však webová stránka vyžaduje souhlas s používáním souborů cookies, aby mohly fungovat určité funkce nebo obsah třetích stran, filtr tuto žádost automaticky zpracuje pomocí alternativních metod.
+
+Pokud je to možné, jsou nepodstatné soubory cookies ve výchozím nastavení odmítány. Pokud to není technicky možné a pro správné fungování stránky je nutné udělit souhlas, je web dodatečně zkontrolován z hlediska analytických a sledovacích technologií, které jsou následně blokovány **filtrem ochrany před sledováním AdGuard**.
 
 **Omezení a výjimky**
 
@@ -244,7 +246,7 @@ Filtr sociálních médií AdGuard obsahuje:
 
 ### Účel těchto filtrů
 
-Tento filtr zablokuje widgety sociálních médií na webových stránkách třetích stran, například tlačítka "Like" a "Share", widgety skupin, doporučující a podobné widgety.
+Tento filtr zablokuje widgety sociálních médií na webových stránkách třetích stran, například tlačítka “Like” a “Share” widgety skupin, doporučující a podobné widgety.
 
 ### Omezení a výjimky
 
@@ -301,3 +303,34 @@ Tento filtr je určen k testování a ladění pravidel, která mohou potenciál
 
 - Pravidla by neměla záměrně narušovat funkčnost webových stránek
 - Pravidla by neměla odblokovávat reklamy nebo jinak porušovat zásady
+
+## How to dispute a blocking rule
+
+AdGuard filter lists are maintained not only by the AdGuard team but also by community contributors. If you believe a blocking rule violates the principles described in this filter policy, you can dispute it by opening an issue on GitHub.
+
+Before submitting a dispute, please make sure you have read this policy carefully. When reviewing your report, filter maintainers will evaluate whether the rule complies with the criteria described above, so your explanation should refer to this policy whenever possible.
+
+### How to submit a dispute
+
+You can submit a dispute by using [our report tool](https://reports.adguard.com/new_issue.html). See the step-by-step guide in our [dedicated article](https://adguard.com/kb/guides/report-website/).
+
+Alternatively, you can report it via GitHub:
+
+1. Go to the [AdGuard Filters GitHub repository](https://github.com/AdguardTeam/AdguardFilters/issues) and create a new issue.
+2. Select the **Report an issue using AdGuard** issue template.
+3. Fill out the template with as much detail as possible.
+
+Your report should include:
+
+- The URL of the affected website.
+- A clear description of what is being blocked.
+- The blocking rule, if you know which one is responsible.
+- Steps to reproduce the issue.
+- Screenshots or other evidence that illustrate the problem, if applicable.
+- A detailed explanation of **why you believe the rule does not comply with this filter policy**. Whenever possible, refer to the relevant section or principle of the policy that you believe the rule violates.
+
+### What makes a good dispute?
+
+Simply stating that you disagree with a blocking rule is usually not enough. To help maintainers evaluate your report, explain why the rule conflicts with the blocking policy rather than why you personally would prefer different behavior.
+
+For example, if you believe a rule blocks content that should not be blocked under this policy, describe which policy criterion applies and how the rule fails to meet it. The more specific and well-supported your report is, the easier it will be for maintainers to review your request and determine whether the rule should be changed.

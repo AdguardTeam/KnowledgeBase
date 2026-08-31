@@ -33,4 +33,4 @@ Puteți configura AdGuard pentru a direcționa tot traficul dispozitivului dvs. 
 
 Puteți folosi AdGuard ca server proxy HTTP. Aceasta vă va permite să filtrați traficul pe alte dispozitive conectate la proxy.
 
-Asigurați-vă că Mac-ul dvs. și alt dispozitiv sunt conectate la aceeași rețea și introduceți portul proxy pe dispozitivul pe care doriți să-l redirecționați prin intermediul serverului proxy (de obicei, în setările de rețea). Pentru a filtra traficul HTTPS, [transferați certificatul proxy AdGuard](http://local.adguard.org/cert) pe acest dispozitiv. [Aflați mai multe despre instalarea unui certificat proxy](/guides/proxy-certificate)
+Asigurați-vă că Mac-ul dvs. și alt dispozitiv sunt conectate la aceeași rețea și introduceți portul proxy pe dispozitivul pe care doriți să-l redirecționați prin intermediul serverului proxy (de obicei, în setările de rețea). To filter HTTPS traffic as well, [transfer AdGuard’s proxy certificate](https://local.adguard.org/cert) to this device. [Aflați mai multe despre instalarea unui certificat proxy](/guides/proxy-certificate)

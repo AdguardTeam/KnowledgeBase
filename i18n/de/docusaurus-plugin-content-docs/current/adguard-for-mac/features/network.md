@@ -33,4 +33,4 @@ Sie können AdGuard so einrichten, dass der gesamte Datenverkehr Ihres Geräts �
 
 Sie können AdGuard als HTTP-Proxy-Server verwenden. So können Sie den Datenverkehr auf anderen Geräten filtern, die mit dem Proxy verbunden sind.
 
-Vergewissern Sie sich, dass Ihr Mac und Ihr anderes Gerät mit demselben Netzwerk verbunden sind, und geben Sie den Proxy-Port auf dem Gerät ein, das Sie über Ihren Proxy-Server leiten möchten (normalerweise in den Netzwerkeinstellungen). Um auch HTTPS-Verkehr zu filtern, [übertragen Sie das Proxy-Zertifikat von AdGuard](http://local.adguard.org/cert) auf dieses Gerät. [Weitere Informationen zur Installation eines Proxy-Zertifikats](/guides/proxy-certificate)
+Vergewissern Sie sich, dass Ihr Mac und Ihr anderes Gerät mit demselben Netzwerk verbunden sind, und geben Sie den Proxy-Port auf dem Gerät ein, das Sie über Ihren Proxy-Server leiten möchten (normalerweise in den Netzwerkeinstellungen). Um auch HTTPS-Verkehr zu filtern, [übertragen Sie das Proxy-Zertifikat von AdGuard](https://local.adguard.org/cert) auf dieses Gerät. [Weitere Informationen zur Installation eines Proxy-Zertifikats](/guides/proxy-certificate)

@@ -18,6 +18,6 @@ Um das Beste aus den AdGuard-Produkten herauszuholen, können Sie Ihre Lizenz er
 - Um die Anzahl der Geräte zu erweitern, können Sie **Ihre Einzellizenz auf eine Familienlizenz** erweitern
 - Sie können auch von Ihrem**1-Jahres-Abonnement auf eine lebenslange Lizenz umsteigen**
 
-Sie können Ihre Lizenz in Ihrem AdGuard-Konto erweitern. Klicken Sie dazu auf *Auf Lebenslange Lizenz umsteigen* oder *Gerätelimit erhöhen*.
+You can upgrade your license in your [AdGuard account](https://adguardaccount.com). Klicken Sie dazu auf *Auf Lebenslange Lizenz umsteigen* oder *Gerätelimit erhöhen*.
 
 ![Erweitern](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

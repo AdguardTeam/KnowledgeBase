@@ -21,19 +21,19 @@ L'ancienne extension bêta sera renommée [**AdGuard Ad Blocker MV2**](https://c
 
 - **Journal de filtrage**
 
-  ![Journal de filtrage \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+  ![Filtering log \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/filtering_log.png)
 
   À cause des restrictions imposées par le DNR, nous ne pouvons pas indiquer exactement quelle règle a fonctionné, mais nous fournirons une "règle présumée qui a été déclenchée" sur la base de notre moteur. Pour obtenir des informations précises, vous devrez installer vous-même la version "décompressée" de l'extension dans votre navigateur. Vous trouverez des instructions détaillées sur la manière de procéder dans un [article séparé] (/adguard-browser-extension/solving-problems/debug-rules/).
 
 - _Protection contre le suivi_ (anciennement connu sous le nom de _Mode furtif_)
 
-  ![Protection contre le suivi \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+  ![Tracking protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
 
   Il n'y a pas de section _Cookies_, ainsi que d'_Autodestruction des cookies propriétaires_ et d'_Autodestruction des cookies tiers_ puisque nous ne pouvons pas définir le TTL des cookies à l'aide de règles déclaratives.
 
 - _La protection contre l’hameçonnage et les logiciels malveillants_ n’est plus disponible dans les paramètres généraux. Pour vous protéger des sites web malveillants et des escroqueries, activez les filtres de _Sécurité_ appropriés dans l'onglet _Filtres_.
 
-  ![Sécurité \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![Security \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/security_filters.png)
 
 ## Limitations
 
@@ -55,7 +55,7 @@ Le nombre maximum de filtres activés simultanément est de **50**.
 
 Les **Règles dynamiques :** un plafond strict de **5 000** règles est imposé, ce qui inclut un maximum de 1 000 règles d'expression régulière.
 
-If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules and finally Custom filters.
+Si cette limite est dépassée, seulement **5 000 règles converties** seront appliquées dans l’ordre suivant : d’abord la Liste autorisée, puis les Règles Utilisateur et enfin les Filtres personnalisés.
 
 > **Les règles converties** sont des règles qui ont été transformées
 > au \[format DNR] à l'aide du [convertisseur déclaratif][github-declarative-converter].
@@ -104,5 +104,5 @@ Vous trouverez plus de détails sur les limitations sur [GitHub][github-declarat
 Pour plus d'informations sur les modificateurs, veuillez vous référer à notre [Base de connaissances](/general/ad-filtering/create-own-filters).
 
 [DNR format]: https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest#build-rules
-[github-declarative-converter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#table-of-contents
-[github-declarative-converter-examples]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#basic-examples
+[github-declarative-converter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/dnr-converter/src/examples/README.md#table-of-contents
+[github-declarative-converter-examples]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/dnr-converter/src/examples/README.md#basic-examples

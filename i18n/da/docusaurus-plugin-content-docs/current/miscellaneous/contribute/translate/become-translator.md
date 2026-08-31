@@ -1,5 +1,5 @@
 ---
-title: Becoming a translator/proofreader
+title: At blive oversætter/korrekturlæser
 sidebar_position: 2
 ---
 

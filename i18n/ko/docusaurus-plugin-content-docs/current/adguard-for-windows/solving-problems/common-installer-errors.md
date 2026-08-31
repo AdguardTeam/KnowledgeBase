@@ -27,7 +27,7 @@ sidebar_position: 6
 
 - AdGuard를 설치하려고 했던 드라이브에서 일부 프로그램을 제거하거나 불필요한 파일을 삭제하세요.
 
-- Malwarebytes의 무료 소프트웨어인 [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/)를 다운로드, 설치 및 실행하세요. 무엇보다도 프로그램 등을 잘못 제거한 후 남아있는 모든 종류의 불필요한 파일로부터 시스템을 정리합니다. 디스크 공간을 정리하는 데 도움이 됩니다.
+- Download, install, and run [AdwCleaner](https://www.bleepingcomputer.com/download/adwcleaner/), a free piece of software by Malwarebytes. 무엇보다도 프로그램 등을 잘못 제거한 후 남아있는 모든 종류의 불필요한 파일로부터 시스템을 정리합니다. 디스크 공간을 정리하는 데 도움이 됩니다.
 
 - 컴퓨터를 재부팅합니다. 임시 파일은 디스크 공간을 상당히 많이 차지할 수 있으므로 PC를 재시작하는 것이 가장 안정적인 방법으로 임시 파일을 제거할 수 있습니다.
 
@@ -63,7 +63,7 @@ sidebar_position: 6
 
 - 다른 설치 폴더를 선택하세요. 현재 설치 폴더에 일부 액세스 제한이 있을 수 있습니다. 또한 외장 드라이브, 가상 드라이브 등을 선택하지 않았는지 확인하세요.
 
-- 전용 [제거 도구를](../../installation#advanced) 사용하여 AdGuard를 제거한 다음 설치를 반복하세요.
+- 전용 [제거 도구를](/archive/adguard-for-windows/installation#advanced) 사용하여 AdGuard를 제거한 다음 설치를 반복하세요.
 
 - Microsoft 설치 관리자 서비스를 시작하고 다시 등록합니다. 다음 단계를 따르세요.
 
@@ -99,7 +99,7 @@ sidebar_position: 6
 
 - 컴퓨터에 AdGuard가 이미 설치되어 있는지 확인하세요. *Win* 키를 누르고 다음을 입력하면 됩니다. ***AdGuard***.
 
-- 이전에 AdGuard를 설치한 후 남은 파일이 있을 수 있습니다. 전용 [제거 도구를](../../installation#advanced) 사용하여 AdGuard를 제거한 다음 설치를 반복하세요.
+- 이전에 AdGuard를 설치한 후 남은 파일이 있을 수 있습니다. 전용 [제거 도구를](/archive/adguard-for-windows/installation#advanced) 사용하여 AdGuard를 제거한 다음 설치를 반복하세요.
 
 ### 기타 오류 {#other}
 

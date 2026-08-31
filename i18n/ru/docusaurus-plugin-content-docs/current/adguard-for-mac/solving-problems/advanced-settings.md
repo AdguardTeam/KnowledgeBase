@@ -57,6 +57,10 @@ sidebar_position: 9
 
 Установив значение `true`, вы включите проверку отзыва HTTPS-сертификатов.
 
+#### `network.http.compress.body`
+
+Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering engine, will compress the HTTP response body before sending it with the original response algorithm (if supported) or with the default fallback algorithm (GZip). Responses from BrowserApi will also be encoded if this option is enabled.
+
 #### `network.tcp.keepalive.enabled`
 
 Периодически отправляет TCP-пакеты по неактивному соединению, чтобы убедиться в его работоспособности и продлить время ожидания NAT.
@@ -179,11 +183,11 @@ Secures DNS proxy connections with a hybrid post-quantum key exchange, combining
 
 #### `stealth.antidpi.http.split.fragment.size`
 
-Настраивает размер фрагментации HTTP-запроса. Допустимые значения: 1–1500. Если указан недопустимый размер, система будет использовать значение по умолчанию.
+Настраивает размер фрагментации HTTP-запроса. Valid values: 1–1500. Если указан недопустимый размер, система будет использовать значение по умолчанию.
 
 #### `stealth.antidpi.clienthello.split.fragment.size`
 
-Этот параметр определяет размер фрагментации пакетов TCP, что помогает избежать глубокой проверки пакетов (Deep Packet Inspection). Допустимые значения: 1–1500. Если указан недопустимый размер, система будет использовать значение по умолчанию.
+Этот параметр определяет размер фрагментации пакетов TCP, что помогает избежать глубокой проверки пакетов (Deep Packet Inspection). Valid values: 1–1500. Если указан недопустимый размер, система будет использовать значение по умолчанию.
 
 #### `stealth.antidpi.http.space.juggling`
 

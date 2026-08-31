@@ -1,98 +1,98 @@
 ---
-title: Problems caused by multiple user profiles
+title: Problemer forårsaget af flere brugerprofiler
 sidebar_position: 9
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
 In this article you will find the methods on how to solve problems with AdGuard when you set up *multiple accounts* or *Restricted Profiles* on your Android devices.
 
-## Problems caused by multiple user profiles
+## Problemer forårsaget af flere brugerprofiler
 
-On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. This happens because AdGuard is installed for a different user profile on the device.
+Er AdGuard installeret på Android 9 og senere for mere end én brugerprofil på enheden, kan der opstå problemer ved afinstallation af appen. Når AdGuard afinstalleres i én brugerprofil, vises appen stadig på app-listen, men den vil hverken kunne afinstallere eller geninstalleres. This happens because AdGuard is installed for a different user profile on the device.
 
 If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
 
-To solve this problem, you need to uninstall the application for all users: go to Settings → All apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
+For at løse dette problem skal appen afinstalleres for alle brugere: Gå til Indstillinger → Alle apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
 
 ![Uninstall *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 
-## Problems caused by using a Restricted Mode profile
+## Problemer forårsaget af brug af en Begrænset tilstandsprofil
 
-The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. If you have such a profile, **AdGuard**, like other applications that use VPN, gets restrictions on selective filtering of VPN traffic. As a result, AdGuard cannot launch protection in a **local VPN mode**. Also, one of the reasons for this situation may be using **Dual App/Dual Messenger profile** on your device. Below are described the recommendations that you can apply when this problem occurs.
+Ejere af mobiler, tablets eller TV'er med Android 7+ som operativsystem, kan stå over for problemet forårsaget ved brug af **en profil med Begrænset tilstand**. Haves en sådan profil, begrænses **AdGuard** ligesom andre apps, som bruger VPN, i selektiv filtrering af VPN-trafik. Som en konsekvens kan AdGuard ikke starte beskyttelse i en **lokal VPN-tilstand**. En af årsagerne til denne situation kan også være brugen af **Dual App/Dual Messenger-profil** på enheden. Nedenfor beskrives de anbefalinger, som kan anvendes, hvis dette problem opstår.
 
-### Solutions
+### Løsninger
 
-You have three ways to solve the issue:
+Der er tre måder at løse problemet på:
 
-### Option 1: Grant permissions to AdGuard using ADB
+### Mulighed 1: Tildel AdGuard tilladelser via ADB
 
 :::note
 
-This approach is available starting from **AdGuard v3.5 nightly 6**. If you're using an older version, you can get the latest update [here](https://adguard.com/adguard-android/overview.html).
+Denne tilgang er tilgængelig fra **AdGuard v3.5 nightly 6**. Benyttes en ældre version, kan den seneste opdatering hentes [hér](https://adguard.com/adguard-android/overview.html).
 
 :::
 
-1. Activate the **developer mode** and enable **USB debugging**:
+1. Aktivér både **Udviklertilstand** samt **USB-fejlfinding**:
 
-    - Open the **Settings** app phone;
-    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
-    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
+    - Åbn appen **Indstillinger** på mobilen;
+    - Gå til afsnittet **System** (sidste punkt på indstillingsmenuen). Find i dette afsnit underpunktet **Om telefon**;
+    - Tryk 7 gange på linjen **Build-nummer**. Dernæst ses meddelelse **Du er nu udvikler** (angiv om nødvendigt enhedens oplåsningskode);
     - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
     :::note
 
-    If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
+    Ved evt. problemer eller yderligere spørgsmål findes den komplette vejledning [hér](https://developer.android.com/studio/debug/dev-options).
 
 
 :::
 
 1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 
-1. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
+1. Tilslut via et **USB-kabel** enheden til den computer/bærbare, på hvilken **ADB** er installeret;
 
-1. Open **the command line** on your PC:
+1. Åbn en **kommandolinje** på PC'en:
 
-    - **Cmd.exe** if you are using **Windows**;
-    - **Terminal** if you are using **macOS**;
+    - **Cmd.exe** i **Windows**;
+    - **Terminal** i **macOS**;
 
-1. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
+1. Indtast kommandoen `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` og tryk på **Retur**.
 
-### Option 2: Remove *restricted user account*
+### Mulighed 2: Fjern *begrænset brugerkonto*
 
-About how to manage user accounts from an Android device you can [find here](https://support.google.com/a/answer/6223444?hl=en).
+Information om håndtering af brugerkonti på en Android-enhed kan findes [hér](https://support.google.com/a/answer/6223444?hl=en).
 
 :::note
 
-In some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual Messenger or Dual App features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
+Begrænsede brugerkonti oprettes i visse tilfælde obligatorisk og ikke kan fjernes. For instance, when you use Dual Messenger or Dual App features on **Samsung** or **LG** devices. Nedenfor beskrives, hvordan problemet løses i sådanne tilfælde.
 
 :::
 
-### Option 3: Use AdGuard in *Local HTTP proxy mode* (requires root)
+### Mulighed 3: Brug AdGuard i *Lokal HTTP-proxytilstand* (kræver root)
 
-To enable this mode, open **AdGuard Settings** → **Network** → **Filtering method** → **Local HTTP proxy**
+For at aktivere denne tilstand, åbn **AdGuard-indstillingerne** → **Netværk** → **Filtreringsmetode** → **Lokal HTTP-proxy**
 
-### LG and Samsung devices
+### LG- og Samsung-enheder
 
-Owners of **LG** or **Samsung** phones may also encounter a similar issue. It can be caused by using **Dual App/Dual Messenger** function (which automatically creates a restricted profile). To solve this issue, you need to disable this feature.
+Ejere af mobiler fra **Samsung** eller **LG** kan også støde på et lignende problem. Det kan være forårsaget af brugen af **Dual App/Dual Messenger**-funktionen (der automatisk opretter en begrænset profil). For at løse problemet skal funktionen deaktiveres.
 
 ### Samsung
 
-- Open **Settings**;
-- Press **Advanced**;
+- Åbn **Indstillinger**;
+- Tryk på **Avanceret**;
 - Scroll down and press **Dual Messenger**;
 - Disable the **Dual Messenger** for all apps;
-- Lock the device for 5 minutes;
-- Unlock the screen and try again to create the VPN profile.
+- Lås enheden i 5 minutter;
+- Oplås skærmen, og prøv at oprette VPN-profilen igen.
 
 ### LG
 
-- Open **Settings**;
-- Choose **General** tab;
+- Åbn **Indstillinger**;
+- Vælg fanen **Generelt**;
 - Scroll down and press **Dual App**;
 - Remove all apps from the list;
-- Reboot your device.
+- Genstart enheden.

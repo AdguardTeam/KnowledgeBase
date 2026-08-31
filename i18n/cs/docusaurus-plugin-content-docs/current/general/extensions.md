@@ -9,7 +9,7 @@ Uživatelské skripty (říkáme jim také "rozšíření") jsou de facto minipr
 
 :::note Podporované aplikace
 
-AdGuard může výrazně rozšířit funkčnost webových stránek tím, že funguje jako správce uživatelských skriptů. V našich třech produktech můžete přidávat vlastní skripty nebo spravovat ty stávající: [AdGuard pro Windows](/adguard-for-windows/features/extensions), [AdGuard pro Android](/adguard-for-android/features/settings#userscripts) a [AdGuard pro macOS](/adguard-for-mac/features/extensions).
+AdGuard může výrazně rozšířit funkčnost webových stránek tím, že funguje jako správce uživatelských skriptů. V našich třech produktech můžete přidávat vlastní skripty nebo spravovat ty stávající: [AdGuard pro Windows](/adguard-for-windows/protection/extensions), [AdGuard pro Android](/adguard-for-android/features/settings#userscripts) a [AdGuard pro macOS](/adguard-for-mac/features/extensions).
 
 :::
 
@@ -39,7 +39,7 @@ Tato verze Asistenta je starší a nemá smysl ji používat v nových systémec
 
 :::
 
-#### Zakázat AMP
+#### Disable AMP
 
 Skript, který je předinstalován pouze v aplikaci AdGuard pro Android. Zakáže AMP (Accelerated Mobile Pages) na stránce s výsledky vyhledávání Google. Více informací o tomto uživatelském skriptu a jeho instalaci najdete na [GitHubu](https://github.com/AdguardTeam/DisableAMP).
 
@@ -427,7 +427,7 @@ V současné době umožňují vytvářet a spravovat uživatelské styly dvě a
 
 :::
 
-Jedná se o experimentální funkci, takže pokud se při přidávání nebo vytváření uživatelského stylu setkáte s jakýmikoli problémy, kontaktujte prosím náš tým podpory na <support@adguard.com>.
+Jedná se o experimentální funkci, takže pokud se při přidávání nebo vytváření uživatelského stylu setkáte s jakýmikoli problémy, kontaktujte prosím náš tým podpory na [support@adguard.com](mailto:support@adguard.com).
 
 ### Jak nastavit uživatelský styl v AdGuardu
 

@@ -9,6 +9,12 @@ Acest articol se referă la AdGuard pentru Android, un blocant de reclame multif
 
 :::
 
+:::info
+
+To use _Integration with AdGuard VPN_, both apps — AdGuard for Android and AdGuard VPN for Android — must be updated to their latest versions. Otherwise, the Integration mode will not be available
+
+:::
+
 AdGuard pentru Android creează un VPN local pentru a filtra traficul. Astfel, alte aplicații VPN nu pot fi utilizate în timp ce AdGuard pentru Android este în execuție. Cu toate acestea, atât aplicațiile AdGuard, cât și [AdGuard VPN](https://adguard-vpn.com/) au moduri integrate care permit utilizarea lor împreună.
 
 In this mode, AdGuard VPN acts as an outbound proxy server through which AdGuard Ad Blocker routes its traffic. Aceasta permite AdGuard să creeze o interfață VPN și să blocheze reclamele și trackerele local, în timp ce AdGuard VPN direcționează tot traficul printr-un server extern.

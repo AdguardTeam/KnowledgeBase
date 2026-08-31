@@ -1,55 +1,55 @@
 ---
-title: What is an AdGuard license?
+title: Hvad er en AdGuard-licens?
 sidebar_position: 1
 ---
 
-A license is a permission to use the AdGuard product, provided in accordance with the [End User License Agreement](https://adguard.com/eula.html). If bound to an email address, AdGuard licenses can be found in the user's [AdGuard account](https://adguardaccount.com/).
+En licens er en tilladelse til brug af et givent AdGuard-produkt jf. gældende [Slutbrugerlicensaftale (EULA)](https://adguard.com/eula.html). Hvis tilknyttet en e-mailadresse, kan AdGuard-licenser findes i brugerens [AdGuard-konto](https://my.adguard.com/).
 
-## What types of AdGuard licenses exist
+## Eksisterende typer AdGuard-licenser
 
-On the [purchase page](https://adguard.com/license.html), you can see the following types of licenses:
+På [købssiden](https://adguard.com/license.html) kan flg. licenstyper ses:
 
-- **1-year subscriptions** — these licenses are renewed automatically every year or can be extended manually
-    - Personal — up to 3 devices
-    - Family — up to 9 devices
-- **Lifetime** — these licenses are perpetual
-    - Personal — up to 3 devices
-    - Family — up to 9 devices
+- **1-års abonnementer** — disse licenser fornyes automatisk hvert år eller kan forlænges manuelt
+    - Personal — maks. 3 enheder
+    - Family — maks. 9 enheder
+- **Livstid** — disse licenser udløber aldrig
+    - Personal — maks. 3 enheder
+    - Family — maks. 9 enheder
 
-There are also licenses that the user can purchase from other sources or get for free:
+Der er også licenser, som brugeren kan købe fra andre kilder eller få gratis:
 
-- **Trial licenses** are free time-limited licenses that allow you to test the full functionality of the product
-    - AdGuard for Windows — 14-day trial
-    - AdGuard for Mac — 14-day trial
-    - AdGuard for Android — 7-day trial
-- **Distributor licenses** and **gifted licenses** can be both time-limited and non-time limited. Licenses with an expiration date can only be renewed manually
-    - Personal — up to 3 devices
-    - Family — up to 9 devices
-- **AdGuard for iOS** and **AdGuard Pro** licenses are purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
+- **Prøvelicenser** er gratis tidsbegrænsede licenser, som muliggør at teste produkters fulde funktionalitet
+    - AdGuard til Windows — 14-dages prøveperiode
+    - AdGuard til Mac — 14-dages prøveperiode
+    - AdGuard til Android — 7-dages prøveperiode
+- **Distributørlicenser** og **gavelicenser** findes både med og uden tidsbegrænsnung. Licenser med udløbsdato kan kun fornyes manuelt
+    - Personal — maks. 3 enheder
+    - Family — maks. 9 enheder
+- Licenser til **AdGuard til iOS** og **AdGuard Pro** købes og håndteres via App Store og kan kun bruges på iOS- og iPadOS-enheder med det samme Apple-ID
 
 :::tip
 
-To extend the device limit, you can [upgrade](../payment-options/#upgrade) your license.
+For at forøge enhedskvoten kan licensen [opgraderes](../payment-options/#upgrade).
 
 :::
 
-## How to use the AdGuard license
+## Sådan bruges AdGuard-licensen
 
-To use your license on a device, log in to your AdGuard app using the email address associated with the license. If the license hasn't been bound to your email address yet, you can do it in your [AdGuard account](https://adguardaccount.com/). To do so, open the *Licenses* tab and click *Bind license*. Usually, licenses are activated immediately, but sometimes activation may take up to five minutes.
+For at bruge licensen på en enhed, log ind på AdGuard-appen med den e-mailadresse, der er tilknyttet licensen. Er licensen endnu ikke tilknyttet en e-mailadresse, kan dette gøres fra [AdGuard-kontoen](https://my.adguard.com/). Dette gøres ved at åbne fanen *Licenser* og klikke på *Tilknyt licens*. Normalt aktiveres licenser med det samme, men nogle gange kan aktiveringen tage op til fem minutter.
 
-Alternatively, you can enter your [license key](#license-key) in your AdGuard app.
+Alternativt kan [licensnøglen](#license-key) angives i AdGuard-appen.
 
-## License key
+## Licensnøgle
 
-A license key is a unique string of characters that represents an AdGuard Ad Blocker license. It is automatically registered to the email you used to purchase the license, or is provided to you when you purchase an AdGuard license from a distributor. With a license key, you can:
+En licensnøgle er en unik tegnsekvens repræsenterende en AdGuard Ad Blocker-licens. Den registreres automatisk til den e-mail, der blev brugt ved licenskøbet eller leveres ved køb af en AdGuard-licens fra en distributør. Med en licensnøgle er det muligt at:
 
-- [Activate your license](../activation) in a product, if you don't have an AdGuard account
-- Bind your license to your AdGuard account and unbind it
+- [Aktivere licensen](../activation) i et produkt, såfremt ingen AdGuard-konto er oprettet
+- Tilknytte licensen til en AdGuard-konto samt frigive den igen
 
-When you unbind a license, be sure to save the license key first. You'll need the key to rebind your license or transfer it to another account.
+Inden en licens frigives, så sørg for at gemme licensnøglen først. Nøglen skal bruges ved gentilknytning/overførsel af licensen til en anden konto.
 
-### How to recover a license key
+### Sådan gendannes en licensnøgle
 
-If you don't remember the license key, check out your AdGuard account: all licenses bound to your email address are displayed there.
+Kan man ikke huske licensnøglen, tjek i så fald AdGuard-kontoen: Alle licenser, man har tilknyttet sin e-mailadresse, fremgår der.
 
-If you've lost the license key purchased from a distributor, please reach out to us at support@adguard.com. Be ready to provide a receipt or other proof of purchase.
+Såfremt en licensnøgle købt via en distributør er mistet, kontakt os via support@adguard.com. Vær klar til at fremlægge en kvittering eller andet købsbevis.

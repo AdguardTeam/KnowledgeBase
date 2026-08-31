@@ -15,7 +15,7 @@ This article is about AdGuard for Safari, which safeguards only your Safari brow
 2. Click _Safari_ in the left upper corner menu.
 3. Click _Settings…_ → _Extensions_.
 4. Check _Allow in Private Browsing_ for all AdGuard extensions.
-    ![Checked private browsing](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
+   ![Checked private browsing](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
 
 If this doesn’t help and ads are still not being blocked, please contact our support at support@adguard.com.
 

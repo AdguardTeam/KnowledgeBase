@@ -1,45 +1,45 @@
 ---
-title: Tracking filter rules statistics
+title: Statistik over sporingsfilterregler
 sidebar_position: 4
 ---
 
 :::note
 
-The *Send statistics for ad filters usage* option is disabled by default. Nothing will be sent unless a user manually enables it to help us improve our blocking filters.
+Indstillingen *Indsend statistik for annoncefilterbrug* er som standard slået fra. Intet indsendes, medmindre en bruger manuelt slår funktionen til for at hjælpe os med at forbedre vores blokeringsfiltre.
 
 :::
 
-### Why do we need ad filters?
+### Hvorfor behøves annoncefiltre?
 
-Let's start by defining what ad filters are. Thanks to these filters, AdGuard removes ads from websites. They are manually compiled based on your complaints about ads on websites. Ad filters are an essential element of AdGuard — their quality determines the overall quality of AdGuard ad blocking.
+Lad os starte med at definere, hvad annoncefiltre er. Grundet disse filtre kan AdGuard fjerne annoncer fra websteder. De sammensættes manuelt baseret på brugerklager over annoncer på websteder. Annoncefiltre er et væsentligt element i AdGuard — deres kvalitet bestemmer den overordnede kvalitet af AdGuard-adblockingen.
 
-However, there is a downside. Over the years, more and more ad filters have appeared. The more ad filters there are, the more memory AdGuard consumes, thus slowing down the rendering of webpages. At the same time, some filters expire and gradually become useless, consuming memory and slowing down the program.
+Der er dog en ulempe. Gennem årene er der dukket flere og flere annoncefiltre op. Jo flere annoncefiltre der er, des mere hukommelse forbruger AdGuard, hvilket dermed sinker rendering af websider. Samtidig begynder nogle af filtrene at udløbe og bliver gradvist ubrugelige, og optager blot hukommelse og gøre programmet langsommere.
 
-### Why do we need statistics?
+### Hvorfor behøves statistikker?
 
-We want to solve the problem of outdated filtering rules once and for all. But we need your help to do so. By gathering statistics on used filtering rules, we detect and remove the rules that are no longer used. As a result, it will help all those who use AdGuard.
+Vi ønsker at løse problemet med forældede filtreringsregler én gang for alle. Vi behøver dog brugerhjælp til at gøre det. Ved at indsamle brugsstatistik for filtreringsregler opdager og fjerner vi de regler, som ikke længere er i brug. Som konsekvens, vil det hjælpe alle brugere af AdGuard.
 
-If your computer is powerful enough, it won’t really affect you. But the difference will be very noticeable for users of low-power netbooks or tablets.
+På en tilstrækkelig kraftig computer, vil effekten være minimal. Forskellen vil dog være markant på mindre kraftige netbooks eller tablets.
 
-### What kind of statistics will be sent?
+### Hvilken slags statistik indsendes?
 
-If you enable the *Send statistics for ad filters usage* option, the following information is sent periodically:
+Aktiveres indstillingen *Indsend statistik for annoncefiltrebrug*, indsendes periodisk flg. oplysninger:
 
-- Extension version
-- Browser type (Chrome/Firefox/Opera/Yandex.Browser/Safari).
-- List of enabled ad filters.
-- The list that consists of the following elements:
-    - *The domain name of the website*
-    - *The number of recent page views*
-    - *The list of filtering rules and Filter ID which were activated on this website*
-    - *The domain name of blocked requests is sent for URL rules* The list is created based on the website's visit statistics since the last time statistical data was sent.
+- Udvidelsesversion
+- Webbrowsertype (Chrome/Firefox/Opera/Yandex.Browser/Safari).
+- Liste over aktiverede annoncefiltre.
+- Listen udgøres af flg. emner:
+    - *Webstedets domænenavn*
+    - *Antallet af seneste sidevisninger*
+    - *Liste over filtreringsregler og Filter-ID aktiveret på dette websted*
+    - *Domænenavnet på blokerede forespørgsler indsendes for URL-regler* Listen oprettes baseret på webstedets besøgsstatistik siden seneste indsendelse af statistiskdata.
 
-The collected statistics will be sent periodically to our server for analysis and filter optimization.
+De indsamlede statistikdata indsendes periodisk til vores server for analyse og filteroptimering.
 
-It's important to note that all the statistics we get are averaged and anonymized. We don't use these statistics for any purpose other than optimizing the filters, and we do not sell this data to third parties. You can read about it in our [Privacy policy](https://adguard.com/privacy.html).
+Det er vigtigt at bemærke, at al indsendt statistikdata er gennemsnitlig og anonymiseret. Statistikdatane anvendes ikke til andre formål end filteroptimeringer, og disse data videresælges ikke til nogen tredjepart. Læs evt. mere herom i vores [Fortrolighedspolitik](https://adguard.com/privacy.html).
 
 ### What does tracking filter rules statistics fraught with?
 
-For the vast majority of users, the change in computer speed will not be really noticeable. However, netbook and tablet users may notice a slight slowdown.
+For hovedparten af brugerne vil en ændring i computerhastigheden ikke rigtig være mærkbar. Netbook- og tabletbrugere kan dog bemærke en lille hastighedsreduktion.
 
-Periodically, we will send the gathered statistics to the server. The size of the transmitted data is not very large and is comparable to the size of an average web page.
+Den indsamlede statistik indsendes periodisk til serveren. Størrelsen på overførte data er ikke særlig stor og kan sammenlignes med størrelsen på en gennemsnitlig webside.

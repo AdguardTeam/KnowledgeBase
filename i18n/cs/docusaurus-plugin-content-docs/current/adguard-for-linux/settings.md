@@ -33,7 +33,7 @@ Chcete-li povolit zakázat, zadejte:
 adguard-cli stop
 ```
 
-Tento příkaz nejen zastaví proxy, ale také zastaví přesměrování na něj.
+Tento příkaz nejen zastaví proxy, ale také zastaví přesměrování provozu na něj.
 
 ### Zkontrolovat stav ochrany
 
@@ -43,7 +43,15 @@ Chcete-li zobrazit stav ochrany, zadejte:
 adguard-cli status
 ```
 
-![Status/Stop protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+![Status/Stop protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/6status-stop.png)
+
+### Restartovat ochranu
+
+Chcete-li restartovat proxy server a znovu použít nastavení, zadejte:
+
+```sh
+adguard-cli restart
+```
 
 ## Aktualizace
 
@@ -65,7 +73,7 @@ adguard-cli update
 
 ### Aktualizace výstupu skriptu
 
-Chcete-li zobrazit výstup skriptu aktualizace, zadejte:
+Chcete-li aktualizovat výstup skriptu aktualizace, zadejte:
 
 ```sh
 adguard-cli update -v
@@ -75,15 +83,23 @@ adguard-cli update -v
 
 Pro konfiguraci AdGuardu pro Linux použijte příkaz `config`. Dílčí příkazy:
 
-- `show`: Zobrazení aktuální konfigurace v souboru `proxy.yaml`
+- `show [<section-name>]`: Zobrazení aktuální konfigurace v souboru `proxy.yaml` (nebo konkrétní sekce)
 
-  ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/7config_show.png)
 
-- `set`: Konfigurace volby v souboru `proxy.yaml`
+- `set <key> <value>`: Konfigurace volby v souboru `proxy.yaml`
   - `listen_ports.http_proxy`: Naslouchací port HTTP
   - `proxy_mode`: Režim proxy (`manuální` nebo `automatický`)
 
-- `get`: Zjištění aktuálního stavu výše uvedených možností
+- `get <key>`: Získání aktuálního stavu nastavení
+
+- `list-add <key> <value> [<value>...]`: Přidání jedné nebo více hodnot do seznamu
+
+- `list-remove <key> <value>`: Odebrání hodnoty z nastavení seznamu
+
+- `reset <key>`: Obnovení nastavení na výchozí hodnoty
+
+- `reset --all`: Obnovení všech nastavení na výchozí hodnoty
 
 :::note
 
@@ -100,21 +116,59 @@ Automatický režim lze použít pouze tehdy, že jsou splněny následující p
 
 Pro konfiguraci AdGuardu pro Linux použijte příkaz `filters`. Dílčí příkazy:
 
-- `list`: Seznam nainstalovaných filtrů
+- `list`: Seznam nainstalovaných a přidaných filtrů
 
   - `--all`: Zobrazení všech filtrů
 
   ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
-- `install`: Instalace filtru. Zadejte adresu URL filtru, který chcete nainstalovat
+- `add`: Přidání vestavěného filtru podle ID nebo názvu
+
+- `install`: Instalace filtru. Zadejte adresu URL filtru, který chcete nainstalovat nebo místní soubor
+  - `--trusted`: Označení vlastního filtrování jako důvěryhodné
+  - `--title`: Nastavení vlastního názvu filtru
 
 - `enable`: Povolení filtru. Zadejte název nebo ID filtru
 
   ![Enable filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
-- `disable`: Zakázání filtrování. Zadejte název nebo ID filtru
+- `disable`: Zakázání filtru. Zadejte název nebo ID filtru
 
-- `update`: Aktualizace filtrů
+- `remove`: Odebrání interního nebo vlastního filtru podle ID
+
+- `set-trusted`: Označení vlastního filtru jako důvěryhodného nebo nedůvěryhodného
+
+- `set-title`: Nastavení vlastního názvu filtru
+
+Aktualizace filtrů zajišťuje příkaz `adguard-cli check-update` (dílčí příkaz `filters update` na něj přesměruje).
+
+## Správa DNS filtrů
+
+Pro správu seznamů DNS filtrů použijte příkaz `dns filters`. Dílčí příkazy:
+
+- `list`: Seznam nainstalovaných a přidaných DNS filtrů
+  - `--all`: Zobrazení všech DNS filtrů
+- `add`: Přidání vestavěného DNS filtru podle ID nebo názvu
+- `install`: Instalace vlastního DNS filtru z URL nebo místního souboru
+  - `--title`: Nastavení vlastního názvu filtru
+- `enable`: Povolení DNS filtru. Zadejte název nebo ID filtru
+- `disable`: Zakázání DNS filtru. Zadejte název nebo ID filtru
+- `remove`: Odebrání DNS filtru podle ID
+- `set-title`: Nastavení vlastního názvu DNS filtru
+
+Aktualizace DNS filtrů jsou řešeny příkazem `adguard-cli check-update`.
+
+## Správa uživatelských filtrů
+
+Pro správu uživatelských skriptů použijte příkaz `userscripts`. Dílčí příkazy:
+
+- `list`: Zobrazení nainstalovaných uživatelských skriptů
+- `install`: Instalace uživatelského skriptu z URL
+- `remove`: Odebrání uživatelského skriptu
+- `enable`: Povolení uživatelského skriptu
+- `disable`: Zakázání uživatelského skriptu
+
+Uživatelské skripty se aktualizují pomocí příkazu `adguard-cli check-update`.
 
 ## Změna poslechové adresy proxy v režimu ručního proxy
 
@@ -248,3 +302,46 @@ adguard-cli import-settings -i "/path/to/settings.zip"
 ```
 
 Příznak `-i` nebo `--input` je povinný a určuje cestu k archivu nastavení, který se má importovat.
+
+## AdGuard Asistent prohlížeče
+
+Asistent prohlížeče AdGuard vám umožňuje spravovat ochranu AdGuardem přímo ve vašem prohlížeči.
+
+![The Assistant window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
+
+### Jak to funguje
+
+Asistent prohlížeče AdGuard je rozšíření prohlížeče. Umožňuje rychlou správu aplikace AdGuard pro Linux:
+
+- Povolení nebo zakázání ochrany pro konkrétní webovou stránku (přepínač pod názvem webové stránky)
+- Pozastavení ochrany po dobu 30 sekund
+- Vypnutí ochrany (ikona pozastavení v pravém horním rohu)
+- Ruční blokování reklam
+- Nahlášení nekorektního blokování
+- Správa filtrování HTTPS (ikona zámku vedle názvu webové stránky)
+
+### Jak nainstalovat
+
+Chcete-li nainstalovat manifesty Native Messaging pro integraci do prohlížeče, použijte:
+
+```sh
+adguard-cli install-browser-integration
+```
+
+K odinstalaci manifestů použijte:
+
+```sh
+adguard-cli install-browser-integration --uninstall
+```
+
+**Instalace rozšíření asistenta prohlížeče AdGuard**:
+
+1. Otevřete [stránku Asistenta](https://adguard.com/adguard-assistant/overview.html).
+2. Pod názvem prohlížeče vyberte _Instalovat_.
+3. Nainstalujte Asistenta z obchodu s rozšířeními vašeho prohlížeče.
+
+:::info Kompatibilita
+
+Podpora asistenta prohlížeče AdGuard je dostupná od verze AdGuard pro Linux v1.4.
+
+:::

@@ -1,204 +1,208 @@
 ---
-title: Advanced Settings guide
+title: Guide til Avancerede indstillinger
 sidebar_position: 9
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel dækker AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to reach Advanced Settings
+## Sådan tilgås Avancerede indstillinger
 
 :::caution
 
-Changing *Advanced Settings* may cause problems with AdGuard's performance, break the Internet connection, or compromise your security and privacy. Make changes to this section only if you are sure of what you are doing or our support team has asked you to do it.
+Ændring af *Avancerede indstillinger* kan forårsage problemer med AdGuards ydeevne, afbryde internetforbindelsen eller kompromittere brugersikkerhed og -fortrolighed. Ændringer i dette afsnit bør kun foretages, såfremt konsekvenserne forstås, eller vores supportteam har anmodet herom.
 
 :::
 
-To find *Advanced Settings*, open AdGuard, click the gear icon, select *Advanced*, then select *Advanced Settings*.
+For at finde *Avancerede indstillinger*, åbn AdGuard, klik på tandhjulsikonet, vælg *Avanceret* og dernæst *Avancerede indstillinger*.
 
-## Advanced Settings
+## Avancerede indstillinger
 
-### Network settings
+### Netværksindstillinger
 
 #### `network.extension.exclude.domains`
 
-The listed domains will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
+De anførte domæner undtages fra filtrering i tilstanden *Netværksudvidelse*. Benyt et komma eller linjeskift som værdiadskiller.
 
 #### `network.extension.exclude.ports`
 
-The listed ports will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
+De anførte porte undtages fra filtrering i tilstanden *Netværksudvidelse*. Benyt et komma eller linjeskift som værdiadskiller.
 
 #### `network.extension.route.exclude`
 
-The listed routes will be excluded from filtering in the *Network Extension* mode. Set routes using an IP address or destination CIDR. Separate values with commas or line breaks.
+De anførte rutninger undtages fra filtrering i tilstanden *Netværksudvidelse*. Opsæt rutninger vha. en IP-adresse eller destinations-CIDR. Benyt kommaer eller linjeskift som værdiadskillere.
 
 #### `network.extension.http.downgrade.bundleids`
 
-Here you can specify a list of applications for which the HTTP/2 protocol will be downgraded to HTTP/1.1 in the *Network Extension* filtering mode. The bundle ID should be separated by a comma or a line break.
+Her kan angives en liste over applikationer, for hvilke HTTP/2-protokollen nedgraderes til HTTP/1.1 i filtreringstilstanden *Netværksudvidelse*. Pakke-ID'et skal adskilles af et komma eller linjeskift.
 
 #### `network.extension.monterey.force.split.tunnel`
 
-Here you can prohibit AdGuard from using the "default route" which is enabled by default in the *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, as it cannot operate in unison with them.
+Her kan AdGuard forbydes at bruge den "standardrutning", der som standard er aktiveret i tilstanden *Netværksudvidelse* på macOS Monterey. AdGuard bruger "standardrutning" til at deaktivere iCloud Private Relay og Protect Mail Activity, da den ikke kan fungere sideløbende med dem.
 
-You will find more information about the problem [in this article](../icloud-private-relay).
+Yderligere oplysninger om problemet kan findes [i denne artikel](../icloud-private-relay).
 
 #### `network.extension.dns.redirect.exclude.bundleids`
 
-Here you can specify a list of applications that make DNS queries directly not via system DNS resolver (for example, some VPN clients or DNS filtering applications). DNS filtering will be disabled for them in the *Network Extension mode*. The bundle IDs should be separated by a comma or line break.
+Her kan angives en liste over apps, som foretager DNS-forespørgsler direkte, ikke via systemets DNS-opløser (f.eks. visse VPN-klienter eller DNS-filtrerings-apps). DNS-filtrering deaktiveres for disse i tilstanden *Netværksudvidelse*. Pakke-ID'et skal adskilles af et komma eller linjeskift.
 
 #### `network.dns.filter.secure.request`
 
-Redirects secure DNS requests to a local DNS proxy, if there is one available.
+Omdirigerer sikre DNS-forespørgsler til en lokal DNS-proxy, hvis tilgængelig.
 
 #### `network.https.ocsp.check`
 
-By setting `true`, you enable HTTPS certificate revocation checking.
+Ved at angive `true`, aktiveres ophævelsestjek af HTTPS-certifikater.
+
+#### `network.http.compress.body`
+
+Aktiverer HTTP body compression-efterbehandling. CoreLibs, AdGuards filtreringsmotor, vil komprimere HTTP-svarindholdet inden afsendelsen med den oprindelige svaralgoritme (hvis understøttet) eller med standard reservealgoritmen (GZip). Svar fra BrowserApi kodes ligeledes, hvis denne indstilling er slået til.
 
 #### `network.tcp.keepalive.enabled`
 
-Periodically sends TCP packets over an idle connection to ensure that it remains active and to renew NAT timeouts.
+Sender periodisk TCP-pakker over en hvilende forbindelse for at sikre, at den forbliver aktiv samt at NAT-timeouts fornys.
 
 #### `network.tcp.keepalive.interval.seconds`
 
-Idle time, in seconds, before sending a keepalive probe. If 0 is specified, the system will use the default value.
+Hviletid, i sekunder, før en keepalive-datapakke sendes. Er 0 angivet, benytter systemet standardværdien.
 
 #### `network.tcp.keepalive.timeout.seconds`
 
-Time, in seconds, before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
+Tid, i sekunder, før endnu en keepalive-datapakke sendes til en peer, der ikke reagerer. Er 0 angivet, benyttes en systemvalgt værdi.
 
 #### `network.https.ech.enabled`
 
-Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, encrypts Client Hellos.
+Benytter en lokal DNS-proxy til at søge efter opsætninger i ECH Config Lists. Hvis fundet, krypteres Client Hellos.
 
 #### `network.https.enforce.certificate.transparency`
 
-Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy.
+Bekræfter ægtheden af alle certifikater for domænet baseret på Chrome Certificate Transparency Policy.
 
 #### `network.https.filter.http3.enabled`
 
-By setting `true`, you allow AdGuard to filter traffic sent over HTTP/3, the latest version of the HTTP protocol based on QUIC.
+Ved at sætte `true`, tillades AdGuard at filtrere trafik sendt over HTTP/3, den seneste version af HTTP-protokollen baseret på QUIC.
 
-**Limitations**:
+**Begrænsninger**:
 
-- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
-- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
-- Safari supports HTTP/3 filtering without additional configuration.
+- Chrome-baserede webbrowsere accepterer ikke brugercertifikater og understøtter dermed ikke HTTP/3-filtrering.
+- Firefox-baserede webbrowsere opfører sig som standard tilsvarende, men `network.http.http3.disable_when_third_party_roots_found`-indstillingen kan i `about:config` sættes til `false` for at tillad brugercertifikater til HTTP/3.
+- Safari understøtter HTTP/3-filtrering uden yderligere opsætning.
 
 #### `network.filtering.localnetwork`
 
-By setting `true`, you enable local network filtering.
+Ved at angive `true`, aktiveres lokal netværksfiltrering.
 
 #### `network.filtering.localhost`
 
-By setting `true`, you enable LoopBack filtering.
+Ved at angive `true`, aktiveres LoopBack-filtrering.
 
-### DNS settings
+### DNS-indstillinger
 
 #### `dns.proxy.bootstrap.ips`
 
-Here you can enter the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server.
+Her kan angives IP-adresserne på de DNS-servere, som skal bruges til at bestemme adressen på den krypterede DNS-server.
 
 #### `dns.proxy.fallback.ips`
 
-Here you can specify a list of IP addresses of DNS servers that will be used as backups in case the encrypted DNS server fails to respond.
+Her kan angives en liste over IP-adresser på DNS-servere, som skal bruges som reserve, såfremt den krypterede DNS-server ikke svarer.
 
 #### `dns.proxy.fallback.on.upstreams.failure.enabled`
 
-Normal queries will be redirected to a fallback upstream if all normal upstreams fail.
+Normale forespørgsler videresendes til reserve-upstream, hvis alle normale upstreams fejler.
 
 #### `dns.proxy.detect.search.domains`
 
-This option enables automatic detection of the local network domain, which will be automatically redirected to the fallback DNS server instead of the main DNS server.
+Denne mulighed aktiverer automatisk registrering af det lokale netværksdomæne, der automatisk omdirigeres til reserve DNS-serveren i stedet for hoved DNS-serveren.
 
 #### `dns.proxy.fallback.domains`
 
-Here you can list domains for which the fallback DNS server will be used instead of the main DNS server.
+Her kan domæner angives, for hvilke reserve DNS-serveren vil blive brugt i stedet for hoved DNS-serveren.
 
 #### `dns.proxy.adblockrules.blocking.mode`
 
-Here you can specify the type of DNS server response to blocked requests, corresponding to ad-blocker-style rules.
+Her kan angives typen af DNS-serversvar på blokerede forespørgsler, svarende til adblocker-lignende regler.
 
-- 0 — respond with REFUSED
-- 1 — respond with NXDOMAIN
-- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 — besvar med REFUSED
+- 1 — besvar med NXDOMAIN
+- 2 — besvar med med 0.0.0.0 eller adresserne angivet i `dns.proxy.blocking.response.IPv4.address` og/eller `dns.proxy.blocking.response.IPv6.adresse`
 
 #### `dns.proxy.hostrules.blocking.mode`
 
-Here you can specify the type of DNS server response to blocked requests, corresponding to hosts rules:
+Her kan angives typen af DNS-serversvar på blokerede forespørgsler, svarende til hosts-regler:
 
-- 0 — respond with REFUSED
-- 1 — respond with NXDOMAIN
-- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 — besvar med REFUSED
+- 1 — besvar med NXDOMAIN
+- 2 — besvar med med 0.0.0.0 eller adresserne angivet i `dns.proxy.blocking.response.IPv4.address` og/eller `dns.proxy.blocking.response.IPv6.adresse`
 
 #### `dns.proxy.blocking.response.IPv4.address`
 
-Here you can specify the IPv4 address that will be returned in response to blocked "A" requests when `dns.proxy.adblockrules.blocking.mode` or `dns.proxy.hostrules.blocking.mode` is set to the response type "ADDRESS".
+Her kan angives den IPv4-adresse, der returneres som svar på blokerede "A"-forespørgsler, når `dns.proxy.adblockrules.blocking.mode` eller `dns.proxy.hostrules.blocking.mode` er sat til svartypen "ADDRESS".
 
 #### `dns.proxy.blocking.response.IPv6.address`
 
-Here you can specify the IPv6 address that will be returned in response to blocked "AAAA" requests when `dns.proxy.adblockrules.blocking.mode` or `dns.proxy.hostrules.blocking.mode` is set to the response type "ADDRESS".
+Her kan anguves den IPv6-adresse, der returneres som svar på blokerede "AAAA"-forespørgsler, når `dns.proxy.adblockrules.blocking.mode` eller `dns.proxy.hostrules.blocking.mode` er sat til svartypen "ADDRESS".
 
 #### `dns.proxy.block.AAAA.requests`
 
-Here you can enable IPv6 DNS query blocking.
+Her kan IPv6 DNS-forespørgselsblokering aktiveres.
 
 #### `dns.proxy.blocked.response.TTL.in.seconds`
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+Her kan angives TTL-værdien (time to live), der returneres som svar på en blokeret forespørgsel.
 
 #### `dns.proxy.parallel.upstream.queries.enabled`
 
-All upstreams are queried simultaneously. The first response is returned.
+Alle upstreams forespørges samtidigt. Det første svar returneres.
 
 #### `dns.proxy.servfail.on.upstreams.failure.enabled`
 
-Responds to upstream failure with a SERVFAIL packet.
+Svarer på upstream-fejl med en SERVFAIL-pakke.
 
 #### `dns.proxy.http3.enabled`
 
-Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection.
+Aktiverer HTTP/3 for DNS-over-HTTPS upstreams for at øge forbindelseshastigheden.
 
 #### `dns.proxy.block.encrypted.client.hello.response`
 
-Removes the Encrypted Client Hello parameters from responses.
+Fjerner Encrypted Client Hello-parametre fra svar.
 
 #### `dns.proxy.private.relay.sequoia.workaround.enabled`
 
-Blocks macOS Private Relay domains if the user has a firewall enabled, which in turn disables the *Private Relay* feature.
+Blokerer macOS Private Relay-domæner, hvis brugeren har en firewall aktiveret, hvilket igen deaktiverer *Private Relay*-funktionen.
 
-Enabling this setting is useful in the following scenario: when macOS Private Relay is active, filtering cannot function properly and must be disabled. In macOS versions up to 14, AdGuard could automatically disable Private Relay when Protection was enabled. However, starting with macOS 15, this is no longer possible if a firewall is active. By turning on this setting, you can disable Private Relay even when the firewall is enabled, overcoming the previous limitation.
+Aktivering af denne indstilling er nyttig i det flg. scenarie: Når macOS Private Relay er aktiv, kan filtrering ikke fungere korrekt og skal deaktiveres. I macOS til og med version 14 kunne AdGuard automatisk deaktivere Private Relay, når beskyttelse blev aktiveret. Fra macOS 15 er dette dog ikke længere muligt, hvis en firewall er aktiv. Ved at slå denne indstilling til kan Private Relay deaktiveres, selv når firewall'en er aktiveret, hvormed den tidligere begrænsning omgås.
 
 #### `dns.proxy.postquantum.cryptography.enabled`
 
-Secures DNS proxy connections with a hybrid post-quantum key exchange, combining the classical X25519 algorithm with the ML-KEM-768 post-quantum KEM. Applies only to DoH, DoT, and DoQ upstreams.
+Sikrer DNS-proxyforbindelser med en hybrid postkvante nøgleudveksling, der kombinerer den klassiske X25519-algoritme med ML-KEM-768 postkvante KEM. Gælder kun for DoH-, DoT- og DoQ-upstreams.
 
-### Stealth Mode settings
+### Indstillinger for Stealth Mode
 
 #### `stealth.antidpi.http.split.fragment.size`
 
-Adjusts the size of the HTTP request fragmentation. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
+Justerer størrelsen af HTTP-forespørgselsfragmenteringen. Gyldige værdier: 1–1500. Angives en ugyldig værdi, benytter systemet standardværdien.
 
 #### `stealth.antidpi.clienthello.split.fragment.size`
 
-This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
+Denne indstilling angiver størrelsen på TCP-pakkefragmentering, hvilket bidrager til at undgå Deep Packet Inspection. Gyldige værdier: 1–1500. Angives en ugyldig værdi, benytter systemet standardværdien.
 
 #### `stealth.antidpi.http.space.juggling`
 
-Adds extra space between the HTTP method and the URL and removes space after the "Host:" field.
+Tilføjer ekstra mellemrum mellem HTTP-metoden og URL'en og fjerner mellemrum efter feltet "Host:".
 
 #### `stealth.antidpi.split.delay.millisecond`
 
-Here you can specify the delay, in milliseconds, after sending the first fragment, if fragmentation is performed.
+Udføres fragmentering, kan her angives forsinkelsen, i millisekunder, efter afsendelsen af første fragment udføres.
 
-### Subscription link interception settings (userscripts and filters)
+### Indstillinger for opfangelse af abonnementslinks (userscripts og filtre)
 
 #### `subscription.link.interception.userscript`
 
-Activate this feature if you want AdGuard to automatically intercept the URLs of userscripts and open the installation window.
+Aktivér denne funktion, hvis AdGuard automatisk skal opfange URL'erne på userscripts og åbne installationsvinduet.
 
 #### `subscription.link.interception.filter`
 
-Activate this feature if you want AdGuard to automatically intercept subscription URLs (for example, abp:subscribe, etc.) and open the custom filter setup window.
+Aktivér denne funktion, hvis AdGuard automatisk skal opfange abonnements-URL'er (f.eks. abp:subscribe mv.) og åbn vinduet til opsætning af tilpassede filter.

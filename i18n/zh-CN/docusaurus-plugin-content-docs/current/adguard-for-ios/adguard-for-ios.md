@@ -3,32 +3,22 @@ title: AdGuard iOS版
 sidebar_position: 1
 ---
 
-## 功能
+- [功能](/adguard-for-ios/features/features.md)
 
-iOS 版 AdGuard 的主要功能和可用设置。
+  Main features and settings available in AdGuard for iOS
 
-[功能](/adguard-for-ios/features/features.md)
+- [安装](/adguard-for-ios/installation.md)
 
-## 安装
+  iOS 版 AdGuard 的安装、卸载和系统要求。
 
-iOS 版 AdGuard 的安装、卸载和系统要求。
+- [Safari Web 扩展](/adguard-for-ios/web-extension.md)
 
-[安装](/adguard-for-ios/installation.md)
+  网络扩展程序，扩展 iOS 版 AdGuard 的功能，并允许用户在浏览器中管理 AdGuard。
 
-## Safari Web 扩展
+- [解决问题](/adguard-for-ios/solving-problems/solving-problems.md)
 
-网络扩展程序，扩展 iOS 版 AdGuard 的功能，并允许用户在浏览器中管理 AdGuard。
+  已知问题和可能的解决方案。
 
-[Safari Web 扩展](/adguard-for-ios/web-extension.md)
+- [AdGuard 和 AdGuard Pro](/adguard-for-ios/adguard-and-adguard-pro.md)
 
-## 解决问题
-
-已知问题和可能的解决方案。
-
-[解决问题](/adguard-for-ios/solving-problems/solving-problems.md)
-
-## AdGuard 和 AdGuard Pro
-
-为什么在 App Store 中有两个 AdGuard 应用程序，它们有什么区别。
-
-[AdGuard 和 AdGuard Pro](/adguard-for-ios/adguard-and-adguard-pro.md)
+  为什么在 App Store 中有两个 AdGuard 应用程序，它们有什么区别。

@@ -7,9 +7,9 @@ sidebar_position: 5
 
 Abonelik, AdGuard hesabınızdan iptal edilebilir. Aboneliğinizi iptal etmek için:
 
- 1. Go to your [AdGuard account](https://adguardaccount.com/).
+ 1. Go to your [AdGuard account](https://adguardaccount.com).
  1. Select *Licenses*.
- 1. Click *Cancel subscription* below the subscription you no longer need. ![İptal](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
+ 1. Click *Cancel auto-renewal* below the subscription you no longer need. ![İptal](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub-upd.png)
 
  İptal edilen abonelik, sona erme tarihine kadar geçerli olacaktır.
 

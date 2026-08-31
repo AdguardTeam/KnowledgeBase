@@ -27,7 +27,7 @@ Es handelt sich um zwei verschiedene Fehler mit sehr ähnlichen Lösungen. Wie d
 
 - Deinstallieren Sie einige Programme oder löschen Sie unnötige Dateien von dem Laufwerk, auf dem Sie AdGuard installieren möchten.
 
-- Laden Sie [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), eine kostenlose Software von Malwarebytes, herunter, installieren Sie sie und führen Sie sie aus. Es befreit Ihr System unter anderem von allen Arten zusätzlicher „verbliebener“ Dateien, die nach der fehlerhaften Deinstallation von Programmen usw. noch vorhanden sind. Das wird helfen, etwas Speicherplatz freizugeben.
+- Laden Sie [AdwCleaner](https://www.bleepingcomputer.com/download/adwcleaner/), eine kostenlose Software von Malwarebytes, herunter, installieren Sie sie und führen Sie sie aus. Es befreit Ihr System unter anderem von allen Arten zusätzlicher „verbliebener“ Dateien, die nach der fehlerhaften Deinstallation von Programmen usw. noch vorhanden sind. Das wird helfen, etwas Speicherplatz freizugeben.
 
 - Starten Sie Ihren Computer neu. Manchmal können temporäre Dateien eine beträchtliche Menge an Speicherplatz beanspruchen, und ein Neustart Ihres PCs ist die zuverlässigste Methode, sie loszuwerden.
 
@@ -63,7 +63,7 @@ Der Fehler klingt erschreckender als er tatsächlich ist. In Wirklichkeit handel
 
 - Wählen Sie einen anderen Installationsordner. Es ist möglich, dass der aktuelle Installationsordner Zugriffsbeschränkungen hat. Stellen Sie außerdem sicher, dass Sie kein externes oder virtuelles Laufwerk usw. auswählen.
 
-- Deinstallieren Sie AdGuard mit unserem speziellen [Deinstallationstool](../../installation#advanced) und wiederholen Sie dann die Installation.
+- Deinstallieren Sie AdGuard mit unserem speziellen [Deinstallationstool](/archive/adguard-for-windows/installation#advanced) und wiederholen Sie dann die Installation.
 
 - Starten und registrieren Sie den Microsoft Installer-Dienst erneut. Es erfordert einige Schritte.
 
@@ -99,7 +99,7 @@ Es ist sehr wahrscheinlich, dass Sie AdGuard schon einmal installiert haben.
 
 - Überprüfen Sie, ob AdGuard bereits auf Ihrem Computer installiert ist. Sie können dies tun, indem Sie die Taste *Win* ⊞ drücken und ***AdGuard*** eintippen.
 
-- Vielleicht sind noch Dateien von einer früheren AdGuard-Installation übrig geblieben. Deinstallieren Sie AdGuard mit unserem speziellen [Deinstallationstool](../../installation#advanced) und wiederholen Sie dann die Installation.
+- Vielleicht sind noch Dateien von einer früheren AdGuard-Installation übrig geblieben. Deinstallieren Sie AdGuard mit unserem speziellen [Deinstallationstool](/archive/adguard-for-windows/installation#advanced) und wiederholen Sie dann die Installation.
 
 ### Andere Fehler {#other}
 

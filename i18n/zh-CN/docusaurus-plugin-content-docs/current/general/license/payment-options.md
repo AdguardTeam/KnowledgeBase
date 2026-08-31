@@ -18,6 +18,6 @@ iOS 版 的 AdGuard Pro 可以在 App Store 上购买。
 - 要扩展设备数量，用户可以**将 AdGuard 广告拦截程序的个人许可证升级到家庭版**
 - 或者也可以，**将许可证升级到终身许可证**
 
-用户可以在 AdGuard 账号中升级许可证。 请单击「*升级成终身版*」或「*增加设备数量*」。
+You can upgrade your license in your [AdGuard account](https://adguardaccount.com). 请单击「*升级成终身版*」或「*增加设备数量*」。
 
 ![升级](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

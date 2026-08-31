@@ -129,6 +129,12 @@ Habilitar esta opción puede interrumpir el funcionamiento de determinadas aplic
 
 :::
 
+:::note
+
+In AdGuard Browser Extension, *Block WebRTC* is applied globally and cannot be controlled on a per-site basis. Exception rules like `@@||example.com^$stealth=webrtc` are not supported. For per-site WebRTC control, use the full-fledged AdGuard app for Windows, Mac, or Android.
+
+:::
+
 ### Bloquear API Push {#push}
 
 Esta función bloquea las notificaciones push de los sitios web.
@@ -169,11 +175,11 @@ This feature disables sending technical data about your system and app usage.
 
 This feature prevents Windows from taking and analyzing screenshots of your desktop activity.
 
-### Turn off Advertising ID {#advertisingid}
+### Deshabilitar Advertising ID {#advertisingid}
 
 This feature disables Advertising ID to block tracking of your app usage.
 
-### Disable automatic reporting by Microsoft Defender {#windowsautoreport}
+### Deshabilitar el informe automático de Microsoft Defender {#windowsautoreport}
 
 Esta función bloquea la notificación automática y el muestreo de malware sospechoso.
 

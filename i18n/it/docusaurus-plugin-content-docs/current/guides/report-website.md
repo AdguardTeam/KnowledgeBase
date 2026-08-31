@@ -35,7 +35,7 @@ Per segnalare il reinserimento di un annuncio o l'errata visualizzazione di un s
 
 ### Windows {#windows}
 
-- Apri [AdGuard Browser Assistant](/adguard-for-windows/browser-assistant) e clicca su **Segnala un problema**:
+- Apri [AdGuard Browser Assistant](/archive/adguard-for-windows/browser-assistant) e clicca su **Segnala un problema**:
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 

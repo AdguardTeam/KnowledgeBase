@@ -1,16 +1,16 @@
 ---
-title: Advanced blocking
+title: 高度なブロック機能
 sidebar_position: 3
 ---
 
-![Advanced blocking](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/advanced-blocking.png)
+![高度なブロック機能](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/advanced-blocking.png)
 
-_Advanced blocking_ is optional, but when enabled it unlocks stronger filtering: for example, it lets us apply extended rules to block tough cases such as some YouTube ads. You decide whether to grant Safari the extra permissions and whether you want that extra power.
+「_高度なブロック機能_」 は任意ですが、有効にするとより強力なフィルタリングが使えるようになります。例えば、一部のYouTube広告のような厄介なケースをブロックするために拡張ルールの適用を可能にしてくれます。 Safariに追加の権限許可を与えるかどうか、またその追加の機能を利用するかどうかは、あなたが決定します。
 
-Here you can turn on the _AdGuard Extra_ userscript — if there’s a website where ads just won’t go, like Facebook or YouTube.
+ここでは、「_AdGuard Extra_」ユーザースクリプトを有効にすることができます。「AdGuard Extra」は、Facebook や YouTube のように広告がなかなか消えないウェブサイトで役立ちます。
 
 :::note
 
-_AdGuard Extra_ is a feature of the [full version](/adguard-mini-for-mac/features/full-version.md).
+「_AdGuard Extra_」 は[フルバージョン](/adguard-mini-for-mac/features/full-version.md)の機能です。
 
 :::

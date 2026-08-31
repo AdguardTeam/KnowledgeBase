@@ -11,6 +11,6 @@ Here you can turn on the _AdGuard Extra_ userscript — if there’s a website w
 
 :::note
 
-_AdGuard Extra_ is a feature of the [full version](/adguard-mini-for-mac/features/full-version.md).
+_AdGuard Extra_ é um recurso da [versão completa](/adguard-mini-for-mac/features/full-version.md).
 
 :::

@@ -25,4 +25,4 @@ sidebar_position: 4
 1. Убедитесь, что опция *Разрешить расширение* включена. На том же экране установите разрешение *Все сайты* для AdGuard на *Разрешить*. ![Разрешения расширения *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/extensions_allow.jpg)
 1. Откройте AdGuard, нажмите на иконку щита и включите *Расширенную защиту*.
 
-Теперь вы можете смотреть видео YouTube в Safari без рекламы.
+You can now [watch YouTube videos in Safari without ads](https://adguard.com/en/adguard-youtube/overview.html).

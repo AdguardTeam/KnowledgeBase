@@ -38,7 +38,7 @@ Někteří výrobci zařízení nechávají nastavení Soukromých DNS skryté a
 
 Aby mohl AdGuard filtrovat přenosy HTTPS, musí uživatel přidat certifikát do důvěryhodných uživatelských certifikátů zařízení. Prohlížeče UC bohužel nedůvěřují uživatelským certifikátům, takže v nich AdGuard nemůže provádět filtrování HTTPS.
 
-- Chcete-li tento problém vyřešit, přesuňte certifikát do [systémového úložiště certifikátů](../solving-problems/https-certificate-for-rooted.md/)
+- Chcete-li tento problém vyřešit, přesuňte certifikát do [systémového úložiště certifikátů](../solving-problems/https-certificate-for-rooted.md)
 
 :::note Kompatibilita
 

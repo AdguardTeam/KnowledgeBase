@@ -9,7 +9,7 @@ Userscripts (we also call them "extensions") are, de facto, miniprograms written
 
 :::note Supported apps
 
-AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/features/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
+AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/protection/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
 
 :::
 
@@ -379,7 +379,7 @@ This will allow userscripts to listen for URL changes and handle them accordingl
 :::note
 
 The `urlchange` event is only triggered for full URL changes, such as a change in the path or query, but not for fragment (hash) changes.
-Examples:
+Eksempler:
 
 - Navigation from `https://example.com/page1` to `https://example.com/page2` will trigger the event.
 - Navigation from `https://example.com/page1?query=1` to `https://example.com/page1?query=2` will trigger the event.
@@ -427,7 +427,7 @@ Currently, two AdGuard apps allow you to create and manage userstyles: AdGuard f
 
 :::
 
-This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at <support@adguard.com>.
+This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at [support@adguard.com](mailto:support@adguard.com).
 
 ### How to set up a userstyle in AdGuard
 
@@ -441,7 +441,7 @@ You can download userstyles from various websites. One of the most popular users
 
 4. Press the [+] button and paste the userstyle link
 
-5. Done!
+5. Udført!
 
 If you’re familiar with CSS rules, you can also create userstyles yourself.
 
@@ -464,7 +464,7 @@ We don’t support userstyles that contain `@var` or `@advanced` in the metadata
    ==/UserStyle== */
    ```
 
-4. Write the CSS part after the meta data. AdGuard supports website domain names matching (`@-moz-document domain(…), …`). For example:
+4. Write the CSS part after the meta data. AdGuard supports website domain names matching (`@-moz-document domain(…), …`). F.eks.:
 
    ```CSS
    body {

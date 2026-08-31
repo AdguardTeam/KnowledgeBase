@@ -1,11 +1,11 @@
 ---
 title: Problémy s filtrováním v prohlížeči Chrome 142+ při použití ovladače TDI
-sidebar_position: 14
+sidebar_position: 1
 ---
 
 :::info
 
-Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock).
+Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Jedná se o beta verzi, která je stále ve vývoji. Chcete-li vyzkoušet, stáhněte si [beta verzi AdGuard pro Windows](https://agrd.io/windows_beta).
 
 :::
 
@@ -33,6 +33,14 @@ Z tohoto důvodu se viditelnost provozu založená na TDI stává stále nestabi
 
 AdGuard již považuje ovladač TDI za zastaralý a v rámci vývoje produktu se plánuje jeho úplné odstranění.
 
+## Trvalé řešení
+
+Od verze 8.0 RC jsme přidali experimentální podporu pro ovladač SockFilter. Opravuje problém řešením konfliktů v zásobníku WFP. [Více informací](/adguard-for-windows/settings/app-settings/network-settings/).
+
+Chcete-li tuto funkci použít, přejděte do _Nastavení → Síť → Filtrování provozu_, zapněte filtrování provozu a ze seznamu dostupných možností vyberte _SockFilter (Experimentální)_.
+
+Jelikož se jedná o experimentální verzi, mohou se vyskytnout chyby. Pokud si všimnete čehokoli neobvyklého, neočekávaného nebo prostě nefunkčního, **můžete se kdykoli přepnout zpět na TDI nebo WFP** ve stejné sekci.
+
 ## Dočasné řešení
 
 Určité změny v registru systému Windows mohou přimět prohlížeč, aby přestal používat AppContainer, což způsobí, že jeho procesy budou opět spuštěny v režimu bez sandboxu. Síťová služba přestane používat stack WSK a přejde na síťovou cestu, kterou může vidět ovladač TDI. AdGuard poté znovu získá schopnost filtrovat provoz prohlížeče.
@@ -49,8 +57,6 @@ Nemělo by se to **používat** plošně na počítačích koncových uživatel�
 
 :::
 
-#### Použití souborů .reg
-
 Potřebné změny registru můžete provést automaticky pomocí jednoho z níže uvedených předem vygenerovaných souborů .reg. Každý soubor zakazuje sandboxing AppContainer/Network Service pro konkrétní prohlížeč založený na Chromium:
 
 - [Stáhnout Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chrome.reg)
@@ -59,17 +65,6 @@ Potřebné změny registru můžete provést automaticky pomocí jednoho z níž
 - [Stáhnout Brave.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Brave.reg)
 - [Stáhnout Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Vivaldi.reg)
 - [Stáhnout YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_YandexBrowser.reg)
-
-Tyto změny můžete vrátit zpět pomocí souborů .reg pro vrácení změn, které jsou k dispozici níže. Tyto soubory odstraní větve registru, které byly přidány přímou verzí:
-
-- [Undo Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chrome.reg)
-- [Undo Chromium.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chromium.reg)
-- [Undo Edge.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Edge.reg)
-- [Undo Brave.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Brave.reg)
-- [Undo Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Vivaldi.reg)
-- [Undo YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_YandexBrowser.reg)
-
-#### Explicitní úprava registru
 
 Pokud váš prohlížeč není uveden v seznamu, postupujte podle níže uvedených pokynů a vytvořte potřebné položky registru:
 
@@ -136,7 +131,3 @@ Měly by být aktivní následující zásady:
 Pokud jsou k dispozici, klikněte na _Znovu načíst zásadu_.
 
 Hotovo!
-
-## Trvalé řešení
-
-Plánujeme přidat podporu pro ovladač SockFilter v nadcházejících verzích. Problém vyřeší odstraněním konfliktů ve stacku WFP. [Další informace](https://github.com/AdguardTeam/AdguardForWindows/issues/5780).

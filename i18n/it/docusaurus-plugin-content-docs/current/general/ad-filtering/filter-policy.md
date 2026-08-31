@@ -72,7 +72,7 @@ L'obiettivo dei filtri di blocco delle inserzioni è bloccare ogni tipo di inser
 - Inserzioni interstiziali: annunci a schermo intero sui dispositivi mobili, che coprono l'interfaccia dell'app o del browser web
 - Residui di inserzioni pubblicitari che occupano grandi spazi o sono a contrasto con lo sfondo e attirano l'attenzione dei visitatori (tranne quelli a malapena distinguibili o invisibili)
 - Inserzioni anti-adblock: inserzioni alternative mostrate sul sito quando quelle principali sono bloccate
-- Bait elements that are used by multiple known adblock detection scripts to detect an ad blocker presence for different goals including changing the way ads are shown, fingerprinting, etc.
+- Elementi di suggerimento utilizzati da più noti codici di rilevamento del blocca-inserzioni per rilevare la presenza di un blocca-inserzioni per diversi obiettivi, tra cui cambiare il modo in cui vengono mostrati gli annunci, il fingerprinting, ecc.
 - Propri inserzioni del sito, se bloccate dalle regole di filtraggio generali (consulta *Limitazioni ed eccezioni*)
 - Script anti-adblock che impediscono l'utilizzo del sito (consulta *Limitazioni ed eccezioni*)
 - Inserzioni pubblicitari iniettate da malware, se sono fornite informazioni dettagliate sul metodo di caricamento o i passaggi per la riproduzione
@@ -81,15 +81,16 @@ L'obiettivo dei filtri di blocco delle inserzioni è bloccare ogni tipo di inser
 ### Limitazioni ed eccezioni
 
 - Le inserzioni del sito non dovrebbero essere bloccate deliberatamente. Tuttavia, non dovrebbero essere sbloccate se il blocco è causato dalle regole di filtraggio generali
-- Le misure d'accesso ai contenuti come i paywall non sono bloccate
+- Le misure d'accesso ai contenuti come gli accessi pagati non sono bloccate dai filtri di bloccaggio delle inserzioni. Tuttavia, possono essere bloccati dai filtri di Protezione dal tracciamento se le loro operazioni comportano una violazione della riservatezza dell'utente
 - I muri anti-adblock saranno bloccati nei seguenti casi:
     - Insistono in modo aggressivo sulla disattivazione o la rimozione dell'ad blocker o impediscono di fatto l'utilizzo del sito web
     - Presentano descrizioni errate e fuorvianti delle possibili conseguenze dell'utilizzo dei blocchi di annunci
     - Mettono i visitatori a rischio di pubblicità dannose: quando le inserzioni provengono da fonti dubbie
+    - Violano o influiscono negativamente sulla riservatezza dell'utente
 - Non blocchiamo i messaggi di rilevamento dell'ad blocker che soddisfano almeno uno dei seguenti criteri:
     - Consentono l'utilizzo del sito e non coprono una significativa quantità di contenuti
     - Forniscono un'alternativa a disabilitare un ad blocker, a patto che tale alternativa non metta a rischio la privacy o la sicurezza degli utenti
-    - They allow the user to proceed to the website’s content
+    - Consentono all'utente di accedere ai contenuti del sito web
     - Alcune regole ereditarie potrebbero continuare a bloccare i messaggi che soddisfano uno o più di questi criteri. Se identificate, tali regole saranno gestite secondo questa politica
 - I gruppi di mining non sono bloccati se sono pubblici e non utilizzati esclusivamente per scopi malevoli
 
@@ -110,6 +111,7 @@ L'obiettivo dei filtri di blocco delle inserzioni è bloccare ogni tipo di inser
 I filtri di protezione dal tracciamento di AdGuard includono:
 
 - Filtro AdGuard Anti-Monitoraggio
+- Filtro Anti-Monitoraggio delle e-mail di AdGuard
 - Filtro AdGuard Anti-Monitoraggio URL
 
 ### Lo scopo di questi filtri
@@ -124,10 +126,12 @@ Cosa blocca:
 - Cookie di tracciamento
 - Pixel di tracciamento
 - API di tracciamento dei browser
-- Detection of the ad blocker for tracking purposes
+- Rilevamento del blocca-inserzioni per fini di tracciamento
 - Funzionalità Sandbox Privacy su Google Chrome e le sue biforcazioni utilizzate per il tracciamento (Google Topics API, la Protected Audience API)
 
 Il filtro **Filtro Anti-Monitoraggio URL** è progettato per rimuovere i parametri di monitoraggio dagli indirizzi web
+
+Il filtro **Anti-Monitoraggio delle e-mail** blocca i pixel di tracciamento incorporati nelle email per impedire ai mittenti di monitorare quando apri i messaggi.
 
 ### Limitazioni ed eccezioni
 
@@ -163,15 +167,13 @@ Per una migliore personalizzazione, i filtri anti-fastidi sono divisi a seconda 
 
 ### Lo scopo di questi filtri
 
-#### Filtro per Avvisi sui Cookie di AdGuard
+#### Filtro AdGuard Cookie Notices
 
-Questo filtro è progettato per bloccare gli avvisi e le richieste sui cookie dalle piattaforme di gestione dei cookie (CMP). Possono essere applicati vari metodi agli avvisi sui cookie e ai CMP. In gran parte dei casi, semplicemente nascondere gli script corrispondenti è sufficiente. Tuttavia, quando la funzionalità del sito e la visualizzazione dei contenuti di terze parti richiede il consenso dei cookie, sono applicati i seguenti metodi:
+Questo filtro è progettato per bloccare gli avvisi e le richieste sui cookie dalle piattaforme di gestione dei cookie (CMP). A seconda di come un sito web implementa il suo meccanismo di consenso, possono essere applicati metodi diversi.
 
-- Gli scriptlet sono utilizzati per aggirare le richieste di consenso (praticamente non applicabile sui siti con restrizioni sul caricamento dei contenuti di terze parti, fino alla presa di una decisione)
-- Impostazione di un cookie o di una chiave nell'archiviazione locale del sito, così che lo script consideri che l'utente abbia fatto una scelta
-- Simulazione dell'azione dell'utente utilizzando una regola che clicca su un pulsante specificato, e interrompe la propria esecuzione dopo 10 secondi dal caricamento. Sono possibili due opzioni:
-    - Rifiuta (a eccezione dei cookie funzionali, a seconda del sistema CMP): l'opzione preferita, poiché c'è meno rischio di caricare strumenti di analisi aggiuntivi
-    - Accetta: questa opzione viene utilizzata come ultima risorsa se altri metodi falliscono. In questo caso, il sito viene inoltre controllato per l'uso di strumenti di analisi, che vengono quindi bloccati dal **Filtro anti monitoraggio AdGuard**
+In gran parte dei casi, semplicemente nascondere gli script corrispondenti è sufficiente. Tuttavia, quando un sito web richiede una decisione sui cookie affinché certi funzioni o contenuti di terze parti funzionino, il filtro gestisce automaticamente la richiesta usando metodi alternativi.
+
+Ogniqualvolta possibile, i cookie non essenziali sono rifiutati per impostazione prescelta. Se ciò non è tecnicamente fattibile e il consenso deve essere concesso affinché il sito funzioni correttamente, il sito è inoltre esaminato per le tecnologie di analisi e tracciamento, che sono quindi bloccate dal **Filtro AdGuard per protezione dal tracciamento**.
 
 **Limitazioni ed eccezioni**
 
@@ -276,14 +278,14 @@ Per maggiori dettagli su questi tipi di pubblicità, si prega di consultare l'[a
 
 Questo filtro sblocca:
 
-- Pubblicità contestuali nei risultati della ricerca utilizzando i motori di ricerca (quali Google, Bing, Yandex, DuckDuckGo)
+- Inserzioni contestuali nei risultati della ricerca utilizzando i motori di ricerca (quali Google, Bing, Yandex, DuckDuckGo)
 - Auto-promozione dei siti web
 
 **Limitazioni ed eccezioni**
 
-- Le inserzioni di ricerca sono sbloccate soltanto se corrispondono alla richiesta di ricerca dell'utente, essendo contestuale. Altrimenti la pubblicità resta bloccata
+- Le inserzioni di ricerca sono sbloccate soltanto se corrispondono alla richiesta di ricerca dell'utente, essendo contestuale. Altrimenti, le inserzioni restano bloccate
 - L'auto-promozione è sbloccata soltanto se è conforme alla politica di filtraggio. Un richiesta di sblocco potrebbe essere rifiutata dagli sviluppatori del filtro
-- Qualsiasi altra pubblicità non verrà sbloccata
+- Qualsiasi altra inserzione non sarà sbloccata
 
 #### Filtro DNS di AdGuard
 
@@ -301,3 +303,34 @@ Questo filtro è destinato al test e al debug delle regole che potenzialmente po
 
 - Le regole non dovrebbero corrompere intenzionalmente la funzionalità dei siti web
 - Le regole non dovrebbero sbloccare le inserzioni o altrimenti violare la Politica
+
+## How to dispute a blocking rule
+
+AdGuard filter lists are maintained not only by the AdGuard team but also by community contributors. If you believe a blocking rule violates the principles described in this filter policy, you can dispute it by opening an issue on GitHub.
+
+Before submitting a dispute, please make sure you have read this policy carefully. When reviewing your report, filter maintainers will evaluate whether the rule complies with the criteria described above, so your explanation should refer to this policy whenever possible.
+
+### How to submit a dispute
+
+You can submit a dispute by using [our report tool](https://reports.adguard.com/new_issue.html). See the step-by-step guide in our [dedicated article](https://adguard.com/kb/guides/report-website/).
+
+Alternatively, you can report it via GitHub:
+
+1. Go to the [AdGuard Filters GitHub repository](https://github.com/AdguardTeam/AdguardFilters/issues) and create a new issue.
+2. Select the **Report an issue using AdGuard** issue template.
+3. Fill out the template with as much detail as possible.
+
+Your report should include:
+
+- The URL of the affected website.
+- A clear description of what is being blocked.
+- The blocking rule, if you know which one is responsible.
+- Steps to reproduce the issue.
+- Screenshots or other evidence that illustrate the problem, if applicable.
+- A detailed explanation of **why you believe the rule does not comply with this filter policy**. Whenever possible, refer to the relevant section or principle of the policy that you believe the rule violates.
+
+### What makes a good dispute?
+
+Simply stating that you disagree with a blocking rule is usually not enough. To help maintainers evaluate your report, explain why the rule conflicts with the blocking policy rather than why you personally would prefer different behavior.
+
+For example, if you believe a rule blocks content that should not be blocked under this policy, describe which policy criterion applies and how the rule fails to meet it. The more specific and well-supported your report is, the easier it will be for maintainers to review your request and determine whether the rule should be changed.

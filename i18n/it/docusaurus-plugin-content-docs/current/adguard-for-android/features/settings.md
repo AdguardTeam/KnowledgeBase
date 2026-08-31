@@ -31,31 +31,33 @@ _Il Livello di registrazione_ definisce quali dati sull'operazione dell'app devo
 
 ![Avanzate \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-La sezione delle _Impostazioni di basso livello_ è indirizzata agli utenti esperti. [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
+La sezione delle _Impostazioni di basso livello_ è indirizzata agli utenti esperti. [Leggi di più sulle impostazioni di basso livello](/adguard-for-android/features/low-level-settings/)
 
 ![Impostazioni di basso livello \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
 ## Filtraggio
 
-Questa sezione ti consente di gestire le impostazioni di filtraggio HTTPS, i filtri e gli userscript, e a configurare il server di un proxy.
+This section lets you manage filters, extensions, network settings, add websites to the allowlist, and create user rules.
 
-![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.jpg)
+[Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+
+![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.png)
 
 ### Filtri
 
-AdGuard blocca inserzioni, tracciatori e fastidi, applicando le regole dai propri filtri. La maggior parte delle funzioni della sezione _Protezione_ è alimentata da [filtri AdGuard](/general/ad-filtering/adguard-filters/#adguard-filters). Se abiliti la _Protezione di base_, questa attiverà automaticamente il filtro Base di AdGuard e il Filtro per Dispositivi. E viceversa: se disattivi entrambi i filtri, anche la _Protezione di base_ sarà disabilitata.
+AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the _Protection_ section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable _Basic protection_, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, _Basic protection_ will also be disabled.
 
-![Filtri \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
+![Filters \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
-I filtri abilitati per impostazione predefinita sono sufficienti per il normale funzionamento di AdGuard. Tuttavia, se desideri personalizzare il processo di filtraggio delle inserzioni, puoi usare altri filtri di AdGuard o quelli di terze parti. Per farlo, seleziona una categoria e abilita i filtri desiderati. Per aggiungere un filtro personale, tocca _Filtri personalizzati_ → _Aggiungi filtro personale_ e inserisci il suo URL o il percorso del file.
+Filters enabled by default are enough for normal AdGuard operation. However, if you want to customize ad blocking, you can use other AdGuard or third-party filters. To do this, select a category and enable the filters you'd like. To add a custom filter, tap _Custom filters_ → _Add custom filter_ and enter its URL or file path.
 
 :::note
 
-Se attivi troppi filtri, alcuni siti web potrebbero non funzionare correttamente.
+If you activate too many filters, some websites may work incorrectly.
 
 :::
 
-[Leggi di più sui filtri](https://adguard.com/en/blog/what-are-filters.html)
+[Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
 
 ### Estensioni
 
@@ -95,7 +97,7 @@ The CA certificate in the user store is enough to filter HTTPS traffic in browse
 
 ##### HTTPS-filtered apps
 
-This section contains the list of apps for which AdGuard filters HTTPS traffic. Ti preghiamo di notare che l'impostazione è applicabile a tutte le app soltanto se disponi dei certificati CA sia nell'archivio utente che nell'archivio di sistema.
+This section contains the list of apps for which AdGuard filters HTTPS traffic. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
 
 ##### HTTPS-filtered websites
 

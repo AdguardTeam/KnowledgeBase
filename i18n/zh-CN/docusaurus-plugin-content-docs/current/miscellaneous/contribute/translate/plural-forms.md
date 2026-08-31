@@ -12,7 +12,7 @@ sidebar_position: 4
 
 不同语言的名词可以有几种复数形式。 它们的用法取决于单词前面的特定数字，以指示该单词表示的数目。
 
-例如，当谈论不同数量时，英语单词有两种单词形式。例如 *'one star'* 或 *'two stars'*。 无论您说的是五颗星，二十六颗星还是五百三十二颗星，结尾 's' 都将保持不变。 但是有些语言只有一种形式，反之，有些语言也可以有更多种复数形式。
+For instance, English words have two word forms when speaking about something in the singular, like *one star*, and in the plural — *two stars*. 无论您说的是五颗星，二十六颗星还是五百三十二颗星，结尾 's' 都将保持不变。 但是有些语言只有一种形式，反之，有些语言也可以有更多种复数形式。
 
 与英语相比，波兰语里的名词具有三种复数形式。 在说单数形式时使用一种形式，复数形式时以 2-4 数字为结尾的名词（不包括 12-14）使用另一种形式；但还有第三种形式，前面带有其他数字的单词。
 
@@ -38,9 +38,9 @@ sidebar_position: 4
 
 以下是您可以使用的一些信息来源。
 
-[本地化指南](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) 包含广泛的语言列表。 不同语言复数形式的数量以这种方式显示：`nplurals=2`、`nplurals=4`，依此类推。 `=` 等号后的数字表示相应语言的形式数量。
+[Localization Guide](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. 不同语言复数形式的数量以这种方式显示：`nplurals=2`、`nplurals=4`，依此类推。 `=` 等号后的数字表示相应语言的形式数量。
 
-此外，您还可以在 [Unicode 通用语言环境数据存储库](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules)（CLDR）中获取有关复数形式的相关信息。 CLDR 复数规则，即指十进制数字（1.5; 2.3; 100.1…）的其他词形式。但在 AdGuard 翻译中我们不使用它们。
+Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). CLDR 复数规则，即指十进制数字（1.5; 2.3; 100.1…）的其他词形式。但在 AdGuard 翻译中我们不使用它们。
 
 ## AdGuard 翻译中的复数形式 {#translations}
 
@@ -116,7 +116,7 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 
 在另一种语言具有三种复数形式的情况下，应该有三个模板，即两个竖线符号。
 
-例如，当我们将上面提到的短语翻译成斯洛伐克语时，根据 [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) 的规则，它具有三种词形，正确的翻译应该是这样的：
+For example, when we translate the above mentioned phrase into Slovak, that according to the rule of [Localization Guide](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) has three word forms, the correct translation will look so:
 
 `**Štandartná licencia pre *%count%* počítač | Štandartná licencia pre *%count%* počítače | Štandartná licencia pre *%count%* počítačov**`
 

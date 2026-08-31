@@ -38,9 +38,9 @@ Když se setkáte s překladem, který vyžaduje použití množného čísla, m
 
 Zde je několik zdrojů informací, které můžete použít.
 
-[Průvodce překlady](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) obsahuje široký seznam jazyků. Počet tvarů množného čísla pro různé jazyky se zobrazuje takto: `nplurals=2`, `nplurals=4` atd. Číslice za znaménkem rovnosti `=` indikuje počet tvarů množného čísla příslušného jazyka.
+[Průvodce překlady](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) obsahuje široký seznam jazyků. Počet tvarů množného čísla pro různé jazyky se zobrazuje takto: `nplurals=2`, `nplurals=4` atd. Číslice za znaménkem rovnosti `=` indikuje počet tvarů množného čísla příslušného jazyka.
 
-Informace o tvarech množného čísla můžete také získat v databázi [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Pravidla CLDR pro množné číslo uvádějí další slovní tvar pro desetinná čísla (1,5; 2,3; 100,1…), ale v překladech AdGuardu je nepoužíváme.
+Informace o tvarech množného čísla můžete také získat v databázi [Unicode Common Locale Data Repository](https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Pravidla CLDR pro množné číslo uvádějí další slovní tvar pro desetinná čísla (1,5; 2,3; 100,1…), ale v překladech AdGuardu je nepoužíváme.
 
 ## Množná čísla v překladech AdGuardu {#translations}
 
@@ -116,7 +116,7 @@ Další důležitou věcí, které byste měli věnovat pozornost jsou zástupn�
 
 V situaci s jiným jazykem, který má, řekněme, tři tvary množného čísla, by měly existovat tři šablony se dvěma svislými čarami mezi nimi.
 
-Když například přeložíme výše uvedenou frázi do slovenštiny, která má podle pravidla [Průvodce překlady](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) tři slovní druhy, bude správný překlad vypadat takto:
+Když například přeložíme výše uvedenou frázi do slovenštiny, která má podle pravidla [Průvodce překlady](https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) tři slovní druhy, bude správný překlad vypadat takto:
 
 `**Štandartná licencia pre *%count%* počítač | Štandartná licencia pre *%count%* počítače | Štandartná licencia pre *%count%* počítačov**`
 

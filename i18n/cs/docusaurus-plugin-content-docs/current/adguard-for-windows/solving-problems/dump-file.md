@@ -35,7 +35,7 @@ AdGuard pro Windows spouští dva procesy `Adguard.exe` a `AdguardSvc.exe`. Pro 
 
 ![Two processes *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/two_processes_en.png)
 
-Protože soubory mohou být velké, před odesláním na podporu je zkomprimujte do archivu. Přiložte také logy AdGuardu, které nám pomohou problém lépe diagnostikovat. [Pokyny pro sběr logů](../adguard-logs).
+Protože soubory mohou být velké, před odesláním na podporu je zkomprimujte do archivu. Přiložte také logy AdGuardu, které nám pomohou problém lépe diagnostikovat. [Pokyny pro sběr logů](/archive/adguard-for-windows/solving-problems/adguard-logs).
 
 ## Shromažďování souboru `wfpdiag.cab`
 

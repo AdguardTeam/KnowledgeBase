@@ -3,31 +3,31 @@ title: Safari 扩展
 sidebar_position: 3
 ---
 
-![Extensions tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/extensions.png)
+![扩展标签](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/extensions.png)
 
-Safari extensions are mechanisms that allow implementing content blockers — thematic clusters of filters. For example, privacy-related filters are included in the content blocker with the corresponding name — _AdGuard Privacy_.
+Safari 扩展是一种实现内容拦截器的机制，内容拦截器是过滤器的主题集合。 例如，与隐私相关的过滤器包含在内容拦截器中，其相应名称为「AdGuard 隐私」。
 
-Content blockers were designed for two reasons: to structure filters and to conform to Apple’s restrictions.
+设计内容拦截器有两个原因：结构过滤器和符合 Apple 公司的限制。
 
-[2019年](https://adguard.com/en/blog/adguard-safari-1-5.html)，Apple 对 Safari 浏览器的广告拦截器设置了限制，只允许它们同时使用5万个过滤规则。 As this number was not enough for an ad blocker to provide a good filtering quality (_AdGuard Base Filter_ alone has 30,000 filtering rules), we divided AdGuard for Safari into six content blockers each containing up to 50,000 rules.
+[2019年](https://adguard.com/en/blog/adguard-safari-1-5.html)，Apple 对 Safari 浏览器的广告拦截器设置了限制，只允许它们同时使用5万个过滤规则。 由于这个数量不足以让一个广告拦截器提供良好的过滤质量（仅 AdGuard 基础过滤器就有 30,000 个过滤规则），我们将 AdGuard Safari 版分成六个内容拦截器，每个拦截器包含多达 50,000 个规则。
 
-[2022年](https://adguard.com/en/blog/adguard-for-safari-1-11.html)，Apple 将每个内容拦截器的过滤规则数量限制提高到同时应用15万个规则。 Regarding AdGuard Mini for Mac, up to 900,000 rules can be enabled for all six content blockers.
+[2022年](https://adguard.com/en/blog/adguard-for-safari-1-11.html)，Apple 将每个内容拦截器的过滤规则数量限制提高到同时应用15万个规则。 关于 Mac 版 AdGuard Mini，六种内容拦截器最多可以启用 900,000 个规则。
 
 虽然数量限制提高了，但内容拦截器的结构却保持不变。
 
-In _Safari extensions_, you can see which content blockers are enabled, how many rules each of them is using, and which filters are functioning.
+在「Safari 扩展」中，用户可以查看哪些内容拦截器已启用、每个拦截器使用了多少条规则，以及哪些过滤器正在运行。
 
 :::tip
 
-You can manage enabled filters in _Settings_ → _Filters_. In _Safari extensions_, you can only see the list of enabled filters and the number of enabled rules.
+用户可以在「设置」→「过滤器」中管理已启用的过滤器。 在「Safari 扩展」中，用户只能看到已启用的过滤器列表和已启用的规则数量。
 
 :::
 
-## List of AdGuard Mini’s Safari extensions
+## AdGuard Mini 的 Safari 扩展列表
 
 ### AdGuard 常用
 
-「AdGuard 常规」是一款内容拦截器，结合最基本的拦截广告过滤器。 We recommend keeping _AdGuard Base Filter_ always enabled.
+「AdGuard 常规」是一款内容拦截器，结合最基本的拦截广告过滤器。 我们建议始终启用「AdGuard 基础过滤器」。
 
 ### AdGuard 隐私
 
@@ -35,7 +35,7 @@ You can manage enabled filters in _Settings_ → _Filters_. In _Safari extension
 
 ### AdGuard 社交
 
-「AdGuard 社交」包含针对社交媒体按钮、小工具、脚本和图标的过滤器。 Other annoyance filters can also be found in this section: filters against popups, banners, cookie notices, and more. To enable them, find _Social Widgets_ in _Settings_ → _Filters_.
+「AdGuard 社交」包含针对社交媒体按钮、小工具、脚本和图标的过滤器。 本部分还包含其他恼人元素过滤器：用于拦截弹窗、横幅、Cookie 通知等。 要启用它们，请在「设置」→「过滤器」中找到「社交插件」。
 
 ### AdGuard 安全
 
@@ -47,14 +47,14 @@ You can manage enabled filters in _Settings_ → _Filters_. In _Safari extension
 
 :::note 免责声明
 
-We don’t have any “acceptable ads” paid by advertisers. Instead, we provide users with an option to see [search ads and websites’ self-promotion](/general/ad-filtering/search-ads).
+我们没有任何由广告商付费的“可接受广告”。 我们为用户提供查看[搜索广告和网站自我宣传](/general/ad-filtering/search-ads)的选项。
 
 :::
 
 ### AdGuard 自定义
 
-![Create custom filter](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/create-custom.png)
+![创建自定义过滤器](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/create-custom.png)
 
-If you need more filters, you can add them to _AdGuard Custom_ extension.
+如果需要更多过滤器，可以将其添加到「AdGuard 自定义」扩展中。
 
-To add a custom filter, go to _Settings_ → _Filters_ → _Custom filters_ and enter a URL or a local file path in the relevant field. 用户可以在「filterlists.com](https://filterlists.com」上查看新的过滤器。
+要添加自定义过滤器，请转到「设置」→「过滤器」→「自定义过滤器」，并在相关字段中输入 URL 或本地文件路径。 用户可以在「filterlists.com](https://filterlists.com」上查看新的过滤器。

@@ -35,7 +35,7 @@ Pentru a raporta o reinserție a unei reclame sau o afișare incorectă a unui s
 
 ### Windows {#windows}
 
-- Deschide [Asistentul Browser AdGuard](/adguard-for-windows/browser-assistant) și apasă **Raportează o problemă**:
+- Deschide [Asistentul Browser AdGuard](/archive/adguard-for-windows/browser-assistant) și apasă **Raportează o problemă**:
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 

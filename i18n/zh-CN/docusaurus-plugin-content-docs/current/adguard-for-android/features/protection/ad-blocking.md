@@ -9,16 +9,10 @@ sidebar_position: 1
 
 :::
 
-广告拦截模块可通过点击底部屏幕的「保护」标签（屏幕底部左起第二个图标）并选择「广告拦截」访问。
+![广告拦截 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/ad-blocking.png)
 
-该功能通过应用广告拦截和特定语言过滤器来阻止广告。 要了解广告拦截的机制，可以阅读[专门的文章](/general/ad-filtering/how-ad-blocking-works)。
+点击「保护」选项卡（屏幕底部左数第二个图标），然后选择「广告拦截」，即可进入「广告拦截」模块。
 
-基本保护可有效拦截大多数网站上的广告。 如果要自定义广告拦截，可以执行以下操作：
+此功能通过应用广告拦截过滤器和特定语言过滤器来移除广告。 要了解广告拦截的机制，可以阅读[一篇专门的文章](/general/ad-filtering/how-ad-blocking-works)。
 
-- 开启适当的特定语言过滤器，它们包含拦截特定语言网站上的广告的过滤规则
-
-- 添加网站到白名单，AdGuard 不会过滤这些网站。
-
-- 创建用户规则，AdGuard 将应用它们到指定的网站上。 [了解关于创建自己过滤规则的更多详情](/general/ad-filtering/create-own-filters)
-
-![Ad blocking \*mobile_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
+「基本保护」可有效拦截大多数网站上的广告。 如需更个性化的广告拦截，可以启用「特定语言广告拦截」。它包含针对特定语言网站的过滤规则。

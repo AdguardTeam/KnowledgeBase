@@ -65,15 +65,15 @@ sidebar_position: 2
 
 1. 开启「开发者模式」：
 
-   ![开发者模式](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
+   ![Developer mode \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
 
 2. 单击「加载已解压的扩展程序」：
 
-   ![加载已解压的扩展程序](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+   ![Load unpacked \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
 
 3. 选择扩展目录并点击「选择」：
 
-   ![选择](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
+   ![Select \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
 
 完成！
 
@@ -95,4 +95,4 @@ sidebar_position: 2
 
 4. 在浏览器中重新加载扩展：
 
-   ![加载扩展](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)
+   ![Reload extension \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)

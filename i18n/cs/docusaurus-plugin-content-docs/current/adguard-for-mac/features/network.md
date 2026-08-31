@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -33,4 +33,4 @@ AdGuard můžete nastavit tak, aby veškerý provoz vašeho zařízení směrova
 
 AdGuard můžete použít jako HTTP proxy server. To vám umožní filtrovat provoz na jiných zařízeních připojených k proxy.
 
-Ujistěte se, že jsou Mac a druhé zařízení připojeny ke stejné síti, a zadejte port proxy serveru na zařízení, které chcete přesměrovat skrze proxy server (obvykle v nastavení sítě). Chcete-li filtrovat i provoz HTTPS, [převeďte proxy certifikát AdGuardu] (http://local.adguard.org/cert) do tohoto zařízení. [Další informace o instalaci proxy certifikátu](/guides/proxy-certificate)
+Ujistěte se, že jsou Mac a druhé zařízení připojeny ke stejné síti, a zadejte port proxy serveru na zařízení, které chcete přesměrovat skrze proxy server (obvykle v nastavení sítě). Chcete-li filtrovat i provoz HTTPS, [převeďte proxy certifikát AdGuardu] (https://local.adguard.org/cert) do tohoto zařízení. [Další informace o instalaci proxy certifikátu](/guides/proxy-certificate)

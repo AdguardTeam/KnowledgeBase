@@ -9,7 +9,7 @@ Les scripts utilisateurs ou userscripts (que nous appelons aussi "extensions") s
 
 :::note Apps prises en charge
 
-AdGuard peut accroître considérablement les fonctionnalités des sites web en agissant comme un gestionnaire de scripts utilisateur. Vous pouvez ajouter vos scripts personnalisés ou gérer ceux existants dans nos trois produits : [AdGuard pour Windows](/adguard-for-windows/features/extensions), [AdGuard pour Android](/adguard-for-android/features/settings#userscripts) et [AdGuard pour Mac](/adguard-for-mac/features/extensions).
+AdGuard peut accroître considérablement les fonctionnalités des sites web en agissant comme un gestionnaire de scripts utilisateur. Vous pouvez ajouter vos scripts personnalisés ou gérer ceux existants dans nos trois produits : [AdGuard pour Windows](/adguard-for-windows/protection/extensions), [AdGuard pour Android](/adguard-for-android/features/settings#userscripts) et [AdGuard pour Mac](/adguard-for-mac/features/extensions).
 
 :::
 
@@ -39,7 +39,7 @@ Cette version de l'Assistant est obsolète et inutile à utiliser sur les nouvea
 
 :::
 
-#### Désactiver AMP
+#### Disable AMP
 
 Un script préinstallé uniquement dans AdGuard pour Android. Il désactive AMP (Accelerated Mobile Pages - pages mobiles accélérées) sur la page de résultats de recherche Google. Apprenez plus sur ce script utilisateur et comment l'installer sur [GitHub](https://github.com/AdguardTeam/DisableAMP).
 
@@ -61,7 +61,7 @@ SponsorBlock skips sponsored segments in YouTube videos. It saves time by jumpin
 
 :::info
 
-This userscript runs exclusively on our desktop applications, AdGuard for Windows and AdGuard for Mac.
+Ce script utilisateur s'exécute exclusivement sur nos applications de bureau, AdGuard pour Windows et AdGuard pour Mac.
 
 :::
 
@@ -427,7 +427,7 @@ Currently, two AdGuard apps allow you to create and manage userstyles: AdGuard f
 
 :::
 
-This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at <support@adguard.com>.
+This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at [support@adguard.com](mailto:support@adguard.com).
 
 ### How to set up a userstyle in AdGuard
 

@@ -1,5 +1,5 @@
 ---
-title: Безопасность *mobile
+title: Безопасность
 sidebar_position: 7
 ---
 

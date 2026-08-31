@@ -18,6 +18,6 @@ AdGuard ürünlerinizden daha fazla yararlanmak için lisansınızı aşağıdak
 - To extend the number of devices, you can **upgrade your Personal license to Family**
 - You can also **upgrade your 1-year subscription to a lifetime license**
 
-You can upgrade your license in your AdGuard account. To do so, click *Upgrade to Lifetime* or *Increase device limit*.
+You can upgrade your license in your [AdGuard account](https://adguardaccount.com). To do so, click *Upgrade to Lifetime* or *Increase device limit*.
 
 ![Upgrade](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

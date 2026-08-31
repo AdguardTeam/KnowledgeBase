@@ -9,20 +9,14 @@ sidebar_position: 1
 
 :::
 
-## Функции
+- [Функции](/adguard-for-mac/features/features.md)
 
-Основные функции и настройки, доступные в AdGuard для Mac
+  Main features and settings available in AdGuard for Mac
 
-[Функции](/adguard-for-mac/features/features.md)
+- [Установка](/adguard-for-mac/installation.md)
 
-## Установка
+  Установка, удаление и системные требования для AdGuard для Mac
 
-Установка, удаление и системные требования для AdGuard для Mac
+- [Решение проблем](/adguard-for-mac/solving-problems/solving-problems.md)
 
-[Установка](/adguard-for-mac/installation.md)
-
-### Решение проблем
-
-Известные проблемы и возможные решения
-
-[Решение проблем](/adguard-for-mac/solving-problems/solving-problems.md)
+  Известные проблемы и возможные решения

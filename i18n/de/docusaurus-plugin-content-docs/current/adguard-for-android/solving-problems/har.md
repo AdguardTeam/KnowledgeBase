@@ -17,7 +17,7 @@ HAR-Dateien werden in Übereinstimmung mit der [Datenschutzrichtlinie von AdGuar
 
 ## Was sind HAR-Dateien?
 
-Das HAR-Format (HTTP ARchive) ist eine JSON-formatierte Archivdatei zur Protokollierung der Interaktion eines Webbrowsers mit einer Website. Die Spezifikationen des HAR-Formats definieren Archivierungsdaten für HTTP-Transaktionen, die ein Browser verwendet, um detaillierte Informationen über die von ihm geladenen Webseiten zu exportieren. Eine genauere Beschreibung des HAR-Dateiformats und seiner Spezifikationen finden Sie auf der Website [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
+Das HAR-Format (HTTP ARchive) ist eine JSON-formatierte Archivdatei zur Protokollierung der Interaktion eines Webbrowsers mit einer Website. Die Spezifikationen des HAR-Formats definieren Archivierungsdaten für HTTP-Transaktionen, die ein Browser verwendet, um detaillierte Informationen über die von ihm geladenen Webseiten zu exportieren. More detailed description of HAR file format and its specification you can find at [softwareishard.com](https://www.softwareishard.com/blog/har-12-spec/) website.
 
 ## So können HAR-Dateien erzeugt werden
 

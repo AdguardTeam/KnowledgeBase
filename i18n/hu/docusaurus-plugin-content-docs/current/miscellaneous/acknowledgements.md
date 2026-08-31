@@ -18,9 +18,9 @@ Ez azon könyvtárak és egyéb források listája, amelyek valóban segítettek
 
 ## AdGuard Macre {#mac}
 
-- Red Sweater Software, LLC az RSVerticallyCenteredTextFieldCell komponenshez: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
+- Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component: [https://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](https://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
 - Ilija Tovilo az ITProgressIndicator komponenshez: [github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
-- Sparkle projekt a Sparkle.framework komponenshez: [http://sparkle-project.org](http://sparkle-project.org)
+- Sparkle Project for Sparkle.framework component: [https://sparkle-project.org](https://sparkle-project.org)
 - Robbie Hanson a GCDAsyncSocket komponenshez: [github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
 - Tony Million a Reachability komponenshez: [github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
 - August "Gus" Mueller az Fmdb komponenshez: [github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
@@ -31,7 +31,7 @@ Ez azon könyvtárak és egyéb források listája, amelyek valóban segítettek
 ## AdGuard Androidra {#android}
 
 - Logback-android Tony19 által: [tony19.github.io/logback-android](https://tony19.github.io/logback-android)
-- Otto by Square: [http://square.github.io/otto](http://square.github.io/otto)
+- Otto by Square: [https://square.github.io/otto](https://square.github.io/otto)
 - RootTools könyvtár a Stericson-tól: [github.com/Stericson/RootTools/Stericson/RootTools](https://github.com/Stericson/RootTools)
 - MaterialDateRangePicker by Supratim Chakraborty: [github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
 - HelloCharts by Leszek Wach: [github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)

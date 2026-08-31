@@ -23,7 +23,7 @@ DNS設定を管理するには、AdGuardアプリはローカルVPNの確立を�
 
 このセクションには「AdGuard」と「ネイティブ」という2つのオプションがあります。 基本的に、この二つは何かというと、二種類のDNS設定方法なのです。
 
-「ネイティブ」実装では、DNS はアプリではなくシステムによって処理されます。 つまりこの場合、AdGuard はローカルVPNを作成する必要がありません。 しかし残念ながら、この方法ですと、システムの制限を回避し、他のVPNベースアプリと一緒にAdGuardを使用することはできません。VPNが有効になっている場合、ネイティブDNSは無視されるからです。 その結果、トラフィックをローカルでフィルタリングしたり、新しい[DNS-over-QUICプロトコル(DoQ)](https://adguard.com/ja/blog/dns-over-quic.html)を使用することができなくなります。
+「ネイティブ」実装では、DNS はアプリではなくシステムによって処理されます。 つまりこの場合、AdGuard はローカルVPNを作成する必要がありません。 しかし残念ながら、この方法ですと、システムの制限を回避し、他のVPNベースアプリと一緒にAdGuardを使用することはできません。VPNが有効になっている場合、ネイティブDNSは無視されるからです。 その結果、トラフィックをローカルでフィルタリングしたり、新しい[DNS-over-QUICプロトコル(DoQ)](https://adguard-dns.io/blog/dns-over-quic.html)を使用することができなくなります。
 
 ### DNSサーバー
 
@@ -67,7 +67,7 @@ _AdGuardによる保護_（画面下の左から2番目の盾アイコン） →
 
 #### DNSフィルタ
 
-Safariで動作するフィルタと同様に、DNSフィルタは[特別な構文](https://adguard-dns.io/kb/general/dns-filtering-syntax/)に従って記述されたルールのセットです。 AdGuard は、DNSトラフィックを監視し、フィルタのルール1つ以上にマッチするDNSリクエストをブロックします。 [AdGuard DNS フィルタ](https://github.com/AdguardTeam/AdguardSDNSFilter)などのフィルターを使用したり、フィルタとしてhostsファイルを追加したりできます。 同時に複数のフィルタも追加できます。 その方法は、[こちらの詳しいマニュアル](adguard-for-ios/solving-problems/system-wide-filtering)をお読みください。
+Safariで動作するフィルタと同様に、DNSフィルタは[特別な構文](https://adguard-dns.io/kb/general/dns-filtering-syntax/)に従って記述されたルールのセットです。 AdGuard は、DNSトラフィックを監視し、フィルタのルール1つ以上にマッチするDNSリクエストをブロックします。 [AdGuard DNS フィルタ](https://github.com/AdguardTeam/AdguardSDNSFilter)などのフィルターを使用したり、フィルタとしてhostsファイルを追加したりできます。 同時に複数のフィルタも追加できます。 To know how to do it, get acquainted with [this exhaustive manual](/adguard-for-ios/solving-problems/system-wide-filtering).
 
 #### ホワイトリストとブラックリスト
 

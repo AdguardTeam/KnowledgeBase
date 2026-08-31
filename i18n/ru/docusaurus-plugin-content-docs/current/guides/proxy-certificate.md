@@ -23,7 +23,7 @@ HTTP-трафик будет фильтроваться в любом случа
 
 1. Убедитесь, что защита AdGuard включена. На компьютере с Windows установите флажок **Использовать AdGuard как HTTP-прокси** во вкладке **Сеть** в его настройках. На Mac перейдите в **Настройки** → **Сеть** и включите **HTTP-прокси**.
 
-1. На том же компьютере с AdGuard перейдите по этой ссылке: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. On the same computer with AdGuard, follow this link: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Нажмите кнопку **Скачать** . Если загрузка не начинается, попробуйте другой браузер, например Firefox.
 
@@ -65,7 +65,7 @@ HTTP-трафик будет фильтроваться в любом случа
 
 1. Убедитесь, что защита AdGuard включена. На компьютере с Windows установите флажок **Использовать AdGuard как HTTP-прокси** во вкладке **Сеть** в его настройках. На Mac перейдите в **Настройки** → **Сеть** и включите **HTTP-прокси**.
 
-1. Перейдите по этой ссылке, используя веб-браузер: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. Follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Нажмите кнопку **Скачать**. Если загрузка не начинается, попробуйте другой браузер, например Firefox.
 
@@ -97,7 +97,7 @@ HTTP-трафик будет фильтроваться в любом случа
 
 1. Убедитесь, что защита AdGuard включена. На компьютере с Windows установите флажок **Использовать AdGuard как HTTP-прокси** во вкладке **Сеть** в его настройках. На Mac перейдите в **Настройки** → **Сеть** и включите **HTTP-прокси**.
 
-1. На том же компьютере с AdGuard перейдите по этой ссылке, используя браузер: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Нажмите кнопку **Скачать**. Если загрузка не начинается, попробуйте другой браузер, например Firefox.
 
@@ -117,7 +117,7 @@ HTTP-трафик будет фильтроваться в любом случа
 
 1. Убедитесь, что защита AdGuard включена. На компьютере с Windows установите флажок **Использовать AdGuard как HTTP-прокси** во вкладке **Сеть** в его настройках. На Mac перейдите в **Настройки** → **Сеть** и включите **HTTP-прокси**.
 
-1. На том же компьютере с AdGuard перейдите по этой ссылке, используя браузер: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. Нажмите кнопку **Скачать** . Если загрузка не начинается, попробуйте другой браузер, например Firefox.
 

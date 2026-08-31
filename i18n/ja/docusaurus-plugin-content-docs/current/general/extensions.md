@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::note Supported apps
 
-AdGuard はユーザースクリプトマネージャとして、ウェブサイトの機能を大幅に拡張することができます。 You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/features/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
+AdGuard はユーザースクリプトマネージャとして、ウェブサイトの機能を大幅に拡張することができます。 You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/protection/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
 
 :::
 
@@ -427,7 +427,7 @@ Currently, two AdGuard apps allow you to create and manage userstyles: AdGuard f
 
 :::
 
-This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at <support@adguard.com>.
+This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at [support@adguard.com](mailto:support@adguard.com).
 
 ### How to set up a userstyle in AdGuard
 

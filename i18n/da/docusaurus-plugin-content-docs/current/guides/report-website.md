@@ -35,7 +35,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ### Windows {#windows}
 
-- Open [AdGuard Browser Assistant](/adguard-for-windows/browser-assistant) and hit **Report an issue**:
+- Open [AdGuard Browser Assistant](/archive/adguard-for-windows/browser-assistant) and hit **Report an issue**:
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 
@@ -123,7 +123,7 @@ This option is suitable for those who aren’t afraid of difficulties and don’
 
 For example, you are faced with a situation that your favorite website won’t open, authorization has broken, or some page elements are displayed incorrectly. The cause may be using a specific filter/extension/Stealth Mode setting. To diagnose these problems, you need to do the following:
 
-### **Filters**
+### **Filtre**
 
 1. Disable **Ad Blocker**;
 2. If it solved the problem, re-enable the module and disable filters one by one. This is done to identify filters that "break" the page;

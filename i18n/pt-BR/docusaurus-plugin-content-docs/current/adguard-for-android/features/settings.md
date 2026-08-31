@@ -37,25 +37,27 @@ A seção _Configurações de baixo nível_ é para usuários experientes. [Leia
 
 ## Filtragem
 
-Esta seção permite gerenciar configurações de filtragem HTTPS, filtros e scripts de usuário e configurar um servidor proxy.
+This section lets you manage filters, extensions, network settings, add websites to the allowlist, and create user rules.
 
-![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.jpg)
+[Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+
+![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.png)
 
 ### Filtros
 
-O AdGuard bloqueia anúncios, rastreadores e incômodos aplicando regras de seus filtros. A maioria dos recursos da seção _Proteção_ são alimentados pelos [filtros AdGuard](/general/ad-filtering/adguard-filters/#adguard-filters). Se você ativar a _Proteção básica_, o filtro AdGuard Base e o filtro AdGuard Mobile Ads serão ativados automaticamente. E vice-versa: se você desligar ambos os filtros, a _Proteção básica_ também será desativada.
+AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the _Protection_ section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable _Basic protection_, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, _Basic protection_ will also be disabled.
 
-![Filtros \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
+![Filters \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
-Os filtros habilitados por padrão são suficientes para a operação normal do AdGuard. No entanto, se quiser personalizar o bloqueio de anúncios, você pode usar outros filtros do AdGuard ou de terceiros. Para isso, selecione uma categoria e habilite os filtros desejados. Para adicionar um filtro personalizado, toque em _Filtros personalizados_ → _Adicionar filtro personalizado_ e insira seu URL ou caminho de arquivo.
+Filters enabled by default are enough for normal AdGuard operation. However, if you want to customize ad blocking, you can use other AdGuard or third-party filters. To do this, select a category and enable the filters you'd like. To add a custom filter, tap _Custom filters_ → _Add custom filter_ and enter its URL or file path.
 
 :::note
 
-Se você ativar muitos filtros, alguns sites poderão funcionar incorretamente.
+If you activate too many filters, some websites may work incorrectly.
 
 :::
 
-[Leia mais sobre filtros](https://adguard.com/en/blog/what-are-filters.html)
+[Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
 
 ### Extensões
 

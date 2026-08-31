@@ -101,7 +101,7 @@ Po dokončení první části je důležité problém reprodukovat.
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-    Pošlete vytvořený `txt` soubor a čas, kdy byl problém reprodukován (z části #2) našemu týmu podpory na adresu <support@adguard.com>.
+    Pošlete vytvořený `txt` soubor a čas, kdy byl problém reprodukován (z části #2) našemu týmu podpory na adresu [support@adguard.com](mailto:support@adguard.com).
 
 ### Alternativní způsob pro uživatele s přístupem ROOT
 

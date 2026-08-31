@@ -129,6 +129,12 @@ Das Aktivieren dieser Option kann die Funktion bestimmter Browseranwendungen bee
 
 :::
 
+:::note
+
+In AdGuard Browser Extension, *Block WebRTC* is applied globally and cannot be controlled on a per-site basis. Exception rules like `@@||example.com^$stealth=webrtc` are not supported. For per-site WebRTC control, use the full-fledged AdGuard app for Windows, Mac, or Android.
+
+:::
+
 ### Push API blockieren {#push}
 
 Diese Funktion verhindert Push-Benachrichtigungen von Websites.

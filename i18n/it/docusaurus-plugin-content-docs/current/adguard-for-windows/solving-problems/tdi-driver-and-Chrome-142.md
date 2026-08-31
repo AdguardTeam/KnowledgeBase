@@ -1,15 +1,15 @@
 ---
 title: Inghippi di filtraggio in Chrome 142 e successivi quando si usa il driver TDI
-sidebar_position: 14
+sidebar_position: 1
 ---
 
 :::info
 
-Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
+Questo articolo descrive AdGuard per Windows v8.0, un blocca-inserzioni completo che protegge il tuo dispositivo a livello di sistema. Questo è una versione beta ancora in fase di sviluppo. Per provarlo, scarica la [versione beta di AdGuard per Windows](https://agrd.io/windows_beta).
 
 :::
 
-Some AdGuard for Windows users may notice that [the app stops filtering traffic in Chromium-based browsers](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). Starting from Google Chrome 142+, browser traffic simply does not appear at the TDI driver level, preventing AdGuard from inspecting or filtering it.
+Alcuni utenti di AdGuard per Windows possono notare che [l'app smette di filtrare il traffico nei browser basati su Chromium](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). A partire da Google Chrome 142, il traffico del browser semplicemente non appare più al livello del driver TDI, impedendo ad AdGuard d'ispezionarlo o filtrarne il traffico.
 
 Questo comportamento non è un errore di AdGuard, ma il risultato di recenti cambiamenti architetturali e di sicurezza nei browser moderni.
 
@@ -33,6 +33,14 @@ Per questo motivo, la visibilità del traffico basata su TDI diventa sempre più
 
 AdGuard già considera il driver TDI obsoleto e la sua completa rimozione è pianificata con l'evoluzione del prodotto.
 
+## Soluzione permanente
+
+From v8.0 RC, we’ve added experimental support for the SockFilter driver. It fixes the issue by solving conflicts in the WFP stack. [Ulteriori informazioni](/adguard-for-windows/settings/app-settings/network-settings/).
+
+To use it, go to _Settings → Network → Traffic filtering_, enable traffic filtering, and select _SockFilter (Experimental)_ from the list of available options.
+
+Since it’s experimental, there may be bugs. If you notice anything unusual, unexpected, or just plain broken, **you can switch back to TDI or WFP at any time** in the same section.
+
 ## Soluzione temporanea
 
 Certi cambiamenti del registro di Windows possono forzare il browser a fermare l'uso di AppContainer, causando nuovamente l'esecuzione dei suoi processi in una modalità non isolata. Il servizio della rete dedica ferma l'uso dello stack WSK e torna a un percorso di rete che il driver TDI può vedere. AdGuard quindi riacquista la capacità di filtrare il traffico del browser.
@@ -49,8 +57,6 @@ Non dovrebbe essere **applicata** in modo ampio nei computer degli utenti finali
 
 :::
 
-#### Using .reg files
-
 Puoi applicare automaticamente le modifiche necessarie al registro usando uno dei file .reg pre-generati qui sotto. Ogni file disabilita la messa in disparte diAppContainer/rete per uno specifico browser basato su Chromium:
 
 - [Scarica Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chrome.reg)
@@ -59,17 +65,6 @@ Puoi applicare automaticamente le modifiche necessarie al registro usando uno de
 - [Scarica Brave.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Brave.reg)
 - [Scarica Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Vivaldi.reg)
 - [Scarica YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_YandexBrowser.reg)
-
-You can revert these changes using the undo .reg files provided below. These files remove the registry branches that were added by the direct version:
-
-- [Undo Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chrome.reg)
-- [Undo Chromium.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Chromium.reg)
-- [Undo Edge.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Edge.reg)
-- [Undo Brave.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Brave.reg)
-- [Undo Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_Vivaldi.reg)
-- [Undo YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/Undo_DisableAppContainer_YandexBrowser.reg)
-
-#### Explicit registry editing
 
 Se il tuo browser non è elencato, segui le istruzioni manuali qui sotto per creare le voci di registro necessarie:
 
@@ -136,7 +131,3 @@ Dovresti vedere le seguenti politiche attive:
 Se disponibile, clicca _Ricarica le politiche_.
 
 Fatto!
-
-## Soluzione permanente
-
-Abbiamo in programma di aggiungere il supporto per il driver SockFilter nelle prossime versioni. Risolverà l'inghippo sistemando i conflitti nello stack WFP. [Ulteriori informazioni](https://github.com/AdguardTeam/AdguardForWindows/issues/5780).

@@ -5,24 +5,24 @@ sidebar_position: 1
 
 :::info
 
-This page is about AdGuard Mini for Mac, which safeguards only your Safari browser. Chcete-li zcela ochránit svůj Mac, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
+Tato stránka je o AdGuardu Mini pro Mac, který chrání pouze váš prohlížeč Safari. Chcete-li zcela ochránit svůj Mac, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard Mini for Mac (formerly AdGuard for Safari) was designed to conform to Apple’s restrictions for ad blocking browser extensions. Although it can’t be compared to our desktop ad blocking apps, it’s free and can protect you from ads, trackers, phishing, and malicious websites.
+AdGuard Mini pro Mac (dříve AdGuard pro Safari) byl navržen tak, aby odpovídal omezením Apple pro rozšíření prohlížeče pro blokování reklama. Přestože se nedá srovnávat s našimi aplikacemi pro blokování reklam na počítači, je zdarma a dokáže vás ochránit před reklamami, slídiči, phishingem a škodlivými webovými stránkami.
 
-- [Features](/adguard-mini-for-mac/features/features.md)
+- [Funkce](/adguard-mini-for-mac/features/features.md)
 
-  Main features and settings available in AdGuard Mini for Mac
+  Hlavní funkce a nastavení dostupné v aplikaci AdGuard Mini pro Mac
 
-- [Installation](/adguard-mini-for-mac/installation.md)
+- [Instalace](/adguard-mini-for-mac/installation.md)
 
-  Installation, removal, and system requirements for AdGuard Mini for Mac
+  Instalace, odstranění a systémové požadavky AdGuardu Mini pro Mac
 
-- [Safari extensions](/adguard-mini-for-mac/extensions.md)
+- [Rozšíření Safari](/adguard-mini-for-mac/extensions.md)
 
-  Mechanisms that enable content blocking and add functionality to the Safari web browser
+  Mechanismy, které umožňují blokování obsahu a přidávají funkce do webového prohlížeče Safari
 
-- [Solving problems](/adguard-mini-for-mac/solving-problems/solving-problems.md)
+- [Řešení problémů](/adguard-mini-for-mac/solving-problems/solving-problems.md)
 
   Známé problémy a možná řešení

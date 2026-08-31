@@ -18,6 +18,6 @@ iOS용 AdGuard Pro는 App Store에서 구입할 수 있습니다.
 - **개인용 라이선스를 가족용 라이선스**로 업그레이드하여 기기 수를 늘릴 수 있습니다.
 - **1년 구독을 평생 라이선스로 업그레이드**할 수도 있습니다.
 
-AdGuard 계정에서 라이선스를 업그레이드할 수 있습니다. 라이선스를 업그레이드하려면 *평생 요금제로 업그레이드* 또는 *기기 한도 늘리기*를 클릭합니다.
+You can upgrade your license in your [AdGuard account](https://adguardaccount.com). 라이선스를 업그레이드하려면 *평생 요금제로 업그레이드* 또는 *기기 한도 늘리기*를 클릭합니다.
 
 ![업그레이드](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

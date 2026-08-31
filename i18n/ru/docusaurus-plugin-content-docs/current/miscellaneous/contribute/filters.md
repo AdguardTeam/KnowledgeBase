@@ -9,9 +9,17 @@ sidebar_position: 4
 
 Веб-сайты постоянно меняют способы встраивания рекламы, и мы добавляем новые правила в наши фильтры, чтобы сохранить их эффективность. Над созданием новых правил работают инженеры фильтров. Однако мы всегда рады помощи и поддержке волонтёров.
 
+:::note
+
+All contributors must follow the **AdGuard filter policy** when creating rules. By participating, you agree to comply with the Policy and ensure your rules adhere to its requirements. Also contributors must not create rules intended to deliberately block websites or services that do not meet the criteria for blocking or that fall under exceptions described in the Policy.
+
+:::
+
 ### С чего начать {#how-to-start}
 
-Работа с фильтрами, блокирующими рекламу, требует специальных навыков. Если они у вас есть, и вы знаете, как создавать правила, то направляйтесь прямо в наш репозиторий [AdGuard Filters](https://github.com/AdguardTeam/AdguardFilters) на GitHub. Там вы найдёте множество открытых вопросов, каждый из которых ссылается на проблему с каким-либо сайтом — пропущенное объявление, ложное срабатывание и т. д. Выбирайте любой и предлагайте свои правила в комментариях. Инженеры фильтров AdGuard рассмотрят ваше предложение и добавят правило в фильтры, если оно окажется корректным.
+Работа с фильтрами, блокирующими рекламу, требует специальных навыков. Если они у вас есть, и вы знаете, как создавать правила, то направляйтесь прямо в наш репозиторий [AdGuard Filters](https://github.com/AdguardTeam/AdguardFilters) на GitHub. Before you start contributing, we recommend reviewing the [guidelines](https://github.com/AdguardTeam/AdguardFilters/blob/master/CONTRIBUTING.md).
+
+In the repository, you will find a lot of open issues, each one referencing a problem with some website problem — a missed ad, a false positive, etc. Выбирайте любой и предлагайте свои правила в комментариях. Инженеры фильтров AdGuard рассмотрят ваше предложение и добавят правило в фильтры, если оно окажется корректным.
 
 Если вы ещё не знакомы с синтаксисом наших правил фильтрации или просто хотите освежить знания, то вам нужно обратиться к [нашей Базе знаний](/general/ad-filtering/create-own-filters).
 

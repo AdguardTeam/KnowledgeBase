@@ -18,9 +18,9 @@ sidebar_position: 2
 
 ## Mac용 AdGuard {#mac}
 
-- Red Sweater Software, RSVerticallyCenteredTextFieldCell의 개발사: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
+- Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component: [https://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](https://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
 - ITProgressIndicator 컴포넌트용 Ilija Tovilo: [github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
-- Sparkle.framework 컴포넌트용 Sparkle 프로젝트: [http://sparkle-project.org](http://sparkle-project.org)
+- Sparkle Project for Sparkle.framework component: [https://sparkle-project.org](https://sparkle-project.org)
 - GCDAsyncSocket 컴포넌트의 Robbie Hanson: [github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
 - Reachability 컴포넌트의 Tony Million: [github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
 - Fmdb 컴포넌트용 August “Gus” Mueller: [github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
@@ -31,7 +31,7 @@ sidebar_position: 2
 ## Android용 AdGuard {#android}
 
 - Tony19의 Logback-android: [tony19.github.io/logback-android](https://tony19.github.io/logback-android)
-- Square의 Otto: [http://square.github.io/otto](http://square.github.io/otto)
+- Otto by Square: [https://square.github.io/otto](https://square.github.io/otto)
 - Stericson의 RootTools 라이브러리: [github.com/Stericson/RootTools](https://github.com/Stericson/RootTools)
 - Supratim Chakraborty의 MaterialDateRangePicker: [github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
 - Leszek Wach의 HelloCharts: [github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)

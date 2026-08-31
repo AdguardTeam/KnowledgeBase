@@ -36,7 +36,7 @@ sidebar_position: 6
 
 **过滤器**（或者，**过滤器列表**）是一套过滤规则，旨在使用广告拦截程序过滤内容和拦截各种类型的广告和其他内容。 这些过滤器通常在浏览器、程序或 DNS 服务器级别上运行。
 
-**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so-called “adblock walls”). 反广告拦截有多种类型
+**Anti-adblock**（中文：反广告拦截）是网站或应用程序使用的一种技术，旨在检测广告拦截并以不同方式对其做出反应：跟踪、重新注入广告、鼓励禁用广告拦截器（即所谓的“广告拦截墙”（英文：Adblock walls））。 反广告拦截有多种类型
 
 - 不提供其他选择的 Anti-adblock：要继续使用网站，用户必须禁用网站上的广告拦截程序。
 - 提供替代选项的 “Anti-adblock wall”，例如购买订阅以继续使用广告拦截程序。
@@ -81,15 +81,16 @@ AdGuard 广告拦截的过滤器包含以下过滤器：
 ### 限制及例外
 
 - 不应故意屏蔽网站自身的广告。 但是，如果屏蔽是由一般过滤规则造成的，则不应解除屏蔽。
-- 不屏蔽收费墙等内容访问措施。
+- 付费墙等内容访问限制措施不会被广告拦截过滤器屏蔽。 不过，如果其运作方式侵犯用户隐私，则可能被「跟踪保护过滤器」屏蔽。
 - 在以下情况下，Anti-adblock walls 将被屏蔽：
     - 强烈要求禁用或删除广告拦截器，或有效阻止使用网站。
     - 对使用广告拦截器可能造成的后果作出错误和误导性的描述。
     - 使访问者面临恶意广告的风险，如果未阻止的广告来自可疑来源。
+    - 它们侵犯用户隐私或对其产生负面影响。
 - 如果广告拦截程序检测到的信息至少满足以下条件之一，我们将不予拦截：
     - 监测到的信息允许不干扰网站使用体验，不会覆盖大量页面内容。
     - 监测到的信息提供禁用广告拦截器的替代方案，但这种替代方案不会危及用户的隐私或安全。
-    - They allow the user to proceed to the website’s content
+    - 它们允许用户继续访问网站内容。
     - 某些传统规则可能会继续拦截符合上述一个或多个标准的信息。 如果发现此类规则，将依照政策进行处理。
 - 如果网络矿池是公开的，且不完全用于恶意目的，则不会被封锁。
 
@@ -110,6 +111,7 @@ AdGuard 广告拦截的过滤器包含以下过滤器：
 AdGuard 跟踪保护过滤器包含以下过滤器：
 
 - AdGuard 防跟踪保护过滤器
+- AdGuard 邮件跟踪保护过滤器
 - AdGuard URL 跟踪过滤器
 
 ### 过滤器的用途
@@ -128,6 +130,8 @@ AdGuard 跟踪保护过滤器包含以下过滤器：
 - Google 浏览器的隐私沙盒功能及其用于跟踪的分叉（Google Topics API、受保护受众 API）
 
 **URL 跟踪过滤器**旨在移除网址中的跟踪参数。
+
+**Mail 跟踪保护过滤器**会拦截邮件中嵌入的跟踪像素，防止发件人监控用户何时打开邮件。
 
 ### 限制及例外
 
@@ -165,32 +169,30 @@ AdGuard 跟踪保护过滤器包含以下过滤器：
 
 #### AdGuard Cookie 通知过滤器
 
-该过滤器旨在阻止 Cookie 通知和来自 Cookie 管理平台（CMP）的请求。 可对 Cookie 通知和 CMP 采用多种方法。 在大多数情况下，只需隐藏或阻止相应的脚本即可。 不过，当网站的功能和第三方内容的显示需要 Cookie 同意时，就会使用以下方法：
+该过滤器旨在阻止 Cookie 通知和来自 Cookie 管理平台（CMP）的请求。 根据网站实现同意机制的方式不同，所采用的方法也有所差异。
 
-- 使用 Scriptlets（小脚本）绕过同意请求（实际上不适用于在作出决定之前限制加载第三方内容的网站）。
-- 在网站本地存储中设置 Cookie 或密钥，使脚本认为用户已做出选择。
-- 使用点击指定按钮并在加载 10 秒后中断执行的规则模拟用户操作。 有两个选项可供选择：
-    - 拒绝（功能 Cookie 除外，取决于 CMP 系统）。首选项，因为加载附加分析工具的可能性较小。
-    - 接受：如果其他方法无效。 在这种情况下，会额外检查网站是否使用了分析工具，然后由 **AdGuard 跟踪保护过滤器**进行阻止。
+大多数情况下，只需隐藏或屏蔽相应的脚本即可。 不过，如果网站要求用户做出 Cookie 选择才能使某些功能或第三方内容正常运行，过滤器会自动采用替代方法来处理该请求。
+
+在可能的情况下，非必要 Cookie 默认会被拒绝。 如果技术上不可行，必须授予同意才能让网站正常运行，则会额外对该网站进行分析和跟踪技术审查，并由 **AdGuard 跟踪保护过滤器**进行拦截。
 
 **限制及例外**
 
-在某些情况下，添加规则的决定是由过滤器开发人员独立做出的。大多数情况下，在模拟操作时做出的选择会影响网站的功能（例如，历史记录可能不起作用，或者在这样的网站上用户设置可能不会被保存）。
+在某些情况下，添加规则的决定由过滤器开发者自行做出；主要是在模拟操作时的选择会影响网站功能的情况下（例如，网站的历史记录可能无法使用，或用户设置可能无法保存）。
 
 #### AdGuard 弹窗过滤器
 
-该过滤器可阻止正常使用网站时不需要的各种网页弹出窗口，包括但不限于：
+这是一个用于拦截网页上各类非必需弹窗的过滤器，包括但不限于：
 
-- 请求允许接收推送通知
-- 订阅新闻、促销和各种活动的弹出窗口和表格，包括接收这些信息的第三方渠道（如 Google 新闻、Telegram 等）
-- 鼓励用户禁用广告拦截器和侵犯用户隐私的弹出窗口（由过滤器开发人员决定）
-- 其他可能使用户厌烦的弹出窗口（由过滤器开发人员决定）
+- 请求获取推送通知权限的弹窗
+- 订阅新闻、促销活动及各类事件的弹窗和表单，包括通过第三方渠道（如 Google News、Telegram）接收的订阅请求
+- 鼓励用户关闭广告拦截程序并侵犯用户隐私的弹窗（由过滤器开发者酌情决定）
+- 其他可能对用户造成困扰的弹窗类型（由过滤器开发者酌情决定）
 
 **限制及例外**
 
-- 推送通知只会在不用于实际目的的网站上被阻止。 例如，在用于工作目的的电子邮件网络客户端或工具中，此类通知不会被阻止。
-- 一些不属于上述类别但仍会干扰用户体验的弹出窗口也会被阻止。 例如，网站上的注册提示或介绍网站功能的弹出窗口。 由过滤器开发人员决定。
-- 不得规避要求用户付费才能访问内容的内容访问措施。
+- 推送通知仅在非实用用途的网站上被拦截。 例如，在邮件网页客户端或用于工作目的的工具中，这类通知不会被拦截。
+- 部分不属于上述类别但仍干扰用户体验的弹窗，也可能被拦截。 例如，网站上的注册提示或介绍网站功能的弹窗。 具体由过滤器开发者酌情决定。
+- 要求用户付费以访问内容的内容访问措施，不得被绕过。
 
 #### AdGuard 移动拦截程序横幅广告的过滤器
 
@@ -198,106 +200,137 @@ AdGuard 跟踪保护过滤器包含以下过滤器：
 
 **限制及例外**
 
-位于网站页眉或菜单中的横幅广告，如果没有动画效果，也没有占据很大的可用空间，则不会被屏蔽。 如果横幅位于页脚，则由过滤器开发人员根据具体情况决定。 通常情况下，页脚中的横幅不会在其他元素中脱颖而出，也不会分散注意力。
+位于网站页眉或菜单中的横幅，若非动画形式且未占用过多可用空间，则不予拦截。 若横幅位于页脚，则由过滤器开发者根据具体情况决定。 通常，页脚横幅与其他元素相比并不突出，也不易分散注意力。
 
 #### AdGuard 小工具过滤器
 
-这是一个过滤器，可以屏蔽对网站运行或与网站互动不重要的各种小工具：
+This is a filter that blocks various widgets that are not essential for the functioning of websites or for interaction with them:
 
-- 内容推荐小工具：相关文章、类似网站、各种个性化推荐
-- 未与内容整合且不是页面主要内容的聊天小工具
-- 营销小工具
-    - 用于与助理或机器人交流的聊天工具
-    - 向用户推荐产品的小工具
-    - 回电表单
-- 其他没有单独类别但可能会在视觉上扰乱页面的小工具。 例如，天气小工具、货币汇率、职位列表和捐款等。
+- Widgets for content recommendations — related articles, similar websites, various personalized recommendations
+- Chat widgets that are not integrated with the content and are not the main content of the page
+- Marketing widgets:
+    - Chats for communication with assistants or bots
+    - Widgets with product recommendations that are shown to the user
+    - Call-back forms
+- Other widgets that do not have a separate category but may visually clutter the page. For example, weather widgets, currency exchange rates, job listings, and donations
 
 **限制及例外**
 
-此过滤无法阻止：
+This filter doesn’t block:
 
-- 与页面内容密切相关的小工具，如评论区、即时聊天流，但非官方聊天流网站上的非主持聊天除外，因为这些聊天通常充斥着垃圾邮件和类似内容。
-- 用于自我宣传和网站特定宣传活动的小工具。
-- 捐款小工具，除非这些小工具占据了页面的很大一部分，并在内容中非常显眼。 是否屏蔽由过滤器开发人员决定。
+- Widgets closely related to the content of the page, such as comments sections, live chat streams, with an exception of unmoderated chats on sites with unofficial streams, which are often filled with spam and similar content
+- Widgets for self-promotion and site-specific promotional activities
+- Donation widgets, except the cases where they occupy a significant portion of the page and stand out prominently against the content. The decision to block is made by filter developers
 
 #### AdGuard 其他恼人广告过滤器
 
-该滤镜旨在屏蔽其他滤镜不包含的恼人元素，并进行各种调整。 其目的是：
+This filter is designed to block annoying elements that are not included in other filters, as well as to apply various tweaks. It’s purpose is to:
 
-- 阻止网站的自我宣传（任何类型的广告，宣传网站所有者拥有的未从第三方获得商业补偿的商品或服务），如果被认为是一个恼人元素。
-- 屏蔽不属于其他类别的烦人元素。
-- 如果页面上的操作（如打开右键菜单、选择和复制文本）被阻止，则取消阻止这些操作。
-- 在从网站加载文件时，如果检查不受服务器控制或不受阻，则加快倒计时器的速度。
-- 应用对过滤器开发人员有用的各种规则。 例如，阻止网络调试器检测。
+- Block self-promotion of websites (any type of advertising promoting goods or services owned by the site owner, without receiving commercial compensation from a third party), if it is considered an annoying element
+- Block annoying elements that are not included in other categories
+- Unblock actions on the page, such as opening the context menu, selecting and copying text, if they are blocked
+- Speed up countdown timers when loading files from websites, if the check is not controlled by the server or is not hindered
+- Apply various rules that may be useful for filter developers. For example, blocking web debugger detection
 
 **限制及例外**
 
-该过滤器可能包含不适合所有用户的规则。 在这种情况下，建议禁用此过滤器。 向该过滤器添加规则的决定由过滤器开发人员逐条做出。
+This filter may contain rules that are not suitable for all users. Sometimes it is recommended to disable this filter. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
 
 ## 社交媒体过滤器
 
 ### 过滤器
 
-AdGuard 社交媒体过滤器包含：
+AdGuard Social Media filters include:
 
-- AdGuard 社交媒体过滤器
+- AdGuard Social Media filter
 
 ### 过滤器的用途
 
-该过滤器将阻止第三方网站上的社交媒体小工具，如「赞」和「分享」按钮、群组小工具、推荐和类似小工具。
+This filter will block social media widgets on third-party websites, such as “Like” and “Share” buttons, group widgets, recommendations, and similar widgets.
 
 ### 限制及例外
 
-作为网站功能或内容一部分的小工具（如评论、嵌入式帖子、投票以及社交媒体登录小工具）不会被阻止。 指向网站社交媒体页面的链接也不会被阻止。
+Widgets that are part of the website’s functionality or content, such as comments, embedded posts, polls, as well as social media login widgets, are not blocked. Links to the website’s social media pages are also not blocked.
 
 ## 其他过滤器
 
-该组包含的过滤器对屏蔽广告并不重要。
+This group contains filters that are not essential for blocking advertisements.
 
 ### 专用名词
 
-**背景广告**是一种互联网广告，根据互联网页面的内容、所选受众、位置、时间或其他情境显示广告。
+**Contextual advertising** is a type of internet advertising where the advertisement is displayed based on the content, selected audience, location, time, or other context of internet pages.
 
-**搜索广告**是上下文广告的一个子类，根据访问者的搜索查询显示广告。
+**Search advertising** is a subclass of contextual advertising where ads are displayed based on the visitor's search query.
 
-**网站自我宣传**是指网站横幅宣传网站所有者拥有的商品和服务，网站所有者不从第三方收取报酬。
+**Self-promotion of websites** refers to the banners of a website promoting goods and services owned by the site owner, for which they do not receive compensation from third parties.
 
-有关这些类型广告的更多详情，请参阅[搜索广告](https://adguard.com/kb/general/ad-filtering/search-ads/)。
+For more details on these types of advertising, refer to the [article on search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
 ### 过滤器
 
-- 解除搜索广告和自我推销过滤器
-- AdGuard DNS 过滤器
-- AdGuard 实验性过滤器
+- Filter unblocking search ads and self-promotion
+- AdGuard DNS filter
+- AdGuard Experimental filter
 
 ### 过滤器的用途
 
-#### 解除搜索广告和自我推销过滤器
+#### Filter unblocking search ads and self-promotion
 
-此过滤器可解除屏蔽：
+This filter unblocks:
 
-- 使用搜索引擎（例如 Google、Bing、Yandex、DuckDuckGo）时在搜索结果中显示内容相关广告
-- 网站的自我宣传
-
-**限制及例外**
-
-- 搜索广告只有在与用户的搜索查询相对应的情况下才会解除屏蔽，因为它与上下文相关。 否则，广告仍会被屏蔽。
-- 自我宣传只有在符合过滤策略的情况下才会被解封。 过滤器开发人员可能会拒绝解封请求。
-- 任何其他广告都不会被解封。
-
-#### AdGuard DNS 过滤器
-
-此过滤器用于 AdGuard DNS。 它不能替代广告拦截过滤器。
+- Contextual advertising in search results when using search engines (such as Google, Bing, Yandex, DuckDuckGo)
+- Self-promotion of websites
 
 **限制及例外**
 
-跟广告拦截过滤器一样。
+- Search advertising is unblocked only if it corresponds to the user’s search query, as it is contextual. Otherwise, the advertising remains blocked
+- Self-promotion is unblocked only if it complies with the filter policy. A request for unblocking may be rejected by filter developers
+- Any other advertising will not be unblocked
 
-#### AdGuard 实验性过滤器
+#### AdGuard DNS filter
 
-该过滤器用于测试和调试可能会破坏网站功能的规则。 规则由过滤器开发人员在需要测试特定解决方案时添加。 由于该过滤器是为调试目的而设计的，因此其局限性很小。
+This filter is used in AdGuard DNS. It is not a replacement for ad-blocking filters.
 
 **限制及例外**
 
-- 规则不得破坏网站功能。
-- 则不得阻止广告或以其他方式违反政策。
+Same as for ad-blocking filters.
+
+#### AdGuard Experimental filter
+
+This filter is intended for testing and debugging rules that potentially may break websites’ functionality. Rules are added by filter developers when there’s a need to test a particular solution. As the filter is designed for debugging purposes, its limitations are minimal.
+
+**限制及例外**
+
+- Rules should not intentionally break websites’ functionality
+- Rules should not unblock advertisements or otherwise violate the Policy
+
+## How to dispute a blocking rule
+
+AdGuard filter lists are maintained not only by the AdGuard team but also by community contributors. If you believe a blocking rule violates the principles described in this filter policy, you can dispute it by opening an issue on GitHub.
+
+Before submitting a dispute, please make sure you have read this policy carefully. When reviewing your report, filter maintainers will evaluate whether the rule complies with the criteria described above, so your explanation should refer to this policy whenever possible.
+
+### How to submit a dispute
+
+You can submit a dispute by using [our report tool](https://reports.adguard.com/new_issue.html). See the step-by-step guide in our [dedicated article](https://adguard.com/kb/guides/report-website/).
+
+Alternatively, you can report it via GitHub:
+
+1. Go to the [AdGuard Filters GitHub repository](https://github.com/AdguardTeam/AdguardFilters/issues) and create a new issue.
+2. Select the **Report an issue using AdGuard** issue template.
+3. Fill out the template with as much detail as possible.
+
+Your report should include:
+
+- The URL of the affected website.
+- A clear description of what is being blocked.
+- The blocking rule, if you know which one is responsible.
+- Steps to reproduce the issue.
+- Screenshots or other evidence that illustrate the problem, if applicable.
+- A detailed explanation of **why you believe the rule does not comply with this filter policy**. Whenever possible, refer to the relevant section or principle of the policy that you believe the rule violates.
+
+### What makes a good dispute?
+
+Simply stating that you disagree with a blocking rule is usually not enough. To help maintainers evaluate your report, explain why the rule conflicts with the blocking policy rather than why you personally would prefer different behavior.
+
+For example, if you believe a rule blocks content that should not be blocked under this policy, describe which policy criterion applies and how the rule fails to meet it. The more specific and well-supported your report is, the easier it will be for maintainers to review your request and determine whether the rule should be changed.

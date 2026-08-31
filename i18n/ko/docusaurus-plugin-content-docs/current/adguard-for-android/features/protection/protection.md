@@ -11,38 +11,26 @@ sidebar_position: 1
 
 The _Protection_ tab includes the following features or settings. You’ll find a detailed article for each of them in this Knowledge Base.
 
-## Ad blocking
+- [광고 차단](/adguard-for-android/features/protection/ad-blocking.md)
 
-Settings to block ads in browsers and apps
+  Settings to block ads in browsers and apps
 
-[광고 차단](/adguard-for-android/features/protection/ad-blocking.md)
+- [추적 보호](/adguard-for-android/features/protection/tracking-protection.md)
 
-## Tracking protection
+  Settings that allow you to block tracking tools that collect user information
 
-Settings that allow you to block tracking tools that collect user information
+- [방해 요소 차단](/adguard-for-android/features/protection/annoyance-blocking.md)
 
-[추적 보호](/adguard-for-android/features/protection/tracking-protection.md)
+  Settings to block annoyances such as cookie consent popups, social widgets, and banners that prompt you to download mobile apps
 
-## 방해 요소 차단
+- [DNS 보호](/adguard-for-android/features/protection/dns-protection.md)
 
-Settings to block annoyances such as cookie consent popups, social widgets, and banners that prompt you to download mobile apps
+  DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
 
-[방해 요소 차단](/adguard-for-android/features/protection/annoyance-blocking.md)
+- [방화벽](/adguard-for-android/features/protection/firewall/firewall.md)
 
-## DNS 보호
+  A feature that allows you to control Internet access for individual apps
 
-DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
+- [브라우징 보안](/adguard-for-android/features/protection/browsing-security.md)
 
-[DNS 보호](/adguard-for-android/features/protection/dns-protection.md)
-
-## 방화벽
-
-A feature that allows you to control Internet access for individual apps
-
-[방화벽](/adguard-for-android/features/protection/firewall/firewall.md)
-
-## 브라우징 보안
-
-A feature that blocks access to malicious and phishing websites and protects you from online threats
-
-[브라우징 보안](/adguard-for-android/features/protection/browsing-security.md)
+  A feature that blocks access to malicious and phishing websites and protects you from online threats

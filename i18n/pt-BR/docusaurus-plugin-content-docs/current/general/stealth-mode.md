@@ -129,6 +129,12 @@ Ativar esta opção pode atrapalhar o funcionamento de determinados aplicativos 
 
 :::
 
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
+
+In AdGuard Browser Extension, *Block WebRTC* is applied globally and cannot be controlled on a per-site basis. Exception rules like `@@||example.com^$stealth=webrtc` are not supported. For per-site WebRTC control, use the full-fledged AdGuard app for Windows, Mac, or Android.
+
+:::
+
 ### Bloquear a API Push {#push}
 
 Este recurso bloqueia notificações push de sites.

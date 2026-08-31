@@ -17,7 +17,7 @@ Soubory HAR jsou zpracovávány v souladu se [Zásadami ochrany osobních údaj�
 
 ## Co jsou soubory HAR?
 
-Formát HAR (HTTP ARchive) je archivní soubor ve formátu JSON pro zaznamenávání interakce webového prohlížeče s webem. Specifikace formátu HAR definují archivační data pro transakce HTTP, která prohlížeč používá k exportu podrobných informací o načítaných webových stránkách. Podrobnější popis formátu HAR a jeho specifikace naleznete na webové stránce [ softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
+Formát HAR (HTTP ARchive) je archivní soubor ve formátu JSON pro zaznamenávání interakce webového prohlížeče s webem. Specifikace formátu HAR definují archivační data pro transakce HTTP, která prohlížeč používá k exportu podrobných informací o načítaných webových stránkách. Podrobnější popis formátu HAR a jeho specifikace naleznete na webové stránce [ softwareishard.com](https://www.softwareishard.com/blog/har-12-spec/).
 
 ## Jak generovat soubory HAR
 

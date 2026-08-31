@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Ce este un cont AdGuard
 
-[AdGuard account](https://adguardaccount.com/) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. Multe produse AdGuard oferă o opțiune de activare prin introducerea acreditivelor pentru contul dvs. AdGuard, cu condiția să conțină o licență validă.
+[AdGuard account](https://adguardaccount.com) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. Multe produse AdGuard oferă o opțiune de activare prin introducerea acreditivelor pentru contul dvs. AdGuard, cu condiția să conțină o licență validă.
 
 ## Cum să creați un cont
 

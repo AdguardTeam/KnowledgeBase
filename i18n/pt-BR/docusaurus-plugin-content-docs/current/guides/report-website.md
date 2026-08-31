@@ -35,7 +35,7 @@ Para denunciar a reinserção de um anúncio ou exibição incorreta de um site,
 
 ### Windows {#windows}
 
-- Abra o [AdGuard Browser Assistant](/adguard-for-windows/browser-assistant) e clique em **Relate um problema**:
+- Abra o [AdGuard Browser Assistant](/archive/adguard-for-windows/browser-assistant) e clique em **Relate um problema**:
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 

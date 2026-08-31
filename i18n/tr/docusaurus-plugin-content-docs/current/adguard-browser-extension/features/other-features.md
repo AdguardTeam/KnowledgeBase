@@ -9,38 +9,46 @@ Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakk
 
 :::
 
-Apart from the large key modules of AdGuard Browser Extension, there are several more specific features that can be configured in the _General_ and _Additional settings_ tabs of the extension settings.
+Apart from the main settings of AdGuard Browser Extension, there are several more specific features that can be configured in the [_General_](#general) and [_Additional settings_](#misc) tabs.
 
 ## General {#general}
 
-In the _General_ tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters' update interval, etc.
+_Genel_ sekmesi, uzantının temel ayarlarını içerir ve temel filtreleme davranışını kontrol etmenizi sağlar. Here you can allow search ads and [self‑promotion on websites](/general/ad-filtering/search-ads/), enable automatic activation of language-specific filters, set the update interval for the filters, and turn on [protection against phishing and malicious websites](/general/browsing-security/).
 
-![General \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
+![General settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/general_settings.png)
 
-Besides, here you can enable [_Phishing and malware protection_](/general/browsing-security).
+Ayrıca mevcut yapılandırmanızı kaydedebilir ve hızlıca başka bir tarayıcıya veya cihaza uygulayabilirsiniz. To do this, click _Share settings_: the extension will generate a special link and a QR code that contain your current settings. You can either copy the link and open it in a browser, or scan the QR code on a device with AdGuard to open the link directly in the app. You will then see a prompt to apply the shared configuration so that you can restore the same setup after reinstalling your browser or on a new device.
 
-You can save your settings configuration by clicking the _Export settings_ button. Ayarlar bir .json dosyası olarak kaydedilecektir. To import the previously saved settings configuration, use the _Import settings_ function. Farklı ayar profilleri arasında hızlıca geçiş yapmak ve hatta ayar yapılandırmalarını farklı tarayıcılar arasında aktarmak için bile kullanabilirsiniz.
+If needed, you can also share this link with other people or attach it to a support request so the team can see your exact configuration.
 
-## Ek ayarlar {#misc}
+In addition, you can still export your settings to a .json file by clicking _Export settings_ and import them via the _Import settings_ option. This makes it easy to switch between different configuration profiles or move them between browsers.
 
-The _Additional settings_ section contains a range of various settings that are related to the ad blocking process and application usability.
+## Additional settings {#misc}
 
-![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional-settings.png)
+The _Additional settings_ section contains various settings that are related to the ad-blocking process and usability.
 
-Bu sekmeden, i̇zin listesini tersine çevirebilir ve AdGuard öğesini tarayıcının sağ tık menüsüne ekleyebilirsiniz. Ayrıca AdGuard simgesinde engellenen reklam sayısının görüntülenmesini ve uzantı güncellemeleriyle ilgili bildirimleri etkinleştirebilirsiniz. Ayrıca, bu bölüm AdGuard uygulamasıyla ilgili bildirimleri etkinleştirmenize, _Filtreleme günlüğünü_ açmanıza, engellenen reklamların ve izleyicilerin istatistiklerini temizlemenize veya ayarları sıfırlamanıza olanak tanır.
+![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional_settings.png)
 
-Ayrıca, uygulanan kurallarla ilgili istatistikleri göndererek filtrelerin geliştirilmesinde bize yardımcı olmayı tercih edebilirsiniz: hangilerinin tetiklendiği, hangi sitelerde ve ne sıklıkta olduğu. Kullanıcı verilerini onay olmadan toplamadığımız için bu seçenek varsayılan olarak devre dışıdır. Yine de, etkinleştirirseniz, tüm veriler kesinlikle anonimleştirilecektir.
+Enabling _Use optimized filters_ activates lightweight versions of the ad-blocking rules. It focuses only on the most popular filters to save internet traffic and system memory, which is ideal for mobile browsing.
 
-You can also choose to help us improve the extension by sending us anonymized usage data. Bu, etkileşimde bulunduğunuz ekranların adlarını, tıkladığınız düğmelerin adlarını ve oturum tanımlayıcılarını içerir. Bu bilgiler, kullanıcıların nerede sorun yaşadığını anlamamıza, deneyimi geliştirmemize, uzantıyı daha hızlı ve kullanımı daha kolay hâle getirmemize yardımcı oluyor. The _Send anonymized usage data_ option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
+You can invert the _Allowlist_ will unblock ads on all websites by default, except for the specific domains you manually add to your list
+
+You can also add the AdGuard item to the browser’s context menu, enable the display of the number of blocked ads on the AdGuard icon, and toggle notifications about extension updates.
+
+Additionally, this section lets you enable notifications about the AdGuard app, open the _Filtering log_, clear the statistics of blocked ads and trackers, or reset the settings.
+
+Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
+
+You can also choose to help us improve the extension by sending us anonymized usage data. This includes the names of the screens you interact with, the names of the buttons you click, and session identifiers. These insights help us understand where users run into friction, refine the experience, and make the extension faster and easier to use. The _Send anonymized usage data_ option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
 
 :::note
 
-Chromium tabanlı tarayıcılarda, yükleme sonrası sayfasında _Anonim kullanım verilerini gönder_ seçeneği de etkinleştirilebilir.
+The _Send anonymized usage data_ option can also be enabled on the post-installation page in Chromium-based browsers.
 
 :::
 
 ## About {#about}
 
-In the _About_ section, you can find info about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
+In the _About_ section, you can find information about the current version, links to the Privacy policy, and a link to the repository of the Browser Extension on GitHub.
 
-![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/about.png)

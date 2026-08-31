@@ -1,180 +1,180 @@
 ---
-title: How to generate a HAR file
+title: Sådan genereres en HAR-fil
 sidebar_position: 1
 ---
 
-HAR files help our technical support teams troubleshoot complex issues. To create these files, we recommend using Chrome or Firefox. However, IE 11, Edge, and Safari also provide `.har` file generation and export capability.
+HAR-filer hjælper de tekniske supportteams med at fejlfinde komplekse problemer. Chrome eller Firefox anbefales til oprettelsen af disse filer. Dog har IE 11, Edge og Safari også `.har` filgenererings- og eksportmuligheder.
 
 ## Chrome {#chrome}
 
-To create a HAR file in Chrome, follow these steps:
+Følg disse trin for at oprette en HAR-fil i Chrome:
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Gå til den URL, hvor problemet opstår. Reproducér ikke problematikken endnu.
 
-1. Open **Developer Tools**:
+1. Åbn **Udviklerværktøjer**:
 
-    - From menu: **Menu → More Tools → Developer Tools**.
-    - Keyboard: **Ctrl+Shift+C**, or **Ctrl+Alt+I**, or **⌥+⌘+I for Mac**.
+    - Fra menuen: **Menu → Flere værktøjer → Udviklerværktøjer**.
+    - Tastatur: **Ctrl+Shift+C** eller **Ctrl+Alt+I**, eller **⌥+⌘+I for Mac**.
 
-1. Click the **Network tab**.
+1. Klik på **fanen Netværk**.
 
-1. Locate the round button at the top left of the Network tab and confirm it is in red recording mode. If it's grey, click to turn red to start recording.
+1. Find den runde knap øverst til venstre på fanen Netværk, og sørg for, at den er i rød optagetilstand. Er den grå, klik på den for at gøre den rød og starte optagelsen.
 
-1. Use the **Clear** button (the circle button with a line through it next to the record button) to clear all previous activity.
+1. Brug knappen **Ryd** (cirkelknappen med en streg igennem ved siden af optageknappen) for at rydde al tidligere aktivitet.
 
-1. Select the **Preserve log** check box on the Network tab.
+1. Markér afkrydsningsfeltet **Bevar log** på fanen Netværk.
 
-1. Check the **Disable cache** check box.
+1. Markér afkrydsningsfeltet **Deaktivér cache**.
 
     ![Chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
-1. Reproduce the steps that create the issue.
+1. Gentag de trin, som førte til problematikken.
 
-1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
+1. Gem sessionen som en .har-fil ved at højreklikke på gitteret og vælge **Gem som HAR med indhold**.
 
-1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Indsend den til AdGuard-supporten (support@adguard.com) inkl. detaljeret problemforklaring. Understøttende skærmfotos kan også være nyttige.
 
 ## Edge {#edge}
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Gå til den URL, hvor problemet opstår. Reproducér ikke problematikken endnu.
 
-1. Open **Developer Tools**:
+1. Åbn **Udviklerværktøjer**:
 
-    - From menu: **Menu → More Tools → Developer Tools**.
-    - Keyboard: **Ctrl+Shift+C**, or **Ctrl+Alt+I**, or **⌥+⌘+I for Mac**.
+    - Fra menuen: **Menu → Flere værktøjer → Udviklerværktøjer**.
+    - Tastatur: **Ctrl+Shift+C** eller **Ctrl+Alt+I**, eller **⌥+⌘+I for Mac**.
 
-1. Click the **Network tab**.
+1. Klik på **fanen Netværk**.
 
-1. Locate the round button at the top left of the Network tab and confirm it is in red recording mode. If it's grey, click to turn red to start recording.
+1. Find den runde knap øverst til venstre på fanen Netværk, og sørg for, at den er i rød optagetilstand. Er den grå, klik på den for at gøre den rød og starte optagelsen.
 
-1. Use the **Clear** button (the circle button with a line through it next to the record button) to clear all previous activity.
+1. Brug knappen **Ryd** (cirkelknappen med en streg igennem ved siden af optageknappen) for at rydde al tidligere aktivitet.
 
-1. Select the **Preserve log** check box on the Network tab.
+1. Markér afkrydsningsfeltet **Bevar log** på fanen Netværk.
 
-1. Check the **Disable cache** check box.
+1. Markér afkrydsningsfeltet **Deaktivér cache**.
 
     ![edge](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
 
-1. Reproduce the steps that create the issue.
+1. Gentag de trin, som førte til problematikken.
 
-1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
+1. Gem sessionen som en .har-fil ved at højreklikke på gitteret og vælge **Gem som HAR med indhold**.
 
-1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Indsend den til AdGuard-supporten (support@adguard.com) inkl. detaljeret problemforklaring. Understøttende skærmfotos kan også være nyttige.
 
 ## Firefox {#firefox}
 
-To create a HAR file in Firefox, follow these steps:
+Følg disse trin for at oprette en HAR-fil i Firefox:
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Gå til den URL, hvor problemet opstår. Reproducér ikke problematikken endnu.
 
-1. Open Developer Tools in **Network** mode:
+1. Åbn Udviklerværktøjer i **Netværkstilstand**:
 
-    - From menu: **Menu → Web Developer → Network**.
-    - Keyboard: **Ctrl+Shift+C**, or **⌥+⌘+E (Mac)**.
+    - Fra menuen: **Menu → Webudvikler → Netværk**.
+    - Tastatur: **Ctrl+Shift+C** eller **⌥+⌘+E (Mac)**.
 
-1. Note the **Play/Pause** button at the top left of the Network tab.
+1. Bemærk knappen **Afspil/Pause** øverst til venstre på fanen Netværk.
 
-    - Button should be in play mode.
+    - Knappen skal være i afspilningstilstand.
 
-1. If any information is currently displayed in the grid, clear by clicking the **Empty trash can** button next to the play/pause button.
+1. Vises der aktuelt oplysninger i gitteret, ryd da disse ved at klikke på knappen **Tøm papirkurv** ved siden af knappen Afspil/Pause.
 
-1. Select the **Persist Logs** check box on the Network tab.
+1. Markér afkrydsningsfeltet **Vedvarende log** på fanen Netværk.
 
-1. Check the **Disable cache** check box.
+1. Markér afkrydsningsfeltet **Deaktivér cache**.
 
     ![firefox](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
 
-1. Reproduce the steps that create the issue.
+1. Gentag de trin, som førte til problematikken.
 
-1. Save session as a .har file by right-clicking the grid and selecting **Save all as HAR**.
+1. Gem sessionen som en .har-fil ved at højreklikke på gitteret og vælge **Gem alt som HAR**.
 
-1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Indsend den til AdGuard-supporten (support@adguard.com) inkl. detaljeret problemforklaring. Understøttende skærmfotos kan også være nyttige.
 
 ## Internet Explorer 11 {#ie11}
 
-To create a HAR file in Internet Explorer 11, follow these steps:
+Følg disse trin for at oprette en HAR-fil i Internet Explorer 11:
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Gå til den URL, hvor problemet opstår. Reproducér ikke problematikken endnu.
 
-1. Open Developer Tools in **Network** mode:
+1. Åbn Udviklerværktøjer i **Netværkstilstand**:
 
-    - From Tools cog wheel menu: **Developer Tools** → **Network tab**.
-    - Keyboard: **F12 → Network** tab.
+    - Fra tandhjulsmenuen Værktøjer: **Udviklerværktøjer** → **fanen Netværk**.
+    - Tastatur: **F12 → fanen Netværk**.
 
-1. Note the start profiling session **Play** button and stop profiling **Stop** button at top left of Network tab.
+1. Bemærk profileringssessionens start- og stopknapper, **Afspil** og **Stop**, øverst til venstre på fanen Netværk.
 
-    - Play button will be gray when recording and Stop button will be red. Put in **Play** mode.
+    - Afspil-knappen vil være grå under optagelse, og Stop-knappen vil være rød. Sæt i **Afspil-tilstand**.
 
-1. Clear any session info appearing in the lower grid using the **Clear session** button on the **Network** tab. Hover over icons to see names.
+1. Ryd alle sessionsoplysninger vist i nederste gitter med knappen **Ryd session** på fanen **Netværk**. Hold markøren over ikoner for at se navne.
 
-    - **Clear session** button is a three line icon with an x on it.
+    - Knappen **Ryd session** er et trelinjersikon med et X på.
 
-1. Check the **Disable cache** check box.
+1. Markér afkrydsningsfeltet **Deaktivér cache**.
 
-1. Reproduce the steps that create the issue.
+1. Gentag de trin, som førte til problemet.
 
-1. Save session as a .har file by clicking the **Save to disk** button (Export as HAR) on the **Network** tab.
+1. Gem sessionen som en .har-fil ved at klikke på knappen **Gem til disk** (Eksportér som HAR) på fanen **Netværk**.
 
-1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Indsend den til AdGuard-supporten (support@adguard.com) inkl. detaljeret problemforklaring. Understøttende skærmfotos kan også være nyttige.
 
 ## Safari {#safari}
 
-To create a HAR file in Safari, follow these steps:
+Følg disse trin for at oprette en HAR-fil i Safari:
 
-1. Check the Safari menu bar at the top of the screen for a **Develop** menu.
+1. Kig efter **Udvikler**-menuen på Safari-menubjælken øverst på skærmen.
 
-    - If not visible, turn it on by going to **Safari → Settings → Advanced**.
-    - Check the checkbox at the bottom next to **Show Develop menu in menu bar**.
+    - Ses den ikke, kan den slås til ved at gå til **Safari→ Indstillinger → Avanceret**.
+    - Markér afkrydsningsfeltet nederst ved siden af **Vis Udvikler-menu på menubjælken**.
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Gå til den URL, hvor problemet opstår. Reproducér ikke problematikken endnu.
 
-1. Open **Network** tab in Web Inspector:
+1. Åbn fanen **Netværk** i Web Inspector:
 
-    - From menu: **Develop → Show Web Inspector → Network**.
-    - Keyboard: **⌥+⌘+I → Network**
+    - Fra menuen: **Udvikler → Vis Web Inspector → Netværk**.
+    - Tastatur: **">⌥+⌘+I → Netværk**
 
-1. Check **Preserve Log** checkbox on left side of the Network tabs, within the **Other filter options...** menu.
+1. Markér afkrydsningsfeltet **Bevar log** til venstre på fanebladet Netværk i menuen **Øvrige filterindstillinger…**.
 
     ![safari](https://cdn.adtidy.org/content/kb/ad_blocker/safari/preserve-log.png)
 
-1. Clear current Network items by clicking the **Delete Trash** icon at the far right of Network tabs.
+1. Ryd aktuelle Netværkselementer ved at klikke på ikonet **Slet affald** yderst til højre på fanerne Netværk.
 
-    - Keyboard: **⌘+K**
+    - Tastatur: **⌘+K**
 
-1. Check the **Disable caches** check box.
+1. Markér afkrydsningsfeltet **Deaktivér cache**.
 
-1. Reproduce the steps that create the issue.
+1. Reproducér de trin, som fører til problemet.
 
-1. Save session as a .har file by clicking the **Export** icon next to the **Delete Trash** icon.
+1. Gem sessionen som en .har-fil ved at klikke på ikonet **Eksport** ved siden af **Tøm papirkurv**.
 
-1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
+1. Indsend den til AdGuard-supporten (support@adguard.com) inkl. detaljeret problemforklaring. Understøttende skærmfotos kan også være nyttige.
 
 ## Android {#android}
 
-To create HAR files, follow these steps:
+Følg disse trin for at oprette HAR-filer:
 
-1. Open AdGuard and go to **Settings**.
+1. Åbn Adguard og gå til **Indstillinger**.
 
-1. Choose **Advanced** in the menu.
+1. Vælg menupunktet **Avanceret**.
 
-1. Choose **Low Level Settings**
+1. Vælg **Lavniveauindstillinger**
 
-1. Activate `pref.har.capture` (you will have to restart the protection).
+1. Aktivér `pref.har.capture` (hvorefter beskyttelsen skal genstartes).
 
-1. Now reproduce the problem — open the app, perform the necessary actions to make the ad appear.
+1. Genskab dernæst problemet — åbn appen, udfør de relevante handlinger for at få annoncen vist.
 
-1. Now turn `pref.har.capture` off again.
+1. Slå nu `pref.har.capture` fra igen.
 
-1. Go back and tap **Export logs and system info** → **Save**.
+1. Gå tilbage og tryk på **Eksportér logger og systeminfo** → **Gem**.
 
 ## Windows {#windows}
 
-1. Open **Settings*** → **General settings** → **Advanced settings** and scroll down.
+1. Åbn **Indstillinger*** → **Generelle indstillinger** → **Avancerede indstillinger** og rul ned.
 
-1. Check the **Enable HAR writing** box.
+1. Markér afkrydsningsfeltet **Aktivér HAR-skrivning**.
 
-1. Reproduce the problem.
+1. Genskab problematikken.
 
-1. Go to **General settings** → Click **Export logs** → **Save**.
+1. Gå til **Generelle indstillinger** → Klik på **Eksportér logfiler** → **Gem**.
 
-1. Disable HAR writing by unchecking the corresponding box.
+1. Deaktivér HAR-skrivning ved at afmarkere det relevante afkrydsningsfelt.

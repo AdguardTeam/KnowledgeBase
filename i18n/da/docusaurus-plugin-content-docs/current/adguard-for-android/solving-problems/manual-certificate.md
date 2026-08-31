@@ -5,7 +5,7 @@ sidebar_position: 11
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -51,4 +51,4 @@ Despite these warnings, your traffic remains secure. Your connection to remote s
 
 [Learn more about HTTPS filtering and how the certificate works](/general/https-filtering/what-is-https-filtering.md).
 
-If you still encounter a problem and can’t install the certificate, please contact our support team at <support@adguard.com>.
+If you still encounter a problem and can’t install the certificate, please contact our support team at [support@adguard.com](mailto:support@adguard.com).

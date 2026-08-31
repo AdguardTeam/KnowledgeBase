@@ -57,6 +57,10 @@ sidebar_position: 9
 
 `true`を設定すると、HTTPS 証明書の失効チェックが有効になります。
 
+#### `network.http.compress.body`
+
+Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering engine, will compress the HTTP response body before sending it with the original response algorithm (if supported) or with the default fallback algorithm (GZip). Responses from BrowserApi will also be encoded if this option is enabled.
+
 #### `network.tcp.keepalive.enabled`
 
 コネクションがアクティブであることを確認するためとNATタイムアウトを更新するために、アイドル状態のコネクションに定期的にTCPパケットを送信します。

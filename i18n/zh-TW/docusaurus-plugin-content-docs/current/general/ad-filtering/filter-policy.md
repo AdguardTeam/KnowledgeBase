@@ -81,11 +81,12 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 ### Limitations and exceptions
 
 - The site’s own advertising should not be deliberately blocked. However, it should not be unblocked if the blocking is caused by general filtering rules
-- Content access measures like paywalls are not blocked
+- Content access measures like paywalls are not blocked by Ad blocking filters. However, they may be blocked by Tracking protection filters if their operation results in a violation of user privacy
 - Anti-adblock walls will be blocked in the following cases:
     - They aggressively insist on disabling or removing the ad blocker or effectively prevent using the website
     - They feature incorrect and misleading descriptions of possible consequences of ad blockers’ use
     - They put visitors at risk of malvertising — when unblocked advertisements come from dubious sources
+    - They violate or negatively impact user privacy
 - We do not block ad blocker detection messages that satisfy at least one of the following criteria:
     - They allow the usage of the website and do not overlay the significant amount of content
     - They provide an alternative to disabling an ad blocker given that this alternative does not put the users’ privacy or security at risk
@@ -110,6 +111,7 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 AdGuard tracking protection filters include:
 
 - AdGuard Tracking Protection filter
+- AdGuard Mail Tracking Protection filter
 - AdGuard URL Tracking filter
 
 ### The purpose of these filters
@@ -128,6 +130,8 @@ What it blocks:
 - Privacy Sandbox functionality in Google Chrome and its forks used for tracking (Google Topics API, the Protected Audience API)
 
 The **URL Tracking filter** is designed to remove tracking parameters from web addresses
+
+The **Mail Tracking Protection filter** blocks tracking pixels embedded in emails to prevent senders from monitoring when you open messages.
 
 ### Limitations and exceptions
 
@@ -165,13 +169,11 @@ For better customization, annoyance filters are divided by their purpose:
 
 #### AdGuard Cookie Notices filter
 
-This filter is designed to block both cookie notices and requests from cookie management platforms (CMPs). Various methods may be applied to cookie notices and CMPs. In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when the site’s functionality and display of third-party content require cookie consent, the following methods are applied:
+This filter is designed to block both cookie notices and requests from cookie management platforms (CMPs). Depending on how a website implements its consent mechanism, different methods may be applied.
 
-- Scriptlets are used to bypass the consent request (practically not applicable on sites with restrictions on loading third-party content until a decision is made)
-- Setting a cookie or key in the site’s local storage in such a way that the script considers the user to have made a choice
-- Simulating user action using a rule that clicks a specified button and interrupts its execution 10 seconds after loading. Two options are possible:
-    - Reject (except for functional cookies — depending on the CMP system) — the preferred option, as there is less risk of loading additional analytics tools
-    - Accept — this option is used as the last resort if other methods fail. In this case, the site is additionally checked for the use of analytics tools, which are then blocked by the **AdGuard Tracking Protection filter**
+In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when a website requires a cookie decision for certain features or third-party content to work, the filter automatically handles the request using alternative methods.
+
+Whenever possible, non-essential cookies are declined by default. If this is not technically feasible and consent must be granted for the site to function correctly, the site is additionally reviewed for analytics and tracking technologies, which are then blocked by the **AdGuard Tracking Protection filter**.
 
 **Limitations and exceptions**
 
@@ -301,3 +303,34 @@ This filter is intended for testing and debugging rules that potentially may bre
 
 - Rules should not intentionally break websites’ functionality
 - Rules should not unblock advertisements or otherwise violate the Policy
+
+## How to dispute a blocking rule
+
+AdGuard filter lists are maintained not only by the AdGuard team but also by community contributors. If you believe a blocking rule violates the principles described in this filter policy, you can dispute it by opening an issue on GitHub.
+
+Before submitting a dispute, please make sure you have read this policy carefully. When reviewing your report, filter maintainers will evaluate whether the rule complies with the criteria described above, so your explanation should refer to this policy whenever possible.
+
+### How to submit a dispute
+
+You can submit a dispute by using [our report tool](https://reports.adguard.com/new_issue.html). See the step-by-step guide in our [dedicated article](https://adguard.com/kb/guides/report-website/).
+
+Alternatively, you can report it via GitHub:
+
+1. Go to the [AdGuard Filters GitHub repository](https://github.com/AdguardTeam/AdguardFilters/issues) and create a new issue.
+2. Select the **Report an issue using AdGuard** issue template.
+3. Fill out the template with as much detail as possible.
+
+Your report should include:
+
+- The URL of the affected website.
+- A clear description of what is being blocked.
+- The blocking rule, if you know which one is responsible.
+- Steps to reproduce the issue.
+- Screenshots or other evidence that illustrate the problem, if applicable.
+- A detailed explanation of **why you believe the rule does not comply with this filter policy**. Whenever possible, refer to the relevant section or principle of the policy that you believe the rule violates.
+
+### What makes a good dispute?
+
+Simply stating that you disagree with a blocking rule is usually not enough. To help maintainers evaluate your report, explain why the rule conflicts with the blocking policy rather than why you personally would prefer different behavior.
+
+For example, if you believe a rule blocks content that should not be blocked under this policy, describe which policy criterion applies and how the rule fails to meet it. The more specific and well-supported your report is, the easier it will be for maintainers to review your request and determine whether the rule should be changed.

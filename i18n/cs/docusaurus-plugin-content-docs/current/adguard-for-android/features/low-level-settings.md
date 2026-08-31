@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -242,6 +242,14 @@ Pokud je toto nastavení povoleno, zobrazí AdGuard v pravém horním rohu domov
 
 **Nástroje vývojáře** je specializovaná sekce dostupná v aplikaci AdGuard pro Android v4.3 a novější, která je určena pro rychlou navigaci a přepínání mezi funkcemi. Umožňuje rychle povolit nebo zakázat vlastní filtry, přístup k protokolům, povolit různé protokoly a další funkce.
 
+#### Simplified UI mode
+
+If this setting is enabled, AdGuard will only display the DNS icon on the app’s home screen.
+
 #### Detekce Samsung Pay
 
 Pokud je toto nastavení povoleno, ochrana AdGuard se při otevření aplikace Samsung Pay pozastaví. Korejští uživatelé tuto funkci vyžadují, protože se u nich při zapnutém AdGuardu objevují [problémy se Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea).
+
+#### Show cloned apps
+
+If this setting is enabled, you will be able to change routing, filtering, and firewall settings for cloned apps in _App management_.

@@ -9,13 +9,13 @@ sidebar_position: 2
 
 :::
 
-To access the Tracking protection module, tap the _Protection_ tab (the second icon from the bottom of the screen) and then select _Tracking protection_.
+要进入「跟踪保护」模块，请点击「保护」选项卡（屏幕底部左数第二个图标），然后选择「跟踪保护」。
 
-_Tracking protection_ (formerly _Stealth Mode_) prevents websites from collecting information about you, such as your IP address, information about your browser and operating system, screen resolution, and the page you came or were redirected from. 使用该功能用户还可以阻止识别 Cookie。网站用这些 Cookie 来标记浏览器、保存个人设置和用户偏好，或识别在下次访问时识别他。
+「跟踪保护」（原「隐身模式」）可防止网站收集关于用户的信息，例如 IP 地址、浏览器和操作系统信息、屏幕分辨率，以及用户来源或跳转前的页面。 使用该功能用户还可以阻止识别 Cookie。网站用这些 Cookie 来标记浏览器、保存个人设置和用户偏好，或识别在下次访问时识别他。
 
-![Tracking protection \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/tracking_protection.png)
+![跟踪保护 \*mobile_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
 
-_Tracking protection_ has three pre-configured privacy protection levels (_Standard_, _High_, and _Extreme_) and one user-defined level (_Custom_).
+「跟踪保护」有三个预先配置的隐私保护级别（「标准」、「高」和「强」）和一个用户自定义级别（「自定义」）。
 
 以下是预配置级别的功能：
 
@@ -23,7 +23,7 @@ _Tracking protection_ has three pre-configured privacy protection levels (_Stand
 
    1. 「拦截跟踪器」 此功能使用「AdGuard 防跟踪保护过滤器」，保护用户免受在线计数器和网络分析工具的侵扰。
 
-   2. _Ask websites not to track me_. 此功能将向用户访问的网站发送 [Global Privacy Control](https://globalprivacycontrol.org/) 和 [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) 信号，要求网页应用程序禁用跟踪用户的活动。
+   2. 「要求网站不进行跟踪」 此功能将向用户访问的网站发送 [Global Privacy Control](https://globalprivacycontrol.org/) 和 [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) 信号，要求网页应用程序禁用跟踪用户的活动。
 
    3. 「移除 X-Client-Data 头部」 此功能禁止 Chrome 浏览器向 Google 域名（包括 DoubleClick 和 Google Analytics）发送有关其版本和修改的信息。
 
@@ -33,11 +33,11 @@ _Tracking protection_ has three pre-configured privacy protection levels (_Stand
 
    2. 「从 URL 中删除跟踪参数」 此功能使用「AdGuard URL 跟踪过滤器」从网页 URL 中删除跟踪参数，例如 `utm_*` 和 `fb_ref`。
 
-   3. _Hide search queries_. This feature hides your searches from websites visited through search engine results
+   3. 「隐藏搜索记录」。 此功能隐藏用户对访问网站的查询，防止搜索引擎曝光。
 
-   4. _Ask websites not to track me_. 此功能将向用户访问的网站发送 [Global Privacy Control](https://globalprivacycontrol.org/) 和 [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) 信号，要求网页应用程序禁用跟踪用户的活动。
+   4. 「要求网站不进行跟踪」 此功能将向用户访问的网站发送 [Global Privacy Control](https://globalprivacycontrol.org/) 和 [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) 信号，要求网页应用程序禁用跟踪用户的活动。
 
-   5. _Delete third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes and prevents advertisers from tracking your behavior across multiple pages
+   5. 「自销毁第三方 Cookies」。 此功能将第三方 Cookie 的有效期限制为 180 分钟，防止广告商跨多个页面追踪您的行为。
 
    :::caution
 
@@ -53,11 +53,11 @@ _Tracking protection_ has three pre-configured privacy protection levels (_Stand
 
    2. 「从 URL 中删除跟踪参数」 此功能使用「AdGuard URL 跟踪过滤器」从网页 URL 中删除跟踪参数，例如 `utm_*` 和 `fb_ref`。
 
-   3. _Hide search queries_. This feature hides your searches from websites visited through search engine results
+   3. 「隐藏搜索记录」。 此功能隐藏用户对访问网站的查询，防止搜索引擎曝光。
 
-   4. _Ask websites not to track me_. 此功能将向用户访问的网站发送 [Global Privacy Control](https://globalprivacycontrol.org/) 和 [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) 信号，要求网页应用程序禁用跟踪用户的活动。
+   4. 「要求网站不进行跟踪」 此功能将向用户访问的网站发送 [Global Privacy Control](https://globalprivacycontrol.org/) 和 [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) 信号，要求网页应用程序禁用跟踪用户的活动。
 
-   5. _Delete third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes and prevents advertisers from tracking your behavior across multiple pages
+   5. 「自销毁第三方 Cookies」。 此功能将第三方 Cookie 的有效期限制为 180 分钟，防止广告商跨多个页面追踪您的行为。
 
    :::caution
 
@@ -65,16 +65,16 @@ _Tracking protection_ has three pre-configured privacy protection levels (_Stand
 
    :::
 
-   6. 「拦截 WebRTC」 This feature blocks WebRTC that can leak your real IP address even if you use a proxy or VPN. Some messengers, streaming platforms, or games may stop working properly
+   6. 「拦截 WebRTC」 该功能可以拦截可能导致真实 IP 地址泄露的 WebRTC 通信，即使您使用代理或 VPN 也不例外。 部分即时通讯软件、流媒体平台或游戏可能出现运行异常。
 
-   7. 「拦截推送 API」 This feature blocks push notifications from websites
+   7. 「拦截推送 API」 此功能拦截来自网站的推送通知。
 
    8. 「拦截定位 API」 此功能可防止浏览器访问 GPS 数据并确定用户的位置。
 
    9. 「隐藏第三方 Referer」 此功能防止第三方知道用户访问的网站. 它隐藏包含初始页面 URL 的 HTTP 标头，代之以默认或自定义标头，用户可以进行设置。
 
-   10. _Hide User-Agent_. 该功能可移除 User-Agent 标头中的识别信息，信息通常包括浏览器名称和版本、操作系统和语言设置。
+   10. 「隐藏 User-Agent」。 该功能可移除 User-Agent 标头中的识别信息，信息通常包括浏览器名称和版本、操作系统和语言设置。
 
    11. 「移除 X-Client-Data 头部」 此功能禁止 Chrome 浏览器向 Google 域名（包括 DoubleClick 和 Google Analytics）发送有关其版本和修改的信息。
 
-You can tweak individual settings in _Tracking protection_ to create a custom configuration. Each setting has a description to help you understand its purpose. [Read more about various _Tracking protection_ settings](/general/stealth-mode) and use them cautiously, as some may interfere with the functionality of websites and browser extensions.
+您可以在「跟踪保护」中调整各项设置，创建自定义配置。 每项设置都有说明，帮助您了解其用途。 [详细了解各种「跟踪防护」设置](/general/stealth-mode)，并谨慎使用，因为部分设置可能影响网站及浏览器扩展的正常功能。

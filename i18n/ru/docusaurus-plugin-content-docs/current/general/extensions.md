@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::note Поддерживаемые приложения
 
-AdGuard может значительно расширять функциональность сайтов, работая как менеджер пользовательских скриптов. Вы можете добавлять собственные скрипты или управлять существующими в наших трёх продуктах: [AdGuard для Windows](/adguard-for-windows/features/extensions), [AdGuard для Android](/adguard-for-android/features/settings#userscripts) и [AdGuard для Mac](/adguard-for-mac/features/extensions).
+AdGuard может значительно расширять функциональность сайтов, работая как менеджер пользовательских скриптов. Вы можете добавлять собственные скрипты или управлять существующими в наших трёх продуктах: [AdGuard для Windows](/adguard-for-windows/protection/extensions), [AdGuard для Android](/adguard-for-android/features/settings#userscripts) и [AdGuard для Mac](/adguard-for-mac/features/extensions).
 
 :::
 
@@ -39,7 +39,7 @@ AdGuard может значительно расширять функциона�
 
 :::
 
-#### Отключить AMP
+#### Disable AMP
 
 Скрипт, который предустановлен только в AdGuard для Android. Он отключает AMP (Accelerated Mobile Pages или «ускоренные мобильные страницы») на странице результатов поиска Google. [На GitHub](https://github.com/AdguardTeam/DisableAMP) есть подробности об этом пользовательском скрипте и о том, как его установить.
 
@@ -426,7 +426,7 @@ window.addEventListener('hashchange', (event) => {
 
 :::
 
-Это экспериментальная функция. Поэтому, если вы столкнётесь с проблемами при добавлении или создании пользовательского стиля, пожалуйста, напишите нашей команде поддержки на почту <support@adguard.com>.
+This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at [support@adguard.com](mailto:support@adguard.com).
 
 ### Как настроить пользовательский стиль в AdGuard
 

@@ -129,6 +129,12 @@ Povolení této možnosti může narušit práci některých aplikací prohlíž
 
 :::
 
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
+
+V rozšíření prohlížeče AdGuard se příkaz *Block WebRTC* používá globálně a nelze jej ovládat pro jednotlivé stránky. Pravidla výjimek jako `@@||example.com^$stealth=webrtc` nejsou podporována. Pokud potřebujete ovládat WebRTC pro jednotlivé weby, použijte plnohodnotnou aplikaci AdGuard pro Windows, Mac nebo Android.
+
+:::
+
 ### Blokovat Push API {#push}
 
 Tato funkce blokuje vyskakovací oznámení z webových stránek.

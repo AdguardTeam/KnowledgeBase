@@ -5,7 +5,7 @@ sidebar_position: 14
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -38,7 +38,7 @@ Some device manufacturers keep Private DNS settings hidden and set 'Automatic' m
 
 To be able to filter HTTPS traffic, AdGuard requires the user to add a certificate to the device's trusted user certificates. Unfortunately, UC browsers don't trust user certificates, so AdGuard cannot perform HTTPS filtering there.
 
-- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md/)
+- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md)
 
 :::note Compatibility
 

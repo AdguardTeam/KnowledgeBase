@@ -9,7 +9,7 @@ Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakk
 
 :::
 
-AdGuard, farklı platformlarda reklamları ve izleyicileri engelleyen bir dizi yazılım ürünü sunar. En popüler AdGuard ürünlerinden biri, beş popüler tarayıcıda çalışan ücretsiz bir uzantıdır: Chrome, Firefox, Edge, Opera ve Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
+AdGuard, farklı platformlarda reklamları ve izleyicileri engelleyen bir dizi yazılım ürünü sunar. En popüler AdGuard ürünlerinden biri, beş popüler tarayıcıda çalışan ücretsiz bir uzantıdır: Chrome, Firefox, Edge, Opera ve Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/archive/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
 
 ![Chrome için AdGuard Tarayıcı Uzantısı *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
@@ -21,7 +21,7 @@ AdGuard, farklı platformlarda reklamları ve izleyicileri engelleyen bir dizi y
 
 :::not
 
-Safari için bağımsız bir uzantımız var. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. Safari için bu makalede açıklanan uzantıya kıyasla bazı farklılıkları olan [ayrı bir uzantı](/adguard-for-safari/features/general) geliştirmek zorunda kaldık.
+Safari için bağımsız bir uzantımız var. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. Safari için bu makalede açıklanan uzantıya kıyasla bazı farklılıkları olan [ayrı bir uzantı](/archive/adguard-for-safari/features/general) geliştirmek zorunda kaldık.
 
 :::
 

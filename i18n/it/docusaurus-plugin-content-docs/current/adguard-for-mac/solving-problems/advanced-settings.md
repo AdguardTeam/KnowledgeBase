@@ -57,6 +57,10 @@ Reindirizza le richieste DNS sicure verso un proxy DNS locale, se disponibile.
 
 Impostando `true`, abiliti il controllo della revoca del certificato HTTPS.
 
+#### `network.http.compress.body`
+
+Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering engine, will compress the HTTP response body before sending it with the original response algorithm (if supported) or with the default fallback algorithm (GZip). Responses from BrowserApi will also be encoded if this option is enabled.
+
 #### `network.tcp.keepalive.enabled`
 
 Invia periodicamente pacchetti TCP verso una connessione inattiva per assicurarsi che rimanga attiva e per rinnovare i timeout NAT.
@@ -179,11 +183,11 @@ Secures DNS proxy connections with a hybrid post-quantum key exchange, combining
 
 #### `stealth.antidpi.http.split.fragment.size`
 
-Regola la dimensione della frammentazione della richiesta HTTP. Valori validi: 1–1500. Se viene specificata una dimensione non valida, il sistema utilizzerà il valore predefinito.
+Regola la dimensione della frammentazione della richiesta HTTP. Valid values: 1–1500. Se viene specificata una dimensione non valida, il sistema utilizzerà il valore predefinito.
 
 #### `stealth.antidpi.clienthello.split.fragment.size`
 
-Questa opzione specifica la dimensione della frammentazione dei pacchetti TCP, che consente di evitare l'ispezione approfondita dei pacchetti. Valori validi: 1–1500. Se viene specificata una dimensione non valida, il sistema utilizzerà il valore predefinito.
+Questa opzione specifica la dimensione della frammentazione dei pacchetti TCP, che consente di evitare l'ispezione approfondita dei pacchetti. Valid values: 1–1500. Se viene specificata una dimensione non valida, il sistema utilizzerà il valore predefinito.
 
 #### `stealth.antidpi.http.space.juggling`
 

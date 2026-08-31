@@ -1,40 +1,45 @@
 ---
-title: AdGuard for Windows
+title: AdGuard for Windows v8
 sidebar_position: 1
 ---
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
 
 :::
 
-## 機能
+AdGuard for Windows は、迷惑なバナー、ポップアップ、ビデオ広告、トラッカーをブロックする使いやすいツールです。 But that’s not all: it helps you save traffic, load web pages faster, and protect your computer from undesirable and potentially malicious websites. また、AdGuard はフィッシング Web サイトからユーザーを保護し、お子様を不適切なコンテンツから守ります。
 
-AdGuard for Windows の主な機能と設定についての説明です：
+## 動作環境
 
-[機能](/adguard-for-windows/features/features.md)
+- **OS version:** Microsoft Windows 10 or higher
+- **RAM:** at least 6 GB
+- **Processor:** 2-core, 2.0 GHz (or faster)
+- **Free disk space:** at least 4 GB.
 
-## インストール/アンインストール
+---
 
-動作環境と、AdGuard for Windows のインストールおよびアンインストール方法の手順について説明しております：
+![Home screen](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
 
-[インストール方法](/adguard-for-windows/installation.md)
+On the Home screen, you’ll find a toggle to enable or disable AdGuard protection, as well as icons for _Ad blocking_, _Tracking protection_, _DNS protection_, and _Annoyance blocking_. Main settings can be accessed through the left-side menu.
 
-## ブラウザアシスタント
+## [Protection](/adguard-for-windows/protection/)
 
-直接ブラウザからのフィルタリング管理を可能にすることで、AdGuardデスクトップアプリを補完してくれる拡張機能です。
+Settings to configure _Ad blocking_, _Tracking protection_, _DNS protection_, _Annoyances blocking_, _Browsing security_, _Parental control_, and _Extensions_.
 
-[ブラウザアシスタント](/adguard-for-windows/browser-assistant.md)
+## [Statistics](/adguard-for-windows/statistics/)
 
-## 問題解決
+Detailed information about blocked ads, trackers, and data usage.
 
-既知の問題と考えられる解決策を説明する記事がまとめられています：
+## [App management](/adguard-for-windows/app-management/)
 
-[問題解決](/adguard-for-windows/solving-problems/solving-problems.md)
+Settings to customize traffic filtering and routing for each app and browser.
 
-## 管理者向けドキュメンテーション
+## [Settings](/adguard-for-windows/settings/)
 
-システム管理者向けの設定ガイドです：
+Options to select language and theme, view legal documents, check license information, and contact support. Advanced settings and network settings also live there.
 
-[管理者向けドキュメント](/adguard-for-windows/admins-documentation.md)
+Click _Check for updates_ to see whether your app version, filters, and extensions are up to date.
+
+![Check for updates](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/checking_for_updates.png)

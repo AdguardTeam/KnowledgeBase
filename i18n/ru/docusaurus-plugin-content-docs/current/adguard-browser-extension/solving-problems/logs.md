@@ -13,19 +13,15 @@ sidebar_position: 1
 
 3. Включите _Режим разработчика_.
 
-   ![Режим разработчика \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
+   ![Developer mode \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_extensions.png)
 
-4. Нажмите `background.html`.
+4. Find AdGuard Browser Extension and click `service worker`.
 
-   ![background.html \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
+   ![Background \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_developer_mode.png)
 
-5. Откройте вкладку _Консоль_.
+5. Open the tab _Console_, right-click anywhere inside the console area, and select _Save as…_.
 
-   ![Вкладка консоль \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
-
-6. Откройте контекстное меню и выберите _Сохранить как..._.
-
-   ![Сохранить как \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
+   ![Save as \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_console_save.png)
 
 ### Firefox
 
@@ -33,21 +29,17 @@ sidebar_position: 1
 
 2. Перейдите на `about:addons`.
 
-3. Нажмите _Отладка дополнений_.
+3. Click the gear icon and select _Debug Add-ons_.
 
-   ![Отладка дополнений \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+   ![Debug Add-ons \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_debug_addons.png)
 
 4. Нажмите _Проверить_.
 
-   ![Исследовать \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
+   ![Inspect \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_inspect.png)
 
-5. Перейдите во вкладку _Консоль_.
+5. In the tab _Console_ tab, right-click anywhere inside the console area and select _Save all Messages to File_.
 
-   ![Консоль \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
-
-6. Нажмите _Сохранить все сообщения в файл_.
-
-   ![Сохранить в файл \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
+   ![Console \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_console_save.png)
 
 ## Отправкка логов
 

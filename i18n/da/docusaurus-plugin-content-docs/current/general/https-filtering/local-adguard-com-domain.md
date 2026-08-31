@@ -1,27 +1,27 @@
 ---
-title: Local.adguard.org domain
+title: Local.adguard.org-domæne
 sidebar_position: 3
 ---
 
-Users of AdGuard for Windows, Mac, and Android may notice that AdGuard adds a small script to every web page, that is loaded from the `local.adguard.org` domain.
+Brugere af AdGuard til Windows, Mac og Android bemærker muligvis, at AdGuard tilføjer et lille script til hver webside, der indlæses fra domænet `local.adguard.org`.
 
-First of all, don't worry, this is not a real domain, and there is actually no real server with that name. This domain is used to apply cosmetic filtering to web pages, but everything is done locally right on your device without connecting to any server.
+Først og fremmest, bare rolig, dette er ikke et reelt domæne, og der er faktisk ingen rigtig server med det navn. Domænet bruges til effektuering af kosmetisk filtrering på websider, men alt foregår lokalt direkte på enheden uden at oprette forbindelse til nogen server.
 
-### Technical explanation
+### Teknisk forklaring
 
-But what's going on and why is it done? Please read the technical explanation below.
+Men hvad sker der, og hvorfor gøres dette? Læs venligst den tekniske forklaring nedenfor.
 
-1. AdGuard is a network-level content blocker so it cannot simply add custom JavaScript and CSS to webpages like what browser extensions do. However, doing this is crucial for quality content blocking.
-2. In order to do it AdGuard injects a "content script" that looks like this: `<script src="https://local.adguard.org/.../content-script.js">`. This "content script" takes care of cosmetic filtering, hides or removes ad content from the web pages.
-3. Connections to the IP address of the `local.adguard.org` domain are intercepted by AdGuard on the network level and **processed locally**. This is why that domain has a "static" IP address that does not change for years.
+1. AdGuard er en indholdsblocker på netværksniveau, så den kan ikke bare tilføje tilpasset JavaScript og CSS til websider, som webbrowserudvidelserne gør. At gøre dette er imidlertid afgørende for indholdsblockingkvaliteten.
+2. For at gøre det injicerer AdGuard et "indholdsscript", der ser således ud: `<script src="https://local.adguard.org/.../content-script.js">`. Dette "indholdsscript" tager sig af kosmetisk filtrering, skjuler eller fjerner annonceindhold fra websiderne.
+3. Forbindelser til IP-adressen på domænet `local.adguard.org` opfanges af AdGuard på netværksniveau og **behandles lokalt**. Det er grunden til, at dette domæne har en "statisk" IP-adresse, der er uændret i årevis.
 
-**Why do we need to use a real IP address for that?**
+**Hvorfor kræves en rigtig IP-adresse til dette?**
 
-- We cannot use `127.0.0.1` as the browsers won't accept it.
-- Using some IP address from the private subnets is possible, but this solution has two downsides.
-    - First, there is a slight chance of intersecting with an existing intranet service and breaking access to it.
-    - Second, some DNS servers may consider this a DNS rebinding attack and refuse to respond to `local.adguard.org`.
+- `127.0.0.1` kan ikke bruges, da webbrowsere ikke accepterer den.
+- Brug af IP-adresser fra de private undernet er muligt, men denne løsning har to ulemper.
+    - For det første er der en lille chance for at interferere med en eksisterende intranettjeneste og ødelægge adgangen hertil.
+    - For det andet kan nogle DNS-servere betragte dette som et DNS-genbindingsangreb og nægte `local.adguard.org` svar.
 
-### Verification
+### Bekræftelse
 
-This is easy to verify. If you disable AdGuard, you'll see that it is simply impossible to establish connection to `local.adguard.org` since there is no server with that address. Just try opening it in your browser when AdGuard is disabled.
+Dette er nemt at bekræfte. Deaktiveres AdGuard, vil der være tydeligt, at det simpelthen er umuligt at etablere forbindelse til `local.adguard.org`, da ingen server med den adresse findes. Prøv blot at åbne den i webbrowseren, når AdGuard er deaktiveret.

@@ -63,7 +63,7 @@ To uninstall AdGuard Mini for Mac, do the following:
 
 4. AdGuard拡張機能すべてのチェックボックスのチェックを外し、それぞれの「アンインストール」ボタンを押します。
 
-   ![Unchecked extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
+   ![チェックなし拡張機能](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
 
 5. In the notification that appears, press _Show in Finder_.
 

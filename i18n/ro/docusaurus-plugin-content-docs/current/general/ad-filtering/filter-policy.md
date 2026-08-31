@@ -81,11 +81,12 @@ Obiectivul filtrelor de blocare a reclamelor este de a bloca toate tipurile de p
 ### Limitări și excepții
 
 - Publicitatea proprie a site-ului nu ar trebui să fie blocată intenționat. Cu toate acestea, nu ar trebui să fie deblocată dacă blocarea este cauzată de regulile de filtrare generale
-- Măsurile de acces la conținut, cum ar fi paywalls, nu sunt blocate
+- Content access measures like paywalls are not blocked by Ad blocking filters. However, they may be blocked by Tracking protection filters if their operation results in a violation of user privacy
 - Anti-adblock walls will be blocked in the following cases:
     - Ele insistă agresiv pe dezactivarea sau eliminarea blocantului de reclame sau împiedică efectiv utilizarea site-ului
     - Conțin descrieri incorecte și înșelătoare ale posibilelor consecințe ale utilizării blocantelor de reclame
     - Expun vizitatorii la riscul de malware — când reclamele deblocate provind din surse dubioase
+    - They violate or negatively impact user privacy
 - Nu blocăm mesajele de detectare a blocantelor de reclame care respectă cel puțin unul dintre următoarele criterii:
     - Ele permit utilizarea site-ului și nu suprapun o cantitate semnificativă de conținut
     - Ele oferă o alternativă la dezactivarea blocantului de reclame, cu condiția ca această alternativă să nu pună în pericol intimitatea sau securitatea utilizatorilor
@@ -110,6 +111,7 @@ Obiectivul filtrelor de blocare a reclamelor este de a bloca toate tipurile de p
 Filtrele de protecție împotriva urmăririi AdGuard includ:
 
 - Filtrul AdGuard de protecție de urmărire
+- AdGuard Mail Tracking Protection filter
 - Filtrul de urmărire URL AdGuard
 
 ### Scopul acestor filtre
@@ -128,6 +130,8 @@ What it blocks:
 - Privacy Sandbox functionality in Google Chrome and its forks used for tracking (Google Topics API, the Protected Audience API)
 
 The **URL Tracking filter** is designed to remove tracking parameters from web addresses
+
+The **Mail Tracking Protection filter** blocks tracking pixels embedded in emails to prevent senders from monitoring when you open messages.
 
 ### Limitări și excepții
 
@@ -165,13 +169,11 @@ For better customization, annoyance filters are divided by their purpose:
 
 #### AdGuard Cookie Notices filter
 
-This filter is designed to block both cookie notices and requests from cookie management platforms (CMPs). Various methods may be applied to cookie notices and CMPs. In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when the site’s functionality and display of third-party content require cookie consent, the following methods are applied:
+This filter is designed to block both cookie notices and requests from cookie management platforms (CMPs). Depending on how a website implements its consent mechanism, different methods may be applied.
 
-- Scriptlets are used to bypass the consent request (practically not applicable on sites with restrictions on loading third-party content until a decision is made)
-- Setting a cookie or key in the site’s local storage in such a way that the script considers the user to have made a choice
-- Simulating user action using a rule that clicks a specified button and interrupts its execution 10 seconds after loading. Two options are possible:
-    - Reject (except for functional cookies — depending on the CMP system) — the preferred option, as there is less risk of loading additional analytics tools
-    - Accept — this option is used as the last resort if other methods fail. In this case, the site is additionally checked for the use of analytics tools, which are then blocked by the **AdGuard Tracking Protection filter**
+In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when a website requires a cookie decision for certain features or third-party content to work, the filter automatically handles the request using alternative methods.
+
+Whenever possible, non-essential cookies are declined by default. If this is not technically feasible and consent must be granted for the site to function correctly, the site is additionally reviewed for analytics and tracking technologies, which are then blocked by the **AdGuard Tracking Protection filter**.
 
 **Limitări și excepții**
 
@@ -266,13 +268,13 @@ For more details on these types of advertising, refer to the [article on search 
 
 ### Filtre
 
-- Filtru care deblochează reclamele de căutare și auto-promovare
+- Filter unblocking search ads and self-promotion
 - AdGuard DNS filter
 - AdGuard Experimental filter
 
 ### Scopul acestor filtre
 
-#### Filtru care deblochează reclamele de căutare și auto-promovare
+#### Filter unblocking search ads and self-promotion
 
 This filter unblocks:
 
@@ -301,3 +303,34 @@ This filter is intended for testing and debugging rules that potentially may bre
 
 - Rules should not intentionally break websites’ functionality
 - Rules should not unblock advertisements or otherwise violate the Policy
+
+## How to dispute a blocking rule
+
+AdGuard filter lists are maintained not only by the AdGuard team but also by community contributors. If you believe a blocking rule violates the principles described in this filter policy, you can dispute it by opening an issue on GitHub.
+
+Before submitting a dispute, please make sure you have read this policy carefully. When reviewing your report, filter maintainers will evaluate whether the rule complies with the criteria described above, so your explanation should refer to this policy whenever possible.
+
+### How to submit a dispute
+
+You can submit a dispute by using [our report tool](https://reports.adguard.com/new_issue.html). See the step-by-step guide in our [dedicated article](https://adguard.com/kb/guides/report-website/).
+
+Alternatively, you can report it via GitHub:
+
+1. Go to the [AdGuard Filters GitHub repository](https://github.com/AdguardTeam/AdguardFilters/issues) and create a new issue.
+2. Select the **Report an issue using AdGuard** issue template.
+3. Fill out the template with as much detail as possible.
+
+Your report should include:
+
+- The URL of the affected website.
+- A clear description of what is being blocked.
+- The blocking rule, if you know which one is responsible.
+- Steps to reproduce the issue.
+- Screenshots or other evidence that illustrate the problem, if applicable.
+- A detailed explanation of **why you believe the rule does not comply with this filter policy**. Whenever possible, refer to the relevant section or principle of the policy that you believe the rule violates.
+
+### What makes a good dispute?
+
+Simply stating that you disagree with a blocking rule is usually not enough. To help maintainers evaluate your report, explain why the rule conflicts with the blocking policy rather than why you personally would prefer different behavior.
+
+For example, if you believe a rule blocks content that should not be blocked under this policy, describe which policy criterion applies and how the rule fails to meet it. The more specific and well-supported your report is, the easier it will be for maintainers to review your request and determine whether the rule should be changed.

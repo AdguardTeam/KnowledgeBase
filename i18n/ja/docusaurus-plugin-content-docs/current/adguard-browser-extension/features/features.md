@@ -9,26 +9,18 @@ sidebar_position: 1
 
 :::
 
-## メインメニュー
+- [Main menu](/adguard-browser-extension/features/main-menu.md)
 
-設定、統計、フィルタリングログへのアクセス、問題の報告ができるメインメニューポップアップです。
+  The main popup from which you can access settings, filtering log and statistics, and report problems
 
-[メインメニュー](/adguard-browser-extension/features/main-menu.md)
+- [Filters](/adguard-browser-extension/features/filters.md)
 
-## フィルタ
+  フィルターとユーザールールで広告ブロックの微調整が可能です：
 
-フィルターとユーザールールで広告ブロックの微調整が可能です。
+- [Tracking protection (Stealth Mode)](/adguard-browser-extension/features/stealth-mode.md)
 
-[フィルタ](/adguard-browser-extension/features/filters.md)
+  Settings to block cookies, UTM tags, and online analytics that collect user information
 
-## トラッキング防止（ステルスモード）
+- [Other features and options](/adguard-browser-extension/features/other-features.md)
 
-ユーザー情報を収集するCookie、UTMタグ、オンライン分析をブロックする機能です。
-
-[トラッキング防止（ステルスモード）](/adguard-browser-extension/features/stealth-mode.md)
-
-## その他の機能とオプション
-
-一般設定と追加設定、プライバシー文書とリポジトリへのリンクが載っています。
-
-[その他の機能とオプション](/adguard-browser-extension/features/other-features.md)
+  General and additional settings, links to privacy documents and GitHub repository

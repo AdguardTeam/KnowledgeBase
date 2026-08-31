@@ -43,7 +43,15 @@ adguard-cli stop
 adguard-cli status
 ```
 
-![Статус/Отключить защиту \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation6.png)
+![Status/Stop protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/6status-stop.png)
+
+### Перезапустить защиту
+
+Чтобы перезапустить прокси-сервер и повторно применить настройки, введите:
+
+```sh
+adguard-cli restart
+```
 
 ## Обновления
 
@@ -55,7 +63,7 @@ adguard-cli status
 adguard-cli check-update
 ```
 
-### Обновление AdGuard для Linux
+### Обновить AdGuard для Linux
 
 Чтобы обновить AdGuard для Linux, введите:
 
@@ -71,19 +79,27 @@ adguard-cli update
 adguard-cli update -v
 ```
 
-## Настройте AdGuard для Linux
+## Настроить AdGuard для Linux
 
 Используйте команду `config` для настройки AdGuard для Linux. Подкоманды:
 
-- `show`: показать текущую конфигурацию в `proxy.yaml`
+- `show [<section-name>]`: показать текущую конфигурацию в `proxy.yaml` (или конкретный раздел)
 
-  ![Текущая настройка \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/activation7.png)
+  ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/7config_show.png)
 
-- `set`: настроить параметр в `proxy.yaml`
+- `set <key> <value>`: настроить параметр в `proxy.yaml`
   - `listen_ports.http_proxy`: порт прослушивания HTTP
   - `proxy_mode`: режим прокси-сервера (`manual` или `auto`)
 
-- `get`: получить текущий статус указанных выше опций
+- `get <key>`: получить текущий статус настройки
+
+- `list-add <key> <value> [<value>...]`: добавить одно или несколько значений в настройку списка
+
+- `list-remove <key> <value>`: Remove a value from a list setting
+
+- `reset <key>`: Reset a setting to its default value
+
+- `reset --all`: Reset all settings to their default values
 
 :::note
 
@@ -96,50 +112,88 @@ The Automatic mode can only be used if the following requirements are met:
 
 :::
 
-## Управлять фильтрами
+## Manage filters
 
-Используйте команду `filters` для настройки AdGuard для Linux. Подкоманды:
+Use the `filters` command to configure AdGuard for Linux. Подкоманды:
 
-- `list`: список установленных фильтров
+- `list`: List installed and added filters
 
-  - `--all`: просмотреть все фильтры
+  - `--all`: View all filters
 
-  ![Список фильтров \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
+  ![Filter list \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/filter-list.png)
 
-- `install`: установить фильтр. Введите URL-адрес фильтра, который хотите установить
+- `add`: Add a built-in filter by ID or name
 
-- `enable`: включить фильтр. Введите имя или ID фильтра
+- `install`: Install a filter. Enter the URL of the filter you want to install or local file
+  - `--trusted`: Mark the custom filter as trusted
+  - `--title`: Set a custom title for the filter
 
-  ![Включить фильтры \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
+- `enable`: Enable a filter. Enter the name or ID of the filter
 
-- `disable`: отключить фильтр. Введите имя или ID фильтра
+  ![Enable filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/built-in-filters.png)
 
-- `update`: обновить фильтры
+- `disable`: Disable a filter. Enter the name or ID of the filter
 
-## Изменение адреса прослушивания прокси-сервера в режиме ручной настройки прокси
+- `remove`: Remove an internal or custom filter by ID
 
-По умолчанию прокси-сервер прослушивает `127.0.0.1` — адрес сетевого интерфейса loopback.
-Можно сделать так, чтобы прокси-сервер слушал другой интерфейс. Есть два способа:
+- `set-trusted`: Mark a custom filter as trusted or untrusted
 
-1. Выполните команду `adguard-cli config set listen_address <address>`, где `<address>` — адрес для прослушивания.
-2. Отредактируйте файл конфигурации напрямую:
-   - Чтобы определить местоположение файла конфигурации, выполните команду `adguard-cli config show | grep "Config location"`.
-   - Найдите ключ `listen_address` и установите его значение соответствующим образом. Чтобы прослушивать все доступные сетевые интерфейсы, установите значение `0.0.0.0` или `::` для адреса прослушивания.
+- `set-title`: Set a custom title for a custom filter
 
-Если в качестве адреса прослушивания задано значение, отличное от `127.0.0.1`, — требуется аутентификация прокси-клиента. AdGuard CLI не запустится, если не настроена аутентификация прокси:
+Filter updates are handled by `adguard-cli check-update` (the `filters update` subcommand forwards to it).
 
-- При запуске `adguard-cli config set listen_address <address>`, где `<address>` не 127.0.0.1, AdGuard CLI запросит имя пользователя и пароль, если прокси-аутентификация ещё не настроена.
-- При редактировании файла конфигурации напрямую найдите ключ `listen_auth`. Установите для подключа `enabled` значение `true`, а для `username` и `password` \` — непустые значения.
+## Manage DNS filters
 
-## Настроить исходящий прокси
+Use the `dns filters` command to manage DNS filter lists. Подкоманды:
 
-Вы можете настроить `outbound_proxy`, если хотите, чтобы AdGuard CLI работал через другой прокси-сервер.
+- `list`: List installed and added DNS filters
+  - `--all`: View all DNS filters
+- `add`: Add a built-in DNS filter by ID or name
+- `install`: Install a custom DNS filter from a URL or local file
+  - `--title`: Set a custom title for the filter
+- `enable`: Enable a DNS filter. Enter the name or ID of the filter
+- `disable`: Disable a DNS filter. Enter the name or ID of the filter
+- `remove`: Remove a DNS filter by ID
+- `set-title`: Set a custom title for a DNS filter
 
-Есть два способа настройки:
+DNS filter updates are handled by `adguard-cli check-update`.
 
-### 1. Настроить через URL (рекомендуется)
+## Manage userscripts
 
-Вместо того чтобы настраивать каждую опцию пошагово, вы можете задать все параметры в одной строке, используя URL:
+Use the `userscripts` command to manage userscripts. Подкоманды:
+
+- `list`: Show installed userscripts
+- `install`: Install a userscript from a URL
+- `remove`: Remove a userscript
+- `enable`: Enable a userscript
+- `disable`: Disable a userscript
+
+Userscripts are updated by `adguard-cli check-update`.
+
+## Changing the proxy server listen address in manual proxy mode
+
+By default, the proxy server listens on `127.0.0.1` — the address of the loopback network interface.
+There are two ways to make the proxy server listen on a different interface:
+
+1. Run `adguard-cli config set listen_address <address>` where `<address>` is the address to listen on.
+2. Edit the config file directly:
+   - To determine the location of the config file, run `adguard-cli config show | grep "Config location"`.
+   - Look for the `listen_address` key and set its value accordingly. To listen on all available network interfaces, set the listen address to `0.0.0.0` or `::`.
+
+If the listen address is set to anything other than `127.0.0.1`, then proxy client authentication is required. AdGuard CLI will not start unless proxy authentication is configured:
+
+- When running `adguard-cli config set listen_address <address>` where `<address>` is not `127.0.0.1`, AdGuard CLI will prompt for a username and password if proxy authentication is not already configured.
+- When editing the config file directly, look for the `listen_auth`key. Set the `enabled` sub-key to `true`, and `username` and `password` to non-empty values.
+
+## Configure outbound proxy
+
+You can configure `outbound_proxy` if you want AdGuard CLI to work through another proxy server.
+
+There are two ways to configure it:
+
+### 1. Configure via URL (recommended)
+
+Instead of setting each option step by step, you can set all parameters in a single line using a URL:
 
 ```sh
 adguard-cli config set outbound_proxy https://user:pass@host:port
@@ -147,25 +201,25 @@ adguard-cli config set outbound_proxy https://user:pass@host:port
 
 :::info
 
-Поддерживаемые режимы: HTTP, HTTPS, SOCKS, и SOCKS5.
+Supported modes are HTTP, HTTPS, SOCKS4, and SOCKS5.
 
 :::
 
-Вы также можете быстро включить или отключить `outbound_proxy`:
+You can also quickly enable or disable `outbound_proxy`:
 
 ```sh
 adguard-cli config set outbound_proxy false
 ```
 
-Или быстро очистить настройки:
+Or quickly clear the settings:
 
 ```sh
 adguard-cli config set outbound_proxy ""
 ```
 
-### 2. Настроить отдельные параметры
+### 2. Configure individual parameters
 
-Также есть возможность настроить отдельные параметры:
+The ability to adjust specific parameters is also available:
 
 ```sh
 adguard-cli config set outbound_proxy.enabled true
@@ -175,13 +229,13 @@ adguard-cli config set outbound_proxy.username user
 adguard-cli config set outbound_proxy.password pass
 ```
 
-Отключить проверку сертификата для HTTPS-прокси:
+Disable certificate verification for HTTPS proxies:
 
 ```sh
 adguard-cli config set outbound_proxy.trust_any_certificate true
 ```
 
-Включить прокси SOCKS5 для UDP-трафика:
+Enable SOCKS5 proxy for UDP traffic:
 
 ```sh
 adguard-cli config set outbound_proxy.udp_through_socks5_enabled true
@@ -189,21 +243,21 @@ adguard-cli config set outbound_proxy.udp_through_socks5_enabled true
 
 :::note
 
-Если ваш прокси SOCKS5 не поддерживает UDP, соединения могут не работать.
+If your SOCKS5 proxy does not support UDP, connections may fail.
 
 :::
 
-## Настройка AdGuard CLI для каждого приложения
+## Per-app AdGuard CLI configuration
 
-Пользователям часто приходится вручную включать фильтрацию для определённых браузеров. AdGuard для Linux поддерживает **конфигурацию для каждого приложения**, позволяя применять настройки или правила индивидуально к каждому приложению, а не ко всей системе.
+Users often need to enable filtering manually for certain browsers. AdGuard for Linux supports **per-app configuration**, allowing you to apply settings or rules individually to each application instead of system-wide.
 
-За подробностями обратитесь к разделу `apps` в файле `proxy.yaml`.
+For details, refer to the `apps` section in `proxy.yaml`.
 
-Набор преднастроенных записей для популярных интернет-браузеров включён в файл `browsers.yaml` по умолчанию.
+A set of pre-configured entries for popular web browsers is included by default in `browsers.yaml`.
 
-### Проверка текущей конфигурации
+### Checking the current configuration
 
-Чтобы просмотреть текущую конфигурацию `outbound_proxy`, введите:
+To view the current `outbound_proxy` configuration, enter:
 
 ```sh
 adguard-cli config show outbound_proxy
@@ -211,7 +265,7 @@ adguard-cli config show outbound_proxy
 
 :::info Совместимость
 
-Настройка `outbound_proxy` через URL доступна, начиная с AdGuard для Linux 1.1.26 nightly и стабильной версии 1.1.
+Configuring `outbound_proxy` via URL is available starting from AdGuard for Linux v1.1.26 nightly and v1.1 stable release.
 
 :::
 
@@ -248,3 +302,46 @@ adguard-cli import-settings -i "/path/to/settings.zip"
 ```
 
 The `-i` or `--input` flag is required and specifies the path to the settings archive to import.
+
+## Браузерный помощник AdGuard
+
+Браузерный помощник AdGuard позволяет управлять защитой AdGuard прямо из браузера.
+
+![Окно Помощника \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
+
+### Как это работает
+
+Браузерный помощник AdGuard — это расширение для браузера. It allows you to quickly manage AdGuard for Linux:
+
+- Enable or disable protection for a specific website (the toggle under the website name)
+- Приостановить защиту на 30 секунд
+- Отключить защиту (значок паузы в правом верхнем углу)
+- Блокировка рекламы вручную
+- Сообщить о неправильной блокировке
+- Manage HTTPS filtering (the lock icon next to the website name)
+
+### Как установить
+
+To install Native Messaging manifests for browser integration, use:
+
+```sh
+adguard-cli install-browser-integration
+```
+
+To uninstall the manifests, use:
+
+```sh
+adguard-cli install-browser-integration --uninstall
+```
+
+**Install AdGuard Browser Assistant extension**:
+
+1. Откройте [страницу Помощника](https://adguard.com/adguard-assistant/overview.html).
+2. Под названием вашего браузера выберите _Установить_.
+3. Установите Помощник из магазина расширений вашего браузера.
+
+:::info Совместимость
+
+Support for AdGuard Browser Assistant is available starting from AdGuard for Linux v1.4.
+
+:::

@@ -8,7 +8,7 @@ slug: /
 
 AdGuard is one of the leaders on the market of ad-blocking software with 15+ years of experience, almost a dozen products for various platforms, and over 375 million user installs. Unlike other ad-blocking solutions, most of which are browser-based, we offer standalone apps for all major platforms, both desktop and mobile. AdGuard apps are more powerful than browser extensions, can block more and do it more efficiently:
 
-- [AdGuard for Windows](/adguard-for-windows/features/home-screen)
+- [AdGuard for Windows](/adguard-for-windows/)
 - [AdGuard for Mac](/adguard-for-mac/features/main)
 - [AdGuard for Android](/adguard-for-android/features/protection/ad-blocking)
 - [AdGuard for iOS](/adguard-for-ios/features/safari-protection)
@@ -16,7 +16,7 @@ AdGuard is one of the leaders on the market of ad-blocking software with 15+ yea
 But we also develop and maintain free browser extensions for all popular browsers:
 
 - [AdGuard Browser Extension](/adguard-browser-extension/availability)
-- [AdGuard for Safari](/adguard-for-safari/features/general)
+- [AdGuard for Safari](/archive/adguard-for-safari/features/general)
 
 ## Not just ad blocking
 

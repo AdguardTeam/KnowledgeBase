@@ -57,6 +57,10 @@ Redirects secure DNS requests to a local DNS proxy, if there is one available.
 
 `true` ayarını yaparak HTTPS sertifika iptal kontrolünü etkinleştirirsiniz.
 
+#### `network.http.compress.body`
+
+Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering engine, will compress the HTTP response body before sending it with the original response algorithm (if supported) or with the default fallback algorithm (GZip). Responses from BrowserApi will also be encoded if this option is enabled.
+
 #### `network.tcp.keepalive.enabled`
 
 Etkin kalmasını sağlamak ve NAT zaman aşımlarını yenilemek için boşta olan bir bağlantı üzerinden periyodik olarak TCP paketleri gönderir.
@@ -179,11 +183,11 @@ Klasik X25519 algoritmasını ML-KEM-768 kuantum sonrası KEM ile birleştiren h
 
 #### `stealth.antidpi.http.split.fragment.size`
 
-HTTP istek parçalanmasının boyutunu ayarlar. Geçerli değerler: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
+HTTP istek parçalanmasının boyutunu ayarlar. Valid values: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
 
 #### `stealth.antidpi.clienthello.split.fragment.size`
 
-Bu seçenek, derin paket incelemesinden kaçınmaya yardımcı olan TCP paket parçalama boyutunu belirtir. Geçerli değerler: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
+Bu seçenek, derin paket incelemesinden kaçınmaya yardımcı olan TCP paket parçalama boyutunu belirtir. Valid values: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
 
 #### `stealth.antidpi.http.space.juggling`
 

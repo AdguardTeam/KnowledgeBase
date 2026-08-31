@@ -11,21 +11,17 @@ sidebar_position: 1
 
 2. `chrome://extensions`로 이동합니다.
 
-3. _개발자 모드_를 활성화합니다.
+3. _개발자 모&#xB4DC;_&#xB97C; 활성화합니다.
 
-   ![개발자 모드 \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
+   ![Developer mode \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_extensions.png)
 
-4. `background.html`을 클릭합니다.
+4. Find AdGuard Browser Extension and click `service worker`.
 
-   ![Background \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
+   ![Background \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_developer_mode.png)
 
-5. _콘솔_ 탭을 엽니다.
+5. Open the tab _Console_, right-click anywhere inside the console area, and select _Save as…_.
 
-   ![콘솔 탭 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
-
-6. 상황에 맞는 메뉴를 열어 _다른 이름으로 저장_을 선택합니다.
-
-   ![다른 이름으로 저장 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
+   ![Save as \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_console_save.png)
 
 ### Firefox
 
@@ -33,21 +29,17 @@ sidebar_position: 1
 
 2. `about:addons`로 이동합니다.
 
-3. _부가 기능 디버그_를 누릅니다.
+3. Click the gear icon and select _Debug Add-ons_.
 
-   ![부가 기능 디버그 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+   ![Debug Add-ons \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_debug_addons.png)
 
-4. _검사_를 누릅니다.
+4. _검&#xC0AC;_&#xB97C; 누릅니다.
 
-   ![검사 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
+   ![Inspect \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_inspect.png)
 
-5. _콘솔_ 탭으로 이동합니다.
+5. In the tab _Console_ tab, right-click anywhere inside the console area and select _Save all Messages to File_.
 
-   ![콘솔 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
-
-6. _모든 메세지를 파일에 저장_을 클릭합니다.
-
-   ![저장 \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
+   ![Console \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_console_save.png)
 
 ## 로그 전송하기
 

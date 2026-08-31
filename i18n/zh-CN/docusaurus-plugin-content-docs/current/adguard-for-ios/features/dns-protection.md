@@ -23,7 +23,7 @@ sidebar_position: 2
 
 此部分有两个选项：AdGuard 和本地实现。 基本上，这是两种设置 DNS 的方法。
 
-在本地实现中，DNS 由系统而非应用程序处理。 这意味着 AdGuard 不必创建本地 VPN。 遗憾的是，这无法帮助用户规避系统限制并与其他基于 VPN 的应用程序一起使用 AdGuard。如果启用了任何 VPN，则本机 DNS 将被忽略。 因此，用户将无法在本地过滤流量或使用我们全新的 [DNS-over-QUIC 协议 (DoQ)](https://adguard.com/zh_cn/blog/dns-over-quic.html)。
+在本地实现中，DNS 由系统而非应用程序处理。 这意味着 AdGuard 不必创建本地 VPN。 遗憾的是，这无法帮助用户规避系统限制并与其他基于 VPN 的应用程序一起使用 AdGuard。如果启用了任何 VPN，则本机 DNS 将被忽略。 因此，用户将无法在本地过滤流量或使用我们全新的 [DNS-over-QUIC 协议 (DoQ)](https://adguard-dns.io/blog/dns-over-quic.html)。
 
 ### DNS 服务器 {#dns-servers}
 
@@ -67,7 +67,7 @@ DNS 过滤让用户通过 AdGuard DNS 过滤器、添加自定义 DNS 过滤器�
 
 #### DNS 过滤器 {#dns-filters}
 
-与 Safari 中的过滤器类似，DNS 过滤器也是根据特殊[语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/)编写的规则集。 AdGuard 将监控 DNS 流量并阻止与一项或多项规则匹配的请求。 用户可以使用过滤器，比如 [AdGuard DNS 过滤器](https://github.com/AdguardTeam/AdguardSDNSFilter)或添加主机文件作为过滤器。 可同时添加多个过滤器。 要了解如何操作，请阅读[说明](adguard-for-ios/solving-problems/system-wide-filtering)。
+与 Safari 中的过滤器类似，DNS 过滤器也是根据特殊[语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/)编写的规则集。 AdGuard 将监控 DNS 流量并阻止与一项或多项规则匹配的请求。 用户可以使用过滤器，比如 [AdGuard DNS 过滤器](https://github.com/AdguardTeam/AdguardSDNSFilter)或添加主机文件作为过滤器。 可同时添加多个过滤器。 To know how to do it, get acquainted with [this exhaustive manual](/adguard-for-ios/solving-problems/system-wide-filtering).
 
 #### 白名单和黑名单 {#allowlist-blocklist}
 

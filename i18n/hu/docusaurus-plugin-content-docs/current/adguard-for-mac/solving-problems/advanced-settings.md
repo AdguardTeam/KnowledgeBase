@@ -57,6 +57,10 @@ Itt megadhatja azoknak az alkalmazásoknak a listáját, amelyek közvetlenül, 
 
 A `true` beállítással engedélyezi a HTTPS-tanúsítvány visszavonásának ellenőrzését.
 
+#### `network.http.compress.body`
+
+Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering engine, will compress the HTTP response body before sending it with the original response algorithm (if supported) or with the default fallback algorithm (GZip). Responses from BrowserApi will also be encoded if this option is enabled.
+
 #### `network.tcp.keepalive.enabled`
 
 Időnként TCP-csomagokat küld tétlen kapcsolaton keresztül, hogy megbizonyosodjon arról, hogy életben van, és megújítja a NAT időtúllépéseket.

@@ -1,40 +1,45 @@
 ---
-title: AdGuard per Windows
+title: AdGuard per Windows v8
 sidebar_position: 1
 ---
 
 :::info
 
-Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo descrive AdGuard per Windows v8.0, un blocca-inserzioni completo che protegge il tuo dispositivo a livello di sistema. Questo è una versione beta ancora in fase di sviluppo. Per provarlo, scarica la [versione beta di AdGuard per Windows](https://agrd.io/windows_beta).
 
 :::
 
-## Funzioni
+AdGuard per Windows è uno strumento facile da usare che blocca banner, popup, annunci video e tracker fastidiosi. Ma non solo: aiuta a risparmiare traffico, caricare le pagine web più velocemente e proteggere il computer da siti web indesiderati e potenzialmente dannosi. AdGuard ti protegge anche dai siti di phishing e tiene lontani i bambini da contenuti inappropriati.
 
-Funzioni principali e impostazioni disponibili in AdGuard per Windows
+## Requisiti di sistema
 
-[Funzioni](/adguard-for-windows/features/features.md)
+- **OS version:** Microsoft Windows 10 or higher
+- **RAM:** at least 6 GB
+- **Processor:** 2-core, 2.0 GHz (or faster)
+- **Free disk space:** at least 4 GB.
 
-## Installazione
+---
 
-Installazione, rimozione e requisiti di sistema per AdGuard per Windows
+![Schermata iniziale](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
 
-[Installazione](/adguard-for-windows/installation.md)
+Nella schermata Iniziale, troverai un commutatore per abilitare o disabilitare la protezione AdGuard, oltre a icone per _Bloccaggio inserzioni_, _Protezione dal tracciamento_, _protezione DNS_ e _Bloccaggio fastidi_. Le impostazioni principali possono essere richiamate tramite il menu' laterale sinistro.
 
-## Browser Assistant
+## [Protezione](/adguard-for-windows/protection/)
 
-Un'estensione che completa il programma per desktop e consente di gestire il filtraggio dal browser
+Impostazioni per configurare _Bloccaggio inserzioni_, _Protezione dal tracciamento_, _Protezione DNS_, _Bloccaggio fastidi_, _Sicurezza di navigazione_, _Controllo genitori_ e _Estensioni_.
 
-[Browser Assistant](/adguard-for-windows/browser-assistant.md)
+## [Statistiche](/adguard-for-windows/statistics/)
 
-## Risoluzione problemi
+Informazioni dettagliate su inserzioni bloccate, tracciatori e uso dei dati.
 
-Problemi noti e possibili soluzioni
+## [Gestione app](/adguard-for-windows/app-management/)
 
-[Risoluzione problemi](/adguard-for-windows/solving-problems/solving-problems.md)
+Impostazioni per personalizzare il filtraggio e l'instradamento del traffico per ciascuna app e ciascun browser.
 
-## Documentazione per amministratori
+## [Impostazioni](/adguard-for-windows/settings/)
 
-Guida alla configurazione per gli amministratori di sistema
+Opzioni per selezionare lingua e tema, vedere documenti legali, controllare le informazioni sulla licenza e contattare l'assistenza. Le impostazioni avanzate e le impostazioni della rete dedicata sono presenti anche lì.
 
-[Documentazione per amministratori](/adguard-for-windows/admins-documentation.md)
+Clicca _Controlla aggiornamenti_ per verificare se la tua versione dell'app, i filtri e le estensioni sono aggiornati.
+
+![Controlla aggiornamenti](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/checking_for_updates.png)

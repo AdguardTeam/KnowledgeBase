@@ -9,10 +9,10 @@ Tento článek je o AdGuardu Mini pro Mac, který chrání pouze váš prohlíž
 
 :::
 
-Here are some problems you may encounter and workarounds, as well as guides and instructions you may need:
+Zde jsou uvedeny některé problémy, se kterými se můžete setkat, řešení, průvodci a pokyny, které můžete potřebovat:
 
-- [Rule limit issues](/adguard-mini-for-mac/solving-problems/rule-limit.md)
-- [Filtering doesn’t work and ads aren’t blocked](/adguard-mini-for-mac/solving-problems/ads-not-blocked.md)
-- [Filtering doesn’t stop when AdGuard Mini is disabled](/adguard-mini-for-mac/solving-problems/filters-after-disable.md)
-- [How to collect logs in AdGuard Mini for Mac](/adguard-mini-for-mac/solving-problems/logs.md)
-- [AdGuard Mini doesn’t work in private tabs on macOS Sonoma](/adguard-mini-for-mac/solving-problems/private-sonoma.md)
+- [Problémy s limitem počtu pravidel](/adguard-mini-for-mac/solving-problems/rule-limit.md)
+- [Filtrování nefunguje a reklamy nejsou zablokovány](/adguard-mini-for-mac/solving-problems/ads-not-blocked.md)
+- [Filtrování se neukončí, když je AdGuard Mini vypnutý](/adguard-mini-for-mac/solving-problems/filters-after-disable.md)
+- [Jak sbírat logy v AdGuard Mini pro Mac](/adguard-mini-for-mac/solving-problems/logs.md)
+- [AdGuard Mini nefunguje v soukromých kartách na macOS Sonoma](/adguard-mini-for-mac/solving-problems/private-sonoma.md)

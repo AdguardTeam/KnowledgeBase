@@ -35,7 +35,7 @@ Bir reklamın yeniden eklendiğini veya bir sitenin hatalı görüntülendiğini
 
 ### Windows {#windows}
 
-- [AdGuard Tarayıcı Asistanı](/adguard-for-windows/browser-assistant) öğesini açın ve **Sorun bildir** öğesine basın:
+- [AdGuard Tarayıcı Asistanı](/archive/adguard-for-windows/browser-assistant) öğesini açın ve **Sorun bildir** öğesine basın:
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 

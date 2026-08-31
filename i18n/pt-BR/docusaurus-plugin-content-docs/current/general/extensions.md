@@ -9,7 +9,7 @@ Userscripts (também chamados de "extensões") são, na verdade, miniprogramas e
 
 :::note Aplicativos compatíveis
 
-O AdGuard pode ampliar significativamente a funcionalidade de sites, agindo como um gerenciador de userscripts. Você pode adicionar seus scripts personalizados ou gerenciar os existentes em nossos três produtos: [AdGuard para Windows](/adguard-for-windows/features/extensions), [AdGuard para Android](/adguard-for-android/features/settings#userscripts) e [AdGuard para Mac](/adguard-for-mac/features/extensions).
+O AdGuard pode ampliar significativamente a funcionalidade de sites, agindo como um gerenciador de userscripts. Você pode adicionar seus scripts personalizados ou gerenciar os existentes em nossos três produtos: [AdGuard para Windows](/adguard-for-windows/protection/extensions), [AdGuard para Android](/adguard-for-android/features/settings#userscripts) e [AdGuard para Mac](/adguard-for-mac/features/extensions).
 
 :::
 
@@ -61,7 +61,7 @@ SponsorBlock skips sponsored segments in YouTube videos. It saves time by jumpin
 
 :::info
 
-This userscript runs exclusively on our desktop applications, AdGuard for Windows and AdGuard for Mac.
+Este script de usuário funciona exclusivamente em nossos aplicativos para desktop, AdGuard para Windows e AdGuard para Mac.
 
 :::
 
@@ -427,7 +427,7 @@ Currently, two AdGuard apps allow you to create and manage userstyles: AdGuard f
 
 :::
 
-This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at <support@adguard.com>.
+This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at [support@adguard.com](mailto:support@adguard.com).
 
 ### How to set up a userstyle in AdGuard
 

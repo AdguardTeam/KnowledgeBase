@@ -21,19 +21,19 @@ Eski beta uzantısı [**AdGuard Reklam Engelleyici MV2**](https://chromewebstore
 
 - **Filtreleme günlüğü**
 
-  ![Filtreleme günlüğü \*border](https://cdn.adtidy.org/content/blog/mv3/new/log.png)
+  ![Filtering log \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/filtering_log.png)
 
   Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. Kesin bilgi için, uzantının "Paketlenmemiş öğe" hâlini tarayıcınıza kendiniz yüklemeniz gerekir. Bunu nasıl yapacağınıza dair ayrıntılı talimatları [ayrı bir makalede]](/adguard-browser-extension/solving-problems/debug-rules/) bulabilirsiniz.
 
 - _İzleme koruması_ (eski adıyla _Gizlilik modu_)
 
-  ![İzleme koruması \*border](https://cdn.adtidy.org/content/blog/mv3/new/tracking_screen.png)
+  ![Tracking protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
 
   There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
 
 - _Phishing & malware protection_ is no longer available in the general settings. Kendinizi kötü amaçlı sitelerden ve dolandırıcılıklardan korumak için _Filtreler_ sekmesinde uygun _Güvenlik_ filtrelerini etkinleştirin.
 
-  ![Güvenlik \*border](https://cdn.adtidy.org/content/blog/mv3/new/security.png)
+  ![Security \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/security_filters.png)
 
 ## Limitations
 
@@ -104,5 +104,5 @@ More details about the limitations can be found on [GitHub][github-declarative-c
 Değiştiriciler hakkında daha fazla bilgi için lütfen [Bilgi tabanımıza](/general/ad-filtering/create-own-filters) bakın.
 
 [DNR format]: https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest#build-rules
-[github-declarative-converter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#table-of-contents
-[github-declarative-converter-examples]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter/src/rules/declarative-converter#basic-examples
+[github-declarative-converter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/dnr-converter/src/examples/README.md#table-of-contents
+[github-declarative-converter-examples]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/dnr-converter/src/examples/README.md#basic-examples

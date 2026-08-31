@@ -23,7 +23,7 @@ Per poter gestire le impostazioni DNS, le app di AdGuard richiedono di creare un
 
 Questa sezione contiene due opzioni: AdGuard e Implementazione Nativa. Fondamentalmente, questi sono i due metodi di configurazione del DNS.
 
-In Implementazione Nativa, il DNS è gestito dal sistema e non dall'app. Ciò significa che AdGuard non necessita di creare una VPN locale. Purtroppo, questo non ti aiuterà ad aggirare le limitazioni di sistema e a utilizzare AdGuard insieme ad altre applicazioni basate sulla VPN; se una VPN è abilitata, il DNS nativo sarà ignorato. Di conseguenza, non sarai in grado di filtrare il traffico localmente o di utilizzare il nostro nuovissimo [protocollo DNS-over-QUIC (DoQ)](https://adguard.com/en/blog/dns-over-quic.html).
+In Implementazione Nativa, il DNS è gestito dal sistema e non dall'app. Ciò significa che AdGuard non necessita di creare una VPN locale. Purtroppo, questo non ti aiuterà ad aggirare le limitazioni di sistema e a utilizzare AdGuard insieme ad altre applicazioni basate sulla VPN; se una VPN è abilitata, il DNS nativo sarà ignorato. Di conseguenza, non sarai in grado di filtrare il traffico localmente o di utilizzare il nostro nuovissimo [protocollo DNS-over-QUIC (DoQ)](https://adguard-dns.io/blog/dns-over-quic.html).
 
 ### Server DNS {#dns-servers}
 
@@ -67,7 +67,7 @@ _Protezione_ (l'icona dello scudo nella barra inferiore dei menu) → _Protezion
 
 #### Filtri DNS {#dns-filters}
 
-Simili ai filtri che funzionano in Safari, i filtri DNS sono insiemi di regole scritte secondo una [sintassi speciale](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard monitorerà il tuo traffico DNS e bloccherà le richieste corrispondenti a una o più regole. Puoi utilizzare filtri come il [Filtro DNS AdGuard](https://github.com/AdguardTeam/AdguardSDNSFilter) o aggiungere file host come filtri. Possono essere aggiunti più filtri simultaneamente. Per sapere come farlo, familiarizzati con [questo manuale esaustivo](adguard-for-ios/solving-problems/system-wide-filtering).
+Simili ai filtri che funzionano in Safari, i filtri DNS sono insiemi di regole scritte secondo una [sintassi speciale](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard monitorerà il tuo traffico DNS e bloccherà le richieste corrispondenti a una o più regole. Puoi utilizzare filtri come il [Filtro DNS AdGuard](https://github.com/AdguardTeam/AdguardSDNSFilter) o aggiungere file host come filtri. Possono essere aggiunti più filtri simultaneamente. Per sapere come farlo, familiarizzati con [questo manuale esaustivo](/adguard-for-ios/solving-problems/system-wide-filtering).
 
 #### Lista consentita e Lista bloccata {#allowlist-blocklist}
 

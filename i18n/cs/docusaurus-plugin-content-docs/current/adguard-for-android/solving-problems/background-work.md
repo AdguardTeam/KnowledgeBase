@@ -467,9 +467,11 @@ Další řešení:
 
 ## OnePlus
 
+### OxygenOS
+
 Nejproblematičtější jsou zařízení s operačním systémem OxygenOS, který se vyznačuje čištěním mezipaměti a paměti RAM včetně optimalizace operačního systému. Kromě toho může OxygenOS přerušit práci AdGuardu, pokud ho delší dobu nepoužíváte. Chcete-li se těmto nežádoucím následkům vyhnout, postupujte podle následujících pokynů.
 
-### Uzamčení aplikace
+#### Uzamčení aplikace
 
 - Přejděte na **Nastavení**
 
@@ -495,17 +497,17 @@ Na některých telefonech OnePlus existuje také funkce nazvaná Automatické sp
 
 :::
 
-### Optimalizace baterie
+#### Optimalizace baterie
 
 - Otevřete nastavení zařízení → **Baterie** → **Optimalizace baterie** → přepněte na **Všechny aplikace** seznam (menu nahoře) → vyberte AdGuard → a aktivujte **Neoptimalizovat**
 
 - Otevřete nastavení zařízení → **Baterie** → **Optimalizace baterie** → (⁝) nabídka se třemi tečkami → **Pokročilá optimalizace** → Zakázat hloubkovou optimalizaci
 
-### Automatické spouštění aplikací
+#### Automatické spouštění aplikací
 
 Funkce automatického spouštění aplikací (v některých OnePlus telefonech) v podstatě zabraňuje práci aplikací na pozadí. Deaktivujte ji pro AdGuard.
 
-### Vylepšená / pokročilá optimalizace
+#### Vylepšená / pokročilá optimalizace
 
 Pro OnePlus 6 a novější:
 
@@ -517,11 +519,32 @@ Pro OnePlus 6 a starší:
 
 - Vypněte **Nastavení systému** → **Baterie** → **Optimalizace baterie** → (⁝) nabídka se třemi tečkami → **Vylepšená optimalizace**.
 
-### Chování při vymazávání nedávných aplikací
+#### Chování při čištění nedávných aplikací
 
 Za normálních okolností se aplikace po přejetí nezavře. U OnePlus to však může fungovat jinak. Vymazání nedávných aplikací může být nastaveno tak, že přejetím prstu nahoru po aplikaci ji zavřete. Návrat do “normálního“ režimu:
 
 Přejděte na **Nastavení** → **Pokročilé** → **Správa nedávných aplikací** → Přepněte na **Normální mazání**
+
+### ColorOS
+
+V zařízeních se systémem ColorOS může systém agresivně omezovat procesy na pozadí. Aby AdGuard správně fungoval na pozadí, proveďte následující nastavení:
+
+- Otevřete **Nastavení** → **Baterie → Režim baterie** a vyberte **Režim vysokého výkonu**
+
+![High performance mode *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/high_performance_mode.jpg)
+
+- Přejděte na **Aplikace → Správa aplikací → AdGuard → Využití baterie** a vyberte **Povolit aktivitu na pozadí**
+
+![Allow background activity *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/allow_background_activity.jpg)
+
+- Přejděte na **Aplikace → Automatické spouštění** a přepněte AdGuard
+
+![Auto launch *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/auto_launch.jpg)
+
+- Chcete-li uzamknout AdGuard v menu **Nedávné aplikace**:
+
+    - Otevřete **Nedávné aplikace**
+    - Přejeďte dolů přes kartu aplikace AdGuard a uzamkněte ji v paměti
 
 ## Sony
 

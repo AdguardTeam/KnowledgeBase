@@ -5,32 +5,32 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard Content Blocker, which only safeguards the Samsung Internet browser and the Yandex Browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard Content Blocker, som kun beskytter hhv. Samsung Internet-webbrowseren og Yandex Browser. For at beskytte hele enheden, [download AdGuard appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-The application is available in five stores: [Google Play](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker), [Samsung Galaxy store](https://galaxystore.samsung.com/detail/com.adguard.android.contentblocker), [Huawei AppGallery](https://appgallery.huawei.com/#/app/C100440597), [Aptoide](https://adguard-content-blocker.en.aptoide.com/), and [F-Droid](https://f-droid.org/en/packages/com.adguard.android.contentblocker/).
+Appen er tilgængelig i fem butikker: [Google Play](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker), [Samsung Galaxy-butik](https://galaxystore.samsung.com/detail/com.adguard.android.contentblocker), [Huawei AppGallery](https://appgallery.huawei.com/#/app/C100440597), [Aptoide](https://adguard-content-blocker.en.aptoide.com/) samt [F-Droid](https://f-droid.org/en/packages/com.adguard.android.contentblocker/).
 
-To install AdGuard Content Blocker from Google Play, search *AdGuard Content Blocker* and tap *Install*.
+For at installere AdGuard Content Blocker fra Google Play, søg på *AdGuard Content Blocker* og tryk på *Installér*.
 
-![Content Blocker on Google Play *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market.jpg)
+![Content Blocker på Google Play *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market.jpg)
 
 :::note
 
-AdGuard Content Blocker works in two browsers: [Yandex Browser](https://browser.yandex.com/) and [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
+AdGuard Content Blocker fungerer i to webbrowsere: [Yandex Browser](https://browser.yandex.com/) og [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
 
 :::
 
-After the installation is completed, tap *Open* to run the app.
+Efter udført installation, tryk på *Åbn* for at køre appen.
 
-![Content Blocker installed *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market_installed.jpg)
+![Content Blocker installeret *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market_installed.jpg)
 
-If you have a supported browser installed on your device, the app will ask you to enable AdGuard.
+Er en understøttet webbrowser installeret på enheden, vil appen bede om, at AdGuard aktiveres.
 
-![Onboarding: user has a supported browser *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding2.jpg)
+![Onboarding: Bruger har en understøttet webbrowser *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding2.jpg)
 
-If you don't have a supported browser, you will be prompted to choose and install one.
+Findes ingen understøttet webbrowser, bedes brugeren vælge og installere én.
 
-![Onboarding: no supported browser *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding3.jpg)
+![Onboarding: Ingen understøttet webbrowser *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding3.jpg)
 
-After the browser is installed, you can start AdGuard Content Blocker to block ads and trackers in it.
+Når webbrowseren er installeret, kan AdGuard Content Blocker startes, så den kan blokere annoncer og trackere.

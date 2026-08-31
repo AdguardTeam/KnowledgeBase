@@ -3,32 +3,22 @@ title: Funkce
 sidebar_position: 1
 ---
 
-## Obecné
+- [Obecné](/archive/adguard-for-safari/features/general.md)
 
-Základní funkce, včetně oznámení, intervalů aktualizací a úrovně záznamů
+  Základní funkce, včetně oznámení, intervalů aktualizací a úrovně záznamů
 
-[Obecné](/adguard-for-safari/features/general.md)
+- [Filtry](/archive/adguard-for-safari/features/filters.md)
 
-## Filtry
+  Různé filtry umožňující přizpůsobit blokování reklam
 
-Různé filtry umožňující přizpůsobit blokování reklam
+- [Blokátory obsahu AdGuard](/archive/adguard-for-safari/features/content-blockers/content-blockers.md)
 
-[Filtry](/adguard-for-safari/features/filters.md)
+  Šest tematických blokátorů obsahu, které splňují omezení společnosti Apple
 
-## Blokátory obsahu
+- [Uživatelská pravidla](/archive/adguard-for-safari/features/rules.md)
 
-Šest tematických blokátorů obsahu, které splňují omezení společnosti Apple
+  Vlastní pravidla filtrování pro přsené doladění blokování reklam
 
-[Blokátory obsahu AdGuard](/adguard-for-safari/features/content-blockers/content-blockers.md)
+- [Informace](/archive/adguard-for-safari/features/about.md)
 
-## Uživatelská pravidla
-
-Vlastní pravidla filtrování pro přsené doladění blokování reklam
-
-[Uživatelská pravidla](/adguard-for-safari/features/rules.md)
-
-## Informace
-
-Sekce s odkazy na dokumenty o ochraně osobních údajů, repozitář GitHub a historie verzí
-
-[Informace](/adguard-for-safari/features/about.md)
+  Sekce s odkazy na dokumenty o ochraně osobních údajů, repozitář GitHub a historie verzí

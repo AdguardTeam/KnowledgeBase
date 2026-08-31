@@ -9,6 +9,6 @@ sidebar_position: 5
 
 :::note 请注意
 
-Safari 版 AdGuard 可从 [App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259) 免费下载。 要了解设置说明请参阅[知识库](/adguard-for-safari/installation/)。
+Safari 版 AdGuard 可从 [App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259) 免费下载。 要了解设置说明请参阅[知识库](/archive/adguard-for-safari/installation/)。
 
 :::

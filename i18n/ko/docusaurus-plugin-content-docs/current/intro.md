@@ -8,7 +8,7 @@ slug: /
 
 AdGuard는 15년 이상의 경험, 다양한 플랫폼을 위한 여러 제품, 3억 7,500만 명 이상 사용자의 설치를 자랑하는 광고 차단 소프트웨어 시장의 선두주자 중 하나입니다. 대부분이 브라우저 기반인 다른 광고 차단 솔루션과 달리 저희는 데스크탑과 모바일 모두의 주요 플랫폼에 대한 독립형 앱을 제공합니다. AdGuard 앱은 브라우저 확장 프로그램보다 더 강력하며 더 많은 것을 차단하고 더 효율적이게 작동합니다.
 
-- [Windows용 AdGuard](/adguard-for-windows/features/home-screen)
+- [Windows용 AdGuard](/adguard-for-windows/)
 - [Mac용 AdGuard](/adguard-for-mac/features/main)
 - [Android용 AdGuard](/adguard-for-android/features/protection/ad-blocking)
 - [iOS용 AdGuard](/adguard-for-ios/features/safari-protection)
@@ -16,7 +16,7 @@ AdGuard는 15년 이상의 경험, 다양한 플랫폼을 위한 여러 제품, 
 또한 저희는 모든 인기 브라우저들을 위한 무료 브라우저 확장 프로그램도 개발 및 유지 관리 중입니다.
 
 - [AdGuard 확장 프로그램](/adguard-browser-extension/availability)
-- [Safari용 AdGuard](/adguard-for-safari/features/general)
+- [Safari용 AdGuard](/archive/adguard-for-safari/features/general)
 
 ## 광고 차단뿐이 아닙니다
 

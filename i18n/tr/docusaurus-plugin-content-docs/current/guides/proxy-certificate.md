@@ -23,7 +23,7 @@ Trafiğini filtrelemek istediğiniz cihazın işletim sistemine bağlı olarak, 
 
 1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
-1. AdGuard ile aynı bilgisayarda şu bağlantıyı izleyin: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. On the same computer with AdGuard, follow this link: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. **İndir** düğmesine tıklayın. İndirme işlemi başlamazsa, Firefox gibi başka bir tarayıcı deneyin.
 
@@ -65,7 +65,7 @@ Trafiğini filtrelemek istediğiniz cihazın işletim sistemine bağlı olarak, 
 
 1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
-1. Web tarayıcısı kullanarak bu bağlantıyı izleyin: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. Follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. **İndir** düğmesine tıklayın. İndirme işlemi başlamazsa, Firefox gibi başka bir tarayıcı deneyin.
 
@@ -97,7 +97,7 @@ Trafiğini filtrelemek istediğiniz cihazın işletim sistemine bağlı olarak, 
 
 1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
-1. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. **İndir** düğmesine tıklayın. İndirme işlemi başlamazsa, Firefox gibi başka bir tarayıcı deneyin.
 
@@ -117,7 +117,7 @@ Trafiğini filtrelemek istediğiniz cihazın işletim sistemine bağlı olarak, 
 
 1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. On a Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
-1. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [https://local.adguard.org/cert](https://local.adguard.org/cert).
 
 1. **İndir** düğmesine tıklayın. İndirme işlemi başlamazsa, Firefox gibi başka bir tarayıcı deneyin.
 
