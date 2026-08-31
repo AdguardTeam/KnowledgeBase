@@ -5,7 +5,7 @@ sidebar_position: 3
 
 This section lets you manage how AdGuard filters your Internet traffic and provides additional tools to control network-related features.
 
-![Network settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
+![Network settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
 
 ## Use AdGuard as an HTTP proxy
 
@@ -33,7 +33,7 @@ With this option, you can:
 
 Here you can choose which proxy AdGuard should use to download filter updates or new app versions — the system proxy, a custom proxy, or no proxy at all.
 
-![Proxy settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
+![Proxy settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
 
 ## Use SockFilter driver
 

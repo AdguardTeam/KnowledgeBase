@@ -5,7 +5,7 @@ sidebar_position: 6
 
 There are several websites that children shouldn’t be able to access. *Parental control* helps you solve this problem.
 
-![Parental control](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/parental.png)
+![Parental control *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/parental.png)
 
 When *Parental control* is enabled, AdGuard scans the content of webpages and blocks those that may be harmful or inappropriate for children. This includes adult images and text, crude language, violence, and drug-related content.
 

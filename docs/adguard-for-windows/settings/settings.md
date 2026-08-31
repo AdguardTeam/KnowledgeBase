@@ -5,7 +5,7 @@ sidebar_position: 1
 
 There are other useful AdGuard options that shouldn’t go unnoticed in this article, since they add much to user experience.
 
-![Settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/setting.png)
+![Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/setting.png)
 
 ## [App settings](/adguard-for-windows/settings/app-settings)
 
