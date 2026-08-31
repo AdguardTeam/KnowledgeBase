@@ -186,7 +186,7 @@ When you click on *Protect against DPI*, a separate screen opens with three grou
 
 When using a fixed-position strategy, set the *Split byte position* (1–1500) to specify where the split occurs.
 
-**HTTP request fragmentation** — splits HTTP requests into multiple TCP packets to bypass DPI systems that rely on inspecting complete HTTP requests.
+**HTTP request split** — splits HTTP requests into multiple TCP packets to bypass DPI systems that rely on inspecting complete HTTP requests.
 
 **HTTP space juggling** — manipulates whitespace in HTTP requests to confuse DPI systems that parse HTTP headers, making it harder for them to identify and block specific traffic.
 

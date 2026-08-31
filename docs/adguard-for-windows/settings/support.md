@@ -3,7 +3,7 @@ title: Support
 sidebar_position: 3
 ---
 
-![Support*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/support_main_screen.png)
+![Support *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/support_main_screen.png)
 
 Use this section if you have any questions or suggestions about AdGuard for Windows. We recommend checking the [FAQ](https://adguard.com/support/faq.html) and this Knowledge base before contacting support.
 
