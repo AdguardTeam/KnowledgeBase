@@ -33,7 +33,7 @@ Go to AdGuard settings → *Support* → *Logs*, and in the *Logging level* drop
 
 Right-click the AdGuard icon in the system tray, select *Advanced* → *Logging level*, and choose *Debug*.
 
-![Logging level in tray menu *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/solving-problems/tray_menu_debug.png)
+![Logging level in tray menu *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/solving_problems/tray_menu_debug.png)
 
 ## Debug logs {#debug-logs}
 
@@ -47,11 +47,11 @@ For most issues, debug logs give the support team enough information to identify
 
     Once the export is complete, you’ll see a confirmation message. You can click *Show in folder* to open the folder where the exported archive with logs and system information was saved.
 
-:::note
+    :::note
 
-Set the logging level back to *Default* after exporting the logs. The *Debug* level slows down the application.
+    Set the logging level back to *Default* after exporting the logs. The *Debug* level slows down the application.
 
-:::
+    :::
 
 1. Send the archive to **support@adguard.com**, describe the problem, and mention the time you reproduced the issue.
 
@@ -61,7 +61,7 @@ Sometimes the support team may ask you for *trace* logs. Trace logging captures 
 
 1. Exit AdGuard by right-clicking the AdGuard icon in the tray menu and choosing *Exit AdGuard*.
 
-    ![Exit AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/solving-problems/exit_adguard.png)
+    ![Exit AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/solving_problems/exit_adguard.png)
 
     If prompted to keep the service running in the background, make sure to stop it — the service must not be running when you start AdGuard with trace logging.
 
@@ -94,7 +94,7 @@ The diagnostic report includes:
 
 To use this option, check the *Add diagnostic report* checkbox before sending your message.
 
-![Diagnostic report option *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/solving-problems/add_report.png)
+![Diagnostic report option *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/solving_problems/add_report.png)
 
 :::note
 
