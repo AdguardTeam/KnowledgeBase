@@ -45,7 +45,7 @@ For most issues, debug logs give the support team enough information to identify
 
 1. Go to AdGuard settings → *Support* → *Logs*, and click *Export logs and system info*.
 
-    Once the export is complete, you’ll see a confirmation message. You can click *Show in folder* to open the folder where the archive was saved.
+    Once the export is complete, you’ll see a confirmation message. You can click *Show in folder* to open the folder where the exported archive with logs and system information was saved.
 
 :::note
 
