@@ -141,7 +141,7 @@ Disables data collection about Windows component problems.
 
 Referer is an HTTP header included in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referer saves the URL of the initial page. The server that hosts the destination web page often has software that parses Referer and extracts various pieces of information from it.
 
-Enabling the *Hide Referer from third-parties* option prevents third-party websites from seeing this information by altering or removing the header.
+Enabling the *Hide Referer from third parties* option prevents third-party websites from seeing this information by altering or removing the header.
 
 You can also enter a custom value in the *Custom Referer* field. To use default Referer, leave the field blank.
 
