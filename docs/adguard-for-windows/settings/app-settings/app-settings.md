@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Here you can adjust the main app settings: choose between light and dark themes, set the app language, enable AdGuard to launch at system startup, and allow silent automatic updates. It’s also possible to select the update channel and specify how often AdGuard checks for filter updates.
 
-You can also send anonymized app usage data to help us improve the product, and opt in to automatically send crash reports if the app unexpectedly closes.
+You can opt in to send us two types of data: anonymized app usage data to help us improve the product and crash reports if the app unexpectedly closes.
 
 In [*Filter editor*](/adguard-for-windows/settings/app-settings/filter-editor.md), you can add your own filtering rules or import ready-to-use filters.
 
