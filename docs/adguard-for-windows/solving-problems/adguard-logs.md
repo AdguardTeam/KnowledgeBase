@@ -17,7 +17,7 @@ Data and files provided in logs are processed in accordance with the [AdGuard Pr
 
 To diagnose problems you may encounter while using AdGuard, our support team may need AdGuard log files. These files record errors and other events that occur in the application. This article explains how to change the logging level, collect the logs, and send them to support.
 
-AdGuard for Windows offers two logging levels: *Default* and *Debug*. For most troubleshooting, *Debug* is sufficient.
+AdGuard for Windows offers two logging levels: *Default* and *Debug*. For most troubleshooting, *Debug* is sufficient, but it may slow down the app.
 
 ## How to change the logging level {#change-level}
 
