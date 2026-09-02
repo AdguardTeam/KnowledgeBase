@@ -38,8 +38,7 @@ AdGuard for Windows runs two processes: `Adguard.exe` and `AdguardSvc.exe`. Youâ
 
 ![Two processes *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/two_processes_en.png)
 
-Since dump files can be large, please compress them into an archive before sending them to support. Also, include the AdGuard logs to help us diagnose the issue more effectively.
-[Instructions for collecting logs](/archive/adguard-for-windows/solving-problems/adguard-logs).
+Since dump files can be large, please compress them into an archive before sending them to support. Also, include the AdGuard logs to help us diagnose the issue more effectively. See [Instructions for collecting logs](/adguard-for-windows/solving-problems/adguard-logs).
 
 ## Collecting `wfpdiag.cab` file
 
@@ -62,3 +61,5 @@ Our support team may request a wfpdiag.cab file, along with a minidump file, to 
 1. Visit any website to route traffic through AdGuard and log the filtering process
 
 1. To stop logging, enter `netsh wfp capture stop`
+
+1. Compress the `wfpdiag.cab` file and send it to our support team at **support@adguard.com**.

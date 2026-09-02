@@ -3,7 +3,7 @@ title: License
 sidebar_position: 2
 ---
 
-![License](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/licenses.png)
+![License *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/licenses.png)
 
 The *License* tab provides details about your current license. Here you can:
 

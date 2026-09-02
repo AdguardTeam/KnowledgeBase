@@ -5,7 +5,7 @@ sidebar_position: 1
 
 The *Ad blocking* section is responsible for removing ads from the websites you visit and from the apps installed on your device. To filter banners, popups, trackers, and other intrusive elements, AdGuard relies on filters — sets of rules written in a [special syntax](/general/ad-filtering/create-own-filters). If you’d like to learn more about how they work, read our [article about filters](/general/ad-filtering/how-ad-blocking-works).
 
-![Ad blocking](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/ad_blocking.png)
+![Ad blocking *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/ad_blocking.png)
 
 Here you can:
 
