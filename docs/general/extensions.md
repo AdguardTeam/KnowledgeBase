@@ -103,7 +103,6 @@ Here we will describe some of the most popular userscript catalogs.
 
 [Crackle](https://github.com/FilteringDev/crackle/) is an open-source userscript designed to remove ads and bypass anti-adblock measures on the Chzzk web platform. It detects and replaces ad-related responses used by Chzzk’s advertising systems with compatible ad-free responses and disables pre-roll and mid-roll video ads.
 
-
 #### Community
 
 If you like the idea of customizing your browser with userscripts and have questions, you can ask them on one of these websites:
