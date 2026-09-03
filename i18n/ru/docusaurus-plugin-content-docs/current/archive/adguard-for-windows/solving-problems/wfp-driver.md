@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
@@ -13,8 +13,8 @@ sidebar_position: 1
 
 Если вы столкнулись с проблемой, которая предположительно была связана с совместимостью, вы всегда можете перейти на более старый, но более стабильный сетевой драйвер TDI. Для этого:
 
-1. Перейдите в *Настройки → Сеть*.
+1. Go to _Settings → Network_.
 
 2. Отключите драйвер WFP, как показано ниже:
 
-![WFP driver *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)
+![WFP driver \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)

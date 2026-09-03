@@ -21,7 +21,7 @@ Bei der Verwendung von AdGuard können gelegentlich „Blue Screen of Death“-F
 
 Um Minidump-Dateien sammeln zu können, werden Administratorrechte auf Ihrem Computer benötigt. Windows speichert diese Dateien standardmäßig im Ordner `C:\Windows\Minidump\`. Die Dateien, nach denen Sie suchen, tragen entweder den Namen `MEMORY.DMP` oder folgen dem Muster `Mini(ddmmmyy-xxx).dmp`, wobei die Buchstaben und Zahlen für das Datum und die laufende Nummer stehen.
 
-![Minidump-Datei](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/minidump.png)
+![Minidump file \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/minidump.png)
 
 Wenn Sie diese Dateien nicht finden können, ist Ihr System möglicherweise nicht für das automatische Erstellen von Minidumps konfiguriert.
 

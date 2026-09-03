@@ -3,15 +3,9 @@ title: Ochrana před sledováním
 sidebar_position: 2
 ---
 
-:::info
-
-Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Jedná se o beta verzi, která je stále ve vývoji. Chcete-li vyzkoušet, stáhněte si [beta verzi AdGuard pro Windows](https://agrd.io/windows_beta).
-
-:::
-
 Mnoho webových stránek shromažďuje údaje o svých návštěvnících, včetně IP adres, informací o prohlížeči a operačním systému, rozlišení obrazovky a dokonce i stránky, ze které jste přišli. Soubory cookies mohou být použity k identifikaci vašeho prohlížeče, zapamatování vašich preferencí nebo k rozpoznání vás při vašem návratu. Ochrana před sledováním zabraňuje takovým systémům ve sběru vašich osobních údajů. Další informace naleznete v našem [článku o Ochraně před sledováním v AdGuardu](https://adguard.com/kb/general/stealth-mode/)
 
-![Tracking protection](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
+![Tracking protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
 
 Pokud nechcete trávit čas ručním nastavováním filtrů, můžete si jednoduše vybrat jednu z přednastavených úrovní ochrany:
 
@@ -33,7 +27,7 @@ Pro maximální flexibilitu vyberte možnost _Vlastní_ a vše nastavte ručně.
 
 ## Obecná nastavení
 
-![General settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general.png)
+![General settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general_settings.png)
 
 ### Blokovat slídiče
 
@@ -47,13 +41,17 @@ Odstraňuje sledovací parametry, jako jsou `utm_*` a `fb_ref`, z URL adres str�
 
 Skryje vyhledávací fráze ze stránek navštívených skrze vyhledávače. Když jste přesměrováni na webovou stránku z vyhledávače Google, Yahoo nebo jiného vyhledávače, tato možnost skryje vyhledávací dotaz, který jste použili k nalezení dané webové stránky.
 
-### Požádat webové stránky, aby vás nesledovaly
+### Požádat webové stránky, aby mě nesledovaly
 
 Odešle webovým stránkám, které jste navštívili signály [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track).
 
+### Další filtry soukromí
+
+Applies a set of additional privacy protection filters. The number next to _Enabled in Filters_ shows how many filters are currently active.
+
 ## Metody sledování
 
-![Tracking methods](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_tracking_methods.png)
+![Tracking methods \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_tracking_methods.png)
 
 ### Smazat cookies třetích stran
 
@@ -63,7 +61,7 @@ Cookies třetích stran fungují stejně, ale vytvářejí je domény jiné než
 
 Pomocí této možnosti můžete nastavit časový limit (v minutách), po jehož uplynutí budou všechny soubory cookies třetích stran smazány. Pokud nastavíte časovač na 0, takové cookies budou zcela zablokovány.
 
-![Time-to-live](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/delete_third_party.png)
+![Time-to-live \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/delete_third_party.png)
 
 :::caution
 
@@ -95,13 +93,13 @@ Hodnota autorizační hlavičky je uložena v mezipaměti prohlížeče a automa
 
 ## API prohlížeče
 
-![Browser API](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_browser_api.png)
+![Browser API \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_browser_api.png)
 
-### Blokovat WebRTC
+### Prevent IP address leaks through WebRTC
 
-Blokuje WebRTC, známou zranitelnost, která může prozradit vaši skutečnou IP adresu, i když používáte proxy server nebo VPN.
+Makes WebRTC use a stricter IP address policy to prevent your real IP address from being exposed, even if you use a proxy or VPN.
 
-WebRTC (Web Real-Time Communication) je technologie, která umožňuje přímé streamování dat mezi prohlížeči a aplikacemi. Umožňuje jiným uživatelům zjistit vaši skutečnou IP adresu, i když používáte proxy nebo VPN. Povolení této možnosti může narušit práci některých aplikací prohlížeče, například messengerů, chatů, kin nebo her.
+WebRTC (Web Real-Time Communication) je technologie, která umožňuje přímé streamování dat mezi prohlížeči a aplikacemi. By default, it can reveal your true IP address even when a proxy or VPN is active. This option enforces a stricter IP address policy instead of blocking WebRTC entirely, so browser applications such as messengers, chats, and games are less likely to be affected.
 
 ### Blokovat Push API
 
@@ -111,17 +109,17 @@ Push API umožňuje serverům odesílat zprávy do webových aplikací bez ohled
 
 Pokud je tato možnost zapnutá, prohlížeč už nebude posílat GPS data na weby. Tím se zabrání tomu, aby zjistili vaši polohu, změnili výsledky vyhledávání nebo přizpůsobili obsah na základě toho, kde se nacházíte.
 
-### Blokovat Flash
-
-Plugin Flash Player je zastaralý a velmi náchylný k virům a zneužití. Může také zpomalit načítání webových stránek. Povolení této možnosti zabrání prohlížečům detekovat komponenty Flash (například pluginy nebo objekty ActiveXObject), což účinně deaktivuje podporu Flash.
-
 ## Sledování systému Windows
 
-![Windows tracking](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_windows_tracking.png)
+![Windows tracking \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_windows_tracking.png)
 
 ### Zakázat telemetrii systému Windows
 
 Zakáže odesílání technických údajů o používání systému a aplikací.
+
+### Zakázat Windows Recall
+
+Disables the Windows Recall feature, which periodically takes snapshots of your screen and stores them locally. This prevents sensitive information visible on your screen from being captured and saved.
 
 ### Vypnout reklamní ID
 
@@ -133,17 +131,17 @@ Blokuje automatické hlášení a odběr vzorků podezřelého malwaru.
 
 ### Zakázat službu směrování zpráv WAP Push
 
-Zakáže sběr dat o problémech s komponentami systému Windows
+Disables data collection about Windows component problems.
 
 ## Různé
 
-![Miscellaneous](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_misc.png)
+![Miscellaneous \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_miscellaneous.png)
 
 ### Skrýt třetím stranám referenční ID
 
 Referenční ID je hlavička HTTP používaná v požadavcích prohlížeče na server. Obsahuje adresu URL zdroje požadavku. Při přechodu z jedné stránky na druhou uloží referenční ID adresu URL původní stránky. Na serveru, který je hostitelem cílové webové stránky, je často instalován software, který analyzuje referenční ID a získává z něj různé informace.
 
-Povolení možnosti _Skrýt třetím stranám referenční ID_ zabrání webovým stránkám třetích stran v zobrazení těchto informací změnou nebo odstraněním záhlaví.
+Enabling the _Hide Referer from third parties_ option prevents third-party websites from seeing this information by altering or removing the header.
 
 Můžete také zadat vlastní hodnotu do pole _Vlastní Referer_. Chcete-li použít výchozí referenční ID, ponechte pole prázdné.
 
@@ -157,7 +155,7 @@ Když navštívíte webovou stránku, váš prohlížeč odešle jako součást 
 
 Povolením této možnosti AdGuard odstraní identifikační informace z User-Agent, aby je inzerenti a slídiče nemohli použít k vytvoření vašeho profilu. Pokud chcete, můžete zadat vlastní hodnotu do pole _Vlastní User-Agent_. Chcete-li zachovat výchozí hodnotu, jednoduše ponechte pole prázdné.
 
-### Maskovat adresu IP
+### Maskovat IP adresu
 
 AdGuard nemůže zcela skrýt vaši skutečnou IP adresu, ale může ji nahradit jinou, aby webové stránky interpretovaly vaše připojení jako připojení přes proxy server. V některých případech to pomáhá skrýt vaši skutečnou IP adresu.
 
@@ -169,16 +167,29 @@ Zabraňuje prohlížeči Google Chrome odesílat informace o své verzi a úprav
 
 ### Ochrana proti DPI
 
-Deep Packet Inspection je systém hloubkové analýzy a filtrování provozu podle obsahu paketů a shromažďování statistických údajů. Pomocí této technologie mají poskytovatelé internetových služeb možnost kontrolovat procházející provoz a omezovat přístup k obsahu pro své klienty.
+![Protect against DPI \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/protect_against_dpi.png)
 
-Deep Packet Inspection (DPI) je technologie používaná některými poskytovateli internetových služeb k analýze a filtrování provozu na základě obsahu paketů. Umožňuje jim monitorovat připojení, omezovat přístup k určitým zdrojům a shromažďovat statistické údaje o uživatelích.
+Deep Packet Inspection (DPI) is a technology that allows ISPs to analyze and filter traffic based on packet content. With this option enabled, AdGuard modifies outgoing packet data to make it harder for DPI systems to identify and analyze your traffic, helping protect your connection privacy.
 
-Když je tato možnost zapnutá, AdGuard upraví odchozí data paketů tak, aby už nesplňovala kritéria blokování DPI. To vám pomůže obejít omezení a získat přístup k obsahu, který potřebujete. Ne všechny systémy DPI však lze zatím obejít — stále probíhají vylepšení.
+When you click on _Protect against DPI_, a separate screen opens with three groups of settings:
 
-Funkce _Ochrana před DPI_ je již implementována v AdGuardu pro Windows, AdGuardu pro Mac a AdGuardu pro Android.
+**ClientHello split** — modifies the TLS ClientHello message to make it harder for DPI systems to detect and block encrypted connections. The following strategies are available:
+
+- _Split TCP packet at fixed position_ — splits the ClientHello TCP packet at a specified byte position.
+- _Split TLS record at fixed position_ — splits the TLS record containing the ClientHello at a specified byte position.
+- _Split TLS before SNI_ — splits the ClientHello before the Server Name Indication field.
+- _Split TLS after SNI_ — splits the ClientHello after the Server Name Indication field.
+- _Split TLS in the middle of SNI_ — splits the ClientHello in the middle of the Server Name Indication field.
+- _Split TLS randomly within SNI_ — splits the ClientHello at a random position within the Server Name Indication field.
+
+When using a fixed-position strategy, set the _Split byte position_ (1–1500) to specify where the split occurs.
+
+**HTTP request split** — splits HTTP requests into multiple TCP packets to bypass DPI systems that rely on inspecting complete HTTP requests.
+
+**HTTP space juggling** — manipulates whitespace in HTTP requests to confuse DPI systems that parse HTTP headers, making it harder for them to identify and block specific traffic.
 
 :::caution
 
-Pokud je tato funkce v AdGuardu pro Windows povolena, může docházet k interferenci s antivirem ESET. V takovém případě nebude ESET schopen filtrovat provoz, takže některé škodlivé nebo blokované webové stránky zůstanou přístupné.
+This feature can break access to some unencrypted websites. If this feature is enabled in AdGuard for Windows, it may also interfere with the ESET antivirus — ESET will not be able to filter traffic, leaving some malicious or blocked websites accessible.
 
 :::

@@ -11,7 +11,7 @@ sidebar_position: 1
 
 - [保护](/adguard-for-android/features/protection/protection.md)
 
-  Available settings in the _Protection_ tab: _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Firewall_, and _Browsing security_
+  「保护」选项卡中的可用设置，包括广告拦截、跟踪保护、烦人元素拦截、DNS 保护、防火墙和浏览安全。
 
 - [应用管理](/adguard-for-android/features/app-management.md)
 
@@ -27,7 +27,7 @@ sidebar_position: 1
 
 - [低级设置指南](/adguard-for-android/features/low-level-settings.md)
 
-  Descriptions of the low-level settings available in AdGuard for Android v4.3 and later.
+  有关 Android 版 AdGuard v4.3 及更高版本中可用的低级设置描述。
 
 - [AdGuard 助手](/adguard-for-android/features/assistant.md)
 

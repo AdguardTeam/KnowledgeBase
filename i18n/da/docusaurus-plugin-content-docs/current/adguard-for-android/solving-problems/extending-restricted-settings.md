@@ -5,7 +5,7 @@ sidebar_position: 17
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -33,7 +33,7 @@ If you can't find it, first tap **See all apps** or **App info**.
 
 Follow the on-screen instructions.
 
-All done! Now the _Firewall_ and _Detect Samsung Pay_ features will work correctly.
+Færdig! Now the _Firewall_ and _Detect Samsung Pay_ features will work correctly.
 
 ![Restricted settings allowed for AdGuard \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted3.png)
 
@@ -57,4 +57,4 @@ For Samsung devices with OneUI 7.0, the app permission settings follow a differe
 
 ![Usage data access \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/usage_data.jpg)
 
-All done!
+Færdig!

@@ -3,15 +3,9 @@ title: Statistiche
 sidebar_position: 1
 ---
 
-:::info
-
-Questo articolo descrive AdGuard per Windows v8.0, un blocca-inserzioni completo che protegge il tuo dispositivo a livello di sistema. Questo è una versione beta ancora in fase di sviluppo. Per provarlo, scarica la [versione beta di AdGuard per Windows](https://agrd.io/windows_beta).
-
-:::
-
 Nelle _Statistiche_, vedi un quadro completo di ciò che accade al traffico del tuo computer: quante richieste sono inviate e a quali società, quanti dati sono caricati e scaricati, quali richieste sono bloccate. Puoi controllare le statistiche per vari intervalli di tempo: ogni momento, gli ultimi 14 giorni, gli ultimi 7 giorni, le ultime 24 ore, e suddivise per inserzioni, tracciatori o richieste.
 
-![Personalizza statistiche](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/statistics/stats.png)
+![Customize stats \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/statistics/stats.png)
 
 :::note
 

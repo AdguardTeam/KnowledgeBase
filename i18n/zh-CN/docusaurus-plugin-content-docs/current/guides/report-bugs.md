@@ -86,8 +86,8 @@ sidebar_position: 4
 
 ### AdGuard Safari版
 
-1. 请查看 [Safari 存储库](https://github.com/AdguardTeam/AdGuardForSafari/issues)以确保尚未报告该问题。
+1. Check out the [repo](https://github.com/AdguardTeam/AdguardMiniForMac/issues) to make sure the issue hasn’t been reported yet.
 
-2. 打开[创建新问题的页面](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose)并选择「*错误报告*」。
+2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardMiniForMac/issues/new/choose) and select *Bug report*.
 
 3. 填写表格。 如果可以，请插入屏幕截图或屏幕视频。

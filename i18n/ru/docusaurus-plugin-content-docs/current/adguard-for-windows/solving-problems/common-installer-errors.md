@@ -63,7 +63,7 @@ sidebar_position: 6
 
 - Выберите другую папку установки. Возможно, что у текущей папки есть ограничения доступа. Также удостоверьтесь, что не выбрали внешний или виртуальный жёсткий диск.
 
-- Удалите AdGuard с помощью нашего специального [инструмента удаления](/archive/adguard-for-windows/installation#advanced), а затем повторите установку.
+- Uninstall AdGuard using our special [uninstall tool](/archive/adguard-for-windows/installation#advanced) and then repeat the installation.
 
 - Запустите и пройдите перерегистрацию службы установщика Microsoft. На это потребуется некоторое время.
 
@@ -99,7 +99,7 @@ sidebar_position: 6
 
 - Проверьте, установлен ли AdGuard на вашем компьютере. Вы можете сделать это, нажав клавишу *Win* и введя ***AdGuard***.
 
-- Может быть, у вас остались файлы от предыдущей установки AdGuard. Удалите AdGuard с помощью нашего специального [инструмента удаления](/archive/adguard-for-windows/installation#advanced), а затем повторите установку.
+- Может быть, у вас остались файлы от предыдущей установки AdGuard. Uninstall AdGuard using our special [uninstall tool](/archive/adguard-for-windows/installation#advanced) and then repeat the installation.
 
 ### Другие ошибки {#other}
 

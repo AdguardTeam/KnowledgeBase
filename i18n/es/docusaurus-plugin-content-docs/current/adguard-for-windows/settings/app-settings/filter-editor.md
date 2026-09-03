@@ -3,13 +3,7 @@ title: Editor de filtros
 sidebar_position: 2
 ---
 
-:::info
-
-Este artículo describe AdGuard para Windows v8.0, un bloqueador de anuncios integral que protege su dispositivo a nivel del sistema. Esta es una versión beta que aún está en desarrollo. Para probarlo, descarga la [versión beta de AdGuard para Windows](https://agrd.io/windows_beta).
-
-:::
-
-![Editor de filtros](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/editor.png)
+![Filter editor \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/editor.png)
 
 El editor de filtros es una herramienta que permite visualizar y gestionar filtros a nivel de reglas individuales. Los filtros se combinan en categorías temáticas: _Bloqueo de anuncios_, _Privacidad_, _Filtros específicos del idioma_, _Personalizado_ y _Otros_.
 

@@ -3,7 +3,7 @@ title: AdGuard günlükleri nasıl toplanır
 sidebar_position: 3
 ---
 
-:::bilgi
+:::info
 
 Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
@@ -11,7 +11,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::note
 
-Günlüklerde sağlanan veriler ve/veya dosyalar [AdGuard Gizlilik Politikasına](https://adguard.com/en/privacy.html) uygun olarak işlenir.
+Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
 
 :::
 
@@ -19,54 +19,54 @@ Ortaya çıkabilecek farklı sorunları analiz etmek ve teşhis etmek için AdGu
 
 :::note
 
-AdGuard gizliliğinizi korumaya kararlıdır. [Gizlilik Politikamıza](https://adguard.com/privacy/windows.html) kesinlikle uyuyoruz ve kullanıcılar hakkında herhangi bir özel bilgi toplamıyoruz. Günlüklerinizi destek ekibine göndermeden önce, paylaşmak istemediğiniz ek bilgiler içerebileceğinden lütfen dosyayı inceleyin. Bu tür kişisel bilgiler içeriyorsa öncelikle onu silmenizi öneririz.
+AdGuard gizliliğinizi korumaya kararlıdır. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Günlüklerinizi destek ekibine göndermeden önce, paylaşmak istemediğiniz ek bilgiler içerebileceğinden lütfen dosyayı inceleyin. Bu tür kişisel bilgiler içeriyorsa öncelikle onu silmenizi öneririz.
 
 :::
 
-### Hata ayıklama günlükleri {#debug-logs}
+### Debug logs {#debug-logs}
 
-1. AdGuard ayarlarını açın. Go to the *General Settings* section, scroll down to the bottom of the screen, and switch the *Logging Level* to *Debug*.
+1. AdGuard ayarlarını açın. Go to the _General Settings_ section, scroll down to the bottom of the screen, and switch the _Logging Level_ to _Debug_.
 
-    ![Hata ayıklama günlük kayıt düzeyi *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
+   ![Debug logging level \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
-1. Sorunu yeniden oluşturun.
+2. Reproduce the issue.
 
-    Sorunu yeniden oluşturduğunuz tam zamanı not almanızı önemle tavsiye ederiz: bu, destek ekibimizin ilgili günlük girdilerini bulmasına ve sorunu daha hızlı çözmesine yardımcı olur.
+   Sorunu yeniden oluşturduğunuz tam zamanı not almanızı önemle tavsiye ederiz: bu, destek ekibimizin ilgili günlük girdilerini bulmasına ve sorunu daha hızlı çözmesine yardımcı olur.
 
-1. *Günlükleri dışa aktar* düğmesine kullanarak toplanan günlükleri dışa aktarın.
+3. Export the collected logs using the _Export Logs_ button.
 
-    ![Günlükleri dışa aktar *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+   ![Export logs \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-    Arşivi herhangi bir klasöre kaydedin.
+   Arşivi herhangi bir klasöre kaydedin.
 
-1. **Important**: after exporting the logs, set the logging level back to *Default*. *Hata ayıklama* günlük kayıt düzeyi uygulamayı yavaşlatır.
+4. **Important**: after exporting the logs, set the logging level back to _Default_. _Debug_ logging level will slow down the application.
 
-1. Arşivi **support@adguard.com** adresinden AdGuard destek servisine gönderin, sorunu açıklayın ve sorunu yeniden oluşturduğunuz zamanı belirtmeyi unutmayın.
+5. Send the archive to the AdGuard support service at **support@adguard.com**, describe the problem and don't forget to mention the time when you reproduced the issue.
 
-### İzleme günlükleri {#trace-logs}
+### Trace logs {#trace-logs}
 
-Sometimes support team members may ask you to send *trace* logs. Daha sonra aşağıdakileri yapmanız gerekir:
+Sometimes support team members may ask you to send _trace_ logs. Daha sonra aşağıdakileri yapmanız gerekir:
 
-1. Tepsi menüsündeki AdGuard simgesine sağ tıklayıp *AdGuard'dan çık* öğesini seçerek AdGuard'ı durdurun:
+1. Stop AdGuard by right-clicking the AdGuard icon in the tray menu and choosing _Exit AdGuard_:
 
-    ![AdGuard'dan çık *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
+   ![Exit AdGuard \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
 
-    Lütfen servisi çalışır durumda bırakmayın:
+   Lütfen servisi çalışır durumda bırakmayın:
 
-    ![AdGuard Hizmetini Durdur *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
+   ![Stop AdGuard Service \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
 
-1. Konsolu açın (başlat paneline `cmd` yazın).
+2. Open the console (type `cmd` in the start panel).
 
-1. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard for Windows v7.16 or later.
+3. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard for Windows v7.16 or later.
 
 Windows için AdGuard'ın eski bir sürümüne sahipseniz, 64 bit Windows kullanıyorsanız uygulamayı C:\"Program Files (x86)"\Adguard\Adguard.exe /trace ve 32 bit kullanıyorsanız C:\"Program Files"\Adguard\Adguard.exe /trace komutuyla çalıştırın.
 
-1. Sorunu yeniden oluşturun.
+1. Reproduce the issue.
 
-    Sorunu yeniden oluşturduğunuz tam zamanı not almanızı önemle tavsiye ederiz: bu, destek ekibimizin ilgili günlük girdilerini bulmasına ve sorunu daha hızlı çözmesine yardımcı olur.
+   Sorunu yeniden oluşturduğunuz tam zamanı not almanızı önemle tavsiye ederiz: bu, destek ekibimizin ilgili günlük girdilerini bulmasına ve sorunu daha hızlı çözmesine yardımcı olur.
 
-1. *Günlükleri dışa aktar* düğmesine kullanarak toplanan günlükleri dışa aktarın.
+2. Export the collected logs using the _Export Logs_ button.
 
-    ![Günlükleri dışa aktar *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+   ![Export logs \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-    Günlük dosyası büyükse endişelenmeyin. Sorununuzu çözebilmemiz için mümkün olduğunca fazla ayrıntı bilmemiz gerekiyor.
+   Günlük dosyası büyükse endişelenmeyin. Sorununuzu çözebilmemiz için mümkün olduğunca fazla ayrıntı bilmemiz gerekiyor.

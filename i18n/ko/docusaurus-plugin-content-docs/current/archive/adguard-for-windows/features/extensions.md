@@ -23,7 +23,7 @@ AdGuard와 함께 설치되는 확장 프로그램은 다음과 같습니다.
 
 **AdGuard 어시스턴트**
 
-AdGuard 어시스턴트는 브라우저에서 [새 어시스턴트](/archive/adguard-for-windows/browser-assistant.md)를 사용할 수 없는 경우 사용할 수 있는 이전 어시스턴트입니다. 이 확장 프로그램은 사용자가 앱 자체를 열지 않고도 브라우저에서 바로 기본 AdGuard 설정을 변경할 수 있도록 도와줍니다. AdGuard 어시스턴트는 모든 Microsoft Windows 호환 브라우저에서 작동합니다. 또한 사용자가 예외로 지정한 웹사이트와 잘못된 콘텐츠가 표시될 위험이 있는 특정 웹페이지에는 AdGuard 어시스턴트 아이콘이 표시되지 않습니다.
+AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](/archive/adguard-for-windows/browser-assistant.md) is not available for your browser. 이 확장 프로그램은 사용자가 앱 자체를 열지 않고도 브라우저에서 바로 기본 AdGuard 설정을 변경할 수 있도록 도와줍니다. AdGuard 어시스턴트는 모든 Microsoft Windows 호환 브라우저에서 작동합니다. 또한 사용자가 예외로 지정한 웹사이트와 잘못된 콘텐츠가 표시될 위험이 있는 특정 웹페이지에는 AdGuard 어시스턴트 아이콘이 표시되지 않습니다.
 
 **AdGuard Extra**
 

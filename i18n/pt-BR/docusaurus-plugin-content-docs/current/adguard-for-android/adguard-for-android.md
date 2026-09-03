@@ -11,7 +11,7 @@ Este artigo é sobre o AdGuard para Android, um bloqueador de anúncios multifun
 
 - [Recursos](/adguard-for-android/features/features.md)
 
-  Main features and settings available in AdGuard for Android
+  Principais recursos e configurações disponíveis no AdGuard para Android
 
 - [Instalação](/adguard-for-android/installation.md)
 

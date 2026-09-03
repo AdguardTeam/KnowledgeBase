@@ -3,15 +3,9 @@ title: Blokování reklam
 sidebar_position: 1
 ---
 
-:::info
-
-Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Jedná se o beta verzi, která je stále ve vývoji. Chcete-li vyzkoušet, stáhněte si [beta verzi AdGuard pro Windows](https://agrd.io/windows_beta).
-
-:::
-
 Sekce _Blokování reklam_ je zodpovědná za odstranění reklam z webových stránek, které navštěvujete, a z aplikací nainstalovaných ve vašem zařízení. K filtrování bannerů, vyskakovacích oken, slídičů a dalších rušivých prvků využívá AdGuard filtry — sady pravidel napsané ve [speciální syntaxi](/general/ad-filtering/create-own-filters). Pokud se chcete dozvědět více o tom, jak fungují, přečtěte si náš [článek o filtrech](/general/ad-filtering/how-ad-blocking-works).
 
-![Ad blocking](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/ad_blocking.png)
+![Ad blocking \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/ad_blocking.png)
 
 Zde můžete:
 

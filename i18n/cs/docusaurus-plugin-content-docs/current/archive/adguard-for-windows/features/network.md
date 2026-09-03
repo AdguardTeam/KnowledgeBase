@@ -45,7 +45,7 @@ I když je to výkonný ovladač, může představovat rizika stability, jako js
 
 #### TDI
 
-K dispozici je také ovladač **TDI**, ten je však zastaralý a v některých verzích prohlížeče Google Chrome může způsobovat [problémy s filtrováním](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). [Existuje dočasné provizorní řešení](https://adguard.com/kb/archive/adguard-for-windows/solving-problems/tdi-driver-and-Chrome-142/), ale nejde o spolehlivé dlouhodobé řešení.
+K dispozici je také ovladač **TDI**, ten je však zastaralý a v některých verzích prohlížeče Google Chrome může způsobovat [problémy s filtrováním](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). [A temporary workaround exists](https://adguard.com/kb/archive/adguard-for-windows/solving-problems/tdi-driver-and-Chrome-142/), but it’s not a reliable long-term solution.
 
 ### AdGuard VPN
 

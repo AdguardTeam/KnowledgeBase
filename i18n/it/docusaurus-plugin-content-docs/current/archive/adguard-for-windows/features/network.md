@@ -9,7 +9,7 @@ Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunziona
 
 :::
 
-Il modulo _Rete_ è dedicato al filtraggio di rete e qui troverai le opzioni aggiuntive correlate alla rete. Due di esse sono abilitate come predefinite: _Abilita il filtraggio del traffico_ e _Filtra HTTPS_. Queste sono importanti precauzioni aggiuntive, per meglio filtrare il tuo spazio web. Gran parte dei siti, a oggi, usa HTTPS, il che si applica anche alle inserzioni. Da molti siti web, come youtube.com, facebook.com e x.com, è impossibile rimuovere le inserzioni senza il filtraggio HTTPS. Quindi, mantieni la funzione _Filtra HTTPS_ abilitata, a meno che tu non abbia una valida ragione per non farlo.
+Il modulo _Rete_ è dedicato al filtraggio di rete e qui troverai le opzioni aggiuntive correlate alla rete. Due di esse sono abilitate come predefinite: _Abilita il filtraggio del traffico_ e _Filtra HTTPS_. Queste sono importanti precauzioni aggiuntive, per meglio filtrare il tuo spazio web. Gran parte dei siti, a oggi, utilizzano HTTPS, il che si applica anche agli annunci. Da molti siti web, come youtube.com, facebook.com e x.com, è impossibile rimuovere le inserzioni senza il filtraggio HTTPS. Quindi, mantieni la funzione _Filtra HTTPS_ abilitata, a meno che tu non abbia una valida ragione per non farlo.
 
 ![Network Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/network/network_settings_2.png)
 

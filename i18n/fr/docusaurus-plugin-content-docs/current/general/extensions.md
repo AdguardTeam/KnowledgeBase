@@ -9,7 +9,7 @@ Les scripts utilisateurs ou userscripts (que nous appelons aussi "extensions") s
 
 :::note Apps prises en charge
 
-AdGuard peut accroître considérablement les fonctionnalités des sites web en agissant comme un gestionnaire de scripts utilisateur. Vous pouvez ajouter vos scripts personnalisés ou gérer ceux existants dans nos trois produits : [AdGuard pour Windows](/adguard-for-windows/protection/extensions), [AdGuard pour Android](/adguard-for-android/features/settings#userscripts) et [AdGuard pour Mac](/adguard-for-mac/features/extensions).
+AdGuard peut accroître considérablement les fonctionnalités des sites web en agissant comme un gestionnaire de scripts utilisateur. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/protection/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
 
 :::
 
@@ -75,7 +75,7 @@ To try it out:
 
 #### tinyShield
 
-Un script utilisateur pour les personnes visitant des sites web coréens et certains sites web internationaux. Le script utilisateur tinyShield bloque les publicités Ad-Shield et les anti-adblock. Ce script utilisateur peut être installé dans les applications basées sur AdGuard CoreLibs, Violentmonkey, Tampermonkey et [quoid/scripts utilisateur](https://github.com/quoid/userscripts). Apprenez plus sur tinyShield et comment l'installer sur [GitHub](https://github.com/List-KR/tinyShield).
+tinyShield is primarily designed for Korean websites protected by Ad-Shield, but it also supports many international websites that use the same ad anti-adblocking technology. This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about tinyShield and how to install it on [GitHub](https://github.com/FilteringDev/tinyShield).
 
 ### Où trouver d'autres scripts utilisateur ?{#more-userscripts}
 
@@ -95,25 +95,29 @@ Nous décrirons ici certains des catalogues de scripts utilisateur les plus popu
 
 [OpenUserJS.org](https://openuserjs.org/) est un catalogue de scripts utilisateur open source écrit en nodeJS. Il n'est pas modéré, donc méfiez-vous des scripts suspects.
 
-#### Communauté
+#### NamuLink
 
-Si vous appréciez l’idée de personnaliser votre navigateur avec des scripts utilisateur et vous avez encore des questions, vous pouvez les poser sur l’un de ces sites Web :
+[NamuLink](https://github.com/FilteringDev/NamuLink) is an open-source userscript that removes Naver PowerLink advertisements from NamuWiki by bypassing the site's advanced link obfuscation mechanisms. The project is maintained by the AdGuard team and the broader ad-blocking community.
+
+#### Community
+
+If you like the idea of customizing your browser with userscripts and have questions, you can ask them on one of these websites:
 
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/userscripts)
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
 - [Reddit](https://www.reddit.com/r/userscripts/)
 
-### Développement
+### Development
 
-#### Demande de licence
+#### Request license
 
-Si vous développez votre propre script utilisateur et souhaitez tester son fonctionnement avec AdGuard, vous pouvez demander une licence en remplissant [le formulaire](https://surveys.adguard.com/en/for_developers_request/form.html).
+If you are developing your own userscript and want to test how it works with AdGuard, you can request a license by filling in [the form](https://surveys.adguard.com/en/for_developers_request/form.html).
 
-#### Compatibilité
+#### Compatibility
 
-##### Bloc de métadonnées
+##### Metadata block
 
-###### Propriétés prises en charge
+###### Supported properties
 
 - [`@name`](https://wiki.greasespot.net/Metadata_Block#@name)
 - [`@namespace`](https://wiki.greasespot.net/Metadata_Block#@namespace)
@@ -134,19 +138,19 @@ Si vous développez votre propre script utilisateur et souhaitez tester son fonc
 - [`@icon`, `@iconURL`, `@defaulticon`](https://www.tampermonkey.net/documentation.php#meta:icon)
 - [`@icon64`, `@icon64URL`](https://www.tampermonkey.net/documentation.php#meta:icon64)
 
-###### Propriétés non prises en charge
+###### Unsupported properties
 
-Ces propriétés seront simplement ignorées par AdGuard.
+These properties will be simply ignored by AdGuard.
 
 - [`@unwrap`](https://www.tampermonkey.net/documentation.php#meta:unwrap)
 
-##### Fonctions GM prises en charge
+##### Supported GM functions
 
-AdGuard prend en charge à la fois les anciennes fonctions GM\_ et la nouvelle API GM4 qui utilisent l'objet GM.
+AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
 
 :::note
 
-Toutes les anciennes fonctions Greasemonkey répertoriées sont obsolètes mais toujours prises en charge.
+All listed old Greasemonkey functions are deprecated but still supported.
 
 :::
 
@@ -167,7 +171,7 @@ Toutes les anciennes fonctions Greasemonkey répertoriées sont obsolètes mais 
 - [`GM.addElement`, `GM_addElement`](https://www.tampermonkey.net/documentation.php#api:GM_addElement)
 - [`window.onurlchange`](https://www.tampermonkey.net/documentation.php#api:window.onurlchange)
 
-Vous pouvez trouver plus d'informations sur l'API Greasemonkey dans [son manuel](https://wiki.greasespot.net/Greasemonkey_Manual:API).
+You can find more information about Greasemonkey API in [its manual](https://wiki.greasespot.net/Greasemonkey_Manual:API).
 
 #### Exemple
 
@@ -210,34 +214,34 @@ Vous pouvez trouver plus d'informations sur l'API Greasemonkey dans [son manuel]
 )}();
 ```
 
-#### API Trusted Types
+#### Trusted Types API
 
-AdGuard fournit une instance de la classe `PolicyApi` qui vous permet de gérer les Trusted Types dans vos scripts utilisateur.
+AdGuard provides an instance of the `PolicyApi` class that allows you to manage Trusted Types in your userscripts.
 
-Vous pouvez accéder à l'instance de cette classe en utilisant la variable `ADG_policyApi` dans votre script utilisateur.
+You can access the instance of this class by using the `ADG_policyApi` variable in your userscript.
 
-##### Propriétés
+##### Properties
 
-- `name: string` — un nom de politique (Par défaut, c'est `"AGPolicy"`).
-- `isSupported: boolean` — un indicateur indiquant si oui ou non l'API Trusted Types est prise en charge par le navigateur actuel.
+- `name: string` — a name of the policy (Default is `"AGPolicy"`).
+- `isSupported: boolean` — a flag indicating whether or not the Trusted Types API is supported by the current browser.
 
-##### Méthodes polyfillées
+##### Polyfilled methods
 
-- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). Si non pris en charge, renvoie `input: string`.
-- [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). Si non pris en charge, renvoie `input: string`.
-- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). Si non pris en charge, renvoie `input: string`.
-- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). Si non pris en charge, renvoie `null`.
-- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). Si non pris en charge, renvoie `null`.
-- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). Si non pris en charge, renvoie `false`.
-- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). Si non pris en charge, renvoie `false`.
-- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). Si non pris en charge, renvoie `false`.
+- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). If not supported, returns `input: string`.
+- [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). If not supported, returns `input: string`.
+- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). If not supported, returns `input: string`.
+- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). If not supported, returns `null`.
+- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). If not supported, returns `null`.
+- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). If not supported, returns `false`.
+- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). If not supported, returns `false`.
+- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). If not supported, returns `false`.
 
-##### Types supplémentaires
+##### Additional Types
 
 ```typescript
 /**
- * Représentation Enum des valeurs de retour des méthodes `getAttributeType` et
- * `getPropertyType` de l'API native Trusted Types.
+ * Enum representation of the return values of the `getAttributeType` and
+ * `getPropertyType` methods of the native Trusted Types API.
  *
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType}
@@ -248,12 +252,12 @@ enum TrustedType {
     ScriptURL = 'TrustedScriptURL',
 }
 
-// Vous pouvez y accéder comme ça dans un script utilisateur
+// You can access it like that inside of userscript
 ADG_TrustedType.HTML // "TrustedHTML"
 
 /**
- * Type de valeur de confiance isomorphe. Si un navigateur prend en charge l'API Trusted Types, il sera l'un des Trusted Types enum
- * (`TrustedHTML`, `TrustedScript` ou `TrustedScriptURL`); sinon, ce sera une chaîne `string` normale.
+ * Isomorphic trusted value type. If a browser supports the Trusted Types API, it will be one of the enum Trusted Types
+ * (`TrustedHTML`, `TrustedScript` or `TrustedScriptURL`); otherwise, it will be regular `string`.
  *
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedHTML}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedScript}
@@ -262,20 +266,20 @@ ADG_TrustedType.HTML // "TrustedHTML"
 type TrustedValue = string | TrustedHTML | TrustedScript | TrustedScriptURL;
 ```
 
-##### Méthodes supplémentaires
+##### Additional methods
 
 ```typescript
 /**
- * Crée un Trusted Type en fonction du `type` :
+ * Creates a Trusted Type depending on `type`:
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - ou retourne `value` si aucun d'eux n'est applicable.
+ * - or returns `value` if none of them is applicable.
  *
  * @param type          Trusted Type.
- * @param value         Valeur à partir de laquelle un type de confiance est créé.
- * @param createArgs    Arguments supplémentaires à passer à la fonction représentée par `TrustedTypePolicy`.
- * @returns             Valeur créée.
+ * @param value         Value from which a Trusted Type is created.
+ * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
+ * @returns             Created value.
  */
 function create(
     type: TrustedType,
@@ -284,23 +288,23 @@ function create(
 ): TrustedValue
 
 
-// Exemple : Crée TrustedHTML
+// Example: Creates TrustedHTML
 const trustedHTML = ADG_policyApi.create(ADG_TrustedType.HTML, '<div></div>');
 
 /**
- * Convertit `value` de `attribute` en un des Trusted Type :
+ * Converts `value` of `attribute` into one of the Trusted Types:
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - ou retourne `value` si aucun d'eux n'est applicable.
+ * - or returns `value` if none of them is applicable.
  *
- * @param tagName       Nom d'une balise HTML.
- * @param attribute     Attribut.
- * @param value         Valeur d'un attribut à convertir.
- * @param elementNS     Espace de noms de l'élément. S'il est vide, il retourne à l'espace de noms HTML par défaut.
- * @param attrNS        Espace de noms de l'attribut. S'il est vide, il retourne à null.
- * @param createArgs    Arguments supplémentaires à passer à la fonction représentée par `TrustedTypePolicy`.
- * @returns             Valeur convertie.
+ * @param tagName       Name of an HTML tag.
+ * @param attribute     Attribute.
+ * @param value         Value of an attribute to be converted.
+ * @param elementNS     Element namespace. If empty, defaults to the HTML namespace.
+ * @param attrNS        Attribute namespace. If empty, defaults to null.
+ * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
+ * @returns             Converted value.
  */
 function convertAttributeToTrusted(
     tagName: string,
@@ -311,23 +315,23 @@ function convertAttributeToTrusted(
     ...createArgs: unknown[]
 ): TrustedValue
 
-// Exemple : Convertit en TrustedScriptURL
+// Example: Converts to TrustedScriptURL
 const trustedScriptURL = ADG_policyApi.convertAttributeToTrusted("script", "src", 'SOME_URL');
 scriptElement.setAttribute("src", trustedScriptURL);
 
 /**
- * Convertit `value` de `property` en un des Trusted Type :
+ * Converts `value` of `property` into one of the Trusted Types:
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - ou retourne `value` si aucun d'eux n'est applicable.
+ * - or returns `value` if none of them is applicable.
  *
- * @param tagName       Nom d'une balise HTML.
- * @param property      Propriété.
- * @param value         Valeur d'une propriété à convertir.
- * @param elementNS     Espace de noms de l'élément. S'il est vide, il retourne à l'espace de noms HTML par défaut.
- * @param createArgs    Arguments supplémentaires à passer à la fonction représentée par `TrustedTypePolicy`.
- * @returns             Valeur convertie.
+ * @param tagName       Name of an HTML tag.
+ * @param property      Property.
+ * @param value         Value of a property to be converted.
+ * @param elementNS     Element namespace. If empty, defaults to the HTML namespace.
+ * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
+ * @returns             Converted value.
  */
 function convertPropertyToTrusted(
     tagName: string,
@@ -337,13 +341,13 @@ function convertPropertyToTrusted(
     ...createArgs: unknown[]
 ): TrustedValue
 
-// Exemple : Convertit en TrustedHTML
+// Example: Converts to TrustedHTML
 divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML", "<div></div>");
 ```
 
 #### Matching SPA sites
 
-:::info Compatibilité
+:::info Compatibility
 
 This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.19 or later.
 

@@ -3,13 +3,7 @@ title: Licence
 sidebar_position: 2
 ---
 
-:::info
-
-Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Jedná se o beta verzi, která je stále ve vývoji. Chcete-li vyzkoušet, stáhněte si [beta verzi AdGuard pro Windows](https://agrd.io/windows_beta).
-
-:::
-
-![License](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/licenses.png)
+![License \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/licenses.png)
 
 Karta _Licence_ poskytuje podrobnosti o vaší aktuální licenci. Zde můžete:
 

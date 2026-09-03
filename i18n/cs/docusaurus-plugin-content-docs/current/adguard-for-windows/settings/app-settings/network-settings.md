@@ -3,15 +3,9 @@ title: Nastavení sítě
 sidebar_position: 3
 ---
 
-:::info
-
-Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Jedná se o beta verzi, která je stále ve vývoji. Chcete-li vyzkoušet, stáhněte si [beta verzi AdGuard pro Windows](https://agrd.io/windows_beta).
-
-:::
-
 V této části můžete spravovat způsob, jakým AdGuard filtruje váš internetový provoz, a najdete zde další nástroje pro ovládání funkcí souvisejících se sítí.
 
-![Network settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
+![Network settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
 
 ## Použít AdGuard jako HTTP proxy
 
@@ -39,7 +33,7 @@ S touto volbou můžete:
 
 Zde můžete vybrat, jaký proxy server má AdGuard používat ke stahování aktualizací filtrů nebo nových verzí aplikace — systémový proxy server, vlastní proxy server nebo žádný proxy server.
 
-![Proxy settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
+![Proxy settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
 
 ## Použít ovladač SockFilter
 

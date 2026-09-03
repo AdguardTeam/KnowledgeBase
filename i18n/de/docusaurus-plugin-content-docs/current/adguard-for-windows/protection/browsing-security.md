@@ -3,12 +3,6 @@ title: Internetsicherheit
 sidebar_position: 5
 ---
 
-:::info
-
-Dieser Artikel beschreibt AdGuard für Windows v8.0, einen umfassenden Werbeblocker, der Ihr Gerät auf Systemebene schützt. Dies ist eine Beta-Version, die sich noch in der Entwicklung befindet. Um es auszuprobieren, laden Sie die [Beta-Version von AdGuard für Windows](https://agrd.io/windows_beta) herunter.
-
-:::
-
 _Internetsicherheit_ bietet starken Schutz vor schädlichen Websites und Phishing-Versuchen.
 
 AdGuard für Windows ist zwar kein Antivirenprogramm, bietet jedoch wichtige Sicherheit, indem es Sie warnt, bevor Sie nicht vertrauenswürdige Websites besuchen oder potenziell gefährliche Dateien herunterladen.
@@ -17,7 +11,7 @@ Es wird nicht verhindert, dass ein bereits heruntergeladener Virus ausgeführt w
 
 Weitere Informationen zur Funktionsweise dieses Schutzes finden Sie in unserem Artikel [Schutz vor Phishing und Malware](/general/browsing-security).
 
-![Internetsicherheit](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/browsing.png)
+![Browsing security \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/browsing.png)
 
 Im Abschnitt _Internetsicherheit_ können Sie:
 

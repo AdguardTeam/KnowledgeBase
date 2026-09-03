@@ -13,7 +13,7 @@ La pestaña _Protección_ incluye las siguientes características o configuracio
 
 - [Bloqueo de anuncios](/adguard-for-android/features/protection/ad-blocking.md)
 
-  Settings to block ads in browsers and apps
+  Configuración para bloquear anuncios en navegadores y apps
 
 - [Protección contra el rastreo](/adguard-for-android/features/protection/tracking-protection.md)
 

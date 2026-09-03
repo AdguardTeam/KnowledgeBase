@@ -35,4 +35,4 @@ Follow the instructions:
 7. Select the file you downloaded earlier and click _Open_.
 8. Choose _Trust this CA to identify websites_ and click _OK_.
 
-All done! HTTPS filtering should now work in your Gecko-based browser.
+¡Todo listo! HTTPS filtering should now work in your Gecko-based browser.

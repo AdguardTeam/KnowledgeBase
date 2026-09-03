@@ -11,14 +11,14 @@ sidebar_position: 1
 
 以下是用户会遇到的一些问题以及可能需要的解决方法、指南和指示说明。
 
-- [WFP 驱动兼容性](/archive/adguard-for-windows/solving-problems/wfp-driver/)
-- [证书相关问题](/archive/adguard-for-windows/solving-problems/connection-not-trusted/)
-- [如何收集 AdGuard 日志](/archive/adguard-for-windows/solving-problems/adguard-logs/)
+- [WFP driver compatibility](/archive/adguard-for-windows/solving-problems/wfp-driver/)
+- [Certificate-related issues](/archive/adguard-for-windows/solving-problems/connection-not-trusted/)
+- [How to collect AdGuard logs](/archive/adguard-for-windows/solving-problems/adguard-logs/)
 - [如何收集 AdGuard 安装日志](/adguard-for-windows/solving-problems/installation-logs/)
 - [如何收集 Windows 系统日志](/adguard-for-windows/solving-problems/system-logs/)
 - [常见安装错误](/adguard-for-windows/solving-problems/common-installer-errors/)
-- [高级（低级）设置指南](/archive/adguard-for-windows/solving-problems/low-level-settings/)
+- [Advanced (low-level) Settings guide](/archive/adguard-for-windows/solving-problems/low-level-settings/)
 - [如何创建 Dump 文件](/adguard-for-windows/solving-problems/dump-file/)
-- [可能的 DNS 泄漏](/archive/adguard-for-windows/solving-problems/dns-leaks/)
+- [Possible DNS leaks](/archive/adguard-for-windows/solving-problems/dns-leaks/)
 - [已知的 Windows 版 AdGuard 问题](/adguard-for-windows/solving-problems/known-issues/)
 - [如何修复 `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE` 错误](/adguard-for-windows/solving-problems/mozilla-error/)

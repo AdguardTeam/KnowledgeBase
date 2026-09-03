@@ -177,6 +177,6 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 1. Enable the main proxy switch and AdGuard protection to route your device’s traffic through the proxy.
 
-## Limitations
+## Begrænsninger
 
 However, at least one factor may prevent certain traffic from being routed through the outbound proxy, even after configuring the AdGuard proxy settings. That would be if the app itself isn't configured to send its traffic through AdGuard. To do it, you need to proceed to **App management**, choose the app, and turn on **Route traffic through AdGuard**.

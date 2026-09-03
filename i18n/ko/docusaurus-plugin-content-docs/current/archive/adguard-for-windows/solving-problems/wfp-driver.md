@@ -3,9 +3,9 @@ title: WFP 드라이버
 sidebar_position: 1
 ---
 
-:::정보
+:::info
 
-본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 작동 방식을 확인하려면 [AdGuard 앱을 다운로드하세요](https://agrd.io/download-kb-adblock).
+본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 이용하고자 한다면 [AdGuard 앱을 다운로드](https://agrd.io/download-kb-adblock)해 보세요.
 
 :::
 
@@ -13,8 +13,8 @@ sidebar_position: 1
 
 이로 인해 발생한 것으로 의심되는 문제가 발생하면 언제든지 이전 버전이지만 더 안정적인 TDI 네트워크 드라이버로 전환할 수 있습니다. 다음와 같이 설정합니다:
 
-1. *설정 → 네트워크로* 이동합니다.
+1. Go to _Settings → Network_.
 
 2. 이 그림과 같이 WFP 드라이버를 비활성화합니다.
 
-![WFP 드라이버 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)
+![WFP driver \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)

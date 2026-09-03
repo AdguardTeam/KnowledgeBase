@@ -11,14 +11,14 @@ sidebar_position: 1
 
 Вот некоторые проблемы, с которыми вы можете столкнуться, а также обходные пути и инструкции, которые вам могут понадобиться.
 
-- [Совместимость WFP-драйвера](/archive/adguard-for-windows/solving-problems/wfp-driver/)
-- [Проблемы, связанные с сертификатом](/archive/adguard-for-windows/solving-problems/connection-not-trusted/)
-- [Как собирать логи AdGuard](/archive/adguard-for-windows/solving-problems/adguard-logs/)
+- [WFP driver compatibility](/archive/adguard-for-windows/solving-problems/wfp-driver/)
+- [Certificate-related issues](/archive/adguard-for-windows/solving-problems/connection-not-trusted/)
+- [How to collect AdGuard logs](/archive/adguard-for-windows/solving-problems/adguard-logs/)
 - [Как собирать логи установки AdGuard](/adguard-for-windows/solving-problems/installation-logs/)
-- [Как собирать системные логи Windows](/adguard-for-windows/solving-problems/system-logs/)
+- [Как собирать системные логи Windows](/adguard-for-windows/solving-problems/adguard-logs/)
 - [Типичные ошибки установщика](/adguard-for-windows/solving-problems/common-installer-errors/)
-- [Расширенные (низкоуровневые) настройки](/archive/adguard-for-windows/solving-problems/low-level-settings/)
+- [Advanced (low-level) Settings guide](/archive/adguard-for-windows/solving-problems/low-level-settings/)
 - [Как создать файл дампа](/adguard-for-windows/solving-problems/dump-file/)
-- [Возможные утечки DNS](/archive/adguard-for-windows/solving-problems/dns-leaks/)
+- [Possible DNS leaks](/archive/adguard-for-windows/solving-problems/dns-leaks/)
 - [Известные проблемы AdGuard для Windows](/adguard-for-windows/solving-problems/known-issues/)
 - [Как исправить ошибку `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE`](/adguard-for-windows/solving-problems/mozilla-error/)
