@@ -35,7 +35,7 @@ Pour signaler une réinsertion d'une annonce ou un mauvais affichage d'un site i
 
 ### Windows {#windows}
 
-- Ouvrez l'[Assistant de navigateur AdGuard](/archive/adguard-for-windows/browser-assistant) et appuyez sur **Signaler un problème** :
+- Open [AdGuard Browser Assistant](/archive/adguard-for-windows/browser-assistant) and hit **Report an issue**:
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 

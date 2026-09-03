@@ -5,7 +5,7 @@ sidebar_position: 3
 
 Hlavní funkcí Asistenta AdGuardu je správa filtrování přímo z prohlížeče. Existuje již poměrně dlouho a jeho forma i obsah se měnily. Přesněji řečeno, dříve to byl pouhý uživatelský skript začleněný do aplikace AdGuard pro Windows a stalo se z něj plnohodnotné rozšíření prohlížeče. Nyní přináší další výhody.
 
-![Browser Assistant *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
+![Browser Assistant \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
 
 ## Výhody
 
@@ -15,7 +15,7 @@ AdGuard Asistent prohlížeče je rozšíření prohlížeče nainstalované v p
 
 ### Kompatibilita s hlavní aplikací
 
-Pokud jste si zvykli používat naše předchozí [rozšíření pro blokátor reklam AdGuard](/adguard-browser-extension/compatibility), možná se vám zalíbí řešení, které jsme vyvinuli pro nového Asistenta prohlížeče.
+If you got into the habit of using our previous [AdGuard Ad Blocker extension](/adguard-browser-extension/compatibility), you might like the solution that we have developed for the new Browser Assistant.
 
 Základní informace:
 
@@ -29,17 +29,18 @@ Při použití Asistenta prohlížeče všechny tyto problémy nevadí, protože
 
 Nový Asistent prohlížeče má v nastavení AdGuardu pro Windows vlastní záložku spolu s Režimem utajení, Bezpečným prohlížením, Ochranou rodiny a dalšími. Zde najdete odkaz ke stažení rozšíření pro váš výchozí prohlížeč. Kromě toho je zde zaškrtávací políčko pro povolení staršího asistenta.
 
-![Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
 ## Starý Asistent
 
-Starý Asistent je předchozí verze Asistenta, která je pouhým uživatelským skriptem, nikoli rozšířením prohlížeče. V zásadě existují dva případy, kdy byste ho mohli zvolit místo nového Asistenta prohlížeče:
+Starý Asistent je předchozí verze Asistenta, která je pouhým uživatelským skriptem, nikoli rozšířením prohlížeče.
+V zásadě existují dva případy, kdy byste ho mohli zvolit místo nového Asistenta prohlížeče:
 
 1. Nový Asistent není pro váš prohlížeč k dispozici.
-1. Jste zvyklí na ikonu zeleného štítu a chcete ponechat vše při starém.
+2. Jste zvyklí na ikonu zeleného štítu a chcete ponechat vše při starém.
 
 ## Jak nainstalovat Asistenta prohlížeče AdGuard
 
 Chcete-li nainstalovat Asistenta prohlížeče pro svůj výchozí prohlížeč, můžete to provést přímo v nastavení aplikace, ale máte také možnost nainstalovat jej pro jiné prohlížeče.
 
-Asistent prohlížeče AdGuard je k dispozici pro všechny oblíbené prohlížeče: Chrome, Firefox Edge, Opera a Yandex. Chcete-li si nainstalovat ten, který potřebujete (nebo více, není to zakázáno, ale ani doporučeno), přejděte na [naše webové stránky](https://adguard.com/adguard-assistant/overview.html), klikněte na ikonu prohlížeče a poté na tlačítko *Nainstalovat*. To je vše!
+Asistent prohlížeče AdGuard je k dispozici pro všechny oblíbené prohlížeče: Chrome, Firefox Edge, Opera a Yandex. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and then the _Install_ button. To je vše!

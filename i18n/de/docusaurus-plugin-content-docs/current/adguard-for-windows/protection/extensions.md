@@ -3,15 +3,9 @@ title: Erweiterungen
 sidebar_position: 7
 ---
 
-:::info
-
-Dieser Artikel beschreibt AdGuard für Windows v8.0, einen umfassenden Werbeblocker, der Ihr Gerät auf Systemebene schützt. Dies ist eine Beta-Version, die sich noch in der Entwicklung befindet. Um es auszuprobieren, laden Sie die [Beta-Version von AdGuard für Windows](https://agrd.io/windows_beta) herunter.
-
-:::
-
 AdGuard kann die Funktionalität von Websites erweitern, indem es als [Benutzerskript-Verwaltung](/general/extensions.md) fungiert. Dadurch ist es möglich, eigene Skripte hinzuzufügen und bereits vorhandene zu verwalten.
 
-![Erweiterungen](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
+![Extensions \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
 
 ## Benutzerskripte automatisch erkennen
 
@@ -28,7 +22,7 @@ AdGuard wird mit vier vorinstallierten Benutzerskripten ausgeliefert:
 
 ### AdGuard Assistent (Beta)
 
-AdGuard-Assistent ist die Vorgängerversion von Assistant, die Sie verwenden können, wenn der [neue Assistent](/archive/adguard-for-windows/browser-assistant.md) für Ihren Browser nicht verfügbar ist. Wie der Name schon sagt, können Sie damit grundlegende AdGuard-Einstellungen direkt über Ihren Browser verwalten, ohne die App öffnen zu müssen.
+AdGuard Assistant is the legacy version of Assistant, which you can use if the [new Assistant](/archive/adguard-for-windows/browser-assistant.md) is not available for your browser. Wie der Name schon sagt, können Sie damit grundlegende AdGuard-Einstellungen direkt über Ihren Browser verwalten, ohne die App öffnen zu müssen.
 
 AdGuard-Assistent funktioniert mit allen Browsern, die mit Microsoft Windows kompatibel sind. Sie erscheint nicht auf Websites, die von der Filterung ausgeschlossen sind, oder auf bestimmten Seiten, auf denen sie Darstellungsprobleme verursachen könnte.
 

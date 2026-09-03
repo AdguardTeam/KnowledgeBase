@@ -99,44 +99,44 @@ Or you can configure remove parameters manually:
 
 - **Compulsory parameters**:
 
-`[type]` — proxy server type:
+`[type]` — type de serveur proxy :
 
 - HTTP
 - SOCKS4
 - SOCKS5
 - HTTPS_CONNECT
 
-`[host]` — outbound proxy domain or IP address;
+`[host]` —domaine ou adresse IP du proxy sortant ;
 
-`[port]` — outbound proxy port (integer number from 1 to 65535);
+`[port]` — port du proxy sortant (nombre entier de 1 à 65 535) ;
 
-- **Optional parameters**:
+- **Paramètres facultatifs** :
 
- `[login and password]` — only if proxy requires it. This data is ignored when setting up **SOCKS4**;
+ `[login and password]` — uniquement si le proxy l'exige. Ces données sont ignorées lors de la configuration de **SOCKS4** ;
 
- `[udp]` applied only on **SOCKS5** server type and include option **UDP through SOCKS5**. It is necessary to set **true or false** value;
+ `[udp]` s'applique uniquement sur le type de serveur **SOCKS5** et inclut une option **UPD via SOCKS5**. Il est nécessaire de configurer la valeur **true ou false** ;
 
- `[trust]` applies for **HTTPS_CONNECT** server type only and include option **Trust any certificates**. It is necessary to set **true or false** value.
+ `[trust]` s'applique uniquement pour le type de serveur **HTTPS_CONNECT** et inclut une option **Faire confiance à tous les certificats**. Il est nécessaire de configurer la valeur **true ou false**.
 
 :::note Exemple
 
-`setting by name`: server:MyServer
+`paramètres par nom` : server:MyServer
 
-`manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
+`paramètres manuels` : server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
 
 :::
 
-**Don't forget to include the password, package name, and class. You need to do so for every intent.**
+**N'oubliez pas d'inclure le mot de passe, nom de paquet et la classe. Vous devez le faire pour chaque intention.**
 
-Extra: `password:*******`
+Extra : `password:*******`
 
-Package name: `com.adguard.android`
+Nom de paquet : `com.adguard.android`
 
-Class: `com.adguard.android.receiver.AutomationReceiver`
+Classe : `com.adguard.android.receiver.AutomationReceiver`
 
 ::note
 
-Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. If this function is used, remember to update to the new name.
+Avant la version 4.0, la classe s'appelait `com.adguard.android.receivers.AutomationReceiver`, mais nous avons ensuite changé son nom pour `com.adguard.android.receiver.AutomationReceiver`. Si cette fonction est utilisée, n'oubliez pas d'adopter le nouveau nom.
 
 :::
 

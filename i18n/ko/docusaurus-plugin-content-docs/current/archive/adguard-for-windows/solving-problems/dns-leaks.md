@@ -3,9 +3,9 @@ title: DNS 유출 가능성
 sidebar_position: 10
 ---
 
-:::정보
+:::info
 
-본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 작동 방식을 확인하려면 [AdGuard 앱을 다운로드하세요](https://agrd.io/download-kb-adblock)
+본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 이용하고자 한다면 [AdGuard 앱을 다운로드](https://agrd.io/download-kb-adblock)해 보세요.
 
 :::
 
@@ -15,34 +15,35 @@ Windows용 AdGuard를 사용하면 사용자는 시스템 설정에서 설정하
 
 ## 부트스트랩 DNS 주소
 
-DNS 서버 주소는 IP 또는 도메인 이름으로 작성할 수 있습니다. IP 주소의 경우 어렵지않게, AdGuard는 DNS 요청을 DNS 보호 모듈에 지정된 서버로 직접 전달합니다. 그러나 DoT 또는 DoH와 같은 암호화된 DNS 서버 주소는 대부분 도메인 이름으로 작성됩니다. 이 경우 암호화된 DNS 서버 주소를 먼저 확인하기 위해 AdGuard는 기본적으로 시스템 DNS 서버인 부트스트랩 주소로 DNS 쿼리를 보냅니다. 이러한 연결이 바로 수표 서비스에서 유출로 인식하는 것입니다.
+DNS 서버 주소는 IP 또는 도메인 이름으로 작성할 수 있습니다.
+IP 주소의 경우 어렵지않게, AdGuard는 DNS 요청을 DNS 보호 모듈에 지정된 서버로 직접 전달합니다. 그러나 DoT 또는 DoH와 같은 암호화된 DNS 서버 주소는 대부분 도메인 이름으로 작성됩니다. 이 경우 암호화된 DNS 서버 주소를 먼저 확인하기 위해 AdGuard는 기본적으로 시스템 DNS 서버인 부트스트랩 주소로 DNS 쿼리를 보냅니다. 이러한 연결이 바로 수표 서비스에서 유출로 인식하는 것입니다.
 
-**이 누수를 제거합니다:**
+**To eliminate this leak:**
 
-- *고급 설정*으로 이동합니다.
-- 아래로 스크롤하여 *사용자 지정 부트스트랩 주소 목록* 섹션으로 이동합니다.
-- 사용자 지정 부트스트랩 주소를 IP 주소 형식으로 입력합니다( [알려진 DNS 공급자 목록을](https://adguard-dns.io/kb/general/dns-providers/) 사용할 수 있음).
-- *저장을* 클릭합니다.
+- go to the _Advanced settings_
+- scroll down to the _List of custom bootstrap addresses_ section
+- enter the custom bootstrap address in the IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
+- click _Save_
 
 ## 대체 DNS 서버
 
 인터넷 연결 상태가 좋지 않거나 기본적으로 설정된 시간 제한이 만료되었거나 일부 서버 관련 문제로 인해 AdGuard가 지정된 서버에 연결할 수 없는 경우가 발생할 수 있습니다. 이 경우 기본적으로 시스템 DNS 서버인 대체 서버에 연결됩니다. 이 연결도 점검 서비스에서 유출로 간주합니다.
 
-**이 누수를 제거합니다:**
+**To eliminate this leak:**
 
-- *고급 설정*으로 이동합니다.
-- *대체 서버* 항목까지 아래로 스크롤합니다.
-- *사용자 지정 서버 사용* 옵션을 선택합니다.
-- 그런 다음 *사용자 정의 대체 서버 목록* 섹션을 찾아 줄당 하나씩 사용자 정의 대체 서버를 입력합니다.
-
-또는
-
-- *고급 설정*으로 이동합니다.
-- *대체 서버* 항목까지 아래로 스크롤합니다.
-- *대체 서버 사용 안 함* 옵션을 체크하세요.
+- go to the _Advanced settings_
+- scroll down to the _Fallback servers_ section
+- check the _Use custom servers_ option
+- then find the _List of custom fallback servers_ section and enter the custom fallback servers one per line
 
 또는
 
-- *고급 설정*으로 이동합니다.
-- *DNS 서버 시간 초과 기간* 항목까지 아래로 스크롤합니다.
+- go to the _Advanced settings_
+- scroll down to the _Fallback servers_ section
+- check the _Don’t use fallback servers_ option
+
+또는
+
+- go to the _Advanced settings_
+- scroll down to the _DNS server timeout period_ section
 - 임의의 큰 숫자를 입력합니다.

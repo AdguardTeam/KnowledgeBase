@@ -3,15 +3,9 @@ title: Блокировка рекламы
 sidebar_position: 1
 ---
 
-:::info
-
-В этой статье описывается AdGuard для Windows v8.0 — комплексный блокировщик рекламы, который защищает ваше устройство на системном уровне. Это бета-релиз, который ещё находится в стадии разработки. Чтобы начать им пользоваться, скачайте [бета-версию AdGuard для Windows](https://agrd.io/windows_beta).
-
-:::
-
 Раздел _Блокировка рекламы_ отвечает за удаление рекламы с веб-сайтов, которые вы посещаете, и из приложений, установленных на вашем устройстве. Для фильтрации баннеров, всплывающих окон, трекеров и других навязчивых элементов AdGuard использует фильтры — наборы правил, написанных с использованием [специального синтаксиса](/general/ad-filtering/create-own-filters). Чтобы узнать больше о том, как они работают, прочитайте нашу [статью о фильтрах](/general/ad-filtering/how-ad-blocking-works).
 
-![Блокировка рекламы](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/ad_blocking.png)
+![Ad blocking \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/ad_blocking.png)
 
 Здесь вы можете:
 

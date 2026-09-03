@@ -35,7 +35,7 @@ sidebar_position: 3
 
 ### Windows {#windows}
 
-- [AdGuard 브라우저 어시스턴트](/archive/adguard-for-windows/browser-assistant)를 열고 **문제 신고하기**를 누릅니다.
+- Open [AdGuard Browser Assistant](/archive/adguard-for-windows/browser-assistant) and hit **Report an issue**:
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 

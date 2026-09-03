@@ -3,12 +3,6 @@ title: Configurações avançadas
 sidebar_position: 4
 ---
 
-:::info
-
-Este artigo descreve o AdGuard para Windows v8.0, um bloqueador de anúncios completo que protege seu dispositivo em nível de sistema. Esta é uma versão beta que ainda está em desenvolvimento. Para experimentá-lo, baixe a [versão beta do AdGuard para Windows](https://agrd.io/windows_beta).
-
-:::
-
 A seção _Configurações Avançadas_ contém opções que vão além do que a maioria dos usuários geralmente precisa. O AdGuard para Windows funciona perfeitamente pronto para uso, mas estas configurações podem ser úteis em casos especiais ou para solução de problemas.
 
 :::caution
@@ -95,7 +89,7 @@ Especifique por quanto tempo (em milissegundos) o AdGuard deve aguardar uma resp
 
 ## Endereços de bootstrap personalizados
 
-Um bootstrap é um servidor DNS intermediário usado para obter o endereço IP do servidor DNS seguro que você escolheu anteriormente na proteção DNS. Esse "meio-termo" é necessário ao usar protocolos que indicam o endereço do servidor por letras (como DNS-over-TLS, por exemplo). Nesse caso, o bootstrap atua como um tradutor, transformando as letras em números que o seu sistema pode entender.
+Um bootstrap é um servidor DNS intermediário usado para obter o endereço IP do servidor DNS seguro que você escolheu anteriormente na proteção DNS. Esse "meio-termo" é necessário ao usar protocolos que indicam o endereço do servidor por letras (como DNS-over-TLS, por exemplo). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
 Mas, se necessário, você pode especificar diferentes endereços IP aqui — eles serão tentados na ordem de cima para baixo. Se nenhum funcionar ou nada for inserido, o AdGuard recorrerá às configurações padrão do sistema.
 

@@ -1,6 +1,6 @@
 ---
 title: Installing AdGuard on older OS versions
-sidebar_position: 10
+sidebar_position: 11
 ---
 
 If your device runs an older operating system, you may not be able to install the latest version of AdGuard. If this is the case, you can download an earlier, compatible version of the app using the links below.

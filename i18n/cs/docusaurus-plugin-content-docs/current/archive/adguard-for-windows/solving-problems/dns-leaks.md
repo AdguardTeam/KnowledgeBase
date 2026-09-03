@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,34 +15,35 @@ Mnoho uživatelů AdGuardu pro Windows oceňuje funkci DNS ochrany. Někteří z
 
 ## Bootstrap DNS adresa
 
-Adresy DNS serverů lze zapsat jako IP adresy nebo jako názvy domén. V případě IP adres nejsou žádné potíže: AdGuard předá požadavek DNS přímo serveru uvedenému v modulu DNS ochrany. Šifrované adresy serverů DNS, jako je DoT nebo DoH, se však nejčastěji zapisují jako názvy domén. V tomto případě odešle AdGuard dotaz DNS na bootstrap adresu, což je ve výchozím nastavení systémový DNS server, aby nejprve vyřešil šifrovanou adresu DNS serveru. Toto připojení vnímají kontrolní služby jako únik.
+Adresy DNS serverů lze zapsat jako IP adresy nebo jako názvy domén.
+V případě IP adres nejsou žádné potíže: AdGuard předá požadavek DNS přímo serveru uvedenému v modulu DNS ochrany. Šifrované adresy serverů DNS, jako je DoT nebo DoH, se však nejčastěji zapisují jako názvy domén. V tomto případě odešle AdGuard dotaz DNS na bootstrap adresu, což je ve výchozím nastavení systémový DNS server, aby nejprve vyřešil šifrovanou adresu DNS serveru. Toto připojení vnímají kontrolní služby jako únik.
 
-**Postup k odstranění tohoto úniku:**
+**To eliminate this leak:**
 
-- přejděte do *Pokročilých nastavení*
-- přejděte dolů do sekce *Seznam vlastních bootstrap adres*
-- zadejte vlastní bootstrap adresu ve formátu IP adresy (můžete použít [seznam známých poskytovatelů DNS](https://adguard-dns.io/kb/general/dns-providers/))
-- klikněte na *Uložit*
+- go to the _Advanced settings_
+- scroll down to the _List of custom bootstrap addresses_ section
+- enter the custom bootstrap address in the IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
+- click _Save_
 
 ## Záložní DNS server
 
 Může se stát, že AdGuard nemůže dosáhnout zadaného serveru z důvodu slabého připojení k internetu, vypršení výchozího časového limitu nebo jiných problémů souvisejících se serverem. V tomto případě se připojí k záložnímu serveru, kterým je ve výchozím nastavení systémový DNS server. Toto připojení bude kontrolní služba rovněž považovat za únik.
 
-**Postup k odstranění tohoto úniku:**
+**To eliminate this leak:**
 
-- přejděte do *Pokročilých nastavení*
-- přejděte dolů do sekce *Záložní servery*
-- zaškrtněte možnost *Použít vlastní servery*
-- pak vyhledejte sekci *Seznam vlastních záložních serverů* a zadejte vlastní záložní servery po jednom na řádek
-
-nebo
-
-- přejděte do *Pokročilých nastavení*
-- přejděte dolů do sekce *Záložní servery*
-- zaškrtněte možnost *Nepoužívat záložní servery*
+- go to the _Advanced settings_
+- scroll down to the _Fallback servers_ section
+- check the _Use custom servers_ option
+- then find the _List of custom fallback servers_ section and enter the custom fallback servers one per line
 
 nebo
 
-- přejděte do *Pokročilých nastavení*
-- přejděte dolů do sekce *Časový limit DNS serveru*
+- go to the _Advanced settings_
+- scroll down to the _Fallback servers_ section
+- check the _Don’t use fallback servers_ option
+
+nebo
+
+- go to the _Advanced settings_
+- scroll down to the _DNS server timeout period_ section
 - zadejte libovolně velké číslo

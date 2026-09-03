@@ -3,15 +3,9 @@ title: 跟踪保护
 sidebar_position: 2
 ---
 
-:::info
-
-本文适用于 Windows 版的 AdGuard v8.0，一款全面的广告拦截器，可在系统层面保护您的设备。 这是一个仍在开发中的 Beta 测试版本。 要试用，请下载[适用于 Windows 的 AdGuard 测试版](https://agrd.io/windows_beta)。
-
-:::
-
 许多网站会收集访客数据，包括 IP 地址、浏览器与操作系统信息、屏幕分辨率，甚至您来自哪个页面。 Cookie 可用于识别您的浏览器、记住您的偏好，或在您再次访问时认出您。 跟踪保护功能可阻止此类系统收集个人数据。 了解更多，请参阅关于 [AdGuard 中跟踪保护](https://adguard.com/kb/general/stealth-mode/)的文章。
 
-![跟踪保护](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
+![Tracking protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
 
 如果您不想手动调整过滤器，可以直接选择以下预设保护级别之一：
 
@@ -33,7 +27,7 @@ sidebar_position: 2
 
 ## 常规设置
 
-![常规设置](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general.png)
+![General settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general_settings.png)
 
 ### 拦截跟踪器
 
@@ -43,17 +37,21 @@ sidebar_position: 2
 
 使用「AdGuard URL 跟踪」过滤器去掉页面 URL 中的 `utm_*`、`fb_ref` 等跟踪参数。
 
-### 隐藏您的搜索查询
+### 隐藏搜索查询
 
 隐藏从搜索引擎访问网站时使用的搜索词。 当您从 Google、Yahoo 或其他搜索引擎跳转到某个网站时，此选项会隐藏您用来查找该网站的搜索查询。
 
-### 要求网站不要跟踪您
+### 要求网站不跟踪
 
 向您访问的网站发送 [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) 和 [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) 信号。
 
+### 其他隐私过滤器
+
+Applies a set of additional privacy protection filters. The number next to _Enabled in Filters_ shows how many filters are currently active.
+
 ## 跟踪方式
 
-![跟踪方式](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_tracking_methods.png)
+![Tracking methods \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_tracking_methods.png)
 
 ### 删除第三方 Cookie
 
@@ -63,7 +61,7 @@ sidebar_position: 2
 
 通过此选项，用户可以设置一个时间限制（以分钟为单位），之后所有第三方 Cookie 将被删除。 如果将计时器设为 0，此类 Cookie 将被完全拦截。
 
-![生存时间](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/delete_third_party.png)
+![Time-to-live \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/delete_third_party.png)
 
 :::caution
 
@@ -95,13 +93,13 @@ Authorization 标头的值会被浏览器缓存，并随每次对同一域名的
 
 ## 浏览器 API
 
-![浏览器 API](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_browser_api.png)
+![Browser API \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_browser_api.png)
 
-### 拦截 WebRTC
+### Prevent IP address leaks through WebRTC
 
-「拦截 WebRTC」一个已知的漏洞，即使您使用代理或 VPN，它也可能泄露您的真实 IP 地址。
+Makes WebRTC use a stricter IP address policy to prevent your real IP address from being exposed, even if you use a proxy or VPN.
 
-WebRTC（Web 实时通信）是一种允许浏览器和应用之间直接传输数据流的技术。 即使您使用代理或 VPN，它也可能暴露您的真实 IP 地址。 启用此选项可能会干扰某些浏览器应用（如即时通讯工具、聊天室、影院或游戏）。
+WebRTC（Web 实时通信）是一种允许浏览器和应用之间直接传输数据流的技术。 By default, it can reveal your true IP address even when a proxy or VPN is active. This option enforces a stricter IP address policy instead of blocking WebRTC entirely, so browser applications such as messengers, chats, and games are less likely to be affected.
 
 ### 拦截 Push API
 
@@ -111,17 +109,17 @@ Push API 允许服务器向 Web 应用发送消息，无论您的浏览器是否
 
 启用此选项后，浏览器将不再向网站发送 GPS 数据。 这可以防止网站确定您的位置、改变搜索结果或根据您的位置定制内容。
 
-### 拦截 Flash
-
-Flash Player 插件已过时，极易受到病毒和漏洞攻击。 它还会拖慢网站加载速度。 启用此选项可阻止浏览器检测 Flash 组件（如插件或 ActiveXObject 对象），从而有效禁用 Flash 支持。
-
 ## Windows 跟踪
 
-![Windows 跟踪](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_windows_tracking.png)
+![Windows tracking \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_windows_tracking.png)
 
 ### 禁用 Windows 遥测
 
 禁止发送有关系统和应用使用情况的技术数据。
+
+### 禁用 Windows Recall
+
+Disables the Windows Recall feature, which periodically takes snapshots of your screen and stores them locally. This prevents sensitive information visible on your screen from being captured and saved.
 
 ### 关闭广告 ID
 
@@ -133,31 +131,31 @@ Flash Player 插件已过时，极易受到病毒和漏洞攻击。 它还会拖
 
 ### 禁用 WAP 推送消息路由服务
 
-禁止收集有关 Windows 组件问题的数据。
+Disables data collection about Windows component problems.
 
 ## 其它
 
-![其他](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_misc.png)
+![Miscellaneous \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_miscellaneous.png)
 
 ### 隐藏第三方 Referer
 
 Referer 是一个包含在浏览器到服务器请求中的 HTTP 标头。 其包含请求源的 URL。 当您在各网页间导航时，Referer 会保存初始页的 URL。 托管目标网页的服务器通常具备解析 Referer 的软件，并从中提取各种信息。
 
-启用「向第三方隐藏 Referer」选项后，AdGuard 会通过修改或移除该标头来防止第三方网站看到这些信息。
+Enabling the _Hide Referer from third parties_ option prevents third-party websites from seeing this information by altering or removing the header.
 
-您也可以在「自定义 Referer」字段中输入自定义值。 要使用默认 Referer，请将该字段留空。
+您也可以在「自定义 Referer」字段中输入自定义值。 要使用默认 Referer，置空此字段即可。
 
 请注意，为了能够过滤流量，AdGuard 应用会拦截浏览器到服务器的请求。 向广告、追踪及钓鱼服务器的请求可能会在发送至目标服务器前被修改，或遭到完全拦截。
 
 「向第三方隐藏 Referer」选项也是如此：为了过滤流量，AdGuard 会拦截 HTTP(S) 请求，并可能在请求到达服务器之前对其进行修改或拦截。 这种修改仅在请求离开您的浏览器之后发生。 因此，如果您在浏览器内部检查标头（例如使用 Chrome 开发者工具），您仍然会看到原始的 Referer。 要确认其已被修改，您可以使用 Fiddler 等外部工具。
 
-### 隐藏您的 User-Agent
+### 隐藏 User-Agent
 
 当您访问一个网站时，您的浏览器会发送一个名为 User-Agent 的标头作为 HTTP 请求的一部分。 它看起来像一行以「User-Agent:」开头的文本。 这行通常包含浏览器名称和版本、操作系统以及语言设置等信息。
 
 启用此选项后，AdGuard 会从 User-Agent 中移除身份识别信息，使广告商和跟踪器无法利用它来描绘您的画像。 如果您愿意，可以在「自定义 User-Agent」字段中输入自定义值。 要保持默认值，只需将该字段留空。
 
-### 伪装您的 IP 地址
+### 隐藏 IP 地址
 
 AdGuard 无法完全隐藏您的真实 IP 地址，但可以用另一个 IP 地址替换它，使网站认为您的连接是通过代理进行的。 在某些情况下，这有助于掩盖您的真实 IP。
 
@@ -169,16 +167,29 @@ AdGuard 无法完全隐藏您的真实 IP 地址，但可以用另一个 IP 地�
 
 ### 保护免受 DPI 影响
 
-深度数据包检测（英语：Deep Packet Inspection，缩写成 DPI）是一种按数据包内容对流量进行深度分析和过滤以及统计数据积累的系统。 利用这项技术，互联网服务提供商能够控制流量传输及限制客户访问内容。
+![Protect against DPI \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/protect_against_dpi.png)
 
-DPI 是一些 ISP 使用的技术，用于根据数据包内容分析和过滤流量。 它允许它们监控连接、限制对某些资源的访问，并收集有关用户的统计数据。
+Deep Packet Inspection (DPI) is a technology that allows ISPs to analyze and filter traffic based on packet content. With this option enabled, AdGuard modifies outgoing packet data to make it harder for DPI systems to identify and analyze your traffic, helping protect your connection privacy.
 
-启用此选项后，AdGuard 会修改发出的数据包数据，使其不再符合 DPI 的拦截条件。 这可以帮助您绕过限制，访问您需要的内容。 但并非所有 DPI 系统都能被绕过，改进仍在进行中。
+When you click on _Protect against DPI_, a separate screen opens with three groups of settings:
 
-「Protect from DPI」功能已在 AdGuard Windows 版、AdGuard Mac 版和 AdGuard Android 版中实现。
+**ClientHello split** — modifies the TLS ClientHello message to make it harder for DPI systems to detect and block encrypted connections. The following strategies are available:
+
+- _Split TCP packet at fixed position_ — splits the ClientHello TCP packet at a specified byte position.
+- _Split TLS record at fixed position_ — splits the TLS record containing the ClientHello at a specified byte position.
+- _Split TLS before SNI_ — splits the ClientHello before the Server Name Indication field.
+- _Split TLS after SNI_ — splits the ClientHello after the Server Name Indication field.
+- _Split TLS in the middle of SNI_ — splits the ClientHello in the middle of the Server Name Indication field.
+- _Split TLS randomly within SNI_ — splits the ClientHello at a random position within the Server Name Indication field.
+
+When using a fixed-position strategy, set the _Split byte position_ (1–1500) to specify where the split occurs.
+
+**HTTP request split** — splits HTTP requests into multiple TCP packets to bypass DPI systems that rely on inspecting complete HTTP requests.
+
+**HTTP space juggling** — manipulates whitespace in HTTP requests to confuse DPI systems that parse HTTP headers, making it harder for them to identify and block specific traffic.
 
 :::caution
 
-如果在 AdGuard Windows 版中启用此功能，可能会与 ESET 杀毒软件产生冲突。 在这种情况下，ESET 将无法过滤流量，导致某些恶意或被屏蔽的网站能够被访问。
+This feature can break access to some unencrypted websites. If this feature is enabled in AdGuard for Windows, it may also interfere with the ESET antivirus — ESET will not be able to filter traffic, leaving some malicious or blocked websites accessible.
 
 :::

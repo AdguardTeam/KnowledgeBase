@@ -25,9 +25,11 @@ AdGuard connects to two hosts: `api.adguard.org` and `filters.adtidy.org`. Make 
 
 If you usually use SMS or other tools, use them to push out the AdGuard MSI just as you would normally do with any other installation bundle.
 
-Otherwise, you can run the MSI on the target machine directly (and silently) with this command: `Msiexec /q /i AdGuard.msi`
+Otherwise, you can run the MSI on the target machine directly (and silently) with this command:
+`Msiexec /q /i AdGuard.msi`
 
-If you need to roll out an update, use this command: `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
+If you need to roll out an update, use this command:
+`Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
 :::note
 

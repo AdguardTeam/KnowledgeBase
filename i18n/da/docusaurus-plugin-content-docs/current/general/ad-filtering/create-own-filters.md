@@ -2435,7 +2435,7 @@ In case of multiple `$removeheader` rules matching a single request, we will app
     $xmlhttprequest,removeheader=P2case2
     ```
 
-    is converted to
+    konverteres til
 
     ```bash
     [
@@ -2680,7 +2680,7 @@ With these rules, specified UTM parameters will be removed from any request save
     $xmlhttprequest,removeparam=p1case2
     ```
 
-    is converted to
+    konverteres til
 
     ```bash
     [
@@ -2867,7 +2867,7 @@ Rules with `$replace` modifier are supported by AdGuard for Windows, AdGuard for
 
 #### **`$urltransform`** {#urltransform-modifier}
 
-The `$urltransform` rules allow you to modify the request URL by replacing text matched by a regular expression.
+The `$urltransform` rules allow you to modify the request URL by applying a series of transformations.
 
 **Funktioner**
 
@@ -2879,7 +2879,7 @@ The `$urltransform` value can be empty for exception rules.
 
 **Multiple rules matching a single request**
 
-If multiple `$urltransform` rules match a single request, we will apply each of them. **The order is defined alphabetically.**
+Hvis flere `$urltransform`-regler matcher en enkelt forespørgsel, anvendes de én ad gangen i leksikografisk rækkefølge, hver regel anvendt på resultatet af den foregående.
 
 **Syntaks**
 
@@ -2916,7 +2916,7 @@ This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for A
 
 :::
 
-As stated above, normally `$urltransform` rules are only allowed to change the path and query parts of the URL. However, if the rule's `regexp` begins with the string `^http`, then the full URL is searched and can be modified by the rule. Such a rule will not be applied if the URL transformation can not be achieved via an HTTP redirect (for example, if the request's method is `POST`).
+As stated above, normally `$urltransform` rules are only allowed to change the path and query parts of the URL. However, if the value of the `$urltransform` modifier begins with the string `/^http`, then the full URL becomes the input for, and can be modified by, the rule. Such a rule will not be applied if the URL transformation can not be achieved via an HTTP redirect (for example, if the request's method is `POST`).
 
 **Eksempler**
 
@@ -2965,19 +2965,35 @@ Many websites use tracking URLs to monitor clicks before redirecting to the actu
 
 Below is an example of how to obtain the clean destination link to bypass tracking websites and go directly to the destination.
 
-In our example:
+In our first example, the destination URL is percent-encoded:
 
- 1. The initial URL (with click tracking): `https://www.aff.example.com/visit?url=https%3A%2F%2Fwww.somestore.com%2F%26referrer%3Dhttps%3A%2F%2Fwww.aff.example.com%2F%26ref%3Dref-123`
- 1. Tracking URL after decoding special characters: `https://www.aff.example.com/visit?url=https://www.somestore.com/`
- 1. The website you want to visit: `https://www.somestore.com`
+ 1. The initial URL (with click tracking): `https://www.aff.example.com/visit?url=https%3A%2F%2Fwww.somestore.com%2F&ref=ref-123`
+ 1. The website you want to visit: `https://www.somestore.com/`
 
-To clean the URL, we first need to decode special characters (like `%3A` → `:`, `%2F` → `/`, etc.) and extract the real URL from the tracking parameters. We will use the `$urltransform` modifier to do this. The following 4 rules replace URL-encoded symbols with their real characters:
+For at rense URL'en, udtræk den kodede destination fra parameteren `url` og afkod den med transformationen `pct`:
 
-`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3A/:/` `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%2F/\//` `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3F/?/` `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3D/=/` `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%26/&/`
+```adblock
+/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=([^&]*).*/\$1/|pct
+```
 
-After that, we need to write the rule that will block the tracking website and redirect you directly to the target address (somestore.com):
+The first transformation extracts `https%3A%2F%2Fwww.somestore.com%2F`, and `pct` decodes it to `https://www.somestore.com/`.
 
-`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com.*url=([^&]*).*/\$1/`
+If the full target URL with a tracking parameter is Base64-encoded, the same approach can be used with the `b64` transformation, followed by another substitution that removes the tracking parameter:
+
+ 1. Den oprindelige URL (med kliksporing): `https://www.aff.example.com/visit?url=aHR0cHM6Ly93d3cuc29tZXN0b3JlLmNvbS8/cmVmPXJlZi0xMjM=`
+ 1. Webstedet, der ønskes besøgt: `https://www.somestore.com/`
+
+```adblock
+/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=([^&]*).*/\$1/|b64|/[?&]ref=[^&]*//
+```
+
+Den første transformation udtrækker `aHR0cHM6Ly93d3cuc29tZXN0b3JlLmNvbS8/cmVmPXJlZi0xMjM=` og `b64` afkoder den til `https://www.somestore.com/?ref=ref-123`. Den sidste udskiftning fjerner sporingsparameteren `ret`.
+
+:::caution Ændring af oprindelsen
+
+Bemærk, at værdien `$urltransform` i begge regler starter med `/^http`, så den fulde forespørgsels-URL transformeres. Uden dette præfiks kan kun URL-stien og -forespørgselsdelene transformeres.
+
+:::
 
 Tracking links will now be automatically cleaned up, allowing direct navigation to the destination website without tracking.
 
@@ -2985,7 +3001,7 @@ Tracking links will now be automatically cleaned up, allowing direct navigation 
 
 Rules with the `$urltransform` modifier can only be used [**in trusted filters**](#trusted-filters).
 
-`$urltransform` is only compatible with `$domain`, `$third-party`, `$important`, `$match-case`, `$badfilter`, `$to`, `$method`, `$popup`, `$denyallow`, and [content-type modifiers](#content-type-modifiers). Rules using any other modifiers are invalid and discarded.
+`$urltransform` er kun kompatibel med `$domain`, `$third-party`, `$important`, `$match-case`, `$badfilter`, `$to`, `$method`, `$popup`, `$denyallow` og [indholdstypemodifikatorer](#content-type-modifiers). Regler, som bruger andre modifikatorer, er ugyldige og kasseres.
 
 `$urltransform` rules without [content-type modifiers](#content-type-modifiers) will only match requests where the content type is `document`.
 
@@ -2997,18 +3013,18 @@ Rules with the `$urltransform` modifier are supported by AdGuard for Windows, Ad
 
 `$urltransform` rules with [content-type modifiers](#content-type-modifiers) are supported starting from [CoreLibs][] v1.19 or later. In earlier versions, content-type modifiers were not allowed with `$urltransform`.
 
-Rules with the `$urltransform` modifier and [content-type modifiers](#content-type-modifiers) are also supported by [AdGuard Browser Extension][ext-chr] v5.5 or later, and by [AdGuard for Chrome MV3][ext-mv3] v5.5 or later with [limitations](#urltransform-modifier-limitations).
+Reglee med modifikationeren `$urltransform` og [indholdstypemodifikatorer](#content-type-modifiers) understøttes også af [AdGuard Browser Extension][ext-chr] fra v5.5 og [AdGuard til Chrome MV3][ext-mv3] fra v5.5 med [begrænsninger](#urltransform-modifier-limitations).
 
 :::
 
-##### `$urltransform` modifier limitations {#urltransform-modifier-limitations}
+##### `$urltransform`-modifikatorbegrænsninger {#urltransform-modifier-limitations}
 
 :::caution Begrænsninger
 
-In [AdGuard for Chrome MV3][ext-mv3], the `$urltransform` modifier has the following limitations:
+I [AdGuard til Chrome MV3][ext-mv3] har modifikatoren `$urltransform` flg. begrænsninger:
 
-1. **No decode stages** — pipeline transforms containing `b64` (Base64 decode) or `pct` (percent-decode) stages are not supported and will be discarded.
-2. **No global replacement** — only the **first match** is replaced. The `/g` (global) flag is ignored. This is usually not an issue for full-URL transforms anchored with `^`, but path-only patterns that rely on replacing all occurrences will only replace the first one.
+1. **Ingen afkodningstrin** — pipeline-transformationer indeholdende trinnene `b64` (Base64-afkodning) eller `pct` (procentafkodning) understøttes ikke og kasseres derfor.
+2. **Ingen global erstatning** — kun det **første match** erstattes. Flaget `/g` (globalt) ignoreres. This is usually not an issue for full-URL transforms anchored with `^`, but path-only patterns that rely on replacing all occurrences will only replace the first one.
 3. **Single redirect per request** — when multiple `$urltransform` rules match the same request, only the highest-priority one takes effect. In CoreLibs, all matching rules are applied sequentially.
 :::
 
@@ -3366,7 +3382,7 @@ Element hiding rules are not dependent on each other. If there is a rule `exampl
 - `example.com,example.org###adblock` — hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
 - `~example.com##.textad` — hides an element with the class `textad` at all domains, except `example.com` and its subdomains.
 
-**Limitations**
+**Begrænsninger**
 
 Safari does not support both allowed and disallowed domains. So the rules like `example.org,~foo.example.org##.textad` are invalid in AdGuard for Safari.
 
@@ -3477,7 +3493,7 @@ example.org#@#body{remove:true;}
 
 ### Extended CSS selectors {#extended-css-selectors}
 
-- [Limitations](#extended-css-limitations)
+- [Begrænsninger](#extended-css-limitations)
 - [Pseudo-class `:has()`](#extended-css-has)
 - [Pseudo-class `:contains()`](#extended-css-contains)
 - [Pseudo-class `:matches-css()`](#extended-css-matches-css)
@@ -4170,7 +4186,7 @@ The `:empty-trimmed` pseudo-class allows selecting elements without text content
 **Syntaks**
 
 ```text
-[mål]:empty-trimmed
+[target]:empty-trimmed
 ```
 
 - `target` — valgfri, standard eller udvidet CSS-vælger, kan udelades ved tjek af *ethvert* element
@@ -4199,9 +4215,9 @@ Rules with the `:empty-trimmed` pseudo-class are supported by AdGuard Browser Ex
   <p id="empty"></p>
   <p id="spaces">   </p>
   <p id="nbsp">&nbsp;</p>
-  <p id="text">hej</p>
+  <p id="text">hello</p>
   <p id="child-empty"><span></span></p>
-  <p id="child-text"><span>verden</span></p>
+  <p id="child-text"><span>world</span></p>
   <p id="comment"><!-- hidden --></p>
   <p id="zwsp">&#x200B;</p>
 </div>
@@ -4327,7 +4343,7 @@ In addition to checking standard HTML attributes, you can filter elements based 
 
 The recommended way to filter elements by their content is using the `:contains()` pseudo-class. It allows you to target elements based on the actual text or script variables they contain, supporting both plain text strings and regular expressions.
 
-**Eksempler:**
+**Examples:**
 
 ```example.com$$script:contains(Adverts)
 example.com$$div:contains("Sponsored by")
@@ -4800,7 +4816,7 @@ targets = [target0, target1[, ...[, targetN]]]
  target = domain [path]
 ```
 
-**Eksempler:**
+**Examples:**
 
 - `example.org/checkout##.promo-banner` — hides `.promo-banner` elements only on checkout pages
 - `news.site.com/article##.sidebar-ad` — hides sidebar ads only on article pages
@@ -5337,6 +5353,8 @@ The following scriptlets also may be used for debug purposes:
 [cl-apps]: #what-product "AdGuard for Windows, Mac, Linux, Android"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
+[ext-mv3]: #what-product "AdGuard Browser Extension til Chrome MV3"
+[ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
 [ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
 [ext-ff]: #what-product "AdGuard Browser Extension for Firefox"
 [ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"

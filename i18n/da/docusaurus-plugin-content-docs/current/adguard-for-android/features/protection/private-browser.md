@@ -1,26 +1,26 @@
 ---
-title: Private browser
+title: Fortrolig webbrowser
 sidebar_position: 7
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-In v4.7, AdGuard for Android introduced an in-app private browser. You can access it from the main screen by tapping the _Private browser_ button or from the _Protection_ tab, where you can find some customization options.
+I v4.7 introducerede AdGuard til Android en fortrolig webbrowser i appen. Den kan tilgås fra hovedskærmen ved at trykke på knappen _Fortrolig webbrowser_ eller via fanen _Beskyttelse_, hvor nogle tilpasningsmuligheder kan findes.
 
-![Private browser \*mobile](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
+![Fortrolig webbrowser \*mobile](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
 
-Here's what you can set up:
+Her er, hvad der kan opsættes:
 
-- To set a default search engine, tap _Default search engine_ and choose between the available options: DuckDuckGo (default), Google, Bing, Yahoo, Baidu, or Yandex
-- To create a browser shortcut, tap _Create browser widget_ and follow the on-screen instructions
-- To get suggestions from your search engine instead of typing the entire query, toggle the _Search suggestions_ option
+- For at indstille en standard søgemaskine, tryk på _Standard søgemaskine_ og vælg mellem de tilgængelige muligheder: DuckDuckGo (standard), Google, Bing, Yahoo, Baidu eller Yandex
+- For at oprette en webbrowsergenvej, tryk på _Opret webbrowser-widget_ og følg vejledningen på skærmen
+- For at få forslag fra søgemaskinen i stedet for at skrive hele forespørgslen, slå indstillingen _Søgeforslag_ til
 
 :::note
 
-The private browser is still in the early stages of development and has some limitations. For now, we recommend using it as a supplement to your browser’s Incognito mode, rather than as a replacement.
+Den fortrolige webbrowser er stadig i de tidlige udviklingsfaser og har visse begrænsninger. P.t. anbefaler vi, at den bruges som et supplement til webbrowserens Incognito-tilstand snarere end som en erstatning.
 
 :::

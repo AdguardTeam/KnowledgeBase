@@ -3,15 +3,9 @@ title: Controle parental
 sidebar_position: 6
 ---
 
-:::info
-
-Este artigo descreve o AdGuard para Windows v8.0, um bloqueador de anúncios completo que protege seu dispositivo em nível de sistema. Esta é uma versão beta que ainda está em desenvolvimento. Para experimentá-lo, baixe a [versão beta do AdGuard para Windows](https://agrd.io/windows_beta).
-
-:::
-
 Existem vários sites que crianças não deveriam poder acessar. O _controle parental_ ajuda você a resolver esse problema.
 
-![Controle parental](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/parental.png)
+![Parental control \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/parental.png)
 
 Quando o _Controle parental_ está ativado, o AdGuard analisa o conteúdo das páginas da web e bloqueia aquelas que podem ser prejudiciais ou inadequadas para crianças. Isso inclui imagens e textos adultos, linguagem vulgar, violência e conteúdo relacionado a drogas.
 

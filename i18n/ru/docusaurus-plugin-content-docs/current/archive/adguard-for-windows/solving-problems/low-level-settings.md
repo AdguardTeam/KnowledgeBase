@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
@@ -13,13 +13,13 @@ sidebar_position: 7
 
 :::caution
 
-Изменение *Расширенных настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. Вносить изменения в эти настройки следует только в том случае, если вы уверены в том, что делаете, или если об этом вас попросила наша служба поддержки.
+Mindlessly changing _Advanced Settings_ can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. Вносить изменения в эти настройки следует только в том случае, если вы уверены в том, что делаете, или если об этом вас попросила наша служба поддержки.
 
 :::
 
 ## Как перейти к Расширенным настройкам
 
-Чтобы попасть в *Расширенные настройки*, на главном экране откройте *Настройки → Основные настройки* и прокрутите вниз до *Расширенных настроек*. Или выберите *Расширенные → Расширенные настройки...* в трей-меню.
+To go to _Advanced settings_, in the main windows click _Settings → General Settings_ and scroll down to _Advanced Settings_. Alternatively, select _Advanced → Advanced settings..._ in the tray menu.
 
 ## Расширенные настройки
 
@@ -31,7 +31,7 @@ sidebar_position: 7
 
 ### Использовать Encrypted Client Hello
 
-У каждого зашифрованного интернет-соединения есть незашифрованная часть. Это самый первый пакет, который содержит имя сервера, к которому вы подключаетесь. Технология Encrypted Client Hello должна решить эту проблему и зашифровать последний бит незашифрованной информации. Чтобы воспользоваться ей, включите опцию *Использовать Encrypted Client Hello*. Она использует локальный DNS-прокси для поиска ECH-конфигурации для домена. Если она найдена, пакет Client Hello будет зашифрован.
+У каждого зашифрованного интернет-соединения есть незашифрованная часть. Это самый первый пакет, который содержит имя сервера, к которому вы подключаетесь. Технология Encrypted Client Hello должна решить эту проблему и зашифровать последний бит незашифрованной информации. To benefit from it, enable the _Use Encrypted Client Hello_ option. Она использует локальный DNS-прокси для поиска ECH-конфигурации для домена. Если она найдена, пакет Client Hello будет зашифрован.
 
 ### Проверять прозрачность сертификатов сайтов
 
@@ -59,16 +59,16 @@ sidebar_position: 7
 
 ### Автоматически перехватывать URL-адрес фильтра
 
-Включите эту функцию, если вы хотите, чтобы AdGuard автоматически перехватывал URL фильтра (например, `abp:subscribe` и т.п.) и открывал диалог установки пользовательского фильтра.
+Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
 
 ### Фильтровать HTTP/3
 
 Если эта настройка включена, AdGuard будет фильтровать запросы, отправленные по протоколу HTTP/3, в дополнение к другим типам запросов.
 
-**Limitations**:
+**Ограничения**:
 
 - Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
-- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Браузеры на базе Firefox ведут себя аналогично по умолчанию, но вы можете установить параметр `network.http.http3.disable_when_third_party_roots_found` в `about:config` в значение `false`, чтобы разрешить пользовательские сертификаты для HTTP/3.
 - Safari supports HTTP/3 filtering without additional configuration.
 
 ### Использовать драйвер в режиме перенаправления
@@ -79,7 +79,7 @@ sidebar_position: 7
 
 ### Открывать главное окно при запуске системы
 
-Включите эту опцию, чтобы главное окно AdGuard открывалось при каждом запуске системы. Эта настройка не влияет на то, запущена ли реальная фильтрация или нет. Она находится в разделе *Настройки → Общие настройки*.
+Включите эту опцию, чтобы главное окно AdGuard открывалось при каждом запуске системы. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in _Settings → General Settings_.
 
 ### Включать фильтрацию при запуске системы
 
@@ -87,7 +87,7 @@ sidebar_position: 7
 
 :::note
 
-До версии 7.12 сервис AdGuard по умолчанию запускался в режиме фильтрации, даже если опция *Запускать AdGuard при старте системы* была отключена. Если вас устраивало прежнее поведение, включите эту опцию.
+Before v7.12, the AdGuard service started in filtering mode by default (even if the _Launch AdGuard at system start-up_ was disabled). Если вас устраивало прежнее поведение, включите эту опцию.
 
 :::
 
@@ -97,11 +97,11 @@ sidebar_position: 7
 
 ### Не фильтровать указанные диапазоны IP-адресов
 
-Если вы не хотите, чтобы AdGuard фильтровал определённые подсети, включите эту функцию и укажите IP-диапазоны в нотации CIDR (например, 98.51.100.14/24) в разделе **IP-диапазоны, исключённые из фильтрации** ниже.
+If you don't want AdGuard to filter particular subnets, enable this feature and specify the IP ranges in the CIDR notation (e.g. 98.51.100.14/24) in the **IP ranges excluded from filtering** section below.
 
 ### Включить запись HAR
 
-Эта опция должна быть включена **только в целях отладки**. Если включить эту опцию, AdGuard создаст файл в формате HAR 1.2 с информацией обо всех отфильтрованных HTTP-запросах. Этот файл можно проанализировать с помощью приложения Fiddler. Обратите внимание, что это может значительно замедлить просмотр веб-страниц.
+This option should be enabled **only for debugging purposes**. Если включить эту опцию, AdGuard создаст файл в формате HAR 1.2 с информацией обо всех отфильтрованных HTTP-запросах. Этот файл можно проанализировать с помощью приложения Fiddler. Обратите внимание, что это может значительно замедлить просмотр веб-страниц.
 
 ### Добавлять пробел к обычному HTTP-запросу
 
@@ -119,7 +119,7 @@ GET  /foo/bar/ HTTP/1.1
 Host:example.org
 ```
 
-This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### Настроить размер фрагментации начального пакета TLS
 
@@ -127,13 +127,13 @@ Specifies the size of the TCP packet fragmentation, avoiding deep packet inspect
 
 If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Valid values: 1–1500. Если указан недопустимый размер, будет использоваться значение, установленное системой. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Valid values: 1–1500. Если указан недопустимый размер, будет использоваться значение, установленное системой. This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### Размер фрагмента обычного HTTP-запроса
 
 Настраивает размер фрагментации HTTP-запроса. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-Допустимые значения: 1–1500. Если указан недопустимый размер, будет использоваться значение, установленное системой. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Valid values: 1–1500. Если указан недопустимый размер, будет использоваться значение, установленное системой. This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### Показывать QUIC
 
@@ -149,7 +149,7 @@ Here you can specify an idle time period, in seconds, before sending a keepalive
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+This setting only works when the _Enable TCP keepalive_ option is enabled.
 
 :::
 
@@ -159,13 +159,13 @@ Here you can specify time in seconds before sending another keepalive probe to a
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+This setting only works when the _Enable TCP keepalive_ option is enabled.
 
 :::
 
 ### Блокировать Java
 
-Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
+Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use _Block Java_ option, JavaScript will still be enabled.
 
 ### Время ожидания ответа DNS-сервера
 
@@ -215,7 +215,7 @@ If Custom IP address is selected in Blocking mode for hosts rules or Blocking mo
 
 If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
-### Резервные (fallback) серверы
+### Fallback-серверы
 
 Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
 
@@ -233,7 +233,7 @@ If you want AdGuard to use custom fallback servers, list them in this section, o
 
 ### Список пользовательских bootstrap-адресов
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in _DNS protection_. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
 By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
 

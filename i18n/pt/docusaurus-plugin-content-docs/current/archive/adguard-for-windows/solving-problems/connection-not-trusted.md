@@ -15,15 +15,15 @@ Normally browsers trust the AdGuard certificate once it's added to the system ce
 
 Here are some common issues:
 
-- [*Potential Security Risk* error in Firefox-based browsers](#potential-security-risk-error-in-firefox-based-browsers)
+- [_Potential Security Risk_ error in Firefox-based browsers](#potential-security-risk-error-in-firefox-based-browsers)
 - [Yandex.Browser certificate warning](#yandexbrowser-certificate-warning)
 - [Non-official add-ons don’t update in Firefox-based browsers](#non-official-add-ons-dont-update-in-firefox-based-browsers)
 
-## *Potential Security Risk* error in Firefox-based browsers
+## _Potential Security Risk_ error in Firefox-based browsers
 
 ![Security risk error](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
 
-Old FireFox versions, as well as browsers based on them, do not trust certificates from the system storage, but only those from their local storage. Since v68, FireFox trusts the system certificates, but you still can face the "Connection is untrusted" error. If something like this happens, first try to click the *Reinstall Certificate* button — you will find it in the *Network* tab.
+Old FireFox versions, as well as browsers based on them, do not trust certificates from the system storage, but only those from their local storage. Since v68, FireFox trusts the system certificates, but you still can face the "Connection is untrusted" error. If something like this happens, first try to click the _Reinstall Certificate_ button — you will find it in the _Network_ tab.
 
 ![Reinstall Certificate](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
 
@@ -33,36 +33,35 @@ If that doesn't help, follow the instructions for manually adding the AdGuard ce
 
 1. Run AdGuard.
 
-1. Go to [https://local.adguard.org/cert](https://local.adguard.org/cert) and click the *Download* button. The browser should start downloading **cert.cer** file.
+2. Go to [https://local.adguard.org/cert](https://local.adguard.org/cert) and click the _Download_ button. The browser should start downloading **cert.cer** file.
 
-    :::note
+   :::note
 
-    You can also open the download page by clicking the link via the AdGuard app at *Settings → Network → HTTPS filtering*.
+   You can also open the download page by clicking the link via the AdGuard app at _Settings → Network → HTTPS filtering_.
 
+   :::
 
-:::
+   ![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
 
-    ![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
+3. Open your browser and then open _Settings_.
 
-1. Open your browser and then open *Settings*.
+4. Go to _Privacy & Security_ tab.
 
-1. Go to *Privacy & Security* tab.
+5. Scroll down to _Certificates_ and click the _View Certificates_ button.
 
-1. Scroll down to *Certificates* and click the *View Certificates* button.
+   ![View certificates window](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
 
-    ![View certificates window](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
+6. Select _Authorities_ tab.
 
-1. Select *Authorities* tab.
+7. Click _Import..._.
 
-1. Click *Import...*.
+   ![Certificate settings — import](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
 
-    ![Certificate settings — import](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
+8. Browse the downloaded **cert.cer** file and click _Open_.
 
-1. Browse the downloaded **cert.cer** file and click *Open*.
+9. Check the _Trust this CA to identify websites_ box and then click _OK_.
 
-1. Check the *Trust this CA to identify websites* box and then click *OK*.
-
-    ![Certificate settings — checkbox](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
+   ![Certificate settings — checkbox](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
 
 You've successfully installed AdGuard certificate. Restart the browser and the error should go away.
 
@@ -80,7 +79,7 @@ However, AdGuard also adds its certificate to the trusted ones. This leads to th
 
 ### How to solve the problem
 
-The easiest way is to click the **Go to site** button. This will tell Yandex.Browser to remember AdGuard certificate as a trusted one, at least for a while. Normally, you won't have to see this message anymore, but it is not beyond the realm of possibility for it to appear occasionally, for whatever reasons. In such cases, simply press the same button again *(make sure it is AdGuard's certificate!)*.
+The easiest way is to click the **Go to site** button. This will tell Yandex.Browser to remember AdGuard certificate as a trusted one, at least for a while. Normally, you won't have to see this message anymore, but it is not beyond the realm of possibility for it to appear occasionally, for whatever reasons. In such cases, simply press the same button again _(make sure it is AdGuard's certificate!)_.
 
 Disabling the HTTPS filtering in AdGuard will also prevent Yandex.Browser from showing this message again, but it comes with a big price: all ads that are loaded by HTTPS (including **Yandex's own ads**) will show up — on such websites as YouTube, Facebook, Instagram, and many more. We strongly advise against it if you want to keep the quality of ad blocking high.
 

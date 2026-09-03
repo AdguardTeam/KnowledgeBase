@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -21,7 +21,7 @@ Under _App and filter updates_, you can configure automatic filter updates and s
 
 ![Updates \*mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
 
-### Advanced settings
+### Avancerede indstillinger
 
 _Automation_ allows you to manage AdGuard via tasker apps.
 
@@ -59,7 +59,7 @@ If you activate too many filters, some websites may work incorrectly.
 
 [Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
 
-### Extensions
+### Udvidelser
 
 Extensions allow you to add userscripts and userstyles.
 
@@ -73,7 +73,7 @@ To add a userstyle, go to _Settings_ → _Filtering_ → _Extensions_→ _Add ex
 
 To create your own style, tap _Add extension_ → _Create userstyle_.
 
-#### AdGuard Extra
+#### AdGuard Ekstra
 
 AdGuard Extra is a custom userscript that blocks complex ads and mechanisms that reinject ads to websites.
 

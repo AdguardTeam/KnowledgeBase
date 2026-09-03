@@ -11,7 +11,7 @@ Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multif
 
 :::note
 
-Datele și/sau fișierele furnizate în jurnale sunt procesate în conformitate cu [Politica de confidențialitate a AdGuard](https://adguard.com/en/privacy.html).
+Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
 
 :::
 
@@ -19,54 +19,54 @@ Pentru a analiza și diagnostica diferite probleme care ar putea apărea, servic
 
 :::note
 
-AdGuard se angajează să protejeze intimitatea dumneavoastră. Respectăm strict [Politica confidențialității](https://adguard.com/privacy/windows.html) și nu colectăm informații private despre utilizatori. Înainte de a trimite jurnalele echipei de asistență, vă rugăm să revizuiți fișierul, deoarece acesta poate conține informații suplimentare pe care nu doriți să le împărtășiți. Dacă conține astfel de informații personale, vă recomandăm să le ștergeți mai întâi.
+AdGuard se angajează să protejeze intimitatea dumneavoastră. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Înainte de a trimite jurnalele echipei de asistență, vă rugăm să revizuiți fișierul, deoarece acesta poate conține informații suplimentare pe care nu doriți să le împărtășiți. Dacă conține astfel de informații personale, vă recomandăm să le ștergeți mai întâi.
 
 :::
 
-### Jurnale de depanare {#debug-logs}
+### Debug logs {#debug-logs}
 
-1. Deschideți setările AdGuard. Go to the *General Settings* section, scroll down to the bottom of the screen, and switch the *Logging Level* to *Debug*.
+1. Deschideți setările AdGuard. Go to the _General Settings_ section, scroll down to the bottom of the screen, and switch the _Logging Level_ to _Debug_.
 
-    ![Nivelul de jurnal de depanare *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
+   ![Debug logging level \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
-1. Reproduceți problema.
+2. Reproduceți problema.
 
-    Vă sfătuim să notați ora exactă când ați reprodus problema: va ajuta echipa noastră de suport să găsească înregistrările jurnal relevante și să rezolve problema mai repede.
+   Vă sfătuim să notați ora exactă când ați reprodus problema: va ajuta echipa noastră de suport să găsească înregistrările jurnal relevante și să rezolve problema mai repede.
 
-1. Exportați jurnalele colectate folosind butonul *Exportați jurnalele*.
+3. Export the collected logs using the _Export Logs_ button.
 
-    ![Exportați jurnalele *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+   ![Export logs \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-    Salvați arhiva într-un folder.
+   Salvați arhiva într-un folder.
 
-1. **Important**: după ce ați exportat jurnalele, setați din nou nivelul de jurnal la *Implicit*. *Nivelul de depanare* va încetini aplicația.
+4. **Important**: after exporting the logs, set the logging level back to _Default_. _Debug_ logging level will slow down the application.
 
-1. Trimiteți arhiva serviciului de suport AdGuard la **support@adguard.com**, descrieți problema și nu uitați să menționați ora când ați reprodus problema.
+5. Send the archive to the AdGuard support service at **support@adguard.com**, describe the problem and don't forget to mention the time when you reproduced the issue.
 
-### Jurnale de urmărire {#trace-logs}
+### Trace logs {#trace-logs}
 
-Uneori, membrii echipei de suport pot să vă întrebe să trimiteți *jurnale de urmărire*. Apoi va trebui să faceți următoarele:
+Sometimes support team members may ask you to send _trace_ logs. Apoi va trebui să faceți următoarele:
 
-1. Opriți AdGuard făcând clic dreapta pe iconița AdGuard din meniul de sistem și alegând *Ieșiți din AdGuard*:
+1. Stop AdGuard by right-clicking the AdGuard icon in the tray menu and choosing _Exit AdGuard_:
 
-    ![Ieșiți din AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
+   ![Exit AdGuard \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
 
-    Vă rugăm nu lăsați serviciul să ruleze:
+   Vă rugăm nu lăsați serviciul să ruleze:
 
-    ![Opriți Serviciul AdGuard *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
+   ![Stop AdGuard Service \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
 
-1. Deschideți consola (tastați `cmd` în panoul de start).
+2. Open the console (type `cmd` in the start panel).
 
-1. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard for Windows v7.16 or later.
+3. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard for Windows v7.16 or later.
 
 If you have an older version of AdGuard for Windows, run the application with the command C:\"Program Files (x86)"\Adguard\Adguard.exe /trace if you are using 64-bit Windows, and C:\"Program Files"\Adguard\Adguard.exe /trace if you are using 32-bit.
 
 1. Reproduceți problema.
 
-    Vă sfătuim să notați ora exactă când ați reprodus problema: va ajuta echipa noastră de suport să găsească înregistrările jurnal relevante și să rezolve problema mai repede.
+   Vă sfătuim să notați ora exactă când ați reprodus problema: va ajuta echipa noastră de suport să găsească înregistrările jurnal relevante și să rezolve problema mai repede.
 
-1. Exportați jurnalele colectate folosind butonul *Exportați jurnalele*.
+2. Export the collected logs using the _Export Logs_ button.
 
-    ![Exportați jurnalele *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+   ![Export logs \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-    Nu vă faceți griji dacă fișierul jurnal este mare. Trebuie să știm cât mai multe detalii pentru a rezolva problema dumneavoastră.
+   Nu vă faceți griji dacă fișierul jurnal este mare. Trebuie să știm cât mai multe detalii pentru a rezolva problema dumneavoastră.

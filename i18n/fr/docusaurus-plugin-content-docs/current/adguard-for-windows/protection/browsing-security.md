@@ -3,12 +3,6 @@ title: Navigation sécurisée
 sidebar_position: 5
 ---
 
-:::info
-
-Cet article décrit AdGuard pour Windows v8.0, un bloqueur de publicité complet qui protège votre appareil au niveau du système. Il s'agit d'une version bêta encore en développement. Pour l'essayer, téléchargez la [version bêta d'AdGuard pour Windows](https://agrd.io/windows_beta).
-
-:::
-
 _La Navigation sécurisée_ offre une protection efficace contre les sites Web nuisibles et les tentatives d'hameçonnage.
 
 Bien qu'AdGuard pour Windows ne soit pas un antivirus, il assure une sécurité essentielle en vous avertissant avant de visiter des sites non fiables ou de télécharger des fichiers potentiellement dangereux.
@@ -17,7 +11,7 @@ Il n'arrêtera pas un virus déjà téléchargé et ne supprimera pas les logici
 
 Pour plus de détails sur le fonctionnement de cette protection, consultez notre article [Protection contre le phishing et les logiciels malveillants](/general/browsing-security).
 
-![Navigation sécurisée](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/browsing.png)
+![Browsing security \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/browsing.png)
 
 Dans la section _Navigation sécurisée_, vous pouvez :
 

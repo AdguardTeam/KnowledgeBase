@@ -9,7 +9,7 @@ Los scripts de usuario (también los llamamos "extensiones") son, de facto, mini
 
 :::note Aplicaciones compatibles
 
-AdGuard puede ampliar significativamente la funcionalidad del sitio web al actuar como administrador de scripts de usuario. Puedes agregar tus scripts personalizados o administrar los existentes en nuestros tres productos: [AdGuard para Windows](/adguard-for-windows/protection/extensions), [AdGuard para Android](/adguard-for-android/features/settings#userscripts) y [AdGuard para Mac](/adguard-for-mac/features/extensions).
+AdGuard puede ampliar significativamente la funcionalidad del sitio web al actuar como administrador de scripts de usuario. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/protection/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
 
 :::
 
@@ -39,7 +39,7 @@ Esta versión del Asistente de AdGuard es antigua y no tiene sentido usarla en s
 
 :::
 
-#### Disable AMP
+#### Deshabilitar AMP
 
 Un script que sólo está preinstalado en AdGuard para Android. Desactiva AMP (Accelerated Mobile Pages) en la página de resultados de búsqueda de Google. Obtén más información sobre este scripts de usuario y cómo instalarlo en [GitHub](https://github.com/AdguardTeam/DisableAMP).
 
@@ -75,7 +75,7 @@ To try it out:
 
 #### tinyShield
 
-Un script de usuario para personas que visitan sitios web coreanos y algunos sitios web internacionales. El script de usuario de tinyShield bloquea los anuncios de Ad-Shield y los antibloqueos de anuncios. Este script de usuario se puede instalar en aplicaciones basadas en AdGuard CoreLibs, Violentmonkey, Tampermonkey y [quoid/userscripts](https://github.com/quoid/userscripts). Obtén más información sobre tinyShield y cómo instalarlo en [GitHub](https://github.com/List-KR/tinyShield).
+tinyShield is primarily designed for Korean websites protected by Ad-Shield, but it also supports many international websites that use the same ad anti-adblocking technology. This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about tinyShield and how to install it on [GitHub](https://github.com/FilteringDev/tinyShield).
 
 ### ¿Dónde conseguir más scripts de usuario?{#more-userscripts}
 
@@ -95,25 +95,29 @@ Aquí describiremos algunos de los catálogos de scripts de usuario más popular
 
 [OpenUserJS.org](https://openuserjs.org/) es un catálogo de scripts de usuario de código abierto escrito en nodeJS. No está moderado, así que esté atento a los scripts sospechosos.
 
-#### Comunidad
+#### NamuLink
 
-Si te gusta la idea de personalizar tu navegador con scripts de usuario y tienes alguna duda, puedes preguntarlo en uno de estos sitios web:
+[NamuLink](https://github.com/FilteringDev/NamuLink) is an open-source userscript that removes Naver PowerLink advertisements from NamuWiki by bypassing the site's advanced link obfuscation mechanisms. The project is maintained by the AdGuard team and the broader ad-blocking community.
+
+#### Community
+
+If you like the idea of customizing your browser with userscripts and have questions, you can ask them on one of these websites:
 
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/userscripts)
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
 - [Reddit](https://www.reddit.com/r/userscripts/)
 
-### Desarrollo
+### Development
 
-#### Solicitar licencia
+#### Request license
 
-Si estás desarrollando tu propio script de usuario y quieres probar cómo funciona con AdGuard, puedes solicitar una licencia completando el [formulario](https://surveys.adguard.com/en/for_developers_request/form.html).
+If you are developing your own userscript and want to test how it works with AdGuard, you can request a license by filling in [the form](https://surveys.adguard.com/en/for_developers_request/form.html).
 
-#### Compatibilidad
+#### Compatibility
 
-##### Bloqueo de metadatos
+##### Metadata block
 
-###### Propiedades compatibles
+###### Supported properties
 
 - [`@name`](https://wiki.greasespot.net/Metadata_Block#@name)
 - [`@namespace`](https://wiki.greasespot.net/Metadata_Block#@namespace)
@@ -134,19 +138,19 @@ Si estás desarrollando tu propio script de usuario y quieres probar cómo funci
 - [`@icon`, `@iconURL`, `@defaulticon`](https://www.tampermonkey.net/documentation.php#meta:icon)
 - [`@icon64`, `@icon64URL`](https://www.tampermonkey.net/documentation.php#meta:icon64)
 
-###### Propiedades no compatibles
+###### Unsupported properties
 
-Estas propiedades serán simplemente ignoradas por AdGuard.
+These properties will be simply ignored by AdGuard.
 
 - [`@unwrap`](https://www.tampermonkey.net/documentation.php#meta:unwrap)
 
-##### Funciones GM compatibles
+##### Supported GM functions
 
-AdGuard admite tanto las funciones GM\_ antiguas como la nueva API GM4 que utiliza objetos GM.
+AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
 
 :::note
 
-Todas las funciones antiguas de Greasemonkey enumeradas están obsoletas pero aún son compatibles.
+All listed old Greasemonkey functions are deprecated but still supported.
 
 :::
 
@@ -167,7 +171,7 @@ Todas las funciones antiguas de Greasemonkey enumeradas están obsoletas pero a�
 - [`GM.addElement`, `GM_addElement`](https://www.tampermonkey.net/documentation.php#api:GM_addElement)
 - [`window.onurlchange`](https://www.tampermonkey.net/documentation.php#api:window.onurlchange)
 
-Puedes encontrar más información sobre la API de Greasemonkey en [su manual](https://wiki.greasespot.net/Greasemonkey_Manual:API).
+You can find more information about Greasemonkey API in [its manual](https://wiki.greasespot.net/Greasemonkey_Manual:API).
 
 #### Ejemplo
 
@@ -212,27 +216,27 @@ Puedes encontrar más información sobre la API de Greasemonkey en [su manual](h
 
 #### Trusted Types API
 
-AdGuard proporciona una instancia de la clase `PolicyApi` que permite administrar Trusted Types en tus scripts de usuario.
+AdGuard provides an instance of the `PolicyApi` class that allows you to manage Trusted Types in your userscripts.
 
-Puedes acceder a la instancia de esta clase utilizando la variable `ADG_policyApi` en tu script de usuario.
+You can access the instance of this class by using the `ADG_policyApi` variable in your userscript.
 
-##### Propiedades
+##### Properties
 
-- `nombre: cadena` — un nombre de la política (Predeterminado es `"AGPolicy"`).
-- `isSupported: boolean` — una bandera que indica si la Trusted Types API es soportada por el navegador actual.
+- `name: string` — a name of the policy (Default is `"AGPolicy"`).
+- `isSupported: boolean` — a flag indicating whether or not the Trusted Types API is supported by the current browser.
 
-##### Métodos polyfill
+##### Polyfilled methods
 
-- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). Si no se admite, devuelve `input: cadena`.
+- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). If not supported, returns `input: string`.
 - [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). If not supported, returns `input: string`.
-- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). Si no se admite, devuelve `input: cadena`.
-- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). Si no se admite, devuelve `null`.
-- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). Si no se admite, devuelve `null`.
-- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). Si no se admite, devuelve `false`.
-- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). Si no se admite, devuelve `false`.
-- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). Si no se admite, devuelve `false`.
+- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). If not supported, returns `input: string`.
+- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). If not supported, returns `null`.
+- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). If not supported, returns `null`.
+- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). If not supported, returns `false`.
+- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). If not supported, returns `false`.
+- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). If not supported, returns `false`.
 
-##### Características adicionales
+##### Additional Types
 
 ```typescript
 /**
@@ -262,7 +266,7 @@ ADG_TrustedType.HTML // "TrustedHTML"
 type TrustedValue = string | TrustedHTML | TrustedScript | TrustedScriptURL;
 ```
 
-##### Métodos adicionales
+##### Additional methods
 
 ```typescript
 /**
@@ -343,7 +347,7 @@ divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML"
 
 #### Matching SPA sites
 
-:::info Compatibilidad
+:::info Compatibility
 
 This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.19 or later.
 

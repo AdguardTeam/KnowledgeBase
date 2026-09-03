@@ -5,7 +5,7 @@ sidebar_position: 3
 
 AdGuard 어시스턴트의 주요 기능은 브라우저에서 직접 필터링을 관리하는 것입니다. 이 도구는 꽤 오랫동안 존재해 왔으며 그 형태와 기능이 변화해 왔습니다. 이전에는 단순한 유저스크립트였으나 Windows용 AdGuard 앱에 통합되어 브라우저 확장 프로그램이 되었습니다. 이제 어시스턴트의 기능이 더욱 향상되었습니다.
 
-![브라우저 어시스턴트 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
+![Browser Assistant \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
 
 ## 장점
 
@@ -15,7 +15,7 @@ AdGuard 브라우저 어시스턴트는 브라우저 확장 프로그램으로, 
 
 ### 주요 앱과의 호환성
 
-이전 [AdGuard 광고 차단 확장 프로그램](/adguard-browser-extension/compatibility)을 사용했다면 새로운 브라우저 어시스턴트를 위해 개발한 솔루션이 마음에 들 것입니다.
+If you got into the habit of using our previous [AdGuard Ad Blocker extension](/adguard-browser-extension/compatibility), you might like the solution that we have developed for the new Browser Assistant.
 
 배경 정보
 
@@ -29,17 +29,18 @@ AdGuard 브라우저 어시스턴트는 브라우저 확장 프로그램으로, 
 
 새로운 브라우저 어시스턴트에는 스텔스 모드, 브라우징 보안, 자녀보호 기능 등과 함께 Windows용 AdGuard 설정에 자체 탭이 있습니다. 거기에서 기본 브라우저용 확장 프로그램을 다운로드할 수 있는 링크를 찾을 수 있습니다. 또한 이전 버전의 어시스턴트를 사용하도록 설정하는 확인란도 있습니다.
 
-![설정 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
 ## 레거시 어시스턴트
 
-레거시 어시스턴트는 브라우저 확장 프로그램이 아닌 단순한 유저스크립트인 이전 버전의 어시스턴트입니다. 기본적으로 새로운 브라우저 어시스턴트 대신 이 기능을 선택하는 경우는 두 가지입니다.
+레거시 어시스턴트는 브라우저 확장 프로그램이 아닌 단순한 유저스크립트인 이전 버전의 어시스턴트입니다.
+기본적으로 새로운 브라우저 어시스턴트 대신 이 기능을 선택하는 경우는 두 가지입니다.
 
 1. 현재 사용 중인 브라우저에서는 새 어시스턴트를 사용할 수 없습니다.
-1. 녹색 방패 아이콘에 익숙해져서 그대로 두고 싶을 때입니다.
+2. 녹색 방패 아이콘에 익숙해져서 그대로 두고 싶을 때입니다.
 
 ## AdGuard 브라우저 어시스턴트 설치 방법
 
 기본 브라우저에 브라우저 어시스턴트를 설치하려면 앱 설정에서 직접 설치할 수 있지만, 다른 브라우저에도 설치할 수 있습니다.
 
-AdGuard 브라우저 어시스턴트는 Chrome, Firefox, Edge, Opera 및 Yandex와 같은 모든 인기 브라우저에서 사용할 수 있습니다. 필요한 어시스턴트를 설치하려면(여러 개를 설치하는 것을 권장) [AdGuard 웹사이트](https://adguard.com/adguard-assistant/overview.html)로 이동하여 브라우저 아이콘을 클릭한 다음 *설치* 버튼을 누르세요.
+AdGuard 브라우저 어시스턴트는 Chrome, Firefox, Edge, Opera 및 Yandex와 같은 모든 인기 브라우저에서 사용할 수 있습니다. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and then the _Install_ button. 누르세요.

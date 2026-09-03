@@ -23,7 +23,7 @@ S AdGuardem jsou nainstalována následující rozšíření:
 
 **AdGuard asistent**
 
-AdGuard Assistant je starší asistent, kterého můžete použít, pokud pro váš prohlížeč není k dispozici [nový asistent](/archive/adguard-for-windows/browser-assistant.md). Název tohoto rozšíření je zcela záměrný: ve skutečnosti pomáhá uživateli měnit základní nastavení AdGuardu přímo v prohlížeči, aniž by bylo nutné otevírat samotnou aplikaci. AdGuard asistent funguje se všemi prohlížeči kompatibilními s Microsoft Windows. Kromě toho se ikona AdGuard asistenta nezobrazí na webových stránkách, které uživatel uvedl jako výjimky a na některých webových stránkách, kde hrozí riziko zobrazení nesprávného obsahu.
+AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](/archive/adguard-for-windows/browser-assistant.md) is not available for your browser. Název tohoto rozšíření je zcela záměrný: ve skutečnosti pomáhá uživateli měnit základní nastavení AdGuardu přímo v prohlížeči, aniž by bylo nutné otevírat samotnou aplikaci. AdGuard asistent funguje se všemi prohlížeči kompatibilními s Microsoft Windows. Kromě toho se ikona AdGuard asistenta nezobrazí na webových stránkách, které uživatel uvedl jako výjimky a na některých webových stránkách, kde hrozí riziko zobrazení nesprávného obsahu.
 
 **AdGuard Extra**
 

@@ -5,40 +5,40 @@ sidebar_position: 4
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-The DNS protection module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _DNS protection_.
+Modulet DNS-beskyttelse kan tilgås ved tryk på fanen _Beskyttelse_ (2. ikon til venstre nederst på skærmen) og dernæst vælge _DNS-beskyttelse_.
 
 :::tip
 
-DNS protection works differently from regular ad and tracker blocking. You can [learn more about it and how it works from a dedicated article](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
+DNS-beskyttelse fungerer anderledes end almindelig ad- og trackerblocking. Der kan [læses mere herom, samt hvordan det fungerer, i den dedikerede artikel](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
 
 :::
 
-_DNS protection_ allows you to filter DNS requests with the help of a selected DNS server, DNS filters, and user rules:
+_DNS-beskyttelse_ muliggør filtrering af DNS-forespørgsler via valgt DNS-server, DNS-filtre og brugerregler:
 
-- Some DNS servers have blocklists that help block DNS requests to potentially harmful domains
+- Nogle DNS-servere har blokeringslister som hjælp til at blokere DNS-forespørgsler til potentielt skadelige domæner
 
-- In addition to DNS servers, AdGuard can filter DNS requests on its own using a special DNS filter. It contains a large list of ad and tracking domains — requests to them are rerouted to a blackhole server
+- Ud over DNS-servere kan AdGuard også selv filtrere DNS-forespørgsler via et særligt DNS-filter. Det indeholder en stor liste over reklame- og sporingsdomæner, og forespørgsler til disse omdirigeres til en blackhole-server
 
-- You can also block and unblock domains by creating user rules. You might need to consult our article about [DNS filtering rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
+- Domæner kan også blokeres/afblokeres ved at oprette brugerregler. Det er muligvis nødvendigt at konsultere vores artikel om [DNS-filtreringsregelsyntaks](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
 
-![DNS protection \*mobile_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
+![DNS-beskyttelse \*mobile_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
 
-#### DNS server
+#### DNS-server
 
-In this section, you can select a DNS server to resolve DNS requests, block ads and trackers, and encrypt DNS traffic. Tap a server to read its full description and select a protocol. If you didn't find the desired server, you can add it manually:
+I dette afsnit kan en DNS-server vælges til opløsning af DNS-forespørgsler, blokering af annoncer og trackere samt kryptering af DNS-trafik. Tryk på en server for at se dens fulde beskrivelse, og vælg en protokol. Blev en ønsket server ikke fundet, kan den tilføjes manuelt:
 
-- Tap _Add DNS server_ and enter the server address (or addresses)
+- Tryk på _Tilføj DNS-server_ og angiv serveradresse(n/rne)
 
-- Alternatively, you can select a DNS server from the [list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/) and tap _Add to AdGuard_ next to it
+- Alternativt kan der vælges en DNS-server fra [listen over kendte DNS-udbydere](https://adguard-dns.io/kb/general/dns-providers/) og trykkes på _Føj til AdGuard_ ved siden af den
 
-- If you're using a private AdGuard DNS server, you can add it to AdGuard from the [dashboard](https://adguard-dns.io/dashboard/)
+- Anvendes en privat AdGuard DNS-server, kan den føjes til AdGuard via [betjeningspanelet](https://adguard-dns.io/dashboard/)
 
-By default, _Automatic DNS_ is selected. It sets a DNS server based on your AdGuard and device settings. If you have [integration with AdGuard VPN](/adguard-for-android/features/integration-with-vpn) or another SOCKS5 proxy enabled, it connects to _AdGuard DNS Non-filtering_ or any other server you specify. In all other cases, it connects to the DNS server selected in your device settings.
+Som standard er _Automatisk DNS_ valgt. En DNS-server vælges så automatisk baseret på AdGuard- og enhedsindstillingerne. Er [integration med AdGuard VPN](/adguard-for-android/features/integration-with-vpn) eller anden SOCKS5-proxy slået til, opretter den forbindelse til _AdGuard DNS Non-filtring_ eller enhver anden angivet server. I alle andre tilfælde opretter den forbindelse til den i enhedsindstillingerne valgte DNS-server.
 
-#### DNS filters
+#### DNS-filtre
 
-This section allows you to add custom DNS filters and DNS filtering rules. You can find more filters at [filterlists.com](https://filterlists.com/).
+Dette afsnit muliggør tilføjelse af tilpassede DNS-filtre og -filtreringsregler. Flere filtre kan findes på [filterlists.com](https://filterlists.com/).

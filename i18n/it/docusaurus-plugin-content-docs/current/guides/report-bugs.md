@@ -86,8 +86,8 @@ Puoi trovare le reazioni nell'angolo in alto a destra o in fondo a un ticket.
 
 ### AdGuard per Safari
 
-1. Dai un'occhiata alla [repository di Safari](https://github.com/AdguardTeam/AdGuardForSafari/issues) per assicurarti che il problema non sia già stato segnalato.
+1. Check out the [repo](https://github.com/AdguardTeam/AdguardMiniForMac/issues) to make sure the issue hasn’t been reported yet.
 
-2. Apri una [pagina per creare un nuovo ticket](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) e seleziona *Segnalazione di bug*.
+2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardMiniForMac/issues/new/choose) and select *Bug report*.
 
 3. Compila il modulo. Se possibile, allega degli screenshot o una registrazione dello schermo.

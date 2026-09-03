@@ -3,12 +3,6 @@ title: Gestion des applications
 sidebar_position: 1
 ---
 
-:::info
-
-Cet article décrit AdGuard pour Windows v8.0, un bloqueur de publicité complet qui protège votre appareil au niveau du système. Il s'agit d'une version bêta encore en développement. Pour l'essayer, téléchargez la [version bêta d'AdGuard pour Windows](https://agrd.io/windows_beta).
-
-:::
-
 Dans la section _Gestion des applications_, vous pouvez gérer les paramètres de routage et de filtrage pour toutes les applications installées sur votre appareil.
 
 Une fois qu'AdGuard détecte qu’une app est en ligne, elle est automatiquement ajoutée à la _Gestion des applications_, et son trafic est acheminé via AdGuard.
@@ -21,7 +15,7 @@ Lorsque le routage et le filtrage sont activés pour une application, les icône
 
 Vous pouvez laisser les paramètres tels quels, désactiver à la fois le filtrage et le routage, ou les affiner manuellement pour chaque app. Vous pouvez également accéder aux statistiques de l'application.
 
-![Statistiques de l'application](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
+![App stats \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
 ## Fonctionnement du filtrage et du routage des applications dans AdGuard pour Windows v8.0
 

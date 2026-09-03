@@ -1,5 +1,5 @@
 ---
-title: 기능
+title: Features
 sidebar_position: 1
 ---
 
@@ -9,22 +9,22 @@ sidebar_position: 1
 
 :::
 
-- [홈 화면](/archive/adguard-for-windows/features/home-screen/)
+- [Home screen](/archive/adguard-for-windows/features/home-screen/)
 
   On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
 
-- [설정](/archive/adguard-for-windows/features/settings/)
+- [Settings](/archive/adguard-for-windows/features/settings/)
 
   필요에 따라 프로그램을 설정할 수 있습니다. 예를 들어 차단할 카테고리를 선택하고, DNS 서버를 구성하며, 타사 쿠키를 차단할 수 있습니다.
 
-- [확장 프로그램](/archive/adguard-for-windows/features/extensions/)
+- [Extensions](/archive/adguard-for-windows/features/extensions/)
 
   유저스크립트 및 유저스타일을 추가하여 웹사이트의 기능을 확장할 수 있는 기능입니다.
 
-- [네트워크](/archive/adguard-for-windows/features/network/)
+- [Network](/archive/adguard-for-windows/features/network/)
 
-  추가 네트워크 관련 옵션 및 프록시 설정
+  여기에서 추가적인 네트워크 관련 옵션과 프록시 설정을 찾을 수 있습니다.
 
-- [다른 기능](/archive/adguard-for-windows/features/others/)
+- [Other features](/archive/adguard-for-windows/features/others/)
 
   Support, license management, tray menu options, app version and updates

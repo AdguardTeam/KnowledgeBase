@@ -5,18 +5,18 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. 実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事は、システムレベルでデバイスを保護してくれる多機能広告ブロッカー、「AdGuard for Android」についてです。 実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
-- [Features](/adguard-for-android/features/features.md)
+- [機能](/adguard-for-android/features/features.md)
 
-  Main features and settings available in AdGuard for Android
+  AdGuard for Android の主な機能と設定についての説明です。
 
-- [Installation](/adguard-for-android/installation.md)
+- [インストール方法](/adguard-for-android/installation.md)
 
-  Installation, removal, and system requirements for AdGuard for Android
+  動作環境と、AdGuard for Android のインストールおよびアンインストール方法の手順について説明しております。
 
-- [Solving problems](/adguard-for-android/solving-problems/solving-problems.md)
+- [問題解決](/adguard-for-android/solving-problems/solving-problems.md)
 
-  既知の問題と考えられる解決策を説明する記事がまとめられています：
+  既知の問題と考えられる解決策を説明する記事がまとめられています。

@@ -86,8 +86,8 @@ GitHubでバグが以前に報告されていないかどうかを確認して�
 
 ### AdGuard for Safari
 
-1. [AdGuard for Safari のGitHubレポ](https://github.com/AdguardTeam/AdGuardForSafari/issues)をチェックして、問題がまだ報告されていないかを確認してください。
+1. Check out the [repo](https://github.com/AdguardTeam/AdguardMiniForMac/issues) to make sure the issue hasn’t been reported yet.
 
-2. [新しいissueを作成するためのページ](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose)を開き、*Bug report*を選択してください。
+2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardMiniForMac/issues/new/choose) and select *Bug report*.
 
 3. フォームに記入してください。 可能であれば、スクリーンショットまたは画面録画を添付してください。

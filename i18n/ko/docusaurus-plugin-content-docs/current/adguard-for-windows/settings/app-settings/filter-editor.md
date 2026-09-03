@@ -3,13 +3,7 @@ title: Filter editor
 sidebar_position: 2
 ---
 
-:::info
-
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
-
-:::
-
-![Filter editor](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/editor.png)
+![Filter editor \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/editor.png)
 
 The Filter editor is a tool that allows you to view and manage filters at the level of individual rules. Filters are combined into thematic categories: _Ad Blocking_, _Privacy_, _Language-specific_ filters, _Custom_, and _Other_.
 

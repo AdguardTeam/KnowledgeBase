@@ -3,12 +3,6 @@ title: 高级设置
 sidebar_position: 4
 ---
 
-:::info
-
-本文适用于 Windows 版的 AdGuard v8.0，一款全面的广告拦截器，可在系统层面保护您的设备。 这是一个仍在开发中的 Beta 测试版本。 要试用，请下载[适用于 Windows 的 AdGuard 测试版](https://agrd.io/windows_beta)。
-
-:::
-
 「高级设置」部分包含的选项超出了大多数用户的日常使用需求。 Windows 版 AdGuard 开箱即用即可完美运行，但这些设置在特殊情况下或排查问题时可能很有用。
 
 :::caution
@@ -17,15 +11,15 @@ sidebar_position: 4
 
 :::
 
-## 按完整路径排除应用过滤
+## 过滤时按完整路径排除应用
 
 如果您希望 AdGuard 跳过对某个特定应用的过滤，请在此输入其完整文件路径。 您可以添加多个应用，路径之间用分号分隔。
 
 ## 启用 AdGuard 弹窗通知
 
-启用此功能查看 AdGuard 弹出式通知。 它们不会频繁出现，只包含重要信息。 您也可以从系统托盘菜单重新打开最新的通知。
+启用此功能查看 AdGuard 弹出式通知。 通知不经常出现，只包含重要的信息。 您也可以从系统托盘菜单重新打开最新的通知。
 
-## 自动拦截过滤器订阅链接
+## 自动截取过滤器订阅 URL
 
 启用后，AdGuard 将自动检测过滤器订阅链接（如 `abp:subscribe`）并打开窗口帮助您将其添加到过滤器中。
 
@@ -39,7 +33,7 @@ sidebar_position: 4
 
 启用此选项可在电脑启动时自动打开 AdGuard 窗口。
 
-## 系统启动时开启过滤
+## 在系统启动时启用过滤
 
 从 7.12 版本开始，除非同时启用了「系统启动时打开 AdGuard」选项，否则 AdGuard 不会在电脑启动后自动开始过滤流量。 相反，它会以被动「闲置」模式运行。
 
@@ -81,7 +75,7 @@ sidebar_position: 4
 
 如果在 DNS 规则的拦截模式中选择了「返回自定义 IP 地址」，则在响应被拦截的 AAAA 请求时将返回此 IPv6 地址。 如果未指定，AdGuard 将回复默认的 REFUSED 错误。
 
-## 备份服务器
+## 后备服务器
 
 在此设置备份 DNS 服务器。 如果主 DNS 服务器在您设定的超时时间内未响应，AdGuard 将使用这些备用服务器。 您可以：
 
@@ -95,7 +89,7 @@ sidebar_position: 4
 
 ## 自定义 Bootstrap 地址
 
-Bootstrap 是一个中间 DNS 服务器，用于获取您之前在 DNS 保护中选择的安全 DNS 服务器的 IP 地址。 当使用以字母表示服务器地址的协议（例如 DNS-over-TLS）时，需要这样一个「中间人」。 在这种情况下，Bootstrap 充当翻译器，将字母转换为系统能够理解的数字。
+Bootstrap 是一个中间 DNS 服务器，用于获取您之前在 DNS 保护中选择的安全 DNS 服务器的 IP 地址。 当使用以字母表示服务器地址的协议（例如 DNS-over-TLS）时，需要这样一个「中间人」。 In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
 但如有需要，您可以在此指定不同的 IP 地址，它们将按从上到下的顺序尝试。 如果所有地址都无效或未输入任何内容，AdGuard 将回退到系统默认值。
 

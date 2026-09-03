@@ -35,7 +35,7 @@ Windows için AdGuard iki işlem çalıştırır: `Adguard.exe` ve `AdguardSvc.e
 
 ![İki işlem *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/two_processes_en.png)
 
-Döküm dosyaları büyük olabileceğinden, lütfen bunları desteğe göndermeden önce bir arşive sıkıştırın. Ayrıca, sorunu daha etkili bir şekilde teşhis etmemize yardımcı olması için AdGuard günlüklerini de ekleyin. [Günlükleri toplamak için talimatlar](../adguard-logs).
+Döküm dosyaları büyük olabileceğinden, lütfen bunları desteğe göndermeden önce bir arşive sıkıştırın. Ayrıca, sorunu daha etkili bir şekilde teşhis etmemize yardımcı olması için AdGuard günlüklerini de ekleyin. See [Instructions for collecting logs](/adguard-for-windows/solving-problems/adguard-logs).
 
 ## Collecting `wfpdiag.cab` file
 
@@ -59,3 +59,5 @@ Our support team may request a wfpdiag.cab file, along with a minidump file, to 
 1. Visit any website to route traffic through AdGuard and log the filtering process
 
 1. To stop logging, enter `netsh wfp capture stop`
+
+1. Compress the `wfpdiag.cab` file and send it to our support team at **support@adguard.com**.

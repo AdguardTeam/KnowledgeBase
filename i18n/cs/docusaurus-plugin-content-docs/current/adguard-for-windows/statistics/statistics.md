@@ -3,15 +3,9 @@ title: Statistiky
 sidebar_position: 1
 ---
 
-:::info
-
-Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Jedná se o beta verzi, která je stále ve vývoji. Chcete-li vyzkoušet, stáhněte si [beta verzi AdGuard pro Windows](https://agrd.io/windows_beta).
-
-:::
-
 V části _Statistiky_ uvidíte kompletní přehled o tom, co se děje s provozem na vašem počítači: kolik požadavků je odesíláno a kterým společnostem, kolik dat je nahráváno a stahováno, jaké požadavky jsou blokovány. Můžete zkontrolovat statistiky za různá časová období: za celou dobu, za posledních 14 dní, za posledních 7 dní, za posledních 24 hodin a rozdělené podle reklam, slídičů nebo požadavků.
 
-![Customize stats](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/statistics/stats.png)
+![Customize stats \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/statistics/stats.png)
 
 :::note
 
