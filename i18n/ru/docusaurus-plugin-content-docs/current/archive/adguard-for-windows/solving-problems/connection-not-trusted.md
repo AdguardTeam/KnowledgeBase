@@ -5,27 +5,27 @@ sidebar_position: 2
 
 :::info
 
-В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
 
 :::
 
-Чтобы фильтровать HTTPS-трафик и эффективно блокировать рекламу и трекеры, AdGuard генерирует специальный (и уникальный) корневой сертификат и устанавливает его в системное хранилище. Подробнее о том, почему требуется сертификат, вы можете узнать в [этой статье](/general/https-filtering/what-is-https-filtering).
+Чтобы фильтровать HTTPS-трафик и эффективно блокировать рекламу и трекеры, AdGuard генерирует специальный (и уникальный) корневой сертификат и устанавливает его в системное хранилище. You can learn more about why a certificate is required by reading [this article](/general/https-filtering/what-is-https-filtering).
 
 Обычно браузеры доверяют сертификату AdGuard после его добавления в системное хранилище сертификатов в процессе установки. Но в некоторых случаях этого недостаточно, и вы можете столкнуться с предупреждениями или ошибками. Чаще всего это происходит в браузерах на базе Firefox, таких как Mozilla Firefox, PaleMoon, Waterfox и т. д., или в Яндекс Браузере.
 
 Вот некоторые распространённые проблемы:
 
-- [*Потенциальная угроза безопасности* в браузерах на базе Firefox](#potential-security-risk-error-in-firefox-based-browsers)
-- [Предупреждение Яндекс Браузера](#yandexbrowser-certificate-warning)
-- [Неофициальные расширения не обновляются в браузерах на базе Firefox](#non-official-add-ons-dont-update-in-firefox-based-browsers)
+- [_Potential Security Risk_ error in Firefox-based browsers](#potential-security-risk-error-in-firefox-based-browsers)
+- [Yandex.Browser certificate warning](#yandexbrowser-certificate-warning)
+- [Non-official add-ons don’t update in Firefox-based browsers](#non-official-add-ons-dont-update-in-firefox-based-browsers)
 
-## *Потенциальная угроза безопасности* в браузерах на базе Firefox
+## _Potential Security Risk_ error in Firefox-based browsers
 
-![Ошибка угрозы безопасности](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
+![Security risk error](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
 
-Старые версии FireFox, а также браузеры на их основе, не доверяют сертификатам из системного хранилища, а только сертификатам из своего локального хранилища. Начиная с v68, FireFox доверяет системным сертификатам, но вы всё равно можете столкнуться с ошибкой «Соединение ненадёжно». Если что-то подобное произойдёт, сначала попробуйте нажать кнопку *Переустановить сертификат* — вы найдёте её во вкладке *Сеть*.
+Старые версии FireFox, а также браузеры на их основе, не доверяют сертификатам из системного хранилища, а только сертификатам из своего локального хранилища. Начиная с v68, FireFox доверяет системным сертификатам, но вы всё равно можете столкнуться с ошибкой «Соединение ненадёжно». If something like this happens, first try to click the _Reinstall Certificate_ button — you will find it in the _Network_ tab.
 
-![Переустановить сертификат](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
+![Reinstall Certificate](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
 
 Если это не помогло, следуйте инструкциям по ручному добавлению сертификата AdGuard в хранилище FireFox.
 
@@ -33,36 +33,35 @@ sidebar_position: 2
 
 1. Запустите AdGuard.
 
-1. Go to [https://local.adguard.org/cert](https://local.adguard.org/cert) and click the *Download* button. Браузер начнёт загрузку файла **cert.cer**.
+2. Go to [https://local.adguard.org/cert](https://local.adguard.org/cert) and click the _Download_ button. The browser should start downloading **cert.cer** file.
 
-    :::note
+   :::note
 
-    Вы также можете открыть страницу загрузки через приложение AdGuard: *Настройки → Сеть → HTTPS-фильтрация*.
+   You can also open the download page by clicking the link via the AdGuard app at _Settings → Network → HTTPS filtering_.
 
+   :::
 
-:::
+   ![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
 
-    ![Настройки сертификата](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
+3. Open your browser and then open _Settings_.
 
-1. Откройте браузер, а затем откройте *Настройки*.
+4. Go to _Privacy & Security_ tab.
 
-1. Перейдите на вкладку *Приватность и Защита*.
+5. Scroll down to _Certificates_ and click the _View Certificates_ button.
 
-1. Прокрутите вниз до раздела *Сертификаты* и нажмите кнопку *Просмотр сертификатов*.
+   ![View certificates window](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
 
-    ![Окно просмотра сертификатов](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
+6. Select _Authorities_ tab.
 
-1. Выберите вкладку *Центры сертификации*.
+7. Click _Import..._.
 
-1. Нажмите *Импортировать...*
+   ![Certificate settings — import](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
 
-    ![Настройки сертификата — импорт](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
+8. Browse the downloaded **cert.cer** file and click _Open_.
 
-1. Найдите загруженный файл **cert.cer** и нажмите *Открыть*.
+9. Check the _Trust this CA to identify websites_ box and then click _OK_.
 
-1. Установите флажок *Доверять при идентификации веб-сайтов* и нажмите *ОК*.
-
-    ![Настройки сертификата — флажок](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
+   ![Certificate settings — checkbox](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
 
 Вы успешно установили сертификат AdGuard. Перезапустите браузер, ошибка должна исчезнуть.
 
@@ -70,7 +69,7 @@ sidebar_position: 2
 
 Если вы пользуетесь AdGuard для Windows и Яндекс Браузером, вы могли столкнуться с этим предупреждением:
 
-![Предупреждение Яндекс Браузера о сертификате](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
+![Yandex certificate warning](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
 
 ### Почему это происходит
 
@@ -80,9 +79,9 @@ sidebar_position: 2
 
 ### Как решить проблему
 
-Самый простой способ — нажать на кнопку **Перейти на сайт**. Это заставит Яндекс Браузер запомнить сертификат AdGuard как доверенный хотя бы на время. Скорее всего, вам больше не придётся видеть это сообщение, но вполне возможно, что оно будет время от времени появляться по каким-то другим причинам. В таких случаях просто нажмите ту же кнопку ещё раз *(убедитесь, что это сертификат AdGuard!)*.
+The easiest way is to click the **Go to site** button. Это заставит Яндекс Браузер запомнить сертификат AdGuard как доверенный хотя бы на время. Скорее всего, вам больше не придётся видеть это сообщение, но вполне возможно, что оно будет время от времени появляться по каким-то другим причинам. In such cases, simply press the same button again _(make sure it is AdGuard's certificate!)_.
 
-Отключение HTTPS-фильтрации в AdGuard также предотвратит повторное отображение этого сообщения в Яндекс Браузере. Однако это приведёт к тому, что вы будете видеть рекламу, загружаемую по HTTPS (в том числе **собственную рекламу Яндекса**) на таких сайтах, как YouTube, Facebook, Instagram и многие другие. Мы настоятельно не рекомендуем делать это, если вы хотите сохранить высокое качество блокировки рекламы.
+Disabling the HTTPS filtering in AdGuard will also prevent Yandex.Browser from showing this message again, but it comes with a big price: all ads that are loaded by HTTPS (including **Yandex's own ads**) will show up — on such websites as YouTube, Facebook, Instagram, and many more. Мы настоятельно не рекомендуем делать это, если вы хотите сохранить высокое качество блокировки рекламы.
 
 ## Неофициальные расширения не обновляются в браузерах на базе Firefox
 

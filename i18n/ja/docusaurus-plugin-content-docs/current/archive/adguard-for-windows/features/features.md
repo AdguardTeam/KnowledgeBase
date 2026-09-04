@@ -1,5 +1,5 @@
 ---
-title: 機能
+title: Features
 sidebar_position: 1
 ---
 
@@ -9,22 +9,22 @@ sidebar_position: 1
 
 :::
 
-- [ホーム画面](/archive/adguard-for-windows/features/home-screen/)
+- [Home screen](/archive/adguard-for-windows/features/home-screen/)
 
   On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
 
-- [設定](/archive/adguard-for-windows/features/settings/)
+- [Settings](/archive/adguard-for-windows/features/settings/)
 
   テーマと言語設定、広告ブロックのカスタマイズ、DNS通信を保護、ペアレンタルコントロール、拡張機能の管理、上級ユーザー向けの詳細設定などがあります：
 
-- [拡張機能](/archive/adguard-for-windows/features/extensions/)
+- [Extensions](/archive/adguard-for-windows/features/extensions/)
 
   ユーザースクリプトやユーザースタイルを追加することで、ウェブサイトの機能を拡張できる機能です：
 
-- [ネットワーク](/archive/adguard-for-windows/features/network/)
+- [Network](/archive/adguard-for-windows/features/network/)
 
   追加のネットワーク関連オプションとプロキシ設定についての説明です：
 
-- [その他の機能](/archive/adguard-for-windows/features/others/)
+- [Other features](/archive/adguard-for-windows/features/others/)
 
   Support, license management, tray menu options, app version and updates

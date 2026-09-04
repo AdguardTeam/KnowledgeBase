@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. Para ver cómo funciona, [descarga la app de AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,8 +13,8 @@ Para filtrar el tráfico de red, AdGuard utiliza un controlador de red. Hay dos 
 
 Si encuentras un problema que sospecha que puede deberse a esto, siempre puedes cambiar al controlador de red TDI más antiguo pero más estable. Para hacerlo:
 
-1. Ve a *Ajustes → Red*.
+1. Go to _Settings → Network_.
 
 2. Desactiva el controlador WFP como se hace en esta imagen:
 
-![Driver WFP *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)
+![WFP driver \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)

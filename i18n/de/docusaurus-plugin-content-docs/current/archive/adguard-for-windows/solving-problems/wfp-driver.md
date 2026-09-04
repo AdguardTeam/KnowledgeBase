@@ -13,8 +13,8 @@ Um den Netzwerkverkehr filtern zu können, verwendet AdGuard einen Netzwerktreib
 
 Wenn Sie auf ein Problem stoßen, von dem Sie vermuten, dass es dadurch verursacht wird, können Sie jederzeit auf den älteren, aber stabileren TDI-Netzwerktreiber wechseln. Um dies zu tun:
 
-1. Gehen Sie zu *Einstellungen → Netzwerk*.
+1. Go to _Settings → Network_.
 
 2. Deaktivieren Sie den WFP-Treiber, wie in diesem Bild gezeigt:
 
-![WFP-Treiber *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)
+![WFP driver \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)

@@ -1,18 +1,18 @@
 ---
-title: Quick actions
+title: Hurtige handlinger
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-Quick actions can be found inside the _Firewall_ module, which can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Firewall_.
+Hurtige handlinger kan tilgås i modulet _Firewall_ ved tryk på fanen _Beskyttelse_ (2. ikon til venstre nederst på skærmen) og dernæst vælge _Firewall_.
 
-_Quick actions_ are based on the requests from _Recent activity_ (which can be found in [_Statistics_](/adguard-for-android/features/statistics)). This section shows which apps have recently connected to the Internet.
+_Hurtige handlinger_ er baseret på anmodningerne fra _Seneste aktivitet_ (der findes under [_Statistik_](/adguard-for-android/features/statistics)). Dette afsnit viser, hvilke apps, som for nylig har oprettet forbindelse til internet.
 
-![Quick actions \*mobile_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
+![Hurtige handlinger \*mobile_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
 
-If you see an app that shouldn't be using the Internet at all or an app that you haven't used recently, you can block its access on the fly. This will not be possible unless the _Firewall_ module is turned on.
+Ses en app, der slet ikke burde bruge internet, eller én, der ikke er brugt for nylig, kan dens adgang blokeres i farten. Dette vil ikke være muligt, medmindre modulet _Firewall_ er slået til.

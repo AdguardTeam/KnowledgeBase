@@ -86,8 +86,8 @@ Puteți găsi reacțiile în colțul din dreapta sus sau la baza unei probleme.
 
 ### AdGuard for Safari
 
-1. Verificați [repo-ul Safari](https://github.com/AdguardTeam/AdGuardForSafari/issues) pentru a vă asigura că problema nu a fost raportată încă.
+1. Check out the [repo](https://github.com/AdguardTeam/AdguardMiniForMac/issues) to make sure the issue hasn’t been reported yet.
 
-2. Deschideți o [pagină pentru a crea probleme noi](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) și selectați *Raport de eroare*.
+2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardMiniForMac/issues/new/choose) and select *Bug report*.
 
 3. Completați formularul. Dacă este posibil, atașați capturi de ecran sau o înregistrare a ecranului.

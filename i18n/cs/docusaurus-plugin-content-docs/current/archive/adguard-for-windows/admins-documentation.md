@@ -5,29 +5,31 @@ sidebar_position: 5
 
 Tato stránka popisuje funkce a podrobnosti centrální správy zásad a předvoleb AdGuardu.
 
-## 1. Stažení MSI {#msi-download}
+## 1. Download the MSI {#msi-download}
 
-Stáhněte [AdGuard MSI x86](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi)
+Download the [AdGuard MSI x86](https://agrd.io/adguard_setup86_msi)
 
-Stáhněte [AdGuard MSI x64](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
+Download the [AdGuard MSI x64](https://agrd.io/adguard_setup64_msi)
 
-## 2. Konfigurace nastavení pro vaši síť {#settings-configuring}
+## 2. Configure the settings for your network {#settings-configuring}
 
-V počítačích, které jsou připojeny k doméně Active Directory, může být nastavení zásad uloženo také v registru pod `HKEY_LOCAL_MACHINE` v následující cestě: `Software\Policies\AdGuard\`.
+On machines that are joined to an Active Directory domain, policy settings may also be stored in the registry under `HKEY_LOCAL_MACHINE` in the following path: `Software\Policies\AdGuard\`.
 
-Jedinou podporovanou zásadou je `LicenseKey`. Pokud je tato zásada nastavena, bude ji AdGuard upřednostňovat před tím, co může uživatel zadat v rozhraní. Tento licenční klíč se použije pro kontrolu stavu licence.
+The only supported policy is `LicenseKey`. Pokud je tato zásada nastavena, bude ji AdGuard upřednostňovat před tím, co může uživatel zadat v rozhraní. Tento licenční klíč se použije pro kontrolu stavu licence.
 
-## 3. Kontrola dostupnosti serverů AdGuardu {#servers-available}
+## 3. Make sure that AdGuard servers are available {#servers-available}
 
-AdGuard se připojuje ke dvěma hostitelům: `api.adguard.org` a `filters.adtidy.org`. Ujistěte se, že jsou oba servery dostupné.
+AdGuard connects to two hosts: `api.adguard.org` and `filters.adtidy.org`. Ujistěte se, že jsou oba servery dostupné.
 
-## 4. Odeslání MSI do vaší sítě {#msi-push}
+## 4. Push the MSI out to your network {#msi-push}
 
 Pokud obvykle používáte SMS nebo jiné nástroje, použijte je k odeslání AdGuard MSI stejně jako u jiných instalačních balíčků.
 
-Jinak můžete MSI spustit na cílovém počítači přímo (a nezjištně) pomocí tohoto příkazu: `Msiexec /q /i AdGuard.msi`
+Otherwise, you can run the MSI on the target machine directly (and silently) with this command:
+`Msiexec /q /i AdGuard.msi`
 
-Pokud potřebujete spustit aktualizaci, použijte tento příkaz: `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
+If you need to roll out an update, use this command:
+`Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
 :::note
 
@@ -41,14 +43,14 @@ Pokud chcete nainstalovat AdGuard do počítače se systémem Windows 7 ujistět
 
 Pokud jste nainstalovali AdGuard pro Windows ze souboru MSI, nebude AdGuard automaticky aktualizován. Povolení ručních aktualizací:
 
-- Ve verzích vydaných po v7.16 smažte parametr `ForbidCheckUpdates` nebo nastavte jeho hodnotu na `NO` (nerozlišuje velká a malá písmena) v registru pod `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
+- In versions released after v7.16, delete the `ForbidCheckUpdates` parameter or set its value to `NO` (case-insensitive) in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
 
-- Ve verzi 7.16 a starších verzích nastavte parametr `AllowCheckUpdates` pro klíč `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` v OS x86 na hodnotu `YES` (nerozlišuje velká a malá písmena) nebo `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` v OS x64. Jakákoli jiná hodnota nebo žádná hodnota tohoto parametru zakáže automatické aktualizace.
+- In v7.16 and earlier versions, set to `YES` (case-insensitive) the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` key on x86 OS or `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key on x64 OS. Jakákoli jiná hodnota nebo žádná hodnota tohoto parametru zakáže automatické aktualizace.
 
 Upozorňujeme, že taková instalace aplikace a ruční aktualizace se nedoporučuje a může způsobit technické problémy.
 
 :::
 
-## 5. Test instalace {#installation-test}
+## 5. Test your installation {#installation-test}
 
 V cílovém počítači spusťte AdGuard. Otevřete obrazovku licence a zkontrolujte, zda používá zadanou licenci. Možná budete muset kliknout na tlačítko "Obnovit stav", aby AdGuard ověřil licenční klíč.

@@ -35,7 +35,7 @@ AdGuard already treats the TDI driver as deprecated, and its complete removal is
 
 ## Permanent solution
 
-From v7.22.4, we’ve added experimental support for the SockFilter driver. Ele corrige o problema ao resolver conflitos no stack WFP. [Mais informações](/archive/adguard-for-windows/features/network/#sockfilter-and-other-network-drivers).
+From v7.22.4, we’ve added experimental support for the SockFilter driver. Ele corrige o problema ao resolver conflitos no stack WFP. [More information](/archive/adguard-for-windows/features/network/#sockfilter-and-other-network-drivers).
 
 Para usá-lo, vá para _Configurações → Rede → Filtragem de tráfego_, ative a filtragem de tráfego e selecione _SockFilter (Experimental)_ na lista de opções disponíveis.
 

@@ -11,7 +11,7 @@ sidebar_position: 8
 
 :::info
 
-To use _Integration with AdGuard VPN_, both apps — AdGuard for Android and AdGuard VPN for Android — must be updated to their latest versions. Otherwise, the Integration mode will not be available
+要使用「与 AdGuard VPN 集成」功能，两款应用（包括，AdGuard Android 版和 AdGuard VPN Android 版）都必须更新至最新版本。 否则，集成模式将不可用。
 
 :::
 

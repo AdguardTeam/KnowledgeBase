@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::note 支持的应用
 
-AdGuard 可作为用户脚本管理器以显著扩展网站功能。 您可以在我们的三款产品中添加自定义脚本或管理现有脚本：[AdGuard Windows 版](/adguard-for-windows/protection/extensions)、[AdGuard Android 版](/adguard-for-android/features/settings#userscripts) 和 [AdGuard Mac 版](/adguard-for-mac/features/extensions)。
+AdGuard 可作为用户脚本管理器以显著扩展网站功能。 You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/protection/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
 
 :::
 
@@ -39,7 +39,7 @@ AdGuard 开发人员创建这些用户脚本，我们可以保证它们有效且
 
 :::
 
-#### Disable AMP
+#### 关闭 AMP
 
 这是一个仅在 Android 版 AdGuard 中预安装的脚本。 它禁用 Google 搜索结果页面上的 AMP（加速移动页面）。 了解更多关于此用户脚本及其安装方法，请访问 [GitHub](https://github.com/AdguardTeam/DisableAMP)。
 
@@ -75,7 +75,7 @@ To try it out:
 
 #### tinyShield
 
-一个适用于访问韩国网站和一些国际网站的用户脚本。 tinyShield 用户脚本可以屏蔽 Ad-Shield 广告和反广告拦截功能。 这个用户脚本可以安装在基于 AdGuard CoreLibs 的应用程序、Violentmonkey、Tampermonkey 以及 [quoid/userscripts](https://github.com/quoid/userscripts) 中。 了解更多关于 tinyShield 的信息以及如何在 [GitHub](https://github.com/List-KR/tinyShield) 上安装它。
+tinyShield is primarily designed for Korean websites protected by Ad-Shield, but it also supports many international websites that use the same ad anti-adblocking technology. This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about tinyShield and how to install it on [GitHub](https://github.com/FilteringDev/tinyShield).
 
 ### 在哪里查看更多自定义脚本{#more-userscripts}
 
@@ -95,25 +95,29 @@ To try it out:
 
 [OpenUserJS.org](https://openuserjs.org/) 是一个用 nodeJS 编写的开源用户脚本目录。 它没有经过审核，因此请注意可疑的脚本。
 
-#### 社区
+#### NamuLink
 
-如您想在用户脚本的帮助下自定义您的浏览器并有任何问题，可以在以下网站进行询问：
+[NamuLink](https://github.com/FilteringDev/NamuLink) is an open-source userscript that removes Naver PowerLink advertisements from NamuWiki by bypassing the site's advanced link obfuscation mechanisms. The project is maintained by the AdGuard team and the broader ad-blocking community.
+
+#### Community
+
+If you like the idea of customizing your browser with userscripts and have questions, you can ask them on one of these websites:
 
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/userscripts)
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
 - [Reddit](https://www.reddit.com/r/userscripts/)
 
-### 开发
+### Development
 
-#### 申请许可证
+#### Request license
 
-如果您开发自己的用户脚本并希望测试它与 AdGuard 的工作方式，可以通过填写[表单](https://surveys.adguard.com/en/for_developers_request/form.html)请求许可证。
+If you are developing your own userscript and want to test how it works with AdGuard, you can request a license by filling in [the form](https://surveys.adguard.com/en/for_developers_request/form.html).
 
-#### 兼容性
+#### Compatibility
 
-##### 元数据块
+##### Metadata block
 
-###### 支持的属性
+###### Supported properties
 
 - [`@name`](https://wiki.greasespot.net/Metadata_Block#@name)
 - [`@namespace`](https://wiki.greasespot.net/Metadata_Block#@namespace)
@@ -134,19 +138,19 @@ To try it out:
 - [`@icon`, `@iconURL`, `@defaulticon`](https://www.tampermonkey.net/documentation.php#meta:icon)
 - [`@icon64`, `@icon64URL`](https://www.tampermonkey.net/documentation.php#meta:icon64)
 
-###### 不支持的属性
+###### Unsupported properties
 
-AdGuard 将忽略这些属性。
+These properties will be simply ignored by AdGuard.
 
 - [`@unwrap`](https://www.tampermonkey.net/documentation.php#meta:unwrap)
 
-##### 支持的 GM 函数
+##### Supported GM functions
 
-AdGuard 同时支持旧的 GM\_ 函数和使用 GM 对象的新 GM4 API。
+AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
 
 :::note
 
-所有列出的旧 Greasemonkey 函数都已过时，但仍受支持。
+All listed old Greasemonkey functions are deprecated but still supported.
 
 :::
 
@@ -167,7 +171,7 @@ AdGuard 同时支持旧的 GM\_ 函数和使用 GM 对象的新 GM4 API。
 - [`GM.addElement`, `GM_addElement`](https://www.tampermonkey.net/documentation.php#api:GM_addElement)
 - [`window.onurlchange`](https://www.tampermonkey.net/documentation.php#api:window.onurlchange)
 
-您可以在[手册](https://wiki.greasespot.net/Greasemonkey_Manual:API)中找到有关 Greasemonkey API 的更多信息。
+You can find more information about Greasemonkey API in [its manual](https://wiki.greasespot.net/Greasemonkey_Manual:API).
 
 #### 示例
 
@@ -212,27 +216,27 @@ AdGuard 同时支持旧的 GM\_ 函数和使用 GM 对象的新 GM4 API。
 
 #### Trusted Types API
 
-AdGuard 提供一个 `PolicyApi` 类的实例，允许用户管理用户脚本中的 Trusted Types。
+AdGuard provides an instance of the `PolicyApi` class that allows you to manage Trusted Types in your userscripts.
 
-您可以使用用户脚本中的 `ADG_policyApi` 变量访问此类的实例。
+You can access the instance of this class by using the `ADG_policyApi` variable in your userscript.
 
-##### 属性
+##### Properties
 
-- `name: string` —— 政策的名称（默认是 `"AGPolicy"`）。
-- `isSupported: boolean` —— 一个标志，指示当前浏览器是否支持 Trusted Types API。
+- `name: string` — a name of the policy (Default is `"AGPolicy"`).
+- `isSupported: boolean` — a flag indicating whether or not the Trusted Types API is supported by the current browser.
 
-##### 多填充方法
+##### Polyfilled methods
 
-- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML)。 如果不支持，请返回 `input: string`。
-- [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript)。 如果不支持，请返回 `input: string`。
-- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL)。 如果不支持，请返回 `input: string`。
-- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType)。 如果不支持，请返回 `null`。
-- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType)。 如果不支持，请返回 `null`。
-- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML)。 如果不支持，请返回 `false`。
-- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript)。 如果不支持，请返回 `false`。
-- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL)。 如果不支持，请返回 `false`。
+- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). If not supported, returns `input: string`.
+- [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). If not supported, returns `input: string`.
+- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). If not supported, returns `input: string`.
+- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). If not supported, returns `null`.
+- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). If not supported, returns `null`.
+- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). If not supported, returns `false`.
+- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). If not supported, returns `false`.
+- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). If not supported, returns `false`.
 
-##### 其他类型
+##### Additional Types
 
 ```typescript
 /**
@@ -262,7 +266,7 @@ ADG_TrustedType.HTML // "TrustedHTML"
 type TrustedValue = string | TrustedHTML | TrustedScript | TrustedScriptURL;
 ```
 
-##### 其他操作
+##### Additional methods
 
 ```typescript
 /**
@@ -343,7 +347,7 @@ divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML"
 
 #### Matching SPA sites
 
-:::info 兼容性
+:::info Compatibility
 
 This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.19 or later.
 

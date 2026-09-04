@@ -1,6 +1,6 @@
 ---
 title: Cómo volver a la versión anterior después de actualizar a v8.0
-sidebar_position: 12
+sidebar_position: 13
 ---
 
 :::info

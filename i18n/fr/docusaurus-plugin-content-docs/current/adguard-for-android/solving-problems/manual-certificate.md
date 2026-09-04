@@ -9,45 +9,45 @@ Cet article concerne AdGuard pour Android, un bloqueur de publicité multifoncti
 
 :::
 
-To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install its certificate into your device’s user storage. Sur les anciennes versions d'Android, cela se faisait automatiquement, mais sur Android 11 et les versions ultérieures, les utilisateurs doivent l'installer manuellement.
+Pour pouvoir [filtrer le trafic HTTPS](/general/https-filtering/what-is-https-filtering.md) (ce qui est extrêmement important car la plupart des publicités utilisent HTTPS), AdGuard doit installer son certificat dans le stockage utilisateur de votre appareil. Sur les anciennes versions d'Android, cela se faisait automatiquement, mais sur Android 11 et les versions ultérieures, les utilisateurs doivent l'installer manuellement.
 
 ![Certificat *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/screenCA.gif)
 
 Suivez ces étapes pour installer le certificat AdGuard:
 
-1. Open the app. On the *Home* screen, tap *HTTPS filtering is off*.
+1. Ouvrez l'application. Sur l'écran *Accueil*, appuyez sur *le filtrage HTTPS est désactivé*.
 
-1. Then you’ll be presented with three screens:
-    - HTTPS filtering is critical for ad blocking
-    - AdGuard’s HTTPS filtering is safe
-    - AdGuard certificate
+1. Ensuite, vous verrez trois écrans :
+    - Le filtrage HTTPS est essentiel pour le blocage des publicités
+    - Le filtrage HTTPS d’AdGuard est sûr
+    - Certificat AdGuard
 
-1. Consecutively, tap *Continue* → *Next* → *Save certificate*.
+1. Appuyez successivement sur *Continuer* → *Suivant* → *Enregistrer le certificat*.
 
-1. Tap *Save* at the bottom of the opened *Download* folder.
+1. Appuyez sur *Enregistrer* en bas du dossier *Téléchargements* ouvert.
 
-1. After saving, copy the text from the *CA Certificate* field and tap *Open Settings*.
+1. Après l'enregistrement, copiez le texte du champ *Certificat AC* et appuyez sur *Ouvrir les paramètres*.
 
-1. Open *Settings* and either paste or type *CA Certificate* in the search bar. Tap the respective option.
+1. Ouvrez *Paramètres*, puis collez ou saisissez *Certificat AC* dans la barre de recherche. Appuyez sur l'option correspondante.
 
-1. You might see a warning. If so, tap *Install anyway* and enter your PIN if necessary.
+1. Il se peut qu'un message d'avertissement s'affiche. Si c'est le cas, appuyez sur *Installez quand même* et saisissez votre PIN si nécessaire.
 
-1. Select the AdGuard certificate file. Its name should look like *adguard_1342_020322.crt*.
+1. Sélectionnez le fichier de certificat AdGuard. Son nom devrait ressembler à *adguard_1342_020322.crt*.
 
-You’re all set! Once the certificate is installed successfully, you’ve enabled HTTPS filtering.
+Vous êtes prêt ! Une fois le certificat installé avec succès, vous avez activé le filtrage HTTPS.
 
-If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
+Si vous rencontrez des problèmes lors de l'installation manuelle du certificat (par exemple, si vous avez installé le certificat mais que l'application continue de l'ignorer), vous pouvez suivre l'une des solutions proposées ci-dessous.
 
 1. Redémarrez AdGuard.
 1. Essayez d'installer le certificat correct (AdGuard Personal CA) une fois de plus.
 
-## Security warnings
+## Avertissements de sécurité
 
-In earlier versions of Android, the quick settings panel displayed the message “Network may be monitored.” Tapping it will open a window with detailed information.
+Dans les anciennes versions d'Android, le panneau des paramètres rapides affichait le message "Le réseau est peut-être surveillé". Appuyer dessus ouvrira une fenêtre avec des informations détaillées.
 
-Starting with Android 15, in addition to “Network may be monitored”, users will see a warning notification after installing a certificate and after restarting the device: “Certificate authorities installed by an unknown third party.” This means that the system has detected third-party certificates in the user certificate store. Tapping the notification opens a list of certificates in the user certificate store.
+À partir d'Android 15, en plus du message "Le réseau est peut-être surveillé", les utilisateurs verront s'afficher une notification d'avertissement après l'installation d'un certificat et après le redémarrage de l'appareil : "Autorités de certification installées par un tiers inconnu." Cela signifie que le système a détecté des certificats tiers dans le magasin utilisateur. Appuyer sur la notification ouvre une liste de certificats dans le magasin de certificats utilisateur.
 
-Despite these warnings, your traffic remains secure. Your connection to remote servers stays encrypted. What AdGuard does is simply verify the server’s certificate before deciding whether to filter the connection — similar to how a browser works.
+Malgré ces avertissements, votre trafic reste sécurisé. Votre connexion à des serveurs distants reste chiffrée. What AdGuard does is simply verify the server’s certificate before deciding whether to filter the connection — similar to how a browser works.
 
 [Learn more about HTTPS filtering and how the certificate works](/general/https-filtering/what-is-https-filtering.md).
 

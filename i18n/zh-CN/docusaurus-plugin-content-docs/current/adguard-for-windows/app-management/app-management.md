@@ -3,12 +3,6 @@ title: 应用管理
 sidebar_position: 1
 ---
 
-:::info
-
-本文适用于 Windows 版的 AdGuard v8.0，一款全面的广告拦截器，可在系统层面保护您的设备。 这是一个仍在开发中的 Beta 测试版本。 要试用，请下载[适用于 Windows 的 AdGuard 测试版](https://agrd.io/windows_beta)。
-
-:::
-
 在「应用管理」板块，您可以管理设备上所有已安装应用的路由和过滤设置。
 
 当 AdGuard 检测到某个应用联网时，它会自动添加到「应用管理」中，其流量将通过 AdGuard 路由。
@@ -21,7 +15,7 @@ sidebar_position: 1
 
 您可以保留默认设置，也可以同时关闭过滤和路由，或者为每个应用单独手动微调。 用户还可以查看应用的统计数据。
 
-![应用统计](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
+![App stats \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
 ## AdGuard Windows 版 v8.0 中应用过滤和路由的工作原理
 

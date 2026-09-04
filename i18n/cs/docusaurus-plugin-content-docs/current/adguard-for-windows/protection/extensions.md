@@ -3,15 +3,9 @@ title: Rozšíření
 sidebar_position: 7
 ---
 
-:::info
-
-Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Jedná se o beta verzi, která je stále ve vývoji. Chcete-li vyzkoušet, stáhněte si [beta verzi AdGuard pro Windows](https://agrd.io/windows_beta).
-
-:::
-
 AdGuard může rozšířit funkčnost webových stránek tím, že funguje jako [správce uživatelských skriptů](/general/extensions.md). To vám umožňuje přidávat vlastní skripty a spravovat ty stávající.
 
-![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
+![Extensions \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
 
 ## Automatické rozpoznání uživatelských skriptů
 
@@ -28,7 +22,7 @@ AdGuard obsahuje čtyři předinstalované uživatelské skripty:
 
 ### Asistent AdGuard (Beta)
 
-Asistent AdGuard je starší verze asistenta, kterou můžete použít, pokud [nový asistent](/archive/adguard-for-windows/browser-assistant.md) není pro váš prohlížeč k dispozici. Jak název napovídá, pomáhá vám spravovat základní nastavení AdGuardu přímo z vašeho prohlížeče, aniž byste museli otevírat aplikaci.
+AdGuard Assistant is the legacy version of Assistant, which you can use if the [new Assistant](/archive/adguard-for-windows/browser-assistant.md) is not available for your browser. Jak název napovídá, pomáhá vám spravovat základní nastavení AdGuardu přímo z vašeho prohlížeče, aniž byste museli otevírat aplikaci.
 
 Asistent AdGuard funguje se všemi prohlížeči kompatibilními s Microsoft Windows. Nebude se zobrazovat na webových stránkách vyloučených z filtrování ani na určitých stránkách, kde by mohlo dojít k problémům se zobrazením.
 
@@ -44,7 +38,7 @@ Toto rozšíření zabraňuje otevírání nežádoucích vyskakovacích oken p�
 
 Toto rozšíření nefunguje na webových stránkách zařazených na seznam povolených.
 
-### Web of Trust (Beta)
+### Web of Trust
 
 Web of Trust umožňuje zobrazit reputaci webových stránek na základě hodnocení uživatelů. Webové stránky jsou posuzovány podle několika kritérií, včetně důvěryhodnosti a bezpečnosti.
 

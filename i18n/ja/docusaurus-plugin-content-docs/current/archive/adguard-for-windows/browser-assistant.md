@@ -5,7 +5,7 @@ sidebar_position: 3
 
 AdGuard アシスタントの主な機能は、直接ブラウザからフィルタリングの管理を可能にすることです。 AdGuard アシスタントは結構前から存在していて、その形も内容も変化してきました。 より正確に言いますと、もともと AdGuard for Windows アプリに組み込まれた単なるユーザースクリプトでしたが、現在は本格的なブラウザ拡張機能となっています。 便利な機能も前より多くなっています。
 
-![ブラウザアシスタント *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
+![Browser Assistant \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
 
 ## メリット
 
@@ -15,7 +15,7 @@ AdGuard ブラウザアシスタントはブラウザ拡張機能であり、ブ
 
 ### メインのAdGuardアプリとの互換性
 
-以前の[AdGuard広告ブロッカー拡張機能](/adguard-browser-extension/compatibility)の使用習慣があれば、新しいブラウザアシスタントのために私たちが開発した解決策を気に入るかもしれません。
+If you got into the habit of using our previous [AdGuard Ad Blocker extension](/adguard-browser-extension/compatibility), you might like the solution that we have developed for the new Browser Assistant.
 
 背景についての解説:
 
@@ -29,17 +29,18 @@ AdGuard ブラウザアシスタントはブラウザ拡張機能であり、ブ
 
 ステルスモード、ブラウジングセキュリティ、ペアレンタルコントロールなどと一緒に、AdGuard for Windows 設定において新しいブラウザアシスタントの専用タブがあります。 そこには、お使いのデフォルトブラウザ用AdGuardアシスタント拡張機能をダウンロードするためのリンクがあります。 さらに、レガシー版アシスタントを有効にするチェックボックスもあります。
 
-![設定 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
 ## レガシー版アシスタント
 
-レガシー版アシスタントはAdGuardアシスタントの旧バージョンであり、ブラウザ拡張機能ではなく、単なるユーザースクリプトです。 新しいブラウザーアシスタントの代わりにレガシー版を使った方がいいケースは、基本的に以下の2つだけです:
+レガシー版アシスタントはAdGuardアシスタントの旧バージョンであり、ブラウザ拡張機能ではなく、単なるユーザースクリプトです。
+新しいブラウザーアシスタントの代わりにレガシー版を使った方がいいケースは、基本的に以下の2つだけです:
 
 1. 新しいアシスタントをお使いのブラウザでご利用いただけない場合
-1. ページの右下に表示される緑色の盾アイコンに慣れていて、そのままにしておきたい場合
+2. ページの右下に表示される緑色の盾アイコンに慣れていて、そのままにしておきたい場合
 
 ## AdGuard ブラウザアシスタントをインストールする方法
 
 お使いのデフォルトブラウザにブラウザアシスタントをインストールしたい場合は、AdGuardアプリの設定から直接インストールできます。さらに、設定からは他のブラウザ版アシスタントをインストールすることもできます。
 
-AdGuard ブラウザアシスタントは、Chrome、Firefox、Edge、Opera、Yandex など、すべての一般的なブラウザで利用できます。 各ブラウザ用のアシスタントをインストールするには、[こちらのAdGuardページ](https://adguard.com/adguard-assistant/overview.html)にアクセスし、対象ブラウザのアイコンをクリックして、*インストール*ボタンをクリックします。 　
+AdGuard ブラウザアシスタントは、Chrome、Firefox、Edge、Opera、Yandex など、すべての一般的なブラウザで利用できます。 To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and then the _Install_ button.

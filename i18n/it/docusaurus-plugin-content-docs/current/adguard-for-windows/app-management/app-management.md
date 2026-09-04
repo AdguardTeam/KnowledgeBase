@@ -3,12 +3,6 @@ title: Gestione delle app
 sidebar_position: 1
 ---
 
-:::info
-
-Questo articolo descrive AdGuard per Windows v8.0, un blocca-inserzioni completo che protegge il tuo dispositivo a livello di sistema. Questo è una versione beta ancora in fase di sviluppo. Per provarlo, scarica la [versione beta di AdGuard per Windows](https://agrd.io/windows_beta).
-
-:::
-
 Nella sezione _Gestione app_, puoi gestire le impostazioni di instradamento e filtraggio per tutte le app installate nel tuo dispositivo.
 
 Quando AdGuard rileva che un'app è andata in rete, è automaticamente aggiunta a _Gestione app_, e il suo traffico è instradato tramite AdGuard.
@@ -21,7 +15,7 @@ Quando l'instradamento e il filtraggio sono abilitati per un'app, le icone sotto
 
 Puoi lasciare le impostazioni così come sono, disabilitare sia il filtraggio sia l'instradamento, oppure affinarle manualmente per ogni app. Puoi anche accedere alle statistiche dell'app.
 
-![Statistiche app](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
+![App stats \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
 ## Come funzionano il filtraggio delle app e l'instradamento in AdGuard per Windows v8.0
 

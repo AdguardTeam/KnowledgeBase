@@ -9,22 +9,22 @@ sidebar_position: 1
 
 :::
 
-- [Главный экран](/archive/adguard-for-windows/features/home-screen/)
+- [Home screen](/archive/adguard-for-windows/features/home-screen/)
 
   На главном экране вы найдёте разделы _Настройки_, _Поддержка_, _Лицензия_ и _О программе_, а также статистику по заблокированной рекламе и трекерам
 
-- [Настройки](/archive/adguard-for-windows/features/settings/)
+- [Settings](/archive/adguard-for-windows/features/settings/)
 
   Вы можете настроить программу в соответствии с вашими потребностями. Например, выбрать категории для блокировки, настроить DNS-сервер или блокировать сторонние куки.
 
-- [Расширения](/archive/adguard-for-windows/features/extensions/)
+- [Extensions](/archive/adguard-for-windows/features/extensions/)
 
   Функция, которая позволяет расширять функциональность сайтов путём добавления пользовательских скриптов и стилей
 
-- [Сеть](/archive/adguard-for-windows/features/network/)
+- [Network](/archive/adguard-for-windows/features/network/)
 
-  Эта статья описывает дополнительные параметры, связанные с сетью, и настройки прокси, где вы можете указать, какой прокси сервер AdGuard должен использовать для обновления фильтров и скачивания новых версий.
+  Дополнительные параметры сети и настройки прокси
 
-- [Другие функции](/archive/adguard-for-windows/features/others/)
+- [Other features](/archive/adguard-for-windows/features/others/)
 
   Поддержка, управление лицензиями, опции трей-меню, версии и обновления приложения

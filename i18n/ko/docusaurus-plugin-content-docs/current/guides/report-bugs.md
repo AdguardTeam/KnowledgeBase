@@ -86,8 +86,8 @@ AdGuard 제품을 사용하는 동안 버그를 발견하면 문제를 해결하
 
 ### Safari용 AdGuard
 
-1. [Safari 리포지토리](https://github.com/AdguardTeam/AdGuardForSafari/issues)에서 해당 문제가 아직 보고되지 않았는지 확인하세요.
+1. Check out the [repo](https://github.com/AdguardTeam/AdguardMiniForMac/issues) to make sure the issue hasn’t been reported yet.
 
-2. 새 이슈를 만들기 위한 [페이지](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) 를 열고 *버그 신고*를 선택합니다.
+2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardMiniForMac/issues/new/choose) and select *Bug report*.
 
 3. 양식을 작성하세요. 가능하면 스크린샷이나 화면 녹화본을 첨부하세요.

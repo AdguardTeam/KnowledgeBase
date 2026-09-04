@@ -13,11 +13,11 @@ _Nastavení_ je část, která vyžaduje největší pozornost. Zde můžete pro
 
 ### Obecná nastavení
 
-Zde můžete nastavit jazyk a motiv (tmavý nebo světlý), povolit spouštění AdGuardu při startu systému a tiché automatické aktualizace, vybrat aktualizační kanál a interval kontroly aktualizací filtrů. Pokud AdGuard pro Windows nefunguje správně a tým podpory vás požádal, abyste [shromáždili _Protokoly ladění_](/archive/adguard-for-windows/solving-problems/adguard-logs.md), přejděte do Nastavení.
+Zde můžete nastavit jazyk a motiv (tmavý nebo světlý), povolit spouštění AdGuardu při startu systému a tiché automatické aktualizace, vybrat aktualizační kanál a interval kontroly aktualizací filtrů. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect _Debug logs_](/archive/adguard-for-windows/solving-problems/adguard-logs.md).
 
 ![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/general_settings.png)
 
-Úplně dole na obrazovce najdete _Pokročilá nastavení_. Bezmyšlenkovitá změna některých z nich může potenciálně způsobit problémy s výkonem AdGuardu, přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto část byste měli otevřít pouze v případě, že jste si jisti tím, co děláte, nebo pokud se vás na to zeptal náš tým podpory. Pokud chcete vědět, co lze nastavit v _Pokročilém nastavení_, přečtěte si [specializovaný článek](/archive/adguard-for-windows/solving-problems/low-level-settings.md).
+Úplně dole na obrazovce najdete _Pokročilá nastavení_. Bezmyšlenkovitá změna některých z nich může potenciálně způsobit problémy s výkonem AdGuardu, přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto část byste měli otevřít pouze v případě, že jste si jisti tím, co děláte, nebo pokud se vás na to zeptal náš tým podpory. If you want to know what can be set up in _Advanced Settings_, read the [dedicated article](/archive/adguard-for-windows/solving-problems/low-level-settings.md).
 
 ![Advanced Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/advanced_settings.png)
 
@@ -93,4 +93,4 @@ V modulu _Rodičovská ochrana_ můžete povolit _Bezpečné vyhledávání_, sp
 
 ![Browser Assistant \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/browser_assistant.png)
 
-Z této záložky můžete snadno přejít k instalaci Asistenta prohlížeče AdGuard, jehož primární funkcí je správa filtrování přímo z prohlížeče. Více informací o tom, jak s ním pracovat a co dělat, pokud pro váš prohlížeč není k dispozici Browser Assistant, jsme uvedli v [samostatném článku](/archive/adguard-for-windows/browser-assistant.md).
+Z této záložky můžete snadno přejít k instalaci Asistenta prohlížeče AdGuard, jehož primární funkcí je správa filtrování přímo z prohlížeče. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](/archive/adguard-for-windows/browser-assistant.md).

@@ -1,37 +1,31 @@
 ---
-title: Advanced settings
+title: Avancerede indstillinger
 sidebar_position: 4
 ---
 
-:::info
-
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
-
-:::
-
-The _Advanced settings_ section contains options that go beyond what most users usually need. AdGuard for Windows works perfectly out of the box, but these settings can be useful in special cases or for troubleshooting.
+Afsnittet _Avancerede indstillinger_ indeholder indstillinger, som går ud over, hvad de fleste brugere normalt har behov for. AdGuard til Windows fungerer perfekt efter installation, men disse indstillinger kan være nyttige i særlige tilfælde eller til fejlfinding.
 
 :::caution
 
-Changing advanced settings without understanding them may cause performance issues, break your Internet connection, or affect your security and privacy. Only modify them if you know what you’re doing or if instructed by our support team.
+Ændring af avancerede indstillinger uden at forstå dem kan forårsage problemer med ydeevnen, afbryde internetforbindelsen eller påvirke sikkerheden og fortroligheden. Ændr dem kun, hvis konsekvenserne forstås, eller hvis vores supportteam anmoder herom.
 
 :::
 
-## Exclude app from filtering by entering the full path
+## Undtag app fra filtrering ved at angive den fulde sti
 
-If you want AdGuard to skip filtering a specific app, enter its full file path here. You can add multiple apps by separating their paths with semicolons.
+Skal AdGuard overspringe filtrering af en bestemt app, angiv da dens fulde filsti hér. Der kan tilføjes flere apps ved at adskille deres stier med semikolon.
 
-## Enable AdGuard pop-up notifications
+## Aktivér AdGuard pop op-notifikationer
 
-Enable this feature to see AdGuard pop-up notifications. They do not appear too often and contain only important information. You can also reopen the latest notification from the tray menu.
+Aktivér denne funktion for at se AdGuard pop op-notifikationer. De vises ikke for ofte og indeholder kun vigtig information. Den seneste notifikation kan også åbnes fra bakkemenuen.
 
-## Automatically intercept filter subscription URLs
+## Opsnap automatisk filterabonnements-URL'er
 
-When enabled, AdGuard will automatically detect filter subscription links (like `abp:subscribe`) and open a window to help you add them to your filters.
+Når slået til, detekterer AdGuard automatisk filterabonnementslink (såsom `abp:subscribe`) og åbner et vindue for at assistere med at føje dem til filterlisten.
 
-## Use redirect driver mode
+## Brug tilstanden omdirigeingsdriver
 
-With this option enabled, AdGuard reroutes all your traffic to a local proxy server for filtering.
+Er denne indstilling slået til, omdirigeret AdGuard al trafik og ruter den til den lokale proxyserver for filtrering.
 
 If it’s turned off, AdGuard filters traffic directly — without redirecting it. In this mode, Windows sees AdGuard as the only app connecting to the Internet, since all other apps go through it. This can slightly improve performance but may reduce the effectiveness of the system firewall.
 

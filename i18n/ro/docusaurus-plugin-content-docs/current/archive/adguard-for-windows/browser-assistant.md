@@ -5,7 +5,7 @@ sidebar_position: 3
 
 Funcția principală a Asistentului AdGuard este de a gestiona filtrarea direct din browser. A existat de ceva timp, iar forma și conținutul său s-au schimbat. Mai precis, a fost la început un simplu userscript încorporat în aplicația AdGuard pentru Windows și a devenit o extensie de browser pe deplin funcțională. Acum oferă mai multe beneficii.
 
-![Asistent Browser *mobil](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
+![Browser Assistant \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
 
 ## Beneficii
 
@@ -15,7 +15,7 @@ Asistentul Browser AdGuard este o extensie de browser, este instalat în browser
 
 ### Compatibilitate cu aplicația principală
 
-Dacă v-ați obișnuit să utilizați extensia noastră anterioară [Extensie de browser AdGuard](/adguard-browser-extension/compatibility), s-ar putea să vă placă soluția pe care am dezvoltat-o pentru noul Asistent Browser.
+If you got into the habit of using our previous [AdGuard Ad Blocker extension](/adguard-browser-extension/compatibility), you might like the solution that we have developed for the new Browser Assistant.
 
 Informații de fundal:
 
@@ -29,17 +29,18 @@ Când utilizați Asistentul Browser, toate aceste probleme nu contează deoarece
 
 Noul Asistent Browser are tab-ul său în setările AdGuard pentru Windows, împreună cu Mod invizibil, Securitate la navigare, Control parental și altele. Acolo veți găsi un link pentru a descărca extensia pentru browserul implicit. În plus, există o casetă de bifat pentru a activa Asistentul Legacy.
 
-![Setări *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
 ## Asistent Legacy
 
-Asistentul Legacy este versiunea anterioară a Asistentului, care este un simplu userscript, nu o extensie de browser. În esență, există două cazuri când ați putea dori să-l alegeți în locul noului Asistent Browser:
+Asistentul Legacy este versiunea anterioară a Asistentului, care este un simplu userscript, nu o extensie de browser.
+În esență, există două cazuri când ați putea dori să-l alegeți în locul noului Asistent Browser:
 
 1. Noul Asistent nu este disponibil pentru browserul dvs.
-1. Sunteți obișnuit cu iconița scut verde și doriți să lăsați lucrurile așa cum erau.
+2. Sunteți obișnuit cu iconița scut verde și doriți să lăsați lucrurile așa cum erau.
 
 ## Cum să instalați Asistentul Browser AdGuard
 
 Dacă doriți să instalați Asistentul Browser pentru browserul implicit, o puteți face direct din setările aplicației, dar aveți și oportunitatea de a-l instala pentru alte browsere.
 
-Asistentul Browser AdGuard este disponibil pentru toate browserele populare: Chrome, Firefox, Edge, Opera și Yandex. Pentru a instala cel pe care îl aveți nevoie (sau multe, nu este interzis, ci chiar încurajat), mergeți pe [site-ul nostru](https://adguard.com/adguard-assistant/overview.html), faceți clic pe iconița browserului și apoi pe butonul *Instalare*. Asta e tot!
+Asistentul Browser AdGuard este disponibil pentru toate browserele populare: Chrome, Firefox, Edge, Opera și Yandex. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and then the _Install_ button. Asta e tot!

@@ -9,7 +9,7 @@ Userscripts (pe care le numim și "extensii") sunt, de facto, miniprograme scris
 
 :::note Aplicații suportate
 
-AdGuard poate mări semnificativ funcționalitatea site-ului operând ca manager de userscript. Puteți adăuga scripturi personalizate sau gestiona cele existente în cele trei produse ale noastre: [AdGuard pentru Windows](/adguard-for-windows/protection/extensions), [AdGuard pentru Android](/adguard-for-android/features/settings#userscripts) și [AdGuard pentru Mac](/adguard-for-mac/features/extensions).
+AdGuard poate mări semnificativ funcționalitatea site-ului operând ca manager de userscript. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/protection/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
 
 :::
 
@@ -75,7 +75,7 @@ To try it out:
 
 #### tinyShield
 
-Un userscript pentru persoanele care vizitează site-uri coreene și unele site-uri internaționale. The tinyShield userscript blocks Ad-Shield ads and anti-adblocks. Acest userscript poate fi instalat în aplicațiile bazate pe AdGuard CoreLibs, Violentmonkey, Tampermonkey și [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about tinyShield and how to install it on [GitHub](https://github.com/List-KR/tinyShield).
+tinyShield is primarily designed for Korean websites protected by Ad-Shield, but it also supports many international websites that use the same ad anti-adblocking technology. This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about tinyShield and how to install it on [GitHub](https://github.com/FilteringDev/tinyShield).
 
 ### De unde puteți obține mai multe userscripts?{#more-userscripts}
 
@@ -95,25 +95,29 @@ Aici vom descrie câteva dintre cele mai populare cataloage de userscript.
 
 [OpenUserJS.org](https://openuserjs.org/) este un catalog open-source de userscripts scris în nodeJS. Nu este moderat, așa că fiți atenți la scripturile suspecte.
 
-#### Comunitate
+#### NamuLink
 
-Dacă vă place ideea de a personaliza browserul dvs. cu userscripts și aveți întrebări, le puteți adresa pe unul dintre aceste site-uri:
+[NamuLink](https://github.com/FilteringDev/NamuLink) is an open-source userscript that removes Naver PowerLink advertisements from NamuWiki by bypassing the site's advanced link obfuscation mechanisms. The project is maintained by the AdGuard team and the broader ad-blocking community.
+
+#### Community
+
+If you like the idea of customizing your browser with userscripts and have questions, you can ask them on one of these websites:
 
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/userscripts)
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
 - [Reddit](https://www.reddit.com/r/userscripts/)
 
-### Dezvoltare
+### Development
 
-#### Solicitați licență
+#### Request license
 
 If you are developing your own userscript and want to test how it works with AdGuard, you can request a license by filling in [the form](https://surveys.adguard.com/en/for_developers_request/form.html).
 
-#### Compatibilitate
+#### Compatibility
 
 ##### Metadata block
 
-###### Proprietăți suportate
+###### Supported properties
 
 - [`@name`](https://wiki.greasespot.net/Metadata_Block#@name)
 - [`@namespace`](https://wiki.greasespot.net/Metadata_Block#@namespace)
@@ -134,19 +138,19 @@ If you are developing your own userscript and want to test how it works with AdG
 - [`@icon`, `@iconURL`, `@defaulticon`](https://www.tampermonkey.net/documentation.php#meta:icon)
 - [`@icon64`, `@icon64URL`](https://www.tampermonkey.net/documentation.php#meta:icon64)
 
-###### Proprietăți nesuportate
+###### Unsupported properties
 
-Aceste proprietăți vor fi pur și simplu ignorate de AdGuard.
+These properties will be simply ignored by AdGuard.
 
 - [`@unwrap`](https://www.tampermonkey.net/documentation.php#meta:unwrap)
 
-##### Funcții GM suportate
+##### Supported GM functions
 
-AdGuard suportă atât vechile funcții GM\_, cât și noul API GM4 care utilizează obiectul GM.
+AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
 
 :::note
 
-Toate funcțiile vechi listate Greasemonkey sunt depreciate, dar încă sunt suportate.
+All listed old Greasemonkey functions are deprecated but still supported.
 
 :::
 
@@ -343,7 +347,7 @@ divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML"
 
 #### Matching SPA sites
 
-:::info Compatibilitate
+:::info Compatibility
 
 This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.19 or later.
 

@@ -1,5 +1,5 @@
 ---
-title: AdGuard для Windows
+title: AdGuard for Windows v7
 sidebar_position: 1
 ---
 
@@ -9,22 +9,22 @@ sidebar_position: 1
 
 :::
 
-- [Обзор](/archive/adguard-for-windows/)
+- [Features](/archive/adguard-for-windows/features/features.md)
 
-  Краткое описание AdGuard для Windows и его основных возможностей.
+  Main features and settings available in AdGuard for Windows
 
-- [Защита](/adguard-for-windows/protection/)
+- [Installation](/archive/adguard-for-windows/installation.md)
 
-  Настройки для блокировки рекламы, защиты от отслеживания, DNS-защиты, устранения раздражителей, защиты от фишинга, родительского контроля и расширений.
+  Installation, removal, and system requirements for AdGuard for Windows
 
-- [Статистика](/adguard-for-windows/statistics/)
+- [Browser Assistant](/archive/adguard-for-windows/browser-assistant.md)
 
-  Подробная информация о заблокированной рекламе, трекерах и использовании трафика.
+  Расширение, которое дополняет десктопное приложение и позволяет управлять фильтрацией из браузера
 
-- [Управление приложениями](/adguard-for-windows/app-management/)
+- [Solving problems](/archive/adguard-for-windows/solving-problems/solving-problems.md)
 
-  Настройки для управления фильтрацией и маршрутизацией трафика для отдельных приложений и браузеров.
+  Известные проблемы и возможные решения
 
-- [Настройки](/adguard-for-windows/settings/)
+- [Documentation for admins](/archive/adguard-for-windows/admins-documentation.md)
 
-  Параметры языка и темы, лицензии, поддержки, а также дополнительные настройки приложения и сети.
+  Configuration guide for system administrators

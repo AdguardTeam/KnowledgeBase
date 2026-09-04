@@ -3,12 +3,6 @@ title: Erweiterte Einstellungen
 sidebar_position: 4
 ---
 
-:::info
-
-Dieser Artikel beschreibt AdGuard für Windows v8.0, einen umfassenden Werbeblocker, der Ihr Gerät auf Systemebene schützt. Dies ist eine Beta-Version, die sich noch in der Entwicklung befindet. Um es auszuprobieren, laden Sie die [Beta-Version von AdGuard für Windows](https://agrd.io/windows_beta) herunter.
-
-:::
-
 Der Abschnitt _Erweiterte Einstellungen_ enthält Optionen, die über die üblichen Anforderungen hinausgehen. AdGuard für Windows funktioniert sofort nach der Installation einwandfrei, aber diese Einstellungen können in besonderen Fällen oder zur Fehlerbehebung nützlich sein.
 
 :::caution
@@ -95,7 +89,7 @@ Geben Sie an, wie lange (in Millisekunden) AdGuard auf eine DNS-Antwort warten s
 
 ## Benutzerdefinierte Bootstrap-Adressen
 
-Ein Bootstrap ist ein zwischengeschalteter DNS-Server, der dazu dient, die IP-Adresse des sicheren DNS-Servers zu ermitteln, den Sie zuvor im DNS-Schutz ausgewählt haben. Ein solcher „Mittelweg“ ist erforderlich, wenn Protokolle verwendet werden, die die Serveradresse durch Buchstaben bezeichnen (wie beispielsweise DNS-over-TLS). In diesem Fall fungiert der Bootstrap als Übersetzer und wandelt die Buchstaben in Zahlen um, die Ihr System versteht.
+Ein Bootstrap ist ein zwischengeschalteter DNS-Server, der dazu dient, die IP-Adresse des sicheren DNS-Servers zu ermitteln, den Sie zuvor im DNS-Schutz ausgewählt haben. Ein solcher „Mittelweg“ ist erforderlich, wenn Protokolle verwendet werden, die die Serveradresse durch Buchstaben bezeichnen (wie beispielsweise DNS-over-TLS). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
 Bei Bedarf können Sie hier jedoch verschiedene IP-Adressen angeben — diese werden dann in der Reihenfolge von oben nach unten durchprobiert. Wenn keine davon funktioniert oder nichts eingegeben wird, greift AdGuard auf die Systemstandardwerte zurück.
 

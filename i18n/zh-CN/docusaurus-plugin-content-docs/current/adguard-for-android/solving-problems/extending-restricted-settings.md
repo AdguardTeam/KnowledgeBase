@@ -9,7 +9,7 @@ sidebar_position: 17
 
 :::
 
-为了提高用户隐私保护，Google 在 Android 15 中扩展了限制设置。 现在，更多设置需要额外的权限才能启用包，比如「应用程序使用访问权限」。 由于[防火墙](/adguard-for-android/features/protection/firewall)和[检测 Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) 功能需要启用「应用使用访问权限」设置才能正常工作，因此用户在使用它们时可能会遇到问题。 To resolve these issues, please follow the steps below.
+为了提高用户隐私保护，Google 在 Android 15 中扩展了限制设置。 现在，更多设置需要额外的权限才能启用包，比如「应用程序使用访问权限」。 由于[防火墙](/adguard-for-android/features/protection/firewall)和[检测 Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) 功能需要启用「应用使用访问权限」设置才能正常工作，因此用户在使用它们时可能会遇到问题。 要解决这些问题，请按照以下步骤操作。
 
 :::note
 
@@ -17,44 +17,44 @@ AdGuard 有严格的不记录政策，就是说我们不会收集您的数据或
 
 :::
 
-## Basic instructions
+## 基本说明
 
-1. On your Android device, open the **Settings app**.
-2. Tap **Apps**.
-3. Tap **AdGuard**
+1. 在 Android 设备上，打开**设置应用**。
+2. 点击「**应用**」。
+3. 点击「**AdGuard**」。
 
-![AdGuard in Apps \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted1.png)
+![应用中的 AdGuard \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted1.png)
 
-If you can't find it, first tap **See all apps** or **App info**.
+如果找不到，请先点按「**查看所有应用**」或「**应用信息**」。
 
-1. Tap **More** (⁝) → _Allow restricted settings_.
+1. 点击「**更多**」(⁝) →「允许受限设置」。
 
-![Allow restricted settings \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted2.png)
+![允许受限设置 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted2.png)
 
-Follow the on-screen instructions.
+按照屏幕上的说明操作。
 
-All done! Now the _Firewall_ and _Detect Samsung Pay_ features will work correctly.
+完成！ 「防火墙」和「检测三星支付」功能可正常工作。
 
-![Restricted settings allowed for AdGuard \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted3.png)
+![对 AdGuard 允许的限制设置 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted3.png)
 
-## For OneUI 7.0 users
+## 针对 OneUI 7.0 用户
 
-For Samsung devices with OneUI 7.0, the app permission settings follow a different path. Follow these steps to configure app usage access:
+对于搭载 OneUI 7.0 的 Samsung 设备，应用权限设置的路径有所不同。 请按照以下步骤配置应用使用情况访问权限：
 
-1. Open _System settings_ → _Apps_
+1. 打开「系统设置」→「应用程序」
 
-![Apps settings \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/apps.jpg)
+![应用设置 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/apps.jpg)
 
-1. Tap the menu icon (⋮) in the top-right corner, then select _Special access_
+1. 点击右上角的菜单图标（⋮），然后选择「特殊访问」。
 
-![Special access \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/three-dots.jpg)
+![特殊访问 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/three-dots.jpg)
 
-1. Select _Usage data access_
+1. 选择「使用数据访问」
 
-![Special access menu \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/special.jpg)
+![特殊访问的菜单 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/special.jpg)
 
-1. Find and enable _AdGuard_
+1. 查找并启用「AdGuard」
 
-![Usage data access \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/usage_data.jpg)
+![使用数据访问 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/usage_data.jpg)
 
-All done!
+完成！

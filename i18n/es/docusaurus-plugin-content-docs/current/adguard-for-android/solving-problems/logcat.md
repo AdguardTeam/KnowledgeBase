@@ -77,7 +77,7 @@ Sigue estas instrucciones:
 
 ### Parte #2: reproduce el problema
 
-It is important to reproduce the problem after you're done with the first part.
+4 MB deberían ser suficientes para almacenar los registros que necesitamos hasta que puedas hacer la segunda parte (obtener el registro del dispositivo);
 
 1. Reproduce el problema.
 
@@ -101,7 +101,7 @@ It is important to reproduce the problem after you're done with the first part.
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at [support@adguard.com](mailto:support@adguard.com).
+    Envíe por correo electrónico el archivo `txt` creado, así como la hora en que se reprodujo el problema (de la parte n.° 2) a nuestro equipo de soporte a support@adguard.com.
 
 ### Forma alternativa para usuarios ROOT
 
@@ -117,6 +117,6 @@ It is important to reproduce the problem after you're done with the first part.
 
 :::note
 
-Nuestro equipo de soporte procesará tu ticket mucho más rápido si especificas el número de ticket de HelpDesk o el número de problema de GitHub en tu mensaje de soporte.
+Es importante reproducir el problema después de terminar con la primera parte.
 
 :::

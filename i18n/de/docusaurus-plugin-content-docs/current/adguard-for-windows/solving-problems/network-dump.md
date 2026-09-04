@@ -31,7 +31,7 @@ Schließen Sie vor dem Start **alle unnötigen Programme und Browser-Tabs**. Dad
 
 Wenn Sie sich nicht sicher sind, welche Schnittstelle Sie wählen sollen, wählen Sie diejenige mit der höchsten Aktivität im Diagramm (je höher das Diagramm, desto mehr Datenverkehr fließt durch sie).
 
-![Hauptbildschirm](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/main_screen.png)
+![Main screen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/main_screen.png)
 
 Doppelklicken Sie auf die ausgewählte Schnittstelle, um die Erfassung zu starten. Reproduzieren Sie nun das Problem, das bei Ihnen auftritt, und stellen Sie sicher, dass Sie nur die notwendigen Aktionen durchführen, um das Problem auszulösen und alle anderen Prozesse zu vermeiden. Dies hilft, das Problem einzugrenzen und stellt sicher, dass nur der relevante Datenverkehr aufgezeichnet wird.
 

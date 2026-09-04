@@ -1,6 +1,6 @@
 ---
 title: Problemas de compatibilidad conocidos con aplicaciones de Android
-sidebar_position: 14
+sidebar_position: 16
 ---
 
 :::info
@@ -38,7 +38,7 @@ Algunos fabricantes de dispositivos mantienen ocultas las configuraciones de DNS
 
 Para poder filtrar el tráfico HTTPS, AdGuard requiere que el usuario agregue un certificado a los certificados de usuario confiables del dispositivo. Lamentablemente, los navegadores UC no confían en los certificados de usuario, por lo que AdGuard no puede realizar el filtrado HTTPS allí.
 
-- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md)
+- Para resolver este problema, mueve el certificado [al almacenamiento de certificados del sistema](../solving-problems/https-certificate-for-rooted.md)
 
 :::note Compatibilidad
 

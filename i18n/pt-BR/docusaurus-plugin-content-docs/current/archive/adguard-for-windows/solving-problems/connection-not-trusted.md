@@ -5,27 +5,27 @@ sidebar_position: 2
 
 :::info
 
-Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Veja como funciona ao [baixar o AdGuard](https://agrd.io/download-kb-adblock)
+Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Para poder filtrar o tráfego HTTPS e bloquear anúncios e rastreadores com eficiência, o AdGuard gera um certificado root especial (e exclusivo) e o instala no armazenamento do sistema. Você pode aprender mais sobre por que um certificado é necessário lendo [este artigo](/general/https-filtering/what-is-https-filtering).
+Para poder filtrar o tráfego HTTPS e bloquear anúncios e rastreadores com eficiência, o AdGuard gera um certificado root especial (e exclusivo) e o instala no armazenamento do sistema. You can learn more about why a certificate is required by reading [this article](/general/https-filtering/what-is-https-filtering).
 
 Normalmente, os navegadores confiam no certificado AdGuard quando ele é adicionado ao armazenamento de certificados do sistema durante o processo de instalação. Mas, em alguns casos, isso não é suficiente e você pode se deparar com avisos ou erros. Isso acontece com mais frequência em navegadores baseados no Firefox, como Mozilla Firefox, PaleMoon, Waterfox, etc., ou no Yandex.Browser.
 
 Here are some common issues:
 
-- [Erro de *risco potencial de segurança* em navegadores baseados no Firefox](#potential-security-risk-error-in-firefox-based-browsers)
-- [Aviso de certificado do Yandex.Browser](#yandexbrowser-certificate-warning)
+- [_Potential Security Risk_ error in Firefox-based browsers](#potential-security-risk-error-in-firefox-based-browsers)
+- [Yandex.Browser certificate warning](#yandexbrowser-certificate-warning)
 - [Non-official add-ons don’t update in Firefox-based browsers](#non-official-add-ons-dont-update-in-firefox-based-browsers)
 
-## Erro de *risco potencial de segurança* em navegadores baseados no Firefox
+## _Potential Security Risk_ error in Firefox-based browsers
 
-![Erro de risco de segurança](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
+![Security risk error](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
 
-As versões antigas do FireFox, bem como os navegadores baseados nelas, não confiam nos certificados do armazenamento do sistema, mas apenas nos certificados do armazenamento local. Desde a versão 68, o FireFox confia nos certificados do sistema, mas você ainda pode enfrentar o erro "Conexão não confiável". Se isso acontecer, primeiro tente clicar no botão *Reinstalar Certificado*. Você o encontrará na aba *Rede*.
+As versões antigas do FireFox, bem como os navegadores baseados nelas, não confiam nos certificados do armazenamento do sistema, mas apenas nos certificados do armazenamento local. Desde a versão 68, o FireFox confia nos certificados do sistema, mas você ainda pode enfrentar o erro "Conexão não confiável". If something like this happens, first try to click the _Reinstall Certificate_ button — you will find it in the _Network_ tab.
 
-![Reinstalar certificado](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
+![Reinstall Certificate](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
 
 Se isso não ajudar, siga as instruções para adicionar manualmente o certificado AdGuard ao armazenamento do FireFox.
 
@@ -33,36 +33,35 @@ Se isso não ajudar, siga as instruções para adicionar manualmente o certifica
 
 1. Execute o AdGuard.
 
-1. Go to [https://local.adguard.org/cert](https://local.adguard.org/cert) and click the *Download* button. O navegador deve começar a baixar o arquivo **cert.cer**.
+2. Go to [https://local.adguard.org/cert](https://local.adguard.org/cert) and click the _Download_ button. The browser should start downloading **cert.cer** file.
 
-    Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
+   Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
-    Você também pode abrir a página de download clicando no link através do aplicativo AdGuard em *Configurações → Rede → Filtragem HTTPS*.
+   You can also open the download page by clicking the link via the AdGuard app at _Settings → Network → HTTPS filtering_.
 
+   :::
 
-:::
+   ![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
 
-    ![Configurações do certificado](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
+3. Open your browser and then open _Settings_.
 
-1. Abra seu navegador e depois abra *Configurações*.
+4. Go to _Privacy & Security_ tab.
 
-1. Vá para a aba *Privacidade & Segurança*.
+5. Scroll down to _Certificates_ and click the _View Certificates_ button.
 
-1. Role para baixo até *Certificados* e clique no botão *Exibir certificados*.
+   ![View certificates window](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
 
-    ![Veja a janela certificados](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
+6. Select _Authorities_ tab.
 
-1. Selecione a aba *Autoridades*.
+7. Click _Import..._.
 
-1. Clique em *Importar...*.
+   ![Certificate settings — import](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
 
-    ![Configurações do certificado — importação](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
+8. Browse the downloaded **cert.cer** file and click _Open_.
 
-1. Navegue pelo arquivo **cert.cer** baixado e clique em *Abrir*.
+9. Check the _Trust this CA to identify websites_ box and then click _OK_.
 
-1. Marque a caixa *Confiar neste CA para identificar sites* e clique em *OK*.
-
-    ![Configurações do certificado — caixa de seleção](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
+   ![Certificate settings — checkbox](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
 
 Você instalou o certificado AdGuard com sucesso. Reinicie o navegador e o erro deverá desaparecer.
 
@@ -70,7 +69,7 @@ Você instalou o certificado AdGuard com sucesso. Reinicie o navegador e o erro 
 
 Se você for usuário do AdGuard para Windows e do Yandex.Browser, pode ter se deparado com este aviso:
 
-![Aviso de certificado Yandex](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
+![Yandex certificate warning](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
 
 ### Por que isso está acontecendo?
 
@@ -80,9 +79,9 @@ No entanto, o AdGuard também adiciona seu certificado aos confiáveis. Isso lev
 
 ### Como resolver o problema?
 
-A maneira mais fácil é clicar no botão **Ir para o site**. Isso fará com que o Yandex.Browser se lembre do certificado do AdGuard como confiável, pelo menos por um tempo. Normalmente, você não precisará mais ver essa mensagem, mas não é impossível que ela apareça ocasionalmente, por qualquer motivo. Nesses casos, basta pressionar o mesmo botão novamente *(certifique-se de que é o certificado do AdGuard!)*.
+The easiest way is to click the **Go to site** button. Isso fará com que o Yandex.Browser se lembre do certificado do AdGuard como confiável, pelo menos por um tempo. Normalmente, você não precisará mais ver essa mensagem, mas não é impossível que ela apareça ocasionalmente, por qualquer motivo. In such cases, simply press the same button again _(make sure it is AdGuard's certificate!)_.
 
-Desativar a filtragem HTTPS no AdGuard também impedirá que o Yandex.Browser mostre esta mensagem novamente, mas isso tem um preço alto: todos os anúncios carregados por HTTPS (incluindo **os próprios anúncios do Yandex**) aparecerão em sites como YouTube, Facebook, Instagram e muitos mais. Aconselhamos fortemente que você não o faça se quiser manter a qualidade do bloqueio de anúncios alta.
+Disabling the HTTPS filtering in AdGuard will also prevent Yandex.Browser from showing this message again, but it comes with a big price: all ads that are loaded by HTTPS (including **Yandex's own ads**) will show up — on such websites as YouTube, Facebook, Instagram, and many more. Aconselhamos fortemente que você não o faça se quiser manter a qualidade do bloqueio de anúncios alta.
 
 ## Non-official add-ons don’t update in Firefox-based browsers
 
