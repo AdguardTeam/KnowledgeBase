@@ -18,31 +18,31 @@ Assistent er et praktisk værktøj til hurtigt at ændre app- eller webstedsinds
 
 ![Ekspandér AdGuard-notifikationen i notifikationspanelet \*mobil](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
 
-1. Tap _Assistant_.
+1. Tryk på _Assistent_.
 
-![Tap Assistant \*mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
+![Tryk på Assistent \*mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
 
-### How to use Assistant
+### Sådan bruges Assistent
 
-When you open Assistant, you will see two tabs: **Apps** and **Websites**. Each of them contains a list of the recently used apps and websites respectively.
+Når Assistent åbnes, vises to faner: **Apps** og **Websteder**. Hver af disse indeholder en liste over hhv. nyligt brugte apps og websteder.
 
-![Assistant main \*mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
+![Assistent-hovedvindue \*mobil](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
 
-### Apps tab
+### Fanen Apps
 
-After you select an app (**let's take Chrome as an example**), you'll get a few options of what you can do.
+Efter valg af en app (**her bruges Chrome som eksempel**), vises en række valgmuligheder.
 
-![Assistant Chrome menu \*mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Assistent Chrome-menu \*mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
-#### Recent activity
+#### Seneste aktivitet
 
-You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests made by Chrome.
+Visningen skifter til AdGuard-appen, hvori detaljerede oplysninger om Chromes seneste 10K forespørgsler vil fremgå.
 
-![App recent activity \*mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![Appens seneste aktivitet \*mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
 
-#### App statistics
+#### App-statistikker
 
-You'll be taken to the AdGuard app, where you'll see detailed statistics about Chrome:
+Visningen skifter til AdGuard-appen, hvori detaljerede statistikker om Chrome vil fremgå:
 
 - Number of ads and trackers blocked in Chrome
 - Data saved by blocking Chrome's ad or tracking requests
