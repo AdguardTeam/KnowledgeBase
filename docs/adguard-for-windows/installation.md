@@ -30,7 +30,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
     ![Allow changes *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/allow-changes.png)
 
-1. Choose the folder where you want AdGuard to be installed and click Save.
+1. Choose the folder where you want AdGuard to be installed and click *Save*.
 
     ![Choose folder *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer1_en.png)
 
